@@ -1,13 +1,187 @@
 {
-  "updatedAt": "2026-09-27T08:24:04.528Z",
+  "updatedAt": "2026-09-27T10:36:55.388Z",
   "source": "open-meteo forecast",
   "horizon": [
     "2026-09-27",
     "2026-09-27"
   ],
-  "count": 3,
-  "missingVenues": [],
+  "count": 16,
+  "missingVenues": [
+    "Burgos",
+    "Eibar"
+  ],
   "matches": [
+    {
+      "date": "2026-09-27",
+      "league": "SE3N",
+      "home": "Arlanda",
+      "away": "Enköping",
+      "venue": "Arlanda (stad)",
+      "lat": 59.64897,
+      "lon": 17.92999,
+      "weatherPoint": "c32",
+      "kickoffUtc": "2026-09-27T14:00:00.000Z",
+      "kickoffAssumed": true,
+      "weather": {
+        "tempC": 16.2,
+        "precipMm": 0,
+        "windKmh": 9.1,
+        "gustKmh": 20.5,
+        "precipProb": 0
+      }
+    },
+    {
+      "date": "2026-09-27",
+      "league": "SE3N",
+      "home": "Assyriska",
+      "away": "Piteå",
+      "venue": "Södertälje fotbollsarena",
+      "lat": 59.187558701,
+      "lon": 17.570436431,
+      "weatherPoint": "c40",
+      "kickoffUtc": "2026-09-27T14:00:00.000Z",
+      "kickoffAssumed": true,
+      "weather": {
+        "tempC": 16.7,
+        "precipMm": 0,
+        "windKmh": 10.1,
+        "gustKmh": 24.8,
+        "precipProb": 0
+      }
+    },
+    {
+      "date": "2026-09-27",
+      "league": "SE3N",
+      "home": "Gefle",
+      "away": "Vasalund",
+      "venue": "Strömvallen",
+      "lat": 60.673055555,
+      "lon": 17.1275,
+      "weatherPoint": "c216",
+      "kickoffUtc": "2026-09-27T14:00:00.000Z",
+      "kickoffAssumed": true,
+      "weather": {
+        "tempC": 16.7,
+        "precipMm": 0,
+        "windKmh": 10.3,
+        "gustKmh": 24.5,
+        "precipProb": 0
+      }
+    },
+    {
+      "date": "2026-09-27",
+      "league": "SE3N",
+      "home": "Karlstad",
+      "away": "Karlberg",
+      "venue": "Tingvalla IP",
+      "lat": 59.386694,
+      "lon": 13.4935,
+      "weatherPoint": "c184",
+      "kickoffUtc": "2026-09-27T14:00:00.000Z",
+      "kickoffAssumed": true,
+      "weather": {
+        "tempC": 16.2,
+        "precipMm": 0,
+        "windKmh": 13.9,
+        "gustKmh": 30.6,
+        "precipProb": 68
+      }
+    },
+    {
+      "date": "2026-09-27",
+      "league": "SE3S",
+      "home": "Eskilsminne",
+      "away": "AFC Malmö",
+      "venue": "Eskilsminne (stad)",
+      "lat": 56.03333,
+      "lon": 12.73333,
+      "weatherPoint": "c175",
+      "kickoffUtc": "2026-09-27T14:00:00.000Z",
+      "kickoffAssumed": true,
+      "weather": {
+        "tempC": 18.5,
+        "precipMm": 0,
+        "windKmh": 22.2,
+        "gustKmh": 39.6,
+        "precipProb": 0
+      }
+    },
+    {
+      "date": "2026-09-27",
+      "league": "SE3S",
+      "home": "Trelleborg",
+      "away": "Ängelholm",
+      "venue": "Vångavallen",
+      "lat": 55.38680556,
+      "lon": 13.15816667,
+      "weatherPoint": "c509",
+      "kickoffUtc": "2026-09-27T14:00:00.000Z",
+      "kickoffAssumed": true,
+      "weather": {
+        "tempC": 15.9,
+        "precipMm": 0,
+        "windKmh": 25.8,
+        "gustKmh": 44.6,
+        "precipProb": 0
+      }
+    },
+    {
+      "date": "2026-09-27",
+      "league": "LL2",
+      "home": "Valladolid",
+      "away": "Cordoba",
+      "venue": "Estadio Nuevo José Zorrilla",
+      "lat": 41.644444,
+      "lon": -4.761111,
+      "weatherPoint": "c525",
+      "kickoffUtc": "2026-09-27T13:00:00.000Z",
+      "kickoffAssumed": false,
+      "weather": {
+        "tempC": 29.3,
+        "precipMm": 0,
+        "windKmh": 7.7,
+        "gustKmh": 25.6,
+        "precipProb": 0
+      }
+    },
+    {
+      "date": "2026-09-27",
+      "league": "LL2",
+      "home": "Mallorca",
+      "away": "Almeria",
+      "venue": "Estadi Mallorca Son Moix",
+      "lat": 39.59,
+      "lon": 2.63,
+      "weatherPoint": "c334",
+      "kickoffUtc": "2026-09-27T15:15:00.000Z",
+      "kickoffAssumed": false,
+      "weather": {
+        "tempC": 27.5,
+        "precipMm": 0,
+        "windKmh": 9.1,
+        "gustKmh": 22.7,
+        "precipProb": 0
+      }
+    },
+    {
+      "date": "2026-09-27",
+      "league": "LL2",
+      "home": "Oviedo",
+      "away": "Sp Gijon",
+      "venue": "Carlos Tartiere Stadium",
+      "lat": 43.360783,
+      "lon": -5.870222,
+      "weatherPoint": "c394",
+      "kickoffUtc": "2026-09-27T20:00:00.000Z",
+      "kickoffAssumed": false,
+      "weather": {
+        "tempC": 18.9,
+        "precipMm": 0,
+        "windKmh": 5.4,
+        "gustKmh": 10.8,
+        "precipProb": 3
+      }
+    },
     {
       "date": "2026-09-27",
       "league": "BR2",
@@ -16,7 +190,7 @@
       "venue": "Estádio Heriberto Hülse",
       "lat": -28.684167,
       "lon": -49.3675,
-      "weatherPoint": "c92",
+      "weatherPoint": "c140",
       "kickoffUtc": "2026-09-27T14:00:00.000Z",
       "kickoffAssumed": true,
       "weather": {
@@ -35,7 +209,7 @@
       "venue": "Estádio Rei Pelé",
       "lat": -9.670556,
       "lon": -35.759167,
-      "weatherPoint": "c90",
+      "weatherPoint": "c138",
       "kickoffUtc": "2026-09-27T14:00:00.000Z",
       "kickoffAssumed": true,
       "weather": {
@@ -54,7 +228,7 @@
       "venue": "Castelão",
       "lat": -3.807267,
       "lon": -38.522481,
-      "weatherPoint": "c77",
+      "weatherPoint": "c113",
       "kickoffUtc": "2026-09-27T14:00:00.000Z",
       "kickoffAssumed": true,
       "weather": {
@@ -63,6 +237,82 @@
         "windKmh": 21,
         "gustKmh": 52.6,
         "precipProb": 71
+      }
+    },
+    {
+      "date": "2026-09-27",
+      "league": "MX",
+      "home": "UNAM Pumas",
+      "away": "Atl. San Luis",
+      "venue": "Universitary Olympic Stadium",
+      "lat": 19.331928,
+      "lon": -99.192106,
+      "weatherPoint": "c51",
+      "kickoffUtc": "2026-09-27T14:00:00.000Z",
+      "kickoffAssumed": true,
+      "weather": {
+        "tempC": 16.1,
+        "precipMm": 0,
+        "windKmh": 3.7,
+        "gustKmh": 15.5,
+        "precipProb": 0
+      }
+    },
+    {
+      "date": "2026-09-27",
+      "league": "MLS",
+      "home": "Columbus Crew",
+      "away": "Inter Miami",
+      "venue": "ScottsMiracle-Gro Field",
+      "lat": 39.96846,
+      "lon": -83.01709,
+      "weatherPoint": "c131",
+      "kickoffUtc": "2026-09-27T14:00:00.000Z",
+      "kickoffAssumed": true,
+      "weather": {
+        "tempC": 14.3,
+        "precipMm": 0,
+        "windKmh": 12.6,
+        "gustKmh": 22,
+        "precipProb": 0
+      }
+    },
+    {
+      "date": "2026-09-27",
+      "league": "COL",
+      "home": "Jaguares de Córdoba",
+      "away": "Alianza FC",
+      "venue": "Estadio Jaraguay",
+      "lat": 8.711777777,
+      "lon": -75.827638888,
+      "weatherPoint": "c269",
+      "kickoffUtc": "2026-09-27T14:00:00.000Z",
+      "kickoffAssumed": true,
+      "weather": {
+        "tempC": 28.5,
+        "precipMm": 0.3,
+        "windKmh": 4,
+        "gustKmh": 15.5,
+        "precipProb": 58
+      }
+    },
+    {
+      "date": "2026-09-27",
+      "league": "COL",
+      "home": "Fortaleza CEIF",
+      "away": "Deportes Tolima",
+      "venue": "Estadio Metropolitano de Techo",
+      "lat": 4.623545,
+      "lon": -74.135611,
+      "weatherPoint": "c203",
+      "kickoffUtc": "2026-09-27T14:00:00.000Z",
+      "kickoffAssumed": true,
+      "weather": {
+        "tempC": 19.4,
+        "precipMm": 0,
+        "windKmh": 7.6,
+        "gustKmh": 30.6,
+        "precipProb": 57
       }
     }
   ]

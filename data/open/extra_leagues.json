@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T09:21:39.162Z",
+  "updatedAt": "2026-09-27T10:10:11.433Z",
   "leagues": {
     "PL": {
       "name": "Premier League",
@@ -8,6 +8,11 @@
     "CH": {
       "name": "Championship",
       "history": "fd-main"
+    },
+    "EL1": {
+      "name": "League One",
+      "history": "fd-main",
+      "upcoming": 33
     },
     "LL": {
       "name": "La Liga",
@@ -57,9 +62,9 @@
     "SE3N": {
       "name": "Div 1 Norra",
       "history": "tsdb",
-      "historyMatches": 427,
+      "historyMatches": 428,
       "callsNow": 7,
-      "upcoming": 29
+      "upcoming": 28
     },
     "SE3S": {
       "name": "Div 1 Södra",
@@ -162,9 +167,9 @@
     "KR": {
       "name": "K League 1",
       "history": "tsdb",
-      "historyMatches": 407,
+      "historyMatches": 408,
       "callsNow": 9,
-      "upcoming": 13
+      "upcoming": 12
     },
     "MX": {
       "name": "Liga MX",
@@ -176,7 +181,7 @@
       "name": "MLS",
       "history": "fd-new",
       "historyMatches": 6204,
-      "upcoming": 48
+      "upcoming": 49
     },
     "CZ": {
       "name": "Chance Liga",
