@@ -29,6 +29,8 @@ jobs:
     env:
       TZ: Europe/Stockholm
       THE_ODDS_API_KEY: ${{ secrets.THE_ODDS_API_KEY }}
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: 157ee3f6fab55443acdd807e5899c5f2
     steps:
       - uses: actions/checkout@v4
 
@@ -79,8 +81,7 @@ jobs:
         continue-on-error: true
         run: node scripts/fetch-stryktipset.mjs
 
-      # Kontroll att webbversionen går att bygga; själva sidan byggs av Cloudflare Pages vid push.
-      - name: Testbygg webbversion
+      - name: Bygg webbversion
         run: node scripts/build-static-site.mjs
 
       - name: Committa ny data
@@ -95,3 +96,9 @@ jobs:
             git pull --rebase
             git push
           fi
+
+      # https://newbetting.pages.dev (lösenordsskydd: functions/_middleware.js + secret SITE_PASSWORD).
+      # Hoppas över tills secret CLOUDFLARE_API_TOKEN finns (Cloudflare-token med "Cloudflare Pages: Edit").
+      - name: Publicera webbversion
+        if: env.CLOUDFLARE_API_TOKEN != ''
+        run: npx -y wrangler@4 pages deploy site --project-name newbetting --branch main --commit-dirty=true

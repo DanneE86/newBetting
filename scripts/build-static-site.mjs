@@ -1,4 +1,4 @@
-// Bygger en skrivskyddad webbversion av GUI:t i site/ (för Cloudflare Pages).
+// Bygger en skrivskyddad webbversion av GUI:t i site/ (Cloudflare Pages: newbetting.pages.dev).
 // Startar gui/server.mjs, sparar GET-svaren som JSON under site/api/ och kopierar gui/public.
 // gui/static-mode.js styr om GUI:ts /api/*-anrop till filerna.
 import fs from "node:fs";
