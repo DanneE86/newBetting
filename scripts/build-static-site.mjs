@@ -83,6 +83,23 @@ try {
   }
   log(`analyser: ${Object.keys(analyses).length} ok, ${failed} saknas`);
   write("api/analyze.json", analyses);
+
+  // Lagklicket: form, modellens träff och inbördes möten för båda lagen i varje match
+  const teams = {};
+  let teamFailed = 0;
+  for (const t of tips) {
+    for (const [team, opp, venue] of [[t.home, t.away, "home"], [t.away, t.home, "away"]]) {
+      const key = [t.league, team, opp, venue].join("|");
+      if (teams[key]) continue;
+      try {
+        teams[key] = await get(`/api/team?${new URLSearchParams({ league: t.league, team, opp, venue })}`);
+      } catch {
+        teamFailed++;
+      }
+    }
+  }
+  log(`lag: ${Object.keys(teams).length} ok, ${teamFailed} saknas`);
+  write("api/team.json", teams);
 } finally {
   server.kill();
 }
