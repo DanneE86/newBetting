@@ -8,6 +8,7 @@ let state = {
   accuracyByLeague: null,
   accuracyByConfidence: null,
   accuracyByConfidenceByLeague: null,
+  drawCalibration: null,
   rounds: {},
   openMarket: null,
   leagueNames: {},
@@ -481,7 +482,36 @@ function showAccDetail(label, marketKey) {
     }).join("");
   }
 
+  renderDrawCal(marketKey);
   detail.hidden = false;
+}
+
+/** 1X2: modellens krysschans (före/efter kalibrering) mot faktisk andel kryss i backtesten. */
+function renderDrawCal(marketKey) {
+  const host = $("#draw-cal");
+  if (!host) return;
+  const dc = state.drawCalibration;
+  if (marketKey !== "1X2" || !dc?.bins) {
+    host.hidden = true;
+    return;
+  }
+  const lg = state.league !== "ALL" ? dc.byLeague?.[state.league] : null;
+  const m = dc.meta || {};
+  const row = (label, x) =>
+    `<tr><td>${escapeHtml(label)}</td><td class="num">${x.tested}</td><td class="num">${fmtPct(x.predictedRaw)}</td><td class="num">${fmtPct(x.predicted)}</td><td class="num"><b>${fmtPct(x.actual)}</b></td></tr>`;
+  const rows = Object.entries(dc.bins).filter(([, x]) => x.tested).map(([k, x]) => row(`Modell ${k} %`, x));
+  if (lg?.tested) rows.push(row(`${leagueName(state.league)} totalt`, lg));
+  const status = m.kept
+    ? `Kalibrering aktiv: krysschansen = ligans kryssandel${m.w ? ` (${Math.round(m.w * 100)} % modell)` : ""}. Log-loss ${m.testLogLossRaw} → ${m.testLogLossCal} på säsongens andra halva.`
+    : `Ingen kalibrering (${escapeHtml(m.reason || "okänt")}).`;
+  host.innerHTML = `
+    <h4>Kryss: modellens chans mot utfall</h4>
+    <p class="scan-empty">${status} X tippas aldrig – det är sällan mest troligt, men kan ha värde (se Agent 3).</p>
+    <table class="draw-cal-table">
+      <thead><tr><th>Grupp</th><th class="num">Matcher</th><th class="num">Tidigare</th><th class="num">Nu</th><th class="num">Faktiskt kryss</th></tr></thead>
+      <tbody>${rows.join("")}</tbody>
+    </table>`;
+  host.hidden = false;
 }
 
 function toggleAccDetail(label, marketKey) {
@@ -506,6 +536,16 @@ function renderAccuracy(acc) {
     ["BTTS", "BTTS", acc.BTTS],
     ["Ö/U 2.5", "OU25", acc.OU25],
   ];
+  // 1X2: träff per val (hur ofta tippad 1 / X / 2 gick in)
+  const picksHtml = (bp) =>
+    bp
+      ? `<div class="acc-picks">${["1", "X", "2"]
+          .map((p) => {
+            const x = bp[p];
+            return `<div class="acc-pick"><span class="pk">${p}</span><span class="pv">${x?.tested ? fmtPct(x.rate) : "—"}</span><span class="pn">${x?.tested ? `${x.correct}/${x.tested}` : "tippas aldrig"}</span></div>`;
+          })
+          .join("")}</div>`
+      : "";
   box.innerHTML = rows
     .map(
       ([label, key, a]) => `
@@ -513,6 +553,7 @@ function renderAccuracy(acc) {
         <div class="label">${label}</div>
         <div class="val">${fmtPct(a?.rate)}</div>
         <div class="sub">${a?.correct ?? 0}/${a?.tested ?? 0} i backtest · ${scope}</div>
+        ${key === "1X2" ? picksHtml(a?.byPick) : ""}
         <div class="hint">Klicka för chansband</div>
       </button>`
     )
@@ -645,6 +686,7 @@ async function loadDashboard() {
   state.accuracyByLeague = data.accuracyByLeague || null;
   state.accuracyByConfidence = data.accuracyByConfidence || null;
   state.accuracyByConfidenceByLeague = data.accuracyByConfidenceByLeague || null;
+  state.drawCalibration = data.drawCalibration || null;
   state._matchCount = data.sources?.matchCount ?? "—";
   state.leagueNames = data.leagueNames || {};
   // Länder/grupper i bokstavsordning (svensk sortering: ... Tjeckien, Tyskland, USA)

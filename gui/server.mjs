@@ -298,6 +298,7 @@ function buildDashboard() {
     accuracyByConfidence: tips?.accuracyByConfidence || store?.accuracyByConfidence || null,
     accuracyByConfidenceByLeague:
       tips?.accuracyByConfidenceByLeague || store?.accuracyByConfidenceByLeague || null,
+    drawCalibration: tips?.drawCalibration || null,
     leagues,
     leagueNames,
     leagueGroups,
