@@ -57,6 +57,39 @@ test('Dixon-Coles hittar starkare lag pa syntetisk data', async () => {
   expect(p.lambdaHome).toBeGreaterThan(p.lambdaAway);
 });
 
+test('ligamodell: nedflyttat lag far ovre prior, uppflyttat nedre', async () => {
+  const lm = await import(pathToFileURL(path.join(root, 'scripts', 'pro', 'league-models.mjs')).href);
+  const lib = await import(libUrl);
+  const league2 = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
+  const strength: Record<string, number> = { A: 3, B: 2, C: 2, D: 1, E: 1, F: 1, G: 0, H: 0, UP: 3 };
+  const byLeague: Record<string, any[]> = { L1: [], L2: [] };
+  let day = 0;
+  const play = (lg: string, teams: string[], rounds: number) => {
+    for (let r = 0; r < rounds; r++) for (const h of teams) for (const a of teams) {
+      if (h === a) continue;
+      day++;
+      const d = new Date(Date.UTC(2025, 0, 1) + (day / 4) * 86_400_000).toISOString().slice(0, 10);
+      byLeague[lg].push({ date: d, home: h, away: a, hg: strength[h], ag: strength[a] });
+    }
+  };
+  play('L2', league2, 2);
+  play('L1', ['DOWN', 'X', 'Y', 'Z'], 2); // DOWN spelade hogre niva, nu i L2
+  const tiers = lm.buildTiers({ groups: [{ id: 'land', leagues: ['L1', 'L2'] }] });
+  const params = { ...lm.DEFAULT_PARAMS, prior: true };
+  const model = lm.fitLeagueModel(byLeague.L2, '2025-12-31', params, {
+    league: 'L2', byLeague, tiers, teams: ['DOWN', 'NEW', 'A'],
+  });
+  expect(model.priors.DOWN.type).toBe('nedflyttat');
+  expect(model.priors.NEW.type).toBe('nytt/uppflyttat');
+  expect(model.priors.A).toBeUndefined();
+  expect(model.att.get('DOWN')).toBeGreaterThan(model.att.get('NEW'));
+  const p = lib.predictDixonColes(model, 'DOWN', 'NEW');
+  expect(p.home).toBeGreaterThan(p.away);
+  // Utan prior: bada nya lag far ligasnitt
+  const plain = lm.fitLeagueModel(byLeague.L2, '2025-12-31', lm.DEFAULT_PARAMS, { league: 'L2', byLeague, tiers, teams: ['DOWN', 'NEW'] });
+  expect(plain.att.has('DOWN')).toBeFalsy();
+});
+
 test('store har closing odds och domardata', async () => {
   const store = readJson(path.join(root, 'data', 'betting-store.json'));
   // Closing odds finns bara i football-data-ligorna (ESPN/TheSportsDB-ligor saknar dem) -> mat PL

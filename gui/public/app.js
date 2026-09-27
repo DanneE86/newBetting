@@ -75,6 +75,7 @@ function fmtKick(tip) {
 function noteLines(tip) {
   const parts = [];
   if (tip.marketOnly) parts.push(`<span class="market-only">Marknadstips – chansen är ${escapeHtml(tip.marketSource || "marknaden")} utan marginal (ingen modell för denna liga)</span>`);
+  if (tip.marketLed) parts.push(`<span class="market-only">${escapeHtml(tip.marketLedNote || "Tidig säsong – marknadens chans styr tipset")}</span>`);
   if (tip.lineupStatus && tip.lineupStatus !== "none") {
     const cls = tip.lineupStatus === "confirmed" ? "xi-confirmed" : "xi-pending";
     parts.push(`<span class="${cls}">Elvor: ${tip.lineupStatus}</span>`);
