@@ -493,14 +493,15 @@ function startFetch(mode = "sync") {
     ].join("; ");
     child = spawn("powershell", ["-NoProfile", "-ExecutionPolicy", "Bypass", "-Command", cmd], {
       cwd: ROOT,
-      env: process.env,
+      // Odds API: flest matcher forst, krediterna fordelas over resten av manaden (500/man gratis)
+      env: { ...process.env, ODDS_BUDGET: process.env.ODDS_BUDGET || "auto" },
       windowsHide: true,
     });
   } else {
     const args = scripts[mode] || scripts.sync;
     child = spawn(isWin ? "npm.cmd" : "npm", args, {
       cwd: ROOT,
-      env: process.env,
+      env: { ...process.env, ODDS_BUDGET: process.env.ODDS_BUDGET || "auto" },
       windowsHide: true,
       shell: isWin,
     });
