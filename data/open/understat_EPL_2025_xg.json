@@ -1,432 +1,432 @@
 {
-    "source":  "understat getLeagueData",
-    "league":  "PL",
-    "understatLeague":  "EPL",
-    "seasonCode":  "2025",
-    "seasonLabel":  "2025/26",
-    "updatedAt":  "2026-09-27T12:19:56.8973876+02:00",
-    "teamCount":  20,
-    "teams":  [
-                  {
-                      "understatTitle":  "Aston Villa",
-                      "name":  "Aston Villa",
-                      "played":  38,
-                      "xG":  56.203,
-                      "xGA":  56.683,
-                      "xGpg":  1.479,
-                      "xGApg":  1.492,
-                      "goalsFor":  56,
-                      "goalsAgainst":  49,
-                      "home":  {
-                                   "xGApg":  1.305,
-                                   "xGpg":  1.579,
-                                   "played":  19
-                               },
-                      "away":  {
-                                   "xGApg":  1.679,
-                                   "xGpg":  1.379,
-                                   "played":  19
-                               }
-                  },
-                  {
-                      "understatTitle":  "Everton",
-                      "name":  "Everton",
-                      "played":  38,
-                      "xG":  49.87,
-                      "xGA":  59.995,
-                      "xGpg":  1.312,
-                      "xGApg":  1.579,
-                      "goalsFor":  47,
-                      "goalsAgainst":  50,
-                      "home":  {
-                                   "xGApg":  1.423,
-                                   "xGpg":  1.392,
-                                   "played":  19
-                               },
-                      "away":  {
-                                   "xGApg":  1.735,
-                                   "xGpg":  1.233,
-                                   "played":  19
-                               }
-                  },
-                  {
-                      "understatTitle":  "Bournemouth",
-                      "name":  "Bournemouth",
-                      "played":  38,
-                      "xG":  66.835,
-                      "xGA":  56.77,
-                      "xGpg":  1.759,
-                      "xGApg":  1.494,
-                      "goalsFor":  58,
-                      "goalsAgainst":  54,
-                      "home":  {
-                                   "xGApg":  0.852,
-                                   "xGpg":  1.697,
-                                   "played":  19
-                               },
-                      "away":  {
-                                   "xGApg":  2.136,
-                                   "xGpg":  1.821,
-                                   "played":  19
-                               }
-                  },
-                  {
-                      "understatTitle":  "Sunderland",
-                      "name":  "Sunderland",
-                      "played":  38,
-                      "xG":  43.136,
-                      "xGA":  60.337,
-                      "xGpg":  1.135,
-                      "xGApg":  1.588,
-                      "goalsFor":  42,
-                      "goalsAgainst":  48,
-                      "home":  {
-                                   "xGApg":  1.349,
-                                   "xGpg":  1.211,
-                                   "played":  19
-                               },
-                      "away":  {
-                                   "xGApg":  1.826,
-                                   "xGpg":  1.059,
-                                   "played":  19
-                               }
-                  },
-                  {
-                      "understatTitle":  "Crystal Palace",
-                      "name":  "Crystal Palace",
-                      "played":  38,
-                      "xG":  62.456,
-                      "xGA":  60.046,
-                      "xGpg":  1.644,
-                      "xGApg":  1.58,
-                      "goalsFor":  41,
-                      "goalsAgainst":  51,
-                      "home":  {
-                                   "xGApg":  1.595,
-                                   "xGpg":  1.887,
-                                   "played":  19
-                               },
-                      "away":  {
-                                   "xGApg":  1.565,
-                                   "xGpg":  1.4,
-                                   "played":  19
-                               }
-                  },
-                  {
-                      "understatTitle":  "Chelsea",
-                      "name":  "Chelsea",
-                      "played":  38,
-                      "xG":  72.212,
-                      "xGA":  58.117,
-                      "xGpg":  1.9,
-                      "xGApg":  1.529,
-                      "goalsFor":  58,
-                      "goalsAgainst":  52,
-                      "home":  {
-                                   "xGApg":  1.575,
-                                   "xGpg":  1.974,
-                                   "played":  19
-                               },
-                      "away":  {
-                                   "xGApg":  1.484,
-                                   "xGpg":  1.827,
-                                   "played":  19
-                               }
-                  },
-                  {
-                      "understatTitle":  "West Ham",
-                      "name":  "West Ham",
-                      "played":  38,
-                      "xG":  49.64,
-                      "xGA":  68.116,
-                      "xGpg":  1.306,
-                      "xGApg":  1.793,
-                      "goalsFor":  46,
-                      "goalsAgainst":  65,
-                      "home":  {
-                                   "xGApg":  1.594,
-                                   "xGpg":  1.496,
-                                   "played":  19
-                               },
-                      "away":  {
-                                   "xGApg":  1.991,
-                                   "xGpg":  1.116,
-                                   "played":  19
-                               }
-                  },
-                  {
-                      "understatTitle":  "Tottenham",
-                      "name":  "Tottenham",
-                      "played":  38,
-                      "xG":  46.796,
-                      "xGA":  55.591,
-                      "xGpg":  1.231,
-                      "xGApg":  1.463,
-                      "goalsFor":  48,
-                      "goalsAgainst":  57,
-                      "home":  {
-                                   "xGApg":  1.501,
-                                   "xGpg":  1.306,
-                                   "played":  19
-                               },
-                      "away":  {
-                                   "xGApg":  1.425,
-                                   "xGpg":  1.157,
-                                   "played":  19
-                               }
-                  },
-                  {
-                      "understatTitle":  "Arsenal",
-                      "name":  "Arsenal",
-                      "played":  38,
-                      "xG":  77.487,
-                      "xGA":  33.134,
-                      "xGpg":  2.039,
-                      "xGApg":  0.872,
-                      "goalsFor":  71,
-                      "goalsAgainst":  27,
-                      "home":  {
-                                   "xGApg":  0.776,
-                                   "xGpg":  2.095,
-                                   "played":  19
-                               },
-                      "away":  {
-                                   "xGApg":  0.967,
-                                   "xGpg":  1.983,
-                                   "played":  19
-                               }
-                  },
-                  {
-                      "understatTitle":  "Newcastle United",
-                      "name":  "Newcastle",
-                      "played":  38,
-                      "xG":  60.613,
-                      "xGA":  57.312,
-                      "xGpg":  1.595,
-                      "xGApg":  1.508,
-                      "goalsFor":  53,
-                      "goalsAgainst":  55,
-                      "home":  {
-                                   "xGApg":  1.618,
-                                   "xGpg":  2.164,
-                                   "played":  19
-                               },
-                      "away":  {
-                                   "xGApg":  1.398,
-                                   "xGpg":  1.026,
-                                   "played":  19
-                               }
-                  },
-                  {
-                      "understatTitle":  "Liverpool",
-                      "name":  "Liverpool",
-                      "played":  38,
-                      "xG":  67.259,
-                      "xGA":  53.87,
-                      "xGpg":  1.77,
-                      "xGApg":  1.418,
-                      "goalsFor":  63,
-                      "goalsAgainst":  53,
-                      "home":  {
-                                   "xGApg":  1.143,
-                                   "xGpg":  1.848,
-                                   "played":  19
-                               },
-                      "away":  {
-                                   "xGApg":  1.692,
-                                   "xGpg":  1.692,
-                                   "played":  19
-                               }
-                  },
-                  {
-                      "understatTitle":  "Manchester City",
-                      "name":  "Man City",
-                      "played":  38,
-                      "xG":  79.36,
-                      "xGA":  46.493,
-                      "xGpg":  2.088,
-                      "xGApg":  1.223,
-                      "goalsFor":  77,
-                      "goalsAgainst":  35,
-                      "home":  {
-                                   "xGApg":  1.156,
-                                   "xGpg":  2.31,
-                                   "played":  19
-                               },
-                      "away":  {
-                                   "xGApg":  1.291,
-                                   "xGpg":  1.867,
-                                   "played":  19
-                               }
-                  },
-                  {
-                      "understatTitle":  "Manchester United",
-                      "name":  "Man United",
-                      "played":  38,
-                      "xG":  72.188,
-                      "xGA":  50.281,
-                      "xGpg":  1.9,
-                      "xGApg":  1.323,
-                      "goalsFor":  69,
-                      "goalsAgainst":  50,
-                      "home":  {
-                                   "xGApg":  1.186,
-                                   "xGpg":  2.191,
-                                   "played":  19
-                               },
-                      "away":  {
-                                   "xGApg":  1.461,
-                                   "xGpg":  1.608,
-                                   "played":  19
-                               }
-                  },
-                  {
-                      "understatTitle":  "Burnley",
-                      "name":  "Burnley",
-                      "played":  38,
-                      "xG":  36.941,
-                      "xGA":  82.584,
-                      "xGpg":  0.972,
-                      "xGApg":  2.173,
-                      "goalsFor":  38,
-                      "goalsAgainst":  75,
-                      "home":  {
-                                   "xGApg":  1.991,
-                                   "xGpg":  1.103,
-                                   "played":  19
-                               },
-                      "away":  {
-                                   "xGApg":  2.355,
-                                   "xGpg":  0.841,
-                                   "played":  19
-                               }
-                  },
-                  {
-                      "understatTitle":  "Brighton",
-                      "name":  "Brighton",
-                      "played":  38,
-                      "xG":  58.42,
-                      "xGA":  53.751,
-                      "xGpg":  1.537,
-                      "xGApg":  1.415,
-                      "goalsFor":  52,
-                      "goalsAgainst":  46,
-                      "home":  {
-                                   "xGApg":  1.255,
-                                   "xGpg":  1.586,
-                                   "played":  19
-                               },
-                      "away":  {
-                                   "xGApg":  1.574,
-                                   "xGpg":  1.488,
-                                   "played":  19
-                               }
-                  },
-                  {
-                      "understatTitle":  "Fulham",
-                      "name":  "Fulham",
-                      "played":  38,
-                      "xG":  49.581,
-                      "xGA":  60.844,
-                      "xGpg":  1.305,
-                      "xGApg":  1.601,
-                      "goalsFor":  47,
-                      "goalsAgainst":  51,
-                      "home":  {
-                                   "xGApg":  1.284,
-                                   "xGpg":  1.509,
-                                   "played":  19
-                               },
-                      "away":  {
-                                   "xGApg":  1.918,
-                                   "xGpg":  1.101,
-                                   "played":  19
-                               }
-                  },
-                  {
-                      "understatTitle":  "Wolverhampton Wanderers",
-                      "name":  "Wolves",
-                      "played":  38,
-                      "xG":  38.441,
-                      "xGA":  68.304,
-                      "xGpg":  1.012,
-                      "xGApg":  1.797,
-                      "goalsFor":  27,
-                      "goalsAgainst":  68,
-                      "home":  {
-                                   "xGApg":  1.647,
-                                   "xGpg":  1.189,
-                                   "played":  19
-                               },
-                      "away":  {
-                                   "xGApg":  1.948,
-                                   "xGpg":  0.835,
-                                   "played":  19
-                               }
-                  },
-                  {
-                      "understatTitle":  "Brentford",
-                      "name":  "Brentford",
-                      "played":  38,
-                      "xG":  66.257,
-                      "xGA":  59.11,
-                      "xGpg":  1.744,
-                      "xGApg":  1.556,
-                      "goalsFor":  55,
-                      "goalsAgainst":  52,
-                      "home":  {
-                                   "xGApg":  1.32,
-                                   "xGpg":  2.116,
-                                   "played":  19
-                               },
-                      "away":  {
-                                   "xGApg":  1.791,
-                                   "xGpg":  1.371,
-                                   "played":  19
-                               }
-                  },
-                  {
-                      "understatTitle":  "Leeds",
-                      "name":  "Leeds",
-                      "played":  38,
-                      "xG":  59.771,
-                      "xGA":  56.326,
-                      "xGpg":  1.573,
-                      "xGApg":  1.482,
-                      "goalsFor":  49,
-                      "goalsAgainst":  56,
-                      "home":  {
-                                   "xGApg":  1.231,
-                                   "xGpg":  1.755,
-                                   "played":  19
-                               },
-                      "away":  {
-                                   "xGApg":  1.734,
-                                   "xGpg":  1.391,
-                                   "played":  19
-                               }
-                  },
-                  {
-                      "understatTitle":  "Nottingham Forest",
-                      "name":  "Nott\u0027m Forest",
-                      "played":  38,
-                      "xG":  48.936,
-                      "xGA":  64.74,
-                      "xGpg":  1.288,
-                      "xGApg":  1.704,
-                      "goalsFor":  48,
-                      "goalsAgainst":  51,
-                      "home":  {
-                                   "xGApg":  1.484,
-                                   "xGpg":  1.484,
-                                   "played":  19
-                               },
-                      "away":  {
-                                   "xGApg":  1.923,
-                                   "xGpg":  1.091,
-                                   "played":  19
-                               }
-                  }
-              ],
-    "note":  "Championship finns inte pa Understat."
+  "source": "understat getLeagueData",
+  "league": "PL",
+  "understatLeague": "EPL",
+  "seasonCode": "2025",
+  "seasonLabel": "2025/26",
+  "updatedAt": "2026-09-27T13:45:40.0082920+02:00",
+  "teamCount": 20,
+  "teams": [
+    {
+      "understatTitle": "Aston Villa",
+      "name": "Aston Villa",
+      "played": 38,
+      "xG": 56.203,
+      "xGA": 56.683,
+      "xGpg": 1.479,
+      "xGApg": 1.492,
+      "goalsFor": 56,
+      "goalsAgainst": 49,
+      "home": {
+        "xGpg": 1.579,
+        "xGApg": 1.305,
+        "played": 19
+      },
+      "away": {
+        "xGpg": 1.379,
+        "xGApg": 1.679,
+        "played": 19
+      }
+    },
+    {
+      "understatTitle": "Everton",
+      "name": "Everton",
+      "played": 38,
+      "xG": 49.87,
+      "xGA": 59.995,
+      "xGpg": 1.312,
+      "xGApg": 1.579,
+      "goalsFor": 47,
+      "goalsAgainst": 50,
+      "home": {
+        "xGpg": 1.392,
+        "xGApg": 1.423,
+        "played": 19
+      },
+      "away": {
+        "xGpg": 1.233,
+        "xGApg": 1.735,
+        "played": 19
+      }
+    },
+    {
+      "understatTitle": "Bournemouth",
+      "name": "Bournemouth",
+      "played": 38,
+      "xG": 66.835,
+      "xGA": 56.77,
+      "xGpg": 1.759,
+      "xGApg": 1.494,
+      "goalsFor": 58,
+      "goalsAgainst": 54,
+      "home": {
+        "xGpg": 1.697,
+        "xGApg": 0.852,
+        "played": 19
+      },
+      "away": {
+        "xGpg": 1.821,
+        "xGApg": 2.136,
+        "played": 19
+      }
+    },
+    {
+      "understatTitle": "Sunderland",
+      "name": "Sunderland",
+      "played": 38,
+      "xG": 43.136,
+      "xGA": 60.337,
+      "xGpg": 1.135,
+      "xGApg": 1.588,
+      "goalsFor": 42,
+      "goalsAgainst": 48,
+      "home": {
+        "xGpg": 1.211,
+        "xGApg": 1.349,
+        "played": 19
+      },
+      "away": {
+        "xGpg": 1.059,
+        "xGApg": 1.826,
+        "played": 19
+      }
+    },
+    {
+      "understatTitle": "Crystal Palace",
+      "name": "Crystal Palace",
+      "played": 38,
+      "xG": 62.456,
+      "xGA": 60.046,
+      "xGpg": 1.644,
+      "xGApg": 1.58,
+      "goalsFor": 41,
+      "goalsAgainst": 51,
+      "home": {
+        "xGpg": 1.887,
+        "xGApg": 1.595,
+        "played": 19
+      },
+      "away": {
+        "xGpg": 1.4,
+        "xGApg": 1.565,
+        "played": 19
+      }
+    },
+    {
+      "understatTitle": "Chelsea",
+      "name": "Chelsea",
+      "played": 38,
+      "xG": 72.212,
+      "xGA": 58.117,
+      "xGpg": 1.9,
+      "xGApg": 1.529,
+      "goalsFor": 58,
+      "goalsAgainst": 52,
+      "home": {
+        "xGpg": 1.974,
+        "xGApg": 1.575,
+        "played": 19
+      },
+      "away": {
+        "xGpg": 1.827,
+        "xGApg": 1.484,
+        "played": 19
+      }
+    },
+    {
+      "understatTitle": "West Ham",
+      "name": "West Ham",
+      "played": 38,
+      "xG": 49.64,
+      "xGA": 68.116,
+      "xGpg": 1.306,
+      "xGApg": 1.793,
+      "goalsFor": 46,
+      "goalsAgainst": 65,
+      "home": {
+        "xGpg": 1.496,
+        "xGApg": 1.594,
+        "played": 19
+      },
+      "away": {
+        "xGpg": 1.116,
+        "xGApg": 1.991,
+        "played": 19
+      }
+    },
+    {
+      "understatTitle": "Tottenham",
+      "name": "Tottenham",
+      "played": 38,
+      "xG": 46.796,
+      "xGA": 55.591,
+      "xGpg": 1.231,
+      "xGApg": 1.463,
+      "goalsFor": 48,
+      "goalsAgainst": 57,
+      "home": {
+        "xGpg": 1.306,
+        "xGApg": 1.501,
+        "played": 19
+      },
+      "away": {
+        "xGpg": 1.157,
+        "xGApg": 1.425,
+        "played": 19
+      }
+    },
+    {
+      "understatTitle": "Arsenal",
+      "name": "Arsenal",
+      "played": 38,
+      "xG": 77.487,
+      "xGA": 33.134,
+      "xGpg": 2.039,
+      "xGApg": 0.872,
+      "goalsFor": 71,
+      "goalsAgainst": 27,
+      "home": {
+        "xGpg": 2.095,
+        "xGApg": 0.776,
+        "played": 19
+      },
+      "away": {
+        "xGpg": 1.983,
+        "xGApg": 0.967,
+        "played": 19
+      }
+    },
+    {
+      "understatTitle": "Newcastle United",
+      "name": "Newcastle",
+      "played": 38,
+      "xG": 60.613,
+      "xGA": 57.312,
+      "xGpg": 1.595,
+      "xGApg": 1.508,
+      "goalsFor": 53,
+      "goalsAgainst": 55,
+      "home": {
+        "xGpg": 2.164,
+        "xGApg": 1.618,
+        "played": 19
+      },
+      "away": {
+        "xGpg": 1.026,
+        "xGApg": 1.398,
+        "played": 19
+      }
+    },
+    {
+      "understatTitle": "Liverpool",
+      "name": "Liverpool",
+      "played": 38,
+      "xG": 67.259,
+      "xGA": 53.87,
+      "xGpg": 1.77,
+      "xGApg": 1.418,
+      "goalsFor": 63,
+      "goalsAgainst": 53,
+      "home": {
+        "xGpg": 1.848,
+        "xGApg": 1.143,
+        "played": 19
+      },
+      "away": {
+        "xGpg": 1.692,
+        "xGApg": 1.692,
+        "played": 19
+      }
+    },
+    {
+      "understatTitle": "Manchester City",
+      "name": "Man City",
+      "played": 38,
+      "xG": 79.36,
+      "xGA": 46.493,
+      "xGpg": 2.088,
+      "xGApg": 1.223,
+      "goalsFor": 77,
+      "goalsAgainst": 35,
+      "home": {
+        "xGpg": 2.31,
+        "xGApg": 1.156,
+        "played": 19
+      },
+      "away": {
+        "xGpg": 1.867,
+        "xGApg": 1.291,
+        "played": 19
+      }
+    },
+    {
+      "understatTitle": "Manchester United",
+      "name": "Man United",
+      "played": 38,
+      "xG": 72.188,
+      "xGA": 50.281,
+      "xGpg": 1.9,
+      "xGApg": 1.323,
+      "goalsFor": 69,
+      "goalsAgainst": 50,
+      "home": {
+        "xGpg": 2.191,
+        "xGApg": 1.186,
+        "played": 19
+      },
+      "away": {
+        "xGpg": 1.608,
+        "xGApg": 1.461,
+        "played": 19
+      }
+    },
+    {
+      "understatTitle": "Burnley",
+      "name": "Burnley",
+      "played": 38,
+      "xG": 36.941,
+      "xGA": 82.584,
+      "xGpg": 0.972,
+      "xGApg": 2.173,
+      "goalsFor": 38,
+      "goalsAgainst": 75,
+      "home": {
+        "xGpg": 1.103,
+        "xGApg": 1.991,
+        "played": 19
+      },
+      "away": {
+        "xGpg": 0.841,
+        "xGApg": 2.355,
+        "played": 19
+      }
+    },
+    {
+      "understatTitle": "Brighton",
+      "name": "Brighton",
+      "played": 38,
+      "xG": 58.42,
+      "xGA": 53.751,
+      "xGpg": 1.537,
+      "xGApg": 1.415,
+      "goalsFor": 52,
+      "goalsAgainst": 46,
+      "home": {
+        "xGpg": 1.586,
+        "xGApg": 1.255,
+        "played": 19
+      },
+      "away": {
+        "xGpg": 1.488,
+        "xGApg": 1.574,
+        "played": 19
+      }
+    },
+    {
+      "understatTitle": "Fulham",
+      "name": "Fulham",
+      "played": 38,
+      "xG": 49.581,
+      "xGA": 60.844,
+      "xGpg": 1.305,
+      "xGApg": 1.601,
+      "goalsFor": 47,
+      "goalsAgainst": 51,
+      "home": {
+        "xGpg": 1.509,
+        "xGApg": 1.284,
+        "played": 19
+      },
+      "away": {
+        "xGpg": 1.101,
+        "xGApg": 1.918,
+        "played": 19
+      }
+    },
+    {
+      "understatTitle": "Wolverhampton Wanderers",
+      "name": "Wolves",
+      "played": 38,
+      "xG": 38.441,
+      "xGA": 68.304,
+      "xGpg": 1.012,
+      "xGApg": 1.797,
+      "goalsFor": 27,
+      "goalsAgainst": 68,
+      "home": {
+        "xGpg": 1.189,
+        "xGApg": 1.647,
+        "played": 19
+      },
+      "away": {
+        "xGpg": 0.835,
+        "xGApg": 1.948,
+        "played": 19
+      }
+    },
+    {
+      "understatTitle": "Brentford",
+      "name": "Brentford",
+      "played": 38,
+      "xG": 66.257,
+      "xGA": 59.11,
+      "xGpg": 1.744,
+      "xGApg": 1.556,
+      "goalsFor": 55,
+      "goalsAgainst": 52,
+      "home": {
+        "xGpg": 2.116,
+        "xGApg": 1.32,
+        "played": 19
+      },
+      "away": {
+        "xGpg": 1.371,
+        "xGApg": 1.791,
+        "played": 19
+      }
+    },
+    {
+      "understatTitle": "Leeds",
+      "name": "Leeds",
+      "played": 38,
+      "xG": 59.771,
+      "xGA": 56.326,
+      "xGpg": 1.573,
+      "xGApg": 1.482,
+      "goalsFor": 49,
+      "goalsAgainst": 56,
+      "home": {
+        "xGpg": 1.755,
+        "xGApg": 1.231,
+        "played": 19
+      },
+      "away": {
+        "xGpg": 1.391,
+        "xGApg": 1.734,
+        "played": 19
+      }
+    },
+    {
+      "understatTitle": "Nottingham Forest",
+      "name": "Nott'm Forest",
+      "played": 38,
+      "xG": 48.936,
+      "xGA": 64.74,
+      "xGpg": 1.288,
+      "xGApg": 1.704,
+      "goalsFor": 48,
+      "goalsAgainst": 51,
+      "home": {
+        "xGpg": 1.484,
+        "xGApg": 1.484,
+        "played": 19
+      },
+      "away": {
+        "xGpg": 1.091,
+        "xGApg": 1.923,
+        "played": 19
+      }
+    }
+  ],
+  "note": "Championship finns inte pa Understat."
 }

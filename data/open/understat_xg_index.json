@@ -1,17 +1,17 @@
 {
-    "updatedAt":  "2026-09-27T12:19:56.9032164+02:00",
-    "seasons":  [
-                    {
-                        "teamCount":  20,
-                        "seasonLabel":  "2026/27",
-                        "seasonCode":  "2026"
-                    },
-                    {
-                        "teamCount":  20,
-                        "seasonLabel":  "2025/26",
-                        "seasonCode":  "2025"
-                    }
-                ],
-    "primary":  "2026",
-    "championshipSupported":  false
+  "updatedAt": "2026-09-27T13:45:40.0107366+02:00",
+  "seasons": [
+    {
+      "seasonCode": "2026",
+      "seasonLabel": "2026/27",
+      "teamCount": 20
+    },
+    {
+      "seasonCode": "2025",
+      "seasonLabel": "2025/26",
+      "teamCount": 20
+    }
+  ],
+  "primary": "2026",
+  "championshipSupported": false
 }

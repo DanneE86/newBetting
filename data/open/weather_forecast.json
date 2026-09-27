@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-09-27T10:45:44.820Z",
+  "updatedAt": "2026-09-27T11:45:56.160Z",
   "source": "open-meteo forecast",
   "horizon": [
     "2026-09-27",
     "2026-09-27"
   ],
-  "count": 16,
+  "count": 13,
   "missingVenues": [
     "Burgos",
     "Eibar"
@@ -14,35 +14,16 @@
     {
       "date": "2026-09-27",
       "league": "SE3N",
-      "home": "Arlanda",
-      "away": "Enköping",
-      "venue": "Arlanda (stad)",
-      "lat": 59.64897,
-      "lon": 17.92999,
-      "weatherPoint": "c32",
-      "kickoffUtc": "2026-09-27T14:00:00.000Z",
-      "kickoffAssumed": true,
-      "weather": {
-        "tempC": 16.2,
-        "precipMm": 0,
-        "windKmh": 9.1,
-        "gustKmh": 20.5,
-        "precipProb": 0
-      }
-    },
-    {
-      "date": "2026-09-27",
-      "league": "SE3N",
       "home": "Assyriska",
       "away": "Piteå",
       "venue": "Södertälje fotbollsarena",
       "lat": 59.187558701,
       "lon": 17.570436431,
-      "weatherPoint": "c39",
+      "weatherPoint": "c40",
       "kickoffUtc": "2026-09-27T14:00:00.000Z",
       "kickoffAssumed": true,
       "weather": {
-        "tempC": 16.7,
+        "tempC": 16.5,
         "precipMm": 0,
         "windKmh": 10.1,
         "gustKmh": 24.8,
@@ -57,11 +38,11 @@
       "venue": "Strömvallen",
       "lat": 60.673055555,
       "lon": 17.1275,
-      "weatherPoint": "c214",
+      "weatherPoint": "c216",
       "kickoffUtc": "2026-09-27T14:00:00.000Z",
       "kickoffAssumed": true,
       "weather": {
-        "tempC": 16.7,
+        "tempC": 16.5,
         "precipMm": 0,
         "windKmh": 10.3,
         "gustKmh": 24.5,
@@ -76,53 +57,15 @@
       "venue": "Tingvalla IP",
       "lat": 59.386694,
       "lon": 13.4935,
-      "weatherPoint": "c182",
+      "weatherPoint": "c184",
       "kickoffUtc": "2026-09-27T14:00:00.000Z",
       "kickoffAssumed": true,
       "weather": {
-        "tempC": 16.2,
+        "tempC": 16.5,
         "precipMm": 0,
         "windKmh": 13.9,
         "gustKmh": 30.6,
         "precipProb": 68
-      }
-    },
-    {
-      "date": "2026-09-27",
-      "league": "SE3S",
-      "home": "Eskilsminne",
-      "away": "AFC Malmö",
-      "venue": "Eskilsminne (stad)",
-      "lat": 56.03333,
-      "lon": 12.73333,
-      "weatherPoint": "c173",
-      "kickoffUtc": "2026-09-27T14:00:00.000Z",
-      "kickoffAssumed": true,
-      "weather": {
-        "tempC": 18.5,
-        "precipMm": 0,
-        "windKmh": 22.2,
-        "gustKmh": 39.6,
-        "precipProb": 0
-      }
-    },
-    {
-      "date": "2026-09-27",
-      "league": "SE3S",
-      "home": "Trelleborg",
-      "away": "Ängelholm",
-      "venue": "Vångavallen",
-      "lat": 55.38680556,
-      "lon": 13.15816667,
-      "weatherPoint": "c507",
-      "kickoffUtc": "2026-09-27T14:00:00.000Z",
-      "kickoffAssumed": true,
-      "weather": {
-        "tempC": 15.9,
-        "precipMm": 0,
-        "windKmh": 25.8,
-        "gustKmh": 44.6,
-        "precipProb": 0
       }
     },
     {
@@ -133,7 +76,7 @@
       "venue": "Estadio Nuevo José Zorrilla",
       "lat": 41.644444,
       "lon": -4.761111,
-      "weatherPoint": "c523",
+      "weatherPoint": "c525",
       "kickoffUtc": "2026-09-27T13:00:00.000Z",
       "kickoffAssumed": false,
       "weather": {
@@ -152,7 +95,7 @@
       "venue": "Estadi Mallorca Son Moix",
       "lat": 39.59,
       "lon": 2.63,
-      "weatherPoint": "c333",
+      "weatherPoint": "c334",
       "kickoffUtc": "2026-09-27T15:15:00.000Z",
       "kickoffAssumed": false,
       "weather": {
@@ -171,14 +114,14 @@
       "venue": "Carlos Tartiere Stadium",
       "lat": 43.360783,
       "lon": -5.870222,
-      "weatherPoint": "c392",
+      "weatherPoint": "c394",
       "kickoffUtc": "2026-09-27T20:00:00.000Z",
       "kickoffAssumed": false,
       "weather": {
-        "tempC": 18.9,
+        "tempC": 18.5,
         "precipMm": 0,
-        "windKmh": 5.4,
-        "gustKmh": 10.8,
+        "windKmh": 6.3,
+        "gustKmh": 18.4,
         "precipProb": 3
       }
     },
@@ -190,7 +133,7 @@
       "venue": "Estádio Heriberto Hülse",
       "lat": -28.684167,
       "lon": -49.3675,
-      "weatherPoint": "c138",
+      "weatherPoint": "c140",
       "kickoffUtc": "2026-09-27T14:00:00.000Z",
       "kickoffAssumed": true,
       "weather": {
@@ -209,7 +152,7 @@
       "venue": "Estádio Rei Pelé",
       "lat": -9.670556,
       "lon": -35.759167,
-      "weatherPoint": "c136",
+      "weatherPoint": "c138",
       "kickoffUtc": "2026-09-27T14:00:00.000Z",
       "kickoffAssumed": true,
       "weather": {
@@ -228,7 +171,7 @@
       "venue": "Castelão",
       "lat": -3.807267,
       "lon": -38.522481,
-      "weatherPoint": "c111",
+      "weatherPoint": "c113",
       "kickoffUtc": "2026-09-27T14:00:00.000Z",
       "kickoffAssumed": true,
       "weather": {
@@ -247,7 +190,7 @@
       "venue": "Universitary Olympic Stadium",
       "lat": 19.331928,
       "lon": -99.192106,
-      "weatherPoint": "c50",
+      "weatherPoint": "c51",
       "kickoffUtc": "2026-09-27T14:00:00.000Z",
       "kickoffAssumed": true,
       "weather": {
@@ -266,14 +209,14 @@
       "venue": "ScottsMiracle-Gro Field",
       "lat": 39.96846,
       "lon": -83.01709,
-      "weatherPoint": "c129",
+      "weatherPoint": "c131",
       "kickoffUtc": "2026-09-27T14:00:00.000Z",
       "kickoffAssumed": true,
       "weather": {
-        "tempC": 14.3,
+        "tempC": 13.8,
         "precipMm": 0,
-        "windKmh": 12.6,
-        "gustKmh": 22,
+        "windKmh": 13.1,
+        "gustKmh": 24.8,
         "precipProb": 0
       }
     },
@@ -285,7 +228,7 @@
       "venue": "Estadio Jaraguay",
       "lat": 8.711777777,
       "lon": -75.827638888,
-      "weatherPoint": "c267",
+      "weatherPoint": "c269",
       "kickoffUtc": "2026-09-27T14:00:00.000Z",
       "kickoffAssumed": true,
       "weather": {
@@ -304,7 +247,7 @@
       "venue": "Estadio Metropolitano de Techo",
       "lat": 4.623545,
       "lon": -74.135611,
-      "weatherPoint": "c201",
+      "weatherPoint": "c203",
       "kickoffUtc": "2026-09-27T14:00:00.000Z",
       "kickoffAssumed": true,
       "weather": {

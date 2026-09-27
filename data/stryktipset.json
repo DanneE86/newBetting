@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T11:25:12.305Z",
+  "updatedAt": "2026-09-27T11:50:00.870Z",
   "source": "api.spela.svenskaspel.se + football-data.co.uk + eloratings.net",
   "method": {
     "blend": "Slutprocent = 65 % Svenska Spels odds (utan marginal) + 35 % egen modell (20 % vid tunt underlag/landslag).",
@@ -459,7 +459,7 @@
           ],
           "modelWeight": 0.35,
           "tip": "1",
-          "tipP": 0.5287531651728854,
+          "tipP": 0.5287531651728853,
           "verdict": {
             "sign": "1",
             "minOdds": 1.95,
@@ -732,7 +732,7 @@
           ],
           "modelWeight": 0.35,
           "tip": "1",
-          "tipP": 0.6017967560951271,
+          "tipP": 0.601796756095127,
           "verdict": {
             "sign": "1",
             "minOdds": 1.71,
@@ -1007,7 +1007,7 @@
           ],
           "modelWeight": 0.35,
           "tip": "1",
-          "tipP": 0.6552516452641818,
+          "tipP": 0.6552516452641817,
           "verdict": {
             "sign": "1",
             "minOdds": 1.57,
@@ -1816,7 +1816,7 @@
           ],
           "modelWeight": 0.2,
           "tip": "1",
-          "tipP": 0.5112779481304284,
+          "tipP": 0.5112779481304283,
           "verdict": {
             "sign": "1",
             "minOdds": 2.01,
@@ -2351,7 +2351,7 @@
           ],
           "modelWeight": 0.35,
           "tip": "1",
-          "tipP": 0.4475952469616885,
+          "tipP": 0.4475952469616884,
           "verdict": {
             "sign": "1",
             "minOdds": 2.3,
@@ -2901,7 +2901,7 @@
           ],
           "modelWeight": 0.35,
           "tip": "1",
-          "tipP": 0.4510999693072727,
+          "tipP": 0.45109996930727264,
           "verdict": {
             "sign": "1",
             "minOdds": 2.28,
@@ -3174,7 +3174,7 @@
           ],
           "modelWeight": 0.35,
           "tip": "2",
-          "tipP": 0.365402809334467,
+          "tipP": 0.3654028093344671,
           "verdict": {
             "sign": "2",
             "minOdds": 2.82,
@@ -3249,7 +3249,7 @@
       "open": true,
       "closeDescription": "Europatipset v 39, stänger 2026-09-27 17:59",
       "regCloseTime": "2026-09-27T17:59:00+02:00",
-      "turnover": "3149450,00",
+      "turnover": "3382870,00",
       "comment": "Europatipset v. 2026-39",
       "modelCutoff": "2026-09-27",
       "events": [
@@ -3261,14 +3261,14 @@
           "country": "Internationell",
           "kickoff": "2026-09-27T18:00:00+02:00",
           "odds": [
-            1.41,
-            5.1,
+            1.4,
+            5.2,
             8.5
           ],
           "marketSource": "Svenska Spel",
           "market": [
-            0.693,
-            0.192,
+            0.697,
+            0.188,
             0.115
           ],
           "folk": [
@@ -3322,29 +3322,29 @@
           "matched": null,
           "thin": true,
           "final": [
-            0.702,
-            0.192,
+            0.705,
+            0.189,
             0.106
           ],
           "modelWeight": 0.2,
           "tip": "1",
-          "tipP": 0.7019286620569676,
+          "tipP": 0.705184097950259,
           "verdict": {
             "sign": "1",
-            "minOdds": 1.47,
-            "odds": 1.41,
+            "minOdds": 1.46,
+            "odds": 1.4,
             "value": false
           },
           "streckvarde": [
             0.84,
-            1.6,
-            2.65
+            1.58,
+            2.64
           ],
           "analysis": [
-            "Danmark är klar favorit (70 %).",
+            "Danmark är klar favorit (71 %).",
             "Landslags-Elo: Danmark 1859 (#17) mot Wales 1679 (#49).",
             "Förväntade mål 2,03 – 0,47; troligast 2-0, 1-0, 3-0.",
-            "Svenska folket överstreckar 1 (84 % mot vår 70 %)."
+            "Svenska folket överstreckar 1 (84 % mot vår 71 %)."
           ],
           "systemPick": {
             "signs": "1",
@@ -3468,8 +3468,8 @@
           ],
           "folk": [
             0.81,
-            0.13,
-            0.06
+            0.14,
+            0.05
           ],
           "model": [
             0.7,
@@ -3532,8 +3532,8 @@
           },
           "streckvarde": [
             0.85,
-            1.46,
-            2.03
+            1.35,
+            2.43
           ],
           "analysis": [
             "Tyskland är klar favorit (69 %).",
@@ -3554,15 +3554,15 @@
           "country": "Internationell",
           "kickoff": "2026-09-27T18:00:00+02:00",
           "odds": [
-            7.5,
-            5.25,
-            1.42
+            8,
+            5.4,
+            1.38
           ],
           "marketSource": "Svenska Spel",
           "market": [
-            0.13,
-            0.185,
-            0.685
+            0.121,
+            0.179,
+            0.7
           ],
           "folk": [
             0.05,
@@ -3615,30 +3615,30 @@
           "matched": null,
           "thin": true,
           "final": [
-            0.137,
-            0.199,
-            0.664
+            0.13,
+            0.194,
+            0.676
           ],
           "modelWeight": 0.2,
           "tip": "2",
-          "tipP": 0.6638288481999188,
+          "tipP": 0.6760144420118341,
           "verdict": {
             "sign": "2",
-            "minOdds": 1.55,
-            "odds": 1.42,
+            "minOdds": 1.52,
+            "odds": 1.38,
             "value": false
           },
           "streckvarde": [
-            2.74,
-            1.53,
-            0.81
+            2.59,
+            1.49,
+            0.82
           ],
           "analysis": [
-            "Nederländerna är klar favorit (66 %).",
+            "Nederländerna är klar favorit (68 %).",
             "Landslags-Elo: Serbien 1709 (#42) mot Nederländerna 1962 (#9).",
             "Förväntade mål 0,80 – 1,70; troligast 0-1, 1-1, 0-2.",
-            "Modellen tror mindre på 2 än oddsen (58 % mot 69 %).",
-            "Svenska folket överstreckar 2 (82 % mot vår 66 %)."
+            "Modellen tror mindre på 2 än oddsen (58 % mot 70 %).",
+            "Svenska folket överstreckar 2 (82 % mot vår 68 %)."
           ],
           "systemPick": {
             "signs": "2",
@@ -3664,9 +3664,9 @@
             0.154
           ],
           "folk": [
-            0.78,
+            0.77,
             0.16,
-            0.06
+            0.07
           ],
           "model": [
             0.646,
@@ -3728,15 +3728,15 @@
             "value": false
           },
           "streckvarde": [
-            0.8,
+            0.81,
             1.42,
-            2.45
+            2.1
           ],
           "analysis": [
             "Österrike är klar favorit (63 %).",
             "Landslags-Elo: Österrike 1831 (#22) mot Kosovo 1728 (#39).",
             "Förväntade mål 1,84 – 0,66; troligast 1-0, 2-0, 1-1.",
-            "Svenska folket överstreckar 1 (78 % mot vår 63 %)."
+            "Svenska folket överstreckar 1 (77 % mot vår 63 %)."
           ],
           "systemPick": {
             "signs": "1",
@@ -3950,14 +3950,14 @@
           "country": "Internationell",
           "kickoff": "2026-09-28T20:45:00+02:00",
           "odds": [
-            1.93,
-            3.85,
+            1.94,
+            3.8,
             4
           ],
           "marketSource": "Svenska Spel",
           "market": [
-            0.504,
-            0.253,
+            0.501,
+            0.256,
             0.243
           ],
           "folk": [
@@ -4011,26 +4011,26 @@
           "matched": null,
           "thin": true,
           "final": [
-            0.516,
-            0.254,
+            0.514,
+            0.257,
             0.23
           ],
           "modelWeight": 0.2,
           "tip": "1",
-          "tipP": 0.5159768656904478,
+          "tipP": 0.5136068860921761,
           "verdict": {
             "sign": "1",
-            "minOdds": 2,
-            "odds": 1.93,
+            "minOdds": 2.01,
+            "odds": 1.94,
             "value": false
           },
           "streckvarde": [
-            0.96,
-            0.98,
+            0.95,
+            0.99,
             1.15
           ],
           "analysis": [
-            "Sverige har ett övertag (52 %), men det är långt ifrån säkert.",
+            "Sverige har ett övertag (51 %), men det är långt ifrån säkert.",
             "Landslags-Elo: Sverige 1741 (#35) mot Polen 1699 (#44).",
             "Förväntade mål 1,67 – 0,83; troligast 1-0, 1-1, 2-0."
           ],
@@ -4144,15 +4144,15 @@
           "country": "Internationell",
           "kickoff": "2026-09-28T20:45:00+02:00",
           "odds": [
-            3.9,
+            3.95,
             4.1,
-            1.92
+            1.9
           ],
           "marketSource": "Svenska Spel",
           "market": [
-            0.251,
-            0.239,
-            0.51
+            0.247,
+            0.238,
+            0.514
           ],
           "folk": [
             0.14,
@@ -4205,23 +4205,23 @@
           "matched": null,
           "thin": true,
           "final": [
-            0.271,
+            0.268,
             0.249,
-            0.48
+            0.484
           ],
           "modelWeight": 0.2,
           "tip": "2",
-          "tipP": 0.4801353038815353,
+          "tipP": 0.48352922706820806,
           "verdict": {
             "sign": "2",
-            "minOdds": 2.15,
-            "odds": 1.92,
+            "minOdds": 2.13,
+            "odds": 1.9,
             "value": false
           },
           "streckvarde": [
-            1.93,
+            1.91,
             1.13,
-            0.75
+            0.76
           ],
           "analysis": [
             "Frankrike har ett övertag (48 %), men det är långt ifrån säkert.",
@@ -4537,8 +4537,8 @@
       "system": {
         "maxRows": 144,
         "rows": 108,
-        "hitAll": 0.00519613501960917,
-        "hitSingle": 0.00007289397692387212
+        "hitAll": 0.005336156898298646,
+        "hitSingle": 0.00007485827376287067
       },
       "result": null
     }
