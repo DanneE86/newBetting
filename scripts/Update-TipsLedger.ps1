@@ -39,34 +39,79 @@ foreach ($e in @($ledger.entries)) { $entries.Add($e) | Out-Null }
 function Entry-Key($t) { return "$($t.date)|$($t.league)|$($t.match)" }
 
 $existing = @{}
-foreach ($e in $entries) { $existing[(Entry-Key $e)] = $true }
+foreach ($e in $entries) { $existing[(Entry-Key $e)] = $e }
+
+# Odds vid tipstillfallet: basta pris hos dina bolag (pro-lagret), annars aldre reservkalla
+function Get-TipOdds($t) {
+    if ($t.pro -and $t.pro.odds -and ($t.pro.odds.home -or $t.pro.odds.over25)) { return $t.pro.odds }
+    if ($t.value) { return $t.value.odds }
+    return $null
+}
 
 $added = 0
-foreach ($t in @($tips.bestUpcoming)) {
-    if (-not $t.passEdgeFilter) { continue }
+$vbAdded = 0
+$nowIso = (Get-Date).ToString("o")
+# Topp-tips (edge-filter) + alla matcher med vardespel: vardespelen ar de faktiska spelen och CLV mats pa dem
+$candidates = @(@($tips.bestUpcoming | Where-Object { $_.passEdgeFilter }) + @($tips.allCandidates | Where-Object { $_.pro -and @($_.pro.valueBets).Count -gt 0 }))
+foreach ($t in $candidates) {
     $k = Entry-Key $t
-    if ($existing.ContainsKey($k)) { continue }
-    $entries.Add([ordered]@{
+    $vbs = @(if ($t.pro) { @($t.pro.valueBets) | ForEach-Object { $_ | Add-Member -NotePropertyName flaggedAt -NotePropertyValue $nowIso -Force -PassThru } })
+    if ($existing.ContainsKey($k)) {
+        # Vardespel som uppstatt senare (odds rorde sig): lagg till med priset nar det forst flaggades
+        $e = $existing[$k]
+        if ($e.settled) { continue }
+        $have = @{}
+        foreach ($v in @($e.proValueBets)) { if ($v -and $v.market) { $have["$($v.market)|$($v.pick)"] = $true } }
+        $new = @($vbs | Where-Object { -not $have.ContainsKey("$($_.market)|$($_.pick)") })
+        if ($new.Count) {
+            $merged = @(@($e.proValueBets | Where-Object { $_ -and $_.market }) + $new)
+            if ($e -is [System.Collections.IDictionary]) { $e["proValueBets"] = $merged }
+            else { $e | Add-Member -NotePropertyName proValueBets -NotePropertyValue $merged -Force }
+            $vbAdded += $new.Count
+        }
+        continue
+    }
+    $entry = [ordered]@{
         id = $k
         date = $t.date
         league = $t.league
         match = $t.match
+        home = $t.home
+        away = $t.away
         tipScore = $t.tipScore
         tips = $t.tips
         value = $t.value
         edge = $t.edge
         # Odds vid tipstillfallet - jamfors mot closing vid settle (CLV)
-        oddsTaken = $(if ($t.value) { $t.value.odds } else { $null })
-        bookmaker = $(if ($t.value) { $t.value.bookmaker } else { $null })
-        proValueBets = $(if ($t.pro) { @($t.pro.valueBets) } else { @() })
+        oddsTaken = (Get-TipOdds $t)
+        bookmaker = $(if ($t.pro -and $t.pro.oddsBooks) { $t.pro.oddsBooks } elseif ($t.value) { $t.value.bookmaker } else { $null })
+        proValueBets = $vbs
         availabilityNotes = $t.availabilityNotes
-        createdAt = (Get-Date).ToString("o")
+        createdAt = $nowIso
         settled = $false
         actual = $null
         hit = $null
-    }) | Out-Null
-    $existing[$k] = $true
+    }
+    $entries.Add($entry) | Out-Null
+    $existing[$k] = $entry
     $added++
+    $vbAdded += $vbs.Count
+}
+
+# Oddshistorik (pro-layer.mjs): senaste pris fore avspark = stangning dar football-data saknar closing
+$oddsHistory = Read-Json (Join-Path $Root "data/open/odds-history.json")
+function Get-HistoryFair($obj) {
+    if (-not $oddsHistory -or -not $oddsHistory.matches) { return $null }
+    $h = $obj.home; $a = $obj.away
+    if (-not $h -and $obj.match -match '^(.+?) vs (.+)$') { $h = $Matches[1]; $a = $Matches[2] }
+    $key = "$($obj.date)|$($obj.league)|$h|$a"
+    $row = $oddsHistory.matches.$key
+    if (-not $row -or -not $row.last -or -not $row.last.fair) { return $null }
+    $f = $row.last.fair
+    $out = @{ source = "senaste odds fore avspark ($($row.last.fairSource))"; proxy = $true; at = $row.last.at }
+    if ($null -ne $f.home) { $out["1"] = [double]$f.home; $out["X"] = [double]$f.draw; $out["2"] = [double]$f.away }
+    if ($null -ne $f.over25) { $out["OVER 2.5"] = [double]$f.over25; $out["UNDER 2.5"] = [double]$f.under25 }
+    return $out
 }
 
 # Settle against finished matches in store
@@ -144,12 +189,15 @@ foreach ($e in $entries) {
         $settledNow++
     }
 
-    # CLV: rakna (om) nar closing finns i store - aven for redan settlade poster utan clv
-    if ($obj.settled -and -not $obj.clv -and $resultByKey.ContainsKey([string]$obj.id)) {
+    # CLV: rakna (om) nar closing finns i store, annars mot senaste sparade odds fore avspark.
+    # En proxy-CLV raknas om nar riktig closing dyker upp.
+    $needClv = $obj.settled -and $resultByKey.ContainsKey([string]$obj.id) -and (-not $obj.clv -or $obj.clv.proxy)
+    if ($needClv) {
         $m = $resultByKey[[string]$obj.id]
         $fair = Get-ClosingFair $m
+        if (-not $fair) { $fair = Get-HistoryFair $obj }
         if ($fair) {
-            $clv = [ordered]@{ closingSource = $fair.source }
+            $clv = [ordered]@{ closingSource = $fair.source; proxy = [bool]$fair.proxy }
             foreach ($mkt in @("1X2", "OU25")) {
                 $pick = [string]$obj.tips.$mkt.pick
                 $fp = $fair[$pick]
@@ -164,10 +212,11 @@ foreach ($e in $entries) {
             }
             $vbOut = @()
             foreach ($vb in @($obj.proValueBets)) {
-                if (-not $vb) { continue }
+                if (-not $vb -or -not $vb.market) { continue }
                 $won = if ($vb.market -eq "1X2") { $obj.actual."1X2" -eq $vb.pick } else { $obj.actual.OU25 -eq $vb.pick }
                 $vbOut += [ordered]@{
                     market = $vb.market; pick = $vb.pick; odds = $vb.odds; stakeSek = $vb.stakeSek
+                    bookmaker = $vb.bookmaker; fairSource = $vb.fairSource; flaggedAt = $vb.flaggedAt
                     won = [bool]$won
                     profitUnits = $(if ($won) { [math]::Round([double]$vb.odds - 1, 3) } else { -1 })
                     clv = (Get-Clv $vb.odds $fair[[string]$vb.pick])
@@ -195,26 +244,59 @@ foreach ($mkt in @("1X2", "BTTS", "OU25")) {
     $rates[$mkt] = @{ n = $n; hits = $h; rate = $(if ($n -gt 0) { [math]::Round($h / $n, 4) } else { 0 }) }
 }
 
-# CLV-sammanfattning (proffsens huvudmatt)
-$clvVals = @()
+# CLV-sammanfattning (proffsens huvudmatt): tipsen och - viktigast - vardespelen
+function Summarize-Clv([double[]]$vals) {
+    if (-not $vals -or $vals.Count -eq 0) { return [ordered]@{ n = 0; meanClv = $null; positiveRate = $null } }
+    return [ordered]@{
+        n = $vals.Count
+        meanClv = [math]::Round((($vals | Measure-Object -Average).Average), 4)
+        positiveRate = [math]::Round(@($vals | Where-Object { $_ -gt 0 }).Count / $vals.Count, 3)
+    }
+}
+$clvVals = @(); $vbClv = @(); $vbClvReal = @(); $vbClvProxy = @()
 $vbN = 0; $vbProfit = 0.0
+$vbByLeague = @{}
 foreach ($e in $newList) {
     if (-not $e.clv) { continue }
     foreach ($mkt in @("1X2", "OU25")) {
         if ($null -ne $e.clv.$mkt.clv) { $clvVals += [double]$e.clv.$mkt.clv }
     }
     foreach ($vb in @($e.clv.valueBets)) {
-        if (-not $vb) { continue }
+        if (-not $vb -or -not $vb.market) { continue }
         $vbN++; $vbProfit += [double]$vb.profitUnits
+        $lg = [string]$e.league
+        if (-not $vbByLeague.ContainsKey($lg)) { $vbByLeague[$lg] = @{ n = 0; profit = 0.0; clv = @() } }
+        $vbByLeague[$lg].n++; $vbByLeague[$lg].profit += [double]$vb.profitUnits
+        if ($null -ne $vb.clv) {
+            $vbClv += [double]$vb.clv
+            $vbByLeague[$lg].clv += [double]$vb.clv
+            if ($e.clv.proxy) { $vbClvProxy += [double]$vb.clv } else { $vbClvReal += [double]$vb.clv }
+        }
     }
 }
+$openVb = 0
+foreach ($e in $newList) { if (-not $e.settled) { $openVb += @($e.proValueBets | Where-Object { $_ -and $_.market }).Count } }
+$byLeagueOut = [ordered]@{}
+foreach ($lg in ($vbByLeague.Keys | Sort-Object)) {
+    $b = $vbByLeague[$lg]
+    $byLeagueOut[$lg] = [ordered]@{ n = $b.n; roi = [math]::Round($b.profit / $b.n, 4); clv = (Summarize-Clv $b.clv) }
+}
+$tipClv = Summarize-Clv $clvVals
 $liveClv = [ordered]@{
-    n = $clvVals.Count
-    meanClv = $(if ($clvVals.Count) { [math]::Round((($clvVals | Measure-Object -Average).Average), 4) } else { $null })
-    positiveRate = $(if ($clvVals.Count) { [math]::Round(@($clvVals | Where-Object { $_ -gt 0 }).Count / $clvVals.Count, 3) } else { $null })
+    n = $tipClv.n
+    meanClv = $tipClv.meanClv
+    positiveRate = $tipClv.positiveRate
     # Fast insats 500 kr per spel -> vinst i kronor = enheter * 500
-    valueBets = [ordered]@{ n = $vbN; profitUnits = [math]::Round($vbProfit, 2); profitSek = [math]::Round($vbProfit * 500, 0); roi = $(if ($vbN) { [math]::Round($vbProfit / $vbN, 4) } else { $null }) }
-    note = "CLV = oddsTaken * fair closing-p - 1 (Pinnacle closing devig, annars snitt). Signal efter ~50 spel."
+    valueBets = [ordered]@{
+        n = $vbN; open = $openVb
+        profitUnits = [math]::Round($vbProfit, 2); profitSek = [math]::Round($vbProfit * 500, 0)
+        roi = $(if ($vbN) { [math]::Round($vbProfit / $vbN, 4) } else { $null })
+        clv = (Summarize-Clv $vbClv)
+        clvRealClosing = (Summarize-Clv $vbClvReal)
+        clvProxyClosing = (Summarize-Clv $vbClvProxy)
+        byLeague = $byLeagueOut
+    }
+    note = "CLV = taget odds x marginalfri stangningschans - 1. Stangning: Pinnacle/snitt (football-data), annars senaste sparade odds fore avspark (proxy). Positiv CLV over ~50 spel = du slar marknaden."
 }
 
 $out = [ordered]@{
@@ -229,6 +311,7 @@ $out = [ordered]@{
     entries = $newList.ToArray()
 }
 [System.IO.File]::WriteAllText($LedgerPath, ($out | ConvertTo-Json -Depth 10), $utf8)
-Write-Host "Ledger: added=$added settledNow=$settledNow total=$($newList.Count) open=$($out.openCount)"
-Write-Host "Live CLV: n=$($liveClv.n) mean=$($liveClv.meanClv) positive=$($liveClv.positiveRate) valueBets=$($liveClv.valueBets.n)"
+Write-Host "Ledger: added=$added (vardespel +$vbAdded) settledNow=$settledNow total=$($newList.Count) open=$($out.openCount)"
+Write-Host "Live CLV tips: n=$($liveClv.n) mean=$($liveClv.meanClv) positive=$($liveClv.positiveRate)"
+Write-Host "Vardespel: avgjorda=$($liveClv.valueBets.n) oppna=$($liveClv.valueBets.open) CLV n=$($liveClv.valueBets.clv.n) mean=$($liveClv.valueBets.clv.meanClv) ROI=$($liveClv.valueBets.roi)"
 Write-Host "Live rates:1X2=$($rates.'1X2'.rate) BTTS=$($rates.BTTS.rate) OU25=$($rates.OU25.rate)"

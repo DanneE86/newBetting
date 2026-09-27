@@ -206,6 +206,9 @@ html, body {
 .draw-cal-table th, .draw-cal-table td { padding: 0.3rem 0.4rem; border-bottom: 1px solid rgba(255, 255, 255, 0.06); text-align: left; }
 .draw-cal-table .num { text-align: right; }
 .draw-cal-table th { color: var(--muted); font-weight: 600; }
+.acc-outcomes-label { font-size: 0.68rem; color: var(--muted); margin-top: 0.55rem; text-transform: uppercase; letter-spacing: 0.04em; }
+.acc-outcomes .acc-picks { margin-top: 0.3rem; }
+.acc-pick.is-outcome { background: rgba(120, 180, 255, 0.06); border-color: rgba(120, 180, 255, 0.15); }
 .acc-picks { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.4rem; margin-top: 0.55rem; }
 .acc-pick {
   display: flex; flex-direction: column; align-items: flex-start;
@@ -757,6 +760,39 @@ html, body {
 .val-other {
   color: var(--lime-dim);
 }
+.team-link {
+  background: none; border: 0; padding: 0; font: inherit; color: inherit; cursor: pointer;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.25);
+}
+.team-link:hover { color: var(--lime); border-bottom-color: var(--lime); }
+.team-panel {
+  margin: 0.6rem 0 0.4rem; padding: 0.6rem 0.75rem; border-radius: 10px;
+  background: rgba(255, 255, 255, 0.035); border: 1px solid rgba(255, 255, 255, 0.07); font-size: 0.8rem;
+}
+.tp-head { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.4rem; }
+.tp-head .tp-sub { color: var(--muted); font-size: 0.72rem; }
+.tp-head .tp-close { margin-left: auto; padding: 0.15rem 0.6rem; font-size: 0.7rem; }
+.tp-row { display: grid; grid-template-columns: 7.5rem 1fr auto; gap: 0.5rem; align-items: center; padding: 0.28rem 0; border-top: 1px solid rgba(255, 255, 255, 0.05); }
+.tp-k { color: var(--muted); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.03em; }
+.tp-badges { display: inline-flex; gap: 3px; }
+.r-badge { display: inline-grid; place-items: center; width: 1.25rem; height: 1.25rem; border-radius: 4px; font-size: 0.66rem; font-weight: 700; }
+.r-w { background: rgba(120, 220, 120, 0.2); color: #9fe39f; }
+.r-d { background: rgba(200, 200, 200, 0.15); color: #cfd4dc; }
+.r-l { background: rgba(240, 110, 110, 0.2); color: #f2a0a0; }
+.tp-facts { margin: 0.45rem 0 0; padding-left: 1.1rem; color: #e6c36a; }
+.tp-facts li { margin: 0.15rem 0; }
+@media (max-width: 640px) { .tp-row { grid-template-columns: 1fr; } }
+.odd-pill.is-clickable { cursor: pointer; transition: transform 0.12s ease, opacity 0.12s ease; }
+.odd-pill.is-clickable:hover { opacity: 1; transform: translateY(-1px); }
+.odd-pill.is-selected { opacity: 1; outline: 2px dashed currentColor; outline-offset: 2px; }
+.odd-pill.is-tip.is-selected { outline: none; }
+.val-for {
+  font-size: 0.66rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  margin-bottom: 2px;
+}
 .val-rr {
   font-size: 0.68rem;
   color: var(--muted);
@@ -768,6 +804,11 @@ html, body {
 .val-rr .rr-neg {
   color: var(--muted);
 }
+/* Plus i EV men under säkerhetsmarginalen: inte grönt, det är inget spel */
+.val-rr .rr-near {
+  color: #e6c36a;
+}
+.odd-pill.is-clickable { user-select: none; -webkit-user-select: none; }
 
 /* Grupperade ligafilter: grupp (England, Europa ...) fäller ut turneringarna */
 .filter-pill.is-group::after {

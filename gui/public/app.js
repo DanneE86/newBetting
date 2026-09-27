@@ -151,39 +151,82 @@ function fmtOdd(v) {
   return String(v);
 }
 
-/** Alla utfall med fasta farger; tippat utfall markeras. */
-function oddsGroup(items, activeKey) {
+/** Alla utfall med fasta farger; tippat utfall markeras. Med mkt blir utfallen klickbara (värde per utfall). */
+function oddsGroup(items, activeKey, mkt = null) {
   const parts = items.map(({ key, label, odd }) => {
-    const active = key === activeKey ? " is-tip" : "";
-    return `<span class="odd-pill odd-${key}${active}"><em>${escapeHtml(label)}</em><b>${escapeHtml(fmtOdd(odd))}</b></span>`;
+    const active = key === activeKey ? " is-tip is-selected" : "";
+    const click = mkt ? ` role="button" tabindex="0" data-mkt="${mkt}" data-key="${key}" title="Klicka: spelvärde för ${escapeHtml(label)}"` : "";
+    return `<span class="odd-pill odd-${key}${active}${mkt ? " is-clickable" : ""}"${click}><em>${escapeHtml(label)}</em><b>${escapeHtml(fmtOdd(odd))}</b></span>`;
   });
   return `<div class="odds-group">${parts.join("")}</div>`;
 }
 
+// Utan marknadsfacit (BTTS, hörn: inga odds i källorna) krävs samma marginal som tunnaste facit i pro-lagret
+const MODEL_ONLY_MIN_EV = 0.08;
+const tipIndex = new Map();
+const tipId = (t) => `${t.league}|${t.date}|${t.home}|${t.away}`;
+
+/** Utfall utan odds: modellens chans -> lägsta odds där spelet har värde. */
+function modelValueCell(p, label) {
+  if (p == null || !(p > 0)) return `<td class="val"><span class="val-badge val-none">Inga odds</span></td>`;
+  const minOdds = Math.round(((1 + MODEL_ONLY_MIN_EV) / p) * 100) / 100;
+  const fair = Math.round((1 / p) * 100) / 100;
+  const title = `Inga odds i källorna för ${label}. Modellens chans ${Math.round(p * 100)} % ger fair odds ${fair}; spelvärde från ${minOdds} (+8 % marginal, inget marknadsfacit).`;
+  return `<td class="val" title="${escapeHtml(title)}"><div class="val-for">${escapeHtml(label)}</div><span class="val-badge val-none">Inga odds</span>
+    <div class="val-min">spela från <b>${minOdds}</b></div>
+    <div class="val-rr">chans ${Math.round(p * 100)} % · fair ${fair}</div>
+    <div class="val-min">facit: bara modell</div></td>`;
+}
+
+/** Värdecellen för valt utfall i en marknad (klick på oddsknapp eller tippat utfall). */
+function valueFor(tip, mkt, key) {
+  const t = tip.tips || {};
+  if (mkt === "1X2") {
+    const k = { home: "home", draw: "draw", away: "away" }[key];
+    const label = { home: "1", draw: "X", away: "2" }[key];
+    return valueCell(tip, k, ["home", "draw", "away"], label);
+  }
+  if (mkt === "OU25") {
+    const k = key === "over" ? "over25" : "under25";
+    return valueCell(tip, k, ["over25", "under25"], key === "over" ? "Över 2.5" : "Under 2.5");
+  }
+  if (mkt === "BTTS") {
+    const pYes = tip.pro?.blended?.btts ?? t.BTTS?.pYes;
+    return modelValueCell(pYes == null ? null : key === "btts-yes" ? pYes : 1 - pYes, key === "btts-yes" ? "BTTS JA" : "BTTS NEJ");
+  }
+  if (mkt === "CORNERS") {
+    const c = t.CORNERS;
+    const line = c?.line ?? 9.5;
+    return modelValueCell(c?.pOver == null ? null : key === "over" ? c.pOver : 1 - c.pOver, `${key === "over" ? "Över" : "Under"} ${line} hörn`);
+  }
+  return `<td class="val"><span class="val-badge val-none">Inga odds</span></td>`;
+}
+
 /**
- * Värde vid dagens odds för det tippade utfallet (pro.verdicts från pro-lagret).
- * Visar även om ett annat utfall i samma marknad har värde.
+ * Värde vid dagens odds för valt utfall (pro.verdicts från pro-lagret).
+ * Visar även om ett annat utfall i samma marknad har värde. label visas när utfallet inte är tipset.
  */
-function valueCell(tip, pickKey, keys) {
+function valueCell(tip, pickKey, keys, label = null) {
   const v = tip.pro?.verdicts || {};
   const x = v[pickKey];
   const others = keys
     .filter((k) => k !== pickKey && v[k]?.value)
     .map((k) => `${escapeHtml(v[k].pick)} @ ${escapeHtml(fmtOdd(v[k].odds))}`);
   const otherTxt = others.length ? `<div class="val-other">Värde: ${others.join(", ")}</div>` : "";
+  const forTxt = label ? `<div class="val-for">${escapeHtml(label)}${x?.odds ? ` @ ${escapeHtml(fmtOdd(x.odds))}` : ""}</div>` : "";
   if (!x || x.value == null) {
     // Pro-lagret ger alltid ett omdöme när det finns odds; saknas det finns inga odds för utfallet
-    return `<td class="val"><span class="val-badge val-none">Inga odds</span>${otherTxt}</td>`;
+    return `<td class="val">${forTxt}<span class="val-badge val-none">Inga odds</span>${otherTxt}</td>`;
   }
   // Facit utan Pinnacle/Betfair (snitt av bolagen): svagare, därför högre tröskel - visas under omdömet
   const basis = x.fairSource && !/pinnacle|betfair/.test(x.fairSource) ? `<div class="val-min">facit: ${escapeHtml(x.fairSource)}</div>` : "";
   const title = `Värt att spela från odds ${x.minOdds}${basis ? ` (facit: ${x.fairSource})` : ""}`;
   const rrTxt = riskRewardLines(x);
   return x.value
-    ? `<td class="val" title="${escapeHtml(title)}"><span class="val-badge val-yes">Värde</span>${rrTxt}${basis}${otherTxt}</td>`
+    ? `<td class="val" title="${escapeHtml(title)}">${forTxt}<span class="val-badge val-yes">Värde</span>${rrTxt}${basis}${otherTxt}</td>`
     : x.reason
-      ? `<td class="val" title="Skrällodds – chansen överskattas, spelas aldrig"><span class="val-badge val-no">Ej värde</span><div class="val-min">${escapeHtml(x.reason)}</div>${rrTxt}${otherTxt}</td>`
-      : `<td class="val" title="${escapeHtml(title)}"><span class="val-badge val-no">Ej värde</span><div class="val-min">från ${escapeHtml(fmtOdd(x.minOdds))}</div>${rrTxt}${basis}${otherTxt}</td>`;
+      ? `<td class="val" title="Skrällodds – chansen överskattas, spelas aldrig">${forTxt}<span class="val-badge val-no">Ej värde</span><div class="val-min">${escapeHtml(x.reason)}</div>${rrTxt}${otherTxt}</td>`
+      : `<td class="val" title="${escapeHtml(title)}">${forTxt}<span class="val-badge val-no">Ej värde</span><div class="val-min">från ${escapeHtml(fmtOdd(x.minOdds))}</div>${rrTxt}${basis}${otherTxt}</td>`;
 }
 
 /**
@@ -195,8 +238,16 @@ function riskRewardLines(x) {
   if (!rr) return "";
   const pc = (p) => `${Math.round(p * 100)} %`;
   const ev = `${rr.evSek >= 0 ? "+" : "−"}${Math.abs(rr.evSek)} kr`;
-  const tip = `Risk ${rr.stake} kr för att vinna ${rr.win} kr (1:${rr.ratio}). Oddset kräver ${pc(rr.breakEven)} chans, facit ger ${pc(x.p)}. Förväntat värde ${ev} per spel.`;
-  return `<div class="val-rr" title="${escapeHtml(tip)}">${rr.stake} kr → +${rr.win} kr · EV <b class="${rr.evSek >= 0 ? "rr-pos" : "rr-neg"}">${ev}</b></div>`
+  // Krav för "Värde" = marginal över break-even (3 % mot Pinnacle/Betfair, högre mot bolagssnitt).
+  // minOdds är satt så att p x minOdds - 1 = kravet -> kravet kan räknas tillbaka.
+  const evPct = x.ev != null ? x.ev : x.p * x.odds - 1;
+  const req = x.minOdds && x.p ? x.minOdds * x.p - 1 : null;
+  const pctTxt = (v) => `${v >= 0 ? "+" : "−"}${Math.abs(Math.round(v * 1000) / 10).toLocaleString("sv-SE")} %`;
+  const cls = x.value ? "rr-pos" : rr.evSek > 0 ? "rr-near" : "rr-neg";
+  const tip = `Risk ${rr.stake} kr för att vinna ${rr.win} kr (1:${rr.ratio}). Oddset kräver ${pc(rr.breakEven)} chans, facit ger ${pc(x.p)}. `
+    + `Förväntat värde ${ev} per spel i snitt (${pctTxt(evPct)} av insatsen)${req != null ? `; för "Värde" krävs minst ${pctTxt(req)} som säkerhetsmarginal` : ""}.`;
+  return `<div class="val-rr" title="${escapeHtml(tip)}">${rr.stake} kr → +${rr.win} kr</div>`
+    + `<div class="val-rr" title="${escapeHtml(tip)}">EV <b class="${cls}">${ev} (${pctTxt(evPct)})</b>${req != null ? ` · krav ${pctTxt(req)}` : ""}</div>`
     + `<div class="val-rr">chans ${pc(x.p)} · krävs ${pc(rr.breakEven)}</div>`;
 }
 
@@ -226,23 +277,25 @@ function tipCard(tip, i) {
   const confO = t.OU25?.confidence;
   const confC = c?.confidence;
 
+  tipIndex.set(tipId(tip), tip);
   const cornersRow = c
-    ? `<tr>
+    ? `<tr data-mkt="CORNERS">
             <td class="mkt">Hörn ${escapeHtml(cornerLine)}</td>
             <td>${oddsGroup(
               [
                 { key: "over", label: "Ö", odd: null },
                 { key: "under", label: "U", odd: null },
               ],
-              cornerKey
+              cornerKey,
+              "CORNERS"
             )}${c.expCorners != null ? `<div class="odds-src">Proj. ${escapeHtml(String(c.expCorners))} hörn</div>` : ""}</td>
             <td class="num">${fmtChance(confC)}</td>
-            <td class="val"><span class="val-badge val-none">Inga odds</span></td>
+            ${valueFor(tip, "CORNERS", cornerKey || "over")}
           </tr>`
     : "";
 
   return `
-    <article class="tip" style="${style}">
+    <article class="tip" style="${style}" data-tip-id="${escapeHtml(tipId(tip))}">
       <header class="tip-head">
         <div class="tip-meta">
           <time class="date">${escapeHtml(fmtKick(tip))}</time>
@@ -251,12 +304,17 @@ function tipCard(tip, i) {
             ${roundShort ? `<span class="round">${escapeHtml(roundShort)}</span>` : ""}
           </div>
         </div>
-        <h3 class="match">${escapeHtml(tip.match || "")}</h3>
+        <h3 class="match">${
+          tip.home && tip.away
+            ? `<button type="button" class="team-link" data-venue="home" title="Form, modellens träff och inbördes möten">${escapeHtml(tip.home)}</button> vs <button type="button" class="team-link" data-venue="away" title="Form, modellens träff och inbördes möten">${escapeHtml(tip.away)}</button>`
+            : escapeHtml(tip.match || "")
+        }</h3>
         <div class="score-box" title="Samlad chans att tipset håller (snitt över marknaderna)">
           <div class="n">${fmtChance(tip.tipScore)}</div>
           <div class="l">chans</div>
         </div>
       </header>
+      <div class="team-panel" hidden></div>
 
       <table class="tip-table">
         <thead>
@@ -268,7 +326,7 @@ function tipCard(tip, i) {
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr data-mkt="1X2">
             <td class="mkt">1X2</td>
             <td>${oddsGroup(
               [
@@ -276,31 +334,34 @@ function tipCard(tip, i) {
                 { key: "draw", label: "X", odd: od.x },
                 { key: "away", label: "2", odd: od.two },
               ],
-              pick1 === "1" ? "home" : pick1 === "X" ? "draw" : pick1 === "2" ? "away" : ""
+              pick1 === "1" ? "home" : pick1 === "X" ? "draw" : pick1 === "2" ? "away" : "",
+              "1X2"
             )}</td>
             <td class="num">${fmtChance(conf1)}</td>
             ${valueCell(tip, pick1 === "1" ? "home" : pick1 === "X" ? "draw" : "away", ["home", "draw", "away"])}
           </tr>
-          <tr>
+          <tr data-mkt="BTTS">
             <td class="mkt">BTTS</td>
             <td>${oddsGroup(
               [
                 { key: "btts-yes", label: "JA", odd: od.bttsYes },
                 { key: "btts-no", label: "NEJ", odd: od.bttsNo },
               ],
-              bttsKey
+              bttsKey,
+              "BTTS"
             )}</td>
             <td class="num">${fmtChance(confB)}</td>
-            <td class="val"><span class="val-badge val-none">Inga odds</span></td>
+            ${valueFor(tip, "BTTS", bttsKey || "btts-yes")}
           </tr>
-          <tr>
+          <tr data-mkt="OU25">
             <td class="mkt">Ö/U 2.5</td>
             <td>${oddsGroup(
               [
                 { key: "over", label: "Ö", odd: od.over },
                 { key: "under", label: "U", odd: od.under },
               ],
-              ouKey
+              ouKey,
+              "OU25"
             )}</td>
             <td class="num">${fmtChance(confO)}</td>
             ${valueCell(tip, ouKey === "over" ? "over25" : "under25", ["over25", "under25"])}
@@ -546,6 +607,16 @@ function renderAccuracy(acc) {
           })
           .join("")}</div>`
       : "";
+  // Ligans faktiska utfall: hur ofta 1 / X / 2 händer (jämför med tipsens träff ovan)
+  const out = state.outcomesByLeague?.[state.league === "ALL" ? "ALL" : state.league];
+  const outcomesHtml = out?.matches
+    ? `<div class="acc-outcomes">
+        <div class="acc-outcomes-label">Så slutar matcherna · ${out.matches} spelade</div>
+        <div class="acc-picks">${[["1", out.home], ["X", out.draw], ["2", out.away]]
+          .map(([p, v]) => `<div class="acc-pick is-outcome"><span class="pk">${p}</span><span class="pv">${fmtPct(v)}</span></div>`)
+          .join("")}</div>
+      </div>`
+    : "";
   box.innerHTML = rows
     .map(
       ([label, key, a]) => `
@@ -553,7 +624,7 @@ function renderAccuracy(acc) {
         <div class="label">${label}</div>
         <div class="val">${fmtPct(a?.rate)}</div>
         <div class="sub">${a?.correct ?? 0}/${a?.tested ?? 0} i backtest · ${scope}</div>
-        ${key === "1X2" ? picksHtml(a?.byPick) : ""}
+        ${key === "1X2" ? `<div class="acc-outcomes-label">Tipsens träff</div>${picksHtml(a?.byPick)}${outcomesHtml}` : ""}
         <div class="hint">Klicka för chansband</div>
       </button>`
     )
@@ -634,23 +705,31 @@ function renderLeagueSub(present) {
     return;
   }
   sub.hidden = false;
-  sub.innerHTML = [
-    `<button type="button" class="filter-pill" data-league="G:${escapeHtml(g.id)}">Alla i ${escapeHtml(g.name)}<span class="count">${countFor(ls)}</span></button>`,
-    ...ls.map((l) => `<button type="button" class="filter-pill" data-league="${escapeHtml(l)}">${escapeHtml(leagueName(l))}<span class="count">${countFor([l])}</span></button>`),
-  ].join("");
+  sub.innerHTML = ls
+    .map((l) => `<button type="button" class="filter-pill" data-league="${escapeHtml(l)}">${escapeHtml(leagueName(l))}<span class="count">${countFor([l])}</span></button>`)
+    .join("");
+}
+
+/** Landets högsta liga som har matcher (grupperna i config/leagues.json listar högsta ligan först). */
+function topLeagueOf(groupId) {
+  const g = state.leagueGroups.find((x) => x.id === groupId);
+  if (!g) return null;
+  const present = presentLeagues();
+  return g.leagues.find((l) => present.has(l)) || g.leagues[0] || null;
 }
 
 function presentLeagues() {
   return new Set([...state.bestUpcoming, ...state.allCandidates].map((t) => t.league).filter(Boolean));
 }
 
-/** Klick på grupp: fäll ut/in turneringarna och visa hela gruppen. */
+/** Klick på land: fäll ut/in ligorna och välj högsta ligan. */
 function toggleGroup(id) {
   if (state.openGroup === id) {
     state.openGroup = null;
   } else {
     state.openGroup = id;
-    setLeague(`G:${id}`, { keepGroup: true });
+    const top = topLeagueOf(id);
+    if (top) setLeague(top, { keepGroup: true });
   }
   renderLeagueSub(presentLeagues());
   syncLeaguePills();
@@ -687,11 +766,22 @@ async function loadDashboard() {
   state.accuracyByConfidence = data.accuracyByConfidence || null;
   state.accuracyByConfidenceByLeague = data.accuracyByConfidenceByLeague || null;
   state.drawCalibration = data.drawCalibration || null;
+  state.outcomesByLeague = data.outcomesByLeague || null;
   state._matchCount = data.sources?.matchCount ?? "—";
   state.leagueNames = data.leagueNames || {};
   // Länder/grupper i bokstavsordning (svensk sortering: ... Tjeckien, Tyskland, USA)
   state.leagueGroups = (data.leagueGroups || []).slice().sort((a, b) => a.name.localeCompare(b.name, "sv"));
-  if (state.league.startsWith("G:")) state.openGroup = state.league.slice(2);
+  // Sparat landsval ("Alla i Norge") finns inte längre -> landets högsta liga
+  if (state.league.startsWith("G:")) {
+    state.openGroup = state.league.slice(2);
+    const g = state.leagueGroups.find((x) => x.id === state.openGroup);
+    const present = new Set([...state.bestUpcoming, ...state.allCandidates].map((t) => t.league));
+    state.league = g?.leagues.find((l) => present.has(l)) || g?.leagues[0] || "ALL";
+    localStorage.setItem("betting.leagueFilter", state.league);
+  } else {
+    const owner = state.leagueGroups.find((g) => g.leagues.includes(state.league));
+    if (owner && owner.leagues.length > 1) state.openGroup = owner.id;
+  }
 
   buildLeagueFilters(data.leagues || ["PL", "CH"]);
 
@@ -871,8 +961,113 @@ async function fetchLineupForTip(btn) {
   }
 }
 
+const R_CLASS = { V: "r-w", O: "r-d", F: "r-l" };
+const fmtDateShort = (d) => (d ? new Date(`${d}T12:00:00`).toLocaleDateString("sv-SE", { day: "numeric", month: "short", year: "2-digit" }) : "");
+
+function formRow(label, f) {
+  if (!f?.played) return `<div class="tp-row"><span class="tp-k">${escapeHtml(label)}</span><span class="tp-v">inga matcher än</span></div>`;
+  const badges = f.last.map((x) => `<span class="r-badge ${R_CLASS[x.r]}" title="${escapeHtml(`${fmtDateShort(x.date)} ${x.venue === "H" ? "hemma" : "borta"} mot ${x.opp} ${x.score}`)}">${x.r}</span>`).join("");
+  return `<div class="tp-row"><span class="tp-k">${escapeHtml(label)}</span>
+    <span class="tp-v"><b>${f.w}-${f.d}-${f.l}</b> · ${f.ppg} p/match · mål ${f.gf}-${f.ga}</span>
+    <span class="tp-badges">${badges}</span></div>`;
+}
+
+/** Panel för klickat lag: form denna säsong, modellens tips på laget och inbördes möten. */
+function teamPanelHtml(d) {
+  const venueTxt = d.venue === "away" ? "Borta" : "Hemma";
+  const t = d.tips;
+  const pct = (a, b) => (b ? `${Math.round((100 * a) / b)} %` : "—");
+  const tipList = t.list
+    .map((x) => `<span class="r-badge ${x.hit ? "r-w" : "r-l"}" title="${escapeHtml(`${fmtDateShort(x.date)} ${x.venue === "H" ? "hemma" : "borta"} mot ${x.opp}: tippade ${x.pickTeam ? d.team : "motståndaren"} – ${x.hit ? "rätt" : "fel"}`)}">${x.pickTeam ? "✓" : "✗"}</span>`)
+    .join("");
+  const h = d.h2h;
+  const facts = [];
+  if (h.total) {
+    if (h.noWin >= 3) facts.push(`<b>${escapeHtml(d.team)}</b> har inte vunnit mot ${escapeHtml(d.opp)} på <b>${h.noWin}</b> möten${h.lastWin ? ` (senaste vinsten ${fmtDateShort(h.lastWin.date)}, ${h.lastWin.score})` : " – aldrig i datan"}`);
+    else if (h.unbeaten >= 3) facts.push(`<b>${escapeHtml(d.team)}</b> är obesegrat mot ${escapeHtml(d.opp)} i <b>${h.unbeaten}</b> möten${h.lastLoss ? ` (senaste förlusten ${fmtDateShort(h.lastLoss.date)})` : ""}`);
+    if (h.noWinAtVenue >= 3 && h.noWinAtVenue !== h.noWin) facts.push(`${venueTxt}: inte vunnit på ${h.noWinAtVenue} möten`);
+    if (h.unbeatenAtVenue >= 3 && h.unbeatenAtVenue !== h.unbeaten) facts.push(`${venueTxt}: obesegrat i ${h.unbeatenAtVenue} möten`);
+  }
+  const recent = h.recent
+    .map((x) => `<span class="r-badge ${R_CLASS[x.r]}" title="${escapeHtml(`${fmtDateShort(x.date)} ${x.venue === "H" ? "hemma" : "borta"} ${x.score}`)}">${x.r}</span>`)
+    .join("");
+  return `
+    <div class="tp-head"><b>${escapeHtml(d.team)}</b> <span class="tp-sub">säsong ${escapeHtml(d.season)} · ${d.league}</span>
+      <button type="button" class="btn-ghost tp-close" aria-label="Stäng">Stäng</button></div>
+    ${formRow(`${venueTxt}form`, d.venueForm)}
+    ${formRow("Alla matcher", d.form)}
+    <div class="tp-row"><span class="tp-k">Modellen</span>
+      <span class="tp-v">tippat ${escapeHtml(d.team)} <b>${t.forTeam.n}</b> ggr, rätt <b>${pct(t.forTeam.hits, t.forTeam.n)}</b>${t.forTeam.n ? ` (${t.forTeam.hits}/${t.forTeam.n})` : ""} · emot ${t.againstTeam.n} ggr, rätt ${pct(t.againstTeam.hits, t.againstTeam.n)}${t.againstTeam.n ? ` (${t.againstTeam.hits}/${t.againstTeam.n})` : ""}</span>
+      <span class="tp-badges" title="Senaste tipsen i lagets matcher: ✓ = tippade laget, grönt = rätt">${tipList}</span></div>
+    <div class="tp-row"><span class="tp-k">Mot ${escapeHtml(d.opp)}</span>
+      <span class="tp-v">${h.total ? `<b>${h.w}-${h.d}-${h.l}</b> i ${h.total} möten sedan ${fmtDateShort(h.since)}` : "inga möten i datan"}</span>
+      <span class="tp-badges" title="Senaste mötena, nyast först">${recent}</span></div>
+    ${facts.length ? `<ul class="tp-facts">${facts.map((f) => `<li>${f}</li>`).join("")}</ul>` : ""}`;
+}
+
+async function toggleTeamPanel(btn) {
+  const card = btn.closest(".tip");
+  const tip = tipIndex.get(card?.dataset.tipId || "");
+  const panel = card?.querySelector(".team-panel");
+  if (!tip || !panel) return;
+  const venue = btn.dataset.venue;
+  const team = venue === "away" ? tip.away : tip.home;
+  const opp = venue === "away" ? tip.home : tip.away;
+  if (!panel.hidden && panel.dataset.team === team) {
+    panel.hidden = true;
+    return;
+  }
+  panel.dataset.team = team;
+  panel.hidden = false;
+  panel.innerHTML = `<p class="scan-empty">Hämtar ${escapeHtml(team)}…</p>`;
+  try {
+    const qs = new URLSearchParams({ league: tip.league, team, opp, venue });
+    const res = await fetch(`/api/team?${qs}`, { cache: "no-store" });
+    const body = await res.json();
+    if (!res.ok) throw new Error(body.error === "Okänd API-route" ? "Starta om GUI-servern (npm run gui)." : body.error || "Kunde inte hämta laget");
+    panel.innerHTML = teamPanelHtml(body);
+  } catch (e) {
+    panel.innerHTML = `<p class="scan-empty">${escapeHtml(e.message || e)}</p>`;
+  }
+}
+
+/** Klick på ett utfall (1 / X / 2, BTTS, Ö/U, hörn): visa spelvärdet för just det utfallet i raden. */
+function selectOutcome(pill) {
+  const card = pill.closest(".tip");
+  const row = pill.closest("tr");
+  const tip = tipIndex.get(card?.dataset.tipId || "");
+  if (!tip || !row) return;
+  row.querySelectorAll(".odd-pill.is-selected").forEach((p) => p.classList.remove("is-selected"));
+  pill.classList.add("is-selected");
+  const cell = row.querySelector("td.val");
+  const html = valueFor(tip, pill.dataset.mkt, pill.dataset.key);
+  if (cell) cell.outerHTML = html;
+}
+
 for (const id of ["#tips", "#candidates"]) {
+  $(id).addEventListener("keydown", (e) => {
+    const pill = e.target.closest?.(".odd-pill.is-clickable");
+    if (pill && (e.key === "Enter" || e.key === " ")) {
+      e.preventDefault();
+      selectOutcome(pill);
+    }
+  });
   $(id).addEventListener("click", (e) => {
+    const teamBtn = e.target.closest(".team-link");
+    if (teamBtn) {
+      toggleTeamPanel(teamBtn);
+      return;
+    }
+    const closeBtn = e.target.closest(".tp-close");
+    if (closeBtn) {
+      closeBtn.closest(".team-panel").hidden = true;
+      return;
+    }
+    const pill = e.target.closest(".odd-pill.is-clickable");
+    if (pill) {
+      selectOutcome(pill);
+      return;
+    }
     const lineupBtn = e.target.closest(".btn-lineup");
     if (lineupBtn) {
       fetchLineupForTip(lineupBtn);
