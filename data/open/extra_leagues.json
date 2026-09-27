@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T13:27:23.767Z",
+  "updatedAt": "2026-09-27T17:25:43.138Z",
   "leagues": {
     "PL": {
       "name": "Premier League",
@@ -21,7 +21,7 @@
     "LL2": {
       "name": "LaLiga 2",
       "history": "fd-main",
-      "upcoming": 38
+      "upcoming": 36
     },
     "SA": {
       "name": "Serie A",
@@ -64,15 +64,15 @@
     "SE3N": {
       "name": "Div 1 Norra",
       "history": "tsdb",
-      "historyMatches": 429,
-      "fromCache": true,
-      "upcoming": 27
+      "historyMatches": 432,
+      "callsNow": 7,
+      "upcoming": 24
     },
     "SE3S": {
       "name": "Div 1 Södra",
       "history": "tsdb",
       "historyMatches": 432,
-      "fromCache": true,
+      "callsNow": 6,
       "upcoming": 24
     },
     "BR": {
@@ -84,9 +84,9 @@
     "BR2": {
       "name": "Brasileirão Série B",
       "history": "espn",
-      "historyMatches": 675,
+      "historyMatches": 676,
       "daysFetchedNow": 5,
-      "upcoming": 43
+      "upcoming": 42
     },
     "CL": {
       "name": "Champions League",
@@ -113,7 +113,7 @@
       "name": "OBOS-ligaen",
       "history": "tsdb",
       "historyMatches": 424,
-      "fromCache": true,
+      "callsNow": 7,
       "upcoming": 31
     },
     "EK": {
@@ -132,7 +132,7 @@
       "name": "1. division",
       "history": "tsdb",
       "historyMatches": 246,
-      "fromCache": true,
+      "callsNow": 23,
       "upcoming": 12
     },
     "PT": {
@@ -149,7 +149,7 @@
       "name": "HNL",
       "history": "tsdb",
       "historyMatches": 227,
-      "fromCache": true,
+      "callsNow": 29,
       "upcoming": 10
     },
     "JP1": {
@@ -162,21 +162,21 @@
       "name": "J2 League",
       "history": "tsdb",
       "historyMatches": 820,
-      "fromCache": true,
+      "callsNow": 50,
       "upcoming": 30
     },
     "JP3": {
       "name": "J3 League",
       "history": "tsdb",
       "historyMatches": 460,
-      "fromCache": true,
+      "callsNow": 30,
       "upcoming": 30
     },
     "KR": {
       "name": "K League 1",
       "history": "tsdb",
       "historyMatches": 408,
-      "fromCache": true,
+      "callsNow": 8,
       "upcoming": 12
     },
     "MX": {
@@ -195,7 +195,7 @@
       "name": "Chance Liga",
       "history": "tsdb",
       "historyMatches": 341,
-      "fromCache": true,
+      "callsNow": 32,
       "upcoming": 17
     },
     "CHI": {

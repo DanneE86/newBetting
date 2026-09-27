@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T17:02:57.040Z",
+  "updatedAt": "2026-09-27T17:40:13.287Z",
   "source": "football-data.co.uk Referee/HY/AY/HR/AR/HF/AF",
   "count": 124,
   "referees": [
@@ -829,17 +829,6 @@
       "homeWinRate": 0.469
     },
     {
-      "league": "EL1",
-      "referee": "S Mather",
-      "matches": 33,
-      "yellowPg": 3.58,
-      "redPg": 0.182,
-      "bookingPointsPg": 40.3,
-      "foulsPg": 22.4,
-      "goalsPg": 2.7,
-      "homeWinRate": 0.515
-    },
-    {
       "league": "CH",
       "referee": "M Salisbury",
       "matches": 12,
@@ -849,6 +838,17 @@
       "foulsPg": 23.7,
       "goalsPg": 2.83,
       "homeWinRate": 0.583
+    },
+    {
+      "league": "EL1",
+      "referee": "S Mather",
+      "matches": 33,
+      "yellowPg": 3.58,
+      "redPg": 0.182,
+      "bookingPointsPg": 40.3,
+      "foulsPg": 22.4,
+      "goalsPg": 2.7,
+      "homeWinRate": 0.515
     },
     {
       "league": "PL",
