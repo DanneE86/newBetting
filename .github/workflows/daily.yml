@@ -23,9 +23,11 @@ concurrency:
 
 jobs:
   fetch:
-    runs-on: windows-latest
+    # Linux: minuterna räknas 1x (Windows 2x). pwsh 7 kör skripten; "powershell" länkas till pwsh.
+    runs-on: ubuntu-latest
     timeout-minutes: 90
     env:
+      TZ: Europe/Stockholm
       THE_ODDS_API_KEY: ${{ secrets.THE_ODDS_API_KEY }}
     steps:
       - uses: actions/checkout@v4
@@ -35,16 +37,16 @@ jobs:
           node-version: 22
           cache: npm
 
-      - name: Svensk tidszon
-        run: tzutil /s "W. Europe Standard Time"
+      - name: powershell -> pwsh
+        run: sudo ln -sf "$(command -v pwsh)" /usr/local/bin/powershell
 
       - name: Installera beroenden
         run: |
           npm ci
-          npx playwright install chromium
+          npx playwright install --with-deps chromium
 
       - name: Hämta öppna källor
-        shell: powershell
+        shell: pwsh
         env:
           SPELARE: ${{ inputs.spelare }}
         run: |
@@ -61,16 +63,17 @@ jobs:
         run: node scripts/fetch-oddsportal.mjs
 
       - name: Bygg store + tips
-        shell: powershell
+        shell: pwsh
         run: powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Update-BettingStore.ps1 -SkipDownload
 
       - name: Ledger
-        shell: powershell
+        shell: pwsh
         run: powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Update-TipsLedger.ps1
 
       - name: Daily Scanner
-        shell: powershell
-        run: node scripts/daily-scanner.mjs | Where-Object { $_ -notlike '@@progress*' }
+        run: |
+          set -o pipefail
+          node scripts/daily-scanner.mjs | { grep -v '^@@progress' || true; }
 
       - name: Stryktipset (Svenska Spel)
         continue-on-error: true
@@ -81,7 +84,6 @@ jobs:
         run: node scripts/build-static-site.mjs
 
       - name: Committa ny data
-        shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
