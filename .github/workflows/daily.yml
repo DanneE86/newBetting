@@ -2,10 +2,17 @@ name: Daglig hämtning
 
 # Samma kedja som GUI:ts "Hämta data (full)":
 # öppna källor -> OddsPortal -> store/tips -> ledger -> Daily Scanner, sedan commit av data/.
+# Spelarstatistik (Understat-historik m.m., ~16 min) hämtas bara på måndagar eller vid manuell körning
+# med "spelare" ikryssat; övriga dagar används senast committade data/open/player_stats.json.
 on:
   schedule:
     - cron: "0 4 * * *" # 06:00 svensk sommartid (05:00 vintertid)
   workflow_dispatch:
+    inputs:
+      spelare:
+        description: "Hämta även spelarstatistik (~16 min extra)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -38,7 +45,16 @@ jobs:
 
       - name: Hämta öppna källor
         shell: powershell
-        run: powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Fetch-OpenSources.ps1
+        env:
+          SPELARE: ${{ inputs.spelare }}
+        run: |
+          $players = ((Get-Date).DayOfWeek -eq "Monday") -or ($env:SPELARE -eq "true")
+          Write-Host "Spelarstatistik: $players"
+          if ($players) {
+            powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Fetch-OpenSources.ps1
+          } else {
+            powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Fetch-OpenSources.ps1 -SkipPlayers
+          }
 
       - name: OddsPortal (reservodds)
         continue-on-error: true
