@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T17:36:30.992Z",
+  "updatedAt": "2026-09-27T18:00:34.210Z",
   "source": "open-meteo forecast",
   "horizon": [
     "2026-09-27",
@@ -19,15 +19,15 @@
       "venue": "Carlos Tartiere Stadium",
       "lat": 43.360783,
       "lon": -5.870222,
-      "weatherPoint": "c394",
-      "kickoffUtc": "2026-09-27T20:00:00.000Z",
-      "kickoffAssumed": false,
+      "weatherPoint": "c392",
+      "kickoffUtc": "2026-09-27T14:00:00.000Z",
+      "kickoffAssumed": true,
       "weather": {
-        "tempC": 18,
+        "tempC": 22.9,
         "precipMm": 0,
-        "windKmh": 4.6,
-        "gustKmh": 9,
-        "precipProb": 5
+        "windKmh": 8.9,
+        "gustKmh": 23.8,
+        "precipProb": 0
       }
     },
     {
@@ -38,7 +38,7 @@
       "venue": "Estádio Rei Pelé",
       "lat": -9.670556,
       "lon": -35.759167,
-      "weatherPoint": "c138",
+      "weatherPoint": "c136",
       "kickoffUtc": "2026-09-27T14:00:00.000Z",
       "kickoffAssumed": true,
       "weather": {
@@ -57,7 +57,7 @@
       "venue": "Castelão",
       "lat": -3.807267,
       "lon": -38.522481,
-      "weatherPoint": "c113",
+      "weatherPoint": "c111",
       "kickoffUtc": "2026-09-27T14:00:00.000Z",
       "kickoffAssumed": true,
       "weather": {
@@ -76,15 +76,15 @@
       "venue": "Universitary Olympic Stadium",
       "lat": 19.331928,
       "lon": -99.192106,
-      "weatherPoint": "c51",
-      "kickoffUtc": "2026-09-27T19:00:00.000Z",
-      "kickoffAssumed": false,
+      "weatherPoint": "c50",
+      "kickoffUtc": "2026-09-27T14:00:00.000Z",
+      "kickoffAssumed": true,
       "weather": {
-        "tempC": 23.4,
-        "precipMm": 0.4,
-        "windKmh": 7.6,
-        "gustKmh": 23.8,
-        "precipProb": 15
+        "tempC": 15.9,
+        "precipMm": 0.1,
+        "windKmh": 4.5,
+        "gustKmh": 17.3,
+        "precipProb": 0
       }
     },
     {
@@ -95,14 +95,14 @@
       "venue": "ScottsMiracle-Gro Field",
       "lat": 39.96846,
       "lon": -83.01709,
-      "weatherPoint": "c131",
-      "kickoffUtc": "2026-09-28T00:00:00.000Z",
-      "kickoffAssumed": false,
+      "weatherPoint": "c129",
+      "kickoffUtc": "2026-09-27T14:00:00.000Z",
+      "kickoffAssumed": true,
       "weather": {
-        "tempC": 15.8,
+        "tempC": 15.6,
         "precipMm": 0,
-        "windKmh": 7.1,
-        "gustKmh": 18.4,
+        "windKmh": 11.7,
+        "gustKmh": 28.8,
         "precipProb": 0
       }
     },
@@ -114,7 +114,7 @@
       "venue": "Estadio Jaraguay",
       "lat": 8.711777777,
       "lon": -75.827638888,
-      "weatherPoint": "c269",
+      "weatherPoint": "c267",
       "kickoffUtc": "2026-09-27T14:00:00.000Z",
       "kickoffAssumed": true,
       "weather": {
@@ -133,7 +133,7 @@
       "venue": "Estadio Metropolitano de Techo",
       "lat": 4.623545,
       "lon": -74.135611,
-      "weatherPoint": "c203",
+      "weatherPoint": "c201",
       "kickoffUtc": "2026-09-27T14:00:00.000Z",
       "kickoffAssumed": true,
       "weather": {
