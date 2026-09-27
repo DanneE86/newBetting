@@ -1,9 +1,9 @@
 {
-    "updatedAt":  "2026-09-27T16:13:00.1023060+02:00",
+    "updatedAt":  "2026-09-27T19:03:56.1650630+02:00",
     "addedThisRun":  0,
     "settledThisRun":  0,
-    "entryCount":  266,
-    "openCount":  265,
+    "entryCount":  274,
+    "openCount":  273,
     "settledCount":  1,
     "liveHitRates":  {
                          "1X2":  {
@@ -27,12 +27,31 @@
                     "meanClv":  null,
                     "positiveRate":  null,
                     "valueBets":  {
-                                      "n":  1,
-                                      "profitUnits":  -1,
-                                      "profitSek":  -500,
-                                      "roi":  -1
+                                      "n":  0,
+                                      "open":  31,
+                                      "profitUnits":  0,
+                                      "profitSek":  0,
+                                      "roi":  null,
+                                      "clv":  {
+                                                  "n":  0,
+                                                  "meanClv":  null,
+                                                  "positiveRate":  null
+                                              },
+                                      "clvRealClosing":  {
+                                                             "n":  0,
+                                                             "meanClv":  null,
+                                                             "positiveRate":  null
+                                                         },
+                                      "clvProxyClosing":  {
+                                                              "n":  0,
+                                                              "meanClv":  null,
+                                                              "positiveRate":  null
+                                                          },
+                                      "byLeague":  {
+
+                                                   }
                                   },
-                    "note":  "CLV = oddsTaken * fair closing-p - 1 (Pinnacle closing devig, annars snitt). Signal efter ~50 spel."
+                    "note":  "CLV = taget odds x marginalfri stangningschans - 1. Stangning: Pinnacle/snitt (football-data), annars senaste sparade odds fore avspark (proxy). Positiv CLV over ~50 spel = du slar marknaden."
                 },
     "entries":  [
                     {
@@ -1423,7 +1442,22 @@
                         "createdAt":  "2026-09-26T09:56:22.2141201+02:00",
                         "settled":  false,
                         "actual":  null,
-                        "hit":  null
+                        "hit":  null,
+                        "proValueBets":  [
+                                             {
+                                                 "market":  "1X2",
+                                                 "pick":  "X",
+                                                 "odds":  3.6,
+                                                 "bookmaker":  "Coolbet",
+                                                 "strategy":  "consensusAtBestPrice",
+                                                 "fairSource":  "pinnacle",
+                                                 "p":  0.2879,
+                                                 "modelP":  0.2719,
+                                                 "ev":  0.0363,
+                                                 "stakeSek":  500,
+                                                 "flaggedAt":  "2026-09-27T19:03:15.7183757+02:00"
+                                             }
+                                         ]
                     },
                     {
                         "id":  "2026-10-10|BL|RB Leipzig vs Ein Frankfurt",
@@ -1903,7 +1937,22 @@
                         "createdAt":  "2026-09-26T09:56:22.2171417+02:00",
                         "settled":  false,
                         "actual":  null,
-                        "hit":  null
+                        "hit":  null,
+                        "proValueBets":  [
+                                             {
+                                                 "market":  "1X2",
+                                                 "pick":  "1",
+                                                 "odds":  4.4,
+                                                 "bookmaker":  "Unibet (SE)",
+                                                 "strategy":  "consensusAtBestPrice",
+                                                 "fairSource":  "pinnacle",
+                                                 "p":  0.2359,
+                                                 "modelP":  0.3254,
+                                                 "ev":  0.038,
+                                                 "stakeSek":  500,
+                                                 "flaggedAt":  "2026-09-27T19:03:15.7183757+02:00"
+                                             }
+                                         ]
                     },
                     {
                         "id":  "2026-10-11|SA|Lazio vs Monza",
@@ -1983,7 +2032,22 @@
                         "createdAt":  "2026-09-26T09:56:22.2180342+02:00",
                         "settled":  false,
                         "actual":  null,
-                        "hit":  null
+                        "hit":  null,
+                        "proValueBets":  [
+                                             {
+                                                 "market":  "1X2",
+                                                 "pick":  "X",
+                                                 "odds":  4.4,
+                                                 "bookmaker":  "Coolbet",
+                                                 "strategy":  "consensusAtBestPrice",
+                                                 "fairSource":  "pinnacle",
+                                                 "p":  0.2428,
+                                                 "modelP":  0.238,
+                                                 "ev":  0.0683,
+                                                 "stakeSek":  500,
+                                                 "flaggedAt":  "2026-09-27T19:03:15.7183757+02:00"
+                                             }
+                                         ]
                     },
                     {
                         "id":  "2026-10-11|ED|Excelsior vs Groningen",
@@ -2063,7 +2127,22 @@
                         "createdAt":  "2026-09-26T09:56:22.2180342+02:00",
                         "settled":  false,
                         "actual":  null,
-                        "hit":  null
+                        "hit":  null,
+                        "proValueBets":  [
+                                             {
+                                                 "market":  "1X2",
+                                                 "pick":  "2",
+                                                 "odds":  2.8,
+                                                 "bookmaker":  "Unibet (SE)",
+                                                 "strategy":  "consensusAtBestPrice",
+                                                 "fairSource":  "pinnacle",
+                                                 "p":  0.3697,
+                                                 "modelP":  0.3988,
+                                                 "ev":  0.0351,
+                                                 "stakeSek":  500,
+                                                 "flaggedAt":  "2026-09-27T19:03:15.7183757+02:00"
+                                             }
+                                         ]
                     },
                     {
                         "id":  "2026-10-11|ED|Utrecht vs Willem II",
@@ -2143,7 +2222,22 @@
                         "createdAt":  "2026-09-26T09:56:22.2190779+02:00",
                         "settled":  false,
                         "actual":  null,
-                        "hit":  null
+                        "hit":  null,
+                        "proValueBets":  [
+                                             {
+                                                 "market":  "1X2",
+                                                 "pick":  "2",
+                                                 "odds":  3.55,
+                                                 "bookmaker":  "Unibet (SE)",
+                                                 "strategy":  "consensusAtBestPrice",
+                                                 "fairSource":  "betfair-exchange",
+                                                 "p":  0.306,
+                                                 "modelP":  0.3036,
+                                                 "ev":  0.0862,
+                                                 "stakeSek":  500,
+                                                 "flaggedAt":  "2026-09-27T19:03:15.7183757+02:00"
+                                             }
+                                         ]
                     },
                     {
                         "id":  "2026-10-11|L1|Nice vs Strasbourg",
@@ -2667,16 +2761,31 @@
                         "edge":  null,
                         "oddsTaken":  null,
                         "bookmaker":  null,
-                        "proValueBets":  {
-
-                                         },
                         "availabilityNotes":  [
 
                                               ],
                         "createdAt":  "2026-09-27T08:39:22.6649736+02:00",
                         "settled":  false,
                         "actual":  null,
-                        "hit":  null
+                        "hit":  null,
+                        "proValueBets":  [
+                                             {
+
+                                             },
+                                             {
+                                                 "market":  "1X2",
+                                                 "pick":  "X",
+                                                 "odds":  3.4,
+                                                 "bookmaker":  "Coolbet",
+                                                 "strategy":  "consensusAtBestPrice",
+                                                 "fairSource":  "pinnacle",
+                                                 "p":  0.3081,
+                                                 "modelP":  0.2662,
+                                                 "ev":  0.0477,
+                                                 "stakeSek":  500,
+                                                 "flaggedAt":  "2026-09-27T19:03:15.7183757+02:00"
+                                             }
+                                         ]
                     },
                     {
                         "id":  "2026-10-09|BL2|Heidenheim vs Kaiserslautern",
@@ -2712,16 +2821,31 @@
                         "edge":  null,
                         "oddsTaken":  null,
                         "bookmaker":  null,
-                        "proValueBets":  {
-
-                                         },
                         "availabilityNotes":  [
 
                                               ],
                         "createdAt":  "2026-09-27T08:39:22.6649736+02:00",
                         "settled":  false,
                         "actual":  null,
-                        "hit":  null
+                        "hit":  null,
+                        "proValueBets":  [
+                                             {
+
+                                             },
+                                             {
+                                                 "market":  "1X2",
+                                                 "pick":  "X",
+                                                 "odds":  3.85,
+                                                 "bookmaker":  "Coolbet",
+                                                 "strategy":  "consensusAtBestPrice",
+                                                 "fairSource":  "pinnacle",
+                                                 "p":  0.2792,
+                                                 "modelP":  0.2449,
+                                                 "ev":  0.0749,
+                                                 "stakeSek":  500,
+                                                 "flaggedAt":  "2026-09-27T19:03:15.7183757+02:00"
+                                             }
+                                         ]
                     },
                     {
                         "id":  "2026-10-10|AS|Mjallby vs Degerfors",
@@ -2847,16 +2971,31 @@
                         "edge":  null,
                         "oddsTaken":  null,
                         "bookmaker":  null,
-                        "proValueBets":  {
-
-                                         },
                         "availabilityNotes":  [
 
                                               ],
                         "createdAt":  "2026-09-27T08:39:22.6659777+02:00",
                         "settled":  false,
                         "actual":  null,
-                        "hit":  null
+                        "hit":  null,
+                        "proValueBets":  [
+                                             {
+
+                                             },
+                                             {
+                                                 "market":  "1X2",
+                                                 "pick":  "X",
+                                                 "odds":  4,
+                                                 "bookmaker":  "Coolbet",
+                                                 "strategy":  "consensusAtBestPrice",
+                                                 "fairSource":  "pinnacle",
+                                                 "p":  0.2601,
+                                                 "modelP":  0.2435,
+                                                 "ev":  0.0403,
+                                                 "stakeSek":  500,
+                                                 "flaggedAt":  "2026-09-27T19:03:15.7183757+02:00"
+                                             }
+                                         ]
                     },
                     {
                         "id":  "2026-10-10|SB|Vicenza vs Pisa",
@@ -3027,16 +3166,31 @@
                         "edge":  null,
                         "oddsTaken":  null,
                         "bookmaker":  null,
-                        "proValueBets":  {
-
-                                         },
                         "availabilityNotes":  [
 
                                               ],
                         "createdAt":  "2026-09-27T08:39:22.6669799+02:00",
                         "settled":  false,
                         "actual":  null,
-                        "hit":  null
+                        "hit":  null,
+                        "proValueBets":  [
+                                             {
+
+                                             },
+                                             {
+                                                 "market":  "1X2",
+                                                 "pick":  "X",
+                                                 "odds":  3.3,
+                                                 "bookmaker":  "Coolbet",
+                                                 "strategy":  "consensusAtBestPrice",
+                                                 "fairSource":  "pinnacle",
+                                                 "p":  0.3267,
+                                                 "modelP":  0.3115,
+                                                 "ev":  0.078,
+                                                 "stakeSek":  500,
+                                                 "flaggedAt":  "2026-09-27T19:03:15.7183757+02:00"
+                                             }
+                                         ]
                     },
                     {
                         "id":  "2026-10-10|BL2|Darmstadt vs Cottbus",
@@ -3432,16 +3586,31 @@
                         "edge":  null,
                         "oddsTaken":  null,
                         "bookmaker":  null,
-                        "proValueBets":  {
-
-                                         },
                         "availabilityNotes":  [
 
                                               ],
                         "createdAt":  "2026-09-27T08:39:22.6699668+02:00",
                         "settled":  false,
                         "actual":  null,
-                        "hit":  null
+                        "hit":  null,
+                        "proValueBets":  [
+                                             {
+
+                                             },
+                                             {
+                                                 "market":  "1X2",
+                                                 "pick":  "X",
+                                                 "odds":  3.75,
+                                                 "bookmaker":  "Coolbet",
+                                                 "strategy":  "consensusAtBestPrice",
+                                                 "fairSource":  "pinnacle",
+                                                 "p":  0.2839,
+                                                 "modelP":  0.3078,
+                                                 "ev":  0.0647,
+                                                 "stakeSek":  500,
+                                                 "flaggedAt":  "2026-09-27T19:03:15.7183757+02:00"
+                                             }
+                                         ]
                     },
                     {
                         "id":  "2026-10-11|BR|Gremio vs Internacional",
@@ -3846,16 +4015,31 @@
                         "edge":  null,
                         "oddsTaken":  null,
                         "bookmaker":  null,
-                        "proValueBets":  {
-
-                                         },
                         "availabilityNotes":  [
 
                                               ],
                         "createdAt":  "2026-09-27T08:39:22.6729642+02:00",
                         "settled":  false,
                         "actual":  null,
-                        "hit":  null
+                        "hit":  null,
+                        "proValueBets":  [
+                                             {
+
+                                             },
+                                             {
+                                                 "market":  "1X2",
+                                                 "pick":  "2",
+                                                 "odds":  4.44,
+                                                 "bookmaker":  "Betsson",
+                                                 "strategy":  "consensusAtBestPrice",
+                                                 "fairSource":  "pinnacle",
+                                                 "p":  0.2327,
+                                                 "modelP":  0.1924,
+                                                 "ev":  0.033,
+                                                 "stakeSek":  500,
+                                                 "flaggedAt":  "2026-09-27T19:03:15.7183757+02:00"
+                                             }
+                                         ]
                     },
                     {
                         "id":  "2026-10-12|BR2|Criciúma vs América Mineiro",
@@ -12117,6 +12301,615 @@
 
                                               ],
                         "createdAt":  "2026-09-27T15:30:35.1166474+02:00",
+                        "settled":  false,
+                        "actual":  null,
+                        "hit":  null
+                    },
+                    {
+                        "id":  "2026-09-27|LL2|Valladolid vs Cordoba",
+                        "date":  "2026-09-27",
+                        "league":  "LL2",
+                        "match":  "Valladolid vs Cordoba",
+                        "home":  "Valladolid",
+                        "away":  "Cordoba",
+                        "tipScore":  0.533,
+                        "tips":  {
+                                     "CORNERS":  {
+                                                     "confidence":  0.689,
+                                                     "lambdaHome":  2.33,
+                                                     "pOver":  0.311,
+                                                     "lambdaAway":  4.08,
+                                                     "line":  8.5,
+                                                     "expCorners":  7.16,
+                                                     "pick":  "UNDER 8.5"
+                                                 },
+                                     "OU25":  {
+                                                  "confidence":  0.503,
+                                                  "usedPlayerAttack":  false,
+                                                  "expGoals":  2.03,
+                                                  "pOver":  0.497,
+                                                  "usedXg":  true,
+                                                  "pick":  "UNDER 2.5"
+                                              },
+                                     "1X2":  {
+                                                 "pick":  "1",
+                                                 "confidence":  0.4,
+                                                 "probs":  {
+                                                               "away":  0.352,
+                                                               "draw":  0.248,
+                                                               "home":  0.4
+                                                           }
+                                             },
+                                     "BTTS":  {
+                                                  "pick":  "NEJ",
+                                                  "confidence":  0.54,
+                                                  "pYes":  0.46
+                                              }
+                                 },
+                        "value":  null,
+                        "edge":  null,
+                        "oddsTaken":  {
+                                          "home":  1.23,
+                                          "draw":  18,
+                                          "away":  91,
+                                          "over25":  null,
+                                          "under25":  null
+                                      },
+                        "bookmaker":  {
+                                          "home":  "Betsson",
+                                          "draw":  "Unibet (SE)",
+                                          "away":  "Unibet (SE)",
+                                          "over25":  null,
+                                          "under25":  null
+                                      },
+                        "proValueBets":  [
+                                             {
+                                                 "market":  "1X2",
+                                                 "pick":  "1",
+                                                 "odds":  1.23,
+                                                 "bookmaker":  "Betsson",
+                                                 "strategy":  "consensusAtBestPrice",
+                                                 "fairSource":  "betfair-exchange",
+                                                 "p":  0.9307,
+                                                 "modelP":  0.373,
+                                                 "ev":  0.1447,
+                                                 "stakeSek":  500,
+                                                 "flaggedAt":  "2026-09-27T19:03:15.7183757+02:00"
+                                             }
+                                         ],
+                        "availabilityNotes":  [
+
+                                              ],
+                        "createdAt":  "2026-09-27T19:03:15.7183757+02:00",
+                        "settled":  false,
+                        "actual":  null,
+                        "hit":  null
+                    },
+                    {
+                        "id":  "2026-09-28|MX|Necaxa vs Club America",
+                        "date":  "2026-09-28",
+                        "league":  "MX",
+                        "match":  "Necaxa vs Club America",
+                        "home":  "Necaxa",
+                        "away":  "Club America",
+                        "tipScore":  0.529,
+                        "tips":  {
+                                     "OU25":  {
+                                                  "confidence":  0.55,
+                                                  "usedPlayerAttack":  false,
+                                                  "expGoals":  2.81,
+                                                  "pOver":  0.55,
+                                                  "usedXg":  false,
+                                                  "pick":  "OVER 2.5"
+                                              },
+                                     "1X2":  {
+                                                 "pick":  "2",
+                                                 "confidence":  0.425,
+                                                 "probs":  {
+                                                               "away":  0.425,
+                                                               "draw":  0.253,
+                                                               "home":  0.322
+                                                           }
+                                             },
+                                     "BTTS":  {
+                                                  "pick":  "JA",
+                                                  "confidence":  0.612,
+                                                  "pYes":  0.612
+                                              }
+                                 },
+                        "value":  null,
+                        "edge":  null,
+                        "oddsTaken":  {
+                                          "home":  3.8,
+                                          "draw":  3.65,
+                                          "away":  1.98,
+                                          "over25":  1.71,
+                                          "under25":  2.15
+                                      },
+                        "bookmaker":  {
+                                          "home":  "Unibet (SE)",
+                                          "draw":  "Coolbet",
+                                          "away":  "Betsson",
+                                          "over25":  "Coolbet",
+                                          "under25":  "Coolbet"
+                                      },
+                        "proValueBets":  [
+                                             {
+                                                 "market":  "1X2",
+                                                 "pick":  "1",
+                                                 "odds":  3.8,
+                                                 "bookmaker":  "Unibet (SE)",
+                                                 "strategy":  "consensusAtBestPrice",
+                                                 "fairSource":  "pinnacle",
+                                                 "p":  0.2724,
+                                                 "modelP":  0.2872,
+                                                 "ev":  0.0349,
+                                                 "stakeSek":  500,
+                                                 "flaggedAt":  "2026-09-27T19:03:15.7183757+02:00"
+                                             }
+                                         ],
+                        "availabilityNotes":  [
+
+                                              ],
+                        "createdAt":  "2026-09-27T19:03:15.7183757+02:00",
+                        "settled":  false,
+                        "actual":  null,
+                        "hit":  null
+                    },
+                    {
+                        "id":  "2026-10-03|EL1|Burton vs Huddersfield",
+                        "date":  "2026-10-03",
+                        "league":  "EL1",
+                        "match":  "Burton vs Huddersfield",
+                        "home":  "Burton",
+                        "away":  "Huddersfield",
+                        "tipScore":  0.552,
+                        "tips":  {
+                                     "CORNERS":  {
+                                                     "confidence":  0.71,
+                                                     "lambdaHome":  3.12,
+                                                     "pOver":  0.29,
+                                                     "lambdaAway":  5.12,
+                                                     "line":  9.5,
+                                                     "expCorners":  8.54,
+                                                     "pick":  "UNDER 9.5"
+                                                 },
+                                     "OU25":  {
+                                                  "confidence":  0.516,
+                                                  "usedPlayerAttack":  false,
+                                                  "expGoals":  2.58,
+                                                  "pOver":  0.516,
+                                                  "usedXg":  true,
+                                                  "pick":  "OVER 2.5"
+                                              },
+                                     "1X2":  {
+                                                 "pick":  "2",
+                                                 "confidence":  0.511,
+                                                 "probs":  {
+                                                               "home":  0.246,
+                                                               "draw":  0.243,
+                                                               "away":  0.511
+                                                           }
+                                             },
+                                     "BTTS":  {
+                                                  "pick":  "JA",
+                                                  "confidence":  0.589,
+                                                  "pYes":  0.589
+                                              }
+                                 },
+                        "value":  null,
+                        "edge":  null,
+                        "oddsTaken":  {
+                                          "home":  4.25,
+                                          "draw":  3.75,
+                                          "away":  1.82,
+                                          "over25":  1.78,
+                                          "under25":  2.02
+                                      },
+                        "bookmaker":  {
+                                          "home":  "Nordic Bet",
+                                          "draw":  "Coolbet",
+                                          "away":  "Unibet (SE)",
+                                          "over25":  "Coolbet",
+                                          "under25":  "Unibet (SE)"
+                                      },
+                        "proValueBets":  [
+                                             {
+                                                 "market":  "1X2",
+                                                 "pick":  "1",
+                                                 "odds":  4.25,
+                                                 "bookmaker":  "Nordic Bet",
+                                                 "strategy":  "consensusAtBestPrice",
+                                                 "fairSource":  "pinnacle",
+                                                 "p":  0.2457,
+                                                 "modelP":  0.3628,
+                                                 "ev":  0.044,
+                                                 "stakeSek":  500,
+                                                 "flaggedAt":  "2026-09-27T19:03:15.7183757+02:00"
+                                             }
+                                         ],
+                        "availabilityNotes":  [
+
+                                              ],
+                        "createdAt":  "2026-09-27T19:03:15.7183757+02:00",
+                        "settled":  false,
+                        "actual":  null,
+                        "hit":  null
+                    },
+                    {
+                        "id":  "2026-10-09|SB|Avellino vs Sampdoria",
+                        "date":  "2026-10-09",
+                        "league":  "SB",
+                        "match":  "Avellino vs Sampdoria",
+                        "home":  "Avellino",
+                        "away":  "Sampdoria",
+                        "tipScore":  0.534,
+                        "tips":  {
+                                     "CORNERS":  {
+                                                     "confidence":  0.658,
+                                                     "lambdaHome":  2.83,
+                                                     "pOver":  0.342,
+                                                     "lambdaAway":  5.67,
+                                                     "line":  9.5,
+                                                     "expCorners":  8.72,
+                                                     "pick":  "UNDER 9.5"
+                                                 },
+                                     "OU25":  {
+                                                  "confidence":  0.528,
+                                                  "usedPlayerAttack":  false,
+                                                  "expGoals":  2.31,
+                                                  "pOver":  0.472,
+                                                  "usedXg":  true,
+                                                  "pick":  "UNDER 2.5"
+                                              },
+                                     "1X2":  {
+                                                 "pick":  "1",
+                                                 "confidence":  0.44,
+                                                 "probs":  {
+                                                               "away":  0.267,
+                                                               "draw":  0.293,
+                                                               "home":  0.44
+                                                           }
+                                             },
+                                     "BTTS":  {
+                                                  "pick":  "JA",
+                                                  "confidence":  0.511,
+                                                  "pYes":  0.511
+                                              }
+                                 },
+                        "value":  {
+                                      "bookmaker":  "Unibet (FR)",
+                                      "odds":  {
+                                                   "away":  2.1,
+                                                   "over25":  null,
+                                                   "draw":  3,
+                                                   "under25":  null,
+                                                   "home":  2.55
+                                               },
+                                      "edge1x2":  0.0478,
+                                      "edgeOu":  null,
+                                      "bestEdge":  0.0478
+                                  },
+                        "edge":  0.0478,
+                        "oddsTaken":  {
+                                          "home":  2.8,
+                                          "draw":  3.4,
+                                          "away":  2.5,
+                                          "over25":  1.93,
+                                          "under25":  1.85
+                                      },
+                        "bookmaker":  {
+                                          "home":  "Coolbet",
+                                          "draw":  "Coolbet",
+                                          "away":  "Coolbet",
+                                          "over25":  "Coolbet",
+                                          "under25":  "Coolbet"
+                                      },
+                        "proValueBets":  [
+                                             {
+                                                 "market":  "1X2",
+                                                 "pick":  "X",
+                                                 "odds":  3.4,
+                                                 "bookmaker":  "Coolbet",
+                                                 "strategy":  "consensusAtBestPrice",
+                                                 "fairSource":  "pinnacle",
+                                                 "p":  0.3047,
+                                                 "modelP":  0.3017,
+                                                 "ev":  0.0361,
+                                                 "stakeSek":  500,
+                                                 "flaggedAt":  "2026-09-27T19:03:15.7183757+02:00"
+                                             }
+                                         ],
+                        "availabilityNotes":  [
+
+                                              ],
+                        "createdAt":  "2026-09-27T19:03:15.7183757+02:00",
+                        "settled":  false,
+                        "actual":  null,
+                        "hit":  null
+                    },
+                    {
+                        "id":  "2026-10-10|CHI|Cobresal vs Universidad de Concepción",
+                        "date":  "2026-10-10",
+                        "league":  "CHI",
+                        "match":  "Cobresal vs Universidad de Concepción",
+                        "home":  "Cobresal",
+                        "away":  "Universidad de Concepción",
+                        "tipScore":  0.517,
+                        "tips":  {
+                                     "OU25":  {
+                                                  "confidence":  0.515,
+                                                  "usedPlayerAttack":  false,
+                                                  "expGoals":  2.36,
+                                                  "pOver":  0.485,
+                                                  "usedXg":  true,
+                                                  "pick":  "UNDER 2.5"
+                                              },
+                                     "1X2":  {
+                                                 "pick":  "1",
+                                                 "confidence":  0.494,
+                                                 "probs":  {
+                                                               "away":  0.285,
+                                                               "draw":  0.222,
+                                                               "home":  0.494
+                                                           }
+                                             },
+                                     "BTTS":  {
+                                                  "pick":  "NEJ",
+                                                  "confidence":  0.542,
+                                                  "pYes":  0.458
+                                              }
+                                 },
+                        "value":  {
+                                      "bookmaker":  "Winamax (FR)",
+                                      "odds":  {
+                                                   "away":  2.85,
+                                                   "over25":  null,
+                                                   "draw":  3.3,
+                                                   "under25":  null,
+                                                   "home":  1.96
+                                               },
+                                      "edge1x2":  -0.0162,
+                                      "edgeOu":  null,
+                                      "bestEdge":  -0.0162
+                                  },
+                        "edge":  -0.0162,
+                        "oddsTaken":  {
+                                          "home":  2.12,
+                                          "draw":  3.55,
+                                          "away":  3.6,
+                                          "over25":  1.82,
+                                          "under25":  2.02
+                                      },
+                        "bookmaker":  {
+                                          "home":  "Betsson",
+                                          "draw":  "Betsson",
+                                          "away":  "Coolbet",
+                                          "over25":  "Coolbet",
+                                          "under25":  "Betsson"
+                                      },
+                        "proValueBets":  [
+                                             {
+                                                 "market":  "1X2",
+                                                 "pick":  "2",
+                                                 "odds":  3.6,
+                                                 "bookmaker":  "Coolbet",
+                                                 "strategy":  "consensusAtBestPrice",
+                                                 "fairSource":  "pinnacle",
+                                                 "p":  0.2941,
+                                                 "modelP":  0.2476,
+                                                 "ev":  0.0587,
+                                                 "stakeSek":  500,
+                                                 "flaggedAt":  "2026-09-27T19:03:15.7183757+02:00"
+                                             }
+                                         ],
+                        "availabilityNotes":  [
+
+                                              ],
+                        "createdAt":  "2026-09-27T19:03:15.7183757+02:00",
+                        "settled":  false,
+                        "actual":  null,
+                        "hit":  null
+                    },
+                    {
+                        "id":  "2026-10-11|DK|Midtjylland vs FC Copenhagen",
+                        "date":  "2026-10-11",
+                        "league":  "DK",
+                        "match":  "Midtjylland vs FC Copenhagen",
+                        "home":  "Midtjylland",
+                        "away":  "FC Copenhagen",
+                        "tipScore":  0.505,
+                        "tips":  {
+                                     "OU25":  {
+                                                  "confidence":  0.59,
+                                                  "usedPlayerAttack":  false,
+                                                  "expGoals":  2.96,
+                                                  "pOver":  0.59,
+                                                  "usedXg":  false,
+                                                  "pick":  "OVER 2.5"
+                                              },
+                                     "1X2":  {
+                                                 "pick":  "1",
+                                                 "confidence":  0.42,
+                                                 "probs":  {
+                                                               "away":  0.33,
+                                                               "draw":  0.25,
+                                                               "home":  0.42
+                                                           }
+                                             },
+                                     "BTTS":  {
+                                                  "pick":  "NEJ",
+                                                  "confidence":  0.503,
+                                                  "pYes":  0.497
+                                              }
+                                 },
+                        "value":  null,
+                        "edge":  null,
+                        "oddsTaken":  {
+                                          "home":  2.58,
+                                          "draw":  3.65,
+                                          "away":  2.8,
+                                          "over25":  1.62,
+                                          "under25":  2.28
+                                      },
+                        "bookmaker":  {
+                                          "home":  "Betsson",
+                                          "draw":  "Betsson",
+                                          "away":  "Unibet (SE)",
+                                          "over25":  "Nordic Bet",
+                                          "under25":  "Nordic Bet"
+                                      },
+                        "proValueBets":  [
+                                             {
+                                                 "market":  "1X2",
+                                                 "pick":  "2",
+                                                 "odds":  2.8,
+                                                 "bookmaker":  "Unibet (SE)",
+                                                 "strategy":  "consensusAtBestPrice",
+                                                 "fairSource":  "pinnacle",
+                                                 "p":  0.3733,
+                                                 "modelP":  0.3448,
+                                                 "ev":  0.0453,
+                                                 "stakeSek":  500,
+                                                 "flaggedAt":  "2026-09-27T19:03:15.7183757+02:00"
+                                             }
+                                         ],
+                        "availabilityNotes":  [
+
+                                              ],
+                        "createdAt":  "2026-09-27T19:03:15.7183757+02:00",
+                        "settled":  false,
+                        "actual":  null,
+                        "hit":  null
+                    },
+                    {
+                        "id":  "2026-10-18|PL|Nott\u0027m Forest vs Arsenal",
+                        "date":  "2026-10-18",
+                        "league":  "PL",
+                        "match":  "Nott\u0027m Forest vs Arsenal",
+                        "home":  "Nott\u0027m Forest",
+                        "away":  "Arsenal",
+                        "tipScore":  0.546,
+                        "tips":  {
+                                     "1X2":  {
+                                                 "pick":  "2",
+                                                 "confidence":  0.589,
+                                                 "probs":  {
+                                                               "home":  0.157,
+                                                               "draw":  0.254,
+                                                               "away":  0.589
+                                                           }
+                                             },
+                                     "BTTS":  {
+                                                  "pick":  null,
+                                                  "confidence":  null,
+                                                  "pYes":  null
+                                              },
+                                     "OU25":  {
+                                                  "pick":  "UNDER 2.5",
+                                                  "confidence":  0.503,
+                                                  "pOver":  0.497
+                                              }
+                                 },
+                        "value":  null,
+                        "edge":  null,
+                        "oddsTaken":  {
+                                          "home":  6,
+                                          "draw":  4.1,
+                                          "away":  1.61,
+                                          "over25":  1.94,
+                                          "under25":  1.96
+                                      },
+                        "bookmaker":  {
+                                          "home":  "Unibet (SE)",
+                                          "draw":  "Unibet (SE)",
+                                          "away":  "Betsson",
+                                          "over25":  "Betsson",
+                                          "under25":  "Unibet (SE)"
+                                      },
+                        "proValueBets":  [
+                                             {
+                                                 "market":  "1X2",
+                                                 "pick":  "X",
+                                                 "odds":  4.1,
+                                                 "bookmaker":  "Unibet (SE)",
+                                                 "strategy":  "consensusAtBestPrice",
+                                                 "fairSource":  "pinnacle",
+                                                 "p":  0.2536,
+                                                 "modelP":  0.2802,
+                                                 "ev":  0.0398,
+                                                 "stakeSek":  500,
+                                                 "flaggedAt":  "2026-09-27T19:03:15.7183757+02:00"
+                                             }
+                                         ],
+                        "availabilityNotes":  null,
+                        "createdAt":  "2026-09-27T19:03:15.7183757+02:00",
+                        "settled":  false,
+                        "actual":  null,
+                        "hit":  null
+                    },
+                    {
+                        "id":  "2026-10-18|L1|Paris FC vs Rennes",
+                        "date":  "2026-10-18",
+                        "league":  "L1",
+                        "match":  "Paris FC vs Rennes",
+                        "home":  "Paris FC",
+                        "away":  "Rennes",
+                        "tipScore":  0.412,
+                        "tips":  {
+                                     "1X2":  {
+                                                 "pick":  "1",
+                                                 "confidence":  0.412,
+                                                 "probs":  {
+                                                               "home":  0.412,
+                                                               "draw":  0.295,
+                                                               "away":  0.293
+                                                           }
+                                             },
+                                     "BTTS":  {
+                                                  "pick":  null,
+                                                  "confidence":  null,
+                                                  "pYes":  null
+                                              },
+                                     "OU25":  {
+                                                  "pick":  null,
+                                                  "confidence":  null,
+                                                  "pOver":  null
+                                              }
+                                 },
+                        "value":  null,
+                        "edge":  null,
+                        "oddsTaken":  {
+                                          "home":  2.32,
+                                          "draw":  3.5,
+                                          "away":  3.15,
+                                          "over25":  1.65,
+                                          "under25":  2.26
+                                      },
+                        "bookmaker":  {
+                                          "home":  "Nordic Bet",
+                                          "draw":  "LeoVegas (SE)",
+                                          "away":  "LeoVegas (SE)",
+                                          "over25":  "Betsson",
+                                          "under25":  "Betsson"
+                                      },
+                        "proValueBets":  [
+                                             {
+                                                 "market":  "1X2",
+                                                 "pick":  "X",
+                                                 "odds":  3.5,
+                                                 "bookmaker":  "LeoVegas (SE)",
+                                                 "strategy":  "consensusAtBestPrice",
+                                                 "fairSource":  "pinnacle",
+                                                 "p":  0.2948,
+                                                 "modelP":  0.2808,
+                                                 "ev":  0.0318,
+                                                 "stakeSek":  500,
+                                                 "flaggedAt":  "2026-09-27T19:03:15.7183757+02:00"
+                                             }
+                                         ],
+                        "availabilityNotes":  null,
+                        "createdAt":  "2026-09-27T19:03:15.7183757+02:00",
                         "settled":  false,
                         "actual":  null,
                         "hit":  null

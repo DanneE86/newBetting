@@ -1467,6 +1467,8 @@ Masterdata: data/betting-store.json. Uppdatera: .\scripts\Update-BettingStore.ps
 | 2026-10-18 Brighton vs Crystal Palace (PL) | O/U 2.5 | - | 2.44 | Ej varde | 2.66 | 500 kr -> +720 kr (1:1.44, EV -19 kr) | 39.4% / 41.0% | - |
 | 2026-10-18 Leeds vs Man United (PL) | 1X2 | 2 | 2.35 | Ej varde | 2.58 | 500 kr -> +675 kr (1:1.35, EV -30 kr) | 40.0% / 42.5% | - |
 | 2026-10-18 Leeds vs Man United (PL) | O/U 2.5 | - | 2.23 | Ej varde | 2.45 | 500 kr -> +615 kr (1:1.23, EV -22 kr) | 42.8% / 44.8% | - |
+| 2026-10-18 Nott'm Forest vs Arsenal (PL) | 1X2 | 2 | 1.61 | Ej varde | 1.75 | 500 kr -> +305 kr (1:0.61, EV -26 kr) | 58.9% / 62.1% | X @ 4.1 |
+| 2026-10-18 Nott'm Forest vs Arsenal (PL) | O/U 2.5 | UNDER 2.5 | 1.96 | Ej varde | 2.05 | 500 kr -> +480 kr (1:0.96, EV -7 kr) | 50.3% / 51.0% | - |
 | 2026-10-03 Blackpool vs Leicester City (EL1) | 1X2 | 2 | 2.12 | Ej varde | 2.45 | 500 kr -> +560 kr (1:1.12, EV -32 kr) | 44.2% / 47.2% | - |
 | 2026-10-03 Blackpool vs Leicester City (EL1) | O/U 2.5 | OVER 2.5 | 1.56 | Ej varde | 1.83 | 500 kr -> +280 kr (1:0.56, EV -39 kr) | 59.1% / 64.1% | - |
 | 2026-10-16 La Coruna vs Levante (LL) | 1X2 | 1 | 2.1 | Ej varde | 2.26 | 500 kr -> +550 kr (1:1.1, EV -22 kr) | 45.5% / 47.6% | - |
@@ -1481,6 +1483,10 @@ Masterdata: data/betting-store.json. Uppdatera: .\scripts\Update-BettingStore.ps
 | 2026-10-17 Valencia vs Ath Bilbao (LL) | O/U 2.5 | UNDER 2.5 | 1.81 | Ej varde | 1.95 | 500 kr -> +405 kr (1:0.81, EV -23 kr) | 52.7% / 55.3% | - |
 | 2026-10-18 Osasuna vs Santander (LL) | 1X2 | 1 | 1.9 | Ej varde | 1.99 | 500 kr -> +450 kr (1:0.9, EV -8 kr) | 51.8% / 52.6% | - |
 | 2026-10-18 Osasuna vs Santander (LL) | O/U 2.5 | - | 2.1 | Ej varde | 2.33 | 500 kr -> +550 kr (1:1.1, EV -26 kr) | 45.1% / 47.6% | - |
+| 2026-10-18 Celta vs Alaves (LL) | 1X2 | 1 | 2.04 | Ej varde | 2.17 | 500 kr -> +520 kr (1:1.04, EV -15 kr) | 47.5% / 49.0% | - |
+| 2026-10-18 Celta vs Alaves (LL) | O/U 2.5 | - | 1.75 | Ej varde | 1.9 | 500 kr -> +375 kr (1:0.75, EV -16 kr) | 55.3% / 57.1% | - |
+| 2026-10-18 Malaga vs Sociedad (LL) | 1X2 | 2 | 2.23 | Ej varde | 2.38 | 500 kr -> +615 kr (1:1.23, EV -18 kr) | 43.3% / 44.8% | - |
+| 2026-10-18 Malaga vs Sociedad (LL) | O/U 2.5 | - | 2.06 | Ej varde | 2.26 | 500 kr -> +530 kr (1:1.06, EV -20 kr) | 46.6% / 48.5% | - |
 | 2026-10-16 Frosinone vs Sassuolo (SA) | 1X2 | 1 | 2.55 | Ej varde | 2.64 | 500 kr -> +775 kr (1:1.55, EV -2 kr) | 39.1% / 39.2% | - |
 | 2026-10-16 Frosinone vs Sassuolo (SA) | O/U 2.5 | - | 2.36 | Ej varde | 2.58 | 500 kr -> +680 kr (1:1.36, EV -20 kr) | 40.6% / 42.4% | - |
 | 2026-10-17 Venezia vs Napoli (SA) | 1X2 | 2 | 1.83 | Ej varde | 1.86 | 500 kr -> +415 kr (1:0.83, EV +7 kr) | 55.4% / 54.6% | - |
@@ -1493,6 +1499,8 @@ Masterdata: data/betting-store.json. Uppdatera: .\scripts\Update-BettingStore.ps
 | 2026-10-18 Udinese vs Lecce (SA) | O/U 2.5 | UNDER 2.5 | 1.86 | Ej varde | 2.02 | 500 kr -> +430 kr (1:0.86, EV -27 kr) | 50.9% / 53.8% | - |
 | 2026-10-18 Fiorentina vs Como (SA) | 1X2 | 2 | 1.98 | Ej varde | 2.08 | 500 kr -> +490 kr (1:0.98, EV -9 kr) | 49.6% / 50.5% | - |
 | 2026-10-18 Fiorentina vs Como (SA) | O/U 2.5 | - | 2.21 | Ej varde | 2.45 | 500 kr -> +605 kr (1:1.21, EV -26 kr) | 42.9% / 45.3% | - |
+| 2026-10-18 Milan vs Atalanta (SA) | 1X2 | 1 | 1.9 | Ej varde | 2.03 | 500 kr -> +450 kr (1:0.9, EV -17 kr) | 50.8% / 52.6% | - |
+| 2026-10-18 Milan vs Atalanta (SA) | O/U 2.5 | OVER 2.5 | 1.83 | Ej varde | 1.98 | 500 kr -> +415 kr (1:0.83, EV -25 kr) | 51.9% / 54.6% | - |
 | 2026-10-16 Ein Frankfurt vs FC Koln (BL) | 1X2 | 1 | 1.98 | Ej varde | 2.1 | 500 kr -> +490 kr (1:0.98, EV -15 kr) | 49.0% / 50.5% | - |
 | 2026-10-16 Ein Frankfurt vs FC Koln (BL) | O/U 2.5 | - | 3 | Ej varde | 3.36 | 500 kr -> +1000 kr (1:2, EV -18 kr) | 32.1% / 33.3% | - |
 | 2026-10-17 Elversberg vs Augsburg (BL) | 1X2 | 1 | 2.25 | Ej varde | 2.48 | 500 kr -> +625 kr (1:1.25, EV -32 kr) | 41.6% / 44.4% | - |
@@ -1509,6 +1517,8 @@ Masterdata: data/betting-store.json. Uppdatera: .\scripts\Update-BettingStore.ps
 | 2026-10-17 Bayern Munich vs RB Leipzig (BL) | O/U 2.5 | - | 5.01 | Ej varde | 5.68 | 500 kr -> +2005 kr (1:4.01, EV -24 kr) | 19.0% / 20.0% | - |
 | 2026-10-18 Leverkusen vs Freiburg (BL) | 1X2 | 1 | 1.65 | Ej varde | 1.79 | 500 kr -> +325 kr (1:0.65, EV -27 kr) | 57.4% / 60.6% | - |
 | 2026-10-18 Leverkusen vs Freiburg (BL) | O/U 2.5 | - | 2.67 | Ej varde | 3.02 | 500 kr -> +835 kr (1:1.67, EV -23 kr) | 35.7% / 37.5% | - |
+| 2026-10-18 M'gladbach vs Hoffenheim (BL) | 1X2 | 2 | 1.85 | Ej varde | 2.02 | 500 kr -> +425 kr (1:0.85, EV -28 kr) | 51.1% / 54.0% | - |
+| 2026-10-18 M'gladbach vs Hoffenheim (BL) | O/U 2.5 | - | 3 | Ej varde | 3.33 | 500 kr -> +1000 kr (1:2, EV -14 kr) | 32.4% / 33.3% | - |
 | 2026-10-16 Le Mans vs Toulouse (L1) | 1X2 | 2 | 2.25 | Ej varde | 2.45 | 500 kr -> +625 kr (1:1.25, EV -28 kr) | 42.0% / 44.4% | - |
 | 2026-10-16 Le Mans vs Toulouse (L1) | O/U 2.5 | - | 2.1 | Ej varde | 2.29 | 500 kr -> +550 kr (1:1.1, EV -19 kr) | 45.8% / 47.6% | - |
 | 2026-10-17 Strasbourg vs Paris SG (L1) | 1X2 | 2 | 1.44 | Ej varde | 1.56 | 500 kr -> +220 kr (1:0.44, EV -23 kr) | 66.2% / 69.4% | - |
@@ -1519,6 +1529,12 @@ Masterdata: data/betting-store.json. Uppdatera: .\scripts\Update-BettingStore.ps
 | 2026-10-17 Troyes vs Lens (L1) | O/U 2.5 | - | 2.43 | Ej varde | 2.66 | 500 kr -> +715 kr (1:1.43, EV -21 kr) | 39.4% / 41.1% | - |
 | 2026-10-18 Angers vs Marseille (L1) | 1X2 | 2 | 2.2 | Ej varde | 2.38 | 500 kr -> +600 kr (1:1.2, EV -24 kr) | 43.3% / 45.5% | - |
 | 2026-10-18 Angers vs Marseille (L1) | O/U 2.5 | - | 2.38 | Ej varde | 2.57 | 500 kr -> +690 kr (1:1.38, EV -15 kr) | 40.8% / 42.0% | - |
+| 2026-10-18 Lorient vs Monaco (L1) | 1X2 | 2 | 2.12 | Ej varde | 2.27 | 500 kr -> +560 kr (1:1.12, EV -19 kr) | 45.3% / 47.2% | - |
+| 2026-10-18 Lorient vs Monaco (L1) | O/U 2.5 | OVER 2.5 | 1.86 | Ej varde | 2 | 500 kr -> +430 kr (1:0.86, EV -20 kr) | 51.6% / 53.8% | - |
+| 2026-10-18 Le Havre vs Auxerre (L1) | 1X2 | 1 | 2.43 | Ej varde | 2.63 | 500 kr -> +715 kr (1:1.43, EV -24 kr) | 39.2% / 41.1% | - |
+| 2026-10-18 Le Havre vs Auxerre (L1) | O/U 2.5 | OVER 2.5 | 1.89 | Ej varde | 2.02 | 500 kr -> +445 kr (1:0.89, EV -18 kr) | 51.0% / 52.9% | - |
+| 2026-10-18 Paris FC vs Rennes (L1) | 1X2 | 1 | 2.32 | Ej varde | 2.5 | 500 kr -> +660 kr (1:1.32, EV -22 kr) | 41.2% / 43.1% | X @ 3.5 |
+| 2026-10-18 Paris FC vs Rennes (L1) | O/U 2.5 | - | 2.26 | Ej varde | 2.47 | 500 kr -> +630 kr (1:1.26, EV -19 kr) | 42.6% / 44.3% | - |
 | 2026-10-07 Sarmiento de Junin vs River Plate (AR) | 1X2 | 2 | - | Inga odds | - | - | - | - |
 | 2026-10-07 Sarmiento de Junin vs River Plate (AR) | O/U 2.5 | UNDER 2.5 | - | Inga odds | - | - | - | - |
 
@@ -1617,5 +1633,6 @@ Vadereffekt pa O/U 2.5 utover Pinnacle closing (9214 matcher):
 - 2026-10-18 Bournemouth vs Sunderland: HEMMA Justin Kluivert 4%, Antoine Semenyo 3% (x0.25) -> attack x1 | BORTA Brian Brobbey 15% (x0.25), Habib Diarra 5% -> attack x1
 - 2026-10-18 Brighton vs Crystal Palace: HEMMA Jack Hinshelwood 8% -> attack x1 | BORTA Jean-Philippe Mateta 11% -> attack x1
 - 2026-10-18 Leeds vs Man United: HEMMA - -> attack x1 | BORTA Marcus Rashford 9% (x0.25), Benjamin Sesko 7% (x0.25) -> attack x1
+- 2026-10-18 Nott'm Forest vs Arsenal: HEMMA Taiwo Awoniyi 5% -> attack x1 | BORTA Kai Havertz 10% (x0.25), Declan Rice 6% (x0.25) -> attack x1
 
 Backtest (2000 matcher med spelardata): RPS per alpha 0: 0.2032 | 0.25: 0.20339 | 0.5: 0.20368 | 0.75: 0.2041 | 1: 0.20466. Vald alpha = 0 (RPS-forbattring 0).
