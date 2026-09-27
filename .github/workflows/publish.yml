@@ -1,0 +1,31 @@
+name: Publicera webben
+
+# Bara bygg + publicering av det som redan ligger i repot (ingen datahämtning), ~1-2 min.
+# Hämta data lokalt med "Hämta" i GUI:t, pusha, och kör sedan den här (Actions -> "Run workflow").
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: publish-site
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      TZ: Europe/Stockholm
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: 157ee3f6fab55443acdd807e5899c5f2
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Bygg webbversion
+        run: node scripts/build-static-site.mjs
+
+      - name: Publicera till newbetting.pages.dev
+        run: npx -y wrangler@4 pages deploy site --project-name newbetting --branch main --commit-dirty=true
