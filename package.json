@@ -13,6 +13,7 @@
     "odds": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Fetch-OddsApi.ps1",
     "oddsportal": "node scripts/fetch-oddsportal.mjs",
     "pro": "node scripts/pro-layer.mjs",
+    "tune": "node scripts/tune-league-models.mjs",
     "scan": "node scripts/daily-scanner.mjs",
     "ledger": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Update-TipsLedger.ps1",
     "store": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Update-BettingStore.ps1 -SkipDownload",

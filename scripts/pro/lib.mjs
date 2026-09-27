@@ -240,10 +240,13 @@ export function predictDixonColes(model, home, away, maxGoals = 10, adj = {}) {
       if (x >= 1 && y >= 1) pBtts += p;
     }
   }
+  // Oavgjort-justering per liga (model.drawK, vald i backtest): Poisson underskattar kryss i vissa ligor
+  const k = model.drawK ?? 1;
+  const tot1x2 = pH + k * pD + pA;
   return {
-    home: pH / total,
-    draw: pD / total,
-    away: pA / total,
+    home: pH / tot1x2,
+    draw: (k * pD) / tot1x2,
+    away: pA / tot1x2,
     over25: pOver / total,
     btts: pBtts / total,
     lambdaHome: lambda,

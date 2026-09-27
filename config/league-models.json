@@ -1,0 +1,510 @@
+{
+  "updatedAt": "2026-09-27T13:11:49.646Z",
+  "method": "Point-in-time veckorefit, sasong 2025/26 + 2026/27, RPS 1X2. Grid xi x shrink x prior x drawK; byter fran standard bara vid >= 0.0005 battre RPS. earlyMarket nar marknaden (snitt oppningsodds) ar >= 0.01 battre i omgang 1-8 (minst 60 matcher).",
+  "defaults": {
+    "xi": 0.0025,
+    "shrink": 2,
+    "prior": false,
+    "priorK": 8,
+    "topQ": 0.75,
+    "botQ": 0.25,
+    "drawK": 1,
+    "earlyMarket": false
+  },
+  "leagues": {
+    "AR": {
+      "params": {
+        "xi": 0.0015,
+        "shrink": 5,
+        "prior": true,
+        "drawK": 1,
+        "earlyMarket": false
+      },
+      "rpsDefault": 0.2168,
+      "rpsTuned": 0.2162,
+      "n": 914,
+      "early": null
+    },
+    "AS": {
+      "params": {
+        "xi": 0.004,
+        "shrink": 5,
+        "prior": true,
+        "drawK": 1,
+        "earlyMarket": false
+      },
+      "rpsDefault": 0.2189,
+      "rpsTuned": 0.2167,
+      "n": 416,
+      "early": null
+    },
+    "BL": {
+      "params": {
+        "xi": 0.004,
+        "shrink": 2,
+        "prior": true,
+        "drawK": 1,
+        "earlyMarket": false
+      },
+      "rpsDefault": 0.2022,
+      "rpsTuned": 0.1991,
+      "n": 342,
+      "early": {
+        "n": 108,
+        "rpsModel": 0.2051,
+        "rpsMarket": 0.1969
+      }
+    },
+    "BL2": {
+      "params": {
+        "xi": 0.0015,
+        "shrink": 5,
+        "prior": true,
+        "drawK": 1,
+        "earlyMarket": false
+      },
+      "rpsDefault": 0.2305,
+      "rpsTuned": 0.2256,
+      "n": 360,
+      "early": {
+        "n": 126,
+        "rpsModel": 0.2329,
+        "rpsMarket": 0.2296
+      }
+    },
+    "BR": {
+      "params": {
+        "xi": 0.0015,
+        "shrink": 2,
+        "prior": true,
+        "drawK": 1,
+        "earlyMarket": false
+      },
+      "rpsDefault": 0.2048,
+      "rpsTuned": 0.2043,
+      "n": 657,
+      "early": null
+    },
+    "BR2": {
+      "params": {
+        "xi": 0.0015,
+        "shrink": 5,
+        "prior": true,
+        "drawK": 1.1,
+        "earlyMarket": false
+      },
+      "rpsDefault": 0.2199,
+      "rpsTuned": 0.2163,
+      "n": 618,
+      "early": null
+    },
+    "CH": {
+      "params": {
+        "xi": 0.004,
+        "shrink": 5,
+        "prior": true,
+        "drawK": 1.05,
+        "earlyMarket": false
+      },
+      "rpsDefault": 0.2251,
+      "rpsTuned": 0.2215,
+      "n": 647,
+      "early": {
+        "n": 202,
+        "rpsModel": 0.2242,
+        "rpsMarket": 0.2177
+      }
+    },
+    "CHI": {
+      "params": {
+        "xi": 0.0025,
+        "shrink": 5,
+        "prior": true,
+        "drawK": 1,
+        "earlyMarket": false
+      },
+      "rpsDefault": 0.2188,
+      "rpsTuned": 0.2176,
+      "n": 373,
+      "early": null
+    },
+    "COL": {
+      "params": {
+        "xi": 0.0015,
+        "shrink": 5,
+        "prior": true,
+        "drawK": 1,
+        "earlyMarket": false
+      },
+      "rpsDefault": 0.2066,
+      "rpsTuned": 0.2056,
+      "n": 705,
+      "early": null
+    },
+    "CZ": {
+      "params": {
+        "xi": 0.004,
+        "shrink": 5,
+        "prior": false,
+        "drawK": 1,
+        "earlyMarket": false
+      },
+      "rpsDefault": 0.213,
+      "rpsTuned": 0.2123,
+      "n": 288,
+      "early": null
+    },
+    "DK": {
+      "params": {
+        "xi": 0.004,
+        "shrink": 5,
+        "prior": true,
+        "drawK": 1.05,
+        "earlyMarket": false
+      },
+      "rpsDefault": 0.2209,
+      "rpsTuned": 0.2192,
+      "n": 246,
+      "early": null
+    },
+    "DK2": {
+      "params": {
+        "xi": 0.0015,
+        "shrink": 5,
+        "prior": true,
+        "drawK": 1.1,
+        "earlyMarket": false
+      },
+      "rpsDefault": 0.2176,
+      "rpsTuned": 0.2156,
+      "n": 192,
+      "early": null
+    },
+    "ED": {
+      "params": {
+        "xi": 0.0025,
+        "shrink": 2,
+        "prior": true,
+        "drawK": 1.1,
+        "earlyMarket": true
+      },
+      "rpsDefault": 0.1983,
+      "rpsTuned": 0.1975,
+      "n": 369,
+      "early": {
+        "n": 135,
+        "rpsModel": 0.1947,
+        "rpsMarket": 0.1841
+      }
+    },
+    "EK": {
+      "params": {
+        "xi": 0.0015,
+        "shrink": 5,
+        "prior": true,
+        "drawK": 1.1,
+        "earlyMarket": false
+      },
+      "rpsDefault": 0.2264,
+      "rpsTuned": 0.224,
+      "n": 384,
+      "early": null
+    },
+    "EL1": {
+      "params": {
+        "xi": 0.004,
+        "shrink": 5,
+        "prior": true,
+        "drawK": 1.05,
+        "earlyMarket": true
+      },
+      "rpsDefault": 0.2227,
+      "rpsTuned": 0.2217,
+      "n": 635,
+      "early": {
+        "n": 183,
+        "rpsModel": 0.2316,
+        "rpsMarket": 0.2197
+      }
+    },
+    "GR": {
+      "params": {
+        "xi": 0.0015,
+        "shrink": 2,
+        "prior": true,
+        "drawK": 1,
+        "earlyMarket": false
+      },
+      "rpsDefault": 0.189,
+      "rpsTuned": 0.1871,
+      "n": 271,
+      "early": {
+        "n": 93,
+        "rpsModel": 0.187,
+        "rpsMarket": 0.1794
+      }
+    },
+    "HR": {
+      "params": {
+        "xi": 0.0015,
+        "shrink": 5,
+        "prior": true,
+        "drawK": 1,
+        "earlyMarket": false
+      },
+      "rpsDefault": 0.205,
+      "rpsTuned": 0.2027,
+      "n": 174,
+      "early": null
+    },
+    "JP1": {
+      "params": {
+        "xi": 0.004,
+        "shrink": 2,
+        "prior": true,
+        "drawK": 1,
+        "earlyMarket": false
+      },
+      "rpsDefault": 0.2187,
+      "rpsTuned": 0.2163,
+      "n": 460,
+      "early": null
+    },
+    "JP2": {
+      "params": {
+        "xi": 0.004,
+        "shrink": 5,
+        "prior": true,
+        "drawK": 1.1,
+        "earlyMarket": false
+      },
+      "rpsDefault": 0.2351,
+      "rpsTuned": 0.2302,
+      "n": 770,
+      "early": null
+    },
+    "JP3": {
+      "params": {
+        "xi": 0.0015,
+        "shrink": 5,
+        "prior": true,
+        "drawK": 1,
+        "earlyMarket": false
+      },
+      "rpsDefault": 0.2283,
+      "rpsTuned": 0.2248,
+      "n": 404,
+      "early": null
+    },
+    "KR": {
+      "params": {
+        "xi": 0.004,
+        "shrink": 5,
+        "prior": true,
+        "drawK": 1.1,
+        "earlyMarket": false
+      },
+      "rpsDefault": 0.226,
+      "rpsTuned": 0.2231,
+      "n": 358,
+      "early": null
+    },
+    "L1": {
+      "params": {
+        "xi": 0.0015,
+        "shrink": 5,
+        "prior": true,
+        "drawK": 1.1,
+        "earlyMarket": true
+      },
+      "rpsDefault": 0.2117,
+      "rpsTuned": 0.2093,
+      "n": 351,
+      "early": {
+        "n": 117,
+        "rpsModel": 0.2019,
+        "rpsMarket": 0.1908
+      }
+    },
+    "LL": {
+      "params": {
+        "xi": 0.0015,
+        "shrink": 2,
+        "prior": true,
+        "drawK": 1,
+        "earlyMarket": false
+      },
+      "rpsDefault": 0.2017,
+      "rpsTuned": 0.2007,
+      "n": 449,
+      "early": {
+        "n": 149,
+        "rpsModel": 0.1926,
+        "rpsMarket": 0.1929
+      }
+    },
+    "LL2": {
+      "params": {
+        "xi": 0.004,
+        "shrink": 5,
+        "prior": true,
+        "drawK": 1,
+        "earlyMarket": false
+      },
+      "rpsDefault": 0.2262,
+      "rpsTuned": 0.2239,
+      "n": 528,
+      "early": {
+        "n": 155,
+        "rpsModel": 0.2297,
+        "rpsMarket": 0.2247
+      }
+    },
+    "MLS": {
+      "params": {
+        "xi": 0.004,
+        "shrink": 5,
+        "prior": false,
+        "drawK": 1.1,
+        "earlyMarket": false
+      },
+      "rpsDefault": 0.2224,
+      "rpsTuned": 0.2212,
+      "n": 928,
+      "early": null
+    },
+    "MX": {
+      "params": {
+        "xi": 0.0015,
+        "shrink": 5,
+        "prior": true,
+        "drawK": 1.1,
+        "earlyMarket": false
+      },
+      "rpsDefault": 0.2102,
+      "rpsTuned": 0.2095,
+      "n": 415,
+      "early": null
+    },
+    "NO": {
+      "params": {
+        "xi": 0.0025,
+        "shrink": 2,
+        "prior": true,
+        "drawK": 1,
+        "earlyMarket": false
+      },
+      "rpsDefault": 0.2041,
+      "rpsTuned": 0.2022,
+      "n": 408,
+      "early": null
+    },
+    "NO2": {
+      "params": {
+        "xi": 0.0025,
+        "shrink": 5,
+        "prior": true,
+        "drawK": 1,
+        "earlyMarket": false
+      },
+      "rpsDefault": 0.2126,
+      "rpsTuned": 0.2108,
+      "n": 369,
+      "early": null
+    },
+    "PL": {
+      "params": {
+        "xi": 0.0015,
+        "shrink": 2,
+        "prior": true,
+        "drawK": 1.1,
+        "earlyMarket": false
+      },
+      "rpsDefault": 0.2074,
+      "rpsTuned": 0.2067,
+      "n": 430,
+      "early": {
+        "n": 132,
+        "rpsModel": 0.203,
+        "rpsMarket": 0.2056
+      }
+    },
+    "PT": {
+      "params": {
+        "xi": 0.0015,
+        "shrink": 2,
+        "prior": true,
+        "drawK": 1.1,
+        "earlyMarket": false
+      },
+      "rpsDefault": 0.1786,
+      "rpsTuned": 0.1778,
+      "n": 368,
+      "early": {
+        "n": 134,
+        "rpsModel": 0.1825,
+        "rpsMarket": 0.1825
+      }
+    },
+    "SA": {
+      "params": {
+        "xi": 0.0025,
+        "shrink": 2,
+        "prior": false,
+        "drawK": 1,
+        "earlyMarket": false
+      },
+      "rpsDefault": 0.2005,
+      "rpsTuned": 0.2005,
+      "n": 430,
+      "early": {
+        "n": 130,
+        "rpsModel": 0.1933,
+        "rpsMarket": 0.1918
+      }
+    },
+    "SB": {
+      "params": {
+        "xi": 0.004,
+        "shrink": 2,
+        "prior": true,
+        "drawK": 1.05,
+        "earlyMarket": false
+      },
+      "rpsDefault": 0.2094,
+      "rpsTuned": 0.2047,
+      "n": 430,
+      "early": {
+        "n": 130,
+        "rpsModel": 0.2159,
+        "rpsMarket": 0.213
+      }
+    },
+    "SE3N": {
+      "params": {
+        "xi": 0.0015,
+        "shrink": 5,
+        "prior": true,
+        "drawK": 1,
+        "earlyMarket": false
+      },
+      "rpsDefault": 0.2215,
+      "rpsTuned": 0.2176,
+      "n": 373,
+      "early": null
+    },
+    "SE3S": {
+      "params": {
+        "xi": 0.004,
+        "shrink": 5,
+        "prior": true,
+        "drawK": 1,
+        "earlyMarket": false
+      },
+      "rpsDefault": 0.2292,
+      "rpsTuned": 0.2249,
+      "n": 376,
+      "early": null
+    }
+  }
+}

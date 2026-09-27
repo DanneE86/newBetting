@@ -5,9 +5,10 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import {
-  brier, clv, daysBetween, devigMultiplicative, findSharpBook, fitDixonColes,
+  brier, clv, daysBetween, devigMultiplicative, findSharpBook,
   overround, predictDixonColes, round, rps1x2, toDate,
 } from './pro/lib.mjs';
+import { EARLY_ROUNDS, buildTiers, fitLeagueModel, loadLeagueModels, paramsFor } from './pro/league-models.mjs';
 import { historicalMissing, findUsMatch, loadPlayerModel, summarise as summariseMissing, teamShares } from './pro/players.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -27,6 +28,8 @@ const P = {
   fpl: path.join(root, 'data', 'open', 'fpl_availability.json'),
   lineups: path.join(root, 'data', 'open', 'espn_lineups.json'),
   evaluation: path.join(root, 'data', 'reports', 'pro-evaluation.json'),
+  leaguesCfg: path.join(root, 'config', 'leagues.json'),
+  leagueModels: path.join(root, 'config', 'league-models.json'),
 };
 
 export const CONFIG = {
@@ -57,6 +60,8 @@ export const STRATEGIES = {
   dcAtPinnacle: { book: 'pinnacle_', probs: (r) => dcProbs(r.dc) },
   dcAtBestPrice: { book: 'max_', probs: (r) => dcProbs(r.dc) },
   consensusAtBestPrice: { book: 'max_', probs: (r) => pinOpen(r.m) },
+  // Som live nar Pinnacle saknas (fran 2025/26): facit = snitt av bolagens oppningsodds utan marginal
+  averageConsensusAtBestPrice: { book: 'max_', probs: (r) => avgOpen(r.m) },
   marketAnchoredAtBestPrice: {
     book: 'max_',
     probs: (r) => {
@@ -81,10 +86,19 @@ const matches = store.matches
 const byLeague = groupBy(matches, (m) => m.league);
 
 // ---------- Dixon-Coles per liga (full data -> kommande matcher) ----------
+// Parametrar per liga ur config/league-models.json (npm run tune), prior for nya lag i ligan
+const leagueModels = loadLeagueModels(P.leagueModels);
+const tiers = buildTiers(readJson(P.leaguesCfg));
 const today = new Date().toISOString().slice(0, 10);
+const upcomingTeams = {};
+for (const f of fs.existsSync(P.fixtures) ? readJson(P.fixtures) : []) {
+  (upcomingTeams[f.league] ??= new Set()).add(f.home).add(f.away);
+}
 const models = {};
 for (const [league, list] of Object.entries(byLeague)) {
-  const model = fitDixonColes(list, today);
+  const model = fitLeagueModel(list, today, paramsFor(leagueModels, league), {
+    league, byLeague, tiers, teams: upcomingTeams[league],
+  });
   if (model) models[league] = model;
 }
 
@@ -132,6 +146,7 @@ for (const t of [...(tips.bestUpcoming ?? []), ...(tips.allCandidates ?? [])]) {
   const key = `${t.date}|${t.league}|${t.home}|${t.away}`;
   if (!enriched.has(key)) enriched.set(key, buildPro(t));
   t.pro = enriched.get(key);
+  applyMarketLed(t);
   t.kickoffUtc ??= fixtureKick.get(key) ?? t.pro.kickoffUtc ?? null;
 }
 // Matcher med skarpa odds men utan modelltips (cuper, Superettan, lag utan historik) -> marknadstips
@@ -147,6 +162,7 @@ tips.proMeta = {
   config: CONFIG,
   models: Object.fromEntries(Object.entries(models).map(([lg, m]) => [lg, {
     trainMatches: m.trainCount, homeAdvantage: round(m.gamma, 3), rho: m.rho,
+    params: paramsFor(leagueModels, lg), newTeamPriors: m.priors ?? {},
   }])),
   evaluationSummary: evaluation.summary,
   note: 'pro = Dixon-Coles + devig (multiplicative) + spelarviktad franvaro + vilodagar + vader. Fast insats stakeSek per spel. Se docs/krav/01-proffs-research.md',
@@ -174,12 +190,13 @@ function buildPro(t) {
   }) : null;
   // Grundmodellen FORE dess platta franvaroavdrag - franvaro hanteras spelarviktat i DC ovan
   const pre = t.probsBeforeAvailability;
+  const own = t.modelTips ?? t.tips; // modellens egna tips, aldrig ett tidigare marknadsstyrt
   const base = {
-    home: pre?.home ?? t.tips?.['1X2']?.probs?.home,
-    draw: pre?.draw ?? t.tips?.['1X2']?.probs?.draw,
-    away: pre?.away ?? t.tips?.['1X2']?.probs?.away,
-    over25: pre?.over25 ?? t.tips?.OU25?.pOver,
-    btts: pre?.btts ?? t.tips?.BTTS?.pYes,
+    home: pre?.home ?? own?.['1X2']?.probs?.home,
+    draw: pre?.draw ?? own?.['1X2']?.probs?.draw,
+    away: pre?.away ?? own?.['1X2']?.probs?.away,
+    over25: pre?.over25 ?? own?.OU25?.pOver,
+    btts: pre?.btts ?? own?.BTTS?.pYes,
   };
   const w = dc ? CONFIG.dcWeight : 0;
   const blend = (k) => (dc && base[k] != null ? w * dc[k] + (1 - w) * base[k] : dc ? dc[k] : base[k]);
@@ -252,6 +269,16 @@ function buildPro(t) {
   const useSharp = !!sharp;
   const f1x2 = fairFrom(['home', 'draw', 'away']);
   const fOu = fairFrom(['over25', 'under25']);
+  // Tidig sasong i ligor dar marknaden ar klart battre an modellen (earlyMarket, npm run tune):
+  // marknadens chans styr tipset tills bada lagen spelat EARLY_ROUNDS ligamatcher
+  const early = paramsFor(leagueModels, t.league).earlyMarket && !t.marketOnly
+    ? { home: seasonMatchesSoFar(t.league, t.home, t.date), away: seasonMatchesSoFar(t.league, t.away, t.date) } : null;
+  const marketLed = early && f1x2 && Math.min(early.home, early.away) < EARLY_ROUNDS
+    ? { source: f1x2.source, sourceOu: fOu?.source ?? null, leagueMatches: early, rounds: EARLY_ROUNDS } : null;
+  if (marketLed) {
+    [blended.home, blended.draw, blended.away] = f1x2.p;
+    if (fOu) blended.over25 = fOu.p[0];
+  }
   const groupOf = (k) => (['home', 'draw', 'away'].includes(k) ? f1x2 : fOu);
   const fair = { home: f1x2?.p[0], draw: f1x2?.p[1], away: f1x2?.p[2], over25: fOu?.p[0], under25: fOu?.p[1] };
   const fairSource = f1x2?.source ?? fOu?.source ?? null;
@@ -301,6 +328,7 @@ function buildPro(t) {
       knownTeams: dc.knownTeams,
     },
     blended: Object.fromEntries(Object.entries(blended).map(([k, v]) => [k, round(v)])),
+    marketLed,
     market,
     valueBets,
     verdicts,
@@ -310,6 +338,37 @@ function buildPro(t) {
     weather: weatherInfo(t),
     availability,
   };
+}
+
+// Ligamatcher laget spelat hittills i sasongen (ingen ligamatch pa 60 dagar = ny sasong, 0)
+function seasonMatchesSoFar(league, team, date) {
+  const list = byLeague[league] ?? [];
+  const last = list.filter((m) => m.date < date && daysBetween(m.date, date) <= 60).at(-1);
+  if (!last) return 0;
+  return list.filter((m) => m.season === last.season && m.date < date && (m.home === team || m.away === team)).length;
+}
+
+// Marknadsstyrt tips: 1X2 (och O/U om facit finns) fran marknaden, modellens tips sparas i modelTips
+function applyMarketLed(t) {
+  const ml = t.pro?.marketLed;
+  if (!ml) {
+    // Lagen har passerat de tidiga omgangarna (eller ligan tunats om): tillbaka till modellens tips
+    if (t.modelTips) t.tips = t.modelTips;
+    delete t.modelTips;
+    delete t.marketLed;
+    delete t.marketLedNote;
+    return;
+  }
+  t.modelTips ??= structuredClone(t.tips);
+  const b = t.pro.blended;
+  const probs = { home: b.home, draw: b.draw, away: b.away };
+  const [pick, conf] = [['1', probs.home], ['X', probs.draw], ['2', probs.away]].sort((x, y) => y[1] - x[1])[0];
+  t.tips['1X2'] = { ...t.tips['1X2'], pick, confidence: round(conf, 3), probs: Object.fromEntries(Object.entries(probs).map(([k, v]) => [k, round(v, 3)])) };
+  if (ml.sourceOu) {
+    t.tips.OU25 = { ...t.tips.OU25, pick: b.over25 >= 0.5 ? 'OVER 2.5' : 'UNDER 2.5', confidence: round(Math.max(b.over25, 1 - b.over25), 3), pOver: round(b.over25, 3) };
+  }
+  t.marketLed = true;
+  t.marketLedNote = `Tidig säsong – marknadens chans (${ml.source}) styr tipset tills lagen spelat ${ml.rounds} ligamatcher`;
 }
 
 // ---------- Franvaro live: FPL (PL) + bekraftade elvor (ESPN) ----------
@@ -693,12 +752,18 @@ function evaluate() {
     const byWeek = groupBy(evalMatches, (m) => weekStart(m.date));
     const rows = [];
     for (const [week, wm] of Object.entries(byWeek).sort()) {
-      const model = fitDixonColes(list, week);
+      const model = fitLeagueModel(list, week, paramsFor(leagueModels, league), {
+        league, byLeague, tiers, teams: wm.flatMap((m) => [m.home, m.away]),
+      });
       if (!model) continue;
       for (const m of wm) {
         const dc = predictDixonColes(model, m.home, m.away);
         const pinClose = devigMultiplicative([m.closing?.pinnacle_home, m.closing?.pinnacle_draw, m.closing?.pinnacle_away]);
         const pinCloseOu = devigMultiplicative([m.closing?.pinnacle_over25, m.closing?.pinnacle_under25]);
+        // Skarpt closing-facit: Pinnacle, annars Betfair Exchange (Pinnacle saknas i football-data fran 2025/26)
+        const bfeClose = devigMultiplicative([m.closing?.bfe_home, m.closing?.bfe_draw, m.closing?.bfe_away]);
+        const sharpClose = pinClose ?? bfeClose;
+        const sharpSource = pinClose ? 'pinnacle' : bfeClose ? 'betfair' : null;
         const miss = matchMissing(m);
         let dcAlpha = null;
         if (miss) {
@@ -711,7 +776,7 @@ function evaluate() {
           recordMissing(m.league, m.home, miss.home.missingShare);
           recordMissing(m.league, m.away, miss.away.missingShare);
         }
-        rows.push({ m, dc, pinClose, pinCloseOu, miss, dcAlpha });
+        rows.push({ m, dc, pinClose, pinCloseOu, sharpClose, sharpSource, miss, dcAlpha });
       }
     }
     perLeague[league] = summarise(rows);
@@ -720,7 +785,7 @@ function evaluate() {
   return {
     rowsByLeague,
     updatedAt: new Date().toISOString(),
-    method: 'Dixon-Coles refit per vecka (endast data fore veckan), sasong 2025/26 + 2026/27. Spel = flat 1 enhet pa Pinnacle oppningsodds nar dc-EV >= troskel. CLV mot devig:ad Pinnacle closing.',
+    method: 'Dixon-Coles (parametrar per liga, prior for nya lag) refit per vecka (endast data fore veckan), sasong 2025/26 + 2026/27. Spel = flat 1 enhet pa Pinnacle oppningsodds nar dc-EV >= troskel. CLV mot devig:ad Pinnacle closing, annars Betfair Exchange closing.',
     thresholds: CONFIG.evalThresholds,
     summary: Object.fromEntries(Object.entries(perLeague).map(([lg, s]) => [lg, s.headline])),
     detail: perLeague,
@@ -729,7 +794,14 @@ function evaluate() {
 
 function summarise(rows) {
   let rpsDc = 0, rpsPin = 0, nPin = 0, brierDc = 0, brierPin = 0, nOu = 0, brierBttsDc = 0;
-  for (const { m, dc, pinClose, pinCloseOu } of rows) {
+  let rpsSharp = 0, rpsDcSharp = 0;
+  const sharpSources = { pinnacle: 0, betfair: 0 };
+  for (const { m, dc, pinClose, pinCloseOu, sharpClose, sharpSource } of rows) {
+    if (sharpClose) {
+      rpsSharp += rps1x2(sharpClose, m.result);
+      rpsDcSharp += rps1x2([dc.home, dc.draw, dc.away], m.result);
+      sharpSources[sharpSource]++;
+    }
     rpsDc += rps1x2([dc.home, dc.draw, dc.away], m.result);
     brierBttsDc += brier(dc.btts, m.btts);
     if (pinClose) {
@@ -749,10 +821,15 @@ function summarise(rows) {
     );
   }
   const n = rows.length;
+  const nSharp = sharpSources.pinnacle + sharpSources.betfair;
   const headline = {
     n,
     rpsDc: n ? round(rpsDc / n) : null,
     rpsPinnacleClose: nPin ? round(rpsPin / nPin) : null,
+    // Samma matcher for modell och facit (Pinnacle, annars Betfair Exchange) -> rattvis jamforelse
+    rpsSharpClose: nSharp ? round(rpsSharp / nSharp) : null,
+    rpsDcOnSharp: nSharp ? round(rpsDcSharp / nSharp) : null,
+    sharpCloseSources: sharpSources,
     brierOuDc: nOu ? round(brierDc / nOu) : null,
     brierOuPinnacleClose: nOu ? round(brierPin / nOu) : null,
     brierBttsDc: n ? round(brierBttsDc / n) : null,
@@ -769,6 +846,14 @@ function dcProbs(dc) {
   return [dc.home, dc.draw, dc.away, dc.over25];
 }
 
+function avgOpen(m) {
+  const o = m.odds ?? {};
+  const f1 = devigMultiplicative([o.home, o.draw, o.away]);
+  const fOu = devigMultiplicative([o.over25, o.under25]);
+  if (!f1 || !fOu) return null;
+  return [...f1, fOu[0]];
+}
+
 function pinOpen(m) {
   const o = m.odds ?? {};
   const f1 = devigMultiplicative([o.pinnacle_home, o.pinnacle_draw, o.pinnacle_away]);
@@ -780,15 +865,15 @@ function pinOpen(m) {
 function simulateBets(rows, threshold, strategy) {
   let n = 0, profit = 0, clvSum = 0, clvN = 0, clvPos = 0;
   for (const r of rows) {
-    const { m, pinClose, pinCloseOu } = r;
+    const { m, sharpClose, pinCloseOu } = r;
     const p = strategy.probs(r);
     if (!p) continue;
     const o = m.odds ?? {};
     const px = strategy.book;
     const cands = [
-      [p[0], o[`${px}home`], m.result === 'H', pinClose?.[0]],
-      [p[1], o[`${px}draw`], m.result === 'D', pinClose?.[1]],
-      [p[2], o[`${px}away`], m.result === 'A', pinClose?.[2]],
+      [p[0], o[`${px}home`], m.result === 'H', sharpClose?.[0]],
+      [p[1], o[`${px}draw`], m.result === 'D', sharpClose?.[1]],
+      [p[2], o[`${px}away`], m.result === 'A', sharpClose?.[2]],
       [p[3], o[`${px}over25`], m.over25, pinCloseOu?.[0]],
       [1 - p[3], o[`${px}under25`], !m.over25, pinCloseOu?.[1]],
     ];
@@ -836,12 +921,12 @@ function appendMarkdown(tips, evaluation) {
   }
   lines.push('', `Varde = forvantad avkastning >= ${100 * CONFIG.minEv} % till dagens odds. BTTS saknar odds.`);
   lines.push('', `Facit = Pinnacles odds utan marginal. Pris = basta odds hos ${CONFIG.userBooks.join(', ')}. Utan Pinnacle: "Kraver skarpa odds" (inget omdome).`);
-  lines.push('', '### Modell vs Pinnacle closing (2025/26 + 2026/27, point-in-time)', '');
-  lines.push(`| Liga | Matcher | RPS DC | RPS Pinnacle close | Brier O/U DC | Brier O/U Pinnacle | CLV DC-spel | CLV konsensus-spel (n) |`, '|---|---|---|---|---|---|---|---|');
+  lines.push('', '### Modell vs skarp closing (Pinnacle, annars Betfair Exchange; 2025/26 + 2026/27, point-in-time)', '');
+  lines.push(`| Liga | Matcher | RPS DC | RPS skarp close | Brier O/U DC | Brier O/U Pinnacle | CLV DC-spel | CLV konsensus-spel (n) |`, '|---|---|---|---|---|---|---|---|');
   for (const [lg, s] of Object.entries(evaluation.summary)) {
     const dc = s.strategies.dcAtPinnacle;
     const cons = s.strategies.consensusAtBestPrice;
-    lines.push(`| ${lg} | ${s.n} | ${s.rpsDc} | ${s.rpsPinnacleClose ?? '-'} | ${s.brierOuDc ?? '-'} | ${s.brierOuPinnacleClose ?? '-'} | ${pct(dc.meanClv)} | ${pct(cons.meanClv)} (${cons.n}) |`);
+    lines.push(`| ${lg} | ${s.n} | ${s.rpsDcOnSharp ?? s.rpsDc} | ${s.rpsSharpClose ?? '-'} | ${s.brierOuDc ?? '-'} | ${s.brierOuPinnacleClose ?? '-'} | ${pct(dc.meanClv)} | ${pct(cons.meanClv)} (${cons.n}) |`);
   }
   lines.push('', `Spel = EV >= ${CONFIG.minEv}. Lagre RPS/Brier = battre. Positiv CLV = slog stangningsoddset. Detaljer: data/reports/pro-evaluation.json`);
 
