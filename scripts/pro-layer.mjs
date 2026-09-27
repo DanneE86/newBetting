@@ -29,6 +29,7 @@ const P = {
   fpl: path.join(root, 'data', 'open', 'fpl_availability.json'),
   lineups: path.join(root, 'data', 'open', 'espn_lineups.json'),
   evaluation: path.join(root, 'data', 'reports', 'pro-evaluation.json'),
+  oddsHistory: path.join(root, 'data', 'open', 'odds-history.json'),
   leaguesCfg: path.join(root, 'config', 'leagues.json'),
   leagueModels: path.join(root, 'config', 'league-models.json'),
 };
@@ -110,6 +111,7 @@ const playerModel = loadPlayerModel(P.usLeague, P.usPlayers, matches);
 const weatherHistory = fs.existsSync(P.weatherHistory) ? readJson(P.weatherHistory).matches : {};
 const evaluation = evaluate();
 evaluation.drawCalibrationBlend = drawCalibrationBlend(evaluation.rowsByLeague);
+evaluation.marketTest = marketTest(evaluation.rowsByLeague);
 evaluation.weatherEffect = weatherEffect();
 evaluation.playerEffect = playerEffect(evaluation.rowsByLeague);
 delete evaluation.rowsByLeague;
@@ -167,6 +169,7 @@ tips.proMeta = {
     params: paramsFor(leagueModels, lg), newTeamPriors: m.priors ?? {},
   }])),
   evaluationSummary: evaluation.summary,
+  marketTest: evaluation.marketTest,
   note: 'pro = Dixon-Coles + devig (multiplicative) + spelarviktad franvaro + vilodagar + vader. Fast insats stakeSek per spel. Se docs/krav/01-proffs-research.md',
 };
 tips.valueBets = [...enriched.values()]
@@ -174,6 +177,7 @@ tips.valueBets = [...enriched.values()]
   .sort((a, b) => b.ev - a.ev);
 writeJson(P.tips, tips);
 appendMarkdown(tips, evaluation);
+recordOddsHistory(enriched);
 
 console.log(`Pro-lager: models=${Object.keys(models).join(',')} tips=${enriched.size} valueBets=${tips.valueBets.length}`);
 for (const [lg, s] of Object.entries(evaluation.summary)) {
@@ -810,6 +814,93 @@ function evaluate() {
     summary: Object.fromEntries(Object.entries(perLeague).map(([lg, s]) => [lg, s.headline])),
     detail: perLeague,
   };
+}
+
+/**
+ * Oddshistorik per match: forsta och senaste pris fore avspark (bast pris + marginalfritt facit).
+ * Senaste snapshot = "stangning" i ligor dar football-data saknar closing (Div 1, DK2, JP3, HR, CZ ...),
+ * forsta = "oppning". Ledgern raknar CLV mot den och marketTest provar modellen mot den nar matchen spelats.
+ */
+function recordOddsHistory(proByKey) {
+  const doc = fs.existsSync(P.oddsHistory) ? readJson(P.oddsHistory) : { matches: {} };
+  const now = new Date().toISOString();
+  let added = 0;
+  for (const [key, p] of proByKey) {
+    const kick = p.kickoffUtc;
+    if (!p.market?.fair || (kick && kick <= now)) continue; // bara fore avspark
+    const snap = {
+      at: now,
+      odds: p.odds,
+      books: p.oddsBooks,
+      fair: p.market.fair,
+      fairSource: p.market.fairSource,
+      fairSourceOu: p.market.fairSourceOu,
+    };
+    const e = (doc.matches[key] ??= { league: p.league, date: p.date, match: p.match, kickoffUtc: kick ?? null, first: snap, last: snap, snapshots: 0 });
+    e.kickoffUtc = kick ?? e.kickoffUtc;
+    e.last = snap;
+    e.snapshots++;
+    added++;
+  }
+  // Matcher aldre an 400 dagar behovs inte for utvardering
+  const cutoff = new Date(Date.now() - 400 * 86_400_000).toISOString().slice(0, 10);
+  for (const [k, e] of Object.entries(doc.matches)) if (e.date < cutoff) delete doc.matches[k];
+  doc.updatedAt = now;
+  doc.note = 'first = forsta sedda odds, last = senaste fore avspark (proxy for stangning dar closing saknas). Nyckel: datum|liga|hemma|borta.';
+  writeJson(P.oddsHistory, doc);
+  console.log(`Oddshistorik: ${added} matcher uppdaterade (${Object.keys(doc.matches).length} totalt)`);
+}
+
+/**
+ * Slar modellen marknaden? Per liga: Dixon-Coles mot oppningsodds (tidig marknad) och skarp stangning,
+ * samt blandning marknad + modell (vikt vald pa forsta halvan, provad pa andra). w > 0 som slar
+ * marknaden ensam pa andra halvan = modellen har egen information. Ligor utan historiska odds far
+ * rader fran oddshistoriken (egna snapshots) nar deras matcher har spelats.
+ */
+function marketTest(rowsByLeague) {
+  const hist = fs.existsSync(P.oddsHistory) ? readJson(P.oddsHistory).matches ?? {} : {};
+  const idx = { H: 0, D: 1, A: 2 };
+  const ll = (p, r) => -Math.log(Math.max(1e-6, p[idx[r]]));
+  const dv = (o) => devigMultiplicative(o);
+  const W = [0, 0.1, 0.2, 0.3, 0.5];
+  const out = {};
+  for (const [league, rows] of Object.entries(rowsByLeague)) {
+    const list = [];
+    for (const { m, dc, sharpClose } of rows) {
+      if (!idx.hasOwnProperty(m.result)) continue;
+      const h = hist[`${m.date}|${m.league}|${m.home}|${m.away}`];
+      const hf = (s) => (s?.fair?.home != null ? [s.fair.home, s.fair.draw, s.fair.away] : null);
+      const open = dv([m.odds?.pinnacle_home, m.odds?.pinnacle_draw, m.odds?.pinnacle_away])
+        ?? dv([m.odds?.home, m.odds?.draw, m.odds?.away]) ?? hf(h?.first);
+      const close = sharpClose ?? dv([m.closing?.avg_home, m.closing?.avg_draw, m.closing?.avg_away]) ?? hf(h?.last);
+      list.push({ date: m.date, res: m.result, dc: [dc.home, dc.draw, dc.away], open, close, fromHistory: !!h && !sharpClose });
+    }
+    list.sort((a, b) => a.date.localeCompare(b.date));
+    const test = (key) => {
+      const L = list.filter((x) => x[key]);
+      if (L.length < 60) return { n: L.length };
+      const half = Math.floor(L.length / 2);
+      const tr = L.slice(0, half), te = L.slice(half);
+      const mix = (x, w) => x[key].map((v, i) => (1 - w) * v + w * x.dc[i]);
+      const loss = (set, w) => set.reduce((s, x) => s + ll(mix(x, w), x.res), 0) / set.length;
+      let bestW = 0, best = Infinity;
+      for (const w of W) { const l = loss(tr, w); if (l < best) { best = l; bestW = w; } }
+      const mk = loss(te, 0), bl = loss(te, bestW);
+      return {
+        n: L.length,
+        logLossDc: round(L.reduce((s, x) => s + ll(x.dc, x.res), 0) / L.length, 4),
+        logLossMarket: round(L.reduce((s, x) => s + ll(x[key], x.res), 0) / L.length, 4),
+        bestW,
+        testMarket: round(mk, 4),
+        testBlend: round(bl, 4),
+        modelAddsInfo: bestW > 0 && bl < mk - 0.0005,
+      };
+    };
+    out[league] = { vsOpening: test('open'), vsClosing: test('close'), fromOddsHistory: list.filter((x) => x.fromHistory).length };
+  }
+  const beats = Object.entries(out).filter(([, v]) => v.vsOpening.modelAddsInfo || v.vsClosing.modelAddsInfo).map(([k]) => k);
+  console.log(`Marknadstest: modellen tillfor information i ${beats.length ? beats.join(', ') : 'ingen liga'} (${Object.keys(out).length} testade)`);
+  return out;
 }
 
 /**

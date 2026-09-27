@@ -250,6 +250,118 @@ function buildRoundMap(fixtures) {
   return map;
 }
 
+/** Aldre resultat fran football-data "new"-arkiven (data/raw/<LIGA>_all.csv, t.ex. Allsvenskan sedan 2012). */
+function archiveMatches(league) {
+  const rel = `data/raw/${league}_all.csv`;
+  const p = path.join(ROOT, rel);
+  if (!fs.existsSync(p)) return [];
+  const mtime = fs.statSync(p).mtimeMs;
+  const hit = jsonCache.get(rel);
+  if (hit && hit.mtime === mtime) return hit.value;
+  const lines = fs.readFileSync(p, "utf8").replace(/^\uFEFF/, "").trim().split(/\r?\n/);
+  const head = lines[0].split(",");
+  const col = (n) => head.indexOf(n);
+  const [iD, iH, iA, iHG, iAG] = [col("Date"), col("Home"), col("Away"), col("HG"), col("AG")];
+  const value = lines.slice(1).map((l) => {
+    const x = l.split(",");
+    const [dd, mm, yy] = (x[iD] || "").split("/");
+    const hg = Number(x[iHG]), ag = Number(x[iAG]);
+    if (!yy || !Number.isFinite(hg) || !Number.isFinite(ag) || x[iHG] === "") return null;
+    return { date: `${yy.length === 2 ? `20${yy}` : yy}-${mm}-${dd}`, home: x[iH], away: x[iA], hg, ag };
+  }).filter(Boolean);
+  jsonCache.set(rel, { mtime, value });
+  return value;
+}
+
+/**
+ * Lagklick: form denna säsong (hemma eller borta), hur ofta modellen tippat laget och haft rätt,
+ * och inbördes möten mot motståndaren (sviter, t.ex. "inte vunnit på 6 möten").
+ */
+function teamInfo({ league, team, opp, venue }) {
+  const store = readJsonCached("data/betting-store.json");
+  const all = (store?.matches || []).filter((m) => m.league === league && ["H", "D", "A"].includes(m.result));
+  const season = all.reduce((s, m) => (m.season > s ? m.season : s), "");
+  const cur = all.filter((m) => m.season === season).sort((a, b) => a.date.localeCompare(b.date));
+  const res = (m, t) => {
+    const gf = m.home === t ? m.hg : m.ag;
+    const ga = m.home === t ? m.ag : m.hg;
+    return { date: m.date, opp: m.home === t ? m.away : m.home, venue: m.home === t ? "H" : "B", gf, ga, r: gf > ga ? "V" : gf === ga ? "O" : "F" };
+  };
+  const formOf = (list) => {
+    const w = list.filter((x) => x.r === "V").length, d = list.filter((x) => x.r === "O").length, l = list.length - w - d;
+    return {
+      played: list.length, w, d, l,
+      gf: list.reduce((s, x) => s + x.gf, 0), ga: list.reduce((s, x) => s + x.ga, 0),
+      ppg: list.length ? Math.round(((3 * w + d) / list.length) * 100) / 100 : null,
+      last: list.slice(-5).map((x) => ({ r: x.r, opp: x.opp, score: `${x.gf}-${x.ga}`, date: x.date, venue: x.venue })),
+    };
+  };
+  const mine = cur.filter((m) => m.home === team || m.away === team).map((m) => res(m, team));
+  const atVenue = mine.filter((x) => (venue === "away" ? x.venue === "B" : x.venue === "H"));
+
+  // Modellens tips denna säsong (walk-forward-backtesten, kalibrerade sannolikheter)
+  const base = readJsonCached("data/reports/base-backtest.json");
+  const byKey = new Map(cur.map((m) => [`${m.date}|${m.home}|${m.away}`, m]));
+  const tips = { forTeam: { n: 0, hits: 0 }, againstTeam: { n: 0, hits: 0 }, list: [] };
+  for (const r of base?.rows || []) {
+    if (r.league !== league || (r.home !== team && r.away !== team)) continue;
+    const m = byKey.get(`${r.date}|${r.home}|${r.away}`);
+    if (!m) continue;
+    const p = r.cal;
+    const pick = p[0] >= p[1] && p[0] >= p[2] ? "H" : p[2] >= p[1] ? "A" : "D";
+    const teamSide = r.home === team ? "H" : "A";
+    const hit = pick === m.result;
+    const bucket = pick === teamSide ? tips.forTeam : pick === "D" ? null : tips.againstTeam;
+    if (bucket) { bucket.n++; if (hit) bucket.hits++; }
+    tips.list.push({ date: r.date, opp: r.home === team ? r.away : r.home, venue: teamSide === "H" ? "H" : "B", pickTeam: pick === teamSide, hit });
+  }
+  tips.list = tips.list.slice(-6);
+
+  // Inbördes: store + äldre arkiv (samma lagnamn i football-data), senaste först
+  const seen = new Set();
+  const h2hAll = [...all, ...archiveMatches(league)]
+    .filter((m) => (m.home === team && m.away === opp) || (m.home === opp && m.away === team))
+    .filter((m) => { const k = `${m.date}|${m.home}|${m.away}`; if (seen.has(k)) return false; seen.add(k); return true; })
+    .sort((a, b) => b.date.localeCompare(a.date))
+    .map((m) => res(m, team));
+  const streak = (list, pred) => { let n = 0; for (const x of list) { if (pred(x)) n++; else break; } return n; };
+  const lastWin = h2hAll.find((x) => x.r === "V");
+  const lastLoss = h2hAll.find((x) => x.r === "F");
+  const venueList = h2hAll.filter((x) => (venue === "away" ? x.venue === "B" : x.venue === "H"));
+  const h2h = {
+    total: h2hAll.length,
+    since: h2hAll.at(-1)?.date ?? null,
+    w: h2hAll.filter((x) => x.r === "V").length,
+    d: h2hAll.filter((x) => x.r === "O").length,
+    l: h2hAll.filter((x) => x.r === "F").length,
+    noWin: streak(h2hAll, (x) => x.r !== "V"),
+    unbeaten: streak(h2hAll, (x) => x.r !== "F"),
+    noWinAtVenue: streak(venueList, (x) => x.r !== "V"),
+    unbeatenAtVenue: streak(venueList, (x) => x.r !== "F"),
+    lastWin: lastWin ? { date: lastWin.date, score: lastWin.score, venue: lastWin.venue } : null,
+    lastLoss: lastLoss ? { date: lastLoss.date, score: lastLoss.score, venue: lastLoss.venue } : null,
+    recent: h2hAll.slice(0, 6).map((x) => ({ date: x.date, venue: x.venue, score: `${x.gf}-${x.ga}`, r: x.r })),
+  };
+  // Kalenderårsligor (Allsvenskan, MLS ...) lagras som "2026/27" men spelas 2026
+  const calendarYear = readJsonCached("config/leagues.json")?.leagues?.[league]?.calendarYear;
+  const seasonLabel = calendarYear ? season.slice(0, 4) : season;
+  return { league, team, opp, venue, season: seasonLabel, venueForm: formOf(atVenue), form: formOf(mine), tips, h2h };
+}
+
+/** Hur ofta 1 / X / 2 faktiskt hander per liga (alla spelade matcher i store), plus ALL. */
+function outcomesByLeague(store) {
+  const acc = { ALL: { n: 0, H: 0, D: 0, A: 0 } };
+  for (const m of store?.matches || []) {
+    if (!["H", "D", "A"].includes(m.result)) continue;
+    const b = (acc[m.league] ??= { n: 0, H: 0, D: 0, A: 0 });
+    b.n++; b[m.result]++;
+    acc.ALL.n++; acc.ALL[m.result]++;
+  }
+  return Object.fromEntries(
+    Object.entries(acc).map(([lg, b]) => [lg, { matches: b.n, home: b.H / b.n, draw: b.D / b.n, away: b.A / b.n }])
+  );
+}
+
 function buildLineupMap(lineups) {
   const map = new Map();
   for (const fx of lineups?.fixtures || []) {
@@ -299,6 +411,7 @@ function buildDashboard() {
     accuracyByConfidenceByLeague:
       tips?.accuracyByConfidenceByLeague || store?.accuracyByConfidenceByLeague || null,
     drawCalibration: tips?.drawCalibration || null,
+    outcomesByLeague: outcomesByLeague(store),
     leagues,
     leagueNames,
     leagueGroups,
@@ -659,6 +772,16 @@ const server = http.createServer((req, res) => {
       .then((m) => (m ? sendJson(res, 200, m) : sendJson(res, 404, { error: "Matchen finns inte bland kommande tips" })))
       .catch((e) => sendJson(res, 500, { error: String(e.message || e) }));
     return;
+  }
+
+  if (req.method === "GET" && url.pathname === "/api/team") {
+    const q = Object.fromEntries(["league", "team", "opp", "venue"].map((k) => [k, url.searchParams.get(k) || ""]));
+    if (!q.league || !q.team) return sendJson(res, 400, { error: "Saknar league/team" });
+    try {
+      return sendJson(res, 200, teamInfo(q));
+    } catch (e) {
+      return sendJson(res, 500, { error: String(e.message || e) });
+    }
   }
 
   // Per-match elva: Fotmob (bred) + ESPN fallback. Body eller query: league, date, home, away
