@@ -131,6 +131,8 @@ for (const [code, lg] of Object.entries(REG.leagues)) {
     } else if (lg.history === 'tsdb') {
       if (process.env.SKIP_TSDB === '1') tsdbFromCache(code, r);
       else await tsdbLeague(code, lg, r);
+    } else if (lg.history === 'fotmob') {
+      await fotmobHistory(code, lg, r);
     } else {
       teamNames[code] = new Set();
     }
@@ -171,6 +173,36 @@ async function espnHistory(code, lg, r) {
   teamNames[code] = new Set(cache.matches.map((m) => m.home).concat(cache.matches.map((m) => m.away)));
   r.historyMatches = cache.matches.length;
   r.daysFetchedNow = fetched;
+}
+
+/**
+ * Fotmob: innevarande + foregaende sasong i tva anrop (ligasidan listar alla matcher med resultat).
+ * Samma filformat som ESPN-historiken (data/raw/ESPN_<LIGA>.json) -> Update-BettingStore laser den utan andringar.
+ */
+async function fotmobHistory(code, lg, r) {
+  const file = path.join(RAW, `ESPN_${code}.json`);
+  const base = `https://www.fotmob.com/api/data/leagues?id=${lg.fotmobId}`;
+  const first = await get(base);
+  const seasons = (first.allAvailableSeasons ?? []).slice(0, 2); // t.ex. ["2026", "2025"] eller ["2026/2027", "2025/2026"]
+  const matches = [];
+  for (const [i, s] of seasons.entries()) {
+    const d = i === 0 ? first : await get(`${base}&season=${encodeURIComponent(s)}`);
+    const season = String(s).replace('/', '-'); // "2026/2027" -> "2026-2027" (Get-SeasonLabel)
+    for (const m of d.fixtures?.allMatches ?? []) {
+      if (!m.status?.finished || m.status?.cancelled || m.status?.awarded) continue;
+      const sc = String(m.status.scoreStr ?? '').match(/(\d+)\s*-\s*(\d+)/);
+      if (!sc) continue;
+      matches.push({
+        id: `fm${m.id}`, date: String(m.status.utcTime).slice(0, 10), season,
+        home: m.home?.name, away: m.away?.name, hg: +sc[1], ag: +sc[2],
+      });
+    }
+    await sleep(400);
+  }
+  matches.sort((a, b) => a.date.localeCompare(b.date));
+  fs.writeFileSync(file, JSON.stringify({ league: code, source: 'fotmob', updatedAt: new Date().toISOString(), matches }), 'utf8');
+  teamNames[code] = new Set(matches.flatMap((m) => [m.home, m.away]));
+  r.historyMatches = matches.length;
 }
 
 /** SKIP_TSDB=1 (t.ex. nar TheSportsDB svarar 429): historik och spelschema fran cachen, inga anrop. */

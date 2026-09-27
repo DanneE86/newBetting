@@ -10,6 +10,7 @@ playwright-report/
 blob-report/
 data/open/*.html
 data/reports/
+logs/
 
 
 # Webbversion (byggs av node scripts/build-static-site.mjs, publiceras av daily.yml)

@@ -77,6 +77,10 @@ jobs:
           set -o pipefail
           node scripts/daily-scanner.mjs | { grep -v '^@@progress' || true; }
 
+      - name: Datagranskning per liga
+        continue-on-error: true
+        run: node scripts/audit-leagues.mjs --quiet
+
       - name: Stryktipset (Svenska Spel)
         continue-on-error: true
         run: node scripts/fetch-stryktipset.mjs

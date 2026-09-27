@@ -37,24 +37,34 @@ if (-not $apiKey) {
 # Gratisnivan har 500 credits/manad. For att spara kvoten hamtas bara ligor med matcher inom
 # $OddsHorizonDays dagar (enligt upcoming-fixtures.json), plus ligor utan eget spelschema (t.ex. Superettan).
 $OddsHorizonDays = 14
+# ODDS_HORIZON_DAYS=2: bara ligor med match inom 2 dagar (lokal hamtning nara matchdag)
+if ($env:ODDS_HORIZON_DAYS) { $OddsHorizonDays = [int]$env:ODDS_HORIZON_DAYS }
 if ($env:ODDS_ALL -eq "1") { $OddsHorizonDays = 3650 } # ODDS_ALL=1: alla ligor oavsett datum
 $registry = ([System.IO.File]::ReadAllText((Join-Path $Root "config/leagues.json"))) | ConvertFrom-Json
 $fixturesPath = Join-Path $Root "data/upcoming-fixtures.json"
-$soonLeagues = @{}
+$soonLeagues = @{} # liga -> antal matcher inom horisonten
 if (Test-Path $fixturesPath) {
-    $limit = (Get-Date).Date.AddDays($OddsHorizonDays)
+    $today = (Get-Date).Date
+    $limit = $today.AddDays($OddsHorizonDays)
     foreach ($f in (([System.IO.File]::ReadAllText($fixturesPath)).TrimStart([char]0xFEFF) | ConvertFrom-Json)) {
-        try { if ([datetime]::Parse($f.date) -le $limit) { $soonLeagues[[string]$f.league] = $true } } catch {}
+        try {
+            $d = [datetime]::Parse($f.date)
+            if ($d -ge $today -and $d -le $limit) { $soonLeagues[[string]$f.league] = 1 + [int]$soonLeagues[[string]$f.league] }
+        } catch {}
     }
 }
 $sports = @()
 foreach ($p in $registry.leagues.PSObject.Properties) {
     $lg = $p.Value
     if (-not $lg.odds) { continue }
-    $noSchedule = ($lg.history -eq "none" -and -not $lg.espn)
-    if ($soonLeagues.ContainsKey($p.Name) -or $noSchedule) { $sports += @{ key = [string]$lg.odds; league = $p.Name } }
+    $noSchedule = ($lg.history -eq "none" -and -not $lg.espn -and -not $lg.fotmobId)
+    if ($soonLeagues.ContainsKey($p.Name) -or $noSchedule) {
+        $sports += @{ key = [string]$lg.odds; league = $p.Name; soon = [int]$soonLeagues[$p.Name] }
+    }
 }
-Write-Host "Odds-ligor denna hamtning: $(($sports | ForEach-Object { $_.league }) -join ', ')"
+# Flest matcher forst: racker budgeten inte hamtas de ligor dar oddsen gor mest nytta
+$sports = @($sports | Sort-Object { -$_.soon })
+Write-Host "Odds-ligor (horisont $OddsHorizonDays d): $(($sports | ForEach-Object { "$($_.league)($($_.soon))" }) -join ', ')"
 
 # Kvotkoll (gratisanrop): racker inte kvoten -> reservkalla (football-data fixtures, Betfair Exchange som facit)
 function Invoke-Fallback([string]$why) {
@@ -65,8 +75,22 @@ function Invoke-Fallback([string]$why) {
 try {
     $probe = Invoke-WebRequest -Uri "https://api.the-odds-api.com/v4/sports/?apiKey=$apiKey" -UseBasicParsing -TimeoutSec 30
     $left = [int]$probe.Headers['x-requests-remaining']
+    # ODDS_BUDGET=auto: fordela kvarvarande krediter jamnt over resten av manaden (kvoten nollstalls manadsvis)
+    if ($env:ODDS_BUDGET -eq "auto") {
+        $now = Get-Date
+        $daysLeft = [DateTime]::DaysInMonth($now.Year, $now.Month) - $now.Day + 1
+        $maxLeagues = [math]::Max(1, [math]::Floor(($left / $daysLeft) / 2))
+        if ($sports.Count -gt $maxLeagues) {
+            Write-Host "Budget: $left krediter / $daysLeft dagar -> max $maxLeagues ligor idag (hoppar over $(($sports | Select-Object -Skip $maxLeagues | ForEach-Object { $_.league }) -join ', '))"
+            $sports = @($sports | Select-Object -First $maxLeagues)
+        }
+    } elseif ($env:ODDS_BUDGET -match '^\d+$') {
+        $maxLeagues = [math]::Max(1, [math]::Floor([int]$env:ODDS_BUDGET / 2))
+        if ($sports.Count -gt $maxLeagues) { $sports = @($sports | Select-Object -First $maxLeagues) }
+    }
     $need = 2 * $sports.Count
     Write-Host "Odds API credits kvar: $left (behover $need)"
+    if ($sports.Count -eq 0) { Write-Host "Inga ligor med match inom horisonten - inget att hamta"; exit 0 }
     if ($left -lt $need) { Invoke-Fallback "kvoten slut ($left kvar)" }
 } catch {
     Invoke-Fallback "nyckel/kvot fel ($($_.Exception.Message))"

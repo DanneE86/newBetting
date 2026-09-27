@@ -73,6 +73,11 @@ export const TEAM_ALIASES = {
   'Real Betis Balompié': 'Betis', 'Real Sociedad de Fútbol': 'Sociedad', 'Lille OSC': 'Lille', '1. FC Köln': 'FC Koln',
   'Borussia Mönchengladbach': "M'gladbach", 'FC Bayern München': 'Bayern Munich', 'SV 07 Elversberg': 'Elversberg',
   'Bolton Wanderers': 'Bolton',
+  // Odds API / OddsPortal -> historikens namn
+  'Atlético Madrid': 'Ath Madrid', 'Atletico Madrid': 'Ath Madrid', 'Espanyol': 'Espanol',
+  'Leicester City': 'Leicester', 'Levadiakos': 'Levadeiakos', 'Volos FC': 'Volos NFC',
+  'Atletico Paranaense': 'Athletico-PR', 'Athletico Paranaense': 'Athletico-PR', 'Atletico Mineiro': 'Atletico-MG',
+  'Aldosivi Mar del Plata': 'Aldosivi', 'Sarmiento de Junin': 'Sarmiento Junin',
 };
 
 // Stad for lag som inte hittas via Wikipedia/Wikidata -> geokodas (vader pa stadsniva racker)
