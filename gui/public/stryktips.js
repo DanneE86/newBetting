@@ -80,12 +80,11 @@ async function load(force = false) {
 function probRow(e) {
   const names = [e.home, "Oavgjort", e.away];
   return `<div class="st-probs">${SIGNS.map((s, i) => {
-    const tip = e.tip === s;
-    const inSys = e.systemPick?.signs.includes(s);
+    const inSys = e.systemPick ? e.systemPick.signs.includes(s) : e.tip === s;
     const hit = e.result?.outcome === s;
     const sv = e.streckvarde?.[i];
-    return `<div class="st-prob${tip ? " tip" : ""}${inSys ? " sys" : ""}${hit ? " hit" : ""}">
-      <div class="st-prob-top"><span class="st-sign">${s}</span><span class="st-team">${esc(names[i])}</span><strong>${pct(e.final[i])}</strong></div>
+    return `<div class="st-prob${inSys ? " tip" : " out"}${hit ? " hit" : ""}">
+      <div class="st-prob-top"><span class="st-sign">${s}</span><span class="st-team">${esc(names[i])}</span>${inSys ? `<span class="st-in" title="Tecknet ingår i systemet">✓ spelas</span>` : ""}<strong>${pct(e.final[i])}</strong></div>
       <div class="st-bar"><span style="width:${Math.round(e.final[i] * 100)}%"></span></div>
       <div class="st-prob-sub">
         <span title="Svenska Spels odds">odds ${dec(e.odds?.[i])}</span>
@@ -94,6 +93,28 @@ function probRow(e) {
       </div>
     </div>`;
   }).join("")}</div>`;
+}
+
+// Svenska Spels egen info: experternas tips, Tio tidningars tips, oddsrörelse sedan start
+function svsRow(e) {
+  const parts = [];
+  if (e.experts?.length) {
+    parts.push(`<span class="st-svs-k">Svenska Spels experter</span>${e.experts.map((x) => {
+      const ok = e.result ? x.signs.includes(e.result.outcome) : null;
+      return `<span class="st-exp${ok === true ? " good" : ok === false ? " bad" : ""}" title="${esc(x.author)}">${esc(x.author.split(" ")[0])} <b>${esc(x.signs.split("").join("+") || "–")}</b></span>`;
+    }).join("")}`);
+  }
+  if (e.tioTidningar) parts.push(`<span class="st-svs-k">Tio tidningar</span><span class="st-exp">1: <b>${e.tioTidningar[0]}</b> · X: <b>${e.tioTidningar[1]}</b> · 2: <b>${e.tioTidningar[2]}</b></span>`);
+  if (e.startOdds && e.odds) {
+    const moves = SIGNS.map((s, i) => ({ s, d: e.odds[i] - e.startOdds[i], from: e.startOdds[i], to: e.odds[i] })).filter((m) => Math.abs(m.d) >= 0.05);
+    if (moves.length) parts.push(`<span class="st-svs-k">Oddsrörelse</span>${moves.map((m) => `<span class="st-exp ${m.d < 0 ? "good" : "bad"}" title="${m.d < 0 ? "Oddset har sjunkit – pengar på tecknet" : "Oddset har stigit"}">${m.s} ${dec(m.from)} → <b>${dec(m.to)}</b></span>`).join("")}`);
+  }
+  return parts.length ? `<div class="st-svs">${parts.join("")}</div>` : "";
+}
+
+function expertTexts(e) {
+  if (!e.experts?.length) return "";
+  return `<div class="st-experts"><h4>Svenska Spels expertanalyser</h4>${e.experts.map((x) => `<div class="st-expert"><p class="st-expert-head"><strong>${esc(x.author)}</strong> tippar <b>${esc(x.signs.split("").join(" + ") || "–")}</b></p><p>${esc(x.text)}</p></div>`).join("")}</div>`;
 }
 
 function verdictChip(e) {
@@ -105,9 +126,8 @@ function verdictChip(e) {
 
 function resultChip(e) {
   if (!e.result) return "";
-  const ok = e.result.outcome === e.tip;
-  const sysOk = e.systemPick?.signs.includes(e.result.outcome);
-  return `<span class="st-chip ${ok ? "good" : sysOk ? "warn" : "bad"}">${ok ? "Rätt" : sysOk ? "Rätt i systemet" : "Fel"} · ${esc(e.result.outcome)} (${esc(e.result.score || "")})</span>`;
+  const ok = e.systemPick ? e.systemPick.signs.includes(e.result.outcome) : e.result.outcome === e.tip;
+  return `<span class="st-chip ${ok ? "good" : "bad"}">${ok ? "Rätt" : "Fel"} · ${esc(e.result.outcome)} (${esc(e.result.score || "")})</span>`;
 }
 
 const BASIS = {
@@ -140,6 +160,7 @@ function analysisPanel(e) {
   const row = (lbl, arr, f = pct) => `<tr><th>${lbl}</th>${SIGNS.map((_, i) => `<td>${arr ? f(arr[i]) : "—"}</td>`).join("")}</tr>`;
   return `<div class="st-analysis">
     <ul class="st-bullets">${(e.analysis || []).map((x) => `<li>${esc(x)}</li>`).join("")}</ul>
+    ${expertTexts(e)}
     <div class="st-grid">
       <table class="st-cmp">
         <thead><tr><th></th><th>1</th><th>X</th><th>2</th></tr></thead>
@@ -177,13 +198,13 @@ function matchCard(p, e) {
         <p><span class="st-kick">${esc(kickoff(e.kickoff))}</span> · ${esc(e.league || "")}</p>
       </div>
       <div class="st-verdict">
-        <span class="st-tip" title="Enkelrad">Tips ${esc(e.tip)}</span>
-        ${sys ? `<span class="st-chip sys" title="Systemförslag">${esc(sys.signs)} · ${esc(sys.type)}</span>` : ""}
+        ${sys ? `<span class="st-tip ${sys.signs.length === 1 ? "spik" : sys.signs.length === 2 ? "halv" : "hel"}" title="Systemförslag">${esc(sys.type)} ${esc(sys.signs.split("").join(" + "))}</span>` : `<span class="st-tip">Tips ${esc(e.tip)}</span>`}
         ${verdictChip(e)}
         ${resultChip(e)}
       </div>
     </header>
     ${probRow(e)}
+    ${svsRow(e)}
     <button type="button" class="st-analyze" aria-expanded="${isOpen}">${isOpen ? "Dölj analys" : `Analysera ${esc(e.home)} vs ${esc(e.away)}`}</button>
     ${isOpen ? analysisPanel(e) : ""}
   </article>`;
@@ -218,13 +239,13 @@ function render() {
     ${data.error ? `<p class="st-note bad">Kunde inte uppdatera: ${esc(data.error)}</p>` : ""}
     <div class="st-stats">
       ${s ? `<div><span class="k">Systemförslag</span><strong>${s.rows} rader</strong><small>chans 13 rätt ${oneIn(s.hitAll)}</small></div>` : ""}
-      ${s ? `<div><span class="k">Enkelrad</span><strong>${p.events.map((e) => e.tip).join("")}</strong><small>chans 13 rätt ${oneIn(s.hitSingle)}</small></div>` : ""}
-      ${p.result ? `<div><span class="k">Facit</span><strong>${p.result.correct}/${p.result.total} rätt</strong><small>systemet ${p.result.systemCorrect}/${p.result.total}</small></div>` : ""}
+      ${p.result ? `<div><span class="k">Facit – systemet fick</span><strong>${p.result.systemCorrect} av ${p.result.total} rätt</strong><small>rätt rad ${p.events.map((e) => e.result?.outcome || "–").join("")}</small></div>` : ""}
+      ${p.result?.experts?.length ? `<div><span class="k">Svenska Spels experter</span><strong>${p.result.experts.map((x) => `${x.correct}/${x.tipped}`).join(" · ")} rätt</strong><small>${p.result.experts.map((x) => esc(x.author)).join(" · ")}</small></div>` : ""}
       ${p.result?.distribution?.[0] ? `<div><span class="k">Utdelning 13 rätt</span><strong>${esc(p.result.distribution[0].amount)} kr</strong><small>${p.result.distribution[0].winners} vinnare</small></div>` : ""}
     </div>
     <details class="st-method"><summary>Hur räknas procenten?</summary>
       <ul>${Object.values(data.method || {}).map((m) => `<li>${esc(m)}</li>`).join("")}</ul>
-      <p>Systemförslaget spikar det troligaste tecknet och lägger gardering där den höjer träffchansen mest per extra rad (max ${s?.maxRows ?? 144} rader).</p>
+      <p>Systemförslaget spikar det troligaste tecknet och lägger gardering där den höjer träffchansen mest per extra rad (max ${s?.maxRows ?? 296} rader).</p>
     </details>
   </div>`;
 
