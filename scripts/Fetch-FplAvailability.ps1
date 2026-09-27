@@ -5,7 +5,7 @@
 #>
 $ErrorActionPreference = "Stop"
 $Root = Split-Path -Parent $PSScriptRoot
-$OpenDir = Join-Path $Root "data\open"
+$OpenDir = Join-Path $Root "data/open"
 New-Item -ItemType Directory -Force -Path $OpenDir | Out-Null
 
 $ua = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) BettingNy/1.0"

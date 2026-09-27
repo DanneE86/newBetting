@@ -11,7 +11,7 @@
 $ErrorActionPreference = "Stop"
 . (Join-Path $PSScriptRoot "lib\Http.ps1")
 $Root = Split-Path -Parent $PSScriptRoot
-$OpenDir = Join-Path $Root "data\open"
+$OpenDir = Join-Path $Root "data/open"
 New-Item -ItemType Directory -Force -Path $OpenDir | Out-Null
 $utf8 = New-Object System.Text.UTF8Encoding $false
 

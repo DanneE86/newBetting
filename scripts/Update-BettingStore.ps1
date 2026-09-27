@@ -19,15 +19,15 @@ if ((Split-Path -Leaf $PSScriptRoot) -eq "scripts") {
     $Root = Split-Path -Parent $PSScriptRoot
 }
 
-$RawDir = Join-Path $Root "data\raw"
-$StorePath = Join-Path $Root "data\betting-store.json"
-$TipsPath = Join-Path $Root "data\tips-latest.json"
-$TipsMdPath = Join-Path $Root "data\tips-latest.md"
+$RawDir = Join-Path $Root "data/raw"
+$StorePath = Join-Path $Root "data/betting-store.json"
+$TipsPath = Join-Path $Root "data/tips-latest.json"
+$TipsMdPath = Join-Path $Root "data/tips-latest.md"
 
 New-Item -ItemType Directory -Force -Path $RawDir | Out-Null
 
 # Ligaregister (config/leagues.json): alla ligakoder + vilka som har football-data "new"-format
-$Registry = ([System.IO.File]::ReadAllText((Join-Path $Root "config\leagues.json"))) | ConvertFrom-Json
+$Registry = ([System.IO.File]::ReadAllText((Join-Path $Root "config/leagues.json"))) | ConvertFrom-Json
 $AllLeagues = @($Registry.leagues.PSObject.Properties | ForEach-Object { $_.Name })
 $FdNewLeagues = @($Registry.leagues.PSObject.Properties | Where-Object { $_.Value.history -eq "fd-new" } | ForEach-Object { $_.Name })
 
@@ -535,8 +535,8 @@ $teamsOut = $teamsOut.ToArray()
 # --- Understat xG merge (EPL only) ---
 $xgByName = @{}
 $xgMeta = [ordered]@{ loaded = $false; season = $null; teams = 0; source = "understat getLeagueData" }
-$xgPath = Join-Path $Root "data\open\understat_EPL_2026_xg.json"
-if (-not (Test-Path $xgPath)) { $xgPath = Join-Path $Root "data\open\understat_EPL_2025_xg.json" }
+$xgPath = Join-Path $Root "data/open/understat_EPL_2026_xg.json"
+if (-not (Test-Path $xgPath)) { $xgPath = Join-Path $Root "data/open/understat_EPL_2025_xg.json" }
 if (Test-Path $xgPath) {
     try {
         $xgDoc = ([System.IO.File]::ReadAllText($xgPath)).TrimStart([char]0xFEFF) | ConvertFrom-Json
@@ -580,7 +580,7 @@ function Get-PlainName([string]$s) {
     $plain = -join ($d.ToCharArray() | Where-Object { [Globalization.CharUnicodeInfo]::GetUnicodeCategory($_) -ne 'NonSpacingMark' })
     return ($plain.ToLowerInvariant() -replace '[^a-z0-9]', '')
 }
-$bdPath = Join-Path $Root "data\open\bolldata_allsvenskan.json"
+$bdPath = Join-Path $Root "data/open/bolldata_allsvenskan.json"
 $bolldataMeta = [ordered]@{ loaded = $false; teams = 0; source = "bolldata.se" }
 if (Test-Path $bdPath) {
     try {
@@ -627,7 +627,7 @@ if (Test-Path $bdPath) {
 # --- FPL availability merge (PL only) ---
 $fplByTeam = @{}
 $fplMeta = [ordered]@{ loaded = $false; keyOuts = 0; teams = 0; source = "FPL bootstrap-static" }
-$fplPath = Join-Path $Root "data\open\fpl_availability.json"
+$fplPath = Join-Path $Root "data/open/fpl_availability.json"
 if (Test-Path $fplPath) {
     try {
         $fplDoc = ([System.IO.File]::ReadAllText($fplPath)).TrimStart([char]0xFEFF) | ConvertFrom-Json
@@ -662,7 +662,7 @@ $teamsOut = $teamsWithAvail.ToArray()
 # --- Player-attack index (fran Understat-spelare per lag) ---
 $playerAttackByKey = @{}  # "PL|Arsenal" -> attack row
 $playerAttackMeta = [ordered]@{ loaded = $false; teams = 0; source = "team_player_attack.json" }
-$paPath = Join-Path $Root "data\open\team_player_attack.json"
+$paPath = Join-Path $Root "data/open/team_player_attack.json"
 # Understat/CSV namnmappning
 $paNameMap = @{
     # England
@@ -764,7 +764,7 @@ $teamsOut = $teamsWithPa.ToArray()
 # --- ClubElo merge (prefer over internal Elo when available) ---
 $clubEloByName = @{}
 $clubEloMeta = [ordered]@{ loaded = $false; teams = 0; source = "clubelo.com/ENG" }
-$clubEloPath = Join-Path $Root "data\open\clubelo_ratings.json"
+$clubEloPath = Join-Path $Root "data/open/clubelo_ratings.json"
 if (Test-Path $clubEloPath) {
     try {
         $ceDoc = ([System.IO.File]::ReadAllText($clubEloPath)).TrimStart([char]0xFEFF) | ConvertFrom-Json
@@ -780,7 +780,7 @@ if (Test-Path $clubEloPath) {
 # --- ESPN lineups (confirmed XI when released) ---
 $lineupByMatch = @{}
 $lineupMeta = [ordered]@{ loaded = $false; fixtures = 0; confirmed = 0; source = "espn site.web.api" }
-$lineupPath = Join-Path $Root "data\open\espn_lineups.json"
+$lineupPath = Join-Path $Root "data/open/espn_lineups.json"
 if (Test-Path $lineupPath) {
     try {
         $luDoc = ([System.IO.File]::ReadAllText($lineupPath)).TrimStart([char]0xFEFF) | ConvertFrom-Json
@@ -1452,7 +1452,7 @@ $edgeBoards = [ordered]@{
 }
 
 # Upcoming odds (optional THE_ODDS_API_KEY)
-$oddsPath = Join-Path $Root "data\open\upcoming_odds.json"
+$oddsPath = Join-Path $Root "data/open/upcoming_odds.json"
 $oddsByMatch = @{}
 $oddsMeta = [ordered]@{ loaded = $false; eventCount = 0; source = $null }
 if (Test-Path $oddsPath) {
@@ -1488,7 +1488,7 @@ function Test-EdgeFilter($sc, $valueEdge) {
 }
 
 # Upcoming: load optional file
-$upcomingPath = Join-Path $Root "data\upcoming-fixtures.json"
+$upcomingPath = Join-Path $Root "data/upcoming-fixtures.json"
 $upcomingTips = @()
 $filteredTips = @()
 $horizonDays = 21

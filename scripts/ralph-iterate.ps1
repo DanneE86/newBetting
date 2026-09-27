@@ -31,15 +31,15 @@ for ($i = 1; $i -le $MaxIterations; $i++) {
         Invoke-Step "fetch" { powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\Fetch-OpenSources.ps1 }
         Invoke-Step "store" { powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\Update-BettingStore.ps1 -SkipDownload }
 
-        $store = Read-JsonFile .\data\betting-store.json
-        $tips = Read-JsonFile .\data\tips-latest.json
+        $store = Read-JsonFile ./data/betting-store.json
+        $tips = Read-JsonFile ./data/tips-latest.json
         $reportOk = $false
-        if (Test-Path .\data\open\fetch-report.json) {
-            $rep = Read-JsonFile .\data\open\fetch-report.json
+        if (Test-Path ./data/open/fetch-report.json) {
+            $rep = Read-JsonFile ./data/open/fetch-report.json
             $reportOk = (@($rep.sources | Where-Object { $_.ok }).Count -ge 4)
         }
-        $xgOk = Test-Path .\data\open\understat_EPL_2026_xg.json
-        $fplOk = Test-Path .\data\open\fpl_availability.json
+        $xgOk = Test-Path ./data/open/understat_EPL_2026_xg.json
+        $fplOk = Test-Path ./data/open/fpl_availability.json
         $plXg = @($store.teams | Where-Object { $_.league -eq "PL" -and $_.xg }).Count
         $plAvail = @($store.teams | Where-Object { $_.league -eq "PL" -and $_.availability }).Count
 

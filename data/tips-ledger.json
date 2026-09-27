@@ -1,9 +1,9 @@
 {
-    "updatedAt":  "2026-09-27T12:41:44.7689645+02:00",
-    "addedThisRun":  0,
+    "updatedAt":  "2026-09-27T12:49:09.7009585+02:00",
+    "addedThisRun":  2,
     "settledThisRun":  0,
-    "entryCount":  263,
-    "openCount":  263,
+    "entryCount":  265,
+    "openCount":  265,
     "settledCount":  0,
     "liveHitRates":  {
                          "1X2":  {
@@ -11926,6 +11926,114 @@
 
                                               ],
                         "createdAt":  "2026-09-27T11:33:15.9027383+02:00",
+                        "settled":  false,
+                        "actual":  null,
+                        "hit":  null
+                    },
+                    {
+                        "id":  "2026-10-12|LL2|Burgos vs Granada",
+                        "date":  "2026-10-12",
+                        "league":  "LL2",
+                        "match":  "Burgos vs Granada",
+                        "tipScore":  0.58,
+                        "tips":  {
+                                     "CORNERS":  {
+                                                     "confidence":  0.665,
+                                                     "lambdaHome":  3.33,
+                                                     "pOver":  0.335,
+                                                     "lambdaAway":  4.75,
+                                                     "line":  9.5,
+                                                     "expCorners":  8.41,
+                                                     "pick":  "UNDER 9.5"
+                                                 },
+                                     "OU25":  {
+                                                  "confidence":  0.579,
+                                                  "usedPlayerAttack":  false,
+                                                  "expGoals":  2.7,
+                                                  "pOver":  0.579,
+                                                  "usedXg":  true,
+                                                  "pick":  "OVER 2.5"
+                                              },
+                                     "1X2":  {
+                                                 "pick":  "1",
+                                                 "confidence":  0.529,
+                                                 "probs":  {
+                                                               "away":  0.264,
+                                                               "draw":  0.207,
+                                                               "home":  0.529
+                                                           }
+                                             },
+                                     "BTTS":  {
+                                                  "pick":  "JA",
+                                                  "confidence":  0.547,
+                                                  "pYes":  0.547
+                                              }
+                                 },
+                        "value":  null,
+                        "edge":  null,
+                        "oddsTaken":  null,
+                        "bookmaker":  null,
+                        "proValueBets":  {
+
+                                         },
+                        "availabilityNotes":  [
+
+                                              ],
+                        "createdAt":  "2026-09-27T12:49:09.5083275+02:00",
+                        "settled":  false,
+                        "actual":  null,
+                        "hit":  null
+                    },
+                    {
+                        "id":  "2026-10-18|LL2|Girona vs Andorra",
+                        "date":  "2026-10-18",
+                        "league":  "LL2",
+                        "match":  "Girona vs Andorra",
+                        "tipScore":  0.586,
+                        "tips":  {
+                                     "CORNERS":  {
+                                                     "confidence":  0.727,
+                                                     "lambdaHome":  4.33,
+                                                     "pOver":  0.273,
+                                                     "lambdaAway":  4,
+                                                     "line":  9.5,
+                                                     "expCorners":  8.6,
+                                                     "pick":  "UNDER 9.5"
+                                                 },
+                                     "OU25":  {
+                                                  "confidence":  0.531,
+                                                  "usedPlayerAttack":  false,
+                                                  "expGoals":  2.88,
+                                                  "pOver":  0.531,
+                                                  "usedXg":  true,
+                                                  "pick":  "OVER 2.5"
+                                              },
+                                     "1X2":  {
+                                                 "pick":  "1",
+                                                 "confidence":  0.483,
+                                                 "probs":  {
+                                                               "away":  0.281,
+                                                               "draw":  0.236,
+                                                               "home":  0.483
+                                                           }
+                                             },
+                                     "BTTS":  {
+                                                  "pick":  "JA",
+                                                  "confidence":  0.602,
+                                                  "pYes":  0.602
+                                              }
+                                 },
+                        "value":  null,
+                        "edge":  null,
+                        "oddsTaken":  null,
+                        "bookmaker":  null,
+                        "proValueBets":  {
+
+                                         },
+                        "availabilityNotes":  [
+
+                                              ],
+                        "createdAt":  "2026-09-27T12:49:09.5113278+02:00",
                         "settled":  false,
                         "actual":  null,
                         "hit":  null

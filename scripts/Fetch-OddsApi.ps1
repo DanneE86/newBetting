@@ -6,7 +6,7 @@
 $ErrorActionPreference = "Stop"
 . (Join-Path $PSScriptRoot "lib\Http.ps1")
 $Root = Split-Path -Parent $PSScriptRoot
-$OpenDir = Join-Path $Root "data\open"
+$OpenDir = Join-Path $Root "data/open"
 New-Item -ItemType Directory -Force -Path $OpenDir | Out-Null
 
 # load .env
@@ -38,8 +38,8 @@ if (-not $apiKey) {
 # $OddsHorizonDays dagar (enligt upcoming-fixtures.json), plus ligor utan eget spelschema (t.ex. Superettan).
 $OddsHorizonDays = 14
 if ($env:ODDS_ALL -eq "1") { $OddsHorizonDays = 3650 } # ODDS_ALL=1: alla ligor oavsett datum
-$registry = ([System.IO.File]::ReadAllText((Join-Path $Root "config\leagues.json"))) | ConvertFrom-Json
-$fixturesPath = Join-Path $Root "data\upcoming-fixtures.json"
+$registry = ([System.IO.File]::ReadAllText((Join-Path $Root "config/leagues.json"))) | ConvertFrom-Json
+$fixturesPath = Join-Path $Root "data/upcoming-fixtures.json"
 $soonLeagues = @{}
 if (Test-Path $fixturesPath) {
     $limit = (Get-Date).Date.AddDays($OddsHorizonDays)
