@@ -874,6 +874,31 @@ foreach ($g in ($sorted | Where-Object { $_.season -in @("2025/26", "2026/27") }
 $defaultPrior = @{ btts = 0.52; over25 = 0.50; homeWin = 0.44; awayWin = 0.30; goals = 2.7 }
 $ShrinkK = 8.0
 
+# --- Kryss-kalibrering ---
+# Modellens krysschans diskriminerar knappt (backtest: 19 % och 24 % forutsagt gav bada ~26 % kryss) och ligger
+# for lagt. Den blandas mot ligans kryssandel, krympt mot 26 % (DrawShrinkN matcher) sa att sma ligor inte styr.
+# DrawW = vikt pa modellen; valjs pa forsta halvan av backtesten och behalls bara om den slar okalibrerat pa andra.
+$DrawGlobal = 0.26
+$DrawShrinkN = 150.0
+$script:DrawW = $null
+function Get-DrawRate($c) {
+    if (-not $c) { return $DrawGlobal }
+    return ([double]$c.d + $DrawGlobal * $DrawShrinkN) / ([double]$c.n + $DrawShrinkN)
+}
+function Apply-DrawCal([double]$pH, [double]$pD, [double]$pA, [double]$dr, [double]$w) {
+    $nd = $w * $pD + (1 - $w) * $dr
+    $ha = $pH + $pA
+    if ($ha -le 0) { return @($pH, $pD, $pA) }
+    $k = (1 - $nd) / $ha
+    return @(($pH * $k), $nd, ($pA * $k))
+}
+# Punkt-i-tid: foregaende sasong + innevarande fram till matchen (backtest), hela (live)
+$drawCounts = @{}
+foreach ($r in ($sorted | Where-Object { $_.season -eq "2025/26" })) {
+    if (-not $drawCounts.ContainsKey($r.league)) { $drawCounts[$r.league] = @{ n = 0; d = 0 } }
+    $drawCounts[$r.league].n++; if ($r.result -eq "D") { $drawCounts[$r.league].d++ }
+}
+
 function Shrink([double]$rate, $played, [double]$prior) {
     $n = 0.0
     try { $n = [math]::Max(0.0, [double]$played) } catch { $n = 0.0 }
@@ -887,7 +912,7 @@ function Get-POver25([double]$lambda) {
     return 1.0 - $e * (1.0 + $lambda + $lambda * $lambda / 2.0)
 }
 
-function Score-Fixture($homeStats, $awayStats, $lineup = $null) {
+function Score-Fixture($homeStats, $awayStats, $lineup = $null, $drawRate = $null) {
     $pr = $defaultPrior
     $lg = [string]$homeStats.league
     if ($lg -and $leaguePrior.ContainsKey($lg)) { $pr = $leaguePrior[$lg] }
@@ -975,6 +1000,13 @@ function Score-Fixture($homeStats, $awayStats, $lineup = $null) {
         }
         $sum = $pHome + $pAway + $pDraw
         if ($sum -gt 0) { $pHome /= $sum; $pAway /= $sum; $pDraw /= $sum }
+    }
+
+    # Kryss-kalibrering fore preAvail, sa att aven pro-lagrets blandning far den
+    if ($null -ne $script:DrawW -and $null -ne $drawRate) {
+        $s0 = $pHome + $pAway + $pDraw
+        $cal = Apply-DrawCal ($pHome / $s0) ($pDraw / $s0) ($pAway / $s0) ([double]$drawRate) $script:DrawW
+        $pHome = $cal[0]; $pDraw = $cal[1]; $pAway = $cal[2]
     }
 
     # Sannolikheter fore den platta franvarojusteringen - pro-lagret anvander dessa och viktar
@@ -1251,6 +1283,8 @@ foreach ($m in $byLeagueCurrent) {
             date = $m.date
             league = $m.league
             match = "$($m.home) vs $($m.away)"
+            home = $m.home; away = $m.away
+            drawRate = (Get-DrawRate $drawCounts[$m.league])
             tips = $score.markets
             tipScore = $score.tipScore
             actual = @{ "1X2" = $actual1; BTTS = $actualB; OU25 = $actualO }
@@ -1262,6 +1296,8 @@ foreach ($m in $byLeagueCurrent) {
         }) | Out-Null
     }
     # update rolling after tip
+    if (-not $drawCounts.ContainsKey($m.league)) { $drawCounts[$m.league] = @{ n = 0; d = 0 } }
+    $drawCounts[$m.league].n++; if ($m.result -eq "D") { $drawCounts[$m.league].d++ }
     $hNode.all.played++; $hNode.all.gf += $m.hg; $hNode.all.ga += $m.ag
     if ($m.result -eq "H") { $hNode.all.wins++ } elseif ($m.result -eq "D") { $hNode.all.draws++ }
     if ($m.btts) { $hNode.all.btts++ }; if ($m.over25) { $hNode.all.over25++ }
@@ -1275,6 +1311,88 @@ foreach ($m in $byLeagueCurrent) {
     $aNode.away.played++; $aNode.away.gf += $m.ag; $aNode.away.ga += $m.hg
     if ($m.result -eq "A") { $aNode.away.wins++ }
     if ($m.btts) { $aNode.away.btts++ }; if ($m.over25) { $aNode.away.over25++ }
+}
+
+# --- Kryss-kalibrering: valj vikt pa forsta halvan (datum), prova pa andra halvan ---
+function Get-Raw1x2($b) {
+    $p = $b.tips."1X2".probs
+    $s = [double]$p.home + [double]$p.draw + [double]$p.away
+    return @(([double]$p.home / $s), ([double]$p.draw / $s), ([double]$p.away / $s))
+}
+function Get-LogLoss($pr, [string]$act) {
+    $p = if ($act -eq "1") { $pr[0] } elseif ($act -eq "X") { $pr[1] } else { $pr[2] }
+    return -[math]::Log([math]::Max(1e-6, [double]$p))
+}
+$btSorted = @($backtest | Where-Object { $_.tips."1X2".probs } | Sort-Object date)
+$drawCalMeta = [ordered]@{ kept = $false; w = $null; reason = "for fa matcher" }
+if ($btSorted.Count -ge 400) {
+    $half = [int][math]::Floor($btSorted.Count / 2)
+    $trainBt = $btSorted[0..($half - 1)]
+    $testBt = $btSorted[$half..($btSorted.Count - 1)]
+    $bestW = 1.0; $bestLoss = [double]::MaxValue
+    foreach ($w in @(0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0)) {
+        $sumL = 0.0
+        foreach ($b in $trainBt) {
+            $raw = Get-Raw1x2 $b
+            $sumL += Get-LogLoss (Apply-DrawCal $raw[0] $raw[1] $raw[2] ([double]$b.drawRate) $w) $b.actual["1X2"]
+        }
+        $l = $sumL / $trainBt.Count
+        if ($l -lt $bestLoss) { $bestLoss = $l; $bestW = $w }
+    }
+    $diffs = New-Object double[] $testBt.Count
+    $sumRaw = 0.0; $sumCal = 0.0
+    for ($i = 0; $i -lt $testBt.Count; $i++) {
+        $b = $testBt[$i]
+        $raw = Get-Raw1x2 $b
+        $lr = Get-LogLoss $raw $b.actual["1X2"]
+        $lc = Get-LogLoss (Apply-DrawCal $raw[0] $raw[1] $raw[2] ([double]$b.drawRate) $bestW) $b.actual["1X2"]
+        $sumRaw += $lr; $sumCal += $lc; $diffs[$i] = $lc - $lr
+    }
+    # Parvis bootstrap: andel omsamplingar dar kalibrerat har lagre log-loss
+    $rng = New-Object System.Random 42
+    $better = 0; $B = 300; $nT = $diffs.Length
+    for ($r = 0; $r -lt $B; $r++) {
+        $s = 0.0
+        for ($j = 0; $j -lt $nT; $j++) { $s += $diffs[$rng.Next($nT)] }
+        if ($s -lt 0) { $better++ }
+    }
+    $share = $better / $B
+    $kept = ($bestW -lt 1.0 -and $sumCal -lt $sumRaw -and $share -ge 0.9)
+    $drawCalMeta = [ordered]@{
+        kept = $kept; w = $bestW; trainMatches = $trainBt.Count; testMatches = $testBt.Count
+        trainLogLoss = [math]::Round($bestLoss, 4)
+        testLogLossRaw = [math]::Round($sumRaw / $testBt.Count, 4)
+        testLogLossCal = [math]::Round($sumCal / $testBt.Count, 4)
+        bootstrapBetterShare = [math]::Round($share, 3)
+        shrinkN = $DrawShrinkN; globalDraw = $DrawGlobal
+        reason = if ($kept) { "battre log-loss pa andra halvan" } elseif ($bestW -ge 1.0) { "okalibrerat bast redan pa forsta halvan" } else { "forbattringen inte saker (bootstrap < 90 %)" }
+    }
+    Write-Host ("Kryss-kalibrering: w={0} test log-loss {1} -> {2} (bootstrap {3}) behallen={4}" -f $bestW, $drawCalMeta.testLogLossRaw, $drawCalMeta.testLogLossCal, $share, $kept)
+    # Grundmodellens backtest (fore/efter) -> pro-lagret kontrollerar att aven blandningen med Dixon-Coles blir battre
+    $reportDir = Join-Path $Root "data\reports"
+    New-Item -ItemType Directory -Force -Path $reportDir | Out-Null
+    $baseRows = foreach ($b in $btSorted) {
+        $raw = Get-Raw1x2 $b
+        $cal = Apply-DrawCal $raw[0] $raw[1] $raw[2] ([double]$b.drawRate) $bestW
+        [ordered]@{ league = $b.league; date = $b.date; home = $b.home; away = $b.away
+            raw = @([math]::Round($raw[0], 4), [math]::Round($raw[1], 4), [math]::Round($raw[2], 4))
+            cal = @([math]::Round($cal[0], 4), [math]::Round($cal[1], 4), [math]::Round($cal[2], 4)) }
+    }
+    [System.IO.File]::WriteAllText((Join-Path $reportDir "base-backtest.json"), (@{ w = $bestW; rows = @($baseRows) } | ConvertTo-Json -Depth 5 -Compress), (New-Object System.Text.UTF8Encoding $false))
+    if ($kept) {
+        $script:DrawW = $bestW
+        # Samma transform pa backtesten sa att chansband och traff speglar det som visas live
+        foreach ($b in $backtest) {
+            if (-not $b.tips."1X2".probs) { continue }
+            $raw = Get-Raw1x2 $b
+            $b.rawDraw = [math]::Round($raw[1], 4)
+            $c = Apply-DrawCal $raw[0] $raw[1] $raw[2] ([double]$b.drawRate) $bestW
+            $pk = "1"; $cf = $c[0]
+            if ($c[1] -ge $c[0] -and $c[1] -ge $c[2]) { $pk = "X"; $cf = $c[1] } elseif ($c[2] -ge $c[0]) { $pk = "2"; $cf = $c[2] }
+            $b.tips."1X2" = @{ pick = $pk; confidence = [math]::Round($cf, 3); probs = @{ home = [math]::Round($c[0], 3); draw = [math]::Round($c[1], 3); away = [math]::Round($c[2], 3) } }
+            $b.hit["1X2"] = ($pk -eq $b.actual["1X2"])
+        }
+    }
 }
 
 $hits = @{
@@ -1298,6 +1416,47 @@ foreach ($b in $backtest) {
     }
 }
 
+# 1X2: hur ofta varje val gar in (tippat 1 / X / 2)
+function New-PickSet { return @{ "1" = @{ n = 0; ok = 0 }; "X" = @{ n = 0; ok = 0 }; "2" = @{ n = 0; ok = 0 } } }
+function Finalize-Picks($raw) {
+    $out = [ordered]@{}
+    foreach ($p in @("1", "X", "2")) { $out[$p] = [ordered]@{ tested = $raw[$p].n; correct = $raw[$p].ok; rate = (Rate $raw[$p].ok $raw[$p].n) } }
+    return $out
+}
+$pickHits = New-PickSet
+$pickHitsByLeague = @{}
+foreach ($lg in $AllLeagues) { $pickHitsByLeague[$lg] = New-PickSet }
+foreach ($b in $backtest) {
+    $p = [string]$b.tips."1X2".pick
+    if (-not $pickHits.ContainsKey($p)) { continue }
+    $ok = [bool]$b.hit["1X2"]
+    $pickHits[$p].n++; if ($ok) { $pickHits[$p].ok++ }
+    $lg = [string]$b.league
+    if ($pickHitsByLeague.ContainsKey($lg)) { $pickHitsByLeague[$lg][$p].n++; if ($ok) { $pickHitsByLeague[$lg][$p].ok++ } }
+}
+
+# Kryss-kalibrering: modellens krysschans mot faktisk andel kryss (per intervall och per liga)
+# Intervallen = modellens okalibrerade krysschans; predicted = det som visas (kalibrerat om det behallits)
+function New-DrawCal { return @{ n = 0; pSum = 0.0; rawSum = 0.0; draws = 0 } }
+$drawBins = [ordered]@{ "<20" = (New-DrawCal); "20-23" = (New-DrawCal); "23-26" = (New-DrawCal); "26-29" = (New-DrawCal); "29+" = (New-DrawCal) }
+$drawByLeague = @{}
+foreach ($b in $backtest) {
+    $pd = 0.0
+    try { $pd = [double]$b.tips."1X2".probs.draw } catch { continue }
+    if ($pd -le 0) { continue }
+    $raw = if ($null -ne $b.rawDraw) { [double]$b.rawDraw } else { $pd }
+    $isD = ([string]$b.actual["1X2"] -eq "X")
+    $bin = if ($raw -lt 0.20) { "<20" } elseif ($raw -lt 0.23) { "20-23" } elseif ($raw -lt 0.26) { "23-26" } elseif ($raw -lt 0.29) { "26-29" } else { "29+" }
+    foreach ($c in @($drawBins[$bin])) { $c.n++; $c.pSum += $pd; $c.rawSum += $raw; if ($isD) { $c.draws++ } }
+    $lg = [string]$b.league
+    if (-not $drawByLeague.ContainsKey($lg)) { $drawByLeague[$lg] = New-DrawCal }
+    $drawByLeague[$lg].n++; $drawByLeague[$lg].pSum += $pd; $drawByLeague[$lg].rawSum += $raw; if ($isD) { $drawByLeague[$lg].draws++ }
+}
+function Out-DrawCal($c) { return [ordered]@{ tested = $c.n; predictedRaw = (Rate $c.rawSum $c.n); predicted = (Rate $c.pSum $c.n); actual = (Rate $c.draws $c.n) } }
+$drawCalibration = [ordered]@{ meta = $drawCalMeta; bins = [ordered]@{}; byLeague = [ordered]@{} }
+foreach ($k in $drawBins.Keys) { $drawCalibration.bins[$k] = Out-DrawCal $drawBins[$k] }
+foreach ($lg in ($drawByLeague.Keys | Sort-Object)) { $drawCalibration.byLeague[$lg] = Out-DrawCal $drawByLeague[$lg] }
+
 $accuracy = [ordered]@{}
 foreach ($mkt in @("1X2", "BTTS", "OU25")) {
     $accuracy[$mkt] = @{
@@ -1306,6 +1465,7 @@ foreach ($mkt in @("1X2", "BTTS", "OU25")) {
         rate = (Rate $hits[$mkt].ok $hits[$mkt].n)
     }
 }
+$accuracy["1X2"].byPick = (Finalize-Picks $pickHits)
 $accuracyByLeague = [ordered]@{}
 foreach ($lg in $AllLeagues) {
     $accLg = [ordered]@{}
@@ -1317,6 +1477,7 @@ foreach ($lg in $AllLeagues) {
             rate = (Rate $h.ok $h.n)
         }
     }
+    $accLg["1X2"].byPick = (Finalize-Picks $pickHitsByLeague[$lg])
     $accuracyByLeague[$lg] = $accLg
 }
 
@@ -1522,7 +1683,7 @@ if (Test-Path $upcomingPath) {
             if ($matchStatus -match 'FULL_TIME|FINAL|STATUS_FINAL|STATUS_FULL_TIME') { continue }
         }
 
-        $sc = Score-Fixture $ht $at $lu
+        $sc = Score-Fixture $ht $at $lu (Get-DrawRate $drawCounts[[string]$u.league])
 
         $value = $null
         $bestEdge = $null
@@ -1695,6 +1856,7 @@ $tipsDoc = [ordered]@{
     accuracyByLeague = $accuracyByLeague
     accuracyByConfidence = $accuracyByConfidence
     accuracyByConfidenceByLeague = $accuracyByConfidenceByLeague
+    drawCalibration = $drawCalibration
     status = if ($filteredTips.Count -gt 0) { "upcoming_filtered" } elseif ($upcomingTips.Count -gt 0) { "upcoming_no_edge" } else { "no_upcoming" }
     message = if ($filteredTips.Count -gt 0) {
         "Basta tips efter edge-filter (tipScore/confidence/value)."

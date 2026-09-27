@@ -109,6 +109,7 @@ const playerModel = loadPlayerModel(P.usLeague, P.usPlayers, matches);
 // ---------- Utvardering: veckovis refit, point-in-time ----------
 const weatherHistory = fs.existsSync(P.weatherHistory) ? readJson(P.weatherHistory).matches : {};
 const evaluation = evaluate();
+evaluation.drawCalibrationBlend = drawCalibrationBlend(evaluation.rowsByLeague);
 evaluation.weatherEffect = weatherEffect();
 evaluation.playerEffect = playerEffect(evaluation.rowsByLeague);
 delete evaluation.rowsByLeague;
@@ -809,6 +810,40 @@ function evaluate() {
     summary: Object.fromEntries(Object.entries(perLeague).map(([lg, s]) => [lg, s.headline])),
     detail: perLeague,
   };
+}
+
+/**
+ * Kryss-kalibreringen i grundmodellen (Update-BettingStore.ps1) provad i den blandning som faktiskt anvands:
+ * dcWeight x Dixon-Coles + resten grundmodell, okalibrerad mot kalibrerad. Log-loss for 1X2, lagre = battre.
+ */
+function drawCalibrationBlend(rowsByLeague) {
+  const file = path.join(root, 'data', 'reports', 'base-backtest.json');
+  if (!fs.existsSync(file)) return null;
+  const base = readJson(file);
+  const byKey = new Map((base.rows ?? []).map((r) => [`${r.league}|${r.date}|${r.home}|${r.away}`, r]));
+  const idx = { H: 0, D: 1, A: 2 };
+  const ll = (p, res) => -Math.log(Math.max(1e-6, p[idx[res]]));
+  const mix = (dc, b) => {
+    const w = CONFIG.dcWeight;
+    const p = [w * dc.home + (1 - w) * b[0], w * dc.draw + (1 - w) * b[1], w * dc.away + (1 - w) * b[2]];
+    const s = p[0] + p[1] + p[2];
+    return p.map((x) => x / s);
+  };
+  let n = 0, dcL = 0, rawL = 0, calL = 0;
+  for (const rows of Object.values(rowsByLeague)) {
+    for (const { m, dc } of rows) {
+      const b = byKey.get(`${m.league}|${m.date}|${m.home}|${m.away}`);
+      if (!b || !idx.hasOwnProperty(m.result)) continue;
+      n++;
+      dcL += ll([dc.home, dc.draw, dc.away], m.result);
+      rawL += ll(mix(dc, b.raw), m.result);
+      calL += ll(mix(dc, b.cal), m.result);
+    }
+  }
+  if (!n) return null;
+  const out = { matches: n, w: base.w, logLossDc: round(dcL / n, 4), logLossBlendRaw: round(rawL / n, 4), logLossBlendCal: round(calL / n, 4) };
+  console.log(`Kryss-kalibrering i blandningen: n=${n} DC ${out.logLossDc} | blandning okalibrerad ${out.logLossBlendRaw} -> kalibrerad ${out.logLossBlendCal}`);
+  return out;
 }
 
 function summarise(rows) {

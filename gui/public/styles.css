@@ -200,6 +200,21 @@ html, body {
 .acc .val { margin-top: 0.35rem; font-size: 1.65rem; font-weight: 700; color: var(--lime); }
 .acc .sub { color: var(--muted); font-size: 0.78rem; margin-top: 0.2rem; }
 .acc .hint { color: var(--muted); font-size: 0.7rem; margin-top: 0.45rem; opacity: 0.85; }
+.draw-cal { margin-top: 0.9rem; }
+.draw-cal h4 { margin: 0 0 0.3rem; font-size: 0.85rem; }
+.draw-cal-table { width: 100%; border-collapse: collapse; font-size: 0.78rem; margin-top: 0.4rem; }
+.draw-cal-table th, .draw-cal-table td { padding: 0.3rem 0.4rem; border-bottom: 1px solid rgba(255, 255, 255, 0.06); text-align: left; }
+.draw-cal-table .num { text-align: right; }
+.draw-cal-table th { color: var(--muted); font-weight: 600; }
+.acc-picks { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.4rem; margin-top: 0.55rem; }
+.acc-pick {
+  display: flex; flex-direction: column; align-items: flex-start;
+  padding: 0.35rem 0.5rem; border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.06);
+}
+.acc-pick .pk { font-size: 0.7rem; color: var(--muted); font-weight: 600; }
+.acc-pick .pv { font-size: 1rem; font-weight: 700; color: var(--text, #e8ecf4); }
+.acc-pick .pn { font-size: 0.68rem; color: var(--muted); }
 
 .acc-detail {
   margin: 0.75rem 0 0;
