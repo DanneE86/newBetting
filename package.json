@@ -17,6 +17,7 @@
     "tune": "node scripts/tune-league-models.mjs",
     "scan": "node scripts/daily-scanner.mjs",
     "audit": "node scripts/audit-leagues.mjs",
+    "site": "node scripts/build-static-site.mjs && npx -y wrangler@4 pages deploy site --project-name newbetting --branch main --commit-dirty=true",
     "ledger": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Update-TipsLedger.ps1",
     "store": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Update-BettingStore.ps1 -SkipDownload",
     "venues": "node scripts/fetch-venues.mjs",

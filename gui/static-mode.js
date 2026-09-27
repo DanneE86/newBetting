@@ -12,6 +12,11 @@
     if (!analyses) analyses = realFetch("/api/analyze.json").then((r) => (r.ok ? r.json() : {}));
     return analyses;
   };
+  let teams = null;
+  const loadTeams = async () => {
+    if (!teams) teams = realFetch("/api/team.json").then((r) => (r.ok ? r.json() : {}));
+    return teams;
+  };
 
   window.fetch = async (input, init = {}) => {
     const url = new URL(typeof input === "string" ? input : input.url, location.href);
@@ -25,6 +30,11 @@
       const key = [p.get("league"), p.get("date"), p.get("home"), p.get("away")].join("|");
       const hit = (await loadAnalyses())[key];
       return hit ? json(200, hit) : json(404, { error: "Ingen förberäknad analys för matchen" });
+    }
+    if (url.pathname === "/api/team") {
+      const p = url.searchParams;
+      const hit = (await loadTeams())[[p.get("league"), p.get("team"), p.get("opp"), p.get("venue")].join("|")];
+      return hit ? json(200, hit) : json(404, { error: "Ingen förberäknad lagdata för matchen" });
     }
     return realFetch(`${url.pathname}.json`, { cache: "no-store" });
   };
