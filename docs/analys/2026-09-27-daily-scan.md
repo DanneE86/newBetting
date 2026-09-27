@@ -1,6 +1,6 @@
 # Daily Scanner — 2026-09-27
 
-Körd 2026-09-27T10:41:45.971Z · data från 2026-09-27T12:40:52.1321549+02:00 · 566 matcher inom 7 dagar
+Körd 2026-09-27T11:49:59.228Z · data från 2026-09-27T13:49:18.7311561+02:00 · 581 matcher inom 7 dagar
 
 ## Kandidater (rankade)
 
@@ -8,11 +8,11 @@ Körd 2026-09-27T10:41:45.971Z · data från 2026-09-27T12:40:52.1321549+02:00 �
 |---|---|---|---|---|
 | 1 | Burgos vs Eldense | LL2 | Elo-diff 208, skarpt facit | 1+4 → 2 → 3 → 5 → 6 |
 | 2 | Oviedo vs Sp Gijon | LL2 | skarpt facit | 1+4 → 2 → 3 → 5 → 6 |
-| 3 | Eibar vs Las Palmas | LL2 | skarpt facit | 1+4 → 2 → 3 → 5 → 6 |
-| 4 | Mallorca vs Almeria | LL2 | skarpt facit | 1+4 → 2 → 3 → 5 → 6 |
-| 5 | Botafogo-SP vs Ponte Preta | BR2 | tipScore 76 % | 1+4 → 2 → 3 → 5 → 6 |
+| 3 | Mallorca vs Almeria | LL2 | skarpt facit | 1+4 → 2 → 3 → 5 → 6 |
+| 4 | Eibar vs Las Palmas | LL2 | skarpt facit | 1+4 → 2 → 3 → 5 → 6 |
+| 5 | Valladolid vs Cordoba | LL2 | skarpt facit | 1+4 → 2 → 3 → 5 → 6 |
 | 6 | Leganes vs Castellon | LL2 | skarpt facit | 1+4 → 2 → 3 → 5 → 6 |
-| 7 | Valladolid vs Cordoba | LL2 | skarpt facit | 1+4 → 2 → 3 → 5 → 6 |
+| 7 | Criciúma vs Avaí | BR2 | — | 1+4 → 2 → 3 → 5 → 6 |
 
 ## Sammanfattning Head Agent
 
@@ -20,11 +20,11 @@ Körd 2026-09-27T10:41:45.971Z · data från 2026-09-27T12:40:52.1321549+02:00 �
 |---|---|---|---|---|
 | Burgos vs Eldense | NO BET | — | — | HIGH |
 | Oviedo vs Sp Gijon | NO BET | — | — | HIGH |
-| Eibar vs Las Palmas | NO BET | — | — | HIGH |
 | Mallorca vs Almeria | NO BET | — | — | HIGH |
-| Botafogo-SP vs Ponte Preta | NO BET | — | — | HIGH |
-| Leganes vs Castellon | NO BET | — | — | HIGH |
+| Eibar vs Las Palmas | NO BET | — | — | HIGH |
 | Valladolid vs Cordoba | NO BET | — | — | HIGH |
+| Leganes vs Castellon | NO BET | — | — | HIGH |
+| Criciúma vs Avaí | NO BET | — | — | HIGH |
 
 ---
 
@@ -104,44 +104,6 @@ Facit: betfair-exchange · 3 bolag
 
 ---
 
-# Analys: Eibar vs Las Palmas (LL2, 2026-09-27)
-
-## Dom
-- Rekommendation: **NO BET**
-- Confidence: HIGH
-
-## Modell (Agent 2)
-- Proj. mål: H 1.23 – A 0.87 (tot 2.1)
-- 1X2: 46 % / 24 % / 30 % (fair 2.17 / 4.21 / 3.31)
-- Ö2.5 42 % (fair 2.36) · BTTS 45 % (fair 2.24)
-
-## Marknad (Agent 3)
-Facit: betfair-exchange · 3 bolag
-
-| Marknad | Modell p | Marknad p | Bästa odds | EV | Värde |
-|---|---|---|---|---|---|
-| 1 | 46 % | 49 % | 1.98 (Marknadens basta (football-data)) | -3 % | Ej värde |
-| X | 24 % | 28 % | 3.4 (Marknadens basta (football-data)) | -4 % | Ej värde |
-| 2 | 30 % | 23 % | 4.2 (Marknadens basta (football-data)) | -3 % | Ej värde |
-| Över 2.5 | 42 % | 49 % | 1.98 (Marknadens basta (football-data)) | -4 % | Ej värde |
-| Under 2.5 | 58 % | 51 % | 1.87 (Marknadens basta (football-data)) | -4 % | Ej värde |
-
-## Devil's Advocate (Agent 5)
-- Ingen marknad når värdegränsen (EV ≥ 3 %) – oddset är effektivt prissatt.
-- (skört) Elvor inte släppta – rotation/skador kan ändra caset
-- Residual: **Dead**
-
-## Varför
-- Ingen marknad med värde vid dagens odds.
-
-## Vad som skulle ändra beslutet
-- bekräftad elva utan nyckelspelare
-
-## Datakvalitet (Agent 1)
-- ClubElo saknas (intern Elo)
-
----
-
 # Analys: Mallorca vs Almeria (LL2, 2026-09-27)
 
 ## Dom
@@ -180,29 +142,68 @@ Facit: betfair-exchange · 3 bolag
 
 ---
 
-# Analys: Botafogo-SP vs Ponte Preta (BR2, 2026-09-29)
+# Analys: Eibar vs Las Palmas (LL2, 2026-09-27)
 
 ## Dom
 - Rekommendation: **NO BET**
 - Confidence: HIGH
 
 ## Modell (Agent 2)
-- Proj. mål: H 2.13 – A 0.58 (tot 2.71)
-- 1X2: 75 % / 17 % / 8 % (fair 1.34 / 6 / 11.85)
-- Ö2.5 51 % (fair 1.97) · BTTS 39 % (fair 2.58)
+- Proj. mål: H 1.23 – A 0.87 (tot 2.1)
+- 1X2: 46 % / 24 % / 30 % (fair 2.17 / 4.21 / 3.31)
+- Ö2.5 42 % (fair 2.36) · BTTS 45 % (fair 2.24)
 
 ## Marknad (Agent 3)
-Facit: OddsPortal-snitt · 1 bolag
+Facit: betfair-exchange · 3 bolag
 
 | Marknad | Modell p | Marknad p | Bästa odds | EV | Värde |
 |---|---|---|---|---|---|
-| 1 | 75 % | 76 % | 1.21 (OddsPortal (snitt)) | -8 % | Ej värde |
-| X | 17 % | 15 % | 6 (OddsPortal (snitt)) | -8 % | Ej värde |
-| 2 | 8 % | 8 % | 11.33 (OddsPortal (snitt)) | -8 % | Ej värde |
+| 1 | 46 % | 49 % | 1.98 (Marknadens basta (football-data)) | -3 % | Ej värde |
+| X | 24 % | 28 % | 3.4 (Marknadens basta (football-data)) | -4 % | Ej värde |
+| 2 | 30 % | 23 % | 4.2 (Marknadens basta (football-data)) | -3 % | Ej värde |
+| Över 2.5 | 42 % | 49 % | 1.98 (Marknadens basta (football-data)) | -4 % | Ej värde |
+| Under 2.5 | 58 % | 51 % | 1.87 (Marknadens basta (football-data)) | -4 % | Ej värde |
 
 ## Devil's Advocate (Agent 5)
-- Bara OddsPortal-snitt – samma odds är både facit och pris, så EV visar bara bolagens marginal. Leta odds över "från"-gränsen hos ditt bolag.
-- Facit är OddsPortal-snitt (inte Pinnacle) – svagare referens.
+- Ingen marknad når värdegränsen (EV ≥ 3 %) – oddset är effektivt prissatt.
+- (skört) Elvor inte släppta – rotation/skador kan ändra caset
+- Residual: **Dead**
+
+## Varför
+- Ingen marknad med värde vid dagens odds.
+
+## Vad som skulle ändra beslutet
+- bekräftad elva utan nyckelspelare
+
+## Datakvalitet (Agent 1)
+- ClubElo saknas (intern Elo)
+
+---
+
+# Analys: Valladolid vs Cordoba (LL2, 2026-09-27)
+
+## Dom
+- Rekommendation: **NO BET**
+- Confidence: HIGH
+
+## Modell (Agent 2)
+- Proj. mål: H 1.28 – A 1.35 (tot 2.63)
+- 1X2: 38 % / 24 % / 37 % (fair 2.61 / 4.11 / 2.67)
+- Ö2.5 49 % (fair 2.03) · BTTS 50 % (fair 2.02)
+
+## Marknad (Agent 3)
+Facit: betfair-exchange · 3 bolag
+
+| Marknad | Modell p | Marknad p | Bästa odds | EV | Värde |
+|---|---|---|---|---|---|
+| 1 | 38 % | 42 % | 2.25 (Marknadens basta (football-data)) | -5 % | Ej värde |
+| X | 24 % | 27 % | 3.5 (Marknadens basta (football-data)) | -5 % | Ej värde |
+| 2 | 37 % | 31 % | 3.1 (Marknadens basta (football-data)) | -5 % | Ej värde |
+| Över 2.5 | 49 % | 53 % | 1.85 (Marknadens basta (football-data)) | -2 % | Ej värde |
+| Under 2.5 | 51 % | 47 % | 1.95 (Marknadens basta (football-data)) | -9 % | Ej värde |
+
+## Devil's Advocate (Agent 5)
+- Ingen marknad når värdegränsen (EV ≥ 3 %) – oddset är effektivt prissatt.
 - (skört) Elvor inte släppta – rotation/skador kan ändra caset
 - Residual: **Dead**
 
@@ -255,30 +256,29 @@ Facit: betfair-exchange · 3 bolag
 
 ---
 
-# Analys: Valladolid vs Cordoba (LL2, 2026-09-27)
+# Analys: Criciúma vs Avaí (BR2, 2026-09-27)
 
 ## Dom
 - Rekommendation: **NO BET**
 - Confidence: HIGH
 
 ## Modell (Agent 2)
-- Proj. mål: H 1.28 – A 1.35 (tot 2.63)
-- 1X2: 38 % / 24 % / 37 % (fair 2.61 / 4.11 / 2.67)
-- Ö2.5 49 % (fair 2.03) · BTTS 50 % (fair 2.02)
+- Proj. mål: H 1.27 – A 0.82 (tot 2.09)
+- 1X2: 49 % / 26 % / 25 % (fair 2.02 / 3.89 / 4.02)
+- Ö2.5 36 % (fair 2.82) · BTTS 42 % (fair 2.39)
 
 ## Marknad (Agent 3)
-Facit: betfair-exchange · 3 bolag
+Facit: OddsPortal-snitt · 1 bolag
 
 | Marknad | Modell p | Marknad p | Bästa odds | EV | Värde |
 |---|---|---|---|---|---|
-| 1 | 38 % | 42 % | 2.25 (Marknadens basta (football-data)) | -5 % | Ej värde |
-| X | 24 % | 27 % | 3.5 (Marknadens basta (football-data)) | -5 % | Ej värde |
-| 2 | 37 % | 31 % | 3.1 (Marknadens basta (football-data)) | -5 % | Ej värde |
-| Över 2.5 | 49 % | 53 % | 1.85 (Marknadens basta (football-data)) | -2 % | Ej värde |
-| Under 2.5 | 51 % | 47 % | 1.95 (Marknadens basta (football-data)) | -9 % | Ej värde |
+| 1 | 49 % | 56 % | 1.64 (OddsPortal (snitt)) | -8 % | Ej värde |
+| X | 26 % | 28 % | 3.3 (OddsPortal (snitt)) | -8 % | Ej värde |
+| 2 | 25 % | 16 % | 5.92 (OddsPortal (snitt)) | -8 % | Ej värde |
 
 ## Devil's Advocate (Agent 5)
-- Ingen marknad når värdegränsen (EV ≥ 3 %) – oddset är effektivt prissatt.
+- Bara OddsPortal-snitt – samma odds är både facit och pris, så EV visar bara bolagens marginal. Leta odds över "från"-gränsen hos ditt bolag.
+- Facit är OddsPortal-snitt (inte Pinnacle) – svagare referens.
 - (skört) Elvor inte släppta – rotation/skador kan ändra caset
 - Residual: **Dead**
 

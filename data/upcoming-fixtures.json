@@ -17618,15 +17618,6 @@
   {
     "date": "2026-09-27",
     "league": "SE3N",
-    "home": "Arlanda",
-    "away": "Enköping",
-    "source": "thesportsdb",
-    "kickoffUtc": "2026-09-27T11:00:00Z",
-    "round": "Omg 24"
-  },
-  {
-    "date": "2026-09-27",
-    "league": "SE3N",
     "home": "Assyriska",
     "away": "Piteå",
     "source": "thesportsdb",
@@ -17866,24 +17857,6 @@
     "source": "thesportsdb",
     "kickoffUtc": "2026-10-18T11:00:00Z",
     "round": "Omg 27"
-  },
-  {
-    "date": "2026-09-27",
-    "league": "SE3S",
-    "home": "Eskilsminne",
-    "away": "AFC Malmö",
-    "source": "thesportsdb",
-    "kickoffUtc": "2026-09-27T11:00:00Z",
-    "round": "Omg 24"
-  },
-  {
-    "date": "2026-09-27",
-    "league": "SE3S",
-    "home": "Trelleborg",
-    "away": "Ängelholm",
-    "source": "thesportsdb",
-    "kickoffUtc": "2026-09-27T11:00:00Z",
-    "round": "Omg 24"
   },
   {
     "date": "2026-10-02",
@@ -19378,6 +19351,186 @@
     "source": "thesportsdb",
     "kickoffUtc": "2026-10-18T11:00:00Z",
     "round": "Omg 11"
+  },
+  {
+    "date": "2026-10-09",
+    "league": "EK",
+    "home": "Wieczysta Krakow",
+    "away": "Wisla Plock",
+    "source": "fotmob",
+    "kickoffUtc": "2026-10-09T16:00:00Z",
+    "round": "Omg 10",
+    "fotmobMatchId": "5804003"
+  },
+  {
+    "date": "2026-10-09",
+    "league": "EK",
+    "home": "Rakow",
+    "away": "GKS Katowice",
+    "source": "fotmob",
+    "kickoffUtc": "2026-10-09T18:30:00Z",
+    "round": "Omg 10",
+    "fotmobMatchId": "5804001"
+  },
+  {
+    "date": "2026-10-10",
+    "league": "EK",
+    "home": "Cracovia",
+    "away": "Zaglebie",
+    "source": "fotmob",
+    "kickoffUtc": "2026-10-10T12:45:00Z",
+    "round": "Omg 10",
+    "fotmobMatchId": "5803995"
+  },
+  {
+    "date": "2026-10-10",
+    "league": "EK",
+    "home": "Slask Wroclaw",
+    "away": "Lech Poznan",
+    "source": "fotmob",
+    "kickoffUtc": "2026-10-10T15:30:00Z",
+    "round": "Omg 10",
+    "fotmobMatchId": "5804002"
+  },
+  {
+    "date": "2026-10-10",
+    "league": "EK",
+    "home": "Jagiellonia",
+    "away": "Gornik Zabrze",
+    "source": "fotmob",
+    "kickoffUtc": "2026-10-10T18:15:00Z",
+    "round": "Omg 10",
+    "fotmobMatchId": "5803996"
+  },
+  {
+    "date": "2026-10-11",
+    "league": "EK",
+    "home": "Piast Gliwice",
+    "away": "Widzew Lodz",
+    "source": "fotmob",
+    "kickoffUtc": "2026-10-11T12:45:00Z",
+    "round": "Omg 10",
+    "fotmobMatchId": "5803998"
+  },
+  {
+    "date": "2026-10-11",
+    "league": "EK",
+    "home": "Pogon Szczecin",
+    "away": "Korona Kielce",
+    "source": "fotmob",
+    "kickoffUtc": "2026-10-11T15:30:00Z",
+    "round": "Omg 10",
+    "fotmobMatchId": "5803999"
+  },
+  {
+    "date": "2026-10-11",
+    "league": "EK",
+    "home": "Legia",
+    "away": "Wisla",
+    "source": "fotmob",
+    "kickoffUtc": "2026-10-11T18:15:00Z",
+    "round": "Omg 10",
+    "fotmobMatchId": "5803997"
+  },
+  {
+    "date": "2026-10-12",
+    "league": "EK",
+    "home": "Radomiak Radom",
+    "away": "Motor Lublin",
+    "source": "fotmob",
+    "kickoffUtc": "2026-10-12T16:00:00Z",
+    "round": "Omg 10",
+    "fotmobMatchId": "5804000"
+  },
+  {
+    "date": "2026-10-12",
+    "league": "EK",
+    "home": "GKS Katowice",
+    "away": "Wieczysta Krakow",
+    "source": "fotmob",
+    "kickoffUtc": "2026-10-12T18:30:00Z",
+    "round": "Omg 3",
+    "fotmobMatchId": "5803932"
+  },
+  {
+    "date": "2026-10-16",
+    "league": "EK",
+    "home": "Wieczysta Krakow",
+    "away": "Rakow",
+    "source": "fotmob",
+    "kickoffUtc": "2026-10-16T16:00:00Z",
+    "round": "Omg 11",
+    "fotmobMatchId": "5804010"
+  },
+  {
+    "date": "2026-10-16",
+    "league": "EK",
+    "home": "Widzew Lodz",
+    "away": "Wisla",
+    "source": "fotmob",
+    "kickoffUtc": "2026-10-16T18:30:00Z",
+    "round": "Omg 11",
+    "fotmobMatchId": "5804009"
+  },
+  {
+    "date": "2026-10-17",
+    "league": "EK",
+    "home": "Motor Lublin",
+    "away": "Slask Wroclaw",
+    "source": "fotmob",
+    "kickoffUtc": "2026-10-17T12:45:00Z",
+    "round": "Omg 11",
+    "fotmobMatchId": "5804008"
+  },
+  {
+    "date": "2026-10-17",
+    "league": "EK",
+    "home": "GKS Katowice",
+    "away": "Pogon Szczecin",
+    "source": "fotmob",
+    "kickoffUtc": "2026-10-17T15:30:00Z",
+    "round": "Omg 11",
+    "fotmobMatchId": "5804005"
+  },
+  {
+    "date": "2026-10-17",
+    "league": "EK",
+    "home": "Cracovia",
+    "away": "Legia",
+    "source": "fotmob",
+    "kickoffUtc": "2026-10-17T18:15:00Z",
+    "round": "Omg 11",
+    "fotmobMatchId": "5804004"
+  },
+  {
+    "date": "2026-10-18",
+    "league": "EK",
+    "home": "Gornik Zabrze",
+    "away": "Piast Gliwice",
+    "source": "fotmob",
+    "kickoffUtc": "2026-10-18T10:15:00Z",
+    "round": "Omg 11",
+    "fotmobMatchId": "5804006"
+  },
+  {
+    "date": "2026-10-18",
+    "league": "EK",
+    "home": "Zaglebie",
+    "away": "Jagiellonia",
+    "source": "fotmob",
+    "kickoffUtc": "2026-10-18T12:45:00Z",
+    "round": "Omg 11",
+    "fotmobMatchId": "5804012"
+  },
+  {
+    "date": "2026-10-18",
+    "league": "EK",
+    "home": "Lech Poznan",
+    "away": "Korona Kielce",
+    "source": "fotmob",
+    "kickoffUtc": "2026-10-18T15:30:00Z",
+    "round": "Omg 11",
+    "fotmobMatchId": "5804007"
   },
   {
     "date": "2026-10-03",
