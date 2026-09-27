@@ -1,9 +1,9 @@
 # Betting-tips (1X2 / BTTS / O-U 2.5)
 
-Uppdaterad: 2026-09-27T15:30:10.4396100+02:00
+Uppdaterad: 2026-09-27T16:12:35.1488493+02:00
 
 ## Modelltraffsakerhet (2026/27, rolling backtest)
-- **1X2:** 46.1% (1932/4192)
+- **1X2:** 46.1% (1933/4192)
 - **BTTS:** 54.9% (2301/4192)
 - **O/U 2.5:** 55.9% (2343/4192)
 
@@ -12,51 +12,51 @@ Basta tips efter edge-filter (tipScore/confidence/value).
 
 ## Basta tips nu (edge-filter)
 
-### Assyriska vs Piteå (SE3N) - score 0.602
-- **1X2:** 1 (conf 0.485)
+### Assyriska vs Piteå (SE3N) - score 0.609
+- **1X2:** 1 (conf 0.505)
 - **BTTS:** JA (p(yes)=0.666)
 - **O/U 2.5:** OVER 2.5 (p(over)=0.656, xG-proxy 3.35)
 - Lineup: none
 
-### Ranheim vs Egersund (NO2) - score 0.62
-- **1X2:** 1 (conf 0.439)
+### Ranheim vs Egersund (NO2) - score 0.621
+- **1X2:** 1 (conf 0.441)
 - **BTTS:** JA (p(yes)=0.699)
 - **O/U 2.5:** OVER 2.5 (p(over)=0.723, xG-proxy 3.84)
 - Lineup: none
 
-### Strømsgodset vs Åsane (NO2) - score 0.601
-- **1X2:** 1 (conf 0.602)
+### Strømsgodset vs Åsane (NO2) - score 0.594
+- **1X2:** 1 (conf 0.581)
 - **BTTS:** JA (p(yes)=0.587)
 - **O/U 2.5:** OVER 2.5 (p(over)=0.614, xG-proxy 3.27)
 - Lineup: none
 
-### Hødd vs Odd (NO2) - score 0.601
-- **1X2:** 1 (conf 0.482)
+### Hødd vs Odd (NO2) - score 0.591
+- **1X2:** 1 (conf 0.454)
 - **BTTS:** JA (p(yes)=0.666)
 - **O/U 2.5:** OVER 2.5 (p(over)=0.654, xG-proxy 3.32)
 - Lineup: none
 
-### Cuiabá vs Ponte Preta (BR2) - score 0.6
-- **1X2:** 1 (conf 0.539)
+### Cuiabá vs Ponte Preta (BR2) - score 0.597
+- **1X2:** 1 (conf 0.529)
 - **BTTS:** NEJ (p(yes)=0.356)
 - **O/U 2.5:** UNDER 2.5 (p(over)=0.383, xG-proxy 1.86)
 - Value edge: 0.1408
 - Lineup: none
 
-### Sp Gijon vs Celta B (LL2) - score 0.62
-- **1X2:** 1 (conf 0.451)
+### Sp Gijon vs Celta B (LL2) - score 0.617
+- **1X2:** 1 (conf 0.436)
 - **BTTS:** NEJ (p(yes)=0.372)
 - **O/U 2.5:** UNDER 2.5 (p(over)=0.336, xG-proxy 1.94)
 - Lineup: none
 
-### Moss vs Kongsvinger (NO2) - score 0.611
-- **1X2:** 2 (conf 0.513)
+### Moss vs Kongsvinger (NO2) - score 0.605
+- **1X2:** 2 (conf 0.494)
 - **BTTS:** JA (p(yes)=0.693)
 - **O/U 2.5:** OVER 2.5 (p(over)=0.627, xG-proxy 3.19)
 - Lineup: none
 
-### Dortmund vs Werder Bremen (BL) - score 0.608
-- **1X2:** 1 (conf 0.647)
+### Dortmund vs Werder Bremen (BL) - score 0.595
+- **1X2:** 1 (conf 0.598)
 - **BTTS:** JA (p(yes)=0.646)
 - **O/U 2.5:** OVER 2.5 (p(over)=0.564, xG-proxy 3.31)
 - Lineup: none
@@ -64,14 +64,14 @@ Basta tips efter edge-filter (tipScore/confidence/value).
 - Players: HOME creators: Julian Ryerson, Serhou Guirassy, Ethan Nwaneri
 - Players: AWAY creators: Chuki, Marco Grüll, Niclas Füllkrug
 
-### Inter Miami vs Columbus Crew (MLS) - score 0.66
-- **1X2:** 1 (conf 0.524)
+### Inter Miami vs Columbus Crew (MLS) - score 0.658
+- **1X2:** 1 (conf 0.518)
 - **BTTS:** JA (p(yes)=0.746)
 - **O/U 2.5:** OVER 2.5 (p(over)=0.709, xG-proxy 3.6)
 - Lineup: none
 
-### Paris SG vs Le Mans (L1) - score 0.606
-- **1X2:** 1 (conf 0.576)
+### Paris SG vs Le Mans (L1) - score 0.604
+- **1X2:** 1 (conf 0.567)
 - **BTTS:** JA (p(yes)=0.654)
 - **O/U 2.5:** OVER 2.5 (p(over)=0.555, xG-proxy 3.15)
 - Lineup: none
@@ -79,66 +79,60 @@ Basta tips efter edge-filter (tipScore/confidence/value).
 - Players: HOME creators: Nuno Mendes, Vitinha, Khvicha Kvaratskhelia
 - Players: AWAY creators: Lucas Calodat, Adil Bourabaa, Louis Mafouta
 
-### Orlando City vs Columbus Crew (MLS) - score 0.602
-- **1X2:** 1 (conf 0.503)
+### Orlando City vs Columbus Crew (MLS) - score 0.597
+- **1X2:** 1 (conf 0.488)
 - **BTTS:** JA (p(yes)=0.674)
 - **O/U 2.5:** OVER 2.5 (p(over)=0.63, xG-proxy 3.1)
 - Lineup: none
 
-### Bodo/Glimt vs Kristiansund (NO) - score 0.598
-- **1X2:** 1 (conf 0.664)
-- **BTTS:** NEJ (p(yes)=0.466)
-- **O/U 2.5:** OVER 2.5 (p(over)=0.597, xG-proxy 3.09)
-- Lineup: none
-
-### Ajax vs Nijmegen (ED) - score 0.597
-- **1X2:** 1 (conf 0.476)
-- **BTTS:** JA (p(yes)=0.655)
-- **O/U 2.5:** OVER 2.5 (p(over)=0.668, xG-proxy 3.66)
-- Lineup: none
-
-### AEK vs OFI Crete (GR) - score 0.594
-- **1X2:** 1 (conf 0.564)
-- **BTTS:** JA (p(yes)=0.532)
-- **O/U 2.5:** OVER 2.5 (p(over)=0.565, xG-proxy 3.1)
-- Lineup: none
-
-### Nurnberg vs Wolfsburg (BL2) - score 0.594
-- **1X2:** 1 (conf 0.501)
-- **BTTS:** JA (p(yes)=0.629)
-- **O/U 2.5:** OVER 2.5 (p(over)=0.594, xG-proxy 3.66)
-- Lineup: none
-
-### Toronto FC vs CF Montreal (MLS) - score 0.592
-- **1X2:** 1 (conf 0.46)
+### Toronto FC vs CF Montreal (MLS) - score 0.596
+- **1X2:** 1 (conf 0.474)
 - **BTTS:** JA (p(yes)=0.655)
 - **O/U 2.5:** OVER 2.5 (p(over)=0.661, xG-proxy 3.51)
 - Lineup: none
 
-### Augsburg vs Bayern Munich (BL) - score 0.688
-- **1X2:** 2 (conf 0.552)
+### Bodo/Glimt vs Kristiansund (NO) - score 0.591
+- **1X2:** 1 (conf 0.642)
+- **BTTS:** NEJ (p(yes)=0.466)
+- **O/U 2.5:** OVER 2.5 (p(over)=0.597, xG-proxy 3.09)
+- Lineup: none
+
+### Ajax vs Nijmegen (ED) - score 0.589
+- **1X2:** 1 (conf 0.443)
+- **BTTS:** JA (p(yes)=0.655)
+- **O/U 2.5:** OVER 2.5 (p(over)=0.668, xG-proxy 3.66)
+- Lineup: none
+
+### Nurnberg vs Wolfsburg (BL2) - score 0.583
+- **1X2:** 1 (conf 0.461)
+- **BTTS:** JA (p(yes)=0.629)
+- **O/U 2.5:** OVER 2.5 (p(over)=0.594, xG-proxy 3.66)
+- Lineup: none
+
+### Augsburg vs Bayern Munich (BL) - score 0.678
+- **1X2:** 2 (conf 0.515)
 - **BTTS:** JA (p(yes)=0.705)
 - **O/U 2.5:** OVER 2.5 (p(over)=0.664, xG-proxy 4.1)
-- Value edge: -0.2883
+- Value edge: -0.3253
 - Lineup: none
 - Players: AttackIndex H=4,05 A=6,23 (shift -0,065)
 - Players: HOME creators: Marius Wolf, Fabian Rieder, Han-Noah Massengo
 - Players: AWAY creators: Alphonso Davies, Joshua Kimmich, Michael Olise
 
-### San Lorenzo vs Dep. Riestra (AR) - score 0.605
-- **1X2:** 1 (conf 0.482)
+### San Lorenzo vs Dep. Riestra (AR) - score 0.598
+- **1X2:** 1 (conf 0.463)
 - **BTTS:** NEJ (p(yes)=0.365)
 - **O/U 2.5:** UNDER 2.5 (p(over)=0.303, xG-proxy 2.08)
 - Lineup: none
 
-### St. Louis City vs Los Angeles Galaxy (MLS) - score 0.603
-- **1X2:** 1 (conf 0.507)
-- **BTTS:** JA (p(yes)=0.682)
-- **O/U 2.5:** OVER 2.5 (p(over)=0.619, xG-proxy 3.1)
+### Iraklis vs Levadeiakos (GR) - score 0.594
+- **1X2:** 1 (conf 0.434)
+- **BTTS:** NEJ (p(yes)=0.324)
+- **O/U 2.5:** UNDER 2.5 (p(over)=0.386, xG-proxy 1.47)
 - Lineup: none
 
-### Sassuolo vs Milan (SA) - score 0.601
-- **1X2:** 1 (conf 0.414)
+### Sassuolo vs Milan (SA) - score 0.593
+- **1X2:** 1 (conf 0.381)
 - **BTTS:** JA (p(yes)=0.681)
 - **O/U 2.5:** OVER 2.5 (p(over)=0.593, xG-proxy 3.3)
 - Lineup: none
@@ -146,26 +140,20 @@ Basta tips efter edge-filter (tipScore/confidence/value).
 - Players: HOME creators: Armand Lauriente, Vasilije Adzic, Nemanja Matic
 - Players: AWAY creators: Samuel Chukwueze, Ruben Loftus-Cheek, Christian Pulisic
 
-### Iraklis vs Levadeiakos (GR) - score 0.596
-- **1X2:** 1 (conf 0.442)
-- **BTTS:** NEJ (p(yes)=0.324)
-- **O/U 2.5:** UNDER 2.5 (p(over)=0.386, xG-proxy 1.47)
+### St. Louis City vs Los Angeles Galaxy (MLS) - score 0.592
+- **1X2:** 1 (conf 0.474)
+- **BTTS:** JA (p(yes)=0.682)
+- **O/U 2.5:** OVER 2.5 (p(over)=0.619, xG-proxy 3.1)
 - Lineup: none
 
-### Benfica vs Guimaraes (PT) - score 0.592
-- **1X2:** 1 (conf 0.604)
+### Benfica vs Guimaraes (PT) - score 0.581
+- **1X2:** 1 (conf 0.562)
 - **BTTS:** JA (p(yes)=0.599)
 - **O/U 2.5:** OVER 2.5 (p(over)=0.586, xG-proxy 3)
 - Lineup: none
 
-### Arouca vs Estrela (PT) - score 0.582
-- **1X2:** 1 (conf 0.507)
-- **BTTS:** JA (p(yes)=0.571)
-- **O/U 2.5:** OVER 2.5 (p(over)=0.601, xG-proxy 2.75)
-- Lineup: none
-
-### FC Koln vs M'gladbach (BL) - score 0.581
-- **1X2:** 1 (conf 0.463)
+### FC Koln vs M'gladbach (BL) - score 0.58
+- **1X2:** 1 (conf 0.462)
 - **BTTS:** JA (p(yes)=0.621)
 - **O/U 2.5:** OVER 2.5 (p(over)=0.589, xG-proxy 3.32)
 - Lineup: none
@@ -173,14 +161,8 @@ Basta tips efter edge-filter (tipScore/confidence/value).
 - Players: HOME creators: Linton Maina, Ísak Bergmann Jóhannesson, Mikey Moore
 - Players: AWAY creators: Franck Honorat, Lukas Ullrich, Hugo Bolin
 
-### Criciúma vs América Mineiro (BR2) - score 0.601
-- **1X2:** 1 (conf 0.562)
-- **BTTS:** NEJ (p(yes)=0.392)
-- **O/U 2.5:** UNDER 2.5 (p(over)=0.368, xG-proxy 1.96)
-- Lineup: none
-
-### Atalanta vs Venezia (SA) - score 0.595
-- **1X2:** 1 (conf 0.511)
+### Atalanta vs Venezia (SA) - score 0.592
+- **1X2:** 1 (conf 0.497)
 - **BTTS:** JA (p(yes)=0.529)
 - **O/U 2.5:** UNDER 2.5 (p(over)=0.464, xG-proxy 2.43)
 - Lineup: none
@@ -188,118 +170,88 @@ Basta tips efter edge-filter (tipScore/confidence/value).
 - Players: HOME creators: Charles De Ketelaere, Lazar Samardzic, Gianluca Scamacca
 - Players: AWAY creators: John Yeboah, Antoine Hainaut, Kike Pérez
 
-### Burgos vs Granada (LL2) - score 0.58
-- **1X2:** 1 (conf 0.529)
-- **BTTS:** JA (p(yes)=0.547)
-- **O/U 2.5:** OVER 2.5 (p(over)=0.579, xG-proxy 2.7)
-- Lineup: none
-
-### IFK Norrköping vs GIF Sundsvall (SE2) - score 0.587
-- **1X2:** 1 (conf 0.6)
-- **BTTS:** NEJ (p(yes)=0.358)
-- **O/U 2.5:** UNDER 2.5 (p(over)=0.479, xG-proxy 2.63)
-- Lineup: none
-
-### FC Cincinnati vs New England Revolution (MLS) - score 0.6
-- **1X2:** 1 (conf 0.49)
-- **BTTS:** JA (p(yes)=0.666)
-- **O/U 2.5:** OVER 2.5 (p(over)=0.643, xG-proxy 3.43)
+### Criciúma vs América Mineiro (BR2) - score 0.591
+- **1X2:** 1 (conf 0.533)
+- **BTTS:** NEJ (p(yes)=0.392)
+- **O/U 2.5:** UNDER 2.5 (p(over)=0.368, xG-proxy 1.96)
 - Lineup: none
 
 ### Toronto FC vs Orlando City (MLS) - score 0.594
-- **1X2:** 1 (conf 0.385)
+- **1X2:** 1 (conf 0.383)
 - **BTTS:** JA (p(yes)=0.702)
 - **O/U 2.5:** OVER 2.5 (p(over)=0.696, xG-proxy 3.87)
 - Lineup: none
 
-### Inter Miami vs New York City (MLS) - score 0.585
-- **1X2:** 1 (conf 0.494)
-- **BTTS:** JA (p(yes)=0.689)
-- **O/U 2.5:** OVER 2.5 (p(over)=0.573, xG-proxy 3.16)
+### FC Cincinnati vs New England Revolution (MLS) - score 0.586
+- **1X2:** 1 (conf 0.45)
+- **BTTS:** JA (p(yes)=0.666)
+- **O/U 2.5:** OVER 2.5 (p(over)=0.643, xG-proxy 3.43)
 - Lineup: none
 
-### Nashville SC vs Sporting Kansas City (MLS) - score 0.638
-- **1X2:** 1 (conf 0.655)
+### Nashville SC vs Sporting Kansas City (MLS) - score 0.619
+- **1X2:** 1 (conf 0.599)
 - **BTTS:** JA (p(yes)=0.544)
 - **O/U 2.5:** OVER 2.5 (p(over)=0.715, xG-proxy 3.47)
 - Lineup: none
 
-### Chicago Fire vs Philadelphia Union (MLS) - score 0.59
-- **1X2:** 1 (conf 0.46)
-- **BTTS:** JA (p(yes)=0.649)
-- **O/U 2.5:** OVER 2.5 (p(over)=0.661, xG-proxy 3.34)
-- Lineup: none
-
-### Viking vs Fredrikstad (NO) - score 0.616
-- **1X2:** 1 (conf 0.617)
+### Viking vs Fredrikstad (NO) - score 0.609
+- **1X2:** 1 (conf 0.596)
 - **BTTS:** JA (p(yes)=0.577)
 - **O/U 2.5:** OVER 2.5 (p(over)=0.653, xG-proxy 3.37)
 - Lineup: none
 
-### Orlando City vs Columbus Crew (MLS) - score 0.602
-- **1X2:** 1 (conf 0.503)
-- **BTTS:** JA (p(yes)=0.674)
-- **O/U 2.5:** OVER 2.5 (p(over)=0.63, xG-proxy 3.1)
-- Lineup: none
-
-### Fluminense vs Santos (BR) - score 0.6
-- **1X2:** 1 (conf 0.535)
-- **BTTS:** JA (p(yes)=0.659)
-- **O/U 2.5:** OVER 2.5 (p(over)=0.606, xG-proxy 2.89)
-- Lineup: none
-
-### Sp Gijon vs Albacete (LL2) - score 0.6
-- **1X2:** 1 (conf 0.466)
+### Sp Gijon vs Albacete (LL2) - score 0.601
+- **1X2:** 1 (conf 0.469)
 - **BTTS:** NEJ (p(yes)=0.376)
 - **O/U 2.5:** UNDER 2.5 (p(over)=0.343, xG-proxy 1.63)
 - Lineup: none
 
-### Levadeiakos vs Volos NFC (GR) - score 0.592
-- **1X2:** 1 (conf 0.463)
+### Orlando City vs Columbus Crew (MLS) - score 0.597
+- **1X2:** 1 (conf 0.488)
+- **BTTS:** JA (p(yes)=0.674)
+- **O/U 2.5:** OVER 2.5 (p(over)=0.63, xG-proxy 3.1)
+- Lineup: none
+
+### Levadeiakos vs Volos NFC (GR) - score 0.593
+- **1X2:** 1 (conf 0.466)
 - **BTTS:** NEJ (p(yes)=0.312)
 - **O/U 2.5:** UNDER 2.5 (p(over)=0.342, xG-proxy 1.25)
 - Lineup: none
 
-### Atlanta Utd vs Inter Miami (MLS) - score 0.592
-- **1X2:** 2 (conf 0.504)
+### Fluminense vs Santos (BR) - score 0.582
+- **1X2:** 1 (conf 0.481)
+- **BTTS:** JA (p(yes)=0.659)
+- **O/U 2.5:** OVER 2.5 (p(over)=0.606, xG-proxy 2.89)
+- Lineup: none
+
+### Atlanta Utd vs Inter Miami (MLS) - score 0.581
+- **1X2:** 2 (conf 0.469)
 - **BTTS:** JA (p(yes)=0.642)
 - **O/U 2.5:** OVER 2.5 (p(over)=0.63, xG-proxy 3.19)
 - Lineup: none
 
-### FC Cincinnati vs Columbus Crew (MLS) - score 0.627
-- **1X2:** 1 (conf 0.521)
+### FC Cincinnati vs Columbus Crew (MLS) - score 0.622
+- **1X2:** 1 (conf 0.506)
 - **BTTS:** JA (p(yes)=0.69)
 - **O/U 2.5:** OVER 2.5 (p(over)=0.67, xG-proxy 3.62)
 - Lineup: none
 
-### Lanus vs San Lorenzo (AR) - score 0.596
+### Molde vs Start (NO) - score 0.584
+- **1X2:** 1 (conf 0.558)
+- **BTTS:** JA (p(yes)=0.587)
+- **O/U 2.5:** OVER 2.5 (p(over)=0.606, xG-proxy 3.14)
+- Lineup: none
+
+### Girona vs Andorra (LL2) - score 0.584
 - **1X2:** 1 (conf 0.476)
-- **BTTS:** NEJ (p(yes)=0.394)
-- **O/U 2.5:** UNDER 2.5 (p(over)=0.295, xG-proxy 1.89)
-- Lineup: none
-
-### Toluca vs Atl. San Luis (MX) - score 0.589
-- **1X2:** 1 (conf 0.568)
-- **BTTS:** JA (p(yes)=0.571)
-- **O/U 2.5:** OVER 2.5 (p(over)=0.63, xG-proxy 3.16)
-- Lineup: none
-
-### Sirius vs Elfsborg (AS) - score 0.588
-- **1X2:** 1 (conf 0.524)
-- **BTTS:** JA (p(yes)=0.646)
-- **O/U 2.5:** OVER 2.5 (p(over)=0.593, xG-proxy 3.55)
-- Lineup: none
-
-### Girona vs Andorra (LL2) - score 0.586
-- **1X2:** 1 (conf 0.483)
 - **BTTS:** JA (p(yes)=0.602)
 - **O/U 2.5:** OVER 2.5 (p(over)=0.531, xG-proxy 2.88)
 - Lineup: none
 
-### Molde vs Start (NO) - score 0.581
-- **1X2:** 1 (conf 0.55)
-- **BTTS:** JA (p(yes)=0.587)
-- **O/U 2.5:** OVER 2.5 (p(over)=0.606, xG-proxy 3.14)
+### Lanus vs San Lorenzo (AR) - score 0.583
+- **1X2:** 1 (conf 0.437)
+- **BTTS:** NEJ (p(yes)=0.394)
+- **O/U 2.5:** UNDER 2.5 (p(over)=0.295, xG-proxy 1.89)
 - Lineup: none
 
 ## PL - lag att bevaka
@@ -351,19 +303,19 @@ Masterdata: data/betting-store.json. Uppdatera: .\scripts\Update-BettingStore.ps
 
 | Match | Marknad | Tips | Odds | Varde? | Vart fran odds | Risk / vinst (EV) | Chans / kravs | Annat utfall med varde |
 |---|---|---|---|---|---|---|---|---|
-| 2026-09-27 Gefle vs Vasalund (SE3N) | 1X2 | 1 | 2.02 | Ej varde | 2.4 | 500 kr -> +510 kr (1:1.02, EV -46 kr) | 45.0% / 49.5% | - |
+| 2026-09-27 Gefle vs Vasalund (SE3N) | 1X2 | 1 | - | Inga odds | - | - | - | - |
 | 2026-09-27 Gefle vs Vasalund (SE3N) | O/U 2.5 | OVER 2.5 | - | Inga odds | - | - | - | - |
 | 2026-09-27 CRB vs Cuiabá (BR2) | 1X2 | 1 | 2 | Ej varde | 2.12 | 500 kr -> +500 kr (1:1, EV -14 kr) | 48.6% / 50.0% | - |
 | 2026-09-27 CRB vs Cuiabá (BR2) | O/U 2.5 | UNDER 2.5 | 1.65 | Ej varde | 1.85 | 500 kr -> +325 kr (1:0.65, EV -32 kr) | 56.8% / 60.6% | - |
 | 2026-09-27 Criciúma vs Avaí (BR2) | 1X2 | 1 | 1.66 | Ej varde | 1.77 | 500 kr -> +330 kr (1:0.66, EV -18 kr) | 58.1% / 60.2% | - |
 | 2026-09-27 Criciúma vs Avaí (BR2) | O/U 2.5 | UNDER 2.5 | 1.55 | Ej varde | 1.76 | 500 kr -> +275 kr (1:0.55, EV -38 kr) | 59.6% / 64.5% | - |
-| 2026-09-27 Assyriska vs Piteå (SE3N) | 1X2 | 1 | 1.67 | Ej varde | 2 | 500 kr -> +335 kr (1:0.67, EV -49 kr) | 54.0% / 59.9% | - |
+| 2026-09-27 Assyriska vs Piteå (SE3N) | 1X2 | 1 | - | Inga odds | - | - | - | - |
 | 2026-09-27 Assyriska vs Piteå (SE3N) | O/U 2.5 | OVER 2.5 | - | Inga odds | - | - | - | - |
 | 2026-09-27 Fortaleza vs Athletic (BR2) | 1X2 | 1 | 1.66 | Ej varde | 1.72 | 500 kr -> +330 kr (1:0.66, EV -3 kr) | 59.9% / 60.2% | - |
 | 2026-09-27 Fortaleza vs Athletic (BR2) | O/U 2.5 | UNDER 2.5 | 1.7 | Ej varde | 1.91 | 500 kr -> +350 kr (1:0.7, EV -33 kr) | 54.9% / 58.8% | - |
 | 2026-09-27 Burgos vs Eldense (LL2) | 1X2 | 1 | 2.1 | Ej varde | 2.28 | 500 kr -> +550 kr (1:1.1, EV -25 kr) | 45.2% / 47.6% | - |
 | 2026-09-27 Burgos vs Eldense (LL2) | O/U 2.5 | OVER 2.5 | 2.23 | Ej varde | 2.49 | 500 kr -> +615 kr (1:1.23, EV -30 kr) | 42.2% / 44.8% | - |
-| 2026-09-27 Karlstad vs Karlberg (SE3N) | 1X2 | 1 | 1.57 | Ej varde | 1.87 | 500 kr -> +285 kr (1:0.57, EV -47 kr) | 57.7% / 63.7% | - |
+| 2026-09-27 Karlstad vs Karlberg (SE3N) | 1X2 | 1 | - | Inga odds | - | - | - | - |
 | 2026-09-27 Karlstad vs Karlberg (SE3N) | O/U 2.5 | OVER 2.5 | - | Inga odds | - | - | - | - |
 | 2026-09-27 Eibar vs Las Palmas (LL2) | 1X2 | 1 | 1.87 | Ej varde | 1.95 | 500 kr -> +435 kr (1:0.87, EV -6 kr) | 52.9% / 53.5% | - |
 | 2026-09-27 Eibar vs Las Palmas (LL2) | O/U 2.5 | UNDER 2.5 | 1.93 | Ej varde | 2.12 | 500 kr -> +465 kr (1:0.93, EV -31 kr) | 48.6% / 51.8% | - |
