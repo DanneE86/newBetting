@@ -1,30 +1,111 @@
 # Daily Scanner — 2026-09-27
 
-Körd 2026-09-27T11:49:59.228Z · data från 2026-09-27T13:49:18.7311561+02:00 · 581 matcher inom 7 dagar
+Körd 2026-09-27T17:40:25.241Z · data från 2026-09-27T19:39:47.5148228+02:00 · 624 matcher inom 7 dagar
 
 ## Kandidater (rankade)
 
 | # | Match | Liga | Varför kandidat | Pipeline |
 |---|---|---|---|---|
-| 1 | Burgos vs Eldense | LL2 | Elo-diff 208, skarpt facit | 1+4 → 2 → 3 → 5 → 6 |
-| 2 | Oviedo vs Sp Gijon | LL2 | skarpt facit | 1+4 → 2 → 3 → 5 → 6 |
-| 3 | Mallorca vs Almeria | LL2 | skarpt facit | 1+4 → 2 → 3 → 5 → 6 |
-| 4 | Eibar vs Las Palmas | LL2 | skarpt facit | 1+4 → 2 → 3 → 5 → 6 |
-| 5 | Valladolid vs Cordoba | LL2 | skarpt facit | 1+4 → 2 → 3 → 5 → 6 |
-| 6 | Leganes vs Castellon | LL2 | skarpt facit | 1+4 → 2 → 3 → 5 → 6 |
-| 7 | Criciúma vs Avaí | BR2 | — | 1+4 → 2 → 3 → 5 → 6 |
+| 1 | Necaxa vs Club America | MX | värde EV 6 %, skarpt facit | 1+4 → 2 → 3 → 5 → 6 |
+| 2 | Burton vs Huddersfield | EL1 | värde EV 4 %, skarpt facit | 1+4 → 2 → 3 → 5 → 6 |
+| 3 | Burgos vs Eldense | LL2 | Elo-diff 208, skarpt facit | 1+4 → 2 → 3 → 5 → 6 |
+| 4 | Oviedo vs Sp Gijon | LL2 | skarpt facit | 1+4 → 2 → 3 → 5 → 6 |
+| 5 | UNAM Pumas vs Atl. San Luis | MX | Elo-diff 183, skarpt facit | 1+4 → 2 → 3 → 5 → 6 |
+| 6 | Fortaleza vs Athletic | BR2 | skarpt facit | 1+4 → 2 → 3 → 5 → 6 |
+| 7 | Columbus Crew vs Inter Miami | MLS | skarpt facit | 1+4 → 2 → 3 → 5 → 6 |
 
 ## Sammanfattning Head Agent
 
 | Match | Dom | Bästa marknad | Edge | Confidence |
 |---|---|---|---|---|
+| Necaxa vs Club America | BET | 1 @ 4.33 | 6 % | MEDIUM |
+| Burton vs Huddersfield | WAIT | 1 @ 4.25 | 4 % | LOW |
 | Burgos vs Eldense | NO BET | — | — | HIGH |
 | Oviedo vs Sp Gijon | NO BET | — | — | HIGH |
-| Mallorca vs Almeria | NO BET | — | — | HIGH |
-| Eibar vs Las Palmas | NO BET | — | — | HIGH |
-| Valladolid vs Cordoba | NO BET | — | — | HIGH |
-| Leganes vs Castellon | NO BET | — | — | HIGH |
-| Criciúma vs Avaí | NO BET | — | — | HIGH |
+| UNAM Pumas vs Atl. San Luis | NO BET | — | — | MEDIUM |
+| Fortaleza vs Athletic | NO BET | — | — | HIGH |
+| Columbus Crew vs Inter Miami | NO BET | — | — | MEDIUM |
+
+---
+
+# Analys: Necaxa vs Club America (MX, 2026-09-28)
+
+## Dom
+- Rekommendation: **BET**
+- Confidence: MEDIUM
+
+## Modell (Agent 2)
+- Proj. mål: H 1.18 – A 1.7 (tot 2.88)
+- 1X2: 29 % / 26 % / 45 % (fair 3.47 / 3.84 / 2.21)
+- Ö2.5 55 % (fair 1.82) · BTTS 59 % (fair 1.69)
+
+## Marknad (Agent 3)
+Facit: betfair-exchange · 3 bolag
+
+| Marknad | Modell p | Marknad p | Bästa odds | EV | Värde |
+|---|---|---|---|---|---|
+| 1 | 29 % | 25 % | 4.33 (Marknadens basta (football-data)) | 6 % | Värde |
+| X | 26 % | 25 % | 3.75 (Marknadens basta (football-data)) | -7 % | Ej värde |
+| 2 | 45 % | 51 % | 1.9 (Marknadens basta (football-data)) | -4 % | Ej värde |
+
+## Devil's Advocate (Agent 5)
+- (skört) 1 @ 4.33: hög varians, långt oddsintervall
+- (skört) Elvor inte släppta – rotation/skador kan ändra caset
+- Residual: **Still plausible**
+
+## Varför
+- 1 @ 4.33 (Marknadens basta (football-data)) har EV 6 % mot betfair-exchange.
+
+## Vad som skulle ändra beslutet
+- 1: oddset faller under 4.2
+- bekräftad elva utan nyckelspelare
+
+## Datakvalitet (Agent 1)
+- xG saknas Necaxa
+- xG saknas Club America
+- ClubElo saknas (intern Elo)
+
+---
+
+# Analys: Burton vs Huddersfield (EL1, 2026-10-03)
+
+## Dom
+- Rekommendation: **WAIT**
+- Confidence: LOW
+
+## Modell (Agent 2)
+- Proj. mål: H 1.32 – A 1.44 (tot 2.76)
+- 1X2: 25 % / 24 % / 51 % (fair 4.07 / 4.11 / 1.96)
+- Ö2.5 52 % (fair 1.94) · BTTS 58 % (fair 1.73)
+
+## Marknad (Agent 3)
+Facit: pinnacle · 13 bolag
+
+| Marknad | Modell p | Marknad p | Bästa odds | EV | Värde |
+|---|---|---|---|---|---|
+| 1 | 25 % | 25 % | 4.25 (Nordic Bet) | 4 % | Värde |
+| X | 24 % | 24 % | 3.75 (Coolbet) | -9 % | Ej värde |
+| 2 | 51 % | 51 % | 1.82 (Unibet (SE)) | -7 % | Ej värde |
+| Över 2.5 | 52 % | 52 % | 1.78 (Coolbet) | -8 % | Ej värde |
+| Under 2.5 | 48 % | 48 % | 2.02 (Unibet (SE)) | -2 % | Ej värde |
+
+## Devil's Advocate (Agent 5)
+- Matchen är 6 dagar bort – tidiga linjer rör sig mycket; värdet måste finnas kvar närmare avspark.
+- (skört) 1 @ 4.25: hög varians, långt oddsintervall
+- (skört) Elvor inte släppta – rotation/skador kan ändra caset
+- Residual: **Weakened**
+
+## Varför
+- 1 @ 4.25 (Nordic Bet) har EV 4 % mot pinnacle.
+- Caset är försvagat – kör scannern igen närmare avspark (elvor, aktuella odds).
+
+## Vad som skulle ändra beslutet
+- 1: oddset faller under 4.19
+- värdet är borta när du scannar igen 1–2 dagar före
+- bekräftad elva utan nyckelspelare
+
+## Datakvalitet (Agent 1)
+- ClubElo saknas (intern Elo)
 
 ---
 
@@ -35,20 +116,20 @@ Körd 2026-09-27T11:49:59.228Z · data från 2026-09-27T13:49:18.7311561+02:00 �
 - Confidence: HIGH
 
 ## Modell (Agent 2)
-- Proj. mål: H 1.41 – A 0.64 (tot 2.05)
-- 1X2: 55 % / 24 % / 21 % (fair 1.82 / 4.15 / 4.8)
-- Ö2.5 42 % (fair 2.38) · BTTS 41 % (fair 2.45)
+- Proj. mål: H 1.45 – A 0.72 (tot 2.17)
+- 1X2: 54 % / 26 % / 21 % (fair 1.87 / 3.93 / 4.74)
+- Ö2.5 44 % (fair 2.3) · BTTS 43 % (fair 2.35)
 
 ## Marknad (Agent 3)
 Facit: betfair-exchange · 3 bolag
 
 | Marknad | Modell p | Marknad p | Bästa odds | EV | Värde |
 |---|---|---|---|---|---|
-| 1 | 55 % | 49 % | 1.95 (Marknadens basta (football-data)) | -5 % | Ej värde |
-| X | 24 % | 28 % | 3.35 (Marknadens basta (football-data)) | -4 % | Ej värde |
+| 1 | 54 % | 49 % | 1.95 (Marknadens basta (football-data)) | -5 % | Ej värde |
+| X | 26 % | 28 % | 3.35 (Marknadens basta (football-data)) | -4 % | Ej värde |
 | 2 | 21 % | 23 % | 4.1 (Marknadens basta (football-data)) | -8 % | Ej värde |
-| Över 2.5 | 42 % | 43 % | 2.15 (Marknadens basta (football-data)) | -7 % | Ej värde |
-| Under 2.5 | 58 % | 57 % | 1.73 (Marknadens basta (football-data)) | -2 % | Ej värde |
+| Över 2.5 | 44 % | 43 % | 2.15 (Marknadens basta (football-data)) | -7 % | Ej värde |
+| Under 2.5 | 56 % | 57 % | 1.73 (Marknadens basta (football-data)) | -2 % | Ej värde |
 
 ## Devil's Advocate (Agent 5)
 - Ingen marknad når värdegränsen (EV ≥ 3 %) – oddset är effektivt prissatt.
@@ -73,20 +154,20 @@ Facit: betfair-exchange · 3 bolag
 - Confidence: HIGH
 
 ## Modell (Agent 2)
-- Proj. mål: H 1.24 – A 0.87 (tot 2.11)
-- 1X2: 44 % / 25 % / 31 % (fair 2.25 / 4 / 3.27)
-- Ö2.5 37 % (fair 2.73) · BTTS 41 % (fair 2.46)
+- Proj. mål: H 1.31 – A 1.05 (tot 2.36)
+- 1X2: 42 % / 26 % / 32 % (fair 2.36 / 3.86 / 3.15)
+- Ö2.5 40 % (fair 2.51) · BTTS 44 % (fair 2.29)
 
 ## Marknad (Agent 3)
 Facit: betfair-exchange · 3 bolag
 
 | Marknad | Modell p | Marknad p | Bästa odds | EV | Värde |
 |---|---|---|---|---|---|
-| 1 | 44 % | 47 % | 2.05 (Marknadens basta (football-data)) | -4 % | Ej värde |
-| X | 25 % | 30 % | 3.2 (Marknadens basta (football-data)) | -3 % | Ej värde |
-| 2 | 31 % | 23 % | 4.1 (Marknadens basta (football-data)) | -5 % | Ej värde |
-| Över 2.5 | 37 % | 40 % | 2.38 (Marknadens basta (football-data)) | -6 % | Ej värde |
-| Under 2.5 | 63 % | 60 % | 1.6 (Marknadens basta (football-data)) | -3 % | Ej värde |
+| 1 | 42 % | 47 % | 2.05 (Marknadens basta (football-data)) | -4 % | Ej värde |
+| X | 26 % | 30 % | 3.2 (Marknadens basta (football-data)) | -3 % | Ej värde |
+| 2 | 32 % | 23 % | 4.1 (Marknadens basta (football-data)) | -5 % | Ej värde |
+| Över 2.5 | 40 % | 40 % | 2.38 (Marknadens basta (football-data)) | -6 % | Ej värde |
+| Under 2.5 | 60 % | 60 % | 1.6 (Marknadens basta (football-data)) | -3 % | Ej värde |
 
 ## Devil's Advocate (Agent 5)
 - Ingen marknad når värdegränsen (EV ≥ 3 %) – oddset är effektivt prissatt.
@@ -104,27 +185,65 @@ Facit: betfair-exchange · 3 bolag
 
 ---
 
-# Analys: Mallorca vs Almeria (LL2, 2026-09-27)
+# Analys: UNAM Pumas vs Atl. San Luis (MX, 2026-09-27)
 
 ## Dom
 - Rekommendation: **NO BET**
-- Confidence: HIGH
+- Confidence: MEDIUM
 
 ## Modell (Agent 2)
-- Proj. mål: H 1.49 – A 0.8 (tot 2.29)
-- 1X2: 50 % / 22 % / 28 % (fair 2 / 4.5 / 3.6)
-- Ö2.5 41 % (fair 2.47) · BTTS 43 % (fair 2.32)
+- Proj. mål: H 1.95 – A 1.14 (tot 3.09)
+- 1X2: 52 % / 25 % / 23 % (fair 1.94 / 4 / 4.28)
+- Ö2.5 56 % (fair 1.77) · BTTS 55 % (fair 1.81)
 
 ## Marknad (Agent 3)
 Facit: betfair-exchange · 3 bolag
 
 | Marknad | Modell p | Marknad p | Bästa odds | EV | Värde |
 |---|---|---|---|---|---|
-| 1 | 50 % | 45 % | 2.1 (Marknadens basta (football-data)) | -5 % | Ej värde |
-| X | 22 % | 28 % | 3.4 (Marknadens basta (football-data)) | -4 % | Ej värde |
-| 2 | 28 % | 26 % | 3.5 (Marknadens basta (football-data)) | -8 % | Ej värde |
-| Över 2.5 | 41 % | 50 % | 1.91 (Marknadens basta (football-data)) | -5 % | Ej värde |
-| Under 2.5 | 60 % | 50 % | 1.91 (Marknadens basta (football-data)) | -4 % | Ej värde |
+| 1 | 52 % | 49 % | 2 (Marknadens basta (football-data)) | -3 % | Ej värde |
+| X | 25 % | 25 % | 3.65 (Marknadens basta (football-data)) | -7 % | Ej värde |
+| 2 | 23 % | 26 % | 3.75 (Marknadens basta (football-data)) | -2 % | Ej värde |
+
+## Devil's Advocate (Agent 5)
+- Ingen marknad når värdegränsen (EV ≥ 3 %) – oddset är effektivt prissatt.
+- (skört) Elvor inte släppta – rotation/skador kan ändra caset
+- Residual: **Dead**
+
+## Varför
+- Ingen marknad med värde vid dagens odds.
+
+## Vad som skulle ändra beslutet
+- bekräftad elva utan nyckelspelare
+
+## Datakvalitet (Agent 1)
+- xG saknas UNAM Pumas
+- xG saknas Atl. San Luis
+- ClubElo saknas (intern Elo)
+
+---
+
+# Analys: Fortaleza vs Athletic (BR2, 2026-09-27)
+
+## Dom
+- Rekommendation: **NO BET**
+- Confidence: HIGH
+
+## Modell (Agent 2)
+- Proj. mål: H 1.38 – A 0.77 (tot 2.15)
+- 1X2: 49 % / 29 % / 23 % (fair 2.06 / 3.47 / 4.41)
+- Ö2.5 40 % (fair 2.49) · BTTS 45 % (fair 2.23)
+
+## Marknad (Agent 3)
+Facit: pinnacle · 15 bolag
+
+| Marknad | Modell p | Marknad p | Bästa odds | EV | Värde |
+|---|---|---|---|---|---|
+| 1 | 49 % | 60 % | 1.66 (Unibet (SE)) | -1 % | Ej värde |
+| X | 29 % | 25 % | 3.85 (Coolbet) | -5 % | Ej värde |
+| 2 | 23 % | 15 % | 5.75 (Coolbet) | -12 % | Ej värde |
+| Över 2.5 | 40 % | 45 % | 2.14 (Unibet (SE)) | -4 % | Ej värde |
+| Under 2.5 | 60 % | 55 % | 1.7 (Nordic Bet) | -7 % | Ej värde |
 
 ## Devil's Advocate (Agent 5)
 - Ingen marknad når värdegränsen (EV ≥ 3 %) – oddset är effektivt prissatt.
@@ -142,27 +261,25 @@ Facit: betfair-exchange · 3 bolag
 
 ---
 
-# Analys: Eibar vs Las Palmas (LL2, 2026-09-27)
+# Analys: Columbus Crew vs Inter Miami (MLS, 2026-09-27)
 
 ## Dom
 - Rekommendation: **NO BET**
-- Confidence: HIGH
+- Confidence: MEDIUM
 
 ## Modell (Agent 2)
-- Proj. mål: H 1.23 – A 0.87 (tot 2.1)
-- 1X2: 46 % / 24 % / 30 % (fair 2.17 / 4.21 / 3.31)
-- Ö2.5 42 % (fair 2.36) · BTTS 45 % (fair 2.24)
+- Proj. mål: H 1.82 – A 2.22 (tot 4.04)
+- 1X2: 31 % / 24 % / 45 % (fair 3.23 / 4.23 / 2.2)
+- Ö2.5 67 % (fair 1.49) · BTTS 67 % (fair 1.5)
 
 ## Marknad (Agent 3)
 Facit: betfair-exchange · 3 bolag
 
 | Marknad | Modell p | Marknad p | Bästa odds | EV | Värde |
 |---|---|---|---|---|---|
-| 1 | 46 % | 49 % | 1.98 (Marknadens basta (football-data)) | -3 % | Ej värde |
-| X | 24 % | 28 % | 3.4 (Marknadens basta (football-data)) | -4 % | Ej värde |
-| 2 | 30 % | 23 % | 4.2 (Marknadens basta (football-data)) | -3 % | Ej värde |
-| Över 2.5 | 42 % | 49 % | 1.98 (Marknadens basta (football-data)) | -4 % | Ej värde |
-| Under 2.5 | 58 % | 51 % | 1.87 (Marknadens basta (football-data)) | -4 % | Ej värde |
+| 1 | 31 % | 35 % | 2.82 (Marknadens basta (football-data)) | -2 % | Ej värde |
+| X | 24 % | 23 % | 4.1 (Marknadens basta (football-data)) | -8 % | Ej värde |
+| 2 | 45 % | 43 % | 2.3 (Marknadens basta (football-data)) | -1 % | Ej värde |
 
 ## Devil's Advocate (Agent 5)
 - Ingen marknad når värdegränsen (EV ≥ 3 %) – oddset är effektivt prissatt.
@@ -176,117 +293,6 @@ Facit: betfair-exchange · 3 bolag
 - bekräftad elva utan nyckelspelare
 
 ## Datakvalitet (Agent 1)
-- ClubElo saknas (intern Elo)
-
----
-
-# Analys: Valladolid vs Cordoba (LL2, 2026-09-27)
-
-## Dom
-- Rekommendation: **NO BET**
-- Confidence: HIGH
-
-## Modell (Agent 2)
-- Proj. mål: H 1.28 – A 1.35 (tot 2.63)
-- 1X2: 38 % / 24 % / 37 % (fair 2.61 / 4.11 / 2.67)
-- Ö2.5 49 % (fair 2.03) · BTTS 50 % (fair 2.02)
-
-## Marknad (Agent 3)
-Facit: betfair-exchange · 3 bolag
-
-| Marknad | Modell p | Marknad p | Bästa odds | EV | Värde |
-|---|---|---|---|---|---|
-| 1 | 38 % | 42 % | 2.25 (Marknadens basta (football-data)) | -5 % | Ej värde |
-| X | 24 % | 27 % | 3.5 (Marknadens basta (football-data)) | -5 % | Ej värde |
-| 2 | 37 % | 31 % | 3.1 (Marknadens basta (football-data)) | -5 % | Ej värde |
-| Över 2.5 | 49 % | 53 % | 1.85 (Marknadens basta (football-data)) | -2 % | Ej värde |
-| Under 2.5 | 51 % | 47 % | 1.95 (Marknadens basta (football-data)) | -9 % | Ej värde |
-
-## Devil's Advocate (Agent 5)
-- Ingen marknad når värdegränsen (EV ≥ 3 %) – oddset är effektivt prissatt.
-- (skört) Elvor inte släppta – rotation/skador kan ändra caset
-- Residual: **Dead**
-
-## Varför
-- Ingen marknad med värde vid dagens odds.
-
-## Vad som skulle ändra beslutet
-- bekräftad elva utan nyckelspelare
-
-## Datakvalitet (Agent 1)
-- ClubElo saknas (intern Elo)
-
----
-
-# Analys: Leganes vs Castellon (LL2, 2026-09-28)
-
-## Dom
-- Rekommendation: **NO BET**
-- Confidence: HIGH
-
-## Modell (Agent 2)
-- Proj. mål: H 1.02 – A 1.37 (tot 2.39)
-- 1X2: 33 % / 23 % / 44 % (fair 3.03 / 4.41 / 2.25)
-- Ö2.5 46 % (fair 2.18) · BTTS 49 % (fair 2.03)
-
-## Marknad (Agent 3)
-Facit: betfair-exchange · 3 bolag
-
-| Marknad | Modell p | Marknad p | Bästa odds | EV | Värde |
-|---|---|---|---|---|---|
-| 1 | 33 % | 31 % | 3 (Marknadens basta (football-data)) | -6 % | Ej värde |
-| X | 23 % | 28 % | 3.4 (Marknadens basta (football-data)) | -6 % | Ej värde |
-| 2 | 44 % | 41 % | 2.32 (Marknadens basta (football-data)) | -5 % | Ej värde |
-| Över 2.5 | 46 % | 51 % | 1.85 (Marknadens basta (football-data)) | -5 % | Ej värde |
-| Under 2.5 | 54 % | 49 % | 1.95 (Marknadens basta (football-data)) | -5 % | Ej värde |
-
-## Devil's Advocate (Agent 5)
-- Ingen marknad når värdegränsen (EV ≥ 3 %) – oddset är effektivt prissatt.
-- (skört) Elvor inte släppta – rotation/skador kan ändra caset
-- Residual: **Dead**
-
-## Varför
-- Ingen marknad med värde vid dagens odds.
-
-## Vad som skulle ändra beslutet
-- bekräftad elva utan nyckelspelare
-
-## Datakvalitet (Agent 1)
-- ClubElo saknas (intern Elo)
-
----
-
-# Analys: Criciúma vs Avaí (BR2, 2026-09-27)
-
-## Dom
-- Rekommendation: **NO BET**
-- Confidence: HIGH
-
-## Modell (Agent 2)
-- Proj. mål: H 1.27 – A 0.82 (tot 2.09)
-- 1X2: 49 % / 26 % / 25 % (fair 2.02 / 3.89 / 4.02)
-- Ö2.5 36 % (fair 2.82) · BTTS 42 % (fair 2.39)
-
-## Marknad (Agent 3)
-Facit: OddsPortal-snitt · 1 bolag
-
-| Marknad | Modell p | Marknad p | Bästa odds | EV | Värde |
-|---|---|---|---|---|---|
-| 1 | 49 % | 56 % | 1.64 (OddsPortal (snitt)) | -8 % | Ej värde |
-| X | 26 % | 28 % | 3.3 (OddsPortal (snitt)) | -8 % | Ej värde |
-| 2 | 25 % | 16 % | 5.92 (OddsPortal (snitt)) | -8 % | Ej värde |
-
-## Devil's Advocate (Agent 5)
-- Bara OddsPortal-snitt – samma odds är både facit och pris, så EV visar bara bolagens marginal. Leta odds över "från"-gränsen hos ditt bolag.
-- Facit är OddsPortal-snitt (inte Pinnacle) – svagare referens.
-- (skört) Elvor inte släppta – rotation/skador kan ändra caset
-- Residual: **Dead**
-
-## Varför
-- Ingen marknad med värde vid dagens odds.
-
-## Vad som skulle ändra beslutet
-- bekräftad elva utan nyckelspelare
-
-## Datakvalitet (Agent 1)
+- xG saknas Columbus Crew
+- xG saknas Inter Miami
 - ClubElo saknas (intern Elo)
