@@ -13050,6 +13050,565 @@
           }
         }
       }
+    },
+    {
+      "date": "2026-10-18",
+      "kickoffUtc": "2026-10-18T15:30:00Z",
+      "league": "PL",
+      "round": "Matchday 7",
+      "home": "Nott'm Forest",
+      "away": "Arsenal",
+      "match": "Nott'm Forest vs Arsenal",
+      "tips": {
+        "1X2": {
+          "pick": "2",
+          "confidence": 0.589,
+          "probs": {
+            "home": 0.157,
+            "draw": 0.254,
+            "away": 0.589
+          }
+        },
+        "BTTS": {
+          "pick": null,
+          "confidence": null,
+          "pYes": null
+        },
+        "OU25": {
+          "pick": "UNDER 2.5",
+          "confidence": 0.503,
+          "pOver": 0.497
+        }
+      },
+      "tipScore": 0.546,
+      "marketOnly": true,
+      "marketSource": "Pinnacle",
+      "note": "Marknadstips (Pinnacle utan marginal) - ingen modell for denna liga/match",
+      "pro": {
+        "match": "Nott'm Forest vs Arsenal",
+        "date": "2026-10-18",
+        "league": "PL",
+        "kickoffUtc": "2026-10-18T15:30:00Z",
+        "dc": {
+          "home": 0.1907,
+          "draw": 0.3064,
+          "away": 0.5029,
+          "over25": 0.4108,
+          "btts": 0.4496,
+          "lambdaHome": 0.83,
+          "lambdaAway": 1.5,
+          "knownTeams": true
+        },
+        "blended": {
+          "home": 0.1739,
+          "draw": 0.2802,
+          "away": 0.546,
+          "over25": 0.4539,
+          "btts": 0.4496
+        },
+        "marketLed": null,
+        "market": {
+          "fairSource": "pinnacle",
+          "fairSourceOu": "pinnacle",
+          "minEv": 0.03,
+          "booksCount": 18,
+          "myBooks": [
+            "Unibet (SE)",
+            "LeoVegas (SE)",
+            "Nordic Bet",
+            "Betsson"
+          ],
+          "overround1x2": 0.0543,
+          "fair": {
+            "home": 0.1573,
+            "draw": 0.2536,
+            "away": 0.5891,
+            "over25": 0.4974,
+            "under25": 0.5026
+          }
+        },
+        "valueBets": [
+          {
+            "market": "1X2",
+            "pick": "X",
+            "odds": 4.1,
+            "bookmaker": "Unibet (SE)",
+            "strategy": "consensusAtBestPrice",
+            "fairSource": "pinnacle",
+            "p": 0.2536,
+            "modelP": 0.2802,
+            "ev": 0.0398,
+            "stakeSek": 500
+          }
+        ],
+        "verdicts": {
+          "home": {
+            "market": "1X2",
+            "pick": "1",
+            "odds": 6,
+            "bookmaker": "Unibet (SE)",
+            "p": 0.1573,
+            "ev": -0.0563,
+            "fairSource": "pinnacle",
+            "minOdds": 6.55,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 2500,
+              "ratio": 5,
+              "breakEven": 0.1667,
+              "edge": -0.0094,
+              "evSek": -28
+            },
+            "reason": "odds over 5 (skrall)"
+          },
+          "draw": {
+            "market": "1X2",
+            "pick": "X",
+            "odds": 4.1,
+            "bookmaker": "Unibet (SE)",
+            "p": 0.2536,
+            "ev": 0.0398,
+            "fairSource": "pinnacle",
+            "minOdds": 4.06,
+            "value": true,
+            "riskReward": {
+              "stake": 500,
+              "win": 1550,
+              "ratio": 3.1,
+              "breakEven": 0.2439,
+              "edge": 0.0097,
+              "evSek": 20
+            }
+          },
+          "away": {
+            "market": "1X2",
+            "pick": "2",
+            "odds": 1.61,
+            "bookmaker": "Betsson",
+            "p": 0.5891,
+            "ev": -0.0515,
+            "fairSource": "pinnacle",
+            "minOdds": 1.75,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 305,
+              "ratio": 0.61,
+              "breakEven": 0.6211,
+              "edge": -0.032,
+              "evSek": -26
+            }
+          },
+          "over25": {
+            "market": "OU25",
+            "pick": "OVER 2.5",
+            "odds": 1.94,
+            "bookmaker": "Betsson",
+            "p": 0.4974,
+            "ev": -0.0351,
+            "fairSource": "pinnacle",
+            "minOdds": 2.07,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 470,
+              "ratio": 0.94,
+              "breakEven": 0.5155,
+              "edge": -0.0181,
+              "evSek": -18
+            }
+          },
+          "under25": {
+            "market": "OU25",
+            "pick": "UNDER 2.5",
+            "odds": 1.96,
+            "bookmaker": "Unibet (SE)",
+            "p": 0.5026,
+            "ev": -0.0149,
+            "fairSource": "pinnacle",
+            "minOdds": 2.05,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 480,
+              "ratio": 0.96,
+              "breakEven": 0.5102,
+              "edge": -0.0076,
+              "evSek": -7
+            }
+          }
+        },
+        "odds": {
+          "home": 6,
+          "draw": 4.1,
+          "away": 1.61,
+          "over25": 1.94,
+          "under25": 1.96
+        },
+        "oddsBooks": {
+          "home": "Unibet (SE)",
+          "draw": "Unibet (SE)",
+          "away": "Betsson",
+          "over25": "Betsson",
+          "under25": "Unibet (SE)"
+        },
+        "rest": {
+          "home": {
+            "lastMatch": "2026-10-11",
+            "restDays": 7,
+            "matches7d": 1,
+            "matches14d": 1,
+            "congested": false
+          },
+          "away": {
+            "lastMatch": "2026-10-10",
+            "restDays": 8,
+            "matches7d": 0,
+            "matches14d": 1,
+            "congested": false
+          }
+        },
+        "weather": {
+          "available": false,
+          "flags": [],
+          "note": "vader hamtas pa matchdagen"
+        },
+        "availability": {
+          "alpha": 0,
+          "home": {
+            "source": "FPL",
+            "missingShare": 0.052,
+            "typicalMissing": 0.034,
+            "attackFactor": 1,
+            "players": [
+              {
+                "name": "Taiwo Awoniyi",
+                "share": 0.052,
+                "weight": 1,
+                "reason": "Suspended until 19 Oct"
+              }
+            ],
+            "topPlayers": [
+              {
+                "name": "Morgan Gibbs-White",
+                "share": 0.185
+              },
+              {
+                "name": "Igor Jesus",
+                "share": 0.118
+              },
+              {
+                "name": "Liam Delap",
+                "share": 0.115
+              }
+            ]
+          },
+          "away": {
+            "source": "FPL",
+            "missingShare": 0.041,
+            "typicalMissing": 0.054,
+            "attackFactor": 1,
+            "players": [
+              {
+                "name": "Kai Havertz",
+                "share": 0.101,
+                "weight": 0.25,
+                "reason": "Hamstring injury - 75% chance of playing"
+              },
+              {
+                "name": "Declan Rice",
+                "share": 0.063,
+                "weight": 0.25,
+                "reason": "Unspecified injury - 75% chance of playing"
+              }
+            ],
+            "topPlayers": [
+              {
+                "name": "Bukayo Saka",
+                "share": 0.141
+              },
+              {
+                "name": "Kai Havertz",
+                "share": 0.101
+              },
+              {
+                "name": "Viktor Gyokeres",
+                "share": 0.08
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "date": "2026-10-18",
+      "kickoffUtc": "2026-10-18T15:15:00Z",
+      "league": "L1",
+      "round": "Matchday 7",
+      "home": "Paris FC",
+      "away": "Rennes",
+      "match": "Paris FC vs Rennes",
+      "tips": {
+        "1X2": {
+          "pick": "1",
+          "confidence": 0.412,
+          "probs": {
+            "home": 0.412,
+            "draw": 0.295,
+            "away": 0.293
+          }
+        },
+        "BTTS": {
+          "pick": null,
+          "confidence": null,
+          "pYes": null
+        },
+        "OU25": {
+          "pick": null,
+          "confidence": null,
+          "pOver": null
+        }
+      },
+      "tipScore": 0.412,
+      "marketOnly": true,
+      "marketSource": "Pinnacle",
+      "note": "Marknadstips (Pinnacle utan marginal) - ingen modell for denna liga/match",
+      "pro": {
+        "match": "Paris FC vs Rennes",
+        "date": "2026-10-18",
+        "league": "L1",
+        "kickoffUtc": "2026-10-18T15:15:00Z",
+        "dc": {
+          "home": 0.4268,
+          "draw": 0.2666,
+          "away": 0.3066,
+          "over25": 0.5811,
+          "btts": 0.6069,
+          "lambdaHome": 1.65,
+          "lambdaAway": 1.37,
+          "knownTeams": true
+        },
+        "blended": {
+          "home": 0.4194,
+          "draw": 0.2808,
+          "away": 0.2998,
+          "over25": 0.5811,
+          "btts": 0.6069
+        },
+        "marketLed": null,
+        "market": {
+          "fairSource": "pinnacle",
+          "fairSourceOu": "snitt av 5 bolag",
+          "minEv": 0.03,
+          "booksCount": 17,
+          "myBooks": [
+            "LeoVegas (SE)",
+            "Unibet (SE)",
+            "Nordic Bet",
+            "Betsson"
+          ],
+          "overround1x2": 0.0502,
+          "fair": {
+            "home": 0.4122,
+            "draw": 0.2948,
+            "away": 0.293,
+            "over25": 0.5742,
+            "under25": 0.4258
+          }
+        },
+        "valueBets": [
+          {
+            "market": "1X2",
+            "pick": "X",
+            "odds": 3.5,
+            "bookmaker": "LeoVegas (SE)",
+            "strategy": "consensusAtBestPrice",
+            "fairSource": "pinnacle",
+            "p": 0.2948,
+            "modelP": 0.2808,
+            "ev": 0.0318,
+            "stakeSek": 500
+          }
+        ],
+        "verdicts": {
+          "home": {
+            "market": "1X2",
+            "pick": "1",
+            "odds": 2.32,
+            "bookmaker": "Nordic Bet",
+            "p": 0.4122,
+            "ev": -0.0437,
+            "fairSource": "pinnacle",
+            "minOdds": 2.5,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 660,
+              "ratio": 1.32,
+              "breakEven": 0.431,
+              "edge": -0.0188,
+              "evSek": -22
+            }
+          },
+          "draw": {
+            "market": "1X2",
+            "pick": "X",
+            "odds": 3.5,
+            "bookmaker": "LeoVegas (SE)",
+            "p": 0.2948,
+            "ev": 0.0318,
+            "fairSource": "pinnacle",
+            "minOdds": 3.49,
+            "value": true,
+            "riskReward": {
+              "stake": 500,
+              "win": 1250,
+              "ratio": 2.5,
+              "breakEven": 0.2857,
+              "edge": 0.0091,
+              "evSek": 16
+            }
+          },
+          "away": {
+            "market": "1X2",
+            "pick": "2",
+            "odds": 3.15,
+            "bookmaker": "LeoVegas (SE)",
+            "p": 0.293,
+            "ev": -0.0771,
+            "fairSource": "pinnacle",
+            "minOdds": 3.52,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 1075,
+              "ratio": 2.15,
+              "breakEven": 0.3175,
+              "edge": -0.0245,
+              "evSek": -39
+            }
+          },
+          "over25": {
+            "market": "OU25",
+            "pick": "OVER 2.5",
+            "odds": 1.65,
+            "bookmaker": "Betsson",
+            "p": 0.5742,
+            "ev": -0.0525,
+            "fairSource": "snitt av 5 bolag",
+            "minOdds": 1.83,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 325,
+              "ratio": 0.65,
+              "breakEven": 0.6061,
+              "edge": -0.0318,
+              "evSek": -26
+            }
+          },
+          "under25": {
+            "market": "OU25",
+            "pick": "UNDER 2.5",
+            "odds": 2.26,
+            "bookmaker": "Betsson",
+            "p": 0.4258,
+            "ev": -0.0377,
+            "fairSource": "snitt av 5 bolag",
+            "minOdds": 2.47,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 630,
+              "ratio": 1.26,
+              "breakEven": 0.4425,
+              "edge": -0.0167,
+              "evSek": -19
+            }
+          }
+        },
+        "odds": {
+          "home": 2.32,
+          "draw": 3.5,
+          "away": 3.15,
+          "over25": 1.65,
+          "under25": 2.26
+        },
+        "oddsBooks": {
+          "home": "Nordic Bet",
+          "draw": "LeoVegas (SE)",
+          "away": "LeoVegas (SE)",
+          "over25": "Betsson",
+          "under25": "Betsson"
+        },
+        "rest": {
+          "home": {
+            "lastMatch": "2026-10-10",
+            "restDays": 8,
+            "matches7d": 0,
+            "matches14d": 1,
+            "congested": false
+          },
+          "away": {
+            "lastMatch": "2026-10-11",
+            "restDays": 7,
+            "matches7d": 1,
+            "matches14d": 1,
+            "congested": false
+          }
+        },
+        "weather": {
+          "available": false,
+          "flags": [],
+          "note": "vader hamtas pa matchdagen"
+        },
+        "availability": {
+          "alpha": 0,
+          "home": {
+            "source": "ingen franvarokalla",
+            "missingShare": 0,
+            "typicalMissing": 0.067,
+            "attackFactor": 1,
+            "players": [],
+            "topPlayers": [
+              {
+                "name": "Lassine Sinayoko",
+                "share": 0.234
+              },
+              {
+                "name": "Pablo Pagis",
+                "share": 0.123
+              },
+              {
+                "name": "Ilan Kebbal",
+                "share": 0.098
+              }
+            ]
+          },
+          "away": {
+            "source": "ingen franvarokalla",
+            "missingShare": 0,
+            "typicalMissing": 0.032,
+            "attackFactor": 1,
+            "players": [],
+            "topPlayers": [
+              {
+                "name": "Esteban Lepaul",
+                "share": 0.176
+              },
+              {
+                "name": "Adrien Thomasson",
+                "share": 0.132
+              },
+              {
+                "name": "Ludovic Blas",
+                "share": 0.101
+              }
+            ]
+          }
+        }
+      }
     }
   ],
   "allCandidates": [
@@ -131485,6 +132044,296 @@
       }
     },
     {
+      "date": "2026-10-18",
+      "kickoffUtc": "2026-10-18T15:30:00Z",
+      "league": "PL",
+      "round": "Matchday 7",
+      "home": "Nott'm Forest",
+      "away": "Arsenal",
+      "match": "Nott'm Forest vs Arsenal",
+      "tips": {
+        "1X2": {
+          "pick": "2",
+          "confidence": 0.589,
+          "probs": {
+            "home": 0.157,
+            "draw": 0.254,
+            "away": 0.589
+          }
+        },
+        "BTTS": {
+          "pick": null,
+          "confidence": null,
+          "pYes": null
+        },
+        "OU25": {
+          "pick": "UNDER 2.5",
+          "confidence": 0.503,
+          "pOver": 0.497
+        }
+      },
+      "tipScore": 0.546,
+      "marketOnly": true,
+      "marketSource": "Pinnacle",
+      "note": "Marknadstips (Pinnacle utan marginal) - ingen modell for denna liga/match",
+      "pro": {
+        "match": "Nott'm Forest vs Arsenal",
+        "date": "2026-10-18",
+        "league": "PL",
+        "kickoffUtc": "2026-10-18T15:30:00Z",
+        "dc": {
+          "home": 0.1907,
+          "draw": 0.3064,
+          "away": 0.5029,
+          "over25": 0.4108,
+          "btts": 0.4496,
+          "lambdaHome": 0.83,
+          "lambdaAway": 1.5,
+          "knownTeams": true
+        },
+        "blended": {
+          "home": 0.1739,
+          "draw": 0.2802,
+          "away": 0.546,
+          "over25": 0.4539,
+          "btts": 0.4496
+        },
+        "marketLed": null,
+        "market": {
+          "fairSource": "pinnacle",
+          "fairSourceOu": "pinnacle",
+          "minEv": 0.03,
+          "booksCount": 18,
+          "myBooks": [
+            "Unibet (SE)",
+            "LeoVegas (SE)",
+            "Nordic Bet",
+            "Betsson"
+          ],
+          "overround1x2": 0.0543,
+          "fair": {
+            "home": 0.1573,
+            "draw": 0.2536,
+            "away": 0.5891,
+            "over25": 0.4974,
+            "under25": 0.5026
+          }
+        },
+        "valueBets": [
+          {
+            "market": "1X2",
+            "pick": "X",
+            "odds": 4.1,
+            "bookmaker": "Unibet (SE)",
+            "strategy": "consensusAtBestPrice",
+            "fairSource": "pinnacle",
+            "p": 0.2536,
+            "modelP": 0.2802,
+            "ev": 0.0398,
+            "stakeSek": 500
+          }
+        ],
+        "verdicts": {
+          "home": {
+            "market": "1X2",
+            "pick": "1",
+            "odds": 6,
+            "bookmaker": "Unibet (SE)",
+            "p": 0.1573,
+            "ev": -0.0563,
+            "fairSource": "pinnacle",
+            "minOdds": 6.55,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 2500,
+              "ratio": 5,
+              "breakEven": 0.1667,
+              "edge": -0.0094,
+              "evSek": -28
+            },
+            "reason": "odds over 5 (skrall)"
+          },
+          "draw": {
+            "market": "1X2",
+            "pick": "X",
+            "odds": 4.1,
+            "bookmaker": "Unibet (SE)",
+            "p": 0.2536,
+            "ev": 0.0398,
+            "fairSource": "pinnacle",
+            "minOdds": 4.06,
+            "value": true,
+            "riskReward": {
+              "stake": 500,
+              "win": 1550,
+              "ratio": 3.1,
+              "breakEven": 0.2439,
+              "edge": 0.0097,
+              "evSek": 20
+            }
+          },
+          "away": {
+            "market": "1X2",
+            "pick": "2",
+            "odds": 1.61,
+            "bookmaker": "Betsson",
+            "p": 0.5891,
+            "ev": -0.0515,
+            "fairSource": "pinnacle",
+            "minOdds": 1.75,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 305,
+              "ratio": 0.61,
+              "breakEven": 0.6211,
+              "edge": -0.032,
+              "evSek": -26
+            }
+          },
+          "over25": {
+            "market": "OU25",
+            "pick": "OVER 2.5",
+            "odds": 1.94,
+            "bookmaker": "Betsson",
+            "p": 0.4974,
+            "ev": -0.0351,
+            "fairSource": "pinnacle",
+            "minOdds": 2.07,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 470,
+              "ratio": 0.94,
+              "breakEven": 0.5155,
+              "edge": -0.0181,
+              "evSek": -18
+            }
+          },
+          "under25": {
+            "market": "OU25",
+            "pick": "UNDER 2.5",
+            "odds": 1.96,
+            "bookmaker": "Unibet (SE)",
+            "p": 0.5026,
+            "ev": -0.0149,
+            "fairSource": "pinnacle",
+            "minOdds": 2.05,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 480,
+              "ratio": 0.96,
+              "breakEven": 0.5102,
+              "edge": -0.0076,
+              "evSek": -7
+            }
+          }
+        },
+        "odds": {
+          "home": 6,
+          "draw": 4.1,
+          "away": 1.61,
+          "over25": 1.94,
+          "under25": 1.96
+        },
+        "oddsBooks": {
+          "home": "Unibet (SE)",
+          "draw": "Unibet (SE)",
+          "away": "Betsson",
+          "over25": "Betsson",
+          "under25": "Unibet (SE)"
+        },
+        "rest": {
+          "home": {
+            "lastMatch": "2026-10-11",
+            "restDays": 7,
+            "matches7d": 1,
+            "matches14d": 1,
+            "congested": false
+          },
+          "away": {
+            "lastMatch": "2026-10-10",
+            "restDays": 8,
+            "matches7d": 0,
+            "matches14d": 1,
+            "congested": false
+          }
+        },
+        "weather": {
+          "available": false,
+          "flags": [],
+          "note": "vader hamtas pa matchdagen"
+        },
+        "availability": {
+          "alpha": 0,
+          "home": {
+            "source": "FPL",
+            "missingShare": 0.052,
+            "typicalMissing": 0.034,
+            "attackFactor": 1,
+            "players": [
+              {
+                "name": "Taiwo Awoniyi",
+                "share": 0.052,
+                "weight": 1,
+                "reason": "Suspended until 19 Oct"
+              }
+            ],
+            "topPlayers": [
+              {
+                "name": "Morgan Gibbs-White",
+                "share": 0.185
+              },
+              {
+                "name": "Igor Jesus",
+                "share": 0.118
+              },
+              {
+                "name": "Liam Delap",
+                "share": 0.115
+              }
+            ]
+          },
+          "away": {
+            "source": "FPL",
+            "missingShare": 0.041,
+            "typicalMissing": 0.054,
+            "attackFactor": 1,
+            "players": [
+              {
+                "name": "Kai Havertz",
+                "share": 0.101,
+                "weight": 0.25,
+                "reason": "Hamstring injury - 75% chance of playing"
+              },
+              {
+                "name": "Declan Rice",
+                "share": 0.063,
+                "weight": 0.25,
+                "reason": "Unspecified injury - 75% chance of playing"
+              }
+            ],
+            "topPlayers": [
+              {
+                "name": "Bukayo Saka",
+                "share": 0.141
+              },
+              {
+                "name": "Kai Havertz",
+                "share": 0.101
+              },
+              {
+                "name": "Viktor Gyokeres",
+                "share": 0.08
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
       "date": "2026-10-03",
       "kickoffUtc": "2026-10-03T14:00:00Z",
       "league": "EL1",
@@ -133245,6 +134094,518 @@
       }
     },
     {
+      "date": "2026-10-18",
+      "kickoffUtc": "2026-10-18T14:15:00Z",
+      "league": "LL",
+      "round": "Matchday 9",
+      "home": "Celta",
+      "away": "Alaves",
+      "match": "Celta vs Alaves",
+      "tips": {
+        "1X2": {
+          "pick": "1",
+          "confidence": 0.475,
+          "probs": {
+            "home": 0.475,
+            "draw": 0.279,
+            "away": 0.246
+          }
+        },
+        "BTTS": {
+          "pick": null,
+          "confidence": null,
+          "pYes": null
+        },
+        "OU25": {
+          "pick": null,
+          "confidence": null,
+          "pOver": null
+        }
+      },
+      "tipScore": 0.475,
+      "marketOnly": true,
+      "marketSource": "Pinnacle",
+      "note": "Marknadstips (Pinnacle utan marginal) - ingen modell for denna liga/match",
+      "pro": {
+        "match": "Celta vs Alaves",
+        "date": "2026-10-18",
+        "league": "LL",
+        "kickoffUtc": "2026-10-18T14:15:00Z",
+        "dc": {
+          "home": 0.5078,
+          "draw": 0.2537,
+          "away": 0.2385,
+          "over25": 0.4689,
+          "btts": 0.4957,
+          "lambdaHome": 1.56,
+          "lambdaAway": 0.99,
+          "knownTeams": true
+        },
+        "blended": {
+          "home": 0.4914,
+          "draw": 0.2663,
+          "away": 0.2422,
+          "over25": 0.4689,
+          "btts": 0.4957
+        },
+        "marketLed": null,
+        "market": {
+          "fairSource": "pinnacle",
+          "fairSourceOu": "snitt av 9 bolag",
+          "minEv": 0.03,
+          "booksCount": 15,
+          "myBooks": [
+            "Nordic Bet",
+            "Betsson",
+            "Unibet (SE)",
+            "LeoVegas (SE)"
+          ],
+          "overround1x2": 0.0525,
+          "fair": {
+            "home": 0.4751,
+            "draw": 0.2794,
+            "away": 0.2455,
+            "over25": 0.4473,
+            "under25": 0.5527
+          }
+        },
+        "valueBets": [],
+        "verdicts": {
+          "home": {
+            "market": "1X2",
+            "pick": "1",
+            "odds": 2.04,
+            "bookmaker": "Unibet (SE)",
+            "p": 0.4751,
+            "ev": -0.0309,
+            "fairSource": "pinnacle",
+            "minOdds": 2.17,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 520,
+              "ratio": 1.04,
+              "breakEven": 0.4902,
+              "edge": -0.0151,
+              "evSek": -15
+            }
+          },
+          "draw": {
+            "market": "1X2",
+            "pick": "X",
+            "odds": 3.45,
+            "bookmaker": "Unibet (SE)",
+            "p": 0.2794,
+            "ev": -0.0359,
+            "fairSource": "pinnacle",
+            "minOdds": 3.69,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 1225,
+              "ratio": 2.45,
+              "breakEven": 0.2899,
+              "edge": -0.0104,
+              "evSek": -18
+            }
+          },
+          "away": {
+            "market": "1X2",
+            "pick": "2",
+            "odds": 3.95,
+            "bookmaker": "Nordic Bet",
+            "p": 0.2455,
+            "ev": -0.0303,
+            "fairSource": "pinnacle",
+            "minOdds": 4.2,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 1475,
+              "ratio": 2.95,
+              "breakEven": 0.2532,
+              "edge": -0.0077,
+              "evSek": -15
+            }
+          },
+          "over25": {
+            "market": "OU25",
+            "pick": "OVER 2.5",
+            "odds": 2.12,
+            "bookmaker": "Unibet (SE)",
+            "p": 0.4473,
+            "ev": -0.0517,
+            "fairSource": "snitt av 9 bolag",
+            "minOdds": 2.35,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 560,
+              "ratio": 1.12,
+              "breakEven": 0.4717,
+              "edge": -0.0244,
+              "evSek": -26
+            }
+          },
+          "under25": {
+            "market": "OU25",
+            "pick": "UNDER 2.5",
+            "odds": 1.75,
+            "bookmaker": "Betsson",
+            "p": 0.5527,
+            "ev": -0.0328,
+            "fairSource": "snitt av 9 bolag",
+            "minOdds": 1.9,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 375,
+              "ratio": 0.75,
+              "breakEven": 0.5714,
+              "edge": -0.0188,
+              "evSek": -16
+            }
+          }
+        },
+        "odds": {
+          "home": 2.04,
+          "draw": 3.45,
+          "away": 3.95,
+          "over25": 2.12,
+          "under25": 1.75
+        },
+        "oddsBooks": {
+          "home": "Unibet (SE)",
+          "draw": "Unibet (SE)",
+          "away": "Nordic Bet",
+          "over25": "Unibet (SE)",
+          "under25": "Betsson"
+        },
+        "rest": {
+          "home": {
+            "lastMatch": "2026-10-11",
+            "restDays": 7,
+            "matches7d": 1,
+            "matches14d": 1,
+            "congested": false
+          },
+          "away": {
+            "lastMatch": "2026-10-10",
+            "restDays": 8,
+            "matches7d": 0,
+            "matches14d": 1,
+            "congested": false
+          }
+        },
+        "weather": {
+          "available": false,
+          "flags": [],
+          "note": "vader hamtas pa matchdagen"
+        },
+        "availability": {
+          "alpha": 0,
+          "home": {
+            "source": "ingen franvarokalla",
+            "missingShare": 0,
+            "typicalMissing": 0.018,
+            "attackFactor": 1,
+            "players": [],
+            "topPlayers": [
+              {
+                "name": "Williot Swedberg",
+                "share": 0.089
+              },
+              {
+                "name": "Hugo Gonzalez",
+                "share": 0.088
+              },
+              {
+                "name": "Borja Iglesias",
+                "share": 0.08
+              }
+            ]
+          },
+          "away": {
+            "source": "ingen franvarokalla",
+            "missingShare": 0,
+            "typicalMissing": 0.03,
+            "attackFactor": 1,
+            "players": [],
+            "topPlayers": [
+              {
+                "name": "Antonio Martínez",
+                "share": 0.168
+              },
+              {
+                "name": "Lucas Boyé",
+                "share": 0.125
+              },
+              {
+                "name": "Ángel Pérez",
+                "share": 0.121
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "date": "2026-10-18",
+      "kickoffUtc": "2026-10-18T16:30:00Z",
+      "league": "LL",
+      "round": "Matchday 9",
+      "home": "Malaga",
+      "away": "Sociedad",
+      "match": "Malaga vs Sociedad",
+      "tips": {
+        "1X2": {
+          "pick": "2",
+          "confidence": 0.433,
+          "probs": {
+            "home": 0.295,
+            "draw": 0.273,
+            "away": 0.433
+          }
+        },
+        "BTTS": {
+          "pick": null,
+          "confidence": null,
+          "pYes": null
+        },
+        "OU25": {
+          "pick": null,
+          "confidence": null,
+          "pOver": null
+        }
+      },
+      "tipScore": 0.433,
+      "marketOnly": true,
+      "marketSource": "Pinnacle",
+      "note": "Marknadstips (Pinnacle utan marginal) - ingen modell for denna liga/match",
+      "pro": {
+        "match": "Malaga vs Sociedad",
+        "date": "2026-10-18",
+        "league": "LL",
+        "kickoffUtc": "2026-10-18T16:30:00Z",
+        "dc": {
+          "home": 0.3308,
+          "draw": 0.2721,
+          "away": 0.3971,
+          "over25": 0.4449,
+          "btts": 0.4986,
+          "lambdaHome": 1.16,
+          "lambdaAway": 1.3,
+          "knownTeams": true
+        },
+        "blended": {
+          "home": 0.3127,
+          "draw": 0.2724,
+          "away": 0.4149,
+          "over25": 0.4449,
+          "btts": 0.4986
+        },
+        "marketLed": null,
+        "market": {
+          "fairSource": "pinnacle",
+          "fairSourceOu": "snitt av 9 bolag",
+          "minEv": 0.03,
+          "booksCount": 16,
+          "myBooks": [
+            "Nordic Bet",
+            "Betsson",
+            "Unibet (SE)",
+            "LeoVegas (SE)"
+          ],
+          "overround1x2": 0.0507,
+          "fair": {
+            "home": 0.2947,
+            "draw": 0.2727,
+            "away": 0.4326,
+            "over25": 0.5344,
+            "under25": 0.4656
+          }
+        },
+        "valueBets": [],
+        "verdicts": {
+          "home": {
+            "market": "1X2",
+            "pick": "1",
+            "odds": 3.25,
+            "bookmaker": "Unibet (SE)",
+            "p": 0.2947,
+            "ev": -0.0423,
+            "fairSource": "pinnacle",
+            "minOdds": 3.5,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 1125,
+              "ratio": 2.25,
+              "breakEven": 0.3077,
+              "edge": -0.013,
+              "evSek": -21
+            }
+          },
+          "draw": {
+            "market": "1X2",
+            "pick": "X",
+            "odds": 3.55,
+            "bookmaker": "Unibet (SE)",
+            "p": 0.2727,
+            "ev": -0.0319,
+            "fairSource": "pinnacle",
+            "minOdds": 3.78,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 1275,
+              "ratio": 2.55,
+              "breakEven": 0.2817,
+              "edge": -0.009,
+              "evSek": -16
+            }
+          },
+          "away": {
+            "market": "1X2",
+            "pick": "2",
+            "odds": 2.23,
+            "bookmaker": "Unibet (SE)",
+            "p": 0.4326,
+            "ev": -0.0353,
+            "fairSource": "pinnacle",
+            "minOdds": 2.38,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 615,
+              "ratio": 1.23,
+              "breakEven": 0.4484,
+              "edge": -0.0158,
+              "evSek": -18
+            }
+          },
+          "over25": {
+            "market": "OU25",
+            "pick": "OVER 2.5",
+            "odds": 1.78,
+            "bookmaker": "Betsson",
+            "p": 0.5344,
+            "ev": -0.0487,
+            "fairSource": "snitt av 9 bolag",
+            "minOdds": 1.96,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 390,
+              "ratio": 0.78,
+              "breakEven": 0.5618,
+              "edge": -0.0274,
+              "evSek": -24
+            }
+          },
+          "under25": {
+            "market": "OU25",
+            "pick": "UNDER 2.5",
+            "odds": 2.06,
+            "bookmaker": "Betsson",
+            "p": 0.4656,
+            "ev": -0.0409,
+            "fairSource": "snitt av 9 bolag",
+            "minOdds": 2.26,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 530,
+              "ratio": 1.06,
+              "breakEven": 0.4854,
+              "edge": -0.0198,
+              "evSek": -20
+            }
+          }
+        },
+        "odds": {
+          "home": 3.25,
+          "draw": 3.55,
+          "away": 2.23,
+          "over25": 1.78,
+          "under25": 2.06
+        },
+        "oddsBooks": {
+          "home": "Unibet (SE)",
+          "draw": "Unibet (SE)",
+          "away": "Unibet (SE)",
+          "over25": "Betsson",
+          "under25": "Betsson"
+        },
+        "rest": {
+          "home": {
+            "lastMatch": "2026-10-09",
+            "restDays": 9,
+            "matches7d": 0,
+            "matches14d": 1,
+            "congested": false
+          },
+          "away": {
+            "lastMatch": "2026-10-11",
+            "restDays": 7,
+            "matches7d": 1,
+            "matches14d": 1,
+            "congested": false
+          }
+        },
+        "weather": {
+          "available": false,
+          "flags": [],
+          "note": "vader hamtas pa matchdagen"
+        },
+        "availability": {
+          "alpha": 0,
+          "home": {
+            "source": "ingen franvarokalla",
+            "missingShare": 0,
+            "typicalMissing": 0,
+            "attackFactor": 1,
+            "players": [],
+            "topPlayers": [
+              {
+                "name": "Chupe",
+                "share": 0.232
+              },
+              {
+                "name": "Adrián Niño",
+                "share": 0.145
+              },
+              {
+                "name": "David Larrubia",
+                "share": 0.098
+              }
+            ]
+          },
+          "away": {
+            "source": "ingen franvarokalla",
+            "missingShare": 0,
+            "typicalMissing": 0.061,
+            "attackFactor": 1,
+            "players": [],
+            "topPlayers": [
+              {
+                "name": "Mikel Oyarzabal",
+                "share": 0.151
+              },
+              {
+                "name": "Orri Óskarsson",
+                "share": 0.12
+              },
+              {
+                "name": "Carlos Soler",
+                "share": 0.085
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
       "date": "2026-10-16",
       "kickoffUtc": "2026-10-16T18:45:00Z",
       "league": "SA",
@@ -134775,6 +136136,262 @@
               {
                 "name": "Lucas Da Cunha",
                 "share": 0.088
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "date": "2026-10-18",
+      "kickoffUtc": "2026-10-18T16:00:00Z",
+      "league": "SA",
+      "round": "Matchday 7",
+      "home": "Milan",
+      "away": "Atalanta",
+      "match": "Milan vs Atalanta",
+      "tips": {
+        "1X2": {
+          "pick": "1",
+          "confidence": 0.509,
+          "probs": {
+            "home": 0.509,
+            "draw": 0.263,
+            "away": 0.228
+          }
+        },
+        "BTTS": {
+          "pick": null,
+          "confidence": null,
+          "pYes": null
+        },
+        "OU25": {
+          "pick": "OVER 2.5",
+          "confidence": 0.519,
+          "pOver": 0.519
+        }
+      },
+      "tipScore": 0.514,
+      "marketOnly": true,
+      "marketSource": "Pinnacle",
+      "note": "Marknadstips (Pinnacle utan marginal) - ingen modell for denna liga/match",
+      "pro": {
+        "match": "Milan vs Atalanta",
+        "date": "2026-10-18",
+        "league": "SA",
+        "kickoffUtc": "2026-10-18T16:00:00Z",
+        "dc": {
+          "home": 0.3898,
+          "draw": 0.2743,
+          "away": 0.3358,
+          "over25": 0.4269,
+          "btts": 0.4834,
+          "lambdaHome": 1.25,
+          "lambdaAway": 1.14,
+          "knownTeams": true
+        },
+        "blended": {
+          "home": 0.4494,
+          "draw": 0.2687,
+          "away": 0.2819,
+          "over25": 0.473,
+          "btts": 0.4834
+        },
+        "marketLed": null,
+        "market": {
+          "fairSource": "pinnacle",
+          "fairSourceOu": "pinnacle",
+          "minEv": 0.03,
+          "booksCount": 17,
+          "myBooks": [
+            "Nordic Bet",
+            "Betsson",
+            "Unibet (SE)",
+            "LeoVegas (SE)"
+          ],
+          "overround1x2": 0.0516,
+          "fair": {
+            "home": 0.5085,
+            "draw": 0.2634,
+            "away": 0.228,
+            "over25": 0.5195,
+            "under25": 0.4805
+          }
+        },
+        "valueBets": [],
+        "verdicts": {
+          "home": {
+            "market": "1X2",
+            "pick": "1",
+            "odds": 1.9,
+            "bookmaker": "Nordic Bet",
+            "p": 0.5085,
+            "ev": -0.0338,
+            "fairSource": "pinnacle",
+            "minOdds": 2.03,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 450,
+              "ratio": 0.9,
+              "breakEven": 0.5263,
+              "edge": -0.0178,
+              "evSek": -17
+            }
+          },
+          "draw": {
+            "market": "1X2",
+            "pick": "X",
+            "odds": 3.7,
+            "bookmaker": "Unibet (SE)",
+            "p": 0.2634,
+            "ev": -0.0253,
+            "fairSource": "pinnacle",
+            "minOdds": 3.91,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 1350,
+              "ratio": 2.7,
+              "breakEven": 0.2703,
+              "edge": -0.0068,
+              "evSek": -13
+            }
+          },
+          "away": {
+            "market": "1X2",
+            "pick": "2",
+            "odds": 4.35,
+            "bookmaker": "Unibet (SE)",
+            "p": 0.228,
+            "ev": -0.008,
+            "fairSource": "pinnacle",
+            "minOdds": 4.52,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 1675,
+              "ratio": 3.35,
+              "breakEven": 0.2299,
+              "edge": -0.0018,
+              "evSek": -4
+            }
+          },
+          "over25": {
+            "market": "OU25",
+            "pick": "OVER 2.5",
+            "odds": 1.83,
+            "bookmaker": "Betsson",
+            "p": 0.5195,
+            "ev": -0.0494,
+            "fairSource": "pinnacle",
+            "minOdds": 1.98,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 415,
+              "ratio": 0.83,
+              "breakEven": 0.5464,
+              "edge": -0.027,
+              "evSek": -25
+            }
+          },
+          "under25": {
+            "market": "OU25",
+            "pick": "UNDER 2.5",
+            "odds": 2,
+            "bookmaker": "Betsson",
+            "p": 0.4805,
+            "ev": -0.039,
+            "fairSource": "pinnacle",
+            "minOdds": 2.14,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 500,
+              "ratio": 1,
+              "breakEven": 0.5,
+              "edge": -0.0195,
+              "evSek": -19
+            }
+          }
+        },
+        "odds": {
+          "home": 1.9,
+          "draw": 3.7,
+          "away": 4.35,
+          "over25": 1.83,
+          "under25": 2
+        },
+        "oddsBooks": {
+          "home": "Nordic Bet",
+          "draw": "Unibet (SE)",
+          "away": "Unibet (SE)",
+          "over25": "Betsson",
+          "under25": "Betsson"
+        },
+        "rest": {
+          "home": {
+            "lastMatch": "2026-10-11",
+            "restDays": 7,
+            "matches7d": 1,
+            "matches14d": 1,
+            "congested": false
+          },
+          "away": {
+            "lastMatch": "2026-10-12",
+            "restDays": 6,
+            "matches7d": 1,
+            "matches14d": 1,
+            "congested": false
+          }
+        },
+        "weather": {
+          "available": false,
+          "flags": [],
+          "note": "vader hamtas pa matchdagen"
+        },
+        "availability": {
+          "alpha": 0,
+          "home": {
+            "source": "ingen franvarokalla",
+            "missingShare": 0,
+            "typicalMissing": 0.029,
+            "attackFactor": 1,
+            "players": [],
+            "topPlayers": [
+              {
+                "name": "Gonçalo Ramos",
+                "share": 0.149
+              },
+              {
+                "name": "Christian Pulisic",
+                "share": 0.104
+              },
+              {
+                "name": "Diego Moreira",
+                "share": 0.092
+              }
+            ]
+          },
+          "away": {
+            "source": "ingen franvarokalla",
+            "missingShare": 0,
+            "typicalMissing": 0.1,
+            "attackFactor": 1,
+            "players": [],
+            "topPlayers": [
+              {
+                "name": "Nikola Krstovic",
+                "share": 0.136
+              },
+              {
+                "name": "Franck Kessié",
+                "share": 0.121
+              },
+              {
+                "name": "Charles De Ketelaere",
+                "share": 0.113
               }
             ]
           }
@@ -136817,6 +138434,260 @@
       }
     },
     {
+      "date": "2026-10-18",
+      "kickoffUtc": "2026-10-18T15:30:00Z",
+      "league": "BL",
+      "round": "Matchday 6",
+      "home": "M'gladbach",
+      "away": "Hoffenheim",
+      "match": "M'gladbach vs Hoffenheim",
+      "tips": {
+        "1X2": {
+          "pick": "2",
+          "confidence": 0.511,
+          "probs": {
+            "home": 0.265,
+            "draw": 0.224,
+            "away": 0.511
+          }
+        },
+        "BTTS": {
+          "pick": null,
+          "confidence": null,
+          "pYes": null
+        },
+        "OU25": {
+          "pick": null,
+          "confidence": null,
+          "pOver": null
+        }
+      },
+      "tipScore": 0.511,
+      "marketOnly": true,
+      "marketSource": "Pinnacle",
+      "note": "Marknadstips (Pinnacle utan marginal) - ingen modell for denna liga/match",
+      "pro": {
+        "match": "M'gladbach vs Hoffenheim",
+        "date": "2026-10-18",
+        "league": "BL",
+        "kickoffUtc": "2026-10-18T15:30:00Z",
+        "dc": {
+          "home": 0.3605,
+          "draw": 0.2278,
+          "away": 0.4117,
+          "over25": 0.7053,
+          "btts": 0.7075,
+          "lambdaHome": 1.76,
+          "lambdaAway": 1.89,
+          "knownTeams": true
+        },
+        "blended": {
+          "home": 0.3128,
+          "draw": 0.2259,
+          "away": 0.4613,
+          "over25": 0.7053,
+          "btts": 0.7075
+        },
+        "marketLed": null,
+        "market": {
+          "fairSource": "pinnacle",
+          "fairSourceOu": "snitt av 3 bolag",
+          "minEv": 0.03,
+          "booksCount": 14,
+          "myBooks": [
+            "Nordic Bet",
+            "Betsson"
+          ],
+          "overround1x2": 0.0528,
+          "fair": {
+            "home": 0.2653,
+            "draw": 0.224,
+            "away": 0.5107,
+            "over25": 0.6761,
+            "under25": 0.3239
+          }
+        },
+        "valueBets": [],
+        "verdicts": {
+          "home": {
+            "market": "1X2",
+            "pick": "1",
+            "odds": 3.7,
+            "bookmaker": "Nordic Bet",
+            "p": 0.2653,
+            "ev": -0.0183,
+            "fairSource": "pinnacle",
+            "minOdds": 3.88,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 1350,
+              "ratio": 2.7,
+              "breakEven": 0.2703,
+              "edge": -0.005,
+              "evSek": -9
+            }
+          },
+          "draw": {
+            "market": "1X2",
+            "pick": "X",
+            "odds": 4.05,
+            "bookmaker": "Nordic Bet",
+            "p": 0.224,
+            "ev": -0.0927,
+            "fairSource": "pinnacle",
+            "minOdds": 4.6,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 1525,
+              "ratio": 3.05,
+              "breakEven": 0.2469,
+              "edge": -0.0229,
+              "evSek": -46
+            }
+          },
+          "away": {
+            "market": "1X2",
+            "pick": "2",
+            "odds": 1.85,
+            "bookmaker": "Nordic Bet",
+            "p": 0.5107,
+            "ev": -0.0553,
+            "fairSource": "pinnacle",
+            "minOdds": 2.02,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 425,
+              "ratio": 0.85,
+              "breakEven": 0.5405,
+              "edge": -0.0299,
+              "evSek": -28
+            }
+          },
+          "over25": {
+            "market": "OU25",
+            "pick": "OVER 2.5",
+            "odds": 1.4,
+            "bookmaker": "Betsson",
+            "p": 0.6761,
+            "ev": -0.0535,
+            "fairSource": "snitt av 3 bolag",
+            "minOdds": 1.6,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 200,
+              "ratio": 0.4,
+              "breakEven": 0.7143,
+              "edge": -0.0382,
+              "evSek": -27
+            }
+          },
+          "under25": {
+            "market": "OU25",
+            "pick": "UNDER 2.5",
+            "odds": 3,
+            "bookmaker": "Betsson",
+            "p": 0.3239,
+            "ev": -0.0282,
+            "fairSource": "snitt av 3 bolag",
+            "minOdds": 3.33,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 1000,
+              "ratio": 2,
+              "breakEven": 0.3333,
+              "edge": -0.0094,
+              "evSek": -14
+            }
+          }
+        },
+        "odds": {
+          "home": 3.7,
+          "draw": 4.05,
+          "away": 1.85,
+          "over25": 1.4,
+          "under25": 3
+        },
+        "oddsBooks": {
+          "home": "Nordic Bet",
+          "draw": "Nordic Bet",
+          "away": "Nordic Bet",
+          "over25": "Betsson",
+          "under25": "Betsson"
+        },
+        "rest": {
+          "home": {
+            "lastMatch": "2026-10-11",
+            "restDays": 7,
+            "matches7d": 1,
+            "matches14d": 1,
+            "congested": false
+          },
+          "away": {
+            "lastMatch": "2026-10-10",
+            "restDays": 8,
+            "matches7d": 0,
+            "matches14d": 1,
+            "congested": false
+          }
+        },
+        "weather": {
+          "available": false,
+          "flags": [],
+          "note": "vader hamtas pa matchdagen"
+        },
+        "availability": {
+          "alpha": 0,
+          "home": {
+            "source": "ingen franvarokalla",
+            "missingShare": 0,
+            "typicalMissing": 0.019,
+            "attackFactor": 1,
+            "players": [],
+            "topPlayers": [
+              {
+                "name": "Haris Tabakovic",
+                "share": 0.117
+              },
+              {
+                "name": "Franck Honorat",
+                "share": 0.095
+              },
+              {
+                "name": "Hugo Bolin",
+                "share": 0.093
+              }
+            ]
+          },
+          "away": {
+            "source": "ingen franvarokalla",
+            "missingShare": 0,
+            "typicalMissing": 0.03,
+            "attackFactor": 1,
+            "players": [],
+            "topPlayers": [
+              {
+                "name": "Adam Daghim",
+                "share": 0.147
+              },
+              {
+                "name": "Andrej Kramaric",
+                "share": 0.114
+              },
+              {
+                "name": "Patrick Wimmer",
+                "share": 0.095
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
       "date": "2026-10-16",
       "kickoffUtc": "2026-10-16T18:45:00Z",
       "league": "L1",
@@ -138093,6 +139964,787 @@
               {
                 "name": "Mason Greenwood",
                 "share": 0.106
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "date": "2026-10-18",
+      "kickoffUtc": "2026-10-18T15:15:00Z",
+      "league": "L1",
+      "round": "Matchday 7",
+      "home": "Lorient",
+      "away": "Monaco",
+      "match": "Lorient vs Monaco",
+      "tips": {
+        "1X2": {
+          "pick": "2",
+          "confidence": 0.453,
+          "probs": {
+            "home": 0.267,
+            "draw": 0.28,
+            "away": 0.453
+          }
+        },
+        "BTTS": {
+          "pick": null,
+          "confidence": null,
+          "pYes": null
+        },
+        "OU25": {
+          "pick": "OVER 2.5",
+          "confidence": 0.516,
+          "pOver": 0.516
+        }
+      },
+      "tipScore": 0.484,
+      "marketOnly": true,
+      "marketSource": "Pinnacle",
+      "note": "Marknadstips (Pinnacle utan marginal) - ingen modell for denna liga/match",
+      "pro": {
+        "match": "Lorient vs Monaco",
+        "date": "2026-10-18",
+        "league": "L1",
+        "kickoffUtc": "2026-10-18T15:15:00Z",
+        "dc": {
+          "home": 0.3254,
+          "draw": 0.2684,
+          "away": 0.4061,
+          "over25": 0.5797,
+          "btts": 0.6083,
+          "lambdaHome": 1.41,
+          "lambdaAway": 1.6,
+          "knownTeams": true
+        },
+        "blended": {
+          "home": 0.2962,
+          "draw": 0.2742,
+          "away": 0.4296,
+          "over25": 0.5479,
+          "btts": 0.6083
+        },
+        "marketLed": null,
+        "market": {
+          "fairSource": "pinnacle",
+          "fairSourceOu": "pinnacle",
+          "minEv": 0.03,
+          "booksCount": 17,
+          "myBooks": [
+            "LeoVegas (SE)",
+            "Unibet (SE)",
+            "Nordic Bet",
+            "Betsson"
+          ],
+          "overround1x2": 0.0504,
+          "fair": {
+            "home": 0.2667,
+            "draw": 0.28,
+            "away": 0.4533,
+            "over25": 0.5156,
+            "under25": 0.4844
+          }
+        },
+        "valueBets": [],
+        "verdicts": {
+          "home": {
+            "market": "1X2",
+            "pick": "1",
+            "odds": 3.65,
+            "bookmaker": "LeoVegas (SE)",
+            "p": 0.2667,
+            "ev": -0.0267,
+            "fairSource": "pinnacle",
+            "minOdds": 3.86,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 1325,
+              "ratio": 2.65,
+              "breakEven": 0.274,
+              "edge": -0.0073,
+              "evSek": -13
+            }
+          },
+          "draw": {
+            "market": "1X2",
+            "pick": "X",
+            "odds": 3.55,
+            "bookmaker": "LeoVegas (SE)",
+            "p": 0.28,
+            "ev": -0.006,
+            "fairSource": "pinnacle",
+            "minOdds": 3.68,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 1275,
+              "ratio": 2.55,
+              "breakEven": 0.2817,
+              "edge": -0.0017,
+              "evSek": -3
+            }
+          },
+          "away": {
+            "market": "1X2",
+            "pick": "2",
+            "odds": 2.12,
+            "bookmaker": "LeoVegas (SE)",
+            "p": 0.4533,
+            "ev": -0.0389,
+            "fairSource": "pinnacle",
+            "minOdds": 2.27,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 560,
+              "ratio": 1.12,
+              "breakEven": 0.4717,
+              "edge": -0.0184,
+              "evSek": -19
+            }
+          },
+          "over25": {
+            "market": "OU25",
+            "pick": "OVER 2.5",
+            "odds": 1.86,
+            "bookmaker": "Betsson",
+            "p": 0.5156,
+            "ev": -0.0409,
+            "fairSource": "pinnacle",
+            "minOdds": 2,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 430,
+              "ratio": 0.86,
+              "breakEven": 0.5376,
+              "edge": -0.022,
+              "evSek": -20
+            }
+          },
+          "under25": {
+            "market": "OU25",
+            "pick": "UNDER 2.5",
+            "odds": 2,
+            "bookmaker": "Unibet (SE)",
+            "p": 0.4844,
+            "ev": -0.0312,
+            "fairSource": "pinnacle",
+            "minOdds": 2.13,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 500,
+              "ratio": 1,
+              "breakEven": 0.5,
+              "edge": -0.0156,
+              "evSek": -16
+            }
+          }
+        },
+        "odds": {
+          "home": 3.65,
+          "draw": 3.55,
+          "away": 2.12,
+          "over25": 1.86,
+          "under25": 2
+        },
+        "oddsBooks": {
+          "home": "LeoVegas (SE)",
+          "draw": "LeoVegas (SE)",
+          "away": "LeoVegas (SE)",
+          "over25": "Betsson",
+          "under25": "Unibet (SE)"
+        },
+        "rest": {
+          "home": {
+            "lastMatch": "2026-10-10",
+            "restDays": 8,
+            "matches7d": 0,
+            "matches14d": 1,
+            "congested": false
+          },
+          "away": {
+            "lastMatch": "2026-10-10",
+            "restDays": 8,
+            "matches7d": 0,
+            "matches14d": 1,
+            "congested": false
+          }
+        },
+        "weather": {
+          "available": false,
+          "flags": [],
+          "note": "vader hamtas pa matchdagen"
+        },
+        "availability": {
+          "alpha": 0,
+          "home": {
+            "source": "ingen franvarokalla",
+            "missingShare": 0,
+            "typicalMissing": 0.043,
+            "attackFactor": 1,
+            "players": [],
+            "topPlayers": [
+              {
+                "name": "Mamadou Koné",
+                "share": 0.131
+              },
+              {
+                "name": "Ibrahima Baldé",
+                "share": 0.129
+              },
+              {
+                "name": "Gabin Bernardeau",
+                "share": 0.125
+              }
+            ]
+          },
+          "away": {
+            "source": "ingen franvarokalla",
+            "missingShare": 0,
+            "typicalMissing": 0.035,
+            "attackFactor": 1,
+            "players": [],
+            "topPlayers": [
+              {
+                "name": "Matthis Abline",
+                "share": 0.142
+              },
+              {
+                "name": "Folarin Balogun",
+                "share": 0.138
+              },
+              {
+                "name": "Aleksandr Golovin",
+                "share": 0.086
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "date": "2026-10-18",
+      "kickoffUtc": "2026-10-18T15:15:00Z",
+      "league": "L1",
+      "round": "Matchday 7",
+      "home": "Le Havre",
+      "away": "Auxerre",
+      "match": "Le Havre vs Auxerre",
+      "tips": {
+        "1X2": {
+          "pick": "1",
+          "confidence": 0.392,
+          "probs": {
+            "home": 0.392,
+            "draw": 0.28,
+            "away": 0.328
+          }
+        },
+        "BTTS": {
+          "pick": null,
+          "confidence": null,
+          "pYes": null
+        },
+        "OU25": {
+          "pick": "OVER 2.5",
+          "confidence": 0.51,
+          "pOver": 0.51
+        }
+      },
+      "tipScore": 0.451,
+      "marketOnly": true,
+      "marketSource": "Pinnacle",
+      "note": "Marknadstips (Pinnacle utan marginal) - ingen modell for denna liga/match",
+      "pro": {
+        "match": "Le Havre vs Auxerre",
+        "date": "2026-10-18",
+        "league": "L1",
+        "kickoffUtc": "2026-10-18T15:15:00Z",
+        "dc": {
+          "home": 0.3431,
+          "draw": 0.3074,
+          "away": 0.3494,
+          "over25": 0.4286,
+          "btts": 0.4922,
+          "lambdaHome": 1.19,
+          "lambdaAway": 1.2,
+          "knownTeams": true
+        },
+        "blended": {
+          "home": 0.3676,
+          "draw": 0.2937,
+          "away": 0.3387,
+          "over25": 0.4693,
+          "btts": 0.4922
+        },
+        "marketLed": null,
+        "market": {
+          "fairSource": "pinnacle",
+          "fairSourceOu": "pinnacle",
+          "minEv": 0.03,
+          "booksCount": 17,
+          "myBooks": [
+            "LeoVegas (SE)",
+            "Unibet (SE)",
+            "Nordic Bet",
+            "Betsson"
+          ],
+          "overround1x2": 0.0505,
+          "fair": {
+            "home": 0.3918,
+            "draw": 0.28,
+            "away": 0.3283,
+            "over25": 0.5104,
+            "under25": 0.4896
+          }
+        },
+        "valueBets": [],
+        "verdicts": {
+          "home": {
+            "market": "1X2",
+            "pick": "1",
+            "odds": 2.43,
+            "bookmaker": "LeoVegas (SE)",
+            "p": 0.3918,
+            "ev": -0.048,
+            "fairSource": "pinnacle",
+            "minOdds": 2.63,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 715,
+              "ratio": 1.43,
+              "breakEven": 0.4115,
+              "edge": -0.0198,
+              "evSek": -24
+            }
+          },
+          "draw": {
+            "market": "1X2",
+            "pick": "X",
+            "odds": 3.5,
+            "bookmaker": "LeoVegas (SE)",
+            "p": 0.28,
+            "ev": -0.02,
+            "fairSource": "pinnacle",
+            "minOdds": 3.68,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 1250,
+              "ratio": 2.5,
+              "breakEven": 0.2857,
+              "edge": -0.0057,
+              "evSek": -10
+            }
+          },
+          "away": {
+            "market": "1X2",
+            "pick": "2",
+            "odds": 3,
+            "bookmaker": "LeoVegas (SE)",
+            "p": 0.3283,
+            "ev": -0.0152,
+            "fairSource": "pinnacle",
+            "minOdds": 3.14,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 1000,
+              "ratio": 2,
+              "breakEven": 0.3333,
+              "edge": -0.0051,
+              "evSek": -8
+            }
+          },
+          "over25": {
+            "market": "OU25",
+            "pick": "OVER 2.5",
+            "odds": 1.89,
+            "bookmaker": "Betsson",
+            "p": 0.5104,
+            "ev": -0.0353,
+            "fairSource": "pinnacle",
+            "minOdds": 2.02,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 445,
+              "ratio": 0.89,
+              "breakEven": 0.5291,
+              "edge": -0.0187,
+              "evSek": -18
+            }
+          },
+          "under25": {
+            "market": "OU25",
+            "pick": "UNDER 2.5",
+            "odds": 1.95,
+            "bookmaker": "Unibet (SE)",
+            "p": 0.4896,
+            "ev": -0.0453,
+            "fairSource": "pinnacle",
+            "minOdds": 2.1,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 475,
+              "ratio": 0.95,
+              "breakEven": 0.5128,
+              "edge": -0.0232,
+              "evSek": -23
+            }
+          }
+        },
+        "odds": {
+          "home": 2.43,
+          "draw": 3.5,
+          "away": 3,
+          "over25": 1.89,
+          "under25": 1.95
+        },
+        "oddsBooks": {
+          "home": "LeoVegas (SE)",
+          "draw": "LeoVegas (SE)",
+          "away": "LeoVegas (SE)",
+          "over25": "Betsson",
+          "under25": "Unibet (SE)"
+        },
+        "rest": {
+          "home": {
+            "lastMatch": "2026-10-10",
+            "restDays": 8,
+            "matches7d": 0,
+            "matches14d": 1,
+            "congested": false
+          },
+          "away": {
+            "lastMatch": "2026-10-11",
+            "restDays": 7,
+            "matches7d": 1,
+            "matches14d": 1,
+            "congested": false
+          }
+        },
+        "weather": {
+          "available": false,
+          "flags": [],
+          "note": "vader hamtas pa matchdagen"
+        },
+        "availability": {
+          "alpha": 0,
+          "home": {
+            "source": "ingen franvarokalla",
+            "missingShare": 0,
+            "typicalMissing": 0.022,
+            "attackFactor": 1,
+            "players": [],
+            "topPlayers": [
+              {
+                "name": "Issa Soumaré",
+                "share": 0.147
+              },
+              {
+                "name": "Rayan Fofana",
+                "share": 0.146
+              },
+              {
+                "name": "Mbwana Samatta",
+                "share": 0.129
+              }
+            ]
+          },
+          "away": {
+            "source": "ingen franvarokalla",
+            "missingShare": 0,
+            "typicalMissing": 0.006,
+            "attackFactor": 1,
+            "players": [],
+            "topPlayers": [
+              {
+                "name": "Cameron Archer",
+                "share": 0.368
+              },
+              {
+                "name": "Lassine Sinayoko",
+                "share": 0.171
+              },
+              {
+                "name": "Danny Namaso",
+                "share": 0.142
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "date": "2026-10-18",
+      "kickoffUtc": "2026-10-18T15:15:00Z",
+      "league": "L1",
+      "round": "Matchday 7",
+      "home": "Paris FC",
+      "away": "Rennes",
+      "match": "Paris FC vs Rennes",
+      "tips": {
+        "1X2": {
+          "pick": "1",
+          "confidence": 0.412,
+          "probs": {
+            "home": 0.412,
+            "draw": 0.295,
+            "away": 0.293
+          }
+        },
+        "BTTS": {
+          "pick": null,
+          "confidence": null,
+          "pYes": null
+        },
+        "OU25": {
+          "pick": null,
+          "confidence": null,
+          "pOver": null
+        }
+      },
+      "tipScore": 0.412,
+      "marketOnly": true,
+      "marketSource": "Pinnacle",
+      "note": "Marknadstips (Pinnacle utan marginal) - ingen modell for denna liga/match",
+      "pro": {
+        "match": "Paris FC vs Rennes",
+        "date": "2026-10-18",
+        "league": "L1",
+        "kickoffUtc": "2026-10-18T15:15:00Z",
+        "dc": {
+          "home": 0.4268,
+          "draw": 0.2666,
+          "away": 0.3066,
+          "over25": 0.5811,
+          "btts": 0.6069,
+          "lambdaHome": 1.65,
+          "lambdaAway": 1.37,
+          "knownTeams": true
+        },
+        "blended": {
+          "home": 0.4194,
+          "draw": 0.2808,
+          "away": 0.2998,
+          "over25": 0.5811,
+          "btts": 0.6069
+        },
+        "marketLed": null,
+        "market": {
+          "fairSource": "pinnacle",
+          "fairSourceOu": "snitt av 5 bolag",
+          "minEv": 0.03,
+          "booksCount": 17,
+          "myBooks": [
+            "LeoVegas (SE)",
+            "Unibet (SE)",
+            "Nordic Bet",
+            "Betsson"
+          ],
+          "overround1x2": 0.0502,
+          "fair": {
+            "home": 0.4122,
+            "draw": 0.2948,
+            "away": 0.293,
+            "over25": 0.5742,
+            "under25": 0.4258
+          }
+        },
+        "valueBets": [
+          {
+            "market": "1X2",
+            "pick": "X",
+            "odds": 3.5,
+            "bookmaker": "LeoVegas (SE)",
+            "strategy": "consensusAtBestPrice",
+            "fairSource": "pinnacle",
+            "p": 0.2948,
+            "modelP": 0.2808,
+            "ev": 0.0318,
+            "stakeSek": 500
+          }
+        ],
+        "verdicts": {
+          "home": {
+            "market": "1X2",
+            "pick": "1",
+            "odds": 2.32,
+            "bookmaker": "Nordic Bet",
+            "p": 0.4122,
+            "ev": -0.0437,
+            "fairSource": "pinnacle",
+            "minOdds": 2.5,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 660,
+              "ratio": 1.32,
+              "breakEven": 0.431,
+              "edge": -0.0188,
+              "evSek": -22
+            }
+          },
+          "draw": {
+            "market": "1X2",
+            "pick": "X",
+            "odds": 3.5,
+            "bookmaker": "LeoVegas (SE)",
+            "p": 0.2948,
+            "ev": 0.0318,
+            "fairSource": "pinnacle",
+            "minOdds": 3.49,
+            "value": true,
+            "riskReward": {
+              "stake": 500,
+              "win": 1250,
+              "ratio": 2.5,
+              "breakEven": 0.2857,
+              "edge": 0.0091,
+              "evSek": 16
+            }
+          },
+          "away": {
+            "market": "1X2",
+            "pick": "2",
+            "odds": 3.15,
+            "bookmaker": "LeoVegas (SE)",
+            "p": 0.293,
+            "ev": -0.0771,
+            "fairSource": "pinnacle",
+            "minOdds": 3.52,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 1075,
+              "ratio": 2.15,
+              "breakEven": 0.3175,
+              "edge": -0.0245,
+              "evSek": -39
+            }
+          },
+          "over25": {
+            "market": "OU25",
+            "pick": "OVER 2.5",
+            "odds": 1.65,
+            "bookmaker": "Betsson",
+            "p": 0.5742,
+            "ev": -0.0525,
+            "fairSource": "snitt av 5 bolag",
+            "minOdds": 1.83,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 325,
+              "ratio": 0.65,
+              "breakEven": 0.6061,
+              "edge": -0.0318,
+              "evSek": -26
+            }
+          },
+          "under25": {
+            "market": "OU25",
+            "pick": "UNDER 2.5",
+            "odds": 2.26,
+            "bookmaker": "Betsson",
+            "p": 0.4258,
+            "ev": -0.0377,
+            "fairSource": "snitt av 5 bolag",
+            "minOdds": 2.47,
+            "value": false,
+            "riskReward": {
+              "stake": 500,
+              "win": 630,
+              "ratio": 1.26,
+              "breakEven": 0.4425,
+              "edge": -0.0167,
+              "evSek": -19
+            }
+          }
+        },
+        "odds": {
+          "home": 2.32,
+          "draw": 3.5,
+          "away": 3.15,
+          "over25": 1.65,
+          "under25": 2.26
+        },
+        "oddsBooks": {
+          "home": "Nordic Bet",
+          "draw": "LeoVegas (SE)",
+          "away": "LeoVegas (SE)",
+          "over25": "Betsson",
+          "under25": "Betsson"
+        },
+        "rest": {
+          "home": {
+            "lastMatch": "2026-10-10",
+            "restDays": 8,
+            "matches7d": 0,
+            "matches14d": 1,
+            "congested": false
+          },
+          "away": {
+            "lastMatch": "2026-10-11",
+            "restDays": 7,
+            "matches7d": 1,
+            "matches14d": 1,
+            "congested": false
+          }
+        },
+        "weather": {
+          "available": false,
+          "flags": [],
+          "note": "vader hamtas pa matchdagen"
+        },
+        "availability": {
+          "alpha": 0,
+          "home": {
+            "source": "ingen franvarokalla",
+            "missingShare": 0,
+            "typicalMissing": 0.067,
+            "attackFactor": 1,
+            "players": [],
+            "topPlayers": [
+              {
+                "name": "Lassine Sinayoko",
+                "share": 0.234
+              },
+              {
+                "name": "Pablo Pagis",
+                "share": 0.123
+              },
+              {
+                "name": "Ilan Kebbal",
+                "share": 0.098
+              }
+            ]
+          },
+          "away": {
+            "source": "ingen franvarokalla",
+            "missingShare": 0,
+            "typicalMissing": 0.032,
+            "attackFactor": 1,
+            "players": [],
+            "topPlayers": [
+              {
+                "name": "Esteban Lepaul",
+                "share": 0.176
+              },
+              {
+                "name": "Adrien Thomasson",
+                "share": 0.132
+              },
+              {
+                "name": "Ludovic Blas",
+                "share": 0.101
               }
             ]
           }
@@ -139450,7 +142102,7 @@
     "source": "the-odds-api.com v4"
   },
   "proMeta": {
-    "updatedAt": "2026-09-27T14:12:55.309Z",
+    "updatedAt": "2026-09-27T17:02:57.825Z",
     "config": {
       "dcWeight": 0.5,
       "minEv": 0.03,
@@ -142523,6 +145175,533 @@
         }
       }
     },
+    "marketTest": {
+      "CH": {
+        "vsOpening": {
+          "n": 647,
+          "logLossDc": 1.0616,
+          "logLossMarket": 1.0428,
+          "bestW": 0,
+          "testMarket": 1.0262,
+          "testBlend": 1.0262,
+          "modelAddsInfo": false
+        },
+        "vsClosing": {
+          "n": 647,
+          "logLossDc": 1.0616,
+          "logLossMarket": 1.0425,
+          "bestW": 0,
+          "testMarket": 1.0289,
+          "testBlend": 1.0289,
+          "modelAddsInfo": false
+        },
+        "fromOddsHistory": 0
+      },
+      "PL": {
+        "vsOpening": {
+          "n": 430,
+          "logLossDc": 1.0232,
+          "logLossMarket": 1.0201,
+          "bestW": 0.3,
+          "testMarket": 1.0467,
+          "testBlend": 1.0435,
+          "modelAddsInfo": true
+        },
+        "vsClosing": {
+          "n": 430,
+          "logLossDc": 1.0232,
+          "logLossMarket": 1.0199,
+          "bestW": 0.3,
+          "testMarket": 1.0473,
+          "testBlend": 1.0427,
+          "modelAddsInfo": true
+        },
+        "fromOddsHistory": 0
+      },
+      "AR": {
+        "vsOpening": {
+          "n": 0
+        },
+        "vsClosing": {
+          "n": 914,
+          "logLossDc": 1.0687,
+          "logLossMarket": 1.0558,
+          "bestW": 0,
+          "testMarket": 1.0481,
+          "testBlend": 1.0481,
+          "modelAddsInfo": false
+        },
+        "fromOddsHistory": 0
+      },
+      "MLS": {
+        "vsOpening": {
+          "n": 0
+        },
+        "vsClosing": {
+          "n": 928,
+          "logLossDc": 1.0504,
+          "logLossMarket": 1.0264,
+          "bestW": 0.1,
+          "testMarket": 1.0174,
+          "testBlend": 1.0192,
+          "modelAddsInfo": false
+        },
+        "fromOddsHistory": 0
+      },
+      "JP1": {
+        "vsOpening": {
+          "n": 0
+        },
+        "vsClosing": {
+          "n": 460,
+          "logLossDc": 1.0335,
+          "logLossMarket": 1.0209,
+          "bestW": 0.3,
+          "testMarket": 0.9869,
+          "testBlend": 0.9883,
+          "modelAddsInfo": false
+        },
+        "fromOddsHistory": 0
+      },
+      "AS": {
+        "vsOpening": {
+          "n": 0
+        },
+        "vsClosing": {
+          "n": 416,
+          "logLossDc": 1.0157,
+          "logLossMarket": 0.9954,
+          "bestW": 0.3,
+          "testMarket": 0.9943,
+          "testBlend": 1.0011,
+          "modelAddsInfo": false
+        },
+        "fromOddsHistory": 0
+      },
+      "NO": {
+        "vsOpening": {
+          "n": 0
+        },
+        "vsClosing": {
+          "n": 408,
+          "logLossDc": 0.9445,
+          "logLossMarket": 0.9168,
+          "bestW": 0,
+          "testMarket": 0.9003,
+          "testBlend": 0.9003,
+          "modelAddsInfo": false
+        },
+        "fromOddsHistory": 0
+      },
+      "BR": {
+        "vsOpening": {
+          "n": 0
+        },
+        "vsClosing": {
+          "n": 657,
+          "logLossDc": 1.0088,
+          "logLossMarket": 0.99,
+          "bestW": 0.3,
+          "testMarket": 0.9844,
+          "testBlend": 0.9888,
+          "modelAddsInfo": false
+        },
+        "fromOddsHistory": 0
+      },
+      "MX": {
+        "vsOpening": {
+          "n": 0
+        },
+        "vsClosing": {
+          "n": 415,
+          "logLossDc": 1.0136,
+          "logLossMarket": 0.9903,
+          "bestW": 0.2,
+          "testMarket": 1.0194,
+          "testBlend": 1.0238,
+          "modelAddsInfo": false
+        },
+        "fromOddsHistory": 0
+      },
+      "DK": {
+        "vsOpening": {
+          "n": 0
+        },
+        "vsClosing": {
+          "n": 246,
+          "logLossDc": 1.0395,
+          "logLossMarket": 1.0155,
+          "bestW": 0,
+          "testMarket": 1.0377,
+          "testBlend": 1.0377,
+          "modelAddsInfo": false
+        },
+        "fromOddsHistory": 0
+      },
+      "EK": {
+        "vsOpening": {
+          "n": 0
+        },
+        "vsClosing": {
+          "n": 384,
+          "logLossDc": 1.074,
+          "logLossMarket": 1.0539,
+          "bestW": 0,
+          "testMarket": 1.024,
+          "testBlend": 1.024,
+          "modelAddsInfo": false
+        },
+        "fromOddsHistory": 0
+      },
+      "BL2": {
+        "vsOpening": {
+          "n": 360,
+          "logLossDc": 1.0551,
+          "logLossMarket": 1.0375,
+          "bestW": 0,
+          "testMarket": 1.0396,
+          "testBlend": 1.0396,
+          "modelAddsInfo": false
+        },
+        "vsClosing": {
+          "n": 360,
+          "logLossDc": 1.0551,
+          "logLossMarket": 1.0367,
+          "bestW": 0,
+          "testMarket": 1.0409,
+          "testBlend": 1.0409,
+          "modelAddsInfo": false
+        },
+        "fromOddsHistory": 0
+      },
+      "ED": {
+        "vsOpening": {
+          "n": 369,
+          "logLossDc": 0.9875,
+          "logLossMarket": 0.9741,
+          "bestW": 0,
+          "testMarket": 0.974,
+          "testBlend": 0.974,
+          "modelAddsInfo": false
+        },
+        "vsClosing": {
+          "n": 369,
+          "logLossDc": 0.9875,
+          "logLossMarket": 0.976,
+          "bestW": 0.3,
+          "testMarket": 0.9703,
+          "testBlend": 0.9706,
+          "modelAddsInfo": false
+        },
+        "fromOddsHistory": 0
+      },
+      "EL1": {
+        "vsOpening": {
+          "n": 635,
+          "logLossDc": 1.0573,
+          "logLossMarket": 1.0304,
+          "bestW": 0,
+          "testMarket": 1.0236,
+          "testBlend": 1.0236,
+          "modelAddsInfo": false
+        },
+        "vsClosing": {
+          "n": 635,
+          "logLossDc": 1.0573,
+          "logLossMarket": 1.0277,
+          "bestW": 0,
+          "testMarket": 1.0234,
+          "testBlend": 1.0234,
+          "modelAddsInfo": false
+        },
+        "fromOddsHistory": 0
+      },
+      "PT": {
+        "vsOpening": {
+          "n": 368,
+          "logLossDc": 0.9282,
+          "logLossMarket": 0.9202,
+          "bestW": 0.3,
+          "testMarket": 0.9448,
+          "testBlend": 0.9469,
+          "modelAddsInfo": false
+        },
+        "vsClosing": {
+          "n": 368,
+          "logLossDc": 0.9282,
+          "logLossMarket": 0.907,
+          "bestW": 0,
+          "testMarket": 0.9313,
+          "testBlend": 0.9313,
+          "modelAddsInfo": false
+        },
+        "fromOddsHistory": 0
+      },
+      "LL": {
+        "vsOpening": {
+          "n": 449,
+          "logLossDc": 0.9798,
+          "logLossMarket": 0.9609,
+          "bestW": 0,
+          "testMarket": 0.9767,
+          "testBlend": 0.9767,
+          "modelAddsInfo": false
+        },
+        "vsClosing": {
+          "n": 449,
+          "logLossDc": 0.9798,
+          "logLossMarket": 0.9583,
+          "bestW": 0,
+          "testMarket": 0.9705,
+          "testBlend": 0.9705,
+          "modelAddsInfo": false
+        },
+        "fromOddsHistory": 0
+      },
+      "LL2": {
+        "vsOpening": {
+          "n": 528,
+          "logLossDc": 1.0505,
+          "logLossMarket": 1.0314,
+          "bestW": 0,
+          "testMarket": 0.9991,
+          "testBlend": 0.9991,
+          "modelAddsInfo": false
+        },
+        "vsClosing": {
+          "n": 528,
+          "logLossDc": 1.0505,
+          "logLossMarket": 1.0264,
+          "bestW": 0,
+          "testMarket": 0.9929,
+          "testBlend": 0.9929,
+          "modelAddsInfo": false
+        },
+        "fromOddsHistory": 0
+      },
+      "L1": {
+        "vsOpening": {
+          "n": 351,
+          "logLossDc": 1.0102,
+          "logLossMarket": 0.9818,
+          "bestW": 0,
+          "testMarket": 1.0202,
+          "testBlend": 1.0202,
+          "modelAddsInfo": false
+        },
+        "vsClosing": {
+          "n": 351,
+          "logLossDc": 1.0102,
+          "logLossMarket": 0.9833,
+          "bestW": 0,
+          "testMarket": 1.0172,
+          "testBlend": 1.0172,
+          "modelAddsInfo": false
+        },
+        "fromOddsHistory": 0
+      },
+      "SB": {
+        "vsOpening": {
+          "n": 430,
+          "logLossDc": 1.0326,
+          "logLossMarket": 1.0216,
+          "bestW": 0.1,
+          "testMarket": 1.0152,
+          "testBlend": 1.0155,
+          "modelAddsInfo": false
+        },
+        "vsClosing": {
+          "n": 430,
+          "logLossDc": 1.0326,
+          "logLossMarket": 1.0082,
+          "bestW": 0,
+          "testMarket": 1.0054,
+          "testBlend": 1.0054,
+          "modelAddsInfo": false
+        },
+        "fromOddsHistory": 0
+      },
+      "SA": {
+        "vsOpening": {
+          "n": 430,
+          "logLossDc": 0.9883,
+          "logLossMarket": 0.9731,
+          "bestW": 0,
+          "testMarket": 0.9568,
+          "testBlend": 0.9568,
+          "modelAddsInfo": false
+        },
+        "vsClosing": {
+          "n": 430,
+          "logLossDc": 0.9883,
+          "logLossMarket": 0.9704,
+          "bestW": 0,
+          "testMarket": 0.9543,
+          "testBlend": 0.9543,
+          "modelAddsInfo": false
+        },
+        "fromOddsHistory": 0
+      },
+      "GR": {
+        "vsOpening": {
+          "n": 271,
+          "logLossDc": 0.9627,
+          "logLossMarket": 0.946,
+          "bestW": 0,
+          "testMarket": 1.0207,
+          "testBlend": 1.0207,
+          "modelAddsInfo": false
+        },
+        "vsClosing": {
+          "n": 271,
+          "logLossDc": 0.9627,
+          "logLossMarket": 0.923,
+          "bestW": 0,
+          "testMarket": 0.9943,
+          "testBlend": 0.9943,
+          "modelAddsInfo": false
+        },
+        "fromOddsHistory": 0
+      },
+      "BL": {
+        "vsOpening": {
+          "n": 342,
+          "logLossDc": 0.9805,
+          "logLossMarket": 0.9533,
+          "bestW": 0,
+          "testMarket": 0.9696,
+          "testBlend": 0.9696,
+          "modelAddsInfo": false
+        },
+        "vsClosing": {
+          "n": 342,
+          "logLossDc": 0.9805,
+          "logLossMarket": 0.951,
+          "bestW": 0,
+          "testMarket": 0.9676,
+          "testBlend": 0.9676,
+          "modelAddsInfo": false
+        },
+        "fromOddsHistory": 0
+      },
+      "COL": {
+        "vsOpening": {
+          "n": 0
+        },
+        "vsClosing": {
+          "n": 0
+        },
+        "fromOddsHistory": 0
+      },
+      "JP2": {
+        "vsOpening": {
+          "n": 0
+        },
+        "vsClosing": {
+          "n": 0
+        },
+        "fromOddsHistory": 0
+      },
+      "JP3": {
+        "vsOpening": {
+          "n": 0
+        },
+        "vsClosing": {
+          "n": 0
+        },
+        "fromOddsHistory": 0
+      },
+      "CHI": {
+        "vsOpening": {
+          "n": 0
+        },
+        "vsClosing": {
+          "n": 0
+        },
+        "fromOddsHistory": 0
+      },
+      "KR": {
+        "vsOpening": {
+          "n": 0
+        },
+        "vsClosing": {
+          "n": 0
+        },
+        "fromOddsHistory": 0
+      },
+      "SE3N": {
+        "vsOpening": {
+          "n": 0
+        },
+        "vsClosing": {
+          "n": 0
+        },
+        "fromOddsHistory": 0
+      },
+      "SE3S": {
+        "vsOpening": {
+          "n": 0
+        },
+        "vsClosing": {
+          "n": 0
+        },
+        "fromOddsHistory": 0
+      },
+      "SE2": {
+        "vsOpening": {
+          "n": 0
+        },
+        "vsClosing": {
+          "n": 0
+        },
+        "fromOddsHistory": 0
+      },
+      "NO2": {
+        "vsOpening": {
+          "n": 0
+        },
+        "vsClosing": {
+          "n": 0
+        },
+        "fromOddsHistory": 0
+      },
+      "BR2": {
+        "vsOpening": {
+          "n": 0
+        },
+        "vsClosing": {
+          "n": 0
+        },
+        "fromOddsHistory": 0
+      },
+      "CZ": {
+        "vsOpening": {
+          "n": 0
+        },
+        "vsClosing": {
+          "n": 0
+        },
+        "fromOddsHistory": 0
+      },
+      "DK2": {
+        "vsOpening": {
+          "n": 0
+        },
+        "vsClosing": {
+          "n": 0
+        },
+        "fromOddsHistory": 0
+      },
+      "HR": {
+        "vsOpening": {
+          "n": 0
+        },
+        "vsClosing": {
+          "n": 0
+        },
+        "fromOddsHistory": 0
+      }
+    },
     "note": "pro = Dixon-Coles + devig (multiplicative) + spelarviktad franvaro + vilodagar + vader. Fast insats stakeSek per spel. Se docs/krav/01-proffs-research.md"
   },
   "valueBets": [
@@ -142707,6 +145886,21 @@
       "stakeSek": 500
     },
     {
+      "match": "Nott'm Forest vs Arsenal",
+      "date": "2026-10-18",
+      "league": "PL",
+      "market": "1X2",
+      "pick": "X",
+      "odds": 4.1,
+      "bookmaker": "Unibet (SE)",
+      "strategy": "consensusAtBestPrice",
+      "fairSource": "pinnacle",
+      "p": 0.2536,
+      "modelP": 0.2802,
+      "ev": 0.0398,
+      "stakeSek": 500
+    },
+    {
       "match": "Sassuolo vs Milan",
       "date": "2026-10-11",
       "league": "SA",
@@ -142794,6 +145988,21 @@
       "p": 0.2327,
       "modelP": 0.1924,
       "ev": 0.033,
+      "stakeSek": 500
+    },
+    {
+      "match": "Paris FC vs Rennes",
+      "date": "2026-10-18",
+      "league": "L1",
+      "market": "1X2",
+      "pick": "X",
+      "odds": 3.5,
+      "bookmaker": "LeoVegas (SE)",
+      "strategy": "consensusAtBestPrice",
+      "fairSource": "pinnacle",
+      "p": 0.2948,
+      "modelP": 0.2808,
+      "ev": 0.0318,
       "stakeSek": 500
     },
     {
