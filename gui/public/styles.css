@@ -393,6 +393,22 @@ html, body {
   gap: 0.7rem;
 }
 
+.tip-group-head {
+  margin: 0.9rem 0 0;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.tip-group-head:first-child { margin-top: 0; }
+.tip-group-head .count {
+  margin-left: 0.45rem;
+  opacity: 0.65;
+}
+
 .tip {
   display: block;
   padding: 1rem 1.15rem 1.05rem;
@@ -930,7 +946,9 @@ html, body {
 
 /* Analys-knappen på varje tipskort */
 .tip-analyze { margin-top: 0.75rem; }
-.btn-analyze {
+.tip-actions { display: flex; flex-wrap: wrap; gap: 0.45rem; align-items: center; }
+.btn-analyze,
+.btn-lineup {
   border: 1px solid rgba(184, 242, 85, 0.35);
   background: transparent;
   color: var(--lime);
@@ -941,7 +959,37 @@ html, body {
   font-size: 0.78rem;
   cursor: pointer;
 }
+.btn-lineup {
+  border-color: rgba(120, 180, 255, 0.4);
+  color: #9ec1ff;
+}
 .btn-analyze:hover { background: rgba(184, 242, 85, 0.1); }
+.btn-lineup:hover { background: rgba(120, 180, 255, 0.1); }
+.btn-lineup:disabled { opacity: 0.55; cursor: wait; }
 .tip-analyze .analysis { margin-top: 0.6rem; }
 .tip-analyze .scan-body { padding: 0; }
 .agent-box h4 .verdict { margin-left: 0.3rem; vertical-align: middle; }
+
+.xi-grid {
+  display: grid;
+  gap: 0.55rem;
+  margin-top: 0.55rem;
+}
+.xi-side {
+  padding: 0.45rem 0.55rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+.xi-label {
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted, #9aa3b2);
+  margin-bottom: 0.25rem;
+}
+.xi-names {
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: var(--text, #e8ecf4);
+}

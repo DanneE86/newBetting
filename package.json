@@ -8,6 +8,7 @@
     "fpl": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Fetch-FplAvailability.ps1",
     "clubelo": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Fetch-ClubElo.ps1",
     "lineups": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Fetch-Lineups.ps1",
+    "lineup": "node scripts/fetch-match-lineup.mjs",
     "players": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Fetch-PlayerStats.ps1",
     "odds": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Fetch-OddsApi.ps1",
     "oddsportal": "node scripts/fetch-oddsportal.mjs",

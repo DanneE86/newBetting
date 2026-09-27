@@ -125,6 +125,10 @@ function agentFootball(t, teams) {
 }
 
 // ---------- Agent 4: Research ----------
+function starterNames(list) {
+  return (list || []).map((p) => (typeof p === 'string' ? p : p?.name)).filter(Boolean);
+}
+
 function agentResearch(t) {
   const pro = t.pro || {};
   const notes = [...(t.availabilityNotes || []), ...(t.lineupNotes || [])];
@@ -135,8 +139,16 @@ function agentResearch(t) {
   }
   const weather = pro.weather?.flags || [];
   for (const f of weather) notes.push(`Väder: ${f}`);
+  const homeStarters = starterNames(t.homeStarters);
+  const awayStarters = starterNames(t.awayStarters);
+  if (t.lineupSource) notes.push(`Källa: ${t.lineupSource}`);
   return {
     lineupStatus: t.lineupStatus || 'none',
+    lineupSource: t.lineupSource || null,
+    homeFormation: t.homeFormation || null,
+    awayFormation: t.awayFormation || null,
+    homeStarters,
+    awayStarters,
     keyOuts: t.keyOuts || { home: 0, away: 0 },
     notes,
     weatherFlags: weather,

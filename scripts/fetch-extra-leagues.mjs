@@ -31,6 +31,19 @@ const ALIASES = {
   DK: { 'AGF': 'Aarhus' },
   MLS: { 'LAFC': 'Los Angeles FC', 'LA Galaxy': 'Los Angeles Galaxy' },
   GR: { 'Olympiacos': 'Olympiakos', 'Levadiakos': 'Levadeiakos' },
+  EK: {
+    'Legia Warszawa': 'Legia', 'Raków Częstochowa': 'Rakow', 'Rakow Czestochowa': 'Rakow',
+    'Zagłębie Lubin': 'Zaglebie', 'Zaglebie Lubin': 'Zaglebie',
+    'Wisła Płock': 'Wisla Plock', 'Wisla Plock': 'Wisla Plock',
+    'Wisła Kraków': 'Wisla', 'Wisla Krakow': 'Wisla',
+    'Śląsk Wrocław': 'Slask Wroclaw', 'Slask Wroclaw': 'Slask Wroclaw',
+    'Górnik Zabrze': 'Gornik Zabrze', 'Jagiellonia Białystok': 'Jagiellonia',
+    'Jagiellonia Bialystok': 'Jagiellonia', 'Widzew Łódź': 'Widzew Lodz', 'Widzew Lodz': 'Widzew Lodz',
+    'Pogoń Szczecin': 'Pogon Szczecin', 'Lech Poznań': 'Lech Poznan',
+    'Lechia Gdańsk': 'Lechia Gdansk', 'Wieczysta Kraków': 'Wieczysta Krakow',
+    'Termalica Nieciecza': 'Termalica B-B.', 'Bruk-Bet Termalica Nieciecza': 'Termalica B-B.',
+    'Puszcza Niepołomice': 'Puszcza',
+  },
 };
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -249,6 +262,47 @@ async function tsdbLeague(code, lg, r) {
 const newFixtures = [...tsdbFixtures];
 for (const f of tsdbFixtures) report.leagues[f.league].upcoming = (report.leagues[f.league].upcoming ?? 0) + 1;
 for (const code of new Set(tsdbFixtures.map((f) => f.league))) console.log(`  ${code} ${REG.leagues[code].name}: ${report.leagues[code].upcoming} kommande, historik ${report.leagues[code].historyMatches}`);
+
+/** Fotmob: hela ligans spelschema i ett anrop (t.ex. Ekstraklasa dar ESPN saknas). */
+async function fotmobUpcoming(code, lg, r) {
+  const d = await get(`https://www.fotmob.com/api/data/leagues?id=${lg.fotmobId}`);
+  const today = new Date().toISOString().slice(0, 10);
+  const horizon = new Date(Date.now() + HORIZON_DAYS * 86_400_000).toISOString().slice(0, 10);
+  const known = teamNames[code] ?? new Set();
+  const unmapped = new Set();
+  let n = 0;
+  for (const m of d.fixtures?.allMatches ?? []) {
+    if (m.status?.finished || m.status?.cancelled) continue;
+    const date = (m.status?.utcTime || '').slice(0, 10);
+    if (!date || date < today || date > horizon) continue;
+    const home = mapName(code, m.home?.name, known) ?? (known.size ? null : m.home?.name);
+    const away = mapName(code, m.away?.name, known) ?? (known.size ? null : m.away?.name);
+    if (!home) unmapped.add(m.home?.name);
+    if (!away) unmapped.add(m.away?.name);
+    if (!home || !away) continue;
+    newFixtures.push({
+      date, league: code, home, away, source: 'fotmob',
+      kickoffUtc: m.status?.utcTime || null,
+      round: m.round ? `Omg ${m.round}` : null,
+      fotmobMatchId: m.id ? String(m.id) : null,
+    });
+    n++;
+  }
+  r.upcoming = n;
+  if (unmapped.size) r.unmapped = [...unmapped];
+  console.log(`  ${code} ${lg.name}: ${n} kommande (Fotmob)${unmapped.size ? ` (omappade: ${[...unmapped].join(', ')})` : ''}${r.historyMatches ? `, historik ${r.historyMatches}` : ''}`);
+}
+
+for (const [code, lg] of Object.entries(REG.leagues)) {
+  if (!lg.fotmobId || lg.espn) continue; // ESPN-ligor hanteras nedan
+  try {
+    await fotmobUpcoming(code, lg, report.leagues[code]);
+  } catch (e) {
+    report.leagues[code].upcomingError = e.message;
+    console.log(`  ${code} Fotmob FEL: ${e.message}`);
+  }
+}
+
 const days = Array.from({ length: HORIZON_DAYS + 1 }, (_, i) => ymd(new Date(Date.now() + i * 86_400_000)));
 for (const [code, lg] of Object.entries(REG.leagues)) {
   if (!lg.espn) continue;
@@ -277,7 +331,7 @@ for (const [code, lg] of Object.entries(REG.leagues)) {
 }
 
 // Merga: ersatt ligornas rader, behall openfootball-ligorna
-const codes = new Set(Object.entries(REG.leagues).filter(([, l]) => l.espn || l.history === 'tsdb').map(([c]) => c));
+const codes = new Set(Object.entries(REG.leagues).filter(([, l]) => l.espn || l.fotmobId || l.history === 'tsdb').map(([c]) => c));
 const all = fs.existsSync(FIXTURES) ? JSON.parse(fs.readFileSync(FIXTURES, 'utf8').replace(/^﻿/, '')) : [];
 // Oversatt ALLA lagnamn (aven openfootball-ligornas, t.ex. "FC Bayern München") till historikens namn,
 // annars kanner modellen inte igen lagen och matchen far inget modelltips.

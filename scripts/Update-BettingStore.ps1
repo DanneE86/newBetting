@@ -289,6 +289,11 @@ function New-TeamBag {
         btts = 0; over25 = 0
         homePlayed = 0; homeWins = 0; homeBtts = 0; homeOver25 = 0; homeGf = 0; homeGa = 0
         awayPlayed = 0; awayWins = 0; awayBtts = 0; awayOver25 = 0; awayGf = 0; awayGa = 0
+        # Horn (fran football-data HC/AC nar tillgangligt)
+        cornersPlayed = 0; cornersFor = 0; cornersAgainst = 0
+        cornersOver85 = 0; cornersOver95 = 0; cornersOver105 = 0
+        homeCornersPlayed = 0; homeCornersFor = 0; homeCornersAgainst = 0
+        awayCornersPlayed = 0; awayCornersFor = 0; awayCornersAgainst = 0
         recent = New-Object System.Collections.Generic.List[string]
     }
 }
@@ -313,9 +318,16 @@ foreach ($m in $sorted) {
     $homeT = Ensure-Team $m.league $m.home
     $awayT = Ensure-Team $m.league $m.away
 
-    $homeEntry = [ordered]@{ date = $m.date; opp = $m.away; gf = $m.hg; ga = $m.ag; result = $m.result; venue = "H"; btts = $m.btts; over25 = $m.over25 }
+    $homeEntry = [ordered]@{ date = $m.date; opp = $m.away; gf = $m.hg; ga = $m.ag; result = $m.result; venue = "H"; btts = $m.btts; over25 = $m.over25; cornersFor = $null; cornersAgainst = $null }
     $awayResult = if ($m.result -eq "H") { "A" } elseif ($m.result -eq "A") { "H" } else { "D" }
-    $awayEntry = [ordered]@{ date = $m.date; opp = $m.home; gf = $m.ag; ga = $m.hg; result = $awayResult; venue = "A"; btts = $m.btts; over25 = $m.over25 }
+    $awayEntry = [ordered]@{ date = $m.date; opp = $m.home; gf = $m.ag; ga = $m.hg; result = $awayResult; venue = "A"; btts = $m.btts; over25 = $m.over25; cornersFor = $null; cornersAgainst = $null }
+    $hc = $null; $ac = $null
+    if ($m.discipline -and $null -ne $m.discipline.homeCorners -and $null -ne $m.discipline.awayCorners) {
+        $hc = [int]$m.discipline.homeCorners
+        $ac = [int]$m.discipline.awayCorners
+        $homeEntry.cornersFor = $hc; $homeEntry.cornersAgainst = $ac
+        $awayEntry.cornersFor = $ac; $awayEntry.cornersAgainst = $hc
+    }
 
     $homeT.last10.Add($homeEntry)
     $awayT.last10.Add($awayEntry)
@@ -349,6 +361,23 @@ foreach ($m in $sorted) {
             if ($win) { $t.awayWins++ }
             if ($m.btts) { $t.awayBtts++ }
             if ($m.over25) { $t.awayOver25++ }
+        }
+
+        if ($null -ne $hc -and $null -ne $ac) {
+            $cf = if ($side -eq "home") { $hc } else { $ac }
+            $ca = if ($side -eq "home") { $ac } else { $hc }
+            $totC = $hc + $ac
+            $t.cornersPlayed++
+            $t.cornersFor += $cf
+            $t.cornersAgainst += $ca
+            if ($totC -gt 8.5) { $t.cornersOver85++ }
+            if ($totC -gt 9.5) { $t.cornersOver95++ }
+            if ($totC -gt 10.5) { $t.cornersOver105++ }
+            if ($side -eq "home") {
+                $t.homeCornersPlayed++; $t.homeCornersFor += $cf; $t.homeCornersAgainst += $ca
+            } else {
+                $t.awayCornersPlayed++; $t.awayCornersFor += $cf; $t.awayCornersAgainst += $ca
+            }
         }
     }
 }
@@ -413,6 +442,24 @@ function Rate($num, $den) {
     return [math]::Round($n / $d, 4)
 }
 
+function Get-FactN([int]$n) {
+    if ($n -le 1) { return 1.0 }
+    $r = 1.0
+    for ($i = 2; $i -le $n; $i++) { $r *= $i }
+    return $r
+}
+function Get-PoissonP([double]$l, [int]$k) {
+    if ($l -lt 0) { $l = 0 }
+    return [math]::Exp(-$l) * [math]::Pow($l, $k) / (Get-FactN $k)
+}
+function Get-PoissonOverHalf([double]$expTotal, [double]$line) {
+    # P(X > line) for X~Poisson, line half-integer (8.5/9.5/10.5)
+    $maxK = [int][math]::Floor($line)
+    $cdf = 0.0
+    for ($k = 0; $k -le $maxK; $k++) { $cdf += (Get-PoissonP $expTotal $k) }
+    return [math]::Min(0.92, [math]::Max(0.08, 1.0 - $cdf))
+}
+
 $teamsOut = New-Object System.Collections.Generic.List[object]
 foreach ($k in ($teamStats.Keys | Sort-Object)) {
     $t = $teamStats[$k]
@@ -437,6 +484,8 @@ foreach ($k in ($teamStats.Keys | Sort-Object)) {
             over25Rate = (Rate $s.homeOver25 $s.homePlayed)
             gfPg = (Rate $s.homeGf $s.homePlayed)
             gaPg = (Rate $s.homeGa $s.homePlayed)
+            cornersForPg = (Rate $s.homeCornersFor $s.homeCornersPlayed)
+            cornersAgainstPg = (Rate $s.homeCornersAgainst $s.homeCornersPlayed)
         }
         $entry["away"] = @{
             played = [int]$s.awayPlayed
@@ -445,11 +494,33 @@ foreach ($k in ($teamStats.Keys | Sort-Object)) {
             over25Rate = (Rate $s.awayOver25 $s.awayPlayed)
             gfPg = (Rate $s.awayGf $s.awayPlayed)
             gaPg = (Rate $s.awayGa $s.awayPlayed)
+            cornersForPg = (Rate $s.awayCornersFor $s.awayCornersPlayed)
+            cornersAgainstPg = (Rate $s.awayCornersAgainst $s.awayCornersPlayed)
+        }
+        $entry["corners"] = @{
+            played = [int]$s.cornersPlayed
+            forPg = (Rate $s.cornersFor $s.cornersPlayed)
+            againstPg = (Rate $s.cornersAgainst $s.cornersPlayed)
+            totalPg = (Rate ($s.cornersFor + $s.cornersAgainst) $s.cornersPlayed)
+            over85Rate = (Rate $s.cornersOver85 $s.cornersPlayed)
+            over95Rate = (Rate $s.cornersOver95 $s.cornersPlayed)
+            over105Rate = (Rate $s.cornersOver105 $s.cornersPlayed)
+            home = @{
+                played = [int]$s.homeCornersPlayed
+                forPg = (Rate $s.homeCornersFor $s.homeCornersPlayed)
+                againstPg = (Rate $s.homeCornersAgainst $s.homeCornersPlayed)
+            }
+            away = @{
+                played = [int]$s.awayCornersPlayed
+                forPg = (Rate $s.awayCornersFor $s.awayCornersPlayed)
+                againstPg = (Rate $s.awayCornersAgainst $s.awayCornersPlayed)
+            }
         }
         $entry["last10"] = @($t.last10 | ForEach-Object {
             [ordered]@{
                 date = $_.date; opp = $_.opp; gf = $_.gf; ga = $_.ga
                 result = $_.result; venue = $_.venue; btts = [bool]$_.btts; over25 = [bool]$_.over25
+                cornersFor = $_.cornersFor; cornersAgainst = $_.cornersAgainst
             }
         })
         $teamsOut.Add($entry) | Out-Null
@@ -1001,17 +1072,83 @@ function Score-Fixture($homeStats, $awayStats, $lineup = $null) {
     $pickBtts = if ($pBtts -ge 0.5) { "JA" } else { "NEJ" }
     $pickOu = if ($pOver -ge 0.5) { "OVER 2.5" } else { "UNDER 2.5" }
 
+    # --- Horn (O/U): projicera totalt, valj linje 8.5 / 9.5 / 10.5 ---
+    $cornersMarket = $null
+    $cfH = 0.0; $caH = 0.0; $cfA = 0.0; $caA = 0.0
+    $cPlayH = 0; $cPlayA = 0
+    if ($homeStats.corners) {
+        $cPlayH = [int]$homeStats.corners.played
+        if ($homeStats.corners.home -and [int]$homeStats.corners.home.played -gt 0) {
+            $cfH = [double]$homeStats.corners.home.forPg
+            $caH = [double]$homeStats.corners.home.againstPg
+        } elseif ($cPlayH -gt 0) {
+            $cfH = [double]$homeStats.corners.forPg
+            $caH = [double]$homeStats.corners.againstPg
+        }
+    }
+    if ($awayStats.corners) {
+        $cPlayA = [int]$awayStats.corners.played
+        if ($awayStats.corners.away -and [int]$awayStats.corners.away.played -gt 0) {
+            $cfA = [double]$awayStats.corners.away.forPg
+            $caA = [double]$awayStats.corners.away.againstPg
+        } elseif ($cPlayA -gt 0) {
+            $cfA = [double]$awayStats.corners.forPg
+            $caA = [double]$awayStats.corners.againstPg
+        }
+    }
+    if ($cPlayH -ge 2 -and $cPlayA -ge 2) {
+        $lambdaCH = ($cfH + $caA) / 2.0
+        $lambdaCA = ($cfA + $caH) / 2.0
+        # Liten regression mot ligasnitt ~9.4
+        $expCorners = 0.75 * ($lambdaCH + $lambdaCA) + 0.25 * 9.4
+        $line = 9.5
+        if ($expCorners -ge 10.3) { $line = 10.5 }
+        elseif ($expCorners -le 8.2) { $line = 8.5 }
+
+        # Poisson P(total > line) via CDF upp till floor(line)
+        $pOverC = Get-PoissonOverHalf $expCorners $line
+        # Blanda med empiriska over-rater om linjen ar 9.5
+        if ($line -eq 9.5 -and $null -ne $homeStats.corners.over95Rate -and $null -ne $awayStats.corners.over95Rate) {
+            $emp = 0.5 * [double]$homeStats.corners.over95Rate + 0.5 * [double]$awayStats.corners.over95Rate
+            $pOverC = 0.55 * $pOverC + 0.45 * $emp
+        } elseif ($line -eq 8.5 -and $null -ne $homeStats.corners.over85Rate -and $null -ne $awayStats.corners.over85Rate) {
+            $emp = 0.5 * [double]$homeStats.corners.over85Rate + 0.5 * [double]$awayStats.corners.over85Rate
+            $pOverC = 0.55 * $pOverC + 0.45 * $emp
+        } elseif ($line -eq 10.5 -and $null -ne $homeStats.corners.over105Rate -and $null -ne $awayStats.corners.over105Rate) {
+            $emp = 0.5 * [double]$homeStats.corners.over105Rate + 0.5 * [double]$awayStats.corners.over105Rate
+            $pOverC = 0.55 * $pOverC + 0.45 * $emp
+        }
+        $pOverC = [math]::Min(0.9, [math]::Max(0.1, $pOverC))
+        $pickC = if ($pOverC -ge 0.5) { "OVER $line" } else { "UNDER $line" }
+        $confC = [math]::Max($pOverC, 1.0 - $pOverC)
+        $cornersMarket = @{
+            pick = $pickC
+            line = $line
+            confidence = [math]::Round($confC, 3)
+            pOver = [math]::Round($pOverC, 3)
+            expCorners = [math]::Round($expCorners, 2)
+            lambdaHome = [math]::Round($lambdaCH, 2)
+            lambdaAway = [math]::Round($lambdaCA, 2)
+        }
+    }
+
     $tipScore = ($conf1x2 + [math]::Max($pBtts, 1 - $pBtts) + [math]::Max($pOver, 1 - $pOver)) / 3
+    if ($cornersMarket) {
+        $tipScore = ($tipScore * 3 + [double]$cornersMarket.confidence) / 4
+    }
     # Bekraftad elva okar tillit lite (beslut baserat pa mer info)
     if ($lineupConfirmed) { $tipScore = [math]::Min(0.95, $tipScore + 0.025) }
     if ($usedPlayerAttack) { $tipScore = [math]::Min(0.95, $tipScore + 0.015) }
 
+    $marketsOut = @{
+        "1X2" = @{ pick = $pick1x2; confidence = [math]::Round($conf1x2, 3); probs = @{ home = [math]::Round($pHome, 3); draw = [math]::Round($pDraw, 3); away = [math]::Round($pAway, 3) } }
+        "BTTS" = @{ pick = $pickBtts; confidence = [math]::Round([math]::Max($pBtts, 1 - $pBtts), 3); pYes = [math]::Round($pBtts, 3) }
+        "OU25" = @{ pick = $pickOu; confidence = [math]::Round([math]::Max($pOver, 1 - $pOver), 3); pOver = [math]::Round($pOver, 3); expGoals = [math]::Round($expGoals, 2); usedXg = $usedXg; usedPlayerAttack = $usedPlayerAttack }
+    }
+    if ($cornersMarket) { $marketsOut["CORNERS"] = $cornersMarket }
+
     return [ordered]@{
-        markets = @{
-            "1X2" = @{ pick = $pick1x2; confidence = [math]::Round($conf1x2, 3); probs = @{ home = [math]::Round($pHome, 3); draw = [math]::Round($pDraw, 3); away = [math]::Round($pAway, 3) } }
-            "BTTS" = @{ pick = $pickBtts; confidence = [math]::Round([math]::Max($pBtts, 1 - $pBtts), 3); pYes = [math]::Round($pBtts, 3) }
-            "OU25" = @{ pick = $pickOu; confidence = [math]::Round([math]::Max($pOver, 1 - $pOver), 3); pOver = [math]::Round($pOver, 3); expGoals = [math]::Round($expGoals, 2); usedXg = $usedXg; usedPlayerAttack = $usedPlayerAttack }
-        }
+        markets = $marketsOut
         probsBeforeAvailability = $preAvail
         availabilityNotes = $availNotes
         lineupNotes = $lineupNotes
@@ -1514,7 +1651,7 @@ $store = [ordered]@{
     meta = [ordered]@{
         updatedAt = (Get-Date).ToString("o")
         source = "CSV + openfootball + understat + FPL + ClubElo + ESPN lineups + playerAttack + shots-proxy + optional odds-api"
-        markets = @("1X2", "BTTS", "OU25")
+        markets = @("1X2", "BTTS", "OU25", "CORNERS")
         leagues = $AllLeagues
         note = "Edge-filter pa bestTips. Tippar alla toppligor i store. Chans = modellens sannolikhet. Spelar-attack finjusterar."
         matchCount = $sorted.Count

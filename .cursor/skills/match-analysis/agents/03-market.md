@@ -33,6 +33,8 @@ Odds uppdaterade:
 | U2.5 | | | | | | |
 | BTTS Y | | | | | | |
 | BTTS N | | | | | | |
+| Corners O | | | | | | |
+| Corners U | | | | | | |
 
 ### Value candidates (edge ≥ 3 %)
 -
