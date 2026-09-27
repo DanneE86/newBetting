@@ -10,8 +10,28 @@ import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = process.env.ODDS_OUT ?? path.join(root, 'data', 'open', 'upcoming_odds.json');
-const DIV = { E0: 'PL', E1: 'CH', SP1: 'LL', SP2: 'LL2', I1: 'SA', D1: 'BL', F1: 'L1', N1: 'ED' };
-const NEW_LEAGUES = { 'Brazil|Serie A': 'BR' };
+const RAW = path.join(root, 'data', 'raw');
+const REG = JSON.parse(fs.readFileSync(path.join(root, 'config', 'leagues.json'), 'utf8'));
+const DIV = {
+  E0: 'PL', E1: 'CH', E2: 'EL1', SP1: 'LL', SP2: 'LL2', I1: 'SA', I2: 'SB',
+  D1: 'BL', D2: 'BL2', F1: 'L1', N1: 'ED', P1: 'PT', G1: 'GR',
+};
+
+/** "Land|Liga" -> ligakod, las fran historik-CSV:erna (fd-new) sa att nya ligor i registret kommer med automatiskt. */
+function newLeagueMap() {
+  const map = {};
+  for (const [code, lg] of Object.entries(REG.leagues)) {
+    if (lg.history !== 'fd-new') continue;
+    const file = path.join(RAW, `${code}_all.csv`);
+    if (!fs.existsSync(file)) continue;
+    const row = fs.readFileSync(file, 'utf8').replace(/^﻿/, '').split(/\r?\n/, 2)[1];
+    if (!row) continue;
+    const [country, league] = row.split(',');
+    map[`${country.trim()}|${league.trim()}`] = code;
+  }
+  return map;
+}
+const NEW_LEAGUES = newLeagueMap();
 
 async function csv(url) {
   const res = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0 (betting-ny)' } });
@@ -61,18 +81,44 @@ for (const r of await csv('https://www.football-data.co.uk/fixtures.csv')) {
   if (e) events.push(e);
 }
 for (const r of await csv('https://www.football-data.co.uk/new_league_fixtures.csv')) {
-  const lg = NEW_LEAGUES[`${r.Country}|${r.League}`];
+  const lg = NEW_LEAGUES[`${r.Country?.trim()}|${r.League?.trim()}`];
   if (!lg) continue;
   const e = event(lg, isoDate(r.Date), r.Time, r.Home, r.Away, r);
   if (e) events.push(e);
 }
 
+// Behall tidigare API-odds (t.ex. fran en lokal hamtning med nyckel) for matcher som inte startat,
+// annars raderar en korning utan nyckel (CI) alla bolagsodds.
+const nowIso = new Date().toISOString();
+const matchKey = (e) => `${e.league}|${String(e.commence).slice(0, 10)}|${e.home}|${e.away}`;
+let kept = 0;
+if (fs.existsSync(OUT)) {
+  try {
+    const old = JSON.parse(fs.readFileSync(OUT, 'utf8').replace(/^﻿/, ''));
+    const fresh = new Set(events.map(matchKey));
+    for (const e of old.events ?? []) {
+      if (e.source === 'football-data fixtures' || !e.commence || e.commence < nowIso) continue;
+      if (fresh.has(matchKey(e))) {
+        // API-oddsen har fler bolag (Pinnacle, Unibet) -> ersatt reservraden
+        const i = events.findIndex((x) => matchKey(x) === matchKey(e));
+        events[i] = e;
+      } else {
+        events.push(e);
+      }
+      kept++;
+    }
+  } catch {
+    /* trasig fil -> bara reservodds */
+  }
+}
+
 fs.writeFileSync(OUT, JSON.stringify({
   loaded: events.length > 0,
-  source: 'football-data fixtures (reserv)',
+  source: kept ? 'the-odds-api.com v4 (sparad) + football-data fixtures (reserv)' : 'football-data fixtures (reserv)',
   note: 'Pinnacle saknas i football-data sedan 2025/26 -> Betfair Exchange ar facit. Basta pris = marknadens max, kontrollera hos ditt bolag.',
   updatedAt: new Date().toISOString(),
   eventCount: events.length,
+  keptApiEvents: kept,
   events,
 }, null, 2), 'utf8');
-console.log(`OK reservodds -> ${OUT} (${events.length} matcher: ${[...new Set(events.map((e) => e.league))].join(',') || 'inga i toppligorna just nu'})`);
+console.log(`OK reservodds -> ${OUT} (${events.length} matcher, varav ${kept} sparade API-odds: ${[...new Set(events.map((e) => e.league))].join(',') || 'inga'})`);

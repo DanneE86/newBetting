@@ -10,6 +10,7 @@ import {
 } from './pro/lib.mjs';
 import { EARLY_ROUNDS, buildTiers, fitLeagueModel, loadLeagueModels, paramsFor } from './pro/league-models.mjs';
 import { historicalMissing, findUsMatch, loadPlayerModel, summarise as summariseMissing, teamShares } from './pro/players.mjs';
+import { TEAM_ALIASES } from './weather/teams.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const P = {
@@ -455,8 +456,14 @@ function marketOnlyCandidates() {
   const limit = new Date(Date.now() + 21 * 86_400_000).toISOString(); // samma horisont som modelltipsen
   const now = new Date().toISOString();
   const rows = [];
+  // Samma match kan finnas i bade Odds API och OddsPortal: har modelltipset redan odds -> inget dubblett-marknadstips
+  const sameMatch = (a, b) => a.league === b.league && Math.abs(daysBetween(a.commence.slice(0, 10), b.commence.slice(0, 10))) <= 1
+    && nameSimilarity(a.homeRaw ?? a.home, b.homeRaw ?? b.home) + nameSimilarity(a.awayRaw ?? a.away, b.awayRaw ?? b.away) >= 1.5;
+  const used = [...usedEvents];
   for (const e of liveOddsList) {
     if (usedEvents.has(e) || !e.commence || e.commence < now || e.commence > limit) continue;
+    if (used.some((u) => u.commence && sameMatch(u, e))) continue;
+    if (rows.some((r) => r._ev && sameMatch(r._ev, e))) continue;
     const books = e.books ?? [];
     const sharp = findSharpBook(books);
     // Utan skarpt facit (t.ex. Superettan): snitt av alla bolags marginalfria odds - bara som tips, inget vardeomdome
@@ -488,8 +495,10 @@ function marketOnlyCandidates() {
       marketOnly: true,
       marketSource: sharp ? (/pinnacle/i.test(sharp.key) ? 'Pinnacle' : 'Betfair Exchange') : `snitt av ${books.length} bolag`,
       note: `Marknadstips (${sharp ? (/pinnacle/i.test(sharp.key) ? 'Pinnacle' : 'Betfair Exchange') : `snitt av ${books.length} bolag`} utan marginal) - ingen modell for denna liga/match`,
+      _ev: e,
     });
   }
+  for (const r of rows) delete r._ev;
   return rows;
 }
 
@@ -502,29 +511,38 @@ function findLiveOdds(t) {
   if (exact) return exact;
   let best = null;
   let bestScore = 0;
+  let wide = null;
+  let wideScore = 0;
   for (const e of liveOddsList) {
     if (e.league !== t.league || !e.commence) continue;
-    if (Math.abs(daysBetween(e.commence.slice(0, 10), t.date)) > 1) continue;
+    const dd = Math.abs(daysBetween(e.commence.slice(0, 10), t.date));
+    if (dd > 4) continue;
     const score = nameSimilarity(t.home, e.homeRaw ?? e.home) + nameSimilarity(t.away, e.awayRaw ?? e.away);
-    if (score > bestScore) { bestScore = score; best = e; }
+    if (dd <= 1 && score > bestScore) { bestScore = score; best = e; }
+    if (score > wideScore) { wideScore = score; wide = e; }
   }
-  return bestScore >= 1 ? best : null; // kraver rimlig likhet for bada lagen tillsammans
+  if (bestScore >= 1) return best; // kraver rimlig likhet for bada lagen tillsammans
+  // Flyttad match (schema och odds skiljer 2-4 dagar): bara vid nastan sakra namn
+  return wideScore >= 1.6 ? wide : null;
 }
 
 function normName(s) {
-  return String(s).replace(/æ/gi, 'ae').replace(/ø/gi, 'o').replace(/å/gi, 'a').replace(/ß/g, 'ss')
+  return String(TEAM_ALIASES[s] ?? s).replace(/æ/gi, 'ae').replace(/ø/gi, 'o').replace(/å/gi, 'a').replace(/ß/g, 'ss')
     .normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
     .replace(/\b(fc|afc|cf|sc|ac|ss|as|us|ssc|rc|rcd|cd|ud|sd|sv|vfb|vfl|tsg|bv|fk|1\.|club|de|calcio|hotspur)\b/g, ' ')
     .replace(/[^a-z0-9 ]/g, ' ').split(/\s+/).filter((w) => w.length > 1);
 }
 
-/** 0..1: andel ord som matchar (prefix racker, t.ex. "nott" ~ "nottingham"). */
+/**
+ * 0..1: andel ord som matchar (prefix racker, t.ex. "nott" ~ "nottingham"), matt at bada hallen
+ * sa att "U. Catolica" ~ "Universidad Catolica (CHI)" ger samma poang oavsett ordning.
+ */
 function nameSimilarity(a, b) {
   const A = normName(a);
   const B = normName(b);
   if (!A.length || !B.length) return 0;
-  const hit = A.filter((w) => B.some((v) => v.startsWith(w) || w.startsWith(v))).length;
-  return hit / Math.max(A.length, 1);
+  const share = (X, Y) => X.filter((w) => Y.some((v) => v.startsWith(w) || w.startsWith(v))).length / X.length;
+  return Math.max(share(A, B), share(B, A));
 }
 
 function weatherInfo(t) {
