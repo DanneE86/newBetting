@@ -177,11 +177,26 @@ function valueCell(tip, pickKey, keys) {
   // Facit utan Pinnacle/Betfair (snitt av bolagen): svagare, därför högre tröskel - visas under omdömet
   const basis = x.fairSource && !/pinnacle|betfair/.test(x.fairSource) ? `<div class="val-min">facit: ${escapeHtml(x.fairSource)}</div>` : "";
   const title = `Värt att spela från odds ${x.minOdds}${basis ? ` (facit: ${x.fairSource})` : ""}`;
+  const rrTxt = riskRewardLines(x);
   return x.value
-    ? `<td class="val" title="${escapeHtml(title)}"><span class="val-badge val-yes">Värde</span>${basis}${otherTxt}</td>`
+    ? `<td class="val" title="${escapeHtml(title)}"><span class="val-badge val-yes">Värde</span>${rrTxt}${basis}${otherTxt}</td>`
     : x.reason
-      ? `<td class="val" title="Skrällodds – chansen överskattas, spelas aldrig"><span class="val-badge val-no">Ej värde</span><div class="val-min">${escapeHtml(x.reason)}</div>${otherTxt}</td>`
-      : `<td class="val" title="${escapeHtml(title)}"><span class="val-badge val-no">Ej värde</span><div class="val-min">från ${escapeHtml(fmtOdd(x.minOdds))}</div>${basis}${otherTxt}</td>`;
+      ? `<td class="val" title="Skrällodds – chansen överskattas, spelas aldrig"><span class="val-badge val-no">Ej värde</span><div class="val-min">${escapeHtml(x.reason)}</div>${rrTxt}${otherTxt}</td>`
+      : `<td class="val" title="${escapeHtml(title)}"><span class="val-badge val-no">Ej värde</span><div class="val-min">från ${escapeHtml(fmtOdd(x.minOdds))}</div>${rrTxt}${basis}${otherTxt}</td>`;
+}
+
+/**
+ * Risk vs reward: insats mot möjlig vinst, förväntat värde i kr,
+ * och vår chans mot break-even-chansen (1/odds) som oddset kräver.
+ */
+function riskRewardLines(x) {
+  const rr = x.riskReward;
+  if (!rr) return "";
+  const pc = (p) => `${Math.round(p * 100)} %`;
+  const ev = `${rr.evSek >= 0 ? "+" : "−"}${Math.abs(rr.evSek)} kr`;
+  const tip = `Risk ${rr.stake} kr för att vinna ${rr.win} kr (1:${rr.ratio}). Oddset kräver ${pc(rr.breakEven)} chans, facit ger ${pc(x.p)}. Förväntat värde ${ev} per spel.`;
+  return `<div class="val-rr" title="${escapeHtml(tip)}">${rr.stake} kr → +${rr.win} kr · EV <b class="${rr.evSek >= 0 ? "rr-pos" : "rr-neg"}">${ev}</b></div>`
+    + `<div class="val-rr">chans ${pc(x.p)} · krävs ${pc(rr.breakEven)}</div>`;
 }
 
 function tipCard(tip, i) {

@@ -24,6 +24,18 @@ test('devig: multiplicative och power summerar till 1 och tar bort marginal', as
   expect(lib.devigMultiplicative([1.9, 0.5])).toBeNull();
 });
 
+test('risk vs reward: vinst, break-even och EV i kr', async () => {
+  const lib = await import(libUrl);
+  // 500 kr pa odds 2.30 med 46 % chans: vinst 650, kravs 43.5 %, EV = 500 * (0.46 * 2.3 - 1) = +29
+  const rr = lib.riskReward(2.3, 0.46, 500);
+  expect(rr.win).toBe(650);
+  expect(rr.ratio).toBeCloseTo(1.3, 6);
+  expect(rr.breakEven).toBeCloseTo(1 / 2.3, 4);
+  expect(rr.evSek).toBe(29);
+  expect(lib.riskReward(2.0, 0.4, 500).evSek).toBe(-100);
+  expect(lib.riskReward(1, 0.5)).toBeNull();
+});
+
 test('kelly, rps och clv', async () => {
   const lib = await import(libUrl);
   expect(lib.kellyStake(0.5, 1.9)).toBe(0);                 // negativ EV
