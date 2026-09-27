@@ -23,14 +23,15 @@ function readJson(rel) {
 
 /** readJson med cache pa filens mtime (betting-store.json ar ~60 MB). */
 const jsonCache = new Map();
-function readJsonCached(rel, map = (x) => x) {
+/** cacheKey skiljer råfilen från bearbetade versioner (t.ex. store -> lag-Map för analysen). */
+function readJsonCached(rel, map = (x) => x, cacheKey = rel) {
   const p = path.join(ROOT, rel);
   if (!fs.existsSync(p)) return null;
   const mtime = fs.statSync(p).mtimeMs;
-  const hit = jsonCache.get(rel);
+  const hit = jsonCache.get(cacheKey);
   if (hit && hit.mtime === mtime) return hit.value;
   const value = map(readJson(rel));
-  jsonCache.set(rel, { mtime, value });
+  jsonCache.set(cacheKey, { mtime, value });
   return value;
 }
 
@@ -50,7 +51,7 @@ async function analyzeOne({ league, date, home, away }) {
   const tips = readJson("data/tips-latest.json");
   const t = findTip(tips, { league, date, home, away });
   if (!t) return null;
-  const teams = readJsonCached("data/betting-store.json", (s) => loadTeams(s));
+  const teams = readJsonCached("data/betting-store.json", (s) => loadTeams(s), "store:teams");
   return analyzeMatch(t, teams);
 }
 
