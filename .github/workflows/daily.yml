@@ -1,12 +1,10 @@
-name: Daglig hämtning
+name: Hämtning (manuell)
 
 # Samma kedja som GUI:ts "Hämta data (full)":
 # öppna källor -> OddsPortal -> store/tips -> ledger -> Daily Scanner, sedan commit av data/.
-# Spelarstatistik (Understat-historik m.m., ~16 min) hämtas bara på måndagar eller vid manuell körning
-# med "spelare" ikryssat; övriga dagar används senast committade data/open/player_stats.json.
+# Körs bara manuellt (Actions -> "Kör workflow"): ingen data hämtas automatiskt.
+# Spelarstatistik (Understat-historik m.m., ~16 min) hämtas på måndagar eller med "spelare" ikryssat.
 on:
-  schedule:
-    - cron: "0 4 * * *" # 06:00 svensk sommartid (05:00 vintertid)
   workflow_dispatch:
     inputs:
       spelare:

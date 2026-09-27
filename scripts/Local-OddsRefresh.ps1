@@ -6,7 +6,7 @@
   3. Pro-lagret kopplar oddsen till tipsen + datagranskning
   4. Commit + push -> CI:s reservkalla behaller API-oddsen, webbversionen far dem vid nasta bygge
 
-  Kor: npm run odds:local   (schemalagt: scripts/Register-OddsTask.ps1)
+  Kor manuellt: npm run odds:local (inget schema - data hamtas bara nar du ber om det)
   Logg: logs/odds-refresh.log
 #>
 param(

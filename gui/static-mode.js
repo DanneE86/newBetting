@@ -5,7 +5,7 @@
   const json = (status, body) =>
     new Response(JSON.stringify(body), { status, headers: { "Content-Type": "application/json" } });
   const readOnly = () =>
-    json(403, { error: "Webbversionen är skrivskyddad – data hämtas automatiskt varje morgon via GitHub Actions." });
+    json(403, { error: "Webbversionen är skrivskyddad – data uppdateras när du trycker Hämta i den lokala appen." });
 
   let analyses = null;
   const loadAnalyses = async () => {

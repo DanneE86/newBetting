@@ -12,7 +12,6 @@
     "players": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Fetch-PlayerStats.ps1",
     "odds": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Fetch-OddsApi.ps1",
     "odds:local": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Local-OddsRefresh.ps1",
-    "odds:schedule": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Register-OddsTask.ps1",
     "oddsportal": "node scripts/fetch-oddsportal.mjs",
     "pro": "node scripts/pro-layer.mjs",
     "tune": "node scripts/tune-league-models.mjs",

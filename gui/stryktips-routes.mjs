@@ -1,6 +1,6 @@
 // API for GUI-fliken "Stryktipset" (scripts/fetch-stryktipset.mjs -> data/stryktipset.json).
-//   GET  /api/stryktips        -> senaste analys (hamtar automatiskt om filen saknas eller ar aldre an 30 min)
-//   POST /api/stryktips/fetch  -> hamta kupong + kor analysen nu
+//   GET  /api/stryktips        -> senast hamtade analys (hamtar aldrig sjalv)
+//   POST /api/stryktips/fetch  -> hamta kupong + kor analysen nu (knappen i GUI)
 import fs from "node:fs";
 import path from "node:path";
 import { spawn } from "node:child_process";
@@ -41,16 +41,11 @@ export function handleStryktips(req, res, url, root) {
   const file = path.join(root, "data", "stryktipset.json");
 
   if (req.method === "GET" && url.pathname === "/api/stryktips") {
-    const stale = !fs.existsSync(file) || Date.now() - fs.statSync(file).mtimeMs > 30 * 60 * 1000;
-    const respond = (extra = {}) => {
-      try {
-        send(res, 200, { ...(read(file) || { products: [] }), ...extra });
-      } catch (e) {
-        send(res, 500, { error: String(e.message || e) });
-      }
-    };
-    if (stale) run(root).then((r) => respond(r.ok ? {} : { fetchError: r.log.slice(-600) }));
-    else respond();
+    try {
+      send(res, 200, read(file) || { products: [] });
+    } catch (e) {
+      send(res, 500, { error: String(e.message || e) });
+    }
     return true;
   }
 
