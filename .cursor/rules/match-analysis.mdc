@@ -1,0 +1,15 @@
+---
+description: Multi-agent matchanalys (Quant + Market + Devil's Advocate)
+globs:
+alwaysApply: false
+---
+
+# Matchanalys
+
+När användaren ber om att **analysera en match**, **quant**, **fair odds**, **value**, **dagens matcher** eller **daily scan**:
+
+1. Läs och följ skillen `.cursor/skills/match-analysis/SKILL.md`
+2. Kör flödet: Agent 1 + 4 → 2 (QUANT) → 3 (Market) → 5 (Devil's Advocate) → 6 (Head)
+3. Vid "dagens matcher" / scan: börja med Agent 7
+4. Hitta inte på statistik — använd `data/` (betting-store, player_stats, odds, lineups)
+5. Svara användaren med Agent 6:s slutresultat på svenska

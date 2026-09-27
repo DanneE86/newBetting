@@ -1,0 +1,42 @@
+[
+  {
+    "name": "[EPIC] Lokal betting-store (alltid uppdaterbar fil)",
+    "labels": ["infra", "data", "p0"],
+    "desc": "## Sammanfattning\nAll data som används till tips sparas i `data/betting-store.json` på datorn. Filen är masterkälla och uppdateras vid varje sync.\n\n## Typ\nEpic\n\n## Prioritet\nP0\n\n## Liga\nBåda\n\n## Databehov\n- Matcher, lagform, odds (1X2 + Ö/U 2.5), BTTS från resultat\n- Källa: football-data.co.uk CSV (E0/E1)\n- Sync: kör `scripts/Update-BettingStore.ps1`\n\n## Acceptanskriterier\n- [ ] `data/betting-store.json` finns och innehåller PL + Championship\n- [ ] Om-körning uppdaterar `meta.updatedAt` utan manuell rensning\n- [ ] Rå-CSV sparas i `data/raw/`\n\n## Definition of Done\n- [ ] Script körs utan fel på Windows"
+  },
+  {
+    "name": "[STORY] Synka PL + Championship CSV till lokal fil",
+    "labels": ["data", "p0", "pl", "championship"],
+    "desc": "## Sammanfattning\nHämta aktuella och historiska säsonger och skriv in i store.\n\n## Typ\nStory\n\n## Prioritet\nP0\n\n## Liga\nBåda\n\n## Databehov\n- E0 (PL), E1 (Championship)\n- Fält: resultat, Avg/B365 1X2, Avg/B365 Ö/U 2.5, skott\n\n## Acceptanskriterier\n- [ ] Minst aktuell säsong + 1 historisk\n- [ ] Matcher får stabilt id\n- [ ] Odds sparas per match när de finns\n\n## Definition of Done\n- [ ] Store matchCount > 0 för båda ligorna"
+  },
+  {
+    "name": "[EPIC] Tipsmotor: 1X2, BTTS, Över/Under 2.5",
+    "labels": ["tips", "p0"],
+    "desc": "## Sammanfattning\nGenerera bästa tipset per match för exakt tre marknader: 1X2, BTTS (båda gör mål), Ö/U 2.5.\n\n## Typ\nEpic\n\n## Prioritet\nP0\n\n## Liga\nBåda\n\n## Databehov\n- Lagform, hemma/borta-split, BTTS-frekvens, Ö/U-frekvens, mål per match\n- Output: `data/tips-latest.json` + `data/tips-latest.md`\n\n## Acceptanskriterier\n- [ ] Varje tipspost har pick + confidence för tre marknader\n- [ ] tipScore sorterar bästa tips först\n- [ ] Rolling backtest-accuracy sparas i store\n\n## Definition of Done\n- [ ] Tipsfil genereras vid varje sync"
+  },
+  {
+    "name": "[STORY] Ranking av bästa tips inför omgång",
+    "labels": ["tips", "p0"],
+    "desc": "## Sammanfattning\nLäs `data/upcoming-fixtures.json` och producera sorterad tipslista.\n\n## Typ\nStory\n\n## Prioritet\nP0\n\n## Liga\nBåda\n\n## Databehov\n- upcoming-fixtures: date, league, home, away\n- Teamstats från store\n\n## Acceptanskriterier\n- [ ] Tom upcoming → tydligt meddelande (t.ex. landslagsuppehåll)\n- [ ] Med fixtures → bestUpcoming sorterad på tipScore\n- [ ] Edge-boards (mest BTTS / Över 2.5 / form) alltid uppdaterade\n\n## Definition of Done\n- [ ] Dokumenterat i tips-latest.md"
+  },
+  {
+    "name": "[TASK] upcoming-fixtures.json mall + instruktion",
+    "labels": ["tips", "p0"],
+    "desc": "## Sammanfattning\nSkapa mallfil så användaren/agenten kan lägga nästa omgångs matcher innan kickoff.\n\n## Typ\nTask\n\n## Prioritet\nP0\n\n## Acceptanskriterier\n- [ ] Exempel-JSON i `data/upcoming-fixtures.example.json`\n- [ ] Lag namn matchar CSV-namn (t.ex. Man United, not Manchester United om CSV säger Man United)\n\n## Definition of Done\n- [ ] Mall committed"
+  },
+  {
+    "name": "[STORY] Visa edge-boards för BTTS och Ö/U 2.5",
+    "labels": ["tips", "p0", "data"],
+    "desc": "## Sammanfattning\nLista lag med högst/lägst BTTS- och Över 2.5-frekvens + bäst form – underlag när fixtures saknas.\n\n## Typ\nStory\n\n## Prioritet\nP0\n\n## Acceptanskriterier\n- [ ] PL och Championship separat\n- [ ] Finns i tips-latest.md\n\n## Definition of Done\n- [ ] Uppdateras automatiskt vid sync"
+  },
+  {
+    "name": "[TASK] Trello: koppla board + pusha denna backlog",
+    "labels": ["infra", "p0"],
+    "desc": "## Sammanfattning\nVälkomst-URL räcker inte. Behöver riktig board + API-nyckel/token/list-id i `.env`.\n\n## Typ\nTask\n\n## Prioritet\nP0\n\n## Acceptanskriterier\n- [ ] Board skapad i Trello (t.ex. \"Betting PL/CH\")\n- [ ] `.env` ifylld från `.env.example`\n- [ ] `create_trello_cards.ps1` pushar alla kort\n\n## Definition of Done\n- [ ] Kort synliga i Trello-listan"
+  },
+  {
+    "name": "[STORY] P1: hämta schemalagda matcher automatiskt",
+    "labels": ["data", "p1", "tips"],
+    "desc": "## Sammanfattning\nSlippa manuell upcoming-fil via football-data.org (gratis token) för SCHEDULED fixtures.\n\n## Typ\nStory\n\n## Prioritet\nP1\n\n## Databehov\n- FOOTBALL_DATA_TOKEN i .env\n- PL + ELC scheduled matches → upcoming-fixtures.json\n\n## Acceptanskriterier\n- [ ] Automatisk fyllning inför omgång\n- [ ] Fallback till manuell fil\n\n## Definition of Done\n- [ ] Dokumenterat i .env.example"
+  }
+]

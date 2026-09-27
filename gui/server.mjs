@@ -1,0 +1,668 @@
+import http from "node:http";
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+import { spawn } from "node:child_process";
+import { handleStryktips } from "./stryktips-routes.mjs";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const ROOT = path.resolve(__dirname, "..");
+const PUBLIC = path.join(__dirname, "public");
+const PORT = Number(process.env.PORT || 3847);
+
+let fetchJob = null; // { running, startedAt, logs[], listeners:Set }
+// Daily Scanner (scripts/daily-scanner.mjs): progress fran "@@progress {json}"-rader
+let scanJob = null; // { running, startedAt, endedAt, ok, days, progress, logs[], listeners:Set }
+
+function readJson(rel) {
+  const p = path.join(ROOT, rel);
+  if (!fs.existsSync(p)) return null;
+  const raw = fs.readFileSync(p, "utf8").replace(/^\uFEFF/, "");
+  return JSON.parse(raw);
+}
+
+/** readJson med cache pa filens mtime (betting-store.json ar ~60 MB). */
+const jsonCache = new Map();
+function readJsonCached(rel, map = (x) => x) {
+  const p = path.join(ROOT, rel);
+  if (!fs.existsSync(p)) return null;
+  const mtime = fs.statSync(p).mtimeMs;
+  const hit = jsonCache.get(rel);
+  if (hit && hit.mtime === mtime) return hit.value;
+  const value = map(readJson(rel));
+  jsonCache.set(rel, { mtime, value });
+  return value;
+}
+
+/** Analys-knappen: samma agentpipeline som Daily Scanner, for en match. */
+async function analyzeOne({ league, date, home, away }) {
+  const { analyzeMatch, loadTeams } = await import(new URL("../scripts/daily-scanner.mjs", import.meta.url).href);
+  const tips = readJsonCached("data/tips-latest.json");
+  const t = (tips?.allCandidates || []).find(
+    (x) => x.league === league && x.date === date && x.home === home && x.away === away
+  );
+  if (!t) return null;
+  const teams = readJsonCached("data/betting-store.json", (s) => loadTeams(s));
+  return analyzeMatch(t, teams);
+}
+
+function sendJson(res, status, body) {
+  const data = JSON.stringify(body, null, 2);
+  res.writeHead(status, {
+    "Content-Type": "application/json; charset=utf-8",
+    "Cache-Control": "no-store",
+  });
+  res.end(data);
+}
+
+function contentType(filePath) {
+  const ext = path.extname(filePath).toLowerCase();
+  return (
+    {
+      ".html": "text/html; charset=utf-8",
+      ".css": "text/css; charset=utf-8",
+      ".js": "text/javascript; charset=utf-8",
+      ".svg": "image/svg+xml",
+      ".json": "application/json; charset=utf-8",
+      ".png": "image/png",
+      ".ico": "image/x-icon",
+    }[ext] || "application/octet-stream"
+  );
+}
+
+function serveStatic(req, res) {
+  let urlPath = decodeURIComponent((req.url || "/").split("?")[0]);
+  if (urlPath === "/") urlPath = "/index.html";
+  const safe = path.normalize(urlPath).replace(/^(\.\.[/\\])+/, "");
+  const filePath = path.join(PUBLIC, safe);
+  if (!filePath.startsWith(PUBLIC) || !fs.existsSync(filePath) || fs.statSync(filePath).isDirectory()) {
+    res.writeHead(404, { "Content-Type": "text/plain; charset=utf-8" });
+    res.end("404");
+    return;
+  }
+  res.writeHead(200, { "Content-Type": contentType(filePath), "Cache-Control": "no-cache" });
+  fs.createReadStream(filePath).pipe(res);
+}
+
+function isFinished(tip, now = new Date()) {
+  const status = String(tip.matchStatus || "");
+  if (/FULL_TIME|FINAL|STATUS_FINAL|STATUS_FULL_TIME/i.test(status)) return true;
+
+  if (tip.kickoffUtc) {
+    const kick = new Date(tip.kickoffUtc);
+    // Om kickoff var for mer an 3 timmar sedan och status inte ar live → klar
+    if (!Number.isNaN(kick.getTime()) && kick.getTime() + 3 * 60 * 60 * 1000 < now.getTime()) {
+      if (!status || /SCHEDULED|STATUS_SCHEDULED/i.test(status)) return true;
+    }
+  }
+
+  if (!tip.date) return false;
+  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const matchDay = new Date(`${tip.date}T00:00:00`);
+  if (Number.isNaN(matchDay.getTime())) return false;
+  return matchDay < today;
+}
+
+function matchKey(tip) {
+  if (tip.home && tip.away) return `${tip.league}|${tip.date}|${tip.home}|${tip.away}`;
+  const parts = String(tip.match || "").split(/\s+vs\s+/i);
+  if (parts.length === 2) return `${tip.league}|${tip.date}|${parts[0].trim()}|${parts[1].trim()}`;
+  return `${tip.league}|${tip.date}|${tip.match}`;
+}
+
+function kickSortValue(tip) {
+  if (tip.kickoffUtc) {
+    const d = new Date(tip.kickoffUtc);
+    if (!Number.isNaN(d.getTime())) return d.getTime();
+  }
+  const d = new Date(`${tip.date}T12:00:00`);
+  return Number.isNaN(d.getTime()) ? Number.MAX_SAFE_INTEGER : d.getTime();
+}
+
+function prepareTips(list, lineupMap, roundMap) {
+  const now = new Date();
+  return (list || [])
+    .map((t) => {
+      const lu = lineupMap.get(matchKey(t)) || lineupMap.get(`${t.league}|${t.home}|${t.away}`);
+      const rk = `${t.league}|${t.home}|${t.away}`;
+      return {
+        ...t,
+        kickoffUtc: t.kickoffUtc || lu?.kickoffUtc || null,
+        matchStatus: t.matchStatus || lu?.matchStatus || null,
+        round: t.round || roundMap.get(rk) || roundMap.get(`${t.league}|${t.date}|${t.home}|${t.away}`) || null,
+      };
+    })
+    .filter((t) => !isFinished(t, now))
+    .sort((a, b) => kickSortValue(a) - kickSortValue(b) || (b.tipScore || 0) - (a.tipScore || 0));
+}
+
+/** Nastaa omgang per liga fran upcoming-fixtures (kalla till sanning). */
+function nextRoundsFromFixtures(fixtures, now = new Date()) {
+  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const byLeague = new Map(); // league -> { dateMs, round }
+  for (const fx of fixtures || []) {
+    if (!fx?.league || !fx?.date) continue;
+    const day = new Date(`${fx.date}T00:00:00`);
+    if (Number.isNaN(day.getTime()) || day < today) continue;
+    const ms = day.getTime();
+    const cur = byLeague.get(fx.league);
+    if (!cur || ms < cur.dateMs) {
+      byLeague.set(fx.league, { dateMs: ms, round: fx.round || null, date: fx.date });
+    } else if (cur && ms === cur.dateMs && !cur.round && fx.round) {
+      cur.round = fx.round;
+    }
+  }
+  const out = new Map();
+  for (const [lg, v] of byLeague) {
+    out.set(lg, v.round ? { type: "round", value: String(v.round) } : { type: "date", value: v.date });
+  }
+  return out;
+}
+
+/** Behall bara nasta omgang per liga (inte omgangen efter). */
+function filterNextRoundOnly(list, nextByLeague) {
+  if (!list?.length) return [];
+  // Om fixtures saknas: fall tillbaka till tidigaste tip per liga
+  const nextRound = nextByLeague?.size
+    ? nextByLeague
+    : (() => {
+        const m = new Map();
+        for (const t of list) {
+          if (!t.league || m.has(t.league)) continue;
+          if (t.round) m.set(t.league, { type: "round", value: String(t.round) });
+          else m.set(t.league, { type: "date", value: t.date });
+        }
+        return m;
+      })();
+
+  // Ligor utan spelschema (t.ex. Superettan, bara odds): tidigaste datum bland ligans tips
+  const earliest = new Map();
+  for (const t of list) {
+    if (t.league && t.date && (!earliest.has(t.league) || t.date < earliest.get(t.league))) earliest.set(t.league, t.date);
+  }
+  return list.filter((t) => {
+    const nr = nextRound.get(t.league) ?? (earliest.has(t.league) ? { type: "date", value: earliest.get(t.league) } : null);
+    if (!nr) return false;
+    if (nr.type === "round") return String(t.round || "") === nr.value;
+    if (!t.date || !nr.value) return false;
+    const first = new Date(`${nr.value}T00:00:00`).getTime();
+    const day = new Date(`${t.date}T00:00:00`).getTime();
+    if (Number.isNaN(first) || Number.isNaN(day)) return false;
+    const diffDays = (day - first) / (24 * 60 * 60 * 1000);
+    return diffDays >= 0 && diffDays <= 3;
+  });
+}
+
+function buildRoundMap(fixtures) {
+  const map = new Map();
+  for (const fx of fixtures || []) {
+    if (!fx.round) continue;
+    map.set(`${fx.league}|${fx.home}|${fx.away}`, fx.round);
+    map.set(`${fx.league}|${fx.date}|${fx.home}|${fx.away}`, fx.round);
+  }
+  return map;
+}
+
+function buildLineupMap(lineups) {
+  const map = new Map();
+  for (const fx of lineups?.fixtures || []) {
+    map.set(`${fx.league}|${fx.date}|${fx.home}|${fx.away}`, fx);
+    map.set(`${fx.league}|${fx.home}|${fx.away}`, fx);
+  }
+  return map;
+}
+
+function buildDashboard() {
+  const tips = readJson("data/tips-latest.json");
+  const store = readJson("data/betting-store.json");
+  const clubelo = readJson("data/open/clubelo_ratings.json");
+  const lineups = readJson("data/open/espn_lineups.json");
+  const upcoming = readJson("data/upcoming-fixtures.json");
+  const fetchReport = readJson("data/open/fetch-report.json");
+  const meta = store?.meta || {};
+  const lineupMap = buildLineupMap(lineups);
+  const fixtureList = Array.isArray(upcoming) ? upcoming : upcoming?.fixtures || [];
+  const roundMap = buildRoundMap(fixtureList);
+  const nextByLeague = nextRoundsFromFixtures(fixtureList);
+
+  const bestUpcoming = filterNextRoundOnly(
+    prepareTips(tips?.bestUpcoming, lineupMap, roundMap),
+    nextByLeague
+  );
+  const allCandidates = filterNextRoundOnly(
+    prepareTips(tips?.allCandidates, lineupMap, roundMap),
+    nextByLeague
+  );
+  const leagues = [...new Set([...bestUpcoming, ...allCandidates].map((t) => t.league).filter(Boolean))].sort();
+  // Ligaregister: grupper (England, Europa, Sverige ...) och ligornas namn for filtret i GUI
+  const registry = readJson("config/leagues.json");
+  const leagueNames = Object.fromEntries(Object.entries(registry?.leagues || {}).map(([k, v]) => [k, v.name]));
+  const leagueGroups = (registry?.groups || []).map((g) => ({ id: g.id, name: g.name, leagues: g.leagues }));
+  const rounds = Object.fromEntries(
+    [...nextByLeague.entries()].map(([lg, v]) => [lg, v.type === "round" ? v.value : null])
+  );
+
+  return {
+    updatedAt: tips?.updatedAt || meta.updatedAt || null,
+    status: tips?.status || null,
+    message: tips?.message || null,
+    accuracy: tips?.accuracy || null,
+    accuracyByLeague: tips?.accuracyByLeague || store?.accuracyByLeague || null,
+    accuracyByConfidence: tips?.accuracyByConfidence || store?.accuracyByConfidence || null,
+    accuracyByConfidenceByLeague:
+      tips?.accuracyByConfidenceByLeague || store?.accuracyByConfidenceByLeague || null,
+    leagues,
+    leagueNames,
+    leagueGroups,
+    rounds,
+    bestUpcoming,
+    allCandidates,
+    sources: {
+      matchCount: meta.matchCount ?? null,
+      clubElo: clubelo
+        ? { teams: clubelo.teamCount, updatedAt: clubelo.updatedAt }
+        : null,
+      lineups: lineups
+        ? {
+            fixtures: lineups.fixtureCount,
+            confirmed: lineups.confirmedCount,
+            pending: lineups.pendingCount,
+            updatedAt: lineups.updatedAt,
+          }
+        : null,
+      understat: meta.understatXg || null,
+      fpl: meta.fplAvailability || null,
+      players: (() => {
+        const ps = readJson("data/open/player_stats.json");
+        if (!ps) return null;
+        return {
+          updatedAt: ps.updatedAt,
+          counts: ps.counts,
+          understatOk: Boolean(ps.sources?.understat?.ok),
+          fplOk: Boolean(ps.sources?.fpl?.ok),
+          espnChOk: Boolean(ps.sources?.espnChampionship?.ok),
+          limitations: ps.sources?.limitations || [],
+        };
+      })(),
+      fetchReportAt: fetchReport?.updatedAt || null,
+    },
+    fetch: {
+      running: Boolean(fetchJob?.running),
+      startedAt: fetchJob?.startedAt || null,
+    },
+  };
+}
+
+// ---------- Daily Scanner ----------
+
+function scanState() {
+  return {
+    running: Boolean(scanJob?.running),
+    startedAt: scanJob?.startedAt || null,
+    endedAt: scanJob?.endedAt || null,
+    ok: scanJob?.ok ?? null,
+    days: scanJob?.days ?? null,
+    progress: scanJob?.progress || null,
+    error: scanJob?.error || null,
+  };
+}
+
+function scanEmit(payload) {
+  if (!scanJob) return;
+  for (const res of scanJob.listeners) {
+    try {
+      res.write(`data: ${JSON.stringify(payload)}\n\n`);
+    } catch {
+      scanJob.listeners.delete(res);
+    }
+  }
+}
+
+function startScan(days = 7) {
+  if (scanJob?.running) return { ok: false, error: "Scannern kör redan" };
+  const d = Math.min(21, Math.max(1, Math.round(Number(days) || 7)));
+  scanJob = {
+    running: true, startedAt: new Date().toISOString(), endedAt: null, ok: null, days: d,
+    progress: { step: 0, total: 1, text: "Startar Daily Scanner…" }, logs: [], listeners: new Set(),
+  };
+  const child = spawn(process.execPath, [path.join(ROOT, "scripts", "daily-scanner.mjs"), "--days", String(d)], {
+    cwd: ROOT, env: process.env, windowsHide: true,
+  });
+  let buf = "";
+  const onLine = (line) => {
+    if (line.startsWith("@@progress ")) {
+      try {
+        scanJob.progress = JSON.parse(line.slice(11));
+        scanEmit({ type: "progress", progress: scanJob.progress });
+      } catch {
+        /* ignore */
+      }
+      return;
+    }
+    scanJob.logs.push(line);
+    if (scanJob.logs.length > 400) scanJob.logs.shift();
+    scanEmit({ type: "log", line });
+  };
+  child.stdout.on("data", (b) => {
+    buf += String(b);
+    const lines = buf.split(/\r?\n/);
+    buf = lines.pop();
+    lines.filter(Boolean).forEach(onLine);
+  });
+  child.stderr.on("data", (b) => String(b).split(/\r?\n/).filter(Boolean).forEach((l) => onLine(`[err] ${l}`)));
+  const finish = (ok, error) => {
+    if (!scanJob.running) return;
+    if (buf) onLine(buf);
+    scanJob.running = false;
+    scanJob.ok = ok;
+    scanJob.error = error || null;
+    scanJob.endedAt = new Date().toISOString();
+    scanEmit({ type: "done", ...scanState() });
+    for (const res of scanJob.listeners) {
+      try {
+        res.end();
+      } catch {
+        /* ignore */
+      }
+    }
+    scanJob.listeners.clear();
+  };
+  child.on("error", (e) => finish(false, e.message));
+  child.on("close", (code) =>
+    finish(code === 0, code === 0 ? null : scanJob.logs.filter((l) => /^Fel|\[err\]/.test(l)).pop() || `exit ${code}`)
+  );
+  return { ok: true, ...scanState() };
+}
+
+function broadcast(line) {
+  if (!fetchJob) return;
+  fetchJob.logs.push(line);
+  if (fetchJob.logs.length > 800) fetchJob.logs.shift();
+  for (const res of fetchJob.listeners) {
+    try {
+      res.write(`data: ${JSON.stringify({ type: "log", line })}\n\n`);
+    } catch {
+      fetchJob.listeners.delete(res);
+    }
+  }
+}
+
+function finishFetch(ok, code) {
+  if (!fetchJob) return;
+  fetchJob.running = false;
+  const payload = { type: "done", ok, code, endedAt: new Date().toISOString() };
+  for (const res of fetchJob.listeners) {
+    try {
+      res.write(`data: ${JSON.stringify(payload)}\n\n`);
+      res.end();
+    } catch {
+      /* ignore */
+    }
+  }
+  fetchJob.listeners.clear();
+}
+
+function startFetch(mode = "sync") {
+  if (fetchJob?.running) {
+    return { ok: false, error: "Hämtning pågår redan" };
+  }
+
+  const scripts = {
+    sync: ["run", "sync"],
+    clubelo: ["run", "clubelo"],
+    lineups: ["run", "lineups"],
+    full: null, // custom: fetch then store with clubelo/lineups already in fetch
+  };
+
+  fetchJob = {
+    running: true,
+    startedAt: new Date().toISOString(),
+    logs: [],
+    listeners: new Set(),
+    mode,
+  };
+
+  const isWin = process.platform === "win32";
+  let child;
+
+  if (mode === "full") {
+    // Full refresh: open sources (inkl. clubelo+lineups) + store + ledger
+    const ps = path.join(ROOT, "scripts", "Fetch-OpenSources.ps1");
+    const store = path.join(ROOT, "scripts", "Update-BettingStore.ps1");
+    const ledger = path.join(ROOT, "scripts", "Update-TipsLedger.ps1");
+    const cmd = [
+      `Write-Host '=== Hämta öppna källor ==='`,
+      `& powershell -NoProfile -ExecutionPolicy Bypass -File '${ps}'`,
+      `if ($LASTEXITCODE -ne 0 -and $LASTEXITCODE -ne $null) { Write-Host "Fetch exit $LASTEXITCODE" }`,
+      `Write-Host '=== OddsPortal (reservodds dar odds saknas) ==='`,
+      `& '${process.execPath}' '${path.join(ROOT, "scripts", "fetch-oddsportal.mjs")}'`,
+      `Write-Host '=== Bygg tips / store ==='`,
+      `& powershell -NoProfile -ExecutionPolicy Bypass -File '${store}' -SkipDownload`,
+      `Write-Host '=== Ledger ==='`,
+      `& powershell -NoProfile -ExecutionPolicy Bypass -File '${ledger}'`,
+      `Write-Host '=== Daily Scanner ==='`,
+      `& '${process.execPath}' '${path.join(ROOT, "scripts", "daily-scanner.mjs")}' | Where-Object { $_ -notlike '@@progress*' }`,
+      `Write-Host '=== Klart ==='`,
+    ].join("; ");
+    child = spawn("powershell", ["-NoProfile", "-ExecutionPolicy", "Bypass", "-Command", cmd], {
+      cwd: ROOT,
+      env: process.env,
+      windowsHide: true,
+    });
+  } else {
+    const args = scripts[mode] || scripts.sync;
+    child = spawn(isWin ? "npm.cmd" : "npm", args, {
+      cwd: ROOT,
+      env: process.env,
+      windowsHide: true,
+      shell: isWin,
+    });
+  }
+
+  broadcast(`Startar hämtning (${mode})…`);
+
+  child.stdout.on("data", (buf) => {
+    String(buf)
+      .split(/\r?\n/)
+      .filter(Boolean)
+      .forEach((line) => broadcast(line));
+  });
+  child.stderr.on("data", (buf) => {
+    String(buf)
+      .split(/\r?\n/)
+      .filter(Boolean)
+      .forEach((line) => broadcast(`[err] ${line}`));
+  });
+  child.on("error", (err) => {
+    broadcast(`Fel: ${err.message}`);
+    finishFetch(false, 1);
+  });
+  child.on("close", (code) => {
+    broadcast(`Process klar (exit ${code})`);
+    finishFetch(code === 0, code ?? 1);
+  });
+
+  return { ok: true, mode, startedAt: fetchJob.startedAt };
+}
+
+const server = http.createServer((req, res) => {
+  const url = new URL(req.url || "/", `http://${req.headers.host || "localhost"}`);
+  if (handleStryktips(req, res, url, ROOT)) return;
+
+  if (req.method === "GET" && url.pathname === "/api/dashboard") {
+    try {
+      return sendJson(res, 200, buildDashboard());
+    } catch (e) {
+      return sendJson(res, 500, { error: String(e.message || e) });
+    }
+  }
+
+  if (req.method === "GET" && url.pathname === "/api/players") {
+    try {
+      const q = (url.searchParams.get("q") || "").trim().toLowerCase();
+      const league = (url.searchParams.get("league") || "").trim().toUpperCase();
+      const limit = Math.min(200, Math.max(1, Number(url.searchParams.get("limit") || 50)));
+      const index = readJson("data/open/player_stats_index.json");
+      const full = readJson("data/open/player_stats.json");
+      if (!index && !full) {
+        return sendJson(res, 404, {
+          ok: false,
+          error: "player_stats saknas — kör npm run players",
+          sourcesBlocked: ["Opta", "FBref", "WhoScored"],
+        });
+      }
+      let list = index?.players || [];
+      const allowed = new Set(["PL", "LL", "SA", "BL", "L1", "ED", "CH"]);
+      if (allowed.has(league)) {
+        list = list.filter((p) => p.league === league);
+      }
+      if (q) {
+        list = list.filter(
+          (p) =>
+            String(p.name || "").toLowerCase().includes(q) ||
+            String(p.team || "").toLowerCase().includes(q)
+        );
+      }
+      const slice = list.slice(0, limit);
+      let detail = null;
+      if (q && slice.length >= 1 && full) {
+        const hit = slice[0];
+        const pool =
+          (full.leagues && full.leagues[hit.league]) ||
+          (hit.league === "CH" ? full.championship : null) ||
+          (hit.league === "PL" ? full.premierLeague : null) ||
+          [];
+        detail =
+          (pool || []).find(
+            (p) =>
+              String(p.name).toLowerCase() === String(hit.name).toLowerCase() ||
+              (hit.understatId && p.understatId === hit.understatId) ||
+              (hit.fplId && p.fpl?.fplId === hit.fplId) ||
+              (hit.espnId && p.espnId === hit.espnId)
+          ) || null;
+      }
+      return sendJson(res, 200, {
+        ok: true,
+        updatedAt: index?.updatedAt || full?.updatedAt || null,
+        counts: index?.counts || full?.counts || null,
+        total: index?.total || full?.total || null,
+        scope: full?.scope || ["PL", "LL", "SA", "BL", "L1", "ED"],
+        limitations: full?.sources?.limitations || [],
+        blocked: full?.sources?.blocked || [],
+        totalMatched: list.length,
+        players: slice,
+        detail,
+      });
+    } catch (e) {
+      return sendJson(res, 500, { error: String(e.message || e) });
+    }
+  }
+
+  if (req.method === "POST" && url.pathname === "/api/fetch") {
+    let body = "";
+    req.on("data", (c) => {
+      body += c;
+      if (body.length > 1e5) req.destroy();
+    });
+    req.on("end", () => {
+      let mode = "full";
+      try {
+        if (body) mode = JSON.parse(body).mode || "full";
+      } catch {
+        /* default */
+      }
+      const result = startFetch(mode);
+      return sendJson(res, result.ok ? 202 : 409, result);
+    });
+    return;
+  }
+
+  if (req.method === "GET" && url.pathname === "/api/fetch/stream") {
+    res.writeHead(200, {
+      "Content-Type": "text/event-stream; charset=utf-8",
+      "Cache-Control": "no-cache, no-transform",
+      Connection: "keep-alive",
+    });
+    res.write(`data: ${JSON.stringify({ type: "hello", running: Boolean(fetchJob?.running) })}\n\n`);
+
+    if (fetchJob) {
+      for (const line of fetchJob.logs) {
+        res.write(`data: ${JSON.stringify({ type: "log", line })}\n\n`);
+      }
+      if (fetchJob.running) {
+        fetchJob.listeners.add(res);
+        req.on("close", () => fetchJob?.listeners.delete(res));
+      } else {
+        res.write(
+          `data: ${JSON.stringify({ type: "done", ok: true, replay: true })}\n\n`
+        );
+        res.end();
+      }
+    } else {
+      res.end();
+    }
+    return;
+  }
+
+  if (req.method === "GET" && url.pathname === "/api/analyze") {
+    const q = Object.fromEntries(["league", "date", "home", "away"].map((k) => [k, url.searchParams.get(k) || ""]));
+    analyzeOne(q)
+      .then((m) => (m ? sendJson(res, 200, m) : sendJson(res, 404, { error: "Matchen finns inte bland kommande tips" })))
+      .catch((e) => sendJson(res, 500, { error: String(e.message || e) }));
+    return;
+  }
+
+  if (req.method === "GET" && url.pathname === "/api/scan") {
+    try {
+      return sendJson(res, 200, { state: scanState(), result: readJson("data/daily-scan.json") });
+    } catch (e) {
+      return sendJson(res, 500, { error: String(e.message || e) });
+    }
+  }
+
+  if (req.method === "POST" && url.pathname === "/api/scan") {
+    let body = "";
+    req.on("data", (c) => {
+      body += c;
+      if (body.length > 1e4) req.destroy();
+    });
+    req.on("end", () => {
+      let days = 7;
+      try {
+        if (body) days = JSON.parse(body).days ?? 7;
+      } catch {
+        /* default */
+      }
+      const result = startScan(days);
+      return sendJson(res, result.ok ? 202 : 409, result);
+    });
+    return;
+  }
+
+  if (req.method === "GET" && url.pathname === "/api/scan/stream") {
+    res.writeHead(200, {
+      "Content-Type": "text/event-stream; charset=utf-8",
+      "Cache-Control": "no-cache, no-transform",
+      Connection: "keep-alive",
+    });
+    res.write(`data: ${JSON.stringify({ type: "hello", ...scanState() })}\n\n`);
+    if (scanJob?.running) {
+      scanJob.listeners.add(res);
+      req.on("close", () => scanJob?.listeners.delete(res));
+    } else {
+      res.write(`data: ${JSON.stringify({ type: "done", replay: true, ...scanState() })}\n\n`);
+      res.end();
+    }
+    return;
+  }
+
+  if (url.pathname.startsWith("/api/")) {
+    return sendJson(res, 404, { error: "Okänd API-route" });
+  }
+
+  serveStatic(req, res);
+});
+
+server.listen(PORT, () => {
+  console.log(`Betting GUI: http://localhost:${PORT}`);
+});

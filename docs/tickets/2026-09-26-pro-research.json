@@ -1,0 +1,47 @@
+[
+  {
+    "name": "[STORY] Closing odds i store (Pinnacle / Betfair Exchange / marknadssnitt)",
+    "labels": ["odds", "p0", "data"],
+    "desc": "## Sammanfattning\nProffs mater sig mot closing line. football-data CSV har redan closing-kolumner som vi inte laser in.\n\n## Kalla\ndocs/krav/01-proffs-research.md\n\n## Acceptanskriterier\n- [ ] matches[].closing med PSCH/PSCD/PSCA, PC>2.5/PC<2.5, BFECH/BFECD/BFECA, AvgCH/AvgCD/AvgCA, AvgC>2.5/AvgC<2.5\n- [ ] matches[].odds.pinnacle_* (oppning) sparas ocksa\n- [ ] meta.closingOddsCoverage i store"
+  },
+  {
+    "name": "[STORY] Devig: fair odds utan bookmaker-marginal",
+    "labels": ["odds", "p0", "model"],
+    "desc": "## Sammanfattning\nRakna om odds till sannolikheter och ta bort marginalen (multiplicative, penaltyblog: basta RPS i PL 24/25) innan edge raknas.\n\n## Acceptanskriterier\n- [ ] Devig-funktion (multiplicative + power) i pro-lagret\n- [ ] Edge = modell-p minus devig:ad marknads-p\n- [ ] Overround/marginal loggas per match"
+  },
+  {
+    "name": "[STORY] CLV i tips-ledger",
+    "labels": ["odds", "p0", "tracking"],
+    "desc": "## Sammanfattning\nClosing Line Value ar proffsens huvudmatt (signal efter ~50 spel, P/L kraver tusentals).\n\n## Acceptanskriterier\n- [ ] Ledger sparar odds vid tipstillfallet (oddsTaken) per marknad\n- [ ] Vid settle: closing odds (Pinnacle, annars snitt) + clv = oddsTaken/fairClosing - 1\n- [ ] liveClv-sammanfattning (snitt, andel positiva) i ledgern"
+  },
+  {
+    "name": "[STORY] Dixon-Coles-modell med tidsdecay",
+    "labels": ["model", "p1"],
+    "desc": "## Sammanfattning\nPoisson attack/forsvar per lag + hemmafordel, Dixon-Coles rho-korrektion for lagt antal mal, exponentiell tidsviktning.\n\n## Acceptanskriterier\n- [ ] Resultatmatris per kommande match -> 1X2, BTTS, O/U 2.5 ur samma modell\n- [ ] Rho skattas pa data (grid search)\n- [ ] Blandas med befintlig modell i tipsen (dcProbs + blended)"
+  },
+  {
+    "name": "[STORY] Vilodagar och matchtathet",
+    "labels": ["model", "p1", "data"],
+    "desc": "## Sammanfattning\nKort aterhamtning / 3 matcher pa 8 dagar paverkar prestation.\n\n## Acceptanskriterier\n- [ ] restDays per lag for kommande match (fran ligamatcher i store)\n- [ ] matches7d/matches14d per lag\n- [ ] Visas i tips (restNote)"
+  },
+  {
+    "name": "[STORY] Fraktionell Kelly-insats",
+    "labels": ["bankroll", "p1"],
+    "desc": "## Sammanfattning\nProffs anvander 1/4-1/2 Kelly, tak 1-3 % av bankrulle.\n\n## Acceptanskriterier\n- [ ] kellyFraction (default 0.25) + maxStake 2 % konfigurerbart\n- [ ] stakePct per tips med positiv edge\n- [ ] Visas i tips-latest.md"
+  },
+  {
+    "name": "[TASK] Modellutvardering: RPS/Brier + CLV-backtest mot Pinnacle closing",
+    "labels": ["model", "p1", "tracking"],
+    "desc": "## Sammanfattning\nMat modellen som proffs gor: RPS for 1X2, Brier for BTTS/OU, jamfor mot Pinnacle closing (marknadens facit).\n\n## Acceptanskriterier\n- [ ] data/reports/pro-evaluation.json\n- [ ] RPS modell vs RPS Pinnacle closing per liga\n- [ ] Simulerad avkastning om vi spelat edge>tröskel mot oppningsodds"
+  },
+  {
+    "name": "[STORY] Domarstatistik (kort, fouls)",
+    "labels": ["data", "p2"],
+    "desc": "## Sammanfattning\nCSV har Referee + HY/AY/HR/AR/HF/AF. Grund for kortmarknader.\n\n## Acceptanskriterier\n- [ ] data/open/referees.json med matcher, kort/match, fouls/match per domare\n- [ ] Endast ligor dar Referee finns (PL)"
+  },
+  {
+    "name": "[STORY] Vader per match (Open-Meteo)",
+    "labels": ["data", "p2"],
+    "desc": "## Sammanfattning\nVind/nederbord paverkar malsnitt (Starlizard spar vader). Open-Meteo ar gratis utan nyckel.\n\n## Acceptanskriterier\n- [ ] Stadion-koordinater for PL + Championship\n- [ ] Prognos vind/nederbord vid avspark for kommande matcher\n- [ ] weatherNote i tips"
+  }
+]

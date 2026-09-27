@@ -1,0 +1,72 @@
+[
+  {
+    "name": "[EPIC] Infra & API-klient for fotbollsdata",
+    "labels": ["infra", "p0", "data"],
+    "desc": "## Sammanfattning\nGemensam sync fran oppna kallor till lokal store.\n\n## Prioritet\nP0\n\n## Acceptanskriterier\n- [ ] scripts/Fetch-OpenSources.ps1 + Update-BettingStore.ps1\n- [ ] Felhantering per kalla\n- [ ] meta.sources i betting-store.json"
+  },
+  {
+    "name": "[STORY] Oppna kallor: football-data.co.uk CSV",
+    "labels": ["data", "p0"],
+    "desc": "## Sammanfattning\nE0/E1 CSV for PL/Championship med resultat + 1X2 + O/U odds.\n\n## Acceptanskriterier\n- [ ] Minst 3 sasonger\n- [ ] Sparas i data/raw/"
+  },
+  {
+    "name": "[STORY] Oppna kallor: openfootball JSON fixtures",
+    "labels": ["data", "p0"],
+    "desc": "## Sammanfattning\nHamta schema/resultat fran openfootball/football.json (GitHub).\n\n## Acceptanskriterier\n- [ ] en.1 (PL) + en.2 (Championship) nar tillgangligt\n- [ ] Mergas eller lagras under data/open/"
+  },
+  {
+    "name": "[STORY] Understat xG via Playwright fallback",
+    "labels": ["data", "p1"],
+    "desc": "## Sammanfattning\nOm HTTP/scrape misslyckas: Playwright hamtar Understat-liga-sida och extraherar JSON.\n\n## Acceptanskriterier\n- [ ] tests/pw-understat.spec.ts eller script\n- [ ] Sparar data/open/understat-*.json nar mojligt"
+  },
+  {
+    "name": "[EPIC] Ligor, sasonger och lag",
+    "labels": ["teams", "p0"],
+    "desc": "## Sammanfattning\nLaglista PL + Championship i store.teams.\n\n## Acceptanskriterier\n- [ ] Alla lag aktuell sasong\n- [ ] key = league|name"
+  },
+  {
+    "name": "[EPIC] Fixtures, resultat och standings",
+    "labels": ["data", "p0"],
+    "desc": "## Sammanfattning\nAlla spelade matcher + beraknad form/tabellproxy.\n\n## Acceptanskriterier\n- [ ] matches[] i store\n- [ ] form last10 per lag"
+  },
+  {
+    "name": "[EPIC] Odds P0-marknader 1X2 och O/U 2.5",
+    "labels": ["odds", "p0"],
+    "desc": "## Sammanfattning\nOdds fran CSV (Avg/B365). BTTS berakas fran resultat tills odds-kalla finns.\n\n## Acceptanskriterier\n- [ ] odds.home/draw/away/over25/under25 per match"
+  },
+  {
+    "name": "[EPIC] Form & home/away-aggregat",
+    "labels": ["teams", "p0"],
+    "desc": "## Sammanfattning\nppg, bttsRate, over25Rate, hemma/borta splits.\n\n## Acceptanskriterier\n- [ ] Finns i store.teams\n- [ ] Anvands av tipsmotor"
+  },
+  {
+    "name": "[EPIC] Injuries & availability (P1 open source)",
+    "labels": ["players", "p1"],
+    "desc": "## Sammanfattning\nSkador nar oppna kalla finns; annars ticket kvarstar.\n\n## Acceptanskriterier\n- [ ] Dokumenterad kalla eller blocker"
+  },
+  {
+    "name": "[EPIC] Spelare och trupper (P1)",
+    "labels": ["players", "p1"],
+    "desc": "## Sammanfattning\nTruppdata fran oppna kallor nar tillgangligt.\n\n## Acceptanskriterier\n- [ ] data/open/squads eller dokumenterad begransning"
+  },
+  {
+    "name": "[TASK] Playwright regression: store + tips",
+    "labels": ["infra", "p0"],
+    "desc": "## Sammanfattning\nAuto-test som verifierar store och tipsgenerering.\n\n## Acceptanskriterier\n- [ ] npx playwright test passerar\n- [ ] Kollar matchCount, markets, tips-filer"
+  },
+  {
+    "name": "[TASK] Ralph/loop PROMPT for iterativ datafix",
+    "labels": ["infra", "p0"],
+    "desc": "## Sammanfattning\nPROMPT.md med completion-promise for upprepade sync/test-korningar.\n\n## Acceptanskriterier\n- [ ] PROMPT.md + scripts/ralph-iterate.ps1"
+  },
+  {
+    "name": "[STORY] Matchstatistik och xG (P1)",
+    "labels": ["data", "p1"],
+    "desc": "## Sammanfattning\nSkott fran CSV; xG fran Understat nar PW lyckas.\n\n## Acceptanskriterier\n- [ ] shots i matchdata\n- [ ] xG-falt nar kalla ger data"
+  },
+  {
+    "name": "[STORY] H2H-historik mellan tva lag",
+    "labels": ["data", "p1"],
+    "desc": "## Sammanfattning\nQuery/funktion for senaste inbordes moten ur store.\n\n## Acceptanskriterier\n- [ ] scripts/Get-H2H.ps1 eller funktion i store-update"
+  }
+]

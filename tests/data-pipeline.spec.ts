@@ -1,0 +1,130 @@
+import { test, expect } from '@playwright/test';
+import fs from 'fs';
+import path from 'path';
+
+const root = path.resolve(__dirname, '..');
+
+function readJson(filePath: string) {
+  const raw = fs.readFileSync(filePath, 'utf8').replace(/^\uFEFF/, '');
+  return JSON.parse(raw);
+}
+
+test('betting-store finns och har matcher', async () => {
+  const storePath = path.join(root, 'data', 'betting-store.json');
+  expect(fs.existsSync(storePath)).toBeTruthy();
+  const store = readJson(storePath);
+  expect(store.meta.matchCount).toBeGreaterThan(500);
+  expect(store.meta.markets).toEqual(expect.arrayContaining(['1X2', 'BTTS', 'OU25']));
+  expect(Array.isArray(store.teams)).toBeTruthy();
+  expect(store.teams.length).toBeGreaterThan(30);
+});
+
+test('tips-filer finns', async () => {
+  const tipsJson = path.join(root, 'data', 'tips-latest.json');
+  const tipsMd = path.join(root, 'data', 'tips-latest.md');
+  expect(fs.existsSync(tipsJson)).toBeTruthy();
+  expect(fs.existsSync(tipsMd)).toBeTruthy();
+  const tips = readJson(tipsJson);
+  expect(tips.accuracy['1X2']).toBeDefined();
+  expect(tips.accuracy.BTTS).toBeDefined();
+  expect(tips.accuracy.OU25).toBeDefined();
+});
+
+test('open sources fetch-report', async () => {
+  const reportPath = path.join(root, 'data', 'open', 'fetch-report.json');
+  test.skip(!fs.existsSync(reportPath), 'Kör npm run fetch först');
+  const report = readJson(reportPath);
+  const ok = (report.sources || []).filter((s: { ok: boolean }) => s.ok);
+  expect(ok.length).toBeGreaterThan(3);
+});
+
+test('Understat xG via getLeagueData (AJAX) + PW fallback', async ({ page, request }) => {
+  const outDir = path.join(root, 'data', 'open');
+  fs.mkdirSync(outDir, { recursive: true });
+
+  // Preferred path: AJAX endpoint used by Understat after 2025 redesign
+  const season = '2026';
+  await page.goto(`https://understat.com/league/EPL/${season}`, {
+    waitUntil: 'domcontentloaded',
+    timeout: 60_000,
+  });
+
+  const ajax = await page.request.get(`https://understat.com/getLeagueData/EPL/${season}`, {
+    headers: {
+      'X-Requested-With': 'XMLHttpRequest',
+      Accept: 'application/json, text/javascript, */*; q=0.01',
+      Referer: `https://understat.com/league/EPL/${season}`,
+    },
+  });
+
+  expect(ajax.ok()).toBeTruthy();
+  const data = await ajax.json();
+  expect(data.teams).toBeTruthy();
+
+  const teamIds = Object.keys(data.teams);
+  expect(teamIds.length).toBeGreaterThanOrEqual(18);
+
+  // Aggregate lightweight xG per team for assertion + file output
+  const teams = teamIds.map((id) => {
+    const t = data.teams[id];
+    const hist = t.history || [];
+    const n = hist.length || 1;
+    const xG = hist.reduce((s: number, h: { xG: number }) => s + Number(h.xG || 0), 0);
+    const xGA = hist.reduce((s: number, h: { xGA: number }) => s + Number(h.xGA || 0), 0);
+    return {
+      id,
+      title: t.title,
+      played: hist.length,
+      xGpg: Number((xG / n).toFixed(3)),
+      xGApg: Number((xGA / n).toFixed(3)),
+    };
+  });
+
+  fs.writeFileSync(
+    path.join(outDir, `understat_EPL_${season}_pw_verify.json`),
+    JSON.stringify(
+      {
+        source: 'playwright getLeagueData',
+        season,
+        teamCount: teams.length,
+        sample: teams.slice(0, 5),
+        updatedAt: new Date().toISOString(),
+      },
+      null,
+      2
+    ),
+    'utf8'
+  );
+
+  expect(teams.some((t) => t.xGpg > 0)).toBeTruthy();
+  console.log(`Understat AJAX OK: ${teams.length} teams, e.g. ${teams[0].title} xGpg=${teams[0].xGpg}`);
+});
+
+test('store har Understat xG pa PL-lag', async () => {
+  const xgPath = path.join(root, 'data', 'open', 'understat_EPL_2026_xg.json');
+  test.skip(!fs.existsSync(xgPath), 'Kör Fetch-UnderstatXg.ps1 först');
+  const xg = readJson(xgPath);
+  expect(xg.teamCount).toBeGreaterThanOrEqual(18);
+
+  const store = readJson(path.join(root, 'data', 'betting-store.json'));
+  const plWithXg = (store.teams || []).filter(
+    (t: { league: string; xg?: unknown }) => t.league === 'PL' && t.xg
+  );
+  expect(plWithXg.length).toBeGreaterThanOrEqual(15);
+  expect(store.meta.understatXg?.loaded).toBeTruthy();
+});
+
+test('FPL availability finns och ar mergad', async () => {
+  const fplPath = path.join(root, 'data', 'open', 'fpl_availability.json');
+  test.skip(!fs.existsSync(fplPath), 'Kör npm run fpl först');
+  const fpl = readJson(fplPath);
+  expect(fpl.teamCount).toBeGreaterThanOrEqual(18);
+  expect(fpl.playerCount).toBeGreaterThan(400);
+
+  const store = readJson(path.join(root, 'data', 'betting-store.json'));
+  const plAvail = (store.teams || []).filter(
+    (t: { league: string; availability?: unknown }) => t.league === 'PL' && t.availability
+  );
+  expect(plAvail.length).toBeGreaterThanOrEqual(15);
+  expect(store.meta.fplAvailability?.loaded).toBeTruthy();
+});

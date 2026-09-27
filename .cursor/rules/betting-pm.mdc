@@ -1,0 +1,13 @@
+---
+description: Använd betting-krav-trello-skillen för krav och Trello-tickets
+alwaysApply: true
+---
+
+# Betting-projekt
+
+När användaren ber om krav, backlog, epics, user stories eller Trello-kort:
+
+1. Läs och följ skillen `.cursor/skills/betting-krav-trello/SKILL.md`
+2. Prioritera data enligt `data-priorities.md` (P0 före P1/P2)
+3. Scope är Premier League + Championship om inget annat sägs
+4. Skriv krav/tickets på svenska

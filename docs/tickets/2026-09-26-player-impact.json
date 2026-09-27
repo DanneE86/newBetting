@@ -1,0 +1,7 @@
+﻿[
+  {
+    "name": "[STORY] Spelarviktad franvaro i Dixon-Coles (xG/xA-andel)",
+    "labels": ["model", "players", "p1"],
+    "desc": "## Sammanfattning\nIdag ger varje FPL-nyckelspelare samma avdrag (-6 %/-9 %) pa vinstchansen, bara PL, aldrig testat. Proffs viktar frånvaro efter spelarens bidrag.\n\n## Losning\n- Spelarens andel av lagets xG+xA (per 90, viktat med speltid) fran Understat\n- Franvarande spelare -> lagets attack i Dixon-Coles sanks med andel x (1 - ersattningsgrad)\n- Konsekvent paverkan pa 1X2/BTTS/OU ur samma resultatmatris\n\n## Acceptanskriterier\n- [ ] player impact per lag (PL + LL/SA/BL/L1 dar Understat finns)\n- [ ] Franvaro fran FPL (PL) + bekraftade elvor (ESPN) nar de finns\n- [ ] tips[].pro.availability med attackfaktor per lag + vilka spelare\n- [ ] Backtest: justering utvarderad mot Pinnacle closing (hjalper den eller inte)\n- [ ] Gammal platt justering ersatt/avstangd om den inte haller"
+  }
+]
