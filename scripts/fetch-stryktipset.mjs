@@ -23,7 +23,7 @@ const SEED_DRAW = { stryktipset: 4972, europatipset: 2611 };
 // Hur mycket modellen vager mot Svenska Spels odds (marknaden ar skarpast; modellen fangar form/xG)
 const MODEL_W = 0.35;
 const MODEL_W_THIN = 0.2; // lite data (fa viktade matcher) eller landslag
-const SYSTEM_MAX_ROWS = 144; // forslag pa system: max rader
+const SYSTEM_MAX_ROWS = 296; // forslag pa system: max rader
 const HALF_LIFE_DAYS = 150;
 const RHO = -0.08; // Dixon-Coles-korrektion for 0-0/1-1/1-0/0-1
 
@@ -374,6 +374,28 @@ function marketProbs(ev) {
   return { p: inv.map((x) => x / s), odds: v, margin: r3(s - 1), source: ev.odds ? 'Svenska Spel' : 'Svenska Spel (startodds)' };
 }
 
+// Svenska Spels expertanalyser (CMS-innehall cnt:gameAnalysis) per omgang -> Map(eventNumber -> [{ author, signs, text }])
+async function fetchExpertAnalyses(productId, drawNumber) {
+  const url = `https://api.spela.svenskaspel.se/content/2/basicfilter?routesDomain=partner&contentType=cnt:gameAnalysis&count=100&channel=web`
+    + `&matchAllDomainCategories=true&domainCategories=svs-domain-sport-draws/${drawNumber},svs-domain-products/${productId}`;
+  const res = await get(url).catch(() => null);
+  const byEvent = new Map();
+  for (const r of res?.result || []) {
+    const n = r.properties?.cnt_eventNumber;
+    if (!n) continue;
+    let signs = '';
+    try {
+      signs = (JSON.parse(r.properties.cnt_gamePrediction || '{}').prediction || [])
+        .flatMap((p) => p.outcomes.map((o) => o.description)).join('');
+    } catch { /* tips saknas */ }
+    const text = String(r.body || '').replace(/<br\s*\/?>/gi, ' ').replace(/<[^>]+>/g, '')
+      .replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
+    if (!byEvent.has(n)) byEvent.set(n, []);
+    byEvent.get(n).push({ author: r.authorProfile?.authorLongName || r.authorProfile?.authorShortName || 'Svenska Spel', signs, text, published: r.published });
+  }
+  return byEvent;
+}
+
 function folkProbs(ev) {
   const f = ev.svenskaFolket;
   const v = f ? [num(f.one), num(f.x), num(f.two)] : [];
@@ -428,26 +450,32 @@ function narrative(a) {
   return out;
 }
 
-// Systemforslag: borja med spikar pa hogsta tecknet, lagg till tecken dar vinsten i trafchans per rad ar storst
+// Systemforslag: exakt optimering (DP over antal halv-/helgarderingar) av chansen till 13 ratt inom SYSTEM_MAX_ROWS
 function buildSystem(events) {
   const picks = events.map((e) => {
     const order = [0, 1, 2].sort((a, b) => e.final[b] - e.final[a]);
     return { order, n: 1 };
   });
+  const cover = (i, n) => picks[i].order.slice(0, n).reduce((s, k) => s + events[i].final[k], 0);
+  // dp: nyckel "h,f" -> { lp: summa log(tackning), ns: antal tecken per match }
+  let dp = new Map([['0,0', { lp: 0, ns: [] }]]);
+  picks.forEach((_, i) => {
+    const next = new Map();
+    for (const [key, st] of dp) {
+      const [h, f] = key.split(',').map(Number);
+      for (const n of [1, 2, 3]) {
+        const nh = h + (n === 2), nf = f + (n === 3);
+        if (2 ** nh * 3 ** nf > SYSTEM_MAX_ROWS) continue;
+        const lp = st.lp + Math.log(cover(i, n));
+        const k = `${nh},${nf}`;
+        if (!next.has(k) || next.get(k).lp < lp) next.set(k, { lp, ns: [...st.ns, n] });
+      }
+    }
+    dp = next;
+  });
+  const bestState = [...dp.values()].reduce((a, b) => (b.lp > a.lp ? b : a));
+  bestState.ns.forEach((n, i) => { picks[i].n = n; });
   const rows = () => picks.reduce((s, p) => s * p.n, 1);
-  for (;;) {
-    let best = null;
-    picks.forEach((p, i) => {
-      if (p.n >= 3) return;
-      const f = events[i].final;
-      const cur = p.order.slice(0, p.n).reduce((s, k) => s + f[k], 0);
-      const next = cur + f[p.order[p.n]];
-      const gain = Math.log(next / cur) / Math.log((p.n + 1) / p.n);
-      if (rows() / p.n * (p.n + 1) <= SYSTEM_MAX_ROWS && (!best || gain > best.gain)) best = { i, gain };
-    });
-    if (!best) break;
-    picks[best.i].n++;
-  }
   const hit = picks.reduce((s, p, i) => s * p.order.slice(0, p.n).reduce((a, k) => a + events[i].final[k], 0), 1);
   const single = events.reduce((s, e) => s * Math.max(...e.final), 1);
   return {
@@ -460,6 +488,7 @@ async function analyzeDraw(product, draw, ctx, result) {
   const events = (draw.drawEvents || []).filter((e) => !e.cancelled);
   const cutoff = events.map((e) => e.match?.matchStart?.slice(0, 10)).filter(Boolean).sort()[0] || new Date().toISOString().slice(0, 10);
   const out = [];
+  const experts = await fetchExpertAnalyses(draw.productId, draw.drawNumber);
   for (const ev of events) {
     const m = ev.match || {};
     const [hp, ap] = [m.participants?.find((p) => p.type === 'home'), m.participants?.find((p) => p.type === 'away')];
@@ -534,6 +563,12 @@ async function analyzeDraw(product, draw, ctx, result) {
     a.market = a.market?.map(r3) || null;
     a.model = a.model?.map(r3) || null;
     a.folk = a.folk?.map(r3) || null;
+    // Mer fran Svenska Spel: expertanalyser, Tio tidningars tips, startodds (oddsrorelse)
+    a.experts = experts.get(ev.eventNumber) || [];
+    const tt = ev.tioTidningarsTips;
+    a.tioTidningar = tt ? [tt.one, tt.x, tt.two].map((x) => Number(x) || 0) : null;
+    const so = ev.startOdds ? [num(ev.startOdds.one), num(ev.startOdds.x), num(ev.startOdds.two)] : null;
+    a.startOdds = so?.every((x) => x > 1) ? so : null;
     a.analysis = narrative({ ...a, final: a.final });
     // Facit (avgjord kupong)
     const r = result?.events?.find((x) => x.eventNumber === ev.eventNumber);
@@ -551,6 +586,11 @@ async function analyzeDraw(product, draw, ctx, result) {
       correct: out.filter((a) => a.result && a.result.outcome === a.tip).length,
       systemCorrect: out.filter((a) => a.result && a.systemPick?.signs.includes(a.result.outcome)).length,
       total: out.filter((a) => a.result).length,
+      experts: [...new Set(out.flatMap((a) => a.experts.map((x) => x.author)))].map((author) => ({
+        author,
+        correct: out.filter((a) => a.result && a.experts.some((x) => x.author === author && x.signs.includes(a.result.outcome))).length,
+        tipped: out.filter((a) => a.result && a.experts.some((x) => x.author === author)).length,
+      })),
       distribution: (result.distribution || []).map((d) => ({ name: d.name, winners: d.winners, amount: d.amount })),
     } : null,
   };
@@ -614,7 +654,9 @@ async function main() {
       for (const e of a.events.filter((x) => x.basis === 'market' && COUNTRY_GROUP[x.country])) {
         log(`  OBS lagnamn ej matchade: ${e.home} (${e.matched?.home ?? '?'}) - ${e.away} (${e.matched?.away ?? '?'})`);
       }
+      log(`  expertanalyser: ${a.events.reduce((s, e) => s + e.experts.length, 0)}, tio tidningar: ${a.events.filter((e) => e.tioTidningar).length} matcher`);
       if (a.result) log(`  facit: ${a.result.correct}/${a.result.total} rätt på enkelrad, system ${a.result.systemCorrect}/${a.result.total}`);
+      for (const x of a.result?.experts || []) log(`  expert ${x.author}: ${x.correct}/${x.tipped} rätt`);
     } catch (e) {
       log(`Fel ${p.name}: ${e.message}`);
     }

@@ -192,7 +192,10 @@ body.view-stryktips main { display: none !important; }
   background: rgba(0, 0, 0, 0.18);
   min-width: 0;
 }
-.st-prob.sys { border-color: rgba(184, 242, 85, 0.25); }
+.st-prob.out { opacity: 0.45; }
+.st-in { padding: 0.05rem 0.4rem; border-radius: 999px; background: var(--lime); color: #102014; font-size: 0.68rem; font-weight: 700; white-space: nowrap; }
+.st-tip.halv { background: transparent; color: var(--lime); box-shadow: inset 0 0 0 2px var(--lime); }
+.st-tip.hel { background: transparent; color: var(--warn); box-shadow: inset 0 0 0 2px var(--warn); }
 .st-prob.tip { border-color: rgba(184, 242, 85, 0.6); background: rgba(184, 242, 85, 0.07); }
 .st-prob.hit { box-shadow: inset 0 0 0 2px rgba(240, 180, 41, 0.55); }
 
@@ -237,6 +240,20 @@ body.view-stryktips main { display: none !important; }
 
 .st-bullets { margin: 0; padding-left: 1.1rem; line-height: 1.55; font-size: 0.9rem; }
 .st-bullets li + li { margin-top: 0.2rem; }
+
+.st-svs { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem 0.5rem; margin-top: 0.6rem; font-size: 0.78rem; }
+.st-svs-k { color: var(--muted); font-weight: 600; margin-left: 0.4rem; }
+.st-svs-k:first-child { margin-left: 0; }
+.st-exp { padding: 0.15rem 0.5rem; border: 1px solid var(--line); border-radius: 999px; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.st-exp.good { color: var(--lime); border-color: rgba(184, 242, 85, 0.45); }
+.st-exp.bad { color: var(--bad, #f07171); border-color: rgba(240, 113, 113, 0.4); }
+.st-experts { margin-top: 0.9rem; }
+.st-experts h4 { margin: 0 0 0.4rem; font-size: 0.85rem; }
+.st-expert { padding: 0.6rem 0.75rem; border: 1px solid var(--line); border-radius: 10px; font-size: 0.86rem; line-height: 1.5; }
+.st-expert + .st-expert { margin-top: 0.4rem; }
+.st-expert p { margin: 0; }
+.st-expert-head { margin-bottom: 0.25rem !important; color: var(--muted); }
+.st-expert-head strong, .st-expert-head b { color: var(--ink); }
 
 .st-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 0.9rem; }
 
