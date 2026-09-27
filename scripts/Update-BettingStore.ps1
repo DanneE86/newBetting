@@ -1574,10 +1574,10 @@ $tipsDoc = [ordered]@{
 }
 
 $jsonSettings = @{ Depth = 12; Compress = $false }
-# PowerShell ConvertTo-Json depth — skriv UTF8 utan BOM (Playwright/JSON.parse)
+# PowerShell ConvertTo-Json depth — -Compress (utan indrag ~72 % mindre), UTF8 utan BOM (Playwright/JSON.parse)
 $utf8NoBom = New-Object System.Text.UTF8Encoding $false
-[System.IO.File]::WriteAllText($StorePath, ($store | ConvertTo-Json -Depth 12), $utf8NoBom)
-[System.IO.File]::WriteAllText($TipsPath, ($tipsDoc | ConvertTo-Json -Depth 12), $utf8NoBom)
+[System.IO.File]::WriteAllText($StorePath, ($store | ConvertTo-Json -Depth 12 -Compress), $utf8NoBom)
+[System.IO.File]::WriteAllText($TipsPath, ($tipsDoc | ConvertTo-Json -Depth 12 -Compress), $utf8NoBom)
 
 # Markdown tip sheet
 $md = @()
