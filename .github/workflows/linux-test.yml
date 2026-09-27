@@ -1,0 +1,77 @@
+name: Linux-test (ingen commit)
+
+# Kör hela kedjan på ubuntu + PowerShell 7 för att se om den kan ersätta Windows-runnern
+# (Linux-minuter räknas 1x, Windows 2x). Committar inget – skriver bara en sammanfattning.
+on:
+  workflow_dispatch:
+    inputs:
+      spelare:
+        description: "Hämta även spelarstatistik"
+        type: boolean
+        default: true
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      TZ: Europe/Stockholm
+      THE_ODDS_API_KEY: ${{ secrets.THE_ODDS_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: powershell -> pwsh
+        run: |
+          sudo ln -sf "$(command -v pwsh)" /usr/local/bin/powershell
+          powershell -NoProfile -Command '$PSVersionTable.PSVersion.ToString(); (Get-Date).ToString("o")'
+
+      - name: Installera beroenden
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+
+      - name: Hämta öppna källor
+        shell: pwsh
+        env:
+          SPELARE: ${{ inputs.spelare }}
+        run: |
+          if ($env:SPELARE -eq "true") {
+            powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Fetch-OpenSources.ps1
+          } else {
+            powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Fetch-OpenSources.ps1 -SkipPlayers
+          }
+
+      - name: OddsPortal (reservodds)
+        continue-on-error: true
+        run: node scripts/fetch-oddsportal.mjs
+
+      - name: Bygg store + tips
+        shell: pwsh
+        run: powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Update-BettingStore.ps1 -SkipDownload
+
+      - name: Ledger
+        shell: pwsh
+        run: powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Update-TipsLedger.ps1
+
+      - name: Daily Scanner
+        run: node scripts/daily-scanner.mjs | grep -v '^@@progress'
+
+      - name: Sammanfattning
+        if: always()
+        run: |
+          echo "--- filer med bakstreck i namnet (ska vara tomt):"
+          find . -path ./node_modules -prune -o -name '*\\*' -print
+          echo "--- ändrade filer:"
+          git status --short | head -80
+          git diff --stat | tail -1
+          node -e '
+            const fs=require("fs");const r=p=>JSON.parse(fs.readFileSync(p,"utf8").replace(/^﻿/,""));
+            const s=r("data/betting-store.json"),t=r("data/tips-latest.json");
+            console.log("store: matcher",s.matches.length,"lag",s.teams.length,"updatedAt",s.meta.updatedAt,"storlek MB",(fs.statSync("data/betting-store.json").size/1e6).toFixed(1));
+            console.log("tips-nycklar:",Object.keys(t).join(","));
+            console.log("player_stats MB",(fs.statSync("data/open/player_stats.json").size/1e6).toFixed(1));'

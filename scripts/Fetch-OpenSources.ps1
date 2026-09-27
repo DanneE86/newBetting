@@ -11,8 +11,8 @@ param(
 
 $ErrorActionPreference = "Continue"
 $Root = Split-Path -Parent $PSScriptRoot
-$RawDir = Join-Path $Root "data\raw"
-$OpenDir = Join-Path $Root "data\open"
+$RawDir = Join-Path $Root "data/raw"
+$OpenDir = Join-Path $Root "data/open"
 New-Item -ItemType Directory -Force -Path $RawDir, $OpenDir | Out-Null
 
 $report = [ordered]@{
@@ -262,7 +262,7 @@ if (-not $SkipOpenFootball) {
         }
     }
 
-    $upPath = Join-Path $Root "data\upcoming-fixtures.json"
+    $upPath = Join-Path $Root "data/upcoming-fixtures.json"
     ($upcoming | ConvertTo-Json -Depth 5) | ForEach-Object {
         $utf8NoBom = New-Object System.Text.UTF8Encoding $false
         [System.IO.File]::WriteAllText($upPath, $_, $utf8NoBom)

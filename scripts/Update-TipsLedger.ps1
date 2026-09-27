@@ -10,9 +10,9 @@ param(
 
 $ErrorActionPreference = "Stop"
 $Root = Split-Path -Parent $PSScriptRoot
-if (-not $TipsPath) { $TipsPath = Join-Path $Root "data\tips-latest.json" }
-if (-not $StorePath) { $StorePath = Join-Path $Root "data\betting-store.json" }
-if (-not $LedgerPath) { $LedgerPath = Join-Path $Root "data\tips-ledger.json" }
+if (-not $TipsPath) { $TipsPath = Join-Path $Root "data/tips-latest.json" }
+if (-not $StorePath) { $StorePath = Join-Path $Root "data/betting-store.json" }
+if (-not $LedgerPath) { $LedgerPath = Join-Path $Root "data/tips-ledger.json" }
 
 function Read-Json([string]$Path) {
     if (-not (Test-Path $Path)) { return $null }

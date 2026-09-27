@@ -7,7 +7,7 @@ param(
 )
 
 $Root = Split-Path -Parent $PSScriptRoot
-$raw = [System.IO.File]::ReadAllText((Join-Path $Root "data\betting-store.json"))
+$raw = [System.IO.File]::ReadAllText((Join-Path $Root "data/betting-store.json"))
 $store = $raw.TrimStart([char]0xFEFF) | ConvertFrom-Json
 $matches = @($store.matches | Where-Object {
     (($_.home -eq $HomeTeam -and $_.away -eq $AwayTeam) -or ($_.home -eq $AwayTeam -and $_.away -eq $HomeTeam)) -and

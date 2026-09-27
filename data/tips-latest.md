@@ -1,11 +1,11 @@
 # Betting-tips (1X2 / BTTS / O-U 2.5)
 
-Uppdaterad: 2026-09-27T12:40:52.1321549+02:00
+Uppdaterad: 2026-09-27T12:48:49.6160102+02:00
 
 ## Modelltraffsakerhet (2026/27, rolling backtest)
-- **1X2:** 46.2% (1823/3947)
-- **BTTS:** 54.6% (2156/3947)
-- **O/U 2.5:** 56.1% (2216/3947)
+- **1X2:** 46.3% (1854/4006)
+- **BTTS:** 54.8% (2195/4006)
+- **O/U 2.5:** 56.1% (2248/4006)
 
 ## Status
 Basta tips efter edge-filter (tipScore/confidence/value).
@@ -30,16 +30,16 @@ Basta tips efter edge-filter (tipScore/confidence/value).
 - **O/U 2.5:** OVER 2.5 (p(over)=0.723, xG-proxy 3.84)
 - Lineup: none
 
-### Strømsgodset vs Åsane (NO2) - score 0.601
-- **1X2:** 1 (conf 0.602)
-- **BTTS:** JA (p(yes)=0.587)
-- **O/U 2.5:** OVER 2.5 (p(over)=0.614, xG-proxy 3.27)
-- Lineup: none
-
 ### Hødd vs Odd (NO2) - score 0.601
 - **1X2:** 1 (conf 0.482)
 - **BTTS:** JA (p(yes)=0.666)
 - **O/U 2.5:** OVER 2.5 (p(over)=0.654, xG-proxy 3.32)
+- Lineup: none
+
+### Strømsgodset vs Åsane (NO2) - score 0.601
+- **1X2:** 1 (conf 0.602)
+- **BTTS:** JA (p(yes)=0.587)
+- **O/U 2.5:** OVER 2.5 (p(over)=0.614, xG-proxy 3.27)
 - Lineup: none
 
 ### Cuiabá vs Ponte Preta (BR2) - score 0.6
@@ -48,7 +48,7 @@ Basta tips efter edge-filter (tipScore/confidence/value).
 - **O/U 2.5:** UNDER 2.5 (p(over)=0.383, xG-proxy 1.86)
 - Lineup: none
 
-### Sp Gijon vs Celta B (LL2) - score 0.581
+### Sp Gijon vs Celta B (LL2) - score 0.62
 - **1X2:** 1 (conf 0.451)
 - **BTTS:** NEJ (p(yes)=0.372)
 - **O/U 2.5:** UNDER 2.5 (p(over)=0.336, xG-proxy 1.94)
@@ -60,27 +60,36 @@ Basta tips efter edge-filter (tipScore/confidence/value).
 - **O/U 2.5:** OVER 2.5 (p(over)=0.627, xG-proxy 3.19)
 - Lineup: none
 
-### Dortmund vs Werder Bremen (BL) - score 0.634
+### Dortmund vs Werder Bremen (BL) - score 0.608
 - **1X2:** 1 (conf 0.647)
 - **BTTS:** JA (p(yes)=0.646)
 - **O/U 2.5:** OVER 2.5 (p(over)=0.564, xG-proxy 3.31)
 - Lineup: none
-- Players: AttackIndex H=4.10 A=2.51 (shift 0.048)
+- Players: AttackIndex H=4,10 A=2,51 (shift 0,048)
 - Players: HOME creators: Julian Ryerson, Serhou Guirassy, Ethan Nwaneri
 - Players: AWAY creators: Chuki, Marco Grüll, Niclas Füllkrug
 
-### PSV Eindhoven vs Heerenveen (ED) - score 0.626
+### PSV Eindhoven vs Heerenveen (ED) - score 0.602
 - **1X2:** 1 (conf 0.575)
 - **BTTS:** JA (p(yes)=0.645)
 - **O/U 2.5:** OVER 2.5 (p(over)=0.658, xG-proxy 3.67)
 - Lineup: none
 
-### West Ham vs QPR (CH) - score 0.583
+### West Ham vs QPR (CH) - score 0.586
 - **1X2:** 1 (conf 0.577)
 - **BTTS:** JA (p(yes)=0.586)
 - **O/U 2.5:** OVER 2.5 (p(over)=0.587, xG-proxy 3.09)
 - Lineup: pending
 - XI: Elvor ej slappta an (ESPN pending)
+
+### Augsburg vs Bayern Munich (BL) - score 0.688
+- **1X2:** 2 (conf 0.552)
+- **BTTS:** JA (p(yes)=0.705)
+- **O/U 2.5:** OVER 2.5 (p(over)=0.664, xG-proxy 4.1)
+- Lineup: none
+- Players: AttackIndex H=4,05 A=6,23 (shift -0,065)
+- Players: HOME creators: Marius Wolf, Fabian Rieder, Han-Noah Massengo
+- Players: AWAY creators: Alphonso Davies, Joshua Kimmich, Michael Olise
 
 ### Inter Miami vs Columbus Crew (MLS) - score 0.66
 - **1X2:** 1 (conf 0.524)
@@ -88,39 +97,30 @@ Basta tips efter edge-filter (tipScore/confidence/value).
 - **O/U 2.5:** OVER 2.5 (p(over)=0.709, xG-proxy 3.6)
 - Lineup: none
 
-### Augsburg vs Bayern Munich (BL) - score 0.656
-- **1X2:** 2 (conf 0.552)
-- **BTTS:** JA (p(yes)=0.705)
-- **O/U 2.5:** OVER 2.5 (p(over)=0.664, xG-proxy 4.1)
-- Lineup: none
-- Players: AttackIndex H=4.05 A=6.23 (shift -0.065)
-- Players: HOME creators: Marius Wolf, Fabian Rieder, Han-Noah Massengo
-- Players: AWAY creators: Alphonso Davies, Joshua Kimmich, Michael Olise
-
-### Real Madrid vs Villarreal (LL) - score 0.651
+### Real Madrid vs Villarreal (LL) - score 0.65
 - **1X2:** 1 (conf 0.583)
 - **BTTS:** JA (p(yes)=0.684)
 - **O/U 2.5:** OVER 2.5 (p(over)=0.64, xG-proxy 3.56)
 - Lineup: none
-- Players: AttackIndex H=5.20 A=4.43 (shift 0.023)
+- Players: AttackIndex H=5,20 A=4,43 (shift 0,023)
 - Players: HOME creators: Arda Güler, Jude Bellingham, Vinícius Júnior
 - Players: AWAY creators: Alberto Moleiro, Gerard Moreno, Nicolas Pepe
 
-### Barcelona vs Getafe (LL) - score 0.646
+### Barcelona vs Getafe (LL) - score 0.626
 - **1X2:** 1 (conf 0.719)
 - **BTTS:** JA (p(yes)=0.569)
 - **O/U 2.5:** OVER 2.5 (p(over)=0.605, xG-proxy 3.72)
 - Lineup: none
-- Players: AttackIndex H=7.18 A=1.61 (shift 0.080)
+- Players: AttackIndex H=7,18 A=1,61 (shift 0,080)
 - Players: HOME creators: Lamine Yamal, Dani Olmo, Raphinha
 - Players: AWAY creators: Ramón Terrats, Martín Satriano, Johan Mojica
 
-### Paris SG vs Le Mans (L1) - score 0.61
+### Paris SG vs Le Mans (L1) - score 0.606
 - **1X2:** 1 (conf 0.576)
 - **BTTS:** JA (p(yes)=0.654)
 - **O/U 2.5:** OVER 2.5 (p(over)=0.555, xG-proxy 3.15)
 - Lineup: none
-- Players: AttackIndex H=4.34 A=2.82 (shift 0.046)
+- Players: AttackIndex H=4,34 A=2,82 (shift 0,046)
 - Players: HOME creators: Nuno Mendes, Vitinha, Khvicha Kvaratskhelia
 - Players: AWAY creators: Lucas Calodat, Adil Bourabaa, Louis Mafouta
 
@@ -130,16 +130,28 @@ Basta tips efter edge-filter (tipScore/confidence/value).
 - **O/U 2.5:** OVER 2.5 (p(over)=0.63, xG-proxy 3.1)
 - Lineup: none
 
-### Ajax vs Nijmegen (ED) - score 0.6
+### Bodo/Glimt vs Kristiansund (NO) - score 0.598
+- **1X2:** 1 (conf 0.664)
+- **BTTS:** NEJ (p(yes)=0.466)
+- **O/U 2.5:** OVER 2.5 (p(over)=0.597, xG-proxy 3.09)
+- Lineup: none
+
+### Ajax vs Nijmegen (ED) - score 0.597
 - **1X2:** 1 (conf 0.476)
 - **BTTS:** JA (p(yes)=0.655)
 - **O/U 2.5:** OVER 2.5 (p(over)=0.668, xG-proxy 3.66)
 - Lineup: none
 
-### Bodo/Glimt vs Kristiansund (NO) - score 0.598
-- **1X2:** 1 (conf 0.664)
-- **BTTS:** NEJ (p(yes)=0.466)
-- **O/U 2.5:** OVER 2.5 (p(over)=0.597, xG-proxy 3.09)
+### AEK vs OFI Crete (GR) - score 0.594
+- **1X2:** 1 (conf 0.564)
+- **BTTS:** JA (p(yes)=0.532)
+- **O/U 2.5:** OVER 2.5 (p(over)=0.565, xG-proxy 3.1)
+- Lineup: none
+
+### Nurnberg vs Wolfsburg (BL2) - score 0.594
+- **1X2:** 1 (conf 0.501)
+- **BTTS:** JA (p(yes)=0.629)
+- **O/U 2.5:** OVER 2.5 (p(over)=0.594, xG-proxy 3.66)
 - Lineup: none
 
 ### Feyenoord vs AZ Alkmaar (ED) - score 0.594
@@ -154,55 +166,58 @@ Basta tips efter edge-filter (tipScore/confidence/value).
 - **O/U 2.5:** OVER 2.5 (p(over)=0.661, xG-proxy 3.51)
 - Lineup: none
 
-### RB Leipzig vs Ein Frankfurt (BL) - score 0.582
-- **1X2:** 1 (conf 0.514)
-- **BTTS:** JA (p(yes)=0.599)
-- **O/U 2.5:** OVER 2.5 (p(over)=0.633, xG-proxy 3.68)
-- Lineup: none
-
-### Arsenal vs Leeds (PL) - score 0.616
+### Arsenal vs Leeds (PL) - score 0.601
 - **1X2:** 1 (conf 0.617)
 - **BTTS:** JA (p(yes)=0.64)
 - **O/U 2.5:** OVER 2.5 (p(over)=0.546, xG-proxy 3.28)
 - Lineup: pending
 - XI: Elvor ej slappta an (ESPN pending)
-- Players: AttackIndex H=3.36 A=2.65 (shift 0.021)
+- Players: AttackIndex H=3,36 A=2,65 (shift 0,021)
 - Players: HOME creators: Martin Odegaard, Christos Tzolis, Riccardo Calafiori
 - Players: AWAY creators: Ao Tanaka, Lukas Nmecha, James Justin
 - Availability: AWAY key out: Wilson
 
-### Chelsea vs Bournemouth (PL) - score 0.616
-- **1X2:** 1 (conf 0.493)
-- **BTTS:** JA (p(yes)=0.682)
-- **O/U 2.5:** OVER 2.5 (p(over)=0.627, xG-proxy 3.65)
-- Lineup: pending
-- XI: Elvor ej slappta an (ESPN pending)
-- Players: AttackIndex H=3.45 A=2.92 (shift 0.016)
-- Players: HOME creators: Cole Palmer, Morgan Rogers, Jorrel Hato
-- Players: AWAY creators: Marcus Tavernier, Evanilson, Alex Scott
-- Availability: AWAY key out: Kluivert
-
-### Sunderland vs Brighton (PL) - score 0.586
+### Sunderland vs Brighton (PL) - score 0.603
 - **1X2:** 2 (conf 0.456)
 - **BTTS:** JA (p(yes)=0.669)
 - **O/U 2.5:** OVER 2.5 (p(over)=0.588, xG-proxy 4.06)
 - Lineup: pending
 - XI: Elvor ej slappta an (ESPN pending)
-- Players: AttackIndex H=3.66 A=4.44 (shift -0.023)
+- Players: AttackIndex H=3,66 A=4,44 (shift -0,023)
 - Players: HOME creators: Granit Xhaka, Enzo Le Fée, Trai Hume
 - Players: AWAY creators: Pascal Groß, Maxim De Cuyper, Diego Gómez
 - Availability: HOME key out: Diarra
 - Availability: AWAY key out: Hinshelwood
 
-### Man United vs Tottenham (PL) - score 0.616
+### Chelsea vs Bournemouth (PL) - score 0.595
+- **1X2:** 1 (conf 0.493)
+- **BTTS:** JA (p(yes)=0.682)
+- **O/U 2.5:** OVER 2.5 (p(over)=0.627, xG-proxy 3.65)
+- Lineup: pending
+- XI: Elvor ej slappta an (ESPN pending)
+- Players: AttackIndex H=3,45 A=2,92 (shift 0,016)
+- Players: HOME creators: Cole Palmer, Morgan Rogers, Jorrel Hato
+- Players: AWAY creators: Marcus Tavernier, Evanilson, Alex Scott
+- Availability: AWAY key out: Kluivert
+
+### Man United vs Tottenham (PL) - score 0.622
 - **1X2:** 1 (conf 0.547)
 - **BTTS:** JA (p(yes)=0.626)
 - **O/U 2.5:** OVER 2.5 (p(over)=0.632, xG-proxy 3.96)
 - Lineup: pending
 - XI: Elvor ej slappta an (ESPN pending)
-- Players: AttackIndex H=3.96 A=2.32 (shift 0.049)
+- Players: AttackIndex H=3,96 A=2,32 (shift 0,049)
 - Players: HOME creators: Matheus Cunha, Bryan Mbeumo, Bruno Fernandes
 - Players: AWAY creators: Sávio, Andrew Robertson, Mateus Fernandes
+
+### Rennes vs Auxerre (L1) - score 0.619
+- **1X2:** 1 (conf 0.571)
+- **BTTS:** JA (p(yes)=0.629)
+- **O/U 2.5:** OVER 2.5 (p(over)=0.556, xG-proxy 2.96)
+- Lineup: none
+- Players: AttackIndex H=3,74 A=2,56 (shift 0,035)
+- Players: HOME creators: Adrien Thomasson, Mousa Al Tamari, Przemyslaw Frankowski
+- Players: AWAY creators: Kévin Danois, Danny Namaso, Romain Faivre
 
 ### San Lorenzo vs Dep. Riestra (AR) - score 0.605
 - **1X2:** 1 (conf 0.482)
@@ -216,65 +231,80 @@ Basta tips efter edge-filter (tipScore/confidence/value).
 - **O/U 2.5:** OVER 2.5 (p(over)=0.619, xG-proxy 3.1)
 - Lineup: none
 
-### Rennes vs Auxerre (L1) - score 0.6
-- **1X2:** 1 (conf 0.571)
-- **BTTS:** JA (p(yes)=0.629)
-- **O/U 2.5:** OVER 2.5 (p(over)=0.556, xG-proxy 2.96)
+### Sassuolo vs Milan (SA) - score 0.601
+- **1X2:** 1 (conf 0.414)
+- **BTTS:** JA (p(yes)=0.681)
+- **O/U 2.5:** OVER 2.5 (p(over)=0.593, xG-proxy 3.3)
 - Lineup: none
-- Players: AttackIndex H=3.74 A=2.56 (shift 0.035)
-- Players: HOME creators: Adrien Thomasson, Mousa Al Tamari, Przemyslaw Frankowski
-- Players: AWAY creators: Kévin Danois, Danny Namaso, Romain Faivre
+- Players: AttackIndex H=3,59 A=3,68 (shift -0,003)
+- Players: HOME creators: Armand Lauriente, Vasilije Adzic, Nemanja Matic
+- Players: AWAY creators: Samuel Chukwueze, Ruben Loftus-Cheek, Christian Pulisic
 
-### Benfica vs Guimaraes (PT) - score 0.596
+### Iraklis vs Levadeiakos (GR) - score 0.596
+- **1X2:** 1 (conf 0.442)
+- **BTTS:** NEJ (p(yes)=0.324)
+- **O/U 2.5:** UNDER 2.5 (p(over)=0.386, xG-proxy 1.47)
+- Lineup: none
+
+### Benfica vs Guimaraes (PT) - score 0.592
 - **1X2:** 1 (conf 0.604)
 - **BTTS:** JA (p(yes)=0.599)
 - **O/U 2.5:** OVER 2.5 (p(over)=0.586, xG-proxy 3)
 - Lineup: none
 
-### Lazio vs Monza (SA) - score 0.594
-- **1X2:** 1 (conf 0.568)
-- **BTTS:** JA (p(yes)=0.635)
-- **O/U 2.5:** OVER 2.5 (p(over)=0.535, xG-proxy 3.01)
-- Lineup: none
-- Players: AttackIndex H=3.21 A=3.70 (shift -0.015)
-- Players: HOME creators: Mattia Zaccagni, Nuno Tavares, Davide Frattesi
-- Players: AWAY creators: Samuele Birindelli, Ricardo Mangas, Gustavo Varela
-
-### Freiburg vs Schalke 04 (BL) - score 0.593
-- **1X2:** 1 (conf 0.537)
-- **BTTS:** JA (p(yes)=0.591)
-- **O/U 2.5:** OVER 2.5 (p(over)=0.605, xG-proxy 3.28)
-- Lineup: none
-- Players: AttackIndex H=4.06 A=3.18 (shift 0.026)
-- Players: HOME creators: Jan-Niklas Beste, Derry Scherhant, Matthias Ginter
-- Players: AWAY creators: Adil Aouchiche, Kenan Karaman, Eric Junior Dina Ebimbe
-
-### Como vs Roma (SA) - score 0.591
-- **1X2:** 2 (conf 0.431)
-- **BTTS:** JA (p(yes)=0.68)
-- **O/U 2.5:** OVER 2.5 (p(over)=0.618, xG-proxy 3.72)
-- Lineup: none
-- Players: AttackIndex H=4.50 A=5.96 (shift -0.044)
-- Players: HOME creators: Assane Diao, Nico Paz, Yan Couto
-- Players: AWAY creators: Paulo Dybala, Wesley, Gianluca Mancini
-
-### Hertha vs Greuther Furth (BL2) - score 0.588
-- **1X2:** 1 (conf 0.563)
-- **BTTS:** JA (p(yes)=0.634)
-- **O/U 2.5:** OVER 2.5 (p(over)=0.569, xG-proxy 3.42)
+### Arouca vs Estrela (PT) - score 0.582
+- **1X2:** 1 (conf 0.507)
+- **BTTS:** JA (p(yes)=0.571)
+- **O/U 2.5:** OVER 2.5 (p(over)=0.601, xG-proxy 2.75)
 - Lineup: none
 
-### Southampton vs Portsmouth (CH) - score 0.593
+### FC Koln vs M'gladbach (BL) - score 0.581
+- **1X2:** 1 (conf 0.463)
+- **BTTS:** JA (p(yes)=0.621)
+- **O/U 2.5:** OVER 2.5 (p(over)=0.589, xG-proxy 3.32)
+- Lineup: none
+- Players: AttackIndex H=3,73 A=3,37 (shift 0,011)
+- Players: HOME creators: Linton Maina, Ísak Bergmann Jóhannesson, Mikey Moore
+- Players: AWAY creators: Franck Honorat, Lukas Ullrich, Hugo Bolin
+
+### Southampton vs Portsmouth (CH) - score 0.588
 - **1X2:** 1 (conf 0.573)
 - **BTTS:** JA (p(yes)=0.608)
 - **O/U 2.5:** OVER 2.5 (p(over)=0.599, xG-proxy 3.02)
 - Lineup: pending
 - XI: Elvor ej slappta an (ESPN pending)
 
+### Crystal Palace vs Nott'm Forest (PL) - score 0.626
+- **1X2:** 1 (conf 0.408)
+- **BTTS:** JA (p(yes)=0.656)
+- **O/U 2.5:** OVER 2.5 (p(over)=0.606, xG-proxy 3.69)
+- Lineup: pending
+- XI: Elvor ej slappta an (ESPN pending)
+- Players: AttackIndex H=2,72 A=3,34 (shift -0,019)
+- Players: HOME creators: Eddie Nketiah, Yeremi Pino, Daichi Kamada
+- Players: AWAY creators: Morgan Gibbs-White, James McAtee, Dan Ndoye
+- Availability: HOME key out: Henderson
+- Availability: AWAY key out: Milenković
+
 ### Criciúma vs América Mineiro (BR2) - score 0.601
 - **1X2:** 1 (conf 0.562)
 - **BTTS:** NEJ (p(yes)=0.392)
 - **O/U 2.5:** UNDER 2.5 (p(over)=0.368, xG-proxy 1.96)
+- Lineup: none
+
+### Atalanta vs Venezia (SA) - score 0.595
+- **1X2:** 1 (conf 0.511)
+- **BTTS:** JA (p(yes)=0.529)
+- **O/U 2.5:** UNDER 2.5 (p(over)=0.464, xG-proxy 2.43)
+- Lineup: none
+- Players: AttackIndex H=1,55 A=3,12 (shift -0,047)
+- Players: HOME creators: Charles De Ketelaere, Lazar Samardzic, Gianluca Scamacca
+- Players: AWAY creators: John Yeboah, Antoine Hainaut, Kike Pérez
+
+### Burgos vs Granada (LL2) - score 0.58
+- **1X2:** 1 (conf 0.529)
+- **BTTS:** JA (p(yes)=0.547)
+- **O/U 2.5:** OVER 2.5 (p(over)=0.579, xG-proxy 2.7)
 - Lineup: none
 
 ### FC Cincinnati vs New England Revolution (MLS) - score 0.6
@@ -313,12 +343,6 @@ Basta tips efter edge-filter (tipScore/confidence/value).
 - **O/U 2.5:** OVER 2.5 (p(over)=0.653, xG-proxy 3.37)
 - Lineup: none
 
-### Levadeiakos vs Volos NFC (GR) - score 0.603
-- **1X2:** 1 (conf 0.463)
-- **BTTS:** NEJ (p(yes)=0.312)
-- **O/U 2.5:** UNDER 2.5 (p(over)=0.342, xG-proxy 1.25)
-- Lineup: none
-
 ### Orlando City vs Columbus Crew (MLS) - score 0.602
 - **1X2:** 1 (conf 0.503)
 - **BTTS:** JA (p(yes)=0.674)
@@ -331,16 +355,22 @@ Basta tips efter edge-filter (tipScore/confidence/value).
 - **O/U 2.5:** OVER 2.5 (p(over)=0.606, xG-proxy 2.89)
 - Lineup: none
 
+### Sp Gijon vs Albacete (LL2) - score 0.6
+- **1X2:** 1 (conf 0.466)
+- **BTTS:** NEJ (p(yes)=0.376)
+- **O/U 2.5:** UNDER 2.5 (p(over)=0.343, xG-proxy 1.63)
+- Lineup: none
+
+### Levadeiakos vs Volos NFC (GR) - score 0.592
+- **1X2:** 1 (conf 0.463)
+- **BTTS:** NEJ (p(yes)=0.312)
+- **O/U 2.5:** UNDER 2.5 (p(over)=0.342, xG-proxy 1.25)
+- Lineup: none
+
 ### Atlanta Utd vs Inter Miami (MLS) - score 0.592
 - **1X2:** 2 (conf 0.504)
 - **BTTS:** JA (p(yes)=0.642)
 - **O/U 2.5:** OVER 2.5 (p(over)=0.63, xG-proxy 3.19)
-- Lineup: none
-
-### Sp Gijon vs Albacete (LL2) - score 0.582
-- **1X2:** 1 (conf 0.466)
-- **BTTS:** NEJ (p(yes)=0.376)
-- **O/U 2.5:** UNDER 2.5 (p(over)=0.343, xG-proxy 1.63)
 - Lineup: none
 
 ### FC Cincinnati vs Columbus Crew (MLS) - score 0.627
@@ -365,6 +395,12 @@ Basta tips efter edge-filter (tipScore/confidence/value).
 - **1X2:** 1 (conf 0.524)
 - **BTTS:** JA (p(yes)=0.646)
 - **O/U 2.5:** OVER 2.5 (p(over)=0.593, xG-proxy 3.55)
+- Lineup: none
+
+### Girona vs Andorra (LL2) - score 0.586
+- **1X2:** 1 (conf 0.483)
+- **BTTS:** JA (p(yes)=0.602)
+- **O/U 2.5:** OVER 2.5 (p(over)=0.531, xG-proxy 2.88)
 - Lineup: none
 
 ### Molde vs Start (NO) - score 0.581
@@ -1554,15 +1590,16 @@ Facit = Pinnacles odds utan marginal. Pris = basta odds hos unibet_se, leovegas_
 | NO | 408 | 0.2041 | 0.1933 | - | - | - | - (0) |
 | BR | 657 | 0.2048 | 0.1965 | - | - | - | - (0) |
 | MX | 415 | 0.2102 | 0.1891 | - | - | - | - (0) |
+| EK | 384 | 0.2264 | 0.2129 | - | - | - | - (0) |
 | DK | 246 | 0.2209 | 0.2055 | - | - | - | - (0) |
 | BL2 | 360 | 0.2305 | 0.2289 | 0.2663 | 0.2504 | -3.4% | 0.1% (16) |
-| EL1 | 635 | 0.2227 | 0.2264 | 0.2658 | 0.2459 | -4.3% | 4.6% (25) |
 | PT | 368 | 0.1786 | 0.1652 | 0.2477 | 0.2395 | -4.0% | -0.9% (26) |
+| EL1 | 635 | 0.2227 | 0.2264 | 0.2658 | 0.2459 | -4.3% | 4.6% (25) |
 | ED | 369 | 0.1983 | 0.1856 | 0.2375 | 0.2271 | -6.4% | 10.3% (37) |
 | LL | 449 | 0.2017 | 0.1867 | 0.2455 | 0.2349 | -3.7% | 3.5% (47) |
 | LL2 | 528 | 0.2262 | 0.228 | 0.2563 | 0.2435 | -4.0% | 1.8% (28) |
-| SB | 430 | 0.2094 | 0.1989 | 0.2696 | 0.259 | -3.8% | 3.2% (9) |
 | L1 | 351 | 0.2117 | 0.2018 | 0.2684 | 0.2413 | -3.7% | 7.0% (25) |
+| SB | 430 | 0.2094 | 0.1989 | 0.2696 | 0.259 | -3.8% | 3.2% (9) |
 | GR | 271 | 0.189 | 0.1769 | 0.2532 | 0.2625 | -4.1% | 2.1% (17) |
 | SA | 430 | 0.2005 | 0.1933 | 0.2618 | 0.2502 | -3.1% | 6.8% (40) |
 | BL | 342 | 0.2022 | 0.1857 | 0.2551 | 0.2397 | -3.8% | 11.3% (28) |
@@ -1571,12 +1608,12 @@ Facit = Pinnacles odds utan marginal. Pris = basta odds hos unibet_se, leovegas_
 | CHI | 373 | 0.2188 | - | - | - | - | - (0) |
 | KR | 358 | 0.226 | - | - | - | - | - (0) |
 | JP3 | 404 | 0.2283 | - | - | - | - | - (0) |
-| SE3N | 372 | 0.2214 | - | - | - | - | - (0) |
 | SE3S | 374 | 0.2297 | - | - | - | - | - (0) |
+| SE3N | 372 | 0.2214 | - | - | - | - | - (0) |
 | NO2 | 369 | 0.2126 | - | - | - | - | - (0) |
 | BR2 | 618 | 0.2199 | - | - | - | - | - (0) |
-| DK2 | 192 | 0.2176 | - | - | - | - | - (0) |
 | CZ | 288 | 0.213 | - | - | - | - | - (0) |
+| DK2 | 192 | 0.2176 | - | - | - | - | - (0) |
 | HR | 174 | 0.205 | - | - | - | - | - (0) |
 
 Spel = EV >= 0.03. Lagre RPS/Brier = battre. Positiv CLV = slog stangningsoddset. Detaljer: data/reports/pro-evaluation.json
