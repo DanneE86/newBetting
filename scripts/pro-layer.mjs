@@ -6,7 +6,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import {
   brier, clv, daysBetween, devigMultiplicative, findSharpBook,
-  overround, predictDixonColes, round, rps1x2, toDate,
+  overround, predictDixonColes, riskReward, round, rps1x2, toDate,
 } from './pro/lib.mjs';
 import { EARLY_ROUNDS, buildTiers, fitLeagueModel, loadLeagueModels, paramsFor } from './pro/league-models.mjs';
 import { historicalMissing, findUsMatch, loadPlayerModel, summarise as summariseMissing, teamShares } from './pro/players.mjs';
@@ -310,6 +310,7 @@ function buildPro(t) {
     verdicts[k] = {
       market: mkt, pick, odds: price, bookmaker, p: round(p), ev: round(evVal), fairSource: g.source,
       minOdds: round((1 + g.minEv) / p, 2), value: !tooLong && !suspect && evVal >= g.minEv,
+      riskReward: riskReward(price, p, CONFIG.stakeSek),
       ...(tooLong ? { reason: `odds over ${CONFIG.maxOdds} (skrall)` } : suspect ? { reason: `misstankt EV ${Math.round(evVal * 100)} % - kontrollera oddsen` } : {}),
     };
     if (tooLong || suspect || evVal < g.minEv) continue;
@@ -903,7 +904,7 @@ function appendMarkdown(tips, evaluation) {
   md = md.split('\n## Pro-lager')[0].trimEnd();
   const lines = ['', '', '## Pro-lager (Dixon-Coles + devig + spelarviktad franvaro)', ''];
   lines.push('### Varde vid dagens odds', '');
-  lines.push('| Match | Marknad | Tips | Odds | Varde? | Vart fran odds | Annat utfall med varde |', '|---|---|---|---|---|---|---|');
+  lines.push('| Match | Marknad | Tips | Odds | Varde? | Vart fran odds | Risk / vinst (EV) | Chans / kravs | Annat utfall med varde |', '|---|---|---|---|---|---|---|---|---|');
   const seen = new Set();
   for (const t of tips.allCandidates ?? []) {
     if (seen.has(t.match) || !t.pro) continue;
@@ -916,10 +917,14 @@ function appendMarkdown(tips, evaluation) {
     for (const [label, pick, key, keys] of rows) {
       const x = v[key];
       const other = keys.filter((k) => k !== key && v[k]?.value).map((k) => `${v[k].pick} @ ${v[k].odds}`).join(', ');
-      lines.push(`| ${t.date} ${t.match} (${t.league}) | ${label} | ${pick ?? '-'} | ${x?.odds ?? '-'} | ${!x ? 'Inga odds' : x.value == null ? 'Kraver skarpa odds' : x.value ? '**VARDE**' : 'Ej varde'} | ${x?.minOdds ?? '-'} | ${other || '-'} |`);
+      const rr = x?.riskReward;
+      const rrTxt = rr ? `${rr.stake} kr -> +${rr.win} kr (1:${rr.ratio}, EV ${rr.evSek >= 0 ? '+' : ''}${rr.evSek} kr)` : '-';
+      const probTxt = rr ? `${pct(x.p)} / ${pct(rr.breakEven)}` : '-';
+      lines.push(`| ${t.date} ${t.match} (${t.league}) | ${label} | ${pick ?? '-'} | ${x?.odds ?? '-'} | ${!x ? 'Inga odds' : x.value == null ? 'Kraver skarpa odds' : x.value ? '**VARDE**' : 'Ej varde'} | ${x?.minOdds ?? '-'} | ${rrTxt} | ${probTxt} | ${other || '-'} |`);
     }
   }
   lines.push('', `Varde = forvantad avkastning >= ${100 * CONFIG.minEv} % till dagens odds. BTTS saknar odds.`);
+  lines.push('', `Risk / vinst: insats ${CONFIG.stakeSek} kr mot vinst = insats x (odds - 1). Kravs = 1/odds (break-even-chans). EV = insats x (chans x odds - 1).`);
   lines.push('', `Facit = Pinnacles odds utan marginal. Pris = basta odds hos ${CONFIG.userBooks.join(', ')}. Utan Pinnacle: "Kraver skarpa odds" (inget omdome).`);
   lines.push('', '### Modell vs skarp closing (Pinnacle, annars Betfair Exchange; 2025/26 + 2026/27, point-in-time)', '');
   lines.push(`| Liga | Matcher | RPS DC | RPS skarp close | Brier O/U DC | Brier O/U Pinnacle | CLV DC-spel | CLV konsensus-spel (n) |`, '|---|---|---|---|---|---|---|---|');

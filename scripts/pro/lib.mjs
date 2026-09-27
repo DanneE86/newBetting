@@ -42,6 +42,22 @@ export function findSharpBook(books) {
 }
 
 /** Multiplicative (proportionell) devig. Basta RPS i PL 24/25 enligt penaltyblog. */
+// Risk vs reward for ett spel med fast insats (decimalodds, p = marginalfri chans fran facit):
+//   risk = insats, vinst = insats * (odds - 1)  -> forhallande 1 : (odds - 1)
+//   break-even = 1 / odds (chansen som kravs for att ga jamnt), marginal = p - 1/odds
+//   EV (kr) = p * vinst - (1 - p) * insats = insats * (p * odds - 1)
+export function riskReward(odds, p, stake = 500) {
+  if (!(odds > 1) || !(p > 0 && p < 1)) return null;
+  return {
+    stake,
+    win: Math.round(stake * (odds - 1)),
+    ratio: round(odds - 1, 2),
+    breakEven: round(1 / odds),
+    edge: round(p - 1 / odds),
+    evSek: Math.round(stake * (p * odds - 1)),
+  };
+}
+
 export function devigMultiplicative(odds) {
   if (!validOdds(odds)) return null;
   const inv = odds.map((o) => 1 / o);

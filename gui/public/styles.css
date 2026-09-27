@@ -742,6 +742,17 @@ html, body {
 .val-other {
   color: var(--lime-dim);
 }
+.val-rr {
+  font-size: 0.68rem;
+  color: var(--muted);
+  margin-top: 2px;
+}
+.val-rr .rr-pos {
+  color: var(--lime);
+}
+.val-rr .rr-neg {
+  color: var(--muted);
+}
 
 /* Grupperade ligafilter: grupp (England, Europa ...) fäller ut turneringarna */
 .filter-pill.is-group::after {
