@@ -29,6 +29,7 @@ Over/Under 3.5
 BTTS Yes/No
 Team totals
 Asian Handicap when possible
+Corners Over/Under (choose line 8.5, 9.5 or 10.5 from projected corner total; use HC/AC / corner rates when available)
 
 MODELING:
 
@@ -140,6 +141,20 @@ Probability:
 Fair odds:
 
 BTTS NO:
+Probability:
+Fair odds:
+
+CORNERS:
+Line: (8.5 | 9.5 | 10.5 — chosen from projected total)
+Projected total corners:
+Home corners λ:
+Away corners λ:
+
+Over line:
+Probability:
+Fair odds:
+
+Under line:
 Probability:
 Fair odds:
 

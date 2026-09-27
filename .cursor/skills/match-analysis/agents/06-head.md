@@ -22,7 +22,7 @@
 ## Modell (sammanfattning)
 - Proj. mål: H x.xx – A x.xx (tot x.xx)
 - 1X2: … (fair)
-- O/U 2.5 & BTTS: …
+- O/U 2.5 & BTTS & **Hörn (vald linje)**: …
 
 ## Value (om BET)
 | Marknad | Riktning | Fair | Book | Edge |

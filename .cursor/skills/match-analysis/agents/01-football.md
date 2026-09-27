@@ -25,6 +25,8 @@ För given match (hemma–borta, liga):
 | Home/Away xG | | |
 | AttackIndex / CreateIndex | | |
 | BTTS-rate / OU2.5-rate | | |
+| Corners for/against pg | | |
+| Corners O9.5 rate | | |
 
 ### Spelare / trupp
 - Key attackers (keyPasses, xG, xA)

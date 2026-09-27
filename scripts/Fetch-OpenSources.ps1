@@ -273,7 +273,7 @@ if (-not $SkipOpenFootball) {
     $report.upcomingCount = $upcoming.Count
 }
 
-# --- Extra ligor (config/leagues.json): BR, AS, BR2, BL2, SB, CL/EL/ECL - historik + kommande matcher ---
+# --- Extra ligor (config/leagues.json): historik + kommande (ESPN/Fotmob/TSDB) ---
 Write-Host "`n=== Extra ligor (football-data + ESPN) ==="
 try {
     node (Join-Path $PSScriptRoot "fetch-extra-leagues.mjs")

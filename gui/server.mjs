@@ -34,16 +34,48 @@ function readJsonCached(rel, map = (x) => x) {
   return value;
 }
 
+function findTip(tips, { league, date, home, away }) {
+  const pool = [...(tips?.allCandidates || []), ...(tips?.bestUpcoming || [])];
+  return (
+    pool.find((x) => x.league === league && x.date === date && x.home === home && x.away === away) ||
+    null
+  );
+}
+
 /** Analys-knappen: samma agentpipeline som Daily Scanner, for en match. */
 async function analyzeOne({ league, date, home, away }) {
   const { analyzeMatch, loadTeams } = await import(new URL("../scripts/daily-scanner.mjs", import.meta.url).href);
-  const tips = readJsonCached("data/tips-latest.json");
-  const t = (tips?.allCandidates || []).find(
-    (x) => x.league === league && x.date === date && x.home === home && x.away === away
-  );
+  // Ingen cache: elva-patch skriver tips-latest och maste synas direkt
+  jsonCache.delete("data/tips-latest.json");
+  const tips = readJson("data/tips-latest.json");
+  const t = findTip(tips, { league, date, home, away });
   if (!t) return null;
   const teams = readJsonCached("data/betting-store.json", (s) => loadTeams(s));
   return analyzeMatch(t, teams);
+}
+
+/** Hämta elva for en enskild match (Fotmob/ESPN), spara cache + patcha tips, returnera analys. */
+async function fetchLineupOne({ league, date, home, away }) {
+  const mod = await import(new URL("../scripts/fetch-match-lineup.mjs", import.meta.url).href);
+  const result = await mod.fetchMatchLineup({ league, date, home, away });
+  if (result.ok && result.fixture) {
+    mod.upsertLineupCache(result.fixture);
+    mod.patchTipsWithLineup(result.fixture);
+    jsonCache.delete("data/tips-latest.json");
+  }
+  let analysis = null;
+  try {
+    analysis = await analyzeOne({ league, date, home, away });
+  } catch {
+    analysis = null;
+  }
+  return {
+    ok: Boolean(result.ok),
+    error: result.error || null,
+    tried: result.tried || [],
+    lineup: result.fixture || null,
+    analysis,
+  };
 }
 
 function sendJson(res, status, body) {
@@ -125,12 +157,27 @@ function prepareTips(list, lineupMap, roundMap) {
     .map((t) => {
       const lu = lineupMap.get(matchKey(t)) || lineupMap.get(`${t.league}|${t.home}|${t.away}`);
       const rk = `${t.league}|${t.home}|${t.away}`;
-      return {
+      const merged = {
         ...t,
         kickoffUtc: t.kickoffUtc || lu?.kickoffUtc || null,
         matchStatus: t.matchStatus || lu?.matchStatus || null,
         round: t.round || roundMap.get(rk) || roundMap.get(`${t.league}|${t.date}|${t.home}|${t.away}`) || null,
       };
+      // Berika med elva fran cache om tipset saknar den
+      if (lu && (!t.homeStarters?.length || t.lineupStatus === "none" || !t.lineupStatus)) {
+        merged.lineupStatus = lu.lineupStatus || t.lineupStatus || "none";
+        merged.homeStarters = lu.homeStarters || t.homeStarters || [];
+        merged.awayStarters = lu.awayStarters || t.awayStarters || [];
+        merged.homeFormation = lu.homeFormation || t.homeFormation || null;
+        merged.awayFormation = lu.awayFormation || t.awayFormation || null;
+        merged.lineupSource = lu.source || t.lineupSource || null;
+        if (lu.lineupStatus === "confirmed" && !(t.lineupNotes || []).length) {
+          merged.lineupNotes = [
+            `XI bekräftad (${lu.source || "cache"})${lu.homeFormation || lu.awayFormation ? ` ${lu.homeFormation || "?"} vs ${lu.awayFormation || "?"}` : ""}`,
+          ];
+        }
+      }
+      return merged;
     })
     .filter((t) => !isFinished(t, now))
     .sort((a, b) => kickSortValue(a) - kickSortValue(b) || (b.tipScore || 0) - (a.tipScore || 0));
@@ -609,6 +656,30 @@ const server = http.createServer((req, res) => {
     analyzeOne(q)
       .then((m) => (m ? sendJson(res, 200, m) : sendJson(res, 404, { error: "Matchen finns inte bland kommande tips" })))
       .catch((e) => sendJson(res, 500, { error: String(e.message || e) }));
+    return;
+  }
+
+  // Per-match elva: Fotmob (bred) + ESPN fallback. Body eller query: league, date, home, away
+  if (req.method === "POST" && url.pathname === "/api/lineup") {
+    let body = "";
+    req.on("data", (c) => {
+      body += c;
+      if (body.length > 1e5) req.destroy();
+    });
+    req.on("end", () => {
+      let q = Object.fromEntries(["league", "date", "home", "away"].map((k) => [k, url.searchParams.get(k) || ""]));
+      try {
+        if (body) q = { ...q, ...JSON.parse(body) };
+      } catch {
+        /* behåll query */
+      }
+      if (!q.league || !q.date || !q.home || !q.away) {
+        return sendJson(res, 400, { error: "Saknar league/date/home/away" });
+      }
+      fetchLineupOne(q)
+        .then((r) => sendJson(res, r.ok || r.lineup ? 200 : 502, r))
+        .catch((e) => sendJson(res, 500, { error: String(e.message || e) }));
+    });
     return;
   }
 

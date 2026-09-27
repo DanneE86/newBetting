@@ -1,5 +1,5 @@
 {
-  "note": "Ligaregister. oddsportal = sokvag pa oddsportal.com/football/<...>/ (reservodds, scripts/fetch-oddsportal.mjs). Lases av Fetch-OddsApi.ps1, fetch-extra-leagues.mjs, fetch-venues.mjs och GUI. history: fd-main = football-data mmz4281 (i Update-BettingStore.ps1), fd-new = football-data/new/<fdNew>.csv, espn = ESPN-resultat, tsdb = TheSportsDB-omgangar, none = bara marknadsodds. GUI sorterar grupperna i bokstavsordning.",
+  "note": "Ligaregister. oddsportal = sokvag pa oddsportal.com/football/<...>/ (reservodds, scripts/fetch-oddsportal.mjs). Lases av Fetch-OddsApi.ps1, fetch-extra-leagues.mjs, fetch-venues.mjs och GUI. history: fd-main = football-data mmz4281 (i Update-BettingStore.ps1), fd-new = football-data/new/<fdNew>.csv, espn = ESPN-resultat, tsdb = TheSportsDB-omgangar, none = bara marknadsodds. fotmobId = Fotmob-liga for kommande matcher nar ESPN saknas. GUI sorterar grupperna i bokstavsordning.",
   "groups": [
     { "id": "argentina", "name": "Argentina", "leagues": ["AR"] },
     { "id": "brasilien", "name": "Brasilien", "leagues": ["BR", "BR2"] },
@@ -16,6 +16,7 @@
     { "id": "mexiko", "name": "Mexiko", "leagues": ["MX"] },
     { "id": "nederlanderna", "name": "Nederländerna", "leagues": ["ED"] },
     { "id": "norge", "name": "Norge", "leagues": ["NO", "NO2"] },
+    { "id": "polen", "name": "Polen", "leagues": ["EK"] },
     { "id": "portugal", "name": "Portugal", "leagues": ["PT"] },
     { "id": "spanien", "name": "Spanien", "leagues": ["LL", "LL2"] },
     { "id": "sverige", "name": "Sverige", "leagues": ["AS", "SE2", "SE3N", "SE3S"] },
@@ -47,6 +48,7 @@
     "ECL":  { "name": "Conference League",     "country": null,          "odds": "soccer_uefa_europa_conference_league", "history": "none", "espn": "uefa.europa.conf", "cup": true, "oddsportal": "europe/conference-league" },
     "NO":   { "name": "Eliteserien",           "country": "Norway",      "odds": "soccer_norway_eliteserien",            "history": "fd-new", "fdNew": "NOR", "espn": "nor.1", "calendarYear": true, "oddsportal": "norway/eliteserien" },
     "NO2":  { "name": "OBOS-ligaen",           "country": "Norway",      "odds": null,                                   "history": "tsdb", "tsdbId": 4457, "tsdbRounds": 30, "oddsportal": "norway/obos-ligaen" },
+    "EK":   { "name": "Ekstraklasa",           "country": "Poland",      "odds": "soccer_poland_ekstraklasa",            "history": "fd-new", "fdNew": "POL", "fotmobId": 196, "oddsportal": "poland/ekstraklasa" },
     "DK":   { "name": "Superligaen",           "country": "Denmark",     "odds": "soccer_denmark_superliga",             "history": "fd-new", "fdNew": "DNK", "espn": "den.1", "oddsportal": "denmark/superliga" },
     "DK2":  { "name": "1. division",           "country": "Denmark",     "odds": null,                                   "history": "tsdb", "tsdbId": 4683, "tsdbRounds": 32 },
     "PT":   { "name": "Primeira Liga",         "country": "Portugal",    "odds": "soccer_portugal_primeira_liga",        "history": "fd-main", "espn": "por.1", "oddsportal": "portugal/liga-portugal" },

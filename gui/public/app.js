@@ -198,11 +198,31 @@ function tipCard(tip, i) {
   const pickO = String(t.OU25?.pick || "").toUpperCase();
   const ouKey = pickO.includes("OVER") ? "over" : pickO.includes("UNDER") ? "under" : "";
   const bttsKey = pickB === "JA" ? "btts-yes" : pickB === "NEJ" ? "btts-no" : "";
+  const c = t.CORNERS;
+  const cornerLine = c?.line != null ? String(c.line) : "9.5";
+  const pickC = String(c?.pick || "").toUpperCase();
+  const cornerKey = pickC.includes("OVER") ? "over" : pickC.includes("UNDER") ? "under" : "";
 
   // Chans att respektive tips går in (confidence), inte rå pYes/pOver
   const conf1 = t["1X2"]?.confidence;
   const confB = t.BTTS?.confidence;
   const confO = t.OU25?.confidence;
+  const confC = c?.confidence;
+
+  const cornersRow = c
+    ? `<tr>
+            <td class="mkt">Hörn ${escapeHtml(cornerLine)}</td>
+            <td>${oddsGroup(
+              [
+                { key: "over", label: "Ö", odd: null },
+                { key: "under", label: "U", odd: null },
+              ],
+              cornerKey
+            )}${c.expCorners != null ? `<div class="odds-src">Proj. ${escapeHtml(String(c.expCorners))} hörn</div>` : ""}</td>
+            <td class="num">${fmtChance(confC)}</td>
+            <td class="val"><span class="val-badge val-none">Inga odds</span></td>
+          </tr>`
+    : "";
 
   return `
     <article class="tip" style="${style}">
@@ -268,27 +288,94 @@ function tipCard(tip, i) {
             <td class="num">${fmtChance(confO)}</td>
             ${valueCell(tip, ouKey === "over" ? "over25" : "under25", ["over25", "under25"])}
           </tr>
+          ${cornersRow}
         </tbody>
       </table>
       ${od.book ? `<div class="odds-src">Odds: ${escapeHtml(od.book)}</div>` : ""}
       ${noteLines(tip)}
       <div class="tip-analyze">
-        <button type="button" class="btn-analyze" aria-expanded="false"
-          data-league="${escapeHtml(tip.league || "")}" data-date="${escapeHtml(tip.date || "")}"
-          data-home="${escapeHtml(tip.home || "")}" data-away="${escapeHtml(tip.away || "")}">Analys · agent 1–6</button>
+        <div class="tip-actions">
+          <button type="button" class="btn-analyze" aria-expanded="false"
+            data-league="${escapeHtml(tip.league || "")}" data-date="${escapeHtml(tip.date || "")}"
+            data-home="${escapeHtml(tip.home || "")}" data-away="${escapeHtml(tip.away || "")}">Analys · agent 1–6</button>
+          <button type="button" class="btn-lineup"
+            data-league="${escapeHtml(tip.league || "")}" data-date="${escapeHtml(tip.date || "")}"
+            data-home="${escapeHtml(tip.home || "")}" data-away="${escapeHtml(tip.away || "")}"
+            title="Hämta startelva för just den här matchen (Fotmob/ESPN)">Hämta elva</button>
+        </div>
         <div class="analysis" hidden></div>
       </div>
     </article>
   `;
 }
 
-function renderList(el, list, emptyMsg) {
+function kickMs(tip) {
+  const d = new Date(tip.kickoffUtc || `${tip.date}T12:00:00`);
+  return Number.isNaN(d.getTime()) ? Infinity : d.getTime();
+}
+
+/** Lokal speldag (YYYY-MM-DD) för en match. */
+function kickDay(tip) {
+  const d = new Date(tip.kickoffUtc || "");
+  if (Number.isNaN(d.getTime())) return tip.date || "";
+  return d.toLocaleDateString("sv-SE");
+}
+
+const TOP_N = 5;
+
+/** Dagens (annars närmaste speldags) bästa tips, högst tipScore först. */
+function topOfDay(list) {
+  const today = new Date().toLocaleDateString("sv-SE");
+  const days = [...new Set(list.map(kickDay).filter((d) => d && d >= today))].sort();
+  const day = days[0];
+  if (!day) return { day: null, top: [] };
+  const top = list
+    .filter((t) => kickDay(t) === day)
+    .sort((a, b) => (b.tipScore ?? 0) - (a.tipScore ?? 0))
+    .slice(0, TOP_N);
+  return { day, top };
+}
+
+/** Grupperar per liga; ligorna i ordning efter tidigaste avspark, matcherna tidigaste först. */
+function groupByLeague(list) {
+  const groups = new Map();
+  for (const t of [...list].sort((a, b) => kickMs(a) - kickMs(b))) {
+    const k = t.league || "—";
+    if (!groups.has(k)) groups.set(k, []);
+    groups.get(k).push(t);
+  }
+  return [...groups.entries()];
+}
+
+function groupHead(title, count) {
+  return `<h3 class="tip-group-head">${escapeHtml(title)}<span class="count">${count}</span></h3>`;
+}
+
+function renderList(el, list, emptyMsg, { top = false } = {}) {
   const filtered = byLeague(list);
   if (!filtered.length) {
     el.innerHTML = `<div class="empty">${escapeHtml(emptyMsg)}</div>`;
     return;
   }
-  el.innerHTML = filtered.map(tipCard).join("");
+  let i = 0;
+  const card = (t) => tipCard(t, i++);
+  let html = "";
+  let rest = filtered;
+  if (top) {
+    const { day, top: best } = topOfDay(filtered);
+    if (best.length) {
+      const today = new Date().toLocaleDateString("sv-SE");
+      const dayTxt = day === today
+        ? "idag"
+        : new Date(`${day}T12:00:00`).toLocaleDateString("sv-SE", { weekday: "short", day: "numeric", month: "short" });
+      html += groupHead(`Topp ${best.length} · ${dayTxt}`, best.length) + best.map(card).join("");
+      rest = filtered.filter((t) => !best.includes(t));
+    }
+  }
+  for (const [lg, tips] of groupByLeague(rest)) {
+    html += groupHead(leagueName(lg), tips.length) + tips.map(card).join("");
+  }
+  el.innerHTML = html;
 }
 
 function renderTips() {
@@ -298,7 +385,8 @@ function renderTips() {
     state.bestUpcoming,
     state.bestUpcoming.length
       ? `Inga tips i ${selName} just nu.`
-      : "Inga kommande tips. Tryck på Hämta data."
+      : "Inga kommande tips. Tryck på Hämta data.",
+    { top: true }
   );
   renderList(
     $("#candidates"),
@@ -549,15 +637,6 @@ async function loadDashboard() {
 
   buildLeagueFilters(data.leagues || ["PL", "CH"]);
 
-  const roundBits = Object.entries(state.rounds || {})
-    .filter(([, v]) => v)
-    .map(([lg, v]) => `${lg} ${String(v).replace(/^Matchday\s+/i, "omg ")}`);
-  const roundTxt = roundBits.length ? roundBits.join(" · ") : "nästa omgång";
-  const tipsSub = $("#tips-sub");
-  const candSub = $("#cand-sub");
-  if (tipsSub) tipsSub.textContent = `${roundTxt} · edge-filter · tidigaste först`;
-  if (candSub) candSub.textContent = `${roundTxt} · även under filtertröskel`;
-
   $("#updated-at").textContent = fmtWhen(data.updatedAt);
   $("#status-msg").textContent = data.message || data.status || "—";
   $("#match-count").textContent = `${byLeague(state.bestUpcoming).length} tips · ${state._matchCount} i store`;
@@ -648,7 +727,8 @@ for (const id of ["#league-filters", "#league-sub"]) {
 
 // Analys-knappen på varje match: samma agentpipeline som Daily Scanner (GET /api/analyze)
 async function toggleAnalysis(btn) {
-  const box = btn.nextElementSibling;
+  const box = btn.closest(".tip-analyze")?.querySelector(".analysis");
+  if (!box) return;
   const open = btn.getAttribute("aria-expanded") === "true";
   btn.setAttribute("aria-expanded", String(!open));
   box.hidden = open;
@@ -660,7 +740,6 @@ async function toggleAnalysis(btn) {
     const res = await fetch(`/api/analyze?${qs}`, { cache: "no-store" });
     const body = await res.json();
     if (!res.ok) {
-      // Gammal serverprocess utan /api/analyze
       if (body.error === "Okänd API-route") throw new Error("GUI-servern kör en äldre version – starta om den (npm run gui) och ladda om sidan.");
       throw new Error(body.error || "Analysen misslyckades");
     }
@@ -671,8 +750,76 @@ async function toggleAnalysis(btn) {
   }
 }
 
+/** Hämta elva för just den här matchen och uppdatera Agent 4. */
+async function fetchLineupForTip(btn) {
+  const wrap = btn.closest(".tip-analyze");
+  const box = wrap?.querySelector(".analysis");
+  const analyzeBtn = wrap?.querySelector(".btn-analyze");
+  if (!box) return;
+  const prev = btn.textContent;
+  btn.disabled = true;
+  btn.textContent = "Hämtar elva…";
+  box.hidden = false;
+  if (analyzeBtn) {
+    analyzeBtn.setAttribute("aria-expanded", "true");
+    analyzeBtn.textContent = "Dölj analys";
+  }
+  box.innerHTML = `<p class="scan-empty">Hämtar startelva från Fotmob/ESPN…</p>`;
+  try {
+    const res = await fetch("/api/lineup", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        league: btn.dataset.league,
+        date: btn.dataset.date,
+        home: btn.dataset.home,
+        away: btn.dataset.away,
+      }),
+    });
+    const body = await res.json();
+    if (!res.ok && !body.lineup) throw new Error(body.error || "Kunde inte hämta elva");
+    if (body.analysis) {
+      box.innerHTML = agentBody(body.analysis, { withVerdict: true });
+      box.dataset.loaded = "1";
+    } else {
+      const lu = body.lineup || {};
+      const status = lu.lineupStatus || "none";
+      const home = (lu.homeStarters || []).map((p) => p.name || p).join(" · ") || "—";
+      const away = (lu.awayStarters || []).map((p) => p.name || p).join(" · ") || "—";
+      box.innerHTML = `<div class="scan-body"><div class="agent-box agent-wide"><h4>Elva · ${escapeHtml(status)}</h4>
+        <p class="scan-empty">${escapeHtml(body.error || lu.note || (status === "confirmed" ? "Klart" : "Ej bekräftad"))}</p>
+        <div class="xi-grid">
+          <div class="xi-side"><div class="xi-label">Hemma</div><div class="xi-names">${escapeHtml(home)}</div></div>
+          <div class="xi-side"><div class="xi-label">Borta</div><div class="xi-names">${escapeHtml(away)}</div></div>
+        </div></div></div>`;
+      box.dataset.loaded = "1";
+    }
+    // Uppdatera badge på kortet utan full reload
+    const tip = btn.closest(".tip");
+    if (tip && body.lineup?.lineupStatus) {
+      let badge = tip.querySelector(".xi-confirmed, .xi-pending, .xi-none");
+      const cls = body.lineup.lineupStatus === "confirmed" ? "xi-confirmed" : body.lineup.lineupStatus === "pending" ? "xi-pending" : "xi-none";
+      const txt = `Elvor: ${body.lineup.lineupStatus}`;
+      if (badge) {
+        badge.className = cls;
+        badge.textContent = txt;
+      }
+    }
+  } catch (e) {
+    box.innerHTML = `<p class="scan-empty">${escapeHtml(e.message || e)}</p>`;
+  } finally {
+    btn.disabled = false;
+    btn.textContent = prev;
+  }
+}
+
 for (const id of ["#tips", "#candidates"]) {
   $(id).addEventListener("click", (e) => {
+    const lineupBtn = e.target.closest(".btn-lineup");
+    if (lineupBtn) {
+      fetchLineupForTip(lineupBtn);
+      return;
+    }
     const btn = e.target.closest(".btn-analyze");
     if (btn) toggleAnalysis(btn);
   });
@@ -769,6 +916,29 @@ function scanItem(m) {
     </details>`;
 }
 
+function researchBox(m) {
+  const r = m.research || {};
+  const status = r.lineupStatus || "none";
+  const form =
+    r.homeFormation || r.awayFormation
+      ? `${escapeHtml(r.homeFormation || "?")} vs ${escapeHtml(r.awayFormation || "?")}`
+      : null;
+  const xi = (label, names) =>
+    names?.length
+      ? `<div class="xi-side"><div class="xi-label">${escapeHtml(label)}${form && label === "Hemma" && r.homeFormation ? ` · ${escapeHtml(r.homeFormation)}` : ""}${form && label === "Borta" && r.awayFormation ? ` · ${escapeHtml(r.awayFormation)}` : ""}</div><div class="xi-names">${names.map((n) => escapeHtml(n)).join(" · ")}</div></div>`
+      : "";
+  const head = [`Elvor: ${status}${r.lineupSource ? ` (${r.lineupSource})` : ""}`, ...r.notes];
+  return `
+    ${agentList(head)}
+    ${
+      status === "confirmed" && (r.homeStarters?.length || r.awayStarters?.length)
+        ? `<div class="xi-grid">${xi("Hemma", r.homeStarters)}${xi("Borta", r.awayStarters)}</div>`
+        : status === "pending"
+          ? `<p class="scan-empty">Elvor ej släppta än — tryck “Hämta elva” igen närmare kickoff.</p>`
+          : `<p class="scan-empty">Ingen elva i cache. Tryck “Hämta elva” för just den här matchen.</p>`
+    }`;
+}
+
 /** Agent 1–6 för en match (Daily Scanner-listan och Analys-knappen på korten). */
 function agentBody(m, { withVerdict = false } = {}) {
   const h = m.head;
@@ -805,7 +975,7 @@ function agentBody(m, { withVerdict = false } = {}) {
         </div>
         <div class="agent-box">
           <h4>Agent 4 · Research</h4>
-          ${agentList([`Elvor: ${m.research.lineupStatus}`, ...m.research.notes])}
+          ${researchBox(m)}
         </div>
         <div class="agent-box">
           <h4>Agent 2 · Quant (${escapeHtml(q.confidence)})</h4>
