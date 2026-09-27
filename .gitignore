@@ -9,7 +9,9 @@ test-results/
 playwright-report/
 blob-report/
 data/open/*.html
-data/reports/
+data/reports/*
+# Grundmodellens backtest: lagpanelen ("modellen tippat laget") i webbygget behöver den
+!data/reports/base-backtest.json
 logs/
 
 
