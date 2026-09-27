@@ -1,6 +1,6 @@
 # Datagranskning per liga
 
-Genererad 2026-09-27 15:34:18 av `node scripts/audit-leagues.mjs`. Sorterad med sämst täckning först.
+Genererad 2026-09-27 15:40:00 av `node scripts/audit-leagues.mjs`. Sorterad med sämst täckning först.
 
 "Odds ≤7 d" = andel tips inom 7 dagar som har odds (bolagen prissätter sällan längre fram).
 
