@@ -355,8 +355,8 @@ Masterdata: data/betting-store.json. Uppdatera: .\scripts\Update-BettingStore.ps
 | 2026-09-27 Gefle vs Vasalund (SE3N) | O/U 2.5 | OVER 2.5 | - | Inga odds | - | - | - | - |
 | 2026-09-27 CRB vs Cuiabá (BR2) | 1X2 | 1 | 2 | Ej varde | 2.12 | 500 kr -> +500 kr (1:1, EV -14 kr) | 48.6% / 50.0% | - |
 | 2026-09-27 CRB vs Cuiabá (BR2) | O/U 2.5 | UNDER 2.5 | 1.65 | Ej varde | 1.85 | 500 kr -> +325 kr (1:0.65, EV -32 kr) | 56.8% / 60.6% | - |
-| 2026-09-27 Criciúma vs Avaí (BR2) | 1X2 | 1 | 1.67 | Ej varde | 1.79 | 500 kr -> +335 kr (1:0.67, EV -20 kr) | 57.5% / 59.9% | - |
-| 2026-09-27 Criciúma vs Avaí (BR2) | O/U 2.5 | UNDER 2.5 | 1.54 | Ej varde | 1.71 | 500 kr -> +270 kr (1:0.54, EV -26 kr) | 61.5% / 64.9% | - |
+| 2026-09-27 Criciúma vs Avaí (BR2) | 1X2 | 1 | 1.66 | Ej varde | 1.77 | 500 kr -> +330 kr (1:0.66, EV -18 kr) | 58.1% / 60.2% | - |
+| 2026-09-27 Criciúma vs Avaí (BR2) | O/U 2.5 | UNDER 2.5 | 1.55 | Ej varde | 1.76 | 500 kr -> +275 kr (1:0.55, EV -38 kr) | 59.6% / 64.5% | - |
 | 2026-09-27 Assyriska vs Piteå (SE3N) | 1X2 | 1 | 1.67 | Ej varde | 2 | 500 kr -> +335 kr (1:0.67, EV -49 kr) | 54.0% / 59.9% | - |
 | 2026-09-27 Assyriska vs Piteå (SE3N) | O/U 2.5 | OVER 2.5 | - | Inga odds | - | - | - | - |
 | 2026-09-27 Fortaleza vs Athletic (BR2) | 1X2 | 1 | 1.66 | Ej varde | 1.72 | 500 kr -> +330 kr (1:0.66, EV -3 kr) | 59.9% / 60.2% | - |
@@ -365,25 +365,25 @@ Masterdata: data/betting-store.json. Uppdatera: .\scripts\Update-BettingStore.ps
 | 2026-09-27 Burgos vs Eldense (LL2) | O/U 2.5 | OVER 2.5 | 2.23 | Ej varde | 2.49 | 500 kr -> +615 kr (1:1.23, EV -30 kr) | 42.2% / 44.8% | - |
 | 2026-09-27 Karlstad vs Karlberg (SE3N) | 1X2 | 1 | 1.57 | Ej varde | 1.87 | 500 kr -> +285 kr (1:0.57, EV -47 kr) | 57.7% / 63.7% | - |
 | 2026-09-27 Karlstad vs Karlberg (SE3N) | O/U 2.5 | OVER 2.5 | - | Inga odds | - | - | - | - |
-| 2026-09-27 Eibar vs Las Palmas (LL2) | 1X2 | 1 | 1.87 | Ej varde | 1.96 | 500 kr -> +435 kr (1:0.87, EV -9 kr) | 52.5% / 53.5% | X @ 3.75 |
-| 2026-09-27 Eibar vs Las Palmas (LL2) | O/U 2.5 | UNDER 2.5 | 1.93 | Ej varde | 2.11 | 500 kr -> +465 kr (1:0.93, EV -30 kr) | 48.7% / 51.8% | - |
-| 2026-09-27 Valladolid vs Cordoba (LL2) | 1X2 | 1 | 1.33 | Ej varde | 1.44 | 500 kr -> +165 kr (1:0.33, EV -24 kr) | 71.7% / 75.2% | - |
+| 2026-09-27 Eibar vs Las Palmas (LL2) | 1X2 | 1 | 1.87 | Ej varde | 1.95 | 500 kr -> +435 kr (1:0.87, EV -6 kr) | 52.9% / 53.5% | - |
+| 2026-09-27 Eibar vs Las Palmas (LL2) | O/U 2.5 | UNDER 2.5 | 1.93 | Ej varde | 2.12 | 500 kr -> +465 kr (1:0.93, EV -31 kr) | 48.6% / 51.8% | - |
+| 2026-09-27 Valladolid vs Cordoba (LL2) | 1X2 | 1 | 1.23 | **VARDE** | 1.11 | 500 kr -> +115 kr (1:0.23, EV +72 kr) | 93.1% / 81.3% | - |
 | 2026-09-27 Valladolid vs Cordoba (LL2) | O/U 2.5 | UNDER 2.5 | - | Inga odds | - | - | - | - |
-| 2026-09-27 Mallorca vs Almeria (LL2) | 1X2 | 1 | 2.1 | Ej varde | 2.22 | 500 kr -> +550 kr (1:1.1, EV -14 kr) | 46.3% / 47.6% | - |
-| 2026-09-27 Mallorca vs Almeria (LL2) | O/U 2.5 | UNDER 2.5 | 1.87 | Ej varde | 1.97 | 500 kr -> +435 kr (1:0.87, EV -12 kr) | 52.2% / 53.5% | - |
+| 2026-09-27 Mallorca vs Almeria (LL2) | 1X2 | 1 | 2.1 | Ej varde | 2.23 | 500 kr -> +550 kr (1:1.1, EV -14 kr) | 46.3% / 47.6% | - |
+| 2026-09-27 Mallorca vs Almeria (LL2) | O/U 2.5 | UNDER 2.5 | 1.85 | Ej varde | 1.97 | 500 kr -> +425 kr (1:0.85, EV -17 kr) | 52.2% / 54.0% | - |
 | 2026-09-27 Fortaleza CEIF vs Deportes Tolima (COL) | 1X2 | 2 | 2.23 | Ej varde | 2.61 | 500 kr -> +615 kr (1:1.23, EV -39 kr) | 41.3% / 44.8% | - |
 | 2026-09-27 Fortaleza CEIF vs Deportes Tolima (COL) | O/U 2.5 | UNDER 2.5 | - | Inga odds | - | - | - | - |
 | 2026-09-27 Jaguares de Córdoba vs Alianza FC (COL) | 1X2 | 1 | 2.23 | Ej varde | 2.63 | 500 kr -> +615 kr (1:1.23, EV -41 kr) | 41.1% / 44.8% | - |
 | 2026-09-27 Jaguares de Córdoba vs Alianza FC (COL) | O/U 2.5 | UNDER 2.5 | - | Inga odds | - | - | - | - |
-| 2026-09-27 Oviedo vs Sp Gijon (LL2) | 1X2 | 1 | 2.1 | Ej varde | 2.23 | 500 kr -> +550 kr (1:1.1, EV -16 kr) | 46.1% / 47.6% | - |
+| 2026-09-27 Oviedo vs Sp Gijon (LL2) | 1X2 | 1 | 2.08 | Ej varde | 2.23 | 500 kr -> +540 kr (1:1.08, EV -21 kr) | 46.1% / 48.1% | - |
 | 2026-09-27 Oviedo vs Sp Gijon (LL2) | O/U 2.5 | UNDER 2.5 | 1.52 | Ej varde | 1.73 | 500 kr -> +260 kr (1:0.52, EV -39 kr) | 60.7% / 65.8% | - |
-| 2026-09-27 Columbus Crew vs Inter Miami (MLS) | 1X2 | 2 | 2.25 | Ej varde | 2.46 | 500 kr -> +625 kr (1:1.25, EV -29 kr) | 41.8% / 44.4% | - |
+| 2026-09-27 Columbus Crew vs Inter Miami (MLS) | 1X2 | 2 | 2.25 | Ej varde | 2.47 | 500 kr -> +625 kr (1:1.25, EV -30 kr) | 41.7% / 44.4% | - |
 | 2026-09-27 Columbus Crew vs Inter Miami (MLS) | O/U 2.5 | OVER 2.5 | 1.39 | Ej varde | 1.59 | 500 kr -> +195 kr (1:0.39, EV -27 kr) | 68.0% / 71.9% | - |
-| 2026-09-27 UNAM Pumas vs Atl. San Luis (MX) | 1X2 | 1 | 1.98 | Ej varde | 2.18 | 500 kr -> +490 kr (1:0.98, EV -31 kr) | 47.3% / 50.5% | - |
+| 2026-09-27 UNAM Pumas vs Atl. San Luis (MX) | 1X2 | 1 | 1.98 | Ej varde | 2.18 | 500 kr -> +490 kr (1:0.98, EV -32 kr) | 47.2% / 50.5% | - |
 | 2026-09-27 UNAM Pumas vs Atl. San Luis (MX) | O/U 2.5 | OVER 2.5 | 1.73 | Ej varde | 1.91 | 500 kr -> +365 kr (1:0.73, EV -24 kr) | 55.0% / 57.8% | - |
 | 2026-09-28 Club Leon vs Juarez (MX) | 1X2 | 1 | 1.55 | Ej varde | 1.69 | 500 kr -> +275 kr (1:0.55, EV -27 kr) | 61.0% / 64.5% | - |
 | 2026-09-28 Club Leon vs Juarez (MX) | O/U 2.5 | OVER 2.5 | 1.6 | Ej varde | 1.77 | 500 kr -> +300 kr (1:0.6, EV -24 kr) | 59.5% / 62.5% | - |
-| 2026-09-28 Necaxa vs Club America (MX) | 1X2 | 2 | 1.98 | Ej varde | 2.2 | 500 kr -> +490 kr (1:0.98, EV -36 kr) | 46.9% / 50.5% | 1 @ 3.8 |
+| 2026-09-28 Necaxa vs Club America (MX) | 1X2 | 2 | 1.98 | Ej varde | 2.19 | 500 kr -> +490 kr (1:0.98, EV -33 kr) | 47.1% / 50.5% | 1 @ 3.8 |
 | 2026-09-28 Necaxa vs Club America (MX) | O/U 2.5 | OVER 2.5 | 1.71 | Ej varde | 1.88 | 500 kr -> +355 kr (1:0.71, EV -22 kr) | 55.9% / 58.5% | - |
 | 2026-09-28 América Mineiro vs Juventude (BR2) | 1X2 | 2 | 2.2 | Ej varde | 2.26 | 500 kr -> +600 kr (1:1.2, EV +1 kr) | 45.5% / 45.5% | - |
 | 2026-09-28 América Mineiro vs Juventude (BR2) | O/U 2.5 | UNDER 2.5 | 1.6 | Ej varde | 1.82 | 500 kr -> +300 kr (1:0.6, EV -39 kr) | 57.7% / 62.5% | - |
@@ -395,7 +395,7 @@ Masterdata: data/betting-store.json. Uppdatera: .\scripts\Update-BettingStore.ps
 | 2026-09-29 Botafogo-SP vs Ponte Preta (BR2) | O/U 2.5 | OVER 2.5 | 1.66 | Ej varde | 1.83 | 500 kr -> +330 kr (1:0.66, EV -25 kr) | 57.2% / 60.2% | - |
 | 2026-09-29 Deportivo Pereira vs Independiente Santa Fe (COL) | 1X2 | 2 | 1.86 | Ej varde | 2.18 | 500 kr -> +430 kr (1:0.86, EV -40 kr) | 49.4% / 53.8% | - |
 | 2026-09-29 Deportivo Pereira vs Independiente Santa Fe (COL) | O/U 2.5 | UNDER 2.5 | - | Inga odds | - | - | - | - |
-| 2026-09-30 New York Red Bulls vs St. Louis City (MLS) | 1X2 | 1 | 3.6 | Ej varde | 3.83 | 500 kr -> +1300 kr (1:2.6, EV -6 kr) | 27.5% / 27.8% | - |
+| 2026-09-30 New York Red Bulls vs St. Louis City (MLS) | 1X2 | 1 | 3.6 | Ej varde | 3.83 | 500 kr -> +1300 kr (1:2.6, EV -6 kr) | 27.4% / 27.8% | - |
 | 2026-09-30 New York Red Bulls vs St. Louis City (MLS) | O/U 2.5 | UNDER 2.5 | - | Inga odds | - | - | - | - |
 | 2026-09-30 Independiente Medellín vs Millonarios (COL) | 1X2 | 1 | 2.23 | Ej varde | 2.63 | 500 kr -> +615 kr (1:1.23, EV -43 kr) | 41.0% / 44.8% | - |
 | 2026-09-30 Independiente Medellín vs Millonarios (COL) | O/U 2.5 | OVER 2.5 | - | Inga odds | - | - | - | - |
@@ -693,7 +693,7 @@ Masterdata: data/betting-store.json. Uppdatera: .\scripts\Update-BettingStore.ps
 | 2026-10-10 Puebla vs Club Leon (MX) | O/U 2.5 | UNDER 2.5 | - | Inga odds | - | - | - | - |
 | 2026-10-10 Chicago Fire vs New York City (MLS) | 1X2 | 1 | 1.78 | Ej varde | 1.98 | 500 kr -> +390 kr (1:0.78, EV -28 kr) | 53.0% / 56.2% | - |
 | 2026-10-10 Chicago Fire vs New York City (MLS) | O/U 2.5 | OVER 2.5 | 1.49 | Ej varde | 1.73 | 500 kr -> +245 kr (1:0.49, EV -34 kr) | 62.5% / 67.1% | - |
-| 2026-10-10 Toronto FC vs CF Montreal (MLS) | 1X2 | 1 | 1.78 | Ej varde | 1.98 | 500 kr -> +390 kr (1:0.78, EV -29 kr) | 52.9% / 56.2% | - |
+| 2026-10-10 Toronto FC vs CF Montreal (MLS) | 1X2 | 1 | 1.78 | Ej varde | 1.98 | 500 kr -> +390 kr (1:0.78, EV -29 kr) | 53.0% / 56.2% | - |
 | 2026-10-10 Toronto FC vs CF Montreal (MLS) | O/U 2.5 | OVER 2.5 | 1.49 | Ej varde | 1.7 | 500 kr -> +245 kr (1:0.49, EV -28 kr) | 63.4% / 67.1% | - |
 | 2026-10-10 Philadelphia Union vs Real Salt Lake (MLS) | 1X2 | 1 | 1.33 | Ej varde | 1.5 | 500 kr -> +165 kr (1:0.33, EV -34 kr) | 70.1% / 75.2% | - |
 | 2026-10-10 Philadelphia Union vs Real Salt Lake (MLS) | O/U 2.5 | OVER 2.5 | 1.32 | Ej varde | 1.53 | 500 kr -> +160 kr (1:0.32, EV -33 kr) | 70.7% / 75.8% | - |
