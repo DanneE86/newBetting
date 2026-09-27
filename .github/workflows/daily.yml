@@ -1,0 +1,71 @@
+name: Daglig hämtning
+
+# Samma kedja som GUI:ts "Hämta data (full)":
+# öppna källor -> OddsPortal -> store/tips -> ledger -> Daily Scanner, sedan commit av data/.
+on:
+  schedule:
+    - cron: "0 4 * * *" # 06:00 svensk sommartid (05:00 vintertid)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-fetch
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: windows-latest
+    timeout-minutes: 90
+    env:
+      THE_ODDS_API_KEY: ${{ secrets.THE_ODDS_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Svensk tidszon
+        run: tzutil /s "W. Europe Standard Time"
+
+      - name: Installera beroenden
+        run: |
+          npm ci
+          npx playwright install chromium
+
+      - name: Hämta öppna källor
+        shell: powershell
+        run: powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Fetch-OpenSources.ps1
+
+      - name: OddsPortal (reservodds)
+        continue-on-error: true
+        run: node scripts/fetch-oddsportal.mjs
+
+      - name: Bygg store + tips
+        shell: powershell
+        run: powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Update-BettingStore.ps1 -SkipDownload
+
+      - name: Ledger
+        shell: powershell
+        run: powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Update-TipsLedger.ps1
+
+      - name: Daily Scanner
+        shell: powershell
+        run: node scripts/daily-scanner.mjs | Where-Object { $_ -notlike '@@progress*' }
+
+      - name: Committa ny data
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add -A data docs/analys
+          if git diff --cached --quiet; then
+            echo "Ingen ny data"
+          else
+            git commit -m "Data: daglig hämtning $(date +'%Y-%m-%d %H:%M')"
+            git pull --rebase
+            git push
+          fi

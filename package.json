@@ -1,0 +1,39 @@
+{
+  "name": "betting-ny",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "fetch": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Fetch-OpenSources.ps1",
+    "xg": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Fetch-UnderstatXg.ps1",
+    "fpl": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Fetch-FplAvailability.ps1",
+    "clubelo": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Fetch-ClubElo.ps1",
+    "lineups": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Fetch-Lineups.ps1",
+    "players": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Fetch-PlayerStats.ps1",
+    "odds": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Fetch-OddsApi.ps1",
+    "oddsportal": "node scripts/fetch-oddsportal.mjs",
+    "pro": "node scripts/pro-layer.mjs",
+    "scan": "node scripts/daily-scanner.mjs",
+    "ledger": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Update-TipsLedger.ps1",
+    "store": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Update-BettingStore.ps1 -SkipDownload",
+    "venues": "node scripts/fetch-venues.mjs",
+    "weather": "node scripts/fetch-weather.mjs",
+    "weather:history": "node scripts/fetch-weather.mjs --history",
+    "players:impact": "node scripts/fetch-player-impact.mjs",
+    "leagues": "node scripts/fetch-extra-leagues.mjs",
+    "stryktips": "node scripts/fetch-stryktipset.mjs",
+    "sync": "npm run fetch && npm run store",
+    "gui": "node gui/server.mjs",
+    "start": "node gui/server.mjs",
+    "test": "playwright test",
+    "test:pw": "playwright test",
+    "test:e2e": "playwright test --project=e2e-screenshots",
+    "test:players": "playwright test --project=player-stats",
+    "test:unit": "playwright test --project=unit-data",
+    "report:tips": "playwright test --project=e2e-screenshots -g \"screenshot: lokal tipsrapport\"",
+    "trello:close-done": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Close-TrelloDone.ps1",
+    "ralph": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/ralph-iterate.ps1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.51.0"
+  }
+}

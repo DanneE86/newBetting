@@ -1,0 +1,4546 @@
+{
+  "updatedAt": "2026-09-27T09:55:26.302Z",
+  "source": "api.spela.svenskaspel.se + football-data.co.uk + eloratings.net",
+  "method": {
+    "blend": "Slutprocent = 65 % Svenska Spels odds (utan marginal) + 35 % egen modell (20 % vid tunt underlag/landslag).",
+    "club": "Klubblag: viktad Poisson (anfall/försvar, hemmafördel, halveringstid 150 dagar, xG inblandat) per land; England skattas gemensamt över PL, Championship, League One och League Two.",
+    "national": "Landslag: World Football Elo (eloratings.net) omräknat till förväntade mål.",
+    "value": "Värde = Svenska Spels odds på tipset ≥ 1,03 / vår sannolikhet. Streckvärde = vår sannolikhet / Svenska folkets andel."
+  },
+  "lastDrawNumber": {
+    "stryktipset": 4972,
+    "europatipset": 2611
+  },
+  "products": [
+    {
+      "product": "stryktipset",
+      "productName": "Stryktipset",
+      "drawNumber": 4972,
+      "state": "Finalized",
+      "open": false,
+      "closeDescription": "Stryktipset v 39, stänger 2026-09-26 15:59",
+      "regCloseTime": "2026-09-26T15:59:00+02:00",
+      "turnover": "22351471,00",
+      "comment": "Stryktipset v. 2026-39",
+      "modelCutoff": "2026-09-26",
+      "events": [
+        {
+          "eventNumber": 1,
+          "home": "England",
+          "away": "Spanien",
+          "league": "UEFA Nations League",
+          "country": "Internationell",
+          "kickoff": "2026-09-26T20:45:00+02:00",
+          "odds": [
+            2.88,
+            3.55,
+            2.55
+          ],
+          "marketSource": "Svenska Spel (startodds)",
+          "market": [
+            0.34,
+            0.276,
+            0.384
+          ],
+          "folk": [
+            0.21,
+            0.27,
+            0.52
+          ],
+          "model": [
+            0.259,
+            0.283,
+            0.458
+          ],
+          "basis": "elo",
+          "lambdas": {
+            "home": 1.04,
+            "away": 1.46
+          },
+          "topScores": [
+            {
+              "score": "1-1",
+              "p": 0.135
+            },
+            {
+              "score": "0-1",
+              "p": 0.11
+            },
+            {
+              "score": "0-0",
+              "p": 0.092
+            },
+            {
+              "score": "1-2",
+              "p": 0.091
+            },
+            {
+              "score": "0-2",
+              "p": 0.088
+            }
+          ],
+          "over25": 0.456,
+          "btts": 0.506,
+          "homeProfile": null,
+          "awayProfile": null,
+          "h2h": [],
+          "elo": {
+            "home": 2107,
+            "away": 2277,
+            "homeRank": 3,
+            "awayRank": 1
+          },
+          "matched": null,
+          "thin": true,
+          "final": [
+            0.324,
+            0.277,
+            0.399
+          ],
+          "modelWeight": 0.2,
+          "tip": "2",
+          "tipP": 0.3988557999770818,
+          "verdict": {
+            "sign": "2",
+            "minOdds": 2.58,
+            "odds": 2.55,
+            "value": false
+          },
+          "streckvarde": [
+            1.54,
+            1.03,
+            0.77
+          ],
+          "analysis": [
+            "Jämnt mellan lagen – England 32 % mot Spanien 40 %.",
+            "Landslags-Elo: England 2107 (#3) mot Spanien 2277 (#1).",
+            "Förväntade mål 1,04 – 1,46; troligast 1-1, 0-1, 0-0.",
+            "Modellen tror mindre på 1 än oddsen (26 % mot 34 %).",
+            "Svenska folket överstreckar 2 (52 % mot vår 40 %).",
+            "Streckvärde på 1: vi 32 %, folket bara 21 %."
+          ],
+          "result": {
+            "outcome": "2",
+            "score": "2-3"
+          },
+          "systemPick": {
+            "signs": "1X2",
+            "type": "Helgardering"
+          }
+        },
+        {
+          "eventNumber": 2,
+          "home": "Tjeckien",
+          "away": "Kroatien",
+          "league": "UEFA Nations League",
+          "country": "Internationell",
+          "kickoff": "2026-09-26T20:45:00+02:00",
+          "odds": [
+            3.7,
+            3.65,
+            1.9
+          ],
+          "marketSource": "Svenska Spel",
+          "market": [
+            0.252,
+            0.256,
+            0.492
+          ],
+          "folk": [
+            0.19,
+            0.27,
+            0.54
+          ],
+          "model": [
+            0.19,
+            0.265,
+            0.545
+          ],
+          "basis": "elo",
+          "lambdas": {
+            "home": 0.87,
+            "away": 1.63
+          },
+          "topScores": [
+            {
+              "score": "1-1",
+              "p": 0.126
+            },
+            {
+              "score": "0-1",
+              "p": 0.125
+            },
+            {
+              "score": "0-2",
+              "p": 0.109
+            },
+            {
+              "score": "1-2",
+              "p": 0.095
+            },
+            {
+              "score": "0-0",
+              "p": 0.091
+            }
+          ],
+          "over25": 0.456,
+          "btts": 0.476,
+          "homeProfile": null,
+          "awayProfile": null,
+          "h2h": [],
+          "elo": {
+            "home": 1666,
+            "away": 1895,
+            "homeRank": 51,
+            "awayRank": 16
+          },
+          "matched": null,
+          "thin": true,
+          "final": [
+            0.24,
+            0.258,
+            0.502
+          ],
+          "modelWeight": 0.2,
+          "tip": "2",
+          "tipP": 0.5022911361273108,
+          "verdict": {
+            "sign": "2",
+            "minOdds": 2.05,
+            "odds": 1.9,
+            "value": false
+          },
+          "streckvarde": [
+            1.26,
+            0.95,
+            0.93
+          ],
+          "analysis": [
+            "Kroatien har ett övertag (50 %), men det är långt ifrån säkert.",
+            "Landslags-Elo: Tjeckien 1666 (#51) mot Kroatien 1895 (#16).",
+            "Förväntade mål 0,87 – 1,63; troligast 1-1, 0-1, 0-2.",
+            "Streckvärde på 1: vi 24 %, folket bara 19 %."
+          ],
+          "result": {
+            "outcome": "2",
+            "score": "1-2"
+          },
+          "systemPick": {
+            "signs": "2",
+            "type": "Spik"
+          }
+        },
+        {
+          "eventNumber": 3,
+          "home": "Cambridge",
+          "away": "Wimbledon",
+          "league": "League One",
+          "country": "England",
+          "kickoff": "2026-09-26T16:00:00+02:00",
+          "odds": [
+            1.8,
+            3.55,
+            4.35
+          ],
+          "marketSource": "Svenska Spel",
+          "market": [
+            0.521,
+            0.264,
+            0.215
+          ],
+          "folk": [
+            0.6,
+            0.24,
+            0.16
+          ],
+          "model": [
+            0.544,
+            0.279,
+            0.177
+          ],
+          "basis": "club",
+          "lambdas": {
+            "home": 1.51,
+            "away": 0.76
+          },
+          "topScores": [
+            {
+              "score": "1-0",
+              "p": 0.147
+            },
+            {
+              "score": "1-1",
+              "p": 0.128
+            },
+            {
+              "score": "2-0",
+              "p": 0.118
+            },
+            {
+              "score": "0-0",
+              "p": 0.113
+            },
+            {
+              "score": "2-1",
+              "p": 0.09
+            }
+          ],
+          "over25": 0.397,
+          "btts": 0.424,
+          "homeProfile": {
+            "team": "Cambridge",
+            "league": "EL1",
+            "leagueName": "League One",
+            "season": "2627",
+            "position": 5,
+            "of": 24,
+            "played": 7,
+            "points": 12,
+            "ppg": 1.71,
+            "gf": 12,
+            "ga": 10,
+            "xgfPg": 1.01,
+            "xgaPg": 1.6,
+            "homeRecord": {
+              "played": 3,
+              "w": 2,
+              "d": 0,
+              "l": 1,
+              "gf": 6,
+              "ga": 5
+            },
+            "awayRecord": {
+              "played": 4,
+              "w": 1,
+              "d": 3,
+              "l": 0,
+              "gf": 6,
+              "ga": 5
+            },
+            "form": "OVOVFO",
+            "last": [
+              {
+                "date": "2026-09-19",
+                "opp": "Oxford",
+                "venue": "B",
+                "score": "1-1",
+                "r": "O"
+              },
+              {
+                "date": "2026-09-12",
+                "opp": "Reading",
+                "venue": "H",
+                "score": "2-1",
+                "r": "V"
+              },
+              {
+                "date": "2026-09-05",
+                "opp": "Burton",
+                "venue": "B",
+                "score": "2-2",
+                "r": "O"
+              },
+              {
+                "date": "2026-09-01",
+                "opp": "Bradford",
+                "venue": "B",
+                "score": "2-1",
+                "r": "V"
+              },
+              {
+                "date": "2026-08-29",
+                "opp": "Huddersfield",
+                "venue": "H",
+                "score": "1-2",
+                "r": "F"
+              },
+              {
+                "date": "2026-08-22",
+                "opp": "Bromley",
+                "venue": "B",
+                "score": "1-1",
+                "r": "O"
+              }
+            ],
+            "attack": 0.83,
+            "defence": 1.14,
+            "sample": 20.1
+          },
+          "awayProfile": {
+            "team": "AFC Wimbledon",
+            "league": "EL1",
+            "leagueName": "League One",
+            "season": "2627",
+            "position": 7,
+            "of": 24,
+            "played": 7,
+            "points": 11,
+            "ppg": 1.57,
+            "gf": 5,
+            "ga": 7,
+            "xgfPg": 0.87,
+            "xgaPg": 1.33,
+            "homeRecord": {
+              "played": 4,
+              "w": 2,
+              "d": 2,
+              "l": 0,
+              "gf": 2,
+              "ga": 0
+            },
+            "awayRecord": {
+              "played": 3,
+              "w": 1,
+              "d": 0,
+              "l": 2,
+              "gf": 3,
+              "ga": 7
+            },
+            "form": "OVVFVO",
+            "last": [
+              {
+                "date": "2026-09-17",
+                "opp": "Milton Keynes Dons",
+                "venue": "H",
+                "score": "0-0",
+                "r": "O"
+              },
+              {
+                "date": "2026-09-12",
+                "opp": "Doncaster",
+                "venue": "H",
+                "score": "1-0",
+                "r": "V"
+              },
+              {
+                "date": "2026-09-07",
+                "opp": "Bromley",
+                "venue": "B",
+                "score": "2-0",
+                "r": "V"
+              },
+              {
+                "date": "2026-09-02",
+                "opp": "Burton",
+                "venue": "B",
+                "score": "1-4",
+                "r": "F"
+              },
+              {
+                "date": "2026-08-30",
+                "opp": "Wigan",
+                "venue": "H",
+                "score": "1-0",
+                "r": "V"
+              },
+              {
+                "date": "2026-08-22",
+                "opp": "Reading",
+                "venue": "H",
+                "score": "0-0",
+                "r": "O"
+              }
+            ],
+            "attack": 0.67,
+            "defence": 1.5,
+            "sample": 20.23
+          },
+          "h2h": [],
+          "elo": null,
+          "matched": {
+            "home": "Cambridge",
+            "away": "AFC Wimbledon"
+          },
+          "thin": false,
+          "final": [
+            0.529,
+            0.269,
+            0.202
+          ],
+          "modelWeight": 0.35,
+          "tip": "1",
+          "tipP": 0.5287531651728854,
+          "verdict": {
+            "sign": "1",
+            "minOdds": 1.95,
+            "odds": 1.8,
+            "value": false
+          },
+          "streckvarde": [
+            0.88,
+            1.12,
+            1.26
+          ],
+          "analysis": [
+            "Cambridge har ett övertag (53 %), men det är långt ifrån säkert.",
+            "Tabell: Cambridge 5:a, Wimbledon 7:a i League One (12 mot 11 poäng).",
+            "Form senaste 6 (nyast först): Cambridge O V O V F O · Wimbledon O V V F V O.",
+            "Cambridge hemma i år: 2V 0O 1F, mål 6-5.",
+            "Wimbledon borta i år: 1V 0O 2F, mål 3-7.",
+            "xG per match: Cambridge 1,01 skapat / 1,60 insläppt · Wimbledon 0,87 / 1,33.",
+            "Förväntade mål 1,51 – 0,76; troligast 1-0, 1-1, 2-0.",
+            "Streckvärde på 2: vi 20 %, folket bara 16 %."
+          ],
+          "result": {
+            "outcome": "X",
+            "score": "1-1"
+          },
+          "systemPick": {
+            "signs": "1",
+            "type": "Spik"
+          }
+        },
+        {
+          "eventNumber": 4,
+          "home": "Plymouth",
+          "away": "Burton",
+          "league": "League One",
+          "country": "England",
+          "kickoff": "2026-09-26T16:00:00+02:00",
+          "odds": [
+            1.5,
+            4.3,
+            5.8
+          ],
+          "marketSource": "Svenska Spel",
+          "market": [
+            0.622,
+            0.217,
+            0.161
+          ],
+          "folk": [
+            0.72,
+            0.17,
+            0.11
+          ],
+          "model": [
+            0.564,
+            0.235,
+            0.201
+          ],
+          "basis": "club",
+          "lambdas": {
+            "home": 1.95,
+            "away": 1.1
+          },
+          "topScores": [
+            {
+              "score": "1-1",
+              "p": 0.11
+            },
+            {
+              "score": "2-1",
+              "p": 0.099
+            },
+            {
+              "score": "2-0",
+              "p": 0.09
+            },
+            {
+              "score": "1-0",
+              "p": 0.085
+            },
+            {
+              "score": "3-1",
+              "p": 0.064
+            }
+          ],
+          "over25": 0.587,
+          "btts": 0.579,
+          "homeProfile": {
+            "team": "Plymouth",
+            "league": "EL1",
+            "leagueName": "League One",
+            "season": "2627",
+            "position": 3,
+            "of": 24,
+            "played": 7,
+            "points": 13,
+            "ppg": 1.86,
+            "gf": 14,
+            "ga": 10,
+            "xgfPg": 1.44,
+            "xgaPg": 1.47,
+            "homeRecord": {
+              "played": 3,
+              "w": 2,
+              "d": 0,
+              "l": 1,
+              "gf": 6,
+              "ga": 3
+            },
+            "awayRecord": {
+              "played": 4,
+              "w": 2,
+              "d": 1,
+              "l": 1,
+              "gf": 8,
+              "ga": 7
+            },
+            "form": "VVVFVO",
+            "last": [
+              {
+                "date": "2026-09-19",
+                "opp": "Blackpool",
+                "venue": "B",
+                "score": "4-2",
+                "r": "V"
+              },
+              {
+                "date": "2026-09-12",
+                "opp": "Barnsley",
+                "venue": "H",
+                "score": "3-0",
+                "r": "V"
+              },
+              {
+                "date": "2026-09-05",
+                "opp": "Doncaster",
+                "venue": "B",
+                "score": "3-2",
+                "r": "V"
+              },
+              {
+                "date": "2026-09-01",
+                "opp": "Leicester",
+                "venue": "B",
+                "score": "0-2",
+                "r": "F"
+              },
+              {
+                "date": "2026-08-29",
+                "opp": "Bradford",
+                "venue": "H",
+                "score": "2-0",
+                "r": "V"
+              },
+              {
+                "date": "2026-08-22",
+                "opp": "Wycombe",
+                "venue": "B",
+                "score": "1-1",
+                "r": "O"
+              }
+            ],
+            "attack": 1.16,
+            "defence": 1.36,
+            "sample": 20.06
+          },
+          "awayProfile": {
+            "team": "Burton",
+            "league": "EL1",
+            "leagueName": "League One",
+            "season": "2627",
+            "position": 12,
+            "of": 24,
+            "played": 7,
+            "points": 9,
+            "ppg": 1.29,
+            "gf": 12,
+            "ga": 12,
+            "xgfPg": 0.9,
+            "xgaPg": 1.3,
+            "homeRecord": {
+              "played": 4,
+              "w": 1,
+              "d": 3,
+              "l": 0,
+              "gf": 9,
+              "ga": 6
+            },
+            "awayRecord": {
+              "played": 3,
+              "w": 1,
+              "d": 0,
+              "l": 2,
+              "gf": 3,
+              "ga": 6
+            },
+            "form": "OFOVFV",
+            "last": [
+              {
+                "date": "2026-09-19",
+                "opp": "Mansfield",
+                "venue": "H",
+                "score": "2-2",
+                "r": "O"
+              },
+              {
+                "date": "2026-09-12",
+                "opp": "Oxford",
+                "venue": "B",
+                "score": "0-3",
+                "r": "F"
+              },
+              {
+                "date": "2026-09-05",
+                "opp": "Cambridge",
+                "venue": "H",
+                "score": "2-2",
+                "r": "O"
+              },
+              {
+                "date": "2026-09-02",
+                "opp": "AFC Wimbledon",
+                "venue": "H",
+                "score": "4-1",
+                "r": "V"
+              },
+              {
+                "date": "2026-08-29",
+                "opp": "Notts County",
+                "venue": "B",
+                "score": "1-2",
+                "r": "F"
+              },
+              {
+                "date": "2026-08-22",
+                "opp": "Leicester",
+                "venue": "B",
+                "score": "2-1",
+                "r": "V"
+              }
+            ],
+            "attack": 0.81,
+            "defence": 1.38,
+            "sample": 20.15
+          },
+          "h2h": [
+            {
+              "date": "2026-01-04",
+              "home": "Plymouth",
+              "away": "Burton",
+              "score": "3-0"
+            },
+            {
+              "date": "2025-09-27",
+              "home": "Burton",
+              "away": "Plymouth",
+              "score": "0-4"
+            }
+          ],
+          "elo": null,
+          "matched": {
+            "home": "Plymouth",
+            "away": "Burton"
+          },
+          "thin": false,
+          "final": [
+            0.602,
+            0.223,
+            0.175
+          ],
+          "modelWeight": 0.35,
+          "tip": "1",
+          "tipP": 0.6017967560951271,
+          "verdict": {
+            "sign": "1",
+            "minOdds": 1.71,
+            "odds": 1.5,
+            "value": false
+          },
+          "streckvarde": [
+            0.84,
+            1.31,
+            1.59
+          ],
+          "analysis": [
+            "Plymouth är klar favorit (60 %).",
+            "Tabell: Plymouth 3:a, Burton 12:a i League One (13 mot 9 poäng).",
+            "Form senaste 6 (nyast först): Plymouth V V V F V O · Burton O F O V F V.",
+            "Plymouth hemma i år: 2V 0O 1F, mål 6-3.",
+            "Burton borta i år: 1V 0O 2F, mål 3-6.",
+            "xG per match: Plymouth 1,44 skapat / 1,47 insläppt · Burton 0,90 / 1,30.",
+            "Förväntade mål 1,95 – 1,10; troligast 1-1, 2-1, 2-0.",
+            "Svenska folket överstreckar 1 (72 % mot vår 60 %).",
+            "Streckvärde på 2: vi 18 %, folket bara 11 %.",
+            "Inbördes (senaste 2): Plymouth 3-0 Burton · Burton 0-4 Plymouth."
+          ],
+          "result": {
+            "outcome": "2",
+            "score": "0-1"
+          },
+          "systemPick": {
+            "signs": "1",
+            "type": "Spik"
+          }
+        },
+        {
+          "eventNumber": 5,
+          "home": "Stockport",
+          "away": "Peterborough",
+          "league": "League One",
+          "country": "England",
+          "kickoff": "2026-09-26T16:00:00+02:00",
+          "odds": [
+            1.36,
+            5.25,
+            7
+          ],
+          "marketSource": "Svenska Spel",
+          "market": [
+            0.688,
+            0.178,
+            0.134
+          ],
+          "folk": [
+            0.77,
+            0.15,
+            0.08
+          ],
+          "model": [
+            0.594,
+            0.218,
+            0.187
+          ],
+          "basis": "club",
+          "lambdas": {
+            "home": 2.14,
+            "away": 1.14
+          },
+          "topScores": [
+            {
+              "score": "1-1",
+              "p": 0.099
+            },
+            {
+              "score": "2-1",
+              "p": 0.098
+            },
+            {
+              "score": "2-0",
+              "p": 0.086
+            },
+            {
+              "score": "1-0",
+              "p": 0.074
+            },
+            {
+              "score": "3-1",
+              "p": 0.07
+            }
+          ],
+          "over25": 0.635,
+          "btts": 0.607,
+          "homeProfile": {
+            "team": "Stockport",
+            "league": "EL1",
+            "leagueName": "League One",
+            "season": "2627",
+            "position": 9,
+            "of": 24,
+            "played": 7,
+            "points": 10,
+            "ppg": 1.43,
+            "gf": 16,
+            "ga": 10,
+            "xgfPg": 1.81,
+            "xgaPg": 1.18,
+            "homeRecord": {
+              "played": 3,
+              "w": 1,
+              "d": 0,
+              "l": 2,
+              "gf": 9,
+              "ga": 7
+            },
+            "awayRecord": {
+              "played": 4,
+              "w": 2,
+              "d": 1,
+              "l": 1,
+              "gf": 7,
+              "ga": 3
+            },
+            "form": "OFVFVF",
+            "last": [
+              {
+                "date": "2026-09-19",
+                "opp": "Sheffield Weds",
+                "venue": "B",
+                "score": "0-0",
+                "r": "O"
+              },
+              {
+                "date": "2026-09-12",
+                "opp": "Leicester",
+                "venue": "H",
+                "score": "3-4",
+                "r": "F"
+              },
+              {
+                "date": "2026-09-05",
+                "opp": "Wigan",
+                "venue": "B",
+                "score": "4-0",
+                "r": "V"
+              },
+              {
+                "date": "2026-09-02",
+                "opp": "Luton",
+                "venue": "B",
+                "score": "0-2",
+                "r": "F"
+              },
+              {
+                "date": "2026-08-29",
+                "opp": "Wycombe",
+                "venue": "H",
+                "score": "5-1",
+                "r": "V"
+              },
+              {
+                "date": "2026-08-22",
+                "opp": "Blackpool",
+                "venue": "H",
+                "score": "1-2",
+                "r": "F"
+              }
+            ],
+            "attack": 1.13,
+            "defence": 1.3,
+            "sample": 20.26
+          },
+          "awayProfile": {
+            "team": "Peterboro",
+            "league": "EL1",
+            "leagueName": "League One",
+            "season": "2627",
+            "position": 23,
+            "of": 24,
+            "played": 7,
+            "points": 5,
+            "ppg": 0.71,
+            "gf": 4,
+            "ga": 12,
+            "xgfPg": 1.43,
+            "xgaPg": 1.32,
+            "homeRecord": {
+              "played": 4,
+              "w": 1,
+              "d": 1,
+              "l": 2,
+              "gf": 3,
+              "ga": 5
+            },
+            "awayRecord": {
+              "played": 3,
+              "w": 0,
+              "d": 1,
+              "l": 2,
+              "gf": 1,
+              "ga": 7
+            },
+            "form": "FOFOFV",
+            "last": [
+              {
+                "date": "2026-09-19",
+                "opp": "Doncaster",
+                "venue": "H",
+                "score": "0-2",
+                "r": "F"
+              },
+              {
+                "date": "2026-09-12",
+                "opp": "Milton Keynes Dons",
+                "venue": "B",
+                "score": "1-1",
+                "r": "O"
+              },
+              {
+                "date": "2026-09-05",
+                "opp": "Sheffield Weds",
+                "venue": "H",
+                "score": "1-2",
+                "r": "F"
+              },
+              {
+                "date": "2026-09-01",
+                "opp": "Stevenage",
+                "venue": "H",
+                "score": "0-0",
+                "r": "O"
+              },
+              {
+                "date": "2026-08-29",
+                "opp": "Blackpool",
+                "venue": "B",
+                "score": "0-4",
+                "r": "F"
+              },
+              {
+                "date": "2026-08-22",
+                "opp": "Mansfield",
+                "venue": "H",
+                "score": "2-1",
+                "r": "V"
+              }
+            ],
+            "attack": 0.88,
+            "defence": 1.55,
+            "sample": 20.18
+          },
+          "h2h": [
+            {
+              "date": "2026-04-25",
+              "home": "Stockport",
+              "away": "Peterboro",
+              "score": "3-1"
+            },
+            {
+              "date": "2025-11-20",
+              "home": "Peterboro",
+              "away": "Stockport",
+              "score": "3-0"
+            }
+          ],
+          "elo": null,
+          "matched": {
+            "home": "Stockport",
+            "away": "Peterboro"
+          },
+          "thin": false,
+          "final": [
+            0.655,
+            0.192,
+            0.153
+          ],
+          "modelWeight": 0.35,
+          "tip": "1",
+          "tipP": 0.6552516452641818,
+          "verdict": {
+            "sign": "1",
+            "minOdds": 1.57,
+            "odds": 1.36,
+            "value": false
+          },
+          "streckvarde": [
+            0.85,
+            1.28,
+            1.91
+          ],
+          "analysis": [
+            "Stockport är klar favorit (66 %).",
+            "Tabell: Stockport 9:a, Peterborough 23:a i League One (10 mot 5 poäng).",
+            "Form senaste 6 (nyast först): Stockport O F V F V F · Peterborough F O F O F V.",
+            "Stockport hemma i år: 1V 0O 2F, mål 9-7.",
+            "Peterborough borta i år: 0V 1O 2F, mål 1-7.",
+            "xG per match: Stockport 1,81 skapat / 1,18 insläppt · Peterborough 1,43 / 1,32.",
+            "Förväntade mål 2,14 – 1,14; troligast 1-1, 2-1, 2-0.",
+            "Modellen tror mindre på 1 än oddsen (59 % mot 69 %).",
+            "Svenska folket överstreckar 1 (77 % mot vår 66 %).",
+            "Streckvärde på 2: vi 15 %, folket bara 8 %.",
+            "Inbördes (senaste 2): Stockport 3-1 Peterboro · Peterboro 3-0 Stockport."
+          ],
+          "result": {
+            "outcome": "1",
+            "score": "1-0"
+          },
+          "systemPick": {
+            "signs": "1",
+            "type": "Spik"
+          }
+        },
+        {
+          "eventNumber": 6,
+          "home": "Wycombe",
+          "away": "Reading",
+          "league": "League One",
+          "country": "England",
+          "kickoff": "2026-09-26T16:00:00+02:00",
+          "odds": [
+            2.7,
+            3.5,
+            2.43
+          ],
+          "marketSource": "Svenska Spel",
+          "market": [
+            0.347,
+            0.268,
+            0.385
+          ],
+          "folk": [
+            0.35,
+            0.26,
+            0.39
+          ],
+          "model": [
+            0.385,
+            0.256,
+            0.359
+          ],
+          "basis": "club",
+          "lambdas": {
+            "home": 1.58,
+            "away": 1.52
+          },
+          "topScores": [
+            {
+              "score": "1-1",
+              "p": 0.117
+            },
+            {
+              "score": "2-1",
+              "p": 0.085
+            },
+            {
+              "score": "1-2",
+              "p": 0.082
+            },
+            {
+              "score": "2-2",
+              "p": 0.065
+            },
+            {
+              "score": "1-0",
+              "p": 0.062
+            }
+          ],
+          "over25": 0.599,
+          "btts": 0.629,
+          "homeProfile": {
+            "team": "Wycombe",
+            "league": "EL1",
+            "leagueName": "League One",
+            "season": "2627",
+            "position": 14,
+            "of": 24,
+            "played": 7,
+            "points": 9,
+            "ppg": 1.29,
+            "gf": 11,
+            "ga": 14,
+            "xgfPg": 1.3,
+            "xgaPg": 1.4,
+            "homeRecord": {
+              "played": 3,
+              "w": 0,
+              "d": 2,
+              "l": 1,
+              "gf": 5,
+              "ga": 6
+            },
+            "awayRecord": {
+              "played": 4,
+              "w": 2,
+              "d": 1,
+              "l": 1,
+              "gf": 6,
+              "ga": 8
+            },
+            "form": "VVOFFO",
+            "last": [
+              {
+                "date": "2026-09-19",
+                "opp": "Wigan",
+                "venue": "B",
+                "score": "1-0",
+                "r": "V"
+              },
+              {
+                "date": "2026-09-12",
+                "opp": "Leyton Orient",
+                "venue": "B",
+                "score": "3-2",
+                "r": "V"
+              },
+              {
+                "date": "2026-09-05",
+                "opp": "Milton Keynes Dons",
+                "venue": "H",
+                "score": "3-3",
+                "r": "O"
+              },
+              {
+                "date": "2026-09-01",
+                "opp": "Sheffield Weds",
+                "venue": "H",
+                "score": "1-2",
+                "r": "F"
+              },
+              {
+                "date": "2026-08-29",
+                "opp": "Stockport",
+                "venue": "B",
+                "score": "1-5",
+                "r": "F"
+              },
+              {
+                "date": "2026-08-22",
+                "opp": "Plymouth",
+                "venue": "H",
+                "score": "1-1",
+                "r": "O"
+              }
+            ],
+            "attack": 1.02,
+            "defence": 1.43,
+            "sample": 19.96
+          },
+          "awayProfile": {
+            "team": "Reading",
+            "league": "EL1",
+            "leagueName": "League One",
+            "season": "2627",
+            "position": 8,
+            "of": 24,
+            "played": 6,
+            "points": 10,
+            "ppg": 1.67,
+            "gf": 14,
+            "ga": 7,
+            "xgfPg": 2.15,
+            "xgaPg": 0.86,
+            "homeRecord": {
+              "played": 4,
+              "w": 3,
+              "d": 0,
+              "l": 1,
+              "gf": 13,
+              "ga": 5
+            },
+            "awayRecord": {
+              "played": 2,
+              "w": 0,
+              "d": 1,
+              "l": 1,
+              "gf": 1,
+              "ga": 2
+            },
+            "form": "VFVVOF",
+            "last": [
+              {
+                "date": "2026-09-19",
+                "opp": "Notts County",
+                "venue": "H",
+                "score": "2-0",
+                "r": "V"
+              },
+              {
+                "date": "2026-09-12",
+                "opp": "Cambridge",
+                "venue": "B",
+                "score": "1-2",
+                "r": "F"
+              },
+              {
+                "date": "2026-09-05",
+                "opp": "Blackpool",
+                "venue": "H",
+                "score": "3-1",
+                "r": "V"
+              },
+              {
+                "date": "2026-09-02",
+                "opp": "Mansfield",
+                "venue": "H",
+                "score": "5-0",
+                "r": "V"
+              },
+              {
+                "date": "2026-08-22",
+                "opp": "AFC Wimbledon",
+                "venue": "B",
+                "score": "0-0",
+                "r": "O"
+              },
+              {
+                "date": "2026-08-15",
+                "opp": "Luton",
+                "venue": "H",
+                "score": "3-4",
+                "r": "F"
+              }
+            ],
+            "attack": 1.07,
+            "defence": 1.28,
+            "sample": 19.25
+          },
+          "h2h": [
+            {
+              "date": "2026-02-14",
+              "home": "Reading",
+              "away": "Wycombe",
+              "score": "3-2"
+            },
+            {
+              "date": "2025-08-23",
+              "home": "Wycombe",
+              "away": "Reading",
+              "score": "2-2"
+            }
+          ],
+          "elo": null,
+          "matched": {
+            "home": "Wycombe",
+            "away": "Reading"
+          },
+          "thin": false,
+          "final": [
+            0.36,
+            0.263,
+            0.376
+          ],
+          "modelWeight": 0.35,
+          "tip": "2",
+          "tipP": 0.37634039856485396,
+          "verdict": {
+            "sign": "2",
+            "minOdds": 2.74,
+            "odds": 2.43,
+            "value": false
+          },
+          "streckvarde": [
+            1.03,
+            1.01,
+            0.96
+          ],
+          "analysis": [
+            "Jämnt mellan lagen – Wycombe 36 % mot Reading 38 %.",
+            "Tabell: Wycombe 14:a, Reading 8:a i League One (9 mot 10 poäng).",
+            "Form senaste 6 (nyast först): Wycombe V V O F F O · Reading V F V V O F.",
+            "Wycombe hemma i år: 0V 2O 1F, mål 5-6.",
+            "Reading borta i år: 0V 1O 1F, mål 1-2.",
+            "xG per match: Wycombe 1,30 skapat / 1,40 insläppt · Reading 2,15 / 0,86.",
+            "Förväntade mål 1,58 – 1,52; troligast 1-1, 2-1, 1-2.",
+            "Inbördes (senaste 2): Reading 3-2 Wycombe · Wycombe 2-2 Reading."
+          ],
+          "result": {
+            "outcome": "X",
+            "score": "2-2"
+          },
+          "systemPick": {
+            "signs": "12",
+            "type": "Halvgardering"
+          }
+        },
+        {
+          "eventNumber": 7,
+          "home": "Cheltenham",
+          "away": "Chesterfield",
+          "league": "League Two",
+          "country": "England",
+          "kickoff": "2026-09-26T16:00:00+02:00",
+          "odds": [
+            3.05,
+            3.3,
+            2.12
+          ],
+          "marketSource": "Svenska Spel",
+          "market": [
+            0.297,
+            0.275,
+            0.428
+          ],
+          "folk": [
+            0.25,
+            0.28,
+            0.47
+          ],
+          "model": [
+            0.303,
+            0.259,
+            0.439
+          ],
+          "basis": "club",
+          "lambdas": {
+            "home": 1.33,
+            "away": 1.64
+          },
+          "topScores": [
+            {
+              "score": "1-1",
+              "p": 0.121
+            },
+            {
+              "score": "1-2",
+              "p": 0.092
+            },
+            {
+              "score": "0-1",
+              "p": 0.075
+            },
+            {
+              "score": "2-1",
+              "p": 0.074
+            },
+            {
+              "score": "0-2",
+              "p": 0.069
+            }
+          ],
+          "over25": 0.572,
+          "btts": 0.603,
+          "homeProfile": {
+            "team": "Cheltenham",
+            "league": "EL2",
+            "leagueName": "League Two",
+            "season": "2627",
+            "position": 5,
+            "of": 24,
+            "played": 7,
+            "points": 12,
+            "ppg": 1.71,
+            "gf": 14,
+            "ga": 11,
+            "xgfPg": 1.28,
+            "xgaPg": 1.52,
+            "homeRecord": {
+              "played": 3,
+              "w": 2,
+              "d": 1,
+              "l": 0,
+              "gf": 7,
+              "ga": 5
+            },
+            "awayRecord": {
+              "played": 4,
+              "w": 1,
+              "d": 2,
+              "l": 1,
+              "gf": 7,
+              "ga": 6
+            },
+            "form": "OVOVOF",
+            "last": [
+              {
+                "date": "2026-09-19",
+                "opp": "Colchester",
+                "venue": "B",
+                "score": "1-1",
+                "r": "O"
+              },
+              {
+                "date": "2026-09-12",
+                "opp": "Crawley Town",
+                "venue": "B",
+                "score": "3-1",
+                "r": "V"
+              },
+              {
+                "date": "2026-09-05",
+                "opp": "Grimsby",
+                "venue": "H",
+                "score": "2-2",
+                "r": "O"
+              },
+              {
+                "date": "2026-09-01",
+                "opp": "York",
+                "venue": "H",
+                "score": "3-2",
+                "r": "V"
+              },
+              {
+                "date": "2026-08-29",
+                "opp": "Barnet",
+                "venue": "B",
+                "score": "2-2",
+                "r": "O"
+              },
+              {
+                "date": "2026-08-22",
+                "opp": "Swindon",
+                "venue": "B",
+                "score": "1-2",
+                "r": "F"
+              }
+            ],
+            "attack": 0.73,
+            "defence": 2.06,
+            "sample": 20.16
+          },
+          "awayProfile": {
+            "team": "Chesterfield",
+            "league": "EL2",
+            "leagueName": "League Two",
+            "season": "2627",
+            "position": 8,
+            "of": 24,
+            "played": 7,
+            "points": 11,
+            "ppg": 1.57,
+            "gf": 10,
+            "ga": 8,
+            "xgfPg": 1.75,
+            "xgaPg": 1.15,
+            "homeRecord": {
+              "played": 4,
+              "w": 1,
+              "d": 2,
+              "l": 1,
+              "gf": 6,
+              "ga": 5
+            },
+            "awayRecord": {
+              "played": 3,
+              "w": 2,
+              "d": 0,
+              "l": 1,
+              "gf": 4,
+              "ga": 3
+            },
+            "form": "VVOOFV",
+            "last": [
+              {
+                "date": "2026-09-19",
+                "opp": "York",
+                "venue": "H",
+                "score": "2-0",
+                "r": "V"
+              },
+              {
+                "date": "2026-09-12",
+                "opp": "Oldham",
+                "venue": "B",
+                "score": "2-1",
+                "r": "V"
+              },
+              {
+                "date": "2026-09-05",
+                "opp": "Barnet",
+                "venue": "H",
+                "score": "3-3",
+                "r": "O"
+              },
+              {
+                "date": "2026-09-01",
+                "opp": "Gillingham",
+                "venue": "H",
+                "score": "1-1",
+                "r": "O"
+              },
+              {
+                "date": "2026-08-29",
+                "opp": "Rotherham",
+                "venue": "B",
+                "score": "1-2",
+                "r": "F"
+              },
+              {
+                "date": "2026-08-22",
+                "opp": "Salford",
+                "venue": "B",
+                "score": "1-0",
+                "r": "V"
+              }
+            ],
+            "attack": 0.8,
+            "defence": 1.51,
+            "sample": 20
+          },
+          "h2h": [
+            {
+              "date": "2026-04-03",
+              "home": "Chesterfield",
+              "away": "Cheltenham",
+              "score": "1-0"
+            },
+            {
+              "date": "2025-08-09",
+              "home": "Cheltenham",
+              "away": "Chesterfield",
+              "score": "0-2"
+            }
+          ],
+          "elo": null,
+          "matched": {
+            "home": "Cheltenham",
+            "away": "Chesterfield"
+          },
+          "thin": false,
+          "final": [
+            0.299,
+            0.269,
+            0.432
+          ],
+          "modelWeight": 0.35,
+          "tip": "2",
+          "tipP": 0.43159986301148506,
+          "verdict": {
+            "sign": "2",
+            "minOdds": 2.39,
+            "odds": 2.12,
+            "value": false
+          },
+          "streckvarde": [
+            1.2,
+            0.96,
+            0.92
+          ],
+          "analysis": [
+            "Chesterfield har ett övertag (43 %), men det är långt ifrån säkert.",
+            "Tabell: Cheltenham 5:a, Chesterfield 8:a i League Two (12 mot 11 poäng).",
+            "Form senaste 6 (nyast först): Cheltenham O V O V O F · Chesterfield V V O O F V.",
+            "Cheltenham hemma i år: 2V 1O 0F, mål 7-5.",
+            "Chesterfield borta i år: 2V 0O 1F, mål 4-3.",
+            "xG per match: Cheltenham 1,28 skapat / 1,52 insläppt · Chesterfield 1,75 / 1,15.",
+            "Förväntade mål 1,33 – 1,64; troligast 1-1, 1-2, 0-1.",
+            "Inbördes (senaste 2): Chesterfield 1-0 Cheltenham · Cheltenham 0-2 Chesterfield."
+          ],
+          "result": {
+            "outcome": "1",
+            "score": "2-1"
+          },
+          "systemPick": {
+            "signs": "12",
+            "type": "Halvgardering"
+          }
+        },
+        {
+          "eventNumber": 8,
+          "home": "Fleetwood",
+          "away": "Rochdale",
+          "league": "League Two",
+          "country": "England",
+          "kickoff": "2026-09-26T16:00:00+02:00",
+          "odds": [
+            1.81,
+            3.4,
+            3.85
+          ],
+          "marketSource": "Svenska Spel",
+          "market": [
+            0.499,
+            0.266,
+            0.235
+          ],
+          "folk": [
+            0.61,
+            0.23,
+            0.16
+          ],
+          "model": [
+            0.559,
+            0.274,
+            0.167
+          ],
+          "basis": "club",
+          "lambdas": {
+            "home": 1.55,
+            "away": 0.73
+          },
+          "topScores": [
+            {
+              "score": "1-0",
+              "p": 0.149
+            },
+            {
+              "score": "1-1",
+              "p": 0.125
+            },
+            {
+              "score": "2-0",
+              "p": 0.122
+            },
+            {
+              "score": "0-0",
+              "p": 0.111
+            },
+            {
+              "score": "2-1",
+              "p": 0.09
+            }
+          ],
+          "over25": 0.399,
+          "btts": 0.419,
+          "homeProfile": {
+            "team": "Fleetwood Town",
+            "league": "EL2",
+            "leagueName": "League Two",
+            "season": "2627",
+            "position": 11,
+            "of": 24,
+            "played": 7,
+            "points": 10,
+            "ppg": 1.43,
+            "gf": 8,
+            "ga": 7,
+            "xgfPg": 0.98,
+            "xgaPg": 1.72,
+            "homeRecord": {
+              "played": 3,
+              "w": 1,
+              "d": 2,
+              "l": 0,
+              "gf": 3,
+              "ga": 1
+            },
+            "awayRecord": {
+              "played": 4,
+              "w": 1,
+              "d": 2,
+              "l": 1,
+              "gf": 5,
+              "ga": 6
+            },
+            "form": "FOVOOO",
+            "last": [
+              {
+                "date": "2026-09-19",
+                "opp": "Barnet",
+                "venue": "B",
+                "score": "1-3",
+                "r": "F"
+              },
+              {
+                "date": "2026-09-12",
+                "opp": "Newport County",
+                "venue": "B",
+                "score": "1-1",
+                "r": "O"
+              },
+              {
+                "date": "2026-09-05",
+                "opp": "Shrewsbury",
+                "venue": "H",
+                "score": "2-0",
+                "r": "V"
+              },
+              {
+                "date": "2026-09-01",
+                "opp": "Oldham",
+                "venue": "H",
+                "score": "1-1",
+                "r": "O"
+              },
+              {
+                "date": "2026-08-29",
+                "opp": "Grimsby",
+                "venue": "B",
+                "score": "2-2",
+                "r": "O"
+              },
+              {
+                "date": "2026-08-22",
+                "opp": "Gillingham",
+                "venue": "H",
+                "score": "0-0",
+                "r": "O"
+              }
+            ],
+            "attack": 0.61,
+            "defence": 1.66,
+            "sample": 20.06
+          },
+          "awayProfile": {
+            "team": "Rochdale",
+            "league": "EL2",
+            "leagueName": "League Two",
+            "season": "2627",
+            "position": 17,
+            "of": 24,
+            "played": 7,
+            "points": 7,
+            "ppg": 1,
+            "gf": 7,
+            "ga": 10,
+            "xgfPg": 0.56,
+            "xgaPg": 1.78,
+            "homeRecord": {
+              "played": 4,
+              "w": 2,
+              "d": 0,
+              "l": 2,
+              "gf": 7,
+              "ga": 6
+            },
+            "awayRecord": {
+              "played": 3,
+              "w": 0,
+              "d": 1,
+              "l": 2,
+              "gf": 0,
+              "ga": 4
+            },
+            "form": "VOFVFF",
+            "last": [
+              {
+                "date": "2026-09-19",
+                "opp": "Oldham",
+                "venue": "H",
+                "score": "2-0",
+                "r": "V"
+              },
+              {
+                "date": "2026-09-12",
+                "opp": "Walsall",
+                "venue": "B",
+                "score": "0-0",
+                "r": "O"
+              },
+              {
+                "date": "2026-09-05",
+                "opp": "Gillingham",
+                "venue": "H",
+                "score": "1-4",
+                "r": "F"
+              },
+              {
+                "date": "2026-09-01",
+                "opp": "Shrewsbury",
+                "venue": "H",
+                "score": "3-0",
+                "r": "V"
+              },
+              {
+                "date": "2026-08-29",
+                "opp": "Colchester",
+                "venue": "B",
+                "score": "0-1",
+                "r": "F"
+              },
+              {
+                "date": "2026-08-22",
+                "opp": "Crawley Town",
+                "venue": "H",
+                "score": "1-2",
+                "r": "F"
+              }
+            ],
+            "attack": 0.44,
+            "defence": 2.08,
+            "sample": 6.26
+          },
+          "h2h": [],
+          "elo": null,
+          "matched": {
+            "home": "Fleetwood Town",
+            "away": "Rochdale"
+          },
+          "thin": true,
+          "final": [
+            0.511,
+            0.267,
+            0.221
+          ],
+          "modelWeight": 0.2,
+          "tip": "1",
+          "tipP": 0.5112779481304284,
+          "verdict": {
+            "sign": "1",
+            "minOdds": 2.01,
+            "odds": 1.81,
+            "value": false
+          },
+          "streckvarde": [
+            0.84,
+            1.16,
+            1.38
+          ],
+          "analysis": [
+            "Fleetwood har ett övertag (51 %), men det är långt ifrån säkert.",
+            "Tabell: Fleetwood 11:a, Rochdale 17:a i League Two (10 mot 7 poäng).",
+            "Form senaste 6 (nyast först): Fleetwood F O V O O O · Rochdale V O F V F F.",
+            "Fleetwood hemma i år: 1V 2O 0F, mål 3-1.",
+            "Rochdale borta i år: 0V 1O 2F, mål 0-4.",
+            "xG per match: Fleetwood 0,98 skapat / 1,72 insläppt · Rochdale 0,56 / 1,78.",
+            "Förväntade mål 1,55 – 0,73; troligast 1-0, 1-1, 2-0.",
+            "Svenska folket överstreckar 1 (61 % mot vår 51 %).",
+            "Streckvärde på 2: vi 22 %, folket bara 16 %."
+          ],
+          "result": {
+            "outcome": "2",
+            "score": "1-2"
+          },
+          "systemPick": {
+            "signs": "1",
+            "type": "Spik"
+          }
+        },
+        {
+          "eventNumber": 9,
+          "home": "Newport",
+          "away": "Grimsby",
+          "league": "League Two",
+          "country": "England",
+          "kickoff": "2026-09-26T16:00:00+02:00",
+          "odds": [
+            3.65,
+            3.35,
+            1.87
+          ],
+          "marketSource": "Svenska Spel",
+          "market": [
+            0.247,
+            0.27,
+            0.483
+          ],
+          "folk": [
+            0.17,
+            0.26,
+            0.57
+          ],
+          "model": [
+            0.204,
+            0.25,
+            0.546
+          ],
+          "basis": "club",
+          "lambdas": {
+            "home": 1.01,
+            "away": 1.79
+          },
+          "topScores": [
+            {
+              "score": "1-1",
+              "p": 0.119
+            },
+            {
+              "score": "0-1",
+              "p": 0.1
+            },
+            {
+              "score": "1-2",
+              "p": 0.098
+            },
+            {
+              "score": "0-2",
+              "p": 0.097
+            },
+            {
+              "score": "0-0",
+              "p": 0.07
+            }
+          ],
+          "over25": 0.531,
+          "btts": 0.539,
+          "homeProfile": {
+            "team": "Newport County",
+            "league": "EL2",
+            "leagueName": "League Two",
+            "season": "2627",
+            "position": 19,
+            "of": 24,
+            "played": 7,
+            "points": 6,
+            "ppg": 0.86,
+            "gf": 10,
+            "ga": 11,
+            "xgfPg": 0.93,
+            "xgaPg": 1.39,
+            "homeRecord": {
+              "played": 3,
+              "w": 1,
+              "d": 2,
+              "l": 0,
+              "gf": 6,
+              "ga": 3
+            },
+            "awayRecord": {
+              "played": 4,
+              "w": 0,
+              "d": 1,
+              "l": 3,
+              "gf": 4,
+              "ga": 8
+            },
+            "form": "OOFFOF",
+            "last": [
+              {
+                "date": "2026-09-19",
+                "opp": "Accrington",
+                "venue": "B",
+                "score": "0-0",
+                "r": "O"
+              },
+              {
+                "date": "2026-09-12",
+                "opp": "Fleetwood Town",
+                "venue": "H",
+                "score": "1-1",
+                "r": "O"
+              },
+              {
+                "date": "2026-09-05",
+                "opp": "Northampton",
+                "venue": "B",
+                "score": "0-1",
+                "r": "F"
+              },
+              {
+                "date": "2026-09-01",
+                "opp": "Salford",
+                "venue": "B",
+                "score": "1-2",
+                "r": "F"
+              },
+              {
+                "date": "2026-08-29",
+                "opp": "Tranmere",
+                "venue": "H",
+                "score": "2-2",
+                "r": "O"
+              },
+              {
+                "date": "2026-08-22",
+                "opp": "Bristol Rvs",
+                "venue": "B",
+                "score": "3-5",
+                "r": "F"
+              }
+            ],
+            "attack": 0.58,
+            "defence": 2.05,
+            "sample": 20.02
+          },
+          "awayProfile": {
+            "team": "Grimsby",
+            "league": "EL2",
+            "leagueName": "League Two",
+            "season": "2627",
+            "position": 3,
+            "of": 24,
+            "played": 7,
+            "points": 13,
+            "ppg": 1.86,
+            "gf": 11,
+            "ga": 6,
+            "xgfPg": 2.04,
+            "xgaPg": 1.08,
+            "homeRecord": {
+              "played": 4,
+              "w": 3,
+              "d": 1,
+              "l": 0,
+              "gf": 7,
+              "ga": 2
+            },
+            "awayRecord": {
+              "played": 3,
+              "w": 0,
+              "d": 3,
+              "l": 0,
+              "gf": 4,
+              "ga": 4
+            },
+            "form": "VVOOOO",
+            "last": [
+              {
+                "date": "2026-09-19",
+                "opp": "Crawley Town",
+                "venue": "H",
+                "score": "2-0",
+                "r": "V"
+              },
+              {
+                "date": "2026-09-12",
+                "opp": "Bristol Rvs",
+                "venue": "H",
+                "score": "2-0",
+                "r": "V"
+              },
+              {
+                "date": "2026-09-05",
+                "opp": "Cheltenham",
+                "venue": "B",
+                "score": "2-2",
+                "r": "O"
+              },
+              {
+                "date": "2026-09-01",
+                "opp": "Accrington",
+                "venue": "B",
+                "score": "2-2",
+                "r": "O"
+              },
+              {
+                "date": "2026-08-29",
+                "opp": "Fleetwood Town",
+                "venue": "H",
+                "score": "2-2",
+                "r": "O"
+              },
+              {
+                "date": "2026-08-22",
+                "opp": "Walsall",
+                "venue": "B",
+                "score": "0-0",
+                "r": "O"
+              }
+            ],
+            "attack": 0.87,
+            "defence": 1.43,
+            "sample": 20.18
+          },
+          "h2h": [
+            {
+              "date": "2026-02-07",
+              "home": "Newport County",
+              "away": "Grimsby",
+              "score": "0-0"
+            },
+            {
+              "date": "2025-08-16",
+              "home": "Grimsby",
+              "away": "Newport County",
+              "score": "2-1"
+            }
+          ],
+          "elo": null,
+          "matched": {
+            "home": "Newport County",
+            "away": "Grimsby"
+          },
+          "thin": false,
+          "final": [
+            0.232,
+            0.263,
+            0.505
+          ],
+          "modelWeight": 0.35,
+          "tip": "2",
+          "tipP": 0.5051803772163383,
+          "verdict": {
+            "sign": "2",
+            "minOdds": 2.04,
+            "odds": 1.87,
+            "value": false
+          },
+          "streckvarde": [
+            1.37,
+            1.01,
+            0.89
+          ],
+          "analysis": [
+            "Grimsby har ett övertag (51 %), men det är långt ifrån säkert.",
+            "Tabell: Newport 19:a, Grimsby 3:a i League Two (6 mot 13 poäng).",
+            "Form senaste 6 (nyast först): Newport O O F F O F · Grimsby V V O O O O.",
+            "Newport hemma i år: 1V 2O 0F, mål 6-3.",
+            "Grimsby borta i år: 0V 3O 0F, mål 4-4.",
+            "xG per match: Newport 0,93 skapat / 1,39 insläppt · Grimsby 2,04 / 1,08.",
+            "Förväntade mål 1,01 – 1,79; troligast 1-1, 0-1, 1-2.",
+            "Streckvärde på 1: vi 23 %, folket bara 17 %.",
+            "Inbördes (senaste 2): Newport County 0-0 Grimsby · Grimsby 2-1 Newport County."
+          ],
+          "result": {
+            "outcome": "1",
+            "score": "2-1"
+          },
+          "systemPick": {
+            "signs": "2",
+            "type": "Spik"
+          }
+        },
+        {
+          "eventNumber": 10,
+          "home": "Rotherham",
+          "away": "Crewe",
+          "league": "League Two",
+          "country": "England",
+          "kickoff": "2026-09-26T16:00:00+02:00",
+          "odds": [
+            1.95,
+            3.5,
+            3.25
+          ],
+          "marketSource": "Svenska Spel",
+          "market": [
+            0.464,
+            0.258,
+            0.278
+          ],
+          "folk": [
+            0.51,
+            0.27,
+            0.22
+          ],
+          "model": [
+            0.418,
+            0.292,
+            0.29
+          ],
+          "basis": "club",
+          "lambdas": {
+            "home": 1.35,
+            "away": 1.08
+          },
+          "topScores": [
+            {
+              "score": "1-1",
+              "p": 0.139
+            },
+            {
+              "score": "1-0",
+              "p": 0.108
+            },
+            {
+              "score": "0-0",
+              "p": 0.098
+            },
+            {
+              "score": "2-1",
+              "p": 0.087
+            },
+            {
+              "score": "0-1",
+              "p": 0.085
+            }
+          ],
+          "over25": 0.44,
+          "btts": 0.501,
+          "homeProfile": {
+            "team": "Rotherham",
+            "league": "EL2",
+            "leagueName": "League Two",
+            "season": "2627",
+            "position": 14,
+            "of": 24,
+            "played": 7,
+            "points": 9,
+            "ppg": 1.29,
+            "gf": 10,
+            "ga": 10,
+            "xgfPg": 1.69,
+            "xgaPg": 1.18,
+            "homeRecord": {
+              "played": 3,
+              "w": 1,
+              "d": 2,
+              "l": 0,
+              "gf": 6,
+              "ga": 5
+            },
+            "awayRecord": {
+              "played": 4,
+              "w": 1,
+              "d": 1,
+              "l": 2,
+              "gf": 4,
+              "ga": 5
+            },
+            "form": "VOFOVO",
+            "last": [
+              {
+                "date": "2026-09-19",
+                "opp": "Northampton",
+                "venue": "B",
+                "score": "1-0",
+                "r": "V"
+              },
+              {
+                "date": "2026-09-12",
+                "opp": "Salford",
+                "venue": "H",
+                "score": "3-3",
+                "r": "O"
+              },
+              {
+                "date": "2026-09-05",
+                "opp": "Bristol Rvs",
+                "venue": "B",
+                "score": "0-1",
+                "r": "F"
+              },
+              {
+                "date": "2026-09-01",
+                "opp": "Tranmere",
+                "venue": "B",
+                "score": "2-2",
+                "r": "O"
+              },
+              {
+                "date": "2026-08-29",
+                "opp": "Chesterfield",
+                "venue": "H",
+                "score": "2-1",
+                "r": "V"
+              },
+              {
+                "date": "2026-08-22",
+                "opp": "York",
+                "venue": "H",
+                "score": "1-1",
+                "r": "O"
+              }
+            ],
+            "attack": 0.66,
+            "defence": 1.64,
+            "sample": 20.27
+          },
+          "awayProfile": {
+            "team": "Crewe",
+            "league": "EL2",
+            "leagueName": "League Two",
+            "season": "2627",
+            "position": 9,
+            "of": 24,
+            "played": 7,
+            "points": 11,
+            "ppg": 1.57,
+            "gf": 7,
+            "ga": 5,
+            "xgfPg": 1.19,
+            "xgaPg": 1.52,
+            "homeRecord": {
+              "played": 4,
+              "w": 1,
+              "d": 3,
+              "l": 0,
+              "gf": 5,
+              "ga": 4
+            },
+            "awayRecord": {
+              "played": 3,
+              "w": 1,
+              "d": 2,
+              "l": 0,
+              "gf": 2,
+              "ga": 1
+            },
+            "form": "OOOOOV",
+            "last": [
+              {
+                "date": "2026-09-19",
+                "opp": "Shrewsbury",
+                "venue": "H",
+                "score": "1-1",
+                "r": "O"
+              },
+              {
+                "date": "2026-09-12",
+                "opp": "Colchester",
+                "venue": "B",
+                "score": "1-1",
+                "r": "O"
+              },
+              {
+                "date": "2026-09-05",
+                "opp": "York",
+                "venue": "H",
+                "score": "1-1",
+                "r": "O"
+              },
+              {
+                "date": "2026-09-01",
+                "opp": "Walsall",
+                "venue": "H",
+                "score": "2-2",
+                "r": "O"
+              },
+              {
+                "date": "2026-08-29",
+                "opp": "Port Vale",
+                "venue": "B",
+                "score": "0-0",
+                "r": "O"
+              },
+              {
+                "date": "2026-08-22",
+                "opp": "Northampton",
+                "venue": "H",
+                "score": "1-0",
+                "r": "V"
+              }
+            ],
+            "attack": 0.66,
+            "defence": 1.68,
+            "sample": 19.92
+          },
+          "h2h": [],
+          "elo": null,
+          "matched": {
+            "home": "Rotherham",
+            "away": "Crewe"
+          },
+          "thin": false,
+          "final": [
+            0.448,
+            0.27,
+            0.282
+          ],
+          "modelWeight": 0.35,
+          "tip": "1",
+          "tipP": 0.4475952469616885,
+          "verdict": {
+            "sign": "1",
+            "minOdds": 2.3,
+            "odds": 1.95,
+            "value": false
+          },
+          "streckvarde": [
+            0.88,
+            1,
+            1.28
+          ],
+          "analysis": [
+            "Rotherham har ett övertag (45 %), men det är långt ifrån säkert.",
+            "Tabell: Rotherham 14:a, Crewe 9:a i League Two (9 mot 11 poäng).",
+            "Form senaste 6 (nyast först): Rotherham V O F O V O · Crewe O O O O O V.",
+            "Rotherham hemma i år: 1V 2O 0F, mål 6-5.",
+            "Crewe borta i år: 1V 2O 0F, mål 2-1.",
+            "xG per match: Rotherham 1,69 skapat / 1,18 insläppt · Crewe 1,19 / 1,52.",
+            "Förväntade mål 1,35 – 1,08; troligast 1-1, 1-0, 0-0.",
+            "Streckvärde på 2: vi 28 %, folket bara 22 %."
+          ],
+          "result": {
+            "outcome": "X",
+            "score": "1-1"
+          },
+          "systemPick": {
+            "signs": "1",
+            "type": "Spik"
+          }
+        },
+        {
+          "eventNumber": 11,
+          "home": "Shrewsbury",
+          "away": "Colchester",
+          "league": "League Two",
+          "country": "England",
+          "kickoff": "2026-09-26T16:00:00+02:00",
+          "odds": [
+            2.48,
+            3.15,
+            2.6
+          ],
+          "marketSource": "Svenska Spel",
+          "market": [
+            0.365,
+            0.287,
+            0.348
+          ],
+          "folk": [
+            0.44,
+            0.28,
+            0.28
+          ],
+          "model": [
+            0.292,
+            0.317,
+            0.391
+          ],
+          "basis": "club",
+          "lambdas": {
+            "home": 0.96,
+            "away": 1.16
+          },
+          "topScores": [
+            {
+              "score": "1-1",
+              "p": 0.144
+            },
+            {
+              "score": "0-0",
+              "p": 0.131
+            },
+            {
+              "score": "0-1",
+              "p": 0.128
+            },
+            {
+              "score": "1-0",
+              "p": 0.105
+            },
+            {
+              "score": "0-2",
+              "p": 0.08
+            }
+          ],
+          "over25": 0.356,
+          "btts": 0.435,
+          "homeProfile": {
+            "team": "Shrewsbury",
+            "league": "EL2",
+            "leagueName": "League Two",
+            "season": "2627",
+            "position": 18,
+            "of": 24,
+            "played": 7,
+            "points": 7,
+            "ppg": 1,
+            "gf": 5,
+            "ga": 11,
+            "xgfPg": 1.24,
+            "xgaPg": 0.8,
+            "homeRecord": {
+              "played": 3,
+              "w": 2,
+              "d": 0,
+              "l": 1,
+              "gf": 4,
+              "ga": 3
+            },
+            "awayRecord": {
+              "played": 4,
+              "w": 0,
+              "d": 1,
+              "l": 3,
+              "gf": 1,
+              "ga": 8
+            },
+            "form": "OVFFVF",
+            "last": [
+              {
+                "date": "2026-09-19",
+                "opp": "Crewe",
+                "venue": "B",
+                "score": "1-1",
+                "r": "O"
+              },
+              {
+                "date": "2026-09-12",
+                "opp": "Northampton",
+                "venue": "H",
+                "score": "2-0",
+                "r": "V"
+              },
+              {
+                "date": "2026-09-05",
+                "opp": "Fleetwood Town",
+                "venue": "B",
+                "score": "0-2",
+                "r": "F"
+              },
+              {
+                "date": "2026-09-01",
+                "opp": "Rochdale",
+                "venue": "B",
+                "score": "0-3",
+                "r": "F"
+              },
+              {
+                "date": "2026-08-29",
+                "opp": "Salford",
+                "venue": "H",
+                "score": "1-0",
+                "r": "V"
+              },
+              {
+                "date": "2026-08-22",
+                "opp": "Barnet",
+                "venue": "H",
+                "score": "1-3",
+                "r": "F"
+              }
+            ],
+            "attack": 0.51,
+            "defence": 1.79,
+            "sample": 20.01
+          },
+          "awayProfile": {
+            "team": "Colchester",
+            "league": "EL2",
+            "leagueName": "League Two",
+            "season": "2627",
+            "position": 15,
+            "of": 24,
+            "played": 7,
+            "points": 9,
+            "ppg": 1.29,
+            "gf": 8,
+            "ga": 10,
+            "xgfPg": 1.16,
+            "xgaPg": 1.52,
+            "homeRecord": {
+              "played": 4,
+              "w": 2,
+              "d": 2,
+              "l": 0,
+              "gf": 5,
+              "ga": 3
+            },
+            "awayRecord": {
+              "played": 3,
+              "w": 0,
+              "d": 1,
+              "l": 2,
+              "gf": 3,
+              "ga": 7
+            },
+            "form": "OOFFVV",
+            "last": [
+              {
+                "date": "2026-09-19",
+                "opp": "Cheltenham",
+                "venue": "H",
+                "score": "1-1",
+                "r": "O"
+              },
+              {
+                "date": "2026-09-12",
+                "opp": "Crewe",
+                "venue": "H",
+                "score": "1-1",
+                "r": "O"
+              },
+              {
+                "date": "2026-09-05",
+                "opp": "Swindon",
+                "venue": "B",
+                "score": "1-3",
+                "r": "F"
+              },
+              {
+                "date": "2026-09-01",
+                "opp": "Bristol Rvs",
+                "venue": "B",
+                "score": "0-2",
+                "r": "F"
+              },
+              {
+                "date": "2026-08-29",
+                "opp": "Rochdale",
+                "venue": "H",
+                "score": "1-0",
+                "r": "V"
+              },
+              {
+                "date": "2026-08-22",
+                "opp": "Oldham",
+                "venue": "H",
+                "score": "2-1",
+                "r": "V"
+              }
+            ],
+            "attack": 0.65,
+            "defence": 1.57,
+            "sample": 20.13
+          },
+          "h2h": [
+            {
+              "date": "2026-02-07",
+              "home": "Colchester",
+              "away": "Shrewsbury",
+              "score": "2-0"
+            },
+            {
+              "date": "2025-08-16",
+              "home": "Shrewsbury",
+              "away": "Colchester",
+              "score": "0-2"
+            }
+          ],
+          "elo": null,
+          "matched": {
+            "home": "Shrewsbury",
+            "away": "Colchester"
+          },
+          "thin": false,
+          "final": [
+            0.339,
+            0.298,
+            0.363
+          ],
+          "modelWeight": 0.35,
+          "tip": "2",
+          "tipP": 0.36287471454604603,
+          "verdict": {
+            "sign": "2",
+            "minOdds": 2.84,
+            "odds": 2.6,
+            "value": false
+          },
+          "streckvarde": [
+            0.77,
+            1.06,
+            1.3
+          ],
+          "analysis": [
+            "Jämnt mellan lagen – Shrewsbury 34 % mot Colchester 36 %.",
+            "Krysset ligger högt (30 %) – oavgjort är ett rimligt utfall.",
+            "Tabell: Shrewsbury 18:a, Colchester 15:a i League Two (7 mot 9 poäng).",
+            "Form senaste 6 (nyast först): Shrewsbury O V F F V F · Colchester O O F F V V.",
+            "Shrewsbury hemma i år: 2V 0O 1F, mål 4-3.",
+            "Colchester borta i år: 0V 1O 2F, mål 3-7.",
+            "xG per match: Shrewsbury 1,24 skapat / 0,80 insläppt · Colchester 1,16 / 1,52.",
+            "Förväntade mål 0,96 – 1,16; troligast 1-1, 0-0, 0-1.",
+            "Modellen tror mindre på 1 än oddsen (29 % mot 37 %).",
+            "Svenska folket överstreckar 1 (44 % mot vår 34 %).",
+            "Streckvärde på 2: vi 36 %, folket bara 28 %.",
+            "Inbördes (senaste 2): Colchester 2-0 Shrewsbury · Shrewsbury 0-2 Colchester."
+          ],
+          "result": {
+            "outcome": "X",
+            "score": "2-2"
+          },
+          "systemPick": {
+            "signs": "1X2",
+            "type": "Helgardering"
+          }
+        },
+        {
+          "eventNumber": 12,
+          "home": "Swindon",
+          "away": "Accrington",
+          "league": "League Two",
+          "country": "England",
+          "kickoff": "2026-09-26T16:00:00+02:00",
+          "odds": [
+            2.08,
+            3.2,
+            3.15
+          ],
+          "marketSource": "Svenska Spel",
+          "market": [
+            0.433,
+            0.281,
+            0.286
+          ],
+          "folk": [
+            0.51,
+            0.25,
+            0.24
+          ],
+          "model": [
+            0.485,
+            0.265,
+            0.25
+          ],
+          "basis": "club",
+          "lambdas": {
+            "home": 1.63,
+            "away": 1.11
+          },
+          "topScores": [
+            {
+              "score": "1-1",
+              "p": 0.126
+            },
+            {
+              "score": "1-0",
+              "p": 0.096
+            },
+            {
+              "score": "2-1",
+              "p": 0.095
+            },
+            {
+              "score": "2-0",
+              "p": 0.086
+            },
+            {
+              "score": "0-0",
+              "p": 0.074
+            }
+          ],
+          "over25": 0.515,
+          "btts": 0.548,
+          "homeProfile": {
+            "team": "Swindon",
+            "league": "EL2",
+            "leagueName": "League Two",
+            "season": "2627",
+            "position": 13,
+            "of": 24,
+            "played": 7,
+            "points": 10,
+            "ppg": 1.43,
+            "gf": 8,
+            "ga": 11,
+            "xgfPg": 1.16,
+            "xgaPg": 1.57,
+            "homeRecord": {
+              "played": 3,
+              "w": 3,
+              "d": 0,
+              "l": 0,
+              "gf": 8,
+              "ga": 3
+            },
+            "awayRecord": {
+              "played": 4,
+              "w": 0,
+              "d": 1,
+              "l": 3,
+              "gf": 0,
+              "ga": 8
+            },
+            "form": "FFVVFV",
+            "last": [
+              {
+                "date": "2026-09-19",
+                "opp": "Salford",
+                "venue": "B",
+                "score": "0-1",
+                "r": "F"
+              },
+              {
+                "date": "2026-09-12",
+                "opp": "York",
+                "venue": "B",
+                "score": "0-4",
+                "r": "F"
+              },
+              {
+                "date": "2026-09-05",
+                "opp": "Colchester",
+                "venue": "H",
+                "score": "3-1",
+                "r": "V"
+              },
+              {
+                "date": "2026-09-01",
+                "opp": "Port Vale",
+                "venue": "H",
+                "score": "3-1",
+                "r": "V"
+              },
+              {
+                "date": "2026-08-29",
+                "opp": "Oldham",
+                "venue": "B",
+                "score": "0-3",
+                "r": "F"
+              },
+              {
+                "date": "2026-08-22",
+                "opp": "Cheltenham",
+                "venue": "H",
+                "score": "2-1",
+                "r": "V"
+              }
+            ],
+            "attack": 0.72,
+            "defence": 1.83,
+            "sample": 19.97
+          },
+          "awayProfile": {
+            "team": "Accrington",
+            "league": "EL2",
+            "leagueName": "League Two",
+            "season": "2627",
+            "position": 21,
+            "of": 24,
+            "played": 7,
+            "points": 6,
+            "ppg": 0.86,
+            "gf": 10,
+            "ga": 13,
+            "xgfPg": 1.48,
+            "xgaPg": 1.48,
+            "homeRecord": {
+              "played": 4,
+              "w": 1,
+              "d": 3,
+              "l": 0,
+              "gf": 7,
+              "ga": 6
+            },
+            "awayRecord": {
+              "played": 3,
+              "w": 0,
+              "d": 0,
+              "l": 3,
+              "gf": 3,
+              "ga": 7
+            },
+            "form": "OFVOFF",
+            "last": [
+              {
+                "date": "2026-09-19",
+                "opp": "Newport County",
+                "venue": "H",
+                "score": "0-0",
+                "r": "O"
+              },
+              {
+                "date": "2026-09-12",
+                "opp": "Barnet",
+                "venue": "B",
+                "score": "1-2",
+                "r": "F"
+              },
+              {
+                "date": "2026-09-05",
+                "opp": "Crawley Town",
+                "venue": "H",
+                "score": "3-2",
+                "r": "V"
+              },
+              {
+                "date": "2026-09-01",
+                "opp": "Grimsby",
+                "venue": "H",
+                "score": "2-2",
+                "r": "O"
+              },
+              {
+                "date": "2026-08-29",
+                "opp": "Walsall",
+                "venue": "B",
+                "score": "2-3",
+                "r": "F"
+              },
+              {
+                "date": "2026-08-22",
+                "opp": "Exeter",
+                "venue": "B",
+                "score": "0-2",
+                "r": "F"
+              }
+            ],
+            "attack": 0.61,
+            "defence": 1.85,
+            "sample": 20.17
+          },
+          "h2h": [
+            {
+              "date": "2026-04-18",
+              "home": "Swindon",
+              "away": "Accrington",
+              "score": "2-2"
+            },
+            {
+              "date": "2025-10-18",
+              "home": "Accrington",
+              "away": "Swindon",
+              "score": "4-0"
+            }
+          ],
+          "elo": null,
+          "matched": {
+            "home": "Swindon",
+            "away": "Accrington"
+          },
+          "thin": false,
+          "final": [
+            0.451,
+            0.276,
+            0.273
+          ],
+          "modelWeight": 0.35,
+          "tip": "1",
+          "tipP": 0.4510999693072727,
+          "verdict": {
+            "sign": "1",
+            "minOdds": 2.28,
+            "odds": 2.08,
+            "value": false
+          },
+          "streckvarde": [
+            0.88,
+            1.1,
+            1.14
+          ],
+          "analysis": [
+            "Swindon har ett övertag (45 %), men det är långt ifrån säkert.",
+            "Tabell: Swindon 13:a, Accrington 21:a i League Two (10 mot 6 poäng).",
+            "Form senaste 6 (nyast först): Swindon F F V V F V · Accrington O F V O F F.",
+            "Swindon hemma i år: 3V 0O 0F, mål 8-3.",
+            "Accrington borta i år: 0V 0O 3F, mål 3-7.",
+            "xG per match: Swindon 1,16 skapat / 1,57 insläppt · Accrington 1,48 / 1,48.",
+            "Förväntade mål 1,63 – 1,11; troligast 1-1, 1-0, 2-1.",
+            "Inbördes (senaste 2): Swindon 2-2 Accrington · Accrington 4-0 Swindon."
+          ],
+          "result": {
+            "outcome": "X",
+            "score": "1-1"
+          },
+          "systemPick": {
+            "signs": "1",
+            "type": "Spik"
+          }
+        },
+        {
+          "eventNumber": 13,
+          "home": "Tranmere",
+          "away": "Walsall",
+          "league": "League Two",
+          "country": "England",
+          "kickoff": "2026-09-26T16:00:00+02:00",
+          "odds": [
+            2.4,
+            3.25,
+            2.63
+          ],
+          "marketSource": "Svenska Spel",
+          "market": [
+            0.377,
+            0.279,
+            0.344
+          ],
+          "folk": [
+            0.34,
+            0.31,
+            0.35
+          ],
+          "model": [
+            0.308,
+            0.287,
+            0.405
+          ],
+          "basis": "club",
+          "lambdas": {
+            "home": 1.16,
+            "away": 1.36
+          },
+          "topScores": [
+            {
+              "score": "1-1",
+              "p": 0.137
+            },
+            {
+              "score": "0-1",
+              "p": 0.099
+            },
+            {
+              "score": "0-0",
+              "p": 0.09
+            },
+            {
+              "score": "1-2",
+              "p": 0.086
+            },
+            {
+              "score": "1-0",
+              "p": 0.083
+            }
+          ],
+          "over25": 0.463,
+          "btts": 0.521,
+          "homeProfile": {
+            "team": "Tranmere",
+            "league": "EL2",
+            "leagueName": "League Two",
+            "season": "2627",
+            "position": 10,
+            "of": 24,
+            "played": 7,
+            "points": 10,
+            "ppg": 1.43,
+            "gf": 9,
+            "ga": 7,
+            "xgfPg": 1,
+            "xgaPg": 1.47,
+            "homeRecord": {
+              "played": 3,
+              "w": 2,
+              "d": 1,
+              "l": 0,
+              "gf": 6,
+              "ga": 2
+            },
+            "awayRecord": {
+              "played": 4,
+              "w": 0,
+              "d": 3,
+              "l": 1,
+              "gf": 3,
+              "ga": 5
+            },
+            "form": "OFVOOO",
+            "last": [
+              {
+                "date": "2026-09-19",
+                "opp": "Exeter",
+                "venue": "B",
+                "score": "0-0",
+                "r": "O"
+              },
+              {
+                "date": "2026-09-12",
+                "opp": "Gillingham",
+                "venue": "B",
+                "score": "0-2",
+                "r": "F"
+              },
+              {
+                "date": "2026-09-05",
+                "opp": "Oldham",
+                "venue": "H",
+                "score": "2-0",
+                "r": "V"
+              },
+              {
+                "date": "2026-09-01",
+                "opp": "Rotherham",
+                "venue": "H",
+                "score": "2-2",
+                "r": "O"
+              },
+              {
+                "date": "2026-08-29",
+                "opp": "Newport County",
+                "venue": "B",
+                "score": "2-2",
+                "r": "O"
+              },
+              {
+                "date": "2026-08-22",
+                "opp": "Port Vale",
+                "venue": "B",
+                "score": "1-1",
+                "r": "O"
+              }
+            ],
+            "attack": 0.58,
+            "defence": 2.05,
+            "sample": 20.08
+          },
+          "awayProfile": {
+            "team": "Walsall",
+            "league": "EL2",
+            "leagueName": "League Two",
+            "season": "2627",
+            "position": 2,
+            "of": 24,
+            "played": 7,
+            "points": 13,
+            "ppg": 1.86,
+            "gf": 10,
+            "ga": 4,
+            "xgfPg": 1.55,
+            "xgaPg": 1.25,
+            "homeRecord": {
+              "played": 4,
+              "w": 2,
+              "d": 2,
+              "l": 0,
+              "gf": 5,
+              "ga": 2
+            },
+            "awayRecord": {
+              "played": 3,
+              "w": 1,
+              "d": 2,
+              "l": 0,
+              "gf": 5,
+              "ga": 2
+            },
+            "form": "VOOOVO",
+            "last": [
+              {
+                "date": "2026-09-19",
+                "opp": "Port Vale",
+                "venue": "H",
+                "score": "2-0",
+                "r": "V"
+              },
+              {
+                "date": "2026-09-12",
+                "opp": "Rochdale",
+                "venue": "H",
+                "score": "0-0",
+                "r": "O"
+              },
+              {
+                "date": "2026-09-05",
+                "opp": "Exeter",
+                "venue": "B",
+                "score": "0-0",
+                "r": "O"
+              },
+              {
+                "date": "2026-09-01",
+                "opp": "Crewe",
+                "venue": "B",
+                "score": "2-2",
+                "r": "O"
+              },
+              {
+                "date": "2026-08-29",
+                "opp": "Accrington",
+                "venue": "H",
+                "score": "3-2",
+                "r": "V"
+              },
+              {
+                "date": "2026-08-22",
+                "opp": "Grimsby",
+                "venue": "H",
+                "score": "0-0",
+                "r": "O"
+              }
+            ],
+            "attack": 0.66,
+            "defence": 1.65,
+            "sample": 20.05
+          },
+          "h2h": [
+            {
+              "date": "2026-01-17",
+              "home": "Tranmere",
+              "away": "Walsall",
+              "score": "1-3"
+            },
+            {
+              "date": "2025-09-20",
+              "home": "Walsall",
+              "away": "Tranmere",
+              "score": "4-2"
+            }
+          ],
+          "elo": null,
+          "matched": {
+            "home": "Tranmere",
+            "away": "Walsall"
+          },
+          "thin": false,
+          "final": [
+            0.353,
+            0.282,
+            0.365
+          ],
+          "modelWeight": 0.35,
+          "tip": "2",
+          "tipP": 0.365402809334467,
+          "verdict": {
+            "sign": "2",
+            "minOdds": 2.82,
+            "odds": 2.63,
+            "value": false
+          },
+          "streckvarde": [
+            1.04,
+            0.91,
+            1.04
+          ],
+          "analysis": [
+            "Jämnt mellan lagen – Tranmere 35 % mot Walsall 37 %.",
+            "Tabell: Tranmere 10:a, Walsall 2:a i League Two (10 mot 13 poäng).",
+            "Form senaste 6 (nyast först): Tranmere O F V O O O · Walsall V O O O V O.",
+            "Tranmere hemma i år: 2V 1O 0F, mål 6-2.",
+            "Walsall borta i år: 1V 2O 0F, mål 5-2.",
+            "xG per match: Tranmere 1,00 skapat / 1,47 insläppt · Walsall 1,55 / 1,25.",
+            "Förväntade mål 1,16 – 1,36; troligast 1-1, 0-1, 0-0.",
+            "Inbördes (senaste 2): Tranmere 1-3 Walsall · Walsall 4-2 Tranmere."
+          ],
+          "result": {
+            "outcome": "X",
+            "score": "1-1"
+          },
+          "systemPick": {
+            "signs": "1X2",
+            "type": "Helgardering"
+          }
+        }
+      ],
+      "system": {
+        "maxRows": 144,
+        "rows": 108,
+        "hitAll": 0.0029373737256403283,
+        "hitSingle": 0.00004688220088903793
+      },
+      "result": {
+        "correct": 3,
+        "systemCorrect": 6,
+        "total": 13,
+        "distribution": [
+          {
+            "name": "13 rätt",
+            "winners": 2,
+            "amount": "6357957,00"
+          },
+          {
+            "name": "12 rätt",
+            "winners": 72,
+            "amount": "30267,00"
+          },
+          {
+            "name": "11 rätt",
+            "winners": 1220,
+            "amount": "1429,00"
+          },
+          {
+            "name": "10 rätt",
+            "winners": 11928,
+            "amount": "304,00"
+          }
+        ]
+      },
+      "note": "Ingen öppen Stryktipset-kupong just nu – visar senaste omgången (Stryktipset v 39, stänger 2026-09-26 15:59) med facit. Nästa kupong dyker upp här när Svenska Spel öppnar den."
+    },
+    {
+      "product": "europatipset",
+      "productName": "Europatipset",
+      "drawNumber": 2611,
+      "state": "Open",
+      "open": true,
+      "closeDescription": "Europatipset v 39, stänger 2026-09-27 17:59",
+      "regCloseTime": "2026-09-27T17:59:00+02:00",
+      "turnover": "2395694,00",
+      "comment": "Europatipset v. 2026-39",
+      "modelCutoff": "2026-09-27",
+      "events": [
+        {
+          "eventNumber": 1,
+          "home": "Danmark",
+          "away": "Wales",
+          "league": "UEFA Nations League",
+          "country": "Internationell",
+          "kickoff": "2026-09-27T18:00:00+02:00",
+          "odds": [
+            1.43,
+            5,
+            8
+          ],
+          "marketSource": "Svenska Spel",
+          "market": [
+            0.683,
+            0.195,
+            0.122
+          ],
+          "folk": [
+            0.84,
+            0.12,
+            0.04
+          ],
+          "model": [
+            0.736,
+            0.195,
+            0.069
+          ],
+          "basis": "elo",
+          "lambdas": {
+            "home": 2.03,
+            "away": 0.47
+          },
+          "topScores": [
+            {
+              "score": "2-0",
+              "p": 0.169
+            },
+            {
+              "score": "1-0",
+              "p": 0.16
+            },
+            {
+              "score": "3-0",
+              "p": 0.114
+            },
+            {
+              "score": "0-0",
+              "p": 0.088
+            },
+            {
+              "score": "1-1",
+              "p": 0.085
+            }
+          ],
+          "over25": 0.456,
+          "btts": 0.334,
+          "homeProfile": null,
+          "awayProfile": null,
+          "h2h": [],
+          "elo": {
+            "home": 1859,
+            "away": 1679,
+            "homeRank": 17,
+            "awayRank": 49
+          },
+          "matched": null,
+          "thin": true,
+          "final": [
+            0.693,
+            0.195,
+            0.111
+          ],
+          "modelWeight": 0.2,
+          "tip": "1",
+          "tipP": 0.6934476842553563,
+          "verdict": {
+            "sign": "1",
+            "minOdds": 1.49,
+            "odds": 1.43,
+            "value": false
+          },
+          "streckvarde": [
+            0.83,
+            1.63,
+            2.79
+          ],
+          "analysis": [
+            "Danmark är klar favorit (69 %).",
+            "Landslags-Elo: Danmark 1859 (#17) mot Wales 1679 (#49).",
+            "Förväntade mål 2,03 – 0,47; troligast 2-0, 1-0, 3-0.",
+            "Svenska folket överstreckar 1 (84 % mot vår 69 %)."
+          ],
+          "systemPick": {
+            "signs": "1",
+            "type": "Spik"
+          }
+        },
+        {
+          "eventNumber": 2,
+          "home": "Norge",
+          "away": "Portugal",
+          "league": "UEFA Nations League",
+          "country": "Internationell",
+          "kickoff": "2026-09-27T20:45:00+02:00",
+          "odds": [
+            2.35,
+            3.8,
+            2.95
+          ],
+          "marketSource": "Svenska Spel",
+          "market": [
+            0.414,
+            0.256,
+            0.33
+          ],
+          "folk": [
+            0.42,
+            0.28,
+            0.3
+          ],
+          "model": [
+            0.449,
+            0.284,
+            0.267
+          ],
+          "basis": "elo",
+          "lambdas": {
+            "home": 1.44,
+            "away": 1.06
+          },
+          "topScores": [
+            {
+              "score": "1-1",
+              "p": 0.135
+            },
+            {
+              "score": "1-0",
+              "p": 0.108
+            },
+            {
+              "score": "0-0",
+              "p": 0.092
+            },
+            {
+              "score": "2-1",
+              "p": 0.09
+            },
+            {
+              "score": "2-0",
+              "p": 0.085
+            }
+          ],
+          "over25": 0.456,
+          "btts": 0.508,
+          "homeProfile": null,
+          "awayProfile": null,
+          "h2h": [],
+          "elo": {
+            "home": 1962,
+            "away": 1998,
+            "homeRank": 9,
+            "awayRank": 6
+          },
+          "matched": null,
+          "thin": true,
+          "final": [
+            0.421,
+            0.262,
+            0.317
+          ],
+          "modelWeight": 0.2,
+          "tip": "1",
+          "tipP": 0.4210721902370971,
+          "verdict": {
+            "sign": "1",
+            "minOdds": 2.45,
+            "odds": 2.35,
+            "value": false
+          },
+          "streckvarde": [
+            1,
+            0.93,
+            1.06
+          ],
+          "analysis": [
+            "Norge har ett övertag (42 %), men det är långt ifrån säkert.",
+            "Landslags-Elo: Norge 1962 (#9) mot Portugal 1998 (#6).",
+            "Förväntade mål 1,44 – 1,06; troligast 1-1, 1-0, 0-0."
+          ],
+          "systemPick": {
+            "signs": "1",
+            "type": "Spik"
+          }
+        },
+        {
+          "eventNumber": 3,
+          "home": "Tyskland",
+          "away": "Grekland",
+          "league": "UEFA Nations League",
+          "country": "Internationell",
+          "kickoff": "2026-09-27T20:45:00+02:00",
+          "odds": [
+            1.4,
+            5.5,
+            7
+          ],
+          "marketSource": "Svenska Spel",
+          "market": [
+            0.688,
+            0.175,
+            0.138
+          ],
+          "folk": [
+            0.81,
+            0.13,
+            0.06
+          ],
+          "model": [
+            0.7,
+            0.211,
+            0.089
+          ],
+          "basis": "elo",
+          "lambdas": {
+            "home": 1.95,
+            "away": 0.55
+          },
+          "topScores": [
+            {
+              "score": "2-0",
+              "p": 0.156
+            },
+            {
+              "score": "1-0",
+              "p": 0.153
+            },
+            {
+              "score": "3-0",
+              "p": 0.101
+            },
+            {
+              "score": "1-1",
+              "p": 0.095
+            },
+            {
+              "score": "0-0",
+              "p": 0.089
+            }
+          ],
+          "over25": 0.456,
+          "btts": 0.371,
+          "homeProfile": null,
+          "awayProfile": null,
+          "h2h": [],
+          "elo": {
+            "home": 1916,
+            "away": 1769,
+            "homeRank": 12,
+            "awayRank": 28
+          },
+          "matched": null,
+          "thin": true,
+          "final": [
+            0.69,
+            0.182,
+            0.128
+          ],
+          "modelWeight": 0.2,
+          "tip": "1",
+          "tipP": 0.689984698495088,
+          "verdict": {
+            "sign": "1",
+            "minOdds": 1.49,
+            "odds": 1.4,
+            "value": false
+          },
+          "streckvarde": [
+            0.85,
+            1.4,
+            2.13
+          ],
+          "analysis": [
+            "Tyskland är klar favorit (69 %).",
+            "Landslags-Elo: Tyskland 1916 (#12) mot Grekland 1769 (#28).",
+            "Förväntade mål 1,95 – 0,55; troligast 2-0, 1-0, 3-0.",
+            "Svenska folket överstreckar 1 (81 % mot vår 69 %)."
+          ],
+          "systemPick": {
+            "signs": "1",
+            "type": "Spik"
+          }
+        },
+        {
+          "eventNumber": 4,
+          "home": "Serbien",
+          "away": "Nederländerna",
+          "league": "UEFA Nations League",
+          "country": "Internationell",
+          "kickoff": "2026-09-27T18:00:00+02:00",
+          "odds": [
+            7.5,
+            5.2,
+            1.43
+          ],
+          "marketSource": "Svenska Spel",
+          "market": [
+            0.13,
+            0.188,
+            0.682
+          ],
+          "folk": [
+            0.05,
+            0.12,
+            0.83
+          ],
+          "model": [
+            0.165,
+            0.256,
+            0.579
+          ],
+          "basis": "elo",
+          "lambdas": {
+            "home": 0.8,
+            "away": 1.7
+          },
+          "topScores": [
+            {
+              "score": "0-1",
+              "p": 0.131
+            },
+            {
+              "score": "1-1",
+              "p": 0.121
+            },
+            {
+              "score": "0-2",
+              "p": 0.119
+            },
+            {
+              "score": "1-2",
+              "p": 0.095
+            },
+            {
+              "score": "0-0",
+              "p": 0.091
+            }
+          ],
+          "over25": 0.456,
+          "btts": 0.459,
+          "homeProfile": null,
+          "awayProfile": null,
+          "h2h": [],
+          "elo": {
+            "home": 1709,
+            "away": 1962,
+            "homeRank": 42,
+            "awayRank": 9
+          },
+          "matched": null,
+          "thin": true,
+          "final": [
+            0.137,
+            0.201,
+            0.662
+          ],
+          "modelWeight": 0.2,
+          "tip": "2",
+          "tipP": 0.6616388467612837,
+          "verdict": {
+            "sign": "2",
+            "minOdds": 1.56,
+            "odds": 1.43,
+            "value": false
+          },
+          "streckvarde": [
+            2.74,
+            1.68,
+            0.8
+          ],
+          "analysis": [
+            "Nederländerna är klar favorit (66 %).",
+            "Landslags-Elo: Serbien 1709 (#42) mot Nederländerna 1962 (#9).",
+            "Förväntade mål 0,80 – 1,70; troligast 0-1, 1-1, 0-2.",
+            "Modellen tror mindre på 2 än oddsen (58 % mot 68 %).",
+            "Svenska folket överstreckar 2 (83 % mot vår 66 %)."
+          ],
+          "systemPick": {
+            "signs": "2",
+            "type": "Spik"
+          }
+        },
+        {
+          "eventNumber": 5,
+          "home": "Österrike",
+          "away": "Kosovo",
+          "league": "UEFA Nations League",
+          "country": "Internationell",
+          "kickoff": "2026-09-27T18:00:00+02:00",
+          "odds": [
+            1.58,
+            4.2,
+            6
+          ],
+          "marketSource": "Svenska Spel",
+          "market": [
+            0.61,
+            0.229,
+            0.161
+          ],
+          "folk": [
+            0.78,
+            0.15,
+            0.07
+          ],
+          "model": [
+            0.646,
+            0.233,
+            0.12
+          ],
+          "basis": "elo",
+          "lambdas": {
+            "home": 1.84,
+            "away": 0.66
+          },
+          "topScores": [
+            {
+              "score": "1-0",
+              "p": 0.143
+            },
+            {
+              "score": "2-0",
+              "p": 0.138
+            },
+            {
+              "score": "1-1",
+              "p": 0.108
+            },
+            {
+              "score": "2-1",
+              "p": 0.092
+            },
+            {
+              "score": "0-0",
+              "p": 0.09
+            }
+          ],
+          "over25": 0.456,
+          "btts": 0.416,
+          "homeProfile": null,
+          "awayProfile": null,
+          "h2h": [],
+          "elo": {
+            "home": 1831,
+            "away": 1728,
+            "homeRank": 22,
+            "awayRank": 39
+          },
+          "matched": null,
+          "thin": true,
+          "final": [
+            0.617,
+            0.23,
+            0.153
+          ],
+          "modelWeight": 0.2,
+          "tip": "1",
+          "tipP": 0.6171951011668056,
+          "verdict": {
+            "sign": "1",
+            "minOdds": 1.67,
+            "odds": 1.58,
+            "value": false
+          },
+          "streckvarde": [
+            0.79,
+            1.53,
+            2.18
+          ],
+          "analysis": [
+            "Österrike är klar favorit (62 %).",
+            "Landslags-Elo: Österrike 1831 (#22) mot Kosovo 1728 (#39).",
+            "Förväntade mål 1,84 – 0,66; troligast 1-0, 2-0, 1-1.",
+            "Svenska folket överstreckar 1 (78 % mot vår 62 %).",
+            "Streckvärde på 2: vi 15 %, folket bara 7 %."
+          ],
+          "systemPick": {
+            "signs": "1",
+            "type": "Spik"
+          }
+        },
+        {
+          "eventNumber": 6,
+          "home": "Israel",
+          "away": "Irland",
+          "league": "UEFA Nations League",
+          "country": "Internationell",
+          "kickoff": "2026-09-27T20:45:00+02:00",
+          "odds": [
+            2.7,
+            3.4,
+            2.7
+          ],
+          "marketSource": "Svenska Spel",
+          "market": [
+            0.358,
+            0.284,
+            0.358
+          ],
+          "folk": [
+            0.26,
+            0.33,
+            0.41
+          ],
+          "model": [
+            0.431,
+            0.286,
+            0.283
+          ],
+          "basis": "elo",
+          "lambdas": {
+            "home": 1.41,
+            "away": 1.09
+          },
+          "topScores": [
+            {
+              "score": "1-1",
+              "p": 0.136
+            },
+            {
+              "score": "1-0",
+              "p": 0.105
+            },
+            {
+              "score": "0-0",
+              "p": 0.092
+            },
+            {
+              "score": "2-1",
+              "p": 0.089
+            },
+            {
+              "score": "2-0",
+              "p": 0.081
+            }
+          ],
+          "over25": 0.456,
+          "btts": 0.512,
+          "homeProfile": null,
+          "awayProfile": null,
+          "h2h": [],
+          "elo": {
+            "home": 1637,
+            "away": 1685,
+            "homeRank": 54,
+            "awayRank": 47
+          },
+          "matched": null,
+          "thin": true,
+          "final": [
+            0.373,
+            0.285,
+            0.343
+          ],
+          "modelWeight": 0.2,
+          "tip": "1",
+          "tipP": 0.3725499922904269,
+          "verdict": {
+            "sign": "1",
+            "minOdds": 2.76,
+            "odds": 2.7,
+            "value": false
+          },
+          "streckvarde": [
+            1.43,
+            0.86,
+            0.84
+          ],
+          "analysis": [
+            "Jämnt mellan lagen – Israel 37 % mot Irland 34 %.",
+            "Landslags-Elo: Israel 1637 (#54) mot Irland 1685 (#47).",
+            "Förväntade mål 1,41 – 1,09; troligast 1-1, 1-0, 0-0.",
+            "Modellen tror mindre på 2 än oddsen (28 % mot 36 %).",
+            "Streckvärde på 1: vi 37 %, folket bara 26 %."
+          ],
+          "systemPick": {
+            "signs": "1X2",
+            "type": "Helgardering"
+          }
+        },
+        {
+          "eventNumber": 7,
+          "home": "Gibraltar",
+          "away": "Andorra",
+          "league": "UEFA Nations League",
+          "country": "Internationell",
+          "kickoff": "2026-09-27T18:00:00+02:00",
+          "odds": [
+            3.7,
+            2.6,
+            2.38
+          ],
+          "marketSource": "Svenska Spel",
+          "market": [
+            0.251,
+            0.358,
+            0.391
+          ],
+          "folk": [
+            0.25,
+            0.37,
+            0.38
+          ],
+          "model": [
+            0.421,
+            0.287,
+            0.292
+          ],
+          "basis": "elo",
+          "lambdas": {
+            "home": 1.39,
+            "away": 1.11
+          },
+          "topScores": [
+            {
+              "score": "1-1",
+              "p": 0.137
+            },
+            {
+              "score": "1-0",
+              "p": 0.104
+            },
+            {
+              "score": "0-0",
+              "p": 0.092
+            },
+            {
+              "score": "2-1",
+              "p": 0.088
+            },
+            {
+              "score": "0-1",
+              "p": 0.081
+            }
+          ],
+          "over25": 0.456,
+          "btts": 0.514,
+          "homeProfile": null,
+          "awayProfile": null,
+          "h2h": [],
+          "elo": {
+            "home": 1009,
+            "away": 1064,
+            "homeRank": 183,
+            "awayRank": 179
+          },
+          "matched": null,
+          "thin": true,
+          "final": [
+            0.285,
+            0.344,
+            0.371
+          ],
+          "modelWeight": 0.2,
+          "tip": "2",
+          "tipP": 0.37105731652493085,
+          "verdict": {
+            "sign": "2",
+            "minOdds": 2.78,
+            "odds": 2.38,
+            "value": false
+          },
+          "streckvarde": [
+            1.14,
+            0.93,
+            0.98
+          ],
+          "analysis": [
+            "Andorra har ett övertag (37 %), men det är långt ifrån säkert.",
+            "Krysset ligger högt (34 %) – oavgjort är ett rimligt utfall.",
+            "Landslags-Elo: Gibraltar 1009 (#183) mot Andorra 1064 (#179).",
+            "Förväntade mål 1,39 – 1,11; troligast 1-1, 1-0, 0-0.",
+            "Modellen tror mer på 1 än oddsen (42 % mot 25 %)."
+          ],
+          "systemPick": {
+            "signs": "1X2",
+            "type": "Helgardering"
+          }
+        },
+        {
+          "eventNumber": 8,
+          "home": "Sverige",
+          "away": "Polen",
+          "league": "UEFA Nations League",
+          "country": "Internationell",
+          "kickoff": "2026-09-28T20:45:00+02:00",
+          "odds": [
+            1.93,
+            3.75,
+            4.1
+          ],
+          "marketSource": "Svenska Spel",
+          "market": [
+            0.504,
+            0.259,
+            0.237
+          ],
+          "folk": [
+            0.55,
+            0.26,
+            0.19
+          ],
+          "model": [
+            0.564,
+            0.26,
+            0.176
+          ],
+          "basis": "elo",
+          "lambdas": {
+            "home": 1.67,
+            "away": 0.83
+          },
+          "topScores": [
+            {
+              "score": "1-0",
+              "p": 0.128
+            },
+            {
+              "score": "1-1",
+              "p": 0.123
+            },
+            {
+              "score": "2-0",
+              "p": 0.114
+            },
+            {
+              "score": "2-1",
+              "p": 0.095
+            },
+            {
+              "score": "0-0",
+              "p": 0.091
+            }
+          ],
+          "over25": 0.456,
+          "btts": 0.467,
+          "homeProfile": null,
+          "awayProfile": null,
+          "h2h": [],
+          "elo": {
+            "home": 1741,
+            "away": 1699,
+            "homeRank": 35,
+            "awayRank": 44
+          },
+          "matched": null,
+          "thin": true,
+          "final": [
+            0.516,
+            0.259,
+            0.225
+          ],
+          "modelWeight": 0.2,
+          "tip": "1",
+          "tipP": 0.5156519461332844,
+          "verdict": {
+            "sign": "1",
+            "minOdds": 2,
+            "odds": 1.93,
+            "value": false
+          },
+          "streckvarde": [
+            0.94,
+            1,
+            1.18
+          ],
+          "analysis": [
+            "Sverige har ett övertag (52 %), men det är långt ifrån säkert.",
+            "Landslags-Elo: Sverige 1741 (#35) mot Polen 1699 (#44).",
+            "Förväntade mål 1,67 – 0,83; troligast 1-0, 1-1, 2-0."
+          ],
+          "systemPick": {
+            "signs": "1",
+            "type": "Spik"
+          }
+        },
+        {
+          "eventNumber": 9,
+          "home": "Rumänien",
+          "away": "Bosnien & Hercegovina",
+          "league": "UEFA Nations League",
+          "country": "Internationell",
+          "kickoff": "2026-09-28T20:45:00+02:00",
+          "odds": [
+            2.08,
+            3.55,
+            3.55
+          ],
+          "marketSource": "Svenska Spel",
+          "market": [
+            0.46,
+            0.27,
+            0.27
+          ],
+          "folk": [
+            0.46,
+            0.31,
+            0.23
+          ],
+          "model": [
+            0.522,
+            0.271,
+            0.207
+          ],
+          "basis": "elo",
+          "lambdas": {
+            "home": 1.59,
+            "away": 0.91
+          },
+          "topScores": [
+            {
+              "score": "1-1",
+              "p": 0.128
+            },
+            {
+              "score": "1-0",
+              "p": 0.121
+            },
+            {
+              "score": "2-0",
+              "p": 0.103
+            },
+            {
+              "score": "2-1",
+              "p": 0.094
+            },
+            {
+              "score": "0-0",
+              "p": 0.092
+            }
+          ],
+          "over25": 0.456,
+          "btts": 0.486,
+          "homeProfile": null,
+          "awayProfile": null,
+          "h2h": [],
+          "elo": {
+            "home": 1629,
+            "away": 1616,
+            "homeRank": 57,
+            "awayRank": 62
+          },
+          "matched": null,
+          "thin": true,
+          "final": [
+            0.473,
+            0.27,
+            0.257
+          ],
+          "modelWeight": 0.2,
+          "tip": "1",
+          "tipP": 0.4726935292152805,
+          "verdict": {
+            "sign": "1",
+            "minOdds": 2.18,
+            "odds": 2.08,
+            "value": false
+          },
+          "streckvarde": [
+            1.03,
+            0.87,
+            1.12
+          ],
+          "analysis": [
+            "Rumänien har ett övertag (47 %), men det är långt ifrån säkert.",
+            "Landslags-Elo: Rumänien 1629 (#57) mot Bosnien & Hercegovina 1616 (#62).",
+            "Förväntade mål 1,59 – 0,91; troligast 1-1, 1-0, 2-0."
+          ],
+          "systemPick": {
+            "signs": "1",
+            "type": "Spik"
+          }
+        },
+        {
+          "eventNumber": 10,
+          "home": "Belgien",
+          "away": "Frankrike",
+          "league": "UEFA Nations League",
+          "country": "Internationell",
+          "kickoff": "2026-09-28T20:45:00+02:00",
+          "odds": [
+            3.9,
+            4.1,
+            1.91
+          ],
+          "marketSource": "Svenska Spel",
+          "market": [
+            0.25,
+            0.238,
+            0.511
+          ],
+          "folk": [
+            0.14,
+            0.22,
+            0.64
+          ],
+          "model": [
+            0.349,
+            0.291,
+            0.36
+          ],
+          "basis": "elo",
+          "lambdas": {
+            "home": 1.24,
+            "away": 1.26
+          },
+          "topScores": [
+            {
+              "score": "1-1",
+              "p": 0.139
+            },
+            {
+              "score": "0-1",
+              "p": 0.093
+            },
+            {
+              "score": "0-0",
+              "p": 0.092
+            },
+            {
+              "score": "1-0",
+              "p": 0.091
+            },
+            {
+              "score": "1-2",
+              "p": 0.081
+            }
+          ],
+          "over25": 0.456,
+          "btts": 0.519,
+          "homeProfile": null,
+          "awayProfile": null,
+          "h2h": [],
+          "elo": {
+            "home": 1979,
+            "away": 2083,
+            "homeRank": 8,
+            "awayRank": 4
+          },
+          "matched": null,
+          "thin": true,
+          "final": [
+            0.27,
+            0.249,
+            0.481
+          ],
+          "modelWeight": 0.2,
+          "tip": "2",
+          "tipP": 0.4811792137696375,
+          "verdict": {
+            "sign": "2",
+            "minOdds": 2.14,
+            "odds": 1.91,
+            "value": false
+          },
+          "streckvarde": [
+            1.93,
+            1.13,
+            0.75
+          ],
+          "analysis": [
+            "Frankrike har ett övertag (48 %), men det är långt ifrån säkert.",
+            "Landslags-Elo: Belgien 1979 (#8) mot Frankrike 2083 (#4).",
+            "Förväntade mål 1,24 – 1,26; troligast 1-1, 0-1, 0-0.",
+            "Modellen tror mindre på 2 än oddsen (36 % mot 51 %).",
+            "Svenska folket överstreckar 2 (64 % mot vår 48 %).",
+            "Streckvärde på 1: vi 27 %, folket bara 14 %."
+          ],
+          "systemPick": {
+            "signs": "2",
+            "type": "Spik"
+          }
+        },
+        {
+          "eventNumber": 11,
+          "home": "Turkiet",
+          "away": "Italien",
+          "league": "UEFA Nations League",
+          "country": "Internationell",
+          "kickoff": "2026-09-28T20:45:00+02:00",
+          "odds": [
+            2.75,
+            3.6,
+            2.6
+          ],
+          "marketSource": "Svenska Spel",
+          "market": [
+            0.354,
+            0.271,
+            0.375
+          ],
+          "folk": [
+            0.36,
+            0.27,
+            0.37
+          ],
+          "model": [
+            0.506,
+            0.274,
+            0.22
+          ],
+          "basis": "elo",
+          "lambdas": {
+            "home": 1.55,
+            "away": 0.95
+          },
+          "topScores": [
+            {
+              "score": "1-1",
+              "p": 0.13
+            },
+            {
+              "score": "1-0",
+              "p": 0.118
+            },
+            {
+              "score": "2-0",
+              "p": 0.099
+            },
+            {
+              "score": "2-1",
+              "p": 0.094
+            },
+            {
+              "score": "0-0",
+              "p": 0.092
+            }
+          ],
+          "over25": 0.456,
+          "btts": 0.492,
+          "homeProfile": null,
+          "awayProfile": null,
+          "h2h": [],
+          "elo": {
+            "home": 1839,
+            "away": 1837,
+            "homeRank": 19,
+            "awayRank": 20
+          },
+          "matched": null,
+          "thin": true,
+          "final": [
+            0.385,
+            0.271,
+            0.344
+          ],
+          "modelWeight": 0.2,
+          "tip": "1",
+          "tipP": 0.38463795198809614,
+          "verdict": {
+            "sign": "1",
+            "minOdds": 2.68,
+            "odds": 2.75,
+            "value": true
+          },
+          "streckvarde": [
+            1.07,
+            1.01,
+            0.93
+          ],
+          "analysis": [
+            "Jämnt mellan lagen – Turkiet 39 % mot Italien 34 %.",
+            "Landslags-Elo: Turkiet 1839 (#19) mot Italien 1837 (#20).",
+            "Förväntade mål 1,55 – 0,95; troligast 1-1, 1-0, 2-0.",
+            "Modellen tror mindre på 2 än oddsen (22 % mot 38 %)."
+          ],
+          "systemPick": {
+            "signs": "12",
+            "type": "Halvgardering"
+          }
+        },
+        {
+          "eventNumber": 12,
+          "home": "Nordirland",
+          "away": "Ungern",
+          "league": "UEFA Nations League",
+          "country": "Internationell",
+          "kickoff": "2026-09-28T20:45:00+02:00",
+          "odds": [
+            2.8,
+            3.15,
+            2.75
+          ],
+          "marketSource": "Svenska Spel",
+          "market": [
+            0.344,
+            0.306,
+            0.35
+          ],
+          "folk": [
+            0.33,
+            0.32,
+            0.35
+          ],
+          "model": [
+            0.421,
+            0.287,
+            0.292
+          ],
+          "basis": "elo",
+          "lambdas": {
+            "home": 1.39,
+            "away": 1.11
+          },
+          "topScores": [
+            {
+              "score": "1-1",
+              "p": 0.137
+            },
+            {
+              "score": "1-0",
+              "p": 0.104
+            },
+            {
+              "score": "0-0",
+              "p": 0.092
+            },
+            {
+              "score": "2-1",
+              "p": 0.088
+            },
+            {
+              "score": "0-1",
+              "p": 0.081
+            }
+          ],
+          "over25": 0.456,
+          "btts": 0.514,
+          "homeProfile": null,
+          "awayProfile": null,
+          "h2h": [],
+          "elo": {
+            "home": 1633,
+            "away": 1688,
+            "homeRank": 55,
+            "awayRank": 46
+          },
+          "matched": null,
+          "thin": true,
+          "final": [
+            0.359,
+            0.302,
+            0.339
+          ],
+          "modelWeight": 0.2,
+          "tip": "1",
+          "tipP": 0.3593410300034323,
+          "verdict": {
+            "sign": "1",
+            "minOdds": 2.87,
+            "odds": 2.8,
+            "value": false
+          },
+          "streckvarde": [
+            1.09,
+            0.94,
+            0.97
+          ],
+          "analysis": [
+            "Jämnt mellan lagen – Nordirland 36 % mot Ungern 34 %.",
+            "Krysset ligger högt (30 %) – oavgjort är ett rimligt utfall.",
+            "Landslags-Elo: Nordirland 1633 (#55) mot Ungern 1688 (#46).",
+            "Förväntade mål 1,39 – 1,11; troligast 1-1, 1-0, 0-0.",
+            "Modellen tror mer på 1 än oddsen (42 % mot 34 %)."
+          ],
+          "systemPick": {
+            "signs": "1X2",
+            "type": "Helgardering"
+          }
+        },
+        {
+          "eventNumber": 13,
+          "home": "Georgien",
+          "away": "Ukraina",
+          "league": "UEFA Nations League",
+          "country": "Internationell",
+          "kickoff": "2026-09-28T18:00:00+02:00",
+          "odds": [
+            2.75,
+            3.4,
+            2.65
+          ],
+          "marketSource": "Svenska Spel",
+          "market": [
+            0.351,
+            0.284,
+            0.365
+          ],
+          "folk": [
+            0.25,
+            0.26,
+            0.49
+          ],
+          "model": [
+            0.252,
+            0.281,
+            0.467
+          ],
+          "basis": "elo",
+          "lambdas": {
+            "home": 1.02,
+            "away": 1.48
+          },
+          "topScores": [
+            {
+              "score": "1-1",
+              "p": 0.134
+            },
+            {
+              "score": "0-1",
+              "p": 0.111
+            },
+            {
+              "score": "0-0",
+              "p": 0.092
+            },
+            {
+              "score": "1-2",
+              "p": 0.092
+            },
+            {
+              "score": "0-2",
+              "p": 0.09
+            }
+          ],
+          "over25": 0.456,
+          "btts": 0.504,
+          "homeProfile": null,
+          "awayProfile": null,
+          "h2h": [],
+          "elo": {
+            "home": 1626,
+            "away": 1802,
+            "homeRank": 59,
+            "awayRank": 24
+          },
+          "matched": null,
+          "thin": true,
+          "final": [
+            0.331,
+            0.284,
+            0.385
+          ],
+          "modelWeight": 0.2,
+          "tip": "2",
+          "tipP": 0.38503955124749867,
+          "verdict": {
+            "sign": "2",
+            "minOdds": 2.68,
+            "odds": 2.65,
+            "value": false
+          },
+          "streckvarde": [
+            1.33,
+            1.09,
+            0.79
+          ],
+          "analysis": [
+            "Jämnt mellan lagen – Georgien 33 % mot Ukraina 39 %.",
+            "Landslags-Elo: Georgien 1626 (#59) mot Ukraina 1802 (#24).",
+            "Förväntade mål 1,02 – 1,48; troligast 1-1, 0-1, 0-0.",
+            "Modellen tror mer på 2 än oddsen (47 % mot 37 %).",
+            "Svenska folket överstreckar 2 (49 % mot vår 39 %).",
+            "Streckvärde på 1: vi 33 %, folket bara 25 %."
+          ],
+          "systemPick": {
+            "signs": "12",
+            "type": "Halvgardering"
+          }
+        }
+      ],
+      "system": {
+        "maxRows": 144,
+        "rows": 108,
+        "hitAll": 0.005043570797799221,
+        "hitSingle": 0.00007108240976731323
+      },
+      "result": null
+    }
+  ]
+}

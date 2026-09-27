@@ -1,0 +1,898 @@
+// Pro-lager ovanpa betting-store: Dixon-Coles, devig, varde vid dagens odds, vilodagar,
+// domarstatistik och utvardering (RPS/Brier/CLV mot Pinnacle closing).
+// Kors efter Update-BettingStore.ps1 (som anropar detta) eller: npm run pro
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import {
+  brier, clv, daysBetween, devigMultiplicative, findSharpBook, fitDixonColes,
+  overround, predictDixonColes, round, rps1x2, toDate,
+} from './pro/lib.mjs';
+import { historicalMissing, findUsMatch, loadPlayerModel, summarise as summariseMissing, teamShares } from './pro/players.mjs';
+
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const P = {
+  store: path.join(root, 'data', 'betting-store.json'),
+  tips: path.join(root, 'data', 'tips-latest.json'),
+  tipsMd: path.join(root, 'data', 'tips-latest.md'),
+  fixtures: path.join(root, 'data', 'upcoming-fixtures.json'),
+  odds: path.join(root, 'data', 'open', 'upcoming_odds.json'),
+  oddsportal: path.join(root, 'data', 'open', 'oddsportal_odds.json'),
+  weatherForecast: path.join(root, 'data', 'open', 'weather_forecast.json'),
+  weatherHistory: path.join(root, 'data', 'open', 'weather_history.json'),
+  referees: path.join(root, 'data', 'open', 'referees.json'),
+  usLeague: path.join(root, 'data', 'open', 'understat_league_matches.json'),
+  usPlayers: path.join(root, 'data', 'open', 'understat_player_matches.json'),
+  playerStats: path.join(root, 'data', 'open', 'player_stats.json'),
+  fpl: path.join(root, 'data', 'open', 'fpl_availability.json'),
+  lineups: path.join(root, 'data', 'open', 'espn_lineups.json'),
+  evaluation: path.join(root, 'data', 'reports', 'pro-evaluation.json'),
+};
+
+export const CONFIG = {
+  dcWeight: 0.5,        // andel Dixon-Coles i blandad sannolikhet (resten = befintlig modell)
+  minEv: 0.03,          // minsta forvantade avkastning for value-bet (skarpt facit: Pinnacle/Betfair)
+  minEvConsensus: 0.05, // hogre troskel nar facit ar snittet av bolagen (svagare facit, backtest)
+  minEvThin: 0.08,      // facit fran bara 1-3 bolag: svagast, hogst troskel (ger anda alltid ett omdome)
+  consensusMinBooks: 4, // minst sa manga bolag for att snittet ska raknas som facit
+  // Tak for odds: utan tak -19 % ROI (skrallar overskattas), med tak 5: +13 % ROI, 83 % slog closing (backtest 95 spel)
+  maxOdds: 5,
+  // EV over 25 % mot ett skarpt facit ar i praktiken alltid datafel (fel match, illikvid bors) - aldrig varde
+  maxEv: 0.25,
+  stakeSek: 500,        // fast insats per spel (valt av anvandaren i st f Kelly)
+  evalThresholds: [0.02, 0.03, 0.05, 0.1],
+  weather: { windStrongKmh: 30, rainHeavyMm: 2, coldC: 3 }, // flaggor i tips (2 h runt avspark)
+  marketAnchor: 0.7,    // bara for utvardering (marketAnchoredAtBestPrice); live anvands inte
+  // Bolag med svensk licens i The Odds API (region eu). Basta pris tas bara har.
+  userBooks: ['unibet_se', 'leovegas_se', 'betsson', 'nordicbet', 'coolbet'],
+  liveStrategy: 'consensusAtBestPrice',
+  // Franvaro: lagets forvantade mal x (1 - alpha * saknad andel av xG+xA). alpha valjs i backtest.
+  playerAlphaGrid: [0, 0.25, 0.5, 0.75, 1],
+  playerAlpha: 0,
+};
+
+// Strategier: sannolikhet [H,D,A,Over] + vilken bok vi "tar" priset hos (oppningsodds).
+// consensus = Kaunitz m.fl.: skarp marknad (Pinnacle devig) som sannolikhet, basta pris (Max) som odds.
+export const STRATEGIES = {
+  dcAtPinnacle: { book: 'pinnacle_', probs: (r) => dcProbs(r.dc) },
+  dcAtBestPrice: { book: 'max_', probs: (r) => dcProbs(r.dc) },
+  consensusAtBestPrice: { book: 'max_', probs: (r) => pinOpen(r.m) },
+  marketAnchoredAtBestPrice: {
+    book: 'max_',
+    probs: (r) => {
+      const mk = pinOpen(r.m);
+      if (!mk) return null;
+      const dc = dcProbs(r.dc);
+      return mk.map((x, i) => CONFIG.marketAnchor * x + (1 - CONFIG.marketAnchor) * dc[i]);
+    },
+  },
+};
+
+const readJson = (p) => JSON.parse(fs.readFileSync(p, 'utf8').replace(/^﻿/, ''));
+const writeJson = (p, obj) => {
+  fs.mkdirSync(path.dirname(p), { recursive: true });
+  fs.writeFileSync(p, JSON.stringify(obj, null, 2), 'utf8');
+};
+
+const store = readJson(P.store);
+const matches = store.matches
+  .filter((m) => Number.isFinite(m.hg) && Number.isFinite(m.ag))
+  .sort((a, b) => a.date.localeCompare(b.date));
+const byLeague = groupBy(matches, (m) => m.league);
+
+// ---------- Dixon-Coles per liga (full data -> kommande matcher) ----------
+const today = new Date().toISOString().slice(0, 10);
+const models = {};
+for (const [league, list] of Object.entries(byLeague)) {
+  const model = fitDixonColes(list, today);
+  if (model) models[league] = model;
+}
+
+// ---------- Spelarmodell (Understat) ----------
+const playerModel = loadPlayerModel(P.usLeague, P.usPlayers, matches);
+
+// ---------- Utvardering: veckovis refit, point-in-time ----------
+const weatherHistory = fs.existsSync(P.weatherHistory) ? readJson(P.weatherHistory).matches : {};
+const evaluation = evaluate();
+evaluation.weatherEffect = weatherEffect();
+evaluation.playerEffect = playerEffect(evaluation.rowsByLeague);
+delete evaluation.rowsByLeague;
+if (evaluation.playerEffect?.chosenAlpha != null) CONFIG.playerAlpha = evaluation.playerEffect.chosenAlpha;
+writeJson(P.evaluation, evaluation);
+
+// ---------- Domare ----------
+const referees = buildReferees();
+writeJson(P.referees, referees);
+
+// ---------- Berika tips ----------
+const tips = readJson(P.tips);
+const fixtures = fs.existsSync(P.fixtures) ? readJson(P.fixtures) : [];
+const forecastByMatch = new Map(
+  (fs.existsSync(P.weatherForecast) ? readJson(P.weatherForecast).matches : [])
+    .map((w) => [`${w.date}|${w.league}|${w.home}|${w.away}`, w]),
+);
+const apiOddsList = fs.existsSync(P.odds) ? readJson(P.odds).events ?? [] : [];
+// Reserv: OddsPortal (1X2-snitt) for matcher som The Odds API saknar - se scripts/fetch-oddsportal.mjs
+const apiHasOdds = (e) => apiOddsList.some((x) => x.league === e.league && x.commence
+  && Math.abs(daysBetween(x.commence.slice(0, 10), e.commence.slice(0, 10))) <= 1
+  && nameSimilarity(x.homeRaw ?? x.home, e.home) + nameSimilarity(x.awayRaw ?? x.away, e.away) >= 1
+  && (x.books ?? []).some((b) => b.home > 1));
+const oddsportalList = (fs.existsSync(P.oddsportal) ? readJson(P.oddsportal).events ?? [] : [])
+  .filter((e) => e.commence > new Date().toISOString() && !apiHasOdds(e));
+const liveOddsList = [...apiOddsList, ...oddsportalList];
+const liveOdds = new Map(liveOddsList.map((e) => [`${e.league}|${e.home}|${e.away}`, e]));
+// Idempotent: ta bort marknadstips fran en tidigare korning (npm run pro kan koras flera ganger)
+tips.allCandidates = (tips.allCandidates ?? []).filter((t) => !t.marketOnly);
+tips.bestUpcoming = (tips.bestUpcoming ?? []).filter((t) => !t.marketOnly);
+const usedEvents = new Set();
+const enriched = new Map();
+// Avsparkstid: spelschemat (ESPN/TheSportsDB) eller oddsens commence - GUI ska alltid kunna visa klockslag
+const fixtureKick = new Map(fixtures.filter((f) => f.kickoffUtc).map((f) => [`${f.date}|${f.league}|${f.home}|${f.away}`, f.kickoffUtc]));
+for (const t of [...(tips.bestUpcoming ?? []), ...(tips.allCandidates ?? [])]) {
+  const key = `${t.date}|${t.league}|${t.home}|${t.away}`;
+  if (!enriched.has(key)) enriched.set(key, buildPro(t));
+  t.pro = enriched.get(key);
+  t.kickoffUtc ??= fixtureKick.get(key) ?? t.pro.kickoffUtc ?? null;
+}
+// Matcher med skarpa odds men utan modelltips (cuper, Superettan, lag utan historik) -> marknadstips
+const marketOnly = marketOnlyCandidates();
+for (const t of marketOnly) {
+  const key = `${t.date}|${t.league}|${t.home}|${t.away}`;
+  enriched.set(key, (t.pro = buildPro(t)));
+  tips.allCandidates.push(t);
+  if (Object.values(t.pro.verdicts).some((v) => v.value)) tips.bestUpcoming.push(t);
+}
+tips.proMeta = {
+  updatedAt: new Date().toISOString(),
+  config: CONFIG,
+  models: Object.fromEntries(Object.entries(models).map(([lg, m]) => [lg, {
+    trainMatches: m.trainCount, homeAdvantage: round(m.gamma, 3), rho: m.rho,
+  }])),
+  evaluationSummary: evaluation.summary,
+  note: 'pro = Dixon-Coles + devig (multiplicative) + spelarviktad franvaro + vilodagar + vader. Fast insats stakeSek per spel. Se docs/krav/01-proffs-research.md',
+};
+tips.valueBets = [...enriched.values()]
+  .flatMap((p) => p.valueBets.map((v) => ({ match: p.match, date: p.date, league: p.league, ...v })))
+  .sort((a, b) => b.ev - a.ev);
+writeJson(P.tips, tips);
+appendMarkdown(tips, evaluation);
+
+console.log(`Pro-lager: models=${Object.keys(models).join(',')} tips=${enriched.size} valueBets=${tips.valueBets.length}`);
+for (const [lg, s] of Object.entries(evaluation.summary)) {
+  const dc = s.strategies.dcAtPinnacle;
+  const cons = s.strategies.consensusAtBestPrice;
+  console.log(`  ${lg}: n=${s.n} RPS dc=${s.rpsDc} pinClose=${s.rpsPinnacleClose} | CLV dc=${dc.meanClv} (n=${dc.n}) konsensus=${cons.meanClv} (n=${cons.n})`);
+}
+
+// ======================================================================
+
+function buildPro(t) {
+  const model = models[t.league];
+  const availability = availabilityInfo(t);
+  const dc = model ? predictDixonColes(model, t.home, t.away, 10, {
+    home: availability?.home.attackFactor ?? 1, away: availability?.away.attackFactor ?? 1,
+  }) : null;
+  // Grundmodellen FORE dess platta franvaroavdrag - franvaro hanteras spelarviktat i DC ovan
+  const pre = t.probsBeforeAvailability;
+  const base = {
+    home: pre?.home ?? t.tips?.['1X2']?.probs?.home,
+    draw: pre?.draw ?? t.tips?.['1X2']?.probs?.draw,
+    away: pre?.away ?? t.tips?.['1X2']?.probs?.away,
+    over25: pre?.over25 ?? t.tips?.OU25?.pOver,
+    btts: pre?.btts ?? t.tips?.BTTS?.pYes,
+  };
+  const w = dc ? CONFIG.dcWeight : 0;
+  const blend = (k) => (dc && base[k] != null ? w * dc[k] + (1 - w) * base[k] : dc ? dc[k] : base[k]);
+  const blended = { home: blend('home'), draw: blend('draw'), away: blend('away'), over25: blend('over25'), btts: blend('btts') };
+  const s = blended.home + blended.draw + blended.away;
+  blended.home /= s; blended.draw /= s; blended.away /= s;
+
+  const ev = findLiveOdds(t);
+  if (ev) usedEvents.add(ev);
+  const books = ev?.books ?? [];
+  // Facit: Pinnacle, annars Betfair Exchange (borsodds - reservkallan har inte Pinnacle)
+  const sharp = findSharpBook(books);
+  const pinnacle = sharp;
+  // Pris: dina bolag. Reservkallan saknar dem -> marknadens basta pris (kontrollera hos ditt bolag).
+  let myBooks = books.filter((b) => CONFIG.userBooks.includes(b.key));
+  if (!myBooks.length) myBooks = books.filter((b) => b.key === 'market_max' || b.key === 'oddsportal');
+  let market = null;
+  const valueBets = [];
+  const verdicts = {};
+  // Basta pris hos bolag anvandaren kan spela hos (line shopping). Utan bolagslista: det enda odds vi har.
+  const best = (k) => {
+    let top = { price: null, bookmaker: null };
+    for (const b of myBooks) if (b[k] > (top.price ?? 0)) top = { price: b[k], bookmaker: b.bookmaker };
+    if (top.price == null && !books.length) {
+      const single = t.value?.odds ?? ev?.odds;
+      if (single?.[k] > 1) top = { price: single[k], bookmaker: t.value?.bookmaker ?? ev?.bookmaker ?? null };
+    }
+    return top;
+  };
+  const outcomes = [
+    ['1X2', '1', 'home', blended.home],
+    ['1X2', 'X', 'draw', blended.draw],
+    ['1X2', '2', 'away', blended.away],
+    ['OU25', 'OVER 2.5', 'over25', blended.over25],
+    ['OU25', 'UNDER 2.5', 'under25', 1 - blended.over25],
+  ];
+  const prices = Object.fromEntries(outcomes.map(([, , k]) => [k, best(k)]));
+
+  // Facit (marginalfri sannolikhet), i prioritetsordning:
+  //  1. Pinnacle / Betfair Exchange: skarpt, EV-troskel minEv (backtest +6.5 %, 76 % slog closing)
+  //  2. Snitt av minst consensusMinBooks bolag: svagare, hogre troskel minEvConsensus (backtest EV>=5 %: +1.8 %, 67 % slog closing)
+  //  3. Annars inget omdome. Modellen paverkar INTE vardet - ett bolags odds + modell gav -20 % i backtest.
+  // Facit per marknad (1X2 resp. O/U), i prioritetsordning - alltid ett omdome nar odds visas:
+  //  1. Pinnacle / Betfair Exchange (rimlighetskontrollerat): minEv (backtest +6.5 %, 76 % slog closing)
+  //  2. Snitt av minst consensusMinBooks bolag: minEvConsensus (backtest EV>=5 %: +1.8 %, 67 % slog closing)
+  //  3. Snitt av 1-3 bolag: minEvThin - svagt facit, darfor hog troskel
+  //  4. Inget facit (bara ett utfall prissatt): Ej varde - inget belagt varde
+  // Modellen paverkar INTE vardet - ett bolags odds + modell gav -20 % i backtest.
+  const sharpName = sharp ? (/pinnacle/i.test(sharp.key) ? 'pinnacle' : 'betfair-exchange') : null;
+  const fairFrom = (keys) => {
+    if (sharp) {
+      const f = devigMultiplicative(keys.map((k) => sharp[k]));
+      if (f) return { p: f, source: sharpName, minEv: CONFIG.minEv };
+    }
+    let ps = books.map((b) => devigMultiplicative(keys.map((k) => b[k]))).filter(Boolean);
+    if (!ps.length) {
+      const single = t.value?.odds ?? ev?.odds;
+      const f = single ? devigMultiplicative(keys.map((k) => single[k])) : null;
+      ps = f ? [f] : [];
+    }
+    if (!ps.length) return null;
+    const avg = keys.map((_, i) => ps.reduce((sum, x) => sum + x[i], 0) / ps.length);
+    const strong = ps.length >= CONFIG.consensusMinBooks;
+    return {
+      p: avg,
+      source: ps.length === 1 ? (books[0]?.key === 'oddsportal' ? 'OddsPortal-snitt' : 'ett bolag') : `snitt av ${ps.length} bolag`,
+      minEv: strong ? CONFIG.minEvConsensus : CONFIG.minEvThin,
+    };
+  };
+  const useSharp = !!sharp;
+  const f1x2 = fairFrom(['home', 'draw', 'away']);
+  const fOu = fairFrom(['over25', 'under25']);
+  const groupOf = (k) => (['home', 'draw', 'away'].includes(k) ? f1x2 : fOu);
+  const fair = { home: f1x2?.p[0], draw: f1x2?.p[1], away: f1x2?.p[2], over25: fOu?.p[0], under25: fOu?.p[1] };
+  const fairSource = f1x2?.source ?? fOu?.source ?? null;
+  if (f1x2 || fOu) {
+    market = {
+      fairSource,
+      fairSourceOu: fOu?.source ?? null,
+      minEv: f1x2?.minEv ?? fOu?.minEv,
+      booksCount: books.length,
+      myBooks: myBooks.map((b) => b.bookmaker),
+      overround1x2: useSharp && f1x2?.source === sharpName ? round(overround([sharp.home, sharp.draw, sharp.away])) : null,
+      fair: Object.fromEntries(Object.entries(fair).map(([k, v]) => [k, round(v)])),
+    };
+  }
+  for (const [mkt, pick, k, modelP] of outcomes) {
+    const { price, bookmaker } = prices[k];
+    if (!(price > 1)) continue;
+    const g = groupOf(k);
+    const p = fair[k];
+    if (!g || p == null) {
+      verdicts[k] = { market: mkt, pick, odds: price, bookmaker, value: false, reason: 'för lite oddsdata för facit' };
+      continue;
+    }
+    const evVal = p * price - 1;
+    // Skrallar over maxOdds: devig overskattar deras chans (favorit-longshot-bias) -> aldrig varde
+    const tooLong = price > CONFIG.maxOdds;
+    const suspect = evVal > CONFIG.maxEv;
+    // Omdome: vart att spela till dagens basta odds? minOdds = lagsta odds med EV >= troskeln
+    verdicts[k] = {
+      market: mkt, pick, odds: price, bookmaker, p: round(p), ev: round(evVal), fairSource: g.source,
+      minOdds: round((1 + g.minEv) / p, 2), value: !tooLong && !suspect && evVal >= g.minEv,
+      ...(tooLong ? { reason: `odds over ${CONFIG.maxOdds} (skrall)` } : suspect ? { reason: `misstankt EV ${Math.round(evVal * 100)} % - kontrollera oddsen` } : {}),
+    };
+    if (tooLong || suspect || evVal < g.minEv) continue;
+    valueBets.push({
+      market: mkt, pick, odds: price, bookmaker, strategy: g.source === sharpName ? 'consensusAtBestPrice' : 'averageConsensusAtBestPrice',
+      fairSource: g.source, p: round(p), modelP: round(modelP), ev: round(evVal), stakeSek: CONFIG.stakeSek,
+    });
+  }
+  valueBets.sort((a, b) => b.ev - a.ev);
+
+  return {
+    match: t.match, date: t.date, league: t.league, kickoffUtc: ev?.commence ?? null,
+    dc: dc && {
+      home: round(dc.home), draw: round(dc.draw), away: round(dc.away), over25: round(dc.over25),
+      btts: round(dc.btts), lambdaHome: round(dc.lambdaHome, 2), lambdaAway: round(dc.lambdaAway, 2),
+      knownTeams: dc.knownTeams,
+    },
+    blended: Object.fromEntries(Object.entries(blended).map(([k, v]) => [k, round(v)])),
+    market,
+    valueBets,
+    verdicts,
+    odds: Object.fromEntries(Object.entries(prices).map(([k, v]) => [k, v.price])),
+    oddsBooks: Object.fromEntries(Object.entries(prices).map(([k, v]) => [k, v.bookmaker])),
+    rest: { home: restInfo(t.league, t.home, t.date), away: restInfo(t.league, t.away, t.date) },
+    weather: weatherInfo(t),
+    availability,
+  };
+}
+
+// ---------- Franvaro live: FPL (PL) + bekraftade elvor (ESPN) ----------
+// Laddas lat (anropas fran toppnivan innan denna del av filen evaluerats)
+var liveAvailCache; // eslint-disable-line no-var
+function liveAvailData() {
+  if (liveAvailCache) return liveAvailCache;
+  const fplById = new Map();
+  if (fs.existsSync(P.fpl)) {
+    for (const team of readJson(P.fpl).teams ?? []) for (const p of team.players ?? []) fplById.set(p.id, p);
+  }
+  // Understat-id -> FPL-spelare (id-koppling i player_stats.json, inga namn behover matchas)
+  const fplByUnderstat = new Map();
+  if (fs.existsSync(P.playerStats)) {
+    for (const p of readJson(P.playerStats).premierLeague ?? []) {
+      if (p.understatId && p.fpl?.fplId != null && fplById.has(p.fpl.fplId)) fplByUnderstat.set(String(p.understatId), fplById.get(p.fpl.fplId));
+    }
+  }
+  const lineupByMatch = new Map(
+    (fs.existsSync(P.lineups) ? readJson(P.lineups).fixtures ?? [] : []).map((f) => [`${f.league}|${f.home}|${f.away}`, f]),
+  );
+  return (liveAvailCache = { fplByUnderstat, lineupByMatch });
+}
+
+/** Sannolikhet att spelaren saknas: FPL-status + chans att spela nasta omgang. */
+function fplAbsence(p) {
+  if (!p) return 0;
+  if (['i', 's', 'u', 'n'].includes(p.status)) return 1;
+  const c = p.chanceNext;
+  if (c == null) return p.status === 'd' ? 0.5 : 0;
+  return Math.max(0, Math.min(1, 1 - c / 100));
+}
+
+function availabilityInfo(t) {
+  if (!playerModel) return null;
+  const { fplByUnderstat, lineupByMatch } = liveAvailData();
+  const lineup = lineupByMatch.get(`${t.league}|${t.home}|${t.away}`);
+  const confirmed = lineup?.lineupStatus === 'confirmed';
+  const side = (team, starters) => {
+    const shares = teamShares(playerModel, t.league, team, t.date);
+    if (!shares.length) return { source: 'ingen spelardata', attackFactor: 1, missingShare: 0, players: [] };
+    const missing = [];
+    if (confirmed) {
+      const names = (starters ?? []).map((s) => String(s.name ?? s).toLowerCase());
+      for (const p of shares) {
+        const last = p.name.toLowerCase().split(/\s+/).at(-1);
+        if (!names.some((n) => n.includes(last))) missing.push({ name: p.name, share: p.share, weight: 0.8, reason: 'ej i startelvan' });
+      }
+    } else if (t.league === 'PL') {
+      for (const p of shares) {
+        const f = fplByUnderstat.get(p.id);
+        const w = fplAbsence(f);
+        if (w > 0) missing.push({ name: p.name, share: p.share, weight: w, reason: f.news || `FPL status ${f.status}` });
+      }
+    }
+    const s = summariseMissing(missing);
+    const hasSource = confirmed || t.league === 'PL';
+    // Ingen franvarokalla -> anta normal franvaro (faktor 1)
+    const typical = typicalMissing(t.league, team);
+    // Elva: faktisk franvaro (inkl. rotation) mot normal. FPL: skador/avstangningar ar extra utover normal rotation.
+    const effective = confirmed ? s.missingShare : Math.min(0.6, typical + s.missingShare);
+    return {
+      source: confirmed ? 'ESPN startelva' : t.league === 'PL' ? 'FPL' : 'ingen franvarokalla',
+      missingShare: round(s.missingShare, 3),
+      typicalMissing: round(typical, 3),
+      attackFactor: hasSource ? round(attackFactor(CONFIG.playerAlpha, effective, typical), 3) : 1,
+      players: missing.map((m) => ({ name: m.name, share: round(m.share, 3), weight: m.weight, reason: m.reason })),
+      topPlayers: shares.slice(0, 3).map((p) => ({ name: p.name, share: round(p.share, 3) })),
+    };
+  };
+  return {
+    alpha: CONFIG.playerAlpha,
+    home: side(t.home, lineup?.homeStarters),
+    away: side(t.away, lineup?.awayStarters),
+  };
+}
+
+/**
+ * Tipsrader for oddsmatcher som saknar modelltips (cuper, Superettan, lag utan historik).
+ * Sannolikheten ar Pinnacles/Betfairs marginalfria odds - samma facit som vardeomdomet.
+ */
+function marketOnlyCandidates() {
+  const limit = new Date(Date.now() + 21 * 86_400_000).toISOString(); // samma horisont som modelltipsen
+  const now = new Date().toISOString();
+  const rows = [];
+  for (const e of liveOddsList) {
+    if (usedEvents.has(e) || !e.commence || e.commence < now || e.commence > limit) continue;
+    const books = e.books ?? [];
+    const sharp = findSharpBook(books);
+    // Utan skarpt facit (t.ex. Superettan): snitt av alla bolags marginalfria odds - bara som tips, inget vardeomdome
+    const avgOf = (keys) => {
+      const ps = books.map((b) => devigMultiplicative(keys.map((k) => b[k]))).filter(Boolean);
+      return ps.length ? keys.map((_, i) => ps.reduce((s, p) => s + p[i], 0) / ps.length) : null;
+    };
+    const f1 = sharp ? devigMultiplicative([sharp.home, sharp.draw, sharp.away]) : avgOf(['home', 'draw', 'away']);
+    if (!f1) continue;
+    const fOu = sharp ? devigMultiplicative([sharp.over25, sharp.under25]) : avgOf(['over25', 'under25']);
+    const probs = { home: f1[0], draw: f1[1], away: f1[2] };
+    const [pick, conf] = [['1', probs.home], ['X', probs.draw], ['2', probs.away]].sort((a, b) => b[1] - a[1])[0];
+    const pOver = fOu?.[0] ?? null;
+    const ouConf = pOver == null ? null : Math.max(pOver, 1 - pOver);
+    // Samma match i spelschemat -> omgang + schemats lagnamn (GUI visar bara nasta omgang per liga)
+    const fx = fixtures.find((f) => f.league === e.league && Math.abs(daysBetween(f.date, e.commence.slice(0, 10))) <= 1
+      && nameSimilarity(f.home, e.homeRaw ?? e.home) + nameSimilarity(f.away, e.awayRaw ?? e.away) >= 1);
+    const home = fx?.home ?? e.homeRaw ?? e.home;
+    const away = fx?.away ?? e.awayRaw ?? e.away;
+    rows.push({
+      date: fx?.date ?? e.commence.slice(0, 10), kickoffUtc: e.commence, league: e.league, round: fx?.round ?? null,
+      home, away, match: `${home} vs ${away}`,
+      tips: {
+        '1X2': { pick, confidence: round(conf, 3), probs: Object.fromEntries(Object.entries(probs).map(([k, v]) => [k, round(v, 3)])) },
+        BTTS: { pick: null, confidence: null, pYes: null },
+        OU25: { pick: pOver == null ? null : pOver >= 0.5 ? 'OVER 2.5' : 'UNDER 2.5', confidence: ouConf == null ? null : round(ouConf, 3), pOver: pOver == null ? null : round(pOver, 3) },
+      },
+      tipScore: round(ouConf == null ? conf : (conf + ouConf) / 2, 3),
+      marketOnly: true,
+      marketSource: sharp ? (/pinnacle/i.test(sharp.key) ? 'Pinnacle' : 'Betfair Exchange') : `snitt av ${books.length} bolag`,
+      note: `Marknadstips (${sharp ? (/pinnacle/i.test(sharp.key) ? 'Pinnacle' : 'Betfair Exchange') : `snitt av ${books.length} bolag`} utan marginal) - ingen modell for denna liga/match`,
+    });
+  }
+  return rows;
+}
+
+/**
+ * Odds for en match: exakt namn, annars samma liga, datum +-1 dag och bast namnlikhet.
+ * Odds API anvander fulla klubbnamn ("Borussia Dortmund"), tipsen football-data/openfootball-namn.
+ */
+function findLiveOdds(t) {
+  const exact = liveOdds.get(`${t.league}|${t.home}|${t.away}`);
+  if (exact) return exact;
+  let best = null;
+  let bestScore = 0;
+  for (const e of liveOddsList) {
+    if (e.league !== t.league || !e.commence) continue;
+    if (Math.abs(daysBetween(e.commence.slice(0, 10), t.date)) > 1) continue;
+    const score = nameSimilarity(t.home, e.homeRaw ?? e.home) + nameSimilarity(t.away, e.awayRaw ?? e.away);
+    if (score > bestScore) { bestScore = score; best = e; }
+  }
+  return bestScore >= 1 ? best : null; // kraver rimlig likhet for bada lagen tillsammans
+}
+
+function normName(s) {
+  return String(s).replace(/æ/gi, 'ae').replace(/ø/gi, 'o').replace(/å/gi, 'a').replace(/ß/g, 'ss')
+    .normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
+    .replace(/\b(fc|afc|cf|sc|ac|ss|as|us|ssc|rc|rcd|cd|ud|sd|sv|vfb|vfl|tsg|bv|fk|1\.|club|de|calcio|hotspur)\b/g, ' ')
+    .replace(/[^a-z0-9 ]/g, ' ').split(/\s+/).filter((w) => w.length > 1);
+}
+
+/** 0..1: andel ord som matchar (prefix racker, t.ex. "nott" ~ "nottingham"). */
+function nameSimilarity(a, b) {
+  const A = normName(a);
+  const B = normName(b);
+  if (!A.length || !B.length) return 0;
+  const hit = A.filter((w) => B.some((v) => v.startsWith(w) || w.startsWith(v))).length;
+  return hit / Math.max(A.length, 1);
+}
+
+function weatherInfo(t) {
+  const f = forecastByMatch.get(`${t.date}|${t.league}|${t.home}|${t.away}`);
+  // Prognos hamtas bara pa matchdagen (osaker langre fram)
+  if (!f) return { available: false, flags: [], note: 'vader hamtas pa matchdagen' };
+  const w = f.weather;
+  const c = CONFIG.weather;
+  const flags = [];
+  if (w?.windKmh >= c.windStrongKmh) flags.push(`hard vind ${w.windKmh} km/h`);
+  if (w?.precipMm >= c.rainHeavyMm) flags.push(`kraftigt regn ${w.precipMm} mm`);
+  if (w?.tempC != null && w.tempC <= c.coldC) flags.push(`kallt ${w.tempC}°C`);
+  return {
+    venue: f.venue, kickoffUtc: f.kickoffUtc, kickoffAssumed: f.kickoffAssumed,
+    ...(w ?? {}), available: !!w, flags,
+    note: !w ? 'prognos ej tillganglig an' : flags.length ? flags.join(', ') : 'normalt vader',
+  };
+}
+
+/**
+ * Paverkar vader O/U 2.5 utover vad Pinnacle closing redan prisar in?
+ * residual = faktisk over-andel - marknadens fair over-p. |z| > 2 = varde att titta pa.
+ */
+function weatherEffect() {
+  const rows = [];
+  for (const m of matches) {
+    const w = weatherHistory[m.id];
+    const fair = devigMultiplicative([m.closing?.pinnacle_over25, m.closing?.pinnacle_under25])
+      ?? devigMultiplicative([m.closing?.avg_over25, m.closing?.avg_under25]);
+    if (!w || !fair) continue;
+    rows.push({ w, pOver: fair[0], over: m.over25 ? 1 : 0, goals: m.hg + m.ag });
+  }
+  const bucket = (name, fn, edges) => {
+    const out = [];
+    for (let i = 0; i < edges.length; i++) {
+      const lo = edges[i];
+      const hi = edges[i + 1] ?? Infinity;
+      const sel = rows.filter((r) => fn(r.w) != null && fn(r.w) >= lo && fn(r.w) < hi);
+      if (!sel.length) continue;
+      const n = sel.length;
+      const overRate = sel.reduce((s, r) => s + r.over, 0) / n;
+      const fairOver = sel.reduce((s, r) => s + r.pOver, 0) / n;
+      const variance = sel.reduce((s, r) => s + r.pOver * (1 - r.pOver), 0) / (n * n);
+      out.push({
+        bucket: hi === Infinity ? `>= ${lo}` : `${lo}-${hi}`, n,
+        goalsPg: round(sel.reduce((s, r) => s + r.goals, 0) / n, 2),
+        overRate: round(overRate, 3), marketFairOver: round(fairOver, 3),
+        residual: round(overRate - fairOver, 3), z: round((overRate - fairOver) / Math.sqrt(variance), 2),
+      });
+    }
+    return { variable: name, buckets: out };
+  };
+  return {
+    n: rows.length,
+    method: 'Pinnacle closing O/U 2.5 (devig) som forvantan; residual = faktisk over-andel - forvantan. |z| > 2 ~ signifikant.',
+    wind: bucket('windKmh', (w) => w.windKmh, [0, 15, 25, 35]),
+    gust: bucket('gustKmh', (w) => w.gustKmh, [0, 30, 50, 70]),
+    precip: bucket('precipMm', (w) => w.precipMm, [0, 0.1, 1, 3]),
+    temp: bucket('tempC', (w) => w.tempC, [-30, 5, 15, 25]),
+  };
+}
+
+/** Vilodagar/matchtathet fran ligamatcher (spelade i store + schemalagda i fixtures). Cup/Europa saknas. */
+function restInfo(league, team, date) {
+  const dates = [
+    ...matches.filter((m) => m.league === league && (m.home === team || m.away === team)).map((m) => m.date),
+    ...fixtures.filter((f) => f.league === league && (f.home === team || f.away === team)).map((f) => f.date),
+  ].filter((d) => d < date).sort();
+  const last = dates.at(-1);
+  const within = (n) => dates.filter((d) => daysBetween(d, date) <= n).length;
+  const restDays = last ? daysBetween(last, date) : null;
+  return {
+    lastMatch: last ?? null,
+    restDays,
+    matches7d: within(7),
+    matches14d: within(14),
+    congested: restDays != null && restDays <= 3,
+  };
+}
+
+function buildReferees() {
+  const recent = matches.filter((m) => m.referee && daysBetween(m.date, today) <= 800);
+  const refs = {};
+  for (const m of recent) {
+    const k = `${m.league}|${m.referee}`;
+    const r = (refs[k] ??= { league: m.league, referee: m.referee, n: 0, yellow: 0, red: 0, fouls: 0, goals: 0, homeWins: 0, foulsN: 0 });
+    const d = m.discipline ?? {};
+    r.n++;
+    r.yellow += (d.homeYellow ?? 0) + (d.awayYellow ?? 0);
+    r.red += (d.homeRed ?? 0) + (d.awayRed ?? 0);
+    if (d.homeFouls != null && d.awayFouls != null) {
+      r.fouls += d.homeFouls + d.awayFouls;
+      r.foulsN++;
+    }
+    r.goals += m.hg + m.ag;
+    if (m.result === 'H') r.homeWins++;
+  }
+  const list = Object.values(refs)
+    .filter((r) => r.n >= 5)
+    .map((r) => ({
+      league: r.league, referee: r.referee, matches: r.n,
+      yellowPg: round(r.yellow / r.n, 2), redPg: round(r.red / r.n, 3),
+      bookingPointsPg: round((10 * r.yellow + 25 * r.red) / r.n, 1),
+      foulsPg: r.foulsN ? round(r.fouls / r.foulsN, 1) : null,
+      goalsPg: round(r.goals / r.n, 2), homeWinRate: round(r.homeWins / r.n, 3),
+    }))
+    .sort((a, b) => b.yellowPg - a.yellowPg);
+  return { updatedAt: new Date().toISOString(), source: 'football-data.co.uk Referee/HY/AY/HR/AR/HF/AF', count: list.length, referees: list };
+}
+
+// Lagets normala franvaro (senaste 20 matcherna, bara tidigare matcher) - DC:s styrka inkluderar den redan
+var missingHistory; // eslint-disable-line no-var
+function recordMissing(league, team, share) {
+  missingHistory ??= new Map();
+  const k = `${league}|${team}`;
+  const list = missingHistory.get(k) ?? [];
+  list.push(share);
+  if (list.length > 20) list.shift();
+  missingHistory.set(k, list);
+}
+function typicalMissing(league, team) {
+  const list = missingHistory?.get(`${league}|${team}`);
+  if (!list || list.length < 5) return 0.05; // standard innan laget har egen historik
+  return list.reduce((s, x) => s + x, 0) / list.length;
+}
+function attackFactor(alpha, missing, typical) {
+  return (1 - alpha * missing) / (1 - alpha * typical);
+}
+
+/** Saknad andel av anfallet for hemma/borta i en spelad match (null om ingen Understat-data). */
+function matchMissing(m) {
+  if (!playerModel) return null;
+  const us = findUsMatch(playerModel, m.league, m.home, m.away, m.date);
+  if (!us) return null;
+  return {
+    home: historicalMissing(playerModel, m.league, m.home, m.date, us.id),
+    away: historicalMissing(playerModel, m.league, m.away, m.date, us.id),
+  };
+}
+
+/**
+ * Hjalper spelarviktad franvaro Dixon-Coles? RPS/Brier per alpha, bara matcher med spelardata.
+ * Plus: prisar marknaden in franvaron (residual mot Pinnacle oppning resp. closing)?
+ */
+function playerEffect(rowsByLeague) {
+  if (!playerModel) return null;
+  const perLeague = {};
+  const pooled = Object.fromEntries(CONFIG.playerAlphaGrid.map((a) => [a, { rps: 0, brierOu: 0 }]));
+  let pooledN = 0;
+  const marketRows = [];
+  for (const [lg, rows] of Object.entries(rowsByLeague)) {
+    const withData = rows.filter((r) => r.miss);
+    if (!withData.length) continue;
+    const res = Object.fromEntries(CONFIG.playerAlphaGrid.map((a) => [a, { rps: 0, brierOu: 0 }]));
+    for (const r of withData) {
+      for (const a of CONFIG.playerAlphaGrid) {
+        const p = r.dcAlpha?.[a] ?? r.dc;
+        const rp = rps1x2([p.home, p.draw, p.away], r.m.result);
+        const bo = brier(p.over25, r.m.over25);
+        res[a].rps += rp; res[a].brierOu += bo;
+        pooled[a].rps += rp; pooled[a].brierOu += bo;
+      }
+      pooledN++;
+      const pinOpen1 = devigMultiplicative([r.m.odds?.pinnacle_home, r.m.odds?.pinnacle_draw, r.m.odds?.pinnacle_away]);
+      if (pinOpen1 && r.pinClose) {
+        marketRows.push({
+          diff: r.miss.away.missingShare - r.miss.home.missingShare, // positivt = bortalaget saknar mer
+          homeWin: r.m.result === 'H' ? 1 : 0, pOpen: pinOpen1[0], pClose: r.pinClose[0],
+        });
+      }
+    }
+    const n = withData.length;
+    perLeague[lg] = {
+      n,
+      withMissing: withData.filter((r) => r.miss.home.missingShare > 0 || r.miss.away.missingShare > 0).length,
+      avgMissingShare: round(withData.reduce((s, r) => s + r.miss.home.missingShare + r.miss.away.missingShare, 0) / (2 * n), 3),
+      byAlpha: Object.fromEntries(CONFIG.playerAlphaGrid.map((a) => [a, { rps: round(res[a].rps / n, 5), brierOu: round(res[a].brierOu / n, 5) }])),
+    };
+  }
+  if (!pooledN) return null;
+  const byAlpha = Object.fromEntries(CONFIG.playerAlphaGrid.map((a) => [a, {
+    rps: round(pooled[a].rps / pooledN, 5), brierOu: round(pooled[a].brierOu / pooledN, 5),
+  }]));
+  // Valj alpha med lagst RPS; kraver forbattring mot alpha=0, annars ingen justering
+  const best = CONFIG.playerAlphaGrid.reduce((b, a) => (byAlpha[a].rps < byAlpha[b].rps ? a : b), 0);
+
+  const buckets = [[-1, -0.1], [-0.1, -0.02], [-0.02, 0.02], [0.02, 0.1], [0.1, 1.01]].map(([lo, hi]) => {
+    const sel = marketRows.filter((r) => r.diff >= lo && r.diff < hi);
+    const n = sel.length;
+    if (!n) return null;
+    const mean = (f) => sel.reduce((s, r) => s + f(r), 0) / n;
+    const se = Math.sqrt(mean((r) => r.pClose * (1 - r.pClose)) / n);
+    return {
+      bucket: `${lo} till ${hi > 1 ? 1 : hi}`, n,
+      homeWinRate: round(mean((r) => r.homeWin), 3),
+      pinnacleOpen: round(mean((r) => r.pOpen), 3),
+      pinnacleClose: round(mean((r) => r.pClose), 3),
+      moveOpenToClose: round(mean((r) => r.pClose - r.pOpen), 4),
+      residualVsOpen: round(mean((r) => r.homeWin - r.pOpen), 3),
+      residualVsClose: round(mean((r) => r.homeWin - r.pClose), 3),
+      zVsClose: round(mean((r) => r.homeWin - r.pClose) / se, 2),
+    };
+  }).filter(Boolean);
+
+  return {
+    method: 'Franvarande = viktig spelare (>= 3 % av lagets xG+xA senaste aret) som spelat for laget inom 60 dagar men inte i matchen. '
+      + 'DC-attack x (1 - alpha * saknad andel). Matt pa samma point-in-time-DC som ovan. Bara anfall (xG+xA) - forsvar/malvakt fangas inte.',
+    n: pooledN,
+    byAlpha,
+    chosenAlpha: best,
+    improvementRps: round(byAlpha[0].rps - byAlpha[best].rps, 5),
+    perLeague,
+    market: {
+      note: 'diff = bortalagets saknade andel - hemmalagets. Om marknaden prisar in franvaro flyttas oddset fran oppning till closing och residualVsClose ~ 0.',
+      buckets,
+    },
+  };
+}
+
+function evaluate() {
+  const perLeague = {};
+  const rowsByLeague = {};
+  const seasons = new Set(['2026/27', '2025/26']);
+  for (const [league, list] of Object.entries(byLeague)) {
+    const evalMatches = list.filter((m) => seasons.has(m.season));
+    const byWeek = groupBy(evalMatches, (m) => weekStart(m.date));
+    const rows = [];
+    for (const [week, wm] of Object.entries(byWeek).sort()) {
+      const model = fitDixonColes(list, week);
+      if (!model) continue;
+      for (const m of wm) {
+        const dc = predictDixonColes(model, m.home, m.away);
+        const pinClose = devigMultiplicative([m.closing?.pinnacle_home, m.closing?.pinnacle_draw, m.closing?.pinnacle_away]);
+        const pinCloseOu = devigMultiplicative([m.closing?.pinnacle_over25, m.closing?.pinnacle_under25]);
+        const miss = matchMissing(m);
+        let dcAlpha = null;
+        if (miss) {
+          // DC ar tranad pa matcher dar laget redan ibland saknat spelare -> jamfor mot lagets normala franvaro
+          const avgH = typicalMissing(m.league, m.home);
+          const avgA = typicalMissing(m.league, m.away);
+          dcAlpha = Object.fromEntries(CONFIG.playerAlphaGrid.map((a) => [a, predictDixonColes(model, m.home, m.away, 10, {
+            home: attackFactor(a, miss.home.missingShare, avgH), away: attackFactor(a, miss.away.missingShare, avgA),
+          })]));
+          recordMissing(m.league, m.home, miss.home.missingShare);
+          recordMissing(m.league, m.away, miss.away.missingShare);
+        }
+        rows.push({ m, dc, pinClose, pinCloseOu, miss, dcAlpha });
+      }
+    }
+    perLeague[league] = summarise(rows);
+    rowsByLeague[league] = rows;
+  }
+  return {
+    rowsByLeague,
+    updatedAt: new Date().toISOString(),
+    method: 'Dixon-Coles refit per vecka (endast data fore veckan), sasong 2025/26 + 2026/27. Spel = flat 1 enhet pa Pinnacle oppningsodds nar dc-EV >= troskel. CLV mot devig:ad Pinnacle closing.',
+    thresholds: CONFIG.evalThresholds,
+    summary: Object.fromEntries(Object.entries(perLeague).map(([lg, s]) => [lg, s.headline])),
+    detail: perLeague,
+  };
+}
+
+function summarise(rows) {
+  let rpsDc = 0, rpsPin = 0, nPin = 0, brierDc = 0, brierPin = 0, nOu = 0, brierBttsDc = 0;
+  for (const { m, dc, pinClose, pinCloseOu } of rows) {
+    rpsDc += rps1x2([dc.home, dc.draw, dc.away], m.result);
+    brierBttsDc += brier(dc.btts, m.btts);
+    if (pinClose) {
+      rpsPin += rps1x2(pinClose, m.result);
+      nPin++;
+    }
+    if (pinCloseOu) {
+      brierDc += brier(dc.over25, m.over25);
+      brierPin += brier(pinCloseOu[0], m.over25);
+      nOu++;
+    }
+  }
+  const betsByThreshold = {};
+  for (const th of CONFIG.evalThresholds) {
+    betsByThreshold[`ev${th}`] = Object.fromEntries(
+      Object.entries(STRATEGIES).map(([name, s]) => [name, simulateBets(rows, th, s)]),
+    );
+  }
+  const n = rows.length;
+  const headline = {
+    n,
+    rpsDc: n ? round(rpsDc / n) : null,
+    rpsPinnacleClose: nPin ? round(rpsPin / nPin) : null,
+    brierOuDc: nOu ? round(brierDc / nOu) : null,
+    brierOuPinnacleClose: nOu ? round(brierPin / nOu) : null,
+    brierBttsDc: n ? round(brierBttsDc / n) : null,
+    bets: betsByThreshold[`ev${CONFIG.minEv}`]?.[CONFIG.liveStrategy]
+      ?? simulateBets(rows, CONFIG.minEv, STRATEGIES[CONFIG.liveStrategy]),
+    strategies: Object.fromEntries(
+      Object.keys(STRATEGIES).map((k) => [k, betsByThreshold[`ev${CONFIG.minEv}`]?.[k]]),
+    ),
+  };
+  return { headline, betsByThreshold };
+}
+
+function dcProbs(dc) {
+  return [dc.home, dc.draw, dc.away, dc.over25];
+}
+
+function pinOpen(m) {
+  const o = m.odds ?? {};
+  const f1 = devigMultiplicative([o.pinnacle_home, o.pinnacle_draw, o.pinnacle_away]);
+  const fOu = devigMultiplicative([o.pinnacle_over25, o.pinnacle_under25]);
+  if (!f1 || !fOu) return null;
+  return [...f1, fOu[0]];
+}
+
+function simulateBets(rows, threshold, strategy) {
+  let n = 0, profit = 0, clvSum = 0, clvN = 0, clvPos = 0;
+  for (const r of rows) {
+    const { m, pinClose, pinCloseOu } = r;
+    const p = strategy.probs(r);
+    if (!p) continue;
+    const o = m.odds ?? {};
+    const px = strategy.book;
+    const cands = [
+      [p[0], o[`${px}home`], m.result === 'H', pinClose?.[0]],
+      [p[1], o[`${px}draw`], m.result === 'D', pinClose?.[1]],
+      [p[2], o[`${px}away`], m.result === 'A', pinClose?.[2]],
+      [p[3], o[`${px}over25`], m.over25, pinCloseOu?.[0]],
+      [1 - p[3], o[`${px}under25`], !m.over25, pinCloseOu?.[1]],
+    ];
+    for (const [p, odds, won, closeP] of cands) {
+      if (!(odds > 1) || p * odds - 1 < threshold) continue;
+      n++;
+      profit += won ? odds - 1 : -1;
+      const c = clv(odds, closeP);
+      if (c != null) {
+        clvSum += c;
+        clvN++;
+        if (c > 0) clvPos++;
+      }
+    }
+  }
+  return {
+    n,
+    profit: round(profit, 2),
+    roi: n ? round(profit / n) : null,
+    meanClv: clvN ? round(clvSum / clvN) : null,
+    clvPositiveRate: clvN ? round(clvPos / clvN, 3) : null,
+  };
+}
+
+function appendMarkdown(tips, evaluation) {
+  let md = fs.readFileSync(P.tipsMd, 'utf8');
+  md = md.split('\n## Pro-lager')[0].trimEnd();
+  const lines = ['', '', '## Pro-lager (Dixon-Coles + devig + spelarviktad franvaro)', ''];
+  lines.push('### Varde vid dagens odds', '');
+  lines.push('| Match | Marknad | Tips | Odds | Varde? | Vart fran odds | Annat utfall med varde |', '|---|---|---|---|---|---|---|');
+  const seen = new Set();
+  for (const t of tips.allCandidates ?? []) {
+    if (seen.has(t.match) || !t.pro) continue;
+    seen.add(t.match);
+    const v = t.pro.verdicts ?? {};
+    const rows = [
+      ['1X2', t.tips?.['1X2']?.pick, { 1: 'home', X: 'draw', 2: 'away' }[t.tips?.['1X2']?.pick], ['home', 'draw', 'away']],
+      ['O/U 2.5', t.tips?.OU25?.pick, /OVER/i.test(t.tips?.OU25?.pick ?? '') ? 'over25' : 'under25', ['over25', 'under25']],
+    ];
+    for (const [label, pick, key, keys] of rows) {
+      const x = v[key];
+      const other = keys.filter((k) => k !== key && v[k]?.value).map((k) => `${v[k].pick} @ ${v[k].odds}`).join(', ');
+      lines.push(`| ${t.date} ${t.match} (${t.league}) | ${label} | ${pick ?? '-'} | ${x?.odds ?? '-'} | ${!x ? 'Inga odds' : x.value == null ? 'Kraver skarpa odds' : x.value ? '**VARDE**' : 'Ej varde'} | ${x?.minOdds ?? '-'} | ${other || '-'} |`);
+    }
+  }
+  lines.push('', `Varde = forvantad avkastning >= ${100 * CONFIG.minEv} % till dagens odds. BTTS saknar odds.`);
+  lines.push('', `Facit = Pinnacles odds utan marginal. Pris = basta odds hos ${CONFIG.userBooks.join(', ')}. Utan Pinnacle: "Kraver skarpa odds" (inget omdome).`);
+  lines.push('', '### Modell vs Pinnacle closing (2025/26 + 2026/27, point-in-time)', '');
+  lines.push(`| Liga | Matcher | RPS DC | RPS Pinnacle close | Brier O/U DC | Brier O/U Pinnacle | CLV DC-spel | CLV konsensus-spel (n) |`, '|---|---|---|---|---|---|---|---|');
+  for (const [lg, s] of Object.entries(evaluation.summary)) {
+    const dc = s.strategies.dcAtPinnacle;
+    const cons = s.strategies.consensusAtBestPrice;
+    lines.push(`| ${lg} | ${s.n} | ${s.rpsDc} | ${s.rpsPinnacleClose ?? '-'} | ${s.brierOuDc ?? '-'} | ${s.brierOuPinnacleClose ?? '-'} | ${pct(dc.meanClv)} | ${pct(cons.meanClv)} (${cons.n}) |`);
+  }
+  lines.push('', `Spel = EV >= ${CONFIG.minEv}. Lagre RPS/Brier = battre. Positiv CLV = slog stangningsoddset. Detaljer: data/reports/pro-evaluation.json`);
+
+  const flagged = [...new Map((tips.allCandidates ?? []).filter((t) => t.pro?.weather?.flags?.length).map((t) => [t.match, t])).values()];
+  lines.push('', '### Vader vid avspark (Open-Meteo)', '');
+  if (flagged.length) {
+    for (const t of flagged) lines.push(`- ${t.date} ${t.match} (${t.league}) @ ${t.pro.weather.venue}: ${t.pro.weather.note}`);
+  } else {
+    lines.push('Inga matcher med hard vind/kraftigt regn/kyla i prognosen.');
+  }
+  const we = evaluation.weatherEffect;
+  if (we?.n) {
+    lines.push('', `Vadereffekt pa O/U 2.5 utover Pinnacle closing (${we.n} matcher):`, '');
+    lines.push('| Variabel | Intervall | Matcher | Mal/match | Over-andel | Marknadens over-p | Residual | z |', '|---|---|---|---|---|---|---|---|');
+    for (const v of [we.wind, we.gust, we.precip, we.temp]) {
+      for (const b of v.buckets) lines.push(`| ${v.variable} | ${b.bucket} | ${b.n} | ${b.goalsPg} | ${b.overRate} | ${b.marketFairOver} | ${b.residual} | ${b.z} |`);
+    }
+    lines.push('', '|z| > 2 = vadret sager nagot som marknaden inte prisat in.');
+  }
+
+  const pe = evaluation.playerEffect;
+  lines.push('', '### Franvaro viktad per spelare (xG+xA-andel)', '');
+  const withAbs = [...new Map((tips.allCandidates ?? [])
+    .filter((t) => t.pro?.availability && (t.pro.availability.home.players.length || t.pro.availability.away.players.length))
+    .map((t) => [t.match, t])).values()];
+  for (const t of withAbs) {
+    const a = t.pro.availability;
+    const fmt = (s) => s.players.map((p) => `${p.name} ${(100 * p.share).toFixed(0)}%${p.weight < 1 ? ` (x${p.weight})` : ''}`).join(', ') || '-';
+    lines.push(`- ${t.date} ${t.match}: HEMMA ${fmt(a.home)} -> attack x${a.home.attackFactor} | BORTA ${fmt(a.away)} -> attack x${a.away.attackFactor}`);
+  }
+  if (!withAbs.length) lines.push('Inga viktiga spelare saknas enligt FPL/elvor.');
+  if (pe) {
+    lines.push('', `Backtest (${pe.n} matcher med spelardata): RPS per alpha ${CONFIG.playerAlphaGrid.map((a) => `${a}: ${pe.byAlpha[a].rps}`).join(' | ')}. `
+      + `Vald alpha = ${pe.chosenAlpha} (RPS-forbattring ${pe.improvementRps}).`);
+  }
+  fs.writeFileSync(P.tipsMd, md + lines.join('\n') + '\n', 'utf8');
+}
+
+function pct(x) {
+  return x == null ? '-' : `${(100 * x).toFixed(1)}%`;
+}
+
+function weekStart(date) {
+  const d = toDate(date);
+  const dow = (d.getUTCDay() + 6) % 7; // mandag = 0
+  d.setUTCDate(d.getUTCDate() - dow);
+  return d.toISOString().slice(0, 10);
+}
+
+function groupBy(list, fn) {
+  const out = {};
+  for (const x of list) (out[fn(x)] ??= []).push(x);
+  return out;
+}

@@ -1,0 +1,69 @@
+{
+  "updatedAt": "2026-09-27T08:24:04.528Z",
+  "source": "open-meteo forecast",
+  "horizon": [
+    "2026-09-27",
+    "2026-09-27"
+  ],
+  "count": 3,
+  "missingVenues": [],
+  "matches": [
+    {
+      "date": "2026-09-27",
+      "league": "BR2",
+      "home": "Criciúma",
+      "away": "Avaí",
+      "venue": "Estádio Heriberto Hülse",
+      "lat": -28.684167,
+      "lon": -49.3675,
+      "weatherPoint": "c92",
+      "kickoffUtc": "2026-09-27T14:00:00.000Z",
+      "kickoffAssumed": true,
+      "weather": {
+        "tempC": 24.3,
+        "precipMm": 0,
+        "windKmh": 8.2,
+        "gustKmh": 22.7,
+        "precipProb": 55
+      }
+    },
+    {
+      "date": "2026-09-27",
+      "league": "BR2",
+      "home": "CRB",
+      "away": "Cuiabá",
+      "venue": "Estádio Rei Pelé",
+      "lat": -9.670556,
+      "lon": -35.759167,
+      "weatherPoint": "c90",
+      "kickoffUtc": "2026-09-27T14:00:00.000Z",
+      "kickoffAssumed": true,
+      "weather": {
+        "tempC": 26.9,
+        "precipMm": 0.7,
+        "windKmh": 19.9,
+        "gustKmh": 42.5,
+        "precipProb": 94
+      }
+    },
+    {
+      "date": "2026-09-27",
+      "league": "BR2",
+      "home": "Fortaleza",
+      "away": "Athletic",
+      "venue": "Castelão",
+      "lat": -3.807267,
+      "lon": -38.522481,
+      "weatherPoint": "c77",
+      "kickoffUtc": "2026-09-27T14:00:00.000Z",
+      "kickoffAssumed": true,
+      "weather": {
+        "tempC": 30.4,
+        "precipMm": 0,
+        "windKmh": 21,
+        "gustKmh": 52.6,
+        "precipProb": 71
+      }
+    }
+  ]
+}

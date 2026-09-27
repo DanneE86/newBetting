@@ -1,0 +1,472 @@
+{
+    "updatedAt":  "2026-09-27T08:29:36.0061961+02:00",
+    "source":  "https://site.web.api.espn.com (eng.1 + eng.2)",
+    "note":  "Elvor bekraftas nar ESPN publicerar starters (~1h fore kickoff). pending = ej slappta an.",
+    "fixtureCount":  22,
+    "confirmedCount":  0,
+    "pendingCount":  22,
+    "fixtures":  [
+                     {
+                         "espnEventId":  "401880243",
+                         "date":  "2026-10-10",
+                         "kickoffUtc":  "2026-10-10T14:00Z",
+                         "league":  "CH",
+                         "home":  "Bolton Wanderers",
+                         "away":  "Stoke",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401880244",
+                         "date":  "2026-10-10",
+                         "kickoffUtc":  "2026-10-10T14:00Z",
+                         "league":  "CH",
+                         "home":  "Blackburn",
+                         "away":  "Cardiff City",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401880233",
+                         "date":  "2026-10-09",
+                         "kickoffUtc":  "2026-10-09T19:00Z",
+                         "league":  "CH",
+                         "home":  "West Ham",
+                         "away":  "QPR",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401880235",
+                         "date":  "2026-10-10",
+                         "kickoffUtc":  "2026-10-10T14:00Z",
+                         "league":  "CH",
+                         "home":  "Watford",
+                         "away":  "Burnley",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401880241",
+                         "date":  "2026-10-10",
+                         "kickoffUtc":  "2026-10-10T14:00Z",
+                         "league":  "CH",
+                         "home":  "Derby",
+                         "away":  "Wrexham",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401880236",
+                         "date":  "2026-10-10",
+                         "kickoffUtc":  "2026-10-10T11:30Z",
+                         "league":  "CH",
+                         "home":  "Swansea",
+                         "away":  "Norwich",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401879264",
+                         "date":  "2026-10-11",
+                         "kickoffUtc":  "2026-10-11T15:30Z",
+                         "league":  "PL",
+                         "home":  "Liverpool",
+                         "away":  "Man City",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401879266",
+                         "date":  "2026-10-11",
+                         "kickoffUtc":  "2026-10-11T13:00Z",
+                         "league":  "PL",
+                         "home":  "Crystal Palace",
+                         "away":  "Nott\u0027m Forest",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401879265",
+                         "date":  "2026-10-10",
+                         "kickoffUtc":  "2026-10-10T14:00Z",
+                         "league":  "PL",
+                         "home":  "Ipswich",
+                         "away":  "Fulham",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401880242",
+                         "date":  "2026-10-10",
+                         "kickoffUtc":  "2026-10-10T11:30Z",
+                         "league":  "CH",
+                         "home":  "Charlton",
+                         "away":  "Bristol City",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401880240",
+                         "date":  "2026-10-10",
+                         "kickoffUtc":  "2026-10-10T14:00Z",
+                         "league":  "CH",
+                         "home":  "Middlesbrough",
+                         "away":  "Wolves",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401878772",
+                         "date":  "2026-10-10",
+                         "kickoffUtc":  "2026-10-10T14:00Z",
+                         "league":  "PL",
+                         "home":  "Sunderland",
+                         "away":  "Brighton",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401879267",
+                         "date":  "2026-10-12",
+                         "kickoffUtc":  "2026-10-12T19:00Z",
+                         "league":  "PL",
+                         "home":  "Coventry",
+                         "away":  "Newcastle",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401878773",
+                         "date":  "2026-10-10",
+                         "kickoffUtc":  "2026-10-10T16:30Z",
+                         "league":  "PL",
+                         "home":  "Man United",
+                         "away":  "Tottenham",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401880239",
+                         "date":  "2026-10-10",
+                         "kickoffUtc":  "2026-10-10T14:00Z",
+                         "league":  "CH",
+                         "home":  "Preston",
+                         "away":  "Millwall",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401878775",
+                         "date":  "2026-10-10",
+                         "kickoffUtc":  "2026-10-10T14:00Z",
+                         "league":  "PL",
+                         "home":  "Chelsea",
+                         "away":  "Bournemouth",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401880237",
+                         "date":  "2026-10-11",
+                         "kickoffUtc":  "2026-10-11T11:00Z",
+                         "league":  "CH",
+                         "home":  "Southampton",
+                         "away":  "Portsmouth",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401880234",
+                         "date":  "2026-10-10",
+                         "kickoffUtc":  "2026-10-10T11:30Z",
+                         "league":  "CH",
+                         "home":  "West Brom",
+                         "away":  "Birmingham",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401879268",
+                         "date":  "2026-10-10",
+                         "kickoffUtc":  "2026-10-10T11:30Z",
+                         "league":  "PL",
+                         "home":  "Arsenal",
+                         "away":  "Leeds",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401878776",
+                         "date":  "2026-10-10",
+                         "kickoffUtc":  "2026-10-10T14:00Z",
+                         "league":  "PL",
+                         "home":  "Aston Villa",
+                         "away":  "Brentford",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401880238",
+                         "date":  "2026-10-10",
+                         "kickoffUtc":  "2026-10-10T14:00Z",
+                         "league":  "CH",
+                         "home":  "Sheffield United",
+                         "away":  "Lincoln City",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     },
+                     {
+                         "espnEventId":  "401878774",
+                         "date":  "2026-10-11",
+                         "kickoffUtc":  "2026-10-11T13:00Z",
+                         "league":  "PL",
+                         "home":  "Hull",
+                         "away":  "Everton",
+                         "matchStatus":  "STATUS_SCHEDULED",
+                         "lineupStatus":  "pending",
+                         "homeFormation":  "",
+                         "awayFormation":  "",
+                         "homeStarters":  [
+
+                                          ],
+                         "awayStarters":  [
+
+                                          ],
+                         "homeStarterCount":  0,
+                         "awayStarterCount":  0,
+                         "source":  "espn-site-web-api"
+                     }
+                 ]
+}

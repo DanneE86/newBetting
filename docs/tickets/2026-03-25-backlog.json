@@ -1,0 +1,117 @@
+[
+  {
+    "name": "[EPIC] Infra & API-klient för fotbollsdata",
+    "labels": ["infra", "p0", "data"],
+    "desc": "## Sammanfattning\nSätt upp API-klient, auth, rate limiting och lagring så att PL- och Championship-data kan synkas pålitligt.\n\n## Typ\nEpic\n\n## Prioritet\nP0\n\n## Liga\nBåda\n\n## Databehov\n- HTTP-klient med retries/backoff\n- Secrets via .env\n- Persistenslager (DB eller filbaserat v1)\n- Sync-frekvens: kontinuerlig infrastruktur\n\n## Acceptanskriterier\n- [ ] Credentials laddas säkert (ej i git)\n- [ ] Rate limit och felhantering dokumenterad\n- [ ] Gemensam modell för `source`, `updated_at`, externa id:n\n\n## Beroenden\n- Blockerar: alla data-epics\n\n## Definition of Done\n- [ ] Klient kan göra autentiserat anrop\n- [ ] Smoke-test dokumenterat"
+  },
+  {
+    "name": "[STORY] Välj och dokumentera datakälla (API)",
+    "labels": ["infra", "p0", "data"],
+    "desc": "## Sammanfattning\nVälj primär API som täcker PL + Championship för fixtures, lag, spelare, odds, injuries.\n\n## Typ\nStory\n\n## Prioritet\nP0\n\n## Liga\nBåda\n\n## Databehov\n- Jämför coverage: fixtures, standings, players, injuries, odds, xG\n- Dokumentera league/season-id för PL och Championship\n\n## Acceptanskriterier\n- [ ] Beslut dokumenterat i docs/krav/\n- [ ] Coverage-matris P0/P1 ifylld\n- [ ] Kostnad/rate limits noterade\n\n## Beroenden\n- Blockeras av: Infra-epic startad\n- Blockerar: lag/fixtures-sync\n\n## Definition of Done\n- [ ] Kort beslut + länkar till API-docs"
+  },
+  {
+    "name": "[TASK] Skapa .env + config för API och Trello",
+    "labels": ["infra", "p0"],
+    "desc": "## Sammanfattning\nKonfigurera miljövariabler för fotbolls-API och Trello utan att checka in secrets.\n\n## Typ\nTask\n\n## Prioritet\nP0\n\n## Liga\nBåda\n\n## Databehov\n- .env.example uppdaterad med API-nycklar\n- Ignorera .env i git\n\n## Acceptanskriterier\n- [ ] .env.example komplett\n- [ ] .gitignore inkluderar .env\n- [ ] Appen failar tydligt om nyckel saknas\n\n## Beroenden\n- Blockeras av: API-val\n\n## Definition of Done\n- [ ] Lokal körning med dummy-check fungerar"
+  },
+  {
+    "name": "[EPIC] Ligor, säsonger och lag",
+    "labels": ["teams", "p0", "data", "pl", "championship"],
+    "desc": "## Sammanfattning\nHämta och lagra ligor, aktuell säsong samt alla lag i PL och Championship.\n\n## Typ\nEpic\n\n## Prioritet\nP0\n\n## Liga\nBåda\n\n## Databehov\n- League, Season, Team\n- Sync: vid säsongsstart + veckovis\n\n## Acceptanskriterier\n- [ ] Alla PL-lag för aktuell säsong\n- [ ] Alla Championship-lag för aktuell säsong\n- [ ] Stabil team_id mappad till källa\n\n## Beroenden\n- Blockeras av: Infra\n- Blockerar: fixtures, standings, players\n\n## Definition of Done\n- [ ] Query returnerar kompletta trupper av lag per liga"
+  },
+  {
+    "name": "[STORY] Synka Premier League-lag för aktuell säsong",
+    "labels": ["teams", "p0", "pl"],
+    "desc": "## Sammanfattning\nImportera alla PL-lag med id, namn och metadata.\n\n## Typ\nStory\n\n## Prioritet\nP0\n\n## Liga\nPremier League\n\n## Databehov\n- Team: id, name, short_name, league_id, season_id\n- Källa: vald football API\n- Sync: säsongsstart + veckovis\n\n## Acceptanskriterier\n- [ ] 20 lag (aktuell PL-säsong)\n- [ ] Upsert på externt id\n- [ ] updated_at sätts\n\n## Beroenden\n- Blockeras av: API-klient\n\n## Definition of Done\n- [ ] Verifierat mot officiell ligalista"
+  },
+  {
+    "name": "[STORY] Synka Championship-lag för aktuell säsong",
+    "labels": ["teams", "p0", "championship"],
+    "desc": "## Sammanfattning\nImportera alla Championship-lag med id, namn och metadata.\n\n## Typ\nStory\n\n## Prioritet\nP0\n\n## Liga\nChampionship\n\n## Databehov\n- Team: id, name, short_name, league_id, season_id\n- Sync: säsongsstart + veckovis\n\n## Acceptanskriterier\n- [ ] 24 lag (aktuell Championship-säsong)\n- [ ] Upsert på externt id\n- [ ] Skiljer tydligt från PL i datamodell\n\n## Beroenden\n- Blockeras av: API-klient\n\n## Definition of Done\n- [ ] Verifierat antal lag + namn-stickprov"
+  },
+  {
+    "name": "[EPIC] Fixtures, resultat och standings",
+    "labels": ["data", "p0", "pl", "championship"],
+    "desc": "## Sammanfattning\nHämta matchschema, resultat och tabell – grunden för form, odds-koppling och backtest.\n\n## Typ\nEpic\n\n## Prioritet\nP0\n\n## Liga\nBåda\n\n## Databehov\n- Fixture, FixtureResult, Standing\n- Sync: dagligen; oftare på matchdag\n\n## Acceptanskriterier\n- [ ] Kommande + spelade matcher för aktuell säsong\n- [ ] Resultat inkl. HT om tillgängligt\n- [ ] Aktuell tabell med form-sträng\n\n## Beroenden\n- Blockeras av: Lag-epic\n- Blockerar: form, odds, stats\n\n## Definition of Done\n- [ ] End-to-end sync PL + Championship"
+  },
+  {
+    "name": "[STORY] Hämta fixtures (kommande + historik) PL/Championship",
+    "labels": ["data", "p0", "pl", "championship"],
+    "desc": "## Sammanfattning\nSynka fixtures med kickoff, status, hemma/borta och venue.\n\n## Typ\nStory\n\n## Prioritet\nP0\n\n## Liga\nBåda\n\n## Databehov\n- Fixture: id, season_id, home_id, away_id, kickoff_utc, status, venue\n- Sync: 1×/dag + matchdag\n\n## Acceptanskriterier\n- [ ] Alla matcher för aktuell säsong per liga\n- [ ] Status uppdateras (NS/LIVE/FT)\n- [ ] Tidszon lagras som UTC\n\n## Beroenden\n- Blockeras av: Lag\n\n## Definition of Done\n- [ ] Stickprov: nästa omgång synlig för båda ligorna"
+  },
+  {
+    "name": "[STORY] Lagra matchresultat och uppdatera standings",
+    "labels": ["data", "p0", "pl", "championship"],
+    "desc": "## Sammanfattning\nEfter FT: spara resultat och refresha tabell (poäng, GD, form).\n\n## Typ\nStory\n\n## Prioritet\nP0\n\n## Liga\nBåda\n\n## Databehov\n- FixtureResult, Standing (played, pts, gf, ga, gd, form, rank)\n- Sync: efter matcher / dagligen\n\n## Acceptanskriterier\n- [ ] Resultat matchar källa för stickprov\n- [ ] Standings rank korrekt för båda ligorna\n- [ ] Form-sträng (t.ex. senaste 5) sparad\n\n## Beroenden\n- Blockeras av: Fixtures\n\n## Definition of Done\n- [ ] Jämfört mot officiell tabell samma dag"
+  },
+  {
+    "name": "[EPIC] Spelare och trupper",
+    "labels": ["players", "p0", "data"],
+    "desc": "## Sammanfattning\nHämta trupper och spelaridentiteter för att koppla skador, lineups och spelarmarknader.\n\n## Typ\nEpic\n\n## Prioritet\nP0\n\n## Liga\nBåda\n\n## Databehov\n- Player: id, name, position, team_id, nationality, birth_date\n- Sync: veckovis + transfers\n\n## Acceptanskriterier\n- [ ] Trupp per lag finns\n- [ ] Position och team_id satta\n- [ ] Spelare kan byta lag (historik eller upsert-strategi dokumenterad)\n\n## Beroenden\n- Blockeras av: Lag\n- Blockerar: injuries, player stats, lineups\n\n## Definition of Done\n- [ ] Minst 1 PL- och 1 Championship-lag med full trupp verifierad"
+  },
+  {
+    "name": "[STORY] Synka spelartrupper per lag",
+    "labels": ["players", "p0", "pl", "championship"],
+    "desc": "## Sammanfattning\nImportera aktiva spelare för varje lag i PL och Championship.\n\n## Typ\nStory\n\n## Prioritet\nP0\n\n## Liga\nBåda\n\n## Databehov\n- Player-fält enligt schema\n- Sync: veckovis\n\n## Acceptanskriterier\n- [ ] Alla lag har trupp\n- [ ] Upsert på player id\n- [ ] Saknade positioner loggas\n\n## Beroenden\n- Blockeras av: Lag-sync\n\n## Definition of Done\n- [ ] Antal spelare rimligt per lag (stickprov)"
+  },
+  {
+    "name": "[EPIC] Injuries & availability",
+    "labels": ["players", "p0", "data"],
+    "desc": "## Sammanfattning\nSynka skador och avstängningar – kritisk signal för odds-rörelse och lineup-förväntan.\n\n## Typ\nEpic\n\n## Prioritet\nP0\n\n## Liga\nBåda\n\n## Databehov\n- Injury: player_id, team_id, type, status, start, end_expected\n- Sync: dagligen; oftare matchdag\n\n## Acceptanskriterier\n- [ ] Aktiva injuries per lag\n- [ ] Koppling till Player\n- [ ] Historik eller snapshot per dag\n\n## Beroenden\n- Blockeras av: Players\n- Blockerar: lineup-edge, betting-alerts (senare)\n\n## Definition of Done\n- [ ] Matchdags-refresh testad"
+  },
+  {
+    "name": "[STORY] Daglig injury-sync för PL och Championship",
+    "labels": ["players", "p0", "pl", "championship"],
+    "desc": "## Sammanfattning\nJobb som hämtar aktuella skador/avstängningar och uppdaterar lagret.\n\n## Typ\nStory\n\n## Prioritet\nP0\n\n## Liga\nBåda\n\n## Databehov\n- Injury-entitet\n- Sync: 1×/dag + matchdag-morgon\n\n## Acceptanskriterier\n- [ ] Nya/återställda spelare speglas\n- [ ] Okänd spelare skapar varning (saknad i trupp)\n- [ ] Körlogg med antal changes\n\n## Beroenden\n- Blockeras av: Spelartrupper\n\n## Definition of Done\n- [ ] Jämfört stickprov mot källa samma dag"
+  },
+  {
+    "name": "[EPIC] Odds P0-marknader",
+    "labels": ["odds", "p0", "data"],
+    "desc": "## Sammanfattning\nHämta pre-match odds för 1X2, O/U 2.5 och BTTS med tidsstämplar (opening/closing om möjligt).\n\n## Typ\nEpic\n\n## Prioritet\nP0\n\n## Liga\nBåda\n\n## Databehov\n- OddsSnapshot: fixture_id, bookmaker, market, selection, price, captured_at\n- Sync: flera gånger/dag + nära kickoff\n\n## Acceptanskriterier\n- [ ] Marknader 1X2, O/U 2.5, BTTS\n- [ ] Minst en bookmaker konsekvent\n- [ ] Snapshots historiseras (inte bara senaste)\n\n## Beroenden\n- Blockeras av: Fixtures\n- Blockerar: edge/CLV-analys\n\n## Definition of Done\n- [ ] Odds kopplade till fixture_id för båda ligorna"
+  },
+  {
+    "name": "[STORY] Snapshot 1X2, O/U 2.5 och BTTS per fixture",
+    "labels": ["odds", "p0", "pl", "championship"],
+    "desc": "## Sammanfattning\nImplementera odds-hämtning och lagring för P0-marknader.\n\n## Typ\nStory\n\n## Prioritet\nP0\n\n## Liga\nBåda\n\n## Databehov\n- OddsSnapshot-fält\n- Sync: cron flera gånger/dag\n\n## Acceptanskriterier\n- [ ] Alla tre marknader sparas när tillgängliga\n- [ ] captured_at i UTC\n- [ ] Saknad marknad loggas utan att krascha jobbet\n\n## Beroenden\n- Blockeras av: Fixtures-sync\n\n## Definition of Done\n- [ ] Minst 5 kommande matcher per liga har odds-snapshots"
+  },
+  {
+    "name": "[EPIC] Form & home/away-aggregat",
+    "labels": ["teams", "p0", "data"],
+    "desc": "## Sammanfattning\nBeräkna lagform och hemma/borta-splits som betting-signaler ovanpå resultat.\n\n## Typ\nEpic\n\n## Prioritet\nP0\n\n## Liga\nBåda\n\n## Databehov\n- Derived: last5/last10, home_form, away_form, gf/ga averages\n- Sync: efter resultat-uppdatering\n\n## Acceptanskriterier\n- [ ] Form beräknas likadant för PL och Championship\n- [ ] Hemma/borta separata\n- [ ] Kan frågas per team + cutoff-datum\n\n## Beroenden\n- Blockeras av: Resultat\n\n## Definition of Done\n- [ ] Enhetstester för formberäkning"
+  },
+  {
+    "name": "[STORY] Beräkna last-5/last-10 form per lag",
+    "labels": ["teams", "p0", "data"],
+    "desc": "## Sammanfattning\nSkapa aggregator för senaste matcher (W/D/L, mål, poäng).\n\n## Typ\nStory\n\n## Prioritet\nP0\n\n## Liga\nBåda\n\n## Databehov\n- Input: FixtureResult\n- Output: form-aggregat\n\n## Acceptanskriterier\n- [ ] last5 och last10\n- [ ] Home-only och away-only varianter\n- [ ] Tom historik hanteras\n\n## Beroenden\n- Blockeras av: Resultat-sync\n\n## Definition of Done\n- [ ] Manuellt verifierat för 2 lag"
+  },
+  {
+    "name": "[EPIC] Matchstatistik och xG",
+    "labels": ["data", "p1", "teams"],
+    "desc": "## Sammanfattning\nHämta matchstats och xG/xGA för bättre modellering än enbart slutresultat.\n\n## Typ\nEpic\n\n## Prioritet\nP1\n\n## Liga\nBåda\n\n## Databehov\n- TeamMatchStats: shots, sot, possession, corners, cards, xg, xga\n- Sync: efter match\n\n## Acceptanskriterier\n- [ ] Stats per lag per fixture\n- [ ] xG sparas när källan har det\n- [ ] Saknad xG flaggas\n\n## Beroenden\n- Blockeras av: Fixtures/resultat\n\n## Definition of Done\n- [ ] Stickprov PL + Championship efter en omgång"
+  },
+  {
+    "name": "[STORY] Importera team match stats + xG efter FT",
+    "labels": ["data", "p1", "pl", "championship"],
+    "desc": "## Sammanfattning\nPost-match job som fyller TeamMatchStats inklusive xG om tillgängligt.\n\n## Typ\nStory\n\n## Prioritet\nP1\n\n## Liga\nBåda\n\n## Databehov\n- TeamMatchStats-fält\n- Sync: efter FT (polling tills tillgängligt)\n\n## Acceptanskriterier\n- [ ] Skott/SoT/corners/cards sparas\n- [ ] xG hemma/borta när API ger dem\n- [ ] Idempotent upsert\n\n## Beroenden\n- Blockeras av: Fixtures\n\n## Definition of Done\n- [ ] En avslutad omgång synkad"
+  },
+  {
+    "name": "[EPIC] Lineups",
+    "labels": ["players", "p1", "data"],
+    "desc": "## Sammanfattning\nHämta expected/confirmed lineups för sent edge före kickoff.\n\n## Typ\nEpic\n\n## Prioritet\nP1\n\n## Liga\nBåda\n\n## Databehov\n- Lineup: formation, players[], is_confirmed\n- Sync: matchdag\n\n## Acceptanskriterier\n- [ ] Expected och confirmed skiljs åt\n- [ ] Spelar-id:n kopplade till Player\n- [ ] Timestamp för när lineup bekräftades\n\n## Beroenden\n- Blockeras av: Players + Fixtures\n\n## Definition of Done\n- [ ] Test på minst en matchdag"
+  },
+  {
+    "name": "[EPIC] Spelarstatistik och H2H",
+    "labels": ["players", "p1", "data"],
+    "desc": "## Sammanfattning\nSpelarstats (mål, assists, minuter, xG/xA) och head-to-head mellan lag.\n\n## Typ\nEpic\n\n## Prioritet\nP1\n\n## Liga\nBåda\n\n## Databehov\n- PlayerMatchStats, H2H-aggregat\n- Sync: efter match / on-demand\n\n## Acceptanskriterier\n- [ ] Per-match spelarstats för deltagare\n- [ ] H2H senaste N möten\n- [ ] Användbart för spelarmarknader\n\n## Beroenden\n- Blockeras av: Players + Resultat\n\n## Definition of Done\n- [ ] Exempel-queries dokumenterade"
+  },
+  {
+    "name": "[STORY] H2H-historik mellan två lag",
+    "labels": ["teams", "p1", "data"],
+    "desc": "## Sammanfattning\nEndpoint/query som returnerar senaste inbördes möten med resultat och ev. xG.\n\n## Typ\nStory\n\n## Prioritet\nP1\n\n## Liga\nBåda\n\n## Databehov\n- Fixtures + results (+ stats om finns)\n\n## Acceptanskriterier\n- [ ] Senaste 5–10 H2H\n- [ ] Fungerar över säsonger\n- [ ] Tom historik hanteras\n\n## Beroenden\n- Blockeras av: Historiska fixtures\n\n## Definition of Done\n- [ ] Verifierat för ett PL- och ett Championship-par"
+  },
+  {
+    "name": "[TASK] P2 backlog: domare, AH/corners, schema-belastning",
+    "labels": ["p2", "data"],
+    "desc": "## Sammanfattning\nParkera P2-idéer så de inte blandas med P0-leverans.\n\n## Typ\nTask\n\n## Prioritet\nP2\n\n## Liga\nBåda\n\n## Databehov\n- Domartendenser, fler odds-marknader, rest-days, transfers, väder\n\n## Acceptanskriterier\n- [ ] Lista finns i docs/krav\n- [ ] Ingen implementation i v1 utan explicit beslut\n\n## Beroenden\n- Blockeras av: P0/P1 klart\n\n## Definition of Done\n- [ ] Dokumenterad P2-lista"
+  }
+]
