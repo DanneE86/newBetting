@@ -53,7 +53,7 @@ function Normalize-Name([string]$n) {
 }
 
 function Write-JsonFile($Path, $Obj) {
-    [System.IO.File]::WriteAllText($Path, ($Obj | ConvertTo-Json -Depth 12), $utf8)
+    [System.IO.File]::WriteAllText($Path, ($Obj | ConvertTo-Json -Depth 12 -Compress), $utf8)
 }
 
 function Get-StatInt($stats, $key) {
