@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T13:12:48.937Z",
+  "updatedAt": "2026-09-27T13:34:03.952Z",
   "source": "football-data.co.uk Referee/HY/AY/HR/AR/HF/AF",
   "count": 124,
   "referees": [
@@ -1192,17 +1192,6 @@
       "homeWinRate": 0.429
     },
     {
-      "league": "PL",
-      "referee": "P Tierney",
-      "matches": 14,
-      "yellowPg": 3.14,
-      "redPg": 0.143,
-      "bookingPointsPg": 35,
-      "foulsPg": 20.4,
-      "goalsPg": 2.07,
-      "homeWinRate": 0.5
-    },
-    {
       "league": "EL1",
       "referee": "K Dowle",
       "matches": 7,
@@ -1212,6 +1201,17 @@
       "foulsPg": 21.6,
       "goalsPg": 3.14,
       "homeWinRate": 0.429
+    },
+    {
+      "league": "PL",
+      "referee": "P Tierney",
+      "matches": 14,
+      "yellowPg": 3.14,
+      "redPg": 0.143,
+      "bookingPointsPg": 35,
+      "foulsPg": 20.4,
+      "goalsPg": 2.07,
+      "homeWinRate": 0.5
     },
     {
       "league": "PL",

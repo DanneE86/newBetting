@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T11:36:05.130Z",
+  "updatedAt": "2026-09-27T13:27:23.767Z",
   "leagues": {
     "PL": {
       "name": "Premier League",
@@ -57,20 +57,22 @@
     },
     "SE2": {
       "name": "Superettan",
-      "history": "none"
+      "history": "fotmob",
+      "historyMatches": 439,
+      "upcoming": 14
     },
     "SE3N": {
       "name": "Div 1 Norra",
       "history": "tsdb",
       "historyMatches": 429,
-      "callsNow": 7,
+      "fromCache": true,
       "upcoming": 27
     },
     "SE3S": {
       "name": "Div 1 Södra",
       "history": "tsdb",
       "historyMatches": 432,
-      "callsNow": 7,
+      "fromCache": true,
       "upcoming": 24
     },
     "BR": {
@@ -111,7 +113,7 @@
       "name": "OBOS-ligaen",
       "history": "tsdb",
       "historyMatches": 424,
-      "callsNow": 7,
+      "fromCache": true,
       "upcoming": 31
     },
     "EK": {
@@ -130,7 +132,7 @@
       "name": "1. division",
       "history": "tsdb",
       "historyMatches": 246,
-      "callsNow": 23,
+      "fromCache": true,
       "upcoming": 12
     },
     "PT": {
@@ -147,7 +149,7 @@
       "name": "HNL",
       "history": "tsdb",
       "historyMatches": 227,
-      "callsNow": 29,
+      "fromCache": true,
       "upcoming": 10
     },
     "JP1": {
@@ -160,21 +162,21 @@
       "name": "J2 League",
       "history": "tsdb",
       "historyMatches": 820,
-      "callsNow": 50,
+      "fromCache": true,
       "upcoming": 30
     },
     "JP3": {
       "name": "J3 League",
       "history": "tsdb",
       "historyMatches": 460,
-      "callsNow": 30,
+      "fromCache": true,
       "upcoming": 30
     },
     "KR": {
       "name": "K League 1",
       "history": "tsdb",
       "historyMatches": 408,
-      "callsNow": 8,
+      "fromCache": true,
       "upcoming": 12
     },
     "MX": {
@@ -193,7 +195,7 @@
       "name": "Chance Liga",
       "history": "tsdb",
       "historyMatches": 341,
-      "callsNow": 32,
+      "fromCache": true,
       "upcoming": 17
     },
     "CHI": {
