@@ -72,6 +72,14 @@ jobs:
         shell: powershell
         run: node scripts/daily-scanner.mjs | Where-Object { $_ -notlike '@@progress*' }
 
+      - name: Stryktipset (Svenska Spel)
+        continue-on-error: true
+        run: node scripts/fetch-stryktipset.mjs
+
+      # Kontroll att webbversionen går att bygga; själva sidan byggs av Cloudflare Pages vid push.
+      - name: Testbygg webbversion
+        run: node scripts/build-static-site.mjs
+
       - name: Committa ny data
         shell: bash
         run: |

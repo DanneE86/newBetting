@@ -11,3 +11,6 @@ blob-report/
 data/open/*.html
 data/reports/
 
+
+# Webbversion (byggs av Cloudflare Pages: node scripts/build-static-site.mjs)
+site/
