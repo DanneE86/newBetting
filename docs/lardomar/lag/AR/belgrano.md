@@ -1,0 +1,69 @@
+# Belgrano (Liga Profesional) – lärdomar
+
+Genererad 2026-09-28. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+
+## I korthet
+
+- Stark historik mot Tigre (−0,50 p/match mot marknaden, 9 möten), Racing Club (−0,73 p/match mot marknaden, 8 möten), Union de Santa Fe (+0,71 p/match mot marknaden, 8 möten), Banfield (+0,68 p/match mot marknaden, 7 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+
+## Nuläge (senaste 8 ligamatcher)
+
+Form (äldst → senast): OVVFOOOV · senaste match 2026-09-20
+
+| Mått | Värde |
+|---|---|
+| Tur (poäng − xP per match) | – |
+| xG-målskillnad − målskillnad | – |
+| Poäng mot marknaden per match | +0,02 |
+
+## Säsonger
+
+| Säsong | Liga | M | P/M | Mot marknaden (hemma / borta) | Kryss (odds) | Mål för–emot | xG för–emot | xP/M |
+|---|---|---|---|---|---|---|---|---|
+| 2012/13 | AR | 38 | 1,55 | +0,36 (+0,20 / +0,52) | 45 % (31 %) | 0,95–0,68 | – | – |
+| 2013/14 | AR | 38 | 1,29 | +0,04 (−0,15 / +0,23) | 42 % (31 %) | 1,18–1,08 | – | – |
+| 2014 | AR | 19 | 1,32 | −0,10 (−0,03 / −0,17) | 21 % (29 %) | 1,37–1,37 | – | – |
+| 2015 | AR | 33 | 1,67 | +0,22 (+0,07 / +0,36) | 30 % (30 %) | 1,09–0,85 | – | – |
+| 2016 | AR | 16 | 1,00 | −0,39 (+0,25 / −1,03) | 25 % (29 %) | 1,31–1,50 | – | – |
+| 2016/17 | AR | 30 | 0,87 | −0,36 (−0,66 / −0,06) | 37 % (30 %) | 0,70–1,13 | – | – |
+| 2017/18 | AR | 27 | 1,48 | +0,09 (+0,01 / +0,15) | 37 % (29 %) | 1,07–1,04 | – | – |
+| 2018/19 | AR | 25 | 0,96 | −0,19 (−0,15 / −0,23) | 48 % (30 %) | 0,64–0,92 | – | – |
+| 2023 | AR | 42 | 1,36 | +0,11 (+0,35 / −0,11) | 29 % (32 %) | 0,98–1,10 | – | – |
+| 2024 | AR | 41 | 1,20 | +0,02 (−0,14 / +0,20) | 39 % (31 %) | 1,27–1,29 | – | – |
+| 2025 | AR | 32 | 1,16 | −0,08 (−0,35 / +0,18) | 50 % (31 %) | 0,81–1,06 | – | – |
+| 2026 | AR | 30 | 1,73 | +0,35 (+0,07 / +0,62) | 33 % (31 %) | 1,17–0,77 | – | – |
+
+## Inbördes möten (senaste 8 åren, lag i ligan nu)
+
+| Motståndare | M | V-O-F | Mål | Mot marknaden | Kryss mot odds | Senast |
+|---|---|---|---|---|---|---|
+| Talleres Cordoba | 9 | 1-7-1 | 5–7 | −0,02 | +46 pe | 2026-05-09 1-0 (b) |
+| Tigre | 9 | 1-5-3 | 7–10 | −0,50 | +23 pe | 2026-08-06 0-0 (b) |
+| Argentinos Jrs | 8 | 1-4-3 | 3–7 | −0,18 | +19 pe | 2026-08-01 0-1 (h) |
+| Defensa y Justicia | 8 | 2-2-4 | 9–10 | −0,36 | −6 pe | 2026-08-23 1-2 (h) |
+| Racing Club | 8 | 0-2-6 | 6–20 | −0,73 | −3 pe | 2026-03-22 1-2 (h) |
+| Union de Santa Fe | 8 | 4-4-0 | 13–4 | +0,71 | +18 pe | 2026-05-12 2-0 (h) |
+| Banfield | 7 | 4-3-0 | 11–5 | +0,68 | +11 pe | 2026-08-10 2-0 (b) |
+| Boca Juniors | 7 | 3-1-3 | 12–13 | +0,44 | −15 pe | 2025-10-18 2-1 (b) |
+| Huracan | 7 | 2-2-3 | 8–7 | −0,20 | −3 pe | 2026-09-04 1-1 (h) |
+| Central Cordoba | 6 | 2-2-2 | 6–11 | −0,21 | +3 pe | 2025-08-25 0-3 (h) |
+| Estudiantes L.P. | 6 | 2-2-2 | 6–9 | +0,25 | +2 pe | 2025-10-12 1-1 (h) |
+| Newells Old Boys | 6 | 2-3-1 | 5–2 | +0,20 | +18 pe | 2025-09-23 3-0 (h) |
+| Sarmiento Junin | 6 | 2-4-0 | 9–2 | +0,09 | +34 pe | 2026-09-13 1-1 (b) |
+| Atl. Tucuman | 5 | 3-1-1 | 9–6 | +0,60 | −11 pe | 2026-08-30 0-0 (b) |
+| Barracas Central | 5 | 0-4-1 | 3–5 | −0,85 | +49 pe | 2026-04-20 0-0 (b) |
+| Ind. Rivadavia | 5 | 2-1-2 | 3–5 | −0,14 | −11 pe | 2026-08-15 2-0 (h) |
+| Lanus | 5 | 0-1-4 | 3–9 | −0,91 | −12 pe | 2024-07-25 2-3 (b) |
+| River Plate | 5 | 2-0-3 | 6–11 | +0,43 | −26 pe | 2026-05-24 3-2 (b) |
+| Rosario Central | 5 | 2-2-1 | 5–4 | +0,37 | +8 pe | 2026-07-23 2-1 (h) |
+| San Lorenzo | 5 | 1-3-1 | 5–4 | −0,15 | +26 pe | 2024-11-29 2-0 (b) |
+| Gimnasia L.P. | 4 | 2-0-2 | 4–2 | −0,05 | −32 pe | 2026-04-26 0-1 (h) |
+| Platense | 4 | 1-1-2 | 4–3 | −0,34 | −9 pe | 2024-10-19 0-1 (h) |
+| Aldosivi | 3 | 2-1-0 | 3–0 | +0,44 | +5 pe | 2026-04-11 1-0 (h) |
+| Independiente | 3 | 0-1-2 | 2–5 | −0,69 | +3 pe | 2024-09-15 1-1 (h) |
+| Velez Sarsfield | 3 | 1-1-1 | 3–2 | +0,43 | +6 pe | 2024-10-27 1-1 (b) |
+| Estudiantes Rio Cuarto | 2 | 2-0-0 | 3–1 | +1,16 | −29 pe | 2026-09-20 2-1 (h) |
+| Instituto | 2 | 1-0-1 | 3–2 | +0,25 | −32 pe | 2024-11-12 3-1 (h) |
+| Dep. Riestra | 1 | 1-0-0 | 2–1 | +1,30 | −33 pe | 2024-07-19 2-1 (h) |
+
+Ligans test av inbördes möten mot marknaden: ingen effekt.

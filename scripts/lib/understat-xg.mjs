@@ -10,7 +10,7 @@ import { nameScore } from './match-context.mjs';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
 const UNDERSTAT = { PL: 'EPL', LL: 'La_liga', SA: 'Serie_A', BL: 'Bundesliga', L1: 'Ligue_1' };
 
-async function load(code, season) {
+export async function loadUnderstatXg(code, season) {
   const file = path.join(root, 'data', 'open', `understat_xg_${code}_${season}.json`);
   try { return JSON.parse(fs.readFileSync(file, 'utf8')); } catch { /* hamta */ }
   const year = 2000 + Number(String(season).slice(0, 2));
@@ -34,7 +34,7 @@ export async function fillXg(matches, log = () => {}) {
   const need = new Map();
   for (const m of matches) if (m.hxg == null && UNDERSTAT[m.league]) need.set(`${m.league}|${m.season}`, [m.league, m.season]);
   for (const [k, [code, season]] of need) {
-    const rows = await load(code, season);
+    const rows = await loadUnderstatXg(code, season);
     if (!rows?.length) { log(`  xG ${code} ${season}: saknas hos Understat`); continue; }
     const byDate = new Map();
     for (const r of rows) (byDate.get(r.date) || byDate.set(r.date, []).get(r.date)).push(r);

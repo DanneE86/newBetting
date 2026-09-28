@@ -1,0 +1,103 @@
+{
+  "generatedAt": "2026-09-28T19:15:39.685Z",
+  "note": "Genererad av scripts/learnings-model.mjs. Bara delar som valdes pa validering och forbattrade kontrollperioden (2023/24-) ar med. Refittad pa all data.",
+  "open": {
+    "test": {
+      "dLL": -0.0007,
+      "z": -2.5,
+      "n": 17078,
+      "bets": {
+        "bets": 3790,
+        "roi": 0.078,
+        "roiSe": 0.0239,
+        "clv": 0.0152,
+        "byKind": {
+          "favorit": {
+            "bets": 1063,
+            "roi": 0.0523
+          },
+          "skräll": {
+            "bets": 444,
+            "roi": 0.1574
+          },
+          "kryss": {
+            "bets": 2283,
+            "roi": 0.0746
+          }
+        }
+      },
+      "betsBase": {
+        "bets": 1287,
+        "roi": 0.0233,
+        "roiSe": 0.0459,
+        "clv": 0.036,
+        "byKind": {
+          "favorit": {
+            "bets": 98,
+            "roi": 0.1394
+          },
+          "skräll": {
+            "bets": 433,
+            "roi": -0.0252
+          },
+          "kryss": {
+            "bets": 756,
+            "roi": 0.036
+          }
+        }
+      }
+    },
+    "beta": {
+      "h2hPts": 0.0303
+    },
+    "drawBeta": {},
+    "scale": {
+      "h2hPts": {
+        "mean": -0.0481,
+        "sd": 1.3349
+      }
+    },
+    "leagues": {
+      "L1": {
+        "g": 0.0381,
+        "h": -0.044,
+        "d": -0.0037
+      },
+      "CH": {
+        "g": -0.0049,
+        "h": -0.0002,
+        "d": -0.0316
+      },
+      "EL1": {
+        "g": 0.1057,
+        "h": -0.0085,
+        "d": -0.0159
+      },
+      "PT": {
+        "g": 0.1607,
+        "h": -0.0259,
+        "d": 0.0142
+      },
+      "LL2": {
+        "g": 0.0661,
+        "h": 0.0482,
+        "d": 0.0465
+      },
+      "GR": {
+        "g": 0.1229,
+        "h": -0.0953,
+        "d": 0.0629
+      },
+      "SA": {
+        "g": 0.1504,
+        "h": -0.1208,
+        "d": 0.0543
+      },
+      "SB": {
+        "g": 0.132,
+        "h": -0.0363,
+        "d": 0.1181
+      }
+    }
+  }
+}

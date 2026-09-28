@@ -1,0 +1,58 @@
+# Heidenheim (2. Bundesliga) – lärdomar
+
+Genererad 2026-09-28. Ligans lärdomar: [BL2](../../ligor/BL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+
+## I korthet
+
+- Senaste 8: tur med +0,57 poäng per match mot xP. Marknaden prisar redan in det i ligan (ingen bekräftad effekt), så det är inget spel i sig.
+- Stark historik mot Holstein Kiel (+0,57 p/match mot marknaden, 12 möten), Darmstadt (+0,59 p/match mot marknaden, 11 möten), Bochum (−0,71 p/match mot marknaden, 10 möten), Greuther Furth (+0,64 p/match mot marknaden, 8 möten), Hannover (+0,84 p/match mot marknaden, 8 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+
+## Nuläge (senaste 8 ligamatcher)
+
+Form (äldst → senast): VFVFVVVO · senaste match 2026-09-20
+
+| Mått | Värde |
+|---|---|
+| Tur (poäng − xP per match) | +0,57 |
+| xG-målskillnad − målskillnad | −0,24 |
+| Poäng mot marknaden per match | +0,51 |
+
+## Säsonger
+
+| Säsong | Liga | M | P/M | Mot marknaden (hemma / borta) | Kryss (odds) | Mål för–emot | xG för–emot | xP/M |
+|---|---|---|---|---|---|---|---|---|
+| 2017/18 | BL2 | 34 | 1,24 | +0,05 (+0,34 / −0,23) | 26 % (28 %) | 1,47–1,65 | 1,35–1,70* | 1,19 |
+| 2018/19 | BL2 | 34 | 1,62 | +0,44 (+0,35 / +0,54) | 29 % (27 %) | 1,62–1,32 | 1,64–1,72* | 1,34 |
+| 2019/20 | BL2 | 34 | 1,62 | +0,25 (+0,58 / −0,08) | 29 % (27 %) | 1,32–1,06 | 1,43–1,41* | 1,40 |
+| 2020/21 | BL2 | 34 | 1,50 | +0,00 (+0,37 / −0,37) | 18 % (28 %) | 1,44–1,44 | 1,51–1,42* | 1,43 |
+| 2021/22 | BL2 | 34 | 1,53 | +0,05 (+0,37 / −0,27) | 21 % (27 %) | 1,26–1,32 | 1,52–1,54* | 1,37 |
+| 2022/23 | BL2 | 34 | 1,97 | +0,51 (+0,65 / +0,36) | 29 % (27 %) | 1,97–1,06 | 1,65–1,27* | 1,62 |
+| 2023/24 | BL | 34 | 1,24 | +0,35 (+0,34 / +0,37) | 35 % (23 %) | 1,47–1,62 | 1,25–1,94 | 1,04 |
+| 2024/25 | BL | 34 | 0,85 | −0,15 (−0,50 / +0,20) | 15 % (24 %) | 1,09–1,88 | 1,26–1,89 | 1,07 |
+| 2025/26 | BL | 34 | 0,76 | −0,17 (−0,06 / −0,27) | 24 % (23 %) | 1,21–2,12 | 1,47–2,11 | 1,07 |
+| 2026/27 | BL2 | 6 | 2,17 | +0,69 (+1,31 / +0,06) | 17 % (25 %) | 2,33–2,00 | 1,89–1,82* | 1,45 |
+
+\* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+
+## Inbördes möten (senaste 8 åren, lag i ligan nu)
+
+| Motståndare | M | V-O-F | Mål | Mot marknaden | Kryss mot odds | Senast |
+|---|---|---|---|---|---|---|
+| St Pauli | 14 | 4-3-7 | 17–19 | −0,26 | −6 pe | 2026-04-25 2-0 (h) |
+| Holstein Kiel | 12 | 7-3-2 | 20–11 | +0,57 | −2 pe | 2026-09-13 1-0 (h) |
+| Darmstadt | 11 | 7-1-3 | 18–16 | +0,59 | −18 pe | 2024-04-28 1-0 (b) |
+| Bochum | 10 | 1-3-6 | 6–17 | −0,71 | +2 pe | 2025-05-02 0-0 (h) |
+| Greuther Furth | 8 | 5-2-1 | 8–2 | +0,64 | −3 pe | 2026-09-06 1-0 (b) |
+| Hannover | 8 | 6-0-2 | 17–6 | +0,84 | −28 pe | 2023-04-14 3-0 (b) |
+| Karlsruhe | 8 | 3-3-2 | 15–10 | +0,00 | +11 pe | 2023-03-17 5-2 (h) |
+| Nurnberg | 8 | 4-2-2 | 18–12 | +0,39 | −3 pe | 2023-02-19 5-0 (h) |
+| Bielefeld | 6 | 2-3-1 | 6–7 | +0,13 | +23 pe | 2026-09-20 2-2 (b) |
+| Dresden | 6 | 3-2-1 | 10–7 | +0,26 | +6 pe | 2026-08-29 5-3 (h) |
+| Wolfsburg | 6 | 1-2-3 | 5–10 | −0,22 | +7 pe | 2026-01-17 1-1 (b) |
+| Osnabruck | 5 | 4-1-0 | 13–7 | +0,94 | −8 pe | 2026-08-08 4-3 (h) |
+| Braunschweig | 4 | 2-0-2 | 5–3 | −0,12 | −29 pe | 2023-02-04 0-2 (b) |
+| Magdeburg | 4 | 1-3-0 | 4–1 | −0,04 | +48 pe | 2023-05-07 0-0 (h) |
+| Kaiserslautern | 2 | 0-2-0 | 4–4 | −0,50 | +71 pe | 2023-04-01 2-2 (b) |
+| Hertha | 1 | 0-0-1 | 1–4 | −1,38 | −26 pe | 2026-08-15 1-4 (b) |
+
+Ligans test av inbördes möten mot marknaden: ingen effekt.

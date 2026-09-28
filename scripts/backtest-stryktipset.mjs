@@ -10,7 +10,8 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { analyzeDraw, evaluateSnapshot, loadNationalElo, loadGroup, fitModel, get, API } from './fetch-stryktipset.mjs';
+import { analyzeDraw, evaluateSnapshot, loadNationalElo, loadGroup, fitModel } from './fetch-stryktipset.mjs';
+import { loadDraw } from './lib/tips-archive.mjs'; // arkivet forst (data/tips-archive), annars API:t (och sparas)
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const arg = (name, def) => { const i = process.argv.indexOf(`--${name}`); return i > 0 ? process.argv[i + 1] : def; };
@@ -48,7 +49,8 @@ const ctx = {
 const logLoss = (p, k) => (p ? -Math.log(Math.max(p[k], 1e-6)) : null);
 const draws = [];
 for (let n = START_DRAW; n > START_DRAW - 200 && draws.length < COUNT; n--) {
-  const d = await get(`${API}/${PRODUCT.id}/draws/${n}`).then((r) => r.draw).catch(() => null);
+  const entry = await loadDraw(PRODUCT.id, n).catch(() => null);
+  const d = entry?.draw || null;
   if (!d) continue;
   if ((d.regCloseTime || '') > TO) continue;
   if ((d.regCloseTime || '') < TO_FROM) break;
@@ -56,7 +58,7 @@ for (let n = START_DRAW; n > START_DRAW - 200 && draws.length < COUNT; n--) {
   const top4 = (d.drawEvents || []).filter((e) => TOP4.has(e.match?.league?.name)).length;
   const ok = ALL || (PRODUCT.id === 'europatipset' ? top4 >= 3 : pl > 0);
   if (!ok) { log(`omgång ${n} (${d.regCloseTime.slice(0, 10)}): PL ${pl}, topp 4 ${top4} – hoppar över`); continue; }
-  const result = await get(`${API}/${PRODUCT.id}/draws/${n}/result`).then((r) => r.result || r).catch(() => null);
+  const result = entry?.result || null;
   if (!result?.events?.length || !result.distribution?.length) { log(`omgång ${n}: facit saknas`); continue; }
   const a = await analyzeDraw(PRODUCT, d, ctx, result);
   const outcomes = a.events.map((e) => e.result?.outcome);
