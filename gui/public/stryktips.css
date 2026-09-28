@@ -371,3 +371,9 @@ body.view-stryktips main { display: none !important; }
 .st-lu-side small { color: var(--muted); }
 .st-lu-note { flex-basis: 100%; color: var(--muted); }
 .st-bt-wrap { overflow-x: auto; }
+
+/* Varde per omgang */
+.st-value { margin: 0; padding: 0.6rem 0.9rem; border-radius: 12px; border: 1px solid var(--line); font-size: 0.9rem; }
+.st-value.low { border-color: rgba(239, 107, 91, 0.55); background: rgba(239, 107, 91, 0.08); color: #f3a39a; }
+.st-value.high { border-color: rgba(76, 200, 115, 0.55); background: rgba(76, 200, 115, 0.08); color: #8fe0a8; }
+.st-value.normal { color: var(--muted); }

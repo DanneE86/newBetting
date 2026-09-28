@@ -576,18 +576,51 @@ function reduceSystem(events, grund, { rowPrice = 1, turnover, signMin, realTurn
     rules: { payoutMin: cut.t, payoutMinReal: payoutMin, jackpot, realTurnover, signMin, colorGreen: COLOR.green, colorRed: COLOR.red, turnover: T },
     colors: colors.map((c) => c.join(',')),
     rowList: kept.map((r) => r.row.map((k) => SIGNS[k]).join('')),
+    rowP: kept.map((r) => r.p), rowReal: kept.map((r) => r.real), // for A+B-optimering (skrivs inte till JSON)
   };
 }
 
 // Basta reducerade system over alla grundradskandidater (hogst chans till 13 ratt)
-function bestReduced(events, candidates, opts) {
+// Mal for valet av grundrad/grans: 'hit' = hogst chans till 13 ratt, 'ev' = hogst forvantad aterbetalning (chans x utdelning)
+const OBJECTIVE = process.env.STRYK_OBJECTIVE || 'hit';
+// B byggs tillsammans med A: B valjs sa att paret tacker mest (rader som redan finns i A raknas inte) - STRYK_B_JOINT=0 stanger av
+const B_JOINT = process.env.STRYK_B_JOINT !== '0';
+function bestReduced(events, candidates, opts, exclude = null) {
+  const score = (red) => red.rowList.reduce((sum, row, i) => (exclude?.has(row) ? sum : sum + (OBJECTIVE === 'ev' ? red.rowP[i] * red.rowReal[i] : red.rowP[i])), 0);
   let best = null;
   for (const g of candidates) {
     if (g.rows < BUDGET.min) continue;
     const red = reduceSystem(events, g, opts);
-    if (red && (!best || red.hitAll > best.reduced.hitAll)) best = { system: g, reduced: red };
+    if (!red) continue;
+    const sc = score(red);
+    if (!best || sc > best.score) best = { system: g, reduced: red, score: sc };
   }
   return best;
+}
+
+// Varde per omgang: forvantad aterbetalning fran 13 ratt / insats (system A). Nivaer fran backtest 2025/26
+// (33 omg): p25 0,26, median 0,33, p75 0,40. Lagt varde -> skrivs ut, men raderna skapas anda (anvandarens val).
+const VALUE_LEVELS = { low: 0.26, high: 0.40 };
+function drawValue(red, jackpot) {
+  if (!red?.cost) return null;
+  const ratio = red.expectedReturn / red.cost;
+  const level = ratio <= VALUE_LEVELS.low ? 'low' : ratio >= VALUE_LEVELS.high ? 'high' : 'normal';
+  const pctTxt = `${Math.round(ratio * 100)} %`;
+  const text = level === 'low'
+    ? `Omgången saknar värde: förväntad återbetalning från 13 rätt ≈ ${pctTxt} av insatsen (normalt 26–40 %). Raderna är ändå skapade.`
+    : level === 'high'
+      ? `Omgången har högt värde: förväntad återbetalning från 13 rätt ≈ ${pctTxt} av insatsen (normalt 26–40 %)${jackpot > 0 ? ' – jackpot ingår' : ''}.`
+      : `Normalt värde: förväntad återbetalning från 13 rätt ≈ ${pctTxt} av insatsen (normalt 26–40 %).`;
+  return { ratio: r3(ratio), level, text };
+}
+
+// A+B tillsammans: chans att nagot av systemen tar 13 ratt, och hur manga rader som finns i bada
+function pairStats(a, b) {
+  if (!a || !b) return {};
+  const setA = new Set(a.rowList);
+  let extra = 0, overlap = 0;
+  b.rowList.forEach((row, i) => { if (setA.has(row)) overlap++; else extra += b.rowP[i]; });
+  return { unionHit: a.hitAll + extra, overlapRows: overlap };
 }
 
 // Forifylld lank till Gambling Cabins reduceringsverktyg (samma grundrad, farger och regler).
@@ -726,7 +759,9 @@ async function analyzeDraw(product, draw, ctx, result) {
       const eh = ctx.elo.get(ISO_TO_ELO[hp.isoCode] || hp.isoCode.slice(0, 2));
       const ea = ctx.elo.get(ISO_TO_ELO[ap.isoCode] || ap.isoCode.slice(0, 2));
       // Landskamp: hp.countryName = lagets land (klubblag har samma land som ligan)
-      if (eh && ea && hp.countryName === home) {
+      // Namnjamforelse tal "&"/"och" och skiljetecken (Bosnien & Hercegovina = Bosnien och Hercegovina)
+      const sameName = (a, b) => [a, b].map((s) => String(s || '').toLowerCase().replace(/&/g, 'och').replace(/[^a-zåäöéü]+/g, '')).reduce((x, y) => x === y);
+      if (eh && ea && sameName(hp.countryName, home)) {
         const { lh, la } = eloToLambdas(eh.elo, ea.elo);
         const sm = scoreMatrix(lh, la);
         a.model = [sm.home, sm.draw, sm.away];
@@ -792,7 +827,7 @@ async function analyzeDraw(product, draw, ctx, result) {
   let systemB = null, reducedB = null;
   if (system) {
     const singlesA = system.sets.map((x) => (x.length === 1 ? x[0] : -1));
-    const bestB = bestReduced(out, grundCandidates(out, GRUND_MAX_ROWS, singlesA), { rowPrice, turnover, realTurnover, jackpot, payoutMin: utdMin(product.id), signMin: SIGN_MIN.B });
+    const bestB = bestReduced(out, grundCandidates(out, GRUND_MAX_ROWS, singlesA), { rowPrice, turnover, realTurnover, jackpot, payoutMin: utdMin(product.id), signMin: SIGN_MIN.B }, B_JOINT ? new Set(reduced.rowList) : null);
     systemB = bestB?.system || null; reducedB = bestB?.reduced || null;
     if (systemB) out.forEach((a, i) => { a.systemPickB = systemB.picks[i]; });
     if (reducedB) reducedB.gamblingCabinUrl = gamblingCabinUrl(product.id, draw.drawNumber, closeDate, out, systemB.sets, reducedB);
@@ -804,8 +839,9 @@ async function analyzeDraw(product, draw, ctx, result) {
     open: draw.drawState === 'Open', closeDescription: draw.regCloseDescription, regCloseTime: draw.regCloseTime,
     turnover: draw.currentNetSale, comment: draw.drawComment, modelCutoff: cutoff, events: out,
     system: system && { maxRows: GRUND_MAX_ROWS, rows: system.rows, hitAll: system.hitAll, hitSingle: out.reduce((s, e) => s * Math.max(...e.final), 1) },
-    reduced: reduced && { ...reduced, colors: undefined },
-    reducedB: reducedB && { ...reducedB, colors: undefined, sameSingles: out.filter((a) => a.systemPick?.signs.length === 1 && a.systemPickB?.signs === a.systemPick.signs).length },
+    value: drawValue(reduced, jackpot),
+    reduced: reduced && { ...reduced, colors: undefined, rowP: undefined, rowReal: undefined },
+    reducedB: reducedB && { ...reducedB, colors: undefined, rowP: undefined, rowReal: undefined, ...pairStats(reduced, reducedB), sameSingles: out.filter((a) => a.systemPick?.signs.length === 1 && a.systemPickB?.signs === a.systemPick.signs).length },
     result: result ? {
       correct: out.filter((a) => a.result && a.result.outcome === a.tip).length,
       systemCorrect: out.filter((a) => a.result && a.systemPick?.signs.includes(a.result.outcome)).length,
@@ -998,6 +1034,7 @@ async function main() {
       }
       log(`  expertanalyser: ${a.events.reduce((s, e) => s + e.experts.length, 0)}, tio tidningar: ${a.events.filter((e) => e.tioTidningar).length} matcher`);
       if (a.reducedB) log(`  system B: grundrad ${a.reducedB.grundRows} -> ${a.reducedB.rows} rader (${a.reducedB.cost} kr), minst ${a.reducedB.rules.signMin.join('-')}, gemensamma spikar ${a.reducedB.sameSingles}, chans 13 rätt 1 på ${Math.round(1 / a.reducedB.hitAll)}`);
+      if (a.value) log(`  värde: ${a.value.level} (${Math.round(a.value.ratio * 100)} %)`);
       if (a.reduced) log(`  reducerat: grundrad ${a.reduced.grundRows} -> ${a.reduced.rows} rader (${a.reduced.cost} kr), utdelning ≥ ${a.reduced.rules.payoutMin} kr, minst ${a.reduced.rules.signMin.join('-')} (1-X-2), chans 13 rätt 1 på ${Math.round(1 / a.reduced.hitAll)}`);
       if (a.result) log(`  facit: ${a.result.correct}/${a.result.total} rätt på enkelrad, grundrad ${a.result.systemCorrect}/${a.result.total}, reducerat bästa rad ${a.result.reducedCorrect}/${a.result.total}`);
       for (const x of a.result?.experts || []) log(`  expert ${x.author}: ${x.correct}/${x.tipped} rätt`);

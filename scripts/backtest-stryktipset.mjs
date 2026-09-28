@@ -79,8 +79,9 @@ for (let n = START_DRAW; n > START_DRAW - 200 && draws.length < COUNT; n--) {
     drawNumber: n, date: d.regCloseTime.slice(0, 10), plMatches: pl, top4Matches: top4, outcomes: outcomes.join(''),
     draws13: outcomes.filter((o) => o === 'X').length,
     prize13: result.distribution[0] ? { amount: result.distribution[0].amount, winners: result.distribution[0].winners } : null,
-    A: a.reduced && { rows: a.reduced.rows, cost: a.reduced.cost, grund: a.reduced.grundRows, payoutMin: a.reduced.rules.payoutMin, hit: a.reduced.hitAll, ...evalA },
-    B: a.reducedB && { rows: a.reducedB.rows, cost: a.reducedB.cost, grund: a.reducedB.grundRows, payoutMin: a.reducedB.rules.payoutMin, hit: a.reducedB.hitAll, ...evalB },
+    A: a.reduced && { rows: a.reduced.rows, cost: a.reduced.cost, grund: a.reduced.grundRows, payoutMin: a.reduced.rules.payoutMin, hit: a.reduced.hitAll, er: a.reduced.expectedReturn, ...evalA },
+    B: a.reducedB && { rows: a.reducedB.rows, cost: a.reducedB.cost, grund: a.reducedB.grundRows, payoutMin: a.reducedB.rules.payoutMin, hit: a.reducedB.hitAll, er: a.reducedB.expectedReturn, union: a.reducedB.unionHit, overlap: a.reducedB.overlapRows, ...evalB },
+    pairBest: Math.max(evalA?.best ?? 0, evalB?.best ?? 0),
     grundA: evalA?.groundCorrect, grundB: evalB?.groundCorrect,
     matches,
   });

@@ -129,6 +129,22 @@ Bara A:s teckenminimum ändrat (B 4-3-3). *Chans* = modellens chans till 13 rät
 - Kravet på minst 3 kryss kostar cirka 7 % i chans. 4-2-2 och 3-2-2 gav 1/415 mot 1/447, och fler rader med 11+ rätt.
 - 4-3-3 är den svagaste regeln med minst 3 kryss och används i dag för B. För B vore 3-3-2 eller 4-3-2 minst lika bra.
 
+### Steg 3: fler förbättringar testade (33 omgångar 2025/26, 2026-09-28)
+
+| Variant | A chans | A netto | A 10+/11+/12+ | B chans | B netto | B 10+/11+ | A+B chans |
+|---|---|---|---|---|---|---|---|
+| V0 som innan | 1/447 | −9 742 | 88/13/1 | 1/780 | −8 625 | 44/2 | 1/284 |
+| **V1 B byggs tillsammans med A (infört)** | 1/447 | −9 742 | 88/13/1 | 1/780 | −8 625 | 44/2 | 1/284 |
+| V2 B 4-3-2 | 1/447 | −9 742 | 88/13/1 | 1/785 | −9 803 | 41/3 | 1/285 |
+| V3 B 3-3-2 | 1/447 | −9 742 | 88/13/1 | 1/784 | −11 519 | 39/2 | 1/285 |
+| V4 mål = förväntad återbetalning | 1/3545 | −11 066 | 18/1/0 | 1/4496 | −11 059 | 6/0 | 1/1998 |
+
+- **B tillsammans med A:** ingen effekt, eftersom A och B redan hade 0 gemensamma rader (regeln om högst 1 gemensam spik separerar dem). Behålls som skydd (`STRYK_B_JOINT`).
+- **B:s teckenregel:** 4-3-2 och 3-3-2 gav samma chans men sämre utfall, så B behåller 4-3-3.
+- **Mål = förväntad återbetalning: förkastad.** Modellens förväntade återbetalning från 13 rätt tredubblades, men chansen föll 8 gånger och utfallet blev klart sämre. Målet jagar långa odds där modellen och utdelningsformeln är minst pålitliga. Välj efter chans, inte modellens förväntade värde.
+- **Värde per omgång (infört):** förväntad återbetalning från 13 rätt i förhållande till insatsen, för system A. I backtestet var p25 0,26, median 0,33 och p75 0,40 (obs: backtestets jackpot är något för hög, se förbehåll ovan). Under 26 % visas "Omgången saknar värde", och över 40 % "högt värde". Raderna skapas alltid (användarens val). Att bara spela värdeomgångar kan inte backtestas meningsfullt än, eftersom det inte fanns någon 13-rättare.
+- **Automatisk sen körning:** lördagar 13:05 UTC (arbetsflödet `stryktips-late.yml`).
+
 ## Robusta lärdomar (stöds av hela urvalet)
 
 1. **Oddsen slår vår lagmodell.** Logloss över 216 matcher, där lägre är bättre:
