@@ -9,6 +9,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
+import { findSharpBook, devigMultiplicative } from './pro/lib.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const RAW = path.join(root, 'data', 'raw');
@@ -31,7 +32,7 @@ const SIGN_MIN = { A: [5, 3, 2], B: [4, 3, 3] };
 const BUDGET = { min: 350, max: 400 }; // kr per omgang (rader x radpris)
 const COLOR = { green: 0.45, red: 0.2 }; // folkets streck: gron >= 45 %, rod <= 20 %, annars gul
 const PAYOUT_13 = 0.65 * 0.4; // 65 % aterbetalning, 40 % av potten till 13 ratt
-const UTD_MIN = 30000; // minsta beraknade utdelning for 13 ratt (kr), anvandarens regel
+const UTD_MIN = Number(process.env.STRYK_UTD_MIN ?? 30000); // minsta beraknade utdelning for 13 ratt (kr), anvandarens regel (env for backtest)
 // Samma fasta omsattning som Gambling Cabin raknar utdelning med (sa radantalet blir identiskt dar)
 const GC_TURNOVER = { stryktipset: 25e6, europatipset: 1e7 };
 const HALF_LIFE_DAYS = 150;
@@ -105,6 +106,8 @@ function readCsvMatches(file, league, season) {
   const head = lines[0].split(',');
   const ix = (k) => head.indexOf(k);
   const I = { d: ix('Date'), h: ix('HomeTeam'), a: ix('AwayTeam'), hg: ix('FTHG'), ag: ix('FTAG'), hx: ix('HxG'), ax: ix('AxG') };
+  // Pinnacles slutodds (annars snitt av slutodds) - anvands bara for spelade matcher, dvs i backtest
+  const oddsCols = [['PSCH', 'PSCD', 'PSCA', 'Pinnacle slutodds'], ['AvgCH', 'AvgCD', 'AvgCA', 'snitt slutodds']].map(([h, d, a, src]) => ({ ix: [ix(h), ix(d), ix(a)], src }));
   const out = [];
   for (const l of lines.slice(1)) {
     const c = l.split(',');
@@ -115,6 +118,7 @@ function readCsvMatches(file, league, season) {
     out.push({
       league, season, date, home: c[I.h], away: c[I.a], hg, ag,
       hxg: I.hx >= 0 ? num(c[I.hx]) : null, axg: I.ax >= 0 ? num(c[I.ax]) : null,
+      closing: (() => { for (const o of oddsCols) { const v = o.ix.map((k) => (k >= 0 ? num(c[k]) : null)); if (v.every((x) => x > 1)) return { odds: v, src: o.src }; } return null; })(),
     });
   }
   return out;
@@ -503,15 +507,28 @@ function signColor(folkP) {
 //   tecken 1/X/2: fast minimum per system (A 5-3-2, B 4-3-3), max alltid fullt
 //   utdelning 13 ratt >= UTD_MIN (GC:s formel: 26 % x omsattning / (omsattning x radens streck + 1), fast omsattning per spel);
 //   gransen hojs vid behov (jamnt belopp) tills radantalet ryms i budgeten.
-function reduceSystem(events, grund, { rowPrice = 1, turnover, signMin }) {
+// Utdelningsgransen UTD_MIN galler VERKLIG utdelning: (26 % x verklig omsattning + jackpot) / (omsattning x streck + 1).
+// Kalibrerad mot facit 2025/26: vinnarformeln stammer (faktiska/forvantade vinnare median 1,06) men potten var
+// > 26 % i halften av omgangarna (jackpot/overforda pengar). Gransen oversatts till GC:s formel (fast omsattning)
+// sa att Gambling Cabin-lanken ger samma rader: bada ar avtagande i radens streckprodukt f.
+// Antagande (verifiera forsta gangen en oppen omgang har jackpot): GC raknar in jackpotten i sin pott, eftersom verktyget
+// skickar med den (jp) till sin berakning. Radurvalet paverkas inte av antagandet, bara gransens siffra i lanken.
+function gcPayoutFloor(gcTurnover, realTurnover, jackpot) {
+  const fStar = ((PAYOUT_13 * realTurnover + (jackpot || 0)) / UTD_MIN - 1) / realTurnover;
+  return fStar > 0 ? (PAYOUT_13 * gcTurnover + (jackpot || 0)) / (1 + gcTurnover * fStar) : Infinity;
+}
+
+function reduceSystem(events, grund, { rowPrice = 1, turnover, signMin, realTurnover = turnover, jackpot = 0 }) {
   const minRows = Math.ceil(BUDGET.min / rowPrice), maxRows = Math.floor(BUDGET.max / rowPrice);
   const colors = events.map((e) => [0, 1, 2].map((k) => signColor(e.folk?.[k])));
   const T = turnover;
+  const floor = gcPayoutFloor(T, realTurnover, jackpot);
   const all = [];
   const walk = (i, row, p, f) => {
     if (i === events.length) {
-      const payout = (PAYOUT_13 * T) / (1 + T * f);
-      if (payout >= UTD_MIN && [0, 1, 2].every((k) => row.filter((x) => x === k).length >= signMin[k])) all.push({ row: [...row], p, payout });
+      const payout = (PAYOUT_13 * T + jackpot) / (1 + T * f); // GC:s formel
+      const real = (PAYOUT_13 * realTurnover + jackpot) / (1 + realTurnover * f);
+      if (payout >= floor && [0, 1, 2].every((k) => row.filter((x) => x === k).length >= signMin[k])) all.push({ row: [...row], p, payout, real });
       return;
     }
     for (const k of grund.sets[i]) {
@@ -530,14 +547,14 @@ function reduceSystem(events, grund, { rowPrice = 1, turnover, signMin }) {
   let cut = null;
   for (const gap of [1.02, 1.01, 1.003, 1]) {
     for (const [lo, hi] of [[minRows + 5, maxRows - 5], [minRows, maxRows]]) {
-      if (all.length <= hi && all.length >= lo && all[all.length - 1].payout >= UTD_MIN * gap) { cut = { n: all.length, t: UTD_MIN }; break; }
+      if (all.length <= hi && all.length >= lo && all[all.length - 1].payout >= floor * gap) { cut = { n: all.length, t: Math.ceil(floor) }; break; }
       for (let n = Math.min(hi, all.length - 1); n >= lo && !cut; n--) {
         const above = all[n - 1].payout, below = all[n].payout;
         if (above < below * gap) continue;
         const mid = Math.sqrt(above * below);
         for (const step of [5000, 1000, 500, 100, 10, 1]) {
           const t = Math.round(mid / step) * step;
-          if (t <= above / Math.sqrt(gap) && t >= below * Math.sqrt(gap) && t >= UTD_MIN) { cut = { n, t }; break; }
+          if (t <= above / Math.sqrt(gap) && t >= below * Math.sqrt(gap) && t >= floor) { cut = { n, t }; break; }
         }
       }
       if (cut) break;
@@ -547,12 +564,12 @@ function reduceSystem(events, grund, { rowPrice = 1, turnover, signMin }) {
   if (!cut) return null;
   const kept = all.slice(0, cut.n);
   const hit = kept.reduce((sum, r) => sum + r.p, 0);
-  const ev = kept.reduce((sum, r) => sum + r.p * r.payout, 0);
+  const ev = kept.reduce((sum, r) => sum + r.p * r.real, 0);
   kept.sort((a, b) => b.p - a.p);
   return {
     grundRows: grund.rows, afterPayout: all.length, rows: kept.length, cost: kept.length * rowPrice, rowPrice,
     hitAll: hit, grundHit: grund.hitAll, expectedPayout: hit ? ev / hit : null, expectedReturn: ev,
-    rules: { payoutMin: cut.t, signMin, colorGreen: COLOR.green, colorRed: COLOR.red, turnover: T },
+    rules: { payoutMin: cut.t, payoutMinReal: UTD_MIN, jackpot, realTurnover, signMin, colorGreen: COLOR.green, colorRed: COLOR.red, turnover: T },
     colors: colors.map((c) => c.join(',')),
     rowList: kept.map((r) => r.row.map((k) => SIGNS[k]).join('')),
   };
@@ -618,6 +635,40 @@ function oddsetAvailability(leagueCode, date, homeFd, awayFd) {
   };
 }
 
+// ---------- Skarpa odds (samma kalla och kontroll som Oddset) ----------
+// Backtest: Pinnacles slutodds ur football-data (finns bara for spelade matcher -> kan aldrig lacka in live).
+// Live: Pinnacle/Betfair ur data/open/upcoming_odds.json via findSharpBook (Oddsets kvalitetskontroll),
+// annars snitt av minst 3 bolag. Saknas allt anvands Svenska Spels odds. STRYK_MARKET=svs stanger av (jamforelse).
+const MARKET_MODE = process.env.STRYK_MARKET || 'sharp';
+let liveOdds = null;
+function sharpMarket(g, leagueCode, date, fh, fa) {
+  if (MARKET_MODE === 'svs' || !fh || !fa || !date) return null;
+  const day = (d) => Date.parse(String(d).slice(0, 10));
+  const played = g.all.find((x) => x.home === fh && x.away === fa && Math.abs(day(x.date) - day(date)) <= 2 * 86400e3 && x.closing);
+  if (played) return { p: devigMultiplicative(played.closing.odds), odds: played.closing.odds, source: played.closing.src };
+  if (liveOdds === null) {
+    try { liveOdds = JSON.parse(fs.readFileSync(path.join(root, 'data', 'open', 'upcoming_odds.json'), 'utf8')).events || []; } catch { liveOdds = []; }
+  }
+  const norm = (x) => String(x || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/(fc|afc|city|town|united|utd)/g, '').replace(/[^a-z0-9]/g, '');
+  const same = (a, b) => { const x = norm(a), y = norm(b); return x.length > 2 && y.length > 2 && (x === y || x.includes(y) || y.includes(x)); };
+  const ev = liveOdds.find((e) => (!leagueCode || e.league === leagueCode) && Math.abs(day(e.commence) - day(date)) <= 86400e3
+    && (same(e.home, fh) || same(e.homeRaw, fh)) && (same(e.away, fa) || same(e.awayRaw, fa)));
+  if (!ev) return null;
+  const books = ev.books || [];
+  const sharp = findSharpBook(books);
+  if (sharp) return { p: devigMultiplicative([sharp.home, sharp.draw, sharp.away]), odds: [sharp.home, sharp.draw, sharp.away], source: sharp.bookmaker || sharp.key };
+  const ps = books.map((b) => devigMultiplicative([b.home, b.draw, b.away])).filter(Boolean);
+  if (ps.length < 3) return null;
+  return { p: [0, 1, 2].map((i) => ps.reduce((sum, x) => sum + x[i], 0) / ps.length), odds: null, source: `snitt ${ps.length} bolag` };
+}
+
+let jackpotCache = null;
+async function fetchJackpot(productId, drawNumber) {
+  if (jackpotCache === null) jackpotCache = await get(`${API}/jackpots`).then((r) => r.jackpots || []).catch(() => []);
+  const j = jackpotCache.find((x) => x.productId === productId && x.drawNumber === drawNumber);
+  return (j?.jackpots || []).reduce((sum, x) => sum + (num(x.jackpotAmount) || 0), 0);
+}
+
 async function analyzeDraw(product, draw, ctx, result) {
   const events = (draw.drawEvents || []).filter((e) => !e.cancelled);
   const cutoff = events.map((e) => e.match?.matchStart?.slice(0, 10)).filter(Boolean).sort()[0] || new Date().toISOString().slice(0, 10);
@@ -647,6 +698,8 @@ async function analyzeDraw(product, draw, ctx, result) {
       const fa = matchTeam([ap?.name, ap?.mediumName], pool, prefer, g.model.leagueOf);
       a.matched = { home: fh, away: fa };
       a.lineup = oddsetAvailability(prefer || g.model.leagueOf?.get?.(fh), m.matchStart, fh, fa);
+      const sharp = sharpMarket(g, prefer || g.model.leagueOf?.get?.(fh), m.matchStart, fh, fa);
+      if (sharp?.p) { a.market = sharp.p; a.marketSource = sharp.source; a.sharpOdds = sharp.odds; }
       if (fh && fa) {
         // Anfallsfaktor fran startelva/franvaro (samma som Oddset; 1 nar alpha = 0)
         const afH = a.lineup?.alpha ? a.lineup.home?.attackFactor ?? 1 : 1;
@@ -714,10 +767,18 @@ async function analyzeDraw(product, draw, ctx, result) {
     out.push(a);
   }
   // System A (5-3-2) och motsystem B (4-3-3, hogst en gemensam spik med A)
-  const turnover = GC_TURNOVER[product.id] || 1e7;
+  const turnover = Number(process.env.STRYK_TURNOVER) || GC_TURNOVER[product.id] || 1e7;
+  // Verklig omsattning: slutlig om omgangen ar avgjord, annars minst den typiska (omsattningen vaxer till spelstopp)
+  const realTurnover = Math.max(num(draw.currentNetSale) || 0, draw.drawState === 'Open' ? turnover : 0) || turnover;
+  // Jackpot: live fran Svenska Spels jackpot-API; avgjord omgang: overskottet i 13-ratts-potten (annonseras alltid i forvag)
+  let jackpot = 0;
+  const d13 = result?.distribution?.find((x) => parseInt(x.name, 10) === 13);
+  if (d13 && d13.winners > 0) jackpot = Math.max(0, (num(d13.amount) || 0) * d13.winners - PAYOUT_13 * realTurnover);
+  else if (draw.drawState === 'Open') jackpot = await fetchJackpot(draw.productId, draw.drawNumber);
+  if (process.env.STRYK_JACKPOT === '0') jackpot = 0; // for jamforelse i backtest
   const rowPrice = num(draw.rowPrice) || 1;
   const closeDate = (draw.regCloseTime || '').slice(0, 10);
-  const bestA = out.length ? bestReduced(out, grundCandidates(out, GRUND_MAX_ROWS), { rowPrice, turnover, signMin: SIGN_MIN.A }) : null;
+  const bestA = out.length ? bestReduced(out, grundCandidates(out, GRUND_MAX_ROWS), { rowPrice, turnover, realTurnover, jackpot, signMin: SIGN_MIN.A }) : null;
   const system = bestA?.system || null, reduced = bestA?.reduced || null;
   if (system) out.forEach((a, i) => { a.systemPick = system.picks[i]; });
   if (reduced) {
@@ -727,7 +788,7 @@ async function analyzeDraw(product, draw, ctx, result) {
   let systemB = null, reducedB = null;
   if (system) {
     const singlesA = system.sets.map((x) => (x.length === 1 ? x[0] : -1));
-    const bestB = bestReduced(out, grundCandidates(out, GRUND_MAX_ROWS, singlesA), { rowPrice, turnover, signMin: SIGN_MIN.B });
+    const bestB = bestReduced(out, grundCandidates(out, GRUND_MAX_ROWS, singlesA), { rowPrice, turnover, realTurnover, jackpot, signMin: SIGN_MIN.B });
     systemB = bestB?.system || null; reducedB = bestB?.reduced || null;
     if (systemB) out.forEach((a, i) => { a.systemPickB = systemB.picks[i]; });
     if (reducedB) reducedB.gamblingCabinUrl = gamblingCabinUrl(product.id, draw.drawNumber, closeDate, out, systemB.sets, reducedB);
@@ -794,6 +855,8 @@ function saveSnapshot(a) {
     at: new Date().toISOString(), rows: a.reduced.rows, cost: a.reduced.cost, hitAll: a.reduced.hitAll,
     rules: a.reduced.rules, gamblingCabinUrl: a.reduced.gamblingCabinUrl, rowList: a.reduced.rowList,
     picks: a.events.map((e) => e.systemPick?.signs || ''),
+    // Odds och streck som de sag ut nar systemet sparades (for rattvisa backtest senare)
+    matches: a.events.map((e) => ({ n: e.eventNumber, match: `${e.home} - ${e.away}`, kickoff: e.kickoff, final: e.final, market: e.market, marketSource: e.marketSource, svsOdds: e.odds, sharpOdds: e.sharpOdds || null, folk: e.folk, lineupStatus: e.lineup?.status || null })),
   };
   const snapB = a.reducedB && {
     at: snap.at, rows: a.reducedB.rows, cost: a.reducedB.cost, hitAll: a.reducedB.hitAll,
@@ -862,9 +925,10 @@ async function updateHistory() {
 
 // ---------- Backtest-sammanfattning till webben (fran scripts/backtest-stryktipset.mjs) ----------
 const BACKTESTS = [
-  { file: 'stryktips-backtest-2526-hel-gammal.json', label: 'Säsong 2025/26 – gammal modellvikt 35 %', key: 'old' },
-  { file: 'stryktips-backtest-2526-hel.json', label: 'Säsong 2025/26 – ny modellvikt 10 %', key: 'new' },
-  { file: 'stryktips-backtest.json', label: 'Hösten 2026 – ny modellvikt 10 %', key: 'autumn' },
+  { file: 'stryktips-backtest-2526-hel-gammal.json', label: 'Start: Svenska Spels odds, modell 35 %', key: 'old', col: true },
+  { file: 'stryktips-backtest-2526-hel-svsodds.json', label: 'Steg 1: modellvikt 10 %', key: 'mid', col: true },
+  { file: 'stryktips-backtest-2526-hel.json', label: 'Steg 2: skarpa odds + jackpot (nu)', key: 'new', col: true },
+  { file: 'stryktips-backtest.json', label: 'Hösten 2026 – nuvarande version', key: 'autumn' },
 ];
 function loadBacktests() {
   const out = [];
@@ -883,10 +947,10 @@ function loadBacktests() {
       return { cost, winnings: r2(win), net: r2(win - cost), ge10: ge(10), ge11: ge(11), ge12: ge(12), ge13: ge(13), chance: hit ? Math.round(draws.length / hit) : null };
     };
     out.push({
-      key: b.key, label: b.label, modelWeight: x.summary?.modelWeight ?? null, from: x.summary?.from, to: x.summary?.to,
+      key: b.key, label: b.label, col: Boolean(b.col), modelWeight: x.summary?.modelWeight ?? null, from: x.summary?.from, to: x.summary?.to,
       draws: draws.length, matches: x.summary?.matches, logLoss: x.summary?.logLoss, drawRate: x.summary?.drawRate,
       A: sys('A'), B: sys('B'),
-      perDraw: b.key === 'old' ? undefined : draws.map((d) => ({
+      perDraw: b.key !== 'new' ? undefined : draws.map((d) => ({
         n: d.drawNumber, date: d.date, x: d.draws13, prize13: d.prize13?.amount, winners13: d.prize13?.winners,
         aBest: d.A?.best, aWin: d.A?.winnings, bBest: d.B?.best, bWin: d.B?.winnings,
       })),

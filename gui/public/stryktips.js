@@ -146,32 +146,44 @@ function historyBox(history, krFmt) {
 // Backtest: gammal mot ny modellvikt + resultat per omgång (scripts/backtest-stryktipset.mjs)
 function backtestBox(list, krFmt) {
   if (!list?.length) return "";
-  const old = list.find((b) => b.key === "old"), neu = list.find((b) => b.key === "new");
+  const cols = list.filter((b) => b.col);
+  const neu = list.find((b) => b.key === "new");
   const signed = (x) => `<b class="${x >= 0 ? "pos" : "neg"}">${x >= 0 ? "+" : ""}${krFmt(x)} kr</b>`;
-  const better = (a, b, higher = true) => (a == null || b == null || a === b ? "" : (higher ? b > a : b < a) ? " class=\"up\"" : " class=\"down\"");
-  const rows = (k) => old && neu ? [
-    ["Netto", signed(old[k].net), signed(neu[k].net), better(old[k].net, neu[k].net)],
-    ["Vinst / insats", `${krFmt(old[k].winnings)} / ${krFmt(old[k].cost)} kr`, `${krFmt(neu[k].winnings)} / ${krFmt(neu[k].cost)} kr`, better(old[k].winnings, neu[k].winnings)],
-    ["Rader med 10+ rätt", old[k].ge10, neu[k].ge10, better(old[k].ge10, neu[k].ge10)],
-    ["Rader med 11+ rätt", old[k].ge11, neu[k].ge11, better(old[k].ge11, neu[k].ge11)],
-    ["Rader med 12+ rätt", old[k].ge12, neu[k].ge12, better(old[k].ge12, neu[k].ge12)],
-    ["Chans 13 rätt / omgång", `1 på ${old[k].chance}`, `1 på ${neu[k].chance}`, better(old[k].chance, neu[k].chance, false)],
-  ].map(([l, a, b, c]) => `<tr><th>${k} · ${l}</th><td>${a}</td><td${c}>${b}</td></tr>`).join("") : "";
-  const cmp = old && neu ? `<table class="st-bt">
-      <thead><tr><th>${old.draws} omgångar ${esc(old.from)} – ${esc(old.to)} (${old.matches} matcher)</th><th>Före: modell 35 %</th><th>Efter: modell 10 %</th></tr></thead>
-      <tbody>${rows("A")}${rows("B")}
-        <tr><th>Logloss (lägre = bättre)</th><td>${old.logLoss.final}</td><td${better(old.logLoss.final, neu.logLoss.final, false)}>${neu.logLoss.final}</td></tr>
-        <tr><th>Kryss utfall / vår förväntan / folket</th><td colspan="2">${Math.round(neu.drawRate.actual * 100)} % / ${Math.round(neu.drawRate.predicted * 100)} % / ${Math.round(neu.drawRate.folk * 100)} %</td></tr>
-      </tbody></table>` : "";
-  const perDraw = neu?.perDraw?.length ? `<details class="st-bt-draws"><summary>Resultat per omgång (${neu.perDraw.length}, modell 10 %)</summary><table class="st-bt">
+  // Färg mot föregående kolumn: grönt = bättre, rött = sämre
+  const cell = (vals, i, fmt, higher = true) => {
+    const v = vals[i], prev = vals[i - 1];
+    const cls = i === 0 || v == null || prev == null || v === prev ? "" : (higher ? v > prev : v < prev) ? " class=\"up\"" : " class=\"down\"";
+    return `<td${cls}>${fmt(v, i)}</td>`;
+  };
+  const row = (label, get, fmt = (v) => v, higher = true) => {
+    const vals = cols.map(get);
+    return `<tr><th>${label}</th>${vals.map((_, i) => cell(vals, i, fmt, higher)).join("")}</tr>`;
+  };
+  const sys = (k) => [
+    row(`${k} · Netto`, (c) => c[k].net, (v) => signed(v)),
+    row(`${k} · Rader med 10+ rätt`, (c) => c[k].ge10),
+    row(`${k} · Rader med 11+ rätt`, (c) => c[k].ge11),
+    row(`${k} · Rader med 12+ rätt`, (c) => c[k].ge12),
+    row(`${k} · Chans 13 rätt / omgång`, (c) => c[k].chance, (v) => `1 på ${v}`, false),
+  ].join("");
+  const cmp = cols.length >= 2 ? `<div class="st-bt-wrap"><table class="st-bt">
+      <thead><tr><th>${cols[0].draws} omgångar ${esc(cols[0].from)} – ${esc(cols[0].to)} (${cols[0].matches} matcher)</th>${cols.map((c) => `<th>${esc(c.label)}</th>`).join("")}</tr></thead>
+      <tbody>${sys("A")}${sys("B")}
+        ${row("Träffsäkerhet per match (logloss, lägre = bättre)", (c) => c.logLoss?.final, (v) => v, false)}
+        <tr><th>Kryss utfall / vår förväntan / folket</th><td colspan="${cols.length}">${Math.round(neu.drawRate.actual * 100)} % / ${Math.round(neu.drawRate.predicted * 100)} % / ${Math.round(neu.drawRate.folk * 100)} %</td></tr>
+      </tbody></table></div>` : "";
+  const perDraw = neu?.perDraw?.length ? `<details class="st-bt-draws"><summary>Resultat per omgång (${neu.perDraw.length}, nuvarande version)</summary><div class="st-bt-wrap"><table class="st-bt">
       <thead><tr><th>Omgång</th><th>Kryss</th><th>13 rätt gav</th><th>A bästa</th><th>A vinst</th><th>B bästa</th><th>B vinst</th></tr></thead>
-      <tbody>${neu.perDraw.map((d) => `<tr><th>${d.n} · ${esc(d.date)}</th><td>${d.x}</td><td>${esc(String(d.prize13 || "").replace(",00", ""))} kr (${d.winners13})</td><td${d.aBest >= 11 ? " class=\"up\"" : ""}>${d.aBest}</td><td>${krFmt(d.aWin || 0)}</td><td${d.bBest >= 11 ? " class=\"up\"" : ""}>${d.bBest}</td><td>${krFmt(d.bWin || 0)}</td></tr>`).join("")}</tbody></table></details>` : "";
+      <tbody>${neu.perDraw.map((d) => `<tr><th>${d.n} · ${esc(d.date)}</th><td>${d.x}</td><td>${esc(String(d.prize13 || "").replace(",00", ""))} kr (${d.winners13})</td><td${d.aBest >= 11 ? " class=\"up\"" : ""}>${d.aBest}</td><td>${krFmt(d.aWin || 0)}</td><td${d.bBest >= 11 ? " class=\"up\"" : ""}>${d.bBest}</td><td>${krFmt(d.bWin || 0)}</td></tr>`).join("")}</tbody></table></div></details>` : "";
   const autumn = list.find((b) => b.key === "autumn");
   return `<details class="st-method st-backtest"${showBacktest ? " open" : ""}><summary>Backtest – vad som blivit bättre (säsong 2025/26, alla omgångar med PL-match)</summary>
-    <p>Samma system A (5-3-2) och B (4-3-3) som i dag, 350–400 kr, utdelning ≥ 30 000 kr, räknat mot facit och Svenska Spels verkliga utdelning. Ändringen: vår lagmodell väger 10 % i stället för 35 % – oddsen var träffsäkrare. Grönt = bättre efter ändringen.</p>
-    ${cmp}${perDraw}
-    ${autumn ? `<p>Hösten 2026 (${autumn.draws} omgångar): A ${signed(autumn.A.net)}, B ${signed(autumn.B.net)} – rader med 11+ rätt: A ${autumn.A.ge11}, B ${autumn.B.ge11}.</p>` : ""}
-    <p class="st-note-small">Obs: backtestet använder startodds (Svenska Spel sparar inte slutodds). Nettot styrs av enstaka träffar – återbetalningen är 65 %, så förväntat utfall är negativt. Alla lärdomar: docs/analys/stryktips-lardomar.md.</p>
+    <p>Samma system A (5-3-2) och B (4-3-3), 350–400 kr, utdelning ≥ 30 000 kr, räknat mot facit och Svenska Spels verkliga utdelning. Varje kolumn är ett steg: <b>steg 1</b> lagmodellen väger 10 % i stället för 35 %; <b>steg 2</b> skarpa odds (Pinnacle/Betfair, annars snitt av bolag) i stället för Svenska Spels, och jackpot räknas in i utdelningen. Grönt/rött = bättre/sämre än kolumnen till vänster.</p>
+    ${cmp}
+    <p>Steg 2 ger bättre sannolikheter (lägre logloss) men färre toppträffar just den här säsongen. Per omgång är systemen lika (bästa rad bättre i 9 mot 10 omgångar, rätt i grundraden 337 mot 340) – skillnaden i 10+ rätt kommer från två omgångar (43 mot 5 och 30 mot 4 rader).</p>
+    <p><b>Viktigt om teckenreglerna:</b> rätt rad hade minst 5-3-2 i bara 34 % av omgångarna och 4-3-3 i 61 % – övriga veckor kan systemet inte ta 13 rätt. Med minst 3 kryss släpper 4-3-2 igenom 63 %, 3-3-3 68 % och 3-3-2 71 %.</p>
+    ${perDraw}
+    ${autumn ? `<p>Hösten 2026 (${autumn.draws} omgångar, nuvarande version): A ${signed(autumn.A.net)}, B ${signed(autumn.B.net)} – rader med 11+ rätt: A ${autumn.A.ge11}, B ${autumn.B.ge11}.</p>` : ""}
+    <p class="st-note-small">Backtestets skarpa odds är slutodds (Pinnacle, annars snitt av bolag) från football-data; Svenska Spels odds är startodds. Nettot styrs av enstaka träffar – återbetalningen är 65 %, så förväntat utfall är negativt. Alla lärdomar: docs/analys/stryktips-lardomar.md.</p>
   </details>`;
 }
 

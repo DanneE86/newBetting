@@ -23,6 +23,10 @@ const TO_FROM = arg('to') && !arg('from') ? '0000' : FROM; // bara --to: antal o
 const PRODUCTS = { stryktipset: { id: 'stryktipset', name: 'Stryktipset', start: 4972 }, europatipset: { id: 'europatipset', name: 'Europatipset', start: 2611 } };
 const PRODUCT = PRODUCTS[arg('product', 'stryktipset')];
 const START_DRAW = Number(arg('start', PRODUCT.start));
+// Urval: Stryktipset = minst 1 PL-match. Europatipset = minst 3 matcher fran topp 4-ligorna (PL, La Liga, Serie A, Bundesliga).
+// --all tar alla omgangar.
+const TOP4 = new Set(['Premier League', 'La Liga', 'Serie A', 'Bundesliga']);
+const ALL = process.argv.includes('--all');
 const SIGNS = ['1', 'X', '2'];
 const log = (s) => process.stdout.write(`${s}\n`);
 const r3 = (x) => (x == null ? null : Math.round(x * 1000) / 1000);
@@ -43,13 +47,15 @@ const ctx = {
 
 const logLoss = (p, k) => (p ? -Math.log(Math.max(p[k], 1e-6)) : null);
 const draws = [];
-for (let n = START_DRAW; n > START_DRAW - 150 && draws.length < COUNT; n--) {
+for (let n = START_DRAW; n > START_DRAW - 200 && draws.length < COUNT; n--) {
   const d = await get(`${API}/${PRODUCT.id}/draws/${n}`).then((r) => r.draw).catch(() => null);
   if (!d) continue;
   if ((d.regCloseTime || '') > TO) continue;
   if ((d.regCloseTime || '') < TO_FROM) break;
   const pl = (d.drawEvents || []).filter((e) => e.match?.league?.name === 'Premier League').length;
-  if (!pl) { log(`omgång ${n} (${d.regCloseTime.slice(0, 10)}): ingen PL-match – hoppar över`); continue; }
+  const top4 = (d.drawEvents || []).filter((e) => TOP4.has(e.match?.league?.name)).length;
+  const ok = ALL || (PRODUCT.id === 'europatipset' ? top4 >= 3 : pl > 0);
+  if (!ok) { log(`omgång ${n} (${d.regCloseTime.slice(0, 10)}): PL ${pl}, topp 4 ${top4} – hoppar över`); continue; }
   const result = await get(`${API}/${PRODUCT.id}/draws/${n}/result`).then((r) => r.result || r).catch(() => null);
   if (!result?.events?.length || !result.distribution?.length) { log(`omgång ${n}: facit saknas`); continue; }
   const a = await analyzeDraw(PRODUCT, d, ctx, result);
@@ -70,7 +76,7 @@ for (let n = START_DRAW; n > START_DRAW - 150 && draws.length < COUNT; n--) {
     };
   });
   draws.push({
-    drawNumber: n, date: d.regCloseTime.slice(0, 10), plMatches: pl, outcomes: outcomes.join(''),
+    drawNumber: n, date: d.regCloseTime.slice(0, 10), plMatches: pl, top4Matches: top4, outcomes: outcomes.join(''),
     draws13: outcomes.filter((o) => o === 'X').length,
     prize13: result.distribution[0] ? { amount: result.distribution[0].amount, winners: result.distribution[0].winners } : null,
     A: a.reduced && { rows: a.reduced.rows, cost: a.reduced.cost, grund: a.reduced.grundRows, payoutMin: a.reduced.rules.payoutMin, hit: a.reduced.hitAll, ...evalA },

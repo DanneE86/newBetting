@@ -28,7 +28,8 @@ Mål: bygga en **genomtänkt kupong** — inte 13 isolerade favorittips.
 
 Innan du ändrar regler eller påstår något om vad som "fungerar": läs [docs/analys/stryktips-lardomar.md](../../../docs/analys/stryktips-lardomar.md). Kortversion:
 
-- **Oddsen slår lagmodellen** (17 omgångar, 221 matcher) → modellvikt 10 %. Luta dig mot marknaden.
+- **Oddsen slår lagmodellen** → modellvikt 10 %. Marknaden = skarpa odds (Pinnacle/Betfair, annars bolagssnitt), inte Svenska Spels egna. Jackpot räknas in i utdelningen.
+- **Teckenreglerna 5-3-2/4-3-3 släpper bara igenom rätt rad i 34 %/61 % av omgångarna** – nämn det när användaren frågar varför systemet inte tar 13 rätt; ändra inte utan klartecken.
 - **Bara 12–13 rätt betalar**; 10 rätt ger ofta 0 kr. Mät system på chans till 13 rätt och rader med 11+ rätt, inte netto eller snittrått.
 - **Ändra aldrig regler på < 12 omgångar.** Spikregler (P ≥ 55 %, folk/P ≤ 1,3) såg bra ut på 5 omgångar men var brus på 17 och gjorde systemen sämre.
 - Folket underspelar X (≈ 23 % streck mot ≈ 26–29 % utfall) → X ger ofta streckvärde.
