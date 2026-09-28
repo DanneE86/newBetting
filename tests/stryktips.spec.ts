@@ -29,11 +29,16 @@ test('stryktipset: 13 matcher med avsparkstid, procent och Värde/Ej värde', ()
       expect(e.verdict.minOdds).toBeGreaterThan(1);
       expect(e.analysis.length).toBeGreaterThan(0);
       expect(e.systemPick.signs).toContain(e.tip);
+      expect(e.colors).toHaveLength(3);
       // Svenska Spels expertanalyser (kan vara tomma innan de publicerats)
       expect(Array.isArray(e.experts)).toBe(true);
       for (const x of e.experts) expect(x.signs).toMatch(/^[1X2]+$/);
     }
     expect(p.system.rows).toBeLessThanOrEqual(p.system.maxRows);
+    // Reducerat system inom budget 350–400 kr, unika rader
+    expect(p.reduced.cost).toBeGreaterThanOrEqual(350);
+    expect(p.reduced.cost).toBeLessThanOrEqual(400);
+    expect(new Set(p.reduced.rowList).size).toBe(p.reduced.rows);
   }
 });
 

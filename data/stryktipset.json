@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T18:55:26.987Z",
+  "updatedAt": "2026-09-28T16:41:45.045Z",
   "source": "api.spela.svenskaspel.se + football-data.co.uk + eloratings.net",
   "method": {
     "blend": "Slutprocent = 65 % Svenska Spels odds (utan marginal) + 35 % egen modell (20 % vid tunt underlag/landslag).",
@@ -144,9 +144,14 @@
             "score": "2-3"
           },
           "systemPick": {
-            "signs": "12",
-            "type": "Halvgardering"
-          }
+            "signs": "1X2",
+            "type": "Helgardering"
+          },
+          "colors": [
+            "yellow",
+            "yellow",
+            "green"
+          ]
         },
         {
           "eventNumber": 2,
@@ -212,7 +217,7 @@
             "home": 1666,
             "away": 1895,
             "homeRank": 51,
-            "awayRank": 16
+            "awayRank": 15
           },
           "matched": null,
           "thin": true,
@@ -257,7 +262,7 @@
           ],
           "analysis": [
             "Kroatien har ett övertag (50 %), men det är långt ifrån säkert.",
-            "Landslags-Elo: Tjeckien 1666 (#51) mot Kroatien 1895 (#16).",
+            "Landslags-Elo: Tjeckien 1666 (#51) mot Kroatien 1895 (#15).",
             "Förväntade mål 0,87 – 1,63; troligast 1-1, 0-1, 0-2.",
             "Streckvärde på 1: vi 24 %, folket bara 19 %."
           ],
@@ -268,7 +273,12 @@
           "systemPick": {
             "signs": "2",
             "type": "Spik"
-          }
+          },
+          "colors": [
+            "red",
+            "yellow",
+            "green"
+          ]
         },
         {
           "eventNumber": 3,
@@ -548,7 +558,12 @@
           "systemPick": {
             "signs": "1",
             "type": "Spik"
-          }
+          },
+          "colors": [
+            "green",
+            "yellow",
+            "red"
+          ]
         },
         {
           "eventNumber": 4,
@@ -843,7 +858,12 @@
           "systemPick": {
             "signs": "1",
             "type": "Spik"
-          }
+          },
+          "colors": [
+            "green",
+            "red",
+            "red"
+          ]
         },
         {
           "eventNumber": 5,
@@ -1139,7 +1159,12 @@
           "systemPick": {
             "signs": "1",
             "type": "Spik"
-          }
+          },
+          "colors": [
+            "green",
+            "red",
+            "red"
+          ]
         },
         {
           "eventNumber": 6,
@@ -1430,9 +1455,14 @@
             "score": "2-2"
           },
           "systemPick": {
-            "signs": "12",
-            "type": "Halvgardering"
-          }
+            "signs": "1X2",
+            "type": "Helgardering"
+          },
+          "colors": [
+            "yellow",
+            "yellow",
+            "yellow"
+          ]
         },
         {
           "eventNumber": 7,
@@ -1723,9 +1753,14 @@
             "score": "2-1"
           },
           "systemPick": {
-            "signs": "12",
-            "type": "Halvgardering"
-          }
+            "signs": "1X2",
+            "type": "Helgardering"
+          },
+          "colors": [
+            "yellow",
+            "yellow",
+            "green"
+          ]
         },
         {
           "eventNumber": 8,
@@ -2004,9 +2039,14 @@
             "score": "1-2"
           },
           "systemPick": {
-            "signs": "1",
-            "type": "Spik"
-          }
+            "signs": "1X",
+            "type": "Halvgardering"
+          },
+          "colors": [
+            "green",
+            "yellow",
+            "red"
+          ]
         },
         {
           "eventNumber": 9,
@@ -2300,7 +2340,12 @@
           "systemPick": {
             "signs": "2",
             "type": "Spik"
-          }
+          },
+          "colors": [
+            "red",
+            "yellow",
+            "green"
+          ]
         },
         {
           "eventNumber": 10,
@@ -2578,9 +2623,14 @@
             "score": "1-1"
           },
           "systemPick": {
-            "signs": "12",
-            "type": "Halvgardering"
-          }
+            "signs": "1X2",
+            "type": "Helgardering"
+          },
+          "colors": [
+            "green",
+            "yellow",
+            "yellow"
+          ]
         },
         {
           "eventNumber": 11,
@@ -2877,7 +2927,12 @@
           "systemPick": {
             "signs": "1X2",
             "type": "Helgardering"
-          }
+          },
+          "colors": [
+            "yellow",
+            "yellow",
+            "yellow"
+          ]
         },
         {
           "eventNumber": 12,
@@ -3168,9 +3223,14 @@
             "score": "1-1"
           },
           "systemPick": {
-            "signs": "1X",
-            "type": "Halvgardering"
-          }
+            "signs": "1X2",
+            "type": "Helgardering"
+          },
+          "colors": [
+            "green",
+            "yellow",
+            "yellow"
+          ]
         },
         {
           "eventNumber": 13,
@@ -3463,18 +3523,447 @@
           "systemPick": {
             "signs": "1X2",
             "type": "Helgardering"
-          }
+          },
+          "colors": [
+            "yellow",
+            "yellow",
+            "yellow"
+          ]
         }
       ],
       "system": {
-        "maxRows": 296,
-        "rows": 288,
-        "hitAll": 0.005578278824748081,
+        "maxRows": 5000,
+        "rows": 4374,
+        "hitAll": 0.04109922606146431,
         "hitSingle": 0.00004688220088903793
+      },
+      "reduced": {
+        "grundRows": 4374,
+        "rows": 400,
+        "cost": 400,
+        "rowPrice": 1,
+        "hitAll": 0.0017692121556521076,
+        "grundHit": 0.04109922606146431,
+        "expectedPayout": 68970.2667322409,
+        "expectedReturn": 122.02303428124877,
+        "rules": {
+          "greenMax": 6,
+          "redMin": 0,
+          "redMax": 5,
+          "xMin": 2,
+          "xMax": 7,
+          "payoutMin": 50000,
+          "colorGreen": 0.45,
+          "colorRed": 0.2,
+          "turnover": 22351471
+        },
+        "rowList": [
+          "1211122X222X2",
+          "1211122X222X1",
+          "1211112X222X2",
+          "12111X11222X2",
+          "1211112X222X1",
+          "1211121X22X11",
+          "12111X11222X1",
+          "1211111X22X12",
+          "1211112X2X221",
+          "1211121X2221X",
+          "1211111X22X11",
+          "1211121X2122X",
+          "1211111X2221X",
+          "12111XX1222X2",
+          "1211111X21X21",
+          "12111XX122222",
+          "1211122X22XX2",
+          "1211111X212XX",
+          "1211122X22X22",
+          "12111XX1222X1",
+          "1211111X2122X",
+          "12111XX122221",
+          "1211122X22XX1",
+          "12111X1X22212",
+          "1211112X22XX2",
+          "1211122X22X21",
+          "1211112X22X22",
+          "1211122X222XX",
+          "12111X1X212X2",
+          "12111X1X22211",
+          "1211122X2222X",
+          "12111X1X21222",
+          "12111X1122XX2",
+          "1211112X22XX1",
+          "12111X1X2X212",
+          "121111XX2221X",
+          "12111X1122X22",
+          "1211112X22X21",
+          "12111X1X212X1",
+          "1211112X222XX",
+          "12111X1X21221",
+          "12111X1122XX1",
+          "12111X1X2X211",
+          "1211122X2X22X",
+          "1211112X2222X",
+          "12111X1122X21",
+          "121111XX2122X",
+          "1211112X2XX21",
+          "1211121X22X1X",
+          "12111X11222XX",
+          "12111XXX22212",
+          "1211112X2X2XX",
+          "12111X112222X",
+          "1211112X2X22X",
+          "12111X2X222X2",
+          "1211121X222X2",
+          "12111XXX212X2",
+          "12111X2X22222",
+          "1211121X21X2X",
+          "12111XXX22211",
+          "1211111X22X1X",
+          "12111X112X2XX",
+          "12111XXX21222",
+          "12111XX122XX2",
+          "12111XXX2X212",
+          "12111X112X22X",
+          "12111XX122X22",
+          "12111X2X222X1",
+          "X2111X1X22212",
+          "12111X2X2X2X2",
+          "1211121X222X1",
+          "12111XXX212X1",
+          "12111X2X22221",
+          "1211111X21XXX",
+          "1211121X2X2X2",
+          "1211111X222X2",
+          "12111X2X2X222",
+          "12111XXX21221",
+          "12111XX122XX1",
+          "1211111X21X2X",
+          "12111XXX2X211",
+          "1211121X2X222",
+          "12111XX122X21",
+          "X2111X1X22211",
+          "12111X2X221X2",
+          "X2111X1X21222",
+          "12111X1X22X12",
+          "12111X2X2X2X1",
+          "1211121X221X2",
+          "12111X2X22122",
+          "12111XX1222XX",
+          "1211121X2X2X1",
+          "1211111X222X1",
+          "12111X2X2X221",
+          "12111XX12222X",
+          "X2111X1X212X1",
+          "1211111X2X2X2",
+          "1211122X22XXX",
+          "1211121X2X221",
+          "X211112X222XX",
+          "12111X2X221X1",
+          "12111X1X21XX2",
+          "2211111X222XX",
+          "X2111X1X21221",
+          "12111X1X22X11",
+          "1211111X2X222",
+          "1211122X22X2X",
+          "X211112X2222X",
+          "1211121X221X1",
+          "12111X2X22121",
+          "12111X1X21X22",
+          "2211111X2222X",
+          "121112XX222X2",
+          "12111X1X2XX12",
+          "1211121X2X1X2",
+          "1211111X221X2",
+          "121111XX22X1X",
+          "121112XX22222",
+          "1211111X2X2X1",
+          "1211121X2X122",
+          "12111X1X2221X",
+          "12111X1X21XX1",
+          "X2111XXX22212",
+          "1211112X22XXX",
+          "1211111X2X221",
+          "X2111X112222X",
+          "12111X1X21X21",
+          "121112XX222X1",
+          "12111X1X2XX11",
+          "1211122X2XX2X",
+          "1211112X22X2X",
+          "1211121X2X1X1",
+          "1211111X221X1",
+          "X2111X2X222X2",
+          "22111X1X222X2",
+          "121112XX2X2X2",
+          "121111XX222X2",
+          "121112XX22221",
+          "12111X1X212XX",
+          "121111XX21X2X",
+          "1211111X2X1X2",
+          "1211121X2X121",
+          "X211121X222X2",
+          "X2111X2X22222",
+          "22111X1X22222",
+          "121112XX2X222",
+          "121111XX22222",
+          "X2111XXX22211",
+          "12111X1X2122X",
+          "12111X1122XXX",
+          "1211111X2X122",
+          "X211121X22222",
+          "12111X1X2X21X",
+          "12111XXX22X12",
+          "121112XX221X2",
+          "1211112X2XXXX",
+          "12111X1122X2X",
+          "X2111X2X222X1",
+          "22111X1X222X1",
+          "121112XX2X2X1",
+          "121111XX222X1",
+          "121112XX22122",
+          "1211112X2XX2X",
+          "12111X2X22XX2",
+          "1211111X2X1X1",
+          "X2111X2X2X2X2",
+          "X211121X222X1",
+          "X2111X2X22221",
+          "121111XX2X2X2",
+          "12111X1X2211X",
+          "22111X1X22221",
+          "121112XX2X221",
+          "121111XX22221",
+          "1211121X22XX2",
+          "12111XXX21XX2",
+          "12111X2X22X22",
+          "1211111X2X121",
+          "X211121X2X2X2",
+          "X211111X222X2",
+          "X2111X2X2X222",
+          "X211121X22221",
+          "12111XXX22X11",
+          "22111X1X2X222",
+          "121111XX2X222",
+          "12111X112XXXX",
+          "121112XX221X1",
+          "1211121X22X22",
+          "12111XXX21X22",
+          "X211121X2X222",
+          "X211111X22222",
+          "12111XXX2XX12",
+          "121111XX221X2",
+          "12111X112XX2X",
+          "121112XX22121",
+          "12111X2X22XX1",
+          "X2111X1X22X12",
+          "X2111X2X2X2X1",
+          "22111X1X2X2X1",
+          "121111XX2X2X1",
+          "121111XX22122",
+          "12111XXX2221X",
+          "12111X2X2XXX2",
+          "1211121X22XX1",
+          "12111XXX21XX1",
+          "12111X2X22X21",
+          "X211121X2X2X1",
+          "X211111X222X1",
+          "X2111X2X2X221",
+          "X211121X22122",
+          "22111X1X2X221",
+          "121111XX2X221",
+          "1211121X2XXX2",
+          "1211111X22XX2",
+          "12111X2X2XX22",
+          "1211121X22X21",
+          "12111XXX21X21",
+          "X211111X2X2X2",
+          "X211121X2X221",
+          "X211111X22221",
+          "12111XXX2XX11",
+          "12111X2X222XX",
+          "121111XX221X1",
+          "1211121X2XX22",
+          "1211111X22X22",
+          "X2111X1X22X11",
+          "X211111X2X222",
+          "22111XXX222X2",
+          "1211121X222XX",
+          "12111XXX212XX",
+          "12111X2X2222X",
+          "X211121X221X1",
+          "X2111X1X21X22",
+          "121111XX2X1X2",
+          "121111XX22121",
+          "X21112XX222X2",
+          "12111X2X2XXX1",
+          "22111XXX22222",
+          "X211111X221X2",
+          "1211121X2222X",
+          "12111XXX2122X",
+          "12111XX122XXX",
+          "X211121X22121",
+          "121111XX2X122",
+          "X21112XX22222",
+          "12111XXX2X21X",
+          "1211121X2XXX1",
+          "1211111X22XX1",
+          "12111X2X2XX21",
+          "X211111X2X2X1",
+          "X211111X22122",
+          "12111XX122X2X",
+          "X2111X1X2221X",
+          "X2111X1X21XX1",
+          "1211111X2XXX2",
+          "1211121X2XX21",
+          "1211111X22X21",
+          "X211112X22XXX",
+          "X211111X2X221",
+          "22111XXX222X1",
+          "2211111X22XXX",
+          "12111X2X2X2XX",
+          "X2111X1X21X21",
+          "121111XX2X1X1",
+          "1211111X2XX22",
+          "X21112XX222X1",
+          "X211112X22X2X",
+          "22111XXX22221",
+          "1211121X2X2XX",
+          "1211111X222XX",
+          "2211111X22X2X",
+          "12111X2X2X22X",
+          "X211111X221X1",
+          "121112XX22XX2",
+          "121111XX2X121",
+          "X21112XX2X2X2",
+          "X21111XX222X2",
+          "X21112XX22221",
+          "X2111X1X212XX",
+          "1211121X2X22X",
+          "1211111X2222X",
+          "X211111X22121",
+          "121112XX22X22",
+          "12111X2X221XX",
+          "X21112XX2X222",
+          "X21111XX22222",
+          "1211111X2XXX1",
+          "X2111X1X2122X",
+          "12111X1X22X1X",
+          "X2111X1X2X21X",
+          "X2111XXX22X12",
+          "1211121X221XX",
+          "12111X2X2212X",
+          "1211111X2XX21",
+          "X2111X1122X2X",
+          "121112XX22XX1",
+          "1211121X2212X",
+          "X21112XX2X2X1",
+          "X21111XX222X1",
+          "X2111X2X22XX2",
+          "1211111X2X2XX",
+          "22111X1X22XX2",
+          "121112XX2XXX2",
+          "121111XX22XX2",
+          "121112XX22X21",
+          "X21111XX2X2X2",
+          "12111X1X21XXX",
+          "X21112XX2X221",
+          "X21111XX22221",
+          "X211121X22XX2",
+          "X2111X2X22X22",
+          "1211111X2X22X",
+          "12111X1X222X2",
+          "22111X1X22X22",
+          "121112XX2XX22",
+          "121111XX22X22",
+          "X2111XXX22X11",
+          "X21111XX2X222",
+          "12111X1X21X2X",
+          "121112XX222XX",
+          "X211121X22X22",
+          "12111X1X2XX1X",
+          "12111X1X22222",
+          "1211121X2X1XX",
+          "1211111X221XX",
+          "121112XX2222X",
+          "X2111X2X22XX1",
+          "22111X1X22XX1",
+          "121112XX2XXX1",
+          "121111XX22XX1",
+          "1211121X2X12X",
+          "1211111X2212X",
+          "X21111XX2X2X1",
+          "X21111XX22122",
+          "X2111XXX2221X",
+          "X2111X2X2XXX2",
+          "X211121X22XX1",
+          "X2111X2X22X21",
+          "121111XX2XXX2",
+          "12111X1X222X1",
+          "22111X1X22X21",
+          "121112XX2XX21",
+          "121111XX22X21",
+          "X21111XX2X221",
+          "X211121X2XXX2",
+          "X211111X22XX2",
+          "X2111X2X2XX22",
+          "X211121X22X21",
+          "12111X1X2X2X2",
+          "22111X1X2XX22",
+          "121111XX2XX22",
+          "12111X1X22221",
+          "X2111X2X222XX",
+          "22111X1X222XX",
+          "121112XX2X2XX",
+          "121111XX222XX",
+          "X21111XX221X1",
+          "X211121X2XX22",
+          "X211111X22X22",
+          "12111X1X2X222",
+          "1211111X2X1XX",
+          "X211121X222XX",
+          "X2111XXX212XX",
+          "X2111X2X2222X",
+          "22111X1X2222X",
+          "121112XX2X22X",
+          "121111XX2222X",
+          "X21111XX22121",
+          "X2111X2X2XXX1",
+          "22111X1X2XXX1",
+          "121111XX2XXX1",
+          "1211111X2X12X",
+          "X211121X2222X",
+          "12111X1X221X2",
+          "X2111XXX2122X",
+          "12111XXX22X1X",
+          "X211121X2XXX1",
+          "X211111X22XX1",
+          "X2111X2X2XX21",
+          "121112XX221XX",
+          "12111X1X2X2X1",
+          "22111X1X2XX21",
+          "121111XX2XX21",
+          "12111X1X22122",
+          "X211111X2XXX2",
+          "X211121X2XX21",
+          "X211111X22X21",
+          "121112XX2212X",
+          "12111X2X22XXX",
+          "12111X1X2X221",
+          "X2111X2X2X2XX",
+          "22111X1X2X2XX",
+          "121111XX2X2XX",
+          "X211111X2XX22",
+          "22111XXX22XX2",
+          "1211121X22XXX",
+          "12111XXX21XXX",
+          "12111X2X22X2X",
+          "X211121X2X2XX",
+          "X211111X222XX",
+          "X2111X2X2X22X"
+        ]
       },
       "result": {
         "correct": 3,
-        "systemCorrect": 7,
+        "systemCorrect": 9,
+        "reducedCorrect": 8,
         "total": 13,
         "experts": [
           {
@@ -3521,7 +4010,7 @@
       "open": true,
       "closeDescription": "Europatipset v 40, stänger 2026-10-01 20:44",
       "regCloseTime": "2026-10-01T20:44:00+02:00",
-      "turnover": "3958,00",
+      "turnover": "125268,00",
       "comment": "Europatipset v. 2026-40",
       "modelCutoff": "2026-10-01",
       "events": [
@@ -3533,39 +4022,39 @@
           "country": "Internationell",
           "kickoff": "2026-10-01T20:45:00+02:00",
           "odds": [
-            3.95,
             3.5,
-            1.88
+            3.8,
+            2.1
           ],
           "marketSource": "Svenska Spel",
           "market": [
-            0.236,
-            0.267,
-            0.497
+            0.279,
+            0.257,
+            0.465
           ],
           "folk": [
-            0.35,
+            0.23,
             0.3,
-            0.35
+            0.47
           ],
           "model": [
-            0.3,
-            0.288,
-            0.412
+            0.281,
+            0.286,
+            0.433
           ],
           "basis": "elo",
           "lambdas": {
-            "home": 1.13,
-            "away": 1.37
+            "home": 1.09,
+            "away": 1.41
           },
           "topScores": [
             {
               "score": "1-1",
-              "p": 0.137
+              "p": 0.136
             },
             {
               "score": "0-1",
-              "p": 0.102
+              "p": 0.106
             },
             {
               "score": "0-0",
@@ -3573,44 +4062,44 @@
             },
             {
               "score": "1-2",
-              "p": 0.087
+              "p": 0.089
             },
             {
-              "score": "1-0",
-              "p": 0.083
+              "score": "0-2",
+              "p": 0.082
             }
           ],
           "over25": 0.456,
-          "btts": 0.515,
+          "btts": 0.512,
           "homeProfile": null,
           "awayProfile": null,
           "h2h": [],
           "elo": {
-            "home": 1859,
-            "away": 1998,
+            "home": 1869,
+            "away": 2022,
             "homeRank": 17,
-            "awayRank": 6
+            "awayRank": 5
           },
           "matched": null,
           "thin": true,
           "final": [
-            0.249,
-            0.271,
-            0.48
+            0.279,
+            0.263,
+            0.458
           ],
           "modelWeight": 0.2,
           "tip": "2",
-          "tipP": 0.4797658050881629,
+          "tipP": 0.4581703943339988,
           "verdict": {
             "sign": "2",
-            "minOdds": 2.15,
-            "odds": 1.88,
+            "minOdds": 2.25,
+            "odds": 2.1,
             "value": false
           },
           "streckvarde": [
-            0.71,
-            0.9,
-            1.37
+            1.21,
+            0.88,
+            0.97
           ],
           "experts": [],
           "tioTidningar": null,
@@ -3620,17 +4109,20 @@
             1.92
           ],
           "analysis": [
-            "Portugal har ett övertag (48 %), men det är långt ifrån säkert.",
-            "Landslags-Elo: Danmark 1859 (#17) mot Portugal 1998 (#6).",
-            "Förväntade mål 1,13 – 1,37; troligast 1-1, 0-1, 0-0.",
-            "Modellen tror mindre på 2 än oddsen (41 % mot 50 %).",
-            "Svenska folket överstreckar 1 (35 % mot vår 25 %).",
-            "Streckvärde på 2: vi 48 %, folket bara 35 %."
+            "Portugal har ett övertag (46 %), men det är långt ifrån säkert.",
+            "Landslags-Elo: Danmark 1869 (#17) mot Portugal 2022 (#5).",
+            "Förväntade mål 1,09 – 1,41; troligast 1-1, 0-1, 0-0.",
+            "Streckvärde på 1: vi 28 %, folket bara 23 %."
           ],
           "systemPick": {
             "signs": "1X2",
             "type": "Helgardering"
-          }
+          },
+          "colors": [
+            "yellow",
+            "yellow",
+            "green"
+          ]
         },
         {
           "eventNumber": 2,
@@ -3640,43 +4132,43 @@
           "country": "Internationell",
           "kickoff": "2026-10-01T20:45:00+02:00",
           "odds": [
-            4.5,
-            3.8,
-            1.71
+            5.75,
+            4.6,
+            1.58
           ],
           "marketSource": "Svenska Spel",
           "market": [
-            0.208,
-            0.246,
-            0.546
+            0.17,
+            0.212,
+            0.618
           ],
           "folk": [
-            0.17,
-            0.16,
-            0.67
+            0.07,
+            0.15,
+            0.78
           ],
           "model": [
-            0.137,
-            0.243,
-            0.62
+            0.151,
+            0.249,
+            0.6
           ],
           "basis": "elo",
           "lambdas": {
-            "home": 0.72,
-            "away": 1.78
+            "home": 0.76,
+            "away": 1.74
           },
           "topScores": [
             {
               "score": "0-1",
-              "p": 0.138
+              "p": 0.134
             },
             {
               "score": "0-2",
-              "p": 0.13
+              "p": 0.124
             },
             {
               "score": "1-1",
-              "p": 0.113
+              "p": 0.117
             },
             {
               "score": "1-2",
@@ -3684,40 +4176,40 @@
             },
             {
               "score": "0-0",
-              "p": 0.09
+              "p": 0.091
             }
           ],
           "over25": 0.456,
-          "btts": 0.434,
+          "btts": 0.447,
           "homeProfile": null,
           "awayProfile": null,
           "h2h": [],
           "elo": {
-            "home": 1679,
-            "away": 1962,
-            "homeRank": 49,
-            "awayRank": 9
+            "home": 1669,
+            "away": 1937,
+            "homeRank": 50,
+            "awayRank": 11
           },
           "matched": null,
           "thin": true,
           "final": [
-            0.194,
-            0.245,
-            0.561
+            0.166,
+            0.22,
+            0.614
           ],
           "modelWeight": 0.2,
           "tip": "2",
-          "tipP": 0.5611754703905958,
+          "tipP": 0.6143223196295717,
           "verdict": {
             "sign": "2",
-            "minOdds": 1.84,
-            "odds": 1.71,
+            "minOdds": 1.68,
+            "odds": 1.58,
             "value": false
           },
           "streckvarde": [
-            1.14,
-            1.53,
-            0.84
+            2.37,
+            1.46,
+            0.79
           ],
           "experts": [],
           "tioTidningar": null,
@@ -3727,17 +4219,21 @@
             1.82
           ],
           "analysis": [
-            "Norge har ett övertag (56 %), men det är långt ifrån säkert.",
-            "Landslags-Elo: Wales 1679 (#49) mot Norge 1962 (#9).",
-            "Förväntade mål 0,72 – 1,78; troligast 0-1, 0-2, 1-1.",
-            "Modellen tror mer på 2 än oddsen (62 % mot 55 %).",
-            "Svenska folket överstreckar 2 (67 % mot vår 56 %).",
-            "Streckvärde på X: vi 25 %, folket bara 16 %."
+            "Norge är klar favorit (61 %).",
+            "Landslags-Elo: Wales 1669 (#50) mot Norge 1937 (#11).",
+            "Förväntade mål 0,76 – 1,74; troligast 0-1, 0-2, 1-1.",
+            "Svenska folket överstreckar 2 (78 % mot vår 61 %).",
+            "Streckvärde på 1: vi 17 %, folket bara 7 %."
           ],
           "systemPick": {
-            "signs": "2",
-            "type": "Spik"
-          }
+            "signs": "1X2",
+            "type": "Helgardering"
+          },
+          "colors": [
+            "red",
+            "red",
+            "green"
+          ]
         },
         {
           "eventNumber": 3,
@@ -3747,43 +4243,43 @@
           "country": "Internationell",
           "kickoff": "2026-10-01T20:45:00+02:00",
           "odds": [
-            1.3,
-            5.4,
-            9
+            1.27,
+            6.75,
+            11.5
           ],
           "marketSource": "Svenska Spel",
           "market": [
-            0.722,
-            0.174,
-            0.104
+            0.77,
+            0.145,
+            0.085
           ],
           "folk": [
-            0.75,
-            0.16,
-            0.09
+            0.84,
+            0.11,
+            0.05
           ],
           "model": [
-            0.764,
-            0.181,
-            0.056
+            0.744,
+            0.191,
+            0.065
           ],
           "basis": "elo",
           "lambdas": {
-            "home": 2.09,
-            "away": 0.41
+            "home": 2.04,
+            "away": 0.46
           },
           "topScores": [
             {
               "score": "2-0",
-              "p": 0.179
+              "p": 0.171
             },
             {
               "score": "1-0",
-              "p": 0.166
+              "p": 0.162
             },
             {
               "score": "3-0",
-              "p": 0.125
+              "p": 0.117
             },
             {
               "score": "0-0",
@@ -3791,40 +4287,40 @@
             },
             {
               "score": "1-1",
-              "p": 0.076
+              "p": 0.083
             }
           ],
           "over25": 0.456,
-          "btts": 0.302,
+          "btts": 0.326,
           "homeProfile": null,
           "awayProfile": null,
           "h2h": [],
           "elo": {
-            "home": 1916,
-            "away": 1709,
-            "homeRank": 12,
-            "awayRank": 42
+            "home": 1884,
+            "away": 1697,
+            "homeRank": 16,
+            "awayRank": 45
           },
           "matched": null,
           "thin": true,
           "final": [
-            0.73,
-            0.175,
-            0.095
+            0.765,
+            0.154,
+            0.081
           ],
           "modelWeight": 0.2,
           "tip": "1",
-          "tipP": 0.7302856667905102,
+          "tipP": 0.7647963056278246,
           "verdict": {
             "sign": "1",
-            "minOdds": 1.41,
-            "odds": 1.3,
+            "minOdds": 1.35,
+            "odds": 1.27,
             "value": false
           },
           "streckvarde": [
-            0.97,
-            1.09,
-            1.05
+            0.91,
+            1.4,
+            1.62
           ],
           "experts": [],
           "tioTidningar": null,
@@ -3834,14 +4330,19 @@
             9
           ],
           "analysis": [
-            "Tyskland är klar favorit (73 %).",
-            "Landslags-Elo: Tyskland 1916 (#12) mot Serbien 1709 (#42).",
-            "Förväntade mål 2,09 – 0,41; troligast 2-0, 1-0, 3-0."
+            "Tyskland är klar favorit (77 %).",
+            "Landslags-Elo: Tyskland 1884 (#16) mot Serbien 1697 (#45).",
+            "Förväntade mål 2,04 – 0,46; troligast 2-0, 1-0, 3-0."
           ],
           "systemPick": {
             "signs": "1",
             "type": "Spik"
-          }
+          },
+          "colors": [
+            "green",
+            "red",
+            "red"
+          ]
         },
         {
           "eventNumber": 4,
@@ -3851,84 +4352,84 @@
           "country": "Internationell",
           "kickoff": "2026-10-01T20:45:00+02:00",
           "odds": [
-            4,
             3.55,
-            1.85
+            3.65,
+            2.1
           ],
           "marketSource": "Svenska Spel",
           "market": [
-            0.233,
-            0.263,
-            0.504
+            0.273,
+            0.266,
+            0.461
           ],
           "folk": [
-            0.32,
-            0.18,
+            0.21,
+            0.29,
             0.5
           ],
           "model": [
-            0.231,
-            0.277,
-            0.492
+            0.255,
+            0.282,
+            0.462
           ],
           "basis": "elo",
           "lambdas": {
-            "home": 0.97,
-            "away": 1.53
+            "home": 1.03,
+            "away": 1.47
           },
           "topScores": [
             {
               "score": "1-1",
-              "p": 0.132
+              "p": 0.134
             },
             {
               "score": "0-1",
-              "p": 0.116
-            },
-            {
-              "score": "0-2",
-              "p": 0.096
-            },
-            {
-              "score": "1-2",
-              "p": 0.093
+              "p": 0.111
             },
             {
               "score": "0-0",
               "p": 0.092
+            },
+            {
+              "score": "1-2",
+              "p": 0.091
+            },
+            {
+              "score": "0-2",
+              "p": 0.089
             }
           ],
           "over25": 0.456,
-          "btts": 0.497,
+          "btts": 0.505,
           "homeProfile": null,
           "awayProfile": null,
           "h2h": [],
           "elo": {
-            "home": 1769,
-            "away": 1962,
-            "homeRank": 28,
+            "home": 1801,
+            "away": 1974,
+            "homeRank": 25,
             "awayRank": 9
           },
           "matched": null,
           "thin": true,
           "final": [
-            0.233,
-            0.266,
-            0.502
+            0.269,
+            0.269,
+            0.462
           ],
           "modelWeight": 0.2,
           "tip": "2",
-          "tipP": 0.5017496561854868,
+          "tipP": 0.46169113988493465,
           "verdict": {
             "sign": "2",
-            "minOdds": 2.05,
-            "odds": 1.85,
+            "minOdds": 2.23,
+            "odds": 2.1,
             "value": false
           },
           "streckvarde": [
-            0.73,
-            1.48,
-            1
+            1.28,
+            0.93,
+            0.92
           ],
           "experts": [],
           "tioTidningar": null,
@@ -3938,16 +4439,20 @@
             1.87
           ],
           "analysis": [
-            "Nederländerna har ett övertag (50 %), men det är långt ifrån säkert.",
-            "Landslags-Elo: Grekland 1769 (#28) mot Nederländerna 1962 (#9).",
-            "Förväntade mål 0,97 – 1,53; troligast 1-1, 0-1, 0-2.",
-            "Svenska folket överstreckar 1 (32 % mot vår 23 %).",
-            "Streckvärde på X: vi 27 %, folket bara 18 %."
+            "Nederländerna har ett övertag (46 %), men det är långt ifrån säkert.",
+            "Landslags-Elo: Grekland 1801 (#25) mot Nederländerna 1974 (#9).",
+            "Förväntade mål 1,03 – 1,47; troligast 1-1, 0-1, 0-0.",
+            "Streckvärde på 1: vi 27 %, folket bara 21 %."
           ],
           "systemPick": {
             "signs": "1X2",
             "type": "Helgardering"
-          }
+          },
+          "colors": [
+            "yellow",
+            "yellow",
+            "green"
+          ]
         },
         {
           "eventNumber": 5,
@@ -3957,39 +4462,39 @@
           "country": "Internationell",
           "kickoff": "2026-10-01T20:45:00+02:00",
           "odds": [
+            3.6,
             3.3,
-            3.3,
-            2.16
+            2.18
           ],
           "marketSource": "Svenska Spel",
           "market": [
-            0.283,
-            0.283,
-            0.433
+            0.267,
+            0.292,
+            0.441
           ],
           "folk": [
-            0.28,
             0.25,
-            0.47
+            0.3,
+            0.45
           ],
           "model": [
-            0.291,
-            0.287,
-            0.422
+            0.312,
+            0.289,
+            0.399
           ],
           "basis": "elo",
           "lambdas": {
-            "home": 1.11,
-            "away": 1.39
+            "home": 1.16,
+            "away": 1.34
           },
           "topScores": [
             {
               "score": "1-1",
-              "p": 0.137
+              "p": 0.138
             },
             {
               "score": "0-1",
-              "p": 0.104
+              "p": 0.1
             },
             {
               "score": "0-0",
@@ -3997,44 +4502,44 @@
             },
             {
               "score": "1-2",
-              "p": 0.088
+              "p": 0.086
             },
             {
               "score": "1-0",
-              "p": 0.081
+              "p": 0.085
             }
           ],
           "over25": 0.456,
-          "btts": 0.514,
+          "btts": 0.517,
           "homeProfile": null,
           "awayProfile": null,
           "h2h": [],
           "elo": {
-            "home": 1685,
-            "away": 1831,
-            "homeRank": 47,
-            "awayRank": 22
+            "home": 1715,
+            "away": 1845,
+            "homeRank": 40,
+            "awayRank": 20
           },
           "matched": null,
           "thin": true,
           "final": [
-            0.285,
-            0.284,
-            0.431
+            0.276,
+            0.291,
+            0.433
           ],
           "modelWeight": 0.2,
           "tip": "2",
-          "tipP": 0.4309041141405536,
+          "tipP": 0.43272215290728894,
           "verdict": {
             "sign": "2",
-            "minOdds": 2.39,
-            "odds": 2.16,
+            "minOdds": 2.38,
+            "odds": 2.18,
             "value": false
           },
           "streckvarde": [
-            1.02,
-            1.14,
-            0.92
+            1.1,
+            0.97,
+            0.96
           ],
           "experts": [],
           "tioTidningar": null,
@@ -4045,13 +4550,19 @@
           ],
           "analysis": [
             "Österrike har ett övertag (43 %), men det är långt ifrån säkert.",
-            "Landslags-Elo: Irland 1685 (#47) mot Österrike 1831 (#22).",
-            "Förväntade mål 1,11 – 1,39; troligast 1-1, 0-1, 0-0."
+            "Krysset ligger högt (29 %) – oavgjort är ett rimligt utfall.",
+            "Landslags-Elo: Irland 1715 (#40) mot Österrike 1845 (#20).",
+            "Förväntade mål 1,16 – 1,34; troligast 1-1, 0-1, 0-0."
           ],
           "systemPick": {
             "signs": "1X2",
             "type": "Helgardering"
-          }
+          },
+          "colors": [
+            "yellow",
+            "yellow",
+            "green"
+          ]
         },
         {
           "eventNumber": 6,
@@ -4061,30 +4572,30 @@
           "country": "Internationell",
           "kickoff": "2026-10-01T20:45:00+02:00",
           "odds": [
-            2.65,
-            3.25,
-            2.6
+            3.2,
+            3.4,
+            2.23
           ],
           "marketSource": "Svenska Spel",
           "market": [
-            0.353,
-            0.288,
-            0.36
+            0.296,
+            0.279,
+            0.425
           ],
           "folk": [
-            0.31,
-            0.22,
-            0.47
+            0.26,
+            0.29,
+            0.45
           ],
           "model": [
-            0.368,
+            0.345,
             0.29,
-            0.342
+            0.365
           ],
           "basis": "elo",
           "lambdas": {
-            "home": 1.28,
-            "away": 1.22
+            "home": 1.23,
+            "away": 1.27
           },
           "topScores": [
             {
@@ -4092,20 +4603,20 @@
               "p": 0.138
             },
             {
-              "score": "1-0",
-              "p": 0.095
+              "score": "0-1",
+              "p": 0.094
             },
             {
               "score": "0-0",
               "p": 0.092
             },
             {
-              "score": "0-1",
-              "p": 0.09
+              "score": "1-0",
+              "p": 0.091
             },
             {
-              "score": "2-1",
-              "p": 0.082
+              "score": "1-2",
+              "p": 0.081
             }
           ],
           "over25": 0.456,
@@ -4114,31 +4625,31 @@
           "awayProfile": null,
           "h2h": [],
           "elo": {
-            "home": 1637,
-            "away": 1728,
-            "homeRank": 54,
-            "awayRank": 39
+            "home": 1607,
+            "away": 1714,
+            "homeRank": 64,
+            "awayRank": 41
           },
           "matched": null,
           "thin": true,
           "final": [
-            0.356,
-            0.288,
-            0.356
+            0.306,
+            0.281,
+            0.413
           ],
           "modelWeight": 0.2,
           "tip": "2",
-          "tipP": 0.35601916855990423,
+          "tipP": 0.4129922041244112,
           "verdict": {
             "sign": "2",
-            "minOdds": 2.89,
-            "odds": 2.6,
+            "minOdds": 2.49,
+            "odds": 2.23,
             "value": false
           },
           "streckvarde": [
-            1.15,
-            1.31,
-            0.76
+            1.18,
+            0.97,
+            0.92
           ],
           "experts": [],
           "tioTidningar": null,
@@ -4148,16 +4659,19 @@
             2.6
           ],
           "analysis": [
-            "Jämnt mellan lagen – Israel 36 % mot Kosovo 36 %.",
-            "Landslags-Elo: Israel 1637 (#54) mot Kosovo 1728 (#39).",
-            "Förväntade mål 1,28 – 1,22; troligast 1-1, 1-0, 0-0.",
-            "Svenska folket överstreckar 2 (47 % mot vår 36 %).",
-            "Streckvärde på X: vi 29 %, folket bara 22 %."
+            "Kosovo har ett övertag (41 %), men det är långt ifrån säkert.",
+            "Landslags-Elo: Israel 1607 (#64) mot Kosovo 1714 (#41).",
+            "Förväntade mål 1,23 – 1,27; troligast 1-1, 0-1, 0-0."
           ],
           "systemPick": {
             "signs": "1X2",
             "type": "Helgardering"
-          }
+          },
+          "colors": [
+            "yellow",
+            "yellow",
+            "green"
+          ]
         },
         {
           "eventNumber": 7,
@@ -4166,36 +4680,44 @@
           "league": "UEFA Nations League",
           "country": "Internationell",
           "kickoff": "2026-10-01T20:45:00+02:00",
-          "odds": null,
-          "marketSource": null,
-          "market": null,
+          "odds": [
+            1.3,
+            4.8,
+            11.5
+          ],
+          "marketSource": "Svenska Spel",
+          "market": [
+            0.723,
+            0.196,
+            0.082
+          ],
           "folk": [
-            0.57,
-            0.18,
-            0.25
+            0.79,
+            0.14,
+            0.07
           ],
           "model": [
-            0.812,
-            0.154,
-            0.034
+            0.816,
+            0.151,
+            0.032
           ],
           "basis": "elo",
           "lambdas": {
-            "home": 2.2,
-            "away": 0.3
+            "home": 2.21,
+            "away": 0.29
           },
           "topScores": [
             {
               "score": "2-0",
-              "p": 0.199
+              "p": 0.201
             },
             {
               "score": "1-0",
-              "p": 0.177
+              "p": 0.178
             },
             {
               "score": "3-0",
-              "p": 0.146
+              "p": 0.148
             },
             {
               "score": "0-0",
@@ -4203,55 +4725,64 @@
             },
             {
               "score": "4-0",
-              "p": 0.081
+              "p": 0.082
             }
           ],
           "over25": 0.456,
-          "btts": 0.233,
+          "btts": 0.226,
           "homeProfile": null,
           "awayProfile": null,
           "h2h": [],
           "elo": {
-            "home": 1271,
-            "away": 1009,
-            "homeRank": 145,
+            "home": 1273,
+            "away": 1006,
+            "homeRank": 143,
             "awayRank": 183
           },
           "matched": null,
           "thin": true,
           "final": [
-            0.812,
-            0.154,
-            0.034
+            0.741,
+            0.187,
+            0.072
           ],
           "modelWeight": 0.2,
           "tip": "1",
-          "tipP": 0.8124632208020767,
+          "tipP": 0.7413751751282669,
           "verdict": {
             "sign": "1",
-            "minOdds": 1.27,
-            "odds": null,
+            "minOdds": 1.39,
+            "odds": 1.3,
             "value": false
           },
           "streckvarde": [
-            1.43,
-            0.85,
-            0.14
+            0.94,
+            1.33,
+            1.03
           ],
           "experts": [],
           "tioTidningar": null,
-          "startOdds": null,
+          "startOdds": [
+            1.3,
+            4.8,
+            11.5
+          ],
           "analysis": [
-            "Malta är klar favorit (81 %).",
-            "Landslags-Elo: Malta 1271 (#145) mot Gibraltar 1009 (#183).",
-            "Förväntade mål 2,20 – 0,30; troligast 2-0, 1-0, 3-0.",
-            "Svenska folket överstreckar 2 (25 % mot vår 3 %).",
-            "Streckvärde på 1: vi 81 %, folket bara 57 %."
+            "Malta är klar favorit (74 %).",
+            "Landslags-Elo: Malta 1273 (#143) mot Gibraltar 1006 (#183).",
+            "Förväntade mål 2,21 – 0,29; troligast 2-0, 1-0, 3-0.",
+            "Modellen tror mer på 1 än oddsen (82 % mot 72 %).",
+            "Streckvärde på X: vi 19 %, folket bara 14 %."
           ],
           "systemPick": {
             "signs": "1",
             "type": "Spik"
-          }
+          },
+          "colors": [
+            "green",
+            "red",
+            "red"
+          ]
         },
         {
           "eventNumber": 8,
@@ -4265,8 +4796,8 @@
           "market": null,
           "folk": [
             0.21,
-            0.24,
-            0.55
+            0.3,
+            0.49
           ],
           "model": null,
           "basis": "folk",
@@ -4281,15 +4812,15 @@
           "matched": null,
           "final": [
             0.21,
-            0.24,
-            0.55
+            0.3,
+            0.49
           ],
           "modelWeight": 0,
           "tip": "2",
-          "tipP": 0.55,
+          "tipP": 0.49,
           "verdict": {
             "sign": "2",
-            "minOdds": 1.87,
+            "minOdds": 2.1,
             "odds": null,
             "value": false
           },
@@ -4302,12 +4833,18 @@
           "tioTidningar": null,
           "startOdds": null,
           "analysis": [
-            "Sverige har ett övertag (55 %), men det är långt ifrån säkert."
+            "Sverige har ett övertag (49 %), men det är långt ifrån säkert.",
+            "Krysset ligger högt (30 %) – oavgjort är ett rimligt utfall."
           ],
           "systemPick": {
             "signs": "1X2",
             "type": "Helgardering"
-          }
+          },
+          "colors": [
+            "yellow",
+            "yellow",
+            "green"
+          ]
         },
         {
           "eventNumber": 9,
@@ -4320,9 +4857,9 @@
           "marketSource": null,
           "market": null,
           "folk": [
-            0.66,
-            0.17,
-            0.17
+            0.78,
+            0.15,
+            0.07
           ],
           "model": [
             0.799,
@@ -4365,7 +4902,7 @@
             "home": 2083,
             "away": 1837,
             "homeRank": 4,
-            "awayRank": 20
+            "awayRank": 22
           },
           "matched": null,
           "thin": true,
@@ -4384,24 +4921,27 @@
             "value": false
           },
           "streckvarde": [
-            1.21,
-            0.95,
-            0.23
+            1.02,
+            1.08,
+            0.56
           ],
           "experts": [],
           "tioTidningar": null,
           "startOdds": null,
           "analysis": [
             "Frankrike är klar favorit (80 %).",
-            "Landslags-Elo: Frankrike 2083 (#4) mot Italien 1837 (#20).",
-            "Förväntade mål 2,17 – 0,33; troligast 2-0, 1-0, 3-0.",
-            "Svenska folket överstreckar 2 (17 % mot vår 4 %).",
-            "Streckvärde på 1: vi 80 %, folket bara 66 %."
+            "Landslags-Elo: Frankrike 2083 (#4) mot Italien 1837 (#22).",
+            "Förväntade mål 2,17 – 0,33; troligast 2-0, 1-0, 3-0."
           ],
           "systemPick": {
             "signs": "1",
             "type": "Spik"
-          }
+          },
+          "colors": [
+            "green",
+            "red",
+            "red"
+          ]
         },
         {
           "eventNumber": 10,
@@ -4414,9 +4954,9 @@
           "marketSource": null,
           "market": null,
           "folk": [
-            0.78,
-            0.16,
-            0.06
+            0.74,
+            0.15,
+            0.11
           ],
           "model": [
             0.692,
@@ -4459,7 +4999,7 @@
             "home": 1979,
             "away": 1839,
             "homeRank": 8,
-            "awayRank": 19
+            "awayRank": 21
           },
           "matched": null,
           "thin": true,
@@ -4478,23 +5018,28 @@
             "value": false
           },
           "streckvarde": [
-            0.89,
-            1.34,
-            1.55
+            0.93,
+            1.43,
+            0.85
           ],
           "experts": [],
           "tioTidningar": null,
           "startOdds": null,
           "analysis": [
             "Belgien är klar favorit (69 %).",
-            "Landslags-Elo: Belgien 1979 (#8) mot Turkiet 1839 (#19).",
+            "Landslags-Elo: Belgien 1979 (#8) mot Turkiet 1839 (#21).",
             "Förväntade mål 1,93 – 0,57; troligast 2-0, 1-0, 3-0.",
-            "Svenska folket överstreckar 1 (78 % mot vår 69 %)."
+            "Streckvärde på X: vi 22 %, folket bara 15 %."
           ],
           "systemPick": {
             "signs": "1",
             "type": "Spik"
-          }
+          },
+          "colors": [
+            "green",
+            "red",
+            "red"
+          ]
         },
         {
           "eventNumber": 11,
@@ -4507,9 +5052,9 @@
           "marketSource": null,
           "market": null,
           "folk": [
-            0.64,
-            0.19,
-            0.17
+            0.67,
+            0.21,
+            0.12
           ],
           "model": [
             0.725,
@@ -4552,7 +5097,7 @@
             "home": 1802,
             "away": 1633,
             "homeRank": 24,
-            "awayRank": 55
+            "awayRank": 54
           },
           "matched": null,
           "thin": true,
@@ -4571,23 +5116,27 @@
             "value": false
           },
           "streckvarde": [
-            1.13,
-            1.05,
-            0.44
+            1.08,
+            0.95,
+            0.63
           ],
           "experts": [],
           "tioTidningar": null,
           "startOdds": null,
           "analysis": [
             "Ukraina är klar favorit (73 %).",
-            "Landslags-Elo: Ukraina 1802 (#24) mot Nordirland 1633 (#55).",
-            "Förväntade mål 2,00 – 0,50; troligast 2-0, 1-0, 3-0.",
-            "Svenska folket överstreckar 2 (17 % mot vår 8 %)."
+            "Landslags-Elo: Ukraina 1802 (#24) mot Nordirland 1633 (#54).",
+            "Förväntade mål 2,00 – 0,50; troligast 2-0, 1-0, 3-0."
           ],
           "systemPick": {
             "signs": "1",
             "type": "Spik"
-          }
+          },
+          "colors": [
+            "green",
+            "yellow",
+            "red"
+          ]
         },
         {
           "eventNumber": 12,
@@ -4600,9 +5149,9 @@
           "marketSource": null,
           "market": null,
           "folk": [
-            0.43,
-            0.44,
-            0.13
+            0.64,
+            0.27,
+            0.09
           ],
           "model": [
             0.603,
@@ -4645,7 +5194,7 @@
             "home": 1699,
             "away": 1629,
             "homeRank": 44,
-            "awayRank": 57
+            "awayRank": 56
           },
           "matched": null,
           "thin": true,
@@ -4664,24 +5213,27 @@
             "value": false
           },
           "streckvarde": [
-            1.4,
-            0.56,
-            1.15
+            0.94,
+            0.92,
+            1.65
           ],
           "experts": [],
           "tioTidningar": null,
           "startOdds": null,
           "analysis": [
             "Polen är klar favorit (60 %).",
-            "Landslags-Elo: Polen 1699 (#44) mot Rumänien 1629 (#57).",
-            "Förväntade mål 1,75 – 0,75; troligast 1-0, 2-0, 1-1.",
-            "Svenska folket överstreckar X (44 % mot vår 25 %).",
-            "Streckvärde på 1: vi 60 %, folket bara 43 %."
+            "Landslags-Elo: Polen 1699 (#44) mot Rumänien 1629 (#56).",
+            "Förväntade mål 1,75 – 0,75; troligast 1-0, 2-0, 1-1."
           ],
           "systemPick": {
-            "signs": "1",
-            "type": "Spik"
-          }
+            "signs": "1X",
+            "type": "Halvgardering"
+          },
+          "colors": [
+            "green",
+            "yellow",
+            "red"
+          ]
         },
         {
           "eventNumber": 13,
@@ -4694,9 +5246,9 @@
           "marketSource": null,
           "market": null,
           "folk": [
-            0.69,
+            0.66,
             0.23,
-            0.08
+            0.11
           ],
           "model": [
             0.592,
@@ -4738,8 +5290,8 @@
           "elo": {
             "home": 1688,
             "away": 1626,
-            "homeRank": 46,
-            "awayRank": 59
+            "homeRank": 47,
+            "awayRank": 57
           },
           "matched": null,
           "thin": true,
@@ -4758,31 +5310,453 @@
             "value": false
           },
           "streckvarde": [
-            0.86,
+            0.9,
             1.1,
-            1.95
+            1.42
           ],
           "experts": [],
           "tioTidningar": null,
           "startOdds": null,
           "analysis": [
             "Ungern har ett övertag (59 %), men det är långt ifrån säkert.",
-            "Landslags-Elo: Ungern 1688 (#46) mot Georgien 1626 (#59).",
+            "Landslags-Elo: Ungern 1688 (#47) mot Georgien 1626 (#57).",
             "Förväntade mål 1,72 – 0,78; troligast 1-0, 2-0, 1-1.",
-            "Svenska folket överstreckar 1 (69 % mot vår 59 %).",
-            "Streckvärde på 2: vi 16 %, folket bara 8 %."
+            "Streckvärde på 2: vi 16 %, folket bara 11 %."
           ],
           "systemPick": {
-            "signs": "1",
-            "type": "Spik"
-          }
+            "signs": "1X2",
+            "type": "Helgardering"
+          },
+          "colors": [
+            "green",
+            "yellow",
+            "red"
+          ]
         }
       ],
       "system": {
-        "maxRows": 296,
-        "rows": 243,
-        "hitAll": 0.04763275787217581,
-        "hitSingle": 0.0009676238447766157
+        "maxRows": 5000,
+        "rows": 4374,
+        "hitAll": 0.19360212427553397,
+        "hitSingle": 0.0009234627781045526
+      },
+      "reduced": {
+        "grundRows": 4374,
+        "rows": 395,
+        "cost": 395,
+        "rowPrice": 1,
+        "hitAll": 0.0018616547650482597,
+        "grundHit": 0.19360212427553397,
+        "expectedPayout": 135898.9396964492,
+        "expectedReturn": 252.99690865090076,
+        "rules": {
+          "greenMax": 6,
+          "redMin": 1,
+          "redMax": 4,
+          "xMin": 2,
+          "xMax": 6,
+          "payoutMin": 75000,
+          "colorGreen": 0.45,
+          "colorRed": 0.2,
+          "turnover": 8000000
+        },
+        "rowList": [
+          "1111X11X1111X",
+          "1111111X1111X",
+          "1111111X111X1",
+          "1111XX1X1111X",
+          "X111111X1111X",
+          "11111X1X1111X",
+          "1X11X11X11112",
+          "1X11111X11112",
+          "XX11111X11112",
+          "1X111X1X11112",
+          "1112X11X111XX",
+          "1111X1111111X",
+          "111XX1111111X",
+          "1111X111111X1",
+          "2111X11X111XX",
+          "1111X112111XX",
+          "111XX112111XX",
+          "1112111X111XX",
+          "111X11111111X",
+          "X111X1111111X",
+          "111X1111111X1",
+          "2111111X111XX",
+          "211X111X111XX",
+          "1111XX111111X",
+          "111XXX111111X",
+          "X111X111111X1",
+          "11111112111XX",
+          "111X1112111XX",
+          "X111X112111XX",
+          "X112111X111XX",
+          "X11111111111X",
+          "X11X11111111X",
+          "1111XX11111X1",
+          "2111XX1X111XX",
+          "1111XX12111XX",
+          "111XXX12111XX",
+          "1111X11X11112",
+          "111XX11X11112",
+          "11121X1X111XX",
+          "1111211X111XX",
+          "111X211X111XX",
+          "11111X111111X",
+          "111X1X111111X",
+          "X1111111111X1",
+          "X111XX111111X",
+          "X1111112111XX",
+          "X11X1112111XX",
+          "2X111111111XX",
+          "11111X11111X1",
+          "111X1X11111X1",
+          "21111X1X111XX",
+          "211X1X1X111XX",
+          "11111X12111XX",
+          "111X1X12111XX",
+          "111X111X11112",
+          "X111XX12111XX",
+          "X111X11X11112",
+          "X11XX11X11112",
+          "1X12X11X111X2",
+          "X111211X111XX",
+          "X1111X111111X",
+          "1X11X11111112",
+          "1X1XX11111112",
+          "1X112111111XX",
+          "1111XX1X11112",
+          "111XXX1X11112",
+          "11112X1X111XX",
+          "111X2X1X111XX",
+          "X1111X11111X1",
+          "1111X21X111XX",
+          "111XX21X111XX",
+          "2X11X11X111X2",
+          "X1111X12111XX",
+          "X111111X11112",
+          "X11X111X11112",
+          "1X11X112111X2",
+          "1X1XX112111X2",
+          "1X12111X111X2",
+          "1X11X11X111XX",
+          "1X1X111111112",
+          "XX11X11111112",
+          "11111X1X11112",
+          "111X1X1X11112",
+          "X111XX1X11112",
+          "X11XXX1X11112",
+          "X1112X1X111XX",
+          "1111121X111XX",
+          "111X121X111XX",
+          "2X11111X111X2",
+          "2X1X111X111X2",
+          "1X11XX1111112",
+          "1X1XXX1111112",
+          "X111X21X111XX",
+          "1X111112111X2",
+          "1X1X1112111X2",
+          "1X112X11111XX",
+          "XX11X112111X2",
+          "1X11111X111XX",
+          "1X1X111X111XX",
+          "1X11X211111XX",
+          "XX11111111112",
+          "XX1X111111112",
+          "2X11XX1X111X2",
+          "X1111X1X11112",
+          "X11X1X1X11112",
+          "1X11XX12111X2",
+          "1X1XXX12111X2",
+          "1X121X1X111X2",
+          "1X11211X111X2",
+          "1X1X211X111X2",
+          "1X11XX1X111XX",
+          "1X111X1111112",
+          "1X1X1X1111112",
+          "X111121X111XX",
+          "X11X121X111XX",
+          "XX11XX1111112",
+          "1112X111111XX",
+          "XX111112111X2",
+          "XX1X1112111X2",
+          "1X111211111XX",
+          "XX11111X111XX",
+          "2X111X1X111X2",
+          "1X111X12111X2",
+          "1X1X1X12111X2",
+          "XX11XX12111X2",
+          "1X111X1X111XX",
+          "XX11211X111X2",
+          "2111X111111XX",
+          "211XX111111XX",
+          "XX111X1111112",
+          "11121111111XX",
+          "X112X111111XX",
+          "1X112X1X111X2",
+          "1X1X2X1X111X2",
+          "1X11X21X111X2",
+          "1X1XX21X111X2",
+          "1112XX11111XX",
+          "XX111X12111X2",
+          "21111111111XX",
+          "211X1111111XX",
+          "XX111X1X111XX",
+          "X1121111111XX",
+          "1112X11X111X2",
+          "XX112X1X111X2",
+          "2111XX11111XX",
+          "211XXX11111XX",
+          "1X11121X111X2",
+          "1X1X121X111X2",
+          "111XX11111112",
+          "11121X11111XX",
+          "XX11X21X111X2",
+          "11112111111XX",
+          "111X2111111XX",
+          "X112XX11111XX",
+          "2111X11X111X2",
+          "211XX11X111X2",
+          "1111X112111X2",
+          "111XX112111X2",
+          "1112111X111X2",
+          "X112X11X111X2",
+          "21111X11111XX",
+          "211X1X11111XX",
+          "1111X11X111XX",
+          "111XX11X111XX",
+          "XX11121X111X2",
+          "X111X11111112",
+          "X11XX11111112",
+          "X1121X11111XX",
+          "1X12X111111X2",
+          "X1112111111XX",
+          "X11X2111111XX",
+          "1112XX1X111X2",
+          "2111111X111X2",
+          "211X111X111X2",
+          "1111XX1111112",
+          "111XXX1111112",
+          "111X1112111X2",
+          "11112X11111XX",
+          "111X2X11111XX",
+          "X111X112111X2",
+          "X11XX112111X2",
+          "X112111X111X2",
+          "1111111X111XX",
+          "111X111X111XX",
+          "1111X211111XX",
+          "111XX211111XX",
+          "2X11X111111X2",
+          "2X1XX111111X2",
+          "X111X11X111XX",
+          "X11XX11X111XX",
+          "X11X111111112",
+          "1X121111111X2",
+          "2111XX1X111X2",
+          "211XXX1X111X2",
+          "XX12X111111X2",
+          "1111XX12111X2",
+          "111XXX12111X2",
+          "1X11X111111XX",
+          "1X1XX111111XX",
+          "11121X1X111X2",
+          "1111211X111X2",
+          "111X211X111X2",
+          "X112XX1X111X2",
+          "1111XX1X111XX",
+          "111XXX1X111XX",
+          "111X1X1111112",
+          "X111XX1111112",
+          "X11XXX1111112",
+          "1X12XX11111X2",
+          "X1111112111X2",
+          "X11X1112111X2",
+          "X1112X11111XX",
+          "X11X2X11111XX",
+          "11111211111XX",
+          "111X1211111XX",
+          "2X111111111X2",
+          "2X1X1111111X2",
+          "X111111X111XX",
+          "X11X111X111XX",
+          "X111X211111XX",
+          "X11XX211111XX",
+          "21111X1X111X2",
+          "211X1X1X111X2",
+          "XX121111111X2",
+          "11111X12111X2",
+          "111X1X12111X2",
+          "1X111111111XX",
+          "1X1X1111111XX",
+          "X111XX12111X2",
+          "X11XXX12111X2",
+          "XX11X111111XX",
+          "X1121X1X111X2",
+          "11111X1X111XX",
+          "111X1X1X111XX",
+          "X111211X111X2",
+          "X11X211X111X2",
+          "2X11XX11111X2",
+          "2X1XXX11111X2",
+          "X111XX1X111XX",
+          "X1111X1111112",
+          "X11X1X1111112",
+          "1X121X11111X2",
+          "1X112111111X2",
+          "1X1X2111111X2",
+          "XX12XX11111X2",
+          "1X11XX11111XX",
+          "1X1XXX11111XX",
+          "11112X1X111X2",
+          "111X2X1X111X2",
+          "X1111211111XX",
+          "X11X1211111XX",
+          "1111X21X111X2",
+          "111XX21X111X2",
+          "X1111X12111X2",
+          "X11X1X12111X2",
+          "XX111111111XX",
+          "XX1X1111111XX",
+          "2X111X11111X2",
+          "2X1X1X11111X2",
+          "X1111X1X111XX",
+          "X11X1X1X111XX",
+          "1X11X11X111X2",
+          "1X1XX11X111X2",
+          "XX121X11111X2",
+          "1X111X11111XX",
+          "1X1X1X11111XX",
+          "XX112111111X2",
+          "XX1X2111111X2",
+          "XX11XX11111XX",
+          "X1112X1X111X2",
+          "X11X2X1X111X2",
+          "1111121X111X2",
+          "111X121X111X2",
+          "X111X21X111X2",
+          "X11XX21X111X2",
+          "1X112X11111X2",
+          "1X1X2X11111X2",
+          "1X11111X111X2",
+          "1X1X111X111X2",
+          "1X11X211111X2",
+          "1X1XX211111X2",
+          "XX11X11X111X2",
+          "XX1XX11X111X2",
+          "XX111X11111XX",
+          "XX1X1X11111XX",
+          "1X11XX1X111X2",
+          "1X1XXX1X111X2",
+          "X111121X111X2",
+          "X11X121X111X2",
+          "1112X111111X2",
+          "XX112X11111X2",
+          "XX1X2X11111X2",
+          "1X111211111X2",
+          "1X1X1211111X2",
+          "XX11111X111X2",
+          "XX1X111X111X2",
+          "XX11X211111X2",
+          "XX1XX211111X2",
+          "1X111X1X111X2",
+          "1X1X1X1X111X2",
+          "2111X111111X2",
+          "211XX111111X2",
+          "XX11XX1X111X2",
+          "X112X111111X2",
+          "1111X111111XX",
+          "111XX111111XX",
+          "XX111211111X2",
+          "XX1X1211111X2",
+          "1112XX11111X2",
+          "211X1111111X2",
+          "XX111X1X111X2",
+          "XX1X1X1X111X2",
+          "X1121111111X2",
+          "11111111111XX",
+          "111X1111111XX",
+          "X111X111111XX",
+          "X11XX111111XX",
+          "2111XX11111X2",
+          "211XXX11111X2",
+          "11121X11111X2",
+          "111X2111111X2",
+          "X112XX11111X2",
+          "1111XX11111XX",
+          "111XXX11111XX",
+          "X1111111111XX",
+          "X11X1111111XX",
+          "21111X11111X2",
+          "211X1X11111X2",
+          "1111X11X111X2",
+          "111XX11X111X2",
+          "X1121X11111X2",
+          "11111X11111XX",
+          "111X1X11111XX",
+          "X1112111111X2",
+          "X11X2111111X2",
+          "X111XX11111XX",
+          "X11XXX11111XX",
+          "11112X11111X2",
+          "111X2X11111X2",
+          "1111111X111X2",
+          "111X111X111X2",
+          "1111X211111X2",
+          "111XX211111X2",
+          "X111X11X111X2",
+          "X11XX11X111X2",
+          "X1111X11111XX",
+          "X11X1X11111XX",
+          "1X11X111111X2",
+          "1X1XX111111X2",
+          "1111XX1X111X2",
+          "111XXX1X111X2",
+          "X1112X11111X2",
+          "X11X2X11111X2",
+          "111X1211111X2",
+          "X111111X111X2",
+          "X11X111X111X2",
+          "X111X211111X2",
+          "X11XX211111X2",
+          "1X111111111X2",
+          "1X1X1111111X2",
+          "XX11X111111X2",
+          "XX1XX111111X2",
+          "11111X1X111X2",
+          "111X1X1X111X2",
+          "X111XX1X111X2",
+          "X11XXX1X111X2",
+          "1X11XX11111X2",
+          "1X1XXX11111X2",
+          "X1111211111X2",
+          "X11X1211111X2",
+          "XX111111111X2",
+          "XX1X1111111X2",
+          "X1111X1X111X2",
+          "X11X1X1X111X2",
+          "1X111X11111X2",
+          "1X1X1X11111X2",
+          "XX11XX11111X2",
+          "XX1XXX11111X2",
+          "XX111X11111X2",
+          "XX1X1X11111X2",
+          "1111X111111X2",
+          "111XX111111X2",
+          "111X1111111X2",
+          "X111X111111X2",
+          "X11XX111111X2",
+          "1111XX11111X2",
+          "111XXX11111X2",
+          "X1111111111X2",
+          "X11X1111111X2",
+          "11111X11111X2",
+          "111X1X11111X2",
+          "X111XX11111X2",
+          "X11XXX11111X2",
+          "X1111X11111X2",
+          "X11X1X11111X2"
+        ]
       },
       "result": null
     }

@@ -5,6 +5,10 @@ const SIGNS = ["1", "X", "2"];
 
 let data = null;
 let product = null;
+// Direktlänk: #stryktips/<produkt>/reducera öppnar kupongen med det reducerade systemet utfällt
+const deep = location.hash.match(/^#stryktips(?:\/(\w+))?(\/reducera)?/);
+if (deep?.[1]) product = deep[1];
+let showReduced = Boolean(deep?.[2]);
 let loading = false;
 const open = new Set(); // expanderade analyser (produkt|matchnr)
 
@@ -84,7 +88,7 @@ function probRow(e) {
     const hit = e.result?.outcome === s;
     const sv = e.streckvarde?.[i];
     return `<div class="st-prob${inSys ? " tip" : " out"}${hit ? " hit" : ""}">
-      <div class="st-prob-top"><span class="st-sign">${s}</span><span class="st-team">${esc(names[i])}</span>${inSys ? `<span class="st-in" title="Tecknet ingår i systemet">✓ spelas</span>` : ""}<strong>${pct(e.final[i])}</strong></div>
+      <div class="st-prob-top">${e.colors ? `<span class="st-dot ${e.colors[i]}" title="Färg efter folkets streck"></span>` : ""}<span class="st-sign">${s}</span><span class="st-team">${esc(names[i])}</span>${inSys ? `<span class="st-in" title="Tecknet ingår i systemet">✓ spelas</span>` : ""}<strong>${pct(e.final[i])}</strong></div>
       <div class="st-bar"><span style="width:${Math.round(e.final[i] * 100)}%"></span></div>
       <div class="st-prob-sub">
         <span title="Svenska Spels odds">odds ${dec(e.odds?.[i])}</span>
@@ -198,7 +202,7 @@ function matchCard(p, e) {
         <p><span class="st-kick">${esc(kickoff(e.kickoff))}</span> · ${esc(e.league || "")}</p>
       </div>
       <div class="st-verdict">
-        ${sys ? `<span class="st-tip ${sys.signs.length === 1 ? "spik" : sys.signs.length === 2 ? "halv" : "hel"}" title="Systemförslag">${esc(sys.type)} ${esc(sys.signs.split("").join(" + "))}</span>` : `<span class="st-tip">Tips ${esc(e.tip)}</span>`}
+        ${sys ? `<span class="st-tip ${sys.signs.length === 1 ? "spik" : sys.signs.length === 2 ? "halv" : "hel"}" title="Grundrad (reduceras sedan)">${esc(sys.type)} ${esc(sys.signs.split("").join(" + "))}</span>` : `<span class="st-tip">Tips ${esc(e.tip)}</span>`}
         ${verdictChip(e)}
         ${resultChip(e)}
       </div>
@@ -234,18 +238,32 @@ function render() {
   }
 
   const s = p.system;
+  const r = p.reduced;
+  const krFmt = (x) => Math.round(x).toLocaleString("sv-SE");
+  const reducedBox = r ? `<details class="st-method st-reduced"${showReduced ? " open" : ""}><summary>Reducerat system – ${r.rows} rader (${krFmt(r.cost)} kr) · visa regler och rader</summary>
+      <ol class="st-steps">
+        <li><b>Grundrad</b> ${s.rows} rader: spikar, halv- och helgarderingar där de höjer träffchansen mest (se chippen på varje match).</li>
+        <li><b>Färgreducering</b> efter Svenska folkets streck: <span class="st-dot green"></span>grön ≥ ${Math.round(r.rules.colorGreen * 100)} %, <span class="st-dot yellow"></span>gul, <span class="st-dot red"></span>röd ≤ ${Math.round(r.rules.colorRed * 100)} %. Regel: högst ${r.rules.greenMax} gröna och ${r.rules.redMin}–${r.rules.redMax} röda per rad.</li>
+        <li><b>Teckenreducering</b>: ${r.rules.xMin}–${r.rules.xMax} kryss per rad.</li>
+        <li><b>Utdelningsreducering</b>: utdelning min ${krFmt(r.rules.payoutMin)} kr (beräknad från streck och omsättning ${krFmt(r.rules.turnover / 1e6)} milj kr) – bort med favoritrader som betalar för lite. Gränsen är vald så att systemet ger högst förväntad återbetalning.</li>
+        <li><b>Budget</b> 350–400 kr: av raderna som klarar reglerna behålls de ${r.rows} mest sannolika.</li>
+      </ol>
+      <p>Chans 13 rätt: ${oneIn(r.hitAll)} (grundraden ${oneIn(r.grundHit)}). Beräknad utdelning om systemet tar 13 rätt: ca ${krFmt(r.expectedPayout || 0)} kr. Utdelningen är en uppskattning från streckprocenten och kan skilja sig från den verkliga.</p>
+      <button type="button" class="btn-ghost" id="st-download">Ladda ner rader (fil för Svenska Spel)</button>
+      <pre class="st-rows">${r.rowList.map((row, i) => `${String(i + 1).padStart(3, " ")}  ${row}`).join("\n")}</pre>
+    </details>` : "";
   const summary = `<div class="st-summary">
     ${p.note ? `<p class="st-note">${esc(p.note)}</p>` : ""}
     ${data.error ? `<p class="st-note bad">Kunde inte uppdatera: ${esc(data.error)}</p>` : ""}
     <div class="st-stats">
-      ${s ? `<div><span class="k">Systemförslag</span><strong>${s.rows} rader</strong><small>chans 13 rätt ${oneIn(s.hitAll)}</small></div>` : ""}
-      ${p.result ? `<div><span class="k">Facit – systemet fick</span><strong>${p.result.systemCorrect} av ${p.result.total} rätt</strong><small>rätt rad ${p.events.map((e) => e.result?.outcome || "–").join("")}</small></div>` : ""}
+      ${r ? `<div><span class="k">Reducerat system</span><strong>${r.rows} rader · ${krFmt(r.cost)} kr</strong><small>grundrad ${s.rows} → ${r.rows} · chans 13 rätt ${oneIn(r.hitAll)}</small></div>` : s ? `<div><span class="k">Systemförslag</span><strong>${s.rows} rader</strong><small>chans 13 rätt ${oneIn(s.hitAll)}</small></div>` : ""}
+      ${p.result ? `<div><span class="k">Facit – systemet fick</span><strong>${p.result.reducedCorrect ?? p.result.systemCorrect} av ${p.result.total} rätt</strong><small>rätt rad ${p.events.map((e) => e.result?.outcome || "–").join("")}</small></div>` : ""}
       ${p.result?.experts?.length ? `<div><span class="k">Svenska Spels experter</span><strong>${p.result.experts.map((x) => `${x.correct}/${x.tipped}`).join(" · ")} rätt</strong><small>${p.result.experts.map((x) => esc(x.author)).join(" · ")}</small></div>` : ""}
       ${p.result?.distribution?.[0] ? `<div><span class="k">Utdelning 13 rätt</span><strong>${esc(p.result.distribution[0].amount)} kr</strong><small>${p.result.distribution[0].winners} vinnare</small></div>` : ""}
     </div>
+    ${reducedBox}
     <details class="st-method"><summary>Hur räknas procenten?</summary>
       <ul>${Object.values(data.method || {}).map((m) => `<li>${esc(m)}</li>`).join("")}</ul>
-      <p>Systemförslaget spikar det troligaste tecknet och lägger gardering där den höjer träffchansen mest per extra rad (max ${s?.maxRows ?? 296} rader).</p>
     </details>
   </div>`;
 
@@ -257,6 +275,17 @@ view.addEventListener("click", (ev) => {
   if (pill) {
     product = pill.dataset.product;
     render();
+    return;
+  }
+  if (ev.target.closest("#st-download")) {
+    const p = (data?.products || []).find((x) => x.product === product);
+    if (!p?.reduced) return;
+    const txt = [p.productName, ...p.reduced.rowList.map((row) => `E,${row.split("").join(",")}`)].join("\r\n");
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(new Blob([txt], { type: "text/plain" }));
+    a.download = `${p.product}-${p.drawNumber}-reducerat-${p.reduced.rows}.txt`;
+    a.click();
+    URL.revokeObjectURL(a.href);
     return;
   }
   if (ev.target.closest("#st-fetch")) {
@@ -280,5 +309,5 @@ try {
 } catch {
   /* privat lage */
 }
-if (location.hash === "#stryktips") saved = "stryktips";
+if (deep) saved = "stryktips";
 setView(saved === "stryktips" ? "stryktips" : "tips");
