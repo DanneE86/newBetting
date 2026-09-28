@@ -371,13 +371,6 @@ function render() {
     ${p.note ? `<p class="st-note">${esc(p.note)}</p>` : ""}
     ${p.value ? `<p class="st-value ${esc(p.value.level)}">${esc(p.value.text)}</p>` : ""}
     ${data.error ? `<p class="st-note bad">Kunde inte uppdatera: ${esc(data.error)}</p>` : ""}
-    <div class="st-stats">
-      ${r ? `<div><span class="k">${rb ? "System A" : "Reducerat system"}</span><strong>${r.rows} rader · ${krFmt(r.cost)} kr</strong><small>grundrad ${s.rows} → ${r.rows} · utdelning ≥ ${krFmt(r.rules.payoutMin)} kr · minst ${r.rules.signMin.join("-")} · chans 13 rätt ${oneIn(r.hitAll)}</small>${r.gamblingCabinUrl && p.open ? `<a class="st-gc small" href="${esc(r.gamblingCabinUrl)}" target="_blank" rel="noopener">Öppna i Gambling Cabin →</a>` : ""}</div>` : s ? `<div><span class="k">Systemförslag</span><strong>${s.rows} rader</strong><small>chans 13 rätt ${oneIn(s.hitAll)}</small></div>` : ""}
-      ${rb ? `<div class="sysb"><span class="k">${rb.split ? "Kupong B – samma system, lägre utdelning" : "System B – går emot A"}</span><strong>${rb.rows} rader · ${krFmt(rb.cost)} kr</strong><small>grundrad ${rb.grundRows} → ${rb.rows} · utdelning ${krFmt(rb.rules.payoutMin)}${rb.rules.payoutMax ? `–${krFmt(rb.rules.payoutMax)}` : "+"} kr · minst ${rb.rules.signMin.join("-")}${rb.split ? "" : ` · ${rb.sameSingles} gemensam spik`} · chans 13 rätt ${oneIn(rb.hitAll)}${rb.unionHit ? ` · <b>A+B tillsammans ${oneIn(rb.unionHit)}</b>` : ""}</small>${rb.gamblingCabinUrl && p.open ? `<a class="st-gc small" href="${esc(rb.gamblingCabinUrl)}" target="_blank" rel="noopener">Öppna B i Gambling Cabin →</a>` : ""}</div>` : ""}
-      ${p.result ? `<div><span class="k">Facit – systemet fick</span><strong>${rb && p.result.reducedCorrectB != null ? `A ${p.result.reducedCorrect} · B ${p.result.reducedCorrectB}` : p.result.reducedCorrect ?? p.result.systemCorrect} av ${p.result.total} rätt</strong><small>rätt rad ${p.events.map((e) => e.result?.outcome || "–").join("")}</small></div>` : ""}
-      ${p.result?.experts?.length ? `<div><span class="k">Svenska Spels experter</span><strong>${p.result.experts.map((x) => `${x.correct}/${x.tipped}`).join(" · ")} rätt</strong><small>${p.result.experts.map((x) => esc(x.author)).join(" · ")}</small></div>` : ""}
-      ${p.result?.distribution?.[0] ? `<div><span class="k">Utdelning 13 rätt</span><strong>${esc(p.result.distribution[0].amount)} kr</strong><small>${p.result.distribution[0].winners} vinnare</small></div>` : ""}
-    </div>
     ${reducedBox}
     ${backtestBox(data.backtest, krFmt)}
     <details class="st-method"><summary>Hur räknas procenten?</summary>
