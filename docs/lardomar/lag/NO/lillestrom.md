@@ -56,3 +56,44 @@ Form (äldst → senast): FFFOFVVF · senaste match 2026-09-20
 | Start | 3 | 2-0-1 | 8–6 | +0,42 | −26 pe | 2026-04-11 3-1 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Hans Erik Ødegaard. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Espen Garnås (skadad, åter Early October 2026), Linus Alperud (skadad, åter Mid October 2026), Camil Jebara (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Stefan Hagerup | GK | 32 | Norway | 124 k€ | – | 0 | 0 | 0/0 |  |
+| 12 | Pontus Dahlberg | GK | 27 | Sweden | 663 k€ | 7,17 | 0 | 0 | 2/0 |  |
+| 50 | Lazar Babic | Keeper | 17 | Norway | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Lars Mogstad Ranger | RB | 27 | Norway | 435 k€ | 7,24 | 2 | 1 | 2/0 |  |
+| 3 | Sturla Ottesen | LB,RB | 25 | Norway | 448 k€ | 6,93 | 0 | 0 | 0/0 |  |
+| 4 | Espen Garnås | CB | 31 | Norway | 189 k€ | 6,52 | 0 | 0 | 0/1 | skadad, åter Early October 2026 |
+| 5 | Sander Moen Foss | CB | 27 | Norway | 234 k€ | 7,07 | 0 | 0 | 1/0 |  |
+| 11 | Frederik Elkær | LB | 24 | Denmark | 370 k€ | 6,86 | 0 | 2 | 3/0 |  |
+| 28 | Ruben Gabrielsen | CB | 34 | Norway | 326 k€ | 7,07 | 1 | 0 | 1/0 |  |
+| 47 | Stian Kristiansen | CB | 27 | Norway | 430 k€ | 6,79 | 0 | 0 | 1/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 14 | Gustav Kjølstad Nyheim | CAM,CM,ST | 20 | Norway | 934 k€ | 6,95 | 4 | 2 | 4/0 |  |
+| 16 | Henrik Melland | CM,LM | 21 | Norway | 834 k€ | 6,71 | 3 | 1 | 2/0 |  |
+| 17 | Eric Kitolano | CM,CAM | 29 | Norway | 251 k€ | 6,76 | 0 | 0 | 0/0 |  |
+| 18 | Kevin Martin Krygård | CM | 26 | Norway | 393 k€ | 6,61 | 0 | 0 | 1/0 |  |
+| 21 | Filip Ottosson | CM,CDM | 30 | Sweden | 410 k€ | 6,67 | 0 | 0 | 0/0 |  |
+| 29 | Ylldren Ibrahimaj | CM,CDM | 30 | Kosovo | 330 k€ | 7,08 | 0 | 2 | 7/0 |  |
+| 35 | Filip Vuyani Reshane | Midfielder | 18 | Norway | – | – | 0 | 0 | 0/0 |  |
+| 36 | Isa Jallow | Midfielder | 17 | Norway | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Linus Alperud | RW | 20 | Sweden | 754 k€ | 6,47 | 1 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 8 | Fredrik Gulbrandsen | ST | 34 | Norway | 382 k€ | 6,64 | 6 | 1 | 4/0 |  |
+| 10 | Thomas Lehne Olsen | ST | 35 | Norway | 372 k€ | 6,77 | 5 | 1 | 0/0 |  |
+| 15 | Gustav Nordh | LM,LW | 26 | Sweden | 196 k€ | 6,18 | 0 | 0 | 0/0 |  |
+| 19 | Camil Jebara | RW,ST | 23 | Sweden | 614 k€ | 6,58 | 1 | 0 | 1/0 | skadad, åter Mid October 2026 |
+| 20 | Vá | LW,ST,LM | 28 | Angola | 429 k€ | 7,26 | 5 | 5 | 2/0 |  |
+| 22 | Daniel Bassi | RW,LW | 21 | Norway | 1,4 M€ | 6,39 | 0 | 1 | 0/0 |  |
+| 25 | Seun Akanji | Attacker | 18 | Nigeria | – | – | 0 | 0 | 0/0 |  |
+| 26 | Yaw Paintsil | RW,LB | 27 | Norway | 479 k€ | 6,77 | 0 | 1 | 1/0 |  |
+| 41 | Ivar Winje | Attacker | 19 | Norway | – | – | 0 | 0 | 0/0 |  |

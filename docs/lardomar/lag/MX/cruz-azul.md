@@ -60,3 +60,44 @@ Form (äldst → senast): VFFFVVVF · senaste match 2026-09-20
 | Atlante | 1 | 0-0-1 | 2–3 | −2,24 | −20 pe | 2026-08-02 2-3 (h) |
 
 Ligans test av inbördes möten mot marknaden: svag signal (inte bekräftad).
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Joel Huiqui. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Andrés Gudiño | GK | 29 | Mexico | 1,4 M€ | – | 0 | 0 | 0/0 |  |
+| 23 | Kevin Mier | GK | 26 | Colombia | 4,4 M€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Alan Mozo | RB | 29 | Mexico | 1,4 M€ | – | 0 | 0 | 0/0 |  |
+| 3 | Omar Campos | LWB,RWB,LB,RM | 24 | Mexico | 3,0 M€ | – | 0 | 0 | 0/0 |  |
+| 4 | Willer Ditta | CB | 28 | Colombia | 3,2 M€ | – | 0 | 0 | 0/0 |  |
+| 5 | Jesús Orozco | CB | 24 | Mexico | 2,5 M€ | – | 0 | 0 | 0/0 |  |
+| 6 | Érik Lira | CB,CDM,CM | 26 | Mexico | 9,4 M€ | – | 0 | 0 | 0/0 |  |
+| 12 | Alán Montes | CB | 25 | Mexico | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 15 | Ralph Orquin | LB | 23 | Mexico | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| 17 | Amaury García | CB,CDM | 24 | Mexico | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 22 | Jorge Rodarte | RWB,CB | 22 | Mexico | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 33 | Gonzalo Piovi | CB | 32 | Argentina | 1,9 M€ | – | 0 | 0 | 0/0 |  |
+| 35 | Karol Velázquez | CB | 21 | Mexico | 556 k€ | – | 0 | 0 | 0/0 |  |
+| 49 | Josué Díaz | LB | 22 | Mexico | 495 k€ | – | 0 | 0 | 0/0 |  |
+| 55 | Rogelio González | RWB | 21 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 8 | Agustín Palavecino | CM,CDM,CAM,LW | 29 | Argentina | 2,8 M€ | – | 0 | 0 | 0/0 |  |
+| 10 | Andrés Montaño | CM,CAM | 24 | Mexico | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 16 | Jeremy Márquez | CDM,RWB,CM,RB,RM | 26 | Mexico | 3,1 M€ | – | 0 | 0 | 0/0 |  |
+| 18 | Luka Romero | LM,CAM,LW | 21 | Argentina | 3,0 M€ | – | 0 | 0 | 0/0 |  |
+| 19 | Carlos Rodríguez | CM,CDM,CAM,LW,LM | 29 | Mexico | 2,5 M€ | – | 0 | 0 | 0/0 |  |
+| 20 | José Paradela | CAM,RW,RM,ST,CM | 27 | Argentina | 6,7 M€ | – | 0 | 0 | 0/0 |  |
+| 25 | Fernando Sámano | CAM | 24 | Mexico | 225 k€ | – | 0 | 0 | 0/0 |  |
+| 29 | Carlos Rotondi | LWB,LM,LW,CAM,LB | 29 | Argentina | 2,4 M€ | – | 0 | 0 | 0/0 |  |
+| 32 | Cristian Jiménez | CDM | 24 | Mexico | 461 k€ | – | 0 | 0 | 0/0 |  |
+| 80 | Ariel Castro | RW | 21 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Nicolás Ibáñez | ST | 32 | Argentina | 1,8 M€ | – | 0 | 0 | 0/0 |  |
+| 11 | Christian Ebere | ST,CAM | 28 | Nigeria | 898 k€ | – | 0 | 0 | 0/0 |  |
+| 21 | Gabriel Fernández | ST | 32 | Uruguay | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 27 | Bryan Gamboa | ST | 24 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| 214 | Mateo Levy | ST | 19 | Mexico | – | – | 0 | 0 | 0/0 |  |

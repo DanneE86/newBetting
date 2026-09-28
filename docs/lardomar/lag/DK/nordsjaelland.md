@@ -54,8 +54,44 @@ Form (äldst → senast): VVVVFOVF · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Stryktipset / Europatipset
+## Trupp (FotMob, hämtad 2026-09-28)
 
-| Datum | Spel | Match | Utfall | Folket på laget | Vår procent |
-|---|---|---|---|---|---|
-| 2026-04-30 | Europa 2570 | Bröndby - Nordsjälland | X | 29 % | 32 % |
+Tränare: Jens Olsen. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Tobias Salquist (skadad, åter Late September 2026), Araphat Mohammed (skadad, åter Day to day), Souleymane Alio (skadad, åter Day to day)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 13 | Andreas Hansen | GK | 31 | Denmark | 950 k€ | 6,97 | 0 | 0 | 0/0 |  |
+| 16 | Jakob Busk | GK | 33 | Denmark | 250 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Carljohan Eriksson | GK | 31 | Finland | 198 k€ | – | 0 | 0 | 0/0 |  |
+| 31 | Andreas Soendenbroe | Keeper | 18 | Denmark | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Peter Ankersen | CB,RB | 36 | Denmark | 263 k€ | 6,91 | 0 | 1 | 1/0 |  |
+| 3 | Tobias Salquist | CB | 31 | Denmark | 477 k€ | 7,49 | 0 | 1 | 1/0 | skadad, åter Late September 2026 |
+| 4 | Noah Markmann | CB | 19 | Denmark | 2,1 M€ | 6,76 | 0 | 0 | 1/0 |  |
+| 15 | Stephen Acquah | CB | 20 | Ghana | 934 k€ | 7,05 | 0 | 0 | 0/0 |  |
+| 25 | Victor Nelsson | CB | 27 | Denmark | 4,8 M€ | 7,03 | 0 | 0 | 1/0 |  |
+| 35 | Villads Rutkjær | CB | 17 | Denmark | 788 k€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Juho Lähteenmäki | LB,RM,LM,CB,LWB,RWB | 20 | Finland | 4,3 M€ | 7,04 | 0 | 2 | 2/0 |  |
+| 6 | Mark Brink | CM,CDM | 28 | Denmark | 1,2 M€ | 7,48 | 1 | 3 | 0/0 |  |
+| 8 | Nicklas Røjkjær | CM | 28 | Denmark | 1,5 M€ | 7,04 | 1 | 0 | 1/0 |  |
+| 18 | Justin Janssen | CM,CDM | 20 | Denmark | 1,8 M€ | 7,32 | 1 | 1 | 2/0 |  |
+| 20 | Araphat Mohammed | Midfielder | 20 | Ghana | 385 k€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
+| 23 | Runar Robinsønn Norheim | LB,LWB,RM,LM | 21 | Norway | 2,3 M€ | 7,17 | 1 | 1 | 1/0 |  |
+| 28 | Markus Walker | CB | 19 | Denmark | 572 k€ | 9,01 | 2 | 0 | 0/0 |  |
+| 32 | Victor Gustafsen | RM | 18 | Denmark | 788 k€ | – | 0 | 0 | 0/0 |  |
+| 47 | Malte Heyde | CM | 19 | Denmark | 780 k€ | 6,45 | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Ola Solbakken | RW | 28 | Norway | 1,3 M€ | 5,92 | 0 | 0 | 0/0 |  |
+| 10 | Prince Junior | LW,ST,CAM | 19 | Ghana | 6,8 M€ | 7,16 | 0 | 0 | 1/0 |  |
+| 11 | Alexander Lind | ST | 24 | Denmark | 5,1 M€ | 7,14 | 3 | 1 | 2/0 |  |
+| 14 | Ibrahim Adel | LW,CAM,ST | 25 | Egypt | 2,0 M€ | 6,89 | 1 | 1 | 2/0 |  |
+| 29 | Villum Berthelsen | ST,RW | 20 | Denmark | 1,4 M€ | 6,62 | 1 | 0 | 1/0 |  |
+| 33 | Souleymane Alio | Attacker | 19 | Burkina Faso | 399 k€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
+| 37 | Lamine Sadio | RW,CAM | 18 | Senegal | 1,4 M€ | 6,63 | 0 | 0 | 0/0 |  |
+| 40 | Hjalte Boe Rasmussen | RW | 18 | Denmark | 1,1 M€ | 6,63 | 3 | 1 | 0/0 |  |
+| 43 | Mouekeinga Kone | Attacker | 19 | Ivory Coast | – | – | 0 | 0 | 0/0 |  |
+| 49 | William Faber | Attacker | 18 | Denmark | – | – | 0 | 0 | 0/0 |  |

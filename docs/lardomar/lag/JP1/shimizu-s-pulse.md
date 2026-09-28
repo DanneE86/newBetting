@@ -57,3 +57,50 @@ Form (äldst → senast): VFFFOFVV · senaste match 2026-09-19
 | V-Varen Nagasaki | 1 | 0-1-0 | 4–4 | −0,61 | +73 pe | 2018-12-01 4-4 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Takayuki Yoshida. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Yuya Oki | GK | 27 | Japan | 226 k€ | – | 0 | 0 | 0/0 |  |
+| 16 | Togo Umeda | GK | 26 | Japan | 248 k€ | 7,28 | 0 | 0 | 0/0 |  |
+| 22 | Kei Ishikawa | GK | 33 | Japan | 113 k€ | – | 0 | 0 | 0/0 |  |
+| 30 | Tomotaro Sasaki | Keeper | 19 | Japan | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 3 | Yuji Takahashi | CB | 33 | Japan | 155 k€ | 6,73 | 0 | 0 | 1/0 |  |
+| 4 | Sodai Hasukawa | CB | 28 | Japan | 186 k€ | 6,21 | 0 | 0 | 0/0 |  |
+| 14 | Seung-Wook Park | CB,RB | 29 | South Korea | 341 k€ | 6,75 | 0 | 0 | 1/0 |  |
+| 15 | Yuki Honda | CB | 35 | Japan | 176 k€ | 7,00 | 0 | 0 | 0/0 |  |
+| 20 | Joo-Young Eom | Defender | 19 | South Korea | – | – | 0 | 0 | 0/0 |  |
+| 24 | Hidehiro Sugai | RB,LB,CB | 27 | Japan | 352 k€ | 6,94 | 0 | 0 | 1/0 |  |
+| 25 | Mateus Brunetti | LB,CB | 26 | Brazil | 275 k€ | 7,36 | 0 | 0 | 2/0 |  |
+| 28 | Yutaka Yoshida | LB,RWB,RB,CB | 36 | Japan | 152 k€ | 6,63 | 0 | 0 | 0/0 |  |
+| 39 | Haruto Hidaka | RB | 22 | Japan | 200 k€ | – | 0 | 0 | 0/0 |  |
+| 51 | Jelani Sumiyoshi | CB | 28 | Japan | 248 k€ | 6,33 | 0 | 0 | 0/1 |  |
+| 70 | Sen Takagi | CB | 24 | Japan | 244 k€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 2 | Dieguinho | CDM | 31 | Brazil | 563 k€ | 6,55 | 0 | 0 | 0/0 |  |
+| 5 | Kengo Kitazume | RB,RWB,CAM | 34 | Japan | 135 k€ | – | 0 | 0 | 0/0 |  |
+| 6 | Doo-Jae Won | CDM,CM | 28 | South Korea | 374 k€ | 7,13 | 0 | 1 | 0/0 |  |
+| 13 | Ryo Germain | CAM,ST,RW,CM | 31 | Japan | 346 k€ | 6,24 | 0 | 1 | 1/0 |  |
+| 17 | Masaki Yumiba | CDM,CM,CAM | 24 | Japan | 275 k€ | 6,87 | 0 | 0 | 0/0 |  |
+| 18 | Taiki Hirato | CAM,CM | 29 | Japan | 343 k€ | 6,40 | 0 | 0 | 0/0 |  |
+| 21 | Kai Matsuzaki | CAM,LW,CM,RW | 28 | Japan | 266 k€ | 6,98 | 1 | 0 | 0/0 |  |
+| 27 | Ryota Hariu | Midfielder | 18 | Japan | – | – | 0 | 0 | 0/0 |  |
+| 33 | Yuji Doi | Midfielder | 19 | Japan | – | – | 0 | 0 | 0/0 |  |
+| 37 | Kei Koizumi | CM | 31 | Japan | 259 k€ | 6,19 | 0 | 0 | 0/0 |  |
+| 41 | Keigo Suzuki | Midfielder | 23 | Japan | – | – | 0 | 0 | 0/0 |  |
+| 47 | Yudai Shimamoto | CAM,CM,CDM | 19 | Japan | 644 k€ | 6,94 | 1 | 0 | 0/0 |  |
+| 50 | Tomoya Fujii | CAM,LW,LWB,RW | 27 | Japan | 184 k€ | 6,71 | 0 | 2 | 2/0 |  |
+| 81 | Kazuki Kozuka | CAM,CM,CDM,RW | 32 | Japan | 128 k€ | 6,23 | 0 | 0 | 0/0 |  |
+| 97 | Rinsei Ohata | LWB | 22 | Japan | 228 k€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Capixaba | LW,LWB | 29 | Brazil | 252 k€ | 5,95 | 0 | 0 | 0/0 |  |
+| 8 | Kenta Inoue | LW | 28 | Japan | 208 k€ | 6,69 | 0 | 0 | 1/0 |  |
+| 9 | Se-Hun Oh | ST | 27 | South Korea | 767 k€ | 6,76 | 2 | 0 | 2/1 |  |
+| 19 | Kosuke Kinoshita | ST | 31 | Japan | 303 k€ | 6,21 | 1 | 0 | 0/0 |  |
+| 38 | Yuto Tsuji | RW | 20 | Japan | – | 6,40 | 0 | 0 | 0/0 |  |
+| 49 | Koya Kitagawa | RW,CAM | 30 | Japan | 519 k€ | 6,71 | 1 | 0 | 0/0 |  |

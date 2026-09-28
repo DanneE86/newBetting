@@ -22,10 +22,10 @@ Form (äldst → senast): FFOVOVOV · senaste match 2026-09-20
 | Säsong | Liga | M | P/M | Mot marknaden (hemma / borta) | Kryss (odds) | Mål för–emot | xG för–emot | xP/M |
 |---|---|---|---|---|---|---|---|---|
 | 2022/23 | SB | 38 | 1,53 | +0,39 (+0,14 / +0,63) | 42 % (31 %) | 1,00–0,89 | 1,19–1,48* | 1,20 |
-| 2023/24 | SB | 38 | 1,24 | +0,10 (+0,03 / +0,18) | 29 % (32 %) | 1,21–1,26 | 1,03–1,33* | 1,16 |
-| 2024/25 | SB | 38 | 1,21 | −0,09 (−0,09 / −0,08) | 26 % (32 %) | 1,32–1,50 | 1,31–1,52* | 1,26 |
+| 2023/24 | SB | 38 | 1,24 | +0,10 (+0,03 / +0,18) | 29 % (32 %) | 1,21–1,26 | 1,03–1,34* | 1,16 |
+| 2024/25 | SB | 38 | 1,21 | −0,09 (−0,09 / −0,08) | 26 % (32 %) | 1,32–1,50 | 1,32–1,53* | 1,26 |
 | 2025/26 | SB | 38 | 1,08 | −0,13 (−0,35 / +0,10) | 45 % (30 %) | 1,00–1,26 | 1,27–1,36* | 1,32 |
-| 2026/27 | SB | 5 | 2,20 | +1,02 (+0,94 / +1,14) | 40 % (30 %) | 1,80–0,60 | 1,07–1,63* | 1,04 |
+| 2026/27 | SB | 5 | 2,20 | +1,02 (+0,94 / +1,14) | 40 % (30 %) | 1,80–0,60 | 1,07–1,63* | 1,03 |
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
 
@@ -52,3 +52,50 @@ Form (äldst → senast): FFOVOVOV · senaste match 2026-09-20
 | Arezzo | 1 | 1-0-0 | 4–1 | +1,84 | −31 pe | 2026-09-20 4-1 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Davide Possanzini. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Hamza El Kaouakibi (skadad, åter Late September 2026), Niklas Pyyhtiä (skadad, åter Late September 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Daniele Borra | GK | 31 | Italy | 139 k€ | – | 0 | 0 | 0/0 |  |
+| 1 | Lukas Ploner | Keeper | 0 | Italy | – | – | 0 | 0 | 0/0 |  |
+| 12 | Rok Vadjunec | Keeper | 20 | Slovenia | – | – | 0 | 0 | 0/0 |  |
+| 22 | Alessandro Plizzari | GK | 26 | Italy | 791 k€ | 7,49 | 0 | 0 | 0/0 |  |
+| 22 | Lorenzo Bonifacio | Keeper | 19 | Italy | – | – | 0 | 0 | 0/0 |  |
+| 31 | Marius Adamonis | GK | 29 | Lithuania | 586 k€ | – | 0 | 0 | 0/0 |  |
+| 32 | Tommaso Laureti | Keeper | 17 | Italy | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 3 | Davide Veroli | CB | 23 | Italy | 1,0 M€ | 6,71 | 0 | 0 | 0/0 |  |
+| 4 | Riccardo Stivanello | CB | 22 | Italy | 678 k€ | 6,95 | 0 | 0 | 0/0 |  |
+| 5 | Andrea Masiello | CB | 40 | Italy | 159 k€ | – | 0 | 0 | 0/0 |  |
+| 13 | Carlo Sabatini | Defender | 19 | Italy | – | – | 0 | 0 | 0/0 |  |
+| 13 | Marco Varnier | CB | 28 | Italy | 300 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | Mattia Pellini | CB | 19 | Italy | – | – | 0 | 0 | 0/0 |  |
+| 23 | Federico Davi | CB,RWB,RM | 24 | Italy | 403 k€ | – | 0 | 0 | 0/0 |  |
+| 27 | Giacomo Stabile | CB | 21 | Italy | 1,3 M€ | 6,22 | 0 | 0 | 1/1 |  |
+| 39 | Marco Iuliano | Defender | 18 | Italy | – | – | 0 | 0 | 0/0 |  |
+| 55 | Andrea Giorgini | CB | 24 | Italy | 1,8 M€ | 7,35 | 1 | 0 | 0/0 |  |
+| 94 | Hamza El Kaouakibi | CB | 28 | Morocco | 486 k€ | – | 0 | 0 | 0/0 | skadad, åter Late September 2026 |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Simone Tronchin | CM,CDM | 23 | Italy | 1,2 M€ | 7,17 | 0 | 0 | 1/0 |  |
+| 8 | Niklas Pyyhtiä | CM | 23 | Finland | 1,4 M€ | 6,58 | 0 | 0 | 0/0 | skadad, åter Late September 2026 |
+| 10 | Fabio Rispoli | CM,CDM,CAM | 20 | Italy | 3,6 M€ | 7,56 | 1 | 2 | 1/0 |  |
+| 14 | Aljoša Vasić | CAM,LM | 24 | Italy | 761 k€ | 6,87 | 0 | 2 | 1/0 |  |
+| 17 | Lorenzo Anghelè | CM | 21 | Italy | 720 k€ | 6,08 | 0 | 0 | 1/0 |  |
+| 18 | Kevin Zeroli | CM | 21 | Italy | 2,4 M€ | 6,66 | 0 | 1 | 0/0 |  |
+| 20 | Bjarki Steinn Bjarkason | LWB,LM | 26 | Iceland | 553 k€ | 6,97 | 0 | 0 | 0/0 |  |
+| 21 | Fabian Tait | CM | 33 | Italy | 187 k€ | 6,11 | 0 | 0 | 0/0 |  |
+| 24 | Simone Davì | LM | 27 | Italy | 426 k€ | 6,28 | 1 | 0 | 1/0 |  |
+| 46 | Dhirar Brik | CM | 18 | Tunisia | 576 k€ | – | 0 | 0 | 0/0 |  |
+| 79 | Salvatore Molina | RM,CB,RWB | 34 | Italy | 208 k€ | 7,29 | 0 | 2 | 0/0 |  |
+| 80 | Elias Schrott | Midfielder | 17 | Italy | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Rareş Burnete | ST,LW,CAM | 22 | Romania | 480 k€ | 5,96 | 1 | 0 | 0/0 |  |
+| 11 | Vasco Lopes | RW,LW,RM,CAM | 27 | Cape Verde | 356 k€ | 7,11 | 1 | 1 | 1/0 |  |
+| 25 | Kenny Mixtur | ST | 22 | Guadeloupe | 315 k€ | 6,60 | 2 | 0 | 1/0 |  |
+| 90 | Alvin Okoro | ST,LW | 21 | Italy | 1,4 M€ | 6,91 | 1 | 0 | 0/0 |  |

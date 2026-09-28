@@ -58,3 +58,39 @@ Form (äldst → senast): VOVVOVVO · senaste match 2026-09-20
 | Queretaro | 14 | 5-7-2 | 19–14 | −0,18 | +23 pe | 2026-01-17 2-1 (h) |
 
 Ligans test av inbördes möten mot marknaden: svag signal (inte bekräftad).
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Gabriel Milito. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** José Castillo Pérez (skadad, åter Back in training), Miguel Gómez (skadad, åter Back in training), Bryan González (skadad, åter Back in training)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Raúl Rangel | GK | 26 | Mexico | 4,6 M€ | – | 0 | 0 | 0/0 |  |
+| 13 | Óscar Whalley | GK | 32 | Spain | 355 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | José Castillo Pérez | CB,RB | 24 | Mexico | 2,3 M€ | – | 0 | 0 | 0/0 | skadad, åter Back in training |
+| 3 | Diego Campillo | CB | 24 | Mexico | 1,9 M€ | – | 0 | 0 | 0/0 |  |
+| 4 | Miguel Tapias | CB | 29 | Mexico | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 7 | Luis Romo | CB,CM,CDM,CAM | 31 | Mexico | 2,3 M€ | – | 0 | 0 | 0/0 |  |
+| 23 | Daniel Aguirre | CB,RWB | 27 | USA | 1,9 M€ | – | 0 | 0 | 0/0 |  |
+| 24 | Miguel Gómez | CB | 23 | Mexico | 902 k€ | – | 0 | 0 | 0/0 | skadad, åter Back in training |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Bryan González | LWB,LW,CB,LB,RWB | 23 | Mexico | 4,6 M€ | – | 0 | 0 | 0/0 | skadad, åter Back in training |
+| 6 | Omar Govea | CDM,RW,CM | 30 | Mexico | 973 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Efraín Álvarez | CAM,LM,LW | 24 | Mexico | 4,6 M€ | – | 0 | 0 | 0/0 |  |
+| 11 | Brian Gutiérrez | CAM,CDM,CM,LW | 23 | Mexico | 5,0 M€ | – | 0 | 0 | 0/0 |  |
+| 14 | Hugo Camberos | LWB,RW,LW | 19 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| 16 | Luis Gabriel Rey | CDM,CM,CB | 24 | Mexico | 1,7 M€ | – | 0 | 0 | 0/0 |  |
+| 18 | Jonathan Pérez | RM | 23 | Mexico | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 19 | Kevin Castañeda | CAM,ST,LW | 26 | Mexico | 2,1 M€ | – | 0 | 0 | 0/0 |  |
+| 25 | Roberto Alvarado | CAM,RW,ST,CB,RWB | 28 | Mexico | 4,0 M€ | – | 0 | 0 | 0/0 |  |
+| 28 | Rubén González | CDM,CM | 32 | Mexico | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 30 | Santiago Sandoval | CAM,RWB,ST | 19 | Mexico | 2,7 M€ | – | 0 | 0 | 0/0 |  |
+| 33 | Jordán Carrillo | CAM,LM,CM,LW | 24 | Mexico | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 37 | Richard Ledezma | RWB,RW,LWB,RM,RB,CDM | 26 | Mexico | 2,4 M€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Ángel Sepúlveda | ST,CM | 35 | Mexico | 877 k€ | – | 0 | 0 | 0/0 |  |
+| 17 | Ricardo Marín | ST,CAM | 28 | Mexico | 1,7 M€ | – | 0 | 0 | 0/0 |  |

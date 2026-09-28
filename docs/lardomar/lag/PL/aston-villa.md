@@ -13,8 +13,8 @@ Form (äldst → senast): OVVFFOFV · senaste match 2026-09-19
 
 | Mått | Värde |
 |---|---|
-| Tur (poäng − xP per match) | +0,18 |
-| xG-målskillnad − målskillnad | −0,01 |
+| Tur (poäng − xP per match) | +0,16 |
+| xG-målskillnad − målskillnad | −0,22 |
 | Poäng mot marknaden per match | +0,11 |
 
 ## Säsonger
@@ -30,9 +30,24 @@ Form (äldst → senast): OVVFFOFV · senaste match 2026-09-19
 | 2023/24 | PL | 38 | 1,79 | +0,27 (+0,36 / +0,18) | 21 % (23 %) | 2,00–1,61 | 1,77–1,71 | 1,45 |
 | 2024/25 | PL | 38 | 1,74 | +0,12 (+0,33 / −0,08) | 24 % (24 %) | 1,53–1,34 | 1,75–1,45 | 1,59 |
 | 2025/26 | PL | 38 | 1,71 | +0,29 (+0,38 / +0,20) | 21 % (26 %) | 1,47–1,29 | 1,48–1,49 | 1,36 |
-| 2026/27 | PL | 5 | 0,80 | −0,36 (−1,10 / +0,13) | 20 % (26 %) | 0,80–1,80 | 0,95–1,79* | 0,84 |
+| 2026/27 | PL | 5 | 0,80 | −0,36 (−1,10 / +0,13) | 20 % (26 %) | 0,80–1,80 | 1,00–2,17 | 0,87 |
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+
+## Nyckelspelare (Understat, 2024/25–)
+
+Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
+
+| Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
+|---|---|---|---|---|
+| Johan Manzambi | 23 % | 0 / 81 | – / 1,67 | – / +0,17 |
+| Ollie Watkins | 17 % | 0 / 81 | – / 1,67 | – / +0,17 |
+| Nicolas Jackson | 14 % | 0 / 81 | – / 1,67 | – / +0,17 |
+| Morgan Rogers | 10 % | 1 / 80 | 3,00 / 1,65 | +2,21 / +0,15 |
+| John McGinn | 8 % | 9 / 72 | 1,33 / 1,71 | −0,04 / +0,20 |
+| Emiliano Buendía | 7 % | 0 / 81 | – / 1,67 | – / +0,17 |
+
+Ligans test av frånvaro mot marknaden: svag signal (inte bekräftad). Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -97,3 +112,43 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-09-28 | Europa 2509 | Aston Villa - Fulham | 1 ✓ | 43 % | 41 % |
 | 2025-09-21 | Europa 2507 | Sunderland - Aston Villa | X | 49 % | 44 % |
 | 2025-08-31 | Europa 2501 | Aston Villa - Crystal Palace | 2 | 58 % | 47 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Unai Emery. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Marco Bizot (osäker), Pau Torres (skadad, åter Mid October 2026), Ian Maatsen (skadad, åter Late October 2026), Amadou Onana (skadad, åter Mid April 2027), Leon Goretzka (skadad, åter Mid October 2026), Brian Madjo (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Zion Suzuki | GK | 24 | Japan | 17,6 M€ | 7,29 | 0 | 0 | 0/0 |  |
+| 40 | Marco Bizot | GK | 35 | Netherlands | 1,1 M€ | 6,87 | 0 | 0 | 0/0 | osäker |
+| | **Backar** | | | | | | | | | |
+| 2 | Matty Cash | RB,RM,RWB | 29 | Poland | 18,0 M€ | 6,24 | 0 | 0 | 2/0 |  |
+| 3 | Victor Nilsson Lindelöf | CB,CDM,RB | 32 | Sweden | 3,0 M€ | 5,95 | 0 | 0 | 0/0 |  |
+| 4 | Taylor Harwood-Bellis | CB | 24 | England | 17,6 M€ | – | 0 | 0 | 0/0 |  |
+| 5 | Tyrone Mings | CB | 33 | England | 1,8 M€ | 6,96 | 0 | 0 | 1/0 |  |
+| 13 | Matteo Ruggeri | LB,LWB | 24 | Italy | 17,4 M€ | 7,00 | 0 | 0 | 0/0 |  |
+| 14 | Pau Torres | CB | 29 | Spain | 20,9 M€ | 5,41 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 22 | Ian Maatsen | LB | 24 | Netherlands | 27,8 M€ | 6,27 | 0 | 0 | 1/0 | skadad, åter Late October 2026 |
+| 29 | Aaron Wan-Bissaka | RB,RWB,RM | 28 | DR Congo | 18,0 M€ | 6,68 | 0 | 0 | 0/0 |  |
+| 48 | Modou Kéba Cissé | CB | 21 | Senegal | 2,8 M€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Ross Barkley | CDM,CAM | 32 | England | 2,1 M€ | 6,55 | 0 | 0 | 0/0 |  |
+| 8 | Boubacar Kamara | CDM,CM | 26 | France | 37,2 M€ | 6,84 | 0 | 1 | 0/0 |  |
+| 24 | Amadou Onana | CDM | 25 | Belgium | 37,8 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid April 2027 |
+| 26 | Lamare Bogarde | CDM,RB | 22 | Netherlands | 13,6 M€ | 6,07 | 0 | 0 | 0/0 |  |
+| 27 | Leon Goretzka | CDM,CAM | 31 | Germany | 9,5 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 35 | João Gomes | CDM,CM | 25 | Brazil | 36,3 M€ | 5,75 | 0 | 0 | 1/1 |  |
+| 44 | Johan Manzambi | CDM,CAM,LW | 20 | Switzerland | 42,4 M€ | 7,33 | 1 | 1 | 0/0 |  |
+| 53 | George Hemmings | CDM,LW,CM,CAM | 19 | England | 290 k€ | 6,19 | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | John McGinn | RW,CAM,LW,CDM | 31 | Scotland | 12,8 M€ | 6,64 | 0 | 2 | 2/0 |  |
+| 10 | Emiliano Buendía | LW,CAM,LM | 29 | Argentina | 12,4 M€ | 6,81 | 1 | 0 | 0/0 |  |
+| 11 | Nicolas Jackson | ST,LW | 25 | Senegal | 32,1 M€ | 6,85 | 1 | 0 | 2/0 |  |
+| 17 | Alejandro Garnacho | LW | 22 | Argentina | 40,2 M€ | 6,04 | 0 | 0 | 0/0 |  |
+| 18 | Tammy Abraham | ST | 28 | England | 15,8 M€ | 5,99 | 0 | 0 | 0/0 |  |
+| 19 | Ibrahim Mbaye | RW,LW | 18 | Senegal | 26,1 M€ | 6,26 | 0 | 0 | 0/0 |  |
+| 39 | Brian Madjo | ST | 17 | Luxembourg | 11,5 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 47 | Alysson Edward | RW | 20 | Brazil | 11,1 M€ | 6,44 | 1 | 0 | 1/0 |  |

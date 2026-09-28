@@ -23,8 +23,8 @@ Form (äldst → senast): FOVFVVVF · senaste match 2026-09-26
 |---|---|---|---|---|---|---|---|---|
 | 2017/18 | EL1 | 46 | 1,48 | +0,42 (+0,56 / +0,29) | 24 % (26 %) | 1,26–1,28 | 1,19–1,61* | 1,12 |
 | 2018/19 | EL1 | 46 | 1,09 | −0,05 (+0,16 / −0,27) | 24 % (26 %) | 1,22–1,74 | 1,36–1,71* | 1,16 |
-| 2019/20 | EL2 | 37 | 1,84 | +0,21 (+0,37 / +0,05) | 22 % (27 %) | 1,65–1,05 | 1,56–1,42* | 1,47 |
-| 2020/21 | EL1 | 46 | 1,15 | −0,05 (+0,24 / −0,33) | 24 % (26 %) | 1,15–1,74 | 1,36–1,64* | 1,22 |
+| 2019/20 | EL2 | 37 | 1,84 | +0,21 (+0,37 / +0,05) | 22 % (27 %) | 1,65–1,05 | 1,57–1,42* | 1,47 |
+| 2020/21 | EL1 | 46 | 1,15 | −0,05 (+0,24 / −0,33) | 24 % (26 %) | 1,15–1,74 | 1,36–1,65* | 1,22 |
 | 2021/22 | EL1 | 46 | 1,74 | +0,34 (+0,41 / +0,26) | 24 % (27 %) | 1,48–1,04 | 1,45–1,41* | 1,41 |
 | 2022/23 | EL1 | 46 | 2,20 | +0,67 (+0,88 / +0,46) | 17 % (26 %) | 1,78–1,02 | 1,61–1,33* | 1,56 |
 | 2023/24 | CH | 46 | 1,11 | +0,11 (+0,30 / −0,08) | 26 % (24 %) | 1,28–1,52 | 1,52–1,65* | 1,28 |
@@ -70,3 +70,38 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-03-21 | Stryk 4945 | Plymouth - Huddersfield | 1 ✓ | 54 % | 43 % |
 | 2026-03-14 | Stryk 4944 | Reading - Plymouth | X | 37 % | 40 % |
 | 2025-10-04 | Stryk 4921 | Plymouth - Wigan | X | 48 % | 41 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Tom Cleverley. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Murphy Cooper | GK | 24 | England | 390 k€ | 6,62 | 0 | 0 | 0/0 |  |
+| 21 | James Storer | GK | 21 | England | 462 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Mathias Ross | CB | 25 | Denmark | 714 k€ | 6,60 | 0 | 0 | 2/0 |  |
+| 3 | Jack MacKenzie | LB | 26 | Scotland | 519 k€ | – | 0 | 0 | 0/0 |  |
+| 5 | Julio Pleguezuelo | CB | 29 | Spain | 325 k€ | 6,97 | 1 | 1 | 1/0 |  |
+| 8 | Joe Edwards | RB,CB,CM | 35 | England | 167 k€ | 6,29 | 0 | 0 | 0/0 |  |
+| 15 | Alexander Mitchell | CB | 24 | England | 820 k€ | 6,88 | 0 | 0 | 0/0 |  |
+| 22 | Alex Hartridge | CB,LB | 27 | England | 295 k€ | 6,77 | 0 | 0 | 0/0 |  |
+| 29 | Matthew Sorinola | LB,LM,RWB,LW,RM | 25 | England | 330 k€ | 6,65 | 0 | 0 | 0/0 |  |
+| 45 | Wes Harding | RB,LB,LWB | 29 | Jamaica | 509 k€ | 6,68 | 0 | 0 | 2/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Malachi Boateng | CM,CDM,CAM | 24 | England | 593 k€ | 6,50 | 0 | 0 | 0/0 |  |
+| 7 | Harvey White | CDM,CM,CAM | 25 | England | 552 k€ | 7,37 | 2 | 1 | 0/0 |  |
+| 10 | Xavier Amaechi | RM | 25 | England | 306 k€ | 6,63 | 1 | 0 | 1/0 |  |
+| 11 | Ronan Curtis | RM,LM,RW,ST,RWB,CAM | 30 | Ireland | 283 k€ | 6,96 | 1 | 1 | 1/0 |  |
+| 17 | Caleb Watts | ST,CAM,LM,CM | 24 | Australia | 362 k€ | 6,55 | 1 | 1 | 0/0 |  |
+| 19 | Tyreeq Bakinson | CDM,CM | 27 | England | 282 k€ | 7,09 | 0 | 1 | 0/0 |  |
+| 20 | Michael Baidoo | CM | 27 | Ghana | 1,4 M€ | – | 0 | 0 | 0/0 |  |
+| 23 | Bradley Ibrahim | CAM,CM,ST | 21 | England | 665 k€ | 6,68 | 0 | 1 | 1/0 |  |
+| 41 | Sebastian Campbell | CM | 17 | England | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Will Evans | ST,LW,CAM | 29 | Wales | 339 k€ | 6,87 | 2 | 0 | 3/0 |  |
+| 14 | Oliver Irow | LW,LM,CAM,ST,RW | 20 | England | 346 k€ | 7,07 | 3 | 0 | 0/0 |  |
+| 18 | Owen Oseni | ST,CAM | 23 | Nigeria | 372 k€ | 6,25 | 0 | 0 | 0/0 |  |
+| 27 | Aribim Pepple | ST | 23 | Canada | 386 k€ | 6,80 | 3 | 0 | 1/0 |  |
+| 43 | James Sharpe | Attacker | 16 | Malta | – | – | 0 | 0 | 0/0 |  |

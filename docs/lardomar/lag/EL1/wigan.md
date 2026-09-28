@@ -24,12 +24,12 @@ Form (äldst → senast): FFFFVFOF · senaste match 2026-09-19
 |---|---|---|---|---|---|---|---|---|
 | 2017/18 | EL1 | 46 | 2,13 | +0,10 (−0,09 / +0,28) | 24 % (24 %) | 1,93–0,63 | 1,67–0,80* | 1,95 |
 | 2018/19 | CH | 46 | 1,13 | −0,17 (+0,31 / −0,65) | 28 % (28 %) | 1,11–1,39 | 1,33–1,39* | 1,34 |
-| 2019/20 | CH | 46 | 1,28 | +0,11 (+0,21 / +0,01) | 30 % (28 %) | 1,24–1,22 | 1,33–1,27* | 1,41 |
+| 2019/20 | CH | 46 | 1,28 | +0,11 (+0,21 / +0,01) | 30 % (28 %) | 1,24–1,22 | 1,33–1,28* | 1,41 |
 | 2020/21 | EL1 | 46 | 1,04 | −0,10 (−0,27 / +0,07) | 20 % (27 %) | 1,17–1,67 | 1,07–1,52* | 1,08 |
 | 2021/22 | EL1 | 46 | 2,00 | +0,26 (+0,04 / +0,48) | 24 % (27 %) | 1,78–0,96 | 1,45–0,97* | 1,66 |
 | 2022/23 | CH | 46 | 0,98 | −0,12 (−0,33 / +0,08) | 33 % (29 %) | 0,83–1,41 | 1,06–1,26* | 1,24 |
 | 2023/24 | EL1 | 46 | 1,52 | +0,28 (+0,45 / +0,12) | 22 % (28 %) | 1,37–1,22 | 1,14–1,49* | 1,15 |
-| 2024/25 | EL1 | 46 | 1,22 | +0,02 (−0,24 / +0,28) | 37 % (29 %) | 0,87–0,91 | 1,09–1,25* | 1,25 |
+| 2024/25 | EL1 | 46 | 1,22 | +0,02 (−0,24 / +0,28) | 37 % (29 %) | 0,87–0,91 | 1,10–1,25* | 1,25 |
 | 2025/26 | EL1 | 46 | 1,22 | −0,03 (+0,14 / −0,19) | 30 % (28 %) | 1,07–1,26 | 1,14–1,31* | 1,26 |
 | 2026/27 | EL1 | 7 | 0,57 | −0,69 (−0,63 / −0,75) | 14 % (27 %) | 0,71–1,71 | 1,37–1,43* | 1,36 |
 
@@ -68,3 +68,44 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 |---|---|---|---|---|---|
 | 2026-05-02 | Stryk 4951 | Stevenage - Wigan | 1 | 10 % | 16 % |
 | 2025-10-04 | Stryk 4921 | Plymouth - Wigan | X | 28 % | 30 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Gary Caldwell. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Joe Walsh | GK | 24 | England | 906 k€ | 6,00 | 0 | 0 | 0/0 |  |
+| 12 | Tom Watson | GK | 22 | England | – | – | 0 | 0 | 0/0 |  |
+| 41 | Joe Whitworth | GK | 22 | England | 1,4 M€ | 7,06 | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 3 | Morgan Fox | CB | 33 | Wales | 173 k€ | 6,65 | 0 | 0 | 0/0 |  |
+| 4 | Jeremiah Chilokoa-Mullen | CB,RB | 22 | Scotland | 583 k€ | – | 0 | 0 | 0/0 |  |
+| 5 | Finley Burns | CB | 23 | England | 526 k€ | 6,82 | 0 | 0 | 1/0 |  |
+| 15 | Llyton Chapman | CB | 21 | England | – | 5,50 | 0 | 0 | 0/0 |  |
+| 16 | Archie Harris | LB,CB,LWB,LM,CM | 21 | Wales | 238 k€ | 6,17 | 0 | 0 | 1/0 |  |
+| 23 | James Carragher | CB,RB | 23 | Malta | 253 k€ | 6,40 | 0 | 0 | 3/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 2 | Connor Barrett | RM,CAM,RWB,RB | 24 | England | 345 k€ | 6,40 | 0 | 0 | 2/0 |  |
+| 6 | Jensen Weir | CDM,CM,RW,RWB,CAM | 24 | England | 376 k€ | 7,05 | 2 | 0 | 2/0 |  |
+| 7 | Fraser Murray | LWB,RW,RWB,CAM,RM | 27 | Scotland | 387 k€ | 6,56 | 0 | 0 | 0/0 |  |
+| 8 | Max Power | CDM,CM | 33 | England | 264 k€ | 7,07 | 1 | 1 | 2/0 |  |
+| 10 | Reggie Walsh | CAM,CDM,LW,CM,ST | 17 | England | – | 6,45 | 0 | 0 | 1/0 |  |
+| 13 | Luke Harris | CAM,LW,CDM | 21 | Wales | 889 k€ | 6,26 | 0 | 0 | 0/0 |  |
+| 14 | Ryan Trevitt | CAM | 23 | England | 236 k€ | 6,20 | 0 | 0 | 0/0 |  |
+| 17 | Akeel Higgins | CAM,ST,LW | 21 | England | 478 k€ | 6,47 | 1 | 0 | 0/0 |  |
+| 18 | Charlie Gray | CDM,CM,CAM | 20 | England | – | 6,86 | 0 | 0 | 1/0 |  |
+| 19 | Chris Sze | CAM | 22 | England | 253 k€ | 6,43 | 0 | 0 | 1/0 |  |
+| 20 | Callum McManaman | RWB | 35 | England | 137 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Jon Mellish | LM,LW,LWB,LB,CB | 29 | England | 255 k€ | 6,65 | 0 | 0 | 2/0 |  |
+| 25 | Joe Adams | LW | 22 | England | – | – | 0 | 0 | 0/0 |  |
+| 44 | Ronan Darcy | CAM,RW,CDM | 25 | England | 240 k€ | – | 0 | 0 | 0/0 |  |
+| 51 | Harry Rimmer | CAM | 19 | England | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Sonny Perkins | ST,RW,CAM | 22 | England | 561 k€ | 6,36 | 1 | 0 | 0/0 |  |
+| 11 | Dara Costelloe | ST,CAM | 23 | Ireland | 399 k€ | 6,70 | 0 | 1 | 2/0 |  |
+| 21 | K'Marni Miller | LW | 20 | England | – | 6,45 | 0 | 0 | 0/0 |  |
+| 25 | Scott Hogan | ST | 34 | Ireland | 170 k€ | 5,69 | 0 | 0 | 0/0 |  |
+| 27 | Bradley Burrowes | ST,RW,RB,CAM | 18 | England | 2,0 M€ | 6,66 | 0 | 1 | 0/0 |  |
+| 38 | Christian Saydee | ST,CAM | 24 | England | 480 k€ | – | 0 | 0 | 0/0 |  |

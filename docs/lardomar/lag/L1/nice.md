@@ -6,6 +6,8 @@ Genererad 2026-09-28. Ligans lärdomar: [L1](../../ligor/L1.md). "Mot marknaden"
 
 - 2025/26: −0,39 poäng per match mot marknaden. Ligan visar ingen persistens, så räkna inte med att det fortsätter.
 - Stark historik mot Lens (+0,81 p/match mot marknaden, 12 möten), Auxerre (−0,82 p/match mot marknaden, 7 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Utan Jonathan Clauss (13 % av anfallet): 1,80 poäng per match mot 1,29 med (5 mot 68 matcher), mot marknaden +0,53 mot −0,16.
+- Utan Sepe Elye Wahi (12 % av anfallet): 0,33 poäng per match mot 1,37 med (3 mot 70 matcher), mot marknaden −1,17 mot −0,07.
 - På Stryktipset/Europatipset streckas lagets vinst ×0,87 av vår sannolikhet (8 matcher). Folket underspelar laget: dess vinst ger streckvärde.
 
 ## Nuläge (senaste 8 ligamatcher)
@@ -14,8 +16,8 @@ Form (äldst → senast): OFOOFOFV · senaste match 2026-09-20
 
 | Mått | Värde |
 |---|---|
-| Tur (poäng − xP per match) | −0,48 |
-| xG-målskillnad − målskillnad | +0,45 |
+| Tur (poäng − xP per match) | −0,32 |
+| xG-målskillnad − målskillnad | +0,13 |
 | Poäng mot marknaden per match | −0,56 |
 
 ## Säsonger
@@ -31,9 +33,22 @@ Form (äldst → senast): OFOOFOFV · senaste match 2026-09-20
 | 2023/24 | L1 | 34 | 1,62 | +0,05 (+0,00 / +0,10) | 29 % (28 %) | 1,18–0,85 | 1,61–1,07 | 1,72 |
 | 2024/25 | L1 | 34 | 1,76 | +0,22 (+0,40 / +0,04) | 26 % (25 %) | 1,94–1,21 | 1,97–1,32 | 1,74 |
 | 2025/26 | L1 | 34 | 0,94 | −0,39 (−0,30 / −0,49) | 32 % (25 %) | 1,09–1,76 | 1,38–1,79 | 1,18 |
-| 2026/27 | L1 | 5 | 1,00 | −0,52 (+0,13 / −1,50) | 40 % (27 %) | 0,60–1,20 | 1,18–1,54* | 1,16 |
+| 2026/27 | L1 | 5 | 1,00 | −0,52 (+0,13 / −1,50) | 40 % (27 %) | 0,60–1,20 | 1,09–1,96 | 0,90 |
 
-\* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+## Nyckelspelare (Understat, 2024/25–)
+
+Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
+
+| Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
+|---|---|---|---|---|
+| Mohammed Amoura | 20 % | 0 / 73 | – / 1,33 | – / −0,12 |
+| Gauthier Hein | 15 % | 0 / 73 | – / 1,33 | – / −0,12 |
+| Sofiane Diop | 13 % | 2 / 71 | 0,50 / 1,35 | −0,94 / −0,09 |
+| Jonathan Clauss | 13 % | 5 / 68 | 1,80 / 1,29 | +0,53 / −0,16 |
+| Sepe Elye Wahi | 12 % | 3 / 70 | 0,33 / 1,37 | −1,17 / −0,07 |
+| Axel Witsel | 8 % | 0 / 73 | – / 1,33 | – / −0,12 |
+
+Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -71,3 +86,45 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-01-03 | Europa 2537 | Nice - Strasbourg | X | 26 % | 30 % |
 | 2025-12-07 | Europa 2529 | Nice - Angers | 2 | 55 % | 55 % |
 | 2025-11-30 | Europa 2527 | Lorient - Nice | 1 | 28 % | 33 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Olivier Pantaloni. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Antoine Mendy (skadad, åter Late May 2027), Moïse Bombito (skadad, åter Early November 2026), Morgan Sanson (skadad, åter Mid October 2026), Laurent Abergel (skadad, åter Late April 2027)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 23 | Yéhvann Diouf | GK | 26 | Senegal | 5,2 M€ | 6,85 | 0 | 0 | 0/0 |  |
+| 77 | Teddy Boulhendi | GK | 25 | Algeria | 298 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Ali Abdi | LB,LWB,LM | 32 | Tunisia | 1,1 M€ | 6,02 | 0 | 0 | 0/0 |  |
+| 5 | Mohamed Abdelmonem | CB | 27 | Egypt | 1,7 M€ | 7,14 | 0 | 0 | 1/0 |  |
+| 33 | Antoine Mendy | CB,RB | 22 | Senegal | 5,6 M€ | 6,30 | 0 | 0 | 0/0 | skadad, åter Late May 2027 |
+| 35 | Xavier Mandza | CB | 17 | France | – | 7,39 | 0 | 0 | 1/0 |  |
+| 36 | Alidu Seidu | CB,RB | 26 | Ghana | 4,7 M€ | 6,13 | 0 | 0 | 0/0 |  |
+| 55 | Youssouf Ndayishimiye | CB,CM | 27 | Burundi | 6,1 M€ | 6,80 | 0 | 0 | 2/0 |  |
+| 64 | Moïse Bombito | CB | 26 | Canada | 1,1 M€ | – | 0 | 0 | 0/0 | skadad, åter Early November 2026 |
+| 84 | Hamza Koutoune | CB | 20 | Morocco | 723 k€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Hicham Boudaoui | CM,CDM | 27 | Algeria | 8,3 M€ | – | 0 | 0 | 0/0 |  |
+| 7 | Gauthier Hein | CAM,RW | 30 | France | 2,5 M€ | 6,84 | 0 | 1 | 0/0 |  |
+| 8 | Morgan Sanson | CM,CDM,CAM,LM | 32 | France | 1,8 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 10 | Sofiane Diop | CAM,LW,ST,LM,CM | 26 | Morocco | 9,2 M€ | 7,08 | 0 | 1 | 0/0 |  |
+| 19 | Laurent Abergel | CDM,CM | 33 | France | 1,4 M€ | – | 0 | 0 | 0/0 | skadad, åter Late April 2027 |
+| 27 | Niels Nkounkou | LWB | 25 | France | 1,9 M€ | 6,98 | 0 | 0 | 0/0 |  |
+| 28 | Axel Witsel | CDM,CM | 37 | Belgium | 864 k€ | 6,88 | 0 | 0 | 0/0 |  |
+| 38 | Aboulaye Camara | Midfielder | 18 | Mauritania | – | – | 0 | 0 | 0/0 |  |
+| 38 | Issiaga Camara | CM | 21 | Guinea | 525 k€ | – | 0 | 0 | 0/0 |  |
+| 39 | Djibril Coulibaly | CDM | 17 | France | 1,6 M€ | 6,49 | 0 | 0 | 1/0 |  |
+| 87 | Everton | CDM | 19 | France | 2,0 M€ | 6,65 | 0 | 0 | 0/0 |  |
+| 92 | Jonathan Clauss | RWB,RB,RM | 34 | France | 2,4 M€ | 7,21 | 0 | 0 | 0/0 |  |
+| 99 | Salis Abdul Samed | CDM,CM | 26 | Ghana | 2,7 M€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Mohamed Amoura | ST,LW,CAM | 26 | Algeria | 21,4 M€ | 6,99 | 1 | 0 | 1/0 |  |
+| 11 | Elye Wahi | ST | 23 | Ivory Coast | 12,9 M€ | 6,80 | 1 | 0 | 1/0 |  |
+| 21 | Isak Jansson | LW | 24 | Sweden | 2,2 M€ | 6,22 | 0 | 0 | 0/0 |  |
+| 29 | Nathan N'Goumou | ST | 26 | Cameroon | 2,0 M€ | 6,18 | 0 | 0 | 0/0 |  |
+| 41 | Djelan Morana | Attacker | 18 | France | – | – | 0 | 0 | 0/0 |  |
+| 44 | Zoumana Diallo | ST | 21 | France | 270 k€ | 5,88 | 0 | 0 | 1/0 |  |

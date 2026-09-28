@@ -57,3 +57,40 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | Datum | Spel | Match | Utfall | Folket på laget | Vår procent |
 |---|---|---|---|---|---|
 | 2026-05-02 | Stryk 4951 | Harrogate - Barnet | 2 ✓ | 33 % | 40 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Dean Brennan. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Taye Ashby-Hammond | GK | 27 | England | 108 k€ | – | 0 | 0 | 0/0 |  |
+| 13 | Matthew Cox | GK | 23 | England | 584 k€ | 7,07 | 0 | 0 | 1/0 |  |
+| 36 | Anthony Haralambous | Keeper | 0 | England | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 3 | Romoney Crichlow-Noble | CB,LB | 27 | England | – | 7,21 | 0 | 0 | 0/0 |  |
+| 4 | Danny Collinge | CB,RB,LB | 28 | England | 147 k€ | 6,93 | 0 | 0 | 0/0 |  |
+| 5 | Adam Senior | RB,LB,RWB,CB,RM | 24 | England | 216 k€ | 7,02 | 0 | 1 | 0/0 |  |
+| 6 | Zac Williams | CB | 22 | Wales | 209 k€ | 7,12 | 1 | 0 | 1/0 |  |
+| 7 | Tom Knowles | RB,LW,LB,RW,LM,ST,RWB | 28 | England | 136 k€ | 7,18 | 2 | 1 | 1/0 |  |
+| 12 | Will Wright | CB,RB | 29 | England | 96 k€ | 6,90 | 0 | 0 | 0/0 |  |
+| 18 | Kane Smith | LB,RB | 30 | England | 85 k€ | 6,82 | 0 | 0 | 0/0 |  |
+| 25 | Nikola Tavares | CB,LB | 27 | England | 206 k€ | 7,05 | 0 | 0 | 0/0 |  |
+| 30 | Myles Kenlock | LB | 29 | England | 130 k€ | 6,33 | 0 | 0 | 0/0 |  |
+| 40 | Rohat Matyar | Defender | 21 | England | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 8 | Charlie Lakin | CM,CAM,RW,CDM | 27 | England | 108 k€ | 7,98 | 6 | 2 | 1/0 |  |
+| 10 | Nnamdi Ofoborh | CDM,CM | 26 | Nigeria | 146 k€ | 6,55 | 0 | 1 | 1/0 |  |
+| 14 | Brandon Comley | CDM,CM | 30 | Montserrat | 88 k€ | 6,61 | 0 | 0 | 2/0 |  |
+| 22 | Oisín Gallagher | CDM,CB,CAM,CM | 21 | Ireland | 240 k€ | 7,24 | 1 | 0 | 3/0 |  |
+| 23 | Jake Reeves | CM,CDM | 33 | England | 147 k€ | 6,95 | 1 | 0 | 0/0 |  |
+| 24 | Patrick Matejko | CAM | 19 | England | – | – | 0 | 0 | 0/0 |  |
+| 37 | Aaron Liwala-Lukizalamu | RB | 0 | England | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Jack Maskell | ST | 22 | England | – | 6,27 | 0 | 1 | 0/0 |  |
+| 11 | Idris Kanu | LW,LWB,RW,LM,LB,CM,RB,CAM | 26 | Sierra Leone | 215 k€ | 6,95 | 2 | 0 | 2/0 |  |
+| 17 | Damola Ajayi | RW,CAM | 20 | England | – | 6,67 | 0 | 0 | 0/0 |  |
+| 20 | Kabongo Tshimanga | ST | 29 | England | 183 k€ | 7,51 | 4 | 3 | 0/0 |  |
+| 32 | Isiah Noel-Williams | CAM | 23 | England | – | 6,26 | 0 | 0 | 1/0 |  |
+| 33 | Bright Siaw | RW | 19 | England | – | – | 0 | 0 | 0/0 |  |

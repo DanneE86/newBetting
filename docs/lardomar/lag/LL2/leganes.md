@@ -24,8 +24,8 @@ Form (äldst → senast): FVOVVOFV · senaste match 2026-09-20
 | 2017/18 | LL | 38 | 1,13 | −0,00 (+0,31 / −0,31) | 18 % (28 %) | 0,89–1,34 | 1,03–1,28 | 1,20 |
 | 2018/19 | LL | 38 | 1,18 | +0,03 (+0,18 / −0,11) | 32 % (29 %) | 0,97–1,13 | 1,09–1,16 | 1,35 |
 | 2019/20 | LL | 38 | 0,95 | −0,21 (−0,38 / −0,03) | 32 % (30 %) | 0,79–1,34 | 1,02–1,20 | 1,30 |
-| 2020/21 | LL2 | 42 | 1,74 | +0,13 (+0,52 / −0,26) | 24 % (32 %) | 1,21–0,76 | 1,25–1,06* | 1,51 |
-| 2021/22 | LL2 | 42 | 1,29 | −0,18 (−0,27 / −0,09) | 36 % (31 %) | 1,19–1,21 | 1,32–1,18* | 1,46 |
+| 2020/21 | LL2 | 42 | 1,74 | +0,13 (+0,52 / −0,26) | 24 % (32 %) | 1,21–0,76 | 1,25–1,07* | 1,51 |
+| 2021/22 | LL2 | 42 | 1,29 | −0,18 (−0,27 / −0,09) | 36 % (31 %) | 1,19–1,21 | 1,33–1,18* | 1,46 |
 | 2022/23 | LL2 | 42 | 1,26 | −0,15 (+0,11 / −0,41) | 26 % (32 %) | 0,88–1,00 | 1,15–1,14* | 1,36 |
 | 2023/24 | LL2 | 42 | 1,76 | +0,31 (+0,24 / +0,39) | 33 % (32 %) | 1,33–0,64 | 1,21–1,06* | 1,45 |
 | 2024/25 | LL | 38 | 1,05 | +0,21 (+0,17 / +0,26) | 34 % (27 %) | 1,03–1,47 | 1,01–1,72 | 1,00 |
@@ -66,3 +66,45 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | Datum | Spel | Match | Utfall | Folket på laget | Vår procent |
 |---|---|---|---|---|---|
 | 2026-04-30 | Europa 2570 | Deportivo A Coruña - Leganes | 1 | 12 % | 21 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Rubén Albés. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Enric Franquesa (skadad, åter Early November 2026), Marcos Leiva (skadad, åter Early February 2027)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Raul Fernández | GK | 38 | Spain | 283 k€ | 6,07 | 0 | 0 | 0/1 |  |
+| 13 | Luca Zidane | GK | 28 | Algeria | 597 k€ | 7,04 | 0 | 0 | 0/0 |  |
+| 38 | Ale Gorrín | Keeper | 24 | Spain | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Marvel | CB,LB | 23 | Morocco | 968 k€ | 7,18 | 0 | 0 | 3/0 |  |
+| 3 | Francisco Montero | CB | 27 | Spain | 568 k€ | 5,98 | 0 | 0 | 0/0 |  |
+| 4 | Rubén Pulido | CB | 26 | Spain | 352 k€ | 6,11 | 0 | 0 | 1/0 |  |
+| 5 | Ignasi Miquel | CB | 34 | Spain | 194 k€ | 6,76 | 0 | 0 | 1/0 |  |
+| 6 | Lalo Aguilar | CB,RB | 24 | Spain | 975 k€ | 6,89 | 0 | 0 | 0/0 |  |
+| 7 | Rubén Pena | RB,RWB,RW,LW | 35 | Spain | 206 k€ | 6,64 | 0 | 0 | 0/0 |  |
+| 11 | Naim García | LB,LW,LM,LWB,RWB,RW | 24 | Spain | 503 k€ | 7,07 | 2 | 1 | 0/0 |  |
+| 15 | Enric Franquesa | LB | 29 | Spain | 501 k€ | – | 0 | 0 | 0/0 | skadad, åter Early November 2026 |
+| 23 | Álvaro Tejero | RB,LB,LM | 30 | Spain | 1,1 M€ | 6,76 | 0 | 0 | 0/0 |  |
+| 28 | Álex Fita | LWB | 19 | Spain | – | – | 0 | 0 | 0/0 |  |
+| 36 | Marcos Leiva | RB | 21 | Spain | 516 k€ | – | 0 | 0 | 0/0 | skadad, åter Early February 2027 |
+| 36 | Sulaiman Mulumba | Defender | 20 | Uganda | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 8 | Yassine Kechta | CDM,CAM,CM,LW,RM | 24 | Morocco | 2,2 M€ | 6,70 | 0 | 0 | 0/0 |  |
+| 10 | Zico Buurmeester | CDM,CM | 24 | Netherlands | 1,3 M€ | 6,72 | 0 | 0 | 1/0 |  |
+| 17 | Ismaël Gharbi | CAM,CM,ST,LW | 22 | Tunisia | 5,1 M€ | 7,62 | 2 | 1 | 1/0 |  |
+| 20 | Miguel Atienza | CM,CDM | 27 | Spain | 944 k€ | 6,91 | 1 | 0 | 0/0 |  |
+| 22 | Álex Sancris | LM,RW,ST | 29 | Spain | 1,1 M€ | 6,67 | 0 | 0 | 2/0 |  |
+| 24 | Amadou Diawara | CM,CDM | 29 | Guinea | 343 k€ | – | 0 | 0 | 0/0 |  |
+| 33 | Jorge Herrero | Midfielder | 21 | Spain | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Álex Millán | ST | 26 | Spain | – | 6,31 | 0 | 0 | 1/0 |  |
+| 14 | Dani Rodríguez | LW,CM,CAM | 38 | Spain | 164 k€ | 6,28 | 0 | 0 | 0/0 |  |
+| 16 | Unax del Cura | ST,CAM | 21 | Spain | 537 k€ | 6,41 | 0 | 0 | 0/0 |  |
+| 18 | Andrés Campos | CDM | 24 | Spain | 259 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | Patrick Soko | ST | 28 | Cameroon | 968 k€ | 6,50 | 1 | 0 | 0/0 |  |
+| 21 | Álvaro Morata | ST | 33 | Spain | 4,5 M€ | 5,95 | 0 | 0 | 0/0 |  |
+| 32 | Suleiman El Haddadi | ST | 20 | Morocco | – | 7,04 | 0 | 2 | 0/0 |  |

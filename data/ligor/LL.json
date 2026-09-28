@@ -1,0 +1,433 @@
+{
+ "updatedAt": "2026-09-28T19:47:27.474Z",
+ "league": "LL",
+ "fotmobId": 87,
+ "name": "LaLiga",
+ "country": "ESP",
+ "table": [
+  {
+   "rank": 1,
+   "team": "Barcelona",
+   "fotmobName": "Barcelona",
+   "fotmobId": 8634,
+   "group": null,
+   "played": 7,
+   "won": 7,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "31-7",
+   "gd": 24,
+   "pts": 21
+  },
+  {
+   "rank": 2,
+   "team": "Ath Madrid",
+   "fotmobName": "Atlético Madrid",
+   "fotmobId": 9906,
+   "group": null,
+   "played": 7,
+   "won": 5,
+   "drawn": 1,
+   "lost": 1,
+   "goals": "16-7",
+   "gd": 9,
+   "pts": 16
+  },
+  {
+   "rank": 3,
+   "team": "Betis",
+   "fotmobName": "Real Betis",
+   "fotmobId": 8603,
+   "group": null,
+   "played": 7,
+   "won": 5,
+   "drawn": 1,
+   "lost": 1,
+   "goals": "9-7",
+   "gd": 2,
+   "pts": 16
+  },
+  {
+   "rank": 4,
+   "team": "Real Madrid",
+   "fotmobName": "Real Madrid",
+   "fotmobId": 8633,
+   "group": null,
+   "played": 7,
+   "won": 5,
+   "drawn": 0,
+   "lost": 2,
+   "goals": "18-8",
+   "gd": 10,
+   "pts": 15
+  },
+  {
+   "rank": 5,
+   "team": "Sevilla",
+   "fotmobName": "Sevilla",
+   "fotmobId": 8302,
+   "group": null,
+   "played": 7,
+   "won": 4,
+   "drawn": 1,
+   "lost": 2,
+   "goals": "10-9",
+   "gd": 1,
+   "pts": 13
+  },
+  {
+   "rank": 6,
+   "team": "Alaves",
+   "fotmobName": "Deportivo Alavés",
+   "fotmobId": 9866,
+   "group": null,
+   "played": 7,
+   "won": 3,
+   "drawn": 2,
+   "lost": 2,
+   "goals": "11-6",
+   "gd": 5,
+   "pts": 11
+  },
+  {
+   "rank": 7,
+   "team": "La Coruna",
+   "fotmobName": "Deportivo A Coruña",
+   "fotmobId": 9783,
+   "group": null,
+   "played": 7,
+   "won": 2,
+   "drawn": 4,
+   "lost": 1,
+   "goals": "10-8",
+   "gd": 2,
+   "pts": 10
+  },
+  {
+   "rank": 8,
+   "team": "Sociedad",
+   "fotmobName": "Real Sociedad",
+   "fotmobId": 8560,
+   "group": null,
+   "played": 7,
+   "won": 3,
+   "drawn": 1,
+   "lost": 3,
+   "goals": "9-13",
+   "gd": -4,
+   "pts": 10
+  },
+  {
+   "rank": 9,
+   "team": "Villarreal",
+   "fotmobName": "Villarreal",
+   "fotmobId": 10205,
+   "group": null,
+   "played": 7,
+   "won": 2,
+   "drawn": 2,
+   "lost": 3,
+   "goals": "13-12",
+   "gd": 1,
+   "pts": 8
+  },
+  {
+   "rank": 10,
+   "team": "Ath Bilbao",
+   "fotmobName": "Athletic Club",
+   "fotmobId": 8315,
+   "group": null,
+   "played": 6,
+   "won": 2,
+   "drawn": 2,
+   "lost": 2,
+   "goals": "7-6",
+   "gd": 1,
+   "pts": 8
+  },
+  {
+   "rank": 11,
+   "team": "Getafe",
+   "fotmobName": "Getafe",
+   "fotmobId": 8305,
+   "group": null,
+   "played": 7,
+   "won": 2,
+   "drawn": 2,
+   "lost": 3,
+   "goals": "4-7",
+   "gd": -3,
+   "pts": 8
+  },
+  {
+   "rank": 12,
+   "team": "Vallecano",
+   "fotmobName": "Rayo Vallecano",
+   "fotmobId": 8370,
+   "group": null,
+   "played": 7,
+   "won": 2,
+   "drawn": 2,
+   "lost": 3,
+   "goals": "11-16",
+   "gd": -5,
+   "pts": 8
+  },
+  {
+   "rank": 13,
+   "team": "Osasuna",
+   "fotmobName": "Osasuna",
+   "fotmobId": 8371,
+   "group": null,
+   "played": 7,
+   "won": 2,
+   "drawn": 2,
+   "lost": 3,
+   "goals": "6-13",
+   "gd": -7,
+   "pts": 8
+  },
+  {
+   "rank": 14,
+   "team": "Celta",
+   "fotmobName": "Celta Vigo",
+   "fotmobId": 9910,
+   "group": null,
+   "played": 7,
+   "won": 1,
+   "drawn": 4,
+   "lost": 2,
+   "goals": "8-6",
+   "gd": 2,
+   "pts": 7
+  },
+  {
+   "rank": 15,
+   "team": "Espanol",
+   "fotmobName": "Espanyol",
+   "fotmobId": 8558,
+   "group": null,
+   "played": 7,
+   "won": 2,
+   "drawn": 1,
+   "lost": 4,
+   "goals": "10-10",
+   "gd": 0,
+   "pts": 7
+  },
+  {
+   "rank": 16,
+   "team": "Santander",
+   "fotmobName": "Racing Santander",
+   "fotmobId": 8696,
+   "group": null,
+   "played": 7,
+   "won": 2,
+   "drawn": 1,
+   "lost": 4,
+   "goals": "11-21",
+   "gd": -10,
+   "pts": 7
+  },
+  {
+   "rank": 17,
+   "team": "Levante",
+   "fotmobName": "Levante",
+   "fotmobId": 8581,
+   "group": null,
+   "played": 6,
+   "won": 1,
+   "drawn": 2,
+   "lost": 3,
+   "goals": "8-12",
+   "gd": -4,
+   "pts": 5
+  },
+  {
+   "rank": 18,
+   "team": "Elche",
+   "fotmobName": "Elche",
+   "fotmobId": 10268,
+   "group": null,
+   "played": 7,
+   "won": 1,
+   "drawn": 2,
+   "lost": 4,
+   "goals": "11-17",
+   "gd": -6,
+   "pts": 5
+  },
+  {
+   "rank": 19,
+   "team": "Valencia",
+   "fotmobName": "Valencia",
+   "fotmobId": 10267,
+   "group": null,
+   "played": 7,
+   "won": 1,
+   "drawn": 1,
+   "lost": 5,
+   "goals": "4-13",
+   "gd": -9,
+   "pts": 4
+  },
+  {
+   "rank": 20,
+   "team": "Malaga",
+   "fotmobName": "Málaga",
+   "fotmobId": 9864,
+   "group": null,
+   "played": 7,
+   "won": 0,
+   "drawn": 3,
+   "lost": 4,
+   "goals": "3-12",
+   "gd": -9,
+   "pts": 3
+  }
+ ],
+ "tableHistory": {
+  "2026-09-28": [
+   [
+    "Barcelona",
+    1,
+    7,
+    21,
+    24
+   ],
+   [
+    "Ath Madrid",
+    2,
+    7,
+    16,
+    9
+   ],
+   [
+    "Betis",
+    3,
+    7,
+    16,
+    2
+   ],
+   [
+    "Real Madrid",
+    4,
+    7,
+    15,
+    10
+   ],
+   [
+    "Sevilla",
+    5,
+    7,
+    13,
+    1
+   ],
+   [
+    "Alaves",
+    6,
+    7,
+    11,
+    5
+   ],
+   [
+    "La Coruna",
+    7,
+    7,
+    10,
+    2
+   ],
+   [
+    "Sociedad",
+    8,
+    7,
+    10,
+    -4
+   ],
+   [
+    "Villarreal",
+    9,
+    7,
+    8,
+    1
+   ],
+   [
+    "Ath Bilbao",
+    10,
+    6,
+    8,
+    1
+   ],
+   [
+    "Getafe",
+    11,
+    7,
+    8,
+    -3
+   ],
+   [
+    "Vallecano",
+    12,
+    7,
+    8,
+    -5
+   ],
+   [
+    "Osasuna",
+    13,
+    7,
+    8,
+    -7
+   ],
+   [
+    "Celta",
+    14,
+    7,
+    7,
+    2
+   ],
+   [
+    "Espanol",
+    15,
+    7,
+    7,
+    0
+   ],
+   [
+    "Santander",
+    16,
+    7,
+    7,
+    -10
+   ],
+   [
+    "Levante",
+    17,
+    6,
+    5,
+    -4
+   ],
+   [
+    "Elche",
+    18,
+    7,
+    5,
+    -6
+   ],
+   [
+    "Valencia",
+    19,
+    7,
+    4,
+    -9
+   ],
+   [
+    "Malaga",
+    20,
+    7,
+    3,
+    -9
+   ]
+  ]
+ }
+}

@@ -21,16 +21,16 @@ Form (äldst → senast): FFOVVFFO · senaste match 2026-09-19
 
 | Säsong | Liga | M | P/M | Mot marknaden (hemma / borta) | Kryss (odds) | Mål för–emot | xG för–emot | xP/M |
 |---|---|---|---|---|---|---|---|---|
-| 2017/18 | CH | 46 | 0,89 | −0,22 (−0,21 / −0,23) | 30 % (27 %) | 1,04–1,57 | 1,50–1,50* | 1,38 |
-| 2018/19 | EL1 | 46 | 1,98 | +0,12 (+0,29 / −0,04) | 28 % (25 %) | 1,74–0,85 | 1,83–0,99* | 1,88 |
+| 2017/18 | CH | 46 | 0,89 | −0,22 (−0,21 / −0,23) | 30 % (27 %) | 1,04–1,57 | 1,51–1,51* | 1,38 |
+| 2018/19 | EL1 | 46 | 1,98 | +0,12 (+0,29 / −0,04) | 28 % (25 %) | 1,74–0,85 | 1,83–1,00* | 1,88 |
 | 2019/20 | CH | 46 | 1,07 | −0,13 (+0,01 / −0,26) | 28 % (26 %) | 1,07–1,50 | 1,48–1,35* | 1,47 |
 | 2020/21 | CH | 46 | 1,70 | +0,20 (+0,28 / +0,13) | 20 % (29 %) | 1,26–1,09 | 1,33–1,00* | 1,60 |
 | 2021/22 | CH | 46 | 0,65 | −0,42 (−0,27 / −0,57) | 26 % (27 %) | 0,72–1,59 | 1,15–1,55* | 1,12 |
 | 2022/23 | EL1 | 46 | 1,87 | +0,32 (+0,41 / +0,22) | 17 % (27 %) | 1,74–1,02 | 1,45–1,00* | 1,68 |
-| 2023/24 | EL1 | 46 | 1,65 | +0,07 (−0,30 / +0,43) | 28 % (26 %) | 1,78–1,39 | 1,56–1,52* | 1,41 |
+| 2023/24 | EL1 | 46 | 1,65 | +0,07 (−0,30 / +0,43) | 28 % (26 %) | 1,78–1,39 | 1,57–1,52* | 1,41 |
 | 2024/25 | EL1 | 46 | 1,33 | −0,24 (−0,53 / +0,04) | 22 % (25 %) | 1,50–1,59 | 1,57–1,40* | 1,51 |
-| 2025/26 | EL1 | 46 | 1,28 | −0,01 (−0,05 / +0,04) | 30 % (26 %) | 1,48–1,59 | 1,29–1,43* | 1,31 |
-| 2026/27 | EL1 | 7 | 1,14 | −0,08 (−0,46 / +0,43) | 29 % (25 %) | 1,00–1,71 | 1,71–1,41* | 1,56 |
+| 2025/26 | EL1 | 46 | 1,28 | −0,01 (−0,05 / +0,04) | 30 % (26 %) | 1,48–1,59 | 1,29–1,44* | 1,31 |
+| 2026/27 | EL1 | 7 | 1,14 | −0,08 (−0,46 / +0,43) | 29 % (25 %) | 1,00–1,71 | 1,72–1,41* | 1,56 |
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
 
@@ -73,3 +73,43 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-08-30 | Stryk 4916 | Barnsley - Huddersfield | 1 ✓ | 31 % | 36 % |
 | 2025-08-23 | Stryk 4915 | Wimbledon - Barnsley | 1 | 48 % | 41 % |
 | 2026-08-29 | Stryk 4968 | Leyton Orient - Barnsley | 2 ✓ | 27 % | 29 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Daniel Stendel. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Cieran Slicker | GK | 24 | Scotland | 487 k€ | – | 0 | 0 | 0/0 |  |
+| 25 | Rogan Ravenhill | GK | 20 | England | – | 6,56 | 0 | 0 | 0/0 |  |
+| 28 | Jake Andrassy | Keeper | 0 | England | – | – | 0 | 0 | 0/0 |  |
+| 51 | Kieren Flavell | GK | 23 | England | 242 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Arley Kay | LB,RB | 18 | England | – | 6,89 | 0 | 1 | 2/0 |  |
+| 3 | Ziyad Larkeche | LB | 24 | France | 414 k€ | 6,34 | 0 | 0 | 0/0 |  |
+| 4 | Sam Gale | CB,RB,LB | 21 | England | 406 k€ | 6,74 | 0 | 0 | 2/0 |  |
+| 5 | Jack Shepherd | CB,LB | 25 | England | 287 k€ | 6,45 | 0 | 0 | 0/0 |  |
+| 6 | Connor O'Riordan | CB | 22 | Ireland | 907 k€ | 6,50 | 0 | 0 | 0/0 |  |
+| 12 | Jubril Okedina | CB | 25 | Malawi | 88 k€ | – | 0 | 0 | 0/0 |  |
+| 15 | Isaac Smith | Defender | 21 | England | – | – | 0 | 0 | 0/0 |  |
+| 37 | Calum Hudson | Defender | 19 | England | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 8 | Cameron McGeehan | CDM,CAM,CM,RW,RM | 31 | Northern Ireland | 143 k€ | 6,96 | 3 | 0 | 1/0 |  |
+| 11 | Tyrese Noslin | RWB,RB,RM,RW | 24 | Curacao | 894 k€ | 6,85 | 0 | 0 | 2/0 |  |
+| 22 | Patrick Kelly | CAM,CDM,RW,CM,LWB | 21 | Northern Ireland | 631 k€ | 6,87 | 0 | 1 | 3/0 |  |
+| 30 | Jonathan Bland | CDM,RB,CM | 20 | Wales | 772 k€ | 6,51 | 0 | 0 | 3/0 |  |
+| 34 | Noah Town | Midfielder | 0 | England | – | 6,17 | 0 | 0 | 0/0 |  |
+| 38 | Noah Saunders | RB | 18 | England | – | – | 0 | 0 | 0/0 |  |
+| 44 | Tayo Dunne | Midfielder | 0 | Ireland | – | – | 0 | 0 | 0/0 |  |
+| 45 | Vimal Yoganathan | CDM,RW,CAM | 20 | Wales | 868 k€ | 6,11 | 0 | 0 | 0/0 |  |
+| 48 | Luca Connell | CDM,CM | 25 | Ireland | 482 k€ | 6,29 | 0 | 0 | 0/1 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Makenzie Kirk | ST | 22 | Northern Ireland | 374 k€ | 6,28 | 1 | 0 | 1/0 |  |
+| 10 | Ben Touré | ST,RW | 23 | Ivory Coast | 812 k€ | 6,23 | 0 | 0 | 0/0 |  |
+| 13 | Clayton Taylor | LW | 22 | Australia | 959 k€ | 6,18 | 0 | 0 | 1/0 |  |
+| 17 | Amani Richards | RW,LW | 21 | England | 491 k€ | 6,37 | 1 | 0 | 0/0 |  |
+| 18 | Fábio Jaló | RW | 20 | Portugal | 337 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | Reyes Cleary | LW,LM,CAM,ST,RW | 22 | England | 494 k€ | 7,02 | 2 | 1 | 0/0 |  |
+| 36 | Luke Alker | LW,RW | 19 | England | – | 6,20 | 0 | 0 | 0/0 |  |
+| 39 | Leo Farrell | ST,LW | 20 | England | – | 5,62 | 0 | 0 | 1/0 |  |

@@ -54,3 +54,44 @@ Form (äldst → senast): FVFFVVFF · senaste match 2026-09-20
 | Horsens | 9 | 6-1-2 | 14–10 | +0,43 | −16 pe | 2022-11-04 1-5 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Rasmus Bertelsen. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Lucas Lissens (skadad, åter Early January 2027), Wessel Dammers (skadad, åter About 1-2 weeks), Benjamin Örn (skadad, åter Early January 2027), Felix Sommer (skadad, åter Late October 2026), John Björkengren (skadad, åter Mid October 2026), Frederik Lauenborg (skadad, åter Day to day), Cyril Edudzi (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Paul Izzo | GK | 31 | Australia | 287 k€ | 6,74 | 0 | 0 | 0/0 |  |
+| 22 | Mert Demirci | Keeper | 22 | Netherlands | – | – | 0 | 0 | 0/0 |  |
+| 32 | Jannich Storch | GK | 33 | Denmark | 343 k€ | 6,79 | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Lucas Lissens | RB,CB | 25 | Belgium | 658 k€ | 7,06 | 0 | 0 | 0/0 | skadad, åter Early January 2027 |
+| 3 | Daniel Høegh | CB | 35 | Denmark | 241 k€ | 7,00 | 0 | 0 | 0/0 |  |
+| 4 | Wessel Dammers | CB | 31 | Netherlands | 699 k€ | 6,84 | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
+| 5 | Oliver Jones | CB | 23 | Australia | 480 k€ | 6,05 | 0 | 0 | 0/0 |  |
+| 23 | Benjamin Örn | RB | 22 | Sweden | 584 k€ | 6,02 | 0 | 0 | 1/0 | skadad, åter Early January 2027 |
+| 24 | Sabil Hansen | RB,RM,RWB | 20 | Denmark | 800 k€ | 7,04 | 0 | 2 | 2/0 |  |
+| 27 | Nikolai Hopland | CB | 22 | Norway | 1,6 M€ | 6,13 | 0 | 0 | 2/1 |  |
+| 29 | Simon Stüker | RB,LB | 19 | Denmark | 771 k€ | 6,25 | 0 | 0 | 0/0 |  |
+| 31 | Felix Sommer | CB | 17 | Denmark | – | 6,33 | 0 | 0 | 0/0 | skadad, åter Late October 2026 |
+| 44 | Nikolas Dyhr | LB,LWB | 25 | Denmark | 2,0 M€ | 6,25 | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | John Björkengren | CDM,CM | 27 | Sweden | 1,2 M€ | 6,53 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 7 | Mike Themsen | CAM,RW,LW | 20 | Denmark | – | 7,41 | 3 | 1 | 2/0 |  |
+| 8 | Laurits Raun Pedersen | CDM,CM | 20 | Denmark | 1,7 M€ | 7,31 | 1 | 2 | 3/0 |  |
+| 14 | Frederik Lauenborg | CDM | 29 | Denmark | 377 k€ | 6,49 | 0 | 0 | 0/0 | skadad, åter Day to day |
+| 17 | Mathias Greve | LM,CAM,CDM,LW | 31 | Denmark | 721 k€ | 6,83 | 0 | 0 | 0/0 |  |
+| 21 | Axel Henriksson | CAM,ST | 24 | Sweden | 1,2 M€ | 6,02 | 0 | 0 | 0/1 |  |
+| 25 | Ousseynou Fall Seck | RM | 19 | Senegal | – | 6,24 | 0 | 0 | 0/0 |  |
+| 26 | Hector Lux Høyrup | LW | 17 | Denmark | – | 6,57 | 0 | 1 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 10 | Warren Caddy | ST | 29 | Madagascar | 537 k€ | – | 0 | 0 | 0/0 |  |
+| 11 | Elies Mahmoud | RW,RM,CAM | 25 | France | 823 k€ | 7,77 | 3 | 1 | 1/0 |  |
+| 15 | Martin André Sjølstad | LW,LB | 26 | Norway | 295 k€ | 6,88 | 0 | 1 | 1/0 |  |
+| 30 | Mohamed Sankoh | ST | 22 | Netherlands | 392 k€ | 6,56 | 3 | 0 | 1/0 |  |
+| 33 | Cyril Edudzi | LW,ST | 20 | Ghana | 619 k€ | 6,39 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 36 | Amady Camara | RW | 21 | Mali | 878 k€ | 6,33 | 0 | 0 | 0/0 |  |
+| 77 | Kasper Junker | ST | 32 | Denmark | 343 k€ | 6,59 | 1 | 1 | 0/0 |  |

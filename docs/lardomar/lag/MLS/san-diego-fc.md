@@ -54,3 +54,46 @@ Form (äldst → senast): VFVVFFFO · senaste match 2026-09-21
 | Toronto FC | 1 | 0-0-1 | 0–1 | −2,19 | −19 pe | 2025-07-17 0-1 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Mikey Varas. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Gabriel Pirani (skadad, åter A few weeks)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Carlos Dos Santos | GK | 26 | Cape Verde | 799 k€ | 6,80 | 0 | 0 | 2/1 |  |
+| 13 | Pablo Sisniega | GK | 31 | Mexico | 104 k€ | 6,15 | 0 | 0 | 0/0 |  |
+| 16 | Marcus Alstrup | GK | 22 | Denmark | 191 k€ | – | 0 | 0 | 0/0 |  |
+| 18 | Duran Ferree | GK | 20 | USA | 1,3 M€ | 6,70 | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | William Kumado | RB | 23 | Ghana | 666 k€ | 6,25 | 0 | 0 | 0/0 |  |
+| 3 | Dagur Thórhallsson | RB,LW,RW,RM | 26 | Iceland | 1,0 M€ | 6,67 | 1 | 0 | 0/0 |  |
+| 5 | Kieran Sargeant | LB,LM | 23 | USA | 702 k€ | 6,84 | 1 | 1 | 1/0 |  |
+| 17 | Osvald Gabriel Søe | CB | 20 | Denmark | – | 5,85 | 0 | 0 | 1/0 |  |
+| 23 | Samuel Vines | LB | 27 | USA | 470 k€ | 6,02 | 0 | 0 | 0/0 |  |
+| 25 | Ian Pilcher | RB,CB,LB | 23 | USA | 376 k€ | 6,27 | 0 | 0 | 2/0 |  |
+| 26 | Manu Duah | CB | 21 | Ghana | 1,6 M€ | 6,97 | 0 | 1 | 1/1 |  |
+| 32 | Ian Murphy | CB | 26 | USA | 542 k€ | 6,34 | 0 | 0 | 2/0 |  |
+| 33 | Oscar Verhoeven | RB | 20 | USA | 1,2 M€ | 6,32 | 0 | 0 | 5/0 |  |
+| 97 | Christopher McVey | CB | 29 | Sweden | 1,3 M€ | 6,74 | 1 | 0 | 6/2 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | David Mimbang | Midfielder | 18 | Cameroon | – | – | 0 | 0 | 0/0 |  |
+| 6 | Jeppe Tverskov | CM | 33 | Denmark | 290 k€ | 7,30 | 0 | 3 | 3/1 |  |
+| 8 | Onni Valakari | CM,ST | 27 | Finland | 1,9 M€ | 7,13 | 4 | 4 | 1/0 |  |
+| 12 | Gabriel Pirani | CM,ST,CAM | 24 | Brazil | 866 k€ | 6,56 | 2 | 0 | 2/0 | skadad, åter A few weeks |
+| 15 | Pedro Soma | CM | 20 | USA | 867 k€ | 6,56 | 1 | 2 | 2/0 |  |
+| 19 | David Vazquez | CM,LW,RW | 20 | USA | 1,3 M€ | 6,53 | 3 | 0 | 4/0 |  |
+| 20 | Aníbal Godoy | CM,CDM | 36 | Panama | 50 k€ | 6,84 | 1 | 1 | 4/0 |  |
+| 70 | Alejandro Alvarado | CM | 23 | USA | 158 k€ | 6,72 | 1 | 0 | 2/0 |  |
+| 99 | Elias Achouri | LM,LW,RW | 27 | Tunisia | 1,8 M€ | 6,74 | 2 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Marcus Ingvartsen | ST | 30 | Denmark | 1,9 M€ | 7,23 | 12 | 3 | 1/0 |  |
+| 10 | Anders Dreyer | RW | 28 | Denmark | 10,1 M€ | 7,80 | 11 | 11 | 2/1 |  |
+| 14 | Bryan Zamblé | LW | 18 | Ivory Coast | 1,1 M€ | 6,24 | 2 | 0 | 0/0 |  |
+| 24 | Emmanuel Boateng | LW | 32 | Ghana | 53 k€ | – | 0 | 0 | 0/0 |  |
+| 77 | Alex Mighten | LW | 24 | England | 351 k€ | 6,49 | 0 | 2 | 1/0 |  |
+| 90 | Amahl Pellegrino | LW,ST | 36 | Norway | 69 k€ | 6,64 | 3 | 1 | 0/1 |  |
+| 94 | Cédric Bakambu | ST | 35 | DR Congo | 700 k€ | 6,44 | 1 | 0 | 0/0 |  |

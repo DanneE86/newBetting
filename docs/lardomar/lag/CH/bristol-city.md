@@ -21,15 +21,15 @@ Form (äldst → senast): FOVVVFFV · senaste match 2026-09-18
 
 | Säsong | Liga | M | P/M | Mot marknaden (hemma / borta) | Kryss (odds) | Mål för–emot | xG för–emot | xP/M |
 |---|---|---|---|---|---|---|---|---|
-| 2017/18 | CH | 46 | 1,46 | +0,06 (+0,01 / +0,12) | 35 % (27 %) | 1,46–1,26 | 1,35–1,43* | 1,34 |
-| 2018/19 | CH | 46 | 1,52 | +0,08 (−0,23 / +0,38) | 28 % (28 %) | 1,28–1,15 | 1,54–1,44* | 1,44 |
-| 2019/20 | CH | 46 | 1,37 | +0,11 (−0,10 / +0,32) | 26 % (27 %) | 1,30–1,41 | 1,13–1,61* | 1,06 |
-| 2020/21 | CH | 46 | 1,11 | −0,09 (−0,19 / +0,01) | 13 % (28 %) | 1,00–1,48 | 0,91–1,57* | 0,97 |
+| 2017/18 | CH | 46 | 1,46 | +0,06 (+0,01 / +0,12) | 35 % (27 %) | 1,46–1,26 | 1,36–1,44* | 1,34 |
+| 2018/19 | CH | 46 | 1,52 | +0,08 (−0,23 / +0,38) | 28 % (28 %) | 1,28–1,15 | 1,55–1,44* | 1,44 |
+| 2019/20 | CH | 46 | 1,37 | +0,11 (−0,10 / +0,32) | 26 % (27 %) | 1,30–1,41 | 1,14–1,61* | 1,06 |
+| 2020/21 | CH | 46 | 1,11 | −0,09 (−0,19 / +0,01) | 13 % (28 %) | 1,00–1,48 | 0,91–1,58* | 0,97 |
 | 2021/22 | CH | 46 | 1,20 | −0,02 (+0,06 / −0,09) | 22 % (27 %) | 1,35–1,67 | 1,19–1,62* | 1,13 |
-| 2022/23 | CH | 46 | 1,28 | +0,04 (+0,01 / +0,07) | 30 % (28 %) | 1,20–1,22 | 1,10–1,30* | 1,24 |
+| 2022/23 | CH | 46 | 1,28 | +0,04 (+0,01 / +0,07) | 30 % (28 %) | 1,20–1,22 | 1,11–1,30* | 1,24 |
 | 2023/24 | CH | 46 | 1,35 | +0,10 (+0,17 / +0,03) | 24 % (27 %) | 1,15–1,11 | 1,29–1,39* | 1,33 |
-| 2024/25 | CH | 46 | 1,48 | +0,09 (+0,32 / −0,13) | 37 % (28 %) | 1,28–1,20 | 1,43–1,32* | 1,43 |
-| 2025/26 | CH | 46 | 1,35 | −0,02 (−0,27 / +0,24) | 24 % (27 %) | 1,28–1,28 | 1,37–1,48* | 1,32 |
+| 2024/25 | CH | 46 | 1,48 | +0,09 (+0,32 / −0,13) | 37 % (28 %) | 1,28–1,20 | 1,43–1,33* | 1,43 |
+| 2025/26 | CH | 46 | 1,35 | −0,02 (−0,27 / +0,24) | 24 % (27 %) | 1,28–1,28 | 1,38–1,48* | 1,32 |
 | 2026/27 | CH | 8 | 1,63 | +0,27 (−0,17 / +0,71) | 13 % (26 %) | 1,38–1,50 | 1,58–1,19* | 1,64 |
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
@@ -87,3 +87,43 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-09-05 | Stryk 4969 | Burnley - Bristol City | 2 ✓ | 21 % | 26 % |
 | 2026-08-29 | Stryk 4968 | Bristol City - Portsmouth | 1 ✓ | 59 % | 44 % |
 | 2026-01-01 | Europa 2536 | Bristol City - Portsmouth | 1 ✓ | 65 % | 57 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Michael Skubala. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Luke McNally (skadad, åter Unknown)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Sam Tickle | GK | 24 | England | 1,1 M€ | 6,37 | 0 | 0 | 0/0 |  |
+| 32 | Lewis Thomas | GK | 29 | Wales | 226 k€ | – | 0 | 0 | 0/0 |  |
+| 40 | Bradley Collins | GK | 29 | England | 763 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Lisav Naif Eissat | CB,LB | 21 | Romania | 1,5 M€ | 7,04 | 1 | 0 | 2/0 |  |
+| 3 | Cameron Pring | LB,CB,LWB | 28 | England | 1,4 M€ | 6,43 | 0 | 0 | 0/0 |  |
+| 5 | Robert Atkinson | CB | 28 | England | 1,6 M€ | 6,66 | 0 | 0 | 0/0 |  |
+| 15 | Luke McNally | CB | 27 | Ireland | 1,7 M€ | – | 0 | 0 | 0/0 | skadad, åter Unknown |
+| 16 | Rob Dickie | CB | 30 | England | 1,1 M€ | 7,05 | 1 | 0 | 2/0 |  |
+| 19 | George Tanner | CB,RB,RWB | 26 | England | 1,7 M€ | 6,75 | 0 | 0 | 0/0 |  |
+| 21 | Rio Cardines | LB,RB,RWB,RM,RW,LWB,CM | 20 | Trinidad and Tobago | 634 k€ | 7,85 | 0 | 6 | 1/0 |  |
+| 24 | Seb Naylor | LB | 21 | England | – | – | 0 | 0 | 0/0 |  |
+| 31 | Elijah Morrison | LB | 20 | England | 462 k€ | – | 0 | 0 | 0/0 |  |
+| 38 | Noah Eile | CB | 24 | Sweden | 2,1 M€ | 7,05 | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Brian De Keersmaecker | CDM,CM,CAM | 26 | Belgium | 1,5 M€ | – | 0 | 0 | 0/0 |  |
+| 4 | Adam Randell | CDM,CM | 25 | England | 2,2 M€ | 6,23 | 0 | 0 | 1/1 |  |
+| 8 | Joe Williams | CDM | 29 | England | 412 k€ | 6,90 | 0 | 0 | 1/0 |  |
+| 10 | Scott Twine | CAM,LW,CM,RW,ST | 27 | England | 10,1 M€ | 7,20 | 2 | 0 | 0/0 |  |
+| 12 | Jason Knight | CDM,CM,CB,RB | 25 | Ireland | 4,6 M€ | 6,99 | 1 | 0 | 2/0 |  |
+| 14 | Tomi Horvat | CAM,RW,CDM,CM,RM | 27 | Slovenia | 2,3 M€ | 5,98 | 0 | 0 | 0/0 |  |
+| 20 | Sam Greenwood | LW,CAM,LM,CDM | 24 | England | 1,7 M€ | 6,34 | 0 | 0 | 1/0 |  |
+| 27 | Gibson Yah | CDM,CM | 23 | Netherlands | 1,3 M€ | 6,68 | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Yu Hirakawa | RW,LW,CAM | 25 | Japan | 1,1 M€ | 6,83 | 1 | 0 | 0/0 |  |
+| 9 | Lorent Tolaj | ST | 24 | Switzerland | 1,4 M€ | 6,85 | 2 | 1 | 1/0 |  |
+| 11 | Sam Bell | LW,ST,CAM,RW | 24 | England | 1,1 M€ | 5,98 | 0 | 0 | 0/0 |  |
+| 17 | Jed Wallace | RW,RM | 32 | England | 875 k€ | 6,53 | 0 | 1 | 0/0 |  |
+| 23 | Dominic Ballard | ST,CAM | 21 | England | – | 6,72 | 3 | 0 | 1/0 |  |
+| 45 | Elijah Adebayo | ST | 28 | England | 1,3 M€ | 6,13 | 0 | 0 | 0/0 |  |

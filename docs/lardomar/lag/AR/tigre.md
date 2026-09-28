@@ -68,3 +68,64 @@ Form (äldst → senast): OVOVOFFF · senaste match 2026-09-21
 | Dep. Riestra | 1 | 1-0-0 | 2–1 | +1,40 | −33 pe | 2024-07-29 2-1 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Diego Dabove. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Joaquín Laso (skadad, åter About 1-2 weeks), Ramón Arias (skadad, åter Mid October 2026), Simón Rivero (skadad, åter Mid October 2026), Nicolás Dubersarsky (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Luka Fuster | Keeper | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 12 | Felipe Zenobio | GK | 26 | Argentina | 2,7 M€ | – | 0 | 0 | 0/0 |  |
+| 13 | Máximo Leguizamón | Keeper | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 26 | Lautaro Morales | GK | 26 | Argentina | 321 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Joaquín Laso | CB | 36 | Argentina | 430 k€ | – | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
+| 3 | Nahuel Banegas | LB | 29 | Argentina | 757 k€ | – | 0 | 0 | 0/0 |  |
+| 4 | Valentín Moreno | RB | 23 | Argentina | 973 k€ | – | 0 | 0 | 0/0 |  |
+| 15 | Ángelo Marchese | LB | 22 | Argentina | 438 k€ | – | 0 | 0 | 0/0 |  |
+| 17 | Guillermo Soto | RB | 32 | Chile | 258 k€ | – | 0 | 0 | 0/0 |  |
+| 20 | Alan Barrionuevo | CB | 29 | Argentina | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 23 | Gonzalo Requena | CB | 23 | Argentina | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 24 | Federico Álvarez | LB | 32 | Argentina | 494 k€ | – | 0 | 0 | 0/0 |  |
+| 32 | Juan Villalba | CB | 20 | Argentina | 670 k€ | – | 0 | 0 | 0/0 |  |
+| 37 | Bautista Feversani | Defender | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 38 | Alex González | Defender | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 40 | Luciano Minniti | Defender | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 41 | Lucas Molas | Defender | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 42 | Ramón Arias | CB,RB | 34 | Uruguay | 257 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 46 | Thiago Sánchez | Defender | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 48 | Román Saravia | Defender | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 52 | Fabricio Córdoba | Defender | 24 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Bruno Leyes | CM,CDM | 24 | Argentina | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| 7 | Simón Rivero | RM | 23 | Argentina | 823 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 8 | Martín Garay | CM,RB,RM,CDM | 27 | Argentina | 465 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Jabes Saralegui | RM,RW,CM,CDM,CAM | 23 | Argentina | 2,0 M€ | – | 0 | 0 | 0/0 |  |
+| 11 | Tiago Serrago | RM,RW,LM,LW | 22 | Argentina | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 16 | Nicolás Dubersarsky | CM | 21 | Argentina | 1,7 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 21 | Sebastián Medina | LM | 26 | Argentina | 403 k€ | – | 0 | 0 | 0/0 |  |
+| 27 | Santiago González | CM,CDM | 23 | Argentina | 1,7 M€ | – | 0 | 0 | 0/0 |  |
+| 28 | Gonzalo Martínez | CAM | 33 | Argentina | 277 k€ | – | 0 | 0 | 0/0 |  |
+| 34 | Nicolás Afonso | Midfielder | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 36 | Lucian Carracedo | Midfielder | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 44 | Gastón Pérez | Midfielder | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 45 | Román Pesolilla | Midfielder | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 47 | Sebastián Lezcano | Midfielder | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 72 | Marco Rivas | Midfielder | 18 | Peru | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 18 | Manuel Fernández | RM | 21 | Argentina | 462 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | Alfio Oviedo | ST | 30 | Paraguay | 324 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Santiago López | LM,LW,ST,RW | 20 | Argentina | 2,0 M€ | – | 0 | 0 | 0/0 |  |
+| 25 | Ian Subiabre | LW,RW,LM,RM | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 29 | Ignacio Russo | ST | 25 | Argentina | 2,2 M€ | – | 0 | 0 | 0/0 |  |
+| 30 | Jerónimo Dómina | LW | 20 | Argentina | 2,0 M€ | – | 0 | 0 | 0/0 |  |
+| 33 | Mauro Méndez | ST | 27 | Uruguay | 1,8 M€ | – | 0 | 0 | 0/0 |  |
+| 35 | Jordan Andrusisen | Attacker | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 43 | Benjamín Figueredo | Attacker | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 49 | Brandon Leszczuk | Attacker | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 50 | Ignacio Peluffo | RB | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 51 | Santino Galesio | Attacker | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |

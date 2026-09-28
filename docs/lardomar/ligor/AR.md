@@ -38,6 +38,14 @@ Underlag: 6384 matcher, säsong 2012/13 – 2026. Marknad = stängningsodds utan
 | 65–75 % | 237 | 67,9 % | 68,7 % | −0,8 pe (−0,3) | ingen effekt |
 | 75–100 % | 48 | 85,4 % | 78,5 % | +6,9 pe (1,3) | ingen effekt |
 
+## Kalibrering av oddsen (justeringsmodellen)
+
+g > 0 = favoriter vinner oftare än oddsen säger (skrällar överprissatta), h < 0 = hemmalag överprissatta, d > 0 = kryss underprissatta. Parametrarna är tränade före 2023/24. Kontroll = logloss-skillnad 2023/24– (negativ = bättre). Live används parametrar refittade på all data.
+
+| Bas | g (favoriter) | h (hemma) | d (kryss) | Kontroll | Används live |
+|---|---|---|---|---|---|
+| stängningsodds (sen körning, Stryktipset/Europatipset) | +0,025 | +0,030 | +0,030 | 0,0000 (z −0,0, n 1781) | nej |
+
 ## Signaler mot marknaden
 
 Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (|z| ≥ 2,5 i träning och ≥ 2 i kontroll krävs). "Oddsrörelse" visar om signalen förutsäger hur oddsen rör sig från öppning till stängning, alltså om marknaden lär sig det före avspark.
@@ -49,6 +57,7 @@ Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (
 | Inbördes möten, poängskillnad | +0,001 (z 0,1, n 4239) | +0,006 (z 0,3, n 2775) | −0,010 (z −0,3, n 1464) | – | – | +0,003 p | ingen effekt |
 | Inbördes möten, kryss mot förväntat | +0,049 (z 1,4, n 4239) | +0,065 (z 1,6, n 2775) | +0,001 (z 0,0, n 1464) | – | – | +0,027 p | ingen effekt |
 | Vilodagar (hemma − borta, ligamatcher) | −0,019 (z −2,3, n 6011) | −0,013 (z −1,3, n 4320) | −0,035 (z −2,3, n 1691) | – | – | −0,076 p | ingen effekt |
+| Bolagssnitt mot Pinnacle vid stängning | −0,244 (z −0,5, n 5927) | −0,268 (z −0,5, n 4596) | −0,158 (z −0,1, n 1331) | – | – | −0,019 p | ingen effekt |
 
 ## Situationer
 
@@ -68,6 +77,90 @@ Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (
 ## Stryktipset och Europatipset
 
 Inga matcher från ligan i de sparade backtesten ännu.
+
+## Tabell nu (FotMob, 2026-09-28)
+
+**Clausura Group A**
+
+| # | Lag | M | V | O | F | Mål | +/− | P |
+|---|---|---|---|---|---|---|---|---|
+| 1 | Instituto | 10 | 7 | 1 | 2 | 13-7 | 6 | 22 |
+| 2 | Velez Sarsfield | 10 | 5 | 5 | 0 | 15-9 | 6 | 20 |
+| 3 | Defensa y Justicia | 10 | 5 | 3 | 2 | 13-11 | 2 | 18 |
+| 4 | Gimnasia Mendoza | 10 | 5 | 2 | 3 | 14-9 | 5 | 17 |
+| 5 | Boca Juniors | 10 | 4 | 5 | 1 | 14-11 | 3 | 17 |
+| 6 | Independiente | 10 | 5 | 2 | 3 | 10-8 | 2 | 17 |
+| 7 | Lanus | 10 | 5 | 1 | 4 | 13-9 | 4 | 16 |
+| 8 | Newells Old Boys | 10 | 4 | 4 | 2 | 11-8 | 3 | 16 |
+| 9 | Union de Santa Fe | 10 | 4 | 1 | 5 | 17-16 | 1 | 13 |
+| 10 | San Lorenzo | 10 | 3 | 2 | 5 | 4-8 | -4 | 11 |
+| 11 | Estudiantes Rio Cuarto | 10 | 3 | 1 | 6 | 10-11 | -1 | 10 |
+| 12 | Dep. Riestra | 10 | 2 | 4 | 4 | 8-10 | -2 | 10 |
+| 13 | Platense | 10 | 2 | 3 | 5 | 9-15 | -6 | 9 |
+| 14 | Talleres Cordoba | 10 | 2 | 2 | 6 | 11-17 | -6 | 8 |
+| 15 | Central Cordoba | 10 | 2 | 2 | 6 | 7-13 | -6 | 8 |
+
+**Clausura Group B**
+
+| # | Lag | M | V | O | F | Mål | +/− | P |
+|---|---|---|---|---|---|---|---|---|
+| 1 | Boca Juniors | 10 | 5 | 3 | 2 | 13-9 | 4 | 18 |
+| 2 | Rosario Central | 10 | 5 | 3 | 2 | 11-8 | 3 | 18 |
+| 3 | Independiente | 10 | 5 | 2 | 3 | 14-13 | 1 | 17 |
+| 4 | Gimnasia L.P. | 10 | 5 | 2 | 3 | 15-15 | 0 | 17 |
+| 5 | Belgrano | 10 | 4 | 4 | 2 | 11-7 | 4 | 16 |
+| 6 | Huracan | 10 | 4 | 4 | 2 | 10-8 | 2 | 16 |
+| 7 | Sarmiento Junin | 10 | 5 | 1 | 4 | 17-16 | 1 | 16 |
+| 8 | River Plate | 10 | 4 | 1 | 5 | 13-12 | 1 | 13 |
+| 9 | Atl. Tucuman | 10 | 3 | 4 | 3 | 7-6 | 1 | 13 |
+| 10 | Tigre | 10 | 3 | 3 | 4 | 9-9 | 0 | 12 |
+| 11 | Barracas Central | 10 | 3 | 3 | 4 | 5-7 | -2 | 12 |
+| 12 | Banfield | 10 | 2 | 3 | 5 | 11-16 | -5 | 9 |
+| 13 | Aldosivi | 10 | 2 | 2 | 6 | 12-16 | -4 | 8 |
+| 14 | Racing Club | 10 | 2 | 2 | 6 | 11-16 | -5 | 8 |
+| 15 | Estudiantes Rio Cuarto | 10 | 1 | 3 | 6 | 5-13 | -8 | 6 |
+
+**Apertura Group A**
+
+| # | Lag | M | V | O | F | Mål | +/− | P |
+|---|---|---|---|---|---|---|---|---|
+| 1 | Estudiantes Rio Cuarto | 16 | 9 | 4 | 3 | 19-7 | 12 | 31 |
+| 2 | Boca Juniors | 16 | 8 | 6 | 2 | 22-9 | 13 | 30 |
+| 3 | Velez Sarsfield | 16 | 7 | 7 | 2 | 18-12 | 6 | 28 |
+| 4 | Talleres Cordoba | 16 | 7 | 5 | 4 | 17-13 | 4 | 26 |
+| 5 | Independiente | 16 | 6 | 6 | 4 | 24-20 | 4 | 24 |
+| 6 | Lanus | 16 | 6 | 6 | 4 | 18-15 | 3 | 24 |
+| 7 | San Lorenzo | 16 | 5 | 7 | 4 | 14-14 | 0 | 22 |
+| 8 | Union de Santa Fe | 16 | 5 | 6 | 5 | 24-20 | 4 | 21 |
+| 9 | Instituto | 16 | 6 | 3 | 7 | 17-17 | 0 | 21 |
+| 10 | Defensa y Justicia | 16 | 4 | 7 | 5 | 18-21 | -3 | 19 |
+| 11 | Gimnasia Mendoza | 16 | 5 | 4 | 7 | 14-22 | -8 | 19 |
+| 12 | Platense | 16 | 3 | 7 | 6 | 10-15 | -5 | 16 |
+| 13 | Central Cordoba | 16 | 4 | 4 | 8 | 11-21 | -10 | 16 |
+| 14 | Newells Old Boys | 16 | 3 | 6 | 7 | 15-27 | -12 | 15 |
+| 15 | Dep. Riestra | 16 | 1 | 8 | 7 | 5-12 | -7 | 11 |
+
+**Apertura Group B**
+
+| # | Lag | M | V | O | F | Mål | +/− | P |
+|---|---|---|---|---|---|---|---|---|
+| 1 | Independiente | 16 | 10 | 4 | 2 | 29-15 | 14 | 34 |
+| 2 | River Plate | 16 | 9 | 2 | 5 | 22-12 | 10 | 29 |
+| 3 | Boca Juniors | 16 | 8 | 5 | 3 | 17-13 | 4 | 29 |
+| 4 | Rosario Central | 16 | 8 | 4 | 4 | 20-16 | 4 | 28 |
+| 5 | Belgrano | 16 | 7 | 5 | 4 | 17-13 | 4 | 26 |
+| 6 | Gimnasia L.P. | 16 | 8 | 2 | 6 | 19-19 | 0 | 26 |
+| 7 | Huracan | 16 | 5 | 7 | 4 | 17-13 | 4 | 22 |
+| 8 | Racing Club | 16 | 5 | 6 | 5 | 17-15 | 2 | 21 |
+| 9 | Barracas Central | 16 | 5 | 6 | 5 | 15-15 | 0 | 21 |
+| 10 | Tigre | 16 | 4 | 8 | 4 | 18-15 | 3 | 20 |
+| 11 | Sarmiento Junin | 16 | 6 | 1 | 9 | 13-20 | -7 | 19 |
+| 12 | Banfield | 16 | 5 | 3 | 8 | 17-19 | -2 | 18 |
+| 13 | Atl. Tucuman | 16 | 3 | 5 | 8 | 15-20 | -5 | 14 |
+| 14 | Aldosivi | 16 | 0 | 8 | 8 | 6-19 | -13 | 8 |
+| 15 | Estudiantes Rio Cuarto | 16 | 1 | 2 | 13 | 5-24 | -19 | 5 |
+
+Tabellhistorik (en rad per lag och dag sedan 2026-09-28): `data/ligor/AR.json`.
 
 ## Lagfiler
 

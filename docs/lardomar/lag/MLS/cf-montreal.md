@@ -71,3 +71,45 @@ Form (äldst → senast): OVOFFFFF · senaste match 2026-09-20
 | St. Louis City | 1 | 0-0-1 | 0–2 | −1,33 | −24 pe | 2025-09-14 0-2 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: –. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Brayan Vera (skadad, åter Mid October 2026), Bode Hidalgo (skadad, åter Mid October 2026), Dani Pereira (skadad, åter Mid October 2026), Josh-Duc Nteziryayo (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Sébastian Breza | GK | 28 | Canada | 172 k€ | 6,80 | 0 | 0 | 1/0 |  |
+| 31 | Thomas Gillier | GK | 22 | Chile | 1,3 M€ | 6,35 | 0 | 0 | 3/0 |  |
+| 33 | Emil Gazdov | GK | 23 | Canada | 244 k€ | – | 0 | 0 | 0/0 |  |
+| 41 | Samsy Keita | Keeper | 17 | Canada | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Viktor Radojević | LB | 22 | Serbia | 1,4 M€ | 6,59 | 0 | 1 | 3/0 |  |
+| 2 | Jalen Neal | CB | 23 | USA | 908 k€ | 6,77 | 0 | 0 | 2/0 |  |
+| 3 | Brayan Ceballos | CB,RB | 25 | Colombia | 1,2 M€ | 6,69 | 2 | 0 | 6/0 |  |
+| 4 | Brayan Vera | CB,LB | 27 | Colombia | 971 k€ | 6,51 | 1 | 0 | 5/1 | skadad, åter Mid October 2026 |
+| 5 | Brandan Craig | CB | 22 | USA | 225 k€ | 6,62 | 0 | 0 | 3/0 |  |
+| 13 | Luca Petrasso | LB | 26 | Canada | 368 k€ | 6,82 | 0 | 3 | 1/0 |  |
+| 19 | Bode Hidalgo | RB | 24 | USA | 1,2 M€ | 5,65 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 24 | Efraín Morales | CB | 22 | Bolivia | 730 k€ | 6,63 | 0 | 2 | 0/0 |  |
+| 27 | Dawid Bugaj | RB | 22 | Poland | 549 k€ | 6,61 | 0 | 0 | 2/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Samuel Piette | CM,CDM | 31 | Canada | 287 k€ | 6,80 | 0 | 0 | 5/0 |  |
+| 7 | Dani Pereira | CM,CDM | 26 | Venezuela | 2,0 M€ | 6,59 | 0 | 1 | 2/0 | skadad, åter Mid October 2026 |
+| 8 | Matty Longstaff | CM,CDM | 26 | England | 779 k€ | 6,84 | 2 | 3 | 7/0 |  |
+| 16 | Wiki Carmona | RW,CAM,CM | 23 | Venezuela | 2,2 M€ | 7,01 | 4 | 2 | 1/0 |  |
+| 21 | Fabian Herbers | CM,CAM,LW | 33 | Germany | 67 k€ | 6,49 | 1 | 0 | 2/0 |  |
+| 22 | Victor Loturi | CM,CDM | 25 | Canada | 573 k€ | 6,61 | 1 | 1 | 5/0 |  |
+| 25 | Frankie Amaya | CM | 26 | USA | 779 k€ | – | 0 | 0 | 0/0 |  |
+| 26 | Ivan Losenko | CDM | 22 | Ukraine | 471 k€ | – | 0 | 0 | 0/0 |  |
+| 29 | Olger Escobar | CAM,CM,RW | 20 | Guatemala | 607 k€ | 6,30 | 0 | 0 | 2/0 |  |
+| 36 | Josh-Duc Nteziryayo | Midfielder | 17 | Canada | – | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Prince Owusu | ST | 29 | Ghana | 2,5 M€ | 7,16 | 15 | 6 | 6/0 |  |
+| 10 | Alexis Sánchez | ST,CAM,RW,LW | 37 | Chile | 709 k€ | 6,72 | 0 | 0 | 0/0 |  |
+| 14 | Daniel Ríos | ST,LW | 31 | Mexico | 199 k€ | 6,46 | 5 | 1 | 3/0 |  |
+| 17 | Dante Sealy | RW,LW,RM | 23 | Trinidad and Tobago | 1,1 M€ | 6,47 | 0 | 2 | 2/0 |  |
+| 18 | Hennadii Synchuk | RW | 20 | Ukraine | 2,2 M€ | 6,87 | 1 | 1 | 3/0 |  |
+| 23 | Noah Streit | LW,RW,RM | 20 | Switzerland | 623 k€ | 6,58 | 1 | 1 | 1/0 |  |

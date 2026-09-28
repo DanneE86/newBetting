@@ -1,14 +1,14 @@
 name: Stryktipset – sen körning (startelvor)
 
-# Kör strax före spelstopp (t.ex. lördag ~15:10 för Stryktipset, eller en timme före Europatipsets stängning):
-# ESPN-startelvor (PL/Championship) -> Oddset-tipsen med frånvaro (samma logik som Oddset) ->
-# Stryktipset/Europatipset med färska odds, streck och elvor -> webben.
-# Ingen full datahämtning (öppna källor/OddsPortal) – bara det som ändras nära avspark.
-# Automatiskt lördagar 13:05 UTC (15:05 sommartid / 14:05 vintertid, före Stryktipsets spelstopp 15:59), annars manuellt.
+# Kör strax före Stryktipsets spelstopp (oftast lördag 15:59, ibland söndag):
+# färska skarpa odds (The Odds API: PL, Championship, League One/Two m.fl.) + ESPN-startelvor + FotMob-kontext
+# -> Stryktipset/Europatipset med odds, streck och elvor så nära spelstopp som möjligt -> webben.
+# Schemat startar var 30:e minut lördag/söndag 11:00-15:30 UTC; vakten (scripts/stryk-close-guard.mjs) kör bara
+# när kupongen stänger om 15-75 minuter, så det fungerar både sommar- och vintertid. Manuell start kör alltid.
 on:
   workflow_dispatch:
   schedule:
-    - cron: "5 13 * * 6"
+    - cron: "0,30 11-15 * * 6,0"
 
 permissions:
   contents: write
@@ -26,6 +26,9 @@ jobs:
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
       THE_ODDS_API_KEY: ${{ secrets.THE_ODDS_API_KEY }}
       CLOUDFLARE_ACCOUNT_ID: 157ee3f6fab55443acdd807e5899c5f2
+      # Nara spelstopp: hamta skarpa odds aven for klubbligorna och anvand dem fore aldre odds (max 20 min gamla)
+      STRYK_FRESH_ODDS: "1"
+      STRYK_ODDS_MAX_AGE_MIN: "20"
     steps:
       - uses: actions/checkout@v4
 
@@ -34,27 +37,39 @@ jobs:
           node-version: 22
           cache: npm
 
+      - name: Nära spelstopp?
+        id: guard
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then echo "run=true" >> "$GITHUB_OUTPUT"; echo "Manuell start – kör"; else node scripts/stryk-close-guard.mjs; fi
+
       - name: powershell -> pwsh
+        if: steps.guard.outputs.run == 'true'
         run: sudo ln -sf "$(command -v pwsh)" /usr/local/bin/powershell
 
       - name: Installera beroenden
+        if: steps.guard.outputs.run == 'true'
         run: npm ci
 
       - name: Startelvor (ESPN)
+        if: steps.guard.outputs.run == 'true'
         shell: pwsh
         run: powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Fetch-Lineups.ps1
 
       - name: Oddset-tips med elvor/frånvaro
+        if: steps.guard.outputs.run == 'true'
         shell: pwsh
         run: powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Update-BettingStore.ps1 -SkipDownload
 
-      - name: Stryktipset/Europatipset (odds, streck, elvor)
+      - name: Stryktipset/Europatipset (färska odds, streck, elvor)
+        if: steps.guard.outputs.run == 'true'
         run: node scripts/fetch-stryktipset.mjs
 
       - name: Bygg webbversion
+        if: steps.guard.outputs.run == 'true'
         run: node scripts/build-static-site.mjs
 
       - name: Committa ny data
+        if: steps.guard.outputs.run == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
@@ -62,11 +77,11 @@ jobs:
           if git diff --cached --quiet; then
             echo "Ingen ny data"
           else
-            git commit -m "Data: Stryktipset sen körning (elvor) $(date +'%Y-%m-%d %H:%M')"
+            git commit -m "Data: Stryktipset sen körning $(date +'%Y-%m-%d %H:%M')"
             git pull --rebase
             git push
           fi
 
       - name: Publicera webbversion
-        if: env.CLOUDFLARE_API_TOKEN != ''
+        if: steps.guard.outputs.run == 'true' && env.CLOUDFLARE_API_TOKEN != ''
         run: npx -y wrangler@4 pages deploy site --project-name newbetting --branch main --commit-dirty=true

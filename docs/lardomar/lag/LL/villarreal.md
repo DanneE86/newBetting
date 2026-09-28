@@ -4,7 +4,10 @@ Genererad 2026-09-28. Ligans lärdomar: [LL](../../ligor/LL.md). "Mot marknaden"
 
 ## I korthet
 
+- Senaste 8: otur med −0,52 poäng per match mot xP. Marknaden prisar redan in det i ligan (ingen bekräftad effekt), så det är inget spel i sig.
+- Senaste 8: xG-målskillnaden är +0,55 per match bättre än målskillnaden.
 - 2025/26: +0,33 poäng per match mot marknaden. Ligan visar ingen persistens, så räkna inte med att det fortsätter.
+- Utan Ayoze Pérez (10 % av anfallet): 1,82 poäng per match mot 1,80 med (17 mot 66 matcher), mot marknaden +0,28 mot +0,20.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -12,8 +15,8 @@ Form (äldst → senast): VOOFFFVV · senaste match 2026-09-20
 
 | Mått | Värde |
 |---|---|
-| Tur (poäng − xP per match) | −0,49 |
-| xG-målskillnad − målskillnad | +0,09 |
+| Tur (poäng − xP per match) | −0,52 |
+| xG-målskillnad − målskillnad | +0,55 |
 | Poäng mot marknaden per match | −0,27 |
 
 ## Säsonger
@@ -29,9 +32,22 @@ Form (äldst → senast): VOOFFFVV · senaste match 2026-09-20
 | 2023/24 | LL | 38 | 1,39 | +0,08 (−0,23 / +0,38) | 29 % (25 %) | 1,71–1,71 | 1,57–1,73 | 1,34 |
 | 2024/25 | LL | 38 | 1,84 | +0,20 (−0,08 / +0,49) | 26 % (25 %) | 1,87–1,34 | 1,95–1,36 | 1,73 |
 | 2025/26 | LL | 38 | 1,89 | +0,33 (+0,62 / +0,04) | 16 % (25 %) | 1,89–1,21 | 1,81–1,41 | 1,63 |
-| 2026/27 | LL | 7 | 1,14 | −0,40 (−0,98 / +0,04) | 29 % (24 %) | 1,86–1,71 | 2,00–1,35* | 1,83 |
+| 2026/27 | LL | 7 | 1,14 | −0,40 (−0,98 / +0,04) | 29 % (24 %) | 1,86–1,71 | 2,80–1,63 | 1,88 |
 
-\* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+## Nyckelspelare (Understat, 2024/25–)
+
+Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
+
+| Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
+|---|---|---|---|---|
+| Georges Mikautadze | 14 % | 0 / 83 | – / 1,81 | – / +0,21 |
+| Ayoze Pérez | 10 % | 17 / 66 | 1,82 / 1,80 | +0,28 / +0,20 |
+| Alberto Moleiro | 10 % | 0 / 83 | – / 1,81 | – / +0,21 |
+| Gerard Moreno | 8 % | 28 / 55 | 1,75 / 1,84 | +0,10 / +0,27 |
+| Nicolas Pepe | 7 % | 8 / 75 | 1,25 / 1,87 | −0,34 / +0,27 |
+| Pape Alassane Gueye | 5 % | 7 / 76 | 1,86 / 1,80 | +0,29 / +0,20 |
+
+Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -73,3 +89,41 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-01-03 | Europa 2537 | Elche - Villarreal | 2 ✓ | 45 % | 43 % |
 | 2025-12-21 | Europa 2533 | Villarreal - Barcelona | 2 | 16 % | 25 % |
 | 2025-08-31 | Europa 2501 | Celta de Vigo - Villarreal | X | 44 % | 39 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Inigo Pérez. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Juan Foyth (osäker), Santi Comesaña (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Luíz Júnior | GK | 25 | Brazil | 11,1 M€ | 5,77 | 0 | 0 | 0/0 |  |
+| 25 | Péter Gulácsi | GK | 36 | Hungary | 1,3 M€ | 7,37 | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Logan Costa | CB | 25 | Cape Verde | 15,7 M€ | 6,07 | 0 | 0 | 0/0 |  |
+| 3 | Alex Freeman | RB,CB | 22 | USA | 2,0 M€ | 7,14 | 0 | 0 | 0/0 |  |
+| 6 | Pau Navarro | CB,RB | 21 | Spain | 9,2 M€ | 7,00 | 0 | 0 | 0/0 |  |
+| 8 | Juan Foyth | CB | 28 | Argentina | 9,3 M€ | 7,43 | 0 | 0 | 2/0 | osäker |
+| 12 | Renato Veiga | CB | 23 | Portugal | 20,0 M€ | 6,93 | 0 | 1 | 2/0 |  |
+| 15 | Santiago Mouriño | RB | 24 | Uruguay | 9,9 M€ | 6,63 | 0 | 0 | 2/0 |  |
+| 20 | Carlos Romero | LB | 24 | Spain | 14,1 M€ | 6,96 | 0 | 0 | 1/0 |  |
+| 23 | Sergi Cardona | LB | 27 | Spain | 6,8 M€ | 6,91 | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Alassane Diatta | LM | 21 | Senegal | 898 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Alberto Moleiro | LM,ST | 22 | Spain | 23,2 M€ | 7,32 | 2 | 3 | 0/0 |  |
+| 14 | Santi Comesaña | CM,RM | 29 | Spain | 4,8 M€ | 6,75 | 0 | 0 | 1/0 | skadad, åter Early October 2026 |
+| 16 | Carlos Maciá | CM | 18 | Spain | 2,2 M€ | 6,50 | 0 | 0 | 0/0 |  |
+| 17 | Tajon Buchanan | RM,LM,LW | 27 | Canada | 9,3 M€ | 6,90 | 0 | 0 | 2/0 |  |
+| 18 | Pape Gueye | CM,CDM | 27 | Senegal | 21,8 M€ | 7,32 | 3 | 0 | 1/0 |  |
+| 19 | Nicolas Pépé | RM,ST,RW | 31 | Ivory Coast | 2,5 M€ | 7,20 | 2 | 0 | 1/0 |  |
+| 24 | Nathan Saliba | CDM,CM,CAM | 22 | Canada | 3,7 M€ | 7,08 | 0 | 0 | 0/0 |  |
+| 28 | Mahamoud Barry | Midfielder | 20 | Mali | 345 k€ | – | 0 | 0 | 0/0 |  |
+| 30 | Cheikh Tidiane Thiam | Midfielder | 21 | Senegal | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Gerard Moreno | ST | 34 | Spain | 1,7 M€ | 7,05 | 2 | 0 | 0/0 |  |
+| 9 | Georges Mikautadze | ST | 25 | Georgia | 22,7 M€ | 7,07 | 2 | 1 | 0/0 |  |
+| 11 | Ilias Akhomach | RW,RM | 22 | Morocco | 11,0 M€ | 6,75 | 0 | 2 | 1/0 |  |
+| 21 | Tani Oluwaseyi | ST | 26 | Canada | 5,4 M€ | 6,20 | 0 | 0 | 0/0 |  |
+| 22 | Ayoze Pérez | ST | 33 | Spain | 2,8 M€ | 6,91 | 1 | 2 | 0/0 |  |

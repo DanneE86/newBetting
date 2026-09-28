@@ -54,3 +54,44 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-05-03 | Europa 2571 | GAIS - Örgryte | 1 | 13 % | 14 % |
 | 2026-04-22 | Europa 2568 | Örgryte - Brommapojkarna | 2 | 31 % | 34 % |
 | 2026-04-05 | Europa 2563 | Örgryte - Malmö | X | 13 % | 18 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Andreas Holmberg. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Rasmus Alm (skadad, åter Mid October 2026), William Svensson (skadad, åter Mid October 2026), Aydarus Abukar (skadad, åter Early October 2026), Jerome Tibbling Ugwo (skadad, åter Late October 2026), Viktor Ekblom (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 30 | Mathias Nilsson | GK | 27 | Sweden | 148 k€ | – | 0 | 0 | 0/0 |  |
+| 34 | Alex Rahm | GK | 23 | Sweden | 147 k€ | – | 0 | 0 | 0/0 |  |
+| 44 | Hampus Gustafsson | GK | 25 | Sweden | 385 k€ | 6,40 | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Michael Parker | CB | 21 | England | 563 k€ | 6,33 | 0 | 0 | 2/0 |  |
+| 3 | Jonathan Azulay | CB | 33 | Sweden | 99 k€ | 6,34 | 0 | 0 | 0/0 |  |
+| 5 | Christoffer Styffe | CB | 25 | Sweden | 288 k€ | 6,77 | 2 | 1 | 2/0 |  |
+| 6 | Mikael Dyrestam | CB | 34 | Guinea | 124 k€ | 6,62 | 0 | 2 | 2/0 |  |
+| 16 | Hampus Dahlqvist | LWB | 29 | Sweden | 124 k€ | 5,96 | 0 | 0 | 0/0 |  |
+| 18 | Adam Andersson | RB,RM,RWB | 29 | Sweden | 113 k€ | 6,90 | 1 | 1 | 0/0 |  |
+| 25 | Johan Hammar | CB | 32 | Sweden | 186 k€ | 6,83 | 0 | 0 | 0/0 |  |
+| 26 | Viggo Synnergren | Defender | 18 | Sweden | – | – | 0 | 0 | 0/0 |  |
+| 29 | Marlon Ebietomere | Defender | 17 | Sweden | 542 k€ | 6,14 | 0 | 0 | 1/0 |  |
+| 33 | Sebastian Lagerlund | CB | 24 | Sweden | 201 k€ | 6,96 | 1 | 0 | 3/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 7 | Charlie Vindehall | CM | 30 | Sweden | 226 k€ | 6,12 | 0 | 1 | 0/0 |  |
+| 8 | Benjamin Laturnus | CM | 22 | Canada | 207 k€ | 6,99 | 1 | 0 | 2/0 |  |
+| 10 | Rasmus Alm | RM | 31 | Sweden | 423 k€ | 6,35 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 14 | Daniel Paulson | RM,LM,RWB,RW,LWB,ST | 31 | Sweden | 249 k€ | 6,52 | 1 | 0 | 1/1 |  |
+| 19 | Anton Andreasson | LM,LWB | 33 | Sweden | 124 k€ | 6,61 | 3 | 0 | 0/0 |  |
+| 21 | William Kenndal | CM | 30 | Sweden | 195 k€ | 6,36 | 0 | 0 | 1/0 |  |
+| 23 | Owen Parker-Price | CM | 27 | New Zealand | 290 k€ | 7,04 | 0 | 4 | 2/0 |  |
+| 24 | William Svensson | RM | 24 | Sweden | 398 k€ | 6,52 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 31 | Aydarus Abukar | ST | 23 | Sweden | 162 k€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Liam Andersson | RW | 23 | Sweden | 194 k€ | 5,98 | 0 | 0 | 0/0 |  |
+| 11 | David Obou | ST | 20 | England | – | 6,05 | 0 | 0 | 0/0 |  |
+| 15 | Jerome Tibbling Ugwo | ST | 27 | Sweden | 307 k€ | 6,38 | 3 | 1 | 4/0 | skadad, åter Late October 2026 |
+| 17 | William Hofvander | RW,ST,CM | 24 | Sweden | 389 k€ | 6,66 | 2 | 2 | 3/0 |  |
+| 22 | Tobias Sana | LW,LM,ST,CM | 37 | Sweden | 159 k€ | 7,06 | 3 | 6 | 3/0 |  |
+| 32 | Viktor Ekblom | ST | 28 | Sweden | 214 k€ | 6,07 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |

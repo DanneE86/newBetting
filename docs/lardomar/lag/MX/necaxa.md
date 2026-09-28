@@ -56,3 +56,37 @@ Form (äldst → senast): VFFOFOFF · senaste match 2026-09-20
 | Atlante | 1 | 1-0-0 | 2–1 | +1,26 | −26 pe | 2026-07-17 2-1 (h) |
 
 Ligans test av inbördes möten mot marknaden: svag signal (inte bekräftad).
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Juan Reynoso. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 12 | Luis Jiménez | GK | 22 | Mexico | 908 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Emilio Martínez | RB | 23 | Mexico | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 3 | Agustín Oliveros | CB,LB | 28 | Uruguay | 1,8 M€ | – | 0 | 0 | 0/0 |  |
+| 4 | Alexis Peña | CB | 30 | Mexico | 1,8 M€ | – | 0 | 0 | 0/0 |  |
+| 5 | Kaiky Naves | CB | 24 | Brazil | 1,8 M€ | – | 0 | 0 | 0/0 |  |
+| 15 | Diego Ochoa | CB | 21 | Mexico | 577 k€ | – | 0 | 0 | 0/0 |  |
+| 20 | Francisco Méndez | CB | 21 | Mexico | 662 k€ | – | 0 | 0 | 0/0 |  |
+| 33 | Raúl Martínez | CB,RB | 23 | Mexico | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Danny Leyva | CDM,CM,CAM | 23 | USA | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| 7 | Kevin Rosero | RWB,RW,RM | 27 | Colombia | 729 k€ | – | 0 | 0 | 0/0 |  |
+| 8 | Lorenzo Faravelli | CDM,CM,CAM | 33 | Argentina | 734 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Javier Ruiz | ST,CAM,LW,LM | 22 | Argentina | 2,2 M€ | – | 0 | 0 | 0/0 |  |
+| 11 | Juan Torres | CAM,ST,RW | 22 | Colombia | – | – | 0 | 0 | 0/0 |  |
+| 13 | Owen González | RM,RWB | 23 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| 14 | Mauro Zaleta | LWB,LM | 24 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| 16 | Pedro Pedraza | CDM | 26 | Mexico | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| 17 | Rogelio Cortéz | CM | 22 | Mexico | 645 k€ | – | 0 | 0 | 0/0 |  |
+| 18 | Israel Tello | CAM,RWB | 20 | Mexico | 1,4 M€ | – | 0 | 0 | 0/0 |  |
+| 21 | Matías Espíndola | ST,LW,CM,CAM,LM,CDM | 22 | Argentina | 617 k€ | – | 0 | 0 | 0/0 |  |
+| 88 | Carlos Vargas | LWB,LM | 27 | Mexico | 326 k€ | – | 0 | 0 | 0/0 |  |
+| 99 | Emilio Rodríguez | RW | 23 | Mexico | 996 k€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Julián Carranza | ST | 26 | Argentina | 3,6 M€ | – | 0 | 0 | 0/0 |  |
+| 90 | Juan Valencia | ST | 22 | Colombia | 578 k€ | – | 0 | 0 | 0/0 |  |

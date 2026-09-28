@@ -69,3 +69,51 @@ Form (äldst → senast): VFFVVVFF · senaste match 2026-09-19
 | Gimnasia Mendoza | 2 | 1-0-1 | 4–2 | −0,15 | −30 pe | 2026-08-01 0-2 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Leonardo Madelón. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Federico Gomes Gerth (skadad, åter Late November 2026), Lautaro Vargas (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 21 | Matías Mansilla | GK | 30 | Argentina | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 28 | Federico Gomes Gerth | GK | 22 | Argentina | 421 k€ | – | 0 | 0 | 0/0 | skadad, åter Late November 2026 |
+| 40 | Lucas Meuli | Keeper | 25 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 41 | Agustín Chávez | Keeper | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 4 | Matías Rocha | CB | 25 | Uruguay | 406 k€ | – | 0 | 0 | 0/0 |  |
+| 12 | Bruno Pittón | LB | 33 | Argentina | 258 k€ | – | 0 | 0 | 0/0 |  |
+| 15 | Juan Pintado | RB | 29 | Uruguay | 707 k€ | – | 0 | 0 | 0/0 |  |
+| 18 | Lucas Ayala | LB | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 26 | Juan Pablo Ludueña | CB | 23 | Argentina | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 32 | Nazareno Fazzi | Defender | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 33 | Ignacio Isla | Defender | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 35 | Lautaro Vargas | RB | 21 | Argentina | 2,6 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 36 | Mateo Aimar | Defender | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 44 | Tomás Fagioli | CB | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Eric Ramírez | CM | 30 | Argentina | 551 k€ | – | 0 | 0 | 0/0 |  |
+|  | Ignacio Malcorra | CAM,CM,LW,CDM,LM | 39 | Argentina | 247 k€ | – | 0 | 0 | 0/0 |  |
+|  | Mauro Luna Diale | LM | 27 | Argentina | 472 k€ | – | 0 | 0 | 0/0 |  |
+| 5 | Lucas Menossi | CM,CDM | 34 | Argentina | 283 k€ | – | 0 | 0 | 0/0 |  |
+| 7 | Franco Fragapane | LM | 33 | Argentina | 280 k€ | – | 0 | 0 | 0/0 |  |
+| 16 | Lucas Cacciabue | Midfielder | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 17 | Joaquín Mosqueira | CM,CAM | 21 | Argentina | 1,5 M€ | – | 0 | 0 | 0/0 |  |
+| 20 | Julián Palacios | RM,RW | 27 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 22 | Brahian Cuello | LM,LW,RM,RW | 28 | Argentina | 316 k€ | – | 0 | 0 | 0/0 |  |
+| 27 | Tobías Rubio | LWB | 22 | Argentina | 974 k€ | – | 0 | 0 | 0/0 |  |
+| 29 | Santino Vera | CM | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 34 | Mateo Peresutti | Midfielder | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 43 | Emilio Giaccone | CM | 21 | Argentina | 498 k€ | – | 0 | 0 | 0/0 |  |
+| 46 | Santiago Grella | Midfielder | 21 | Argentina | 594 k€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | José Vanetta | Attacker | 24 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 19 | Marcelo Estigarribia | ST | 31 | Argentina | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 23 | Augusto Solari | RW | 34 | Argentina | 309 k€ | – | 0 | 0 | 0/0 |  |
+| 25 | Cristian Tarragona | ST | 35 | Argentina | 473 k€ | – | 0 | 0 | 0/0 |  |
+| 31 | Misael Aguirre | ST | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 38 | Valentín Cerrudo | Attacker | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 45 | Ricardo Solbes | Attacker | 20 | Argentina | 392 k€ | – | 0 | 0 | 0/0 |  |

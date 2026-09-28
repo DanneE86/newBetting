@@ -25,12 +25,12 @@ Form (äldst → senast): VVFOVVOF · senaste match 2026-09-20
 | 2018/19 | CH | 46 | 1,74 | +0,05 (+0,04 / +0,07) | 24 % (27 %) | 1,89–1,35 | 1,51–1,55* | 1,37 |
 | 2019/20 | CH | 46 | 1,80 | +0,06 (−0,22 / +0,33) | 37 % (25 %) | 1,67–0,98 | 1,64–1,16* | 1,68 |
 | 2020/21 | PL | 38 | 0,68 | −0,15 (−0,15 / −0,15) | 29 % (24 %) | 0,92–2,00 | 0,92–1,95 | 0,83 |
-| 2021/22 | CH | 46 | 1,46 | −0,33 (−0,02 / −0,65) | 28 % (27 %) | 1,13–0,98 | 1,48–0,93* | 1,71 |
+| 2021/22 | CH | 46 | 1,46 | −0,33 (−0,02 / −0,65) | 28 % (27 %) | 1,13–0,98 | 1,49–0,93* | 1,71 |
 | 2022/23 | CH | 46 | 1,43 | −0,28 (−0,15 / −0,41) | 26 % (27 %) | 1,28–1,15 | 1,47–1,14* | 1,60 |
 | 2023/24 | CH | 46 | 1,63 | +0,13 (+0,37 / −0,12) | 26 % (28 %) | 1,52–1,02 | 1,26–1,18* | 1,43 |
 | 2024/25 | CH | 46 | 1,39 | +0,01 (+0,08 / −0,07) | 41 % (28 %) | 1,24–1,02 | 1,36–1,20* | 1,46 |
-| 2025/26 | CH | 46 | 1,15 | −0,38 (−0,17 / −0,59) | 30 % (28 %) | 1,04–1,26 | 1,44–1,14* | 1,57 |
-| 2026/27 | CH | 8 | 1,75 | +0,20 (+0,28 / +0,12) | 25 % (26 %) | 1,25–1,00 | 1,18–1,31* | 1,31 |
+| 2025/26 | CH | 46 | 1,15 | −0,38 (−0,17 / −0,59) | 30 % (28 %) | 1,04–1,26 | 1,44–1,15* | 1,57 |
+| 2026/27 | CH | 8 | 1,75 | +0,20 (+0,28 / +0,12) | 25 % (26 %) | 1,25–1,00 | 1,19–1,31* | 1,31 |
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
 
@@ -83,3 +83,38 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-08-23 | Stryk 4915 | West Bromwich - Portsmouth | X | 67 % | 57 % |
 | 2026-09-05 | Stryk 4969 | West Bromwich - Watford | 1 ✓ | 65 % | 54 % |
 | 2026-01-01 | Europa 2536 | Swansea - West Bromwich | 1 | 40 % | 40 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: James Morrison. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Nolan Galves (skadad, åter Early October 2026), Michael Johnston (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Max O'Leary | GK | 29 | Ireland | 1,5 M€ | 7,63 | 0 | 1 | 0/0 |  |
+| 13 | Matt Ingram | GK | 32 | Scotland | 361 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Chris Mepham | CB | 28 | Wales | 1,9 M€ | 6,90 | 0 | 0 | 0/0 |  |
+| 3 | Nathaniel Phillips | CB | 29 | England | 1,8 M€ | 7,02 | 0 | 0 | 3/0 |  |
+| 4 | Callum Styles | LB,CDM,CM,LWB,RB | 26 | Hungary | 2,3 M€ | 7,45 | 2 | 0 | 0/0 |  |
+| 6 | George Campbell | CB,RB | 25 | USA | 1,7 M€ | 7,12 | 0 | 0 | 1/0 |  |
+| 18 | Brayann Pereira | CB,RWB | 23 | Congo | 975 k€ | 5,04 | 0 | 0 | 1/1 |  |
+| 22 | Conor Townsend | LB | 33 | England | 294 k€ | 6,88 | 0 | 0 | 0/0 |  |
+| 25 | Nolan Galves | RWB,RB | 23 | France | 1,5 M€ | 6,93 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| | **Mittfältare** | | | | | | | | | |
+| 7 | Felix Horn Myhre | CM,CAM | 27 | Norway | 2,2 M€ | 6,93 | 0 | 1 | 0/0 |  |
+| 8 | Jayson Molumby | CDM,CM,RM | 27 | Ireland | 2,3 M€ | 6,89 | 0 | 0 | 1/0 |  |
+| 11 | Jimmy-Jay Morgan | CAM,ST | 20 | England | 1,1 M€ | 7,19 | 3 | 3 | 2/0 |  |
+| 15 | Toby Collyer | CDM | 22 | England | 2,3 M€ | 5,77 | 0 | 0 | 0/0 |  |
+| 17 | Ousmane Diakité | CM,CDM | 26 | Mali | 961 k€ | 7,03 | 0 | 0 | 4/0 |  |
+| 20 | Rabby Nzingoula | CM,CAM,RM,RW | 20 | France | 2,2 M€ | 6,64 | 0 | 0 | 0/0 |  |
+| 21 | Isaac Price | CAM,LM,ST,LW,RM,RW,RWB | 23 | Northern Ireland | 1,9 M€ | 7,31 | 2 | 1 | 2/0 |  |
+| 29 | Harry Whitwell | CAM,RM | 20 | England | 418 k€ | 7,30 | 1 | 1 | 2/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Barney Stewart | ST | 22 | Scotland | 1,1 M€ | 6,22 | 0 | 0 | 0/0 |  |
+| 10 | Michael Johnston | LW,RW,RM,CAM | 27 | Ireland | 2,3 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 19 | Aune Selland Heggebø | ST | 25 | Norway | 6,4 M€ | 6,45 | 2 | 0 | 0/0 |  |
+| 23 | Tammer Bany Odeh | RW | 22 | Denmark | 538 k€ | – | 0 | 0 | 0/0 |  |
+| 26 | Kareem Tunde | RW,LW | 21 | Spain | 1,8 M€ | 6,34 | 0 | 0 | 0/0 |  |

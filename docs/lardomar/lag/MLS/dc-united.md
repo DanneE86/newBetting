@@ -71,3 +71,41 @@ Form (äldst → senast): OOFFOVOF · senaste match 2026-09-20
 | Vancouver Whitecaps | 2 | 0-1-1 | 2–3 | −0,59 | +25 pe | 2023-10-01 2-2 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: René Weiler. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Gabriel Segal (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Sean Johnson | GK | 37 | USA | 76 k€ | 6,84 | 0 | 0 | 1/0 |  |
+| 20 | Grant Leveillé | Keeper | 18 | Haiti | – | – | 0 | 0 | 0/0 |  |
+| 26 | Alex Bono | GK | 32 | USA | 50 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Kimito Nono | RB,RM | 24 | Japan | 975 k€ | 7,48 | 2 | 2 | 1/0 |  |
+| 3 | Lucas Bartlett | CB | 29 | USA | 941 k€ | 7,04 | 4 | 0 | 5/0 |  |
+| 5 | Silvan Hefti | RB | 28 | Switzerland | 246 k€ | 6,77 | 1 | 2 | 5/1 |  |
+| 6 | Keisuke Kurokawa | LB,LWB | 29 | Japan | 716 k€ | 6,88 | 0 | 5 | 5/0 |  |
+| 12 | Conner Antley | RB,RWB | 31 | USA | 50 k€ | 6,19 | 0 | 0 | 0/0 |  |
+| 13 | Sean Nealis | CB | 29 | USA | 448 k€ | 6,50 | 0 | 0 | 0/0 |  |
+| 15 | Kye Rowles | CB,LWB | 28 | Australia | 680 k€ | 6,93 | 1 | 0 | 4/0 |  |
+| 27 | Nikola Marković | CB | 22 | Canada | 285 k€ | 6,44 | 0 | 1 | 1/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 4 | Matti Peltola | CM,CDM | 24 | Finland | 1,2 M€ | 7,06 | 1 | 0 | 1/0 |  |
+| 7 | Peglow | LM,CM,LW,ST | 24 | Brazil | 912 k€ | 7,15 | 1 | 4 | 7/0 |  |
+| 8 | Jared Stroud | RM | 30 | USA | 496 k€ | 6,54 | 1 | 0 | 4/0 |  |
+| 21 | Andre Dozzell | CDM,CM,CB | 27 | England | 1,3 M€ | 6,86 | 0 | 0 | 3/0 |  |
+| 23 | Brandon Servania | CM,CDM | 27 | Puerto Rico | 274 k€ | 6,67 | 0 | 0 | 1/0 |  |
+| 25 | Jackson Hopkins | ST,RM,CM,CAM,LM,RW | 22 | USA | 1,5 M€ | 6,81 | 2 | 1 | 4/0 |  |
+| 40 | Kamil Castillo | Midfielder | 16 | Dominican Republic | – | – | 0 | 0 | 0/0 |  |
+| 77 | Hosei Kijima | LM | 24 | Japan | 144 k€ | 6,51 | 0 | 1 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Tai Baribo | ST | 28 | Israel | 2,3 M€ | 7,27 | 14 | 0 | 3/0 |  |
+| 11 | Louis Munteanu | ST,RW,LW | 24 | Romania | 3,6 M€ | 6,81 | 6 | 2 | 2/0 |  |
+| 14 | Gabriel Segal | ST | 25 | USA | 147 k€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 22 | Nathan Ordaz | ST,RW,CAM | 22 | El Salvador | 1,8 M€ | 6,50 | 2 | 1 | 0/0 |  |
+| 32 | Oscar Avilez | Attacker | 16 | USA | – | – | 0 | 0 | 0/0 |  |
+| 48 | Gavin Turner | CAM | 19 | USA | 332 k€ | 6,23 | 0 | 0 | 0/0 |  |

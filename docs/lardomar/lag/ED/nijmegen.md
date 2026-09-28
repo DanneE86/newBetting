@@ -58,3 +58,48 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | Datum | Spel | Match | Utfall | Folket på laget | Vår procent |
 |---|---|---|---|---|---|
 | 2026-02-11 | Europa 2548 | Nijmegen - Utrecht | 2 | 65 % | 56 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Dick Schreuder. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Ahmetcan Kaplan (skadad, åter Day to day), Deveron Fonville (skadad, åter Early October 2026), Emre Mor (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+|  | Martijn Overmars | Keeper | 20 | Netherlands | – | – | 0 | 0 | 0/0 |  |
+| 1 | Gonzalo Crettaz | GK | 26 | Argentina | 2,4 M€ | 6,58 | 0 | 0 | 0/0 |  |
+| 12 | Nikolas Polster | GK | 24 | Austria | 1,3 M€ | 6,18 | 0 | 0 | 0/0 |  |
+| 36 | Freek Entius | Keeper | 20 | Netherlands | – | – | 0 | 0 | 0/0 |  |
+| 38 | Joep Geneste | Keeper | 19 | Netherlands | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 3 | Philippe Sandler | CB,CDM | 29 | Netherlands | 1,4 M€ | 6,76 | 0 | 0 | 1/0 |  |
+| 4 | Perr Schuurs | CB | 26 | Netherlands | 1,1 M€ | 7,22 | 2 | 1 | 0/0 |  |
+| 17 | Bram Nuytinck | CB | 36 | Netherlands | 226 k€ | 6,77 | 0 | 0 | 0/0 |  |
+| 21 | Tobias Storm | CB,RB | 22 | Denmark | 1,3 M€ | 6,89 | 0 | 0 | 2/0 |  |
+| 22 | Ahmetcan Kaplan | CB | 23 | Turkiye | 3,5 M€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
+| 24 | Deveron Fonville | CB,LWB | 23 | Curacao | 2,5 M€ | 7,25 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 37 | Merijn van de Wiel | CB | 20 | Netherlands | 314 k€ | – | 0 | 0 | 0/0 |  |
+| 42 | Yassin Moslih | Defender | 19 | Netherlands | – | – | 0 | 0 | 0/0 |  |
+| 44 | Mees Rensen | Defender | 16 | Netherlands | – | – | 0 | 0 | 0/0 |  |
+| 73 | Gabriel Brás | CB | 22 | Portugal | 1,7 M€ | 6,72 | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Darko Nejašmić | CDM | 27 | Croatia | 1,8 M€ | 7,28 | 1 | 0 | 0/0 |  |
+| 7 | Emre Mor | RWB | 29 | Turkiye | 456 k€ | 6,51 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 8 | Isak Hansen-Aarøen | CDM | 22 | Norway | 481 k€ | 6,95 | 0 | 0 | 1/0 |  |
+| 9 | Tjaronn Chery | CAM,ST,RW | 38 | Suriname | 718 k€ | 7,60 | 3 | 2 | 0/0 |  |
+| 10 | Dušan Tadić | CAM,ST,RM,RW,LW | 37 | Serbia | 937 k€ | 6,97 | 0 | 1 | 1/0 |  |
+| 11 | Willum Willumsson | CAM | 27 | Iceland | 1,1 M€ | 7,05 | 0 | 1 | 0/0 |  |
+| 18 | Dennis Geiger | CAM,CDM,CM | 28 | Germany | 664 k€ | 6,40 | 0 | 0 | 0/0 |  |
+| 19 | Adam Tahaui | CAM,ST,CM,RW,RWB | 21 | Netherlands | 763 k€ | 6,79 | 2 | 0 | 0/0 |  |
+| 20 | Noé Lebreton | CAM,CDM,LWB | 22 | France | 1,7 M€ | 6,93 | 1 | 0 | 2/0 |  |
+| 26 | Sam de Laat | CAM | 20 | Netherlands | 482 k€ | – | 0 | 0 | 0/0 |  |
+| 35 | Jamiro Monteiro | CM,CDM,CAM,RW | 32 | Cape Verde | 524 k€ | 6,80 | 0 | 0 | 1/0 |  |
+| 66 | Almugera Kabar | CB,LWB | 20 | Germany | 3,7 M€ | 6,09 | 0 | 0 | 2/0 |  |
+| 99 | Clement Bischoff | LW,LWB,LM,RWB | 20 | Denmark | 3,8 M€ | 6,55 | 0 | 1 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 14 | Kaj Sierhuis | ST | 28 | Netherlands | 1,3 M€ | 6,90 | 2 | 0 | 0/0 |  |
+| 30 | Bryan Linssen | ST,CAM | 35 | Netherlands | 580 k€ | 6,54 | 1 | 0 | 0/0 |  |
+| 34 | Kevin Kers | RM | 20 | Netherlands | – | 6,51 | 0 | 0 | 0/0 |  |
+| 77 | Ayodele Thomas | LW,RW,LWB | 19 | Netherlands | 1,8 M€ | 6,84 | 0 | 0 | 0/0 |  |

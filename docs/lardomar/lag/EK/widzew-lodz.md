@@ -51,3 +51,43 @@ Form (äldst → senast): OVFOFOOO · senaste match 2026-09-18
 | Wieczysta Krakow | 1 | 0-1-0 | 2–2 | −0,63 | +74 pe | 2026-09-18 2-2 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Mateusz Stolarski. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Bartłomiej Drągowski (skadad, åter Late October 2026), Carlos Isaac (skadad, åter Early October 2026), Christopher Cheng (osäker), Lukas Lerager (skadad, åter Early January 2027), Szymon Czyż (skadad, åter Early January 2027), Jusuf Gazibegović (osäker), Mariusz Fornalczyk (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Bartłomiej Drągowski | GK | 29 | Poland | 1,4 M€ | 6,95 | 0 | 0 | 0/0 | skadad, åter Late October 2026 |
+| 30 | Veljko Ilić | GK | 23 | Serbia | 1,4 M€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Carlos Isaac | RB | 28 | Spain | 421 k€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 3 | Steve Kapuadi | CB | 28 | DR Congo | 1,6 M€ | 6,80 | 1 | 1 | 2/0 |  |
+| 4 | Mateusz Żyro | CB,RB | 27 | Poland | 396 k€ | 6,17 | 0 | 0 | 1/0 |  |
+| 14 | Ricardo Visus | CB | 25 | Spain | 492 k€ | 6,33 | 0 | 0 | 0/0 |  |
+| 17 | Christopher Cheng | LB,RW,LM | 24 | Norway | 974 k€ | 7,02 | 0 | 0 | 1/0 | osäker |
+| 25 | Przemysław Wiśniewski | CB | 28 | Poland | 1,6 M€ | 7,16 | 0 | 0 | 1/1 |  |
+| 40 | Mario García | LB | 22 | Spain | – | 7,44 | 2 | 3 | 0/0 |  |
+| 91 | Marcel Krajewski | RB,RM | 21 | Poland | 1,3 M€ | 6,32 | 0 | 0 | 3/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Giannis Papanikolaou | CDM,CM | 27 | Greece | 563 k€ | 6,80 | 0 | 0 | 1/0 |  |
+| 6 | Juljan Shehu | CM,CDM,CAM | 28 | Albania | 2,2 M€ | 7,60 | 0 | 1 | 2/0 |  |
+| 8 | Emil Kornvig | CM,CAM,RW,ST | 26 | Denmark | 2,1 M€ | 6,99 | 0 | 0 | 1/0 |  |
+| 10 | Fran Álvarez | CM,CAM,LW,RW,RM | 28 | Spain | 1,1 M€ | 7,08 | 2 | 0 | 2/0 |  |
+| 18 | Lindon Selahi | CM,CDM | 27 | Albania | 844 k€ | 6,91 | 0 | 0 | 1/0 |  |
+| 21 | Lukas Lerager | CM,CDM | 33 | Denmark | 597 k€ | – | 0 | 0 | 0/0 | skadad, åter Early January 2027 |
+| 55 | Szymon Czyż | CM | 25 | Poland | 244 k€ | – | 0 | 0 | 0/0 | skadad, åter Early January 2027 |
+| 70 | Jusuf Gazibegović | RWB,RB,CM | 26 | Bosnia and Herzegovina | 1,5 M€ | 5,98 | 0 | 0 | 0/0 | osäker |
+| 80 | Dani Silva | CAM,CM | 26 | Portugal | 1,6 M€ | 6,47 | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Mariusz Fornalczyk | LW,LM,RW | 23 | Poland | 958 k€ | 6,79 | 2 | 1 | 2/0 | skadad, åter Early October 2026 |
+| 19 | Darian Males | RW,RM,CAM | 25 | Switzerland | 758 k€ | – | 0 | 0 | 0/0 |  |
+| 20 | Antoni Klukowski | Attacker | 19 | Poland | 500 k€ | 6,26 | 0 | 0 | 1/0 |  |
+| 28 | Karol Świderski | ST,CAM | 29 | Poland | 2,6 M€ | 6,73 | 1 | 1 | 2/0 |  |
+| 79 | Stipe Biuk | LW,LM,RW | 23 | Croatia | 1,8 M€ | 6,79 | 0 | 0 | 0/0 |  |
+| 90 | Ioan Vermeșan | ST | 19 | Romania | 865 k€ | – | 0 | 0 | 0/0 |  |
+| 98 | Paulinho Bóia | LW,LM | 28 | Brazil | 882 k€ | – | 0 | 0 | 1/0 |  |
+| 99 | Sebastian Bergier | ST | 26 | Poland | 1,9 M€ | 6,47 | 2 | 1 | 2/0 |  |

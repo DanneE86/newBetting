@@ -71,8 +71,8 @@ $sources = [ordered]@{
         [ordered]@{ name = "WhoScored"; reason = "HTTP 403" }
     )
     limitations = @(
-        "totalPasses per spelare saknas oppet - Understat key_passes ar narmaste proxy.",
-        "Eredivisie saknas pa Understat - ESPN boxscore (mal/skott/fouls).",
+        "totalPasses per spelare saknas $([char]0xF6)ppet - Understat key_passes $([char]0xE4)r n$([char]0xE4)rmaste proxy.",
+        "Eredivisie saknas p$([char]0xE5) Understat - ESPN boxscore (m$([char]0xE5)l/skott/fouls).",
         "FPL finns bara for Premier League."
     )
     scope = @("PL", "LL", "SA", "BL", "L1", "ED")

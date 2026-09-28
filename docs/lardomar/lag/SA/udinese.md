@@ -5,6 +5,8 @@ Genererad 2026-09-28. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden"
 ## I korthet
 
 - Stark historik mot Cagliari (+0,57 p/match mot marknaden, 15 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Utan Keinan Davis (13 % av anfallet): 0,46 poäng per match mot 1,35 med (13 mot 68 matcher), mot marknaden −0,72 mot +0,16.
+- Utan Nicolo Zaniolo (12 % av anfallet): 1,00 poäng per match mot 1,23 med (6 mot 75 matcher), mot marknaden −0,13 mot +0,03.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -12,8 +14,8 @@ Form (äldst → senast): VFFOVFFF · senaste match 2026-09-19
 
 | Mått | Värde |
 |---|---|
-| Tur (poäng − xP per match) | −0,31 |
-| xG-målskillnad − målskillnad | +0,04 |
+| Tur (poäng − xP per match) | −0,20 |
+| xG-målskillnad − målskillnad | −0,15 |
 | Poäng mot marknaden per match | −0,24 |
 
 ## Säsonger
@@ -29,9 +31,22 @@ Form (äldst → senast): VFFOVFFF · senaste match 2026-09-19
 | 2023/24 | SA | 38 | 0,97 | −0,12 (−0,63 / +0,40) | 50 % (27 %) | 0,97–1,39 | 1,18–1,41 | 1,29 |
 | 2024/25 | SA | 38 | 1,16 | −0,03 (−0,10 / +0,05) | 21 % (28 %) | 1,08–1,47 | 1,17–1,55 | 1,17 |
 | 2025/26 | SA | 38 | 1,32 | +0,12 (−0,05 / +0,28) | 21 % (28 %) | 1,18–1,26 | 1,24–1,50 | 1,24 |
-| 2026/27 | SA | 5 | 0,80 | −0,39 (−0,91 / +0,40) | 20 % (26 %) | 1,60–2,20 | 1,61–2,01* | 1,23 |
+| 2026/27 | SA | 5 | 0,80 | −0,39 (−0,91 / +0,40) | 20 % (26 %) | 1,60–2,20 | 1,42–2,12 | 1,06 |
 
-\* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+## Nyckelspelare (Understat, 2024/25–)
+
+Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
+
+| Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
+|---|---|---|---|---|
+| Keinan Davis | 13 % | 13 / 68 | 0,46 / 1,35 | −0,72 / +0,16 |
+| Nicolo Zaniolo | 12 % | 6 / 75 | 1,00 / 1,23 | −0,13 / +0,03 |
+| Jurgen Ekkelenkamp | 9 % | 5 / 76 | 0,60 / 1,25 | −0,59 / +0,06 |
+| Enzo Ebosse | 7 % | 0 / 81 | – / 1,21 | – / +0,02 |
+| Mergim Vojvoda | 6 % | 0 / 81 | – / 1,21 | – / +0,02 |
+| Unai Gómez | 6 % | 0 / 81 | – / 1,21 | – / +0,02 |
+
+Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -69,3 +84,45 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-12-21 | Europa 2533 | Fiorentina - Udinese | 1 | 26 % | 26 % |
 | 2025-12-14 | Europa 2531 | Udinese - Napoli | 1 ✓ | 14 % | 20 % |
 | 2025-09-14 | Europa 2505 | Pisa - Udinese | 2 ✓ | 37 % | 34 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Kosta Runjaić. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Matteo Palma (skadad, åter Early October 2026), Juan Arizala (skadad, åter Early October 2026), Oumar Solet (skadad, åter Early October 2026), Jakub Piotrowski (skadad, åter Unknown), Keinan Davis (osäker), Nicolò Zaniolo (skadad, åter About 1-2 weeks)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 40 | Maduka Okoye | GK | 27 | Nigeria | 8,5 M€ | 7,18 | 0 | 0 | 0/0 |  |
+| 41 | Bartosz Mrozek | GK | 26 | Poland | 2,1 M€ | – | 0 | 0 | 0/0 |  |
+| 93 | Daniele Padelli | GK | 40 | Italy | 336 k€ | – | 0 | 0 | 0/0 |  |
+| 99 | Edoardo Piana | GK | 22 | Italy | 422 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 13 | Nicolò Bertola | CB,LM | 23 | Italy | 6,7 M€ | 6,15 | 0 | 0 | 1/0 |  |
+| 14 | James Abankwah | CB,RB,LB | 22 | Ireland | 1,5 M€ | 6,46 | 1 | 0 | 1/0 |  |
+| 16 | Matteo Palma | CB | 18 | Italy | 4,3 M€ | 6,82 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 20 | Juan Arizala | LB,LM | 20 | Colombia | – | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 27 | Christian Kabasele | CB | 35 | Belgium | 753 k€ | 5,95 | 0 | 0 | 0/0 |  |
+| 28 | Oumar Solet | CB | 26 | France | 13,6 M€ | 6,95 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 77 | Enzo Ebosse | CB | 27 | Cameroon | 1,3 M€ | 6,19 | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 4 | Sandi Lovrić | CM,CDM | 28 | Slovenia | 3,7 M€ | 6,36 | 0 | 0 | 0/0 |  |
+| 6 | Oier Zarraga | CM | 27 | Spain | 929 k€ | 6,19 | 0 | 0 | 0/0 |  |
+| 8 | Jesper Karlström | CM,CDM | 31 | Sweden | 2,6 M€ | 6,94 | 1 | 0 | 2/0 |  |
+| 11 | Hassane Kamara | LM,LWB | 32 | Ivory Coast | 2,2 M€ | 7,32 | 2 | 1 | 0/0 |  |
+| 23 | Mërgim Vojvoda | RWB,RW,RM,RB | 31 | Kosovo | 1,8 M€ | 6,77 | 0 | 0 | 0/0 |  |
+| 24 | Jakub Piotrowski | CM,CDM | 28 | Poland | 2,6 M€ | 6,88 | 1 | 0 | 2/0 | skadad, åter Unknown |
+| 30 | Giorgi Chakvetadze | LM,ST,CAM,LW | 27 | Georgia | 1,8 M€ | 6,13 | 0 | 0 | 0/0 |  |
+| 32 | Jurgen Ekkelenkamp | CM,CAM | 26 | Netherlands | 5,4 M€ | 7,48 | 2 | 1 | 0/0 |  |
+| 38 | Lennon Miller | CM,CDM | 20 | Scotland | 11,0 M€ | 6,08 | 0 | 0 | 1/0 |  |
+| 46 | Unai Gómez | CAM,ST,RW,LW | 23 | Spain | 3,8 M€ | 6,47 | 0 | 1 | 1/0 |  |
+| 59 | Alessandro Zanoli | RM | 25 | Italy | 3,0 M€ | 6,88 | 0 | 0 | 0/0 |  |
+| 79 | David Pejičić | CM | 19 | Slovenia | 1,9 M€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Idrissa Gueye | ST | 20 | Senegal | 5,6 M€ | 6,64 | 1 | 0 | 0/0 |  |
+| 9 | Keinan Davis | ST | 28 | Jamaica | 4,5 M€ | 6,90 | 0 | 2 | 1/0 | osäker |
+| 10 | Nicolò Zaniolo | ST,CAM | 27 | Italy | 10,1 M€ | 6,94 | 0 | 0 | 1/0 | skadad, åter About 1-2 weeks |
+| 15 | Vakoun Issouf Bayo | ST,CAM | 29 | Ivory Coast | 1,8 M€ | 6,35 | 0 | 1 | 1/0 |  |
+| 45 | Giulio Vinciati | Attacker | 19 | Italy | – | – | 0 | 0 | 0/0 |  |
+| 91 | Lazar Jovanović | RW | 19 | Serbia | 3,9 M€ | – | 0 | 0 | 0/0 |  |

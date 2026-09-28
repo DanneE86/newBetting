@@ -13,8 +13,8 @@ Form (äldst → senast): VOFFFFVF · senaste match 2026-09-20
 
 | Mått | Värde |
 |---|---|
-| Tur (poäng − xP per match) | −0,24 |
-| xG-målskillnad − målskillnad | +0,42 |
+| Tur (poäng − xP per match) | −0,11 |
+| xG-målskillnad − målskillnad | +0,07 |
 | Poäng mot marknaden per match | −0,20 |
 
 ## Säsonger
@@ -30,9 +30,22 @@ Form (äldst → senast): VOFFFFVF · senaste match 2026-09-20
 | 2023/24 | LL | 38 | 1,29 | −0,01 (+0,06 / −0,09) | 26 % (28 %) | 1,05–1,18 | 1,19–1,38 | 1,27 |
 | 2024/25 | LL | 38 | 1,21 | +0,06 (+0,11 / +0,01) | 34 % (29 %) | 1,16–1,42 | 1,23–1,47 | 1,30 |
 | 2025/26 | LL | 38 | 1,29 | +0,02 (+0,10 / −0,07) | 26 % (28 %) | 1,21–1,45 | 1,42–1,46 | 1,40 |
-| 2026/27 | LL | 7 | 0,57 | −0,63 (−0,88 / −0,28) | 14 % (27 %) | 0,57–1,86 | 1,06–1,66* | 1,02 |
+| 2026/27 | LL | 7 | 0,57 | −0,63 (−0,88 / −0,28) | 14 % (27 %) | 0,57–1,86 | 0,81–1,81 | 0,88 |
 
-\* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+## Nyckelspelare (Understat, 2024/25–)
+
+Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
+
+| Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
+|---|---|---|---|---|
+| Aimar Blázquez | 16 % | 0 / 83 | – / 1,19 | – / −0,02 |
+| Umar Sadiq | 10 % | 1 / 82 | 0,00 / 1,21 | −1,27 / −0,00 |
+| Hugo Duro | 9 % | 6 / 77 | 1,83 / 1,14 | +0,70 / −0,08 |
+| Arnaut Danjuma Groeneveld | 8 % | 1 / 82 | 3,00 / 1,17 | +1,93 / −0,04 |
+| Largie Ramazani | 8 % | 5 / 78 | 1,00 / 1,21 | +0,08 / −0,03 |
+| Javier Guerra | 8 % | 0 / 83 | – / 1,19 | – / −0,02 |
+
+Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -79,3 +92,47 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-11-09 | Europa 2521 | Valencia - Real Betis | X | 24 % | 28 % |
 | 2025-09-14 | Europa 2505 | Barcelona - Valencia | 1 | 3 % | 10 % |
 | 2025-08-24 | Europa 2499 | Osasuna - Valencia | 1 | 21 % | 30 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Javier Aguirre. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** José Copete (skadad, åter Back in training), César Tárrega (skadad, åter Early October 2026), Dimitri Foulquier (osäker), Guido Rodríguez (osäker), Sergi Canós (skadad, åter Early December 2026), Umar Sadiq (skadad, åter Early November 2026), Diego López (skadad, åter Early January 2027)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Stole Dimitrievski | GK | 32 | North Macedonia | 1,7 M€ | 6,78 | 0 | 0 | 1/0 |  |
+| 13 | Cristian Rivero | GK | 28 | Spain | 363 k€ | – | 0 | 0 | 0/0 |  |
+| 25 | Kayne van Oevelen | GK | 23 | Netherlands | 1,7 M€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 3 | José Copete | CB | 26 | Spain | 3,5 M€ | – | 0 | 0 | 0/0 | skadad, åter Back in training |
+| 4 | Mouctar Diakhaby | CB | 29 | Guinea | 922 k€ | 6,15 | 0 | 0 | 2/0 |  |
+| 5 | César Tárrega | CB | 24 | Spain | 13,0 M€ | 6,42 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 12 | Justin De Haas | CB | 26 | Netherlands | 1,7 M€ | 7,00 | 0 | 0 | 2/0 |  |
+| 14 | José Gayà | LB,LWB | 31 | Spain | 2,1 M€ | 6,97 | 0 | 0 | 1/0 |  |
+| 20 | Dimitri Foulquier | RB,CB | 33 | Guadeloupe | 597 k€ | – | 0 | 0 | 0/0 | osäker |
+| 21 | Jesus Vázquez | LB,LM,LWB | 23 | Spain | 2,7 M€ | 6,44 | 0 | 0 | 0/0 |  |
+| 22 | Arnau Martínez | RB,LB,CB,CM,CDM | 23 | Spain | 10,0 M€ | 5,48 | 0 | 0 | 1/0 |  |
+| 24 | Pablo Maffeo | RB,RWB | 29 | Argentina | 2,3 M€ | 6,50 | 0 | 0 | 1/0 |  |
+| 32 | Amos Wanjala | Defender | 20 | Kenya | – | – | 0 | 0 | 0/0 |  |
+| 36 | Iker Córdoba | CB | 20 | Spain | 1,1 M€ | 6,39 | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 2 | Guido Rodríguez | CM,CDM | 32 | Argentina | 2,5 M€ | 7,15 | 0 | 0 | 1/0 | osäker |
+| 7 | Arnaut Danjuma | LM,ST,LW | 29 | Netherlands | 2,0 M€ | 6,50 | 0 | 0 | 0/0 |  |
+| 8 | Javier Guerra | CM,CDM,ST,CAM,LM | 23 | Spain | 21,2 M€ | 6,43 | 0 | 1 | 1/0 |  |
+| 10 | Harvey Elliott | CAM | 23 | England | 23,1 M€ | 6,31 | 0 | 0 | 0/0 |  |
+| 11 | Luis Rioja | RM,LM,RW | 32 | Spain | 1,1 M€ | 6,71 | 1 | 0 | 0/0 |  |
+| 15 | Aliou Dieng | CDM,CM,RW,RM | 28 | Mali | 1,9 M€ | 6,51 | 0 | 0 | 0/0 |  |
+| 18 | Pepelu | CM,CB,CDM | 28 | Spain | 6,6 M€ | 6,64 | 0 | 0 | 1/0 |  |
+| 23 | Filip Ugrinic | CM | 27 | Switzerland | 4,4 M€ | 6,51 | 0 | 0 | 0/0 |  |
+| 27 | David Otorbi | RM | 18 | Spain | – | 6,55 | 0 | 0 | 0/0 |  |
+| 33 | Aaron Mayol | CDM | 18 | Spain | – | 7,30 | 1 | 0 | 1/0 |  |
+| 39 | Ryunosuke Sato | ST,LM,RM,LWB | 19 | Japan | 2,1 M€ | 5,97 | 0 | 0 | 2/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Aimar | Attacker | 20 | Spain | – | – | 0 | 0 | 0/0 |  |
+|  | Sergi Canós | LW,LM,CAM | 29 | Spain | 365 k€ | – | 0 | 0 | 0/0 | skadad, åter Early December 2026 |
+| 6 | Umar Sadiq | ST | 29 | Nigeria | 2,5 M€ | 6,46 | 1 | 0 | 0/0 | skadad, åter Early November 2026 |
+| 9 | Hugo Duro | ST | 26 | Spain | 10,0 M€ | 6,34 | 0 | 1 | 0/0 |  |
+| 16 | Diego López | RW,RM,ST,LM | 24 | Spain | 12,2 M€ | – | 0 | 0 | 0/0 | skadad, åter Early January 2027 |
+| 19 | Dani Raba | CAM | 30 | Spain | 610 k€ | – | 0 | 0 | 0/0 |  |

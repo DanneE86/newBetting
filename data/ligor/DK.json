@@ -1,0 +1,265 @@
+{
+ "updatedAt": "2026-09-28T19:47:27.474Z",
+ "league": "DK",
+ "fotmobId": 46,
+ "name": "Superligaen",
+ "country": "DEN",
+ "table": [
+  {
+   "rank": 1,
+   "team": "FC Copenhagen",
+   "fotmobName": "FC København",
+   "fotmobId": 8391,
+   "group": null,
+   "played": 9,
+   "won": 8,
+   "drawn": 0,
+   "lost": 1,
+   "goals": "23-8",
+   "gd": 15,
+   "pts": 24
+  },
+  {
+   "rank": 2,
+   "team": "Midtjylland",
+   "fotmobName": "FC Midtjylland",
+   "fotmobId": 8113,
+   "group": null,
+   "played": 9,
+   "won": 5,
+   "drawn": 4,
+   "lost": 0,
+   "goals": "17-9",
+   "gd": 8,
+   "pts": 19
+  },
+  {
+   "rank": 3,
+   "team": "Viborg",
+   "fotmobName": "Viborg",
+   "fotmobId": 9939,
+   "group": null,
+   "played": 9,
+   "won": 5,
+   "drawn": 2,
+   "lost": 2,
+   "goals": "15-8",
+   "gd": 7,
+   "pts": 17
+  },
+  {
+   "rank": 4,
+   "team": "Nordsjaelland",
+   "fotmobName": "Nordsjælland",
+   "fotmobId": 10202,
+   "group": null,
+   "played": 9,
+   "won": 5,
+   "drawn": 2,
+   "lost": 2,
+   "goals": "14-10",
+   "gd": 4,
+   "pts": 17
+  },
+  {
+   "rank": 5,
+   "team": "Brondby",
+   "fotmobName": "Brøndby IF",
+   "fotmobId": 8595,
+   "group": null,
+   "played": 9,
+   "won": 4,
+   "drawn": 1,
+   "lost": 4,
+   "goals": "12-15",
+   "gd": -3,
+   "pts": 13
+  },
+  {
+   "rank": 6,
+   "team": "Horsens",
+   "fotmobName": "AC Horsens",
+   "fotmobId": 9814,
+   "group": null,
+   "played": 9,
+   "won": 3,
+   "drawn": 2,
+   "lost": 4,
+   "goals": "15-16",
+   "gd": -1,
+   "pts": 11
+  },
+  {
+   "rank": 7,
+   "team": "Silkeborg",
+   "fotmobName": "Silkeborg",
+   "fotmobId": 8415,
+   "group": null,
+   "played": 9,
+   "won": 2,
+   "drawn": 4,
+   "lost": 3,
+   "goals": "12-12",
+   "gd": 0,
+   "pts": 10
+  },
+  {
+   "rank": 8,
+   "team": "Randers FC",
+   "fotmobName": "Randers FC",
+   "fotmobId": 8410,
+   "group": null,
+   "played": 9,
+   "won": 3,
+   "drawn": 1,
+   "lost": 5,
+   "goals": "11-14",
+   "gd": -3,
+   "pts": 10
+  },
+  {
+   "rank": 9,
+   "team": "Odense",
+   "fotmobName": "OB",
+   "fotmobId": 8414,
+   "group": null,
+   "played": 9,
+   "won": 2,
+   "drawn": 3,
+   "lost": 4,
+   "goals": "8-14",
+   "gd": -6,
+   "pts": 9
+  },
+  {
+   "rank": 10,
+   "team": "Lyngby",
+   "fotmobName": "Lyngby",
+   "fotmobId": 9907,
+   "group": null,
+   "played": 9,
+   "won": 1,
+   "drawn": 4,
+   "lost": 4,
+   "goals": "10-16",
+   "gd": -6,
+   "pts": 7
+  },
+  {
+   "rank": 11,
+   "team": "Aarhus",
+   "fotmobName": "AGF",
+   "fotmobId": 8071,
+   "group": null,
+   "played": 9,
+   "won": 0,
+   "drawn": 5,
+   "lost": 4,
+   "goals": "11-17",
+   "gd": -6,
+   "pts": 5
+  },
+  {
+   "rank": 12,
+   "team": "Sonderjyske",
+   "fotmobName": "Sønderjyske",
+   "fotmobId": 8487,
+   "group": null,
+   "played": 9,
+   "won": 1,
+   "drawn": 2,
+   "lost": 6,
+   "goals": "12-21",
+   "gd": -9,
+   "pts": 5
+  }
+ ],
+ "tableHistory": {
+  "2026-09-28": [
+   [
+    "FC Copenhagen",
+    1,
+    9,
+    24,
+    15
+   ],
+   [
+    "Midtjylland",
+    2,
+    9,
+    19,
+    8
+   ],
+   [
+    "Viborg",
+    3,
+    9,
+    17,
+    7
+   ],
+   [
+    "Nordsjaelland",
+    4,
+    9,
+    17,
+    4
+   ],
+   [
+    "Brondby",
+    5,
+    9,
+    13,
+    -3
+   ],
+   [
+    "Horsens",
+    6,
+    9,
+    11,
+    -1
+   ],
+   [
+    "Silkeborg",
+    7,
+    9,
+    10,
+    0
+   ],
+   [
+    "Randers FC",
+    8,
+    9,
+    10,
+    -3
+   ],
+   [
+    "Odense",
+    9,
+    9,
+    9,
+    -6
+   ],
+   [
+    "Lyngby",
+    10,
+    9,
+    7,
+    -6
+   ],
+   [
+    "Aarhus",
+    11,
+    9,
+    5,
+    -6
+   ],
+   [
+    "Sonderjyske",
+    12,
+    9,
+    5,
+    -9
+   ]
+  ]
+ }
+}

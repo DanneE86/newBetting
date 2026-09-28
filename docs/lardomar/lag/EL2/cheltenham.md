@@ -22,15 +22,15 @@ Form (äldst → senast): VFOVOVOV · senaste match 2026-09-26
 
 | Säsong | Liga | M | P/M | Mot marknaden (hemma / borta) | Kryss (odds) | Mål för–emot | xG för–emot | xP/M |
 |---|---|---|---|---|---|---|---|---|
-| 2017/18 | EL2 | 46 | 1,11 | −0,32 (−0,25 / −0,38) | 26 % (27 %) | 1,46–1,59 | 1,56–1,41* | 1,49 |
+| 2017/18 | EL2 | 46 | 1,11 | −0,32 (−0,25 / −0,38) | 26 % (27 %) | 1,46–1,59 | 1,57–1,41* | 1,49 |
 | 2018/19 | EL2 | 46 | 1,24 | +0,07 (+0,30 / −0,16) | 26 % (28 %) | 1,24–1,48 | 1,16–1,33* | 1,24 |
 | 2019/20 | EL2 | 36 | 1,78 | +0,50 (+0,57 / +0,42) | 36 % (28 %) | 1,44–0,75 | 1,20–1,19* | 1,36 |
 | 2020/21 | EL2 | 46 | 1,78 | +0,07 (+0,11 / +0,04) | 22 % (28 %) | 1,33–0,85 | 1,45–0,97* | 1,69 |
-| 2021/22 | EL1 | 46 | 1,22 | +0,06 (+0,18 / −0,05) | 37 % (27 %) | 1,43–1,74 | 1,47–1,51* | 1,36 |
+| 2021/22 | EL1 | 46 | 1,22 | +0,06 (+0,18 / −0,05) | 37 % (27 %) | 1,43–1,74 | 1,48–1,51* | 1,36 |
 | 2022/23 | EL1 | 46 | 1,17 | +0,07 (+0,15 / −0,01) | 26 % (27 %) | 0,98–1,33 | 1,23–1,41* | 1,27 |
 | 2023/24 | EL1 | 46 | 0,96 | −0,20 (−0,20 / −0,19) | 17 % (27 %) | 0,89–1,41 | 1,21–1,53* | 1,17 |
-| 2024/25 | EL2 | 46 | 1,30 | +0,15 (+0,23 / +0,06) | 26 % (27 %) | 1,30–1,52 | 1,18–1,47* | 1,19 |
-| 2025/26 | EL2 | 46 | 1,13 | +0,12 (+0,17 / +0,07) | 22 % (26 %) | 1,15–1,72 | 1,08–1,67* | 1,04 |
+| 2024/25 | EL2 | 46 | 1,30 | +0,15 (+0,23 / +0,06) | 26 % (27 %) | 1,30–1,52 | 1,18–1,48* | 1,19 |
+| 2025/26 | EL2 | 46 | 1,13 | +0,12 (+0,17 / +0,07) | 22 % (26 %) | 1,15–1,72 | 1,09–1,67* | 1,04 |
 | 2026/27 | EL2 | 8 | 1,88 | +0,88 (+1,31 / +0,44) | 38 % (26 %) | 2,00–1,50 | 1,22–1,71* | 1,13 |
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
@@ -63,3 +63,37 @@ Form (äldst → senast): VFOVOVOV · senaste match 2026-09-26
 | York | 1 | 1-0-0 | 3–2 | +1,95 | −26 pe | 2026-09-01 3-2 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Steve Cotterill. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Joe Day | GK | 36 | England | 116 k€ | – | 0 | 0 | 0/0 |  |
+| 23 | Wyll Stanway | GK | 25 | England | 196 k€ | 6,89 | 0 | 0 | 0/0 |  |
+| 31 | Mamadou Diallo | GK | 18 | England | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 3 | Jonathan Tomkinson | LB,RB | 24 | USA | 157 k€ | 7,07 | 0 | 1 | 3/0 |  |
+| 4 | Joe Tomlinson | LB,LW,LWB,LM | 26 | England | 154 k€ | 6,79 | 0 | 0 | 1/0 |  |
+| 5 | Robbie Cundy | CB | 29 | England | 87 k€ | 7,40 | 0 | 1 | 0/0 |  |
+| 6 | James Wilson | CB | 37 | Wales | 77 k€ | 6,46 | 0 | 0 | 0/0 |  |
+| 14 | Ryan Broom | RB,RW | 30 | Wales | 85 k€ | 6,90 | 2 | 2 | 0/0 |  |
+| 21 | George Nurse | LB,LM | 27 | England | 101 k€ | 6,61 | 0 | 0 | 0/0 |  |
+| 25 | Pierce Sweeney | CB,RB | 32 | Ireland | 146 k€ | 6,92 | 0 | 1 | 2/0 |  |
+| 33 | Freddy Willcox | CB,CDM | 20 | England | 174 k€ | 6,49 | 0 | 0 | 2/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 7 | Ben Stevenson | CDM,CM | 29 | England | 85 k€ | 6,89 | 0 | 0 | 0/0 |  |
+| 8 | Charlie McCann | CDM,CM,CAM | 24 | Northern Ireland | 182 k€ | 7,61 | 7 | 0 | 1/0 |  |
+| 17 | Shaun McWilliams | CAM,CM,CDM,RW | 28 | England | 139 k€ | 6,92 | 0 | 0 | 4/0 |  |
+| 20 | Favour Onukwuli | Midfielder | 21 | England | 204 k€ | – | 0 | 0 | 0/0 |  |
+| 26 | Jordan Shipley | CM,LW,CAM,CDM | 29 | England | 154 k€ | 6,63 | 0 | 1 | 2/0 |  |
+| 35 | Mark Barber | CB | 18 | England | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Kirsten Otchere | ST,CAM | 19 | England | – | 5,92 | 0 | 0 | 0/0 |  |
+| 10 | George Miller | ST | 28 | England | 163 k€ | 5,93 | 0 | 0 | 0/0 |  |
+| 11 | Jake Bickerstaff | ST,LW | 25 | Wales | 246 k€ | 6,14 | 0 | 0 | 1/0 |  |
+| 18 | Andreas Weimann | ST,RW,CAM,LW | 35 | Austria | 127 k€ | 7,26 | 4 | 2 | 1/0 |  |
+| 19 | Jake Evans | RW,ST,CAM,RM | 18 | England | – | 7,25 | 3 | 2 | 2/0 |  |
+| 32 | Sopuruchukwu Obieri | Attacker | 18 | England | – | – | 0 | 0 | 0/0 |  |

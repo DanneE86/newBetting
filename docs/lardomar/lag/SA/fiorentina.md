@@ -4,7 +4,6 @@ Genererad 2026-09-28. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden"
 
 ## I korthet
 
-- Senaste 8: xG-målskillnaden är +0,51 per match bättre än målskillnaden.
 - Stark historik mot Parma (−0,88 p/match mot marknaden, 10 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
 
 ## Nuläge (senaste 8 ligamatcher)
@@ -13,8 +12,8 @@ Form (äldst → senast): OVOFFFVO · senaste match 2026-09-20
 
 | Mått | Värde |
 |---|---|
-| Tur (poäng − xP per match) | −0,25 |
-| xG-målskillnad − målskillnad | +0,51 |
+| Tur (poäng − xP per match) | −0,05 |
+| xG-målskillnad − målskillnad | +0,03 |
 | Poäng mot marknaden per match | −0,17 |
 
 ## Säsonger
@@ -30,9 +29,22 @@ Form (äldst → senast): OVOFFFVO · senaste match 2026-09-20
 | 2023/24 | SA | 38 | 1,58 | −0,01 (+0,07 / −0,08) | 24 % (27 %) | 1,61–1,21 | 1,53–1,45 | 1,46 |
 | 2024/25 | SA | 38 | 1,71 | +0,22 (+0,50 / −0,07) | 21 % (28 %) | 1,58–1,08 | 1,42–1,23 | 1,46 |
 | 2025/26 | SA | 38 | 1,11 | −0,24 (−0,41 / −0,08) | 39 % (28 %) | 1,08–1,32 | 1,37–1,51 | 1,29 |
-| 2026/27 | SA | 5 | 0,80 | −0,71 (−1,24 / +0,10) | 20 % (27 %) | 1,20–2,40 | 1,89–1,53* | 1,60 |
+| 2026/27 | SA | 5 | 0,80 | −0,71 (−1,24 / +0,10) | 20 % (27 %) | 1,20–2,40 | 1,53–1,93 | 1,28 |
 
-\* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+## Nyckelspelare (Understat, 2024/25–)
+
+Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
+
+| Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
+|---|---|---|---|---|
+| Franco Mastantuono | 21 % | 0 / 81 | – / 1,37 | – / −0,06 |
+| Alieu Njie | 16 % | 0 / 81 | – / 1,37 | – / −0,06 |
+| Arthur Atta | 10 % | 0 / 81 | – / 1,37 | – / −0,06 |
+| Moise Kean | 9 % | 8 / 73 | 1,88 / 1,32 | +0,24 / −0,09 |
+| Albert Gudmundsson | 9 % | 12 / 69 | 2,08 / 1,25 | +0,48 / −0,15 |
+| Beto | 8 % | 0 / 81 | – / 1,37 | – / −0,06 |
+
+Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -80,3 +92,46 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-09-21 | Europa 2507 | Fiorentina - Como | 2 | 42 % | 37 % |
 | 2025-08-31 | Europa 2501 | Torino - Fiorentina | X | 47 % | 42 % |
 | 2025-08-24 | Europa 2499 | Cagliari - Fiorentina | X | 49 % | 43 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Paolo Vanoli. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Fabiano Parisi (skadad, åter Early December 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 19 | Luca Lezzerini | GK | 31 | Italy | 396 k€ | – | 0 | 0 | 0/0 |  |
+| 43 | David de Gea | GK | 35 | Spain | 2,6 M€ | 6,25 | 0 | 0 | 1/0 |  |
+| 51 | Mattia Magalotti | Keeper | 18 | Italy | – | – | 0 | 0 | 0/0 |  |
+| 53 | Oliver Christensen | GK | 27 | Denmark | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Dodô | RB,RM,RWB,CAM | 27 | Brazil | 13,1 M€ | 5,04 | 0 | 0 | 0/0 |  |
+| 3 | Radu Drăgușin | CB | 24 | Romania | 18,6 M€ | 6,65 | 0 | 1 | 1/0 |  |
+| 5 | Marin Pongračić | CB | 29 | Croatia | 7,9 M€ | 5,95 | 0 | 0 | 0/0 |  |
+| 6 | Luca Ranieri | CB,LB | 27 | Italy | 7,8 M€ | 6,26 | 0 | 0 | 1/0 |  |
+| 17 | João Mário | RB,LB | 26 | Portugal | 6,6 M€ | 6,53 | 0 | 0 | 0/0 |  |
+| 20 | Álex Jiménez | RB,RW | 21 | Spain | 21,0 M€ | 7,07 | 1 | 1 | 1/0 |  |
+| 21 | Valde | LB | 19 | Spain | 1,7 M€ | 6,30 | 0 | 0 | 0/0 |  |
+| 33 | Viery | CB,LB | 21 | Brazil | 751 k€ | 6,41 | 0 | 0 | 0/0 |  |
+| 67 | Edoardo Sadotti | RB | 20 | Italy | 287 k€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 4 | Marco Brescianini | CM,CDM,CAM | 26 | Italy | 6,6 M€ | 6,22 | 0 | 0 | 0/0 |  |
+| 14 | Arthur Atta | CM,CAM,CDM | 23 | France | 13,3 M€ | 6,45 | 0 | 0 | 0/0 |  |
+| 27 | Cher Ndour | CM,CDM,CAM | 22 | Italy | 9,1 M€ | 6,95 | 0 | 1 | 0/0 |  |
+| 42 | Christ Inao Oulaï | CDM,CM,CAM | 20 | Ivory Coast | 2,0 M€ | 6,79 | 0 | 0 | 0/0 |  |
+| 44 | Nicolò Fagioli | CM,CDM | 25 | Italy | 12,2 M€ | 6,99 | 0 | 1 | 1/0 |  |
+| 63 | Piergiorgio Bonanno | CDM | 19 | Italy | – | – | 0 | 0 | 0/0 |  |
+| 65 | Fabiano Parisi | RW,LM,LB | 25 | Italy | 4,3 M€ | – | 0 | 0 | 0/0 | skadad, åter Early December 2026 |
+| | **Anfallare** | | | | | | | | | |
+|  | Riccardo Sottil | LW | 27 | Italy | 1,9 M€ | – | 0 | 0 | 0/0 |  |
+| 23 | Beto | ST | 28 | Guinea-Bissau | 14,5 M€ | 6,30 | 0 | 1 | 0/0 |  |
+| 25 | Alieu Njie | RM,LW,ST | 21 | Sweden | 2,8 M€ | 7,29 | 0 | 0 | 1/0 |  |
+| 28 | Pote | LW,CAM | 28 | Portugal | 22,2 M€ | 6,30 | 0 | 0 | 0/0 |  |
+| 29 | Wilfried Gnonto | LW,RWB | 22 | Italy | 16,8 M€ | 6,13 | 0 | 0 | 0/0 |  |
+| 30 | Franco Mastantuono | RW,RM | 19 | Argentina | 40,0 M€ | 7,27 | 3 | 0 | 1/0 |  |
+| 32 | Mateo Pellegrino | ST | 24 | Argentina | 13,6 M€ | 6,66 | 2 | 0 | 1/0 |  |
+| 68 | Gabriele Bertolini | LW | 20 | Italy | – | – | 0 | 0 | 0/0 |  |
+| 70 | Federico Croci | ST | 16 | Italy | – | – | 0 | 0 | 0/0 |  |
+| 71 | Sulayman Jallow | Attacker | 19 | The Gambia | – | – | 0 | 0 | 0/0 |  |

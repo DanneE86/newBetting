@@ -65,3 +65,46 @@ Form (äldst → senast): FFOOOVFO · senaste match 2026-09-20
 | Toronto FC | 2 | 1-1-0 | 3–1 | −0,20 | +31 pe | 2025-10-09 2-0 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Marc Dos Santos. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Thomas Hasal (skadad, åter Early October 2026), Timothy Tillman (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Hugo Lloris | GK | 39 | France | 461 k€ | 7,19 | 0 | 0 | 0/0 |  |
+| 12 | Thomas Hasal | GK | 27 | Canada | 93 k€ | 6,34 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 31 | Cabral Carter | GK | 22 | USA | 145 k€ | 7,39 | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 4 | Eddie Segura | LB,CM,CB | 29 | Colombia | 995 k€ | 6,85 | 0 | 0 | 5/0 |  |
+| 5 | Ryan Porteous | CB | 27 | Scotland | 1,5 M€ | 7,05 | 0 | 0 | 4/0 |  |
+| 14 | Sergi Palencia | RB,RWB | 30 | Spain | 1,5 M€ | 6,82 | 1 | 0 | 4/0 |  |
+| 15 | Lorenzo Dellavalle | CB | 22 | Italy | 152 k€ | – | 0 | 0 | 0/0 |  |
+| 21 | Ryan Raposo | RB | 27 | Canada | 269 k€ | 6,50 | 0 | 0 | 4/0 |  |
+| 23 | Evgen Cheberko | LB,CB | 28 | Ukraine | 483 k€ | 7,15 | 0 | 0 | 2/0 |  |
+| 24 | Ryan Hollingshead | RB,LB,LWB,RM | 35 | USA | 171 k€ | 7,20 | 1 | 1 | 2/0 |  |
+| 33 | Aaron Long | CB | 33 | USA | 459 k€ | 6,84 | 0 | 0 | 1/1 |  |
+| 44 | Christian Díaz | CB | 20 | USA | – | – | 0 | 0 | 0/0 |  |
+| 45 | Kenneth Nielsen | CB | 24 | USA | 172 k€ | 6,68 | 0 | 0 | 2/0 |  |
+| 91 | Nkosi Tafari | CB | 29 | USA | 983 k€ | 6,78 | 0 | 1 | 3/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Igor Jesus | CM | 23 | Brazil | 2,5 M€ | 6,25 | 0 | 0 | 0/0 |  |
+| 8 | Marco Delgado | CM,CDM | 31 | USA | 1,4 M€ | 7,16 | 2 | 3 | 4/0 |  |
+| 11 | Timothy Tillman | CM,CAM,RW | 27 | USA | 1,9 M€ | 7,03 | 1 | 2 | 3/0 | skadad, åter Mid October 2026 |
+| 20 | Sergio Vasquez | CDM,CM,RW,CAM | 22 | Ecuador | – | 6,75 | 0 | 0 | 0/0 |  |
+| 22 | Jude Terry | CM,CAM,CDM | 17 | USA | 906 k€ | 6,70 | 2 | 1 | 0/0 |  |
+| 66 | Mathieu Choinière | CM,CDM | 27 | Canada | 510 k€ | 7,08 | 2 | 3 | 2/0 |  |
+| 81 | Leo Walta | CAM,CM | 23 | Finland | 2,5 M€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Marius Aiyenero | ST | 18 | Canada | – | – | 0 | 0 | 0/0 |  |
+|  | Thayllon | RW,CAM,RM | 20 | Brazil | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 7 | Heung-Min Son | ST,CAM | 34 | South Korea | 6,7 M€ | 7,38 | 6 | 10 | 2/0 |  |
+| 9 | Armindo Sieb | ST,RW | 23 | Germany | 2,2 M€ | 6,64 | 1 | 0 | 1/0 |  |
+| 17 | Jeremy Ebobisse | ST | 29 | USA | 547 k€ | 5,95 | 0 | 0 | 0/0 |  |
+| 18 | Jacob Shaffelburg | RW,LW,LWB,RM | 26 | Canada | 1,3 M€ | 6,59 | 0 | 3 | 0/0 |  |
+| 19 | Tyler Boyd | RW | 31 | USA | 116 k€ | 6,46 | 1 | 2 | 2/0 |  |
+| 90 | Tommy Mihalić | LW,RW | 23 | Croatia | – | 6,15 | 0 | 0 | 0/0 |  |
+| 99 | Denis Bouanga | LW,ST,CAM | 31 | Gabon | 2,9 M€ | 7,54 | 14 | 5 | 6/0 |  |

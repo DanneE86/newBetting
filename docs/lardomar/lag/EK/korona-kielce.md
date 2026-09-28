@@ -56,3 +56,50 @@ Form (äldst → senast): OVOVOVFV · senaste match 2026-09-19
 | GKS Katowice | 4 | 2-1-1 | 5–4 | +0,36 | −3 pe | 2026-04-25 1-1 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Jacek Zieliński. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Hubert Zwoźny (osäker)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+|  | Franciszek Panek | Keeper | 17 | Poland | – | – | 0 | 0 | 0/0 |  |
+|  | Michał Niedbała | Keeper | 20 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 1 | Xavier Dziekoński | GK | 22 | Poland | 1,5 M€ | 6,81 | 0 | 0 | 0/0 |  |
+| 12 | Michal Mikielewicz | Keeper | 18 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 87 | Rafał Mamla | GK | 22 | Poland | 346 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Igor Chmielewski | Defender | 18 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 2 | Ariel Mosór | CB | 23 | Poland | 712 k€ | 7,02 | 0 | 0 | 1/0 |  |
+| 6 | Marcel Pięczek | CB,LM,LB,LWB | 25 | Poland | 496 k€ | 6,98 | 0 | 1 | 0/0 |  |
+| 21 | Konrad Ciszek | LWB | 18 | Poland | 623 k€ | 6,42 | 0 | 0 | 0/0 |  |
+| 23 | Slobodan Rubežić | CB | 26 | Montenegro | 459 k€ | 7,07 | 0 | 0 | 2/0 |  |
+| 24 | Bartłomiej Smolarczyk | CB | 23 | Poland | 444 k€ | – | 0 | 0 | 0/0 |  |
+| 44 | Konstantinos Soteriou | CB | 30 | Cyprus | 238 k€ | 6,68 | 0 | 0 | 0/0 |  |
+| 67 | Norbert Barczak | RW | 21 | Poland | 282 k€ | 6,30 | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Miłosz Strzeboński | CM | 22 | Poland | 271 k€ | – | 0 | 0 | 0/0 |  |
+| 8 | Martin Remacle | CM,CDM,CAM | 29 | Belgium | 556 k€ | 6,94 | 0 | 1 | 0/0 |  |
+| 11 | Konrad Matuszewski | LM,LWB | 24 | Poland | 472 k€ | 6,08 | 0 | 0 | 0/0 |  |
+| 15 | Kornel Tobola | Midfielder | 20 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 18 | Patrik Hellebrand | CM,CDM | 27 | Czechia | 2,2 M€ | 7,61 | 0 | 0 | 1/0 |  |
+| 19 | Adam Hancko | Midfielder | 17 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 19 | Michael Ameyaw | RM,RWB,LM,LWB | 26 | Poland | 1,2 M€ | 6,56 | 0 | 0 | 0/0 |  |
+| 27 | Wojciech Kamiński | CM | 25 | Poland | 252 k€ | – | 0 | 0 | 0/0 |  |
+| 30 | Camilo Mena | RM,RW | 23 | Colombia | 2,5 M€ | 6,77 | 1 | 0 | 0/0 |  |
+| 35 | Kamil Jakubczyk | CM,CDM | 22 | Poland | 1,3 M€ | 7,17 | 0 | 1 | 4/0 |  |
+| 37 | Hubert Zwoźny | RM,RWB | 22 | Poland | 459 k€ | 6,38 | 0 | 0 | 0/0 | osäker |
+| 71 | Wiktor Długosz | RW,RM,RWB,RB,CAM | 26 | Poland | 668 k€ | 7,88 | 0 | 5 | 3/0 |  |
+| 86 | Simon Gustafson | CDM,CM,CAM | 31 | Sweden | 363 k€ | 6,69 | 1 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Dawid Błanik | LW,CAM | 29 | Poland | 453 k€ | 6,45 | 0 | 0 | 0/0 |  |
+| 9 | Stjepan Davidović | RW,CAM | 21 | Croatia | 830 k€ | 6,26 | 0 | 0 | 0/0 |  |
+| 10 | Nono | ST,LW,RW | 35 | Spain | 145 k€ | 6,73 | 0 | 0 | 0/0 |  |
+| 14 | Mariusz Stępiński | ST | 31 | Poland | 409 k€ | 7,23 | 6 | 0 | 0/0 |  |
+| 20 | Kacper Minuczyc | Attacker | 18 | Poland | 575 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Morgan Faßbender | LW,CAM,RW | 27 | Germany | 301 k€ | 7,02 | 3 | 0 | 2/0 |  |
+| 32 | Ondřej Lingr | ST,RW,CAM | 27 | Czechia | 1,8 M€ | 6,83 | 1 | 0 | 0/0 |  |
+| 99 | Daniel Bąk | Attacker | 20 | Poland | 276 k€ | 6,07 | 0 | 0 | 0/0 |  |

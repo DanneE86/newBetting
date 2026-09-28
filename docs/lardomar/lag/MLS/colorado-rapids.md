@@ -71,3 +71,44 @@ Form (äldst → senast): VVFVFOVO · senaste match 2026-09-20
 | Chicago Fire | 1 | 0-0-1 | 1–4 | −0,77 | −23 pe | 2019-04-20 1-4 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Matt Wells. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Zack Steffen (skadad, åter Early October 2026), Theodore Ku-DiPietro (skadad, åter Late September 2026), Mamadou Billo Diop (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Zack Steffen | GK | 31 | USA | 658 k€ | 6,36 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 41 | Nicholas Hansen | GK | 25 | USA | 268 k€ | 6,97 | 0 | 0 | 0/0 |  |
+| 51 | Zack Campagnolo | GK | 18 | USA | – | – | 0 | 0 | 0/0 |  |
+| 61 | Bryan Dowd | GK | 24 | USA | 250 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Keegan Rosenberry | RB | 32 | USA | 275 k€ | 6,67 | 1 | 0 | 2/0 |  |
+| 4 | Reggie Cannon | RB,CB | 28 | USA | 954 k€ | 6,75 | 2 | 0 | 5/0 |  |
+| 5 | Loïc Williams | CB | 24 | Spain | 1,4 M€ | 6,92 | 1 | 0 | 1/0 |  |
+| 6 | Rob Holding | CB | 31 | England | 1,4 M€ | 6,75 | 0 | 1 | 3/2 |  |
+| 24 | Noah Cobb | CB | 21 | USA | 1,1 M€ | 6,37 | 0 | 0 | 2/0 |  |
+| 29 | Miguel Navarro | LB | 27 | Venezuela | 1,3 M€ | 6,84 | 2 | 0 | 6/1 |  |
+| 33 | Kosi Thompson | RB,CB,LB | 23 | Canada | 531 k€ | 6,47 | 2 | 0 | 5/0 |  |
+| 99 | Jackson Travis | LB,LWB,RB | 22 | USA | 514 k€ | 6,51 | 0 | 1 | 2/1 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 8 | Hamzat Ojediran | CDM,CM | 22 | Nigeria | 2,2 M€ | 6,71 | 1 | 0 | 8/0 |  |
+| 10 | Paxten Aaronson | CAM,CM,RW,LW | 23 | USA | 5,5 M€ | 7,36 | 7 | 7 | 1/0 |  |
+| 12 | Joshua Atencio | CDM,CM | 24 | USA | 1,5 M€ | 6,63 | 1 | 1 | 10/0 |  |
+| 13 | Wayne Frederick | CDM,CM,CAM | 22 | Trinidad and Tobago | 368 k€ | 6,74 | 2 | 2 | 2/1 |  |
+| 15 | Ali Fadal | CM,CDM | 22 | Ghana | 163 k€ | – | 0 | 0 | 0/0 |  |
+| 16 | Alex Harris | RM,ST | 21 | USA | 552 k€ | 6,58 | 0 | 0 | 1/0 |  |
+| 21 | Theodore Ku-DiPietro | LW | 24 | USA | 907 k€ | 6,45 | 0 | 0 | 0/0 | skadad, åter Late September 2026 |
+| 27 | Kimani Stewart | LW,LM,RM | 21 | Canada | 241 k€ | – | 0 | 0 | 0/0 |  |
+| 88 | Youssef Maziz | CAM,CM,LW | 28 | France | 463 k€ | 6,85 | 0 | 2 | 1/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Ibrahim Sadiq | RW,LW,ST | 26 | Ghana | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| 7 | Morgan Whittaker | RW,CAM,ST,RM | 25 | England | 12,0 M€ | 7,43 | 2 | 0 | 0/0 |  |
+| 9 | Sayed Abu Farkhi | ST,LW | 20 | Israel | 2,3 M€ | 6,22 | 0 | 0 | 0/0 |  |
+| 26 | Mamadou Billo Diop | ST | 20 | Senegal | 1,0 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 32 | Donavan Phillip | ST,RW | 21 | Saint Lucia | – | 6,79 | 2 | 0 | 1/0 |  |
+| 77 | Darren Yapi | LW,ST,RW | 21 | USA | 1,7 M€ | 6,48 | 3 | 2 | 5/0 |  |
+| 93 | Georgi Minoungou | LW | 24 | Burkina Faso | 1,4 M€ | 6,70 | 0 | 2 | 1/0 |  |

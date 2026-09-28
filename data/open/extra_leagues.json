@@ -158,27 +158,6 @@
       "historyMatches": 4603,
       "upcoming": 20
     },
-    "JP2": {
-      "name": "J2 League",
-      "history": "tsdb",
-      "historyMatches": 820,
-      "callsNow": 50,
-      "upcoming": 30
-    },
-    "JP3": {
-      "name": "J3 League",
-      "history": "tsdb",
-      "historyMatches": 460,
-      "callsNow": 30,
-      "upcoming": 30
-    },
-    "KR": {
-      "name": "K League 1",
-      "history": "tsdb",
-      "historyMatches": 408,
-      "callsNow": 8,
-      "upcoming": 12
-    },
     "MX": {
       "name": "Liga MX",
       "history": "fd-new",
@@ -197,13 +176,6 @@
       "historyMatches": 341,
       "callsNow": 32,
       "upcoming": 17
-    },
-    "CHI": {
-      "name": "Primera División",
-      "history": "espn",
-      "historyMatches": 423,
-      "daysFetchedNow": 0,
-      "upcoming": 9
     },
     "COL": {
       "name": "Primera A",

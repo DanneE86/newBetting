@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-28T18:56:41.404Z",
+  "updatedAt": "2026-09-28T20:23:31.122Z",
   "source": "football-data.co.uk Referee/HY/AY/HR/AR/HF/AF",
   "count": 124,
   "referees": [
@@ -609,17 +609,6 @@
       "homeWinRate": 0.5
     },
     {
-      "league": "PL",
-      "referee": "P Bankes",
-      "matches": 48,
-      "yellowPg": 3.75,
-      "redPg": 0.167,
-      "bookingPointsPg": 41.7,
-      "foulsPg": 21.2,
-      "goalsPg": 2.96,
-      "homeWinRate": 0.604
-    },
-    {
       "league": "CH",
       "referee": "W Finnie",
       "matches": 24,
@@ -629,6 +618,17 @@
       "foulsPg": 21.6,
       "goalsPg": 2.67,
       "homeWinRate": 0.417
+    },
+    {
+      "league": "PL",
+      "referee": "P Bankes",
+      "matches": 48,
+      "yellowPg": 3.75,
+      "redPg": 0.167,
+      "bookingPointsPg": 41.7,
+      "foulsPg": 21.2,
+      "goalsPg": 2.96,
+      "homeWinRate": 0.604
     },
     {
       "league": "EL1",
@@ -1192,17 +1192,6 @@
       "homeWinRate": 0.429
     },
     {
-      "league": "EL1",
-      "referee": "K Dowle",
-      "matches": 7,
-      "yellowPg": 3.14,
-      "redPg": 0.286,
-      "bookingPointsPg": 38.6,
-      "foulsPg": 21.6,
-      "goalsPg": 3.14,
-      "homeWinRate": 0.429
-    },
-    {
       "league": "PL",
       "referee": "P Tierney",
       "matches": 14,
@@ -1212,6 +1201,17 @@
       "foulsPg": 20.4,
       "goalsPg": 2.07,
       "homeWinRate": 0.5
+    },
+    {
+      "league": "EL1",
+      "referee": "K Dowle",
+      "matches": 7,
+      "yellowPg": 3.14,
+      "redPg": 0.286,
+      "bookingPointsPg": 38.6,
+      "foulsPg": 21.6,
+      "goalsPg": 3.14,
+      "homeWinRate": 0.429
     },
     {
       "league": "PL",

@@ -48,3 +48,43 @@ Form (äldst → senast): VVFVVVVO · senaste match 2026-09-19
 | Wisla | 1 | 1-0-0 | 2–1 | +1,35 | −26 pe | 2026-08-16 2-1 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Michal Gasparík. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Philipp Schulze | GK | 23 | Germany | 574 k€ | 6,93 | 0 | 0 | 1/0 |  |
+| 25 | Antoni Bałabuch | Keeper | 19 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 29 | Wiktor Kania | Keeper | 17 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 92 | Piotr Pietryga | Keeper | 23 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 99 | Tomasz Loska | GK | 30 | Poland | 217 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Patryk Warczak | RB | 22 | Poland | 335 k€ | 6,58 | 0 | 0 | 0/0 |  |
+| 4 | Paweł Bochniewicz | CB | 30 | Poland | 452 k€ | 6,99 | 0 | 0 | 0/0 |  |
+| 20 | Josema | CB,LB | 30 | Spain | 534 k€ | 7,50 | 1 | 1 | 2/0 |  |
+| 21 | Ondřej Zmrzlý | LB,LM,LW | 27 | Czechia | 1,1 M€ | 7,20 | 0 | 0 | 0/0 |  |
+| 26 | Rafał Janicki | CB | 34 | Poland | 164 k€ | 7,66 | 1 | 2 | 2/0 |  |
+| 61 | Michal Sácek | RB,CB | 30 | Czechia | 594 k€ | 7,43 | 0 | 0 | 2/0 |  |
+| 64 | Erik Janža | LB,LWB | 33 | Slovenia | 190 k€ | 7,37 | 0 | 2 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Malthe Højholt | CM | 25 | Denmark | 800 k€ | 6,87 | 0 | 0 | 0/0 |  |
+| 8 | Paulo Bernardo | CM | 24 | Portugal | 2,5 M€ | 6,84 | 0 | 0 | 1/0 |  |
+| 9 | Janis Antiste | ST,CAM | 24 | Martinique | 877 k€ | 6,68 | 1 | 0 | 2/0 |  |
+| 14 | Jarosław Kubicki | CM,CDM | 31 | Poland | 402 k€ | 6,90 | 0 | 1 | 1/0 |  |
+| 18 | Lukás Sadílek | CM,CDM | 30 | Czechia | 961 k€ | 6,69 | 1 | 0 | 0/0 |  |
+| 28 | Bastien Donio | CDM | 21 | France | 513 k€ | 6,96 | 0 | 0 | 0/0 |  |
+| 66 | Maximilian Dietz | CDM,CM,CB | 24 | USA | 1,0 M€ | 7,22 | 0 | 0 | 1/0 |  |
+| 82 | Kacper Urbański | CM,CAM,LW | 22 | Poland | 1,9 M€ | 7,74 | 3 | 1 | 1/0 |  |
+| 97 | Ksawery Semik | Midfielder | 18 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 97 | Marcel Kalemba | Midfielder | 21 | Poland | 476 k€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Yvan Ikia Dimi | RW,ST,LM | 22 | Congo | 880 k€ | 6,90 | 1 | 0 | 1/0 |  |
+| 11 | Erik Prekop | ST | 28 | Slovakia | 518 k€ | 6,63 | 2 | 0 | 2/0 |  |
+| 19 | Peter González | RW,RM,LW | 24 | Dominican Republic | 1,5 M€ | 7,31 | 4 | 0 | 2/0 |  |
+| 23 | Sondre Liseth | ST | 28 | Norway | 328 k€ | 6,57 | 0 | 1 | 2/1 |  |
+| 27 | Zeidane Inoussa | LW,RW | 24 | Sweden | 4,3 M€ | – | 0 | 0 | 0/0 |  |
+| 33 | Maksym Khlan | LW,RW,CAM | 23 | Ukraine | 2,2 M€ | 7,33 | 1 | 0 | 0/0 |  |
+| 34 | Bruno Durdov | RW | 18 | Croatia | 2,6 M€ | 5,93 | 0 | 0 | 0/0 |  |

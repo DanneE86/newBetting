@@ -60,3 +60,52 @@ Form (äldst → senast): VOFOOFFF · senaste match 2026-09-20
 | Mito | 1 | 0-1-0 | 1–1 | −0,32 | +70 pe | 2026-08-15 1-1 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Tomokazu Myojin. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Masaaki Higashiguchi | GK | 40 | Japan | 118 k€ | – | 0 | 0 | 0/0 |  |
+| 18 | Rui Araki | GK | 18 | Japan | – | 6,75 | 0 | 0 | 0/0 |  |
+| 22 | Jun Ichimori | GK | 35 | Japan | 267 k€ | 7,07 | 0 | 0 | 0/0 |  |
+| 31 | Aolin Zhang | Keeper | 21 | Japan | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Shota Fukuoka | CB | 30 | Japan | 208 k€ | 6,80 | 0 | 0 | 0/0 |  |
+| 3 | Riku Handa | RB,CB | 24 | Japan | 909 k€ | – | 0 | 0 | 0/0 |  |
+| 4 | Shinnosuke Nakatani | CB | 30 | Japan | 876 k€ | 6,92 | 1 | 1 | 1/0 |  |
+| 5 | Genta Miura | CB | 31 | Japan | 164 k€ | – | 0 | 0 | 0/0 |  |
+| 15 | Takeru Kishimoto | RB,RWB | 29 | Japan | 169 k€ | 6,92 | 0 | 1 | 1/1 |  |
+| 19 | Ginjiro Ikegaya | CB,RB | 22 | Japan | 390 k€ | 6,01 | 0 | 0 | 0/0 |  |
+| 21 | Ryo Hatsuse | LB | 29 | Japan | 463 k€ | 6,86 | 0 | 1 | 1/0 |  |
+| 28 | Soya Fujiwara | RB | 31 | Japan | 320 k€ | 7,20 | 0 | 0 | 0/0 |  |
+| 33 | Haruki Ozawa | Defender | 22 | Japan | – | – | 0 | 0 | 0/0 |  |
+| 34 | Yuya Yokoi | Defender | 18 | Japan | – | – | 0 | 0 | 0/0 |  |
+| 47 | Shinya Nakano | LB,LW | 23 | Japan | 336 k€ | 6,38 | 0 | 0 | 0/0 |  |
+| 67 | Shogo Sasaki | CB | 26 | Japan | 249 k€ | 6,67 | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 7 | Takashi Usami | CAM | 34 | Japan | 210 k€ | 6,46 | 0 | 0 | 0/0 |  |
+| 10 | Shu Kurata | CAM,LW,CDM | 37 | Japan | 178 k€ | 6,45 | 0 | 0 | 0/0 |  |
+| 11 | Issam Jebali | CAM,ST | 34 | Tunisia | 209 k€ | 6,84 | 2 | 1 | 1/0 |  |
+| 13 | Shuto Abe | CDM | 28 | Japan | 352 k€ | 6,72 | 0 | 1 | 1/1 |  |
+| 14 | Asahi Uenaka | CAM | 24 | Japan | 475 k€ | 6,51 | 1 | 0 | 0/0 |  |
+| 16 | Tokuma Suzuki | CDM | 29 | Japan | 259 k€ | 6,39 | 0 | 0 | 0/0 |  |
+| 27 | Rin Mito | CDM | 24 | Japan | 405 k€ | 6,81 | 0 | 0 | 0/0 |  |
+| 32 | Yuki Yoshihara | CDM | 22 | Japan | – | 5,94 | 0 | 0 | 0/0 |  |
+| 39 | Koshiro Sumi | LM,CAM,RW,LW | 24 | Japan | 321 k€ | 6,17 | 0 | 0 | 0/0 |  |
+| 48 | Fujimoto Yoshiki | Midfielder | 17 | Japan | – | – | 0 | 0 | 0/0 |  |
+| 60 | Arata Okamoto | Midfielder | 16 | Japan | – | – | 0 | 0 | 0/0 |  |
+| 78 | Juanpe | CDM,CM | 30 | Spain | 278 k€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 8 | Ryotaro Meshino | LW | 28 | Japan | 205 k€ | 7,01 | 1 | 0 | 0/0 |  |
+| 9 | Daichi Hayashi | ST | 29 | Japan | 242 k€ | – | 0 | 0 | 0/0 |  |
+| 17 | Ryoya Yamashita | RW | 28 | Japan | 488 k€ | 7,58 | 0 | 2 | 1/0 |  |
+| 20 | Eli Adams | RW,LW | 24 | Australia | 557 k€ | 6,53 | 0 | 0 | 0/0 |  |
+| 23 | Deniz Hümmet | ST,CAM | 30 | Turkiye | 1,5 M€ | 6,47 | 2 | 0 | 1/0 |  |
+| 35 | Taiki Tono | RW | 19 | Japan | – | – | 0 | 0 | 0/0 |  |
+| 37 | Naru Nakatsumi | LW | 18 | Japan | – | 6,19 | 0 | 0 | 0/0 |  |
+| 41 | Yusei Toshida | ST | 27 | Japan | 104 k€ | 5,79 | 0 | 0 | 0/0 |  |
+| 44 | Kanji Okunuki | LW | 27 | Japan | 235 k€ | – | 0 | 0 | 0/0 |  |
+| 97 | Welton | LW | 29 | Brazil | 603 k€ | 7,26 | 1 | 0 | 0/0 |  |

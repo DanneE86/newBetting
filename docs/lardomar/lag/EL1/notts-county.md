@@ -21,11 +21,11 @@ Form (äldst → senast): OOOVOOFF · senaste match 2026-09-19
 | Säsong | Liga | M | P/M | Mot marknaden (hemma / borta) | Kryss (odds) | Mål för–emot | xG för–emot | xP/M |
 |---|---|---|---|---|---|---|---|---|
 | 2017/18 | EL2 | 46 | 1,67 | +0,18 (+0,49 / −0,13) | 30 % (27 %) | 1,54–1,04 | 1,18–1,25* | 1,32 |
-| 2018/19 | EL2 | 46 | 0,89 | −0,40 (−0,39 / −0,41) | 30 % (27 %) | 1,04–1,83 | 1,06–1,43* | 1,14 |
-| 2023/24 | EL2 | 46 | 1,33 | −0,26 (−0,08 / −0,45) | 15 % (24 %) | 1,93–1,87 | 1,53–1,67* | 1,29 |
-| 2024/25 | EL2 | 46 | 1,57 | −0,00 (−0,26 / +0,26) | 26 % (25 %) | 1,48–1,07 | 1,56–1,32* | 1,54 |
+| 2018/19 | EL2 | 46 | 0,89 | −0,40 (−0,39 / −0,41) | 30 % (27 %) | 1,04–1,83 | 1,07–1,43* | 1,14 |
+| 2023/24 | EL2 | 46 | 1,33 | −0,26 (−0,08 / −0,45) | 15 % (24 %) | 1,93–1,87 | 1,53–1,68* | 1,29 |
+| 2024/25 | EL2 | 46 | 1,57 | −0,00 (−0,26 / +0,26) | 26 % (25 %) | 1,48–1,07 | 1,56–1,33* | 1,54 |
 | 2025/26 | EL2 | 46 | 1,74 | +0,16 (+0,18 / +0,14) | 17 % (27 %) | 1,61–1,13 | 1,40–1,11* | 1,55 |
-| 2026/27 | EL1 | 7 | 1,00 | +0,24 (+0,05 / +0,37) | 57 % (26 %) | 1,00–1,29 | 1,25–1,30* | 1,33 |
+| 2026/27 | EL1 | 7 | 1,00 | +0,24 (+0,05 / +0,37) | 57 % (26 %) | 1,00–1,29 | 1,25–1,31* | 1,33 |
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
 
@@ -49,3 +49,45 @@ Form (äldst → senast): OOOVOOFF · senaste match 2026-09-19
 | Stevenage | 1 | 1-0-0 | 3–0 | +1,69 | −28 pe | 2019-03-30 3-0 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Martin Paterson. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | James Belshaw | GK | 35 | England | 143 k€ | 6,51 | 0 | 0 | 0/0 |  |
+| 21 | Harry Griffiths | GK | 21 | England | – | – | 0 | 0 | 0/0 |  |
+| 24 | Kelle Roos | GK | 34 | Netherlands | 162 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | James Gibbons | CB,RB,LB | 28 | England | 271 k€ | 6,89 | 0 | 0 | 1/0 |  |
+| 3 | Rodney McDonald | CB | 34 | England | – | – | 0 | 0 | 0/0 |  |
+| 4 | Jacob Bedeau | CB | 26 | England | 258 k€ | 6,73 | 0 | 0 | 2/0 |  |
+| 5 | Matty Platt | CB | 28 | England | 171 k€ | – | 0 | 0 | 0/0 |  |
+| 12 | Lucas Ness | CB | 24 | England | 243 k€ | 7,16 | 0 | 0 | 1/0 |  |
+| 23 | Luke Browne | CB | 20 | Ireland | 394 k€ | – | 0 | 0 | 0/0 |  |
+| 26 | Ishé Samuels-Smith | CB,LB | 20 | England | 910 k€ | 6,44 | 0 | 0 | 0/0 |  |
+| 28 | Lewis Macari | CB | 24 | Scotland | 262 k€ | – | 0 | 0 | 0/0 |  |
+| 44 | Matthew Baker | CB | 23 | Wales | 396 k€ | 6,44 | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Max Sanders | CDM | 27 | England | 235 k€ | – | 0 | 0 | 0/0 |  |
+| 8 | Oliver Cooper | CAM,CM | 26 | Wales | 851 k€ | 7,44 | 3 | 0 | 1/0 |  |
+| 10 | Rosaire Longelo | RWB,CAM,RM,LM | 26 | England | 175 k€ | 6,22 | 0 | 0 | 0/0 |  |
+| 11 | Conor Grant | CAM,RW | 25 | Ireland | 240 k€ | 6,58 | 1 | 0 | 1/0 |  |
+| 14 | Darius Lipsiuc | RM,LWB,CM,LM,RW,CAM | 21 | Ireland | – | 6,61 | 0 | 0 | 2/0 |  |
+| 15 | Jack Evans | CDM,CM,LB,LW | 26 | England | 311 k€ | 6,26 | 0 | 0 | 2/0 |  |
+| 16 | Dean Campbell | CM,CDM | 25 | Scotland | 351 k€ | 7,05 | 0 | 0 | 0/0 |  |
+| 17 | Maziar Kouhyar | RWB,CAM | 28 | Afghanistan | 135 k€ | 6,49 | 0 | 0 | 0/0 |  |
+| 18 | Matthew Palmer | CDM | 31 | England | 151 k€ | 6,23 | 0 | 0 | 0/0 |  |
+| 20 | Scott Robertson | CDM | 25 | Scotland | 307 k€ | 7,11 | 0 | 0 | 1/0 |  |
+| 25 | Nicholas Tsaroulla | RWB,RW,LW | 27 | Cyprus | – | 6,96 | 0 | 2 | 0/0 |  |
+| 27 | Rory Finneran | CDM,CM | 18 | Ireland | – | 7,00 | 0 | 0 | 1/0 |  |
+| 42 | Hindolo Mustapha | CAM,ST | 20 | Sierra Leone | 416 k€ | 6,61 | 0 | 0 | 2/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Callum Roberts | RW,CAM,ST,RM | 29 | England | 167 k€ | 6,85 | 1 | 1 | 0/0 |  |
+| 9 | Daniel Kanu | ST | 21 | Sierra Leone | 732 k€ | 5,91 | 0 | 0 | 1/0 |  |
+| 19 | Luka Smyth | ST | 22 | Australia | 405 k€ | 6,62 | 2 | 0 | 1/0 |  |
+| 22 | Beck-Ray Enoru | LW,LM | 24 | England | 282 k€ | – | 0 | 0 | 0/0 |  |
+| 33 | Emile Acquah | ST | 26 | England | 330 k€ | 6,35 | 0 | 0 | 0/0 |  |
+| 39 | Lee Ndlovu | ST | 32 | Zimbabwe | 194 k€ | 6,30 | 0 | 0 | 0/0 |  |

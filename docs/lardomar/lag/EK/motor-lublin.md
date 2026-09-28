@@ -45,3 +45,44 @@ Form (äldst → senast): FFVOFFFO · senaste match 2026-09-19
 | Wisla Plock | 2 | 1-1-0 | 5–1 | +0,62 | +23 pe | 2026-05-10 4-0 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Mariusz Misiura. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Ivo Rodrigues (osäker)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+|  | Borys Moldach | Keeper | 17 | Poland | – | – | 0 | 0 | 0/0 |  |
+|  | Oskar Jeż | Keeper | 19 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 33 | Gašper Tratnik | GK | 26 | Slovenia | 207 k€ | 6,90 | 0 | 0 | 0/0 |  |
+| 71 | Mihai Popa | GK | 25 | Romania | 582 k€ | 6,37 | 0 | 0 | 0/0 |  |
+| 99 | Patryk Kukulski | Keeper | 22 | Poland | 176 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 4 | Tin Plavotić | CB | 29 | Croatia | 625 k€ | 6,37 | 0 | 0 | 1/0 |  |
+| 5 | Artem Akatov | Defender | 19 | Belarus | – | – | 0 | 0 | 0/0 |  |
+| 17 | Kamil Lukoszek | RB | 24 | Poland | 332 k€ | 6,86 | 1 | 1 | 0/0 |  |
+| 18 | Bartosz Bereszyński | CB | 34 | Poland | 244 k€ | 6,67 | 0 | 0 | 1/0 |  |
+| 22 | Marcel Zlomanczuk | Defender | 21 | Poland | 320 k€ | – | 0 | 0 | 0/0 |  |
+| 24 | Filip Luberecki | LB | 21 | Poland | 2,4 M€ | 6,93 | 0 | 0 | 1/0 |  |
+| 29 | Thomas Santos | RB,RW | 27 | Denmark | 360 k€ | 7,08 | 0 | 0 | 0/0 |  |
+| 39 | Marek Bartoš | CB | 29 | Slovakia | 204 k€ | 6,98 | 0 | 0 | 2/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 2 | Paskal Meyer | CM | 21 | Germany | 280 k€ | 6,17 | 0 | 0 | 2/0 |  |
+| 6 | Mateusz Łęgowski | CAM,CM,CDM,ST | 23 | Poland | 1,8 M€ | 6,38 | 0 | 0 | 1/0 |  |
+| 7 | Ivo Rodrigues | CAM,CM | 31 | Portugal | 206 k€ | 7,01 | 0 | 3 | 2/0 | osäker |
+| 8 | Christopher Simon | CAM | 26 | Senegal | 124 k€ | 6,90 | 0 | 0 | 1/0 |  |
+| 21 | Konrad Kraska | Midfielder | 18 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 23 | Florian Haxha | RW | 24 | Kosovo | 218 k€ | – | 0 | 0 | 0/0 |  |
+| 27 | Yacine Bourhane | CM,CDM,CB | 27 | Comoros | 263 k€ | 6,83 | 0 | 0 | 0/0 |  |
+| 47 | Alioune Oumar Tall | CM | 19 | Senegal | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Rony Lopes | ST,CAM | 30 | Portugal | 551 k€ | 6,44 | 0 | 0 | 0/0 |  |
+| 10 | Karol Czubak | ST | 26 | Poland | 1,5 M€ | 7,22 | 5 | 0 | 0/0 |  |
+| 11 | Fábio Ronaldo | LW,LM | 25 | Portugal | 1,2 M€ | 6,50 | 0 | 0 | 1/0 |  |
+| 30 | Mbaye Ndiaye | RW | 22 | Senegal | 1,2 M€ | 6,88 | 1 | 3 | 1/0 |  |
+| 70 | Makan Aïko | LW,ST,LM | 25 | France | 820 k€ | 6,44 | 1 | 0 | 1/0 |  |
+| 77 | Mateusz Posmyk | Attacker | 17 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 90 | Dominik Gregorski | Attacker | 20 | Poland | – | – | 0 | 1 | 0/0 |  |

@@ -64,3 +64,39 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-04-22 | Europa 2568 | Hammarby - Halmstad | X | 86 % | 80 % |
 | 2025-08-31 | Europa 2501 | Hammarby - Öster | 1 ✓ | 84 % | 77 % |
 | 2025-08-17 | Europa 2497 | Hammarby - GAIS | 2 | 56 % | 51 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Henrik Rydström. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Amin Boudri (skadad, åter Mid October 2026), Sourou Kone (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Warner Hahn | GK | 34 | Suriname | 290 k€ | 6,81 | 0 | 0 | 1/0 |  |
+| 25 | Elton Fischerström | Keeper | 19 | Sweden | – | – | 0 | 0 | 0/0 |  |
+| 27 | Felix Jakobsson | GK | 27 | Sweden | 310 k€ | – | 0 | 0 | 0/0 |  |
+| 50 | Benjamin Norell | Keeper | 17 | Sweden | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Hampus Skoglund | RB | 22 | Sweden | 2,0 M€ | 7,31 | 0 | 1 | 3/1 |  |
+| 3 | Frederik Winther | CB,LB | 25 | Denmark | 678 k€ | 7,43 | 2 | 1 | 1/0 |  |
+| 4 | Victor Eriksson | CB | 26 | Sweden | 2,2 M€ | 7,12 | 1 | 0 | 5/0 |  |
+| 6 | Ibrahima Fofana | CB,RB | 24 | Guinea | 582 k€ | 7,35 | 1 | 1 | 1/0 |  |
+| 16 | Noah Persson | LB | 23 | Sweden | 1,4 M€ | 6,99 | 2 | 2 | 3/0 |  |
+| 24 | Waylon Renecke | CB | 20 | South Africa | 682 k€ | 7,42 | 1 | 0 | 0/0 |  |
+| 31 | Oscar Steinke Brånby | LB | 20 | Sweden | 441 k€ | 6,48 | 0 | 0 | 0/0 |  |
+| 33 | Björn Hedlöf | CB | 18 | Sweden | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Tesfaldet Tekie | CDM,CM | 29 | Eritrea | 1,1 M€ | 6,88 | 1 | 0 | 0/0 |  |
+| 8 | Markus Karlsson | CDM,CM,CB | 22 | Sweden | 2,9 M€ | 7,45 | 1 | 2 | 2/0 |  |
+| 11 | Oscar Johansson Schellhas | CDM,CM,LW | 31 | Sweden | 294 k€ | 6,64 | 0 | 2 | 1/0 |  |
+| 17 | Amin Boudri | CM,LW,CAM | 21 | Sweden | 1,7 M€ | 7,06 | 0 | 2 | 0/0 | skadad, åter Mid October 2026 |
+| 20 | Nahir Besara | CAM,CM | 35 | Sweden | 379 k€ | 7,34 | 5 | 5 | 1/0 |  |
+| 21 | Sourou Kone | Midfielder | 0 | Ivory Coast | – | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 28 | Frank Junior Adjei | CDM,CM,CAM | 22 | Ghana | 1,2 M€ | 7,43 | 3 | 1 | 3/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Paulos Abraham | ST | 24 | Sweden | 1,7 M€ | 7,57 | 14 | 3 | 0/0 |  |
+| 9 | Victor Lind | LW,ST,RW,CAM | 23 | Denmark | 2,3 M€ | 7,95 | 9 | 11 | 1/0 |  |
+| 15 | Oliver Hagen | RW | 20 | Norway | 637 k€ | 6,54 | 0 | 0 | 0/0 |  |
+| 26 | Montader Madjed | RW,LW | 21 | Iraq | 2,1 M€ | 7,52 | 5 | 1 | 0/0 |  |

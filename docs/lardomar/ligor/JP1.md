@@ -38,6 +38,14 @@ Underlag: 4603 matcher, säsong 2012 – 2026/27. Marknad = stängningsodds utan
 | 65–75 % | 176 | 72,2 % | 68,9 % | +3,3 pe (1,0) | ingen effekt |
 | 75–100 % | 34 | 82,4 % | 78,3 % | +4,1 pe (0,6) | ingen effekt |
 
+## Kalibrering av oddsen (justeringsmodellen)
+
+g > 0 = favoriter vinner oftare än oddsen säger (skrällar överprissatta), h < 0 = hemmalag överprissatta, d > 0 = kryss underprissatta. Parametrarna är tränade före 2023/24. Kontroll = logloss-skillnad 2023/24– (negativ = bättre). Live används parametrar refittade på all data.
+
+| Bas | g (favoriter) | h (hemma) | d (kryss) | Kontroll | Används live |
+|---|---|---|---|---|---|
+| stängningsodds (sen körning, Stryktipset/Europatipset) | +0,038 | −0,064 | −0,105 | +0,0004 (z 0,3, n 984) | nej |
+
 ## Signaler mot marknaden
 
 Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (|z| ≥ 2,5 i träning och ≥ 2 i kontroll krävs). "Oddsrörelse" visar om signalen förutsäger hur oddsen rör sig från öppning till stängning, alltså om marknaden lär sig det före avspark.
@@ -49,6 +57,7 @@ Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (
 | Inbördes möten, poängskillnad | +0,006 (z 0,3, n 3428) | +0,007 (z 0,3, n 2634) | +0,003 (z 0,1, n 794) | – | – | +0,018 p | ingen effekt |
 | Inbördes möten, kryss mot förväntat | +0,035 (z 0,8, n 3428) | +0,008 (z 0,2, n 2634) | +0,145 (z 1,5, n 794) | – | – | +0,016 p | ingen effekt |
 | Vilodagar (hemma − borta, ligamatcher) | −0,005 (z −0,4, n 4413) | −0,006 (z −0,4, n 3460) | −0,003 (z −0,1, n 953) | – | – | −0,009 p | ingen effekt |
+| Bolagssnitt mot Pinnacle vid stängning | −0,470 (z −0,8, n 4503) | −0,786 (z −1,2, n 3609) | +0,564 (z 0,4, n 894) | – | – | −0,033 p | ingen effekt |
 
 ## Situationer
 
@@ -68,6 +77,33 @@ Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (
 ## Stryktipset och Europatipset
 
 Inga matcher från ligan i de sparade backtesten ännu.
+
+## Tabell nu (FotMob, 2026-09-28)
+
+| # | Lag | M | V | O | F | Mål | +/− | P |
+|---|---|---|---|---|---|---|---|---|
+| 1 | Vissel Kobe | 8 | 6 | 1 | 1 | 12-5 | 7 | 19 |
+| 2 | Kashiwa Reysol | 8 | 6 | 0 | 2 | 17-12 | 5 | 18 |
+| 3 | Sanfrecce Hiroshima | 8 | 5 | 2 | 1 | 20-6 | 14 | 17 |
+| 4 | Machida | 8 | 5 | 2 | 1 | 21-10 | 11 | 17 |
+| 5 | FC Tokyo | 8 | 5 | 2 | 1 | 14-8 | 6 | 17 |
+| 6 | Yokohama F. Marinos | 8 | 4 | 2 | 2 | 13-9 | 4 | 14 |
+| 7 | Kawasaki Frontale | 8 | 3 | 4 | 1 | 16-12 | 4 | 13 |
+| 8 | Kashima Antlers | 8 | 4 | 1 | 3 | 17-16 | 1 | 13 |
+| 9 | Okayama | 8 | 4 | 1 | 3 | 11-10 | 1 | 13 |
+| 10 | Urawa Reds | 8 | 4 | 0 | 4 | 16-18 | -2 | 12 |
+| 11 | Cerezo Osaka | 8 | 3 | 2 | 3 | 7-12 | -5 | 11 |
+| 12 | Shimizu S-Pulse | 8 | 3 | 1 | 4 | 6-8 | -2 | 10 |
+| 13 | Mito | 8 | 2 | 3 | 3 | 11-11 | 0 | 9 |
+| 14 | Kyoto | 8 | 2 | 2 | 4 | 11-15 | -4 | 8 |
+| 15 | V-Varen Nagasaki | 8 | 2 | 2 | 4 | 10-15 | -5 | 8 |
+| 16 | Gamba Osaka | 8 | 1 | 3 | 4 | 8-14 | -6 | 6 |
+| 17 | Nagoya Grampus | 8 | 2 | 0 | 6 | 7-14 | -7 | 6 |
+| 18 | Avispa Fukuoka | 8 | 1 | 1 | 6 | 9-12 | -3 | 4 |
+| 19 | FC Tokyo | 8 | 0 | 4 | 4 | 4-12 | -8 | 4 |
+| 20 | Chiba | 8 | 1 | 1 | 6 | 7-18 | -11 | 4 |
+
+Tabellhistorik (en rad per lag och dag sedan 2026-09-28): `data/ligor/JP1.json`.
 
 ## Lagfiler
 

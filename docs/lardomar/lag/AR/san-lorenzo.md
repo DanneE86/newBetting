@@ -72,3 +72,55 @@ Form (äldst → senast): FFVOFVOF · senaste match 2026-09-20
 | Ind. Rivadavia | 1 | 0-0-1 | 0–1 | −1,34 | −37 pe | 2024-10-27 0-1 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Rubén Insúa. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Gastón Hernández (skadad, åter Mid November 2026), Daniel Herrera (skadad, åter Mid October 2026), Nicolás Blanco (skadad, åter About 1-2 weeks), Ignacio Perruzzi (skadad, åter Early October 2026), Gonzalo Abrego (skadad, åter About 1-2 weeks), Martín Río (skadad, åter About 1-2 weeks), Nahuel Barrios (skadad, åter Out for season), Ezequiel Cerutti (skadad, åter Mid November 2026), Gustavo del Prete (skadad, åter About 1-2 weeks)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Mateo Clemente | GK | 24 | Argentina | 529 k€ | – | 0 | 0 | 0/0 |  |
+| 20 | Facundo Altamirano | GK | 30 | Argentina | 258 k€ | – | 0 | 0 | 0/0 |  |
+| 25 | José Devecchi | GK | 31 | Argentina | 251 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Danilo Arboleda | CB | 31 | Colombia | 376 k€ | – | 0 | 0 | 0/0 |  |
+| 3 | Teo Rodríguez Pagano | LB,LWB | 20 | Argentina | 937 k€ | – | 0 | 0 | 0/0 |  |
+| 6 | Mathías de Ritis | LB,LWB,LW | 23 | Uruguay | 940 k€ | – | 0 | 0 | 0/0 |  |
+| 16 | Guzmán Corujo | CB | 30 | Uruguay | 258 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | Emiliano Amor | CB | 31 | Syria | 259 k€ | – | 0 | 0 | 0/0 |  |
+| 23 | Gastón Hernández | CB | 28 | Argentina | 2,4 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid November 2026 |
+| 30 | Nahuel Arias | RB | 21 | Argentina | 628 k€ | – | 0 | 0 | 0/0 |  |
+| 32 | Ezequiel Herrera | RB,CB | 23 | Argentina | 2,2 M€ | – | 0 | 0 | 0/0 |  |
+| 35 | Alejo Córdoba | CB | 22 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 36 | Daniel Herrera | CB | 22 | Argentina | 788 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 42 | Franco Lorenzón | CB | 25 | Argentina | 356 k€ | – | 0 | 0 | 0/0 |  |
+| 53 | Ramiro Pedroza | Defender | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 54 | Nicolás Blanco | RWB | 19 | Argentina | – | – | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
+| | **Mittfältare** | | | | | | | | | |
+|  | Ignacio Zaballa | Midfielder | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 5 | Ignacio Perruzzi | CDM,CM | 21 | Argentina | 2,3 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 8 | Manuel Insaurralde | CDM,CM | 27 | Argentina | 592 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Facundo Gulli | CAM,RW,CDM,LM,RM,CM | 21 | Argentina | 1,8 M€ | – | 0 | 0 | 0/0 |  |
+| 11 | Matías Reali | LW,CAM,LM | 28 | Argentina | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 13 | Juan Rattalino | CDM | 22 | Argentina | 581 k€ | – | 0 | 0 | 0/0 |  |
+| 15 | Mauricio Cardillo | RWB | 23 | Argentina | 572 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Juan Pablo Álvarez | RM | 30 | Argentina | 450 k€ | – | 0 | 0 | 0/0 |  |
+| 24 | Nicolás Tripichio | CDM,CM,RWB,CAM | 30 | Argentina | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| 26 | Gonzalo Abrego | CM,CDM | 26 | Argentina | 911 k€ | – | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
+| 27 | Martín Río | CM | 25 | Argentina | 1,3 M€ | – | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
+| 28 | Nahuel Barrios | CAM,CDM,CM | 28 | Argentina | 461 k€ | – | 0 | 0 | 0/0 | skadad, åter Out for season |
+| 62 | Gonzalo Alassia | CM | 22 | Argentina | 256 k€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Ezequiel Cerutti | RW,ST | 34 | Argentina | 292 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid November 2026 |
+| 9 | Alexis Cuello | ST,CAM,LW | 26 | Argentina | 1,8 M€ | – | 0 | 0 | 0/0 |  |
+| 14 | Agustín Ladstatter | LW,RW | 21 | Argentina | 940 k€ | – | 0 | 0 | 0/0 |  |
+| 18 | Diego Herazo | ST | 30 | Colombia | 312 k€ | – | 0 | 0 | 0/0 |  |
+| 21 | Gustavo del Prete | LM | 30 | Argentina | 583 k€ | – | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
+| 22 | Branco Salinardi | ST | 19 | Argentina | 645 k€ | – | 0 | 0 | 0/0 |  |
+| 29 | Rodrigo Auzmendi | ST | 25 | Argentina | 2,1 M€ | – | 0 | 0 | 0/0 |  |
+| 38 | Facundo Farías | CAM,ST,RW | 24 | Argentina | 2,1 M€ | – | 0 | 0 | 0/0 |  |
+| 39 | Uriel Ojeda | RW | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 44 | Alan Salas | Attacker | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |

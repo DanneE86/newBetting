@@ -60,3 +60,50 @@ Form (äldst → senast): VOFVOOVO · senaste match 2026-09-20
 | Remo | 1 | 0-1-0 | 1–1 | −0,74 | +73 pe | 2026-05-10 1-1 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Abel Ferreira. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Jefté (skadad, åter Mid December 2026), Paulinho (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Carlos Miguel | GK | 27 | Brazil | 2,5 M€ | – | 0 | 0 | 0/0 |  |
+| 14 | Marcelo Lomba | GK | 39 | Brazil | 308 k€ | – | 0 | 0 | 0/0 |  |
+| 21 | Bruno | GK | 28 | Brazil | 185 k€ | – | 0 | 0 | 0/0 |  |
+| 73 | Luiz Fernando | Keeper | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Alexander Barboza | CB | 31 | Argentina | 1,9 M€ | – | 0 | 0 | 0/0 |  |
+| 3 | Bruno Fuchs | CB | 27 | Brazil | 3,2 M€ | – | 0 | 0 | 0/0 |  |
+| 4 | Agustín Giay | RB,RWB | 22 | Argentina | 10,1 M€ | – | 0 | 0 | 0/0 |  |
+| 6 | Jefté | LB | 22 | Brazil | 2,9 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid December 2026 |
+| 12 | Khellven | RB,RWB,LB | 25 | Brazil | 4,0 M€ | – | 0 | 0 | 0/0 |  |
+| 15 | Gustavo Gómez | CB | 33 | Paraguay | 2,6 M€ | – | 0 | 0 | 0/0 |  |
+| 22 | Joaquín Piquerez | LB,LWB | 28 | Uruguay | 10,7 M€ | – | 0 | 0 | 0/0 |  |
+| 26 | Murilo | CB | 29 | Brazil | 2,1 M€ | – | 0 | 0 | 0/0 |  |
+| 43 | Benedetti | CB | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 46 | Derick | Defender | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 53 | Luccas Ramon | Defender | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 56 | Arthur | LB | 21 | Brazil | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 8 | Andreas Pereira | CDM,CM,CAM | 30 | Brazil | 11,0 M€ | – | 0 | 0 | 0/0 |  |
+| 11 | Jhon Arias | LW,RW,CAM,CM,LM,RM | 29 | Colombia | 11,6 M€ | – | 0 | 0 | 0/0 |  |
+| 17 | Marlon Freitas | CDM,CM | 31 | Brazil | 2,1 M€ | – | 0 | 0 | 0/0 |  |
+| 18 | Mauricio | CAM,LW,RW,LM,ST,CM | 25 | Paraguay | 11,3 M€ | – | 0 | 0 | 0/0 |  |
+| 30 | Lucas Evangelista | CDM,LW,CM | 31 | Brazil | 2,2 M€ | – | 0 | 0 | 0/0 |  |
+| 32 | Emiliano Martínez | CDM,CB,CM | 27 | Uruguay | 5,5 M€ | – | 0 | 0 | 0/0 |  |
+| 48 | Larson | CDM | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 50 | Luis Pacheco | CDM,LB | 18 | Brazil | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 55 | Isaac | Midfielder | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 57 | João Paulo | Midfielder | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Felipe Anderson | LW,CAM,LM | 33 | Brazil | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 9 | Vitor Roque | ST | 21 | Brazil | 28,2 M€ | – | 0 | 0 | 0/0 |  |
+| 10 | Paulinho | ST | 26 | Brazil | 7,7 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 19 | Ramón Sosa | ST,RW,LW,CAM,LM | 27 | Paraguay | 7,7 M€ | – | 0 | 0 | 0/0 |  |
+| 29 | Miguel Bilong | Attacker | 18 | Cameroon | – | – | 0 | 0 | 0/0 |  |
+| 42 | José Manuel López | ST,CAM | 25 | Argentina | 16,6 M€ | – | 0 | 0 | 0/0 |  |
+| 49 | Juan Gabriel | Attacker | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 61 | Kauã | Attacker | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |

@@ -22,7 +22,7 @@ Form (äldst → senast): OFFFFOFV · senaste match 2026-09-20
 | Säsong | Liga | M | P/M | Mot marknaden (hemma / borta) | Kryss (odds) | Mål för–emot | xG för–emot | xP/M |
 |---|---|---|---|---|---|---|---|---|
 | 2022/23 | PT | 34 | 1,21 | −0,03 (−0,01 / −0,05) | 24 % (28 %) | 0,91–1,18 | 1,21–1,51* | 1,20 |
-| 2023/24 | PT | 34 | 1,12 | −0,03 (−0,46 / +0,39) | 24 % (27 %) | 1,12–1,47 | 1,15–1,55* | 1,12 |
+| 2023/24 | PT | 34 | 1,12 | −0,03 (−0,46 / +0,39) | 24 % (27 %) | 1,12–1,47 | 1,15–1,56* | 1,12 |
 | 2024/25 | PT | 34 | 1,32 | +0,17 (+0,30 / +0,03) | 26 % (27 %) | 1,15–1,29 | 1,06–1,61* | 1,05 |
 | 2025/26 | PT | 34 | 0,88 | −0,18 (−0,30 / −0,07) | 35 % (26 %) | 0,91–1,68 | 0,99–1,52* | 1,05 |
 | 2026/27 | PT | 7 | 0,57 | −0,20 (−0,69 / +0,16) | 14 % (23 %) | 0,43–2,29 | 1,04–1,82* | 0,95 |
@@ -57,3 +57,43 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | Datum | Spel | Match | Utfall | Folket på laget | Vår procent |
 |---|---|---|---|---|---|
 | 2025-12-28 | Europa 2535 | Casa Pia Lisbon - Vitória de Guimarães | X | 24 % | 30 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Filipe Coelho. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Patrick Sequeira | GK | 27 | Costa Rica | 1,8 M€ | – | 0 | 0 | 0/0 |  |
+| 22 | Daniel Azevedo | GK | 28 | Portugal | 292 k€ | – | 0 | 0 | 0/0 |  |
+| 31 | André Gomes | GK | 21 | Portugal | 2,4 M€ | 6,06 | 0 | 0 | 0/0 |  |
+| 95 | Ivan Mandić | GK | 23 | Croatia | 366 k€ | 6,73 | 0 | 0 | 2/0 |  |
+| | **Backar** | | | | | | | | | |
+| 3 | Khaly | CB | 22 | Angola | 541 k€ | 6,09 | 0 | 0 | 2/1 |  |
+| 4 | João Goulart | CB | 26 | Portugal | 859 k€ | 6,37 | 0 | 0 | 0/0 |  |
+| 18 | André Geraldes | CB,RB,LM | 35 | Portugal | 268 k€ | 6,37 | 0 | 0 | 1/0 |  |
+| 27 | Kaique Rocha | CB | 25 | Brazil | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 43 | David Sousa | CB | 25 | Brazil | 1,0 M€ | 7,25 | 0 | 0 | 3/0 |  |
+| 44 | Felipe Silva | CB | 24 | Brazil | 575 k€ | – | 0 | 0 | 0/0 |  |
+| 75 | Pedro Silva Rosas | LB,LM | 25 | Portugal | 381 k€ | 6,62 | 0 | 0 | 1/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Abdu Conté | LM,LB | 28 | Portugal | 529 k€ | 5,87 | 0 | 0 | 0/0 |  |
+| 8 | Gabi Pereira | CM,LM | 26 | Portugal | 360 k€ | 6,32 | 0 | 0 | 0/0 |  |
+| 11 | Mohamed El Boukammiri | RM,RW | 22 | Belgium | 1,2 M€ | 6,74 | 0 | 0 | 0/0 |  |
+| 16 | Selvi Clua | CM,CDM | 21 | Spain | 821 k€ | 7,13 | 1 | 0 | 0/0 |  |
+| 17 | Evans Maurin | RM | 25 | France | 393 k€ | 6,33 | 0 | 0 | 0/0 |  |
+| 24 | Seba Pérez | CM,CDM | 33 | Colombia | 339 k€ | 6,31 | 0 | 1 | 2/0 |  |
+| 59 | Abdu Dafe | CM | 18 | Guinea-Bissau | – | 5,80 | 0 | 0 | 0/0 |  |
+| 80 | Lawrence Ofori | CM,CDM | 28 | Ghana | 790 k€ | 6,52 | 0 | 1 | 0/0 |  |
+| 98 | João Pedro | CDM,CAM | 21 | Brazil | 2,2 M€ | 6,74 | 0 | 0 | 1/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Henrique Araújo | ST | 24 | Portugal | 919 k€ | 6,19 | 1 | 0 | 0/0 |  |
+| 10 | Rochinha | LW | 31 | Portugal | 285 k€ | 6,05 | 0 | 0 | 0/0 |  |
+| 19 | Kevin Prieto | RW,RM | 23 | Uruguay | 643 k€ | 6,38 | 0 | 0 | 0/0 |  |
+| 20 | Alassana Jatta | ST | 27 | The Gambia | 356 k€ | 6,31 | 0 | 0 | 2/0 |  |
+| 21 | Aymen Zouin | LW | 19 | Italy | 377 k€ | – | 0 | 0 | 0/0 |  |
+| 29 | Jérémy Livolant | RW,LW,CAM,RM,ST | 28 | France | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 70 | João Rego | LW,RW,CM,CAM | 21 | Portugal | – | 7,13 | 0 | 0 | 0/0 |  |
+| 77 | Benjamin Pauwels | LW | 21 | Belgium | 1,0 M€ | 6,70 | 1 | 0 | 0/0 |  |
+| 90 | Cassiano | ST | 37 | Brazil | 312 k€ | 6,05 | 0 | 0 | 0/0 |  |

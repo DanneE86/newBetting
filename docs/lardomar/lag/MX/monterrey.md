@@ -58,3 +58,41 @@ Form (äldst → senast): VFVVFFOV · senaste match 2026-09-20
 | Queretaro | 15 | 9-3-3 | 25–12 | +0,07 | −4 pe | 2026-03-05 4-0 (h) |
 
 Ligans test av inbördes möten mot marknaden: svag signal (inte bekräftad).
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Matías Almeyda. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Esteban Andrada | GK | 35 | Argentina | 394 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Luis Cárdenas | GK | 33 | Mexico | 637 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Ricardo Chávez | RB,RM | 31 | Mexico | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| 3 | Gerardo Arteaga | LB,RB | 28 | Mexico | 1,7 M€ | – | 0 | 0 | 0/0 |  |
+| 4 | Víctor Guzmán | CB | 24 | Mexico | 4,4 M€ | – | 0 | 0 | 0/0 |  |
+| 13 | Carlos Salcedo | CB | 32 | Mexico | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 14 | Érick Aguirre | RB | 29 | Mexico | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 19 | Alonso Aceves | CB,LB | 25 | Mexico | 2,0 M€ | – | 0 | 0 | 0/0 |  |
+| 21 | Luis Reyes | LB,CB,LWB | 35 | Mexico | 341 k€ | – | 0 | 0 | 0/0 |  |
+| 33 | Stefan Medina | CB,CDM,RB | 34 | Colombia | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 34 | César Bustos | CB | 21 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| 36 | Javier Casillas | RB | 25 | Mexico | 378 k€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Fidel Ambríz | CDM,CM | 23 | Mexico | 3,0 M€ | – | 0 | 0 | 0/0 |  |
+| 8 | Óliver Torres | CDM,CM,CAM,RW | 31 | Spain | 1,5 M€ | – | 0 | 0 | 0/0 |  |
+| 11 | Iker Fimbres | CDM,CAM,LW | 21 | Mexico | 3,1 M€ | – | 0 | 0 | 0/0 |  |
+| 17 | Jesús Corona | LW,CAM,RW,LM,RM | 33 | Mexico | 975 k€ | – | 0 | 0 | 0/0 |  |
+| 18 | César Garza | CDM,CM | 21 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| 25 | Orbelín Pineda | CM,CDM,CAM,RM | 30 | Mexico | 2,4 M€ | – | 0 | 0 | 0/0 |  |
+| 30 | Jorge Rodríguez | CDM,CM,RW,CB | 31 | Argentina | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| 246 | Omar Gálvez | LW | 20 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Lucas Ocampos | LW,CAM,RW | 32 | Argentina | 1,9 M€ | – | 0 | 0 | 0/0 |  |
+| 9 | Diego Rossi | ST,CAM,RW | 28 | Uruguay | 3,2 M€ | – | 0 | 0 | 0/0 |  |
+| 10 | Luca Orellano | RW,LW,RM | 26 | Argentina | 3,0 M€ | – | 0 | 0 | 0/0 |  |
+| 27 | Roberto de la Rosa | ST,LW,CAM | 26 | Mexico | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 32 | Uroš Djurdjevic | ST | 32 | Montenegro | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 99 | Hugo Cuypers | ST | 29 | Belgium | 3,9 M€ | – | 0 | 0 | 0/0 |  |
+| 194 | Cristian Reyes | RW | 20 | Mexico | – | – | 0 | 0 | 0/0 |  |

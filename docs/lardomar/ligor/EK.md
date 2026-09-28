@@ -38,6 +38,14 @@ Underlag: 4160 matcher, säsong 2012/13 – 2026/27. Marknad = stängningsodds u
 | 65–75 % | 203 | 71,9 % | 69,0 % | +3,0 pe (0,9) | ingen effekt |
 | 75–100 % | 32 | 81,3 % | 77,7 % | +3,5 pe (0,5) | ingen effekt |
 
+## Kalibrering av oddsen (justeringsmodellen)
+
+g > 0 = favoriter vinner oftare än oddsen säger (skrällar överprissatta), h < 0 = hemmalag överprissatta, d > 0 = kryss underprissatta. Parametrarna är tränade före 2023/24. Kontroll = logloss-skillnad 2023/24– (negativ = bättre). Live används parametrar refittade på all data.
+
+| Bas | g (favoriter) | h (hemma) | d (kryss) | Kontroll | Används live |
+|---|---|---|---|---|---|
+| stängningsodds (sen körning, Stryktipset/Europatipset) | −0,046 | +0,039 | −0,013 | −0,0006 (z −1,1, n 996) | nej |
+
 ## Signaler mot marknaden
 
 Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (|z| ≥ 2,5 i träning och ≥ 2 i kontroll krävs). "Oddsrörelse" visar om signalen förutsäger hur oddsen rör sig från öppning till stängning, alltså om marknaden lär sig det före avspark.
@@ -49,6 +57,7 @@ Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (
 | Inbördes möten, poängskillnad | −0,025 (z −1,1, n 2852) | −0,036 (z −1,4, n 2144) | +0,009 (z 0,2, n 708) | – | – | −0,065 p | ingen effekt |
 | Inbördes möten, kryss mot förväntat | +0,010 (z 0,2, n 2852) | −0,016 (z −0,3, n 2144) | +0,094 (z 0,9, n 708) | – | – | +0,005 p | ingen effekt |
 | Vilodagar (hemma − borta, ligamatcher) | +0,029 (z 2,5, n 3904) | +0,045 (z 3,2, n 2973) | +0,000 (z 0,0, n 931) | – | – | +0,115 p | svag signal (inte bekräftad) |
+| Bolagssnitt mot Pinnacle vid stängning | +0,754 (z 1,2, n 3887) | +0,849 (z 1,2, n 3163) | +0,287 (z 0,2, n 724) | – | – | +0,057 p | ingen effekt |
 
 ## Situationer
 
@@ -68,6 +77,31 @@ Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (
 ## Stryktipset och Europatipset
 
 Inga matcher från ligan i de sparade backtesten ännu.
+
+## Tabell nu (FotMob, 2026-09-28)
+
+| # | Lag | M | V | O | F | Mål | +/− | P |
+|---|---|---|---|---|---|---|---|---|
+| 1 | Gornik Zabrze | 9 | 7 | 1 | 1 | 16-8 | 8 | 22 |
+| 2 | Legia | 9 | 5 | 4 | 0 | 19-8 | 11 | 19 |
+| 3 | Lech Poznan | 8 | 6 | 1 | 1 | 17-7 | 10 | 19 |
+| 4 | Wisla | 9 | 5 | 2 | 2 | 17-12 | 5 | 17 |
+| 5 | Pogon Szczecin | 8 | 4 | 3 | 1 | 12-6 | 6 | 15 |
+| 6 | Korona Kielce | 9 | 4 | 3 | 2 | 12-10 | 2 | 15 |
+| 7 | Zaglebie | 9 | 4 | 3 | 2 | 11-10 | 1 | 15 |
+| 8 | Piast Gliwice | 9 | 4 | 1 | 4 | 16-15 | 1 | 13 |
+| 9 | GKS Katowice | 8 | 4 | 0 | 4 | 16-13 | 3 | 12 |
+| 10 | Jagiellonia | 8 | 4 | 0 | 4 | 12-13 | -1 | 12 |
+| 11 | Wisla Plock | 8 | 3 | 2 | 3 | 9-12 | -3 | 11 |
+| 12 | Widzew Lodz | 9 | 1 | 6 | 2 | 13-13 | 0 | 9 |
+| 13 | Cracovia | 9 | 2 | 2 | 5 | 9-14 | -5 | 8 |
+| 14 | Radomiak Radom | 9 | 2 | 2 | 5 | 7-20 | -13 | 8 |
+| 15 | Slask Wroclaw | 9 | 1 | 3 | 5 | 11-15 | -4 | 6 |
+| 16 | Motor Lublin | 9 | 1 | 3 | 5 | 9-15 | -6 | 6 |
+| 17 | Wieczysta Krakow | 8 | 1 | 2 | 5 | 11-17 | -6 | 5 |
+| 18 | Rakow | 9 | 1 | 0 | 8 | 12-21 | -9 | 3 |
+
+Tabellhistorik (en rad per lag och dag sedan 2026-09-28): `data/ligor/EK.json`.
 
 ## Lagfiler
 

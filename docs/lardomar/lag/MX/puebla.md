@@ -60,3 +60,41 @@ Form (äldst → senast): FOVVFVFO · senaste match 2026-09-19
 | Atlante | 1 | 0-1-0 | 1–1 | −0,45 | +72 pe | 2026-09-19 1-1 (h) |
 
 Ligans test av inbördes möten mot marknaden: svag signal (inte bekräftad).
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Gerardo Espinoza. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Eduardo Navarro (osäker), Kevin Velasco (osäker), Eduardo Mustre (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 28 | Ricardo Gutiérrez | GK | 29 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| 33 | Jesús Rodríguez | GK | 33 | Mexico | 326 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Ángel Leyva | CB | 19 | Mexico | 845 k€ | – | 0 | 0 | 0/0 |  |
+| 4 | Juan Vargas | CB | 31 | Costa Rica | 878 k€ | – | 0 | 0 | 0/0 |  |
+| 5 | Facundo Almada | CB | 28 | Argentina | 960 k€ | – | 0 | 0 | 0/0 |  |
+| 7 | Fernando Monárrez | LB,LWB | 27 | Mexico | 709 k€ | – | 0 | 0 | 0/0 |  |
+| 12 | Iker Moreno | RB,RWB | 23 | Mexico | 721 k€ | – | 0 | 0 | 0/0 |  |
+| 13 | Eduardo Navarro | CB | 22 | Mexico | 1,4 M€ | – | 0 | 0 | 0/0 | osäker |
+| 15 | Óscar Villa | LWB,LB | 25 | Mexico | 324 k€ | – | 0 | 0 | 0/0 |  |
+| 20 | José Pachuca | CB,RB | 21 | Mexico | 1,8 M€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 3 | Alberto Herrera | CDM | 25 | Mexico | 477 k€ | – | 0 | 0 | 0/0 |  |
+| 8 | Omar Moreno | RM,CAM,CM | 21 | Mexico | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 10 | Mathías Tomás | CAM,RW,CM | 25 | Uruguay | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 16 | Alonso Ramírez | CDM,CM,CAM | 25 | Mexico | 458 k€ | – | 0 | 0 | 0/0 |  |
+| 17 | Raúl Castillo | ST | 25 | Mexico | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 21 | Sergio Sanabria | CDM,CM | 27 | Paraguay | 389 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Carlos Baltazar | CAM,LW,LM | 29 | Mexico | 652 k€ | – | 0 | 0 | 0/0 |  |
+| 24 | Alejandro Organista | CDM,CAM,CM | 26 | Mexico | 750 k€ | – | 0 | 0 | 0/0 |  |
+| 25 | Heriberto Jurado | LM | 21 | Mexico | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 26 | Kevin Velasco | RW,CAM,CM,RM | 29 | Colombia | 1,0 M€ | – | 0 | 0 | 0/0 | osäker |
+| 34 | Lucas Camilo | RB | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Luifer Hernández | ST,RW | 25 | Venezuela | 648 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | Ignacio Maestro Puch | ST | 23 | Argentina | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 27 | Brayan Garnica | RW,RM | 30 | Mexico | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 29 | Eduardo Mustre | ST | 23 | Mexico | 156 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |

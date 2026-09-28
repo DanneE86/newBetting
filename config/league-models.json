@@ -115,19 +115,6 @@
         "rpsMarket": 0.2177
       }
     },
-    "CHI": {
-      "params": {
-        "xi": 0.0025,
-        "shrink": 5,
-        "prior": true,
-        "drawK": 1,
-        "earlyMarket": false
-      },
-      "rpsDefault": 0.2188,
-      "rpsTuned": 0.2176,
-      "n": 373,
-      "early": null
-    },
     "COL": {
       "params": {
         "xi": 0.0015,
@@ -268,45 +255,6 @@
       "rpsDefault": 0.2187,
       "rpsTuned": 0.2163,
       "n": 460,
-      "early": null
-    },
-    "JP2": {
-      "params": {
-        "xi": 0.004,
-        "shrink": 5,
-        "prior": true,
-        "drawK": 1.1,
-        "earlyMarket": false
-      },
-      "rpsDefault": 0.2351,
-      "rpsTuned": 0.2302,
-      "n": 770,
-      "early": null
-    },
-    "JP3": {
-      "params": {
-        "xi": 0.0015,
-        "shrink": 5,
-        "prior": true,
-        "drawK": 1,
-        "earlyMarket": false
-      },
-      "rpsDefault": 0.2283,
-      "rpsTuned": 0.2248,
-      "n": 404,
-      "early": null
-    },
-    "KR": {
-      "params": {
-        "xi": 0.004,
-        "shrink": 5,
-        "prior": true,
-        "drawK": 1.1,
-        "earlyMarket": false
-      },
-      "rpsDefault": 0.226,
-      "rpsTuned": 0.2231,
-      "n": 358,
       "early": null
     },
     "L1": {

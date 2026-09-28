@@ -58,3 +58,43 @@ Form (äldst → senast): VOFVVVVF · senaste match 2026-09-19
 | Start | 4 | 3-1-0 | 12–4 | +0,49 | +3 pe | 2026-04-19 1-1 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Sindre Tjelmeland. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Mads Kikkenborg (skadad, åter Out for season), Sivert Hansen (skadad, åter Late October 2026), Halldor Stenevik (skadad, åter Late October 2026), Eirik Haugan (skadad, åter Early October 2026), Birk Risa (osäker), Vebjørn Hoff (skadad, åter Out for season), Eirik Hestad (skadad, åter Early October 2026), Seydina Diop (skadad, åter Late October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Mads Kikkenborg | GK | 26 | Denmark | 324 k€ | 6,75 | 0 | 1 | 0/0 | skadad, åter Out for season |
+| 12 | Peder Hoel Lervik | GK | 21 | Norway | 297 k€ | 4,87 | 0 | 0 | 0/0 |  |
+| 22 | Albert Posiadała | GK | 23 | Poland | 1,0 M€ | 6,70 | 0 | 1 | 2/0 |  |
+| | **Backar** | | | | | | | | | |
+| 4 | Sivert Hansen | CB | 24 | Norway | 1,1 M€ | 7,30 | 0 | 2 | 2/0 | skadad, åter Late October 2026 |
+| 8 | Mathias Fjørtoft Løvik | LB,LM,RB | 22 | Norway | 2,8 M€ | 6,24 | 0 | 0 | 3/0 |  |
+| 18 | Halldor Stenevik | RB | 26 | Norway | 576 k€ | 7,22 | 0 | 1 | 1/0 | skadad, åter Late October 2026 |
+| 19 | Eirik Haugan | CB | 29 | Norway | 446 k€ | 6,55 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 25 | Martin Linnes | RB,LB | 35 | Norway | 193 k€ | 6,93 | 1 | 1 | 1/0 |  |
+| 26 | Samukele Kabini | LB | 22 | South Africa | 2,1 M€ | 6,96 | 1 | 1 | 2/2 |  |
+| 27 | Fredrik Kristensen Dahl | LB,CB | 27 | Norway | 470 k€ | 6,60 | 0 | 0 | 0/0 |  |
+| 33 | Birk Risa | CB | 28 | Norway | 1,2 M€ | 6,93 | 0 | 0 | 1/0 | osäker |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Niklas Ødegård | CAM,CM,CB,CDM | 22 | Norway | 856 k€ | 6,65 | 0 | 1 | 5/0 |  |
+| 10 | Emil Breivik | CDM,CAM,ST,CM | 26 | Norway | 2,4 M€ | 7,49 | 7 | 8 | 3/0 |  |
+| 15 | Vebjørn Hoff | CM,CDM | 30 | Norway | 233 k€ | 6,85 | 1 | 0 | 0/0 | skadad, åter Out for season |
+| 17 | Mats Møller Dæhli | CDM,CM | 31 | Norway | 642 k€ | 7,05 | 0 | 0 | 1/0 |  |
+| 23 | Sondre Milian Granaas | CAM,LW | 20 | Norway | 1,8 M€ | 7,56 | 3 | 4 | 4/0 |  |
+| 28 | Viktor Bender | CM | 19 | Denmark | – | 6,49 | 0 | 1 | 1/0 |  |
+| 30 | Daniel Daga | CDM | 19 | Nigeria | – | 7,37 | 2 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Jonathan Fugelsnes | Attacker | 18 | Norway | – | – | 0 | 0 | 0/0 |  |
+| 5 | Eirik Hestad | RW,RM | 31 | Norway | 341 k€ | 7,72 | 8 | 2 | 7/0 | skadad, åter Early October 2026 |
+| 9 | Jalal Abdullai | ST | 21 | Ghana | 2,0 M€ | 6,86 | 3 | 3 | 3/0 |  |
+| 11 | Caleb Zady Sery | LW,LM,RW | 26 | Ivory Coast | 1,2 M€ | 6,87 | 1 | 1 | 0/0 |  |
+| 16 | Sander Hestetun Kilen | LW,RW | 21 | Norway | 1,7 M€ | 6,88 | 2 | 2 | 2/0 |  |
+| 20 | Kristian Hemmingsen Lonebu | ST | 20 | Norway | 1,0 M€ | 6,76 | 7 | 1 | 0/0 |  |
+| 21 | Oskar Spiten-Nysæter | LW,LM | 19 | Norway | 4,3 M€ | 7,03 | 3 | 1 | 2/0 |  |
+| 24 | Trent Koné-Doherty | LW,RW,ST,LM | 20 | Ireland | 788 k€ | 6,76 | 6 | 1 | 0/0 |  |
+| 29 | Seydina Diop | RW,ST,RM | 21 | Senegal | 553 k€ | 7,20 | 1 | 0 | 0/0 | skadad, åter Late October 2026 |

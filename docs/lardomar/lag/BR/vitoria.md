@@ -54,3 +54,64 @@ Form (äldst → senast): FFVFFVOF · senaste match 2026-09-20
 | Coritiba | 1 | 1-0-0 | 4–1 | +1,41 | −31 pe | 2026-05-02 4-1 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Jair Ventura. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Camutanga (skadad, åter Mid October 2026), Riccieli (skadad, åter Mid October 2026), Ramon (skadad, åter Out for season), Edu (skadad, åter Early October 2026), Nathan Mendes (skadad, åter Out for season), Dudu (skadad, åter Out for season), Gabriel Baralhas (osäker), Ignacio Laquintana (skadad, åter About 1-2 weeks), Anderson Pato (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Lucas Arcanjo | GK | 28 | Brazil | 2,0 M€ | – | 0 | 0 | 0/0 |  |
+| 35 | Fintelman | Keeper | 25 | Brazil | 517 k€ | – | 0 | 0 | 0/0 |  |
+| 71 | Yuri Sena | Keeper | 25 | Brazil | 429 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Guilherme Inácio | Defender | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 2 | Emanuel Brítez | CB,RB | 34 | Argentina | 389 k€ | – | 0 | 0 | 0/0 |  |
+| 3 | Darlan | Defender | 23 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 4 | Camutanga | CB | 33 | Brazil | 322 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 5 | Riccieli | CB | 28 | Brazil | 888 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 13 | Ramon | LB,LWB,LM | 25 | Brazil | 1,9 M€ | – | 0 | 0 | 0/0 | skadad, åter Out for season |
+| 18 | Kauan | Defender | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 25 | Cacá | CB,RB | 27 | Brazil | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 26 | Edenilson | RB | 21 | Brazil | 942 k€ | – | 0 | 0 | 0/0 |  |
+| 36 | Luan Cândido | CB,LB | 25 | Brazil | 1,9 M€ | – | 0 | 0 | 0/0 |  |
+| 40 | Hiago Costa | Defender | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 43 | Edu | CB | 26 | Brazil | 1,2 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 45 | Nathan Mendes | RB | 24 | Brazil | 1,6 M€ | – | 0 | 0 | 0/0 | skadad, åter Out for season |
+| 48 | Ivan | Defender | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 59 | Gean | Defender | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 69 | Wanderson | Defender | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 70 | Fabiano Souza | RB,RWB | 26 | Brazil | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 83 | Jamerson | LB,RB | 28 | Brazil | 424 k€ | – | 0 | 0 | 0/0 |  |
+| 98 | Mateus Silva | RWB,RM,RB | 27 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 8 | Tomás Pochettino | CAM,LW,LM,RW | 30 | Argentina | 2,1 M€ | – | 0 | 0 | 0/0 |  |
+| 15 | Walace | CDM | 31 | Brazil | 1,7 M€ | – | 0 | 0 | 0/0 |  |
+| 16 | Rúben Ismael | CDM | 27 | Portugal | 938 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | Kike Saverio | RW | 27 | Ecuador | 216 k€ | – | 0 | 0 | 0/0 |  |
+| 20 | Lucas Silva | LM | 27 | Brazil | 329 k€ | – | 0 | 0 | 0/0 |  |
+| 21 | Dudu | CM | 27 | Brazil | – | – | 0 | 0 | 0/0 | skadad, åter Out for season |
+| 32 | Emmanuel Martínez | CM,CAM,CDM | 32 | Argentina | 932 k€ | – | 0 | 0 | 0/0 |  |
+| 41 | Wendell Sacramento | CDM | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 44 | Gabriel Baralhas | CM,CDM | 27 | Brazil | 1,8 M€ | – | 0 | 0 | 0/0 | osäker |
+| 46 | Alejandro Almaraz | CM | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 52 | Lucas Lohan | Midfielder | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 65 | Nicolas Celis | Midfielder | 19 | Colombia | – | – | 0 | 0 | 0/0 |  |
+| 88 | Zé Vitor | CM,CDM,CAM | 26 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 95 | Caíque Gonçalves | CM,CDM,CB,CAM | 30 | Brazil | 680 k€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Ignacio Laquintana | RW | 27 | Uruguay | 946 k€ | – | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
+| 7 | Marinho | RW | 36 | Brazil | 299 k€ | – | 0 | 0 | 0/0 |  |
+| 9 | Alex Bruno | ST | 27 | Brazil | 305 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Matheuzinho | LW,CAM,RM,ST,RW | 28 | Brazil | 2,0 M€ | – | 0 | 0 | 0/0 |  |
+| 11 | Osvaldo | LW | 39 | Brazil | 327 k€ | – | 0 | 0 | 0/0 |  |
+| 12 | Diego Tarzia | LW | 23 | Argentina | 2,0 M€ | – | 0 | 0 | 0/0 |  |
+| 23 | Fabrício | ST | 25 | Brazil | 630 k€ | – | 0 | 0 | 0/0 |  |
+| 28 | Anderson Pato | Attacker | 24 | Brazil | – | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 33 | Erick | RW,RM,RWB,ST,CAM,LW | 28 | Brazil | 1,9 M€ | – | 0 | 0 | 0/0 |  |
+| 49 | Marquinhos | Attacker | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 79 | Renato Kayzer | ST,LW | 30 | Brazil | 775 k€ | – | 0 | 0 | 0/0 |  |
+| 91 | Renê | ST | 22 | Brazil | – | – | 0 | 0 | 0/0 |  |

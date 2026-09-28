@@ -39,3 +39,46 @@ Form (äldst → senast): OVOFOOFO · senaste match 2026-09-19
 | Toluca | 1 | 0-1-0 | 0–0 | +0,22 | +77 pe | 2026-08-16 0-0 (h) |
 
 Ligans test av inbördes möten mot marknaden: svag signal (inte bekräftad).
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Miguel Herrera. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Hardy Meza (skadad, åter Mid March 2027)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Óscar Jiménez | GK | 37 | Mexico | 238 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Roberto Barragán | GK | 22 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| 26 | David Ospina | GK | 38 | Colombia | 244 k€ | – | 0 | 0 | 0/0 |  |
+| 33 | Jordan García | GK | 21 | Colombia | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 3 | Gustavo Sánchez | CB | 26 | Mexico | 593 k€ | – | 0 | 0 | 0/0 |  |
+| 4 | Eduardo Tercero | CB | 30 | Mexico | 134 k€ | – | 0 | 0 | 0/0 |  |
+| 6 | Nico Carrera | CB | 24 | USA | 340 k€ | – | 0 | 0 | 0/0 |  |
+| 14 | Cristóbal Alfaro | CB | 19 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| 27 | Armando Escobar | CB,LWB | 33 | Mexico | 136 k€ | – | 0 | 0 | 0/0 |  |
+| 29 | Walter Portales | RWB,LWB | 22 | USA | 325 k€ | – | 0 | 0 | 0/0 |  |
+| 32 | Diogo Bagüí | CB | 21 | Ecuador | – | – | 0 | 0 | 0/0 |  |
+| 34 | Edgar Jiménez | LWB,LB | 25 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| 44 | Aaron Quirós | CB | 24 | Argentina | 1,4 M€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Hardy Meza | CDM | 26 | Mexico | 431 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid March 2027 |
+| 8 | Eugenio Pizzuto | CM | 24 | Mexico | 209 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Octavio Vázquez | CM | 21 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| 13 | Maximiliano García | CDM | 26 | Mexico | 297 k€ | – | 0 | 0 | 0/0 |  |
+| 16 | Daniel González | CM | 21 | Mexico | 187 k€ | – | 0 | 0 | 0/0 |  |
+| 17 | Leonardo Mejía | CM | 25 | Mexico | 179 k€ | – | 0 | 0 | 0/0 |  |
+| 18 | Christian Bermúdez | CAM | 39 | Mexico | 120 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | Luis Calzadilla | CM,LW | 26 | Mexico | 387 k€ | – | 0 | 0 | 0/0 |  |
+| 21 | Javier Ibarra | CAM | 28 | Mexico | 106 k€ | – | 0 | 0 | 0/0 |  |
+| 25 | Martín Fernández | CM,CDM | 25 | Uruguay | 323 k€ | – | 0 | 0 | 0/0 |  |
+| 37 | Walter Clar | LWB,LB,LM | 32 | Paraguay | 317 k€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Jhojan Julio | ST,RM,LM,RW | 28 | Ecuador | 587 k€ | – | 0 | 0 | 0/0 |  |
+| 9 | Luis Puente | ST | 23 | Mexico | 654 k€ | – | 0 | 0 | 0/0 |  |
+| 11 | Joaquín Moxica | ST | 20 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| 15 | Jairón Charcopa | RW | 22 | Ecuador | 220 k€ | – | 0 | 0 | 0/0 |  |
+| 30 | Martín Sarrafiore | LW,CM,CAM,RW | 29 | Argentina | 621 k€ | – | 0 | 0 | 0/0 |  |
+| 184 | Rubén Coubert | Attacker | 22 | Mexico | – | – | 0 | 0 | 0/0 |  |

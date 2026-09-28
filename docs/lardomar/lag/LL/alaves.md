@@ -5,6 +5,7 @@ Genererad 2026-09-28. Ligans lärdomar: [LL](../../ligor/LL.md). "Mot marknaden"
 ## I korthet
 
 - Stark historik mot Osasuna (−0,67 p/match mot marknaden, 13 möten), Vallecano (−0,59 p/match mot marknaden, 10 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Utan Lucas Boyé (13 % av anfallet): 1,33 poäng per match mot 1,15 med (3 mot 80 matcher), mot marknaden +0,35 mot −0,07.
 - På Stryktipset/Europatipset streckas lagets vinst ×0,85 av vår sannolikhet (11 matcher). Folket underspelar laget: dess vinst ger streckvärde.
 
 ## Nuläge (senaste 8 ligamatcher)
@@ -13,8 +14,8 @@ Form (äldst → senast): FVOVVFFO · senaste match 2026-09-19
 
 | Mått | Värde |
 |---|---|
-| Tur (poäng − xP per match) | −0,07 |
-| xG-målskillnad − målskillnad | −0,44 |
+| Tur (poäng − xP per match) | −0,22 |
+| xG-målskillnad − målskillnad | −0,11 |
 | Poäng mot marknaden per match | −0,03 |
 
 ## Säsonger
@@ -30,9 +31,24 @@ Form (äldst → senast): FVOVVFFO · senaste match 2026-09-19
 | 2023/24 | LL | 38 | 1,21 | +0,06 (+0,22 / −0,10) | 26 % (28 %) | 0,95–1,21 | 1,37–1,37 | 1,34 |
 | 2024/25 | LL | 38 | 1,11 | −0,11 (−0,19 / −0,02) | 32 % (29 %) | 1,00–1,26 | 1,22–1,35 | 1,32 |
 | 2025/26 | LL | 38 | 1,13 | −0,07 (+0,03 / −0,17) | 26 % (29 %) | 1,16–1,47 | 1,41–1,39 | 1,39 |
-| 2026/27 | LL | 7 | 1,57 | +0,37 (+0,68 / −0,05) | 29 % (29 %) | 1,57–0,86 | 1,44–1,38* | 1,45 |
+| 2026/27 | LL | 7 | 1,57 | +0,37 (+0,68 / −0,05) | 29 % (29 %) | 1,57–0,86 | 1,52–1,09 | 1,62 |
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+
+## Nyckelspelare (Understat, 2024/25–)
+
+Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
+
+| Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
+|---|---|---|---|---|
+| Antonio Martínez | 17 % | 2 / 81 | 1,00 / 1,16 | +0,32 / −0,06 |
+| Lucas Boyé | 13 % | 3 / 80 | 1,33 / 1,15 | +0,35 / −0,07 |
+| Ángel Pérez | 12 % | 0 / 83 | – / 1,16 | – / −0,05 |
+| Abderrahmane Rebbach | 5 % | 2 / 81 | 1,00 / 1,16 | +0,08 / −0,05 |
+| Pablo Ibáñez | 5 % | 0 / 83 | – / 1,16 | – / −0,05 |
+| Carles Aleñá | 4 % | 1 / 82 | 0,00 / 1,17 | −1,62 / −0,03 |
+
+Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -74,3 +90,47 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-12-14 | Europa 2531 | Alavés - Real Madrid | 2 | 11 % | 18 % |
 | 2025-11-02 | Europa 2519 | Alavés - Espanyol | 1 ✓ | 41 % | 39 % |
 | 2025-09-24 | Europa 2508 | Getafe - Alavés | X | 18 % | 25 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Quique Sánchez Flores. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Facundo Garcés (skadad, åter Out for season), Mikel Rodríguez (skadad, åter Out for season)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Antonio Sivera | GK | 30 | Spain | 3,1 M€ | 7,52 | 0 | 1 | 1/0 |  |
+| 13 | Adrián Rodriguez | GK | 25 | Spain | 399 k€ | – | 0 | 0 | 0/0 |  |
+| 31 | Grégoire Świderski | Keeper | 20 | Canada | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Nicolás Valentini | CB | 25 | Argentina | 2,5 M€ | 6,53 | 0 | 0 | 1/0 |  |
+| 3 | Youssef Enríquez | LB,LM | 20 | Morocco | – | 6,52 | 0 | 0 | 0/0 |  |
+| 5 | Facundo Garcés | CB | 27 | Malaysia | 1,7 M€ | – | 0 | 0 | 0/0 | skadad, åter Out for season |
+| 12 | Hugo Novoa | RWB,RB | 23 | Spain | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 14 | Nahuel Tenaglia | CB,RB | 30 | Argentina | 2,3 M€ | 7,04 | 1 | 0 | 2/0 |  |
+| 16 | Ville Koski | CB | 24 | Finland | 1,4 M€ | 6,93 | 1 | 0 | 0/0 |  |
+| 17 | Jonny Otto | RB,CB,LB | 32 | Spain | 1,2 M€ | 7,16 | 0 | 0 | 0/0 |  |
+| 23 | Carlos Protesoni | CB | 28 | Uruguay | 973 k€ | 6,50 | 0 | 0 | 0/0 |  |
+| 27 | Xanet Oláiz | Defender | 21 | Spain | – | 6,15 | 0 | 0 | 0/0 |  |
+| 30 | Carlos Ballestero | RB | 22 | Spain | 210 k€ | – | 0 | 0 | 0/0 |  |
+| 36 | Paco Sanz | Defender | 21 | Spain | 352 k€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Tomás Mendes | CM | 21 | Spain | – | – | 0 | 0 | 0/0 |  |
+| 4 | Denis Suárez | CM,CAM | 32 | Spain | 662 k€ | 6,72 | 0 | 0 | 1/0 |  |
+| 6 | Ander Guevara | CM | 29 | Spain | 1,5 M€ | 7,35 | 0 | 0 | 0/0 |  |
+| 7 | Ángel Pérez | RM,RWB,RW,LW,RB | 24 | Spain | 1,6 M€ | 7,19 | 0 | 3 | 0/0 |  |
+| 8 | Antonio Blanco | CM,CDM | 26 | Spain | 7,0 M€ | 6,90 | 0 | 0 | 3/0 |  |
+| 10 | Carles Aleñá | LM,LW,CM | 28 | Spain | 2,3 M€ | 6,71 | 0 | 1 | 0/0 |  |
+| 18 | Mikel Rodríguez | CM,LM,CDM,LW,CAM | 24 | Spain | 732 k€ | 7,33 | 1 | 0 | 0/0 | skadad, åter Out for season |
+| 19 | Pablo Ibánez | CM,CAM,CDM | 28 | Spain | 2,8 M€ | 7,03 | 1 | 0 | 1/0 |  |
+| 21 | Abderrahman Rebbach | LM,LWB,LW | 28 | Algeria | 1,9 M€ | 6,92 | 0 | 0 | 3/0 |  |
+| 24 | Selu Diallo | CDM,CAM,CM,ST | 22 | Spain | 620 k€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Mariano Díaz | ST | 33 | Dominican Republic | 325 k€ | 7,04 | 3 | 3 | 2/0 |  |
+| 11 | Toni Martínez | ST | 29 | Spain | 2,9 M€ | 6,55 | 0 | 0 | 0/0 |  |
+| 15 | Lucas Boyé | ST | 30 | Argentina | 3,5 M€ | 7,24 | 4 | 0 | 0/0 |  |
+| 20 | Aitor Mañas | ST | 23 | Spain | – | 6,51 | 0 | 0 | 0/0 |  |
+| 22 | Miguel Rodríguez | RW,RM,ST | 23 | Spain | 3,9 M€ | – | 0 | 0 | 0/0 |  |
+| 28 | Lander Pinillos | Attacker | 22 | Spain | 223 k€ | – | 0 | 0 | 0/0 |  |
+| 29 | Izei Hernández | Attacker | 19 | Spain | – | – | 0 | 0 | 0/0 |  |

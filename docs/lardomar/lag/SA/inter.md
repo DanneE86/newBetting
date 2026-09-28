@@ -4,6 +4,8 @@ Genererad 2026-09-28. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden"
 
 ## I korthet
 
+- Utan Lautaro Martínez (14 % av anfallet): 2,00 poäng per match mot 2,26 med (9 mot 72 matcher), mot marknaden +0,04 mot +0,14.
+- Utan Marcus Thuram (12 % av anfallet): 1,90 poäng per match mot 2,28 med (10 mot 71 matcher), mot marknaden −0,13 mot +0,16.
 - På Stryktipset/Europatipset streckas lagets vinst ×1,13 av vår sannolikhet (17 matcher). Folket överspelar laget: garderingar mot det ger mer i utdelning.
 
 ## Nuläge (senaste 8 ligamatcher)
@@ -12,8 +14,8 @@ Form (äldst → senast): VOOVVVVO · senaste match 2026-09-19
 
 | Mått | Värde |
 |---|---|
-| Tur (poäng − xP per match) | +0,21 |
-| xG-målskillnad − målskillnad | −0,05 |
+| Tur (poäng − xP per match) | +0,17 |
+| xG-målskillnad − målskillnad | +0,16 |
 | Poäng mot marknaden per match | +0,20 |
 
 ## Säsonger
@@ -29,9 +31,22 @@ Form (äldst → senast): VOOVVVVO · senaste match 2026-09-19
 | 2023/24 | SA | 38 | 2,47 | +0,31 (+0,14 / +0,48) | 18 % (21 %) | 2,34–0,58 | 2,26–0,88 | 2,10 |
 | 2024/25 | SA | 38 | 2,13 | +0,05 (+0,02 / +0,07) | 24 % (22 %) | 2,08–0,92 | 2,02–1,12 | 1,92 |
 | 2025/26 | SA | 38 | 2,29 | +0,15 (+0,12 / +0,17) | 16 % (22 %) | 2,34–0,92 | 2,29–0,94 | 2,10 |
-| 2026/27 | SA | 5 | 2,60 | +0,57 (+0,64 / +0,46) | 20 % (19 %) | 3,00–1,60 | 2,55–1,28* | 2,06 |
+| 2026/27 | SA | 5 | 2,60 | +0,57 (+0,64 / +0,46) | 20 % (19 %) | 3,00–1,60 | 3,11–1,49 | 2,13 |
 
-\* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+## Nyckelspelare (Understat, 2024/25–)
+
+Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
+
+| Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
+|---|---|---|---|---|
+| Lautaro Martínez | 14 % | 9 / 72 | 2,00 / 2,26 | +0,04 / +0,14 |
+| Federico Dimarco | 12 % | 2 / 79 | 3,00 / 2,22 | +0,88 / +0,11 |
+| Marcus Thuram | 12 % | 10 / 71 | 1,90 / 2,28 | −0,13 / +0,16 |
+| Francesco Pio Esposito | 7 % | 0 / 81 | – / 2,23 | – / +0,13 |
+| Nicolò Barella | 7 % | 4 / 77 | 3,00 / 2,19 | +0,55 / +0,10 |
+| Henrikh Mkhitaryan | 5 % | 7 / 74 | 2,29 / 2,23 | −0,02 / +0,14 |
+
+Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -80,3 +95,41 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-11-23 | Europa 2525 | Inter - Milan | 2 | 48 % | 47 % |
 | 2025-11-09 | Europa 2521 | Inter - Lazio | 1 ✓ | 82 % | 72 % |
 | 2025-10-29 | Europa 2518 | Inter - Fiorentina | 1 ✓ | 82 % | 70 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Cristian Chivu. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** John Stones (skadad, åter Mid October 2026), Hakan Çalhanoglu (skadad, åter Mid October 2026), Federico Dimarco (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Josep Martínez | GK | 28 | Spain | 6,9 M€ | 6,70 | 0 | 0 | 0/0 |  |
+| 12 | Raffaele Di Gennaro | Keeper | 32 | Italy | 244 k€ | – | 0 | 0 | 0/0 |  |
+| 49 | Ivan Provedel | GK | 32 | Italy | 2,4 M€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 6 | John Stones | CB | 32 | England | 9,6 M€ | 6,55 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 25 | Manuel Akanji | CB | 31 | Switzerland | 13,2 M€ | 7,39 | 0 | 1 | 2/0 |  |
+| 28 | Benjamin Pavard | CB,RB | 30 | France | 12,6 M€ | 6,83 | 0 | 0 | 0/0 |  |
+| 30 | Carlos Augusto | CB,LM,RM | 27 | Brazil | 18,7 M€ | 7,41 | 1 | 1 | 0/0 |  |
+| 31 | Yann Aurel Bisseck | CB | 25 | Germany | 29,8 M€ | 7,88 | 1 | 1 | 0/0 |  |
+| 95 | Alessandro Bastoni | CB | 27 | Italy | 52,1 M€ | 7,21 | 0 | 0 | 1/0 |  |
+| 99 | Djed Spence | LB,RB,LM,LWB | 26 | England | 28,0 M€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Aleksandar Stanković | CDM,CM,CAM | 21 | Serbia | 16,4 M€ | – | 0 | 0 | 0/0 |  |
+| 7 | Piotr Zieliński | CM,CDM | 32 | Poland | 5,2 M€ | 7,29 | 1 | 1 | 0/0 |  |
+| 8 | Petar Sučić | CM,CAM,CDM | 22 | Croatia | 25,5 M€ | 6,90 | 0 | 0 | 0/0 |  |
+| 11 | Luis Henrique | RM,LM | 24 | Brazil | 17,3 M€ | 6,65 | 0 | 0 | 0/0 |  |
+| 17 | Andy Diouf | RM,CM | 23 | France | 15,1 M€ | 7,79 | 0 | 3 | 0/0 |  |
+| 20 | Hakan Çalhanoglu | CM,CDM | 32 | Turkiye | 8,4 M€ | 7,70 | 2 | 0 | 1/0 | skadad, åter Mid October 2026 |
+| 21 | Curtis Jones | CDM,RB,CAM,CM | 25 | England | 30,5 M€ | 6,75 | 0 | 0 | 0/0 |  |
+| 22 | Henrikh Mkhitaryan | CM | 37 | Armenia | 2,0 M€ | 7,06 | 0 | 0 | 1/0 |  |
+| 23 | Nicolò Barella | CM,CAM | 29 | Italy | 42,1 M€ | 7,47 | 1 | 1 | 1/0 |  |
+| 32 | Federico Dimarco | LM,LW | 28 | Italy | 37,1 M€ | 7,41 | 0 | 1 | 0/0 | skadad, åter Early October 2026 |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Marcus Thuram | ST | 29 | France | 39,5 M€ | 7,60 | 2 | 2 | 0/0 |  |
+| 10 | Lautaro Martínez | ST | 29 | Argentina | 52,6 M€ | 7,96 | 4 | 0 | 2/0 |  |
+| 14 | Ange-Yoan Bonny | ST | 22 | Ivory Coast | 21,5 M€ | 6,78 | 1 | 0 | 0/0 |  |
+| 48 | Mattia Mosconi | RW,LW | 19 | Italy | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 94 | Francesco Pio Esposito | ST | 21 | Italy | 24,2 M€ | 7,36 | 2 | 1 | 0/0 |  |

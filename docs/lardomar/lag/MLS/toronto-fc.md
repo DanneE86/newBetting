@@ -71,3 +71,41 @@ Form (äldst → senast): VOVOOVFF · senaste match 2026-09-20
 | San Diego FC | 1 | 1-0-0 | 1–0 | +2,38 | −19 pe | 2025-07-17 1-0 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Robin Fraser. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Nelson Palacio (skadad, åter Out for season), Djordje Mihailović (skadad, åter Late October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Luka Gavran | GK | 26 | Canada | 279 k€ | 6,81 | 1 | 0 | 1/0 |  |
+| 23 | William Yarbrough | GK | 37 | USA | 50 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 3 | Matheus Pereira | LB | 25 | Brazil | 1,0 M€ | 6,48 | 0 | 0 | 2/0 |  |
+| 12 | Zane Monlouis | CB | 22 | Jamaica | 485 k€ | 6,37 | 0 | 0 | 1/0 |  |
+| 13 | Benjamín Kuščević | CB | 30 | Chile | 1,0 M€ | 6,70 | 0 | 0 | 4/0 |  |
+| 15 | Nicksoen Gomis | CB | 24 | France | 260 k€ | 6,18 | 0 | 0 | 0/0 |  |
+| 19 | Kobe Franklin | RB,LB,RWB | 23 | Canada | 183 k€ | 6,60 | 2 | 2 | 0/0 |  |
+| 22 | Richie Laryea | LB,RB,CB,CDM | 31 | Canada | 490 k€ | 6,85 | 2 | 1 | 4/0 |  |
+| 25 | Walker Zimmerman | CB | 33 | USA | 941 k€ | 6,66 | 1 | 0 | 5/1 |  |
+| 38 | Jackson Gilman | RB,CB,CM,LB | 22 | USA | 228 k€ | 6,59 | 0 | 0 | 1/0 |  |
+| 44 | Raheem Edwards | LB,LW | 31 | Canada | 243 k€ | 6,89 | 0 | 0 | 3/1 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Nelson Palacio | CM,CDM,CB | 25 | Colombia | 882 k€ | – | 0 | 0 | 0/0 | skadad, åter Out for season |
+| 6 | Niklas Dorsch | CM,CDM | 28 | Germany | 1,7 M€ | 6,79 | 2 | 0 | 1/0 |  |
+| 10 | Djordje Mihailović | CAM,CM,LW | 27 | USA | 3,6 M€ | 7,33 | 2 | 5 | 1/1 | skadad, åter Late October 2026 |
+| 14 | Alonso Coello | CDM,CM | 26 | Spain | 754 k€ | 7,21 | 0 | 4 | 5/0 |  |
+| 21 | Jonathan Osorio | CDM,CM | 34 | Canada | 467 k€ | 6,89 | 0 | 3 | 7/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Theo Corbeanu | RW | 24 | Canada | 1,2 M€ | 6,90 | 2 | 3 | 1/0 |  |
+| 9 | Josh Sargent | ST | 26 | USA | 14,2 M€ | 7,12 | 7 | 2 | 0/0 |  |
+| 11 | Derrick Etienne | ST,LW,RW,LM,CAM | 29 | Haiti | 254 k€ | 6,57 | 4 | 1 | 1/0 |  |
+| 17 | Emilio Aristizábal | ST,RW | 21 | Colombia | 1,3 M€ | 6,50 | 4 | 0 | 1/0 |  |
+| 20 | Dániel Sallói | LW,LM,RW,CAM,CM | 30 | Hungary | 1,2 M€ | 7,04 | 7 | 6 | 2/0 |  |
+| 27 | Alejandro Piedrahita | LW,RW | 24 | Colombia | 837 k€ | 5,97 | 0 | 0 | 0/0 |  |
+| 78 | Malik Henry | RW,RM | 24 | Canada | 242 k€ | 6,22 | 0 | 0 | 3/0 |  |
+| 90 | Lewis Morgan | ST,LW | 29 | Scotland | 566 k€ | 6,41 | 0 | 3 | 1/0 |  |
+| 99 | Jules-Anthony Vilsaint | ST | 23 | Canada | 164 k€ | 6,59 | 0 | 0 | 0/0 |  |

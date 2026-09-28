@@ -52,3 +52,46 @@ Form (äldst → senast): FFFVOOFV · senaste match 2026-09-20
 | Start | 4 | 3-1-0 | 10–3 | +1,16 | −2 pe | 2026-09-20 3-0 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Andreas Tegström. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Devon Koswal (skadad, åter Out for season), Filip Loftesnes-Bjune (skadad, åter Mid October 2026), Marcus Melchior (skadad, åter Out for season), Nikolaj Möller (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Alf Lukas Grønneberg | GK | 22 | Norway | 221 k€ | – | 0 | 0 | 0/0 |  |
+| 30 | Elias Hadaya | GK | 28 | Syria | 521 k€ | 6,99 | 0 | 0 | 3/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Christopher Abanga | Defender | 18 | Ghana | – | – | 0 | 0 | 0/0 |  |
+| 3 | Vetle Walle Egeli | LB,LWB | 22 | Norway | 1,4 M€ | 6,97 | 0 | 2 | 2/0 |  |
+| 4 | Fredrik Carson Pedersen | RB,RWB | 23 | Norway | 637 k€ | 6,81 | 0 | 0 | 2/0 |  |
+| 5 | Gustav Højbjerg | LB | 22 | Denmark | 392 k€ | 6,57 | 0 | 0 | 0/0 |  |
+| 8 | Tobias Borchgrevink Børkeeiet | CB,CM | 27 | Norway | 184 k€ | 7,57 | 1 | 0 | 2/0 |  |
+| 13 | Rasmus Holten | CB | 21 | Norway | 613 k€ | 6,95 | 1 | 0 | 1/0 |  |
+| 16 | Håkon Krogelien | CB | 22 | Norway | 343 k€ | 6,52 | 0 | 0 | 0/0 |  |
+| 22 | Devon Koswal | CB | 23 | Netherlands | 769 k€ | – | 0 | 0 | 0/0 | skadad, åter Out for season |
+| 26 | Filip Loftesnes-Bjune | RB | 21 | Norway | 912 k€ | 6,34 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 31 | Henrik Barstad Skretteberg | CB | 18 | Norway | – | – | 0 | 0 | 0/0 |  |
+| 44 | Xander Lambrix | CB | 26 | Belgium | 367 k€ | 6,91 | 0 | 1 | 4/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 2 | Martin Hellan | RM,CB,RB | 23 | Norway | 418 k€ | 6,29 | 0 | 1 | 0/0 |  |
+| 6 | Sander Mørk | CM,CDM | 25 | Norway | 558 k€ | 6,84 | 1 | 0 | 1/0 |  |
+| 10 | Ervin Gigović | CM,ST,CDM | 23 | Sweden | 418 k€ | 7,55 | 1 | 1 | 2/0 |  |
+| 14 | Edvard Sundbø Pettersen | CM,CAM,CDM | 20 | Norway | 1,2 M€ | 6,75 | 2 | 1 | 4/0 |  |
+| 20 | Marcus Melchior | CM,CAM,CDM | 25 | Norway | 413 k€ | 6,73 | 0 | 0 | 2/0 | skadad, åter Out for season |
+| 21 | Jakob Jakobsen Swift | CM | 19 | Norway | – | – | 0 | 0 | 0/0 |  |
+| 34 | Alexander Blomdahl | RW | 19 | Norway | – | – | 0 | 0 | 0/0 |  |
+| 37 | Jakob Vester | CM | 21 | Denmark | 1,1 M€ | 6,43 | 1 | 0 | 2/2 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Evangelos Patoulidis | RW,RM | 25 | Belgium | 1,0 M€ | 6,96 | 4 | 0 | 2/0 |  |
+| 9 | Oscar Forsmo Kapskarmo | ST | 26 | Norway | 297 k€ | 7,33 | 1 | 2 | 0/0 |  |
+| 11 | Nikolaj Möller | ST | 24 | Sweden | 647 k€ | 6,76 | 3 | 0 | 3/0 | skadad, åter Mid October 2026 |
+| 17 | Foster Apetorgbor | RW | 18 | Ghana | 629 k€ | 6,48 | 1 | 2 | 4/0 |  |
+| 18 | Mathias Sauer | RW | 22 | Denmark | 478 k€ | 6,94 | 1 | 1 | 0/0 |  |
+| 19 | Bendik Berntsen | LW,RW | 19 | Norway | 1,1 M€ | 6,67 | 1 | 1 | 3/0 |  |
+| 24 | Sebastian Holm Mathisen | ST | 21 | Norway | 547 k€ | 6,15 | 2 | 0 | 1/0 |  |
+| 27 | Jakob Maslø Dunsby | LW,LM | 26 | Norway | 595 k€ | 6,77 | 1 | 0 | 4/0 |  |
+| 32 | Daniel Skaarud | CAM | 19 | Norway | 997 k€ | 6,41 | 0 | 0 | 0/0 |  |

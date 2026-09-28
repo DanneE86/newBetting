@@ -3,7 +3,6 @@
   "groups": [
     { "id": "argentina", "name": "Argentina", "leagues": ["AR"] },
     { "id": "brasilien", "name": "Brasilien", "leagues": ["BR", "BR2"] },
-    { "id": "chile", "name": "Chile", "leagues": ["CHI"] },
     { "id": "colombia", "name": "Colombia", "leagues": ["COL"] },
     { "id": "danmark", "name": "Danmark", "leagues": ["DK", "DK2"] },
     { "id": "england", "name": "England", "leagues": ["PL", "CH", "EL1"] },
@@ -11,7 +10,7 @@
     { "id": "frankrike", "name": "Frankrike", "leagues": ["L1"] },
     { "id": "grekland", "name": "Grekland", "leagues": ["GR"] },
     { "id": "italien", "name": "Italien", "leagues": ["SA", "SB"] },
-    { "id": "japan", "name": "Japan", "leagues": ["JP1", "JP2", "JP3"] },
+    { "id": "japan", "name": "Japan", "leagues": ["JP1"] },
     { "id": "kroatien", "name": "Kroatien", "leagues": ["HR"] },
     { "id": "mexiko", "name": "Mexiko", "leagues": ["MX"] },
     { "id": "nederlanderna", "name": "Nederländerna", "leagues": ["ED"] },
@@ -20,7 +19,6 @@
     { "id": "portugal", "name": "Portugal", "leagues": ["PT"] },
     { "id": "spanien", "name": "Spanien", "leagues": ["LL", "LL2"] },
     { "id": "sverige", "name": "Sverige", "leagues": ["AS", "SE2", "SE3N", "SE3S"] },
-    { "id": "sydkorea", "name": "Sydkorea", "leagues": ["KR"] },
     { "id": "tjeckien", "name": "Tjeckien", "leagues": ["CZ"] },
     { "id": "tyskland", "name": "Tyskland", "leagues": ["BL", "BL2"] },
     { "id": "usa", "name": "USA", "leagues": ["MLS"] }
@@ -55,13 +53,9 @@
     "GR":   { "name": "Super League",          "country": "Greece",      "odds": "soccer_greece_super_league",           "history": "fd-main", "espn": "gre.1", "oddsportal": "greece/super-league" },
     "HR":   { "name": "HNL",                   "country": "Croatia",     "odds": null,                                   "history": "tsdb", "tsdbId": 4629, "tsdbRounds": 36, "oddsportal": "croatia/hnl" },
     "JP1":  { "name": "J1 League",             "country": "Japan",       "odds": "soccer_japan_j_league",                "history": "fd-new", "fdNew": "JPN", "espn": "jpn.1", "oddsportal": "japan/j1-league" },
-    "JP2":  { "name": "J2 League",             "country": "Japan",       "odds": null,                                   "history": "tsdb", "tsdbId": 4824, "tsdbRounds": 38, "oddsportal": "japan/j2-league" },
-    "JP3":  { "name": "J3 League",             "country": "Japan",       "odds": null,                                   "history": "tsdb", "tsdbId": 4967, "tsdbRounds": 38, "oddsportal": "japan/j3-league" },
-    "KR":   { "name": "K League 1",            "country": "South Korea", "odds": "soccer_korea_kleague1",                "history": "tsdb", "tsdbId": 4689, "tsdbRounds": 38, "oddsportal": "south-korea/k-league-1" },
     "MX":   { "name": "Liga MX",               "country": "Mexico",      "odds": "soccer_mexico_ligamx",                 "history": "fd-new", "fdNew": "MEX", "espn": "mex.1", "oddsportal": "mexico/liga-mx" },
     "MLS":  { "name": "MLS",                   "country": "USA",         "odds": "soccer_usa_mls",                       "history": "fd-new", "fdNew": "USA", "espn": "usa.1", "calendarYear": true, "oddsportal": "usa/mls" },
     "CZ":   { "name": "Chance Liga",           "country": "Czechia",     "odds": null,                                   "history": "tsdb", "tsdbId": 4631, "tsdbRounds": 35, "oddsportal": "czech-republic/chance-liga" },
-    "CHI":  { "name": "Primera División",      "country": "Chile",       "odds": "soccer_chile_campeonato",              "history": "espn", "espn": "chi.1", "calendarYear": true, "oddsportal": "chile/liga-de-primera" },
     "COL":  { "name": "Primera A",             "country": "Colombia",    "odds": null,                                   "history": "espn", "espn": "col.1", "calendarYear": true, "oddsportal": "colombia/primera-a" },
     "AR":   { "name": "Liga Profesional",      "country": "Argentina",   "odds": "soccer_argentina_primera_division",    "history": "fd-new", "fdNew": "ARG", "espn": "arg.1", "calendarYear": true, "oddsportal": "argentina/liga-profesional" }
   }

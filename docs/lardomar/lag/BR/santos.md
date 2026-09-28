@@ -60,3 +60,66 @@ Form (äldst → senast): OFVOVVVV · senaste match 2026-09-19
 | Remo | 2 | 2-0-0 | 4–1 | +1,26 | −27 pe | 2026-09-19 2-1 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Cuca. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Gabriel Brazão (skadad, åter Out for season), Vinicius Lira (skadad, åter Out for season), Philippe Coutinho (osäker), Neymar (skadad, åter Late October 2026), Álvaro Barreal (osäker)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Diógenes | GK | 25 | Brazil | 607 k€ | – | 0 | 0 | 0/0 |  |
+| 34 | João Paulo | GK | 31 | Brazil | 1,4 M€ | – | 0 | 0 | 0/0 |  |
+| 67 | Rodrigo Falcão | Keeper | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 77 | Gabriel Brazão | GK | 25 | Brazil | 8,4 M€ | – | 0 | 0 | 0/0 | skadad, åter Out for season |
+| 79 | João Pedro | GK | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 88 | Arthur Vale | Keeper | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 3 | Vinicius Lira | LB | 18 | Brazil | – | – | 0 | 0 | 0/0 | skadad, åter Out for season |
+| 4 | Lucas Veríssimo | CB | 31 | Brazil | 2,4 M€ | – | 0 | 0 | 0/0 |  |
+| 14 | Luan Peres | CB | 32 | Brazil | 655 k€ | – | 0 | 0 | 0/0 |  |
+| 18 | Igor Vinícius | RB | 29 | Brazil | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| 23 | Rodinei | RB,RW | 34 | Brazil | 355 k€ | – | 0 | 0 | 0/0 |  |
+| 26 | João Ananias | CB | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 31 | Gonzalo Escobar | LB | 29 | Argentina | 751 k€ | – | 0 | 0 | 0/0 |  |
+| 38 | Rafael Gonzaga | LB | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 42 | João Alencar | Defender | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 99 | Marcelo Tórrez | CB | 20 | Bolivia | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Philippe Coutinho | CAM | 34 | Brazil | 1,4 M€ | – | 0 | 0 | 0/0 | osäker |
+| 5 | João Schmidt | CDM,CM | 33 | Brazil | 647 k€ | – | 0 | 0 | 0/0 |  |
+| 6 | Arthur | CDM,CM,CAM | 30 | Brazil | 2,0 M€ | – | 0 | 0 | 0/0 |  |
+| 10 | Neymar | CAM,ST,LW | 34 | Brazil | 2,9 M€ | – | 0 | 0 | 0/0 | skadad, åter Late October 2026 |
+| 15 | Willian Arão | CDM,CM,CB | 34 | Brazil | 518 k€ | – | 0 | 0 | 0/0 |  |
+| 20 | Pepê Fermino | Midfielder | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 25 | Gabriel Menino | RB,CM,RM | 25 | Brazil | 3,5 M€ | – | 0 | 0 | 0/0 |  |
+| 28 | Christian Oliva | CDM,CM | 30 | Uruguay | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 32 | Benjamín Rollheiser | CAM,RW,ST | 26 | Argentina | 4,3 M€ | – | 0 | 0 | 0/0 |  |
+| 45 | Lima | CAM | 30 | Brazil | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| 48 | Gustavo Henrique | CDM,CM,RM | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 58 | Vinícius Rocha | Midfielder | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 72 | Nicola Profeta | CDM | 20 | Venezuela | – | – | 0 | 0 | 0/0 |  |
+| 76 | Vinicius Fabri | Midfielder | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 80 | Kauan Barreto | Midfielder | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 81 | Samuel Mendes | Midfielder | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Everton | LW | 30 | Brazil | 2,0 M€ | – | 0 | 0 | 0/0 |  |
+| 9 | Gabriel Barbosa | ST | 30 | Brazil | 1,9 M€ | – | 0 | 0 | 0/0 |  |
+| 11 | Rony | ST,LW,RWB,CAM,RW,RM | 31 | Brazil | 2,7 M€ | – | 0 | 0 | 0/0 |  |
+| 16 | Thaciano | ST,LW | 31 | Brazil | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 17 | Gustavo Caballero | RW,LW,ST | 25 | Paraguay | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 21 | Moisés | LW,LM | 30 | Brazil | 1,5 M€ | – | 0 | 0 | 0/0 |  |
+| 22 | Álvaro Barreal | LW,RW,CAM,LM,CM,LB | 26 | Argentina | 4,3 M€ | – | 0 | 0 | 0/0 | osäker |
+| 27 | Davizinho | RB | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 29 | Kaio Ganga | Attacker | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 30 | Miguel Terceros | RW,CAM,LW,ST,RM | 22 | Bolivia | – | – | 0 | 0 | 0/0 |  |
+| 37 | Pedro Assis | Attacker | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 41 | João Victor | Attacker | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 47 | Mateus Xavier | Attacker | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 49 | Gabriel Bontempo | RW,CAM,CM,CDM | 21 | Brazil | 5,2 M€ | – | 0 | 0 | 0/0 |  |
+| 55 | Fernando Pradella | Attacker | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 57 | Nadson | Attacker | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 59 | David Nogueira | Attacker | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 66 | Gabriel Follmer | Attacker | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |

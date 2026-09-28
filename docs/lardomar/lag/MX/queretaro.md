@@ -59,3 +59,39 @@ Form (äldst → senast): FVVOFVVO · senaste match 2026-09-21
 | Juarez | 13 | 7-4-2 | 20–8 | +0,60 | +3 pe | 2026-04-08 1-1 (h) |
 
 Ligans test av inbördes möten mot marknaden: svag signal (inte bekräftad).
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Esteban González. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Erik Dueñas (skadad, åter Unknown)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | José Hernández | GK | 29 | Mexico | 364 k€ | – | 0 | 0 | 0/0 |  |
+| 25 | Guillermo Allison | GK | 36 | Mexico | 355 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Lucas Abascia | CB | 30 | Argentina | 1,4 M€ | – | 0 | 0 | 0/0 |  |
+| 12 | Paulo Victor | LW,LB,LWB,LM | 25 | Brazil | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 13 | Diego Reyes | CB | 34 | Mexico | 374 k€ | – | 0 | 0 | 0/0 |  |
+| 15 | Carlos Villanueva | CB | 32 | Mexico | 338 k€ | – | 0 | 0 | 0/0 |  |
+| 17 | Denilson Muñoz | CB | 22 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| 24 | Bayron Duarte | RB | 23 | Colombia | – | – | 0 | 0 | 0/0 |  |
+| 27 | Daniel Parra | LB | 27 | Mexico | 466 k€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 4 | Carlo García | CDM,CM | 25 | Spain | 818 k€ | – | 0 | 0 | 0/0 |  |
+| 5 | Santiago Homenchenko | CDM,CM,CB | 23 | Uruguay | 1,9 M€ | – | 0 | 0 | 0/0 |  |
+| 7 | Iker Benito | RM | 24 | Spain | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 8 | Bernardo Parra | CM,CDM | 21 | Mexico | 1,9 M€ | – | 0 | 0 | 0/0 |  |
+| 18 | Erik Dueñas | CDM | 21 | Mexico | 559 k€ | – | 0 | 0 | 0/0 | skadad, åter Unknown |
+| 20 | Álex Alcalá | CAM | 20 | Mexico | 650 k€ | – | 0 | 0 | 0/0 |  |
+| 23 | Juan Robles | ST | 23 | Mexico | 563 k€ | – | 0 | 0 | 0/0 |  |
+| 29 | Waldo Madrid | RM | 23 | Mexico | 483 k€ | – | 0 | 0 | 0/0 |  |
+| 30 | Mono Martínez | CAM | 16 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| 199 | Sergio Garcia Brothers | RB | 19 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Alí Ávila | ST | 23 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| 11 | Mateo Coronel | ST,CAM,LW,LM | 27 | Argentina | 2,4 M€ | – | 0 | 0 | 0/0 |  |
+| 16 | Enzo Giménez | RW,RB,CDM,RM | 28 | Paraguay | 994 k€ | – | 0 | 0 | 0/0 |  |
+| 26 | Eduardo Pérez | ST | 33 | Mexico | 345 k€ | – | 0 | 0 | 0/0 |  |

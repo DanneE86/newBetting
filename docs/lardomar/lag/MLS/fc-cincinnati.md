@@ -65,3 +65,43 @@ Form (äldst → senast): VOVOFFOO · senaste match 2026-09-20
 | San Diego FC | 1 | 0-1-0 | 3–3 | −0,08 | +78 pe | 2026-05-17 3-3 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Pat Noonan. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+|  | Connor Dale | GK | 16 | USA | – | – | 0 | 0 | 0/0 |  |
+| 13 | Evan Louro | GK | 30 | USA | 50 k€ | 5,27 | 0 | 0 | 0/0 |  |
+| 18 | Roman Celentano | GK | 26 | USA | 1,7 M€ | 6,42 | 0 | 0 | 1/0 |  |
+| 93 | Fabian Mrozek | GK | 23 | Poland | 151 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Tyrell Malacia | LB | 27 | Netherlands | 2,3 M€ | – | 0 | 0 | 0/0 |  |
+| 2 | Alvas Elvis Powell | CB | 32 | Jamaica | 50 k€ | 6,74 | 0 | 1 | 0/1 |  |
+| 4 | Nick Hagglund | CB | 34 | USA | 163 k€ | 6,37 | 1 | 0 | 1/0 |  |
+| 6 | Julián Malatini | CB | 25 | Argentina | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 12 | Miles Robinson | CB | 29 | USA | 1,6 M€ | 6,57 | 0 | 0 | 2/1 |  |
+| 15 | Teenage Lingani Hadebe | CB | 31 | Zimbabwe | 276 k€ | 6,62 | 0 | 0 | 2/0 |  |
+| 24 | Kyle Smith | CB,CM | 34 | USA | 52 k€ | 6,22 | 1 | 0 | 2/1 |  |
+| 55 | Ayoub Lajhar | CB,LWB,LB,LM | 22 | Libya | 217 k€ | 6,70 | 0 | 0 | 1/0 |  |
+| 88 | Andrei Chirilă | CB | 18 | USA | 1,0 M€ | 6,51 | 1 | 1 | 1/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Obinna Nwobodo | CM,CDM | 29 | Nigeria | 1,4 M€ | 6,72 | 0 | 1 | 6/1 |  |
+| 10 | Evander Ferreira | CM,CAM,ST,LW | 28 | Brazil | 10,2 M€ | 7,89 | 13 | 10 | 5/0 |  |
+| 11 | Samuel Gidi | CM,CB,CDM | 22 | Slovakia | 1,8 M€ | 6,93 | 0 | 1 | 4/0 |  |
+| 17 | Kenji Mboma Dem | ST,CAM,LM,RW,LWB | 24 | France | 261 k€ | 7,07 | 5 | 1 | 1/0 |  |
+| 20 | Pavel Bucha | CM,RWB,RM,CDM | 28 | Czechia | 1,7 M€ | 7,34 | 6 | 4 | 2/0 |  |
+| 22 | Gerardo Valenzuela | CM,CDM,ST | 22 | USA | 1,3 M€ | 6,91 | 1 | 4 | 2/2 |  |
+| 23 | David Douděra | RM,RWB | 28 | Czechia | 2,2 M€ | 6,44 | 0 | 0 | 0/0 |  |
+| 27 | Brian Anunga | CDM,CM | 30 | Cameroon | 227 k€ | 6,66 | 0 | 0 | 2/0 |  |
+| 29 | Bryan Ramírez | LM,LWB,LW,RM | 26 | Ecuador | 2,0 M€ | 7,26 | 2 | 3 | 8/0 |  |
+| 66 | Ender Echenique | RM,RWB,RW,LWB,LM | 22 | Venezuela | 1,1 M€ | 6,93 | 1 | 5 | 1/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Kévin Denkey | ST | 25 | Togo | 11,1 M€ | 7,30 | 14 | 3 | 3/1 |  |
+| 14 | Kristian Fletcher | ST | 21 | USA | 421 k€ | 6,05 | 0 | 0 | 0/0 |  |
+| 16 | Tom Barlow | ST | 31 | USA | 136 k€ | 6,59 | 7 | 2 | 2/0 |  |
+| 19 | Ștefan Chirilă | ST,LW,CAM,RW,CM | 19 | Romania | – | – | 0 | 0 | 0/0 |  |
+| 30 | Ademar Chávez | RM,ST,CAM,RW,LW | 17 | USA | 912 k€ | – | 0 | 0 | 0/0 |  |
+| 99 | Ayoub Jabbari | ST | 26 | Morocco | 659 k€ | 6,42 | 2 | 2 | 1/0 |  |

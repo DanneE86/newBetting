@@ -71,3 +71,41 @@ Form (äldst → senast): VVFOOVFO · senaste match 2026-09-20
 | Toronto FC | 2 | 1-0-1 | 3–2 | −0,01 | −23 pe | 2024-08-25 0-1 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Ben Olsen. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Jimmy Maurer (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Jimmy Maurer | GK | 37 | USA | 50 k€ | 7,08 | 0 | 0 | 1/0 | skadad, åter Early October 2026 |
+| 26 | Blake Gillingham | GK | 23 | USA | – | – | 0 | 0 | 0/0 |  |
+| 31 | Jonathan Bond | GK | 33 | England | 126 k€ | 6,96 | 0 | 0 | 0/0 |  |
+| 35 | Logan Erb | GK | 22 | USA | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Reese Miller | LB,LM | 22 | USA | – | – | 0 | 0 | 0/0 |  |
+| 3 | Antônio Carlos | CB | 33 | Brazil | 114 k€ | 6,75 | 0 | 0 | 1/1 |  |
+| 4 | Marcelo Saracchi | LB | 28 | Uruguay | 1,1 M€ | 6,45 | 0 | 0 | 0/0 |  |
+| 5 | Lucas Halter | CB | 26 | Brazil | 1,1 M€ | 7,09 | 0 | 0 | 4/0 |  |
+| 11 | Lawrence Ennali | LB,LM,RB,RM | 24 | Germany | 1,2 M€ | 7,01 | 3 | 3 | 4/0 |  |
+| 21 | Franco Negri | LB,CB | 31 | Argentina | 59 k€ | 6,94 | 1 | 0 | 1/0 |  |
+| 34 | Agustin Resch | CB | 24 | Argentina | 285 k€ | 7,01 | 1 | 0 | 6/0 |  |
+| 36 | Felipe Andrade | RB,CB,LB | 24 | Brazil | 1,5 M€ | 6,69 | 1 | 0 | 8/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Artur | CDM,CM | 30 | Brazil | 1,4 M€ | 7,03 | 0 | 1 | 3/0 |  |
+| 14 | Duane Holmes | RM,RWB | 31 | USA | 239 k€ | 6,60 | 0 | 0 | 2/0 |  |
+| 16 | Héctor Herrera | CM,CDM,CAM | 36 | Mexico | 210 k€ | 6,87 | 2 | 0 | 2/1 |  |
+| 18 | Diadie Samassékou | CM,CDM | 30 | Mali | 449 k€ | 6,61 | 0 | 0 | 0/0 |  |
+| 22 | Matthew Arana | CDM,CM,RW,CAM | 16 | Mexico | – | 6,28 | 0 | 0 | 0/0 |  |
+| 24 | Ibrahim Aliyu | RM | 24 | Nigeria | 621 k€ | 6,64 | 2 | 0 | 1/1 |  |
+| 30 | Agustín Bouzat | CDM,CM,CAM,ST | 32 | Argentina | 354 k€ | 6,56 | 1 | 1 | 3/1 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Nelson Quiñónes | LW | 24 | Colombia | 201 k€ | – | 0 | 0 | 0/0 |  |
+| 9 | Lyle Foster | ST,RW | 26 | South Africa | 9,7 M€ | 6,15 | 0 | 0 | 0/0 |  |
+| 17 | Nick Markanich | RW,ST | 26 | Philippines | 232 k€ | 6,23 | 0 | 0 | 0/1 |  |
+| 19 | Mateusz Bogusz | RW,LM,CAM,ST,LW | 25 | Poland | 2,9 M€ | 7,10 | 6 | 1 | 3/0 |  |
+| 20 | Guilherme Augusto | LW,ST,CAM | 31 | Brazil | 1,6 M€ | 7,88 | 14 | 6 | 3/0 |  |
+| 23 | Duncan McGuire | ST | 25 | USA | 1,5 M€ | 6,27 | 2 | 0 | 1/0 |  |

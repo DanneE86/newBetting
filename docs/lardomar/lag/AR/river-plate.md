@@ -71,3 +71,52 @@ Form (äldst → senast): FFVOVVVF · senaste match 2026-09-19
 | Estudiantes Rio Cuarto | 1 | 1-0-0 | 2–0 | +0,88 | −26 pe | 2026-03-22 2-0 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Leonardo Ponzio. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Juan Carlos Portillo (skadad, åter Late October 2026), Aníbal Moreno (skadad, åter About 1-2 weeks), Thiago Almada (skadad, åter Mid October 2026), Agustín Ruberto (skadad, åter Late January 2027)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 33 | Ezequiel Centurión | GK | 29 | Argentina | 933 k€ | – | 0 | 0 | 0/0 |  |
+| 41 | Santiago Beltrán | GK | 21 | Argentina | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 42 | Franco Jaroszewicz | Keeper | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Tobías Ramírez | CB | 19 | Argentina | 3,8 M€ | – | 0 | 0 | 0/0 |  |
+| 3 | Francisco Ortega | LB | 27 | Argentina | 3,6 M€ | – | 0 | 0 | 0/0 |  |
+| 13 | Lautaro Rivero | CB,LB | 22 | Argentina | 5,8 M€ | – | 0 | 0 | 0/0 |  |
+| 20 | Giovanni González | RB | 32 | Uruguay | 1,4 M€ | – | 0 | 0 | 0/0 |  |
+| 21 | Marcos Acuña | LB | 34 | Argentina | 910 k€ | – | 0 | 0 | 0/0 |  |
+| 28 | Lucas Martínez Quarta | CB | 30 | Argentina | 2,7 M€ | – | 0 | 0 | 0/0 |  |
+| 29 | Gonzalo Montiel | RB | 29 | Argentina | 2,7 M€ | – | 0 | 0 | 0/0 |  |
+| 30 | Nicolás Otamendi | CB | 38 | Argentina | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 31 | Facundo González | LB | 20 | Argentina | 691 k€ | – | 0 | 0 | 0/0 |  |
+| 40 | Agustín Obregón | Defender | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 53 | Thiago Salvatierra | Defender | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Juan Carlos Portillo | CDM,CM | 26 | Argentina | 2,4 M€ | – | 0 | 0 | 0/0 | skadad, åter Late October 2026 |
+| 6 | Aníbal Moreno | CDM,CM | 27 | Argentina | 5,6 M€ | – | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
+| 8 | Mauro Arambarri | CM,CDM | 30 | Uruguay | 7,2 M€ | – | 0 | 0 | 0/0 |  |
+| 10 | Ángel Correa | CAM,ST,RW,LW,LM | 31 | Argentina | 3,7 M€ | – | 0 | 0 | 0/0 |  |
+| 15 | Fausto Vera | CDM,CM,CAM | 26 | Argentina | 2,9 M€ | – | 0 | 0 | 0/0 |  |
+| 23 | Thiago Almada | LM,LW,CM,CAM,ST,CDM | 25 | Argentina | 16,2 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 25 | Lautaro Pereyra | CAM | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 27 | Santiago Espíndola | Midfielder | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 37 | Thiago Acosta | CM | 21 | Argentina | 593 k€ | – | 0 | 0 | 0/0 |  |
+| 43 | Valentín Lucero | Midfielder | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 44 | Lucas Silva | CDM | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 45 | Maximiliano Soria | Midfielder | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Alexis González | RW | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |
+|  | Tobias Goytia | Attacker | 17 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 9 | Sebastián Driussi | ST | 30 | Argentina | 2,6 M€ | – | 0 | 0 | 0/0 |  |
+| 18 | Lucas Beltrán | ST | 25 | Argentina | 11,3 M€ | – | 0 | 0 | 0/0 |  |
+| 19 | Rafael Borré | ST | 31 | Colombia | 2,3 M€ | – | 0 | 0 | 0/0 |  |
+| 24 | Juan Cruz Meza | RW,CM | 18 | Argentina | 1,7 M€ | – | 0 | 0 | 0/0 |  |
+| 26 | Tomás Galván | LW,CAM,RW,CDM,RM | 26 | Argentina | 2,6 M€ | – | 0 | 0 | 0/0 |  |
+| 32 | Agustín Ruberto | ST | 20 | Argentina | 1,8 M€ | – | 0 | 0 | 0/0 | skadad, åter Late January 2027 |
+| 47 | Felipe Esquivel | Attacker | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 50 | Tobías Andrada | RW,CDM | 19 | Argentina | 6,3 M€ | – | 0 | 0 | 0/0 |  |

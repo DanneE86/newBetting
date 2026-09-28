@@ -63,3 +63,36 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-05-16 | Europa 2575 | Halmstad - Elfsborg | X | 21 % | 24 % |
 | 2026-04-22 | Europa 2568 | Hammarby - Halmstad | X | 4 % | 7 % |
 | 2025-10-26 | Europa 2517 | Halmstad - IFK Göteborg | 2 | 22 % | 28 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Stuart Baxter. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Tim Rönning | GK | 27 | Sweden | 311 k€ | 6,98 | 0 | 0 | 1/0 |  |
+| 35 | Adam Wihed | Keeper | 19 | Sweden | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 3 | Gabriel Wallentin | CB | 25 | Sweden | 376 k€ | 6,63 | 0 | 0 | 1/0 |  |
+| 4 | Filip Schyberg | CB | 27 | Sweden | 294 k€ | 5,39 | 0 | 0 | 1/0 |  |
+| 5 | Pascal Gregor | CB | 32 | Denmark | 289 k€ | 6,39 | 0 | 0 | 1/0 |  |
+| 16 | Erko Tõugjas | CB,LB | 23 | Estonia | 475 k€ | 6,40 | 0 | 0 | 2/0 |  |
+| 17 | André Boman | RB,RM | 24 | Sweden | 581 k€ | 6,79 | 0 | 1 | 1/1 |  |
+| 21 | Joel Nilsson | RB | 32 | Sweden | 224 k€ | 6,13 | 0 | 0 | 0/0 |  |
+| 24 | Rami Kaib | LB,LM | 29 | Tunisia | 238 k€ | 6,72 | 0 | 2 | 6/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Joel Allansson | CM,CDM | 33 | Sweden | 289 k€ | 6,85 | 0 | 1 | 1/0 |  |
+| 8 | Niilo Mäenpää | CM,CDM,LW | 28 | Finland | 174 k€ | 6,84 | 0 | 0 | 1/0 |  |
+| 14 | Hussein Carneil | LW,LM | 23 | Sweden | 299 k€ | 6,94 | 2 | 2 | 2/0 |  |
+| 25 | Aleksander Damnjanovic Nilsson | CDM | 24 | Sweden | 387 k€ | 6,39 | 0 | 0 | 2/0 |  |
+| 27 | Rocco Ascone | CM,CAM,CDM | 23 | France | 470 k€ | 7,28 | 4 | 0 | 3/0 |  |
+| 28 | Tom Trybull | CDM | 33 | Germany | 145 k€ | 7,19 | 0 | 0 | 2/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Omar Faraj | ST | 24 | Palestine | 637 k€ | 6,52 | 4 | 0 | 1/0 |  |
+| 11 | Ludvig Arvidsson | RW,ST,LW,CAM | 18 | Sweden | 1,3 M€ | 6,47 | 2 | 1 | 0/0 |  |
+| 18 | Malte Persson | ST | 20 | Sweden | 614 k€ | 6,14 | 1 | 1 | 0/0 |  |
+| 19 | Marvin Illary | RM,LW,RW | 19 | Ivory Coast | 621 k€ | 6,67 | 0 | 2 | 0/0 |  |
+| 22 | Oliver Kapsimalis | RW,LW | 19 | Sweden | 696 k€ | 6,30 | 0 | 0 | 1/0 |  |
+| 23 | Ajdin Zeljković | LW,ST | 28 | Sweden | 149 k€ | 6,37 | 0 | 0 | 0/0 |  |
+| 23 | Jesper Westermark | ST | 33 | Sweden | – | – | 0 | 0 | 0/0 |  |

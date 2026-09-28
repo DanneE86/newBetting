@@ -13,8 +13,8 @@ Form (äldst → senast): FOOVVOFO · senaste match 2026-09-20
 
 | Mått | Värde |
 |---|---|
-| Tur (poäng − xP per match) | +0,03 |
-| xG-målskillnad − målskillnad | −0,32 |
+| Tur (poäng − xP per match) | +0,04 |
+| xG-målskillnad − målskillnad | −0,35 |
 | Poäng mot marknaden per match | +0,06 |
 
 ## Säsonger
@@ -23,12 +23,26 @@ Form (äldst → senast): FOOVVOFO · senaste match 2026-09-20
 |---|---|---|---|---|---|---|---|---|
 | 2017/18 | LL | 38 | 0,76 | −0,27 (−0,38 / −0,16) | 29 % (24 %) | 1,00–2,00 | 1,31–1,60 | 1,31 |
 | 2018/19 | LL2 | 41 | 1,59 | −0,06 (−0,18 / +0,07) | 41 % (29 %) | 1,20–0,78 | 1,41–1,18* | 1,52 |
-| 2019/20 | LL2 | 42 | 1,21 | −0,15 (−0,11 / −0,19) | 36 % (31 %) | 1,02–1,43 | 1,24–1,40* | 1,26 |
+| 2019/20 | LL2 | 42 | 1,21 | −0,15 (−0,11 / −0,19) | 36 % (31 %) | 1,02–1,43 | 1,24–1,41* | 1,26 |
 | 2024/25 | LL2 | 42 | 1,26 | −0,15 (−0,43 / +0,14) | 33 % (29 %) | 1,33–1,29 | 1,41–1,46* | 1,33 |
-| 2025/26 | LL2 | 42 | 1,83 | +0,26 (+0,01 / +0,51) | 26 % (28 %) | 1,55–1,05 | 1,46–1,34* | 1,46 |
-| 2026/27 | LL | 7 | 1,43 | +0,40 (−0,08 / +1,04) | 57 % (29 %) | 1,43–1,14 | 1,22–1,47* | 1,18 |
+| 2025/26 | LL2 | 42 | 1,83 | +0,26 (+0,01 / +0,51) | 26 % (28 %) | 1,55–1,05 | 1,47–1,34* | 1,46 |
+| 2026/27 | LL | 7 | 1,43 | +0,40 (−0,08 / +1,04) | 57 % (29 %) | 1,43–1,14 | 1,20–1,49 | 1,16 |
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+
+## Nyckelspelare (Understat, 2024/25–)
+
+Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
+
+| Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
+|---|---|---|---|---|
+| Pierre-Emerick Aubameyang | 27 % | 0 / 7 | – / 1,43 | – / +0,40 |
+| Luismi Cruz | 13 % | 0 / 7 | – / 1,43 | – / +0,40 |
+| Mario Soriano | 9 % | 0 / 7 | – / 1,43 | – / +0,40 |
+| Giacomo Quagliata | 7 % | 0 / 7 | – / 1,43 | – / +0,40 |
+| Bil Nsongo | 6 % | 0 / 7 | – / 1,43 | – / +0,40 |
+
+Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -48,11 +62,50 @@ Form (äldst → senast): FOOVVOFO · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Stryktipset / Europatipset
+## Trupp (FotMob, hämtad 2026-09-28)
 
-| Datum | Spel | Match | Utfall | Folket på laget | Vår procent |
-|---|---|---|---|---|---|
-| 2026-09-20 | Europa 2609 | Deportivo A Coruña - Real Betis | X | 21 % | 26 % |
-| 2026-09-16 | Europa 2608 | Deportivo A Coruña - Sevilla | 2 | 38 % | 35 % |
-| 2026-09-13 | Europa 2607 | Getafe - Deportivo A Coruña | X | 27 % | 31 % |
-| 2026-08-30 | Europa 2603 | Deportivo A Coruña - Valencia | 1 ✓ | 38 % | 37 % |
+Tränare: Antonio Hidalgo. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Marc Casadó (skadad, åter Early October 2026), Lorenzo Amatucci (skadad, åter Early October 2026), Noé (skadad, åter Back in training), Pierre-Emerick Aubameyang (skadad, åter Early December 2026), Zakaria Eddahchouri (skadad, åter Early November 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Germán Parreno | GK | 33 | Spain | 323 k€ | – | 0 | 0 | 0/0 |  |
+| 13 | Leo Román | GK | 26 | Spain | 5,3 M€ | 6,84 | 0 | 0 | 0/0 |  |
+| 25 | Álvaro Fernández | GK | 28 | Spain | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 26 | Alberto Sánchez | GK | 25 | Spain | 236 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Álvaro Mardones | RB | 20 | Spain | 355 k€ | – | 0 | 0 | 0/0 |  |
+|  | Damián Canedo | Defender | 23 | Spain | 239 k€ | – | 0 | 0 | 0/0 |  |
+|  | Rubén Lopez | LB | 22 | Spain | 531 k€ | – | 0 | 0 | 0/0 |  |
+| 2 | Adrià Altimira | RB,RM,RWB,RW | 25 | Spain | 1,4 M€ | 6,38 | 0 | 0 | 1/1 |  |
+| 3 | Arnau Comas | CB | 26 | Spain | 607 k€ | – | 0 | 0 | 0/0 |  |
+| 4 | Lucas Noubi | CB,RB | 21 | Belgium | 1,8 M€ | 7,15 | 0 | 0 | 1/0 |  |
+| 5 | Dani Barcia | CB | 23 | Spain | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 12 | Giacomo Quagliata | LB,LWB,LM | 26 | Italy | 1,6 M€ | 7,02 | 0 | 0 | 1/0 |  |
+| 15 | Miguel Loureiro | CB,RB | 29 | Spain | 900 k€ | 6,92 | 0 | 0 | 0/0 |  |
+| 17 | Angeliño | LB | 29 | Spain | 9,2 M€ | 5,45 | 0 | 0 | 0/1 |  |
+| 20 | José Giménez | CB | 31 | Uruguay | 9,2 M€ | 6,63 | 0 | 0 | 1/0 |  |
+| 22 | Bright Ede | CB | 19 | Poland | 1,2 M€ | 6,76 | 0 | 0 | 1/0 |  |
+| 23 | Ximo Navarro | RB,CB | 36 | Spain | 298 k€ | 6,93 | 0 | 0 | 2/0 |  |
+| 27 | Samu Fernández | CB | 19 | Spain | 795 k€ | – | 0 | 0 | 0/0 |  |
+| 38 | Quique Teijo | Defender | 22 | Spain | 128 k€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Marc Casadó | CDM,CM | 23 | Spain | 17,6 M€ | 6,42 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 8 | Diego Villares | CM,CDM,CAM | 30 | Spain | 822 k€ | 6,96 | 1 | 0 | 0/0 |  |
+| 14 | Riki Rodríguez | CM,CDM | 29 | Spain | 1,2 M€ | 6,30 | 0 | 0 | 0/0 |  |
+| 16 | Lorenzo Amatucci | CM,CDM | 22 | Italy | 2,7 M€ | 7,13 | 0 | 1 | 3/0 | skadad, åter Early October 2026 |
+| 19 | Luismi Cruz | RM,CAM,RW,LM,LW,CM | 25 | Spain | 1,6 M€ | 7,08 | 1 | 1 | 0/0 |  |
+| 21 | Mario Soriano | CM,LM,CAM,ST,CDM | 24 | Spain | 1,7 M€ | 7,01 | 0 | 2 | 1/0 |  |
+| 37 | Noé | RM | 19 | Spain | 778 k€ | – | 0 | 0 | 0/0 | skadad, åter Back in training |
+| | **Anfallare** | | | | | | | | | |
+|  | Kevin Sánchez | RM | 21 | Spain | 400 k€ | – | 0 | 0 | 0/0 |  |
+| 7 | Pierre-Emerick Aubameyang | ST | 37 | Gabon | 1,9 M€ | 7,70 | 5 | 2 | 0/0 | skadad, åter Early December 2026 |
+| 9 | Zakaria Eddahchouri | ST | 26 | Netherlands | 2,0 M€ | 6,39 | 1 | 0 | 0/0 | skadad, åter Early November 2026 |
+| 10 | Yeremay Hernández | ST,LM,LW | 23 | Spain | 16,4 M€ | 6,47 | 0 | 1 | 1/0 |  |
+| 11 | David Mella | RW,RM,RWB,LM | 21 | Spain | – | 6,24 | 0 | 0 | 0/0 |  |
+| 18 | Jonathan Asp | LW,CAM,LM | 20 | Denmark | 2,7 M€ | 6,44 | 0 | 0 | 0/0 |  |
+| 24 | Adama Traoré | RW | 30 | Spain | 3,5 M€ | 5,87 | 0 | 0 | 0/0 |  |
+| 32 | Bil Nsongo | ST | 22 | Cameroon | – | 6,50 | 0 | 0 | 1/0 |  |
+| 36 | Iker Vidal | Attacker | 21 | Spain | – | – | 0 | 0 | 0/0 |  |

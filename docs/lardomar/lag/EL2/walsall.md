@@ -21,16 +21,16 @@ Form (äldst → senast): VOVOOOVO · senaste match 2026-09-26
 
 | Säsong | Liga | M | P/M | Mot marknaden (hemma / borta) | Kryss (odds) | Mål för–emot | xG för–emot | xP/M |
 |---|---|---|---|---|---|---|---|---|
-| 2017/18 | EL1 | 46 | 1,13 | −0,02 (+0,07 / −0,12) | 28 % (28 %) | 1,15–1,43 | 1,17–1,40* | 1,22 |
+| 2017/18 | EL1 | 46 | 1,13 | −0,02 (+0,07 / −0,12) | 28 % (28 %) | 1,15–1,43 | 1,17–1,41* | 1,22 |
 | 2018/19 | EL1 | 46 | 1,02 | −0,16 (−0,21 / −0,11) | 24 % (27 %) | 1,07–1,54 | 1,19–1,45* | 1,20 |
 | 2019/20 | EL2 | 36 | 1,31 | −0,06 (−0,28 / +0,18) | 22 % (29 %) | 1,11–1,36 | 1,35–1,36* | 1,36 |
 | 2020/21 | EL2 | 46 | 1,15 | −0,01 (−0,26 / +0,25) | 43 % (29 %) | 0,98–1,15 | 1,14–1,30* | 1,25 |
 | 2021/22 | EL2 | 46 | 1,17 | −0,07 (+0,12 / −0,27) | 26 % (30 %) | 1,02–1,30 | 1,27–1,26* | 1,39 |
 | 2022/23 | EL2 | 46 | 1,20 | −0,07 (+0,06 / −0,21) | 41 % (30 %) | 1,00–1,07 | 1,20–1,17* | 1,36 |
-| 2023/24 | EL2 | 46 | 1,41 | +0,04 (+0,28 / −0,21) | 24 % (27 %) | 1,50–1,59 | 1,49–1,42* | 1,43 |
-| 2024/25 | EL2 | 46 | 1,67 | +0,04 (−0,02 / +0,09) | 30 % (27 %) | 1,63–1,17 | 1,50–1,04* | 1,67 |
+| 2023/24 | EL2 | 46 | 1,41 | +0,04 (+0,28 / −0,21) | 24 % (27 %) | 1,50–1,59 | 1,49–1,42* | 1,44 |
+| 2024/25 | EL2 | 46 | 1,67 | +0,04 (−0,02 / +0,09) | 30 % (27 %) | 1,63–1,17 | 1,50–1,05* | 1,67 |
 | 2025/26 | EL2 | 46 | 1,41 | −0,02 (−0,30 / +0,26) | 24 % (28 %) | 1,22–1,22 | 1,28–1,27* | 1,37 |
-| 2026/27 | EL2 | 8 | 1,75 | +0,61 (+0,48 / +0,74) | 63 % (27 %) | 1,38–0,63 | 1,50–1,62* | 1,36 |
+| 2026/27 | EL2 | 8 | 1,75 | +0,61 (+0,48 / +0,74) | 63 % (27 %) | 1,38–0,63 | 1,51–1,62* | 1,36 |
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
 
@@ -61,3 +61,44 @@ Form (äldst → senast): VOVOOOVO · senaste match 2026-09-26
 | Barnet | 2 | 1-0-1 | 3–4 | +0,31 | −29 pe | 2026-02-07 1-3 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Lee Grant. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Jed Ward | GK | 23 | England | 281 k€ | 7,61 | 0 | 0 | 0/0 |  |
+| 21 | Jenson Kilroy | Keeper | 19 | England | – | – | 0 | 0 | 0/0 |  |
+| 31 | Tom Wooster | GK | 21 | England | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Rico Browne | CB,RB | 22 | St. Kitts and Nevis | 276 k€ | 6,36 | 0 | 0 | 0/0 |  |
+| 3 | Mason Hancock | LB,LM,LW | 23 | Scotland | 181 k€ | 7,57 | 0 | 1 | 0/0 |  |
+| 4 | James Connolly | CB | 24 | England | 251 k€ | 7,48 | 2 | 0 | 3/0 |  |
+| 5 | Harrison Burke | CB | 24 | England | 262 k€ | 7,02 | 1 | 0 | 0/0 |  |
+| 20 | Roman Dixon | RB | 21 | England | 300 k€ | 6,46 | 0 | 0 | 0/0 |  |
+| 22 | Elicha Ahui | RB | 22 | England | 153 k€ | 7,14 | 0 | 1 | 4/0 |  |
+| 24 | Harry Williams | CB | 24 | England | 199 k€ | – | 0 | 0 | 0/0 |  |
+| 25 | Declan Skura | CB | 24 | England | 182 k€ | 7,24 | 0 | 0 | 1/0 |  |
+| 26 | Ryan Leak | CB | 28 | Wales | 102 k€ | 7,01 | 0 | 0 | 0/0 |  |
+| 29 | James Furlong | LB | 24 | Ireland | 404 k€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Sven Sprangler | CDM,CM,RW | 31 | Austria | 136 k€ | 7,12 | 0 | 0 | 3/0 |  |
+| 8 | Charlie Crew | CDM,CM | 20 | Wales | 1,0 M€ | 6,57 | 0 | 0 | 2/0 |  |
+| 14 | Antony Evans | CAM | 28 | England | 152 k€ | 6,53 | 0 | 0 | 0/0 |  |
+| 15 | Isaac Moore | CDM,CM,RW | 20 | England | – | 6,98 | 1 | 0 | 2/0 |  |
+| 17 | Courtney Clarke | CM,RW,CAM,LW,RWB | 23 | England | 149 k€ | 6,82 | 0 | 2 | 0/0 |  |
+| 23 | Alexander Pattison | CM,CDM,CAM | 29 | England | – | – | 0 | 0 | 0/0 |  |
+| 27 | Dylan Thomas | Midfielder | 19 | England | – | – | 0 | 0 | 0/0 |  |
+| 53 | Will Etheridge | CAM | 18 | England | – | – | 0 | 1 | 0/0 |  |
+| 56 | McLloyd Oben | Midfielder | 0 | England | – | – | 0 | 0 | 0/0 |  |
+| 57 | Ryan Sjoerdsma | Midfielder | 0 | England | – | – | 0 | 0 | 0/0 |  |
+| 59 | Stan Straw | CAM | 0 | England | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Tai Sodje | ST | 23 | England | – | 6,49 | 0 | 0 | 1/0 |  |
+| 9 | Andrew Dallas | ST,CAM | 27 | Scotland | 233 k€ | 6,50 | 1 | 0 | 0/0 |  |
+| 10 | Lewis Simper | RW,CM,CAM,RM,ST,LW | 25 | England | 152 k€ | 6,71 | 0 | 0 | 1/0 |  |
+| 11 | Reece Smith | LW,CAM,LM | 24 | England | 283 k€ | 7,49 | 2 | 2 | 0/0 |  |
+| 19 | Aaron Pressley | ST | 24 | Scotland | 250 k€ | 7,22 | 4 | 0 | 0/0 |  |
+| 37 | Albert Adomah | RW,ST,LW | 38 | Ghana | 125 k€ | 5,95 | 0 | 0 | 0/0 |  |

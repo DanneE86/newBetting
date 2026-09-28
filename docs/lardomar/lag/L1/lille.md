@@ -5,6 +5,7 @@ Genererad 2026-09-28. Ligans lärdomar: [L1](../../ligor/L1.md). "Mot marknaden"
 ## I korthet
 
 - Stark historik mot Nice (−0,50 p/match mot marknaden, 16 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Utan Matias Fernandez-Pardo (11 % av anfallet): 2,67 poäng per match mot 1,73 med (6 mot 66 matcher), mot marknaden +0,71 mot +0,03.
 - På Stryktipset/Europatipset streckas lagets vinst ×0,87 av vår sannolikhet (11 matcher). Folket underspelar laget: dess vinst ger streckvärde.
 
 ## Nuläge (senaste 8 ligamatcher)
@@ -13,8 +14,8 @@ Form (äldst → senast): OVFVOVVF · senaste match 2026-09-20
 
 | Mått | Värde |
 |---|---|
-| Tur (poäng − xP per match) | +0,09 |
-| xG-målskillnad − målskillnad | +0,01 |
+| Tur (poäng − xP per match) | +0,26 |
+| xG-målskillnad − målskillnad | −0,28 |
 | Poäng mot marknaden per match | +0,01 |
 
 ## Säsonger
@@ -30,9 +31,22 @@ Form (äldst → senast): OVFVOVVF · senaste match 2026-09-20
 | 2023/24 | L1 | 34 | 1,74 | +0,12 (+0,29 / −0,05) | 32 % (26 %) | 1,53–1,00 | 1,63–1,19 | 1,60 |
 | 2024/25 | L1 | 34 | 1,76 | +0,08 (+0,26 / −0,11) | 26 % (25 %) | 1,53–1,06 | 1,78–1,35 | 1,64 |
 | 2025/26 | L1 | 34 | 1,79 | +0,06 (−0,12 / +0,25) | 21 % (25 %) | 1,53–1,09 | 1,67–1,14 | 1,65 |
-| 2026/27 | L1 | 5 | 2,00 | +0,22 (+0,50 / +0,03) | 20 % (25 %) | 1,60–0,80 | 1,78–1,62* | 1,53 |
+| 2026/27 | L1 | 5 | 2,00 | +0,22 (+0,50 / +0,03) | 20 % (25 %) | 1,60–0,80 | 1,48–1,78 | 1,26 |
 
-\* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+## Nyckelspelare (Understat, 2024/25–)
+
+Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
+
+| Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
+|---|---|---|---|---|
+| Ayase Ueda | 24 % | 0 / 72 | – / 1,81 | – / +0,09 |
+| Maurits Kjærgaard | 16 % | 0 / 72 | – / 1,81 | – / +0,09 |
+| Hákon Haraldsson | 12 % | 1 / 71 | 3,00 / 1,79 | +0,93 / +0,07 |
+| Matias Fernandez-Pardo | 11 % | 6 / 66 | 2,67 / 1,73 | +0,71 / +0,03 |
+| Olivier Giroud | 8 % | 0 / 72 | – / 1,81 | – / +0,09 |
+| Felix Correia | 7 % | 1 / 71 | 0,00 / 1,83 | −1,83 / +0,11 |
+
+Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -72,3 +86,41 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-09-28 | Europa 2509 | Lille - Lyon | 2 | 50 % | 42 % |
 | 2025-08-24 | Europa 2499 | Lille - Monaco | 1 ✓ | 21 % | 28 % |
 | 2025-08-17 | Europa 2497 | Brest - Lille | X | 30 % | 35 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Davide Ancelotti. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Tanguy Nianzou (skadad, åter About 1-2 weeks), Hamza Igamane (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Berke Özer | GK | 26 | Turkiye | 8,2 M€ | 7,51 | 0 | 0 | 0/0 |  |
+| 12 | Orlando Gill | GK | 26 | Paraguay | 2,8 M€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Loun Srdanovic | RB | 20 | Switzerland | – | – | 0 | 0 | 0/0 |  |
+| 3 | Nathan Ngoy | CB | 23 | Belgium | 10,7 M€ | 7,06 | 0 | 0 | 0/0 |  |
+| 4 | Alexsandro Ribeiro | CB | 27 | Brazil | 14,2 M€ | 7,23 | 0 | 0 | 0/0 |  |
+| 15 | Romain Perraud | LB,LWB | 29 | France | 4,0 M€ | 6,82 | 0 | 0 | 2/0 |  |
+| 22 | Tiago Santos | RB | 24 | Portugal | 11,3 M€ | 7,59 | 2 | 0 | 0/0 |  |
+| 23 | Tanguy Nianzou | CB | 24 | France | 1,4 M€ | – | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
+| 24 | Calvin Verdonk | LB,CM | 29 | Indonesia | 1,7 M€ | 6,31 | 0 | 0 | 0/0 |  |
+| 26 | Isaac Cossier | CB | 19 | France | 1,5 M€ | 6,17 | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Nabil Bentaleb | CDM,CM,CB | 31 | Algeria | 1,0 M€ | 7,25 | 0 | 1 | 0/0 |  |
+| 7 | Dilane Bakwa | RW,LM | 24 | France | 26,5 M€ | 7,08 | 1 | 1 | 0/0 |  |
+| 10 | Hákon Arnar Haraldsson | CAM,CM,CDM,ST | 23 | Iceland | 17,8 M€ | 7,21 | 1 | 0 | 1/0 |  |
+| 14 | Maurits Kjærgaard | CM,CDM | 23 | Denmark | 5,8 M€ | 7,42 | 0 | 2 | 1/0 |  |
+| 17 | Ngal Ayel Mukau | RW,CM,CDM,CAM | 21 | DR Congo | 11,7 M€ | 6,83 | 0 | 0 | 0/0 |  |
+| 19 | Başar Önal | LWB,LW | 22 | Turkiye | 6,8 M€ | 6,50 | 0 | 0 | 0/0 |  |
+| 21 | Benjamin André | CDM,CM | 36 | France | 2,2 M€ | 7,20 | 0 | 0 | 1/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Tiago Morais | RW,LW | 23 | Portugal | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| 8 | Ethan Mbappé | RW | 19 | France | 6,9 M€ | 6,98 | 1 | 0 | 0/0 |  |
+| 9 | Olivier Giroud | ST | 39 | France | 726 k€ | 6,93 | 1 | 2 | 1/0 |  |
+| 11 | Osame Sahraoui | LW,LM | 25 | Morocco | 7,8 M€ | 6,42 | 0 | 0 | 0/0 |  |
+| 18 | Ayase Ueda | ST | 28 | Japan | 17,3 M€ | 7,26 | 2 | 0 | 0/0 |  |
+| 28 | Gaëtan Perrin | LW,RW,ST | 30 | France | 2,7 M€ | 6,29 | 0 | 0 | 0/0 |  |
+| 29 | Hamza Igamane | ST | 23 | Morocco | 10,6 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 35 | Soriba Diaoune | ST | 19 | Guinea | 984 k€ | – | 0 | 0 | 0/0 |  |

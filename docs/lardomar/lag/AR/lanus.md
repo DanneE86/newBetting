@@ -71,3 +71,62 @@ Form (äldst → senast): FVFOFVVV · senaste match 2026-09-22
 | Gimnasia Mendoza | 1 | 0-0-1 | 0–1 | −1,42 | −35 pe | 2026-04-21 0-1 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Mauricio Pellegrino. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Luciano Romero (skadad, åter Mid October 2026), Felipe Peña Biafore (osäker), Ramiro Carrera (osäker)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Franco Petroli | GK | 28 | Argentina | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 12 | Evaristo Dieguiz | Keeper | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 26 | Nahuel Losada | GK | 33 | Argentina | 2,0 M€ | – | 0 | 0 | 0/0 |  |
+| 31 | Martín Díaz | Keeper | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 45 | Tomás Silva | Keeper | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Luciano Romero | LB | 20 | Argentina | 574 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 3 | Nicolás Morgantini | RB | 32 | Argentina | 436 k€ | – | 0 | 0 | 0/0 |  |
+| 4 | Gonzalo Pérez | RB,CDM | 25 | Uruguay | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 6 | Sasha Marcich | LB | 28 | Argentina | 2,1 M€ | – | 0 | 0 | 0/0 |  |
+| 13 | José Canale | CB | 30 | Paraguay | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 24 | Carlos Izquierdoz | CB | 37 | Argentina | 584 k€ | – | 0 | 0 | 0/0 |  |
+| 28 | Octavio Ontívero | LB | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 32 | Tobías Quiroz | CB | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 33 | Tomás Guidara | RB | 30 | Argentina | 972 k€ | – | 0 | 0 | 0/0 |  |
+| 34 | Elian Acosta | Defender | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 35 | Ronaldo Dejesús | CB | 25 | Paraguay | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 40 | Tomás López | Defender | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 42 | Sebastián Leiva | Defender | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 43 | Mateo Ramírez | Defender | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 46 | Elías Prieto | Defender | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 49 | Gabriel Aguirre | Defender | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Thiago Mejías | Midfielder | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 5 | Felipe Peña Biafore | CDM,CM | 25 | Argentina | 1,4 M€ | – | 0 | 0 | 0/0 | osäker |
+| 8 | Franco Watson | CAM,LW,RW | 24 | Argentina | 667 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Marcelino Moreno | CAM,ST | 31 | Argentina | 2,3 M€ | – | 0 | 0 | 0/0 |  |
+| 15 | Raúl Loaiza | CDM | 32 | Colombia | 403 k€ | – | 0 | 0 | 0/0 |  |
+| 16 | Matías Sepúlveda | RW,LM,RM,CM | 27 | Chile | 901 k€ | – | 0 | 0 | 0/0 |  |
+| 17 | Agustín Medina | CDM,CM | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 27 | Facundo Sánchez | CM | 21 | Argentina | 644 k€ | – | 0 | 0 | 0/0 |  |
+| 30 | Agustín Cardozo | CDM,CM | 29 | Argentina | 1,7 M€ | – | 0 | 0 | 0/0 |  |
+| 38 | Benjamín Acosta | RM | 20 | Argentina | 376 k€ | – | 0 | 0 | 0/0 |  |
+| 39 | Thiago Laplace | Midfielder | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 47 | Juan Mujica | Midfielder | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 48 | Ian López | Midfielder | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 50 | Tiago Domínguez | Midfielder | 17 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 11 | Eduardo Salvio | RW,LW,RM,CAM,LM | 36 | Argentina | 761 k€ | – | 0 | 0 | 0/0 |  |
+| 18 | Jeremías Chavero | Attacker | 20 | Argentina | 609 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | Yoshan Valois | ST | 21 | Colombia | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| 20 | Allan Wlk | ST | 23 | Paraguay | 733 k€ | – | 0 | 0 | 0/0 |  |
+| 21 | Alexis Duarte | Attacker | 19 | Paraguay | – | – | 0 | 0 | 0/0 |  |
+| 23 | Ramiro Carrera | LW,ST,CAM,CDM | 32 | Argentina | 640 k€ | – | 0 | 0 | 0/0 | osäker |
+| 29 | Dante Blanco | Attacker | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 41 | Thiago Balbuena | Attacker | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 42 | Gonzalo Lobos | LW | 19 | Paraguay | – | – | 0 | 0 | 0/0 |  |
+| 44 | Mateo Peralta | Attacker | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 77 | Lucas Besozzi | LW,RW | 23 | Argentina | 759 k€ | – | 0 | 0 | 0/0 |  |

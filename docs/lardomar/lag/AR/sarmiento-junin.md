@@ -64,3 +64,49 @@ Form (äldst → senast): VVVVFVOF · senaste match 2026-09-19
 | Estudiantes Rio Cuarto | 2 | 2-0-0 | 3–0 | +1,35 | −32 pe | 2026-09-04 2-0 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Facundo Sava. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Lucas Suárez (osäker), Joel Godoy (skadad, åter Mid October 2026), Carlos Villalba (skadad, åter Late December 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Iván Arboleda | GK | 30 | Colombia | 385 k€ | – | 0 | 0 | 0/0 |  |
+| 12 | Thyago Ayala | GK | 25 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Juan Insaurralde | CB | 41 | Argentina | 456 k€ | – | 0 | 0 | 0/0 |  |
+| 3 | Lucas Suárez | LB,CB | 31 | Argentina | 259 k€ | – | 0 | 0 | 0/0 | osäker |
+| 4 | Juan Manuel Cabrera | RB | 26 | Argentina | 345 k€ | – | 0 | 0 | 0/0 |  |
+| 6 | Gastón Arturia | CB | 26 | Argentina | 504 k€ | – | 0 | 0 | 0/0 |  |
+| 17 | Jeremías Vallejos | RB | 23 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 20 | Ulises Giménez | RB | 20 | Argentina | 724 k€ | – | 0 | 0 | 0/0 |  |
+| 29 | Thiago Santamaría | RB,RWB | 23 | Argentina | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 34 | Agustín Seyral | CB | 21 | Argentina | 813 k€ | – | 0 | 0 | 0/0 |  |
+| 39 | Joel Godoy | LB | 21 | Argentina | 1,2 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 44 | Renzo Orihuela | CB | 25 | Uruguay | 517 k€ | – | 0 | 0 | 0/0 |  |
+| 77 | Nicolás Pasquini | LB | 35 | Argentina | 250 k€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Manuel García | CM,CDM,CB | 27 | Argentina | 711 k€ | – | 0 | 0 | 0/0 |  |
+| 8 | Santiago Salle | RM,RB,LM,RW | 22 | Argentina | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 10 | Jhon Rentería | CAM,RM,LW | 20 | Colombia | 926 k€ | – | 0 | 0 | 0/0 |  |
+| 15 | Cristian Zabala | CM,CDM,CAM,LW | 28 | Argentina | 489 k€ | – | 0 | 0 | 0/0 |  |
+| 16 | Mauricio Martínez | CM,CDM | 33 | Argentina | 283 k€ | – | 0 | 0 | 0/0 |  |
+| 17 | Agustín Nadruz | CM,CDM | 30 | Uruguay | 229 k€ | – | 0 | 0 | 0/0 |  |
+| 18 | Osmar Giménez | CAM,CDM | 19 | Paraguay | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 19 | Julián Contrera | RM,RW,CM | 23 | Argentina | 902 k€ | – | 0 | 0 | 0/0 |  |
+| 21 | Julián Mavilla | LM,CAM | 26 | Argentina | 527 k€ | – | 0 | 0 | 0/0 |  |
+| 23 | Elián Giménez | CM | 22 | Argentina | 745 k€ | – | 0 | 0 | 0/0 |  |
+| 25 | Carlos Villalba | CM,CDM,CAM | 28 | Argentina | 317 k€ | – | 0 | 0 | 0/0 | skadad, åter Late December 2026 |
+| 26 | Yair Arismendi | LM,LB | 28 | Argentina | 278 k€ | – | 0 | 0 | 0/0 |  |
+| 33 | Gabriel Díaz | LM,LW,CM | 26 | Argentina | 321 k€ | – | 0 | 0 | 0/0 |  |
+| 35 | Facundo Alaggia | Midfielder | 21 | Argentina | 417 k€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Pablo Magnín | ST | 36 | Argentina | 326 k€ | – | 0 | 0 | 0/0 |  |
+| 9 | Diego Churín | ST | 36 | Argentina | 364 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Gastón González | LW | 25 | Argentina | 782 k€ | – | 0 | 0 | 0/0 |  |
+| 24 | Jonathan Herrera | ST | 35 | Argentina | 521 k€ | – | 0 | 0 | 0/0 |  |
+| 27 | Junior Marabel | ST | 28 | Paraguay | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 40 | Brandon Márquez | Attacker | 21 | Argentina | 573 k€ | – | 0 | 0 | 0/0 |  |

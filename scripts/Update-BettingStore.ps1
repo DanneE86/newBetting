@@ -1365,7 +1365,7 @@ if ($btSorted.Count -ge 400) {
         testLogLossCal = [math]::Round($sumCal / $testBt.Count, 4)
         bootstrapBetterShare = [math]::Round($share, 3)
         shrinkN = $DrawShrinkN; globalDraw = $DrawGlobal
-        reason = if ($kept) { "battre log-loss pa andra halvan" } elseif ($bestW -ge 1.0) { "okalibrerat bast redan pa forsta halvan" } else { "forbattringen inte saker (bootstrap < 90 %)" }
+        reason = if ($kept) { "b$([char]0xE4)ttre log-loss p$([char]0xE5) andra halvan" } elseif ($bestW -ge 1.0) { "okalibrerat b$([char]0xE4)st redan p$([char]0xE5) f$([char]0xF6)rsta halvan" } else { "f$([char]0xF6)rb$([char]0xE4)ttringen inte s$([char]0xE4)ker (bootstrap < 90 %)" }
     }
     Write-Host ("Kryss-kalibrering: w={0} test log-loss {1} -> {2} (bootstrap {3}) behallen={4}" -f $bestW, $drawCalMeta.testLogLossRaw, $drawCalMeta.testLogLossCal, $share, $kept)
     # Grundmodellens backtest (fore/efter) -> pro-lagret kontrollerar att aven blandningen med Dixon-Coles blir battre
@@ -1859,7 +1859,7 @@ $tipsDoc = [ordered]@{
     drawCalibration = $drawCalibration
     status = if ($filteredTips.Count -gt 0) { "upcoming_filtered" } elseif ($upcomingTips.Count -gt 0) { "upcoming_no_edge" } else { "no_upcoming" }
     message = if ($filteredTips.Count -gt 0) {
-        "Basta tips efter edge-filter (tipScore/confidence/value)."
+        "B$([char]0xE4)sta tips efter edge-filter (tipScore/confidence/value)."
     } elseif ($upcomingTips.Count -gt 0) {
         "Matcher finns men ingen passerade edge-filter - se allCandidates."
     } else {
@@ -1893,7 +1893,7 @@ $md += "## Status"
 $md += $tipsDoc.message
 $md += ""
 if ($tipsDoc.bestUpcoming.Count -gt 0) {
-    $md += "## Basta tips nu (edge-filter)"
+    $md += "## B$([char]0xE4)sta tips nu (edge-filter)"
     $md += ""
     foreach ($t in $tipsDoc.bestUpcoming) {
         $md += "### $($t.match) ($($t.league)) - score $($t.tipScore)"

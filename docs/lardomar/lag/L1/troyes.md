@@ -12,8 +12,8 @@ Form (äldst → senast): OFOOVFFF · senaste match 2026-09-19
 
 | Mått | Värde |
 |---|---|
-| Tur (poäng − xP per match) | −0,15 |
-| xG-målskillnad − målskillnad | +0,31 |
+| Tur (poäng − xP per match) | +0,01 |
+| xG-målskillnad − målskillnad | +0,01 |
 | Poäng mot marknaden per match | −0,11 |
 
 ## Säsonger
@@ -23,9 +23,22 @@ Form (äldst → senast): OFOOVFFF · senaste match 2026-09-19
 | 2017/18 | L1 | 38 | 0,87 | −0,11 (+0,09 / −0,30) | 16 % (26 %) | 0,84–1,55 | 0,98–1,38 | 1,15 |
 | 2021/22 | L1 | 38 | 1,00 | −0,02 (−0,05 / +0,01) | 29 % (26 %) | 0,97–1,39 | 1,04–1,39 | 1,18 |
 | 2022/23 | L1 | 38 | 0,63 | −0,34 (−0,30 / −0,37) | 32 % (24 %) | 1,18–2,13 | 0,97–2,21 | 0,75 |
-| 2026/27 | L1 | 5 | 0,80 | −0,38 (−0,71 / −0,16) | 20 % (26 %) | 0,80–2,20 | 1,32–1,71* | 1,14 |
+| 2026/27 | L1 | 5 | 0,80 | −0,38 (−0,71 / −0,16) | 20 % (26 %) | 0,80–2,20 | 1,24–2,10 | 0,87 |
 
-\* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+## Nyckelspelare (Understat, 2024/25–)
+
+Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
+
+| Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
+|---|---|---|---|---|
+| Jeremy Le Douaron | 20 % | 0 / 5 | – / 0,80 | – / −0,38 |
+| Antoine Mille | 12 % | 0 / 5 | – / 0,80 | – / −0,38 |
+| Renaud Ripart | 10 % | 0 / 5 | – / 0,80 | – / −0,38 |
+| Kandet Diawara | 8 % | 0 / 5 | – / 0,80 | – / −0,38 |
+| Adrien Monfray | 7 % | 0 / 5 | – / 0,80 | – / −0,38 |
+| Lucas Maronnier | 7 % | 0 / 5 | – / 0,80 | – / −0,38 |
+
+Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -48,3 +61,44 @@ Form (äldst → senast): OFOOVFFF · senaste match 2026-09-19
 | Paris FC | 1 | 0-1-0 | 0–0 | −0,12 | +73 pe | 2026-08-22 0-0 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Stéphane Dumont. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Paolo Gozzi (skadad, åter About 1-2 weeks), Ismaël Boura (skadad, åter A few weeks), Yvann Titi (skadad, åter Late October 2026), Merwan Ifnaou (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Zacharie Boucher | GK | 34 | France | 235 k€ | – | 0 | 0 | 0/0 |  |
+| 33 | Patrick Beach | GK | 23 | Australia | 1,5 M€ | 6,65 | 0 | 0 | 0/0 |  |
+| 40 | Hillel Konaté | GK | 31 | Burkina Faso | 314 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Lucas Maronnier | RB | 26 | France | 532 k€ | 6,86 | 1 | 0 | 0/0 |  |
+| 3 | Anis Ouzenadji | LB | 19 | France | 840 k€ | 6,96 | 0 | 1 | 0/0 |  |
+| 4 | Michel Diaz | CB | 23 | Ivory Coast | 5,7 M€ | 6,28 | 0 | 0 | 2/0 |  |
+| 5 | Paolo Gozzi | CB | 25 | Italy | 705 k€ | – | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
+| 6 | Adrien Monfray | CB | 35 | France | 278 k€ | 6,97 | 0 | 0 | 0/0 |  |
+| 14 | Ismaël Boura | LB,CB | 26 | Comoros | 2,2 M€ | – | 0 | 0 | 0/0 | skadad, åter A few weeks |
+| 31 | Noah Donkor | RB | 19 | France | – | 6,07 | 0 | 0 | 0/0 |  |
+| 34 | Lassana Simakha | Defender | 19 | France | – | – | 0 | 0 | 0/0 |  |
+| 37 | Tom Akpakoun | RB | 21 | France | 395 k€ | – | 0 | 0 | 0/0 |  |
+| 44 | Yvann Titi | RB | 20 | France | 2,0 M€ | 6,59 | 0 | 0 | 0/0 | skadad, åter Late October 2026 |
+| | **Mittfältare** | | | | | | | | | |
+| 8 | Mouhamed Diop | CDM,CM | 25 | Senegal | 2,6 M€ | 6,31 | 0 | 0 | 1/0 |  |
+| 9 | Jérémy Le Douaron | CAM,ST,LW | 28 | France | 2,0 M€ | 6,53 | 1 | 0 | 0/0 |  |
+| 11 | Iron Gomis | CM | 26 | France | 987 k€ | 6,69 | 0 | 0 | 1/0 |  |
+| 16 | Roman Murcy | Midfielder | 20 | France | 620 k€ | – | 0 | 0 | 0/0 |  |
+| 17 | Antoine Mille | CAM,CDM,CM | 29 | France | 1,6 M€ | 7,12 | 1 | 1 | 1/0 |  |
+| 22 | Hugo Picard | LM,CAM,LW,ST | 23 | France | 2,3 M€ | 6,80 | 0 | 0 | 0/0 |  |
+| 26 | Alexandre Phliponeau | CDM,CM | 26 | France | 404 k€ | 6,41 | 0 | 0 | 0/0 |  |
+| 29 | Dermane Karim | CAM,CDM | 22 | Togo | 2,6 M€ | 6,81 | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Kandet Diawara | LW,RW | 26 | Guinea | 501 k€ | 6,60 | 0 | 1 | 0/0 |  |
+| 10 | Merwan Ifnaou | RW,RM | 27 | France | 1,4 M€ | 7,05 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 20 | Renaud Ripart | ST,RW | 33 | France | 294 k€ | 6,56 | 1 | 0 | 0/0 |  |
+| 23 | Timothé Nkada | ST | 27 | France | 1,5 M€ | 6,17 | 0 | 0 | 0/0 |  |
+| 34 | Ibrahim Traoré | LW | 20 | France | 486 k€ | – | 0 | 0 | 0/0 |  |
+| 36 | Amadou Diakité | Attacker | 21 | France | 419 k€ | – | 0 | 0 | 0/0 |  |
+| 39 | Yacouba Kone | Attacker | 19 | France | – | 5,98 | 0 | 0 | 0/0 |  |

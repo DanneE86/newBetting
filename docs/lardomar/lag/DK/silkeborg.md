@@ -49,3 +49,40 @@ Form (äldst → senast): FVFFOOOV · senaste match 2026-09-18
 | Horsens | 6 | 2-0-4 | 7–11 | −0,62 | −25 pe | 2023-05-19 1-0 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Morten Dahm Kjærgaard. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Pontus Rödin (skadad, åter Day to day), Alexander Busch (skadad, åter Day to day), Kristian Kirkegaard (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Aske Andrésen | GK | 21 | Denmark | 516 k€ | 7,04 | 0 | 0 | 0/0 |  |
+| 16 | Bastian Holm | Keeper | 21 | Denmark | – | – | 0 | 0 | 0/0 |  |
+| 30 | Thomas Mikkelsen | GK | 43 | Denmark | 118 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Andreas Poulsen | LB | 26 | Denmark | 577 k€ | 6,04 | 0 | 0 | 0/0 |  |
+| 3 | Robin Østrøm | CB | 24 | Norway | 1,8 M€ | 6,65 | 0 | 0 | 1/0 |  |
+| 4 | Pedro Ganchas | CB | 26 | Portugal | 1,3 M€ | 6,35 | 0 | 0 | 0/0 |  |
+| 6 | Maël de Gevigney | CB,RB,LB | 27 | France | 266 k€ | 6,39 | 0 | 0 | 0/0 |  |
+| 15 | Melker Jonsson | CB | 24 | Sweden | 192 k€ | 6,06 | 0 | 0 | 0/0 |  |
+| 19 | Jens Martin Gammelby | RB,LWB,CB | 31 | Denmark | 376 k€ | 6,77 | 0 | 0 | 1/0 |  |
+| 24 | Alexander Madsen | CB | 21 | Denmark | 519 k€ | 7,22 | 1 | 0 | 1/0 |  |
+| 25 | Pontus Rödin | CB | 26 | Sweden | 543 k€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
+| 29 | William Loekke Moeller | CB | 18 | Denmark | – | 6,75 | 0 | 0 | 2/0 |  |
+| 40 | Alexander Busch | CB | 23 | Denmark | 1,3 M€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
+| | **Mittfältare** | | | | | | | | | |
+| 7 | Villads Westh | CDM,RWB,LWB,CM | 22 | Denmark | 839 k€ | 7,38 | 1 | 3 | 1/0 |  |
+| 20 | Mads Larsen | CDM,CM | 25 | Denmark | 1,4 M€ | 7,41 | 0 | 0 | 0/0 |  |
+| 22 | Rami Al Hajj | CAM,ST | 25 | Sweden | 553 k€ | 7,16 | 1 | 0 | 0/0 |  |
+| 26 | Mikkel Øxenberg | Midfielder | 19 | Denmark | – | – | 0 | 0 | 0/0 |  |
+| 27 | William Kirk | CDM,CM | 19 | Denmark | – | 6,75 | 1 | 1 | 0/0 |  |
+| 33 | Mads Freundlich | CDM | 23 | Denmark | 1,5 M€ | 6,93 | 0 | 0 | 1/0 |  |
+| 36 | Julius Nielsen | CDM | 20 | Denmark | 1,2 M€ | 5,99 | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 8 | Kristian Kirkegaard | LW,CAM,RW,LM | 28 | Denmark | 247 k€ | 6,64 | 1 | 1 | 1/0 | skadad, åter Early October 2026 |
+| 11 | Oliver Ross | CAM,ST,RW,LW | 21 | Denmark | 1,5 M€ | 7,07 | 3 | 1 | 0/0 |  |
+| 14 | Sofus Berger | RW,CAM | 23 | Denmark | 783 k€ | 6,37 | 0 | 0 | 0/0 |  |
+| 21 | Lucas Riisgaard | RW,CAM | 22 | Denmark | 558 k€ | 6,92 | 2 | 1 | 1/0 |  |

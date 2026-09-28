@@ -63,3 +63,52 @@ Form (äldst → senast): FFOFFVFV · senaste match 2026-09-21
 | Estudiantes Rio Cuarto | 1 | 0-1-0 | 0–0 | −0,61 | +66 pe | 2026-04-04 0-0 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Javier Sanguinetti. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Alan Sosa (skadad, åter Out for season), Andrés Vombergar (skadad, åter A few weeks)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 17 | Sebastián Moyano | GK | 36 | Argentina | 340 k€ | – | 0 | 0 | 0/0 |  |
+| 23 | Ignacio Chicco | GK | 30 | Argentina | 437 k€ | – | 0 | 0 | 0/0 |  |
+| 42 | Lucas Acosta | GK | 31 | Argentina | 551 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Guillermo Enrique | RB | 26 | Argentina | 440 k€ | – | 0 | 0 | 0/0 |  |
+|  | Lucas Rodríguez | LWB,LM,LB | 33 | Argentina | 275 k€ | – | 0 | 0 | 0/0 |  |
+| 2 | Leonardo Sigali | CB | 39 | Argentina | 265 k€ | – | 0 | 0 | 0/0 |  |
+| 4 | Rodrigo González | RB,RM,RWB | 26 | Argentina | 367 k€ | – | 0 | 0 | 0/0 |  |
+| 13 | Braian Cufré | LB | 29 | Argentina | 804 k€ | – | 0 | 0 | 0/0 |  |
+| 14 | Elías López | RB,RWB | 26 | Argentina | 485 k€ | – | 0 | 0 | 0/0 |  |
+| 25 | Néstor Breitenbruch | CB | 31 | Argentina | 260 k€ | – | 0 | 0 | 0/0 |  |
+| 26 | Simón Sammarone | Defender | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 28 | Santiago Moya | CB,RB | 23 | Argentina | 859 k€ | – | 0 | 0 | 0/0 |  |
+| 32 | Joaquín Pombo | CB | 25 | Argentina | 742 k€ | – | 0 | 0 | 0/0 |  |
+| 33 | Nicolás Zalazar | CB | 29 | Argentina | 384 k€ | – | 0 | 0 | 0/0 |  |
+| 38 | Mateo Vales | LB | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 71 | Federico Laurelli | LB | 22 | Argentina | 614 k€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Nicolás Linares | CM,CB | 30 | Argentina | 394 k€ | – | 0 | 0 | 0/0 |  |
+| 5 | Roberto Bochi | CM,CDM | 39 | Argentina | 374 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Nicolás Gaitán | CAM | 38 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 15 | Francisco Perruzzi | CM | 25 | Argentina | 423 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | Lucas Castro | CM,CAM,CDM | 37 | Argentina | 395 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Alan Sosa | CM,CDM,CAM | 23 | Argentina | 627 k€ | – | 0 | 0 | 0/0 | skadad, åter Out for season |
+| 24 | Felipe Anso | LM | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 27 | Federico Gino | CM,CDM,CAM | 33 | Uruguay | 277 k€ | – | 0 | 0 | 0/0 |  |
+| 37 | Pablo Argoytia | Midfielder | 0 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 55 | Martín García | CM,RM,CDM | 21 | Argentina | 780 k€ | – | 0 | 0 | 0/0 |  |
+| 80 | Lautaro Chávez | RW | 25 | Argentina | 387 k€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Natanael Guzmán | RW,RM | 27 | Argentina | 321 k€ | – | 0 | 0 | 0/0 |  |
+| 9 | Nicolás Cordero | ST | 27 | Argentina | 514 k€ | – | 0 | 0 | 0/0 |  |
+| 11 | Agustín Palavecino | LW,CM,RW,RM | 23 | Argentina | 745 k€ | – | 0 | 0 | 0/0 |  |
+| 16 | Bautista Dadín | ST | 20 | Argentina | 717 k€ | – | 0 | 0 | 0/0 |  |
+| 18 | Andrés Chávez | ST | 35 | Argentina | 229 k€ | – | 0 | 0 | 0/0 |  |
+| 21 | Matías Godoy | LM,LW,RW | 24 | Argentina | 432 k€ | – | 0 | 0 | 0/0 |  |
+| 27 | Tomás Fernández | RW,ST,CAM | 28 | Argentina | 296 k€ | – | 0 | 0 | 0/0 |  |
+| 29 | Andrés Vombergar | ST | 31 | Slovenia | 1,4 M€ | – | 0 | 0 | 0/0 | skadad, åter A few weeks |
+| 48 | Augusto Fernández | Attacker | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |

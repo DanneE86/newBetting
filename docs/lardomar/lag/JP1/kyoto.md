@@ -51,3 +51,51 @@ Form (äldst → senast): FOFVOFFV · senaste match 2026-09-19
 | V-Varen Nagasaki | 1 | 0-0-1 | 1–2 | −1,57 | −29 pe | 2026-08-09 1-2 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Ranko Popović. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Gakuji Ota | GK | 35 | Japan | 180 k€ | 6,37 | 0 | 0 | 0/0 |  |
+| 21 | Kentaro Kakoi | GK | 35 | Japan | 192 k€ | – | 0 | 0 | 0/0 |  |
+| 36 | Akira Fantini | Keeper | 28 | Japan | 155 k€ | – | 0 | 0 | 0/0 |  |
+| 90 | Halls | GK | 27 | Brazil | 229 k€ | 7,01 | 0 | 0 | 0/0 |  |
+| 94 | Masaaki Murakami | GK | 34 | Japan | 221 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 5 | Hisashi Tawiah | CB | 27 | Japan | 183 k€ | 6,87 | 0 | 0 | 0/0 |  |
+| 15 | Kodai Nagata | CB | 24 | Japan | 299 k€ | 6,70 | 0 | 0 | 0/0 |  |
+| 26 | Ren Kato | LB,RB,RW | 26 | Japan | 283 k€ | 6,46 | 0 | 1 | 0/0 |  |
+| 33 | Sota Yamamoto | Defender | 22 | Japan | – | – | 0 | 0 | 0/0 |  |
+| 34 | Henrique | CB | 29 | Brazil | 169 k€ | 6,19 | 0 | 0 | 0/0 |  |
+| 40 | Yusuke Ishida | CB,RB | 23 | Japan | 258 k€ | 6,78 | 0 | 0 | 0/0 |  |
+| 43 | Weverton | CB | 23 | Brazil | 386 k€ | 6,69 | 0 | 0 | 3/0 |  |
+| 44 | Kyo Sato | LB,LWB | 26 | Japan | 392 k€ | 6,59 | 0 | 1 | 2/0 |  |
+| 50 | Yoshinori Suzuki | CB | 34 | Japan | 211 k€ | 6,86 | 0 | 0 | 0/0 |  |
+| 60 | Ryosuke Yamanaka | LWB | 33 | Japan | 118 k€ | 7,12 | 0 | 1 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | João Pedro | CAM,CDM,CM | 27 | Brazil | – | 7,09 | 1 | 0 | 1/0 |  |
+| 8 | Takuji Yonemoto | CAM | 35 | Japan | 133 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Shimpei Fukuoka | CDM | 26 | Japan | 620 k€ | 6,50 | 0 | 0 | 1/0 |  |
+| 14 | Thiago | CM | 24 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 16 | Taiyo Hiraoka | CAM | 24 | Japan | 477 k€ | – | 0 | 0 | 0/0 |  |
+| 25 | Sung-Jun Yoon | CDM,CM | 19 | South Korea | 730 k€ | 6,70 | 0 | 0 | 1/0 |  |
+| 32 | Mitsuki Saito | CDM | 27 | Japan | 170 k€ | – | 0 | 0 | 0/0 |  |
+| 48 | Ryuma Nakano | CAM,LW,CM,RW | 23 | Japan | 262 k€ | 7,04 | 2 | 1 | 0/0 |  |
+| 62 | Takaaki Shichi | CDM | 32 | Japan | 167 k€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Masaya Okugawa | RW,LW | 30 | Japan | 436 k€ | 7,32 | 0 | 1 | 0/0 |  |
+| 9 | Rafael Elias | ST | 27 | Brazil | 1,8 M€ | 7,81 | 5 | 3 | 2/0 |  |
+| 11 | Marco Túlio | RW,ST,CAM | 28 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 17 | Alex Negueba | RW | 25 | Brazil | 384 k€ | 6,84 | 1 | 0 | 2/0 |  |
+| 18 | Temma Matsuda | LW,CAM | 31 | Japan | 235 k€ | 6,40 | 0 | 0 | 2/0 |  |
+| 19 | David Silva | Attacker | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 23 | Takumi Kato | ST | 27 | Japan | 144 k€ | 5,97 | 0 | 0 | 0/0 |  |
+| 29 | Kou Sakai | LW | 18 | Japan | – | – | 0 | 0 | 0/0 |  |
+| 31 | Sora Hiraga | LW | 21 | Japan | 504 k€ | – | 0 | 0 | 0/0 |  |
+| 38 | Maceió | LW,CAM | 23 | Brazil | – | 6,39 | 0 | 0 | 0/0 |  |
+| 77 | Haruki Arai | LW,LWB,RW,CAM | 28 | Japan | 266 k€ | 6,66 | 1 | 0 | 1/0 |  |
+| 93 | Shun Nagasawa | ST | 38 | Japan | 152 k€ | 6,33 | 0 | 1 | 0/0 |  |
+| 99 | Fuchi Honda | LW | 25 | Japan | 410 k€ | 6,17 | 0 | 0 | 0/0 |  |

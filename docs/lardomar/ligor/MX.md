@@ -39,6 +39,14 @@ Underlag: 4731 matcher, säsong 2012/13 – 2026/27. Marknad = stängningsodds u
 | 65–75 % | 282 | 70,9 % | 68,7 % | +2,2 pe (0,8) | ingen effekt |
 | 75–100 % | 40 | 80,0 % | 77,6 % | +2,4 pe (0,4) | ingen effekt |
 
+## Kalibrering av oddsen (justeringsmodellen)
+
+g > 0 = favoriter vinner oftare än oddsen säger (skrällar överprissatta), h < 0 = hemmalag överprissatta, d > 0 = kryss underprissatta. Parametrarna är tränade före 2023/24. Kontroll = logloss-skillnad 2023/24– (negativ = bättre). Live används parametrar refittade på all data.
+
+| Bas | g (favoriter) | h (hemma) | d (kryss) | Kontroll | Används live |
+|---|---|---|---|---|---|
+| stängningsodds (sen körning, Stryktipset/Europatipset) | +0,055 | −0,031 | +0,022 | −0,0004 (z −0,7, n 1092) | nej |
+
 ## Signaler mot marknaden
 
 Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (|z| ≥ 2,5 i träning och ≥ 2 i kontroll krävs). "Oddsrörelse" visar om signalen förutsäger hur oddsen rör sig från öppning till stängning, alltså om marknaden lär sig det före avspark.
@@ -50,6 +58,7 @@ Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (
 | Inbördes möten, poängskillnad | −0,044 (z −2,0, n 3937) | −0,072 (z −2,9, n 2854) | +0,036 (z 0,9, n 1083) | – | – | −0,098 p | ingen effekt |
 | Inbördes möten, kryss mot förväntat | −0,030 (z −0,7, n 3937) | −0,029 (z −0,6, n 2854) | −0,042 (z −0,3, n 1083) | – | – | −0,012 p | ingen effekt |
 | Vilodagar (hemma − borta, ligamatcher) | −0,021 (z −1,9, n 4445) | −0,018 (z −1,4, n 3436) | −0,029 (z −1,4, n 1009) | – | – | −0,042 p | ingen effekt |
+| Bolagssnitt mot Pinnacle vid stängning | −0,080 (z −0,1, n 4437) | −0,089 (z −0,1, n 3626) | −0,356 (z −0,3, n 811) | – | – | −0,006 p | ingen effekt |
 
 ## Situationer
 
@@ -69,6 +78,31 @@ Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (
 ## Stryktipset och Europatipset
 
 Inga matcher från ligan i de sparade backtesten ännu.
+
+## Tabell nu (FotMob, 2026-09-28)
+
+| # | Lag | M | V | O | F | Mål | +/− | P |
+|---|---|---|---|---|---|---|---|---|
+| 1 | Toluca | 10 | 6 | 2 | 2 | 23-12 | 11 | 20 |
+| 2 | Club America | 9 | 6 | 2 | 1 | 21-10 | 11 | 20 |
+| 3 | Guadalajara Chivas | 10 | 5 | 3 | 2 | 17-10 | 7 | 18 |
+| 4 | Queretaro | 9 | 5 | 2 | 2 | 13-8 | 5 | 17 |
+| 5 | Club Leon | 10 | 5 | 2 | 3 | 14-11 | 3 | 17 |
+| 6 | Atlas | 10 | 5 | 2 | 3 | 16-17 | -1 | 17 |
+| 7 | Cruz Azul | 10 | 5 | 1 | 4 | 19-18 | 1 | 16 |
+| 8 | Club Tijuana | 9 | 4 | 2 | 3 | 14-13 | 1 | 14 |
+| 9 | Puebla | 10 | 4 | 2 | 4 | 11-12 | -1 | 14 |
+| 10 | Monterrey | 9 | 4 | 1 | 4 | 16-14 | 2 | 13 |
+| 11 | Pachuca | 10 | 3 | 3 | 4 | 15-11 | 4 | 12 |
+| 12 | UNAM Pumas | 10 | 3 | 3 | 4 | 14-16 | -2 | 12 |
+| 13 | Atl. San Luis | 10 | 3 | 3 | 4 | 14-18 | -4 | 12 |
+| 14 | Atlante | 10 | 2 | 5 | 3 | 12-15 | -3 | 11 |
+| 15 | Tigres UANL | 10 | 2 | 4 | 4 | 10-13 | -3 | 10 |
+| 16 | Santos Laguna | 10 | 3 | 1 | 6 | 10-15 | -5 | 10 |
+| 17 | Necaxa | 10 | 2 | 2 | 6 | 12-20 | -8 | 8 |
+| 18 | Juarez | 10 | 1 | 0 | 9 | 7-25 | -18 | 3 |
+
+Tabellhistorik (en rad per lag och dag sedan 2026-09-28): `data/ligor/MX.json`.
 
 ## Lagfiler
 

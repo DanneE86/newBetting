@@ -68,3 +68,50 @@ Form (äldst → senast): OFVOOVFF · senaste match 2026-09-21
 | Estudiantes Rio Cuarto | 2 | 2-0-0 | 5–0 | +1,32 | −31 pe | 2026-08-17 1-0 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Julio César Falcioni. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Gastón Suso (skadad, åter Mid January 2027), Martín Benítez (skadad, åter Mid October 2026), Kevin Ortíz (skadad, åter About 1-2 weeks)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Luis Ingolotti | GK | 26 | Argentina | 555 k€ | – | 0 | 0 | 0/0 |  |
+| 12 | Patricio Albornoz | Keeper | 26 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 25 | Tomás Durso | GK | 27 | Argentina | 754 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Ramiro Paunero | LB | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 3 | Maximiliano Villa | RB,LB | 29 | Uruguay | 471 k€ | – | 0 | 0 | 0/0 |  |
+| 6 | Gianluca Ferrari | CB | 29 | Argentina | 501 k€ | – | 0 | 0 | 0/0 |  |
+| 16 | Moisés Brandán | RB | 26 | Argentina | 750 k€ | – | 0 | 0 | 0/0 |  |
+| 17 | Juan Rodríguez | CB | 32 | Argentina | 352 k€ | – | 0 | 0 | 0/0 |  |
+| 20 | Gastón Suso | CB | 35 | Argentina | 610 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid January 2027 |
+| 21 | Ignacio Galván | LB | 24 | Argentina | 447 k€ | – | 0 | 0 | 0/0 |  |
+| 24 | Leonel Di Plácido | RB | 32 | Argentina | 378 k€ | – | 0 | 0 | 0/0 |  |
+| 26 | Clever Ferreira | CB | 23 | Paraguay | – | – | 0 | 0 | 0/0 |  |
+| 28 | Gabriel Compagnucci | RWB,RB,RW | 35 | Argentina | 459 k€ | – | 0 | 0 | 0/0 |  |
+| 32 | Juan Infante | LB | 30 | Argentina | 398 k€ | – | 0 | 0 | 0/0 |  |
+| 36 | Luciano Vallejo | CB,LB | 22 | Argentina | 512 k€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 4 | Tomás Jung | Midfielder | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 5 | Julián Fernández | CDM,CM | 31 | Argentina | 254 k€ | – | 0 | 0 | 0/0 |  |
+| 7 | Martín Benítez | LW | 32 | Argentina | 238 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 8 | Ezequiel Ham | CDM,CM,CAM | 32 | Syria | 270 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Franco Nicola | CAM,CDM,LW,RW | 24 | Uruguay | 478 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | Leonel Vega | CDM | 22 | Argentina | 528 k€ | – | 0 | 0 | 0/0 |  |
+| 31 | Lautaro Godoy | CAM,CDM | 23 | Argentina | 618 k€ | – | 0 | 0 | 0/0 |  |
+| 34 | Mauro Carrizo | Midfielder | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 37 | Ezequiel Godoy | Midfielder | 22 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 45 | Kevin Ortíz | CM,CDM | 26 | Argentina | 831 k€ | – | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Leandro Díaz | ST | 34 | Argentina | 336 k€ | – | 0 | 0 | 0/0 |  |
+| 11 | Renzo Tesuri | RW,CAM,CM,RM | 30 | Argentina | 920 k€ | – | 0 | 0 | 0/0 |  |
+| 14 | Alexis Canelo | ST,CAM | 34 | Argentina | 364 k€ | – | 0 | 0 | 0/0 |  |
+| 18 | Ramiro Ruíz Rodríguez | ST,LW | 26 | Argentina | 342 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Facundo Pimienta | Attacker | 23 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 23 | Nicolás Laméndola | LW,LM | 27 | Argentina | 413 k€ | – | 0 | 0 | 0/0 |  |
+| 27 | Rodrigo Granillo | Attacker | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 30 | Manuel Brondo | ST | 24 | Argentina | 591 k€ | – | 0 | 0 | 0/0 |  |
+| 35 | Gabriel Abeldaño | ST | 21 | Argentina | 778 k€ | – | 0 | 0 | 0/0 |  |

@@ -20,12 +20,12 @@ Form (äldst → senast): OVFVOFOV · senaste match 2026-09-26
 
 | Säsong | Liga | M | P/M | Mot marknaden (hemma / borta) | Kryss (odds) | Mål för–emot | xG för–emot | xP/M |
 |---|---|---|---|---|---|---|---|---|
-| 2017/18 | CH | 46 | 0,89 | +0,02 (−0,31 / +0,36) | 24 % (26 %) | 0,83–1,76 | 0,97–1,53* | 1,03 |
-| 2018/19 | EL1 | 46 | 1,37 | +0,00 (+0,12 / −0,11) | 26 % (28 %) | 1,43–1,24 | 1,45–1,16* | 1,55 |
+| 2017/18 | CH | 46 | 0,89 | +0,02 (−0,31 / +0,36) | 24 % (26 %) | 0,83–1,76 | 0,97–1,54* | 1,03 |
+| 2018/19 | EL1 | 46 | 1,37 | +0,00 (+0,12 / −0,11) | 26 % (28 %) | 1,43–1,24 | 1,46–1,16* | 1,55 |
 | 2019/20 | EL1 | 35 | 1,37 | −0,19 (−0,22 / −0,16) | 34 % (26 %) | 1,43–1,43 | 1,44–1,42* | 1,40 |
 | 2020/21 | EL1 | 46 | 1,24 | +0,11 (−0,20 / +0,42) | 26 % (27 %) | 1,33–1,59 | 1,19–1,40* | 1,24 |
-| 2021/22 | EL1 | 46 | 1,15 | −0,11 (+0,19 / −0,41) | 24 % (27 %) | 1,11–1,46 | 1,40–1,47* | 1,34 |
-| 2022/23 | EL1 | 46 | 1,22 | +0,04 (+0,16 / −0,08) | 24 % (26 %) | 1,24–1,72 | 1,27–1,61* | 1,19 |
+| 2021/22 | EL1 | 46 | 1,15 | −0,11 (+0,19 / −0,41) | 24 % (27 %) | 1,11–1,46 | 1,40–1,48* | 1,34 |
+| 2022/23 | EL1 | 46 | 1,22 | +0,04 (+0,16 / −0,08) | 24 % (26 %) | 1,24–1,72 | 1,28–1,62* | 1,19 |
 | 2023/24 | EL1 | 46 | 1,00 | −0,04 (−0,14 / +0,06) | 22 % (27 %) | 0,85–1,46 | 1,08–1,54* | 1,11 |
 | 2024/25 | EL1 | 46 | 1,02 | +0,03 (−0,21 / +0,27) | 30 % (26 %) | 1,07–1,43 | 1,09–1,51* | 1,11 |
 | 2025/26 | EL1 | 46 | 1,17 | +0,11 (+0,05 / +0,16) | 33 % (26 %) | 1,09–1,30 | 1,24–1,33* | 1,31 |
@@ -68,3 +68,40 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 |---|---|---|---|---|---|
 | 2026-05-02 | Stryk 4951 | Leyton Orient - Burton | X | 17 % | 24 % |
 | 2026-04-25 | Stryk 4950 | Burton - Exeter | X | 53 % | 54 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Gary Bowyer. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 27 | Kamil Dudek | GK | 20 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 34 | Corey Addai | GK | 28 | Jamaica | 183 k€ | 6,75 | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 6 | Toby Sibbick | CB,LWB,RB | 27 | Uganda | 275 k€ | 6,91 | 0 | 0 | 0/0 |  |
+| 16 | Curtis Tilt | CB | 35 | Jamaica | 253 k€ | 6,93 | 1 | 0 | 3/1 |  |
+| 20 | Jason Sraha | CB | 23 | England | 253 k€ | 6,63 | 0 | 0 | 0/0 |  |
+| 24 | Harvey Araujo | CB | 22 | England | 594 k€ | 6,64 | 0 | 0 | 0/0 |  |
+| 26 | Finn Delap | CB | 21 | England | 369 k€ | 7,60 | 2 | 0 | 0/0 |  |
+| 31 | Joe Lewis | CB | 27 | Wales | 193 k€ | 6,56 | 0 | 0 | 1/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 3 | Jack Armer | LWB,LM,CB,LB | 25 | Scotland | 346 k€ | 7,36 | 3 | 1 | 2/0 |  |
+| 4 | Kgaogelo Chauke | CDM,CM,CAM | 23 | England | 330 k€ | 7,04 | 1 | 0 | 0/0 |  |
+| 8 | Charlie Webster | CAM,CM,CDM | 22 | England | 695 k€ | 7,12 | 1 | 0 | 0/0 |  |
+| 12 | George Evans | CDM,CM,CB | 31 | England | 151 k€ | 7,15 | 1 | 0 | 1/0 |  |
+| 14 | William Collar | CM,CDM,CAM | 29 | England | 154 k€ | 6,39 | 0 | 0 | 1/0 |  |
+| 15 | Kyran Lofthouse | RWB,RM,CAM | 25 | England | 351 k€ | 7,02 | 0 | 3 | 1/0 |  |
+| 17 | Raphael Borges Rodrigues | RWB,LW,LWB,ST,CAM,RM | 23 | Australia | 887 k€ | 6,77 | 0 | 0 | 0/0 |  |
+| 18 | Caylan Vickers | CAM,ST,RW,LW | 21 | England | 271 k€ | 6,90 | 1 | 1 | 0/0 |  |
+| 23 | Emeka Adiele | LW,LB,LWB,CAM,LM | 19 | England | 270 k€ | 6,43 | 0 | 0 | 0/0 |  |
+| 25 | Ciaran Gilligan | CDM | 24 | England | 192 k€ | – | 0 | 0 | 0/0 |  |
+| 41 | Sulyman Krubally | CDM,CAM | 18 | England | 740 k€ | 6,93 | 0 | 2 | 4/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Gbemi Arubi | ST | 22 | Ireland | 206 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Mark O'Mahony | ST | 21 | Ireland | 495 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | Matthew Dennis | ST,CAM | 24 | England | 346 k€ | 6,55 | 1 | 0 | 1/0 |  |
+| 29 | Kain Adom | ST,RW,RWB,LW | 25 | England | 237 k€ | 5,96 | 0 | 0 | 0/0 |  |
+| 37 | Tomas Kalinauskas | LM,LW,ST | 26 | Lithuania | 232 k€ | – | 0 | 0 | 0/0 |  |
+| 40 | Zac Scutt | ST | 18 | England | – | 6,09 | 0 | 0 | 0/0 |  |
+| 52 | Miles Henry | Attacker | 23 | England | – | – | 0 | 0 | 0/0 |  |

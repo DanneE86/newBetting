@@ -70,3 +70,50 @@ Form (äldst → senast): VVFOVVVO · senaste match 2026-09-20
 | FC Cincinnati | 3 | 1-1-1 | 6–5 | −0,09 | +11 pe | 2025-05-29 3-3 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Eric Quill. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 30 | Michael Collodi | GK | 25 | USA | 183 k€ | 6,88 | 0 | 0 | 2/0 |  |
+| 40 | Jonathan Sirois | GK | 25 | Canada | 356 k€ | 7,23 | 0 | 0 | 0/0 |  |
+| 42 | Daniel | GK | 32 | Brazil | 432 k€ | 7,31 | 0 | 0 | 4/0 |  |
+| 98 | Eryk Dymora | GK | 23 | USA | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Geovane Jesus | RB | 25 | Brazil | 417 k€ | – | 0 | 0 | 0/0 |  |
+| 3 | Osaze Urhoghide | CB | 26 | England | 1,4 M€ | 7,16 | 2 | 1 | 6/0 |  |
+| 5 | Lalas Abubakar | CB | 31 | Ghana | 50 k€ | 6,13 | 1 | 0 | 2/0 |  |
+| 18 | Shaq Moore | CB,RB,RM | 29 | USA | 674 k€ | 7,01 | 1 | 2 | 5/0 |  |
+| 22 | Álvaro Augusto | CB | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 24 | Joshua Torquato | LB | 19 | USA | 1,1 M€ | 5,41 | 0 | 0 | 1/0 |  |
+| 25 | Sebastien Ibeagha | CB | 34 | Nigeria | 82 k€ | 6,73 | 1 | 1 | 2/0 |  |
+| 26 | Slade Starnes | CB | 22 | USA | – | – | 0 | 0 | 0/0 |  |
+| 29 | Enzo Newman | RB | 20 | USA | – | – | 0 | 0 | 0/0 |  |
+| 32 | Nolan Norris | CB,LB | 21 | USA | 727 k€ | 6,91 | 1 | 0 | 7/0 |  |
+| 34 | Kaka Scabin | Defender | 19 | USA | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Ran Binyamin | LW,CM,LB,LWB,LM,RWB | 22 | Israel | 1,1 M€ | 6,86 | 1 | 2 | 3/0 |  |
+| 8 | Patrickson Delgado | CM,CAM | 22 | Ecuador | 2,2 M€ | 6,71 | 3 | 0 | 3/0 |  |
+| 10 | Santiago Moreno | CAM,LW,LM | 26 | Colombia | 2,0 M€ | 6,95 | 3 | 2 | 1/0 |  |
+| 12 | Christian Cappis | CM,CDM,LM | 27 | USA | 356 k€ | 6,67 | 0 | 1 | 4/0 |  |
+| 14 | Herman Johansson | RM,RWB,RB | 28 | Sweden | 1,0 M€ | 6,68 | 0 | 2 | 4/0 |  |
+| 17 | Ramiro | CM,CDM,RM | 33 | Brazil | 118 k€ | 6,96 | 0 | 3 | 6/0 |  |
+| 21 | Joaquín Valiente | CAM,RW,RM | 25 | Uruguay | 1,1 M€ | 7,11 | 2 | 9 | 1/0 |  |
+| 27 | Caleb Swann | CM,CAM,CDM | 19 | USA | 906 k€ | – | 0 | 0 | 0/0 |  |
+| 33 | Clay Holstad | CDM,CM,RM | 26 | USA | 112 k€ | 6,18 | 0 | 0 | 0/0 |  |
+| 55 | Kaick Ferreira | CM,CDM,CAM | 20 | Brazil | – | 7,04 | 3 | 1 | 4/0 |  |
+| 77 | Bernard Kamungo | LM,LWB,LB | 24 | USA | 961 k€ | 7,16 | 0 | 2 | 2/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Daniel Job | LW | 21 | Nigeria | 715 k€ | – | 0 | 0 | 0/0 |  |
+| 9 | Petar Musa | ST | 28 | Croatia | 4,6 M€ | 7,60 | 18 | 5 | 2/0 |  |
+| 11 | Anderson Julio | ST | 30 | Ecuador | 1,2 M€ | 5,93 | 0 | 0 | 1/0 |  |
+| 15 | Ricky Louis | RW,ST,RM,LM | 21 | Haiti | 245 k€ | 5,98 | 0 | 0 | 0/0 |  |
+| 16 | Nicholas Simmonds | ST,RW | 19 | Jamaica | 468 k€ | 6,02 | 0 | 0 | 1/0 |  |
+| 23 | Logan Farrington | ST | 24 | USA | 1,3 M€ | 6,92 | 9 | 3 | 3/0 |  |
+| 28 | Sam Sarver | RM,RW | 23 | USA | 301 k€ | 6,52 | 3 | 1 | 4/0 |  |
+| 31 | Benjamin Flowers | LW | 15 | USA | – | – | 0 | 0 | 0/0 |  |
+| 36 | Daniel Baran | LW,LM | 20 | USA | – | – | 0 | 0 | 0/0 |  |
+| 50 | Diego García | LW,CM,CDM,ST | 19 | USA | – | – | 0 | 0 | 0/0 |  |

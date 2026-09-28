@@ -22,7 +22,7 @@ Form (äldst → senast): FOFVOVFV · senaste match 2026-09-27
 |---|---|---|---|---|---|---|---|---|
 | 2017/18 | LL2 | 42 | 1,55 | +0,04 (+0,37 / −0,29) | 26 % (30 %) | 1,29–1,14 | 1,21–1,08* | 1,45 |
 | 2018/19 | LL2 | 41 | 1,46 | −0,05 (+0,13 / −0,24) | 29 % (31 %) | 1,15–1,17 | 1,24–1,20* | 1,41 |
-| 2019/20 | LL2 | 42 | 1,26 | −0,17 (−0,09 / −0,25) | 33 % (31 %) | 1,17–1,26 | 1,16–1,29* | 1,29 |
+| 2019/20 | LL2 | 42 | 1,26 | −0,17 (−0,09 / −0,25) | 33 % (31 %) | 1,17–1,26 | 1,17–1,29* | 1,29 |
 | 2020/21 | LL2 | 42 | 1,24 | −0,10 (−0,23 / +0,03) | 45 % (33 %) | 1,07–1,10 | 1,06–1,02* | 1,39 |
 | 2021/22 | LL2 | 42 | 1,62 | +0,23 (+0,24 / +0,23) | 40 % (32 %) | 1,36–0,98 | 1,23–1,20* | 1,38 |
 | 2022/23 | LL2 | 42 | 1,40 | +0,05 (+0,11 / −0,01) | 26 % (34 %) | 0,81–0,83 | 0,96–1,19* | 1,22 |
@@ -58,3 +58,42 @@ Form (äldst → senast): FOFVOVFV · senaste match 2026-09-27
 | Sociedad B | 2 | 0-1-1 | 1–2 | −1,08 | +18 pe | 2022-02-26 0-1 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Julián Calero. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Nacho Vidal (osäker), Estanis Pedrola (skadad, åter Mid October 2026), Ilyas Chaira (skadad, åter Early October 2026), Carlos Fernández (skadad, åter Late November 2026), Alexandru Ișfan (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Miguel Narváez | Keeper | 24 | Spain | – | – | 0 | 0 | 0/0 |  |
+| 13 | Aarón Escandell | GK | 31 | Spain | 2,1 M€ | 7,20 | 0 | 0 | 1/0 |  |
+| | **Backar** | | | | | | | | | |
+| 3 | Juan Cruz | LB,CB | 34 | Spain | 723 k€ | 6,67 | 0 | 0 | 0/0 |  |
+| 4 | David Costas | CB | 31 | Spain | 956 k€ | 7,49 | 0 | 0 | 0/0 |  |
+| 12 | Dani Calvo | CB | 32 | Spain | 538 k€ | 7,24 | 1 | 0 | 2/0 |  |
+| 15 | Samu Rodríguez | LB | 21 | Spain | 440 k€ | 6,91 | 0 | 0 | 2/0 |  |
+| 21 | David Jiménez | RB | 22 | Spain | 1,7 M€ | 6,72 | 0 | 0 | 0/0 |  |
+| 22 | Nacho Vidal | RB | 31 | Spain | 800 k€ | 6,72 | 0 | 0 | 0/0 | osäker |
+| 23 | Carlos Domínguez | CB | 25 | Spain | 1,8 M€ | 7,38 | 1 | 0 | 2/0 |  |
+| 30 | Marco Esteban | Defender | 20 | Spain | 581 k€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Youness Lachhab | CM,CDM | 27 | Morocco | 514 k€ | 6,79 | 0 | 0 | 3/0 |  |
+| 6 | Dani Villahermosa | CM,CAM | 25 | Spain | 1,1 M€ | 6,92 | 0 | 0 | 1/0 |  |
+| 8 | Mikel Goti | CM,CAM | 24 | Spain | 1,1 M€ | 7,47 | 0 | 1 | 0/0 |  |
+| 10 | Alberto Reina | CAM,CM,CDM,ST,LW | 29 | Spain | 1,2 M€ | 7,06 | 0 | 0 | 2/0 |  |
+| 16 | Aritz Aldasoro | CDM,CM | 27 | Spain | 1,1 M€ | 6,26 | 0 | 0 | 0/1 |  |
+| 17 | Estanis Pedrola | LM,LW | 23 | Spain | 1,0 M€ | 6,73 | 1 | 0 | 1/0 | skadad, åter Mid October 2026 |
+| 32 | Enzo Perez | Midfielder | 17 | Spain | – | 7,02 | 1 | 1 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Brandon Dominguès | CAM | 26 | France | 454 k€ | – | 0 | 0 | 0/0 |  |
+| 2 | Aisar Ahmed | RW,RB,RWB | 25 | Spain | 630 k€ | 6,95 | 0 | 0 | 1/0 |  |
+| 7 | Ilyas Chaira | LW,LM,RW,RM | 25 | Morocco | 2,7 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 9 | Christopher Ramos | ST | 29 | Spain | 1,7 M€ | 6,35 | 1 | 0 | 1/0 |  |
+| 11 | Jacobo González | LW,LM,RW,CM,CAM,RB | 29 | Spain | 910 k€ | 6,18 | 0 | 0 | 1/0 |  |
+| 14 | Carlos Fernández | ST,CAM | 30 | Spain | 960 k€ | 5,90 | 0 | 0 | 0/0 | skadad, åter Late November 2026 |
+| 18 | Victor Mingo | Attacker | 23 | Spain | 387 k€ | 6,20 | 0 | 1 | 0/0 |  |
+| 20 | Pablo Sáenz | RW,LW,ST | 25 | Spain | 624 k€ | 7,27 | 2 | 0 | 0/0 |  |
+| 24 | Alexandru Ișfan | ST,RW,CAM,LW | 26 | Romania | 760 k€ | 6,45 | 0 | 1 | 2/0 | skadad, åter Mid October 2026 |

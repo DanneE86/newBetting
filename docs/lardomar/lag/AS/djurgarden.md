@@ -66,3 +66,39 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-11-09 | Europa 2521 | Öster - Djurgården | 2 ✓ | 55 % | 45 % |
 | 2025-11-02 | Europa 2519 | Djurgården - IFK Göteborg | X | 63 % | 55 % |
 | 2025-08-17 | Europa 2497 | Mjällby - Djurgården | X | 22 % | 31 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Jani Honkavaara. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 30 | Lukas Jonsson | GK | 33 | Sweden | 184 k€ | – | 0 | 0 | 0/0 |  |
+| 35 | Jacob Rinne | GK | 33 | Sweden | 290 k€ | 7,09 | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Lucca Gentil | Defender | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 2 | Piotr Johansson | RB,LB | 31 | Sweden | 460 k€ | 7,06 | 1 | 3 | 1/0 |  |
+| 4 | Jacob Une Larsson | CB | 32 | Sweden | 227 k€ | 7,22 | 1 | 0 | 2/0 |  |
+| 5 | Miro Tenho | CB | 31 | Finland | 360 k€ | 7,19 | 2 | 0 | 5/0 |  |
+| 18 | Adam Ståhl | RB,LB | 31 | Finland | 830 k€ | 6,69 | 1 | 1 | 2/0 |  |
+| 21 | Mikael Marqués | CB | 25 | Sweden | 454 k€ | 6,98 | 1 | 1 | 2/1 |  |
+| 24 | Max Larsson | LB,LM | 23 | Sweden | 1,2 M€ | 7,20 | 0 | 2 | 4/0 |  |
+| 25 | Daryl Tschoumy-Nana | Defender | 19 | Germany | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Peter Langhoff | CM,CDM | 22 | Denmark | 1,0 M€ | 6,53 | 0 | 0 | 1/0 |  |
+| 7 | Christos Almyras | CM,CDM | 21 | Greece | 437 k€ | 6,49 | 0 | 0 | 1/1 |  |
+| 13 | Daniel Stensson | CDM | 29 | Sweden | 410 k€ | 6,92 | 0 | 0 | 2/0 |  |
+| 16 | Bo Åsulv Hegland | CAM,LW | 22 | Norway | 1,1 M€ | 7,84 | 8 | 14 | 2/0 |  |
+| 20 | Matias Siltanen | CDM,CM | 19 | Finland | 3,8 M€ | 7,25 | 0 | 1 | 3/0 |  |
+| 28 | Alexander Andersson | Midfielder | 16 | Sweden | – | – | 0 | 1 | 0/0 |  |
+| 29 | Alexander Johansson | Midfielder | 17 | Sweden | – | 6,34 | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Angelo Agbejoye | Attacker | 19 | Nigeria | – | – | 0 | 0 | 0/0 |  |
+| 8 | Patric Åslund | RW | 24 | Sweden | 1,0 M€ | 7,20 | 6 | 1 | 0/0 |  |
+| 9 | Kristian Lien | ST | 24 | Norway | 932 k€ | 7,43 | 16 | 4 | 0/0 |  |
+| 10 | Abdul Abdulmalik | LW,CAM,RW | 23 | England | – | 6,09 | 0 | 0 | 0/0 |  |
+| 11 | Oskar Fallenius | LW,RW | 24 | Sweden | 373 k€ | 7,00 | 2 | 3 | 1/0 |  |
+| 14 | Charlie Rosenqvist | RW,RM,ST | 19 | Sweden | 2,3 M€ | 6,79 | 7 | 1 | 2/0 |  |
+| 19 | Jeppe Okkels | LW | 27 | Denmark | 1,5 M€ | 6,85 | 3 | 1 | 0/0 |  |
+| 27 | Sander Ringberg | RM | 27 | Norway | – | – | 0 | 0 | 0/0 |  |

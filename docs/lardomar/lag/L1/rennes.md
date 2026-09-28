@@ -13,8 +13,8 @@ Form (äldst → senast): FVFOVVVF · senaste match 2026-09-19
 
 | Mått | Värde |
 |---|---|
-| Tur (poäng − xP per match) | +0,43 |
-| xG-målskillnad − målskillnad | +0,10 |
+| Tur (poäng − xP per match) | +0,47 |
+| xG-målskillnad − målskillnad | −0,04 |
 | Poäng mot marknaden per match | +0,15 |
 
 ## Säsonger
@@ -30,9 +30,24 @@ Form (äldst → senast): FVFOVVVF · senaste match 2026-09-19
 | 2023/24 | L1 | 34 | 1,35 | −0,15 (−0,28 / −0,03) | 29 % (26 %) | 1,56–1,35 | 1,65–1,30 | 1,54 |
 | 2024/25 | L1 | 34 | 1,21 | −0,33 (+0,04 / −0,70) | 6 % (27 %) | 1,50–1,47 | 1,58–1,49 | 1,42 |
 | 2025/26 | L1 | 34 | 1,74 | +0,25 (+0,33 / +0,18) | 24 % (25 %) | 1,74–1,47 | 1,60–1,77 | 1,33 |
-| 2026/27 | L1 | 5 | 2,00 | +0,37 (+0,79 / −0,26) | 20 % (22 %) | 1,60–1,80 | 1,82–1,79* | 1,40 |
+| 2026/27 | L1 | 5 | 2,00 | +0,37 (+0,79 / −0,26) | 20 % (22 %) | 1,60–1,80 | 2,10–2,29* | 1,33 |
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+
+## Nyckelspelare (Understat, 2024/25–)
+
+Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
+
+| Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
+|---|---|---|---|---|
+| Esteban Lepaul | 18 % | 0 / 72 | – / 1,51 | – / −0,02 |
+| Adrien Thomasson | 13 % | 0 / 72 | – / 1,51 | – / −0,02 |
+| Ludovic Blas | 10 % | 4 / 68 | 1,50 / 1,51 | −0,26 / −0,00 |
+| Mousa Al Tamari | 9 % | 2 / 70 | 1,50 / 1,51 | −0,14 / −0,01 |
+| Breel Embolo | 7 % | 0 / 72 | – / 1,51 | – / −0,02 |
+| Mahdi Camara | 5 % | 0 / 72 | – / 1,51 | – / −0,02 |
+
+Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -71,3 +86,40 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-11-02 | Europa 2519 | Rennes - Strasbourg | 1 ✓ | 38 % | 35 % |
 | 2025-10-29 | Europa 2518 | Toulouse - Rennes | X | 21 % | 25 % |
 | 2025-09-14 | Europa 2505 | Rennes - Lyon | 1 ✓ | 40 % | 39 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Franck Haise. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 16 | Nicolas Lemaître | GK | 29 | France | 584 k€ | 7,42 | 0 | 0 | 0/0 |  |
+| 30 | Brice Samba | GK | 32 | France | 4,5 M€ | 7,05 | 0 | 0 | 0/0 |  |
+| 60 | Kilian Belazzoug | GK | 20 | Algeria | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 4 | Charlie Cresswell | CB | 24 | England | 15,3 M€ | 6,86 | 0 | 0 | 1/0 |  |
+| 5 | Gonçalo Oliveira | CB | 20 | Portugal | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 14 | Bryan Reynolds | RB,LB | 25 | USA | 1,9 M€ | 6,29 | 0 | 0 | 0/0 |  |
+| 18 | Mahamadou Nagida | LB,RB,LWB | 21 | Cameroon | 1,6 M€ | 6,91 | 0 | 0 | 0/0 |  |
+| 24 | Anthony Rouault | CB | 25 | France | 11,2 M€ | 7,58 | 0 | 0 | 0/0 |  |
+| 26 | Quentin Merlin | LB,LM,RM,CM | 24 | France | 12,6 M€ | 6,42 | 0 | 0 | 1/0 |  |
+| 48 | Abdelhamid Aït Boudlal | CB | 20 | Morocco | 4,8 M€ | 6,91 | 0 | 0 | 1/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Ayanda Sishuba | Midfielder | 21 | Belgium | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 6 | Djaoui Cissé | CM | 22 | France | 13,2 M€ | – | 0 | 0 | 0/0 |  |
+| 10 | Ludovic Blas | RM,RW,CM,LW | 28 | France | 9,2 M€ | 6,98 | 0 | 0 | 0/0 |  |
+| 11 | Mousa Tamari | LM,RW,ST,LW,RM | 29 | Jordan | 3,0 M€ | 6,70 | 0 | 0 | 1/0 |  |
+| 17 | Sebastian Szymański | CAM,CM,RW,RM,CDM | 27 | Poland | 9,8 M€ | 7,16 | 1 | 1 | 0/0 |  |
+| 21 | Valentin Rongier | CM,CDM | 31 | France | 4,7 M€ | 7,45 | 1 | 0 | 1/0 |  |
+| 28 | Adrien Thomasson | CDM,CAM,CM | 32 | France | 2,5 M€ | 7,40 | 1 | 2 | 1/0 |  |
+| 45 | Mahdi Camara | CM,CAM,CDM | 28 | France | 8,2 M€ | 7,17 | 0 | 0 | 0/0 |  |
+| 95 | Przemysław Frankowski | RM,RB | 31 | Poland | 3,5 M€ | 7,09 | 1 | 1 | 1/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Estéban Lepaul | ST | 26 | France | 13,7 M€ | 7,33 | 3 | 0 | 1/0 |  |
+| 12 | Eliezer Mayenda | ST,RW | 21 | Spain | 20,2 M€ | 6,16 | 0 | 0 | 0/0 |  |
+| 22 | Boulaye Dia | ST,CAM | 29 | Senegal | 7,1 M€ | 6,17 | 0 | 0 | 0/0 |  |
+| 35 | Elías Legendre | Attacker | 18 | Ecuador | 2,1 M€ | – | 0 | 0 | 0/0 |  |
+| 65 | Henrick Do Marcolino | Attacker | 20 | Gabon | – | 6,18 | 0 | 0 | 0/0 |  |
+| 70 | Arnaud Nordin | LW,ST | 28 | France | 1,9 M€ | 5,74 | 0 | 0 | 0/0 |  |
+| 90 | Issa Soumaré | ST,LW,CAM | 25 | Senegal | 2,6 M€ | 6,76 | 0 | 1 | 1/0 |  |

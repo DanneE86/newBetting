@@ -24,10 +24,10 @@ Form (äldst → senast): FOFOOVFF · senaste match 2026-09-19
 |---|---|---|---|---|---|---|---|---|
 | 2017/18 | EL1 | 46 | 1,02 | −0,05 (−0,08 / −0,03) | 24 % (27 %) | 0,93–1,67 | 1,10–1,66* | 1,05 |
 | 2018/19 | EL2 | 46 | 1,33 | −0,06 (−0,13 / +0,01) | 41 % (28 %) | 1,39–1,37 | 1,50–1,26* | 1,53 |
-| 2019/20 | EL2 | 37 | 1,57 | +0,14 (+0,27 / −0,00) | 19 % (28 %) | 1,46–1,08 | 1,45–1,47* | 1,38 |
-| 2020/21 | EL1 | 46 | 0,98 | −0,06 (+0,08 / −0,20) | 26 % (27 %) | 0,89–1,46 | 1,05–1,36* | 1,17 |
+| 2019/20 | EL2 | 37 | 1,57 | +0,14 (+0,27 / −0,00) | 19 % (28 %) | 1,46–1,08 | 1,46–1,47* | 1,38 |
+| 2020/21 | EL1 | 46 | 0,98 | −0,06 (+0,08 / −0,20) | 26 % (27 %) | 0,89–1,46 | 1,06–1,36* | 1,17 |
 | 2021/22 | EL2 | 46 | 1,74 | +0,24 (+0,28 / +0,19) | 24 % (30 %) | 1,30–0,83 | 1,24–1,13* | 1,44 |
-| 2022/23 | EL2 | 46 | 1,80 | +0,33 (+0,16 / +0,51) | 30 % (29 %) | 1,35–0,91 | 1,37–1,12* | 1,54 |
+| 2022/23 | EL2 | 46 | 1,80 | +0,33 (+0,16 / +0,51) | 30 % (29 %) | 1,35–0,91 | 1,37–1,13* | 1,54 |
 | 2023/24 | EL1 | 46 | 1,30 | +0,11 (+0,29 / −0,08) | 20 % (27 %) | 1,24–1,43 | 1,23–1,45* | 1,23 |
 | 2024/25 | EL1 | 46 | 1,11 | +0,12 (−0,01 / +0,25) | 33 % (26 %) | 1,04–1,43 | 1,11–1,38* | 1,16 |
 | 2025/26 | EL1 | 46 | 0,76 | −0,28 (−0,23 / −0,34) | 17 % (26 %) | 0,85–1,61 | 1,00–1,65* | 1,00 |
@@ -61,3 +61,42 @@ Form (äldst → senast): FOFOOVFF · senaste match 2026-09-19
 | Accrington | 2 | 0-1-1 | 0–1 | −0,62 | +22 pe | 2021-02-06 0-0 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Chris Hogg. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Zachary Jeacock | GK | 25 | England | 255 k€ | 6,83 | 0 | 0 | 0/0 |  |
+| 31 | James Dadge | Keeper | 21 | England | 143 k€ | – | 0 | 0 | 0/0 |  |
+| 34 | Ross Fitzsimons | GK | 32 | England | 126 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 3 | James Maxwell | LB,CB | 24 | Scotland | 263 k€ | 7,07 | 0 | 0 | 1/0 |  |
+| 5 | John Guthrie | CB | 34 | England | 86 k€ | 7,09 | 0 | 0 | 0/0 |  |
+| 6 | Elliott Moore | CB | 29 | England | 114 k€ | 7,12 | 0 | 0 | 0/0 |  |
+| 15 | Conor McCarthy | CB | 28 | Ireland | 164 k€ | – | 0 | 0 | 0/0 |  |
+| 30 | Jack Burroughs | RB,RWB,RM,CB | 25 | Scotland | 177 k€ | – | 0 | 0 | 0/0 |  |
+| 35 | Max Dyche | CB | 23 | England | 182 k€ | 6,53 | 0 | 0 | 2/0 |  |
+| 44 | Janoi Donacien | RB,CB | 32 | Saint Lucia | 102 k€ | 7,18 | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 4 | Joe O'Brien Whitmarsh | CM,CAM,CDM,ST | 21 | Ireland | 292 k€ | 6,76 | 1 | 1 | 0/0 |  |
+| 7 | Sam Hoskins | RM,LW,ST,RW,RWB,CAM,LM | 33 | England | 184 k€ | 6,13 | 0 | 0 | 0/0 |  |
+| 8 | Lee Evans | CDM,CM | 32 | Wales | 121 k€ | 6,70 | 0 | 0 | 1/1 |  |
+| 11 | Kamarai Simon-Swyer | LW,RM,RWB,RW | 23 | England | 180 k€ | 6,08 | 0 | 0 | 0/0 |  |
+| 14 | Tyrese Fornah | CM,CDM,LW,CAM,RM,RW,ST | 27 | Sierra Leone | 227 k€ | 7,13 | 0 | 0 | 2/0 |  |
+| 16 | Joe Wormleighton | RM,RB | 22 | England | 266 k€ | 7,16 | 0 | 0 | 0/0 |  |
+| 19 | Owen Dale | LM,RW,RWB,LW,RM,LWB | 27 | England | 219 k€ | 6,25 | 0 | 0 | 0/0 |  |
+| 20 | Logan Briggs | LW,LM,CAM | 21 | England | – | 6,36 | 1 | 0 | 2/0 |  |
+| 21 | Jack Perkins | LM,LWB,CM,CB,CDM,LB | 22 | England | 188 k€ | 6,58 | 0 | 0 | 0/0 |  |
+| 29 | Liam Shaw | CDM | 25 | England | 174 k€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Matthew Warhurst | ST | 20 | England | – | 6,02 | 0 | 0 | 1/0 |  |
+| 10 | Elliott List | ST,RW,LW | 29 | England | 136 k€ | 6,83 | 0 | 0 | 0/0 |  |
+| 17 | Nathaniel Opoku | ST | 25 | Ghana | 241 k€ | 6,71 | 1 | 0 | 0/0 |  |
+| 22 | Josh Powell | LW,LB,LM,LWB | 21 | England | 437 k€ | 7,11 | 0 | 0 | 0/0 |  |
+| 24 | Connor Lemonheigh-Evans | ST | 29 | Wales | 131 k€ | 6,63 | 0 | 0 | 0/0 |  |
+| 26 | Sam Chambers | LW,ST | 19 | Scotland | 659 k€ | 6,45 | 0 | 0 | 1/0 |  |
+| 32 | Harvey Saunders | ST,LW,LM,RW,RM | 29 | England | 204 k€ | 6,32 | 0 | 0 | 0/0 |  |
+| 40 | Neo Dobson | Attacker | 19 | England | – | – | 0 | 0 | 0/0 |  |

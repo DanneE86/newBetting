@@ -63,3 +63,45 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | Datum | Spel | Match | Utfall | Folket på laget | Vår procent |
 |---|---|---|---|---|---|
 | 2026-04-30 | Europa 2570 | Viking - Rosenborg | 1 | 10 % | 15 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Freyr Alexandersson. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Iver Fossum (skadad, åter Early October 2026), Johan Bakke (skadad, åter Out for season), Dino Islamović (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Leopold Wahlstedt | GK | 27 | Sweden | 672 k€ | 6,76 | 0 | 0 | 2/0 |  |
+| 12 | Rasmus Sandberg | GK | 25 | Norway | 382 k€ | – | 0 | 0 | 0/0 |  |
+| 24 | Haakon Sørum | Keeper | 20 | Norway | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 3 | Tobias Solheim Dahl | LB | 21 | Norway | 775 k€ | 6,75 | 0 | 1 | 2/0 |  |
+| 4 | Mikkel Konradsen Ceïde | CB | 25 | Norway | 412 k€ | 6,81 | 0 | 0 | 1/0 |  |
+| 5 | Håkon Volden | CB | 19 | Norway | 1,5 M€ | 6,97 | 0 | 0 | 0/0 |  |
+| 15 | Jonas Søgaard Mortensen | RB | 25 | Denmark | 507 k€ | 6,76 | 0 | 0 | 1/0 |  |
+| 16 | Aslak Fonn Witry | RB | 30 | Norway | 550 k€ | 6,76 | 1 | 0 | 4/0 |  |
+| 19 | Adrian Pereira | LB | 27 | Norway | 926 k€ | 6,89 | 1 | 2 | 2/0 |  |
+| 21 | Tomás Nemcík | CB | 25 | Slovakia | 1,9 M€ | 7,03 | 0 | 0 | 3/0 |  |
+| 22 | Jonas Svensson | RB,LB | 33 | Norway | 471 k€ | 7,20 | 1 | 1 | 3/0 |  |
+| 23 | Mark Mampassi | CB | 23 | Congo | 614 k€ | 5,85 | 0 | 0 | 0/0 |  |
+| 26 | Ulrik Hald-Hernes | Defender | 17 | Norway | – | – | 0 | 0 | 0/0 |  |
+| 28 | Elias Slørdal | Defender | 17 | Norway | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Mathias Kjølø | CDM | 25 | Norway | 780 k€ | 6,72 | 0 | 0 | 0/0 |  |
+| 7 | Simen Bolkan Nordli | CM,LM,RM | 26 | Norway | 2,5 M€ | 6,90 | 4 | 0 | 2/0 |  |
+| 8 | Iver Fossum | CM | 30 | Norway | 331 k€ | 7,09 | 3 | 1 | 0/0 | skadad, åter Early October 2026 |
+| 10 | Ole Kristian Selnæs | CM,CDM | 32 | Norway | 449 k€ | 7,77 | 1 | 8 | 2/0 |  |
+| 17 | Mads Bomholt | CM,ST | 20 | Denmark | 2,0 M€ | 7,20 | 2 | 5 | 2/0 |  |
+| 20 | Aleksander Borgersen | Midfielder | 17 | Norway | 677 k€ | – | 0 | 0 | 0/0 |  |
+| 25 | Johan Bakke | CM,CAM | 22 | Norway | 625 k€ | 6,08 | 0 | 0 | 0/0 | skadad, åter Out for season |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Dino Islamović | ST | 32 | Montenegro | 459 k€ | 6,46 | 2 | 0 | 1/0 | skadad, åter Early October 2026 |
+| 11 | Noah Sahsah | RW,RM,LW | 21 | Denmark | 549 k€ | 7,06 | 5 | 0 | 0/0 |  |
+| 14 | Jesper Reitan-Sunde | RM,RW,RB | 20 | Norway | 1,3 M€ | 6,45 | 0 | 0 | 2/0 |  |
+| 18 | Amin Chiakha | ST,CM | 20 | Algeria | 3,5 M€ | 7,38 | 13 | 3 | 3/0 |  |
+| 29 | Dávid Ďuriš | RW,CM,CAM | 27 | Slovakia | 543 k€ | 6,50 | 1 | 0 | 3/0 |  |
+| 30 | Maciej Soboczynski | RW | 19 | Poland | – | 6,05 | 0 | 0 | 1/0 |  |
+| 35 | Emil Konradsen Ceïde | LW,LM,ST | 25 | Norway | 1,4 M€ | 7,43 | 5 | 5 | 2/0 |  |
+| 57 | Daniel Thorstensen | Attacker | 19 | Norway | – | – | 0 | 0 | 0/0 |  |

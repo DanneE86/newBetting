@@ -1,0 +1,349 @@
+{
+ "updatedAt": "2026-09-28T19:47:27.474Z",
+ "league": "CZ",
+ "fotmobId": 122,
+ "name": "1. Liga",
+ "country": "CZE",
+ "table": [
+  {
+   "rank": 1,
+   "team": "Slavia Prague",
+   "fotmobName": "Slavia Prague",
+   "fotmobId": 7787,
+   "group": null,
+   "played": 9,
+   "won": 7,
+   "drawn": 2,
+   "lost": 0,
+   "goals": "25-6",
+   "gd": 19,
+   "pts": 23
+  },
+  {
+   "rank": 2,
+   "team": "Slovan Liberec",
+   "fotmobName": "Slovan Liberec",
+   "fotmobId": 10245,
+   "group": null,
+   "played": 9,
+   "won": 6,
+   "drawn": 2,
+   "lost": 1,
+   "goals": "13-4",
+   "gd": 9,
+   "pts": 20
+  },
+  {
+   "rank": 3,
+   "team": "Mladá Boleslav",
+   "fotmobName": "Mladá Boleslav",
+   "fotmobId": 10180,
+   "group": null,
+   "played": 8,
+   "won": 5,
+   "drawn": 2,
+   "lost": 1,
+   "goals": "17-9",
+   "gd": 8,
+   "pts": 17
+  },
+  {
+   "rank": 4,
+   "team": "Sigma Olomouc",
+   "fotmobName": "Sigma Olomouc",
+   "fotmobId": 6461,
+   "group": null,
+   "played": 9,
+   "won": 5,
+   "drawn": 1,
+   "lost": 3,
+   "goals": "16-13",
+   "gd": 3,
+   "pts": 16
+  },
+  {
+   "rank": 5,
+   "team": "Teplice",
+   "fotmobName": "Teplice",
+   "fotmobId": 4721,
+   "group": null,
+   "played": 9,
+   "won": 5,
+   "drawn": 1,
+   "lost": 3,
+   "goals": "17-15",
+   "gd": 2,
+   "pts": 16
+  },
+  {
+   "rank": 6,
+   "team": "Zbrojovka Brno",
+   "fotmobName": "FC Zbrojovka Brno",
+   "fotmobId": 1673,
+   "group": null,
+   "played": 9,
+   "won": 5,
+   "drawn": 1,
+   "lost": 3,
+   "goals": "12-12",
+   "gd": 0,
+   "pts": 16
+  },
+  {
+   "rank": 7,
+   "team": "Sparta Prague",
+   "fotmobName": "Sparta Prague",
+   "fotmobId": 10247,
+   "group": null,
+   "played": 9,
+   "won": 5,
+   "drawn": 0,
+   "lost": 4,
+   "goals": "18-12",
+   "gd": 6,
+   "pts": 15
+  },
+  {
+   "rank": 8,
+   "team": "Jablonec",
+   "fotmobName": "Jablonec",
+   "fotmobId": 7758,
+   "group": null,
+   "played": 9,
+   "won": 4,
+   "drawn": 2,
+   "lost": 3,
+   "goals": "11-9",
+   "gd": 2,
+   "pts": 14
+  },
+  {
+   "rank": 9,
+   "team": "Hradec Králové",
+   "fotmobName": "Hradec Králové",
+   "fotmobId": 1712,
+   "group": null,
+   "played": 9,
+   "won": 4,
+   "drawn": 2,
+   "lost": 3,
+   "goals": "8-9",
+   "gd": -1,
+   "pts": 14
+  },
+  {
+   "rank": 10,
+   "team": "Viktoria Plzeň",
+   "fotmobName": "Viktoria Plzeň",
+   "fotmobId": 6033,
+   "group": null,
+   "played": 9,
+   "won": 2,
+   "drawn": 4,
+   "lost": 3,
+   "goals": "17-17",
+   "gd": 0,
+   "pts": 10
+  },
+  {
+   "rank": 11,
+   "team": "Baník Ostrava",
+   "fotmobName": "Baník Ostrava",
+   "fotmobId": 6362,
+   "group": null,
+   "played": 9,
+   "won": 3,
+   "drawn": 1,
+   "lost": 5,
+   "goals": "7-17",
+   "gd": -10,
+   "pts": 10
+  },
+  {
+   "rank": 12,
+   "team": "Bohemians 1905",
+   "fotmobName": "Bohemians 1905",
+   "fotmobId": 1670,
+   "group": null,
+   "played": 8,
+   "won": 2,
+   "drawn": 3,
+   "lost": 3,
+   "goals": "9-11",
+   "gd": -2,
+   "pts": 9
+  },
+  {
+   "rank": 13,
+   "team": "Pardubice",
+   "fotmobName": "Pardubice",
+   "fotmobId": 2406,
+   "group": null,
+   "played": 9,
+   "won": 2,
+   "drawn": 2,
+   "lost": 5,
+   "goals": "9-14",
+   "gd": -5,
+   "pts": 8
+  },
+  {
+   "rank": 14,
+   "team": "Artis Brno",
+   "fotmobName": "Artis Brno",
+   "fotmobId": 106189,
+   "group": null,
+   "played": 9,
+   "won": 1,
+   "drawn": 2,
+   "lost": 6,
+   "goals": "7-18",
+   "gd": -11,
+   "pts": 5
+  },
+  {
+   "rank": 15,
+   "team": "Slovácko",
+   "fotmobName": "Slovácko",
+   "fotmobId": 2021,
+   "group": null,
+   "played": 9,
+   "won": 0,
+   "drawn": 4,
+   "lost": 5,
+   "goals": "7-16",
+   "gd": -9,
+   "pts": 4
+  },
+  {
+   "rank": 16,
+   "team": "Zlín",
+   "fotmobName": "FC Zlín",
+   "fotmobId": 1860,
+   "group": null,
+   "played": 9,
+   "won": 0,
+   "drawn": 1,
+   "lost": 8,
+   "goals": "8-19",
+   "gd": -11,
+   "pts": 1
+  }
+ ],
+ "tableHistory": {
+  "2026-09-28": [
+   [
+    "Slavia Prague",
+    1,
+    9,
+    23,
+    19
+   ],
+   [
+    "Slovan Liberec",
+    2,
+    9,
+    20,
+    9
+   ],
+   [
+    "Mladá Boleslav",
+    3,
+    8,
+    17,
+    8
+   ],
+   [
+    "Sigma Olomouc",
+    4,
+    9,
+    16,
+    3
+   ],
+   [
+    "Teplice",
+    5,
+    9,
+    16,
+    2
+   ],
+   [
+    "Zbrojovka Brno",
+    6,
+    9,
+    16,
+    0
+   ],
+   [
+    "Sparta Prague",
+    7,
+    9,
+    15,
+    6
+   ],
+   [
+    "Jablonec",
+    8,
+    9,
+    14,
+    2
+   ],
+   [
+    "Hradec Králové",
+    9,
+    9,
+    14,
+    -1
+   ],
+   [
+    "Viktoria Plzeň",
+    10,
+    9,
+    10,
+    0
+   ],
+   [
+    "Baník Ostrava",
+    11,
+    9,
+    10,
+    -10
+   ],
+   [
+    "Bohemians 1905",
+    12,
+    8,
+    9,
+    -2
+   ],
+   [
+    "Pardubice",
+    13,
+    9,
+    8,
+    -5
+   ],
+   [
+    "Artis Brno",
+    14,
+    9,
+    5,
+    -11
+   ],
+   [
+    "Slovácko",
+    15,
+    9,
+    4,
+    -9
+   ],
+   [
+    "Zlín",
+    16,
+    9,
+    1,
+    -11
+   ]
+  ]
+ }
+}

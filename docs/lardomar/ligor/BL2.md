@@ -38,6 +38,15 @@ Underlag: 2808 matcher, säsong 2017/18 – 2026/27. Marknad = stängningsodds u
 | 65–75 % | 93 | 69,9 % | 68,5 % | +1,4 pe (0,3) | ingen effekt |
 | 75–100 % | 12 | 75,0 % | 77,0 % | – | för lite data |
 
+## Kalibrering av oddsen (justeringsmodellen)
+
+g > 0 = favoriter vinner oftare än oddsen säger (skrällar överprissatta), h < 0 = hemmalag överprissatta, d > 0 = kryss underprissatta. Parametrarna är tränade före 2023/24. Kontroll = logloss-skillnad 2023/24– (negativ = bättre). Live används parametrar refittade på all data.
+
+| Bas | g (favoriter) | h (hemma) | d (kryss) | Kontroll | Används live |
+|---|---|---|---|---|---|
+| öppningsodds (Oddset, långt före avspark) | −0,083 | +0,047 | +0,032 | +0,0004 (z 0,4, n 972) | ja |
+| stängningsodds (sen körning, Stryktipset/Europatipset) | −0,075 | +0,047 | +0,041 | +0,0003 (z 0,3, n 972) | nej |
+
 ## Signaler mot marknaden
 
 Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (|z| ≥ 2,5 i träning och ≥ 2 i kontroll krävs). "Oddsrörelse" visar om signalen förutsäger hur oddsen rör sig från öppning till stängning, alltså om marknaden lär sig det före avspark.
@@ -51,6 +60,9 @@ Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (
 | Inbördes möten, poängskillnad | +0,011 (z 0,4, n 1542) | +0,039 (z 1,1, n 854) | −0,026 (z −0,6, n 688) | +0,009 (z 0,3, n 1542) | −0,002 (z −1,1, n 1542) | +0,034 p | ingen effekt |
 | Inbördes möten, kryss mot förväntat | −0,026 (z −0,5, n 1542) | −0,023 (z −0,3, n 854) | −0,033 (z −0,4, n 688) | – | – | −0,015 p | ingen effekt |
 | Vilodagar (hemma − borta, ligamatcher) | −0,003 (z −0,2, n 2661) | −0,002 (z −0,1, n 1734) | −0,009 (z −0,2, n 927) | −0,004 (z −0,3, n 2661) | −0,001 (z −1,1, n 2661) | −0,009 p | ingen effekt |
+| Oddsrörelse öppning → stängning (förväntade poäng) | −0,348 (z −1,2, n 2808) | −0,094 (z −0,3, n 1836) | −0,837 (z −1,7, n 972) | – | – | −0,072 p | ingen effekt |
+| Bolagssnitt mot Pinnacle vid stängning | +0,068 (z 0,1, n 1926) | +0,352 (z 0,2, n 1224) | −0,265 (z −0,2, n 702) | – | – | +0,004 p | ingen effekt |
+| Under 2,5 mål (O/U-marknaden) mot kryss | +0,031 (z 0,2, n 2196) | −0,113 (z −0,5, n 1224) | +0,221 (z 0,8, n 972) | – | – | +0,005 p | ingen effekt |
 
 ## Situationer
 
@@ -71,6 +83,31 @@ Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (
 ## Stryktipset och Europatipset
 
 Inga matcher från ligan i de sparade backtesten ännu.
+
+## Tabell nu (FotMob, 2026-09-28)
+
+| # | Lag | M | V | O | F | Mål | +/− | P |
+|---|---|---|---|---|---|---|---|---|
+| 1 | Hertha | 6 | 6 | 0 | 0 | 17-7 | 10 | 18 |
+| 2 | Nurnberg | 6 | 5 | 1 | 0 | 16-6 | 10 | 16 |
+| 3 | Heidenheim | 6 | 4 | 1 | 1 | 14-12 | 2 | 13 |
+| 4 | Wolfsburg | 6 | 3 | 2 | 1 | 15-8 | 7 | 11 |
+| 5 | Kaiserslautern | 6 | 3 | 2 | 1 | 6-4 | 2 | 11 |
+| 6 | Magdeburg | 6 | 3 | 1 | 2 | 11-9 | 2 | 10 |
+| 7 | Cottbus | 6 | 2 | 2 | 2 | 14-13 | 1 | 8 |
+| 8 | St Pauli | 6 | 1 | 4 | 1 | 8-8 | 0 | 7 |
+| 9 | Bochum | 6 | 2 | 1 | 3 | 5-6 | -1 | 7 |
+| 10 | Hannover | 6 | 2 | 1 | 3 | 7-9 | -2 | 7 |
+| 11 | Osnabruck | 6 | 2 | 1 | 3 | 9-12 | -3 | 7 |
+| 12 | Greuther Furth | 6 | 1 | 3 | 2 | 9-11 | -2 | 6 |
+| 13 | Bielefeld | 6 | 1 | 2 | 3 | 10-12 | -2 | 5 |
+| 14 | Karlsruhe | 6 | 1 | 2 | 3 | 6-12 | -6 | 5 |
+| 15 | Braunschweig | 6 | 1 | 1 | 4 | 12-13 | -1 | 4 |
+| 16 | Holstein Kiel | 6 | 0 | 4 | 2 | 7-10 | -3 | 4 |
+| 17 | Dresden | 6 | 1 | 1 | 4 | 8-14 | -6 | 4 |
+| 18 | Darmstadt | 6 | 1 | 1 | 4 | 5-13 | -8 | 4 |
+
+Tabellhistorik (en rad per lag och dag sedan 2026-09-28): `data/ligor/BL2.json`.
 
 ## Lagfiler
 

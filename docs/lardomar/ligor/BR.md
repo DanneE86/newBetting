@@ -38,6 +38,14 @@ Underlag: 5596 matcher, säsong 2012 – 2026. Marknad = stängningsodds utan ma
 | 65–75 % | 515 | 68,9 % | 69,1 % | −0,1 pe (−0,1) | ingen effekt |
 | 75–100 % | 87 | 85,1 % | 78,4 % | +6,7 pe (1,7) | ingen effekt |
 
+## Kalibrering av oddsen (justeringsmodellen)
+
+g > 0 = favoriter vinner oftare än oddsen säger (skrällar överprissatta), h < 0 = hemmalag överprissatta, d > 0 = kryss underprissatta. Parametrarna är tränade före 2023/24. Kontroll = logloss-skillnad 2023/24– (negativ = bättre). Live används parametrar refittade på all data.
+
+| Bas | g (favoriter) | h (hemma) | d (kryss) | Kontroll | Används live |
+|---|---|---|---|---|---|
+| stängningsodds (sen körning, Stryktipset/Europatipset) | +0,016 | +0,072 | +0,033 | −0,0004 (z −0,5, n 1297) | nej |
+
 ## Signaler mot marknaden
 
 Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (|z| ≥ 2,5 i träning och ≥ 2 i kontroll krävs). "Oddsrörelse" visar om signalen förutsäger hur oddsen rör sig från öppning till stängning, alltså om marknaden lär sig det före avspark.
@@ -49,6 +57,7 @@ Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (
 | Inbördes möten, poängskillnad | −0,008 (z −0,5, n 3962) | −0,023 (z −1,1, n 2828) | +0,034 (z 1,0, n 1134) | – | – | −0,024 p | ingen effekt |
 | Inbördes möten, kryss mot förväntat | +0,027 (z 0,7, n 3962) | +0,064 (z 1,4, n 2828) | −0,093 (z −1,1, n 1134) | – | – | +0,013 p | ingen effekt |
 | Vilodagar (hemma − borta, ligamatcher) | −0,010 (z −1,0, n 5390) | −0,005 (z −0,4, n 4148) | −0,020 (z −1,2, n 1242) | – | – | −0,020 p | ingen effekt |
+| Bolagssnitt mot Pinnacle vid stängning | +0,566 (z 1,0, n 5275) | +0,766 (z 1,3, n 4299) | −0,390 (z −0,3, n 976) | – | – | +0,041 p | ingen effekt |
 
 ## Situationer
 
@@ -68,6 +77,33 @@ Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (
 ## Stryktipset och Europatipset
 
 Inga matcher från ligan i de sparade backtesten ännu.
+
+## Tabell nu (FotMob, 2026-09-28)
+
+| # | Lag | M | V | O | F | Mål | +/− | P |
+|---|---|---|---|---|---|---|---|---|
+| 1 | Flamengo RJ | 28 | 18 | 6 | 4 | 55-23 | 32 | 60 |
+| 2 | Palmeiras | 28 | 16 | 9 | 3 | 47-21 | 26 | 57 |
+| 3 | Athletico-PR | 28 | 14 | 7 | 7 | 43-32 | 11 | 49 |
+| 4 | Fluminense | 28 | 13 | 9 | 6 | 44-36 | 8 | 48 |
+| 5 | Bahia | 28 | 12 | 10 | 6 | 43-35 | 8 | 46 |
+| 6 | Cruzeiro | 28 | 13 | 6 | 9 | 42-40 | 2 | 45 |
+| 7 | Atletico-MG | 27 | 11 | 7 | 9 | 36-32 | 4 | 40 |
+| 8 | Santos | 27 | 10 | 8 | 9 | 41-40 | 1 | 38 |
+| 9 | Coritiba | 28 | 10 | 8 | 10 | 37-43 | -6 | 38 |
+| 10 | Bragantino | 27 | 10 | 6 | 11 | 33-31 | 2 | 36 |
+| 11 | Sao Paulo | 27 | 10 | 6 | 11 | 32-30 | 2 | 36 |
+| 12 | Botafogo RJ | 28 | 9 | 8 | 11 | 41-45 | -4 | 35 |
+| 13 | Vitoria | 28 | 9 | 6 | 13 | 28-42 | -14 | 33 |
+| 14 | Corinthians | 28 | 8 | 8 | 12 | 29-32 | -3 | 32 |
+| 15 | Mirassol | 28 | 8 | 8 | 12 | 33-42 | -9 | 32 |
+| 16 | Vasco | 27 | 8 | 7 | 12 | 34-41 | -7 | 31 |
+| 17 | Gremio | 28 | 7 | 8 | 13 | 30-38 | -8 | 29 |
+| 18 | Internacional | 28 | 6 | 10 | 12 | 30-36 | -6 | 28 |
+| 19 | Remo | 28 | 5 | 8 | 15 | 32-47 | -15 | 23 |
+| 20 | Chapecoense-SC | 27 | 3 | 9 | 15 | 29-53 | -24 | 18 |
+
+Tabellhistorik (en rad per lag och dag sedan 2026-09-28): `data/ligor/BR.json`.
 
 ## Lagfiler
 

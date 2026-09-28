@@ -62,3 +62,44 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-03-01 | Europa 2553 | Midtjylland - Bröndby | X | 73 % | 62 % |
 | 2026-02-08 | Europa 2547 | Midtjylland - FC Köpenhamn | 1 ✓ | 48 % | 47 % |
 | 2025-11-23 | Europa 2525 | Sönderjyske - Midtjylland | 1 | 63 % | 58 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Mike Tullberg. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Elías Ólafsson (skadad, åter Mid October 2026), Ousmane Diao (skadad, åter Day to day), Martin Erlić (skadad, åter Mid October 2026), Beni Junior (skadad, åter Mid October 2026), Mads Bech (skadad, åter Day to day), Hyun-Seok Hong (skadad, åter Early October 2026), Mikel Gogorza (skadad, åter Day to day)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Elías Ólafsson | GK | 26 | Iceland | 2,1 M€ | 7,16 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 25 | Nordin Bakker | GK | 28 | Netherlands | 346 k€ | – | 0 | 0 | 0/0 |  |
+| 30 | Ovie Ejeheri | GK | 23 | England | 535 k€ | – | 0 | 0 | 0/0 |  |
+| 60 | Mark Ugboh | GK | 22 | Nigeria | 375 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 3 | Magnus Jensen | CB | 29 | Denmark | 553 k€ | 7,27 | 2 | 0 | 2/0 |  |
+| 4 | Ousmane Diao | CB | 22 | Senegal | 6,7 M€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
+| 5 | Rasmus Kristensen | CB,RB,RWB | 29 | Denmark | 8,3 M€ | 7,40 | 1 | 0 | 4/0 |  |
+| 6 | Martin Erlić | CB | 28 | Croatia | 2,3 M€ | 7,20 | 1 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 15 | Beni Junior | LB | 21 | Ivory Coast | 657 k€ | 6,64 | 0 | 1 | 0/0 | skadad, åter Mid October 2026 |
+| 22 | Mads Bech | CB,LB | 27 | Denmark | 3,1 M€ | 7,26 | 1 | 0 | 0/0 | skadad, åter Day to day |
+| 34 | Abdou Aziz Ndiaye | CB | 20 | Senegal | – | 6,10 | 0 | 0 | 1/1 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 8 | Philip Billing | CDM,CM,RWB | 30 | Denmark | 4,8 M€ | 7,42 | 0 | 2 | 2/0 |  |
+| 19 | Pedro Bravo | CDM,CM | 21 | Colombia | 2,0 M€ | 6,85 | 0 | 0 | 0/0 |  |
+| 20 | Hyun-Seok Hong | CAM,ST,RW | 27 | South Korea | 1,8 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 21 | Denil Castillo | CDM,CM,CAM,RW | 22 | Ecuador | – | 6,62 | 1 | 0 | 0/0 |  |
+| 29 | Kjell Wätjen | CAM,CDM,RW,LW,LM | 20 | Germany | 2,8 M€ | 6,81 | 0 | 0 | 1/0 |  |
+| 33 | Alamari Djabi | CM | 20 | Guinea-Bissau | 486 k€ | – | 0 | 0 | 0/0 |  |
+| 55 | Victor Bak | LWB,LM,LB,CB | 22 | Denmark | 1,8 M€ | 6,71 | 0 | 0 | 1/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Mileta Rajović | ST | 27 | Denmark | 941 k€ | 6,49 | 0 | 1 | 0/0 |  |
+| 10 | Gue-Sung Cho | ST,CAM,CM | 28 | South Korea | 1,9 M€ | 6,82 | 1 | 1 | 0/0 |  |
+| 17 | Mikael Uhre | ST | 31 | Denmark | 1,8 M€ | 5,93 | 0 | 0 | 0/0 |  |
+| 18 | Stanley Iheanacho | ST | 21 | Nigeria | 680 k€ | 6,91 | 3 | 1 | 1/0 |  |
+| 27 | Sofus Johannesen | RW,CM,CAM | 19 | Denmark | – | 6,46 | 0 | 0 | 0/0 |  |
+| 38 | Julius Emefile | LW | 19 | Denmark | – | 6,57 | 1 | 0 | 0/1 |  |
+| 41 | Mikel Gogorza | LW,CAM | 20 | Denmark | – | – | 0 | 0 | 0/0 | skadad, åter Day to day |
+| 74 | Júnior Brumado | ST,RW | 27 | Brazil | 549 k€ | – | 0 | 0 | 0/0 |  |
+| 90 | Friday Etim | ST | 24 | Nigeria | 657 k€ | 7,27 | 4 | 2 | 1/0 |  |
+| 98 | David Martínez | RW,CAM,LWB | 20 | Venezuela | 3,5 M€ | 6,78 | 0 | 1 | 0/0 |  |

@@ -71,3 +71,48 @@ Form (äldst → senast): FFOOOOOV · senaste match 2026-09-24
 | New York City | 2 | 1-0-1 | 2–4 | +0,68 | −23 pe | 2025-10-18 2-1 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Brian Schmetzer. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Nikola Petković (skadad, åter Unknown), Jesús Ferreira (skadad, åter Late October 2026), Pedro De la Vega (skadad, åter Out for season), Paul Rothrock (skadad, åter Late October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 24 | Stefan Frei | GK | 40 | Switzerland | 50 k€ | – | 0 | 0 | 0/0 |  |
+| 26 | Andrew Thomas | GK | 28 | USA | 159 k€ | 7,20 | 0 | 0 | 0/0 |  |
+| 50 | Max Anchor | GK | 22 | Canada | 350 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 4 | Ryan Sailor | CB | 27 | USA | 59 k€ | 7,03 | 0 | 0 | 1/0 |  |
+| 5 | Nouhou Tolo | LB,CB | 29 | Cameroon | 2,0 M€ | 7,03 | 0 | 1 | 2/0 |  |
+| 16 | Álex Roldán | CB,RB,CDM | 30 | El Salvador | 1,9 M€ | 7,12 | 0 | 0 | 2/0 |  |
+| 20 | Kee-Hee Kim | CB | 37 | South Korea | 50 k€ | 6,61 | 0 | 0 | 0/0 |  |
+| 25 | Jackson Ragen | CB | 28 | USA | 1,8 M€ | 6,92 | 0 | 0 | 6/1 |  |
+| 28 | Yeimar Gómez | CB | 34 | Colombia | 269 k€ | 7,03 | 0 | 0 | 0/0 |  |
+| 35 | Antino Lopez | CB | 24 | USA | 167 k€ | 6,70 | 0 | 0 | 1/0 |  |
+| 39 | Stuart Russell Hawkins | CB | 20 | USA | – | 6,74 | 1 | 0 | 1/0 |  |
+| 53 | Gallatin Sandnes | CB | 18 | USA | – | 6,54 | 0 | 0 | 0/0 |  |
+| 85 | Kalani Rienzi | RB | 24 | USA | 632 k€ | 6,89 | 3 | 0 | 2/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Edson Carli | CAM,RW,ST,RM | 19 | USA | – | 6,02 | 0 | 0 | 0/0 |  |
+|  | Rafael Jauregui | CAM,RW,LW | 21 | USA | 334 k€ | – | 0 | 0 | 0/0 |  |
+| 7 | Cristian Roldan | CDM,CM | 31 | USA | 1,5 M€ | 7,34 | 4 | 1 | 1/0 |  |
+| 11 | Albert Rusnák | CAM | 32 | Slovakia | 1,4 M€ | 7,33 | 4 | 11 | 0/0 |  |
+| 31 | Hassani Dotson | CDM | 29 | USA | 1,8 M€ | 6,58 | 2 | 0 | 6/0 |  |
+| 32 | Xavi Gnaulati | CDM,CAM,CM,ST | 21 | USA | 276 k€ | – | 0 | 0 | 0/0 |  |
+| 37 | Snyder Brunell | CDM,CM,RW | 19 | USA | – | 6,62 | 0 | 1 | 4/0 |  |
+| 40 | Mark O'Neill | CDM,CB,RB,CM | 24 | USA | – | – | 0 | 0 | 0/0 |  |
+| 44 | Nikola Petković | CDM | 23 | Serbia | 659 k€ | 6,88 | 0 | 0 | 2/0 | skadad, åter Unknown |
+| 45 | Peter Kingston | CDM,CM,LWB,RB | 25 | USA | 190 k€ | 6,49 | 0 | 0 | 7/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 8 | Caden Clark | CAM | 23 | USA | 740 k€ | 6,47 | 1 | 0 | 1/0 |  |
+| 9 | Dejan Joveljić | ST | 27 | Serbia | 3,8 M€ | 6,94 | 11 | 1 | 1/0 |  |
+| 9 | Jesús Ferreira | RW,CAM,LW | 25 | USA | 2,2 M€ | 7,15 | 2 | 3 | 1/0 | skadad, åter Late October 2026 |
+| 10 | Pedro De la Vega | LW | 25 | Argentina | 1,5 M€ | – | 0 | 0 | 0/0 | skadad, åter Out for season |
+| 13 | Jordan Morris | ST,RW,LW | 31 | USA | 1,9 M€ | 6,89 | 2 | 3 | 0/0 |  |
+| 14 | Paul Rothrock | LW,RW | 27 | USA | 1,7 M€ | 6,94 | 5 | 1 | 4/0 | skadad, åter Late October 2026 |
+| 17 | Paul Arriola | LW,RW | 31 | USA | 1,3 M€ | 6,76 | 2 | 2 | 2/0 |  |
+| 19 | Danny Musovski | ST | 30 | North Macedonia | 1,6 M€ | 6,38 | 2 | 0 | 1/0 |  |
+| 90 | Sebastian Gomez | LW,RW,CM | 20 | USA | 719 k€ | 6,51 | 0 | 2 | 1/0 |  |

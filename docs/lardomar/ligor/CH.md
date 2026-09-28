@@ -38,6 +38,15 @@ Underlag: 5063 matcher, säsong 2017/18 – 2026/27. Marknad = stängningsodds u
 | 65–75 % | 238 | 68,9 % | 69,1 % | −0,2 pe (−0,1) | ingen effekt |
 | 75–100 % | 43 | 88,4 % | 78,3 % | +10,1 pe (2,0) | ingen effekt |
 
+## Kalibrering av oddsen (justeringsmodellen)
+
+g > 0 = favoriter vinner oftare än oddsen säger (skrällar överprissatta), h < 0 = hemmalag överprissatta, d > 0 = kryss underprissatta. Parametrarna är tränade före 2023/24. Kontroll = logloss-skillnad 2023/24– (negativ = bättre). Live används parametrar refittade på all data.
+
+| Bas | g (favoriter) | h (hemma) | d (kryss) | Kontroll | Används live |
+|---|---|---|---|---|---|
+| öppningsodds (Oddset, långt före avspark) | +0,007 | −0,018 | −0,046 | +0,0002 (z 0,4, n 1751) | ja |
+| stängningsodds (sen körning, Stryktipset/Europatipset) | −0,007 | −0,010 | −0,049 | +0,0001 (z 0,3, n 1751) | nej |
+
 ## Signaler mot marknaden
 
 Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (|z| ≥ 2,5 i träning och ≥ 2 i kontroll krävs). "Oddsrörelse" visar om signalen förutsäger hur oddsen rör sig från öppning till stängning, alltså om marknaden lär sig det före avspark.
@@ -51,6 +60,9 @@ Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (
 | Inbördes möten, poängskillnad | +0,011 (z 0,6, n 3025) | +0,008 (z 0,3, n 1642) | +0,017 (z 0,6, n 1383) | +0,014 (z 0,7, n 3025) | +0,003 (z 2,6, n 3025) | +0,034 p | ingen effekt |
 | Inbördes möten, kryss mot förväntat | −0,002 (z −0,1, n 3025) | −0,041 (z −0,8, n 1642) | +0,070 (z 1,0, n 1383) | – | – | −0,001 p | ingen effekt |
 | Vilodagar (hemma − borta, ligamatcher) | −0,003 (z −0,3, n 4929) | −0,001 (z −0,1, n 3226) | −0,008 (z −0,4, n 1703) | −0,004 (z −0,3, n 4929) | −0,001 (z −0,9, n 4929) | −0,006 p | ingen effekt |
+| Oddsrörelse öppning → stängning (förväntade poäng) | −0,163 (z −0,7, n 5063) | −0,352 (z −1,2, n 3312) | +0,187 (z 0,5, n 1751) | – | – | −0,030 p | ingen effekt |
+| Bolagssnitt mot Pinnacle vid stängning | +0,476 (z 0,5, n 3580) | +1,979 (z 1,4, n 2206) | −1,001 (z −0,7, n 1374) | – | – | +0,023 p | ingen effekt |
+| Under 2,5 mål (O/U-marknaden) mot kryss | −0,090 (z −0,8, n 3959) | −0,069 (z −0,5, n 2208) | −0,063 (z −0,4, n 1751) | – | – | −0,015 p | ingen effekt |
 
 ## Situationer
 
@@ -87,6 +99,37 @@ Källa: backtesten i `data/stryktips-backtest-2526-steg3.json`, `data/stryktips-
 
 - Folket överstreckar favoriter (×1,15). Utdelningsgränsen fångar det redan, men garderingar mot favoriter i ligan ger mer i utdelning.
 - Folket streckar kryss 2,5 procentenheter under vår procent. Kryss ger streckvärde.
+
+## Tabell nu (FotMob, 2026-09-28)
+
+| # | Lag | M | V | O | F | Mål | +/− | P |
+|---|---|---|---|---|---|---|---|---|
+| 1 | Swansea | 8 | 5 | 2 | 1 | 13-6 | 7 | 17 |
+| 2 | West Ham | 8 | 4 | 3 | 1 | 22-11 | 11 | 15 |
+| 3 | Middlesbrough | 8 | 4 | 3 | 1 | 16-12 | 4 | 15 |
+| 4 | Wolves | 7 | 4 | 2 | 1 | 15-10 | 5 | 14 |
+| 5 | West Brom | 8 | 4 | 2 | 2 | 10-8 | 2 | 14 |
+| 6 | QPR | 8 | 3 | 4 | 1 | 10-7 | 3 | 13 |
+| 7 | Stoke | 8 | 4 | 1 | 3 | 13-12 | 1 | 13 |
+| 8 | Bristol City | 8 | 4 | 1 | 3 | 11-12 | -1 | 13 |
+| 9 | Charlton | 8 | 3 | 3 | 2 | 7-10 | -3 | 12 |
+| 10 | Birmingham | 8 | 2 | 5 | 1 | 12-11 | 1 | 11 |
+| 11 | Millwall | 8 | 3 | 2 | 3 | 15-15 | 0 | 11 |
+| 12 | Lincoln | 8 | 3 | 2 | 3 | 7-8 | -1 | 11 |
+| 13 | Southampton | 8 | 4 | 2 | 2 | 19-10 | 9 | 10 |
+| 14 | Wrexham | 8 | 2 | 4 | 2 | 9-12 | -3 | 10 |
+| 15 | Bolton | 8 | 3 | 1 | 4 | 11-15 | -4 | 10 |
+| 16 | Blackburn | 8 | 2 | 3 | 3 | 12-12 | 0 | 9 |
+| 17 | Norwich | 8 | 3 | 0 | 5 | 16-17 | -1 | 9 |
+| 18 | Sheffield United | 8 | 2 | 3 | 3 | 9-11 | -2 | 9 |
+| 19 | Portsmouth | 7 | 2 | 2 | 3 | 9-10 | -1 | 8 |
+| 20 | Watford | 8 | 2 | 2 | 4 | 7-10 | -3 | 8 |
+| 21 | Cardiff | 8 | 1 | 4 | 3 | 10-12 | -2 | 7 |
+| 22 | Derby | 8 | 1 | 2 | 5 | 7-14 | -7 | 5 |
+| 23 | Preston | 8 | 1 | 1 | 6 | 8-15 | -7 | 4 |
+| 24 | Burnley | 8 | 0 | 4 | 4 | 9-17 | -8 | 4 |
+
+Tabellhistorik (en rad per lag och dag sedan 2026-09-28): `data/ligor/CH.json`.
 
 ## Lagfiler
 

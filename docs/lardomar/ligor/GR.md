@@ -6,7 +6,7 @@ Underlag: 2183 matcher, säsong 2017/18 – 2026/27. Marknad = stängningsodds u
 
 ## Lärdomar i korthet
 
-- Inga signaler slår marknaden i ligan. Lita på oddsen och lägg energin på streckvärde (Stryktipset) och bästa pris (Oddset).
+- Bolagssnitt mot Pinnacle vid stängning: svag signal (z −2,7) som inte håller i både träning och kontroll. Använd inte.
 
 ## Ligans profil
 
@@ -38,19 +38,31 @@ Underlag: 2183 matcher, säsong 2017/18 – 2026/27. Marknad = stängningsodds u
 | 65–75 % | 321 | 75,1 % | 69,8 % | +5,3 pe (2,2) | ingen effekt |
 | 75–100 % | 264 | 86,7 % | 81,1 % | +5,7 pe (2,8) | svag signal (inte bekräftad) |
 
+## Kalibrering av oddsen (justeringsmodellen)
+
+g > 0 = favoriter vinner oftare än oddsen säger (skrällar överprissatta), h < 0 = hemmalag överprissatta, d > 0 = kryss underprissatta. Parametrarna är tränade före 2023/24. Kontroll = logloss-skillnad 2023/24– (negativ = bättre). Live används parametrar refittade på all data.
+
+| Bas | g (favoriter) | h (hemma) | d (kryss) | Kontroll | Används live |
+|---|---|---|---|---|---|
+| öppningsodds (Oddset, långt före avspark) | +0,151 | −0,096 | +0,070 | −0,0009 (z −0,4, n 744) | ja |
+| stängningsodds (sen körning, Stryktipset/Europatipset) | +0,153 | −0,101 | +0,044 | −0,0014 (z −0,5, n 744) | nej |
+
 ## Signaler mot marknaden
 
 Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (|z| ≥ 2,5 i träning och ≥ 2 i kontroll krävs). "Oddsrörelse" visar om signalen förutsäger hur oddsen rör sig från öppning till stängning, alltså om marknaden lär sig det före avspark.
 
 | Signal | Hela perioden | Träning (< 2023/24) | Kontroll (2023/24–) | Mot öppningsodds | Oddsrörelse | Effekt p90–p10 | Bedömning |
 |---|---|---|---|---|---|---|---|
-| xG-tur (poäng − xP, senaste 8) | +0,031 (z 0,8, n 2099) | +0,054 (z 1,1, n 1379) | −0,018 (z −0,2, n 720) | +0,021 (z 0,5, n 2080) | −0,014 (z −3,4, n 2080) | +0,048 p | ingen effekt |
-| xG-form mot målform (xGD − GD, senaste 8) | −0,041 (z −1,4, n 2099) | −0,059 (z −1,6, n 1379) | −0,011 (z −0,2, n 720) | −0,034 (z −1,1, n 2080) | +0,008 (z 2,6, n 2080) | −0,085 p | ingen effekt |
+| xG-tur (poäng − xP, senaste 8) | +0,031 (z 0,8, n 2099) | +0,054 (z 1,1, n 1379) | −0,018 (z −0,2, n 720) | +0,020 (z 0,5, n 2080) | −0,014 (z −3,4, n 2080) | +0,048 p | ingen effekt |
+| xG-form mot målform (xGD − GD, senaste 8) | −0,041 (z −1,4, n 2099) | −0,059 (z −1,6, n 1379) | −0,011 (z −0,2, n 720) | −0,034 (z −1,1, n 2080) | +0,008 (z 2,6, n 2080) | −0,084 p | ingen effekt |
 | Form mot marknaden (poäng − förväntat, senaste 8) | −0,009 (z −0,2, n 2099) | +0,019 (z 0,3, n 1379) | −0,061 (z −0,8, n 720) | −0,004 (z −0,1, n 2080) | +0,001 (z 0,3, n 2080) | −0,013 p | ingen effekt |
 | Inbördes möten mot marknaden (≥ 3 möten, 8 år) | −0,056 (z −0,8, n 1548) | −0,074 (z −0,9, n 932) | −0,015 (z −0,1, n 616) | −0,071 (z −1,1, n 1547) | −0,012 (z −1,8, n 1547) | −0,057 p | ingen effekt |
 | Inbördes möten, poängskillnad | +0,030 (z 1,6, n 1548) | +0,031 (z 1,3, n 932) | +0,029 (z 0,9, n 616) | +0,029 (z 1,5, n 1547) | −0,000 (z −0,2, n 1547) | +0,123 p | ingen effekt |
 | Inbördes möten, kryss mot förväntat | +0,039 (z 0,6, n 1548) | +0,045 (z 0,6, n 932) | +0,026 (z 0,2, n 616) | – | – | +0,017 p | ingen effekt |
 | Vilodagar (hemma − borta, ligamatcher) | +0,009 (z 0,5, n 2089) | +0,017 (z 0,8, n 1377) | −0,013 (z −0,4, n 712) | +0,010 (z 0,5, n 2069) | −0,003 (z −1,5, n 2069) | +0,018 p | ingen effekt |
+| Oddsrörelse öppning → stängning (förväntade poäng) | +0,175 (z 0,8, n 2163) | −0,018 (z −0,1, n 1419) | +0,574 (z 1,5, n 744) | – | – | +0,049 p | ingen effekt |
+| Bolagssnitt mot Pinnacle vid stängning | −2,723 (z −2,7, n 1486) | −3,592 (z −2,8, n 960) | −1,326 (z −0,8, n 526) | – | – | −0,202 p | svag signal (inte bekräftad) |
+| Under 2,5 mål (O/U-marknaden) mot kryss | +0,206 (z 1,6, n 1704) | +0,294 (z 1,6, n 960) | +0,088 (z 0,5, n 744) | – | – | +0,044 p | ingen effekt |
 
 ## Situationer
 
@@ -70,6 +82,27 @@ Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (
 ## Stryktipset och Europatipset
 
 Inga matcher från ligan i de sparade backtesten ännu.
+
+## Tabell nu (FotMob, 2026-09-28)
+
+| # | Lag | M | V | O | F | Mål | +/− | P |
+|---|---|---|---|---|---|---|---|---|
+| 1 | Panathinaikos | 5 | 5 | 0 | 0 | 12-2 | 10 | 15 |
+| 2 | PAOK | 5 | 4 | 0 | 1 | 12-5 | 7 | 12 |
+| 3 | AEK | 5 | 3 | 2 | 0 | 13-3 | 10 | 11 |
+| 4 | OFI Crete | 5 | 3 | 1 | 1 | 8-4 | 4 | 10 |
+| 5 | Olympiakos | 5 | 3 | 1 | 1 | 4-2 | 2 | 10 |
+| 6 | Panetolikos | 5 | 3 | 0 | 2 | 8-7 | 1 | 9 |
+| 7 | Aris | 5 | 2 | 1 | 2 | 5-10 | -5 | 7 |
+| 8 | Iraklis | 5 | 1 | 3 | 1 | 4-6 | -2 | 6 |
+| 9 | Kifisia | 5 | 1 | 2 | 2 | 4-7 | -3 | 5 |
+| 10 | Kalamata | 5 | 1 | 1 | 3 | 6-8 | -2 | 4 |
+| 11 | Atromitos | 5 | 0 | 2 | 3 | 4-7 | -3 | 2 |
+| 12 | Asteras Tripolis | 5 | 0 | 2 | 3 | 4-9 | -5 | 2 |
+| 13 | Volos NFC | 5 | 0 | 2 | 3 | 4-9 | -5 | 2 |
+| 14 | Levadeiakos | 5 | 0 | 1 | 4 | 0-9 | -9 | 1 |
+
+Tabellhistorik (en rad per lag och dag sedan 2026-09-28): `data/ligor/GR.json`.
 
 ## Lagfiler
 

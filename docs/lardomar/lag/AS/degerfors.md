@@ -58,3 +58,39 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-05-16 | Europa 2575 | GAIS - Degerfors | X | 10 % | 18 % |
 | 2025-09-21 | Europa 2507 | Sirius - Degerfors | 2 ✓ | 10 % | 19 % |
 | 2025-08-24 | Europa 2499 | Degerfors - AIK | 2 | 18 % | 24 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Henok Goitom. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Juhani Pikkarainen (skadad, åter Out for season), Sebastian Ohlsson (skadad, åter Early October 2026), Kazper Karlsson (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Wille Jakobsson | GK | 24 | Sweden | 239 k€ | – | 0 | 0 | 0/0 |  |
+| 38 | Matvei Igonen | GK | 29 | Estonia | 274 k€ | 6,83 | 0 | 1 | 2/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Ahmad Faqa | CB | 23 | Syria | 246 k€ | 6,70 | 0 | 0 | 1/0 |  |
+| 3 | Nikolai Skuseth | CB | 22 | Norway | 524 k€ | 6,70 | 0 | 1 | 0/0 |  |
+| 5 | Juhani Pikkarainen | CB | 28 | Finland | 435 k€ | 7,15 | 1 | 1 | 1/0 | skadad, åter Out for season |
+| 6 | Daniel Sundgren | RB,LB | 35 | Sweden | 275 k€ | 7,10 | 1 | 3 | 4/0 |  |
+| 7 | Sebastian Ohlsson | CB | 33 | Sweden | 158 k€ | 6,44 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 15 | Nasiru Moro | CB | 30 | Ghana | 157 k€ | 6,61 | 1 | 0 | 1/0 |  |
+| 16 | Sebastian Ohlsson | CB,RB | 33 | Sweden | 181 k€ | 6,86 | 1 | 0 | 3/0 |  |
+| 18 | Samba Diatara | LB | 22 | Senegal | 478 k€ | 6,77 | 1 | 1 | 4/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 4 | Kazper Karlsson | CM,CDM | 21 | Sweden | 1,2 M€ | 6,90 | 0 | 1 | 3/0 | skadad, åter Early October 2026 |
+| 8 | Bilal Hussein | CDM,CM | 26 | Sweden | 200 k€ | 6,91 | 0 | 0 | 1/0 |  |
+| 13 | Gideon Yiriyon | RW,CM,RB | 19 | Ghana | – | 6,50 | 1 | 0 | 3/0 |  |
+| 22 | Nahom Girmai Netabay | CDM,RW,CM,CAM | 32 | Eritrea | 294 k€ | 6,93 | 1 | 3 | 5/0 |  |
+| 28 | Jesús Hernández | CB | 22 | Spain | 368 k€ | 6,51 | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Lorik Bunjaku | LW | 19 | Sweden | – | – | 0 | 0 | 0/0 |  |
+| 9 | Karim Boutera | ST | 21 | France | – | 6,32 | 0 | 0 | 3/0 |  |
+| 10 | Noel Milleskog | RW | 24 | Sweden | 700 k€ | 6,42 | 0 | 0 | 0/0 |  |
+| 11 | Dijan Vukojević | CAM,ST,LW,CM | 31 | Sweden | 311 k€ | 6,53 | 4 | 2 | 1/0 |  |
+| 14 | Ludvig Fritzson | ST,CAM,RW,RB | 31 | Sweden | 252 k€ | 6,48 | 1 | 0 | 3/0 |  |
+| 17 | Armann Taranis | ST,CAM | 25 | Denmark | 411 k€ | 6,49 | 2 | 0 | 1/0 |  |
+| 20 | Elias Barsoum | LW,CM,CDM | 24 | Sweden | 400 k€ | 6,56 | 0 | 2 | 1/0 |  |
+| 23 | Robin Dzabic | RW,CM,ST | 25 | Sweden | 388 k€ | 6,77 | 0 | 1 | 3/0 |  |

@@ -5,6 +5,7 @@ Genererad 2026-09-28. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden"
 ## I korthet
 
 - Stark historik mot Cagliari (−0,59 p/match mot marknaden, 14 möten), Genoa (+0,50 p/match mot marknaden, 14 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Utan Giovanni Simeone (12 % av anfallet): 0,50 poäng per match mot 1,20 med (6 mot 75 matcher), mot marknaden −0,68 mot +0,09.
 - På Stryktipset/Europatipset streckas lagets vinst ×0,87 av vår sannolikhet (14 matcher). Folket underspelar laget: dess vinst ger streckvärde.
 
 ## Nuläge (senaste 8 ligamatcher)
@@ -13,8 +14,8 @@ Form (äldst → senast): VFOFFVFO · senaste match 2026-09-19
 
 | Mått | Värde |
 |---|---|
-| Tur (poäng − xP per match) | −0,06 |
-| xG-målskillnad − målskillnad | −0,15 |
+| Tur (poäng − xP per match) | −0,09 |
+| xG-målskillnad − målskillnad | −0,09 |
 | Poäng mot marknaden per match | +0,01 |
 
 ## Säsonger
@@ -30,9 +31,22 @@ Form (äldst → senast): VFOFFVFO · senaste match 2026-09-19
 | 2023/24 | SA | 38 | 1,39 | −0,05 (+0,13 / −0,24) | 37 % (30 %) | 0,95–0,95 | 1,14–1,02 | 1,45 |
 | 2024/25 | SA | 38 | 1,16 | +0,04 (−0,01 / +0,08) | 37 % (29 %) | 1,03–1,18 | 0,98–1,49 | 1,07 |
 | 2025/26 | SA | 38 | 1,18 | +0,06 (+0,18 / −0,07) | 24 % (28 %) | 1,16–1,66 | 1,36–1,59 | 1,26 |
-| 2026/27 | SA | 5 | 0,80 | −0,13 (−0,81 / +0,32) | 20 % (27 %) | 1,00–1,60 | 1,04–1,65* | 0,99 |
+| 2026/27 | SA | 5 | 0,80 | −0,13 (−0,81 / +0,32) | 20 % (27 %) | 1,00–1,60 | 1,01–1,54 | 1,05 |
 
-\* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+## Nyckelspelare (Understat, 2024/25–)
+
+Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
+
+| Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
+|---|---|---|---|---|
+| Gaetano Oristanio | 23 % | 0 / 81 | – / 1,15 | – / +0,04 |
+| Giovanni Simeone | 12 % | 6 / 75 | 0,50 / 1,20 | −0,68 / +0,09 |
+| Rolando Mandragora | 12 % | 0 / 81 | – / 1,15 | – / +0,04 |
+| Rafik Belghali | 11 % | 0 / 81 | – / 1,15 | – / +0,04 |
+| Nikola Vlasic | 11 % | 2 / 79 | 1,50 / 1,14 | +0,17 / +0,03 |
+| Kian Fitz-Jim | 11 % | 0 / 81 | – / 1,15 | – / +0,04 |
+
+Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -78,3 +92,46 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-10-29 | Europa 2518 | Bologna - Torino | X | 13 % | 19 % |
 | 2025-09-21 | Europa 2507 | Torino - Atalanta | 2 | 26 % | 27 % |
 | 2025-08-31 | Europa 2501 | Torino - Fiorentina | X | 21 % | 27 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Ignazio Abate. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Pietro Pellegri (skadad, åter Back in training), Ché Adams (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 20 | Lucas Perri | GK | 28 | Brazil | 13,6 M€ | 6,08 | 0 | 0 | 0/0 |  |
+| 26 | Diego Mascardi | GK | 20 | Italy | 1,7 M€ | 6,21 | 0 | 0 | 0/0 |  |
+| 76 | Lapo Siviero | Keeper | 19 | Italy | – | – | 0 | 0 | 0/0 |  |
+| 81 | Franco Israel | GK | 26 | Uruguay | 1,9 M€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Nathan Patterson | RB | 24 | Scotland | 9,3 M€ | 6,44 | 0 | 0 | 1/0 |  |
+| 3 | Cristiano Biraghi | LWB | 34 | Italy | 516 k€ | – | 0 | 0 | 0/0 |  |
+| 5 | Eray Cömert | CB | 28 | Switzerland | 1,6 M€ | 7,05 | 0 | 1 | 0/0 |  |
+| 13 | Ricardo Rodríguez | LB | 34 | Switzerland | 1,5 M€ | 6,27 | 0 | 0 | 0/0 |  |
+| 15 | Pietro Comuzzo | CB | 21 | Italy | – | 6,87 | 1 | 0 | 0/0 |  |
+| 23 | Saúl Coco | CB | 27 | Equatorial Guinea | 8,4 M€ | 6,72 | 0 | 0 | 0/0 |  |
+| 29 | Niccolò Fortini | RB,RM,LM,RWB | 20 | Italy | 9,9 M€ | 6,46 | 0 | 0 | 0/0 |  |
+| 44 | Ardian Ismajli | CB | 29 | Albania | 2,2 M€ | 6,63 | 0 | 0 | 0/0 |  |
+| 63 | Manuel Carrascosa | Defender | 18 | Spain | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Emirhan İlkhan | CM,CDM | 22 | Turkiye | 1,7 M€ | 6,30 | 0 | 0 | 0/0 |  |
+| 7 | Zakaria Aboukhlal | LM | 26 | Morocco | 7,1 M€ | 6,24 | 0 | 0 | 0/0 |  |
+| 8 | Rolando Mandragora | CM,CDM | 29 | Italy | 5,6 M€ | 6,90 | 1 | 1 | 0/0 |  |
+| 10 | Nikola Vlašić | CM,CAM,RW,ST | 28 | Croatia | 5,6 M€ | 6,25 | 0 | 0 | 0/0 |  |
+| 21 | Daniel Bragança | CDM,CAM | 27 | Portugal | 6,8 M€ | 6,63 | 0 | 0 | 1/0 |  |
+| 22 | Cesare Casadei | CM,CAM,CDM | 23 | Italy | 13,8 M€ | 6,49 | 0 | 0 | 0/0 |  |
+| 28 | Kian Fitz-Jim | CM,CDM | 23 | Netherlands | 2,1 M€ | 6,92 | 0 | 0 | 0/0 |  |
+| 45 | Rafik Belghali | RM,RB,RWB,CAM,LM | 24 | Algeria | 4,4 M€ | 6,40 | 0 | 1 | 1/0 |  |
+| 66 | Gvidas Gineitis | CM,CDM | 22 | Lithuania | 6,3 M€ | 6,45 | 0 | 1 | 1/0 |  |
+| 77 | Alessio Cacciamani | LM,LWB | 19 | Italy | 2,8 M€ | 6,69 | 0 | 1 | 0/0 |  |
+| 79 | Andrea Luongo | CM,CDM | 18 | Italy | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Pietro Pellegri | ST | 25 | Italy | 600 k€ | – | 0 | 0 | 0/0 | skadad, åter Back in training |
+| 11 | Gaetano Oristanio | CAM,RW | 24 | Italy | 5,0 M€ | 6,22 | 0 | 0 | 0/0 |  |
+| 17 | Sandro Kulenović | ST | 26 | Croatia | 2,0 M€ | 6,73 | 1 | 0 | 0/0 |  |
+| 18 | Giovanni Simeone | ST | 31 | Argentina | 2,9 M€ | 6,21 | 0 | 0 | 0/0 |  |
+| 19 | Ché Adams | ST,CAM | 30 | Scotland | 5,5 M€ | 6,98 | 2 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 91 | Duván Zapata | ST | 35 | Colombia | 1,9 M€ | – | 0 | 0 | 0/0 |  |

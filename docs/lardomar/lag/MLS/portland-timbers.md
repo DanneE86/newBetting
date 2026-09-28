@@ -71,3 +71,44 @@ Form (äldst → senast): FVOFVOFF · senaste match 2026-09-20
 | Charlotte | 1 | 0-0-1 | 0–2 | −1,03 | −27 pe | 2024-05-05 0-2 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Martí Cifuentes. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Brandon Bye (skadad, åter Early October 2026), Zac McGraw (skadad, åter Late October 2026), Juan Mosquera (skadad, åter Early October 2026), José Caicedo (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 25 | Trey Muse | GK | 27 | USA | 67 k€ | – | 0 | 0 | 0/0 |  |
+| 26 | Hunter Sulte | GK | 24 | USA | 193 k€ | – | 0 | 0 | 0/0 |  |
+| 41 | James Pantemis | GK | 29 | Canada | 483 k€ | 6,88 | 0 | 0 | 1/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Joel Waterman | CB | 30 | Canada | 1,3 M€ | 6,88 | 1 | 0 | 6/0 |  |
+| 4 | Kamal Miller | CB | 29 | Canada | 1,2 M€ | 6,62 | 1 | 0 | 4/1 |  |
+| 5 | Brandon Bye | RB | 30 | USA | 1,0 M€ | 6,84 | 1 | 3 | 4/0 | skadad, åter Early October 2026 |
+| 6 | Alex Bonetig | CB | 24 | Australia | 562 k€ | 6,53 | 1 | 0 | 1/0 |  |
+| 12 | Ronald Hernández | RB,CB | 29 | Venezuela | 52 k€ | 6,51 | 0 | 0 | 1/0 |  |
+| 15 | Eric Miller | RB | 33 | USA | 50 k€ | 6,14 | 0 | 0 | 2/0 |  |
+| 16 | Sawyer Jura | RB | 20 | USA | – | – | 0 | 0 | 0/0 |  |
+| 18 | Zac McGraw | CB | 29 | Canada | 77 k€ | – | 0 | 0 | 0/0 | skadad, åter Late October 2026 |
+| 20 | Finn Surman | CB | 23 | New Zealand | 1,4 M€ | 6,90 | 1 | 1 | 2/0 |  |
+| 23 | Ian Smith | LB | 24 | USA | 219 k€ | 6,51 | 0 | 0 | 3/0 |  |
+| 27 | Jimer Fory | LB | 24 | Colombia | 1,3 M€ | 6,99 | 0 | 2 | 3/1 |  |
+| 29 | Juan Mosquera | RB | 24 | Colombia | 2,1 M€ | 7,28 | 1 | 1 | 0/0 | skadad, åter Early October 2026 |
+| | **Mittfältare** | | | | | | | | | |
+| 10 | David Da Costa | CAM,CM | 25 | Portugal | 3,4 M€ | 7,30 | 4 | 7 | 1/0 |  |
+| 17 | Cole Bassett | CDM,CM,CAM,LW | 25 | USA | 2,3 M€ | 7,05 | 3 | 4 | 2/0 |  |
+| 21 | Diego Chará | CDM,CM | 40 | Colombia | 50 k€ | 6,82 | 0 | 0 | 5/0 |  |
+| 30 | José Caicedo | CM,CDM | 24 | Colombia | 1,9 M€ | 7,02 | 0 | 0 | 2/0 | skadad, åter Mid October 2026 |
+| 73 | Eric Izoita | CDM,CM | 19 | USA | 917 k€ | 6,35 | 1 | 1 | 0/0 |  |
+| 80 | Joao Ortiz | CM,CDM | 30 | Ecuador | 938 k€ | 6,48 | 0 | 1 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Ariel Lassiter | RW,LW | 32 | Costa Rica | 89 k€ | 7,01 | 4 | 3 | 2/0 |  |
+| 11 | Antony | RW,LW | 25 | Brazil | 2,3 M€ | 6,77 | 3 | 2 | 0/0 |  |
+| 14 | Vincent Janssen | ST | 32 | Netherlands | 2,1 M€ | 6,76 | 3 | 0 | 2/1 |  |
+| 22 | Omir Fernandez | ST | 27 | USA | 491 k€ | 6,05 | 0 | 0 | 0/0 |  |
+| 28 | Alexander Aravena | LW | 24 | Chile | 2,4 M€ | 6,53 | 1 | 0 | 0/0 |  |
+| 88 | Gage Guerra | ST | 23 | USA | 129 k€ | 6,61 | 1 | 2 | 0/0 |  |
+| 99 | Kristoffer Velde | LW,RW | 27 | Norway | 1,6 M€ | 7,38 | 8 | 6 | 3/0 |  |

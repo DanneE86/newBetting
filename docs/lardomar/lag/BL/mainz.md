@@ -5,6 +5,7 @@ Genererad 2026-09-28. Ligans lärdomar: [BL](../../ligor/BL.md). "Mot marknaden"
 ## I korthet
 
 - Stark historik mot Hoffenheim (+0,70 p/match mot marknaden, 16 möten), RB Leipzig (+0,54 p/match mot marknaden, 16 möten), Union Berlin (−0,80 p/match mot marknaden, 14 möten), Schalke 04 (−0,59 p/match mot marknaden, 8 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Utan Nadiem Amiri (13 % av anfallet): 2,00 poäng per match mot 1,31 med (7 mot 65 matcher), mot marknaden +0,86 mot −0,07.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -12,8 +13,8 @@ Form (äldst → senast): FVFVOVFV · senaste match 2026-09-19
 
 | Mått | Värde |
 |---|---|
-| Tur (poäng − xP per match) | −0,21 |
-| xG-målskillnad − målskillnad | +0,24 |
+| Tur (poäng − xP per match) | −0,23 |
+| xG-målskillnad − målskillnad | +0,37 |
 | Poäng mot marknaden per match | +0,08 |
 
 ## Säsonger
@@ -29,9 +30,22 @@ Form (äldst → senast): FVFVOVFV · senaste match 2026-09-19
 | 2023/24 | BL | 34 | 1,03 | −0,16 (−0,22 / −0,11) | 41 % (25 %) | 1,15–1,50 | 1,52–1,49 | 1,45 |
 | 2024/25 | BL | 34 | 1,53 | +0,13 (−0,03 / +0,28) | 29 % (26 %) | 1,62–1,26 | 1,64–1,50 | 1,50 |
 | 2025/26 | BL | 34 | 1,18 | −0,08 (−0,53 / +0,38) | 29 % (25 %) | 1,29–1,56 | 1,86–1,82 | 1,46 |
-| 2026/27 | BL | 4 | 1,75 | −0,13 (−1,46 / +1,21) | 25 % (24 %) | 2,50–1,50 | 2,08–1,26* | 1,92 |
+| 2026/27 | BL | 4 | 1,75 | −0,13 (−1,46 / +1,21) | 25 % (24 %) | 2,50–1,50 | 2,64–1,55 | 1,97 |
 
-\* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+## Nyckelspelare (Understat, 2024/25–)
+
+Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
+
+| Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
+|---|---|---|---|---|
+| Phillip Tietz | 15 % | 0 / 72 | – / 1,38 | – / +0,02 |
+| Sheraldo Becker | 15 % | 0 / 72 | – / 1,38 | – / +0,02 |
+| Nadiem Amiri | 13 % | 7 / 65 | 2,00 / 1,31 | +0,86 / −0,07 |
+| Eric Martel | 7 % | 0 / 72 | – / 1,38 | – / +0,02 |
+| Paul Nebel | 7 % | 4 / 68 | 0,50 / 1,43 | −0,11 / +0,02 |
+| Anthony Caci | 6 % | 0 / 72 | – / 1,38 | – / +0,02 |
+
+Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -65,3 +79,46 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-04-19 | Europa 2567 | Mönchengladbach - Mainz | X | 24 % | 31 % |
 | 2026-03-22 | Europa 2559 | Mainz - Frankfurt | 1 ✓ | 49 % | 44 % |
 | 2025-12-21 | Europa 2533 | Mainz - St. Pauli | X | 60 % | 48 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Urs Fischer. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Robin Zentner (skadad, åter A few weeks), Dominik Kohr (skadad, åter Late October 2026), Eric Martel (skadad, åter Mid October 2026), Paul Nebel (skadad, åter A few weeks), Silvan Widmer (skadad, åter Mid October 2026), Silas Katompa Mvumpa (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Alexander Schwolow | GK | 34 | Germany | 310 k€ | 7,44 | 0 | 0 | 1/0 |  |
+| 27 | Robin Zentner | GK | 31 | Germany | 1,8 M€ | 6,51 | 0 | 0 | 0/0 | skadad, åter A few weeks |
+| 40 | Maximilian Kinzig | Keeper | 22 | Germany | 241 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Daniel Imafidon | Defender | 19 | Germany | – | – | 0 | 0 | 0/0 |  |
+| 3 | Fabio Gruber | CB | 24 | Peru | 1,7 M€ | 6,99 | 0 | 0 | 0/0 |  |
+| 4 | Stefan Posch | CB,RB | 29 | Austria | 2,8 M€ | 7,12 | 0 | 0 | 1/0 |  |
+| 16 | Stefan Bell | CB | 35 | Germany | 366 k€ | – | 0 | 0 | 0/0 |  |
+| 21 | Danny da Costa | CB,RM | 33 | Germany | 816 k€ | 7,15 | 1 | 0 | 0/0 |  |
+| 31 | Dominik Kohr | CB | 32 | Germany | 1,7 M€ | 7,12 | 0 | 0 | 0/0 | skadad, åter Late October 2026 |
+| 47 | Rael Nakuzola | Defender | 19 | Germany | – | 6,36 | 0 | 0 | 0/0 |  |
+| 48 | Kacper Potulski | CB | 18 | Poland | 1,2 M€ | 6,29 | 0 | 0 | 1/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Jeremiah Debrah | Midfielder | 17 | Germany | – | – | 0 | 0 | 0/0 |  |
+| 2 | Phillipp Mwene | LM,LB,RWB,LWB,LW | 32 | Austria | 1,0 M€ | 7,21 | 1 | 1 | 3/0 |  |
+| 5 | Eric Martel | CDM,CM,CB | 24 | Germany | 7,1 M€ | 7,09 | 1 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 6 | Kaishu Sano | CM,CDM | 25 | Japan | 21,3 M€ | 7,76 | 0 | 2 | 0/0 |  |
+| 7 | Jae-Sung Lee | CM,CAM,RW,ST,LM,CDM | 34 | South Korea | 1,3 M€ | 7,00 | 0 | 1 | 0/0 |  |
+| 8 | Paul Nebel | CM,CAM,RW | 23 | Germany | 12,3 M€ | – | 0 | 0 | 0/0 | skadad, åter A few weeks |
+| 10 | Nadiem Amiri | CM,CDM,CAM | 29 | Germany | 12,5 M€ | 7,16 | 0 | 0 | 0/0 |  |
+| 15 | Lennard Maloney | CB,CM | 26 | USA | 2,0 M€ | – | 0 | 0 | 0/0 |  |
+| 19 | Anthony Caci | RM,RW,RWB | 29 | France | 6,9 M€ | 7,16 | 0 | 1 | 1/0 |  |
+| 20 | Otto Ruoppi | CAM,RW,ST,RM,LW,LM | 20 | Finland | 970 k€ | 6,23 | 0 | 1 | 0/0 |  |
+| 24 | Sota Kawasaki | CM | 25 | Japan | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 30 | Silvan Widmer | RM,RB,LWB,LM,RWB | 33 | Switzerland | 599 k€ | 6,18 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| | **Anfallare** | | | | | | | | | |
+|  | Fabio Moreno Fell | ST | 26 | Germany | 105 k€ | – | 0 | 0 | 0/0 |  |
+| 9 | Phillip Tietz | ST | 29 | Germany | 2,8 M€ | 7,89 | 4 | 0 | 0/0 |  |
+| 11 | Ransford Königsdörffer | ST,CAM,LW,RW | 25 | Ghana | 2,8 M€ | 6,46 | 1 | 0 | 1/0 |  |
+| 17 | Benedict Hollerbach | ST,CAM | 25 | Germany | 7,7 M€ | 6,04 | 0 | 0 | 0/0 |  |
+| 23 | Sheraldo Becker | ST,RW | 31 | Suriname | 1,0 M€ | 7,70 | 2 | 3 | 1/0 |  |
+| 26 | Silas Katompa Mvumpa | ST | 27 | DR Congo | 1,3 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 39 | Alynho Haidara | Attacker | 18 | Ivory Coast | – | – | 0 | 0 | 0/0 |  |

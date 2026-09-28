@@ -22,14 +22,14 @@ Form (äldst → senast): VFOFFOOV · senaste match 2026-09-26
 |---|---|---|---|---|---|---|---|---|
 | 2017/18 | EL2 | 46 | 1,39 | +0,03 (+0,12 / −0,06) | 35 % (27 %) | 1,22–1,26 | 1,39–1,40* | 1,38 |
 | 2018/19 | EL2 | 46 | 1,54 | +0,13 (+0,53 / −0,27) | 24 % (28 %) | 1,28–1,28 | 1,40–1,27* | 1,47 |
-| 2019/20 | EL2 | 36 | 1,28 | −0,23 (+0,17 / −0,67) | 28 % (29 %) | 0,89–1,08 | 1,27–1,21* | 1,43 |
-| 2020/21 | EL2 | 46 | 1,59 | +0,09 (+0,29 / −0,10) | 28 % (30 %) | 1,24–0,91 | 1,37–1,13* | 1,52 |
+| 2019/20 | EL2 | 36 | 1,28 | −0,23 (+0,17 / −0,67) | 28 % (29 %) | 0,89–1,08 | 1,27–1,22* | 1,43 |
+| 2020/21 | EL2 | 46 | 1,59 | +0,09 (+0,29 / −0,10) | 28 % (30 %) | 1,24–0,91 | 1,37–1,13* | 1,53 |
 | 2021/22 | EL2 | 46 | 1,50 | +0,00 (−0,25 / +0,26) | 26 % (28 %) | 1,46–1,26 | 1,61–1,28* | 1,57 |
 | 2022/23 | EL2 | 46 | 1,24 | −0,13 (−0,51 / +0,25) | 33 % (29 %) | 1,15–1,22 | 1,35–1,12* | 1,53 |
-| 2023/24 | EL2 | 46 | 1,20 | −0,09 (+0,05 / −0,23) | 15 % (26 %) | 1,35–1,65 | 1,21–1,65* | 1,12 |
+| 2023/24 | EL2 | 46 | 1,20 | −0,09 (+0,05 / −0,23) | 15 % (26 %) | 1,35–1,65 | 1,21–1,66* | 1,12 |
 | 2024/25 | EL2 | 46 | 1,07 | +0,19 (+0,48 / −0,09) | 22 % (24 %) | 1,13–1,65 | 1,00–1,78* | 0,90 |
-| 2025/26 | EL2 | 46 | 0,93 | −0,07 (−0,16 / +0,02) | 15 % (25 %) | 1,04–1,67 | 1,18–1,57* | 1,13 |
-| 2026/27 | EL2 | 8 | 1,13 | +0,11 (+0,83 / −0,61) | 38 % (26 %) | 1,50–1,50 | 1,14–1,59* | 1,18 |
+| 2025/26 | EL2 | 46 | 0,93 | −0,07 (−0,16 / +0,02) | 15 % (25 %) | 1,04–1,67 | 1,18–1,58* | 1,13 |
+| 2026/27 | EL2 | 8 | 1,13 | +0,11 (+0,83 / −0,61) | 38 % (26 %) | 1,50–1,50 | 1,15–1,59* | 1,18 |
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
 
@@ -60,3 +60,53 @@ Form (äldst → senast): VFOFFOOV · senaste match 2026-09-26
 | Shrewsbury | 2 | 1-0-1 | 1–1 | +0,29 | −28 pe | 2026-03-28 1-0 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Hayden Mullins. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Jordan Wright | GK | 27 | England | 158 k€ | 6,87 | 0 | 0 | 0/0 |  |
+| 25 | Jake Turner | GK | 27 | England | 154 k€ | – | 0 | 0 | 0/0 |  |
+| 33 | Shaun MacDonald | GK | 29 | England | 80 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Anthony Driscoll-Glennon | LB,LWB | 26 | England | 196 k€ | – | 0 | 0 | 0/0 |  |
+|  | Armani Babah | Defender | 19 | Wales | – | – | 0 | 0 | 0/0 |  |
+|  | Sam Watkins | Defender | 19 | Wales | – | – | 0 | 0 | 0/0 |  |
+| 3 | Thomas Davies | LB,LWB | 22 | Wales | – | 6,50 | 0 | 0 | 0/0 |  |
+| 4 | Kyle Cameron | CB | 29 | Scotland | 85 k€ | 6,73 | 1 | 0 | 0/0 |  |
+| 5 | Lee Jenkins | CB | 25 | Wales | 178 k€ | 6,77 | 0 | 0 | 1/0 |  |
+| 12 | Joe Thomas | RB,LB,CB,RWB | 24 | Wales | 162 k€ | 6,57 | 0 | 0 | 1/0 |  |
+| 16 | Matty Jacob | LB | 25 | England | 90 k€ | 7,41 | 0 | 1 | 1/0 |  |
+| 17 | Alfie Merritt | LB | 18 | England | – | 6,31 | 0 | 1 | 2/0 |  |
+| 22 | Cameron Norman | RWB,RB,CB | 30 | England | 83 k€ | 6,78 | 0 | 1 | 2/0 |  |
+| 31 | Nelson Sanca | CB | 19 | England | 303 k€ | – | 0 | 0 | 0/0 |  |
+| 32 | Jaden Warner | CB | 23 | England | 164 k€ | – | 0 | 0 | 0/0 |  |
+| 34 | Dan Sassi | CB,RB | 22 | England | 178 k€ | 6,18 | 0 | 0 | 0/0 |  |
+| 95 | Harrison Halpin | Defender | 0 | England | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Jack Norris | Midfielder | 19 | Wales | 306 k€ | – | 0 | 0 | 0/0 |  |
+|  | Kai Whitmore | CM,CAM,CB | 25 | England | – | – | 0 | 0 | 0/0 |  |
+|  | Riley Lonergan | Midfielder | 19 | Wales | – | – | 0 | 0 | 0/0 |  |
+| 2 | Cameron Evans | CDM,RB,CB,CM | 25 | Wales | 198 k€ | 6,56 | 0 | 0 | 1/0 |  |
+| 6 | Ciarán Brennan | CDM,CM,CB | 26 | Ireland | 161 k€ | 7,36 | 0 | 1 | 1/0 |  |
+| 7 | Kieron Evans | CM,CAM,ST,LM | 24 | Wales | 146 k€ | 6,44 | 0 | 0 | 0/0 |  |
+| 8 | Matt Smith | CDM,CM,CAM | 26 | Wales | 139 k€ | 6,24 | 0 | 0 | 0/0 |  |
+| 10 | Harrison Biggins | CAM,CM,CDM,RW | 30 | England | 86 k€ | 7,25 | 2 | 2 | 1/0 |  |
+| 14 | Moses Alexander-Walker | Midfielder | 19 | Wales | – | – | 0 | 0 | 0/0 |  |
+| 18 | Aaron Lewis | CDM,CAM,CM | 28 | Wales | 193 k€ | – | 0 | 0 | 0/0 |  |
+| 24 | Matt Dibley-Dias | CDM,CM | 22 | England | 259 k€ | 6,55 | 0 | 0 | 3/0 |  |
+| 29 | Keenan Patten | CM | 25 | Wales | – | – | 0 | 0 | 0/0 |  |
+| 36 | Harri Pugh | CAM | 18 | Wales | – | – | 0 | 0 | 0/0 |  |
+| 40 | Cole Jarvis | CDM | 25 | Wales | 142 k€ | 5,81 | 1 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Kion Etete | ST | 24 | England | 487 k€ | – | 0 | 0 | 0/0 |  |
+| 9 | Shaquille Gwengwe | LW | 25 | Malawi | – | 7,04 | 5 | 0 | 0/0 |  |
+| 11 | James Crole | ST | 22 | Wales | 272 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | Gerard Garner | ST,CAM | 27 | England | 147 k€ | 6,22 | 0 | 0 | 0/0 |  |
+| 20 | Yahya Bamba | RW,LW | 27 | France | – | 6,64 | 1 | 1 | 0/0 |  |
+| 21 | Tanatswa Nyakuhwa | LW | 21 | Wales | 453 k€ | 6,02 | 0 | 0 | 0/0 |  |
+| 23 | Michael Adu-Poku | RW,RWB | 21 | England | – | 6,90 | 0 | 0 | 0/0 |  |
+| 27 | Christian Doidge | ST | 34 | Wales | 72 k€ | 7,01 | 2 | 2 | 1/0 |  |

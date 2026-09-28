@@ -59,3 +59,40 @@ Form (äldst → senast): FFFOOVVO · senaste match 2026-09-21
 | Atlante | 1 | 1-0-0 | 3–0 | +1,52 | −28 pe | 2026-09-12 3-0 (b) |
 
 Ligans test av inbördes möten mot marknaden: svag signal (inte bekräftad).
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Benjamín Mora. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Jorge Berlanga (osäker), Alexéi Domínguez (skadad, åter Mid November 2026), Andrés Arroyo (skadad, åter Mid October 2026), Kenedy (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 25 | Carlos Moreno | GK | 28 | Mexico | 2,5 M€ | – | 0 | 0 | 0/0 |  |
+| 31 | José Eulogio | GK | 22 | Mexico | 623 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Sergio Barreto | CB | 27 | Argentina | 2,0 M€ | – | 0 | 0 | 0/0 |  |
+| 4 | Eduardo Bauermann | CB | 30 | Brazil | 995 k€ | – | 0 | 0 | 0/0 |  |
+| 6 | Mauricio Isaís | LB | 25 | Mexico | 837 k€ | – | 0 | 0 | 0/0 |  |
+| 12 | Sebastián Santos | RWB,RB,LW | 23 | Mexico | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 13 | Jorge Berlanga | CB,LB,RB | 23 | Mexico | 1,7 M€ | – | 0 | 0 | 0/0 | osäker |
+| 14 | Carlos Sánchez | RB | 24 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| 15 | Francisco Venegas | LB,RB,LM | 28 | Mexico | 877 k€ | – | 0 | 0 | 0/0 |  |
+| 32 | Pedro Budib | Defender | 22 | Lebanon | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 7 | Rodolfo Pizarro | CAM,CM | 32 | Mexico | 730 k€ | – | 0 | 0 | 0/0 |  |
+| 16 | Christian Rivera | CDM,CM | 30 | Colombia | 1,4 M€ | – | 0 | 0 | 0/0 |  |
+| 26 | Alán Bautista | CDM,CAM,CM | 24 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| 30 | Sergio Rodríguez | CDM | 22 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 8 | Alexéi Domínguez | RW,RWB,CAM | 21 | Mexico | 3,1 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid November 2026 |
+| 9 | Adrián Alcaraz | ST | 27 | Paraguay | 820 k€ | – | 0 | 0 | 0/0 |  |
+| 11 | Oussama Idrissi | LW,LM | 30 | Morocco | 2,4 M€ | – | 0 | 0 | 0/0 |  |
+| 19 | Illian Hernández | ST | 26 | Mexico | 462 k€ | – | 0 | 0 | 0/0 |  |
+| 21 | Nicolás Vallejo | LW,RW,LM | 22 | Argentina | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 23 | Salomón Rondón | ST | 37 | Venezuela | 986 k€ | – | 0 | 0 | 0/0 |  |
+| 28 | Andrés Arroyo | CAM,RW,LW,LM | 24 | Colombia | 706 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 29 | Kenedy | RW,CAM,RM | 30 | Brazil | 443 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 139 | Jonatan Ramirez | Attacker | 19 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| 187 | Gael Álvarez | RW | 20 | Mexico | 709 k€ | – | 0 | 0 | 0/0 |  |

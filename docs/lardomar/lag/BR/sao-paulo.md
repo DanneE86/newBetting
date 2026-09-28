@@ -61,3 +61,65 @@ Form (äldst → senast): OFOFVVFV · senaste match 2026-09-20
 | Remo | 1 | 0-0-1 | 0–1 | −1,47 | −29 pe | 2026-06-01 0-1 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Dorival Júnior. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Aurélio Buta (skadad, åter Late November 2026), Domingos Duarte (skadad, åter Out for season), Lucas Moura (skadad, åter Late October 2026), Damián Bobadilla (osäker), Nicolas (skadad, åter Early December 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 23 | Rafael | GK | 37 | Brazil | 877 k€ | – | 0 | 0 | 0/0 |  |
+| 31 | Carlos Coronel | GK | 29 | Paraguay | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 40 | João Pedro | Keeper | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 50 | Young | GK | 24 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 52 | Felipe Preis | Keeper | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Rafael Tolói | CB | 35 | Italy | 433 k€ | – | 0 | 0 | 0/0 |  |
+| 5 | Robert Arboleda | CB | 34 | Ecuador | 505 k€ | – | 0 | 0 | 0/0 |  |
+| 12 | Iago Borduchi | LB,LWB | 29 | Brazil | 2,2 M€ | – | 0 | 0 | 0/0 |  |
+| 13 | Enzo Díaz | LB,LWB | 30 | Argentina | 2,0 M€ | – | 0 | 0 | 0/0 |  |
+| 18 | Wendell | LB,LWB | 33 | Brazil | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 19 | Lucas Ramon | RB,RWB | 32 | Brazil | 714 k€ | – | 0 | 0 | 0/0 |  |
+| 20 | Aurélio Buta | RB,RM | 29 | Portugal | 1,2 M€ | – | 0 | 0 | 0/0 | skadad, åter Late November 2026 |
+| 22 | Domingos Duarte | CB | 31 | Portugal | 788 k€ | – | 0 | 0 | 0/0 | skadad, åter Out for season |
+| 32 | Pedro Lima | RB,RWB | 20 | Brazil | 5,6 M€ | – | 0 | 0 | 0/0 |  |
+| 34 | Igão | Defender | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 35 | Sabino | CB | 29 | Brazil | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 40 | Igor Felisberto | RB | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 44 | Guilherme Reis | Defender | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 44 | Matheus Belém | CB | 23 | Brazil | 575 k€ | – | 0 | 0 | 0/0 |  |
+| 53 | Isac | Defender | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 54 | Luis Osorio | CB | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 60 | Felipe Oliveira | Defender | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Cédric Soares | RB,RWB,RM | 35 | Portugal | 544 k€ | – | 0 | 0 | 0/0 |  |
+| 7 | Lucas Moura | CAM,ST | 34 | Brazil | 1,2 M€ | – | 0 | 0 | 0/0 | skadad, åter Late October 2026 |
+| 8 | Marcos Antônio | CDM,CM,CAM,LM,RW | 26 | Brazil | 7,9 M€ | – | 0 | 0 | 0/0 |  |
+| 21 | Damián Bobadilla | CDM,CM,CAM | 25 | Paraguay | 3,2 M€ | – | 0 | 0 | 0/0 | osäker |
+| 28 | Newton | CB,CDM,CM | 26 | Brazil | 2,2 M€ | – | 0 | 0 | 0/0 |  |
+| 29 | Pablo Maia | CDM,CM | 24 | Brazil | 4,7 M€ | – | 0 | 0 | 0/0 |  |
+| 38 | Pedro Bezerra | Midfielder | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 43 | Gustavo Santana | CAM | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 46 | Pedro Ferreira | Midfielder | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 48 | Djhordney | CDM | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 55 | Matheus Ferreira | Midfielder | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 56 | Nicolas | LWB | 19 | Brazil | – | – | 0 | 0 | 0/0 | skadad, åter Early December 2026 |
+| 59 | Robert William | Midfielder | 16 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 94 | Danielzinho | CDM,CM,CAM,CB | 31 | Brazil | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Jonathan Calleri | ST | 33 | Argentina | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 10 | Luciano | ST,CAM | 33 | Brazil | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 11 | Ferreira | LW,ST,LM | 28 | Brazil | 2,3 M€ | – | 0 | 0 | 0/0 |  |
+| 17 | André Silva | ST,CAM | 29 | Brazil | 2,1 M€ | – | 0 | 0 | 0/0 |  |
+| 27 | Victor Sá | LW | 32 | Brazil | 1,7 M€ | – | 0 | 0 | 0/0 |  |
+| 34 | Tetê | Attacker | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 37 | Artur | RW,CAM,RM | 28 | Brazil | 3,5 M€ | – | 0 | 0 | 0/0 |  |
+| 39 | Paulinho | Attacker | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 45 | Lucca Marques | LW,RW | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 47 | Brenno Junqueira | Attacker | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 49 | Ryan Francisco | ST | 19 | Brazil | 6,0 M€ | – | 0 | 0 | 0/0 |  |
+| 57 | Juan Potes | CB | 19 | Colombia | – | – | 0 | 0 | 0/0 |  |
+| 80 | Cauly | LW,CAM | 31 | Brazil | 2,0 M€ | – | 0 | 0 | 0/0 |  |

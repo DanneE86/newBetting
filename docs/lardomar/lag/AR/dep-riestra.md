@@ -58,3 +58,46 @@ Form (äldst → senast): FVFOOOFO · senaste match 2026-09-19
 | Tigre | 1 | 0-0-1 | 1–2 | −1,07 | −33 pe | 2024-07-29 1-2 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Guillermo Duró. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Ignacio Arce | GK | 34 | Argentina | 653 k€ | – | 0 | 0 | 0/0 |  |
+| 12 | Iván López | GK | 30 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 23 | Marino Arzamendia | GK | 28 | Paraguay | 383 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Carlos Quintana | CB | 38 | Argentina | 542 k€ | – | 0 | 0 | 0/0 |  |
+| 3 | Eric Tovo | CB | 34 | Argentina | 293 k€ | – | 0 | 0 | 0/0 |  |
+| 4 | Yeison Murillo | RB | 32 | Colombia | – | – | 0 | 0 | 0/0 |  |
+| 5 | Pedro Ramírez | LWB,RWB,LM | 26 | Argentina | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 6 | Ignacio Gariglio | CB | 28 | Argentina | 246 k€ | – | 0 | 0 | 0/0 |  |
+| 13 | Rodrigo Gallo | LWB,CB,LB | 25 | Argentina | 421 k€ | – | 0 | 0 | 0/0 |  |
+| 15 | Nicolás Sansotre | RWB,LWB,CB,RB,LB | 33 | Argentina | 533 k€ | – | 0 | 0 | 0/0 |  |
+| 17 | Manuel Aiello | Defender | 22 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 19 | Juan Randazzo | CB | 31 | Argentina | 280 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Cristian Paz | CB | 31 | Argentina | 539 k€ | – | 0 | 0 | 0/0 |  |
+| 24 | Facundo Miño | CB | 26 | Argentina | 661 k€ | – | 0 | 0 | 0/0 |  |
+| 35 | Ángel Stringa | RWB,RM | 30 | Argentina | 249 k€ | – | 0 | 0 | 0/0 |  |
+| 36 | Mariano Bracamonte | RWB,CB,LB | 27 | Argentina | 475 k€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 7 | Antony Alonso | CM,ST,LM,CAM | 28 | Uruguay | 930 k€ | – | 0 | 0 | 0/0 |  |
+| 8 | Milton Céliz | CM,CDM,CAM | 34 | Argentina | 336 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Braian Sánchez | CM,RM | 33 | Argentina | 128 k€ | – | 0 | 0 | 0/0 |  |
+| 14 | Pablo Monje | CM | 29 | Argentina | 593 k€ | – | 0 | 0 | 0/0 |  |
+| 16 | Nicólas Watson | CM,CDM,RWB | 28 | Argentina | 267 k€ | – | 0 | 0 | 0/0 |  |
+| 27 | Yonatan Goitía | CM,LM,RWB,CDM | 32 | Argentina | 305 k€ | – | 0 | 0 | 0/0 |  |
+| 40 | Gabriel Obredor | CM,ST | 29 | Argentina | 309 k€ | – | 0 | 0 | 0/0 |  |
+| 45 | Benjamín Pérez | LM | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Nicolás Benegas | ST | 30 | Argentina | 492 k€ | – | 0 | 0 | 0/0 |  |
+| 11 | Alexander Díaz | ST,CM | 26 | Argentina | 873 k€ | – | 0 | 0 | 0/0 |  |
+| 17 | Ángel Almada | ST,RW,LW,CAM | 26 | Argentina | 381 k€ | – | 0 | 0 | 0/0 |  |
+| 20 | Thiago Lauro | RW | 21 | Argentina | 436 k€ | – | 0 | 0 | 0/0 |  |
+| 21 | Tomás González | ST | 23 | Argentina | 588 k€ | – | 0 | 0 | 0/0 |  |
+| 29 | Agustín Graneros | ST | 30 | Argentina | 492 k€ | – | 0 | 0 | 0/0 |  |
+| 31 | Mauro Smarra | ST | 27 | Argentina | 370 k€ | – | 0 | 0 | 0/0 |  |
+| 34 | Lautaro Duarte | LM | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |

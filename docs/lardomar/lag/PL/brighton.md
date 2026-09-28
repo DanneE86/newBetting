@@ -4,7 +4,7 @@ Genererad 2026-09-28. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden"
 
 ## I korthet
 
-- Senaste 8: xG-målskillnaden är −0,58 per match sämre än målskillnaden.
+- Senaste 8: xG-målskillnaden är −0,52 per match sämre än målskillnaden.
 - Stark historik mot Aston Villa (−0,60 p/match mot marknaden, 15 möten), Fulham (−0,95 p/match mot marknaden, 11 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
 
 ## Nuläge (senaste 8 ligamatcher)
@@ -13,8 +13,8 @@ Form (äldst → senast): VFFVFOVV · senaste match 2026-09-19
 
 | Mått | Värde |
 |---|---|
-| Tur (poäng − xP per match) | −0,19 |
-| xG-målskillnad − målskillnad | −0,58 |
+| Tur (poäng − xP per match) | −0,17 |
+| xG-målskillnad − målskillnad | −0,52 |
 | Poäng mot marknaden per match | +0,04 |
 
 ## Säsonger
@@ -30,9 +30,22 @@ Form (äldst → senast): VFFVFOVV · senaste match 2026-09-19
 | 2023/24 | PL | 38 | 1,26 | −0,16 (−0,10 / −0,22) | 32 % (23 %) | 1,45–1,63 | 1,63–1,60 | 1,43 |
 | 2024/25 | PL | 38 | 1,61 | +0,13 (+0,02 / +0,25) | 34 % (24 %) | 1,74–1,55 | 1,72–1,56 | 1,49 |
 | 2025/26 | PL | 38 | 1,39 | −0,07 (+0,11 / −0,25) | 29 % (26 %) | 1,37–1,21 | 1,54–1,41 | 1,46 |
-| 2026/27 | PL | 5 | 2,00 | +0,52 (+0,94 / −0,10) | 20 % (26 %) | 3,20–1,00 | 2,05–1,29* | 1,87 |
+| 2026/27 | PL | 5 | 2,00 | +0,52 (+0,94 / −0,10) | 20 % (26 %) | 3,20–1,00 | 2,58–1,73 | 1,82 |
 
-\* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+## Nyckelspelare (Understat, 2024/25–)
+
+Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
+
+| Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
+|---|---|---|---|---|
+| Pascal Groß | 12 % | 0 / 81 | – / 1,53 | – / +0,06 |
+| Malick Yalcouyé | 10 % | 0 / 81 | – / 1,53 | – / +0,06 |
+| Diego Gómez | 8 % | 3 / 78 | 2,00 / 1,51 | +0,14 / +0,06 |
+| Jack Hinshelwood | 8 % | 6 / 75 | 2,17 / 1,48 | +0,94 / −0,01 |
+| Danny Welbeck | 8 % | 5 / 76 | 0,80 / 1,58 | −0,30 / +0,09 |
+| Maxim De Cuyper | 8 % | 2 / 79 | 3,00 / 1,49 | +1,29 / +0,03 |
+
+Ligans test av frånvaro mot marknaden: svag signal (inte bekräftad). Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -102,3 +115,45 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-10-05 | Europa 2511 | Wolverhampton - Brighton | X | 56 % | 48 % |
 | 2025-08-31 | Europa 2501 | Brighton - Manchester City | 1 ✓ | 18 % | 27 % |
 | 2025-08-24 | Europa 2499 | Everton - Brighton | 1 | 40 % | 39 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Fabian Hürzeler. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Mats Wieffer (skadad, åter Mid October 2026), Jack Hinshelwood (skadad, åter Mid October 2026), Stefanos Tzimas (skadad, åter Late September 2026), Yankuba Minteh (skadad, åter Mid November 2026), Kaoru Mitoma (skadad, åter Mid October 2026), Evan Ferguson (skadad, åter Mid October 2026), Zadok Yohanna (skadad, åter Mid October 2026), Femi Azeez (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Bart Verbruggen | GK | 24 | Netherlands | 39,1 M€ | 7,05 | 0 | 0 | 0/0 |  |
+| 23 | Jason Steele | GK | 36 | England | 414 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 3 | Jaouen Hadjam | LB,CB | 23 | Algeria | 6,1 M€ | – | 0 | 0 | 0/0 |  |
+| 4 | Pascal Struijk | CB | 27 | Netherlands | 16,2 M€ | 6,82 | 0 | 0 | 1/0 |  |
+| 5 | Lewis Dunk | CB | 34 | England | 2,3 M€ | 7,17 | 1 | 0 | 1/0 |  |
+| 20 | Costinha | RB | 26 | Portugal | 3,1 M€ | 6,18 | 0 | 0 | 1/0 |  |
+| 21 | Olivier Boscagli | CB,LB | 28 | France | 14,3 M€ | 7,31 | 0 | 0 | 1/0 |  |
+| 24 | Ferdi Kadıoğlu | LB,RB,RW,RWB,LWB | 26 | Turkiye | 27,4 M€ | 6,53 | 0 | 0 | 1/0 |  |
+| 27 | Mats Wieffer | RB | 26 | Netherlands | 15,5 M€ | 6,88 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 29 | Maxim De Cuyper | LB,LW,LWB | 25 | Belgium | 18,2 M€ | 7,81 | 1 | 2 | 2/0 |  |
+| 30 | Michael Svoboda | CB | 27 | Austria | 1,9 M€ | – | 0 | 0 | 0/0 |  |
+| 44 | Luka Vušković | CB | 19 | Croatia | 41,4 M€ | 7,21 | 1 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 8 | Jack Hinshelwood | CAM,CDM,CM | 21 | England | 19,5 M€ | 9,01 | 2 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 13 | Pascal Groß | CDM,CM,CAM | 35 | Germany | 2,2 M€ | 8,00 | 3 | 3 | 2/0 |  |
+| 14 | Chema Andrés | CDM,CM | 21 | Spain | 13,0 M€ | 7,59 | 1 | 1 | 0/0 |  |
+| 26 | Yasin Ayari | CDM,CM | 22 | Sweden | 27,9 M€ | 7,26 | 1 | 0 | 1/0 |  |
+| 33 | Matthew O'Riley | CDM,CM,CAM | 25 | Denmark | 17,9 M€ | – | 0 | 0 | 0/0 |  |
+| 35 | Malick Junior Yalcouyé | CAM,CDM | 20 | Ivory Coast | 14,5 M€ | 7,84 | 2 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Stefanos Tzimas | ST | 20 | Greece | 22,5 M€ | – | 0 | 0 | 0/0 | skadad, åter Late September 2026 |
+| 10 | Georginio Rutter | CAM,ST | 24 | France | 28,0 M€ | 7,05 | 0 | 1 | 0/0 |  |
+| 11 | Yankuba Minteh | RW,LW | 22 | The Gambia | 44,7 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid November 2026 |
+| 12 | Promise David | ST | 25 | Canada | 12,3 M€ | 5,85 | 0 | 0 | 1/0 |  |
+| 15 | Ibrahim Osman | LW,LM | 21 | Ghana | 8,4 M€ | 6,27 | 0 | 0 | 0/0 |  |
+| 19 | Charalampos Kostoulas | ST,LW | 19 | Greece | 24,1 M€ | 7,27 | 2 | 1 | 1/0 |  |
+| 22 | Kaoru Mitoma | LW | 29 | Japan | 17,8 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 25 | Diego Gómez | RW,CAM,LW,CM,CDM,RM | 23 | Paraguay | 2,6 M€ | 7,34 | 0 | 2 | 0/0 |  |
+| 28 | Evan Ferguson | ST | 21 | Ireland | 18,0 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 36 | Zadok Yohanna | RW | 19 | Nigeria | 620 k€ | 5,96 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 39 | Femi Azeez | RW,ST,RM | 25 | Nigeria | 2,1 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |

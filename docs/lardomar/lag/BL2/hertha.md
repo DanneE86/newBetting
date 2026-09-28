@@ -57,3 +57,42 @@ Form (äldst → senast): VFVVVVVV · senaste match 2026-09-19
 | Heidenheim | 1 | 1-0-0 | 4–1 | +1,64 | −26 pe | 2026-08-15 4-1 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Stefan Leitl. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 13 | Konstantin Heide | GK | 20 | Germany | 385 k€ | – | 0 | 0 | 0/0 |  |
+| 35 | Marius Gersbeck | GK | 31 | Germany | 102 k€ | 7,50 | 0 | 0 | 0/0 |  |
+| 43 | Tim Goller | Keeper | 21 | Germany | 753 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Julian Eitschberger | RB,RWB | 22 | Germany | 1,5 M€ | 7,25 | 0 | 0 | 2/0 |  |
+| 22 | Mads Valentin Pedersen | LB | 30 | Denmark | 721 k€ | 7,32 | 0 | 2 | 1/0 |  |
+| 27 | Niklas Kolbe | CB,LB | 29 | Germany | 204 k€ | 7,38 | 0 | 0 | 0/0 |  |
+| 31 | Márton Dárdai | CB | 24 | Hungary | 2,0 M€ | – | 0 | 0 | 0/0 |  |
+| 37 | Toni Leistner | CB | 36 | Germany | 143 k€ | – | 0 | 0 | 0/0 |  |
+| 42 | Deyovaisio Zeefuik | RB,LB | 28 | Netherlands | 518 k€ | 7,15 | 1 | 0 | 1/1 |  |
+| 44 | Linus Gechter | CB,RB | 22 | Germany | 2,7 M€ | 7,53 | 0 | 0 | 2/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Julius Gottschalk | Midfielder | 20 | Germany | 333 k€ | – | 0 | 0 | 0/0 |  |
+| 6 | Diego Demme | CDM | 34 | Germany | 128 k€ | – | 0 | 0 | 0/0 |  |
+| 8 | Kevin Sessa | CDM,CM | 26 | Germany | 349 k€ | 7,20 | 1 | 0 | 0/0 |  |
+| 21 | Boris Lum | CM,CDM | 18 | Germany | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 30 | Paul Seguin | CDM,CM | 31 | Germany | 292 k€ | 6,85 | 0 | 0 | 3/1 |  |
+| 33 | Soufian Gouram | CAM,CM | 20 | Estonia | 257 k€ | 6,88 | 0 | 2 | 0/0 |  |
+| 36 | Kian Todorovic | Midfielder | 19 | Turkiye | – | – | 0 | 0 | 0/0 |  |
+| 41 | Pascal Klemens | CDM | 21 | Germany | 2,1 M€ | 6,90 | 0 | 0 | 1/0 |  |
+| 47 | Selim Telib | CAM | 20 | Egypt | 369 k€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Josip Brekalo | LW,CAM,LM | 28 | Croatia | 1,5 M€ | 8,34 | 4 | 3 | 3/0 |  |
+| 9 | Gustaf Nilsson | ST | 29 | Sweden | 1,2 M€ | 6,25 | 0 | 0 | 0/0 |  |
+| 17 | Sebastian Grønning | ST | 29 | Denmark | 233 k€ | 6,94 | 2 | 0 | 0/0 |  |
+| 18 | Luca Schuler | ST | 27 | Germany | 410 k€ | 6,80 | 0 | 1 | 0/0 |  |
+| 19 | Oluwaseun Adewumi | ST,RM,LW,CAM | 21 | Austria | 1,2 M€ | 7,31 | 3 | 0 | 0/0 |  |
+| 20 | Farid Alfa-Ruprecht | RW,LW | 20 | Germany | 2,2 M€ | 6,83 | 1 | 0 | 0/0 |  |
+| 23 | Jón Thorsteinsson | LW,RW,CAM,RM | 27 | Iceland | 347 k€ | 7,67 | 3 | 1 | 3/0 |  |
+| 26 | Niklas Hildebrandt | Attacker | 18 | Germany | – | – | 0 | 0 | 0/0 |  |
+| 28 | Jelani Ndi | Attacker | 19 | Germany | 667 k€ | – | 0 | 0 | 0/0 |  |

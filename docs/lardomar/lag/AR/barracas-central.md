@@ -61,3 +61,52 @@ Form (äldst → senast): VFFFOOOF · senaste match 2026-09-21
 | Estudiantes Rio Cuarto | 1 | 1-0-0 | 2–1 | +1,90 | −34 pe | 2026-04-12 2-1 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Damián Ayude. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Juan Espínola (skadad, åter Mid October 2026), Fernando Tobio (skadad, åter Mid October 2026), Tomás Porra (skadad, åter Mid October 2026), Manuel Duarte (skadad, åter Out for season), Lucas Gamba (skadad, åter Mid October 2026), Nicolás Orsini (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Juan Espínola | GK | 31 | Paraguay | 554 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 30 | Marcelo Miño | GK | 29 | Argentina | 328 k€ | – | 0 | 0 | 0/0 |  |
+| 38 | Juan Insúa | Keeper | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 43 | Luca Fernández | Keeper | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Nicolás Capraro | CB | 28 | Argentina | 881 k€ | – | 0 | 0 | 0/0 |  |
+| 4 | Damián Martínez | RWB,RM,RB | 36 | Argentina | 293 k€ | – | 0 | 0 | 0/0 |  |
+| 13 | Rafael Barrios | RWB,RM | 33 | Argentina | 327 k€ | – | 0 | 0 | 0/0 |  |
+| 14 | Kevin Jappert | CB | 22 | Argentina | 1,8 M€ | – | 0 | 0 | 0/0 |  |
+| 15 | Yonatthan Rak | CB | 33 | Uruguay | 260 k€ | – | 0 | 0 | 0/0 |  |
+| 31 | Nicolás Demartini | CB | 26 | Argentina | 797 k€ | – | 0 | 0 | 0/0 |  |
+| 32 | Fernando Tobio | CB | 36 | Argentina | 458 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 37 | Gastón Campi | CB | 35 | Argentina | 282 k€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Dardo Miloc | CM,CDM | 35 | Argentina | 367 k€ | – | 0 | 0 | 0/0 |  |
+| 6 | Rodrigo Insúa | LWB,LM | 28 | Argentina | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 8 | Tomás Porra | CM,CAM,RM | 22 | Argentina | 1,1 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 10 | Iván Tapia | CM,CDM,LW | 27 | Argentina | 756 k€ | – | 0 | 0 | 0/0 |  |
+| 16 | Iván Guaraz | CM | 21 | Argentina | 563 k€ | – | 0 | 0 | 0/0 |  |
+| 17 | Elías Pereyra | LWB,LM | 27 | Argentina | 432 k€ | – | 0 | 0 | 0/0 |  |
+| 18 | Manuel Duarte | CM | 25 | Argentina | 485 k€ | – | 0 | 0 | 0/0 | skadad, åter Out for season |
+| 19 | Carlos Arce | CM | 36 | Argentina | 295 k€ | – | 0 | 0 | 0/0 |  |
+| 24 | Enzo Taborda | LW | 21 | Argentina | 756 k€ | – | 0 | 0 | 0/0 |  |
+| 25 | Yeison Gordillo | CM | 34 | Colombia | 270 k€ | – | 0 | 0 | 0/0 |  |
+| 28 | Rodrigo Bogarín | CAM,CM | 29 | Paraguay | 253 k€ | – | 0 | 0 | 0/0 |  |
+| 35 | Esteban Rolón | CM,CAM | 31 | Argentina | 255 k€ | – | 0 | 0 | 0/0 |  |
+| 79 | Maxi Puig | RWB | 26 | Argentina | 369 k€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Juan Barbieri | ST | 30 | Argentina | 229 k€ | – | 0 | 0 | 0/0 |  |
+| 9 | Gonzalo Morales | ST | 23 | Argentina | 859 k€ | – | 0 | 0 | 0/0 |  |
+| 11 | Norberto Briasco | ST,CAM,RW | 30 | Armenia | 322 k€ | – | 0 | 0 | 0/0 |  |
+| 20 | Jhonatan Candia | ST | 31 | Uruguay | 354 k€ | – | 0 | 0 | 0/0 |  |
+| 21 | Lucas Gamba | ST | 39 | Argentina | 322 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 22 | Valentino Gandín | Attacker | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 23 | Wilfredo Rivera | RW | 22 | Puerto Rico | 500 k€ | – | 0 | 0 | 0/0 |  |
+| 33 | Gonzalo Maroni | ST,CAM,LW,CM | 27 | Argentina | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 34 | Nicolás Orsini | LW | 32 | Argentina | 301 k€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 36 | Tomás Lavezzi | Attacker | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 77 | Facundo Bruera | ST | 28 | Argentina | 1,4 M€ | – | 0 | 0 | 0/0 |  |

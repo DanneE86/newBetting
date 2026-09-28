@@ -4,8 +4,10 @@ Genererad 2026-09-28. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden"
 
 ## I korthet
 
-- Senaste 8: tur med +0,79 poäng per match mot xP. Marknaden prisar redan in det i ligan (ingen bekräftad effekt), så det är inget spel i sig.
+- Senaste 8: tur med +0,65 poäng per match mot xP. Marknaden prisar redan in det i ligan (ingen bekräftad effekt), så det är inget spel i sig.
 - Stark historik mot Chelsea (+0,69 p/match mot marknaden, 16 möten), Leeds (+0,70 p/match mot marknaden, 8 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Utan Bukayo Saka (14 % av anfallet): 1,88 poäng per match mot 2,14 med (8 mot 73 matcher), mot marknaden −0,14 mot +0,11.
+- Utan Kai Havertz (10 % av anfallet): 2,33 poäng per match mot 2,10 med (3 mot 78 matcher), mot marknaden +0,46 mot +0,07.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -13,8 +15,8 @@ Form (äldst → senast): VVVVVVVF · senaste match 2026-09-19
 
 | Mått | Värde |
 |---|---|
-| Tur (poäng − xP per match) | +0,79 |
-| xG-målskillnad − målskillnad | −0,08 |
+| Tur (poäng − xP per match) | +0,65 |
+| xG-målskillnad − målskillnad | +0,13 |
 | Poäng mot marknaden per match | +0,50 |
 
 ## Säsonger
@@ -30,9 +32,22 @@ Form (äldst → senast): VVVVVVVF · senaste match 2026-09-19
 | 2023/24 | PL | 38 | 2,34 | +0,17 (+0,17 / +0,16) | 13 % (19 %) | 2,39–0,76 | 2,22–0,84 | 2,10 |
 | 2024/25 | PL | 38 | 1,95 | +0,00 (−0,15 / +0,16) | 37 % (22 %) | 1,82–0,89 | 1,94–1,05 | 1,87 |
 | 2025/26 | PL | 38 | 2,24 | +0,16 (+0,21 / +0,12) | 18 % (21 %) | 1,87–0,71 | 2,04–0,87 | 2,03 |
-| 2026/27 | PL | 5 | 2,40 | +0,16 (+0,79 / −0,26) | 0 % (22 %) | 1,60–0,80 | 1,54–1,07* | 1,67 |
+| 2026/27 | PL | 5 | 2,40 | +0,16 (+0,79 / −0,26) | 0 % (22 %) | 1,60–0,80 | 1,88–1,09 | 1,90 |
 
-\* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+## Nyckelspelare (Understat, 2024/25–)
+
+Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
+
+| Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
+|---|---|---|---|---|
+| Bukayo Saka | 14 % | 8 / 73 | 1,88 / 2,14 | −0,14 / +0,11 |
+| Kai Havertz | 10 % | 3 / 78 | 2,33 / 2,10 | +0,46 / +0,07 |
+| Viktor Gyokeres | 8 % | 2 / 79 | 2,00 / 2,11 | +0,20 / +0,09 |
+| Martin Odegaard | 7 % | 15 / 66 | 2,20 / 2,09 | +0,18 / +0,07 |
+| Christos Tzolis | 7 % | 0 / 81 | – / 2,11 | – / +0,09 |
+| Declan Rice | 6 % | 0 / 81 | – / 2,11 | – / +0,09 |
+
+Ligans test av frånvaro mot marknaden: svag signal (inte bekräftad). Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -96,3 +111,40 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-09-21 | Europa 2507 | Arsenal - Manchester City | X | 55 % | 48 % |
 | 2025-08-31 | Europa 2501 | Liverpool - Arsenal | 1 | 27 % | 32 % |
 | 2025-08-17 | Europa 2497 | Manchester United - Arsenal | 2 ✓ | 54 % | 49 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Mikel Arteta. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** William Saliba (skadad, åter Mid October 2026), Cristhian Mosquera (osäker), Ben White (osäker), Declan Rice (skadad, åter Mid October 2026), Kai Havertz (skadad, åter About 1-2 weeks)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | David Raya | GK | 31 | Spain | 22,2 M€ | 7,31 | 0 | 0 | 0/0 |  |
+| 13 | Kepa Arrizabalaga | GK | 31 | Spain | 3,7 M€ | – | 0 | 0 | 0/0 |  |
+| 30 | Illan Meslier | GK | 26 | France | 7,1 M€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | William Saliba | CB | 25 | France | 82,1 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 3 | Cristhian Mosquera | CB,RB | 22 | Spain | 37,7 M€ | 6,94 | 0 | 0 | 0/0 | osäker |
+| 4 | Ben White | RB | 28 | England | 25,1 M€ | 7,45 | 0 | 1 | 0/0 | osäker |
+| 5 | Piero Hincapié | LB,CB | 24 | Ecuador | 46,0 M€ | 6,34 | 0 | 0 | 0/0 |  |
+| 6 | Gabriel | CB | 28 | Brazil | 82,6 M€ | 7,18 | 0 | 0 | 2/0 |  |
+| 12 | Jurriën Timber | RB,CB,LB | 25 | Netherlands | 57,6 M€ | 6,24 | 0 | 0 | 0/0 |  |
+| 15 | Ezri Konsa | CB,RB | 28 | England | 32,1 M€ | 6,70 | 0 | 0 | 0/0 |  |
+| 33 | Riccardo Calafiori | LB,CB | 24 | Italy | 45,2 M€ | 6,98 | 0 | 2 | 0/0 |  |
+| 49 | Myles Lewis-Skelly | LB,CDM,CM | 20 | England | 37,7 M€ | 6,70 | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 8 | Martin Ødegaard | CM,CAM | 27 | Norway | 59,3 M€ | 7,60 | 2 | 0 | 0/0 |  |
+| 10 | Eberechi Eze | CAM,CM,LW,CDM | 28 | England | 44,6 M€ | 6,32 | 0 | 0 | 0/0 |  |
+| 23 | Mikel Merino | CM,ST,CDM | 30 | Spain | 24,4 M€ | 6,37 | 0 | 0 | 1/0 |  |
+| 36 | Martín Zubimendi | CDM,CM,RB | 27 | Spain | 56,1 M€ | 6,13 | 0 | 0 | 0/0 |  |
+| 39 | Bruno Guimarães | CM,CDM,CAM | 28 | Brazil | 51,1 M€ | 6,61 | 1 | 0 | 0/0 |  |
+| 41 | Declan Rice | CDM,CM | 27 | England | 93,0 M€ | 7,55 | 0 | 2 | 1/0 | skadad, åter Mid October 2026 |
+| 56 | Max Dowman | RW,CAM,CM | 16 | England | 7,5 M€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Bukayo Saka | RW,CAM | 25 | England | 84,8 M€ | 7,94 | 3 | 0 | 0/0 |  |
+| 14 | Viktor Gyökeres | ST | 28 | Sweden | 49,2 M€ | 6,04 | 0 | 0 | 0/0 |  |
+| 17 | Christos Tzolis | LW,LM,CAM | 24 | Greece | 23,9 M€ | 7,13 | 0 | 1 | 2/0 |  |
+| 20 | Noni Madueke | RW | 24 | England | 49,7 M€ | 7,28 | 0 | 0 | 0/0 |  |
+| 29 | Kai Havertz | ST,CAM,CM | 27 | Germany | 44,3 M€ | 7,21 | 2 | 0 | 1/0 | skadad, åter About 1-2 weeks |

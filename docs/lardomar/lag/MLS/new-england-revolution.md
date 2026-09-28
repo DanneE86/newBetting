@@ -70,3 +70,48 @@ Form (äldst → senast): FVOVFVVV · senaste match 2026-09-20
 | St. Louis City | 2 | 0-1-1 | 3–5 | −0,81 | +25 pe | 2026-03-22 1-3 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: –. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Alhassan Yusuf (skadad, åter Late October 2026), Leonardo Campana (skadad, åter Mid October 2026), Jack Harrison (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 30 | Matt Turner | GK | 32 | USA | 1,2 M€ | 7,26 | 0 | 0 | 1/0 |  |
+| 33 | Donovan Parisian | GK | 22 | USA | – | – | 0 | 0 | 0/0 |  |
+| 73 | JD Gunn | GK | 26 | Panama | 89 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Mamadou Fofana | CB | 28 | Mali | 1,3 M€ | 7,25 | 1 | 1 | 4/0 |  |
+| 4 | Tanner Beason | CB | 29 | USA | 287 k€ | 6,74 | 0 | 0 | 0/0 |  |
+| 6 | Tylon Smith | CB | 21 | South Africa | 220 k€ | – | 0 | 0 | 0/0 |  |
+| 8 | Matt Polster | RB,CDM,CM | 33 | USA | 257 k€ | 6,73 | 1 | 1 | 5/0 |  |
+| 12 | Ilay Feingold | RB | 22 | Israel | 2,4 M€ | 7,13 | 1 | 1 | 1/0 |  |
+| 15 | Cody Baker | RB,CB | 22 | USA | 357 k€ | 6,42 | 0 | 0 | 0/0 |  |
+| 19 | Damario McIntosh | RB,RWB | 19 | Jamaica | – | – | 0 | 0 | 0/0 |  |
+| 21 | Benjamin Sammer | CB | 21 | Austria | 108 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Ethan Kohler | CB,CDM | 21 | USA | 715 k€ | 6,91 | 0 | 0 | 1/0 |  |
+| 23 | Will Sands | LB,RB,LM | 26 | USA | 220 k€ | 6,82 | 1 | 0 | 4/0 |  |
+| 66 | Joshua Wynder | CB | 21 | USA | 1,3 M€ | 6,55 | 0 | 0 | 1/0 |  |
+| 88 | Andrew Farrell | CB | 34 | USA | 50 k€ | 5,73 | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Javaun Mussenden | CM,CDM,RB,CAM | 19 | USA | – | 5,83 | 0 | 0 | 0/0 |  |
+| 10 | Carles Gil | CM,CAM | 33 | Spain | 761 k€ | 7,87 | 12 | 4 | 4/0 |  |
+| 14 | Jackson Yueill | CM,CDM | 29 | USA | 708 k€ | 6,76 | 0 | 2 | 0/0 |  |
+| 21 | Brooklyn Raines | CM,CDM | 21 | USA | 1,7 M€ | 6,96 | 1 | 0 | 9/0 |  |
+| 35 | Cristiano Oliveira | RW,CM,RM,CAM | 18 | USA | 976 k€ | – | 0 | 0 | 0/0 |  |
+| 65 | Judah Siqueira | CM,CAM,RW | 17 | USA | – | 6,18 | 0 | 0 | 0/0 |  |
+| 80 | Alhassan Yusuf | CM,CDM,LW | 26 | Nigeria | 2,0 M€ | 7,30 | 5 | 2 | 4/0 | skadad, åter Late October 2026 |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Griffin Yow | LW,RW | 24 | USA | 1,7 M€ | 6,49 | 1 | 0 | 3/0 |  |
+| 9 | Leonardo Campana | ST | 26 | Ecuador | 1,4 M€ | 6,81 | 1 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 11 | Jack Harrison | RW,LW | 29 | England | 9,5 M€ | 7,57 | 0 | 3 | 2/0 | skadad, åter Mid October 2026 |
+| 16 | Dániel Gazdag | ST,LW | 30 | Hungary | 1,7 M€ | 6,69 | 4 | 0 | 0/0 |  |
+| 17 | Marcos Zambrano | ST,LW | 21 | USA | 331 k€ | 6,28 | 0 | 0 | 0/0 |  |
+| 25 | Peyton Miller | LW,RW,LB | 18 | USA | 1,8 M€ | 7,15 | 7 | 4 | 3/0 |  |
+| 27 | Wilson Harris | ST | 26 | USA | 255 k€ | 6,22 | 1 | 0 | 1/0 |  |
+| 41 | Luca Langoni | RW | 24 | Argentina | 1,8 M€ | 6,92 | 3 | 6 | 1/0 |  |
+| 77 | Diego Fagúndez | LW,CM | 31 | Uruguay | 495 k€ | 6,29 | 0 | 0 | 0/0 |  |
+| 99 | Dor Turgeman | ST | 22 | Israel | 3,0 M€ | 7,10 | 7 | 7 | 1/0 |  |

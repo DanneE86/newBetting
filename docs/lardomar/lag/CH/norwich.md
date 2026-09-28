@@ -87,3 +87,44 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-09-05 | Stryk 4969 | Sheffield U - Norwich | 2 ✓ | 27 % | 36 % |
 | 2026-08-29 | Stryk 4968 | Norwich - Burnley | 1 ✓ | 51 % | 47 % |
 | 2026-01-01 | Europa 2536 | Queens Park Rangers - Norwich | 2 ✓ | 22 % | 27 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Philippe Clement. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Lucien Mahovo (skadad, åter Early October 2026), Mirko Topić (skadad, åter Unknown), Ali Ahmed (skadad, åter Early November 2026), Mohamed Touré (osäker), Gabriel Forsyth (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Vladan Kovačević | GK | 28 | Bosnia and Herzegovina | 1,8 M€ | 6,12 | 0 | 0 | 0/0 |  |
+| 32 | Daniel Grimshaw | GK | 28 | England | 502 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 3 | Jack Stacey | RB | 30 | England | 886 k€ | 6,83 | 1 | 1 | 2/0 |  |
+| 6 | Harry Darling | CB | 27 | England | 2,4 M€ | 5,78 | 0 | 0 | 1/0 |  |
+| 12 | Lucien Mahovo | LB | 21 | England | 617 k€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 13 | Darlin Yongwa | CB,LB,LWB,LM | 26 | Cameroon | 2,4 M€ | 6,45 | 0 | 0 | 0/0 |  |
+| 14 | Benjamin Chrisene | LB | 22 | England | 2,0 M€ | 6,69 | 0 | 0 | 1/0 |  |
+| 15 | Ruairi McConville | CB | 21 | Northern Ireland | 2,5 M€ | 6,70 | 1 | 0 | 2/0 |  |
+| 28 | Bruno Alves | CB | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 33 | José Córdoba | CB | 25 | Panama | 2,1 M€ | 6,55 | 0 | 1 | 4/1 |  |
+| 35 | Kellen Fisher | RB,LB,RM | 22 | England | 2,3 M€ | 6,52 | 0 | 0 | 1/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 7 | Pelle Mattsson | CDM,CM | 25 | Denmark | 2,7 M€ | 7,05 | 0 | 1 | 0/0 |  |
+| 16 | Jacob Wright | CDM,CAM | 21 | England | 1,8 M€ | 6,68 | 1 | 1 | 0/0 |  |
+| 20 | Anis Ben Slimane | CAM | 25 | Tunisia | 2,5 M€ | 6,56 | 0 | 1 | 1/0 |  |
+| 22 | Mirko Topić | CDM | 25 | Serbia | 3,5 M€ | – | 0 | 0 | 0/0 | skadad, åter Unknown |
+| 23 | Kenny McLean | CDM,CM,LB,RW | 34 | Scotland | 695 k€ | 7,08 | 0 | 0 | 1/0 |  |
+| 26 | Sam Field | CDM,LB | 28 | England | 1,6 M€ | 6,70 | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 11 | Andre Brooks | RW,RM,CAM | 23 | Jamaica | 2,9 M€ | 7,28 | 2 | 2 | 1/0 |  |
+| 17 | Ante Crnac | RW | 22 | Croatia | 5,1 M€ | 6,57 | 0 | 0 | 1/0 |  |
+| 19 | Papa Diallo | RW | 22 | Senegal | 4,7 M€ | 6,69 | 1 | 0 | 0/0 |  |
+| 21 | Ali Ahmed | LW,LM | 25 | Canada | 1,7 M€ | – | 0 | 0 | 0/0 | skadad, åter Early November 2026 |
+| 21 | Mohamed Touré | ST | 22 | Australia | 1,6 M€ | 6,97 | 5 | 0 | 1/0 | osäker |
+| 24 | Jovon Makama | RW,ST | 22 | England | 2,0 M€ | 6,51 | 1 | 0 | 1/0 |  |
+| 29 | Oscar Schwartau | LW,CAM,RW | 20 | Denmark | 5,9 M€ | 6,90 | 1 | 1 | 1/0 |  |
+| 30 | Mathias Kvistgaarden | ST,CAM | 24 | Denmark | 8,5 M€ | 6,70 | 2 | 1 | 0/0 |  |
+| 41 | Gabriel Forsyth | RW | 20 | Scotland | – | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 46 | Errol Mundle-Smith | LW | 20 | England | 72 k€ | – | 0 | 0 | 0/0 |  |
+| 49 | Anthony Musaba | LW,RW,RM | 25 | DR Congo | 3,0 M€ | 6,80 | 1 | 1 | 0/0 |  |

@@ -62,3 +62,46 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-09-20 | Europa 2609 | Mjällby - GAIS | 2 | 39 % | 36 % |
 | 2026-09-16 | Europa 2608 | AIK - Mjällby | X | 28 % | 32 % |
 | 2025-08-17 | Europa 2497 | Mjällby - Djurgården | X | 51 % | 42 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Andreas Brännström. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Timo Stavitski (skadad, åter Mid October 2026), Villum Dalsgaard (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Sebastian Hansen | GK | 19 | Norway | 468 k€ | 6,25 | 0 | 0 | 0/0 |  |
+| 13 | Robin Wallinder | GK | 27 | Sweden | 863 k€ | 6,96 | 0 | 0 | 0/0 |  |
+| 35 | Alexander Lundin | GK | 33 | Sweden | 110 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Dani Hodzic | Defender | 18 | Sweden | – | – | 0 | 0 | 0/0 |  |
+| 2 | Ludvig Svanberg | CB | 23 | Sweden | 408 k€ | 6,39 | 1 | 0 | 0/0 |  |
+| 4 | Axel Norén | CB | 27 | Sweden | 1,5 M€ | 6,82 | 0 | 0 | 2/1 |  |
+| 5 | Abdullah Iqbal | CB | 24 | Pakistan | 2,2 M€ | 6,76 | 0 | 2 | 4/0 |  |
+| 19 | Isak Andersen | Defender | 19 | Sweden | – | – | 0 | 0 | 0/0 |  |
+| 24 | Tom Pettersson | CB | 36 | Sweden | 208 k€ | 6,46 | 2 | 0 | 5/0 |  |
+| 26 | Ian Hoffmann | RB,RM,LWB,RWB,LM | 25 | USA | 292 k€ | 6,44 | 0 | 0 | 1/0 |  |
+| 27 | Ludvig Tidstrand | CB,LM | 21 | Sweden | 569 k€ | 6,49 | 0 | 0 | 2/0 |  |
+| 33 | Tony Miettinen | CB | 24 | Finland | 468 k€ | 6,62 | 0 | 2 | 6/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 3 | Martin Agnarsson | LM,LWB | 22 | Faroe Islands | 464 k€ | 6,06 | 0 | 0 | 1/0 |  |
+| 6 | Mads Enggård | CM,CDM,CAM | 22 | Denmark | 1,7 M€ | 6,57 | 0 | 0 | 0/0 |  |
+| 7 | Viktor Gustafson | CM,RW,CDM,LW | 31 | Sweden | 256 k€ | 6,59 | 0 | 1 | 5/0 |  |
+| 8 | Teo Helge | CM | 21 | Sweden | – | 6,41 | 0 | 0 | 1/0 |  |
+| 11 | Timo Stavitski | LM | 27 | Finland | 313 k€ | 6,25 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 14 | Villiam Granath | RM,RW,RWB,LM | 28 | Sweden | 401 k€ | 6,83 | 1 | 2 | 1/0 |  |
+| 20 | Måns Isaksson | RW | 19 | Sweden | 562 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Jesper Gustavsson | CM,CDM | 31 | Sweden | 388 k€ | 6,82 | 0 | 2 | 6/0 |  |
+| 25 | Max Nielsen | RM,RWB,LM | 21 | Denmark | 470 k€ | 6,60 | 0 | 3 | 0/0 |  |
+| 39 | Romeo Leandersson | CM | 18 | Sweden | 1,1 M€ | 6,32 | 0 | 0 | 1/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Olle Nilsson Loev | Attacker | 18 | Sweden | – | – | 0 | 0 | 0/0 |  |
+| 9 | Ali Youssef | LW,ST | 26 | Tunisia | 390 k€ | 6,52 | 1 | 0 | 1/0 |  |
+| 10 | Jeppe Kjær | RW,CAM,RM | 22 | Denmark | 1,1 M€ | 6,83 | 2 | 1 | 4/0 |  |
+| 18 | Jacob Bergström | ST | 31 | Sweden | 335 k€ | 6,81 | 9 | 0 | 2/0 |  |
+| 19 | Paul Colley | Attacker | 0 | The Gambia | – | – | 0 | 0 | 0/0 |  |
+| 21 | Villum Dalsgaard | RW,RM | 19 | Denmark | – | 6,14 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 23 | Áki Samuelsen | LW,LM,CAM,RW,RM,LWB | 22 | Faroe Islands | 745 k€ | 6,86 | 2 | 3 | 3/0 |  |
+| 29 | Olle Lindberg | RW | 19 | Sweden | – | 6,61 | 3 | 1 | 1/0 |  |

@@ -55,3 +55,42 @@ Form (äldst → senast): VFVVOFFV · senaste match 2026-09-20
 | Start | 4 | 1-2-1 | 4–5 | −0,49 | +26 pe | 2026-09-13 0-2 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Eirik Horneland. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Nana Boakye (skadad, åter Out for season), Sondre Tronstad (skadad, åter Early November 2026), Sakarias Opsahl (skadad, åter Mid October 2026), Kjartan Kjartansson (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+|  | Tom Bramel | GK | 21 | Netherlands | 380 k€ | – | 0 | 0 | 0/0 |  |
+| 1 | Mathias Dyngeland | GK | 30 | Norway | 640 k€ | 6,79 | 0 | 0 | 1/0 |  |
+| 12 | Simen Vidtun Nilsen | GK | 26 | Norway | 569 k€ | 7,20 | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 3 | Fredrik Pallesen Knudsen | CB | 30 | Norway | 500 k€ | 6,96 | 0 | 0 | 1/0 |  |
+| 4 | Nana Boakye | CB | 20 | Ghana | 1,9 M€ | 5,79 | 0 | 0 | 0/0 | skadad, åter Out for season |
+| 15 | Jonas Torsvik | LB | 21 | Norway | 416 k€ | 6,16 | 0 | 0 | 0/0 |  |
+| 17 | Joachim Soltvedt | LB | 31 | Norway | 423 k€ | 7,27 | 4 | 2 | 1/0 |  |
+| 20 | Vetle Dragsnes | LB,CB,RB | 32 | Norway | 231 k€ | 7,00 | 1 | 0 | 1/0 |  |
+| 21 | Neraysho Kasanwirjo | CB,RB,LB | 24 | Netherlands | 1,1 M€ | 6,80 | 0 | 0 | 2/0 |  |
+| 23 | Thore Pedersen | CB,CM,RB | 30 | Norway | 252 k€ | 6,79 | 0 | 0 | 2/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Sondre Tronstad | CDM | 31 | Norway | 623 k€ | – | 0 | 0 | 0/0 | skadad, åter Early November 2026 |
+| 2 | Leo Cornic | RM,RWB | 25 | Norway | 923 k€ | 7,03 | 0 | 2 | 4/0 |  |
+| 5 | Sakarias Opsahl | CM | 27 | Norway | 321 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 7 | Kjartan Kjartansson | CDM,CM | 20 | Iceland | 695 k€ | 6,55 | 0 | 0 | 1/0 | skadad, åter Early October 2026 |
+| 10 | Kristall Ingason | CM,CAM,RW,ST | 24 | Iceland | 1,4 M€ | 7,00 | 6 | 2 | 2/1 |  |
+| 18 | Jacob Lungi Sørensen | CM | 28 | Denmark | 1,1 M€ | 7,43 | 0 | 1 | 3/0 |  |
+| 19 | Eggert Guðmundsson | CM,LW,CAM | 22 | Iceland | 1,5 M€ | 6,71 | 1 | 0 | 0/0 |  |
+| 25 | Niklas Jensen Wassberg | CM,CDM | 22 | Norway | 1,1 M€ | 6,69 | 0 | 1 | 2/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Chinedu Ononogbo | Attacker | 19 | Nigeria | – | – | 0 | 0 | 0/0 |  |
+| 9 | Niklas Castro | LW | 30 | Chile | 656 k€ | 7,36 | 2 | 2 | 3/0 |  |
+| 11 | Bård Finne | ST,RW,LW | 31 | Norway | 367 k€ | 6,73 | 5 | 2 | 0/0 |  |
+| 14 | Ulrik Mathisen | RW,ST | 27 | Norway | 536 k€ | 6,69 | 1 | 3 | 0/0 |  |
+| 16 | Kristian Eriksen | CM,RW,ST | 31 | Norway | 497 k€ | 6,68 | 4 | 4 | 3/0 |  |
+| 22 | Sævar Atli Magnusson | ST,RW | 26 | Iceland | 1,2 M€ | 6,24 | 0 | 0 | 0/0 |  |
+| 26 | Rabbi Matondo | LM | 26 | Wales | 546 k€ | 6,06 | 0 | 0 | 0/0 |  |
+| 29 | Noah Holm | ST | 25 | Norway | 1,5 M€ | 7,01 | 6 | 2 | 4/0 |  |

@@ -50,3 +50,49 @@ Form (äldst → senast): FFFOVOFF · senaste match 2026-09-20
 | Wieczysta Krakow | 1 | 1-0-0 | 2–1 | +1,54 | −27 pe | 2026-07-24 2-1 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Rafal Grzyb. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Mateusz Cichocki (skadad, åter Early April 2027), Conrado (skadad, åter Early October 2026), Elves (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+|  | Cezary Wolowiec | Keeper | 18 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 1 | Filip Majchrowicz | GK | 26 | Poland | 693 k€ | 6,56 | 0 | 0 | 0/0 |  |
+| 44 | Wiktor Koptas | GK | 21 | Poland | 240 k€ | – | 0 | 0 | 0/0 |  |
+| 99 | Bartłomiej Gradecki | GK | 26 | Poland | 147 k€ | 3,03 | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 3 | Kryspin Szcześniak | CB,RB | 25 | Poland | 363 k€ | 6,42 | 0 | 0 | 0/0 |  |
+| 13 | Jan Grzesik | LB,RW,RB | 31 | Poland | 174 k€ | 6,84 | 1 | 1 | 0/0 |  |
+| 14 | Steve Kingue | CB | 26 | Cameroon | 533 k€ | – | 0 | 0 | 0/0 |  |
+| 16 | Mateusz Cichocki | CB | 34 | Poland | 94 k€ | – | 0 | 0 | 0/0 | skadad, åter Early April 2027 |
+| 24 | Zié Ouattara | RB | 26 | Ivory Coast | 892 k€ | 6,53 | 0 | 0 | 1/0 |  |
+| 26 | Adrián Diéguez | CB | 30 | Spain | 267 k€ | 5,50 | 0 | 0 | 2/0 |  |
+| 33 | Oskar Markiewicz | Defender | 26 | Poland | 155 k€ | – | 0 | 0 | 0/0 |  |
+| 47 | Szymon Kilianek | Defender | 20 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 72 | Filip Koperski | CB | 22 | Poland | 104 k€ | 6,65 | 0 | 0 | 1/0 |  |
+| 97 | Conrado | LB,LW | 29 | Brazil | 324 k€ | 5,92 | 0 | 0 | 2/0 | skadad, åter Early October 2026 |
+| | **Mittfältare** | | | | | | | | | |
+|  | Anastasios Donis | LM,LW | 30 | Greece | 151 k€ | – | 0 | 0 | 0/0 |  |
+| 8 | Ibrahima Camará | CDM,CM | 27 | Guinea | 162 k€ | 6,66 | 1 | 0 | 1/0 |  |
+| 10 | Roberto Alves | CAM,CDM,CM | 29 | Switzerland | 150 k€ | 7,12 | 1 | 0 | 0/0 |  |
+| 17 | Adam Żabicki | Midfielder | 20 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 19 | Nicolas Dohojda | Midfielder | 21 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 23 | Kacper Karasek | CAM | 24 | Poland | 296 k€ | 6,20 | 0 | 0 | 0/0 |  |
+| 27 | Rafał Wolski | CAM,CM | 33 | Poland | 279 k€ | 7,14 | 3 | 0 | 2/0 |  |
+| 28 | Romário | CAM,CDM | 26 | Portugal | 355 k€ | 6,36 | 0 | 1 | 0/0 |  |
+| 37 | Mikołaj Molendowski | Midfielder | 19 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 77 | Christos Donis | CDM,CM | 31 | Greece | 146 k€ | 6,61 | 0 | 0 | 2/0 |  |
+| 82 | Luquinhas | CAM,RW,LW | 30 | Brazil | 606 k€ | 6,95 | 0 | 1 | 2/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Ruan Índio | Attacker | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 7 | Ché Nunnely | RM,RW,ST | 27 | Suriname | 350 k€ | 6,27 | 0 | 0 | 1/0 |  |
+| 11 | Fernand Goure | ST | 24 | Ivory Coast | 371 k€ | 6,11 | 0 | 0 | 1/0 |  |
+| 15 | Abdoul Tapsoba | ST,RW,LW | 25 | Burkina Faso | 350 k€ | 6,13 | 0 | 0 | 3/0 |  |
+| 18 | Manu | RW,ST | 20 | Angola | – | 6,19 | 0 | 0 | 0/0 |  |
+| 21 | Elves | LW,RW | 26 | Guinea-Bissau | 265 k€ | 6,22 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 80 | Guilherme Luiz | ST | 21 | Brazil | – | 6,85 | 1 | 0 | 0/0 |  |
+| 90 | Ronaldo Lumungo | RW,LW,ST | 25 | Sao Tome and Principe | 513 k€ | 6,49 | 0 | 0 | 0/0 |  |

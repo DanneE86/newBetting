@@ -68,3 +68,45 @@ Form (äldst → senast): OVFOOOVV · senaste match 2026-09-19
 | Estudiantes Rio Cuarto | 2 | 0-1-1 | 1–3 | −1,28 | +17 pe | 2026-08-29 1-1 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Diego Martínez. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Ignacio Pussetto (skadad, åter Early November 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Hernán Galíndez | GK | 39 | Ecuador | 996 k€ | – | 0 | 0 | 0/0 |  |
+| 27 | Nazareno Durán | Keeper | 22 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 32 | Sebastián Meza | GK | 26 | Argentina | 642 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Fabrizio Martínez | Defender | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 2 | Lucas Blondel | RB,RW,RM | 30 | Switzerland | 954 k€ | – | 0 | 0 | 0/0 |  |
+| 4 | Federico Vera | RB | 28 | Argentina | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 6 | Fabio Pereyra | CB | 36 | Argentina | 413 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | Leandro Lescano | LB | 23 | Argentina | 642 k€ | – | 0 | 0 | 0/0 |  |
+| 21 | Hugo Nervo | CB | 35 | Argentina | 250 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Daniel Zabala | CB | 23 | Argentina | 515 k€ | – | 0 | 0 | 0/0 |  |
+| 25 | César Ibáñez | LB | 27 | Argentina | 1,9 M€ | – | 0 | 0 | 0/0 |  |
+| 34 | Ignacio Campo | RB | 21 | Argentina | 874 k€ | – | 0 | 0 | 0/0 |  |
+| 35 | Máximo Palazzo | CB,LB | 21 | Argentina | 891 k€ | – | 0 | 0 | 0/0 |  |
+| 51 | Martín Soto | Defender | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Rodrigo Fernández Cedrés | CDM,CM | 30 | Uruguay | 489 k€ | – | 0 | 0 | 0/0 |  |
+| 8 | Leonardo Gil | CDM,CM,CAM | 35 | Chile | 319 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Óscar Romero | CAM,CDM,CM | 34 | Paraguay | 298 k€ | – | 0 | 0 | 0/0 |  |
+| 15 | Facundo Waller | CDM,CM | 29 | Uruguay | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 20 | Emmanuel Ojeda | CDM,CM | 28 | Argentina | 533 k€ | – | 0 | 0 | 0/0 |  |
+| 41 | Lautaro Mora | CM | 21 | Argentina | 644 k€ | – | 0 | 0 | 0/0 |  |
+| 48 | Santino Rayneli | Midfielder | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Óscar Cortés | LW,LM,RW,ST | 22 | Colombia | 3,5 M€ | – | 0 | 0 | 0/0 |  |
+| 9 | Jordy Caicedo | ST | 28 | Ecuador | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 11 | Thaiel Peralta | RW | 18 | Argentina | 2,0 M€ | – | 0 | 0 | 0/0 |  |
+| 17 | Juan Bisanz | RW,ST,LW | 25 | Argentina | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 23 | Ignacio Pussetto | ST,RW | 30 | Argentina | 1,0 M€ | – | 0 | 0 | 0/0 | skadad, åter Early November 2026 |
+| 33 | Bruno Barticciotto | ST | 25 | Chile | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| 49 | Tomás Uribe | RM | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 52 | Facundo Kalinger | LW,RW,CAM,CM | 21 | Argentina | 733 k€ | – | 0 | 0 | 0/0 |  |

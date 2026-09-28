@@ -63,3 +63,46 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | Datum | Spel | Match | Utfall | Folket på laget | Vår procent |
 |---|---|---|---|---|---|
 | 2026-04-30 | Europa 2570 | Viking - Rosenborg | 1 ✓ | 74 % | 65 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Morten Jensen. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Martin Roseth (skadad, åter Early October 2026), Sondre Bjørshol (skadad, åter Early October 2026), Anders Bærtelsen (skadad, åter Early November 2026), Nicholas D'Agostino (skadad, åter Mid October 2026), Veton Berisha (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Arild Østbø | GK | 35 | Norway | 207 k€ | 7,42 | 0 | 0 | 1/0 |  |
+| 12 | Erlend Jacobsen | GK | 27 | Norway | – | – | 0 | 0 | 0/0 |  |
+| 30 | Lubomír Belko | GK | 24 | Slovakia | 1,5 M€ | 6,89 | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 3 | Viljar Vevatne | CB | 31 | Norway | 274 k€ | 7,58 | 0 | 0 | 0/0 |  |
+| 4 | Martin Roseth | CB | 28 | Norway | 667 k€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 5 | Henrik Heggheim | RB,CB | 25 | Norway | 1,4 M€ | 7,58 | 5 | 2 | 4/0 |  |
+| 6 | Gianni Stensness | CB | 27 | Australia | 969 k€ | 7,38 | 4 | 0 | 4/0 |  |
+| 17 | Essien Bassey | RB,LB | 19 | Netherlands | 530 k€ | – | 0 | 0 | 0/0 |  |
+| 18 | Sondre Bjørshol | RB | 32 | Norway | 312 k€ | 6,91 | 1 | 0 | 2/0 | skadad, åter Early October 2026 |
+| 21 | Anders Bærtelsen | CB | 26 | Denmark | 590 k€ | 7,01 | 0 | 0 | 1/0 | skadad, åter Early November 2026 |
+| 24 | Vetle Auklend | LB | 21 | Norway | 525 k€ | 7,05 | 0 | 0 | 0/0 |  |
+| 25 | Henrik Falchener | CB | 23 | Norway | 2,2 M€ | 7,51 | 2 | 1 | 2/0 |  |
+| 27 | Jesper Daland | CB | 26 | Norway | 1,2 M€ | 6,17 | 0 | 0 | 0/1 |  |
+| 28 | Kristoffer Haugen | LB | 32 | Norway | 497 k€ | 7,37 | 3 | 1 | 1/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 7 | Kristoffer Askildsen | CM,CAM | 25 | Norway | 1,9 M€ | 7,44 | 5 | 1 | 7/0 |  |
+| 8 | Joe Bell | CDM,CM | 27 | New Zealand | 2,2 M€ | 6,91 | 0 | 1 | 1/0 |  |
+| 16 | Henrik Rørvik Bjørdal | ST,RM,CM | 29 | Norway | 642 k€ | 7,41 | 3 | 7 | 2/1 |  |
+| 26 | Simen Kvia-Egeskog | CM,CAM | 23 | Norway | 2,3 M€ | 7,18 | 8 | 2 | 2/0 |  |
+| 29 | Tobias Moi | CM,CDM | 20 | Norway | – | 6,60 | 0 | 0 | 4/0 |  |
+| 33 | Jakob Segadal Hansen | CAM | 21 | Norway | 1,9 M€ | 6,19 | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 2 | Herman Haugen | RW | 26 | Norway | 501 k€ | 6,40 | 0 | 0 | 1/0 |  |
+| 9 | Nicholas D'Agostino | ST | 28 | Australia | 585 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 10 | Zlatko Tripić | RW,LW,LM | 33 | Norway | 952 k€ | 8,25 | 6 | 19 | 7/0 |  |
+| 11 | Romano Postema | ST | 24 | Netherlands | 1000 k€ | 6,42 | 0 | 1 | 0/0 |  |
+| 14 | Veton Berisha | ST | 32 | Norway | 404 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 19 | Amin Cosic | LW | 20 | Iceland | 270 k€ | 6,65 | 0 | 0 | 0/0 |  |
+| 20 | Peter Christiansen | ST | 26 | Denmark | 1,7 M€ | 7,54 | 11 | 6 | 2/0 |  |
+| 22 | Erik Botheim | ST | 26 | Norway | 2,5 M€ | 7,32 | 2 | 1 | 0/0 |  |
+| 23 | Niklas Fuglestad | RW,LW | 20 | Norway | 1,5 M€ | 6,83 | 3 | 2 | 0/0 |  |
+| 42 | Kelvin Frimpong | LW | 18 | Ghana | – | – | 0 | 0 | 0/0 |  |

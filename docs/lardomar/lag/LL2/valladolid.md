@@ -27,10 +27,10 @@ Form (äldst → senast): FFFOVFOV · senaste match 2026-09-27
 | 2020/21 | LL | 38 | 0,82 | −0,16 (−0,43 / +0,11) | 42 % (28 %) | 0,89–1,50 | 1,00–1,38 | 1,12 |
 | 2021/22 | LL2 | 42 | 1,93 | +0,14 (+0,18 / +0,10) | 21 % (27 %) | 1,69–1,02 | 1,67–1,22* | 1,66 |
 | 2022/23 | LL | 38 | 1,05 | −0,04 (+0,18 / −0,27) | 18 % (26 %) | 0,87–1,66 | 1,05–1,85 | 0,97 |
-| 2023/24 | LL2 | 42 | 1,71 | +0,09 (+0,42 / −0,24) | 21 % (30 %) | 1,21–0,86 | 1,48–1,18* | 1,59 |
+| 2023/24 | LL2 | 42 | 1,71 | +0,09 (+0,42 / −0,24) | 21 % (30 %) | 1,21–0,86 | 1,49–1,19* | 1,59 |
 | 2024/25 | LL | 38 | 0,42 | −0,42 (−0,29 / −0,56) | 11 % (23 %) | 0,68–2,37 | 0,95–2,03 | 0,88 |
-| 2025/26 | LL2 | 42 | 1,10 | −0,37 (−0,34 / −0,40) | 24 % (28 %) | 1,05–1,36 | 1,35–1,26* | 1,44 |
-| 2026/27 | LL2 | 7 | 1,14 | −0,03 (+0,53 / −0,46) | 29 % (29 %) | 0,86–1,29 | 1,33–1,26* | 1,41 |
+| 2025/26 | LL2 | 42 | 1,10 | −0,37 (−0,34 / −0,40) | 24 % (28 %) | 1,05–1,36 | 1,36–1,26* | 1,44 |
+| 2026/27 | LL2 | 7 | 1,14 | −0,03 (+0,53 / −0,46) | 29 % (29 %) | 0,86–1,29 | 1,33–1,27* | 1,41 |
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
 
@@ -59,3 +59,48 @@ Form (äldst → senast): FFFOVFOV · senaste match 2026-09-27
 | Eldense | 2 | 2-0-0 | 2–0 | +1,22 | −28 pe | 2024-04-13 1-0 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Fran Escribá. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Guille Bueno (skadad, åter Early October 2026), Thiago Ojeda (osäker), Dani Pérez (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Álvaro Aceves | GK | 23 | Spain | 522 k€ | 6,71 | 0 | 0 | 1/0 |  |
+| 13 | Dani Martín | GK | 21 | Spain | 461 k€ | – | 0 | 0 | 0/0 |  |
+| 26 | Lucas Lavagnino | Keeper | 22 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 31 | Hugo Wauthier | Keeper | 19 | Spain | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Dani Martín | LB | 29 | Spain | 162 k€ | – | 0 | 0 | 0/0 |  |
+| 2 | Trilli | RB | 23 | Spain | 332 k€ | 7,41 | 0 | 0 | 0/0 |  |
+| 3 | Guille Bueno | LB | 24 | Spain | 1,3 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 3 | Homam Elamin | LB,LW,LM | 27 | Qatar | 287 k€ | – | 0 | 0 | 0/0 |  |
+| 4 | David Torres | CB | 23 | Spain | 1,8 M€ | 6,90 | 0 | 0 | 2/0 |  |
+| 5 | Ramón Martínez | CB,RB | 23 | Spain | 1,0 M€ | 6,38 | 0 | 0 | 1/0 |  |
+| 12 | Miguel Rubio | CB | 28 | Spain | 1,1 M€ | 6,75 | 0 | 0 | 0/0 |  |
+| 14 | Iván Alejo | RB | 31 | Spain | 440 k€ | 6,99 | 0 | 0 | 1/0 |  |
+| 15 | Pablo Tomeo | CB | 26 | Spain | 929 k€ | 6,69 | 0 | 0 | 1/0 |  |
+| 18 | Carlos Clerc | LB | 34 | Spain | 191 k€ | 7,34 | 0 | 0 | 1/0 |  |
+| 27 | Iván Garriel | LB | 21 | Spain | 505 k€ | 7,20 | 0 | 0 | 2/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Mathis Lachuer | CM,CDM,CAM | 26 | France | 937 k€ | 6,45 | 0 | 0 | 1/0 |  |
+| 8 | Thiago Ojeda | CDM,CM,CAM | 23 | Argentina | 572 k€ | 6,60 | 0 | 0 | 2/0 | osäker |
+| 16 | Álex Balboa | CM | 25 | Equatorial Guinea | 260 k€ | 5,91 | 0 | 0 | 1/1 |  |
+| 21 | Julien Ponceau | CDM,CM,CAM | 25 | France | 1,6 M€ | 6,91 | 0 | 2 | 2/0 |  |
+| 24 | Stanko Jurić | CDM,CM | 30 | Croatia | 583 k€ | 6,66 | 0 | 0 | 0/0 |  |
+| 28 | Dani Pérez | CDM | 21 | Spain | – | 6,20 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 30 | Víctor Fernández | CAM | 18 | Spain | 704 k€ | 6,78 | 1 | 0 | 0/0 |  |
+| 32 | Marcos Parriego | Midfielder | 20 | Spain | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Luis Chacón | ST,CAM,LM,LW,CM | 26 | Spain | 973 k€ | 7,31 | 1 | 0 | 1/0 |  |
+| 9 | Juanmi Latasa | ST | 25 | Spain | 1,3 M€ | 6,32 | 1 | 0 | 3/0 |  |
+| 11 | Yeray Cabanzón | RW,RM | 23 | Spain | 667 k€ | 6,50 | 0 | 1 | 1/0 |  |
+| 17 | Víctor Barberà | Attacker | 22 | Spain | 526 k€ | 6,77 | 1 | 0 | 0/0 |  |
+| 19 | Adrián Arnuncio | ST | 19 | Spain | – | 7,13 | 1 | 1 | 0/0 |  |
+| 20 | Robin van Duiven | ST,CAM | 20 | Netherlands | 1,2 M€ | 6,26 | 0 | 0 | 0/0 |  |
+| 22 | Kaj de Rooij | LW,LM | 25 | Netherlands | 994 k€ | 6,29 | 0 | 0 | 1/0 |  |
+| 23 | Tay Abed | RW,ST | 22 | Israel | 1,4 M€ | 6,16 | 0 | 0 | 0/0 |  |
+| 37 | Hugo Calvo | Attacker | 19 | Spain | – | – | 0 | 0 | 0/0 |  |

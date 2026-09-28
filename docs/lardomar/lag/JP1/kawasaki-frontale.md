@@ -61,3 +61,51 @@ Form (äldst → senast): OOOVFVVO · senaste match 2026-09-19
 | V-Varen Nagasaki | 1 | 1-0-0 | 2–1 | +0,91 | −23 pe | 2018-09-29 2-1 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Shigetoshi Hasebe. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Louis Yamaguchi | GK | 28 | Japan | 300 k€ | – | 0 | 0 | 0/0 |  |
+| 21 | Yuki Hayasaka | GK | 27 | Japan | 193 k€ | – | 0 | 0 | 0/0 |  |
+| 33 | Geun-Hyeong Lee | Keeper | 20 | South Korea | – | – | 0 | 0 | 0/0 |  |
+| 49 | Svend Brodersen | GK | 29 | Germany | 707 k€ | 6,86 | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Kaito Tsuchiya | CB | 20 | Japan | – | – | 0 | 0 | 0/0 |  |
+| 2 | Yuto Matsunagane | CB,LB | 22 | Japan | 474 k€ | – | 0 | 0 | 0/0 |  |
+| 3 | Hiroto Taniguchi | CB | 26 | Japan | 446 k€ | 6,81 | 0 | 0 | 0/0 |  |
+| 4 | Pedro Romano | CB,LB | 25 | Brazil | – | 7,10 | 1 | 0 | 2/0 |  |
+| 5 | Asahi Sasaki | CB,LB | 26 | Japan | 790 k€ | 6,83 | 0 | 1 | 0/0 |  |
+| 13 | Sota Miura | LB | 26 | Japan | 995 k€ | 6,69 | 0 | 1 | 0/0 |  |
+| 22 | Filip Uremović | CB | 29 | Croatia | 1,4 M€ | 6,62 | 0 | 0 | 1/0 |  |
+| 28 | Yuichi Maruyama | CB | 37 | Japan | 158 k€ | 6,80 | 0 | 0 | 0/0 |  |
+| 29 | Reon Yamahara | RB,LWB,RWB | 27 | Japan | 518 k€ | 6,89 | 0 | 1 | 0/0 |  |
+| 30 | Hiroto Noda | Defender | 20 | Japan | 423 k€ | – | 0 | 0 | 0/0 |  |
+| 31 | Noriharu Kan | Defender | 19 | China | – | – | 0 | 0 | 0/0 |  |
+| 32 | Shunsuke Hayashi | CB | 19 | Japan | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Yuki Yamamoto | CDM | 28 | Japan | 850 k€ | 7,85 | 1 | 1 | 1/0 |  |
+| 8 | Kento Tachibanada | CDM | 28 | Japan | 860 k€ | 7,19 | 0 | 0 | 0/0 |  |
+| 10 | Ryota Oshima | CDM | 33 | Japan | 153 k€ | – | 0 | 0 | 0/0 |  |
+| 14 | Yasuto Wakizaka | CAM | 31 | Japan | 1,1 M€ | 7,87 | 2 | 3 | 0/0 |  |
+| 16 | Yuto Ozeki | CDM | 21 | Japan | 839 k€ | 6,38 | 0 | 0 | 1/0 |  |
+| 19 | So Kawahara | CDM | 28 | Japan | 452 k€ | 6,69 | 0 | 0 | 0/0 |  |
+| 25 | Shuto Yamaichi | Midfielder | 22 | Japan | – | – | 0 | 0 | 0/0 |  |
+| 26 | Kota Yui | CM,CDM | 21 | Japan | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Takatora Einaga | RW | 23 | Japan | 101 k€ | – | 0 | 0 | 0/0 |  |
+| 9 | Lazar Romanić | ST | 28 | Serbia | 782 k€ | 7,23 | 2 | 0 | 1/0 |  |
+| 11 | Yu Kobayashi | ST | 39 | Japan | 196 k€ | – | 0 | 0 | 0/0 |  |
+| 17 | Tatsuya Ito | RW,LW | 29 | Japan | 734 k€ | 7,67 | 2 | 1 | 2/0 |  |
+| 18 | Kazuya Konno | RW,CAM | 29 | Japan | 343 k€ | 6,53 | 0 | 0 | 0/0 |  |
+| 20 | Kyosuke Mochiyama | ST | 23 | Japan | 275 k€ | 6,56 | 1 | 0 | 0/0 |  |
+| 23 | Marcinho | LW | 31 | Brazil | 492 k€ | 7,78 | 6 | 1 | 1/0 |  |
+| 24 | Ten Miyagi | LW | 25 | Japan | 279 k€ | 6,36 | 0 | 0 | 0/0 |  |
+| 34 | Ryuki Osa | RW | 18 | Japan | 669 k€ | 6,49 | 0 | 0 | 0/0 |  |
+| 36 | Rin Homma | Attacker | 22 | Japan | – | 6,08 | 0 | 0 | 1/0 |  |
+| 41 | Akihiro Ienaga | RW | 40 | Japan | 50 k€ | – | 0 | 0 | 0/0 |  |
+| 93 | Kayke | ST | 20 | Brazil | 1,5 M€ | – | 0 | 0 | 0/0 |  |
+| 97 | Derik Lacerda | ST | 27 | Brazil | 1,0 M€ | 7,41 | 1 | 3 | 1/0 |  |

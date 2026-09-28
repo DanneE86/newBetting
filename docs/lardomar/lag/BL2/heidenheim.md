@@ -21,9 +21,9 @@ Form (äldst → senast): VFVFVVVO · senaste match 2026-09-20
 
 | Säsong | Liga | M | P/M | Mot marknaden (hemma / borta) | Kryss (odds) | Mål för–emot | xG för–emot | xP/M |
 |---|---|---|---|---|---|---|---|---|
-| 2017/18 | BL2 | 34 | 1,24 | +0,05 (+0,34 / −0,23) | 26 % (28 %) | 1,47–1,65 | 1,35–1,70* | 1,19 |
+| 2017/18 | BL2 | 34 | 1,24 | +0,05 (+0,34 / −0,23) | 26 % (28 %) | 1,47–1,65 | 1,35–1,71* | 1,19 |
 | 2018/19 | BL2 | 34 | 1,62 | +0,44 (+0,35 / +0,54) | 29 % (27 %) | 1,62–1,32 | 1,64–1,72* | 1,34 |
-| 2019/20 | BL2 | 34 | 1,62 | +0,25 (+0,58 / −0,08) | 29 % (27 %) | 1,32–1,06 | 1,43–1,41* | 1,40 |
+| 2019/20 | BL2 | 34 | 1,62 | +0,25 (+0,58 / −0,08) | 29 % (27 %) | 1,32–1,06 | 1,43–1,42* | 1,40 |
 | 2020/21 | BL2 | 34 | 1,50 | +0,00 (+0,37 / −0,37) | 18 % (28 %) | 1,44–1,44 | 1,51–1,42* | 1,43 |
 | 2021/22 | BL2 | 34 | 1,53 | +0,05 (+0,37 / −0,27) | 21 % (27 %) | 1,26–1,32 | 1,52–1,54* | 1,37 |
 | 2022/23 | BL2 | 34 | 1,97 | +0,51 (+0,65 / +0,36) | 29 % (27 %) | 1,97–1,06 | 1,65–1,27* | 1,62 |
@@ -56,3 +56,42 @@ Form (äldst → senast): VFVFVVVO · senaste match 2026-09-20
 | Hertha | 1 | 0-0-1 | 1–4 | −1,38 | −26 pe | 2026-08-15 1-4 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Frank Schmidt. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Sirlord Conteh (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Frank Feller | GK | 22 | Germany | 743 k€ | 5,47 | 0 | 0 | 0/0 |  |
+| 33 | Thomas Dähne | GK | 32 | Germany | 210 k€ | 6,95 | 0 | 0 | 0/0 |  |
+| 34 | Paul Tschernuth | Keeper | 24 | Austria | 349 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Marnon-Thomas Busch | RB,CB,RWB | 31 | Germany | 562 k€ | 6,89 | 0 | 1 | 0/0 |  |
+| 4 | Tim Siersleben | CB | 26 | Germany | 1,2 M€ | 6,27 | 0 | 0 | 0/0 |  |
+| 6 | Patrick Mainka | CB | 31 | Germany | 1,5 M€ | 6,85 | 0 | 0 | 2/0 |  |
+| 19 | Jonas Föhrenbach | LB,CB,LWB | 30 | Germany | 609 k€ | 6,96 | 1 | 1 | 0/0 |  |
+| 22 | Oualid Mhamdi | RB,RM | 23 | Morocco | 498 k€ | 6,50 | 1 | 0 | 2/0 |  |
+| 23 | Leart Paçarada | LB | 31 | Kosovo | 470 k€ | – | 0 | 0 | 0/0 |  |
+| 27 | Michael Heule | LB | 25 | Switzerland | 1,8 M€ | 7,36 | 0 | 1 | 0/0 |  |
+| 28 | Adam Kölle | CB | 20 | Germany | 1,4 M€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 3 | Jan Schöppner | CM,CDM,CAM | 27 | Germany | 2,2 M€ | 7,61 | 3 | 0 | 2/0 |  |
+| 10 | Christian Conteh | CAM,ST | 27 | Germany | 1,1 M€ | 6,80 | 0 | 0 | 0/0 |  |
+| 16 | Julian Niehues | CDM,CM | 25 | Germany | 946 k€ | 6,80 | 1 | 0 | 0/0 |  |
+| 17 | Mathias Honsak | LW,LM,ST,CAM | 29 | Austria | 859 k€ | 6,50 | 0 | 0 | 1/0 |  |
+| 20 | Luca Kerber | CM | 24 | Germany | 1,3 M€ | 6,26 | 0 | 0 | 2/0 |  |
+| 38 | Yannik Wagner | LM | 19 | Germany | 1,2 M€ | 6,16 | 0 | 0 | 0/0 |  |
+| 41 | Marko Zrilic | Midfielder | 18 | Germany | – | 6,22 | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 8 | Paul Hennrich | CAM,RW,LW,CM,RM | 21 | Germany | 1,5 M€ | 7,57 | 1 | 1 | 1/0 |  |
+| 11 | Budu Zivzivadze | ST | 32 | Georgia | 1,0 M€ | 7,48 | 3 | 0 | 0/0 |  |
+| 14 | Maximilian Breunig | ST | 26 | Germany | 339 k€ | 6,89 | 1 | 0 | 0/0 |  |
+| 18 | Alessandro Vogt | ST | 21 | Switzerland | 6,5 M€ | 6,57 | 0 | 0 | 0/0 |  |
+| 24 | Marcel Costly | RW,RM,ST,CAM,LM | 30 | Germany | 227 k€ | 7,82 | 1 | 3 | 0/0 |  |
+| 29 | Mikkel Kaufmann | ST | 25 | Denmark | 1,3 M€ | 6,99 | 0 | 2 | 1/0 |  |
+| 31 | Sirlord Conteh | RW | 30 | Sierra Leone | 594 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 37 | Tobias Weigel | Attacker | 19 | Germany | 404 k€ | – | 0 | 0 | 0/0 |  |

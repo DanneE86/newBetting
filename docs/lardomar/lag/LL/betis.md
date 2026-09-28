@@ -4,8 +4,10 @@ Genererad 2026-09-28. Ligans lärdomar: [LL](../../ligor/LL.md). "Mot marknaden"
 
 ## I korthet
 
-- Senaste 8: tur med +0,92 poäng per match mot xP. Marknaden prisar redan in det i ligan (ingen bekräftad effekt), så det är inget spel i sig.
+- Senaste 8: tur med +0,99 poäng per match mot xP. Marknaden prisar redan in det i ligan (ingen bekräftad effekt), så det är inget spel i sig.
 - Stark historik mot Osasuna (+0,82 p/match mot marknaden, 14 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Utan Juan Camilo Hernández (14 % av anfallet): 2,40 poäng per match mot 1,59 med (5 mot 78 matcher), mot marknaden +0,91 mot +0,19.
+- Utan Abdessamad Ezzalzouli (12 % av anfallet): 1,91 poäng per match mot 1,60 med (11 mot 72 matcher), mot marknaden +0,71 mot +0,16.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -13,8 +15,8 @@ Form (äldst → senast): VVVFVVVO · senaste match 2026-09-20
 
 | Mått | Värde |
 |---|---|
-| Tur (poäng − xP per match) | +0,92 |
-| xG-målskillnad − målskillnad | −0,27 |
+| Tur (poäng − xP per match) | +0,99 |
+| xG-målskillnad − målskillnad | −0,39 |
 | Poäng mot marknaden per match | +0,93 |
 
 ## Säsonger
@@ -30,9 +32,22 @@ Form (äldst → senast): VVVFVVVO · senaste match 2026-09-20
 | 2023/24 | LL | 38 | 1,50 | +0,25 (+0,22 / +0,27) | 39 % (27 %) | 1,26–1,18 | 1,39–1,38 | 1,44 |
 | 2024/25 | LL | 38 | 1,58 | +0,13 (+0,08 / +0,18) | 32 % (27 %) | 1,50–1,32 | 1,60–1,36 | 1,56 |
 | 2025/26 | LL | 38 | 1,58 | +0,23 (+0,22 / +0,23) | 39 % (27 %) | 1,55–1,26 | 1,61–1,32 | 1,56 |
-| 2026/27 | LL | 7 | 2,29 | +0,84 (+1,53 / +0,32) | 14 % (25 %) | 1,29–1,00 | 2,06–1,87* | 1,51 |
+| 2026/27 | LL | 7 | 2,29 | +0,84 (+1,53 / +0,32) | 14 % (25 %) | 1,29–1,00 | 1,88–1,83 | 1,42 |
 
-\* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+## Nyckelspelare (Understat, 2024/25–)
+
+Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
+
+| Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
+|---|---|---|---|---|
+| Juan Camilo Hernández | 14 % | 5 / 78 | 2,40 / 1,59 | +0,91 / +0,19 |
+| Antony | 14 % | 0 / 83 | – / 1,64 | – / +0,23 |
+| Abdessamad Ezzalzouli | 12 % | 11 / 72 | 1,91 / 1,60 | +0,71 / +0,16 |
+| Troy Parrott | 9 % | 0 / 83 | – / 1,64 | – / +0,23 |
+| Pablo Fornals | 8 % | 10 / 73 | 1,70 / 1,63 | +0,44 / +0,21 |
+| Isco | 4 % | 0 / 83 | – / 1,64 | – / +0,23 |
+
+Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -81,3 +96,48 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-09-28 | Europa 2509 | Real Betis - Osasuna | 1 ✓ | 65 % | 51 % |
 | 2025-09-14 | Europa 2505 | Levante - Real Betis | X | 54 % | 45 % |
 | 2025-08-31 | Europa 2501 | Real Betis - Athletic Bilbao | 2 | 25 % | 31 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Manuel Pellegrini. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Diego Llorente (skadad, åter Early October 2026), Marc Bartra (skadad, åter Early October 2026), Aitor Ruibal (skadad, åter Back in training), Ismael Barea (skadad, åter Early December 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Álvaro Vallés | GK | 29 | Spain | 2,2 M€ | 8,09 | 0 | 0 | 0/0 |  |
+| 13 | Diego Conde | GK | 27 | Spain | 2,2 M€ | – | 0 | 0 | 0/0 |  |
+| 31 | Manu González | GK | 19 | Spain | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 40 | Alvaro de Pablo | Keeper | 24 | Spain | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Héctor Bellerín | RB | 31 | Spain | 1,9 M€ | 6,64 | 0 | 0 | 1/0 |  |
+| 3 | Diego Llorente | CB | 33 | Spain | 1,9 M€ | 7,03 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 4 | Natan | CB | 25 | Brazil | 17,8 M€ | 7,46 | 1 | 0 | 2/0 |  |
+| 5 | Marc Bartra | CB | 35 | Spain | 628 k€ | 7,27 | 1 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 11 | Fran García | LB | 27 | Spain | 8,0 M€ | 7,15 | 0 | 1 | 1/0 |  |
+| 12 | Ángel Ortiz | RB | 22 | Spain | 3,0 M€ | 7,40 | 0 | 0 | 1/0 |  |
+| 16 | Valentín Gómez | LB,CB | 23 | Argentina | 12,2 M€ | 7,39 | 0 | 0 | 1/0 |  |
+| 23 | Júnior Firpo | LB | 30 | Dominican Republic | 2,6 M€ | 7,28 | 0 | 0 | 1/0 |  |
+| 24 | Aitor Ruibal | RB,LW,ST | 30 | Spain | 2,5 M€ | – | 0 | 0 | 0/0 | skadad, åter Back in training |
+| 33 | Carlos de Roa | LB | 19 | Spain | 507 k€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Dylan Vanney | CAM,LW,ST,CM | 18 | USA | – | – | 0 | 0 | 0/0 |  |
+|  | Ismael Barea | CM | 21 | Spain | 492 k€ | – | 0 | 0 | 0/0 | skadad, åter Early December 2026 |
+| 6 | Facundo Bernal | CDM,CM | 23 | Uruguay | 4,8 M€ | 7,02 | 0 | 0 | 1/0 |  |
+| 8 | Pablo Fornals | CAM,CDM,CM,RW | 30 | Spain | 9,4 M€ | 7,45 | 0 | 0 | 0/0 |  |
+| 14 | Iker Losada | LW,LM,CM | 25 | Spain | 1,5 M€ | – | 0 | 0 | 0/0 |  |
+| 15 | Álvaro Fidalgo | CM,CAM,CDM | 29 | Mexico | 3,9 M€ | 6,15 | 0 | 0 | 0/0 |  |
+| 18 | Nelson Deossa | CDM,CM,CAM | 26 | Colombia | 6,6 M€ | 7,06 | 0 | 1 | 0/0 |  |
+| 20 | Giovani Lo Celso | CAM,CM,LW | 30 | Argentina | 8,5 M€ | – | 0 | 0 | 0/0 |  |
+| 21 | Marc Roca | CDM,CM | 29 | Spain | 2,6 M€ | 7,54 | 0 | 1 | 1/0 |  |
+| 22 | Isco | CAM | 34 | Spain | 2,1 M€ | 6,92 | 0 | 0 | 0/0 |  |
+| 25 | Dani Ceballos | CDM,CM | 30 | Spain | 3,6 M€ | 6,70 | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Yanis Senhadji | ST | 21 | Spain | 349 k€ | – | 0 | 0 | 0/0 |  |
+| 7 | Antony | RW,RM | 26 | Brazil | 30,4 M€ | 7,41 | 0 | 0 | 0/0 |  |
+| 9 | Juan Hernández | ST | 27 | Colombia | 14,2 M€ | 6,94 | 2 | 1 | 0/0 |  |
+| 10 | Abdessamad Ezzalzouli | LW,LM | 24 | Morocco | 16,0 M€ | 7,19 | 1 | 0 | 0/0 |  |
+| 17 | Rodrigo Riquelme | LW | 26 | Spain | 4,4 M€ | 6,92 | 2 | 0 | 0/0 |  |
+| 19 | Troy Parrott | ST | 24 | Ireland | 24,6 M€ | 7,01 | 1 | 1 | 0/0 |  |
+| 27 | José Antonio Morante | LW,RW | 19 | Spain | – | – | 0 | 0 | 0/0 |  |

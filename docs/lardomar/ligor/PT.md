@@ -39,6 +39,15 @@ Underlag: 2816 matcher, säsong 2017/18 – 2026/27. Marknad = stängningsodds u
 | 65–75 % | 377 | 75,6 % | 70,1 % | +5,5 pe (2,5) | svag signal (inte bekräftad) |
 | 75–100 % | 401 | 88,0 % | 81,3 % | +6,8 pe (4,2) | **bekräftad** |
 
+## Kalibrering av oddsen (justeringsmodellen)
+
+g > 0 = favoriter vinner oftare än oddsen säger (skrällar överprissatta), h < 0 = hemmalag överprissatta, d > 0 = kryss underprissatta. Parametrarna är tränade före 2023/24. Kontroll = logloss-skillnad 2023/24– (negativ = bättre). Live används parametrar refittade på all data.
+
+| Bas | g (favoriter) | h (hemma) | d (kryss) | Kontroll | Används live |
+|---|---|---|---|---|---|
+| öppningsodds (Oddset, långt före avspark) | +0,158 | −0,016 | −0,046 | −0,0006 (z −0,3, n 980) | ja |
+| stängningsodds (sen körning, Stryktipset/Europatipset) | +0,143 | −0,008 | −0,054 | −0,0005 (z −0,2, n 980) | nej |
+
 ## Signaler mot marknaden
 
 Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (|z| ≥ 2,5 i träning och ≥ 2 i kontroll krävs). "Oddsrörelse" visar om signalen förutsäger hur oddsen rör sig från öppning till stängning, alltså om marknaden lär sig det före avspark.
@@ -46,12 +55,15 @@ Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (
 | Signal | Hela perioden | Träning (< 2023/24) | Kontroll (2023/24–) | Mot öppningsodds | Oddsrörelse | Effekt p90–p10 | Bedömning |
 |---|---|---|---|---|---|---|---|
 | xG-tur (poäng − xP, senaste 8) | +0,010 (z 0,3, n 2711) | +0,021 (z 0,5, n 1751) | −0,010 (z −0,2, n 960) | −0,001 (z −0,0, n 2709) | −0,013 (z −4,6, n 2709) | +0,017 p | ingen effekt |
-| xG-form mot målform (xGD − GD, senaste 8) | −0,021 (z −0,8, n 2711) | −0,025 (z −0,8, n 1751) | −0,013 (z −0,3, n 960) | −0,014 (z −0,5, n 2709) | +0,008 (z 3,8, n 2709) | −0,045 p | ingen effekt |
+| xG-form mot målform (xGD − GD, senaste 8) | −0,021 (z −0,8, n 2711) | −0,025 (z −0,8, n 1751) | −0,013 (z −0,3, n 960) | −0,013 (z −0,5, n 2709) | +0,008 (z 3,8, n 2709) | −0,045 p | ingen effekt |
 | Form mot marknaden (poäng − förväntat, senaste 8) | −0,015 (z −0,4, n 2711) | −0,007 (z −0,1, n 1751) | −0,029 (z −0,4, n 960) | −0,022 (z −0,6, n 2709) | −0,010 (z −3,0, n 2709) | −0,021 p | ingen effekt |
 | Inbördes möten mot marknaden (≥ 3 möten, 8 år) | +0,099 (z 1,9, n 1759) | +0,170 (z 2,5, n 1001) | −0,018 (z −0,2, n 758) | +0,098 (z 1,8, n 1759) | −0,002 (z −0,4, n 1759) | +0,126 p | ingen effekt |
 | Inbördes möten, poängskillnad | +0,054 (z 3,3, n 1759) | +0,075 (z 3,4, n 1001) | +0,027 (z 1,1, n 758) | +0,057 (z 3,5, n 1759) | +0,003 (z 1,9, n 1759) | +0,240 p | svag signal (inte bekräftad) |
 | Inbördes möten, kryss mot förväntat | +0,120 (z 2,2, n 1759) | +0,089 (z 1,3, n 1001) | +0,159 (z 1,7, n 758) | – | – | +0,055 p | ingen effekt |
 | Vilodagar (hemma − borta, ligamatcher) | +0,002 (z 0,2, n 2704) | −0,004 (z −0,3, n 1761) | +0,011 (z 0,6, n 943) | +0,003 (z 0,2, n 2702) | +0,001 (z 0,6, n 2702) | +0,010 p | ingen effekt |
+| Oddsrörelse öppning → stängning (förväntade poäng) | +0,065 (z 0,3, n 2814) | −0,271 (z −0,9, n 1834) | +0,725 (z 1,9, n 980) | – | – | +0,015 p | ingen effekt |
+| Bolagssnitt mot Pinnacle vid stängning | −1,361 (z −1,5, n 1988) | −0,809 (z −0,6, n 1223) | −1,983 (z −1,5, n 765) | – | – | −0,089 p | ingen effekt |
+| Under 2,5 mål (O/U-marknaden) mot kryss | +0,199 (z 2,0, n 2204) | +0,205 (z 1,5, n 1224) | +0,223 (z 1,6, n 980) | – | – | +0,049 p | ingen effekt |
 
 ## Situationer
 
@@ -86,6 +98,31 @@ Källa: backtesten i `data/stryktips-backtest-2526-steg3.json`, `data/stryktips-
 | 2 | 22,2 % | 32,2 % | 31,0 % | 0,72 |
 
 - Bara 9 matcher: se det som indikation, inte regel.
+
+## Tabell nu (FotMob, 2026-09-28)
+
+| # | Lag | M | V | O | F | Mål | +/− | P |
+|---|---|---|---|---|---|---|---|---|
+| 1 | Porto | 7 | 7 | 0 | 0 | 18-3 | 15 | 21 |
+| 2 | Benfica | 7 | 5 | 1 | 1 | 22-7 | 15 | 16 |
+| 3 | Sp Lisbon | 7 | 4 | 3 | 0 | 17-8 | 9 | 15 |
+| 4 | Santa Clara | 7 | 4 | 3 | 0 | 11-4 | 7 | 15 |
+| 5 | Arouca | 7 | 3 | 2 | 2 | 10-7 | 3 | 11 |
+| 6 | Sp Braga | 6 | 3 | 2 | 1 | 7-5 | 2 | 11 |
+| 7 | Academico Viseu | 7 | 3 | 2 | 2 | 9-9 | 0 | 11 |
+| 8 | Estrela | 7 | 2 | 4 | 1 | 14-14 | 0 | 10 |
+| 9 | Gil Vicente | 6 | 2 | 2 | 2 | 5-5 | 0 | 8 |
+| 10 | Alverca | 7 | 2 | 2 | 3 | 9-11 | -2 | 8 |
+| 11 | Maritimo | 7 | 2 | 2 | 3 | 8-12 | -4 | 8 |
+| 12 | Moreirense | 7 | 2 | 2 | 3 | 8-14 | -6 | 8 |
+| 13 | Famalicao | 7 | 1 | 4 | 2 | 9-7 | 2 | 7 |
+| 14 | Guimaraes | 7 | 1 | 2 | 4 | 5-8 | -3 | 5 |
+| 15 | Nacional | 7 | 1 | 1 | 5 | 7-15 | -8 | 4 |
+| 16 | Rio Ave | 7 | 1 | 1 | 5 | 5-15 | -10 | 4 |
+| 17 | Casa Pia | 7 | 1 | 1 | 5 | 3-16 | -13 | 4 |
+| 18 | Estoril | 7 | 0 | 2 | 5 | 3-10 | -7 | 2 |
+
+Tabellhistorik (en rad per lag och dag sedan 2026-09-28): `data/ligor/PT.json`.
 
 ## Lagfiler
 

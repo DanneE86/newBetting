@@ -72,3 +72,41 @@ Form (äldst → senast): VFVVFVFV · senaste match 2026-09-20
 | Atlanta Utd | 1 | 0-0-1 | 0–1 | −1,14 | −27 pe | 2019-05-16 0-1 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Jesper Sørensen. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Belal Halbouni (skadad, åter Unknown), Kenji Cabrera (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Yohei Takaoka | GK | 30 | Japan | 1,6 M€ | 6,97 | 0 | 1 | 0/1 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Mathías Laborda | CB,LB,RB | 27 | Uruguay | 1,8 M€ | 7,28 | 3 | 2 | 4/0 |  |
+| 3 | Sam Adekugbe | LB | 31 | Canada | 147 k€ | 6,48 | 0 | 0 | 0/0 |  |
+| 4 | Ranko Veselinović | CB | 27 | Serbia | 1,3 M€ | 6,23 | 0 | 0 | 0/0 |  |
+| 6 | Ralph Priso | CB | 24 | Canada | 544 k€ | 7,07 | 1 | 0 | 0/0 |  |
+| 12 | Belal Halbouni | CB | 26 | Syria | 140 k€ | – | 0 | 0 | 0/0 | skadad, åter Unknown |
+| 18 | Édier Ocampo | RB | 22 | Colombia | 1,9 M€ | 7,40 | 2 | 1 | 7/0 |  |
+| 28 | Tate Johnson | LB | 21 | USA | 2,2 M€ | 7,09 | 0 | 0 | 3/0 |  |
+| 29 | Mihail Gherasimencov | LB,CB | 21 | Moldova | 809 k€ | 6,39 | 0 | 0 | 0/0 |  |
+| 33 | Tristan Blackmon | CB | 30 | USA | 1,9 M€ | 7,11 | 1 | 0 | 4/0 |  |
+| 70 | Rui Modesto | RB,CB,RWB | 26 | Angola | 1,3 M€ | 6,26 | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 8 | Oliver Larraz | CDM | 25 | USA | 665 k€ | 6,89 | 0 | 4 | 4/0 |  |
+| 13 | Thomas Müller | CAM | 37 | Germany | 1,7 M€ | 7,70 | 9 | 6 | 1/0 |  |
+| 20 | Andrés Cubas | CDM,CM | 30 | Paraguay | 2,3 M€ | 7,55 | 0 | 2 | 7/0 |  |
+| 23 | Aleksa Cvetković | CAM,CM | 21 | Serbia | 249 k€ | 6,83 | 0 | 1 | 0/0 |  |
+| 25 | Ryan Gauld | CAM,RW | 30 | Scotland | 2,1 M€ | 7,44 | 3 | 1 | 2/0 |  |
+| 59 | Jeevan Badwal | RW,CDM,CAM | 20 | Canada | 1,3 M€ | 6,96 | 1 | 2 | 3/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Cheikh Sabaly | RW,LW,CAM | 27 | Senegal | 2,0 M€ | 6,72 | 2 | 1 | 1/0 |  |
+| 11 | Emmanuel Sabbi | RW,LW | 28 | USA | 1,5 M€ | 6,82 | 4 | 3 | 4/0 |  |
+| 14 | Bruno Caicedo | LW,RW | 21 | Ecuador | 1,5 M€ | 7,06 | 5 | 3 | 3/0 |  |
+| 17 | Kenji Cabrera | LW,RW | 23 | Peru | – | 6,77 | 0 | 2 | 2/0 | skadad, åter Early October 2026 |
+| 19 | Rayan Elloumi | ST | 19 | Tunisia | 1,8 M€ | 6,31 | 2 | 0 | 0/0 |  |
+| 22 | Kwasi Poku | ST | 23 | Canada | 386 k€ | – | 0 | 0 | 0/0 |  |
+| 24 | Brian White | ST | 30 | USA | 2,0 M€ | 7,38 | 17 | 2 | 2/0 |  |
+| 77 | Yadaly Diaby | LW,ST,LM | 26 | Guinea | 738 k€ | 7,39 | 1 | 1 | 2/0 |  |

@@ -22,13 +22,13 @@ Form (äldst → senast): OVFOFFVO · senaste match 2026-09-19
 |---|---|---|---|---|---|---|---|---|
 | 2017/18 | EL1 | 46 | 2,09 | +0,26 (+0,22 / +0,30) | 26 % (26 %) | 1,78–0,87 | 1,50–1,11* | 1,63 |
 | 2018/19 | CH | 46 | 1,30 | +0,02 (+0,14 / −0,11) | 26 % (28 %) | 1,39–1,50 | 1,34–1,51* | 1,29 |
-| 2019/20 | CH | 46 | 1,37 | −0,04 (+0,12 / −0,21) | 26 % (28 %) | 1,43–1,37 | 1,30–1,37* | 1,33 |
-| 2020/21 | CH | 46 | 1,24 | −0,29 (−0,17 / −0,41) | 26 % (28 %) | 1,41–1,17 | 1,60–1,23* | 1,59 |
-| 2021/22 | CH | 46 | 1,50 | +0,09 (+0,19 / −0,01) | 26 % (29 %) | 1,28–1,09 | 1,32–1,28* | 1,42 |
+| 2019/20 | CH | 46 | 1,37 | −0,04 (+0,12 / −0,21) | 26 % (28 %) | 1,43–1,37 | 1,31–1,37* | 1,33 |
+| 2020/21 | CH | 46 | 1,24 | −0,29 (−0,17 / −0,41) | 26 % (28 %) | 1,41–1,17 | 1,60–1,24* | 1,59 |
+| 2021/22 | CH | 46 | 1,50 | +0,09 (+0,19 / −0,01) | 26 % (29 %) | 1,28–1,09 | 1,33–1,28* | 1,42 |
 | 2022/23 | CH | 46 | 1,50 | +0,13 (+0,34 / −0,07) | 20 % (29 %) | 1,13–1,17 | 1,17–1,31* | 1,29 |
-| 2023/24 | CH | 46 | 1,15 | −0,24 (−0,45 / −0,03) | 24 % (26 %) | 1,30–1,61 | 1,40–1,64* | 1,25 |
+| 2023/24 | CH | 46 | 1,15 | −0,24 (−0,45 / −0,03) | 24 % (26 %) | 1,30–1,61 | 1,40–1,65* | 1,25 |
 | 2024/25 | CH | 46 | 1,43 | +0,04 (+0,18 / −0,10) | 20 % (28 %) | 1,15–1,04 | 1,16–1,36* | 1,23 |
-| 2025/26 | CH | 46 | 1,13 | −0,20 (−0,57 / +0,16) | 28 % (28 %) | 0,91–1,22 | 1,19–1,28* | 1,31 |
+| 2025/26 | CH | 46 | 1,13 | −0,20 (−0,57 / +0,16) | 28 % (28 %) | 0,91–1,22 | 1,19–1,29* | 1,31 |
 | 2026/27 | CH | 8 | 1,13 | +0,21 (+0,25 / +0,17) | 38 % (27 %) | 1,50–1,50 | 1,35–1,54* | 1,27 |
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
@@ -84,3 +84,44 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-09-12 | Stryk 4970 | Blackburn - Millwall | 1 ✓ | 30 % | 37 % |
 | 2026-08-29 | Stryk 4968 | Blackburn - Queens Park Rangers | 2 | 42 % | 34 % |
 | 2026-08-22 | Stryk 4967 | Blackburn - Middlesbrough | 1 ✓ | 19 % | 26 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Tony Mowbray. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Lewis Miller (skadad, åter Early October 2026), Scott Wharton (skadad, åter Early October 2026), Yuri Ribeiro (skadad, åter Early October 2026), Augustus Kargbo (skadad, åter Early October 2026), Yuki Ohashi (skadad, åter Early October 2026), Mathias Jørgensen (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Aynsley Pears | GK | 28 | England | 817 k€ | 6,45 | 0 | 0 | 0/0 |  |
+| 22 | Balázs Tóth | GK | 29 | Hungary | 715 k€ | 6,72 | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 3 | Harry Pickering | LWB,LB | 27 | England | 1,1 M€ | 7,31 | 0 | 2 | 2/0 |  |
+| 6 | Tom Atcheson | CB | 20 | Northern Ireland | 996 k€ | 6,73 | 0 | 1 | 2/1 |  |
+| 12 | Lewis Miller | CB,RWB,RB | 26 | Australia | 1,1 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 15 | Sean McLoughlin | CB | 29 | Ireland | 605 k€ | 7,10 | 1 | 0 | 2/0 |  |
+| 16 | Scott Wharton | CB | 28 | England | 947 k€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 17 | Hayden Carter | CB | 26 | England | 1,2 M€ | 6,39 | 0 | 0 | 1/0 |  |
+| 39 | Harvey Pates | LB | 18 | England | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 2 | Ryan Alebiosu | RWB,RB,RM | 24 | Nigeria | 1,5 M€ | 6,76 | 0 | 0 | 0/0 |  |
+| 4 | Yuri Ribeiro | LWB,LB,LM | 29 | Portugal | 488 k€ | 6,54 | 0 | 0 | 1/0 | skadad, åter Early October 2026 |
+| 7 | Augustus Kargbo | LM | 27 | Sierra Leone | 688 k€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 8 | Sam Morsy | CDM,CM | 35 | Egypt | 302 k€ | 6,97 | 0 | 1 | 4/0 |  |
+| 10 | Todd Cantwell | CAM,ST | 28 | England | 1,3 M€ | 7,12 | 1 | 0 | 2/0 |  |
+| 11 | Jayden Fevrier | RWB,RW,CAM,LWB | 23 | England | 405 k€ | 6,59 | 0 | 1 | 1/0 |  |
+| 14 | Dion De Neve | LWB,LW | 25 | Belgium | 848 k€ | – | 0 | 0 | 0/0 |  |
+| 24 | Moussa Baradji | CDM,CAM,CM | 25 | Mali | 1,6 M€ | 6,10 | 0 | 0 | 0/0 |  |
+| 25 | Ryoya Morishita | CAM,RW,CDM,LW,ST | 29 | Japan | 1,4 M€ | 7,03 | 2 | 1 | 0/0 |  |
+| 27 | Gady Beyuku | RM,RB | 20 | France | 2,5 M€ | 6,01 | 0 | 0 | 1/0 |  |
+| 28 | Adam Forshaw | CDM,CM | 34 | England | 271 k€ | 6,29 | 0 | 0 | 2/0 |  |
+| 30 | Jake Garrett | CDM,CAM | 23 | England | 348 k€ | 6,17 | 0 | 0 | 1/0 |  |
+| 31 | Kristi Montgomery | CDM,CM | 22 | Scotland | 737 k€ | 7,09 | 1 | 0 | 1/0 |  |
+| 53 | Frank Vare | CDM | 19 | England | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Harvey Higgins | ST | 17 | England | – | 5,58 | 0 | 0 | 0/0 |  |
+| 9 | Andri Guðjohnsen | ST | 24 | Iceland | 2,1 M€ | 7,01 | 3 | 1 | 1/0 |  |
+| 21 | Oladapo Afolayan | LW,ST | 29 | England | 697 k€ | 7,04 | 3 | 2 | 1/0 |  |
+| 23 | Yuki Ohashi | ST,CAM | 30 | Japan | 978 k€ | 6,14 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 29 | Mathias Jørgensen | ST | 26 | Denmark | 2,4 M€ | 6,26 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |

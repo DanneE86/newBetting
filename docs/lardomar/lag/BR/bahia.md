@@ -58,3 +58,57 @@ Form (äldst → senast): OOOVVVVF · senaste match 2026-09-20
 | Remo | 2 | 1-0-1 | 3–5 | −0,30 | −25 pe | 2026-09-15 2-1 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Rogério Ceni. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Léo Vieira (skadad, åter Out for season), Michel Araújo (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 17 | Guido Herrera | GK | 34 | Argentina | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 22 | Léo Vieira | GK | 36 | Brazil | 301 k€ | – | 0 | 0 | 0/0 | skadad, åter Out for season |
+| 61 | Victor | Keeper | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 81 | Fabio | Keeper | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 91 | Iuri Jean | Keeper | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 96 | Ronaldo | GK | 30 | Brazil | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 3 | Marco Moreno | CB | 25 | Spain | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 4 | Kanu | CB | 29 | Brazil | 2,0 M€ | – | 0 | 0 | 0/0 |  |
+| 31 | Román Gómez | RB,CB | 22 | Argentina | 1,7 M€ | – | 0 | 0 | 0/0 |  |
+| 33 | David Duarte | CB | 31 | Brazil | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 43 | Luiz Gustavo | CB | 20 | Brazil | 951 k€ | – | 0 | 0 | 0/0 |  |
+| 44 | Marcos Victor | CB,RB | 24 | Brazil | 770 k€ | – | 0 | 0 | 0/0 |  |
+| 46 | Luciano Juba | LB | 27 | Brazil | 6,8 M€ | – | 0 | 0 | 0/0 |  |
+| 54 | Gerald | Defender | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 66 | Zé Guilherme | LB | 21 | Brazil | 723 k€ | – | 0 | 0 | 0/0 |  |
+| 83 | Fred | RB | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Lautaro López | CM,CDM | 21 | Argentina | 777 k€ | – | 0 | 0 | 0/0 |  |
+| 6 | Jean Lucas | CM,CDM,CAM | 28 | Brazil | 9,4 M€ | – | 0 | 0 | 0/0 |  |
+| 10 | Éverton Ribeiro | CM,CAM | 37 | Brazil | 675 k€ | – | 0 | 0 | 0/0 |  |
+| 11 | Rodrigo Nestor | CM,CAM,CDM,LM | 26 | Brazil | 4,3 M€ | – | 0 | 0 | 0/0 |  |
+| 14 | Erick | CM,CDM | 28 | Brazil | 2,3 M€ | – | 0 | 0 | 0/0 |  |
+| 15 | Michel Araújo | CM | 30 | Uruguay | 1,7 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 19 | Caio Alexandre | CM,CDM | 27 | Brazil | 3,8 M€ | – | 0 | 0 | 0/0 |  |
+| 26 | Nicolás Acevedo | CM,CDM,RB | 27 | Uruguay | 2,1 M€ | – | 0 | 0 | 0/0 |  |
+| 55 | Sidney | CDM | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 58 | Pedrinho | Midfielder | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 63 | David Martins | Midfielder | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 67 | Wendel | Midfielder | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 80 | Roger | Midfielder | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Ademir | RW,RM | 31 | Brazil | 655 k€ | – | 0 | 0 | 0/0 |  |
+| 9 | Alejo Véliz | ST | 23 | Argentina | 3,6 M€ | – | 0 | 0 | 0/0 |  |
+| 12 | Willian José | ST | 34 | Brazil | 885 k€ | – | 0 | 0 | 0/0 |  |
+| 16 | Erick Pulga | LW,ST,RW,CAM | 25 | Brazil | 7,2 M€ | – | 0 | 0 | 0/0 |  |
+| 23 | Mateo Sanabria | LW,RW | 22 | Argentina | 1,8 M€ | – | 0 | 0 | 0/0 |  |
+| 27 | Everaldo | ST | 35 | Brazil | 382 k€ | – | 0 | 0 | 0/0 |  |
+| 57 | Kauê Furquim | RM | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 71 | Lyan | Attacker | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 72 | Ryan Nascimento | Attacker | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 77 | Ruan Pablo | RW | 18 | Brazil | 2,5 M€ | – | 0 | 0 | 0/0 |  |
+| 89 | Dell | ST | 18 | Brazil | 4,4 M€ | – | 0 | 0 | 0/0 |  |
+| 99 | Cristian Olivera | RW,LW | 24 | Uruguay | 3,1 M€ | – | 0 | 0 | 0/0 |  |

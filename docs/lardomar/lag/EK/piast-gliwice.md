@@ -59,3 +59,43 @@ Form (äldst → senast): VFFOVVVF · senaste match 2026-09-20
 | Wieczysta Krakow | 1 | 0-0-1 | 3–4 | −1,53 | −27 pe | 2026-08-15 3-4 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Daniel Myśliwiec. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** František Plach (skadad, åter Late November 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+|  | Dawid Rychta | Keeper | 20 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 12 | Marcel Mendes-Dudziński | Keeper | 21 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 26 | František Plach | GK | 34 | Slovakia | 150 k€ | – | 0 | 0 | 0/0 | skadad, åter Late November 2026 |
+| 47 | Jakub Grelich | Keeper | 18 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 75 | Domen Gril | GK | 25 | Slovenia | 489 k€ | 7,27 | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Francisco Sierralta | CB | 29 | Chile | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 3 | Elton Fikaj | CB | 20 | Albania | 326 k€ | 6,67 | 0 | 0 | 0/0 |  |
+| 4 | Jakub Czerwiński | CB | 35 | Poland | 278 k€ | 6,96 | 1 | 0 | 1/0 |  |
+| 5 | Juan Rivas | CB | 27 | Spain | 452 k€ | 7,18 | 2 | 1 | 1/0 |  |
+| 15 | Levis Pitan | CB | 21 | England | 332 k€ | – | 0 | 0 | 0/0 |  |
+| 28 | Filip Borowski | RB | 22 | Poland | 280 k€ | 6,29 | 0 | 0 | 0/0 |  |
+| 36 | Jakub Lewicki | LB | 21 | Poland | 850 k€ | 6,76 | 0 | 2 | 2/0 |  |
+| 99 | Ema Twumasi | RB,LB | 29 | Ghana | 228 k€ | 7,03 | 0 | 2 | 1/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 17 | Quentin Boisgard | CM,CAM,ST | 29 | France | 150 k€ | 7,29 | 0 | 1 | 3/0 |  |
+| 18 | Oliwier Maziarz | Midfielder | 20 | Poland | – | 7,00 | 1 | 0 | 0/0 |  |
+| 27 | Jakub Łabojko | CM,CDM | 28 | Poland | 223 k€ | 7,02 | 2 | 0 | 1/0 |  |
+| 31 | Oskar Leśniak | CM,RM,RW,CDM | 21 | Poland | 371 k€ | 6,55 | 0 | 0 | 1/0 |  |
+| 77 | Szczepan Mucha | LW | 22 | Poland | 258 k€ | 6,54 | 1 | 0 | 0/0 |  |
+| 80 | Hugo Vallejo | LM,LW,ST | 26 | Spain | 553 k€ | 7,23 | 3 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Jorge Félix | ST,CAM,RW,CM | 35 | Spain | 206 k€ | 6,10 | 0 | 0 | 0/0 |  |
+| 10 | Andreas Katsantonis | ST | 26 | Cyprus | 232 k€ | 6,05 | 0 | 0 | 0/0 |  |
+| 11 | Leandro Sanca | LW,LM,ST,RW | 26 | Guinea-Bissau | 416 k€ | 7,27 | 4 | 1 | 2/0 |  |
+| 16 | Mateusz Kopczyński | Attacker | 18 | Poland | 518 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | Samuel Ntamack | ST | 25 | France | 413 k€ | 6,77 | 2 | 1 | 0/0 |  |
+| 90 | Ivan Lima | ST,RM,RW | 21 | Portugal | – | 6,90 | 0 | 2 | 1/0 |  |
+| 91 | Maciej Kucharski | Attacker | 17 | Poland | – | – | 0 | 1 | 0/0 |  |
+| 98 | Jason Lokilo | RW,RM,CAM,LW | 28 | DR Congo | – | 6,44 | 0 | 1 | 0/0 |  |

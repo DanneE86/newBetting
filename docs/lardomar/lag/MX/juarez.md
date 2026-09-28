@@ -51,3 +51,44 @@ Form (äldst → senast): FFFFFFFV · senaste match 2026-09-19
 | Queretaro | 13 | 2-4-7 | 8–20 | −0,63 | +3 pe | 2026-04-08 1-1 (b) |
 
 Ligans test av inbördes möten mot marknaden: svag signal (inte bekräftad).
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Gustavo Lema. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Bryan Romero (osäker), Lucas Romero (skadad, åter Early April 2027), Jairo Torres (osäker), Ettson Ayón (osäker)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Sebastián Jurado | GK | 29 | Mexico | 1,4 M€ | – | 0 | 0 | 0/0 |  |
+| 24 | Benny Díaz | GK | 27 | USA | 353 k€ | – | 0 | 0 | 0/0 |  |
+| 27 | Guillermo Ruiz | Keeper | 22 | Spain | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Gilberto Sepúlveda | CB | 27 | Mexico | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 3 | Jesús Murillo | CB | 32 | Colombia | 926 k€ | – | 0 | 0 | 0/0 |  |
+| 4 | Alejandro Mayorga | LB,LWB | 29 | Mexico | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 14 | Eder López | LB | 20 | Mexico | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 20 | Javier Aquino | RB,LB | 36 | Mexico | 288 k€ | – | 0 | 0 | 0/0 |  |
+| 23 | Haret Ortega | CB | 26 | Mexico | 727 k€ | – | 0 | 0 | 0/0 |  |
+| 26 | Daniel Piña | CB,LB | 24 | Chile | 272 k€ | – | 0 | 0 | 0/0 |  |
+| 33 | Francisco Nevárez | RB,RWB | 25 | Mexico | 756 k€ | – | 0 | 0 | 0/0 |  |
+| 184 | Bryan Romero | CB | 23 | USA | 258 k€ | – | 0 | 0 | 0/0 | osäker |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Denzell García | CDM,RB,CM | 23 | Mexico | 4,4 M€ | – | 0 | 0 | 0/0 |  |
+| 6 | Monchu | CDM,CM,CAM | 27 | Spain | 2,8 M€ | – | 0 | 0 | 0/0 |  |
+| 8 | Guilherme Castilho | CM,CDM,CAM | 27 | Brazil | 1,9 M€ | – | 0 | 0 | 0/0 |  |
+| 13 | Rodrigo Dourado | CDM,CM | 32 | Brazil | 1,4 M€ | – | 0 | 0 | 0/0 |  |
+| 15 | Lucas Romero | CDM,CM | 24 | Paraguay | 448 k€ | – | 0 | 0 | 0/0 | skadad, åter Early April 2027 |
+| 16 | Juan Sigala | CAM | 19 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| 183 | Leonardo Rodríguez | Midfielder | 22 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| 201 | Jan Carmona | RW | 22 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Raymundo Fulgencio | LM,RW | 26 | Mexico | 1,8 M€ | – | 0 | 0 | 0/0 |  |
+| 9 | Madson | RW,RM | 27 | Brazil | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 10 | Jairo Torres | RW,CAM,RM | 26 | Mexico | 1,9 M€ | – | 0 | 0 | 0/0 | osäker |
+| 11 | José Luis Rodríguez | LW,LM,RM | 28 | Panama | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| 17 | Luca Martínez Dupuy | ST | 25 | Mexico | 901 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | Óscar Estupiñán | ST | 29 | Colombia | 1,9 M€ | – | 0 | 0 | 0/0 |  |
+| 21 | Ricardinho | CAM,RW | 28 | Portugal | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 29 | Ettson Ayón | ST | 25 | Mexico | 847 k€ | – | 0 | 0 | 0/0 | osäker |

@@ -20,7 +20,7 @@ Form (äldst → senast): VVFFOFOF · senaste match 2026-09-20
 
 | Säsong | Liga | M | P/M | Mot marknaden (hemma / borta) | Kryss (odds) | Mål för–emot | xG för–emot | xP/M |
 |---|---|---|---|---|---|---|---|---|
-| 2025/26 | ED | 34 | 1,09 | +0,08 (−0,09 / +0,25) | 29 % (23 %) | 1,44–1,62 | 1,54–1,96* | 1,17 |
+| 2025/26 | ED | 34 | 1,09 | +0,08 (−0,09 / +0,25) | 29 % (23 %) | 1,44–1,62 | 1,54–1,97* | 1,17 |
 | 2026/27 | ED | 7 | 0,71 | −0,17 (−1,06 / +0,49) | 29 % (20 %) | 0,71–1,71 | 0,81–2,13* | 0,63 |
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
@@ -46,3 +46,46 @@ Form (äldst → senast): VVFFOFOF · senaste match 2026-09-20
 | Cambuur | 1 | 0-1-0 | 2–2 | −0,89 | +77 pe | 2026-09-06 2-2 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Henk Brugge. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Ronald Koeman | GK | 31 | Netherlands | 527 k€ | 7,79 | 2 | 0 | 2/0 |  |
+| 13 | Finn Mulder | Keeper | 18 | Netherlands | – | – | 0 | 0 | 0/0 |  |
+| 20 | Daan Reiziger | GK | 25 | Netherlands | 366 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Amin Bouchouari | Defender | 17 | Morocco | – | – | 0 | 0 | 0/0 |  |
+| 4 | Abdelnor Soualhia | CB | 25 | France | 379 k€ | 7,16 | 1 | 1 | 2/0 |  |
+| 5 | Prince Aning | LWB | 22 | Netherlands | 114 k€ | 6,14 | 0 | 0 | 0/0 |  |
+| 15 | Nigel Ogidi Nwankwo | LB | 28 | Netherlands | 260 k€ | – | 0 | 0 | 0/0 |  |
+| 16 | Sem Valk | CB | 24 | Netherlands | 157 k€ | 6,46 | 0 | 0 | 1/0 |  |
+| 24 | Abdelraffie Benzzine | Defender | 20 | Netherlands | – | – | 0 | 0 | 0/0 |  |
+| 25 | Mano Olfers | CM | 20 | Suriname | – | – | 0 | 0 | 0/0 |  |
+| 26 | Jaylan van Schooneveld | Defender | 21 | Netherlands | 214 k€ | – | 0 | 0 | 0/0 |  |
+| 29 | Dion Malone | CDM | 37 | Suriname | 254 k€ | – | 0 | 0 | 0/0 |  |
+| 43 | Marvin Peersman | LB,CB | 35 | Belgium | 443 k€ | 6,94 | 0 | 0 | 1/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Amine Mahdar | Midfielder | 20 | Netherlands | – | – | 0 | 0 | 0/0 |  |
+|  | Remi van Ekeris | CM | 24 | Netherlands | 328 k€ | – | 0 | 0 | 0/0 |  |
+| 2 | Jeff Hardeveld | LWB,LM,CB,LB | 31 | Netherlands | 445 k€ | 6,16 | 0 | 0 | 0/0 |  |
+| 3 | Gerald Alders | RWB,LB,RM | 21 | Netherlands | 949 k€ | 6,77 | 0 | 0 | 1/0 |  |
+| 6 | Isaiah Ahmed | CDM | 20 | Curacao | 499 k€ | 6,07 | 0 | 0 | 1/0 |  |
+| 7 | Rui Mendes | CAM,RW | 26 | Portugal | 433 k€ | 6,35 | 1 | 0 | 1/0 |  |
+| 10 | Tyrone Owusu | CDM,CAM,CM | 27 | Netherlands | 302 k€ | 6,81 | 0 | 0 | 0/0 |  |
+| 14 | Harrie Kuster | CM,CAM,ST | 21 | Netherlands | 962 k€ | 6,07 | 0 | 0 | 0/0 |  |
+| 17 | Nils Rossen | CDM,CM,CAM | 22 | Netherlands | 882 k€ | 6,63 | 0 | 0 | 0/0 |  |
+| 18 | Gabi Caschili | RB | 23 | Netherlands | 330 k€ | 6,16 | 0 | 0 | 0/0 |  |
+| 23 | Noach Shenkman | CDM | 19 | Netherlands | – | 6,21 | 0 | 0 | 0/0 |  |
+| 27 | Patrick Brouwer | CAM,LW | 25 | Netherlands | 853 k€ | 6,84 | 1 | 1 | 0/0 |  |
+| 28 | Rojendro Oudsten | CDM | 18 | Suriname | 777 k€ | 6,06 | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 8 | Emirhan Demircan | LW,LM,ST,RW | 21 | Turkiye | 911 k€ | 6,28 | 0 | 0 | 0/0 |  |
+| 9 | Jelani Seedorf | ST | 21 | Netherlands | 625 k€ | 6,06 | 0 | 0 | 0/0 |  |
+| 11 | Nökkvi Thorisson | ST | 27 | Iceland | 520 k€ | 6,23 | 1 | 1 | 1/0 |  |
+| 19 | Fabiano Rust | Attacker | 21 | Netherlands | – | 5,95 | 0 | 0 | 0/0 |  |
+| 21 | Fofin Turay | RW | 22 | Netherlands | 260 k€ | 5,82 | 0 | 0 | 0/0 |  |
+| 42 | Arjany Martha | RW,CAM,CM,ST | 23 | Curacao | 394 k€ | 6,29 | 0 | 0 | 0/0 |  |

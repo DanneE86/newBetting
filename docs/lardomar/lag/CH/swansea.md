@@ -26,11 +26,11 @@ Form (äldst → senast): VOVVOFVV · senaste match 2026-09-19
 | 2019/20 | CH | 46 | 1,52 | +0,19 (−0,11 / +0,48) | 35 % (27 %) | 1,35–1,15 | 1,39–1,37* | 1,39 |
 | 2020/21 | CH | 46 | 1,74 | +0,21 (+0,21 / +0,21) | 24 % (29 %) | 1,22–0,85 | 1,17–1,16* | 1,36 |
 | 2021/22 | CH | 46 | 1,33 | −0,01 (+0,00 / −0,02) | 28 % (28 %) | 1,26–1,48 | 1,28–1,37* | 1,35 |
-| 2022/23 | CH | 46 | 1,43 | +0,07 (+0,01 / +0,14) | 26 % (28 %) | 1,48–1,39 | 1,53–1,20* | 1,60 |
-| 2023/24 | CH | 46 | 1,24 | +0,03 (−0,17 / +0,24) | 26 % (26 %) | 1,28–1,41 | 1,31–1,53* | 1,24 |
+| 2022/23 | CH | 46 | 1,43 | +0,07 (+0,01 / +0,14) | 26 % (28 %) | 1,48–1,39 | 1,54–1,20* | 1,60 |
+| 2023/24 | CH | 46 | 1,24 | +0,03 (−0,17 / +0,24) | 26 % (26 %) | 1,28–1,41 | 1,31–1,54* | 1,24 |
 | 2024/25 | CH | 46 | 1,33 | −0,06 (+0,03 / −0,15) | 22 % (28 %) | 1,11–1,22 | 1,20–1,27* | 1,32 |
 | 2025/26 | CH | 46 | 1,39 | +0,02 (+0,14 / −0,09) | 22 % (27 %) | 1,24–1,28 | 1,35–1,46* | 1,32 |
-| 2026/27 | CH | 8 | 2,13 | +0,59 (+0,42 / +0,75) | 25 % (28 %) | 1,63–0,75 | 1,49–1,10* | 1,55 |
+| 2026/27 | CH | 8 | 2,13 | +0,59 (+0,42 / +0,75) | 25 % (28 %) | 1,63–0,75 | 1,49–1,11* | 1,55 |
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
 
@@ -87,3 +87,44 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-09-05 | Stryk 4969 | Swansea - Wrexham | X | 50 % | 42 % |
 | 2026-08-22 | Stryk 4967 | Swansea - Sheffield U | X | 43 % | 36 % |
 | 2026-01-01 | Europa 2536 | Swansea - West Bromwich | 1 ✓ | 32 % | 30 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Vitor Matos. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Josh Key (osäker), Cameron Burgess (skadad, åter Out for season)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Andrew Fisher | GK | 28 | England | 495 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Lawrence Vigouroux | GK | 32 | Chile | 703 k€ | 7,15 | 0 | 0 | 0/0 |  |
+| 29 | Paul Farman | GK | 36 | England | 281 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Josh Key | RB,RWB | 26 | England | 752 k€ | 7,04 | 0 | 0 | 0/0 | osäker |
+| 3 | Jenson Seelt | CB | 23 | Netherlands | 3,7 M€ | – | 0 | 0 | 0/0 |  |
+| 5 | Ben Cabango | CB | 26 | Wales | 7,9 M€ | 7,05 | 0 | 0 | 1/0 |  |
+| 14 | Josh Tymon | LB,LWB | 27 | England | 2,8 M€ | 7,11 | 0 | 1 | 2/0 |  |
+| 15 | Cameron Burgess | CB | 30 | Australia | 1,2 M€ | – | 0 | 0 | 0/0 | skadad, åter Out for season |
+| 20 | Tiago Parente | CB,LM,LB | 20 | Portugal | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 23 | Stephen Welsh | CB | 26 | Scotland | 1,5 M€ | 7,40 | 0 | 0 | 1/0 |  |
+| 26 | Filip Lissah | RB,CB,LB | 21 | England | 249 k€ | 7,17 | 0 | 1 | 4/0 |  |
+| 50 | Carter Heywood | Defender | 17 | Wales | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 4 | Jay Fulton | CDM,CM | 33 | Scotland | 441 k€ | 6,76 | 0 | 0 | 1/0 |  |
+| 6 | Marko Stamenić | CDM,CM | 24 | New Zealand | 2,5 M€ | 6,97 | 0 | 0 | 1/0 |  |
+| 7 | Melker Widell | CAM,LW,CM | 24 | Sweden | – | 7,09 | 0 | 1 | 1/0 |  |
+| 8 | Elijah Just | CAM,LW,CM,ST,RW,RM | 26 | New Zealand | 1,4 M€ | 6,63 | 0 | 1 | 1/0 |  |
+| 16 | Tom Iorpenda | CAM,CDM | 21 | England | – | – | 0 | 0 | 0/0 |  |
+| 17 | Gonçalo Franco | CAM,CDM,CM | 25 | Portugal | 2,8 M€ | 6,62 | 0 | 0 | 0/0 |  |
+| 36 | Ben Lloyd | CAM,RW,CM,LM | 21 | Wales | 490 k€ | – | 0 | 0 | 0/0 |  |
+| 46 | Stephen Eustaquio | CM,CDM | 29 | Canada | 2,9 M€ | 7,12 | 1 | 1 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Jeremy Monga | LW,RW | 17 | England | 10,8 M€ | – | 0 | 0 | 0/0 |  |
+| 9 | Žan Vipotnik | ST | 24 | Slovenia | 7,2 M€ | 6,75 | 2 | 1 | 0/0 |  |
+| 10 | Ji-Sung Eom | LW,LM,RW | 24 | South Korea | 1,2 M€ | 7,20 | 2 | 2 | 0/0 |  |
+| 30 | Joseph Opoku | LW,RW,ST,CAM | 21 | Ghana | 2,4 M€ | 6,90 | 2 | 0 | 1/0 |  |
+| 31 | Ross Stewart | ST | 30 | Scotland | 1,7 M€ | – | 0 | 0 | 0/0 |  |
+| 33 | Adam Idah | ST | 25 | Ireland | 4,4 M€ | 6,86 | 3 | 1 | 0/0 |  |
+| 35 | Ronald Pereira | RW,RM | 25 | Brazil | 1,9 M€ | 6,59 | 1 | 1 | 1/0 |  |
+| 49 | Moussa Kounfolo Yeo | LW,RW,RM,CM | 22 | Mali | 2,5 M€ | 7,22 | 2 | 0 | 1/0 |  |

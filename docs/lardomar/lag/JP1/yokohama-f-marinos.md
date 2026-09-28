@@ -60,3 +60,50 @@ Form (äldst → senast): FVVFOVOV · senaste match 2026-09-19
 | V-Varen Nagasaki | 1 | 1-0-0 | 1–0 | +1,21 | −23 pe | 2018-11-10 1-0 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Steve Corica. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Il-Kyu Park | GK | 36 | Japan | 181 k€ | – | 0 | 0 | 0/0 |  |
+| 20 | Yuya Tsuboi | GK | 27 | Japan | 211 k€ | – | 0 | 0 | 0/0 |  |
+| 21 | Hiroki Iikura | GK | 40 | Japan | 156 k€ | 7,15 | 0 | 0 | 0/0 |  |
+| 36 | Rubén Blanco | GK | 31 | Spain | 284 k€ | 6,71 | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 13 | Taisei Inoue | RB,CB | 23 | Japan | 409 k€ | 7,19 | 1 | 1 | 0/0 |  |
+| 15 | Taiki Watanabe | CDM | 27 | Japan | 170 k€ | – | 0 | 0 | 0/0 |  |
+| 17 | Jeison Quiñónes | CB | 29 | Colombia | 581 k€ | 7,37 | 1 | 0 | 1/0 |  |
+| 22 | Ryotaro Tsunoda | CB,LB | 27 | Japan | 482 k€ | 6,93 | 0 | 0 | 1/0 |  |
+| 25 | Toichi Suzuki | LB | 26 | Japan | 233 k€ | 6,32 | 0 | 0 | 0/0 |  |
+| 27 | Ken Matsubara | CB | 33 | Japan | 155 k€ | – | 0 | 0 | 0/0 |  |
+| 33 | Kosei Suwama | CB | 23 | Japan | 414 k€ | 6,98 | 0 | 0 | 2/0 |  |
+| 35 | Kanta Sekitomi | LB | 20 | Japan | 442 k€ | 6,14 | 0 | 0 | 0/0 |  |
+| 44 | Thomas Deng | CB | 29 | Australia | 185 k€ | – | 0 | 0 | 0/0 |  |
+| 54 | Shota Fujii | CB | 18 | Japan | – | – | 0 | 0 | 0/0 |  |
+| 55 | Kanata Hirano | Defender | 18 | Japan | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 7 | Daiya Tono | CAM | 27 | Japan | 333 k€ | – | 0 | 0 | 0/0 |  |
+| 8 | Takuya Kida | CDM | 32 | Japan | 226 k€ | 6,09 | 0 | 0 | 2/0 |  |
+| 14 | Kei Chinen | CM,CDM | 31 | Japan | 359 k€ | 7,09 | 0 | 0 | 1/0 |  |
+| 19 | Tevis | CM | 20 | Brazil | 860 k€ | – | 0 | 0 | 0/0 |  |
+| 28 | Riku Yamane | CDM,CAM | 23 | Japan | 965 k€ | 6,99 | 1 | 0 | 0/0 |  |
+| 29 | Aruto Higuchi | CM | 21 | Japan | – | – | 0 | 0 | 0/0 |  |
+| 32 | Yuta Tanaka | Midfielder | 23 | Japan | – | – | 0 | 0 | 0/0 |  |
+| 34 | Takuto Kimura | CDM,RB | 26 | Japan | 279 k€ | 6,99 | 0 | 0 | 0/0 |  |
+| 40 | Jun Amano | CAM | 35 | Japan | 176 k€ | 6,71 | 0 | 2 | 1/0 |  |
+| 41 | Kosuke Matsumura | CDM,CAM | 22 | Japan | – | 7,27 | 0 | 3 | 1/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Kaina Tanimura | ST | 28 | Japan | 979 k€ | 7,32 | 6 | 1 | 1/0 |  |
+| 11 | Jordy Croux | RW | 32 | Belgium | 186 k€ | 6,08 | 0 | 0 | 1/0 |  |
+| 18 | George Onaiwu | LW | 25 | Japan | 238 k€ | 6,04 | 0 | 0 | 0/0 |  |
+| 23 | Ryo Miyaichi | LW | 33 | Japan | 186 k€ | 6,89 | 1 | 0 | 0/0 |  |
+| 24 | Tomoki Kondo | RW,RWB,LW | 25 | Japan | 369 k€ | 7,12 | 0 | 1 | 1/0 |  |
+| 26 | Dean David | ST | 30 | Israel | 690 k€ | 6,00 | 0 | 0 | 0/0 |  |
+| 30 | Yuri Araújo | LW | 30 | Brazil | 197 k€ | – | 0 | 0 | 0/0 |  |
+| 39 | Hikaru Takahashi | Attacker | 22 | Japan | – | – | 0 | 0 | 0/0 |  |
+| 43 | Rio Nitta | ST | 23 | Japan | 295 k€ | 6,49 | 1 | 0 | 0/0 |  |
+| 46 | Hiroto Asada | ST | 18 | Japan | – | – | 0 | 0 | 0/0 |  |
+| 47 | Shin Miidera | LW | 16 | Japan | – | 6,83 | 2 | 0 | 1/0 |  |

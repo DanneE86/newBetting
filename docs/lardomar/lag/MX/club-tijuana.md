@@ -58,3 +58,39 @@ Form (äldst → senast): VVOVFVFO · senaste match 2026-09-21
 | Necaxa | 14 | 4-4-6 | 17–22 | −0,20 | +2 pe | 2026-03-21 0-3 (b) |
 
 Ligans test av inbördes möten mot marknaden: svag signal (inte bekräftad).
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Sebastián Abreu. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Rafael Fernández (osäker)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 2 | Antonio Rodríguez | GK | 34 | Mexico | 423 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 3 | Rafael Fernández | RB,CB | 26 | Mexico | 1,5 M€ | – | 0 | 0 | 0/0 | osäker |
+| 4 | Unai Bilbao | CB,RB | 32 | Spain | 656 k€ | – | 0 | 0 | 0/0 |  |
+| 6 | Alejandro Gómez | CB,CDM | 24 | Mexico | 2,6 M€ | – | 0 | 0 | 0/0 |  |
+| 12 | Jackson Porozo | CB | 26 | Ecuador | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| 16 | Alan Vega | LB,LWB | 26 | Mexico | 721 k€ | – | 0 | 0 | 0/0 |  |
+| 18 | Aarón Mejía | RB | 25 | Mexico | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 33 | Pablo Ortíz | LB | 24 | Mexico | 901 k€ | – | 0 | 0 | 0/0 |  |
+| 188 | Alejandro Magallón | CB | 20 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 8 | Iván Tona | CDM,CM | 26 | Mexico | 1,4 M€ | – | 0 | 0 | 0/0 |  |
+| 10 | Gilberto Mora | CAM,CM,LW,ST,LM | 17 | Mexico | 7,1 M€ | – | 0 | 0 | 0/0 |  |
+| 15 | Ignacio Rivero | CAM,CM,RW | 34 | Uruguay | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 20 | Ángel Zapata | CDM,CM | 25 | Mexico | 541 k€ | – | 0 | 0 | 0/0 |  |
+| 26 | Aldahir Pérez | CM | 21 | Mexico | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 31 | Yael Padilla | CAM | 20 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| 34 | Frank Boya | CM,CDM | 30 | Cameroon | 474 k€ | – | 0 | 0 | 0/0 |  |
+| 202 | Joban González | CAM | 21 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Adonis Preciado | LW,RW,LM | 29 | Ecuador | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 9 | Mourad El Ghezouani | ST | 28 | Morocco | 1,5 M€ | – | 0 | 0 | 0/0 |  |
+| 11 | Francisco González | RW,LW,CAM | 25 | Argentina | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 13 | Elias Manoel | RB | 24 | Brazil | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 17 | Ramiro Árciga | RW,RM,RB | 22 | Mexico | 2,4 M€ | – | 0 | 0 | 0/0 |  |
+| 19 | Diego Abreu | ST | 23 | Uruguay | 674 k€ | – | 0 | 0 | 0/0 |  |

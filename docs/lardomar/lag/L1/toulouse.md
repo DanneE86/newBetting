@@ -4,6 +4,7 @@ Genererad 2026-09-28. Ligans lärdomar: [L1](../../ligor/L1.md). "Mot marknaden"
 
 ## I korthet
 
+- Senaste 8: xG-målskillnaden är +0,51 per match bättre än målskillnaden.
 - Stark historik mot Marseille (−0,67 p/match mot marknaden, 11 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
 
 ## Nuläge (senaste 8 ligamatcher)
@@ -12,8 +13,8 @@ Form (äldst → senast): VVOFOFOV · senaste match 2026-09-19
 
 | Mått | Värde |
 |---|---|
-| Tur (poäng − xP per match) | −0,00 |
-| xG-målskillnad − målskillnad | +0,16 |
+| Tur (poäng − xP per match) | −0,25 |
+| xG-målskillnad − målskillnad | +0,51 |
 | Poäng mot marknaden per match | +0,13 |
 
 ## Säsonger
@@ -27,9 +28,22 @@ Form (äldst → senast): VVOFOFOV · senaste match 2026-09-19
 | 2023/24 | L1 | 34 | 1,26 | +0,06 (−0,43 / +0,54) | 29 % (26 %) | 1,24–1,35 | 1,32–1,45 | 1,33 |
 | 2024/25 | L1 | 34 | 1,24 | −0,19 (−0,42 / +0,03) | 26 % (27 %) | 1,29–1,26 | 1,61–1,16 | 1,64 |
 | 2025/26 | L1 | 34 | 1,32 | −0,09 (−0,10 / −0,08) | 26 % (27 %) | 1,38–1,35 | 1,37–1,31 | 1,45 |
-| 2026/27 | L1 | 5 | 1,00 | −0,12 (−0,51 / +0,47) | 40 % (27 %) | 1,40–1,80 | 1,61–1,72* | 1,34 |
+| 2026/27 | L1 | 5 | 1,00 | −0,12 (−0,51 / +0,47) | 40 % (27 %) | 1,40–1,80 | 2,12–1,66 | 1,74 |
 
-\* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+## Nyckelspelare (Understat, 2024/25–)
+
+Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
+
+| Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
+|---|---|---|---|---|
+| Casper Tengstedt | 22 % | 0 / 73 | – / 1,26 | – / −0,14 |
+| Thomas Jørgensen | 14 % | 0 / 73 | – / 1,26 | – / −0,14 |
+| Christ Tapé | 10 % | 0 / 73 | – / 1,26 | – / −0,14 |
+| Santiago Hidalgo | 9 % | 0 / 73 | – / 1,26 | – / −0,14 |
+| Cristian Cásseres Jr. | 9 % | 0 / 73 | – / 1,26 | – / −0,14 |
+| Yann Gboho | 8 % | 4 / 69 | 1,75 / 1,23 | +0,42 / −0,17 |
+
+Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -61,3 +75,41 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-04-12 | Europa 2565 | Toulouse - Lille | 2 | 23 % | 30 % |
 | 2025-10-29 | Europa 2518 | Toulouse - Rennes | X | 52 % | 49 % |
 | 2025-09-21 | Europa 2507 | Auxerre - Toulouse | 1 | 41 % | 42 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Jens Berthel Askou. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Rasmus Nicolaisen (skadad, åter Early October 2026), Abu Francis (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Theo Collin | Keeper | 20 | France | – | – | 0 | 0 | 0/0 |  |
+| 16 | Guillaume Restes | GK | 21 | France | 16,6 M€ | 7,04 | 0 | 0 | 0/0 |  |
+| 60 | Mathys Niflore | GK | 19 | France | 2,1 M€ | 5,60 | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Rasmus Nicolaisen | CB | 29 | Denmark | 2,1 M€ | 6,90 | 0 | 0 | 1/0 | skadad, åter Early October 2026 |
+| 3 | Mark McKenzie | CB | 27 | USA | 3,7 M€ | 7,06 | 0 | 0 | 0/0 |  |
+| 5 | Seny Koumbassa | CB | 19 | France | 1,1 M€ | 6,03 | 0 | 0 | 1/0 |  |
+| 12 | Christ Tapé | LB,CB | 20 | Ivory Coast | 1,2 M€ | 6,90 | 1 | 0 | 1/0 |  |
+| 14 | Niko Sigur | RB,CDM,CM | 23 | Canada | 2,7 M€ | 7,14 | 0 | 0 | 1/0 |  |
+| 19 | David Odogu | CB | 20 | Germany | 5,2 M€ | – | 0 | 0 | 0/0 |  |
+| 94 | Ismaïl Diallo | RB | 23 | France | 564 k€ | 6,39 | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Alexis Vossah | CDM,CM | 18 | France | 16,5 M€ | 6,42 | 0 | 0 | 0/0 |  |
+| 8 | Thomas Jørgensen | CM,CAM,CDM | 20 | Denmark | 3,7 M€ | 7,54 | 2 | 1 | 0/0 |  |
+| 9 | Santiago Hidalgo | CAM,RW,ST | 21 | Argentina | 5,4 M€ | 6,25 | 0 | 0 | 1/0 |  |
+| 15 | Aron Dønnum | CAM,RWB,RM,RW,LWB | 28 | Norway | 2,3 M€ | – | 0 | 0 | 0/0 |  |
+| 17 | Abu Francis | CDM,CM | 25 | Ghana | 1,6 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 18 | Mathis Amougou | CDM,RB | 20 | France | 9,6 M€ | – | 0 | 0 | 0/0 |  |
+| 22 | Rafik Messali | RWB,RB | 23 | Algeria | 1,6 M€ | 6,67 | 0 | 0 | 0/0 |  |
+| 23 | Cristian Cásseres | CDM,CM | 26 | Venezuela | 5,5 M€ | 8,53 | 0 | 4 | 1/0 |  |
+| 31 | Niklas Schmidt | CDM,CM,CAM | 28 | Germany | 817 k€ | 6,83 | 0 | 0 | 2/0 |  |
+| 49 | Aymen Amaaouch | CM | 16 | France | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Julián Vignolo | RW | 19 | Argentina | 1,9 M€ | 6,43 | 0 | 0 | 0/0 |  |
+| 11 | Sion Oppong | LW,LM | 19 | Sweden | 1,1 M€ | 6,39 | 0 | 0 | 0/0 |  |
+| 13 | Jacen Russell-Rowe | ST | 24 | Canada | 2,6 M€ | 6,72 | 1 | 0 | 0/0 |  |
+| 20 | Casper Tengstedt | ST | 26 | Denmark | 2,0 M€ | 7,24 | 3 | 0 | 0/0 |  |
+| 37 | Ilyas Azizi | LW | 18 | France | 727 k€ | 6,66 | 0 | 0 | 0/0 |  |

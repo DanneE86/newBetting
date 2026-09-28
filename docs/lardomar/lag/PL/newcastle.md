@@ -4,7 +4,6 @@ Genererad 2026-09-28. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden"
 
 ## I korthet
 
-- Senaste 8: xG-målskillnaden är −0,56 per match sämre än målskillnaden.
 - Stark historik mot Tottenham (+0,57 p/match mot marknaden, 16 möten), Nott'm Forest (+0,54 p/match mot marknaden, 8 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
 
 ## Nuläge (senaste 8 ligamatcher)
@@ -13,8 +12,8 @@ Form (äldst → senast): OVFOVOFV · senaste match 2026-09-19
 
 | Mått | Värde |
 |---|---|
-| Tur (poäng − xP per match) | +0,47 |
-| xG-målskillnad − målskillnad | −0,56 |
+| Tur (poäng − xP per match) | +0,41 |
+| xG-målskillnad − målskillnad | −0,49 |
 | Poäng mot marknaden per match | +0,05 |
 
 ## Säsonger
@@ -30,9 +29,22 @@ Form (äldst → senast): OVFOVOFV · senaste match 2026-09-19
 | 2023/24 | PL | 38 | 1,58 | −0,08 (+0,30 / −0,46) | 16 % (23 %) | 2,24–1,63 | 2,22–1,64 | 1,68 |
 | 2024/25 | PL | 38 | 1,74 | +0,05 (+0,15 / −0,05) | 16 % (23 %) | 1,79–1,24 | 1,88–1,42 | 1,62 |
 | 2025/26 | PL | 38 | 1,29 | −0,24 (−0,01 / −0,47) | 18 % (25 %) | 1,39–1,45 | 1,60–1,51 | 1,42 |
-| 2026/27 | PL | 5 | 1,60 | +0,09 (+0,13 / +0,04) | 40 % (25 %) | 1,80–1,80 | 1,18–2,05* | 0,85 |
+| 2026/27 | PL | 5 | 1,60 | +0,09 (+0,13 / +0,04) | 40 % (25 %) | 1,80–1,80 | 1,11–1,87 | 0,95 |
 
-\* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+## Nyckelspelare (Understat, 2024/25–)
+
+Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
+
+| Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
+|---|---|---|---|---|
+| Yoane Wissa | 10 % | 4 / 77 | 2,25 / 1,48 | +0,95 / −0,14 |
+| Harvey Barnes | 9 % | 5 / 76 | 1,20 / 1,54 | −0,78 / −0,04 |
+| Nick Woltemade | 8 % | 1 / 80 | 3,00 / 1,50 | +1,00 / −0,10 |
+| Anthony Gordon | 7 % | 9 / 72 | 1,89 / 1,47 | +0,31 / −0,13 |
+| Bruno Guimarães | 7 % | 7 / 74 | 0,86 / 1,58 | −0,57 / −0,04 |
+| Joe Willock | 6 % | 4 / 77 | 0,75 / 1,56 | −0,86 / −0,04 |
+
+Ligans test av frånvaro mot marknaden: svag signal (inte bekräftad). Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -96,3 +108,42 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-10-05 | Europa 2511 | Newcastle - Nottingham | 1 ✓ | 77 % | 61 % |
 | 2025-09-28 | Europa 2509 | Newcastle - Arsenal | 2 | 21 % | 26 % |
 | 2025-09-21 | Europa 2507 | Bournemouth - Newcastle | X | 25 % | 33 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Matthias Jaissle. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Ewen Jaouen (skadad, åter Mid October 2026), Valentino Livramento (skadad, åter Mid October 2026), Daniel Burn (skadad, åter Late September 2026), Amar Dedić (skadad, åter Mid October 2026), Nico González (skadad, åter Mid October 2026), Joelinton (skadad, åter Mid October 2026), Jacob Ramsey (skadad, åter Mid October 2026), William Osula (skadad, åter Mid October 2026), Anthony Elanga (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Nick Pope | GK | 34 | England | 4,7 M€ | – | 0 | 0 | 0/0 |  |
+| 21 | Lukás Hornícek | GK | 24 | Czechia | 11,0 M€ | 7,41 | 0 | 0 | 1/0 |  |
+| 24 | Ewen Jaouen | GK | 20 | France | 1,9 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 29 | Mark Gillespie | GK | 34 | England | 616 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Valentino Livramento | RB,LB | 23 | England | 38,5 M€ | 6,61 | 0 | 0 | 1/0 | skadad, åter Mid October 2026 |
+| 3 | Lewis Hall | LB,LM | 22 | England | 30,5 M€ | 7,53 | 1 | 1 | 0/0 |  |
+| 4 | Sven Botman | CB | 26 | Netherlands | 31,7 M€ | 6,63 | 0 | 0 | 1/0 |  |
+| 5 | Fabian Schär | CB | 34 | Switzerland | 2,7 M€ | 6,21 | 0 | 0 | 0/0 |  |
+| 12 | Malick Thiaw | CB | 25 | Germany | 28,4 M€ | 6,41 | 0 | 0 | 0/0 |  |
+| 33 | Daniel Burn | CB,LB | 34 | England | 4,4 M€ | – | 0 | 0 | 0/0 | skadad, åter Late September 2026 |
+| 37 | Amar Dedić | RB,RW | 24 | Bosnia and Herzegovina | 13,6 M€ | 6,63 | 0 | 1 | 0/0 | skadad, åter Mid October 2026 |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Nico González | CDM,CM | 24 | Spain | 38,9 M€ | 6,33 | 0 | 0 | 1/0 | skadad, åter Mid October 2026 |
+| 7 | Joelinton | CM,LW,CAM,CDM | 30 | Brazil | 25,6 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 8 | Aladji Bamba | CDM,CM | 20 | France | 6,9 M€ | 6,11 | 0 | 0 | 0/0 |  |
+| 14 | Sean Steur | CM,CDM | 18 | Netherlands | 3,8 M€ | 6,38 | 0 | 0 | 0/0 |  |
+| 28 | Joseph Willock | CAM,CM,LW,CDM | 27 | England | 12,1 M€ | 7,08 | 2 | 0 | 0/0 |  |
+| 41 | Jacob Ramsey | CM,CDM,LW | 25 | England | 32,4 M€ | 6,85 | 1 | 0 | 1/0 | skadad, åter Mid October 2026 |
+| 67 | Lewis Miley | RB,CM,CDM | 20 | England | 23,9 M€ | 6,74 | 0 | 0 | 1/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Yoane Wissa | ST,CAM | 30 | DR Congo | 20,5 M€ | 6,88 | 1 | 1 | 2/0 |  |
+| 10 | William Osula | ST | 23 | Denmark | 14,4 M€ | 7,06 | 0 | 1 | 0/0 | skadad, åter Mid October 2026 |
+| 11 | Harvey Barnes | LW,RW | 28 | England | 31,6 M€ | 7,40 | 1 | 2 | 0/0 |  |
+| 17 | Bazoumana Touré | LW,LM,ST | 20 | Ivory Coast | 23,4 M€ | 6,59 | 1 | 0 | 0/0 |  |
+| 19 | Anthony Elanga | RW,CAM | 24 | Sweden | 36,3 M€ | 7,51 | 2 | 0 | 1/0 | skadad, åter Mid October 2026 |
+| 20 | Matias Fernandez-Pardo | ST,LW | 21 | Belgium | 23,5 M€ | 6,40 | 0 | 0 | 0/0 |  |
+| 23 | Jacob Murphy | RW,RM | 31 | England | 10,2 M€ | 6,59 | 0 | 0 | 3/0 |  |
+| 44 | Alfie Harrison | RW,CAM | 20 | England | – | – | 0 | 0 | 0/0 |  |

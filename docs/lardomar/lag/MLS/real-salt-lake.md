@@ -71,3 +71,53 @@ Form (äldst → senast): FFFOFFFF · senaste match 2026-09-24
 | Philadelphia Union | 2 | 2-0-0 | 6–1 | +1,81 | −26 pe | 2024-04-28 2-1 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Pablo Mastroeni. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Lukas Engel (skadad, åter Late October 2026), Justen Glad (skadad, åter Mid October 2026), Juan José Arias (skadad, åter Late October 2026), Diego Luna (skadad, åter Mid November 2026), Zach Booth (skadad, åter Early October 2026), Griffin Dillon (skadad, åter Late October 2026), Ariath Piol (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Rafael Cabral | GK | 36 | Brazil | 154 k€ | 6,58 | 0 | 0 | 1/0 |  |
+| 24 | Max Kerkvliet | GK | 20 | USA | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Luc De Fougerolles | CB | 20 | Canada | 1,5 M€ | – | 0 | 0 | 0/0 |  |
+| 2 | DeAndre Yedlin | CB,RB,RM | 33 | USA | 284 k€ | 6,59 | 0 | 1 | 7/0 |  |
+| 3 | Kobi Henry | CB | 22 | Trinidad and Tobago | 453 k€ | 6,67 | 0 | 0 | 2/0 |  |
+| 4 | Lukas Engel | CB,LM | 27 | Denmark | 1,7 M€ | 6,94 | 1 | 0 | 0/0 | skadad, åter Late October 2026 |
+| 15 | Justen Glad | CB | 29 | USA | 1,4 M€ | 6,92 | 0 | 1 | 0/0 | skadad, åter Mid October 2026 |
+| 21 | Juan José Arias | CB | 22 | Colombia | – | 6,36 | 0 | 0 | 3/0 | skadad, åter Late October 2026 |
+| 26 | Philip Quinton | CB | 26 | USA | 311 k€ | 6,71 | 0 | 1 | 3/0 |  |
+| 29 | Sam Junqua | CB,LM | 29 | USA | 388 k€ | 6,51 | 0 | 1 | 2/0 |  |
+| 37 | Luis Rivera | CB,LB | 18 | USA | 691 k€ | – | 0 | 0 | 0/0 |  |
+| 41 | Gio Villa | RWB,LWB | 18 | USA | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Dušan Žagar | RM,LW,LM,RW | 19 | Serbia | 787 k€ | – | 0 | 0 | 0/0 |  |
+|  | Liam O'Gara | CM,CB | 21 | USA | – | – | 0 | 0 | 0/0 |  |
+| 6 | Stijn Spierings | CM,CDM | 30 | Netherlands | 1,0 M€ | 7,02 | 1 | 1 | 2/0 |  |
+| 8 | Juan Sanabria | LWB,LM,LB,LW | 26 | Uruguay | 2,6 M€ | 7,21 | 1 | 4 | 2/0 |  |
+| 9 | Morgan Guilavogui | CAM,LW,RW | 28 | Guinea | 2,3 M€ | 7,23 | 2 | 5 | 7/1 |  |
+| 10 | Diego Luna | CAM,LM,RW,LW | 23 | USA | 4,6 M€ | 7,27 | 5 | 3 | 5/0 | skadad, åter Mid November 2026 |
+| 11 | Dominik Marczuk | RM | 22 | Poland | 1,2 M€ | 6,57 | 1 | 0 | 1/0 |  |
+| 23 | Zach Booth | RWB,LW | 22 | USA | 202 k€ | 6,61 | 1 | 0 | 2/0 | skadad, åter Early October 2026 |
+| 25 | Colin Guske | CDM,CB | 19 | USA | 906 k€ | 6,11 | 0 | 0 | 4/1 |  |
+| 27 | Griffin Dillon | CDM,CM | 23 | USA | 249 k€ | 6,62 | 0 | 0 | 1/0 | skadad, åter Late October 2026 |
+| 30 | Owen Anderson | LW,LM,CAM | 19 | USA | – | – | 0 | 0 | 0/0 |  |
+| 34 | Luca Moisa | CM,CDM,CAM | 18 | USA | 1,0 M€ | 6,58 | 0 | 0 | 2/0 |  |
+| 38 | Antonio Riquelme | CAM,RW,CM,LW,RM,ST | 18 | USA | – | – | 0 | 0 | 0/0 |  |
+| 40 | Omar Marquez | CM,CDM | 18 | USA | – | – | 0 | 0 | 0/0 |  |
+| 92 | Noel Çalışkan | CM,CDM | 26 | Germany | 769 k€ | 7,33 | 1 | 4 | 5/0 |  |
+| 98 | Alexandros Katranis | LM,LB,LWB | 28 | Greece | 461 k€ | 6,49 | 0 | 0 | 3/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 12 | Saba Lobjanidze | RW,ST | 31 | Georgia | 1,5 M€ | 6,61 | 4 | 3 | 0/0 |  |
+| 13 | Jason Shokalook | ST | 23 | USA | 187 k€ | 5,83 | 0 | 0 | 0/0 |  |
+| 14 | Emeka Eneli | LM | 26 | USA | 1,4 M€ | 6,24 | 0 | 0 | 0/0 |  |
+| 18 | Taylor Booth | LW | 25 | USA | 1,0 M€ | 6,18 | 0 | 0 | 0/0 |  |
+| 19 | Ariath Piol | ST | 21 | Australia | 634 k€ | 6,94 | 1 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 22 | Sergi Solans | ST | 23 | Spain | 680 k€ | 6,99 | 11 | 3 | 1/0 |  |
+| 39 | Aiden Hezarkhani | RW,CAM | 19 | USA | 1,8 M€ | 6,59 | 3 | 0 | 2/0 |  |
+| 44 | Chance Cowell | RW | 18 | USA | 894 k€ | – | 0 | 0 | 0/0 |  |
+| 70 | Lineker Rodrigues dos Santos | ST,CAM,RM | 24 | Brazil | 270 k€ | 6,25 | 0 | 1 | 3/0 |  |

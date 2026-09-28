@@ -5,6 +5,7 @@ Genererad 2026-09-28. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden"
 ## I korthet
 
 - Stark historik mot Everton (−0,68 p/match mot marknaden, 17 möten), Chelsea (−0,57 p/match mot marknaden, 16 möten), Nott'm Forest (−0,70 p/match mot marknaden, 8 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Utan Jean-Philippe Mateta (11 % av anfallet): 1,57 poäng per match mot 1,23 med (7 mot 74 matcher), mot marknaden +0,39 mot −0,03.
 - På Stryktipset/Europatipset streckas lagets vinst ×0,84 av vår sannolikhet (39 matcher). Folket underspelar laget: dess vinst ger streckvärde.
 
 ## Nuläge (senaste 8 ligamatcher)
@@ -13,8 +14,8 @@ Form (äldst → senast): FOFFFVFO · senaste match 2026-09-20
 
 | Mått | Värde |
 |---|---|
-| Tur (poäng − xP per match) | −0,27 |
-| xG-målskillnad − målskillnad | +0,18 |
+| Tur (poäng − xP per match) | −0,35 |
+| xG-målskillnad − målskillnad | +0,30 |
 | Poäng mot marknaden per match | −0,36 |
 
 ## Säsonger
@@ -30,9 +31,22 @@ Form (äldst → senast): FOFFFVFO · senaste match 2026-09-20
 | 2023/24 | PL | 38 | 1,29 | +0,14 (+0,07 / +0,22) | 26 % (25 %) | 1,50–1,53 | 1,42–1,53 | 1,34 |
 | 2024/25 | PL | 38 | 1,39 | +0,17 (−0,10 / +0,44) | 37 % (26 %) | 1,34–1,34 | 1,78–1,55 | 1,52 |
 | 2025/26 | PL | 38 | 1,18 | −0,13 (−0,34 / +0,08) | 32 % (26 %) | 1,08–1,34 | 1,64–1,58 | 1,42 |
-| 2026/27 | PL | 5 | 0,80 | −0,27 (−1,20 / +0,35) | 20 % (26 %) | 1,20–2,20 | 1,20–1,89* | 0,99 |
+| 2026/27 | PL | 5 | 0,80 | −0,27 (−1,20 / +0,35) | 20 % (26 %) | 1,20–2,20 | 1,52–2,00 | 1,12 |
 
-\* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+## Nyckelspelare (Understat, 2024/25–)
+
+Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
+
+| Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
+|---|---|---|---|---|
+| Jean-Philippe Mateta | 11 % | 7 / 74 | 1,57 / 1,23 | +0,39 / −0,03 |
+| Yeremi Pino | 11 % | 0 / 81 | – / 1,26 | – / +0,00 |
+| Ismaila Sarr | 8 % | 10 / 71 | 1,20 / 1,27 | −0,41 / +0,06 |
+| Anan Khalaili | 7 % | 0 / 81 | – / 1,26 | – / +0,00 |
+| Eddie Nketiah | 6 % | 4 / 77 | 1,25 / 1,26 | +0,15 / −0,01 |
+| Tyrick Mitchell | 6 % | 0 / 81 | – / 1,26 | – / +0,00 |
+
+Ligans test av frånvaro mot marknaden: svag signal (inte bekräftad). Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -101,3 +115,44 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-08-31 | Europa 2501 | Aston Villa - Crystal Palace | 2 ✓ | 18 % | 25 % |
 | 2025-08-24 | Europa 2499 | Crystal Palace - Nottingham | X | 42 % | 40 % |
 | 2025-08-17 | Europa 2497 | Chelsea - Crystal Palace | X | 14 % | 21 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Pierre Sage. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Dean Henderson (skadad, åter Mid October 2026), Chadi Riad (skadad, åter Late June 2027), Jean-Philippe Mateta (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Dean Henderson | GK | 29 | England | 24,2 M€ | 6,39 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 31 | Remi Matthews | GK | 32 | England | 388 k€ | – | 0 | 0 | 0/0 |  |
+| 44 | Walter Benítez | GK | 33 | Argentina | 2,5 M€ | 7,41 | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 4 | Chadi Riad | CB | 23 | Morocco | 12,3 M€ | 6,37 | 0 | 0 | 0/0 | skadad, åter Late June 2027 |
+| 5 | Axel Disasi | CB | 28 | France | 14,6 M€ | 6,27 | 0 | 0 | 0/1 |  |
+| 6 | Jaydee Canvot | CB,RB | 20 | France | 22,4 M€ | 6,20 | 0 | 0 | 0/0 |  |
+| 17 | Takehiro Tomiyasu | CB,LB | 27 | Japan | 2,9 M€ | 6,28 | 0 | 0 | 0/0 |  |
+| 21 | Honest Ahanor | CB | 18 | Italy | 21,4 M€ | 6,63 | 0 | 0 | 0/0 |  |
+| 26 | Chris Richards | CB | 26 | USA | 17,5 M€ | 6,57 | 0 | 0 | 1/0 |  |
+| 33 | Ben Chilwell | LB,CB,LWB | 29 | England | 8,0 M€ | 6,79 | 1 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 3 | Tyrick Mitchell | LWB,LM | 27 | England | 17,8 M€ | 7,06 | 2 | 0 | 0/0 |  |
+| 7 | Ismaïla Sarr | CAM,RW,LW,ST | 28 | Senegal | 30,3 M€ | – | 0 | 0 | 0/0 |  |
+| 8 | Jefferson Lerma | CDM,CM,CB | 31 | Colombia | 3,7 M€ | 7,12 | 0 | 0 | 1/0 |  |
+| 9 | Edward Nketiah | CAM,ST | 27 | England | 12,7 M€ | 6,80 | 0 | 1 | 0/0 |  |
+| 10 | Yéremi Pino | CAM,LW,RW,LM | 23 | Spain | 35,8 M€ | 6,79 | 0 | 0 | 1/0 |  |
+| 12 | Zavier Gozo | RWB,RM,RW,LW | 19 | USA | 2,5 M€ | 5,75 | 0 | 0 | 0/0 |  |
+| 18 | Daichi Kamada | CDM,CAM,CM,RW | 30 | Japan | 8,2 M€ | 7,33 | 0 | 3 | 1/0 |  |
+| 19 | Will Hughes | CDM,CM | 31 | England | 3,5 M€ | 6,29 | 0 | 0 | 0/0 |  |
+| 20 | Adam Wharton | CDM,CM | 22 | England | 47,7 M€ | 6,81 | 0 | 0 | 1/0 |  |
+| 23 | Quinten Timber | CDM,CAM,CM | 25 | Netherlands | 18,3 M€ | 6,95 | 0 | 0 | 0/0 |  |
+| 24 | Darío Osorio | RWB,RM,CAM,RW,LW | 22 | Chile | 8,4 M€ | – | 0 | 0 | 0/0 |  |
+| 25 | Anan Khalaili | RWB,RM,RW,RB | 22 | Israel | 9,1 M€ | 7,48 | 1 | 0 | 1/0 |  |
+| 28 | Cheick Oumar Doucouré | CDM | 26 | Mali | 14,6 M€ | – | 0 | 0 | 0/0 |  |
+| 30 | Óscar Mingueza | RM,LM,LWB,LB | 27 | Spain | 11,6 M€ | 6,08 | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 11 | Dwight McNeil | RW,LW,CAM | 26 | England | 15,2 M€ | 6,05 | 0 | 0 | 0/0 |  |
+| 14 | Jean-Philippe Mateta | ST | 29 | France | 29,2 M€ | 6,34 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 22 | Jørgen Strand Larsen | ST | 26 | Norway | 36,2 M€ | 6,51 | 1 | 0 | 0/0 |  |
+| 29 | Evann Guessand | RW,ST,LW,CAM | 25 | Ivory Coast | 25,7 M€ | 5,78 | 0 | 0 | 0/0 |  |

@@ -54,3 +54,45 @@ Form (äldst → senast): FVFOVOVV · senaste match 2026-09-18
 | Wieczysta Krakow | 1 | 1-0-0 | 2–0 | +1,29 | −24 pe | 2026-08-29 2-0 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Mariusz Jop. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Julian Lelieveld (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+|  | Jakub Stepak | Keeper | 20 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 1 | Marcel Łubik | GK | 22 | Poland | 1,7 M€ | 7,26 | 0 | 0 | 0/0 |  |
+| 28 | Patryk Letkiewicz | GK | 21 | Poland | 651 k€ | – | 0 | 0 | 0/0 |  |
+| 93 | Bartosz Neugebauer | Keeper | 24 | Poland | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Julian Lelieveld | RB | 29 | Netherlands | 155 k€ | 6,87 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 4 | Rafał Mikulec | LB | 29 | Poland | 72 k€ | 6,44 | 0 | 1 | 0/0 |  |
+| 6 | Alan Uryga | CB | 32 | Poland | 72 k€ | 7,33 | 2 | 1 | 2/0 |  |
+| 13 | Maxence Maisonneuve | CB | 27 | France | 422 k€ | 6,74 | 0 | 1 | 3/0 |  |
+| 25 | Bartosz Jaroch | RB | 31 | Poland | 72 k€ | – | 0 | 0 | 0/0 |  |
+| 29 | Darijo Grujčić | CB | 27 | Austria | 164 k€ | 7,01 | 0 | 0 | 0/0 |  |
+| 34 | Raoul Giger | RB | 28 | Switzerland | 87 k€ | 7,34 | 0 | 1 | 1/0 |  |
+| 50 | Mariusz Kutwa | CB | 22 | Poland | 213 k€ | – | 0 | 0 | 0/0 |  |
+| 52 | Jakub Krzyżanowski | LB | 20 | Poland | 697 k€ | 6,93 | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Karol Tokarczyk | Midfielder | 21 | Poland | – | – | 0 | 0 | 0/0 |  |
+|  | Maksym Tsymbalyuk | Midfielder | 19 | Ukraine | – | – | 0 | 0 | 0/0 |  |
+| 7 | Julius Ertlthaler | CDM,CM,CAM | 29 | Austria | 124 k€ | 7,04 | 0 | 1 | 2/0 |  |
+| 8 | Marc Carbó | CDM | 32 | Spain | 72 k€ | 6,45 | 0 | 0 | 0/0 |  |
+| 9 | Ángel Rodado | CAM,ST | 29 | Spain | 1,2 M€ | 7,13 | 4 | 1 | 0/0 |  |
+| 12 | James Igbekeme | CM,CDM | 31 | Nigeria | 72 k€ | 7,05 | 0 | 0 | 1/0 |  |
+| 23 | Víctor Meseguer | CDM,CAM,CM | 27 | Spain | 880 k€ | 6,00 | 0 | 0 | 1/0 |  |
+| 41 | Kacper Duda | CDM,CM,CAM | 22 | Poland | 869 k€ | 7,22 | 0 | 1 | 2/0 |  |
+| 51 | Maciej Kuziemka | RW | 20 | Poland | 1,6 M€ | 6,45 | 0 | 0 | 0/0 |  |
+| 97 | Wiktor Biedrzycki | CB | 29 | Poland | 72 k€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Oumar Conte | Attacker | 19 | Guinea | 500 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Frederico Duarte | LW,RW | 27 | Portugal | 173 k€ | 6,76 | 0 | 0 | 0/0 |  |
+| 15 | Marcin Barton | Attacker | 22 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 17 | Marko Božić | LW,LM,RW | 28 | Austria | 97 k€ | 7,45 | 2 | 2 | 1/0 |  |
+| 21 | Jérémy Guillemenot | ST,CAM | 28 | Switzerland | 433 k€ | 7,22 | 1 | 0 | 0/0 |  |
+| 27 | Thody Élie Youan | ST,RM,RW | 27 | France | 956 k€ | 7,13 | 1 | 0 | 1/0 |  |

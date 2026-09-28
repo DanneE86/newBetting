@@ -23,7 +23,7 @@ Form (äldst → senast): OVVFFOOO · senaste match 2026-09-26
 | 2017/18 | EL2 | 46 | 1,35 | +0,02 (−0,03 / +0,08) | 30 % (27 %) | 1,15–1,13 | 1,31–1,25* | 1,41 |
 | 2018/19 | EL2 | 46 | 1,52 | −0,01 (+0,05 / −0,07) | 22 % (28 %) | 1,41–1,15 | 1,47–1,06* | 1,64 |
 | 2019/20 | EL2 | 37 | 1,57 | +0,08 (+0,03 / +0,12) | 35 % (28 %) | 1,41–1,00 | 1,49–1,17* | 1,56 |
-| 2020/21 | EL2 | 46 | 1,11 | +0,05 (+0,34 / −0,24) | 39 % (28 %) | 0,96–1,33 | 1,04–1,45* | 1,13 |
+| 2020/21 | EL2 | 46 | 1,11 | +0,05 (+0,34 / −0,24) | 39 % (28 %) | 0,96–1,33 | 1,04–1,46* | 1,13 |
 | 2021/22 | EL2 | 46 | 1,20 | −0,02 (−0,19 / +0,14) | 28 % (29 %) | 1,04–1,30 | 1,22–1,51* | 1,19 |
 | 2022/23 | EL2 | 46 | 1,07 | −0,20 (−0,21 / −0,19) | 28 % (29 %) | 0,96–1,11 | 1,13–1,27* | 1,26 |
 | 2023/24 | EL2 | 46 | 0,98 | −0,25 (−0,31 / −0,19) | 26 % (26 %) | 1,28–1,74 | 1,53–1,65* | 1,33 |
@@ -60,3 +60,42 @@ Form (äldst → senast): OVVFFOOO · senaste match 2026-09-26
 | Barnet | 2 | 1-1-0 | 5–2 | +0,88 | +22 pe | 2026-02-21 4-1 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Danny Cowley. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Tom Smith | GK | 24 | England | 146 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Thimothée Lo-Tutala | GK | 23 | France | 457 k€ | 6,88 | 0 | 0 | 0/0 |  |
+| 31 | Oscar Roberts | Keeper | 0 | England | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Rob Hunt | RB,CDM,LB,RWB | 31 | England | 92 k€ | 6,64 | 1 | 0 | 1/0 |  |
+| 3 | Ellis Iandolo | LB,LWB | 29 | England | 93 k€ | 7,29 | 1 | 1 | 2/0 |  |
+| 5 | Jack Tucker | CB | 26 | England | 207 k€ | 7,05 | 0 | 0 | 1/0 |  |
+| 12 | Moses Sesay | LB,CDM,LW | 19 | England | – | 7,39 | 3 | 1 | 0/0 |  |
+| 20 | Sean Raggett | CB | 32 | England | 83 k€ | 6,77 | 0 | 0 | 0/0 |  |
+| 21 | Jake Leake | LB | 23 | England | 81 k€ | 6,29 | 0 | 0 | 0/0 |  |
+| 24 | Frankie Terry | CB,LB | 22 | England | 195 k€ | 6,26 | 0 | 0 | 0/0 |  |
+| 30 | Kane Vincent-Young | RB,LB,RWB | 30 | Grenada | 93 k€ | 7,25 | 0 | 1 | 1/0 |  |
+| 44 | Samuel Kuffour Jr. | CB | 22 | Ghana | 128 k€ | 6,46 | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 4 | Ben Perry | CAM | 21 | England | 528 k€ | – | 0 | 0 | 0/0 |  |
+| 6 | Paul Digby | CM,CDM | 31 | England | 158 k€ | 6,73 | 0 | 0 | 0/0 |  |
+| 8 | Teddy Bishop | CDM,CM | 30 | England | 109 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Jack Payne | CAM,CDM | 31 | England | 87 k€ | 7,37 | 0 | 1 | 0/0 |  |
+| 26 | Jay Williams | CDM,CM | 25 | St. Kitts and Nevis | 154 k€ | 6,93 | 0 | 0 | 0/0 |  |
+| 42 | Milton Oni | CAM | 20 | England | – | – | 0 | 0 | 0/0 |  |
+| 47 | Ronnie Harvey | CDM | 19 | England | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Adrian Akande | LW | 22 | Nigeria | 196 k€ | – | 0 | 0 | 0/0 |  |
+| 7 | Harry Anderson | LW,LM,RW | 29 | England | 120 k€ | 7,00 | 2 | 0 | 1/0 |  |
+| 9 | Bradley Ihionvien | ST | 22 | England | 206 k€ | 6,34 | 0 | 0 | 0/0 |  |
+| 11 | Leon Chiwome | ST | 20 | England | 934 k€ | 5,98 | 0 | 0 | 0/0 |  |
+| 14 | Kylian Kouassi | ST | 23 | England | 252 k€ | 6,68 | 1 | 0 | 0/0 |  |
+| 15 | Beryly Lubala | LW,RW,ST | 28 | DR Congo | 183 k€ | 5,96 | 0 | 0 | 0/0 |  |
+| 17 | Jaden Williams | CAM,ST | 22 | England | 496 k€ | 6,37 | 1 | 0 | 0/1 |  |
+| 27 | Oscar Thorn | RW | 22 | England | 290 k€ | 7,15 | 0 | 4 | 1/0 |  |
+| 39 | Kien Connolly | Attacker | 21 | England | – | – | 0 | 0 | 0/0 |  |

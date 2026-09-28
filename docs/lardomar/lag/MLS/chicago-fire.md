@@ -70,3 +70,46 @@ Form (äldst → senast): VVOOOOFF · senaste match 2026-09-20
 | San Diego FC | 1 | 0-0-1 | 1–2 | −1,41 | −24 pe | 2025-07-13 1-2 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Gregg Berhalter. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Anton Salétros (skadad, åter Mid October 2026), André Franco (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Chris Brady | GK | 22 | USA | 2,4 M€ | 6,80 | 0 | 0 | 1/0 |  |
+| 25 | Jeffrey Gal | GK | 33 | USA | 50 k€ | – | 0 | 0 | 0/0 |  |
+| 44 | Josh Cohen | GK | 34 | USA | 50 k€ | 7,85 | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Andreas Hanche-Olsen | CB | 29 | Norway | 2,5 M€ | – | 0 | 0 | 0/0 |  |
+|  | Omar González | CB | 37 | USA | 103 k€ | – | 0 | 0 | 0/0 |  |
+| 2 | Leonardo Barroso | RB,RM | 21 | Portugal | 1,3 M€ | 6,83 | 0 | 0 | 2/0 |  |
+| 3 | Jack Elliott | CB | 31 | England | 1,2 M€ | 6,93 | 0 | 2 | 5/0 |  |
+| 4 | Mbekezeli Mbokazi | CB | 21 | South Africa | 541 k€ | 7,32 | 0 | 0 | 2/0 |  |
+| 5 | Sam Rogers | CB | 27 | USA | 114 k€ | 6,58 | 0 | 0 | 2/0 |  |
+| 15 | Andrew Gutman | LB,LM | 29 | USA | 674 k€ | 6,95 | 1 | 4 | 3/0 |  |
+| 24 | Jonathan Dean | RB,RM,LB | 29 | USA | 468 k€ | 6,67 | 0 | 0 | 2/1 |  |
+| 32 | Noah Allen | LB,CB,LM | 22 | Greece | 2,2 M€ | 6,59 | 1 | 1 | 3/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Anton Salétros | CM,CDM | 30 | Sweden | 1,4 M€ | 6,95 | 0 | 0 | 5/0 | skadad, åter Mid October 2026 |
+| 10 | André Franco | CM | 28 | Portugal | 716 k€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 17 | Robin Lod | ST,CM,RM,CAM | 33 | Finland | 712 k€ | 6,81 | 4 | 2 | 3/0 |  |
+| 18 | Johan Gómez | RWB,LW,CAM,RB | 25 | USA | 436 k€ | 6,85 | 1 | 0 | 0/0 |  |
+| 22 | Mauricio Pineda | CM,CDM | 28 | USA | 451 k€ | 6,51 | 0 | 0 | 0/0 |  |
+| 23 | Anzor Mekvabishvili | CM,CDM | 25 | Georgia | 1,6 M€ | 6,48 | 0 | 0 | 0/0 |  |
+| 29 | Dawid Poręba | CM,CAM,CDM | 23 | USA | 201 k€ | 6,98 | 0 | 1 | 1/0 |  |
+| 35 | Sergio Oregel | CM,CDM | 21 | USA | 1,5 M€ | 6,69 | 0 | 0 | 2/0 |  |
+| 42 | Djé D'Avilla | CM,CDM | 23 | Ivory Coast | 1,8 M€ | 6,96 | 1 | 0 | 7/0 |  |
+| 65 | Oscar Pineda | CDM,CM | 18 | USA | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Maren Haile-Selassie | LW,LM,ST,RW,CAM,CM | 27 | Switzerland | 827 k€ | 7,31 | 8 | 4 | 1/0 |  |
+| 8 | Chris Mueller | ST | 30 | USA | 53 k€ | 6,27 | 0 | 0 | 1/0 |  |
+| 9 | Robert Lewandowski | ST | 38 | Poland | 4,8 M€ | 7,19 | 6 | 2 | 1/0 |  |
+| 11 | Philip Zinckernagel | RW,RM | 31 | Denmark | 2,1 M€ | 7,34 | 5 | 8 | 4/0 |  |
+| 12 | Puso Dithejane | LW,RW | 22 | South Africa | 676 k€ | 6,73 | 2 | 1 | 2/0 |  |
+| 19 | Jonathan Bamba | LW,LM,RW | 30 | Ivory Coast | 2,0 M€ | 6,97 | 2 | 2 | 2/0 |  |
+| 28 | Dean Boltz | ST,CAM | 20 | USA | 757 k€ | – | 0 | 0 | 0/0 |  |
+| 37 | Robert Turdean | CAM,ST,RW,LW | 16 | USA | – | – | 0 | 0 | 0/0 |  |

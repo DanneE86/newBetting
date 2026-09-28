@@ -4,10 +4,10 @@ Genererad 2026-09-28. Ligans lärdomar: [BL](../../ligor/BL.md). "Mot marknaden"
 
 ## I korthet
 
-- Senaste 8: tur med +0,60 poäng per match mot xP. Marknaden prisar redan in det i ligan (ingen bekräftad effekt), så det är inget spel i sig.
-- Senaste 8: xG-målskillnaden är −1,35 per match sämre än målskillnaden.
+- Senaste 8: tur med +0,52 poäng per match mot xP. Marknaden prisar redan in det i ligan (ingen bekräftad effekt), så det är inget spel i sig.
+- Senaste 8: xG-målskillnaden är −1,07 per match sämre än målskillnaden.
 - Stark historik mot M'gladbach (−0,51 p/match mot marknaden, 16 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
-- På Stryktipset/Europatipset streckas lagets vinst ×1,17 av vår sannolikhet (5 matcher). Folket överspelar laget: garderingar mot det ger mer i utdelning.
+- Utan Harry Kane (15 % av anfallet): 2,25 poäng per match mot 2,53 med (4 mot 68 matcher), mot marknaden −0,20 mot +0,18.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -15,8 +15,8 @@ Form (äldst → senast): VOVVVOVV · senaste match 2026-09-18
 
 | Mått | Värde |
 |---|---|
-| Tur (poäng − xP per match) | +0,60 |
-| xG-målskillnad − målskillnad | −1,35 |
+| Tur (poäng − xP per match) | +0,52 |
+| xG-målskillnad − målskillnad | −1,07 |
 | Poäng mot marknaden per match | +0,11 |
 
 ## Säsonger
@@ -32,9 +32,22 @@ Form (äldst → senast): VOVVVOVV · senaste match 2026-09-18
 | 2023/24 | BL | 34 | 2,12 | −0,20 (+0,07 / −0,46) | 9 % (16 %) | 2,76–1,32 | 2,78–1,04 | 2,18 |
 | 2024/25 | BL | 34 | 2,41 | +0,09 (+0,04 / +0,15) | 21 % (15 %) | 2,91–0,94 | 2,79–0,82 | 2,32 |
 | 2025/26 | BL | 34 | 2,62 | +0,24 (+0,04 / +0,43) | 15 % (14 %) | 3,59–1,06 | 3,08–1,31 | 2,19 |
-| 2026/27 | BL | 4 | 2,50 | +0,11 (+0,36 / −0,14) | 25 % (11 %) | 3,50–0,50 | 2,69–0,66* | 2,48 |
+| 2026/27 | BL | 4 | 2,50 | +0,11 (+0,36 / −0,14) | 25 % (11 %) | 3,50–0,50 | 3,33–0,75 | 2,63 |
 
-\* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+## Nyckelspelare (Understat, 2024/25–)
+
+Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
+
+| Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
+|---|---|---|---|---|
+| Harry Kane | 15 % | 4 / 68 | 2,25 / 2,53 | −0,20 / +0,18 |
+| Michael Olise | 13 % | 0 / 72 | – / 2,51 | – / +0,16 |
+| Luis Díaz | 11 % | 0 / 72 | – / 2,51 | – / +0,16 |
+| Ismael Saibari | 11 % | 0 / 72 | – / 2,51 | – / +0,16 |
+| Jamal Musiala | 6 % | 3 / 69 | 2,33 / 2,52 | +0,39 / +0,15 |
+| Joshua Kimmich | 6 % | 3 / 69 | 3,00 / 2,49 | +0,35 / +0,15 |
+
+Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -64,8 +77,47 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 
 | Datum | Spel | Match | Utfall | Folket på laget | Vår procent |
 |---|---|---|---|---|---|
-| 2026-09-20 | Europa 2609 | Bayer Leverkusen - RB Leipzig | 1 ✓ | 57 % | 51 % |
 | 2026-04-19 | Europa 2567 | Bayern München - Stuttgart | 1 ✓ | 78 % | 65 % |
-| 2026-03-04 | Europa 2554 | Hamburg - Bayer Leverkusen | 2 ✓ | 57 % | 47 % |
 | 2026-01-14 | Europa 2540 | Köln - Bayern München | 2 ✓ | 89 % | 76 % |
-| 2025-09-21 | Europa 2507 | Bayer Leverkusen - Mönchengladbach | X | 71 % | 62 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Vincent Kompany. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Konrad Laimer (skadad, åter A few weeks), Jamal Musiala (skadad, åter A few weeks)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Manuel Neuer | GK | 40 | Germany | 2,0 M€ | 7,41 | 0 | 0 | 0/0 |  |
+| 26 | Sven Ulreich | GK | 38 | Germany | 280 k€ | – | 0 | 0 | 0/0 |  |
+| 40 | Jonas Urbig | GK | 23 | Germany | 13,7 M€ | 6,73 | 0 | 0 | 0/0 |  |
+| 48 | Leon Klanac | GK | 19 | Germany | 502 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Tarek Buchmann | CB | 21 | Germany | 381 k€ | – | 0 | 0 | 0/0 |  |
+| 2 | Dayot Upamecano | CB | 27 | France | 34,7 M€ | 7,97 | 1 | 0 | 2/0 |  |
+| 3 | Min-Jae Kim | CB | 29 | South Korea | 20,6 M€ | 7,22 | 0 | 0 | 1/0 |  |
+| 4 | Jonathan Tah | CB | 30 | Germany | 22,8 M€ | 8,33 | 0 | 0 | 0/0 |  |
+| 8 | Tom Bischof | LB,CDM,CM,RB | 21 | Germany | 34,1 M€ | 7,20 | 0 | 2 | 0/0 |  |
+| 11 | Nathaniel Brown | LB,LWB,LM,CAM,LW,RB | 23 | Germany | 33,7 M€ | 6,59 | 0 | 0 | 0/0 |  |
+| 19 | Alphonso Davies | LB | 25 | Canada | 33,0 M€ | 8,16 | 0 | 2 | 0/0 |  |
+| 21 | Hiroki Ito | CB,LB | 27 | Japan | 14,1 M€ | – | 0 | 0 | 0/0 |  |
+| 23 | Sacha Boey | RB | 26 | France | 11,0 M€ | – | 0 | 0 | 0/0 |  |
+| 27 | Konrad Laimer | RB,LB,CDM,RW | 29 | Austria | 24,5 M€ | 7,30 | 0 | 0 | 0/0 | skadad, åter A few weeks |
+| 30 | Cassiano Kiala | CB | 17 | Germany | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| 44 | Josip Stanišić | RB,LB,RWB | 26 | Croatia | 29,0 M€ | 7,05 | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Joshua Kimmich | CDM,RB,CM | 31 | Germany | 31,3 M€ | 7,92 | 0 | 2 | 0/0 |  |
+| 7 | Serge Gnabry | CAM,LW | 31 | Germany | 11,8 M€ | 6,07 | 0 | 0 | 0/0 |  |
+| 10 | Jamal Musiala | CAM,LW | 23 | Germany | 102,5 M€ | 6,92 | 1 | 1 | 0/0 | skadad, åter A few weeks |
+| 34 | Ismael Saibari | CAM,ST,CM,LW | 25 | Morocco | 49,6 M€ | 7,37 | 1 | 2 | 0/0 |  |
+| 38 | Erblin Osmani | Midfielder | 17 | Kosovo | 2,0 M€ | – | 0 | 0 | 0/0 |  |
+| 39 | Bara Ndiaye | CDM | 18 | Senegal | 1,8 M€ | – | 0 | 0 | 0/0 |  |
+| 45 | Aleksandar Pavlović | CDM,CM | 22 | Germany | 46,0 M€ | 8,17 | 1 | 1 | 1/0 |  |
+| 47 | David Santos Daiber | CM,CDM | 19 | Portugal | 932 k€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Harry Kane | ST,CAM | 33 | England | 77,8 M€ | 7,78 | 3 | 0 | 0/0 |  |
+| 14 | Luis Díaz | LW | 29 | Colombia | 65,0 M€ | 7,27 | 1 | 0 | 0/0 |  |
+| 17 | Michael Olise | RW,CAM | 24 | France | 139,5 M€ | 8,48 | 4 | 1 | 0/0 |  |
+| 42 | Lennart Karl | RW,CAM | 18 | Germany | 41,9 M€ | 7,20 | 1 | 0 | 0/0 |  |
+| 48 | Bastian Assomo | ST | 16 | Germany | – | – | 0 | 0 | 0/0 |  |

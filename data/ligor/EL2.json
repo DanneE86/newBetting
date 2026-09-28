@@ -1,0 +1,517 @@
+{
+ "updatedAt": "2026-09-28T19:47:27.474Z",
+ "league": "EL2",
+ "fotmobId": 109,
+ "name": "League Two",
+ "country": "ENG",
+ "table": [
+  {
+   "rank": 1,
+   "team": "Barnet",
+   "fotmobName": "Barnet",
+   "fotmobId": 8175,
+   "group": null,
+   "played": 7,
+   "won": 4,
+   "drawn": 3,
+   "lost": 0,
+   "goals": "17-10",
+   "gd": 7,
+   "pts": 15
+  },
+  {
+   "rank": 2,
+   "team": "Cheltenham",
+   "fotmobName": "Cheltenham Town",
+   "fotmobId": 8680,
+   "group": null,
+   "played": 8,
+   "won": 4,
+   "drawn": 3,
+   "lost": 1,
+   "goals": "16-12",
+   "gd": 4,
+   "pts": 15
+  },
+  {
+   "rank": 3,
+   "team": "Bristol Rvs",
+   "fotmobName": "Bristol Rovers",
+   "fotmobId": 10104,
+   "group": null,
+   "played": 8,
+   "won": 5,
+   "drawn": 0,
+   "lost": 3,
+   "goals": "13-11",
+   "gd": 2,
+   "pts": 15
+  },
+  {
+   "rank": 4,
+   "team": "York",
+   "fotmobName": "York City",
+   "fotmobId": 9916,
+   "group": null,
+   "played": 8,
+   "won": 4,
+   "drawn": 2,
+   "lost": 2,
+   "goals": "16-10",
+   "gd": 6,
+   "pts": 14
+  },
+  {
+   "rank": 5,
+   "team": "Walsall",
+   "fotmobName": "Walsall",
+   "fotmobId": 10006,
+   "group": null,
+   "played": 8,
+   "won": 3,
+   "drawn": 5,
+   "lost": 0,
+   "goals": "11-5",
+   "gd": 6,
+   "pts": 14
+  },
+  {
+   "rank": 6,
+   "team": "Grimsby",
+   "fotmobName": "Grimsby Town",
+   "fotmobId": 10005,
+   "group": null,
+   "played": 8,
+   "won": 3,
+   "drawn": 4,
+   "lost": 1,
+   "goals": "12-8",
+   "gd": 4,
+   "pts": 13
+  },
+  {
+   "rank": 7,
+   "team": "Salford",
+   "fotmobName": "Salford City",
+   "fotmobId": 282326,
+   "group": null,
+   "played": 8,
+   "won": 4,
+   "drawn": 1,
+   "lost": 3,
+   "goals": "12-10",
+   "gd": 2,
+   "pts": 13
+  },
+  {
+   "rank": 8,
+   "team": "Gillingham",
+   "fotmobName": "Gillingham",
+   "fotmobId": 10173,
+   "group": null,
+   "played": 8,
+   "won": 3,
+   "drawn": 3,
+   "lost": 2,
+   "goals": "11-9",
+   "gd": 2,
+   "pts": 12
+  },
+  {
+   "rank": 9,
+   "team": "Crewe",
+   "fotmobName": "Crewe Alexandra",
+   "fotmobId": 9784,
+   "group": null,
+   "played": 8,
+   "won": 2,
+   "drawn": 6,
+   "lost": 0,
+   "goals": "8-6",
+   "gd": 2,
+   "pts": 12
+  },
+  {
+   "rank": 10,
+   "team": "Tranmere",
+   "fotmobName": "Tranmere Rovers",
+   "fotmobId": 8313,
+   "group": null,
+   "played": 8,
+   "won": 2,
+   "drawn": 5,
+   "lost": 1,
+   "goals": "10-8",
+   "gd": 2,
+   "pts": 11
+  },
+  {
+   "rank": 11,
+   "team": "Chesterfield",
+   "fotmobName": "Chesterfield",
+   "fotmobId": 9786,
+   "group": null,
+   "played": 8,
+   "won": 3,
+   "drawn": 2,
+   "lost": 3,
+   "goals": "11-10",
+   "gd": 1,
+   "pts": 11
+  },
+  {
+   "rank": 12,
+   "team": "Swindon",
+   "fotmobName": "Swindon Town",
+   "fotmobId": 9795,
+   "group": null,
+   "played": 8,
+   "won": 3,
+   "drawn": 2,
+   "lost": 3,
+   "goals": "9-12",
+   "gd": -3,
+   "pts": 11
+  },
+  {
+   "rank": 13,
+   "team": "Rotherham",
+   "fotmobName": "Rotherham United",
+   "fotmobId": 8119,
+   "group": null,
+   "played": 8,
+   "won": 2,
+   "drawn": 4,
+   "lost": 2,
+   "goals": "11-11",
+   "gd": 0,
+   "pts": 10
+  },
+  {
+   "rank": 14,
+   "team": "Fleetwood Town",
+   "fotmobName": "Fleetwood Town",
+   "fotmobId": 45723,
+   "group": null,
+   "played": 8,
+   "won": 2,
+   "drawn": 4,
+   "lost": 2,
+   "goals": "9-9",
+   "gd": 0,
+   "pts": 10
+  },
+  {
+   "rank": 15,
+   "team": "Colchester",
+   "fotmobName": "Colchester United",
+   "fotmobId": 8416,
+   "group": null,
+   "played": 8,
+   "won": 2,
+   "drawn": 4,
+   "lost": 2,
+   "goals": "10-12",
+   "gd": -2,
+   "pts": 10
+  },
+  {
+   "rank": 16,
+   "team": "Rochdale",
+   "fotmobName": "Rochdale",
+   "fotmobId": 8493,
+   "group": null,
+   "played": 8,
+   "won": 3,
+   "drawn": 1,
+   "lost": 4,
+   "goals": "9-11",
+   "gd": -2,
+   "pts": 10
+  },
+  {
+   "rank": 17,
+   "team": "Newport County",
+   "fotmobName": "Newport County",
+   "fotmobId": 10262,
+   "group": null,
+   "played": 8,
+   "won": 2,
+   "drawn": 3,
+   "lost": 3,
+   "goals": "12-12",
+   "gd": 0,
+   "pts": 9
+  },
+  {
+   "rank": 18,
+   "team": "Shrewsbury",
+   "fotmobName": "Shrewsbury Town",
+   "fotmobId": 9896,
+   "group": null,
+   "played": 8,
+   "won": 2,
+   "drawn": 2,
+   "lost": 4,
+   "goals": "7-13",
+   "gd": -6,
+   "pts": 8
+  },
+  {
+   "rank": 19,
+   "team": "Accrington",
+   "fotmobName": "Accrington Stanley",
+   "fotmobId": 8671,
+   "group": null,
+   "played": 8,
+   "won": 1,
+   "drawn": 4,
+   "lost": 3,
+   "goals": "11-14",
+   "gd": -3,
+   "pts": 7
+  },
+  {
+   "rank": 20,
+   "team": "Oldham",
+   "fotmobName": "Oldham Athletic",
+   "fotmobId": 9785,
+   "group": null,
+   "played": 8,
+   "won": 2,
+   "drawn": 1,
+   "lost": 5,
+   "goals": "9-13",
+   "gd": -4,
+   "pts": 7
+  },
+  {
+   "rank": 21,
+   "team": "Exeter",
+   "fotmobName": "Exeter City",
+   "fotmobId": 9833,
+   "group": null,
+   "played": 8,
+   "won": 1,
+   "drawn": 3,
+   "lost": 4,
+   "goals": "4-6",
+   "gd": -2,
+   "pts": 6
+  },
+  {
+   "rank": 22,
+   "team": "Northampton",
+   "fotmobName": "Northampton Town",
+   "fotmobId": 8651,
+   "group": null,
+   "played": 7,
+   "won": 1,
+   "drawn": 3,
+   "lost": 3,
+   "goals": "3-6",
+   "gd": -3,
+   "pts": 6
+  },
+  {
+   "rank": 23,
+   "team": "Port Vale",
+   "fotmobName": "Port Vale",
+   "fotmobId": 9799,
+   "group": null,
+   "played": 7,
+   "won": 1,
+   "drawn": 2,
+   "lost": 4,
+   "goals": "3-9",
+   "gd": -6,
+   "pts": 5
+  },
+  {
+   "rank": 24,
+   "team": "Crawley Town",
+   "fotmobName": "Crawley Town",
+   "fotmobId": 8647,
+   "group": null,
+   "played": 7,
+   "won": 1,
+   "drawn": 1,
+   "lost": 5,
+   "goals": "6-13",
+   "gd": -7,
+   "pts": 4
+  }
+ ],
+ "tableHistory": {
+  "2026-09-28": [
+   [
+    "Barnet",
+    1,
+    7,
+    15,
+    7
+   ],
+   [
+    "Cheltenham",
+    2,
+    8,
+    15,
+    4
+   ],
+   [
+    "Bristol Rvs",
+    3,
+    8,
+    15,
+    2
+   ],
+   [
+    "York",
+    4,
+    8,
+    14,
+    6
+   ],
+   [
+    "Walsall",
+    5,
+    8,
+    14,
+    6
+   ],
+   [
+    "Grimsby",
+    6,
+    8,
+    13,
+    4
+   ],
+   [
+    "Salford",
+    7,
+    8,
+    13,
+    2
+   ],
+   [
+    "Gillingham",
+    8,
+    8,
+    12,
+    2
+   ],
+   [
+    "Crewe",
+    9,
+    8,
+    12,
+    2
+   ],
+   [
+    "Tranmere",
+    10,
+    8,
+    11,
+    2
+   ],
+   [
+    "Chesterfield",
+    11,
+    8,
+    11,
+    1
+   ],
+   [
+    "Swindon",
+    12,
+    8,
+    11,
+    -3
+   ],
+   [
+    "Rotherham",
+    13,
+    8,
+    10,
+    0
+   ],
+   [
+    "Fleetwood Town",
+    14,
+    8,
+    10,
+    0
+   ],
+   [
+    "Colchester",
+    15,
+    8,
+    10,
+    -2
+   ],
+   [
+    "Rochdale",
+    16,
+    8,
+    10,
+    -2
+   ],
+   [
+    "Newport County",
+    17,
+    8,
+    9,
+    0
+   ],
+   [
+    "Shrewsbury",
+    18,
+    8,
+    8,
+    -6
+   ],
+   [
+    "Accrington",
+    19,
+    8,
+    7,
+    -3
+   ],
+   [
+    "Oldham",
+    20,
+    8,
+    7,
+    -4
+   ],
+   [
+    "Exeter",
+    21,
+    8,
+    6,
+    -2
+   ],
+   [
+    "Northampton",
+    22,
+    7,
+    6,
+    -3
+   ],
+   [
+    "Port Vale",
+    23,
+    7,
+    5,
+    -6
+   ],
+   [
+    "Crawley Town",
+    24,
+    7,
+    4,
+    -7
+   ]
+  ]
+ }
+}

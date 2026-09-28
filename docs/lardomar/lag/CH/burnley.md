@@ -69,3 +69,49 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-09-19 | Stryk 4971 | Burnley - Derby | X | 63 % | 52 % |
 | 2026-09-05 | Stryk 4969 | Burnley - Bristol City | 2 | 54 % | 48 % |
 | 2026-08-29 | Stryk 4968 | Norwich - Burnley | 1 | 26 % | 28 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Nicky Hayen. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Bashir Humphreys (skadad, åter Early October 2026), Jordan Beyer (skadad, åter Early October 2026), Josh Cullen (skadad, åter Back in training), Dastan Satpaev (skadad, åter Early October 2026), Jaydon Banel (skadad, åter Early October 2026), Ashley Barnes (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Max Weiß | GK | 22 | Germany | 5,8 M€ | 6,03 | 0 | 0 | 0/0 |  |
+| 13 | Ben Amos | GK | 36 | England | 166 k€ | – | 0 | 0 | 0/0 |  |
+| 37 | Grégoire Coudert | GK | 27 | France | 1,8 M€ | 7,32 | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Kyle Walker | RB,RWB,CB,RM | 36 | England | 1,3 M€ | 6,27 | 0 | 0 | 1/0 |  |
+| 3 | Max Alleyne | CB,CDM | 21 | England | 1,1 M€ | 6,62 | 0 | 1 | 0/0 |  |
+| 6 | Bashir Humphreys | CB,LWB,LB | 23 | England | 15,3 M€ | 6,03 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 14 | Connor Roberts | LB,RB | 31 | Wales | 1,7 M€ | 6,37 | 0 | 0 | 0/0 |  |
+| 15 | Anel Ahmedhodžić | CB | 27 | Bosnia and Herzegovina | 11,5 M€ | 6,42 | 0 | 0 | 1/0 |  |
+| 18 | Hjalmar Ekdal | CB | 27 | Sweden | 3,9 M€ | 6,49 | 0 | 0 | 1/0 |  |
+| 20 | Shurandy Sambo | RB | 25 | Curacao | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 22 | Oliver Sonne | RB | 25 | Peru | 2,6 M€ | 6,30 | 0 | 0 | 1/0 |  |
+| 23 | Lucas Pires | LB,LWB,LM | 25 | Brazil | 5,1 M€ | 6,62 | 0 | 1 | 2/0 |  |
+| 36 | Jordan Beyer | CB | 26 | Germany | 1,9 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 44 | Igor Julio | CB | 28 | Brazil | 9,5 M€ | 7,28 | 0 | 1 | 1/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Reo Hatate | CM,CAM,CDM | 28 | Japan | 6,8 M€ | 6,58 | 0 | 1 | 1/0 |  |
+| 8 | Ugo Raghouber | CDM | 23 | France | 2,1 M€ | 6,65 | 1 | 0 | 2/0 |  |
+| 21 | Aaron Ramsey | CAM,RW | 23 | England | 9,1 M€ | 6,76 | 1 | 0 | 1/0 |  |
+| 24 | Josh Cullen | CM,CDM | 30 | Ireland | 4,9 M€ | – | 0 | 0 | 0/0 | skadad, åter Back in training |
+| 28 | Hannibal Mejbri | CAM,CDM,CM,LW | 23 | Tunisia | 14,4 M€ | 6,34 | 0 | 0 | 1/0 |  |
+| 29 | Josh Laurent | CB,CDM,CM,RWB,CAM | 31 | England | 1,0 M€ | 6,42 | 1 | 0 | 2/1 |  |
+| 30 | Lluc Castell | CAM | 20 | Spain | 494 k€ | – | 0 | 0 | 0/0 |  |
+| 31 | Mike Trésor | LW | 27 | Belgium | 2,2 M€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Dastan Satpaev | ST,LW | 18 | Kazakhstan | 2,7 M€ | 6,89 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+|  | Michael Obafemi | ST | 26 | Ireland | 708 k€ | – | 0 | 0 | 0/0 |  |
+| 7 | Jacob Bruun Larsen | LW,RW | 28 | Denmark | 4,4 M€ | 6,98 | 0 | 1 | 0/0 |  |
+| 9 | Jamie Vardy | ST | 39 | England | 771 k€ | 5,89 | 0 | 0 | 0/0 |  |
+| 10 | Marcus Edwards | RW,CAM,RM | 27 | Cyprus | 8,3 M€ | 6,54 | 0 | 0 | 1/0 |  |
+| 11 | Jaydon Banel | LW | 21 | Netherlands | 1,4 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 11 | Zeki Amdouni | ST | 25 | Switzerland | 8,4 M€ | 6,75 | 2 | 1 | 0/0 |  |
+| 17 | Andréas Hountondji | ST,CAM,LW | 24 | Benin | 4,4 M€ | 5,92 | 0 | 0 | 0/0 |  |
+| 19 | Largie Ramazani | LW,LM,RM,ST | 25 | Belgium | 5,8 M€ | 6,84 | 1 | 1 | 0/0 |  |
+| 27 | Armando Broja | ST,RW | 25 | Albania | 9,4 M€ | 6,27 | 0 | 0 | 1/0 |  |
+| 35 | Ashley Barnes | ST | 36 | England | 291 k€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |

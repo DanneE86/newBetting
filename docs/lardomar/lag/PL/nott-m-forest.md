@@ -4,7 +4,7 @@ Genererad 2026-09-28. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden"
 
 ## I korthet
 
-- Senaste 8: otur med −0,59 poäng per match mot xP. Marknaden prisar redan in det i ligan (ingen bekräftad effekt), så det är inget spel i sig.
+- Senaste 8: otur med −0,67 poäng per match mot xP. Marknaden prisar redan in det i ligan (ingen bekräftad effekt), så det är inget spel i sig.
 - Stark historik mot Bournemouth (−0,77 p/match mot marknaden, 12 möten), Liverpool (+0,64 p/match mot marknaden, 9 möten), Everton (−0,69 p/match mot marknaden, 8 möten), Hull (+0,70 p/match mot marknaden, 6 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
 
 ## Nuläge (senaste 8 ligamatcher)
@@ -13,26 +13,41 @@ Form (äldst → senast): OFOFOOVF · senaste match 2026-09-19
 
 | Mått | Värde |
 |---|---|
-| Tur (poäng − xP per match) | −0,59 |
-| xG-målskillnad − målskillnad | +0,27 |
+| Tur (poäng − xP per match) | −0,67 |
+| xG-målskillnad − målskillnad | +0,45 |
 | Poäng mot marknaden per match | −0,32 |
 
 ## Säsonger
 
 | Säsong | Liga | M | P/M | Mot marknaden (hemma / borta) | Kryss (odds) | Mål för–emot | xG för–emot | xP/M |
 |---|---|---|---|---|---|---|---|---|
-| 2017/18 | CH | 46 | 1,15 | −0,11 (−0,04 / −0,18) | 17 % (27 %) | 1,11–1,41 | 1,43–1,52* | 1,32 |
+| 2017/18 | CH | 46 | 1,15 | −0,11 (−0,04 / −0,18) | 17 % (27 %) | 1,11–1,41 | 1,44–1,53* | 1,32 |
 | 2018/19 | CH | 46 | 1,43 | +0,16 (+0,28 / +0,05) | 33 % (28 %) | 1,33–1,17 | 1,35–1,47* | 1,33 |
-| 2019/20 | CH | 46 | 1,52 | +0,25 (−0,09 / +0,58) | 35 % (28 %) | 1,26–1,09 | 1,29–1,35* | 1,34 |
+| 2019/20 | CH | 46 | 1,52 | +0,25 (−0,09 / +0,58) | 35 % (28 %) | 1,26–1,09 | 1,29–1,36* | 1,34 |
 | 2020/21 | CH | 46 | 1,13 | −0,19 (−0,33 / −0,05) | 35 % (30 %) | 0,80–0,98 | 1,15–1,28* | 1,29 |
 | 2021/22 | CH | 46 | 1,74 | +0,30 (+0,20 / +0,40) | 24 % (28 %) | 1,59–0,87 | 1,43–1,23* | 1,48 |
 | 2022/23 | PL | 38 | 1,00 | +0,14 (+0,54 / −0,27) | 29 % (24 %) | 1,00–1,79 | 1,04–1,80 | 0,97 |
 | 2023/24 | PL | 38 | 0,95 | −0,10 (−0,18 / −0,03) | 24 % (24 %) | 1,29–1,76 | 1,37–1,48 | 1,33 |
 | 2024/25 | PL | 38 | 1,71 | +0,37 (+0,17 / +0,57) | 21 % (26 %) | 1,53–1,21 | 1,39–1,47 | 1,32 |
 | 2025/26 | PL | 38 | 1,16 | −0,12 (−0,38 / +0,13) | 29 % (26 %) | 1,26–1,34 | 1,29–1,70 | 1,16 |
-| 2026/27 | PL | 5 | 1,00 | −0,22 (−1,26 / +1,35) | 40 % (26 %) | 0,80–1,00 | 1,51–1,09* | 1,63 |
+| 2026/27 | PL | 5 | 1,00 | −0,22 (−1,26 / +1,35) | 40 % (26 %) | 0,80–1,00 | 1,70–1,00 | 1,76 |
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+
+## Nyckelspelare (Understat, 2024/25–)
+
+Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
+
+| Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
+|---|---|---|---|---|
+| Morgan Gibbs-White | 19 % | 2 / 79 | 3,00 / 1,37 | +1,36 / +0,07 |
+| Igor Jesus | 12 % | 0 / 81 | – / 1,41 | – / +0,10 |
+| Liam Delap | 12 % | 0 / 81 | – / 1,41 | – / +0,10 |
+| Dan Ndoye | 7 % | 5 / 76 | 0,60 / 1,46 | −0,83 / +0,16 |
+| Neco Williams | 6 % | 2 / 79 | 1,50 / 1,41 | −0,02 / +0,11 |
+| Elliot Anderson | 6 % | 0 / 81 | – / 1,41 | – / +0,10 |
+
+Ligans test av frånvaro mot marknaden: svag signal (inte bekräftad). Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -95,3 +110,40 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-08-31 | Europa 2501 | Nottingham - West Ham | 2 | 68 % | 57 % |
 | 2025-08-24 | Europa 2499 | Crystal Palace - Nottingham | X | 28 % | 30 % |
 | 2025-08-17 | Europa 2497 | Nottingham - Brentford | 1 ✓ | 53 % | 44 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Oliver Glasner. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Nikola Milenković (skadad, åter Mid October 2027), Nicolò Savona (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Steven Benda | GK | 27 | Germany | 593 k€ | – | 0 | 0 | 0/0 |  |
+| 12 | John Victor | GK | 30 | Brazil | 4,4 M€ | – | 0 | 0 | 0/0 |  |
+| 26 | Matz Sels | GK | 34 | Belgium | 3,1 M€ | 6,63 | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Ousmane Diomande | CB | 22 | Ivory Coast | 34,6 M€ | 6,88 | 0 | 0 | 0/0 |  |
+| 3 | Neco Williams | LB,RB,LWB,LM,RWB | 25 | Wales | 19,8 M€ | 7,30 | 0 | 0 | 0/0 |  |
+| 5 | Murillo | CB,LB | 24 | Brazil | 45,8 M€ | 7,33 | 0 | 1 | 1/0 |  |
+| 23 | Jair Cunha | CB,RB | 21 | Brazil | 13,3 M€ | 6,68 | 0 | 0 | 2/0 |  |
+| 31 | Nikola Milenković | CB | 28 | Serbia | 25,6 M€ | 6,85 | 0 | 0 | 1/0 | skadad, åter Mid October 2027 |
+| 34 | Ola Aina | RB,RWB,RM,LB | 29 | Nigeria | 16,2 M€ | 6,96 | 0 | 0 | 2/0 |  |
+| 37 | Nicolò Savona | RB | 23 | Italy | 14,8 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Ibrahim Sangaré | CDM,CM | 28 | Ivory Coast | 18,4 M€ | 6,64 | 0 | 0 | 0/0 |  |
+| 8 | Nicolás Dominguez | CDM,LW,CM,CAM | 28 | Argentina | 12,8 M€ | – | 0 | 0 | 0/0 |  |
+| 10 | Morgan Gibbs-White | CAM,LM,ST,CM,LW | 26 | England | 45,9 M€ | 7,42 | 1 | 2 | 0/0 |  |
+| 21 | Xaver Schlager | CM,CDM | 29 | Austria | 4,6 M€ | 7,06 | 0 | 0 | 1/0 |  |
+| 22 | Ryan Yates | CDM,CM | 28 | England | 8,0 M€ | – | 0 | 0 | 0/0 |  |
+| 24 | James McAtee | CDM,CM,CAM,RW,LW | 23 | England | 18,7 M€ | 7,23 | 0 | 0 | 2/0 |  |
+| 25 | Luca Netz | LWB,LB,LM | 23 | Germany | 7,7 M€ | 6,02 | 0 | 0 | 0/0 |  |
+| 27 | Daniel Muñoz | RWB,RM,RB | 30 | Colombia | 21,9 M€ | 6,47 | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Callum Hudson-Odoi | LW,RW | 25 | England | 28,5 M€ | – | 0 | 0 | 0/0 |  |
+| 9 | Chris Wood | ST | 34 | New Zealand | 3,7 M€ | 6,03 | 0 | 0 | 0/0 |  |
+| 11 | Igor Jesus | ST,CAM | 25 | Brazil | 19,3 M€ | 6,49 | 1 | 0 | 1/0 |  |
+| 14 | Dan Ndoye | RW,CAM,LW,ST,RM | 25 | Switzerland | 31,6 M€ | 6,60 | 1 | 0 | 1/0 |  |
+| 15 | Arnaud Kalimuendo-Muinga | ST,RW,LW,CAM | 24 | France | 17,0 M€ | – | 0 | 0 | 0/0 |  |
+| 19 | Liam Delap | ST | 23 | England | 30,3 M€ | 6,83 | 1 | 0 | 2/0 |  |

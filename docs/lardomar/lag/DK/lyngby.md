@@ -47,3 +47,40 @@ Form (äldst → senast): OFOFOVOF · senaste match 2026-09-18
 | Nordsjaelland | 10 | 1-5-4 | 10–17 | −0,05 | +27 pe | 2025-03-16 1-0 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Mikkel Jespersen. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Oskar Snorre (skadad, åter Day to day)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+|  | Jón Símonarson | GK | 19 | Iceland | 288 k€ | – | 0 | 0 | 0/0 |  |
+| 1 | Jonathan Ægidius | GK | 24 | Denmark | 600 k€ | – | 0 | 0 | 0/0 |  |
+| 21 | Oskar Snorre | GK | 27 | Denmark | 192 k€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
+| 31 | Diego Kochen | GK | 20 | USA | 1,4 M€ | 6,76 | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Arttu Hoskonen | CB | 29 | Finland | 140 k€ | – | 0 | 0 | 0/0 |  |
+| 2 | Oskar Buur | RB | 28 | Denmark | 133 k€ | 6,89 | 0 | 2 | 0/0 |  |
+| 12 | Davíd Aronsson | CB,CDM | 19 | Iceland | 704 k€ | 6,20 | 0 | 0 | 0/0 |  |
+| 24 | Munashe Garananga | CB,RB | 25 | Zimbabwe | 1,0 M€ | 6,87 | 0 | 0 | 1/0 |  |
+| 25 | Renzo Tytens | LB | 21 | Belgium | 826 k€ | 6,72 | 1 | 0 | 2/0 |  |
+| 30 | Mikkel Fischer | CB | 22 | Denmark | 394 k€ | 7,12 | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 4 | Cornelius Allen | RM,RB | 23 | Denmark | 356 k€ | 6,58 | 0 | 0 | 2/0 |  |
+| 5 | Oliver Höjer | LM | 19 | Denmark | 684 k€ | 6,83 | 0 | 0 | 0/0 |  |
+| 6 | Daníel Kristjánsson | CDM,LB,LW | 21 | Iceland | 759 k€ | 6,54 | 0 | 0 | 0/0 |  |
+| 7 | Simon Colyn | LM,ST | 24 | Canada | 605 k€ | 7,26 | 3 | 1 | 3/1 |  |
+| 8 | Mathias Hebo | CM | 31 | Denmark | 191 k€ | 6,29 | 0 | 0 | 1/0 |  |
+| 14 | Lauge Sandgrav | CM,LM,RM | 22 | Denmark | 1,8 M€ | 7,03 | 0 | 0 | 1/0 |  |
+| 16 | Zidan Sertdemir | CAM,CM,CDM | 21 | Denmark | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 18 | Jens Jakob Thomasen | CM | 30 | Denmark | 159 k€ | 6,68 | 0 | 0 | 1/0 |  |
+| 19 | Gustav Fraulo | RM,RW,LM | 21 | Denmark | 1,6 M€ | 6,72 | 1 | 0 | 1/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 10 | Ísak Thorvaldsson | ST | 25 | Iceland | 681 k€ | 7,16 | 3 | 2 | 3/0 |  |
+| 17 | William Steindorsson | ST | 21 | Denmark | 488 k€ | 5,93 | 0 | 0 | 0/0 |  |
+| 22 | Sanders Ngabo | LW | 22 | Denmark | 951 k€ | – | 0 | 0 | 0/0 |  |
+| 26 | Frederik Gytkjær | ST | 33 | Denmark | 225 k€ | 6,38 | 1 | 0 | 1/0 |  |
+| 35 | Markus Anderson | ST,LW,LM,RM | 22 | USA | – | 6,17 | 0 | 0 | 0/0 |  |

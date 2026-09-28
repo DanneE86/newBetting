@@ -21,7 +21,7 @@ Form (äldst → senast): OVOFOFOV · senaste match 2026-09-19
 | Säsong | Liga | M | P/M | Mot marknaden (hemma / borta) | Kryss (odds) | Mål för–emot | xG för–emot | xP/M |
 |---|---|---|---|---|---|---|---|---|
 | 2017/18 | ED | 34 | 1,35 | −0,10 (−0,38 / +0,19) | 29 % (24 %) | 1,41–1,56 | 1,61–1,40* | 1,54 |
-| 2018/19 | ED | 34 | 1,21 | −0,05 (−0,34 / +0,23) | 32 % (23 %) | 1,88–2,15 | 1,54–1,85* | 1,21 |
+| 2018/19 | ED | 34 | 1,21 | −0,05 (−0,34 / +0,23) | 32 % (23 %) | 1,88–2,15 | 1,54–1,86* | 1,21 |
 | 2019/20 | ED | 26 | 1,27 | −0,17 (−0,37 / +0,06) | 35 % (23 %) | 1,58–1,58 | 1,95–1,48* | 1,66 |
 | 2020/21 | ED | 34 | 1,15 | −0,04 (−0,04 / −0,04) | 35 % (23 %) | 1,26–1,44 | 1,39–1,63* | 1,26 |
 | 2021/22 | ED | 34 | 1,21 | +0,06 (−0,16 / +0,27) | 24 % (24 %) | 1,09–1,47 | 1,33–1,52* | 1,29 |
@@ -56,3 +56,47 @@ Form (äldst → senast): OVOFOFOV · senaste match 2026-09-19
 | Telstar | 3 | 2-1-0 | 6–2 | +0,51 | +10 pe | 2026-09-13 0-0 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Robin Veldman. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Mees Hilgers (skadad, åter Day to day), Mats Egbring (skadad, åter Day to day), Dirk Proper (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 22 | Bernt Klaverboer | GK | 21 | Netherlands | 1,7 M€ | 6,72 | 0 | 0 | 0/0 |  |
+| 30 | Timo Schreuder | Keeper | 20 | Netherlands | – | – | 0 | 0 | 0/0 |  |
+| 44 | Andries Noppert | GK | 32 | Netherlands | 262 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Mees Hilgers | RWB | 25 | Indonesia | 1,9 M€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
+| 3 | Maas Willemsen | CB | 23 | Netherlands | 2,0 M€ | 6,86 | 0 | 0 | 0/0 |  |
+| 4 | Sam Kersten | CB | 28 | Netherlands | 1,1 M€ | 6,97 | 0 | 1 | 0/0 |  |
+| 13 | Mats Egbring | RB | 20 | Netherlands | 864 k€ | 7,38 | 0 | 0 | 0/0 | skadad, åter Day to day |
+| 19 | Vasilios Zagaritis | LB | 25 | Greece | 2,2 M€ | 6,87 | 0 | 0 | 1/0 |  |
+| 23 | Darling Bladi | CM | 22 | France | 507 k€ | – | 0 | 0 | 0/0 |  |
+| 28 | Hristiyan Petrov | LB | 24 | Bulgaria | 904 k€ | 6,95 | 0 | 0 | 0/0 |  |
+| 34 | Robin Bouw | Defender | 20 | Netherlands | – | – | 0 | 0 | 0/0 |  |
+| 38 | Ingmar Mulder | Defender | 21 | Netherlands | – | – | 0 | 0 | 0/0 |  |
+| 41 | Jimte Scholten | RB | 20 | Netherlands | – | – | 0 | 0 | 0/0 |  |
+| 45 | Oliver Braude | RB | 22 | Norway | 3,4 M€ | 7,22 | 1 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Dirk Proper | CDM,RW | 24 | Netherlands | 1,4 M€ | 6,93 | 0 | 1 | 1/0 | skadad, åter Early October 2026 |
+| 10 | Ringo Meerveld | CAM,LW | 23 | Netherlands | 4,6 M€ | 6,98 | 1 | 0 | 0/0 |  |
+| 14 | Levi Smans | CDM | 23 | Netherlands | 1,5 M€ | 7,20 | 0 | 3 | 0/0 |  |
+| 16 | Marcus Linday | CDM | 23 | Sweden | 5,0 M€ | 7,44 | 0 | 0 | 1/0 |  |
+| 32 | Kai Jansen | Midfielder | 19 | Netherlands | – | – | 0 | 0 | 0/0 |  |
+| 36 | Nolhan Courtens | CDM | 19 | Belgium | 132 k€ | 7,21 | 2 | 0 | 1/0 |  |
+| 49 | Anass Bouziane | Midfielder | 19 | Netherlands | 626 k€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Maxence Rivera | LW | 24 | France | 3,1 M€ | 6,89 | 2 | 1 | 0/0 |  |
+| 9 | Dylan Vente | ST,CAM | 27 | Suriname | 1,8 M€ | 6,99 | 0 | 2 | 0/0 |  |
+| 11 | Luca Oyen | LW | 23 | Belgium | 1,1 M€ | 6,81 | 1 | 1 | 1/0 |  |
+| 17 | Roberts Uldriķis | ST | 28 | Latvia | 243 k€ | 6,28 | 0 | 0 | 0/0 |  |
+| 20 | Jacob Trenskow | RW,CAM | 25 | Denmark | 4,0 M€ | 7,60 | 3 | 1 | 1/0 |  |
+| 21 | Marko Lawk Farji | LW,LM | 22 | Iraq | 1,6 M€ | 7,61 | 1 | 0 | 1/0 |  |
+| 29 | Lanroy Machine | ST | 20 | France | 1,7 M€ | 6,00 | 0 | 0 | 0/0 |  |
+| 33 | Jermaine Rijssel | Attacker | 21 | Suriname | – | – | 0 | 0 | 0/0 |  |
+| 40 | Clayton Bonevacia | Attacker | 20 | Netherlands | – | – | 0 | 0 | 0/0 |  |
+| 47 | Kirayno Schaken | Attacker | 18 | Netherlands | – | – | 0 | 0 | 0/0 |  |
