@@ -23,7 +23,14 @@ const SEED_DRAW = { stryktipset: 4972, europatipset: 2611 };
 // Hur mycket modellen vager mot Svenska Spels odds (marknaden ar skarpast; modellen fangar form/xG)
 const MODEL_W = 0.35;
 const MODEL_W_THIN = 0.2; // lite data (fa viktade matcher) eller landslag
-const SYSTEM_MAX_ROWS = 296; // forslag pa system: max rader
+// Reducerat system (Gambling Cabin-logik: grundrad -> farg-, teckenregler och utdelningsreducering)
+const GRUND_MAX_ROWS = 5000; // grundradens storlek fore reducering
+const BUDGET = { min: 350, max: 400 }; // kr per omgang (rader x radpris)
+const COLOR = { green: 0.45, red: 0.2 }; // folkets streck: gron >= 45 %, rod <= 20 %, annars gul
+const RULES = { greenMax: 5, redMin: 1, redMax: 4, xMin: 2, xMax: 6 };
+const PAYOUT_13 = 0.65 * 0.4; // 65 % aterbetalning, 40 % av potten till 13 ratt
+const TYPICAL_TURNOVER = { stryktipset: 20e6, europatipset: 8e6 }; // anvands tills omsattningen vuxit
+const PAYOUT_STEPS = [0, 1e3, 2e3, 5e3, 1e4, 2e4, 3e4, 5e4, 7.5e4, 1e5, 1.5e5, 2e5, 3e5, 5e5, 1e6];
 const HALF_LIFE_DAYS = 150;
 const RHO = -0.08; // Dixon-Coles-korrektion for 0-0/1-1/1-0/0-1
 
@@ -451,7 +458,7 @@ function narrative(a) {
 }
 
 // Systemforslag: exakt optimering (DP over antal halv-/helgarderingar) av chansen till 13 ratt inom SYSTEM_MAX_ROWS
-function buildSystem(events) {
+function buildSystem(events, maxRows) {
   const picks = events.map((e) => {
     const order = [0, 1, 2].sort((a, b) => e.final[b] - e.final[a]);
     return { order, n: 1 };
@@ -465,7 +472,7 @@ function buildSystem(events) {
       const [h, f] = key.split(',').map(Number);
       for (const n of [1, 2, 3]) {
         const nh = h + (n === 2), nf = f + (n === 3);
-        if (2 ** nh * 3 ** nf > SYSTEM_MAX_ROWS) continue;
+        if (2 ** nh * 3 ** nf > maxRows) continue;
         const lp = st.lp + Math.log(cover(i, n));
         const k = `${nh},${nf}`;
         if (!next.has(k) || next.get(k).lp < lp) next.set(k, { lp, ns: [...st.ns, n] });
@@ -479,8 +486,66 @@ function buildSystem(events) {
   const hit = picks.reduce((s, p, i) => s * p.order.slice(0, p.n).reduce((a, k) => a + events[i].final[k], 0), 1);
   const single = events.reduce((s, e) => s * Math.max(...e.final), 1);
   return {
-    maxRows: SYSTEM_MAX_ROWS, rows: rows(), hitAll: hit, hitSingle: single,
+    maxRows, rows: rows(), hitAll: hit, hitSingle: single, sets: picks.map((p) => p.order.slice(0, p.n)),
     picks: picks.map((p) => ({ signs: p.order.slice(0, p.n).sort().map((k) => SIGNS[k]).join(''), type: p.n === 1 ? 'Spik' : p.n === 2 ? 'Halvgardering' : 'Helgardering' })),
+  };
+}
+
+// Farg per tecken utifran folkets streck
+function signColor(folkP) {
+  if (folkP == null) return 'yellow';
+  return folkP >= COLOR.green ? 'green' : folkP <= COLOR.red ? 'red' : 'yellow';
+}
+
+// Reducera grundraden till BUDGET: farg- och teckenregler, sedan hogsta "Utdelning min" som lamnar >= BUDGET.min rader,
+// sist behalls de mest sannolika raderna upp till BUDGET.max.
+function reduceSystem(events, grund, { rowPrice = 1, turnover }) {
+  const minRows = Math.ceil(BUDGET.min / rowPrice), maxRows = Math.floor(BUDGET.max / rowPrice);
+  const colors = events.map((e) => [0, 1, 2].map((k) => signColor(e.folk?.[k])));
+  const all = [];
+  const walk = (i, row, p, f) => {
+    if (i === events.length) { all.push({ row: [...row], p, f }); return; }
+    for (const k of grund.sets[i]) {
+      row.push(k);
+      walk(i + 1, row, p * events[i].final[k], f * Math.max(events[i].folk?.[k] ?? events[i].final[k], 0.005));
+      row.pop();
+    }
+  };
+  walk(0, [], 1, 1);
+  const T = turnover;
+  for (const r of all) {
+    r.payout = (PAYOUT_13 * T) / (1 + T * r.f); // beraknad utdelning om raden gar in (folket + du)
+    const c = r.row.map((k, i) => colors[i][k]);
+    r.green = c.filter((x) => x === 'green').length;
+    r.red = c.filter((x) => x === 'red').length;
+    r.x = r.row.filter((k) => k === 1).length;
+  }
+  // Regler lattas i tur och ordning om de lamnar for fa rader
+  const rules = { ...RULES };
+  const passRules = (r) => r.green <= rules.greenMax && r.red >= rules.redMin && r.red <= rules.redMax && r.x >= rules.xMin && r.x <= rules.xMax;
+  // Latta ett steg i taget (runt runt) tills minst BUDGET.min rader finns kvar
+  const relax = [() => rules.greenMax++, () => rules.redMax++, () => rules.xMax++, () => { rules.redMin = Math.max(0, rules.redMin - 1); }, () => { rules.xMin = Math.max(0, rules.xMin - 1); }];
+  let kept = all.filter(passRules);
+  for (let step = 0; kept.length < minRows && step < 60; step++) { relax[step % relax.length](); kept = all.filter(passRules); }
+  // Utdelning min: den niva (med minst BUDGET.min rader kvar) som ger hogst forvantad aterbetalning (chans x utdelning)
+  let best = null;
+  for (const t of PAYOUT_STEPS) {
+    const cand = kept.filter((r) => r.payout >= t).sort((a, b) => b.p - a.p).slice(0, maxRows);
+    if (cand.length < minRows) break;
+    const ev = cand.reduce((sum, r) => sum + r.p * r.payout, 0);
+    if (!best || ev > best.ev) best = { t, ev, cand };
+  }
+  const payoutMin = best?.t ?? 0;
+  kept = best?.cand ?? kept.sort((a, b) => b.p - a.p).slice(0, maxRows);
+  const hit = kept.reduce((s, r) => s + r.p, 0);
+  return {
+    grundRows: all.length, rows: kept.length, cost: kept.length * rowPrice, rowPrice,
+    hitAll: hit, grundHit: grund.hitAll,
+    expectedPayout: hit ? kept.reduce((s, r) => s + r.p * r.payout, 0) / hit : null,
+    expectedReturn: kept.reduce((s, r) => s + r.p * r.payout, 0), // kr tillbaka i snitt pa 13 ratt
+    rules: { ...rules, payoutMin, colorGreen: COLOR.green, colorRed: COLOR.red, turnover: T },
+    colors: colors.map((c) => c.join(',')),
+    rowList: kept.map((r) => r.row.map((k) => SIGNS[k]).join('')),
   };
 }
 
@@ -575,16 +640,22 @@ async function analyzeDraw(product, draw, ctx, result) {
     if (r?.outcome) a.result = { outcome: r.outcome, score: r.outcomeScore ? `${r.outcomeScore.home}-${r.outcomeScore.away}` : null };
     out.push(a);
   }
-  const system = out.length ? buildSystem(out) : null;
+  const system = out.length ? buildSystem(out, GRUND_MAX_ROWS) : null;
   if (system) out.forEach((a, i) => { a.systemPick = system.picks[i]; });
+  const turnover = Math.max(num(draw.currentNetSale) || 0, TYPICAL_TURNOVER[product.id] || 10e6);
+  const reduced = system ? reduceSystem(out, system, { rowPrice: num(draw.rowPrice) || 1, turnover }) : null;
+  if (reduced) out.forEach((a, i) => { a.colors = reduced.colors[i].split(','); });
+  const bestRow = () => reduced && Math.max(...reduced.rowList.map((row) => out.filter((a, i) => a.result && row[i] === a.result.outcome).length));
   return {
     product: product.id, productName: product.name, drawNumber: draw.drawNumber, state: draw.drawState,
     open: draw.drawState === 'Open', closeDescription: draw.regCloseDescription, regCloseTime: draw.regCloseTime,
     turnover: draw.currentNetSale, comment: draw.drawComment, modelCutoff: cutoff, events: out,
     system: system && { maxRows: system.maxRows, rows: system.rows, hitAll: system.hitAll, hitSingle: system.hitSingle },
+    reduced: reduced && { ...reduced, colors: undefined },
     result: result ? {
       correct: out.filter((a) => a.result && a.result.outcome === a.tip).length,
       systemCorrect: out.filter((a) => a.result && a.systemPick?.signs.includes(a.result.outcome)).length,
+      reducedCorrect: bestRow(),
       total: out.filter((a) => a.result).length,
       experts: [...new Set(out.flatMap((a) => a.experts.map((x) => x.author)))].map((author) => ({
         author,
@@ -655,7 +726,8 @@ async function main() {
         log(`  OBS lagnamn ej matchade: ${e.home} (${e.matched?.home ?? '?'}) - ${e.away} (${e.matched?.away ?? '?'})`);
       }
       log(`  expertanalyser: ${a.events.reduce((s, e) => s + e.experts.length, 0)}, tio tidningar: ${a.events.filter((e) => e.tioTidningar).length} matcher`);
-      if (a.result) log(`  facit: ${a.result.correct}/${a.result.total} rätt på enkelrad, system ${a.result.systemCorrect}/${a.result.total}`);
+      if (a.reduced) log(`  reducerat: grundrad ${a.reduced.grundRows} -> ${a.reduced.rows} rader (${a.reduced.cost} kr), utdelning min ${a.reduced.rules.payoutMin} kr, chans 13 rätt 1 på ${Math.round(1 / a.reduced.hitAll)}`);
+      if (a.result) log(`  facit: ${a.result.correct}/${a.result.total} rätt på enkelrad, grundrad ${a.result.systemCorrect}/${a.result.total}, reducerat bästa rad ${a.result.reducedCorrect}/${a.result.total}`);
       for (const x of a.result?.experts || []) log(`  expert ${x.author}: ${x.correct}/${x.tipped} rätt`);
     } catch (e) {
       log(`Fel ${p.name}: ${e.message}`);
