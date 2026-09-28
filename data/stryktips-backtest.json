@@ -1,0 +1,2974 @@
+{
+  "generatedAt": "2026-09-28T17:27:30.342Z",
+  "summary": {
+    "from": "2026-08-22",
+    "to": "2026-09-19",
+    "draws": 5,
+    "matches": 65,
+    "A": {
+      "cost": 1926,
+      "winnings": 0,
+      "best": [
+        9,
+        9,
+        9,
+        6,
+        9
+      ],
+      "spik": {
+        "n": 21,
+        "lost": 12
+      },
+      "net": -1926,
+      "quality": {
+        "rows": 1926,
+        "ge9": 13,
+        "ge10": 0,
+        "ge11": 0,
+        "meanCorrect": 4.896,
+        "xCovered": 12,
+        "xTotal": 24
+      }
+    },
+    "B": {
+      "cost": 1891,
+      "winnings": 2334,
+      "best": [
+        7,
+        9,
+        11,
+        9,
+        6
+      ],
+      "spik": {
+        "n": 19,
+        "lost": 12
+      },
+      "net": 443,
+      "quality": {
+        "rows": 1891,
+        "ge9": 76,
+        "ge10": 18,
+        "ge11": 2,
+        "meanCorrect": 4.758,
+        "xCovered": 13,
+        "xTotal": 24
+      }
+    },
+    "drawRate": {
+      "actual": 0.369,
+      "predicted": 0.261,
+      "folk": 0.236
+    },
+    "favouriteWinRate": 0.308,
+    "logLoss": {
+      "final": 1.142,
+      "market": 1.147,
+      "model": 1.123,
+      "folk": 1.212
+    },
+    "byLeague": {
+      "Premier League": {
+        "n": 24,
+        "draws": 9,
+        "favWin": 6,
+        "llFinal": 1.195,
+        "llMarket": 1.203
+      },
+      "Championship": {
+        "n": 35,
+        "draws": 12,
+        "favWin": 13,
+        "llFinal": 1.094,
+        "llMarket": 1.097
+      },
+      "League One": {
+        "n": 6,
+        "draws": 3,
+        "favWin": 1,
+        "llFinal": 1.217,
+        "llMarket": 1.213
+      }
+    }
+  },
+  "draws": [
+    {
+      "drawNumber": 4971,
+      "date": "2026-09-19",
+      "plMatches": 4,
+      "outcomes": "2111XX2XX12XX",
+      "draws13": 6,
+      "prize13": {
+        "amount": "0,00",
+        "winners": 0
+      },
+      "A": {
+        "rows": 394,
+        "cost": 394,
+        "grund": 2916,
+        "payoutMin": 35400,
+        "hit": 0.0018929719574652597,
+        "best": 9,
+        "perClass": {
+          "2": 2,
+          "3": 29,
+          "4": 84,
+          "5": 123,
+          "6": 97,
+          "7": 43,
+          "8": 14,
+          "9": 2
+        },
+        "winnings": 0,
+        "net": -394,
+        "groundCorrect": 9
+      },
+      "B": {
+        "rows": 384,
+        "cost": 384,
+        "grund": 2592,
+        "payoutMin": 30250,
+        "hit": 0.0012848599973383655,
+        "best": 7,
+        "perClass": {
+          "1": 19,
+          "2": 82,
+          "3": 128,
+          "4": 101,
+          "5": 42,
+          "6": 11,
+          "7": 1
+        },
+        "winnings": 0,
+        "net": -384,
+        "groundCorrect": 7
+      },
+      "grundA": 9,
+      "grundB": 7,
+      "matches": [
+        {
+          "n": 1,
+          "match": "Nottingham - Coventry",
+          "league": "Premier League",
+          "basis": "club",
+          "outcome": "2",
+          "score": "0-1",
+          "final": [
+            0.576,
+            0.248,
+            0.176
+          ],
+          "market": [
+            0.585,
+            0.246,
+            0.169
+          ],
+          "model": [
+            0.492,
+            0.265,
+            0.244
+          ],
+          "folk": [
+            0.69,
+            0.21,
+            0.1
+          ],
+          "pOutcome": 0.176,
+          "folkOutcome": 0.1,
+          "pickA": "1",
+          "pickB": "1X",
+          "inA": false,
+          "inB": false,
+          "ll": {
+            "final": 1.737,
+            "market": 1.778,
+            "model": 1.411,
+            "folk": 2.303
+          }
+        },
+        {
+          "n": 2,
+          "match": "Brighton - Arsenal",
+          "league": "Premier League",
+          "basis": "club",
+          "outcome": "1",
+          "score": "3-0",
+          "final": [
+            0.187,
+            0.244,
+            0.569
+          ],
+          "market": [
+            0.181,
+            0.238,
+            0.581
+          ],
+          "model": [
+            0.247,
+            0.293,
+            0.46
+          ],
+          "folk": [
+            0.12,
+            0.23,
+            0.65
+          ],
+          "pOutcome": 0.187,
+          "folkOutcome": 0.12,
+          "pickA": "2",
+          "pickB": "X2",
+          "inA": false,
+          "inB": false,
+          "ll": {
+            "final": 1.677,
+            "market": 1.709,
+            "model": 1.398,
+            "folk": 2.12
+          }
+        },
+        {
+          "n": 3,
+          "match": "Everton - Ipswich",
+          "league": "Premier League",
+          "basis": "club",
+          "outcome": "1",
+          "score": "1-0",
+          "final": [
+            0.525,
+            0.257,
+            0.217
+          ],
+          "market": [
+            0.532,
+            0.256,
+            0.212
+          ],
+          "model": [
+            0.465,
+            0.267,
+            0.269
+          ],
+          "folk": [
+            0.65,
+            0.22,
+            0.13
+          ],
+          "pOutcome": 0.525,
+          "folkOutcome": 0.65,
+          "pickA": "1",
+          "pickB": "1X",
+          "inA": true,
+          "inB": true,
+          "ll": {
+            "final": 0.644,
+            "market": 0.631,
+            "model": 0.766,
+            "folk": 0.431
+          }
+        },
+        {
+          "n": 4,
+          "match": "Newcastle - Hull",
+          "league": "Premier League",
+          "basis": "club",
+          "outcome": "1",
+          "score": "2-1",
+          "final": [
+            0.596,
+            0.219,
+            0.185
+          ],
+          "market": [
+            0.604,
+            0.216,
+            0.18
+          ],
+          "model": [
+            0.528,
+            0.246,
+            0.227
+          ],
+          "folk": [
+            0.61,
+            0.23,
+            0.16
+          ],
+          "pOutcome": 0.596,
+          "folkOutcome": 0.61,
+          "pickA": "1",
+          "pickB": "1",
+          "inA": true,
+          "inB": true,
+          "ll": {
+            "final": 0.518,
+            "market": 0.504,
+            "model": 0.639,
+            "folk": 0.494
+          }
+        },
+        {
+          "n": 5,
+          "match": "Birmingham - Middlesbrough",
+          "league": "Championship",
+          "basis": "club",
+          "outcome": "X",
+          "score": "2-2",
+          "final": [
+            0.333,
+            0.272,
+            0.394
+          ],
+          "market": [
+            0.332,
+            0.271,
+            0.396
+          ],
+          "model": [
+            0.341,
+            0.282,
+            0.377
+          ],
+          "folk": [
+            0.26,
+            0.29,
+            0.45
+          ],
+          "pOutcome": 0.272,
+          "folkOutcome": 0.29,
+          "pickA": "1X2",
+          "pickB": "1X2",
+          "inA": true,
+          "inB": true,
+          "ll": {
+            "final": 1.302,
+            "market": 1.306,
+            "model": 1.266,
+            "folk": 1.238
+          }
+        },
+        {
+          "n": 6,
+          "match": "Burnley - Derby",
+          "league": "Championship",
+          "basis": "club",
+          "outcome": "X",
+          "score": "1-1",
+          "final": [
+            0.513,
+            0.26,
+            0.227
+          ],
+          "market": [
+            0.522,
+            0.26,
+            0.218
+          ],
+          "model": [
+            0.428,
+            0.266,
+            0.306
+          ],
+          "folk": [
+            0.63,
+            0.23,
+            0.14
+          ],
+          "pOutcome": 0.26,
+          "folkOutcome": 0.23,
+          "pickA": "1X",
+          "pickB": "1",
+          "inA": true,
+          "inB": false,
+          "ll": {
+            "final": 1.347,
+            "market": 1.347,
+            "model": 1.324,
+            "folk": 1.47
+          }
+        },
+        {
+          "n": 7,
+          "match": "Lincoln - Swansea",
+          "league": "Championship",
+          "basis": "club",
+          "outcome": "2",
+          "score": "1-2",
+          "final": [
+            0.345,
+            0.286,
+            0.37
+          ],
+          "market": [
+            0.336,
+            0.285,
+            0.379
+          ],
+          "model": [
+            0.422,
+            0.295,
+            0.283
+          ],
+          "folk": [
+            0.26,
+            0.3,
+            0.44
+          ],
+          "pOutcome": 0.37,
+          "folkOutcome": 0.44,
+          "pickA": "1X2",
+          "pickB": "1X2",
+          "inA": true,
+          "inB": true,
+          "ll": {
+            "final": 0.994,
+            "market": 0.97,
+            "model": 1.262,
+            "folk": 0.821
+          }
+        },
+        {
+          "n": 8,
+          "match": "Portsmouth - Blackburn",
+          "league": "Championship",
+          "basis": "club",
+          "outcome": "X",
+          "score": "2-2",
+          "final": [
+            0.441,
+            0.279,
+            0.28
+          ],
+          "market": [
+            0.445,
+            0.276,
+            0.28
+          ],
+          "model": [
+            0.407,
+            0.311,
+            0.282
+          ],
+          "folk": [
+            0.5,
+            0.27,
+            0.23
+          ],
+          "pOutcome": 0.279,
+          "folkOutcome": 0.27,
+          "pickA": "1X2",
+          "pickB": "1X2",
+          "inA": true,
+          "inB": true,
+          "ll": {
+            "final": 1.277,
+            "market": 1.287,
+            "model": 1.168,
+            "folk": 1.309
+          }
+        },
+        {
+          "n": 9,
+          "match": "Queens Park Rangers - Preston",
+          "league": "Championship",
+          "basis": "club",
+          "outcome": "X",
+          "score": "2-2",
+          "final": [
+            0.541,
+            0.249,
+            0.21
+          ],
+          "market": [
+            0.548,
+            0.247,
+            0.205
+          ],
+          "model": [
+            0.48,
+            0.263,
+            0.257
+          ],
+          "folk": [
+            0.66,
+            0.2,
+            0.14
+          ],
+          "pOutcome": 0.249,
+          "folkOutcome": 0.2,
+          "pickA": "1",
+          "pickB": "1X",
+          "inA": false,
+          "inB": true,
+          "ll": {
+            "final": 1.39,
+            "market": 1.398,
+            "model": 1.336,
+            "folk": 1.609
+          }
+        },
+        {
+          "n": 10,
+          "match": "Wrexham - Southampton",
+          "league": "Championship",
+          "basis": "club",
+          "outcome": "1",
+          "score": "2-1",
+          "final": [
+            0.351,
+            0.262,
+            0.387
+          ],
+          "market": [
+            0.357,
+            0.264,
+            0.378
+          ],
+          "model": [
+            0.291,
+            0.244,
+            0.465
+          ],
+          "folk": [
+            0.23,
+            0.26,
+            0.51
+          ],
+          "pOutcome": 0.351,
+          "folkOutcome": 0.23,
+          "pickA": "1X2",
+          "pickB": "1X2",
+          "inA": true,
+          "inB": true,
+          "ll": {
+            "final": 1.047,
+            "market": 1.03,
+            "model": 1.234,
+            "folk": 1.47
+          }
+        },
+        {
+          "n": 11,
+          "match": "Luton - Bradford",
+          "league": "League One",
+          "basis": "club",
+          "outcome": "2",
+          "score": "0-1",
+          "final": [
+            0.449,
+            0.267,
+            0.284
+          ],
+          "market": [
+            0.451,
+            0.264,
+            0.284
+          ],
+          "model": [
+            0.432,
+            0.289,
+            0.278
+          ],
+          "folk": [
+            0.52,
+            0.24,
+            0.24
+          ],
+          "pOutcome": 0.284,
+          "folkOutcome": 0.24,
+          "pickA": "1X2",
+          "pickB": "1",
+          "inA": true,
+          "inB": false,
+          "ll": {
+            "final": 1.259,
+            "market": 1.259,
+            "model": 1.28,
+            "folk": 1.427
+          }
+        },
+        {
+          "n": 12,
+          "match": "Oxford - Cambridge",
+          "league": "League One",
+          "basis": "club",
+          "outcome": "X",
+          "score": "1-1",
+          "final": [
+            0.447,
+            0.28,
+            0.273
+          ],
+          "market": [
+            0.441,
+            0.279,
+            0.279
+          ],
+          "model": [
+            0.499,
+            0.289,
+            0.212
+          ],
+          "folk": [
+            0.56,
+            0.26,
+            0.18
+          ],
+          "pOutcome": 0.28,
+          "folkOutcome": 0.26,
+          "pickA": "1X2",
+          "pickB": "1",
+          "inA": true,
+          "inB": false,
+          "ll": {
+            "final": 1.273,
+            "market": 1.277,
+            "model": 1.241,
+            "folk": 1.347
+          }
+        },
+        {
+          "n": 13,
+          "match": "Sheffield W - Stockport",
+          "league": "League One",
+          "basis": "club",
+          "outcome": "X",
+          "score": "0-0",
+          "final": [
+            0.31,
+            0.246,
+            0.444
+          ],
+          "market": [
+            0.308,
+            0.244,
+            0.448
+          ],
+          "model": [
+            0.33,
+            0.262,
+            0.407
+          ],
+          "folk": [
+            0.46,
+            0.22,
+            0.32
+          ],
+          "pOutcome": 0.246,
+          "folkOutcome": 0.22,
+          "pickA": "12",
+          "pickB": "12",
+          "inA": false,
+          "inB": false,
+          "ll": {
+            "final": 1.402,
+            "market": 1.411,
+            "model": 1.339,
+            "folk": 1.514
+          }
+        }
+      ]
+    },
+    {
+      "drawNumber": 4970,
+      "date": "2026-09-12",
+      "plMatches": 7,
+      "outcomes": "2XXX22X1X1212",
+      "draws13": 5,
+      "prize13": {
+        "amount": "10000000,00",
+        "winners": 1
+      },
+      "A": {
+        "rows": 387,
+        "cost": 387,
+        "grund": 3888,
+        "payoutMin": 36700,
+        "hit": 0.0017762101100608789,
+        "best": 9,
+        "perClass": {
+          "2": 4,
+          "3": 41,
+          "4": 109,
+          "5": 120,
+          "6": 77,
+          "7": 28,
+          "8": 6,
+          "9": 2
+        },
+        "winnings": 0,
+        "net": -387,
+        "groundCorrect": 9
+      },
+      "B": {
+        "rows": 390,
+        "cost": 390,
+        "grund": 2592,
+        "payoutMin": 34660,
+        "hit": 0.0012796642570805838,
+        "best": 9,
+        "perClass": {
+          "2": 12,
+          "3": 48,
+          "4": 103,
+          "5": 111,
+          "6": 75,
+          "7": 31,
+          "8": 8,
+          "9": 2
+        },
+        "winnings": 0,
+        "net": -390,
+        "groundCorrect": 9
+      },
+      "grundA": 9,
+      "grundB": 9,
+      "matches": [
+        {
+          "n": 1,
+          "match": "Sunderland - Arsenal",
+          "league": "Premier League",
+          "basis": "club",
+          "outcome": "2",
+          "score": "0-2",
+          "final": [
+            0.149,
+            0.246,
+            0.605
+          ],
+          "market": [
+            0.147,
+            0.24,
+            0.613
+          ],
+          "model": [
+            0.172,
+            0.292,
+            0.536
+          ],
+          "folk": [
+            0.08,
+            0.2,
+            0.72
+          ],
+          "pOutcome": 0.605,
+          "folkOutcome": 0.72,
+          "pickA": "2",
+          "pickB": "X2",
+          "inA": true,
+          "inB": true,
+          "ll": {
+            "final": 0.503,
+            "market": 0.489,
+            "model": 0.624,
+            "folk": 0.329
+          }
+        },
+        {
+          "n": 2,
+          "match": "Tottenham - Everton",
+          "league": "Premier League",
+          "basis": "club",
+          "outcome": "X",
+          "score": "0-0",
+          "final": [
+            0.456,
+            0.274,
+            0.27
+          ],
+          "market": [
+            0.47,
+            0.272,
+            0.258
+          ],
+          "model": [
+            0.335,
+            0.288,
+            0.377
+          ],
+          "folk": [
+            0.47,
+            0.28,
+            0.25
+          ],
+          "pOutcome": 0.274,
+          "folkOutcome": 0.28,
+          "pickA": "1X2",
+          "pickB": "1X",
+          "inA": true,
+          "inB": true,
+          "ll": {
+            "final": 1.295,
+            "market": 1.302,
+            "model": 1.245,
+            "folk": 1.273
+          }
+        },
+        {
+          "n": 3,
+          "match": "Liverpool - Fulham",
+          "league": "Premier League",
+          "basis": "club",
+          "outcome": "X",
+          "score": "0-0",
+          "final": [
+            0.633,
+            0.203,
+            0.164
+          ],
+          "market": [
+            0.645,
+            0.198,
+            0.157
+          ],
+          "model": [
+            0.529,
+            0.244,
+            0.227
+          ],
+          "folk": [
+            0.79,
+            0.14,
+            0.07
+          ],
+          "pOutcome": 0.203,
+          "folkOutcome": 0.14,
+          "pickA": "1",
+          "pickB": "1X",
+          "inA": false,
+          "inB": true,
+          "ll": {
+            "final": 1.595,
+            "market": 1.619,
+            "model": 1.411,
+            "folk": 1.966
+          }
+        },
+        {
+          "n": 4,
+          "match": "Chelsea - Hull",
+          "league": "Premier League",
+          "basis": "club",
+          "outcome": "X",
+          "score": "2-2",
+          "final": [
+            0.738,
+            0.158,
+            0.104
+          ],
+          "market": [
+            0.755,
+            0.151,
+            0.094
+          ],
+          "model": [
+            0.583,
+            0.225,
+            0.192
+          ],
+          "folk": [
+            0.81,
+            0.14,
+            0.05
+          ],
+          "pOutcome": 0.158,
+          "folkOutcome": 0.14,
+          "pickA": "1",
+          "pickB": "1",
+          "inA": false,
+          "inB": false,
+          "ll": {
+            "final": 1.845,
+            "market": 1.89,
+            "model": 1.492,
+            "folk": 1.966
+          }
+        },
+        {
+          "n": 5,
+          "match": "Crystal Palace - Ipswich",
+          "league": "Premier League",
+          "basis": "club",
+          "outcome": "2",
+          "score": "2-3",
+          "final": [
+            0.486,
+            0.269,
+            0.245
+          ],
+          "market": [
+            0.496,
+            0.269,
+            0.235
+          ],
+          "model": [
+            0.397,
+            0.268,
+            0.335
+          ],
+          "folk": [
+            0.6,
+            0.24,
+            0.16
+          ],
+          "pOutcome": 0.245,
+          "folkOutcome": 0.16,
+          "pickA": "1X",
+          "pickB": "1",
+          "inA": false,
+          "inB": false,
+          "ll": {
+            "final": 1.406,
+            "market": 1.448,
+            "model": 1.094,
+            "folk": 1.833
+          }
+        },
+        {
+          "n": 6,
+          "match": "Aston Villa - Nottingham",
+          "league": "Premier League",
+          "basis": "club",
+          "outcome": "2",
+          "score": "1-2",
+          "final": [
+            0.466,
+            0.263,
+            0.271
+          ],
+          "market": [
+            0.474,
+            0.261,
+            0.265
+          ],
+          "model": [
+            0.387,
+            0.286,
+            0.327
+          ],
+          "folk": [
+            0.49,
+            0.27,
+            0.24
+          ],
+          "pOutcome": 0.271,
+          "folkOutcome": 0.24,
+          "pickA": "12",
+          "pickB": "1",
+          "inA": true,
+          "inB": false,
+          "ll": {
+            "final": 1.306,
+            "market": 1.328,
+            "model": 1.118,
+            "folk": 1.427
+          }
+        },
+        {
+          "n": 7,
+          "match": "Bournemouth - Brentford",
+          "league": "Premier League",
+          "basis": "club",
+          "outcome": "X",
+          "score": "2-2",
+          "final": [
+            0.381,
+            0.268,
+            0.351
+          ],
+          "market": [
+            0.375,
+            0.268,
+            0.357
+          ],
+          "model": [
+            0.433,
+            0.269,
+            0.298
+          ],
+          "folk": [
+            0.41,
+            0.27,
+            0.32
+          ],
+          "pOutcome": 0.268,
+          "folkOutcome": 0.27,
+          "pickA": "12",
+          "pickB": "12",
+          "inA": false,
+          "inB": false,
+          "ll": {
+            "final": 1.317,
+            "market": 1.317,
+            "model": 1.313,
+            "folk": 1.309
+          }
+        },
+        {
+          "n": 8,
+          "match": "Blackburn - Millwall",
+          "league": "Championship",
+          "basis": "club",
+          "outcome": "1",
+          "score": "3-1",
+          "final": [
+            0.309,
+            0.282,
+            0.409
+          ],
+          "market": [
+            0.316,
+            0.279,
+            0.405
+          ],
+          "model": [
+            0.25,
+            0.304,
+            0.445
+          ],
+          "folk": [
+            0.3,
+            0.27,
+            0.43
+          ],
+          "pOutcome": 0.309,
+          "folkOutcome": 0.3,
+          "pickA": "1X2",
+          "pickB": "1X2",
+          "inA": true,
+          "inB": true,
+          "ll": {
+            "final": 1.174,
+            "market": 1.152,
+            "model": 1.386,
+            "folk": 1.204
+          }
+        },
+        {
+          "n": 9,
+          "match": "Charlton - Portsmouth",
+          "league": "Championship",
+          "basis": "club",
+          "outcome": "X",
+          "score": "0-0",
+          "final": [
+            0.377,
+            0.299,
+            0.323
+          ],
+          "market": [
+            0.38,
+            0.298,
+            0.323
+          ],
+          "model": [
+            0.356,
+            0.314,
+            0.33
+          ],
+          "folk": [
+            0.4,
+            0.28,
+            0.32
+          ],
+          "pOutcome": 0.299,
+          "folkOutcome": 0.28,
+          "pickA": "1X2",
+          "pickB": "1X2",
+          "inA": true,
+          "inB": true,
+          "ll": {
+            "final": 1.207,
+            "market": 1.211,
+            "model": 1.158,
+            "folk": 1.273
+          }
+        },
+        {
+          "n": 10,
+          "match": "Middlesbrough - Norwich",
+          "league": "Championship",
+          "basis": "club",
+          "outcome": "1",
+          "score": "4-3",
+          "final": [
+            0.518,
+            0.246,
+            0.236
+          ],
+          "market": [
+            0.521,
+            0.244,
+            0.235
+          ],
+          "model": [
+            0.489,
+            0.263,
+            0.247
+          ],
+          "folk": [
+            0.62,
+            0.2,
+            0.18
+          ],
+          "pOutcome": 0.518,
+          "folkOutcome": 0.62,
+          "pickA": "1X",
+          "pickB": "1",
+          "inA": true,
+          "inB": true,
+          "ll": {
+            "final": 0.658,
+            "market": 0.652,
+            "model": 0.715,
+            "folk": 0.478
+          }
+        },
+        {
+          "n": 11,
+          "match": "Preston - Lincoln",
+          "league": "Championship",
+          "basis": "club",
+          "outcome": "2",
+          "score": "0-1",
+          "final": [
+            0.423,
+            0.271,
+            0.305
+          ],
+          "market": [
+            0.437,
+            0.271,
+            0.292
+          ],
+          "model": [
+            0.298,
+            0.275,
+            0.427
+          ],
+          "folk": [
+            0.47,
+            0.28,
+            0.25
+          ],
+          "pOutcome": 0.305,
+          "folkOutcome": 0.25,
+          "pickA": "1X2",
+          "pickB": "1X2",
+          "inA": true,
+          "inB": true,
+          "ll": {
+            "final": 1.187,
+            "market": 1.231,
+            "model": 0.851,
+            "folk": 1.386
+          }
+        },
+        {
+          "n": 12,
+          "match": "Southampton - Bristol City",
+          "league": "Championship",
+          "basis": "club",
+          "outcome": "1",
+          "score": "4-1",
+          "final": [
+            0.608,
+            0.218,
+            0.174
+          ],
+          "market": [
+            0.607,
+            0.218,
+            0.174
+          ],
+          "model": [
+            0.612,
+            0.215,
+            0.172
+          ],
+          "folk": [
+            0.67,
+            0.19,
+            0.14
+          ],
+          "pOutcome": 0.608,
+          "folkOutcome": 0.67,
+          "pickA": "1",
+          "pickB": "1X",
+          "inA": true,
+          "inB": true,
+          "ll": {
+            "final": 0.498,
+            "market": 0.499,
+            "model": 0.491,
+            "folk": 0.4
+          }
+        },
+        {
+          "n": 13,
+          "match": "Watford - Stoke",
+          "league": "Championship",
+          "basis": "club",
+          "outcome": "2",
+          "score": "1-2",
+          "final": [
+            0.386,
+            0.284,
+            0.33
+          ],
+          "market": [
+            0.385,
+            0.283,
+            0.332
+          ],
+          "model": [
+            0.392,
+            0.294,
+            0.314
+          ],
+          "folk": [
+            0.45,
+            0.3,
+            0.25
+          ],
+          "pOutcome": 0.33,
+          "folkOutcome": 0.25,
+          "pickA": "1X2",
+          "pickB": "1X2",
+          "inA": true,
+          "inB": true,
+          "ll": {
+            "final": 1.109,
+            "market": 1.103,
+            "model": 1.158,
+            "folk": 1.386
+          }
+        }
+      ]
+    },
+    {
+      "drawNumber": 4969,
+      "date": "2026-09-05",
+      "plMatches": 6,
+      "outcomes": "XX21XX211221X",
+      "draws13": 5,
+      "prize13": {
+        "amount": "764705,00",
+        "winners": 17
+      },
+      "A": {
+        "rows": 393,
+        "cost": 393,
+        "grund": 2916,
+        "payoutMin": 41100,
+        "hit": 0.0024153155222920546,
+        "best": 9,
+        "perClass": {
+          "2": 6,
+          "3": 37,
+          "4": 91,
+          "5": 120,
+          "6": 84,
+          "7": 41,
+          "8": 13,
+          "9": 1
+        },
+        "winnings": 0,
+        "net": -393,
+        "groundCorrect": 10
+      },
+      "B": {
+        "rows": 361,
+        "cost": 361,
+        "grund": 1152,
+        "payoutMin": 30000,
+        "hit": 0.0013375227587706722,
+        "best": 11,
+        "perClass": {
+          "4": 2,
+          "5": 23,
+          "6": 74,
+          "7": 103,
+          "8": 90,
+          "9": 51,
+          "10": 16,
+          "11": 2
+        },
+        "winnings": 2334,
+        "net": 1973,
+        "groundCorrect": 11
+      },
+      "grundA": 10,
+      "grundB": 11,
+      "matches": [
+        {
+          "n": 1,
+          "match": "Hull - Aston Villa",
+          "league": "Premier League",
+          "basis": "club",
+          "outcome": "X",
+          "score": "0-0",
+          "final": [
+            0.256,
+            0.265,
+            0.479
+          ],
+          "market": [
+            0.245,
+            0.265,
+            0.49
+          ],
+          "model": [
+            0.36,
+            0.266,
+            0.374
+          ],
+          "folk": [
+            0.25,
+            0.23,
+            0.52
+          ],
+          "pOutcome": 0.265,
+          "folkOutcome": 0.23,
+          "pickA": "X2",
+          "pickB": "2",
+          "inA": true,
+          "inB": false,
+          "ll": {
+            "final": 1.328,
+            "market": 1.328,
+            "model": 1.324,
+            "folk": 1.47
+          }
+        },
+        {
+          "n": 2,
+          "match": "Brighton - Leeds",
+          "league": "Premier League",
+          "basis": "club",
+          "outcome": "X",
+          "score": "1-1",
+          "final": [
+            0.517,
+            0.259,
+            0.224
+          ],
+          "market": [
+            0.522,
+            0.257,
+            0.221
+          ],
+          "model": [
+            0.474,
+            0.275,
+            0.251
+          ],
+          "folk": [
+            0.61,
+            0.22,
+            0.17
+          ],
+          "pOutcome": 0.259,
+          "folkOutcome": 0.22,
+          "pickA": "1",
+          "pickB": "1X",
+          "inA": false,
+          "inB": true,
+          "ll": {
+            "final": 1.351,
+            "market": 1.359,
+            "model": 1.291,
+            "folk": 1.514
+          }
+        },
+        {
+          "n": 3,
+          "match": "Fulham - Crystal Palace",
+          "league": "Premier League",
+          "basis": "club",
+          "outcome": "2",
+          "score": "2-3",
+          "final": [
+            0.402,
+            0.281,
+            0.317
+          ],
+          "market": [
+            0.395,
+            0.281,
+            0.324
+          ],
+          "model": [
+            0.461,
+            0.288,
+            0.251
+          ],
+          "folk": [
+            0.51,
+            0.28,
+            0.21
+          ],
+          "pOutcome": 0.317,
+          "folkOutcome": 0.21,
+          "pickA": "1X2",
+          "pickB": "12",
+          "inA": true,
+          "inB": true,
+          "ll": {
+            "final": 1.149,
+            "market": 1.127,
+            "model": 1.382,
+            "folk": 1.561
+          }
+        },
+        {
+          "n": 4,
+          "match": "Manchester City - Coventry",
+          "league": "Premier League",
+          "basis": "club",
+          "outcome": "1",
+          "score": "1-0",
+          "final": [
+            0.771,
+            0.144,
+            0.085
+          ],
+          "market": [
+            0.79,
+            0.134,
+            0.075
+          ],
+          "model": [
+            0.593,
+            0.233,
+            0.174
+          ],
+          "folk": [
+            0.91,
+            0.06,
+            0.03
+          ],
+          "pOutcome": 0.771,
+          "folkOutcome": 0.91,
+          "pickA": "1",
+          "pickB": "1",
+          "inA": true,
+          "inB": true,
+          "ll": {
+            "final": 0.26,
+            "market": 0.236,
+            "model": 0.523,
+            "folk": 0.094
+          }
+        },
+        {
+          "n": 5,
+          "match": "Nottingham - Tottenham",
+          "league": "Premier League",
+          "basis": "club",
+          "outcome": "X",
+          "score": "0-0",
+          "final": [
+            0.373,
+            0.292,
+            0.336
+          ],
+          "market": [
+            0.352,
+            0.296,
+            0.352
+          ],
+          "model": [
+            0.56,
+            0.251,
+            0.189
+          ],
+          "folk": [
+            0.41,
+            0.26,
+            0.33
+          ],
+          "pOutcome": 0.292,
+          "folkOutcome": 0.26,
+          "pickA": "1X2",
+          "pickB": "1X2",
+          "inA": true,
+          "inB": true,
+          "ll": {
+            "final": 1.231,
+            "market": 1.217,
+            "model": 1.382,
+            "folk": 1.347
+          }
+        },
+        {
+          "n": 6,
+          "match": "Brentford - Sunderland",
+          "league": "Premier League",
+          "basis": "club",
+          "outcome": "X",
+          "score": "1-1",
+          "final": [
+            0.569,
+            0.247,
+            0.184
+          ],
+          "market": [
+            0.577,
+            0.244,
+            0.179
+          ],
+          "model": [
+            0.495,
+            0.274,
+            0.231
+          ],
+          "folk": [
+            0.67,
+            0.21,
+            0.12
+          ],
+          "pOutcome": 0.247,
+          "folkOutcome": 0.21,
+          "pickA": "1",
+          "pickB": "1X",
+          "inA": false,
+          "inB": true,
+          "ll": {
+            "final": 1.398,
+            "market": 1.411,
+            "model": 1.295,
+            "folk": 1.561
+          }
+        },
+        {
+          "n": 7,
+          "match": "Burnley - Bristol City",
+          "league": "Championship",
+          "basis": "club",
+          "outcome": "2",
+          "score": "1-2",
+          "final": [
+            0.503,
+            0.261,
+            0.236
+          ],
+          "market": [
+            0.515,
+            0.26,
+            0.224
+          ],
+          "model": [
+            0.39,
+            0.27,
+            0.34
+          ],
+          "folk": [
+            0.54,
+            0.25,
+            0.21
+          ],
+          "pOutcome": 0.236,
+          "folkOutcome": 0.21,
+          "pickA": "1",
+          "pickB": "1X",
+          "inA": false,
+          "inB": false,
+          "ll": {
+            "final": 1.444,
+            "market": 1.496,
+            "model": 1.079,
+            "folk": 1.561
+          }
+        },
+        {
+          "n": 8,
+          "match": "Millwall - Bolton",
+          "league": "Championship",
+          "basis": "club",
+          "outcome": "1",
+          "score": "4-0",
+          "final": [
+            0.614,
+            0.236,
+            0.15
+          ],
+          "market": [
+            0.616,
+            0.236,
+            0.149
+          ],
+          "model": [
+            0.597,
+            0.236,
+            0.166
+          ],
+          "folk": [
+            0.56,
+            0.24,
+            0.2
+          ],
+          "pOutcome": 0.614,
+          "folkOutcome": 0.56,
+          "pickA": "1",
+          "pickB": "1X",
+          "inA": true,
+          "inB": true,
+          "ll": {
+            "final": 0.488,
+            "market": 0.485,
+            "model": 0.516,
+            "folk": 0.58
+          }
+        },
+        {
+          "n": 9,
+          "match": "Portsmouth - Cardiff",
+          "league": "Championship",
+          "basis": "club",
+          "outcome": "1",
+          "score": "2-0",
+          "final": [
+            0.381,
+            0.282,
+            0.337
+          ],
+          "market": [
+            0.379,
+            0.285,
+            0.336
+          ],
+          "model": [
+            0.395,
+            0.263,
+            0.342
+          ],
+          "folk": [
+            0.41,
+            0.28,
+            0.31
+          ],
+          "pOutcome": 0.381,
+          "folkOutcome": 0.41,
+          "pickA": "1X2",
+          "pickB": "12",
+          "inA": true,
+          "inB": true,
+          "ll": {
+            "final": 0.965,
+            "market": 0.97,
+            "model": 0.929,
+            "folk": 0.892
+          }
+        },
+        {
+          "n": 10,
+          "match": "Queens Park Rangers - Middlesbrough",
+          "league": "Championship",
+          "basis": "club",
+          "outcome": "2",
+          "score": "0-1",
+          "final": [
+            0.278,
+            0.278,
+            0.445
+          ],
+          "market": [
+            0.275,
+            0.279,
+            0.446
+          ],
+          "model": [
+            0.299,
+            0.264,
+            0.437
+          ],
+          "folk": [
+            0.26,
+            0.25,
+            0.49
+          ],
+          "pOutcome": 0.445,
+          "folkOutcome": 0.49,
+          "pickA": "1X2",
+          "pickB": "2",
+          "inA": true,
+          "inB": true,
+          "ll": {
+            "final": 0.81,
+            "market": 0.807,
+            "model": 0.828,
+            "folk": 0.713
+          }
+        },
+        {
+          "n": 11,
+          "match": "Sheffield U - Norwich",
+          "league": "Championship",
+          "basis": "club",
+          "outcome": "2",
+          "score": "1-3",
+          "final": [
+            0.418,
+            0.275,
+            0.308
+          ],
+          "market": [
+            0.419,
+            0.275,
+            0.306
+          ],
+          "model": [
+            0.406,
+            0.269,
+            0.325
+          ],
+          "folk": [
+            0.48,
+            0.25,
+            0.27
+          ],
+          "pOutcome": 0.308,
+          "folkOutcome": 0.27,
+          "pickA": "1X2",
+          "pickB": "12",
+          "inA": true,
+          "inB": true,
+          "ll": {
+            "final": 1.178,
+            "market": 1.184,
+            "model": 1.124,
+            "folk": 1.309
+          }
+        },
+        {
+          "n": 12,
+          "match": "West Bromwich - Watford",
+          "league": "Championship",
+          "basis": "club",
+          "outcome": "1",
+          "score": "1-0",
+          "final": [
+            0.468,
+            0.28,
+            0.252
+          ],
+          "market": [
+            0.467,
+            0.279,
+            0.253
+          ],
+          "model": [
+            0.468,
+            0.29,
+            0.242
+          ],
+          "folk": [
+            0.65,
+            0.21,
+            0.14
+          ],
+          "pOutcome": 0.468,
+          "folkOutcome": 0.65,
+          "pickA": "1X",
+          "pickB": "1",
+          "inA": true,
+          "inB": true,
+          "ll": {
+            "final": 0.759,
+            "market": 0.761,
+            "model": 0.759,
+            "folk": 0.431
+          }
+        },
+        {
+          "n": 13,
+          "match": "Swansea - Wrexham",
+          "league": "Championship",
+          "basis": "club",
+          "outcome": "X",
+          "score": "0-0",
+          "final": [
+            0.379,
+            0.287,
+            0.334
+          ],
+          "market": [
+            0.372,
+            0.289,
+            0.339
+          ],
+          "model": [
+            0.443,
+            0.27,
+            0.287
+          ],
+          "folk": [
+            0.5,
+            0.26,
+            0.24
+          ],
+          "pOutcome": 0.287,
+          "folkOutcome": 0.26,
+          "pickA": "1X2",
+          "pickB": "1X2",
+          "inA": true,
+          "inB": true,
+          "ll": {
+            "final": 1.248,
+            "market": 1.241,
+            "model": 1.309,
+            "folk": 1.347
+          }
+        }
+      ]
+    },
+    {
+      "drawNumber": 4968,
+      "date": "2026-08-29",
+      "plMatches": 3,
+      "outcomes": "2X2221X111X22",
+      "draws13": 3,
+      "prize13": {
+        "amount": "590909,00",
+        "winners": 22
+      },
+      "A": {
+        "rows": 395,
+        "cost": 395,
+        "grund": 2592,
+        "payoutMin": 43500,
+        "hit": 0.0011478866738930899,
+        "best": 6,
+        "perClass": {
+          "1": 21,
+          "2": 75,
+          "3": 131,
+          "4": 111,
+          "5": 48,
+          "6": 9
+        },
+        "winnings": 0,
+        "net": -395,
+        "groundCorrect": 9
+      },
+      "B": {
+        "rows": 387,
+        "cost": 387,
+        "grund": 2592,
+        "payoutMin": 44800,
+        "hit": 0.0006994056542193435,
+        "best": 9,
+        "perClass": {
+          "3": 21,
+          "4": 68,
+          "5": 110,
+          "6": 102,
+          "7": 61,
+          "8": 20,
+          "9": 5
+        },
+        "winnings": 0,
+        "net": -387,
+        "groundCorrect": 10
+      },
+      "grundA": 9,
+      "grundB": 10,
+      "matches": [
+        {
+          "n": 1,
+          "match": "Tottenham - Newcastle",
+          "league": "Premier League",
+          "basis": "club",
+          "outcome": "2",
+          "score": "0-2",
+          "final": [
+            0.446,
+            0.261,
+            0.293
+          ],
+          "market": [
+            0.456,
+            0.26,
+            0.283
+          ],
+          "model": [
+            0.351,
+            0.264,
+            0.385
+          ],
+          "folk": [
+            0.45,
+            0.24,
+            0.31
+          ],
+          "pOutcome": 0.293,
+          "folkOutcome": 0.31,
+          "pickA": "12",
+          "pickB": "1",
+          "inA": true,
+          "inB": false,
+          "ll": {
+            "final": 1.228,
+            "market": 1.262,
+            "model": 0.955,
+            "folk": 1.171
+          }
+        },
+        {
+          "n": 2,
+          "match": "Bournemouth - Everton",
+          "league": "Premier League",
+          "basis": "club",
+          "outcome": "X",
+          "score": "1-1",
+          "final": [
+            0.489,
+            0.258,
+            0.254
+          ],
+          "market": [
+            0.489,
+            0.257,
+            0.254
+          ],
+          "model": [
+            0.486,
+            0.263,
+            0.251
+          ],
+          "folk": [
+            0.51,
+            0.24,
+            0.25
+          ],
+          "pOutcome": 0.258,
+          "folkOutcome": 0.24,
+          "pickA": "1",
+          "pickB": "1X",
+          "inA": false,
+          "inB": true,
+          "ll": {
+            "final": 1.355,
+            "market": 1.359,
+            "model": 1.336,
+            "folk": 1.427
+          }
+        },
+        {
+          "n": 3,
+          "match": "Coventry - Hull",
+          "league": "Premier League",
+          "basis": "club",
+          "outcome": "2",
+          "score": "0-1",
+          "final": [
+            0.517,
+            0.251,
+            0.232
+          ],
+          "market": [
+            0.507,
+            0.254,
+            0.239
+          ],
+          "model": [
+            0.607,
+            0.219,
+            0.174
+          ],
+          "folk": [
+            0.62,
+            0.22,
+            0.16
+          ],
+          "pOutcome": 0.232,
+          "folkOutcome": 0.16,
+          "pickA": "1",
+          "pickB": "1",
+          "inA": false,
+          "inB": false,
+          "ll": {
+            "final": 1.461,
+            "market": 1.431,
+            "model": 1.749,
+            "folk": 1.833
+          }
+        },
+        {
+          "n": 4,
+          "match": "Blackburn - Queens Park Rangers",
+          "league": "Championship",
+          "basis": "club",
+          "outcome": "2",
+          "score": "1-2",
+          "final": [
+            0.416,
+            0.283,
+            0.301
+          ],
+          "market": [
+            0.42,
+            0.281,
+            0.299
+          ],
+          "model": [
+            0.384,
+            0.297,
+            0.319
+          ],
+          "folk": [
+            0.42,
+            0.25,
+            0.33
+          ],
+          "pOutcome": 0.301,
+          "folkOutcome": 0.33,
+          "pickA": "1X2",
+          "pickB": "1X2",
+          "inA": true,
+          "inB": true,
+          "ll": {
+            "final": 1.201,
+            "market": 1.207,
+            "model": 1.143,
+            "folk": 1.109
+          }
+        },
+        {
+          "n": 5,
+          "match": "Bolton - Lincoln",
+          "league": "Championship",
+          "basis": "club",
+          "outcome": "2",
+          "score": "0-1",
+          "final": [
+            0.38,
+            0.275,
+            0.345
+          ],
+          "market": [
+            0.389,
+            0.276,
+            0.335
+          ],
+          "model": [
+            0.299,
+            0.267,
+            0.434
+          ],
+          "folk": [
+            0.46,
+            0.27,
+            0.27
+          ],
+          "pOutcome": 0.345,
+          "folkOutcome": 0.27,
+          "pickA": "1X2",
+          "pickB": "1X2",
+          "inA": true,
+          "inB": true,
+          "ll": {
+            "final": 1.064,
+            "market": 1.094,
+            "model": 0.835,
+            "folk": 1.309
+          }
+        },
+        {
+          "n": 6,
+          "match": "Bristol City - Portsmouth",
+          "league": "Championship",
+          "basis": "club",
+          "outcome": "1",
+          "score": "2-1",
+          "final": [
+            0.431,
+            0.282,
+            0.287
+          ],
+          "market": [
+            0.431,
+            0.283,
+            0.287
+          ],
+          "model": [
+            0.433,
+            0.275,
+            0.293
+          ],
+          "folk": [
+            0.59,
+            0.22,
+            0.19
+          ],
+          "pOutcome": 0.431,
+          "folkOutcome": 0.59,
+          "pickA": "1X2",
+          "pickB": "1",
+          "inA": true,
+          "inB": true,
+          "ll": {
+            "final": 0.842,
+            "market": 0.842,
+            "model": 0.837,
+            "folk": 0.528
+          }
+        },
+        {
+          "n": 7,
+          "match": "Cardiff - Sheffield U",
+          "league": "Championship",
+          "basis": "club",
+          "outcome": "X",
+          "score": "2-2",
+          "final": [
+            0.378,
+            0.27,
+            0.352
+          ],
+          "market": [
+            0.371,
+            0.272,
+            0.357
+          ],
+          "model": [
+            0.438,
+            0.254,
+            0.307
+          ],
+          "folk": [
+            0.26,
+            0.28,
+            0.46
+          ],
+          "pOutcome": 0.27,
+          "folkOutcome": 0.28,
+          "pickA": "12",
+          "pickB": "1X2",
+          "inA": false,
+          "inB": true,
+          "ll": {
+            "final": 1.309,
+            "market": 1.302,
+            "model": 1.37,
+            "folk": 1.273
+          }
+        },
+        {
+          "n": 8,
+          "match": "Charlton - Preston",
+          "league": "Championship",
+          "basis": "club",
+          "outcome": "1",
+          "score": "1-0",
+          "final": [
+            0.439,
+            0.288,
+            0.273
+          ],
+          "market": [
+            0.442,
+            0.287,
+            0.271
+          ],
+          "model": [
+            0.412,
+            0.297,
+            0.291
+          ],
+          "folk": [
+            0.54,
+            0.24,
+            0.22
+          ],
+          "pOutcome": 0.439,
+          "folkOutcome": 0.54,
+          "pickA": "1X",
+          "pickB": "1",
+          "inA": true,
+          "inB": true,
+          "ll": {
+            "final": 0.823,
+            "market": 0.816,
+            "model": 0.887,
+            "folk": 0.616
+          }
+        },
+        {
+          "n": 9,
+          "match": "Norwich - Burnley",
+          "league": "Championship",
+          "basis": "club",
+          "outcome": "1",
+          "score": "4-1",
+          "final": [
+            0.411,
+            0.262,
+            0.326
+          ],
+          "market": [
+            0.397,
+            0.264,
+            0.339
+          ],
+          "model": [
+            0.54,
+            0.244,
+            0.216
+          ],
+          "folk": [
+            0.51,
+            0.23,
+            0.26
+          ],
+          "pOutcome": 0.411,
+          "folkOutcome": 0.51,
+          "pickA": "12",
+          "pickB": "12",
+          "inA": true,
+          "inB": true,
+          "ll": {
+            "final": 0.889,
+            "market": 0.924,
+            "model": 0.616,
+            "folk": 0.673
+          }
+        },
+        {
+          "n": 10,
+          "match": "Southampton - Millwall",
+          "league": "Championship",
+          "basis": "club",
+          "outcome": "1",
+          "score": "5-1",
+          "final": [
+            0.48,
+            0.268,
+            0.252
+          ],
+          "market": [
+            0.489,
+            0.267,
+            0.244
+          ],
+          "model": [
+            0.404,
+            0.272,
+            0.324
+          ],
+          "folk": [
+            0.58,
+            0.21,
+            0.21
+          ],
+          "pOutcome": 0.48,
+          "folkOutcome": 0.58,
+          "pickA": "1",
+          "pickB": "1X",
+          "inA": true,
+          "inB": true,
+          "ll": {
+            "final": 0.734,
+            "market": 0.715,
+            "model": 0.906,
+            "folk": 0.545
+          }
+        },
+        {
+          "n": 11,
+          "match": "Watford - West Ham",
+          "league": "Championship",
+          "basis": "club",
+          "outcome": "X",
+          "score": "1-1",
+          "final": [
+            0.252,
+            0.25,
+            0.499
+          ],
+          "market": [
+            0.247,
+            0.247,
+            0.506
+          ],
+          "model": [
+            0.298,
+            0.274,
+            0.427
+          ],
+          "folk": [
+            0.15,
+            0.18,
+            0.67
+          ],
+          "pOutcome": 0.25,
+          "folkOutcome": 0.18,
+          "pickA": "2",
+          "pickB": "12",
+          "inA": false,
+          "inB": false,
+          "ll": {
+            "final": 1.386,
+            "market": 1.398,
+            "model": 1.295,
+            "folk": 1.715
+          }
+        },
+        {
+          "n": 12,
+          "match": "Cambridge - Huddersfield",
+          "league": "League One",
+          "basis": "club",
+          "outcome": "2",
+          "score": "1-2",
+          "final": [
+            0.351,
+            0.276,
+            0.373
+          ],
+          "market": [
+            0.34,
+            0.275,
+            0.385
+          ],
+          "model": [
+            0.453,
+            0.282,
+            0.265
+          ],
+          "folk": [
+            0.25,
+            0.26,
+            0.49
+          ],
+          "pOutcome": 0.373,
+          "folkOutcome": 0.49,
+          "pickA": "1X2",
+          "pickB": "1X2",
+          "inA": true,
+          "inB": true,
+          "ll": {
+            "final": 0.986,
+            "market": 0.955,
+            "model": 1.328,
+            "folk": 0.713
+          }
+        },
+        {
+          "n": 13,
+          "match": "Leyton Orient - Barnsley",
+          "league": "League One",
+          "basis": "club",
+          "outcome": "2",
+          "score": "1-3",
+          "final": [
+            0.413,
+            0.262,
+            0.325
+          ],
+          "market": [
+            0.413,
+            0.262,
+            0.325
+          ],
+          "model": [
+            0.409,
+            0.267,
+            0.324
+          ],
+          "folk": [
+            0.48,
+            0.25,
+            0.27
+          ],
+          "pOutcome": 0.325,
+          "folkOutcome": 0.27,
+          "pickA": "12",
+          "pickB": "12",
+          "inA": true,
+          "inB": true,
+          "ll": {
+            "final": 1.124,
+            "market": 1.124,
+            "model": 1.127,
+            "folk": 1.309
+          }
+        }
+      ]
+    },
+    {
+      "drawNumber": 4967,
+      "date": "2026-08-22",
+      "plMatches": 4,
+      "outcomes": "11121X2X1X2XX",
+      "draws13": 5,
+      "prize13": {
+        "amount": "1522223,00",
+        "winners": 4
+      },
+      "A": {
+        "rows": 357,
+        "cost": 357,
+        "grund": 1536,
+        "payoutMin": 30000,
+        "hit": 0.0012663335089709753,
+        "best": 9,
+        "perClass": {
+          "4": 32,
+          "5": 78,
+          "6": 111,
+          "7": 89,
+          "8": 39,
+          "9": 8
+        },
+        "winnings": 0,
+        "net": -357,
+        "groundCorrect": 9
+      },
+      "B": {
+        "rows": 369,
+        "cost": 369,
+        "grund": 1536,
+        "payoutMin": 31000,
+        "hit": 0.0010246582009944389,
+        "best": 6,
+        "perClass": {
+          "0": 9,
+          "1": 38,
+          "2": 88,
+          "3": 111,
+          "4": 86,
+          "5": 32,
+          "6": 5
+        },
+        "winnings": 0,
+        "net": -369,
+        "groundCorrect": 7
+      },
+      "grundA": 9,
+      "grundB": 7,
+      "matches": [
+        {
+          "n": 1,
+          "match": "Brentford - Tottenham",
+          "league": "Premier League",
+          "basis": "club",
+          "outcome": "1",
+          "score": "3-0",
+          "final": [
+            0.383,
+            0.269,
+            0.348
+          ],
+          "market": [
+            0.37,
+            0.27,
+            0.36
+          ],
+          "model": [
+            0.504,
+            0.259,
+            0.236
+          ],
+          "folk": [
+            0.39,
+            0.23,
+            0.38
+          ],
+          "pOutcome": 0.383,
+          "folkOutcome": 0.39,
+          "pickA": "12",
+          "pickB": "12",
+          "inA": true,
+          "inB": true,
+          "ll": {
+            "final": 0.96,
+            "market": 0.994,
+            "model": 0.685,
+            "folk": 0.942
+          }
+        },
+        {
+          "n": 2,
+          "match": "Everton - Crystal Palace",
+          "league": "Premier League",
+          "basis": "club",
+          "outcome": "1",
+          "score": "2-0",
+          "final": [
+            0.442,
+            0.28,
+            0.278
+          ],
+          "market": [
+            0.44,
+            0.28,
+            0.28
+          ],
+          "model": [
+            0.467,
+            0.278,
+            0.255
+          ],
+          "folk": [
+            0.54,
+            0.27,
+            0.19
+          ],
+          "pOutcome": 0.442,
+          "folkOutcome": 0.54,
+          "pickA": "1X",
+          "pickB": "1X",
+          "inA": true,
+          "inB": true,
+          "ll": {
+            "final": 0.816,
+            "market": 0.821,
+            "model": 0.761,
+            "folk": 0.616
+          }
+        },
+        {
+          "n": 3,
+          "match": "Ipswich - Sunderland",
+          "league": "Premier League",
+          "basis": "club",
+          "outcome": "1",
+          "score": "2-1",
+          "final": [
+            0.351,
+            0.287,
+            0.362
+          ],
+          "market": [
+            0.342,
+            0.287,
+            0.371
+          ],
+          "model": [
+            0.429,
+            0.285,
+            0.286
+          ],
+          "folk": [
+            0.35,
+            0.31,
+            0.34
+          ],
+          "pOutcome": 0.351,
+          "folkOutcome": 0.35,
+          "pickA": "1X2",
+          "pickB": "1X2",
+          "inA": true,
+          "inB": true,
+          "ll": {
+            "final": 1.047,
+            "market": 1.073,
+            "model": 0.846,
+            "folk": 1.05
+          }
+        },
+        {
+          "n": 4,
+          "match": "Nottingham - Leeds",
+          "league": "Premier League",
+          "basis": "club",
+          "outcome": "2",
+          "score": "0-1",
+          "final": [
+            0.429,
+            0.282,
+            0.289
+          ],
+          "market": [
+            0.425,
+            0.283,
+            0.292
+          ],
+          "model": [
+            0.464,
+            0.274,
+            0.262
+          ],
+          "folk": [
+            0.43,
+            0.28,
+            0.29
+          ],
+          "pOutcome": 0.289,
+          "folkOutcome": 0.29,
+          "pickA": "12",
+          "pickB": "12",
+          "inA": true,
+          "inB": true,
+          "ll": {
+            "final": 1.241,
+            "market": 1.231,
+            "model": 1.339,
+            "folk": 1.238
+          }
+        },
+        {
+          "n": 5,
+          "match": "Blackburn - Middlesbrough",
+          "league": "Championship",
+          "basis": "club",
+          "outcome": "1",
+          "score": "2-1",
+          "final": [
+            0.264,
+            0.281,
+            0.455
+          ],
+          "market": [
+            0.267,
+            0.279,
+            0.454
+          ],
+          "model": [
+            0.237,
+            0.299,
+            0.464
+          ],
+          "folk": [
+            0.19,
+            0.25,
+            0.56
+          ],
+          "pOutcome": 0.264,
+          "folkOutcome": 0.19,
+          "pickA": "X2",
+          "pickB": "X2",
+          "inA": false,
+          "inB": false,
+          "ll": {
+            "final": 1.332,
+            "market": 1.321,
+            "model": 1.44,
+            "folk": 1.661
+          }
+        },
+        {
+          "n": 6,
+          "match": "Derby - Cardiff",
+          "league": "Championship",
+          "basis": "club",
+          "outcome": "X",
+          "score": "2-2",
+          "final": [
+            0.494,
+            0.27,
+            0.236
+          ],
+          "market": [
+            0.501,
+            0.272,
+            0.227
+          ],
+          "model": [
+            0.431,
+            0.256,
+            0.313
+          ],
+          "folk": [
+            0.57,
+            0.23,
+            0.2
+          ],
+          "pOutcome": 0.27,
+          "folkOutcome": 0.23,
+          "pickA": "1X",
+          "pickB": "1X",
+          "inA": true,
+          "inB": true,
+          "ll": {
+            "final": 1.309,
+            "market": 1.302,
+            "model": 1.363,
+            "folk": 1.47
+          }
+        },
+        {
+          "n": 7,
+          "match": "Preston - Wolverhampton",
+          "league": "Championship",
+          "basis": "club",
+          "outcome": "2",
+          "score": "1-3",
+          "final": [
+            0.234,
+            0.255,
+            0.511
+          ],
+          "market": [
+            0.214,
+            0.25,
+            0.535
+          ],
+          "model": [
+            0.415,
+            0.295,
+            0.289
+          ],
+          "folk": [
+            0.16,
+            0.2,
+            0.64
+          ],
+          "pOutcome": 0.511,
+          "folkOutcome": 0.64,
+          "pickA": "2",
+          "pickB": "X2",
+          "inA": true,
+          "inB": true,
+          "ll": {
+            "final": 0.671,
+            "market": 0.625,
+            "model": 1.241,
+            "folk": 0.446
+          }
+        },
+        {
+          "n": 8,
+          "match": "Queens Park Rangers - Bolton",
+          "league": "Championship",
+          "basis": "club",
+          "outcome": "X",
+          "score": "0-0",
+          "final": [
+            0.493,
+            0.259,
+            0.248
+          ],
+          "market": [
+            0.5,
+            0.26,
+            0.24
+          ],
+          "model": [
+            0.428,
+            0.254,
+            0.318
+          ],
+          "folk": [
+            0.62,
+            0.21,
+            0.17
+          ],
+          "pOutcome": 0.259,
+          "folkOutcome": 0.21,
+          "pickA": "1X",
+          "pickB": "1",
+          "inA": true,
+          "inB": false,
+          "ll": {
+            "final": 1.351,
+            "market": 1.347,
+            "model": 1.37,
+            "folk": 1.561
+          }
+        },
+        {
+          "n": 9,
+          "match": "Southampton - Stoke",
+          "league": "Championship",
+          "basis": "club",
+          "outcome": "1",
+          "score": "3-1",
+          "final": [
+            0.563,
+            0.242,
+            0.196
+          ],
+          "market": [
+            0.555,
+            0.244,
+            0.201
+          ],
+          "model": [
+            0.633,
+            0.219,
+            0.148
+          ],
+          "folk": [
+            0.7,
+            0.19,
+            0.11
+          ],
+          "pOutcome": 0.563,
+          "folkOutcome": 0.7,
+          "pickA": "1",
+          "pickB": "1X",
+          "inA": true,
+          "inB": true,
+          "ll": {
+            "final": 0.574,
+            "market": 0.589,
+            "model": 0.457,
+            "folk": 0.357
+          }
+        },
+        {
+          "n": 10,
+          "match": "Swansea - Sheffield U",
+          "league": "Championship",
+          "basis": "club",
+          "outcome": "X",
+          "score": "0-0",
+          "final": [
+            0.392,
+            0.278,
+            0.33
+          ],
+          "market": [
+            0.388,
+            0.279,
+            0.332
+          ],
+          "model": [
+            0.422,
+            0.271,
+            0.306
+          ],
+          "folk": [
+            0.43,
+            0.27,
+            0.3
+          ],
+          "pOutcome": 0.278,
+          "folkOutcome": 0.27,
+          "pickA": "12",
+          "pickB": "12",
+          "inA": false,
+          "inB": false,
+          "ll": {
+            "final": 1.28,
+            "market": 1.277,
+            "model": 1.306,
+            "folk": 1.309
+          }
+        },
+        {
+          "n": 11,
+          "match": "West Ham - Charlton",
+          "league": "Championship",
+          "basis": "club",
+          "outcome": "2",
+          "score": "1-2",
+          "final": [
+            0.68,
+            0.199,
+            0.121
+          ],
+          "market": [
+            0.695,
+            0.192,
+            0.113
+          ],
+          "model": [
+            0.543,
+            0.264,
+            0.193
+          ],
+          "folk": [
+            0.85,
+            0.1,
+            0.05
+          ],
+          "pOutcome": 0.121,
+          "folkOutcome": 0.05,
+          "pickA": "1",
+          "pickB": "1",
+          "inA": false,
+          "inB": false,
+          "ll": {
+            "final": 2.112,
+            "market": 2.18,
+            "model": 1.645,
+            "folk": 2.996
+          }
+        },
+        {
+          "n": 12,
+          "match": "Wrexham - Watford",
+          "league": "Championship",
+          "basis": "club",
+          "outcome": "X",
+          "score": "1-1",
+          "final": [
+            0.486,
+            0.265,
+            0.249
+          ],
+          "market": [
+            0.48,
+            0.267,
+            0.253
+          ],
+          "model": [
+            0.541,
+            0.245,
+            0.214
+          ],
+          "folk": [
+            0.62,
+            0.21,
+            0.17
+          ],
+          "pOutcome": 0.265,
+          "folkOutcome": 0.21,
+          "pickA": "1X",
+          "pickB": "1",
+          "inA": true,
+          "inB": false,
+          "ll": {
+            "final": 1.328,
+            "market": 1.321,
+            "model": 1.406,
+            "folk": 1.561
+          }
+        },
+        {
+          "n": 13,
+          "match": "Wimbledon - Reading",
+          "league": "League One",
+          "basis": "club",
+          "outcome": "X",
+          "score": "0-0",
+          "final": [
+            0.361,
+            0.284,
+            0.355
+          ],
+          "market": [
+            0.37,
+            0.286,
+            0.343
+          ],
+          "model": [
+            0.276,
+            0.269,
+            0.455
+          ],
+          "folk": [
+            0.3,
+            0.31,
+            0.39
+          ],
+          "pOutcome": 0.284,
+          "folkOutcome": 0.31,
+          "pickA": "12",
+          "pickB": "12",
+          "inA": false,
+          "inB": false,
+          "ll": {
+            "final": 1.259,
+            "market": 1.252,
+            "model": 1.313,
+            "folk": 1.171
+          }
+        }
+      ]
+    }
+  ]
+}
