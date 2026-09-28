@@ -250,9 +250,9 @@ function render() {
   const reducedBox = r ? `<details class="st-method st-reduced"${showReduced ? " open" : ""}><summary>Reducerat system – ${r.rows} rader (${krFmt(r.cost)} kr) · visa regler och rader</summary>
       <ol class="st-steps">
         <li><b>Grundrad</b> ${s.rows} rader: spikar, halv- och helgarderingar där de höjer träffchansen mest (se chippen på varje match).</li>
-        <li><b>Färgreducering</b> efter Svenska folkets streck: <span class="st-dot green"></span>grön ≥ ${Math.round(r.rules.colorGreen * 100)} %, <span class="st-dot yellow"></span>gul, <span class="st-dot red"></span>röd ≤ ${Math.round(r.rules.colorRed * 100)} %. Regel: högst ${r.rules.greenMax} gröna och ${r.rules.redMin}–${r.rules.redMax} röda per rad.</li>
-        <li><b>Teckenreducering</b>: ${r.rules.xMin}–${r.rules.xMax} kryss per rad.</li>
-        <li><b>Budget</b> 350–400 kr: av alla regelkombinationer som ger 350–400 rader är den vald som ger högst förväntad återbetalning (vår chans × beräknad utdelning från folkets streck).</li>
+        <li><b>Utdelningsreducering</b>: bara rader som beräknas ge minst ${krFmt(r.rules.payoutMin)} kr för 13 rätt (${r.afterPayout} rader kvar). Samma beräkning som Gambling Cabin: folkets streck och omsättning ${krFmt(r.rules.turnover / 1e6)} milj kr.</li>
+        <li><b>Teckenreducering</b>: minst <b>${r.rules.signMin[0]}</b> ettor, <b>${r.rules.signMin[1]}</b> kryss och <b>${r.rules.signMin[2]}</b> tvåor per rad (${r.rules.signMin.join("-")}). Max är alltid fullt.</li>
+        <li><b>Budget</b> 350–400 kr: av alla minimikombinationer som ger 350–400 rader är den vald som ger högst chans till 13 rätt.</li>
       </ol>
       <p>Chans 13 rätt: ${oneIn(r.hitAll)} (grundraden ${oneIn(r.grundHit)}). Beräknad utdelning om systemet tar 13 rätt: ca ${krFmt(r.expectedPayout || 0)} kr. Utdelningen är en uppskattning från streckprocenten och kan skilja sig från den verkliga.</p>
       ${gcLink}
@@ -262,7 +262,7 @@ function render() {
     ${p.note ? `<p class="st-note">${esc(p.note)}</p>` : ""}
     ${data.error ? `<p class="st-note bad">Kunde inte uppdatera: ${esc(data.error)}</p>` : ""}
     <div class="st-stats">
-      ${r ? `<div><span class="k">Reducerat system</span><strong>${r.rows} rader · ${krFmt(r.cost)} kr</strong><small>grundrad ${s.rows} → ${r.rows} · chans 13 rätt ${oneIn(r.hitAll)}</small>${r.gamblingCabinUrl && p.open ? `<a class="st-gc small" href="${esc(r.gamblingCabinUrl)}" target="_blank" rel="noopener">Öppna i Gambling Cabin →</a>` : ""}</div>` : s ? `<div><span class="k">Systemförslag</span><strong>${s.rows} rader</strong><small>chans 13 rätt ${oneIn(s.hitAll)}</small></div>` : ""}
+      ${r ? `<div><span class="k">Reducerat system</span><strong>${r.rows} rader · ${krFmt(r.cost)} kr</strong><small>grundrad ${s.rows} → ${r.rows} · utdelning ≥ ${krFmt(r.rules.payoutMin)} kr · minst ${r.rules.signMin.join("-")} · chans 13 rätt ${oneIn(r.hitAll)}</small>${r.gamblingCabinUrl && p.open ? `<a class="st-gc small" href="${esc(r.gamblingCabinUrl)}" target="_blank" rel="noopener">Öppna i Gambling Cabin →</a>` : ""}</div>` : s ? `<div><span class="k">Systemförslag</span><strong>${s.rows} rader</strong><small>chans 13 rätt ${oneIn(s.hitAll)}</small></div>` : ""}
       ${p.result ? `<div><span class="k">Facit – systemet fick</span><strong>${p.result.reducedCorrect ?? p.result.systemCorrect} av ${p.result.total} rätt</strong><small>rätt rad ${p.events.map((e) => e.result?.outcome || "–").join("")}</small></div>` : ""}
       ${p.result?.experts?.length ? `<div><span class="k">Svenska Spels experter</span><strong>${p.result.experts.map((x) => `${x.correct}/${x.tipped}`).join(" · ")} rätt</strong><small>${p.result.experts.map((x) => esc(x.author)).join(" · ")}</small></div>` : ""}
       ${p.result?.distribution?.[0] ? `<div><span class="k">Utdelning 13 rätt</span><strong>${esc(p.result.distribution[0].amount)} kr</strong><small>${p.result.distribution[0].winners} vinnare</small></div>` : ""}
