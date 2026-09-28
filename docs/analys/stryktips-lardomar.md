@@ -20,7 +20,7 @@ Levande fil. Här samlas allt vi lärt oss om de automatiska Stryktipset-systeme
 - **Marknaden i backtestet är Svenska Spels startodds.** API:t saknar slutodds för avgjorda omgångar. Live används oddsen vid hämtning, som ligger närmare spelstopp och är skarpare.
 - **Folkets streck är slutliga värden** (vid spelstopp).
 - **Lagmodellen har cutoff = omgångens första match**, så den använder ingen framtidsdata. Landslags-Elo är däremot dagens, men det påverkar bara landskamper.
-- **Användarens fasta regler gäller i alla körningar:** 350–400 kr per system, utdelning för 13 rätt ≥ 30 000 kr, A minst 5-3-2, B minst 4-3-3, max alltid fullt, och B har högst 1 gemensam spik med A.
+- **Användarens fasta regler gäller i alla körningar:** 350–400 kr per system, utdelning för 13 rätt ≥ 30 000 kr (Europatipset ≥ 20 000 kr från 2026-09-28), A minst 5-3-2, B minst 4-3-3, max alltid fullt, och B har högst 1 gemensam spik med A.
 - **Utdelning räknas med Svenska Spels verkliga vinstklasser.**
 
 ## Datamängd
@@ -51,8 +51,8 @@ Alla Stryktipset-omgångar med minst en PL-match. Samma regler som i dag: A 5-3-
 
 ## Europatipset: behövs egen logik? (2026-09-28)
 
-Urval: omgångar sedan 1 aug 2025 med minst 3 matcher från topp 4-ligorna, alltså 55 av 119 omgångar. Samma regler som Stryktipset (A 5-3-2, B 4-3-3, 350–400 kr).
-Rådata: `data/europatips-backtest-2526.json`. Köra om: `STRYK_SEASONS=2627,2526,2425 node scripts/backtest-stryktipset.mjs --product europatipset --from 2025-08-01 --out data/europatips-backtest-2526.json`. Varianter styrs med `STRYK_UTD_MIN` och `STRYK_TURNOVER`.
+Urval: omgångar sedan 1 aug 2025 med minst 3 matcher från topp 4-ligorna, alltså 55 av 119 omgångar. Samma regler och samma kod som Stryktipsets steg 2: skarpa slutodds, jackpot och verklig omsättning i utdelningen, A 5-3-2, B 4-3-3, 350–400 kr.
+Rådata: `data/europatips-backtest-2526.json`. Köra om: `STRYK_SEASONS=2627,2526,2425 node scripts/backtest-stryktipset.mjs --product europatipset --from 2025-08-01 --out data/europatips-backtest-2526.json`. Utdelningsgränsen styrs med `STRYK_UTD_MIN`. `STRYK_TURNOVER` sätter bara Gambling Cabins fasta omsättning.
 
 **Omsättning och utdelning** (109 avgjorda omgångar, sep 2025 – sep 2026, jämfört med Stryktipset):
 
@@ -67,18 +67,20 @@ Rådata: `data/europatips-backtest-2526.json`. Köra om: `STRYK_SEASONS=2627,252
 
 | Variant | A netto | A 10+ / 11+ / 12+ | A chans 13 rätt | B netto |
 |---|---|---|---|---|
-| Nuvarande (oms 10 milj, utd ≥ 30 000) | −14 134 | 156 / 20 / 0 | 1/471 | −11 241 |
-| Verklig omsättning 6,8 milj | −14 155 | 156 / 20 / 0 | 1/471 | −11 235 |
+| Nuvarande (utd ≥ 30 000, skarpa odds) | −14 134 | 156 / 20 / 0 | 1/471 | −11 241 |
+| Svenska Spels odds som marknad | −15 570 | 122 / 9 / 0 | 1/468 | −18 060 |
 | Utd ≥ 15 000 | −18 058 | 162 / 16 / 0 | 1/326 | −20 034 |
 | Utd ≥ 20 000 | +17 677 | 192 / 34 / 5 | 1/376 | −18 629 |
 | Utd ≥ 50 000 | −15 579 | 137 / 19 / 0 | 1/619 | −12 528 |
 
 Slutsatser:
-1. **Lägre omsättning spelar ingen roll för gränsen.** För de rader vi spelar är beräknad utdelning ≈ 26 % / radens streckprodukt, alltså oberoende av omsättningen. 6,8 eller 10 milj ger samma system. Den fasta 10 milj behålls så att radantalet stämmer med Gambling Cabin.
+1. **Lägre omsättning kräver ingen egen logik.** För de rader vi spelar är utdelningen ≈ 26 % / radens streckprodukt, alltså nästan oberoende av omsättningen. Koden räknar dessutom redan med verklig omsättning och jackpot, så Europatipsets 6,8 milj (mot Gambling Cabins fasta 10 milj) hanteras automatiskt.
 2. **Sänk inte utdelningsgränsen.** Plusset för 20 000 kr kommer från en enda 13-rätt (omg 2545, som gav 32 668 kr, alltså över 30 000 i verkligheten). 15 000 kr är sämre än 30 000 och B blir sämre av alla sänkningar. Det är brus, inte en regel.
-3. **Det som skiljer är folket, inte utdelningen.** Europatipset är mest topp 5-ligor, och där är folkets streck nästan lika bra som oddsen: logloss folk 0,990 mot odds 0,994 och vår slutprocent 0,995. På Stryktipset kommer streckvärdet främst från Championship och League One (folk 1,12–1,13 mot odds 1,07–1,09). I PL ligger folket ungefär lika nära oddsen på båda spelen (+0,015). Det finns alltså mindre felstreckning att utnyttja på Europatipset. Det syns i nettot (A −14 000 på 55 omgångar mot +3 000 på 33 för Stryktipset), men båda styrs av enstaka 12–13-rätt.
+3. **Det som skiljer är folket, inte utdelningen.** Europatipset är mest topp 5-ligor, och där är folkets streck nästan lika bra som oddsen: logloss folk 0,990 mot odds 0,994 och vår slutprocent 0,995. På Stryktipset kommer streckvärdet främst från Championship och League One (folk 1,12–1,13 mot odds 1,07–1,09). I PL ligger folket ungefär lika nära oddsen på båda spelen (+0,015). Det finns alltså mindre felstreckning att utnyttja på Europatipset. Nettot visar ändå ingen skillnad: A fick tillbaka 32 % av insatsen på Europatipset (−14 134 kr på 55 omgångar) mot 24 % på Stryktipset (−9 742 kr på 33 omgångar), och chansen till 13 rätt är lika (1/471 mot 1/447). Båda styrs av enstaka 12–13-rätt.
 4. Kryss: 26,4 % utfall mot 25,9 % väntat och 24,0 % hos folket. Folket underspelar X även här, alltså samma X-logik.
-5. **Följ upp:** formeln antar att 26 % av omsättningen går till 13 rätt, men i verkligheten går median 32 % (Europatipset) och 39 % (Stryktipset), eftersom pengar från 10 rätt flyttas upp. Utdelningen underskattas alltså för båda spelen. Det kan vara värt en gemensam justering, men testa det på båda produkterna.
+5. Utfallet för 13 rätt var i median 32 % av omsättningen på Europatipset och 39 % på Stryktipset, mot 26 % i grundformeln. Det beror på jackpottar och pengar som förs över från 10 rätt, och det fångas nu av jackpotlogiken (steg 2).
+
+**Beslut (användaren, 2026-09-28):** Europatipset får utdelningsgränsen **20 000 kr**, eftersom det var bäst i backtestet (A +17 677 kr, 11+ rätt 34 mot 20, chans 13 rätt 1/376 mot 1/471). Övriga regler är desamma som för Stryktipset. Stryktipset behåller 30 000 kr. **Följ upp:** resultatet bygger på en enda 13-rätt och B blev sämre (−18 629 mot −11 241 kr). Utvärdera efter 12+ nya Europatipset-omgångar. Om A inte har fler 11+ än med 30 000 i samma omgångar, gå tillbaka. `data/europatips-backtest-2526.json` är nu körd med 20 000.
 
 ## Steg 2: skarpa odds + jackpot (2026-09-28, 33 omgångar 2025/26)
 
@@ -106,6 +108,26 @@ Facit i 38 omgångar (2025/26 + hösten 2026) hade i snitt 5,4 ettor, 3,4 kryss 
 | Rätt rad släpps igenom | **34 %** | **61 %** | 63 % | 68 % | 71 % | 82 % | 89 % |
 
 Exempel: i 4949 och 4929 hade grundraden alla 13 rätt, men raden stoppades (4949 hade 2 ettor, 4929 hade 2 kryss). Dessutom gav 13 rätt under 30 000 kr i 6 av 36 omgångar, så utdelningsregeln stänger också ute dem. Lösare regler ger fler rader och därmed mindre täckning inom budgeten, så en ändring måste backtestas. Reglerna är användarens och ändras inte utan klartecken.
+
+### Backtest av teckenregler för system A (33 omgångar 2025/26, steg 2-versionen)
+
+Bara A:s teckenminimum ändrat (B 4-3-3). *Chans* = modellens chans till 13 rätt per omgång, det stabilaste måttet. Radantal i utfallet är brusigt.
+
+| Regel (1-X-2) | Chans 13 rätt | Netto | 10+ / 11+ / 12+ rätt | Snitt bästa rad |
+|---|---|---|---|---|
+| **5-3-2 (nu)** | 1/447 | −9 742 | 88 / 13 / 1 | 8,45 |
+| 4-3-3 | 1/456 | −10 323 | 79 / 7 / 0 | 8,33 |
+| 4-3-2 | 1/449 | −9 727 | 85 / 13 / 1 | 8,27 |
+| 3-3-3 | 1/460 | −10 281 | 83 / 7 / 0 | 8,39 |
+| 3-3-2 | 1/453 | −9 720 | 89 / 13 / 1 | 8,27 |
+| 4-2-2 (bryter minst 3 kryss) | **1/415** | −8 530 | 111 / 16 / 2 | 8,48 |
+| 3-2-2 (bryter minst 3 kryss) | **1/417** | −8 425 | 121 / 18 / 2 | 8,33 |
+
+**Slutsats:**
+- 5-3-2 är **inte** dåligt. Bland regler med minst 3 kryss är den lika bra eller bäst: chansen skiljer bara 1/447–1/460, vilket är brus.
+- Att rätt rad bara klarar 5-3-2 i 34 % av veckorna kostar mindre än det låter. Raderna som stängs ute är de minst sannolika, och budgeten på cirka 400 rader räcker ändå bara till en liten del av utfallen. Optimeringen flyttar raderna dit sannolikheten finns.
+- Kravet på minst 3 kryss kostar cirka 7 % i chans. 4-2-2 och 3-2-2 gav 1/415 mot 1/447, och fler rader med 11+ rätt.
+- 4-3-3 är den svagaste regeln med minst 3 kryss och används i dag för B. För B vore 3-3-2 eller 4-3-2 minst lika bra.
 
 ## Robusta lärdomar (stöds av hela urvalet)
 
@@ -173,7 +195,7 @@ Nettot styrs av enstaka träffar: A:s plus kommer från en enda rad med 12 rätt
 
 - **2026-09-28 (natt):** Steg 2: skarpa odds (Pinnacle/Betfair/bolagssnitt, slutodds i backtest) och jackpot i utdelningen. Snapshots sparar odds och streck. Upptäckt att 5-3-2 bara släpper igenom rätt rad i 34 % av omgångarna. Backtest-vyn visar tre steg.
 
-- **2026-09-28 (natt):** Europatipset backtestat (55 omgångar med minst 3 topp 4-matcher). Ingen egen logik behövs: omsättningen påverkar inte utdelningsgränsen, och att sänka gränsen var brus. Backtestet har nu produktberoende urval, `--all`, `STRYK_UTD_MIN` och `STRYK_TURNOVER`.
+- **2026-09-28 (natt):** Europatipset backtestat (55 omgångar med minst 3 topp 4-matcher). Ingen egen logik behövs: omsättningen påverkar inte utdelningsgränsen, och att sänka gränsen var brus. Backtestet har nu produktberoende urval, `--all`, `STRYK_UTD_MIN` och `STRYK_TURNOVER`. Därefter bytte Europatipset till utdelningsgränsen 20 000 kr (användarens beslut, `UTD_MIN_BY_PRODUCT` i `scripts/fetch-stryktipset.mjs`).
 
 - **2026-09-28 (sent):** Startelvor/frånvaro läses från Oddset-tipsen (data/tips-latest.json: ESPN-elva för PL/Championship, annars FPL-skador) och visas per match. Samma anfallsfaktor och vikt (alpha) som Oddset. Oddsets backtest (2000 matcher) valde alpha 0, så elvorna flyttar inte procenten direkt. Effekten kommer via oddsen när man kör sent. Nytt arbetsflöde: "Stryktipset – sen körning (startelvor)". Öppen fråga: backtesta elva-effekten på Stryktipset när vi har sparade slutodds.
 

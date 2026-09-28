@@ -28,11 +28,15 @@ const MODEL_W_THIN = Number(process.env.STRYK_MODEL_W_THIN ?? process.env.STRYK_
 // Reducerat system (Gambling Cabin-logik: grundrad -> farg-, teckenregler och utdelningsreducering)
 const GRUND_MAX_ROWS = 30000; // storsta grundrad som provas fore reducering
 // Fasta teckenregler (minst antal 1-X-2 per rad, max alltid fullt): alltid minst 3 kryss
-const SIGN_MIN = { A: [5, 3, 2], B: [4, 3, 3] };
+const signEnv = (v) => (v ? v.split('-').map(Number) : null); // STRYK_SIGN_A=4-3-2 m.m. for backtest
+const SIGN_MIN = { A: signEnv(process.env.STRYK_SIGN_A) || [5, 3, 2], B: signEnv(process.env.STRYK_SIGN_B) || [4, 3, 3] };
 const BUDGET = { min: 350, max: 400 }; // kr per omgang (rader x radpris)
 const COLOR = { green: 0.45, red: 0.2 }; // folkets streck: gron >= 45 %, rod <= 20 %, annars gul
 const PAYOUT_13 = 0.65 * 0.4; // 65 % aterbetalning, 40 % av potten till 13 ratt
-const UTD_MIN = Number(process.env.STRYK_UTD_MIN ?? 30000); // minsta beraknade utdelning for 13 ratt (kr), anvandarens regel (env for backtest)
+// Minsta utdelning for 13 ratt (kr) per spel, anvandarens regel. Europatipset 20 000: backtest 55 omg (minst 3 topp 4-matcher)
+// gav A +17 677 kr mot -14 134 vid 30 000 (bygger pa en enda 13-ratt, folj upp). STRYK_UTD_MIN overstyr i backtest.
+const UTD_MIN_BY_PRODUCT = { stryktipset: 30000, europatipset: 20000 };
+const utdMin = (productId) => Number(process.env.STRYK_UTD_MIN ?? UTD_MIN_BY_PRODUCT[productId] ?? 30000);
 // Samma fasta omsattning som Gambling Cabin raknar utdelning med (sa radantalet blir identiskt dar)
 const GC_TURNOVER = { stryktipset: 25e6, europatipset: 1e7 };
 const HALF_LIFE_DAYS = 150;
@@ -505,24 +509,24 @@ function signColor(folkP) {
 
 // Reducera en grundrad till BUDGET med regler som gar att aterskapa exakt i Gambling Cabins verktyg:
 //   tecken 1/X/2: fast minimum per system (A 5-3-2, B 4-3-3), max alltid fullt
-//   utdelning 13 ratt >= UTD_MIN (GC:s formel: 26 % x omsattning / (omsattning x radens streck + 1), fast omsattning per spel);
+//   utdelning 13 ratt >= payoutMin (per spel, se UTD_MIN_BY_PRODUCT; GC:s formel: 26 % x omsattning / (omsattning x radens streck + 1), fast omsattning per spel);
 //   gransen hojs vid behov (jamnt belopp) tills radantalet ryms i budgeten.
-// Utdelningsgransen UTD_MIN galler VERKLIG utdelning: (26 % x verklig omsattning + jackpot) / (omsattning x streck + 1).
+// Utdelningsgransen payoutMin galler VERKLIG utdelning: (26 % x verklig omsattning + jackpot) / (omsattning x streck + 1).
 // Kalibrerad mot facit 2025/26: vinnarformeln stammer (faktiska/forvantade vinnare median 1,06) men potten var
 // > 26 % i halften av omgangarna (jackpot/overforda pengar). Gransen oversatts till GC:s formel (fast omsattning)
 // sa att Gambling Cabin-lanken ger samma rader: bada ar avtagande i radens streckprodukt f.
 // Antagande (verifiera forsta gangen en oppen omgang har jackpot): GC raknar in jackpotten i sin pott, eftersom verktyget
 // skickar med den (jp) till sin berakning. Radurvalet paverkas inte av antagandet, bara gransens siffra i lanken.
-function gcPayoutFloor(gcTurnover, realTurnover, jackpot) {
-  const fStar = ((PAYOUT_13 * realTurnover + (jackpot || 0)) / UTD_MIN - 1) / realTurnover;
+function gcPayoutFloor(gcTurnover, realTurnover, jackpot, payoutMin) {
+  const fStar = ((PAYOUT_13 * realTurnover + (jackpot || 0)) / payoutMin - 1) / realTurnover;
   return fStar > 0 ? (PAYOUT_13 * gcTurnover + (jackpot || 0)) / (1 + gcTurnover * fStar) : Infinity;
 }
 
-function reduceSystem(events, grund, { rowPrice = 1, turnover, signMin, realTurnover = turnover, jackpot = 0 }) {
+function reduceSystem(events, grund, { rowPrice = 1, turnover, signMin, realTurnover = turnover, jackpot = 0, payoutMin = 30000 }) {
   const minRows = Math.ceil(BUDGET.min / rowPrice), maxRows = Math.floor(BUDGET.max / rowPrice);
   const colors = events.map((e) => [0, 1, 2].map((k) => signColor(e.folk?.[k])));
   const T = turnover;
-  const floor = gcPayoutFloor(T, realTurnover, jackpot);
+  const floor = gcPayoutFloor(T, realTurnover, jackpot, payoutMin);
   const all = [];
   const walk = (i, row, p, f) => {
     if (i === events.length) {
@@ -569,7 +573,7 @@ function reduceSystem(events, grund, { rowPrice = 1, turnover, signMin, realTurn
   return {
     grundRows: grund.rows, afterPayout: all.length, rows: kept.length, cost: kept.length * rowPrice, rowPrice,
     hitAll: hit, grundHit: grund.hitAll, expectedPayout: hit ? ev / hit : null, expectedReturn: ev,
-    rules: { payoutMin: cut.t, payoutMinReal: UTD_MIN, jackpot, realTurnover, signMin, colorGreen: COLOR.green, colorRed: COLOR.red, turnover: T },
+    rules: { payoutMin: cut.t, payoutMinReal: payoutMin, jackpot, realTurnover, signMin, colorGreen: COLOR.green, colorRed: COLOR.red, turnover: T },
     colors: colors.map((c) => c.join(',')),
     rowList: kept.map((r) => r.row.map((k) => SIGNS[k]).join('')),
   };
@@ -778,7 +782,7 @@ async function analyzeDraw(product, draw, ctx, result) {
   if (process.env.STRYK_JACKPOT === '0') jackpot = 0; // for jamforelse i backtest
   const rowPrice = num(draw.rowPrice) || 1;
   const closeDate = (draw.regCloseTime || '').slice(0, 10);
-  const bestA = out.length ? bestReduced(out, grundCandidates(out, GRUND_MAX_ROWS), { rowPrice, turnover, realTurnover, jackpot, signMin: SIGN_MIN.A }) : null;
+  const bestA = out.length ? bestReduced(out, grundCandidates(out, GRUND_MAX_ROWS), { rowPrice, turnover, realTurnover, jackpot, payoutMin: utdMin(product.id), signMin: SIGN_MIN.A }) : null;
   const system = bestA?.system || null, reduced = bestA?.reduced || null;
   if (system) out.forEach((a, i) => { a.systemPick = system.picks[i]; });
   if (reduced) {
@@ -788,7 +792,7 @@ async function analyzeDraw(product, draw, ctx, result) {
   let systemB = null, reducedB = null;
   if (system) {
     const singlesA = system.sets.map((x) => (x.length === 1 ? x[0] : -1));
-    const bestB = bestReduced(out, grundCandidates(out, GRUND_MAX_ROWS, singlesA), { rowPrice, turnover, realTurnover, jackpot, signMin: SIGN_MIN.B });
+    const bestB = bestReduced(out, grundCandidates(out, GRUND_MAX_ROWS, singlesA), { rowPrice, turnover, realTurnover, jackpot, payoutMin: utdMin(product.id), signMin: SIGN_MIN.B });
     systemB = bestB?.system || null; reducedB = bestB?.reduced || null;
     if (systemB) out.forEach((a, i) => { a.systemPickB = systemB.picks[i]; });
     if (reducedB) reducedB.gamblingCabinUrl = gamblingCabinUrl(product.id, draw.drawNumber, closeDate, out, systemB.sets, reducedB);
