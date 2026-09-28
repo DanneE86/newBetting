@@ -90,7 +90,7 @@ function probRow(e) {
     const sv = e.streckvarde?.[i];
     const col = inSys && e.colors ? e.colors[i] : null;
     return `<div class="st-prob${inSys ? " tip" : " out"}${col ? ` c-${col}` : ""}${hit ? " hit" : ""}">
-      <div class="st-prob-top"><span class="st-sign">${s}</span><span class="st-team">${esc(names[i])}</span>${inSys ? `<span class="st-in${col ? ` c-${col}` : ""}" title="Tecknet spelas · färg efter folkets streck">${col ? COLOR_LABEL[col] : "✓ spelas"}</span>` : ""}<strong>${pct(e.final[i])}</strong></div>
+      <div class="st-prob-top"><span class="st-sign">${s}</span><span class="st-team">${esc(names[i])}</span>${inSys ? `<span class="st-in${col ? ` c-${col}` : ""}" title="Tecknet spelas · färg efter folkets streck">${col ? COLOR_LABEL[col] : "✓ spelas"}</span>` : ""}${e.systemPickB?.signs.includes(s) ? `<span class="st-b" title="Spelas i system B">B</span>` : ""}<strong>${pct(e.final[i])}</strong></div>
       <div class="st-bar"><span style="width:${Math.round(e.final[i] * 100)}%"></span></div>
       <div class="st-prob-sub">
         <span title="Svenska Spels odds">odds ${dec(e.odds?.[i])}</span>
@@ -127,15 +127,17 @@ function historyBox(history, krFmt) {
   };
   const rowsHtml = history.map((h) => {
     const head = `<strong>${esc(h.productName)} omgång ${h.drawNumber}</strong> · stänger ${esc((h.closeTime || "").slice(0, 16).replace("T", " "))}`;
-    const saved = `sparad ${esc(h.saved.at.slice(0, 10))}: ${h.saved.rows} rader · ${krFmt(h.saved.cost)} kr · minst ${h.saved.rules.signMin.join("-")} · utdelning ≥ ${krFmt(h.saved.rules.payoutMin)} kr`;
+    const snapText = (x) => `sparad ${esc(x.at.slice(0, 10))}: ${x.rows} rader · ${krFmt(x.cost)} kr · minst ${x.rules.signMin.join("-")} · utdelning ≥ ${krFmt(x.rules.payoutMin)} kr`;
+    const saved = snapText(h.saved);
+    const savedB = h.savedB ? snapText(h.savedB) : "";
     if (!h.evaluation) {
-      return `<li>${head}<br><small>${saved}${h.changed ? ` · senaste versionen: ${h.latest.rows} rader` : ""}</small><br><span class="st-wait">Väntar på facit – räknas ut automatiskt när omgången är avgjord.</span></li>`;
+      return `<li>${head}<br><small>A ${saved}</small>${h.pairA ? `<br><small><b>Paret A+B</b> – A ${snapText(h.pairA)} · B ${savedB} · totalt ${krFmt(h.pairA.cost + h.savedB.cost)} kr</small>` : savedB ? `<br><small>B ${savedB}</small>` : ""}<br><span class="st-wait">Väntar på facit – räknas ut automatiskt när omgången är avgjord.</span></li>`;
     }
-    return `<li>${head} · rätt rad <code>${esc(h.result.outcomes)}</code><br><small>${saved}</small><br>Sparat system: ${evalText(h.evaluation.saved)}${h.changed ? `<br>Senaste versionen (${h.latest.rows} rader): ${evalText(h.evaluation.latest)}` : ""}</li>`;
+    return `<li>${head} · rätt rad <code>${esc(h.result.outcomes)}</code><br><small>${saved}</small><br>System A (först sparad): ${evalText(h.evaluation.saved)}${h.evaluation.pairA ? `<br><b>Paret A+B</b> (${krFmt(h.pairA.cost + h.savedB.cost)} kr): A ${evalText(h.evaluation.pairA)}<br>&nbsp;&nbsp;B ${evalText(h.evaluation.savedB)} · <b>paret netto ${krFmt(h.evaluation.pairA.net + h.evaluation.savedB.net)} kr</b>` : h.evaluation.savedB ? `<br>System B: ${evalText(h.evaluation.savedB)}` : ""}</li>`;
   }).join("");
   const done = history.filter((h) => h.evaluation);
   const total = done.reduce((s, h) => s + h.evaluation.saved.net, 0);
-  return `<details class="st-method st-history" open><summary>Sparade system (${history.length})${done.length ? ` · totalt netto ${total >= 0 ? "+" : ""}${krFmt(total)} kr på ${done.length} omgångar` : ""}</summary><ul>${rowsHtml}</ul></details>`;
+  return `<details class="st-method st-history" open><summary>Sparade system (${history.length})${done.length ? ` · system A totalt netto ${total >= 0 ? "+" : ""}${krFmt(total)} kr på ${done.length} omgångar` : ""}</summary><ul>${rowsHtml}</ul></details>`;
 }
 
 function expertTexts(e) {
@@ -224,7 +226,8 @@ function matchCard(p, e) {
         <p><span class="st-kick">${esc(kickoff(e.kickoff))}</span> · ${esc(e.league || "")}</p>
       </div>
       <div class="st-verdict">
-        ${sys ? `<span class="st-tip ${sys.signs.length === 1 ? "spik" : sys.signs.length === 2 ? "halv" : "hel"}" title="Grundrad (reduceras sedan)">${esc(sys.type)} ${esc(sys.signs.split("").join(" + "))}</span>` : `<span class="st-tip">Tips ${esc(e.tip)}</span>`}
+        ${sys ? `<span class="st-tip ${sys.signs.length === 1 ? "spik" : sys.signs.length === 2 ? "halv" : "hel"}" title="System A – grundrad (reduceras sedan)">${e.systemPickB ? "A: " : ""}${esc(sys.type)} ${esc(sys.signs.split("").join(" + "))}</span>` : `<span class="st-tip">Tips ${esc(e.tip)}</span>`}
+        ${e.systemPickB ? `<span class="st-tip sysb" title="System B – går emot A">B: ${esc(e.systemPickB.type)} ${esc(e.systemPickB.signs.split("").join(" + "))}</span>` : ""}
         ${verdictChip(e)}
         ${resultChip(e)}
       </div>
@@ -261,6 +264,7 @@ function render() {
 
   const s = p.system;
   const r = p.reduced;
+  const rb = p.reducedB;
   const krFmt = (x) => Math.round(x).toLocaleString("sv-SE");
   const gcLink = r?.gamblingCabinUrl
     ? (p.open
@@ -282,8 +286,9 @@ function render() {
     ${p.note ? `<p class="st-note">${esc(p.note)}</p>` : ""}
     ${data.error ? `<p class="st-note bad">Kunde inte uppdatera: ${esc(data.error)}</p>` : ""}
     <div class="st-stats">
-      ${r ? `<div><span class="k">Reducerat system</span><strong>${r.rows} rader · ${krFmt(r.cost)} kr</strong><small>grundrad ${s.rows} → ${r.rows} · utdelning ≥ ${krFmt(r.rules.payoutMin)} kr · minst ${r.rules.signMin.join("-")} · chans 13 rätt ${oneIn(r.hitAll)}</small>${r.gamblingCabinUrl && p.open ? `<a class="st-gc small" href="${esc(r.gamblingCabinUrl)}" target="_blank" rel="noopener">Öppna i Gambling Cabin →</a>` : ""}</div>` : s ? `<div><span class="k">Systemförslag</span><strong>${s.rows} rader</strong><small>chans 13 rätt ${oneIn(s.hitAll)}</small></div>` : ""}
-      ${p.result ? `<div><span class="k">Facit – systemet fick</span><strong>${p.result.reducedCorrect ?? p.result.systemCorrect} av ${p.result.total} rätt</strong><small>rätt rad ${p.events.map((e) => e.result?.outcome || "–").join("")}</small></div>` : ""}
+      ${r ? `<div><span class="k">${rb ? "System A" : "Reducerat system"}</span><strong>${r.rows} rader · ${krFmt(r.cost)} kr</strong><small>grundrad ${s.rows} → ${r.rows} · utdelning ≥ ${krFmt(r.rules.payoutMin)} kr · minst ${r.rules.signMin.join("-")} · chans 13 rätt ${oneIn(r.hitAll)}</small>${r.gamblingCabinUrl && p.open ? `<a class="st-gc small" href="${esc(r.gamblingCabinUrl)}" target="_blank" rel="noopener">Öppna i Gambling Cabin →</a>` : ""}</div>` : s ? `<div><span class="k">Systemförslag</span><strong>${s.rows} rader</strong><small>chans 13 rätt ${oneIn(s.hitAll)}</small></div>` : ""}
+      ${rb ? `<div class="sysb"><span class="k">System B – går emot A</span><strong>${rb.rows} rader · ${krFmt(rb.cost)} kr</strong><small>grundrad ${rb.grundRows} → ${rb.rows} · utdelning ≥ ${krFmt(rb.rules.payoutMin)} kr · minst ${rb.rules.signMin.join("-")} · ${rb.sameSingles} gemensam spik · chans 13 rätt ${oneIn(rb.hitAll)}</small>${rb.gamblingCabinUrl && p.open ? `<a class="st-gc small" href="${esc(rb.gamblingCabinUrl)}" target="_blank" rel="noopener">Öppna B i Gambling Cabin →</a>` : ""}</div>` : ""}
+      ${p.result ? `<div><span class="k">Facit – systemet fick</span><strong>${rb && p.result.reducedCorrectB != null ? `A ${p.result.reducedCorrect} · B ${p.result.reducedCorrectB}` : p.result.reducedCorrect ?? p.result.systemCorrect} av ${p.result.total} rätt</strong><small>rätt rad ${p.events.map((e) => e.result?.outcome || "–").join("")}</small></div>` : ""}
       ${p.result?.experts?.length ? `<div><span class="k">Svenska Spels experter</span><strong>${p.result.experts.map((x) => `${x.correct}/${x.tipped}`).join(" · ")} rätt</strong><small>${p.result.experts.map((x) => esc(x.author)).join(" · ")}</small></div>` : ""}
       ${p.result?.distribution?.[0] ? `<div><span class="k">Utdelning 13 rätt</span><strong>${esc(p.result.distribution[0].amount)} kr</strong><small>${p.result.distribution[0].winners} vinnare</small></div>` : ""}
     </div>

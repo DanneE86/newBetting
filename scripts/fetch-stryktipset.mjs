@@ -459,6 +459,34 @@ function narrative(a) {
 }
 
 // Systemforslag: exakt optimering (DP over antal halv-/helgarderingar) av chansen till 13 ratt inom SYSTEM_MAX_ROWS
+// Motsystem (B): valfria tecken per match (alla 7 kombinationer), men hogst MAX_SAME_SINGLES spikar
+// med samma tecken som system A. Garderingar far overlappa. Samma DP-optimering av chansen till 13 ratt.
+const MAX_SAME_SINGLES = 1;
+function buildCounterSystem(events, maxRows, singlesA) {
+  const SUBSETS = [[0], [1], [2], [0, 1], [0, 2], [1, 2], [0, 1, 2]];
+  let dp = new Map([['0,0,0', { lp: 0, sets: [] }]]);
+  events.forEach((e, i) => {
+    const next = new Map();
+    for (const [key, st] of dp) {
+      const [h, f, same] = key.split(',').map(Number);
+      for (const sub of SUBSETS) {
+        const nh = h + (sub.length === 2), nf = f + (sub.length === 3);
+        const ns = same + (sub.length === 1 && singlesA[i] === sub[0]);
+        if (ns > MAX_SAME_SINGLES || 2 ** nh * 3 ** nf > maxRows) continue;
+        const lp = st.lp + Math.log(sub.reduce((sum, k) => sum + e.final[k], 0));
+        const k = `${nh},${nf},${ns}`;
+        if (!next.has(k) || next.get(k).lp < lp) next.set(k, { lp, sets: [...st.sets, sub] });
+      }
+    }
+    dp = next;
+  });
+  const best = [...dp.values()].reduce((a, b) => (b.lp > a.lp ? b : a));
+  return {
+    maxRows, rows: best.sets.reduce((s2, x) => s2 * x.length, 1), hitAll: Math.exp(best.lp), sets: best.sets,
+    picks: best.sets.map((x) => ({ signs: x.map((k) => SIGNS[k]).join(''), type: x.length === 1 ? 'Spik' : x.length === 2 ? 'Halvgardering' : 'Helgardering' })),
+  };
+}
+
 function buildSystem(events, maxRows) {
   const picks = events.map((e) => {
     const order = [0, 1, 2].sort((a, b) => e.final[b] - e.final[a]);
@@ -674,17 +702,32 @@ async function analyzeDraw(product, draw, ctx, result) {
     out.forEach((a, i) => { a.colors = reduced.colors[i].split(','); });
     reduced.gamblingCabinUrl = gamblingCabinUrl(product.id, draw.drawNumber, (draw.regCloseTime || '').slice(0, 10), out, system.sets, reduced);
   }
-  const bestRow = () => reduced && Math.max(...reduced.rowList.map((row) => out.filter((a, i) => a.result && row[i] === a.result.outcome).length));
+  // System B: gar emot A (hogst en gemensam spik), reduceras med samma regler
+  let systemB = null, reducedB = null;
+  if (system) {
+    const singlesA = system.sets.map((x) => (x.length === 1 ? x[0] : -1));
+    for (const size of GRUND_SIZES) {
+      const g = buildCounterSystem(out, size, singlesA);
+      const red = reduceSystem(out, g, { rowPrice: num(draw.rowPrice) || 1, turnover });
+      if (red && (!reducedB || red.hitAll > reducedB.hitAll)) { systemB = g; reducedB = red; }
+    }
+    if (systemB) out.forEach((a, i) => { a.systemPickB = systemB.picks[i]; });
+    if (reducedB) reducedB.gamblingCabinUrl = gamblingCabinUrl(product.id, draw.drawNumber, (draw.regCloseTime || '').slice(0, 10), out, systemB.sets, reducedB);
+  }
+  const bestRowOf = (red) => red && Math.max(...red.rowList.map((row) => out.filter((a, i) => a.result && row[i] === a.result.outcome).length));
+  const bestRow = () => bestRowOf(reduced);
   return {
     product: product.id, productName: product.name, drawNumber: draw.drawNumber, state: draw.drawState,
     open: draw.drawState === 'Open', closeDescription: draw.regCloseDescription, regCloseTime: draw.regCloseTime,
     turnover: draw.currentNetSale, comment: draw.drawComment, modelCutoff: cutoff, events: out,
     system: system && { maxRows: system.maxRows, rows: system.rows, hitAll: system.hitAll, hitSingle: system.hitSingle },
     reduced: reduced && { ...reduced, colors: undefined },
+    reducedB: reducedB && { ...reducedB, colors: undefined, sameSingles: out.filter((a) => a.systemPick?.signs.length === 1 && a.systemPickB?.signs === a.systemPick.signs).length },
     result: result ? {
       correct: out.filter((a) => a.result && a.result.outcome === a.tip).length,
       systemCorrect: out.filter((a) => a.result && a.systemPick?.signs.includes(a.result.outcome)).length,
       reducedCorrect: bestRow(),
+      reducedCorrectB: bestRowOf(reducedB),
       total: out.filter((a) => a.result).length,
       experts: [...new Set(out.flatMap((a) => a.experts.map((x) => x.author)))].map((author) => ({
         author,
@@ -734,11 +777,18 @@ function saveSnapshot(a) {
     rules: a.reduced.rules, gamblingCabinUrl: a.reduced.gamblingCabinUrl, rowList: a.reduced.rowList,
     picks: a.events.map((e) => e.systemPick?.signs || ''),
   };
+  const snapB = a.reducedB && {
+    at: snap.at, rows: a.reducedB.rows, cost: a.reducedB.cost, hitAll: a.reducedB.hitAll,
+    rules: a.reducedB.rules, gamblingCabinUrl: a.reducedB.gamblingCabinUrl, rowList: a.reducedB.rowList,
+    picks: a.events.map((e) => e.systemPickB?.signs || ''),
+  };
   const entry = prev || {
     product: a.product, productName: a.productName, drawNumber: a.drawNumber, closeTime: a.regCloseTime,
     closeDescription: a.closeDescription, matches: a.events.map((e) => `${e.home} - ${e.away}`), saved: snap,
   };
   entry.latest = snap;
+  // Paret A+B lases forsta gangen B sparas (A som den sag ut da)
+  if (snapB) { if (!entry.savedB) { entry.savedB = snapB; entry.pairA = snap; } entry.latestB = snapB; }
   fs.writeFileSync(file, JSON.stringify(entry, null, 2), 'utf8');
 }
 
@@ -773,6 +823,8 @@ async function updateHistory() {
         entry.evaluation = {
           saved: evaluateSnapshot(entry.saved, outcomes, res.distribution),
           latest: evaluateSnapshot(entry.latest, outcomes, res.distribution),
+          ...(entry.pairA ? { pairA: evaluateSnapshot(entry.pairA, outcomes, res.distribution) } : {}),
+          ...(entry.savedB ? { savedB: evaluateSnapshot(entry.savedB, outcomes, res.distribution), latestB: evaluateSnapshot(entry.latestB, outcomes, res.distribution) } : {}),
         };
         fs.writeFileSync(file, JSON.stringify(entry, null, 2), 'utf8');
         log(`  facit ${entry.productName} ${entry.drawNumber}: bästa rad ${entry.evaluation.saved.best} rätt, vinst ${entry.evaluation.saved.winnings} kr (netto ${entry.evaluation.saved.net})`);
@@ -780,7 +832,12 @@ async function updateHistory() {
     }
     const { rowList: _a, ...savedLite } = entry.saved;
     const { rowList: _b, ...latestLite } = entry.latest;
-    out.push({ ...entry, saved: savedLite, latest: latestLite, changed: entry.saved.rowList.join() !== entry.latest.rowList.join() });
+    const lite = (x) => { if (!x) return undefined; const { rowList: _r, ...rest } = x; return rest; };
+    out.push({
+      ...entry, saved: savedLite, latest: latestLite, savedB: lite(entry.savedB), latestB: lite(entry.latestB), pairA: lite(entry.pairA),
+      changed: entry.saved.rowList.join() !== entry.latest.rowList.join(),
+      changedB: Boolean(entry.savedB && entry.savedB.rowList.join() !== entry.latestB.rowList.join()),
+    });
   }
   return out.sort((a, b) => String(b.closeTime).localeCompare(String(a.closeTime)));
 }
@@ -819,6 +876,7 @@ async function main() {
         log(`  OBS lagnamn ej matchade: ${e.home} (${e.matched?.home ?? '?'}) - ${e.away} (${e.matched?.away ?? '?'})`);
       }
       log(`  expertanalyser: ${a.events.reduce((s, e) => s + e.experts.length, 0)}, tio tidningar: ${a.events.filter((e) => e.tioTidningar).length} matcher`);
+      if (a.reducedB) log(`  system B: grundrad ${a.reducedB.grundRows} -> ${a.reducedB.rows} rader (${a.reducedB.cost} kr), minst ${a.reducedB.rules.signMin.join('-')}, gemensamma spikar ${a.reducedB.sameSingles}, chans 13 rätt 1 på ${Math.round(1 / a.reducedB.hitAll)}`);
       if (a.reduced) log(`  reducerat: grundrad ${a.reduced.grundRows} -> ${a.reduced.rows} rader (${a.reduced.cost} kr), utdelning ≥ ${a.reduced.rules.payoutMin} kr (${a.reduced.afterPayout} rader kvar), minst ${a.reduced.rules.signMin.join('-')} (1-X-2), chans 13 rätt 1 på ${Math.round(1 / a.reduced.hitAll)}`);
       if (a.result) log(`  facit: ${a.result.correct}/${a.result.total} rätt på enkelrad, grundrad ${a.result.systemCorrect}/${a.result.total}, reducerat bästa rad ${a.result.reducedCorrect}/${a.result.total}`);
       for (const x of a.result?.experts || []) log(`  expert ${x.author}: ${x.correct}/${x.tipped} rätt`);
