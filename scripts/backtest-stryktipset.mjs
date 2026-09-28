@@ -4,6 +4,8 @@
 // Utdata: data/stryktips-backtest.json (eller --out)
 //   node scripts/backtest-stryktipset.mjs                         (omgangar fran 2026-08-01)
 //   node scripts/backtest-stryktipset.mjs --to 2026-06-30 --count 12 --out data/stryktips-backtest-2526.json
+//   STRYK_SEASONS=2627,2526,2425 node scripts/backtest-stryktipset.mjs --from 2025-08-01 --to 2026-06-30 --product europatipset --out ...
+//   (STRYK_MODEL_W styr modellvikten, for jamforelse mot aldre installningar)
 //     (de 12 sista omgangarna med PL-match fore 2026-06-30, dvs slutet av sasongen 2025/26)
 import fs from 'node:fs';
 import path from 'node:path';
@@ -16,9 +18,11 @@ const OUT = path.resolve(root, arg('out', 'data/stryktips-backtest.json'));
 const FROM = arg('from', process.argv[2] && !process.argv[2].startsWith('--') ? process.argv[2] : '2026-08-01');
 const TO = arg('to', '9999');
 const COUNT = Number(arg('count', 999));
-const TO_FROM = arg('to') ? '0000' : FROM; // med --to galler bara antal omgangar bakat
-const START_DRAW = 4972;
-const PRODUCT = { id: 'stryktipset', name: 'Stryktipset' };
+const TO_FROM = arg('to') && !arg('from') ? '0000' : FROM; // bara --to: antal omgangar bakat; --from + --to: intervall
+// --product stryktipset | europatipset (samma regler for bada)
+const PRODUCTS = { stryktipset: { id: 'stryktipset', name: 'Stryktipset', start: 4972 }, europatipset: { id: 'europatipset', name: 'Europatipset', start: 2611 } };
+const PRODUCT = PRODUCTS[arg('product', 'stryktipset')];
+const START_DRAW = Number(arg('start', PRODUCT.start));
 const SIGNS = ['1', 'X', '2'];
 const log = (s) => process.stdout.write(`${s}\n`);
 const r3 = (x) => (x == null ? null : Math.round(x * 1000) / 1000);
@@ -94,7 +98,8 @@ const rowQuality = (sys) => {
     xCovered: all.filter((m) => m.outcome === 'X' && m[`in${sys}`]).length, xTotal: all.filter((m) => m.outcome === 'X').length };
 };
 const summary = {
-  from: draws.at(-1)?.date, to: draws[0]?.date, draws: draws.length, matches: all.length,
+  product: PRODUCT.id, from: draws.at(-1)?.date, to: draws[0]?.date, draws: draws.length, matches: all.length,
+  modelWeight: Number(process.env.STRYK_MODEL_W ?? 0.1), seasons: process.env.STRYK_SEASONS || '2627,2526',
   A: { cost: draws.reduce((s, d) => s + (d.A?.cost || 0), 0), winnings: draws.reduce((s, d) => s + (d.A?.winnings || 0), 0), best: draws.map((d) => d.A?.best), spik: spik('A') },
   B: { cost: draws.reduce((s, d) => s + (d.B?.cost || 0), 0), winnings: draws.reduce((s, d) => s + (d.B?.winnings || 0), 0), best: draws.map((d) => d.B?.best), spik: spik('B') },
   drawRate: { actual: r3(all.filter((m) => m.outcome === 'X').length / all.length), predicted: r3(mean(all.map((m) => m.final[1]))), folk: r3(mean(all.map((m) => m.folk?.[1]))) },

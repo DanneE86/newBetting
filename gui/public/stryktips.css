@@ -347,3 +347,18 @@ body.view-stryktips main { display: none !important; }
 .st-tip.sysb { background: transparent; color: #7fb6ff; box-shadow: inset 0 0 0 2px #7fb6ff; }
 .st-b { padding: 0.05rem 0.35rem; border-radius: 999px; background: #7fb6ff; color: #0a1628; font-size: 0.66rem; font-weight: 800; }
 .st-stats > div.sysb { border-color: rgba(127, 182, 255, 0.45); }
+
+/* Backtest */
+.st-backtest p { margin: 0.5rem 0; line-height: 1.5; font-size: 0.88rem; }
+.st-bt { width: 100%; border-collapse: collapse; margin: 0.6rem 0; font-size: 0.85rem; font-variant-numeric: tabular-nums; }
+.st-bt th, .st-bt td { padding: 0.35rem 0.5rem; border-bottom: 1px solid var(--line); text-align: right; }
+.st-bt th:first-child { text-align: left; font-weight: 600; }
+.st-bt thead th { color: var(--muted); font-weight: 600; }
+.st-bt td.up { color: #4cc873; font-weight: 700; }
+.st-bt td.down { color: #ef6b5b; }
+.st-backtest .pos { color: #4cc873; }
+.st-backtest .neg { color: #ef6b5b; }
+.st-bt-draws { margin-top: 0.4rem; }
+.st-bt-draws summary { cursor: pointer; font-weight: 600; }
+.st-note-small { color: var(--muted); font-size: 0.8rem !important; }
+@media (max-width: 640px) { .st-bt { font-size: 0.75rem; } .st-bt th, .st-bt td { padding: 0.3rem; } }

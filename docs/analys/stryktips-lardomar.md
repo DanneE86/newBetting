@@ -2,12 +2,17 @@
 
 Levande fil. Här samlas allt vi lärt oss om de automatiska Stryktipset-systemen (A och B), så att kunskapen finns kvar mellan sessioner. Nya backtest och omgångar ska läggas till här: lägg till rader, skriv inte över.
 
-- Rådata: `data/stryktips-backtest.json` (hösten 2026) och `data/stryktips-backtest-2526.json` (våren 2026). Varje match har sannolikheter, utfall, systemens val och logloss.
+- Rådata: `data/stryktips-backtest-2526-hel.json` (hela säsongen 2025/26, modellvikt 10 %), `data/stryktips-backtest-2526-hel-gammal.json` (samma säsong, 35 %), `data/stryktips-backtest.json` (hösten 2026) och `data/stryktips-backtest-2526.json` (12 omgångar våren 2026). Varje match har sannolikheter, utfall, systemens val och logloss.
+- På webben: `newbetting.pages.dev/#stryktips/backtest` (före och efter, samt resultat per omgång).
+- **Europatipset byggs med exakt samma regler och kod som Stryktipset.** Backtesten görs bara på Stryktipset (användarens val).
 - Sparade riktiga system med facit: `data/stryktips-history/`.
 - Köra om:
   ```
   node scripts/backtest-stryktipset.mjs                                       # från 2026-08-01
   node scripts/backtest-stryktipset.mjs --to 2026-06-30 --count 12 --out data/stryktips-backtest-2526.json
+  # hela säsongen 2025/26 (2024/25 behövs som modellhistorik), ny resp. gammal modellvikt:
+  STRYK_SEASONS=2627,2526,2425 STRYK_MODEL_W=0.1 node scripts/backtest-stryktipset.mjs --from 2025-08-01 --to 2026-06-30 --out data/stryktips-backtest-2526-hel.json
+  STRYK_SEASONS=2627,2526,2425 STRYK_MODEL_W=0.35 STRYK_MODEL_W_THIN=0.2 node scripts/backtest-stryktipset.mjs --from 2025-08-01 --to 2026-06-30 --out data/stryktips-backtest-2526-hel-gammal.json
   ```
 
 ## Förutsättningar (viktigt vid tolkning)
@@ -25,6 +30,24 @@ Levande fil. Här samlas allt vi lärt oss om de automatiska Stryktipset-systeme
 | 7 feb – 24 maj 2026 (säsongen 2025/26) | 12 | 156 | de 12 sista med minst 1 PL-match |
 | 22 aug – 19 sep 2026 (säsongen 2026/27) | 5 | 65 | alla med PL-match sedan 1 aug |
 | **Totalt** | **17** | **221** | |
+
+## Hela säsongen 2025/26 (33 omgångar, 429 matcher, 16 aug 2025 – 24 maj 2026)
+
+Alla Stryktipset-omgångar med minst en PL-match. Samma regler som i dag: A 5-3-2, B 4-3-3, 350–400 kr, utdelning ≥ 30 000 kr.
+
+| | Modell 35 % (gammal) | Modell 10 % (ny) |
+|---|---|---|
+| A netto | −9 217 kr | **+3 109 kr** |
+| A vinst / insats | 3 419 / 12 636 kr | **15 686** / 12 577 kr |
+| A rader med 10+ / 11+ / 12+ rätt | 77 / 10 / 1 | **157 / 21 / 2** |
+| A chans 13 rätt per omgång | 1/535 | **1/485** |
+| B netto | −8 227 kr | −8 210 kr |
+| B rader med 10+ / 11+ / 12+ rätt | **94 / 21 / 3** | 65 / 5 / 0 |
+| B chans 13 rätt per omgång | 1/923 | **1/895** |
+| Logloss | 1,035 | **1,032** (marknad 1,032, modell 1,048, folk 1,058) |
+| Kryss: utfall / vår förväntan / folket | 24,7 % / 26,4 % / 23,8 % | 24,7 % / 26,0 % / 23,8 % |
+
+**Slutsats:** modellvikten 10 % bekräftas på hela säsongen, eftersom A blir klart bättre på alla mått. B:s toppträffar blev färre (11+ rätt: 21 → 5), men nettot är lika och B:s modellchans något bättre. B:s toppträffar kommer från få omgångar och är starkt korrelerade inom en omgång, så det är troligen brus. Följ upp.
 
 ## Robusta lärdomar (stöds av hela urvalet)
 
@@ -52,7 +75,7 @@ Levande fil. Här samlas allt vi lärt oss om de automatiska Stryktipset-systeme
 
 ## Öppna frågor att följa
 
-- **System B underpresterar.** Den är konstruerad för att gå emot A, och B:s spikar mot folket (folk/P < 1,15) höll bara 7 av 26 mot väntat 12,8. Alla varianter vi testat har ändå varit sämre. Följ B i de sparade systemen innan något ändras.
+- **System B underpresterar** (hela 2025/26: −8 210 kr mot A:s +3 109 kr med samma insats). Den är konstruerad för att gå emot A, och B:s spikar mot folket (folk/P < 1,15) höll bara 7 av 26 mot väntat 12,8. Alla varianter vi testat har ändå varit sämre. Följ B i de sparade systemen innan något ändras.
 - **X-kalibrering:** om kryss ligger > 2 standardfel över förväntan efter ytterligare ~10 omgångar, höj X i jämna matcher (|P1−P2| < 0,15).
 - **Slutodds:** spara oddsen vid spelstopp för framtida backtest. Då blir marknadsjämförelsen rättvisare än med startodds.
 
@@ -88,5 +111,7 @@ Levande fil. Här samlas allt vi lärt oss om de automatiska Stryktipset-systeme
 Nettot styrs av enstaka träffar: A:s plus kommer från en enda rad med 12 rätt. Med 65 % återbetalning är det normala förväntade utfallet negativt. Nettot säger därför lite om kvaliteten, och rader med 11+ rätt är ett bättre mått.
 
 ## Ändringslogg
+
+- **2026-09-28 (kväll):** Backtest av hela säsongen 2025/26 (33 omgångar) med båda modellvikterna, vilket bekräftar 10 %. Skripten har nu `STRYK_SEASONS` och `STRYK_MODEL_W` för backtest. Backtest-vy på webben. Europatipset använder samma regler (bekräftat av användaren).
 
 - **2026-09-28:** Första backtestet (17 omgångar). Modellvikten sänktes från 35 % till 10 % (`MODEL_W`, `MODEL_W_THIN` i `scripts/fetch-stryktipset.mjs`). Agentens spikregler och B-regler testades och förkastades (se ovan).
