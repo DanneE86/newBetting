@@ -16,8 +16,8 @@ Mål: bygga en **genomtänkt kupong** — inte 13 isolerade favorittips.
 ## Fasta regler (användaren – ändra aldrig utan att fråga)
 
 - Budget **350–400 kr per system** (1 kr/rad). Ersätter alla äldre standardbelopp.
-- **Två system per omgång:** **A** (troligaste tecknen) och **B** (går emot A, **högst 1 gemensam spik**; garderingar får överlappa).
-- Reducering (Gambling Cabin-logik): utdelning för 13 rätt **≥ 30 000 kr** (beräknad från folkets streck), teckenminimum **A 5-3-2**, **B 4-3-3** (1-X-2) → alltid minst 3 kryss. Max alltid fullt.
+- **Två kuponger per omgång (från 2026-09-28):** ett system på 700–800 rader delas efter utdelning i **A** (högst utdelning) och **B** (resten, utdelningsintervall), vardera 350–400 kr med egen Gambling Cabin-länk. Det gamla motsystemet B (högst 1 gemensam spik) finns kvar med `STRYK_B_MODE=counter`.
+- Reducering (Gambling Cabin-logik): utdelning för 13 rätt **≥ 30 000 kr** (Europatipset **≥ 20 000 kr**), beräknad från folkets streck, teckenminimum **4-2-2** (1-X-2, användarens beslut 2026-09-28 efter backtest; minst 3 kryss gäller inte längre). Max alltid fullt.
 - Grundrad + utdelningsgräns väljs för högst chans till 13 rätt inom budget.
 - Varje system får en **förifylld länk till Gambling Cabin** (reducera.gamblingcabin.se) – ingen filuppladdning.
 - Öppna kuponger sparas i `data/stryktips-history/` och **följs upp mot facit** automatiskt.
@@ -29,7 +29,7 @@ Mål: bygga en **genomtänkt kupong** — inte 13 isolerade favorittips.
 Innan du ändrar regler eller påstår något om vad som "fungerar": läs [docs/analys/stryktips-lardomar.md](../../../docs/analys/stryktips-lardomar.md). Kortversion:
 
 - **Oddsen slår lagmodellen** → modellvikt 10 %. Marknaden = skarpa odds (Pinnacle/Betfair, annars bolagssnitt), inte Svenska Spels egna. Jackpot räknas in i utdelningen.
-- **Teckenreglerna 5-3-2/4-3-3 släpper bara igenom rätt rad i 34 %/61 % av omgångarna** – nämn det när användaren frågar varför systemet inte tar 13 rätt; ändra inte utan klartecken.
+- **Teckenregeln 4-2-2 släpper igenom rätt rad i ca 71–82 % av omgångarna** (5-3-2 gjorde det i 34 %). Nämn det när användaren frågar varför systemet inte tar 13 rätt.
 - **Bara 12–13 rätt betalar**; 10 rätt ger ofta 0 kr. Mät system på chans till 13 rätt och rader med 11+ rätt, inte netto eller snittrått.
 - **Ändra aldrig regler på < 12 omgångar.** Spikregler (P ≥ 55 %, folk/P ≤ 1,3) såg bra ut på 5 omgångar men var brus på 17 och gjorde systemen sämre.
 - Folket underspelar X (≈ 23 % streck mot ≈ 26–29 % utfall) → X ger ofta streckvärde.
@@ -118,11 +118,11 @@ Tumregler:
 Räkna rader: varje Halv ×2, varje Hel ×3 (övriga ×1).  
 Kostnad ≈ antal rader × 1 kr (bekräfta aktuellt radpris om användaren nämner annat).
 
-Ge alltid **system A och system B** enligt Fasta regler (vardera 350–400 kr) med respektive Gambling Cabin-länk. Hämta dem från `data/stryktipset.json` (`reduced`, `reducedB`, `gamblingCabinUrl`) om de finns.
+Ge alltid **kupong A och kupong B** enligt Fasta regler (vardera 350–400 kr, delat system) med respektive Gambling Cabin-länk. Hämta dem från `data/stryktipset.json` (`reduced`, `reducedB`, `gamblingCabinUrl`) om de finns.
 
 För varje alternativ: antal rader, ungefärlig kostnad, vilka matcher som är halv/hel, och kort motivering.
 
-Reducering: alltid enligt Fasta regler (utdelning ≥ 30 000 kr, A 5-3-2 / B 4-3-3). Se [reference.md](reference.md).
+Reducering: alltid enligt Fasta regler (utdelning ≥ 30 000 kr, Europatipset ≥ 20 000 kr, minst 4-2-2, delat system A/B). Se [reference.md](reference.md).
 
 ## Steg 6 — Slutkupong (användarvy)
 
@@ -132,8 +132,8 @@ Svara **på svenska** med denna struktur:
 # Stryktipset omgång <datum eller nr om känt>
 
 ## Dom
-- System A: X rader ≈ Y kr · minst 5-3-2 · utdelning ≥ Z kr · [Öppna i Gambling Cabin](länk)
-- System B: X rader ≈ Y kr · minst 4-3-3 · 1 gemensam spik · [Öppna i Gambling Cabin](länk)
+- Kupong A: X rader ≈ Y kr · minst 4-2-2 · utdelning ≥ Z kr · [Öppna i Gambling Cabin](länk)
+- Kupong B: X rader ≈ Y kr · minst 4-2-2 · utdelning Z2–Z kr · [Öppna i Gambling Cabin](länk)
 - Antaganden: …
 
 ## Kupong (grundrad A / B)

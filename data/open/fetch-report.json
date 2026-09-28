@@ -1,5 +1,5 @@
 {
-    "updatedAt":  "2026-09-27T19:41:36.1269483+02:00",
+    "updatedAt":  "2026-09-27T20:39:27.1785538+02:00",
     "sources":  [
                     {
                         "name":  "csv:PL_2627.csv",
@@ -367,8 +367,8 @@
                     }
                 ],
     "upcomingCount":  2202,
-    "extraLeagues":  true,
-    "bolldata":  true,
+    "extraLeagues":  false,
+    "bolldata":  false,
     "understatNeedsPlaywright":  false,
     "understatAjax":  true,
     "fpl":  true,
@@ -385,6 +385,6 @@
                               "ED":  441,
                               "CH":  587
                           },
-    "weather":  true,
-    "playerImpact":  true
+    "weather":  false,
+    "playerImpact":  false
 }

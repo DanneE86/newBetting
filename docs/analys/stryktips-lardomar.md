@@ -20,7 +20,7 @@ Levande fil. Här samlas allt vi lärt oss om de automatiska Stryktipset-systeme
 - **Marknaden i backtestet är Svenska Spels startodds.** API:t saknar slutodds för avgjorda omgångar. Live används oddsen vid hämtning, som ligger närmare spelstopp och är skarpare.
 - **Folkets streck är slutliga värden** (vid spelstopp).
 - **Lagmodellen har cutoff = omgångens första match**, så den använder ingen framtidsdata. Landslags-Elo är däremot dagens, men det påverkar bara landskamper.
-- **Användarens fasta regler gäller i alla körningar:** 350–400 kr per system, utdelning för 13 rätt ≥ 30 000 kr (Europatipset ≥ 20 000 kr från 2026-09-28), A minst 5-3-2, B minst 4-3-3, max alltid fullt, och B har högst 1 gemensam spik med A.
+- **Användarens fasta regler** (äldre körningar i filen använde A 5-3-2 och motsystem B 4-3-3 med högst 1 gemensam spik). **Från 2026-09-28:** 350–400 kr per kupong, två kuponger (A och B) från ett delat system på 700–800 rader, minst 4-2-2, max alltid fullt, utdelning för 13 rätt ≥ 30 000 kr (Europatipset ≥ 20 000 kr).
 - **Utdelning räknas med Svenska Spels verkliga vinstklasser.**
 
 ## Datamängd
@@ -145,6 +145,73 @@ Bara A:s teckenminimum ändrat (B 4-3-3). *Chans* = modellens chans till 13 rät
 - **Värde per omgång (infört):** förväntad återbetalning från 13 rätt i förhållande till insatsen, för system A. I backtestet var p25 0,26, median 0,33 och p75 0,40 (obs: backtestets jackpot är något för hög, se förbehåll ovan). Under 26 % visas "Omgången saknar värde", och över 40 % "högt värde". Raderna skapas alltid (användarens val). Att bara spela värdeomgångar kan inte backtestas meningsfullt än, eftersom det inte fanns någon 13-rättare.
 - **Automatisk sen körning:** lördagar 13:05 UTC (arbetsflödet `stryktips-late.yml`).
 
+## Expertgranskning Europatipset (2026-09-28, 55 omgångar, 715 matcher)
+
+Två granskningar: en av dataluckor och en av strategi och folkets streck. Förslag som bryter mot fasta regler är **inte** införda, eftersom de kräver användarens beslut.
+
+**Folkets streck på Europatipset**
+- Snedvridningen är likformig: favoriter streckas ×1,13 på alla nivåer, kryss ×0,93 (×0,81 när favoriten har minst 60 %) och skrällar ×0,83.
+- Ingen skillnad mellan hemma- och bortafavoriter (1,13 / 1,12) eller mellan ligor (1,11–1,16). Streckvärdet ligger alltså redan i utdelningsgränsen, och det finns inga liga- eller bortamönster att jaga.
+- Utfallen följer våra procent: ettor z +0,8, kryss z +0,3, tvåor z −1,1.
+- A:s spikar höll 176 mot väntat 165 (z +1,3), B:s 124 mot 119.
+- Brus: skrällar på Europatipset z −1,65 (Stryktipset +1,8), nordiska matcher fler kryss z +2,1, favoriter på 60–70 % z +1,9.
+
+**Matcher utan skarpa odds:** Allsvenskan, cuper och Europa/Conference League, där marknaden är Svenska Spels startodds.
+- Där slår folkets slutstreck våra procent. 25 % folk inblandat förbättrar logloss med 0,0081 ± 0,0030 (2,7 SE).
+- I topp 5 är vinsten 0,0032 ± 0,0021 (brus), och på Stryktipset blir det sämre.
+- Folket vet alltså inte mer än oddsen. Det är våra odds som är gamla. Åtgärden är skarpa odds eller slutodds för de matcherna, inte att väga in folket.
+
+**Teckenregler:** rätt rad klarar 5-3-2 i 33 % av omgångarna, 4-3-3 i 35 %, 3-3-2 i 58 % och 4-2-2 i 71 %. Beräkningen över alla rader ger 4-2-2 cirka 14 % högre chans till 13 rätt än 5-3-2. Kravet på minst 3 kryss kostar mest. Inte ändrat, eftersom det är användarens regel.
+
+**System B mot fler A-rader:** B:s förväntade antal 13 rätt var 0,081 på 55 omgångar. A:s rad 401–800 skulle ge cirka 0,13. Inte ändrat.
+
+**Utdelningsgräns som EV-fråga:** räknat över alla rader ger 400 rader följande återbäring per krona från 13 rätt: 0,28 vid 20 000 kr, 0,37 vid 50 000 kr och 0,45 vid 100 000 kr. Chansen till 13 rätt är samtidigt 1/215, 1/396 och 1/646. Beräkningen antar oberoende streck, så den måste backtestas med verklig reducering innan något ändras.
+
+**Jackpot:** utdelningen för 13 rätt växer i proportion till potten. 1 milj i jackpot på 6,8 milj i omsättning ger +57 %, medan felstreckningen bara skiljer ±12 % mellan omgångar. Omgångsval efter jackpot är värt att testa.
+
+**Dataluckor**
+- Åtgärdat 2026-09-28:
+  - Elo-namnjämförelse ("Bosnien & Hercegovina" föll tillbaka på folket).
+  - FotMob-kontext för alla matcher i båda spelen: elva, frånvaro med marknadsvärde, vila och rotation, domare, arena, väder, form och inbördes möten.
+- Kvar:
+  - Skarpa odds för landskamper och Europacup (The Odds API har nycklar för Nations League, VM-kval och Europacup, men krediterna är begränsade).
+  - Neutral plan i Elo (`eloratings.net/fixtures.tsv`).
+  - Klubb-Elo för Europacup och Allsvenskan (clubelo.com/{land}).
+  - Understat-xG för 2025/26 i LL, SA, BL och L1.
+- Expertanalyserna fungerar, men publiceras bara cirka 1 dygn före spelstopp. Kör alltså sent.
+
+**Viktig begränsning:** spelstopp är vid första matchen, så bekräftade elvor finns i praktiken bara för de tidigaste matcherna. FotMob visar annars senaste elvan plus kända skador och avstängningar, och det finns flera dagar före.
+
+## Steg 4: delat system 4-2-2, fler datakällor (2026-09-28, användaren: "gör allt")
+
+Användaren godkände att förslagen från expertgranskningen genomförs, även där de bryter mot tidigare fasta regler. Allt gäller **båda spelen** (användarens regel: det som gynnar båda används av båda).
+
+**Samlad chans till 13 rätt för kupong A+B.** Måttet är summan av chansen för A och B. Summan är rättvis eftersom A och B aldrig har gemensamma rader.
+
+| Variant | Europatipset (55 omg) | Stryktipset (33 omg) |
+|---|---|---|
+| A 5-3-2 + motsystem B 4-3-3 (före) | 0,227 → 1 på 242 | 0,116 → 1 på 284 |
+| A 4-2-2 + motsystem B | 0,244 | 0,122 |
+| Delat system 5-3-2 | 0,268 | 0,138 |
+| **Delat system 4-2-2 (infört)** | **0,305 → 1 på 180 (+34 %)** | **0,149 → 1 på 221 (+28 %)** |
+| Utdelningsgräns 100 000 kr (Europatipset, motsystem) | 0,097 (1 på 979 för A) | – |
+
+**Delat system:** grundrad och utdelningsgräns väljs för 700–800 rader med högst chans till 13 rätt. Raderna delas sedan efter Gambling Cabin-utdelning i kupong A (högst utdelning, ≥ t_mid) och kupong B (resten). Båda kostar 350–400 kr och har samma grundrad, och B:s länk använder utdelningsintervall (`utd=1,min,max`). Det gamla motsystemet finns kvar med `STRYK_B_MODE=counter`.
+
+**Ärligt om nettot:** i backtestet gick det nya sämre i kronor. På Europatipset gav A+B −36 890 kr mot −952 kr före, eftersom den enda 13-rätten (omg 2545) inte längre fångades. På Stryktipset gav A+B −17 631 kr mot −18 367 kr. Nettot styrs av en enda träff, medan chansen är det stabila måttet (se tidigare lärdomar). **Följ upp** med riktiga omgångar.
+
+- **100 000 kr som gräns förkastades:** chansen föll 2,6 gånger och antalet rader med 11+ rätt blev 4 mot 34. Europatipset behåller 20 000 kr och Stryktipset 30 000 kr.
+- **Val av omgång efter jackpot:** jackpotten ingår redan i värdet per omgång ("högt värde"). Raderna skapas alltid, enligt användarens tidigare val.
+
+**Nya datakällor**, alla i öppna omgångar:
+- FotMob-kontext: elva, frånvaro, vila, rotation, domare och väder (`scripts/lib/match-context.mjs`).
+- The Odds API för Nations League, VM-kval, Europacup, nordiska ligor och cuper. Bara 1X2, 1 kredit per turnering, 3 h cache, och inga anrop under 40 krediter (`scripts/lib/extra-odds.mjs`, `data/open/stryk_extra_odds.json`). Första körningen gav Pinnacle/Betfair för 7 av 13 matcher i Europatipset 2612. Resten saknar odds tills cirka 3 dagar före.
+- Neutral plan i landslags-Elo från `eloratings.net/fixtures.tsv`. Exempel: Israel–Kosovo spelas i Ungern.
+- Klubb-Elo från clubelo.com för klubbmatcher utan lagmodell, t.ex. Europacup och Allsvenskan (`scripts/lib/club-elo.mjs`, 24 h cache, 45 s tidsgräns).
+- xG från Understat för 2024/25 och 2025/26 i topp 5 (`scripts/lib/understat-xg.mjs`). Alla 380 matcher per liga och säsong matchades. Lagmodellens logloss blev bättre: Europatipset 1,018 → 1,013, Stryktipset 1,048 → 1,045. Slutprocenten är oförändrad eftersom modellen väger 10 %.
+- **Utan odds** (innan de släpps): 50 % modell + 50 % folk i stället för bara modellen. Elo ensamt är för säkert och gav till exempel Frankrike–Italien 80 %.
+- Rådata: `data/stryktips-backtest-2526-steg3.json` (Stryktipset, i backtest-vyn som steg 3) och `data/europatips-backtest-2526.json` (Europatipset, nuvarande version).
+
 ## Robusta lärdomar (stöds av hela urvalet)
 
 1. **Oddsen slår vår lagmodell.** Logloss över 216 matcher, där lägre är bättre:
@@ -208,6 +275,10 @@ Bara A:s teckenminimum ändrat (B 4-3-3). *Chans* = modellens chans till 13 rät
 Nettot styrs av enstaka träffar: A:s plus kommer från en enda rad med 12 rätt. Med 65 % återbetalning är det normala förväntade utfallet negativt. Nettot säger därför lite om kvaliteten, och rader med 11+ rätt är ett bättre mått.
 
 ## Ändringslogg
+
+- **2026-09-28 (natt, sist):** Steg 4 (se ovan). Delat system 700–800 rader med minst 4-2-2 i kupong A och B för båda spelen. Odds från The Odds API för landskamper, Europacup och nordiska ligor. Neutral plan i Elo. Klubb-Elo. xG från Understat. 50/50 modell och folk när odds saknas. Europatipsets backtest innehåller nu steg 4.
+
+- **2026-09-28 (natt, sent):** FotMob-kontext (`scripts/lib/match-context.mjs`) för alla matcher i öppna omgångar, både Stryktipset och Europatipset: elva, frånvaro, vila/rotation, domare, väder. Visas i analysen och på webben och sparas i snapshots (`context`) för framtida backtest. Kontexten flyttar inte procenten. Elo-namnjämförelsen är rättad. Expertgranskningen av Europatipset är införd ovan.
 
 - **2026-09-28 (natt):** Steg 2: skarpa odds (Pinnacle/Betfair/bolagssnitt, slutodds i backtest) och jackpot i utdelningen. Snapshots sparar odds och streck. Upptäckt att 5-3-2 bara släpper igenom rätt rad i 34 % av omgångarna. Backtest-vyn visar tre steg.
 

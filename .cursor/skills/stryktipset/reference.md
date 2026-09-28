@@ -44,8 +44,8 @@ Gardera mer sällan vid:
 ## Reducering (fasta regler, Gambling Cabin)
 
 - **Utdelning för 13 rätt** = 26 % × omsättning / (omsättning × radens streckprodukt + 1), med fast omsättning 25 milj kr (Stryktipset) och 10 milj kr (Europatipset). Samma formel som reducera.gamblingcabin.se, så radantalet blir identiskt där.
-- Gräns **≥ 30 000 kr**. Den höjs till ett jämnt belopp i ett glapp på ≥ 2 % mellan rader, så att små streckskillnader inte ändrar antalet rader.
-- **Tecken:** A minst 5-3-2, B minst 4-3-3, max fullt.
+- Gräns **≥ 30 000 kr** för Stryktipset och **≥ 20 000 kr** för Europatipset (backtest 2026-09-28, se lärdomsfilen). Den höjs till ett jämnt belopp i ett glapp på ≥ 2 % mellan rader, så att små streckskillnader inte ändrar antalet rader.
+- **Tecken:** minst 4-2-2, max fullt. Systemet (700–800 rader) delas i kupong A (utdelning ≥ t_mid) och kupong B (utdelning mellan gränsen och t_mid); `utd=1,min,max` i Gambling Cabin-länken.
 - **Länkformat:** `?spel=&omg=&datum=&v1=&vX=&v2=` (0 = spelas ej, 2 gul, 3 röd, 4 grön), `antT=1,min1,13,minX,13,min2,13`, `utd=1,<min>,100000000`.
 - **Vinstklasser i praktiken:** 10 rätt ger ofta 0 kr och 11 rätt ofta under 100 kr. Det är 13 (och 12) som räknas.
 

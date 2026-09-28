@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T18:00:34.210Z",
+  "updatedAt": "2026-09-27T18:53:21.484Z",
   "source": "open-meteo forecast",
   "horizon": [
     "2026-09-27",
@@ -42,9 +42,9 @@
       "kickoffUtc": "2026-09-27T14:00:00.000Z",
       "kickoffAssumed": true,
       "weather": {
-        "tempC": 26.6,
-        "precipMm": 0.8,
-        "windKmh": 18.1,
+        "tempC": 26.9,
+        "precipMm": 0.9,
+        "windKmh": 18.4,
         "gustKmh": 38.5,
         "precipProb": 94
       }
@@ -61,9 +61,9 @@
       "kickoffUtc": "2026-09-27T14:00:00.000Z",
       "kickoffAssumed": true,
       "weather": {
-        "tempC": 29.9,
-        "precipMm": 0,
-        "windKmh": 22.2,
+        "tempC": 29.8,
+        "precipMm": 0.2,
+        "windKmh": 22,
         "gustKmh": 54.4,
         "precipProb": 67
       }
@@ -81,8 +81,8 @@
       "kickoffAssumed": true,
       "weather": {
         "tempC": 15.9,
-        "precipMm": 0.1,
-        "windKmh": 4.5,
+        "precipMm": 0,
+        "windKmh": 3.8,
         "gustKmh": 17.3,
         "precipProb": 0
       }
@@ -118,9 +118,9 @@
       "kickoffUtc": "2026-09-27T14:00:00.000Z",
       "kickoffAssumed": true,
       "weather": {
-        "tempC": 26.5,
-        "precipMm": 0,
-        "windKmh": 3.9,
+        "tempC": 28.5,
+        "precipMm": 0.2,
+        "windKmh": 3.6,
         "gustKmh": 13.7,
         "precipProb": 61
       }
@@ -137,7 +137,7 @@
       "kickoffUtc": "2026-09-27T14:00:00.000Z",
       "kickoffAssumed": true,
       "weather": {
-        "tempC": 19.1,
+        "tempC": 19.2,
         "precipMm": 0,
         "windKmh": 6.7,
         "gustKmh": 28.4,

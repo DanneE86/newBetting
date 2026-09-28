@@ -10,6 +10,10 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { findSharpBook, devigMultiplicative } from './pro/lib.mjs';
+import { fetchMatchContext, contextNotes } from './lib/match-context.mjs';
+import { extraOdds, matchExtraOdds } from './lib/extra-odds.mjs';
+import { clubEloFor } from './lib/club-elo.mjs';
+import { fillXg } from './lib/understat-xg.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const RAW = path.join(root, 'data', 'raw');
@@ -29,7 +33,9 @@ const MODEL_W_THIN = Number(process.env.STRYK_MODEL_W_THIN ?? process.env.STRYK_
 const GRUND_MAX_ROWS = 30000; // storsta grundrad som provas fore reducering
 // Fasta teckenregler (minst antal 1-X-2 per rad, max alltid fullt): alltid minst 3 kryss
 const signEnv = (v) => (v ? v.split('-').map(Number) : null); // STRYK_SIGN_A=4-3-2 m.m. for backtest
-const SIGN_MIN = { A: signEnv(process.env.STRYK_SIGN_A) || [5, 3, 2], B: signEnv(process.env.STRYK_SIGN_B) || [4, 3, 3] };
+// A 4-2-2 (anvandarens beslut 2026-09-28 efter backtest: dubbelt system som delas, 4-2-2 gav hogst samlad chans till
+// 13 ratt pa bada spelen: Europatipset 0,305 mot 0,227, Stryktipset 0,149 mot 0,116). B galler bara motsystemslaget.
+const SIGN_MIN = { A: signEnv(process.env.STRYK_SIGN_A) || [4, 2, 2], B: signEnv(process.env.STRYK_SIGN_B) || [4, 3, 3] };
 const BUDGET = { min: 350, max: 400 }; // kr per omgang (rader x radpris)
 const COLOR = { green: 0.45, red: 0.2 }; // folkets streck: gron >= 45 %, rod <= 20 %, annars gul
 const PAYOUT_13 = 0.65 * 0.4; // 65 % aterbetalning, 40 % av potten till 13 ratt
@@ -136,6 +142,7 @@ async function loadGroup(group) {
       if (f) all.push(...readCsvMatches(f, code, season));
     }
   }
+  await fillXg(all, log); // xG fran Understat dar CSV:n saknar det (2025/26 och aldre, topp 5)
   return all.sort((a, b) => a.date.localeCompare(b.date));
 }
 
@@ -304,6 +311,15 @@ async function loadNationalElo() {
       const c = l.split('\t');
       if (c[2] && c[3]) map.set(c[2], { rank: Number(c[0]), elo: Number(c[3]) });
     }
+    // Kommande landskamper med spelplatsens land (kolumn 7): skiljer den sig fran hemmalaget ar planen neutral
+    map.venue = new Map();
+    try {
+      const fx = await get('https://www.eloratings.net/fixtures.tsv', 'text');
+      for (const l of fx.split(/\r?\n/)) {
+        const c = l.split('\t');
+        if (c[3] && c[4] && c[6]) map.venue.set(`${c[3]}|${c[4]}`, c[6]);
+      }
+    } catch { /* bara vanlig hemmafordel */ }
     return map;
   } catch (e) {
     log(`  Elo for landslag kunde inte hamtas: ${e.message}`);
@@ -423,6 +439,13 @@ function folkProbs(ev) {
   return v.map((x) => x / s);
 }
 
+// Kompakt kontext i sparade system (for senare backtest av franvaro/rotation)
+function ctxSummary(cx) {
+  if (!cx?.home) return null;
+  const sd = (x) => x && { missing: x.unavailable.length, missingValueShare: x.missingValueShare, restDays: x.restDays, daysToNext: x.daysToNext, nextTournament: x.nextMatch?.tournament || null };
+  return { lineupConfirmed: cx.lineupConfirmed, home: sd(cx.home), away: sd(cx.away), referee: cx.referee };
+}
+
 function narrative(a) {
   const out = [];
   const [ph, pd, pa] = a.final;
@@ -522,8 +545,8 @@ function gcPayoutFloor(gcTurnover, realTurnover, jackpot, payoutMin) {
   return fStar > 0 ? (PAYOUT_13 * gcTurnover + (jackpot || 0)) / (1 + gcTurnover * fStar) : Infinity;
 }
 
-function reduceSystem(events, grund, { rowPrice = 1, turnover, signMin, realTurnover = turnover, jackpot = 0, payoutMin = 30000 }) {
-  const minRows = Math.ceil(BUDGET.min / rowPrice), maxRows = Math.floor(BUDGET.max / rowPrice);
+function reduceSystem(events, grund, { rowPrice = 1, turnover, signMin, realTurnover = turnover, jackpot = 0, payoutMin = 30000, budget = BUDGET }) {
+  const minRows = Math.ceil(budget.min / rowPrice), maxRows = Math.floor(budget.max / rowPrice);
   const colors = events.map((e) => [0, 1, 2].map((k) => signColor(e.folk?.[k])));
   const T = turnover;
   const floor = gcPayoutFloor(T, realTurnover, jackpot, payoutMin);
@@ -576,7 +599,7 @@ function reduceSystem(events, grund, { rowPrice = 1, turnover, signMin, realTurn
     rules: { payoutMin: cut.t, payoutMinReal: payoutMin, jackpot, realTurnover, signMin, colorGreen: COLOR.green, colorRed: COLOR.red, turnover: T },
     colors: colors.map((c) => c.join(',')),
     rowList: kept.map((r) => r.row.map((k) => SIGNS[k]).join('')),
-    rowP: kept.map((r) => r.p), rowReal: kept.map((r) => r.real), // for A+B-optimering (skrivs inte till JSON)
+    rowP: kept.map((r) => r.p), rowReal: kept.map((r) => r.real), rowPayout: kept.map((r) => r.payout), // for A+B-optimering/delning (skrivs inte till JSON)
   };
 }
 
@@ -589,7 +612,7 @@ function bestReduced(events, candidates, opts, exclude = null) {
   const score = (red) => red.rowList.reduce((sum, row, i) => (exclude?.has(row) ? sum : sum + (OBJECTIVE === 'ev' ? red.rowP[i] * red.rowReal[i] : red.rowP[i])), 0);
   let best = null;
   for (const g of candidates) {
-    if (g.rows < BUDGET.min) continue;
+    if (g.rows < (opts.budget || BUDGET).min) continue;
     const red = reduceSystem(events, g, opts);
     if (!red) continue;
     const sc = score(red);
@@ -614,6 +637,46 @@ function drawValue(red, jackpot) {
   return { ratio: r3(ratio), level, text };
 }
 
+// B-lage: 'split' = ett system pa 2 x budget (700-800 rader) som delas i tva kuponger efter utdelning:
+// A = raderna med hogst utdelning (>= t_mid), B = resten (utdelning mellan A:s grans och t_mid). Bada gar att
+// aterskapa i Gambling Cabin (samma grundrad, utdelningsintervall). 'counter' = gamla motsystemet (hogst 1 gemensam spik).
+// Expertgranskning 2026-09-28: B som motsystem gav farre vantade 13 ratt an A:s nasta rader.
+const B_MODE = process.env.STRYK_B_MODE || 'split';
+function splitReduced(red) {
+  const n = red.rows;
+  const idx = red.rowList.map((_, i) => i).sort((a, b) => red.rowPayout[b] - red.rowPayout[a]);
+  const minRows = Math.ceil(BUDGET.min / red.rowPrice), maxRows = Math.floor(BUDGET.max / red.rowPrice);
+  const lo = Math.max(minRows, n - maxRows), hi = Math.min(maxRows, n - minRows);
+  let cut = null;
+  for (const gap of [1.02, 1.01, 1.003, 1]) {
+    for (let k = Math.round(n / 2), d = 0; !cut && (k - d >= lo || k + d <= hi); d++) {
+      for (const kk of d ? [k - d, k + d] : [k]) {
+        if (cut || kk < lo || kk > hi) continue;
+        const above = red.rowPayout[idx[kk - 1]], below = red.rowPayout[idx[kk]];
+        if (above < below * gap) continue;
+        const mid = Math.sqrt(above * below);
+        for (const step of [5000, 1000, 500, 100, 10, 1]) {
+          const t = Math.round(mid / step) * step;
+          if (t <= above / Math.sqrt(gap) && t > below * Math.sqrt(gap)) { cut = { k: kk, t }; break; }
+        }
+      }
+    }
+    if (cut) break;
+  }
+  if (!cut) return null;
+  const part = (ids, payoutMin, payoutMax) => {
+    const sel = ids.slice().sort((a, b) => red.rowP[b] - red.rowP[a]);
+    const hit = sel.reduce((sum, i) => sum + red.rowP[i], 0);
+    const ev = sel.reduce((sum, i) => sum + red.rowP[i] * red.rowReal[i], 0);
+    return {
+      ...red, rows: sel.length, cost: sel.length * red.rowPrice, hitAll: hit, expectedPayout: hit ? ev / hit : null, expectedReturn: ev,
+      rules: { ...red.rules, payoutMin, payoutMax }, split: true,
+      rowList: sel.map((i) => red.rowList[i]), rowP: sel.map((i) => red.rowP[i]), rowReal: sel.map((i) => red.rowReal[i]), rowPayout: sel.map((i) => red.rowPayout[i]),
+    };
+  };
+  return [part(idx.slice(0, cut.k), cut.t, null), part(idx.slice(cut.k), red.rules.payoutMin, cut.t - 1)];
+}
+
 // A+B tillsammans: chans att nagot av systemen tar 13 ratt, och hur manga rader som finns i bada
 function pairStats(a, b) {
   if (!a || !b) return {};
@@ -634,7 +697,7 @@ function gamblingCabinUrl(productId, drawNumber, closeDate, events, sets, reduce
     `v1=${col(0)}`, `vX=${col(1)}`, `v2=${col(2)}`,
     `antT=1,${r.signMin[0]},13,${r.signMin[1]},13,${r.signMin[2]},13`,
     'yellow=0,0,13', 'red=0,0,13', 'green=0,0,13', 'pink=0,0,13',
-    `utd=1,${r.payoutMin},100000000`,
+    `utd=1,${r.payoutMin},${r.payoutMax ?? 100000000}`,
   ];
   return `https://reducera.gamblingcabin.se/?${q.join('&')}`;
 }
@@ -711,6 +774,30 @@ async function analyzeDraw(product, draw, ctx, result) {
   const cutoff = events.map((e) => e.match?.matchStart?.slice(0, 10)).filter(Boolean).sort()[0] || new Date().toISOString().slice(0, 10);
   const out = [];
   const experts = await fetchExpertAnalyses(draw.productId, draw.drawNumber);
+  // Matchkontext fran FotMob (elva, franvaro, vila/rotation, domare, vader) for oppna omgangar, bade Stryktipset och
+  // Europatipset. Visas och sparas; flyttar inte procenten (oddsen ar skarpare). STRYK_CONTEXT=0 stanger av.
+  const matchCtx = new Map();
+  // Klubb-Elo (clubelo.com) for klubbmatcher utan egen lagmodell (Europacup, nordiska ligor), bara oppna omgangar
+  // (dagens Elo skulle lacka framtid i backtest)
+  const sameCountryName = (a, b) => [a, b].map((x) => String(x || '').toLowerCase().replace(/&/g, 'och').replace(/[^a-zåäöéü]+/g, '')).reduce((x, y) => x === y);
+  const clubTeams = draw.drawState === 'Open' ? events.filter((e) => !COUNTRY_GROUP[e.match?.league?.country?.name])
+    .flatMap((e) => (e.match?.participants || []).filter((pt) => pt.isoCode && !sameCountryName(pt.countryName, pt.name)).map((pt) => ({ isoCode: pt.isoCode, name: pt.name.trim() }))) : [];
+  const clubElo = clubTeams.length ? await clubEloFor(clubTeams, log).catch(() => new Map()) : new Map();
+  // Skarpa odds for landskamper/Europacup/nordiska ligor/cuper (The Odds API), bara oppna omgangar
+  const extraCache = draw.drawState === 'Open' && MARKET_MODE !== 'svs'
+    ? await extraOdds(events.filter((e) => !COUNTRY_GROUP[e.match?.league?.country?.name]).map((e) => e.match?.league?.name), log).catch(() => null)
+    : null;
+  if (draw.drawState === 'Open' && process.env.STRYK_CONTEXT !== '0') {
+    for (let i = 0; i < events.length; i += 4) {
+      await Promise.all(events.slice(i, i + 4).map(async (ev) => {
+        const m = ev.match || {};
+        const [hp, ap] = [m.participants?.find((p) => p.type === 'home'), m.participants?.find((p) => p.type === 'away')];
+        const cx = await fetchMatchContext({ kickoff: m.matchStart, home: hp?.name || ev.eventDescription.split(' - ')[0], away: ap?.name || ev.eventDescription.split(' - ')[1], homeCountry: hp?.countryName, awayCountry: ap?.countryName }).catch(() => null);
+        if (cx) matchCtx.set(ev.eventNumber, cx);
+      }));
+    }
+    log(`  FotMob-kontext: ${matchCtx.size}/${events.length} matcher`);
+  }
   for (const ev of events) {
     const m = ev.match || {};
     const [hp, ap] = [m.participants?.find((p) => p.type === 'home'), m.participants?.find((p) => p.type === 'away')];
@@ -762,7 +849,12 @@ async function analyzeDraw(product, draw, ctx, result) {
       // Namnjamforelse tal "&"/"och" och skiljetecken (Bosnien & Hercegovina = Bosnien och Hercegovina)
       const sameName = (a, b) => [a, b].map((s) => String(s || '').toLowerCase().replace(/&/g, 'och').replace(/[^a-zåäöéü]+/g, '')).reduce((x, y) => x === y);
       if (eh && ea && sameName(hp.countryName, home)) {
-        const { lh, la } = eloToLambdas(eh.elo, ea.elo);
+        // Neutral plan (VM/slutspel) -> ingen hemmafordel; spelas matchen i bortalagets land -> omvand fordel
+        const codeH = ISO_TO_ELO[hp.isoCode] || hp.isoCode.slice(0, 2), codeA = ISO_TO_ELO[ap.isoCode] || ap.isoCode.slice(0, 2);
+        const venue = ctx.elo.venue?.get(`${codeH}|${codeA}`);
+        const homeAdv = !venue || venue === codeH ? 100 : venue === codeA ? -100 : 0;
+        const { lh, la } = eloToLambdas(eh.elo, ea.elo, homeAdv);
+        a.neutralVenue = homeAdv !== 100;
         const sm = scoreMatrix(lh, la);
         a.model = [sm.home, sm.draw, sm.away];
         a.lambdas = { home: r2(lh), away: r2(la) };
@@ -774,9 +866,31 @@ async function analyzeDraw(product, draw, ctx, result) {
         a.basis = 'elo';
       }
     }
+    // Klubb-Elo nar lagmodell saknas (hemmafordel 65 Elo, clubelo:s ungefarliga niva)
+    if (!a.model && clubElo.has(home) && clubElo.has(away)) {
+      const ch = clubElo.get(home), ca = clubElo.get(away);
+      const { lh, la } = eloToLambdas(ch.elo, ca.elo, 65);
+      const sm = scoreMatrix(lh, la);
+      a.model = [sm.home, sm.draw, sm.away];
+      a.lambdas = { home: r2(lh), away: r2(la) };
+      a.topScores = sm.topScores;
+      a.over25 = r3(sm.over25);
+      a.btts = r3(sm.btts);
+      a.clubElo = { home: ch.elo, away: ca.elo, homeName: ch.clubEloName, awayName: ca.clubEloName };
+      a.thin = true;
+      a.basis = 'clubelo';
+    }
+    // Skarpa odds utanfor klubbmodellen (landskamp, Europacup, nordiska ligor)
+    if (extraCache && !a.sharpOdds) {
+      const x = matchExtraOdds(extraCache, { league: a.league, kickoff: m.matchStart, home, away, homeCountry: hp?.countryName, awayCountry: ap?.countryName });
+      if (x?.p) { a.market = x.p; a.marketSource = x.source; a.sharpOdds = x.odds; }
+    }
     // Blandning
     const wm = a.model ? (a.thin ? MODEL_W_THIN : MODEL_W) : 0;
     if (a.market && a.model) a.final = a.market.map((p, i) => (1 - wm) * p + wm * a.model[i]);
+    // Inga odds alls (t.ex. innan oddsen slapps): modellen ensam ar for saker (Elo gav Frankrike-Italien 80 %),
+    // folkets streck ar nastan lika traffsakert som oddsen (Europatipset logloss 0,990 mot 0,994) -> halva/halva
+    else if (a.model && folk) { a.final = a.model.map((p, i) => 0.5 * p + 0.5 * folk[i]); a.basis = `${a.basis}+folk`; }
     else a.final = a.market || a.model || folk || [1 / 3, 1 / 3, 1 / 3];
     if (!a.market && !a.model) a.basis = folk ? 'folk' : 'none';
     a.modelWeight = wm;
@@ -799,7 +913,8 @@ async function analyzeDraw(product, draw, ctx, result) {
     a.tioTidningar = tt ? [tt.one, tt.x, tt.two].map((x) => Number(x) || 0) : null;
     const so = ev.startOdds ? [num(ev.startOdds.one), num(ev.startOdds.x), num(ev.startOdds.two)] : null;
     a.startOdds = so?.every((x) => x > 1) ? so : null;
-    a.analysis = narrative({ ...a, final: a.final });
+    a.context = matchCtx.get(ev.eventNumber) || null;
+    a.analysis = [...narrative({ ...a, final: a.final }), ...contextNotes(a.context, home, away)];
     // Facit (avgjord kupong)
     const r = result?.events?.find((x) => x.eventNumber === ev.eventNumber);
     if (r?.outcome) a.result = { outcome: r.outcome, score: r.outcomeScore ? `${r.outcomeScore.home}-${r.outcomeScore.away}` : null };
@@ -817,7 +932,14 @@ async function analyzeDraw(product, draw, ctx, result) {
   if (process.env.STRYK_JACKPOT === '0') jackpot = 0; // for jamforelse i backtest
   const rowPrice = num(draw.rowPrice) || 1;
   const closeDate = (draw.regCloseTime || '').slice(0, 10);
-  const bestA = out.length ? bestReduced(out, grundCandidates(out, GRUND_MAX_ROWS), { rowPrice, turnover, realTurnover, jackpot, payoutMin: utdMin(product.id), signMin: SIGN_MIN.A }) : null;
+  const baseOpts = { rowPrice, turnover, realTurnover, jackpot, payoutMin: utdMin(product.id), signMin: SIGN_MIN.A };
+  let bestA = null, splitPair = null;
+  if (out.length && B_MODE === 'split') {
+    const dbl = bestReduced(out, grundCandidates(out, GRUND_MAX_ROWS), { ...baseOpts, budget: { min: 2 * BUDGET.min, max: 2 * BUDGET.max } });
+    splitPair = dbl && splitReduced(dbl.reduced);
+    if (splitPair) bestA = { system: dbl.system, reduced: splitPair[0] };
+  }
+  if (!bestA && out.length) bestA = bestReduced(out, grundCandidates(out, GRUND_MAX_ROWS), baseOpts);
   const system = bestA?.system || null, reduced = bestA?.reduced || null;
   if (system) out.forEach((a, i) => { a.systemPick = system.picks[i]; });
   if (reduced) {
@@ -825,7 +947,11 @@ async function analyzeDraw(product, draw, ctx, result) {
     reduced.gamblingCabinUrl = gamblingCabinUrl(product.id, draw.drawNumber, closeDate, out, system.sets, reduced);
   }
   let systemB = null, reducedB = null;
-  if (system) {
+  if (splitPair) {
+    systemB = system; reducedB = splitPair[1];
+    out.forEach((a, i) => { a.systemPickB = system.picks[i]; });
+    reducedB.gamblingCabinUrl = gamblingCabinUrl(product.id, draw.drawNumber, closeDate, out, system.sets, reducedB);
+  } else if (system) {
     const singlesA = system.sets.map((x) => (x.length === 1 ? x[0] : -1));
     const bestB = bestReduced(out, grundCandidates(out, GRUND_MAX_ROWS, singlesA), { rowPrice, turnover, realTurnover, jackpot, payoutMin: utdMin(product.id), signMin: SIGN_MIN.B }, B_JOINT ? new Set(reduced.rowList) : null);
     systemB = bestB?.system || null; reducedB = bestB?.reduced || null;
@@ -840,8 +966,8 @@ async function analyzeDraw(product, draw, ctx, result) {
     turnover: draw.currentNetSale, comment: draw.drawComment, modelCutoff: cutoff, events: out,
     system: system && { maxRows: GRUND_MAX_ROWS, rows: system.rows, hitAll: system.hitAll, hitSingle: out.reduce((s, e) => s * Math.max(...e.final), 1) },
     value: drawValue(reduced, jackpot),
-    reduced: reduced && { ...reduced, colors: undefined, rowP: undefined, rowReal: undefined },
-    reducedB: reducedB && { ...reducedB, colors: undefined, rowP: undefined, rowReal: undefined, ...pairStats(reduced, reducedB), sameSingles: out.filter((a) => a.systemPick?.signs.length === 1 && a.systemPickB?.signs === a.systemPick.signs).length },
+    reduced: reduced && { ...reduced, colors: undefined, rowP: undefined, rowReal: undefined, rowPayout: undefined },
+    reducedB: reducedB && { ...reducedB, colors: undefined, rowP: undefined, rowReal: undefined, rowPayout: undefined, ...pairStats(reduced, reducedB), sameSingles: out.filter((a) => a.systemPick?.signs.length === 1 && a.systemPickB?.signs === a.systemPick.signs).length },
     result: result ? {
       correct: out.filter((a) => a.result && a.result.outcome === a.tip).length,
       systemCorrect: out.filter((a) => a.result && a.systemPick?.signs.includes(a.result.outcome)).length,
@@ -896,7 +1022,7 @@ function saveSnapshot(a) {
     rules: a.reduced.rules, gamblingCabinUrl: a.reduced.gamblingCabinUrl, rowList: a.reduced.rowList,
     picks: a.events.map((e) => e.systemPick?.signs || ''),
     // Odds och streck som de sag ut nar systemet sparades (for rattvisa backtest senare)
-    matches: a.events.map((e) => ({ n: e.eventNumber, match: `${e.home} - ${e.away}`, kickoff: e.kickoff, final: e.final, market: e.market, marketSource: e.marketSource, svsOdds: e.odds, sharpOdds: e.sharpOdds || null, folk: e.folk, lineupStatus: e.lineup?.status || null })),
+    matches: a.events.map((e) => ({ n: e.eventNumber, match: `${e.home} - ${e.away}`, kickoff: e.kickoff, final: e.final, market: e.market, marketSource: e.marketSource, svsOdds: e.odds, sharpOdds: e.sharpOdds || null, folk: e.folk, lineupStatus: e.lineup?.status || null, context: ctxSummary(e.context) })),
   };
   const snapB = a.reducedB && {
     at: snap.at, rows: a.reducedB.rows, cost: a.reducedB.cost, hitAll: a.reducedB.hitAll,
@@ -967,7 +1093,8 @@ async function updateHistory() {
 const BACKTESTS = [
   { file: 'stryktips-backtest-2526-hel-gammal.json', label: 'Start: Svenska Spels odds, modell 35 %', key: 'old', col: true },
   { file: 'stryktips-backtest-2526-hel-svsodds.json', label: 'Steg 1: modellvikt 10 %', key: 'mid', col: true },
-  { file: 'stryktips-backtest-2526-hel.json', label: 'Steg 2: skarpa odds + jackpot (nu)', key: 'new', col: true },
+  { file: 'stryktips-backtest-2526-hel.json', label: 'Steg 2: skarpa odds + jackpot', key: 'step2', col: true },
+  { file: 'stryktips-backtest-2526-steg3.json', label: 'Steg 3: delat system 4-2-2 + xG (nu)', key: 'new', col: true },
   { file: 'stryktips-backtest.json', label: 'Hösten 2026 – nuvarande version', key: 'autumn' },
 ];
 function loadBacktests() {
@@ -990,6 +1117,7 @@ function loadBacktests() {
       key: b.key, label: b.label, col: Boolean(b.col), modelWeight: x.summary?.modelWeight ?? null, from: x.summary?.from, to: x.summary?.to,
       draws: draws.length, matches: x.summary?.matches, logLoss: x.summary?.logLoss, drawRate: x.summary?.drawRate,
       A: sys('A'), B: sys('B'),
+      pairChance: (() => { const h = draws.reduce((a, d) => a + (d.A?.hit || 0) + (d.B?.hit || 0), 0); return h ? Math.round(draws.length / h) : null; })(),
       perDraw: b.key !== 'new' ? undefined : draws.map((d) => ({
         n: d.drawNumber, date: d.date, x: d.draws13, prize13: d.prize13?.amount, winners13: d.prize13?.winners,
         aBest: d.A?.best, aWin: d.A?.winnings, bBest: d.B?.best, bWin: d.B?.winnings,

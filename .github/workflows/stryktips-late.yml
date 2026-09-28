@@ -24,6 +24,7 @@ jobs:
     env:
       TZ: Europe/Stockholm
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      THE_ODDS_API_KEY: ${{ secrets.THE_ODDS_API_KEY }}
       CLOUDFLARE_ACCOUNT_ID: 157ee3f6fab55443acdd807e5899c5f2
     steps:
       - uses: actions/checkout@v4
