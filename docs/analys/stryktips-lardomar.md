@@ -212,6 +212,73 @@ Användaren godkände att förslagen från expertgranskningen genomförs, även 
 - **Utan odds** (innan de släpps): 50 % modell + 50 % folk i stället för bara modellen. Elo ensamt är för säkert och gav till exempel Frankrike–Italien 80 %.
 - Rådata: `data/stryktips-backtest-2526-steg3.json` (Stryktipset, i backtest-vyn som steg 3) och `data/europatips-backtest-2526.json` (Europatipset, nuvarande version).
 
+## Omgångar där 13 rätt gav minst 40 000 kr (2026-09-28, 93 omgångar ST + ET)
+
+76 av 93 omgångar (82 %) gav minst 40 000 kr eller hade ingen vinnare. Stor utdelning är alltså det normala. De 17 övriga var "favoritveckor".
+
+| Snitt per omgång | ≥ 40 000 kr (76) | Övriga (17) |
+|---|---|---|
+| Favoriten vann (av 13) | 5,8 | 8,8 |
+| Kryss | 3,7 | 2,1 |
+| Utfall där vår chans var < 30 % | 5,5 | 2,8 |
+| Mellanfavoriter (50–65 %) som föll | 2,0 | 0,8 |
+| Kryss när favoriten hade ≥ 50 % | 1,3 | 0,4 |
+| Spikar (A) som sprack | 2,4 | 0,5 |
+| Utfall utanför grundraden | 2,75 | 0,94 |
+
+Bara 9 av 76 stora omgångar hade exakt 1 utfall utanför grundraden. De flesta hade 2–3.
+
+**Spikar per favoritnivå** (alla omgångar):
+
+| Favoritens chans | Spikar | Sprack | Väntat |
+|---|---|---|---|
+| 50–60 % | 225 | 110 (49 %) | 102 |
+| 60–70 % | 130 | 38 | 46 |
+| 70–80 % | 45 | 9 | 12 |
+
+Utfallen stämmer med förväntan. Spikarna är alltså rätt kalibrerade, och det finns inget modellfel.
+
+**Test av större grundrad med färre spikar:** tillåten grundrad höjdes från 30 000 till 90 000 och 300 000 rader. Resultatet blev identiskt på båda spelen, eftersom optimeringen redan provade de större grundraderna och valde bort dem. Tillsammans med testerna av spikregler (se förkastade hypoteser) betyder det att det inte finns något dolt mönster att utnyttja utöver det som utdelningsgränsen redan riktar in sig på. Med cirka 800 rader är det 2–3 fallna mellanfavoriter per vecka som avgör. Enda sättet att få in fler sådana veckor är fler rader, alltså högre insats. `STRYK_GRUND_MAX` finns för framtida test.
+
+## Kupongarkiv: alla omgångar sedan 1 januari 2025 (2026-09-28)
+
+Arkivet ligger i `data/tips-archive/` och innehåller alla avgjorda omgångar, utan urvalsfilter:
+
+| Mapp/fil | Innehåll |
+|---|---|
+| `raw/<produkt>-<nr>.json` | Svenska Spels kupong och facit, bantad till fälten analysen använder (cirka 11 kB per omgång). Ger identiska kuponger som hela API-svaret. |
+| `raw/<produkt>-<nr>-open.json` | Den öppna kupongen vid senaste körningen: odds och streck vid körningen. |
+| `systems/<produkt>-<nr>.json` | Kupong A och B byggda med reglerna som gällde (`rules`), med rader, Gambling Cabin-länk, sannolikheter och utvärdering mot facit. |
+
+- **Bygga eller bygga om:** `STRYK_SEASONS=2627,2526,2425,2324 node scripts/build-tips-archive.mjs --from 2025-01-01`. Lägg till `--rebuild` efter en regeländring. Kupongerna byggs också om automatiskt när `rules` skiljer sig.
+- **Framtida omgångar:** `scripts/fetch-stryktipset.mjs` sparar den öppna kupongen och arkiverar varje ny avgjord omgång vid varje körning. Arbetsflödena committar `data`.
+- **Backtest:** `scripts/backtest-stryktipset.mjs` läser rådatan från arkivet först, utan nätanrop.
+
+**Resultat med nuvarande regler** (delat system 4-2-2, 350–400 kr per kupong, Stryktipset 30 000 kr, Europatipset 20 000 kr), alla omgångar:
+
+| | Omgångar | Insats | Vinst | Netto | 13 rätt |
+|---|---|---|---|---|---|
+| Stryktipset jan 2025 – sep 2026 | 91 | 70 507 | 76 722 | **+6 215** | 1 |
+| Europatipset jan 2025 – sep 2026 | 179 | 137 666 | 141 266 | **+3 600** | 2 |
+| Stryktipset från aug 2025 | 61 | – | – | +27 400 | 1 |
+| Europatipset från aug 2025 | 118 | – | – | +20 614 | 2 |
+
+**13-rättarna:**
+
+| Omgång | Datum | Matcher | Vinst | Kupong |
+|---|---|---|---|---|
+| ST 4917 | 2025-09-06 | VM-kval, League One/Two | 54 845 kr | B |
+| ET 2594 | 2026-07-30 | Europa/Conference League-kval | 67 528 kr | B |
+| ET 2585 | 2026-06-25 | VM | 20 517 kr | B |
+
+Ingen av dem fanns i de tidigare backtesten, eftersom urvalsfiltren (minst 1 PL-match respektive minst 3 topp 4-matcher) uteslöt dem.
+
+**Förbehåll, viktiga:**
+- **ET 2585 är läckt.** Landslags-Elo är dagens värde, alltså efter VM. Räknas den bort blir Europatipset −16 917 kr från januari 2025.
+- **ST 4917** bygger på Pinnacles slutodds från football-data för klubbmatcherna, vilket är mer information än live.
+- **ET 2594** är ren: Svenska Spels startodds, ingen modell.
+- Plus eller minus avgörs helt av 2–3 träffar på 270 omgångar. Resultatet kan inte skiljas från slump, men det visar att det nya systemet *kan* träffa i skrällveckor.
+
 ## Robusta lärdomar (stöds av hela urvalet)
 
 1. **Oddsen slår vår lagmodell.** Logloss över 216 matcher, där lägre är bättre:
@@ -275,6 +342,8 @@ Användaren godkände att förslagen från expertgranskningen genomförs, även 
 Nettot styrs av enstaka träffar: A:s plus kommer från en enda rad med 12 rätt. Med 65 % återbetalning är det normala förväntade utfallet negativt. Nettot säger därför lite om kvaliteten, och rader med 11+ rätt är ett bättre mått.
 
 ## Ändringslogg
+
+- **2026-09-28 (natt):** Kupongarkiv `data/tips-archive` (272 omgångar sedan januari 2025 plus alla framtida). Backtestet läser arkivet. Analys av omgångar med minst 40 000 kr. `STRYK_GRUND_MAX` finns för test av större grundrader (ingen effekt).
 
 - **2026-09-28 (natt, sist):** Steg 4 (se ovan). Delat system 700–800 rader med minst 4-2-2 i kupong A och B för båda spelen. Odds från The Odds API för landskamper, Europacup och nordiska ligor. Neutral plan i Elo. Klubb-Elo. xG från Understat. 50/50 modell och folk när odds saknas. Europatipsets backtest innehåller nu steg 4.
 

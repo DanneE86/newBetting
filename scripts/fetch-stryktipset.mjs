@@ -30,7 +30,7 @@ const SEED_DRAW = { stryktipset: 4972, europatipset: 2611 };
 const MODEL_W = Number(process.env.STRYK_MODEL_W ?? 0.1); // backtest 17 omg (221 matcher): odds ensamma logloss 1,062 vs 1,065 med 35 % modell -> 10 %
 const MODEL_W_THIN = Number(process.env.STRYK_MODEL_W_THIN ?? process.env.STRYK_MODEL_W ?? 0.1); // lite data (fa viktade matcher) eller landslag
 // Reducerat system (Gambling Cabin-logik: grundrad -> farg-, teckenregler och utdelningsreducering)
-const GRUND_MAX_ROWS = 30000; // storsta grundrad som provas fore reducering
+const GRUND_MAX_ROWS = Number(process.env.STRYK_GRUND_MAX ?? 30000); // storsta grundrad som provas fore reducering
 // Fasta teckenregler (minst antal 1-X-2 per rad, max alltid fullt): alltid minst 3 kryss
 const signEnv = (v) => (v ? v.split('-').map(Number) : null); // STRYK_SIGN_A=4-3-2 m.m. for backtest
 // A 4-2-2 (anvandarens beslut 2026-09-28 efter backtest: dubbelt system som delas, 4-2-2 gav hogst samlad chans till
@@ -1154,6 +1154,14 @@ async function main() {
       if (!a.open) a.note = `Ingen öppen ${p.name}-kupong just nu – visar senaste omgången (${a.closeDescription}) med facit. Nästa kupong dyker upp här när Svenska Spel öppnar den.`;
       products.push(a);
       saveSnapshot(a);
+      // Arkiv for backtest (data/tips-archive): oppen kupong som den ser ut nu + alla nya avgjorda omgangar
+      try {
+        const { saveOpenDraw } = await import('./lib/tips-archive.mjs');
+        const { archiveNew } = await import('./build-tips-archive.mjs');
+        if (a.open) saveOpenDraw(p.id, got.draw);
+        const done = await archiveNew(p, a.open ? got.draw.drawNumber - 1 : got.draw.drawNumber, ctx);
+        if (done.length) log(`  arkiverade avgjorda omgångar: ${done.join(', ')}`);
+      } catch (e) { log(`  arkiv: ${e.message}`); }
       const club = a.events.filter((e) => e.basis === 'club').length;
       const elo = a.events.filter((e) => e.basis === 'elo').length;
       log(`  omgång ${a.drawNumber} (${a.state}): ${a.events.length} matcher, klubbmodell ${club}, landslags-Elo ${elo}`);
@@ -1192,7 +1200,12 @@ async function main() {
 }
 
 // Moduler (t.ex. scripts/backtest-stryktipset.mjs) kan importera analysen utan att kora main
-export { analyzeDraw, oddsetAvailability, evaluateSnapshot, loadNationalElo, loadGroup, fitModel, get, API, SIGN_MIN };
+// Reglerna som galler just nu (sparas med varje arkiverad kupong)
+function currentRules(productId) {
+  return { signMin: SIGN_MIN.A, signMinB: SIGN_MIN.B, bMode: B_MODE, payoutMin: utdMin(productId), budget: BUDGET, modelW: MODEL_W, modelWThin: MODEL_W_THIN, market: MARKET_MODE, grundMax: GRUND_MAX_ROWS };
+}
+
+export { analyzeDraw, oddsetAvailability, evaluateSnapshot, loadNationalElo, loadGroup, fitModel, get, API, SIGN_MIN, currentRules, PRODUCTS };
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   main().catch((e) => {
