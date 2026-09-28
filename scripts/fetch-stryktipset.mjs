@@ -8,7 +8,7 @@
 //   node scripts/fetch-stryktipset.mjs
 import fs from 'node:fs';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const RAW = path.join(root, 'data', 'raw');
@@ -22,8 +22,8 @@ const PRODUCTS = [
 // Senast kanda omgangsnummer (for att hitta senaste avgjorda kupong nar ingen ar oppen)
 const SEED_DRAW = { stryktipset: 4972, europatipset: 2611 };
 // Hur mycket modellen vager mot Svenska Spels odds (marknaden ar skarpast; modellen fangar form/xG)
-const MODEL_W = 0.35;
-const MODEL_W_THIN = 0.2; // lite data (fa viktade matcher) eller landslag
+const MODEL_W = 0.1; // backtest 17 omg (221 matcher): odds ensamma logloss 1,062 vs 1,065 med 35 % modell -> 10 %
+const MODEL_W_THIN = 0.1; // lite data (fa viktade matcher) eller landslag
 // Reducerat system (Gambling Cabin-logik: grundrad -> farg-, teckenregler och utdelningsreducering)
 const GRUND_MAX_ROWS = 30000; // storsta grundrad som provas fore reducering
 // Fasta teckenregler (minst antal 1-X-2 per rad, max alltid fullt): alltid minst 3 kryss
@@ -884,7 +884,12 @@ async function main() {
   log(`Klart -> ${path.relative(root, OUT)}`);
 }
 
-main().catch((e) => {
-  log(`Fel: ${e.stack || e.message}`);
-  process.exit(1);
-});
+// Moduler (t.ex. scripts/backtest-stryktipset.mjs) kan importera analysen utan att kora main
+export { analyzeDraw, evaluateSnapshot, loadNationalElo, loadGroup, fitModel, get, API, SIGN_MIN };
+
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  main().catch((e) => {
+    log(`Fel: ${e.stack || e.message}`);
+    process.exit(1);
+  });
+}

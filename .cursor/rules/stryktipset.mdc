@@ -1,0 +1,17 @@
+---
+description: Stryktipset/Europatipset-kupong (1/X/2, system, streck)
+globs:
+alwaysApply: false
+---
+
+# Stryktipset
+
+När användaren ber om **stryktipset**, **europatipset**, **stryktips**, **kupong**, **enkelrad**, **gardering**, **reducerat system** eller **streckprocent** för 13 matcher:
+
+1. Läs och följ skillen `.cursor/skills/stryktipset/SKILL.md`
+2. Be om kupongen om de 13 matcherna saknas — hitta inte på matcher
+3. Följ de fasta reglerna i skillen: två system (A 5-3-2, B 4-3-3, max 1 gemensam spik), 350–400 kr vardera, utdelning ≥ 30 000 kr, förifyllda Gambling Cabin-länkar
+4. Använd `data/` när det finns; hitta inte på streck, odds eller skador
+5. Svara på svenska med slutkupong (tabell med A/B + länkar)
+6. Spara under `docs/stryktipset/` när analysen är klar
+7. Läs `docs/analys/stryktips-lardomar.md` före regeländringar; skriv in nya backtest-lärdomar där
