@@ -13,6 +13,7 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const RAW = path.join(root, 'data', 'raw');
 const OUT = path.join(root, 'data', 'stryktipset.json');
+const HIST_DIR = path.join(root, 'data', 'stryktips-history'); // sparade system per omgang + utfall
 const API = 'https://api.spela.svenskaspel.se/draw/1';
 const PRODUCTS = [
   { id: 'stryktipset', name: 'Stryktipset' },
@@ -721,6 +722,69 @@ async function latestDraw(product, prev) {
   return { draw: last, result: result?.events ? result : null };
 }
 
+// ---------- Sparade system och utfall ----------
+// Oppen kupong: forsta versionen sparas som "saved" (lases), senaste fore spelstopp som "latest".
+function saveSnapshot(a) {
+  if (!a.open || !a.reduced) return;
+  fs.mkdirSync(HIST_DIR, { recursive: true });
+  const file = path.join(HIST_DIR, `${a.product}-${a.drawNumber}.json`);
+  const prev = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, 'utf8')) : null;
+  const snap = {
+    at: new Date().toISOString(), rows: a.reduced.rows, cost: a.reduced.cost, hitAll: a.reduced.hitAll,
+    rules: a.reduced.rules, gamblingCabinUrl: a.reduced.gamblingCabinUrl, rowList: a.reduced.rowList,
+    picks: a.events.map((e) => e.systemPick?.signs || ''),
+  };
+  const entry = prev || {
+    product: a.product, productName: a.productName, drawNumber: a.drawNumber, closeTime: a.regCloseTime,
+    closeDescription: a.closeDescription, matches: a.events.map((e) => `${e.home} - ${e.away}`), saved: snap,
+  };
+  entry.latest = snap;
+  fs.writeFileSync(file, JSON.stringify(entry, null, 2), 'utf8');
+}
+
+// Ratt per rad mot facit och verklig utdelning (Svenska Spels vinstklasser)
+function evaluateSnapshot(snap, outcomes, distribution) {
+  const perClass = {};
+  const counts = snap.rowList.map((row) => row.split('').filter((c, i) => c === outcomes[i]).length);
+  for (const c of counts) perClass[c] = (perClass[c] || 0) + 1;
+  const prize = Object.fromEntries(distribution.map((d) => [parseInt(d.name, 10), num(d.amount) || 0]));
+  const winnings = Object.entries(perClass).reduce((sum, [c, n]) => sum + n * (prize[c] || 0), 0);
+  return {
+    best: Math.max(...counts), perClass, winnings: r2(winnings), cost: snap.cost, net: r2(winnings - snap.cost),
+    groundCorrect: snap.picks.filter((pk, i) => pk.includes(outcomes[i])).length,
+  };
+}
+
+async function updateHistory() {
+  if (!fs.existsSync(HIST_DIR)) return [];
+  const out = [];
+  for (const f of fs.readdirSync(HIST_DIR).filter((x) => x.endsWith('.json'))) {
+    const file = path.join(HIST_DIR, f);
+    const entry = JSON.parse(fs.readFileSync(file, 'utf8'));
+    if (!entry.result && new Date(entry.closeTime) < new Date()) {
+      const res = await get(`${API}/${entry.product}/draws/${entry.drawNumber}/result`).then((r) => r.result || r).catch(() => null);
+      const outcomes = res?.events?.sort((x, y) => x.eventNumber - y.eventNumber).map((e) => e.outcome);
+      if (outcomes?.length === entry.saved.rowList[0].length && outcomes.every(Boolean) && res.distribution?.length) {
+        entry.result = {
+          at: new Date().toISOString(), outcomes: outcomes.join(''),
+          scores: res.events.map((e) => (e.outcomeScore ? `${e.outcomeScore.home}-${e.outcomeScore.away}` : null)),
+          distribution: res.distribution.map((d) => ({ name: d.name, winners: d.winners, amount: d.amount })),
+        };
+        entry.evaluation = {
+          saved: evaluateSnapshot(entry.saved, outcomes, res.distribution),
+          latest: evaluateSnapshot(entry.latest, outcomes, res.distribution),
+        };
+        fs.writeFileSync(file, JSON.stringify(entry, null, 2), 'utf8');
+        log(`  facit ${entry.productName} ${entry.drawNumber}: bästa rad ${entry.evaluation.saved.best} rätt, vinst ${entry.evaluation.saved.winnings} kr (netto ${entry.evaluation.saved.net})`);
+      }
+    }
+    const { rowList: _a, ...savedLite } = entry.saved;
+    const { rowList: _b, ...latestLite } = entry.latest;
+    out.push({ ...entry, saved: savedLite, latest: latestLite, changed: entry.saved.rowList.join() !== entry.latest.rowList.join() });
+  }
+  return out.sort((a, b) => String(b.closeTime).localeCompare(String(a.closeTime)));
+}
+
 async function main() {
   const prev = fs.existsSync(OUT) ? JSON.parse(fs.readFileSync(OUT, 'utf8')) : null;
   const groupCache = new Map();
@@ -747,6 +811,7 @@ async function main() {
       const a = await analyzeDraw(p, got.draw, ctx, got.result);
       if (!a.open) a.note = `Ingen öppen ${p.name}-kupong just nu – visar senaste omgången (${a.closeDescription}) med facit. Nästa kupong dyker upp här när Svenska Spel öppnar den.`;
       products.push(a);
+      saveSnapshot(a);
       const club = a.events.filter((e) => e.basis === 'club').length;
       const elo = a.events.filter((e) => e.basis === 'elo').length;
       log(`  omgång ${a.drawNumber} (${a.state}): ${a.events.length} matcher, klubbmodell ${club}, landslags-Elo ${elo}`);
@@ -761,6 +826,9 @@ async function main() {
       log(`Fel ${p.name}: ${e.message}`);
     }
   }
+  log('=== Sparade system ===');
+  const history = await updateHistory();
+  log(`  ${history.length} sparade, ${history.filter((h) => h.evaluation).length} med facit`);
   const out = {
     updatedAt: new Date().toISOString(),
     source: 'api.spela.svenskaspel.se + football-data.co.uk + eloratings.net',
@@ -772,6 +840,7 @@ async function main() {
     },
     lastDrawNumber,
     products,
+    history,
   };
   fs.writeFileSync(OUT, JSON.stringify(out, null, 2), 'utf8');
   log(`Klart -> ${path.relative(root, OUT)}`);
