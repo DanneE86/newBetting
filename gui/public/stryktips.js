@@ -276,7 +276,7 @@ function render() {
         <li><b>Grundrad</b> ${s.rows} rader: spikar, halv- och helgarderingar där de höjer träffchansen mest (se chippen på varje match).</li>
         <li><b>Utdelningsreducering</b>: bara rader som beräknas ge minst ${krFmt(r.rules.payoutMin)} kr för 13 rätt (${r.afterPayout} rader kvar). Samma beräkning som Gambling Cabin: folkets streck och omsättning ${krFmt(r.rules.turnover / 1e6)} milj kr.</li>
         <li><b>Teckenreducering</b>: minst <b>${r.rules.signMin[0]}</b> ettor, <b>${r.rules.signMin[1]}</b> kryss och <b>${r.rules.signMin[2]}</b> tvåor per rad (${r.rules.signMin.join("-")}). Max är alltid fullt.</li>
-        <li><b>Budget</b> 350–400 kr: av alla minimikombinationer som ger 350–400 rader är den vald som ger högst chans till 13 rätt.</li>
+        <li><b>Budget</b> 350–400 kr: grundrad och utdelningsgräns (aldrig under 30 000 kr) väljs så att det blir 350–400 rader med högst chans till 13 rätt. Fasta teckenregler: system A minst 5-3-2, system B minst 4-3-3 – alltid minst 3 kryss.</li>
       </ol>
       <p>Chans 13 rätt: ${oneIn(r.hitAll)} (grundraden ${oneIn(r.grundHit)}). Beräknad utdelning om systemet tar 13 rätt: ca ${krFmt(r.expectedPayout || 0)} kr. Utdelningen är en uppskattning från streckprocenten och kan skilja sig från den verkliga.</p>
       ${gcLink}
