@@ -39,6 +39,7 @@ test('stryktipset: 13 matcher med avsparkstid, procent och Värde/Ej värde', ()
     expect(p.reduced.cost).toBeGreaterThanOrEqual(350);
     expect(p.reduced.cost).toBeLessThanOrEqual(400);
     expect(new Set(p.reduced.rowList).size).toBe(p.reduced.rows);
+    expect(p.reduced.gamblingCabinUrl).toContain(`omg=${p.drawNumber}`);
   }
 });
 
