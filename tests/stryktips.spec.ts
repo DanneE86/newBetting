@@ -40,9 +40,15 @@ test('stryktipset: 13 matcher med avsparkstid, procent och Värde/Ej värde', ()
     expect(p.reduced.cost).toBeLessThanOrEqual(400);
     expect(new Set(p.reduced.rowList).size).toBe(p.reduced.rows);
     expect(p.reduced.gamblingCabinUrl).toContain(`omg=${p.drawNumber}`);
-    // Utdelning minst 30 000 kr och tecken: bara minimum, max alltid 13
-    expect(p.reduced.gamblingCabinUrl).toContain("utd=1,30000,");
-    expect(p.reduced.gamblingCabinUrl).toMatch(/antT=1,\d+,13,\d+,13,\d+,13/);
+    // Utdelning minst 30 000 kr; fasta teckenregler A 5-3-2 och B 4-3-3 (alltid minst 3 kryss), max alltid 13
+    expect(p.reduced.rules.payoutMin).toBeGreaterThanOrEqual(30000);
+    expect(p.reduced.gamblingCabinUrl).toContain('antT=1,5,13,3,13,2,13');
+    if (p.reducedB) {
+      expect(p.reducedB.gamblingCabinUrl).toContain('antT=1,4,13,3,13,3,13');
+      expect(p.reducedB.cost).toBeGreaterThanOrEqual(350);
+      expect(p.reducedB.cost).toBeLessThanOrEqual(400);
+      expect(p.reducedB.sameSingles).toBeLessThanOrEqual(1);
+    }
   }
 });
 
