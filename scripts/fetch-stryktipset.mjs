@@ -22,8 +22,8 @@ const PRODUCTS = [
 // Senast kanda omgangsnummer (for att hitta senaste avgjorda kupong nar ingen ar oppen)
 const SEED_DRAW = { stryktipset: 4972, europatipset: 2611 };
 // Hur mycket modellen vager mot Svenska Spels odds (marknaden ar skarpast; modellen fangar form/xG)
-const MODEL_W = 0.1; // backtest 17 omg (221 matcher): odds ensamma logloss 1,062 vs 1,065 med 35 % modell -> 10 %
-const MODEL_W_THIN = 0.1; // lite data (fa viktade matcher) eller landslag
+const MODEL_W = Number(process.env.STRYK_MODEL_W ?? 0.1); // backtest 17 omg (221 matcher): odds ensamma logloss 1,062 vs 1,065 med 35 % modell -> 10 %
+const MODEL_W_THIN = Number(process.env.STRYK_MODEL_W_THIN ?? process.env.STRYK_MODEL_W ?? 0.1); // lite data (fa viktade matcher) eller landslag
 // Reducerat system (Gambling Cabin-logik: grundrad -> farg-, teckenregler och utdelningsreducering)
 const GRUND_MAX_ROWS = 30000; // storsta grundrad som provas fore reducering
 // Fasta teckenregler (minst antal 1-X-2 per rad, max alltid fullt): alltid minst 3 kryss
@@ -63,7 +63,8 @@ const FD = {
   portugal: { PT: 'P1' },
   greece: { GR: 'G1' },
 };
-const SEASONS = ['2627', '2526'];
+// STRYK_SEASONS (t.ex. "2627,2526,2425") anvands av backtestet for aldre omgangar
+const SEASONS = (process.env.STRYK_SEASONS || '2627,2526').split(',');
 const COUNTRY_GROUP = {
   England: 'england', Spanien: 'spain', Italien: 'italy', Tyskland: 'germany', Frankrike: 'france',
   Nederländerna: 'netherlands', Holland: 'netherlands', Portugal: 'portugal', Grekland: 'greece',
@@ -822,6 +823,41 @@ async function updateHistory() {
   return out.sort((a, b) => String(b.closeTime).localeCompare(String(a.closeTime)));
 }
 
+// ---------- Backtest-sammanfattning till webben (fran scripts/backtest-stryktipset.mjs) ----------
+const BACKTESTS = [
+  { file: 'stryktips-backtest-2526-hel-gammal.json', label: 'Säsong 2025/26 – gammal modellvikt 35 %', key: 'old' },
+  { file: 'stryktips-backtest-2526-hel.json', label: 'Säsong 2025/26 – ny modellvikt 10 %', key: 'new' },
+  { file: 'stryktips-backtest.json', label: 'Hösten 2026 – ny modellvikt 10 %', key: 'autumn' },
+];
+function loadBacktests() {
+  const out = [];
+  for (const b of BACKTESTS) {
+    const file = path.join(root, 'data', b.file);
+    if (!fs.existsSync(file)) continue;
+    const x = JSON.parse(fs.readFileSync(file, 'utf8'));
+    const draws = x.draws || [];
+    const sys = (k) => {
+      const c = {};
+      for (const d of draws) for (const [n, v] of Object.entries(d[k]?.perClass || {})) c[n] = (c[n] || 0) + v;
+      const ge = (n0) => Object.entries(c).filter(([n]) => +n >= n0).reduce((a, [, v]) => a + v, 0);
+      const cost = draws.reduce((a, d) => a + (d[k]?.cost || 0), 0);
+      const win = draws.reduce((a, d) => a + (d[k]?.winnings || 0), 0);
+      const hit = draws.reduce((a, d) => a + (d[k]?.hit || 0), 0);
+      return { cost, winnings: r2(win), net: r2(win - cost), ge10: ge(10), ge11: ge(11), ge12: ge(12), ge13: ge(13), chance: hit ? Math.round(draws.length / hit) : null };
+    };
+    out.push({
+      key: b.key, label: b.label, modelWeight: x.summary?.modelWeight ?? null, from: x.summary?.from, to: x.summary?.to,
+      draws: draws.length, matches: x.summary?.matches, logLoss: x.summary?.logLoss, drawRate: x.summary?.drawRate,
+      A: sys('A'), B: sys('B'),
+      perDraw: b.key === 'old' ? undefined : draws.map((d) => ({
+        n: d.drawNumber, date: d.date, x: d.draws13, prize13: d.prize13?.amount, winners13: d.prize13?.winners,
+        aBest: d.A?.best, aWin: d.A?.winnings, bBest: d.B?.best, bWin: d.B?.winnings,
+      })),
+    });
+  }
+  return out;
+}
+
 async function main() {
   const prev = fs.existsSync(OUT) ? JSON.parse(fs.readFileSync(OUT, 'utf8')) : null;
   const groupCache = new Map();
@@ -879,6 +915,7 @@ async function main() {
     lastDrawNumber,
     products,
     history,
+    backtest: loadBacktests(),
   };
   fs.writeFileSync(OUT, JSON.stringify(out, null, 2), 'utf8');
   log(`Klart -> ${path.relative(root, OUT)}`);
