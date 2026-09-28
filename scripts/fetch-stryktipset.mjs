@@ -585,6 +585,39 @@ function gamblingCabinUrl(productId, drawNumber, closeDate, events, sets, reduce
   return `https://reducera.gamblingcabin.se/?${q.join('&')}`;
 }
 
+// ---------- Startelvor/franvaro: samma data och logik som Oddset ----------
+// Oddset (scripts/pro-layer.mjs) raknar per match: bekraftad ESPN-elva (PL/Championship, ~1 h fore avspark) eller
+// FPL-skador (PL), saknad andel av lagets anfall (xG+xA) och en anfallsfaktor med vikten alpha som Oddsets backtest
+// valjer (data/reports/pro-evaluation.json). Stryktipset laser samma rader ur data/tips-latest.json och anvander
+// samma faktor pa lagmodellens mal - alpha 0 betyder att elvan visas men inte flyttar procenten (oddsen gor det).
+const TIPS_FILE = path.join(root, 'data', 'tips-latest.json');
+let oddsetRows = null;
+function oddsetAvailability(leagueCode, date, homeFd, awayFd) {
+  if (oddsetRows === null) {
+    try {
+      const t = JSON.parse(fs.readFileSync(TIPS_FILE, 'utf8'));
+      oddsetRows = [...(t.allCandidates || []), ...(t.bestUpcoming || [])].filter((x) => x.pro?.availability || x.lineupStatus);
+    } catch { oddsetRows = []; }
+  }
+  if (!leagueCode || !date || !homeFd || !awayFd) return null;
+  const norm = (x) => String(x || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]/g, '');
+  const same = (a, b) => { const x = norm(a), y = norm(b); return x && y && (x === y || x.includes(y) || y.includes(x)); };
+  const day = (d) => Date.parse(String(d).slice(0, 10));
+  const row = oddsetRows.find((x) => x.league === leagueCode && Math.abs(day(x.date) - day(date)) <= 86400e3
+    && same(x.home, homeFd) && same(x.away, awayFd));
+  if (!row) return null;
+  const av = row.pro?.availability;
+  const side = (x) => x && {
+    source: x.source, missingShare: x.missingShare ?? 0, typicalMissing: x.typicalMissing ?? null, attackFactor: x.attackFactor ?? 1,
+    players: (x.players || []).map((pl) => ({ name: pl.name, share: pl.share, weight: pl.weight, reason: pl.reason })),
+    topPlayers: x.topPlayers || [],
+  };
+  return {
+    status: row.lineupStatus || null, alpha: av?.alpha ?? 0, home: side(av?.home), away: side(av?.away),
+    notes: [...(row.lineupNotes || []), ...(row.availabilityNotes || [])],
+  };
+}
+
 async function analyzeDraw(product, draw, ctx, result) {
   const events = (draw.drawEvents || []).filter((e) => !e.cancelled);
   const cutoff = events.map((e) => e.match?.matchStart?.slice(0, 10)).filter(Boolean).sort()[0] || new Date().toISOString().slice(0, 10);
@@ -613,9 +646,13 @@ async function analyzeDraw(product, draw, ctx, result) {
       const fh = matchTeam([hp?.name, hp?.mediumName], pool, prefer, g.model.leagueOf);
       const fa = matchTeam([ap?.name, ap?.mediumName], pool, prefer, g.model.leagueOf);
       a.matched = { home: fh, away: fa };
+      a.lineup = oddsetAvailability(prefer || g.model.leagueOf?.get?.(fh), m.matchStart, fh, fa);
       if (fh && fa) {
-        const lh = g.model.h * g.model.att.get(fh) * g.model.def.get(fa);
-        const la = g.model.att.get(fa) * g.model.def.get(fh);
+        // Anfallsfaktor fran startelva/franvaro (samma som Oddset; 1 nar alpha = 0)
+        const afH = a.lineup?.alpha ? a.lineup.home?.attackFactor ?? 1 : 1;
+        const afA = a.lineup?.alpha ? a.lineup.away?.attackFactor ?? 1 : 1;
+        const lh = g.model.h * g.model.att.get(fh) * g.model.def.get(fa) * afH;
+        const la = g.model.att.get(fa) * g.model.def.get(fh) * afA;
         const sm = scoreMatrix(lh, la);
         a.model = [sm.home, sm.draw, sm.away];
         a.lambdas = { home: r2(lh), away: r2(la) };
@@ -922,7 +959,7 @@ async function main() {
 }
 
 // Moduler (t.ex. scripts/backtest-stryktipset.mjs) kan importera analysen utan att kora main
-export { analyzeDraw, evaluateSnapshot, loadNationalElo, loadGroup, fitModel, get, API, SIGN_MIN };
+export { analyzeDraw, oddsetAvailability, evaluateSnapshot, loadNationalElo, loadGroup, fitModel, get, API, SIGN_MIN };
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   main().catch((e) => {

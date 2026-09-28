@@ -175,6 +175,26 @@ function backtestBox(list, krFmt) {
   </details>`;
 }
 
+// Startelvor/frånvaro – samma data som Oddset (ESPN-elva för PL/Championship, annars FPL-skador för PL)
+function lineupRow(e) {
+  const l = e.lineup;
+  if (!l) return "";
+  const pctShare = (x) => `${Math.round((x || 0) * 100)} %`;
+  const status = l.status === "confirmed"
+    ? `<span class="st-lu ok">Startelvor bekräftade (ESPN)</span>`
+    : l.status === "pending" ? `<span class="st-lu wait">Elvor ej släppta än</span>` : "";
+  const side = (team, x) => {
+    if (!x?.players?.length) return x?.source && x.source !== "ingen spelardata" ? `<span class="st-lu-side"><b>${esc(team)}</b>: ingen nyckelspelare saknas${x.source === "FPL" ? " (FPL)" : ""}</span>` : "";
+    return `<span class="st-lu-side"><b>${esc(team)}</b> saknar: ${x.players.map((pl) => `${esc(pl.name)} <small>(${pctShare(pl.share)} av anfallet${pl.reason ? ` · ${esc(pl.reason)}` : ""})</small>`).join(", ")}</span>`;
+  };
+  const sides = [side(e.home, l.home), side(e.away, l.away)].filter(Boolean).join("");
+  if (!status && !sides) return "";
+  const effect = l.alpha
+    ? `Lagmodellens anfall justerat: ${e.home} ×${dec(l.home?.attackFactor ?? 1)}, ${e.away} ×${dec(l.away?.attackFactor ?? 1)}.`
+    : "Påverkar inte procenten direkt (Oddsets backtest valde vikt 0) – oddsen tar hänsyn till elvorna när de hämtas sent.";
+  return `<div class="st-lineup"><span class="st-svs-k">Startelvor</span>${status}${sides}<small class="st-lu-note">${effect}</small></div>`;
+}
+
 function expertTexts(e) {
   if (!e.experts?.length) return "";
   return `<div class="st-experts"><h4>Svenska Spels expertanalyser</h4>${e.experts.map((x) => `<div class="st-expert"><p class="st-expert-head"><strong>${esc(x.author)}</strong> tippar <b>${esc(x.signs.split("").join(" + ") || "–")}</b></p><p>${esc(x.text)}</p></div>`).join("")}</div>`;
@@ -269,6 +289,7 @@ function matchCard(p, e) {
     </header>
     ${probRow(e)}
     ${svsRow(e)}
+    ${lineupRow(e)}
     <button type="button" class="st-analyze" aria-expanded="${isOpen}">${isOpen ? "Dölj analys" : `Analysera ${esc(e.home)} vs ${esc(e.away)}`}</button>
     ${isOpen ? analysisPanel(e) : ""}
   </article>`;

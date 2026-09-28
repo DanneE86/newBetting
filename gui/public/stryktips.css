@@ -362,3 +362,11 @@ body.view-stryktips main { display: none !important; }
 .st-bt-draws summary { cursor: pointer; font-weight: 600; }
 .st-note-small { color: var(--muted); font-size: 0.8rem !important; }
 @media (max-width: 640px) { .st-bt { font-size: 0.75rem; } .st-bt th, .st-bt td { padding: 0.3rem; } }
+
+/* Startelvor (samma data som Oddset) */
+.st-lineup { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem 0.6rem; margin-top: 0.5rem; font-size: 0.8rem; }
+.st-lu { padding: 0.15rem 0.55rem; border-radius: 999px; border: 1px solid var(--line); font-weight: 600; }
+.st-lu.ok { color: #4cc873; border-color: rgba(76, 200, 115, 0.5); }
+.st-lu.wait { color: var(--warn); border-color: rgba(240, 180, 41, 0.45); }
+.st-lu-side small { color: var(--muted); }
+.st-lu-note { flex-basis: 100%; color: var(--muted); }
