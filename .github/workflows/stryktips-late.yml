@@ -3,9 +3,12 @@ name: Stryktipset – sen körning (startelvor)
 # Kör strax före spelstopp (t.ex. lördag ~15:10 för Stryktipset, eller en timme före Europatipsets stängning):
 # ESPN-startelvor (PL/Championship) -> Oddset-tipsen med frånvaro (samma logik som Oddset) ->
 # Stryktipset/Europatipset med färska odds, streck och elvor -> webben.
-# Ingen full datahämtning (öppna källor/OddsPortal) – bara det som ändras nära avspark. Körs manuellt.
+# Ingen full datahämtning (öppna källor/OddsPortal) – bara det som ändras nära avspark.
+# Automatiskt lördagar 13:05 UTC (15:05 sommartid / 14:05 vintertid, före Stryktipsets spelstopp 15:59), annars manuellt.
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "5 13 * * 6"
 
 permissions:
   contents: write
