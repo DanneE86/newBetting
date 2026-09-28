@@ -1,53 +1,63 @@
 {
-  "updatedAt": "2026-09-28T19:55:34.2666909+02:00",
+  "updatedAt": "2026-09-28T20:56:46.1816387+02:00",
   "addedThisRun": 0,
-  "settledThisRun": 0,
+  "settledThisRun": 1,
   "entryCount": 279,
-  "openCount": 277,
-  "settledCount": 2,
+  "openCount": 276,
+  "settledCount": 3,
   "liveHitRates": {
     "1X2": {
-      "rate": 0.5,
-      "hits": 1,
-      "n": 2
+      "hits": 2,
+      "rate": 0.6667,
+      "n": 3
     },
     "BTTS": {
-      "rate": 0.5,
       "hits": 1,
-      "n": 2
+      "rate": 0.3333,
+      "n": 3
     },
     "OU25": {
-      "rate": 0.5,
       "hits": 1,
-      "n": 2
+      "rate": 0.3333,
+      "n": 3
     }
   },
   "liveClv": {
-    "n": 0,
-    "meanClv": null,
-    "positiveRate": null,
+    "n": 1,
+    "meanClv": -0.5197,
+    "positiveRate": 0.0,
     "valueBets": {
-      "n": 0,
-      "open": 36,
-      "profitUnits": 0.0,
-      "profitSek": 0.0,
-      "roi": null,
+      "n": 1,
+      "open": 35,
+      "profitUnits": 0.23,
+      "profitSek": 115.0,
+      "roi": 0.23,
       "clv": {
-        "n": 0,
-        "meanClv": null,
-        "positiveRate": null
+        "n": 1,
+        "meanClv": -0.5197,
+        "positiveRate": 0.0
       },
       "clvRealClosing": {
-        "n": 0,
-        "meanClv": null,
-        "positiveRate": null
+        "n": 1,
+        "meanClv": -0.5197,
+        "positiveRate": 0.0
       },
       "clvProxyClosing": {
         "n": 0,
         "meanClv": null,
         "positiveRate": null
       },
-      "byLeague": {}
+      "byLeague": {
+        "LL2": {
+          "n": 1,
+          "roi": 0.23,
+          "clv": {
+            "n": 1,
+            "meanClv": -0.5197,
+            "positiveRate": 0.0
+          }
+        }
+      }
     },
     "note": "CLV = taget odds x marginalfri stangningschans - 1. Stangning: Pinnacle/snitt (football-data), annars senaste sparade odds fore avspark (proxy). Positiv CLV over ~50 spel = du slar marknaden."
   },
@@ -11494,9 +11504,51 @@
       ],
       "availabilityNotes": [],
       "createdAt": "2026-09-27T19:03:15.7183757+02:00",
-      "settled": false,
-      "actual": null,
-      "hit": null
+      "settled": true,
+      "actual": {
+        "OU25": "OVER 2.5",
+        "BTTS": "JA",
+        "score": "3-1",
+        "1X2": "1"
+      },
+      "hit": {
+        "OU25": false,
+        "BTTS": false,
+        "1X2": true
+      },
+      "settledAt": "2026-09-28T20:56:46.0876751+02:00",
+      "clv": {
+        "closingSource": "avg",
+        "proxy": false,
+        "1X2": {
+          "pick": "1",
+          "oddsTaken": 1.23,
+          "fairCloseProb": 0.3905,
+          "fairCloseOdds": 2.561,
+          "clv": -0.5197
+        },
+        "OU25": {
+          "pick": "UNDER 2.5",
+          "oddsTaken": null,
+          "fairCloseProb": 0.4987,
+          "fairCloseOdds": 2.005,
+          "clv": null
+        },
+        "valueBets": [
+          {
+            "market": "1X2",
+            "pick": "1",
+            "odds": 1.23,
+            "stakeSek": 500,
+            "bookmaker": "Betsson",
+            "fairSource": "betfair-exchange",
+            "flaggedAt": "2026-09-27T19:03:15.7183757+02:00",
+            "won": true,
+            "profitUnits": 0.23,
+            "clv": -0.5197
+          }
+        ]
+      }
     },
     {
       "id": "2026-09-28|MX|Necaxa vs Club America",
