@@ -21,6 +21,7 @@ Mål: bygga en **genomtänkt kupong** — inte 13 isolerade favorittips.
 - Grundrad + utdelningsgräns väljs för högst chans till 13 rätt inom budget.
 - Varje system får en **förifylld länk till Gambling Cabin** (reducera.gamblingcabin.se) – ingen filuppladdning.
 - Öppna kuponger sparas i `data/stryktips-history/` och **följs upp mot facit** automatiskt.
+- **Startelvor:** samma data och logik som Oddset (ESPN-elva för PL/Championship, annars FPL-skador), visas per match. Kör arbetsflödet "Stryktipset – sen körning (startelvor)" strax före spelstopp för att få med elvor och sena odds. Vikten (alpha) följer Oddsets backtest; just nu 0, så effekten kommer via oddsen.
 - Automatiken finns redan: `scripts/fetch-stryktipset.mjs` (daglig körning) → webben `newbetting.pages.dev/#stryktips`. Använd dess siffror i stället för att räkna för hand.
 
 ## Läs först: lärdomar från backtest

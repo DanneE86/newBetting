@@ -1,0 +1,68 @@
+name: Stryktipset – sen körning (startelvor)
+
+# Kör strax före spelstopp (t.ex. lördag ~15:10 för Stryktipset, eller en timme före Europatipsets stängning):
+# ESPN-startelvor (PL/Championship) -> Oddset-tipsen med frånvaro (samma logik som Oddset) ->
+# Stryktipset/Europatipset med färska odds, streck och elvor -> webben.
+# Ingen full datahämtning (öppna källor/OddsPortal) – bara det som ändras nära avspark. Körs manuellt.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-fetch
+  cancel-in-progress: false
+
+jobs:
+  late:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      TZ: Europe/Stockholm
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: 157ee3f6fab55443acdd807e5899c5f2
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: powershell -> pwsh
+        run: sudo ln -sf "$(command -v pwsh)" /usr/local/bin/powershell
+
+      - name: Installera beroenden
+        run: npm ci
+
+      - name: Startelvor (ESPN)
+        shell: pwsh
+        run: powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Fetch-Lineups.ps1
+
+      - name: Oddset-tips med elvor/frånvaro
+        shell: pwsh
+        run: powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Update-BettingStore.ps1 -SkipDownload
+
+      - name: Stryktipset/Europatipset (odds, streck, elvor)
+        run: node scripts/fetch-stryktipset.mjs
+
+      - name: Bygg webbversion
+        run: node scripts/build-static-site.mjs
+
+      - name: Committa ny data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add -A data
+          if git diff --cached --quiet; then
+            echo "Ingen ny data"
+          else
+            git commit -m "Data: Stryktipset sen körning (elvor) $(date +'%Y-%m-%d %H:%M')"
+            git pull --rebase
+            git push
+          fi
+
+      - name: Publicera webbversion
+        if: env.CLOUDFLARE_API_TOKEN != ''
+        run: npx -y wrangler@4 pages deploy site --project-name newbetting --branch main --commit-dirty=true
