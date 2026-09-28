@@ -169,6 +169,7 @@ function backtestBox(list, krFmt) {
   const cmp = cols.length >= 2 ? `<div class="st-bt-wrap"><table class="st-bt">
       <thead><tr><th>${cols[0].draws} omgångar ${esc(cols[0].from)} – ${esc(cols[0].to)} (${cols[0].matches} matcher)</th>${cols.map((c) => `<th>${esc(c.label)}</th>`).join("")}</tr></thead>
       <tbody>${sys("A")}${sys("B")}
+        ${row("A+B tillsammans · Chans 13 rätt / omgång", (c) => c.pairChance, (v) => `1 på ${v}`, false)}
         ${row("Träffsäkerhet per match (logloss, lägre = bättre)", (c) => c.logLoss?.final, (v) => v, false)}
         <tr><th>Kryss utfall / vår förväntan / folket</th><td colspan="${cols.length}">${Math.round(neu.drawRate.actual * 100)} % / ${Math.round(neu.drawRate.predicted * 100)} % / ${Math.round(neu.drawRate.folk * 100)} %</td></tr>
       </tbody></table></div>` : "";
@@ -177,10 +178,10 @@ function backtestBox(list, krFmt) {
       <tbody>${neu.perDraw.map((d) => `<tr><th>${d.n} · ${esc(d.date)}</th><td>${d.x}</td><td>${esc(String(d.prize13 || "").replace(",00", ""))} kr (${d.winners13})</td><td${d.aBest >= 11 ? " class=\"up\"" : ""}>${d.aBest}</td><td>${krFmt(d.aWin || 0)}</td><td${d.bBest >= 11 ? " class=\"up\"" : ""}>${d.bBest}</td><td>${krFmt(d.bWin || 0)}</td></tr>`).join("")}</tbody></table></div></details>` : "";
   const autumn = list.find((b) => b.key === "autumn");
   return `<details class="st-method st-backtest"${showBacktest ? " open" : ""}><summary>Backtest – vad som blivit bättre (säsong 2025/26, alla omgångar med PL-match)</summary>
-    <p>Samma system A (5-3-2) och B (4-3-3), 350–400 kr, utdelning ≥ 30 000 kr, räknat mot facit och Svenska Spels verkliga utdelning. Varje kolumn är ett steg: <b>steg 1</b> lagmodellen väger 10 % i stället för 35 %; <b>steg 2</b> skarpa odds (Pinnacle/Betfair, annars snitt av bolag) i stället för Svenska Spels, och jackpot räknas in i utdelningen. Grönt/rött = bättre/sämre än kolumnen till vänster.</p>
+    <p>350–400 kr per kupong, utdelning ≥ 30 000 kr, räknat mot facit och Svenska Spels verkliga utdelning. Varje kolumn är ett steg: <b>steg 1</b> lagmodellen väger 10 % i stället för 35 %; <b>steg 2</b> skarpa odds (Pinnacle/Betfair, annars snitt av bolag) i stället för Svenska Spels, och jackpot räknas in i utdelningen (A 5-3-2 + motsystem B 4-3-3); <b>steg 3</b> ett system på 700–800 rader med minst 4-2-2 som delas i kupong A (högst utdelning) och B (resten), och xG från Understat i lagmodellen. I steg 3 är A och B två halvor av samma system, så jämför raden <b>A+B tillsammans</b>. Grönt/rött = bättre/sämre än kolumnen till vänster.</p>
     ${cmp}
     <p>Steg 2 ger bättre sannolikheter (lägre logloss) men färre toppträffar just den här säsongen. Per omgång är systemen lika (bästa rad bättre i 9 mot 10 omgångar, rätt i grundraden 337 mot 340) – skillnaden i 10+ rätt kommer från två omgångar (43 mot 5 och 30 mot 4 rader).</p>
-    <p><b>Viktigt om teckenreglerna:</b> rätt rad hade minst 5-3-2 i bara 34 % av omgångarna och 4-3-3 i 61 % – övriga veckor kan systemet inte ta 13 rätt. Med minst 3 kryss släpper 4-3-2 igenom 63 %, 3-3-3 68 % och 3-3-2 71 %.</p>
+    <p><b>Teckenreglerna:</b> rätt rad hade minst 5-3-2 i bara 34 % av omgångarna – övriga veckor kunde systemet inte ta 13 rätt. 4-2-2 (nu) släpper igenom 82 %. Samlad chans till 13 rätt för A+B steg från 1 på 284 till 1 på 221 (Europatipset: 1 på 242 till 1 på 180).</p>
     ${perDraw}
     ${autumn ? `<p>Hösten 2026 (${autumn.draws} omgångar, nuvarande version): A ${signed(autumn.A.net)}, B ${signed(autumn.B.net)} – rader med 11+ rätt: A ${autumn.A.ge11}, B ${autumn.B.ge11}.</p>` : ""}
     <p class="st-note-small">Backtestets skarpa odds är slutodds (Pinnacle, annars snitt av bolag) från football-data; Svenska Spels odds är startodds. Nettot styrs av enstaka träffar – återbetalningen är 65 %, så förväntat utfall är negativt. Alla lärdomar: docs/analys/stryktips-lardomar.md.</p>
@@ -205,6 +206,25 @@ function lineupRow(e) {
     ? `Lagmodellens anfall justerat: ${e.home} ×${dec(l.home?.attackFactor ?? 1)}, ${e.away} ×${dec(l.away?.attackFactor ?? 1)}.`
     : "Påverkar inte procenten direkt (Oddsets backtest valde vikt 0) – oddsen tar hänsyn till elvorna när de hämtas sent.";
   return `<div class="st-lineup"><span class="st-svs-k">Startelvor</span>${status}${sides}<small class="st-lu-note">${effect}</small></div>`;
+}
+
+// FotMob-kontext (alla lag: landslag, Europacup, topp 5, Allsvenskan): elva, frånvaro, vila/rotation, domare
+function contextRow(e) {
+  const c = e.context;
+  if (!c?.home) return "";
+  const status = c.lineupConfirmed
+    ? `<span class="st-lu ok">Elvor bekräftade (FotMob)</span>`
+    : `<span class="st-lu wait">Senaste elvan (ej bekräftad)</span>`;
+  const side = (team, x) => {
+    if (!x) return "";
+    const miss = x.unavailable?.length
+      ? `saknar ${x.unavailable.map((p) => `${esc(p.name)}${p.type ? ` <small>(${p.type === "injury" ? "skada" : p.type === "suspension" ? "avstängd" : esc(p.type)})</small>` : ""}`).join(", ")}${x.missingValueShare >= 0.1 ? ` <small>· ${Math.round(x.missingValueShare * 100)} % av värdet</small>` : ""}`
+      : "inga kända frånvarande";
+    const rest = [x.restDays != null ? `vila ${dec(x.restDays)} d` : "", x.daysToNext != null && x.nextMatch?.tournament ? `nästa: ${esc(x.nextMatch.tournament)} om ${dec(x.daysToNext)} d` : ""].filter(Boolean).join(" · ");
+    return `<span class="st-lu-side" title="${esc((x.starters || []).join(", "))}"><b>${esc(team)}</b>${x.formation ? ` (${esc(x.formation)})` : ""}: ${miss}${rest ? ` <small>· ${rest}</small>` : ""}</span>`;
+  };
+  const extra = [c.referee ? `Domare: ${esc(c.referee)}` : "", c.weather ? `${esc(c.weather.description || "")} ${c.weather.temperature ?? ""}°, vind ${c.weather.windSpeed ?? "?"} m/s` : ""].filter(Boolean).join(" · ");
+  return `<div class="st-lineup"><span class="st-svs-k">Trupp</span>${status}${side(e.home, c.home)}${side(e.away, c.away)}${extra ? `<small class="st-lu-note">${extra}</small>` : ""}</div>`;
 }
 
 function expertTexts(e) {
@@ -294,7 +314,7 @@ function matchCard(p, e) {
       </div>
       <div class="st-verdict">
         ${sys ? `<span class="st-tip ${sys.signs.length === 1 ? "spik" : sys.signs.length === 2 ? "halv" : "hel"}" title="System A – grundrad (reduceras sedan)">${e.systemPickB ? "A: " : ""}${esc(sys.type)} ${esc(sys.signs.split("").join(" + "))}</span>` : `<span class="st-tip">Tips ${esc(e.tip)}</span>`}
-        ${e.systemPickB ? `<span class="st-tip sysb" title="System B – går emot A">B: ${esc(e.systemPickB.type)} ${esc(e.systemPickB.signs.split("").join(" + "))}</span>` : ""}
+        ${e.systemPickB && !p.reducedB?.split ? `<span class="st-tip sysb" title="System B – går emot A">B: ${esc(e.systemPickB.type)} ${esc(e.systemPickB.signs.split("").join(" + "))}</span>` : ""}
         ${verdictChip(e)}
         ${resultChip(e)}
       </div>
@@ -302,6 +322,7 @@ function matchCard(p, e) {
     ${probRow(e)}
     ${svsRow(e)}
     ${lineupRow(e)}
+    ${contextRow(e)}
     <button type="button" class="st-analyze" aria-expanded="${isOpen}">${isOpen ? "Dölj analys" : `Analysera ${esc(e.home)} vs ${esc(e.away)}`}</button>
     ${isOpen ? analysisPanel(e) : ""}
   </article>`;
@@ -344,7 +365,7 @@ function render() {
         <li><b>Grundrad</b> ${s.rows} rader: spikar, halv- och helgarderingar där de höjer träffchansen mest (se chippen på varje match).</li>
         <li><b>Utdelningsreducering</b>: bara rader som beräknas ge minst ${krFmt(r.rules.payoutMin)} kr för 13 rätt (${r.afterPayout} rader kvar). Samma beräkning som Gambling Cabin: folkets streck och omsättning ${krFmt(r.rules.turnover / 1e6)} milj kr.</li>
         <li><b>Teckenreducering</b>: minst <b>${r.rules.signMin[0]}</b> ettor, <b>${r.rules.signMin[1]}</b> kryss och <b>${r.rules.signMin[2]}</b> tvåor per rad (${r.rules.signMin.join("-")}). Max är alltid fullt.</li>
-        <li><b>Budget</b> 350–400 kr: grundrad och utdelningsgräns (aldrig under 30 000 kr, Europatipset 20 000 kr) väljs så att det blir 350–400 rader med högst chans till 13 rätt. Fasta teckenregler: system A minst 5-3-2, system B minst 4-3-3 – alltid minst 3 kryss.</li>
+        <li><b>Budget</b> 350–400 kr: grundrad och utdelningsgräns (aldrig under 30 000 kr, Europatipset 20 000 kr) väljs så att det blir 350–400 rader med högst chans till 13 rätt. Ett system på 700–800 rader (minst 4-2-2) delas i två kuponger efter utdelning: A = raderna med högst utdelning, B = resten. Båda går att öppna i Gambling Cabin (samma grundrad, utdelningsintervall). Valt efter backtest 2026-09-28: högre samlad chans till 13 rätt än A 5-3-2 + motsystem B på båda spelen.</li>
       </ol>
       <p>Chans 13 rätt: ${oneIn(r.hitAll)} (grundraden ${oneIn(r.grundHit)}). Beräknad utdelning om systemet tar 13 rätt: ca ${krFmt(r.expectedPayout || 0)} kr. Utdelningen är en uppskattning från streckprocenten och kan skilja sig från den verkliga.</p>
       ${gcLink}
@@ -356,7 +377,7 @@ function render() {
     ${data.error ? `<p class="st-note bad">Kunde inte uppdatera: ${esc(data.error)}</p>` : ""}
     <div class="st-stats">
       ${r ? `<div><span class="k">${rb ? "System A" : "Reducerat system"}</span><strong>${r.rows} rader · ${krFmt(r.cost)} kr</strong><small>grundrad ${s.rows} → ${r.rows} · utdelning ≥ ${krFmt(r.rules.payoutMin)} kr · minst ${r.rules.signMin.join("-")} · chans 13 rätt ${oneIn(r.hitAll)}</small>${r.gamblingCabinUrl && p.open ? `<a class="st-gc small" href="${esc(r.gamblingCabinUrl)}" target="_blank" rel="noopener">Öppna i Gambling Cabin →</a>` : ""}</div>` : s ? `<div><span class="k">Systemförslag</span><strong>${s.rows} rader</strong><small>chans 13 rätt ${oneIn(s.hitAll)}</small></div>` : ""}
-      ${rb ? `<div class="sysb"><span class="k">System B – går emot A</span><strong>${rb.rows} rader · ${krFmt(rb.cost)} kr</strong><small>grundrad ${rb.grundRows} → ${rb.rows} · utdelning ≥ ${krFmt(rb.rules.payoutMin)} kr · minst ${rb.rules.signMin.join("-")} · ${rb.sameSingles} gemensam spik · chans 13 rätt ${oneIn(rb.hitAll)}${rb.unionHit ? ` · <b>A+B tillsammans ${oneIn(rb.unionHit)}</b>` : ""}</small>${rb.gamblingCabinUrl && p.open ? `<a class="st-gc small" href="${esc(rb.gamblingCabinUrl)}" target="_blank" rel="noopener">Öppna B i Gambling Cabin →</a>` : ""}</div>` : ""}
+      ${rb ? `<div class="sysb"><span class="k">${rb.split ? "Kupong B – samma system, lägre utdelning" : "System B – går emot A"}</span><strong>${rb.rows} rader · ${krFmt(rb.cost)} kr</strong><small>grundrad ${rb.grundRows} → ${rb.rows} · utdelning ${krFmt(rb.rules.payoutMin)}${rb.rules.payoutMax ? `–${krFmt(rb.rules.payoutMax)}` : "+"} kr · minst ${rb.rules.signMin.join("-")}${rb.split ? "" : ` · ${rb.sameSingles} gemensam spik`} · chans 13 rätt ${oneIn(rb.hitAll)}${rb.unionHit ? ` · <b>A+B tillsammans ${oneIn(rb.unionHit)}</b>` : ""}</small>${rb.gamblingCabinUrl && p.open ? `<a class="st-gc small" href="${esc(rb.gamblingCabinUrl)}" target="_blank" rel="noopener">Öppna B i Gambling Cabin →</a>` : ""}</div>` : ""}
       ${p.result ? `<div><span class="k">Facit – systemet fick</span><strong>${rb && p.result.reducedCorrectB != null ? `A ${p.result.reducedCorrect} · B ${p.result.reducedCorrectB}` : p.result.reducedCorrect ?? p.result.systemCorrect} av ${p.result.total} rätt</strong><small>rätt rad ${p.events.map((e) => e.result?.outcome || "–").join("")}</small></div>` : ""}
       ${p.result?.experts?.length ? `<div><span class="k">Svenska Spels experter</span><strong>${p.result.experts.map((x) => `${x.correct}/${x.tipped}`).join(" · ")} rätt</strong><small>${p.result.experts.map((x) => esc(x.author)).join(" · ")}</small></div>` : ""}
       ${p.result?.distribution?.[0] ? `<div><span class="k">Utdelning 13 rätt</span><strong>${esc(p.result.distribution[0].amount)} kr</strong><small>${p.result.distribution[0].winners} vinnare</small></div>` : ""}

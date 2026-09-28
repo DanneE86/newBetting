@@ -2,11 +2,17 @@ import { test, expect } from '@playwright/test';
 import fs from 'fs';
 import path from 'path';
 import { execFileSync } from 'child_process';
+import { pathToFileURL } from 'url';
 
 const root = path.resolve(__dirname, '..');
 const file = path.join(root, 'data', 'stryktipset.json');
 
-test.beforeAll(() => {
+// Teckenregler (anvandarens beslut) lases fran skriptet: A 4-2-2; B samma i delat lage, annars SIGN_MIN.B
+let SIGN_MIN: { A: number[]; B: number[] };
+const antT = (m: number[]) => `antT=1,${m[0]},13,${m[1]},13,${m[2]},13`;
+
+test.beforeAll(async () => {
+  ({ SIGN_MIN } = await import(pathToFileURL(path.join(root, 'scripts', 'fetch-stryktipset.mjs')).href));
   // Hamta om filen saknas eller ar aldre an 6 h (kraver natverk)
   if (!fs.existsSync(file) || Date.now() - fs.statSync(file).mtimeMs > 6 * 3600e3) {
     execFileSync(process.execPath, [path.join(root, 'scripts', 'fetch-stryktipset.mjs')], { cwd: root, stdio: 'inherit' });
@@ -40,16 +46,18 @@ test('stryktipset: 13 matcher med avsparkstid, procent och Värde/Ej värde', ()
     expect(p.reduced.cost).toBeLessThanOrEqual(400);
     expect(new Set(p.reduced.rowList).size).toBe(p.reduced.rows);
     expect(p.reduced.gamblingCabinUrl).toContain(`omg=${p.drawNumber}`);
-    // Utdelning minst 30 000 kr; fasta teckenregler A 5-3-2 och B 4-3-3 (alltid minst 3 kryss), max alltid 13
+    // Utdelning minst 30 000 kr (Europatipset 20 000); teckenregler fran SIGN_MIN, max alltid 13
     // Minsta verkliga utdelning per spel (Stryktipset 30 000, Europatipset 20 000 enligt UTD_MIN_BY_PRODUCT)
     expect(p.reduced.rules.payoutMinReal).toBeGreaterThanOrEqual(p.product === "stryktipset" ? 30000 : 20000);
     expect(p.value?.level).toMatch(/^(low|normal|high)$/);
-    expect(p.reduced.gamblingCabinUrl).toContain('antT=1,5,13,3,13,2,13');
+    expect(p.reduced.gamblingCabinUrl).toContain(antT(SIGN_MIN.A));
     if (p.reducedB) {
-      expect(p.reducedB.gamblingCabinUrl).toContain('antT=1,4,13,3,13,3,13');
+      expect(p.reducedB.gamblingCabinUrl).toContain(antT(p.reducedB.split ? SIGN_MIN.A : SIGN_MIN.B));
       expect(p.reducedB.cost).toBeGreaterThanOrEqual(350);
       expect(p.reducedB.cost).toBeLessThanOrEqual(400);
-      expect(p.reducedB.sameSingles).toBeLessThanOrEqual(1);
+      // Hogst 1 gemensam spik galler motsystemet; delat system har samma grundrad men inga gemensamma rader
+      if (p.reducedB.split) expect(p.reducedB.overlapRows).toBe(0);
+      else expect(p.reducedB.sameSingles).toBeLessThanOrEqual(1);
     }
   }
 });

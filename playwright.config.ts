@@ -29,6 +29,14 @@ export default defineConfig({
       testMatch: /stryktips\.spec\.ts/,
     },
     {
+      name: 'stryktips-regler',
+      testMatch: /stryktips-regler\.spec\.ts/,
+    },
+    {
+      name: 'match-context',
+      testMatch: /match-context\.spec\.ts/,
+    },
+    {
       name: 'player-stats',
       testMatch: /player-stats\.spec\.ts/,
     },

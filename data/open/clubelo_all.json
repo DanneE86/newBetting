@@ -1,0 +1,234 @@
+{
+ "countries": {
+  "SWE": {
+   "fetchedAt": "2026-09-28T18:44:15.633Z",
+   "clubs": [
+    {
+     "name": "Hammarby",
+     "elo": 1622.2,
+     "level": 1
+    },
+    {
+     "name": "Djurgarden",
+     "elo": 1612.3,
+     "level": 1
+    },
+    {
+     "name": "Sirius",
+     "elo": 1575.4,
+     "level": 1
+    },
+    {
+     "name": "Elfsborg",
+     "elo": 1555.7,
+     "level": 1
+    },
+    {
+     "name": "Malmö",
+     "elo": 1555.6,
+     "level": 1
+    },
+    {
+     "name": "GAIS",
+     "elo": 1548.2,
+     "level": 1
+    },
+    {
+     "name": "Häcken",
+     "elo": 1533.4,
+     "level": 1
+    },
+    {
+     "name": "AIK",
+     "elo": 1526.7,
+     "level": 1
+    },
+    {
+     "name": "Mjällby",
+     "elo": 1525.1,
+     "level": 1
+    },
+    {
+     "name": "Västerås",
+     "elo": 1501.6,
+     "level": 1
+    },
+    {
+     "name": "Göteborg",
+     "elo": 1499.2,
+     "level": 1
+    },
+    {
+     "name": "Brommapojkarna",
+     "elo": 1450.8,
+     "level": 1
+    },
+    {
+     "name": "Norrköping",
+     "elo": 1441.7,
+     "level": 2
+    },
+    {
+     "name": "Kalmar",
+     "elo": 1422.4,
+     "level": 1
+    },
+    {
+     "name": "Öster",
+     "elo": 1413.7,
+     "level": 2
+    },
+    {
+     "name": "Degerfors",
+     "elo": 1402.5,
+     "level": 1
+    },
+    {
+     "name": "Örgryte",
+     "elo": 1382.1,
+     "level": 1
+    },
+    {
+     "name": "Halmstad",
+     "elo": 1379.4,
+     "level": 1
+    },
+    {
+     "name": "Värnamo",
+     "elo": 1351,
+     "level": 2
+    }
+   ]
+  },
+  "ESP": {
+   "fetchedAt": "2026-09-28T18:44:15.805Z",
+   "clubs": [
+    {
+     "name": "Barcelona",
+     "elo": 2024.2,
+     "level": 1
+    },
+    {
+     "name": "Real Madrid",
+     "elo": 1972.2,
+     "level": 1
+    },
+    {
+     "name": "Atlético",
+     "elo": 1903,
+     "level": 1
+    },
+    {
+     "name": "Betis",
+     "elo": 1817.9,
+     "level": 1
+    },
+    {
+     "name": "Villarreal",
+     "elo": 1798.5,
+     "level": 1
+    },
+    {
+     "name": "Real Sociedad",
+     "elo": 1768.9,
+     "level": 1
+    },
+    {
+     "name": "Athletic Club",
+     "elo": 1764.1,
+     "level": 1
+    },
+    {
+     "name": "Celta",
+     "elo": 1749.9,
+     "level": 1
+    },
+    {
+     "name": "Rayo Vallecano",
+     "elo": 1744,
+     "level": 1
+    },
+    {
+     "name": "Valencia",
+     "elo": 1740.8,
+     "level": 1
+    },
+    {
+     "name": "Sevilla",
+     "elo": 1724.9,
+     "level": 1
+    },
+    {
+     "name": "Alaves",
+     "elo": 1722.8,
+     "level": 1
+    },
+    {
+     "name": "Mallorca",
+     "elo": 1718.7,
+     "level": 2
+    },
+    {
+     "name": "Girona",
+     "elo": 1717.5,
+     "level": 2
+    },
+    {
+     "name": "Osasuna",
+     "elo": 1717.1,
+     "level": 1
+    },
+    {
+     "name": "Levante",
+     "elo": 1707.7,
+     "level": 1
+    },
+    {
+     "name": "Elche",
+     "elo": 1701.1,
+     "level": 1
+    },
+    {
+     "name": "Getafe",
+     "elo": 1699.9,
+     "level": 1
+    },
+    {
+     "name": "Espanyol",
+     "elo": 1697,
+     "level": 1
+    },
+    {
+     "name": "Depor",
+     "elo": 1690.4,
+     "level": 1
+    },
+    {
+     "name": "Castellon",
+     "elo": 1686.4,
+     "level": 2
+    },
+    {
+     "name": "Almeria",
+     "elo": 1684.1,
+     "level": 2
+    },
+    {
+     "name": "Santander",
+     "elo": 1684,
+     "level": 1
+    },
+    {
+     "name": "Eibar",
+     "elo": 1683.1,
+     "level": 2
+    },
+    {
+     "name": "Las Palmas",
+     "elo": 1667.9,
+     "level": 2
+    }
+   ]
+  }
+ }
+}
