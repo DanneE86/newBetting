@@ -312,3 +312,24 @@ body.view-stryktips main { display: none !important; }
 .st-steps li + li { margin-top: 0.25rem; }
 .st-reduced p { margin: 0.4rem 0 0.6rem; }
 .st-rows { max-height: 18rem; overflow: auto; margin: 0.6rem 0 0; padding: 0.6rem 0.75rem; border: 1px solid var(--line); border-radius: 10px; font-size: 0.8rem; line-height: 1.45; letter-spacing: 0.08em; }
+
+/* Fargkodning (Gambling Cabin): hela rutan i tecknets farg */
+.st-prob.c-green { border-color: #4cc873; background: rgba(76, 200, 115, 0.12); box-shadow: inset 4px 0 0 #4cc873; }
+.st-prob.c-yellow { border-color: #f0c541; background: rgba(240, 197, 65, 0.1); box-shadow: inset 4px 0 0 #f0c541; }
+.st-prob.c-red { border-color: #ef6b5b; background: rgba(239, 107, 91, 0.12); box-shadow: inset 4px 0 0 #ef6b5b; }
+.st-prob.c-green .st-bar span { background: #4cc873; }
+.st-prob.c-yellow .st-bar span { background: #f0c541; }
+.st-prob.c-red .st-bar span { background: #ef6b5b; }
+.st-prob.c-green .st-prob-top strong { color: #4cc873; }
+.st-prob.c-yellow .st-prob-top strong { color: #f0c541; }
+.st-prob.c-red .st-prob-top strong { color: #ef6b5b; }
+.st-prob.hit.c-green, .st-prob.hit.c-yellow, .st-prob.hit.c-red { box-shadow: inset 4px 0 0 currentColor, inset 0 0 0 2px rgba(255, 255, 255, 0.55); }
+.st-in.c-green { background: #4cc873; color: #0b1a10; }
+.st-in.c-yellow { background: #f0c541; color: #1d1604; }
+.st-in.c-red { background: #ef6b5b; color: #fff; }
+.st-legend { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem 0.5rem; margin: 0 0 0.9rem; color: var(--muted); font-size: 0.82rem; }
+.st-legend b { color: var(--ink); }
+.st-gc { display: inline-block; margin-top: 0.5rem; padding: 0.55rem 1rem; border-radius: 999px; background: #0a8a3a; color: #fff; font-weight: 700; text-decoration: none; }
+.st-gc:hover { background: #0ca045; }
+.st-gc.small { align-self: flex-start; padding: 0.3rem 0.7rem; font-size: 0.78rem; }
+.st-gc-off { color: var(--muted); font-size: 0.85rem; }
