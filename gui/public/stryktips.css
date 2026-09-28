@@ -370,3 +370,4 @@ body.view-stryktips main { display: none !important; }
 .st-lu.wait { color: var(--warn); border-color: rgba(240, 180, 41, 0.45); }
 .st-lu-side small { color: var(--muted); }
 .st-lu-note { flex-basis: 100%; color: var(--muted); }
+.st-bt-wrap { overflow-x: auto; }
