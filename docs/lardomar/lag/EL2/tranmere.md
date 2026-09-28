@@ -21,10 +21,10 @@ Form (äldst → senast): VOOOVFOO · senaste match 2026-09-26
 
 | Säsong | Liga | M | P/M | Mot marknaden (hemma / borta) | Kryss (odds) | Mål för–emot | xG för–emot | xP/M |
 |---|---|---|---|---|---|---|---|---|
-| 2018/19 | EL2 | 46 | 1,59 | +0,20 (+0,45 / −0,05) | 28 % (28 %) | 1,37–1,09 | 1,31–1,21* | 1,45 |
+| 2018/19 | EL2 | 46 | 1,59 | +0,20 (+0,45 / −0,05) | 28 % (28 %) | 1,37–1,09 | 1,31–1,22* | 1,45 |
 | 2019/20 | EL1 | 34 | 0,94 | −0,22 (−0,43 / −0,00) | 24 % (26 %) | 1,06–1,76 | 1,27–1,62* | 1,16 |
 | 2020/21 | EL2 | 46 | 1,59 | +0,24 (+0,14 / +0,33) | 28 % (29 %) | 1,20–1,09 | 1,11–1,18* | 1,31 |
-| 2021/22 | EL2 | 46 | 1,63 | +0,31 (+0,71 / −0,08) | 26 % (30 %) | 1,15–0,87 | 1,25–1,22* | 1,40 |
+| 2021/22 | EL2 | 46 | 1,63 | +0,31 (+0,71 / −0,08) | 26 % (30 %) | 1,15–0,87 | 1,25–1,23* | 1,40 |
 | 2022/23 | EL2 | 46 | 1,26 | −0,06 (+0,04 / −0,15) | 28 % (29 %) | 0,98–1,04 | 1,22–1,23* | 1,38 |
 | 2023/24 | EL2 | 46 | 1,24 | −0,03 (+0,33 / −0,40) | 13 % (27 %) | 1,46–1,52 | 1,46–1,62* | 1,29 |
 | 2024/25 | EL2 | 46 | 1,11 | −0,18 (−0,06 / −0,30) | 33 % (28 %) | 0,98–1,41 | 1,33–1,30* | 1,41 |
@@ -67,3 +67,46 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | Datum | Spel | Match | Utfall | Folket på laget | Vår procent |
 |---|---|---|---|---|---|
 | 2026-05-02 | Stryk 4951 | Tranmere - Grimsby | X | 24 % | 28 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Darrell Clarke. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Luke McGee | GK | 31 | England | 96 k€ | 6,77 | 0 | 0 | 2/0 |  |
+| 12 | Harrison Male | GK | 26 | England | – | 7,11 | 0 | 0 | 0/0 |  |
+| 13 | Coniah Boyce-Clarke | GK | 23 | Jamaica | 137 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Jack McEvilly | CB | 20 | England | – | – | 0 | 0 | 0/0 |  |
+|  | Jason Lowe | CB | 35 | England | 73 k€ | – | 0 | 0 | 0/0 |  |
+| 2 | Joel Senior | RB,RWB,RM | 27 | England | 214 k€ | 6,97 | 0 | 1 | 1/0 |  |
+| 3 | Jacob Slater | LB,LWB | 21 | England | 333 k€ | 7,16 | 0 | 1 | 3/0 |  |
+| 4 | Jordan Turnbull | CB | 31 | England | 92 k€ | 7,15 | 0 | 0 | 0/0 |  |
+| 5 | Nathan Smith | CB | 30 | England | 115 k€ | 7,18 | 0 | 0 | 3/0 |  |
+| 14 | Oliver Scott | LB,CM | 25 | England | – | – | 0 | 0 | 0/0 |  |
+| 16 | Bobby Faulkner | CB | 22 | England | 216 k€ | 7,49 | 1 | 1 | 1/1 |  |
+| 22 | Lee O'Connor | CB,CDM | 26 | Ireland | 129 k€ | 6,03 | 0 | 0 | 0/0 |  |
+| 23 | Patrick Brough | CB,LWB,LB | 30 | England | 109 k€ | 6,90 | 0 | 0 | 0/0 |  |
+| 30 | George Nevett | CB | 20 | Wales | 621 k€ | 6,55 | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Will Vaulks | CDM | 33 | Wales | 247 k€ | 7,46 | 0 | 1 | 1/0 |  |
+| 7 | Charlie Whitaker | CAM,LW,ST,CM | 23 | England | 183 k€ | 6,92 | 1 | 0 | 1/0 |  |
+| 8 | Sam Finley | CDM,CM,CAM | 34 | England | 95 k€ | 6,71 | 0 | 0 | 1/0 |  |
+| 10 | Thomas Ince | CAM,RM,LM,RW | 34 | England | 199 k€ | 7,29 | 2 | 1 | 2/0 |  |
+| 11 | Tom Conlon | CDM,CAM | 30 | England | 85 k€ | 7,13 | 0 | 0 | 0/0 |  |
+| 20 | Charlie Veevers | CM,CAM | 21 | England | – | – | 0 | 0 | 0/0 |  |
+| 21 | Josh Williams | CM | 22 | Wales | – | – | 0 | 0 | 0/0 |  |
+| 25 | Lewis Warrington | CDM,CM | 23 | England | 318 k€ | – | 0 | 0 | 0/0 |  |
+| 26 | James Plant | RWB,RM,LM,RW,CDM,LWB | 21 | England | 222 k€ | – | 0 | 0 | 0/0 |  |
+| 44 | Ryan Watson | CDM | 33 | England | 65 k€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Joe Ironside | ST | 32 | England | 203 k€ | 6,67 | 1 | 1 | 1/0 |  |
+| 15 | Jordan Davies | RW,CM | 28 | Wales | 95 k€ | 6,66 | 1 | 0 | 1/0 |  |
+| 17 | Zane Okoro | RW | 19 | England | 884 k€ | 6,65 | 2 | 1 | 1/0 |  |
+| 18 | Connor Jennings | ST,CAM | 34 | England | 145 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | Courtney Baker-Richardson | ST | 30 | England | 212 k€ | – | 0 | 0 | 0/0 |  |
+| 24 | David Kamara | ST | 20 | England | – | 6,38 | 0 | 0 | 0/0 |  |
+| 27 | Sam Mann | Attacker | 19 | England | – | – | 0 | 0 | 0/0 |  |
+| 29 | Dylan Jones | ST,CAM | 21 | England | – | 6,67 | 2 | 0 | 1/0 |  |

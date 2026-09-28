@@ -68,3 +68,48 @@ Form (äldst → senast): OFVOVVVF · senaste match 2026-09-20
 | San Diego FC | 1 | 1-0-0 | 1–0 | +1,48 | −24 pe | 2026-09-06 1-0 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Martin Perelman. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Griffin Dorsey (osäker), Braian Ojeda (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 12 | Javier Otero | GK | 23 | Venezuela | 133 k€ | 5,56 | 0 | 0 | 0/0 |  |
+| 40 | Tristan Himes | GK | 23 | USA | – | – | 0 | 0 | 0/0 |  |
+| 71 | Maxime Crépeau | GK | 32 | Canada | 1,0 M€ | 6,71 | 0 | 0 | 2/1 |  |
+| | **Backar** | | | | | | | | | |
+| 3 | Adrián Marin | CB,LB | 29 | Spain | 658 k€ | 6,61 | 0 | 3 | 3/0 |  |
+| 4 | David Brekalo | CB,LB | 27 | Slovenia | 2,0 M€ | 6,37 | 2 | 0 | 4/0 |  |
+| 6 | Robin Jansson | CB | 34 | Sweden | 168 k€ | 6,30 | 0 | 0 | 3/0 |  |
+| 19 | Zakaria Taifi | RB,RWB,LB | 20 | USA | 305 k€ | 6,57 | 0 | 3 | 0/0 |  |
+| 21 | Nolan Miller | CB | 22 | USA | 145 k€ | 5,25 | 0 | 0 | 2/0 |  |
+| 24 | Griffin Dorsey | RB,RWB,RM | 27 | USA | 950 k€ | 6,92 | 3 | 1 | 1/0 | osäker |
+| 27 | Vinícius Nogueira | LB | 24 | Brazil | 1,1 M€ | 6,55 | 0 | 0 | 0/0 |  |
+| 33 | Clovis Archange | LB,CB | 18 | USA | – | – | 0 | 0 | 0/0 |  |
+| 44 | Bernardo Rhein Goncalves | LB | 19 | USA | 1,2 M€ | 6,33 | 0 | 0 | 0/0 |  |
+| 57 | Iago | CB | 21 | Brazil | 1,6 M€ | 6,31 | 0 | 0 | 6/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Luis Otávio | CDM,CM | 19 | Brazil | – | 6,74 | 1 | 0 | 5/0 |  |
+| 8 | Braian Ojeda | CM,CDM | 26 | Paraguay | 2,2 M€ | 6,84 | 1 | 2 | 1/0 | skadad, åter Early October 2026 |
+| 16 | Wilder Cartagena | CDM,CM | 32 | Peru | 453 k€ | 6,49 | 0 | 0 | 1/0 |  |
+| 20 | Eduard Atuesta | CM,CDM | 29 | Colombia | 2,0 M€ | 6,79 | 0 | 3 | 7/0 |  |
+| 35 | Joran Gerbet | CM,CDM | 25 | France | 157 k€ | 6,86 | 0 | 1 | 2/0 |  |
+| 38 | Issah Haruna | RW,CAM,CDM,RM | 22 | Ghana | – | – | 0 | 0 | 0/0 |  |
+| 41 | Dylan Judelson | CDM,CM | 18 | USA | – | – | 0 | 0 | 0/0 |  |
+| 77 | Iván Angulo | LM,LWB,RW,LW,RM | 27 | Colombia | 1,5 M€ | 7,36 | 5 | 4 | 5/0 |  |
+| 80 | Ignacio Gómez | CDM,CM | 20 | Argentina | 429 k€ | 7,57 | 1 | 0 | 1/0 |  |
+| 87 | Marco Pašalić | RM,RW,ST,CAM | 26 | Croatia | 3,8 M€ | 6,47 | 2 | 0 | 4/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Pedro Leão | ST | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 7 | Antoine Griezmann | ST,CAM | 35 | France | 5,4 M€ | 8,19 | 8 | 4 | 1/0 |  |
+| 9 | Daryl Dike | ST | 26 | USA | 720 k€ | 6,45 | 1 | 1 | 0/0 |  |
+| 10 | Martín Ojeda | ST,CAM | 27 | Argentina | 3,2 M€ | 7,41 | 13 | 1 | 1/0 |  |
+| 11 | Tiago Carvalho | LW,CM,ST,LM | 21 | Brazil | – | 6,58 | 1 | 1 | 4/0 |  |
+| 14 | Tyrese Spicer | LW,LM | 25 | Trinidad and Tobago | 356 k€ | 6,79 | 6 | 1 | 1/0 |  |
+| 22 | Justin Ellis | ST,CAM,RM | 19 | USA | 1,2 M€ | 7,27 | 1 | 9 | 1/0 |  |
+| 23 | Harvey Sarajian | LW,ST,LM,RW | 21 | USA | 435 k€ | 6,50 | 1 | 1 | 2/0 |  |
+| 65 | Gustavo Caraballo | RW,ST,RM,LW | 18 | Venezuela | 1,3 M€ | – | 0 | 0 | 0/0 |  |

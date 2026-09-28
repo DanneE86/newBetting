@@ -60,3 +60,44 @@ Form (äldst → senast): VVVVFFFO · senaste match 2026-09-19
 | Mito | 1 | 0-0-1 | 2–4 | −1,90 | −25 pe | 2026-09-02 2-4 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Toru Oniki. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Tomoki Hayakawa | GK | 27 | Japan | 1,2 M€ | 6,68 | 0 | 0 | 1/0 |  |
+| 21 | Taiki Yamada | GK | 24 | Japan | 239 k€ | – | 0 | 0 | 0/0 |  |
+| 29 | Yuji Kajikawa | GK | 35 | Japan | 225 k€ | – | 0 | 0 | 0/0 |  |
+| 31 | Haruto Fujii | Keeper | 23 | Japan | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Koki Anzai | LB | 31 | Japan | 332 k€ | – | 0 | 0 | 0/0 |  |
+| 3 | Tae-Hyeon Kim | CB | 26 | South Korea | 655 k€ | 6,56 | 0 | 0 | 0/0 |  |
+| 4 | Kaito Chida | CB | 31 | Japan | 155 k€ | – | 0 | 0 | 0/0 |  |
+| 5 | Ikuma Sekigawa | CB | 26 | Japan | 594 k€ | 7,12 | 1 | 0 | 1/0 |  |
+| 7 | Ryoya Ogawa | LB | 29 | Japan | 703 k€ | 6,98 | 0 | 1 | 1/0 |  |
+| 19 | Sho Omori | LB,LWB | 27 | Japan | 286 k€ | 7,09 | 0 | 1 | 0/0 |  |
+| 23 | Keisuke Tsukui | CB | 22 | Japan | 438 k€ | 6,29 | 0 | 1 | 1/0 |  |
+| 25 | Ryuta Koike | RB,LB | 31 | Japan | 169 k€ | 6,36 | 0 | 0 | 0/0 |  |
+| 35 | Anthony Motosuna | CB | 17 | Japan | – | – | 0 | 0 | 0/0 |  |
+| 37 | Rikuto Hirose | RB,LW,RW | 31 | Japan | 180 k€ | 6,78 | 0 | 0 | 2/0 |  |
+| 55 | Naomichi Ueda | CB | 31 | Japan | 616 k€ | 6,61 | 0 | 1 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Kento Misao | CM,CDM | 30 | Japan | 359 k€ | 6,73 | 0 | 0 | 3/0 |  |
+| 8 | Matheus Bueno | CDM,CM | 28 | Brazil | 643 k€ | 6,96 | 0 | 0 | 0/0 |  |
+| 10 | Gaku Shibasaki | CM,CDM | 34 | Japan | 176 k€ | 6,89 | 0 | 1 | 0/0 |  |
+| 14 | Yuta Higuchi | CM | 29 | Japan | 354 k€ | – | 0 | 0 | 0/0 |  |
+| 17 | José Elber | LM | 34 | Brazil | 238 k€ | 7,28 | 0 | 1 | 1/0 |  |
+| 24 | Haruki Hayashi | LM | 22 | Japan | – | 6,26 | 0 | 0 | 0/0 |  |
+| 27 | Yuta Matsumura | RM,LM | 25 | Japan | 483 k€ | 7,15 | 1 | 2 | 0/0 |  |
+| 28 | Yugo Okawa | Midfielder | 19 | Japan | – | – | 0 | 0 | 0/0 |  |
+| 77 | Aleksandar Čavrić | RM,LM,ST | 32 | Serbia | 612 k€ | 6,82 | 4 | 1 | 1/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Léo | ST | 31 | Brazil | 1,5 M€ | 8,22 | 10 | 0 | 1/0 |  |
+| 11 | Kyosuke Tagawa | ST | 27 | Japan | 344 k€ | 5,94 | 0 | 0 | 0/0 |  |
+| 18 | Yan | RW,RM,ST | 28 | Brazil | 891 k€ | 7,36 | 0 | 2 | 0/0 |  |
+| 30 | Minato Yoshida | ST | 18 | Japan | – | 6,46 | 0 | 0 | 0/0 |  |
+| 34 | Homare Tokuda | ST | 19 | Japan | 506 k€ | 6,51 | 0 | 0 | 0/0 |  |
+| 40 | Yuma Suzuki | ST,LM,RW | 30 | Japan | 1,5 M€ | 6,94 | 0 | 2 | 2/0 |  |

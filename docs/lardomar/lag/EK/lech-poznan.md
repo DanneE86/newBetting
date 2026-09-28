@@ -59,3 +59,47 @@ Form (äldst → senast): OVVVVVFV · senaste match 2026-09-20
 | Wieczysta Krakow | 1 | 1-0-0 | 2–1 | +1,37 | −25 pe | 2026-08-01 2-1 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Niels Frederiksen. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Alex Douglas (skadad, åter Late November 2026), Ali Gholizadeh (skadad, åter Mid January 2027), Antoni Kozubal (skadad, åter Early October 2026), Kamil Jakóbczyk (osäker)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+|  | Aleks Olsztyn | Keeper | 16 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 1 | Mateusz Lis | GK | 29 | Poland | 1,7 M€ | 7,03 | 0 | 0 | 0/0 |  |
+| 31 | Wiktor Obremski | Keeper | 18 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 33 | Mateusz Pruchniewski | Keeper | 19 | Poland | 895 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Piotr Bartczak | Defender | 17 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 2 | Joel Pereira | RB | 30 | Portugal | 1,1 M€ | 7,54 | 0 | 2 | 2/0 |  |
+| 3 | Alex Douglas | CB | 25 | Sweden | 529 k€ | – | 0 | 0 | 0/0 | skadad, åter Late November 2026 |
+| 4 | João Moutinho | LB | 28 | Portugal | 348 k€ | 6,69 | 0 | 0 | 0/0 |  |
+| 15 | Michał Gurgul | LB | 20 | Poland | 2,5 M€ | 7,24 | 0 | 1 | 1/0 |  |
+| 20 | Robert Gumny | RB,CB | 28 | Poland | 379 k€ | 6,43 | 1 | 0 | 0/0 |  |
+| 27 | Wojciech Mońka | CB | 19 | Poland | 2,0 M€ | 7,18 | 0 | 0 | 1/0 |  |
+| 59 | Terry Yegbe | CB,LB | 25 | Ghana | 2,3 M€ | 6,98 | 0 | 0 | 0/0 |  |
+| 72 | Mateusz Skrzypczak | CB | 26 | Poland | 496 k€ | 6,59 | 0 | 0 | 1/0 |  |
+| 90 | Hubert Janyszka | Defender | 17 | Poland | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Eryk Sledzinski | Midfielder | 18 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 5 | Gustav Berggren | CM,CDM,CB | 29 | Sweden | 1,6 M€ | 6,46 | 0 | 0 | 0/0 |  |
+| 8 | Ali Gholizadeh | RM,RW,CAM | 30 | Iran | 1,1 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid January 2027 |
+| 14 | Leo Bengtsson | LM,LW | 28 | Sweden | 1,4 M€ | 6,46 | 1 | 0 | 0/0 |  |
+| 21 | Pablo Rodríguez | CAM,CM,CDM,ST,RM | 25 | Spain | 1,6 M€ | 7,79 | 3 | 3 | 0/0 |  |
+| 22 | Radosław Murawski | CDM,CM | 32 | Poland | 277 k€ | 7,03 | 0 | 0 | 1/0 |  |
+| 24 | Filip Jagiełło | CDM,CM,CAM,ST | 29 | Poland | 547 k€ | 6,58 | 0 | 0 | 0/0 |  |
+| 43 | Antoni Kozubal | CDM,CM | 22 | Poland | 3,7 M€ | 7,34 | 1 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 53 | Karol Delikat | Midfielder | 18 | Poland | – | 7,21 | 1 | 0 | 0/0 |  |
+| 54 | Kamil Jakóbczyk | Midfielder | 18 | Poland | 394 k€ | – | 0 | 0 | 0/0 | osäker |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Yannick Agnero | ST | 23 | Ivory Coast | 1,4 M€ | 6,48 | 1 | 0 | 0/0 |  |
+| 9 | Mikael Ishak | ST | 33 | Sweden | 410 k€ | 6,80 | 1 | 1 | 2/0 |  |
+| 10 | Patrik Wålemark | RW,ST,CAM,RM | 24 | Sweden | 1,9 M€ | 7,32 | 2 | 3 | 2/0 |  |
+| 11 | Daniel Håkans | RW | 25 | Finland | 1,2 M€ | 6,79 | 0 | 1 | 0/0 |  |
+| 17 | Allahyar Sayyadmanesh | RW,LW,CAM,ST,LM | 25 | Iran | 2,6 M€ | 7,39 | 5 | 0 | 1/0 |  |
+| 56 | Wojciech Szymczak | Attacker | 18 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 77 | Luis Palma | LW,CAM,ST,LM | 26 | Honduras | 2,5 M€ | 6,86 | 1 | 2 | 1/0 |  |

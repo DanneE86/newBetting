@@ -23,13 +23,13 @@ Form (äldst → senast): VOOOVOFF · senaste match 2026-09-26
 | 2017/18 | EL1 | 46 | 1,24 | −0,10 (−0,27 / +0,07) | 20 % (29 %) | 1,28–1,48 | 1,11–1,43* | 1,16 |
 | 2018/19 | EL1 | 46 | 1,33 | −0,02 (+0,15 / −0,18) | 28 % (28 %) | 1,26–1,13 | 1,22–1,18* | 1,39 |
 | 2019/20 | EL1 | 35 | 1,71 | +0,15 (+0,34 / −0,05) | 34 % (28 %) | 1,46–1,09 | 1,39–1,01* | 1,60 |
-| 2020/21 | EL1 | 46 | 1,30 | −0,17 (−0,00 / −0,35) | 26 % (28 %) | 1,07–1,00 | 1,26–1,17* | 1,42 |
+| 2020/21 | EL1 | 46 | 1,30 | −0,17 (−0,00 / −0,35) | 26 % (28 %) | 1,07–1,00 | 1,27–1,17* | 1,42 |
 | 2021/22 | EL1 | 46 | 0,87 | −0,24 (−0,29 / −0,18) | 35 % (28 %) | 1,35–1,78 | 1,28–1,54* | 1,21 |
-| 2022/23 | EL1 | 46 | 1,26 | +0,16 (−0,06 / +0,38) | 35 % (27 %) | 1,15–1,11 | 1,27–1,44* | 1,25 |
+| 2022/23 | EL1 | 46 | 1,26 | +0,16 (−0,06 / +0,38) | 35 % (27 %) | 1,15–1,11 | 1,27–1,45* | 1,25 |
 | 2023/24 | EL1 | 46 | 0,93 | −0,22 (−0,37 / −0,07) | 28 % (27 %) | 1,07–1,57 | 1,46–1,63* | 1,29 |
 | 2024/25 | EL2 | 46 | 1,30 | −0,20 (−0,20 / −0,19) | 33 % (27 %) | 1,30–1,30 | 1,31–1,25* | 1,42 |
 | 2025/26 | EL2 | 46 | 1,33 | +0,02 (−0,01 / +0,05) | 35 % (28 %) | 1,24–1,26 | 1,41–1,35* | 1,41 |
-| 2026/27 | EL2 | 8 | 1,25 | +0,02 (−0,38 / +0,42) | 50 % (27 %) | 1,13–1,13 | 1,45–1,33* | 1,45 |
+| 2026/27 | EL2 | 8 | 1,25 | +0,02 (−0,38 / +0,42) | 50 % (27 %) | 1,13–1,13 | 1,45–1,34* | 1,45 |
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
 
@@ -61,3 +61,48 @@ Form (äldst → senast): VOOOVOFF · senaste match 2026-09-26
 | Crawley Town | 2 | 1-0-1 | 2–2 | −0,04 | −27 pe | 2026-03-21 1-0 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Matt Lawlor. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Jay Lynch | GK | 33 | England | 110 k€ | 6,77 | 0 | 0 | 0/0 |  |
+| 22 | James Pradic | GK | 21 | Wales | – | – | 0 | 0 | 0/0 |  |
+| 34 | Oliver Bellizia | Keeper | 19 | England | – | – | 0 | 0 | 0/0 |  |
+| 37 | Luke Hewitson | GK | 21 | England | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | James Bolton | CB | 32 | England | 129 k€ | – | 0 | 0 | 0/0 |  |
+| 3 | Danny Andrew | LB,LWB,LW,CB | 35 | England | 87 k€ | 6,43 | 0 | 0 | 0/0 |  |
+| 5 | Finley Potter | CB | 22 | England | 227 k€ | 7,12 | 1 | 0 | 2/0 |  |
+| 6 | Rhys Bennett | CB | 22 | England | 272 k€ | 6,68 | 0 | 1 | 3/0 |  |
+| 16 | Conor Haughey | CB | 19 | Northern Ireland | – | 6,14 | 0 | 0 | 0/0 |  |
+| 24 | Jake Batty | LB,LWB | 21 | England | 276 k€ | 6,51 | 0 | 0 | 0/0 |  |
+| 26 | Shaun Rooney | CB | 30 | Scotland | 183 k€ | 6,93 | 0 | 0 | 2/0 |  |
+| 32 | Kayden Hughes | CB | 20 | England | 391 k€ | 6,21 | 0 | 0 | 0/0 |  |
+| 33 | Denver Hume | LB | 28 | England | 127 k€ | – | 0 | 0 | 0/0 |  |
+| 36 | Jesse Dempsey | LB | 21 | Ireland | 221 k€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Pele Smith | Midfielder | 17 | England | – | – | 0 | 0 | 0/0 |  |
+| 4 | Harrison Neal | CDM,CM | 25 | England | 269 k€ | 7,17 | 0 | 0 | 3/0 |  |
+| 7 | Andy Cannon | CAM | 30 | England | 186 k€ | 7,07 | 0 | 0 | 1/0 |  |
+| 8 | Kane Thompson-Sommers | CM,CDM,RW,LM | 25 | England | 260 k€ | 6,17 | 0 | 0 | 0/0 |  |
+| 10 | Mark Helm | CAM,CM | 24 | England | 211 k€ | 6,96 | 1 | 0 | 1/0 |  |
+| 14 | Lewis McCann | LW,CAM,LWB,ST | 25 | Scotland | 255 k€ | 7,19 | 0 | 0 | 1/0 |  |
+| 27 | Crispin McLean | CAM | 19 | England | – | 6,63 | 0 | 0 | 0/0 |  |
+| 28 | Josh Robertson | CDM,CM | 20 | England | – | 5,97 | 0 | 0 | 0/0 |  |
+| 28 | Liam Roberts | LWB | 18 | England | – | – | 0 | 0 | 0/0 |  |
+| 29 | Raffaele Cirino | CAM | 19 | Montserrat | – | 6,65 | 0 | 0 | 2/0 |  |
+| 35 | Sean Costelloe | CAM | 19 | Ireland | – | – | 0 | 0 | 0/0 |  |
+| 40 | David Animasaun | Midfielder | 19 | England | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Owen Devonport | ST | 21 | England | – | – | 0 | 0 | 0/0 |  |
+| 9 | Will Davies | ST | 27 | England | 188 k€ | 6,75 | 2 | 1 | 1/0 |  |
+| 11 | Josh Thomas | ST | 24 | Wales | 145 k€ | – | 0 | 0 | 0/0 |  |
+| 15 | Adam Murphy | RW,CM | 21 | Ireland | 447 k€ | 6,35 | 0 | 0 | 0/0 |  |
+| 17 | Ched Evans | ST | 37 | Wales | 109 k€ | 6,72 | 1 | 2 | 4/0 |  |
+| 19 | Ronan Coughlan | ST | 29 | Ireland | 185 k€ | 7,10 | 2 | 1 | 0/0 |  |
+| 20 | Aaron Loupalo-Bi | ST,LW,RW | 20 | England | 484 k€ | 6,44 | 2 | 1 | 0/0 |  |
+| 43 | Noah Sawkins | Attacker | 0 | USA | – | – | 0 | 0 | 0/0 |  |

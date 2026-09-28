@@ -46,3 +46,53 @@ Form (äldst → senast): FFOFOFVV · senaste match 2026-09-19
 | Moreirense | 2 | 1-0-1 | 3–3 | +0,27 | −31 pe | 2026-01-17 2-1 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Sérgio Ferreira. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Julián Martínez (skadad, åter Day to day), Bastien Meupiyou (skadad, åter Day to day), Sabit Abdulai (skadad, åter Day to day)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+|  | Noah Raveyre | GK | 21 | France | 1,5 M€ | – | 0 | 0 | 0/0 |  |
+| 23 | André Paulo | GK | 29 | Portugal | 335 k€ | – | 0 | 0 | 0/0 |  |
+| 26 | Mateus Oliveira | Keeper | 24 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 31 | Matheus Mendes | GK | 27 | Brazil | 523 k€ | 6,78 | 0 | 0 | 1/0 |  |
+| 91 | Jhonatan | GK | 35 | Brazil | 124 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Gabriel Carioca | CB | 28 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 3 | Julián Martínez | CB | 22 | Honduras | 704 k€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
+| 4 | Yaya Bojang | CB,LB | 22 | The Gambia | 691 k€ | 6,54 | 0 | 0 | 3/0 |  |
+| 14 | Steven Baseya | CB | 21 | France | 529 k€ | 7,07 | 0 | 0 | 0/0 |  |
+| 15 | Ikker Julian | CB | 21 | Belgium | – | – | 0 | 0 | 0/0 |  |
+| 21 | Sergi Gómez | CB | 34 | Spain | 279 k€ | 6,43 | 0 | 0 | 0/0 |  |
+| 24 | Mofe Jemide | CB | 19 | England | – | – | 0 | 0 | 0/0 |  |
+| 27 | Toni Tamarit | RWB,RB,RM | 20 | Spain | 1,2 M€ | 6,72 | 0 | 0 | 0/0 |  |
+| 33 | Bastien Meupiyou | CB | 20 | France | 2,5 M€ | 6,76 | 0 | 0 | 0/0 | skadad, åter Day to day |
+| 77 | Óscar Torrellas | CB | 19 | Spain | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Lucca Giuntini | Midfielder | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
+|  | Tiago Octavio | Midfielder | 22 | Portugal | – | – | 0 | 0 | 0/0 |  |
+| 2 | Nabili Touaizi | RM,RWB | 25 | Spain | 971 k€ | 6,59 | 0 | 0 | 1/0 |  |
+| 6 | Davy Gui | CM,CDM | 20 | Ivory Coast | 1,2 M€ | 6,69 | 0 | 0 | 3/0 |  |
+| 8 | Vasco Moreira | CM,LW,RW | 25 | Portugal | – | 6,53 | 0 | 1 | 0/0 |  |
+| 12 | Isaac James | LM,CB,LWB | 22 | Nigeria | 556 k€ | 7,03 | 0 | 2 | 0/0 |  |
+| 18 | Zakaria Kassary | CM | 20 | Morocco | – | 6,32 | 0 | 0 | 0/0 |  |
+| 20 | Diogo Spencer | RM,RB,CAM,LM | 22 | Portugal | 795 k€ | 7,81 | 0 | 2 | 1/0 |  |
+| 21 | Sabit Abdulai | CM | 27 | Ghana | 553 k€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
+| 25 | Ian Luccas | CDM,CM,ST,CAM | 23 | Brazil | 523 k€ | 6,67 | 1 | 0 | 1/0 |  |
+| 35 | Rayan Lucas | CM,CDM | 21 | Brazil | 822 k€ | 6,56 | 0 | 1 | 0/0 |  |
+| 55 | Francisco Chissumba | LM,LWB | 21 | Portugal | – | 6,73 | 1 | 0 | 0/0 |  |
+| 93 | Zé Rafael | CM,CDM | 33 | Brazil | 935 k€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Rodrigo Pereira | Attacker | 22 | Portugal | – | – | 0 | 0 | 0/0 |  |
+| 7 | André Vidigal | LW,CAM | 28 | Angola | 371 k€ | 6,11 | 0 | 0 | 1/0 |  |
+| 9 | Vivaldo Semedo | ST | 21 | Portugal | – | 6,42 | 2 | 0 | 1/0 |  |
+| 10 | Chiquinho | LW,RW,CAM | 26 | Portugal | 1,9 M€ | 7,55 | 1 | 2 | 2/1 |  |
+| 11 | Cédric Nuozzi | LW | 20 | Belgium | 1,3 M€ | 6,02 | 0 | 0 | 0/0 |  |
+| 17 | Samy Jr. Merheg | ST,CAM | 19 | Lebanon | 1,7 M€ | 6,10 | 0 | 0 | 0/0 |  |
+| 19 | Dawda Camara | ST | 23 | Mauritania | 878 k€ | 7,36 | 3 | 0 | 1/0 |  |
+| 22 | Lucas Figueiredo | LW,RW,CAM | 25 | Brazil | 1,6 M€ | 7,25 | 1 | 0 | 1/0 |  |
+| 26 | Matheus França | RW | 22 | Brazil | 5,7 M€ | 6,20 | 0 | 0 | 0/0 |  |

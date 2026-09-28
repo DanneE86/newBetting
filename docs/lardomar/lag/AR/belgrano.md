@@ -67,3 +67,47 @@ Form (äldst → senast): OVVFOOOV · senaste match 2026-09-20
 | Dep. Riestra | 1 | 1-0-0 | 2–1 | +1,30 | −33 pe | 2024-07-19 2-1 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Ricardo Zielinski. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Adrián Spörle (skadad, åter Early October 2026), Agustín Falcón (skadad, åter Mid October 2026), Adrián Sánchez (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 23 | Manuel Vicentini | GK | 36 | Argentina | 275 k€ | – | 0 | 0 | 0/0 |  |
+| 25 | Thiago Cardozo | GK | 30 | Uruguay | 1,9 M€ | – | 0 | 0 | 0/0 |  |
+| 28 | Matías Daniele | Keeper | 22 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 60 | Santiago Ferez | Keeper | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Alexis Maldonado | CB | 29 | Argentina | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 3 | Adrián Spörle | LB,LWB | 31 | Argentina | 383 k€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 13 | Álvaro Ocampo | CB | 22 | Argentina | 620 k€ | – | 0 | 0 | 0/0 |  |
+| 14 | Leonardo Morales | CB,RB | 35 | Argentina | 637 k€ | – | 0 | 0 | 0/0 |  |
+| 16 | Federico Ricca | LB,CB | 31 | Uruguay | 367 k€ | – | 0 | 0 | 0/0 |  |
+| 17 | Lisandro López | CB | 37 | Argentina | 449 k€ | – | 0 | 0 | 0/0 |  |
+| 26 | Alcides Benítez | RB,RW,RWB | 24 | Paraguay | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| 45 | Agustín Falcón | RB | 21 | Argentina | 706 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 59 | Joaquín Flandes | Defender | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Santiago Longo | CDM,CM | 28 | Argentina | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| 8 | Ramiro Hernandes | LW | 21 | Argentina | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 10 | Lucas Zelarayán | CAM,ST,CM | 34 | Armenia | 1,7 M€ | – | 0 | 0 | 0/0 |  |
+| 11 | Francisco González Metilli | CDM,CM,RW,ST,LW,CAM | 29 | Argentina | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 19 | Santino Gatti | Midfielder | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 20 | Franco Vázquez | CDM,CM,CAM | 37 | Argentina | 609 k€ | – | 0 | 0 | 0/0 |  |
+| 21 | Adrián Sánchez | CDM,CM,RM | 27 | Argentina | 2,1 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 29 | Marcos Ortiz | Midfielder | 17 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 30 | Gonzalo Zelarayán | CAM | 22 | Argentina | 532 k€ | – | 0 | 0 | 0/0 |  |
+| 51 | Thiago Cortés | Midfielder | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Lucas Passerini | ST | 32 | Argentina | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 15 | Ramiro Tulián | LW | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 22 | Nicolás Fernández | ST | 30 | Argentina | 2,0 M€ | – | 0 | 0 | 0/0 |  |
+| 24 | Emiliano Rigoni | RW,LW,RM,RWB | 33 | Argentina | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 37 | Lautaro Gutierrez | ST | 20 | Argentina | 662 k€ | – | 0 | 0 | 0/0 |  |
+| 53 | Juan Velázquez | LW,LM | 21 | Argentina | 1,7 M€ | – | 0 | 0 | 0/0 |  |
+| 58 | Agustín Bono | Attacker | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 63 | Agustin Melano | Attacker | 22 | Argentina | – | – | 0 | 0 | 0/0 |  |

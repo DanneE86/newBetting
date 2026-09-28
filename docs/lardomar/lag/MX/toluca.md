@@ -59,3 +59,44 @@ Form (äldst → senast): FVOVVVVF · senaste match 2026-09-21
 | Atlante | 1 | 0-1-0 | 0–0 | −0,99 | +77 pe | 2026-08-16 0-0 (b) |
 
 Ligans test av inbördes möten mot marknaden: svag signal (inte bekräftad).
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Antonio Mohamed. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Hugo González (skadad, åter Back in training), Marcel Ruiz (skadad, åter Early November 2026), Iván López (skadad, åter Unknown)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Hugo González | GK | 36 | Mexico | 343 k€ | – | 0 | 0 | 0/0 | skadad, åter Back in training |
+| 12 | Ronaldo Beltrán | GK | 24 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| 22 | Luis García | GK | 33 | Mexico | 609 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Diego Barbosa | RB,RWB,CB | 30 | Mexico | 1,7 M€ | – | 0 | 0 | 0/0 |  |
+| 3 | Antonio Briseño | CB | 32 | Mexico | 435 k€ | – | 0 | 0 | 0/0 |  |
+| 4 | Bruno Méndez | CB | 27 | Uruguay | 2,3 M€ | – | 0 | 0 | 0/0 |  |
+| 6 | Federico Pereira | CB | 26 | Uruguay | 5,5 M€ | – | 0 | 0 | 0/0 |  |
+| 13 | Luan | CB | 33 | Brazil | 656 k€ | – | 0 | 0 | 0/0 |  |
+| 17 | Brian García | LB,RB | 28 | Mexico | 2,1 M€ | – | 0 | 0 | 0/0 |  |
+| 19 | Santiago Simón | RB,RWB,RW,CB,RM | 24 | Argentina | 3,0 M€ | – | 0 | 0 | 0/0 |  |
+| 20 | Jesús Gallardo | LB,LWB,LM | 32 | Mexico | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| 25 | Everardo López | CB,LB | 21 | Mexico | 1,5 M€ | – | 0 | 0 | 0/0 |  |
+| 184 | Sebastián Aceves | RB | 20 | Mexico | 645 k€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Franco Romero | CDM,CM | 26 | Argentina | 3,5 M€ | – | 0 | 0 | 0/0 |  |
+| 7 | Víctor Guzmán | CDM,CAM,LW | 31 | Mexico | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 8 | Nicolás Castro | CAM,CM,LW,CDM,LM | 25 | Argentina | 2,4 M€ | – | 0 | 0 | 0/0 |  |
+| 10 | Jesús Angulo | CAM,RW,RM,CM,ST | 29 | Mexico | 2,2 M€ | – | 0 | 0 | 0/0 |  |
+| 14 | Marcel Ruiz | CDM,CM,CAM | 25 | Mexico | 7,1 M€ | – | 0 | 0 | 0/0 | skadad, åter Early November 2026 |
+| 15 | Pável Pérez | LW,CAM | 28 | Mexico | 1,5 M€ | – | 0 | 0 | 0/0 |  |
+| 24 | Fernando Arce | CDM | 29 | USA | 651 k€ | – | 0 | 0 | 0/0 |  |
+| 35 | Érick Gutiérrez | CAM | 31 | Mexico | 857 k€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Alexis Vega | LW,LM | 28 | Mexico | 3,1 M€ | – | 0 | 0 | 0/0 |  |
+| 11 | Helinho | RW,RM,CDM,ST | 26 | Brazil | 2,8 M€ | – | 0 | 0 | 0/0 |  |
+| 16 | Federico Viñas | ST,RW,CAM | 28 | Uruguay | 1,9 M€ | – | 0 | 0 | 0/0 |  |
+| 21 | Iván López | ST | 27 | Mexico | 1,4 M€ | – | 0 | 0 | 0/0 | skadad, åter Unknown |
+| 23 | Oswaldo Virgen | ST | 21 | Mexico | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 26 | Paulinho | ST | 33 | Portugal | 2,3 M€ | – | 0 | 0 | 0/0 |  |
+| 29 | Jorge Díaz | ST,LW | 28 | Mexico | 359 k€ | – | 0 | 0 | 0/0 |  |

@@ -58,3 +58,49 @@ Form (äldst → senast): VOFOOFFF · senaste match 2026-09-18
 | Motor Lublin | 2 | 0-1-1 | 2–3 | −1,13 | +23 pe | 2025-04-05 1-1 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Ante Šimundža. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Piotr Samiec-Talar (skadad, åter Late October 2026), Damian Warchoł (osäker), Michał Mokrzycki (skadad, åter Out for season)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Karol Niemczycki | GK | 27 | Poland | 313 k€ | 6,79 | 0 | 0 | 0/0 |  |
+| 25 | Michał Szromnik | GK | 33 | Poland | 148 k€ | 6,78 | 0 | 0 | 0/0 |  |
+| 31 | Hubert Śliczniak | Keeper | 19 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 40 | Dominik Klint | Keeper | 17 | Poland | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Dominik Szala | CB | 20 | Poland | 818 k€ | – | 0 | 0 | 0/0 |  |
+| 3 | Irodotos Christodoulou | CB | 24 | Cyprus | 252 k€ | 6,95 | 0 | 0 | 0/0 |  |
+| 4 | Marko Dijaković | CB | 24 | Austria | 126 k€ | – | 0 | 0 | 0/0 |  |
+| 5 | Lamine Ba | CB | 29 | Mauritania | 150 k€ | 6,73 | 0 | 0 | 1/1 |  |
+| 8 | Marc Llinares | LWB | 27 | Spain | 99 k€ | 6,63 | 0 | 0 | 3/0 |  |
+| 21 | Alexander Timossi Andersson | RB,RWB,CB | 25 | Sweden | 566 k€ | 6,55 | 0 | 0 | 1/0 |  |
+| 26 | Adrian Zulewski | Defender | 19 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 27 | Jan Jurčec | RB | 25 | Croatia | 915 k€ | 6,51 | 0 | 0 | 0/0 |  |
+| 33 | Yegor Matsenko | CB | 24 | Ukraine | 190 k€ | 6,73 | 0 | 0 | 0/0 |  |
+| 39 | Szymon Rygiel | Defender | 22 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 44 | Mariusz Malec | CB | 31 | Poland | 116 k€ | 6,82 | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Karol Borys | CAM | 20 | Poland | 765 k€ | – | 0 | 0 | 0/0 |  |
+| 7 | Piotr Samiec-Talar | CM,CAM | 24 | Poland | 206 k€ | 7,69 | 4 | 3 | 0/0 | skadad, åter Late October 2026 |
+| 9 | Damian Warchoł | ST | 31 | Poland | 69 k€ | – | 0 | 0 | 0/0 | osäker |
+| 14 | Michał Mokrzycki | CM | 28 | Poland | 124 k€ | 6,79 | 0 | 1 | 0/0 | skadad, åter Out for season |
+| 15 | Jorge Yriarte | CM | 26 | Venezuela | 187 k€ | 6,63 | 0 | 0 | 1/0 |  |
+| 17 | Karol Linetty | CDM,CM,CAM | 31 | Poland | 600 k€ | 6,80 | 0 | 0 | 0/0 |  |
+| 20 | Grzegorz Tomasiewicz | CM,CDM,CAM | 30 | Poland | 281 k€ | 6,52 | 0 | 0 | 2/0 |  |
+| 36 | Przemyslaw Mazan | Midfielder | 16 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 38 | Dorian Markowski | CM | 18 | Poland | – | 5,99 | 0 | 0 | 0/0 |  |
+| 70 | Miłosz Kozak | LW | 29 | Poland | 83 k€ | – | 0 | 0 | 0/0 |  |
+| 77 | Eniss Shabani | CDM,CM,CAM | 23 | Albania | 421 k€ | 6,91 | 1 | 1 | 3/0 |  |
+| 81 | Patryk Sokołowski | CM | 32 | Poland | 120 k€ | – | 0 | 0 | 0/0 |  |
+| 88 | Adam Ciucka | Midfielder | 18 | Poland | – | 7,38 | 1 | 1 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Ieltsin Camões | ST | 27 | Cape Verde | 717 k€ | 6,26 | 0 | 0 | 0/0 |  |
+| 10 | Malaly Dembélé | LW,ST | 29 | France | 258 k€ | 6,51 | 1 | 1 | 0/0 |  |
+| 11 | Luka Marjanac | ST | 23 | Bosnia and Herzegovina | – | 6,62 | 1 | 0 | 1/0 |  |
+| 19 | Przemysław Banaszak | ST | 29 | Poland | 193 k€ | 6,52 | 2 | 0 | 0/0 |  |
+| 23 | Maksymilian Stangret | Attacker | 21 | Poland | 108 k€ | – | 0 | 0 | 0/0 |  |

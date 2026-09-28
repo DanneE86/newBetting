@@ -21,11 +21,11 @@ Form (äldst → senast): FVVVVFFV · senaste match 2026-09-26
 | Säsong | Liga | M | P/M | Mot marknaden (hemma / borta) | Kryss (odds) | Mål för–emot | xG för–emot | xP/M |
 |---|---|---|---|---|---|---|---|---|
 | 2017/18 | EL1 | 46 | 1,28 | −0,11 (+0,14 / −0,37) | 24 % (27 %) | 1,30–1,43 | 1,51–1,31* | 1,48 |
-| 2018/19 | EL1 | 46 | 1,17 | −0,07 (−0,42 / +0,27) | 33 % (28 %) | 1,02–1,09 | 1,29–1,31* | 1,35 |
+| 2018/19 | EL1 | 46 | 1,17 | −0,07 (−0,42 / +0,27) | 33 % (28 %) | 1,02–1,09 | 1,29–1,32* | 1,35 |
 | 2019/20 | EL1 | 35 | 1,29 | +0,01 (+0,08 / −0,06) | 26 % (27 %) | 1,09–1,40 | 1,24–1,47* | 1,24 |
-| 2020/21 | EL1 | 46 | 0,83 | −0,32 (−0,26 / −0,37) | 17 % (27 %) | 0,87–1,52 | 1,31–1,41* | 1,32 |
+| 2020/21 | EL1 | 46 | 0,83 | −0,32 (−0,26 / −0,37) | 17 % (27 %) | 0,87–1,52 | 1,31–1,42* | 1,32 |
 | 2021/22 | EL2 | 46 | 1,74 | +0,36 (+0,45 / +0,28) | 24 % (28 %) | 1,54–1,07 | 1,51–1,35* | 1,45 |
-| 2022/23 | EL1 | 46 | 1,15 | −0,08 (−0,24 / +0,09) | 24 % (26 %) | 1,26–1,59 | 1,28–1,49* | 1,27 |
+| 2022/23 | EL1 | 46 | 1,15 | −0,08 (−0,24 / +0,09) | 24 % (26 %) | 1,26–1,59 | 1,29–1,49* | 1,27 |
 | 2023/24 | EL1 | 46 | 1,24 | −0,15 (−0,22 / −0,08) | 20 % (27 %) | 1,13–1,48 | 1,35–1,50* | 1,30 |
 | 2024/25 | EL1 | 46 | 0,93 | −0,12 (+0,16 / −0,41) | 15 % (25 %) | 0,96–1,65 | 1,02–1,69* | 0,98 |
 | 2025/26 | EL2 | 46 | 1,35 | −0,04 (+0,09 / −0,16) | 11 % (27 %) | 1,22–1,41 | 1,19–1,30* | 1,32 |
@@ -62,3 +62,37 @@ Form (äldst → senast): FVVVVFFV · senaste match 2026-09-26
 | York | 1 | 0-0-1 | 2–3 | −1,19 | −28 pe | 2026-08-15 2-3 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Steve Evans. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Brad Young | GK | 24 | England | 369 k€ | 6,85 | 0 | 1 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Tom James | RB,LB,CB | 30 | Wales | 156 k€ | 7,40 | 2 | 1 | 2/0 |  |
+| 4 | Kofi Balmer | CB,RB | 26 | Northern Ireland | 265 k€ | 6,98 | 0 | 1 | 3/0 |  |
+| 5 | Alfie Kilgour | CB | 28 | England | 122 k€ | 7,54 | 0 | 1 | 0/0 |  |
+| 6 | Clinton Mola | CDM,CB,LB,CM | 25 | England | 183 k€ | 7,05 | 1 | 0 | 2/0 |  |
+| 14 | Ben Purrington | LB | 30 | England | 92 k€ | 7,00 | 1 | 0 | 1/0 |  |
+| 17 | Ciarán Kelly | CB | 28 | Ireland | 201 k€ | 6,71 | 0 | 0 | 0/0 |  |
+| 22 | Keenan Gough | CB | 20 | England | 259 k€ | 6,77 | 0 | 0 | 0/0 |  |
+| 26 | Riley Harbottle | CB | 26 | England | 249 k€ | 6,91 | 0 | 0 | 1/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 3 | Jack Sparkes | LWB,LB,LM | 25 | England | 211 k€ | 7,43 | 0 | 0 | 0/0 |  |
+| 8 | Reiss-Alexander Russell-Denny | RW,CDM,CAM | 20 | England | – | 6,18 | 0 | 1 | 0/0 |  |
+| 11 | Jack Aitchison | CAM,CDM | 26 | Scotland | 247 k€ | 6,36 | 0 | 0 | 0/0 |  |
+| 15 | Ryan De Havilland | CDM,CM | 25 | England | 268 k€ | – | 0 | 0 | 0/0 |  |
+| 21 | Richard Smallwood | CDM,CM | 35 | England | 85 k€ | 7,05 | 0 | 0 | 1/0 |  |
+| 23 | Macauley Southam-Hales | RWB,RB,RM | 30 | Wales | 95 k€ | 6,60 | 0 | 0 | 0/0 |  |
+| 24 | Tommy Leigh | CAM,CDM,CM | 26 | England | 182 k€ | 7,18 | 2 | 1 | 2/1 |  |
+| 27 | Philip Sanyaolu | Midfielder | 18 | England | – | – | 0 | 0 | 0/0 |  |
+| 30 | Ollie Dewsbury | ST | 18 | Wales | 438 k€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Shaqai Forde | RW,CAM | 22 | England | 232 k€ | 7,05 | 0 | 0 | 1/0 |  |
+| 9 | Joe Quigley | ST | 29 | England | 208 k€ | 6,16 | 0 | 0 | 0/0 |  |
+| 10 | Bobby Kamwa | LW,LM,RW,ST | 26 | Cameroon | 265 k€ | 6,86 | 2 | 0 | 1/0 |  |
+| 19 | Ellis Harrison | ST,LW,CAM | 32 | Wales | 128 k€ | 6,83 | 1 | 0 | 2/0 |  |
+| 29 | Fabrizio Cavegn | ST | 24 | Switzerland | 283 k€ | 6,92 | 3 | 1 | 0/0 |  |

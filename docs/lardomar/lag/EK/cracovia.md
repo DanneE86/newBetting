@@ -58,3 +58,49 @@ Form (äldst → senast): FOVVFFFF · senaste match 2026-09-19
 | Wieczysta Krakow | 1 | 1-0-0 | 3–2 | +1,42 | −28 pe | 2026-08-21 3-2 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Bartosz Grzelak. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Filip Marchwiński (skadad, åter Out for season)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+|  | Konrad Golonka | Keeper | 19 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 13 | Sebastian Madejski | GK | 29 | Poland | 452 k€ | 6,57 | 0 | 0 | 0/0 |  |
+| 77 | Jakub Chrapusta | Keeper | 17 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 91 | Aleksander Bobek | GK | 22 | Poland | 293 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Jakub Wilczek | Defender | 19 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 4 | Gustav Henriksson | CB | 28 | Sweden | 402 k€ | 6,85 | 0 | 0 | 1/0 |  |
+| 15 | Kamil Glik | CB | 38 | Poland | 118 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Dominik Baumgartner | CB | 30 | Austria | 401 k€ | 6,09 | 0 | 0 | 2/1 |  |
+| 25 | Otar Kakabadze | RB,RW,RM,RWB | 31 | Georgia | 564 k€ | 6,75 | 0 | 1 | 1/0 |  |
+| 39 | Mauro Perković | LB,LM | 23 | Croatia | 2,2 M€ | 7,13 | 1 | 1 | 0/0 |  |
+| 61 | Brahim Traoré | CB | 22 | France | – | 7,00 | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Beno Selan | CM,CDM | 21 | Slovenia | 769 k€ | 6,28 | 0 | 0 | 0/0 |  |
+| 6 | Amir Al-Ammari | CM,CDM | 29 | Iraq | 662 k€ | 6,68 | 0 | 0 | 2/0 |  |
+| 7 | Mateusz Praszelik | CAM,CM,LW | 26 | Poland | 347 k€ | 6,09 | 0 | 0 | 0/0 |  |
+| 10 | Filip Marchwiński | LW | 24 | Poland | 1,3 M€ | 6,02 | 0 | 0 | 1/0 | skadad, åter Out for season |
+| 19 | Mateusz Tabisz | LW | 18 | Poland | 626 k€ | – | 0 | 0 | 0/0 |  |
+| 20 | Karol Knap | CM,LB,CAM | 25 | Poland | 335 k€ | 6,28 | 0 | 0 | 0/0 |  |
+| 29 | Wiktor Dej | Midfielder | 18 | Poland | – | 6,54 | 0 | 0 | 0/0 |  |
+| 38 | Alex Marciniak | Midfielder | 18 | Wales | – | – | 0 | 0 | 0/0 |  |
+| 43 | Mateusz Klich | CM,CDM,CAM | 36 | Poland | 162 k€ | 7,17 | 0 | 2 | 3/0 |  |
+| 70 | Dijon Kameri | CAM,LW,CM,ST | 22 | Austria | 759 k€ | 6,89 | 0 | 0 | 2/0 |  |
+| 79 | Dominik Piła | RM,RB,LB | 25 | Poland | 473 k€ | 6,65 | 1 | 1 | 1/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Wiktor Bogacz | ST | 22 | Poland | 1,5 M€ | 5,95 | 0 | 0 | 0/0 |  |
+| 11 | Lasse Nordås | ST | 24 | Norway | 2,2 M€ | 6,50 | 1 | 0 | 0/0 |  |
+| 14 | Ajdin Hasić | RW,LW,RM,CAM | 24 | Bosnia and Herzegovina | 1,8 M€ | 7,51 | 3 | 2 | 1/0 |  |
+| 17 | Martin Minchev | LW,ST,RW,LM | 25 | Bulgaria | 657 k€ | 7,07 | 2 | 0 | 1/0 |  |
+| 18 | Kahveh Zahiroleslam | ST | 24 | USA | 307 k€ | 6,26 | 0 | 0 | 0/0 |  |
+| 21 | Kacper Śmiglewski | ST | 21 | Poland | 277 k€ | – | 0 | 0 | 0/0 |  |
+| 27 | Siem Eyob-Abraha | Attacker | 18 | Eritrea | – | – | 0 | 0 | 0/0 |  |
+| 28 | Vincent Burlet | LW,LB,LM | 21 | Belgium | 1,2 M€ | 6,26 | 0 | 0 | 0/0 |  |
+| 47 | Sayfallah Ltaief | LW,ST | 26 | Tunisia | 843 k€ | 6,90 | 0 | 1 | 1/0 |  |
+| 90 | Mohamed Berte | ST | 24 | Belgium | 709 k€ | 6,39 | 1 | 0 | 1/0 |  |
+| 92 | Mateusz Skoczylas | Attacker | 20 | Poland | 412 k€ | – | 0 | 0 | 0/0 |  |

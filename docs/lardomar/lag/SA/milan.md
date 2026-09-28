@@ -4,8 +4,8 @@ Genererad 2026-09-28. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden"
 
 ## I korthet
 
-- Senaste 8: xG-målskillnaden är −0,54 per match sämre än målskillnaden.
 - Stark historik mot Bologna (+0,51 p/match mot marknaden, 16 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Utan Christian Pulisic (10 % av anfallet): 1,86 poäng per match mot 1,77 med (7 mot 74 matcher), mot marknaden +0,09 mot −0,08.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -13,8 +13,8 @@ Form (äldst → senast): FVFVVOOV · senaste match 2026-09-20
 
 | Mått | Värde |
 |---|---|
-| Tur (poäng − xP per match) | +0,28 |
-| xG-målskillnad − målskillnad | −0,54 |
+| Tur (poäng − xP per match) | +0,19 |
+| xG-målskillnad − målskillnad | −0,29 |
 | Poäng mot marknaden per match | −0,11 |
 
 ## Säsonger
@@ -30,9 +30,22 @@ Form (äldst → senast): FVFVVOOV · senaste match 2026-09-20
 | 2023/24 | SA | 38 | 1,97 | +0,17 (+0,14 / +0,20) | 24 % (25 %) | 2,00–1,29 | 1,89–1,26 | 1,76 |
 | 2024/25 | SA | 38 | 1,66 | −0,20 (−0,15 / −0,25) | 24 % (24 %) | 1,61–1,13 | 1,83–1,24 | 1,76 |
 | 2025/26 | SA | 38 | 1,84 | −0,02 (−0,29 / +0,25) | 26 % (26 %) | 1,39–0,92 | 1,71–1,21 | 1,67 |
-| 2026/27 | SA | 5 | 2,20 | +0,59 (+0,70 / +0,52) | 40 % (25 %) | 2,00–0,80 | 1,43–1,08* | 1,61 |
+| 2026/27 | SA | 5 | 2,20 | +0,59 (+0,70 / +0,52) | 40 % (25 %) | 2,00–0,80 | 1,94–1,18 | 1,76 |
 
-\* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+## Nyckelspelare (Understat, 2024/25–)
+
+Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
+
+| Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
+|---|---|---|---|---|
+| Gonçalo Ramos | 15 % | 0 / 81 | – / 1,78 | – / −0,07 |
+| Christian Pulisic | 10 % | 7 / 74 | 1,86 / 1,77 | +0,09 / −0,08 |
+| Diego Moreira | 9 % | 0 / 81 | – / 1,78 | – / −0,07 |
+| Samuel Chukwueze | 9 % | 9 / 72 | 2,44 / 1,69 | +0,35 / −0,12 |
+| Rafael Leão | 9 % | 3 / 78 | 2,33 / 1,76 | +0,01 / −0,07 |
+| Christopher Nkunku | 8 % | 2 / 79 | 2,00 / 1,77 | −0,25 / −0,06 |
+
+Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -82,3 +95,44 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-10-05 | Europa 2511 | Juventus - Milan | X | 32 % | 35 % |
 | 2025-09-28 | Europa 2509 | Milan - Napoli | 1 ✓ | 44 % | 49 % |
 | 2025-09-14 | Europa 2505 | Milan - Bologna | 1 ✓ | 56 % | 52 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Ruben Amorim. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Pietro Terracciano | GK | 36 | Italy | 578 k€ | – | 0 | 0 | 0/0 |  |
+| 16 | Mike Maignan | GK | 31 | France | 16,2 M€ | 7,39 | 0 | 0 | 0/0 |  |
+| 41 | Leo Paul Bouyer | Keeper | 18 | France | – | – | 0 | 0 | 0/0 |  |
+| 96 | Lorenzo Torriani | GK | 21 | Italy | 840 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 5 | Koni De Winter | CB | 24 | Belgium | 20,9 M€ | 7,19 | 0 | 0 | 1/0 |  |
+| 13 | Sankhoun Diawara | CB,LB | 20 | France | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 23 | Fikayo Tomori | CB | 28 | England | 12,0 M€ | – | 0 | 0 | 0/0 |  |
+| 31 | Strahinja Pavlović | CB | 25 | Serbia | 22,8 M€ | 7,53 | 0 | 1 | 2/0 |  |
+| 34 | Mario Gila | CB | 26 | Spain | 21,1 M€ | 7,17 | 0 | 0 | 1/0 |  |
+| 35 | Valeri Vladimirov | Defender | 18 | Bulgaria | – | – | 0 | 0 | 0/0 |  |
+| 42 | Filippo Terracciano | CB,RB | 23 | Italy | 5,0 M€ | – | 0 | 0 | 0/0 |  |
+| 46 | Matteo Gabbia | CB | 26 | Italy | 18,3 M€ | 6,16 | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Warren Bondo | CM,CDM | 23 | France | 7,0 M€ | – | 0 | 0 | 0/0 |  |
+| 2 | Pervis Estupinán | LM,LWB,LB | 28 | Ecuador | 13,2 M€ | 6,99 | 0 | 0 | 1/0 |  |
+| 8 | Ruben Loftus-Cheek | CAM,CM,ST | 30 | England | 5,0 M€ | 6,50 | 0 | 0 | 1/0 |  |
+| 12 | Adrien Rabiot | CM,CDM | 31 | France | 14,3 M€ | 7,35 | 2 | 2 | 0/0 |  |
+| 14 | Luka Modrić | CM,CDM | 41 | Croatia | 1,7 M€ | 6,99 | 0 | 0 | 0/0 |  |
+| 28 | Christian Comotto | CM,CDM | 18 | Italy | 2,5 M€ | – | 0 | 0 | 0/0 |  |
+| 30 | Ardon Jashari | CM,CDM | 24 | Switzerland | 24,7 M€ | 6,59 | 0 | 0 | 0/0 |  |
+| 33 | Davide Bartesaghi | LM,LB,LWB,CB | 20 | Italy | 7,8 M€ | 6,50 | 0 | 0 | 0/0 |  |
+| 56 | Alexis Saelemaekers | RM,RW,CAM | 27 | Belgium | 16,7 M€ | 7,11 | 0 | 1 | 0/0 |  |
+| 70 | Alphadjo Cissè | CAM,ST,CM | 19 | Italy | 2,6 M€ | 6,90 | 2 | 0 | 1/0 |  |
+| 80 | Yunus Musah | CDM | 23 | USA | 15,5 M€ | 6,99 | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Gonçalo Ramos | ST | 25 | Portugal | 49,4 M€ | 7,12 | 1 | 1 | 0/0 |  |
+| 11 | Christian Pulisic | ST,LW | 28 | USA | 32,5 M€ | 7,92 | 1 | 1 | 1/0 |  |
+| 20 | Omari Hutchinson | RW,RM,CAM,LW | 22 | England | 25,2 M€ | 6,12 | 0 | 0 | 0/0 |  |
+| 21 | Samuel Chukwueze | LW,RWB,RM,RW | 27 | Nigeria | 13,2 M€ | 7,63 | 0 | 2 | 0/0 |  |
+| 22 | Diego Moreira | RW,LWB,LM,RM,RWB | 22 | Belgium | 15,5 M€ | 7,61 | 3 | 0 | 0/0 |  |
+| 25 | Cheveyo Mul-Balentien | Attacker | 19 | Suriname | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 73 | Francesco Camarda | ST | 18 | Italy | 14,8 M€ | – | 0 | 0 | 0/0 |  |

@@ -68,3 +68,46 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-11-02 | Europa 2519 | Djurgården - IFK Göteborg | X | 16 % | 22 % |
 | 2025-10-26 | Europa 2517 | Halmstad - IFK Göteborg | 2 ✓ | 54 % | 47 % |
 | 2025-08-24 | Europa 2499 | Malmö - IFK Göteborg | X | 12 % | 21 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Joachim Björklund. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** August Erlingmark (skadad, åter Mid October 2026), Alexander Jallow (skadad, åter About 1-2 weeks), Ramon-Pascal Lundqvist (skadad, åter Mid October 2026), Arbnor Muçolli (skadad, åter Mid October 2026), Adam Bergmark Wiberg (skadad, åter About 1-2 weeks)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Jonathan Rasheed | GK | 34 | Norway | 110 k€ | – | 0 | 0 | 0/0 |  |
+| 12 | Viktor Andersson | GK | 22 | Sweden | 367 k€ | 7,02 | 0 | 0 | 0/0 |  |
+| 25 | Elis Bishesari | GK | 21 | Sweden | 1,8 M€ | 6,28 | 0 | 0 | 0/0 |  |
+| 31 | Alexander Carlsson | Keeper | 19 | Sweden | – | – | 0 | 0 | 0/0 |  |
+| 34 | Fredrik Andersson | GK | 37 | Sweden | 124 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 3 | August Erlingmark | CB,CM | 28 | Sweden | 717 k€ | 6,78 | 1 | 0 | 4/0 | skadad, åter Mid October 2026 |
+| 5 | Jonas Bager | CB | 30 | Denmark | 287 k€ | 6,71 | 0 | 0 | 4/0 |  |
+| 6 | Hjörtur Hermannsson | CB | 31 | Iceland | 134 k€ | 7,00 | 1 | 0 | 3/0 |  |
+| 13 | Gustav Svensson | CB | 39 | Sweden | 155 k€ | – | 0 | 0 | 0/0 |  |
+| 17 | Alexander Jallow | RB,LB | 28 | Sweden | 388 k€ | 6,62 | 0 | 0 | 1/0 | skadad, åter About 1-2 weeks |
+| 18 | Felix Eriksson | RB,LB | 22 | Sweden | 579 k€ | 6,81 | 2 | 1 | 3/0 |  |
+| 20 | Gabriel Elias Ersoy | RB | 21 | Sweden | 394 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Noah Tolf | LB | 21 | Sweden | 1,7 M€ | 7,30 | 0 | 2 | 1/0 |  |
+| 28 | Issaka Seidu | LB,LW | 20 | Ghana | 309 k€ | 6,36 | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Ifeoluwa Adewale | Midfielder | 18 | Nigeria | – | – | 0 | 0 | 0/0 |  |
+| 4 | Kevin Ackermann | CM,CDM | 25 | Sweden | 368 k€ | 6,99 | 0 | 0 | 1/0 |  |
+| 15 | David Kruse | CM | 24 | Denmark | 797 k€ | 7,00 | 2 | 1 | 3/0 |  |
+| 21 | Leo Radakovic | Midfielder | 19 | Sweden | – | 5,93 | 0 | 0 | 1/0 |  |
+| 23 | Kolbeinn Thórdarson | CM | 26 | Iceland | 906 k€ | 6,33 | 0 | 0 | 5/0 |  |
+| 24 | Oliver Maansson | CM | 17 | Sweden | – | 7,25 | 0 | 1 | 1/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Lazarus Laku | Attacker | 18 | South Sudan | – | – | 0 | 0 | 0/0 |  |
+| 7 | Alexander Simmelhack | ST | 20 | Denmark | 910 k€ | 7,51 | 2 | 0 | 0/0 |  |
+| 8 | Sam Larsson | ST,CAM,LW,CM | 33 | Sweden | 392 k€ | 7,83 | 7 | 2 | 0/0 |  |
+| 9 | Max Fenger | ST | 25 | Denmark | 1,7 M€ | 6,61 | 0 | 0 | 2/0 |  |
+| 10 | Ramon-Pascal Lundqvist | LW | 29 | Sweden | 461 k€ | 6,28 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 11 | Nino Žugelj | RW | 26 | Slovenia | 657 k€ | 6,65 | 2 | 0 | 0/0 |  |
+| 14 | Tobias Heintz | LW,CM,ST,LM | 28 | Norway | 1,5 M€ | 7,70 | 6 | 5 | 5/0 |  |
+| 19 | Arbnor Muçolli | CAM | 27 | Albania | 640 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 29 | Adam Bergmark Wiberg | ST,RM,LW | 29 | Sweden | 332 k€ | 6,85 | 1 | 3 | 3/0 | skadad, åter About 1-2 weeks |
+| 30 | Tiago Coimbra | ST | 22 | Canada | 355 k€ | 6,34 | 0 | 0 | 1/0 |  |

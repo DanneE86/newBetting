@@ -60,3 +60,53 @@ Form (äldst → senast): VVVVFFVV · senaste match 2026-09-20
 | V-Varen Nagasaki | 1 | 1-0-0 | 4–2 | +0,86 | −21 pe | 2026-08-21 4-2 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Ricardo Rodríguez. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Haruki Saruta | Keeper | 27 | Japan | 232 k€ | – | 0 | 0 | 0/0 |  |
+| 25 | Ryosuke Kojima | GK | 29 | Japan | 615 k€ | 6,42 | 0 | 0 | 0/0 |  |
+| 29 | Kengo Nagai | GK | 31 | Japan | 146 k€ | – | 0 | 0 | 0/0 |  |
+| 41 | Daiki Sakata | GK | 32 | Japan | 164 k€ | – | 0 | 0 | 0/0 |  |
+| 46 | Kenta Matsumoto | GK | 29 | Japan | 227 k€ | – | 0 | 0 | 0/0 |  |
+| 77 | Tomoya Wakahara | GK | 26 | Japan | 260 k€ | 5,81 | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Hiromu Mitsumaru | CB,LWB | 33 | Japan | 166 k€ | 6,25 | 0 | 0 | 0/0 |  |
+| 4 | Taiyo Koga | CB | 27 | Japan | 714 k€ | 7,38 | 0 | 0 | 1/0 |  |
+| 13 | Tomoya Inukai | CB | 33 | Japan | 155 k€ | – | 0 | 0 | 0/0 |  |
+| 26 | Daiki Sugioka | CB | 28 | Japan | 226 k€ | 7,10 | 0 | 0 | 0/0 |  |
+| 34 | Takumi Tsuchiya | CB | 22 | Japan | 409 k€ | – | 0 | 0 | 0/0 |  |
+| 42 | Wataru Harada | CB | 30 | Japan | 413 k€ | 7,30 | 0 | 0 | 0/0 |  |
+| 88 | Seiya Baba | CB | 24 | Japan | 425 k€ | 6,39 | 0 | 0 | 1/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Keita Endo | LM,LWB,RM | 28 | Japan | 273 k€ | 6,95 | 2 | 0 | 1/0 |  |
+| 6 | Yuto Yamada | CDM | 26 | Japan | 600 k€ | – | 0 | 0 | 0/0 |  |
+| 8 | Yoshio Koizumi | CAM | 29 | Japan | 565 k€ | 7,69 | 3 | 2 | 1/0 |  |
+| 11 | Masaki Watai | CAM | 27 | Japan | 373 k€ | 7,46 | 0 | 5 | 2/0 |  |
+| 16 | Koya Yuruki | CAM,LW | 31 | Japan | 251 k€ | 6,18 | 0 | 0 | 0/0 |  |
+| 17 | Kohei Tezuka | CM | 30 | Japan | 154 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | Hayato Nakama | CAM | 34 | Japan | 152 k€ | 5,94 | 0 | 0 | 0/0 |  |
+| 20 | Yusuke Segawa | CAM | 32 | Japan | 193 k€ | 7,30 | 7 | 2 | 0/0 |  |
+| 21 | Yudai Konishi | CDM | 28 | Japan | 188 k€ | 6,35 | 0 | 0 | 0/0 |  |
+| 23 | Kaiji Chonan | RWB | 17 | Japan | – | – | 0 | 0 | 0/0 |  |
+| 24 | Tojiro Kubo | RWB | 27 | Japan | 724 k€ | 7,70 | 2 | 1 | 0/0 |  |
+| 27 | Koki Kumasaka | CDM | 25 | Japan | 257 k€ | 7,13 | 0 | 0 | 1/0 |  |
+| 28 | Sachiro Toshima | CDM | 31 | Japan | 168 k€ | – | 0 | 0 | 0/0 |  |
+| 31 | Shumpei Naruse | CB | 25 | Japan | 253 k€ | – | 0 | 0 | 0/0 |  |
+| 32 | Yusei Yamanouchi | RWB,LWB,CB | 23 | Japan | – | – | 0 | 0 | 0/0 |  |
+| 39 | Nobuteru Nakagawa | CDM | 24 | Japan | 540 k€ | 7,39 | 0 | 3 | 1/0 |  |
+| 40 | Riki Harakawa | CDM | 33 | Japan | 249 k€ | – | 0 | 0 | 1/0 |  |
+| 43 | Yuito Kamo | Midfielder | 17 | Japan | – | – | 0 | 0 | 0/0 |  |
+| 44 | Kenshin Yuba | RWB,LWB,LW,RW | 25 | Japan | 264 k€ | 6,44 | 1 | 1 | 0/0 |  |
+| 87 | Hinata Yamauchi | CAM,RM | 25 | Japan | 273 k€ | 6,62 | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Mohamad Sadiki Wade | ST | 20 | Japan | 148 k€ | – | 0 | 0 | 0/0 |  |
+| 9 | Mao Hosoya | ST | 25 | Japan | 1,4 M€ | 6,03 | 0 | 0 | 0/0 |  |
+| 14 | Tomoaki Okubo | RW | 28 | Japan | 274 k€ | – | 0 | 0 | 0/0 |  |
+| 15 | Shota Fujio | ST | 25 | Japan | 594 k€ | 6,47 | 0 | 0 | 0/0 |  |
+| 18 | Yuki Kakita | ST | 29 | Japan | 437 k€ | 6,67 | 2 | 0 | 0/0 |  |
+| 36 | Naberuyoshitaka Furusawa | Attacker | 23 | Japan | – | – | 0 | 0 | 0/0 |  |

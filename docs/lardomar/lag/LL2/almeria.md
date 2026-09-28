@@ -24,7 +24,7 @@ Form (äldst → senast): VVFFVVVV · senaste match 2026-09-27
 |---|---|---|---|---|---|---|---|---|
 | 2017/18 | LL2 | 42 | 1,14 | −0,03 (+0,15 / −0,21) | 29 % (30 %) | 0,90–1,07 | 1,13–1,39* | 1,20 |
 | 2018/19 | LL2 | 41 | 1,39 | +0,13 (+0,25 / −0,01) | 37 % (31 %) | 1,22–0,95 | 1,36–1,13* | 1,51 |
-| 2019/20 | LL2 | 42 | 1,52 | +0,12 (−0,09 / +0,32) | 31 % (31 %) | 1,48–1,02 | 1,28–1,14* | 1,48 |
+| 2019/20 | LL2 | 42 | 1,52 | +0,12 (−0,09 / +0,32) | 31 % (31 %) | 1,48–1,02 | 1,29–1,15* | 1,48 |
 | 2020/21 | LL2 | 42 | 1,74 | +0,11 (+0,09 / +0,12) | 24 % (30 %) | 1,45–0,95 | 1,37–1,25* | 1,45 |
 | 2021/22 | LL2 | 42 | 1,93 | +0,18 (+0,21 / +0,16) | 21 % (27 %) | 1,62–0,83 | 1,60–1,11* | 1,69 |
 | 2022/23 | LL | 38 | 1,08 | +0,10 (+0,50 / −0,30) | 21 % (25 %) | 1,29–1,71 | 1,21–1,82 | 1,09 |
@@ -62,3 +62,48 @@ Form (äldst → senast): VVFFVVVV · senaste match 2026-09-27
 | Celta B | 1 | 1-0-0 | 2–0 | +0,80 | −20 pe | 2026-09-20 2-0 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: García Pimienta. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Gui Guedes (skadad, åter Late November 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Andrés Fernández | GK | 39 | Spain | 203 k€ | 7,46 | 0 | 0 | 1/0 |  |
+| 13 | Fernando Martínez | GK | 36 | Spain | 131 k€ | – | 0 | 0 | 0/0 |  |
+| 30 | Jesús López | Keeper | 24 | Spain | – | – | 0 | 0 | 0/0 |  |
+| 31 | Áron Yaakobishvili | GK | 20 | Hungary | 2,0 M€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Marcos Luna | RB | 23 | Spain | 400 k€ | 7,01 | 0 | 1 | 1/0 |  |
+| 3 | Álex Muñoz | LB,CB | 32 | Spain | 640 k€ | 6,94 | 0 | 0 | 1/0 |  |
+| 5 | Jorge Pulido | CB | 35 | Spain | 326 k€ | 6,90 | 0 | 0 | 0/0 |  |
+| 18 | Federico Bonini | CB | 25 | Italy | 2,2 M€ | 7,10 | 1 | 0 | 2/0 |  |
+| 19 | Rodrigo Ely | CB | 32 | Brazil | 417 k€ | 7,09 | 0 | 0 | 1/0 |  |
+| 21 | Chumi | CB | 27 | Spain | 633 k€ | 7,78 | 0 | 0 | 0/0 |  |
+| 22 | Daijiro Chirino | RB,RWB | 24 | Netherlands | 1,4 M€ | 6,55 | 0 | 0 | 0/0 |  |
+| 32 | Andrej Popović | Defender | 20 | Serbia | 393 k€ | – | 0 | 0 | 0/0 |  |
+| 32 | Pedro Cedillo | CB | 19 | Spain | 596 k€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Mikel Vesga | CDM | 33 | Spain | 775 k€ | 6,74 | 0 | 0 | 0/0 |  |
+| 8 | Gui Guedes | CDM,CM | 24 | Portugal | 637 k€ | 7,69 | 0 | 0 | 0/0 | skadad, åter Late November 2026 |
+| 11 | Sergio Arribas | CAM,RW | 24 | Spain | 9,5 M€ | 6,78 | 0 | 0 | 0/0 |  |
+| 14 | Javi Muñoz | CM,CAM,CDM | 31 | Spain | 952 k€ | 7,99 | 2 | 2 | 1/0 |  |
+| 15 | Leonardo Lelo | LM,LB,LWB,CB | 26 | Portugal | 3,9 M€ | 6,88 | 0 | 0 | 0/0 |  |
+| 17 | Brian Cipenga | LM,LW,RM,CM | 28 | DR Congo | 773 k€ | 7,49 | 1 | 3 | 1/0 |  |
+| 26 | Kassoum Kone | Midfielder | 19 | France | – | – | 0 | 0 | 0/0 |  |
+| 29 | Stefan Džodić | CDM,CM | 21 | Serbia | 1,1 M€ | 7,28 | 1 | 0 | 2/0 |  |
+| 33 | Quim Junyent | CM,CDM | 19 | Spain | – | 6,53 | 0 | 0 | 1/1 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Ibrahima Koné | ST | 27 | Mali | 455 k€ | – | 0 | 0 | 0/0 |  |
+|  | Ivan Parra | Attacker | 19 | Switzerland | 534 k€ | – | 0 | 0 | 0/0 |  |
+|  | Marciano Tchami | LW | 22 | Guinea-Bissau | 319 k€ | – | 0 | 0 | 0/0 |  |
+| 7 | Jon Morcillo | LW,LM | 28 | Spain | 1,5 M€ | 6,17 | 0 | 0 | 0/0 |  |
+| 9 | Thalys | ST | 21 | Brazil | 2,3 M€ | 7,50 | 1 | 0 | 0/0 |  |
+| 10 | Nico Melamed | LW,CAM | 25 | Spain | 2,2 M€ | 6,90 | 2 | 1 | 1/0 |  |
+| 12 | Léo Baptistão | RW,ST | 34 | Brazil | 260 k€ | 7,10 | 1 | 1 | 0/0 |  |
+| 20 | Álex Sola | RW,LW | 27 | Spain | 1,2 M€ | 6,18 | 0 | 0 | 0/0 |  |
+| 23 | Adrián Embarba | LW,RW | 34 | Spain | 501 k€ | 6,64 | 0 | 0 | 1/0 |  |
+| 24 | Miguel de la Fuente | ST | 27 | Spain | 1,6 M€ | 7,14 | 2 | 1 | 0/0 |  |

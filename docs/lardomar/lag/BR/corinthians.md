@@ -61,3 +61,65 @@ Form (äldst → senast): OVFFFFFF · senaste match 2026-09-20
 | Remo | 1 | 1-0-0 | 3–0 | +0,89 | −23 pe | 2026-07-23 3-0 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Fernando Diniz. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Gabriel Paulista (osäker), André Ramalho (osäker), Zakaria Labyad (skadad, åter Out for season), Yuri Alberto (skadad, åter A few weeks), Kayke (skadad, åter Out for season)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Hugo Souza | GK | 27 | Brazil | 8,0 M€ | – | 0 | 0 | 0/0 |  |
+| 40 | Felipe Longo | GK | 21 | Brazil | 878 k€ | – | 0 | 0 | 0/0 |  |
+| 50 | Matheus Corrêa | Keeper | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 51 | Kauê Camargo | GK | 22 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 71 | Gustavo Milani | Keeper | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Matheuzinho | RB,RWB,RM | 26 | Brazil | 5,2 M€ | – | 0 | 0 | 0/0 |  |
+| 3 | Gabriel Paulista | CB | 35 | Brazil | 926 k€ | – | 0 | 0 | 0/0 | osäker |
+| 5 | André Ramalho | CB | 34 | Brazil | 525 k€ | – | 0 | 0 | 0/0 | osäker |
+| 13 | Gustavo Henrique | CB | 33 | Brazil | 832 k€ | – | 0 | 0 | 0/0 |  |
+| 20 | Pedro Milans | RB | 24 | Uruguay | 1,4 M€ | – | 0 | 0 | 0/0 |  |
+| 21 | Matheus Bidu | LB,LWB | 27 | Brazil | 2,6 M€ | – | 0 | 0 | 0/0 |  |
+| 26 | Fabrizio Angileri | LB,CB | 32 | Argentina | 287 k€ | – | 0 | 0 | 0/0 |  |
+| 47 | João Pedro | CB | 22 | Brazil | 1,7 M€ | – | 0 | 0 | 0/0 |  |
+| 55 | Iago Machado | CB | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 59 | João Jacaré | RB | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 62 | Guilherme Pellegrin | Defender | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 84 | Yago Melo | Defender | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 85 | Levi Dias | Defender | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 86 | João Vitor | Defender | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 7 | Breno Bidon | RW,LW,CDM,CAM,CM,LM,RM | 21 | Brazil | 16,8 M€ | – | 0 | 0 | 0/0 |  |
+| 8 | Rodrigo Garro | CAM,ST | 28 | Argentina | 8,2 M€ | – | 0 | 0 | 0/0 |  |
+| 14 | Raniele | CDM,CB,CM,RB | 29 | Brazil | 2,5 M€ | – | 0 | 0 | 0/0 |  |
+| 19 | André Carrillo | CDM,CM,RW,RM,CAM | 35 | Peru | 395 k€ | – | 0 | 0 | 0/0 |  |
+| 23 | Matheus Pereira | CDM,CAM,CM | 28 | Brazil | 1,7 M€ | – | 0 | 0 | 0/0 |  |
+| 29 | Allan | CDM | 29 | Brazil | 1,7 M€ | – | 0 | 0 | 0/0 |  |
+| 35 | Charles | CDM | 30 | Brazil | 840 k€ | – | 0 | 0 | 0/0 |  |
+| 46 | Hugo | LB,LM,LWB | 29 | Brazil | 390 k€ | – | 0 | 0 | 0/0 |  |
+| 48 | Guilherme Amorim | Midfielder | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 49 | André | CDM,LW,CM,RW,CAM | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 52 | Zakaria Labyad | LW | 33 | Morocco | 310 k€ | – | 0 | 0 | 0/0 | skadad, åter Out for season |
+| 54 | Bahia | CDM | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 65 | Pedro Thomas | Midfielder | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 75 | Guilherme Caraguá | Midfielder | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 80 | Alex Santana | CM | 31 | Brazil | 858 k€ | – | 0 | 0 | 0/0 |  |
+| 89 | Luiz Fabio | Midfielder | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Yuri Alberto | ST | 25 | Brazil | 18,5 M€ | – | 0 | 0 | 0/0 | skadad, åter A few weeks |
+| 10 | Memphis Depay | ST | 32 | Netherlands | 2,6 M€ | – | 0 | 0 | 0/0 |  |
+| 11 | Vitinho | LW,ST | 32 | Brazil | 420 k€ | – | 0 | 0 | 0/0 |  |
+| 18 | Pedro Raul | ST | 29 | Brazil | 1,9 M€ | – | 0 | 0 | 0/0 |  |
+| 31 | Kayke | LW,LM | 22 | Brazil | 1,3 M€ | – | 0 | 0 | 0/0 | skadad, åter Out for season |
+| 37 | Kaio César | RW,CAM | 22 | Brazil | 2,9 M€ | – | 0 | 0 | 0/0 |  |
+| 56 | Gui Negão | ST | 19 | Brazil | 9,5 M€ | – | 0 | 0 | 0/0 |  |
+| 57 | Nicolas Araújo | Attacker | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 61 | Dieguinho | RW | 19 | Brazil | 1,7 M€ | – | 0 | 0 | 0/0 |  |
+| 64 | Luiz Fernando | Attacker | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 67 | Nícollas | Attacker | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 77 | Jesse Lingard | ST,LW,CAM | 33 | England | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 78 | Christian Santos | Attacker | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 79 | Kayque | Attacker | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |

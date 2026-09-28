@@ -24,10 +24,10 @@ Form (äldst → senast): OFFOFOFF · senaste match 2026-09-19
 | 2017/18 | ED | 34 | 1,09 | +0,01 (+0,01 / +0,01) | 21 % (24 %) | 1,47–1,85 | 1,25–1,84* | 1,07 |
 | 2018/19 | ED | 34 | 1,29 | +0,07 (−0,20 / +0,34) | 15 % (24 %) | 1,71–2,12 | 1,31–1,66* | 1,20 |
 | 2019/20 | ED | 26 | 1,69 | +0,34 (+0,38 / +0,31) | 19 % (24 %) | 1,42–1,31 | 1,34–1,64* | 1,22 |
-| 2020/21 | ED | 34 | 0,91 | −0,23 (−0,16 / −0,31) | 21 % (23 %) | 1,18–2,00 | 1,34–1,68* | 1,20 |
-| 2021/22 | ED | 34 | 0,97 | −0,12 (+0,14 / −0,37) | 18 % (24 %) | 0,94–1,68 | 1,10–1,69* | 1,04 |
+| 2020/21 | ED | 34 | 0,91 | −0,23 (−0,16 / −0,31) | 21 % (23 %) | 1,18–2,00 | 1,35–1,68* | 1,20 |
+| 2021/22 | ED | 34 | 0,97 | −0,12 (+0,14 / −0,37) | 18 % (24 %) | 0,94–1,68 | 1,10–1,70* | 1,04 |
 | 2024/25 | ED | 34 | 0,76 | −0,16 (−0,44 / +0,12) | 24 % (25 %) | 1,00–1,65 | 1,03–1,88* | 0,88 |
-| 2026/27 | ED | 7 | 0,29 | −0,43 (−0,83 / +0,10) | 29 % (20 %) | 0,86–2,86 | 1,13–2,34* | 0,78 |
+| 2026/27 | ED | 7 | 0,29 | −0,43 (−0,83 / +0,10) | 29 % (20 %) | 0,86–2,86 | 1,14–2,34* | 0,78 |
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
 
@@ -59,3 +59,56 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | Datum | Spel | Match | Utfall | Folket på laget | Vår procent |
 |---|---|---|---|---|---|
 | 2026-05-16 | Europa 2575 | Willem II - Almere City | 1 ✓ | 62 % | 46 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: John Stegeman. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Thomas Didillon-Hödl (skadad, åter Unknown), Justin Hoogma (skadad, åter Late October 2027), Armin Culum (skadad, åter Day to day), Amine Lachkar (skadad, åter Day to day)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+|  | Boet van der Linden | Keeper | 20 | Netherlands | – | – | 0 | 0 | 0/0 |  |
+| 1 | Thomas Didillon-Hödl | GK | 30 | France | 314 k€ | 6,21 | 0 | 0 | 0/0 | skadad, åter Unknown |
+| 21 | Wouter van der Steen | GK | 36 | Netherlands | 91 k€ | 6,49 | 0 | 0 | 0/0 |  |
+| 26 | Maxime Delanghe | GK | 25 | Belgium | 1,3 M€ | 6,23 | 0 | 0 | 0/0 |  |
+| 31 | Karst de Leeuw | GK | 22 | Netherlands | 301 k€ | 6,43 | 0 | 0 | 0/0 |  |
+| 41 | Tygo Kotte | Keeper | 19 | Netherlands | – | – | 0 | 0 | 0/0 |  |
+| 99 | Vince van der Bas | Keeper | 20 | Netherlands | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Alessandro Ciranni | RB | 30 | Belgium | 134 k€ | 6,09 | 1 | 0 | 0/0 |  |
+| 3 | Finn Stam | CB,RB,LB | 23 | Netherlands | 435 k€ | 6,31 | 0 | 0 | 0/0 |  |
+| 4 | Justin Hoogma | CB | 28 | Netherlands | 269 k€ | 5,55 | 0 | 0 | 0/0 | skadad, åter Late October 2027 |
+| 5 | Hidde ter Avest | RB,RW | 29 | Netherlands | 366 k€ | 6,76 | 0 | 1 | 0/0 |  |
+| 14 | Jens Mathijsen | RB | 19 | Netherlands | 845 k€ | – | 0 | 0 | 0/0 |  |
+| 15 | Amine Et-Taïbi | RB | 23 | Belgium | 365 k€ | 5,70 | 0 | 0 | 0/0 |  |
+| 22 | Per van Loon | LB,RB,RW | 21 | Netherlands | 431 k€ | 6,19 | 0 | 0 | 0/0 |  |
+| 23 | Maxim Dekker | CB | 22 | Netherlands | 1,1 M€ | 6,32 | 0 | 0 | 0/0 |  |
+| 24 | Nathan Tjoe-A-On | LB,LM | 24 | Indonesia | 370 k€ | 6,70 | 0 | 2 | 2/0 |  |
+| 46 | Kayen Scheepens | RB | 20 | Netherlands | – | – | 0 | 0 | 0/0 |  |
+| 83 | Mats Lemmens | CB,RB | 24 | Belgium | 549 k€ | 6,23 | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Calvin Twigt | CDM,CM | 23 | Netherlands | 984 k€ | 6,71 | 0 | 1 | 0/0 |  |
+| 8 | Kasper Boogaard | CDM,CM,CAM | 20 | Netherlands | 1,9 M€ | 6,16 | 0 | 0 | 1/0 |  |
+| 10 | Jari Schuurman | CM | 29 | Netherlands | 239 k€ | – | 0 | 0 | 0/0 |  |
+| 11 | Armin Culum | RW | 22 | Sweden | 423 k€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
+| 18 | Anass Zarrouk | CM,CDM | 20 | Netherlands | 830 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | Uriël van Aalst | CAM,CM,ST,CDM | 20 | Netherlands | 949 k€ | 7,14 | 1 | 2 | 1/0 |  |
+| 32 | Vito van Crooij | CAM | 30 | Netherlands | 458 k€ | 5,86 | 0 | 0 | 1/0 |  |
+| 34 | Amine Lachkar | CM | 23 | Netherlands | 655 k€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
+| 40 | Divano Iglesias | Midfielder | 19 | Netherlands | – | – | 0 | 0 | 0/0 |  |
+| 45 | Pieter van Maarschalkerwaard | Midfielder | 21 | Netherlands | – | – | 0 | 0 | 0/0 |  |
+| 45 | Sebas Wermenbol | Midfielder | 0 | Netherlands | – | – | 0 | 0 | 0/0 |  |
+| 48 | Julian van Esdonk | Midfielder | 20 | Netherlands | – | – | 0 | 0 | 0/0 |  |
+| 52 | Tonny Vilhena | CDM | 31 | Netherlands | 233 k€ | 6,66 | 0 | 0 | 1/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Noeh de Bruijn | Attacker | 22 | Netherlands | – | – | 0 | 0 | 0/0 |  |
+| 7 | Jaden Slory | RW,LW | 21 | Netherlands | 1,3 M€ | 6,51 | 0 | 0 | 1/0 |  |
+| 9 | Devin Haen | ST,CAM | 22 | Netherlands | 1,7 M€ | 6,84 | 3 | 0 | 0/0 |  |
+| 17 | Chido Obi | ST | 18 | Denmark | 3,8 M€ | 5,88 | 0 | 0 | 0/0 |  |
+| 20 | Thijs Muller | ST,CAM | 19 | Netherlands | 704 k€ | – | 0 | 0 | 0/0 |  |
+| 28 | Thomas Verheijdt | ST | 34 | Netherlands | 218 k€ | 6,52 | 1 | 0 | 0/0 |  |
+| 44 | Luca Maal | Attacker | 18 | Netherlands | – | – | 0 | 0 | 0/0 |  |
+| 49 | Ismael Mouhoul | Attacker | 20 | Netherlands | – | – | 0 | 0 | 1/0 |  |
+| 50 | Eser Gürbüz | RW | 19 | Netherlands | 1,1 M€ | 6,49 | 0 | 0 | 0/0 |  |

@@ -43,12 +43,28 @@ try {
 function key(s) {
   return String(s || '').normalize('NFD').replace(/\p{M}/gu, '').toLowerCase().replace(/&/g, 'och').replace(/[^a-z0-9]+/g, '');
 }
-const STOP = /\b(fc|cf|afc|ac|sc|if|ff|bk|fk|sk|ik|club|de|the|cd|ssc|as|us|rc|vfb|vfl|tsg|sv|1)\b/g;
+const STOP = /\b(fc|cf|afc|ac|sc|if|ff|bk|fk|sk|ik|club|de|the|cd|ssc|as|us|rc|vfb|vfl|tsg|sv|and|och|town|1)\b/g;
+// Vanliga kortformer -> fullt ord (engelska klubbar m.fl.)
+const ALIAS = { wolves: 'wolverhampton', man: 'manchester', utd: 'united', nottm: 'nottingham', nott: 'nottingham', spurs: 'tottenham', qpr: 'queens', sheff: 'sheffield', espanol: 'espanyol', koln: 'cologne', cologne: 'cologne', rvs: 'rovers' };
+// Hela namn som inte gar att harleda ordvis (football-data -> Understat/odds)
+const FULL_ALIAS = { athbilbao: 'athletic club', athmadrid: 'atletico madrid', mgladbach: 'borussia gladbach', borussiamgladbach: 'borussia gladbach', fckoln: 'cologne', koln: 'cologne', fccologne: 'cologne', sociedad: 'real sociedad', betis: 'real betis' };
+// Ord (minst 3 tecken) och initialer (1-2 tecken, t.ex. "Sheffield U" / "Sheffield W")
 function tokens(s) {
-  return String(s || '').normalize('NFD').replace(/\p{M}/gu, '').toLowerCase().replace(/&/g, ' ').replace(STOP, ' ')
-    .split(/[^a-z0-9]+/).filter((t) => t.length >= 3);
+  s = FULL_ALIAS[key(String(s || '').replace(/'/g, ''))] || s;
+  const raw = String(s || '').normalize('NFD').replace(/\p{M}/gu, '').toLowerCase().replace(/&/g, ' ').replace(/'/g, '').replace(STOP, ' ')
+    .split(/[^a-z0-9]+/).filter(Boolean);
+  return raw.map((t) => ALIAS[t] || t).map((t) => (t.length >= 3 ? { w: t } : /^[a-z]$/.test(t) ? { init: t } : null)).filter(Boolean);
 }
-// Likhet 0..1 mellan svenskt namn (eller engelsk oversattning) och FotMob-namn
+// Tva ord ar samma om de ar lika, eller om det kortare (minst 4 tecken) inleder det langre och ar minst halva langden
+// (Malmo/Malmoe, Brom/Bromwich) - men inte Northampton/North eller Nottingham/Notts
+const sameWord = (x, y) => {
+  if (x === y) return true;
+  const [s, l] = x.length <= y.length ? [x, y] : [y, x];
+  return s.length >= 4 && l.startsWith(s) && s.length / l.length >= 0.5;
+};
+// Likhet 0..1 mellan svenskt namn (eller engelsk oversattning) och namnet i en annan kalla (FotMob, odds, Elo, Understat).
+// Poang = traffar mot det kortare namnet (70 %) och mot det langre (30 %), sa "Brighton" ~ "Brighton and Hove Albion" = 0,8
+// men "Bristol Rovers" ~ "Doncaster Rovers" = 0,5. Initialer raknas bara nar de passar ett ord i det andra namnet.
 export function nameScore(svName, country, fmName) {
   const cands = [svName];
   const en = COUNTRY_EN.get(key(svName)) || (country ? COUNTRY_EN.get(key(country)) : null);
@@ -57,9 +73,28 @@ export function nameScore(svName, country, fmName) {
   for (const c of cands) {
     if (key(c) === key(fmName)) return 1;
     const a = tokens(c), b = tokens(fmName);
-    if (!a.length || !b.length) continue;
-    const hit = a.filter((t) => b.some((u) => u.startsWith(t.slice(0, 4)) || t.startsWith(u.slice(0, 4)))).length;
-    best = Math.max(best, hit / Math.max(a.length, b.length));
+    const aw = a.filter((t) => t.w), bw = b.filter((t) => t.w);
+    if (!aw.length || !bw.length) continue;
+    const used = new Set();
+    let hit = 0;
+    for (const t of aw) {
+      const j = bw.findIndex((u, i) => !used.has(i) && sameWord(t.w, u.w));
+      if (j >= 0) { used.add(j); hit++; }
+    }
+    if (!hit) continue;
+    // Initial i ena namnet mot ett oanvant ord i det andra (Sheffield U ~ Sheffield United, inte Wednesday)
+    let initHit = 0, initMiss = 0;
+    for (const [x, ys] of [[a, bw], [b, aw]]) {
+      for (const t of x.filter((q) => q.init)) {
+        const k = ys.findIndex((u, i) => (ys === bw ? !used.has(i) : true) && u.w.startsWith(t.init));
+        if (k >= 0) initHit++; else initMiss++;
+      }
+    }
+    const la = aw.length + a.filter((t) => t.init).length, lb = bw.length + b.filter((t) => t.init).length;
+    const h = hit + initHit;
+    const score = initMiss ? (0.7 * h / Math.min(la, lb) + 0.3 * h / Math.max(la, lb)) * 0.6
+      : 0.7 * Math.min(1, h / Math.min(la, lb)) + 0.3 * Math.min(1, h / Math.max(la, lb));
+    best = Math.max(best, score);
   }
   return best;
 }
@@ -86,7 +121,7 @@ async function findMatch({ kickoff, home, away, homeCountry, awayCountry }) {
       // Bada lagen maste likna (annars t.ex. "Malmo FF - Hammarby" for "Malmo FF - IFK Goteborg" vid samma tid)
       const sh = nameScore(home, homeCountry, m.home?.name), sa = nameScore(away, awayCountry, m.away?.name);
       const s = sh + sa;
-      if (sh >= 0.5 && sa >= 0.5 && s >= 1 && (!best || s > best.s)) best = { s, m };
+      if (sh >= 0.6 && sa >= 0.6 && s >= 1.2 && (!best || s > best.s)) best = { s, m };
     }
   }
   return best?.m || null;

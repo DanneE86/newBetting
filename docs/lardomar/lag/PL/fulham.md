@@ -4,7 +4,7 @@ Genererad 2026-09-28. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden"
 
 ## I korthet
 
-- Senaste 8: otur med −0,70 poäng per match mot xP. Marknaden prisar redan in det i ligan (ingen bekräftad effekt), så det är inget spel i sig.
+- Senaste 8: otur med −0,60 poäng per match mot xP. Marknaden prisar redan in det i ligan (ingen bekräftad effekt), så det är inget spel i sig.
 - Stark historik mot Nott'm Forest (+0,53 p/match mot marknaden, 12 möten), Brighton (+0,86 p/match mot marknaden, 11 möten), Aston Villa (−0,56 p/match mot marknaden, 10 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
 
 ## Nuläge (senaste 8 ligamatcher)
@@ -13,15 +13,15 @@ Form (äldst → senast): FOVFFFOO · senaste match 2026-09-20
 
 | Mått | Värde |
 |---|---|
-| Tur (poäng − xP per match) | −0,70 |
-| xG-målskillnad − målskillnad | +0,34 |
+| Tur (poäng − xP per match) | −0,60 |
+| xG-målskillnad − målskillnad | +0,16 |
 | Poäng mot marknaden per match | −0,51 |
 
 ## Säsonger
 
 | Säsong | Liga | M | P/M | Mot marknaden (hemma / borta) | Kryss (odds) | Mål för–emot | xG för–emot | xP/M |
 |---|---|---|---|---|---|---|---|---|
-| 2017/18 | CH | 46 | 1,91 | +0,20 (+0,12 / +0,29) | 28 % (25 %) | 1,72–1,00 | 1,54–1,24* | 1,57 |
+| 2017/18 | CH | 46 | 1,91 | +0,20 (+0,12 / +0,29) | 28 % (25 %) | 1,72–1,00 | 1,55–1,24* | 1,57 |
 | 2018/19 | PL | 38 | 0,68 | −0,33 (−0,02 / −0,64) | 13 % (24 %) | 0,89–2,13 | 1,12–1,94 | 0,95 |
 | 2019/20 | CH | 46 | 1,76 | +0,19 (+0,18 / +0,20) | 26 % (26 %) | 1,39–1,04 | 1,55–1,25* | 1,57 |
 | 2020/21 | PL | 38 | 0,74 | −0,21 (−0,61 / +0,19) | 34 % (26 %) | 0,71–1,39 | 1,08–1,52 | 1,15 |
@@ -30,9 +30,24 @@ Form (äldst → senast): FOVFFFOO · senaste match 2026-09-20
 | 2023/24 | PL | 38 | 1,24 | +0,08 (+0,14 / +0,02) | 21 % (25 %) | 1,45–1,61 | 1,39–1,76 | 1,21 |
 | 2024/25 | PL | 38 | 1,42 | +0,08 (−0,15 / +0,32) | 24 % (25 %) | 1,42–1,42 | 1,53–1,30 | 1,51 |
 | 2025/26 | PL | 38 | 1,37 | +0,12 (+0,44 / −0,20) | 18 % (26 %) | 1,24–1,34 | 1,30–1,60 | 1,22 |
-| 2026/27 | PL | 5 | 0,40 | −0,61 (−0,91 / −0,17) | 40 % (26 %) | 1,00–1,60 | 1,55–1,75* | 1,25 |
+| 2026/27 | PL | 5 | 0,40 | −0,61 (−0,91 / −0,17) | 40 % (26 %) | 1,00–1,60 | 1,59–2,09 | 1,08 |
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+
+## Nyckelspelare (Understat, 2024/25–)
+
+Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
+
+| Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
+|---|---|---|---|---|
+| Gonzalo García | 20 % | 0 / 81 | – / 1,33 | – / +0,06 |
+| Raúl Jiménez | 10 % | 0 / 81 | – / 1,33 | – / +0,06 |
+| Harry Wilson | 8 % | 4 / 77 | 1,50 / 1,32 | −0,06 / +0,06 |
+| Alex Iwobi | 8 % | 9 / 72 | 1,56 / 1,31 | +0,37 / +0,02 |
+| César Palacios | 7 % | 0 / 81 | – / 1,33 | – / +0,06 |
+| Joshua King | 7 % | 5 / 76 | 1,00 / 1,36 | +0,01 / +0,06 |
+
+Ligans test av frånvaro mot marknaden: svag signal (inte bekräftad). Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -100,3 +115,41 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-12-07 | Europa 2529 | Fulham - Crystal Palace | 2 | 44 % | 38 % |
 | 2025-09-28 | Europa 2509 | Aston Villa - Fulham | 1 | 30 % | 29 % |
 | 2025-08-24 | Europa 2499 | Fulham - Manchester United | X | 19 % | 29 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Álvaro Arbeloa. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Kenny Tete (skadad, åter Mid October 2026), Tom Cairney (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Bernd Leno | GK | 34 | Germany | 6,5 M€ | 6,52 | 0 | 0 | 0/0 |  |
+| 23 | Benjamin Lecomte | GK | 35 | France | 595 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Kenny Tete | RB | 30 | Netherlands | 9,7 M€ | 6,01 | 0 | 0 | 1/0 | skadad, åter Mid October 2026 |
+| 3 | Calvin Bassey | CB | 26 | Nigeria | 23,9 M€ | 6,80 | 0 | 0 | 1/0 |  |
+| 4 | Jorge Cuenca | CB | 26 | Spain | 8,4 M€ | 6,06 | 0 | 0 | 0/0 |  |
+| 5 | Joachim Andersen | CB | 30 | Denmark | 21,4 M€ | 6,62 | 0 | 0 | 1/0 |  |
+| 21 | Timothy Castagne | RB,LB,RWB | 30 | Belgium | 7,9 M€ | 6,68 | 0 | 1 | 2/0 |  |
+| 22 | David Affengruber | CB | 25 | Austria | 6,6 M€ | 7,10 | 0 | 0 | 0/0 |  |
+| 30 | Ryan Sessegnon | LB | 26 | England | 15,2 M€ | 6,41 | 0 | 0 | 0/0 |  |
+| 33 | Antonee Robinson | LB,LWB,LM | 29 | USA | 23,5 M€ | 6,92 | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Harrison Reed | CDM | 31 | England | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| 10 | Tom Cairney | CDM | 35 | Scotland | 730 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 15 | Hugo Larsson | CDM,CM | 22 | Sweden | 22,3 M€ | 6,16 | 0 | 0 | 0/0 |  |
+| 16 | Sander Berge | CDM,CM | 28 | Norway | 19,8 M€ | 6,44 | 0 | 0 | 0/0 |  |
+| 17 | Alex Iwobi | CDM,LW,CAM,CM | 30 | Nigeria | 19,9 M€ | 6,92 | 0 | 0 | 0/0 |  |
+| 19 | Shea Charles | CDM,CM | 22 | Northern Ireland | 10,4 M€ | 6,91 | 0 | 0 | 0/0 |  |
+| 20 | Manuel Ángel | RM | 22 | Spain | – | – | 0 | 0 | 0/0 |  |
+| 24 | Joshua King | CAM,CM | 19 | England | 18,1 M€ | 7,20 | 2 | 0 | 1/0 |  |
+| 32 | Emile Smith Rowe | CAM | 26 | England | 20,3 M€ | 6,12 | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Gonzalo García | ST | 22 | Spain | 19,7 M€ | 6,61 | 1 | 0 | 0/0 |  |
+| 8 | César Palacios | LW | 21 | Spain | 870 k€ | 6,90 | 1 | 0 | 1/0 |  |
+| 9 | Rodrigo Muniz | ST | 25 | Brazil | 9,5 M€ | 6,04 | 0 | 0 | 1/0 |  |
+| 11 | Kevin | LW | 23 | Brazil | 29,9 M€ | 6,22 | 0 | 0 | 0/0 |  |
+| 14 | Oscar Bobb | RW,RM,LW | 23 | Norway | 26,9 M€ | 6,66 | 0 | 0 | 0/0 |  |
+| 18 | Jonah Kusi-Asare | ST | 19 | Sweden | 5,6 M€ | – | 0 | 0 | 0/0 |  |

@@ -71,3 +71,51 @@ Form (äldst → senast): OFVVOOOV · senaste match 2026-09-20
 | Gimnasia Mendoza | 1 | 1-0-0 | 1–0 | +1,52 | −34 pe | 2026-03-21 1-0 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Frank Kudelka. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Alejo Montero (skadad, åter Mid October 2026), Nicolás Goitea (skadad, åter Early October 2026), Franco Escobar (skadad, åter Mid October 2026), Mateo García (skadad, åter Out for season), Marcelo Esponda (skadad, åter About 1-2 weeks)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 21 | Gabriel Arias | GK | 39 | Chile | 127 k€ | – | 0 | 0 | 0/0 |  |
+| 30 | Josué Reinatti | GK | 23 | Argentina | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Ian Glavinovich | CB | 24 | Argentina | 842 k€ | – | 0 | 0 | 0/0 |  |
+| 3 | Martín Luciano | LB,LWB | 23 | Argentina | 875 k€ | – | 0 | 0 | 0/0 |  |
+| 4 | Alejo Montero | RB,RWB | 28 | Argentina | 511 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 6 | Martín Ortega | RB | 27 | Argentina | 616 k€ | – | 0 | 0 | 0/0 |  |
+| 16 | Lucas Carrizo | CB | 29 | Argentina | 928 k€ | – | 0 | 0 | 0/0 |  |
+| 17 | Lautaro Giannetti | CB | 32 | Argentina | 851 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Oscar Salomón | CB | 27 | Argentina | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 23 | Nicolás Goitea | CB | 29 | Argentina | – | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 24 | Franco Escobar | RB,CB,LB,RWB | 31 | Argentina | 491 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 25 | Bruno Cabrera | CB | 29 | Argentina | 555 k€ | – | 0 | 0 | 0/0 |  |
+| 28 | Jerónimo Russo | LB | 21 | Argentina | 986 k€ | – | 0 | 0 | 0/0 |  |
+| 97 | Saúl Salcedo | CB | 29 | Paraguay | 898 k€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Fabricio Tirado | CDM | 22 | Argentina | 574 k€ | – | 0 | 0 | 0/0 |  |
+|  | Mateo García | LM,CAM | 30 | Argentina | 841 k€ | – | 0 | 0 | 0/0 | skadad, åter Out for season |
+| 5 | Luca Regiardo | CDM,CM | 19 | Argentina | 2,1 M€ | – | 0 | 0 | 0/0 |  |
+| 8 | David Sotelo | CDM | 23 | Argentina | 584 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Valentino Acuña | CM,CDM,CAM | 20 | Argentina | 1,4 M€ | – | 0 | 0 | 0/0 |  |
+| 15 | Alan Soñora | CAM | 28 | USA | 245 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | Jerónimo Gómez Mattar | CDM,CM | 18 | Argentina | 1,9 M€ | – | 0 | 0 | 0/0 |  |
+| 20 | Facundo Guch | CAM,RW,CM | 19 | Argentina | 1,8 M€ | – | 0 | 0 | 0/0 |  |
+| 26 | Rodrigo Herrera | CDM,CM | 26 | Argentina | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 27 | Lucas Gómez | CM | 22 | Argentina | 883 k€ | – | 0 | 0 | 0/0 |  |
+| 29 | Marcelo Esponda | CDM | 23 | Argentina | 385 k€ | – | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
+| 34 | Tomás Viola | Midfielder | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 35 | Blas Benedetto | Midfielder | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 37 | Mateo Villalba | Midfielder | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Walter Mazzantti | RW | 30 | Argentina | 1,5 M€ | – | 0 | 0 | 0/0 |  |
+| 9 | Matías Cóccaro | ST,CAM | 28 | Uruguay | 1,5 M€ | – | 0 | 0 | 0/0 |  |
+| 32 | Santiago Solari | RW,ST,LW,CAM | 28 | Argentina | 2,0 M€ | – | 0 | 0 | 0/0 |  |
+| 33 | Walter Núñez | LW,LM,ST | 23 | Argentina | 938 k€ | – | 0 | 0 | 0/0 |  |
+| 36 | Francisco Scarpeccio | ST | 20 | Argentina | 546 k€ | – | 0 | 0 | 0/0 |  |
+| 39 | Thomas Ríos | LW | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 99 | Ignacio Ramírez | ST | 29 | Uruguay | 1,2 M€ | – | 0 | 0 | 0/0 |  |

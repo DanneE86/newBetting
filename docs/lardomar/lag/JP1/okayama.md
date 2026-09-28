@@ -48,3 +48,49 @@ Form (äldst → senast): FVOFVVVF · senaste match 2026-09-19
 | V-Varen Nagasaki | 1 | 1-0-0 | 1–0 | +1,02 | −25 pe | 2026-08-15 1-0 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Takashi Kiyama. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+|  | Kohei Kawakami | GK | 25 | Japan | – | – | 0 | 0 | 0/0 |  |
+| 1 | Lennart Moser | GK | 26 | Germany | 294 k€ | 6,42 | 0 | 0 | 0/0 |  |
+| 13 | Shun Matsuda | GK | 19 | Japan | – | 5,94 | 0 | 0 | 0/0 |  |
+| 52 | Taro Hamada | GK | 26 | Japan | 237 k€ | – | 0 | 0 | 0/0 |  |
+| 77 | Goro Kawanami | GK | 35 | Japan | 155 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 5 | Shu Ikedo | RWB | 20 | Japan | – | – | 0 | 0 | 0/0 |  |
+| 6 | Hiroshi Omori | CB | 24 | Japan | 285 k€ | 7,26 | 1 | 0 | 1/0 |  |
+| 18 | Daichi Tagami | CB | 33 | Japan | 168 k€ | – | 0 | 0 | 0/0 |  |
+| 31 | Ryo Senda | Defender | 19 | Japan | – | – | 0 | 0 | 0/0 |  |
+| 43 | Yoshitake Suzuki | CB | 28 | Japan | 208 k€ | 7,19 | 1 | 1 | 1/0 |  |
+| 48 | Yugo Tatsuta | CB | 28 | Japan | 425 k€ | 7,03 | 1 | 0 | 1/0 |  |
+| 55 | Yota Fujii | LWB | 20 | Japan | 306 k€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Kosei Ogura | CDM | 21 | Japan | – | – | 0 | 0 | 0/0 |  |
+| 7 | Ryo Takeuchi | CDM | 35 | Japan | 125 k€ | – | 0 | 0 | 0/0 |  |
+| 8 | Ataru Esaka | CAM | 34 | Japan | 205 k€ | 6,82 | 0 | 0 | 0/0 |  |
+| 10 | Sang-Ho Na | CAM | 30 | South Korea | 442 k€ | 6,91 | 1 | 0 | 1/0 |  |
+| 14 | Ryo Tabei | CDM | 27 | Japan | 206 k€ | – | 0 | 0 | 0/0 |  |
+| 17 | Rui Sueyoshi | LWB | 30 | Japan | 221 k€ | – | 0 | 0 | 0/0 |  |
+| 20 | Kota Kawano | CAM,ST | 23 | Japan | 535 k€ | 7,09 | 3 | 0 | 0/0 |  |
+| 24 | Ibuki Fujita | CDM | 35 | Japan | 187 k€ | 6,63 | 0 | 0 | 0/0 |  |
+| 26 | Haruka Motoyama | RWB | 27 | Japan | 302 k€ | 7,85 | 0 | 3 | 1/0 |  |
+| 27 | Takaya Kimura | CAM | 28 | Japan | 236 k€ | – | 0 | 0 | 0/0 |  |
+| 28 | Masaya Matsumoto | RWB,CDM | 31 | Japan | 377 k€ | 5,94 | 0 | 0 | 0/0 |  |
+| 33 | Yuta Kamiya | CDM | 29 | Japan | 166 k€ | 6,38 | 1 | 0 | 0/0 |  |
+| 41 | Eiji Miyamoto | CDM | 28 | Japan | 209 k€ | 7,19 | 0 | 1 | 4/0 |  |
+| 44 | Soichiro Mori | RWB | 19 | Japan | 708 k€ | 6,57 | 0 | 0 | 0/0 |  |
+| 51 | Kosuke Shirai | RWB,LWB | 32 | Japan | 175 k€ | 6,93 | 0 | 0 | 0/0 |  |
+| 66 | Jun Nishikawa | CAM | 24 | Japan | 369 k€ | 6,30 | 0 | 0 | 0/0 |  |
+| 80 | Oberdan | CDM,CM | 31 | Brazil | – | 7,17 | 0 | 1 | 1/1 |  |
+| 88 | Towa Yamane | LWB,RWB | 27 | Japan | 232 k€ | 6,62 | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Léo Gaúcho | ST | 25 | Brazil | – | 6,24 | 1 | 0 | 1/0 |  |
+| 19 | Ryoga Sato | ST,CAM | 27 | Japan | 501 k€ | – | 0 | 0 | 0/0 |  |
+| 30 | Kanshiro Suemune | Attacker | 19 | Japan | – | – | 0 | 0 | 0/0 |  |
+| 79 | Noah Kenshin Browne | LWB,ST | 25 | Japan | 369 k€ | 6,57 | 1 | 1 | 0/0 |  |
+| 99 | Lucão | ST | 31 | Brazil | 209 k€ | 6,72 | 1 | 3 | 1/1 |  |

@@ -1,0 +1,769 @@
+{
+ "updatedAt": "2026-09-28T19:47:27.474Z",
+ "league": "CL",
+ "fotmobId": 42,
+ "name": "Champions League",
+ "country": "INT",
+ "table": [
+  {
+   "rank": 1,
+   "team": "Paris Saint-Germain",
+   "fotmobName": "Paris Saint-Germain",
+   "fotmobId": 9847,
+   "group": null,
+   "played": 1,
+   "won": 1,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "6-1",
+   "gd": 5,
+   "pts": 3
+  },
+  {
+   "rank": 2,
+   "team": "Bayern Munich",
+   "fotmobName": "Bayern München",
+   "fotmobId": 9823,
+   "group": null,
+   "played": 1,
+   "won": 1,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "5-0",
+   "gd": 5,
+   "pts": 3
+  },
+  {
+   "rank": 3,
+   "team": "Barcelona",
+   "fotmobName": "Barcelona",
+   "fotmobId": 8634,
+   "group": null,
+   "played": 1,
+   "won": 1,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "5-1",
+   "gd": 4,
+   "pts": 3
+  },
+  {
+   "rank": 4,
+   "team": "Manchester United",
+   "fotmobName": "Manchester United",
+   "fotmobId": 10260,
+   "group": null,
+   "played": 1,
+   "won": 1,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "4-0",
+   "gd": 4,
+   "pts": 3
+  },
+  {
+   "rank": 5,
+   "team": "Como",
+   "fotmobName": "Como",
+   "fotmobId": 10171,
+   "group": null,
+   "played": 1,
+   "won": 1,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "4-1",
+   "gd": 3,
+   "pts": 3
+  },
+  {
+   "rank": 6,
+   "team": "Sporting CP",
+   "fotmobName": "Sporting CP",
+   "fotmobId": 9768,
+   "group": null,
+   "played": 1,
+   "won": 1,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "3-1",
+   "gd": 2,
+   "pts": 3
+  },
+  {
+   "rank": 7,
+   "team": "VfB Stuttgart",
+   "fotmobName": "VfB Stuttgart",
+   "fotmobId": 10269,
+   "group": null,
+   "played": 1,
+   "won": 1,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "3-1",
+   "gd": 2,
+   "pts": 3
+  },
+  {
+   "rank": 8,
+   "team": "Manchester City",
+   "fotmobName": "Manchester City",
+   "fotmobId": 8456,
+   "group": null,
+   "played": 1,
+   "won": 1,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "2-0",
+   "gd": 2,
+   "pts": 3
+  },
+  {
+   "rank": 9,
+   "team": "Aston Villa",
+   "fotmobName": "Aston Villa",
+   "fotmobId": 10252,
+   "group": null,
+   "played": 1,
+   "won": 1,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "3-2",
+   "gd": 1,
+   "pts": 3
+  },
+  {
+   "rank": 10,
+   "team": "Lens",
+   "fotmobName": "Lens",
+   "fotmobId": 8588,
+   "group": null,
+   "played": 1,
+   "won": 1,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "3-2",
+   "gd": 1,
+   "pts": 3
+  },
+  {
+   "rank": 11,
+   "team": "Real Betis",
+   "fotmobName": "Real Betis",
+   "fotmobId": 8603,
+   "group": null,
+   "played": 1,
+   "won": 1,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "3-2",
+   "gd": 1,
+   "pts": 3
+  },
+  {
+   "rank": 12,
+   "team": "Borussia Dortmund",
+   "fotmobName": "Borussia Dortmund",
+   "fotmobId": 9789,
+   "group": null,
+   "played": 1,
+   "won": 1,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "3-2",
+   "gd": 1,
+   "pts": 3
+  },
+  {
+   "rank": 13,
+   "team": "Liverpool",
+   "fotmobName": "Liverpool",
+   "fotmobId": 8650,
+   "group": null,
+   "played": 1,
+   "won": 1,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "2-1",
+   "gd": 1,
+   "pts": 3
+  },
+  {
+   "rank": 14,
+   "team": "Real Madrid",
+   "fotmobName": "Real Madrid",
+   "fotmobId": 8633,
+   "group": null,
+   "played": 1,
+   "won": 1,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "2-1",
+   "gd": 1,
+   "pts": 3
+  },
+  {
+   "rank": 15,
+   "team": "Arsenal",
+   "fotmobName": "Arsenal",
+   "fotmobId": 9825,
+   "group": null,
+   "played": 1,
+   "won": 1,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "1-0",
+   "gd": 1,
+   "pts": 3
+  },
+  {
+   "rank": 16,
+   "team": "AEK Athens",
+   "fotmobName": "AEK Athens",
+   "fotmobId": 8563,
+   "group": null,
+   "played": 1,
+   "won": 1,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "1-0",
+   "gd": 1,
+   "pts": 3
+  },
+  {
+   "rank": 17,
+   "team": "AS Roma",
+   "fotmobName": "Roma",
+   "fotmobId": 8686,
+   "group": null,
+   "played": 1,
+   "won": 0,
+   "drawn": 1,
+   "lost": 0,
+   "goals": "1-1",
+   "gd": 0,
+   "pts": 1
+  },
+  {
+   "rank": 18,
+   "team": "Shakhtar Donetsk",
+   "fotmobName": "Shakhtar Donetsk",
+   "fotmobId": 9728,
+   "group": null,
+   "played": 1,
+   "won": 0,
+   "drawn": 1,
+   "lost": 0,
+   "goals": "1-1",
+   "gd": 0,
+   "pts": 1
+  },
+  {
+   "rank": 19,
+   "team": "Fenerbahce",
+   "fotmobName": "Fenerbahçe",
+   "fotmobId": 8695,
+   "group": null,
+   "played": 1,
+   "won": 0,
+   "drawn": 1,
+   "lost": 0,
+   "goals": "1-1",
+   "gd": 0,
+   "pts": 1
+  },
+  {
+   "rank": 20,
+   "team": "PSV Eindhoven",
+   "fotmobName": "PSV Eindhoven",
+   "fotmobId": 8640,
+   "group": null,
+   "played": 1,
+   "won": 0,
+   "drawn": 1,
+   "lost": 0,
+   "goals": "1-1",
+   "gd": 0,
+   "pts": 1
+  },
+  {
+   "rank": 21,
+   "team": "Villarreal",
+   "fotmobName": "Villarreal",
+   "fotmobId": 10205,
+   "group": null,
+   "played": 1,
+   "won": 0,
+   "drawn": 0,
+   "lost": 1,
+   "goals": "2-3",
+   "gd": -1,
+   "pts": 0
+  },
+  {
+   "rank": 22,
+   "team": "Club Brugge",
+   "fotmobName": "Club Brugge",
+   "fotmobId": 8342,
+   "group": null,
+   "played": 1,
+   "won": 0,
+   "drawn": 0,
+   "lost": 1,
+   "goals": "2-3",
+   "gd": -1,
+   "pts": 0
+  },
+  {
+   "rank": 23,
+   "team": "Lille",
+   "fotmobName": "Lille",
+   "fotmobId": 8639,
+   "group": null,
+   "played": 1,
+   "won": 0,
+   "drawn": 0,
+   "lost": 1,
+   "goals": "2-3",
+   "gd": -1,
+   "pts": 0
+  },
+  {
+   "rank": 24,
+   "team": "Slavia Prague",
+   "fotmobName": "Slavia Prague",
+   "fotmobId": 7787,
+   "group": null,
+   "played": 1,
+   "won": 0,
+   "drawn": 0,
+   "lost": 1,
+   "goals": "2-3",
+   "gd": -1,
+   "pts": 0
+  },
+  {
+   "rank": 25,
+   "team": "Atlético Madrid",
+   "fotmobName": "Atlético Madrid",
+   "fotmobId": 9906,
+   "group": null,
+   "played": 1,
+   "won": 0,
+   "drawn": 0,
+   "lost": 1,
+   "goals": "1-2",
+   "gd": -1,
+   "pts": 0
+  },
+  {
+   "rank": 26,
+   "team": "Inter",
+   "fotmobName": "Inter",
+   "fotmobId": 8636,
+   "group": null,
+   "played": 1,
+   "won": 0,
+   "drawn": 0,
+   "lost": 1,
+   "goals": "1-2",
+   "gd": -1,
+   "pts": 0
+  },
+  {
+   "rank": 27,
+   "team": "LASK Linz",
+   "fotmobName": "LASK",
+   "fotmobId": 9977,
+   "group": null,
+   "played": 1,
+   "won": 0,
+   "drawn": 0,
+   "lost": 1,
+   "goals": "0-1",
+   "gd": -1,
+   "pts": 0
+  },
+  {
+   "rank": 28,
+   "team": "Napoli",
+   "fotmobName": "Napoli",
+   "fotmobId": 9875,
+   "group": null,
+   "played": 1,
+   "won": 0,
+   "drawn": 0,
+   "lost": 1,
+   "goals": "0-1",
+   "gd": -1,
+   "pts": 0
+  },
+  {
+   "rank": 29,
+   "team": "Galatasaray",
+   "fotmobName": "Galatasaray",
+   "fotmobId": 8637,
+   "group": null,
+   "played": 1,
+   "won": 0,
+   "drawn": 0,
+   "lost": 1,
+   "goals": "1-3",
+   "gd": -2,
+   "pts": 0
+  },
+  {
+   "rank": 30,
+   "team": "Viking FK",
+   "fotmobName": "Viking",
+   "fotmobId": 8478,
+   "group": null,
+   "played": 1,
+   "won": 0,
+   "drawn": 0,
+   "lost": 1,
+   "goals": "1-3",
+   "gd": -2,
+   "pts": 0
+  },
+  {
+   "rank": 31,
+   "team": "FC Porto",
+   "fotmobName": "FC Porto",
+   "fotmobId": 9773,
+   "group": null,
+   "played": 1,
+   "won": 0,
+   "drawn": 0,
+   "lost": 1,
+   "goals": "0-2",
+   "gd": -2,
+   "pts": 0
+  },
+  {
+   "rank": 32,
+   "team": "RB Leipzig",
+   "fotmobName": "RB Leipzig",
+   "fotmobId": 178475,
+   "group": null,
+   "played": 1,
+   "won": 0,
+   "drawn": 0,
+   "lost": 1,
+   "goals": "1-4",
+   "gd": -3,
+   "pts": 0
+  },
+  {
+   "rank": 33,
+   "team": "Feyenoord Rotterdam",
+   "fotmobName": "Feyenoord",
+   "fotmobId": 10235,
+   "group": null,
+   "played": 1,
+   "won": 0,
+   "drawn": 0,
+   "lost": 1,
+   "goals": "1-5",
+   "gd": -4,
+   "pts": 0
+  },
+  {
+   "rank": 34,
+   "team": "Sabah FK",
+   "fotmobName": "Sabah FK",
+   "fotmobId": 951893,
+   "group": null,
+   "played": 1,
+   "won": 0,
+   "drawn": 0,
+   "lost": 1,
+   "goals": "0-4",
+   "gd": -4,
+   "pts": 0
+  },
+  {
+   "rank": 35,
+   "team": "Slovan Bratislava",
+   "fotmobName": "Slovan Bratislava",
+   "fotmobId": 6019,
+   "group": null,
+   "played": 1,
+   "won": 0,
+   "drawn": 0,
+   "lost": 1,
+   "goals": "1-6",
+   "gd": -5,
+   "pts": 0
+  },
+  {
+   "rank": 36,
+   "team": "Bodo/Glimt",
+   "fotmobName": "Bodø/Glimt",
+   "fotmobId": 8402,
+   "group": null,
+   "played": 1,
+   "won": 0,
+   "drawn": 0,
+   "lost": 1,
+   "goals": "0-5",
+   "gd": -5,
+   "pts": 0
+  }
+ ],
+ "tableHistory": {
+  "2026-09-28": [
+   [
+    "Paris Saint-Germain",
+    1,
+    1,
+    3,
+    5
+   ],
+   [
+    "Bayern Munich",
+    2,
+    1,
+    3,
+    5
+   ],
+   [
+    "Barcelona",
+    3,
+    1,
+    3,
+    4
+   ],
+   [
+    "Manchester United",
+    4,
+    1,
+    3,
+    4
+   ],
+   [
+    "Como",
+    5,
+    1,
+    3,
+    3
+   ],
+   [
+    "Sporting CP",
+    6,
+    1,
+    3,
+    2
+   ],
+   [
+    "VfB Stuttgart",
+    7,
+    1,
+    3,
+    2
+   ],
+   [
+    "Manchester City",
+    8,
+    1,
+    3,
+    2
+   ],
+   [
+    "Aston Villa",
+    9,
+    1,
+    3,
+    1
+   ],
+   [
+    "Lens",
+    10,
+    1,
+    3,
+    1
+   ],
+   [
+    "Real Betis",
+    11,
+    1,
+    3,
+    1
+   ],
+   [
+    "Borussia Dortmund",
+    12,
+    1,
+    3,
+    1
+   ],
+   [
+    "Liverpool",
+    13,
+    1,
+    3,
+    1
+   ],
+   [
+    "Real Madrid",
+    14,
+    1,
+    3,
+    1
+   ],
+   [
+    "Arsenal",
+    15,
+    1,
+    3,
+    1
+   ],
+   [
+    "AEK Athens",
+    16,
+    1,
+    3,
+    1
+   ],
+   [
+    "AS Roma",
+    17,
+    1,
+    1,
+    0
+   ],
+   [
+    "Shakhtar Donetsk",
+    18,
+    1,
+    1,
+    0
+   ],
+   [
+    "Fenerbahce",
+    19,
+    1,
+    1,
+    0
+   ],
+   [
+    "PSV Eindhoven",
+    20,
+    1,
+    1,
+    0
+   ],
+   [
+    "Villarreal",
+    21,
+    1,
+    0,
+    -1
+   ],
+   [
+    "Club Brugge",
+    22,
+    1,
+    0,
+    -1
+   ],
+   [
+    "Lille",
+    23,
+    1,
+    0,
+    -1
+   ],
+   [
+    "Slavia Prague",
+    24,
+    1,
+    0,
+    -1
+   ],
+   [
+    "Atlético Madrid",
+    25,
+    1,
+    0,
+    -1
+   ],
+   [
+    "Inter",
+    26,
+    1,
+    0,
+    -1
+   ],
+   [
+    "LASK Linz",
+    27,
+    1,
+    0,
+    -1
+   ],
+   [
+    "Napoli",
+    28,
+    1,
+    0,
+    -1
+   ],
+   [
+    "Galatasaray",
+    29,
+    1,
+    0,
+    -2
+   ],
+   [
+    "Viking FK",
+    30,
+    1,
+    0,
+    -2
+   ],
+   [
+    "FC Porto",
+    31,
+    1,
+    0,
+    -2
+   ],
+   [
+    "RB Leipzig",
+    32,
+    1,
+    0,
+    -3
+   ],
+   [
+    "Feyenoord Rotterdam",
+    33,
+    1,
+    0,
+    -4
+   ],
+   [
+    "Sabah FK",
+    34,
+    1,
+    0,
+    -4
+   ],
+   [
+    "Slovan Bratislava",
+    35,
+    1,
+    0,
+    -5
+   ],
+   [
+    "Bodo/Glimt",
+    36,
+    1,
+    0,
+    -5
+   ]
+  ]
+ }
+}

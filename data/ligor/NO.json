@@ -1,0 +1,349 @@
+{
+ "updatedAt": "2026-09-28T19:47:27.474Z",
+ "league": "NO",
+ "fotmobId": 59,
+ "name": "Eliteserien",
+ "country": "NOR",
+ "table": [
+  {
+   "rank": 1,
+   "team": "Viking",
+   "fotmobName": "Viking",
+   "fotmobId": 8478,
+   "group": null,
+   "played": 21,
+   "won": 16,
+   "drawn": 2,
+   "lost": 3,
+   "goals": "54-20",
+   "gd": 34,
+   "pts": 50
+  },
+  {
+   "rank": 2,
+   "team": "Bodo/Glimt",
+   "fotmobName": "Bodø/Glimt",
+   "fotmobId": 8402,
+   "group": null,
+   "played": 21,
+   "won": 16,
+   "drawn": 2,
+   "lost": 3,
+   "goals": "53-19",
+   "gd": 34,
+   "pts": 50
+  },
+  {
+   "rank": 3,
+   "team": "Tromso",
+   "fotmobName": "Tromsø",
+   "fotmobId": 8608,
+   "group": null,
+   "played": 21,
+   "won": 11,
+   "drawn": 5,
+   "lost": 5,
+   "goals": "40-29",
+   "gd": 11,
+   "pts": 38
+  },
+  {
+   "rank": 4,
+   "team": "Molde",
+   "fotmobName": "Molde",
+   "fotmobId": 9917,
+   "group": null,
+   "played": 21,
+   "won": 11,
+   "drawn": 3,
+   "lost": 7,
+   "goals": "44-32",
+   "gd": 12,
+   "pts": 36
+  },
+  {
+   "rank": 5,
+   "team": "Rosenborg",
+   "fotmobName": "Rosenborg",
+   "fotmobId": 8422,
+   "group": null,
+   "played": 21,
+   "won": 10,
+   "drawn": 3,
+   "lost": 8,
+   "goals": "39-30",
+   "gd": 9,
+   "pts": 33
+  },
+  {
+   "rank": 6,
+   "team": "Lillestrom",
+   "fotmobName": "Lillestrøm",
+   "fotmobId": 8476,
+   "group": null,
+   "played": 21,
+   "won": 10,
+   "drawn": 2,
+   "lost": 9,
+   "goals": "28-29",
+   "gd": -1,
+   "pts": 32
+  },
+  {
+   "rank": 7,
+   "team": "Brann",
+   "fotmobName": "Brann",
+   "fotmobId": 8468,
+   "group": null,
+   "played": 21,
+   "won": 9,
+   "drawn": 2,
+   "lost": 10,
+   "goals": "39-32",
+   "gd": 7,
+   "pts": 29
+  },
+  {
+   "rank": 8,
+   "team": "Fredrikstad",
+   "fotmobName": "Fredrikstad",
+   "fotmobId": 8417,
+   "group": null,
+   "played": 21,
+   "won": 8,
+   "drawn": 4,
+   "lost": 9,
+   "goals": "25-32",
+   "gd": -7,
+   "pts": 28
+  },
+  {
+   "rank": 9,
+   "team": "Sarpsborg 08",
+   "fotmobName": "Sarpsborg 08",
+   "fotmobId": 8509,
+   "group": null,
+   "played": 21,
+   "won": 6,
+   "drawn": 7,
+   "lost": 8,
+   "goals": "24-29",
+   "gd": -5,
+   "pts": 25
+  },
+  {
+   "rank": 10,
+   "team": "KFUM Oslo",
+   "fotmobName": "KFUM",
+   "fotmobId": 2305,
+   "group": null,
+   "played": 21,
+   "won": 7,
+   "drawn": 4,
+   "lost": 10,
+   "goals": "25-35",
+   "gd": -10,
+   "pts": 25
+  },
+  {
+   "rank": 11,
+   "team": "Sandefjord",
+   "fotmobName": "Sandefjord",
+   "fotmobId": 8609,
+   "group": null,
+   "played": 21,
+   "won": 6,
+   "drawn": 5,
+   "lost": 10,
+   "goals": "21-27",
+   "gd": -6,
+   "pts": 23
+  },
+  {
+   "rank": 12,
+   "team": "Valerenga",
+   "fotmobName": "Vålerenga",
+   "fotmobId": 8007,
+   "group": null,
+   "played": 21,
+   "won": 6,
+   "drawn": 5,
+   "lost": 10,
+   "goals": "34-43",
+   "gd": -9,
+   "pts": 23
+  },
+  {
+   "rank": 13,
+   "team": "HamKam",
+   "fotmobName": "Hamarkameratene",
+   "fotmobId": 8448,
+   "group": null,
+   "played": 21,
+   "won": 6,
+   "drawn": 5,
+   "lost": 10,
+   "goals": "29-44",
+   "gd": -15,
+   "pts": 23
+  },
+  {
+   "rank": 14,
+   "team": "Aalesund",
+   "fotmobName": "Aalesund",
+   "fotmobId": 8404,
+   "group": null,
+   "played": 21,
+   "won": 4,
+   "drawn": 9,
+   "lost": 8,
+   "goals": "33-46",
+   "gd": -13,
+   "pts": 21
+  },
+  {
+   "rank": 15,
+   "team": "Kristiansund",
+   "fotmobName": "Kristiansund",
+   "fotmobId": 8605,
+   "group": null,
+   "played": 21,
+   "won": 5,
+   "drawn": 4,
+   "lost": 12,
+   "goals": "21-40",
+   "gd": -19,
+   "pts": 19
+  },
+  {
+   "rank": 16,
+   "team": "Start",
+   "fotmobName": "Start",
+   "fotmobId": 9919,
+   "group": null,
+   "played": 21,
+   "won": 4,
+   "drawn": 4,
+   "lost": 13,
+   "goals": "22-44",
+   "gd": -22,
+   "pts": 16
+  }
+ ],
+ "tableHistory": {
+  "2026-09-28": [
+   [
+    "Viking",
+    1,
+    21,
+    50,
+    34
+   ],
+   [
+    "Bodo/Glimt",
+    2,
+    21,
+    50,
+    34
+   ],
+   [
+    "Tromso",
+    3,
+    21,
+    38,
+    11
+   ],
+   [
+    "Molde",
+    4,
+    21,
+    36,
+    12
+   ],
+   [
+    "Rosenborg",
+    5,
+    21,
+    33,
+    9
+   ],
+   [
+    "Lillestrom",
+    6,
+    21,
+    32,
+    -1
+   ],
+   [
+    "Brann",
+    7,
+    21,
+    29,
+    7
+   ],
+   [
+    "Fredrikstad",
+    8,
+    21,
+    28,
+    -7
+   ],
+   [
+    "Sarpsborg 08",
+    9,
+    21,
+    25,
+    -5
+   ],
+   [
+    "KFUM Oslo",
+    10,
+    21,
+    25,
+    -10
+   ],
+   [
+    "Sandefjord",
+    11,
+    21,
+    23,
+    -6
+   ],
+   [
+    "Valerenga",
+    12,
+    21,
+    23,
+    -9
+   ],
+   [
+    "HamKam",
+    13,
+    21,
+    23,
+    -15
+   ],
+   [
+    "Aalesund",
+    14,
+    21,
+    21,
+    -13
+   ],
+   [
+    "Kristiansund",
+    15,
+    21,
+    19,
+    -19
+   ],
+   [
+    "Start",
+    16,
+    21,
+    16,
+    -22
+   ]
+  ]
+ }
+}

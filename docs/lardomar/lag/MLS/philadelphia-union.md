@@ -72,3 +72,43 @@ Form (äldst → senast): VOOVVVVV · senaste match 2026-09-20
 | St. Louis City | 1 | 1-0-0 | 1–0 | +1,44 | −26 pe | 2025-03-22 1-0 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Ryan Richter. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 18 | Andre Blake | GK | 35 | Jamaica | 62 k€ | 6,76 | 0 | 0 | 0/0 |  |
+| 31 | George Marks | GK | 26 | USA | 149 k€ | – | 0 | 0 | 0/0 |  |
+| 76 | Andrew Rick | GK | 20 | USA | 748 k€ | 4,98 | 0 | 0 | 1/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Jordan Romaine Griffin | LB | 17 | USA | – | – | 0 | 0 | 0/0 |  |
+|  | Kaiden Moore | CB,LB | 19 | USA | – | – | 0 | 0 | 0/0 |  |
+| 2 | Geiner Martínez | CB,RB | 23 | Colombia | 452 k€ | 6,42 | 0 | 0 | 2/0 |  |
+| 5 | Japhet Sery Larsen | CB | 26 | Denmark | 1,0 M€ | 6,70 | 1 | 0 | 5/1 |  |
+| 16 | Ben Bender | LB | 25 | USA | 157 k€ | 6,61 | 1 | 0 | 1/0 |  |
+| 20 | Philippe Ossibadjouo | LB | 21 | Gabon | – | 5,49 | 0 | 0 | 1/0 |  |
+| 26 | Nathan Harriel | CB,RB,LB | 25 | USA | 845 k€ | 7,14 | 1 | 2 | 4/0 |  |
+| 27 | Kai Wagner | LB | 29 | Germany | 1,4 M€ | 7,48 | 0 | 3 | 4/0 |  |
+| 38 | Giovanny Sequera | RB,RM,LB,LM | 20 | Venezuela | 754 k€ | 7,45 | 0 | 0 | 0/0 |  |
+| 39 | Francis Westfield | RB,LB | 20 | USA | 2,0 M€ | 7,40 | 0 | 7 | 1/0 |  |
+| 44 | Neil Pierre | CB | 18 | USA | 918 k€ | 7,72 | 4 | 0 | 2/0 |  |
+| 66 | Finn Sundstrom | CB,LB,RB | 19 | USA | 719 k€ | 6,82 | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 4 | Jovan Lukić | CM | 24 | Serbia | 1,7 M€ | 6,85 | 0 | 1 | 6/0 |  |
+| 6 | Cavan Sullivan | RM,LM,RW | 17 | USA | 4,7 M€ | 7,40 | 7 | 5 | 2/1 |  |
+| 8 | Jesús Bueno | CM | 27 | Venezuela | 259 k€ | 6,81 | 1 | 1 | 4/0 |  |
+| 11 | Alejandro Bedoya | RM | 39 | USA | 50 k€ | 6,29 | 0 | 2 | 1/0 |  |
+| 14 | Jeremy Rafanello | CM | 26 | USA | 113 k€ | 6,31 | 0 | 0 | 1/0 |  |
+| 19 | Indiana Vassilev | LM,RM | 25 | USA | 1,8 M€ | 6,83 | 4 | 5 | 1/0 |  |
+| 21 | Danley Jean Jacques | CM,CDM,RM | 26 | Haiti | 1,7 M€ | 7,28 | 4 | 2 | 6/0 |  |
+| 33 | Quinn Sullivan | RM | 22 | USA | 4,7 M€ | 6,93 | 1 | 3 | 3/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Bruno Damiani | ST | 24 | Uruguay | 1,7 M€ | 7,07 | 8 | 2 | 5/0 |  |
+| 10 | Milan Iloski | ST,RM,LM | 27 | USA | 2,0 M€ | 7,40 | 16 | 2 | 4/0 |  |
+| 23 | Ezekiel Alladoh | ST | 21 | Ghana | 2,6 M€ | 6,31 | 1 | 1 | 2/1 |  |
+| 28 | Agustín Anello | ST,LM | 24 | USA | 1,3 M€ | 6,31 | 1 | 1 | 2/0 |  |
+| 51 | Malik Jakupović | ST | 17 | USA | 1,3 M€ | 6,51 | 1 | 0 | 0/0 |  |
+| 55 | Sal Olivas | ST | 20 | USA | 722 k€ | – | 0 | 0 | 0/0 |  |

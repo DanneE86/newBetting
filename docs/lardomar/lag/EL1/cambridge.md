@@ -25,9 +25,9 @@ Form (äldst → senast): VOFVOVOO · senaste match 2026-09-26
 | 2019/20 | EL2 | 37 | 1,22 | −0,02 (−0,13 / +0,09) | 24 % (28 %) | 1,08–1,30 | 1,31–1,36* | 1,32 |
 | 2020/21 | EL2 | 46 | 1,74 | +0,21 (+0,19 / +0,23) | 17 % (29 %) | 1,59–1,07 | 1,35–1,27* | 1,40 |
 | 2021/22 | EL1 | 46 | 1,26 | +0,22 (+0,21 / +0,23) | 28 % (26 %) | 1,22–1,61 | 1,09–1,58* | 1,10 |
-| 2022/23 | EL1 | 46 | 1,00 | −0,19 (+0,05 / −0,43) | 15 % (27 %) | 0,89–1,48 | 1,18–1,35* | 1,25 |
+| 2022/23 | EL1 | 46 | 1,00 | −0,19 (+0,05 / −0,43) | 15 % (27 %) | 0,89–1,48 | 1,19–1,35* | 1,25 |
 | 2023/24 | EL1 | 46 | 1,04 | −0,13 (+0,00 / −0,26) | 26 % (27 %) | 0,85–1,33 | 1,09–1,46* | 1,13 |
-| 2024/25 | EL1 | 46 | 0,83 | −0,19 (−0,24 / −0,14) | 24 % (26 %) | 0,98–1,59 | 1,12–1,47* | 1,17 |
+| 2024/25 | EL1 | 46 | 0,83 | −0,19 (−0,24 / −0,14) | 24 % (26 %) | 0,98–1,59 | 1,13–1,47* | 1,17 |
 | 2025/26 | EL2 | 46 | 1,78 | +0,21 (+0,42 / −0,01) | 35 % (28 %) | 1,43–0,72 | 1,27–0,87* | 1,64 |
 | 2026/27 | EL1 | 8 | 1,63 | +0,49 (+0,22 / +0,75) | 50 % (28 %) | 1,63–1,38 | 1,39–1,37* | 1,40 |
 
@@ -67,3 +67,43 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 |---|---|---|---|---|---|
 | 2026-09-19 | Stryk 4971 | Oxford - Cambridge | X | 18 % | 27 % |
 | 2026-08-29 | Stryk 4968 | Cambridge - Huddersfield | 2 | 25 % | 35 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Neil Harris. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Jake Eastwood | GK | 29 | England | 165 k€ | 6,85 | 0 | 0 | 0/0 |  |
+| 13 | Gabriel Breeze | GK | 22 | England | 168 k€ | – | 0 | 0 | 0/0 |  |
+| 25 | Ben Hughes | GK | 22 | Wales | 174 k€ | – | 0 | 0 | 0/0 |  |
+| 31 | JJ Briggs | Keeper | 0 | England | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 3 | Callum Perry | CB,LB | 20 | England | – | 6,86 | 0 | 1 | 2/0 |  |
+| 5 | Patrick Bauer | CB | 33 | Germany | 133 k€ | 6,09 | 0 | 0 | 0/0 |  |
+| 6 | Kelland Watts | CB | 26 | England | 284 k€ | 7,34 | 2 | 0 | 2/0 |  |
+| 15 | Cathal Heffernan | CB | 21 | Ireland | 176 k€ | 6,73 | 0 | 0 | 1/0 |  |
+| 22 | Zak Bradshaw | LWB,LB,CB | 23 | England | 260 k€ | 7,22 | 2 | 1 | 2/0 |  |
+| 29 | Sam Curtis | RB | 20 | Ireland | 763 k€ | 6,97 | 0 | 0 | 1/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 2 | Liam Bennett | RWB,RB,RM | 24 | England | 399 k€ | 6,98 | 1 | 0 | 1/0 |  |
+| 4 | Dominic Ball | CDM,CM | 31 | England | 153 k€ | 7,24 | 0 | 1 | 2/0 |  |
+| 7 | Isaac Heath | LWB,CAM,LW,LM | 21 | England | 469 k€ | 6,66 | 1 | 0 | 0/0 |  |
+| 8 | Owen Moxon | CDM,CM,CAM | 28 | England | 355 k€ | 6,99 | 0 | 1 | 0/0 |  |
+| 10 | Ben Knight | CAM,RW,ST | 24 | England | 365 k€ | 7,18 | 3 | 0 | 1/0 |  |
+| 11 | Sullay Kaikai | CAM,LW,RM,LM | 31 | Sierra Leone | 151 k€ | 7,04 | 1 | 1 | 0/0 |  |
+| 12 | Callum Stead | CAM,RM | 26 | England | 325 k€ | – | 0 | 0 | 0/0 |  |
+| 17 | Pelly-Ruddock Mpanzu | CDM,CAM,CM | 32 | DR Congo | 237 k€ | 6,58 | 0 | 2 | 1/0 |  |
+| 21 | Shane McLoughlin | CDM,CAM | 29 | England | 143 k€ | 6,85 | 0 | 0 | 0/0 |  |
+| 27 | Glenn McConnell | CAM,LW | 21 | England | 301 k€ | 6,20 | 0 | 0 | 0/0 |  |
+| 30 | Lohan McDougald | Midfielder | 17 | England | – | – | 0 | 0 | 0/0 |  |
+| 33 | Daniel Herd | RWB | 17 | England | – | – | 0 | 0 | 0/0 |  |
+| 38 | George Hoddle | CDM,CM | 21 | England | 507 k€ | 6,02 | 0 | 0 | 0/0 |  |
+| 44 | Raees Bangura-Williams | CAM | 22 | Sierra Leone | 551 k€ | 6,59 | 0 | 1 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Louis Appéré | ST | 27 | Scotland | 228 k€ | 6,67 | 1 | 1 | 0/0 |  |
+| 14 | Gassan Ahadme | ST | 25 | Morocco | 479 k€ | 6,77 | 2 | 0 | 1/0 |  |
+| 18 | Ryan Loft | ST | 29 | England | 195 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | Shayne Lavery | ST | 27 | Northern Ireland | 221 k€ | 5,88 | 0 | 0 | 2/0 |  |
+| 32 | Daniel Efobi | Attacker | 17 | England | – | – | 0 | 0 | 0/0 |  |

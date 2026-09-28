@@ -1,0 +1,391 @@
+{
+ "updatedAt": "2026-09-28T19:47:27.474Z",
+ "league": "PT",
+ "fotmobId": 61,
+ "name": "Liga Portugal",
+ "country": "POR",
+ "table": [
+  {
+   "rank": 1,
+   "team": "Porto",
+   "fotmobName": "FC Porto",
+   "fotmobId": 9773,
+   "group": null,
+   "played": 7,
+   "won": 7,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "18-3",
+   "gd": 15,
+   "pts": 21
+  },
+  {
+   "rank": 2,
+   "team": "Benfica",
+   "fotmobName": "Benfica",
+   "fotmobId": 9772,
+   "group": null,
+   "played": 7,
+   "won": 5,
+   "drawn": 1,
+   "lost": 1,
+   "goals": "22-7",
+   "gd": 15,
+   "pts": 16
+  },
+  {
+   "rank": 3,
+   "team": "Sp Lisbon",
+   "fotmobName": "Sporting CP",
+   "fotmobId": 9768,
+   "group": null,
+   "played": 7,
+   "won": 4,
+   "drawn": 3,
+   "lost": 0,
+   "goals": "17-8",
+   "gd": 9,
+   "pts": 15
+  },
+  {
+   "rank": 4,
+   "team": "Santa Clara",
+   "fotmobName": "Santa Clara",
+   "fotmobId": 1567,
+   "group": null,
+   "played": 7,
+   "won": 4,
+   "drawn": 3,
+   "lost": 0,
+   "goals": "11-4",
+   "gd": 7,
+   "pts": 15
+  },
+  {
+   "rank": 5,
+   "team": "Arouca",
+   "fotmobName": "Arouca",
+   "fotmobId": 158085,
+   "group": null,
+   "played": 7,
+   "won": 3,
+   "drawn": 2,
+   "lost": 2,
+   "goals": "10-7",
+   "gd": 3,
+   "pts": 11
+  },
+  {
+   "rank": 6,
+   "team": "Sp Braga",
+   "fotmobName": "Braga",
+   "fotmobId": 10264,
+   "group": null,
+   "played": 6,
+   "won": 3,
+   "drawn": 2,
+   "lost": 1,
+   "goals": "7-5",
+   "gd": 2,
+   "pts": 11
+  },
+  {
+   "rank": 7,
+   "team": "Academico Viseu",
+   "fotmobName": "Académico Viseu",
+   "fotmobId": 1786,
+   "group": null,
+   "played": 7,
+   "won": 3,
+   "drawn": 2,
+   "lost": 2,
+   "goals": "9-9",
+   "gd": 0,
+   "pts": 11
+  },
+  {
+   "rank": 8,
+   "team": "Estrela",
+   "fotmobName": "Estrela da Amadora",
+   "fotmobId": 1074320,
+   "group": null,
+   "played": 7,
+   "won": 2,
+   "drawn": 4,
+   "lost": 1,
+   "goals": "14-14",
+   "gd": 0,
+   "pts": 10
+  },
+  {
+   "rank": 9,
+   "team": "Gil Vicente",
+   "fotmobName": "Gil Vicente",
+   "fotmobId": 9764,
+   "group": null,
+   "played": 6,
+   "won": 2,
+   "drawn": 2,
+   "lost": 2,
+   "goals": "5-5",
+   "gd": 0,
+   "pts": 8
+  },
+  {
+   "rank": 10,
+   "team": "Alverca",
+   "fotmobName": "Alverca",
+   "fotmobId": 9780,
+   "group": null,
+   "played": 7,
+   "won": 2,
+   "drawn": 2,
+   "lost": 3,
+   "goals": "9-11",
+   "gd": -2,
+   "pts": 8
+  },
+  {
+   "rank": 11,
+   "team": "Maritimo",
+   "fotmobName": "Marítimo",
+   "fotmobId": 10212,
+   "group": null,
+   "played": 7,
+   "won": 2,
+   "drawn": 2,
+   "lost": 3,
+   "goals": "8-12",
+   "gd": -4,
+   "pts": 8
+  },
+  {
+   "rank": 12,
+   "team": "Moreirense",
+   "fotmobName": "Moreirense",
+   "fotmobId": 8348,
+   "group": null,
+   "played": 7,
+   "won": 2,
+   "drawn": 2,
+   "lost": 3,
+   "goals": "8-14",
+   "gd": -6,
+   "pts": 8
+  },
+  {
+   "rank": 13,
+   "team": "Famalicao",
+   "fotmobName": "Famalicão",
+   "fotmobId": 1634,
+   "group": null,
+   "played": 7,
+   "won": 1,
+   "drawn": 4,
+   "lost": 2,
+   "goals": "9-7",
+   "gd": 2,
+   "pts": 7
+  },
+  {
+   "rank": 14,
+   "team": "Guimaraes",
+   "fotmobName": "Vitória de Guimarães",
+   "fotmobId": 7844,
+   "group": null,
+   "played": 7,
+   "won": 1,
+   "drawn": 2,
+   "lost": 4,
+   "goals": "5-8",
+   "gd": -3,
+   "pts": 5
+  },
+  {
+   "rank": 15,
+   "team": "Nacional",
+   "fotmobName": "Nacional",
+   "fotmobId": 10214,
+   "group": null,
+   "played": 7,
+   "won": 1,
+   "drawn": 1,
+   "lost": 5,
+   "goals": "7-15",
+   "gd": -8,
+   "pts": 4
+  },
+  {
+   "rank": 16,
+   "team": "Rio Ave",
+   "fotmobName": "Rio Ave",
+   "fotmobId": 7841,
+   "group": null,
+   "played": 7,
+   "won": 1,
+   "drawn": 1,
+   "lost": 5,
+   "goals": "5-15",
+   "gd": -10,
+   "pts": 4
+  },
+  {
+   "rank": 17,
+   "team": "Casa Pia",
+   "fotmobName": "Casa Pia AC",
+   "fotmobId": 212821,
+   "group": null,
+   "played": 7,
+   "won": 1,
+   "drawn": 1,
+   "lost": 5,
+   "goals": "3-16",
+   "gd": -13,
+   "pts": 4
+  },
+  {
+   "rank": 18,
+   "team": "Estoril",
+   "fotmobName": "Estoril",
+   "fotmobId": 7842,
+   "group": null,
+   "played": 7,
+   "won": 0,
+   "drawn": 2,
+   "lost": 5,
+   "goals": "3-10",
+   "gd": -7,
+   "pts": 2
+  }
+ ],
+ "tableHistory": {
+  "2026-09-28": [
+   [
+    "Porto",
+    1,
+    7,
+    21,
+    15
+   ],
+   [
+    "Benfica",
+    2,
+    7,
+    16,
+    15
+   ],
+   [
+    "Sp Lisbon",
+    3,
+    7,
+    15,
+    9
+   ],
+   [
+    "Santa Clara",
+    4,
+    7,
+    15,
+    7
+   ],
+   [
+    "Arouca",
+    5,
+    7,
+    11,
+    3
+   ],
+   [
+    "Sp Braga",
+    6,
+    6,
+    11,
+    2
+   ],
+   [
+    "Academico Viseu",
+    7,
+    7,
+    11,
+    0
+   ],
+   [
+    "Estrela",
+    8,
+    7,
+    10,
+    0
+   ],
+   [
+    "Gil Vicente",
+    9,
+    6,
+    8,
+    0
+   ],
+   [
+    "Alverca",
+    10,
+    7,
+    8,
+    -2
+   ],
+   [
+    "Maritimo",
+    11,
+    7,
+    8,
+    -4
+   ],
+   [
+    "Moreirense",
+    12,
+    7,
+    8,
+    -6
+   ],
+   [
+    "Famalicao",
+    13,
+    7,
+    7,
+    2
+   ],
+   [
+    "Guimaraes",
+    14,
+    7,
+    5,
+    -3
+   ],
+   [
+    "Nacional",
+    15,
+    7,
+    4,
+    -8
+   ],
+   [
+    "Rio Ave",
+    16,
+    7,
+    4,
+    -10
+   ],
+   [
+    "Casa Pia",
+    17,
+    7,
+    4,
+    -13
+   ],
+   [
+    "Estoril",
+    18,
+    7,
+    2,
+    -7
+   ]
+  ]
+ }
+}

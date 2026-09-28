@@ -55,3 +55,41 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 |---|---|---|---|---|---|
 | 2026-05-07 | Europa 2572 | Viborg - Sönderjyske | 2 | 60 % | 52 % |
 | 2026-02-15 | Europa 2549 | Viborg - Bröndby | 1 ✓ | 43 % | 38 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Nickolai Lund. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Mohamed Riahi (skadad, åter Day to day), Yonis Njoh (skadad, åter Day to day), Tim Freriks (skadad, åter Day to day)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Lucas Lund Pedersen | GK | 26 | Denmark | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 20 | Kasper Kiilerich | GK | 20 | Denmark | 1,0 M€ | 6,97 | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Mohamed Riahi | Defender | 20 | Tunisia | – | – | 0 | 0 | 0/0 | skadad, åter Day to day |
+| 3 | Valgeir Lunddal | RB,RWB | 25 | Iceland | 713 k€ | 6,09 | 0 | 0 | 0/0 |  |
+| 4 | Lukas Kirkegaard | CB | 21 | Denmark | – | 7,12 | 0 | 0 | 1/0 |  |
+| 5 | Žan Zaletel | CB | 27 | Slovenia | 985 k€ | 7,26 | 0 | 1 | 1/0 |  |
+| 23 | Oliver Bundgaard Kristensen | LB | 25 | Denmark | – | 7,35 | 0 | 2 | 2/0 |  |
+| 24 | Daniel Anyembe | CB | 28 | Kenya | 1,5 M€ | 6,58 | 0 | 0 | 0/0 |  |
+| 26 | Hjalte Bidstrup | RB | 20 | Denmark | 1,8 M€ | 6,71 | 0 | 0 | 0/0 |  |
+| 38 | Emil Monrad | Defender | 18 | Denmark | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Mads Søndergaard | CM,LM | 23 | Denmark | 1,2 M€ | 7,13 | 3 | 2 | 0/0 |  |
+| 8 | Asker Beck | CM | 23 | Denmark | 826 k€ | 7,32 | 3 | 1 | 0/0 |  |
+| 13 | Jeppe Grønning | CM,CDM | 35 | Denmark | 250 k€ | 7,19 | 0 | 0 | 1/0 |  |
+| 18 | Ruben Kristensen Alte | LW,CAM,CM | 26 | Norway | 730 k€ | 6,09 | 0 | 0 | 1/0 |  |
+| 28 | Lasso Coulibaly | RM | 23 | Ivory Coast | 837 k€ | 6,29 | 0 | 0 | 0/0 |  |
+| 33 | Frederik Damkjer | RB | 19 | Denmark | 959 k€ | – | 0 | 0 | 0/0 |  |
+| 34 | Philip Keller | RW | 18 | Denmark | – | 6,48 | 0 | 1 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Yonis Njoh | LW | 22 | France | 895 k€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
+| 9 | Tim Freriks | ST | 27 | Netherlands | 556 k€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
+| 10 | Sami Jalal Karchoud | RW,LW,ST | 22 | Denmark | – | 7,10 | 0 | 2 | 1/0 |  |
+| 11 | Charly Horneman | LW,RW | 22 | Denmark | 1,4 M€ | 7,10 | 3 | 1 | 0/0 |  |
+| 19 | Dorian Hanza | ST | 25 | Equatorial Guinea | 503 k€ | 7,11 | 3 | 1 | 0/0 |  |
+| 25 | Giulio | LW | 21 | Brazil | – | 6,48 | 0 | 0 | 0/0 |  |
+| 29 | Roald Mitchell | ST | 23 | Trinidad and Tobago | 291 k€ | 5,82 | 0 | 0 | 0/0 |  |
+| 36 | Adam Kleis-Kristoffersen | Attacker | 18 | Denmark | – | 6,75 | 1 | 0 | 0/0 |  |

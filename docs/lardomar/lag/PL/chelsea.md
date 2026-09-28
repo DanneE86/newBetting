@@ -6,6 +6,7 @@ Genererad 2026-09-28. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden"
 
 - 2025/26: −0,30 poäng per match mot marknaden. Ligan visar ingen persistens, så räkna inte med att det fortsätter.
 - Stark historik mot Arsenal (−0,68 p/match mot marknaden, 16 möten), Crystal Palace (+0,62 p/match mot marknaden, 16 möten), Everton (−0,57 p/match mot marknaden, 16 möten), Man United (−0,66 p/match mot marknaden, 16 möten), Tottenham (+0,79 p/match mot marknaden, 16 möten), Brentford (−0,66 p/match mot marknaden, 11 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Utan Cole Palmer (15 % av anfallet): 2,57 poäng per match mot 1,49 med (7 mot 74 matcher), mot marknaden +0,64 mot −0,24.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -13,8 +14,8 @@ Form (äldst → senast): OVFVVFOF · senaste match 2026-09-18
 
 | Mått | Värde |
 |---|---|
-| Tur (poäng − xP per match) | +0,26 |
-| xG-målskillnad − målskillnad | −0,18 |
+| Tur (poäng − xP per match) | +0,29 |
+| xG-målskillnad − målskillnad | −0,23 |
 | Poäng mot marknaden per match | −0,18 |
 
 ## Säsonger
@@ -30,9 +31,22 @@ Form (äldst → senast): OVFVVFOF · senaste match 2026-09-18
 | 2023/24 | PL | 38 | 1,66 | −0,02 (+0,05 / −0,08) | 24 % (23 %) | 2,03–1,66 | 2,13–1,65 | 1,65 |
 | 2024/25 | PL | 38 | 1,82 | −0,00 (+0,13 / −0,14) | 24 % (22 %) | 1,68–1,13 | 1,92–1,43 | 1,62 |
 | 2025/26 | PL | 38 | 1,37 | −0,30 (−0,48 / −0,12) | 26 % (24 %) | 1,53–1,37 | 1,90–1,53 | 1,55 |
-| 2026/27 | PL | 5 | 1,40 | −0,38 (−0,13 / −0,55) | 20 % (23 %) | 2,00–2,40 | 1,68–1,87* | 1,27 |
+| 2026/27 | PL | 5 | 1,40 | −0,38 (−0,13 / −0,55) | 20 % (23 %) | 2,00–2,40 | 1,79–2,06 | 1,22 |
 
-\* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+## Nyckelspelare (Understat, 2024/25–)
+
+Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
+
+| Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
+|---|---|---|---|---|
+| Morgan Rogers | 18 % | 0 / 81 | – / 1,58 | – / −0,17 |
+| Cole Palmer | 15 % | 7 / 74 | 2,57 / 1,49 | +0,64 / −0,24 |
+| João Pedro | 15 % | 2 / 79 | 0,00 / 1,62 | −1,55 / −0,13 |
+| Enzo Fernández | 10 % | 1 / 80 | 0,00 / 1,60 | −1,62 / −0,15 |
+| Pedro Neto | 9 % | 4 / 77 | 1,00 / 1,61 | −0,52 / −0,15 |
+| Alejandro Garnacho | 5 % | 9 / 72 | 0,44 / 1,72 | −1,13 / −0,05 |
+
+Ligans test av frånvaro mot marknaden: svag signal (inte bekräftad). Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -93,3 +107,43 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-12-03 | Europa 2528 | Leeds - Chelsea | 1 | 53 % | 49 % |
 | 2025-11-30 | Europa 2527 | Chelsea - Arsenal | X | 23 % | 31 % |
 | 2025-08-17 | Europa 2497 | Chelsea - Crystal Palace | X | 63 % | 55 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Xabi Alonso. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Mike Penders (skadad, åter Mid October 2026), Marco Palestra (osäker), Cole Palmer (skadad, åter Mid October 2026), Reece James (osäker), Moisés Caicedo (osäker), João Pedro (skadad, åter Mid October 2026), Emanuel Emegha (osäker)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Emiliano Martínez | GK | 34 | Argentina | 15,1 M€ | 7,15 | 0 | 0 | 0/0 |  |
+| 28 | Teddy Sharman-Lowe | GK | 23 | England | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 39 | Mike Penders | GK | 21 | Belgium | 18,3 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 44 | Gabriel Słonina | GK | 22 | USA | 3,4 M€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 3 | Wesley Fofana | CB | 25 | France | 24,9 M€ | 7,03 | 0 | 0 | 1/0 |  |
+| 5 | Maxence Lacroix | CB | 26 | France | 37,6 M€ | 6,78 | 0 | 1 | 1/0 |  |
+| 6 | Levi Colwill | CB | 23 | England | 52,4 M€ | 6,61 | 0 | 0 | 1/0 |  |
+| 21 | Jorrel Hato | LB,CB,LWB | 20 | Netherlands | 40,2 M€ | 6,71 | 0 | 2 | 0/0 |  |
+| 27 | Malo Gusto | RB,RWB,CDM,LB | 23 | France | 33,5 M€ | 6,70 | 0 | 0 | 0/0 |  |
+| 29 | Pep Chavarría | LB,LWB | 28 | Spain | 7,2 M€ | 6,38 | 0 | 0 | 0/0 |  |
+| 30 | Aaron Anselmino | CB | 21 | Argentina | 11,0 M€ | – | 0 | 0 | 0/0 |  |
+| 34 | Josh Acheampong | CB,RB | 20 | England | 21,5 M€ | 6,27 | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 2 | Marco Palestra | RM,RB,LM | 21 | Italy | 11,2 M€ | – | 0 | 0 | 0/0 | osäker |
+| 4 | Valentín Barco | CDM,CM | 22 | Argentina | 22,5 M€ | 6,56 | 0 | 0 | 1/0 |  |
+| 10 | Cole Palmer | CAM,RW | 24 | England | 91,9 M€ | 7,57 | 2 | 2 | 1/0 | skadad, åter Mid October 2026 |
+| 14 | Jordan Henderson | CDM,CM | 36 | England | 1,4 M€ | 6,80 | 0 | 0 | 0/0 |  |
+| 17 | Morgan Rogers | CAM,LW,RW | 24 | England | 73,4 M€ | 7,87 | 3 | 1 | 1/0 |  |
+| 24 | Reece James | RB,CDM,CM | 26 | England | 40,0 M€ | 6,83 | 0 | 0 | 1/0 | osäker |
+| 25 | Moisés Caicedo | CDM,CM | 24 | Ecuador | 98,0 M€ | 6,04 | 0 | 0 | 0/0 | osäker |
+| 45 | Roméo Lavia | CDM | 22 | Belgium | 26,5 M€ | 7,14 | 1 | 0 | 1/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Pedro Neto | RW,LW,RWB,CAM,RM | 26 | Portugal | 46,5 M€ | 7,03 | 1 | 0 | 0/0 |  |
+| 9 | João Pedro | ST,CAM | 25 | Brazil | 71,8 M€ | 7,73 | 3 | 3 | 1/0 | skadad, åter Mid October 2026 |
+| 11 | Jamie Gittens | LW,LM,RW | 22 | England | 37,8 M€ | – | 0 | 0 | 0/0 |  |
+| 18 | Danny Welbeck | ST | 35 | England | 2,4 M€ | 6,41 | 0 | 0 | 0/0 |  |
+| 22 | Emanuel Emegha | ST | 23 | Netherlands | 23,2 M€ | – | 0 | 0 | 0/0 | osäker |
+| 23 | Geovany Quenda | RW,LW,RM | 19 | Portugal | 32,5 M€ | 6,04 | 0 | 0 | 0/0 |  |
+| 41 | Estêvão | RW | 19 | Brazil | 78,7 M€ | – | 0 | 0 | 0/0 |  |

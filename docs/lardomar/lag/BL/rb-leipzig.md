@@ -5,6 +5,7 @@ Genererad 2026-09-28. Ligans lärdomar: [BL](../../ligor/BL.md). "Mot marknaden"
 ## I korthet
 
 - Stark historik mot Mainz (−0,51 p/match mot marknaden, 16 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Utan Rômulo (11 % av anfallet): 1,75 poäng per match mot 1,69 med (4 mot 68 matcher), mot marknaden +0,13 mot +0,04.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -12,8 +13,8 @@ Form (äldst → senast): VFVFVFVF · senaste match 2026-09-20
 
 | Mått | Värde |
 |---|---|
-| Tur (poäng − xP per match) | −0,08 |
-| xG-målskillnad − målskillnad | +0,18 |
+| Tur (poäng − xP per match) | −0,21 |
+| xG-målskillnad − målskillnad | +0,40 |
 | Poäng mot marknaden per match | −0,26 |
 
 ## Säsonger
@@ -29,9 +30,22 @@ Form (äldst → senast): VFVFVFVF · senaste match 2026-09-20
 | 2023/24 | BL | 34 | 1,91 | −0,06 (−0,01 / −0,11) | 24 % (20 %) | 2,26–1,15 | 2,14–1,27 | 1,83 |
 | 2024/25 | BL | 34 | 1,50 | −0,06 (−0,06 / −0,05) | 35 % (23 %) | 1,56–1,41 | 1,54–1,89 | 1,26 |
 | 2025/26 | BL | 34 | 1,91 | +0,20 (+0,32 / +0,08) | 15 % (23 %) | 1,94–1,38 | 2,21–1,57 | 1,77 |
-| 2026/27 | BL | 4 | 1,50 | −0,38 (+0,87 / −1,63) | 0 % (21 %) | 2,25–1,25 | 2,11–1,65* | 1,63 |
+| 2026/27 | BL | 4 | 1,50 | −0,38 (+0,87 / −1,63) | 0 % (21 %) | 2,25–1,25 | 2,19–1,29 | 1,88 |
 
-\* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+## Nyckelspelare (Understat, 2024/25–)
+
+Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
+
+| Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
+|---|---|---|---|---|
+| Christoph Baumgartner | 12 % | 2 / 70 | 0,50 / 1,73 | −0,67 / +0,07 |
+| Rômulo | 11 % | 4 / 68 | 1,75 / 1,69 | +0,13 / +0,04 |
+| Yan Diomande | 10 % | 0 / 72 | – / 1,69 | – / +0,05 |
+| David Raum | 9 % | 10 / 62 | 1,10 / 1,79 | −0,66 / +0,16 |
+| Christopher Nkunku | 9 % | 0 / 72 | – / 1,69 | – / +0,05 |
+| Antonio Nusa | 8 % | 7 / 65 | 1,00 / 1,77 | −0,54 / +0,11 |
+
+Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -68,3 +82,45 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-02-08 | Europa 2547 | Köln - RB Leipzig | 2 ✓ | 48 % | 47 % |
 | 2026-01-14 | Europa 2540 | RB Leipzig - Freiburg | 1 ✓ | 61 % | 55 % |
 | 2025-11-23 | Europa 2525 | RB Leipzig - Werder Bremen | 1 ✓ | 69 % | 61 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Martín Demichelis. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Assan Ouédraogo (skadad, åter Late December 2026), Christoph Baumgartner (skadad, åter Mid October 2026), Rocco Reitz (skadad, åter Mid October 2026), Marc Guiu (skadad, åter A few weeks), Brajan Gruda (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Ørjan Håskjold Nyland | GK | 36 | Norway | 385 k€ | – | 0 | 0 | 0/0 |  |
+| 25 | Leopold Zingerle | GK | 32 | Germany | 464 k€ | – | 0 | 0 | 0/0 |  |
+| 26 | Maarten Vandevoordt | GK | 24 | Belgium | 7,1 M€ | 7,25 | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Abdoul Koné | CB | 21 | France | 2,0 M€ | – | 0 | 0 | 0/0 |  |
+| 3 | Maxime Estève | CB | 24 | France | 23,8 M€ | 6,75 | 0 | 0 | 0/0 |  |
+| 4 | Willi Orbán | CB | 33 | Hungary | 2,4 M€ | 7,37 | 1 | 0 | 0/0 |  |
+| 16 | Lukas Klostermann | RB | 30 | Germany | 2,0 M€ | – | 0 | 0 | 0/0 |  |
+| 17 | Ridle Baku | RB | 28 | Germany | 7,7 M€ | 7,10 | 2 | 0 | 0/0 |  |
+| 22 | David Raum | LB | 28 | Germany | 12,5 M€ | 7,29 | 0 | 0 | 0/0 |  |
+| 23 | Castello Lukeba | CB | 23 | France | 38,4 M€ | 7,13 | 0 | 0 | 1/0 |  |
+| 35 | Max Finkgräfe | LB | 22 | Germany | 3,0 M€ | 6,07 | 0 | 0 | 0/0 |  |
+| 39 | Benjamin Henrichs | RB | 29 | Germany | 6,8 M€ | 6,68 | 0 | 0 | 1/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Ezechiel Banzuzi | CM,CDM | 21 | DR Congo | 17,4 M€ | 7,09 | 0 | 1 | 0/0 |  |
+| 8 | Assan Ouédraogo | CM | 20 | Germany | 14,5 M€ | 6,74 | 0 | 0 | 0/0 | skadad, åter Late December 2026 |
+| 13 | Nicolas Seiwald | CM,CDM,CB | 25 | Austria | 16,7 M€ | 6,87 | 0 | 0 | 0/0 |  |
+| 14 | Christoph Baumgartner | CM,CAM | 27 | Austria | 14,8 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 20 | Rocco Reitz | CDM,CM,RM,CAM,RW | 24 | Germany | 16,9 M€ | 8,29 | 1 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 21 | Neil El Aynaoui | CDM,CM | 25 | Morocco | 16,3 M€ | 7,01 | 0 | 0 | 1/0 |  |
+| 30 | Andrija Maksimović | CM | 19 | Serbia | 13,2 M€ | 6,22 | 0 | 1 | 0/0 |  |
+| 37 | Benno Kaltefleiter | CM | 18 | Germany | – | – | 0 | 0 | 0/0 |  |
+| 47 | Viggo Gebel | Midfielder | 18 | Germany | 837 k€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Antonio Nusa | LW,LM | 21 | Norway | 32,3 M€ | 7,89 | 2 | 2 | 2/0 |  |
+| 9 | Marc Guiu | ST | 20 | Spain | 14,8 M€ | 6,00 | 0 | 0 | 0/0 | skadad, åter A few weeks |
+| 10 | Brajan Gruda | RW,CAM,CM | 22 | Germany | 28,9 M€ | 6,92 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 11 | Johan Bakayoko | RW | 23 | Belgium | 22,6 M€ | 5,51 | 0 | 0 | 0/0 |  |
+| 27 | Tidiam Gomis | ST,LW | 20 | France | 5,9 M€ | 7,14 | 1 | 2 | 0/0 |  |
+| 28 | Christopher Nkunku | ST,CAM | 28 | France | 24,4 M€ | 7,07 | 1 | 1 | 0/0 |  |
+| 40 | Rômulo | ST | 24 | Brazil | 26,4 M€ | 6,88 | 1 | 0 | 0/0 |  |
+| 45 | Samba Konaté | ST | 17 | France | 1,9 M€ | – | 0 | 0 | 0/0 |  |

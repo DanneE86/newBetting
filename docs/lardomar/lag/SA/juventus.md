@@ -4,7 +4,9 @@ Genererad 2026-09-28. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden"
 
 ## I korthet
 
-- Senaste 8: xG-målskillnaden är +0,83 per match bättre än målskillnaden.
+- Senaste 8: otur med −0,57 poäng per match mot xP. Marknaden prisar redan in det i ligan (ingen bekräftad effekt), så det är inget spel i sig.
+- Senaste 8: xG-målskillnaden är +1,06 per match bättre än målskillnaden.
+- Utan Francisco Conceição (10 % av anfallet): 1,88 poäng per match mot 1,84 med (8 mot 73 matcher), mot marknaden +0,30 mot −0,03.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -12,8 +14,8 @@ Form (äldst → senast): VFOVVOFV · senaste match 2026-09-20
 
 | Mått | Värde |
 |---|---|
-| Tur (poäng − xP per match) | −0,42 |
-| xG-målskillnad − målskillnad | +0,83 |
+| Tur (poäng − xP per match) | −0,57 |
+| xG-målskillnad − målskillnad | +1,06 |
 | Poäng mot marknaden per match | −0,36 |
 
 ## Säsonger
@@ -29,9 +31,22 @@ Form (äldst → senast): VFOVVOFV · senaste match 2026-09-20
 | 2023/24 | SA | 38 | 1,87 | +0,12 (+0,12 / +0,13) | 37 % (26 %) | 1,42–0,82 | 1,67–0,84 | 1,88 |
 | 2024/25 | SA | 38 | 1,84 | +0,16 (+0,13 / +0,18) | 42 % (27 %) | 1,53–0,92 | 1,53–0,93 | 1,78 |
 | 2025/26 | SA | 38 | 1,82 | −0,13 (−0,16 / −0,10) | 32 % (24 %) | 1,61–0,89 | 1,95–0,95 | 1,93 |
-| 2026/27 | SA | 5 | 2,00 | −0,13 (+0,31 / −0,79) | 20 % (23 %) | 1,60–0,80 | 1,97–0,91* | 2,08 |
+| 2026/27 | SA | 5 | 2,00 | −0,13 (+0,31 / −0,79) | 20 % (23 %) | 1,60–0,80 | 1,85–0,42 | 2,33 |
 
-\* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+## Nyckelspelare (Understat, 2024/25–)
+
+Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
+
+| Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
+|---|---|---|---|---|
+| Francisco Conceição | 10 % | 8 / 73 | 1,88 / 1,84 | +0,30 / −0,03 |
+| Kenan Yildiz | 10 % | 3 / 78 | 1,67 / 1,85 | +0,69 / −0,02 |
+| Weston McKennie | 8 % | 5 / 76 | 1,20 / 1,88 | −0,70 / +0,05 |
+| Randal Kolo Muani | 8 % | 0 / 81 | – / 1,84 | – / +0,00 |
+| Nick Woltemade | 7 % | 0 / 81 | – / 1,84 | – / +0,00 |
+| Jonathan Christian David | 7 % | 1 / 80 | 3,00 / 1,82 | +1,02 / −0,01 |
+
+Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -83,3 +98,45 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-10-05 | Europa 2511 | Juventus - Milan | X | 34 % | 35 % |
 | 2025-08-31 | Europa 2501 | Genoa - Juventus | 2 ✓ | 62 % | 52 % |
 | 2025-08-24 | Europa 2499 | Juventus - Parma | 1 ✓ | 84 % | 67 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Luciano Spalletti. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Kamil Grabara (skadad, åter Out for season), Manuel Locatelli (skadad, åter Late March 2027), Khéphren Thuram-Ulien (skadad, åter Mid January 2027), Andrea Cambiaso (osäker), Juan Cabal (osäker), Kenan Yıldız (skadad, åter Early December 2026), Jérémie Boga (skadad, åter Early November 2026), Jeff Ekhator (skadad, åter Early November 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Kamil Grabara | GK | 27 | Poland | 10,4 M€ | – | 0 | 0 | 0/0 | skadad, åter Out for season |
+| 23 | Carlo Pinsoglio | GK | 36 | Italy | 320 k€ | – | 0 | 0 | 0/0 |  |
+| 25 | Guglielmo Vicario | GK | 29 | Italy | 19,4 M€ | 6,93 | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 3 | Gleison Bremer | CB | 29 | Brazil | 31,8 M€ | 7,60 | 2 | 0 | 0/0 |  |
+| 4 | Federico Gatti | CB | 28 | Italy | 12,6 M€ | – | 1 | 0 | 1/0 |  |
+| 6 | Lloyd Kelly | CB | 27 | England | 16,1 M€ | 6,42 | 0 | 0 | 0/0 |  |
+| 15 | Pierre Kalulu | CB,RB,RWB | 26 | France | 26,6 M€ | 7,25 | 0 | 0 | 0/0 |  |
+| 24 | Daniele Rugani | CB | 32 | Italy | 1,5 M€ | – | 0 | 0 | 0/0 |  |
+| 26 | Jhon Lucumí | CB | 28 | Colombia | 14,2 M€ | 7,16 | 0 | 0 | 2/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 2 | Zeki Çelik | RWB,CB,RM,RB,LB | 29 | Turkiye | 6,3 M€ | 7,14 | 0 | 1 | 1/0 |  |
+| 5 | Manuel Locatelli | CDM,CM | 28 | Italy | 19,0 M€ | 7,82 | 0 | 1 | 1/0 | skadad, åter Late March 2027 |
+| 8 | Teun Koopmeiners | CB,CM,CDM,CAM | 28 | Netherlands | 19,0 M€ | 6,68 | 1 | 1 | 0/0 |  |
+| 12 | Douglas Luiz | CDM,CM | 28 | Brazil | 15,4 M€ | 7,27 | 0 | 0 | 1/0 |  |
+| 19 | Khéphren Thuram-Ulien | CDM,CM | 25 | France | 30,0 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid January 2027 |
+| 20 | Andrea Cambiaso | LWB,LB,RWB,LM,RM | 26 | Italy | 26,5 M€ | 6,17 | 0 | 0 | 1/0 | osäker |
+| 22 | Weston McKennie | CAM,RWB,RW,CM,CDM,RM,LWB | 28 | USA | 17,0 M€ | 6,95 | 0 | 0 | 0/0 |  |
+| 29 | Pape Sarr | CM,CDM,CAM | 24 | Senegal | 31,8 M€ | 6,57 | 0 | 0 | 0/0 |  |
+| 31 | Nicolás González | LM,CAM,LB,LWB | 28 | Argentina | 16,3 M€ | 7,53 | 1 | 0 | 0/0 |  |
+| 32 | Juan Cabal | LM,LWB | 25 | Colombia | 6,8 M€ | – | 0 | 0 | 0/0 | osäker |
+| 41 | Augusto Owusu | CAM | 21 | Italy | 721 k€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Francisco Conceição | RW,CAM | 23 | Portugal | 24,6 M€ | 7,50 | 1 | 1 | 1/0 |  |
+| 9 | Randal Kolo Muani | ST,RW,LW,CAM | 27 | France | 21,7 M€ | 6,87 | 0 | 1 | 0/0 |  |
+| 10 | Kenan Yıldız | LW,CAM,ST | 21 | Turkiye | 60,6 M€ | 7,62 | 0 | 0 | 0/0 | skadad, åter Early December 2026 |
+| 11 | Edon Zhegrova | RW,CAM | 27 | Kosovo | 13,2 M€ | 7,68 | 2 | 1 | 0/0 |  |
+| 13 | Jérémie Boga | LW,ST,CAM | 29 | Ivory Coast | 3,0 M€ | 6,53 | 0 | 0 | 0/0 | skadad, åter Early November 2026 |
+| 14 | Arkadiusz Milik | ST | 32 | Poland | 932 k€ | – | 0 | 0 | 0/0 |  |
+| 17 | Kerim Alajbegović | LW,LM,CAM,CM | 19 | Bosnia and Herzegovina | 11,2 M€ | 6,71 | 0 | 0 | 0/0 |  |
+| 18 | Jeff Ekhator | ST,CAM | 19 | Italy | 12,8 M€ | – | 0 | 0 | 0/0 | skadad, åter Early November 2026 |
+| 27 | Nick Woltemade | ST,CAM | 24 | Germany | 52,7 M€ | 6,11 | 0 | 0 | 0/0 |  |

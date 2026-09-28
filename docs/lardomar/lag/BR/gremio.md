@@ -60,3 +60,65 @@ Form (äldst → senast): VFFVFFFO · senaste match 2026-09-20
 | Remo | 1 | 0-1-0 | 0–0 | −0,92 | +75 pe | 2026-04-06 0-0 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Renato Gaúcho. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Marlon (skadad, åter A few weeks), Diego Caito (skadad, åter Early October 2026), Dodi (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Weverton | GK | 38 | Brazil | 950 k€ | – | 0 | 0 | 0/0 |  |
+| 12 | Gabriel Grando | GK | 26 | Brazil | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 24 | Thiago Beltrame | GK | 23 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 31 | Gabriel Menegon | Keeper | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 51 | João Victor | Keeper | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Fabián Balbuena | CB | 35 | Paraguay | 498 k€ | – | 0 | 0 | 0/0 |  |
+| 3 | Wagner Leonardo | CB | 27 | Brazil | 2,1 M€ | – | 0 | 0 | 0/0 |  |
+| 4 | Walter Kannemann | CB | 35 | Argentina | 425 k€ | – | 0 | 0 | 0/0 |  |
+| 7 | Cristian Pavón | RB,RW,LW,RM | 30 | Argentina | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 14 | Marcos Rocha | RB | 37 | Brazil | 259 k€ | – | 0 | 0 | 0/0 |  |
+| 18 | João Pedro | RB | 29 | Brazil | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 23 | Marlon | LB | 29 | Brazil | 2,4 M€ | – | 0 | 0 | 0/0 | skadad, åter A few weeks |
+| 27 | Diego Caito | RB,RWB | 22 | Brazil | – | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 32 | Vitor Ribeiro | Defender | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 38 | Caio Paulista | LB,LWB | 28 | Brazil | 1,5 M€ | – | 0 | 0 | 0/0 |  |
+| 43 | Luis Eduardo | CB | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 52 | Vagner | Defender | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 53 | Gustavo Martins | CB,RB | 24 | Brazil | 2,0 M€ | – | 0 | 0 | 0/0 |  |
+| 54 | Pedro Gabriel | LB,LM | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 58 | Emanuel Mariano | Defender | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 82 | Wallace | CB | 21 | Brazil | 409 k€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Juan Nardoni | CAM,CM,CDM | 24 | Argentina | 9,3 M€ | – | 0 | 0 | 0/0 |  |
+| 10 | Filip Krovinović | CDM,CAM | 31 | Croatia | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 15 | Danilo Barbosa | CDM,CB | 30 | Brazil | 1,4 M€ | – | 0 | 0 | 0/0 |  |
+| 17 | Dodi | CDM,CM,CAM | 30 | Brazil | 343 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 19 | Erick Noriega | CDM,CM,CB | 24 | Peru | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| 20 | Mathías Villasanti | CAM,CM,CDM | 29 | Paraguay | 2,3 M€ | – | 0 | 0 | 0/0 |  |
+| 39 | Tiaguinho | CDM | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 40 | Jeferson Forneck | Midfielder | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 48 | João Borne | Midfielder | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 50 | Bernardo Zortea | CDM | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 55 | Danillo | Midfielder | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 59 | Harlley | Midfielder | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 60 | Artur Junior | Midfielder | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 61 | Lago Menezes | Midfielder | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 64 | Adrielson | Midfielder | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 65 | Riquelme | CM | 20 | Brazil | 2,1 M€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Francis Amuzu | LW | 27 | Ghana | 2,3 M€ | – | 0 | 0 | 0/0 |  |
+| 21 | Tetê | RW,RM | 26 | Brazil | 7,2 M€ | – | 0 | 0 | 0/0 |  |
+| 22 | Martin Braithwaite | ST,CAM | 35 | Denmark | 990 k€ | – | 0 | 0 | 0/0 |  |
+| 30 | Matheus Nascimento | ST | 22 | Brazil | 2,0 M€ | – | 0 | 0 | 0/0 |  |
+| 47 | Roger | RW | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 49 | Lucca | Attacker | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 57 | Benjamin | Attacker | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 62 | Fellipe Magalhães | Attacker | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 63 | Arnaldo | Attacker | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 77 | Jovane Cabral | LW,CAM | 28 | Cabo Verde | 698 k€ | – | 0 | 0 | 0/0 |  |
+| 95 | Carlos Vinícius | ST | 31 | Brazil | 2,5 M€ | – | 0 | 0 | 0/0 |  |
+| 99 | José Enamorado | RW,ST,LW,CAM | 27 | Colombia | 2,0 M€ | – | 0 | 0 | 0/0 |  |

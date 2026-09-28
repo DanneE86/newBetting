@@ -67,3 +67,43 @@ Form (äldst → senast): VVVFOFOV · senaste match 2026-09-20
 | Vancouver Whitecaps | 1 | 1-0-0 | 1–0 | +1,41 | −27 pe | 2019-05-16 1-0 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Gerardo Martino. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Lucas Hoyos | GK | 37 | Argentina | 101 k€ | 6,66 | 0 | 0 | 3/0 |  |
+| 42 | Jayden Hibbert | GK | 22 | Jamaica | 302 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Daniel Chica | CB,RB | 24 | USA | 266 k€ | 6,45 | 0 | 0 | 0/0 |  |
+| 3 | Elías Báez | LB,LM | 21 | Argentina | 2,2 M€ | 6,84 | 1 | 3 | 6/0 |  |
+| 4 | Enea Mihaj | CB | 28 | Albania | 2,0 M€ | 6,47 | 0 | 0 | 4/1 |  |
+| 6 | Júnior Alonso | CB,LB | 33 | Paraguay | 842 k€ | 6,69 | 0 | 0 | 1/0 |  |
+| 27 | Paulo Díaz | CB | 32 | Chile | 1,1 M€ | 6,70 | 0 | 0 | 1/0 |  |
+| 47 | Matthew Edwards | RB,RM | 23 | USA | 174 k€ | 6,36 | 0 | 1 | 3/0 |  |
+| 50 | Dominik Chong-Qui | LB,LWB,LM | 18 | USA | 864 k€ | – | 0 | 0 | 0/0 |  |
+| 55 | Tomás Jacob | RB,CB,CM | 22 | Argentina | 1,8 M€ | 6,95 | 3 | 2 | 7/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Enzo Dovlo | RW,RWB,RM | 23 | Togo | – | 6,67 | 0 | 0 | 0/0 |  |
+| 7 | Steven Alzate | CM | 28 | Colombia | 1,5 M€ | 6,44 | 0 | 0 | 1/0 |  |
+| 8 | Tristan Muyumba | CM,CDM,CAM | 29 | France | 676 k€ | 7,00 | 4 | 1 | 5/0 |  |
+| 11 | Giuliano Galoppo | CM,CDM | 27 | Argentina | 2,2 M€ | 7,50 | 1 | 0 | 1/0 |  |
+| 14 | Mauricio Amaro | CM,CDM,CAM | 21 | Uruguay | 1,5 M€ | 7,18 | 0 | 0 | 1/0 |  |
+| 16 | Adrian Gill | CDM,CM | 20 | USA | – | 6,86 | 0 | 0 | 2/0 |  |
+| 28 | Will Reilly | CM,CDM | 23 | USA | 172 k€ | 6,23 | 0 | 0 | 3/0 |  |
+| 35 | Ajani Fortune | CM,CAM,CDM | 23 | Trinidad and Tobago | 636 k€ | 6,74 | 3 | 0 | 0/0 |  |
+| 40 | Santiago Pita | CAM,LW | 19 | USA | – | – | 0 | 0 | 0/0 |  |
+| 48 | Cooper Sanchez | CM,CAM,CDM | 18 | USA | 1,4 M€ | 6,49 | 0 | 1 | 6/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Cameron Dunbar | LW,CAM,ST,LM,RM | 23 | USA | 306 k€ | – | 0 | 0 | 0/0 |  |
+|  | Patrick Weah | ST | 22 | USA | 297 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Miguel Almirón | LW,LM,RM,ST | 32 | Paraguay | 13,2 M€ | 7,48 | 4 | 5 | 0/0 |  |
+| 19 | Sérgio Santos | ST | 32 | Brazil | 183 k€ | 6,08 | 0 | 0 | 0/0 |  |
+| 20 | Luke Brennan | RW,LW | 21 | USA | 440 k€ | 6,22 | 0 | 0 | 2/0 |  |
+| 22 | Fabrice Picault | ST,LW | 35 | Haiti | 83 k€ | 6,63 | 3 | 1 | 1/0 |  |
+| 30 | Cayman Togashi | ST | 33 | Japan | 74 k€ | 6,05 | 0 | 0 | 0/0 |  |
+| 36 | Breel Embolo | ST | 29 | Switzerland | 9,3 M€ | 6,99 | 1 | 0 | 0/0 |  |
+| 59 | Aleksey Miranchuk | RW,ST | 30 | Russia | 2,8 M€ | 7,33 | 6 | 6 | 1/0 |  |

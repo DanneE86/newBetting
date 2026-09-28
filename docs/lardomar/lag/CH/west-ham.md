@@ -4,7 +4,7 @@ Genererad 2026-09-28. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden"
 
 ## I korthet
 
-- Senaste 8: xG-målskillnaden är −0,93 per match sämre än målskillnaden.
+- Senaste 8: xG-målskillnaden är −0,92 per match sämre än målskillnaden.
 - Stark historik mot Southampton (+0,58 p/match mot marknaden, 12 möten), Watford (+0,74 p/match mot marknaden, 7 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
 
 ## Nuläge (senaste 8 ligamatcher)
@@ -14,7 +14,7 @@ Form (äldst → senast): OFOVVVVO · senaste match 2026-09-19
 | Mått | Värde |
 |---|---|
 | Tur (poäng − xP per match) | +0,24 |
-| xG-målskillnad − målskillnad | −0,93 |
+| xG-målskillnad − målskillnad | −0,92 |
 | Poäng mot marknaden per match | −0,05 |
 
 ## Säsonger
@@ -60,3 +60,43 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 |---|---|---|---|---|---|
 | 2026-08-29 | Stryk 4968 | Watford - West Ham | X | 67 % | 54 % |
 | 2026-08-22 | Stryk 4967 | West Ham - Charlton | 2 | 85 % | 66 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Nuno Espírito Santo. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Joël Veltman (skadad, åter Early October 2026), Tomás Souček (osäker)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Mads Hermansen | GK | 26 | Denmark | 15,3 M€ | 6,91 | 0 | 0 | 1/0 |  |
+| 23 | Alphonse Areola | GK | 33 | France | 3,2 M€ | – | 0 | 0 | 0/0 |  |
+| 49 | Finlay Herrick | GK | 20 | England | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Kyle Walker-Peters | RB,LB | 29 | England | 12,1 M€ | 6,76 | 0 | 2 | 0/0 |  |
+| 3 | Max Kilman | CB | 29 | England | 16,3 M€ | 7,26 | 1 | 0 | 2/0 |  |
+| 5 | Morato | CB,LB | 25 | Brazil | 13,1 M€ | 7,34 | 0 | 1 | 1/0 |  |
+| 15 | Konstantinos Mavropanos | CB | 28 | Greece | 14,3 M€ | 7,36 | 4 | 0 | 2/0 |  |
+| 18 | Adama Boiro | LB | 24 | Spain | 2,2 M€ | 6,38 | 0 | 0 | 0/0 |  |
+| 30 | Oliver Scarles | LB | 20 | England | 12,3 M€ | 7,09 | 0 | 0 | 2/0 |  |
+| 34 | Joël Veltman | RB | 34 | Netherlands | 1,2 M€ | 6,89 | 0 | 1 | 1/0 | skadad, åter Early October 2026 |
+| 58 | Airidas Golambeckis | CB | 18 | Lithuania | – | 6,62 | 0 | 0 | 0/0 |  |
+| 63 | Ezra Mayers | CB,LB | 19 | England | 228 k€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 4 | Edson Álvarez | CDM,CM,CB | 28 | Mexico | 11,9 M€ | – | 0 | 0 | 0/0 |  |
+| 7 | Arne Engels | CM,CDM,RW | 23 | Belgium | 11,6 M€ | 7,45 | 0 | 2 | 0/0 |  |
+| 14 | Divine Mukasa | CAM,CM,ST | 19 | England | 394 k€ | 7,15 | 2 | 0 | 1/0 |  |
+| 27 | Soungoutou Magassa | CDM,CM | 22 | France | 14,4 M€ | – | 0 | 0 | 0/0 |  |
+| 28 | Tomás Souček | CDM,CM,CAM | 31 | Czechia | 9,7 M€ | – | 0 | 0 | 0/0 | osäker |
+| 61 | Lewis Orford | CDM,CM | 20 | England | 851 k€ | 6,52 | 0 | 0 | 0/0 |  |
+| 66 | Joshua Ajala | CAM,ST,LW,CM,LM | 19 | England | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Joël Piroe | ST,CAM | 27 | Suriname | 11,6 M€ | 7,07 | 3 | 0 | 0/0 |  |
+| 10 | Manor Solomon | LW,RW,LM,CAM | 27 | Israel | 9,1 M€ | 7,63 | 2 | 2 | 0/0 |  |
+| 11 | Valentín Castellanos | ST | 27 | Argentina | 27,3 M€ | 7,03 | 1 | 2 | 3/0 |  |
+| 19 | Pablo | ST,CAM,LW | 22 | Brazil | 3,7 M€ | 6,77 | 0 | 1 | 1/0 |  |
+| 20 | Jarrod Bowen | RW,RM,ST,CAM | 29 | England | 28,3 M€ | 7,90 | 4 | 3 | 1/0 |  |
+| 21 | Keiber Lamadrid | LW,RM | 22 | Venezuela | 804 k€ | 6,24 | 0 | 0 | 0/0 |  |
+| 22 | Maxwel Cornet | RW | 30 | Ivory Coast | 2,4 M€ | – | 0 | 0 | 0/0 |  |
+| 35 | Edvin Austbø | LW,LM | 21 | Norway | 6,3 M€ | 6,91 | 1 | 1 | 0/0 |  |

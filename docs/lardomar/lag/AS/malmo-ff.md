@@ -69,3 +69,48 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-10-05 | Europa 2511 | Sirius - Malmö | 1 | 43 % | 44 % |
 | 2025-09-14 | Europa 2505 | Elfsborg - Malmö | X | 57 % | 46 % |
 | 2025-08-24 | Europa 2499 | Malmö - IFK Göteborg | X | 68 % | 56 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Gaute Helstrup. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Pontus Jansson (skadad, åter Out for season), Noah Åstrand John (skadad, åter Early October 2026), Warren Kamanzi (skadad, åter About 1-2 weeks), Kenan Busuladžić (skadad, åter Out for season), Diego García (skadad, åter Early October 2026), Anders Christiansen (skadad, åter Mid October 2026), Emmanuel Ekong (skadad, åter Mid October 2026), Oscar Sjöstrand (skadad, åter Out for season), Isaac Assibu (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Ricardo Friedrich | GK | 33 | Brazil | 50 k€ | – | 0 | 0 | 0/0 |  |
+| 1 | Robin Olsen | GK | 36 | Sweden | 362 k€ | 7,07 | 0 | 0 | 1/0 |  |
+| 27 | Johan Dahlin | GK | 40 | Sweden | 155 k€ | 6,10 | 0 | 0 | 0/0 |  |
+| 50 | William Nieroth Lundgren | GK | 20 | Sweden | 401 k€ | 6,55 | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Stian Gregersen | CB | 31 | Norway | 1,1 M€ | 7,21 | 0 | 0 | 1/0 |  |
+| 4 | Bleon Kurtulus | CB | 19 | Sweden | 2,0 M€ | 6,33 | 1 | 0 | 3/0 |  |
+| 5 | Andrej Djuric | CB | 23 | Montenegro | 814 k€ | 6,89 | 1 | 0 | 5/0 |  |
+| 17 | Jens Stryger Larsen | RB | 35 | Denmark | 208 k€ | 6,90 | 1 | 2 | 3/0 |  |
+| 18 | Pontus Jansson | CB | 35 | Sweden | 453 k€ | 7,30 | 1 | 0 | 1/0 | skadad, åter Out for season |
+| 23 | Noah Åstrand John | LB | 23 | Sweden | 369 k€ | 6,57 | 1 | 1 | 2/0 | skadad, åter Early October 2026 |
+| 25 | Busanello | LB | 27 | Brazil | 1,9 M€ | 7,19 | 1 | 0 | 4/0 |  |
+| 44 | Malte Frejd Pålsson | CB | 20 | Sweden | – | 6,69 | 0 | 0 | 1/1 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Warren Kamanzi | LWB,RWB,LM | 25 | Norway | 1,3 M€ | – | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
+| 6 | Yanis Karabelyov | CDM,CM | 30 | Bulgaria | 460 k€ | 6,76 | 0 | 0 | 1/0 |  |
+| 7 | Otto Rosengren | CM | 23 | Sweden | 2,4 M€ | 7,44 | 2 | 4 | 6/0 |  |
+| 28 | Jovan Milosavljević | CAM | 19 | Serbia | 2,3 M€ | 6,66 | 2 | 0 | 0/0 |  |
+| 37 | Adrian Skogmar | CM,RM,ST | 20 | Sweden | 1,5 M€ | 6,97 | 4 | 1 | 3/0 |  |
+| 40 | Kenan Busuladžić | CM,RM | 19 | Sweden | 1,3 M€ | 6,77 | 2 | 2 | 6/0 | skadad, åter Out for season |
+| 42 | Viggo Jeppsson | RM | 20 | Sweden | – | 6,20 | 0 | 1 | 0/0 |  |
+| 43 | Gentian Lajqi | Midfielder | 19 | Sweden | – | – | 0 | 0 | 0/0 |  |
+| 46 | Antonio Palac | Midfielder | 19 | Sweden | – | – | 0 | 0 | 0/0 |  |
+| 47 | Theodor Lundbergh | CM,LB,LM | 18 | Sweden | 1,4 M€ | 6,77 | 0 | 3 | 3/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Alexandru Ghita | Attacker | 20 | Sweden | – | – | 0 | 0 | 0/0 |  |
+| 9 | Diego García | ST | 26 | Spain | 1,3 M€ | 6,63 | 3 | 0 | 1/0 | skadad, åter Early October 2026 |
+| 10 | Anders Christiansen | ST | 36 | Denmark | 147 k€ | 6,51 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 11 | Emmanuel Ekong | ST,RW | 24 | Sweden | 454 k€ | 6,02 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 15 | Mayckel Lahdo | RW | 23 | Sweden | 1,7 M€ | 6,68 | 0 | 0 | 0/0 |  |
+| 24 | Oscar Sjöstrand | LW,LM,RM,CM | 21 | Sweden | 1,5 M€ | 6,56 | 1 | 1 | 1/0 | skadad, åter Out for season |
+| 29 | Sead Hakšabanović | ST,LW,RW,LM,RM | 27 | Montenegro | 1,8 M€ | 7,53 | 4 | 6 | 3/0 |  |
+| 32 | Daníel Guðjohnsen | ST | 20 | Iceland | 1,3 M€ | 6,50 | 0 | 1 | 1/0 |  |
+| 39 | Isaac Assibu | Attacker | 18 | Ghana | – | 6,42 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 45 | Anton Höög | LW,RW | 19 | Sweden | – | 6,71 | 1 | 1 | 1/0 |  |

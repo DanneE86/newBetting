@@ -68,3 +68,52 @@ Form (äldst → senast): FFOOOFVF · senaste match 2026-09-19
 | Austin FC | 1 | 0-0-1 | 1–2 | −1,42 | −28 pe | 2024-07-07 1-2 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Pascal Jansen. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Drew Baiera (skadad, åter Early November 2026), Kai Trewin (skadad, åter Early October 2026), Maxi Moralez (skadad, åter Early October 2026), Keaton Parks (skadad, åter Early October 2026), Talles Magno (skadad, åter Early October 2026), Arnau Farnós (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+|  | Maclean Learned | GK | 24 | USA | – | – | 0 | 0 | 0/0 |  |
+| 18 | Greg Ranjitsingh | GK | 33 | Trinidad and Tobago | 50 k€ | – | 0 | 0 | 0/0 |  |
+| 30 | Tomás Romero | GK | 25 | El Salvador | 131 k€ | 5,22 | 0 | 0 | 0/0 |  |
+| 49 | Matt Freese | GK | 28 | USA | 1,4 M€ | 6,93 | 0 | 0 | 1/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Nico Cavallo | LB | 24 | USA | – | 6,92 | 0 | 0 | 2/0 |  |
+| 3 | Matt Miazga | CB | 31 | USA | 618 k€ | 6,25 | 0 | 1 | 6/0 |  |
+| 13 | Thiago Martins | CB | 31 | Brazil | 1,1 M€ | 6,89 | 0 | 0 | 0/0 |  |
+| 22 | Kevin O'Toole | LB,LWB | 27 | Ireland | 725 k€ | 6,54 | 0 | 0 | 2/0 |  |
+| 23 | Maxwell Murray | CB | 24 | USA | – | 5,88 | 0 | 0 | 0/0 |  |
+| 24 | Tayvon Gray | RB | 24 | Jamaica | 1,9 M€ | 7,12 | 1 | 1 | 5/1 |  |
+| 34 | Raul | CB,LB | 27 | Brazil | 973 k€ | 6,77 | 0 | 0 | 4/0 |  |
+| 35 | Mitja Ilenič | RB | 21 | Slovenia | 962 k€ | 7,06 | 0 | 0 | 0/0 |  |
+| 38 | Drew Baiera | RB | 19 | USA | 772 k€ | 5,96 | 0 | 0 | 0/0 | skadad, åter Early November 2026 |
+| 45 | Kamran Acito | CB | 22 | USA | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Kai Trewin | CDM,CB,CM,RWB | 25 | Australia | 1,2 M€ | 6,78 | 0 | 0 | 3/0 | skadad, åter Early October 2026 |
+| 6 | James Sands | CDM,CB,CM | 26 | USA | 4,0 M€ | 6,96 | 1 | 0 | 1/0 |  |
+| 8 | Andrés Perea | CDM,CM,CAM,LW | 25 | USA | 1,7 M€ | 7,01 | 2 | 1 | 1/0 |  |
+| 10 | Maxi Moralez | CAM,ST | 39 | Argentina | 81 k€ | 7,31 | 1 | 6 | 1/0 | skadad, åter Early October 2026 |
+| 15 | Kevin Pierre | CM,CDM | 23 | USA | 157 k€ | 6,54 | 0 | 0 | 0/0 |  |
+| 21 | Aiden O'Neill | CDM,CM | 28 | Australia | 1,8 M€ | 6,88 | 0 | 1 | 3/0 |  |
+| 27 | Cooper Flax | CDM,CM,CAM,LW | 22 | USA | – | – | 0 | 0 | 0/0 |  |
+| 29 | Máximo Carrizo | CAM,RW,CM | 18 | USA | 1,1 M€ | 5,99 | 0 | 0 | 0/0 |  |
+| 32 | Jonathan Shore | CM,CDM | 19 | USA | 1,9 M€ | 6,70 | 0 | 0 | 1/0 |  |
+| 55 | Keaton Parks | CM,CDM | 29 | USA | 1,4 M€ | 6,77 | 2 | 0 | 5/0 | skadad, åter Early October 2026 |
+| 71 | Peter Molinari | CDM,CM | 17 | USA | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Nicolás Fernández | ST,CAM,RW,CM | 26 | Argentina | 4,5 M€ | 7,88 | 15 | 4 | 8/0 |  |
+| 9 | Bénie Traoré | LW,RW,ST,LM,RM | 23 | Ivory Coast | 6,6 M€ | 6,61 | 1 | 0 | 0/0 |  |
+| 11 | Talles Magno | ST | 24 | Brazil | 2,7 M€ | 6,63 | 2 | 2 | 1/0 | skadad, åter Early October 2026 |
+| 16 | Alonso Martínez | ST | 27 | Costa Rica | 2,9 M€ | 6,20 | 0 | 0 | 0/0 |  |
+| 17 | Hannes Wolf | LW,LM | 27 | Austria | 1,9 M€ | 6,95 | 5 | 2 | 2/0 |  |
+| 20 | Luighi | ST | 20 | Brazil | 5,2 M€ | 6,71 | 4 | 0 | 2/0 |  |
+| 26 | Agustín Ojeda | RW,RM | 22 | Argentina | 2,5 M€ | 7,28 | 5 | 9 | 1/0 |  |
+| 47 | Jacob Arroyave | ST | 18 | USA | – | – | 0 | 0 | 0/0 |  |
+| 75 | El Hadji Samb | LW,RW,ST | 16 | USA | – | – | 0 | 0 | 0/0 |  |
+| 87 | Arnau Farnós | LW | 23 | Spain | 144 k€ | 6,20 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 88 | Malachi Jones | LW | 23 | Sierra Leone | 208 k€ | 6,32 | 1 | 0 | 3/0 |  |

@@ -52,6 +52,9 @@ try {
   const html = fs.readFileSync(indexPath, "utf8");
   if (!html.includes('<script src="/app.js"')) throw new Error("Hittar inte app.js-taggen i index.html");
   fs.writeFileSync(indexPath, html.replace('<script src="/app.js"', '<script src="/static-mode.js"></script>\n  <script src="/app.js"'));
+  // Cloudflare Pages: sidadresserna visar index.html (stryktips.js läser adressen). Europatipset finns bara via adressen.
+  fs.writeFileSync(path.join(out, "_redirects"), ["/tips /index.html 200", "/stryktipset /index.html 200", "/stryktipset/* /index.html 200",
+    "/europatipset /index.html 200", "/europatipset/* /index.html 200", ""].join("\n"));
 
   const dashboard = await get("/api/dashboard");
   write("api/dashboard.json", dashboard);

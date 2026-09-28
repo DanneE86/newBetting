@@ -83,6 +83,17 @@ jobs:
         continue-on-error: true
         run: node scripts/fetch-stryktipset.mjs
 
+      # En CSV per liga (spelade + kommande, odds fore matchen sparas) for traning, se data/matcher/README.md
+      - name: Matcher per liga
+        continue-on-error: true
+        run: node scripts/export-league-matches.mjs
+
+      # Trupper (skador, betyg, marknadsvarde) och tabeller for alla ligor fran FotMob, med historik
+      - name: Trupper och tabeller
+        continue-on-error: true
+        timeout-minutes: 30
+        run: node scripts/fetch-squads.mjs
+
       - name: Bygg webbversion
         run: node scripts/build-static-site.mjs
 

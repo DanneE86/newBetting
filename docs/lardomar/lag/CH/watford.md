@@ -26,7 +26,7 @@ Form (äldst → senast): VOOFFVFF · senaste match 2026-09-18
 | 2020/21 | CH | 46 | 1,98 | +0,32 (+0,75 / −0,11) | 22 % (28 %) | 1,37–0,65 | 1,26–1,01* | 1,52 |
 | 2021/22 | PL | 38 | 0,61 | −0,30 (−0,57 / −0,02) | 13 % (24 %) | 0,89–2,03 | 1,04–1,78 | 0,97 |
 | 2022/23 | CH | 46 | 1,37 | −0,06 (−0,01 / −0,12) | 33 % (28 %) | 1,22–1,15 | 1,26–1,38* | 1,30 |
-| 2023/24 | CH | 46 | 1,22 | −0,09 (−0,37 / +0,19) | 37 % (27 %) | 1,33–1,33 | 1,45–1,46* | 1,39 |
+| 2023/24 | CH | 46 | 1,22 | −0,09 (−0,37 / +0,19) | 37 % (27 %) | 1,33–1,33 | 1,45–1,47* | 1,39 |
 | 2024/25 | CH | 46 | 1,24 | −0,02 (+0,28 / −0,32) | 20 % (27 %) | 1,15–1,33 | 1,26–1,46* | 1,24 |
 | 2025/26 | CH | 46 | 1,24 | −0,09 (+0,03 / −0,21) | 33 % (27 %) | 1,15–1,41 | 1,53–1,35* | 1,49 |
 | 2026/27 | CH | 8 | 1,00 | −0,08 (+0,49 / −0,65) | 25 % (26 %) | 0,88–1,25 | 1,25–1,64* | 1,15 |
@@ -88,3 +88,48 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-08-29 | Stryk 4968 | Watford - West Ham | X | 15 % | 23 % |
 | 2026-08-22 | Stryk 4967 | Wrexham - Watford | X | 17 % | 22 % |
 | 2026-01-01 | Europa 2536 | Watford - Birmingham | 1 ✓ | 53 % | 42 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Alessio Dionisi. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Jeremy Ngakia (skadad, åter Early October 2026), Marc Bola (skadad, åter Early October 2026), Edoardo Bove (skadad, åter Early October 2026), Kwadwo Baah (skadad, åter Early October 2026), Jordan Zemura (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+|  | Gabriel Ortelli | Keeper | 20 | Cyprus | – | – | 0 | 0 | 0/0 |  |
+| 1 | Federico Ravaglia | GK | 26 | Italy | 1,4 M€ | 7,20 | 0 | 0 | 0/0 |  |
+| 24 | Sam Walker | GK | 34 | England | 176 k€ | – | 0 | 0 | 0/0 |  |
+| 26 | Daniel Bachmann | GK | 32 | Austria | 588 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Joshua Mullins | CM | 20 | England | – | – | 0 | 0 | 0/0 |  |
+| 2 | Jeremy Ngakia | RB,RWB | 26 | DR Congo | 2,0 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 3 | Soumaïla Coulibaly | CB | 22 | France | 5,5 M€ | 6,64 | 0 | 0 | 0/0 |  |
+| 4 | Kévin Keben | CB,RB,LB | 22 | Cameroon | 2,2 M€ | 6,55 | 0 | 0 | 2/0 |  |
+| 6 | Matthew Pollock | CB | 25 | England | 1,7 M€ | 6,84 | 0 | 0 | 2/0 |  |
+| 16 | Marc Bola | LB,LM | 28 | England | 1,2 M€ | 6,31 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 23 | Omar Traoré | RB,RWB | 28 | Germany | 1,5 M€ | 6,67 | 0 | 1 | 1/0 |  |
+| 29 | Branimir Mlačić | CB | 19 | Croatia | 5,6 M€ | 6,29 | 0 | 0 | 1/0 |  |
+| 53 | James Andrew Clarridge | CB | 22 | England | – | – | 0 | 0 | 0/0 |  |
+| 56 | Albert Eames | RB | 21 | England | – | 6,20 | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Leo Ramirez-Espain | CDM | 19 | England | – | – | 0 | 0 | 0/0 |  |
+| 5 | Hector Kyprianou | CDM,CM | 25 | Cyprus | 1,3 M€ | 6,79 | 0 | 0 | 2/0 |  |
+| 8 | Edoardo Bove | CDM | 24 | Italy | 2,8 M€ | 6,72 | 0 | 0 | 1/0 | skadad, åter Early October 2026 |
+| 14 | Kwadwo Baah | RW | 23 | England | 2,3 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 22 | Martín Payero | CM,CAM | 28 | Argentina | 2,8 M€ | 6,32 | 0 | 0 | 2/0 |  |
+| 33 | Jordan Zemura | LB,LM,LWB | 26 | Zimbabwe | 2,2 M€ | 6,89 | 0 | 0 | 1/0 | skadad, åter Early October 2026 |
+| 39 | Edo Kayembe | CM,CDM,ST,CAM | 28 | DR Congo | 1,8 M€ | 6,70 | 1 | 1 | 2/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Othmane Maamma | RW,LW,LM,RM | 20 | Morocco | 2,3 M€ | 6,90 | 0 | 0 | 2/0 |  |
+| 9 | Luca Kjerrumgaard | ST | 23 | Denmark | 5,1 M€ | 6,40 | 1 | 0 | 0/0 |  |
+| 10 | Myron Boadu | ST | 25 | Netherlands | 2,5 M€ | 5,88 | 0 | 0 | 0/0 |  |
+| 11 | Rocco Vata | LW,LM | 21 | Ireland | 1,8 M€ | 6,23 | 0 | 0 | 0/0 |  |
+| 17 | Iker Bravo | CAM,ST | 21 | Spain | 3,1 M€ | 7,08 | 1 | 1 | 2/0 |  |
+| 18 | Michail Antonio | ST | 36 | Jamaica | 228 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | Nikoloz Chikovani | ST | 19 | Georgia | – | – | 0 | 0 | 0/0 |  |
+| 20 | Mamadou Doumbia | ST,CAM | 20 | Mali | 2,1 M€ | 6,59 | 1 | 0 | 2/0 |  |
+| 21 | Amin Nabizada | RW,LW | 19 | Afghanistan | 833 k€ | 6,66 | 3 | 0 | 3/0 |  |
+| 43 | Jack Grieves | CM | 21 | England | 292 k€ | – | 0 | 0 | 0/0 |  |
+| 45 | Stephy Mavididi | LW | 28 | DR Congo | 6,0 M€ | 6,34 | 0 | 0 | 0/0 |  |

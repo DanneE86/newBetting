@@ -21,8 +21,8 @@ Form (äldst → senast): VVFVFFOO · senaste match 2026-09-19
 
 | Säsong | Liga | M | P/M | Mot marknaden (hemma / borta) | Kryss (odds) | Mål för–emot | xG för–emot | xP/M |
 |---|---|---|---|---|---|---|---|---|
-| 2017/18 | EL2 | 46 | 1,57 | +0,04 (+0,02 / +0,06) | 39 % (28 %) | 1,46–1,13 | 1,40–1,32* | 1,42 |
-| 2018/19 | EL2 | 46 | 1,65 | +0,05 (+0,18 / −0,08) | 35 % (27 %) | 1,50–0,89 | 1,50–1,14* | 1,59 |
+| 2017/18 | EL2 | 46 | 1,57 | +0,04 (+0,02 / +0,06) | 39 % (28 %) | 1,46–1,13 | 1,41–1,33* | 1,42 |
+| 2018/19 | EL2 | 46 | 1,65 | +0,05 (+0,18 / −0,08) | 35 % (27 %) | 1,50–0,89 | 1,50–1,15* | 1,59 |
 | 2019/20 | EL2 | 36 | 1,06 | −0,39 (−0,68 / −0,12) | 31 % (28 %) | 1,33–1,53 | 1,49–1,34* | 1,48 |
 | 2020/21 | EL2 | 46 | 1,26 | −0,16 (−0,38 / +0,07) | 41 % (28 %) | 1,24–1,20 | 1,43–1,18* | 1,53 |
 | 2021/22 | EL2 | 46 | 1,67 | +0,14 (+0,45 / −0,17) | 24 % (28 %) | 1,46–1,13 | 1,47–1,19* | 1,55 |
@@ -30,7 +30,7 @@ Form (äldst → senast): VVFVFFOO · senaste match 2026-09-19
 | 2023/24 | EL2 | 46 | 1,87 | +0,05 (−0,05 / +0,15) | 30 % (24 %) | 1,96–1,02 | 2,03–1,22* | 1,83 |
 | 2024/25 | EL1 | 46 | 1,17 | −0,24 (−0,32 / −0,16) | 20 % (26 %) | 1,30–1,59 | 1,34–1,37* | 1,35 |
 | 2025/26 | EL1 | 46 | 1,41 | +0,20 (+0,09 / +0,30) | 37 % (27 %) | 1,35–1,09 | 1,26–1,30* | 1,36 |
-| 2026/27 | EL1 | 7 | 1,14 | −0,10 (+1,06 / −0,97) | 29 % (26 %) | 1,43–1,86 | 1,37–1,52* | 1,27 |
+| 2026/27 | EL1 | 7 | 1,14 | −0,10 (+1,06 / −0,97) | 29 % (26 %) | 1,43–1,86 | 1,37–1,53* | 1,27 |
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
 
@@ -67,3 +67,38 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-04-18 | Stryk 4949 | Mansfield - Luton | X | 21 % | 31 % |
 | 2026-02-28 | Stryk 4942 | Mansfield - Wimbledon | X | 52 % | 44 % |
 | 2026-02-21 | Stryk 4941 | Mansfield - Lincoln | 2 | 18 % | 27 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Nigel Clough. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Liam Roberts | GK | 31 | England | 175 k€ | 6,32 | 0 | 0 | 0/0 |  |
+| 21 | Harry Lewis | GK | 28 | England | 124 k€ | 6,07 | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Kyle Knoyle | CB,RB | 30 | England | 166 k€ | 6,27 | 0 | 0 | 1/0 |  |
+| 4 | Elliott Hewitt | CB,RWB | 32 | Wales | 146 k€ | 6,21 | 0 | 0 | 2/0 |  |
+| 5 | Ryan Sweeney | CB | 29 | England | 177 k€ | 6,79 | 0 | 0 | 3/0 |  |
+| 6 | Baily Cargill | CB | 31 | England | 175 k€ | – | 0 | 0 | 0/0 |  |
+| 9 | Jordan Bowery | CB | 35 | St. Kitts and Nevis | 120 k€ | – | 0 | 0 | 0/0 |  |
+| 20 | Frazer Blake-Tracy | CB,LWB,LB,LW | 31 | England | 262 k€ | 6,55 | 0 | 0 | 2/0 |  |
+| 23 | Adedeji Oshilaja | CB | 33 | England | 265 k€ | 6,73 | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | George Abbott | CDM,CM,CAM | 21 | England | 854 k€ | – | 0 | 0 | 0/0 |  |
+| 3 | Stephen McLaughlin | LWB,LB,LW,CDM,LM | 36 | Ireland | 143 k€ | 6,87 | 0 | 0 | 0/0 |  |
+| 7 | Lucas Akins | RWB,CAM,RW,RM,RB,ST | 37 | Grenada | 229 k€ | 7,05 | 1 | 1 | 0/0 |  |
+| 8 | Luke Bolton | RW | 26 | England | 181 k€ | 6,25 | 0 | 0 | 0/0 |  |
+| 13 | Jonathan Russell | CAM,CDM,RW,CM | 25 | Jamaica | 666 k€ | 7,68 | 2 | 1 | 0/0 |  |
+| 16 | Liam Thompson | CAM,CDM,CM | 24 | England | 1,3 M€ | 6,70 | 0 | 0 | 1/0 |  |
+| 19 | Tyler Roberts | CAM,ST | 27 | Wales | 493 k€ | 6,11 | 0 | 0 | 0/0 |  |
+| 22 | Nathan Moriah-Welsh | RW,CAM | 24 | Guyana | 311 k€ | 6,94 | 2 | 2 | 1/0 |  |
+| 24 | Regan Hendry | CAM,LW,CDM,ST | 28 | Scotland | 178 k€ | 7,16 | 0 | 2 | 1/0 |  |
+| 25 | Louis Reed | CDM,CM | 29 | England | 219 k€ | 7,10 | 2 | 0 | 3/0 |  |
+| 39 | Owen Dodgson | LWB,CB,LW | 23 | England | 253 k€ | 6,78 | 0 | 0 | 0/1 |  |
+| | **Anfallare** | | | | | | | | | |
+| 10 | George Maris | RW | 30 | England | 131 k€ | 6,71 | 0 | 0 | 0/0 |  |
+| 14 | Michael Smith | ST | 34 | England | 309 k€ | 6,96 | 2 | 0 | 1/0 |  |
+| 17 | David McGoldrick | ST,CAM,LW | 38 | Ireland | 226 k€ | 6,35 | 0 | 0 | 0/0 |  |
+| 18 | Rhys Oates | ST,LW,CAM | 31 | England | 224 k€ | 6,54 | 1 | 1 | 1/0 |  |

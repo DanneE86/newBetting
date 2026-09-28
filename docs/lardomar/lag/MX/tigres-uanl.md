@@ -59,3 +59,44 @@ Form (äldst → senast): OFFVOOOF · senaste match 2026-09-19
 | Atlante | 1 | 1-0-0 | 2–0 | +0,97 | −22 pe | 2026-08-22 2-0 (h) |
 
 Ligans test av inbördes möten mot marknaden: svag signal (inte bekräftad).
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Víctor Manuel Vucetich. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Francisco Reyes (skadad, åter Early January 2027), Marco Farfán (osäker), Jesús Angulo (skadad, åter Mid November 2026), Osvaldo Rodríguez (osäker), Marcelo Flores (skadad, åter Unknown)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Nahuel Guzmán | GK | 40 | Argentina | 459 k€ | – | 0 | 0 | 0/0 |  |
+| 25 | Felipe Rodríguez | GK | 37 | Mexico | 378 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Francisco Reyes | LB | 27 | Mexico | 231 k€ | – | 0 | 0 | 0/0 | skadad, åter Early January 2027 |
+| 3 | Marco Farfán | LB | 27 | USA | 1,7 M€ | – | 0 | 0 | 0/0 | osäker |
+| 14 | Jesús Garza | RB,RWB,LB | 26 | Mexico | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| 15 | Alan Franco | CB | 29 | Argentina | 2,6 M€ | – | 0 | 0 | 0/0 |  |
+| 19 | Mauro Laínez | LB,LM | 30 | Mexico | 351 k€ | – | 0 | 0 | 0/0 |  |
+| 23 | Rômulo | CB,CDM,CM | 26 | Brazil | 3,0 M€ | – | 0 | 0 | 0/0 |  |
+| 26 | Fernando Ordóñez | LB | 25 | Mexico | 415 k€ | – | 0 | 0 | 0/0 |  |
+| 27 | Jesús Angulo | CB,LB | 28 | Mexico | 2,7 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid November 2026 |
+| 28 | Joaquim | CB | 27 | Brazil | 3,6 M€ | – | 0 | 0 | 0/0 |  |
+| 32 | Vladimir Loroña | LB,LWB | 27 | Mexico | 672 k€ | – | 0 | 0 | 0/0 |  |
+| 33 | Rafael Guerrero | CB | 23 | Mexico | 986 k€ | – | 0 | 0 | 0/0 |  |
+| 35 | Osvaldo Rodríguez | LB | 30 | Mexico | 867 k€ | – | 0 | 0 | 0/0 | osäker |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | César Araújo | CDM,CM | 25 | Uruguay | 2,1 M€ | – | 0 | 0 | 0/0 |  |
+| 6 | Juan Vigón | CDM | 35 | Mexico | 336 k€ | – | 0 | 0 | 0/0 |  |
+| 8 | Fernando Gorriarán | CDM,CM,CAM | 31 | Uruguay | 1,8 M€ | – | 0 | 0 | 0/0 |  |
+| 11 | Juan Brunetta | CAM,CDM,LW,LM,CM,ST | 29 | Argentina | 3,1 M€ | – | 0 | 0 | 0/0 |  |
+| 21 | Ricardo Monreal | RW,RWB,LM,RM,LW,CAM | 25 | Mexico | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| 34 | Henrique Simeone | CDM | 19 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Emiliano Gómez | LW,LM,ST,CAM | 25 | Uruguay | 2,0 M€ | – | 0 | 0 | 0/0 |  |
+| 16 | Diego Lainez | RW,RM | 26 | Mexico | 3,7 M€ | – | 0 | 0 | 0/0 |  |
+| 17 | Rodrigo Aguirre | ST | 31 | Uruguay | 1,9 M€ | – | 0 | 0 | 0/0 |  |
+| 20 | Marcelo Flores | LW,LM | 22 | Canada | 2,0 M€ | – | 0 | 0 | 0/0 | skadad, åter Unknown |
+| 22 | Guillermo Martínez | ST | 31 | Mexico | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 30 | Diego Sánchez | LW,RW,LWB | 21 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| 77 | Ozziel Herrera | LW,LM,ST | 25 | Mexico | 3,4 M€ | – | 0 | 0 | 0/0 |  |
+| 200 | Diego Ramírez | ST | 19 | Mexico | – | – | 0 | 0 | 0/0 |  |

@@ -69,3 +69,49 @@ Form (äldst → senast): FFOFOFVV · senaste match 2026-09-19
 | Vancouver Whitecaps | 2 | 0-2-0 | 3–3 | −0,97 | +75 pe | 2024-04-28 1-1 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Michael Bradley. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** AJ Marcucci (skadad, åter Unknown)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+|  | Tobias Szewczyk | GK | 17 | USA | – | – | 0 | 0 | 0/0 |  |
+| 1 | AJ Marcucci | GK | 27 | USA | 154 k€ | – | 0 | 0 | 0/0 | skadad, åter Unknown |
+| 34 | Ethan Horvath | GK | 31 | USA | 440 k€ | 6,83 | 0 | 0 | 0/0 |  |
+| 77 | John McCarthy | GK | 34 | USA | 50 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Davi Alexandre | CB | 19 | USA | 490 k€ | – | 0 | 0 | 0/0 |  |
+| 2 | Justin Che | CB | 22 | USA | 796 k€ | 7,12 | 0 | 0 | 5/0 |  |
+| 3 | Jahkeele Marshall-Rutty | RB | 22 | Canada | 1,7 M€ | 6,57 | 0 | 0 | 3/0 |  |
+| 5 | Omar Valencia | LB | 22 | Panama | 339 k€ | 6,30 | 0 | 0 | 5/0 |  |
+| 6 | Robert Voloder | CB | 25 | Germany | 469 k€ | 6,80 | 0 | 0 | 2/0 |  |
+| 12 | Dylan Nealis | CB,RB | 28 | USA | 969 k€ | 6,90 | 0 | 0 | 4/0 |  |
+| 14 | Julián Bazán | CB | 20 | Colombia | 795 k€ | 7,12 | 0 | 0 | 3/0 |  |
+| 20 | Juan Mina | RB | 22 | Colombia | – | 6,78 | 0 | 0 | 0/0 |  |
+| 26 | Tim Parker | CB | 33 | USA | 50 k€ | 6,78 | 0 | 0 | 1/0 |  |
+| 56 | Matthew Dos Santos | LB | 18 | USA | 1,8 M€ | 6,75 | 0 | 0 | 1/0 |  |
+| 59 | Devin Padelford | CB,LWB,LB | 23 | USA | 245 k€ | 6,43 | 1 | 1 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 8 | David Ruiz | CM | 22 | Honduras | 1,4 M€ | 6,41 | 0 | 0 | 2/0 |  |
+| 10 | Emil Forsberg | CM,CAM | 34 | Sweden | 725 k€ | 6,84 | 3 | 4 | 0/0 |  |
+| 15 | Adri Mehmeti | CM,CDM | 17 | USA | 2,7 M€ | 7,21 | 1 | 3 | 6/1 |  |
+| 37 | Mohammed Sofo | CM,LW | 21 | Ghana | 890 k€ | 6,38 | 1 | 1 | 4/0 |  |
+| 39 | Nehuén Benedetti | CM,CAM | 21 | Argentina | 645 k€ | 6,49 | 0 | 0 | 1/0 |  |
+| 48 | Ronald Donkor | CM,CAM,CDM | 21 | Ghana | 1,2 M€ | 7,19 | 2 | 4 | 8/0 |  |
+| 60 | Sekou Kone | CM,CAM,CDM | 19 | Mali | – | 6,39 | 0 | 0 | 0/0 |  |
+| 88 | Aiden Jarvis | CM,CDM | 19 | USA | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Dennis Nelich | LW,LM,RW | 18 | USA | – | 6,49 | 0 | 0 | 0/0 |  |
+| 7 | Cade Cowell | RW | 22 | USA | 2,2 M€ | 6,75 | 2 | 5 | 2/0 |  |
+| 11 | Jorge Ruvalcaba | LW,RW,LM | 25 | Mexico | 1,8 M€ | 6,89 | 7 | 0 | 5/0 |  |
+| 13 | Eric Maxim Choupo-Moting | ST | 37 | Cameroon | 556 k€ | 6,35 | 3 | 1 | 0/0 |  |
+| 16 | Julian Hall | ST,LW | 18 | USA | 2,4 M€ | 7,00 | 10 | 3 | 0/0 |  |
+| 17 | Cameron Harper | RW | 24 | USA | 362 k€ | 6,66 | 1 | 1 | 0/0 |  |
+| 66 | Tanner Rosborough | LW | 18 | USA | 1,1 M€ | 6,18 | 0 | 0 | 0/0 |  |
+| 70 | Andy Rojas | LW,CAM,CM,RW | 20 | Costa Rica | 1,7 M€ | 7,10 | 0 | 0 | 0/0 |  |
+| 79 | Rafael Mosquera | RW | 21 | Panama | 852 k€ | 6,37 | 0 | 0 | 2/0 |  |
+| 91 | Mijahir Jiménez | ST | 19 | Panama | 1,2 M€ | 6,57 | 2 | 0 | 0/0 |  |

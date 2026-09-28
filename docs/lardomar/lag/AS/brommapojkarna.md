@@ -60,3 +60,47 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-04-26 | Europa 2569 | Brommapojkarna - Västerås | 2 | 48 % | 46 % |
 | 2026-04-22 | Europa 2568 | Örgryte - Brommapojkarna | 2 ✓ | 43 % | 40 % |
 | 2025-10-19 | Europa 2515 | Värnamo - Brommapojkarna | X | 44 % | 38 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Ulf Kristiansson. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Oliver Berg (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Leo Cavallius | GK | 21 | Sweden | 1,0 M€ | 6,75 | 0 | 0 | 1/0 |  |
+| 25 | Davor Blažević | GK | 33 | Sweden | 204 k€ | 6,14 | 0 | 0 | 0/0 |  |
+| 40 | John-Oliver Lacayo | GK | 18 | Sweden | – | – | 0 | 0 | 0/0 |  |
+| 41 | Philip Isaksson | GK | 20 | Sweden | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Luka Petrovic | Defender | 25 | Sweden | – | – | 0 | 0 | 0/0 |  |
+| 2 | Pavle Vagić | CB | 26 | Sweden | 1,0 M€ | 6,01 | 0 | 0 | 0/0 |  |
+| 3 | Andreas Troelsen | CB,LB | 23 | Denmark | 594 k€ | 6,62 | 3 | 0 | 0/0 |  |
+| 5 | Serge-Junior Ngouali | CM | 34 | Gabon | 133 k€ | 6,28 | 0 | 0 | 2/0 |  |
+| 6 | Oliver Zandén | LB | 25 | Sweden | 651 k€ | 7,22 | 1 | 3 | 2/0 |  |
+| 11 | Rasmus Örqvist | RB,LM | 27 | Sweden | 205 k€ | 6,76 | 0 | 0 | 0/0 |  |
+| 13 | Emir El-Kathemi | RB | 20 | Sweden | 316 k€ | 6,66 | 0 | 0 | 0/0 |  |
+| 22 | Rasmus Bergvall | RB | 18 | Sweden | – | 6,19 | 0 | 0 | 0/0 |  |
+| 23 | Jordan Simpson | CB | 23 | Sweden | 225 k€ | 6,45 | 0 | 0 | 4/0 |  |
+| 26 | Baba Apiiga | LB | 19 | Ghana | – | – | 0 | 0 | 0/0 |  |
+| 30 | Eric Björkander | CB | 30 | Sweden | 156 k€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Abdul Daramy | CM | 18 | Denmark | – | – | 0 | 0 | 0/0 |  |
+| 9 | Mads Kristian Hansen | RM,RW | 24 | Denmark | 810 k€ | 7,61 | 7 | 6 | 2/2 |  |
+| 10 | Oliver Berg | ST,CAM | 33 | Norway | 188 k€ | 7,19 | 3 | 5 | 3/0 | skadad, åter Mid October 2026 |
+| 17 | Anton Kurochkin | LM | 23 | Sweden | 256 k€ | 6,73 | 2 | 2 | 0/0 |  |
+| 20 | Wilmer Odefalk | ST | 21 | Sweden | 777 k€ | 7,14 | 0 | 1 | 1/0 |  |
+| 21 | Simon Strand | CM,CDM,RB | 33 | Sweden | 249 k€ | 6,85 | 2 | 0 | 1/0 |  |
+| 24 | Mohamed Wael Derbali | CDM | 23 | Tunisia | 469 k€ | 6,45 | 0 | 0 | 1/0 |  |
+| 27 | Kaare Barslund | CM,CDM,CB | 22 | Denmark | 615 k€ | 6,89 | 1 | 0 | 2/0 |  |
+| 32 | Atle Wahlund | CM | 18 | Sweden | – | 6,09 | 0 | 0 | 1/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Obilor Denzel Okeke | LW,LM,RW | 24 | Norway | 472 k€ | 6,72 | 1 | 0 | 0/0 |  |
+| 12 | Bidemi Amole | Attacker | 18 | Nigeria | – | 6,20 | 0 | 0 | 0/0 |  |
+| 14 | Kamilcan Sever | ST | 20 | Sweden | 448 k€ | 6,31 | 1 | 2 | 1/0 |  |
+| 29 | Evans Botchway | Attacker | 20 | Ghana | 270 k€ | – | 0 | 0 | 0/0 |  |
+| 30 | Lukas Björklund | ST,CM,RW | 22 | Sweden | 843 k€ | 6,68 | 3 | 0 | 4/0 |  |
+| 34 | David Isso | ST | 19 | Sweden | 811 k€ | 6,27 | 1 | 1 | 0/0 |  |
+| 36 | Courage Otokwefor | ST | 19 | Nigeria | – | – | 0 | 0 | 0/0 |  |

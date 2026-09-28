@@ -1,0 +1,769 @@
+{
+ "updatedAt": "2026-09-28T19:47:27.474Z",
+ "league": "ECL",
+ "fotmobId": 10216,
+ "name": "Conference League",
+ "country": "INT",
+ "table": [
+  {
+   "rank": 1,
+   "team": "AGF",
+   "fotmobName": "AGF",
+   "fotmobId": 8071,
+   "group": null,
+   "played": 0,
+   "won": 0,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "0-0",
+   "gd": 0,
+   "pts": 0
+  },
+  {
+   "rank": 2,
+   "team": "Ajax Amsterdam",
+   "fotmobName": "Ajax",
+   "fotmobId": 8593,
+   "group": null,
+   "played": 0,
+   "won": 0,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "0-0",
+   "gd": 0,
+   "pts": 0
+  },
+  {
+   "rank": 3,
+   "team": "Atalanta",
+   "fotmobName": "Atalanta",
+   "fotmobId": 8524,
+   "group": null,
+   "played": 0,
+   "won": 0,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "0-0",
+   "gd": 0,
+   "pts": 0
+  },
+  {
+   "rank": 4,
+   "team": "Borac Banja Luka",
+   "fotmobName": "Borac Banja Luka",
+   "fotmobId": 10116,
+   "group": null,
+   "played": 0,
+   "won": 0,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "0-0",
+   "gd": 0,
+   "pts": 0
+  },
+  {
+   "rank": 5,
+   "team": "Braga",
+   "fotmobName": "Braga",
+   "fotmobId": 10264,
+   "group": null,
+   "played": 0,
+   "won": 0,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "0-0",
+   "gd": 0,
+   "pts": 0
+  },
+  {
+   "rank": 6,
+   "team": "SK Brann",
+   "fotmobName": "Brann",
+   "fotmobId": 8468,
+   "group": null,
+   "played": 0,
+   "won": 0,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "0-0",
+   "gd": 0,
+   "pts": 0
+  },
+  {
+   "rank": 7,
+   "team": "Brighton & Hove Albion",
+   "fotmobName": "Brighton & Hove Albion",
+   "fotmobId": 10204,
+   "group": null,
+   "played": 0,
+   "won": 0,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "0-0",
+   "gd": 0,
+   "pts": 0
+  },
+  {
+   "rank": 8,
+   "team": "CSKA Sofia",
+   "fotmobName": "CSKA Sofia",
+   "fotmobId": 10144,
+   "group": null,
+   "played": 0,
+   "won": 0,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "0-0",
+   "gd": 0,
+   "pts": 0
+  },
+  {
+   "rank": 9,
+   "team": "Egnatia",
+   "fotmobName": "Egnatia",
+   "fotmobId": 10039,
+   "group": null,
+   "played": 0,
+   "won": 0,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "0-0",
+   "gd": 0,
+   "pts": 0
+  },
+  {
+   "rank": 10,
+   "team": "F.C. København",
+   "fotmobName": "FC København",
+   "fotmobId": 8391,
+   "group": null,
+   "played": 0,
+   "won": 0,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "0-0",
+   "gd": 0,
+   "pts": 0
+  },
+  {
+   "rank": 11,
+   "team": "FC Midtjylland",
+   "fotmobName": "FC Midtjylland",
+   "fotmobId": 8113,
+   "group": null,
+   "played": 0,
+   "won": 0,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "0-0",
+   "gd": 0,
+   "pts": 0
+  },
+  {
+   "rank": 12,
+   "team": "FC Nordsjælland",
+   "fotmobName": "Nordsjælland",
+   "fotmobId": 10202,
+   "group": null,
+   "played": 0,
+   "won": 0,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "0-0",
+   "gd": 0,
+   "pts": 0
+  },
+  {
+   "rank": 13,
+   "team": "FC Twente",
+   "fotmobName": "FC Twente",
+   "fotmobId": 8611,
+   "group": null,
+   "played": 0,
+   "won": 0,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "0-0",
+   "gd": 0,
+   "pts": 0
+  },
+  {
+   "rank": 14,
+   "team": "FK Crvena Zvezda",
+   "fotmobName": "FK Crvena Zvezda",
+   "fotmobId": 8687,
+   "group": null,
+   "played": 0,
+   "won": 0,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "0-0",
+   "gd": 0,
+   "pts": 0
+  },
+  {
+   "rank": 15,
+   "team": "Kauno Zalgiris",
+   "fotmobName": "FK Kauno Žalgiris",
+   "fotmobId": 439132,
+   "group": null,
+   "played": 0,
+   "won": 0,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "0-0",
+   "gd": 0,
+   "pts": 0
+  },
+  {
+   "rank": 16,
+   "team": "SC Freiburg",
+   "fotmobName": "Freiburg",
+   "fotmobId": 8358,
+   "group": null,
+   "played": 0,
+   "won": 0,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "0-0",
+   "gd": 0,
+   "pts": 0
+  },
+  {
+   "rank": 17,
+   "team": "KAA Gent",
+   "fotmobName": "Gent",
+   "fotmobId": 9991,
+   "group": null,
+   "played": 0,
+   "won": 0,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "0-0",
+   "gd": 0,
+   "pts": 0
+  },
+  {
+   "rank": 18,
+   "team": "Getafe",
+   "fotmobName": "Getafe",
+   "fotmobId": 8305,
+   "group": null,
+   "played": 0,
+   "won": 0,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "0-0",
+   "gd": 0,
+   "pts": 0
+  },
+  {
+   "rank": 19,
+   "team": "Hajduk Split",
+   "fotmobName": "Hajduk Split",
+   "fotmobId": 10154,
+   "group": null,
+   "played": 0,
+   "won": 0,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "0-0",
+   "gd": 0,
+   "pts": 0
+  },
+  {
+   "rank": 20,
+   "team": "Heart of Midlothian",
+   "fotmobName": "Heart of Midlothian",
+   "fotmobId": 9860,
+   "group": null,
+   "played": 0,
+   "won": 0,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "0-0",
+   "gd": 0,
+   "pts": 0
+  },
+  {
+   "rank": 21,
+   "team": "Iberia 1999",
+   "fotmobName": "Iberia 1999",
+   "fotmobId": 480291,
+   "group": null,
+   "played": 0,
+   "won": 0,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "0-0",
+   "gd": 0,
+   "pts": 0
+  },
+  {
+   "rank": 22,
+   "team": "Inter D'Escaldes",
+   "fotmobName": "Inter Club d'Escaldes",
+   "fotmobId": 10050,
+   "group": null,
+   "played": 0,
+   "won": 0,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "0-0",
+   "gd": 0,
+   "pts": 0
+  },
+  {
+   "rank": 23,
+   "team": "Jablonec",
+   "fotmobName": "Jablonec",
+   "fotmobId": 7758,
+   "group": null,
+   "played": 0,
+   "won": 0,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "0-0",
+   "gd": 0,
+   "pts": 0
+  },
+  {
+   "rank": 24,
+   "team": "Kairat Almaty",
+   "fotmobName": "Kairat Almaty",
+   "fotmobId": 8037,
+   "group": null,
+   "played": 0,
+   "won": 0,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "0-0",
+   "gd": 0,
+   "pts": 0
+  },
+  {
+   "rank": 25,
+   "team": "KuPS Kuopio",
+   "fotmobName": "KuPS",
+   "fotmobId": 1693,
+   "group": null,
+   "played": 0,
+   "won": 0,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "0-0",
+   "gd": 0,
+   "pts": 0
+  },
+  {
+   "rank": 26,
+   "team": "Lincoln Red Imps",
+   "fotmobName": "Lincoln Red Imps FC",
+   "fotmobId": 545012,
+   "group": null,
+   "played": 0,
+   "won": 0,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "0-0",
+   "gd": 0,
+   "pts": 0
+  },
+  {
+   "rank": 27,
+   "team": "FC Lugano",
+   "fotmobName": "Lugano",
+   "fotmobId": 7896,
+   "group": null,
+   "played": 0,
+   "won": 0,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "0-0",
+   "gd": 0,
+   "pts": 0
+  },
+  {
+   "rank": 28,
+   "team": "Mjällby AIF",
+   "fotmobName": "Mjällby",
+   "fotmobId": 8127,
+   "group": null,
+   "played": 0,
+   "won": 0,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "0-0",
+   "gd": 0,
+   "pts": 0
+  },
+  {
+   "rank": 29,
+   "team": "AS Monaco",
+   "fotmobName": "Monaco",
+   "fotmobId": 9829,
+   "group": null,
+   "played": 0,
+   "won": 0,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "0-0",
+   "gd": 0,
+   "pts": 0
+  },
+  {
+   "rank": 30,
+   "team": "Pafos",
+   "fotmobName": "Pafos FC",
+   "fotmobId": 2137,
+   "group": null,
+   "played": 0,
+   "won": 0,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "0-0",
+   "gd": 0,
+   "pts": 0
+  },
+  {
+   "rank": 31,
+   "team": "Panathinaikos",
+   "fotmobName": "Panathinaikos",
+   "fotmobId": 10200,
+   "group": null,
+   "played": 0,
+   "won": 0,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "0-0",
+   "gd": 0,
+   "pts": 0
+  },
+  {
+   "rank": 32,
+   "team": "Riga FC",
+   "fotmobName": "Riga FC",
+   "fotmobId": 624924,
+   "group": null,
+   "played": 0,
+   "won": 0,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "0-0",
+   "gd": 0,
+   "pts": 0
+  },
+  {
+   "rank": 33,
+   "team": "Sint-Truidense",
+   "fotmobName": "St.Truiden",
+   "fotmobId": 9997,
+   "group": null,
+   "played": 0,
+   "won": 0,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "0-0",
+   "gd": 0,
+   "pts": 0
+  },
+  {
+   "rank": 34,
+   "team": "FC Thun",
+   "fotmobName": "Thun",
+   "fotmobId": 10191,
+   "group": null,
+   "played": 0,
+   "won": 0,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "0-0",
+   "gd": 0,
+   "pts": 0
+  },
+  {
+   "rank": 35,
+   "team": "Trabzonspor",
+   "fotmobName": "Trabzonspor",
+   "fotmobId": 9752,
+   "group": null,
+   "played": 0,
+   "won": 0,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "0-0",
+   "gd": 0,
+   "pts": 0
+  },
+  {
+   "rank": 36,
+   "team": "CSU Craiova",
+   "fotmobName": "Universitatea Craiova",
+   "fotmobId": 480286,
+   "group": null,
+   "played": 0,
+   "won": 0,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "0-0",
+   "gd": 0,
+   "pts": 0
+  }
+ ],
+ "tableHistory": {
+  "2026-09-28": [
+   [
+    "AGF",
+    1,
+    0,
+    0,
+    0
+   ],
+   [
+    "Ajax Amsterdam",
+    2,
+    0,
+    0,
+    0
+   ],
+   [
+    "Atalanta",
+    3,
+    0,
+    0,
+    0
+   ],
+   [
+    "Borac Banja Luka",
+    4,
+    0,
+    0,
+    0
+   ],
+   [
+    "Braga",
+    5,
+    0,
+    0,
+    0
+   ],
+   [
+    "SK Brann",
+    6,
+    0,
+    0,
+    0
+   ],
+   [
+    "Brighton & Hove Albion",
+    7,
+    0,
+    0,
+    0
+   ],
+   [
+    "CSKA Sofia",
+    8,
+    0,
+    0,
+    0
+   ],
+   [
+    "Egnatia",
+    9,
+    0,
+    0,
+    0
+   ],
+   [
+    "F.C. København",
+    10,
+    0,
+    0,
+    0
+   ],
+   [
+    "FC Midtjylland",
+    11,
+    0,
+    0,
+    0
+   ],
+   [
+    "FC Nordsjælland",
+    12,
+    0,
+    0,
+    0
+   ],
+   [
+    "FC Twente",
+    13,
+    0,
+    0,
+    0
+   ],
+   [
+    "FK Crvena Zvezda",
+    14,
+    0,
+    0,
+    0
+   ],
+   [
+    "Kauno Zalgiris",
+    15,
+    0,
+    0,
+    0
+   ],
+   [
+    "SC Freiburg",
+    16,
+    0,
+    0,
+    0
+   ],
+   [
+    "KAA Gent",
+    17,
+    0,
+    0,
+    0
+   ],
+   [
+    "Getafe",
+    18,
+    0,
+    0,
+    0
+   ],
+   [
+    "Hajduk Split",
+    19,
+    0,
+    0,
+    0
+   ],
+   [
+    "Heart of Midlothian",
+    20,
+    0,
+    0,
+    0
+   ],
+   [
+    "Iberia 1999",
+    21,
+    0,
+    0,
+    0
+   ],
+   [
+    "Inter D'Escaldes",
+    22,
+    0,
+    0,
+    0
+   ],
+   [
+    "Jablonec",
+    23,
+    0,
+    0,
+    0
+   ],
+   [
+    "Kairat Almaty",
+    24,
+    0,
+    0,
+    0
+   ],
+   [
+    "KuPS Kuopio",
+    25,
+    0,
+    0,
+    0
+   ],
+   [
+    "Lincoln Red Imps",
+    26,
+    0,
+    0,
+    0
+   ],
+   [
+    "FC Lugano",
+    27,
+    0,
+    0,
+    0
+   ],
+   [
+    "Mjällby AIF",
+    28,
+    0,
+    0,
+    0
+   ],
+   [
+    "AS Monaco",
+    29,
+    0,
+    0,
+    0
+   ],
+   [
+    "Pafos",
+    30,
+    0,
+    0,
+    0
+   ],
+   [
+    "Panathinaikos",
+    31,
+    0,
+    0,
+    0
+   ],
+   [
+    "Riga FC",
+    32,
+    0,
+    0,
+    0
+   ],
+   [
+    "Sint-Truidense",
+    33,
+    0,
+    0,
+    0
+   ],
+   [
+    "FC Thun",
+    34,
+    0,
+    0,
+    0
+   ],
+   [
+    "Trabzonspor",
+    35,
+    0,
+    0,
+    0
+   ],
+   [
+    "CSU Craiova",
+    36,
+    0,
+    0,
+    0
+   ]
+  ]
+ }
+}

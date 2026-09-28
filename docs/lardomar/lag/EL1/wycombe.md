@@ -21,14 +21,14 @@ Form (äldst → senast): OOFFOVVO · senaste match 2026-09-26
 | Säsong | Liga | M | P/M | Mot marknaden (hemma / borta) | Kryss (odds) | Mål för–emot | xG för–emot | xP/M |
 |---|---|---|---|---|---|---|---|---|
 | 2017/18 | EL2 | 46 | 1,83 | +0,27 (+0,06 / +0,48) | 26 % (27 %) | 1,72–1,30 | 1,67–1,10* | 1,75 |
-| 2018/19 | EL1 | 46 | 1,15 | −0,08 (+0,15 / −0,31) | 24 % (27 %) | 1,20–1,46 | 1,36–1,35* | 1,40 |
-| 2019/20 | EL1 | 34 | 1,74 | +0,37 (+0,77 / −0,08) | 24 % (28 %) | 1,32–1,18 | 1,38–1,36* | 1,38 |
+| 2018/19 | EL1 | 46 | 1,15 | −0,08 (+0,15 / −0,31) | 24 % (27 %) | 1,20–1,46 | 1,37–1,35* | 1,40 |
+| 2019/20 | EL1 | 34 | 1,74 | +0,37 (+0,77 / −0,08) | 24 % (28 %) | 1,32–1,18 | 1,38–1,37* | 1,38 |
 | 2020/21 | CH | 46 | 0,93 | +0,08 (+0,19 / −0,02) | 22 % (25 %) | 0,85–1,50 | 1,14–1,57* | 1,13 |
 | 2021/22 | EL1 | 46 | 1,80 | +0,31 (+0,35 / +0,27) | 30 % (27 %) | 1,63–1,11 | 1,58–1,41* | 1,48 |
 | 2022/23 | EL1 | 46 | 1,50 | +0,02 (+0,07 / −0,03) | 20 % (27 %) | 1,28–1,11 | 1,49–1,56* | 1,35 |
 | 2023/24 | EL1 | 46 | 1,41 | +0,06 (−0,09 / +0,20) | 30 % (28 %) | 1,30–1,20 | 1,35–1,26* | 1,41 |
-| 2024/25 | EL1 | 46 | 1,83 | +0,16 (−0,00 / +0,33) | 26 % (27 %) | 1,52–0,98 | 1,42–1,05* | 1,63 |
-| 2025/26 | EL1 | 46 | 1,37 | −0,12 (+0,10 / −0,34) | 26 % (27 %) | 1,50–1,26 | 1,53–1,19* | 1,58 |
+| 2024/25 | EL1 | 46 | 1,83 | +0,16 (−0,00 / +0,33) | 26 % (27 %) | 1,52–0,98 | 1,43–1,05* | 1,63 |
+| 2025/26 | EL1 | 46 | 1,37 | −0,12 (+0,10 / −0,34) | 26 % (27 %) | 1,50–1,26 | 1,54–1,19* | 1,58 |
 | 2026/27 | EL1 | 8 | 1,25 | −0,11 (−0,70 / +0,49) | 50 % (27 %) | 1,63–2,00 | 1,52–1,76* | 1,25 |
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
@@ -67,3 +67,41 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-04-11 | Stryk 4948 | Huddersfield - Wycombe | X | 23 % | 28 % |
 | 2026-03-14 | Stryk 4944 | Wycombe - Luton | 2 | 60 % | 46 % |
 | 2026-01-24 | Stryk 4937 | Wycombe - Peterborough | 2 | 57 % | 48 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Tom Hounsell. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Mikki van Sas | GK | 22 | Netherlands | 556 k€ | – | 0 | 0 | 0/0 |  |
+| 23 | Conor Hazard | GK | 28 | Northern Ireland | 250 k€ | 6,76 | 0 | 0 | 0/0 |  |
+| 24 | Matt Macey | GK | 32 | England | 175 k€ | – | 0 | 0 | 0/0 |  |
+| 31 | Stuart Moore | GK | 32 | England | 114 k€ | – | 0 | 0 | 0/0 |  |
+| 33 | Joe Wildsmith | GK | 30 | England | 178 k€ | 6,93 | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Jack Grimmer | RB,CB | 32 | Scotland | 162 k€ | 6,23 | 0 | 0 | 0/0 |  |
+| 3 | Daniel Harvie | LB,LM,LW,LWB | 28 | Scotland | 302 k€ | 6,92 | 1 | 0 | 3/0 |  |
+| 17 | Dan Casey | CB | 28 | Ireland | 160 k€ | 7,07 | 2 | 0 | 1/0 |  |
+| 22 | Sam Parker | RB | 20 | Wales | 481 k€ | 6,35 | 0 | 0 | 0/0 |  |
+| 26 | Connor Taylor | CB | 24 | England | 304 k€ | 7,15 | 1 | 0 | 0/0 |  |
+| 27 | Steve Cook | CB | 35 | England | 308 k€ | 6,82 | 0 | 0 | 0/0 |  |
+| 45 | Anders Hagelskjær | CB,LB | 29 | Denmark | 434 k€ | 6,73 | 0 | 0 | 0/0 |  |
+| 61 | Mohamed Keita | LWB | 17 | England | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 4 | Josh Scowen | CDM | 33 | England | 145 k€ | 6,62 | 0 | 0 | 0/0 |  |
+| 5 | Aaron Morley | CDM,CM | 26 | England | 521 k€ | 6,97 | 0 | 2 | 0/0 |  |
+| 8 | Caolan Boyd-Munce | CDM,CM | 26 | Northern Ireland | 249 k€ | 6,81 | 0 | 1 | 1/0 |  |
+| 10 | Luke Leahy | CDM,CM,CAM,CB | 33 | England | 259 k€ | – | 0 | 0 | 0/0 |  |
+| 20 | Ewan Henderson | CDM,CAM,CM | 26 | Scotland | 259 k€ | 7,51 | 1 | 4 | 4/0 |  |
+| 21 | Jamie Mullins | CAM,CDM,CM | 21 | Ireland | 435 k€ | 6,20 | 0 | 0 | 0/0 |  |
+| 29 | Malik Mothersille | CAM,LW | 22 | England | 474 k€ | 6,55 | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Junior Quitirna | RW,RWB | 26 | Guinea-Bissau | 256 k€ | 6,21 | 0 | 0 | 0/0 |  |
+| 11 | Silko Thomas | LW | 22 | England | 374 k€ | 6,59 | 0 | 1 | 0/0 |  |
+| 12 | Cauley Woodrow | ST,CAM | 31 | England | 236 k€ | 6,67 | 2 | 1 | 1/0 |  |
+| 15 | Jayden Wareham | ST | 23 | England | 511 k€ | 7,45 | 3 | 0 | 0/0 |  |
+| 19 | Emre Tezgel | ST,CAM | 21 | England | 710 k€ | 6,03 | 0 | 0 | 0/0 |  |
+| 28 | Danny Ings | ST | 34 | England | 906 k€ | 7,18 | 1 | 0 | 0/0 |  |
+| 44 | Fred Onyedinma | RW,ST,LW,RM | 29 | Nigeria | 281 k€ | 7,13 | 2 | 1 | 1/0 |  |

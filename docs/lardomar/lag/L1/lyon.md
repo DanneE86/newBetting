@@ -12,8 +12,8 @@ Form (äldst → senast): VFFVOVOV · senaste match 2026-09-19
 
 | Mått | Värde |
 |---|---|
-| Tur (poäng − xP per match) | +0,22 |
-| xG-målskillnad − målskillnad | −0,33 |
+| Tur (poäng − xP per match) | +0,11 |
+| xG-målskillnad − målskillnad | −0,07 |
 | Poäng mot marknaden per match | +0,00 |
 
 ## Säsonger
@@ -29,9 +29,22 @@ Form (äldst → senast): VFFVOVOV · senaste match 2026-09-19
 | 2023/24 | L1 | 34 | 1,56 | +0,01 (−0,16 / +0,18) | 15 % (26 %) | 1,44–1,62 | 1,63–1,62 | 1,40 |
 | 2024/25 | L1 | 34 | 1,68 | +0,00 (+0,16 / −0,16) | 18 % (23 %) | 1,91–1,35 | 1,91–1,42 | 1,63 |
 | 2025/26 | L1 | 34 | 1,76 | +0,17 (+0,40 / −0,06) | 18 % (25 %) | 1,56–1,18 | 1,62–1,41 | 1,51 |
-| 2026/27 | L1 | 5 | 2,20 | +0,58 (+0,32 / +0,97) | 40 % (24 %) | 2,00–0,40 | 1,60–1,21* | 1,58 |
+| 2026/27 | L1 | 5 | 2,20 | +0,58 (+0,32 / +0,97) | 40 % (24 %) | 2,00–0,40 | 1,99–1,18 | 1,75 |
 
-\* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+## Nyckelspelare (Understat, 2024/25–)
+
+Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
+
+| Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
+|---|---|---|---|---|
+| Loïs Openda | 19 % | 0 / 73 | – / 1,75 | – / +0,12 |
+| Corentin Tolisso | 14 % | 2 / 71 | 3,00 / 1,72 | +1,15 / +0,09 |
+| Ernest Nuamah | 13 % | 1 / 72 | 3,00 / 1,74 | +0,42 / +0,12 |
+| Endrick | 12 % | 0 / 73 | – / 1,75 | – / +0,12 |
+| Zachary Athekame | 11 % | 0 / 73 | – / 1,75 | – / +0,12 |
+| Pavel Sulc | 9 % | 5 / 68 | 1,60 / 1,76 | +0,27 / +0,11 |
+
+Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -76,3 +89,45 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-09-28 | Europa 2509 | Lille - Lyon | 2 ✓ | 24 % | 31 % |
 | 2025-09-14 | Europa 2505 | Rennes - Lyon | 1 | 36 % | 34 % |
 | 2025-08-31 | Europa 2501 | Lyon - Marseille | 1 ✓ | 33 % | 34 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Paulo Fonseca. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Nicolás Tagliafico (skadad, åter A few weeks)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Dominik Greif | GK | 29 | Slovakia | 4,5 M€ | 7,52 | 0 | 0 | 0/0 |  |
+| 25 | Justin Bengui | GK | 21 | France | 658 k€ | – | 0 | 0 | 0/0 |  |
+| 40 | Rémy Descamps | GK | 30 | France | 1,2 M€ | 7,51 | 0 | 0 | 0/0 |  |
+| 50 | Lassine Diarra | GK | 23 | Mali | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 3 | Nicolás Tagliafico | LB,CB | 34 | Argentina | 1,9 M€ | 6,81 | 0 | 0 | 0/0 | skadad, åter A few weeks |
+| 13 | Zachary Athekame | RB,RM | 21 | Switzerland | 10,3 M€ | 7,93 | 2 | 2 | 1/0 |  |
+| 16 | Abner | LB,LWB,LW,CDM,CM | 26 | Brazil | 6,0 M€ | 6,86 | 0 | 0 | 0/0 |  |
+| 19 | Moussa Niakhaté | CB | 30 | Senegal | 13,6 M€ | 7,28 | 0 | 0 | 1/0 |  |
+| 20 | Felix Bacher | CB | 25 | Austria | 1,5 M€ | 7,23 | 1 | 0 | 1/0 |  |
+| 21 | Ruben Kluivert | CB,LB,RB | 25 | Netherlands | 2,1 M€ | – | 0 | 0 | 0/0 |  |
+| 22 | Clinton Mata | CB,RB | 33 | Angola | 1,9 M€ | 7,56 | 0 | 0 | 0/0 |  |
+| 37 | Steeve Kango | RB | 19 | France | 1,5 M€ | – | 0 | 0 | 0/0 |  |
+| 85 | Noham Kamara | CB | 19 | France | 2,1 M€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Paul Akouokou | CDM,CM | 28 | Ivory Coast | 316 k€ | – | 0 | 0 | 0/0 |  |
+| 2 | Mads Bidstrup | CM,CDM | 25 | Denmark | 10,4 M€ | 6,99 | 0 | 0 | 0/0 |  |
+| 6 | Tanner Tessmann | CDM,CM,CB | 25 | USA | 8,0 M€ | 6,11 | 0 | 0 | 1/0 |  |
+| 8 | Corentin Tolisso | CAM,CM,CDM,LW | 32 | France | 4,9 M€ | 7,73 | 1 | 2 | 0/0 |  |
+| 18 | Khalis Merah | CAM,CM,ST | 19 | France | 11,0 M€ | 6,68 | 0 | 0 | 0/0 |  |
+| 23 | Tyler Morton | CDM,CM | 23 | England | 15,2 M€ | 6,65 | 0 | 0 | 1/0 |  |
+| 76 | Mohamed Ouédraogo | LM,LB,LWB,CB | 23 | Burkina Faso | 1,1 M€ | 7,28 | 0 | 0 | 0/0 |  |
+| 99 | Noah Nartey | CM,ST,CAM,CDM | 20 | Denmark | 9,4 M€ | 6,77 | 1 | 0 | 2/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Alejandro Gomes Rodríguez | ST,LW | 18 | England | 1,4 M€ | – | 0 | 0 | 0/0 |  |
+| 7 | Ernest Nuamah | RW | 22 | Ghana | 11,2 M€ | 7,76 | 3 | 1 | 0/0 |  |
+| 10 | Pavel Šulc | CAM,ST,RW,LW | 25 | Czechia | 12,3 M€ | 7,09 | 0 | 3 | 1/0 |  |
+| 11 | Keito Nakamura | LW,LWB,ST,LM | 26 | Japan | 6,1 M€ | 6,16 | 0 | 0 | 0/0 |  |
+| 17 | Loïs Openda | ST | 26 | Belgium | 26,7 M€ | 7,36 | 1 | 1 | 1/0 |  |
+| 24 | Julien Duranville | RW,LW | 20 | Belgium | 5,7 M€ | 6,64 | 0 | 0 | 0/0 |  |
+| 26 | Kaïl Boudache | CAM,RW | 20 | Algeria | 2,6 M€ | 6,66 | 0 | 0 | 0/0 |  |
+| 45 | Rémi Himbert | RW,ST | 18 | France | 9,4 M€ | 6,63 | 0 | 0 | 0/0 |  |

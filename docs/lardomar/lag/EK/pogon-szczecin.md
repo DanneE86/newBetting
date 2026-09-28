@@ -59,3 +59,48 @@ Form (äldst → senast): FVVOOOVV · senaste match 2026-09-20
 | Wieczysta Krakow | 1 | 1-0-0 | 2–0 | +1,48 | −26 pe | 2026-09-13 2-0 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Óscar García. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Nikolaos Botis (skadad, åter Unknown), Hussein Ali (skadad, åter Late November 2026), José Pozo (skadad, åter Unknown), Rajmund Molnár (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 31 | Nikolaos Botis | GK | 22 | Greece | 162 k€ | – | 0 | 0 | 0/0 | skadad, åter Unknown |
+| 33 | Alex Pesković | Keeper | 17 | Slovakia | – | – | 0 | 0 | 0/0 |  |
+| 77 | Valentin Cojocaru | GK | 30 | Romania | 261 k€ | 7,74 | 0 | 0 | 2/0 |  |
+| 79 | Hubert Renka | Keeper | 17 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 89 | Antoni Fojut | Keeper | 16 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 98 | Kevin Dąbrowski | GK | 28 | Poland | 143 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Isaiah Eichie | RB | 19 | Germany | – | – | 0 | 0 | 0/0 |  |
+| 4 | Alessandro Pio Riccio | CB,RB | 24 | Italy | 430 k€ | 6,80 | 0 | 0 | 0/0 |  |
+| 13 | Dimitrios Keramitsis | CB | 22 | Greece | 1,8 M€ | 7,15 | 0 | 0 | 2/0 |  |
+| 15 | Hussein Ali | RB | 24 | Iraq | 369 k€ | 6,50 | 0 | 0 | 0/0 | skadad, åter Late November 2026 |
+| 23 | Benjamin Mendy | LB | 32 | France | 179 k€ | 6,92 | 0 | 1 | 1/0 |  |
+| 28 | Linus Wahlqvist Egnell | RB,CB | 29 | Sweden | 823 k€ | 6,78 | 1 | 1 | 1/0 |  |
+| 29 | Lukas Willen | CB | 23 | Belgium | 655 k€ | 6,96 | 0 | 0 | 1/0 |  |
+| 41 | Attila Szalai | CB | 28 | Hungary | 1,4 M€ | 7,18 | 1 | 0 | 0/0 |  |
+| 75 | Andrzej Ossowski | Defender | 17 | Poland | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 3 | Kellyn Acosta | CDM,CM | 31 | USA | 547 k€ | 6,92 | 1 | 1 | 1/0 |  |
+| 6 | Jan Biegański | CM,CDM | 23 | Poland | 268 k€ | 6,80 | 1 | 0 | 0/0 |  |
+| 14 | José Pozo | CAM,RM | 30 | Spain | 156 k€ | – | 0 | 0 | 0/0 | skadad, åter Unknown |
+| 16 | Patryk Dziczek | CDM,CM | 28 | Poland | 463 k€ | 7,59 | 0 | 2 | 3/0 |  |
+| 19 | Mor Ndiaye | CM,CDM | 25 | Senegal | 205 k€ | – | 0 | 0 | 0/0 |  |
+| 35 | Maciej Wojciechowski | CAM | 19 | Poland | – | 6,80 | 0 | 1 | 0/0 |  |
+| 47 | Natan Ława | CAM,LM,ST | 17 | Poland | 1,0 M€ | 6,44 | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Musa Juwara | RW,RM | 24 | The Gambia | 496 k€ | 6,79 | 1 | 0 | 0/0 |  |
+| 9 | Rajmund Molnár | ST | 24 | Hungary | 1,0 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 10 | Filip Čuić | ST | 23 | Bosnia and Herzegovina | 971 k€ | 6,13 | 0 | 0 | 0/1 |  |
+| 11 | Kamil Grosicki | ST,LW | 38 | Poland | 187 k€ | 6,44 | 0 | 1 | 1/0 |  |
+| 17 | Jean Pierre Nsame | ST | 33 | Cameroon | 216 k€ | 6,46 | 0 | 0 | 0/0 |  |
+| 18 | Paul Mukairu | ST,LW,RW,LM | 26 | Nigeria | 676 k€ | 7,19 | 1 | 2 | 0/0 |  |
+| 21 | Darko Churlinov | LW,RW | 26 | North Macedonia | 1,1 M€ | 7,31 | 3 | 0 | 0/0 |  |
+| 22 | Jordi Sánchez | ST | 31 | Spain | 136 k€ | 7,63 | 8 | 1 | 2/0 |  |
+| 30 | Jacek Czapliński | LM | 20 | Poland | 204 k€ | 5,94 | 0 | 0 | 0/0 |  |
+| 54 | Patryk Paryzek | CAM | 20 | Poland | 521 k€ | – | 0 | 0 | 0/0 |  |

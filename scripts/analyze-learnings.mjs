@@ -83,7 +83,7 @@ function testSignal(list, key, target, split = SPLIT) {
   const train = rows.filter((m) => m.date < split);
   const test = rows.filter((m) => m.date >= split);
   const out = { all: ols(pair(rows)), train: ols(pair(train)), test: ols(pair(test)), split };
-  if (target === 'y' && key !== 'steam') {
+  if (target === 'y' && !['steam', 'book'].includes(key)) {
     out.open = ols(pair(rows, 'yo'));
     out.move = ols(pair(rows, 'mv'));
   }
@@ -345,7 +345,7 @@ for (const league of Object.keys(leagues)) {
     T.h2h.sort((a, b) => b.n - a.n || a.opp.localeCompare(b.opp));
     // Nyckelspelare (Understat)
     if (playerModel && UNDERSTAT.includes(league) && T.current) {
-      const shares = teamShares(playerModel, league, team, '2099-01-01').filter((p) => Date.parse(today) - Date.parse(p.lastApp) < 200 * 864e5).slice(0, 6);
+      const shares = teamShares(playerModel, league, team, today).filter((p) => Date.parse(today) - Date.parse(p.lastApp) < 200 * 864e5).slice(0, 6);
       const tms = own.filter((m) => m.missing && m.date >= '2024-08-01');
       T.keyPlayers = shares.map((p) => {
         const missed = tms.filter((m) => (m.home === team ? m.missing.home : m.missing.away).some((x) => x.name === p.name));
@@ -456,6 +456,7 @@ function leagueMd(L) {
     ...c.drawBuckets.map((b) => `| ${b.label} | ${b.n} | ${pct(b.actual)} | ${pct(b.implied)} | ${b.all ? `${signed(b.all.mean * 100, 1)} pe (${fmt(b.all.z, 1)})` : '–'} | ${VERDICT_TXT[b.verdict]} |`), '');
   lines.push('### Favoriter (favorit–skräll-bias)', '', '| Favoritens odds-sannolikhet | n | Vann | Oddsens | Skillnad (z) | Bedömning |', '|---|---|---|---|---|---|',
     ...c.favBuckets.map((b) => `| ${b.label} | ${b.n} | ${pct(b.actual)} | ${pct(b.implied)} | ${b.all ? `${signed(b.all.mean * 100, 1)} pe (${fmt(b.all.z, 1)})` : '–'} | ${VERDICT_TXT[b.verdict]} |`), '');
+  lines.push(...leagueModelLines(L.code));
   lines.push('## Signaler mot marknaden', '', 'Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (|z| ≥ 2,5 i träning och ≥ 2 i kontroll krävs). "Oddsrörelse" visar om signalen förutsäger hur oddsen rör sig från öppning till stängning, alltså om marknaden lär sig det före avspark.', '', signalTable(L.signals), '');
   lines.push('## Situationer', '', situationTable(L.situations), '');
   const p = L.persistence;
@@ -464,6 +465,7 @@ function leagueMd(L) {
     `- Lagets extra hemmafördel → nästa säsong: ${p.homeEdge ? `lutning ${fmt(p.homeEdge.slope, 2)} (z ${fmt(p.homeEdge.z, 1)}, n ${p.homeEdge.n})` : '–'}. ${p.homeEdge && Math.abs(p.homeEdge.z) < 2 ? 'Lagspecifik hemmafördel utöver marknaden är brus.' : ''}`, '');
   lines.push(poolSection(L.pool));
   const cur = Object.values(teams).filter((T) => T.league === L.code && T.current).sort((a, b) => a.team.localeCompare(b.team));
+  lines.push(...tableLines(L.code));
   lines.push('## Lagfiler', '', ...cur.map((T) => `- [${T.team}](../lag/${L.code}/${slug(T.team)}.md)`), '');
   return lines.join('\n');
 }
@@ -506,7 +508,113 @@ function teamMd(T, L) {
     lines.push('## Stryktipset / Europatipset', '', '| Datum | Spel | Match | Utfall | Folket på laget | Vår procent |', '|---|---|---|---|---|---|',
       ...T.pool.map((x) => `| ${x.date} | ${x.product === 'stryktipset' ? 'Stryk' : 'Europa'} ${x.draw} | ${x.match} | ${x.outcome}${x.won ? ' ✓' : ''} | ${pct(x.folk, 0)} | ${pct(x.final, 0)} |`), '');
   }
+  lines.push(...squadLines(T.league, T.team));
   return lines.join('\n');
+}
+
+// ---------------------------------------------------------------- trupper och tabeller (npm run trupper)
+// Funktionsdeklarationer med cache pa funktionen: anropas fran filgenereringen ovan innan en const hade initierats
+function squadDoc(code) {
+  const c = (squadDoc.cache ??= new Map());
+  if (!c.has(code)) c.set(code, readJsonOpt(path.join(root, 'data', 'trupper', `${code}.json`)));
+  return c.get(code);
+}
+function leagueDoc(code) {
+  const c = (leagueDoc.cache ??= new Map());
+  if (!c.has(code)) c.set(code, readJsonOpt(path.join(root, 'data', 'ligor', `${code}.json`)));
+  return c.get(code);
+}
+function readJsonOpt(p) { try { return JSON.parse(fs.readFileSync(p, 'utf8')); } catch { return null; } }
+const ROLE_TXT = { keepers: 'Målvakter', defenders: 'Backar', midfielders: 'Mittfältare', attackers: 'Anfallare' };
+function money(v) {
+  if (!v) return '–';
+  return v >= 1e6 ? `${fmt(v / 1e6, 1)} M€` : `${Math.round(v / 1e3)} k€`;
+}
+
+// FotMob: 'Doubtful' = osaker, annars vantad aterkomst
+function injuryTxt(i) {
+  const r = i?.expectedReturn;
+  if (!r) return 'skadad';
+  return /doubtful/i.test(r) ? 'osäker' : `skadad, åter ${r}`;
+}
+
+function squadLines(code, team) {
+  const sq = squadDoc(code)?.teams?.[team];
+  if (!sq) return [];
+  const lines = [`## Trupp (FotMob, hämtad ${sq.fetchedAt?.slice(0, 10) ?? '–'})`, '', `Tränare: ${sq.coach ?? '–'}${sq.coachHistory?.length > 1 ? ` (tidigare: ${sq.coachHistory.slice(0, -1).map((c) => `${c.name} till ${c.firstSeen}`).join(', ')})` : ''}. Betyg, mål och assist gäller innevarande säsong enligt FotMob.`, ''];
+  const injured = sq.players.filter((p) => p.injury);
+  if (injured.length) lines.push(`**Skadade/borta nu:** ${injured.map((p) => `${p.name} (${injuryTxt(p.injury)})`).join(', ')}`, '');
+  lines.push('| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |', '|---|---|---|---|---|---|---|---|---|---|---|');
+  for (const role of ['keepers', 'defenders', 'midfielders', 'attackers']) {
+    const ps = sq.players.filter((p) => p.role === role);
+    if (!ps.length) continue;
+    lines.push(`| | **${ROLE_TXT[role]}** | | | | | | | | | |`);
+    for (const p of ps) lines.push(`| ${p.number ?? ''} | ${p.name} | ${p.position ?? ''} | ${p.age ?? ''} | ${p.country ?? ''} | ${money(p.value)} | ${p.rating != null ? fmt(p.rating, 2) : '–'} | ${p.goals ?? '–'} | ${p.assists ?? '–'} | ${p.yellow ?? 0}/${p.red ?? 0} | ${p.injury ? injuryTxt(p.injury) : ''} |`);
+  }
+  lines.push('');
+  if (sq.left?.length) lines.push(`Har lämnat truppen sedan vi började spara (${sq.left.length}): ${sq.left.map((p) => `${p.name} (senast ${p.lastSeen})`).join(', ')}.`, '');
+  return lines;
+}
+
+function tableLines(code) {
+  const lg = leagueDoc(code);
+  if (!lg?.table?.length) return [];
+  const groups = [...new Set(lg.table.map((t) => t.group))];
+  const out = [`## Tabell nu (FotMob, ${lg.updatedAt.slice(0, 10)})`, ''];
+  for (const g of groups) {
+    if (g) out.push(`**${g}**`, '');
+    out.push('| # | Lag | M | V | O | F | Mål | +/− | P |', '|---|---|---|---|---|---|---|---|---|',
+      ...lg.table.filter((t) => t.group === g).map((t) => `| ${t.rank} | ${t.team} | ${t.played} | ${t.won} | ${t.drawn} | ${t.lost} | ${t.goals} | ${t.gd} | ${t.pts} |`), '');
+  }
+  out.push(`Tabellhistorik (en rad per lag och dag sedan ${Object.keys(lg.tableHistory ?? {}).sort()[0] ?? '–'}): \`data/ligor/${code}.json\`.`, '');
+  return out;
+}
+
+// ---------------------------------------------------------------- justeringsmodellen (npm run lardomar:modell)
+const readOpt = (p) => { try { return JSON.parse(fs.readFileSync(p, 'utf8')); } catch { return null; } };
+const modelReport = readOpt(path.join(root, 'data', 'lardomar-modell.json'));
+const adjustments = readOpt(path.join(root, 'config', 'learned-adjustments.json'));
+const BASE_TXT = { open: 'öppningsodds (Oddset, långt före avspark)', close: 'stängningsodds (sen körning, Stryktipset/Europatipset)' };
+
+function modelSection() {
+  if (!modelReport) return ['## Justeringsmodell', '', 'Inte körd än: `npm run lardomar:modell`.', ''];
+  const lines = ['## Justeringsmodell: blir sannolikheterna bättre?', '',
+    `Alla signaler och en kalibrering per liga (favorit-/skrällbias, hemmabias, kryss) läggs på marknadens sannolikheter. Anpassning före 2021/22, val på 2021/22–2022/23, en enda mätning på 2023/24 och senare. Mått: logloss-skillnad per match (negativ = bättre). Grovt räknat ändras chansen till 13 rätt med faktorn e^(−13 × skillnaden), så −0,001 ≈ +1,3 %. Genererad av \`scripts/learnings-model.mjs\` ${modelReport.generatedAt.slice(0, 10)}.`, '',
+    'Oddset-simuleringen spelar tecken med EV ≥ 3 % och odds ≤ 5. "Bästa pris" = högsta odds bland alla bolag i football-data. Det är för optimistiskt (gamla och begränsade priser), så jämför varianterna med varandra, inte med noll. CLV mäts mot ojusterad stängning och blir därför lägre för justerade varianter.', ''];
+  for (const [base, b] of Object.entries(modelReport.bases)) {
+    lines.push(`### Mot ${BASE_TXT[base]}`, '', '| Variant | Logloss-skillnad (z) | Bästa pris: spel / ROI ± SE / CLV | Snittodds: spel / ROI ± SE |', '|---|---|---|---|');
+    for (const [name, v] of Object.entries(b.variants)) {
+      const t = v.bets.test, a = v.bets.testAvgOdds;
+      const roi = (x) => (x?.roi != null ? `${pct(x.roi)} ± ${pct(x.roiSe)}` : '–');
+      lines.push(`| ${name} | ${v.test ? `${signed(v.test.dLL, 4)} (${fmt(v.test.z, 1)})` : '–'} | ${t.bets} / ${roi(t)} / ${t.clv != null ? pct(t.clv) : '–'} | ${a?.bets ?? '–'} / ${roi(a)} |`);
+    }
+    lines.push('', `Signaler en i taget (validering, negativ = bättre): ${Object.entries(b.single).map(([k, v]) => `${k} ${signed(v.valid.dLL, 4)} (z ${fmt(v.valid.z, 1)})`).join(', ')}.`, '');
+    const a = adjustments?.[base];
+    lines.push(a ? `**Används live:** ${a.rule} (kontroll ${signed(a.test.dLL, 4)}, z ${fmt(a.test.z, 1)}).` : '**Används inte:** ingen variant blev bättre med z ≤ −2 i kontrollen.', '');
+  }
+  if (modelReport.missing) {
+    const m = modelReport.missing;
+    lines.push('### Nyckelspelare borta (träning 2024/25, kontroll 2025/26–)', '',
+      `Vikt ${fmt(m.open.beta, 3)} mot öppning och ${fmt(m.close.beta, 3)} mot stängning. Positiv vikt betyder att laget som saknar spelare gör det *bättre* än oddsen, alltså att marknaden överreagerar. Kontroll: ${signed(m.open.test.dLL, 4)} (z ${fmt(m.open.test.z, 1)}) och ${signed(m.close.test.dLL, 4)} (z ${fmt(m.close.test.z, 1)}). Inte bekräftat, så det används inte.`, '');
+  }
+  return lines;
+}
+
+function leagueModelLines(code) {
+  if (!modelReport) return [];
+  const out = [];
+  for (const base of ['open', 'close']) {
+    const v = modelReport.bases[base]?.variants?.['ligakalibrering (alla ligor)'];
+    const t = v?.test?.byLeague?.[code];
+    const p = v?.leagues?.[code];
+    if (!t || !p) continue;
+    const live = adjustments?.[base]?.leagues?.[code];
+    out.push(`| ${BASE_TXT[base]} | ${signed(p.g, 3)} | ${signed(p.h, 3)} | ${signed(p.d, 3)} | ${signed(t.dLL, 4)} (z ${fmt(t.z, 1)}, n ${t.n}) | ${live ? 'ja' : 'nej'} |`);
+  }
+  if (!out.length) return [];
+  return ['## Kalibrering av oddsen (justeringsmodellen)', '',
+    'g > 0 = favoriter vinner oftare än oddsen säger (skrällar överprissatta), h < 0 = hemmalag överprissatta, d > 0 = kryss underprissatta. Parametrarna är tränade före 2023/24. Kontroll = logloss-skillnad 2023/24– (negativ = bättre). Live används parametrar refittade på all data.', '',
+    '| Bas | g (favoriter) | h (hemma) | d (kryss) | Kontroll | Används live |', '|---|---|---|---|---|---|', ...out, ''];
 }
 
 for (const L of Object.values(leagues)) {
@@ -525,9 +633,14 @@ function readme() {
     '# Lärdomar per liga och lag', '',
     `Genererad ${today} av \`node scripts/analyze-learnings.mjs\` (${matches.length} matcher, ${Object.keys(leagues).length} ligor, ${Object.values(teams).filter((t) => t.current).length} lag). Agenten \`.claude/agents/lardomar.md\` kör och tolkar analysen.`, '',
     'Frågan i varje test: **ger signalen något utöver stängningsoddsen?** Allt som oddsen redan prisar in har inget värde för våra spel. Träning på säsonger före 2023/24, kontroll på 2023/24 och senare. En signal räknas som bekräftad först när den håller i båda.', '',
+    'Slutsatser och beslut (handskrivet, levande): [slutsatser.md](slutsatser.md). Alla matcher per liga för träning: `data/matcher/<liga>.csv`.', '',
     '## Alla ligor tillsammans', '', signalTable(g.signals), '', situationTable(g.situations), '',
+    ...modelSection(),
     '## Ligor', '', '| Liga | Matcher | Säsonger | xG | Bekräftade lärdomar |', '|---|---|---|---|---|',
     ...Object.values(leagues).map((L) => `| [${L.name}](ligor/${L.code}.md) | ${L.n} | ${L.calibration.seasons[0]}–${L.calibration.seasons.at(-1)} | ${L.xg.source} | ${learningsFor(L).filter((x) => x.startsWith('**') || x.startsWith('Kryss') || x.startsWith('Favoriter') || x.startsWith('Hemmalagen') || x.includes('mot marknaden (z')).length} |`), '',
+    '### Ligor utan oddshistorik och cuper', '', 'Här kan inget mätas mot marknaden. Filerna visar profil, säsonger, modellens träff, form, inbördes möten, tabell och trupper.', '',
+    '| Liga | Matcher | Lagfiler |', '|---|---|---|',
+    ...basicLeagues.map((b) => `| [${b.name}](ligor/${b.code}.md)${b.cup ? ' (cup)' : ''} | ${b.n} | ${b.teams} |`), '',
     poolSection(poolAll, 'Stryktipset och Europatipset, alla ligor'),
     '### Ligor och cuper utan egen historik (bara pool-data)', '', '| Liga | n | Kryss utfall / vår / folket | Folket på favoriten | Logloss vår / folket |', '|---|---|---|---|---|',
     ...Object.entries(poolOther).sort((a, b) => b[1].n - a[1].n).map(([lg, s]) => `| ${lg} | ${s.n} | ${pct(s.drawActual, 0)} / ${pct(s.drawFinal, 0)} / ${pct(s.drawFolk, 0)} | ×${fmt(s.favFolkRatio)} | ${fmt(s.llFinal, 3)} / ${fmt(s.llFolk, 3)} |`), '',
@@ -540,12 +653,110 @@ function readme() {
     '| Tränarbyten | Saknas | "Ny tränare-effekt" kan inte testas |',
     '| Öppningsodds | fd-new-ligorna har bara stängning. Före 2019/20 saknas stängning i fd-main | Test mot öppningsodds bara i huvudligorna |',
     '| Stryktipset/Europatipset | Streck och odds bara från 2025/26 (backtest) | Folkets bias per lag bygger på få matcher |',
+    '| Trupper | FotMob saknar trupper för J2, J3 och Ettan Norra/Södra (ESPN har inte heller ligorna). Truppernas historik börjar 2026-09-28 | Skador och truppändringar kan inte följas där |',
     '| Derbyn, motivation, väder | Väder testat separat i pro-lagret (inget värde). Derby och motivation saknas | – |', '',
     '## Köra om', '', '```', 'npm run history    # äldre säsonger + Understat-xG (en gång, cachas)', 'npm run lardomar   # analys + alla filer', '```', '',
   ];
   return lines.join('\n');
 }
+// ---------------------------------------------------------------- ligor utan oddshistorik + cuper
+// Resultat fran betting-store (ESPN, TheSportsDB, FotMob). Ingen marknad att mata mot: profil, lag, form, H2H, trupp.
+const storeDoc = readJsonOpt(path.join(root, 'data', 'betting-store.json')) ?? { matches: [], accuracyByLeague: {} };
+const leaguesCfg = readJsonOpt(path.join(root, 'config', 'leagues.json'))?.leagues ?? {};
+const basicLeagues = [];
+const extraTeamFiles = [];
+const rate = (a, f) => (a.length ? a.filter(f).length / a.length : NaN);
+function basicTeamMd(code, name, team, list, noOdds = true) {
+  const own = list.filter((m) => m.home === team || m.away === team);
+  const persp = (m) => (m.home === team ? [m.hg, m.ag] : [m.ag, m.hg]);
+  const lines = [`# ${team} (${name}) – lärdomar`, '', `Genererad ${today}. Ligans fil: [${code}](../../ligor/${code}.md). ${noOdds ? 'Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.' : 'Laget saknar historik i ligan i våra källor (ny i ligan).'}`, ''];
+  if (own.length) {
+    const last = own.slice(-8);
+    lines.push('## Nuläge', '', `Form senaste ${last.length} (äldst → senast): ${last.map((m) => { const [a, b] = persp(m); return a > b ? 'V' : a === b ? 'O' : 'F'; }).join('')} · senaste match ${own.at(-1).date}`, '');
+    lines.push('## Säsonger', '', '| Säsong | M | P/M | Hemma P/M | Borta P/M | Kryss | Mål för–emot | Över 2,5 |', '|---|---|---|---|---|---|---|---|');
+    for (const s of [...new Set(own.map((m) => m.season))].sort()) {
+      const r = own.filter((m) => m.season === s);
+      const ppg = (ms) => (ms.length ? fmt(avg(ms.map((m) => { const [a, b] = persp(m); return pts(a, b); }))) : '–');
+      lines.push(`| ${s} | ${r.length} | ${ppg(r)} | ${ppg(r.filter((m) => m.home === team))} | ${ppg(r.filter((m) => m.away === team))} | ${pct(rate(r, (m) => m.hg === m.ag), 0)} | ${fmt(avg(r.map((m) => persp(m)[0])))}–${fmt(avg(r.map((m) => persp(m)[1])))} | ${pct(rate(r, (m) => m.hg + m.ag > 2), 0)} |`);
+    }
+    lines.push('');
+    const opps = [...new Set(own.map((m) => (m.home === team ? m.away : m.home)))].sort();
+    const h2h = opps.map((o) => {
+      const ms = own.filter((m) => m.home === o || m.away === o);
+      let w = 0, d = 0, l = 0, gf = 0, ga = 0;
+      for (const m of ms) { const [a, b] = persp(m); if (a > b) w++; else if (a === b) d++; else l++; gf += a; ga += b; }
+      return { o, n: ms.length, w, d, l, gf, ga, last: ms.at(-1) };
+    }).filter((h) => h.n >= 2).sort((a, b) => b.n - a.n);
+    if (h2h.length) {
+      lines.push('## Inbördes möten', '', '| Motståndare | M | V-O-F | Mål | Senast |', '|---|---|---|---|---|',
+        ...h2h.map((h) => `| ${h.o} | ${h.n} | ${h.w}-${h.d}-${h.l} | ${h.gf}–${h.ga} | ${h.last.date} ${persp(h.last).join('-')} (${h.last.home === team ? 'h' : 'b'}) |`), '',
+        'Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.', '');
+    }
+  }
+  lines.push(...squadLines(code, team));
+  return lines.join('\n');
+}
+for (const code of Object.keys(leaguesCfg)) {
+  if (leagues[code]) continue;
+  const cfg = leaguesCfg[code];
+  const list = storeDoc.matches.filter((m) => m.league === code && Number.isFinite(m.hg)).sort((a, b) => a.date.localeCompare(b.date));
+  const sq = squadDoc(code);
+  const lg = leagueDoc(code);
+  if (!list.length && !sq) continue;
+  const acc = storeDoc.accuracyByLeague?.[code];
+  const poolLg = Object.entries(poolOther).find(([n]) => nameScore(n, null, cfg.name) >= 0.6 || n === cfg.name);
+  const lines = [`# ${cfg.name} (${code}) – lärdomar`, '',
+    `Genererad ${today} av \`node scripts/analyze-learnings.mjs\`. ${cfg.cup ? 'Cup: lagen hör till sina ligor, se deras lagfiler.' : 'Ligan saknar oddshistorik (inga stängningsodds i våra källor), så signaler och kalibrering kan inte testas mot marknaden här.'} Alla matcher: \`data/matcher/${code}.csv\`.`, ''];
+  lines.push('## Lärdomar i korthet', '');
+  const notes = [];
+  if (list.length) {
+    const home = rate(list, (m) => m.hg > m.ag), draw = rate(list, (m) => m.hg === m.ag), away = rate(list, (m) => m.hg < m.ag);
+    notes.push(`${list.length} matcher (${list[0].date} – ${list.at(-1).date}): hemmavinst ${pct(home)}, kryss ${pct(draw)}, bortavinst ${pct(away)}, ${fmt(avg(list.map((m) => m.hg + m.ag)))} mål per match.`);
+    if (acc?.['1X2']?.tested) {
+      const a1 = acc['1X2'];
+      notes.push(`Modellens 1X2-tips träffade ${pct(a1.rate)} (${a1.correct}/${a1.tested}). ${a1.rate < Math.max(home, away) ? `Det är sämre än att alltid tippa ${home >= away ? 'hemmavinst' : 'bortavinst'} (${pct(Math.max(home, away))}), så modellen behöver granskas i ligan.` : ''}`);
+    }
+    if (acc?.OU25?.tested) notes.push(`Över/under 2,5: träff ${pct(acc.OU25.rate)} (${acc.OU25.tested}). BTTS: ${pct(acc.BTTS?.rate ?? NaN)}.`);
+  }
+  notes.push('Utan odds finns ingen marknad att lära av. Oddsen vi ser före varje match sparas nu (`pre_*` i matcherfilen), så marknadstestet kan köras här efter cirka 150 matcher.');
+  lines.push(...notes.map((x) => `- ${x}`), '');
+  if (list.length) {
+    lines.push('## Säsonger', '', '| Säsong | M | Hemma | Kryss | Borta | Mål/M | Över 2,5 | Båda gör mål |', '|---|---|---|---|---|---|---|---|');
+    for (const s of [...new Set(list.map((m) => m.season))].sort()) {
+      const r = list.filter((m) => m.season === s);
+      lines.push(`| ${s} | ${r.length} | ${pct(rate(r, (m) => m.hg > m.ag), 0)} | ${pct(rate(r, (m) => m.hg === m.ag), 0)} | ${pct(rate(r, (m) => m.hg < m.ag), 0)} | ${fmt(avg(r.map((m) => m.hg + m.ag)))} | ${pct(rate(r, (m) => m.hg + m.ag > 2), 0)} | ${pct(rate(r, (m) => m.hg > 0 && m.ag > 0), 0)} |`);
+    }
+    lines.push('');
+  }
+  if (poolLg) {
+    const s = poolLg[1];
+    lines.push('## Stryktipset och Europatipset', '', `${s.n} matcher (${poolLg[0]}). Kryss: utfall ${pct(s.drawActual)}, vår procent ${pct(s.drawFinal)}, folket ${pct(s.drawFolk)}. Folket streckar favoriten ×${fmt(s.favFolkRatio)}. Logloss vår/folket ${fmt(s.llFinal, 3)}/${fmt(s.llFolk, 3)}.`, '');
+  }
+  lines.push(...tableLines(code));
+  // Lag: tabellens lag (trupper) + lag i senaste sasongen
+  const lastSeason = list.at(-1)?.season;
+  const teamNames = [...new Set([...(lg?.table ?? []).map((t) => t.team), ...(cfg.cup ? [] : list.filter((m) => m.season === lastSeason).flatMap((m) => [m.home, m.away]))])].sort();
+  if (!cfg.cup) {
+    fs.mkdirSync(path.join(DOCS, 'lag', code), { recursive: true });
+    for (const t of teamNames) fs.writeFileSync(path.join(DOCS, 'lag', code, `${slug(t)}.md`), basicTeamMd(code, cfg.name, t, list), 'utf8');
+    lines.push('## Lagfiler', '', ...teamNames.map((t) => `- [${t}](../lag/${code}/${slug(t)}.md)`), '');
+  } else if (sq) {
+    lines.push('## Trupper', '', 'Trupperna för cuplagen finns i `data/trupper/' + code + '.json` och i lagens egna ligafiler.', '');
+  }
+  fs.writeFileSync(path.join(DOCS, 'ligor', `${code}.md`), lines.join('\n'), 'utf8');
+  basicLeagues.push({ code, name: cfg.name, n: list.length, teams: cfg.cup ? 0 : teamNames.length, cup: !!cfg.cup });
+}
+// Lag i en odds-liga som finns i tabellen men saknar lagfil (t.ex. nyuppflyttade utan historik i ligan)
+for (const code of Object.keys(leagues)) {
+  for (const t of Object.keys(squadDoc(code)?.teams ?? {})) {
+    const f = path.join(DOCS, 'lag', code, `${slug(t)}.md`);
+    if (fs.existsSync(f)) continue;
+    const list = matches.filter((m) => m.league === code).map((m) => ({ ...m }));
+    fs.writeFileSync(f, basicTeamMd(code, LEAGUE_NAMES[code], t, list, false), 'utf8');
+    extraTeamFiles.push(`${code}/${t}`);
+  }
+}
 fs.writeFileSync(path.join(DOCS, 'README.md'), readme(), 'utf8');
-console.log(`Skrev ${path.relative(root, OUT_JSON)} och docs/lardomar/ (${Object.keys(leagues).length} ligor, ${Object.values(teams).filter((t) => t.current).length} lag)`);
+console.log(`Skrev ${path.relative(root, OUT_JSON)} och docs/lardomar/ (${Object.keys(leagues).length} ligor med odds + ${basicLeagues.length} utan/cuper, ${Object.values(teams).filter((t) => t.current).length + basicLeagues.reduce((x, b) => x + b.teams, 0) + extraTeamFiles.length} lagfiler)`);
 for (const [k, s] of Object.entries(global.signals)) console.log(`  ${k.padEnd(8)} ${s.verdict.padEnd(22)} alla ${zTxt(s.all)} | träning ${zTxt(s.train)} | kontroll ${zTxt(s.test)} | öppning ${zTxt(s.open)} | rörelse ${zTxt(s.move)}`);
 for (const [k, s] of Object.entries(global.situations)) console.log(`  ${k.padEnd(10)} ${s.verdict.padEnd(14)} ${zTxt(s.all)} | träning ${zTxt(s.train)} | kontroll ${zTxt(s.test)}`);

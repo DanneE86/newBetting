@@ -44,3 +44,47 @@ Form (äldst → senast): VFVVVOFO · senaste match 2026-09-19
 | Velez Sarsfield | 1 | 1-0-0 | 3–2 | +1,97 | −32 pe | 2026-04-03 3-2 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Darío Franco. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Imanol González (skadad, åter Late November 2026), Franco Saavedra (skadad, åter Out for season), Facundo Lencioni (skadad, åter Early October 2026), Tomás O'Connor (skadad, åter About 1-2 weeks)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 23 | César Rigamonti | GK | 39 | Argentina | 320 k€ | – | 0 | 0 | 0/0 |  |
+| 31 | Lautaro Petruchi | GK | 28 | Argentina | 286 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Diego Mondino | CB | 31 | Argentina | 279 k€ | – | 0 | 0 | 0/0 |  |
+| 3 | Matías Recalde | LB | 29 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 4 | Ezequiel Muñoz | CB | 35 | Argentina | 350 k€ | – | 0 | 0 | 0/0 |  |
+| 6 | Imanol González | CB | 28 | Argentina | 540 k€ | – | 0 | 0 | 0/0 | skadad, åter Late November 2026 |
+| 16 | Germán Guiffrey | CB | 28 | Argentina | 383 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Juan Franco | RB,RWB | 34 | Paraguay | 283 k€ | – | 0 | 0 | 0/0 |  |
+| 24 | Franco Saavedra | LB | 22 | Argentina | – | – | 0 | 0 | 0/0 | skadad, åter Out for season |
+| 25 | Martín Úbeda | Defender | 22 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 32 | Luciano Paredes | RB | 24 | Argentina | 600 k€ | – | 0 | 0 | 0/0 |  |
+| 36 | Ismael Cortez | RB | 26 | Argentina | 492 k€ | – | 0 | 0 | 0/0 |  |
+| 41 | Gerónimo Patritti | Defender | 23 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 42 | Lautaro Carrera | CB | 23 | Argentina | 437 k€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Nahuel Barboza | CM,CDM | 27 | Argentina | 315 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Nicolás Romano | CAM | 26 | Argentina | 476 k€ | – | 0 | 0 | 0/0 |  |
+| 15 | Ulises Sánchez | CM,CDM,RM,CAM | 28 | Argentina | 903 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | Julián Ceballos | RM,CAM | 22 | Argentina | 884 k€ | – | 0 | 0 | 0/0 |  |
+| 20 | Tomás Ortiz | CDM | 26 | Argentina | 346 k€ | – | 0 | 0 | 0/0 |  |
+| 21 | Fermín Antonini | CM,CDM | 29 | Argentina | 277 k€ | – | 0 | 0 | 0/0 |  |
+| 26 | Facundo Lencioni | LM,LW,CM,RW,CAM,CDM | 25 | Argentina | 1,5 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 28 | Tomás O'Connor | CAM,CDM | 22 | Argentina | 699 k€ | – | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
+| 30 | Esteban Fernández | CAM,CM,CDM | 24 | Argentina | 407 k€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Luciano Cingolani | RW,LW | 25 | Argentina | 436 k€ | – | 0 | 0 | 0/0 |  |
+| 8 | Matías Vargas | ST,CM,CAM | 29 | Argentina | 2,4 M€ | – | 0 | 0 | 0/0 |  |
+| 11 | Santiago Rodríguez | ST | 29 | Argentina | 432 k€ | – | 0 | 0 | 0/0 |  |
+| 17 | Ignacio Sabatini | RW,ST | 27 | Argentina | 444 k€ | – | 0 | 0 | 0/0 |  |
+| 27 | Blas Armoa | ST | 26 | Paraguay | 504 k€ | – | 0 | 0 | 0/0 |  |
+| 29 | Agustín Módica | ST | 23 | Italy | 1,4 M€ | – | 0 | 0 | 0/0 |  |
+| 33 | Brian Andrada | LW,RW | 29 | Argentina | 250 k€ | – | 0 | 0 | 0/0 |  |
+| 35 | Valentino Simoni | ST | 22 | Argentina | 747 k€ | – | 0 | 0 | 0/0 |  |

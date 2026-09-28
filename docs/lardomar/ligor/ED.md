@@ -6,7 +6,7 @@ Underlag: 2743 matcher, säsong 2017/18 – 2026/27. Marknad = stängningsodds u
 
 ## Lärdomar i korthet
 
-- Inga signaler slår marknaden i ligan. Lita på oddsen och lägg energin på streckvärde (Stryktipset) och bästa pris (Oddset).
+- Oddsrörelse öppning → stängning (förväntade poäng): svag signal (z 3,0) som inte håller i både träning och kontroll. Använd inte.
 
 ## Ligans profil
 
@@ -38,6 +38,15 @@ Underlag: 2743 matcher, säsong 2017/18 – 2026/27. Marknad = stängningsodds u
 | 65–75 % | 394 | 68,5 % | 69,7 % | −1,1 pe (−0,5) | ingen effekt |
 | 75–100 % | 411 | 84,7 % | 81,8 % | +2,9 pe (1,6) | ingen effekt |
 
+## Kalibrering av oddsen (justeringsmodellen)
+
+g > 0 = favoriter vinner oftare än oddsen säger (skrällar överprissatta), h < 0 = hemmalag överprissatta, d > 0 = kryss underprissatta. Parametrarna är tränade före 2023/24. Kontroll = logloss-skillnad 2023/24– (negativ = bättre). Live används parametrar refittade på all data.
+
+| Bas | g (favoriter) | h (hemma) | d (kryss) | Kontroll | Används live |
+|---|---|---|---|---|---|
+| öppningsodds (Oddset, långt före avspark) | +0,025 | +0,015 | +0,028 | −0,0006 (z −1,4, n 981) | ja |
+| stängningsodds (sen körning, Stryktipset/Europatipset) | +0,038 | +0,009 | +0,036 | −0,0008 (z −1,6, n 981) | nej |
+
 ## Signaler mot marknaden
 
 Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (|z| ≥ 2,5 i träning och ≥ 2 i kontroll krävs). "Oddsrörelse" visar om signalen förutsäger hur oddsen rör sig från öppning till stängning, alltså om marknaden lär sig det före avspark.
@@ -45,12 +54,15 @@ Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (
 | Signal | Hela perioden | Träning (< 2023/24) | Kontroll (2023/24–) | Mot öppningsodds | Oddsrörelse | Effekt p90–p10 | Bedömning |
 |---|---|---|---|---|---|---|---|
 | xG-tur (poäng − xP, senaste 8) | −0,017 (z −0,5, n 2650) | −0,033 (z −0,7, n 1679) | +0,009 (z 0,1, n 971) | −0,029 (z −0,8, n 2647) | −0,011 (z −4,0, n 2647) | −0,027 p | ingen effekt |
-| xG-form mot målform (xGD − GD, senaste 8) | +0,002 (z 0,1, n 2650) | +0,021 (z 0,7, n 1679) | −0,033 (z −0,8, n 971) | +0,007 (z 0,3, n 2647) | +0,006 (z 2,9, n 2647) | +0,003 p | ingen effekt |
+| xG-form mot målform (xGD − GD, senaste 8) | +0,002 (z 0,1, n 2650) | +0,021 (z 0,7, n 1679) | −0,033 (z −0,8, n 971) | +0,008 (z 0,3, n 2647) | +0,006 (z 2,9, n 2647) | +0,003 p | ingen effekt |
 | Form mot marknaden (poäng − förväntat, senaste 8) | −0,042 (z −1,1, n 2650) | −0,062 (z −1,2, n 1679) | −0,008 (z −0,1, n 971) | −0,046 (z −1,1, n 2647) | −0,003 (z −1,1, n 2647) | −0,061 p | ingen effekt |
 | Inbördes möten mot marknaden (≥ 3 möten, 8 år) | −0,073 (z −1,2, n 1790) | −0,062 (z −0,8, n 951) | −0,099 (z −1,0, n 839) | −0,081 (z −1,4, n 1790) | −0,008 (z −1,7, n 1790) | −0,081 p | ingen effekt |
 | Inbördes möten, poängskillnad | −0,010 (z −0,6, n 1790) | −0,027 (z −1,1, n 951) | +0,011 (z 0,4, n 839) | −0,010 (z −0,6, n 1790) | −0,000 (z −0,2, n 1790) | −0,042 p | ingen effekt |
 | Inbördes möten, kryss mot förväntat | +0,136 (z 2,5, n 1790) | +0,134 (z 2,0, n 951) | +0,138 (z 1,5, n 839) | – | – | +0,064 p | ingen effekt |
 | Vilodagar (hemma − borta, ligamatcher) | −0,005 (z −0,3, n 2642) | +0,010 (z 0,6, n 1698) | −0,022 (z −1,1, n 944) | −0,004 (z −0,3, n 2639) | +0,000 (z 0,1, n 2639) | −0,009 p | ingen effekt |
+| Oddsrörelse öppning → stängning (förväntade poäng) | +0,738 (z 3,0, n 2740) | +0,878 (z 2,8, n 1759) | +0,568 (z 1,4, n 981) | – | – | +0,161 p | svag signal (inte bekräftad) |
+| Bolagssnitt mot Pinnacle vid stängning | −1,782 (z −1,6, n 1904) | −1,448 (z −0,9, n 1150) | −2,072 (z −1,3, n 754) | – | – | −0,092 p | ingen effekt |
+| Under 2,5 mål (O/U-marknaden) mot kryss | −0,027 (z −0,3, n 2131) | −0,050 (z −0,4, n 1150) | +0,021 (z 0,1, n 981) | – | – | −0,006 p | ingen effekt |
 
 ## Situationer
 
@@ -87,6 +99,31 @@ Källa: backtesten i `data/stryktips-backtest-2526-steg3.json`, `data/stryktips-
 - Folket överstreckar favoriter (×1,17). Utdelningsgränsen fångar det redan, men garderingar mot favoriter i ligan ger mer i utdelning.
 - Folket streckar kryss 3,3 procentenheter under vår procent. Kryss ger streckvärde.
 - Bara 7 matcher: se det som indikation, inte regel.
+
+## Tabell nu (FotMob, 2026-09-28)
+
+| # | Lag | M | V | O | F | Mål | +/− | P |
+|---|---|---|---|---|---|---|---|---|
+| 1 | AZ Alkmaar | 7 | 6 | 1 | 0 | 18-6 | 12 | 19 |
+| 2 | Feyenoord | 7 | 5 | 2 | 0 | 25-7 | 18 | 17 |
+| 3 | PSV Eindhoven | 7 | 5 | 1 | 1 | 24-10 | 14 | 16 |
+| 4 | Twente | 7 | 5 | 1 | 1 | 15-7 | 8 | 16 |
+| 5 | Ajax | 7 | 4 | 2 | 1 | 21-9 | 12 | 14 |
+| 6 | For Sittard | 7 | 4 | 1 | 2 | 13-14 | -1 | 13 |
+| 7 | Excelsior | 7 | 3 | 2 | 2 | 15-9 | 6 | 11 |
+| 8 | Groningen | 7 | 3 | 2 | 2 | 15-13 | 2 | 11 |
+| 9 | Go Ahead Eagles | 7 | 2 | 4 | 1 | 16-14 | 2 | 10 |
+| 10 | Heerenveen | 7 | 2 | 3 | 2 | 11-9 | 2 | 9 |
+| 11 | Nijmegen | 7 | 2 | 2 | 3 | 12-13 | -1 | 8 |
+| 12 | Sparta Rotterdam | 7 | 1 | 2 | 4 | 10-17 | -7 | 5 |
+| 13 | Telstar | 7 | 1 | 2 | 4 | 5-12 | -7 | 5 |
+| 14 | Cambuur | 7 | 1 | 2 | 4 | 10-19 | -9 | 5 |
+| 15 | Utrecht | 7 | 1 | 2 | 4 | 11-24 | -13 | 5 |
+| 16 | Zwolle | 7 | 1 | 1 | 5 | 6-20 | -14 | 4 |
+| 17 | Den Haag | 7 | 0 | 2 | 5 | 7-17 | -10 | 2 |
+| 18 | Willem II | 7 | 0 | 2 | 5 | 6-20 | -14 | 2 |
+
+Tabellhistorik (en rad per lag och dag sedan 2026-09-28): `data/ligor/ED.json`.
 
 ## Lagfiler
 

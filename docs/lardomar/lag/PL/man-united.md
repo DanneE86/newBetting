@@ -6,6 +6,8 @@ Genererad 2026-09-28. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden"
 
 - 2025/26: +0,35 poäng per match mot marknaden. Ligan visar ingen persistens, så räkna inte med att det fortsätter.
 - Stark historik mot Crystal Palace (−0,52 p/match mot marknaden, 16 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Utan Bruno Fernandes (21 % av anfallet): 1,67 poäng per match mot 1,45 med (3 mot 78 matcher), mot marknaden +0,21 mot −0,01.
+- Utan Bryan Mbeumo (15 % av anfallet): 1,20 poäng per match mot 1,47 med (5 mot 76 matcher), mot marknaden −0,17 mot +0,00.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -13,8 +15,8 @@ Form (äldst → senast): OVVFVOFO · senaste match 2026-09-20
 
 | Mått | Värde |
 |---|---|
-| Tur (poäng − xP per match) | −0,37 |
-| xG-målskillnad − målskillnad | +0,46 |
+| Tur (poäng − xP per match) | −0,22 |
+| xG-målskillnad − målskillnad | +0,34 |
 | Poäng mot marknaden per match | −0,23 |
 
 ## Säsonger
@@ -30,9 +32,22 @@ Form (äldst → senast): OVVFVOFO · senaste match 2026-09-20
 | 2023/24 | PL | 38 | 1,58 | +0,02 (+0,00 / +0,03) | 16 % (22 %) | 1,50–1,53 | 1,59–1,97 | 1,19 |
 | 2024/25 | PL | 38 | 1,11 | −0,29 (−0,38 / −0,19) | 24 % (24 %) | 1,16–1,42 | 1,50–1,60 | 1,39 |
 | 2025/26 | PL | 38 | 1,87 | +0,35 (+0,40 / +0,30) | 29 % (24 %) | 1,82–1,32 | 1,90–1,32 | 1,68 |
-| 2026/27 | PL | 5 | 1,00 | −0,58 (−0,25 / −0,80) | 40 % (22 %) | 1,60–1,60 | 2,23–1,36* | 1,86 |
+| 2026/27 | PL | 5 | 1,00 | −0,58 (−0,25 / −0,80) | 40 % (22 %) | 1,60–1,60 | 2,12–1,44 | 1,63 |
 
-\* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+## Nyckelspelare (Understat, 2024/25–)
+
+Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
+
+| Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
+|---|---|---|---|---|
+| Bruno Fernandes | 21 % | 3 / 78 | 1,67 / 1,45 | +0,21 / −0,01 |
+| Bryan Mbeumo | 15 % | 5 / 76 | 1,20 / 1,47 | −0,17 / +0,00 |
+| Matheus Cunha | 9 % | 2 / 79 | 1,50 / 1,46 | −0,06 / −0,00 |
+| Marcus Rashford | 9 % | 0 / 81 | – / 1,46 | – / −0,01 |
+| Benjamin Sesko | 7 % | 5 / 76 | 2,00 / 1,42 | +0,22 / −0,02 |
+| Amad Diallo Traore | 6 % | 10 / 71 | 1,40 / 1,46 | +0,03 / −0,01 |
+
+Ligans test av frånvaro mot marknaden: svag signal (inte bekräftad). Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -87,3 +102,46 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-09-14 | Europa 2505 | Manchester City - Manchester United | 1 | 19 % | 21 % |
 | 2025-08-24 | Europa 2499 | Fulham - Manchester United | X | 59 % | 43 % |
 | 2025-08-17 | Europa 2497 | Manchester United - Arsenal | 2 | 20 % | 25 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Michael Carrick. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Tom Heaton (skadad, åter Late September 2026), Matthijs de Ligt (skadad, åter Mid October 2026), Bruno Fernandes (skadad, åter Mid October 2026), Manuel Ugarte (skadad, åter Early April 2027), Kobbie Mainoo (skadad, åter Mid October 2026), Marcus Rashford (skadad, åter Mid October 2026), Patrick Dorgu (skadad, åter Mid October 2026), Amad Diallo (skadad, åter Mid October 2026), Benjamin Šeško (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Senne Lammens | GK | 24 | Belgium | 15,6 M€ | 6,99 | 0 | 0 | 0/0 |  |
+| 12 | Karl Darlow | GK | 35 | Wales | 929 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Tom Heaton | GK | 40 | England | 595 k€ | – | 0 | 0 | 0/0 | skadad, åter Late September 2026 |
+| 45 | Dermot Mee | GK | 23 | Northern Ireland | 342 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Diogo Dalot | RB,LWB,RWB,LB | 27 | Portugal | 27,4 M€ | 7,04 | 0 | 0 | 1/0 |  |
+| 3 | Noussair Mazraoui | LB,RB,CB,RWB | 28 | Morocco | 17,2 M€ | 6,40 | 0 | 0 | 0/0 |  |
+| 4 | Matthijs de Ligt | CB | 27 | Netherlands | 39,9 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 5 | Harry Maguire | CB | 33 | England | 6,8 M€ | 7,05 | 0 | 0 | 2/0 |  |
+| 6 | Lisandro Martínez | CB | 28 | Argentina | 29,8 M€ | 6,33 | 0 | 0 | 0/0 |  |
+| 15 | Leny Yoro | CB,RB | 20 | France | 58,1 M€ | 6,33 | 0 | 0 | 0/0 |  |
+| 23 | Luke Shaw | LB,CB | 31 | England | 9,8 M€ | 7,08 | 0 | 1 | 1/0 |  |
+| 26 | Ayden Heaven | CB | 20 | England | 17,6 M€ | 5,95 | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 7 | Mason Mount | CAM,CDM | 27 | England | 27,0 M€ | 6,05 | 0 | 0 | 0/0 |  |
+| 8 | Bruno Fernandes | CAM,CDM | 32 | Portugal | 30,2 M€ | 7,78 | 3 | 1 | 0/0 | skadad, åter Mid October 2026 |
+| 17 | Andrey Santos | CDM,CM | 22 | Brazil | 40,0 M€ | 6,62 | 0 | 0 | 0/0 |  |
+| 18 | Youri Tielemans | CDM,CAM | 29 | Belgium | 28,5 M€ | 7,29 | 0 | 0 | 0/0 |  |
+| 20 | Carlos Baleba | CDM,CM | 22 | Cameroon | 48,1 M€ | – | 0 | 0 | 0/0 |  |
+| 25 | Manuel Ugarte | CDM,CM | 25 | Uruguay | 30,6 M€ | – | 0 | 0 | 0/0 | skadad, åter Early April 2027 |
+| 37 | Kobbie Mainoo | CDM | 21 | England | 52,9 M€ | 7,65 | 0 | 1 | 0/0 | skadad, åter Mid October 2026 |
+| 38 | Jack Fletcher | CAM,CDM,CM,LB,ST | 19 | England | 394 k€ | – | 0 | 0 | 0/0 |  |
+| 39 | Tyler Fletcher | CDM,CM,CAM | 19 | Scotland | 144 k€ | – | 0 | 0 | 0/0 |  |
+| 41 | Harry Amass | LM,LWB,LB | 19 | England | 5,3 M€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Marcus Rashford | LW,RW,ST | 28 | England | 28,1 M€ | 7,29 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 10 | Matheus Cunha | ST,LW,CAM | 27 | Brazil | 52,6 M€ | 7,06 | 1 | 1 | 0/0 |  |
+| 11 | Joshua Zirkzee | ST | 25 | Netherlands | 20,5 M€ | 6,08 | 0 | 0 | 0/0 |  |
+| 13 | Patrick Dorgu | LW,LB,LWB,RW | 21 | Denmark | 38,2 M€ | 6,51 | 0 | 1 | 1/0 | skadad, åter Mid October 2026 |
+| 16 | Amad Diallo | RW,RWB,CAM | 24 | Ivory Coast | 43,9 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 19 | Bryan Mbeumo | RW,CAM,ST | 27 | Cameroon | 66,0 M€ | 7,42 | 2 | 0 | 1/0 |  |
+| 30 | Benjamin Šeško | ST | 23 | Slovenia | 56,2 M€ | 6,31 | 1 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 31 | Shea Lacey | RW,CAM | 19 | England | 728 k€ | 6,11 | 0 | 0 | 0/0 |  |

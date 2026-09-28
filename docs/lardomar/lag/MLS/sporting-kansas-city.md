@@ -72,3 +72,42 @@ Form (äldst → senast): FFOFFFVF · senaste match 2026-09-20
 | Charlotte | 1 | 1-0-0 | 2–1 | +1,61 | −26 pe | 2025-06-26 2-1 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Raphael Wicky. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Or Blorian (skadad, åter Mid October 2026), Jacob Davis (skadad, åter Late October 2026), Capita (skadad, åter Late October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | John Pulskamp | GK | 25 | USA | 208 k€ | 6,06 | 0 | 0 | 0/0 |  |
+| 12 | Jack Kortkamp | GK | 18 | USA | – | – | 0 | 0 | 0/0 |  |
+| 30 | Stefan Cleveland | GK | 32 | USA | 60 k€ | 6,44 | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Ian James | CB,RB | 18 | USA | 1,2 M€ | 6,26 | 0 | 0 | 0/0 |  |
+| 3 | Moisés Mosquera | CB | 25 | Colombia | 1,7 M€ | 6,45 | 0 | 0 | 3/1 |  |
+| 5 | Or Blorian | CB | 26 | Israel | 1,3 M€ | 6,20 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 8 | Jacob Davis | RB,RWB | 24 | USA | 1,2 M€ | 6,62 | 0 | 2 | 3/0 | skadad, åter Late October 2026 |
+| 13 | Justin Reynolds | RB | 22 | USA | 364 k€ | 6,76 | 0 | 2 | 1/0 |  |
+| 15 | Jansen Miller | CB | 24 | USA | 330 k€ | 6,23 | 0 | 0 | 3/0 |  |
+| 18 | Emir Karić | LB,LM | 29 | Bosnia and Herzegovina | 728 k€ | 6,78 | 0 | 2 | 2/0 |  |
+| 28 | Wyatt Meyer | CB | 24 | USA | 225 k€ | 6,56 | 1 | 0 | 1/0 |  |
+| 57 | Diego Borges | CB | 21 | Brazil | – | 6,09 | 0 | 0 | 1/0 |  |
+| 99 | Jayden Reid | LB | 25 | USA | 245 k€ | 6,57 | 0 | 0 | 1/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 4 | Lasse Berg Johnsen | CM,CDM | 27 | Norway | 1,8 M€ | 6,82 | 1 | 1 | 4/1 |  |
+| 16 | Jacob Bartlett | CM,CDM | 20 | USA | 1,5 M€ | 6,49 | 2 | 0 | 2/0 |  |
+| 20 | Kwaku Agyabeng | CM | 20 | Ghana | 320 k€ | 6,56 | 0 | 0 | 2/1 |  |
+| 22 | Zorhan Bassong | CM,CDM | 27 | Canada | 692 k€ | 6,49 | 0 | 0 | 5/0 |  |
+| 93 | Magomed-Shapi Suleymanov | RM,LW,CAM,LM,ST | 26 | Russia | 1,3 M€ | 6,60 | 1 | 1 | 2/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Capita | LW,RM,RW,LM | 24 | Angola | 1,5 M€ | 6,77 | 2 | 1 | 4/0 | skadad, åter Late October 2026 |
+| 11 | André Luiz | RW,RM | 24 | Brazil | 2,5 M€ | 7,46 | 4 | 1 | 1/0 |  |
+| 14 | Calvin Harris | LM,LW,RW | 26 | England | 327 k€ | 6,78 | 4 | 4 | 3/0 |  |
+| 17 | Stephen Afrifa | ST | 25 | Canada | 217 k€ | 6,56 | 3 | 2 | 2/0 |  |
+| 19 | Taylor Calheira | ST | 24 | USA | – | 6,80 | 3 | 1 | 2/0 |  |
+| 24 | Rubén Ramos | CAM,LW,ST | 19 | USA | 737 k€ | 6,55 | 1 | 0 | 1/0 |  |
+| 29 | Seymour Reid | ST | 18 | Jamaica | 1,3 M€ | 5,94 | 0 | 0 | 0/0 |  |
+| 33 | Owen Wolff | LW,LM,CM | 21 | USA | 2,4 M€ | 6,40 | 0 | 0 | 0/0 |  |

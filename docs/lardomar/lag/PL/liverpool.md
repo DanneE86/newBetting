@@ -6,6 +6,7 @@ Genererad 2026-09-28. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden"
 
 - 2025/26: −0,32 poäng per match mot marknaden. Ligan visar ingen persistens, så räkna inte med att det fortsätter.
 - Stark historik mot Nott'm Forest (−0,67 p/match mot marknaden, 9 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Utan Cody Gakpo (12 % av anfallet): 2,50 poäng per match mot 1,86 med (4 mot 77 matcher), mot marknaden +0,67 mot −0,14.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -13,8 +14,8 @@ Form (äldst → senast): OFOOOVOV · senaste match 2026-09-20
 
 | Mått | Värde |
 |---|---|
-| Tur (poäng − xP per match) | −0,19 |
-| xG-målskillnad − målskillnad | +0,20 |
+| Tur (poäng − xP per match) | −0,15 |
+| xG-målskillnad − målskillnad | +0,11 |
 | Poäng mot marknaden per match | −0,43 |
 
 ## Säsonger
@@ -30,9 +31,22 @@ Form (äldst → senast): OFOOOVOV · senaste match 2026-09-20
 | 2023/24 | PL | 38 | 2,16 | +0,17 (+0,26 / +0,08) | 26 % (18 %) | 2,26–1,08 | 2,49–1,25 | 1,96 |
 | 2024/25 | PL | 38 | 2,21 | +0,12 (+0,10 / +0,14) | 24 % (19 %) | 2,26–1,08 | 2,45–1,11 | 2,07 |
 | 2025/26 | PL | 38 | 1,58 | −0,32 (−0,15 / −0,48) | 24 % (23 %) | 1,66–1,39 | 1,77–1,42 | 1,61 |
-| 2026/27 | PL | 5 | 1,80 | −0,05 (−1,11 / +0,67) | 60 % (23 %) | 1,40–0,80 | 1,67–1,26* | 1,62 |
+| 2026/27 | PL | 5 | 1,80 | −0,05 (−1,11 / +0,67) | 60 % (23 %) | 1,40–0,80 | 1,65–1,39 | 1,56 |
 
-\* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+## Nyckelspelare (Understat, 2024/25–)
+
+Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
+
+| Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
+|---|---|---|---|---|
+| Dominik Szoboszlai | 13 % | 2 / 79 | 2,00 / 1,89 | −0,38 / −0,09 |
+| Cody Gakpo | 12 % | 4 / 77 | 2,50 / 1,86 | +0,67 / −0,14 |
+| Florian Wirtz | 10 % | 3 / 78 | 2,00 / 1,88 | −0,20 / −0,09 |
+| Mohamed Salah | 8 % | 8 / 73 | 1,38 / 1,95 | −0,29 / −0,08 |
+| Hugo Ekitike | 8 % | 2 / 79 | 1,00 / 1,91 | +0,49 / −0,11 |
+| Alexander Isak | 8 % | 4 / 77 | 1,50 / 1,91 | −0,35 / −0,08 |
+
+Ligans test av frånvaro mot marknaden: svag signal (inte bekräftad). Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -95,3 +109,44 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-10-19 | Europa 2515 | Liverpool - Manchester United | 2 | 70 % | 60 % |
 | 2025-09-14 | Europa 2505 | Burnley - Liverpool | 2 ✓ | 83 % | 70 % |
 | 2025-08-31 | Europa 2501 | Liverpool - Arsenal | 1 ✓ | 41 % | 41 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Andoni Iraola. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Conor Bradley (skadad, åter Early January 2027), Giovanni Leoni (skadad, åter Mid October 2026), Alexander Isak (skadad, åter Mid October 2026), Federico Chiesa (skadad, åter Mid October 2026), Cody Gakpo (skadad, åter About 1-2 weeks), Hugo Ekitiké (skadad, åter Early January 2027)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Alisson Becker | GK | 33 | Brazil | 12,0 M€ | 7,15 | 0 | 0 | 1/0 |  |
+| 25 | Giorgi Mamardashvili | GK | 25 | Georgia | 25,0 M€ | – | 0 | 0 | 0/0 |  |
+| 28 | Freddie Woodman | GK | 29 | England | 2,3 M€ | – | 0 | 0 | 0/0 |  |
+| 56 | Vítezslav Jaroš | GK | 25 | Czechia | 2,5 M€ | – | 0 | 0 | 0/0 |  |
+| 95 | Harvey Davies | GK | 23 | England | 537 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Joseph Gomez | CB,RB | 29 | England | 11,5 M€ | – | 0 | 0 | 0/0 |  |
+| 3 | Wataru Endo | CDM,CB | 33 | Japan | 2,8 M€ | – | 0 | 0 | 0/0 |  |
+| 4 | Virgil van Dijk | CB | 35 | Netherlands | 4,9 M€ | 7,52 | 0 | 0 | 1/0 |  |
+| 5 | Jérémy Jacquet | CB | 21 | France | 25,5 M€ | 7,66 | 0 | 0 | 1/0 |  |
+| 6 | Miloš Kerkez | LB | 22 | Hungary | 49,7 M€ | 6,76 | 0 | 0 | 2/0 |  |
+| 12 | Conor Bradley | RB,RM | 23 | Northern Ireland | 28,3 M€ | – | 0 | 0 | 0/0 | skadad, åter Early January 2027 |
+| 15 | Giovanni Leoni | CB | 19 | Italy | 24,7 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 30 | Jeremie Frimpong | RB,RW | 25 | Netherlands | 35,3 M€ | 6,93 | 0 | 0 | 1/0 |  |
+| 33 | Ronald Araujo | CB,RB | 27 | Uruguay | 22,8 M€ | 7,03 | 0 | 0 | 1/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 8 | Dominik Szoboszlai | CDM,CAM,RW,CM,RB,LW | 25 | Hungary | 84,1 M€ | 7,38 | 1 | 0 | 1/0 |  |
+| 10 | Alexis Mac Allister | CDM,CAM,CM | 27 | Argentina | 68,8 M€ | 7,06 | 0 | 0 | 1/0 |  |
+| 21 | Konstantinos Tsimikas | LB,LWB,LM | 30 | Greece | 8,5 M€ | 6,27 | 0 | 0 | 0/0 |  |
+| 38 | Ryan Gravenberch | CDM,CM | 24 | Netherlands | 76,8 M€ | 6,68 | 0 | 1 | 0/0 |  |
+| 42 | Trey Nyoni | CDM,CM | 19 | England | 7,2 M€ | 6,35 | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Florian Wirtz | LW,CAM,ST | 23 | Germany | 93,6 M€ | 7,40 | 0 | 1 | 1/0 |  |
+| 9 | Alexander Isak | ST | 27 | Sweden | 78,8 M€ | 7,39 | 4 | 0 | 1/0 | skadad, åter Mid October 2026 |
+| 14 | Federico Chiesa | ST,RW | 28 | Italy | 12,7 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 18 | Cody Gakpo | LW,ST,LM,RW | 27 | Netherlands | 50,4 M€ | 7,68 | 1 | 3 | 0/0 | skadad, åter About 1-2 weeks |
+| 22 | Hugo Ekitiké | ST,LW | 24 | France | 79,1 M€ | – | 0 | 0 | 0/0 | skadad, åter Early January 2027 |
+| 23 | Víctor Muñoz | LW,RW,CAM,LM | 23 | Spain | 24,5 M€ | 6,87 | 1 | 0 | 1/0 |  |
+| 29 | Bradley Barcola | LW,RW,ST | 24 | France | 74,0 M€ | 6,56 | 0 | 0 | 0/0 |  |
+| 67 | Lewis Koumas | LW,ST,RW,CAM | 21 | Wales | 2,2 M€ | 6,27 | 0 | 0 | 0/0 |  |
+| 73 | Rio Ngumoha | LW,RW | 18 | England | 21,8 M€ | 6,22 | 0 | 0 | 0/0 |  |

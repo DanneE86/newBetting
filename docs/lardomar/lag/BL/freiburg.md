@@ -4,7 +4,7 @@ Genererad 2026-09-28. Ligans lärdomar: [BL](../../ligor/BL.md). "Mot marknaden"
 
 ## I korthet
 
-- Senaste 8: xG-målskillnaden är −0,65 per match sämre än målskillnaden.
+- Senaste 8: xG-målskillnaden är −0,70 per match sämre än målskillnaden.
 - Stark historik mot M'gladbach (+0,57 p/match mot marknaden, 17 möten), Hoffenheim (+0,56 p/match mot marknaden, 15 möten), Union Berlin (−0,64 p/match mot marknaden, 14 möten), Stuttgart (+0,70 p/match mot marknaden, 13 möten), Schalke 04 (+0,90 p/match mot marknaden, 7 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
 
 ## Nuläge (senaste 8 ligamatcher)
@@ -13,8 +13,8 @@ Form (äldst → senast): FOFVVVVO · senaste match 2026-09-19
 
 | Mått | Värde |
 |---|---|
-| Tur (poäng − xP per match) | +0,20 |
-| xG-målskillnad − målskillnad | −0,65 |
+| Tur (poäng − xP per match) | +0,22 |
+| xG-målskillnad − målskillnad | −0,70 |
 | Poäng mot marknaden per match | +0,25 |
 
 ## Säsonger
@@ -30,9 +30,22 @@ Form (äldst → senast): FOFVVVVO · senaste match 2026-09-19
 | 2023/24 | BL | 34 | 1,24 | −0,10 (−0,18 / −0,02) | 26 % (25 %) | 1,32–1,71 | 1,54–1,72 | 1,31 |
 | 2024/25 | BL | 34 | 1,62 | +0,26 (+0,17 / +0,36) | 21 % (25 %) | 1,44–1,56 | 1,60–1,41 | 1,50 |
 | 2025/26 | BL | 34 | 1,38 | −0,01 (+0,33 / −0,34) | 24 % (26 %) | 1,50–1,68 | 1,47–1,58 | 1,32 |
-| 2026/27 | BL | 4 | 2,50 | +0,92 (+1,12 / +0,71) | 25 % (24 %) | 3,00–0,75 | 2,16–0,92* | 2,13 |
+| 2026/27 | BL | 4 | 2,50 | +0,92 (+1,12 / +0,71) | 25 % (24 %) | 3,00–0,75 | 2,16–1,01 | 2,10 |
 
-\* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+## Nyckelspelare (Understat, 2024/25–)
+
+Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
+
+| Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
+|---|---|---|---|---|
+| Igor Matanovic | 13 % | 0 / 72 | – / 1,56 | – / +0,17 |
+| Yuito Suzuki | 10 % | 5 / 67 | 2,20 / 1,51 | +0,91 / +0,12 |
+| Jan-Niklas Beste | 9 % | 2 / 70 | 2,00 / 1,54 | +0,72 / +0,16 |
+| Vincenzo Grifo | 7 % | 0 / 72 | – / 1,56 | – / +0,17 |
+| Derry Scherhant | 7 % | 0 / 72 | – / 1,56 | – / +0,17 |
+| Yannick Engelhardt | 7 % | 0 / 72 | – / 1,56 | – / +0,17 |
+
+Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -72,3 +85,43 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-01-14 | Europa 2540 | RB Leipzig - Freiburg | 1 | 16 % | 21 % |
 | 2025-12-14 | Europa 2531 | Freiburg - Dortmund | X | 22 % | 25 % |
 | 2025-10-19 | Europa 2515 | Freiburg - Frankfurt | X | 42 % | 38 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Julian Schuster. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Patrick Osterhage (skadad, åter About 1-2 weeks), Rihito Yamamoto (skadad, åter A few weeks), Florent Muslija (skadad, åter Late December 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Mio Backhaus | GK | 22 | Germany | 5,6 M€ | 6,59 | 0 | 0 | 1/0 |  |
+| 21 | Florian Müller | GK | 28 | Germany | – | – | 0 | 0 | 0/0 |  |
+| 24 | Jannik Huth | GK | 32 | Germany | 285 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 3 | Philipp Lienhart | CB | 30 | Austria | 4,9 M€ | 7,37 | 0 | 0 | 1/0 |  |
+| 5 | Anthony Jung | CB | 34 | Germany | 304 k€ | – | 0 | 0 | 0/0 |  |
+| 17 | Lukas Kübler | RB | 34 | Germany | 871 k€ | 6,61 | 0 | 0 | 0/0 |  |
+| 27 | Berkay Yılmaz | LB | 21 | Turkiye | 2,8 M€ | – | 0 | 0 | 0/0 |  |
+| 28 | Matthias Ginter | CB | 32 | Germany | 2,8 M€ | 8,09 | 0 | 3 | 0/0 |  |
+| 29 | Philipp Treu | RB,RW,LB | 25 | Germany | 6,9 M€ | 7,02 | 0 | 0 | 0/0 |  |
+| 30 | Christian Günter | LB | 33 | Germany | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 33 | Jordy Makengo | LB | 25 | DR Congo | 2,5 M€ | 7,60 | 0 | 2 | 0/0 |  |
+| 37 | Max Rosenfelder | CB | 23 | Germany | 2,7 M€ | 6,42 | 0 | 0 | 0/0 |  |
+| 43 | Bruno Ogbus | CB | 20 | Switzerland | 1,5 M€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Patrick Osterhage | CDM | 26 | Germany | 6,6 M€ | – | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
+| 8 | Maximilian Eggestein | CDM | 29 | Germany | 4,8 M€ | 7,64 | 2 | 0 | 0/0 |  |
+| 14 | Yuito Suzuki | CAM | 24 | Japan | 12,2 M€ | 8,05 | 4 | 0 | 1/0 |  |
+| 16 | Yannik Engelhardt | CDM,CM | 25 | Germany | 4,4 M€ | 7,28 | 2 | 0 | 1/0 |  |
+| 20 | Rihito Yamamoto | CDM,CM | 24 | Japan | 1,5 M€ | – | 0 | 0 | 0/0 | skadad, åter A few weeks |
+| 23 | Florent Muslija | CAM,LM,LW,CM | 28 | Kosovo | 1,2 M€ | – | 0 | 0 | 0/0 | skadad, åter Late December 2026 |
+| 39 | Rouven Tarnutzer | Midfielder | 19 | Germany | 732 k€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Derry Scherhant | LW,RW | 23 | Germany | 2,5 M€ | 7,57 | 1 | 2 | 0/0 |  |
+| 9 | Lucas Höler | ST,CAM | 32 | Germany | 2,0 M€ | 6,22 | 0 | 0 | 1/0 |  |
+| 19 | Jan-Niklas Beste | RW | 27 | Germany | 5,3 M€ | 7,22 | 0 | 1 | 0/0 |  |
+| 22 | Cyriaque Irié | RW | 21 | Burkina Faso | 5,4 M€ | 6,57 | 0 | 0 | 1/0 |  |
+| 31 | Igor Matanović | ST | 23 | Croatia | 9,1 M€ | 8,08 | 3 | 1 | 0/0 |  |
+| 32 | Vincenzo Grifo | LW | 33 | Italy | 2,1 M€ | 6,49 | 0 | 0 | 0/0 |  |
+| 42 | Keisuke Goto | ST | 21 | Japan | 2,5 M€ | 6,29 | 0 | 0 | 1/0 |  |

@@ -38,6 +38,14 @@ Underlag: 3006 matcher, säsong 2012/13 – 2026/27. Marknad = stängningsodds u
 | 65–75 % | 229 | 69,9 % | 69,0 % | +0,8 pe (0,3) | ingen effekt |
 | 75–100 % | 49 | 85,7 % | 77,3 % | +8,4 pe (1,7) | ingen effekt |
 
+## Kalibrering av oddsen (justeringsmodellen)
+
+g > 0 = favoriter vinner oftare än oddsen säger (skrällar överprissatta), h < 0 = hemmalag överprissatta, d > 0 = kryss underprissatta. Parametrarna är tränade före 2023/24. Kontroll = logloss-skillnad 2023/24– (negativ = bättre). Live används parametrar refittade på all data.
+
+| Bas | g (favoriter) | h (hemma) | d (kryss) | Kontroll | Används live |
+|---|---|---|---|---|---|
+| stängningsodds (sen körning, Stryktipset/Europatipset) | +0,067 | +0,019 | +0,038 | −0,0007 (z −0,7, n 631) | nej |
+
 ## Signaler mot marknaden
 
 Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (|z| ≥ 2,5 i träning och ≥ 2 i kontroll krävs). "Oddsrörelse" visar om signalen förutsäger hur oddsen rör sig från öppning till stängning, alltså om marknaden lär sig det före avspark.
@@ -49,6 +57,7 @@ Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (
 | Inbördes möten, poängskillnad | +0,068 (z 3,2, n 2488) | +0,060 (z 2,5, n 1913) | +0,092 (z 2,1, n 575) | – | – | +0,202 p | **bekräftad** |
 | Inbördes möten, kryss mot förväntat | −0,015 (z −0,3, n 2488) | +0,004 (z 0,1, n 1913) | −0,105 (z −0,8, n 575) | – | – | −0,005 p | ingen effekt |
 | Vilodagar (hemma − borta, ligamatcher) | −0,030 (z −1,8, n 2807) | −0,028 (z −1,5, n 2219) | −0,037 (z −1,1, n 588) | – | – | −0,121 p | ingen effekt |
+| Bolagssnitt mot Pinnacle vid stängning | −1,832 (z −2,3, n 2834) | −2,144 (z −2,4, n 2371) | +0,050 (z 0,0, n 463) | – | – | −0,126 p | ingen effekt |
 
 ## Situationer
 
@@ -85,6 +94,25 @@ Källa: backtesten i `data/stryktips-backtest-2526-steg3.json`, `data/stryktips-
 - Folket överstreckar favoriter (×1,13). Utdelningsgränsen fångar det redan, men garderingar mot favoriter i ligan ger mer i utdelning.
 - Folket streckar kryss 1,9 procentenheter under vår procent. Kryss ger streckvärde.
 - Bara 9 matcher: se det som indikation, inte regel.
+
+## Tabell nu (FotMob, 2026-09-28)
+
+| # | Lag | M | V | O | F | Mål | +/− | P |
+|---|---|---|---|---|---|---|---|---|
+| 1 | FC Copenhagen | 9 | 8 | 0 | 1 | 23-8 | 15 | 24 |
+| 2 | Midtjylland | 9 | 5 | 4 | 0 | 17-9 | 8 | 19 |
+| 3 | Viborg | 9 | 5 | 2 | 2 | 15-8 | 7 | 17 |
+| 4 | Nordsjaelland | 9 | 5 | 2 | 2 | 14-10 | 4 | 17 |
+| 5 | Brondby | 9 | 4 | 1 | 4 | 12-15 | -3 | 13 |
+| 6 | Horsens | 9 | 3 | 2 | 4 | 15-16 | -1 | 11 |
+| 7 | Silkeborg | 9 | 2 | 4 | 3 | 12-12 | 0 | 10 |
+| 8 | Randers FC | 9 | 3 | 1 | 5 | 11-14 | -3 | 10 |
+| 9 | Odense | 9 | 2 | 3 | 4 | 8-14 | -6 | 9 |
+| 10 | Lyngby | 9 | 1 | 4 | 4 | 10-16 | -6 | 7 |
+| 11 | Aarhus | 9 | 0 | 5 | 4 | 11-17 | -6 | 5 |
+| 12 | Sonderjyske | 9 | 1 | 2 | 6 | 12-21 | -9 | 5 |
+
+Tabellhistorik (en rad per lag och dag sedan 2026-09-28): `data/ligor/DK.json`.
 
 ## Lagfiler
 

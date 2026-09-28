@@ -176,7 +176,9 @@ for (const base of ['open', 'close']) {
     if (e.dLL < bestV) { bestV = e.dLL; lambdaL = lam; }
   }
   const calibValid = evaluate(valid, fit(fitPart, [], [], true, lambdaL, 100));
-  const goodLeagues = Object.entries(calibValid.byLeague).filter(([, v]) => v.dLL < 0).map(([l]) => l);
+  // Liga med om kalibreringen var klart battre pa valideringen (z <= -1). Andrat 2026-09-28 fran "dLL < 0",
+  // som tog med brusligor (PL blev samre i kontrollen) - se docs/lardomar/README.md
+  const goodLeagues = Object.entries(calibValid.byLeague).filter(([, v]) => v.z <= -1).map(([l]) => l);
   // 1b. Signaler en i taget pa valideringen
   const single = {};
   for (const k of [...keys, ...dkeys]) {
@@ -205,13 +207,17 @@ for (const base of ['open', 'close']) {
   const res = {};
   for (const [name, P] of Object.entries(variants)) {
     const e = P ? evaluate(test, P) : null;
-    const trainBets = betSim(train, P);
-    const testBets = betSim(test, P);
-    const testAvg = betSim(test, P, 'avgOpenOdds');
+    // Priser fran samma tidpunkt som basen (annars vet simuleringen framtiden)
+    const price = base === 'open' ? 'bestOpen' : 'bestClose';
+    const trainBets = betSim(train, P, price);
+    const testBets = betSim(test, P, price);
+    const testAvg = base === 'open' ? betSim(test, P, 'avgOpenOdds') : { bets: null };
     res[name] = { test: e, bets: { train: trainBets, test: testBets, testAvgOdds: testAvg }, params: P };
     console.log(`  ${name.padEnd(28)} kontroll ${e ? `dLL ${e.dLL} (z ${e.z})` : 'bas'} | Oddset-sim kontroll: ${testBets.bets} spel, ROI ${testBets.roi} ± ${testBets.roiSe}, CLV ${testBets.clv} ${JSON.stringify(testBets.byKind)} | träning ROI ${trainBets.roi} ± ${trainBets.roiSe} (${trainBets.bets}) | snittodds kontroll: ${testAvg.bets} spel ROI ${testAvg.roi} ± ${testAvg.roiSe} ${JSON.stringify(testAvg.byKind)}`);
   }
-  const chosen = res['valt på validering'];
+  // Slutregel (bestamd 2026-09-28 efter att ligaurval visade sig skort, se README): kalibrera ALLA ligor
+  // med straffet fran valideringen, inga signaler (ingen signal forbattrade kontrollen for sig).
+  const chosen = res['ligakalibrering (alla ligor)'];
   report.bases[base] = {
     n: { fit: fitPart.length, valid: valid.length, test: test.length }, lambdaL, goodLeagues, goodSignals: [...goodKeys, ...goodD],
     calibValid: strip(calibValid), single,
@@ -219,12 +225,12 @@ for (const base of ['open', 'close']) {
   };
   // 3. Refit pa all data om valet forbattrade kontrollen
   if (chosen.test.z <= -2) {
-    const scAll = scaleOf(rows, [...goodKeys, ...goodD]);
+    const scAll = {};
     const allRows = prep(rows, base, scAll);
-    const P = fit(allRows, goodKeys, goodD, true, lambdaL, 100);
-    for (const l of Object.keys(P.leagues)) if (!goodLeagues.includes(l)) delete P.leagues[l];
+    const P = fit(allRows, [], [], true, lambdaL, 100);
     final[base] = {
-      test: { dLL: chosen.test.dLL, z: chosen.test.z, n: chosen.test.n, bets: chosen.bets.test, betsBase: res.bas.bets.test },
+      rule: 'ligakalibrering, alla ligor, inga signaler',
+      test: { dLL: chosen.test.dLL, z: chosen.test.z, n: chosen.test.n, bets: chosen.bets.test, betsAvgOdds: chosen.bets.testAvgOdds, betsBase: res.bas.bets.test, betsBaseAvgOdds: res.bas.bets.testAvgOdds, byLeague: chosen.test.byLeague },
       beta: Object.fromEntries(Object.entries(P.beta).map(([k, v]) => [k, r4(v)])),
       drawBeta: Object.fromEntries(Object.entries(P.drawBeta).map(([k, v]) => [k, r4(v)])),
       scale: Object.fromEntries(Object.entries(scAll).map(([k, v]) => [k, { mean: r4(v.mean), sd: r4(v.sd) }])),

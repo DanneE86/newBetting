@@ -4,8 +4,8 @@ Genererad 2026-09-28. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden"
 
 ## I korthet
 
-- Senaste 8: otur med −0,60 poäng per match mot xP. Marknaden prisar redan in det i ligan (ingen bekräftad effekt), så det är inget spel i sig.
-- Senaste 8: xG-målskillnaden är +0,89 per match bättre än målskillnaden.
+- Senaste 8: otur med −0,67 poäng per match mot xP. Marknaden prisar redan in det i ligan (ingen bekräftad effekt), så det är inget spel i sig.
+- Senaste 8: xG-målskillnaden är +0,99 per match bättre än målskillnaden.
 - 2025/26: +0,26 poäng per match mot marknaden. Ligan visar ingen persistens, så räkna inte med att det fortsätter.
 - Stark historik mot Lecce (−0,59 p/match mot marknaden, 11 möten), Atalanta (−0,69 p/match mot marknaden, 6 möten), Torino (−0,61 p/match mot marknaden, 6 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
 
@@ -15,8 +15,8 @@ Form (äldst → senast): VFOFFOFV · senaste match 2026-09-18
 
 | Mått | Värde |
 |---|---|
-| Tur (poäng − xP per match) | −0,60 |
-| xG-målskillnad − målskillnad | +0,89 |
+| Tur (poäng − xP per match) | −0,67 |
+| xG-målskillnad − målskillnad | +0,99 |
 | Poäng mot marknaden per match | −0,42 |
 
 ## Säsonger
@@ -29,9 +29,24 @@ Form (äldst → senast): VFOFFOFV · senaste match 2026-09-18
 | 2023/24 | SA | 38 | 1,18 | +0,07 (−0,04 / +0,18) | 32 % (27 %) | 1,03–1,34 | 1,20–1,68 | 1,10 |
 | 2024/25 | SA | 38 | 0,47 | −0,43 (−0,58 / −0,28) | 24 % (26 %) | 0,74–1,82 | 0,85–1,72 | 0,86 |
 | 2025/26 | SB | 38 | 2,00 | +0,26 (+0,50 / +0,02) | 26 % (28 %) | 1,61–0,84 | 1,63–1,27* | 1,58 |
-| 2026/27 | SA | 5 | 0,80 | −0,27 (+0,21 / −0,59) | 20 % (27 %) | 1,60–2,40 | 1,81–1,47* | 1,58 |
+| 2026/27 | SA | 5 | 0,80 | −0,27 (+0,21 / −0,59) | 20 % (27 %) | 1,60–2,40 | 1,98–1,48 | 1,69 |
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+
+## Nyckelspelare (Understat, 2024/25–)
+
+Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
+
+| Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
+|---|---|---|---|---|
+| Gustavo Varela | 19 % | 0 / 43 | – / 0,51 | – / −0,41 |
+| Ricardo Mangas | 11 % | 0 / 43 | – / 0,51 | – / −0,41 |
+| Andrea Colpani | 9 % | 0 / 43 | – / 0,51 | – / −0,41 |
+| Samuele Birindelli | 8 % | 8 / 35 | 0,63 / 0,49 | −0,34 / −0,42 |
+| Eddy Kouadio | 7 % | 0 / 43 | – / 0,51 | – / −0,41 |
+| Michael Folorunsho | 6 % | 0 / 43 | – / 0,51 | – / −0,41 |
+
+Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -65,3 +80,47 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 |---|---|---|---|---|---|
 | 2026-09-13 | Europa 2607 | Lecce - Monza | 1 | 31 % | 35 % |
 | 2026-09-06 | Europa 2605 | Parma - Monza | X | 30 % | 34 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Ivan Jurić. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Jan Ziólkowski (skadad, åter Mid October 2026), Patrick Ciurria (osäker), Idrissa Touré (skadad, åter Early October 2026), Matteo Pessina (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Noel Törnqvist | GK | 24 | Sweden | 1,6 M€ | 7,80 | 0 | 0 | 0/0 |  |
+| 20 | Demba Thiam | GK | 28 | Senegal | 1,5 M€ | 5,61 | 0 | 0 | 0/0 |  |
+| 43 | Aljaž Strajnar | Keeper | 19 | Slovenia | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Saba Goglichidze | CB | 22 | Georgia | 3,9 M€ | – | 0 | 0 | 0/0 |  |
+| 3 | Lorenzo Lucchesi | CB | 23 | Italy | 1,7 M€ | 6,40 | 0 | 0 | 2/0 |  |
+| 4 | Jan Ziólkowski | CB | 21 | Poland | 11,0 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 5 | Yvan Kouadio Maye | CB | 20 | France | 454 k€ | – | 0 | 0 | 0/0 |  |
+| 6 | Valentin Antov | CB | 25 | Bulgaria | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 7 | Ricardo Mangas | LB,LWB | 28 | Portugal | 1,5 M€ | 7,02 | 1 | 2 | 0/0 |  |
+| 44 | Andrea Carboni | CB | 25 | Italy | 2,0 M€ | 6,35 | 0 | 0 | 0/0 |  |
+| 60 | Eddy Kouadio | CB | 20 | Italy | 2,4 M€ | 6,56 | 0 | 0 | 2/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 8 | Foe Ondoa | CM,CAM,CDM | 20 | France | 856 k€ | 6,31 | 0 | 0 | 0/0 |  |
+| 11 | Omari Forson | CAM | 22 | England | 1,2 M€ | 6,46 | 0 | 0 | 0/0 |  |
+| 14 | Ebenezer Akinsanmiro | CM,CDM | 21 | Nigeria | 6,7 M€ | 6,91 | 0 | 1 | 0/0 |  |
+| 17 | Keita Baldé | CAM,LW | 31 | Senegal | 501 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | Samuele Birindelli | RWB,CB,LWB,RM | 27 | Italy | 1,7 M€ | 7,01 | 0 | 2 | 1/0 |  |
+| 21 | Leonardo Colombo | CDM,CM | 21 | Italy | 1,5 M€ | 5,94 | 0 | 0 | 1/0 |  |
+| 24 | Adam Bakoune | RWB,RM | 20 | Italy | 1,0 M€ | 6,62 | 0 | 0 | 0/0 |  |
+| 26 | Patrick Ciurria | CAM,RM,RWB | 31 | Italy | 1,0 M€ | – | 0 | 0 | 0/0 | osäker |
+| 27 | Idrissa Touré | RM,RWB | 28 | Germany | 2,3 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 28 | Andrea Colpani | CAM,RW | 27 | Italy | 3,6 M€ | 6,84 | 1 | 0 | 0/0 |  |
+| 32 | Matteo Pessina | CDM,CM | 29 | Italy | 2,2 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 46 | Jay Robinson | CAM | 19 | England | 9,4 M€ | 6,81 | 1 | 0 | 0/0 |  |
+| 80 | Mathis Mout | CM,CDM | 19 | Italy | 537 k€ | 6,50 | 0 | 1 | 0/0 |  |
+| 90 | Michael Folorunsho | CM,CDM,ST | 28 | Italy | 2,8 M€ | 6,82 | 0 | 0 | 2/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Gustavo Varela | ST | 21 | Portugal | 1,3 M€ | 7,52 | 4 | 0 | 1/0 |  |
+| 10 | Patrick Cutrone | ST,CAM | 28 | Italy | 2,4 M€ | 6,56 | 0 | 0 | 0/0 |  |
+| 16 | Cyril Ngonge | RW,ST | 26 | Belgium | 3,6 M€ | – | 0 | 0 | 0/0 |  |
+| 22 | Exequiel Zeballos | LW,LM,ST | 24 | Argentina | 2,6 M€ | 6,97 | 1 | 0 | 0/0 |  |
+| 47 | Dany Mota | ST,CAM | 28 | Portugal | 1,6 M€ | 6,89 | 0 | 0 | 0/0 |  |
+| 70 | Kevin Martins | RWB | 21 | Italy | 787 k€ | – | 0 | 0 | 0/0 |  |

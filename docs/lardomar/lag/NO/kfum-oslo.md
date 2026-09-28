@@ -45,3 +45,45 @@ Form (äldst → senast): FVVOFFVV · senaste match 2026-09-18
 | Start | 2 | 1-0-1 | 3–4 | +0,17 | −27 pe | 2026-08-30 1-4 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Jørgen Isnes. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Ayoub Aleesami (skadad, åter Mid October 2026), Robin Rasch (skadad, åter Mid October 2026), Tore André Sørås (skadad, åter Early October 2026), Magnus Retsius Grødem (osäker)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Emil Ødegaard | GK | 27 | Norway | 239 k€ | 7,46 | 0 | 0 | 0/0 |  |
+| 25 | Håvar Jenssen | GK | 30 | Norway | 287 k€ | 6,35 | 0 | 0 | 0/0 |  |
+| 31 | Darian Weber Mink | Keeper | 19 | Norway | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Daniel Schneider | CB | 24 | Norway | 586 k€ | 6,75 | 1 | 0 | 4/1 |  |
+| 3 | Ayoub Aleesami | CB | 30 | Norway | 202 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 5 | Fredrik Tobias Berglie | CB | 29 | Norway | 325 k€ | 6,67 | 0 | 0 | 1/1 |  |
+| 6 | Jacob Blixt Flaten | LB,CM | 24 | Norway | 249 k€ | 6,07 | 0 | 0 | 1/1 |  |
+| 13 | Brage Skaret | CB | 24 | Norway | 435 k€ | 6,59 | 0 | 1 | 2/0 |  |
+| 19 | Eirik Saunes | CB,LB,CM | 28 | Norway | 349 k€ | 6,98 | 0 | 0 | 3/0 |  |
+| 24 | Håkon Røsten | CB | 21 | Norway | 773 k€ | 6,56 | 0 | 0 | 1/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 7 | Robin Rasch | CM,CDM | 32 | Norway | 325 k€ | 6,79 | 0 | 2 | 2/0 | skadad, åter Mid October 2026 |
+| 8 | Brage Tobiassen | CM | 20 | Norway | 631 k€ | 6,21 | 0 | 0 | 0/0 |  |
+| 11 | Ola Visted | CAM,RW | 21 | Norway | 832 k€ | 6,47 | 0 | 0 | 1/0 |  |
+| 14 | Håkon Hoseth | RM,RWB,LM | 27 | Norway | 352 k€ | 6,86 | 4 | 2 | 1/0 |  |
+| 16 | Jonas Lange Hjorth | LM,LWB | 25 | Norway | 388 k€ | 6,88 | 0 | 3 | 1/0 |  |
+| 20 | Mostafa Najafzadeh | Midfielder | 18 | Norway | – | – | 0 | 0 | 0/0 |  |
+| 21 | Sander Sjökvist | RM,LWB,RWB | 27 | Norway | 342 k€ | 6,50 | 0 | 1 | 1/1 |  |
+| 27 | Tore André Sørås | CM | 28 | Norway | 335 k€ | 6,90 | 0 | 0 | 2/0 | skadad, åter Early October 2026 |
+| 30 | Marko Vuckovic | Midfielder | 16 | Norway | – | – | 0 | 0 | 0/0 |  |
+| 33 | Amin Nouri | RM | 36 | Norway | 131 k€ | 6,35 | 0 | 0 | 0/0 |  |
+| 42 | David Hickson Gyedu | RW,CAM | 29 | Norway | 193 k€ | 6,38 | 0 | 1 | 2/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Promise Meliga | RW | 19 | Nigeria | 1,2 M€ | 6,87 | 3 | 0 | 2/0 |  |
+| 9 | Martin Tangen Vinjor | RW,CM,LW,ST,CDM | 26 | Norway | 295 k€ | 6,58 | 0 | 4 | 5/0 |  |
+| 10 | Bilal Njie | LW,ST,CAM | 28 | Somalia | 356 k€ | 6,90 | 5 | 1 | 1/0 |  |
+| 17 | Julian Bakkeli Gonstad | ST | 20 | Norway | 1,5 M€ | 6,08 | 1 | 0 | 0/0 |  |
+| 18 | Rasmus Eggen Vinge | RW,LW,ST | 25 | Norway | 523 k€ | 6,58 | 3 | 0 | 2/0 |  |
+| 22 | Bjørn Martin Kristensen | ST,LW,CAM | 24 | Philippines | 423 k€ | 6,34 | 2 | 1 | 2/0 |  |
+| 23 | Magnus Wolff Eikrem | ST | 36 | Norway | 361 k€ | 6,60 | 2 | 2 | 0/0 |  |
+| 28 | Magnus Retsius Grødem | ST,CAM | 28 | Norway | 402 k€ | 6,48 | 2 | 0 | 2/0 | osäker |

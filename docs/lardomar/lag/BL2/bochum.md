@@ -20,15 +20,15 @@ Form (äldst → senast): OVFVFVOF · senaste match 2026-09-20
 
 | Säsong | Liga | M | P/M | Mot marknaden (hemma / borta) | Kryss (odds) | Mål för–emot | xG för–emot | xP/M |
 |---|---|---|---|---|---|---|---|---|
-| 2017/18 | BL2 | 34 | 1,41 | −0,05 (+0,08 / −0,19) | 26 % (28 %) | 1,09–1,18 | 1,41–1,49* | 1,33 |
-| 2018/19 | BL2 | 34 | 1,29 | +0,04 (+0,27 / −0,19) | 32 % (27 %) | 1,44–1,47 | 1,47–1,71* | 1,25 |
-| 2019/20 | BL2 | 34 | 1,35 | +0,06 (+0,05 / +0,08) | 38 % (27 %) | 1,56–1,50 | 1,53–1,63* | 1,32 |
+| 2017/18 | BL2 | 34 | 1,41 | −0,05 (+0,08 / −0,19) | 26 % (28 %) | 1,09–1,18 | 1,41–1,50* | 1,33 |
+| 2018/19 | BL2 | 34 | 1,29 | +0,04 (+0,27 / −0,19) | 32 % (27 %) | 1,44–1,47 | 1,47–1,72* | 1,25 |
+| 2019/20 | BL2 | 34 | 1,35 | +0,06 (+0,05 / +0,08) | 38 % (27 %) | 1,56–1,50 | 1,53–1,64* | 1,32 |
 | 2020/21 | BL2 | 34 | 1,97 | +0,30 (+0,54 / +0,06) | 12 % (27 %) | 1,94–1,15 | 1,62–1,43* | 1,50 |
 | 2021/22 | BL | 34 | 1,24 | +0,24 (+0,50 / −0,01) | 18 % (24 %) | 1,12–1,53 | 1,32–1,71 | 1,27 |
 | 2022/23 | BL | 34 | 1,03 | +0,05 (+0,43 / −0,33) | 15 % (24 %) | 1,18–2,12 | 1,18–2,04 | 0,99 |
 | 2023/24 | BL | 34 | 0,97 | −0,12 (+0,05 / −0,29) | 35 % (24 %) | 1,24–2,18 | 1,51–2,06 | 1,17 |
 | 2024/25 | BL | 34 | 0,74 | −0,25 (−0,46 / −0,04) | 21 % (23 %) | 0,97–1,97 | 1,35–2,17 | 1,02 |
-| 2025/26 | BL2 | 34 | 1,29 | −0,05 (+0,11 / −0,21) | 32 % (26 %) | 1,44–1,38 | 1,55–1,53* | 1,41 |
+| 2025/26 | BL2 | 34 | 1,29 | −0,05 (+0,11 / −0,21) | 32 % (26 %) | 1,44–1,38 | 1,55–1,54* | 1,41 |
 | 2026/27 | BL2 | 6 | 1,17 | −0,41 (−1,38 / +0,55) | 17 % (26 %) | 0,83–1,00 | 1,81–1,42* | 1,61 |
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
@@ -55,3 +55,47 @@ Form (äldst → senast): OVFVFVOF · senaste match 2026-09-20
 | Kaiserslautern | 2 | 1-0-1 | 5–5 | +0,05 | −24 pe | 2026-03-07 3-2 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Uwe Rösler. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Philipp Strompf (skadad, åter Unknown), Jean Manuel Mbom (skadad, åter Late September 2026), Oliver Olsen (skadad, åter Unknown), Babis Drakas (skadad, åter Late September 2026), Enis Çokaj (skadad, åter Unknown)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Timo Horn | GK | 33 | Germany | 350 k€ | 6,85 | 0 | 0 | 0/0 |  |
+| 16 | Tino Casali | GK | 30 | Austria | 72 k€ | – | 0 | 0 | 0/0 |  |
+| 38 | Hugo Rölleke | Keeper | 21 | Germany | 201 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Mohammed Tolba | Defender | 22 | Germany | 124 k€ | – | 0 | 0 | 0/0 |  |
+| 2 | Sean Klaiber | RB | 32 | Suriname | 585 k€ | 7,00 | 0 | 0 | 1/0 |  |
+| 3 | Philipp Strompf | CB | 28 | Germany | 795 k€ | – | 0 | 0 | 0/0 | skadad, åter Unknown |
+| 4 | Yiğit Karademir | CB | 22 | Germany | 668 k€ | 6,08 | 0 | 0 | 0/0 |  |
+| 5 | Karol Mets | CB | 33 | Estonia | 480 k€ | 6,89 | 0 | 0 | 0/0 |  |
+| 8 | Jean Manuel Mbom | RB | 26 | Germany | 841 k€ | 5,93 | 0 | 0 | 0/0 | skadad, åter Late September 2026 |
+| 13 | Oliver Olsen | RB,LB,CB | 26 | Denmark | 1,1 M€ | 6,73 | 0 | 0 | 1/0 | skadad, åter Unknown |
+| 15 | Michael Steinwender | CB,RB | 26 | Austria | 861 k€ | 7,18 | 0 | 0 | 1/0 |  |
+| 27 | Babis Drakas | CAM | 23 | Germany | 190 k€ | – | 0 | 0 | 0/0 | skadad, åter Late September 2026 |
+| 31 | Leon Sawas | LB | 19 | Germany | – | – | 0 | 0 | 0/0 |  |
+| 32 | Maximilian Wittek | LB,LWB | 31 | Germany | 637 k€ | 7,50 | 0 | 1 | 2/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Moritz Göttlicher | CM | 18 | Germany | 517 k€ | – | 0 | 0 | 0/0 |  |
+| 6 | Enis Çokaj | CDM,CM | 27 | Albania | 737 k€ | 6,74 | 0 | 1 | 2/0 | skadad, åter Unknown |
+| 24 | Mats Pannewig | CDM,CM,CAM | 21 | Germany | 2,5 M€ | 6,96 | 0 | 0 | 3/1 |  |
+| 28 | Charlie Patino | CM,CDM | 22 | England | 942 k€ | 7,07 | 0 | 0 | 0/0 |  |
+| 31 | Marcel Sobottka | CM | 32 | Germany | 137 k€ | – | 0 | 0 | 0/0 |  |
+| 34 | Tom Meyer | CDM | 18 | Germany | 891 k€ | 7,11 | 1 | 1 | 2/0 |  |
+| 39 | Lasse Isbruch | Midfielder | 18 | Germany | – | 6,26 | 0 | 0 | 0/0 |  |
+| 40 | Aurel Wagbe | Midfielder | 22 | Germany | 127 k€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Christian Rasmussen | RW,ST | 23 | Denmark | 1,1 M€ | 6,75 | 0 | 0 | 0/0 |  |
+| 10 | Berkan Taz | ST,CAM,CM,LW | 27 | Germany | 315 k€ | 6,62 | 0 | 0 | 0/0 |  |
+| 14 | Jarne Steuckers | RW,CM,LW | 24 | Belgium | 6,1 M€ | 6,19 | 0 | 0 | 1/0 |  |
+| 17 | Gerrit Holtmann | LW,CAM | 31 | Philippines | 227 k€ | 6,52 | 0 | 0 | 1/0 |  |
+| 19 | Daniel Hanslik | ST | 29 | Germany | 645 k€ | 5,96 | 0 | 0 | 1/0 |  |
+| 23 | Koji Miyoshi | RW,CAM,RM | 29 | Japan | 805 k€ | 7,30 | 2 | 1 | 1/0 |  |
+| 29 | Mansour Ouro-Tagba | ST,LW | 21 | Togo | 553 k€ | – | 0 | 0 | 0/0 |  |
+| 33 | Philipp Hofmann | ST | 33 | Germany | 489 k€ | 6,98 | 2 | 0 | 2/0 |  |
+| 37 | Alessandro Crimaldi | LW | 19 | Italy | 869 k€ | 6,44 | 0 | 0 | 0/0 |  |

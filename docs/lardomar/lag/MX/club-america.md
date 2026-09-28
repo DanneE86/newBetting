@@ -59,3 +59,45 @@ Form (äldst → senast): VOVVVVFO · senaste match 2026-09-20
 | Atlante | 1 | 0-1-0 | 1–1 | −1,06 | +77 pe | 2026-07-25 1-1 (b) |
 
 Ligans test av inbördes möten mot marknaden: svag signal (inte bekräftad).
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Guillermo Almada. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Kevin Álvarez (osäker), Raúl Zúñiga (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Luis Malagón | GK | 29 | Mexico | 2,7 M€ | – | 0 | 0 | 0/0 |  |
+| 21 | Fernando Tapia | GK | 25 | Mexico | 1,4 M€ | – | 0 | 0 | 0/0 |  |
+| 30 | Rodolfo Cota | GK | 39 | Mexico | 355 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Santiago Bueno | CB | 27 | Uruguay | 10,5 M€ | – | 0 | 0 | 0/0 |  |
+|  | Santiago Ramos Mingo | CB | 24 | Argentina | 10,8 M€ | – | 0 | 0 | 0/0 |  |
+| 2 | Emilio Lara | CB,RB | 24 | Mexico | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 3 | Israel Reyes | CB,RB,CDM | 26 | Mexico | 2,8 M€ | – | 0 | 0 | 0/0 |  |
+| 5 | Kevin Álvarez | RB,LWB,LB | 27 | Mexico | 1,4 M€ | – | 0 | 0 | 0/0 | osäker |
+| 26 | Cristián Borja | LB,LWB,CB | 33 | Colombia | 926 k€ | – | 0 | 0 | 0/0 |  |
+| 29 | Ramón Juárez | CB | 25 | Mexico | 2,5 M€ | – | 0 | 0 | 0/0 |  |
+| 32 | Miguel Vázquez | CB | 22 | Mexico | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 34 | Dagoberto Espinoza | RB,LB | 22 | Mexico | 2,0 M€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Edwin Cerrillo | CDM,CM | 25 | USA | 2,0 M€ | – | 0 | 0 | 0/0 |  |
+| 8 | Carlos Álvarez | CAM,RM | 23 | Spain | 12,4 M€ | – | 0 | 0 | 0/0 |  |
+| 13 | Alan Cervantes | CDM,CM | 28 | Mexico | 2,7 M€ | – | 0 | 0 | 0/0 |  |
+| 20 | Alexis Gutiérrez | RW,CAM,CM,RM,LW | 26 | Mexico | 2,1 M€ | – | 0 | 0 | 0/0 |  |
+| 23 | Raphael Veiga | CAM,ST,CDM,RM,RW | 31 | Brazil | 4,9 M€ | – | 0 | 0 | 0/0 |  |
+| 24 | Franco Rossano | LWB,LW | 21 | Mexico | 1,8 M€ | – | 0 | 0 | 0/0 |  |
+| 28 | Érick Sánchez | CDM,CAM,CM,RWB,RW | 27 | Mexico | 3,8 M€ | – | 0 | 0 | 0/0 |  |
+| 217 | Ícaro | CDM | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Brian Rodríguez | LW,CAM,RW | 26 | Uruguay | 5,2 M€ | – | 0 | 0 | 0/0 |  |
+| 9 | Henry Martín | ST | 33 | Mexico | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 10 | Álex Zendejas | RW,CAM,LW | 28 | USA | 6,0 M€ | – | 0 | 0 | 0/0 |  |
+| 12 | Isaías Violante | RW,ST,LW | 22 | Mexico | 4,5 M€ | – | 0 | 0 | 0/0 |  |
+| 19 | Raúl Zúñiga | ST | 32 | Colombia | 1,1 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 22 | Óscar Perea | LW,LM,RW | 21 | Colombia | 2,1 M€ | – | 0 | 0 | 0/0 |  |
+| 93 | Miguel Borja | ST | 33 | Colombia | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 186 | Diego Arriaga | RW | 22 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| 189 | Alejandro Cárdenas | ST | 20 | Mexico | – | – | 0 | 0 | 0/0 |  |

@@ -61,3 +61,66 @@ Form (äldst → senast): FVOVFOFF · senaste match 2026-09-20
 | Ind. Rivadavia | 1 | 1-0-0 | 2–0 | +1,89 | −36 pe | 2024-08-23 2-0 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Martín Palermo. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Santiago Quirós (skadad, åter Early December 2026), Gonzalo Goñi (skadad, åter Mid October 2026), Héctor Bobadilla (skadad, åter Mid October 2026), Tomás Nasif (skadad, åter Mid January 2027), Luciano Giménez (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Brian Bustos | GK | 30 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 22 | Nicolás Sumavil | GK | 26 | Argentina | 302 k€ | – | 0 | 0 | 0/0 |  |
+| 30 | Juan Pablo Cozzani | GK | 27 | Argentina | 2,0 M€ | – | 0 | 0 | 0/0 |  |
+| 36 | Joaquín Giudice | Keeper | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 37 | Santino Cambiasso | Keeper | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 3 | Tomás Silva | LB | 23 | Argentina | 2,0 M€ | – | 0 | 0 | 0/0 |  |
+| 4 | Agustín Lagos | RB | 24 | Argentina | 630 k€ | – | 0 | 0 | 0/0 |  |
+| 6 | Eugenio Raggio | CB | 25 | Argentina | 790 k€ | – | 0 | 0 | 0/0 |  |
+| 8 | Fabricio López | RB | 23 | Argentina | 558 k€ | – | 0 | 0 | 0/0 |  |
+| 13 | Ignacio Vázquez | CB | 29 | Argentina | 1,7 M€ | – | 0 | 0 | 0/0 |  |
+| 25 | Juan Ignacio Saborido | RB | 28 | Argentina | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 30 | Lucas Testa | Defender | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 31 | Víctor Cuesta | CB | 37 | Argentina | 296 k€ | – | 0 | 0 | 0/0 |  |
+| 32 | Santiago Quirós | LB | 23 | Argentina | 648 k€ | – | 0 | 0 | 0/0 | skadad, åter Early December 2026 |
+| 34 | Mateo Mendía | CB | 22 | Argentina | 656 k€ | – | 0 | 0 | 0/0 |  |
+| 38 | Celías Ingenthron | LB | 18 | Argentina | 848 k€ | – | 0 | 0 | 0/0 |  |
+| 41 | Thiago Currado | Defender | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 42 | Gonzalo Goñi | CB | 28 | Argentina | 411 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 43 | Agustín Maglione | Defender | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 45 | Tomás Giménez | Defender | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 56 | Axel Guzmán | Defender | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Iván Gómez | CDM,CAM,CM | 29 | Argentina | 890 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Franco Zapiola | LW,CAM,CM,LM | 25 | Argentina | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 15 | Maximiliano Amarfil | CDM,CM | 25 | Argentina | 1,5 M€ | – | 0 | 0 | 0/0 |  |
+| 17 | Felipe Bussio | CDM | 22 | Argentina | 629 k€ | – | 0 | 0 | 0/0 |  |
+| 18 | Bautista Merlini | CAM,CM,CDM | 31 | Argentina | 254 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | Héctor Bobadilla | CAM | 25 | Paraguay | 327 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 24 | Martín Barrios | CDM,CM | 27 | Uruguay | 456 k€ | – | 0 | 0 | 0/0 |  |
+| 26 | Pablo Ferreira | CDM,CM | 21 | Argentina | 642 k€ | – | 0 | 0 | 0/0 |  |
+| 27 | Santiago Dalmasso | CM | 22 | Argentina | 585 k€ | – | 0 | 0 | 0/0 |  |
+| 29 | Franco Minerva | LW | 20 | Argentina | 864 k€ | – | 0 | 0 | 0/0 |  |
+| 35 | Demian Troya | Midfielder | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 43 | Nicolás Retamar | CAM,RW,LW,ST,CDM | 27 | Argentina | 689 k€ | – | 0 | 0 | 0/0 |  |
+| 48 | Agustín Funes | Midfielder | 22 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 49 | Santiago Bouhet | Midfielder | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 50 | Salvador Rixner | Midfielder | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Guido Mainero | RW,RM,CAM | 31 | Argentina | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 9 | Tomás Nasif | ST | 22 | Argentina | 838 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid January 2027 |
+| 11 | Nicolás López | CAM,ST | 32 | Uruguay | 651 k€ | – | 0 | 0 | 0/0 |  |
+| 16 | Gastón Togni | LW,LWB,LM,RW | 29 | Argentina | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 20 | Luciano Giménez | ST | 26 | Argentina | 517 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 21 | Augusto Lotti | ST | 30 | Argentina | 352 k€ | – | 0 | 0 | 0/0 |  |
+| 23 | Leonardo Heredia | ST,CAM | 30 | Argentina | 976 k€ | – | 0 | 0 | 0/0 |  |
+| 28 | Manuel Tucker | RM | 21 | Argentina | 430 k€ | – | 0 | 0 | 0/0 |  |
+| 33 | Juan Gauto | LW | 22 | Argentina | 1,4 M€ | – | 0 | 0 | 0/0 |  |
+| 52 | Matías Ramírez | Attacker | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 54 | Fausto San Pedro | Attacker | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 55 | Alejandro Vera | Attacker | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 79 | Bruno Sepúlveda | ST | 34 | Argentina | 301 k€ | – | 0 | 0 | 0/0 |  |
+| 99 | Gonzalo Lencina | ST | 28 | Argentina | 583 k€ | – | 0 | 0 | 0/0 |  |

@@ -38,3 +38,42 @@ Form (äldst → senast): VOVFOVFV · senaste match 2026-09-26
 | Swindon | 1 | 1-0-0 | 4–0 | +1,00 | −21 pe | 2026-09-12 4-0 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Scott Lindsey. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Alfie McNally | GK | 21 | England | – | 7,00 | 0 | 0 | 0/0 |  |
+| 31 | George Sykes-Kenworthy | GK | 26 | England | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Ryan Fallowfield | CB | 30 | England | – | 6,82 | 0 | 0 | 1/0 |  |
+| 3 | Mark Kitching | CB,LB | 31 | England | – | 6,98 | 0 | 0 | 1/0 |  |
+| 4 | Zech Medley | CB,LWB,LW | 26 | England | 152 k€ | – | 0 | 0 | 0/0 |  |
+| 5 | Zak Johnson | CB | 22 | England | 217 k€ | 7,06 | 0 | 0 | 0/0 |  |
+| 6 | Ashley Palmer | CB | 33 | England | 72 k€ | – | 0 | 0 | 0/0 |  |
+| 12 | Harry Boyes | LWB,LW,LM | 24 | England | 155 k€ | 7,89 | 2 | 6 | 0/0 |  |
+| 15 | Jeff King | RB,RM | 30 | England | – | 6,61 | 0 | 1 | 0/0 |  |
+| 24 | Morgan Williams | CB | 27 | England | – | 6,86 | 0 | 0 | 3/0 |  |
+| 32 | Jack Hunt | CB,RWB,RB | 35 | England | 88 k€ | 6,23 | 0 | 0 | 0/0 |  |
+| 33 | Charlie McArthur | CB,LB | 21 | Scotland | 253 k€ | 5,92 | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | George Grumley | Midfielder | 0 | England | – | – | 0 | 0 | 0/0 |  |
+| 7 | Joe Grey | RW,CAM,RM,ST | 23 | England | 179 k€ | 7,15 | 1 | 1 | 1/0 |  |
+| 8 | Alex Hunt | CM,CDM,CAM | 26 | Ireland | 243 k€ | 7,09 | 0 | 0 | 0/0 |  |
+| 11 | Frankie Maguire | CAM,ST | 23 | England | – | 5,61 | 0 | 0 | 0/0 |  |
+| 16 | Arthur Read | CDM,CM | 26 | England | 201 k€ | 6,04 | 0 | 0 | 0/0 |  |
+| 18 | Jovan Malcolm | CAM,ST | 23 | England | 251 k€ | 6,83 | 3 | 0 | 0/0 |  |
+| 21 | Hiram Boateng | CM,CDM | 30 | England | 77 k€ | – | 0 | 0 | 0/0 |  |
+| 23 | Joe Felix | RWB,RM,RB,RW | 26 | England | – | 6,83 | 0 | 1 | 0/0 |  |
+| 25 | Ben Farrar | Midfielder | 18 | England | – | – | 0 | 0 | 0/0 |  |
+| 26 | Ethan Stiver | CDM | 18 | England | – | – | 0 | 0 | 0/0 |  |
+| 30 | Alex Newby | CAM,LM,LW,CM | 30 | England | 192 k€ | 7,56 | 6 | 1 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Josh Stones | ST,LW | 22 | England | 515 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Ollie Pearce | LW,ST,CAM | 31 | England | – | 7,24 | 3 | 4 | 1/0 |  |
+| 17 | Craig Hewitt | Attacker | 23 | England | – | 5,92 | 0 | 0 | 0/0 |  |
+| 20 | Dipo Akinyemi | ST | 29 | England | 131 k€ | 6,45 | 0 | 0 | 0/0 |  |
+| 28 | Oliver Banks | RW,CDM,CAM | 34 | England | – | 7,27 | 1 | 0 | 3/0 |  |

@@ -63,3 +63,39 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-04-30 | Europa 2570 | Bröndby - Nordsjälland | X | 47 % | 43 % |
 | 2026-03-01 | Europa 2553 | Midtjylland - Bröndby | X | 10 % | 17 % |
 | 2026-02-15 | Europa 2549 | Viborg - Bröndby | 1 | 34 % | 36 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Thomas Nørgaard. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Patrick Pentz | GK | 29 | Austria | 1,5 M€ | 6,35 | 0 | 0 | 0/0 |  |
+| 13 | Gavin Beavers | GK | 21 | USA | 723 k€ | – | 0 | 0 | 0/0 |  |
+| 16 | Adrian Kappenberger | GK | 30 | Denmark | 142 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Oliver Villadsen | RB | 24 | Denmark | 1,2 M€ | 7,12 | 0 | 0 | 0/0 |  |
+| 3 | Christopher Olivier | RB,CB | 20 | Austria | 560 k€ | 6,60 | 0 | 0 | 0/0 |  |
+| 4 | Luis Binks | CB | 25 | Scotland | 2,5 M€ | 7,48 | 1 | 2 | 4/0 |  |
+| 24 | Marko Divković | LB,RW,LM | 27 | Croatia | 1,7 M€ | 6,80 | 0 | 1 | 1/0 |  |
+| 27 | Mats Köhlert | LB,LM | 28 | Germany | 2,2 M€ | 6,95 | 0 | 1 | 2/0 |  |
+| 30 | Jordi Vanlerberghe | CB | 30 | Belgium | 640 k€ | 7,33 | 1 | 0 | 0/0 |  |
+| 32 | Frederik Alves Ibsen | CB | 26 | Denmark | 2,0 M€ | 6,72 | 0 | 0 | 0/0 |  |
+| 34 | Lukas Larsen | LB,LM,LWB | 20 | Denmark | 753 k€ | – | 0 | 0 | 0/0 |  |
+| 37 | Raphael Canut | CB | 17 | Denmark | – | 6,51 | 0 | 0 | 1/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 10 | Daniel Wass | CM,CDM | 37 | Denmark | 241 k€ | – | 0 | 0 | 0/0 |  |
+| 15 | Casper Winther | CM,CDM | 23 | Denmark | 1,2 M€ | 7,31 | 1 | 0 | 2/0 |  |
+| 18 | Max Ejdum | CDM,RM,LM | 21 | Denmark | 2,2 M€ | 7,23 | 1 | 2 | 2/0 |  |
+| 29 | Mads Frøkjær-Jensen | CAM,RW,RM | 27 | Denmark | 1,7 M€ | 7,50 | 2 | 1 | 3/0 |  |
+| 99 | Bartosz Slisz | CDM,CM | 27 | Poland | 2,2 M€ | 7,51 | 1 | 1 | 3/1 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Olti Hyseni | LW | 19 | Denmark | 2,2 M€ | 6,75 | 2 | 2 | 0/0 |  |
+| 9 | Patrick Mortensen | ST | 37 | Denmark | 420 k€ | 6,44 | 1 | 0 | 0/0 |  |
+| 11 | Filip Bundgaard | LW,ST | 22 | Denmark | – | 6,41 | 0 | 0 | 1/0 |  |
+| 17 | Emmanuel Dennis | ST | 28 | Nigeria | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 19 | Sho Fukuda | RM,RW,ST | 25 | Japan | 1,1 M€ | 6,45 | 0 | 1 | 0/0 |  |
+| 21 | Marcus Younis | RW | 21 | Australia | 672 k€ | 6,69 | 1 | 1 | 3/0 |  |
+| 38 | Jacob Ambæk | ST | 18 | Denmark | 2,0 M€ | 6,11 | 0 | 0 | 0/0 |  |
+| 51 | Oskar Fenger | ST | 18 | Denmark | – | 6,35 | 1 | 1 | 0/0 |  |

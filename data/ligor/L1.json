@@ -1,0 +1,391 @@
+{
+ "updatedAt": "2026-09-28T19:47:27.474Z",
+ "league": "L1",
+ "fotmobId": 53,
+ "name": "Ligue 1",
+ "country": "FRA",
+ "table": [
+  {
+   "rank": 1,
+   "team": "Monaco",
+   "fotmobName": "Monaco",
+   "fotmobId": 9829,
+   "group": null,
+   "played": 5,
+   "won": 4,
+   "drawn": 1,
+   "lost": 0,
+   "goals": "8-3",
+   "gd": 5,
+   "pts": 13
+  },
+  {
+   "rank": 2,
+   "team": "Lyon",
+   "fotmobName": "Lyon",
+   "fotmobId": 9748,
+   "group": null,
+   "played": 5,
+   "won": 3,
+   "drawn": 2,
+   "lost": 0,
+   "goals": "10-2",
+   "gd": 8,
+   "pts": 11
+  },
+  {
+   "rank": 3,
+   "team": "Paris FC",
+   "fotmobName": "Paris FC",
+   "fotmobId": 6379,
+   "group": null,
+   "played": 5,
+   "won": 3,
+   "drawn": 2,
+   "lost": 0,
+   "goals": "8-3",
+   "gd": 5,
+   "pts": 11
+  },
+  {
+   "rank": 4,
+   "team": "Lille",
+   "fotmobName": "Lille",
+   "fotmobId": 8639,
+   "group": null,
+   "played": 5,
+   "won": 3,
+   "drawn": 1,
+   "lost": 1,
+   "goals": "8-4",
+   "gd": 4,
+   "pts": 10
+  },
+  {
+   "rank": 5,
+   "team": "Rennes",
+   "fotmobName": "Rennes",
+   "fotmobId": 9851,
+   "group": null,
+   "played": 5,
+   "won": 3,
+   "drawn": 1,
+   "lost": 1,
+   "goals": "8-9",
+   "gd": -1,
+   "pts": 10
+  },
+  {
+   "rank": 6,
+   "team": "Paris SG",
+   "fotmobName": "Paris Saint-Germain",
+   "fotmobId": 9847,
+   "group": null,
+   "played": 5,
+   "won": 2,
+   "drawn": 2,
+   "lost": 1,
+   "goals": "8-7",
+   "gd": 1,
+   "pts": 8
+  },
+  {
+   "rank": 7,
+   "team": "Angers",
+   "fotmobName": "Angers",
+   "fotmobId": 8121,
+   "group": null,
+   "played": 5,
+   "won": 2,
+   "drawn": 1,
+   "lost": 2,
+   "goals": "6-5",
+   "gd": 1,
+   "pts": 7
+  },
+  {
+   "rank": 8,
+   "team": "Strasbourg",
+   "fotmobName": "Strasbourg",
+   "fotmobId": 9848,
+   "group": null,
+   "played": 5,
+   "won": 2,
+   "drawn": 1,
+   "lost": 2,
+   "goals": "10-10",
+   "gd": 0,
+   "pts": 7
+  },
+  {
+   "rank": 9,
+   "team": "Le Mans",
+   "fotmobName": "Le Mans",
+   "fotmobId": 8682,
+   "group": null,
+   "played": 5,
+   "won": 1,
+   "drawn": 3,
+   "lost": 1,
+   "goals": "9-9",
+   "gd": 0,
+   "pts": 6
+  },
+  {
+   "rank": 10,
+   "team": "Auxerre",
+   "fotmobName": "Auxerre",
+   "fotmobId": 8583,
+   "group": null,
+   "played": 5,
+   "won": 2,
+   "drawn": 0,
+   "lost": 3,
+   "goals": "7-12",
+   "gd": -5,
+   "pts": 6
+  },
+  {
+   "rank": 11,
+   "team": "Brest",
+   "fotmobName": "Brest",
+   "fotmobId": 8521,
+   "group": null,
+   "played": 5,
+   "won": 1,
+   "drawn": 2,
+   "lost": 2,
+   "goals": "7-8",
+   "gd": -1,
+   "pts": 5
+  },
+  {
+   "rank": 12,
+   "team": "Lorient",
+   "fotmobName": "Lorient",
+   "fotmobId": 8689,
+   "group": null,
+   "played": 5,
+   "won": 1,
+   "drawn": 2,
+   "lost": 2,
+   "goals": "5-6",
+   "gd": -1,
+   "pts": 5
+  },
+  {
+   "rank": 13,
+   "team": "Toulouse",
+   "fotmobName": "Toulouse",
+   "fotmobId": 9941,
+   "group": null,
+   "played": 5,
+   "won": 1,
+   "drawn": 2,
+   "lost": 2,
+   "goals": "7-9",
+   "gd": -2,
+   "pts": 5
+  },
+  {
+   "rank": 14,
+   "team": "Nice",
+   "fotmobName": "Nice",
+   "fotmobId": 9831,
+   "group": null,
+   "played": 5,
+   "won": 1,
+   "drawn": 2,
+   "lost": 2,
+   "goals": "3-6",
+   "gd": -3,
+   "pts": 5
+  },
+  {
+   "rank": 15,
+   "team": "Lens",
+   "fotmobName": "Lens",
+   "fotmobId": 8588,
+   "group": null,
+   "played": 5,
+   "won": 1,
+   "drawn": 1,
+   "lost": 3,
+   "goals": "9-9",
+   "gd": 0,
+   "pts": 4
+  },
+  {
+   "rank": 16,
+   "team": "Troyes",
+   "fotmobName": "Troyes",
+   "fotmobId": 10242,
+   "group": null,
+   "played": 5,
+   "won": 1,
+   "drawn": 1,
+   "lost": 3,
+   "goals": "4-11",
+   "gd": -7,
+   "pts": 4
+  },
+  {
+   "rank": 17,
+   "team": "Marseille",
+   "fotmobName": "Marseille",
+   "fotmobId": 8592,
+   "group": null,
+   "played": 5,
+   "won": 1,
+   "drawn": 0,
+   "lost": 4,
+   "goals": "7-8",
+   "gd": -1,
+   "pts": 3
+  },
+  {
+   "rank": 18,
+   "team": "Le Havre",
+   "fotmobName": "Le Havre",
+   "fotmobId": 9746,
+   "group": null,
+   "played": 5,
+   "won": 0,
+   "drawn": 2,
+   "lost": 3,
+   "goals": "4-7",
+   "gd": -3,
+   "pts": 2
+  }
+ ],
+ "tableHistory": {
+  "2026-09-28": [
+   [
+    "Monaco",
+    1,
+    5,
+    13,
+    5
+   ],
+   [
+    "Lyon",
+    2,
+    5,
+    11,
+    8
+   ],
+   [
+    "Paris FC",
+    3,
+    5,
+    11,
+    5
+   ],
+   [
+    "Lille",
+    4,
+    5,
+    10,
+    4
+   ],
+   [
+    "Rennes",
+    5,
+    5,
+    10,
+    -1
+   ],
+   [
+    "Paris SG",
+    6,
+    5,
+    8,
+    1
+   ],
+   [
+    "Angers",
+    7,
+    5,
+    7,
+    1
+   ],
+   [
+    "Strasbourg",
+    8,
+    5,
+    7,
+    0
+   ],
+   [
+    "Le Mans",
+    9,
+    5,
+    6,
+    0
+   ],
+   [
+    "Auxerre",
+    10,
+    5,
+    6,
+    -5
+   ],
+   [
+    "Brest",
+    11,
+    5,
+    5,
+    -1
+   ],
+   [
+    "Lorient",
+    12,
+    5,
+    5,
+    -1
+   ],
+   [
+    "Toulouse",
+    13,
+    5,
+    5,
+    -2
+   ],
+   [
+    "Nice",
+    14,
+    5,
+    5,
+    -3
+   ],
+   [
+    "Lens",
+    15,
+    5,
+    4,
+    0
+   ],
+   [
+    "Troyes",
+    16,
+    5,
+    4,
+    -7
+   ],
+   [
+    "Marseille",
+    17,
+    5,
+    3,
+    -1
+   ],
+   [
+    "Le Havre",
+    18,
+    5,
+    2,
+    -3
+   ]
+  ]
+ }
+}

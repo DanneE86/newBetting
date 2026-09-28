@@ -54,3 +54,40 @@ Form (äldst → senast): VVFVVVVV · senaste match 2026-09-20
 | Horsens | 8 | 6-0-2 | 18–4 | +0,08 | −21 pe | 2026-09-11 2-0 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Bo Svensson. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Rodrigo Huescas (skadad, åter Day to day), Magnus Mattsson (skadad, åter Day to day)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Diant Ramaj | GK | 25 | Germany | 6,2 M€ | 7,81 | 0 | 0 | 0/0 |  |
+| 31 | Rúnar Rúnarsson | GK | 31 | Iceland | 181 k€ | 6,22 | 0 | 0 | 0/0 |  |
+| 51 | Tobias Breum-Harild | GK | 18 | Denmark | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Felix Beijmo | CB,RB,RM | 28 | Sweden | 2,0 M€ | 7,28 | 1 | 0 | 0/0 |  |
+| 4 | Asger Sørensen | CB | 30 | Denmark | 1,2 M€ | 7,09 | 1 | 0 | 0/0 |  |
+| 6 | Ákos Markgráf | CB,LB | 21 | Hungary | 1,1 M€ | 7,32 | 0 | 0 | 1/0 |  |
+| 13 | Rodrigo Huescas | RB | 23 | Mexico | 5,3 M€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
+| 15 | Marcos López | LB,LM,LWB | 26 | Peru | 2,4 M€ | 7,44 | 1 | 1 | 2/0 |  |
+| 18 | Kenay Myrie | RB,CB,RM | 20 | Costa Rica | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 20 | Junnosuke Suzuki | RB,CB | 23 | Japan | 2,1 M€ | 6,99 | 0 | 2 | 0/0 |  |
+| 24 | Birger Meling | LB,RB | 31 | Norway | 584 k€ | 7,31 | 4 | 1 | 3/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 8 | Magnus Mattsson | CM | 27 | Denmark | 2,5 M€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
+| 21 | Mads Madsen | CM,CDM,CAM | 28 | Denmark | 1,7 M€ | 7,27 | 2 | 1 | 1/0 |  |
+| 27 | Thomas Delaney | CM,CDM | 35 | Denmark | 287 k€ | 6,80 | 0 | 0 | 1/0 |  |
+| 28 | Hunor Németh | CM,CAM,RW,CB,CDM | 19 | Hungary | 1,4 M€ | 5,93 | 0 | 0 | 0/0 |  |
+| 33 | Alex Král | CDM,RW | 28 | Czechia | 1,9 M€ | 6,72 | 1 | 1 | 1/0 |  |
+| 36 | William Clem | CM,CDM | 22 | Denmark | 2,3 M€ | 7,12 | 0 | 1 | 2/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Maher Carrizo | RW | 20 | Argentina | 10,5 M€ | 6,99 | 1 | 0 | 0/0 |  |
+| 10 | Mohamed Elyounoussi | ST,CAM,RW,CM,RM,LW | 32 | Norway | 2,3 M€ | 7,98 | 6 | 2 | 2/0 |  |
+| 12 | Thapelo Maseko | RW,LW | 22 | South Africa | 777 k€ | 6,97 | 2 | 0 | 0/0 |  |
+| 14 | Andreas Cornelius | ST | 33 | Denmark | 329 k€ | 6,84 | 1 | 0 | 0/0 |  |
+| 16 | Robert | LW,LM,RM | 21 | Brazil | 2,4 M€ | 7,05 | 1 | 1 | 2/0 |  |
+| 39 | Viktor Daðason | ST | 18 | Iceland | 795 k€ | 6,80 | 1 | 0 | 0/0 |  |
+| 44 | Geovanni Vianney | ST | 19 | Cameroon | 996 k€ | 6,50 | 0 | 0 | 0/0 |  |

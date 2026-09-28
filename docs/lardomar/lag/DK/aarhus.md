@@ -53,3 +53,44 @@ Form (äldst → senast): OFOFFOFO · senaste match 2026-09-20
 | Horsens | 10 | 7-1-2 | 21–9 | +0,50 | −16 pe | 2026-09-20 2-2 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Jakob Poulsen. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Eric Kahl (skadad, åter Unknown), Nicolai Poulsen (skadad, åter Day to day), Kevin Yakob (skadad, åter Day to day), Tómas Kristjánsson (skadad, åter Day to day)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Jesper Hansen | GK | 41 | Denmark | 241 k€ | 6,25 | 0 | 0 | 0/0 |  |
+| 21 | Mads Hedenstad Christiansen | GK | 25 | Norway | 969 k€ | 6,39 | 0 | 1 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 3 | Daníel Grétarsson | CB,LB | 30 | Iceland | 278 k€ | 6,57 | 0 | 0 | 0/0 |  |
+| 5 | Frederik Tingager | CB | 33 | Denmark | 378 k€ | 6,65 | 0 | 0 | 0/0 |  |
+| 14 | Tobias Mølgaard | CB | 30 | Denmark | 507 k€ | 6,36 | 0 | 0 | 0/0 |  |
+| 19 | Eric Kahl | CB | 25 | Sweden | 2,3 M€ | 6,97 | 0 | 0 | 1/0 | skadad, åter Unknown |
+| 25 | Colin Rösler | CB | 26 | Norway | 1,4 M€ | 6,58 | 0 | 0 | 1/0 |  |
+| 26 | Jacob Andersen | CB,RWB,LWB | 22 | Denmark | 559 k€ | 6,27 | 0 | 0 | 0/0 |  |
+| 33 | Luka Callø | CB | 20 | Denmark | 1,5 M€ | 6,38 | 0 | 0 | 0/0 |  |
+| 44 | Mouhammade Camara | CB | 19 | Mali | – | 6,85 | 0 | 0 | 1/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 4 | Magnus Knudsen | CDM,CM | 25 | Norway | 2,3 M€ | 7,09 | 1 | 1 | 3/0 |  |
+| 6 | Nicolai Poulsen | CM | 33 | Denmark | 378 k€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
+| 7 | Markus Solbakken | CM,CDM | 26 | Norway | 1,7 M€ | 6,73 | 0 | 1 | 0/0 |  |
+| 10 | Kristian Arnstad | LW,CM,CAM,CDM | 23 | Norway | 2,7 M€ | 7,13 | 2 | 0 | 3/0 |  |
+| 11 | Gift Links | LM,RM,LWB,RWB | 27 | South Africa | 1,7 M€ | 8,11 | 0 | 0 | 0/0 |  |
+| 16 | Jens Jønsson | CDM,CM | 33 | Denmark | 652 k€ | 7,47 | 1 | 0 | 0/0 |  |
+| 17 | Kevin Yakob | CM,CDM | 25 | Iraq | 632 k€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
+| 18 | Callum McCowatt | CAM,CM,RW,ST,CDM | 27 | New Zealand | 1,7 M€ | 7,12 | 3 | 2 | 3/0 |  |
+| 22 | Oskar Haugstrup | CM | 19 | Denmark | 789 k€ | 6,16 | 0 | 0 | 0/0 |  |
+| 23 | Mikael Anderson | CAM,LW,RW,CM,RWB | 28 | Iceland | 1,2 M€ | 6,46 | 0 | 0 | 2/0 |  |
+| 29 | Rasmus Carstensen | RM,RWB | 25 | Denmark | 1,6 M€ | 6,56 | 1 | 0 | 0/0 |  |
+| 39 | Frederik Emmery | LM,LWB | 19 | Denmark | 1,4 M€ | 7,02 | 1 | 2 | 1/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 8 | Sebastian Jørgensen | RW,CAM | 26 | Denmark | 664 k€ | 7,24 | 0 | 2 | 0/0 |  |
+| 13 | Janni Serra | ST | 28 | Germany | 328 k€ | 6,99 | 3 | 0 | 0/0 |  |
+| 20 | Tómas Kristjánsson | LW | 18 | Iceland | 802 k€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
+| 27 | Stefen Tchamche | ST | 20 | Denmark | 543 k€ | 6,07 | 0 | 0 | 1/0 |  |
+| 28 | James Bogere | ST | 18 | Uganda | 775 k€ | 6,52 | 1 | 0 | 0/0 |  |
+| 31 | Tobias Bech | RW,CAM,ST,LW | 24 | Denmark | 2,6 M€ | 6,53 | 0 | 1 | 0/0 |  |

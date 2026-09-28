@@ -60,3 +60,49 @@ Form (äldst → senast): VVVOVFVV · senaste match 2026-09-20
 | Tigre | 2 | 0-1-1 | 0–1 | −0,92 | +18 pe | 2024-11-23 0-0 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Diego Flores. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Luca Rafaelli (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 29 | Marcos Ledesma | GK | 30 | Argentina | 926 k€ | – | 0 | 0 | 0/0 |  |
+| 35 | Emanuel Sittaro | GK | 26 | Argentina | 537 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Hernán de la Fuente | RB | 29 | Argentina | 244 k€ | – | 0 | 0 | 0/0 |  |
+| 6 | Fernando Alarcón | CB | 32 | Argentina | 775 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Agustín Massaccesi | CB,RB | 24 | Argentina | 383 k€ | – | 0 | 0 | 0/0 |  |
+| 23 | Andrés Meli | LB | 26 | Argentina | 553 k€ | – | 0 | 0 | 0/0 |  |
+| 26 | Leonel Mosevich | CB | 29 | Argentina | 704 k€ | – | 0 | 0 | 0/0 |  |
+| 30 | Jonathan Galván | CB | 34 | Argentina | 442 k€ | – | 0 | 0 | 0/0 |  |
+| 32 | Agustín Bravo | CB | 25 | Argentina | 398 k€ | – | 0 | 0 | 0/0 |  |
+| 33 | Iván Erquiaga | LB | 27 | Argentina | 124 k€ | – | 0 | 0 | 0/0 |  |
+| 70 | Genaro Ordóñez | Defender | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Ignacio Rossi | Midfielder | 23 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 3 | Diego Sosa | LM,LWB,LB | 29 | Argentina | 406 k€ | – | 0 | 0 | 0/0 |  |
+| 5 | Franco Moyano | CDM | 29 | Argentina | 570 k€ | – | 0 | 0 | 0/0 |  |
+| 8 | Jonás Acevedo | CAM | 29 | Argentina | 246 k€ | – | 0 | 0 | 0/0 |  |
+| 13 | Juan Ignacio Méndez | CDM,CM | 29 | Argentina | 434 k€ | – | 0 | 0 | 0/0 |  |
+| 14 | Wílder Viera | CM | 24 | Paraguay | 946 k€ | – | 0 | 0 | 0/0 |  |
+| 15 | Matías Gallardo | CM,CDM | 22 | Argentina | 625 k€ | – | 0 | 0 | 0/0 |  |
+| 21 | Jeremías Lázaro | CAM | 22 | Argentina | 642 k€ | – | 0 | 0 | 0/0 |  |
+| 27 | Augusto Coronel | Midfielder | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 44 | Giuliano Cerato | RM,RWB,RB | 28 | Argentina | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 55 | Gustavo Abregú | CM,CDM | 29 | Argentina | 330 k€ | – | 0 | 0 | 0/0 |  |
+| 61 | Joaquín Medina | Midfielder | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 90 | Pedro Baster | Midfielder | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Nicolás Guerra | ST,LW | 27 | Chile | 352 k€ | – | 0 | 0 | 0/0 |  |
+| 9 | Facundo Suárez | ST | 32 | Argentina | 284 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Alex Luna | LW,CAM,ST,LM | 22 | Argentina | 3,8 M€ | – | 0 | 0 | 0/0 |  |
+| 11 | Matías Fonseca | ST | 25 | Uruguay | 540 k€ | – | 0 | 0 | 0/0 |  |
+| 17 | Matías Tissera | ST | 30 | Argentina | 340 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | Lucas Sanseviero | RW,ST | 26 | Uruguay | 747 k€ | – | 0 | 0 | 0/0 |  |
+| 20 | Jhon Córdoba | CAM,RW,ST | 26 | Colombia | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 25 | Lorenzo Albarracín | Attacker | 19 | Argentina | 763 k€ | – | 0 | 0 | 0/0 |  |
+| 72 | Luca Rafaelli | CAM | 18 | Argentina | – | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |

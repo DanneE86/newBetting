@@ -13,7 +13,7 @@ Form (äldst → senast): VOFFOOOV · senaste match 2026-09-19
 | Mått | Värde |
 |---|---|
 | Tur (poäng − xP per match) | −0,10 |
-| xG-målskillnad − målskillnad | −0,42 |
+| xG-målskillnad − målskillnad | −0,47 |
 | Poäng mot marknaden per match | −0,26 |
 
 ## Säsonger
@@ -29,9 +29,22 @@ Form (äldst → senast): VOFFOOOV · senaste match 2026-09-19
 | 2023/24 | LL | 38 | 1,08 | −0,25 (−0,34 / −0,16) | 29 % (27 %) | 1,21–1,50 | 1,48–1,58 | 1,32 |
 | 2024/25 | LL | 38 | 1,45 | +0,03 (+0,31 / −0,25) | 18 % (27 %) | 1,55–1,50 | 1,54–1,32 | 1,53 |
 | 2025/26 | LL | 38 | 1,42 | +0,08 (−0,40 / +0,56) | 32 % (28 %) | 1,39–1,26 | 1,37–1,48 | 1,35 |
-| 2026/27 | LL | 7 | 1,00 | −0,17 (−0,73 / +0,57) | 57 % (29 %) | 1,14–0,86 | 1,20–1,37* | 1,26 |
+| 2026/27 | LL | 7 | 1,00 | −0,17 (−0,73 / +0,57) | 57 % (29 %) | 1,14–0,86 | 1,09–1,31 | 1,26 |
 
-\* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+## Nyckelspelare (Understat, 2024/25–)
+
+Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
+
+| Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
+|---|---|---|---|---|
+| Hugo Gonzalez | 9 % | 0 / 83 | – / 1,40 | – / +0,04 |
+| Borja Iglesias | 9 % | 0 / 83 | – / 1,40 | – / +0,04 |
+| Williot Swedberg | 8 % | 9 / 74 | 1,78 / 1,35 | +0,18 / +0,02 |
+| Ferrán Jutglà | 8 % | 5 / 78 | 2,00 / 1,36 | +0,57 / +0,00 |
+| Pablo Durán | 7 % | 4 / 79 | 1,75 / 1,38 | +0,52 / +0,01 |
+| Hugo Álvarez | 7 % | 8 / 75 | 2,00 / 1,33 | +0,59 / −0,02 |
+
+Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -85,3 +98,43 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-09-28 | Europa 2509 | Elche - Celta de Vigo | 1 | 27 % | 35 % |
 | 2025-08-31 | Europa 2501 | Celta de Vigo - Villarreal | X | 32 % | 33 % |
 | 2025-08-17 | Europa 2497 | Celta de Vigo - Getafe | 2 | 59 % | 60 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Claudio Giráldez. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Jones El-Abdellaoui (skadad, åter Mid January 2027), Iago Aspas (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Altay Bayındır | GK | 28 | Turkiye | 4,9 M€ | – | 0 | 0 | 0/0 |  |
+| 13 | Ionuț Radu | GK | 29 | Romania | 4,0 M€ | 7,22 | 0 | 0 | 1/0 |  |
+| 25 | Iván Villar | GK | 29 | Spain | 488 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Carl Starfelt | CB | 31 | Sweden | 2,0 M€ | 7,22 | 1 | 0 | 1/0 |  |
+| 3 | Marcos Alonso | CB | 35 | Spain | 1,3 M€ | 7,14 | 0 | 0 | 2/1 |  |
+| 4 | Abdoulaye Faye | CB | 22 | Senegal | 3,4 M€ | 5,98 | 0 | 0 | 0/0 |  |
+| 15 | Álvaro Núñez | CB,RM,RB,CM | 26 | Spain | 2,2 M€ | 7,15 | 0 | 0 | 0/0 |  |
+| 18 | Yoel Lago | CB | 22 | Spain | – | 6,95 | 0 | 0 | 3/0 |  |
+| 20 | Javi Rodríguez | CB,RB | 23 | Spain | – | 6,60 | 0 | 0 | 0/0 |  |
+| 21 | Sebastián Cáceres | CB,LB | 27 | Uruguay | 2,2 M€ | 7,41 | 0 | 0 | 0/0 |  |
+| 22 | Javi Galán | LB,LWB,LM | 31 | Spain | 1,4 M€ | 6,67 | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Stefan Bajčetić | CM | 21 | Spain | 6,9 M€ | – | 0 | 0 | 0/0 |  |
+| 5 | Sergio Carreira | LM,RM,LWB | 25 | Spain | 1,6 M€ | 6,74 | 0 | 0 | 1/0 |  |
+| 6 | Ilaix Moriba | CM,CDM | 23 | Guinea | 10,0 M€ | 6,85 | 1 | 0 | 0/0 |  |
+| 8 | Miguel Román | CM,CDM | 23 | Spain | 1,6 M€ | 7,32 | 1 | 2 | 0/0 |  |
+| 14 | Aleix Febas | CM,CAM | 30 | Spain | 2,0 M€ | 6,32 | 0 | 0 | 0/0 |  |
+| 17 | Javi Rueda | RM,RWB,RW | 24 | Spain | 2,9 M€ | 6,65 | 0 | 0 | 2/0 |  |
+| 30 | Hugo Burcio | CM | 19 | Spain | 1,1 M€ | 6,69 | 0 | 0 | 0/0 |  |
+| 39 | Jones El-Abdellaoui | RM,RW | 20 | Morocco | 5,7 M€ | 6,05 | 0 | 0 | 0/0 | skadad, åter Mid January 2027 |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Borja Iglesias | ST | 33 | Spain | 1,7 M€ | 6,31 | 0 | 0 | 0/0 |  |
+| 9 | Ferrán Jutglà | RW,ST,LW | 27 | Spain | 4,5 M€ | 6,49 | 1 | 0 | 0/0 |  |
+| 10 | Iago Aspas | RW,CAM,ST,CM | 39 | Spain | 834 k€ | 6,71 | 1 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 11 | Pablo Durán | ST,RW,LW | 25 | Spain | 3,5 M€ | 6,81 | 2 | 0 | 0/0 |  |
+| 16 | Hugo González | ST,RW | 23 | Spain | 464 k€ | 7,35 | 1 | 2 | 0/0 |  |
+| 19 | Williot Swedberg | LW,CAM,RW | 22 | Sweden | 2,4 M€ | 6,37 | 0 | 0 | 0/0 |  |
+| 23 | Hugo Álvarez | LW,LM,CAM | 23 | Spain | 6,7 M€ | 6,66 | 0 | 2 | 0/0 |  |
+| 24 | Couhaib Driouech | LW,LM | 24 | Morocco | 3,8 M€ | 6,55 | 0 | 0 | 1/0 |  |

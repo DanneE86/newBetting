@@ -38,6 +38,15 @@ Underlag: 3470 matcher, säsong 2017/18 – 2026/27. Marknad = stängningsodds u
 | 65–75 % | 497 | 72,4 % | 69,6 % | +2,8 pe (1,4) | ingen effekt |
 | 75–100 % | 244 | 81,1 % | 79,9 % | +1,3 pe (0,5) | ingen effekt |
 
+## Kalibrering av oddsen (justeringsmodellen)
+
+g > 0 = favoriter vinner oftare än oddsen säger (skrällar överprissatta), h < 0 = hemmalag överprissatta, d > 0 = kryss underprissatta. Parametrarna är tränade före 2023/24. Kontroll = logloss-skillnad 2023/24– (negativ = bättre). Live används parametrar refittade på all data.
+
+| Bas | g (favoriter) | h (hemma) | d (kryss) | Kontroll | Används live |
+|---|---|---|---|---|---|
+| öppningsodds (Oddset, långt före avspark) | +0,121 | −0,106 | +0,034 | −0,0046 (z −3,0, n 1190) | ja |
+| stängningsodds (sen körning, Stryktipset/Europatipset) | +0,112 | −0,107 | +0,015 | −0,0037 (z −2,6, n 1190) | nej |
+
 ## Signaler mot marknaden
 
 Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (|z| ≥ 2,5 i träning och ≥ 2 i kontroll krävs). "Oddsrörelse" visar om signalen förutsäger hur oddsen rör sig från öppning till stängning, alltså om marknaden lär sig det före avspark.
@@ -51,7 +60,10 @@ Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (
 | Inbördes möten, poängskillnad | +0,032 (z 1,9, n 2360) | +0,021 (z 1,0, n 1306) | +0,050 (z 1,9, n 1054) | +0,034 (z 2,0, n 2359) | +0,001 (z 1,2, n 2359) | +0,128 p | ingen effekt |
 | Inbördes möten, kryss mot förväntat | −0,008 (z −0,2, n 2360) | +0,029 (z 0,5, n 1306) | −0,076 (z −0,9, n 1054) | – | – | −0,004 p | ingen effekt |
 | Vilodagar (hemma − borta, ligamatcher) | +0,003 (z 0,2, n 3342) | +0,001 (z 0,1, n 2192) | +0,006 (z 0,3, n 1150) | +0,001 (z 0,1, n 3341) | −0,002 (z −1,8, n 3341) | +0,006 p | ingen effekt |
-| Nyckelspelare borta (andel av xG+xA, hemma − borta) | +0,500 (z 1,1, n 810) | – | +0,500 (z 1,1, n 810) | +0,367 (z 0,8, n 810) | −0,133 (z −4,8, n 810) | +0,116 p | ingen effekt |
+| Nyckelspelare borta (andel av xG+xA, hemma − borta; träning 2024/25, kontroll 2025/26–) | +0,500 (z 1,1, n 810) | +1,409 (z 2,2, n 380) | −0,205 (z −0,3, n 430) | +0,367 (z 0,8, n 810) | −0,133 (z −4,8, n 810) | +0,116 p | ingen effekt |
+| Oddsrörelse öppning → stängning (förväntade poäng) | −0,217 (z −0,9, n 3469) | −0,142 (z −0,5, n 2279) | −0,414 (z −0,9, n 1190) | – | – | −0,044 p | ingen effekt |
+| Bolagssnitt mot Pinnacle vid stängning | −0,265 (z −0,3, n 2478) | +0,171 (z 0,1, n 1520) | −0,918 (z −0,5, n 958) | – | – | −0,014 p | ingen effekt |
+| Under 2,5 mål (O/U-marknaden) mot kryss | +0,091 (z 0,9, n 2710) | +0,049 (z 0,3, n 1520) | +0,147 (z 0,9, n 1190) | – | – | +0,020 p | ingen effekt |
 
 ## Situationer
 
@@ -84,6 +96,33 @@ Källa: backtesten i `data/stryktips-backtest-2526-steg3.json`, `data/stryktips-
 | 1 | 36,7 % | 36,8 % | 37,9 % | 0,97 |
 | X | 26,6 % | 27,5 % | 26,3 % | 1,01 |
 | 2 | 36,7 % | 35,7 % | 35,9 % | 1,02 |
+
+## Tabell nu (FotMob, 2026-09-28)
+
+| # | Lag | M | V | O | F | Mål | +/− | P |
+|---|---|---|---|---|---|---|---|---|
+| 1 | Roma | 5 | 4 | 1 | 0 | 14-3 | 11 | 13 |
+| 2 | Inter | 5 | 4 | 1 | 0 | 15-8 | 7 | 13 |
+| 3 | Lazio | 5 | 4 | 1 | 0 | 8-3 | 5 | 13 |
+| 4 | Cagliari | 5 | 4 | 0 | 1 | 5-2 | 3 | 12 |
+| 5 | Milan | 5 | 3 | 2 | 0 | 10-4 | 6 | 11 |
+| 6 | Frosinone | 5 | 3 | 1 | 1 | 9-4 | 5 | 10 |
+| 7 | Juventus | 5 | 3 | 1 | 1 | 8-4 | 4 | 10 |
+| 8 | Como | 5 | 3 | 1 | 1 | 9-6 | 3 | 10 |
+| 9 | Napoli | 5 | 2 | 1 | 2 | 7-6 | 1 | 7 |
+| 10 | Sassuolo | 5 | 2 | 1 | 2 | 9-9 | 0 | 7 |
+| 11 | Atalanta | 5 | 2 | 0 | 3 | 5-7 | -2 | 6 |
+| 12 | Lecce | 5 | 2 | 0 | 3 | 5-10 | -5 | 6 |
+| 13 | Udinese | 5 | 1 | 1 | 3 | 8-11 | -3 | 4 |
+| 14 | Torino | 5 | 1 | 1 | 3 | 5-8 | -3 | 4 |
+| 15 | Parma | 5 | 1 | 1 | 3 | 4-7 | -3 | 4 |
+| 16 | Monza | 5 | 1 | 1 | 3 | 8-12 | -4 | 4 |
+| 17 | Fiorentina | 5 | 1 | 1 | 3 | 6-12 | -6 | 4 |
+| 18 | Bologna | 5 | 0 | 2 | 3 | 3-6 | -3 | 2 |
+| 19 | Genoa | 5 | 0 | 1 | 4 | 3-10 | -7 | 1 |
+| 20 | Venezia | 5 | 0 | 0 | 5 | 4-13 | -9 | 0 |
+
+Tabellhistorik (en rad per lag och dag sedan 2026-09-28): `data/ligor/SA.json`.
 
 ## Lagfiler
 

@@ -21,15 +21,15 @@ Form (äldst → senast): FFOVVFVO · senaste match 2026-09-26
 | Säsong | Liga | M | P/M | Mot marknaden (hemma / borta) | Kryss (odds) | Mål för–emot | xG för–emot | xP/M |
 |---|---|---|---|---|---|---|---|---|
 | 2017/18 | CH | 46 | 0,96 | −0,23 (−0,40 / −0,07) | 30 % (27 %) | 1,04–1,52 | 1,10–1,57* | 1,10 |
-| 2018/19 | CH | 46 | 1,02 | +0,09 (+0,05 / +0,13) | 37 % (27 %) | 1,07–1,43 | 1,26–1,76* | 1,09 |
-| 2019/20 | CH | 46 | 1,22 | +0,02 (−0,29 / +0,34) | 24 % (28 %) | 1,28–1,26 | 1,31–1,62* | 1,18 |
+| 2018/19 | CH | 46 | 1,02 | +0,09 (+0,05 / +0,13) | 37 % (27 %) | 1,07–1,43 | 1,26–1,77* | 1,09 |
+| 2019/20 | CH | 46 | 1,22 | +0,02 (−0,29 / +0,34) | 24 % (28 %) | 1,28–1,26 | 1,31–1,63* | 1,18 |
 | 2020/21 | CH | 46 | 1,52 | +0,19 (+0,22 / +0,17) | 28 % (29 %) | 1,35–1,17 | 1,36–1,18* | 1,48 |
 | 2021/22 | CH | 46 | 1,02 | −0,12 (−0,15 / −0,09) | 17 % (27 %) | 1,17–1,89 | 1,17–1,68* | 1,10 |
-| 2022/23 | CH | 46 | 1,09 | −0,04 (+0,40 / −0,48) | 24 % (28 %) | 1,00–1,48 | 1,05–1,39* | 1,15 |
+| 2022/23 | CH | 46 | 1,09 | −0,04 (+0,40 / −0,48) | 24 % (28 %) | 1,00–1,48 | 1,06–1,39* | 1,15 |
 | 2023/24 | EL1 | 46 | 1,28 | −0,03 (+0,28 / −0,35) | 24 % (27 %) | 1,48–1,52 | 1,49–1,44* | 1,42 |
 | 2024/25 | EL1 | 46 | 1,63 | +0,42 (+0,54 / +0,31) | 26 % (26 %) | 1,48–1,24 | 1,31–1,57* | 1,22 |
 | 2025/26 | EL1 | 46 | 1,37 | +0,14 (+0,20 / +0,07) | 33 % (27 %) | 1,39–1,30 | 1,24–1,38* | 1,29 |
-| 2026/27 | EL1 | 7 | 1,57 | +0,19 (+0,60 / −0,35) | 29 % (26 %) | 2,29–1,29 | 1,95–1,20* | 1,86 |
+| 2026/27 | EL1 | 7 | 1,57 | +0,19 (+0,60 / −0,35) | 29 % (26 %) | 2,29–1,29 | 1,95–1,21* | 1,86 |
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
 
@@ -72,3 +72,39 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-02-07 | Stryk 4939 | Wimbledon - Reading | 1 | 44 % | 37 % |
 | 2026-01-24 | Stryk 4937 | Reading - Barnsley | X | 53 % | 43 % |
 | 2026-08-22 | Stryk 4967 | Wimbledon - Reading | X | 39 % | 40 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Leam Richardson. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Joel Pereira | GK | 30 | Portugal | 260 k€ | 6,81 | 0 | 0 | 1/0 |  |
+| 25 | Jack Stevens | GK | 29 | England | 135 k€ | – | 0 | 0 | 0/0 |  |
+| 48 | Matthew Rowley | Keeper | 22 | England | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Josh Knight | CB | 29 | England | 667 k€ | – | 0 | 0 | 0/0 |  |
+| 2 | Udoka Godwin-Malife | CB,RB | 26 | England | 475 k€ | 6,71 | 0 | 0 | 0/0 |  |
+| 3 | Jeriel Dorsett | LB,CB | 24 | Montserrat | 313 k€ | 6,73 | 0 | 1 | 0/0 |  |
+| 5 | Haydon Roberts | LB,LWB,CB,LW | 24 | England | 980 k€ | 6,90 | 0 | 1 | 1/0 |  |
+| 15 | Paudie O'Connor | CB,LB | 29 | Ireland | 433 k€ | 6,96 | 1 | 0 | 2/0 |  |
+| 16 | Benn Ward | CB,LB | 22 | England | – | 7,32 | 1 | 0 | 1/0 |  |
+| 23 | Conor Masterson | CB | 28 | Ireland | 122 k€ | – | 0 | 0 | 0/0 |  |
+| 39 | Ashqar Ahmed | RB,CB | 19 | England | 671 k€ | – | 0 | 0 | 0/0 |  |
+| 42 | Boyd Beacroft | CB | 20 | England | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 4 | Andy Rinomhota | CDM | 29 | Zimbabwe | 153 k€ | 7,11 | 0 | 0 | 1/0 |  |
+| 6 | Liam Fraser | CDM | 28 | Canada | 204 k€ | 6,27 | 0 | 0 | 0/0 |  |
+| 8 | Charlie Savage | CDM,CAM,CM | 23 | Wales | 716 k€ | 6,22 | 0 | 0 | 1/0 |  |
+| 10 | Lewis Wing | CDM,CM | 31 | England | 477 k€ | 7,14 | 0 | 1 | 0/0 |  |
+| 17 | George Earthy | CAM,RW | 22 | England | 1,3 M€ | 7,00 | 2 | 0 | 0/0 |  |
+| 28 | Josh Stokes | CAM,LW | 22 | England | 441 k€ | 6,62 | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Jack Marriott | ST | 32 | England | 285 k€ | 7,83 | 8 | 0 | 0/0 |  |
+| 9 | Jamie Reid | ST | 32 | Northern Ireland | 227 k€ | 6,25 | 0 | 0 | 1/0 |  |
+| 11 | Daniel Kyerewaa | LW,RW,CAM,LWB | 24 | Germany | 371 k€ | 6,65 | 0 | 1 | 0/0 |  |
+| 14 | Randell Williams | RW,LW | 29 | England | 154 k€ | 6,37 | 0 | 1 | 1/0 |  |
+| 18 | Jacob Brown | ST,CAM | 28 | Scotland | 930 k€ | 6,59 | 3 | 0 | 0/0 |  |
+| 19 | Kyreece Lisbie | RW,LW,RM | 22 | England | 430 k€ | 7,29 | 1 | 4 | 2/0 |  |
+| 32 | Paddy Lane | LW,RW,CAM | 25 | Northern Ireland | 476 k€ | 7,24 | 0 | 1 | 1/0 |  |

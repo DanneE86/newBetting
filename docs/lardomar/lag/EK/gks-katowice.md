@@ -46,3 +46,44 @@ Form (äldst → senast): FVFVVFFV · senaste match 2026-09-19
 | Wisla | 1 | 0-0-1 | 1–2 | −1,08 | −26 pe | 2026-07-26 1-2 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Rafał Górak. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Rafał Strączek (skadad, åter Late October 2026), Aleksander Paluszek (skadad, åter Unknown), Adrian Błąd (skadad, åter Unknown), Szymon Bartlewicz (osäker), Adam Zrelák (osäker)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Maciej Kikolski | GK | 22 | Poland | 773 k€ | – | 0 | 0 | 0/0 |  |
+| 12 | Rafał Strączek | GK | 27 | Poland | 460 k€ | – | 0 | 0 | 0/0 | skadad, åter Late October 2026 |
+| 34 | Wojciech Pankowski | Keeper | 18 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 87 | Gabriel Kobylak | GK | 24 | Poland | 375 k€ | 6,84 | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 3 | Aleksander Paluszek | CB | 25 | Poland | 238 k€ | – | 0 | 0 | 0/0 | skadad, åter Unknown |
+| 4 | Arkadiusz Jędrych | CB | 34 | Poland | 173 k€ | 7,01 | 2 | 0 | 1/0 |  |
+| 6 | Lukas Klemenz | CB | 31 | Poland | 280 k€ | 6,77 | 0 | 0 | 4/0 |  |
+| 14 | Marius Berntsen Olsen | CB | 25 | Norway | 433 k€ | – | 0 | 0 | 0/0 |  |
+| 30 | Alan Czerwiński | CB | 33 | Poland | 215 k€ | 6,49 | 0 | 1 | 2/0 |  |
+| 55 | Pau Resta | CB | 25 | Spain | 891 k€ | 6,99 | 1 | 0 | 1/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Jesse Bosch | CM | 26 | Netherlands | 290 k€ | – | 0 | 0 | 0/0 |  |
+| 7 | Mateusz Wdowiak | CAM,RW,LM | 30 | Poland | 149 k€ | 6,82 | 1 | 0 | 1/0 |  |
+| 8 | Borja Galán | LM,LWB | 33 | Spain | 276 k€ | 6,67 | 0 | 2 | 1/0 |  |
+| 11 | Adrian Błąd | RW | 35 | Poland | 142 k€ | – | 0 | 0 | 0/0 | skadad, åter Unknown |
+| 19 | Kacper Łukasiak | CM,CDM | 23 | Poland | 276 k€ | 6,98 | 0 | 0 | 1/0 |  |
+| 22 | Sebastian Milewski | CDM,CM | 28 | Poland | 394 k€ | – | 0 | 0 | 0/0 |  |
+| 23 | Marcin Wasielewski | RM,LWB,LM,RWB | 32 | Poland | 278 k€ | 6,50 | 0 | 0 | 2/0 |  |
+| 26 | Damian Rasak | CDM,CM | 30 | Poland | 189 k€ | – | 0 | 0 | 0/0 |  |
+| 31 | Szymon Bartlewicz | RW | 20 | Poland | 274 k€ | 6,46 | 1 | 0 | 0/0 | osäker |
+| 68 | Bartosz Wolski | CM,CAM,CDM | 29 | Poland | 600 k€ | 6,88 | 0 | 0 | 0/0 |  |
+| 77 | Mateusz Kowalczyk | CM,CDM | 22 | Poland | 1,6 M€ | 7,02 | 0 | 0 | 1/0 |  |
+| 97 | Erik Jirka | RM,RWB,RW | 29 | Slovakia | 452 k€ | 6,54 | 0 | 0 | 1/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 10 | Marcel Wędrychowski | RW,CAM | 24 | Poland | 380 k€ | 6,06 | 0 | 0 | 2/0 |  |
+| 15 | Eman Marković | RW,CAM | 27 | Norway | 452 k€ | 7,04 | 1 | 0 | 1/0 |  |
+| 17 | Ilya Shkurin | ST | 27 | Belarus | 728 k€ | 7,44 | 6 | 1 | 0/0 |  |
+| 21 | Jakub Kokosiński | Attacker | 19 | Poland | 505 k€ | – | 1 | 0 | 0/0 |  |
+| 27 | Bartosz Nowak | LW,CAM | 33 | Poland | 286 k€ | 8,06 | 2 | 5 | 0/0 |  |
+| 99 | Adam Zrelák | ST | 32 | Slovakia | 189 k€ | 5,89 | 0 | 0 | 0/0 | osäker |

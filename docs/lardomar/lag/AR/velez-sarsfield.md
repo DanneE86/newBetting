@@ -71,3 +71,47 @@ Form (äldst → senast): VOOOOVOV · senaste match 2026-09-21
 | Gimnasia Mendoza | 1 | 0-0-1 | 2–3 | −1,64 | −32 pe | 2026-04-03 2-3 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Guillermo Barros Schelotto. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Emanuel Mammana (skadad, åter Mid November 2026), Jano Gordon (skadad, åter Late October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Tomás Marchiori | GK | 31 | Argentina | 1,5 M€ | – | 0 | 0 | 0/0 |  |
+| 23 | Facundo Sanguinetti | GK | 25 | Argentina | 1,7 M€ | – | 0 | 0 | 0/0 |  |
+| 25 | Franco Villalba | Keeper | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 34 | Álvaro Busso | Keeper | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 42 | Agustín Cortez | Keeper | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Emanuel Mammana | CB | 30 | Argentina | 1,7 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid November 2026 |
+| 3 | Elías Gómez | LB | 32 | Argentina | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 4 | Joaquín García | RB | 25 | Argentina | 2,5 M€ | – | 0 | 0 | 0/0 |  |
+| 16 | Lisandro Magallán | CB | 33 | Argentina | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 18 | Simón Escobar | LB,LW | 17 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 19 | Leo Cristaldo | CB | 17 | Paraguay | – | – | 0 | 0 | 0/0 |  |
+| 21 | Jano Gordon | RB | 22 | Argentina | 1,6 M€ | – | 0 | 0 | 0/0 | skadad, åter Late October 2026 |
+| 32 | Thiago Silvero | CB,RB | 20 | Argentina | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 46 | Ulises Piedrabuena | Defender | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 47 | Alexis Pereyra | Defender | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Claudio Baeza | CDM | 32 | Chile | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 8 | Lucas Robertone | CDM | 29 | Argentina | 1,4 M€ | – | 0 | 0 | 0/0 |  |
+| 10 | Diego Valdés | CAM,RW | 32 | Chile | 1,7 M€ | – | 0 | 0 | 0/0 |  |
+| 22 | Manuel Lanzini | CAM,LW | 33 | Argentina | 464 k€ | – | 0 | 0 | 0/0 |  |
+| 29 | Rodrigo Aliendro | CDM | 35 | Argentina | 490 k€ | – | 0 | 0 | 0/0 |  |
+| 33 | Thiago Villalba | Midfielder | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 48 | Luca Feler | CDM | 18 | Argentina | 782 k€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 11 | Matías Pellegrini | RW,LW | 26 | Argentina | 993 k€ | – | 0 | 0 | 0/0 |  |
+| 15 | Dilan Godoy | ST,LW | 20 | Argentina | 1,4 M€ | – | 0 | 0 | 0/0 |  |
+| 17 | Álex Verón | LW | 17 | Argentina | 945 k€ | – | 0 | 0 | 0/0 |  |
+| 27 | Simon Prima | Attacker | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 30 | Lautaro Piola | Attacker | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 35 | Matías Arias | LW | 19 | Argentina | 863 k€ | – | 0 | 0 | 0/0 |  |
+| 37 | Juan Cruz Policella | CAM | 17 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 39 | Thiago Aguirre | ST | 17 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 77 | Ronaldo Martínez | ST | 30 | Paraguay | 2,3 M€ | – | 0 | 0 | 0/0 |  |

@@ -21,13 +21,13 @@ Form (äldst → senast): OOVOOFVO · senaste match 2026-09-19
 | Säsong | Liga | M | P/M | Mot marknaden (hemma / borta) | Kryss (odds) | Mål för–emot | xG för–emot | xP/M |
 |---|---|---|---|---|---|---|---|---|
 | 2017/18 | CH | 46 | 1,00 | −0,22 (+0,08 / −0,53) | 15 % (29 %) | 0,83–1,48 | 1,36–1,47* | 1,30 |
-| 2018/19 | CH | 46 | 1,33 | +0,04 (−0,14 / +0,21) | 41 % (29 %) | 1,39–1,26 | 1,47–1,28* | 1,50 |
+| 2018/19 | CH | 46 | 1,33 | +0,04 (−0,14 / +0,21) | 41 % (29 %) | 1,39–1,26 | 1,47–1,29* | 1,50 |
 | 2019/20 | CH | 46 | 1,09 | −0,15 (−0,33 / +0,04) | 30 % (29 %) | 1,17–1,63 | 1,33–1,30* | 1,38 |
-| 2020/21 | CH | 46 | 1,13 | +0,00 (−0,33 / +0,34) | 28 % (30 %) | 0,80–1,33 | 1,05–1,25* | 1,24 |
+| 2020/21 | CH | 46 | 1,13 | +0,00 (−0,33 / +0,34) | 28 % (30 %) | 0,80–1,33 | 1,06–1,25* | 1,24 |
 | 2021/22 | CH | 46 | 1,02 | −0,14 (−0,21 / −0,06) | 30 % (29 %) | 1,09–1,63 | 1,25–1,36* | 1,29 |
-| 2022/23 | CH | 46 | 1,15 | −0,04 (−0,16 / +0,08) | 24 % (29 %) | 1,02–1,26 | 1,16–1,33* | 1,26 |
+| 2022/23 | CH | 46 | 1,15 | −0,04 (−0,16 / +0,08) | 24 % (29 %) | 1,02–1,26 | 1,16–1,34* | 1,26 |
 | 2023/24 | CH | 46 | 1,09 | −0,12 (+0,16 / −0,39) | 24 % (26 %) | 1,09–1,41 | 1,36–1,57* | 1,27 |
-| 2024/25 | EL1 | 46 | 2,41 | +0,36 (+0,46 / +0,26) | 20 % (23 %) | 1,83–0,67 | 1,50–0,86* | 1,78 |
+| 2024/25 | EL1 | 46 | 2,41 | +0,36 (+0,46 / +0,26) | 20 % (23 %) | 1,83–0,67 | 1,51–0,86* | 1,78 |
 | 2025/26 | CH | 46 | 1,39 | −0,23 (+0,10 / −0,57) | 28 % (27 %) | 1,24–1,22 | 1,47–1,21* | 1,54 |
 | 2026/27 | CH | 8 | 1,38 | +0,03 (−0,44 / +0,51) | 63 % (27 %) | 1,50–1,38 | 1,46–1,38* | 1,44 |
 
@@ -87,3 +87,41 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-08-16 | Stryk 4914 | Blackburn - Birmingham | 2 ✓ | 50 % | 39 % |
 | 2026-09-19 | Stryk 4971 | Birmingham - Middlesbrough | X | 26 % | 34 % |
 | 2026-01-01 | Europa 2536 | Watford - Birmingham | 1 | 20 % | 30 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Chris Davies. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Marc Leonard (osäker)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | James Beadle | GK | 22 | England | 9,3 M€ | 6,95 | 0 | 0 | 0/0 |  |
+| 21 | Ryan Allsop | GK | 34 | England | 322 k€ | – | 0 | 0 | 0/0 |  |
+| 30 | Bradley Mayo | GK | 22 | England | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Ethan Laird | LB | 25 | England | 1,9 M€ | 6,52 | 0 | 0 | 0/0 |  |
+| 3 | Lee Buchanan | LB | 25 | England | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 4 | Christoph Klarer | CB | 26 | Austria | 5,3 M€ | 7,06 | 0 | 0 | 2/0 |  |
+| 5 | Phil Neumann | CB | 29 | Germany | 1,6 M€ | 7,35 | 2 | 0 | 3/0 |  |
+| 20 | Alexander Cochrane | LB | 26 | England | 1,8 M€ | 7,01 | 0 | 1 | 2/0 |  |
+| 23 | Dael Fry | CB | 29 | England | 2,4 M€ | – | 0 | 0 | 0/0 |  |
+| 25 | Kristoffer Lund Hansen | LB,LWB,LM | 24 | USA | 3,7 M€ | 6,37 | 0 | 0 | 0/0 |  |
+| 26 | Bright Osayi-Samuel | RB | 28 | Nigeria | 2,5 M€ | 7,04 | 0 | 0 | 3/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 8 | Seung-Ho Paik | CDM,CAM,CM | 29 | South Korea | 1,5 M€ | 6,76 | 1 | 0 | 0/0 |  |
+| 12 | Marc Leonard | CDM,CM | 24 | Scotland | 1,6 M€ | – | 0 | 0 | 0/0 | osäker |
+| 14 | Jhon Solís | CDM | 21 | Colombia | 1,8 M€ | 7,24 | 0 | 1 | 1/0 |  |
+| 18 | Max Bird | CDM,LW,CAM | 26 | England | 1,8 M€ | 6,27 | 0 | 0 | 0/0 |  |
+| 19 | Taylor Gardner-Hickman | CDM,RWB | 24 | England | 1,4 M€ | – | 0 | 0 | 0/0 |  |
+| 24 | Tomoki Iwata | RB,CDM,CM | 29 | Japan | 1,2 M€ | 6,93 | 0 | 0 | 0/0 |  |
+| 28 | Jay Stansfield | CAM,ST,LW,LM | 23 | England | 17,2 M€ | 6,95 | 1 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Carlos Vicente | RW,RM | 27 | Spain | 5,0 M€ | 6,95 | 2 | 0 | 2/0 |  |
+| 9 | August Priske | ST | 22 | Denmark | 2,2 M€ | 6,56 | 1 | 1 | 1/0 |  |
+| 10 | Demarai Gray | LW,RW | 30 | Jamaica | 2,1 M€ | 6,43 | 1 | 0 | 0/0 |  |
+| 16 | Patrick Roberts | RW | 29 | England | 2,4 M€ | 6,98 | 0 | 2 | 1/0 |  |
+| 17 | Liam Millar | LW,LM,CAM,LWB,ST | 27 | Canada | 2,1 M€ | 7,81 | 1 | 3 | 0/0 |  |
+| 32 | Luis Vázquez | ST | 25 | Argentina | 2,2 M€ | 6,25 | 0 | 0 | 2/0 |  |
+| 33 | Marvin Ducksch | ST,CAM | 32 | Germany | 1,6 M€ | 5,91 | 0 | 0 | 0/0 |  |

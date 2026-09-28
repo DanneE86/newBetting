@@ -69,3 +69,52 @@ Form (äldst → senast): FVOVVFVO · senaste match 2026-09-18
 | Gimnasia Mendoza | 2 | 1-0-1 | 3–2 | +0,09 | −30 pe | 2026-09-11 2-0 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Julio Vaccari. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Lucas Souto (skadad, åter About 1-2 weeks), Aarón Molinas (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Matías Borgogno | GK | 28 | Argentina | 1,7 M€ | – | 0 | 0 | 0/0 |  |
+| 36 | Lautaro Amadé | GK | 26 | Argentina | 267 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Demián Domínguez | Defender | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 2 | Samuel Lucero | LB,LM,CB | 21 | Argentina | 957 k€ | – | 0 | 0 | 0/0 |  |
+| 3 | Fernando Román | LB,CB | 27 | Paraguay | 532 k€ | – | 0 | 0 | 0/0 |  |
+| 6 | Ezequiel Burdín | CB | 21 | Uruguay | 665 k€ | – | 0 | 0 | 0/0 |  |
+| 13 | Mateo López | Defender | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 16 | Ayrton Portillo | RB,RWB,CM,RM,RW | 26 | Argentina | 938 k€ | – | 0 | 0 | 0/0 |  |
+| 21 | David Martínez | CB,LB | 28 | Paraguay | 465 k€ | – | 0 | 0 | 0/0 |  |
+| 28 | Valentín Loza | RB | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 29 | Damián Fernández | CB | 25 | Argentina | 1,4 M€ | – | 0 | 0 | 0/0 |  |
+| 32 | Nazareno Roselli | CB | 20 | Argentina | 582 k€ | – | 0 | 0 | 0/0 |  |
+| 33 | Lucas Souto | CB,RB,RM | 27 | Argentina | 415 k€ | – | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
+| 40 | Máximo Rodríguez | LB | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Nicolás Palavecino | LM | 23 | Argentina | 575 k€ | – | 0 | 0 | 0/0 |  |
+| 8 | César Pérez | CDM,CAM,CM | 23 | Chile | 2,2 M€ | – | 0 | 0 | 0/0 |  |
+| 10 | Aarón Molinas | CDM,CM,CAM | 26 | Argentina | 2,4 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 11 | Éver Banega | CDM,CM | 38 | Argentina | 245 k€ | – | 0 | 0 | 0/0 |  |
+| 15 | Santiago Sosa | CDM,CM | 21 | Argentina | 2,1 M€ | – | 0 | 0 | 0/0 |  |
+| 19 | David Barbona | CAM,CM | 31 | Argentina | 255 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Maximiliano Porcel | LM | 20 | Argentina | 754 k€ | – | 0 | 0 | 0/0 |  |
+| 23 | Mateo Aguiar | Midfielder | 19 | Argentina | 976 k€ | – | 0 | 0 | 0/0 |  |
+| 27 | Domingo Blanco | LW,LM | 31 | Argentina | 699 k€ | – | 0 | 0 | 0/0 |  |
+| 44 | Jonás Cabrera | Midfielder | 17 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 45 | Thiago Martínez | Midfielder | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 55 | Julián López | CM,CDM | 26 | Argentina | 575 k€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Tomás Pérez | ST | 20 | Argentina | 568 k€ | – | 0 | 0 | 0/0 |  |
+| 9 | Leandro Fernández | ST | 35 | Argentina | 472 k€ | – | 0 | 0 | 0/0 |  |
+| 11 | Tiziano Perrotta | ST | 19 | Argentina | 2,0 M€ | – | 0 | 0 | 0/0 |  |
+| 17 | Agustín Hausch | RW,LW,RWB | 23 | Argentina | 643 k€ | – | 0 | 0 | 0/0 |  |
+| 24 | Juan Gutiérrez | LW,CAM,RW,ST,LM | 24 | Uruguay | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| 25 | Facundo Altamira | ST | 25 | Argentina | 954 k€ | – | 0 | 0 | 0/0 |  |
+| 26 | Jeremías Lucco | RW | 20 | Argentina | 765 k€ | – | 0 | 0 | 0/0 |  |
+| 31 | Alan Coria | LW | 19 | Argentina | 746 k€ | – | 0 | 0 | 0/0 |  |
+| 41 | Ramiro Gagliardi | Attacker | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 43 | Emiliano Cantero | Attacker | 18 | Paraguay | – | – | 0 | 0 | 0/0 |  |

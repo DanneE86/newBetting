@@ -58,3 +58,47 @@ Form (äldst → senast): VOVOOVOV · senaste match 2026-09-20
 | GKS Katowice | 4 | 3-1-0 | 11–4 | +0,64 | +2 pe | 2026-02-13 1-1 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Marek Papszun. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Antonio Čolak (osäker), Vahan Bichakhchyan (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Ivan Brkić | GK | 31 | Croatia | 337 k€ | – | 0 | 0 | 0/0 |  |
+| 1 | Jan Bienduga | GK | 18 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 89 | Ottó Hindrich | GK | 24 | Romania | 1,5 M€ | 7,34 | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Bartosz Korzyńsky | CB | 17 | Poland | – | – | 0 | 0 | 0/0 |  |
+|  | Mateusz Lauryn | CB | 18 | Poland | – | – | 0 | 0 | 0/0 |  |
+|  | Shinnosuke Fukuda | RB,RWB | 26 | Japan | 493 k€ | – | 0 | 0 | 0/0 |  |
+| 5 | Robert Deziel Jr. | CB | 21 | USA | 217 k€ | 7,24 | 0 | 0 | 1/0 |  |
+| 8 | Rafał Augustyniak | CB,CM,CDM | 32 | Poland | 171 k€ | 7,99 | 4 | 2 | 0/0 |  |
+| 13 | Arkadiusz Reca | LB,LM | 31 | Poland | 275 k€ | 6,45 | 0 | 0 | 0/0 |  |
+| 22 | Paweł Wszołek | RB,RW,RM,RWB | 34 | Poland | 167 k€ | 7,55 | 1 | 5 | 1/0 |  |
+| 24 | Zoran Arsenić | CB | 32 | Croatia | 216 k€ | 6,85 | 1 | 0 | 0/0 |  |
+| 55 | Artur Jędrzejczyk | CB | 38 | Poland | 122 k€ | – | 0 | 0 | 0/0 |  |
+| 91 | Kamil Piątkowski | CB | 26 | Poland | 1,8 M€ | 7,49 | 0 | 1 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 4 | Damian Szymański | CM,CDM | 31 | Poland | 514 k€ | 7,05 | 0 | 0 | 0/0 |  |
+| 6 | Henrique Arreiol | CAM | 21 | Portugal | 407 k€ | 6,75 | 0 | 0 | 0/0 |  |
+| 11 | Kacper Chodyna | RM,RW | 27 | Poland | 325 k€ | 6,67 | 0 | 0 | 0/0 |  |
+| 17 | Mateusz Szczepaniak | CAM | 19 | Poland | 823 k€ | 6,53 | 0 | 0 | 0/0 |  |
+| 19 | Rúben Vinagre | LB,LW,LM,LWB | 27 | Portugal | 1,1 M€ | 7,55 | 1 | 3 | 1/0 |  |
+| 23 | Michal Sevcík | CAM,RW | 24 | Czechia | 546 k€ | 7,17 | 1 | 0 | 0/0 |  |
+| 27 | Bogdan Vyunnyk | LM | 24 | Ukraine | 526 k€ | 6,00 | 0 | 0 | 0/0 |  |
+| 30 | Erik Mikanovich | LM | 18 | Belarus | – | – | 0 | 0 | 0/0 |  |
+| 53 | Wojciech Urbański | CM,CAM,CDM | 21 | Poland | 771 k€ | 6,65 | 0 | 0 | 1/0 |  |
+| 65 | Filip Przybyłko | Midfielder | 18 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 67 | Bartosz Kapustka | CM,CAM,CDM | 29 | Poland | 600 k€ | 7,41 | 2 | 0 | 2/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Jan Kuchta | ST | 29 | Czechia | 1,4 M€ | 6,63 | 0 | 0 | 0/0 |  |
+| 9 | Rafał Adamski | ST,LW | 24 | Poland | 251 k€ | 6,53 | 3 | 0 | 3/0 |  |
+| 14 | Antonio Čolak | ST | 33 | Croatia | 211 k€ | – | 0 | 0 | 0/0 | osäker |
+| 20 | Jakub Żewłakow | LW | 19 | Poland | 696 k€ | 6,78 | 2 | 0 | 1/0 |  |
+| 21 | Vahan Bichakhchyan | RW,CM | 27 | Armenia | 483 k€ | 7,24 | 0 | 1 | 0/0 | skadad, åter Early October 2026 |
+| 79 | Łukasz Zjawiński | ST | 25 | Poland | 207 k€ | 6,89 | 3 | 0 | 0/0 |  |
+| 99 | Samuel Kovácik | LW | 19 | Slovakia | 942 k€ | – | 0 | 0 | 0/0 |  |

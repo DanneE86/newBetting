@@ -5,6 +5,8 @@ Genererad 2026-09-28. Ligans lärdomar: [LL](../../ligor/LL.md). "Mot marknaden"
 ## I korthet
 
 - Stark historik mot Ath Madrid (−0,56 p/match mot marknaden, 17 möten), Espanol (+0,56 p/match mot marknaden, 13 möten), Elche (+0,86 p/match mot marknaden, 9 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Utan Mikel Oyarzabal (15 % av anfallet): 0,20 poäng per match mot 1,29 med (5 mot 78 matcher), mot marknaden −1,07 mot −0,14.
+- Utan Orri Óskarsson (12 % av anfallet): 1,50 poäng per match mot 1,22 med (4 mot 79 matcher), mot marknaden −0,10 mot −0,20.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -12,8 +14,8 @@ Form (äldst → senast): OFFVOVFV · senaste match 2026-09-20
 
 | Mått | Värde |
 |---|---|
-| Tur (poäng − xP per match) | +0,18 |
-| xG-målskillnad − målskillnad | +0,12 |
+| Tur (poäng − xP per match) | +0,26 |
+| xG-målskillnad − målskillnad | −0,04 |
 | Poäng mot marknaden per match | +0,07 |
 
 ## Säsonger
@@ -29,9 +31,22 @@ Form (äldst → senast): OFFVOVFV · senaste match 2026-09-20
 | 2023/24 | LL | 38 | 1,58 | −0,09 (−0,37 / +0,18) | 32 % (28 %) | 1,34–1,03 | 1,29–1,24 | 1,41 |
 | 2024/25 | LL | 38 | 1,21 | −0,34 (−0,34 / −0,33) | 18 % (29 %) | 0,92–1,21 | 1,26–1,29 | 1,36 |
 | 2025/26 | LL | 38 | 1,21 | −0,09 (−0,05 / −0,13) | 34 % (27 %) | 1,55–1,61 | 1,57–1,59 | 1,43 |
-| 2026/27 | LL | 7 | 1,43 | −0,02 (−0,25 / +0,15) | 14 % (25 %) | 1,29–1,86 | 1,62–1,92* | 1,25 |
+| 2026/27 | LL | 7 | 1,43 | −0,02 (−0,25 / +0,15) | 14 % (25 %) | 1,29–1,86 | 1,34–1,83 | 1,16 |
 
-\* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+## Nyckelspelare (Understat, 2024/25–)
+
+Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
+
+| Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
+|---|---|---|---|---|
+| Mikel Oyarzabal | 15 % | 5 / 78 | 0,20 / 1,29 | −1,07 / −0,14 |
+| Orri Óskarsson | 12 % | 4 / 79 | 1,50 / 1,22 | −0,10 / −0,20 |
+| Carlos Soler | 8 % | 0 / 83 | – / 1,23 | – / −0,20 |
+| Sergio Gómez | 7 % | 0 / 83 | – / 1,23 | – / −0,20 |
+| Gonçalo Guedes | 6 % | 6 / 77 | 0,67 / 1,27 | −0,33 / −0,19 |
+| Brais Méndez | 6 % | 17 / 66 | 1,06 / 1,27 | −0,18 / −0,20 |
+
+Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -75,3 +90,44 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-09-28 | Europa 2509 | Barcelona - Real Sociedad | 1 | 3 % | 9 % |
 | 2025-09-24 | Europa 2508 | Real Sociedad - Mallorca | 1 ✓ | 59 % | 53 % |
 | 2025-08-24 | Europa 2499 | Real Sociedad - Espanyol | X | 61 % | 53 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Pellegrino Matarazzo. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Igor Zubeldia (skadad, åter Early October 2026), Álvaro Odriozola (skadad, åter Early November 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Alex Remiro | GK | 31 | Spain | 10,0 M€ | 7,09 | 0 | 0 | 0/0 |  |
+| 13 | Unai Marrero | GK | 24 | Spain | 992 k€ | 7,88 | 0 | 0 | 0/0 |  |
+| 32 | Aitor Fraga | GK | 23 | Spain | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Jon Aramburu | RB | 24 | Venezuela | 15,4 M€ | 7,20 | 0 | 0 | 3/0 |  |
+| 3 | Aihen Muñoz | LB,CB | 29 | Spain | 1,5 M€ | 6,22 | 0 | 0 | 0/0 |  |
+| 5 | Igor Zubeldia | CB | 29 | Spain | 7,2 M€ | 7,04 | 0 | 0 | 2/0 | skadad, åter Early October 2026 |
+| 6 | Jon Martín | CB | 20 | Spain | 14,5 M€ | 6,56 | 0 | 0 | 0/1 |  |
+| 16 | Jon Pacheco | CB | 25 | Spain | 5,4 M€ | 6,40 | 0 | 0 | 0/0 |  |
+| 17 | Sergio Gómez | LB | 26 | Spain | 11,2 M€ | 7,14 | 0 | 0 | 1/0 |  |
+| 19 | Mamadou Sarr | CB | 21 | Senegal | 23,6 M€ | 6,94 | 0 | 0 | 0/0 |  |
+| 20 | Álvaro Odriozola | RB | 30 | Spain | 750 k€ | – | 0 | 0 | 0/0 | skadad, åter Early November 2026 |
+| 22 | Héctor Fort | RWB,RM | 20 | Spain | 13,4 M€ | – | 0 | 0 | 0/0 |  |
+| 34 | Luken Beitia | CB | 22 | Spain | 1,4 M€ | 5,76 | 0 | 0 | 1/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 4 | Jon Gorrotxategi | CDM,CM | 24 | Spain | 5,7 M€ | 6,58 | 0 | 0 | 0/0 |  |
+| 8 | Beñat Turrientes | CDM,CM | 24 | Spain | 9,8 M€ | 6,93 | 0 | 0 | 1/0 |  |
+| 18 | Carlos Soler | CM,CDM,CAM,ST | 29 | Spain | 5,4 M€ | 7,35 | 1 | 2 | 0/0 |  |
+| 21 | Yangel Herrera | CM,CDM | 28 | Venezuela | 6,8 M€ | 6,60 | 1 | 0 | 3/0 |  |
+| 24 | Luka Sučić | CAM,ST,RW,RM | 24 | Croatia | 10,0 M€ | 7,30 | 3 | 0 | 2/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Ander Barrenetxea | LW,RW,LM,ST,RM | 24 | Spain | 16,4 M€ | 6,63 | 2 | 0 | 0/0 |  |
+| 9 | Orri Óskarsson | ST | 22 | Iceland | 12,4 M€ | 6,09 | 1 | 0 | 1/1 |  |
+| 10 | Mikel Oyarzabal | ST | 29 | Spain | 25,1 M€ | 6,82 | 0 | 2 | 1/0 |  |
+| 11 | Gonçalo Guedes | LW,LM,RW,RM,ST | 29 | Portugal | 3,6 M€ | 6,68 | 0 | 0 | 0/0 |  |
+| 12 | Job Ochieng | LW,ST,RM,LM | 23 | Kenya | 979 k€ | 6,93 | 1 | 3 | 0/0 |  |
+| 14 | Takefusa Kubo | RW,CAM,RM | 25 | Japan | 23,9 M€ | 6,44 | 0 | 0 | 0/0 |  |
+| 15 | Pablo Marín | RW,CAM,LM,LW | 23 | Spain | 7,8 M€ | – | 0 | 0 | 0/0 |  |
+| 23 | Arsen Zakharyan | LW | 23 | Russia | 11,1 M€ | – | 0 | 0 | 0/0 |  |
+| 29 | Álex Marchal | LM,ST,LW | 19 | Spain | 2,5 M€ | 6,10 | 0 | 0 | 0/0 |  |
+| 34 | Arkaitz Mariezkurrena | ST,CAM | 21 | Spain | 1,5 M€ | – | 0 | 0 | 0/0 |  |

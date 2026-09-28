@@ -4,8 +4,7 @@ Genererad 2026-09-28. Ligans lärdomar: [BL](../../ligor/BL.md). "Mot marknaden"
 
 ## I korthet
 
-- Senaste 8: tur med +0,79 poäng per match mot xP. Marknaden prisar redan in det i ligan (ingen bekräftad effekt), så det är inget spel i sig.
-- Senaste 8: xG-målskillnaden är −0,78 per match sämre än målskillnaden.
+- Senaste 8: tur med +0,61 poäng per match mot xP. Marknaden prisar redan in det i ligan (ingen bekräftad effekt), så det är inget spel i sig.
 - 2025/26: +0,38 poäng per match mot marknaden. Ligan visar ingen persistens, så räkna inte med att det fortsätter.
 - På Stryktipset/Europatipset streckas lagets vinst ×1,19 av vår sannolikhet (5 matcher). Folket överspelar laget: garderingar mot det ger mer i utdelning.
 
@@ -15,8 +14,8 @@ Form (äldst → senast): VFVVVVVV · senaste match 2026-09-19
 
 | Mått | Värde |
 |---|---|
-| Tur (poäng − xP per match) | +0,79 |
-| xG-målskillnad − målskillnad | −0,78 |
+| Tur (poäng − xP per match) | +0,61 |
+| xG-målskillnad − målskillnad | −0,43 |
 | Poäng mot marknaden per match | +0,78 |
 
 ## Säsonger
@@ -32,9 +31,22 @@ Form (äldst → senast): VFVVVVVV · senaste match 2026-09-19
 | 2023/24 | BL | 34 | 1,85 | +0,21 (−0,02 / +0,43) | 26 % (22 %) | 2,00–1,26 | 2,09–1,63 | 1,65 |
 | 2024/25 | BL | 34 | 1,68 | −0,18 (+0,10 / −0,46) | 18 % (22 %) | 2,09–1,50 | 2,02–1,42 | 1,68 |
 | 2025/26 | BL | 34 | 2,15 | +0,38 (+0,40 / +0,35) | 21 % (22 %) | 2,06–1,00 | 1,99–1,26 | 1,78 |
-| 2026/27 | BL | 4 | 3,00 | +1,04 (+0,64 / +1,43) | 0 % (20 %) | 2,25–0,50 | 1,66–1,27* | 1,63 |
+| 2026/27 | BL | 4 | 3,00 | +1,04 (+0,64 / +1,43) | 0 % (20 %) | 2,25–0,50 | 2,15–1,06 | 1,99 |
 
-\* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+## Nyckelspelare (Understat, 2024/25–)
+
+Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
+
+| Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
+|---|---|---|---|---|
+| Serhou Guirassy | 16 % | 0 / 72 | – / 1,97 | – / +0,15 |
+| Maximilian Beier | 12 % | 1 / 71 | 3,00 / 1,96 | +0,34 / +0,15 |
+| Ethan Nwaneri | 12 % | 0 / 72 | – / 1,97 | – / +0,15 |
+| Julian Ryerson | 10 % | 2 / 70 | 2,00 / 1,97 | −0,09 / +0,16 |
+| Julian Brandt | 5 % | 3 / 69 | 1,00 / 2,01 | −0,36 / +0,17 |
+| Konstantinos Karetsas | 5 % | 0 / 72 | – / 1,97 | – / +0,15 |
+
+Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -68,3 +80,50 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-04-26 | Europa 2569 | Dortmund - Freiburg | 1 ✓ | 80 % | 66 % |
 | 2025-12-14 | Europa 2531 | Freiburg - Dortmund | X | 55 % | 48 % |
 | 2025-12-07 | Europa 2529 | Dortmund - Hoffenheim | 1 ✓ | 71 % | 59 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Niko Kovač. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Emre Can (skadad, åter Mid November 2026), Filippo Mane (skadad, åter Mid October 2026), Justin Lerma (skadad, åter About 1-2 weeks), Giannis Konstantelias (skadad, åter Late May 2027)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Gregor Kobel | GK | 28 | Switzerland | 29,9 M€ | 7,35 | 0 | 0 | 0/0 |  |
+| 30 | Patrick Drewes | GK | 33 | Germany | 320 k€ | – | 0 | 0 | 0/0 |  |
+| 31 | Silas Ostrzinski | GK | 22 | Germany | 388 k€ | – | 0 | 0 | 0/0 |  |
+| 33 | Alexander Meyer | GK | 35 | Germany | 294 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Jan-Luca Riedl | CB | 17 | Germany | – | – | 0 | 0 | 0/0 |  |
+|  | Miguel Adje | LB | 18 | Germany | – | – | 0 | 0 | 0/0 |  |
+|  | Roméo Ritter | CB | 18 | Germany | – | – | 0 | 0 | 0/0 |  |
+| 3 | Waldemar Anton | CB | 30 | Germany | 14,1 M€ | 7,86 | 0 | 1 | 0/0 |  |
+| 4 | Nico Schlotterbeck | CB | 26 | Germany | 31,6 M€ | 7,99 | 0 | 0 | 1/0 |  |
+| 5 | Ramy Bensebaini | CB,LWB | 31 | Algeria | 9,6 M€ | 6,43 | 0 | 0 | 0/0 |  |
+| 22 | Joane Gadou | CB | 19 | France | 11,0 M€ | 7,25 | 0 | 0 | 1/0 |  |
+| 23 | Emre Can | CB | 32 | Germany | 2,0 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid November 2026 |
+| 36 | Kauã Prates | LB | 18 | Brazil | 2,1 M€ | – | 0 | 0 | 0/0 |  |
+| 39 | Filippo Mane | CB | 21 | Italy | 2,3 M€ | 6,22 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 49 | Luca Reggiani | CB | 18 | Italy | 5,3 M€ | 6,35 | 0 | 0 | 1/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 7 | Jobe Bellingham | CDM,CM | 21 | England | 27,6 M€ | 7,85 | 0 | 1 | 2/0 |  |
+| 8 | Felix Nmecha | CDM,CM | 25 | Germany | 40,8 M€ | 7,77 | 2 | 0 | 0/0 |  |
+| 14 | Maximilian Beier | CAM,LWB,ST,LM | 23 | Germany | 30,8 M€ | 7,38 | 1 | 2 | 1/0 |  |
+| 17 | Carney Chukwuemeka | CAM | 22 | Austria | 17,4 M€ | 6,26 | 0 | 0 | 0/0 |  |
+| 18 | Ethan Nwaneri | CAM,CM,RW | 19 | England | 31,5 M€ | 6,93 | 0 | 0 | 0/0 |  |
+| 20 | Marcel Sabitzer | CDM,LW,CM,CAM | 32 | Austria | 2,5 M€ | 6,92 | 0 | 1 | 0/0 |  |
+| 24 | Daniel Svensson | LWB,LM,RWB,LB,CB | 24 | Sweden | 19,7 M€ | 7,74 | 0 | 0 | 1/0 |  |
+| 25 | Joey Veerman | CDM,CM | 27 | Netherlands | 18,3 M€ | 6,80 | 0 | 0 | 1/0 |  |
+| 26 | Julian Ryerson | RWB,RB,RM,LWB | 28 | Norway | 17,6 M€ | 7,12 | 0 | 0 | 2/0 |  |
+| 28 | Justin Lerma | CAM,CDM,CM | 18 | Ecuador | – | – | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
+| 40 | Samuele Inácio | CAM,CM | 18 | Italy | 3,6 M€ | – | 0 | 0 | 0/1 |  |
+| 44 | Enzo Duarte | CM | 17 | Luxembourg | 766 k€ | – | 0 | 0 | 0/0 |  |
+| 45 | Giannis Konstantelias | CAM,CDM,LW,ST | 23 | Greece | 15,6 M€ | 7,87 | 1 | 0 | 0/0 | skadad, åter Late May 2027 |
+| 48 | Mussa Kaba | CDM,CB | 17 | Germany | 453 k€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Marwan-Omir Mirza | RW | 17 | Germany | – | – | 0 | 0 | 0/0 |  |
+| 9 | Serhou Guirassy | ST | 30 | Guinea | 30,1 M€ | 7,81 | 2 | 2 | 0/0 |  |
+| 19 | Konstantinos Karetsas | RW,CAM,RM | 18 | Greece | 25,9 M€ | 7,14 | 0 | 1 | 0/0 |  |
+| 21 | Fábio Silva | ST,CAM | 24 | Portugal | 23,5 M€ | 6,99 | 2 | 0 | 0/0 |  |
+| 41 | Mathis Albert | LW,CAM | 17 | USA | 690 k€ | – | 0 | 0 | 0/0 |  |

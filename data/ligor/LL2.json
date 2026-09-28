@@ -1,0 +1,475 @@
+{
+ "updatedAt": "2026-09-28T19:47:27.474Z",
+ "league": "LL2",
+ "fotmobId": 140,
+ "name": "LaLiga2",
+ "country": "ESP",
+ "table": [
+  {
+   "rank": 1,
+   "team": "Castellon",
+   "fotmobName": "Castellón",
+   "fotmobId": 10279,
+   "group": null,
+   "played": 7,
+   "won": 6,
+   "drawn": 1,
+   "lost": 0,
+   "goals": "14-2",
+   "gd": 12,
+   "pts": 19
+  },
+  {
+   "rank": 2,
+   "team": "Eibar",
+   "fotmobName": "Eibar",
+   "fotmobId": 8372,
+   "group": null,
+   "played": 7,
+   "won": 6,
+   "drawn": 0,
+   "lost": 1,
+   "goals": "15-6",
+   "gd": 9,
+   "pts": 18
+  },
+  {
+   "rank": 3,
+   "team": "Almeria",
+   "fotmobName": "Almería",
+   "fotmobId": 9865,
+   "group": null,
+   "played": 7,
+   "won": 5,
+   "drawn": 0,
+   "lost": 2,
+   "goals": "11-4",
+   "gd": 7,
+   "pts": 15
+  },
+  {
+   "rank": 4,
+   "team": "Burgos",
+   "fotmobName": "Burgos CF",
+   "fotmobId": 7876,
+   "group": null,
+   "played": 7,
+   "won": 4,
+   "drawn": 2,
+   "lost": 1,
+   "goals": "11-7",
+   "gd": 4,
+   "pts": 14
+  },
+  {
+   "rank": 5,
+   "team": "Girona",
+   "fotmobName": "Girona",
+   "fotmobId": 7732,
+   "group": null,
+   "played": 7,
+   "won": 4,
+   "drawn": 1,
+   "lost": 2,
+   "goals": "14-8",
+   "gd": 6,
+   "pts": 13
+  },
+  {
+   "rank": 6,
+   "team": "Mallorca",
+   "fotmobName": "Mallorca",
+   "fotmobId": 8661,
+   "group": null,
+   "played": 7,
+   "won": 4,
+   "drawn": 1,
+   "lost": 2,
+   "goals": "8-3",
+   "gd": 5,
+   "pts": 13
+  },
+  {
+   "rank": 7,
+   "team": "Sabadell",
+   "fotmobName": "Sabadell",
+   "fotmobId": 4033,
+   "group": null,
+   "played": 7,
+   "won": 3,
+   "drawn": 3,
+   "lost": 1,
+   "goals": "8-6",
+   "gd": 2,
+   "pts": 12
+  },
+  {
+   "rank": 8,
+   "team": "Oviedo",
+   "fotmobName": "Real Oviedo",
+   "fotmobId": 8670,
+   "group": null,
+   "played": 7,
+   "won": 3,
+   "drawn": 2,
+   "lost": 2,
+   "goals": "7-4",
+   "gd": 3,
+   "pts": 11
+  },
+  {
+   "rank": 9,
+   "team": "Tenerife",
+   "fotmobName": "Tenerife",
+   "fotmobId": 9867,
+   "group": null,
+   "played": 7,
+   "won": 3,
+   "drawn": 2,
+   "lost": 2,
+   "goals": "8-9",
+   "gd": -1,
+   "pts": 11
+  },
+  {
+   "rank": 10,
+   "team": "Leganes",
+   "fotmobName": "Leganés",
+   "fotmobId": 7854,
+   "group": null,
+   "played": 7,
+   "won": 3,
+   "drawn": 2,
+   "lost": 2,
+   "goals": "6-7",
+   "gd": -1,
+   "pts": 11
+  },
+  {
+   "rank": 11,
+   "team": "Las Palmas",
+   "fotmobName": "Las Palmas",
+   "fotmobId": 8306,
+   "group": null,
+   "played": 7,
+   "won": 3,
+   "drawn": 1,
+   "lost": 3,
+   "goals": "10-11",
+   "gd": -1,
+   "pts": 10
+  },
+  {
+   "rank": 12,
+   "team": "Sp Gijon",
+   "fotmobName": "Sporting Gijón",
+   "fotmobId": 9869,
+   "group": null,
+   "played": 7,
+   "won": 3,
+   "drawn": 1,
+   "lost": 3,
+   "goals": "5-6",
+   "gd": -1,
+   "pts": 10
+  },
+  {
+   "rank": 13,
+   "team": "Granada",
+   "fotmobName": "Granada",
+   "fotmobId": 7878,
+   "group": null,
+   "played": 7,
+   "won": 2,
+   "drawn": 2,
+   "lost": 3,
+   "goals": "10-11",
+   "gd": -1,
+   "pts": 8
+  },
+  {
+   "rank": 14,
+   "team": "Sociedad B",
+   "fotmobName": "Real Sociedad B",
+   "fotmobId": 161744,
+   "group": null,
+   "played": 7,
+   "won": 2,
+   "drawn": 2,
+   "lost": 3,
+   "goals": "9-10",
+   "gd": -1,
+   "pts": 8
+  },
+  {
+   "rank": 15,
+   "team": "Celta B",
+   "fotmobName": "Celta Fortuna",
+   "fotmobId": 161743,
+   "group": null,
+   "played": 7,
+   "won": 2,
+   "drawn": 2,
+   "lost": 3,
+   "goals": "8-11",
+   "gd": -3,
+   "pts": 8
+  },
+  {
+   "rank": 16,
+   "team": "Valladolid",
+   "fotmobName": "Real Valladolid",
+   "fotmobId": 10281,
+   "group": null,
+   "played": 7,
+   "won": 2,
+   "drawn": 2,
+   "lost": 3,
+   "goals": "6-9",
+   "gd": -3,
+   "pts": 8
+  },
+  {
+   "rank": 17,
+   "team": "Andorra",
+   "fotmobName": "FC Andorra",
+   "fotmobId": 494050,
+   "group": null,
+   "played": 7,
+   "won": 2,
+   "drawn": 0,
+   "lost": 5,
+   "goals": "12-15",
+   "gd": -3,
+   "pts": 6
+  },
+  {
+   "rank": 18,
+   "team": "Cordoba",
+   "fotmobName": "Córdoba",
+   "fotmobId": 7869,
+   "group": null,
+   "played": 7,
+   "won": 2,
+   "drawn": 0,
+   "lost": 5,
+   "goals": "10-16",
+   "gd": -6,
+   "pts": 6
+  },
+  {
+   "rank": 19,
+   "team": "Eldense",
+   "fotmobName": "Eldense",
+   "fotmobId": 8288,
+   "group": null,
+   "played": 7,
+   "won": 1,
+   "drawn": 2,
+   "lost": 4,
+   "goals": "4-9",
+   "gd": -5,
+   "pts": 5
+  },
+  {
+   "rank": 20,
+   "team": "Cadiz",
+   "fotmobName": "Cádiz",
+   "fotmobId": 8385,
+   "group": null,
+   "played": 7,
+   "won": 0,
+   "drawn": 4,
+   "lost": 3,
+   "goals": "7-10",
+   "gd": -3,
+   "pts": 4
+  },
+  {
+   "rank": 21,
+   "team": "Ceuta",
+   "fotmobName": "AD Ceuta FC",
+   "fotmobId": 357259,
+   "group": null,
+   "played": 7,
+   "won": 1,
+   "drawn": 1,
+   "lost": 5,
+   "goals": "6-17",
+   "gd": -11,
+   "pts": 4
+  },
+  {
+   "rank": 22,
+   "team": "Albacete",
+   "fotmobName": "Albacete",
+   "fotmobId": 8393,
+   "group": null,
+   "played": 7,
+   "won": 0,
+   "drawn": 1,
+   "lost": 6,
+   "goals": "4-12",
+   "gd": -8,
+   "pts": 1
+  }
+ ],
+ "tableHistory": {
+  "2026-09-28": [
+   [
+    "Castellon",
+    1,
+    7,
+    19,
+    12
+   ],
+   [
+    "Eibar",
+    2,
+    7,
+    18,
+    9
+   ],
+   [
+    "Almeria",
+    3,
+    7,
+    15,
+    7
+   ],
+   [
+    "Burgos",
+    4,
+    7,
+    14,
+    4
+   ],
+   [
+    "Girona",
+    5,
+    7,
+    13,
+    6
+   ],
+   [
+    "Mallorca",
+    6,
+    7,
+    13,
+    5
+   ],
+   [
+    "Sabadell",
+    7,
+    7,
+    12,
+    2
+   ],
+   [
+    "Oviedo",
+    8,
+    7,
+    11,
+    3
+   ],
+   [
+    "Tenerife",
+    9,
+    7,
+    11,
+    -1
+   ],
+   [
+    "Leganes",
+    10,
+    7,
+    11,
+    -1
+   ],
+   [
+    "Las Palmas",
+    11,
+    7,
+    10,
+    -1
+   ],
+   [
+    "Sp Gijon",
+    12,
+    7,
+    10,
+    -1
+   ],
+   [
+    "Granada",
+    13,
+    7,
+    8,
+    -1
+   ],
+   [
+    "Sociedad B",
+    14,
+    7,
+    8,
+    -1
+   ],
+   [
+    "Celta B",
+    15,
+    7,
+    8,
+    -3
+   ],
+   [
+    "Valladolid",
+    16,
+    7,
+    8,
+    -3
+   ],
+   [
+    "Andorra",
+    17,
+    7,
+    6,
+    -3
+   ],
+   [
+    "Cordoba",
+    18,
+    7,
+    6,
+    -6
+   ],
+   [
+    "Eldense",
+    19,
+    7,
+    5,
+    -5
+   ],
+   [
+    "Cadiz",
+    20,
+    7,
+    4,
+    -3
+   ],
+   [
+    "Ceuta",
+    21,
+    7,
+    4,
+    -11
+   ],
+   [
+    "Albacete",
+    22,
+    7,
+    1,
+    -8
+   ]
+  ]
+ }
+}

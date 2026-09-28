@@ -52,3 +52,43 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-05-17 | Stryk 4953 | Västerås - AIK | X | 27 % | 28 % |
 | 2026-04-26 | Europa 2569 | Brommapojkarna - Västerås | 2 ✓ | 26 % | 28 % |
 | 2026-04-22 | Europa 2568 | Västerås - Häcken | X | 27 % | 28 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Alexander Rubin. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Jonathan Ring (skadad, åter About 1-2 weeks)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Anton Fagerström | GK | 34 | Sweden | 50 k€ | – | 0 | 0 | 0/0 |  |
+| 25 | André Bernardini | GK | 30 | Brazil | 50 k€ | – | 0 | 0 | 0/0 |  |
+| 34 | Elis Jaeger | GK | 21 | Sweden | 664 k€ | 6,89 | 0 | 0 | 1/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Herman Magnusson | CB | 28 | Sweden | 57 k€ | 7,06 | 1 | 0 | 2/0 |  |
+| 4 | Philip Bonde | CB | 22 | Sweden | 248 k€ | 6,87 | 2 | 1 | 1/0 |  |
+| 18 | Frédéric Nsabiyumva | CB | 31 | Burundi | 203 k€ | 6,96 | 1 | 0 | 1/0 |  |
+| 21 | Victor Wernersson | CB,LM | 31 | Sweden | 50 k€ | 6,62 | 0 | 0 | 3/0 |  |
+| 23 | Peter Amoran | CB | 22 | Sweden | 443 k€ | 6,26 | 0 | 0 | 0/0 |  |
+| 24 | Jack Tagesson | CB | 21 | Sweden | – | 6,74 | 0 | 0 | 0/0 |  |
+| 28 | Madiou Keïta | CB | 22 | Guinea | 275 k€ | 6,49 | 0 | 0 | 1/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 3 | Marcus Baggesen | LM,LB | 23 | Denmark | 256 k€ | 7,00 | 2 | 4 | 2/0 |  |
+| 6 | Simon Johansson | RW | 33 | Sweden | 50 k€ | – | 0 | 0 | 0/0 |  |
+| 8 | Mamadou Diagne | CM | 23 | Senegal | 486 k€ | 7,29 | 1 | 1 | 2/0 |  |
+| 10 | Jonathan Ring | CM | 34 | Sweden | 83 k€ | 6,73 | 0 | 1 | 1/1 | skadad, åter About 1-2 weeks |
+| 11 | Simon Gefvert | RM | 29 | Sweden | 225 k€ | 7,13 | 1 | 4 | 1/0 |  |
+| 14 | Ismet Lushaku | CM | 26 | Kosovo | 258 k€ | 6,93 | 1 | 4 | 1/0 |  |
+| 15 | Jonathan Karlsson | LM | 22 | Sweden | 195 k€ | 6,67 | 0 | 1 | 1/0 |  |
+| 20 | Melvin Ljungqvist | Midfielder | 18 | Sweden | – | 6,04 | 0 | 0 | 0/0 |  |
+| 26 | Levi Hansas | Midfielder | 16 | Sweden | – | – | 0 | 0 | 0/0 |  |
+| 30 | Mattias Hellisdal | CM | 20 | Faroe Islands | 273 k€ | 6,73 | 1 | 2 | 1/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 5 | Karl Gunnarsson | RW,LW | 20 | Sweden | 886 k€ | 6,77 | 1 | 2 | 2/0 |  |
+| 7 | Abdelrahman Boudah | LW,ST | 27 | Sweden | 321 k€ | 6,57 | 1 | 1 | 0/0 |  |
+| 9 | Casper Andreasen | ST | 19 | Denmark | – | 6,14 | 0 | 0 | 0/0 |  |
+| 16 | Bonaventure Lendambi | ST | 20 | Congo | 218 k€ | 6,71 | 2 | 0 | 2/0 |  |
+| 17 | Axel Taonsa | LW,ST,RW | 22 | Burkina Faso | – | 7,06 | 8 | 0 | 3/0 |  |
+| 19 | Jens Magnusson | RW | 21 | Sweden | 263 k€ | 6,93 | 1 | 3 | 3/0 |  |
+| 27 | Moussa Diallo | ST | 19 | Senegal | 269 k€ | – | 0 | 0 | 0/0 |  |

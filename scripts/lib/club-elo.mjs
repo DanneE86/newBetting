@@ -58,7 +58,7 @@ export async function clubEloFor(teams, log = () => {}) {
     let best = null;
     for (const c of clubs) {
       const s = nameScore(t.name, null, c.name);
-      if (s >= 0.5 && (!best || s > best.s)) best = { s, c };
+      if (s >= 0.6 && (!best || s > best.s)) best = { s, c };
     }
     if (best) out.set(t.name, { elo: best.c.elo, clubEloName: best.c.name });
   }

@@ -48,3 +48,49 @@ Form (äldst → senast): FFOOFVOV · senaste match 2026-09-19
 | Chapecoense-SC | 1 | 0-1-0 | 1–1 | −1,15 | +78 pe | 2026-05-10 1-1 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Rafael Guanaes. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** José Aldo (skadad, åter Late October 2026), Negueba (skadad, åter Out for season)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Georgemy | GK | 31 | Brazil | 313 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Walter | GK | 38 | Brazil | 616 k€ | – | 0 | 0 | 0/0 |  |
+| 23 | Alex Muralha | GK | 36 | Brazil | 323 k€ | – | 0 | 0 | 0/0 |  |
+| 90 | Thomazella | GK | 36 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Lucas Oliveira | CB | 30 | Brazil | 603 k€ | – | 0 | 0 | 0/0 |  |
+| 3 | Willian Machado | CB | 29 | Brazil | 1,5 M€ | – | 0 | 0 | 0/0 |  |
+| 6 | Reinaldo | LB,LWB,LM | 37 | Brazil | 516 k€ | – | 0 | 0 | 0/0 |  |
+| 12 | Victor Luís | LB,LM | 33 | Brazil | 282 k€ | – | 0 | 0 | 0/0 |  |
+| 18 | Elias | RB | 27 | Brazil | 351 k€ | – | 0 | 0 | 0/0 |  |
+| 20 | Daniel Borges | RB | 33 | Brazil | 288 k€ | – | 0 | 0 | 0/0 |  |
+| 32 | Igor Formiga | RB,RM,RWB | 27 | Brazil | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 34 | João Victor | CB | 29 | Brazil | 909 k€ | – | 0 | 0 | 0/0 |  |
+| 44 | Gabriel Knesowitsch | CB | 22 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 53 | Marcelinho | Defender | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Japa | CM,CDM | 22 | Brazil | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 7 | Shaylon | CAM,CM,RW,RM | 29 | Brazil | 667 k€ | – | 0 | 0 | 0/0 |  |
+| 8 | Denilson | CM,CDM | 25 | Brazil | 1,7 M€ | – | 0 | 0 | 0/0 |  |
+| 10 | Chico | CDM,CM,CAM | 35 | Brazil | 275 k€ | – | 0 | 0 | 0/0 |  |
+| 21 | José Aldo | CDM,CM | 28 | Brazil | 980 k€ | – | 0 | 0 | 0/0 | skadad, åter Late October 2026 |
+| 25 | Neto Moura | CDM,CM | 30 | Brazil | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 33 | Eduardo | CAM,CM | 36 | Brazil | 274 k€ | – | 0 | 0 | 0/0 |  |
+| 55 | Gustavo Cazonatti | CDM,CM | 30 | Brazil | 222 k€ | – | 0 | 0 | 0/0 |  |
+| 80 | Wallisson | CDM,CM | 29 | Brazil | 812 k€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | André Luís | ST | 32 | Brazil | 719 k€ | – | 0 | 0 | 0/0 |  |
+| 11 | Negueba | RW,LW | 26 | Brazil | 2,1 M€ | – | 0 | 0 | 0/0 | skadad, åter Out for season |
+| 17 | Fernandinho | LW,ST,LM | 29 | Brazil | 321 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | Gustavo Silva | CAM,ST,RW | 29 | Brazil | 938 k€ | – | 0 | 0 | 0/0 |  |
+| 30 | Bruno Santos | ST | 29 | Brazil | 863 k€ | – | 0 | 0 | 0/0 |  |
+| 48 | Felipinho | Attacker | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 77 | Alesson | LW,ST | 27 | Brazil | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 95 | Edson Carioca | RW,LW,ST | 29 | Brazil | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 96 | Carlos Eduardo | RW,LW,ST | 29 | Brazil | 356 k€ | – | 0 | 0 | 0/0 |  |
+| 99 | Zé Roberto | ST | 33 | Brazil | 196 k€ | – | 0 | 0 | 0/0 |  |

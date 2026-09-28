@@ -70,3 +70,41 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-08-31 | Europa 2501 | GAIS - Häcken | 1 | 19 % | 24 % |
 | 2025-08-24 | Europa 2499 | Värnamo - Häcken | 2 ✓ | 45 % | 41 % |
 | 2025-08-17 | Europa 2497 | Häcken - Öster | 2 | 62 % | 58 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Jens Gustafsson. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Filip Öhman (skadad, åter Mid October 2026), Ben Engdahl (skadad, åter Out for season), Adam Lundkvist (skadad, åter Early October 2026), Christ Wawa (skadad, åter About 1-2 weeks)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Andreas Linde | GK | 33 | Sweden | 181 k€ | 6,98 | 0 | 0 | 1/0 |  |
+| 35 | David Andersson | GK | 23 | Sweden | 646 k€ | 6,38 | 0 | 0 | 0/0 |  |
+| 99 | Etrit Berisha | GK | 37 | Albania | 275 k€ | 7,35 | 0 | 0 | 1/0 |  |
+| | **Backar** | | | | | | | | | |
+| 5 | Brice Wembangomo | RB | 29 | Norway | 834 k€ | 7,00 | 0 | 3 | 2/0 |  |
+| 12 | Filip Öhman | RB | 18 | Sweden | 1,6 M€ | 6,34 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 13 | Harry Hilvenius | CB | 18 | Sweden | 1,1 M€ | 6,91 | 1 | 0 | 0/0 |  |
+| 15 | Leo Väisänen | CB | 29 | Finland | 621 k€ | 6,25 | 0 | 0 | 0/1 |  |
+| 17 | Ben Engdahl | RB | 23 | Sweden | 365 k€ | – | 0 | 0 | 0/0 | skadad, åter Out for season |
+| 21 | Adam Lundkvist | LB | 32 | Sweden | 241 k€ | 7,01 | 0 | 3 | 3/0 | skadad, åter Early October 2026 |
+| 22 | Filip Helander | CB | 33 | Sweden | 294 k€ | 6,99 | 1 | 1 | 4/0 |  |
+| 23 | Olle Samuelsson | CB,LB | 22 | Sweden | 545 k€ | 6,99 | 0 | 1 | 1/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Abdoulaye Doumbia | CDM,CM | 18 | Ivory Coast | – | 7,47 | 2 | 2 | 6/0 |  |
+| 8 | Simen Hestnes | CM,CDM | 30 | Norway | 166 k€ | 6,70 | 0 | 0 | 0/0 |  |
+| 10 | Mikkel Rygaard | CAM,CM,CDM | 35 | Denmark | 178 k€ | 7,06 | 2 | 5 | 5/0 |  |
+| 18 | Wilson Uhrström | LM | 20 | Sweden | 418 k€ | 6,14 | 0 | 0 | 0/0 |  |
+| 19 | David Seger | CDM,CM | 27 | Sweden | 195 k€ | 7,20 | 0 | 1 | 1/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Mads Agger | RW,RM | 26 | Denmark | 976 k€ | 6,06 | 0 | 0 | 0/0 |  |
+| 9 | Gustav Lindgren | ST | 25 | Sweden | 610 k€ | 7,13 | 12 | 0 | 3/0 |  |
+| 11 | Julius Lindberg | LW,RB,RW,LM,CM,CAM | 27 | Sweden | 859 k€ | 7,45 | 7 | 6 | 3/0 |  |
+| 14 | Markus Haaland | LW | 21 | Norway | 1,1 M€ | 6,05 | 0 | 0 | 0/0 |  |
+| 20 | Adrian Svanbäck | RW,LW,ST,CM,CAM | 22 | Finland | 1,7 M€ | 7,10 | 5 | 6 | 2/0 |  |
+| 24 | Bamir Sadiku | Attacker | 19 | Sweden | – | – | 1 | 0 | 0/0 |  |
+| 25 | Sabri Kondo | Attacker | 20 | Tanzania | – | – | 0 | 0 | 0/0 |  |
+| 27 | Christ Wawa | Attacker | 19 | Ivory Coast | – | 6,70 | 1 | 0 | 1/0 | skadad, åter About 1-2 weeks |
+| 32 | Harun Ibrahim | RW | 23 | Sweden | 410 k€ | 6,40 | 0 | 0 | 1/0 |  |

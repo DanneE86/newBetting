@@ -60,3 +60,46 @@ Form (äldst → senast): VOVVOVOV · senaste match 2026-09-20
 | Sporting Kansas City | 1 | 0-0-1 | 1–2 | −1,35 | −26 pe | 2025-06-26 1-2 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Dean Smith. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Aron John (skadad, åter Early December 2026), Nimfasha Berchimas (skadad, åter Late October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Kristijan Kahlina | GK | 34 | Croatia | 463 k€ | 6,87 | 0 | 0 | 2/0 |  |
+| 21 | Tyler Miller | GK | 33 | USA | 92 k€ | – | 0 | 0 | 0/0 |  |
+| 42 | Isaac Walker | GK | 26 | USA | 147 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 3 | Tim Ream | CB | 38 | USA | 67 k€ | 6,72 | 0 | 1 | 2/1 |  |
+| 4 | Andrew Privett | CB | 26 | USA | 784 k€ | 6,06 | 0 | 0 | 2/0 |  |
+| 14 | Nathan Byrne | RB,LB | 34 | England | 137 k€ | 6,54 | 0 | 0 | 3/0 |  |
+| 15 | Harry Toffolo | LB | 31 | England | 1,2 M€ | 6,80 | 0 | 2 | 2/0 |  |
+| 22 | Henry Kessler | CB | 28 | USA | 674 k€ | 6,94 | 1 | 0 | 1/0 |  |
+| 23 | David Schnegg | LB | 27 | Austria | 674 k€ | 6,91 | 2 | 3 | 6/1 |  |
+| 24 | Mikah Thomas | LB | 21 | USA | – | – | 0 | 0 | 0/0 |  |
+| 34 | Andrew Johnson | CB | 22 | Saint Vincent and The Grenadines | – | – | 0 | 0 | 0/0 |  |
+| 35 | Will Cleary | RB | 23 | USA | 227 k€ | 6,73 | 1 | 1 | 0/0 |  |
+| 39 | Jack Neeley | CB,RB | 21 | USA | 554 k€ | – | 0 | 0 | 0/0 |  |
+| 44 | Morrison Agyemang | CB | 21 | Ghana | 629 k€ | 6,92 | 2 | 0 | 2/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 8 | Ashley Westwood | CM,CDM | 36 | England | 78 k€ | 7,20 | 3 | 4 | 10/1 |  |
+| 13 | Brandt Bronico | CDM,CAM,CM | 31 | USA | 710 k€ | 6,53 | 1 | 0 | 1/0 |  |
+| 16 | Pep Biel | CAM,CM,RW | 30 | Spain | 2,4 M€ | 7,43 | 12 | 7 | 4/0 |  |
+| 17 | Luca de la Torre | CM,CDM | 28 | USA | 1,5 M€ | 6,53 | 0 | 1 | 0/0 |  |
+| 20 | Baye Coulibaly | CM,CDM | 20 | Mali | 1,8 M€ | – | 0 | 0 | 0/0 |  |
+| 28 | Djibril Diani | CDM,CM | 28 | France | 456 k€ | 6,59 | 0 | 1 | 6/0 |  |
+| 48 | Aron John | CM | 20 | USA | 869 k€ | – | 0 | 0 | 0/0 | skadad, åter Early December 2026 |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Archie Goodwin | ST | 21 | Australia | 1,0 M€ | 6,32 | 3 | 0 | 1/0 |  |
+| 9 | Idan Toklomati | ST | 22 | Israel | 1,5 M€ | 6,97 | 9 | 2 | 1/0 |  |
+| 10 | Allan Saint-Maximin | LW,CAM,LM | 29 | France | 6,5 M€ | 7,36 | 1 | 2 | 2/0 |  |
+| 11 | Liel Abada | RW,LW | 24 | Israel | 2,3 M€ | 6,96 | 5 | 5 | 2/0 |  |
+| 25 | Tyger Smalls | LW | 24 | England | 164 k€ | 6,23 | 0 | 0 | 1/0 |  |
+| 27 | Nimfasha Berchimas | LW,RW,LM | 18 | USA | 1,7 M€ | – | 0 | 0 | 0/0 | skadad, åter Late October 2026 |
+| 37 | Rodolfo Aloko | RW,ST,LW | 19 | Benin | 1,6 M€ | 6,53 | 1 | 2 | 1/0 |  |
+| 41 | Brian Romero | RW | 20 | USA | 527 k€ | – | 0 | 0 | 0/0 |  |
+| 71 | Nathan Richmond | RW,CM | 22 | USA | – | – | 0 | 0 | 0/0 |  |

@@ -59,3 +59,44 @@ Form (äldst → senast): VFVVFOFO · senaste match 2026-09-20
 | Atlante | 1 | 0-1-0 | 1–1 | −0,77 | +73 pe | 2026-09-06 1-1 (h) |
 
 Ligans test av inbördes möten mot marknaden: svag signal (inte bekräftad).
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Hernán Crespo. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Manuel Capasso (osäker), Duk (skadad, åter Late March 2027)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 12 | Camilo Vargas | GK | 37 | Colombia | 678 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Antonio Sánchez | GK | 26 | Mexico | 430 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 3 | Jorge Sánchez | RB,RWB,RM | 28 | Mexico | 1,4 M€ | – | 0 | 0 | 0/0 |  |
+| 4 | Adrián Mora | CB | 29 | Mexico | 367 k€ | – | 0 | 0 | 0/0 |  |
+| 5 | Jorge Rodríguez | LB,LWB,CB | 25 | Mexico | 691 k€ | – | 0 | 0 | 0/0 |  |
+| 13 | Gaddi Aguirre | CB,RB | 30 | Mexico | 545 k€ | – | 0 | 0 | 0/0 |  |
+| 16 | Milton Valenzuela | LB | 28 | Argentina | 418 k€ | – | 0 | 0 | 0/0 |  |
+| 17 | Rivaldo Lozano | LWB | 27 | Mexico | 687 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | Adonis Frías | CB | 28 | Argentina | 2,0 M€ | – | 0 | 0 | 0/0 |  |
+| 28 | Manuel Capasso | CB | 30 | Argentina | 736 k€ | – | 0 | 0 | 0/0 | osäker |
+| 44 | Juan Purata | CB | 28 | Mexico | 1,9 M€ | – | 0 | 0 | 0/0 |  |
+| 218 | Jorge San Martín | CB | 22 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Édgar Zaldívar | CDM,CM,CAM | 29 | Mexico | 466 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Luís Esteves | CDM,CAM,CM,LW | 28 | Portugal | 1,4 M€ | – | 0 | 0 | 0/0 |  |
+| 15 | Paulo Ramírez | CDM,CM,CAM,LW | 23 | Mexico | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 18 | Elías Montiel | CDM,CAM,CM | 20 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| 26 | Aldo Rocha | CDM,CM,CAM | 33 | Mexico | 448 k€ | – | 0 | 0 | 0/0 |  |
+| 27 | Víctor Ríos | CM,CAM,CDM,LW | 22 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| 58 | Arturo González | CAM,ST,RM,RW,CM | 32 | Mexico | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| 192 | Jesús Serrato | RW | 20 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| 208 | Jesús Guillén | Midfielder | 21 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 8 | Ryan Mmaee | ST,CAM | 28 | Morocco | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 9 | Florián Monzón | ST | 25 | Argentina | 2,2 M€ | – | 0 | 0 | 0/0 |  |
+| 11 | Duk | RW,LW,CAM,LM,RM,ST | 26 | Cabo Verde | 1,3 M€ | – | 0 | 0 | 0/0 | skadad, åter Late March 2027 |
+| 20 | Kevin Zenón | RW | 25 | Argentina | 2,4 M€ | – | 0 | 0 | 0/0 |  |
+| 23 | Sergio Hernández | LWB,LW,LM | 22 | Mexico | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 203 | José Martín | ST | 19 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| 251 | Luis Gamboa | ST,RW | 17 | Mexico | 1,1 M€ | – | 0 | 0 | 0/0 |  |

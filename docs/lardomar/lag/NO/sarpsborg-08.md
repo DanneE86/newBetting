@@ -56,3 +56,42 @@ Form (äldst → senast): VOFFOOOF · senaste match 2026-09-18
 | Start | 4 | 1-1-2 | 4–5 | −0,66 | −1 pe | 2026-04-06 1-1 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Even Sel. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Michael Opoku (skadad, åter Mid October 2026), Frederik Carstensen (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Jacob Pryts | GK | 28 | Denmark | 231 k€ | 6,03 | 0 | 0 | 1/0 |  |
+| 54 | Jesper Holter Skjoeren | Keeper | 18 | Norway | – | – | 0 | 0 | 0/0 |  |
+| 87 | Leander Øy | GK | 22 | Norway | 317 k€ | 7,13 | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Marius Lode | CB | 33 | Norway | 181 k€ | 6,40 | 0 | 0 | 0/0 |  |
+| 4 | Bjørn Inge Utvik | CB | 30 | Norway | 448 k€ | 7,12 | 0 | 1 | 5/0 |  |
+| 5 | Luca Høyland | RB,CB | 20 | Norway | 149 k€ | – | 0 | 0 | 0/0 |  |
+| 12 | Claus Niyukuri | RB | 26 | Burundi | 501 k€ | 6,93 | 2 | 4 | 2/0 |  |
+| 20 | Peter Reinhardsen | RB | 27 | Norway | 205 k€ | 6,56 | 0 | 0 | 1/0 |  |
+| 21 | Anders Hiim | LB | 24 | Norway | 893 k€ | 7,00 | 1 | 0 | 2/0 |  |
+| 24 | Sigurd Rosted | CB | 32 | Norway | 446 k€ | 6,87 | 0 | 0 | 0/0 |  |
+| 32 | Eirik Wichne | RB | 29 | Norway | 193 k€ | 6,24 | 0 | 0 | 1/0 |  |
+| 50 | Magnus Mevik Eidal | Defender | 18 | Norway | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Aimar Sher | CDM,CM | 23 | Iraq | 1,5 M€ | 7,15 | 1 | 0 | 3/0 |  |
+| 8 | Sander Christiansen | CDM,CM | 25 | Norway | 610 k€ | 6,99 | 1 | 1 | 2/0 |  |
+| 14 | Jo Inge Berget | CAM,ST | 36 | Norway | 188 k€ | 6,22 | 0 | 0 | 1/0 |  |
+| 18 | Bop Gueye | CAM | 19 | Senegal | – | 6,33 | 0 | 0 | 0/0 |  |
+| 22 | Victor Halvorsen | CM,CAM,CDM,LW | 22 | Norway | 1,1 M€ | 6,82 | 3 | 2 | 0/0 |  |
+| 26 | Chris Kouakou | CM | 26 | Ivory Coast | 238 k€ | – | 0 | 0 | 0/0 |  |
+| 33 | Andreas Nibe | CAM,ST,CM,CDM | 23 | Denmark | 589 k€ | 6,82 | 3 | 0 | 0/0 |  |
+| 77 | Olaus Jair Skarsem | LM,CAM,CM | 28 | Norway | 280 k€ | 6,74 | 1 | 0 | 1/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Camil Mmaee | ST,RW | 22 | Morocco | 443 k€ | 5,82 | 0 | 0 | 0/0 |  |
+| 10 | Sondre Sørli | RW,RM | 30 | Norway | 356 k€ | 6,95 | 4 | 4 | 1/0 |  |
+| 11 | Daniel Seland Karlsbakk | ST,LW | 23 | Norway | 4,3 M€ | 6,81 | 7 | 0 | 2/0 |  |
+| 15 | Michael Opoku | LW | 21 | Denmark | 861 k€ | 6,60 | 0 | 1 | 0/0 | skadad, åter Mid October 2026 |
+| 16 | Frederik Carstensen | LW | 24 | Denmark | 464 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 17 | Noa Williams | LW,ST,LM | 24 | Sweden | 774 k€ | 6,52 | 0 | 1 | 0/0 |  |

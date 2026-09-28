@@ -52,3 +52,38 @@ Form (äldst → senast): FFVFOVFF · senaste match 2026-09-19
 | Start | 3 | 2-0-1 | 6–5 | +0,31 | −25 pe | 2026-07-25 1-2 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Amund Skiri. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Michael Lansing | GK | 32 | USA | 166 k€ | 6,73 | 0 | 0 | 1/0 |  |
+| 12 | Adrian Sæther | GK | 25 | Norway | 612 k€ | 7,14 | 0 | 0 | 1/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Anders Rønne Børset | CB | 20 | Norway | 944 k€ | 6,02 | 0 | 0 | 1/0 |  |
+| 3 | Frederik Flex | LB | 22 | Denmark | 574 k€ | 6,56 | 0 | 0 | 3/0 |  |
+| 4 | Júlíus Júlíusson | CB | 22 | Iceland | 521 k€ | 6,73 | 0 | 0 | 3/1 |  |
+| 5 | Dan Ulvestad | CB | 37 | Norway | 203 k€ | 6,93 | 0 | 0 | 2/0 |  |
+| 17 | Max Normann Williamsen | CB | 23 | Norway | 421 k€ | 5,97 | 0 | 0 | 0/0 |  |
+| 22 | Haakon Haugen | RW,RB | 19 | Norway | 799 k€ | 6,39 | 0 | 0 | 1/0 |  |
+| 25 | John Kitolano | LB | 26 | Norway | 223 k€ | 5,62 | 0 | 0 | 0/0 |  |
+| 35 | Isak Hagen Aalberg | LWB | 21 | Norway | 219 k€ | – | 0 | 0 | 0/0 |  |
+| 39 | Nikolai Finset | Defender | 16 | Norway | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Jesper Isaksen | CM,LB,RM,CDM | 26 | Norway | 334 k€ | 6,73 | 0 | 1 | 3/0 |  |
+| 8 | Eron Isufi | CM | 18 | Norway | 505 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Heine Gikling Bruseth | CM,CAM | 22 | Norway | 1,1 M€ | 6,89 | 0 | 2 | 5/0 |  |
+| 14 | Syver Skundberg Skeide | CM,CDM | 22 | Norway | 567 k€ | 6,54 | 0 | 1 | 2/0 |  |
+| 20 | Wilfred George Igor | CM,CDM | 21 | Nigeria | 1,7 M€ | 6,87 | 1 | 1 | 4/0 |  |
+| 23 | Tobias Hammer Svendsen | CM | 27 | Norway | 377 k€ | 6,31 | 1 | 0 | 0/0 |  |
+| 59 | Marius Elvius | LM,LWB,RWB,RB | 24 | Denmark | 642 k€ | 6,49 | 0 | 1 | 1/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Sander Svendsen | RW,CAM,LW,ST | 29 | Norway | 351 k€ | 6,89 | 1 | 1 | 0/0 |  |
+| 11 | Zymer Bytyqi | LW | 30 | Kosovo | 748 k€ | 6,94 | 0 | 2 | 0/0 |  |
+| 16 | David Tufekčić | RW | 22 | Norway | 822 k€ | 6,94 | 1 | 0 | 0/0 |  |
+| 19 | Leander Alvheim | ST | 22 | Norway | 751 k€ | 6,97 | 10 | 0 | 3/0 |  |
+| 24 | Gustav Christensen | LW,LWB,RWB,ST,RM,RW | 22 | Denmark | 342 k€ | 6,35 | 0 | 0 | 0/0 |  |
+| 27 | Adrian Kurd Rønning | CM,RW,ST | 20 | Norway | 664 k€ | 6,26 | 1 | 1 | 3/0 |  |

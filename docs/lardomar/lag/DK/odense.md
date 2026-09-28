@@ -52,3 +52,44 @@ Form (äldst → senast): VFFOOFVO · senaste match 2026-09-19
 | Viborg | 13 | 3-4-6 | 16–19 | −0,23 | +5 pe | 2026-07-24 0-1 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Thomas Thomasberg. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Peter Therkildsen (skadad, åter Early October 2026), Ismahila Ouédraogo (skadad, åter Early October 2026), William Martin (skadad, åter Day to day), Jona Niemiec (skadad, åter Day to day)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Martin Hansen | GK | 36 | Denmark | 184 k€ | 7,04 | 0 | 0 | 0/0 |  |
+| 16 | Viljar Myhra | GK | 30 | Norway | 694 k€ | 6,71 | 0 | 0 | 0/0 |  |
+| 27 | Marcus Eskildsen | Keeper | 18 | Denmark | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Peter Therkildsen | LB,RB | 28 | Denmark | 311 k€ | 6,77 | 0 | 0 | 1/0 | skadad, åter Early October 2026 |
+| 4 | Julian Pauli | CB | 21 | England | 2,4 M€ | 6,64 | 0 | 0 | 0/0 |  |
+| 5 | Ulrik Yttergård Jenssen | LB,CB | 30 | Norway | 335 k€ | 6,45 | 0 | 0 | 3/0 |  |
+| 13 | Julius Askou | CB | 20 | Denmark | 2,3 M€ | 7,15 | 0 | 0 | 3/0 |  |
+| 15 | Marcus McCoy | LB,RB,RWB,CB | 21 | Denmark | 1,1 M€ | 6,60 | 0 | 1 | 4/0 |  |
+| 24 | Mikkel Rakneberg | LB | 24 | Norway | 530 k€ | 6,09 | 0 | 0 | 0/0 |  |
+| 25 | Adam Amrani | Defender | 17 | Denmark | – | – | 0 | 0 | 0/0 |  |
+| 29 | James Gomez | CB | 24 | The Gambia | 1,1 M€ | 6,70 | 0 | 0 | 3/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 3 | Adam Sørensen | LWB,LB,RM | 25 | Denmark | 791 k€ | 6,81 | 0 | 0 | 0/0 |  |
+| 6 | Fredrik Ulvestad | CDM,CM,RM | 34 | Norway | 281 k€ | 6,62 | 0 | 0 | 0/0 |  |
+| 7 | Jann-Fiete Arp | CAM,LM,RW,ST,RM,LW | 26 | Germany | 1,3 M€ | 7,10 | 2 | 0 | 0/0 |  |
+| 8 | Rasmus Falk | CDM,CM | 34 | Denmark | 382 k€ | 7,15 | 0 | 0 | 1/0 |  |
+| 9 | Topi Keskinen | LW,LM,CAM,RW | 23 | Finland | 1,6 M€ | 6,80 | 1 | 1 | 1/0 |  |
+| 10 | Anssi Suhonen | CM,LM,CAM | 25 | Finland | 487 k€ | 6,59 | 0 | 0 | 0/0 |  |
+| 19 | Nikolaj Juul-Sandberg | CM,CDM,RM | 20 | Denmark | 549 k€ | 6,75 | 0 | 0 | 0/0 |  |
+| 21 | Vitus Friis | Midfielder | 19 | Denmark | 669 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Ismahila Ouédraogo | CM,CDM | 26 | Burkina Faso | 988 k€ | 6,98 | 0 | 0 | 1/0 | skadad, åter Early October 2026 |
+| 23 | William Martin | CM | 19 | Denmark | 1,2 M€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
+| 28 | Magnus Andersen | RM,LB | 20 | Denmark | 488 k€ | 6,54 | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 11 | Jona Niemiec | ST | 25 | Germany | 662 k€ | 6,34 | 0 | 0 | 0/0 | skadad, åter Day to day |
+| 14 | Christian Gammelgaard | RW,ST,CAM,RM | 23 | Denmark | 686 k€ | 6,60 | 0 | 0 | 1/0 |  |
+| 17 | Noah Ganaus | ST | 25 | Germany | 1,4 M€ | 6,98 | 2 | 0 | 1/0 |  |
+| 18 | Alexander Ahl Holmström | ST | 27 | Sweden | 340 k€ | 6,92 | 1 | 2 | 1/0 |  |
+| 26 | Lasse Legolas | ST | 19 | Denmark | – | 5,94 | 0 | 0 | 1/0 |  |
+| 31 | Jay-Roy Grot | ST | 28 | Suriname | 514 k€ | 5,98 | 0 | 0 | 0/0 |  |

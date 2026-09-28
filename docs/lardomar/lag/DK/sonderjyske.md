@@ -61,3 +61,44 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-05-07 | Europa 2572 | Viborg - Sönderjyske | 2 ✓ | 18 % | 24 % |
 | 2025-12-07 | Europa 2529 | FC Köpenhamn - Sönderjyske | 2 ✓ | 9 % | 14 % |
 | 2025-11-23 | Europa 2525 | Sönderjyske - Midtjylland | 1 ✓ | 17 % | 19 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Fatah Abdirahman. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Nicolai Flø | GK | 31 | Denmark | 368 k€ | 6,44 | 0 | 0 | 0/0 |  |
+| 16 | Marcus Bundgaard | GK | 25 | Denmark | 976 k€ | 5,98 | 0 | 0 | 0/0 |  |
+| 24 | Nick Shinton | GK | 25 | Belgium | 454 k€ | 6,12 | 0 | 0 | 0/0 |  |
+| 27 | Berkant Bayrak | GK | 21 | Turkiye | 596 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 3 | Alexander Munksgaard | RB,RWB | 28 | Denmark | 333 k€ | 6,63 | 1 | 1 | 1/0 |  |
+| 5 | Rúnar Sigurgeirsson | LM | 26 | Iceland | 414 k€ | – | 0 | 0 | 0/0 |  |
+| 12 | Maxime Soulas | CB | 27 | France | 1,5 M€ | 6,66 | 0 | 1 | 3/0 |  |
+| 19 | Pachanga Kristensen | CB,LB | 19 | Denmark | – | 6,43 | 0 | 0 | 0/0 |  |
+| 20 | Tobias Klysner | RB | 25 | Denmark | 332 k€ | 6,57 | 0 | 0 | 0/0 |  |
+| 21 | Stefan Velkov | CB | 29 | Bulgaria | 284 k€ | 4,85 | 0 | 0 | 0/1 |  |
+| 23 | Ebube Duru | LB,LWB | 27 | Nigeria | 313 k€ | 6,50 | 0 | 0 | 0/0 |  |
+| 25 | Brynjar Ingi Bjarnason | CB | 26 | Iceland | 208 k€ | 5,81 | 1 | 0 | 0/1 |  |
+| 30 | Gustav Wagner | CB | 21 | Denmark | 316 k€ | 6,50 | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Rasmus Vinderslev | CDM,CM | 29 | Denmark | 358 k€ | 6,36 | 0 | 0 | 0/0 |  |
+| 7 | Sefer Emini | CDM,CAM,RW | 26 | North Macedonia | 517 k€ | 6,94 | 0 | 2 | 4/0 |  |
+| 8 | Mohamed Cherif | CAM | 20 | Guinea | – | 7,13 | 4 | 0 | 0/0 |  |
+| 10 | Mathias Olesen | CDM,CM | 25 | Luxembourg | 635 k€ | 6,09 | 0 | 0 | 0/0 |  |
+| 17 | Anders Hoeg | CDM,LW | 20 | Denmark | 486 k€ | 6,72 | 0 | 1 | 1/0 |  |
+| 22 | Andreas Oggesen | CDM,RB,CM | 32 | Denmark | 249 k€ | 6,15 | 0 | 0 | 0/0 |  |
+| 28 | Anders Bergholt | LM | 21 | Denmark | 510 k€ | 6,22 | 0 | 0 | 0/0 |  |
+| 33 | Jacob Steen Christensen | CDM,CM | 25 | Denmark | 544 k€ | 6,43 | 0 | 2 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Matthew Hoppe | ST | 25 | USA | 696 k€ | 6,01 | 0 | 0 | 2/0 |  |
+| 11 | Osaze De Rosario | ST | 25 | Guyana | 743 k€ | 7,57 | 2 | 1 | 0/0 |  |
+| 13 | Dalton Wilkins | RW | 27 | New Zealand | 249 k€ | 6,84 | 0 | 1 | 2/0 |  |
+| 14 | Teodor Berg Haltvik | ST,RW,CM | 26 | Norway | 431 k€ | 6,49 | 0 | 0 | 0/0 |  |
+| 15 | Lirim Qamili | RW,LW,ST | 28 | North Macedonia | 562 k€ | 6,07 | 0 | 0 | 2/0 |  |
+| 18 | Omran Khattar | LW | 17 | Denmark | – | – | 0 | 0 | 0/0 |  |
+| 26 | Bubacarr Tambedou | ST,LW | 24 | The Gambia | 110 k€ | 6,70 | 1 | 0 | 0/0 |  |
+| 31 | Ismaïl Seydi | LW,RW,CAM | 25 | France | 425 k€ | 6,85 | 2 | 1 | 2/0 |  |
+| 32 | David Boison | RW,ST | 19 | Ghana | 677 k€ | 6,12 | 0 | 0 | 0/0 |  |

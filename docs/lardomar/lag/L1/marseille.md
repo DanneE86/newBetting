@@ -5,6 +5,7 @@ Genererad 2026-09-28. Ligans lärdomar: [L1](../../ligor/L1.md). "Mot marknaden"
 ## I korthet
 
 - Stark historik mot Lille (−0,52 p/match mot marknaden, 16 möten), Toulouse (+0,65 p/match mot marknaden, 11 möten), Lorient (+0,56 p/match mot marknaden, 10 möten), Le Havre (+0,90 p/match mot marknaden, 6 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Utan Amine Gouiri (13 % av anfallet): 2,33 poäng per match mot 1,71 med (3 mot 70 matcher), mot marknaden +0,31 mot −0,14.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -12,8 +13,8 @@ Form (äldst → senast): FVVVFFFF · senaste match 2026-09-20
 
 | Mått | Värde |
 |---|---|
-| Tur (poäng − xP per match) | −0,13 |
-| xG-målskillnad − målskillnad | −0,16 |
+| Tur (poäng − xP per match) | −0,09 |
+| xG-målskillnad − målskillnad | −0,34 |
 | Poäng mot marknaden per match | −0,34 |
 
 ## Säsonger
@@ -29,9 +30,22 @@ Form (äldst → senast): FVVVFFFF · senaste match 2026-09-20
 | 2023/24 | L1 | 34 | 1,47 | −0,21 (+0,24 / −0,66) | 32 % (25 %) | 1,53–1,21 | 1,77–1,11 | 1,73 |
 | 2024/25 | L1 | 34 | 1,91 | +0,01 (−0,04 / +0,06) | 15 % (23 %) | 2,18–1,38 | 2,02–1,51 | 1,62 |
 | 2025/26 | L1 | 34 | 1,74 | −0,16 (+0,20 / −0,52) | 15 % (23 %) | 1,85–1,32 | 2,04–1,46 | 1,71 |
-| 2026/27 | L1 | 5 | 0,60 | −0,80 (−0,41 / −1,38) | 0 % (24 %) | 1,40–1,60 | 1,55–2,00* | 1,19 |
+| 2026/27 | L1 | 5 | 0,60 | −0,80 (−0,41 / −1,38) | 0 % (24 %) | 1,40–1,60 | 1,70–2,43 | 1,13 |
 
-\* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+## Nyckelspelare (Understat, 2024/25–)
+
+Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
+
+| Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
+|---|---|---|---|---|
+| Amine Gouiri | 13 % | 3 / 70 | 2,33 / 1,71 | +0,31 / −0,14 |
+| Pierre-Emerick Aubameyang | 12 % | 0 / 73 | – / 1,74 | – / −0,12 |
+| Mason Greenwood | 11 % | 0 / 73 | – / 1,74 | – / −0,12 |
+| Faris Moumbagna | 9 % | 0 / 73 | – / 1,74 | – / −0,12 |
+| Amine Harit | 8 % | 1 / 72 | 1,00 / 1,75 | −0,67 / −0,11 |
+| Igor Paixão | 6 % | 0 / 73 | – / 1,74 | – / −0,12 |
+
+Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -71,3 +85,39 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-12-14 | Europa 2531 | Marseille - Monaco | 1 ✓ | 59 % | 48 % |
 | 2025-09-21 | Europa 2507 | Marseille - Paris Saint-Germain | 1 ✓ | 18 % | 24 % |
 | 2025-08-31 | Europa 2501 | Lyon - Marseille | 1 | 43 % | 39 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Bruno Génésio. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Derek Cornelius (skadad, åter Early January 2027), Tochukwu Nnadi (skadad, åter Mid October 2026), Geoffrey Kondogbia (skadad, åter About 1-2 weeks), Igor Paixão (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Jeffrey De Lange | GK | 28 | Netherlands | 1,3 M€ | 7,62 | 0 | 0 | 0/0 |  |
+| 40 | Jelle Van Neck | Keeper | 22 | Belgium | 241 k€ | – | 0 | 0 | 0/0 |  |
+| 92 | Théo Vermot | Keeper | 29 | France | 118 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 4 | CJ Egan-Riley | CB | 23 | England | 11,3 M€ | 6,94 | 0 | 0 | 0/0 |  |
+| 13 | Derek Cornelius | CB | 28 | Canada | 1,7 M€ | 6,06 | 0 | 0 | 0/0 | skadad, åter Early January 2027 |
+| 18 | Bamo Meité | CB | 24 | Ivory Coast | 3,7 M€ | – | 0 | 0 | 0/0 |  |
+| 21 | Nayef Aguerd | CB | 30 | Morocco | 15,1 M€ | 6,45 | 0 | 0 | 1/0 |  |
+| 22 | Timothy Weah | RB,RWB,RM,LW | 26 | USA | 16,5 M€ | 6,86 | 0 | 0 | 2/1 |  |
+| 25 | Ulisses Garcia | LB,LWB | 30 | Switzerland | 2,2 M€ | – | 0 | 0 | 0/0 |  |
+| 33 | Emerson | LB,LWB,CB | 32 | Italy | 4,8 M€ | 6,98 | 0 | 0 | 0/0 |  |
+| 74 | Kelyann Bezahaf | RB | 20 | France | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Tochukwu Nnadi | CDM,CM | 23 | Nigeria | 2,1 M€ | 6,39 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 7 | Angel Gomes | CAM,CDM | 26 | England | 13,9 M€ | 6,98 | 1 | 1 | 1/0 |  |
+| 8 | Himad Abdelli | CDM,CAM,CM | 26 | Algeria | 3,4 M€ | 6,77 | 0 | 0 | 1/0 |  |
+| 19 | Geoffrey Kondogbia | CDM,CB,CM | 33 | Central African Rep. | 1,6 M€ | 6,83 | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
+| 23 | Pierre-Emile Højbjerg | CDM,CM | 31 | Denmark | 12,7 M€ | 7,45 | 1 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Amine Gouiri | ST,CAM | 26 | Algeria | 22,5 M€ | 7,58 | 4 | 1 | 0/0 |  |
+| 11 | Neal Maupay | ST | 30 | France | 3,5 M€ | 5,96 | 0 | 0 | 0/0 |  |
+| 14 | Igor Paixão | LW,LWB,CAM,LM | 26 | Brazil | 28,4 M€ | 6,72 | 0 | 0 | 1/0 | skadad, åter Mid October 2026 |
+| 29 | Faris Moumbagna | ST | 26 | Cameroon | 2,5 M€ | – | 0 | 0 | 0/0 |  |
+| 43 | Tadjidine Mmadi | LW | 19 | France | 1,3 M€ | 5,91 | 0 | 0 | 0/0 |  |
+| 48 | Keyliane Abdallah | RW | 20 | France | 567 k€ | 6,17 | 1 | 0 | 1/0 |  |
+| 77 | Amine Harit | LW,RW,CAM,LM | 29 | Morocco | 2,1 M€ | 7,02 | 0 | 1 | 1/0 |  |

@@ -50,3 +50,47 @@ Form (äldst → senast): FVFFOFVV · senaste match 2026-09-19
 | Carrarese | 1 | 1-0-0 | 1–0 | +1,51 | −29 pe | 2026-09-19 1-0 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Antonio Floro Flores. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Pier Luigi Simonetti (skadad, åter Day to day), Raffaele Romano (skadad, åter Mid October 2026), Simone Verdi (skadad, åter Day to day)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 22 | Manuel Esposito | Keeper | 21 | Italy | 318 k€ | – | 0 | 0 | 0/0 |  |
+| 26 | Gianmarco Vannucchi | GK | 31 | Italy | 328 k€ | 6,77 | 0 | 0 | 0/0 |  |
+| 96 | Alioune Sylla | Keeper | 23 | Senegal | 156 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 5 | Luca Caldirola | CB | 35 | Italy | 134 k€ | 6,32 | 0 | 0 | 0/0 |  |
+| 13 | Raffaele Celia | LM | 27 | Italy | 169 k€ | – | 0 | 0 | 0/0 |  |
+| 14 | Stefano Scognamillo | CB | 32 | Italy | 400 k€ | 7,04 | 0 | 0 | 0/0 |  |
+| 15 | Christian Dalle Mura | CB | 24 | Italy | 446 k€ | 6,17 | 0 | 0 | 0/0 |  |
+| 20 | Pietro Beruatto | CB,LB,LM,CM | 27 | Italy | 479 k€ | 6,38 | 0 | 0 | 1/0 |  |
+| 23 | Pietro Saio | CB | 23 | Italy | 590 k€ | 6,82 | 0 | 0 | 0/0 |  |
+| 31 | Giacomo Ricci | LM | 30 | Italy | 233 k€ | – | 0 | 0 | 0/0 |  |
+| 77 | Edoardo Pierozzi | RB | 25 | Italy | 552 k€ | 6,94 | 1 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 4 | Antonio Prisco | CDM | 22 | Italy | 832 k€ | 6,67 | 1 | 0 | 2/1 |  |
+| 6 | Antonis Siatounis | CDM | 24 | Greece | 282 k€ | 6,71 | 0 | 0 | 2/0 |  |
+| 8 | Mattia Maita | CDM,CAM | 32 | Italy | 384 k€ | 7,47 | 0 | 2 | 1/0 |  |
+| 10 | Luigi Cherubini | CAM,RW,LW,LM,RM,CM | 22 | Italy | 2,3 M€ | 6,93 | 0 | 0 | 0/0 |  |
+| 16 | Mattia Mannini | CM,RM | 20 | Italy | 1,5 M€ | 6,05 | 0 | 0 | 0/0 |  |
+| 17 | Leonardo Sernicola | RM,RB,LB | 29 | Italy | 461 k€ | 7,01 | 0 | 0 | 1/0 |  |
+| 18 | Pier Luigi Simonetti | Midfielder | 25 | Italy | 272 k€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
+| 21 | Emanuele Schimmenti | Midfielder | 24 | Italy | 301 k€ | 6,28 | 0 | 0 | 0/0 |  |
+| 25 | Raffaele Romano | Midfielder | 21 | Italy | 713 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 28 | Christian Kouan | CDM | 26 | Ivory Coast | 294 k€ | 6,96 | 0 | 1 | 3/0 |  |
+| 38 | Angelo Talia | CAM | 23 | Italy | 315 k€ | 6,10 | 0 | 0 | 0/0 |  |
+| 80 | Matteo Donatiello | Midfielder | 20 | Italy | 410 k€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Francesco Paolo Salvemini | ST | 30 | Italy | – | 7,03 | 2 | 0 | 1/0 |  |
+| 11 | Davide Lamesta | RW | 26 | Italy | 546 k€ | 7,10 | 1 | 1 | 0/0 |  |
+| 24 | Marco Giugliano | LW | 18 | Italy | – | – | 0 | 0 | 0/0 |  |
+| 29 | David Okereke | ST,CAM | 29 | Nigeria | 897 k€ | 7,47 | 1 | 0 | 0/0 |  |
+| 30 | Logan | Attacker | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 32 | Guglielmo Mignani | Attacker | 24 | Italy | 366 k€ | 5,96 | 0 | 0 | 0/0 |  |
+| 90 | Simone Verdi | ST | 34 | Italy | 159 k€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
+| 93 | Marco Tumminello | ST | 27 | Italy | 373 k€ | 6,25 | 0 | 0 | 1/0 |  |

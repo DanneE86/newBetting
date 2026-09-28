@@ -11,7 +11,8 @@ import { nameScore } from './match-context.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
 const CACHE = path.join(root, 'data', 'open', 'stryk_extra_odds.json');
-const MAX_AGE_H = 3;
+// Cache-alder: 3 h normalt, kortare nara spelstopp (STRYK_ODDS_MAX_AGE_MIN, t.ex. 20 i den sena korningen)
+const MAX_AGE_H = Number(process.env.STRYK_ODDS_MAX_AGE_MIN ?? 180) / 60;
 const MIN_CREDITS = 40;
 
 // Svenska Spels liganamn -> The Odds API sport key
@@ -31,6 +32,11 @@ const SPORT_KEYS = [
   [/^premiership$/i, 'soccer_spl'],
   [/efl cup|ligacupen/i, 'soccer_england_efl_cup'],
   [/fa cup/i, 'soccer_fa_cup'],
+  // Engelska klubbligor (Stryktipset) - hamtas bara nar STRYK_FRESH_ODDS=1 (sen korning nara spelstopp)
+  [/^premier league$/i, 'soccer_epl'],
+  [/^championship$/i, 'soccer_efl_champ'],
+  [/^league one$/i, 'soccer_england_league1'],
+  [/^league two$/i, 'soccer_england_league2'],
 ];
 export const sportKeyFor = (league) => SPORT_KEYS.find(([re]) => re.test(String(league || '')))?.[1] || null;
 
@@ -89,7 +95,7 @@ export function matchExtraOdds(cache, { league, kickoff, home, away, homeCountry
   for (const e of events) {
     if (!Number.isFinite(t) || Math.abs(Date.parse(e.commence) - t) > 3 * 3600e3) continue;
     const sh = nameScore(home, homeCountry, e.home), sa = nameScore(away, awayCountry, e.away);
-    if (sh >= 0.5 && sa >= 0.5 && (!best || sh + sa > best.s)) best = { s: sh + sa, e };
+    if (sh >= 0.6 && sa >= 0.6 && (!best || sh + sa > best.s)) best = { s: sh + sa, e };
   }
   if (!best) return null;
   const books = best.e.books;

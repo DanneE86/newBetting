@@ -1,0 +1,433 @@
+{
+ "updatedAt": "2026-09-28T19:47:27.474Z",
+ "league": "PL",
+ "fotmobId": 47,
+ "name": "Premier League",
+ "country": "ENG",
+ "table": [
+  {
+   "rank": 1,
+   "team": "Man City",
+   "fotmobName": "Manchester City",
+   "fotmobId": 8456,
+   "group": null,
+   "played": 5,
+   "won": 5,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "13-5",
+   "gd": 8,
+   "pts": 15
+  },
+  {
+   "rank": 2,
+   "team": "Arsenal",
+   "fotmobName": "Arsenal",
+   "fotmobId": 9825,
+   "group": null,
+   "played": 5,
+   "won": 4,
+   "drawn": 0,
+   "lost": 1,
+   "goals": "8-4",
+   "gd": 4,
+   "pts": 12
+  },
+  {
+   "rank": 3,
+   "team": "Brighton",
+   "fotmobName": "Brighton & Hove Albion",
+   "fotmobId": 10204,
+   "group": null,
+   "played": 5,
+   "won": 3,
+   "drawn": 1,
+   "lost": 1,
+   "goals": "16-5",
+   "gd": 11,
+   "pts": 10
+  },
+  {
+   "rank": 4,
+   "team": "Brentford",
+   "fotmobName": "Brentford",
+   "fotmobId": 9937,
+   "group": null,
+   "played": 5,
+   "won": 2,
+   "drawn": 3,
+   "lost": 0,
+   "goals": "10-4",
+   "gd": 6,
+   "pts": 9
+  },
+  {
+   "rank": 5,
+   "team": "Leeds",
+   "fotmobName": "Leeds United",
+   "fotmobId": 8463,
+   "group": null,
+   "played": 5,
+   "won": 2,
+   "drawn": 3,
+   "lost": 0,
+   "goals": "7-3",
+   "gd": 4,
+   "pts": 9
+  },
+  {
+   "rank": 6,
+   "team": "Liverpool",
+   "fotmobName": "Liverpool",
+   "fotmobId": 8650,
+   "group": null,
+   "played": 5,
+   "won": 2,
+   "drawn": 3,
+   "lost": 0,
+   "goals": "7-4",
+   "gd": 3,
+   "pts": 9
+  },
+  {
+   "rank": 7,
+   "team": "Everton",
+   "fotmobName": "Everton",
+   "fotmobId": 8668,
+   "group": null,
+   "played": 5,
+   "won": 2,
+   "drawn": 3,
+   "lost": 0,
+   "goals": "6-3",
+   "gd": 3,
+   "pts": 9
+  },
+  {
+   "rank": 8,
+   "team": "Hull",
+   "fotmobName": "Hull City",
+   "fotmobId": 8667,
+   "group": null,
+   "played": 5,
+   "won": 2,
+   "drawn": 2,
+   "lost": 1,
+   "goals": "6-4",
+   "gd": 2,
+   "pts": 8
+  },
+  {
+   "rank": 9,
+   "team": "Newcastle",
+   "fotmobName": "Newcastle United",
+   "fotmobId": 10261,
+   "group": null,
+   "played": 5,
+   "won": 2,
+   "drawn": 2,
+   "lost": 1,
+   "goals": "9-9",
+   "gd": 0,
+   "pts": 8
+  },
+  {
+   "rank": 10,
+   "team": "Chelsea",
+   "fotmobName": "Chelsea",
+   "fotmobId": 8455,
+   "group": null,
+   "played": 5,
+   "won": 2,
+   "drawn": 1,
+   "lost": 2,
+   "goals": "10-12",
+   "gd": -2,
+   "pts": 7
+  },
+  {
+   "rank": 11,
+   "team": "Ipswich",
+   "fotmobName": "Ipswich Town",
+   "fotmobId": 9902,
+   "group": null,
+   "played": 5,
+   "won": 2,
+   "drawn": 0,
+   "lost": 3,
+   "goals": "7-11",
+   "gd": -4,
+   "pts": 6
+  },
+  {
+   "rank": 12,
+   "team": "Man United",
+   "fotmobName": "Manchester United",
+   "fotmobId": 10260,
+   "group": null,
+   "played": 5,
+   "won": 1,
+   "drawn": 2,
+   "lost": 2,
+   "goals": "8-8",
+   "gd": 0,
+   "pts": 5
+  },
+  {
+   "rank": 13,
+   "team": "Nott'm Forest",
+   "fotmobName": "Nottingham Forest",
+   "fotmobId": 10203,
+   "group": null,
+   "played": 5,
+   "won": 1,
+   "drawn": 2,
+   "lost": 2,
+   "goals": "4-5",
+   "gd": -1,
+   "pts": 5
+  },
+  {
+   "rank": 14,
+   "team": "Sunderland",
+   "fotmobName": "Sunderland",
+   "fotmobId": 8472,
+   "group": null,
+   "played": 5,
+   "won": 1,
+   "drawn": 1,
+   "lost": 3,
+   "goals": "6-10",
+   "gd": -4,
+   "pts": 4
+  },
+  {
+   "rank": 15,
+   "team": "Crystal Palace",
+   "fotmobName": "Crystal Palace",
+   "fotmobId": 9826,
+   "group": null,
+   "played": 5,
+   "won": 1,
+   "drawn": 1,
+   "lost": 3,
+   "goals": "6-11",
+   "gd": -5,
+   "pts": 4
+  },
+  {
+   "rank": 16,
+   "team": "Aston Villa",
+   "fotmobName": "Aston Villa",
+   "fotmobId": 10252,
+   "group": null,
+   "played": 5,
+   "won": 1,
+   "drawn": 1,
+   "lost": 3,
+   "goals": "4-9",
+   "gd": -5,
+   "pts": 4
+  },
+  {
+   "rank": 17,
+   "team": "Bournemouth",
+   "fotmobName": "AFC Bournemouth",
+   "fotmobId": 8678,
+   "group": null,
+   "played": 5,
+   "won": 0,
+   "drawn": 3,
+   "lost": 2,
+   "goals": "6-8",
+   "gd": -2,
+   "pts": 3
+  },
+  {
+   "rank": 18,
+   "team": "Coventry",
+   "fotmobName": "Coventry City",
+   "fotmobId": 8669,
+   "group": null,
+   "played": 5,
+   "won": 1,
+   "drawn": 0,
+   "lost": 4,
+   "goals": "1-10",
+   "gd": -9,
+   "pts": 3
+  },
+  {
+   "rank": 19,
+   "team": "Fulham",
+   "fotmobName": "Fulham",
+   "fotmobId": 9879,
+   "group": null,
+   "played": 5,
+   "won": 0,
+   "drawn": 2,
+   "lost": 3,
+   "goals": "5-8",
+   "gd": -3,
+   "pts": 2
+  },
+  {
+   "rank": 20,
+   "team": "Tottenham",
+   "fotmobName": "Tottenham Hotspur",
+   "fotmobId": 8586,
+   "group": null,
+   "played": 5,
+   "won": 0,
+   "drawn": 2,
+   "lost": 3,
+   "goals": "2-8",
+   "gd": -6,
+   "pts": 2
+  }
+ ],
+ "tableHistory": {
+  "2026-09-28": [
+   [
+    "Man City",
+    1,
+    5,
+    15,
+    8
+   ],
+   [
+    "Arsenal",
+    2,
+    5,
+    12,
+    4
+   ],
+   [
+    "Brighton",
+    3,
+    5,
+    10,
+    11
+   ],
+   [
+    "Brentford",
+    4,
+    5,
+    9,
+    6
+   ],
+   [
+    "Leeds",
+    5,
+    5,
+    9,
+    4
+   ],
+   [
+    "Liverpool",
+    6,
+    5,
+    9,
+    3
+   ],
+   [
+    "Everton",
+    7,
+    5,
+    9,
+    3
+   ],
+   [
+    "Hull",
+    8,
+    5,
+    8,
+    2
+   ],
+   [
+    "Newcastle",
+    9,
+    5,
+    8,
+    0
+   ],
+   [
+    "Chelsea",
+    10,
+    5,
+    7,
+    -2
+   ],
+   [
+    "Ipswich",
+    11,
+    5,
+    6,
+    -4
+   ],
+   [
+    "Man United",
+    12,
+    5,
+    5,
+    0
+   ],
+   [
+    "Nott'm Forest",
+    13,
+    5,
+    5,
+    -1
+   ],
+   [
+    "Sunderland",
+    14,
+    5,
+    4,
+    -4
+   ],
+   [
+    "Crystal Palace",
+    15,
+    5,
+    4,
+    -5
+   ],
+   [
+    "Aston Villa",
+    16,
+    5,
+    4,
+    -5
+   ],
+   [
+    "Bournemouth",
+    17,
+    5,
+    3,
+    -2
+   ],
+   [
+    "Coventry",
+    18,
+    5,
+    3,
+    -9
+   ],
+   [
+    "Fulham",
+    19,
+    5,
+    2,
+    -3
+   ],
+   [
+    "Tottenham",
+    20,
+    5,
+    2,
+    -6
+   ]
+  ]
+ }
+}

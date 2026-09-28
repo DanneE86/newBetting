@@ -51,3 +51,46 @@ Form (äldst → senast): FFFFFVFF · senaste match 2026-09-19
 | GKS Katowice | 4 | 3-0-1 | 4–2 | +0,33 | −25 pe | 2025-12-07 1-0 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Tomasz Kaczmarek. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Adriano (skadad, åter Unknown), Erick Otieno (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Kacper Trelowski | GK | 23 | Poland | 2,0 M€ | 6,80 | 0 | 0 | 0/0 |  |
+| 29 | Wiktor Żołneczko | GK | 17 | Poland | – | 4,96 | 0 | 0 | 0/0 |  |
+| 71 | Tarik Karic | GK | 21 | Bosnia and Herzegovina | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Jerzy Napieraj | CB | 21 | Poland | – | 7,08 | 0 | 0 | 0/0 |  |
+| 3 | Arvid Brorsson | CB | 27 | Sweden | 290 k€ | 6,29 | 0 | 0 | 0/0 |  |
+| 4 | Stratos Svarnas | CB | 28 | Greece | 1,5 M€ | 6,78 | 0 | 0 | 1/0 |  |
+| 7 | Fran Tudor | CB,RWB | 31 | Croatia | 756 k€ | 7,15 | 0 | 0 | 4/1 |  |
+| 19 | Nils Zätterström | CB | 21 | Sweden | 3,0 M€ | – | 0 | 0 | 0/0 |  |
+| 24 | Nikodem Calko | Defender | 17 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 25 | Bogdan Racovițan | CB | 26 | Romania | 1,5 M€ | 6,28 | 0 | 0 | 1/0 |  |
+| 36 | Marko Perović | LB | 20 | Montenegro | 589 k€ | 6,11 | 0 | 0 | 0/0 |  |
+| 77 | Dieudonné Debohi | CB | 25 | Ivory Coast | 360 k€ | 6,65 | 0 | 0 | 2/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Marko Bulat | CDM,LW,CM,CAM | 25 | Croatia | 1,9 M€ | 7,11 | 1 | 1 | 1/0 |  |
+| 6 | Oskar Repka | CM,CDM | 27 | Poland | 1,4 M€ | 6,70 | 0 | 1 | 1/0 |  |
+| 10 | Vladyslav Kochergin | CM | 30 | Ukraine | 756 k€ | 6,59 | 0 | 2 | 1/0 |  |
+| 11 | Adriano | LM,LWB,RWB | 24 | Brazil | – | – | 0 | 0 | 0/0 | skadad, åter Unknown |
+| 17 | Jakub Jendryka | RM | 19 | Poland | 580 k€ | 6,60 | 1 | 0 | 0/0 |  |
+| 20 | Jean Carlos | LWB,LM,RM,RWB | 30 | Brazil | – | 7,04 | 0 | 1 | 0/0 |  |
+| 22 | Abraham Ojo | CDM,CM | 19 | Nigeria | 401 k€ | 6,26 | 0 | 0 | 0/0 |  |
+| 23 | Karol Struski | CM,CDM | 25 | Poland | 1,2 M€ | 6,52 | 0 | 0 | 2/0 |  |
+| 26 | Erick Otieno | LM | 30 | Kenya | 195 k€ | 6,62 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 80 | Lamine Diaby-Fadiga | CAM,RW | 25 | Guinea | 1,9 M€ | 6,15 | 1 | 0 | 0/1 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Patryk Makuch | CAM,RW,LW,ST | 27 | Poland | 433 k€ | 7,40 | 5 | 0 | 0/0 |  |
+| 11 | Mahir Emreli | ST,RW | 29 | Azerbaijan | 466 k€ | 7,13 | 3 | 1 | 1/0 |  |
+| 15 | Oliwier Kwiatkowski | LW | 21 | Poland | 374 k€ | 6,47 | 0 | 0 | 0/0 |  |
+| 21 | Tomasz Pieńko | LW,CAM,LWB,RM,LM | 22 | Poland | 1,8 M€ | 6,63 | 0 | 0 | 2/0 |  |
+| 39 | Isak Brusberg | ST,LW | 20 | Sweden | 1,4 M€ | 5,95 | 0 | 0 | 0/0 |  |
+| 44 | Bogdan Mirčetić | RW | 20 | Serbia | 1,6 M€ | 6,95 | 1 | 0 | 1/0 |  |
+| 88 | Ádin Molnár | RW,LW,RM,LM,CAM | 22 | Hungary | 1,1 M€ | 6,42 | 0 | 0 | 0/0 |  |
+| 99 | Adam Basse | ST | 18 | USA | 393 k€ | 6,20 | 0 | 0 | 0/0 |  |

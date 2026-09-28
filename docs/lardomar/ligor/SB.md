@@ -38,6 +38,15 @@ Underlag: 3511 matcher, säsong 2017/18 – 2026/27. Marknad = stängningsodds u
 | 65–75 % | 76 | 78,9 % | 68,2 % | +10,7 pe (2,3) | ingen effekt |
 | 75–100 % | 7 | 85,7 % | 79,6 % | – | för lite data |
 
+## Kalibrering av oddsen (justeringsmodellen)
+
+g > 0 = favoriter vinner oftare än oddsen säger (skrällar överprissatta), h < 0 = hemmalag överprissatta, d > 0 = kryss underprissatta. Parametrarna är tränade före 2023/24. Kontroll = logloss-skillnad 2023/24– (negativ = bättre). Live används parametrar refittade på all data.
+
+| Bas | g (favoriter) | h (hemma) | d (kryss) | Kontroll | Används live |
+|---|---|---|---|---|---|
+| öppningsodds (Oddset, långt före avspark) | +0,079 | −0,032 | +0,093 | −0,0031 (z −2,3, n 1189) | ja |
+| stängningsodds (sen körning, Stryktipset/Europatipset) | +0,119 | −0,039 | +0,102 | −0,0032 (z −2,0, n 1190) | nej |
+
 ## Signaler mot marknaden
 
 Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (|z| ≥ 2,5 i träning och ≥ 2 i kontroll krävs). "Oddsrörelse" visar om signalen förutsäger hur oddsen rör sig från öppning till stängning, alltså om marknaden lär sig det före avspark.
@@ -45,12 +54,15 @@ Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (
 | Signal | Hela perioden | Träning (< 2023/24) | Kontroll (2023/24–) | Mot öppningsodds | Oddsrörelse | Effekt p90–p10 | Bedömning |
 |---|---|---|---|---|---|---|---|
 | xG-tur (poäng − xP, senaste 8) | −0,030 (z −0,9, n 3348) | −0,065 (z −1,5, n 2187) | +0,026 (z 0,5, n 1161) | −0,042 (z −1,2, n 3341) | −0,011 (z −4,0, n 3341) | −0,046 p | ingen effekt |
-| xG-form mot målform (xGD − GD, senaste 8) | +0,001 (z 0,0, n 3348) | +0,026 (z 0,7, n 2187) | −0,044 (z −0,9, n 1161) | +0,007 (z 0,3, n 3341) | +0,006 (z 2,5, n 3341) | +0,001 p | ingen effekt |
+| xG-form mot målform (xGD − GD, senaste 8) | +0,001 (z 0,0, n 3348) | +0,027 (z 0,7, n 2187) | −0,044 (z −0,9, n 1161) | +0,007 (z 0,3, n 3341) | +0,006 (z 2,6, n 3341) | +0,001 p | ingen effekt |
 | Form mot marknaden (poäng − förväntat, senaste 8) | −0,039 (z −1,1, n 3349) | −0,058 (z −1,3, n 2188) | −0,006 (z −0,1, n 1161) | −0,042 (z −1,2, n 3342) | −0,001 (z −0,3, n 3342) | −0,060 p | ingen effekt |
 | Inbördes möten mot marknaden (≥ 3 möten, 8 år) | +0,038 (z 0,7, n 1305) | +0,003 (z 0,0, n 727) | +0,101 (z 1,1, n 578) | +0,037 (z 0,6, n 1300) | +0,003 (z 0,7, n 1300) | +0,056 p | ingen effekt |
 | Inbördes möten, poängskillnad | +0,018 (z 0,7, n 1305) | +0,007 (z 0,2, n 727) | +0,040 (z 0,9, n 578) | +0,018 (z 0,7, n 1300) | +0,002 (z 1,0, n 1300) | +0,059 p | ingen effekt |
 | Inbördes möten, kryss mot förväntat | −0,020 (z −0,4, n 1305) | +0,011 (z 0,2, n 727) | −0,078 (z −0,9, n 578) | – | – | −0,013 p | ingen effekt |
 | Vilodagar (hemma − borta, ligamatcher) | +0,009 (z 0,5, n 3390) | +0,006 (z 0,4, n 2242) | +0,022 (z 0,5, n 1148) | +0,009 (z 0,6, n 3383) | +0,001 (z 0,5, n 3383) | +0,017 p | ingen effekt |
+| Oddsrörelse öppning → stängning (förväntade poäng) | +0,355 (z 1,7, n 3503) | +0,348 (z 1,4, n 2314) | +0,367 (z 1,0, n 1189) | – | – | +0,086 p | ingen effekt |
+| Bolagssnitt mot Pinnacle vid stängning | −1,327 (z −1,4, n 2363) | −0,699 (z −0,6, n 1513) | −2,154 (z −1,5, n 850) | – | – | −0,083 p | ingen effekt |
+| Under 2,5 mål (O/U-marknaden) mot kryss | +0,212 (z 1,4, n 2707) | +0,278 (z 1,3, n 1517) | +0,136 (z 0,6, n 1190) | – | – | +0,029 p | ingen effekt |
 
 ## Situationer
 
@@ -71,6 +83,33 @@ Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (
 ## Stryktipset och Europatipset
 
 Inga matcher från ligan i de sparade backtesten ännu.
+
+## Tabell nu (FotMob, 2026-09-28)
+
+| # | Lag | M | V | O | F | Mål | +/− | P |
+|---|---|---|---|---|---|---|---|---|
+| 1 | Palermo | 5 | 4 | 1 | 0 | 10-5 | 5 | 13 |
+| 2 | Sudtirol | 5 | 3 | 2 | 0 | 9-3 | 6 | 11 |
+| 3 | Mantova | 5 | 3 | 2 | 0 | 10-5 | 5 | 11 |
+| 4 | Modena | 5 | 3 | 1 | 1 | 8-4 | 4 | 10 |
+| 5 | Ascoli | 5 | 3 | 1 | 1 | 7-4 | 3 | 10 |
+| 6 | Verona | 5 | 2 | 1 | 2 | 10-7 | 3 | 7 |
+| 7 | Avellino | 5 | 2 | 1 | 2 | 7-6 | 1 | 7 |
+| 8 | Cesena | 5 | 1 | 4 | 0 | 7-6 | 1 | 7 |
+| 9 | Benevento | 5 | 2 | 1 | 2 | 6-5 | 1 | 7 |
+| 10 | Pisa | 5 | 2 | 1 | 2 | 8-8 | 0 | 7 |
+| 11 | Padova | 5 | 2 | 1 | 2 | 5-6 | -1 | 7 |
+| 12 | Empoli | 5 | 2 | 0 | 3 | 4-6 | -2 | 6 |
+| 13 | Arezzo | 5 | 2 | 0 | 3 | 6-13 | -7 | 6 |
+| 14 | Virtus Entella | 5 | 1 | 2 | 2 | 7-6 | 1 | 5 |
+| 15 | Cremonese | 5 | 1 | 2 | 2 | 5-7 | -2 | 5 |
+| 16 | Vicenza | 5 | 1 | 2 | 2 | 7-10 | -3 | 5 |
+| 17 | Sampdoria | 5 | 1 | 1 | 3 | 5-9 | -4 | 4 |
+| 18 | Juve Stabia | 5 | 1 | 2 | 2 | 4-7 | -3 | 3 |
+| 19 | Catanzaro | 5 | 1 | 0 | 4 | 5-9 | -4 | 3 |
+| 20 | Carrarese | 5 | 0 | 1 | 4 | 2-6 | -4 | 1 |
+
+Tabellhistorik (en rad per lag och dag sedan 2026-09-28): `data/ligor/SB.json`.
 
 ## Lagfiler
 

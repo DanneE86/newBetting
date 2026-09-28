@@ -59,3 +59,45 @@ Form (äldst → senast): VVOOVFVV · senaste match 2026-09-19
 | Chiba | 1 | 1-0-0 | 3–0 | +0,76 | −19 pe | 2026-08-08 3-0 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Bartosch Gaul. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Kusini Yengi (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Keisuke Osako | GK | 27 | Japan | 1,4 M€ | 6,88 | 0 | 0 | 0/0 |  |
+| 21 | Yudai Tanaka | GK | 30 | Japan | 178 k€ | – | 0 | 0 | 0/0 |  |
+| 43 | Hikaru Ogawa | Keeper | 19 | Japan | – | – | 0 | 0 | 0/0 |  |
+| 99 | Issei Ouchi | GK | 26 | Japan | 156 k€ | 7,08 | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 3 | Taichi Yamasaki | CB,CDM | 25 | Japan | – | 6,23 | 0 | 0 | 0/0 |  |
+| 4 | Hayato Araki | CB | 30 | Japan | 843 k€ | 7,16 | 0 | 0 | 0/0 |  |
+| 19 | Sho Sasaki | CB | 36 | Japan | 190 k€ | 7,59 | 0 | 0 | 1/0 |  |
+| 33 | Tsukasa Shiotani | CB,CDM | 37 | Japan | 204 k€ | 7,69 | 1 | 1 | 1/0 |  |
+| 37 | Ju-Sung Kim | CB | 25 | South Korea | 588 k€ | 6,72 | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Naoto Arai | RWB,LWB,CDM | 29 | Japan | 269 k€ | 7,21 | 0 | 0 | 0/0 |  |
+| 6 | Hayao Kawabe | CDM,CM,CAM,LW | 31 | Japan | 1,1 M€ | 7,33 | 1 | 1 | 1/0 |  |
+| 7 | Shunki Higashi | LWB,LM | 26 | Japan | 980 k€ | 7,80 | 1 | 2 | 0/0 |  |
+| 8 | Takumu Kawamura | CAM | 27 | Japan | 687 k€ | 6,37 | 1 | 0 | 0/0 |  |
+| 11 | Mutsuki Kato | CAM,RW | 29 | Japan | 342 k€ | 7,46 | 2 | 3 | 1/0 |  |
+| 14 | Taishi Matsumoto | CDM | 28 | Japan | 358 k€ | 6,80 | 0 | 1 | 1/0 |  |
+| 15 | Shuto Nakano | RWB,CB,RM | 26 | Japan | 1,0 M€ | 7,71 | 2 | 1 | 0/0 |  |
+| 18 | Daiki Suga | LWB | 28 | Japan | 197 k€ | 7,74 | 0 | 0 | 1/0 |  |
+| 32 | Sota Koshimichi | RWB,LWB | 22 | Japan | 591 k€ | 6,62 | 0 | 0 | 0/0 |  |
+| 35 | Yotaro Nakajima | CDM,CAM | 20 | Japan | 1,2 M€ | 7,21 | 0 | 1 | 2/0 |  |
+| 41 | Naoki Maeda | CAM | 31 | Japan | 231 k€ | 6,42 | 0 | 0 | 0/0 |  |
+| 46 | Rento Noguchi | CM | 18 | Japan | – | – | 0 | 0 | 0/0 |  |
+| 47 | Minato Hara | Midfielder | 18 | Japan | – | – | 0 | 0 | 0/0 |  |
+| 48 | Hiroto Ota | Midfielder | 18 | Japan | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Kusini Yengi | ST | 27 | Australia | 377 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 10 | Akito Suzuki | ST,CAM | 23 | Japan | 1,0 M€ | 7,74 | 6 | 2 | 1/0 |  |
+| 22 | Sébastien Haller | ST | 32 | France | 807 k€ | 7,30 | 3 | 1 | 0/0 |  |
+| 23 | Shun Ayukawa | ST | 25 | Japan | 256 k€ | 7,14 | 3 | 1 | 0/0 |  |
+| 29 | Takuma Asano | ST,RW | 31 | Japan | 888 k€ | – | 0 | 0 | 0/0 |  |
+| 45 | Shimon Kobayashi | LW | 18 | Japan | 624 k€ | 6,98 | 0 | 1 | 0/0 |  |

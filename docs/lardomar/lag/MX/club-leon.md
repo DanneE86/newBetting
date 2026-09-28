@@ -60,3 +60,42 @@ Form (äldst → senast): FVVVOFVO · senaste match 2026-09-21
 | Atlante | 1 | 0-1-0 | 1–1 | −0,37 | +74 pe | 2026-08-29 1-1 (b) |
 
 Ligans test av inbördes möten mot marknaden: svag signal (inte bekräftad).
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Javier Gandolfi. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Ángel Estrada (osäker), Luis Valadez (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 23 | Óscar García | GK | 23 | Mexico | 1,7 M€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Valentín Gauthier | CB,RB | 23 | Uruguay | 1,7 M€ | – | 0 | 0 | 0/0 |  |
+| 3 | Juan Guevara | CB | 25 | Colombia | 992 k€ | – | 0 | 0 | 0/0 |  |
+| 4 | Bryan Colula | RB,CB,RM | 30 | Mexico | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 5 | Sebastián Vegas | CB,LB | 29 | Chile | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 7 | Iván Moreno | RB,RW,CM,RM | 28 | Mexico | 942 k€ | – | 0 | 0 | 0/0 |  |
+| 14 | Jhohan Romaña | CB | 28 | Colombia | 2,5 M€ | – | 0 | 0 | 0/0 |  |
+| 25 | Paúl Bellón | CB | 29 | Mexico | 654 k€ | – | 0 | 0 | 0/0 |  |
+| 26 | Salvador Reyes | LB | 28 | Mexico | 926 k€ | – | 0 | 0 | 0/0 |  |
+| 28 | David Ramírez | RB,RW | 30 | Mexico | 626 k€ | – | 0 | 0 | 0/0 |  |
+| 33 | Abraham Villegas | LB | 23 | Mexico | 449 k€ | – | 0 | 0 | 0/0 |  |
+| 185 | Christopher Mora | LB | 21 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Fernando Beltrán | CAM,CM,CDM | 28 | Mexico | 1,9 M€ | – | 0 | 0 | 0/0 |  |
+| 15 | Sebastián Fierro | CM | 25 | Mexico | 603 k€ | – | 0 | 0 | 0/0 |  |
+| 20 | Rodrigo Echeverría | CAM,CM,CDM,CB | 31 | Chile | 1,8 M€ | – | 0 | 0 | 0/0 |  |
+| 29 | Iván Rodríguez | CDM,CM,CAM | 30 | Mexico | 776 k€ | – | 0 | 0 | 0/0 |  |
+| 30 | Ángel Estrada | LB | 23 | Mexico | 633 k€ | – | 0 | 0 | 0/0 | osäker |
+| 35 | Luis Valadez | CAM | 22 | Mexico | – | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 203 | Jesús Lara | CDM | 21 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 8 | Juan Domínguez | RW,LW | 27 | Mexico | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| 11 | Ismael Díaz | LW,CAM,LM,ST,RW | 29 | Panama | 1,4 M€ | – | 0 | 0 | 0/0 |  |
+| 13 | Daniel Arcila | LW,CAM,CM,ST | 24 | Colombia | 810 k€ | – | 0 | 0 | 0/0 |  |
+| 16 | Jordi Cortizo | RW | 30 | Mexico | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 18 | Edgar Guerra | RW,RM,ST,LW | 25 | Colombia | 1,8 M€ | – | 0 | 0 | 0/0 |  |
+| 19 | Alfonso Alvarado | ST,LW | 26 | Mexico | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 27 | Díber Cambindo | ST | 30 | Colombia | 2,2 M€ | – | 0 | 0 | 0/0 |  |

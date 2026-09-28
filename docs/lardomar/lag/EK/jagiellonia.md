@@ -58,3 +58,52 @@ Form (äldst → senast): VVFVFVFF · senaste match 2026-09-20
 | GKS Katowice | 4 | 2-1-1 | 6–6 | +0,15 | −0 pe | 2026-05-17 2-2 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Adrian Siemieniec. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Ousmane Sow (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Michał Perchel | GK | 19 | Poland | 863 k€ | – | 0 | 0 | 0/0 |  |
+| 50 | Sławomir Abramowicz | GK | 22 | Poland | 2,3 M€ | 7,10 | 0 | 0 | 0/0 |  |
+| 66 | Adrian Damasiewicz | Keeper | 18 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 67 | Jakub Rabiczko | Keeper | 18 | Poland | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Cezary Polak | LB | 23 | Poland | 281 k€ | 6,50 | 0 | 0 | 0/0 |  |
+| 3 | Dušan Stojinović | CB | 26 | Slovenia | 436 k€ | – | 0 | 0 | 0/0 |  |
+| 4 | Yuki Kobayashi | CB | 26 | Japan | 416 k€ | 6,96 | 1 | 0 | 0/0 |  |
+| 5 | Bernardo Vital | CB | 25 | Portugal | 1,8 M€ | 7,08 | 0 | 1 | 2/0 |  |
+| 15 | Norbert Wojtuszek | RB | 24 | Poland | 1,8 M€ | 6,83 | 0 | 0 | 0/0 |  |
+| 20 | Bartłomiej Wdowik | LB | 26 | Poland | 1,2 M€ | 6,30 | 0 | 0 | 0/0 |  |
+| 23 | Guilherme Montóia | LB,CB,LM | 23 | Portugal | 662 k€ | 7,14 | 1 | 0 | 3/0 |  |
+| 27 | Rodrigo Conceição | LB,RW,LWB,RM,LM,CM | 26 | Portugal | – | 6,81 | 0 | 0 | 1/0 |  |
+| 44 | Apostolos Konstantopoulos | CB | 24 | Greece | 526 k€ | 7,03 | 0 | 0 | 1/0 |  |
+| 61 | Bartłomiej Krasiewicz | Defender | 20 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 62 | Szymon Pankiewicz | RB | 25 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 90 | Maciej Kuczyński | Defender | 19 | Poland | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Jakub Kucharski | Midfielder | 17 | Poland | 414 k€ | – | 0 | 0 | 0/0 |  |
+| 6 | Taras Romanczuk | CDM,CM | 34 | Poland | 172 k€ | 7,58 | 0 | 0 | 0/0 |  |
+| 8 | Dawid Drachal | CAM,CDM,LW | 21 | Poland | 865 k€ | 6,61 | 0 | 0 | 0/0 |  |
+| 11 | Jesús Imaz | CAM,CM,ST,RW | 36 | Spain | 272 k€ | 6,81 | 2 | 0 | 0/0 |  |
+| 14 | Hampus Finndell | CDM | 26 | Sweden | 543 k€ | 6,13 | 0 | 0 | 1/0 |  |
+| 19 | Anders Klynge | CM,CDM | 25 | Denmark | 921 k€ | 6,46 | 0 | 0 | 0/0 |  |
+| 21 | Sergio Lozano | CDM,CM | 27 | Spain | 773 k€ | 7,25 | 1 | 2 | 0/0 |  |
+| 63 | Olaf Pankiewicz | Midfielder | 19 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 85 | Eryk Kozłowski | CDM,CM | 20 | Poland | 389 k€ | 6,73 | 0 | 0 | 1/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Kajetan Szmyt | LW,RW,RM,LM | 24 | Poland | 605 k€ | 6,99 | 1 | 1 | 0/0 |  |
+| 9 | Dimitris Rallis | ST | 21 | Greece | 919 k€ | 6,32 | 0 | 0 | 0/0 |  |
+| 10 | Jeremy Agbonifo | RW,RM | 20 | Sweden | 3,0 M€ | 6,16 | 0 | 0 | 1/0 |  |
+| 17 | Youssuf Sylla | ST | 23 | Belgium | 345 k€ | 6,63 | 1 | 0 | 0/0 |  |
+| 30 | Ousmane Sow | RW,LW | 26 | France | 820 k€ | 7,36 | 2 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 32 | Aleksandar Ćirković | LW,LM | 25 | Serbia | 1,6 M€ | 6,38 | 0 | 0 | 0/0 |  |
+| 59 | Pawel Pakiela | Attacker | 19 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 65 | Maksim Konanau | Attacker | 20 | Belarus | – | – | 0 | 0 | 0/0 |  |
+| 72 | Kamil Józwiak | LW,RW | 28 | Poland | 220 k€ | 6,86 | 0 | 0 | 1/0 |  |
+| 80 | Zachary Zalewski | Attacker | 17 | Poland | – | 6,54 | 0 | 0 | 0/0 |  |
+| 99 | Nik Prelec | ST | 25 | Slovenia | 1,0 M€ | 6,83 | 3 | 1 | 1/0 |  |

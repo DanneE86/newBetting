@@ -56,3 +56,46 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | Datum | Spel | Match | Utfall | Folket på laget | Vår procent |
 |---|---|---|---|---|---|
 | 2026-04-30 | Europa 2570 | Palermo - Catanzaro | 1 | 13 % | 23 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Giorgio Gorgone. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Christian Marietta | GK | 24 | Italy | 360 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Mirko Pigliacelli | GK | 33 | Italy | 196 k€ | 6,64 | 0 | 0 | 0/0 |  |
+| 99 | Edoardo Borrelli | Keeper | 22 | Italy | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Marcello Piras | Defender | 22 | Italy | 240 k€ | – | 0 | 0 | 0/0 |  |
+|  | Raul Tassoni | Defender | 19 | Italy | – | – | 0 | 0 | 0/0 |  |
+| 3 | Marco Imperiale | CB | 27 | Italy | 581 k€ | 6,31 | 0 | 0 | 0/0 |  |
+| 4 | Matias Antonini Lui | CB | 28 | Brazil | 795 k€ | 6,74 | 0 | 1 | 2/0 |  |
+| 6 | Niccolò Postiglione | Defender | 21 | Italy | 776 k€ | – | 0 | 0 | 0/0 |  |
+| 24 | Marco Ruggero | CB | 26 | Italy | 1,0 M€ | 6,37 | 0 | 0 | 1/0 |  |
+| 26 | Bruno Verrengia | CB | 23 | Italy | 439 k€ | 6,80 | 1 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 7 | Nicolò Buso | CAM | 26 | Italy | 690 k€ | – | 0 | 0 | 0/0 |  |
+| 9 | Pietro Iemmello | CAM,ST | 34 | Italy | 516 k€ | 7,18 | 2 | 0 | 2/0 |  |
+| 10 | Jacopo Petriccione | CDM,CM | 31 | Italy | 232 k€ | 7,07 | 0 | 0 | 3/0 |  |
+| 14 | Samuel Giovane | RWB | 23 | Italy | 1,0 M€ | 6,00 | 0 | 0 | 1/0 |  |
+| 20 | Simone Pafundi | CAM,ST | 20 | Italy | 5,1 M€ | 7,47 | 0 | 1 | 0/0 |  |
+| 21 | Federico Cassa | Midfielder | 20 | Italy | 673 k€ | – | 0 | 0 | 0/0 |  |
+| 25 | Franky Tchaouna | CM | 21 | Chad | 342 k€ | 6,56 | 0 | 0 | 1/0 |  |
+| 27 | Antonio Candela | RM,RWB,RW | 26 | Italy | 617 k€ | 6,55 | 0 | 1 | 0/0 |  |
+| 29 | Federico Di Francesco | LWB | 32 | Italy | 252 k€ | 6,21 | 0 | 0 | 0/0 |  |
+| 30 | Gabriele Alesi | LWB,CAM | 22 | Italy | 915 k€ | 7,31 | 0 | 1 | 0/0 |  |
+| 62 | Ruggero Frosinini | CB | 25 | Italy | 506 k€ | 6,40 | 0 | 1 | 0/0 |  |
+| 77 | Marco D'Alessandro | LWB,LM | 35 | Italy | 240 k€ | 7,59 | 1 | 0 | 0/0 |  |
+| 80 | Francesco Reita | Midfielder | 17 | Italy | – | – | 0 | 0 | 0/0 |  |
+| 93 | Mehdi Dorval | LWB,LM,LB,RWB | 25 | Algeria | 1,3 M€ | 6,60 | 0 | 0 | 0/0 |  |
+| 98 | Nicola Mosti | CM,CDM,CAM | 28 | Italy | 380 k€ | 6,73 | 0 | 0 | 1/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Andrej Pogacar | Attacker | 24 | Slovenia | 200 k€ | – | 0 | 0 | 0/0 |  |
+|  | Solomon Loubao | ST | 20 | France | – | – | 0 | 0 | 0/0 |  |
+| 18 | Alejo Garnica | Attacker | 22 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 19 | N'Dri Koffi | ST | 24 | Ivory Coast | 292 k€ | 6,30 | 0 | 0 | 1/0 |  |
+| 28 | Franck Tchaouna | ST | 21 | Chad | 249 k€ | – | 0 | 0 | 0/0 |  |
+| 31 | Emanuele Pecorino | ST | 25 | Italy | 399 k€ | 6,31 | 0 | 0 | 0/0 |  |
+| 91 | Gabriel Arditi | Attacker | 19 | Italy | 632 k€ | – | 0 | 0 | 0/0 |  |

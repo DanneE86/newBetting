@@ -740,6 +740,7 @@ function oddsetAvailability(leagueCode, date, homeFd, awayFd) {
 // Live: Pinnacle/Betfair ur data/open/upcoming_odds.json via findSharpBook (Oddsets kvalitetskontroll),
 // annars snitt av minst 3 bolag. Saknas allt anvands Svenska Spels odds. STRYK_MARKET=svs stanger av (jamforelse).
 const MARKET_MODE = process.env.STRYK_MARKET || 'sharp';
+const FRESH_ODDS = process.env.STRYK_FRESH_ODDS === '1';
 let liveOdds = null;
 function sharpMarket(g, leagueCode, date, fh, fa) {
   if (MARKET_MODE === 'svs' || !fh || !fa || !date) return null;
@@ -785,7 +786,7 @@ async function analyzeDraw(product, draw, ctx, result) {
   const clubElo = clubTeams.length ? await clubEloFor(clubTeams, log).catch(() => new Map()) : new Map();
   // Skarpa odds for landskamper/Europacup/nordiska ligor/cuper (The Odds API), bara oppna omgangar
   const extraCache = draw.drawState === 'Open' && MARKET_MODE !== 'svs'
-    ? await extraOdds(events.filter((e) => !COUNTRY_GROUP[e.match?.league?.country?.name]).map((e) => e.match?.league?.name), log).catch(() => null)
+    ? await extraOdds(events.filter((e) => FRESH_ODDS || !COUNTRY_GROUP[e.match?.league?.country?.name]).map((e) => e.match?.league?.name), log).catch(() => null)
     : null;
   if (draw.drawState === 'Open' && process.env.STRYK_CONTEXT !== '0') {
     for (let i = 0; i < events.length; i += 4) {
@@ -881,7 +882,8 @@ async function analyzeDraw(product, draw, ctx, result) {
       a.basis = 'clubelo';
     }
     // Skarpa odds utanfor klubbmodellen (landskamp, Europacup, nordiska ligor)
-    if (extraCache && !a.sharpOdds) {
+    // Nara spelstopp (STRYK_FRESH_ODDS=1) gar de nyss hamtade oddsen fore aldre skarpa odds fran den dagliga hamtningen
+    if (extraCache && (!a.sharpOdds || FRESH_ODDS)) {
       const x = matchExtraOdds(extraCache, { league: a.league, kickoff: m.matchStart, home, away, homeCountry: hp?.countryName, awayCountry: ap?.countryName });
       if (x?.p) { a.market = x.p; a.marketSource = x.source; a.sharpOdds = x.odds; }
     }

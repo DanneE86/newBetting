@@ -4,9 +4,10 @@ Genererad 2026-09-28. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden"
 
 ## I korthet
 
-- Senaste 8: tur med +0,89 poäng per match mot xP. Marknaden prisar redan in det i ligan (ingen bekräftad effekt), så det är inget spel i sig.
-- Senaste 8: xG-målskillnaden är −0,55 per match sämre än målskillnaden.
+- Senaste 8: tur med +0,69 poäng per match mot xP. Marknaden prisar redan in det i ligan (ingen bekräftad effekt), så det är inget spel i sig.
 - Stark historik mot Cagliari (+0,75 p/match mot marknaden, 14 möten), Genoa (+0,62 p/match mot marknaden, 14 möten), Lecce (−0,60 p/match mot marknaden, 10 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Utan Mattia Zaccagni (14 % av anfallet): 2,13 poäng per match mot 1,58 med (8 mot 73 matcher), mot marknaden +0,67 mot +0,03.
+- Utan Tijjani Noslin (10 % av anfallet): 2,14 poäng per match mot 1,58 med (7 mot 74 matcher), mot marknaden +0,71 mot +0,03.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -14,8 +15,8 @@ Form (äldst → senast): FFVVVVOV · senaste match 2026-09-19
 
 | Mått | Värde |
 |---|---|
-| Tur (poäng − xP per match) | +0,89 |
-| xG-målskillnad − målskillnad | −0,55 |
+| Tur (poäng − xP per match) | +0,69 |
+| xG-målskillnad − målskillnad | −0,24 |
 | Poäng mot marknaden per match | +0,69 |
 
 ## Säsonger
@@ -31,9 +32,22 @@ Form (äldst → senast): FFVVVVOV · senaste match 2026-09-19
 | 2023/24 | SA | 38 | 1,61 | +0,02 (+0,09 / −0,05) | 18 % (28 %) | 1,29–1,03 | 1,35–1,19 | 1,50 |
 | 2024/25 | SA | 38 | 1,71 | −0,01 (−0,23 / +0,22) | 29 % (27 %) | 1,61–1,29 | 1,72–1,14 | 1,71 |
 | 2025/26 | SA | 38 | 1,42 | +0,07 (+0,05 / +0,08) | 32 % (29 %) | 1,08–1,05 | 1,22–1,29 | 1,28 |
-| 2026/27 | SA | 5 | 2,60 | +1,04 (+0,69 / +1,27) | 20 % (30 %) | 1,60–0,60 | 1,36–1,57* | 1,26 |
+| 2026/27 | SA | 5 | 2,60 | +1,04 (+0,69 / +1,27) | 20 % (30 %) | 1,60–0,60 | 1,81–1,52 | 1,58 |
 
-\* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+## Nyckelspelare (Understat, 2024/25–)
+
+Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
+
+| Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
+|---|---|---|---|---|
+| Davide Frattesi | 15 % | 0 / 81 | – / 1,63 | – / +0,09 |
+| Mattia Zaccagni | 14 % | 8 / 73 | 2,13 / 1,58 | +0,67 / +0,03 |
+| Tijjani Noslin | 10 % | 7 / 74 | 2,14 / 1,58 | +0,71 / +0,03 |
+| Matteo Cancellieri | 8 % | 6 / 75 | 1,67 / 1,63 | +0,40 / +0,07 |
+| Danilho Doekhi | 6 % | 1 / 80 | 3,00 / 1,61 | +1,03 / +0,08 |
+| Gustav Isaksen | 6 % | 4 / 77 | 1,75 / 1,62 | −0,04 / +0,10 |
+
+Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -82,3 +96,50 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-09-14 | Europa 2505 | Sassuolo - Lazio | 1 | 51 % | 46 % |
 | 2025-08-31 | Europa 2501 | Lazio - Verona | 1 ✓ | 72 % | 61 % |
 | 2025-08-24 | Europa 2499 | Como - Lazio | 1 | 29 % | 32 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Gennaro Gattuso. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Luca Pellegrini (osäker), Adam Marušić (skadad, åter Early October 2026), Patric (osäker), Nicolò Rovella (skadad, åter Early October 2026), Danilo Cataldi (skadad, åter Mid October 2026), Albert Guðmundsson (osäker)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 35 | Christos Mandas | GK | 25 | Greece | 6,5 M€ | 8,00 | 0 | 0 | 0/0 |  |
+| 40 | Edoardo Motta | GK | 21 | Italy | 1,5 M€ | – | 0 | 0 | 0/0 |  |
+| 47 | Davide Renzetti | Keeper | 20 | Italy | 717 k€ | – | 0 | 0 | 0/0 |  |
+| 55 | Alessio Furlanetto | GK | 24 | Italy | 594 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Mohamed Fares | LW | 30 | Algeria | 298 k€ | – | 0 | 0 | 0/0 |  |
+| 2 | Diogo Leite | CB | 27 | Portugal | 6,3 M€ | – | 0 | 0 | 0/0 |  |
+| 3 | Luca Pellegrini | LB | 27 | Italy | 2,2 M€ | – | 0 | 0 | 0/0 | osäker |
+| 5 | Danilho Doekhi | CB | 28 | Netherlands | 9,7 M€ | 7,41 | 0 | 1 | 0/0 |  |
+| 17 | Nuno Tavares | LB | 26 | Portugal | 13,3 M€ | 7,57 | 0 | 2 | 0/0 |  |
+| 23 | Alfonso Pedraza | LB | 30 | Spain | 1,9 M€ | 6,49 | 0 | 0 | 0/0 |  |
+| 25 | Oliver Provstgaard | CB | 23 | Denmark | 5,3 M€ | 6,96 | 0 | 0 | 1/0 |  |
+| 29 | Manuel Lazzari | RB | 32 | Italy | 1,2 M€ | 6,28 | 0 | 0 | 0/0 |  |
+| 33 | Ricardo Bordon | Defender | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 37 | Josip Šutalo | CB | 26 | Croatia | 12,2 M€ | 7,21 | 0 | 0 | 0/0 |  |
+| 76 | Filipe Bordon | CB | 21 | Brazil | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 77 | Adam Marušić | RB,LB | 33 | Montenegro | 2,1 M€ | 5,80 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| | **Mittfältare** | | | | | | | | | |
+| 4 | Patric | CM | 33 | Spain | 954 k€ | – | 0 | 0 | 0/0 | osäker |
+| 6 | Nicolò Rovella | CM | 24 | Italy | 19,8 M€ | 7,20 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 7 | Fisayo Dele-Bashiru | CM | 25 | Nigeria | 4,9 M€ | 6,64 | 0 | 0 | 0/0 |  |
+| 8 | Bruno Galassi | ST | 19 | Spain | – | – | 0 | 0 | 0/0 |  |
+| 15 | Romano Floriani Mussolini | LM,RM,RB | 23 | Italy | 2,2 M€ | 7,25 | 0 | 0 | 1/0 |  |
+| 16 | Davide Frattesi | CM,CAM | 27 | Italy | 23,1 M€ | 7,32 | 3 | 0 | 0/0 |  |
+| 21 | Reda Belahyane | CM | 22 | Morocco | 9,2 M€ | 7,26 | 0 | 0 | 1/0 |  |
+| 24 | Kenneth Taylor | CM,CDM | 24 | Netherlands | 17,5 M€ | 7,27 | 0 | 0 | 0/0 |  |
+| 28 | Adrian Przyborek | LM,RW | 19 | Poland | 7,8 M€ | – | 0 | 0 | 0/0 |  |
+| 32 | Danilo Cataldi | CM,CDM | 32 | Italy | 2,0 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 71 | Valerio Farcomeni | Midfielder | 20 | Italy | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Andrea Pinamonti | ST | 27 | Italy | 11,1 M€ | 6,02 | 0 | 0 | 0/0 |  |
+| 10 | Mattia Zaccagni | LW | 31 | Italy | 11,8 M€ | 7,94 | 1 | 2 | 2/0 |  |
+| 11 | Gustav Isaksen | RW | 25 | Denmark | 13,2 M€ | 6,23 | 0 | 0 | 1/0 |  |
+| 14 | Tijjani Noslin | ST,LW | 27 | Netherlands | 4,9 M€ | 6,82 | 2 | 0 | 0/0 |  |
+| 22 | Matteo Cancellieri | RW | 24 | Italy | 3,2 M€ | 7,10 | 1 | 0 | 1/0 |  |
+| 63 | Federico Serra | Attacker | 20 | Italy | 541 k€ | – | 0 | 0 | 0/0 |  |
+| 80 | Albert Guðmundsson | LW,ST,CAM,LM | 29 | Iceland | 11,1 M€ | 6,62 | 1 | 0 | 1/0 | osäker |

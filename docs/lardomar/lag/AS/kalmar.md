@@ -62,3 +62,45 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | Datum | Spel | Match | Utfall | Folket på laget | Vår procent |
 |---|---|---|---|---|---|
 | 2026-05-23 | Europa 2577 | Kalmar - Degerfors | 1 ✓ | 58 % | 45 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Toni Koskela. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Jakob Kindberg (skadad, åter Mid October 2026), Kasper Paananen (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Samuel Brolin | GK | 25 | Sweden | 437 k€ | 6,75 | 0 | 0 | 0/0 |  |
+| 30 | Jakob Kindberg | GK | 32 | Sweden | 124 k€ | 6,82 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 32 | Casper Andersson | Keeper | 21 | Sweden | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Victor Larsson | LB,RB | 26 | Sweden | 631 k€ | 6,60 | 0 | 0 | 2/0 |  |
+| 3 | Sivert Øverby | LB | 27 | Norway | 188 k€ | 6,67 | 0 | 0 | 0/0 |  |
+| 4 | Jesper Löfgren | CB | 29 | Sweden | 98 k€ | 6,48 | 0 | 0 | 0/0 |  |
+| 18 | Sodiq Lawal | Defender | 18 | Nigeria | – | – | 0 | 0 | 0/0 |  |
+| 20 | Alexander Almqvist | CB | 26 | Sweden | 119 k€ | 6,49 | 0 | 0 | 1/0 |  |
+| 26 | Miska Ylitolva | RB | 22 | Finland | 198 k€ | 6,49 | 0 | 0 | 0/0 |  |
+| 27 | Fabian Bjoerklund | RB | 19 | Sweden | – | 6,52 | 0 | 0 | 0/0 |  |
+| 39 | Lars Sætra | CB | 35 | Norway | 124 k€ | 6,40 | 0 | 0 | 4/0 |  |
+| 47 | Aboubacar Keita | CB | 26 | Guinea | 281 k€ | 6,69 | 2 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Amara Camara | Midfielder | 26 | Belgium | – | – | 0 | 0 | 0/0 |  |
+|  | Wilmer Andersson | Midfielder | 21 | Sweden | – | – | 0 | 0 | 0/0 |  |
+| 5 | Melker Hallberg | CM,CB,ST,CAM | 30 | Sweden | 275 k€ | 6,56 | 0 | 2 | 2/0 |  |
+| 7 | Nassef Chourak | CM,CAM,CDM | 22 | Netherlands | 567 k€ | 6,61 | 0 | 0 | 2/0 |  |
+| 16 | William Andersson | Midfielder | 20 | Sweden | 244 k€ | – | 0 | 0 | 0/0 |  |
+| 17 | Carl Gustafsson | CDM,CM | 26 | Sweden | 921 k€ | 7,30 | 2 | 1 | 1/0 |  |
+| 21 | Abdussalam Magashy | CAM,CM,ST | 28 | Nigeria | 125 k€ | 6,39 | 1 | 1 | 1/0 |  |
+| 22 | Tobias Lauritsen | CM,CDM | 22 | Denmark | 616 k€ | 6,37 | 0 | 0 | 0/0 |  |
+| 23 | Robert Gojani | CM,CDM | 33 | Sweden | 124 k€ | 6,84 | 0 | 2 | 1/0 |  |
+| 25 | Noah Shamoun | CM,LM | 23 | Syria | 373 k€ | 6,30 | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Kasper Paananen | CM,ST,LW,CAM | 23 | Finland | 425 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 9 | Malcolm Stolt | ST | 25 | Sweden | 304 k€ | 6,09 | 0 | 0 | 0/0 |  |
+| 10 | Marius Söderbäck | LW,ST,RW,LM,RM | 22 | Finland | 502 k€ | 6,53 | 0 | 2 | 1/0 |  |
+| 14 | Elion Imeri | Attacker | 17 | Sweden | – | – | 0 | 0 | 0/0 |  |
+| 19 | Eskild Dall | ST | 23 | Denmark | 371 k€ | 5,98 | 0 | 0 | 0/0 |  |
+| 24 | Charles Sagoe Jr. | LW,LM,ST | 22 | England | 750 k€ | 7,34 | 3 | 8 | 0/0 |  |
+| 70 | Emeka Nnamani | ST | 24 | Denmark | 364 k€ | 5,99 | 0 | 0 | 0/0 |  |

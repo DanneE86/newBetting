@@ -58,3 +58,46 @@ Form (äldst → senast): FVOOOVVF · senaste match 2026-09-20
 | Wieczysta Krakow | 1 | 0-1-0 | 1–1 | −0,03 | +74 pe | 2026-09-07 1-1 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Leszek Ojrzynski. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Jasmin Burić | GK | 39 | Bosnia and Herzegovina | 154 k€ | 5,88 | 0 | 0 | 0/0 |  |
+| 30 | Dominik Hładun | GK | 31 | Poland | 141 k€ | – | 0 | 0 | 0/0 |  |
+| 33 | Zlatan Alomerović | GK | 35 | Germany | 221 k€ | 7,19 | 0 | 0 | 1/0 |  |
+| 95 | Franciszek Nowak | Keeper | 17 | Poland | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 3 | Roman Yakuba | CB,LB,LWB | 25 | Ukraine | 429 k€ | 6,92 | 0 | 2 | 2/0 |  |
+| 4 | Damian Michalski | CB | 28 | Poland | 226 k€ | 6,95 | 1 | 0 | 1/0 |  |
+| 5 | Aleks Ławniczak | CB | 27 | Poland | 268 k€ | 7,28 | 1 | 0 | 0/0 |  |
+| 6 | David Čolina | LB,RW,CB,CM,RWB,CDM,LM | 26 | Croatia | 523 k€ | 6,64 | 0 | 0 | 2/0 |  |
+| 13 | Mateusz Grzybek | RWB,RB,RW | 30 | Poland | 167 k€ | 6,91 | 0 | 1 | 2/0 |  |
+| 16 | Josip Ćorluka | LWB,RB,LB,LW,RWB,RM,RW | 31 | Bosnia and Herzegovina | 171 k€ | 7,37 | 1 | 2 | 0/0 |  |
+| 25 | Michał Nalepa | CB | 33 | Poland | 167 k€ | 7,08 | 1 | 1 | 2/0 |  |
+| 31 | Igor Orlikowski | RB,CB,RWB | 20 | Poland | 1,8 M€ | 7,02 | 0 | 1 | 0/0 |  |
+| 94 | Maciej Urbański | Defender | 19 | Poland | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Patryk Dziekonski | Midfielder | 17 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 7 | Jakub Sypek | CAM | 25 | Poland | 254 k€ | 6,49 | 1 | 1 | 0/0 |  |
+| 8 | Damian Dąbrowski | CDM,CM | 34 | Poland | 149 k€ | 6,95 | 0 | 0 | 2/0 |  |
+| 19 | Szymon Lyczko | LWB | 20 | Poland | 584 k€ | 5,25 | 0 | 0 | 0/0 |  |
+| 20 | Mateusz Dziewiatowski | LM,CAM,CDM | 19 | Poland | 1,2 M€ | 6,43 | 0 | 0 | 0/0 |  |
+| 21 | Seweryn Marek | Midfielder | 18 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 26 | Jakub Kolan | CDM,CM | 22 | Poland | 633 k€ | 6,58 | 0 | 0 | 1/0 |  |
+| 37 | Sebastian Kerk | CAM,LW,LM | 32 | Germany | 279 k€ | 6,59 | 0 | 0 | 0/0 |  |
+| 39 | Filip Kocaba | CM,CDM,CB | 21 | Poland | 1,6 M€ | 7,04 | 1 | 0 | 2/0 |  |
+| 84 | Jakub Ligocki | LW | 18 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 88 | Mihael Mlinarić | CAM | 26 | Croatia | 192 k€ | 6,22 | 0 | 0 | 0/0 |  |
+| 99 | Cyprian Popielec | Midfielder | 19 | Poland | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Michail Kosidis | ST | 24 | Greece | 328 k€ | 6,18 | 1 | 0 | 1/0 |  |
+| 11 | Arkadiusz Woźniak | ST | 36 | Poland | 101 k€ | – | 0 | 0 | 0/0 |  |
+| 17 | Levente Szabó | ST | 27 | Hungary | 286 k€ | 6,38 | 1 | 0 | 1/0 |  |
+| 18 | Filip Szymczak | ST | 24 | Poland | 571 k€ | 6,43 | 0 | 0 | 2/0 |  |
+| 44 | Marcel Reguła | RW,ST,RM,CAM | 19 | Poland | 2,8 M€ | 7,19 | 2 | 0 | 2/0 |  |
+| 71 | Kamil Nowogoński | LW | 19 | Poland | 459 k€ | 6,66 | 1 | 0 | 1/0 |  |
+| 77 | Pawel Kosmalski | Attacker | 20 | Poland | – | – | 0 | 0 | 0/0 |  |

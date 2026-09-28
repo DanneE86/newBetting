@@ -58,3 +58,45 @@ Form (äldst → senast): FFFVVVFV · senaste match 2026-09-19
 | Okayama | 3 | 2-0-1 | 3–2 | +0,50 | −28 pe | 2026-09-13 1-2 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Gwi-Jea Jo. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Shusaku Nishikawa | GK | 40 | Japan | 251 k€ | 6,86 | 0 | 0 | 0/0 |  |
+| 23 | Koki Fukui | GK | 30 | Japan | 167 k€ | 4,20 | 0 | 0 | 0/0 |  |
+| 44 | Yoshiaki Arai | GK | 31 | Japan | 169 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Yuta Miyamoto | CB | 26 | Japan | 522 k€ | 6,62 | 0 | 0 | 1/0 |  |
+| 3 | Danilo Boza | CB,RB | 28 | Brazil | 589 k€ | 6,46 | 0 | 0 | 2/0 |  |
+| 5 | Kenta Nemoto | CB | 23 | Japan | 287 k€ | 6,90 | 1 | 0 | 1/0 |  |
+| 6 | Miki Yamane | RB | 32 | Japan | 297 k€ | 6,40 | 0 | 0 | 0/0 |  |
+| 15 | Kota Kudo | CB | 23 | Japan | 300 k€ | 5,87 | 0 | 0 | 2/0 |  |
+| 28 | Yoshitaka Tanaka | Defender | 18 | Japan | – | – | 0 | 0 | 0/0 |  |
+| 31 | Atsushi Inagaki | LW | 21 | Japan | – | 6,53 | 0 | 0 | 0/0 |  |
+| 32 | Eiichi Katayama | RB | 34 | Japan | 118 k€ | 6,16 | 0 | 0 | 0/0 |  |
+| 33 | Shuta Sasa | LB,CB | 20 | Japan | 307 k€ | 6,31 | 0 | 0 | 0/0 |  |
+| 34 | Reon Tanaka | Defender | 19 | Japan | – | – | 0 | 0 | 0/0 |  |
+| 40 | Luka Didulica | Defender | 19 | Australia | – | – | 0 | 0 | 0/0 |  |
+| 88 | Yoichi Naganuma | LB | 29 | Japan | 208 k€ | 6,13 | 0 | 0 | 1/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 11 | Samuel Gustafson | CDM | 31 | Sweden | 789 k€ | – | 0 | 0 | 0/0 |  |
+| 12 | Tatsuki Seko | CDM,CM | 28 | Japan | 576 k€ | 7,23 | 0 | 1 | 1/0 |  |
+| 13 | Ryoma Watanabe | CAM,CDM,CM | 29 | Japan | 904 k€ | 7,11 | 1 | 3 | 1/0 |  |
+| 18 | Kotaro Hayashi | LWB,LM,LB | 25 | Japan | 559 k€ | 6,65 | 1 | 0 | 1/0 |  |
+| 25 | Kaito Yasui | CDM,CM,CAM | 26 | Japan | 540 k€ | 6,66 | 0 | 0 | 0/0 |  |
+| 29 | Yota Horiuchi | Midfielder | 22 | Japan | 230 k€ | – | 0 | 0 | 0/0 |  |
+| 37 | Hayate Ueki | CDM,CM,CAM | 22 | Japan | 277 k€ | 6,94 | 0 | 1 | 1/0 |  |
+| 39 | Jumpei Hayakawa | CAM | 20 | Japan | 450 k€ | 6,33 | 0 | 0 | 0/0 |  |
+| 43 | Takeshi Wada | Midfielder | 17 | Japan | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Takuro Kaneko | RW,RM | 29 | Japan | 621 k€ | 7,71 | 1 | 5 | 0/0 |  |
+| 8 | Kota Mizunuma | RW | 36 | Japan | 183 k€ | 6,38 | 0 | 0 | 0/0 |  |
+| 10 | Matheus Sávio | LW,LM,CAM | 29 | Brazil | 704 k€ | 7,14 | 4 | 0 | 1/1 |  |
+| 17 | Hiiro Komori | ST | 26 | Japan | 476 k€ | 6,36 | 1 | 0 | 0/0 |  |
+| 36 | Renji Hidano | ST,RW | 22 | Japan | 275 k€ | 6,45 | 0 | 0 | 0/0 |  |
+| 42 | Harumi Minamino | ST | 22 | Japan | 307 k€ | 6,75 | 4 | 0 | 0/0 |  |
+| 45 | Ado Onaiwu | ST | 30 | Japan | 420 k€ | 6,56 | 1 | 0 | 1/0 |  |

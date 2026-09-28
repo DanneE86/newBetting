@@ -71,3 +71,42 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-04-22 | Europa 2568 | Elfsborg - Djurgården | 1 ✓ | 32 % | 32 % |
 | 2025-10-19 | Europa 2515 | Elfsborg - Öster | 1 ✓ | 55 % | 53 % |
 | 2025-09-14 | Europa 2505 | Elfsborg - Malmö | X | 20 % | 28 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Björn Hamberg. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Per Frick (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 12 | Theo Sander | GK | 21 | Denmark | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 30 | Lucas Hägg Johansson | GK | 32 | Sweden | 142 k€ | – | 0 | 0 | 0/0 |  |
+| 31 | Isak Pettersson | GK | 29 | Sweden | 245 k€ | 7,06 | 0 | 0 | 1/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Viggo Elfström | CB | 19 | Sweden | – | – | 0 | 0 | 0/0 |  |
+| 3 | Jonathan Esenga | LB,CB | 19 | England | – | – | 0 | 0 | 0/0 |  |
+| 4 | Daniel Granli | CB | 32 | Norway | 131 k€ | – | 0 | 0 | 0/0 |  |
+| 4 | Thomas Isherwood | CB,LB | 28 | Sweden | 506 k€ | 7,00 | 0 | 1 | 1/0 |  |
+| 6 | Rasmus Wikström | CB,RB | 25 | Sweden | 1,0 M€ | 7,08 | 1 | 0 | 3/0 |  |
+| 8 | Sebastian Holmén | CB | 34 | Sweden | 184 k€ | 6,85 | 0 | 0 | 4/0 |  |
+| 23 | Niklas Hult | LB,LM | 36 | Sweden | 174 k€ | 7,21 | 1 | 2 | 2/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Ossian Nordvall | CDM | 19 | Sweden | 523 k€ | 6,41 | 0 | 0 | 0/0 |  |
+| 7 | Marcus Rohdén | RM,CM,CAM,CDM,RW | 35 | Sweden | 153 k€ | 6,16 | 0 | 0 | 0/0 |  |
+| 10 | Simon Olsson | CDM,CM | 29 | Sweden | 1,4 M€ | 7,13 | 2 | 2 | 3/0 |  |
+| 14 | Gabríel Gunnarsson | LM | 18 | Iceland | 430 k€ | – | 0 | 0 | 0/0 |  |
+| 15 | Simon Hedlund | RM,RW | 33 | Sweden | 208 k€ | 6,53 | 0 | 1 | 0/0 |  |
+| 16 | Alexander Jensen | RB,RWB,LWB,RM | 25 | Denmark | 1,2 M€ | 7,37 | 0 | 2 | 1/0 |  |
+| 18 | Júlíus Magnússon | CDM,CM | 28 | Iceland | 568 k€ | 7,33 | 3 | 3 | 3/0 |  |
+| 19 | Julius Beck | CAM,CM,RW | 21 | Denmark | 752 k€ | 7,15 | 0 | 2 | 2/0 |  |
+| 27 | Abdulmuiz Oladimeji | Midfielder | 18 | Nigeria | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Arbër Zeneli | LW | 31 | Kosovo | 919 k€ | 7,11 | 4 | 2 | 2/0 |  |
+| 11 | Taylor Silverholt | ST,RW | 25 | Sweden | 540 k€ | 6,62 | 1 | 2 | 1/0 |  |
+| 17 | Per Frick | ST | 34 | Sweden | 197 k€ | 6,55 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 21 | Leo Östman | ST | 20 | Sweden | 1,3 M€ | 6,90 | 6 | 1 | 2/0 |  |
+| 22 | Dion Krasniqi | ST | 23 | Sweden | 268 k€ | – | 0 | 0 | 0/0 |  |
+| 25 | Ari Sigurpálsson | LW | 23 | Iceland | 464 k€ | 6,49 | 4 | 0 | 1/0 |  |
+| 29 | Momoh Kamara | RW,CM | 21 | Sierra Leone | – | 7,15 | 5 | 3 | 1/0 |  |

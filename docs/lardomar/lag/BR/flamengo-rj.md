@@ -61,3 +61,53 @@ Form (äldst → senast): VVFVVVVV · senaste match 2026-09-20
 | Remo | 2 | 2-0-0 | 4–0 | +0,63 | −17 pe | 2026-09-06 1-0 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Leonardo Jardim. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Ayrton Lucas (skadad, åter Mid October 2026), Evertton Araújo (skadad, åter Early November 2026), Gonzalo Plata (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Agustín Rossi | GK | 31 | Argentina | 5,3 M€ | – | 0 | 0 | 0/0 |  |
+| 42 | Andrew | GK | 25 | Brazil | 2,8 M€ | – | 0 | 0 | 0/0 |  |
+| 49 | Dyogo Alves | GK | 22 | Brazil | 373 k€ | – | 0 | 0 | 0/0 |  |
+| 84 | Gabriel Werneck | Keeper | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Guillermo Varela | RB | 33 | Uruguay | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 3 | Léo Ortiz | CB | 30 | Brazil | 10,8 M€ | – | 0 | 0 | 0/0 |  |
+| 4 | Léo Pereira | CB | 30 | Brazil | 5,1 M€ | – | 0 | 0 | 0/0 |  |
+| 6 | Ayrton Lucas | LB | 29 | Brazil | 2,5 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 13 | Danilo | CB,RB | 35 | Brazil | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 22 | Emerson Royal | RB | 27 | Brazil | 4,9 M€ | – | 0 | 0 | 0/0 |  |
+| 26 | Alex Sandro | LB | 35 | Brazil | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 44 | Vitão | CB | 26 | Brazil | 7,8 M€ | – | 0 | 0 | 0/0 |  |
+| 51 | Daniel Sales | RB | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 71 | João Victor | CB | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 77 | Johnny Góes | LB | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Erick Pulgar | CDM | 32 | Chile | 2,5 M€ | – | 0 | 0 | 0/0 |  |
+| 8 | Saúl | CDM | 31 | Spain | 973 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Giorgian de Arrascaeta | CAM | 32 | Uruguay | 10,5 M€ | – | 0 | 0 | 0/0 |  |
+| 14 | Anthony Valencia | CAM,RWB,CDM | 23 | Ecuador | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 18 | Nicolás de la Cruz | CDM,CM | 29 | Uruguay | 6,7 M€ | – | 0 | 0 | 0/0 |  |
+| 20 | Lucas Paquetá | CAM,CDM,CM,RW,ST | 29 | Brazil | 36,6 M€ | – | 0 | 0 | 0/0 |  |
+| 21 | Jorginho | CDM | 34 | Italy | 2,6 M€ | – | 0 | 0 | 0/0 |  |
+| 50 | Juan Sayago | Midfielder | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 52 | Evertton Araújo | CDM,CM | 23 | Brazil | 4,3 M€ | – | 0 | 0 | 0/0 | skadad, åter Early November 2026 |
+| 76 | Gabriel Amancio | Midfielder | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 82 | Jheferson Medino | Midfielder | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Luiz Araújo | RW | 30 | Brazil | 2,6 M€ | – | 0 | 0 | 0/0 |  |
+| 9 | Pedro | ST | 29 | Brazil | 10,5 M€ | – | 0 | 0 | 0/0 |  |
+| 15 | Jorge Carrascal | RW,CAM,LW,RM | 28 | Colombia | 5,2 M€ | – | 0 | 0 | 0/0 |  |
+| 16 | Samuel Lino | LW,CAM,LM | 26 | Brazil | 13,3 M€ | – | 0 | 0 | 0/0 |  |
+| 19 | Gonzalo Plata | RW,ST,LW,CAM | 25 | Ecuador | 5,7 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 27 | Bruno Henrique | ST,LW | 35 | Brazil | 793 k€ | – | 0 | 0 | 0/0 |  |
+| 30 | Joaquín Freitas | ST,RW | 19 | Argentina | 1,7 M€ | – | 0 | 0 | 0/0 |  |
+| 62 | Diego Reyes | Attacker | 19 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| 79 | Joshua | LW | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 81 | Douglas Telles | RW | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 86 | Ryan Roberto | Attacker | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |

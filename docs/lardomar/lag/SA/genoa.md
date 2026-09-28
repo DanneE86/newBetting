@@ -4,8 +4,8 @@ Genererad 2026-09-28. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden"
 
 ## I korthet
 
-- Senaste 8: otur med −0,83 poäng per match mot xP. Marknaden prisar redan in det i ligan (ingen bekräftad effekt), så det är inget spel i sig.
-- Senaste 8: xG-målskillnaden är +0,63 per match bättre än målskillnaden.
+- Senaste 8: otur med −0,75 poäng per match mot xP. Marknaden prisar redan in det i ligan (ingen bekräftad effekt), så det är inget spel i sig.
+- Senaste 8: xG-målskillnaden är +0,57 per match bättre än målskillnaden.
 - Stark historik mot Bologna (+0,65 p/match mot marknaden, 13 möten), Parma (−0,56 p/match mot marknaden, 13 möten), Como (−0,61 p/match mot marknaden, 7 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
 - På Stryktipset/Europatipset streckas lagets vinst ×0,88 av vår sannolikhet (11 matcher). Folket underspelar laget: dess vinst ger streckvärde.
 
@@ -15,8 +15,8 @@ Form (äldst → senast): OFFFFFOF · senaste match 2026-09-20
 
 | Mått | Värde |
 |---|---|
-| Tur (poäng − xP per match) | −0,83 |
-| xG-målskillnad − målskillnad | +0,63 |
+| Tur (poäng − xP per match) | −0,75 |
+| xG-målskillnad − målskillnad | +0,57 |
 | Poäng mot marknaden per match | −0,84 |
 
 ## Säsonger
@@ -28,13 +28,28 @@ Form (äldst → senast): OFFFFFOF · senaste match 2026-09-20
 | 2019/20 | SA | 38 | 1,03 | −0,03 (−0,17 / +0,11) | 24 % (26 %) | 1,24–1,92 | 1,31–1,57 | 1,23 |
 | 2020/21 | SA | 38 | 1,11 | +0,18 (+0,09 / +0,27) | 32 % (25 %) | 1,24–1,53 | 1,07–1,65 | 1,06 |
 | 2021/22 | SA | 38 | 0,74 | −0,19 (−0,31 / −0,07) | 42 % (26 %) | 0,71–1,58 | 1,01–1,58 | 1,05 |
-| 2022/23 | SB | 38 | 1,95 | +0,08 (+0,16 / +0,01) | 29 % (28 %) | 1,39–0,74 | 1,54–1,02* | 1,72 |
+| 2022/23 | SB | 38 | 1,95 | +0,08 (+0,16 / +0,01) | 29 % (28 %) | 1,39–0,74 | 1,55–1,02* | 1,72 |
 | 2023/24 | SA | 38 | 1,29 | +0,17 (+0,23 / +0,10) | 34 % (29 %) | 1,18–1,18 | 1,02–1,26 | 1,19 |
 | 2024/25 | SA | 38 | 1,13 | +0,07 (−0,11 / +0,26) | 34 % (28 %) | 0,97–1,29 | 1,05–1,41 | 1,16 |
 | 2025/26 | SA | 38 | 1,08 | −0,04 (−0,17 / +0,09) | 29 % (29 %) | 1,08–1,34 | 1,27–1,47 | 1,25 |
-| 2026/27 | SA | 5 | 0,20 | −1,12 (−0,78 / −1,62) | 20 % (30 %) | 0,60–2,00 | 1,18–1,67* | 1,10 |
+| 2026/27 | SA | 5 | 0,20 | −1,12 (−0,78 / −1,62) | 20 % (30 %) | 0,60–2,00 | 0,97–1,58 | 0,97 |
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+
+## Nyckelspelare (Understat, 2024/25–)
+
+Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
+
+| Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
+|---|---|---|---|---|
+| Milutin Osmajic | 18 % | 0 / 81 | – / 1,05 | – / −0,05 |
+| Lorenzo Colombo | 15 % | 0 / 81 | – / 1,05 | – / −0,05 |
+| Vitinha | 9 % | 13 / 68 | 1,23 / 1,01 | +0,12 / −0,09 |
+| Ruslan Malinovskiy | 7 % | 1 / 80 | 0,00 / 1,06 | −1,24 / −0,04 |
+| Aarón Martín | 6 % | 3 / 78 | 0,33 / 1,08 | −0,98 / −0,02 |
+| Junior Messias | 5 % | 15 / 66 | 0,93 / 1,08 | −0,02 / −0,06 |
+
+Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -77,3 +92,47 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-10-29 | Europa 2518 | Genoa - Cremonese | 2 | 54 % | 53 % |
 | 2025-10-19 | Europa 2515 | Genoa - Parma | X | 47 % | 42 % |
 | 2025-08-31 | Europa 2501 | Genoa - Juventus | 2 | 12 % | 20 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Daniele De Rossi. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Elias Havel (skadad, åter Early October 2026), Lorenzo Venturino (skadad, åter Back in training)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Justin Bijlow | GK | 28 | Netherlands | 2,4 M€ | 6,21 | 0 | 0 | 0/0 |  |
+| 39 | Daniele Sommariva | GK | 29 | Italy | 338 k€ | – | 0 | 0 | 0/0 |  |
+| 99 | Franz Stolz | GK | 25 | Austria | 407 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Mario Mitaj | LB,LWB,LW,LM | 23 | Albania | 3,6 M€ | – | 0 | 0 | 0/0 |  |
+| 5 | Leo Østigard | CB | 26 | Norway | 5,4 M€ | 6,60 | 0 | 0 | 3/0 |  |
+| 16 | Cody Drameh | RB,RWB,RW | 24 | England | 2,2 M€ | – | 0 | 0 | 0/0 |  |
+| 22 | Johan Vásquez | CB | 27 | Mexico | 11,3 M€ | 6,27 | 1 | 0 | 1/1 |  |
+| 27 | Alessandro Marcandalli | CB | 23 | Italy | 2,6 M€ | 6,24 | 0 | 0 | 1/0 |  |
+| 31 | David Puczka | CB | 21 | Austria | 919 k€ | 6,22 | 0 | 0 | 0/0 |  |
+| 34 | Sebastian Otoa | CB | 22 | Denmark | 2,2 M€ | 6,46 | 0 | 0 | 1/0 |  |
+| 74 | Mamedi Doucouré | Defender | 19 | France | 763 k€ | – | 0 | 0 | 0/0 |  |
+| 85 | Marcelo Vaz | Defender | 19 | Guinea | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 3 | Kingsley Ehizibue | RM,RWB | 31 | Netherlands | 1,3 M€ | 6,42 | 0 | 0 | 1/0 |  |
+| 4 | Amorim | CM,CDM | 21 | Brazil | – | 6,40 | 0 | 0 | 1/0 |  |
+| 8 | Tommaso Baldanzi | CAM,CM,ST | 23 | Italy | 6,8 M€ | 6,22 | 0 | 0 | 0/0 |  |
+| 10 | Junior Messias | CAM | 35 | Brazil | 603 k€ | 6,95 | 0 | 0 | 0/0 |  |
+| 20 | Stefano Sabelli | RM,RB,LWB,LM | 33 | Italy | 1,1 M€ | 5,60 | 0 | 0 | 1/0 |  |
+| 25 | Hamed Traorè | CAM,LW | 26 | Ivory Coast | 12,5 M€ | – | 0 | 0 | 0/0 |  |
+| 32 | Morten Frendrup | CM,CDM | 25 | Denmark | 14,4 M€ | 7,12 | 0 | 0 | 0/0 |  |
+| 71 | Samuel Wiafe | CM | 18 | Italy | 2,1 M€ | – | 0 | 0 | 0/0 |  |
+| 77 | Mikael Egill Ellertsson | CM,RWB,LWB,LB,RM,RW | 24 | Iceland | 6,8 M€ | 6,50 | 0 | 0 | 1/0 |  |
+| 97 | Djibril Sow | CM,CDM,CAM,LM,RW | 29 | Switzerland | 4,4 M€ | 6,68 | 0 | 1 | 1/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Robinho Júnior | RW | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 9 | Vítinha | ST,CAM,LW | 26 | Portugal | 6,1 M€ | 6,15 | 0 | 0 | 0/0 |  |
+| 11 | Franz-Ethan Meichtry | RW,RM,CAM | 21 | Switzerland | 2,8 M€ | 6,19 | 0 | 0 | 0/0 |  |
+| 17 | Elias Havel | ST | 23 | Austria | 2,0 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 18 | Milutin Osmajić | ST | 27 | Montenegro | 1,7 M€ | 6,86 | 2 | 0 | 0/0 |  |
+| 19 | Joi Xheto Nuredini | Attacker | 19 | Albania | – | – | 0 | 0 | 0/0 |  |
+| 29 | Lorenzo Colombo | ST | 24 | Italy | 6,0 M€ | 6,28 | 0 | 2 | 0/0 |  |
+| 76 | Lorenzo Venturino | CAM | 20 | Italy | 2,7 M€ | – | 0 | 0 | 0/0 | skadad, åter Back in training |
+| 92 | Stephan El Shaarawy | LW,CAM | 33 | Italy | 1,4 M€ | 6,33 | 0 | 0 | 0/0 |  |

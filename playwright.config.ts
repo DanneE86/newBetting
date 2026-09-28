@@ -37,6 +37,14 @@ export default defineConfig({
       testMatch: /match-context\.spec\.ts/,
     },
     {
+      name: 'routing',
+      testMatch: /routing\.spec\.ts/,
+    },
+    {
+      name: 'lardomar',
+      testMatch: /lardomar\.spec\.ts/,
+    },
+    {
       name: 'player-stats',
       testMatch: /player-stats\.spec\.ts/,
     },

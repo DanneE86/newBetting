@@ -71,3 +71,54 @@ Form (äldst → senast): VVFFVVOO · senaste match 2026-09-19
 | Estudiantes Rio Cuarto | 1 | 1-0-0 | 1–0 | +1,15 | −29 pe | 2026-04-18 1-0 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Ariel Pereyra. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Harlen Castillo (skadad, åter Mid October 2026), Gonzalo Errecalde (skadad, åter Mid October 2026), Juan Cortazzo (skadad, åter Mid October 2026), Jeremías Merlo (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Máximo Cabrera | GK | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 12 | Patricio Schroeder | Keeper | 19 | Republic of Ireland | – | – | 0 | 0 | 0/0 |  |
+| 15 | Harlen Castillo | GK | 33 | Colombia | 381 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 23 | Nelson Insfrán | GK | 31 | Argentina | 1,4 M€ | – | 0 | 0 | 0/0 |  |
+| 27 | Julián Kadijevic | GK | 22 | Argentina | 264 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Mariano Ojeda | Defender | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 4 | Renzo Giampaoli | CB | 26 | Argentina | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 13 | Germán Conti | CB | 32 | Argentina | 275 k€ | – | 0 | 0 | 0/0 |  |
+| 14 | Gonzalo Errecalde | CB | 26 | Argentina | 326 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 21 | Enzo Martínez | CB | 28 | Uruguay | 892 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Matías Melluso | LB | 28 | Argentina | 257 k€ | – | 0 | 0 | 0/0 |  |
+| 24 | Pedro Silva Torrejón | LB | 29 | Argentina | 715 k€ | – | 0 | 0 | 0/0 |  |
+| 25 | Alexis Steimbach | RB,RM,CM | 24 | Argentina | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 28 | Fabricio Corbalán | RB | 22 | Argentina | 430 k€ | – | 0 | 0 | 0/0 |  |
+| 31 | Bautista Barros Schelotto | RB,LB | 26 | Argentina | 316 k€ | – | 0 | 0 | 0/0 |  |
+| 35 | Juan Cortazzo | CB | 20 | Argentina | 722 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 36 | Lucas Lamella | Defender | 16 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 37 | Jeremías Langa | Defender | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 46 | Alejo Gelsomino | Defender | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Ignacio Miramón | CDM,CM | 23 | Argentina | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 8 | Ignacio Fernández | CAM,RW,CM,RM | 36 | Argentina | 296 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Nicolás Barros Schelotto | CDM,CAM,CM,LM | 20 | Argentina | 1,4 M€ | – | 0 | 0 | 0/0 |  |
+| 16 | Augusto Max | CDM,CM,CB | 34 | Argentina | 283 k€ | – | 0 | 0 | 0/0 |  |
+| 18 | Mateo Seoane | CDM,CM,RM | 22 | Argentina | 553 k€ | – | 0 | 0 | 0/0 |  |
+| 33 | Pablo Aguiar | CDM | 20 | Paraguay | 486 k€ | – | 0 | 0 | 0/0 |  |
+| 34 | Leandro Mamut | CM | 22 | Argentina | 481 k€ | – | 0 | 0 | 0/0 |  |
+| 39 | Facundo Di Biasi | CM | 21 | Argentina | 910 k€ | – | 0 | 0 | 0/0 |  |
+| 42 | Santiago Villarreal | Midfielder | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Manuel Panaro | LW,RW | 23 | Argentina | 1,8 M€ | – | 0 | 0 | 0/0 |  |
+| 9 | Ivo Mammini | ST | 23 | Argentina | 382 k€ | – | 0 | 0 | 0/0 |  |
+| 11 | Jeremías Merlo | LW,RW | 20 | Argentina | 1,4 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 17 | Lucas Janson | LW,ST | 32 | Argentina | 381 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | Agustín Colazo | ST | 25 | Argentina | 570 k€ | – | 0 | 0 | 0/0 |  |
+| 20 | Juan Pérez | RW | 22 | Colombia | 389 k€ | – | 0 | 0 | 0/0 |  |
+| 26 | Franco Torres | LW,RW | 27 | Argentina | 353 k€ | – | 0 | 0 | 0/0 |  |
+| 29 | Agustín Auzmendi | ST | 29 | Argentina | 705 k€ | – | 0 | 0 | 0/0 |  |
+| 32 | Marcelo Torres | ST | 28 | Argentina | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| 43 | Maximiliano Zalazar | RW | 25 | Argentina | 540 k€ | – | 0 | 0 | 0/0 |  |

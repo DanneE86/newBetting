@@ -24,11 +24,11 @@ Form (äldst → senast): FFVVOFFO · senaste match 2026-09-19
 | 2019/20 | PT | 34 | 1,26 | +0,03 (+0,28 / −0,22) | 29 % (28 %) | 1,18–1,29 | 1,29–1,12* | 1,48 |
 | 2020/21 | PT | 34 | 1,15 | −0,12 (−0,31 / +0,07) | 18 % (29 %) | 0,97–1,24 | 1,15–1,28* | 1,28 |
 | 2021/22 | PT | 34 | 1,50 | +0,18 (−0,11 / +0,48) | 35 % (27 %) | 1,38–1,24 | 1,50–1,49* | 1,42 |
-| 2022/23 | PT | 34 | 1,09 | −0,20 (+0,07 / −0,47) | 21 % (26 %) | 0,94–1,21 | 1,45–1,67* | 1,26 |
+| 2022/23 | PT | 34 | 1,09 | −0,20 (+0,07 / −0,47) | 21 % (26 %) | 0,94–1,21 | 1,46–1,67* | 1,26 |
 | 2023/24 | PT | 34 | 1,06 | −0,16 (+0,15 / −0,47) | 26 % (26 %) | 1,24–1,53 | 1,24–1,40* | 1,26 |
 | 2024/25 | PT | 34 | 1,00 | −0,18 (−0,18 / −0,18) | 29 % (28 %) | 1,00–1,38 | 1,07–1,39* | 1,16 |
 | 2025/26 | PT | 34 | 1,47 | +0,14 (+0,20 / +0,08) | 32 % (27 %) | 1,38–1,12 | 1,54–1,20* | 1,59 |
-| 2026/27 | PT | 6 | 1,33 | +0,12 (+0,08 / +0,22) | 33 % (26 %) | 0,83–0,83 | 1,44–0,95* | 1,63 |
+| 2026/27 | PT | 6 | 1,33 | +0,12 (+0,08 / +0,22) | 33 % (26 %) | 0,83–0,83 | 1,44–0,96* | 1,63 |
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
 
@@ -61,3 +61,45 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | Datum | Spel | Match | Utfall | Folket på laget | Vår procent |
 |---|---|---|---|---|---|
 | 2025-12-28 | Europa 2535 | Arouca - Gil Vicente | X | 49 % | 50 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Luís Pinto. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Arthur Tchaptchet (skadad, åter Early October 2026), Mohamed Bamba (skadad, åter Day to day), Walace França (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | André Picornell | GK | 22 | Sweden | 521 k€ | – | 0 | 0 | 0/0 |  |
+| 30 | Lucão | GK | 25 | Brazil | 963 k€ | 6,86 | 0 | 0 | 1/0 |  |
+| 44 | Tiago Ferreira | Keeper | 17 | Portugal | – | – | 0 | 0 | 0/0 |  |
+| 94 | Samuel Portugal | GK | 32 | Brazil | 518 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | José Silva | RB,RM | 21 | Portugal | 1,2 M€ | 6,76 | 0 | 0 | 0/0 |  |
+| 3 | Antonio Espigares | CB | 22 | Spain | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 4 | Marvin Gilbert | CB | 23 | France | 2,2 M€ | 7,28 | 0 | 0 | 1/0 |  |
+| 26 | Weverson | LB | 26 | Brazil | 701 k€ | 6,78 | 0 | 0 | 1/0 |  |
+| 39 | Jonathan Buatu | CB | 33 | Angola | 494 k€ | 6,96 | 0 | 0 | 0/0 |  |
+| 45 | David Moreira | LB,CB | 22 | Cape Verde | 1,3 M€ | 6,73 | 0 | 0 | 0/0 |  |
+| 47 | Ricardo Esgaio | RB,LB | 33 | Portugal | 586 k€ | 6,98 | 0 | 0 | 2/0 |  |
+| 59 | Arthur Tchaptchet | CB | 20 | France | – | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Zé Carlos | CDM | 24 | Portugal | 847 k€ | 6,76 | 0 | 0 | 0/0 |  |
+| 8 | Mohamed Bamba | CDM | 21 | Ivory Coast | 1,3 M€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
+| 10 | Santi García | CAM,CDM | 25 | Spain | 2,8 M€ | 6,91 | 0 | 0 | 1/0 |  |
+| 12 | Andreas Lausen | CM,CDM,CAM,LW | 23 | Denmark | 507 k€ | 6,78 | 0 | 0 | 0/0 |  |
+| 17 | Sergio Bermejo | RW | 29 | Spain | 349 k€ | – | 0 | 0 | 0/0 |  |
+| 82 | Gonçalo Maia | Midfielder | 20 | Portugal | 534 k€ | – | 0 | 0 | 0/0 |  |
+| 86 | Diogo Prioste | CM,CDM | 22 | Portugal | 2,0 M€ | 7,22 | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Tidjany Touré | LW | 24 | France | 440 k€ | 6,43 | 0 | 0 | 0/0 |  |
+| 11 | Joelson Fernandes | LW,RW | 23 | Portugal | 1,3 M€ | 6,74 | 0 | 0 | 0/0 |  |
+| 19 | Guilherme Gomes | ST | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 20 | Gil Martins | LW | 20 | Portugal | – | 6,96 | 1 | 2 | 0/0 |  |
+| 23 | Héctor Hernández | ST | 31 | Spain | 406 k€ | 7,08 | 3 | 1 | 2/0 |  |
+| 27 | Agustín Moreira | LW | 25 | Uruguay | 620 k€ | 5,85 | 0 | 0 | 0/0 |  |
+| 32 | Martín Fernández | LW | 23 | Uruguay | 592 k€ | 6,03 | 0 | 0 | 0/0 |  |
+| 57 | Walace França | ST | 21 | Brazil | 651 k€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 77 | Murilo | RW,RM | 31 | Brazil | 691 k€ | 6,79 | 1 | 0 | 0/0 |  |
+| 99 | Mohamed Kaba | Attacker | 24 | Mali | – | 6,06 | 0 | 0 | 0/0 |  |

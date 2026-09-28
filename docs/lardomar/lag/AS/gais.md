@@ -63,3 +63,44 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-09-14 | Europa 2505 | Sirius - GAIS | 1 | 42 % | 37 % |
 | 2025-08-31 | Europa 2501 | GAIS - Häcken | 1 ✓ | 61 % | 54 % |
 | 2025-08-17 | Europa 2497 | Hammarby - GAIS | 2 ✓ | 19 % | 25 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Fredrik Holmberg. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Róbert Thorkelsson (skadad, åter Out for season), Kevin Holmén (skadad, åter Out for season), Christos Gravius (skadad, åter About 1-2 weeks), Gustav Lundgren (skadad, åter Out for season)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Mërgim Krasniqi | GK | 34 | Sweden | 286 k€ | 7,40 | 0 | 0 | 0/0 |  |
+| 30 | Adin Tihic | Keeper | 18 | Sweden | – | – | 0 | 0 | 0/0 |  |
+| 33 | Andreas Hermansen | GK | 22 | Denmark | 512 k€ | 6,78 | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Matteo de Brienne | LB | 24 | Canada | – | 7,17 | 0 | 2 | 2/0 |  |
+| 4 | Oskar Ågren | CB | 28 | Sweden | 568 k€ | 6,93 | 0 | 0 | 4/1 |  |
+| 5 | Robin Wendin Thomasson | LB | 27 | Sweden | 405 k€ | 6,44 | 0 | 0 | 3/0 |  |
+| 6 | August Wängberg | RB | 32 | Sweden | 291 k€ | 7,02 | 0 | 2 | 0/0 |  |
+| 12 | Robin Frej | RB,CB,LB | 28 | Sweden | 251 k€ | 6,94 | 0 | 1 | 2/0 |  |
+| 22 | Anes Čardaklija | CB | 21 | Bosnia and Herzegovina | 1,3 M€ | 7,15 | 1 | 0 | 2/0 |  |
+| 24 | Filip Beckman | CB | 23 | Sweden | 975 k€ | 7,08 | 0 | 0 | 2/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 7 | Joackim Fagerjord | CM | 28 | Sweden | 297 k€ | 7,37 | 2 | 1 | 5/0 |  |
+| 8 | William Milovanovic | CM | 24 | Sweden | 810 k€ | 7,04 | 2 | 4 | 8/0 |  |
+| 10 | Henry Sletsjøe | CM | 26 | Sweden | 328 k€ | 6,84 | 2 | 0 | 5/1 |  |
+| 17 | Róbert Thorkelsson | CM,RW | 21 | Iceland | 803 k€ | 7,17 | 4 | 3 | 1/0 | skadad, åter Out for season |
+| 18 | Kevin Holmén | CM | 24 | Sweden | 750 k€ | 7,16 | 0 | 0 | 1/0 | skadad, åter Out for season |
+| 25 | Jonas Lindberg | CM | 37 | Sweden | 101 k€ | 6,25 | 0 | 1 | 1/0 |  |
+| 27 | Mohamed Bawa | CM | 22 | Sweden | 281 k€ | 6,52 | 0 | 0 | 1/0 |  |
+| 31 | Christos Gravius | CM | 28 | Sweden | 142 k€ | 6,29 | 0 | 0 | 1/0 | skadad, åter About 1-2 weeks |
+| 34 | Dennis Collander | CM,RB | 24 | Sweden | 238 k€ | 6,80 | 0 | 2 | 1/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Gustav Lundgren | RW | 31 | Sweden | 832 k€ | – | 0 | 0 | 0/0 | skadad, åter Out for season |
+| 11 | Rasmus Niklasson Petrovic | LW | 23 | Sweden | 487 k€ | 6,79 | 3 | 3 | 0/0 |  |
+| 14 | Simon Joergensen | LW,ST,CM,RM,LM | 21 | Denmark | – | 6,36 | 0 | 0 | 0/0 |  |
+| 16 | Max Andersson | RW,RM | 23 | Sweden | 406 k€ | 6,58 | 3 | 1 | 1/0 |  |
+| 20 | Samuel Salter | ST | 26 | Canada | 377 k€ | 7,01 | 6 | 2 | 3/0 |  |
+| 21 | Nikola Vasić | ST | 34 | Sweden | 206 k€ | 6,88 | 5 | 0 | 0/0 |  |
+| 26 | Blessing Asuman | RW | 20 | Ghana | 630 k€ | 6,18 | 0 | 0 | 0/0 |  |
+| 28 | Lucas Hedlund | ST | 28 | Sweden | 276 k€ | 5,87 | 0 | 0 | 0/0 |  |
+| 32 | Oscar Pettersson | RW,LW | 26 | Sweden | 371 k€ | 6,44 | 1 | 0 | 0/0 |  |

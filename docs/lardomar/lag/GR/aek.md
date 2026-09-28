@@ -25,7 +25,7 @@ Form (äldst → senast): VOOVOVOV · senaste match 2026-09-20
 | 2017/18 | GR | 30 | 2,33 | +0,29 (+0,29 / +0,29) | 23 % (22 %) | 1,67–0,40 | 1,90–0,74* | 2,05 |
 | 2018/19 | GR | 30 | 2,00 | −0,01 (−0,01 / −0,00) | 20 % (25 %) | 1,67–0,63 | 1,56–0,84* | 1,81 |
 | 2019/20 | GR | 36 | 1,92 | +0,04 (−0,06 / +0,14) | 25 % (25 %) | 1,64–0,89 | 1,39–0,84* | 1,72 |
-| 2020/21 | GR | 36 | 1,67 | −0,12 (−0,37 / +0,14) | 25 % (27 %) | 1,47–1,25 | 1,23–0,85* | 1,63 |
+| 2020/21 | GR | 36 | 1,67 | −0,12 (−0,37 / +0,14) | 25 % (27 %) | 1,47–1,25 | 1,24–0,85* | 1,63 |
 | 2021/22 | GR | 36 | 1,56 | −0,21 (−0,44 / +0,02) | 22 % (26 %) | 1,56–1,17 | 1,40–1,16* | 1,55 |
 | 2022/23 | GR | 36 | 2,31 | +0,17 (+0,13 / +0,21) | 14 % (22 %) | 1,92–0,47 | 1,94–0,63* | 2,19 |
 | 2023/24 | GR | 36 | 2,17 | +0,04 (+0,23 / −0,16) | 25 % (19 %) | 2,22–0,97 | 1,92–0,94* | 1,99 |
@@ -53,3 +53,48 @@ Form (äldst → senast): VOOVOVOV · senaste match 2026-09-20
 | Iraklis | 1 | 1-0-0 | 4–0 | +0,51 | −15 pe | 2026-08-22 4-0 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Marko Nikolić. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Barnabás Varga (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Thomas Strakosha | GK | 31 | Albania | 1,9 M€ | 6,84 | 0 | 0 | 0/0 |  |
+| 31 | Georgios Sarakasidis | Keeper | 15 | Greece | – | – | 0 | 0 | 0/0 |  |
+| 41 | Marios Balamotis | GK | 21 | Greece | – | – | 0 | 0 | 0/0 |  |
+| 91 | Alberto Brignoli | GK | 35 | Italy | 226 k€ | 7,68 | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Harold Moukoudi | CB | 28 | Cameroon | 1,8 M€ | 6,81 | 0 | 0 | 0/0 |  |
+| 3 | Stavros Pilios | LB | 25 | Albania | 1,5 M€ | 7,65 | 0 | 1 | 0/0 |  |
+| 5 | Christos Alexiou | CB | 21 | Greece | 1,5 M€ | – | 0 | 0 | 0/0 |  |
+| 12 | Lazaros Rota | RB | 29 | Greece | 2,3 M€ | 7,20 | 0 | 0 | 2/0 |  |
+| 15 | Martin Georgiev | CB,RB | 21 | Bulgaria | – | – | 0 | 0 | 0/0 |  |
+| 21 | Domagoj Vida | CB | 37 | Croatia | 107 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Charalambos Lykogiannis | LB | 32 | Greece | 572 k€ | – | 0 | 0 | 0/0 |  |
+| 44 | Filipe Relvas | CB | 27 | Portugal | 2,3 M€ | 7,48 | 0 | 0 | 0/0 |  |
+| 57 | Spyros Christakopoulos | Defender | 20 | Greece | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Kaan Kairinen | CM,CDM | 27 | Finland | 3,1 M€ | 6,31 | 0 | 0 | 0/0 |  |
+| 7 | Dereck Kutesa | LM,LW | 28 | Switzerland | 2,0 M€ | 6,57 | 0 | 0 | 0/0 |  |
+| 8 | Mijat Gaćinović | LM,RM,CAM,RB,LW | 31 | Serbia | 933 k€ | 7,17 | 0 | 1 | 0/0 |  |
+| 11 | Aboubakary Koïta | LM,LW,ST,RM,RW,CAM | 28 | Mauritania | 1,7 M€ | 6,70 | 1 | 0 | 1/0 |  |
+| 14 | Lovro Majer | CAM,RM | 28 | Croatia | 14,8 M€ | 7,51 | 0 | 2 | 2/0 |  |
+| 16 | Kervin Arriaga | CDM,CM | 28 | Honduras | 1,3 M€ | 6,13 | 0 | 0 | 0/0 |  |
+| 17 | Dimitrios Kaloskamis | RW,CM,CAM | 21 | Greece | 1,7 M€ | – | 0 | 0 | 0/0 |  |
+| 18 | Răzvan Marin | CM,CDM | 30 | Romania | 2,3 M€ | 7,71 | 1 | 3 | 0/0 |  |
+| 20 | Petros Mantalos | CDM,CAM,CM,LM | 35 | Greece | 356 k€ | 6,47 | 0 | 1 | 1/0 |  |
+| 27 | Milán Vitális | CDM,CM,CAM | 24 | Hungary | 1,5 M€ | 7,47 | 0 | 1 | 2/0 |  |
+| 80 | Hakim Sahabo | CDM | 21 | Rwanda | 1,7 M€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Frantzdy Pierrot | ST | 31 | Haiti | 910 k€ | – | 0 | 0 | 0/0 |  |
+| 9 | Luka Jović | ST | 28 | Serbia | 3,8 M€ | 7,50 | 4 | 0 | 1/0 |  |
+| 10 | Oleksandr Zubkov | RW,LW,RM | 30 | Ukraine | 2,8 M€ | 6,56 | 0 | 0 | 0/0 |  |
+| 19 | Barnabás Varga | ST | 31 | Hungary | 2,1 M€ | 7,73 | 4 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 23 | Joao Mário | LW,CAM,LM | 33 | Portugal | 899 k€ | 6,85 | 0 | 1 | 0/0 |  |
+| 27 | Zois Karagyris | Attacker | 0 | Greece | – | – | 0 | 0 | 0/0 |  |
+| 76 | Argyris Argyriou | ST | 17 | Greece | – | – | 0 | 0 | 0/0 |  |
+| 90 | Zine | ST | 24 | Angola | 1,7 M€ | 7,35 | 2 | 0 | 0/0 |  |

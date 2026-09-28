@@ -60,3 +60,61 @@ Form (äldst → senast): OVOVOFOV · senaste match 2026-09-20
 | Remo | 1 | 1-0-0 | 2–1 | +1,87 | −29 pe | 2026-05-24 2-1 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Odair Hellmann. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Gastón Benavídez (skadad, åter Early October 2026), Claudinho (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Mycael | GK | 22 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 23 | Santos | GK | 36 | Brazil | 433 k€ | – | 0 | 0 | 0/0 |  |
+| 42 | Matheus Soares | Keeper | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 76 | Maksym Voronov | Keeper | 20 | Ukraine | – | – | 0 | 0 | 0/0 |  |
+| 80 | Carlos Eduardo | Keeper | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Murilo Camargo | Defender | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 3 | Léo | CB | 30 | Brazil | 912 k€ | – | 0 | 0 | 0/0 |  |
+| 12 | Gilberto | RB,RWB | 33 | Brazil | 1,5 M€ | – | 0 | 0 | 0/0 |  |
+| 13 | Carlos Terán | CB,RB | 26 | Colombia | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 15 | Gustavo Veiga | Defender | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 25 | Dantas | CB,RB | 22 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 29 | Gastón Benavídez | RWB,CB,RB,RM,LB | 30 | Argentina | 2,4 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 32 | Vitinho | Defender | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 33 | Juan Aguirre | CB | 30 | Colombia | – | – | 0 | 0 | 0/0 |  |
+| 36 | Arthur Monteiro | Defender | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 37 | Lucas Esquivel | CB,LWB,LB | 24 | Argentina | 2,6 M€ | – | 0 | 0 | 0/0 |  |
+| 65 | Arthur Dias | CB | 19 | Brazil | 2,2 M€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Benjamín Brito | Midfielder | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+|  | Guilherme Back | Midfielder | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
+|  | Kauan Stabelini | Midfielder | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+|  | Lucas Marezi | Midfielder | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 2 | Gilberto | RWB | 21 | Brazil | 1,5 M€ | – | 0 | 0 | 0/0 |  |
+| 5 | Felipinho | CM,CDM | 24 | Brazil | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 7 | Steven Mendoza | CAM,LWB,RM,RW,LM,ST | 34 | Colombia | 746 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Bruno Zapelli | CM,CAM,LW | 24 | Argentina | 3,8 M€ | – | 0 | 0 | 0/0 |  |
+| 14 | Luiz Gustavo | CDM,CM | 39 | Brazil | 370 k€ | – | 0 | 0 | 0/0 |  |
+| 16 | Jádson | CDM,CM,RW | 33 | Brazil | 703 k€ | – | 0 | 0 | 0/0 |  |
+| 17 | Alejandro García | CAM | 25 | Colombia | 663 k€ | – | 0 | 0 | 0/0 |  |
+| 21 | Leozinho | CAM,RW | 27 | Brazil | 617 k€ | – | 0 | 0 | 0/0 |  |
+| 26 | Claudinho | LWB | 20 | Brazil | – | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 27 | Juan Portilla | CDM,CM | 28 | Colombia | 2,2 M€ | – | 0 | 0 | 0/0 |  |
+| 47 | Chiqueti | Midfielder | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 53 | Dudu Kogitzki | CAM,CM,RW | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 57 | João Cruz | CAM | 20 | Brazil | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| 61 | Léo Derik | LWB,LM | 21 | Brazil | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| 63 | Diogo Riquelme | CB | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Daniel Troiano | Attacker | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
+|  | Juliano Santini | Attacker | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+|  | Nicolás Azambuja | ST | 18 | Uruguay | – | – | 0 | 0 | 0/0 |  |
+| 9 | Kevin Viveros | ST | 26 | Colombia | 2,8 M€ | – | 0 | 0 | 0/0 |  |
+| 18 | Kerwin Vargas | RW,RM | 24 | Colombia | 1,8 M€ | – | 0 | 0 | 0/0 |  |
+| 19 | Jorge Rivaldo | ST | 23 | Colombia | 987 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Lucas Amorim | Attacker | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 50 | Renan Viana | ST | 23 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 70 | Renan Peixoto | ST | 26 | Brazil | 1,2 M€ | – | 0 | 0 | 0/0 |  |

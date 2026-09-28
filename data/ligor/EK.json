@@ -1,0 +1,391 @@
+{
+ "updatedAt": "2026-09-28T19:47:27.474Z",
+ "league": "EK",
+ "fotmobId": 196,
+ "name": "Ekstraklasa",
+ "country": "POL",
+ "table": [
+  {
+   "rank": 1,
+   "team": "Gornik Zabrze",
+   "fotmobName": "Górnik Zabrze",
+   "fotmobId": 8020,
+   "group": null,
+   "played": 9,
+   "won": 7,
+   "drawn": 1,
+   "lost": 1,
+   "goals": "16-8",
+   "gd": 8,
+   "pts": 22
+  },
+  {
+   "rank": 2,
+   "team": "Legia",
+   "fotmobName": "Legia Warszawa",
+   "fotmobId": 8673,
+   "group": null,
+   "played": 9,
+   "won": 5,
+   "drawn": 4,
+   "lost": 0,
+   "goals": "19-8",
+   "gd": 11,
+   "pts": 19
+  },
+  {
+   "rank": 3,
+   "team": "Lech Poznan",
+   "fotmobName": "Lech Poznań",
+   "fotmobId": 2182,
+   "group": null,
+   "played": 8,
+   "won": 6,
+   "drawn": 1,
+   "lost": 1,
+   "goals": "17-7",
+   "gd": 10,
+   "pts": 19
+  },
+  {
+   "rank": 4,
+   "team": "Wisla",
+   "fotmobName": "Wisła Kraków",
+   "fotmobId": 10265,
+   "group": null,
+   "played": 9,
+   "won": 5,
+   "drawn": 2,
+   "lost": 2,
+   "goals": "17-12",
+   "gd": 5,
+   "pts": 17
+  },
+  {
+   "rank": 5,
+   "team": "Pogon Szczecin",
+   "fotmobName": "Pogoń Szczecin",
+   "fotmobId": 8023,
+   "group": null,
+   "played": 8,
+   "won": 4,
+   "drawn": 3,
+   "lost": 1,
+   "goals": "12-6",
+   "gd": 6,
+   "pts": 15
+  },
+  {
+   "rank": 6,
+   "team": "Korona Kielce",
+   "fotmobName": "Korona Kielce",
+   "fotmobId": 8245,
+   "group": null,
+   "played": 9,
+   "won": 4,
+   "drawn": 3,
+   "lost": 2,
+   "goals": "12-10",
+   "gd": 2,
+   "pts": 15
+  },
+  {
+   "rank": 7,
+   "team": "Zaglebie",
+   "fotmobName": "Zagłębie Lubin",
+   "fotmobId": 8021,
+   "group": null,
+   "played": 9,
+   "won": 4,
+   "drawn": 3,
+   "lost": 2,
+   "goals": "11-10",
+   "gd": 1,
+   "pts": 15
+  },
+  {
+   "rank": 8,
+   "team": "Piast Gliwice",
+   "fotmobName": "Piast Gliwice",
+   "fotmobId": 8028,
+   "group": null,
+   "played": 9,
+   "won": 4,
+   "drawn": 1,
+   "lost": 4,
+   "goals": "16-15",
+   "gd": 1,
+   "pts": 13
+  },
+  {
+   "rank": 9,
+   "team": "GKS Katowice",
+   "fotmobName": "GKS Katowice",
+   "fotmobId": 4023,
+   "group": null,
+   "played": 8,
+   "won": 4,
+   "drawn": 0,
+   "lost": 4,
+   "goals": "16-13",
+   "gd": 3,
+   "pts": 12
+  },
+  {
+   "rank": 10,
+   "team": "Jagiellonia",
+   "fotmobName": "Jagiellonia Białystok",
+   "fotmobId": 1957,
+   "group": null,
+   "played": 8,
+   "won": 4,
+   "drawn": 0,
+   "lost": 4,
+   "goals": "12-13",
+   "gd": -1,
+   "pts": 12
+  },
+  {
+   "rank": 11,
+   "team": "Wisla Plock",
+   "fotmobName": "Wisła Płock",
+   "fotmobId": 8243,
+   "group": null,
+   "played": 8,
+   "won": 3,
+   "drawn": 2,
+   "lost": 3,
+   "goals": "9-12",
+   "gd": -3,
+   "pts": 11
+  },
+  {
+   "rank": 12,
+   "team": "Widzew Lodz",
+   "fotmobName": "Widzew Łódź",
+   "fotmobId": 8024,
+   "group": null,
+   "played": 9,
+   "won": 1,
+   "drawn": 6,
+   "lost": 2,
+   "goals": "13-13",
+   "gd": 0,
+   "pts": 9
+  },
+  {
+   "rank": 13,
+   "team": "Cracovia",
+   "fotmobName": "Cracovia",
+   "fotmobId": 2186,
+   "group": null,
+   "played": 9,
+   "won": 2,
+   "drawn": 2,
+   "lost": 5,
+   "goals": "9-14",
+   "gd": -5,
+   "pts": 8
+  },
+  {
+   "rank": 14,
+   "team": "Radomiak Radom",
+   "fotmobName": "Radomiak Radom",
+   "fotmobId": 5769,
+   "group": null,
+   "played": 9,
+   "won": 2,
+   "drawn": 2,
+   "lost": 5,
+   "goals": "7-20",
+   "gd": -13,
+   "pts": 8
+  },
+  {
+   "rank": 15,
+   "team": "Slask Wroclaw",
+   "fotmobName": "Śląsk Wrocław",
+   "fotmobId": 8025,
+   "group": null,
+   "played": 9,
+   "won": 1,
+   "drawn": 3,
+   "lost": 5,
+   "goals": "11-15",
+   "gd": -4,
+   "pts": 6
+  },
+  {
+   "rank": 16,
+   "team": "Motor Lublin",
+   "fotmobName": "Motor Lublin",
+   "fotmobId": 89466,
+   "group": null,
+   "played": 9,
+   "won": 1,
+   "drawn": 3,
+   "lost": 5,
+   "goals": "9-15",
+   "gd": -6,
+   "pts": 6
+  },
+  {
+   "rank": 17,
+   "team": "Wieczysta Krakow",
+   "fotmobName": "Wieczysta Kraków",
+   "fotmobId": 1286895,
+   "group": null,
+   "played": 8,
+   "won": 1,
+   "drawn": 2,
+   "lost": 5,
+   "goals": "11-17",
+   "gd": -6,
+   "pts": 5
+  },
+  {
+   "rank": 18,
+   "team": "Rakow",
+   "fotmobName": "Raków Częstochowa",
+   "fotmobId": 4024,
+   "group": null,
+   "played": 9,
+   "won": 1,
+   "drawn": 0,
+   "lost": 8,
+   "goals": "12-21",
+   "gd": -9,
+   "pts": 3
+  }
+ ],
+ "tableHistory": {
+  "2026-09-28": [
+   [
+    "Gornik Zabrze",
+    1,
+    9,
+    22,
+    8
+   ],
+   [
+    "Legia",
+    2,
+    9,
+    19,
+    11
+   ],
+   [
+    "Lech Poznan",
+    3,
+    8,
+    19,
+    10
+   ],
+   [
+    "Wisla",
+    4,
+    9,
+    17,
+    5
+   ],
+   [
+    "Pogon Szczecin",
+    5,
+    8,
+    15,
+    6
+   ],
+   [
+    "Korona Kielce",
+    6,
+    9,
+    15,
+    2
+   ],
+   [
+    "Zaglebie",
+    7,
+    9,
+    15,
+    1
+   ],
+   [
+    "Piast Gliwice",
+    8,
+    9,
+    13,
+    1
+   ],
+   [
+    "GKS Katowice",
+    9,
+    8,
+    12,
+    3
+   ],
+   [
+    "Jagiellonia",
+    10,
+    8,
+    12,
+    -1
+   ],
+   [
+    "Wisla Plock",
+    11,
+    8,
+    11,
+    -3
+   ],
+   [
+    "Widzew Lodz",
+    12,
+    9,
+    9,
+    0
+   ],
+   [
+    "Cracovia",
+    13,
+    9,
+    8,
+    -5
+   ],
+   [
+    "Radomiak Radom",
+    14,
+    9,
+    8,
+    -13
+   ],
+   [
+    "Slask Wroclaw",
+    15,
+    9,
+    6,
+    -4
+   ],
+   [
+    "Motor Lublin",
+    16,
+    9,
+    6,
+    -6
+   ],
+   [
+    "Wieczysta Krakow",
+    17,
+    8,
+    5,
+    -6
+   ],
+   [
+    "Rakow",
+    18,
+    9,
+    3,
+    -9
+   ]
+  ]
+ }
+}

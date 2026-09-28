@@ -69,3 +69,51 @@ Form (äldst → senast): OFVFFFOO · senaste match 2026-09-19
 | Estudiantes Rio Cuarto | 2 | 1-1-0 | 2–1 | +0,44 | +18 pe | 2026-08-01 0-0 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Pedro Troglio. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** John Arteaga (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 25 | Gino Santilli | GK | 24 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 31 | Joaquín Molina | Keeper | 22 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 50 | Diego Rodríguez | GK | 37 | Argentina | 568 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Nehuén Paz | CB | 33 | Argentina | 441 k€ | – | 0 | 0 | 0/0 |  |
+| 6 | Nicolás Meriano | CB | 25 | Argentina | 483 k€ | – | 0 | 0 | 0/0 |  |
+| 12 | Marcos López | RWB | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 13 | Brandon Oviedo | CB,CM | 21 | Argentina | 657 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | Lautaro Cano | LB | 24 | Argentina | 244 k€ | – | 0 | 0 | 0/0 |  |
+| 24 | Santiago López García | RB,RWB,RM | 28 | Argentina | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 26 | Mateo Mendizabal | Defender | 17 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 27 | Ignacio Abraham | LB,LWB,LM | 28 | Syria | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 34 | Santiago Daniele | CB | 20 | Argentina | 586 k€ | – | 0 | 0 | 0/0 |  |
+| 37 | Renzo Malanca | CB,LB | 23 | Argentina | 405 k€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 4 | Juan Luis Alfaro | CDM | 26 | Argentina | 343 k€ | – | 0 | 0 | 0/0 |  |
+| 7 | Lisandro Piñero | LM | 19 | Argentina | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 8 | Lautaro Ríos | CM | 25 | Argentina | 395 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Lautaro Gómez | LM,CM,RM | 23 | Argentina | 532 k€ | – | 0 | 0 | 0/0 |  |
+| 11 | Favio Álvarez | CM | 33 | Argentina | 285 k€ | – | 0 | 0 | 0/0 |  |
+| 15 | Santiago Esquivel | CM,CDM | 22 | Argentina | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 20 | Tomás Adoryán | RM,CAM,CM,CDM | 25 | Armenia | 620 k€ | – | 0 | 0 | 0/0 |  |
+| 21 | Lautaro Villegas | CM | 22 | Argentina | 653 k€ | – | 0 | 0 | 0/0 |  |
+| 23 | Lucas Palavecino | Midfielder | 22 | Argentina | 586 k€ | – | 0 | 0 | 0/0 |  |
+| 29 | Isaías Gutiérrez | Midfielder | 17 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 33 | Neyder Moreno | CAM,RW | 29 | Colombia | 282 k€ | – | 0 | 0 | 0/0 |  |
+| 35 | Nacho Pais | CM,RM,CDM | 26 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 40 | David Zalazar | RM,CM,CAM,RW | 24 | Argentina | 631 k€ | – | 0 | 0 | 0/0 |  |
+| 70 | John Arteaga | CAM | 27 | Colombia | – | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Adrián Balboa | ST,CAM | 32 | Uruguay | 336 k€ | – | 0 | 0 | 0/0 |  |
+| 16 | Jeremías Acosta | Attacker | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 18 | Federico Medina | ST | 22 | Argentina | 352 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Alexander Machado | ST,LW | 24 | Uruguay | 507 k€ | – | 0 | 0 | 0/0 |  |
+| 28 | Matías Hernández | ST | 21 | Argentina | 575 k€ | – | 0 | 0 | 0/0 |  |
+| 30 | Federico Anselmo | ST | 32 | Argentina | 265 k€ | – | 0 | 0 | 0/0 |  |
+| 32 | Valentín González | Attacker | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 77 | Thomas Rodríguez | LW | 30 | Chile | 383 k€ | – | 0 | 0 | 0/0 |  |

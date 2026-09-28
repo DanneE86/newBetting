@@ -22,13 +22,13 @@ Form (äldst → senast): FVFVFOFO · senaste match 2026-09-20
 | Säsong | Liga | M | P/M | Mot marknaden (hemma / borta) | Kryss (odds) | Mål för–emot | xG för–emot | xP/M |
 |---|---|---|---|---|---|---|---|---|
 | 2017/18 | BL2 | 34 | 1,41 | +0,16 (+0,08 / +0,23) | 35 % (27 %) | 1,50–1,38 | 1,62–1,55* | 1,45 |
-| 2018/19 | BL2 | 34 | 1,44 | +0,27 (+0,08 / +0,47) | 29 % (27 %) | 1,53–1,47 | 1,56–1,41* | 1,47 |
+| 2018/19 | BL2 | 34 | 1,44 | +0,27 (+0,08 / +0,47) | 29 % (27 %) | 1,53–1,47 | 1,57–1,41* | 1,47 |
 | 2019/20 | BL2 | 34 | 2,00 | +0,47 (+0,25 / +0,69) | 41 % (26 %) | 1,91–0,88 | 1,58–1,31* | 1,55 |
 | 2020/21 | BL | 34 | 1,03 | +0,17 (+0,19 / +0,16) | 24 % (24 %) | 0,76–1,53 | 0,92–1,73 | 0,94 |
 | 2021/22 | BL | 34 | 0,82 | −0,12 (−0,16 / −0,08) | 38 % (24 %) | 0,79–1,56 | 0,80–2,05 | 0,72 |
 | 2022/23 | BL2 | 34 | 1,00 | −0,29 (−0,30 / −0,28) | 21 % (26 %) | 1,47–1,82 | 1,57–1,73* | 1,31 |
 | 2025/26 | BL2 | 34 | 1,15 | −0,30 (−0,06 / −0,54) | 26 % (26 %) | 1,56–1,50 | 1,61–1,44* | 1,50 |
-| 2026/27 | BL2 | 6 | 0,83 | −0,88 (−0,06 / −1,69) | 33 % (25 %) | 1,67–2,00 | 1,43–1,62* | 1,27 |
+| 2026/27 | BL2 | 6 | 0,83 | −0,88 (−0,06 / −1,69) | 33 % (25 %) | 1,67–2,00 | 1,43–1,63* | 1,27 |
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
 
@@ -55,3 +55,47 @@ Form (äldst → senast): FVFVFOFO · senaste match 2026-09-20
 | Cottbus | 1 | 1-0-0 | 3–0 | +1,00 | −22 pe | 2026-08-16 3-0 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Oliver Kirch. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Daniel Richter (osäker)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Jonas Thomas Kersken | GK | 26 | Germany | 929 k€ | 6,66 | 0 | 1 | 0/0 |  |
+| 18 | Leo Oppermann | GK | 25 | Germany | 205 k€ | – | 0 | 0 | 0/0 |  |
+| 41 | Artem Zaloha | Keeper | 19 | Ukraine | – | – | 0 | 0 | 0/0 |  |
+| 47 | Philip Hildesheim | Keeper | 21 | Germany | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Gerrit Gohlke | CB | 27 | Germany | 161 k€ | – | 0 | 0 | 0/0 |  |
+| 2 | Felix Hagmann | RB,LB | 22 | Germany | 669 k€ | 6,48 | 1 | 0 | 0/0 |  |
+| 3 | Joel Felix | CB | 28 | Denmark | 174 k€ | – | 0 | 0 | 0/0 |  |
+| 5 | Maximilian Bauer | CB | 26 | Germany | 1,4 M€ | 6,58 | 0 | 0 | 2/0 |  |
+| 7 | Henri Koudossou | RB | 27 | Togo | 585 k€ | 6,73 | 0 | 1 | 1/0 |  |
+| 17 | Arne Sicker | LB,LWB | 29 | Germany | 188 k€ | 7,03 | 0 | 0 | 0/0 |  |
+| 19 | Maximilian Großer | CB,CM | 25 | Germany | 415 k€ | 6,39 | 0 | 0 | 1/0 |  |
+| 23 | Leon Schneider | CB | 26 | Germany | 290 k€ | – | 0 | 0 | 0/0 |  |
+| 27 | Benjamin Boakye | RB,RWB | 21 | Germany | 1,1 M€ | 6,48 | 0 | 0 | 1/0 |  |
+| 29 | Tim Handwerker | LB,LWB | 28 | Germany | 180 k€ | 6,15 | 0 | 0 | 1/0 |  |
+| 36 | Justin Lukas | Defender | 20 | Germany | 452 k€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Marvin Mehlem | CAM,CM | 29 | Germany | 329 k€ | 6,79 | 1 | 0 | 1/0 |  |
+| 8 | Sam Schreck | CM | 27 | Germany | 128 k€ | 6,24 | 0 | 0 | 1/0 |  |
+| 13 | Lukas Kunze | CM,RM | 28 | Germany | 170 k€ | – | 0 | 0 | 0/0 |  |
+| 21 | Stefano Russo | CM,CDM,CB | 26 | Germany | 930 k€ | 7,07 | 0 | 0 | 0/0 |  |
+| 31 | Leon Jensen | CM | 29 | Germany | 277 k€ | 6,43 | 0 | 1 | 0/0 |  |
+| 38 | Marius Wörl | CM,LW,CAM,ST | 22 | Germany | 1,6 M€ | 6,84 | 2 | 0 | 0/0 |  |
+| 42 | Till Wegener | Midfielder | 17 | Germany | – | 6,23 | 0 | 0 | 0/0 |  |
+| 44 | Eyyüb Yaşar | Midfielder | 18 | Turkiye | 608 k€ | – | 0 | 0 | 0/0 |  |
+| 46 | Semih Sarli | Midfielder | 22 | Germany | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | David Min | ST | 27 | Netherlands | 965 k€ | 6,14 | 0 | 0 | 0/0 |  |
+| 10 | Jannik Rochelt | LW,CM,CAM,LM | 28 | Germany | 343 k€ | 6,87 | 1 | 0 | 0/0 |  |
+| 11 | Joel Grodowski | ST,LW,RW,CAM | 28 | Germany | 521 k€ | 7,24 | 5 | 0 | 1/0 |  |
+| 14 | Monju Momuluh | RW,RM,ST,CM,RWB | 24 | Germany | 1,1 M€ | 6,64 | 0 | 0 | 1/0 |  |
+| 30 | Isaiah Young | LW | 28 | USA | 144 k€ | 6,95 | 0 | 1 | 0/0 |  |
+| 33 | Monti Theiß | Attacker | 19 | Germany | – | – | 0 | 0 | 0/0 |  |
+| 43 | Daniel Richter | Attacker | 18 | Germany | 928 k€ | – | 0 | 0 | 0/0 | osäker |

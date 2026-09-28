@@ -11,6 +11,7 @@ import {
 import { EARLY_ROUNDS, buildTiers, fitLeagueModel, loadLeagueModels, paramsFor } from './pro/league-models.mjs';
 import { historicalMissing, findUsMatch, loadPlayerModel, summarise as summariseMissing, teamShares } from './pro/players.mjs';
 import { TEAM_ALIASES } from './weather/teams.mjs';
+import { adjustProbs } from './lib/learned-adjust.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const P = {
@@ -54,6 +55,12 @@ export const CONFIG = {
   // Franvaro: lagets forvantade mal x (1 - alpha * saknad andel av xG+xA). alpha valjs i backtest.
   playerAlphaGrid: [0, 0.25, 0.5, 0.75, 1],
   playerAlpha: 0,
+  // Lardomar (config/learned-adjustments.json, npm run lardomar:modell): liga-kalibrering av facit mot
+  // oppningsodds (kontroll 2023/24-: logloss -0.0007, z -2.5, framst Serie A/B). Nara avspark ar effekten
+  // inte bekraftad, sa den anvands bara nar avsparken ar minst sa har manga timmar bort.
+  learnedMinHours: 24,
+  // Oddsen styr 1X2-tipset (och O/U dar marknaden var battre) hela sasongen i ligor med marknadstest, se buildPro
+  marketLedTips: true,
 };
 
 // Strategier: sannolikhet [H,D,A,Over] + vilken bok vi "tar" priset hos (oppningsodds).
@@ -274,16 +281,31 @@ function buildPro(t) {
   };
   const useSharp = !!sharp;
   const f1x2 = fairFrom(['home', 'draw', 'away']);
+  const learned = learnedAdjust(t, f1x2, ev);
   const fOu = fairFrom(['over25', 'under25']);
   // Tidig sasong i ligor dar marknaden ar klart battre an modellen (earlyMarket, npm run tune):
   // marknadens chans styr tipset tills bada lagen spelat EARLY_ROUNDS ligamatcher
   const early = paramsFor(leagueModels, t.league).earlyMarket && !t.marketOnly
     ? { home: seasonMatchesSoFar(t.league, t.home, t.date), away: seasonMatchesSoFar(t.league, t.away, t.date) } : null;
-  const marketLed = early && f1x2 && Math.min(early.home, early.away) < EARLY_ROUNDS
-    ? { source: f1x2.source, sourceOu: fOu?.source ?? null, leagueMatches: early, rounds: EARLY_ROUNDS } : null;
+  let marketLed = early && f1x2 && Math.min(early.home, early.away) < EARLY_ROUNDS
+    ? { kind: 'early', source: f1x2.source, sourceOu: fOu?.source ?? null, leagueMatches: early, rounds: EARLY_ROUNDS } : null;
   if (marketLed) {
     [blended.home, blended.draw, blended.away] = f1x2.p;
     if (fOu) blended.over25 = fOu.p[0];
+  } else if (CONFIG.marketLedTips && f1x2 && !t.marketOnly) {
+    // Hela sasongen: marknadstestet (marketTest, halva perioden tranar vikten, andra halvan kontrollerar) visade
+    // att oddsen slar modellen i 21 av 22 ligor. Oddsen styr tipset, modellen vags in bara med testad vikt.
+    const mt = evaluation.marketTest?.[t.league];
+    const test = mt?.vsOpening?.n >= 60 ? mt.vsOpening : mt?.vsClosing?.n >= 60 ? mt.vsClosing : null;
+    if (test) {
+      const modelW = test.modelAddsInfo ? test.bestW : 0;
+      [blended.home, blended.draw, blended.away] = f1x2.p.map((x, i) => (1 - modelW) * x + modelW * [blended.home, blended.draw, blended.away][i]);
+      // O/U: bara dar Pinnacle var battre an modellen (Brier) i utvarderingen
+      const s = evaluation.summary?.[t.league];
+      const ouMarket = fOu && s?.brierOuPinnacleClose != null && s.brierOuPinnacleClose < s.brierOuDc;
+      if (ouMarket) blended.over25 = fOu.p[0];
+      marketLed = { kind: 'backtest', source: f1x2.source, sourceOu: ouMarket ? fOu.source : null, modelW, n: test.n };
+    }
   }
   const groupOf = (k) => (['home', 'draw', 'away'].includes(k) ? f1x2 : fOu);
   const fair = { home: f1x2?.p[0], draw: f1x2?.p[1], away: f1x2?.p[2], over25: fOu?.p[0], under25: fOu?.p[1] };
@@ -297,6 +319,7 @@ function buildPro(t) {
       myBooks: myBooks.map((b) => b.bookmaker),
       overround1x2: useSharp && f1x2?.source === sharpName ? round(overround([sharp.home, sharp.draw, sharp.away])) : null,
       fair: Object.fromEntries(Object.entries(fair).map(([k, v]) => [k, round(v)])),
+      learned,
     };
   }
   for (const [mkt, pick, k, modelP] of outcomes) {
@@ -317,7 +340,7 @@ function buildPro(t) {
       market: mkt, pick, odds: price, bookmaker, p: round(p), ev: round(evVal), fairSource: g.source,
       minOdds: round((1 + g.minEv) / p, 2), value: !tooLong && !suspect && evVal >= g.minEv,
       riskReward: riskReward(price, p, CONFIG.stakeSek),
-      ...(tooLong ? { reason: `odds over ${CONFIG.maxOdds} (skrall)` } : suspect ? { reason: `misstankt EV ${Math.round(evVal * 100)} % - kontrollera oddsen` } : {}),
+      ...(tooLong ? { reason: `odds över ${CONFIG.maxOdds} (skräll)` } : suspect ? { reason: `misstänkt EV ${Math.round(evVal * 100)} % – kontrollera oddsen` } : {}),
     };
     if (tooLong || suspect || evVal < g.minEv) continue;
     valueBets.push({
@@ -345,6 +368,39 @@ function buildPro(t) {
     weather: weatherInfo(t),
     availability,
   };
+}
+
+// Lardomsjustering av 1X2-facit (andrar f1x2.p pa plats). Signaler for matchen ur data/matcher/<liga>.csv.
+// (cache pa funktionen: buildPro kors pa toppniva innan en const har skulle hinna initieras)
+function signalsFor(t) {
+  const matchSignals = (signalsFor.cache ??= new Map());
+  if (!matchSignals.has(t.league)) {
+    const m = new Map();
+    const file = path.join(root, 'data', 'matcher', `${t.league}.csv`);
+    if (fs.existsSync(file)) {
+      const [head, ...lines] = fs.readFileSync(file, 'utf8').split(/\r?\n/).filter(Boolean);
+      const cols = head.split(',');
+      const iH2h = cols.indexOf('h2h_pts');
+      for (const l of lines) {
+        if (!l.startsWith('kommande')) continue;
+        const c = l.split(',');
+        m.set(`${c[3]}|${c[5]}|${c[6]}`, { h2hPts: c[iH2h] === '' ? null : Number(c[iH2h]) });
+      }
+    }
+    matchSignals.set(t.league, m);
+  }
+  return matchSignals.get(t.league).get(`${t.date}|${t.home}|${t.away}`) ?? {};
+}
+function learnedAdjust(t, f1x2, ev) {
+  if (!f1x2 || process.env.LEARNED_OFF) return null;
+  const kick = ev?.commence ?? t.kickoffUtc;
+  const hours = kick ? (Date.parse(kick) - Date.now()) / 36e5 : null;
+  if (hours == null || hours < CONFIG.learnedMinHours) return null;
+  const { p, applied } = adjustProbs(f1x2.p, t.league, signalsFor(t), 'open');
+  if (!applied.length) return null;
+  const before = f1x2.p.map((x) => round(x));
+  f1x2.p = p;
+  return { applied, before, after: p.map((x) => round(x)) };
 }
 
 // Ligamatcher laget spelat hittills i sasongen (ingen ligamatch pa 60 dagar = ny sasong, 0)
@@ -375,7 +431,9 @@ function applyMarketLed(t) {
     t.tips.OU25 = { ...t.tips.OU25, pick: b.over25 >= 0.5 ? 'OVER 2.5' : 'UNDER 2.5', confidence: round(Math.max(b.over25, 1 - b.over25), 3), pOver: round(b.over25, 3) };
   }
   t.marketLed = true;
-  t.marketLedNote = `Tidig säsong – marknadens chans (${ml.source}) styr tipset tills lagen spelat ${ml.rounds} ligamatcher`;
+  t.marketLedNote = ml.kind === 'backtest'
+    ? `Oddsen (${ml.source}) styr tipset – de var bättre än modellen i backtest (${ml.n} matcher)${ml.modelW ? `, modellen väger ${Math.round(ml.modelW * 100)} %` : ''}`
+    : `Tidig säsong – marknadens chans (${ml.source}) styr tipset tills lagen spelat ${ml.rounds} ligamatcher`;
 }
 
 // ---------- Franvaro live: FPL (PL) + bekraftade elvor (ESPN) ----------
@@ -553,7 +611,7 @@ function nameSimilarity(a, b) {
 function weatherInfo(t) {
   const f = forecastByMatch.get(`${t.date}|${t.league}|${t.home}|${t.away}`);
   // Prognos hamtas bara pa matchdagen (osaker langre fram)
-  if (!f) return { available: false, flags: [], note: 'vader hamtas pa matchdagen' };
+  if (!f) return { available: false, flags: [], note: 'väder hämtas på matchdagen' };
   const w = f.weather;
   const c = CONFIG.weather;
   const flags = [];

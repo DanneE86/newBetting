@@ -63,3 +63,48 @@ Form (äldst → senast): VVFFOFFO · senaste match 2026-09-18
 | Gimnasia Mendoza | 2 | 0-0-2 | 0–2 | −1,23 | −32 pe | 2026-07-24 0-1 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Sebastián Domínguez. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Fernando Juárez (skadad, åter Late October 2026), Michael Santos (skadad, åter About 1-2 weeks)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Alan Aguerre | GK | 36 | Argentina | 297 k€ | – | 0 | 0 | 0/0 |  |
+| 12 | Máximo Álvarez | Keeper | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 25 | Javier Vallejos | GK | 23 | Argentina | 427 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Alejandro Maciel | CB | 29 | Argentina | 620 k€ | – | 0 | 0 | 0/0 |  |
+| 3 | Leonardo Marchi | LB | 30 | Argentina | 326 k€ | – | 0 | 0 | 0/0 |  |
+| 6 | Facundo Mansilla | CB | 27 | Argentina | 298 k€ | – | 0 | 0 | 0/0 |  |
+| 13 | José Gómez | RB | 26 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 17 | Yuri Casermeiro | CB | 24 | Argentina | 388 k€ | – | 0 | 0 | 0/0 |  |
+| 21 | Felipe Aguilar | CB | 33 | Colombia | 443 k€ | – | 0 | 0 | 0/0 |  |
+| 23 | Darío Cáceres | LB,LWB | 28 | Paraguay | 318 k€ | – | 0 | 0 | 0/0 |  |
+| 24 | Agustín Romero | Defender | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 26 | Lucas Bernabéu | Defender | 22 | Argentina | 524 k€ | – | 0 | 0 | 0/0 |  |
+| 32 | Nicolás Garrido | Defender | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 33 | Santiago Moyano | RB,RWB,CB | 29 | Argentina | 549 k€ | – | 0 | 0 | 0/0 |  |
+| 42 | Juan Pablo Pignani | CB | 25 | Argentina | 596 k€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Tiago Cravero | CM,CDM | 23 | Argentina | 526 k€ | – | 0 | 0 | 0/0 |  |
+| 8 | Fernando Juárez | CM | 28 | Argentina | 529 k€ | – | 0 | 0 | 0/0 | skadad, åter Late October 2026 |
+| 18 | Lucas González | CM,CAM,RM,CDM,LW | 26 | Argentina | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 20 | Fernando Martínez | RM,RW,RB,LB,RWB | 26 | Argentina | 360 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Matías Vera | CM,CDM | 30 | Argentina | 449 k€ | – | 0 | 0 | 0/0 |  |
+| 30 | Federico Rodríguez | Midfielder | 17 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 37 | Alan Laprida | CM | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 55 | Juan Cardozo | CM | 22 | Paraguay | 631 k€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Diego Barrera | LM,LW,RW,LWB,ST,CM | 22 | Argentina | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 9 | Lucas Varaldo | ST | 24 | Argentina | 416 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Marco Iacobellis | ST,RW,CAM,RM | 26 | Argentina | 331 k€ | – | 0 | 0 | 0/0 |  |
+| 11 | Horacio Tijanovich | LW,CDM,LM,CM,ST | 30 | Argentina | 282 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | Ezequiel Naya | ST | 25 | Argentina | 393 k€ | – | 0 | 0 | 0/0 |  |
+| 27 | Michael Santos | ST | 33 | Uruguay | 364 k€ | – | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
+| 28 | Leonardo Sequeira | RW,ST | 31 | Argentina | 446 k€ | – | 0 | 0 | 0/0 |  |
+| 29 | Joaquín Flores | Attacker | 21 | Argentina | 582 k€ | – | 0 | 0 | 0/0 |  |
+| 47 | Martín Cuitiño | ST | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |

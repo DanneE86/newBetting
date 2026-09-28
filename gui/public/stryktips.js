@@ -5,13 +5,24 @@ const SIGNS = ["1", "X", "2"];
 
 let data = null;
 let product = null;
-// Direktlänk: #stryktips/<produkt>/reducera öppnar kupongen med det reducerade systemet utfällt,
-// #stryktips/backtest öppnar backtestet (Stryktipset)
-const deep = location.hash.match(/^#stryktips(?:\/(\w+))?(\/reducera)?/);
-const showBacktest = deep?.[1] === "backtest";
-if (deep?.[1] && !showBacktest) product = deep[1];
-if (showBacktest) product = "stryktipset";
-let showReduced = Boolean(deep?.[2]);
+// Adresser: /tips, /stryktipset, /europatipset (dold i menyn, nås bara via adressen).
+// Undersidor: /stryktipset/backtest öppnar backtestet, /<spel>/reducera fäller ut det reducerade systemet.
+// Gamla länkar (#stryktips, #stryktips/backtest, #stryktips/<spel>/reducera) skickas vidare till de nya.
+const POOLS = ["stryktipset", "europatipset"];
+function parseRoute() {
+  const legacy = location.hash.match(/^#stryktips(?:\/(\w+))?(\/reducera)?/);
+  if (legacy) {
+    const game = legacy[1] && legacy[1] !== "backtest" ? legacy[1] : "stryktipset";
+    const sub = legacy[1] === "backtest" ? "/backtest" : legacy[2] ? "/reducera" : "";
+    history.replaceState(null, "", `/${game}${sub}`);
+  }
+  const [first, sub] = location.pathname.split("/").filter(Boolean);
+  const v = POOLS.includes(first) ? first : first === "tips" ? "tips" : null;
+  return { view: v, sub: sub || null };
+}
+const route = parseRoute();
+let showBacktest = route.sub === "backtest";
+let showReduced = route.sub === "reducera";
 let loading = false;
 const open = new Set(); // expanderade analyser (produkt|matchnr)
 
@@ -35,8 +46,10 @@ function oneIn(p) {
 }
 
 // ---------- Flikbyte ----------
-function setView(v) {
-  const st = v === "stryktips";
+// v = "tips" | "stryktipset" | "europatipset". push = lägg adressen i webbläsarens historik.
+function setView(v, push = false) {
+  const st = POOLS.includes(v);
+  if (st) product = v;
   document.body.classList.toggle("view-stryktips", st);
   view.hidden = !st;
   for (const t of tabs) {
@@ -44,10 +57,15 @@ function setView(v) {
     t.classList.toggle("active", on);
     t.setAttribute("aria-selected", String(on));
   }
-  try {
-    localStorage.setItem("betting.view", v);
-  } catch {
-    /* privat lage */
+  if (push && location.pathname !== `/${v}`) history.pushState(null, "", `/${v}`);
+  else if (!push && location.pathname === "/") history.replaceState(null, "", `/${v}`);
+  // Europatipset sparas inte som senaste flik: den ska bara nås via adressen
+  if (v !== "europatipset") {
+    try {
+      localStorage.setItem("betting.view", v);
+    } catch {
+      /* privat lage */
+    }
   }
   if (st) {
     if (!data && !loading) load();
@@ -55,7 +73,17 @@ function setView(v) {
   }
 }
 
-tabs.forEach((t) => t.addEventListener("click", () => setView(t.dataset.view)));
+tabs.forEach((t) => t.addEventListener("click", () => {
+  showBacktest = false;
+  showReduced = false;
+  setView(t.dataset.view, true);
+}));
+window.addEventListener("popstate", () => {
+  const r = parseRoute();
+  showBacktest = r.sub === "backtest";
+  showReduced = r.sub === "reducera";
+  setView(r.view || "tips");
+});
 
 // ---------- Data ----------
 async function load(force = false) {
@@ -66,15 +94,7 @@ async function load(force = false) {
     const body = await res.json();
     if (!res.ok || body.error) throw new Error(body.error || `HTTP ${res.status}`);
     data = body;
-    const ids = (data.products || []).map((p) => p.product);
-    if (!product || !ids.includes(product)) {
-      // Oppen Stryktipset-kupong forst, annars forsta oppna, annars Stryktipset
-      product =
-        data.products.find((p) => p.product === "stryktipset" && p.open)?.product ||
-        data.products.find((p) => p.open)?.product ||
-        ids[0] ||
-        null;
-    }
+    // Spelet styrs av adressen (/stryktipset eller /europatipset), se setView
   } catch (e) {
     data = { ...(data || {}), error: e.message };
   } finally {
@@ -339,9 +359,6 @@ function render() {
       <p class="st-sub">${p ? `${p.open ? "Öppen" : "Avgjord"} · ${esc(p.closeDescription || "")}` : "Hämtar kupong…"}${data?.updatedAt ? ` · hämtad ${esc(new Date(data.updatedAt).toLocaleString("sv-SE", { dateStyle: "short", timeStyle: "short" }))}` : ""}</p>
     </div>
     <div class="st-actions">
-      <div class="filter-pills" role="group" aria-label="Spelform">
-        ${products.map((x) => `<button type="button" class="filter-pill${x.product === product ? " active" : ""}" data-product="${esc(x.product)}">${esc(x.productName)}${x.open ? "" : " (avgjord)"}</button>`).join("")}
-      </div>
       <button type="button" class="btn-ghost" id="st-fetch" ${loading ? "disabled" : ""}>${loading ? "Hämtar…" : "Hämta från Svenska Spel"}</button>
     </div>
   </div>`;
@@ -394,12 +411,6 @@ function render() {
 }
 
 view.addEventListener("click", (ev) => {
-  const pill = ev.target.closest("[data-product]");
-  if (pill) {
-    product = pill.dataset.product;
-    render();
-    return;
-  }
   if (ev.target.closest("#st-fetch")) {
     load(true);
     return;
@@ -421,5 +432,6 @@ try {
 } catch {
   /* privat lage */
 }
-if (deep) saved = "stryktips";
-setView(saved === "stryktips" ? "stryktips" : "tips");
+// Adressen går först, annars senast valda flik (äldre sparat värde "stryktips" = Stryktipset)
+if (saved === "stryktips") saved = "stryktipset";
+setView(route.view || (saved === "stryktipset" ? "stryktipset" : "tips"));

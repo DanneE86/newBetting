@@ -38,6 +38,14 @@ Underlag: 3550 matcher, säsong 2012 – 2026. Marknad = stängningsodds utan ma
 | 65–75 % | 399 | 72,7 % | 69,3 % | +3,4 pe (1,5) | ingen effekt |
 | 75–100 % | 134 | 83,6 % | 79,4 % | +4,2 pe (1,3) | ingen effekt |
 
+## Kalibrering av oddsen (justeringsmodellen)
+
+g > 0 = favoriter vinner oftare än oddsen säger (skrällar överprissatta), h < 0 = hemmalag överprissatta, d > 0 = kryss underprissatta. Parametrarna är tränade före 2023/24. Kontroll = logloss-skillnad 2023/24– (negativ = bättre). Live används parametrar refittade på all data.
+
+| Bas | g (favoriter) | h (hemma) | d (kryss) | Kontroll | Används live |
+|---|---|---|---|---|---|
+| stängningsodds (sen körning, Stryktipset/Europatipset) | +0,078 | −0,017 | +0,040 | −0,0001 (z −0,1, n 803) | nej |
+
 ## Signaler mot marknaden
 
 Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (|z| ≥ 2,5 i träning och ≥ 2 i kontroll krävs). "Oddsrörelse" visar om signalen förutsäger hur oddsen rör sig från öppning till stängning, alltså om marknaden lär sig det före avspark.
@@ -49,6 +57,7 @@ Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (
 | Inbördes möten, poängskillnad | +0,027 (z 1,3, n 2609) | +0,016 (z 0,7, n 1990) | +0,069 (z 1,6, n 619) | – | – | +0,082 p | ingen effekt |
 | Inbördes möten, kryss mot förväntat | +0,004 (z 0,1, n 2609) | +0,027 (z 0,5, n 1990) | −0,088 (z −0,8, n 619) | – | – | +0,002 p | ingen effekt |
 | Vilodagar (hemma − borta, ligamatcher) | +0,005 (z 0,4, n 3385) | +0,004 (z 0,3, n 2620) | +0,006 (z 0,3, n 765) | – | – | +0,010 p | ingen effekt |
+| Bolagssnitt mot Pinnacle vid stängning | −0,295 (z −0,4, n 3346) | −1,286 (z −1,5, n 2745) | +3,263 (z 2,0, n 601) | – | – | −0,019 p | ingen effekt |
 
 ## Situationer
 
@@ -68,6 +77,29 @@ Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (
 ## Stryktipset och Europatipset
 
 Inga matcher från ligan i de sparade backtesten ännu.
+
+## Tabell nu (FotMob, 2026-09-28)
+
+| # | Lag | M | V | O | F | Mål | +/− | P |
+|---|---|---|---|---|---|---|---|---|
+| 1 | Viking | 21 | 16 | 2 | 3 | 54-20 | 34 | 50 |
+| 2 | Bodo/Glimt | 21 | 16 | 2 | 3 | 53-19 | 34 | 50 |
+| 3 | Tromso | 21 | 11 | 5 | 5 | 40-29 | 11 | 38 |
+| 4 | Molde | 21 | 11 | 3 | 7 | 44-32 | 12 | 36 |
+| 5 | Rosenborg | 21 | 10 | 3 | 8 | 39-30 | 9 | 33 |
+| 6 | Lillestrom | 21 | 10 | 2 | 9 | 28-29 | -1 | 32 |
+| 7 | Brann | 21 | 9 | 2 | 10 | 39-32 | 7 | 29 |
+| 8 | Fredrikstad | 21 | 8 | 4 | 9 | 25-32 | -7 | 28 |
+| 9 | Sarpsborg 08 | 21 | 6 | 7 | 8 | 24-29 | -5 | 25 |
+| 10 | KFUM Oslo | 21 | 7 | 4 | 10 | 25-35 | -10 | 25 |
+| 11 | Sandefjord | 21 | 6 | 5 | 10 | 21-27 | -6 | 23 |
+| 12 | Valerenga | 21 | 6 | 5 | 10 | 34-43 | -9 | 23 |
+| 13 | HamKam | 21 | 6 | 5 | 10 | 29-44 | -15 | 23 |
+| 14 | Aalesund | 21 | 4 | 9 | 8 | 33-46 | -13 | 21 |
+| 15 | Kristiansund | 21 | 5 | 4 | 12 | 21-40 | -19 | 19 |
+| 16 | Start | 21 | 4 | 4 | 13 | 22-44 | -22 | 16 |
+
+Tabellhistorik (en rad per lag och dag sedan 2026-09-28): `data/ligor/NO.json`.
 
 ## Lagfiler
 

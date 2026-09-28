@@ -13,8 +13,8 @@ Form (äldst → senast): VOFVFVFF · senaste match 2026-09-19
 
 | Mått | Värde |
 |---|---|
-| Tur (poäng − xP per match) | +0,19 |
-| xG-målskillnad − målskillnad | +0,25 |
+| Tur (poäng − xP per match) | −0,05 |
+| xG-målskillnad − målskillnad | +0,27 |
 | Poäng mot marknaden per match | +0,04 |
 
 ## Säsonger
@@ -25,10 +25,25 @@ Form (äldst → senast): VOFVFVFF · senaste match 2026-09-19
 | 2022/23 | LL2 | 42 | 1,29 | +0,03 (+0,10 / −0,04) | 29 % (31 %) | 0,93–0,95 | 1,31–1,34* | 1,35 |
 | 2023/24 | LL2 | 42 | 1,52 | +0,19 (+0,39 / −0,00) | 24 % (30 %) | 1,50–1,31 | 1,50–1,60* | 1,31 |
 | 2024/25 | LL2 | 42 | 1,69 | +0,19 (+0,10 / +0,28) | 26 % (27 %) | 1,55–1,21 | 1,58–1,38* | 1,51 |
-| 2025/26 | LL2 | 42 | 1,95 | +0,38 (+0,36 / +0,40) | 17 % (25 %) | 2,14–1,45 | 1,78–1,45* | 1,57 |
-| 2026/27 | LL | 7 | 1,00 | −0,18 (+0,97 / −1,04) | 14 % (24 %) | 1,57–3,00 | 1,25–2,15* | 0,90 |
+| 2025/26 | LL2 | 42 | 1,95 | +0,38 (+0,36 / +0,40) | 17 % (25 %) | 2,14–1,45 | 1,79–1,45* | 1,57 |
+| 2026/27 | LL | 7 | 1,00 | −0,18 (+0,97 / −1,04) | 14 % (24 %) | 1,57–3,00 | 1,40–2,28 | 1,18 |
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+
+## Nyckelspelare (Understat, 2024/25–)
+
+Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
+
+| Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
+|---|---|---|---|---|
+| Yassir Zabiri | 17 % | 0 / 7 | – / 1,00 | – / −0,18 |
+| Andrés Martín | 14 % | 1 / 6 | 0,00 / 1,17 | −1,17 / −0,01 |
+| Iñigo Vicente | 11 % | 0 / 7 | – / 1,00 | – / −0,18 |
+| Pablo García | 6 % | 0 / 7 | – / 1,00 | – / −0,18 |
+| Sergio Canales | 6 % | 0 / 7 | – / 1,00 | – / −0,18 |
+| Asier Villalibre | 4 % | 0 / 7 | – / 1,00 | – / −0,18 |
+
+Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -53,3 +68,44 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | Datum | Spel | Match | Utfall | Folket på laget | Vår procent |
 |---|---|---|---|---|---|
 | 2026-08-23 | Europa 2601 | Getafe - Racing Santander | 1 | 19 % | 24 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: José López. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Simon Eriksson (skadad, åter Mid October 2026), Maguette Gueye (osäker), Andrés Martin (skadad, åter Back in training)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Simon Eriksson | GK | 20 | Sweden | 1,8 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 13 | Julen Agirrezabala | GK | 25 | Spain | 11,0 M€ | 6,80 | 0 | 0 | 0/0 |  |
+| 31 | Laro Gómez | GK | 19 | Spain | 340 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Álvaro Mantilla | RB | 26 | Spain | 1,0 M€ | 6,66 | 0 | 0 | 2/0 |  |
+| 4 | Manu | CB | 28 | Spain | 1,1 M€ | 6,17 | 0 | 0 | 1/0 |  |
+| 5 | Pablo Ramón | CB | 25 | Spain | 1,0 M€ | 7,04 | 0 | 0 | 2/0 |  |
+| 16 | Facundo González | CB | 23 | Uruguay | 1,6 M€ | 5,92 | 0 | 0 | 1/0 |  |
+| 17 | Jorge Salinas | LB,CB | 19 | Spain | 1,8 M€ | 7,11 | 0 | 1 | 2/0 |  |
+| 22 | Pedro Felipe | CB | 22 | Brazil | 908 k€ | 5,27 | 0 | 0 | 1/0 |  |
+| 24 | Jeanuël Belocian | CB,LB,LWB | 21 | France | 11,8 M€ | 6,32 | 0 | 0 | 1/0 |  |
+| 37 | Aitor Crespo | Defender | 21 | Spain | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 3 | Aarón Martín | LM,LB,LWB | 29 | Spain | 2,6 M€ | 5,56 | 0 | 0 | 0/0 |  |
+| 6 | Íñigo Sainz-Maza | CDM,CM | 28 | Spain | 921 k€ | 6,54 | 0 | 0 | 0/0 |  |
+| 8 | André Almeida | CAM,CM,LM | 26 | Portugal | 6,5 M€ | 6,46 | 0 | 0 | 0/1 |  |
+| 14 | Maguette Gueye | CDM | 23 | Senegal | 1,4 M€ | 6,52 | 1 | 0 | 0/0 | osäker |
+| 18 | Matteo Prati | CM,CDM | 22 | Italy | 4,9 M€ | 6,53 | 0 | 0 | 0/0 |  |
+| 20 | Sergio Canales | CAM,RW,ST | 35 | Spain | 1,9 M€ | 6,77 | 1 | 0 | 1/0 |  |
+| 23 | Iván Martin | CDM,CM,CAM | 27 | Spain | 4,4 M€ | 6,96 | 0 | 0 | 0/0 |  |
+| 26 | Mario Solórzano | Midfielder | 21 | Spain | – | – | 0 | 0 | 0/0 |  |
+| 33 | Jorge Castellanos | Midfielder | 20 | Spain | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Giorgi Guliashvili | ST | 25 | Georgia | 1,8 M€ | 6,10 | 0 | 0 | 0/0 |  |
+| 9 | Juan Carlos Arana | ST | 26 | Spain | 952 k€ | 6,44 | 0 | 0 | 0/0 |  |
+| 10 | Iñigo Vicente | LW,CAM | 28 | Spain | 2,1 M€ | 7,25 | 0 | 2 | 2/0 |  |
+| 11 | Andrés Martin | RW | 27 | Spain | 2,8 M€ | 7,32 | 1 | 0 | 0/0 | skadad, åter Back in training |
+| 12 | Asier Villalibre | ST | 28 | Spain | 1,6 M€ | 6,09 | 0 | 1 | 0/0 |  |
+| 15 | Pablo García | RW | 20 | Spain | 8,1 M€ | 6,59 | 2 | 0 | 1/0 |  |
+| 19 | Iker Luque | LW | 21 | Spain | 1,6 M€ | 6,09 | 0 | 0 | 0/0 |  |
+| 21 | Yassir Zabiri | ST | 21 | Morocco | 1,2 M€ | 7,08 | 6 | 0 | 4/0 |  |

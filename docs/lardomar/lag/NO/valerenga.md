@@ -56,3 +56,42 @@ Form (äldst → senast): VFFOFOFO · senaste match 2026-09-20
 | KFUM Oslo | 3 | 1-2-0 | 4–3 | +0,22 | +39 pe | 2026-05-03 2-2 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Johannes Moesgaard. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Fidel Brice Ambina (skadad, åter Early October 2026), Omar Bully Drammeh (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Oscar Hedvall | GK | 28 | Denmark | 512 k€ | 6,44 | 0 | 0 | 0/0 |  |
+| 13 | Sander Lønning | GK | 24 | Norway | 154 k€ | – | 0 | 0 | 0/0 |  |
+| 30 | Alexander Svensen Ordal | Keeper | 18 | Norway | – | – | 0 | 0 | 1/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Kolbeinn Finnsson | LB | 27 | Iceland | 436 k€ | 7,02 | 0 | 5 | 5/0 |  |
+| 3 | Håkon Sjåtil | RB | 23 | Norway | 756 k€ | 6,51 | 0 | 0 | 3/0 |  |
+| 4 | Aaron Kiil Olsen | CB | 25 | Norway | 857 k€ | 6,73 | 0 | 1 | 5/0 |  |
+| 5 | Kevin Tshiembe | CB | 29 | Denmark | 414 k€ | 6,42 | 0 | 0 | 1/0 |  |
+| 6 | Vegar Eggen Hedenstad | RB,LB | 35 | Norway | 189 k€ | 6,39 | 0 | 0 | 1/0 |  |
+| 25 | Mario Gomes | Defender | 19 | Ghana | – | – | 0 | 0 | 0/0 |  |
+| 37 | Ivan Näsberg | CB | 30 | Norway | 496 k€ | 6,64 | 1 | 0 | 3/1 |  |
+| 55 | Sebastian Jarl | RB,CB | 26 | Norway | 482 k€ | 6,93 | 1 | 0 | 2/1 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 10 | Carl Lange | CM | 27 | Denmark | 522 k€ | 7,29 | 6 | 1 | 3/0 |  |
+| 11 | Ghayas Zahid | RM | 32 | Norway | 186 k€ | 6,53 | 0 | 0 | 0/0 |  |
+| 15 | Odin Thiago Holm | CM | 23 | Norway | 1,0 M€ | 6,54 | 0 | 0 | 0/0 |  |
+| 28 | Magnus Westergaard | CM,CDM | 28 | Denmark | 510 k€ | 6,92 | 1 | 1 | 3/0 |  |
+| 29 | Fidel Brice Ambina | CM,CDM | 24 | Cameroon | 1,4 M€ | 6,78 | 0 | 1 | 3/0 | skadad, åter Early October 2026 |
+| 31 | Omar Bully Drammeh | ST | 23 | Norway | 268 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 77 | Lucas Ravn-Haren | LM,RW,RM,ST | 28 | Denmark | 454 k€ | 7,05 | 8 | 1 | 1/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Håvard Nielsen | ST | 33 | Norway | 180 k€ | 6,29 | 0 | 0 | 0/0 |  |
+| 9 | Gabriel Larsen Rajkovic | ST | 15 | Norway | – | 6,32 | 2 | 0 | 2/0 |  |
+| 17 | Mathias Grundetjern | ST | 26 | Norway | 862 k€ | 7,03 | 5 | 4 | 4/0 |  |
+| 18 | Even Forcha | Attacker | 17 | Norway | – | – | 0 | 0 | 0/0 |  |
+| 19 | Elbasan Rashani | LW,LM | 33 | Kosovo | 179 k€ | – | 0 | 0 | 0/0 |  |
+| 24 | Petter Strand | RW,CM | 32 | Norway | 339 k€ | 6,57 | 2 | 1 | 0/0 |  |
+| 26 | Dennis Gjengaar | RW,LB,RB,RM,ST | 22 | Norway | 847 k€ | 6,36 | 0 | 0 | 0/0 |  |
+| 90 | Ole Christian Sæter | ST | 30 | Norway | 454 k€ | 6,40 | 0 | 2 | 2/0 |  |

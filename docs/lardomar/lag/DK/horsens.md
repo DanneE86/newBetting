@@ -46,3 +46,47 @@ Form (äldst → senast): FFVVFVFO · senaste match 2026-09-20
 | Viborg | 3 | 0-0-3 | 3–8 | −0,93 | −26 pe | 2026-08-28 2-3 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Niki Zimling. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Christian Vestergaard (skadad, åter Early April 2027)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Matej Delač | GK | 34 | Croatia | 246 k€ | 6,78 | 0 | 0 | 0/0 |  |
+| 23 | Dennis Smarsch | GK | 27 | Germany | 164 k€ | – | 0 | 0 | 0/0 |  |
+| 31 | Anders Hoff | GK | 23 | Denmark | 305 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Anestis Tricholidis | CB | 16 | Norway | – | – | 0 | 0 | 0/0 |  |
+| 3 | Christian Vestergaard | CB | 25 | Denmark | 415 k€ | – | 0 | 0 | 0/0 | skadad, åter Early April 2027 |
+| 12 | Valassina Diomande | CB,LB | 18 | Ivory Coast | – | – | 0 | 0 | 0/0 |  |
+| 24 | Ole Kolskogen | CB | 25 | Norway | 362 k€ | 6,68 | 1 | 0 | 2/0 |  |
+| 26 | Victor Pálsson | RB,CB | 35 | Iceland | 207 k€ | 6,73 | 0 | 1 | 0/0 |  |
+| 28 | Alagie Saine | LB,RWB,CB,RB | 23 | The Gambia | 285 k€ | 7,04 | 0 | 1 | 3/0 |  |
+| 35 | Mikkel Kupijbida | CB | 18 | Denmark | 1,2 M€ | 6,25 | 0 | 0 | 1/0 |  |
+| 39 | Anton Mandrup | Defender | 18 | Denmark | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Andreas Bruus | RM | 27 | Denmark | 307 k€ | – | 0 | 0 | 0/0 |  |
+| 6 | Jakob Bonde | CM,ST | 32 | Denmark | 240 k€ | 6,74 | 2 | 0 | 1/0 |  |
+| 7 | Ivan Miličević | LWB,LB | 28 | Bosnia and Herzegovina | 215 k€ | 6,56 | 2 | 0 | 0/0 |  |
+| 14 | Julius Madsen | CAM,LM,LWB | 23 | Denmark | 390 k€ | 6,77 | 0 | 1 | 1/0 |  |
+| 16 | Abdul Moro | CDM,CM | 20 | Ghana | 716 k€ | 6,60 | 1 | 0 | 1/0 |  |
+| 17 | Adam Herdonsson | CDM,CM,CAM | 22 | Sweden | 1,0 M€ | 6,56 | 0 | 0 | 3/0 |  |
+| 20 | Karlo Lusavec | CDM,CM | 22 | Croatia | 740 k€ | 6,75 | 0 | 0 | 0/0 |  |
+| 30 | Seniko Doua | CAM | 24 | Ivory Coast | 277 k€ | – | 0 | 0 | 0/0 |  |
+| 37 | Abdoulaye Gouba | Midfielder | 19 | Mali | 562 k€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Omar Jarju | Attacker | 21 | The Gambia | – | – | 0 | 0 | 0/0 |  |
+| 11 | Kelvin Ehibhatiomhan | ST | 23 | England | 404 k€ | 6,92 | 4 | 0 | 1/0 |  |
+| 15 | Adrian Justinussen | ST,LW | 28 | Faroe Islands | 359 k€ | 6,63 | 2 | 0 | 0/0 |  |
+| 18 | Julius Körkkö | ST | 20 | Finland | 593 k€ | 6,13 | 0 | 0 | 0/0 |  |
+| 19 | Jimi Tauriainen | LW | 22 | Finland | 454 k€ | 6,65 | 0 | 3 | 3/0 |  |
+| 22 | John Batigi | ST,LW | 20 | Ghana | 480 k€ | 6,03 | 0 | 0 | 2/0 |  |
+| 25 | Fallou Sene | ST | 22 | Senegal | 489 k€ | – | 0 | 0 | 0/0 |  |
+| 27 | Yamirou Ouorou | RW,RM | 20 | Benin | 407 k€ | 6,92 | 2 | 1 | 1/0 |  |
+| 29 | Frederik Brandhof | RW,CM | 30 | Denmark | 257 k€ | 6,18 | 0 | 0 | 0/0 |  |
+| 38 | Oscar Mandrup | LW | 18 | Denmark | – | – | 0 | 0 | 0/0 |  |
+| 40 | Ismaila Ceesay | Attacker | 18 | The Gambia | – | – | 0 | 0 | 1/0 |  |

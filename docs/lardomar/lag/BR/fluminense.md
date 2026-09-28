@@ -61,3 +61,64 @@ Form (äldst → senast): OOVVOVFV · senaste match 2026-09-20
 | Remo | 2 | 2-0-0 | 4–1 | +1,06 | −25 pe | 2026-08-22 2-1 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Marcão. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Alisson (skadad, åter Mid October 2026), John Kennedy (skadad, åter Out for season), Germán Cano (skadad, åter Early November 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Fábio | GK | 45 | Brazil | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 24 | Gustavo Félix | Keeper | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 27 | Marcelo Pitaluga | GK | 23 | Brazil | 868 k€ | – | 0 | 0 | 0/0 |  |
+| 98 | Vitor Eudes | GK | 27 | Brazil | 453 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Jhonny | RB,RWB,RM | 24 | Brazil | 425 k€ | – | 0 | 0 | 0/0 |  |
+|  | Léo Jance | RB | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 2 | Samuel Xavier | RB | 36 | Brazil | 775 k€ | – | 0 | 0 | 0/0 |  |
+| 3 | Jemmes | CB | 26 | Brazil | 2,4 M€ | – | 0 | 0 | 0/0 |  |
+| 3 | Thiago Silva | CB | 42 | Brazil | 732 k€ | – | 0 | 0 | 0/0 |  |
+| 4 | Ignácio | CB | 29 | Brazil | 1,5 M€ | – | 0 | 0 | 0/0 |  |
+| 6 | Renê | LB | 34 | Brazil | 849 k€ | – | 0 | 0 | 0/0 |  |
+| 13 | Guilherme Arana | LB,LWB,LM | 29 | Brazil | 3,6 M€ | – | 0 | 0 | 0/0 |  |
+| 21 | Igor Rabello | CB | 31 | Brazil | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 22 | Juan Pablo Freytes | CB | 26 | Argentina | 4,4 M€ | – | 0 | 0 | 0/0 |  |
+| 23 | Guga | RB | 28 | Brazil | 1,5 M€ | – | 0 | 0 | 0/0 |  |
+| 29 | Julián Millán | CB | 28 | Colombia | 2,1 M€ | – | 0 | 0 | 0/0 |  |
+| 33 | Gorgulho | Defender | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 46 | Júlio Fidelis | RB | 19 | Brazil | 727 k€ | – | 0 | 0 | 0/0 |  |
+| 46 | Kaio Borges | Defender | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 52 | Breno | Defender | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Stiven Jimenez | CM,CDM | 19 | USA | 746 k€ | – | 0 | 0 | 0/0 |  |
+| 8 | Martinelli | CDM,CM | 24 | Brazil | 12,5 M€ | – | 0 | 0 | 0/0 |  |
+| 10 | Ganso | CAM | 36 | Brazil | 275 k€ | – | 0 | 0 | 0/0 |  |
+| 16 | Nonato | CDM,CM,CAM | 28 | Brazil | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 25 | Alisson | CDM,CM | 33 | Brazil | 713 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 32 | Lucho Acosta | CAM,ST | 32 | Argentina | 1,9 M€ | – | 0 | 0 | 0/0 |  |
+| 35 | Hércules | CDM,CM | 25 | Brazil | 9,9 M€ | – | 0 | 0 | 0/0 |  |
+| 36 | Vagno | LB | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 41 | Ruan Sales | Midfielder | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 47 | Paulo Guilherme | Midfielder | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 48 | Peter | Midfielder | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 58 | Naarã | Midfielder | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 94 | Otávio | CDM | 32 | Brazil | 894 k€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Hulk | ST,CAM | 40 | Brazil | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 9 | John Kennedy | ST | 24 | Brazil | 5,5 M€ | – | 0 | 0 | 0/0 | skadad, åter Out for season |
+| 11 | Jefferson Savarino | CAM,LW,RW | 29 | Venezuela | 4,3 M€ | – | 0 | 0 | 0/0 |  |
+| 14 | Germán Cano | ST | 38 | Argentina | 363 k€ | – | 0 | 0 | 0/0 | skadad, åter Early November 2026 |
+| 15 | Matheus Reis | LW | 19 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| 17 | Agustín Canobbio | RW,RM,LW | 27 | Uruguay | 2,5 M€ | – | 0 | 0 | 0/0 |  |
+| 19 | Rodrigo Castillo | ST | 27 | Argentina | 2,0 M€ | – | 0 | 0 | 0/0 |  |
+| 28 | Riquelme | RW | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 30 | Yeferson Soteldo | LW,LM | 29 | Venezuela | 2,2 M€ | – | 0 | 0 | 0/0 |  |
+| 34 | Wesley Natã | Attacker | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 38 | Isack Gabriel | Attacker | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 39 | Keven Samuel | Attacker | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 42 | João Lourenço | Attacker | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 49 | Enzo | Attacker | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 90 | Kevin Serna | LW,RW,LM | 28 | Colombia | 2,1 M€ | – | 0 | 0 | 0/0 |  |

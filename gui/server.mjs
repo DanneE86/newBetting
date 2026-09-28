@@ -105,7 +105,8 @@ function contentType(filePath) {
 
 function serveStatic(req, res) {
   let urlPath = decodeURIComponent((req.url || "/").split("?")[0]);
-  if (urlPath === "/") urlPath = "/index.html";
+  // Sidadresser (/tips, /stryktipset, /europatipset och undersidor) visar samma sida, stryktips.js läser adressen
+  if (urlPath === "/" || /^\/(tips|stryktipset|europatipset)(\/[\w-]*)?\/?$/.test(urlPath)) urlPath = "/index.html";
   const safe = path.normalize(urlPath).replace(/^(\.\.[/\\])+/, "");
   const filePath = path.join(PUBLIC, safe);
   if (!filePath.startsWith(PUBLIC) || !fs.existsSync(filePath) || fs.statSync(filePath).isDirectory()) {

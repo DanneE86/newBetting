@@ -58,3 +58,45 @@ Form (äldst → senast): FFVVFFFF · senaste match 2026-09-19
 | V-Varen Nagasaki | 1 | 0-0-1 | 0–2 | −1,64 | −26 pe | 2026-09-12 0-2 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Mihailo Petrović. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Daniel Schmidt | GK | 34 | Japan | 294 k€ | 6,77 | 0 | 0 | 0/0 |  |
+| 16 | Yohei Takeda | GK | 39 | Japan | 148 k€ | – | 0 | 0 | 0/0 |  |
+| 35 | Alexandre Pisano | GK | 20 | Japan | 800 k€ | 6,52 | 0 | 0 | 0/0 |  |
+| 36 | Hiroaki Hagi | Keeper | 19 | Japan | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Yuki Nogami | CB,RWB | 35 | Japan | 166 k€ | 6,52 | 0 | 0 | 0/0 |  |
+| 3 | Yota Sato | CB | 28 | Japan | 232 k€ | 6,54 | 0 | 0 | 1/0 |  |
+| 13 | Haruya Fujii | CB | 25 | Japan | 921 k€ | 7,37 | 0 | 0 | 1/0 |  |
+| 37 | Harumu Kubo | Defender | 19 | Japan | – | – | 0 | 0 | 0/0 |  |
+| 46 | Ryuki Oiso | Defender | 21 | Japan | – | – | 0 | 0 | 0/0 |  |
+| 47 | Yuzo Takeuchi | Defender | 16 | Japan | – | – | 0 | 0 | 0/0 |  |
+| 55 | Shuhei Tokumoto | CB,LWB | 31 | Japan | 185 k€ | 6,88 | 0 | 0 | 0/0 |  |
+| 70 | Teruki Hara | CB | 28 | Japan | 261 k€ | 6,72 | 1 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 7 | Ryuji Izumi | CAM,RWB,LWB | 32 | Japan | 169 k€ | 6,53 | 0 | 1 | 1/0 |  |
+| 9 | Yuya Asano | RWB | 29 | Japan | 205 k€ | 6,57 | 1 | 1 | 1/0 |  |
+| 10 | Mateus | CAM | 32 | Brazil | 547 k€ | 6,22 | 0 | 0 | 0/0 |  |
+| 14 | Tsukasa Morishima | CDM | 29 | Japan | 464 k€ | 6,76 | 0 | 0 | 0/0 |  |
+| 15 | Sho Inagaki | CDM | 34 | Japan | 232 k€ | 7,26 | 1 | 0 | 2/0 |  |
+| 17 | Takuya Uchida | CDM,CAM | 28 | Japan | 189 k€ | 6,50 | 0 | 0 | 0/0 |  |
+| 18 | Kensuke Nagai | CAM,ST | 37 | Japan | 203 k€ | 6,13 | 0 | 0 | 0/0 |  |
+| 19 | Hidemasa Koda | RWB,RW | 22 | Japan | 340 k€ | 6,14 | 0 | 0 | 0/0 |  |
+| 22 | Yudai Kimura | CAM,ST | 25 | Japan | 735 k€ | 6,63 | 1 | 0 | 0/0 |  |
+| 27 | Katsuhiro Nakayama | LWB,RWB | 30 | Japan | 280 k€ | 7,09 | 1 | 0 | 1/0 |  |
+| 30 | Shungo Sugiura | ST | 20 | Japan | 446 k€ | 6,08 | 0 | 0 | 0/0 |  |
+| 31 | Tomoki Takamine | CDM,CB | 28 | Japan | 591 k€ | 7,08 | 0 | 0 | 1/0 |  |
+| 33 | Taichi Kikuchi | CAM | 27 | Japan | 183 k€ | 6,65 | 0 | 0 | 0/0 |  |
+| 41 | Masahito Ono | CDM | 30 | Japan | 160 k€ | 7,07 | 1 | 0 | 0/0 |  |
+| 49 | Sakuto Fukaya | Midfielder | 16 | Japan | – | – | 0 | 0 | 0/0 |  |
+| 58 | Tomoya Koyamatsu | LWB,CAM | 31 | Japan | 243 k€ | 6,07 | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Yves Avelete | Attacker | 23 | Togo | – | – | 0 | 0 | 0/0 |  |
+| 11 | Yuya Yamagishi | ST | 33 | Japan | 313 k€ | 6,22 | 0 | 0 | 1/0 |  |
+| 25 | Marcus Índio | ST,CAM | 28 | Brazil | 347 k€ | – | 0 | 0 | 0/0 |  |

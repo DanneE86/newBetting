@@ -122,6 +122,14 @@ export function loadMatches() {
   return out.filter((m) => m.close).sort((a, b) => a.date.localeCompare(b.date) || a.home.localeCompare(b.home));
 }
 
+let usDoc;
+function leagueMatchesDoc() {
+  if (usDoc === undefined) {
+    try { usDoc = JSON.parse(fs.readFileSync(path.join(OPEN, 'understat_league_matches.json'), 'utf8')); } catch { usDoc = null; }
+  }
+  return usDoc;
+}
+
 /** Understat-xG (topp 5) pa matcherna: m.hxg/m.axg. Lagnamn mappas med rostning over sasongerna. */
 export function attachXg(matches) {
   const stats = {};
@@ -132,6 +140,11 @@ export function attachXg(matches) {
     const us = [];
     for (const f of fs.readdirSync(OPEN).filter((x) => x.startsWith(`understat_xg_${league}_`) && /_\d{4}\.json$/.test(x))) {
       us.push(...JSON.parse(fs.readFileSync(path.join(OPEN, f), 'utf8')));
+    }
+    // Pagaende sasong (cachas inte som fil forran den ar klar): pro-lagrets Understat-hamtning
+    for (const s of Object.values(leagueMatchesDoc()?.seasons ?? {})) {
+      if (s.league !== league) continue;
+      for (const m of s.matches ?? []) if (Number.isFinite(m.hxG)) us.push({ date: m.date, home: m.home, away: m.away, hxg: m.hxG, axg: m.axG });
     }
     const near = (u) => [-1, 0, 1].flatMap((o) => byDate.get(new Date(Date.parse(u.date) + o * 864e5).toISOString().slice(0, 10)) ?? []);
     // Pass 1: roster pa namnpar fran tydliga traffar

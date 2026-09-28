@@ -58,3 +58,43 @@ Form (äldst → senast): FFFFOFVV · senaste match 2026-09-21
 | Atl. San Luis | 14 | 6-2-6 | 21–22 | −0,00 | −12 pe | 2026-04-23 0-2 (b) |
 
 Ligans test av inbördes möten mot marknaden: svag signal (inte bekräftad).
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Renato Paiva. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Bruno Amione (skadad, åter Early January 2027), Lucas Di Yorio (skadad, åter Early January 2027)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Carlos Acevedo | GK | 30 | Mexico | 1,5 M€ | – | 0 | 0 | 0/0 |  |
+| 33 | Héctor Holguín | GK | 25 | Mexico | 425 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Bruno Amione | LB,CB | 24 | Argentina | 2,1 M€ | – | 0 | 0 | 0/0 | skadad, åter Early January 2027 |
+| 3 | Mauricio Cuevas | RB,RWB,RM | 23 | USA | 403 k€ | – | 0 | 0 | 0/0 |  |
+| 4 | Javier Abella | RB | 32 | Mexico | 435 k€ | – | 0 | 0 | 0/0 |  |
+| 14 | Efraín Orona | CB,LB | 27 | Mexico | 672 k€ | – | 0 | 0 | 0/0 |  |
+| 17 | Emmanuel Echeverría | LB | 22 | Mexico | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 18 | Franco Pardo | CB | 29 | Argentina | 1,7 M€ | – | 0 | 0 | 0/0 |  |
+| 22 | Kevin Picón | RB | 22 | Mexico | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 25 | Felipe Sánchez | CB,LB | 22 | Argentina | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 28 | Jonathan Pérez | CB | 20 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Aldo López | CDM,CAM | 26 | Mexico | 1,5 M€ | – | 0 | 0 | 0/0 |  |
+| 6 | Javier Güémez | CDM,CAM | 34 | Mexico | 336 k€ | – | 0 | 0 | 0/0 |  |
+| 7 | Diego González | RW,CAM,RM,LM,ST | 23 | Paraguay | 2,8 M€ | – | 0 | 0 | 0/0 |  |
+| 8 | Salvador Mariscal | CDM,CM | 23 | Mexico | 928 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Ezequiel Bullaude | CAM,ST,LW | 25 | Argentina | 1,9 M€ | – | 0 | 0 | 0/0 |  |
+| 15 | Joshua Mancha | Midfielder | 21 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| 21 | Fran Villalba | CAM,RW,CM,ST,CDM | 28 | Spain | 871 k€ | – | 0 | 0 | 0/0 |  |
+| 23 | Facundo Cáseres | CDM,CM | 25 | Argentina | 2,0 M€ | – | 0 | 0 | 0/0 |  |
+| 24 | Diego Medina | LWB | 25 | Mexico | 565 k€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Lucas Di Yorio | ST | 29 | Argentina | 1,7 M€ | – | 0 | 0 | 0/0 | skadad, åter Early January 2027 |
+| 19 | Eduardo Aguirre | ST,LW | 28 | Mexico | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 20 | Esteban Lozano | ST | 23 | Mexico | 1,7 M€ | – | 0 | 0 | 0/0 |  |
+| 26 | Ramiro Sordo | LW,RW,ST | 26 | Argentina | 1,8 M€ | – | 0 | 0 | 0/0 |  |
+| 29 | Tahiel Jiménez | ST | 20 | Mexico | 1,4 M€ | – | 0 | 0 | 0/0 |  |
+| 77 | Kevin Palacios | LW,RW,CDM | 26 | Colombia | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 193 | Luis Gómez | LW | 19 | Mexico | – | – | 0 | 0 | 0/0 |  |

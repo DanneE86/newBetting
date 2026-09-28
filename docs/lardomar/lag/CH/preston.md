@@ -22,14 +22,14 @@ Form (äldst → senast): FFFFVFFO · senaste match 2026-09-19
 
 | Säsong | Liga | M | P/M | Mot marknaden (hemma / borta) | Kryss (odds) | Mål för–emot | xG för–emot | xP/M |
 |---|---|---|---|---|---|---|---|---|
-| 2017/18 | CH | 46 | 1,59 | +0,18 (−0,11 / +0,48) | 35 % (28 %) | 1,24–1,00 | 1,46–1,12* | 1,60 |
+| 2017/18 | CH | 46 | 1,59 | +0,18 (−0,11 / +0,48) | 35 % (28 %) | 1,24–1,00 | 1,46–1,13* | 1,60 |
 | 2018/19 | CH | 46 | 1,33 | −0,11 (−0,05 / −0,17) | 28 % (28 %) | 1,46–1,46 | 1,42–1,52* | 1,32 |
 | 2019/20 | CH | 46 | 1,43 | +0,07 (+0,13 / +0,01) | 26 % (28 %) | 1,28–1,17 | 1,27–1,23* | 1,40 |
 | 2020/21 | CH | 46 | 1,33 | −0,05 (−0,23 / +0,14) | 15 % (29 %) | 1,07–1,22 | 1,13–1,34* | 1,25 |
 | 2021/22 | CH | 46 | 1,39 | +0,05 (+0,12 / −0,02) | 35 % (29 %) | 1,13–1,22 | 1,25–1,34* | 1,33 |
 | 2022/23 | CH | 46 | 1,37 | +0,06 (−0,26 / +0,38) | 26 % (29 %) | 0,98–1,28 | 1,19–1,38* | 1,25 |
 | 2023/24 | CH | 46 | 1,37 | +0,18 (+0,23 / +0,13) | 20 % (28 %) | 1,22–1,46 | 1,07–1,55* | 1,08 |
-| 2024/25 | CH | 46 | 1,09 | −0,06 (+0,07 / −0,18) | 43 % (29 %) | 1,04–1,28 | 1,18–1,31* | 1,27 |
+| 2024/25 | CH | 46 | 1,09 | −0,06 (+0,07 / −0,18) | 43 % (29 %) | 1,04–1,28 | 1,19–1,32* | 1,27 |
 | 2025/26 | CH | 46 | 1,30 | +0,17 (−0,02 / +0,37) | 33 % (27 %) | 1,20–1,35 | 1,22–1,55* | 1,19 |
 | 2026/27 | CH | 8 | 0,50 | −0,72 (−0,58 / −0,86) | 13 % (27 %) | 1,00–1,88 | 1,26–1,70* | 1,11 |
 
@@ -91,3 +91,45 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-09-12 | Stryk 4970 | Preston - Lincoln | 2 | 47 % | 38 % |
 | 2026-08-29 | Stryk 4968 | Charlton - Preston | 1 | 22 % | 27 % |
 | 2026-08-22 | Stryk 4967 | Preston - Wolverhampton | 2 | 16 % | 27 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Jason Euell. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Alistair McCann (skadad, åter Early October 2026), Brad Potts (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Daniel Iversen | GK | 29 | Denmark | 1,5 M€ | 6,53 | 0 | 0 | 0/0 |  |
+| 21 | Lee Nicholls | GK | 33 | England | 437 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Kacper Pasiek | LB | 20 | Poland | – | – | 0 | 0 | 0/0 |  |
+| 3 | Andrija Vukčević | LB,LWB,LM,LW | 29 | Montenegro | 186 k€ | 6,52 | 0 | 1 | 1/0 |  |
+| 6 | Liam Lindsay | CB | 30 | Scotland | 589 k€ | 6,44 | 0 | 0 | 1/0 |  |
+| 14 | Jordan Storey | CB | 29 | England | 2,5 M€ | 6,66 | 0 | 0 | 0/0 |  |
+| 16 | Andrew Hughes | CB,LB | 34 | Wales | 365 k€ | 6,44 | 0 | 0 | 2/0 |  |
+| 19 | Lewis Gibson | CB | 26 | England | 1,8 M€ | 6,73 | 0 | 0 | 1/0 |  |
+| 24 | Odel Offiah | CB,RM,RWB,RW,RB | 23 | England | 2,2 M€ | 6,79 | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Kaedyn Kamara | CM | 20 | England | 249 k€ | – | 0 | 0 | 0/0 |  |
+|  | Theo Carroll | RW | 19 | England | – | – | 0 | 0 | 0/0 |  |
+| 2 | Pol Valentín | RM,RWB,RW,RB | 29 | Spain | 491 k€ | 5,57 | 0 | 0 | 1/0 |  |
+| 4 | Harry Clarke | RM,RWB,RB,CAM,CB | 25 | England | 1,9 M€ | 6,58 | 0 | 0 | 4/0 |  |
+| 7 | Alfie Devine | CM,CAM,LM,RW | 22 | England | 5,4 M€ | 6,98 | 0 | 0 | 0/0 |  |
+| 8 | Alistair McCann | CM,CAM,CDM | 26 | Northern Ireland | 1,6 M€ | 6,50 | 0 | 0 | 2/0 | skadad, åter Early October 2026 |
+| 11 | Thierry Small | LWB,LM,RM | 22 | England | 2,3 M€ | 5,94 | 0 | 0 | 0/0 |  |
+| 12 | Caleb Wiley | LWB,LB | 21 | USA | 10,2 M€ | 7,52 | 1 | 0 | 0/0 |  |
+| 15 | Jordan Thompson | CM,CDM | 29 | Northern Ireland | 346 k€ | 6,83 | 1 | 1 | 3/0 |  |
+| 23 | Andrew Moran | CM,CAM | 22 | Ireland | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| 27 | Léo Leroy | CM,CDM,CAM | 26 | France | 1,8 M€ | 6,70 | 0 | 0 | 2/0 |  |
+| 32 | Ed Nolan | Midfielder | 19 | England | – | – | 0 | 0 | 0/0 |  |
+| 44 | Brad Potts | RWB,CM | 32 | England | 275 k€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Jusef Erabi | ST | 23 | Sweden | 3,1 M€ | 6,30 | 1 | 0 | 0/0 |  |
+| 10 | Callum Lang | ST,CAM,RW | 28 | England | 1,6 M€ | 6,74 | 3 | 0 | 0/0 |  |
+| 17 | Stanley Mills | RW,RM,LW,CAM | 22 | England | 991 k€ | 6,57 | 0 | 1 | 1/0 |  |
+| 20 | Liam Gibbs | RW,CAM,RB,LW | 23 | England | 1,5 M€ | 6,44 | 0 | 0 | 0/0 |  |
+| 30 | George Gryba | Attacker | 17 | England | – | 5,98 | 0 | 0 | 0/0 |  |
+| 37 | Delano Burgzorg | LW,ST | 27 | Suriname | 1,6 M€ | 6,48 | 0 | 2 | 1/0 |  |
+| 38 | Johnny Kenny | ST,CAM | 23 | Ireland | 1,3 M€ | 6,81 | 2 | 0 | 0/0 |  |

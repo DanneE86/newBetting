@@ -1,0 +1,391 @@
+{
+ "updatedAt": "2026-09-28T19:47:27.474Z",
+ "league": "BL2",
+ "fotmobId": 146,
+ "name": "2. Bundesliga",
+ "country": "GER",
+ "table": [
+  {
+   "rank": 1,
+   "team": "Hertha",
+   "fotmobName": "Hertha BSC",
+   "fotmobId": 8177,
+   "group": null,
+   "played": 6,
+   "won": 6,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "17-7",
+   "gd": 10,
+   "pts": 18
+  },
+  {
+   "rank": 2,
+   "team": "Nurnberg",
+   "fotmobName": "1. FC Nürnberg",
+   "fotmobId": 8165,
+   "group": null,
+   "played": 6,
+   "won": 5,
+   "drawn": 1,
+   "lost": 0,
+   "goals": "16-6",
+   "gd": 10,
+   "pts": 16
+  },
+  {
+   "rank": 3,
+   "team": "Heidenheim",
+   "fotmobName": "FC Heidenheim",
+   "fotmobId": 94937,
+   "group": null,
+   "played": 6,
+   "won": 4,
+   "drawn": 1,
+   "lost": 1,
+   "goals": "14-12",
+   "gd": 2,
+   "pts": 13
+  },
+  {
+   "rank": 4,
+   "team": "Wolfsburg",
+   "fotmobName": "Wolfsburg",
+   "fotmobId": 8721,
+   "group": null,
+   "played": 6,
+   "won": 3,
+   "drawn": 2,
+   "lost": 1,
+   "goals": "15-8",
+   "gd": 7,
+   "pts": 11
+  },
+  {
+   "rank": 5,
+   "team": "Kaiserslautern",
+   "fotmobName": "Kaiserslautern",
+   "fotmobId": 8350,
+   "group": null,
+   "played": 6,
+   "won": 3,
+   "drawn": 2,
+   "lost": 1,
+   "goals": "6-4",
+   "gd": 2,
+   "pts": 11
+  },
+  {
+   "rank": 6,
+   "team": "Magdeburg",
+   "fotmobName": "Magdeburg",
+   "fotmobId": 8188,
+   "group": null,
+   "played": 6,
+   "won": 3,
+   "drawn": 1,
+   "lost": 2,
+   "goals": "11-9",
+   "gd": 2,
+   "pts": 10
+  },
+  {
+   "rank": 7,
+   "team": "Cottbus",
+   "fotmobName": "Energie Cottbus",
+   "fotmobId": 8398,
+   "group": null,
+   "played": 6,
+   "won": 2,
+   "drawn": 2,
+   "lost": 2,
+   "goals": "14-13",
+   "gd": 1,
+   "pts": 8
+  },
+  {
+   "rank": 8,
+   "team": "St Pauli",
+   "fotmobName": "St. Pauli",
+   "fotmobId": 8152,
+   "group": null,
+   "played": 6,
+   "won": 1,
+   "drawn": 4,
+   "lost": 1,
+   "goals": "8-8",
+   "gd": 0,
+   "pts": 7
+  },
+  {
+   "rank": 9,
+   "team": "Bochum",
+   "fotmobName": "Bochum",
+   "fotmobId": 9911,
+   "group": null,
+   "played": 6,
+   "won": 2,
+   "drawn": 1,
+   "lost": 3,
+   "goals": "5-6",
+   "gd": -1,
+   "pts": 7
+  },
+  {
+   "rank": 10,
+   "team": "Hannover",
+   "fotmobName": "Hannover 96",
+   "fotmobId": 9904,
+   "group": null,
+   "played": 6,
+   "won": 2,
+   "drawn": 1,
+   "lost": 3,
+   "goals": "7-9",
+   "gd": -2,
+   "pts": 7
+  },
+  {
+   "rank": 11,
+   "team": "Osnabruck",
+   "fotmobName": "VfL Osnabrück",
+   "fotmobId": 9775,
+   "group": null,
+   "played": 6,
+   "won": 2,
+   "drawn": 1,
+   "lost": 3,
+   "goals": "9-12",
+   "gd": -3,
+   "pts": 7
+  },
+  {
+   "rank": 12,
+   "team": "Greuther Furth",
+   "fotmobName": "Greuther Fürth",
+   "fotmobId": 8357,
+   "group": null,
+   "played": 6,
+   "won": 1,
+   "drawn": 3,
+   "lost": 2,
+   "goals": "9-11",
+   "gd": -2,
+   "pts": 6
+  },
+  {
+   "rank": 13,
+   "team": "Bielefeld",
+   "fotmobName": "Arminia Bielefeld",
+   "fotmobId": 9912,
+   "group": null,
+   "played": 6,
+   "won": 1,
+   "drawn": 2,
+   "lost": 3,
+   "goals": "10-12",
+   "gd": -2,
+   "pts": 5
+  },
+  {
+   "rank": 14,
+   "team": "Karlsruhe",
+   "fotmobName": "Karlsruher SC",
+   "fotmobId": 8295,
+   "group": null,
+   "played": 6,
+   "won": 1,
+   "drawn": 2,
+   "lost": 3,
+   "goals": "6-12",
+   "gd": -6,
+   "pts": 5
+  },
+  {
+   "rank": 15,
+   "team": "Braunschweig",
+   "fotmobName": "Eintracht Braunschweig",
+   "fotmobId": 9776,
+   "group": null,
+   "played": 6,
+   "won": 1,
+   "drawn": 1,
+   "lost": 4,
+   "goals": "12-13",
+   "gd": -1,
+   "pts": 4
+  },
+  {
+   "rank": 16,
+   "team": "Holstein Kiel",
+   "fotmobName": "Holstein Kiel",
+   "fotmobId": 8150,
+   "group": null,
+   "played": 6,
+   "won": 0,
+   "drawn": 4,
+   "lost": 2,
+   "goals": "7-10",
+   "gd": -3,
+   "pts": 4
+  },
+  {
+   "rank": 17,
+   "team": "Dresden",
+   "fotmobName": "Dynamo Dresden",
+   "fotmobId": 8480,
+   "group": null,
+   "played": 6,
+   "won": 1,
+   "drawn": 1,
+   "lost": 4,
+   "goals": "8-14",
+   "gd": -6,
+   "pts": 4
+  },
+  {
+   "rank": 18,
+   "team": "Darmstadt",
+   "fotmobName": "Darmstadt",
+   "fotmobId": 8262,
+   "group": null,
+   "played": 6,
+   "won": 1,
+   "drawn": 1,
+   "lost": 4,
+   "goals": "5-13",
+   "gd": -8,
+   "pts": 4
+  }
+ ],
+ "tableHistory": {
+  "2026-09-28": [
+   [
+    "Hertha",
+    1,
+    6,
+    18,
+    10
+   ],
+   [
+    "Nurnberg",
+    2,
+    6,
+    16,
+    10
+   ],
+   [
+    "Heidenheim",
+    3,
+    6,
+    13,
+    2
+   ],
+   [
+    "Wolfsburg",
+    4,
+    6,
+    11,
+    7
+   ],
+   [
+    "Kaiserslautern",
+    5,
+    6,
+    11,
+    2
+   ],
+   [
+    "Magdeburg",
+    6,
+    6,
+    10,
+    2
+   ],
+   [
+    "Cottbus",
+    7,
+    6,
+    8,
+    1
+   ],
+   [
+    "St Pauli",
+    8,
+    6,
+    7,
+    0
+   ],
+   [
+    "Bochum",
+    9,
+    6,
+    7,
+    -1
+   ],
+   [
+    "Hannover",
+    10,
+    6,
+    7,
+    -2
+   ],
+   [
+    "Osnabruck",
+    11,
+    6,
+    7,
+    -3
+   ],
+   [
+    "Greuther Furth",
+    12,
+    6,
+    6,
+    -2
+   ],
+   [
+    "Bielefeld",
+    13,
+    6,
+    5,
+    -2
+   ],
+   [
+    "Karlsruhe",
+    14,
+    6,
+    5,
+    -6
+   ],
+   [
+    "Braunschweig",
+    15,
+    6,
+    4,
+    -1
+   ],
+   [
+    "Holstein Kiel",
+    16,
+    6,
+    4,
+    -3
+   ],
+   [
+    "Dresden",
+    17,
+    6,
+    4,
+    -6
+   ],
+   [
+    "Darmstadt",
+    18,
+    6,
+    4,
+    -8
+   ]
+  ]
+ }
+}

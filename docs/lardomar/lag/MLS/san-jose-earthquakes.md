@@ -71,3 +71,49 @@ Form (äldst → senast): FFFOOVVO · senaste match 2026-09-20
 | Charlotte | 1 | 0-0-1 | 1–4 | −0,77 | −23 pe | 2025-03-22 1-4 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Bruce Arena. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** DeJuan Jones (skadad, åter Late December 2026), Nonso Adimabua (skadad, åter Mid October 2026), Darius Johnson (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+|  | Luca Ulrich | GK | 23 | USA | – | – | 0 | 0 | 0/0 |  |
+| 1 | Angus Gunn | GK | 30 | Scotland | 736 k€ | 6,57 | 0 | 0 | 0/0 |  |
+| 22 | Nate Crockford | GK | 24 | USA | 169 k€ | – | 0 | 0 | 0/0 |  |
+| 31 | Francesco Montali | GK | 26 | USA | – | – | 0 | 0 | 0/0 |  |
+| 36 | Earl Edwards Jr. | GK | 34 | USA | 50 k€ | 7,22 | 0 | 0 | 1/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Jamar Ricketts | LB,LW,LWB | 24 | USA | 318 k€ | 6,83 | 0 | 2 | 3/0 |  |
+| 4 | David Romney | CB,LB | 33 | USA | 92 k€ | 6,84 | 1 | 0 | 1/0 |  |
+| 5 | Daniel Munie | CB | 26 | USA | 1,3 M€ | 6,90 | 5 | 1 | 3/0 |  |
+| 17 | Jack Jasinski | RB,LB | 22 | USA | 144 k€ | 6,65 | 1 | 0 | 2/0 |  |
+| 18 | Reid Roberts | CB | 22 | USA | 558 k€ | 6,89 | 3 | 0 | 8/0 |  |
+| 24 | DeJuan Jones | LB | 29 | USA | 1,4 M€ | 7,37 | 0 | 0 | 2/0 | skadad, åter Late December 2026 |
+| 25 | Max Floriani | CB | 23 | USA | 171 k€ | 6,56 | 0 | 0 | 1/1 |  |
+| 28 | Benji Kikanović | RB,RWB,RM | 26 | USA | 302 k€ | 6,68 | 0 | 0 | 7/0 |  |
+| 87 | Vítor Costa | LB,LWB | 32 | Brazil | 68 k€ | 6,47 | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Edwyn Mendoza | CM,CDM | 20 | USA | – | – | 0 | 0 | 0/0 |  |
+|  | Rohan Rajagopal | CM,CDM | 19 | USA | – | – | 0 | 0 | 0/0 |  |
+| 3 | Paul Marie | CAM,RW,LW,RWB | 31 | France | 53 k€ | 6,70 | 0 | 5 | 0/0 |  |
+| 6 | Ian Harkes | CDM,CM | 31 | USA | 299 k€ | 6,63 | 0 | 0 | 2/0 |  |
+| 10 | Niko Tsakiris | CAM,CM | 21 | USA | 1,2 M€ | 7,36 | 3 | 7 | 3/0 |  |
+| 14 | Ronaldo Vieira | CDM,CM | 28 | Guinea-Bissau | 202 k€ | 6,75 | 0 | 0 | 6/0 |  |
+| 20 | Nick Fernandez | CM,CAM,CDM | 24 | USA | 181 k€ | 6,53 | 1 | 2 | 1/0 |  |
+| 21 | Noel Buck | CM,RW | 21 | USA | 922 k€ | 6,21 | 0 | 0 | 0/0 |  |
+| 23 | Eduard Löwen | CAM,CM,CDM,RW | 29 | Germany | 1,6 M€ | 7,28 | 4 | 3 | 1/0 |  |
+| 34 | Beau Leroux | CDM,CAM,CM | 23 | USA | 2,2 M€ | 7,43 | 4 | 7 | 5/0 |  |
+| 40 | Jonathan González | CDM,CM | 27 | Mexico | 165 k€ | 6,38 | 0 | 0 | 1/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Kaedren Spivey | ST,CM,CAM,LW | 17 | USA | – | – | 0 | 0 | 0/0 |  |
+| 7 | Ousseni Bouda | RW,ST,LW,LM | 26 | Burkina Faso | 917 k€ | 6,97 | 6 | 1 | 2/0 |  |
+| 9 | Luka Jovanović | ST | 21 | Australia | 1,4 M€ | 6,23 | 0 | 0 | 0/0 |  |
+| 11 | Timo Werner | LW | 30 | Germany | 2,1 M€ | 7,30 | 6 | 5 | 2/0 |  |
+| 16 | Jack Skahan | RW,LW | 28 | USA | 136 k€ | 6,35 | 2 | 2 | 1/0 |  |
+| 19 | Preston Judd | ST | 27 | USA | 689 k€ | 7,18 | 15 | 3 | 8/0 |  |
+| 32 | Nonso Adimabua | ST | 26 | Nigeria | 176 k€ | 6,93 | 0 | 1 | 0/0 | skadad, åter Mid October 2026 |
+| 79 | Darius Johnson | LW | 26 | Grenada | 146 k€ | 6,25 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |

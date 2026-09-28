@@ -47,3 +47,47 @@ Form (äldst → senast): OOFOVOOO · senaste match 2026-09-18
 | Pisa | 2 | 0-1-1 | 2–4 | −0,71 | +18 pe | 2025-02-16 1-1 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Alessandro Diamanti. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Jonathan Klinsmann (skadad, åter Day to day)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Alessandro Siano | GK | 25 | Italy | 273 k€ | 7,32 | 0 | 0 | 0/0 |  |
+| 13 | Luca Ferretti | Keeper | 22 | Italy | 145 k€ | – | 0 | 0 | 0/0 |  |
+| 33 | Jonathan Klinsmann | GK | 29 | USA | 1,6 M€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
+| 39 | Niccolò Fontana | Keeper | 18 | Italy | – | – | 0 | 0 | 0/0 |  |
+| 48 | Simone Gianfanti | Keeper | 19 | Italy | – | – | 0 | 0 | 0/0 |  |
+| 90 | Tommaso Mazzi | Keeper | 17 | Italy | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Mark Natta | CB | 23 | Australia | 579 k€ | – | 0 | 0 | 0/0 |  |
+| 3 | Antonio David | LB | 22 | Romania | 284 k€ | 6,01 | 0 | 0 | 1/1 |  |
+| 4 | Jacopo Gelli | CB | 25 | Italy | 573 k€ | 7,26 | 0 | 0 | 1/0 |  |
+| 6 | Mihajlo Ilić | CB | 23 | Serbia | 1,9 M€ | 7,16 | 0 | 0 | 1/0 |  |
+| 15 | Andrea Ciofi | CB,RB | 27 | Italy | 1,1 M€ | 6,87 | 0 | 0 | 0/0 |  |
+| 23 | Vittorio Magni | LM | 20 | Italy | 1,0 M€ | 6,47 | 0 | 0 | 0/0 |  |
+| 24 | Massimiliano Mangraviti | CB,LB | 28 | Italy | 615 k€ | 6,86 | 0 | 0 | 0/0 |  |
+| 26 | Matteo Piacentini | CB | 27 | Italy | 215 k€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Luca Schirone | Midfielder | 23 | Italy | 275 k€ | 6,15 | 0 | 0 | 0/0 |  |
+| 7 | Gianluca Frabotta | LM,LB | 27 | Italy | 1,1 M€ | 6,63 | 0 | 0 | 1/0 |  |
+| 8 | Matteo Francesconi | CM,CDM | 22 | Italy | 1,6 M€ | 6,17 | 0 | 0 | 0/0 |  |
+| 10 | Riccardo Pagano | CAM,CM,CDM | 21 | Italy | 1,7 M€ | 7,00 | 0 | 0 | 0/0 |  |
+| 11 | Maat Caprini | LW | 20 | Italy | 1,7 M€ | – | 0 | 0 | 0/0 |  |
+| 18 | Matteo Guidi | CB,LM,CM | 23 | Italy | 414 k€ | 6,60 | 0 | 1 | 1/0 |  |
+| 20 | Matteo Casadei | Midfielder | 17 | Italy | – | – | 0 | 0 | 0/0 |  |
+| 25 | Dimitri Bisoli | CM,CDM,CAM | 32 | Italy | 291 k€ | 7,18 | 0 | 2 | 1/0 |  |
+| 27 | Marco Dalla Vecchia | CM,CAM,CDM | 21 | Italy | 633 k€ | 6,01 | 0 | 0 | 0/0 |  |
+| 32 | Emil Bohinen | CM | 27 | Norway | 886 k€ | – | 0 | 0 | 0/0 |  |
+| 43 | Filippo Bertaccini | Midfielder | 19 | Italy | 538 k€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Cristian Shpendi | ST,RW,LW | 23 | Albania | 4,9 M€ | 7,77 | 6 | 0 | 3/0 |  |
+| 14 | Xavello Druiventak | RW | 22 | Netherlands | – | 6,70 | 0 | 1 | 0/0 |  |
+| 16 | Luca D'Andrea | RW | 22 | Italy | 616 k€ | 6,48 | 0 | 1 | 0/0 |  |
+| 71 | Maurizio Rossetti | Attacker | 19 | Italy | – | – | 0 | 0 | 0/0 |  |
+| 80 | Antonio Fiori | LW | 23 | Italy | 1,2 M€ | 6,90 | 1 | 0 | 1/0 |  |
+| 91 | Alessandro Debenedetti | ST | 23 | Italy | 708 k€ | 6,08 | 0 | 0 | 0/0 |  |

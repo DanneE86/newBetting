@@ -279,6 +279,50 @@ Ingen av dem fanns i de tidigare backtesten, eftersom urvalsfiltren (minst 1 PL-
 - **ET 2594** är ren: Svenska Spels startodds, ingen modell.
 - Plus eller minus avgörs helt av 2–3 träffar på 270 omgångar. Resultatet kan inte skiljas från slump, men det visar att det nya systemet *kan* träffa i skrällveckor.
 
+## Spikar som sprack: tabell, form och läge vid matchtillfället (Stryktipset, 2026-09-28)
+
+**Urval:** alla spikar i system A. Kupongerna är byggda med nuvarande regler ur arkivet, och arkivet går nu tillbaka till augusti 2023 (167 omgångar).
+
+**Metod:** för engelska ligamatcher räknades läget fram dagen före matchen ur football-data:
+- tabellplacering, zon och poäng per match
+- form de senaste 5 matcherna, totalt och hemma/borta
+- vilodagar
+- säsongsläge
+
+Spruckna spikar jämfördes med väntat antal (1 − vår chans för spiktecknet) per faktor, 24 faktorer.
+
+**Resultat:** spikarna är välkalibrerade. Jan 2025 – sep 2026: 188 spruckna mot väntat 179,6 (z +0,8). Aug 2023 – dec 2024: 127 mot 138,7 (z −1,3).
+
+Två faktorer såg ut som signaler 2025–26 och testades på den oberoende perioden 2023–24:
+
+| Faktor | 2025–26 | 2023–24 (oberoende) |
+|---|---|---|
+| Favoritens hemma-/bortaform ≤ 5 p (5 matcher) | 32 mot 24,3, z +2,1 | 25 mot 28,4, z −0,9 |
+| Tidigt på säsongen (3–7 matcher) | 23 mot 16,8, z +2,0 | 15 mot 19,0, z −1,2 |
+
+Båda vände, så de är brus. Med 24 test väntas cirka en falsk signal med |z| ≥ 2.
+
+Inget av följande spräcker spikar oftare än oddsen säger:
+- tabellavstånd
+- motståndare i nedflyttningszon
+- "inget att spela för" sent på säsongen
+- kort vila
+- formskillnad
+- hur folket streckar
+
+**Slutsats:** tabell och form finns redan i oddsen. Det finns inget vi missat som hade räddat de spruckna spikarna.
+
+**Oddsrörelse** går inte att testa bakåt, eftersom Svenska Spel tar bort slutoddsen efter spelstopp (bara 25 av 1 196 matcher har dem). Arkivet sparar nu oddsen vid varje körning (`raw/*-open.json`), så det kan testas framöver.
+
+**Arkivet 2023–2026 med nuvarande regler (Stryktipset):** 167 omgångar, insats 129 270 kr, vinst 101 007 kr, netto **−28 263 kr**, 1 gång 13 rätt (4917, september 2025). Under aug 2023 – dec 2024 blev det ingen 13-rätt.
+
+**Folket i Stryktipset** (91 omgångar, jan 2025 – sep 2026): att väga in folkets streck gav sämre logloss när vi har skarpa odds (+0,0036 vid 25 %, 2 SE) och brus när vi bara har Svenska Spels odds. Det införs inte för Stryktipset.
+
+**Nytt 2026-09-28:**
+- Den sena körningen startar var 30:e minut lördag/söndag. En vakt (`scripts/stryk-close-guard.mjs`) kör bara när kupongen stänger om 15–75 minuter, vilket fungerar både sommar- och vintertid.
+- Körningen hämtar färska skarpa odds för PL, Championship, League One och League Two via The Odds API (`STRYK_FRESH_ODDS=1`, max 20 minuter gamla).
+- Namnjämförelsen klarar initialer och alias: Sheffield U/W, Brighton, Nottingham, M'gladbach, Espanol, Bristol Rvs.
+
 ## Robusta lärdomar (stöds av hela urvalet)
 
 1. **Oddsen slår vår lagmodell.** Logloss över 216 matcher, där lägre är bättre:
@@ -342,6 +386,8 @@ Ingen av dem fanns i de tidigare backtesten, eftersom urvalsfiltren (minst 1 PL-
 Nettot styrs av enstaka träffar: A:s plus kommer från en enda rad med 12 rätt. Med 65 % återbetalning är det normala förväntade utfallet negativt. Nettot säger därför lite om kvaliteten, och rader med 11+ rätt är ett bättre mått.
 
 ## Ändringslogg
+
+- **2026-09-28 (sent):** Spikanalysen (tabell och form) visade inget missat. Stryktipsarkivet går tillbaka till augusti 2023. Den sena körningen går nära spelstopp med vakt och färska skarpa odds. Namnjämförelsen är förbättrad. Folkets streck vägs inte in på Stryktipset.
 
 - **2026-09-28 (natt):** Kupongarkiv `data/tips-archive` (272 omgångar sedan januari 2025 plus alla framtida). Backtestet läser arkivet. Analys av omgångar med minst 40 000 kr. `STRYK_GRUND_MAX` finns för test av större grundrader (ingen effekt).
 

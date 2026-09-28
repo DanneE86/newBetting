@@ -20,7 +20,7 @@ Form (äldst → senast): FVFVVFOV · senaste match 2026-09-20
 
 | Säsong | Liga | M | P/M | Mot marknaden (hemma / borta) | Kryss (odds) | Mål för–emot | xG för–emot | xP/M |
 |---|---|---|---|---|---|---|---|---|
-| 2022/23 | SB | 38 | 1,26 | −0,19 (−0,03 / −0,36) | 24 % (30 %) | 1,24–1,39 | 1,35–1,52* | 1,29 |
+| 2022/23 | SB | 38 | 1,26 | −0,19 (−0,03 / −0,36) | 24 % (30 %) | 1,24–1,39 | 1,36–1,53* | 1,29 |
 | 2023/24 | SB | 38 | 1,24 | −0,04 (−0,32 / +0,24) | 45 % (31 %) | 1,08–1,24 | 1,44–1,21* | 1,50 |
 | 2024/25 | SB | 38 | 1,18 | −0,19 (−0,20 / −0,18) | 39 % (32 %) | 1,26–1,32 | 1,29–1,40* | 1,30 |
 | 2025/26 | SB | 38 | 1,45 | −0,15 (−0,18 / −0,13) | 26 % (28 %) | 1,29–0,95 | 1,65–1,22* | 1,66 |
@@ -50,3 +50,48 @@ Form (äldst → senast): FVFVVFOV · senaste match 2026-09-20
 | Virtus Entella | 2 | 1-0-1 | 3–2 | −0,19 | −30 pe | 2026-03-03 1-2 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Daniele Galloppa. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Abdullah Laidani (skadad, åter Late October 2026), Alessandro Sersanti (skadad, åter Mid April 2027), Joris Manquant (skadad, åter Late April 2027)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Leandro Chichizola | GK | 36 | Argentina | 214 k€ | 6,79 | 0 | 0 | 0/0 |  |
+| 12 | Andrea Maran | Keeper | 18 | Italy | – | – | 0 | 0 | 0/0 |  |
+| 22 | Leonardo Consiglio | Keeper | 20 | Italy | 904 k€ | – | 0 | 0 | 0/0 |  |
+| 25 | Abdullah Laidani | GK | 23 | Switzerland | 575 k€ | – | 0 | 0 | 0/0 | skadad, åter Late October 2026 |
+| | **Backar** | | | | | | | | | |
+| 6 | Steven Nador | CB | 24 | Togo | 776 k€ | 7,54 | 0 | 0 | 0/0 |  |
+| 15 | Martino Odero | Defender | 19 | Italy | – | – | 0 | 0 | 0/0 |  |
+| 20 | Bryant Nieling | CB | 23 | Netherlands | 2,5 M€ | 7,55 | 0 | 0 | 0/0 |  |
+| 23 | Francesco Folino | CB | 24 | Italy | 800 k€ | 6,22 | 0 | 0 | 0/0 |  |
+| 28 | Davide Adorni | CB | 34 | Italy | 167 k€ | – | 0 | 0 | 0/0 |  |
+| 34 | Diego Ronco | Defender | 21 | Italy | 451 k€ | – | 0 | 0 | 0/0 |  |
+| 77 | Daniel Tonoli | CB,RB | 24 | Italy | 2,1 M€ | 7,80 | 0 | 2 | 1/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Alessandro Sersanti | CM | 24 | Italy | 1,4 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid April 2027 |
+| 6 | Tito Fabbri | Midfielder | 17 | Italy | – | – | 0 | 0 | 0/0 |  |
+| 7 | Francesco Zampano | LM,RM,LB | 32 | Italy | 674 k€ | 6,70 | 0 | 0 | 1/0 |  |
+| 8 | Simone Santoro | CM | 27 | Italy | 1,3 M€ | 7,10 | 1 | 0 | 0/0 |  |
+| 10 | Giuseppe Caso | LW,CAM,LM | 27 | Italy | 697 k€ | 7,34 | 2 | 0 | 0/0 |  |
+| 16 | Gastón Brugman | CDM,CM | 34 | Uruguay | 382 k€ | 7,38 | 0 | 1 | 0/0 |  |
+| 17 | Kleis Bozhanaj | CAM,LW,CDM | 25 | Albania | 169 k€ | – | 0 | 0 | 1/0 |  |
+| 26 | Antonio Imputato | RM | 22 | Italy | 539 k€ | 6,28 | 0 | 0 | 0/0 |  |
+| 27 | Paulo Azzi | LWB,LM | 32 | Brazil | 659 k€ | 6,53 | 0 | 0 | 0/0 |  |
+| 32 | Wisdom Acquah | Midfielder | 19 | Ghana | – | 6,30 | 0 | 0 | 0/0 |  |
+| 37 | Treasure Egharevba | Midfielder | 18 | Italy | – | – | 0 | 0 | 0/0 |  |
+| 42 | Alessandro Bianco | CDM,CM,CAM,RW | 23 | Italy | 2,6 M€ | 7,49 | 0 | 1 | 2/0 |  |
+| 72 | Giacomo Olzer | CAM,RW,CM,ST | 25 | Italy | 548 k€ | 7,25 | 2 | 0 | 2/0 |  |
+| 73 | Pietro Arnaboldi | CM | 18 | Italy | 898 k€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Joris Manquant | ST | 20 | France | 603 k€ | – | 0 | 0 | 0/0 | skadad, åter Late April 2027 |
+| 9 | Daniele Montevago | ST | 23 | Italy | 557 k€ | 6,28 | 0 | 0 | 0/0 |  |
+| 11 | Andrea Belotti | ST | 32 | Italy | 893 k€ | 6,50 | 1 | 0 | 0/0 |  |
+| 24 | Edward Colpo | Attacker | 17 | Italy | – | – | 0 | 0 | 0/0 |  |
+| 29 | Luca Bacchin | Attacker | 22 | Italy | 399 k€ | 6,21 | 0 | 0 | 0/0 |  |
+| 33 | Stênio | ST | 23 | Brazil | 585 k€ | 6,14 | 0 | 0 | 1/0 |  |
+| 70 | Giuseppe Ambrosino | ST | 23 | Italy | 2,0 M€ | 7,83 | 2 | 2 | 1/0 |  |

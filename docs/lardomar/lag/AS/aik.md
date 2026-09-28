@@ -68,3 +68,53 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-10-26 | Europa 2517 | AIK - Häcken | X | 54 % | 46 % |
 | 2025-09-28 | Europa 2509 | AIK - GAIS | X | 41 % | 44 % |
 | 2025-08-24 | Europa 2499 | Degerfors - AIK | 2 ✓ | 58 % | 49 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: José Riveiro. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Sotirios Papagiannopoulos (skadad, åter Mid October 2026), Lukas Bergquist (skadad, åter Early October 2026), Charlie Pavey (skadad, åter About 1-2 weeks), Fredrik Nissen (skadad, åter Mid October 2026), Ibrahim Cissé (skadad, åter Mid October 2026), Diogo Tomas (skadad, åter Mid October 2026), Martin Ellingsen (skadad, åter Mid October 2026), Dino Beširović (skadad, åter A few weeks), Andreas Redkin (skadad, åter Mid October 2026), Adrián Helm (skadad, åter Mid October 2026), Kevin Filling (skadad, åter Mid October 2026), Taha Ayari (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 15 | Kristoffer Nordfeldt | GK | 37 | Sweden | 174 k€ | 7,15 | 0 | 0 | 4/0 |  |
+| 30 | Kalle Joelsson | GK | 28 | Sweden | 249 k€ | 6,46 | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Eskil Smidesang Edh | LB | 24 | Norway | 1,6 M€ | 6,99 | 0 | 0 | 2/0 |  |
+| 3 | Hervé Matthys | CB | 30 | Belgium | 280 k€ | 6,90 | 0 | 0 | 1/0 |  |
+| 4 | Sotirios Papagiannopoulos | CB | 36 | Sweden | 279 k€ | 6,65 | 0 | 0 | 2/0 | skadad, åter Mid October 2026 |
+| 5 | Lukas Bergquist | LB | 26 | Sweden | 369 k€ | 6,62 | 0 | 1 | 2/0 | skadad, åter Early October 2026 |
+| 12 | Charlie Pavey | RB | 18 | Sweden | 1,4 M€ | 6,93 | 0 | 0 | 2/0 | skadad, åter About 1-2 weeks |
+| 14 | Fredrik Nissen | CB | 21 | Sweden | 496 k€ | 6,53 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 17 | Mads Døhr Thychosen | RB | 29 | Denmark | 830 k€ | 6,56 | 0 | 2 | 4/0 |  |
+| 20 | Sebastian Hausner | CB | 26 | Denmark | 769 k€ | 6,71 | 0 | 0 | 0/0 |  |
+| 21 | Stanley Wilson | LB | 20 | Kenya | 927 k€ | 6,91 | 0 | 2 | 2/0 |  |
+| 25 | Ibrahim Cissé | CB | 27 | Ivory Coast | 396 k€ | 6,84 | 1 | 0 | 2/0 | skadad, åter Mid October 2026 |
+| 33 | Diogo Tomas | CB | 29 | Finland | 138 k€ | 6,44 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 34 | Wilmer Olofsson | CB | 21 | Sweden | 208 k€ | 6,69 | 0 | 0 | 2/0 |  |
+| 44 | Abdoul Fatha Tinde Teribe | Defender | 19 | Burkina Faso | – | – | 0 | 0 | 0/0 |  |
+| 47 | Ladji Cammara | Defender | 19 | Monaco | – | 7,28 | 0 | 1 | 1/0 |  |
+| 49 | Oskar Pukelis | Defender | 18 | Lithuania | – | 6,03 | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Martin Ellingsen | CB | 31 | Norway | 152 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 7 | Amel Mujanić | CM,CDM,LM | 25 | Sweden | 750 k€ | 6,40 | 0 | 0 | 4/0 |  |
+| 8 | Johan Hove | CM,CAM,CDM,ST | 26 | Norway | 1,6 M€ | 7,28 | 7 | 1 | 4/0 |  |
+| 18 | Abdihakin Ali | CM,CDM | 24 | Sweden | 289 k€ | 6,92 | 0 | 1 | 3/0 |  |
+| 19 | Dino Beširović | CM,CDM,LW,LM,CB | 32 | Bosnia and Herzegovina | 291 k€ | 7,02 | 1 | 2 | 4/0 | skadad, åter A few weeks |
+| 24 | Andreas Redkin | LW | 19 | Sweden | 469 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 28 | Linus Järeteg | RM | 19 | Sweden | – | 6,00 | 0 | 0 | 0/0 |  |
+| 41 | Mohammed Shilla | Midfielder | 18 | Tanzania | – | – | 0 | 0 | 0/0 |  |
+| 46 | Yannick Geiger | CM,RM | 19 | Sweden | 1,6 M€ | 6,71 | 1 | 0 | 2/0 |  |
+| 48 | Axel Kouame | CAM,LW,ST,LM | 22 | Ivory Coast | 1,0 M€ | 6,86 | 3 | 1 | 1/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Nana Kofi Donkor | LW | 19 | Ghana | – | – | 0 | 0 | 0/0 |  |
+| 9 | Linus Carlstrand | ST,RW | 22 | Sweden | 337 k€ | 7,35 | 5 | 1 | 1/0 |  |
+| 10 | Lucas Assadi | LW | 22 | Chile | 2,1 M€ | 6,29 | 0 | 0 | 0/0 |  |
+| 16 | Sixten Gustafsson | LW | 19 | Sweden | – | 6,47 | 2 | 0 | 1/0 |  |
+| 22 | Adrián Helm | LM | 21 | Sweden | 555 k€ | 7,00 | 1 | 1 | 0/0 | skadad, åter Mid October 2026 |
+| 29 | Kevin Filling | ST,RW | 17 | Sweden | 1,6 M€ | 6,85 | 2 | 5 | 2/0 | skadad, åter Mid October 2026 |
+| 39 | Henry Atola | Attacker | 24 | Kenya | 271 k€ | – | 0 | 0 | 0/0 |  |
+| 42 | Muslim Sultygov | Attacker | 18 | Sweden | – | – | 0 | 0 | 0/0 |  |
+| 43 | Nikolaj Staykov | Attacker | 19 | Sweden | – | 5,90 | 0 | 0 | 0/0 |  |
+| 45 | Taha Ayari | ST,LW | 21 | Sweden | 1,7 M€ | 6,91 | 1 | 2 | 2/0 | skadad, åter Mid October 2026 |

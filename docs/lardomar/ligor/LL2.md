@@ -38,6 +38,15 @@ Underlag: 4213 matcher, säsong 2017/18 – 2026/27. Marknad = stängningsodds u
 | 65–75 % | 97 | 73,2 % | 68,3 % | +4,9 pe (1,1) | ingen effekt |
 | 75–100 % | 11 | 63,6 % | 78,3 % | – | för lite data |
 
+## Kalibrering av oddsen (justeringsmodellen)
+
+g > 0 = favoriter vinner oftare än oddsen säger (skrällar överprissatta), h < 0 = hemmalag överprissatta, d > 0 = kryss underprissatta. Parametrarna är tränade före 2023/24. Kontroll = logloss-skillnad 2023/24– (negativ = bättre). Live används parametrar refittade på all data.
+
+| Bas | g (favoriter) | h (hemma) | d (kryss) | Kontroll | Används live |
+|---|---|---|---|---|---|
+| öppningsodds (Oddset, långt före avspark) | +0,042 | +0,064 | +0,081 | +0,0001 (z 0,1, n 1462) | ja |
+| stängningsodds (sen körning, Stryktipset/Europatipset) | +0,062 | +0,052 | +0,063 | +0,0001 (z 0,1, n 1462) | nej |
+
 ## Signaler mot marknaden
 
 Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (|z| ≥ 2,5 i träning och ≥ 2 i kontroll krävs). "Oddsrörelse" visar om signalen förutsäger hur oddsen rör sig från öppning till stängning, alltså om marknaden lär sig det före avspark.
@@ -51,6 +60,9 @@ Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (
 | Inbördes möten, poängskillnad | −0,002 (z −0,1, n 1887) | +0,037 (z 1,1, n 937) | −0,050 (z −1,3, n 950) | −0,006 (z −0,2, n 1887) | −0,004 (z −2,2, n 1887) | −0,005 p | ingen effekt |
 | Inbördes möten, kryss mot förväntat | +0,010 (z 0,2, n 1887) | +0,006 (z 0,1, n 937) | +0,013 (z 0,2, n 950) | – | – | +0,006 p | ingen effekt |
 | Vilodagar (hemma − borta, ligamatcher) | −0,004 (z −0,3, n 4089) | +0,011 (z 0,7, n 2671) | −0,032 (z −1,4, n 1418) | −0,005 (z −0,4, n 4088) | −0,002 (z −1,4, n 4088) | −0,008 p | ingen effekt |
+| Oddsrörelse öppning → stängning (förväntade poäng) | −0,069 (z −0,4, n 4212) | −0,062 (z −0,3, n 2750) | −0,079 (z −0,2, n 1462) | – | – | −0,017 p | ingen effekt |
+| Bolagssnitt mot Pinnacle vid stängning | −0,307 (z −0,3, n 2966) | +0,083 (z 0,1, n 1846) | −0,764 (z −0,6, n 1120) | – | – | −0,018 p | ingen effekt |
+| Under 2,5 mål (O/U-marknaden) mot kryss | +0,148 (z 1,4, n 3309) | +0,214 (z 1,2, n 1848) | +0,035 (z 0,2, n 1461) | – | – | +0,026 p | ingen effekt |
 
 ## Situationer
 
@@ -71,6 +83,35 @@ Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (
 ## Stryktipset och Europatipset
 
 Inga matcher från ligan i de sparade backtesten ännu.
+
+## Tabell nu (FotMob, 2026-09-28)
+
+| # | Lag | M | V | O | F | Mål | +/− | P |
+|---|---|---|---|---|---|---|---|---|
+| 1 | Castellon | 7 | 6 | 1 | 0 | 14-2 | 12 | 19 |
+| 2 | Eibar | 7 | 6 | 0 | 1 | 15-6 | 9 | 18 |
+| 3 | Almeria | 7 | 5 | 0 | 2 | 11-4 | 7 | 15 |
+| 4 | Burgos | 7 | 4 | 2 | 1 | 11-7 | 4 | 14 |
+| 5 | Girona | 7 | 4 | 1 | 2 | 14-8 | 6 | 13 |
+| 6 | Mallorca | 7 | 4 | 1 | 2 | 8-3 | 5 | 13 |
+| 7 | Sabadell | 7 | 3 | 3 | 1 | 8-6 | 2 | 12 |
+| 8 | Oviedo | 7 | 3 | 2 | 2 | 7-4 | 3 | 11 |
+| 9 | Tenerife | 7 | 3 | 2 | 2 | 8-9 | -1 | 11 |
+| 10 | Leganes | 7 | 3 | 2 | 2 | 6-7 | -1 | 11 |
+| 11 | Las Palmas | 7 | 3 | 1 | 3 | 10-11 | -1 | 10 |
+| 12 | Sp Gijon | 7 | 3 | 1 | 3 | 5-6 | -1 | 10 |
+| 13 | Granada | 7 | 2 | 2 | 3 | 10-11 | -1 | 8 |
+| 14 | Sociedad B | 7 | 2 | 2 | 3 | 9-10 | -1 | 8 |
+| 15 | Celta B | 7 | 2 | 2 | 3 | 8-11 | -3 | 8 |
+| 16 | Valladolid | 7 | 2 | 2 | 3 | 6-9 | -3 | 8 |
+| 17 | Andorra | 7 | 2 | 0 | 5 | 12-15 | -3 | 6 |
+| 18 | Cordoba | 7 | 2 | 0 | 5 | 10-16 | -6 | 6 |
+| 19 | Eldense | 7 | 1 | 2 | 4 | 4-9 | -5 | 5 |
+| 20 | Cadiz | 7 | 0 | 4 | 3 | 7-10 | -3 | 4 |
+| 21 | Ceuta | 7 | 1 | 1 | 5 | 6-17 | -11 | 4 |
+| 22 | Albacete | 7 | 0 | 1 | 6 | 4-12 | -8 | 1 |
+
+Tabellhistorik (en rad per lag och dag sedan 2026-09-28): `data/ligor/LL2.json`.
 
 ## Lagfiler
 

@@ -71,3 +71,49 @@ Form (äldst → senast): VVVOFOVV · senaste match 2026-09-20
 | Estudiantes Rio Cuarto | 1 | 1-0-0 | 2–1 | +1,29 | −31 pe | 2026-04-24 2-1 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Jorge Almirón. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Axel Werner | GK | 30 | Argentina | 405 k€ | – | 0 | 0 | 0/0 |  |
+| 23 | Jeremías Ledesma | GK | 33 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 38 | Damián Fernández | LW | 22 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Sebastián Zaracho | CB | 27 | Paraguay | 357 k€ | – | 0 | 0 | 0/0 |  |
+| 3 | Agustín Sández | LB | 25 | Paraguay | 2,1 M€ | – | 0 | 0 | 0/0 |  |
+| 6 | Juan Cruz Komar | CB | 30 | Argentina | 449 k€ | – | 0 | 0 | 0/0 |  |
+| 13 | Gastón Ávila | CB,LB | 24 | Argentina | 2,7 M€ | – | 0 | 0 | 0/0 |  |
+| 15 | Facundo Mallo | CB | 31 | Uruguay | 637 k€ | – | 0 | 0 | 0/0 |  |
+| 24 | Juan Giménez | CB | 20 | Argentina | 2,1 M€ | – | 0 | 0 | 0/0 |  |
+| 32 | Emanuel Coronel | RB | 29 | Argentina | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| 33 | Alexis Soto | LB,LM,CB,LWB | 32 | Argentina | 626 k€ | – | 0 | 0 | 0/0 |  |
+| 35 | Lucas Ramos López | CDM | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 36 | Álvaro Güich | Defender | 17 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 41 | Leonardo Ríos | Defender | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 42 | Elías Verón | RB | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 46 | Ignacio Ovando | CB | 19 | Argentina | 5,1 M€ | – | 0 | 0 | 0/0 |  |
+| 47 | Luca Raffin | CB | 20 | Argentina | 552 k€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Franco Ibarra | CDM,CM | 25 | Argentina | 2,7 M€ | – | 0 | 0 | 0/0 |  |
+| 10 | Franco Cervi | CM | 32 | Argentina | 435 k€ | – | 0 | 0 | 0/0 |  |
+| 11 | Ángel Di María | CAM,ST,LW,RW | 38 | Argentina | 973 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | Santiago Segovia | CAM | 19 | Argentina | 757 k€ | – | 0 | 0 | 0/0 |  |
+| 20 | Vicente Pizarro | CDM,CAM,CM | 23 | Chile | 2,5 M€ | – | 0 | 0 | 0/0 |  |
+| 28 | Pol Fernández | CM,CAM,CDM | 34 | Argentina | 266 k€ | – | 0 | 0 | 0/0 |  |
+| 31 | Federico Navarro | CDM,CM | 26 | Argentina | 1,5 M€ | – | 0 | 0 | 0/0 |  |
+| 40 | Bautista Cantero | Midfielder | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 44 | Paolo Giaccone | Midfielder | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Marcelo Cabrera | Attacker | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 8 | Jaminton Campaz | LW,CAM,LM | 26 | Colombia | 2,3 M€ | – | 0 | 0 | 0/0 |  |
+| 16 | Tomás Badaloni | ST | 26 | Argentina | 2,7 M€ | – | 0 | 0 | 0/0 |  |
+| 18 | Julián Fernández | LW,RW,CAM | 22 | Argentina | 2,2 M€ | – | 0 | 0 | 0/0 |  |
+| 22 | Enzo Copetti | ST,LW | 30 | Argentina | 1,8 M€ | – | 0 | 0 | 0/0 |  |
+| 26 | Giovanni Cantizano | RW,LW | 19 | Argentina | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 27 | Gaspar Duarte | RW | 23 | Argentina | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 29 | Marco Ruben | ST | 39 | Argentina | 353 k€ | – | 0 | 0 | 0/0 |  |
+| 88 | Alan Rodríguez | RW,CDM,LM | 26 | Uruguay | 1,6 M€ | – | 0 | 0 | 0/0 |  |

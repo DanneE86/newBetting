@@ -60,3 +60,53 @@ Form (äldst → senast): FOVVOVVV · senaste match 2026-09-19
 | V-Varen Nagasaki | 1 | 1-0-0 | 3–0 | +0,98 | −23 pe | 2026-08-29 3-0 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Hiroshi Jofuku. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Matheus Vidotto | GK | 33 | Brazil | 178 k€ | 6,80 | 0 | 0 | 1/0 |  |
+| 21 | Yuya Nagasawa | GK | 30 | Japan | 126 k€ | – | 0 | 0 | 0/0 |  |
+| 31 | Hiroki Mawatari | GK | 32 | Japan | 169 k€ | – | 0 | 0 | 0/0 |  |
+| 41 | Keisuke Nakamura | Keeper | 21 | Japan | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Yu-Min Cho | CB | 29 | South Korea | 771 k€ | – | 0 | 0 | 0/0 |  |
+| 4 | Naoki Hayashi | CB | 28 | Japan | 309 k€ | 6,87 | 2 | 0 | 0/0 |  |
+| 5 | Ryota Inoue | CB | 26 | Japan | 245 k€ | 6,69 | 0 | 0 | 2/0 |  |
+| 6 | Kazuya Miyahara | CB | 30 | Japan | 211 k€ | 6,92 | 0 | 0 | 0/0 |  |
+| 15 | Kaito Suzuki | CB | 24 | Japan | 271 k€ | 6,35 | 0 | 0 | 1/0 |  |
+| 18 | Shuhei Mizoguchi | LB,LWB | 22 | Japan | 305 k€ | 6,77 | 1 | 1 | 2/0 |  |
+| 29 | Maaya Sako | CB | 23 | Japan | 251 k€ | 6,84 | 0 | 0 | 0/0 |  |
+| 35 | Shuto Tanabe | LB | 24 | Japan | 288 k€ | – | 0 | 0 | 0/0 |  |
+| 36 | Riku Matsuda | CB | 27 | Japan | 222 k€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 2 | Kai Shibato | CDM | 30 | Japan | 166 k€ | 6,37 | 0 | 0 | 0/0 |  |
+| 7 | Yuan Matsuhashi | CAM,RM,RWB | 24 | Japan | 272 k€ | 6,25 | 0 | 0 | 0/0 |  |
+| 8 | Kosuke Saito | CAM,CDM | 29 | Japan | 259 k€ | 6,37 | 0 | 0 | 0/0 |  |
+| 10 | Koki Morita | CDM,CM | 26 | Japan | 644 k€ | 6,36 | 0 | 0 | 0/0 |  |
+| 14 | Yuya Fukuda | CAM | 27 | Japan | 196 k€ | 6,37 | 0 | 0 | 2/0 |  |
+| 16 | Rei Hirakawa | CDM,CM | 26 | Japan | 343 k€ | 6,78 | 0 | 0 | 1/0 |  |
+| 20 | Soma Meshino | CDM | 25 | Japan | 199 k€ | 6,42 | 0 | 1 | 1/0 |  |
+| 22 | Yosuke Uchida | RWB | 24 | Japan | 293 k€ | 6,38 | 0 | 0 | 0/0 |  |
+| 24 | Shion Nakayama | CAM | 18 | Japan | – | 6,34 | 0 | 0 | 0/0 |  |
+| 25 | Issei Kumatoriya | CAM | 23 | Japan | 278 k€ | 6,21 | 0 | 0 | 0/0 |  |
+| 27 | Ryosuke Shirai | CAM | 21 | Japan | 340 k€ | 6,30 | 0 | 0 | 0/0 |  |
+| 28 | Joi Yamamoto | CDM | 20 | Japan | 315 k€ | 6,23 | 0 | 0 | 0/0 |  |
+| 40 | Yuta Arai | CAM,LWB,RWB | 23 | Japan | 381 k€ | 6,72 | 1 | 0 | 0/0 |  |
+| 42 | Kento Imai | RWB | 18 | Japan | – | – | 0 | 0 | 0/0 |  |
+| 55 | Taiju Yoshida | LWB | 26 | Japan | 226 k€ | – | 0 | 0 | 0/0 |  |
+| 71 | Hayato Hirao | CAM | 21 | Japan | 279 k€ | 6,36 | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Itsuki Someno | ST | 25 | Japan | 567 k€ | 6,37 | 0 | 1 | 0/0 |  |
+| 11 | Hiroto Yamami | ST | 27 | Japan | 229 k€ | – | 0 | 0 | 0/0 |  |
+| 13 | Goki Yamada | ST | 26 | Japan | 237 k€ | 5,55 | 0 | 0 | 0/0 |  |
+| 17 | Hyun-Woo Kim | ST | 24 | South Korea | 207 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | Kanya Fujimoto | LW | 27 | Japan | 1,4 M€ | – | 0 | 0 | 0/0 |  |
+| 30 | Gakuto Kawamura | Attacker | 20 | Japan | – | – | 0 | 0 | 0/0 |  |
+| 33 | Kazunari Ichimi | ST,CAM | 28 | Japan | 229 k€ | 6,55 | 0 | 1 | 1/0 |  |
+| 38 | Soma Kanda | ST | 20 | Japan | 455 k€ | 6,05 | 0 | 0 | 0/0 |  |
+| 45 | Shimon Teranuma | ST | 25 | Japan | 328 k€ | – | 0 | 0 | 0/0 |  |
+| 51 | Sota Ofuji | Attacker | 19 | Japan | – | – | 0 | 0 | 0/0 |  |

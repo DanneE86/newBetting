@@ -4,10 +4,12 @@ Genererad 2026-09-28. Ligans lärdomar: [LL](../../ligor/LL.md). "Mot marknaden"
 
 ## I korthet
 
-- Senaste 8: otur med −0,70 poäng per match mot xP. Marknaden prisar redan in det i ligan (ingen bekräftad effekt), så det är inget spel i sig.
-- Senaste 8: xG-målskillnaden är +0,78 per match bättre än målskillnaden.
+- Senaste 8: otur med −0,78 poäng per match mot xP. Marknaden prisar redan in det i ligan (ingen bekräftad effekt), så det är inget spel i sig.
+- Senaste 8: xG-målskillnaden är +0,84 per match bättre än målskillnaden.
 - 2025/26: −0,43 poäng per match mot marknaden. Ligan visar ingen persistens, så räkna inte med att det fortsätter.
 - Stark historik mot Getafe (−0,53 p/match mot marknaden, 16 möten), Real Madrid (−0,51 p/match mot marknaden, 15 möten), Vallecano (+0,55 p/match mot marknaden, 12 möten), Levante (+0,51 p/match mot marknaden, 10 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Utan Iñaki Williams (13 % av anfallet): 1,67 poäng per match mot 1,48 med (9 mot 73 matcher), mot marknaden +0,10 mot −0,12.
+- Utan Oihan Sancet (10 % av anfallet): 1,33 poäng per match mot 1,52 med (9 mot 73 matcher), mot marknaden −0,28 mot −0,08.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -15,8 +17,8 @@ Form (äldst → senast): OFFFVVOO · senaste match 2026-09-19
 
 | Mått | Värde |
 |---|---|
-| Tur (poäng − xP per match) | −0,70 |
-| xG-målskillnad − målskillnad | +0,78 |
+| Tur (poäng − xP per match) | −0,78 |
+| xG-målskillnad − målskillnad | +0,84 |
 | Poäng mot marknaden per match | −0,32 |
 
 ## Säsonger
@@ -32,9 +34,22 @@ Form (äldst → senast): OFFFVVOO · senaste match 2026-09-19
 | 2023/24 | LL | 38 | 1,79 | +0,08 (+0,27 / −0,10) | 29 % (26 %) | 1,61–0,97 | 1,62–1,11 | 1,62 |
 | 2024/25 | LL | 38 | 1,84 | +0,25 (+0,18 / +0,33) | 34 % (28 %) | 1,42–0,76 | 1,57–1,12 | 1,61 |
 | 2025/26 | LL | 38 | 1,18 | −0,43 (−0,18 / −0,67) | 16 % (28 %) | 1,13–1,53 | 1,46–1,24 | 1,50 |
-| 2026/27 | LL | 6 | 1,33 | −0,28 (−0,61 / +0,39) | 33 % (24 %) | 1,17–1,00 | 1,67–1,15* | 1,79 |
+| 2026/27 | LL | 6 | 1,33 | −0,28 (−0,61 / +0,39) | 33 % (24 %) | 1,17–1,00 | 1,88–1,28 | 1,90 |
 
-\* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+## Nyckelspelare (Understat, 2024/25–)
+
+Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
+
+| Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
+|---|---|---|---|---|
+| Iñaki Williams | 13 % | 9 / 73 | 1,67 / 1,48 | +0,10 / −0,12 |
+| Gorka Guruzeta | 11 % | 1 / 81 | 1,00 / 1,51 | −1,02 / −0,09 |
+| Oihan Sancet | 10 % | 9 / 73 | 1,33 / 1,52 | −0,28 / −0,08 |
+| Alex Berenguer | 9 % | 5 / 77 | 2,40 / 1,44 | +0,58 / −0,14 |
+| Nico Williams | 8 % | 17 / 65 | 1,47 / 1,51 | −0,01 / −0,12 |
+| Roberto Navarro | 6 % | 3 / 79 | 1,00 / 1,52 | −0,31 / −0,09 |
+
+Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -76,3 +91,45 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-12-14 | Europa 2531 | Celta de Vigo - Athletic Bilbao | 1 | 33 % | 36 % |
 | 2025-08-31 | Europa 2501 | Real Betis - Athletic Bilbao | 2 ✓ | 43 % | 39 % |
 | 2025-08-17 | Europa 2497 | Athletic Bilbao - Sevilla | 1 ✓ | 69 % | 58 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Edin Terzić. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Unai Eguiluz (skadad, åter Mid January 2027), Daniel Vivian (skadad, åter Early October 2026), Gorka Guruzeta (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Unai Simón | GK | 29 | Spain | 18,6 M€ | 7,08 | 0 | 0 | 0/0 |  |
+| 13 | Álex Padilla | GK | 23 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Unai Eguiluz | CB | 24 | Spain | 586 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid January 2027 |
+| 3 | Daniel Vivian | CB,RB | 27 | Spain | 27,0 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 4 | Aitor Paredes | CB | 26 | Spain | 13,5 M€ | 7,41 | 1 | 0 | 0/0 |  |
+| 5 | Yeray Álvarez | CB | 31 | Spain | 1,2 M€ | 6,93 | 0 | 1 | 0/0 |  |
+| 12 | Jesús Areso | RB | 27 | Spain | 5,9 M€ | 6,67 | 0 | 0 | 1/0 |  |
+| 14 | Aymeric Laporte | CB | 32 | Spain | 4,3 M€ | 6,95 | 0 | 0 | 0/0 |  |
+| 15 | Hugo Rincón | RB | 23 | Spain | 2,1 M€ | 6,03 | 0 | 0 | 0/0 |  |
+| 17 | Yuri Berchiche | LB,CB | 36 | Spain | 768 k€ | 7,17 | 0 | 0 | 2/1 |  |
+| 31 | Johaneko Louisjean | LB | 22 | France | 180 k€ | 6,83 | 0 | 0 | 1/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Beñat Prados | CDM | 25 | Spain | 15,6 M€ | – | 0 | 0 | 0/0 |  |
+| 8 | Oihan Sancet | CAM | 26 | Spain | 35,0 M€ | 6,97 | 1 | 0 | 0/0 |  |
+| 16 | Íñigo Ruíz de Galarreta | CDM | 33 | Spain | 1,1 M€ | 7,29 | 0 | 1 | 2/0 |  |
+| 18 | Mikel Jauregizar | CDM | 22 | Spain | 31,7 M€ | 6,59 | 0 | 0 | 0/0 |  |
+| 20 | Alejandro Rego | CDM | 23 | Spain | 1,9 M€ | – | 0 | 0 | 0/0 |  |
+| 24 | Beñat Gerenabarrena | CM,CDM,RB | 23 | Spain | 888 k€ | 6,85 | 0 | 0 | 2/0 |  |
+| 25 | Álvaro Djaló | RW,CAM,RM,LM | 27 | Guinea-Bissau | 2,2 M€ | – | 0 | 0 | 0/0 |  |
+| 28 | Peio Canales | CAM,CDM | 21 | Spain | 2,1 M€ | 6,55 | 0 | 0 | 0/0 |  |
+| 44 | Selton Sánchez | CAM | 19 | Spain | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Asier Hierro | Attacker | 21 | Spain | 927 k€ | – | 0 | 0 | 0/0 |  |
+|  | Efe Korkut | LW | 20 | Turkiye | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 7 | Alex Berenguer | RW,LW,CAM | 31 | Spain | 2,8 M€ | 6,80 | 1 | 1 | 1/0 |  |
+| 9 | Iñaki Williams | RW,ST,LW | 32 | Ghana | 12,6 M€ | 6,71 | 1 | 2 | 0/0 |  |
+| 10 | Nico Williams | LW | 24 | Spain | 67,3 M€ | 6,99 | 1 | 0 | 0/0 |  |
+| 11 | Gorka Guruzeta | ST,CAM | 30 | Spain | 3,6 M€ | 6,11 | 0 | 0 | 2/0 | skadad, åter Early October 2026 |
+| 21 | Maroan Sannadi | ST | 25 | Morocco | 3,6 M€ | 6,25 | 0 | 0 | 0/0 |  |
+| 22 | Nico Serrano | RW | 23 | Spain | 1,5 M€ | – | 0 | 0 | 0/0 |  |
+| 23 | Robert Navarro | LW,RW | 24 | Spain | 4,7 M€ | 7,42 | 2 | 0 | 1/0 |  |

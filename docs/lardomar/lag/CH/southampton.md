@@ -28,7 +28,7 @@ Form (äldst → senast): FVVOOVVF · senaste match 2026-09-19
 | 2020/21 | PL | 38 | 1,13 | −0,12 (+0,08 / −0,31) | 18 % (26 %) | 1,24–1,79 | 1,19–1,54 | 1,21 |
 | 2021/22 | PL | 38 | 1,05 | −0,10 (−0,07 / −0,14) | 34 % (25 %) | 1,13–1,76 | 1,25–1,70 | 1,17 |
 | 2022/23 | PL | 38 | 0,66 | −0,34 (−0,54 / −0,14) | 18 % (24 %) | 0,95–1,92 | 1,03–1,66 | 1,01 |
-| 2023/24 | CH | 46 | 1,89 | +0,06 (+0,04 / +0,08) | 20 % (23 %) | 1,89–1,37 | 1,83–1,26* | 1,72 |
+| 2023/24 | CH | 46 | 1,89 | +0,06 (+0,04 / +0,08) | 20 % (23 %) | 1,89–1,37 | 1,84–1,26* | 1,72 |
 | 2024/25 | PL | 38 | 0,32 | −0,45 (−0,58 / −0,33) | 16 % (21 %) | 0,68–2,26 | 1,02–2,59 | 0,68 |
 | 2025/26 | CH | 46 | 1,74 | +0,07 (+0,07 / +0,07) | 30 % (25 %) | 1,78–1,22 | 1,71–1,33* | 1,61 |
 | 2026/27 | CH | 8 | 1,75 | +0,16 (+1,16 / −0,84) | 25 % (25 %) | 2,38–1,25 | 1,75–1,51* | 1,54 |
@@ -89,3 +89,41 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-08-29 | Stryk 4968 | Southampton - Millwall | 1 ✓ | 58 % | 47 % |
 | 2026-08-22 | Stryk 4967 | Southampton - Stoke | 1 ✓ | 70 % | 58 % |
 | 2026-01-01 | Europa 2536 | Southampton - Millwall | X | 62 % | 50 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Tonda Eckert. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Caspar Jander (osäker)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+|  | Aaron Ramsdale | GK | 28 | England | 11,1 M€ | – | 0 | 0 | 0/0 |  |
+| 1 | Daniel Peretz | GK | 26 | Israel | 2,5 M€ | 6,93 | 0 | 0 | 0/0 |  |
+| 25 | George Long | GK | 32 | England | 391 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 3 | Ryan Manning | LB,LWB,LM | 30 | Ireland | 1,6 M€ | 7,23 | 1 | 1 | 3/0 |  |
+| 5 | Jack Stephens | CB | 32 | England | 949 k€ | 6,23 | 0 | 0 | 0/0 |  |
+| 6 | Zach Abbott | RB,CB,CDM | 20 | England | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 13 | Keven Schlotterbeck | CB | 29 | Germany | 2,5 M€ | 7,28 | 1 | 0 | 0/0 |  |
+| 14 | James Bree | RB,RW,RWB | 28 | England | 2,0 M€ | 6,98 | 0 | 1 | 2/0 |  |
+| 15 | Nathan Wood | CB | 24 | England | 5,4 M€ | 7,07 | 0 | 0 | 2/0 |  |
+| 34 | Welington | LB,LWB | 25 | Brazil | 2,4 M€ | 8,04 | 1 | 0 | 0/0 |  |
+| 39 | Joachim Kayi Sanda | CB | 19 | France | 1,8 M€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 2 | Mads Roerslev | RM | 27 | Denmark | 2,9 M€ | – | 0 | 0 | 0/0 |  |
+| 4 | Flynn Downes | CDM,CM | 27 | England | 7,0 M€ | 7,27 | 0 | 2 | 3/0 |  |
+| 10 | Finn Azaz | CAM,RW,LW | 26 | Ireland | 15,7 M€ | 7,59 | 3 | 4 | 0/0 |  |
+| 20 | Caspar Jander | CDM,CM,CAM | 23 | Germany | 11,5 M€ | – | 0 | 0 | 0/0 | osäker |
+| 26 | Cameron Bragg | CDM,CM | 21 | England | 873 k€ | 6,97 | 0 | 1 | 0/0 |  |
+| 29 | Romeo Akachukwu | CM,ST,CAM,LW | 20 | Ireland | 141 k€ | – | 0 | 0 | 0/0 |  |
+| 30 | James Ward-Prowse | CDM,CM | 31 | England | 3,0 M€ | 7,23 | 1 | 1 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Léo Scienza | LW,CAM,LM | 28 | Brazil | 3,0 M€ | 7,53 | 2 | 2 | 0/0 |  |
+| 9 | Cyle Larin | ST,CAM | 31 | Canada | 1,8 M€ | 7,52 | 7 | 0 | 2/0 |  |
+| 11 | Lewis Dobbin | ST,CAM,LW | 23 | England | 2,6 M€ | 6,40 | 0 | 0 | 0/0 |  |
+| 18 | Tom Fellows | RW,RWB,RM | 23 | England | 7,9 M€ | 6,53 | 1 | 0 | 1/0 |  |
+| 23 | Samuel Edozie | LW | 23 | England | 3,0 M€ | 6,39 | 0 | 1 | 0/0 |  |
+| 27 | Kuryu Matsuki | RW,CAM,CDM | 23 | Japan | 2,5 M€ | 7,09 | 1 | 1 | 0/0 |  |
+| 28 | Divin Mubama | ST | 21 | England | 4,6 M€ | 6,28 | 1 | 1 | 1/0 |  |

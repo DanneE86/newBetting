@@ -50,3 +50,50 @@ Form (äldst → senast): FFFFOFFO · senaste match 2026-09-19
 | Go Ahead Eagles | 1 | 0-0-1 | 1–3 | −0,86 | −23 pe | 2026-08-23 1-3 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Robin Peter. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Cameron Peupion (skadad, åter Late September 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Kilian Nikièma | GK | 23 | Burkina Faso | 942 k€ | 6,78 | 0 | 0 | 0/0 |  |
+| 20 | Caleb Kramer | Keeper | 20 | Netherlands | – | – | 0 | 0 | 0/0 |  |
+| 23 | Niclas Thiede | GK | 27 | Germany | 237 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Sky Heesen | Defender | 20 | Netherlands | – | – | 0 | 0 | 0/0 |  |
+| 2 | Othniël Raterink | RB | 20 | Netherlands | 1,7 M€ | 6,44 | 0 | 0 | 0/0 |  |
+| 3 | Pascal Mulder | CB | 27 | Netherlands | 230 k€ | 6,57 | 0 | 0 | 1/0 |  |
+| 4 | Matteo Waem | CB | 26 | Belgium | 759 k€ | 6,52 | 0 | 0 | 1/0 |  |
+| 5 | Jonas Jensen-Abbew | CB | 24 | Denmark | 768 k€ | 6,36 | 0 | 0 | 0/0 |  |
+| 5 | Mees Kreekels | LB,RB | 24 | Netherlands | 217 k€ | – | 0 | 0 | 0/0 |  |
+| 15 | Milan Hokke | CB,LB,RB | 22 | Netherlands | 450 k€ | 6,71 | 0 | 1 | 0/0 |  |
+| 18 | Sékou Sylla | LB,LW | 27 | Guinea | 369 k€ | 6,20 | 1 | 0 | 1/0 |  |
+| 22 | Lasse Wilhelm | CB | 23 | Germany | 665 k€ | 6,32 | 0 | 0 | 0/0 |  |
+| 31 | Devyn Payne | Defender | 21 | USA | – | – | 0 | 0 | 0/0 |  |
+| 35 | Sanyika Bergtop | LB | 19 | Suriname | 631 k€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 8 | Jan Žambůrek | CM,CDM | 25 | Czechia | 563 k€ | 6,32 | 0 | 0 | 0/0 |  |
+| 11 | Evan Rottier | CAM,ST,CM,LW | 24 | Netherlands | 436 k€ | 6,86 | 1 | 2 | 2/0 |  |
+| 14 | Mylian Jiménez | CDM,CM,CAM | 23 | Netherlands | 366 k€ | 6,70 | 0 | 0 | 1/0 |  |
+| 16 | Finn de Bruin | CM | 22 | Netherlands | 359 k€ | 6,54 | 0 | 1 | 1/0 |  |
+| 17 | Jalen Hawkings | RW,CM | 25 | USA | 375 k€ | 6,28 | 0 | 0 | 1/0 |  |
+| 25 | Juho Kilo | CDM,CM | 24 | Finland | 1,1 M€ | 7,01 | 0 | 1 | 2/0 |  |
+| 30 | Joey Brandt | Midfielder | 21 | Netherlands | – | – | 0 | 0 | 0/0 |  |
+| 33 | Matěj Sín | CM,CAM,RW | 22 | Czechia | 2,5 M€ | 6,87 | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+|  | Alex Pozo | RW,RB | 27 | Spain | 914 k€ | – | 0 | 0 | 0/0 |  |
+|  | Jaynilson Geoffery | Attacker | 20 | Netherlands | – | – | 0 | 0 | 0/0 |  |
+| 7 | Daryl van Mieghem | RW,RM | 36 | Netherlands | 159 k€ | 6,21 | 0 | 0 | 0/0 |  |
+| 9 | Jesse Bal | ST | 19 | Netherlands | 919 k€ | 6,23 | 1 | 0 | 0/0 |  |
+| 10 | Illaijh de Ruijter | RW,LW | 20 | Netherlands | 1,0 M€ | 6,09 | 0 | 0 | 0/0 |  |
+| 19 | Luka Reischl | ST | 22 | Austria | 1,2 M€ | 6,23 | 0 | 0 | 0/0 |  |
+| 21 | Cameron Peupion | LW,RW | 24 | Australia | 549 k€ | – | 0 | 0 | 0/0 | skadad, åter Late September 2026 |
+| 27 | Nigel Thomas | LW,RW,LM | 25 | Netherlands | 303 k€ | 6,73 | 1 | 1 | 1/0 |  |
+| 32 | Dani van Leonen | Attacker | 19 | Netherlands | – | – | 0 | 0 | 0/0 |  |
+| 33 | Issac Dijkhuizen | Attacker | 22 | Netherlands | – | – | 0 | 0 | 0/0 |  |
+| 46 | Yannick Eduardo | ST | 20 | Czechia | 695 k€ | 6,69 | 2 | 1 | 0/0 |  |
+| 77 | Donat Barany | ST | 26 | Hungary | 805 k€ | 6,35 | 1 | 0 | 0/0 |  |

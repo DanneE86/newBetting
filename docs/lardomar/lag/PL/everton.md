@@ -5,6 +5,7 @@ Genererad 2026-09-28. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden"
 ## I korthet
 
 - Stark historik mot Crystal Palace (+0,62 p/match mot marknaden, 17 möten), Chelsea (+0,56 p/match mot marknaden, 16 möten), Aston Villa (−0,75 p/match mot marknaden, 14 möten), Nott'm Forest (+0,74 p/match mot marknaden, 8 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Utan Kiernan Dewsbury-Hall (12 % av anfallet): 1,33 poäng per match mot 1,31 med (6 mot 75 matcher), mot marknaden +0,16 mot +0,17.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -12,8 +13,8 @@ Form (äldst → senast): OFFVOOOV · senaste match 2026-09-19
 
 | Mått | Värde |
 |---|---|
-| Tur (poäng − xP per match) | −0,07 |
-| xG-målskillnad − målskillnad | −0,10 |
+| Tur (poäng − xP per match) | −0,05 |
+| xG-målskillnad − målskillnad | −0,14 |
 | Poäng mot marknaden per match | −0,09 |
 
 ## Säsonger
@@ -29,9 +30,22 @@ Form (äldst → senast): OFFVOOOV · senaste match 2026-09-19
 | 2023/24 | PL | 38 | 1,26 | +0,04 (+0,05 / +0,03) | 24 % (26 %) | 1,05–1,34 | 1,60–1,59 | 1,38 |
 | 2024/25 | PL | 38 | 1,26 | +0,20 (−0,09 / +0,49) | 39 % (26 %) | 1,11–1,16 | 1,23–1,41 | 1,27 |
 | 2025/26 | PL | 38 | 1,29 | +0,06 (−0,20 / +0,32) | 26 % (27 %) | 1,24–1,32 | 1,31–1,58 | 1,24 |
-| 2026/27 | PL | 5 | 1,80 | +0,77 (+0,87 / +0,63) | 60 % (26 %) | 1,20–0,60 | 1,68–1,39* | 1,57 |
+| 2026/27 | PL | 5 | 1,80 | +0,77 (+0,87 / +0,63) | 60 % (26 %) | 1,20–0,60 | 1,67–1,44 | 1,54 |
 
-\* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+## Nyckelspelare (Understat, 2024/25–)
+
+Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
+
+| Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
+|---|---|---|---|---|
+| Thierno Barry | 15 % | 0 / 81 | – / 1,31 | – / +0,17 |
+| Kiernan Dewsbury-Hall | 12 % | 6 / 75 | 1,33 / 1,31 | +0,16 / +0,17 |
+| Beto | 9 % | 3 / 78 | 2,33 / 1,27 | +1,32 / +0,12 |
+| Iliman Ndiaye | 8 % | 12 / 69 | 1,50 / 1,28 | +0,32 / +0,14 |
+| Brennan Johnson | 7 % | 0 / 81 | – / 1,31 | – / +0,17 |
+| James Garner | 6 % | 0 / 81 | – / 1,31 | – / +0,17 |
+
+Ligans test av frånvaro mot marknaden: svag signal (inte bekräftad). Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -92,3 +106,39 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-10-26 | Europa 2517 | Everton - Tottenham | 2 | 45 % | 43 % |
 | 2025-10-05 | Europa 2511 | Everton - Crystal Palace | 1 ✓ | 35 % | 37 % |
 | 2025-08-24 | Europa 2499 | Everton - Brighton | 1 ✓ | 32 % | 32 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: David Moyes. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Merlin Röhl (osäker), Christian Nørgaard (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Jordan Pickford | GK | 32 | England | 14,4 M€ | 7,42 | 0 | 0 | 0/0 |  |
+| 12 | Mark Travers | GK | 27 | Ireland | 3,1 M€ | – | 0 | 0 | 0/0 |  |
+| 31 | Tom King | GK | 31 | Wales | 627 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Ainsley Maitland-Niles | RB,RWB,RM | 29 | England | 6,6 M€ | 7,41 | 1 | 0 | 0/0 |  |
+| 4 | Jarrad Branthwaite | CB,LB | 24 | England | 30,2 M€ | 7,23 | 0 | 0 | 0/0 |  |
+| 5 | Michael Keane | CB | 33 | England | 2,0 M€ | – | 0 | 0 | 0/0 |  |
+| 6 | James Tarkowski | CB | 33 | England | 5,7 M€ | 7,81 | 1 | 1 | 0/0 |  |
+| 15 | Jake O'Brien | RB,CB | 25 | Ireland | 17,9 M€ | 6,18 | 0 | 0 | 0/0 |  |
+| 16 | Vitaliy Mykolenko | LB | 27 | Ukraine | 18,5 M€ | 7,48 | 0 | 0 | 1/0 |  |
+| 34 | Merlin Röhl | RB,RW,CDM | 24 | Germany | 13,7 M€ | 6,94 | 0 | 0 | 1/0 | osäker |
+| | **Mittfältare** | | | | | | | | | |
+| 8 | Kiernan Dewsbury-Hall | CAM,CDM | 28 | England | 35,5 M€ | 7,52 | 1 | 0 | 1/0 |  |
+| 23 | Christian Nørgaard | CDM,CM,CB | 32 | Denmark | 3,4 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 24 | Charly Alcaraz | CAM | 23 | Argentina | 13,3 M€ | – | 0 | 0 | 1/0 |  |
+| 30 | Hayden Hackney | CDM,CM,CAM,LW | 24 | England | 20,7 M€ | 6,62 | 0 | 1 | 0/0 |  |
+| 37 | James Garner | CDM,RB | 25 | England | 30,5 M€ | 7,10 | 0 | 0 | 2/0 |  |
+| 45 | Harrison Armstrong | CM,CDM,CAM,RW | 19 | England | 4,8 M€ | 6,92 | 0 | 1 | 2/0 |  |
+| 76 | Malik Olayiwola | CAM | 17 | England | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 10 | Jack Grealish | LW | 31 | England | 14,5 M€ | 6,94 | 0 | 0 | 0/0 |  |
+| 11 | Thierno Barry | ST | 23 | France | 27,0 M€ | 7,13 | 2 | 0 | 0/0 |  |
+| 19 | Tyrique George | LW,ST | 20 | England | 19,9 M€ | 7,04 | 1 | 0 | 0/0 |  |
+| 20 | Tyler Dibling | RW | 20 | England | 29,3 M€ | 6,39 | 0 | 0 | 0/0 |  |
+| 22 | Brennan Johnson | RW,CAM,LW,RWB | 25 | Wales | 31,8 M€ | 6,65 | 0 | 0 | 1/0 |  |
+| 58 | Braiden Graham | LW,ST,CAM,RW | 18 | Northern Ireland | 501 k€ | – | 0 | 0 | 0/0 |  |

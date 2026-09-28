@@ -12,8 +12,8 @@ Form (äldst → senast): VVOFFOFO · senaste match 2026-09-19
 
 | Mått | Värde |
 |---|---|
-| Tur (poäng − xP per match) | −0,30 |
-| xG-målskillnad − målskillnad | +0,23 |
+| Tur (poäng − xP per match) | −0,40 |
+| xG-målskillnad − målskillnad | +0,33 |
 | Poäng mot marknaden per match | −0,06 |
 
 ## Säsonger
@@ -29,9 +29,22 @@ Form (äldst → senast): VVOFFOFO · senaste match 2026-09-19
 | 2023/24 | SA | 38 | 1,79 | +0,42 (+0,49 / +0,35) | 37 % (28 %) | 1,42–0,84 | 1,42–1,04 | 1,59 |
 | 2024/25 | SA | 38 | 1,63 | +0,13 (+0,26 / −0,00) | 37 % (29 %) | 1,50–1,24 | 1,50–1,09 | 1,59 |
 | 2025/26 | SA | 38 | 1,47 | +0,01 (−0,44 / +0,45) | 21 % (28 %) | 1,29–1,21 | 1,32–1,34 | 1,38 |
-| 2026/27 | SA | 5 | 0,40 | −1,06 (−0,98 / −1,18) | 40 % (28 %) | 0,60–1,20 | 1,30–1,24* | 1,40 |
+| 2026/27 | SA | 5 | 0,40 | −1,06 (−0,98 / −1,18) | 40 % (28 %) | 0,60–1,20 | 1,43–1,21 | 1,55 |
 
-\* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+## Nyckelspelare (Understat, 2024/25–)
+
+Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
+
+| Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
+|---|---|---|---|---|
+| Roberto Piccoli | 13 % | 0 / 81 | – / 1,48 | – / −0,00 |
+| Artem Dovbyk | 10 % | 1 / 80 | 1,00 / 1,49 | −0,73 / +0,01 |
+| Federico Bernardeschi | 10 % | 7 / 74 | 0,71 / 1,55 | −0,60 / +0,06 |
+| Riccardo Orsolini | 9 % | 8 / 73 | 1,63 / 1,47 | +0,37 / −0,04 |
+| Santiago Castro | 8 % | 0 / 81 | – / 1,48 | – / −0,00 |
+| Jonathan Rowe | 7 % | 3 / 78 | 1,33 / 1,49 | −0,53 / +0,02 |
+
+Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -84,3 +97,45 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-10-19 | Europa 2515 | Cagliari - Bologna | 2 ✓ | 54 % | 46 % |
 | 2025-09-28 | Europa 2509 | Lecce - Bologna | X | 55 % | 52 % |
 | 2025-09-14 | Europa 2505 | Milan - Bologna | 1 | 18 % | 21 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Raffaele Palladino. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Emil Holm (skadad, åter Late December 2026), Jens Odgaard (skadad, åter Late November 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+|  | Francesco Raffaelli | Keeper | 21 | Italy | 150 k€ | – | 0 | 0 | 0/0 |  |
+| 1 | Łukasz Skorupski | GK | 35 | Poland | 1,4 M€ | 6,15 | 0 | 0 | 0/0 |  |
+| 25 | Massimo Pessina | GK | 18 | Italy | 1,7 M€ | 6,32 | 0 | 0 | 0/0 |  |
+| 72 | Ukko Happonen | Keeper | 19 | Finland | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Emil Holm | RB | 26 | Sweden | 10,0 M€ | 7,15 | 0 | 0 | 1/0 | skadad, åter Late December 2026 |
+| 3 | Arthur Theate | CB,LB | 26 | Belgium | 16,6 M€ | 6,83 | 0 | 0 | 0/0 |  |
+| 5 | Eivind Helland | CB | 21 | Norway | 5,2 M€ | 6,88 | 0 | 0 | 0/0 |  |
+| 14 | Torbjørn Heggem | CB | 27 | Norway | 10,7 M€ | 6,71 | 0 | 0 | 1/0 |  |
+| 16 | Nicolò Casale | CB | 28 | Italy | 2,5 M€ | – | 0 | 0 | 0/0 |  |
+| 20 | Nadir Zortea | RB | 27 | Italy | 5,5 M€ | 6,20 | 0 | 0 | 0/0 |  |
+| 23 | Rahim Bonkano | LB | 24 | Niger | 1,5 M€ | 6,92 | 0 | 0 | 0/0 |  |
+| 29 | Lorenzo De Silvestri | RB | 38 | Italy | 283 k€ | 6,56 | 0 | 0 | 0/0 |  |
+| 33 | Juan Miranda | LB | 26 | Spain | 10,7 M€ | 7,27 | 0 | 1 | 0/0 |  |
+| 41 | Martin Vitík | CB | 23 | Czechia | 10,0 M€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 4 | Tommaso Pobega | CDM,CM | 27 | Italy | 6,8 M€ | 6,53 | 0 | 0 | 0/0 |  |
+| 6 | Nikola Moro | CDM,CM | 28 | Croatia | 3,5 M€ | 6,37 | 0 | 0 | 0/0 |  |
+| 8 | Mikel Amondarain | CDM,CM,CAM,RW,RM | 21 | Argentina | 1,7 M€ | 6,10 | 0 | 0 | 1/0 |  |
+| 17 | Oussama El Azzouzi | CM | 25 | Morocco | 1,1 M€ | 6,56 | 0 | 0 | 1/0 |  |
+| 18 | Marco Libra | CDM | 18 | Venezuela | – | 6,34 | 0 | 0 | 0/0 |  |
+| 19 | Lewis Ferguson | CDM,CM,CAM | 27 | Scotland | 14,0 M€ | 7,11 | 0 | 0 | 0/0 |  |
+| 21 | Jens Odgaard | CAM | 27 | Denmark | 10,7 M€ | 6,09 | 0 | 0 | 1/0 | skadad, åter Late November 2026 |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Riccardo Orsolini | RW | 29 | Italy | 12,7 M€ | 6,25 | 0 | 0 | 0/0 |  |
+| 9 | Artem Dovbyk | ST | 29 | Ukraine | 19,2 M€ | 6,26 | 1 | 0 | 1/0 |  |
+| 10 | Federico Bernardeschi | RW,LW,CAM | 32 | Italy | 1,7 M€ | 6,93 | 1 | 0 | 0/0 |  |
+| 11 | Samuel Mbangula | LW,LM,CAM | 22 | Belgium | 10,3 M€ | – | 0 | 0 | 0/0 |  |
+| 22 | Jay Enem | ST | 23 | Netherlands | 1,9 M€ | – | 0 | 0 | 0/0 |  |
+| 28 | Nicolò Cambiaghi | LW | 25 | Italy | 12,3 M€ | 6,62 | 0 | 0 | 1/0 |  |
+| 74 | Simone Negri | Attacker | 18 | Italy | 858 k€ | – | 0 | 0 | 0/0 |  |
+| 91 | Roberto Piccoli | ST | 25 | Italy | 12,1 M€ | 6,44 | 1 | 0 | 1/0 |  |

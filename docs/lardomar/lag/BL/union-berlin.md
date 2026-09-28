@@ -12,15 +12,15 @@ Form (äldst → senast): FOVVOFFF · senaste match 2026-09-18
 
 | Mått | Värde |
 |---|---|
-| Tur (poäng − xP per match) | −0,13 |
-| xG-målskillnad − målskillnad | +0,29 |
+| Tur (poäng − xP per match) | +0,04 |
+| xG-målskillnad − målskillnad | −0,14 |
 | Poäng mot marknaden per match | +0,02 |
 
 ## Säsonger
 
 | Säsong | Liga | M | P/M | Mot marknaden (hemma / borta) | Kryss (odds) | Mål för–emot | xG för–emot | xP/M |
 |---|---|---|---|---|---|---|---|---|
-| 2017/18 | BL2 | 34 | 1,38 | −0,20 (−0,16 / −0,24) | 32 % (27 %) | 1,59–1,35 | 1,62–1,38* | 1,52 |
+| 2017/18 | BL2 | 34 | 1,38 | −0,20 (−0,16 / −0,24) | 32 % (27 %) | 1,59–1,35 | 1,63–1,38* | 1,52 |
 | 2018/19 | BL2 | 34 | 1,68 | +0,20 (+0,44 / −0,05) | 44 % (27 %) | 1,59–0,97 | 1,69–1,28* | 1,64 |
 | 2019/20 | BL | 34 | 1,21 | +0,06 (+0,33 / −0,21) | 15 % (25 %) | 1,21–1,71 | 1,22–1,62 | 1,19 |
 | 2020/21 | BL | 34 | 1,47 | +0,24 (+0,48 / −0,01) | 41 % (27 %) | 1,47–1,26 | 1,35–1,28 | 1,49 |
@@ -29,9 +29,24 @@ Form (äldst → senast): FOVVOFFF · senaste match 2026-09-18
 | 2023/24 | BL | 34 | 0,97 | −0,31 (−0,16 / −0,46) | 18 % (26 %) | 0,97–1,71 | 1,32–1,66 | 1,19 |
 | 2024/25 | BL | 34 | 1,18 | −0,06 (−0,20 / +0,09) | 29 % (26 %) | 1,03–1,50 | 1,26–1,52 | 1,26 |
 | 2025/26 | BL | 34 | 1,15 | −0,11 (−0,10 / −0,12) | 26 % (26 %) | 1,29–1,71 | 1,42–1,65 | 1,36 |
-| 2026/27 | BL | 4 | 0,25 | −0,69 (−0,92 / −0,45) | 25 % (19 %) | 1,00–4,25 | 1,49–2,63* | 0,95 |
+| 2026/27 | BL | 4 | 0,25 | −0,69 (−0,92 / −0,45) | 25 % (19 %) | 1,00–4,25 | 1,23–3,21 | 0,61 |
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+
+## Nyckelspelare (Understat, 2024/25–)
+
+Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
+
+| Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
+|---|---|---|---|---|
+| Andrej Ilic | 12 % | 1 / 71 | 3,00 / 1,08 | +1,67 / −0,14 |
+| Leopold Querfeld | 8 % | 2 / 70 | 2,00 / 1,09 | +0,78 / −0,14 |
+| Tim Skarke | 7 % | 0 / 72 | – / 1,11 | – / −0,11 |
+| Oliver Burke | 6 % | 2 / 70 | 1,50 / 1,10 | +0,68 / −0,14 |
+| Derrick Köhn | 5 % | 6 / 66 | 0,33 / 1,18 | −0,61 / −0,07 |
+| Tom Rothe | 5 % | 6 / 66 | 1,67 / 1,06 | +0,40 / −0,16 |
+
+Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -64,3 +79,46 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-01-18 | Europa 2541 | Stuttgart - Union Berlin | X | 12 % | 18 % |
 | 2025-11-23 | Europa 2525 | St. Pauli - Union Berlin | 2 ✓ | 33 % | 33 % |
 | 2025-09-28 | Europa 2509 | Union Berlin - Hamburg | X | 58 % | 47 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Mauro Lustrinelli. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Andrik Markgraf (skadad, åter Early March 2027), Marvin Friedrich (skadad, åter Early October 2026), Josip Juranović (skadad, åter About 1-2 weeks), Stanley N'Soki (skadad, åter Early October 2026), Oliver Burke (skadad, åter Mid October 2026), Andrej Ilić (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Frederik Rønnow | GK | 34 | Denmark | 1,3 M€ | 5,82 | 0 | 0 | 0/0 |  |
+| 25 | Carl Klaus | GK | 32 | Germany | 308 k€ | – | 0 | 0 | 0/0 |  |
+| 31 | Matheo Raab | GK | 27 | Germany | 309 k€ | 4,90 | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Felix Uduokhai | CB | 29 | Germany | 1,9 M€ | 5,89 | 0 | 0 | 3/0 |  |
+| 3 | Andrik Markgraf | Defender | 20 | Germany | 228 k€ | – | 0 | 0 | 0/0 | skadad, åter Early March 2027 |
+| 4 | Zeno Van Den Bosch | CB | 23 | Belgium | 5,6 M€ | 5,72 | 0 | 0 | 2/0 |  |
+| 5 | Marvin Friedrich | CB | 30 | Germany | 938 k€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 14 | Leopold Querfeld | CB | 22 | Austria | 13,8 M€ | 6,53 | 1 | 1 | 0/0 |  |
+| 15 | Tom Rothe | LB,LM,CB,LWB | 21 | Germany | 9,7 M€ | 6,10 | 0 | 1 | 0/0 |  |
+| 18 | Josip Juranović | RB,LWB | 31 | Croatia | 1,2 M€ | 6,81 | 0 | 2 | 0/0 | skadad, åter About 1-2 weeks |
+| 34 | Stanley N'Soki | CB | 27 | France | 1,2 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Aljoscha Kemlein | CDM,CM,CB | 22 | Germany | 8,2 M€ | 6,41 | 0 | 0 | 1/0 |  |
+| 8 | Rani Khedira | CDM,CM,CAM | 32 | Tunisia | 1,2 M€ | 6,35 | 0 | 0 | 1/0 |  |
+| 11 | Woo-Yeong Jeong | CAM,ST,RW | 27 | South Korea | 2,0 M€ | 6,58 | 0 | 0 | 0/0 |  |
+| 13 | András Schäfer | CDM,CM,CAM | 27 | Hungary | 2,2 M€ | 6,46 | 0 | 0 | 0/0 |  |
+| 17 | Derrick Köhn | LWB,LM,LB | 27 | Ghana | 2,3 M€ | – | 0 | 0 | 0/0 |  |
+| 19 | Janik Haberer | RWB,CDM,RM | 32 | Germany | 959 k€ | 6,51 | 0 | 0 | 0/0 |  |
+| 20 | Michel Aebischer | CM,CDM,LM | 29 | Switzerland | 2,5 M€ | 6,12 | 0 | 0 | 1/0 |  |
+| 24 | Robert Skov | LM | 30 | Denmark | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 28 | Christopher Trimmel | RWB,RB,RM | 39 | Austria | 484 k€ | 5,41 | 0 | 0 | 0/0 |  |
+| 30 | Kastriot Imeri | LW,RM,LM,CAM | 26 | Switzerland | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 38 | Julien Friedrich | Midfielder | 19 | Germany | 461 k€ | – | 0 | 0 | 0/0 |  |
+| 49 | Linus Guether | Midfielder | 16 | Germany | 1,8 M€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Oliver Burke | ST,CAM,RW | 29 | Scotland | 3,6 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 9 | Livan Burcu | LW,CAM | 22 | Germany | 2,3 M€ | 6,52 | 0 | 0 | 1/0 |  |
+| 21 | Tim Skarke | CAM,RW | 30 | Germany | 1,0 M€ | 7,01 | 2 | 0 | 0/0 |  |
+| 23 | Andrej Ilić | ST | 26 | Serbia | 4,4 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 27 | Marin Ljubičić | ST,LW | 24 | Croatia | 1,5 M€ | 6,20 | 0 | 0 | 1/0 |  |
+| 29 | Emmanuel Latte Lath | ST | 27 | Ivory Coast | 11,8 M€ | 6,38 | 1 | 0 | 0/0 |  |
+| 32 | Mekhi Gray | Attacker | 19 | Jamaica | – | – | 0 | 0 | 0/0 |  |

@@ -67,3 +67,48 @@ Form (äldst → senast): VFFOOFVF · senaste match 2026-09-20
 | Ind. Rivadavia | 2 | 1-1-0 | 3–2 | +0,11 | +23 pe | 2024-08-18 2-1 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Omar De Felippe. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Matías Gómez (skadad, åter Mid October 2026), Mateo Cáceres (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Santino Barbi | GK | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 12 | Jeremías Florentín | Keeper | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 32 | Ezequiel Unsain | GK | 31 | Argentina | 1,4 M€ | – | 0 | 0 | 0/0 |  |
+| 40 | Franco Yennerich | Keeper | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 3 | Alexandro Maidana | LB,LWB,LM | 21 | Paraguay | 1,8 M€ | – | 0 | 0 | 0/0 |  |
+| 4 | Matías Catalán | CB | 34 | Chile | 344 k€ | – | 0 | 0 | 0/0 |  |
+| 6 | Román Riquelme | CB | 24 | Argentina | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 10 | Thiago Baroni | Defender | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 13 | Valentín Fascendini | CB | 23 | Argentina | 1,4 M€ | – | 0 | 0 | 0/0 |  |
+| 19 | José Palomino | CB | 36 | Argentina | 210 k€ | – | 0 | 0 | 0/0 |  |
+| 20 | Augusto Schott | RB,CB,LB | 26 | Argentina | 769 k€ | – | 0 | 0 | 0/0 |  |
+| 23 | Gabriel Báez | LB,LM,LWB | 31 | Argentina | 454 k€ | – | 0 | 0 | 0/0 |  |
+| 32 | Lucio Ferrari | Defender | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 35 | Gonzalo Nuccio | Defender | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 44 | Santiago Fernández | CB | 21 | Argentina | 1,8 M€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Matías Galarza | CDM,CM | 24 | Argentina | 3,8 M€ | – | 0 | 0 | 0/0 |  |
+| 8 | Federico Fattori | CDM,CM,CB | 34 | Argentina | 807 k€ | – | 0 | 0 | 0/0 |  |
+| 13 | Juan Sforza | CDM,CM | 24 | Argentina | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 18 | Franco Cristaldo | CAM,RW | 30 | Argentina | 1,7 M€ | – | 0 | 0 | 0/0 |  |
+| 21 | Matías Gómez | CM | 20 | Argentina | – | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 26 | Mateo Cáceres | CDM,CM,RW,CAM,RM | 24 | Argentina | – | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 30 | Giovanni Baroni | CAM,RW,RM,CDM | 17 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 31 | Bruno Trey | Midfielder | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 34 | Lautaro Ortíz | CM | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 45 | Timoteo Chamorro | RWB,RM | 20 | Argentina | 657 k€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Diego Valoyes | RW | 30 | Colombia | 822 k€ | – | 0 | 0 | 0/0 |  |
+| 9 | Agustín Álvarez | ST | 25 | Uruguay | 1,7 M€ | – | 0 | 0 | 0/0 |  |
+| 11 | Valentín Depietri | LW,ST,RW | 25 | Argentina | 380 k€ | – | 0 | 0 | 0/0 |  |
+| 24 | Ignacio Alastra | Attacker | 18 | Argentina | 835 k€ | – | 0 | 0 | 0/0 |  |
+| 36 | Emiliano Chiavassa | RW | 20 | Argentina | 645 k€ | – | 0 | 0 | 0/0 |  |
+| 37 | Rick | LW,RW,ST,LM,CAM | 27 | Brazil | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| 49 | Valentín Dávila | ST | 19 | Argentina | 1,8 M€ | – | 0 | 0 | 0/0 |  |

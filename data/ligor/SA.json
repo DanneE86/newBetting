@@ -1,0 +1,433 @@
+{
+ "updatedAt": "2026-09-28T19:47:27.474Z",
+ "league": "SA",
+ "fotmobId": 55,
+ "name": "Serie A",
+ "country": "ITA",
+ "table": [
+  {
+   "rank": 1,
+   "team": "Roma",
+   "fotmobName": "Roma",
+   "fotmobId": 8686,
+   "group": null,
+   "played": 5,
+   "won": 4,
+   "drawn": 1,
+   "lost": 0,
+   "goals": "14-3",
+   "gd": 11,
+   "pts": 13
+  },
+  {
+   "rank": 2,
+   "team": "Inter",
+   "fotmobName": "Inter",
+   "fotmobId": 8636,
+   "group": null,
+   "played": 5,
+   "won": 4,
+   "drawn": 1,
+   "lost": 0,
+   "goals": "15-8",
+   "gd": 7,
+   "pts": 13
+  },
+  {
+   "rank": 3,
+   "team": "Lazio",
+   "fotmobName": "Lazio",
+   "fotmobId": 8543,
+   "group": null,
+   "played": 5,
+   "won": 4,
+   "drawn": 1,
+   "lost": 0,
+   "goals": "8-3",
+   "gd": 5,
+   "pts": 13
+  },
+  {
+   "rank": 4,
+   "team": "Cagliari",
+   "fotmobName": "Cagliari",
+   "fotmobId": 8529,
+   "group": null,
+   "played": 5,
+   "won": 4,
+   "drawn": 0,
+   "lost": 1,
+   "goals": "5-2",
+   "gd": 3,
+   "pts": 12
+  },
+  {
+   "rank": 5,
+   "team": "Milan",
+   "fotmobName": "Milan",
+   "fotmobId": 8564,
+   "group": null,
+   "played": 5,
+   "won": 3,
+   "drawn": 2,
+   "lost": 0,
+   "goals": "10-4",
+   "gd": 6,
+   "pts": 11
+  },
+  {
+   "rank": 6,
+   "team": "Frosinone",
+   "fotmobName": "Frosinone",
+   "fotmobId": 9891,
+   "group": null,
+   "played": 5,
+   "won": 3,
+   "drawn": 1,
+   "lost": 1,
+   "goals": "9-4",
+   "gd": 5,
+   "pts": 10
+  },
+  {
+   "rank": 7,
+   "team": "Juventus",
+   "fotmobName": "Juventus",
+   "fotmobId": 9885,
+   "group": null,
+   "played": 5,
+   "won": 3,
+   "drawn": 1,
+   "lost": 1,
+   "goals": "8-4",
+   "gd": 4,
+   "pts": 10
+  },
+  {
+   "rank": 8,
+   "team": "Como",
+   "fotmobName": "Como",
+   "fotmobId": 10171,
+   "group": null,
+   "played": 5,
+   "won": 3,
+   "drawn": 1,
+   "lost": 1,
+   "goals": "9-6",
+   "gd": 3,
+   "pts": 10
+  },
+  {
+   "rank": 9,
+   "team": "Napoli",
+   "fotmobName": "Napoli",
+   "fotmobId": 9875,
+   "group": null,
+   "played": 5,
+   "won": 2,
+   "drawn": 1,
+   "lost": 2,
+   "goals": "7-6",
+   "gd": 1,
+   "pts": 7
+  },
+  {
+   "rank": 10,
+   "team": "Sassuolo",
+   "fotmobName": "Sassuolo",
+   "fotmobId": 7943,
+   "group": null,
+   "played": 5,
+   "won": 2,
+   "drawn": 1,
+   "lost": 2,
+   "goals": "9-9",
+   "gd": 0,
+   "pts": 7
+  },
+  {
+   "rank": 11,
+   "team": "Atalanta",
+   "fotmobName": "Atalanta",
+   "fotmobId": 8524,
+   "group": null,
+   "played": 5,
+   "won": 2,
+   "drawn": 0,
+   "lost": 3,
+   "goals": "5-7",
+   "gd": -2,
+   "pts": 6
+  },
+  {
+   "rank": 12,
+   "team": "Lecce",
+   "fotmobName": "Lecce",
+   "fotmobId": 9888,
+   "group": null,
+   "played": 5,
+   "won": 2,
+   "drawn": 0,
+   "lost": 3,
+   "goals": "5-10",
+   "gd": -5,
+   "pts": 6
+  },
+  {
+   "rank": 13,
+   "team": "Udinese",
+   "fotmobName": "Udinese",
+   "fotmobId": 8600,
+   "group": null,
+   "played": 5,
+   "won": 1,
+   "drawn": 1,
+   "lost": 3,
+   "goals": "8-11",
+   "gd": -3,
+   "pts": 4
+  },
+  {
+   "rank": 14,
+   "team": "Torino",
+   "fotmobName": "Torino",
+   "fotmobId": 9804,
+   "group": null,
+   "played": 5,
+   "won": 1,
+   "drawn": 1,
+   "lost": 3,
+   "goals": "5-8",
+   "gd": -3,
+   "pts": 4
+  },
+  {
+   "rank": 15,
+   "team": "Parma",
+   "fotmobName": "Parma",
+   "fotmobId": 10167,
+   "group": null,
+   "played": 5,
+   "won": 1,
+   "drawn": 1,
+   "lost": 3,
+   "goals": "4-7",
+   "gd": -3,
+   "pts": 4
+  },
+  {
+   "rank": 16,
+   "team": "Monza",
+   "fotmobName": "Monza",
+   "fotmobId": 6504,
+   "group": null,
+   "played": 5,
+   "won": 1,
+   "drawn": 1,
+   "lost": 3,
+   "goals": "8-12",
+   "gd": -4,
+   "pts": 4
+  },
+  {
+   "rank": 17,
+   "team": "Fiorentina",
+   "fotmobName": "Fiorentina",
+   "fotmobId": 8535,
+   "group": null,
+   "played": 5,
+   "won": 1,
+   "drawn": 1,
+   "lost": 3,
+   "goals": "6-12",
+   "gd": -6,
+   "pts": 4
+  },
+  {
+   "rank": 18,
+   "team": "Bologna",
+   "fotmobName": "Bologna",
+   "fotmobId": 9857,
+   "group": null,
+   "played": 5,
+   "won": 0,
+   "drawn": 2,
+   "lost": 3,
+   "goals": "3-6",
+   "gd": -3,
+   "pts": 2
+  },
+  {
+   "rank": 19,
+   "team": "Genoa",
+   "fotmobName": "Genoa",
+   "fotmobId": 10233,
+   "group": null,
+   "played": 5,
+   "won": 0,
+   "drawn": 1,
+   "lost": 4,
+   "goals": "3-10",
+   "gd": -7,
+   "pts": 1
+  },
+  {
+   "rank": 20,
+   "team": "Venezia",
+   "fotmobName": "Venezia",
+   "fotmobId": 7881,
+   "group": null,
+   "played": 5,
+   "won": 0,
+   "drawn": 0,
+   "lost": 5,
+   "goals": "4-13",
+   "gd": -9,
+   "pts": 0
+  }
+ ],
+ "tableHistory": {
+  "2026-09-28": [
+   [
+    "Roma",
+    1,
+    5,
+    13,
+    11
+   ],
+   [
+    "Inter",
+    2,
+    5,
+    13,
+    7
+   ],
+   [
+    "Lazio",
+    3,
+    5,
+    13,
+    5
+   ],
+   [
+    "Cagliari",
+    4,
+    5,
+    12,
+    3
+   ],
+   [
+    "Milan",
+    5,
+    5,
+    11,
+    6
+   ],
+   [
+    "Frosinone",
+    6,
+    5,
+    10,
+    5
+   ],
+   [
+    "Juventus",
+    7,
+    5,
+    10,
+    4
+   ],
+   [
+    "Como",
+    8,
+    5,
+    10,
+    3
+   ],
+   [
+    "Napoli",
+    9,
+    5,
+    7,
+    1
+   ],
+   [
+    "Sassuolo",
+    10,
+    5,
+    7,
+    0
+   ],
+   [
+    "Atalanta",
+    11,
+    5,
+    6,
+    -2
+   ],
+   [
+    "Lecce",
+    12,
+    5,
+    6,
+    -5
+   ],
+   [
+    "Udinese",
+    13,
+    5,
+    4,
+    -3
+   ],
+   [
+    "Torino",
+    14,
+    5,
+    4,
+    -3
+   ],
+   [
+    "Parma",
+    15,
+    5,
+    4,
+    -3
+   ],
+   [
+    "Monza",
+    16,
+    5,
+    4,
+    -4
+   ],
+   [
+    "Fiorentina",
+    17,
+    5,
+    4,
+    -6
+   ],
+   [
+    "Bologna",
+    18,
+    5,
+    2,
+    -3
+   ],
+   [
+    "Genoa",
+    19,
+    5,
+    1,
+    -7
+   ],
+   [
+    "Venezia",
+    20,
+    5,
+    0,
+    -9
+   ]
+  ]
+ }
+}

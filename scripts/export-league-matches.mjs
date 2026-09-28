@@ -14,6 +14,7 @@ const DIR = path.join(root, 'data', 'matcher');
 const readJson = (p, d = null) => { try { return JSON.parse(fs.readFileSync(p, 'utf8').replace(/^﻿/, '')); } catch { return d; } };
 const COLS = [
   'status', 'league', 'season', 'date', 'kickoff', 'home', 'away', 'hg', 'ag', 'res', 'hs', 'as', 'hst', 'ast', 'xg_h', 'xg_a', 'xg_src',
+  'referee', 'hc', 'ac', 'hf', 'af', 'hy', 'ay', 'hr', 'ar',
   'open_h', 'open_d', 'open_a', 'close_h', 'close_d', 'close_a', 'pin_close', 'best_open_h', 'best_open_d', 'best_open_a',
   'best_close_h', 'best_close_d', 'best_close_a', 'over25_open', 'over25_close',
   'luck', 'gap', 'mres', 'rest', 'h2h_n', 'h2h_pts', 'h2h_res', 'h2h_draw', 'promo', 'releg', 'miss_h', 'miss_a', 'steam', 'book',
@@ -51,6 +52,13 @@ const signalCols = (f) => ({
 });
 
 const { matches, teamState, h2hState, seasonTeams, seasonsByLeague } = buildSignals({ log: () => {} });
+const store = readJson(path.join(root, 'data', 'betting-store.json'), { matches: [] });
+const storeByKey = new Map(store.matches.map((m) => [`${m.league}|${m.date}|${m.home}|${m.away}`, m]));
+// Domare, horn, frisparkar, kort, avspark fran store (football-data, 2023/24-)
+const extra = (m) => {
+  const d = m?.discipline ?? {};
+  return { kickoff: m?.kickoff ?? null, referee: m?.referee ?? null, hc: d.homeCorners, ac: d.awayCorners, hf: d.homeFouls, af: d.awayFouls, hy: d.homeYellow, ay: d.awayYellow, hr: d.homeRed, ar: d.awayRed };
+};
 const byLeague = new Map();
 for (const m of matches) {
   (byLeague.get(m.league) ?? byLeague.set(m.league, []).get(m.league)).push({
@@ -61,18 +69,17 @@ for (const m of matches) {
     pin_close: m.pinClose ? 1 : 0,
     best_open_h: m.bestOpen?.[0], best_open_d: m.bestOpen?.[1], best_open_a: m.bestOpen?.[2],
     best_close_h: m.bestClose?.[0], best_close_d: m.bestClose?.[1], best_close_a: m.bestClose?.[2],
-    over25_open: m.overOpen, over25_close: m.overClose, ...signalCols(m.f),
+    over25_open: m.overOpen, over25_close: m.overClose, ...signalCols(m.f), ...extra(storeByKey.get(`${m.league}|${m.date}|${m.home}|${m.away}`)),
   });
 }
 
 // Ligor utan oddshistorik i fd-filerna: resultat fran betting-store (ESPN, TheSportsDB, FotMob)
-const store = readJson(path.join(root, 'data', 'betting-store.json'), { matches: [] });
 for (const m of store.matches) {
   if (byLeague.has(m.league) && matches.some((x) => x.league === m.league)) continue;
   if (!Number.isFinite(m.hg)) continue;
   (byLeague.get(m.league) ?? byLeague.set(m.league, []).get(m.league)).push({
     status: 'spelad', league: m.league, season: m.season, date: m.date, kickoff: m.kickoff, home: m.home, away: m.away, hg: m.hg, ag: m.ag, res: m.result,
-    hs: m.shots?.home, as: m.shots?.away, hst: m.shots?.homeSot, ast: m.shots?.awaySot,
+    hs: m.shots?.home, as: m.shots?.away, hst: m.shots?.homeSot, ast: m.shots?.awaySot, ...extra(m),
   });
 }
 
@@ -158,5 +165,8 @@ En CSV per liga med alla matcher vi har: \`status\` = spelad eller kommande. Gen
 - Signalerna (\`luck\`, \`gap\`, \`mres\`, \`rest\`, \`h2h_*\`, \`promo\`, \`releg\`, \`miss_*\`, \`steam\`, \`book\`) använder bara data före matchen, hemmalaget minus bortalaget. Se \`docs/lardomar/README.md\`.
 - \`pre_first_*\` / \`pre_last_*\` = oddsen vi såg innan matchen (första och senaste avläsning, bolagssnitt i Sverige). De följer med när matchen blir spelad, så filen byggs på över tid.
 - xG: \`xg_src\` = understat (topp 5) eller skott (uppskattat från skott och skott på mål).
+- \`referee\`, hörnor \`hc/ac\`, frisparkar \`hf/af\`, gula \`hy/ay\`, röda \`hr/ar\` (där källan har det, främst 2023/24 och senare).
+
+Relaterat, också per liga och med historik: aktuella trupper (skador, betyg, mål, marknadsvärde, vilka som lämnat, tränarbyten) i \`data/trupper/<liga>.json\` och tabell med daglig tabellhistorik i \`data/ligor/<liga>.json\` (\`npm run trupper\`). Lärdomar per liga och lag: \`docs/lardomar/\`.
 `, 'utf8');
 console.log(`Skrev ${path.relative(root, DIR)} (${leagues.size} ligor, ${totalUp} kommande matcher)`);

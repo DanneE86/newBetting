@@ -52,3 +52,46 @@ Form (äldst → senast): FVOVVOFV · senaste match 2026-09-18
 | Karlsruhe | 1 | 1-0-0 | 5–2 | +1,47 | −26 pe | 2026-08-29 5-2 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Tobias Strobl. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Christian Eriksen (skadad, åter Unknown)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 12 | Pavao Pervan | GK | 38 | Austria | 214 k€ | – | 0 | 0 | 0/0 |  |
+| 29 | Timon Wellenreuther | GK | 30 | Germany | 2,3 M€ | – | 0 | 0 | 0/0 |  |
+| 30 | Jakub Zieliński | GK | 18 | Poland | 1,2 M€ | 7,09 | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Kilian Fischer | RB | 25 | Germany | 3,6 M€ | 7,07 | 0 | 0 | 0/0 |  |
+| 6 | Hauke Wahl | CB | 32 | Germany | 1,2 M€ | 7,45 | 1 | 0 | 0/0 |  |
+| 13 | Rogério | LB | 28 | Brazil | 722 k€ | – | 0 | 0 | 0/0 |  |
+| 18 | Jonas Adjetey | CB | 22 | Ghana | 5,7 M€ | 5,97 | 0 | 0 | 1/0 |  |
+| 21 | Joakim Mæhle | LB,LW,LM,LWB,RWB | 29 | Denmark | 6,5 M€ | 7,38 | 0 | 3 | 1/0 |  |
+| 22 | Mathys Angély | CB | 19 | France | 1,9 M€ | 7,08 | 0 | 1 | 1/1 |  |
+| 25 | Aaron Zehnter | LB,LWB | 21 | Germany | 8,4 M€ | – | 0 | 0 | 0/0 |  |
+| 26 | Saël Kumbedi | RB,RM,RWB,CAM | 21 | France | – | 7,04 | 0 | 0 | 1/0 |  |
+| 33 | Cleiton Santos | CB | 23 | Brazil | 704 k€ | 7,30 | 0 | 0 | 1/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Aster Vranckx | CM | 23 | Belgium | 6,6 M€ | – | 0 | 0 | 0/0 |  |
+| 5 | Vini Souza | CDM,CM | 27 | Brazil | 9,7 M€ | 7,43 | 2 | 0 | 2/0 |  |
+| 8 | Bence Dárdai | CDM | 20 | Hungary | 9,3 M€ | 6,10 | 0 | 0 | 0/0 |  |
+| 10 | Fraser Hornby | CAM,ST,LW | 27 | Scotland | 2,5 M€ | 6,67 | 0 | 0 | 0/0 |  |
+| 14 | Pharrell Hensel | LW | 19 | Germany | 1,7 M€ | – | 0 | 0 | 1/0 |  |
+| 17 | Alexander Bernhardsson | RW,CAM,RM,RWB,LW | 28 | Sweden | 1,5 M€ | 8,01 | 3 | 3 | 0/0 |  |
+| 20 | Muhammed Mehmet Damar | CAM,CM | 22 | Germany | 4,8 M€ | 6,92 | 1 | 0 | 1/0 |  |
+| 24 | Christian Eriksen | CM,CAM,RW,CDM | 34 | Denmark | 1,5 M€ | – | 0 | 0 | 0/0 | skadad, åter Unknown |
+| 27 | Maximilian Arnold | CDM | 32 | Germany | 1,8 M€ | 6,40 | 0 | 0 | 0/0 |  |
+| 31 | Yannick Gerhardt | CDM,CM | 32 | Germany | 835 k€ | 6,58 | 0 | 0 | 0/0 |  |
+| 32 | Mattias Svanberg | CDM,CM,LW,CAM | 27 | Sweden | 6,1 M€ | 7,02 | 1 | 0 | 0/0 |  |
+| 37 | Elvis Rexhbeçaj | CM,CDM | 28 | Kosovo | 2,3 M€ | 7,27 | 0 | 0 | 1/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Kento Shiogai | ST | 21 | Japan | 5,5 M€ | 6,31 | 0 | 0 | 0/0 |  |
+| 11 | Fabian Reese | LW,RW,CAM,LM,ST | 28 | Germany | 2,7 M€ | 8,40 | 3 | 4 | 0/0 |  |
+| 19 | Robert Glatzel | ST | 32 | Germany | 1,1 M€ | 7,62 | 4 | 1 | 0/0 |  |
+| 23 | Alessio Besio | LW,ST,LM | 22 | Switzerland | 1,4 M€ | 6,39 | 0 | 1 | 0/0 |  |
+| 42 | Bruno Katz | Attacker | 18 | Finland | – | – | 0 | 0 | 0/0 |  |
+| 43 | Trevor Benedict | Attacker | 19 | Germany | – | – | 0 | 0 | 0/0 |  |

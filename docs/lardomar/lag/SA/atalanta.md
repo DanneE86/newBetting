@@ -4,7 +4,9 @@ Genererad 2026-09-28. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden"
 
 ## I korthet
 
+- Senaste 8: xG-målskillnaden är −0,66 per match sämre än målskillnaden.
 - Stark historik mot Inter (−0,52 p/match mot marknaden, 16 möten), Monza (+0,90 p/match mot marknaden, 6 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Utan Charles De Ketelaere (11 % av anfallet): 2,00 poäng per match mot 1,70 med (5 mot 76 matcher), mot marknaden +0,12 mot −0,07.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -12,8 +14,8 @@ Form (äldst → senast): VFOVVFFF · senaste match 2026-09-20
 
 | Mått | Värde |
 |---|---|
-| Tur (poäng − xP per match) | +0,16 |
-| xG-målskillnad − målskillnad | −0,36 |
+| Tur (poäng − xP per match) | +0,38 |
+| xG-målskillnad − målskillnad | −0,66 |
 | Poäng mot marknaden per match | −0,25 |
 
 ## Säsonger
@@ -29,9 +31,22 @@ Form (äldst → senast): VFOVVFFF · senaste match 2026-09-20
 | 2023/24 | SA | 38 | 1,82 | +0,06 (+0,24 / −0,13) | 16 % (25 %) | 1,89–1,11 | 1,80–1,17 | 1,73 |
 | 2024/25 | SA | 38 | 1,95 | +0,03 (−0,34 / +0,41) | 21 % (24 %) | 2,05–0,97 | 2,10–1,11 | 1,91 |
 | 2025/26 | SA | 38 | 1,55 | −0,10 (−0,16 / −0,04) | 37 % (26 %) | 1,34–0,95 | 1,81–1,36 | 1,66 |
-| 2026/27 | SA | 5 | 1,20 | −0,38 (+0,06 / −1,04) | 0 % (24 %) | 1,00–1,40 | 1,24–2,13* | 0,97 |
+| 2026/27 | SA | 5 | 1,20 | −0,38 (+0,06 / −1,04) | 0 % (24 %) | 1,00–1,40 | 0,77–2,14 | 0,61 |
 
-\* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+## Nyckelspelare (Understat, 2024/25–)
+
+Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
+
+| Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
+|---|---|---|---|---|
+| Nikola Krstovic | 13 % | 0 / 81 | – / 1,72 | – / −0,05 |
+| Franck Kessié | 12 % | 0 / 81 | – / 1,72 | – / −0,05 |
+| Charles De Ketelaere | 11 % | 5 / 76 | 2,00 / 1,70 | +0,12 / −0,07 |
+| Jonathan Rowe | 9 % | 0 / 81 | – / 1,72 | – / −0,05 |
+| Gianluca Scamacca | 7 % | 6 / 75 | 2,50 / 1,65 | +0,51 / −0,10 |
+| Giacomo Raspadori | 7 % | 4 / 77 | 1,25 / 1,74 | −0,03 / −0,05 |
+
+Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -76,3 +91,40 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-11-30 | Europa 2527 | Atalanta - Fiorentina | 1 ✓ | 67 % | 57 % |
 | 2025-10-19 | Europa 2515 | Atalanta - Lazio | X | 64 % | 54 % |
 | 2025-09-21 | Europa 2507 | Torino - Atalanta | 2 ✓ | 44 % | 44 % |
+
+## Trupp (FotMob, hämtad 2026-09-28)
+
+Tränare: Maurizio Sarri. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Odilon Kossounou (skadad, åter Mid October 2026), Isak Hien (skadad, åter Early October 2026), Kamaldeen Sulemana (skadad, åter Early October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 22 | Thomas Pompei | Keeper | 20 | Italy | – | – | 0 | 0 | 0/0 |  |
+| 29 | Marco Carnesecchi | GK | 26 | Italy | 19,7 M€ | 7,48 | 0 | 0 | 0/0 |  |
+| 57 | Marco Sportiello | GK | 34 | Italy | 711 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 3 | Odilon Kossounou | CB | 25 | Ivory Coast | 15,2 M€ | 6,50 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 4 | Isak Hien | CB | 27 | Sweden | 19,8 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 23 | Sead Kolašinac | CB,LB | 33 | Bosnia and Herzegovina | 2,1 M€ | 6,50 | 0 | 0 | 0/0 |  |
+| 31 | Thomas Kristensen | CB | 24 | Denmark | 11,5 M€ | 6,61 | 0 | 0 | 1/0 |  |
+| 42 | Giorgio Scalvini | CB | 22 | Italy | 29,3 M€ | 6,69 | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 7 | Kamaldeen Sulemana | CAM,RM | 24 | Ghana | 14,7 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 8 | Mario Pašalić | CDM,CAM,CM | 31 | Croatia | 3,4 M€ | 6,48 | 0 | 0 | 0/0 |  |
+| 10 | Lazar Samardžić | CAM,CM | 24 | Serbia | 13,3 M€ | 6,93 | 1 | 0 | 0/0 |  |
+| 13 | Éderson | CDM,CM | 27 | Brazil | 26,9 M€ | 6,83 | 1 | 0 | 0/0 |  |
+| 16 | Raoul Bellanova | RWB,RB | 26 | Italy | 14,0 M€ | 6,61 | 0 | 0 | 1/0 |  |
+| 17 | Charles De Ketelaere | CAM,ST,RW,LW | 25 | Belgium | 32,1 M€ | 7,03 | 0 | 0 | 0/0 |  |
+| 19 | Franck Kessié | CM,CDM,CAM,CB | 29 | Ivory Coast | 5,2 M€ | 6,91 | 0 | 0 | 1/0 |  |
+| 47 | Lorenzo Bernasconi | LWB,LB | 22 | Italy | 6,2 M€ | 6,48 | 0 | 0 | 0/0 |  |
+| 59 | Nicola Zalewski | CAM,LWB,LM,RW | 24 | Poland | 16,2 M€ | 7,05 | 0 | 1 | 0/0 |  |
+| 70 | Gianluca Gaetano | CM,CAM,CDM | 26 | Italy | 3,7 M€ | 6,85 | 0 | 1 | 0/1 |  |
+| 77 | Davide Zappacosta | RWB,LWB,RB | 34 | Italy | 2,7 M€ | 6,77 | 0 | 0 | 0/0 |  |
+| 99 | Eljif Elmas | CAM,CDM,CM,LW,RW | 27 | North Macedonia | 11,3 M€ | 6,29 | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Gianluca Scamacca | ST | 27 | Italy | 15,2 M€ | 6,48 | 1 | 0 | 0/0 |  |
+| 11 | Jonathan Rowe | LW,RW | 23 | England | 16,0 M€ | 6,79 | 0 | 0 | 0/0 |  |
+| 18 | Giacomo Raspadori | CAM,ST,LW,RW | 26 | Italy | 16,4 M€ | 6,85 | 1 | 0 | 0/0 |  |
+| 90 | Nikola Krstović | ST | 26 | Montenegro | 18,5 M€ | 6,16 | 1 | 0 | 1/0 |  |
