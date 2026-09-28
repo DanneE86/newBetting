@@ -334,13 +334,6 @@ body.view-stryktips main { display: none !important; }
 .st-gc.small { align-self: flex-start; padding: 0.3rem 0.7rem; font-size: 0.78rem; }
 .st-gc-off { color: var(--muted); font-size: 0.85rem; }
 
-.st-history ul { list-style: none; margin: 0.5rem 0 0; padding: 0; }
-.st-history li { padding: 0.55rem 0; border-top: 1px solid var(--line); line-height: 1.55; font-size: 0.88rem; }
-.st-history li:first-child { border-top: 0; }
-.st-history small { color: var(--muted); }
-.st-history code { letter-spacing: 0.08em; }
-.st-history .pos { color: #4cc873; }
-.st-history .neg { color: #ef6b5b; }
 .st-wait { color: var(--warn); font-size: 0.82rem; }
 
 /* System B (gar emot A) */

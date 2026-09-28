@@ -141,27 +141,6 @@ function svsRow(e) {
   return parts.length ? `<div class="st-svs">${parts.join("")}</div>` : "";
 }
 
-// Sparade system (sparas automatiskt när kupongen är öppen) och hur det gick
-function historyBox(history, krFmt) {
-  if (!history?.length) return "";
-  const evalText = (ev) => {
-    const classes = [13, 12, 11, 10].filter((c) => ev.perClass[c]).map((c) => `${ev.perClass[c]} × ${c} rätt`).join(", ");
-    return `bästa rad <b>${ev.best} rätt</b>${classes ? ` (${classes})` : ""} · vinst <b>${krFmt(ev.winnings)} kr</b> · netto <b class="${ev.net >= 0 ? "pos" : "neg"}">${ev.net >= 0 ? "+" : ""}${krFmt(ev.net)} kr</b>`;
-  };
-  const rowsHtml = history.map((h) => {
-    const head = `<strong>${esc(h.productName)} omgång ${h.drawNumber}</strong> · stänger ${esc((h.closeTime || "").slice(0, 16).replace("T", " "))}`;
-    const snapText = (x) => `sparad ${esc(x.at.slice(0, 10))}: ${x.rows} rader · ${krFmt(x.cost)} kr · minst ${x.rules.signMin.join("-")} · utdelning ≥ ${krFmt(x.rules.payoutMin)} kr`;
-    const saved = snapText(h.saved);
-    const savedB = h.savedB ? snapText(h.savedB) : "";
-    if (!h.evaluation) {
-      return `<li>${head}<br><small>A ${saved}</small>${h.pairA ? `<br><small><b>Paret A+B</b> – A ${snapText(h.pairA)} · B ${savedB} · totalt ${krFmt(h.pairA.cost + h.savedB.cost)} kr</small>` : savedB ? `<br><small>B ${savedB}</small>` : ""}<br><span class="st-wait">Väntar på facit – räknas ut automatiskt när omgången är avgjord.</span></li>`;
-    }
-    return `<li>${head} · rätt rad <code>${esc(h.result.outcomes)}</code><br><small>${saved}</small><br>System A (först sparad): ${evalText(h.evaluation.saved)}${h.evaluation.pairA ? `<br><b>Paret A+B</b> (${krFmt(h.pairA.cost + h.savedB.cost)} kr): A ${evalText(h.evaluation.pairA)}<br>&nbsp;&nbsp;B ${evalText(h.evaluation.savedB)} · <b>paret netto ${krFmt(h.evaluation.pairA.net + h.evaluation.savedB.net)} kr</b>` : h.evaluation.savedB ? `<br>System B: ${evalText(h.evaluation.savedB)}` : ""}</li>`;
-  }).join("");
-  const done = history.filter((h) => h.evaluation);
-  const total = done.reduce((s, h) => s + h.evaluation.saved.net, 0);
-  return `<details class="st-method st-history" open><summary>Sparade system (${history.length})${done.length ? ` · system A totalt netto ${total >= 0 ? "+" : ""}${krFmt(total)} kr på ${done.length} omgångar` : ""}</summary><ul>${rowsHtml}</ul></details>`;
-}
 
 // Backtest: gammal mot ny modellvikt + resultat per omgång (scripts/backtest-stryktipset.mjs)
 function backtestBox(list, krFmt) {
@@ -400,7 +379,6 @@ function render() {
       ${p.result?.distribution?.[0] ? `<div><span class="k">Utdelning 13 rätt</span><strong>${esc(p.result.distribution[0].amount)} kr</strong><small>${p.result.distribution[0].winners} vinnare</small></div>` : ""}
     </div>
     ${reducedBox}
-    ${historyBox(data.history, krFmt)}
     ${backtestBox(data.backtest, krFmt)}
     <details class="st-method"><summary>Hur räknas procenten?</summary>
       <ul>${Object.values(data.method || {}).map((m) => `<li>${esc(m)}</li>`).join("")}</ul>
