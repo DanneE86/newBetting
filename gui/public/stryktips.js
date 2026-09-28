@@ -118,6 +118,26 @@ function svsRow(e) {
   return parts.length ? `<div class="st-svs">${parts.join("")}</div>` : "";
 }
 
+// Sparade system (sparas automatiskt när kupongen är öppen) och hur det gick
+function historyBox(history, krFmt) {
+  if (!history?.length) return "";
+  const evalText = (ev) => {
+    const classes = [13, 12, 11, 10].filter((c) => ev.perClass[c]).map((c) => `${ev.perClass[c]} × ${c} rätt`).join(", ");
+    return `bästa rad <b>${ev.best} rätt</b>${classes ? ` (${classes})` : ""} · vinst <b>${krFmt(ev.winnings)} kr</b> · netto <b class="${ev.net >= 0 ? "pos" : "neg"}">${ev.net >= 0 ? "+" : ""}${krFmt(ev.net)} kr</b>`;
+  };
+  const rowsHtml = history.map((h) => {
+    const head = `<strong>${esc(h.productName)} omgång ${h.drawNumber}</strong> · stänger ${esc((h.closeTime || "").slice(0, 16).replace("T", " "))}`;
+    const saved = `sparad ${esc(h.saved.at.slice(0, 10))}: ${h.saved.rows} rader · ${krFmt(h.saved.cost)} kr · minst ${h.saved.rules.signMin.join("-")} · utdelning ≥ ${krFmt(h.saved.rules.payoutMin)} kr`;
+    if (!h.evaluation) {
+      return `<li>${head}<br><small>${saved}${h.changed ? ` · senaste versionen: ${h.latest.rows} rader` : ""}</small><br><span class="st-wait">Väntar på facit – räknas ut automatiskt när omgången är avgjord.</span></li>`;
+    }
+    return `<li>${head} · rätt rad <code>${esc(h.result.outcomes)}</code><br><small>${saved}</small><br>Sparat system: ${evalText(h.evaluation.saved)}${h.changed ? `<br>Senaste versionen (${h.latest.rows} rader): ${evalText(h.evaluation.latest)}` : ""}</li>`;
+  }).join("");
+  const done = history.filter((h) => h.evaluation);
+  const total = done.reduce((s, h) => s + h.evaluation.saved.net, 0);
+  return `<details class="st-method st-history" open><summary>Sparade system (${history.length})${done.length ? ` · totalt netto ${total >= 0 ? "+" : ""}${krFmt(total)} kr på ${done.length} omgångar` : ""}</summary><ul>${rowsHtml}</ul></details>`;
+}
+
 function expertTexts(e) {
   if (!e.experts?.length) return "";
   return `<div class="st-experts"><h4>Svenska Spels expertanalyser</h4>${e.experts.map((x) => `<div class="st-expert"><p class="st-expert-head"><strong>${esc(x.author)}</strong> tippar <b>${esc(x.signs.split("").join(" + ") || "–")}</b></p><p>${esc(x.text)}</p></div>`).join("")}</div>`;
@@ -268,6 +288,7 @@ function render() {
       ${p.result?.distribution?.[0] ? `<div><span class="k">Utdelning 13 rätt</span><strong>${esc(p.result.distribution[0].amount)} kr</strong><small>${p.result.distribution[0].winners} vinnare</small></div>` : ""}
     </div>
     ${reducedBox}
+    ${historyBox(data.history, krFmt)}
     <details class="st-method"><summary>Hur räknas procenten?</summary>
       <ul>${Object.values(data.method || {}).map((m) => `<li>${esc(m)}</li>`).join("")}</ul>
     </details>
