@@ -31,7 +31,9 @@ Oddsen är motståndaren. En signal är bara värd något om den förbättrar sa
 | Analys → filer per liga och lag | `scripts/analyze-learnings.mjs` → `docs/lardomar/README.md`, `docs/lardomar/ligor/<liga>.md`, `docs/lardomar/lag/<liga>/<lag>.md`, `data/lardomar.json` |
 | Justeringsmodell (logloss + Oddset-simulering) | `scripts/learnings-model.mjs` → `data/lardomar-modell.json`, `config/learned-adjustments.json` |
 | Live-justering | `scripts/lib/learned-adjust.mjs` (används av `scripts/pro-layer.mjs`, bara ≥ 24 h före avspark, stängs av med `LEARNED_OFF=1`) |
-| Levande slutsatser och beslut (handskrivet) | `docs/lardomar/slutsatser.md`, egna liganteckningar i `docs/lardomar/anteckningar/<liga>.md` |
+| Levande slutsatser och beslut (handskrivet) | `docs/lardomar/slutsatser.md` |
+| **En lärdomsfil per liga** (35 st): tipsens träff mot väntat, vad som blev fel i år, testade situationer + handskrivna daterade lärdomar | `docs/lardomar/anteckningar/<liga>.md`, översikt i `README.md` där (`npm run felanalys`, dagligen i molnet). Skriv nya lärdomar under "Lärdomar och beslut", nyast överst, aldrig inne i AUTO-blocket |
+| Tipsmotorns träff per liga och säsong (samma motor som live, point-in-time) | `data/reports/pro-evaluation.json` → `tipAccuracy`, per match i `data/reports/tips-backtest.json` (skrivs av `scripts/pro-layer.mjs`) |
 | Stryktipsets/Europatipsets system-lärdomar | `docs/analys/stryktips-lardomar.md` |
 
 Kör allt:
@@ -65,6 +67,16 @@ Enskilda matcher är något annat än Stryktipset/Europatipset: där spelas en r
 2. **Ingen oddshistorik** (COL, BR2, SE2, SE3N, SE3S, NO2, DK2, CZ, HR): tipsen följer modellen. Jämför modellens träff (`accuracyByLeague` i `data/betting-store.json`) med att alltid tippa hemmavinst. Är modellen sämre, granska ligans parametrar (`npm run tune`) och säg det. Ligafilen flaggar det.
 3. **Kryss tippas nästan aldrig**, och det är korrekt för ett träff-tips. Värdet i kryss syns i Värde/Ej värde-omdömet, inte i tipset.
 4. Rapportera per liga: tips med odds / utan, oddsstyrda, modellens träff mot baslinjen, och vad som saknas (odds, xG, trupp).
+
+## När tipsen "går dåligt" i en liga
+
+1. Läs ligans lärdomsfil (`docs/lardomar/anteckningar/<liga>.md`). Jämför träff med **väntat** (tipsens egna procent). |z| < 2 = slump, ingen ändring. z ≤ −2 = granska.
+2. Uteslut datafel först: ombytta hemma/borta (träffen med speglade odds ska vara lägre), fel lagnamn, saknade odds.
+3. Titta på missarna: kryss eller skrällar, hemma- eller bortafavoriter, lag som går mot oddsen (beskrivande, håller inte i sig).
+4. Testa hypoteser mot historiken med träning/kontroll (tabellen "Vad systemet kan missa"). Bara bekräftade effekter förs in.
+5. Skriv resultatet daterat i ligans fil, och i `slutsatser.md` om det gäller flera ligor.
+
+Webbens träffruta visar tipsmotorns träff (`source: 'tipsmotor'`), inte grundmodellens. Grundmodellen (Update-BettingStore.ps1) tippar hemmalaget för ofta och förlorar mot oddsen när de är oense. Den ska aldrig styra tips i ligor med odds.
 
 ## Iterera
 

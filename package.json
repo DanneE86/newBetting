@@ -30,6 +30,7 @@
     "lardomar": "node scripts/analyze-learnings.mjs",
     "lardomar:modell": "node scripts/learnings-model.mjs && node scripts/analyze-learnings.mjs",
     "matcher": "node scripts/export-league-matches.mjs",
+    "felanalys": "node scripts/tips-felanalys.mjs",
     "trupper": "node scripts/fetch-squads.mjs",
     "sync": "npm run fetch && npm run store",
     "gui": "node gui/server.mjs",

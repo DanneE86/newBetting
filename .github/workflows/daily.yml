@@ -88,6 +88,11 @@ jobs:
         continue-on-error: true
         run: node scripts/export-league-matches.mjs
 
+      # En lardomsfil per liga: tipsens traff, vad som blev fel och testade situationer (docs/lardomar/anteckningar/)
+      - name: Felanalys per liga
+        continue-on-error: true
+        run: node scripts/tips-felanalys.mjs
+
       # Trupper (skador, betyg, marknadsvarde) och tabeller for alla ligor fran FotMob, med historik
       - name: Trupper och tabeller
         continue-on-error: true
@@ -101,7 +106,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
-          git add -A data docs/analys
+          git add -A data docs/analys docs/lardomar
           if git diff --cached --quiet; then
             echo "Ingen ny data"
           else
