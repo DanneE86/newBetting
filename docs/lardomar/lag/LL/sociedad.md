@@ -1,6 +1,6 @@
 # Sociedad (La Liga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [LL](../../ligor/LL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [LL](../../ligor/LL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -56,10 +56,10 @@ Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: s
 | Betis | 17 | 5-5-7 | 17–23 | −0,30 | +2 pe | 2026-08-21 0-1 (b) |
 | Celta | 17 | 9-4-4 | 22–15 | +0,27 | −5 pe | 2026-09-03 0-0 (h) |
 | Real Madrid | 17 | 3-3-11 | 15–30 | −0,15 | −6 pe | 2026-08-26 1-4 (b) |
-| Valencia | 17 | 5-7-5 | 19–15 | −0,26 | +13 pe | 2026-09-20 3-2 (b) |
 | Ath Bilbao | 16 | 7-4-5 | 21–20 | +0,23 | −7 pe | 2026-02-01 1-1 (b) |
 | Getafe | 16 | 6-4-6 | 19–18 | −0,24 | −6 pe | 2026-04-22 0-1 (h) |
 | Sevilla | 16 | 5-4-7 | 19–22 | −0,21 | −4 pe | 2026-05-04 0-1 (b) |
+| Valencia | 16 | 5-7-4 | 19–14 | −0,19 | +16 pe | 2026-09-20 3-2 (b) |
 | Barcelona | 15 | 3-1-11 | 14–33 | −0,12 | −16 pe | 2026-01-18 2-1 (h) |
 | Villarreal | 15 | 5-3-7 | 19–23 | −0,18 | −8 pe | 2026-03-20 1-3 (b) |
 | Alaves | 14 | 5-4-5 | 16–12 | −0,43 | +1 pe | 2026-04-11 3-3 (h) |
@@ -91,7 +91,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-09-24 | Europa 2508 | Real Sociedad - Mallorca | 1 ✓ | 59 % | 53 % |
 | 2025-08-24 | Europa 2499 | Real Sociedad - Espanyol | X | 61 % | 53 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Pellegrino Matarazzo. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

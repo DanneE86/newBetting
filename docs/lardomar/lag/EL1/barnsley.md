@@ -1,6 +1,6 @@
 # Barnsley (League One) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -74,7 +74,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-08-23 | Stryk 4915 | Wimbledon - Barnsley | 1 | 48 % | 41 % |
 | 2026-08-29 | Stryk 4968 | Leyton Orient - Barnsley | 2 ✓ | 27 % | 29 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Daniel Stendel. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

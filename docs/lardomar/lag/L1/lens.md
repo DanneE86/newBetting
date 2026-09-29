@@ -1,6 +1,6 @@
 # Lens (Ligue 1) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [L1](../../ligor/L1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [L1](../../ligor/L1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -77,7 +77,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-05-13 | Europa 2574 | Lens - Paris Saint-Germain | 2 | 22 % | 30 % |
 | 2026-05-07 | Europa 2572 | Lens - Nantes | 1 ✓ | 82 % | 65 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: –. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -101,13 +101,13 @@ Tränare: –. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 | 31 | Souleymane Sagnan | CB | 21 | Mali | 669 k€ | 6,86 | 0 | 0 | 1/1 |  |
 | 32 | Kyllian Antonio | CB | 18 | France | 1,5 M€ | 6,63 | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 2 | Ruben Aguilar | RWB,RM | 33 | France | 1,9 M€ | 7,02 | 0 | 1 | 1/0 |  |
+| 2 | Ruben Aguilar | RWB | 33 | France | 1,9 M€ | 7,02 | 0 | 1 | 1/0 |  |
 | 5 | Andrija Bulatović | CM,CDM | 19 | Montenegro | 3,7 M€ | 6,58 | 0 | 0 | 1/0 |  |
 | 7 | Florian Sotoca | CAM | 35 | France | 842 k€ | 6,26 | 0 | 0 | 0/0 |  |
 | 8 | Yacine Titraoui | CDM | 23 | Algeria | 5,1 M€ | 7,07 | 0 | 0 | 1/0 | skadad, åter Mid October 2026 |
 | 9 | Thorgan Hazard | CAM,ST,RW | 33 | Belgium | 1,5 M€ | 6,38 | 0 | 0 | 0/0 |  |
 | 10 | Florian Thauvin | CAM,RW | 33 | France | 2,6 M€ | 7,84 | 3 | 2 | 2/0 |  |
-| 14 | Matthieu Udol | LWB,LM,CB | 30 | France | 3,0 M€ | 7,10 | 1 | 0 | 0/0 |  |
+| 14 | Matthieu Udol | LWB,CB,LM | 30 | France | 3,0 M€ | 7,10 | 1 | 0 | 0/0 |  |
 | 19 | Abdallah Sima | CAM,ST,LW | 25 | Senegal | 2,5 M€ | 7,04 | 1 | 1 | 0/0 |  |
 | 21 | Amadou Haidara | CDM | 28 | Mali | 3,7 M€ | 6,39 | 0 | 0 | 0/0 |  |
 | 22 | Michał Skóras | LW,LWB,RWB,RW,LM | 26 | Poland | 2,1 M€ | 6,85 | 0 | 1 | 1/0 |  |

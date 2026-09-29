@@ -1,6 +1,6 @@
 # Hammarby (Allsvenskan) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [AS](../../ligor/AS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [AS](../../ligor/AS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -65,7 +65,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-08-31 | Europa 2501 | Hammarby - Öster | 1 ✓ | 84 % | 77 % |
 | 2025-08-17 | Europa 2497 | Hammarby - GAIS | 2 | 56 % | 51 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Henrik Rydström. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -91,7 +91,7 @@ Tränare: Henrik Rydström. Betyg, mål och assist gäller innevarande säsong e
 | 5 | Tesfaldet Tekie | CDM,CM | 29 | Eritrea | 1,1 M€ | 6,88 | 1 | 0 | 0/0 |  |
 | 8 | Markus Karlsson | CDM,CM,CB | 22 | Sweden | 2,9 M€ | 7,45 | 1 | 2 | 2/0 |  |
 | 11 | Oscar Johansson Schellhas | CDM,CM,LW | 31 | Sweden | 294 k€ | 6,64 | 0 | 2 | 1/0 |  |
-| 17 | Amin Boudri | CM,LW,CAM | 21 | Sweden | 1,7 M€ | 7,06 | 0 | 2 | 0/0 | skadad, åter Mid October 2026 |
+| 17 | Amin Boudri | CM,LW,CAM | 22 | Sweden | 1,7 M€ | 7,06 | 0 | 2 | 0/0 | skadad, åter Mid October 2026 |
 | 20 | Nahir Besara | CAM,CM | 35 | Sweden | 379 k€ | 7,34 | 5 | 5 | 1/0 |  |
 | 21 | Sourou Kone | Midfielder | 0 | Ivory Coast | – | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 28 | Frank Junior Adjei | CDM,CM,CAM | 22 | Ghana | 1,2 M€ | 7,43 | 3 | 1 | 3/0 |  |

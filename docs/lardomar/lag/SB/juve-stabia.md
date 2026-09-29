@@ -1,6 +1,6 @@
 # Juve Stabia (Serie B) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [SB](../../ligor/SB.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [SB](../../ligor/SB.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -57,7 +57,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 |---|---|---|---|---|---|
 | 2026-04-30 | Europa 2570 | Juve Stabia - Frosinone | 2 | 22 % | 29 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Pietro De Giorgio. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -66,7 +66,6 @@ Tränare: Pietro De Giorgio. Betyg, mål och assist gäller innevarande säsong 
 | | **Målvakter** | | | | | | | | | |
 | 1 | Ante Vuković | Keeper | 22 | Croatia | 640 k€ | – | 0 | 0 | 0/0 |  |
 | 16 | Alessandro Signorini | Keeper | 27 | Italy | 149 k€ | – | 0 | 0 | 0/0 |  |
-| 22 | Antonio Vetrò | Keeper | 19 | Italy | – | – | 0 | 0 | 0/0 |  |
 | 23 | Pietro Boer | GK | 24 | Italy | 273 k€ | 6,78 | 0 | 0 | 0/0 |  |
 | 95 | Paolo Vismara | GK | 23 | Italy | 1,1 M€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
@@ -85,7 +84,7 @@ Tränare: Pietro De Giorgio. Betyg, mål och assist gäller innevarande säsong 
 | 11 | Kevin Piscopo | LM,LWB,CDM,LW,RWB,ST,CAM | 28 | Italy | 180 k€ | 6,13 | 0 | 0 | 1/0 |  |
 | 17 | Nermin Karić | CDM,CM,CAM | 27 | Sweden | 536 k€ | 6,57 | 0 | 0 | 0/0 |  |
 | 18 | Daniel Perin | Midfielder | 18 | Italy | – | – | 0 | 0 | 0/0 |  |
-| 24 | Justin Kumi | CDM,CAM | 22 | Italy | 878 k€ | 6,19 | 0 | 0 | 0/0 |  |
+| 24 | Justin Kumi | CDM | 22 | Italy | 878 k€ | 6,19 | 0 | 0 | 0/0 |  |
 | 37 | Fabio Maistro | CAM,ST,CM | 28 | Italy | 230 k€ | 6,96 | 0 | 1 | 0/0 |  |
 | 77 | Saná Fernandes | RM | 20 | Portugal | 896 k€ | 6,22 | 0 | 0 | 0/0 |  |
 | 80 | Federico Artioli | CDM,CM | 25 | Italy | 263 k€ | 6,63 | 0 | 1 | 0/0 |  |
@@ -97,3 +96,5 @@ Tränare: Pietro De Giorgio. Betyg, mål och assist gäller innevarande säsong 
 | 27 | Leonardo Candellone | ST,CAM | 29 | Italy | 290 k€ | 6,11 | 0 | 0 | 0/0 |  |
 | 30 | Romeo Sandrucci | Attacker | 19 | Italy | – | – | 0 | 0 | 1/0 |  |
 | 33 | Giuseppe Sibilli | ST | 30 | Italy | 311 k€ | 6,24 | 0 | 0 | 1/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Antonio Vetrò (senast 2026-09-29).

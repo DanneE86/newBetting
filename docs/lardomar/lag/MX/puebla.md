@@ -1,6 +1,6 @@
 # Puebla (Liga MX) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [MX](../../ligor/MX.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [MX](../../ligor/MX.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -61,7 +61,7 @@ Form (äldst → senast): FOVVFVFO · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: svag signal (inte bekräftad).
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Gerardo Espinoza. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -76,7 +76,7 @@ Tränare: Gerardo Espinoza. Betyg, mål och assist gäller innevarande säsong e
 | 2 | Ángel Leyva | CB | 19 | Mexico | 845 k€ | – | 0 | 0 | 0/0 |  |
 | 4 | Juan Vargas | CB | 31 | Costa Rica | 878 k€ | – | 0 | 0 | 0/0 |  |
 | 5 | Facundo Almada | CB | 28 | Argentina | 960 k€ | – | 0 | 0 | 0/0 |  |
-| 7 | Fernando Monárrez | LB,LWB | 27 | Mexico | 709 k€ | – | 0 | 0 | 0/0 |  |
+| 7 | Fernando Monárrez | LB,LWB,LW | 27 | Mexico | 709 k€ | – | 0 | 0 | 0/0 |  |
 | 12 | Iker Moreno | RB,RWB | 23 | Mexico | 721 k€ | – | 0 | 0 | 0/0 |  |
 | 13 | Eduardo Navarro | CB | 22 | Mexico | 1,4 M€ | – | 0 | 0 | 0/0 | osäker |
 | 15 | Óscar Villa | LWB,LB | 25 | Mexico | 324 k€ | – | 0 | 0 | 0/0 |  |
@@ -89,7 +89,7 @@ Tränare: Gerardo Espinoza. Betyg, mål och assist gäller innevarande säsong e
 | 17 | Raúl Castillo | ST | 25 | Mexico | 1,0 M€ | – | 0 | 0 | 0/0 |  |
 | 21 | Sergio Sanabria | CDM,CM | 27 | Paraguay | 389 k€ | – | 0 | 0 | 0/0 |  |
 | 22 | Carlos Baltazar | CAM,LW,LM | 29 | Mexico | 652 k€ | – | 0 | 0 | 0/0 |  |
-| 24 | Alejandro Organista | CDM,CAM,CM | 26 | Mexico | 750 k€ | – | 0 | 0 | 0/0 |  |
+| 24 | Alejandro Organista | CM,CDM,CAM | 26 | Mexico | 750 k€ | – | 0 | 0 | 0/0 |  |
 | 25 | Heriberto Jurado | LM | 21 | Mexico | 1,1 M€ | – | 0 | 0 | 0/0 |  |
 | 26 | Kevin Velasco | RW,CAM,CM,RM | 29 | Colombia | 1,0 M€ | – | 0 | 0 | 0/0 | osäker |
 | 34 | Lucas Camilo | RB | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |

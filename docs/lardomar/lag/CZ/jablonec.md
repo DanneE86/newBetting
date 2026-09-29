@@ -1,6 +1,6 @@
 # Jablonec (Chance Liga) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [CZ](../../ligor/CZ.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [CZ](../../ligor/CZ.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -35,7 +35,7 @@ Form senaste 8 (äldst → senast): VVFOFVFO · senaste match 2026-09-20
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Luboš Kozel. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -43,7 +43,6 @@ Tränare: Luboš Kozel. Betyg, mål och assist gäller innevarande säsong enlig
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
 | 1 | Jan Hanuš | GK | 38 | Czechia | 74 k€ | 6,62 | 0 | 0 | 0/0 |  |
-| 33 | Albert Kotlín | Keeper | 21 | Czechia | – | – | 0 | 0 | 0/0 |  |
 | 33 | Michal Kukučka | GK | 24 | Slovakia | 160 k€ | – | 0 | 0 | 0/0 |  |
 | 99 | Klemen Mihelak | GK | 24 | Slovenia | 249 k€ | 6,72 | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
@@ -76,3 +75,5 @@ Tränare: Luboš Kozel. Betyg, mål och assist gäller innevarande säsong enlig
 | 27 | Filip Vecheta | ST | 23 | Czechia | 428 k€ | 6,06 | 0 | 0 | 0/0 |  |
 | 36 | Garang Kuol | RW,CAM | 22 | Australia | 939 k€ | 7,30 | 1 | 0 | 0/0 |  |
 | 44 | Lamin Jawo | ST,LW | 31 | The Gambia | 165 k€ | 6,18 | 0 | 0 | 2/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Albert Kotlín (senast 2026-09-29).

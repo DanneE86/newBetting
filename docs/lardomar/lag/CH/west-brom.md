@@ -1,11 +1,11 @@
 # West Brom (Championship) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - 2025/26: −0,38 poäng per match mot marknaden. Ligan visar ingen persistens, så räkna inte med att det fortsätter.
-- Stark historik mot Middlesbrough (−0,62 p/match mot marknaden, 14 möten), Preston (+0,56 p/match mot marknaden, 14 möten), Millwall (−0,73 p/match mot marknaden, 13 möten), Derby (−0,85 p/match mot marknaden, 11 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Stark historik mot Middlesbrough (−0,62 p/match mot marknaden, 14 möten), Millwall (−0,73 p/match mot marknaden, 13 möten), Derby (−0,85 p/match mot marknaden, 11 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -40,11 +40,11 @@ Form (äldst → senast): VVFOVVOF · senaste match 2026-09-20
 |---|---|---|---|---|---|---|
 | Blackburn | 14 | 4-6-4 | 16–15 | −0,38 | +15 pe | 2026-04-06 0-0 (b) |
 | Middlesbrough | 14 | 3-2-9 | 16–23 | −0,62 | −14 pe | 2026-08-29 1-3 (b) |
-| Preston | 14 | 10-2-2 | 28–10 | +0,56 | −13 pe | 2026-04-18 2-0 (b) |
 | QPR | 14 | 8-4-2 | 24–16 | +0,33 | +2 pe | 2026-09-12 1-1 (h) |
 | Swansea | 14 | 6-2-6 | 23–19 | −0,23 | −13 pe | 2026-01-01 0-1 (b) |
 | Bristol City | 13 | 7-2-4 | 23–12 | +0,13 | −12 pe | 2026-03-21 1-0 (b) |
 | Millwall | 13 | 1-8-4 | 7–13 | −0,73 | +32 pe | 2026-04-10 0-0 (h) |
+| Preston | 13 | 9-2-2 | 25–8 | +0,48 | −12 pe | 2026-04-18 2-0 (b) |
 | Stoke | 13 | 6-4-3 | 15–11 | +0,16 | +2 pe | 2026-02-07 0-0 (h) |
 | Sheffield United | 12 | 4-3-5 | 14–14 | −0,02 | −4 pe | 2026-03-07 1-1 (b) |
 | Birmingham | 11 | 4-3-4 | 12–14 | −0,33 | +1 pe | 2026-02-10 0-0 (b) |
@@ -84,7 +84,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-09-05 | Stryk 4969 | West Bromwich - Watford | 1 ✓ | 65 % | 54 % |
 | 2026-01-01 | Europa 2536 | Swansea - West Bromwich | 1 | 40 % | 40 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: James Morrison. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

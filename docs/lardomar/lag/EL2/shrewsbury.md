@@ -1,6 +1,6 @@
 # Shrewsbury (League Two) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -42,7 +42,7 @@ Form (äldst → senast): FFVFFVOO · senaste match 2026-09-26
 | Fleetwood Town | 15 | 4-4-7 | 15–22 | −0,21 | −3 pe | 2026-09-05 0-2 (b) |
 | Bristol Rvs | 13 | 2-4-7 | 9–17 | −0,57 | +1 pe | 2026-03-17 0-1 (b) |
 | Accrington | 12 | 3-4-5 | 10–12 | −0,32 | +4 pe | 2026-02-21 2-0 (b) |
-| Gillingham | 10 | 2-6-2 | 11–11 | −0,22 | +31 pe | 2026-05-02 0-1 (b) |
+| Gillingham | 9 | 2-5-2 | 9–9 | −0,15 | +26 pe | 2026-05-02 0-1 (b) |
 | Cheltenham | 8 | 2-0-6 | 6–13 | −0,69 | −29 pe | 2026-03-14 0-2 (h) |
 | Crewe | 7 | 0-3-4 | 5–13 | −0,84 | +14 pe | 2026-09-19 1-1 (b) |
 | Northampton | 7 | 3-1-3 | 8–8 | +0,14 | −14 pe | 2026-09-12 2-0 (h) |
@@ -64,21 +64,21 @@ Form (äldst → senast): FFVFFVOO · senaste match 2026-09-26
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Gavin Cowan. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Will Brook | GK | 22 | England | 249 k€ | 6,37 | 0 | 0 | 0/0 |  |
+| 1 | Will Brook | GK | 22 | England | 249 k€ | 6,28 | 0 | 0 | 0/0 |  |
 | 12 | Sam Proctor | GK | 19 | England | 399 k€ | – | 0 | 0 | 0/0 |  |
 | 32 | Cameron Gregory | GK | 26 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 |  | Aristote Nsiala | CB | 34 | Congo | – | – | 0 | 0 | 0/0 |  |
-| 2 | Luca Hoole | CB,RWB,RB | 24 | Wales | 248 k€ | 7,14 | 1 | 0 | 2/0 |  |
+| 2 | Luca Hoole | CB,RWB,RB | 24 | Wales | 248 k€ | 7,20 | 1 | 0 | 2/0 |  |
 | 3 | Josh Ruffels | CB,CDM,CM | 32 | England | 92 k€ | 6,35 | 0 | 0 | 0/0 |  |
-| 5 | William Boyle | CB | 31 | Scotland | – | 6,88 | 1 | 0 | 2/0 |  |
+| 5 | William Boyle | CB | 31 | Scotland | – | 6,89 | 1 | 0 | 2/0 |  |
 | 6 | Sam Stubbs | CB | 27 | England | 129 k€ | 7,01 | 0 | 0 | 1/0 |  |
 | 17 | Arkell Jude-Boyd | RB,RWB,RW | 23 | Saint Lucia | 242 k€ | 6,27 | 0 | 0 | 0/0 |  |
 | 22 | Byron Pendleton | LB,LWB,RB | 20 | England | – | – | 0 | 0 | 0/0 |  |
@@ -87,22 +87,19 @@ Tränare: Gavin Cowan. Betyg, mål och assist gäller innevarande säsong enligt
 | 26 | Thomas Anderson | CB | 33 | England | 118 k€ | 6,47 | 0 | 0 | 2/0 |  |
 | 45 | Ollie Hall | Defender | 0 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-|  | Alex Gilliead | CDM,CM | 30 | England | 72 k€ | – | 0 | 0 | 0/0 |  |
-|  | Anthony Scully | CAM,LW,CM | 27 | Ireland | 177 k€ | – | 0 | 0 | 0/0 |  |
-|  | Sam Clucas | LWB,LM,CM,LB,CDM | 36 | England | 114 k€ | – | 0 | 0 | 0/0 |  |
 | 4 | Isaac England | CDM | 18 | England | 470 k€ | – | 0 | 0 | 1/0 |  |
-| 7 | Jay Turner-Cooke | CDM,CAM,LW,CM | 22 | England | 162 k€ | 6,32 | 0 | 0 | 2/0 |  |
+| 7 | Jay Turner-Cooke | CDM,CAM,LW,CM | 22 | England | 162 k€ | 6,31 | 0 | 0 | 2/0 |  |
 | 8 | Isaac Fletcher | CAM,ST | 24 | England | 245 k€ | 6,81 | 1 | 0 | 0/0 |  |
-| 10 | Tom Sang | CDM,CM,RWB,RW | 27 | England | 151 k€ | 7,48 | 0 | 1 | 1/0 |  |
-| 11 | Kevin Berkoe | LWB,LB,CAM,LW,CB | 25 | England | 181 k€ | 6,80 | 1 | 0 | 1/0 |  |
+| 10 | Tom Sang | CDM,CM,RW,RWB | 27 | England | 151 k€ | 7,48 | 0 | 1 | 1/0 |  |
+| 11 | Kevin Berkoe | LWB,CAM,LW,CB,LB | 25 | England | 181 k€ | 6,79 | 1 | 0 | 1/0 |  |
 | 19 | Jack Price | CM,CDM,LM | 33 | England | 52 k€ | – | 0 | 0 | 0/0 |  |
 | 20 | Michael Golding | CDM,CAM,CM | 20 | England | 1,7 M€ | 6,22 | 0 | 0 | 0/0 |  |
 | 21 | Will Gray | CDM | 17 | England | – | 6,45 | 0 | 0 | 2/0 |  |
-| 30 | Jeval Thompson-McKenzie | Midfielder | 19 | England | – | – | 0 | 0 | 0/0 |  |
-| 42 | Jack Loughran | Midfielder | 19 | England | – | – | 0 | 0 | 0/0 |  |
 | 46 | Hugo Aiston | Midfielder | 16 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 9 | George Lloyd | ST | 26 | England | 194 k€ | 6,65 | 1 | 0 | 0/0 |  |
+| 9 | George Lloyd | ST | 26 | England | 194 k€ | 6,71 | 1 | 0 | 0/0 |  |
 | 13 | Josh Davison | ST,CAM | 27 | England | 230 k€ | 6,32 | 1 | 0 | 2/0 |  |
 | 18 | Kian McMahon-Brown | ST,CAM | 18 | Ireland | – | 6,95 | 1 | 0 | 1/0 |  |
 | 27 | Joseph Gbodé | RW,ST,LW,CAM | 21 | England | 263 k€ | 6,25 | 0 | 0 | 2/0 |  |
+
+Har lämnat truppen sedan vi började spara (5): Sam Clucas (senast 2026-09-29), Alex Gilliead (senast 2026-09-29), Anthony Scully (senast 2026-09-29), Jack Loughran (senast 2026-09-29), Jeval Thompson-McKenzie (senast 2026-09-29).

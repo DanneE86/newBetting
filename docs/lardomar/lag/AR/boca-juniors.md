@@ -1,6 +1,6 @@
 # Boca Juniors (Liga Profesional) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -72,44 +72,54 @@ Form (äldst → senast): VOOOVOVV · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
-Tränare: Nicolás Diez. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+Tränare: Rodolfo Arruabarrena. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Agustín Marchesín (skadad, åter Late December 2026), Rodrigo Battaglia (osäker), Tomás Aranda (skadad, åter Out for season), Camilo Rey Domenech (osäker), Adam Bareiro (skadad, åter Out for season)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 12 | Gonzalo Siri | GK | 23 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 25 | Brayan Cortés | GK | 31 | Chile | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 1 | Álvaro Montero | GK | 31 | Colombia | 1,9 M€ | – | 0 | 0 | 0/0 |  |
+| 12 | Leandro Brey | GK | 24 | Argentina | 1,5 M€ | – | 0 | 0 | 0/0 |  |
+| 13 | Javier García | GK | 39 | Argentina | 352 k€ | – | 0 | 0 | 0/0 |  |
+| 25 | Agustín Marchesín | GK | 38 | Argentina | 559 k€ | – | 0 | 0 | 0/0 | skadad, åter Late December 2026 |
 | | **Backar** | | | | | | | | | |
-| 3 | Luciano Sánchez | CB | 32 | Argentina | 380 k€ | – | 0 | 0 | 0/0 |  |
-| 4 | Érik Godoy | CB | 33 | Argentina | 353 k€ | – | 0 | 0 | 0/0 |  |
-| 6 | Franco Vázquez | CB | 21 | Argentina | 503 k€ | – | 0 | 0 | 0/0 |  |
-| 14 | Kevin Coronel | RB | 22 | Argentina | 1,0 M€ | – | 0 | 0 | 0/0 |  |
-| 16 | Francisco Álvarez | CB | 26 | Argentina | 2,7 M€ | – | 0 | 0 | 0/0 |  |
-| 17 | Franco Paredes | CB,RB | 27 | Argentina | 435 k€ | – | 0 | 0 | 0/0 |  |
-| 20 | Sebastián Prieto | LB,LWB | 33 | Argentina | 701 k€ | – | 0 | 0 | 0/0 |  |
-| 23 | Mateo Mendoza | CB | 21 | Argentina | 2,2 M€ | – | 0 | 0 | 0/0 |  |
-| 26 | Claudio Bravo | LB | 29 | Argentina | 518 k€ | – | 0 | 0 | 0/0 |  |
-| 30 | Alan Núñez | RB | 21 | Paraguay | 1,5 M€ | – | 0 | 0 | 0/0 |  |
-| 31 | Facundo Carrizo | Defender | 19 | Argentina | 749 k€ | – | 0 | 0 | 0/0 |  |
-| 37 | Thiago Gómez | Defender | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 42 | Santino Gianini | Defender | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 2 | Lautaro Di Lollo | CB | 22 | Argentina | 5,5 M€ | – | 0 | 0 | 0/0 |  |
+| 3 | Lautaro Blanco | LB | 27 | Argentina | 2,6 M€ | – | 0 | 0 | 0/0 |  |
+| 4 | Nicolás Figal | CB | 32 | Argentina | 440 k€ | – | 0 | 0 | 0/0 |  |
+| 17 | Leandro Lozano | RB,RWB | 27 | Uruguay | 2,6 M€ | – | 0 | 0 | 0/0 |  |
+| 26 | Marco Pellegrino | CB | 24 | Argentina | 2,1 M€ | – | 0 | 0 | 0/0 |  |
+| 27 | Malcom Braida | LB,RB | 29 | Argentina | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| 32 | Ayrton Costa | CB | 27 | Argentina | 1,7 M€ | – | 0 | 0 | 0/0 |  |
+| 42 | Facundo Herrera | CB | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 46 | Matías Satas | CB | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 48 | Dylan Gorosito | RB,RWB,RM | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 51 | Gadiel Paoli | Defender | 20 | Paraguay | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-|  | Federico Mancuello | LM | 37 | Argentina | 339 k€ | – | 0 | 0 | 0/0 |  |
-| 11 | Nicolás Oroz | CM,CDM,CAM | 32 | Argentina | 978 k€ | – | 0 | 0 | 0/0 |  |
-| 15 | Kevin Gutiérrez | CDM,CM | 29 | Argentina | 2,0 M€ | – | 0 | 0 | 0/0 |  |
-| 21 | Gabriel Florentín | CDM | 27 | Argentina | 566 k€ | – | 0 | 0 | 0/0 |  |
-| 28 | Joaquín Gho | CDM | 23 | Argentina | 1,6 M€ | – | 0 | 0 | 0/0 |  |
-| 32 | Gino Infantino | ST | 23 | Argentina | 728 k€ | – | 0 | 0 | 0/0 |  |
-| 35 | Alan Alcaraz | Midfielder | 17 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 36 | Gastón Bouhier | CAM | 17 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 5 | Leandro Paredes | CM,CDM,CB | 32 | Argentina | 2,1 M€ | – | 0 | 0 | 0/0 |  |
+| 6 | Rodrigo Battaglia | CM | 35 | Argentina | 635 k€ | – | 0 | 0 | 0/0 | osäker |
+| 8 | Carlos Palacios | RM,CAM | 26 | Chile | 2,4 M€ | – | 0 | 0 | 0/0 |  |
+| 15 | Williams Alarcón | CDM,RM,CM | 25 | Chile | 2,2 M€ | – | 0 | 0 | 0/0 |  |
+| 18 | Milton Delgado | CM,CDM,CAM | 21 | Argentina | 10,2 M€ | – | 0 | 0 | 0/0 |  |
+| 25 | Santiago Ascacíbar | CM,CDM,RM,CAM,RW | 29 | Argentina | 3,1 M€ | – | 0 | 0 | 0/0 |  |
+| 30 | Tomás Belmonte | CM,CDM,RM | 28 | Argentina | 2,0 M€ | – | 0 | 0 | 0/0 |  |
+| 36 | Tomás Aranda | LM,LW,CAM | 19 | Argentina | 1,1 M€ | – | 0 | 0 | 0/0 | skadad, åter Out for season |
+| 38 | Camilo Rey Domenech | CM | 20 | Argentina | 788 k€ | – | 0 | 0 | 0/0 | osäker |
 | | **Anfallare** | | | | | | | | | |
-| 8 | Hernán López | RW,CAM,CM,RM,LW,ST | 26 | Argentina | 2,3 M€ | – | 0 | 0 | 0/0 |  |
-| 9 | Gastón Verón | ST | 25 | Argentina | 1,1 M€ | – | 0 | 0 | 0/0 |  |
-| 19 | Matías Giménez | ST | 27 | Argentina | 1,2 M€ | – | 0 | 0 | 0/0 |  |
-| 27 | Tomás Molina | ST | 31 | Argentina | 1,8 M€ | – | 0 | 0 | 0/0 |  |
-| 29 | Emiliano Viveros | LW,RW | 23 | Argentina | 1,1 M€ | – | 0 | 0 | 0/0 |  |
-| 34 | Ryoga Kida | Attacker | 21 | Japan | 450 k€ | – | 0 | 0 | 0/0 |  |
-| 47 | Diego Porcel | LW,ST,LM | 21 | Argentina | 1,3 M€ | – | 0 | 0 | 0/0 |  |
-| 48 | Facundo Jainikoski | LW | 18 | Argentina | 1,9 M€ | – | 0 | 0 | 0/0 |  |
+| 9 | Milton Giménez | ST | 30 | Argentina | 1,7 M€ | – | 0 | 0 | 0/0 |  |
+| 13 | Enner Valencia | ST | 36 | Ecuador | 961 k€ | – | 0 | 0 | 0/0 |  |
+| 16 | Miguel Merentiel | ST | 30 | Uruguay | 2,7 M€ | – | 0 | 0 | 0/0 |  |
+| 20 | Alan Velasco | LW,RW,CAM | 24 | Argentina | 2,1 M€ | – | 0 | 0 | 0/0 |  |
+| 22 | Sebastián Villa | ST,LW,RW | 30 | Colombia | 1,9 M€ | – | 0 | 0 | 0/0 |  |
+| 28 | Adam Bareiro | ST | 30 | Paraguay | 2,3 M€ | – | 0 | 0 | 0/0 | skadad, åter Out for season |
+| 29 | Ángel Romero | RW,ST | 34 | Paraguay | 363 k€ | – | 0 | 0 | 0/0 |  |
+| 40 | Lautaro Bianco | LB | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 44 | Leonel Flores | RW,ST | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 44 | Rodrigo Bacidalupe | Attacker | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 45 | Miguel Ventos | Attacker | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 49 | Joaquín Piñeyro | Attacker | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 52 | Juan Pussetto | Attacker | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 53 | Joaquín Ruíz | Attacker | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 54 | Kevin Ferreira | Attacker | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |

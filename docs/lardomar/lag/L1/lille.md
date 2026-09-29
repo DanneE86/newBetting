@@ -1,6 +1,6 @@
 # Lille (Ligue 1) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [L1](../../ligor/L1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [L1](../../ligor/L1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -87,7 +87,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-08-24 | Europa 2499 | Lille - Monaco | 1 ✓ | 21 % | 28 % |
 | 2025-08-17 | Europa 2497 | Brest - Lille | X | 30 % | 35 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Davide Ancelotti. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

@@ -1,6 +1,6 @@
 # Union de Santa Fe (Liga Profesional) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -70,7 +70,7 @@ Form (äldst → senast): VFFVVVFF · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Leonardo Madelón. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -110,10 +110,11 @@ Tränare: Leonardo Madelón. Betyg, mål och assist gäller innevarande säsong 
 | 43 | Emilio Giaccone | CM | 21 | Argentina | 498 k€ | – | 0 | 0 | 0/0 |  |
 | 46 | Santiago Grella | Midfielder | 21 | Argentina | 594 k€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-|  | José Vanetta | Attacker | 24 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 19 | Marcelo Estigarribia | ST | 31 | Argentina | 1,0 M€ | – | 0 | 0 | 0/0 |  |
 | 23 | Augusto Solari | RW | 34 | Argentina | 309 k€ | – | 0 | 0 | 0/0 |  |
 | 25 | Cristian Tarragona | ST | 35 | Argentina | 473 k€ | – | 0 | 0 | 0/0 |  |
 | 31 | Misael Aguirre | ST | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 38 | Valentín Cerrudo | Attacker | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 45 | Ricardo Solbes | Attacker | 20 | Argentina | 392 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): José Vanetta (senast 2026-09-29).

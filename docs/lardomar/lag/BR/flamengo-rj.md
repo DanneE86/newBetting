@@ -1,6 +1,6 @@
 # Flamengo RJ (Brasileirão Série A) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [BR](../../ligor/BR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [BR](../../ligor/BR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -62,11 +62,11 @@ Form (äldst → senast): VVFVVVVV · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Leonardo Jardim. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Ayrton Lucas (skadad, åter Mid October 2026), Evertton Araújo (skadad, åter Early November 2026), Gonzalo Plata (skadad, åter Early October 2026)
+**Skadade/borta nu:** Ayrton Lucas (skadad, åter Mid October 2026), Giorgian de Arrascaeta (skadad, åter Late October 2026), Evertton Araújo (skadad, åter Early November 2026), Gonzalo Plata (skadad, åter Early October 2026)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -90,7 +90,7 @@ Tränare: Leonardo Jardim. Betyg, mål och assist gäller innevarande säsong en
 | | **Mittfältare** | | | | | | | | | |
 | 5 | Erick Pulgar | CDM | 32 | Chile | 2,5 M€ | – | 0 | 0 | 0/0 |  |
 | 8 | Saúl | CDM | 31 | Spain | 973 k€ | – | 0 | 0 | 0/0 |  |
-| 10 | Giorgian de Arrascaeta | CAM | 32 | Uruguay | 10,5 M€ | – | 0 | 0 | 0/0 |  |
+| 10 | Giorgian de Arrascaeta | CAM | 32 | Uruguay | 10,5 M€ | – | 0 | 0 | 0/0 | skadad, åter Late October 2026 |
 | 14 | Anthony Valencia | CAM,RWB,CDM | 23 | Ecuador | 1,3 M€ | – | 0 | 0 | 0/0 |  |
 | 18 | Nicolás de la Cruz | CDM,CM | 29 | Uruguay | 6,7 M€ | – | 0 | 0 | 0/0 |  |
 | 20 | Lucas Paquetá | CAM,CDM,CM,RW,ST | 29 | Brazil | 36,6 M€ | – | 0 | 0 | 0/0 |  |
@@ -110,4 +110,5 @@ Tränare: Leonardo Jardim. Betyg, mål och assist gäller innevarande säsong en
 | 62 | Diego Reyes | Attacker | 19 | Mexico | – | – | 0 | 0 | 0/0 |  |
 | 79 | Joshua | LW | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 81 | Douglas Telles | RW | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 86 | Ryan Roberto | Attacker | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Ryan Roberto (senast 2026-09-29).

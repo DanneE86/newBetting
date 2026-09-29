@@ -1,6 +1,6 @@
 # Swansea (Championship) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -39,12 +39,12 @@ Form (äldst → senast): VOVVOFVV · senaste match 2026-09-19
 | Motståndare | M | V-O-F | Mål | Mot marknaden | Kryss mot odds | Senast |
 |---|---|---|---|---|---|---|
 | Blackburn | 16 | 8-4-4 | 24–17 | +0,36 | −3 pe | 2026-01-20 3-1 (h) |
-| QPR | 16 | 7-4-5 | 18–13 | +0,06 | −3 pe | 2026-04-21 2-1 (b) |
 | Stoke | 16 | 6-3-7 | 21–23 | −0,02 | −10 pe | 2026-08-15 2-1 (b) |
 | Bristol City | 15 | 6-4-5 | 14–15 | +0,06 | −1 pe | 2026-02-21 1-0 (h) |
 | Middlesbrough | 15 | 5-2-8 | 19–20 | −0,05 | −14 pe | 2026-04-06 2-2 (h) |
 | Millwall | 15 | 5-4-6 | 16–13 | −0,11 | −3 pe | 2026-01-04 1-2 (b) |
 | Preston | 15 | 6-4-5 | 20–17 | +0,03 | −2 pe | 2026-02-24 1-1 (h) |
+| QPR | 15 | 6-4-5 | 15–13 | −0,04 | −1 pe | 2026-04-21 2-1 (b) |
 | West Brom | 14 | 6-2-6 | 19–23 | +0,37 | −13 pe | 2026-01-01 1-0 (h) |
 | Birmingham | 13 | 2-7-4 | 19–18 | −0,50 | +25 pe | 2026-01-17 1-1 (h) |
 | Derby | 13 | 5-3-5 | 15–15 | −0,00 | −6 pe | 2026-08-29 3-0 (b) |
@@ -88,7 +88,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-08-22 | Stryk 4967 | Swansea - Sheffield U | X | 43 % | 36 % |
 | 2026-01-01 | Europa 2536 | Swansea - West Bromwich | 1 ✓ | 32 % | 30 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Vitor Matos. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -106,9 +106,9 @@ Tränare: Vitor Matos. Betyg, mål och assist gäller innevarande säsong enligt
 | 5 | Ben Cabango | CB | 26 | Wales | 7,9 M€ | 7,05 | 0 | 0 | 1/0 |  |
 | 14 | Josh Tymon | LB,LWB | 27 | England | 2,8 M€ | 7,11 | 0 | 1 | 2/0 |  |
 | 15 | Cameron Burgess | CB | 30 | Australia | 1,2 M€ | – | 0 | 0 | 0/0 | skadad, åter Out for season |
-| 20 | Tiago Parente | CB,LM,LB | 20 | Portugal | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 20 | Tiago Parente | CB,LM | 20 | Portugal | 1,1 M€ | – | 0 | 0 | 0/0 |  |
 | 23 | Stephen Welsh | CB | 26 | Scotland | 1,5 M€ | 7,40 | 0 | 0 | 1/0 |  |
-| 26 | Filip Lissah | RB,CB,LB | 21 | England | 249 k€ | 7,17 | 0 | 1 | 4/0 |  |
+| 26 | Filip Lissah | RB,CB,LB | 21 | Czechia | 249 k€ | 7,17 | 0 | 1 | 4/0 |  |
 | 50 | Carter Heywood | Defender | 17 | Wales | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 4 | Jay Fulton | CDM,CM | 33 | Scotland | 441 k€ | 6,76 | 0 | 0 | 1/0 |  |

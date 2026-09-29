@@ -1,6 +1,6 @@
 # Kifisia (Super League (Grekland)) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [GR](../../ligor/GR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [GR](../../ligor/GR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -45,7 +45,7 @@ Form (äldst → senast): FOVOFFOV · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Sebastián Leto. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -71,7 +71,7 @@ Tränare: Sebastián Leto. Betyg, mål och assist gäller innevarande säsong en
 | 74 | Konstantinos Lampsias | Defender | 24 | Greece | 137 k€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 |  | Pavlos Mavroudis | Midfielder | 25 | Greece | 159 k€ | – | 0 | 0 | 0/0 |  |
-| 4 | Giannis Doiranlis | CM | 23 | Greece | 254 k€ | – | 0 | 0 | 0/0 |  |
+| 4 | Giannis Doiranlis | CM | 24 | Greece | 254 k€ | – | 0 | 0 | 0/0 |  |
 | 6 | Jorge Pombo | CAM,ST | 32 | Spain | 167 k€ | 7,68 | 2 | 0 | 0/0 |  |
 | 8 | Bernardo Martins | CM,CAM | 28 | Portugal | 304 k€ | 6,89 | 1 | 0 | 1/0 |  |
 | 10 | Gerson Sousa | RM,LW,RW,LM | 24 | Portugal | 545 k€ | 6,20 | 0 | 0 | 2/0 |  |

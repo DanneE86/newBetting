@@ -1,6 +1,6 @@
 # Yokohama F. Marinos (J1 League) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [JP1](../../ligor/JP1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [JP1](../../ligor/JP1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -61,7 +61,7 @@ Form (äldst → senast): FVVFOVOV · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Steve Corica. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -90,7 +90,6 @@ Tränare: Steve Corica. Betyg, mål och assist gäller innevarande säsong enlig
 | 14 | Kei Chinen | CM,CDM | 31 | Japan | 359 k€ | 7,09 | 0 | 0 | 1/0 |  |
 | 19 | Tevis | CM | 20 | Brazil | 860 k€ | – | 0 | 0 | 0/0 |  |
 | 28 | Riku Yamane | CDM,CAM | 23 | Japan | 965 k€ | 6,99 | 1 | 0 | 0/0 |  |
-| 29 | Aruto Higuchi | CM | 21 | Japan | – | – | 0 | 0 | 0/0 |  |
 | 32 | Yuta Tanaka | Midfielder | 23 | Japan | – | – | 0 | 0 | 0/0 |  |
 | 34 | Takuto Kimura | CDM,RB | 26 | Japan | 279 k€ | 6,99 | 0 | 0 | 0/0 |  |
 | 40 | Jun Amano | CAM | 35 | Japan | 176 k€ | 6,71 | 0 | 2 | 1/0 |  |
@@ -105,5 +104,6 @@ Tränare: Steve Corica. Betyg, mål och assist gäller innevarande säsong enlig
 | 30 | Yuri Araújo | LW | 30 | Brazil | 197 k€ | – | 0 | 0 | 0/0 |  |
 | 39 | Hikaru Takahashi | Attacker | 22 | Japan | – | – | 0 | 0 | 0/0 |  |
 | 43 | Rio Nitta | ST | 23 | Japan | 295 k€ | 6,49 | 1 | 0 | 0/0 |  |
-| 46 | Hiroto Asada | ST | 18 | Japan | – | – | 0 | 0 | 0/0 |  |
 | 47 | Shin Miidera | LW | 16 | Japan | – | 6,83 | 2 | 0 | 1/0 |  |
+
+Har lämnat truppen sedan vi började spara (2): Hiroto Asada (senast 2026-09-29), Aruto Higuchi (senast 2026-09-29).

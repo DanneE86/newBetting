@@ -1,10 +1,10 @@
 {
     "source":  "fantasy.premierleague.com/api/bootstrap-static/",
     "league":  "PL",
-    "updatedAt":  "2026-09-27T19:51:51.2190441+02:00",
+    "updatedAt":  "2026-09-29T20:57:58.2511684+02:00",
     "teamCount":  20,
     "playerCount":  667,
-    "missingOrDoubtful":  207,
+    "missingOrDoubtful":  209,
     "keyOuts":  [
                     {
                         "team":  "Bournemouth",
@@ -175,7 +175,7 @@
                                           "news":  "",
                                           "form":  "6.0",
                                           "points":  30,
-                                          "selectedBy":  "42.2"
+                                          "selectedBy":  "42.3"
                                       },
                                       {
                                           "id":  2,
@@ -318,7 +318,7 @@
                                           "news":  "",
                                           "form":  "5.8",
                                           "points":  32,
-                                          "selectedBy":  "13.6"
+                                          "selectedBy":  "13.7"
                                       },
                                       {
                                           "id":  13,
@@ -331,7 +331,7 @@
                                           "news":  "Unspecified injury - 75% chance of playing",
                                           "form":  "4.2",
                                           "points":  20,
-                                          "selectedBy":  "11.7"
+                                          "selectedBy":  "11.6"
                                       },
                                       {
                                           "id":  14,
@@ -487,7 +487,7 @@
                                           "news":  "Hamstring injury - 75% chance of playing",
                                           "form":  "3.2",
                                           "points":  19,
-                                          "selectedBy":  "8.4"
+                                          "selectedBy":  "8.3"
                                       },
                                       {
                                           "id":  27,
@@ -1264,7 +1264,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "1.8",
+                                          "form":  "1.3",
                                           "points":  9,
                                           "selectedBy":  "3.0"
                                       },
@@ -1303,7 +1303,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "2.8",
+                                          "form":  "2.3",
                                           "points":  12,
                                           "selectedBy":  "0.8"
                                       },
@@ -1316,7 +1316,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "2.2",
+                                          "form":  "1.7",
                                           "points":  10,
                                           "selectedBy":  "3.0"
                                       },
@@ -1355,7 +1355,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.8",
+                                          "form":  "0.7",
                                           "points":  4,
                                           "selectedBy":  "0.1"
                                       },
@@ -1407,9 +1407,9 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "5.2",
+                                          "form":  "6.7",
                                           "points":  31,
-                                          "selectedBy":  "6.7"
+                                          "selectedBy":  "6.8"
                                       },
                                       {
                                           "id":  69,
@@ -1420,7 +1420,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "7.0",
+                                          "form":  "5.3",
                                           "points":  30,
                                           "selectedBy":  "5.8"
                                       },
@@ -1446,7 +1446,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "1.2",
+                                          "form":  "0.7",
                                           "points":  8,
                                           "selectedBy":  "0.2"
                                       },
@@ -1459,7 +1459,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.8",
+                                          "form":  "1.0",
                                           "points":  4,
                                           "selectedBy":  "0.1"
                                       },
@@ -1472,7 +1472,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "2.8",
+                                          "form":  "3.3",
                                           "points":  12,
                                           "selectedBy":  "0.3"
                                       },
@@ -1485,7 +1485,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "0.8",
+                                          "form":  "0.7",
                                           "points":  3,
                                           "selectedBy":  "0.1"
                                       },
@@ -1498,7 +1498,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "1.2",
+                                          "form":  "1.3",
                                           "points":  5,
                                           "selectedBy":  "0.0"
                                       },
@@ -1511,7 +1511,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.2",
+                                          "form":  "0.3",
                                           "points":  2,
                                           "selectedBy":  "0.0"
                                       },
@@ -1550,7 +1550,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "3.5",
+                                          "form":  "3.0",
                                           "points":  18,
                                           "selectedBy":  "3.2"
                                       },
@@ -1576,7 +1576,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "0.5",
+                                          "form":  "0.3",
                                           "points":  2,
                                           "selectedBy":  "0.1"
                                       },
@@ -1589,7 +1589,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "2.8",
+                                          "form":  "2.3",
                                           "points":  13,
                                           "selectedBy":  "0.4"
                                       },
@@ -1615,7 +1615,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.5",
+                                          "form":  "0.7",
                                           "points":  3,
                                           "selectedBy":  "0.1"
                                       },
@@ -1724,7 +1724,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "3.2",
+                                          "form":  "3.7",
                                           "points":  20,
                                           "selectedBy":  "6.1"
                                       },
@@ -1750,7 +1750,7 @@
                                           "status":  "i",
                                           "chanceNext":  0,
                                           "news":  "Calf injury - Unknown return date",
-                                          "form":  "1.0",
+                                          "form":  "0.3",
                                           "points":  10,
                                           "selectedBy":  "1.0"
                                       },
@@ -1776,7 +1776,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "3.0",
+                                          "form":  "2.0",
                                           "points":  22,
                                           "selectedBy":  "1.7"
                                       },
@@ -1789,7 +1789,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "3.2",
+                                          "form":  "3.3",
                                           "points":  21,
                                           "selectedBy":  "3.9"
                                       },
@@ -1802,7 +1802,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "2.5",
+                                          "form":  "2.7",
                                           "points":  23,
                                           "selectedBy":  "7.6"
                                       },
@@ -1815,7 +1815,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.2",
+                                          "form":  "0.0",
                                           "points":  1,
                                           "selectedBy":  "0.2"
                                       },
@@ -1854,7 +1854,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "5.2",
+                                          "form":  "7.0",
                                           "points":  21,
                                           "selectedBy":  "0.3"
                                       },
@@ -1867,9 +1867,9 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "9.0",
+                                          "form":  "8.7",
                                           "points":  39,
-                                          "selectedBy":  "11.3"
+                                          "selectedBy":  "11.4"
                                       },
                                       {
                                           "id":  95,
@@ -1893,7 +1893,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "3.8",
+                                          "form":  "4.0",
                                           "points":  16,
                                           "selectedBy":  "0.4"
                                       },
@@ -1919,7 +1919,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "4.8",
+                                          "form":  "6.0",
                                           "points":  28,
                                           "selectedBy":  "2.5"
                                       },
@@ -1945,7 +1945,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "1.5",
+                                          "form":  "2.0",
                                           "points":  6,
                                           "selectedBy":  "0.0"
                                       },
@@ -1958,7 +1958,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "2.0",
+                                          "form":  "2.3",
                                           "points":  9,
                                           "selectedBy":  "0.6"
                                       },
@@ -1984,7 +1984,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "3.5",
+                                          "form":  "4.0",
                                           "points":  15,
                                           "selectedBy":  "0.1"
                                       },
@@ -1997,7 +1997,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "2.5",
+                                          "form":  "2.7",
                                           "points":  10,
                                           "selectedBy":  "9.1"
                                       },
@@ -2023,7 +2023,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.5",
+                                          "form":  "0.3",
                                           "points":  3,
                                           "selectedBy":  "0.3"
                                       },
@@ -2036,9 +2036,9 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "2.0",
+                                          "form":  "1.3",
                                           "points":  22,
-                                          "selectedBy":  "10.0"
+                                          "selectedBy":  "9.9"
                                       },
                                       {
                                           "id":  620,
@@ -2049,7 +2049,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.5",
+                                          "form":  "0.7",
                                           "points":  2,
                                           "selectedBy":  "0.1"
                                       },
@@ -2175,7 +2175,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "4.2",
+                                          "form":  "5.7",
                                           "points":  23,
                                           "selectedBy":  "21.6"
                                       },
@@ -2201,7 +2201,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "3.2",
+                                          "form":  "4.3",
                                           "points":  13,
                                           "selectedBy":  "1.6"
                                       },
@@ -2214,7 +2214,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "3.2",
+                                          "form":  "4.7",
                                           "points":  19,
                                           "selectedBy":  "0.3"
                                       },
@@ -2227,7 +2227,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "5.2",
+                                          "form":  "7.0",
                                           "points":  38,
                                           "selectedBy":  "27.7"
                                       },
@@ -2240,7 +2240,7 @@
                                           "status":  "d",
                                           "chanceNext":  75,
                                           "news":  "Neck injury - 75% chance of playing",
-                                          "form":  "4.0",
+                                          "form":  "5.7",
                                           "points":  22,
                                           "selectedBy":  "1.5"
                                       },
@@ -2279,7 +2279,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.8",
+                                          "form":  "1.0",
                                           "points":  4,
                                           "selectedBy":  "0.0"
                                       },
@@ -2292,7 +2292,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.2",
+                                          "form":  "0.3",
                                           "points":  1,
                                           "selectedBy":  "0.1"
                                       },
@@ -2344,9 +2344,9 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "11.2",
+                                          "form":  "10.7",
                                           "points":  47,
-                                          "selectedBy":  "28.6"
+                                          "selectedBy":  "28.8"
                                       },
                                       {
                                           "id":  125,
@@ -2357,7 +2357,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "0.2",
+                                          "form":  "0.3",
                                           "points":  6,
                                           "selectedBy":  "0.5"
                                       },
@@ -2370,7 +2370,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.5",
+                                          "form":  "0.7",
                                           "points":  2,
                                           "selectedBy":  "0.1"
                                       },
@@ -2383,7 +2383,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "4.5",
+                                          "form":  "4.3",
                                           "points":  24,
                                           "selectedBy":  "4.0"
                                       },
@@ -2409,7 +2409,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "3.2",
+                                          "form":  "4.3",
                                           "points":  15,
                                           "selectedBy":  "0.4"
                                       },
@@ -2500,9 +2500,9 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "6.8",
+                                          "form":  "7.3",
                                           "points":  28,
-                                          "selectedBy":  "4.0"
+                                          "selectedBy":  "4.1"
                                       },
                                       {
                                           "id":  139,
@@ -2526,7 +2526,7 @@
                                           "status":  "d",
                                           "chanceNext":  75,
                                           "news":  "Hamstring injury - 75% chance of playing",
-                                          "form":  "1.8",
+                                          "form":  "2.3",
                                           "points":  7,
                                           "selectedBy":  "0.2"
                                       },
@@ -2539,7 +2539,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "6.5",
+                                          "form":  "8.7",
                                           "points":  32,
                                           "selectedBy":  "3.6"
                                       },
@@ -2552,7 +2552,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.2",
+                                          "form":  "0.0",
                                           "points":  1,
                                           "selectedBy":  "0.2"
                                       },
@@ -2565,7 +2565,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.5",
+                                          "form":  "0.3",
                                           "points":  3,
                                           "selectedBy":  "0.0"
                                       },
@@ -2578,7 +2578,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "4.8",
+                                          "form":  "3.7",
                                           "points":  20,
                                           "selectedBy":  "4.0"
                                       },
@@ -2819,7 +2819,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "2.2",
+                                          "form":  "2.3",
                                           "points":  9,
                                           "selectedBy":  "4.7"
                                       },
@@ -2832,9 +2832,9 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "5.2",
+                                          "form":  "5.3",
                                           "points":  29,
-                                          "selectedBy":  "40.4"
+                                          "selectedBy":  "40.5"
                                       },
                                       {
                                           "id":  101,
@@ -2845,7 +2845,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "0.5",
+                                          "form":  "0.7",
                                           "points":  2,
                                           "selectedBy":  "0.0"
                                       },
@@ -2858,7 +2858,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "1.0",
+                                          "form":  "1.3",
                                           "points":  4,
                                           "selectedBy":  "1.0"
                                       },
@@ -2897,7 +2897,7 @@
                                           "status":  "d",
                                           "chanceNext":  75,
                                           "news":  "Hamstring injury - 75% chance of playing",
-                                          "form":  "0.8",
+                                          "form":  "0.7",
                                           "points":  3,
                                           "selectedBy":  "5.8"
                                       },
@@ -2923,7 +2923,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.8",
+                                          "form":  "0.7",
                                           "points":  4,
                                           "selectedBy":  "1.0"
                                       },
@@ -2936,7 +2936,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "2.0",
+                                          "form":  "2.7",
                                           "points":  8,
                                           "selectedBy":  "0.2"
                                       },
@@ -2962,7 +2962,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "1.8",
+                                          "form":  "1.0",
                                           "points":  8,
                                           "selectedBy":  "0.8"
                                       },
@@ -2975,7 +2975,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.8",
+                                          "form":  "0.7",
                                           "points":  3,
                                           "selectedBy":  "0.9"
                                       },
@@ -3001,7 +3001,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.5",
+                                          "form":  "0.3",
                                           "points":  5,
                                           "selectedBy":  "0.3"
                                       },
@@ -3027,9 +3027,9 @@
                                           "status":  "d",
                                           "chanceNext":  75,
                                           "news":  "Muscular injury - 75% chance of playing",
-                                          "form":  "3.8",
+                                          "form":  "2.7",
                                           "points":  28,
-                                          "selectedBy":  "25.8"
+                                          "selectedBy":  "25.7"
                                       },
                                       {
                                           "id":  156,
@@ -3040,7 +3040,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "3.2",
+                                          "form":  "2.0",
                                           "points":  14,
                                           "selectedBy":  "1.4"
                                       },
@@ -3053,7 +3053,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.8",
+                                          "form":  "1.0",
                                           "points":  4,
                                           "selectedBy":  "0.7"
                                       },
@@ -3079,7 +3079,7 @@
                                           "status":  "d",
                                           "chanceNext":  50,
                                           "news":  "Calf injury - 50% chance of playing",
-                                          "form":  "0.2",
+                                          "form":  "0.0",
                                           "points":  1,
                                           "selectedBy":  "1.0"
                                       },
@@ -3092,7 +3092,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "2.5",
+                                          "form":  "1.0",
                                           "points":  11,
                                           "selectedBy":  "0.2"
                                       },
@@ -3118,7 +3118,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "0.2",
+                                          "form":  "0.3",
                                           "points":  2,
                                           "selectedBy":  "0.0"
                                       },
@@ -3131,9 +3131,9 @@
                                           "status":  "d",
                                           "chanceNext":  75,
                                           "news":  "Knee injury - 75% chance of playing",
-                                          "form":  "5.5",
+                                          "form":  "4.3",
                                           "points":  33,
-                                          "selectedBy":  "65.3"
+                                          "selectedBy":  "65.2"
                                       },
                                       {
                                           "id":  168,
@@ -3183,7 +3183,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "1.8",
+                                          "form":  "2.0",
                                           "points":  13,
                                           "selectedBy":  "6.8"
                                       },
@@ -3222,7 +3222,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.8",
+                                          "form":  "0.7",
                                           "points":  3,
                                           "selectedBy":  "0.1"
                                       },
@@ -3414,7 +3414,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "3.5",
+                                          "form":  "4.3",
                                           "points":  14,
                                           "selectedBy":  "0.1"
                                       },
@@ -3427,7 +3427,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "1.8",
+                                          "form":  "2.3",
                                           "points":  9,
                                           "selectedBy":  "0.1"
                                       },
@@ -3440,7 +3440,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "3.8",
+                                          "form":  "4.3",
                                           "points":  16,
                                           "selectedBy":  "0.8"
                                       },
@@ -3479,7 +3479,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "5.2",
+                                          "form":  "4.3",
                                           "points":  24,
                                           "selectedBy":  "8.6"
                                       },
@@ -3505,9 +3505,9 @@
                                           "status":  "d",
                                           "chanceNext":  75,
                                           "news":  "Hamstring injury - 75% chance of playing",
-                                          "form":  "1.2",
+                                          "form":  "1.0",
                                           "points":  6,
-                                          "selectedBy":  "8.8"
+                                          "selectedBy":  "8.7"
                                       },
                                       {
                                           "id":  176,
@@ -3518,7 +3518,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "4.8",
+                                          "form":  "5.7",
                                           "points":  20,
                                           "selectedBy":  "0.7"
                                       },
@@ -3557,7 +3557,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.2",
+                                          "form":  "0.3",
                                           "points":  1,
                                           "selectedBy":  "0.0"
                                       },
@@ -3596,7 +3596,7 @@
                                           "status":  "i",
                                           "chanceNext":  0,
                                           "news":  "Calf injury - Unknown return date",
-                                          "form":  "0.8",
+                                          "form":  "0.7",
                                           "points":  4,
                                           "selectedBy":  "0.6"
                                       },
@@ -3622,7 +3622,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "2.2",
+                                          "form":  "2.3",
                                           "points":  11,
                                           "selectedBy":  "0.1"
                                       },
@@ -3635,7 +3635,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.2",
+                                          "form":  "0.0",
                                           "points":  1,
                                           "selectedBy":  "0.1"
                                       },
@@ -3648,7 +3648,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "1.2",
+                                          "form":  "1.3",
                                           "points":  5,
                                           "selectedBy":  "0.1"
                                       },
@@ -3674,7 +3674,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.5",
+                                          "form":  "0.3",
                                           "points":  3,
                                           "selectedBy":  "0.1"
                                       },
@@ -3700,7 +3700,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.8",
+                                          "form":  "0.7",
                                           "points":  5,
                                           "selectedBy":  "0.1"
                                       },
@@ -3752,7 +3752,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "1.8",
+                                          "form":  "2.0",
                                           "points":  9,
                                           "selectedBy":  "0.8"
                                       },
@@ -3765,7 +3765,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.5",
+                                          "form":  "0.7",
                                           "points":  4,
                                           "selectedBy":  "0.6"
                                       },
@@ -3804,7 +3804,7 @@
                                           "status":  "s",
                                           "chanceNext":  0,
                                           "news":  "Suspended until 19 Oct",
-                                          "form":  "0.5",
+                                          "form":  "0.0",
                                           "points":  3,
                                           "selectedBy":  "0.4"
                                       },
@@ -3817,7 +3817,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "2.0",
+                                          "form":  "1.7",
                                           "points":  9,
                                           "selectedBy":  "0.1"
                                       },
@@ -3830,7 +3830,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.5",
+                                          "form":  "0.3",
                                           "points":  3,
                                           "selectedBy":  "0.1"
                                       },
@@ -3843,7 +3843,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.2",
+                                          "form":  "0.3",
                                           "points":  1,
                                           "selectedBy":  "0.1"
                                       },
@@ -4048,7 +4048,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.2",
+                                          "form":  "0.0",
                                           "points":  2,
                                           "selectedBy":  "0.0"
                                       },
@@ -4061,7 +4061,7 @@
                                           "status":  "s",
                                           "chanceNext":  0,
                                           "news":  "Suspended until 25 Oct",
-                                          "form":  "0.2",
+                                          "form":  "0.0",
                                           "points":  1,
                                           "selectedBy":  "0.1"
                                       },
@@ -4074,7 +4074,7 @@
                                           "status":  "i",
                                           "chanceNext":  0,
                                           "news":  "Foot injury - Expected back 11 Oct",
-                                          "form":  "0.8",
+                                          "form":  "0.7",
                                           "points":  5,
                                           "selectedBy":  "1.3"
                                       },
@@ -4087,7 +4087,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "2.0",
+                                          "form":  "2.7",
                                           "points":  8,
                                           "selectedBy":  "0.1"
                                       },
@@ -4100,7 +4100,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "2.8",
+                                          "form":  "3.7",
                                           "points":  14,
                                           "selectedBy":  "0.6"
                                       },
@@ -4113,7 +4113,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "2.2",
+                                          "form":  "3.0",
                                           "points":  10,
                                           "selectedBy":  "0.2"
                                       },
@@ -4126,7 +4126,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "5.8",
+                                          "form":  "7.7",
                                           "points":  24,
                                           "selectedBy":  "6.0"
                                       },
@@ -4165,7 +4165,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.5",
+                                          "form":  "0.3",
                                           "points":  2,
                                           "selectedBy":  "0.1"
                                       },
@@ -4178,7 +4178,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "0.2",
+                                          "form":  "0.3",
                                           "points":  1,
                                           "selectedBy":  "0.6"
                                       },
@@ -4204,7 +4204,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "3.2",
+                                          "form":  "2.7",
                                           "points":  14,
                                           "selectedBy":  "0.3"
                                       },
@@ -4217,7 +4217,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.5",
+                                          "form":  "0.7",
                                           "points":  2,
                                           "selectedBy":  "7.3"
                                       },
@@ -4230,7 +4230,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.2",
+                                          "form":  "0.3",
                                           "points":  1,
                                           "selectedBy":  "0.1"
                                       },
@@ -4243,7 +4243,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "4.5",
+                                          "form":  "5.3",
                                           "points":  21,
                                           "selectedBy":  "0.5"
                                       },
@@ -4347,9 +4347,9 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "3.2",
+                                          "form":  "3.7",
                                           "points":  14,
-                                          "selectedBy":  "0.6"
+                                          "selectedBy":  "0.7"
                                       },
                                       {
                                           "id":  223,
@@ -4373,7 +4373,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "1.8",
+                                          "form":  "1.7",
                                           "points":  8,
                                           "selectedBy":  "0.5"
                                       },
@@ -4399,7 +4399,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.2",
+                                          "form":  "0.0",
                                           "points":  3,
                                           "selectedBy":  "0.1"
                                       },
@@ -4425,7 +4425,7 @@
                                           "status":  "d",
                                           "chanceNext":  75,
                                           "news":  "Calf injury - 75% chance of playing",
-                                          "form":  "0.5",
+                                          "form":  "0.3",
                                           "points":  3,
                                           "selectedBy":  "0.3"
                                       },
@@ -4438,7 +4438,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "4.5",
+                                          "form":  "5.3",
                                           "points":  19,
                                           "selectedBy":  "0.3"
                                       },
@@ -4451,7 +4451,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.5",
+                                          "form":  "0.3",
                                           "points":  2,
                                           "selectedBy":  "0.0"
                                       },
@@ -4662,7 +4662,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "2.0",
+                                          "form":  "2.3",
                                           "points":  9,
                                           "selectedBy":  "0.1"
                                       },
@@ -4675,7 +4675,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "4.5",
+                                          "form":  "5.0",
                                           "points":  25,
                                           "selectedBy":  "9.1"
                                       },
@@ -4714,9 +4714,9 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "9.2",
+                                          "form":  "8.3",
                                           "points":  43,
-                                          "selectedBy":  "16.3"
+                                          "selectedBy":  "16.4"
                                       },
                                       {
                                           "id":  230,
@@ -4727,7 +4727,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "5.2",
+                                          "form":  "5.7",
                                           "points":  27,
                                           "selectedBy":  "2.4"
                                       },
@@ -4753,7 +4753,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.5",
+                                          "form":  "0.7",
                                           "points":  2,
                                           "selectedBy":  "0.3"
                                       },
@@ -4766,7 +4766,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "5.2",
+                                          "form":  "5.7",
                                           "points":  27,
                                           "selectedBy":  "4.2"
                                       },
@@ -4805,7 +4805,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "2.2",
+                                          "form":  "2.3",
                                           "points":  20,
                                           "selectedBy":  "6.0"
                                       },
@@ -4818,7 +4818,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "1.2",
+                                          "form":  "1.7",
                                           "points":  6,
                                           "selectedBy":  "0.5"
                                       },
@@ -4831,7 +4831,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "2.5",
+                                          "form":  "3.0",
                                           "points":  11,
                                           "selectedBy":  "0.2"
                                       },
@@ -4844,7 +4844,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "4.0",
+                                          "form":  "4.7",
                                           "points":  19,
                                           "selectedBy":  "0.9"
                                       },
@@ -4883,7 +4883,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.2",
+                                          "form":  "0.3",
                                           "points":  1,
                                           "selectedBy":  "0.0"
                                       },
@@ -4896,7 +4896,7 @@
                                           "status":  "i",
                                           "chanceNext":  0,
                                           "news":  "Unspecified injury - Expected back 11 Oct",
-                                          "form":  "0.8",
+                                          "form":  "0.3",
                                           "points":  6,
                                           "selectedBy":  "0.0"
                                       },
@@ -4909,7 +4909,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "1.8",
+                                          "form":  "2.0",
                                           "points":  10,
                                           "selectedBy":  "0.2"
                                       },
@@ -4922,7 +4922,7 @@
                                           "status":  "u",
                                           "chanceNext":  0,
                                           "news":  "Has joined Fiorentina permanently",
-                                          "form":  "0.2",
+                                          "form":  "0.0",
                                           "points":  2,
                                           "selectedBy":  "0.6"
                                       },
@@ -4935,7 +4935,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "3.0",
+                                          "form":  "3.3",
                                           "points":  20,
                                           "selectedBy":  "8.3"
                                       },
@@ -5037,9 +5037,9 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "4.0",
+                                          "form":  "4.3",
                                           "points":  18,
-                                          "selectedBy":  "3.3"
+                                          "selectedBy":  "3.4"
                                       },
                                       {
                                           "id":  251,
@@ -5076,7 +5076,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "0.8",
+                                          "form":  "0.7",
                                           "points":  3,
                                           "selectedBy":  "0.2"
                                       },
@@ -5089,7 +5089,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "2.8",
+                                          "form":  "3.0",
                                           "points":  12,
                                           "selectedBy":  "1.5"
                                       },
@@ -5128,7 +5128,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "3.8",
+                                          "form":  "4.3",
                                           "points":  15,
                                           "selectedBy":  "0.7"
                                       },
@@ -5141,7 +5141,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "3.5",
+                                          "form":  "2.7",
                                           "points":  20,
                                           "selectedBy":  "0.9"
                                       },
@@ -5154,7 +5154,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "3.0",
+                                          "form":  "3.3",
                                           "points":  14,
                                           "selectedBy":  "0.7"
                                       },
@@ -5167,7 +5167,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.8",
+                                          "form":  "0.7",
                                           "points":  3,
                                           "selectedBy":  "0.2"
                                       },
@@ -5180,7 +5180,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.8",
+                                          "form":  "0.7",
                                           "points":  4,
                                           "selectedBy":  "0.0"
                                       },
@@ -5193,7 +5193,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "2.8",
+                                          "form":  "2.7",
                                           "points":  13,
                                           "selectedBy":  "0.3"
                                       },
@@ -5206,7 +5206,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "2.2",
+                                          "form":  "2.3",
                                           "points":  11,
                                           "selectedBy":  "0.3"
                                       },
@@ -5232,9 +5232,9 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "4.2",
+                                          "form":  "5.0",
                                           "points":  24,
-                                          "selectedBy":  "2.5"
+                                          "selectedBy":  "2.6"
                                       },
                                       {
                                           "id":  269,
@@ -5245,7 +5245,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "0.5",
+                                          "form":  "0.3",
                                           "points":  3,
                                           "selectedBy":  "0.3"
                                       },
@@ -5271,7 +5271,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.5",
+                                          "form":  "0.7",
                                           "points":  3,
                                           "selectedBy":  "0.4"
                                       },
@@ -5310,7 +5310,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "2.5",
+                                          "form":  "3.0",
                                           "points":  12,
                                           "selectedBy":  "0.2"
                                       },
@@ -5323,7 +5323,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "3.0",
+                                          "form":  "3.7",
                                           "points":  13,
                                           "selectedBy":  "0.1"
                                       },
@@ -5444,7 +5444,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "0.5",
+                                          "form":  "0.3",
                                           "points":  2,
                                           "selectedBy":  "0.0"
                                       },
@@ -5509,7 +5509,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "4.5",
+                                          "form":  "3.0",
                                           "points":  26,
                                           "selectedBy":  "7.0"
                                       },
@@ -5535,7 +5535,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "3.2",
+                                          "form":  "2.3",
                                           "points":  27,
                                           "selectedBy":  "14.0"
                                       },
@@ -5548,7 +5548,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "2.0",
+                                          "form":  "2.7",
                                           "points":  14,
                                           "selectedBy":  "0.7"
                                       },
@@ -5561,7 +5561,7 @@
                                           "status":  "u",
                                           "chanceNext":  0,
                                           "news":  "Has joined Genoa permanently",
-                                          "form":  "0.2",
+                                          "form":  "0.0",
                                           "points":  2,
                                           "selectedBy":  "0.0"
                                       },
@@ -5574,7 +5574,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "4.5",
+                                          "form":  "4.0",
                                           "points":  24,
                                           "selectedBy":  "2.9"
                                       },
@@ -5626,7 +5626,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "7.0",
+                                          "form":  "7.3",
                                           "points":  31,
                                           "selectedBy":  "5.1"
                                       },
@@ -5639,7 +5639,7 @@
                                           "status":  "u",
                                           "chanceNext":  0,
                                           "news":  "Has joined Birmingham on loan for the rest of the season",
-                                          "form":  "1.5",
+                                          "form":  "0.0",
                                           "points":  6,
                                           "selectedBy":  "0.0"
                                       },
@@ -5665,7 +5665,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "0.2",
+                                          "form":  "0.3",
                                           "points":  3,
                                           "selectedBy":  "0.5"
                                       },
@@ -5678,7 +5678,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "2.2",
+                                          "form":  "2.3",
                                           "points":  15,
                                           "selectedBy":  "5.2"
                                       },
@@ -5743,7 +5743,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "2.0",
+                                          "form":  "2.3",
                                           "points":  13,
                                           "selectedBy":  "1.9"
                                       },
@@ -5808,7 +5808,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "0.2",
+                                          "form":  "0.3",
                                           "points":  1,
                                           "selectedBy":  "0.0"
                                       },
@@ -5834,7 +5834,7 @@
                                           "status":  "i",
                                           "chanceNext":  0,
                                           "news":  "Calf injury - Expected back 11 Oct",
-                                          "form":  "0.2",
+                                          "form":  "0.0",
                                           "points":  1,
                                           "selectedBy":  "0.0"
                                       },
@@ -5847,9 +5847,9 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "6.0",
+                                          "form":  "4.7",
                                           "points":  34,
-                                          "selectedBy":  "12.7"
+                                          "selectedBy":  "12.8"
                                       },
                                       {
                                           "id":  574,
@@ -5860,7 +5860,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.2",
+                                          "form":  "0.3",
                                           "points":  1,
                                           "selectedBy":  "0.1"
                                       },
@@ -5873,7 +5873,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "1.0",
+                                          "form":  "1.3",
                                           "points":  7,
                                           "selectedBy":  "0.1"
                                       },
@@ -5899,7 +5899,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "2.5",
+                                          "form":  "3.0",
                                           "points":  25,
                                           "selectedBy":  "6.3"
                                       },
@@ -5925,7 +5925,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "2.2",
+                                          "form":  "2.7",
                                           "points":  9,
                                           "selectedBy":  "0.0"
                                       },
@@ -6186,7 +6186,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "2.5",
+                                          "form":  "2.7",
                                           "points":  12,
                                           "selectedBy":  "12.7"
                                       },
@@ -6199,7 +6199,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "1.5",
+                                          "form":  "1.7",
                                           "points":  11,
                                           "selectedBy":  "0.1"
                                       },
@@ -6212,7 +6212,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.5",
+                                          "form":  "0.7",
                                           "points":  2,
                                           "selectedBy":  "0.4"
                                       },
@@ -6264,7 +6264,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "1.5",
+                                          "form":  "2.0",
                                           "points":  10,
                                           "selectedBy":  "2.7"
                                       },
@@ -6277,7 +6277,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "5.8",
+                                          "form":  "5.7",
                                           "points":  25,
                                           "selectedBy":  "6.9"
                                       },
@@ -6290,7 +6290,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.2",
+                                          "form":  "0.7",
                                           "points":  3,
                                           "selectedBy":  "1.1"
                                       },
@@ -6316,7 +6316,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.2",
+                                          "form":  "0.0",
                                           "points":  1,
                                           "selectedBy":  "0.6"
                                       },
@@ -6329,7 +6329,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.5",
+                                          "form":  "0.0",
                                           "points":  6,
                                           "selectedBy":  "0.1"
                                       },
@@ -6381,7 +6381,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "1.0",
+                                          "form":  "1.3",
                                           "points":  11,
                                           "selectedBy":  "0.2"
                                       },
@@ -6407,7 +6407,7 @@
                                           "status":  "s",
                                           "chanceNext":  0,
                                           "news":  "Suspended until 17 Oct",
-                                          "form":  "1.5",
+                                          "form":  "0.7",
                                           "points":  8,
                                           "selectedBy":  "0.2"
                                       },
@@ -6420,7 +6420,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "4.2",
+                                          "form":  "5.3",
                                           "points":  26,
                                           "selectedBy":  "3.5"
                                       },
@@ -6446,7 +6446,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "0.5",
+                                          "form":  "0.7",
                                           "points":  2,
                                           "selectedBy":  "0.1"
                                       },
@@ -6472,7 +6472,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "1.5",
+                                          "form":  "0.3",
                                           "points":  7,
                                           "selectedBy":  "1.2"
                                       },
@@ -6511,7 +6511,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.5",
+                                          "form":  "0.3",
                                           "points":  3,
                                           "selectedBy":  "1.0"
                                       },
@@ -6550,7 +6550,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "1.5",
+                                          "form":  "1.3",
                                           "points":  8,
                                           "selectedBy":  "0.2"
                                       },
@@ -6563,7 +6563,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "1.2",
+                                          "form":  "1.0",
                                           "points":  7,
                                           "selectedBy":  "0.6"
                                       },
@@ -6576,7 +6576,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "0.5",
+                                          "form":  "0.7",
                                           "points":  2,
                                           "selectedBy":  "0.1"
                                       },
@@ -6589,7 +6589,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "2.5",
+                                          "form":  "1.7",
                                           "points":  15,
                                           "selectedBy":  "0.8"
                                       },
@@ -6602,7 +6602,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "1.2",
+                                          "form":  "1.3",
                                           "points":  6,
                                           "selectedBy":  "0.9"
                                       },
@@ -6628,7 +6628,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "2.8",
+                                          "form":  "3.3",
                                           "points":  11,
                                           "selectedBy":  "0.1"
                                       },
@@ -6767,7 +6767,7 @@
                                           "status":  "i",
                                           "chanceNext":  0,
                                           "news":  "Thigh injury - Unknown return date",
-                                          "form":  "0.5",
+                                          "form":  "0.3",
                                           "points":  5,
                                           "selectedBy":  "1.7"
                                       },
@@ -6793,7 +6793,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.5",
+                                          "form":  "0.3",
                                           "points":  12,
                                           "selectedBy":  "0.7"
                                       },
@@ -6806,7 +6806,7 @@
                                           "status":  "i",
                                           "chanceNext":  0,
                                           "news":  "Hamstring injury - Expected back 21 Nov",
-                                          "form":  "0.2",
+                                          "form":  "0.0",
                                           "points":  7,
                                           "selectedBy":  "0.8"
                                       },
@@ -6819,9 +6819,9 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "9.0",
+                                          "form":  "11.3",
                                           "points":  42,
-                                          "selectedBy":  "7.1"
+                                          "selectedBy":  "7.2"
                                       },
                                       {
                                           "id":  331,
@@ -6832,7 +6832,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "3.5",
+                                          "form":  "4.7",
                                           "points":  14,
                                           "selectedBy":  "0.1"
                                       },
@@ -6845,9 +6845,9 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "4.0",
+                                          "form":  "4.7",
                                           "points":  26,
-                                          "selectedBy":  "1.5"
+                                          "selectedBy":  "1.4"
                                       },
                                       {
                                           "id":  333,
@@ -6871,7 +6871,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "5.2",
+                                          "form":  "5.7",
                                           "points":  27,
                                           "selectedBy":  "4.3"
                                       },
@@ -6884,7 +6884,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "3.5",
+                                          "form":  "3.3",
                                           "points":  27,
                                           "selectedBy":  "2.5"
                                       },
@@ -6897,7 +6897,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "4.2",
+                                          "form":  "5.0",
                                           "points":  18,
                                           "selectedBy":  "0.4"
                                       },
@@ -6923,7 +6923,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "4.0",
+                                          "form":  "4.7",
                                           "points":  21,
                                           "selectedBy":  "0.9"
                                       },
@@ -6936,7 +6936,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.2",
+                                          "form":  "0.3",
                                           "points":  2,
                                           "selectedBy":  "0.1"
                                       },
@@ -6975,7 +6975,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.8",
+                                          "form":  "0.7",
                                           "points":  3,
                                           "selectedBy":  "0.1"
                                       },
@@ -7001,7 +7001,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "3.5",
+                                          "form":  "4.3",
                                           "points":  14,
                                           "selectedBy":  "0.3"
                                       },
@@ -7014,7 +7014,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "5.2",
+                                          "form":  "4.3",
                                           "points":  22,
                                           "selectedBy":  "24.8"
                                       },
@@ -7027,7 +7027,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "1.8",
+                                          "form":  "1.0",
                                           "points":  7,
                                           "selectedBy":  "0.5"
                                       },
@@ -7066,7 +7066,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "4.8",
+                                          "form":  "5.3",
                                           "points":  28,
                                           "selectedBy":  "5.5"
                                       },
@@ -7079,7 +7079,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "3.2",
+                                          "form":  "4.0",
                                           "points":  13,
                                           "selectedBy":  "0.1"
                                       },
@@ -7263,9 +7263,9 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "6.2",
+                                          "form":  "8.3",
                                           "points":  27,
-                                          "selectedBy":  "4.0"
+                                          "selectedBy":  "4.1"
                                       },
                                       {
                                           "id":  351,
@@ -7341,7 +7341,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "5.8",
+                                          "form":  "7.3",
                                           "points":  25,
                                           "selectedBy":  "16.2"
                                       },
@@ -7354,7 +7354,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.5",
+                                          "form":  "0.3",
                                           "points":  2,
                                           "selectedBy":  "1.8"
                                       },
@@ -7367,7 +7367,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "3.2",
+                                          "form":  "4.0",
                                           "points":  13,
                                           "selectedBy":  "2.2"
                                       },
@@ -7419,7 +7419,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "5.8",
+                                          "form":  "6.7",
                                           "points":  24,
                                           "selectedBy":  "3.5"
                                       },
@@ -7445,7 +7445,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.5",
+                                          "form":  "0.3",
                                           "points":  2,
                                           "selectedBy":  "0.1"
                                       },
@@ -7481,12 +7481,12 @@
                                           "fullName":  "Cody Gakpo",
                                           "position":  "MID",
                                           "team":  "Liverpool",
-                                          "status":  "a",
-                                          "chanceNext":  100,
-                                          "news":  "",
+                                          "status":  "d",
+                                          "chanceNext":  75,
+                                          "news":  "Ankle injury - 75% chance of playing",
                                           "form":  "5.0",
                                           "points":  32,
-                                          "selectedBy":  "12.5"
+                                          "selectedBy":  "12.4"
                                       },
                                       {
                                           "id":  368,
@@ -7497,9 +7497,9 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "3.0",
+                                          "form":  "2.7",
                                           "points":  20,
-                                          "selectedBy":  "32.9"
+                                          "selectedBy":  "32.8"
                                       },
                                       {
                                           "id":  369,
@@ -7510,7 +7510,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.5",
+                                          "form":  "0.3",
                                           "points":  4,
                                           "selectedBy":  "0.5"
                                       },
@@ -7549,7 +7549,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "2.5",
+                                          "form":  "2.7",
                                           "points":  11,
                                           "selectedBy":  "1.3"
                                       },
@@ -7588,7 +7588,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.8",
+                                          "form":  "0.7",
                                           "points":  3,
                                           "selectedBy":  "0.0"
                                       },
@@ -7614,7 +7614,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "2.8",
+                                          "form":  "1.7",
                                           "points":  15,
                                           "selectedBy":  "0.9"
                                       },
@@ -7639,10 +7639,10 @@
                                           "team":  "Liverpool",
                                           "status":  "d",
                                           "chanceNext":  75,
-                                          "news":  "Foot injury - 75% chance of playing",
-                                          "form":  "7.8",
+                                          "news":  "Thigh injury - 75% chance of playing",
+                                          "form":  "7.7",
                                           "points":  33,
-                                          "selectedBy":  "22.5"
+                                          "selectedBy":  "22.4"
                                       },
                                       {
                                           "id":  380,
@@ -7666,7 +7666,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.5",
+                                          "form":  "0.7",
                                           "points":  3,
                                           "selectedBy":  "0.0"
                                       },
@@ -7705,7 +7705,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "5.2",
+                                          "form":  "7.0",
                                           "points":  22,
                                           "selectedBy":  "3.0"
                                       },
@@ -7720,7 +7720,7 @@
                                           "news":  "",
                                           "form":  "2.3",
                                           "points":  7,
-                                          "selectedBy":  "1.8"
+                                          "selectedBy":  "1.9"
                                       }
                                   ],
                       "missingCount":  10,
@@ -7780,6 +7780,16 @@
                                                 },
                                                 {
                                                     "team":  "Liverpool",
+                                                    "player":  "Gakpo",
+                                                    "position":  "MID",
+                                                    "status":  "d",
+                                                    "chanceNext":  75,
+                                                    "news":  "Ankle injury - 75% chance of playing",
+                                                    "severity":  "doubtful",
+                                                    "isKey":  true
+                                                },
+                                                {
+                                                    "team":  "Liverpool",
                                                     "player":  "Chiesa",
                                                     "position":  "MID",
                                                     "status":  "i",
@@ -7814,7 +7824,7 @@
                                                     "position":  "FWD",
                                                     "status":  "d",
                                                     "chanceNext":  75,
-                                                    "news":  "Foot injury - 75% chance of playing",
+                                                    "news":  "Thigh injury - 75% chance of playing",
                                                     "severity":  "doubtful",
                                                     "isKey":  true
                                                 },
@@ -7854,7 +7864,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "3.0",
+                                          "form":  "4.0",
                                           "points":  13,
                                           "selectedBy":  "3.6"
                                       },
@@ -7867,7 +7877,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "3.2",
+                                          "form":  "3.0",
                                           "points":  22,
                                           "selectedBy":  "6.7"
                                       },
@@ -7880,7 +7890,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "4.0",
+                                          "form":  "5.3",
                                           "points":  19,
                                           "selectedBy":  "7.6"
                                       },
@@ -7906,7 +7916,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "1.0",
+                                          "form":  "0.7",
                                           "points":  6,
                                           "selectedBy":  "10.9"
                                       },
@@ -7919,7 +7929,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "5.0",
+                                          "form":  "6.0",
                                           "points":  30,
                                           "selectedBy":  "18.2"
                                       },
@@ -7932,7 +7942,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "2.5",
+                                          "form":  "3.3",
                                           "points":  11,
                                           "selectedBy":  "1.0"
                                       },
@@ -7945,7 +7955,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "3.8",
+                                          "form":  "4.3",
                                           "points":  17,
                                           "selectedBy":  "1.9"
                                       },
@@ -7958,7 +7968,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "7.0",
+                                          "form":  "7.7",
                                           "points":  37,
                                           "selectedBy":  "26.8"
                                       },
@@ -7984,7 +7994,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "1.8",
+                                          "form":  "1.7",
                                           "points":  9,
                                           "selectedBy":  "1.4"
                                       },
@@ -8023,7 +8033,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.2",
+                                          "form":  "0.0",
                                           "points":  1,
                                           "selectedBy":  "0.0"
                                       },
@@ -8036,7 +8046,7 @@
                                           "status":  "d",
                                           "chanceNext":  75,
                                           "news":  "Ankle injury - 75% chance of playing",
-                                          "form":  "7.8",
+                                          "form":  "8.7",
                                           "points":  33,
                                           "selectedBy":  "15.4"
                                       },
@@ -8049,7 +8059,7 @@
                                           "status":  "s",
                                           "chanceNext":  0,
                                           "news":  "Suspended until 17 Oct",
-                                          "form":  "2.0",
+                                          "form":  "-0.3",
                                           "points":  9,
                                           "selectedBy":  "1.8"
                                       },
@@ -8062,7 +8072,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "6.5",
+                                          "form":  "4.0",
                                           "points":  34,
                                           "selectedBy":  "28.4"
                                       },
@@ -8075,7 +8085,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "0.2",
+                                          "form":  "0.3",
                                           "points":  1,
                                           "selectedBy":  "0.7"
                                       },
@@ -8114,7 +8124,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.2",
+                                          "form":  "0.0",
                                           "points":  2,
                                           "selectedBy":  "0.1"
                                       },
@@ -8179,7 +8189,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "9.2",
+                                          "form":  "8.0",
                                           "points":  39,
                                           "selectedBy":  "73.8"
                                       },
@@ -8192,7 +8202,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "3.2",
+                                          "form":  "3.3",
                                           "points":  15,
                                           "selectedBy":  "4.0"
                                       },
@@ -8218,7 +8228,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.5",
+                                          "form":  "0.3",
                                           "points":  2,
                                           "selectedBy":  "0.2"
                                       },
@@ -8231,7 +8241,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.5",
+                                          "form":  "0.3",
                                           "points":  2,
                                           "selectedBy":  "0.1"
                                       },
@@ -8244,7 +8254,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.2",
+                                          "form":  "0.0",
                                           "points":  1,
                                           "selectedBy":  "0.2"
                                       },
@@ -8386,7 +8396,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "3.0",
+                                          "form":  "2.7",
                                           "points":  14,
                                           "selectedBy":  "1.5"
                                       },
@@ -8412,7 +8422,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.5",
+                                          "form":  "0.3",
                                           "points":  4,
                                           "selectedBy":  "0.6"
                                       },
@@ -8438,7 +8448,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "2.5",
+                                          "form":  "2.7",
                                           "points":  11,
                                           "selectedBy":  "9.9"
                                       },
@@ -8474,10 +8484,10 @@
                                           "fullName":  "Patrick Dorgu",
                                           "position":  "MID",
                                           "team":  "Man United",
-                                          "status":  "a",
-                                          "chanceNext":  null,
-                                          "news":  "",
-                                          "form":  "2.5",
+                                          "status":  "d",
+                                          "chanceNext":  75,
+                                          "news":  "Hamstring injury - 75% chance of playing",
+                                          "form":  "3.0",
                                           "points":  10,
                                           "selectedBy":  "0.5"
                                       },
@@ -8503,7 +8513,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "1.8",
+                                          "form":  "1.7",
                                           "points":  8,
                                           "selectedBy":  "1.6"
                                       },
@@ -8516,9 +8526,9 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "2.2",
+                                          "form":  "1.7",
                                           "points":  10,
-                                          "selectedBy":  "8.7"
+                                          "selectedBy":  "8.6"
                                       },
                                       {
                                           "id":  419,
@@ -8529,7 +8539,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "1.5",
+                                          "form":  "1.7",
                                           "points":  6,
                                           "selectedBy":  "1.3"
                                       },
@@ -8542,7 +8552,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.5",
+                                          "form":  "0.3",
                                           "points":  2,
                                           "selectedBy":  "0.5"
                                       },
@@ -8568,7 +8578,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.5",
+                                          "form":  "0.3",
                                           "points":  3,
                                           "selectedBy":  "0.5"
                                       },
@@ -8620,7 +8630,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "7.2",
+                                          "form":  "2.0",
                                           "points":  31,
                                           "selectedBy":  "38.5"
                                       },
@@ -8633,7 +8643,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "5.8",
+                                          "form":  "4.0",
                                           "points":  25,
                                           "selectedBy":  "20.6"
                                       },
@@ -8646,7 +8656,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "6.0",
+                                          "form":  "5.0",
                                           "points":  26,
                                           "selectedBy":  "5.8"
                                       },
@@ -8659,7 +8669,7 @@
                                           "status":  "d",
                                           "chanceNext":  75,
                                           "news":  "Unspecified injury - 75% chance of playing",
-                                          "form":  "2.2",
+                                          "form":  "2.3",
                                           "points":  10,
                                           "selectedBy":  "1.5"
                                       },
@@ -8672,7 +8682,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "0.2",
+                                          "form":  "0.3",
                                           "points":  1,
                                           "selectedBy":  "0.0"
                                       },
@@ -8698,7 +8708,7 @@
                                           "status":  "d",
                                           "chanceNext":  75,
                                           "news":  "Unspecified injury - 75% chance of playing",
-                                          "form":  "5.2",
+                                          "form":  "5.7",
                                           "points":  22,
                                           "selectedBy":  "1.6"
                                       },
@@ -8789,7 +8799,7 @@
                                           "status":  "d",
                                           "chanceNext":  75,
                                           "news":  "Shin injury - 75% chance of playing",
-                                          "form":  "1.8",
+                                          "form":  "2.0",
                                           "points":  8,
                                           "selectedBy":  "1.6"
                                       },
@@ -8802,7 +8812,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.5",
+                                          "form":  "0.7",
                                           "points":  2,
                                           "selectedBy":  "0.4"
                                       },
@@ -8854,6 +8864,16 @@
                                                     "news":  "Hamstring injury - Unknown return date",
                                                     "severity":  "out",
                                                     "isKey":  false
+                                                },
+                                                {
+                                                    "team":  "Man United",
+                                                    "player":  "Dorgu",
+                                                    "position":  "MID",
+                                                    "status":  "d",
+                                                    "chanceNext":  75,
+                                                    "news":  "Hamstring injury - 75% chance of playing",
+                                                    "severity":  "doubtful",
+                                                    "isKey":  true
                                                 },
                                                 {
                                                     "team":  "Man United",
@@ -8961,7 +8981,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "1.2",
+                                          "form":  "1.0",
                                           "points":  5,
                                           "selectedBy":  "0.2"
                                       },
@@ -9013,7 +9033,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "2.8",
+                                          "form":  "1.7",
                                           "points":  14,
                                           "selectedBy":  "2.2"
                                       },
@@ -9026,7 +9046,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "0.2",
+                                          "form":  "0.3",
                                           "points":  2,
                                           "selectedBy":  "0.2"
                                       },
@@ -9039,7 +9059,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "3.0",
+                                          "form":  "2.3",
                                           "points":  15,
                                           "selectedBy":  "0.7"
                                       },
@@ -9065,9 +9085,9 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "7.0",
+                                          "form":  "5.7",
                                           "points":  31,
-                                          "selectedBy":  "17.2"
+                                          "selectedBy":  "17.3"
                                       },
                                       {
                                           "id":  450,
@@ -9078,7 +9098,7 @@
                                           "status":  "d",
                                           "chanceNext":  75,
                                           "news":  "Unspecified injury - 75% chance of playing",
-                                          "form":  "1.0",
+                                          "form":  "1.3",
                                           "points":  4,
                                           "selectedBy":  "0.1"
                                       },
@@ -9104,9 +9124,9 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "6.5",
+                                          "form":  "7.7",
                                           "points":  28,
-                                          "selectedBy":  "5.6"
+                                          "selectedBy":  "5.7"
                                       },
                                       {
                                           "id":  454,
@@ -9117,9 +9137,9 @@
                                           "status":  "i",
                                           "chanceNext":  0,
                                           "news":  "Unspecified injury - Unknown return date",
-                                          "form":  "2.2",
+                                          "form":  "0.3",
                                           "points":  18,
-                                          "selectedBy":  "4.6"
+                                          "selectedBy":  "4.5"
                                       },
                                       {
                                           "id":  456,
@@ -9130,7 +9150,7 @@
                                           "status":  "i",
                                           "chanceNext":  0,
                                           "news":  "Thigh injury - Unknown return date",
-                                          "form":  "1.8",
+                                          "form":  "2.0",
                                           "points":  7,
                                           "selectedBy":  "0.2"
                                       },
@@ -9143,7 +9163,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.8",
+                                          "form":  "0.7",
                                           "points":  3,
                                           "selectedBy":  "0.1"
                                       },
@@ -9169,7 +9189,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "2.2",
+                                          "form":  "2.0",
                                           "points":  12,
                                           "selectedBy":  "0.1"
                                       },
@@ -9182,7 +9202,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "4.0",
+                                          "form":  "4.3",
                                           "points":  22,
                                           "selectedBy":  "0.6"
                                       },
@@ -9195,7 +9215,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "2.0",
+                                          "form":  "2.3",
                                           "points":  8,
                                           "selectedBy":  "0.1"
                                       },
@@ -9208,7 +9228,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "1.8",
+                                          "form":  "2.0",
                                           "points":  8,
                                           "selectedBy":  "0.1"
                                       },
@@ -9221,7 +9241,7 @@
                                           "status":  "u",
                                           "chanceNext":  0,
                                           "news":  "Has joined Juventus on loan for the rest of the season",
-                                          "form":  "1.0",
+                                          "form":  "0.0",
                                           "points":  4,
                                           "selectedBy":  "0.5"
                                       },
@@ -9234,9 +9254,9 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "2.8",
+                                          "form":  "1.0",
                                           "points":  15,
-                                          "selectedBy":  "18.6"
+                                          "selectedBy":  "18.7"
                                       },
                                       {
                                           "id":  465,
@@ -9273,7 +9293,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.5",
+                                          "form":  "0.7",
                                           "points":  3,
                                           "selectedBy":  "0.1"
                                       },
@@ -9286,7 +9306,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "3.2",
+                                          "form":  "2.0",
                                           "points":  14,
                                           "selectedBy":  "1.5"
                                       },
@@ -9299,7 +9319,7 @@
                                           "status":  "i",
                                           "chanceNext":  0,
                                           "news":  "Unspecified injury - Unknown return date",
-                                          "form":  "3.0",
+                                          "form":  "0.3",
                                           "points":  13,
                                           "selectedBy":  "1.8"
                                       },
@@ -9538,7 +9558,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "2.2",
+                                          "form":  "2.7",
                                           "points":  9,
                                           "selectedBy":  "2.7"
                                       },
@@ -9551,7 +9571,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "1.2",
+                                          "form":  "1.7",
                                           "points":  5,
                                           "selectedBy":  "5.7"
                                       },
@@ -9564,7 +9584,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "3.0",
+                                          "form":  "3.7",
                                           "points":  14,
                                           "selectedBy":  "1.6"
                                       },
@@ -9590,9 +9610,9 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "4.2",
+                                          "form":  "3.7",
                                           "points":  19,
-                                          "selectedBy":  "8.8"
+                                          "selectedBy":  "8.7"
                                       },
                                       {
                                           "id":  470,
@@ -9616,7 +9636,7 @@
                                           "status":  "i",
                                           "chanceNext":  0,
                                           "news":  "Hamstring injury - Expected back 11 Oct",
-                                          "form":  "2.5",
+                                          "form":  "2.3",
                                           "points":  12,
                                           "selectedBy":  "1.0"
                                       },
@@ -9629,7 +9649,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "4.8",
+                                          "form":  "6.0",
                                           "points":  23,
                                           "selectedBy":  "2.1"
                                       },
@@ -9642,7 +9662,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.8",
+                                          "form":  "1.0",
                                           "points":  8,
                                           "selectedBy":  "2.4"
                                       },
@@ -9655,7 +9675,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "2.5",
+                                          "form":  "3.0",
                                           "points":  11,
                                           "selectedBy":  "0.2"
                                       },
@@ -9707,7 +9727,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.5",
+                                          "form":  "0.3",
                                           "points":  3,
                                           "selectedBy":  "0.0"
                                       },
@@ -9733,7 +9753,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "6.5",
+                                          "form":  "4.3",
                                           "points":  28,
                                           "selectedBy":  "15.7"
                                       },
@@ -9746,7 +9766,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "0.2",
+                                          "form":  "0.0",
                                           "points":  1,
                                           "selectedBy":  "0.1"
                                       },
@@ -9759,7 +9779,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "3.0",
+                                          "form":  "1.0",
                                           "points":  15,
                                           "selectedBy":  "0.7"
                                       },
@@ -9798,7 +9818,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "2.2",
+                                          "form":  "2.3",
                                           "points":  12,
                                           "selectedBy":  "0.1"
                                       },
@@ -9811,7 +9831,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.2",
+                                          "form":  "0.0",
                                           "points":  1,
                                           "selectedBy":  "0.1"
                                       },
@@ -9824,7 +9844,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "0.5",
+                                          "form":  "0.7",
                                           "points":  4,
                                           "selectedBy":  "0.4"
                                       },
@@ -9850,7 +9870,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.8",
+                                          "form":  "1.0",
                                           "points":  4,
                                           "selectedBy":  "0.9"
                                       },
@@ -9863,7 +9883,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "2.5",
+                                          "form":  "3.0",
                                           "points":  12,
                                           "selectedBy":  "2.6"
                                       },
@@ -9889,7 +9909,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "3.0",
+                                          "form":  "2.7",
                                           "points":  13,
                                           "selectedBy":  "0.1"
                                       },
@@ -9902,7 +9922,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "1.8",
+                                          "form":  "2.3",
                                           "points":  7,
                                           "selectedBy":  "0.5"
                                       },
@@ -10011,7 +10031,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.8",
+                                          "form":  "1.0",
                                           "points":  3,
                                           "selectedBy":  "0.2"
                                       },
@@ -10024,9 +10044,9 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "2.5",
+                                          "form":  "1.3",
                                           "points":  11,
-                                          "selectedBy":  "2.5"
+                                          "selectedBy":  "2.4"
                                       },
                                       {
                                           "id":  530,
@@ -10063,7 +10083,7 @@
                                           "status":  "d",
                                           "chanceNext":  75,
                                           "news":  "Hamstring injury - 75% chance of playing",
-                                          "form":  "3.5",
+                                          "form":  "2.0",
                                           "points":  14,
                                           "selectedBy":  "2.5"
                                       },
@@ -10076,7 +10096,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "3.2",
+                                          "form":  "1.3",
                                           "points":  13,
                                           "selectedBy":  "1.9"
                                       },
@@ -10089,7 +10109,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "2.0",
+                                          "form":  "0.7",
                                           "points":  10,
                                           "selectedBy":  "2.8"
                                       },
@@ -10115,7 +10135,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "1.5",
+                                          "form":  "0.0",
                                           "points":  7,
                                           "selectedBy":  "0.3"
                                       },
@@ -10180,7 +10200,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "3.2",
+                                          "form":  "2.3",
                                           "points":  14,
                                           "selectedBy":  "0.3"
                                       },
@@ -10193,7 +10213,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "4.0",
+                                          "form":  "4.3",
                                           "points":  18,
                                           "selectedBy":  "3.4"
                                       },
@@ -10206,7 +10226,7 @@
                                           "status":  "i",
                                           "chanceNext":  0,
                                           "news":  "Hamstring injury - Unknown return date",
-                                          "form":  "1.0",
+                                          "form":  "0.0",
                                           "points":  5,
                                           "selectedBy":  "0.0"
                                       },
@@ -10219,7 +10239,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "3.0",
+                                          "form":  "2.0",
                                           "points":  21,
                                           "selectedBy":  "3.6"
                                       },
@@ -10232,7 +10252,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "2.0",
+                                          "form":  "1.7",
                                           "points":  10,
                                           "selectedBy":  "0.2"
                                       },
@@ -10258,7 +10278,7 @@
                                           "status":  "i",
                                           "chanceNext":  0,
                                           "news":  "Knee injury - Unknown return date",
-                                          "form":  "0.2",
+                                          "form":  "0.0",
                                           "points":  1,
                                           "selectedBy":  "0.0"
                                       },
@@ -10271,7 +10291,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.2",
+                                          "form":  "0.0",
                                           "points":  2,
                                           "selectedBy":  "0.0"
                                       },
@@ -10310,7 +10330,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "2.8",
+                                          "form":  "2.7",
                                           "points":  16,
                                           "selectedBy":  "0.1"
                                       },
@@ -10323,7 +10343,7 @@
                                           "status":  "d",
                                           "chanceNext":  75,
                                           "news":  "Hamstring injury - 75% chance of playing",
-                                          "form":  "5.5",
+                                          "form":  "6.7",
                                           "points":  24,
                                           "selectedBy":  "7.0"
                                       },
@@ -10336,7 +10356,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "3.5",
+                                          "form":  "2.0",
                                           "points":  15,
                                           "selectedBy":  "1.3"
                                       },
@@ -10349,7 +10369,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "-0.2",
+                                          "form":  "-0.3",
                                           "points":  -1,
                                           "selectedBy":  "0.0"
                                       },
@@ -10504,7 +10524,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "5.8",
+                                          "form":  "7.3",
                                           "points":  24,
                                           "selectedBy":  "6.6"
                                       },
@@ -10517,7 +10537,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.2",
+                                          "form":  "0.3",
                                           "points":  1,
                                           "selectedBy":  "0.1"
                                       },
@@ -10543,7 +10563,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "2.0",
+                                          "form":  "2.7",
                                           "points":  8,
                                           "selectedBy":  "0.7"
                                       },
@@ -10556,9 +10576,9 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "3.0",
+                                          "form":  "3.3",
                                           "points":  14,
-                                          "selectedBy":  "1.9"
+                                          "selectedBy":  "1.8"
                                       },
                                       {
                                           "id":  494,
@@ -10595,7 +10615,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "4.0",
+                                          "form":  "5.0",
                                           "points":  18,
                                           "selectedBy":  "17.3"
                                       },
@@ -10634,7 +10654,7 @@
                                           "status":  "d",
                                           "chanceNext":  75,
                                           "news":  "Hamstring injury - 75% chance of playing",
-                                          "form":  "2.2",
+                                          "form":  "2.7",
                                           "points":  9,
                                           "selectedBy":  "7.6"
                                       },
@@ -10660,7 +10680,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "3.5",
+                                          "form":  "4.0",
                                           "points":  17,
                                           "selectedBy":  "2.5"
                                       },
@@ -10673,7 +10693,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "4.0",
+                                          "form":  "5.3",
                                           "points":  16,
                                           "selectedBy":  "3.8"
                                       },
@@ -10699,7 +10719,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "1.5",
+                                          "form":  "1.7",
                                           "points":  7,
                                           "selectedBy":  "0.3"
                                       },
@@ -10777,7 +10797,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "1.8",
+                                          "form":  "2.0",
                                           "points":  7,
                                           "selectedBy":  "0.2"
                                       },
@@ -10803,7 +10823,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "1.5",
+                                          "form":  "1.3",
                                           "points":  8,
                                           "selectedBy":  "0.2"
                                       },
@@ -10816,7 +10836,7 @@
                                           "status":  "a",
                                           "chanceNext":  100,
                                           "news":  "",
-                                          "form":  "0.5",
+                                          "form":  "0.7",
                                           "points":  3,
                                           "selectedBy":  "0.4"
                                       },
@@ -10829,7 +10849,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "3.5",
+                                          "form":  "4.0",
                                           "points":  15,
                                           "selectedBy":  "0.2"
                                       },
@@ -10868,7 +10888,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "2.2",
+                                          "form":  "3.0",
                                           "points":  9,
                                           "selectedBy":  "0.2"
                                       },
@@ -10881,7 +10901,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "0.5",
+                                          "form":  "0.7",
                                           "points":  3,
                                           "selectedBy":  "0.1"
                                       },
@@ -10907,7 +10927,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "1.8",
+                                          "form":  "1.7",
                                           "points":  9,
                                           "selectedBy":  "0.2"
                                       },
@@ -10920,7 +10940,7 @@
                                           "status":  "u",
                                           "chanceNext":  0,
                                           "news":  "Has joined FC Köln on loan for the rest of the season",
-                                          "form":  "0.2",
+                                          "form":  "0.0",
                                           "points":  3,
                                           "selectedBy":  "0.1"
                                       },
@@ -10946,7 +10966,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "1.5",
+                                          "form":  "1.3",
                                           "points":  7,
                                           "selectedBy":  "0.8"
                                       },
@@ -10959,7 +10979,7 @@
                                           "status":  "a",
                                           "chanceNext":  null,
                                           "news":  "",
-                                          "form":  "1.5",
+                                          "form":  "1.7",
                                           "points":  7,
                                           "selectedBy":  "0.8"
                                       },
@@ -10998,7 +11018,7 @@
                                           "status":  "i",
                                           "chanceNext":  0,
                                           "news":  "Ankle injury - Unknown return date",
-                                          "form":  "0.2",
+                                          "form":  "0.3",
                                           "points":  1,
                                           "selectedBy":  "0.0"
                                       },

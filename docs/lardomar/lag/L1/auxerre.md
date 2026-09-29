@@ -1,6 +1,6 @@
 # Auxerre (Ligue 1) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [L1](../../ligor/L1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [L1](../../ligor/L1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -74,7 +74,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-10-29 | Europa 2518 | Strasbourg - Auxerre | 1 | 12 % | 18 % |
 | 2025-09-21 | Europa 2507 | Auxerre - Toulouse | 1 ✓ | 29 % | 28 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Will Still. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -94,16 +94,14 @@ Tränare: Will Still. Betyg, mål och assist gäller innevarande säsong enligt 
 | 20 | Sinaly Diomandé | CB | 25 | Ivory Coast | 2,5 M€ | 5,94 | 0 | 0 | 1/0 |  |
 | 24 | Bryan Okoh | CB | 23 | Switzerland | 1,7 M€ | – | 0 | 0 | 0/0 | skadad, åter Late January 2027 |
 | 27 | Lamine Sy | RB,RWB,RM | 24 | Senegal | 1,9 M€ | 6,78 | 1 | 0 | 0/0 |  |
-| 29 | Marvin Senaya | RB,CB,RWB | 25 | Ghana | 2,5 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 29 | Marvin Senaya | RB,CB | 25 | Ghana | 2,5 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 35 | Elikya Legros | CB | 18 | France | – | 6,23 | 0 | 0 | 1/0 |  |
 | 38 | Alvin Petit Dol | CB | 19 | France | – | – | 0 | 0 | 0/0 |  |
 | 92 | Clément Akpa | CB,LB | 24 | Ivory Coast | 7,9 M€ | 6,45 | 0 | 0 | 1/0 |  |
 | 93 | Sékou Fofana | LB | 23 | Ivory Coast | 842 k€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-|  | Eros Maddy | RM | 25 | Netherlands | 362 k€ | – | 0 | 0 | 0/0 |  |
 | 5 | Kévin Danois | CM,CDM | 22 | France | 12,5 M€ | 7,20 | 0 | 0 | 1/0 |  |
 | 8 | Naouirou Ahamada | CM,CAM | 24 | France | 1,9 M€ | 6,35 | 0 | 0 | 0/0 |  |
-| 10 | Danny Namaso | CAM,LW,ST,LM,RW,CM | 26 | Cameroon | 3,5 M€ | 7,35 | 1 | 1 | 0/0 |  |
 | 17 | Pierre Ekwah | CM | 24 | France | 1,3 M€ | 5,81 | 0 | 0 | 0/0 |  |
 | 18 | Assane Dioussé | CDM | 29 | Senegal | 292 k€ | – | 0 | 0 | 0/0 | skadad, åter Early May 2027 |
 | 22 | Fredrik Oppegård | LM,LWB,LW,LB | 24 | Norway | 1,5 M€ | 6,77 | 0 | 0 | 0/0 |  |
@@ -113,8 +111,11 @@ Tränare: Will Still. Betyg, mål och assist gäller innevarande säsong enligt 
 | | **Anfallare** | | | | | | | | | |
 | 3 | Rémy Lascary | LW,ST | 23 | Guadeloupe | 2,0 M€ | 7,04 | 1 | 0 | 0/0 |  |
 | 9 | Cameron Archer | ST,CAM | 24 | Jamaica | 8,2 M€ | 7,66 | 3 | 0 | 0/0 |  |
+| 10 | Danny Namaso | CAM,LW,ST,LM,RW,CM | 26 | Cameroon | 3,5 M€ | 7,35 | 1 | 1 | 0/0 |  |
 | 21 | Romain Faivre | RW | 28 | France | 2,4 M€ | 6,89 | 0 | 1 | 0/0 |  |
 | 31 | Ryan Rodin | ST | 20 | France | 505 k€ | – | 0 | 0 | 0/0 |  |
 | 32 | Rayan Mandengue | RW | 20 | Cameroon | 573 k€ | 6,82 | 0 | 1 | 1/0 |  |
 | 49 | Xiangxin Wei | ST | 18 | China | 1,1 M€ | – | 0 | 0 | 0/0 |  |
 | 77 | Aristide Zossou | LW,RW | 21 | Ivory Coast | 2,2 M€ | 6,34 | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Eros Maddy (senast 2026-09-29).

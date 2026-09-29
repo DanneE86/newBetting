@@ -1060,3 +1060,12 @@ html, body {
   line-height: 1.45;
   color: var(--text, #e8ecf4);
 }
+
+/* Lagklick: nyckelspelare */
+.kp-wrap { overflow-x: auto; margin: 0.3rem 0 0.2rem; }
+.kp-table { width: 100%; border-collapse: collapse; font-size: 0.78rem; }
+.kp-table th { color: var(--muted); font-weight: 600; text-align: left; padding: 0.2rem 0.4rem; border-bottom: 1px solid var(--line); }
+.kp-table td { padding: 0.2rem 0.4rem; border-bottom: 1px solid var(--line); white-space: nowrap; }
+.kp-table .kp-status { color: var(--warn); }
+.kp-table tr.kp-warn td { color: var(--bad); }
+.kp-note { color: var(--muted); font-size: 0.72rem; margin-top: 0.25rem; }

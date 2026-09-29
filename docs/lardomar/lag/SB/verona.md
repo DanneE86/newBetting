@@ -1,6 +1,6 @@
 # Verona (Serie B) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [SB](../../ligor/SB.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [SB](../../ligor/SB.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -51,7 +51,7 @@ Form (äldst → senast): FOFFOVFV · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Marco Baroni. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -75,7 +75,7 @@ Tränare: Marco Baroni. Betyg, mål och assist gäller innevarande säsong enlig
 | 70 | Fallou Cham | RM | 20 | The Gambia | 1,1 M€ | 6,94 | 0 | 0 | 1/0 |  |
 | 71 | Davide De Battisti | LB | 20 | Italy | 321 k€ | 7,29 | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 3 | Martin Frese | LM,CB | 28 | Denmark | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| 3 | Martin Frese | LM,CB,LWB | 28 | Denmark | 1,6 M€ | – | 0 | 0 | 0/0 |  |
 | 6 | Domagoj Bradarić | LM,LB,LWB,RM | 26 | Croatia | 1,4 M€ | 7,43 | 0 | 2 | 0/0 |  |
 | 8 | Suat Serdar | CM | 29 | Germany | 1,7 M€ | – | 0 | 0 | 0/0 | skadad, åter Early November 2026 |
 | 17 | Andréa Le Borgne | CM,CDM | 20 | France | 1,9 M€ | 7,38 | 0 | 2 | 1/0 |  |
@@ -88,12 +88,13 @@ Tränare: Marco Baroni. Betyg, mål och assist gäller innevarande säsong enlig
 | 79 | Kacper Sezonienko | CAM,ST,RW,LM,LW | 23 | Poland | 625 k€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 |  | Caleb Ekuban | ST | 32 | Ghana | 709 k€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
-|  | Juan Manuel Cruz | ST | 27 | Argentina | 240 k€ | – | 0 | 0 | 0/0 |  |
 | 9 | Amin Sarr | ST,LW | 25 | Sweden | 2,6 M€ | 7,52 | 2 | 1 | 1/0 |  |
 | 10 | Tomás Suslov | RW,CAM,ST | 24 | Slovakia | 3,6 M€ | 6,43 | 0 | 1 | 2/0 |  |
-| 11 | Mattia Compagnon | ST,RW | 24 | Italy | 919 k€ | 6,59 | 0 | 0 | 0/0 |  |
+| 11 | Mattia Compagnon | RW,ST | 24 | Italy | 919 k€ | 6,59 | 0 | 0 | 0/0 |  |
 | 14 | Dailon Livramento | ST,LW,RW | 25 | Cape Verde | 853 k€ | 6,63 | 0 | 1 | 2/0 |  |
 | 19 | Samuele Mulattieri | ST | 25 | Italy | 1,6 M€ | 7,11 | 2 | 1 | 0/0 |  |
 | 25 | Daniel Mosquera | ST | 26 | Colombia | 1,4 M€ | 8,68 | 2 | 0 | 0/0 | skadad, åter Day to day |
 | 28 | Rubén Akalé | Attacker | 19 | France | 542 k€ | – | 0 | 0 | 0/0 |  |
 | 35 | Salvatore Cerbone | Attacker | 18 | Italy | 799 k€ | 7,13 | 2 | 0 | 1/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Juan Manuel Cruz (senast 2026-09-29).

@@ -1,6 +1,6 @@
 # Kawasaki Frontale (J1 League) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [JP1](../../ligor/JP1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [JP1](../../ligor/JP1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -58,11 +58,10 @@ Form (äldst → senast): OOOVFVVO · senaste match 2026-09-19
 | Okayama | 2 | 0-2-0 | 1–1 | −0,88 | +75 pe | 2025-11-08 1-1 (h) |
 | Chiba | 1 | 1-0-0 | 4–2 | +0,94 | −22 pe | 2026-08-29 4-2 (h) |
 | Mito | 1 | 1-0-0 | 1–0 | +1,48 | −26 pe | 2026-09-12 1-0 (b) |
-| V-Varen Nagasaki | 1 | 1-0-0 | 2–1 | +0,91 | −23 pe | 2018-09-29 2-1 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Shigetoshi Hasebe. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -74,10 +73,9 @@ Tränare: Shigetoshi Hasebe. Betyg, mål och assist gäller innevarande säsong 
 | 33 | Geun-Hyeong Lee | Keeper | 20 | South Korea | – | – | 0 | 0 | 0/0 |  |
 | 49 | Svend Brodersen | GK | 29 | Germany | 707 k€ | 6,86 | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-|  | Kaito Tsuchiya | CB | 20 | Japan | – | – | 0 | 0 | 0/0 |  |
 | 2 | Yuto Matsunagane | CB,LB | 22 | Japan | 474 k€ | – | 0 | 0 | 0/0 |  |
 | 3 | Hiroto Taniguchi | CB | 26 | Japan | 446 k€ | 6,81 | 0 | 0 | 0/0 |  |
-| 4 | Pedro Romano | CB,LB | 25 | Brazil | – | 7,10 | 1 | 0 | 2/0 |  |
+| 4 | Pedro Romano | CB | 25 | Brazil | – | 7,10 | 1 | 0 | 2/0 |  |
 | 5 | Asahi Sasaki | CB,LB | 26 | Japan | 790 k€ | 6,83 | 0 | 1 | 0/0 |  |
 | 13 | Sota Miura | LB | 26 | Japan | 995 k€ | 6,69 | 0 | 1 | 0/0 |  |
 | 22 | Filip Uremović | CB | 29 | Croatia | 1,4 M€ | 6,62 | 0 | 0 | 1/0 |  |
@@ -96,16 +94,16 @@ Tränare: Shigetoshi Hasebe. Betyg, mål och assist gäller innevarande säsong 
 | 25 | Shuto Yamaichi | Midfielder | 22 | Japan | – | – | 0 | 0 | 0/0 |  |
 | 26 | Kota Yui | CM,CDM | 21 | Japan | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-|  | Takatora Einaga | RW | 23 | Japan | 101 k€ | – | 0 | 0 | 0/0 |  |
 | 9 | Lazar Romanić | ST | 28 | Serbia | 782 k€ | 7,23 | 2 | 0 | 1/0 |  |
 | 11 | Yu Kobayashi | ST | 39 | Japan | 196 k€ | – | 0 | 0 | 0/0 |  |
 | 17 | Tatsuya Ito | RW,LW | 29 | Japan | 734 k€ | 7,67 | 2 | 1 | 2/0 |  |
-| 18 | Kazuya Konno | RW,CAM | 29 | Japan | 343 k€ | 6,53 | 0 | 0 | 0/0 |  |
+| 18 | Kazuya Konno | RW | 29 | Japan | 343 k€ | 6,53 | 0 | 0 | 0/0 |  |
 | 20 | Kyosuke Mochiyama | ST | 23 | Japan | 275 k€ | 6,56 | 1 | 0 | 0/0 |  |
 | 23 | Marcinho | LW | 31 | Brazil | 492 k€ | 7,78 | 6 | 1 | 1/0 |  |
 | 24 | Ten Miyagi | LW | 25 | Japan | 279 k€ | 6,36 | 0 | 0 | 0/0 |  |
 | 34 | Ryuki Osa | RW | 18 | Japan | 669 k€ | 6,49 | 0 | 0 | 0/0 |  |
-| 36 | Rin Homma | Attacker | 22 | Japan | – | 6,08 | 0 | 0 | 1/0 |  |
 | 41 | Akihiro Ienaga | RW | 40 | Japan | 50 k€ | – | 0 | 0 | 0/0 |  |
 | 93 | Kayke | ST | 20 | Brazil | 1,5 M€ | – | 0 | 0 | 0/0 |  |
 | 97 | Derik Lacerda | ST | 27 | Brazil | 1,0 M€ | 7,41 | 1 | 3 | 1/0 |  |
+
+Har lämnat truppen sedan vi började spara (3): Takatora Einaga (senast 2026-09-29), Kaito Tsuchiya (senast 2026-09-29), Rin Homma (senast 2026-09-29).

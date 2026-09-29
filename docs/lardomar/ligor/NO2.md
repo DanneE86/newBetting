@@ -1,6 +1,6 @@
 # OBOS-ligaen (NO2) – lärdomar
 
-Genererad 2026-09-28 av `node scripts/analyze-learnings.mjs`. Ligan saknar oddshistorik (inga stängningsodds i våra källor), så signaler och kalibrering kan inte testas mot marknaden här. Alla matcher: `data/matcher/NO2.csv`.
+Genererad 2026-09-29 av `node scripts/analyze-learnings.mjs`. Ligan saknar oddshistorik (inga stängningsodds i våra källor), så signaler och kalibrering kan inte testas mot marknaden här. Alla matcher: `data/matcher/NO2.csv`.
 
 ## Lärdomar i korthet
 
@@ -16,7 +16,7 @@ Genererad 2026-09-28 av `node scripts/analyze-learnings.mjs`. Ligan saknar oddsh
 | 2025/26 | 240 | 40 % | 26 % | 33 % | 3,20 | 63 % | 63 % |
 | 2026/27 | 184 | 49 % | 17 % | 34 % | 3,85 | 72 % | 65 % |
 
-## Tabell nu (FotMob, 2026-09-28)
+## Tabell nu (FotMob, 2026-09-29)
 
 | # | Lag | M | V | O | F | Mål | +/− | P |
 |---|---|---|---|---|---|---|---|---|

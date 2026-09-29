@@ -1,6 +1,6 @@
 # Paderborn (Bundesliga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [BL](../../ligor/BL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [BL](../../ligor/BL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -70,7 +70,7 @@ Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: s
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Ralf Kettemann. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -96,7 +96,6 @@ Tränare: Ralf Kettemann. Betyg, mål och assist gäller innevarande säsong enl
 | 3 | Jonah Sticker | LWB,CB | 22 | Germany | 514 k€ | 6,78 | 0 | 1 | 0/0 |  |
 | 5 | Santiago Castañeda | CDM,CM | 21 | USA | 2,5 M€ | 7,21 | 1 | 0 | 1/0 |  |
 | 6 | Tom Baack | CM,CDM,LM | 27 | Germany | 316 k€ | 6,38 | 0 | 0 | 0/0 |  |
-| 8 | Luka Djuric | CDM,CAM,CM | 23 | Bosnia and Herzegovina | – | 5,95 | 0 | 0 | 0/0 |  |
 | 11 | Sven Michel | CAM | 36 | Germany | 243 k€ | – | 0 | 0 | 0/0 |  |
 | 17 | Laurin Curda | RWB,CAM,RM | 24 | Germany | 2,1 M€ | 7,51 | 0 | 1 | 1/0 |  |
 | 19 | Albert Millgramm | CAM | 21 | Germany | 173 k€ | – | 0 | 0 | 0/0 |  |
@@ -108,10 +107,12 @@ Tränare: Ralf Kettemann. Betyg, mål och assist gäller innevarande säsong enl
 | | **Anfallare** | | | | | | | | | |
 |  | Noah Ringbeck | Attacker | 18 | Germany | 710 k€ | – | 0 | 0 | 0/0 |  |
 | 7 | Oliver Batista Meier | ST,CAM,CM | 25 | Germany | 1,1 M€ | 6,06 | 0 | 0 | 0/0 |  |
-| 9 | Rayan Philippe | RW,ST | 25 | France | 2,3 M€ | 6,17 | 0 | 0 | 0/0 |  |
+| 9 | Rayan Philippe | RW,ST,CAM | 25 | France | 2,3 M€ | 6,17 | 0 | 0 | 0/0 |  |
 | 18 | Marvin Pieringer | ST,CAM,RW | 26 | Germany | 2,2 M€ | 5,97 | 0 | 0 | 0/0 |  |
 | 27 | Steffen Tigges | ST | 28 | Germany | 438 k€ | 6,50 | 1 | 0 | 0/0 |  |
 | 30 | Stefano Marino | ST,CAM | 22 | Germany | 950 k€ | 6,59 | 1 | 0 | 0/0 |  |
 | 32 | Lasse Eickel | Attacker | 18 | Germany | 1,0 M€ | – | 0 | 0 | 0/0 |  |
 | 38 | Deniz Zeitler | LW,ST,CAM | 19 | Germany | 1,6 M€ | – | 0 | 0 | 0/0 |  |
 | 40 | Gabriel Vidović | LW,CAM,CM | 22 | Croatia | 2,1 M€ | 6,66 | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Luka Djuric (senast 2026-09-29).

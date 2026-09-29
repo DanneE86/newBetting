@@ -1,6 +1,6 @@
 # Botafogo-SP (Brasileirão Série B) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [BR2](../../ligor/BR2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [BR2](../../ligor/BR2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -42,7 +42,7 @@ Form senaste 8 (äldst → senast): VOFFFFFO · senaste match 2026-09-19
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Cláudio Tencati. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -66,7 +66,6 @@ Tränare: Cláudio Tencati. Betyg, mål och assist gäller innevarande säsong e
 | 31 | Pedrinho | RB,RWB | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 32 | Henrique Teles | LB | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-|  | Gabriel Cruz | Midfielder | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 5 | Leandro Maciel | CDM,CM | 30 | Argentina | 250 k€ | – | 0 | 0 | 0/0 |  |
 | 8 | Everton Morelli | CAM,CDM,CM | 28 | Brazil | 188 k€ | – | 0 | 0 | 0/0 |  |
 | 10 | Rafael Gava | CAM,CM,CDM | 33 | Brazil | 200 k€ | – | 0 | 0 | 0/0 |  |
@@ -74,16 +73,16 @@ Tränare: Cláudio Tencati. Betyg, mål och assist gäller innevarande säsong e
 | 20 | Yuri Felipe | CDM | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 28 | Marco Antônio | CDM | 26 | Brazil | 172 k€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-|  | Iago Morais da Silva | Attacker | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
 |  | Kauã Freire | Attacker | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 7 | Kelvin | LW,CAM | 29 | Brazil | 259 k€ | – | 0 | 0 | 0/0 |  |
 | 9 | Hygor | ST | 34 | Brazil | 147 k€ | – | 0 | 0 | 0/0 |  |
-| 11 | Jefferson Nem | LW,RW,CAM | 30 | Brazil | 217 k€ | – | 0 | 0 | 0/0 |  |
+| 11 | Jefferson Nem | RW,LW,CAM | 30 | Brazil | 217 k€ | – | 0 | 0 | 0/0 |  |
 | 17 | Guilherme Queiróz | ST | 36 | Brazil | 192 k€ | – | 0 | 0 | 0/0 |  |
 | 18 | Arthur Caíke | ST | 34 | Brazil | 203 k€ | – | 0 | 0 | 0/0 |  |
 | 19 | Márcio Maranhão | LW | 27 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 21 | Jadson | RB | 21 | Brazil | 416 k€ | – | 0 | 0 | 0/0 |  |
 | 23 | Wesley | LW | 26 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 29 | Thalles | ST | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 29 | Thiago Moraes | RW,LW,CDM | 28 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 30 | Zé Hugo | RW | 26 | Brazil | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (3): Thiago Moraes (senast 2026-09-29), Iago Morais da Silva (senast 2026-09-29), Gabriel Cruz (senast 2026-09-29).

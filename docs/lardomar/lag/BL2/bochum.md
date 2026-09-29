@@ -1,10 +1,10 @@
 # Bochum (2. Bundesliga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [BL2](../../ligor/BL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [BL2](../../ligor/BL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
-- Stark historik mot Heidenheim (+0,69 p/match mot marknaden, 10 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Stark historik mot Heidenheim (+0,91 p/match mot marknaden, 9 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -39,7 +39,7 @@ Form (äldst → senast): OVFVFVOF · senaste match 2026-09-20
 |---|---|---|---|---|---|---|
 | Greuther Furth | 11 | 6-3-2 | 19–15 | +0,34 | +1 pe | 2026-09-12 1-1 (h) |
 | Darmstadt | 10 | 3-5-2 | 14–16 | −0,08 | +23 pe | 2026-01-18 3-3 (h) |
-| Heidenheim | 10 | 6-3-1 | 17–6 | +0,69 | +2 pe | 2025-05-02 0-0 (b) |
+| Heidenheim | 9 | 6-3-0 | 15–3 | +0,91 | +6 pe | 2025-05-02 0-0 (b) |
 | Holstein Kiel | 9 | 2-3-4 | 14–18 | −0,41 | +7 pe | 2026-03-22 2-3 (h) |
 | Bielefeld | 8 | 3-2-3 | 9–12 | +0,10 | −2 pe | 2026-05-02 1-1 (b) |
 | St Pauli | 8 | 4-3-1 | 12–8 | +0,46 | +11 pe | 2025-05-17 2-0 (b) |
@@ -56,7 +56,7 @@ Form (äldst → senast): OVFVFVOF · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Uwe Rösler. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -85,7 +85,6 @@ Tränare: Uwe Rösler. Betyg, mål och assist gäller innevarande säsong enligt
 | 6 | Enis Çokaj | CDM,CM | 27 | Albania | 737 k€ | 6,74 | 0 | 1 | 2/0 | skadad, åter Unknown |
 | 24 | Mats Pannewig | CDM,CM,CAM | 21 | Germany | 2,5 M€ | 6,96 | 0 | 0 | 3/1 |  |
 | 28 | Charlie Patino | CM,CDM | 22 | England | 942 k€ | 7,07 | 0 | 0 | 0/0 |  |
-| 31 | Marcel Sobottka | CM | 32 | Germany | 137 k€ | – | 0 | 0 | 0/0 |  |
 | 34 | Tom Meyer | CDM | 18 | Germany | 891 k€ | 7,11 | 1 | 1 | 2/0 |  |
 | 39 | Lasse Isbruch | Midfielder | 18 | Germany | – | 6,26 | 0 | 0 | 0/0 |  |
 | 40 | Aurel Wagbe | Midfielder | 22 | Germany | 127 k€ | – | 0 | 0 | 0/0 |  |
@@ -93,9 +92,11 @@ Tränare: Uwe Rösler. Betyg, mål och assist gäller innevarande säsong enligt
 | 7 | Christian Rasmussen | RW,ST | 23 | Denmark | 1,1 M€ | 6,75 | 0 | 0 | 0/0 |  |
 | 10 | Berkan Taz | ST,CAM,CM,LW | 27 | Germany | 315 k€ | 6,62 | 0 | 0 | 0/0 |  |
 | 14 | Jarne Steuckers | RW,CM,LW | 24 | Belgium | 6,1 M€ | 6,19 | 0 | 0 | 1/0 |  |
-| 17 | Gerrit Holtmann | LW,CAM | 31 | Philippines | 227 k€ | 6,52 | 0 | 0 | 1/0 |  |
+| 17 | Gerrit Holtmann | LW | 31 | Philippines | 227 k€ | 6,52 | 0 | 0 | 1/0 |  |
 | 19 | Daniel Hanslik | ST | 29 | Germany | 645 k€ | 5,96 | 0 | 0 | 1/0 |  |
 | 23 | Koji Miyoshi | RW,CAM,RM | 29 | Japan | 805 k€ | 7,30 | 2 | 1 | 1/0 |  |
 | 29 | Mansour Ouro-Tagba | ST,LW | 21 | Togo | 553 k€ | – | 0 | 0 | 0/0 |  |
 | 33 | Philipp Hofmann | ST | 33 | Germany | 489 k€ | 6,98 | 2 | 0 | 2/0 |  |
 | 37 | Alessandro Crimaldi | LW | 19 | Italy | 869 k€ | 6,44 | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Marcel Sobottka (senast 2026-09-29).

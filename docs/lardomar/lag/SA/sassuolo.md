@@ -1,13 +1,13 @@
 # Sassuolo (Serie A) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Senaste 8: otur med −0,62 poäng per match mot xP. Marknaden prisar redan in det i ligan (ingen bekräftad effekt), så det är inget spel i sig.
 - Senaste 8: xG-målskillnaden är +0,56 per match bättre än målskillnaden.
 - Stark historik mot Parma (−1,01 p/match mot marknaden, 8 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
-- Utan Domenico Berardi (10 % av anfallet): 1,00 poäng per match mot 1,39 med (10 mot 33 matcher), mot marknaden +0,18 mot +0,16.
+- Utan Domenico Berardi (11 % av anfallet): 1,00 poäng per match mot 1,39 med (10 mot 33 matcher), mot marknaden +0,18 mot +0,16.
 - På Stryktipset/Europatipset streckas lagets vinst ×0,85 av vår sannolikhet (12 matcher). Folket underspelar laget: dess vinst ger streckvärde.
 
 ## Nuläge (senaste 8 ligamatcher)
@@ -47,7 +47,7 @@ Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 l
 | Armand Lauriente | 16 % | 0 / 43 | – / 1,30 | – / +0,16 |
 | Vasilije Adzic | 13 % | 0 / 43 | – / 1,30 | – / +0,16 |
 | Kieron Bowie | 13 % | 0 / 43 | – / 1,30 | – / +0,16 |
-| Domenico Berardi | 10 % | 10 / 33 | 1,00 / 1,39 | +0,18 / +0,16 |
+| Domenico Berardi | 11 % | 10 / 33 | 1,00 / 1,39 | +0,18 / +0,16 |
 | Kristian Thorstvedt | 9 % | 2 / 41 | 0,00 / 1,37 | −0,92 / +0,22 |
 
 Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
@@ -95,7 +95,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-10-26 | Europa 2517 | Sassuolo - Roma | 2 | 18 % | 22 % |
 | 2025-09-14 | Europa 2505 | Sassuolo - Lazio | 1 ✓ | 23 % | 26 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Alberto Aquilani. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

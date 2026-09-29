@@ -1,6 +1,6 @@
 # Nordic United FC (Superettan) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [SE2](../../ligor/SE2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [SE2](../../ligor/SE2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -29,7 +29,7 @@ Form senaste 8 (äldst → senast): OOVFVFOF · senaste match 2026-09-19
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Steven Younan. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -55,7 +55,6 @@ Tränare: Steven Younan. Betyg, mål och assist gäller innevarande säsong enli
 | 6 | Gabriel Aphrem | CM | 27 | Sweden | 53 k€ | – | 0 | 0 | 0/0 |  |
 | 7 | Amar Eminovic | LM,ST | 26 | Sweden | 98 k€ | – | 1 | 2 | 0/0 |  |
 | 8 | Teo Grönborg | CM | 24 | Sweden | 109 k€ | – | 2 | 1 | 4/0 |  |
-| 12 | Jake Larsson | LM | 27 | Sweden | 125 k€ | – | 0 | 0 | 0/0 |  |
 | 20 | Aziz Harabi | RM,LM,ST,LWB,LB | 23 | Sweden | 159 k€ | – | 5 | 6 | 3/0 |  |
 | 25 | Liam Nesvik-Andersson | Midfielder | 17 | Sweden | – | – | 0 | 0 | 0/0 |  |
 | 74 | Christian Aphrem | LM | 24 | Sweden | – | – | 2 | 0 | 1/0 |  |
@@ -65,3 +64,5 @@ Tränare: Steven Younan. Betyg, mål och assist gäller innevarande säsong enli
 | 10 | Elias Durmaz | ST,LM | 26 | Sweden | 122 k€ | – | 1 | 1 | 3/0 |  |
 | 11 | Adi Fisic | ST | 22 | Sweden | 124 k€ | – | 1 | 1 | 0/0 |  |
 | 18 | Ninos Issa | Attacker | 18 | Sweden | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Jake Larsson (senast 2026-09-29).

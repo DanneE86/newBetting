@@ -1,6 +1,6 @@
 # Ath Madrid (La Liga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [LL](../../ligor/LL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [LL](../../ligor/LL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -52,12 +52,12 @@ Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: s
 | Motståndare | M | V-O-F | Mål | Mot marknaden | Kryss mot odds | Senast |
 |---|---|---|---|---|---|---|
 | Ath Bilbao | 17 | 9-2-6 | 19–19 | +0,08 | −18 pe | 2026-09-05 0-3 (b) |
-| Real Madrid | 17 | 4-7-6 | 20–22 | −0,07 | +13 pe | 2026-09-20 2-1 (h) |
 | Sevilla | 17 | 8-5-4 | 31–18 | +0,02 | +1 pe | 2026-08-29 3-1 (b) |
 | Sociedad | 17 | 11-5-1 | 32–14 | +0,56 | +1 pe | 2026-09-13 3-0 (b) |
 | Villarreal | 17 | 6-9-2 | 27–22 | −0,17 | +26 pe | 2026-08-23 2-2 (h) |
 | Barcelona | 16 | 3-3-10 | 14–26 | −0,39 | −8 pe | 2026-04-04 1-2 (h) |
 | Betis | 16 | 11-2-3 | 24–9 | +0,30 | −13 pe | 2026-02-08 0-1 (h) |
+| Real Madrid | 16 | 4-6-6 | 20–22 | −0,06 | +10 pe | 2026-09-20 2-1 (h) |
 | Celta | 15 | 9-5-1 | 23–8 | +0,22 | +7 pe | 2026-05-09 0-1 (h) |
 | Getafe | 15 | 11-3-1 | 26–10 | +0,39 | −7 pe | 2026-03-14 1-0 (h) |
 | Osasuna | 15 | 13-0-2 | 31–9 | +0,58 | −24 pe | 2026-09-16 4-0 (h) |
@@ -92,7 +92,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-09-21 | Europa 2507 | Mallorca - Atlético Madrid | X | 61 % | 54 % |
 | 2025-08-17 | Europa 2497 | Espanyol - Atlético Madrid | 1 | 69 % | 57 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Diego Simeone. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -106,13 +106,12 @@ Tränare: Diego Simeone. Betyg, mål och assist gäller innevarande säsong enli
 | 25 | Salvi Esquivel | GK | 20 | Spain | 1,2 M€ | – | 0 | 0 | 0/0 |  |
 | 51 | Álvaro Moreno | Keeper | 20 | Spain | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 14 | Marcos Llorente | RB,CM,RM | 31 | Spain | 13,5 M€ | 7,21 | 0 | 1 | 1/0 |  |
+| 14 | Marcos Llorente | RB,CM,RM,CDM | 31 | Spain | 13,5 M€ | 7,21 | 0 | 1 | 1/0 |  |
 | 17 | Dávid Hancko | CB,LB | 28 | Slovakia | 29,2 M€ | 7,52 | 0 | 2 | 1/0 |  |
 | 18 | Marc Pubill | CB,RB | 23 | Spain | 19,9 M€ | 6,83 | 1 | 0 | 2/0 |  |
 | 21 | Cristian Romero | CB | 28 | Argentina | 42,1 M€ | 7,35 | 0 | 0 | 1/0 |  |
 | 24 | Robin Le Normand | CB | 29 | Spain | 22,0 M€ | 7,22 | 1 | 0 | 0/1 |  |
 | 30 | Dani Martínez | CB | 22 | Spain | – | 7,51 | 0 | 0 | 0/0 |  |
-| 40 | Aleksa Puric | CB | 23 | Serbia | 931 k€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 3 | Obed Vargas | CDM,CM,LM,CAM | 21 | Mexico | 7,7 M€ | – | 0 | 0 | 0/0 |  |
 | 4 | Rodrigo Mendoza | CM,CDM,CAM,LM | 21 | Spain | 13,2 M€ | 6,89 | 0 | 0 | 0/0 |  |
@@ -121,8 +120,8 @@ Tränare: Diego Simeone. Betyg, mål och assist gäller innevarande säsong enli
 | 8 | Pablo Barrios | CM | 23 | Spain | 41,6 M€ | 7,54 | 0 | 1 | 0/0 |  |
 | 10 | Álex Baena | LW,LM,CAM,CM,ST,RM | 25 | Spain | 33,2 M€ | 7,46 | 4 | 1 | 1/0 |  |
 | 11 | Ademola Lookman | ST,LM,CAM,LW | 28 | Nigeria | 29,3 M€ | 6,87 | 1 | 0 | 1/0 |  |
-| 20 | Giuliano Simeone | RM,RW,RWB | 23 | Argentina | 32,6 M€ | 7,20 | 2 | 2 | 0/0 |  |
-| 22 | Alejandro Grimaldo | LWB,LB | 31 | Spain | 19,1 M€ | 7,61 | 2 | 1 | 0/0 |  |
+| 20 | Giuliano Simeone | RM,RWB,RW | 23 | Argentina | 32,6 M€ | 7,20 | 2 | 2 | 0/0 |  |
+| 22 | Alejandro Grimaldo | LWB,LB,LM | 31 | Spain | 19,1 M€ | 7,61 | 2 | 1 | 0/0 |  |
 | 23 | Morten Hjulmand | CDM,CM | 27 | Denmark | 32,2 M€ | 7,23 | 0 | 0 | 1/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Kang-In Lee | RW,ST,CM,CAM,RM | 25 | South Korea | 22,4 M€ | 7,49 | 2 | 1 | 1/0 |  |
@@ -130,3 +129,5 @@ Tränare: Diego Simeone. Betyg, mål och assist gäller innevarande säsong enli
 | 15 | Jonathan David | ST | 26 | Canada | 26,6 M€ | 8,02 | 3 | 1 | 0/0 |  |
 | 16 | Arnau Ortiz | ST | 24 | Spain | 560 k€ | 6,27 | 0 | 0 | 0/0 |  |
 | 19 | Julián Álvarez | ST | 26 | Argentina | 84,0 M€ | 6,55 | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Aleksa Puric (senast 2026-09-29).

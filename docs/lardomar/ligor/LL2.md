@@ -1,8 +1,8 @@
 # LaLiga 2 (LL2) – lärdomar
 
-Genererad 2026-09-28 av `node scripts/analyze-learnings.mjs`. Skriv inte för hand här: egna anteckningar läggs i `docs/lardomar/anteckningar/LL2.md`.
+Genererad 2026-09-29 av `node scripts/analyze-learnings.mjs`. Skriv inte för hand här: egna anteckningar läggs i `docs/lardomar/anteckningar/LL2.md`.
 
-Underlag: 4213 matcher, säsong 2017/18 – 2026/27. Marknad = stängningsodds utan marginal (Pinnacle, annars snitt av bolagen), öppningsodds finns för 4212 matcher. xG: skott-proxy (100 % av matcherna).
+Underlag: 4214 matcher, säsong 2017/18 – 2026/27. Marknad = stängningsodds utan marginal (Pinnacle, annars snitt av bolagen), öppningsodds finns för 4213 matcher. xG: skott-proxy (100 % av matcherna).
 
 ## Lärdomar i korthet
 
@@ -17,14 +17,14 @@ Underlag: 4213 matcher, säsong 2017/18 – 2026/27. Marknad = stängningsodds u
 | Bortavinst | 25,5 % | 26,6 % |
 | Mål per match | 2,31 | |
 | Över 2,5 mål | 41,0 % | |
-| Båda lagen gör mål | 48,3 % | |
+| Båda lagen gör mål | 48,2 % | |
 | Logloss stängning / öppning | 1,0329 / 1,0358 | |
 
 ### Kryss efter jämnhet (stängningsodds)
 
 | Match | n | Kryss utfall | Oddsens | Skillnad (z) | Bedömning |
 |---|---|---|---|---|---|
-| jämn (|P1−P2| < 15 %) | 1660 | 33,0 % | 32,2 % | +0,8 pe (0,7) | ingen effekt |
+| jämn (|P1−P2| < 15 %) | 1661 | 33,0 % | 32,2 % | +0,8 pe (0,7) | ingen effekt |
 | mellan | 1740 | 30,3 % | 30,1 % | +0,2 pe (0,2) | ingen effekt |
 | klar favorit (> 35 %) | 813 | 22,1 % | 25,3 % | −3,1 pe (−2,2) | ingen effekt |
 
@@ -32,7 +32,7 @@ Underlag: 4213 matcher, säsong 2017/18 – 2026/27. Marknad = stängningsodds u
 
 | Favoritens odds-sannolikhet | n | Vann | Oddsens | Skillnad (z) | Bedömning |
 |---|---|---|---|---|---|
-| 33–45 % | 2181 | 39,8 % | 39,2 % | +0,6 pe (0,6) | ingen effekt |
+| 33–45 % | 2182 | 39,8 % | 39,2 % | +0,7 pe (0,6) | ingen effekt |
 | 45–55 % | 1304 | 50,7 % | 49,3 % | +1,3 pe (1,0) | ingen effekt |
 | 55–65 % | 584 | 62,2 % | 58,8 % | +3,4 pe (1,7) | ingen effekt |
 | 65–75 % | 97 | 73,2 % | 68,3 % | +4,9 pe (1,1) | ingen effekt |
@@ -53,16 +53,16 @@ Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (
 
 | Signal | Hela perioden | Träning (< 2023/24) | Kontroll (2023/24–) | Mot öppningsodds | Oddsrörelse | Effekt p90–p10 | Bedömning |
 |---|---|---|---|---|---|---|---|
-| xG-tur (poäng − xP, senaste 8) | −0,041 (z −1,3, n 4049) | −0,047 (z −1,2, n 2612) | −0,028 (z −0,5, n 1437) | −0,058 (z −1,8, n 4048) | −0,018 (z −6,7, n 4048) | −0,063 p | ingen effekt |
-| xG-form mot målform (xGD − GD, senaste 8) | +0,047 (z 1,7, n 4049) | +0,053 (z 1,5, n 2612) | +0,036 (z 0,8, n 1437) | +0,058 (z 2,1, n 4048) | +0,012 (z 5,1, n 4048) | +0,085 p | ingen effekt |
-| Form mot marknaden (poäng − förväntat, senaste 8) | −0,057 (z −1,7, n 4049) | −0,066 (z −1,6, n 2612) | −0,041 (z −0,7, n 1437) | −0,063 (z −1,9, n 4048) | −0,007 (z −2,4, n 4048) | −0,084 p | ingen effekt |
-| Inbördes möten mot marknaden (≥ 3 möten, 8 år) | −0,002 (z −0,0, n 1887) | +0,073 (z 1,1, n 937) | −0,101 (z −1,3, n 950) | −0,009 (z −0,2, n 1887) | −0,007 (z −1,6, n 1887) | −0,003 p | ingen effekt |
-| Inbördes möten, poängskillnad | −0,002 (z −0,1, n 1887) | +0,037 (z 1,1, n 937) | −0,050 (z −1,3, n 950) | −0,006 (z −0,2, n 1887) | −0,004 (z −2,2, n 1887) | −0,005 p | ingen effekt |
-| Inbördes möten, kryss mot förväntat | +0,010 (z 0,2, n 1887) | +0,006 (z 0,1, n 937) | +0,013 (z 0,2, n 950) | – | – | +0,006 p | ingen effekt |
-| Vilodagar (hemma − borta, ligamatcher) | −0,004 (z −0,3, n 4089) | +0,011 (z 0,7, n 2671) | −0,032 (z −1,4, n 1418) | −0,005 (z −0,4, n 4088) | −0,002 (z −1,4, n 4088) | −0,008 p | ingen effekt |
-| Oddsrörelse öppning → stängning (förväntade poäng) | −0,069 (z −0,4, n 4212) | −0,062 (z −0,3, n 2750) | −0,079 (z −0,2, n 1462) | – | – | −0,017 p | ingen effekt |
+| xG-tur (poäng − xP, senaste 8) | −0,040 (z −1,3, n 4050) | −0,047 (z −1,2, n 2612) | −0,028 (z −0,5, n 1438) | −0,058 (z −1,8, n 4049) | −0,018 (z −6,7, n 4049) | −0,063 p | ingen effekt |
+| xG-form mot målform (xGD − GD, senaste 8) | +0,046 (z 1,7, n 4050) | +0,053 (z 1,5, n 2612) | +0,036 (z 0,8, n 1438) | +0,058 (z 2,1, n 4049) | +0,012 (z 5,1, n 4049) | +0,085 p | ingen effekt |
+| Form mot marknaden (poäng − förväntat, senaste 8) | −0,057 (z −1,7, n 4050) | −0,066 (z −1,6, n 2612) | −0,040 (z −0,7, n 1438) | −0,063 (z −1,9, n 4049) | −0,007 (z −2,4, n 4049) | −0,083 p | ingen effekt |
+| Inbördes möten mot marknaden (≥ 3 möten, 8 år) | +0,001 (z 0,0, n 1888) | +0,073 (z 1,1, n 937) | −0,095 (z −1,2, n 951) | −0,006 (z −0,1, n 1888) | −0,006 (z −1,5, n 1888) | +0,001 p | ingen effekt |
+| Inbördes möten, poängskillnad | −0,001 (z −0,0, n 1888) | +0,037 (z 1,1, n 937) | −0,048 (z −1,3, n 951) | −0,005 (z −0,2, n 1888) | −0,004 (z −2,1, n 1888) | −0,002 p | ingen effekt |
+| Inbördes möten, kryss mot förväntat | +0,010 (z 0,2, n 1888) | +0,006 (z 0,1, n 937) | +0,013 (z 0,2, n 951) | – | – | +0,006 p | ingen effekt |
+| Vilodagar (hemma − borta, ligamatcher) | −0,004 (z −0,3, n 4090) | +0,011 (z 0,7, n 2671) | −0,032 (z −1,4, n 1419) | −0,005 (z −0,4, n 4089) | −0,002 (z −1,4, n 4089) | −0,008 p | ingen effekt |
+| Oddsrörelse öppning → stängning (förväntade poäng) | −0,067 (z −0,4, n 4213) | −0,062 (z −0,3, n 2750) | −0,070 (z −0,2, n 1463) | – | – | −0,017 p | ingen effekt |
 | Bolagssnitt mot Pinnacle vid stängning | −0,307 (z −0,3, n 2966) | +0,083 (z 0,1, n 1846) | −0,764 (z −0,6, n 1120) | – | – | −0,018 p | ingen effekt |
-| Under 2,5 mål (O/U-marknaden) mot kryss | +0,148 (z 1,4, n 3309) | +0,214 (z 1,2, n 1848) | +0,035 (z 0,2, n 1461) | – | – | +0,026 p | ingen effekt |
+| Under 2,5 mål (O/U-marknaden) mot kryss | +0,149 (z 1,4, n 3310) | +0,214 (z 1,2, n 1848) | +0,037 (z 0,3, n 1462) | – | – | +0,027 p | ingen effekt |
 
 ## Situationer
 
@@ -84,7 +84,7 @@ Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (
 
 Inga matcher från ligan i de sparade backtesten ännu.
 
-## Tabell nu (FotMob, 2026-09-28)
+## Tabell nu (FotMob, 2026-09-29)
 
 | # | Lag | M | V | O | F | Mål | +/− | P |
 |---|---|---|---|---|---|---|---|---|

@@ -1,6 +1,6 @@
 # Paris SG (Ligue 1) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [L1](../../ligor/L1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [L1](../../ligor/L1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -57,10 +57,10 @@ Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: s
 | Monaco | 17 | 7-3-7 | 35–28 | −0,69 | −1 pe | 2026-09-04 1-2 (h) |
 | Lyon | 16 | 11-1-4 | 37–19 | +0,08 | −14 pe | 2026-04-19 1-2 (h) |
 | Marseille | 16 | 13-1-2 | 36–6 | +0,40 | −14 pe | 2026-09-20 2-1 (b) |
-| Nice | 15 | 9-3-3 | 28–13 | −0,16 | +1 pe | 2026-03-21 4-0 (b) |
 | Rennes | 15 | 7-3-5 | 29–18 | −0,57 | +0 pe | 2026-08-23 2-2 (b) |
 | Strasbourg | 15 | 9-5-1 | 37–20 | −0,04 | +15 pe | 2026-02-01 2-1 (b) |
 | Brest | 14 | 13-1-0 | 34–11 | +0,45 | −8 pe | 2026-09-13 1-0 (b) |
+| Nice | 14 | 8-3-3 | 25–13 | −0,22 | +2 pe | 2026-03-21 4-0 (b) |
 | Angers | 12 | 12-0-0 | 31–6 | +0,52 | −14 pe | 2026-04-25 3-0 (b) |
 | Lens | 12 | 8-2-2 | 20–10 | +0,18 | −5 pe | 2026-05-13 2-0 (b) |
 | Toulouse | 11 | 9-1-1 | 26–9 | +0,22 | −8 pe | 2026-04-03 3-1 (h) |
@@ -72,7 +72,7 @@ Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: s
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Luis Enrique. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

@@ -1,11 +1,11 @@
 # Vallecano (La Liga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [LL](../../ligor/LL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [LL](../../ligor/LL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Stark historik mot Ath Bilbao (−0,51 p/match mot marknaden, 12 möten), Alaves (+0,79 p/match mot marknaden, 10 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
-- Utan Álvaro García (11 % av anfallet): 2,00 poäng per match mot 1,27 med (6 mot 77 matcher), mot marknaden +0,66 mot +0,03.
+- Utan Álvaro García (10 % av anfallet): 2,00 poäng per match mot 1,27 med (6 mot 77 matcher), mot marknaden +0,66 mot +0,03.
 - På Stryktipset/Europatipset streckas lagets vinst ×0,81 av vår sannolikhet (13 matcher). Folket underspelar laget: dess vinst ger streckvärde.
 
 ## Nuläge (senaste 8 ligamatcher)
@@ -43,7 +43,7 @@ Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 l
 |---|---|---|---|---|
 | Adrià Pedrosa | 12 % | 0 / 83 | – / 1,33 | – / +0,07 |
 | Giorgi Tsitaishvili | 11 % | 0 / 83 | – / 1,33 | – / +0,07 |
-| Álvaro García | 11 % | 6 / 77 | 2,00 / 1,27 | +0,66 / +0,03 |
+| Álvaro García | 10 % | 6 / 77 | 2,00 / 1,27 | +0,66 / +0,03 |
 | Sergio Camello | 9 % | 3 / 80 | 3,00 / 1,26 | +1,44 / +0,02 |
 | Jorge De Frutos | 9 % | 4 / 79 | 1,00 / 1,34 | +0,00 / +0,08 |
 | Andrei Ratiu | 7 % | 2 / 81 | 0,00 / 1,36 | −1,40 / +0,11 |
@@ -94,7 +94,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-09-24 | Europa 2508 | Atlético Madrid - Rayo Vallecano | 1 | 10 % | 13 % |
 | 2025-09-14 | Europa 2505 | Osasuna - Rayo Vallecano | 1 | 27 % | 31 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Beñat San José. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -103,13 +103,12 @@ Tränare: Beñat San José. Betyg, mål och assist gäller innevarande säsong e
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-|  | Miguel Morro | GK | 26 | Spain | 210 k€ | – | 0 | 0 | 0/0 |  |
 | 1 | Dani Cárdenas | GK | 29 | Spain | 876 k€ | 6,19 | 0 | 0 | 0/0 |  |
 | 13 | Augusto Batalla | GK | 30 | Argentina | 4,4 M€ | 6,66 | 0 | 0 | 0/0 | skadad, åter Early January 2027 |
 | 25 | Emil Audero | GK | 29 | Indonesia | 2,0 M€ | 6,83 | 0 | 0 | 0/0 | osäker |
 | 30 | Adrián Molina | Keeper | 21 | Spain | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Andrei Rațiu | RB,RW | 28 | Romania | 14,0 M€ | 6,82 | 1 | 0 | 0/0 |  |
+| 2 | Andrei Rațiu | RB,RW,RWB | 28 | Romania | 14,0 M€ | 6,82 | 1 | 0 | 0/0 |  |
 | 3 | Marash Kumbulla | CB | 26 | Albania | 2,3 M€ | – | 0 | 0 | 0/0 |  |
 | 5 | Luiz Felipe | CB | 29 | Italy | 1,2 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
 | 15 | Mujaid Sadick | CB | 26 | Spain | 5,6 M€ | 6,65 | 0 | 0 | 0/0 |  |
@@ -133,7 +132,9 @@ Tränare: Beñat San José. Betyg, mål och assist gäller innevarande säsong e
 | 9 | Alemão | ST | 28 | Brazil | 1,9 M€ | 5,98 | 0 | 0 | 3/0 |  |
 | 10 | Sergio Camello | ST,LW | 25 | Spain | 2,2 M€ | 7,77 | 7 | 1 | 2/0 |  |
 | 11 | Randy Nteka | ST | 28 | Angola | 1,0 M€ | 6,17 | 0 | 0 | 0/0 | osäker |
-| 14 | Giorgi Tsitaishvili | LW,LB,RW | 25 | Georgia | 1,9 M€ | 6,22 | 0 | 0 | 1/0 |  |
+| 14 | Giorgi Tsitaishvili | LW,RW,LB,RWB | 25 | Georgia | 1,9 M€ | 6,22 | 0 | 0 | 1/0 |  |
 | 18 | Álvaro Garcia | LW | 33 | Spain | 1,3 M€ | 6,98 | 2 | 2 | 1/0 |  |
 | 19 | Jorge de Frutos | RW,ST | 29 | Spain | 9,4 M€ | 6,63 | 0 | 1 | 0/1 |  |
 | 21 | Fran Pérez | LW,RW | 24 | Spain | 2,5 M€ | 6,05 | 0 | 0 | 1/1 |  |
+
+Har lämnat truppen sedan vi började spara (1): Miguel Morro (senast 2026-09-29).

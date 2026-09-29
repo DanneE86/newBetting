@@ -1,6 +1,6 @@
 # Seattle Sounders (MLS) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -48,8 +48,8 @@ Form (äldst → senast): FFOOOOOV · senaste match 2026-09-24
 | Los Angeles Galaxy | 18 | 8-7-3 | 33–23 | +0,18 | +15 pe | 2026-09-13 1-1 (b) |
 | Minnesota United | 18 | 10-5-3 | 31–18 | +0,38 | +2 pe | 2026-03-22 0-0 (b) |
 | Real Salt Lake | 18 | 7-4-7 | 17–18 | −0,23 | −3 pe | 2026-09-24 2-0 (h) |
-| Colorado Rapids | 17 | 8-6-3 | 31–18 | +0,18 | +10 pe | 2026-09-20 3-3 (b) |
 | Houston Dynamo | 17 | 12-4-1 | 25–10 | +0,80 | −3 pe | 2026-04-05 1-0 (b) |
+| Colorado Rapids | 16 | 7-6-3 | 27–18 | +0,15 | +12 pe | 2026-09-20 3-3 (b) |
 | Sporting Kansas City | 14 | 6-1-7 | 28–23 | −0,23 | −18 pe | 2026-05-02 1-1 (b) |
 | Austin FC | 12 | 5-3-4 | 14–11 | −0,09 | +0 pe | 2026-08-20 1-2 (h) |
 | St. Louis City | 8 | 7-0-1 | 18–4 | +0,98 | −25 pe | 2026-04-19 4-1 (h) |
@@ -72,7 +72,7 @@ Form (äldst → senast): FFOOOOOV · senaste match 2026-09-24
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Brian Schmetzer. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -93,17 +93,12 @@ Tränare: Brian Schmetzer. Betyg, mål och assist gäller innevarande säsong en
 | 28 | Yeimar Gómez | CB | 34 | Colombia | 269 k€ | 7,03 | 0 | 0 | 0/0 |  |
 | 35 | Antino Lopez | CB | 24 | USA | 167 k€ | 6,70 | 0 | 0 | 1/0 |  |
 | 39 | Stuart Russell Hawkins | CB | 20 | USA | – | 6,74 | 1 | 0 | 1/0 |  |
-| 53 | Gallatin Sandnes | CB | 18 | USA | – | 6,54 | 0 | 0 | 0/0 |  |
 | 85 | Kalani Rienzi | RB | 24 | USA | 632 k€ | 6,89 | 3 | 0 | 2/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-|  | Edson Carli | CAM,RW,ST,RM | 19 | USA | – | 6,02 | 0 | 0 | 0/0 |  |
-|  | Rafael Jauregui | CAM,RW,LW | 21 | USA | 334 k€ | – | 0 | 0 | 0/0 |  |
 | 7 | Cristian Roldan | CDM,CM | 31 | USA | 1,5 M€ | 7,34 | 4 | 1 | 1/0 |  |
 | 11 | Albert Rusnák | CAM | 32 | Slovakia | 1,4 M€ | 7,33 | 4 | 11 | 0/0 |  |
 | 31 | Hassani Dotson | CDM | 29 | USA | 1,8 M€ | 6,58 | 2 | 0 | 6/0 |  |
-| 32 | Xavi Gnaulati | CDM,CAM,CM,ST | 21 | USA | 276 k€ | – | 0 | 0 | 0/0 |  |
 | 37 | Snyder Brunell | CDM,CM,RW | 19 | USA | – | 6,62 | 0 | 1 | 4/0 |  |
-| 40 | Mark O'Neill | CDM,CB,RB,CM | 24 | USA | – | – | 0 | 0 | 0/0 |  |
 | 44 | Nikola Petković | CDM | 23 | Serbia | 659 k€ | 6,88 | 0 | 0 | 2/0 | skadad, åter Unknown |
 | 45 | Peter Kingston | CDM,CM,LWB,RB | 25 | USA | 190 k€ | 6,49 | 0 | 0 | 7/0 |  |
 | | **Anfallare** | | | | | | | | | |
@@ -116,3 +111,5 @@ Tränare: Brian Schmetzer. Betyg, mål och assist gäller innevarande säsong en
 | 17 | Paul Arriola | LW,RW | 31 | USA | 1,3 M€ | 6,76 | 2 | 2 | 2/0 |  |
 | 19 | Danny Musovski | ST | 30 | North Macedonia | 1,6 M€ | 6,38 | 2 | 0 | 1/0 |  |
 | 90 | Sebastian Gomez | LW,RW,CM | 20 | USA | 719 k€ | 6,51 | 0 | 2 | 1/0 |  |
+
+Har lämnat truppen sedan vi började spara (5): Rafael Jauregui (senast 2026-09-29), Xavi Gnaulati (senast 2026-09-29), Edson Carli (senast 2026-09-29), Mark O'Neill (senast 2026-09-29), Gallatin Sandnes (senast 2026-09-29).

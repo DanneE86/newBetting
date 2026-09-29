@@ -1,6 +1,6 @@
 # Asteras Tripolis (Super League (Grekland)) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [GR](../../ligor/GR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [GR](../../ligor/GR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -52,7 +52,7 @@ Form (äldst → senast): VOVFFFOO · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Giorgos Antonopoulos. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -76,7 +76,7 @@ Tränare: Giorgos Antonopoulos. Betyg, mål och assist gäller innevarande säso
 | 28 | Alex Méndez | LB,LWB,LM | 25 | Spain | 222 k€ | 6,63 | 0 | 1 | 0/0 |  |
 | 29 | Konstantinos Pomonis | LB | 24 | Greece | 171 k€ | – | 0 | 0 | 0/0 |  |
 | 32 | Jordan Silva | CB | 32 | Mexico | 128 k€ | 7,03 | 0 | 0 | 1/0 |  |
-| 74 | Dimitrios Laskaris | CB | 20 | Greece | 253 k€ | 6,52 | 0 | 0 | 1/0 |  |
+| 74 | Dimitrios Laskaris | CB | 21 | Greece | 253 k€ | 6,52 | 0 | 0 | 1/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 5 | Evgeniy Yablonski | CM,CDM,CB | 31 | Belarus | 133 k€ | – | 0 | 0 | 0/0 |  |
 | 8 | Giannis Bouzoukis | CM,CDM | 28 | Greece | 130 k€ | 6,61 | 0 | 0 | 1/0 |  |

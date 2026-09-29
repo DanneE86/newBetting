@@ -1,6 +1,6 @@
 # Fluminense (Brasileirão Série A) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [BR](../../ligor/BR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [BR](../../ligor/BR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -46,10 +46,10 @@ Form (äldst → senast): OOVVOVFV · senaste match 2026-09-20
 | Flamengo RJ | 16 | 6-3-7 | 16–18 | +0,43 | −8 pe | 2026-04-12 1-2 (h) |
 | Internacional | 16 | 7-2-7 | 16–20 | +0,22 | −16 pe | 2026-05-03 0-2 (b) |
 | Bahia | 15 | 7-3-5 | 18–15 | +0,28 | −7 pe | 2026-07-30 0-0 (h) |
-| Gremio | 15 | 5-2-8 | 18–21 | −0,22 | −16 pe | 2026-07-26 1-1 (b) |
 | Sao Paulo | 15 | 7-2-6 | 25–18 | +0,26 | −16 pe | 2026-05-16 2-1 (h) |
 | Athletico-PR | 14 | 7-3-4 | 21–20 | +0,31 | −8 pe | 2026-08-30 3-3 (b) |
 | Botafogo RJ | 14 | 5-3-6 | 11–12 | −0,16 | −8 pe | 2026-08-09 1-1 (b) |
+| Gremio | 14 | 5-2-7 | 18–20 | −0,14 | −14 pe | 2026-07-26 1-1 (b) |
 | Santos | 14 | 6-5-3 | 17–14 | +0,26 | +7 pe | 2026-04-19 3-2 (b) |
 | Bragantino | 13 | 6-4-3 | 18–16 | +0,24 | +3 pe | 2026-07-18 1-1 (h) |
 | Vasco | 13 | 4-3-6 | 14–19 | −0,38 | −7 pe | 2026-09-06 1-0 (h) |
@@ -62,7 +62,7 @@ Form (äldst → senast): OOVVOVFV · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Marcão. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -72,12 +72,10 @@ Tränare: Marcão. Betyg, mål och assist gäller innevarande säsong enligt Fot
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
 | 1 | Fábio | GK | 45 | Brazil | 1,1 M€ | – | 0 | 0 | 0/0 |  |
-| 24 | Gustavo Félix | Keeper | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 27 | Marcelo Pitaluga | GK | 23 | Brazil | 868 k€ | – | 0 | 0 | 0/0 |  |
 | 98 | Vitor Eudes | GK | 27 | Brazil | 453 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 |  | Jhonny | RB,RWB,RM | 24 | Brazil | 425 k€ | – | 0 | 0 | 0/0 |  |
-|  | Léo Jance | RB | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 2 | Samuel Xavier | RB | 36 | Brazil | 775 k€ | – | 0 | 0 | 0/0 |  |
 | 3 | Jemmes | CB | 26 | Brazil | 2,4 M€ | – | 0 | 0 | 0/0 |  |
 | 3 | Thiago Silva | CB | 42 | Brazil | 732 k€ | – | 0 | 0 | 0/0 |  |
@@ -88,37 +86,22 @@ Tränare: Marcão. Betyg, mål och assist gäller innevarande säsong enligt Fot
 | 22 | Juan Pablo Freytes | CB | 26 | Argentina | 4,4 M€ | – | 0 | 0 | 0/0 |  |
 | 23 | Guga | RB | 28 | Brazil | 1,5 M€ | – | 0 | 0 | 0/0 |  |
 | 29 | Julián Millán | CB | 28 | Colombia | 2,1 M€ | – | 0 | 0 | 0/0 |  |
-| 33 | Gorgulho | Defender | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 46 | Júlio Fidelis | RB | 19 | Brazil | 727 k€ | – | 0 | 0 | 0/0 |  |
-| 46 | Kaio Borges | Defender | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 52 | Breno | Defender | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-|  | Stiven Jimenez | CM,CDM | 19 | USA | 746 k€ | – | 0 | 0 | 0/0 |  |
 | 8 | Martinelli | CDM,CM | 24 | Brazil | 12,5 M€ | – | 0 | 0 | 0/0 |  |
 | 10 | Ganso | CAM | 36 | Brazil | 275 k€ | – | 0 | 0 | 0/0 |  |
 | 16 | Nonato | CDM,CM,CAM | 28 | Brazil | 1,2 M€ | – | 0 | 0 | 0/0 |  |
 | 25 | Alisson | CDM,CM | 33 | Brazil | 713 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 32 | Lucho Acosta | CAM,ST | 32 | Argentina | 1,9 M€ | – | 0 | 0 | 0/0 |  |
 | 35 | Hércules | CDM,CM | 25 | Brazil | 9,9 M€ | – | 0 | 0 | 0/0 |  |
-| 36 | Vagno | LB | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 41 | Ruan Sales | Midfielder | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 47 | Paulo Guilherme | Midfielder | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 48 | Peter | Midfielder | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 58 | Naarã | Midfielder | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 94 | Otávio | CDM | 32 | Brazil | 894 k€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Hulk | ST,CAM | 40 | Brazil | 1,1 M€ | – | 0 | 0 | 0/0 |  |
 | 9 | John Kennedy | ST | 24 | Brazil | 5,5 M€ | – | 0 | 0 | 0/0 | skadad, åter Out for season |
-| 11 | Jefferson Savarino | CAM,LW,RW | 29 | Venezuela | 4,3 M€ | – | 0 | 0 | 0/0 |  |
+| 11 | Jefferson Savarino | LW,CAM,RW | 29 | Venezuela | 4,3 M€ | – | 0 | 0 | 0/0 |  |
 | 14 | Germán Cano | ST | 38 | Argentina | 363 k€ | – | 0 | 0 | 0/0 | skadad, åter Early November 2026 |
-| 15 | Matheus Reis | LW | 19 | Mexico | – | – | 0 | 0 | 0/0 |  |
 | 17 | Agustín Canobbio | RW,RM,LW | 27 | Uruguay | 2,5 M€ | – | 0 | 0 | 0/0 |  |
 | 19 | Rodrigo Castillo | ST | 27 | Argentina | 2,0 M€ | – | 0 | 0 | 0/0 |  |
-| 28 | Riquelme | RW | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 30 | Yeferson Soteldo | LW,LM | 29 | Venezuela | 2,2 M€ | – | 0 | 0 | 0/0 |  |
-| 34 | Wesley Natã | Attacker | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 38 | Isack Gabriel | Attacker | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 39 | Keven Samuel | Attacker | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 42 | João Lourenço | Attacker | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 49 | Enzo | Attacker | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 90 | Kevin Serna | LW,RW,LM | 28 | Colombia | 2,1 M€ | – | 0 | 0 | 0/0 |  |
+| 90 | Kevin Serna | LW,RW | 28 | Colombia | 2,1 M€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (19): Stiven Jimenez (senast 2026-09-28), Matheus Reis (senast 2026-09-29), Júlio Fidelis (senast 2026-09-29), Isack Gabriel (senast 2026-09-29), Riquelme (senast 2026-09-29), Léo Jance (senast 2026-09-28), Vagno (senast 2026-09-29), Wesley Natã (senast 2026-09-29), João Lourenço (senast 2026-09-29), Keven Samuel (senast 2026-09-29), Naarã (senast 2026-09-29), Kaio Borges (senast 2026-09-29), Gustavo Félix (senast 2026-09-29), Enzo (senast 2026-09-29), Paulo Guilherme (senast 2026-09-29), Peter (senast 2026-09-29), Breno (senast 2026-09-29), Gorgulho (senast 2026-09-29), Ruan Sales (senast 2026-09-29).

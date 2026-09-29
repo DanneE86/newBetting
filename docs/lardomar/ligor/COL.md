@@ -1,6 +1,6 @@
 # Primera A (COL) – lärdomar
 
-Genererad 2026-09-28 av `node scripts/analyze-learnings.mjs`. Ligan saknar oddshistorik (inga stängningsodds i våra källor), så signaler och kalibrering kan inte testas mot marknaden här. Alla matcher: `data/matcher/COL.csv`.
+Genererad 2026-09-29 av `node scripts/analyze-learnings.mjs`. Ligan saknar oddshistorik (inga stängningsodds i våra källor), så signaler och kalibrering kan inte testas mot marknaden här. Alla matcher: `data/matcher/COL.csv`.
 
 ## Lärdomar i korthet
 
@@ -16,7 +16,7 @@ Genererad 2026-09-28 av `node scripts/analyze-learnings.mjs`. Ligan saknar oddsh
 | 2025/26 | 451 | 46 % | 29 % | 25 % | 2,29 | 42 % | 46 % |
 | 2026/27 | 306 | 45 % | 31 % | 24 % | 2,56 | 48 % | 54 % |
 
-## Tabell nu (FotMob, 2026-09-28)
+## Tabell nu (FotMob, 2026-09-29)
 
 **Clausura**
 

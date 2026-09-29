@@ -1,6 +1,6 @@
 # Stockport (League One) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -68,7 +68,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-09-19 | Stryk 4971 | Sheffield W - Stockport | X | 32 % | 44 % |
 | 2026-05-13 | Europa 2574 | Stockport - Stevenage | 1 ✓ | 53 % | 50 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Jim McNulty. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -76,32 +76,32 @@ Tränare: Jim McNulty. Betyg, mål och assist gäller innevarande säsong enligt
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
 | 1 | Oliver Whatmuff | GK | 18 | England | – | 6,76 | 0 | 0 | 0/0 |  |
-| 26 | Luca Ashby-Hammond | GK | 25 | England | 263 k€ | 8,27 | 0 | 0 | 0/0 |  |
+| 26 | Luca Ashby-Hammond | GK | 25 | England | 263 k€ | 8,44 | 0 | 0 | 0/0 |  |
 | 32 | Andrew Wogan | GK | 20 | Ireland | 347 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 2 | Josh Dacres-Cogley | RB,CB,RM,RWB | 30 | England | 209 k€ | 5,83 | 0 | 0 | 0/0 |  |
-| 5 | Ethan Pye | CB | 23 | England | 1,3 M€ | 7,14 | 0 | 0 | 1/0 |  |
-| 6 | Eoghan O'Connell | CB,LB | 31 | Ireland | 256 k€ | 7,06 | 0 | 0 | 1/0 |  |
+| 5 | Ethan Pye | CB | 23 | England | 1,3 M€ | 7,13 | 0 | 0 | 1/0 |  |
+| 6 | Eoghan O'Connell | CB,LB | 31 | Ireland | 256 k€ | 7,07 | 0 | 0 | 1/0 |  |
 | 12 | Thomas Wilson-Brown | CB,LB | 21 | England | – | – | 0 | 0 | 0/0 |  |
 | 14 | Tayo Edun | LB,LWB,LM | 28 | England | 190 k€ | 6,12 | 0 | 0 | 0/0 |  |
 | 24 | Kyron Gordon | CB,RB,RWB | 24 | England | 361 k€ | 7,11 | 0 | 0 | 2/0 |  |
 | 25 | Mamadou Jobe | CB | 23 | England | 317 k€ | 7,11 | 0 | 1 | 0/0 |  |
 | 33 | Brad Hills | CB | 22 | England | 842 k€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 4 | Lewis Bate | CM,CDM | 23 | England | 355 k€ | 7,35 | 0 | 4 | 0/0 |  |
-| 7 | Jack Diamond | RW,CAM,LW,RWB,RM | 26 | England | 434 k€ | 7,46 | 4 | 2 | 0/0 |  |
+| 4 | Lewis Bate | CM,CDM | 23 | England | 355 k€ | 7,34 | 0 | 4 | 0/0 |  |
 | 8 | Callum Camps | CDM | 30 | England | 140 k€ | – | 0 | 0 | 0/0 |  |
-| 9 | Benoný Andrésson | CAM,ST | 21 | Iceland | 518 k€ | 6,28 | 0 | 1 | 0/0 |  |
-| 10 | Oliver Norwood | CDM,CM,CAM | 35 | Northern Ireland | 260 k€ | 7,66 | 1 | 1 | 1/0 |  |
-| 15 | Ryan Glover | RW,LW,RM,CAM,RWB,LM,LB,ST | 25 | England | 364 k€ | 7,19 | 2 | 0 | 1/0 |  |
+| 10 | Oliver Norwood | CDM,CM,CAM | 35 | Northern Ireland | 260 k€ | 7,67 | 1 | 1 | 1/0 |  |
 | 17 | Ryan Rydel | LWB | 25 | England | 210 k€ | 6,03 | 0 | 0 | 0/0 |  |
-| 18 | Lewis Fiorini | CAM | 24 | Scotland | 279 k€ | 6,59 | 0 | 0 | 0/0 |  |
-| 23 | Ben Osborn | LM,LWB,CDM,LW,LB,CAM | 32 | England | 244 k€ | 7,23 | 0 | 0 | 0/0 |  |
+| 18 | Lewis Fiorini | CAM | 24 | Scotland | 279 k€ | 6,62 | 0 | 0 | 0/0 |  |
+| 23 | Ben Osborn | LM,LWB,CDM,LW,LB,CAM | 32 | England | 244 k€ | 7,21 | 0 | 0 | 0/0 |  |
 | 28 | Che Gardner | RWB,RB | 19 | England | – | – | 0 | 1 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
+| 7 | Jack Diamond | RW,CAM,LW,RWB,RM | 26 | England | 434 k€ | 7,47 | 4 | 2 | 0/0 |  |
+| 9 | Benoný Andrésson | ST,CAM | 21 | Iceland | 518 k€ | 6,28 | 0 | 1 | 0/0 |  |
+| 15 | Ryan Glover | RW,LW,RM,CAM,RWB,LM,LB,ST | 25 | England | 364 k€ | 7,19 | 2 | 0 | 1/0 |  |
 | 16 | Harry Wood | ST,LW,CAM,RW,CM | 24 | England | 150 k€ | 7,09 | 3 | 0 | 0/0 |  |
-| 19 | Kyle Wootton | ST,CB,LW | 29 | England | 487 k€ | 7,32 | 5 | 1 | 0/0 |  |
+| 19 | Kyle Wootton | ST,CB,LW | 29 | England | 487 k€ | 7,31 | 5 | 1 | 0/0 |  |
 | 20 | Jason Adigun | RW | 22 | England | – | 6,32 | 0 | 0 | 2/0 |  |
 | 22 | Mikaël Mandron | ST | 31 | Scotland | 293 k€ | 6,55 | 2 | 0 | 0/0 |  |
 | 29 | Adama Sidibeh | ST,CAM,RW | 28 | The Gambia | 338 k€ | – | 0 | 0 | 0/0 |  |
-| 30 | Ethan Ennis | RW,RWB,LW | 21 | England | 519 k€ | 6,27 | 0 | 0 | 0/0 |  |
+| 30 | Ethan Ennis | RW,RWB,LW | 21 | England | 519 k€ | 6,29 | 0 | 0 | 0/0 |  |

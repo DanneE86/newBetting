@@ -1,6 +1,6 @@
 # Willem II (Eredivisie) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [ED](../../ligor/ED.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [ED](../../ligor/ED.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -60,22 +60,20 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 |---|---|---|---|---|---|
 | 2026-05-16 | Europa 2575 | Willem II - Almere City | 1 ✓ | 62 % | 46 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: John Stegeman. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Thomas Didillon-Hödl (skadad, åter Unknown), Justin Hoogma (skadad, åter Late October 2027), Armin Culum (skadad, åter Day to day), Amine Lachkar (skadad, åter Day to day)
+**Skadade/borta nu:** Thomas Didillon-Hödl (skadad, åter Unknown), Justin Hoogma (skadad, åter Late October 2027), Amine Lachkar (skadad, åter Day to day), Armin Culum (skadad, åter Day to day)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-|  | Boet van der Linden | Keeper | 20 | Netherlands | – | – | 0 | 0 | 0/0 |  |
 | 1 | Thomas Didillon-Hödl | GK | 30 | France | 314 k€ | 6,21 | 0 | 0 | 0/0 | skadad, åter Unknown |
 | 21 | Wouter van der Steen | GK | 36 | Netherlands | 91 k€ | 6,49 | 0 | 0 | 0/0 |  |
 | 26 | Maxime Delanghe | GK | 25 | Belgium | 1,3 M€ | 6,23 | 0 | 0 | 0/0 |  |
 | 31 | Karst de Leeuw | GK | 22 | Netherlands | 301 k€ | 6,43 | 0 | 0 | 0/0 |  |
 | 41 | Tygo Kotte | Keeper | 19 | Netherlands | – | – | 0 | 0 | 0/0 |  |
-| 99 | Vince van der Bas | Keeper | 20 | Netherlands | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 2 | Alessandro Ciranni | RB | 30 | Belgium | 134 k€ | 6,09 | 1 | 0 | 0/0 |  |
 | 3 | Finn Stam | CB,RB,LB | 23 | Netherlands | 435 k€ | 6,31 | 0 | 0 | 0/0 |  |
@@ -92,13 +90,11 @@ Tränare: John Stegeman. Betyg, mål och assist gäller innevarande säsong enli
 | 6 | Calvin Twigt | CDM,CM | 23 | Netherlands | 984 k€ | 6,71 | 0 | 1 | 0/0 |  |
 | 8 | Kasper Boogaard | CDM,CM,CAM | 20 | Netherlands | 1,9 M€ | 6,16 | 0 | 0 | 1/0 |  |
 | 10 | Jari Schuurman | CM | 29 | Netherlands | 239 k€ | – | 0 | 0 | 0/0 |  |
-| 11 | Armin Culum | RW | 22 | Sweden | 423 k€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
 | 18 | Anass Zarrouk | CM,CDM | 20 | Netherlands | 830 k€ | – | 0 | 0 | 0/0 |  |
 | 19 | Uriël van Aalst | CAM,CM,ST,CDM | 20 | Netherlands | 949 k€ | 7,14 | 1 | 2 | 1/0 |  |
 | 32 | Vito van Crooij | CAM | 30 | Netherlands | 458 k€ | 5,86 | 0 | 0 | 1/0 |  |
 | 34 | Amine Lachkar | CM | 23 | Netherlands | 655 k€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
 | 40 | Divano Iglesias | Midfielder | 19 | Netherlands | – | – | 0 | 0 | 0/0 |  |
-| 45 | Pieter van Maarschalkerwaard | Midfielder | 21 | Netherlands | – | – | 0 | 0 | 0/0 |  |
 | 45 | Sebas Wermenbol | Midfielder | 0 | Netherlands | – | – | 0 | 0 | 0/0 |  |
 | 48 | Julian van Esdonk | Midfielder | 20 | Netherlands | – | – | 0 | 0 | 0/0 |  |
 | 52 | Tonny Vilhena | CDM | 31 | Netherlands | 233 k€ | 6,66 | 0 | 0 | 1/0 |  |
@@ -106,9 +102,12 @@ Tränare: John Stegeman. Betyg, mål och assist gäller innevarande säsong enli
 |  | Noeh de Bruijn | Attacker | 22 | Netherlands | – | – | 0 | 0 | 0/0 |  |
 | 7 | Jaden Slory | RW,LW | 21 | Netherlands | 1,3 M€ | 6,51 | 0 | 0 | 1/0 |  |
 | 9 | Devin Haen | ST,CAM | 22 | Netherlands | 1,7 M€ | 6,84 | 3 | 0 | 0/0 |  |
+| 11 | Armin Culum | RW | 22 | Sweden | 423 k€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
 | 17 | Chido Obi | ST | 18 | Denmark | 3,8 M€ | 5,88 | 0 | 0 | 0/0 |  |
 | 20 | Thijs Muller | ST,CAM | 19 | Netherlands | 704 k€ | – | 0 | 0 | 0/0 |  |
 | 28 | Thomas Verheijdt | ST | 34 | Netherlands | 218 k€ | 6,52 | 1 | 0 | 0/0 |  |
 | 44 | Luca Maal | Attacker | 18 | Netherlands | – | – | 0 | 0 | 0/0 |  |
 | 49 | Ismael Mouhoul | Attacker | 20 | Netherlands | – | – | 0 | 0 | 1/0 |  |
 | 50 | Eser Gürbüz | RW | 19 | Netherlands | 1,1 M€ | 6,49 | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (3): Pieter van Maarschalkerwaard (senast 2026-09-29), Boet van der Linden (senast 2026-09-29), Vince van der Bas (senast 2026-09-29).

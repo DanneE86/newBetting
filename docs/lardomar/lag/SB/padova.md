@@ -1,6 +1,6 @@
 # Padova (Serie B) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [SB](../../ligor/SB.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [SB](../../ligor/SB.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -51,11 +51,9 @@ Form (äldst → senast): FVVVOFVF · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Antonio Nicola Calabro. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
-
-**Skadade/borta nu:** Papu Gómez (skadad, åter Day to day)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -69,9 +67,8 @@ Tränare: Antonio Nicola Calabro. Betyg, mål och assist gäller innevarande sä
 | 27 | Alessandro Dellavalle | CB | 22 | Italy | 2,1 M€ | 7,10 | 0 | 0 | 2/0 |  |
 | 32 | Filippo Sgarbi | CB | 28 | Italy | 213 k€ | 6,94 | 0 | 0 | 0/0 |  |
 | 58 | Christian Pastina | CB | 25 | Italy | 379 k€ | 7,12 | 1 | 0 | 1/0 |  |
-| 72 | Carlo Faedo | CB,RB,LB | 27 | Italy | 387 k€ | – | 0 | 0 | 0/0 |  |
+| 72 | Carlo Faedo | CB,LB,RB | 27 | Italy | 387 k€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-|  | Edoardo Caporello | Midfielder | 20 | Italy | – | – | 0 | 0 | 0/0 |  |
 | 3 | Antonio Barreca | LM,LB | 31 | Italy | 187 k€ | – | 0 | 0 | 0/0 |  |
 | 6 | Giovanni Giunti | CM | 21 | Italy | 1,3 M€ | 6,70 | 0 | 0 | 2/0 |  |
 | 7 | Kevin Varas | CM,LM | 33 | Ecuador | 184 k€ | 6,70 | 0 | 0 | 0/0 |  |
@@ -88,9 +85,10 @@ Tränare: Antonio Nicola Calabro. Betyg, mål och assist gäller innevarande sä
 |  | Gabriele Artistico | ST | 24 | Italy | 1,5 M€ | – | 0 | 0 | 0/0 |  |
 | 9 | Luca Moro | ST | 25 | Italy | 1,3 M€ | 6,43 | 0 | 0 | 0/0 |  |
 | 10 | Gianluca Caprari | ST,CAM | 33 | Italy | 276 k€ | 6,48 | 0 | 0 | 0/0 |  |
-| 10 | Papu Gómez | ST | 38 | Argentina | 363 k€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
 | 11 | Alessandro Seghetti | ST | 22 | Italy | 480 k€ | 6,21 | 0 | 0 | 0/0 |  |
 | 15 | Kevin Lasagna | ST | 34 | Italy | 247 k€ | 6,37 | 0 | 0 | 0/0 |  |
 | 20 | Mattia Bortolussi | ST | 30 | Italy | 667 k€ | 6,28 | 0 | 0 | 0/0 |  |
 | 25 | Nicolas Galazzi | CAM | 25 | Italy | 789 k€ | 7,43 | 1 | 0 | 0/0 |  |
 | 92 | Cristian Buonaiuto | ST | 33 | Italy | 192 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (2): Papu Gómez (senast 2026-09-28), Edoardo Caporello (senast 2026-09-29).

@@ -1,6 +1,6 @@
 # Salford (League Two) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -60,46 +60,45 @@ Form (äldst → senast): FFFVVOVV · senaste match 2026-09-26
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Peter Cklamovski. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Will Norris | GK | 33 | England | 162 k€ | 6,85 | 0 | 0 | 0/0 |  |
+| 1 | Will Norris | GK | 33 | England | 162 k€ | 6,87 | 0 | 0 | 0/0 |  |
 | 12 | Sam Long | GK | 23 | England | 249 k€ | – | 0 | 0 | 0/0 |  |
 | 26 | Lee Burge | GK | 33 | England | 146 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 3 | Zach Awe | CB | 22 | England | 169 k€ | 6,32 | 0 | 0 | 0/0 |  |
-| 4 | Will Aimson | CB | 32 | England | 172 k€ | 7,27 | 0 | 0 | 0/0 |  |
+| 4 | Will Aimson | CB | 32 | England | 172 k€ | 7,26 | 0 | 0 | 0/0 |  |
 | 5 | Michael Rose | CB | 30 | Scotland | 175 k€ | – | 0 | 0 | 0/0 |  |
 | 15 | Brandon Cooper | CB | 26 | Wales | 203 k€ | – | 0 | 0 | 0/0 |  |
-| 17 | Dan Scarr | CB | 31 | England | 282 k€ | 7,46 | 0 | 0 | 0/0 |  |
+| 17 | Dan Scarr | CB | 31 | England | 282 k€ | 7,49 | 0 | 0 | 0/0 |  |
 | 20 | Oliver Turton | CB,RB,CAM | 33 | England | – | 6,33 | 0 | 0 | 1/0 |  |
 | 22 | Adebola Oluwo | CB | 26 | England | 257 k€ | 7,37 | 2 | 0 | 0/0 |  |
-| 24 | Taylor Allen | CB,LB | 26 | England | 233 k€ | 7,28 | 1 | 0 | 0/0 |  |
+| 24 | Taylor Allen | CB,LB | 26 | England | 233 k€ | 7,26 | 1 | 0 | 0/0 |  |
 | 29 | Luke Garbutt | CB,LB,LWB,LW,LM | 33 | England | 123 k€ | 6,90 | 0 | 1 | 1/0 |  |
 | 33 | Hayden Carson | LB | 20 | England | – | 6,30 | 0 | 0 | 0/0 |  |
-| 36 | Jacob Lara | CB | 21 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-|  | Alfie Henderson | Midfielder | 21 | England | – | – | 0 | 0 | 0/0 |  |
 | 2 | Nathan Asiimwe | RWB,RM,RB | 21 | Uganda | 601 k€ | 6,21 | 0 | 0 | 0/0 |  |
-| 6 | Joe Powell | LM,CM,CDM,LW | 27 | England | 524 k€ | 7,53 | 3 | 2 | 1/0 |  |
-| 8 | Jorge Grant | CM,CDM,CAM,RW,LM | 31 | England | 97 k€ | 6,40 | 0 | 0 | 0/0 |  |
+| 6 | Joe Powell | LM,CM,CDM,LW | 27 | England | 524 k€ | 7,52 | 3 | 2 | 1/0 |  |
+| 8 | Jorge Grant | CM,CDM,CAM,RW,LM | 31 | England | 97 k€ | 6,39 | 0 | 0 | 0/0 |  |
 | 16 | Elliot Bonds | RW,CDM,CAM,CM | 26 | Guyana | 210 k€ | 6,97 | 0 | 0 | 0/0 |  |
 | 18 | Matt Butcher | CM,CDM,RW,CAM | 29 | England | 128 k€ | 6,20 | 0 | 0 | 0/0 |  |
 | 21 | Kallum Cesay | CAM,CM,ST,RW | 24 | Sierra Leone | 251 k€ | 6,53 | 0 | 2 | 1/0 |  |
 | 42 | Marshall Heys | Midfielder | 17 | England | – | – | 0 | 0 | 0/0 |  |
 | 44 | Brendan Sarpong-Wiredu | CM,CB,CDM | 26 | England | 311 k€ | 7,00 | 1 | 0 | 1/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 7 | Benjamin Woodburn | RW,CM,CAM,ST | 26 | Wales | – | 6,44 | 0 | 0 | 0/0 |  |
+| 7 | Benjamin Woodburn | RW,CM,CAM | 26 | Wales | – | 6,44 | 0 | 0 | 0/0 |  |
 | 9 | Macaulay Langstaff | ST,CAM,RW | 29 | England | 347 k€ | 6,43 | 1 | 0 | 2/0 |  |
 | 10 | Kelly N'Mai | ST,LW,LM,CAM | 22 | Netherlands | 253 k€ | 6,96 | 2 | 1 | 0/0 |  |
-| 14 | Abraham Odoh | RW,LWB | 26 | England | 222 k€ | 6,76 | 0 | 0 | 2/1 |  |
-| 19 | Ryan Graydon | ST,LW,RM | 27 | Ireland | 280 k€ | 6,82 | 1 | 0 | 1/0 |  |
+| 14 | Abraham Odoh | RW,LWB | 26 | England | 222 k€ | 6,74 | 0 | 0 | 2/1 |  |
+| 19 | Ryan Graydon | ST,RM,LW | 27 | Ireland | 280 k€ | 6,82 | 1 | 0 | 1/0 |  |
 | 23 | Daniel Udoh | ST | 30 | Nigeria | 207 k€ | 6,32 | 0 | 0 | 0/0 |  |
 | 30 | Kyrell Malcolm | ST | 19 | England | 337 k€ | 5,83 | 0 | 0 | 0/0 |  |
 | 35 | Bruno Padovani | LW | 0 | England | – | – | 0 | 0 | 0/0 |  |
 | 43 | Luke Molyneux | RW,RM,CDM,RWB | 28 | England | 337 k€ | 7,19 | 1 | 3 | 1/0 |  |
-| 47 | Riley Carroll | Attacker | 0 | England | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (3): Alfie Henderson (senast 2026-09-29), Jacob Lara (senast 2026-09-29), Riley Carroll (senast 2026-09-29).

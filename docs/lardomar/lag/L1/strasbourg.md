@@ -1,6 +1,6 @@
 # Strasbourg (Ligue 1) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [L1](../../ligor/L1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [L1](../../ligor/L1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -83,7 +83,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-10-29 | Europa 2518 | Strasbourg - Auxerre | 1 ✓ | 68 % | 59 % |
 | 2025-10-26 | Europa 2517 | Lyon - Strasbourg | 1 | 23 % | 25 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Hugo Oliveira. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -97,7 +97,7 @@ Tränare: Hugo Oliveira. Betyg, mål och assist gäller innevarande säsong enli
 | 50 | Timeo Raffourt | Keeper | 18 | France | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 |  | Hermann Diandaga | CB | 18 | France | – | – | 0 | 0 | 0/0 |  |
-| 4 | Jeyland Mitchell | CB,RB,RWB | 21 | Costa Rica | 1,8 M€ | 7,03 | 0 | 0 | 1/0 |  |
+| 4 | Jeyland Mitchell | CB,RB,RWB | 22 | Costa Rica | 1,8 M€ | 7,03 | 0 | 0 | 1/0 |  |
 | 6 | Ismaël Doukouré | CB,CDM | 23 | France | 17,9 M€ | 6,92 | 0 | 0 | 0/0 |  |
 | 15 | Mateo Del Blanco | LB,LM | 22 | Argentina | 5,0 M€ | 6,00 | 0 | 0 | 0/0 |  |
 | 16 | Genesis Antwi | RB,LB | 19 | Sweden | 852 k€ | 6,85 | 0 | 0 | 0/0 |  |

@@ -1,6 +1,6 @@
 # Club Leon (Liga MX) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [MX](../../ligor/MX.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [MX](../../ligor/MX.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -61,7 +61,7 @@ Form (äldst → senast): FVVVOFVO · senaste match 2026-09-21
 
 Ligans test av inbördes möten mot marknaden: svag signal (inte bekräftad).
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Javier Gandolfi. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -74,7 +74,7 @@ Tränare: Javier Gandolfi. Betyg, mål och assist gäller innevarande säsong en
 | | **Backar** | | | | | | | | | |
 | 2 | Valentín Gauthier | CB,RB | 23 | Uruguay | 1,7 M€ | – | 0 | 0 | 0/0 |  |
 | 3 | Juan Guevara | CB | 25 | Colombia | 992 k€ | – | 0 | 0 | 0/0 |  |
-| 4 | Bryan Colula | RB,CB,RM | 30 | Mexico | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 4 | Bryan Colula | RB,RM | 30 | Mexico | 1,1 M€ | – | 0 | 0 | 0/0 |  |
 | 5 | Sebastián Vegas | CB,LB | 29 | Chile | 1,1 M€ | – | 0 | 0 | 0/0 |  |
 | 7 | Iván Moreno | RB,RW,CM,RM | 28 | Mexico | 942 k€ | – | 0 | 0 | 0/0 |  |
 | 14 | Jhohan Romaña | CB | 28 | Colombia | 2,5 M€ | – | 0 | 0 | 0/0 |  |
@@ -87,10 +87,9 @@ Tränare: Javier Gandolfi. Betyg, mål och assist gäller innevarande säsong en
 | 6 | Fernando Beltrán | CAM,CM,CDM | 28 | Mexico | 1,9 M€ | – | 0 | 0 | 0/0 |  |
 | 15 | Sebastián Fierro | CM | 25 | Mexico | 603 k€ | – | 0 | 0 | 0/0 |  |
 | 20 | Rodrigo Echeverría | CAM,CM,CDM,CB | 31 | Chile | 1,8 M€ | – | 0 | 0 | 0/0 |  |
-| 29 | Iván Rodríguez | CDM,CM,CAM | 30 | Mexico | 776 k€ | – | 0 | 0 | 0/0 |  |
 | 30 | Ángel Estrada | LB | 23 | Mexico | 633 k€ | – | 0 | 0 | 0/0 | osäker |
 | 35 | Luis Valadez | CAM | 22 | Mexico | – | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
-| 203 | Jesús Lara | CDM | 21 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| 203 | Jesús Lara | CAM | 21 | Mexico | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 8 | Juan Domínguez | RW,LW | 27 | Mexico | 1,6 M€ | – | 0 | 0 | 0/0 |  |
 | 11 | Ismael Díaz | LW,CAM,LM,ST,RW | 29 | Panama | 1,4 M€ | – | 0 | 0 | 0/0 |  |
@@ -99,3 +98,5 @@ Tränare: Javier Gandolfi. Betyg, mål och assist gäller innevarande säsong en
 | 18 | Edgar Guerra | RW,RM,ST,LW | 25 | Colombia | 1,8 M€ | – | 0 | 0 | 0/0 |  |
 | 19 | Alfonso Alvarado | ST,LW | 26 | Mexico | 1,1 M€ | – | 0 | 0 | 0/0 |  |
 | 27 | Díber Cambindo | ST | 30 | Colombia | 2,2 M€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Iván Rodríguez (senast 2026-09-29).

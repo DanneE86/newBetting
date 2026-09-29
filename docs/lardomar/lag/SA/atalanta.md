@@ -1,6 +1,6 @@
 # Atalanta (Serie A) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -92,7 +92,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-10-19 | Europa 2515 | Atalanta - Lazio | X | 64 % | 54 % |
 | 2025-09-21 | Europa 2507 | Torino - Atalanta | 2 ✓ | 44 % | 44 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Maurizio Sarri. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

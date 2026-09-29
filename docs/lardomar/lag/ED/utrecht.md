@@ -1,6 +1,6 @@
 # Utrecht (Eredivisie) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [ED](../../ligor/ED.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [ED](../../ligor/ED.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -63,7 +63,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 |---|---|---|---|---|---|
 | 2026-02-11 | Europa 2548 | Nijmegen - Utrecht | 2 ✓ | 14 % | 21 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Anthony Correia. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

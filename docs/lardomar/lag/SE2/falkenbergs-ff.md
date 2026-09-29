@@ -1,6 +1,6 @@
 # Falkenbergs FF (Superettan) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [SE2](../../ligor/SE2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [SE2](../../ligor/SE2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -40,7 +40,7 @@ Form senaste 8 (äldst → senast): OVFVFVVO · senaste match 2026-09-18
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Christoffer Andersson. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -49,7 +49,6 @@ Tränare: Christoffer Andersson. Betyg, mål och assist gäller innevarande säs
 | | **Målvakter** | | | | | | | | | |
 | 1 | Anton Andersson | GK | 29 | Sweden | 50 k€ | – | 0 | 0 | 2/0 |  |
 | 31 | Gustav Lillienberg | GK | 22 | Sweden | 88 k€ | – | 0 | 0 | 0/0 |  |
-| 34 | Oscar Linnér | GK | 29 | Sweden | 132 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 4 | Tim Stålheden | CB | 26 | Sweden | 141 k€ | – | 2 | 0 | 2/0 |  |
 | 5 | Gabriel Johansson | LB | 26 | Sweden | 140 k€ | – | 0 | 0 | 0/0 |  |
@@ -74,3 +73,5 @@ Tränare: Christoffer Andersson. Betyg, mål och assist gäller innevarande säs
 | 14 | William Videhult | ST | 23 | Sweden | 137 k€ | – | 0 | 0 | 1/0 |  |
 | 21 | Lion Beqiri | Attacker | 20 | Sweden | 239 k€ | – | 1 | 1 | 0/0 |  |
 | 29 | Hugo Komano | ST | 26 | France | 159 k€ | – | 2 | 0 | 1/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Oscar Linnér (senast 2026-09-29).

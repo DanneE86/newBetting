@@ -1,6 +1,6 @@
 # Leicester (League One) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -49,7 +49,7 @@ Form (äldst → senast): VOFOVFVO · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Russell Martin. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -61,7 +61,6 @@ Tränare: Russell Martin. Betyg, mål och assist gäller innevarande säsong enl
 | 21 | Franco Ravizzoli | GK | 29 | Argentina | 140 k€ | – | 0 | 0 | 0/0 |  |
 | 29 | Alex McCarthy | GK | 36 | England | 237 k€ | 6,63 | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 3 | Wout Faes | CB | 28 | Belgium | 5,8 M€ | 7,15 | 0 | 0 | 0/0 |  |
 | 4 | Ben Nelson | CB,LB | 22 | England | 1,2 M€ | – | 0 | 0 | 0/0 |  |
 | 5 | Memeh Caleb Okoli | CB,RB | 25 | Italy | 11,3 M€ | 7,24 | 0 | 0 | 0/0 |  |
 | 15 | Harry Souttar | CB | 27 | Australia | 2,1 M€ | 6,87 | 0 | 0 | 2/0 |  |
@@ -87,3 +86,5 @@ Tränare: Russell Martin. Betyg, mål och assist gäller innevarande säsong enl
 | 20 | Harry Howell | RW,CAM | 18 | England | 1,1 M€ | 6,50 | 1 | 0 | 0/0 |  |
 | 23 | Tom Watson | LW | 20 | England | – | 6,48 | 0 | 0 | 0/0 |  |
 | 37 | Will Alves | LW,CAM,RW,CM | 21 | England | 613 k€ | 7,11 | 1 | 1 | 2/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Wout Faes (senast 2026-09-29).

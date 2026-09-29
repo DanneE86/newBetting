@@ -1,6 +1,6 @@
 # Águilas Doradas (Primera A) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [COL](../../ligor/COL.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [COL](../../ligor/COL.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -39,17 +39,15 @@ Form senaste 8 (äldst → senast): VOOOOFOF · senaste match 2026-09-24
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Flavio Robatto. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-|  | Héctor Arango | GK | 24 | Colombia | 152 k€ | – | 0 | 0 | 0/0 |  |
 |  | Juan Hurtado | Keeper | 19 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 1 | Jorge Soto | GK | 33 | Colombia | 248 k€ | – | 0 | 0 | 0/0 |  |
-| 12 | Andrés Salazar | GK | 32 | Colombia | 147 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 |  | Emanuel Betancur | Defender | 0 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 2 | John García | CB | 37 | Colombia | 240 k€ | – | 0 | 0 | 0/0 |  |
@@ -76,7 +74,9 @@ Tränare: Flavio Robatto. Betyg, mål och assist gäller innevarande säsong enl
 | 9 | Anthony Vásquez | ST,RW | 24 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 15 | Fabián Charales | RW,ST,LW | 22 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 16 | Matías Ramírez | RW | 27 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 17 | Tomás Blandón | Attacker | 19 | Colombia | – | – | 0 | 0 | 0/0 |  |
+| 17 | Tomás Blandón | RB | 19 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 18 | Andrés Carreño | Attacker | 23 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 21 | Ricardo Márquez | ST | 28 | Colombia | 246 k€ | – | 0 | 0 | 0/0 |  |
 | 24 | Juan Ávalo | ST,CDM,RW,RM,CAM | 24 | Colombia | 371 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (2): Héctor Arango (senast 2026-09-29), Andrés Salazar (senast 2026-09-29).

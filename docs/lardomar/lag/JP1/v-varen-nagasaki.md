@@ -1,6 +1,6 @@
 # V-Varen Nagasaki (J1 League) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [JP1](../../ligor/JP1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [JP1](../../ligor/JP1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -32,7 +32,6 @@ Form (äldst → senast): VFFFOFVO · senaste match 2026-09-19
 | Cerezo Osaka | 1 | 0-1-0 | 1–1 | −0,22 | +73 pe | 2026-09-19 1-1 (h) |
 | FC Tokyo | 1 | 0-0-1 | 0–3 | −0,74 | −23 pe | 2026-08-29 0-3 (h) |
 | Kashiwa Reysol | 1 | 0-0-1 | 2–4 | −0,65 | −21 pe | 2026-08-21 2-4 (b) |
-| Kawasaki Frontale | 1 | 0-0-1 | 1–2 | −0,67 | −23 pe | 2018-09-29 1-2 (h) |
 | Kyoto | 1 | 1-0-0 | 2–1 | +1,86 | −29 pe | 2026-08-09 2-1 (h) |
 | Nagoya Grampus | 1 | 1-0-0 | 2–0 | +1,90 | −26 pe | 2026-09-12 2-0 (h) |
 | Okayama | 1 | 0-0-1 | 0–1 | −0,77 | −25 pe | 2026-08-15 0-1 (b) |
@@ -41,7 +40,7 @@ Form (äldst → senast): VFFFOFVO · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Takuya Takagi. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -74,9 +73,9 @@ Tränare: Takuya Takagi. Betyg, mål och assist gäller innevarande säsong enli
 | 23 | Shunya Yoneda | LWB,RWB,LB | 30 | Japan | 202 k€ | 6,39 | 0 | 0 | 2/0 |  |
 | 24 | Riku Yamada | CDM | 28 | Japan | 168 k€ | 6,54 | 0 | 0 | 1/0 |  |
 | 34 | Tenmu Matsumoto | CAM,CDM | 24 | Japan | 228 k€ | 6,71 | 2 | 0 | 0/0 |  |
-| 41 | Motoki Hasegawa | CAM,ST,CM,LW,CDM | 27 | Japan | 453 k€ | 7,16 | 0 | 1 | 1/0 |  |
+| 41 | Motoki Hasegawa | CAM,CM,LW,ST,CDM | 27 | Japan | 453 k€ | 7,16 | 0 | 1 | 1/0 |  |
 | 44 | Harumu Nabeshima | CDM | 22 | Japan | – | – | 0 | 0 | 0/0 |  |
-| 88 | Asahi Masuyama | RWB,LWB | 29 | Japan | 380 k€ | 6,13 | 0 | 0 | 0/0 |  |
+| 88 | Asahi Masuyama | LWB,RWB | 29 | Japan | 380 k€ | 6,13 | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 9 | Thiago Santana | ST | 33 | Brazil | 312 k€ | 6,83 | 3 | 0 | 1/0 |  |
 | 11 | Norman Campbell | RW,CAM | 26 | Jamaica | 428 k€ | 6,28 | 0 | 0 | 2/0 |  |

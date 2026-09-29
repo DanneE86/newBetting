@@ -1,6 +1,6 @@
 # Shimizu S-Pulse (J1 League) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [JP1](../../ligor/JP1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [JP1](../../ligor/JP1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -37,9 +37,9 @@ Form (äldst → senast): VFFFOFVV · senaste match 2026-09-19
 
 | Motståndare | M | V-O-F | Mål | Mot marknaden | Kryss mot odds | Senast |
 |---|---|---|---|---|---|---|
-| FC Tokyo | 12 | 4-2-6 | 14–19 | +0,06 | −10 pe | 2026-09-02 1-1 (h) |
 | Nagoya Grampus | 12 | 5-2-5 | 15–18 | +0,30 | −11 pe | 2026-08-08 1-0 (b) |
 | Cerezo Osaka | 11 | 3-1-7 | 13–21 | −0,27 | −18 pe | 2026-08-22 0-1 (b) |
+| FC Tokyo | 11 | 3-2-6 | 12–19 | −0,12 | −9 pe | 2026-09-02 1-1 (h) |
 | Kawasaki Frontale | 11 | 0-3-8 | 11–30 | −0,51 | +5 pe | 2026-09-06 1-3 (b) |
 | Sanfrecce Hiroshima | 11 | 2-4-5 | 11–16 | −0,09 | +10 pe | 2025-08-10 0-0 (b) |
 | Vissel Kobe | 11 | 3-4-4 | 16–18 | +0,13 | +11 pe | 2025-09-27 1-2 (b) |
@@ -58,7 +58,7 @@ Form (äldst → senast): VFFFOFVV · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Takayuki Yoshida. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -77,13 +77,12 @@ Tränare: Takayuki Yoshida. Betyg, mål och assist gäller innevarande säsong e
 | 20 | Joo-Young Eom | Defender | 19 | South Korea | – | – | 0 | 0 | 0/0 |  |
 | 24 | Hidehiro Sugai | RB,LB,CB | 27 | Japan | 352 k€ | 6,94 | 0 | 0 | 1/0 |  |
 | 25 | Mateus Brunetti | LB,CB | 26 | Brazil | 275 k€ | 7,36 | 0 | 0 | 2/0 |  |
-| 28 | Yutaka Yoshida | LB,RWB,RB,CB | 36 | Japan | 152 k€ | 6,63 | 0 | 0 | 0/0 |  |
+| 28 | Yutaka Yoshida | LB,RB,RWB,CB | 36 | Japan | 152 k€ | 6,63 | 0 | 0 | 0/0 |  |
 | 39 | Haruto Hidaka | RB | 22 | Japan | 200 k€ | – | 0 | 0 | 0/0 |  |
 | 51 | Jelani Sumiyoshi | CB | 28 | Japan | 248 k€ | 6,33 | 0 | 0 | 0/1 |  |
 | 70 | Sen Takagi | CB | 24 | Japan | 244 k€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 2 | Dieguinho | CDM | 31 | Brazil | 563 k€ | 6,55 | 0 | 0 | 0/0 |  |
-| 5 | Kengo Kitazume | RB,RWB,CAM | 34 | Japan | 135 k€ | – | 0 | 0 | 0/0 |  |
 | 6 | Doo-Jae Won | CDM,CM | 28 | South Korea | 374 k€ | 7,13 | 0 | 1 | 0/0 |  |
 | 13 | Ryo Germain | CAM,ST,RW,CM | 31 | Japan | 346 k€ | 6,24 | 0 | 1 | 1/0 |  |
 | 17 | Masaki Yumiba | CDM,CM,CAM | 24 | Japan | 275 k€ | 6,87 | 0 | 0 | 0/0 |  |
@@ -102,5 +101,6 @@ Tränare: Takayuki Yoshida. Betyg, mål och assist gäller innevarande säsong e
 | 8 | Kenta Inoue | LW | 28 | Japan | 208 k€ | 6,69 | 0 | 0 | 1/0 |  |
 | 9 | Se-Hun Oh | ST | 27 | South Korea | 767 k€ | 6,76 | 2 | 0 | 2/1 |  |
 | 19 | Kosuke Kinoshita | ST | 31 | Japan | 303 k€ | 6,21 | 1 | 0 | 0/0 |  |
-| 38 | Yuto Tsuji | RW | 20 | Japan | – | 6,40 | 0 | 0 | 0/0 |  |
 | 49 | Koya Kitagawa | RW,CAM | 30 | Japan | 519 k€ | 6,71 | 1 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (2): Kengo Kitazume (senast 2026-09-29), Yuto Tsuji (senast 2026-09-29).

@@ -1,6 +1,6 @@
 # Luton (League One) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -71,7 +71,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-08-16 | Stryk 4914 | Bradford - Luton | 1 | 54 % | 41 % |
 | 2026-09-19 | Stryk 4971 | Luton - Bradford | 2 | 52 % | 45 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Jack Wilshere. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

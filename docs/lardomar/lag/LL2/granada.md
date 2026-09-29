@@ -1,10 +1,10 @@
 # Granada (LaLiga 2) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [LL2](../../ligor/LL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [LL2](../../ligor/LL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
-- Stark historik mot Eibar (−0,75 p/match mot marknaden, 11 möten), Mallorca (+1,12 p/match mot marknaden, 9 möten), Cordoba (+0,52 p/match mot marknaden, 7 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Stark historik mot Eibar (−0,75 p/match mot marknaden, 11 möten), Mallorca (+1,12 p/match mot marknaden, 9 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -44,10 +44,10 @@ Form (äldst → senast): FOVVFOFF · senaste match 2026-09-26
 | Almeria | 8 | 2-3-3 | 13–14 | −0,18 | +9 pe | 2026-04-26 2-4 (h) |
 | Las Palmas | 8 | 1-4-3 | 6–10 | −0,40 | +20 pe | 2026-04-02 0-2 (b) |
 | Sp Gijon | 8 | 3-0-5 | 12–9 | −0,29 | −30 pe | 2026-05-30 1-2 (h) |
-| Cordoba | 7 | 4-1-2 | 11–11 | +0,52 | −14 pe | 2026-08-30 3-1 (b) |
 | Leganes | 7 | 2-1-4 | 5–7 | −0,35 | −17 pe | 2026-09-20 2-3 (b) |
 | Oviedo | 7 | 3-2-2 | 4–4 | +0,23 | −4 pe | 2026-08-15 0-0 (b) |
 | Burgos | 6 | 2-3-1 | 7–5 | +0,09 | +19 pe | 2026-05-16 0-1 (h) |
+| Cordoba | 6 | 3-1-2 | 7–9 | +0,42 | −12 pe | 2026-08-30 3-1 (b) |
 | Tenerife | 6 | 3-1-2 | 10–6 | +0,15 | −14 pe | 2025-03-28 1-2 (b) |
 | Valladolid | 6 | 3-1-2 | 12–9 | +0,33 | −14 pe | 2026-02-14 5-1 (h) |
 | Andorra | 5 | 1-2-2 | 5–5 | −0,55 | +11 pe | 2026-09-26 2-3 (h) |
@@ -59,7 +59,7 @@ Form (äldst → senast): FOVVFOFF · senaste match 2026-09-26
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Pacheta. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -84,12 +84,12 @@ Tränare: Pacheta. Betyg, mål och assist gäller innevarande säsong enligt Fot
 | 6 | Gerard Gumbau | CDM,CM,CAM | 31 | Spain | 627 k€ | 7,09 | 0 | 1 | 2/0 |  |
 | 8 | Pedro Alemañ | CM | 24 | Spain | 1,2 M€ | 6,58 | 1 | 0 | 2/0 |  |
 | 17 | Abdoul Kader Bamba | CAM,LW,LM,ST | 32 | France | 601 k€ | 6,15 | 0 | 0 | 0/0 |  |
-| 32 | Dylan Rodriguez | Midfielder | 0 | Spain | – | 6,59 | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Sergio Rodelas | RW,LW | 21 | Spain | 855 k€ | 6,55 | 0 | 1 | 1/0 |  |
 | 9 | Alejandro Marqués | ST,LW | 26 | Venezuela | 1,1 M€ | 6,54 | 2 | 0 | 0/0 |  |
 | 10 | Jorge Pascual | ST,CAM | 23 | Spain | 1,6 M€ | 6,66 | 1 | 0 | 0/0 |  |
 | 11 | José Arnáiz | LW,CM,ST | 31 | Spain | 406 k€ | 6,61 | 0 | 0 | 0/0 |  |
 | 19 | Chinaza Onouha | ST | 21 | Spain | – | 6,16 | 0 | 0 | 1/0 |  |
-| 27 | Mario Jiménez | CDM | 19 | Spain | – | 6,34 | 1 | 0 | 0/0 |  |
 | 36 | Owen Emeka | RW | 17 | Spain | – | 6,45 | 1 | 0 | 1/0 |  |
+
+Har lämnat truppen sedan vi började spara (2): Mario Jiménez (senast 2026-09-29), Dylan Rodriguez (senast 2026-09-29).

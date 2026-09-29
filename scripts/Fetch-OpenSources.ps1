@@ -368,16 +368,8 @@ if (-not $SkipPlayers) {
     Write-Host "`n=== Player stats SKIP ==="
 }
 
-# --- Vader (arenor + Open-Meteo) och spelarfranvaro (Understat) ---
-Write-Host "`n=== Arenor + vader ==="
-try {
-    if (-not (Test-Path (Join-Path $OpenDir "venues.json"))) { node (Join-Path $PSScriptRoot "fetch-venues.mjs") }
-    node (Join-Path $PSScriptRoot "fetch-weather.mjs")
-    $report.weather = ($LASTEXITCODE -eq 0)
-} catch {
-    Write-Host "Vader failed: $($_.Exception.Message)"
-    $report.weather = $false
-}
+# Vader (arenor + Open-Meteo) hamtas inte langre: det paverkar inte utfallet (pro-evaluation.json, weatherEffect).
+# Manuellt vid behov: npm run venues / npm run weather
 if (-not $SkipPlayers) {
     Write-Host "`n=== Spelarfranvaro (Understat, cachad) ==="
     try {

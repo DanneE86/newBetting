@@ -1,6 +1,6 @@
 # Lyon (Ligue 1) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [L1](../../ligor/L1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [L1](../../ligor/L1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -90,7 +90,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-09-14 | Europa 2505 | Rennes - Lyon | 1 | 36 % | 34 % |
 | 2025-08-31 | Europa 2501 | Lyon - Marseille | 1 ✓ | 33 % | 34 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Paulo Fonseca. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

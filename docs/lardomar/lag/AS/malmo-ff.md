@@ -1,6 +1,6 @@
 # Malmo FF (Allsvenskan) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [AS](../../ligor/AS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [AS](../../ligor/AS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -70,7 +70,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-09-14 | Europa 2505 | Elfsborg - Malmö | X | 57 % | 46 % |
 | 2025-08-24 | Europa 2499 | Malmö - IFK Göteborg | X | 68 % | 56 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Gaute Helstrup. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -79,7 +79,6 @@ Tränare: Gaute Helstrup. Betyg, mål och assist gäller innevarande säsong enl
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Ricardo Friedrich | GK | 33 | Brazil | 50 k€ | – | 0 | 0 | 0/0 |  |
 | 1 | Robin Olsen | GK | 36 | Sweden | 362 k€ | 7,07 | 0 | 0 | 1/0 |  |
 | 27 | Johan Dahlin | GK | 40 | Sweden | 155 k€ | 6,10 | 0 | 0 | 0/0 |  |
 | 50 | William Nieroth Lundgren | GK | 20 | Sweden | 401 k€ | 6,55 | 0 | 0 | 0/0 |  |
@@ -93,7 +92,7 @@ Tränare: Gaute Helstrup. Betyg, mål och assist gäller innevarande säsong enl
 | 25 | Busanello | LB | 27 | Brazil | 1,9 M€ | 7,19 | 1 | 0 | 4/0 |  |
 | 44 | Malte Frejd Pålsson | CB | 20 | Sweden | – | 6,69 | 0 | 0 | 1/1 |  |
 | | **Mittfältare** | | | | | | | | | |
-|  | Warren Kamanzi | LWB,RWB,LM | 25 | Norway | 1,3 M€ | – | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
+|  | Warren Kamanzi | RWB,LWB,LM | 25 | Norway | 1,3 M€ | – | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
 | 6 | Yanis Karabelyov | CDM,CM | 30 | Bulgaria | 460 k€ | 6,76 | 0 | 0 | 1/0 |  |
 | 7 | Otto Rosengren | CM | 23 | Sweden | 2,4 M€ | 7,44 | 2 | 4 | 6/0 |  |
 | 28 | Jovan Milosavljević | CAM | 19 | Serbia | 2,3 M€ | 6,66 | 2 | 0 | 0/0 |  |
@@ -104,7 +103,6 @@ Tränare: Gaute Helstrup. Betyg, mål och assist gäller innevarande säsong enl
 | 46 | Antonio Palac | Midfielder | 19 | Sweden | – | – | 0 | 0 | 0/0 |  |
 | 47 | Theodor Lundbergh | CM,LB,LM | 18 | Sweden | 1,4 M€ | 6,77 | 0 | 3 | 3/0 |  |
 | | **Anfallare** | | | | | | | | | |
-|  | Alexandru Ghita | Attacker | 20 | Sweden | – | – | 0 | 0 | 0/0 |  |
 | 9 | Diego García | ST | 26 | Spain | 1,3 M€ | 6,63 | 3 | 0 | 1/0 | skadad, åter Early October 2026 |
 | 10 | Anders Christiansen | ST | 36 | Denmark | 147 k€ | 6,51 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 11 | Emmanuel Ekong | ST,RW | 24 | Sweden | 454 k€ | 6,02 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
@@ -114,3 +112,5 @@ Tränare: Gaute Helstrup. Betyg, mål och assist gäller innevarande säsong enl
 | 32 | Daníel Guðjohnsen | ST | 20 | Iceland | 1,3 M€ | 6,50 | 0 | 1 | 1/0 |  |
 | 39 | Isaac Assibu | Attacker | 18 | Ghana | – | 6,42 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
 | 45 | Anton Höög | LW,RW | 19 | Sweden | – | 6,71 | 1 | 1 | 1/0 |  |
+
+Har lämnat truppen sedan vi började spara (2): Ricardo Friedrich (senast 2026-09-29), Alexandru Ghita (senast 2026-09-29).

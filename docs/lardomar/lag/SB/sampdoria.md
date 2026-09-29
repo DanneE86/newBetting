@@ -1,6 +1,6 @@
 # Sampdoria (Serie B) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [SB](../../ligor/SB.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [SB](../../ligor/SB.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -59,7 +59,7 @@ Form (äldst → senast): OVFOFFFV · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Bernardo Corradi. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -68,7 +68,6 @@ Tränare: Bernardo Corradi. Betyg, mål och assist gäller innevarande säsong e
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-|  | Nicholas Scardigno | Keeper | 20 | Italy | 277 k€ | – | 0 | 0 | 0/0 |  |
 | 1 | Peter Vindahl Jensen | GK | 28 | Denmark | – | 6,38 | 0 | 0 | 0/0 |  |
 | 12 | Andrey Krastev | Keeper | 18 | Bulgaria | – | – | 0 | 0 | 0/0 |  |
 | 96 | Samuelle Massolo | Keeper | 30 | Italy | 87 k€ | – | 0 | 0 | 0/0 |  |
@@ -101,7 +100,7 @@ Tränare: Bernardo Corradi. Betyg, mål och assist gäller innevarande säsong e
 |  | Nikola Sekulov | ST,CAM | 24 | Italy | 390 k€ | – | 0 | 0 | 0/0 |  |
 | 9 | Tobias Lauritsen | ST | 29 | Norway | 2,4 M€ | 6,83 | 0 | 1 | 0/0 |  |
 | 14 | Yann Karamoh | RW,LW | 28 | France | 535 k€ | 6,44 | 0 | 0 | 0/0 |  |
-| 17 | Lorenzo Paratici | ST | 17 | Italy | – | – | 0 | 0 | 0/0 |  |
-| 21 | Giuseppe Forte | LW | 18 | Italy | – | – | 0 | 0 | 0/0 |  |
 | 39 | Lorenzo Mezzotero | Attacker | 18 | Italy | – | – | 0 | 0 | 0/0 |  |
 | 99 | Gennaro Tutino | ST,LW | 30 | Italy | 669 k€ | 6,55 | 1 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (3): Nicholas Scardigno (senast 2026-09-29), Giuseppe Forte (senast 2026-09-29), Lorenzo Paratici (senast 2026-09-29).

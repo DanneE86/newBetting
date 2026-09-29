@@ -1,6 +1,6 @@
 # J1 League (JP1) – lärdomar
 
-Genererad 2026-09-28 av `node scripts/analyze-learnings.mjs`. Skriv inte för hand här: egna anteckningar läggs i `docs/lardomar/anteckningar/JP1.md`.
+Genererad 2026-09-29 av `node scripts/analyze-learnings.mjs`. Skriv inte för hand här: egna anteckningar läggs i `docs/lardomar/anteckningar/JP1.md`.
 
 Underlag: 4603 matcher, säsong 2012 – 2026/27. Marknad = stängningsodds utan marginal (Pinnacle, annars snitt av bolagen), öppningsodds saknas. xG: saknas (0 % av matcherna).
 
@@ -78,7 +78,7 @@ Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (
 
 Inga matcher från ligan i de sparade backtesten ännu.
 
-## Tabell nu (FotMob, 2026-09-28)
+## Tabell nu (FotMob, 2026-09-29)
 
 | # | Lag | M | V | O | F | Mål | +/− | P |
 |---|---|---|---|---|---|---|---|---|
@@ -100,7 +100,7 @@ Inga matcher från ligan i de sparade backtesten ännu.
 | 16 | Gamba Osaka | 8 | 1 | 3 | 4 | 8-14 | -6 | 6 |
 | 17 | Nagoya Grampus | 8 | 2 | 0 | 6 | 7-14 | -7 | 6 |
 | 18 | Avispa Fukuoka | 8 | 1 | 1 | 6 | 9-12 | -3 | 4 |
-| 19 | FC Tokyo | 8 | 0 | 4 | 4 | 4-12 | -8 | 4 |
+| 19 | Verdy | 8 | 0 | 4 | 4 | 4-12 | -8 | 4 |
 | 20 | Chiba | 8 | 1 | 1 | 6 | 7-18 | -11 | 4 |
 
 Tabellhistorik (en rad per lag och dag sedan 2026-09-28): `data/ligor/JP1.json`.

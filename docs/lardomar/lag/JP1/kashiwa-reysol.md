@@ -1,6 +1,6 @@
 # Kashiwa Reysol (J1 League) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [JP1](../../ligor/JP1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [JP1](../../ligor/JP1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -61,7 +61,7 @@ Form (äldst → senast): VVVVFFVV · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Ricardo Rodríguez. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -71,7 +71,6 @@ Tränare: Ricardo Rodríguez. Betyg, mål och assist gäller innevarande säsong
 | 1 | Haruki Saruta | Keeper | 27 | Japan | 232 k€ | – | 0 | 0 | 0/0 |  |
 | 25 | Ryosuke Kojima | GK | 29 | Japan | 615 k€ | 6,42 | 0 | 0 | 0/0 |  |
 | 29 | Kengo Nagai | GK | 31 | Japan | 146 k€ | – | 0 | 0 | 0/0 |  |
-| 41 | Daiki Sakata | GK | 32 | Japan | 164 k€ | – | 0 | 0 | 0/0 |  |
 | 46 | Kenta Matsumoto | GK | 29 | Japan | 227 k€ | – | 0 | 0 | 0/0 |  |
 | 77 | Tomoya Wakahara | GK | 26 | Japan | 260 k€ | 5,81 | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
@@ -79,7 +78,6 @@ Tränare: Ricardo Rodríguez. Betyg, mål och assist gäller innevarande säsong
 | 4 | Taiyo Koga | CB | 27 | Japan | 714 k€ | 7,38 | 0 | 0 | 1/0 |  |
 | 13 | Tomoya Inukai | CB | 33 | Japan | 155 k€ | – | 0 | 0 | 0/0 |  |
 | 26 | Daiki Sugioka | CB | 28 | Japan | 226 k€ | 7,10 | 0 | 0 | 0/0 |  |
-| 34 | Takumi Tsuchiya | CB | 22 | Japan | 409 k€ | – | 0 | 0 | 0/0 |  |
 | 42 | Wataru Harada | CB | 30 | Japan | 413 k€ | 7,30 | 0 | 0 | 0/0 |  |
 | 88 | Seiya Baba | CB | 24 | Japan | 425 k€ | 6,39 | 0 | 0 | 1/0 |  |
 | | **Mittfältare** | | | | | | | | | |
@@ -96,17 +94,17 @@ Tränare: Ricardo Rodríguez. Betyg, mål och assist gäller innevarande säsong
 | 24 | Tojiro Kubo | RWB | 27 | Japan | 724 k€ | 7,70 | 2 | 1 | 0/0 |  |
 | 27 | Koki Kumasaka | CDM | 25 | Japan | 257 k€ | 7,13 | 0 | 0 | 1/0 |  |
 | 28 | Sachiro Toshima | CDM | 31 | Japan | 168 k€ | – | 0 | 0 | 0/0 |  |
-| 31 | Shumpei Naruse | CB | 25 | Japan | 253 k€ | – | 0 | 0 | 0/0 |  |
 | 32 | Yusei Yamanouchi | RWB,LWB,CB | 23 | Japan | – | – | 0 | 0 | 0/0 |  |
 | 39 | Nobuteru Nakagawa | CDM | 24 | Japan | 540 k€ | 7,39 | 0 | 3 | 1/0 |  |
 | 40 | Riki Harakawa | CDM | 33 | Japan | 249 k€ | – | 0 | 0 | 1/0 |  |
 | 43 | Yuito Kamo | Midfielder | 17 | Japan | – | – | 0 | 0 | 0/0 |  |
-| 44 | Kenshin Yuba | RWB,LWB,LW,RW | 25 | Japan | 264 k€ | 6,44 | 1 | 1 | 0/0 |  |
+| 44 | Kenshin Yuba | RWB,LWB,RW,LW | 25 | Japan | 264 k€ | 6,44 | 1 | 1 | 0/0 |  |
 | 87 | Hinata Yamauchi | CAM,RM | 25 | Japan | 273 k€ | 6,62 | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-|  | Mohamad Sadiki Wade | ST | 20 | Japan | 148 k€ | – | 0 | 0 | 0/0 |  |
 | 9 | Mao Hosoya | ST | 25 | Japan | 1,4 M€ | 6,03 | 0 | 0 | 0/0 |  |
 | 14 | Tomoaki Okubo | RW | 28 | Japan | 274 k€ | – | 0 | 0 | 0/0 |  |
 | 15 | Shota Fujio | ST | 25 | Japan | 594 k€ | 6,47 | 0 | 0 | 0/0 |  |
 | 18 | Yuki Kakita | ST | 29 | Japan | 437 k€ | 6,67 | 2 | 0 | 0/0 |  |
 | 36 | Naberuyoshitaka Furusawa | Attacker | 23 | Japan | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (4): Shumpei Naruse (senast 2026-09-29), Takumi Tsuchiya (senast 2026-09-29), Daiki Sakata (senast 2026-09-29), Mohamad Sadiki Wade (senast 2026-09-29).

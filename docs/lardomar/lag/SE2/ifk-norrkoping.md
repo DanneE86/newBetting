@@ -1,6 +1,6 @@
 # IFK Norrköping (Superettan) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [SE2](../../ligor/SE2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [SE2](../../ligor/SE2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -29,7 +29,7 @@ Form senaste 8 (äldst → senast): VVVVOVOV · senaste match 2026-09-19
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Eldar Abdulic. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -40,7 +40,6 @@ Tränare: Eldar Abdulic. Betyg, mål och assist gäller innevarande säsong enli
 | 40 | Hugo Fagerberg | GK | 22 | Sweden | – | – | 0 | 0 | 0/0 |  |
 | 91 | David Mitov Nilsson | GK | 35 | North Macedonia | 82 k€ | – | 0 | 0 | 1/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Victor Romanus | Defender | 20 | Nigeria | – | – | 0 | 0 | 0/0 |  |
 | 3 | Viggo Fälth | LB | 17 | Sweden | – | – | 0 | 0 | 2/0 |  |
 | 4 | Jonas Weber | LB,CB | 21 | Norway | 218 k€ | – | 0 | 0 | 1/0 |  |
 | 23 | Alexander Opsahl | CB,RB | 21 | Norway | 216 k€ | – | 0 | 1 | 1/0 |  |
@@ -62,7 +61,9 @@ Tränare: Eldar Abdulic. Betyg, mål och assist gäller innevarande säsong enli
 | 8 | Ryan Nelson | CM,RW,ST | 28 | England | 67 k€ | – | 8 | 5 | 2/0 |  |
 | 9 | Tim Prica | RW,ST,CM | 24 | Sweden | 330 k€ | – | 7 | 1 | 3/0 |  |
 | 10 | Albert Aleksanjan | RW | 20 | Latvia | 228 k€ | – | 1 | 2 | 1/0 |  |
-| 11 | Elias Jemal | LW,ST | 23 | Sweden | 197 k€ | – | 8 | 9 | 1/0 |  |
+| 11 | Elias Jemal | LW | 23 | Sweden | 197 k€ | – | 8 | 9 | 1/0 |  |
 | 14 | Ísak Sigurgeirsson | LW | 23 | Iceland | 424 k€ | – | 0 | 0 | 0/0 |  |
 | 15 | Kylian Seka | ST | 19 | Burkina Faso | 194 k€ | – | 0 | 0 | 0/0 |  |
 | 22 | Mbaye Cisse | Attacker | 19 | Senegal | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Victor Romanus (senast 2026-09-29).

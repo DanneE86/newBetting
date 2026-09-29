@@ -1,6 +1,6 @@
 # Åsane (OBOS-ligaen) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [NO2](../../ligor/NO2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [NO2](../../ligor/NO2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -36,7 +36,7 @@ Form senaste 8 (äldst → senast): FFVFOOOF · senaste match 2026-09-19
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Thomas Lyngbø. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -46,7 +46,6 @@ Tränare: Thomas Lyngbø. Betyg, mål och assist gäller innevarande säsong enl
 | 1 | Sebastian Selin | GK | 23 | Sweden | 144 k€ | – | 0 | 0 | 0/0 |  |
 | 12 | Isak Reset-Kalland | Keeper | 20 | Norway | – | – | 0 | 0 | 0/0 |  |
 | 24 | Mathias Klausen | GK | 18 | Norway | 500 k€ | – | 0 | 0 | 0/0 |  |
-| 24 | Storm Strand-Kolbjørnsen | GK | 22 | Norway | 152 k€ | – | 0 | 0 | 0/0 |  |
 | 95 | Johannes Kvammen | Keeper | 19 | Norway | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 4 | Hassou Diaby | CB | 24 | Senegal | 124 k€ | – | 1 | 2 | 4/0 |  |
@@ -54,7 +53,6 @@ Tränare: Thomas Lyngbø. Betyg, mål och assist gäller innevarande säsong enl
 | 15 | Filip Oprea | LB,LM,LWB,RM | 20 | Norway | 260 k€ | – | 1 | 2 | 0/0 |  |
 | 16 | Snorre Stavseth Furnes | CB | 20 | Norway | – | – | 0 | 0 | 0/0 |  |
 | 19 | Fredrik Aasen | CB | 18 | Norway | – | – | 0 | 0 | 0/0 |  |
-| 21 | Andreas Vindheim | RM | 31 | Norway | 66 k€ | – | 0 | 0 | 0/0 |  |
 | 22 | Dennis Møller Wolfe | RB,RM | 26 | Norway | 161 k€ | – | 2 | 1 | 4/0 |  |
 | 25 | Malvin Ingebrigtsen | CB | 27 | Norway | 110 k€ | – | 1 | 0 | 5/0 |  |
 | 77 | Knut Haga | CB,CM,LM,RWB,RB | 28 | Norway | 112 k€ | – | 1 | 2 | 2/0 |  |
@@ -76,3 +74,5 @@ Tränare: Thomas Lyngbø. Betyg, mål och assist gäller innevarande säsong enl
 | 23 | Gabriel Alain Ramsay | ST | 22 | Norway | – | – | 0 | 0 | 0/0 |  |
 | 26 | Malte Fismen | ST,LW | 16 | Norway | 835 k€ | – | 1 | 2 | 1/0 |  |
 | 30 | Erling Myklebust | ST | 30 | Norway | 113 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (2): Andreas Vindheim (senast 2026-09-29), Storm Strand-Kolbjørnsen (senast 2026-09-29).

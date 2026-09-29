@@ -1,6 +1,6 @@
 # Pardubice (Chance Liga) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [CZ](../../ligor/CZ.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [CZ](../../ligor/CZ.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -35,7 +35,7 @@ Form senaste 8 (äldst → senast): FFOFFOVV · senaste match 2026-09-19
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Jan Trousil. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -61,7 +61,6 @@ Tränare: Jan Trousil. Betyg, mål och assist gäller innevarande säsong enligt
 | 77 | Robi Saarma | RB,LM,RM,RW | 25 | Estonia | 179 k€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 |  | Arouna Ouattara | Midfielder | 19 | Burkina Faso | 313 k€ | – | 0 | 0 | 0/0 |  |
-| 7 | Dominique Simon | CM,CDM,ST | 26 | Haiti | 168 k€ | 6,52 | 0 | 0 | 1/0 |  |
 | 8 | Samuel Šimek | CM,CDM | 24 | Czechia | 522 k€ | 6,28 | 0 | 0 | 1/0 |  |
 | 11 | Jiri Zima | Midfielder | 18 | Czechia | – | 5,82 | 0 | 0 | 0/0 |  |
 | 15 | Emmanuel Godwin | RWB,RM,LB | 21 | Nigeria | 736 k€ | 6,69 | 0 | 0 | 3/0 |  |
@@ -75,10 +74,11 @@ Tränare: Jan Trousil. Betyg, mål och assist gäller innevarande säsong enligt
 | 9 | Daniel Smékal | ST,LM,RW | 24 | Czechia | 271 k€ | 6,12 | 0 | 0 | 1/0 |  |
 | 9 | Patrik Nedved | Attacker | 18 | Czechia | – | – | 0 | 0 | 0/0 |  |
 | 10 | Vojtěch Patrák | ST,LW,CM,CAM | 26 | Czechia | 370 k€ | 6,87 | 1 | 0 | 1/0 | skadad, åter Mid October 2026 |
-| 17 | Václav Drchal | ST,CAM,RW | 27 | Czechia | 181 k€ | 6,83 | 2 | 1 | 1/0 |  |
+| 17 | Václav Drchal | ST,CAM | 27 | Czechia | 181 k€ | 6,83 | 2 | 1 | 1/0 |  |
 | 20 | Abdoullahi Tanko | LW,CAM,RW,RM,ST | 28 | Nigeria | – | 6,72 | 1 | 0 | 0/0 |  |
-| 21 | Daniel Pandula | LW | 22 | Czechia | 188 k€ | – | 0 | 0 | 0/0 |  |
 | 27 | Martin Reil | Attacker | 20 | Czechia | – | – | 0 | 0 | 0/0 |  |
 | 29 | Filip Brdička | ST | 22 | Czechia | 207 k€ | – | 0 | 0 | 0/0 |  |
 | 90 | Giannis-Fivos Botos | RW,ST,CAM,CM | 25 | Greece | 359 k€ | 6,29 | 0 | 0 | 0/0 |  |
 | 99 | Kahuan Vinícius | ST | 22 | Brazil | – | 6,12 | 0 | 0 | 2/0 |  |
+
+Har lämnat truppen sedan vi började spara (2): Dominique Simon (senast 2026-09-29), Daniel Pandula (senast 2026-09-29).

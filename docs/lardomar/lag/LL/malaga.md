@@ -1,6 +1,6 @@
 # Malaga (La Liga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [LL](../../ligor/LL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [LL](../../ligor/LL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -74,27 +74,24 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 |---|---|---|---|---|---|
 | 2026-09-06 | Europa 2605 | Málaga - Levante | X | 40 % | 40 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Juan Funes. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Moussa Diarra (skadad, åter Early October 2026), Diego Murillo (skadad, åter Early January 2027), Adam Aznou (skadad, åter Early October 2026), Jens-Lys Cajuste (skadad, åter Early October 2026), Aarón Ochoa (skadad, åter Mid November 2026), Julen Lobete (skadad, åter Out for season)
+**Skadade/borta nu:** Diego Murillo (skadad, åter Early January 2027), Adam Aznou (skadad, åter Early October 2026), Jens-Lys Cajuste (skadad, åter Early October 2026), Aarón Ochoa (skadad, åter Mid November 2026), Julen Lobete (skadad, åter Out for season)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
 | 1 | Alfonso Herrero | GK | 32 | Spain | 469 k€ | 6,83 | 0 | 0 | 1/0 |  |
 | 13 | Carlos López | GK | 21 | Spain | 538 k€ | – | 0 | 0 | 0/0 |  |
-| 30 | Andrés Céspedes | Keeper | 22 | Spain | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 |  | Antonito | Defender | 25 | Spain | – | – | 0 | 0 | 0/0 |  |
 | 3 | Carlos Puga | RB | 25 | Spain | 673 k€ | 6,77 | 0 | 0 | 2/0 |  |
 | 4 | Einar Galilea | CB | 32 | Spain | 258 k€ | 6,67 | 0 | 0 | 2/0 |  |
 | 5 | Álex Pastor | CB | 26 | Spain | 424 k€ | – | 0 | 0 | 0/0 |  |
 | 12 | José Salinas | LB | 25 | Spain | 1,6 M€ | 6,53 | 0 | 0 | 1/0 |  |
-| 15 | Moussa Diarra | CB | 24 | Mali | 341 k€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
 | 16 | Diego Murillo | CB | 25 | Spain | 1,3 M€ | – | 0 | 0 | 0/0 | skadad, åter Early January 2027 |
-| 18 | Dani Sánchez | LB | 26 | Spain | 285 k€ | – | 0 | 0 | 0/0 |  |
 | 20 | Fernando Calero | CB | 31 | Spain | 1,2 M€ | – | 0 | 0 | 0/0 |  |
 | 25 | Juan Berrocal | CB | 27 | Spain | 828 k€ | 7,13 | 0 | 0 | 0/0 |  |
 | 31 | Rafita | LB,RB | 21 | Spain | – | 6,96 | 0 | 0 | 1/0 |  |
@@ -117,3 +114,5 @@ Tränare: Juan Funes. Betyg, mål och assist gäller innevarande säsong enligt 
 | 19 | Juan Cruz | RW,LW,RM,CAM,LM | 26 | Spain | 1,4 M€ | 6,30 | 0 | 1 | 1/0 |  |
 | 21 | Adrián Nino | ST | 22 | Spain | – | 6,38 | 1 | 0 | 0/0 |  |
 | 24 | Julen Lobete | LW,LM | 26 | Spain | 714 k€ | – | 0 | 0 | 0/0 | skadad, åter Out for season |
+
+Har lämnat truppen sedan vi började spara (3): Moussa Diarra (senast 2026-09-29), Dani Sánchez (senast 2026-09-29), Andrés Céspedes (senast 2026-09-29).

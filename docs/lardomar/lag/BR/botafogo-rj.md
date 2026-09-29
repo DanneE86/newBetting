@@ -1,6 +1,6 @@
 # Botafogo RJ (Brasileirão Série A) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [BR](../../ligor/BR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [BR](../../ligor/BR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -60,20 +60,17 @@ Form (äldst → senast): OFFFOOVF · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Tite. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Kaio Pantaleão (skadad, åter Mid October 2026), Jordan Barrera (skadad, åter Out for season), Edenílson (skadad, åter Late October 2026), Matheus Martins (skadad, åter About 1-2 weeks)
+**Skadade/borta nu:** Kaio Pantaleão (skadad, åter Mid October 2026), Edenílson (skadad, åter Late October 2026), Matheus Martins (skadad, åter About 1-2 weeks)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
 | 12 | Gabriel Batista | GK | 28 | Brazil | 2,4 M€ | – | 0 | 0 | 0/0 |  |
 | 17 | Warleson | GK | 30 | Brazil | 820 k€ | – | 0 | 0 | 0/0 |  |
-| 32 | Rhyan Luca | Keeper | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 40 | Cristhian Loor | GK | 20 | Ecuador | 769 k€ | – | 0 | 0 | 0/0 |  |
-| 62 | Cléber Lucas | Keeper | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 2 | Vitinho | RB,RM,RWB | 27 | Brazil | 5,6 M€ | – | 0 | 0 | 0/0 |  |
 | 3 | Arthur Chaves | CB | 25 | Brazil | 1,9 M€ | – | 0 | 0 | 0/0 |  |
@@ -81,32 +78,13 @@ Tränare: Tite. Betyg, mål och assist gäller innevarande säsong enligt FotMob
 | 5 | Nahuel Ferraresi | CB | 27 | Venezuela | 2,5 M€ | – | 0 | 0 | 0/0 |  |
 | 13 | Alex Telles | LB,LM,LWB | 33 | Brazil | 1,9 M€ | – | 0 | 0 | 0/0 |  |
 | 21 | Marçal | CB,LB | 37 | Brazil | 279 k€ | – | 0 | 0 | 0/0 |  |
-| 26 | Anthony | CB | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 31 | Kaio Pantaleão | CB | 31 | Brazil | 1,2 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
-| 33 | Lucas Monzón | CB | 24 | Uruguay | 691 k€ | – | 0 | 0 | 0/0 |  |
-| 34 | Gabriel Justino | CB | 20 | Brazil | 655 k€ | – | 0 | 0 | 0/0 |  |
-| 36 | Gabriel | LB | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 42 | Kadu | RB | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 44 | Riquelme | Defender | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 54 | Kauã Serafim | Defender | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 63 | Herick | Defender | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 67 | Jhoan Hernández | LB | 20 | Colombia | – | – | 0 | 0 | 0/0 |  |
+| 33 | Lucas Monzón | CB | 25 | Uruguay | 691 k€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 6 | Cristian Medina | CDM,CAM,CM | 24 | Argentina | 6,7 M€ | – | 0 | 0 | 0/0 |  |
-| 8 | Álvaro Montoro | CAM,LW,LM,RW,ST | 19 | Argentina | 10,9 M€ | – | 0 | 0 | 0/0 |  |
-| 14 | Jordan Barrera | CM,LW,CAM,RM,RW | 20 | Colombia | 1,6 M€ | – | 0 | 0 | 0/0 | skadad, åter Out for season |
 | 25 | Allan | CDM,CM | 35 | Brazil | 588 k€ | – | 0 | 0 | 0/0 |  |
 | 29 | Paulinho | LM,LWB | 31 | Brazil | 414 k€ | – | 0 | 0 | 0/0 |  |
 | 35 | Danilo Santos | CDM,CM,CAM | 25 | Brazil | 18,0 M€ | – | 0 | 0 | 0/0 |  |
-| 38 | Victor Hugo | Midfielder | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 45 | Caio Valle | CAM | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 47 | Miguel Caldas | Midfielder | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 48 | Arthur Novaes | CDM | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 55 | Wallace Davi | CM,CDM | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 58 | Cauã Zappelini | Midfielder | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 64 | Marquinhos | CDM | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 75 | Huguinho | CM,CDM | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 80 | Bernardo Valim | Midfielder | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 88 | Edenílson | CAM,CDM,CM,RW | 36 | Brazil | 286 k€ | – | 0 | 0 | 0/0 | skadad, åter Late October 2026 |
 | 91 | Domingos Andrade | CM | 23 | Angola | 1,1 M€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
@@ -115,11 +93,7 @@ Tränare: Tite. Betyg, mål och assist gäller innevarande säsong enligt FotMob
 | 11 | Matheus Martins | LW,ST,RW | 23 | Brazil | 5,2 M€ | – | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
 | 19 | Arthur Cabral | ST | 28 | Brazil | 5,5 M€ | – | 0 | 0 | 0/0 |  |
 | 22 | Hakim Ziyech | RW | 33 | Morocco | 1,3 M€ | – | 0 | 0 | 0/0 |  |
-| 37 | Kadir Barría | ST,CAM | 19 | Panama | 2,2 M€ | – | 0 | 0 | 0/0 |  |
-| 39 | Arthur Izaque | ST | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 49 | Felipe Januário | Attacker | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 49 | Kauan Toledo | LW,ST | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 57 | Matheusinho | Attacker | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 77 | Lucas Villalba | RW,RM | 25 | Uruguay | 1,4 M€ | – | 0 | 0 | 0/0 |  |
-| 79 | Lucas Emanuel | ST | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 90 | Danilo | ST,RW,LW | 27 | Brazil | 2,5 M€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (28): Jhoan Hernández (senast 2026-09-29), Cristhian Loor (senast 2026-09-29), Jordan Barrera (senast 2026-09-29), Álvaro Montoro (senast 2026-09-29), Rhyan Luca (senast 2026-09-29), Anthony (senast 2026-09-29), Wallace Davi (senast 2026-09-29), Kadu (senast 2026-09-29), Gabriel (senast 2026-09-29), Huguinho (senast 2026-09-29), Gabriel Justino (senast 2026-09-29), Riquelme (senast 2026-09-29), Cauã Zappelini (senast 2026-09-29), Kauan Toledo (senast 2026-09-29), Marquinhos (senast 2026-09-29), Kadir Barría (senast 2026-09-29), Cléber Lucas (senast 2026-09-29), Caio Valle (senast 2026-09-29), Arthur Izaque (senast 2026-09-29), Arthur Novaes (senast 2026-09-29), Matheusinho (senast 2026-09-29), Bernardo Valim (senast 2026-09-29), Miguel Caldas (senast 2026-09-29), Felipe Januário (senast 2026-09-29), Kauã Serafim (senast 2026-09-29), Lucas Emanuel (senast 2026-09-29), Victor Hugo (senast 2026-09-29), Herick (senast 2026-09-29).

@@ -1,6 +1,6 @@
 # Liverpool (Premier League) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -54,11 +54,11 @@ Ligans test av frånvaro mot marknaden: svag signal (inte bekräftad). Få match
 |---|---|---|---|---|---|---|
 | Newcastle | 17 | 13-4-0 | 42–18 | +0,43 | +4 pe | 2026-08-23 2-2 (b) |
 | Arsenal | 16 | 7-6-3 | 33–19 | +0,08 | +13 pe | 2026-01-08 0-0 (b) |
-| Chelsea | 16 | 6-7-3 | 25–18 | −0,02 | +18 pe | 2026-05-09 1-1 (h) |
 | Everton | 16 | 9-5-2 | 25–13 | −0,13 | +10 pe | 2026-04-19 2-1 (b) |
 | Man City | 16 | 4-6-6 | 19–27 | −0,05 | +12 pe | 2026-02-08 1-2 (h) |
 | Man United | 16 | 7-6-3 | 37–15 | −0,18 | +15 pe | 2026-05-03 2-3 (b) |
 | Brighton | 15 | 7-4-4 | 25–21 | −0,34 | +6 pe | 2026-03-21 1-2 (b) |
+| Chelsea | 15 | 6-6-3 | 24–17 | +0,00 | +14 pe | 2026-05-09 1-1 (h) |
 | Crystal Palace | 15 | 10-3-2 | 34–12 | −0,02 | +1 pe | 2026-04-25 3-1 (h) |
 | Tottenham | 15 | 11-3-1 | 38–21 | +0,40 | −1 pe | 2026-03-15 1-1 (h) |
 | Aston Villa | 14 | 9-3-2 | 29–21 | +0,05 | +1 pe | 2026-05-15 2-4 (b) |
@@ -110,7 +110,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-09-14 | Europa 2505 | Burnley - Liverpool | 2 ✓ | 83 % | 70 % |
 | 2025-08-31 | Europa 2501 | Liverpool - Arsenal | 1 ✓ | 41 % | 41 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Andoni Iraola. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -120,7 +120,7 @@ Tränare: Andoni Iraola. Betyg, mål och assist gäller innevarande säsong enli
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
 | 1 | Alisson Becker | GK | 33 | Brazil | 12,0 M€ | 7,15 | 0 | 0 | 1/0 |  |
-| 25 | Giorgi Mamardashvili | GK | 25 | Georgia | 25,0 M€ | – | 0 | 0 | 0/0 |  |
+| 25 | Giorgi Mamardashvili | GK | 26 | Georgia | 25,0 M€ | – | 0 | 0 | 0/0 |  |
 | 28 | Freddie Woodman | GK | 29 | England | 2,3 M€ | – | 0 | 0 | 0/0 |  |
 | 56 | Vítezslav Jaroš | GK | 25 | Czechia | 2,5 M€ | – | 0 | 0 | 0/0 |  |
 | 95 | Harvey Davies | GK | 23 | England | 537 k€ | – | 0 | 0 | 0/0 |  |
@@ -135,18 +135,18 @@ Tränare: Andoni Iraola. Betyg, mål och assist gäller innevarande säsong enli
 | 30 | Jeremie Frimpong | RB,RW | 25 | Netherlands | 35,3 M€ | 6,93 | 0 | 0 | 1/0 |  |
 | 33 | Ronald Araujo | CB,RB | 27 | Uruguay | 22,8 M€ | 7,03 | 0 | 0 | 1/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 8 | Dominik Szoboszlai | CDM,CAM,RW,CM,RB,LW | 25 | Hungary | 84,1 M€ | 7,38 | 1 | 0 | 1/0 |  |
-| 10 | Alexis Mac Allister | CDM,CAM,CM | 27 | Argentina | 68,8 M€ | 7,06 | 0 | 0 | 1/0 |  |
+| 8 | Dominik Szoboszlai | CDM,CAM,RW,RB,LW,CM | 25 | Hungary | 84,1 M€ | 7,38 | 1 | 0 | 1/0 |  |
+| 10 | Alexis Mac Allister | CDM,CM,CAM,LM | 27 | Argentina | 68,8 M€ | 7,06 | 0 | 0 | 1/0 |  |
 | 21 | Konstantinos Tsimikas | LB,LWB,LM | 30 | Greece | 8,5 M€ | 6,27 | 0 | 0 | 0/0 |  |
 | 38 | Ryan Gravenberch | CDM,CM | 24 | Netherlands | 76,8 M€ | 6,68 | 0 | 1 | 0/0 |  |
 | 42 | Trey Nyoni | CDM,CM | 19 | England | 7,2 M€ | 6,35 | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 7 | Florian Wirtz | LW,CAM,ST | 23 | Germany | 93,6 M€ | 7,40 | 0 | 1 | 1/0 |  |
+| 7 | Florian Wirtz | CAM,LW,ST | 23 | Germany | 93,6 M€ | 7,40 | 0 | 1 | 1/0 |  |
 | 9 | Alexander Isak | ST | 27 | Sweden | 78,8 M€ | 7,39 | 4 | 0 | 1/0 | skadad, åter Mid October 2026 |
 | 14 | Federico Chiesa | ST,RW | 28 | Italy | 12,7 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 18 | Cody Gakpo | LW,ST,LM,RW | 27 | Netherlands | 50,4 M€ | 7,68 | 1 | 3 | 0/0 | skadad, åter About 1-2 weeks |
 | 22 | Hugo Ekitiké | ST,LW | 24 | France | 79,1 M€ | – | 0 | 0 | 0/0 | skadad, åter Early January 2027 |
 | 23 | Víctor Muñoz | LW,RW,CAM,LM | 23 | Spain | 24,5 M€ | 6,87 | 1 | 0 | 1/0 |  |
 | 29 | Bradley Barcola | LW,RW,ST | 24 | France | 74,0 M€ | 6,56 | 0 | 0 | 0/0 |  |
-| 67 | Lewis Koumas | LW,ST,RW,CAM | 21 | Wales | 2,2 M€ | 6,27 | 0 | 0 | 0/0 |  |
+| 67 | Lewis Koumas | ST,LW,RW,CAM | 21 | Wales | 2,2 M€ | 6,27 | 0 | 0 | 0/0 |  |
 | 73 | Rio Ngumoha | LW,RW | 18 | England | 21,8 M€ | 6,22 | 0 | 0 | 0/0 |  |

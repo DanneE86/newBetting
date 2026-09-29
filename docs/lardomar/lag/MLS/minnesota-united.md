@@ -1,6 +1,6 @@
 # Minnesota United (MLS) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -67,7 +67,7 @@ Form (äldst → senast): OFVOFFFF · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Cameron Knowles. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -93,6 +93,7 @@ Tränare: Cameron Knowles. Betyg, mål och assist gäller innevarande säsong en
 | 6 | Peter Stroud | CDM | 24 | USA | 477 k€ | 6,02 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
 | 8 | Tomás Chancalay | LW,CAM,LM | 27 | Argentina | 1,5 M€ | 6,88 | 4 | 3 | 4/0 |  |
 | 20 | Wil Trapp | CM,CDM | 33 | USA | 99 k€ | 6,65 | 0 | 2 | 2/0 |  |
+| 21 | Bongokuhle Hlongwane | RWB,RW,RM,ST | 26 | South Africa | 1,4 M€ | 6,30 | 0 | 1 | 1/0 |  |
 | 24 | Julian Gressel | CM | 32 | USA | 454 k€ | 6,23 | 0 | 0 | 1/0 |  |
 | 25 | Nectarios Triantis | CM,CDM | 23 | Greece | 1,8 M€ | 6,75 | 1 | 1 | 3/0 |  |
 | 26 | Joaquín Pereyra | CAM,RW,LM,RM,ST | 27 | Argentina | 2,2 M€ | 7,58 | 3 | 10 | 4/0 |  |
@@ -103,9 +104,8 @@ Tränare: Cameron Knowles. Betyg, mål och assist gäller innevarande säsong en
 | 11 | Maurice Malone | ST,CAM,RW | 26 | Germany | 793 k€ | 6,02 | 0 | 0 | 0/0 |  |
 | 16 | Aziel Jackson | LW | 24 | USA | 1,2 M€ | 6,79 | 1 | 1 | 0/0 |  |
 | 18 | Mauricio González | LW | 22 | Colombia | 1,1 M€ | 6,28 | 2 | 0 | 0/0 |  |
-| 21 | Bongokuhle Hlongwane | RWB,ST,RW,RM | 26 | South Africa | 1,4 M€ | 6,30 | 0 | 1 | 1/0 |  |
 | 22 | Marcus Caldeira | ST | 21 | Canada | 420 k€ | 6,97 | 5 | 1 | 0/0 |  |
 | 29 | Mamadou Dieng | ST | 22 | Senegal | 195 k€ | 6,51 | 0 | 0 | 1/0 |  |
-| 32 | Troy Putt | LW,ST,CAM,RWB | 20 | New Zealand | 543 k€ | – | 0 | 0 | 0/0 |  |
+| 32 | Troy Putt | LW,ST,RWB,CAM | 20 | New Zealand | 543 k€ | – | 0 | 0 | 0/0 |  |
 | 98 | Darius Randell | LW,RW,LM,ST | 19 | USA | 884 k€ | – | 0 | 0 | 0/0 |  |
 | 99 | Jordan Adebayo-Smith | ST,RW | 25 | Nigeria | 215 k€ | – | 0 | 0 | 0/0 |  |

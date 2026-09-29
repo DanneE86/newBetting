@@ -1,6 +1,6 @@
 # Real Salt Lake (MLS) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -72,7 +72,7 @@ Form (äldst → senast): FFFOFFFF · senaste match 2026-09-24
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Pablo Mastroeni. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -96,7 +96,6 @@ Tränare: Pablo Mastroeni. Betyg, mål och assist gäller innevarande säsong en
 | 41 | Gio Villa | RWB,LWB | 18 | USA | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 |  | Dušan Žagar | RM,LW,LM,RW | 19 | Serbia | 787 k€ | – | 0 | 0 | 0/0 |  |
-|  | Liam O'Gara | CM,CB | 21 | USA | – | – | 0 | 0 | 0/0 |  |
 | 6 | Stijn Spierings | CM,CDM | 30 | Netherlands | 1,0 M€ | 7,02 | 1 | 1 | 2/0 |  |
 | 8 | Juan Sanabria | LWB,LM,LB,LW | 26 | Uruguay | 2,6 M€ | 7,21 | 1 | 4 | 2/0 |  |
 | 9 | Morgan Guilavogui | CAM,LW,RW | 28 | Guinea | 2,3 M€ | 7,23 | 2 | 5 | 7/1 |  |
@@ -104,7 +103,7 @@ Tränare: Pablo Mastroeni. Betyg, mål och assist gäller innevarande säsong en
 | 11 | Dominik Marczuk | RM | 22 | Poland | 1,2 M€ | 6,57 | 1 | 0 | 1/0 |  |
 | 23 | Zach Booth | RWB,LW | 22 | USA | 202 k€ | 6,61 | 1 | 0 | 2/0 | skadad, åter Early October 2026 |
 | 25 | Colin Guske | CDM,CB | 19 | USA | 906 k€ | 6,11 | 0 | 0 | 4/1 |  |
-| 27 | Griffin Dillon | CDM,CM | 23 | USA | 249 k€ | 6,62 | 0 | 0 | 1/0 | skadad, åter Late October 2026 |
+| 27 | Griffin Dillon | CM,CDM | 23 | USA | 249 k€ | 6,62 | 0 | 0 | 1/0 | skadad, åter Late October 2026 |
 | 30 | Owen Anderson | LW,LM,CAM | 19 | USA | – | – | 0 | 0 | 0/0 |  |
 | 34 | Luca Moisa | CM,CDM,CAM | 18 | USA | 1,0 M€ | 6,58 | 0 | 0 | 2/0 |  |
 | 38 | Antonio Riquelme | CAM,RW,CM,LW,RM,ST | 18 | USA | – | – | 0 | 0 | 0/0 |  |
@@ -121,3 +120,5 @@ Tränare: Pablo Mastroeni. Betyg, mål och assist gäller innevarande säsong en
 | 39 | Aiden Hezarkhani | RW,CAM | 19 | USA | 1,8 M€ | 6,59 | 3 | 0 | 2/0 |  |
 | 44 | Chance Cowell | RW | 18 | USA | 894 k€ | – | 0 | 0 | 0/0 |  |
 | 70 | Lineker Rodrigues dos Santos | ST,CAM,RM | 24 | Brazil | 270 k€ | 6,25 | 0 | 1 | 3/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Liam O'Gara (senast 2026-09-29).

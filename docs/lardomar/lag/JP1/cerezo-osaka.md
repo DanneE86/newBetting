@@ -1,6 +1,6 @@
 # Cerezo Osaka (J1 League) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [JP1](../../ligor/JP1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [JP1](../../ligor/JP1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -58,7 +58,7 @@ Form (äldst → senast): VFVFVOFO · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Pablo Machín. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -83,7 +83,6 @@ Tränare: Pablo Machín. Betyg, mål och assist gäller innevarande säsong enli
 | 7 | Satoki Uejo | RW | 29 | Japan | 169 k€ | 6,84 | 1 | 0 | 0/0 |  |
 | 8 | Shinji Kagawa | CAM,CDM | 37 | Japan | 172 k€ | 6,89 | 0 | 2 | 0/0 |  |
 | 10 | Shunta Tanaka | CDM,CB | 29 | Japan | 875 k€ | 7,18 | 0 | 0 | 0/0 |  |
-| 26 | Eiji Kubo | CM | 19 | Japan | – | – | 0 | 0 | 0/0 |  |
 | 28 | Kosei Okazawa | CDM | 22 | Japan | 242 k€ | 6,92 | 0 | 1 | 0/0 |  |
 | 36 | Jackson Irvine | CDM,CM | 33 | Australia | 725 k€ | 7,35 | 0 | 1 | 2/0 |  |
 | 41 | Yota Komi | LWB,CAM | 24 | Japan | 366 k€ | 6,49 | 0 | 0 | 1/0 |  |
@@ -94,6 +93,7 @@ Tränare: Pablo Machín. Betyg, mål och assist gäller innevarande säsong enli
 | 14 | Yumeki Yokoyama | CAM,LW,RW | 21 | Japan | 1,0 M€ | 6,62 | 1 | 0 | 0/0 |  |
 | 17 | Reiya Sakata | RW | 22 | Japan | 480 k€ | – | 0 | 0 | 0/0 |  |
 | 19 | Pablo Sabbag | ST | 29 | Syria | 480 k€ | 6,02 | 0 | 0 | 1/0 |  |
-| 42 | Ryota Onoda | Attacker | 19 | Japan | 322 k€ | – | 0 | 0 | 0/0 |  |
 | 45 | Koki Nagasoe | Attacker | 17 | Japan | – | – | 0 | 0 | 0/0 |  |
 | 48 | Masaya Shibayama | RW,CAM | 24 | Japan | 551 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (2): Eiji Kubo (senast 2026-09-29), Ryota Onoda (senast 2026-09-29).

@@ -1,6 +1,6 @@
 # Burnley (Championship) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -70,7 +70,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-09-05 | Stryk 4969 | Burnley - Bristol City | 2 | 54 % | 48 % |
 | 2026-08-29 | Stryk 4968 | Norwich - Burnley | 1 | 26 % | 28 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Nicky Hayen. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -86,7 +86,7 @@ Tränare: Nicky Hayen. Betyg, mål och assist gäller innevarande säsong enligt
 | 2 | Kyle Walker | RB,RWB,CB,RM | 36 | England | 1,3 M€ | 6,27 | 0 | 0 | 1/0 |  |
 | 3 | Max Alleyne | CB,CDM | 21 | England | 1,1 M€ | 6,62 | 0 | 1 | 0/0 |  |
 | 6 | Bashir Humphreys | CB,LWB,LB | 23 | England | 15,3 M€ | 6,03 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
-| 14 | Connor Roberts | LB,RB | 31 | Wales | 1,7 M€ | 6,37 | 0 | 0 | 0/0 |  |
+| 14 | Connor Roberts | RB,LB | 31 | Wales | 1,7 M€ | 6,37 | 0 | 0 | 0/0 |  |
 | 15 | Anel Ahmedhodžić | CB | 27 | Bosnia and Herzegovina | 11,5 M€ | 6,42 | 0 | 0 | 1/0 |  |
 | 18 | Hjalmar Ekdal | CB | 27 | Sweden | 3,9 M€ | 6,49 | 0 | 0 | 1/0 |  |
 | 20 | Shurandy Sambo | RB | 25 | Curacao | 1,2 M€ | – | 0 | 0 | 0/0 |  |
@@ -100,7 +100,7 @@ Tränare: Nicky Hayen. Betyg, mål och assist gäller innevarande säsong enligt
 | 21 | Aaron Ramsey | CAM,RW | 23 | England | 9,1 M€ | 6,76 | 1 | 0 | 1/0 |  |
 | 24 | Josh Cullen | CM,CDM | 30 | Ireland | 4,9 M€ | – | 0 | 0 | 0/0 | skadad, åter Back in training |
 | 28 | Hannibal Mejbri | CAM,CDM,CM,LW | 23 | Tunisia | 14,4 M€ | 6,34 | 0 | 0 | 1/0 |  |
-| 29 | Josh Laurent | CB,CDM,CM,RWB,CAM | 31 | England | 1,0 M€ | 6,42 | 1 | 0 | 2/1 |  |
+| 29 | Josh Laurent | CDM,CB,CM,RWB,CAM | 31 | England | 1,0 M€ | 6,42 | 1 | 0 | 2/1 |  |
 | 30 | Lluc Castell | CAM | 20 | Spain | 494 k€ | – | 0 | 0 | 0/0 |  |
 | 31 | Mike Trésor | LW | 27 | Belgium | 2,2 M€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
@@ -111,7 +111,7 @@ Tränare: Nicky Hayen. Betyg, mål och assist gäller innevarande säsong enligt
 | 10 | Marcus Edwards | RW,CAM,RM | 27 | Cyprus | 8,3 M€ | 6,54 | 0 | 0 | 1/0 |  |
 | 11 | Jaydon Banel | LW | 21 | Netherlands | 1,4 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
 | 11 | Zeki Amdouni | ST | 25 | Switzerland | 8,4 M€ | 6,75 | 2 | 1 | 0/0 |  |
-| 17 | Andréas Hountondji | ST,CAM,LW | 24 | Benin | 4,4 M€ | 5,92 | 0 | 0 | 0/0 |  |
+| 17 | Andréas Hountondji | ST,LW | 24 | Benin | 4,4 M€ | 5,92 | 0 | 0 | 0/0 |  |
 | 19 | Largie Ramazani | LW,LM,RM,ST | 25 | Belgium | 5,8 M€ | 6,84 | 1 | 1 | 0/0 |  |
 | 27 | Armando Broja | ST,RW | 25 | Albania | 9,4 M€ | 6,27 | 0 | 0 | 1/0 |  |
 | 35 | Ashley Barnes | ST | 36 | England | 291 k€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |

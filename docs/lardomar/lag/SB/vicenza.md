@@ -1,6 +1,6 @@
 # Vicenza (Serie B) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [SB](../../ligor/SB.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [SB](../../ligor/SB.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -44,7 +44,7 @@ Form (äldst → senast): VVVVFOOF · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Fabio Gallo. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -58,7 +58,6 @@ Tränare: Fabio Gallo. Betyg, mål och assist gäller innevarande säsong enligt
 | 5 | Riccardo Marchizza | LB,CB | 28 | Italy | 831 k€ | 6,11 | 0 | 0 | 0/0 |  |
 | 6 | Maxime Leverbe | CB | 29 | France | 210 k€ | 6,18 | 0 | 0 | 0/0 |  |
 | 14 | Giuseppe Cuomo | CB | 28 | Italy | 400 k€ | 6,94 | 1 | 0 | 1/0 |  |
-| 18 | Ettore Broggian | RB | 17 | Italy | – | – | 0 | 0 | 0/0 |  |
 | 23 | Nicolò Brighenti | CB | 37 | Italy | 285 k€ | 7,10 | 0 | 0 | 1/0 |  |
 | 27 | Thomas Sandon | CB | 23 | Italy | 798 k€ | 7,06 | 0 | 0 | 0/0 |  |
 | 30 | Matteo Vescovi | Defender | 21 | Italy | 442 k€ | – | 0 | 0 | 0/0 |  |
@@ -82,3 +81,5 @@ Tränare: Fabio Gallo. Betyg, mål och assist gäller innevarande säsong enligt
 | 24 | Filippo Alessio | ST | 21 | Italy | 496 k€ | 6,49 | 0 | 0 | 1/0 |  |
 | 33 | Silvio Merkaj | ST | 28 | Albania | 648 k€ | 7,12 | 2 | 1 | 2/0 |  |
 | 74 | Frank Tsadjout | ST | 27 | Italy | 305 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Ettore Broggian (senast 2026-09-29).

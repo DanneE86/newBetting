@@ -1,6 +1,6 @@
 # Panetolikos (Super League (Grekland)) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [GR](../../ligor/GR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [GR](../../ligor/GR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -52,7 +52,7 @@ Form (äldst → senast): OOFVVVFF · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Giannis Anastasiou. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

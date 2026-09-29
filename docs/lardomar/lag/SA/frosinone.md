@@ -1,6 +1,6 @@
 # Frosinone (Serie A) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -84,7 +84,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-09-06 | Europa 2605 | Frosinone - Venezia | 1 ✓ | 42 % | 40 % |
 | 2026-08-23 | Europa 2601 | Frosinone - Juventus | 2 | 7 % | 15 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Massimiliano Alvini. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -124,6 +124,7 @@ Tränare: Massimiliano Alvini. Betyg, mål och assist gäller innevarande säson
 | 9 | Antonio Raimondo | ST | 22 | Italy | 3,1 M€ | 7,33 | 4 | 0 | 2/0 |  |
 | 11 | Daniel Bîrligea | ST | 26 | Romania | 2,4 M€ | 6,38 | 0 | 0 | 0/0 |  |
 | 17 | Giorgi Kvernadze | LW,CAM | 23 | Georgia | 1,9 M€ | 7,88 | 3 | 1 | 1/0 |  |
-| 29 | Alejandro Cichero | ST | 20 | Venezuela | 490 k€ | – | 0 | 0 | 0/0 |  |
 | 40 | Seydou Fini | RW | 20 | Italy | 1,9 M€ | 6,58 | 0 | 0 | 0/0 |  |
 | 89 | Tomás Bobček | ST | 25 | Slovakia | 1,7 M€ | 6,39 | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Alejandro Cichero (senast 2026-09-29).

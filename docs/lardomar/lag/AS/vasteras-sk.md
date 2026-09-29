@@ -1,6 +1,6 @@
 # Vasteras SK (Allsvenskan) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [AS](../../ligor/AS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [AS](../../ligor/AS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -53,7 +53,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-04-26 | Europa 2569 | Brommapojkarna - Västerås | 2 ✓ | 26 % | 28 % |
 | 2026-04-22 | Europa 2568 | Västerås - Häcken | X | 27 % | 28 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Alexander Rubin. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -75,7 +75,6 @@ Tränare: Alexander Rubin. Betyg, mål och assist gäller innevarande säsong en
 | 28 | Madiou Keïta | CB | 22 | Guinea | 275 k€ | 6,49 | 0 | 0 | 1/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 3 | Marcus Baggesen | LM,LB | 23 | Denmark | 256 k€ | 7,00 | 2 | 4 | 2/0 |  |
-| 6 | Simon Johansson | RW | 33 | Sweden | 50 k€ | – | 0 | 0 | 0/0 |  |
 | 8 | Mamadou Diagne | CM | 23 | Senegal | 486 k€ | 7,29 | 1 | 1 | 2/0 |  |
 | 10 | Jonathan Ring | CM | 34 | Sweden | 83 k€ | 6,73 | 0 | 1 | 1/1 | skadad, åter About 1-2 weeks |
 | 11 | Simon Gefvert | RM | 29 | Sweden | 225 k€ | 7,13 | 1 | 4 | 1/0 |  |
@@ -92,3 +91,5 @@ Tränare: Alexander Rubin. Betyg, mål och assist gäller innevarande säsong en
 | 17 | Axel Taonsa | LW,ST,RW | 22 | Burkina Faso | – | 7,06 | 8 | 0 | 3/0 |  |
 | 19 | Jens Magnusson | RW | 21 | Sweden | 263 k€ | 6,93 | 1 | 3 | 3/0 |  |
 | 27 | Moussa Diallo | ST | 19 | Senegal | 269 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Simon Johansson (senast 2026-09-29).

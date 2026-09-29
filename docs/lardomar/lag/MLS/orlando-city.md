@@ -1,6 +1,6 @@
 # Orlando City (MLS) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -69,7 +69,7 @@ Form (äldst → senast): OFVOVVVF · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Martin Perelman. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -99,12 +99,9 @@ Tränare: Martin Perelman. Betyg, mål och assist gäller innevarande säsong en
 | 20 | Eduard Atuesta | CM,CDM | 29 | Colombia | 2,0 M€ | 6,79 | 0 | 3 | 7/0 |  |
 | 35 | Joran Gerbet | CM,CDM | 25 | France | 157 k€ | 6,86 | 0 | 1 | 2/0 |  |
 | 38 | Issah Haruna | RW,CAM,CDM,RM | 22 | Ghana | – | – | 0 | 0 | 0/0 |  |
-| 41 | Dylan Judelson | CDM,CM | 18 | USA | – | – | 0 | 0 | 0/0 |  |
 | 77 | Iván Angulo | LM,LWB,RW,LW,RM | 27 | Colombia | 1,5 M€ | 7,36 | 5 | 4 | 5/0 |  |
-| 80 | Ignacio Gómez | CDM,CM | 20 | Argentina | 429 k€ | 7,57 | 1 | 0 | 1/0 |  |
 | 87 | Marco Pašalić | RM,RW,ST,CAM | 26 | Croatia | 3,8 M€ | 6,47 | 2 | 0 | 4/0 |  |
 | | **Anfallare** | | | | | | | | | |
-|  | Pedro Leão | ST | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 7 | Antoine Griezmann | ST,CAM | 35 | France | 5,4 M€ | 8,19 | 8 | 4 | 1/0 |  |
 | 9 | Daryl Dike | ST | 26 | USA | 720 k€ | 6,45 | 1 | 1 | 0/0 |  |
 | 10 | Martín Ojeda | ST,CAM | 27 | Argentina | 3,2 M€ | 7,41 | 13 | 1 | 1/0 |  |
@@ -112,4 +109,6 @@ Tränare: Martin Perelman. Betyg, mål och assist gäller innevarande säsong en
 | 14 | Tyrese Spicer | LW,LM | 25 | Trinidad and Tobago | 356 k€ | 6,79 | 6 | 1 | 1/0 |  |
 | 22 | Justin Ellis | ST,CAM,RM | 19 | USA | 1,2 M€ | 7,27 | 1 | 9 | 1/0 |  |
 | 23 | Harvey Sarajian | LW,ST,LM,RW | 21 | USA | 435 k€ | 6,50 | 1 | 1 | 2/0 |  |
-| 65 | Gustavo Caraballo | RW,ST,RM,LW | 18 | Venezuela | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 65 | Gustavo Caraballo | RW,ST,RM | 18 | Venezuela | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (3): Pedro Leão (senast 2026-09-29), Ignacio Gómez (senast 2026-09-29), Dylan Judelson (senast 2026-09-29).

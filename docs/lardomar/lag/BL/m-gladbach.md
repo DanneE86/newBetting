@@ -1,6 +1,6 @@
 # M'gladbach (Bundesliga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [BL](../../ligor/BL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [BL](../../ligor/BL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -70,7 +70,7 @@ Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: s
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Alexander Blessin. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -93,14 +93,14 @@ Tränare: Alexander Blessin. Betyg, mål och assist gäller innevarande säsong 
 | 20 | David Herold | LWB,LB,LM | 23 | Germany | 2,1 M€ | 5,52 | 0 | 0 | 0/0 |  |
 | 22 | Yukhym Konoplya | RB | 27 | Ukraine | 1,6 M€ | – | 0 | 0 | 0/0 |  |
 | 26 | Lukas Ullrich | LB,LWB,LM | 22 | Germany | 6,7 M€ | 6,82 | 0 | 2 | 1/0 |  |
-| 29 | Joseph Scally | RWB,RB,CB,RM | 23 | USA | 7,0 M€ | 6,36 | 1 | 0 | 1/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 |  | Josiah Uwakhonye | Midfielder | 18 | Germany | 682 k€ | – | 0 | 0 | 0/0 |  |
-| 7 | Kevin Stöger | CAM,CDM,CM | 33 | Austria | 919 k€ | 6,07 | 0 | 0 | 1/0 |  |
+| 7 | Kevin Stöger | CM,CDM,CAM,LW | 33 | Austria | 919 k€ | 6,07 | 0 | 0 | 1/0 |  |
 | 8 | Enzo Leopold | CM,CDM,CB | 26 | Germany | 2,0 M€ | – | 0 | 0 | 0/0 | skadad, åter Late May 2027 |
 | 10 | Florian Neuhaus | CAM,CM | 29 | Germany | 1,6 M€ | 8,01 | 1 | 0 | 1/0 |  |
-| 17 | Jens Castrop | LWB,LM,RWB,CM,CAM,RM,LW | 23 | South Korea | 5,0 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 17 | Jens Castrop | LWB,LM,RWB,CM,RM,LW | 23 | South Korea | 5,0 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 27 | Fritz Fleck | Midfielder | 19 | Germany | 656 k€ | – | 0 | 0 | 0/0 |  |
+| 29 | Joseph Scally | RWB,RB,RM,CB | 23 | USA | 7,0 M€ | 6,36 | 1 | 0 | 1/0 |  |
 | 34 | Mathieu Nguefack | CDM | 18 | Germany | – | 6,64 | 0 | 0 | 1/0 |  |
 | 36 | Wael Mohya | CAM,LW | 17 | Germany | 2,1 M€ | 6,28 | 0 | 0 | 1/0 |  |
 | 38 | Hugo Bolin | CAM,LM,RM,LW,CM | 23 | Sweden | 3,1 M€ | 7,17 | 2 | 0 | 1/0 |  |
@@ -109,7 +109,7 @@ Tränare: Alexander Blessin. Betyg, mål och assist gäller innevarande säsong 
 | 3 | Isac Lidberg | ST | 28 | Sweden | 2,4 M€ | 6,45 | 1 | 0 | 0/0 |  |
 | 9 | Franck Honorat | RW,CAM,ST,RM | 30 | France | 8,0 M€ | 7,25 | 0 | 2 | 1/0 |  |
 | 11 | Tim Kleindienst | ST | 31 | Germany | 7,7 M€ | 5,89 | 0 | 0 | 0/1 |  |
-| 18 | Shuto Machino | CAM,ST | 26 | Japan | 4,3 M€ | 5,91 | 1 | 0 | 1/0 |  |
+| 18 | Shuto Machino | ST,CAM | 26 | Japan | 4,3 M€ | 5,91 | 1 | 0 | 1/0 |  |
 | 19 | Nicolas-Gerrit Kühn | RW | 26 | Germany | 11,0 M€ | 6,48 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
 | 25 | Robin Hack | LW | 28 | Germany | 7,0 M€ | 6,09 | 0 | 0 | 0/0 |  |
 | 39 | Iaia Manco Danfa | Attacker | 19 | Guinea-Bissau | 654 k€ | – | 0 | 0 | 0/0 |  |

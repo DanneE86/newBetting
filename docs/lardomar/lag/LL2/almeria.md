@@ -1,6 +1,6 @@
 # Almeria (LaLiga 2) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [LL2](../../ligor/LL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [LL2](../../ligor/LL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -63,7 +63,7 @@ Form (äldst → senast): VVFFVVVV · senaste match 2026-09-27
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: García Pimienta. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -78,19 +78,19 @@ Tränare: García Pimienta. Betyg, mål och assist gäller innevarande säsong e
 | 31 | Áron Yaakobishvili | GK | 20 | Hungary | 2,0 M€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 2 | Marcos Luna | RB | 23 | Spain | 400 k€ | 7,01 | 0 | 1 | 1/0 |  |
-| 3 | Álex Muñoz | LB,CB | 32 | Spain | 640 k€ | 6,94 | 0 | 0 | 1/0 |  |
+| 3 | Álex Muñoz | LB,CB | 32 | Spain | 640 k€ | 6,93 | 0 | 0 | 1/0 |  |
 | 5 | Jorge Pulido | CB | 35 | Spain | 326 k€ | 6,90 | 0 | 0 | 0/0 |  |
-| 18 | Federico Bonini | CB | 25 | Italy | 2,2 M€ | 7,10 | 1 | 0 | 2/0 |  |
+| 18 | Federico Bonini | CB | 25 | Italy | 2,2 M€ | 7,08 | 1 | 0 | 2/0 |  |
 | 19 | Rodrigo Ely | CB | 32 | Brazil | 417 k€ | 7,09 | 0 | 0 | 1/0 |  |
-| 21 | Chumi | CB | 27 | Spain | 633 k€ | 7,78 | 0 | 0 | 0/0 |  |
-| 22 | Daijiro Chirino | RB,RWB | 24 | Netherlands | 1,4 M€ | 6,55 | 0 | 0 | 0/0 |  |
+| 21 | Chumi | CB | 27 | Spain | 633 k€ | 7,75 | 0 | 0 | 0/0 |  |
+| 22 | Daijiro Chirino | RB,RWB | 24 | Netherlands | 1,4 M€ | 6,61 | 0 | 0 | 0/0 |  |
 | 32 | Andrej Popović | Defender | 20 | Serbia | 393 k€ | – | 0 | 0 | 0/0 |  |
 | 32 | Pedro Cedillo | CB | 19 | Spain | 596 k€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 6 | Mikel Vesga | CDM | 33 | Spain | 775 k€ | 6,74 | 0 | 0 | 0/0 |  |
+| 6 | Mikel Vesga | CDM | 33 | Spain | 775 k€ | 6,79 | 0 | 0 | 0/0 |  |
 | 8 | Gui Guedes | CDM,CM | 24 | Portugal | 637 k€ | 7,69 | 0 | 0 | 0/0 | skadad, åter Late November 2026 |
-| 11 | Sergio Arribas | CAM,RW | 24 | Spain | 9,5 M€ | 6,78 | 0 | 0 | 0/0 |  |
-| 14 | Javi Muñoz | CM,CAM,CDM | 31 | Spain | 952 k€ | 7,99 | 2 | 2 | 1/0 |  |
+| 11 | Sergio Arribas | CAM,RW | 24 | Spain | 9,5 M€ | 6,75 | 0 | 0 | 0/0 |  |
+| 14 | Javi Muñoz | CM,CDM,CAM | 31 | Spain | 952 k€ | 7,95 | 2 | 2 | 1/0 |  |
 | 15 | Leonardo Lelo | LM,LB,LWB,CB | 26 | Portugal | 3,9 M€ | 6,88 | 0 | 0 | 0/0 |  |
 | 17 | Brian Cipenga | LM,LW,RM,CM | 28 | DR Congo | 773 k€ | 7,49 | 1 | 3 | 1/0 |  |
 | 26 | Kassoum Kone | Midfielder | 19 | France | – | – | 0 | 0 | 0/0 |  |

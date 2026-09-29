@@ -1,6 +1,6 @@
 # Sabadell (LaLiga 2) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [LL2](../../ligor/LL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [LL2](../../ligor/LL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -44,7 +44,7 @@ Form (äldst → senast): VOOVVFVO · senaste match 2026-09-26
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Ferran Costa. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -58,7 +58,6 @@ Tränare: Ferran Costa. Betyg, mål och assist gäller innevarande säsong enlig
 | 25 | Marc Vidal | GK | 26 | Spain | 353 k€ | – | 0 | 0 | 0/0 |  |
 | 31 | Manel Estevez | Keeper | 19 | Spain | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-|  | Carlos Aleman | Defender | 21 | Spain | – | – | 0 | 0 | 0/0 |  |
 |  | Genar Fornés | CB | 26 | Spain | 312 k€ | – | 0 | 0 | 0/0 |  |
 |  | Hudson Davis | Defender | 20 | USA | 325 k€ | – | 0 | 0 | 0/0 |  |
 | 2 | Pipa | RB | 28 | Spain | 279 k€ | 6,25 | 0 | 0 | 0/0 |  |
@@ -72,7 +71,6 @@ Tränare: Ferran Costa. Betyg, mål och assist gäller innevarande säsong enlig
 | 27 | José Luis Català | CB | 22 | Spain | 347 k€ | 6,77 | 0 | 0 | 1/0 |  |
 | 30 | Xavi Moreno | LM | 21 | Spain | 469 k€ | 6,20 | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-|  | Lluis Estebe | Midfielder | 21 | Spain | – | – | 0 | 0 | 0/0 |  |
 |  | Yussif Owusu | CDM,CM | 20 | Ghana | – | – | 0 | 0 | 0/0 |  |
 | 7 | Ton Ripoll | RWB,RM | 28 | Spain | 173 k€ | 7,29 | 0 | 3 | 1/0 |  |
 | 8 | Pere Pons | CM,CDM,CAM | 33 | Spain | 242 k€ | 6,58 | 0 | 0 | 1/0 |  |
@@ -89,3 +87,5 @@ Tränare: Ferran Costa. Betyg, mål och assist gäller innevarande säsong enlig
 | 12 | Gastón Vallés | ST | 25 | Uruguay | 288 k€ | 6,36 | 1 | 0 | 1/0 |  |
 | 16 | Nicholas Gioacchini | ST | 26 | USA | 392 k€ | 7,03 | 3 | 0 | 2/0 | skadad, åter Out for season |
 | 23 | Joel Priego | ST | 27 | Spain | 262 k€ | 6,77 | 0 | 1 | 1/0 |  |
+
+Har lämnat truppen sedan vi började spara (2): Carlos Aleman (senast 2026-09-29), Lluis Estebe (senast 2026-09-29).

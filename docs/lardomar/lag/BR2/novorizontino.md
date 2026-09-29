@@ -1,6 +1,6 @@
 # Novorizontino (Brasileirão Série B) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [BR2](../../ligor/BR2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [BR2](../../ligor/BR2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -44,7 +44,7 @@ Form senaste 8 (äldst → senast): VVVVVOFO · senaste match 2026-09-25
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Enderson Moreira. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -55,42 +55,24 @@ Tränare: Enderson Moreira. Betyg, mål och assist gäller innevarande säsong e
 | 12 | João Scapin | Keeper | 22 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 29 | Paulo Henrique | Keeper | 35 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 31 | César Augusto | GK | 31 | Brazil | 319 k€ | – | 0 | 0 | 0/0 |  |
-| 80 | Gustavo | Keeper | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 93 | Jordi | GK | 33 | Brazil | 325 k€ | – | 0 | 0 | 0/0 |  |
-| 94 | Pedro Henrique | Keeper | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 2 | Madson | RB,CB | 34 | Brazil | 211 k€ | – | 0 | 0 | 0/0 |  |
 | 3 | Carlinhos | CB | 31 | Brazil | 124 k€ | – | 0 | 0 | 0/0 |  |
 | 4 | Patrick | CB,LB | 27 | Brazil | 570 k€ | – | 0 | 0 | 0/0 |  |
 | 5 | Sander | CB,LB,LWB | 35 | Brazil | 185 k€ | – | 0 | 0 | 0/0 |  |
 | 14 | Eduardo Brock | CB | 35 | Brazil | 322 k€ | – | 0 | 0 | 0/0 |  |
-| 14 | Gabriel Correia | Defender | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 21 | Alemão | CB | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 22 | Alexis Iván Alvariño | RB,CB | 25 | Argentina | 264 k€ | – | 0 | 0 | 0/0 |  |
 | 24 | Jhilmar Lora | RB | 25 | Peru | 318 k€ | – | 0 | 0 | 0/0 |  |
 | 26 | Gabriel Bahia | CB | 27 | Brazil | 238 k€ | – | 0 | 0 | 0/0 |  |
 | 33 | Renato Palm | CB | 34 | Brazil | 179 k€ | – | 0 | 0 | 0/0 |  |
-| 60 | Luiz Otávio | Defender | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 66 | Maykon Jesus | LB,LW,LWB | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 78 | Arthur Barbosa | Defender | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 6 | Luís Oyama | CDM,CM | 29 | Brazil | 455 k€ | – | 0 | 0 | 0/0 |  |
 | 10 | Rômulo | CAM,ST,RW,CM | 24 | Brazil | 1,9 M€ | – | 0 | 0 | 0/0 |  |
-| 16 | Antony | Midfielder | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 17 | Matheus Bianqui | CDM,CM,RW | 28 | Brazil | 318 k€ | – | 0 | 0 | 0/0 |  |
 | 18 | Léo Naldi | CDM | 25 | Brazil | 775 k€ | – | 0 | 0 | 0/0 |  |
-| 23 | Jhones Kauê | Midfielder | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 27 | Bruno Santana | Midfielder | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 28 | Marlon | CM | 36 | Brazil | 171 k€ | – | 0 | 0 | 0/0 |  |
-| 34 | Nogueira | Midfielder | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 36 | Miguel Contiero | Midfielder | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 37 | Esquerda | Midfielder | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 40 | Jardiel | Midfielder | 21 | Brazil | 480 k€ | – | 0 | 0 | 0/0 |  |
-| 47 | Kawe | Midfielder | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 50 | Juninho | CAM,CDM | 25 | Brazil | 763 k€ | – | 0 | 0 | 0/0 |  |
-| 54 | Bruno Santos | Midfielder | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 70 | Geres | Midfielder | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 72 | Tiago | Midfielder | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Ronald Barcellos | ST,RW | 24 | Brazil | 281 k€ | – | 0 | 0 | 0/0 |  |
 | 8 | Christian Ortíz | LW,CAM | 34 | Argentina | 191 k€ | – | 0 | 0 | 0/0 |  |
@@ -98,13 +80,8 @@ Tränare: Enderson Moreira. Betyg, mål och assist gäller innevarande säsong e
 | 11 | Robson | ST | 35 | Brazil | 371 k€ | – | 0 | 0 | 0/0 |  |
 | 15 | Tavinho | RW,LW,RM | 22 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 16 | Vinícius Paiva | LW,RW | 25 | Brazil | 326 k€ | – | 0 | 0 | 0/0 |  |
-| 19 | Diego Galo | LW,LM | 21 | Brazil | 767 k€ | – | 0 | 0 | 0/0 |  |
 | 27 | Diego Mathias | RW | 27 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 30 | Nicolas Careca | LW | 29 | Brazil | 255 k€ | – | 0 | 0 | 0/0 |  |
-| 35 | Hector | Attacker | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 41 | Reidiney | RW | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 45 | Kaio Teixeira | Attacker | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 55 | Leonardo Goncalves | Attacker | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 56 | Matias Luduena | Attacker | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 61 | Kayque | Attacker | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 77 | Hélio Borges | RW | 26 | Brazil | 409 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (25): Arthur Barbosa (senast 2026-09-29), Jardiel (senast 2026-09-29), Gabriel Correia (senast 2026-09-29), Miguel Contiero (senast 2026-09-29), Maykon Jesus (senast 2026-09-29), Antony (senast 2026-09-29), Kaio Teixeira (senast 2026-09-29), Diego Galo (senast 2026-09-29), Hector (senast 2026-09-29), Nogueira (senast 2026-09-29), Alemão (senast 2026-09-29), Bruno Santana (senast 2026-09-29), Jhones Kauê (senast 2026-09-29), Esquerda (senast 2026-09-29), Matias Luduena (senast 2026-09-29), Gustavo (senast 2026-09-29), Luiz Otávio (senast 2026-09-29), Geres (senast 2026-09-29), Tiago (senast 2026-09-29), Leonardo Goncalves (senast 2026-09-29), Bruno Santos (senast 2026-09-29), Pedro Henrique (senast 2026-09-29), Reidiney (senast 2026-09-29), Kawe (senast 2026-09-29), Kayque (senast 2026-09-29).

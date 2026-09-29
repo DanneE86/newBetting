@@ -1,6 +1,6 @@
 # Wisla Plock (Ekstraklasa) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EK](../../ligor/EK.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EK](../../ligor/EK.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -53,7 +53,7 @@ Form (äldst → senast): VOFFFOVV · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Adam Majewski. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -74,7 +74,7 @@ Tränare: Adam Majewski. Betyg, mål och assist gäller innevarande säsong enli
 | 41 | Marcin Wieckowski | Defender | 22 | Poland | – | – | 0 | 0 | 0/0 |  |
 | 44 | Przemyslaw Misiak | Defender | 23 | Poland | 343 k€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 5 | Sidnei Tavares | CDM,CM | 24 | Cape Verde | 1,3 M€ | 7,39 | 0 | 0 | 1/0 |  |
+| 5 | Sidnei Tavares | CDM,CM | 25 | Cape Verde | 1,3 M€ | 7,39 | 0 | 0 | 1/0 |  |
 | 6 | Krystian Pomorski | CM | 30 | Poland | 121 k€ | 6,16 | 0 | 0 | 0/0 |  |
 | 8 | Daniel Pacheco | CM,CDM | 35 | Spain | 139 k€ | 7,17 | 0 | 1 | 1/0 | skadad, åter Late October 2026 |
 | 11 | Jorge Jiménez | CAM,RW | 27 | Spain | 287 k€ | 6,41 | 0 | 0 | 0/0 |  |

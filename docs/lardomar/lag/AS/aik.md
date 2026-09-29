@@ -1,6 +1,6 @@
 # AIK (Allsvenskan) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [AS](../../ligor/AS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [AS](../../ligor/AS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -69,7 +69,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-09-28 | Europa 2509 | AIK - GAIS | X | 41 % | 44 % |
 | 2025-08-24 | Europa 2499 | Degerfors - AIK | 2 ✓ | 58 % | 49 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: José Riveiro. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -93,7 +93,6 @@ Tränare: José Riveiro. Betyg, mål och assist gäller innevarande säsong enli
 | 25 | Ibrahim Cissé | CB | 27 | Ivory Coast | 396 k€ | 6,84 | 1 | 0 | 2/0 | skadad, åter Mid October 2026 |
 | 33 | Diogo Tomas | CB | 29 | Finland | 138 k€ | 6,44 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 34 | Wilmer Olofsson | CB | 21 | Sweden | 208 k€ | 6,69 | 0 | 0 | 2/0 |  |
-| 44 | Abdoul Fatha Tinde Teribe | Defender | 19 | Burkina Faso | – | – | 0 | 0 | 0/0 |  |
 | 47 | Ladji Cammara | Defender | 19 | Monaco | – | 7,28 | 0 | 1 | 1/0 |  |
 | 49 | Oskar Pukelis | Defender | 18 | Lithuania | – | 6,03 | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
@@ -114,7 +113,8 @@ Tränare: José Riveiro. Betyg, mål och assist gäller innevarande säsong enli
 | 16 | Sixten Gustafsson | LW | 19 | Sweden | – | 6,47 | 2 | 0 | 1/0 |  |
 | 22 | Adrián Helm | LM | 21 | Sweden | 555 k€ | 7,00 | 1 | 1 | 0/0 | skadad, åter Mid October 2026 |
 | 29 | Kevin Filling | ST,RW | 17 | Sweden | 1,6 M€ | 6,85 | 2 | 5 | 2/0 | skadad, åter Mid October 2026 |
-| 39 | Henry Atola | Attacker | 24 | Kenya | 271 k€ | – | 0 | 0 | 0/0 |  |
 | 42 | Muslim Sultygov | Attacker | 18 | Sweden | – | – | 0 | 0 | 0/0 |  |
 | 43 | Nikolaj Staykov | Attacker | 19 | Sweden | – | 5,90 | 0 | 0 | 0/0 |  |
 | 45 | Taha Ayari | ST,LW | 21 | Sweden | 1,7 M€ | 6,91 | 1 | 2 | 2/0 | skadad, åter Mid October 2026 |
+
+Har lämnat truppen sedan vi började spara (2): Henry Atola (senast 2026-09-29), Abdoul Fatha Tinde Teribe (senast 2026-09-29).

@@ -1,6 +1,6 @@
 # Huracan (Liga Profesional) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -69,7 +69,7 @@ Form (äldst → senast): OVFOOOVV · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Diego Martínez. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -96,7 +96,7 @@ Tränare: Diego Martínez. Betyg, mål och assist gäller innevarande säsong en
 | | **Mittfältare** | | | | | | | | | |
 | 5 | Rodrigo Fernández Cedrés | CDM,CM | 30 | Uruguay | 489 k€ | – | 0 | 0 | 0/0 |  |
 | 8 | Leonardo Gil | CDM,CM,CAM | 35 | Chile | 319 k€ | – | 0 | 0 | 0/0 |  |
-| 10 | Óscar Romero | CAM,CDM,CM | 34 | Paraguay | 298 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Óscar Romero | CAM,CM | 34 | Paraguay | 298 k€ | – | 0 | 0 | 0/0 |  |
 | 15 | Facundo Waller | CDM,CM | 29 | Uruguay | 1,2 M€ | – | 0 | 0 | 0/0 |  |
 | 20 | Emmanuel Ojeda | CDM,CM | 28 | Argentina | 533 k€ | – | 0 | 0 | 0/0 |  |
 | 41 | Lautaro Mora | CM | 21 | Argentina | 644 k€ | – | 0 | 0 | 0/0 |  |

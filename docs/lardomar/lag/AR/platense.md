@@ -1,6 +1,6 @@
 # Platense (Liga Profesional) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -62,7 +62,7 @@ Form (äldst → senast): FVOVFOFF · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Martín Palermo. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -74,8 +74,6 @@ Tränare: Martín Palermo. Betyg, mål och assist gäller innevarande säsong en
 | 1 | Brian Bustos | GK | 30 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 22 | Nicolás Sumavil | GK | 26 | Argentina | 302 k€ | – | 0 | 0 | 0/0 |  |
 | 30 | Juan Pablo Cozzani | GK | 27 | Argentina | 2,0 M€ | – | 0 | 0 | 0/0 |  |
-| 36 | Joaquín Giudice | Keeper | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 37 | Santino Cambiasso | Keeper | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 3 | Tomás Silva | LB | 23 | Argentina | 2,0 M€ | – | 0 | 0 | 0/0 |  |
 | 4 | Agustín Lagos | RB | 24 | Argentina | 630 k€ | – | 0 | 0 | 0/0 |  |
@@ -83,16 +81,10 @@ Tränare: Martín Palermo. Betyg, mål och assist gäller innevarande säsong en
 | 8 | Fabricio López | RB | 23 | Argentina | 558 k€ | – | 0 | 0 | 0/0 |  |
 | 13 | Ignacio Vázquez | CB | 29 | Argentina | 1,7 M€ | – | 0 | 0 | 0/0 |  |
 | 25 | Juan Ignacio Saborido | RB | 28 | Argentina | 1,1 M€ | – | 0 | 0 | 0/0 |  |
-| 30 | Lucas Testa | Defender | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 31 | Víctor Cuesta | CB | 37 | Argentina | 296 k€ | – | 0 | 0 | 0/0 |  |
 | 32 | Santiago Quirós | LB | 23 | Argentina | 648 k€ | – | 0 | 0 | 0/0 | skadad, åter Early December 2026 |
 | 34 | Mateo Mendía | CB | 22 | Argentina | 656 k€ | – | 0 | 0 | 0/0 |  |
-| 38 | Celías Ingenthron | LB | 18 | Argentina | 848 k€ | – | 0 | 0 | 0/0 |  |
-| 41 | Thiago Currado | Defender | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 42 | Gonzalo Goñi | CB | 28 | Argentina | 411 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
-| 43 | Agustín Maglione | Defender | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 45 | Tomás Giménez | Defender | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 56 | Axel Guzmán | Defender | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 5 | Iván Gómez | CDM,CAM,CM | 29 | Argentina | 890 k€ | – | 0 | 0 | 0/0 |  |
 | 10 | Franco Zapiola | LW,CAM,CM,LM | 25 | Argentina | 1,3 M€ | – | 0 | 0 | 0/0 |  |
@@ -101,14 +93,9 @@ Tränare: Martín Palermo. Betyg, mål och assist gäller innevarande säsong en
 | 18 | Bautista Merlini | CAM,CM,CDM | 31 | Argentina | 254 k€ | – | 0 | 0 | 0/0 |  |
 | 19 | Héctor Bobadilla | CAM | 25 | Paraguay | 327 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 24 | Martín Barrios | CDM,CM | 27 | Uruguay | 456 k€ | – | 0 | 0 | 0/0 |  |
-| 26 | Pablo Ferreira | CDM,CM | 21 | Argentina | 642 k€ | – | 0 | 0 | 0/0 |  |
 | 27 | Santiago Dalmasso | CM | 22 | Argentina | 585 k€ | – | 0 | 0 | 0/0 |  |
-| 29 | Franco Minerva | LW | 20 | Argentina | 864 k€ | – | 0 | 0 | 0/0 |  |
-| 35 | Demian Troya | Midfielder | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 43 | Nicolás Retamar | CAM,RW,LW,ST,CDM | 27 | Argentina | 689 k€ | – | 0 | 0 | 0/0 |  |
+| 43 | Nicolás Retamar | CAM,RW,LW,ST | 27 | Argentina | 689 k€ | – | 0 | 0 | 0/0 |  |
 | 48 | Agustín Funes | Midfielder | 22 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 49 | Santiago Bouhet | Midfielder | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 50 | Salvador Rixner | Midfielder | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Guido Mainero | RW,RM,CAM | 31 | Argentina | 1,1 M€ | – | 0 | 0 | 0/0 |  |
 | 9 | Tomás Nasif | ST | 22 | Argentina | 838 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid January 2027 |
@@ -117,10 +104,8 @@ Tränare: Martín Palermo. Betyg, mål och assist gäller innevarande säsong en
 | 20 | Luciano Giménez | ST | 26 | Argentina | 517 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 21 | Augusto Lotti | ST | 30 | Argentina | 352 k€ | – | 0 | 0 | 0/0 |  |
 | 23 | Leonardo Heredia | ST,CAM | 30 | Argentina | 976 k€ | – | 0 | 0 | 0/0 |  |
-| 28 | Manuel Tucker | RM | 21 | Argentina | 430 k€ | – | 0 | 0 | 0/0 |  |
 | 33 | Juan Gauto | LW | 22 | Argentina | 1,4 M€ | – | 0 | 0 | 0/0 |  |
-| 52 | Matías Ramírez | Attacker | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 54 | Fausto San Pedro | Attacker | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 55 | Alejandro Vera | Attacker | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 79 | Bruno Sepúlveda | ST | 34 | Argentina | 301 k€ | – | 0 | 0 | 0/0 |  |
 | 99 | Gonzalo Lencina | ST | 28 | Argentina | 583 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (17): Pablo Ferreira (senast 2026-09-29), Manuel Tucker (senast 2026-09-29), Franco Minerva (senast 2026-09-29), Demian Troya (senast 2026-09-29), Celías Ingenthron (senast 2026-09-29), Agustín Maglione (senast 2026-09-29), Lucas Testa (senast 2026-09-29), Thiago Currado (senast 2026-09-29), Joaquín Giudice (senast 2026-09-29), Santino Cambiasso (senast 2026-09-29), Axel Guzmán (senast 2026-09-29), Fausto San Pedro (senast 2026-09-29), Alejandro Vera (senast 2026-09-29), Santiago Bouhet (senast 2026-09-29), Tomás Giménez (senast 2026-09-29), Matías Ramírez (senast 2026-09-29), Salvador Rixner (senast 2026-09-29).

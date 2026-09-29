@@ -1,6 +1,6 @@
 # Brighton (Premier League) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -55,10 +55,10 @@ Ligans test av frånvaro mot marknaden: svag signal (inte bekräftad). Få match
 | Chelsea | 17 | 5-4-8 | 28–29 | +0,21 | −0 pe | 2026-08-30 3-4 (b) |
 | Crystal Palace | 16 | 4-7-5 | 19–18 | −0,39 | +16 pe | 2026-02-08 0-1 (h) |
 | Everton | 16 | 5-4-7 | 21–26 | −0,27 | −2 pe | 2026-01-31 1-1 (h) |
-| Man City | 16 | 3-3-10 | 15–40 | +0,20 | +2 pe | 2026-01-07 1-1 (b) |
 | Newcastle | 16 | 6-7-3 | 20–15 | +0,22 | +17 pe | 2026-05-02 1-3 (b) |
 | Aston Villa | 15 | 3-3-9 | 17–28 | −0,60 | −7 pe | 2026-08-23 4-0 (h) |
 | Liverpool | 15 | 4-4-7 | 21–25 | +0,28 | +6 pe | 2026-03-21 2-1 (h) |
+| Man City | 15 | 3-3-9 | 15–38 | +0,22 | +2 pe | 2026-01-07 1-1 (b) |
 | Man United | 15 | 6-0-9 | 22–28 | +0,14 | −25 pe | 2026-05-24 0-3 (h) |
 | Tottenham | 15 | 6-2-7 | 24–21 | +0,22 | −11 pe | 2026-04-18 2-2 (b) |
 | Bournemouth | 12 | 6-1-5 | 15–19 | −0,02 | −17 pe | 2026-01-19 1-1 (h) |
@@ -116,11 +116,11 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-08-31 | Europa 2501 | Brighton - Manchester City | 1 ✓ | 18 % | 27 % |
 | 2025-08-24 | Europa 2499 | Everton - Brighton | 1 | 40 % | 39 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Fabian Hürzeler. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Mats Wieffer (skadad, åter Mid October 2026), Jack Hinshelwood (skadad, åter Mid October 2026), Stefanos Tzimas (skadad, åter Late September 2026), Yankuba Minteh (skadad, åter Mid November 2026), Kaoru Mitoma (skadad, åter Mid October 2026), Evan Ferguson (skadad, åter Mid October 2026), Zadok Yohanna (skadad, åter Mid October 2026), Femi Azeez (skadad, åter Mid October 2026)
+**Skadade/borta nu:** Pascal Struijk (skadad, åter Mid October 2026), Lewis Dunk (osäker), Mats Wieffer (skadad, åter Mid October 2026), Jack Hinshelwood (skadad, åter Mid October 2026), Stefanos Tzimas (skadad, åter Late September 2026), Yankuba Minteh (skadad, åter Mid November 2026), Kaoru Mitoma (skadad, åter Mid October 2026), Evan Ferguson (skadad, åter Mid October 2026), Zadok Yohanna (skadad, åter Mid October 2026), Femi Azeez (skadad, åter Mid October 2026)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -129,8 +129,8 @@ Tränare: Fabian Hürzeler. Betyg, mål och assist gäller innevarande säsong e
 | 23 | Jason Steele | GK | 36 | England | 414 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 3 | Jaouen Hadjam | LB,CB | 23 | Algeria | 6,1 M€ | – | 0 | 0 | 0/0 |  |
-| 4 | Pascal Struijk | CB | 27 | Netherlands | 16,2 M€ | 6,82 | 0 | 0 | 1/0 |  |
-| 5 | Lewis Dunk | CB | 34 | England | 2,3 M€ | 7,17 | 1 | 0 | 1/0 |  |
+| 4 | Pascal Struijk | CB | 27 | Netherlands | 16,2 M€ | 6,82 | 0 | 0 | 1/0 | skadad, åter Mid October 2026 |
+| 5 | Lewis Dunk | CB | 34 | England | 2,3 M€ | 7,17 | 1 | 0 | 1/0 | osäker |
 | 20 | Costinha | RB | 26 | Portugal | 3,1 M€ | 6,18 | 0 | 0 | 1/0 |  |
 | 21 | Olivier Boscagli | CB,LB | 28 | France | 14,3 M€ | 7,31 | 0 | 0 | 1/0 |  |
 | 24 | Ferdi Kadıoğlu | LB,RB,RW,RWB,LWB | 26 | Turkiye | 27,4 M€ | 6,53 | 0 | 0 | 1/0 |  |

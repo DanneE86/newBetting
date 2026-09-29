@@ -1,6 +1,6 @@
 # Eldense (LaLiga 2) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [LL2](../../ligor/LL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [LL2](../../ligor/LL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -49,7 +49,7 @@ Form (äldst → senast): FFOFOVFF · senaste match 2026-09-27
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Javier Calleja. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -58,39 +58,38 @@ Tränare: Javier Calleja. Betyg, mål och assist gäller innevarande säsong enl
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Ramón Vilà | GK | 24 | Spain | 364 k€ | 6,93 | 0 | 0 | 0/0 |  |
+| 1 | Ramón Vilà | GK | 24 | Spain | 364 k€ | 6,95 | 0 | 0 | 0/0 |  |
 | 13 | Juanpa Palomares | GK | 26 | Spain | 329 k€ | – | 0 | 0 | 0/0 |  |
 | 36 | David Bernabeu | Keeper | 21 | Spain | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 2 | Iker Recio | CB | 25 | Spain | 764 k€ | 6,24 | 0 | 0 | 0/0 |  |
-| 3 | Juan Larios | LB | 22 | Spain | 1,2 M€ | 7,03 | 0 | 0 | 1/0 |  |
-| 4 | Floris Smand | CB | 23 | Netherlands | 411 k€ | 6,74 | 0 | 0 | 0/0 |  |
-| 5 | Álex Serra | CB | 24 | Spain | 311 k€ | 7,13 | 0 | 0 | 2/0 |  |
+| 3 | Juan Larios | LB | 22 | Spain | 1,2 M€ | 7,01 | 0 | 0 | 1/0 |  |
+| 4 | Floris Smand | CB | 23 | Netherlands | 411 k€ | 6,75 | 0 | 0 | 0/0 |  |
+| 5 | Álex Serra | CB | 24 | Spain | 311 k€ | 7,17 | 0 | 0 | 2/0 |  |
 | 17 | Jesús Clemente | RB | 26 | Spain | 277 k€ | 6,59 | 0 | 0 | 1/0 |  |
-| 19 | Alejandro Ibarrondo | RB | 25 | Spain | – | 6,56 | 0 | 0 | 1/0 |  |
+| 19 | Alejandro Ibarrondo | RB | 25 | Spain | – | 6,59 | 0 | 0 | 1/0 |  |
 | 21 | David Ruiz | LB | 23 | Spain | 254 k€ | 6,69 | 0 | 0 | 2/0 |  |
 | 22 | Julien Yanda | Defender | 19 | Germany | – | – | 0 | 0 | 0/0 |  |
 | 26 | Iker Carbonell | Defender | 22 | Spain | – | – | 0 | 0 | 0/0 |  |
-| 31 | Antonio David | Defender | 20 | Spain | – | – | 0 | 0 | 0/0 |  |
-| 33 | Alejandro Iniesta | Defender | 22 | Spain | – | – | 0 | 0 | 0/0 |  |
 | 34 | Javier Olaizola | CB | 19 | Spain | – | 6,10 | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 6 | Borja Calvo | CM | 24 | Spain | 300 k€ | 6,26 | 0 | 0 | 0/0 |  |
+| 7 | Jorge Rastrojo | CAM | 26 | Spain | – | 6,64 | 0 | 1 | 0/0 |  |
 | 8 | Marcos Bustillo | CAM | 25 | Spain | 246 k€ | 6,27 | 0 | 0 | 0/0 |  |
-| 12 | Roberto López | CM,LM,RW | 26 | Spain | 960 k€ | 6,32 | 0 | 0 | 0/0 |  |
-| 14 | Justin Smith | CDM,CM | 23 | Canada | – | 7,07 | 1 | 0 | 2/0 |  |
+| 12 | Roberto López | CM,LM,RW,CAM | 26 | Spain | 960 k€ | 6,29 | 0 | 0 | 0/0 |  |
+| 14 | Justin Smith | CDM,CM | 23 | Canada | – | 7,06 | 1 | 0 | 2/0 |  |
 | 15 | Carlos Guirao | CDM | 23 | Spain | 428 k€ | 6,57 | 0 | 0 | 0/0 |  |
 | 18 | Guille Macho | CDM,CM | 23 | Spain | 317 k€ | 6,79 | 1 | 0 | 1/0 |  |
 | 24 | Javi Martínez | CAM,CM | 26 | Spain | 562 k€ | 6,48 | 1 | 0 | 0/0 |  |
 | 27 | Cristian Amarillo | Midfielder | 21 | Spain | – | – | 0 | 0 | 0/0 |  |
-| 30 | David Rodriguez | Midfielder | 21 | Spain | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 7 | Jorge Rastrojo | CAM | 26 | Spain | – | 6,63 | 0 | 1 | 0/0 |  |
 | 9 | Mariano Carmona | ST | 25 | Spain | 374 k€ | 6,37 | 1 | 0 | 1/0 | skadad, åter A few days |
 | 10 | Fidel Chaves | RW | 36 | Spain | 212 k€ | 6,56 | 0 | 0 | 1/0 |  |
-| 11 | Manu Nieto | ST,RW | 28 | Spain | 493 k€ | 6,39 | 0 | 0 | 1/0 |  |
+| 11 | Manu Nieto | ST,RW | 28 | Spain | 493 k€ | 6,37 | 0 | 0 | 1/0 |  |
 | 16 | Pau Cabanes | LW | 21 | Spain | 1,1 M€ | 6,93 | 0 | 0 | 0/0 |  |
-| 20 | Waldo Rubio | LW,RW,LM | 31 | Spain | 157 k€ | 6,53 | 0 | 0 | 0/0 |  |
+| 20 | Waldo Rubio | RW,LW,LM | 31 | Spain | 157 k€ | 6,53 | 0 | 0 | 0/0 |  |
 | 23 | Jordi Martín | LW,LB | 25 | Spain | 388 k€ | 6,62 | 0 | 1 | 0/0 |  |
 | 29 | Dinis Rodrigues | ST | 21 | Portugal | 309 k€ | – | 0 | 0 | 0/0 |  |
 | 33 | Aingeru Olabarrieta | RW,LW | 20 | Spain | 1,1 M€ | 6,47 | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (3): Alejandro Iniesta (senast 2026-09-29), David Rodriguez (senast 2026-09-29), Antonio David (senast 2026-09-29).

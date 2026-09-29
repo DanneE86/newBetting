@@ -117,7 +117,7 @@ const COUNTRY_QID = {
   England: ['Q145', 'Q21'], Spain: ['Q29'], Italy: ['Q38'], Germany: ['Q183'], France: ['Q142'], Netherlands: ['Q55'],
   Portugal: ['Q45'], Greece: ['Q41'], Croatia: ['Q224'], Sweden: ['Q34'], Norway: ['Q20'], Denmark: ['Q35'], Brazil: ['Q155'],
   Japan: ['Q17'], 'South Korea': ['Q884'], Mexico: ['Q96'], USA: ['Q30', 'Q16'], Czechia: ['Q213'], Chile: ['Q298'],
-  Colombia: ['Q739'], Argentina: ['Q414'],
+  Colombia: ['Q739'], Argentina: ['Q414'], Poland: ['Q36'],
 };
 const AUTO = path.join(root, 'data', 'open', 'venue-auto.json');
 const autoCache = fs.existsSync(AUTO) ? JSON.parse(fs.readFileSync(AUTO, 'utf8')) : {};
@@ -208,7 +208,7 @@ fs.writeFileSync(AUTO, JSON.stringify(autoCache, null, 2), 'utf8');
 const ISO = {
   England: 'GB', Spain: 'ES', Italy: 'IT', Germany: 'DE', France: 'FR', Netherlands: 'NL', Portugal: 'PT', Greece: 'GR', Croatia: 'HR',
   Sweden: 'SE', Norway: 'NO', Denmark: 'DK', Brazil: 'BR', Japan: 'JP', 'South Korea': 'KR', Mexico: 'MX', USA: 'US', Czechia: 'CZ',
-  Chile: 'CL', Colombia: 'CO', Argentina: 'AR',
+  Chile: 'CL', Colombia: 'CO', Argentina: 'AR', Poland: 'PL',
 };
 async function geocodeCity(team, country) {
   const name = CITY_HINT[team] ?? team;

@@ -1,11 +1,11 @@
 # Southampton (Championship) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Senaste 8: xG-målskillnaden är −0,88 per match sämre än målskillnaden.
-- Stark historik mot West Ham (−0,65 p/match mot marknaden, 12 möten), Wolves (−0,80 p/match mot marknaden, 12 möten), Sheffield United (+1,43 p/match mot marknaden, 6 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Stark historik mot West Ham (−0,65 p/match mot marknaden, 12 möten), Wolves (−0,79 p/match mot marknaden, 11 möten), Sheffield United (+1,43 p/match mot marknaden, 6 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
 - På Stryktipset/Europatipset streckas lagets vinst ×1,20 av vår sannolikhet (21 matcher). Folket överspelar laget: garderingar mot det ger mer i utdelning.
 
 ## Nuläge (senaste 8 ligamatcher)
@@ -40,8 +40,8 @@ Form (äldst → senast): FVVOOVVF · senaste match 2026-09-19
 | Motståndare | M | V-O-F | Mål | Mot marknaden | Kryss mot odds | Senast |
 |---|---|---|---|---|---|---|
 | West Ham | 12 | 1-4-7 | 7–18 | −0,65 | +7 pe | 2025-04-19 1-1 (b) |
-| Wolves | 12 | 1-2-9 | 11–21 | −0,80 | −13 pe | 2025-03-15 1-2 (h) |
 | Watford | 11 | 5-4-2 | 17–13 | +0,13 | +10 pe | 2026-08-16 1-2 (b) |
+| Wolves | 11 | 1-2-8 | 11–19 | −0,79 | −11 pe | 2025-03-15 1-2 (h) |
 | Norwich | 8 | 4-2-2 | 15–10 | +0,01 | −0 pe | 2026-03-18 1-0 (h) |
 | Burnley | 7 | 2-2-3 | 8–12 | −0,42 | +0 pe | 2022-04-21 0-2 (b) |
 | Sheffield United | 6 | 6-0-0 | 12–2 | +1,43 | −27 pe | 2026-01-21 1-0 (h) |
@@ -90,7 +90,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-08-22 | Stryk 4967 | Southampton - Stoke | 1 ✓ | 70 % | 58 % |
 | 2026-01-01 | Europa 2536 | Southampton - Millwall | X | 62 % | 50 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Tonda Eckert. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

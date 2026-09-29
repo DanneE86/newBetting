@@ -1,6 +1,6 @@
 # Sparta Rotterdam (Eredivisie) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [ED](../../ligor/ED.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [ED](../../ligor/ED.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -58,7 +58,7 @@ Form (äldst → senast): FFVOFOFF · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Rogier Meijer. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -83,10 +83,10 @@ Tränare: Rogier Meijer. Betyg, mål och assist gäller innevarande säsong enli
 | | **Mittfältare** | | | | | | | | | |
 | 6 | Julian Baas | CDM,CM | 24 | Netherlands | 564 k€ | 6,72 | 0 | 1 | 1/0 |  |
 | 8 | Cedric Hatenboer | CDM,CM,CAM | 21 | Netherlands | 2,3 M€ | 6,84 | 0 | 0 | 0/0 |  |
-| 10 | Isaac Babadi | CM | 21 | Netherlands | 1,6 M€ | 6,38 | 1 | 0 | 0/0 |  |
+| 10 | Isaac Babadi | CAM | 21 | Netherlands | 1,6 M€ | 6,38 | 1 | 0 | 0/0 |  |
 | 17 | Robin van Cruijsen | CAM,CM,CDM,RW | 20 | Netherlands | 2,5 M€ | 6,30 | 1 | 0 | 0/0 |  |
 | 18 | Alwande Roaldsøy | CM | 22 | Norway | 871 k€ | 6,20 | 0 | 0 | 0/0 |  |
-| 21 | Jens Toornstra | CDM,CM | 37 | Netherlands | 245 k€ | 6,52 | 0 | 0 | 1/0 |  |
+| 21 | Jens Toornstra | CDM | 37 | Netherlands | 245 k€ | 6,52 | 0 | 0 | 1/0 |  |
 | | **Anfallare** | | | | | | | | | |
 |  | Shunsuke Mito | LW,CAM | 24 | Japan | 2,0 M€ | 6,99 | 0 | 2 | 0/0 |  |
 | 7 | Casper Terho | RW | 23 | Finland | 1,2 M€ | 6,46 | 0 | 0 | 1/0 |  |

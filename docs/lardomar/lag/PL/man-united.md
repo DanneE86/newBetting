@@ -1,6 +1,6 @@
 # Man United (Premier League) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -103,7 +103,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-08-24 | Europa 2499 | Fulham - Manchester United | X | 59 % | 43 % |
 | 2025-08-17 | Europa 2497 | Manchester United - Arsenal | 2 | 20 % | 25 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Michael Carrick. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -117,7 +117,7 @@ Tränare: Michael Carrick. Betyg, mål och assist gäller innevarande säsong en
 | 22 | Tom Heaton | GK | 40 | England | 595 k€ | – | 0 | 0 | 0/0 | skadad, åter Late September 2026 |
 | 45 | Dermot Mee | GK | 23 | Northern Ireland | 342 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Diogo Dalot | RB,LWB,RWB,LB | 27 | Portugal | 27,4 M€ | 7,04 | 0 | 0 | 1/0 |  |
+| 2 | Diogo Dalot | RB,LWB,LB,RWB | 27 | Portugal | 27,4 M€ | 7,04 | 0 | 0 | 1/0 |  |
 | 3 | Noussair Mazraoui | LB,RB,CB,RWB | 28 | Morocco | 17,2 M€ | 6,40 | 0 | 0 | 0/0 |  |
 | 4 | Matthijs de Ligt | CB | 27 | Netherlands | 39,9 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 5 | Harry Maguire | CB | 33 | England | 6,8 M€ | 7,05 | 0 | 0 | 2/0 |  |
@@ -133,7 +133,7 @@ Tränare: Michael Carrick. Betyg, mål och assist gäller innevarande säsong en
 | 20 | Carlos Baleba | CDM,CM | 22 | Cameroon | 48,1 M€ | – | 0 | 0 | 0/0 |  |
 | 25 | Manuel Ugarte | CDM,CM | 25 | Uruguay | 30,6 M€ | – | 0 | 0 | 0/0 | skadad, åter Early April 2027 |
 | 37 | Kobbie Mainoo | CDM | 21 | England | 52,9 M€ | 7,65 | 0 | 1 | 0/0 | skadad, åter Mid October 2026 |
-| 38 | Jack Fletcher | CAM,CDM,CM,LB,ST | 19 | England | 394 k€ | – | 0 | 0 | 0/0 |  |
+| 38 | Jack Fletcher | CAM,CDM,CM,ST | 19 | England | 394 k€ | – | 0 | 0 | 0/0 |  |
 | 39 | Tyler Fletcher | CDM,CM,CAM | 19 | Scotland | 144 k€ | – | 0 | 0 | 0/0 |  |
 | 41 | Harry Amass | LM,LWB,LB | 19 | England | 5,3 M€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |

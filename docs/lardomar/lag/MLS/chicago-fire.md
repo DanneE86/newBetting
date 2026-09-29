@@ -1,6 +1,6 @@
 # Chicago Fire (MLS) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -62,16 +62,16 @@ Form (äldst → senast): VVOOOOFF · senaste match 2026-09-20
 | Los Angeles Galaxy | 4 | 1-1-2 | 3–6 | −0,19 | −1 pe | 2024-06-02 2-1 (h) |
 | San Jose Earthquakes | 4 | 0-0-4 | 2–9 | −1,22 | −25 pe | 2024-07-08 0-1 (b) |
 | FC Dallas | 3 | 2-1-0 | 7–1 | +0,89 | +8 pe | 2025-03-09 3-1 (b) |
-| Los Angeles FC | 3 | 1-2-0 | 5–3 | +0,58 | +43 pe | 2025-08-10 2-2 (h) |
 | Portland Timbers | 3 | 2-0-1 | 6–5 | +0,79 | −23 pe | 2026-08-16 2-1 (h) |
 | Real Salt Lake | 3 | 1-1-1 | 2–5 | −0,43 | +8 pe | 2024-04-21 0-4 (h) |
 | St. Louis City | 3 | 2-0-1 | 5–5 | +0,46 | −23 pe | 2025-08-17 3-2 (h) |
+| Los Angeles FC | 2 | 0-2-0 | 2–2 | −0,02 | +77 pe | 2025-08-10 2-2 (h) |
 | Colorado Rapids | 1 | 1-0-0 | 4–1 | +1,00 | −23 pe | 2019-04-20 4-1 (h) |
 | San Diego FC | 1 | 0-0-1 | 1–2 | −1,41 | −24 pe | 2025-07-13 1-2 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Gregg Berhalter. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -86,7 +86,7 @@ Tränare: Gregg Berhalter. Betyg, mål och assist gäller innevarande säsong en
 | | **Backar** | | | | | | | | | |
 |  | Andreas Hanche-Olsen | CB | 29 | Norway | 2,5 M€ | – | 0 | 0 | 0/0 |  |
 |  | Omar González | CB | 37 | USA | 103 k€ | – | 0 | 0 | 0/0 |  |
-| 2 | Leonardo Barroso | RB,RM | 21 | Portugal | 1,3 M€ | 6,83 | 0 | 0 | 2/0 |  |
+| 2 | Leonardo Barroso | RB | 21 | Portugal | 1,3 M€ | 6,83 | 0 | 0 | 2/0 |  |
 | 3 | Jack Elliott | CB | 31 | England | 1,2 M€ | 6,93 | 0 | 2 | 5/0 |  |
 | 4 | Mbekezeli Mbokazi | CB | 21 | South Africa | 541 k€ | 7,32 | 0 | 0 | 2/0 |  |
 | 5 | Sam Rogers | CB | 27 | USA | 114 k€ | 6,58 | 0 | 0 | 2/0 |  |
@@ -95,7 +95,7 @@ Tränare: Gregg Berhalter. Betyg, mål och assist gäller innevarande säsong en
 | 32 | Noah Allen | LB,CB,LM | 22 | Greece | 2,2 M€ | 6,59 | 1 | 1 | 3/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 6 | Anton Salétros | CM,CDM | 30 | Sweden | 1,4 M€ | 6,95 | 0 | 0 | 5/0 | skadad, åter Mid October 2026 |
-| 10 | André Franco | CM | 28 | Portugal | 716 k€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 10 | André Franco | CDM | 28 | Portugal | 716 k€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
 | 17 | Robin Lod | ST,CM,RM,CAM | 33 | Finland | 712 k€ | 6,81 | 4 | 2 | 3/0 |  |
 | 18 | Johan Gómez | RWB,LW,CAM,RB | 25 | USA | 436 k€ | 6,85 | 1 | 0 | 0/0 |  |
 | 22 | Mauricio Pineda | CM,CDM | 28 | USA | 451 k€ | 6,51 | 0 | 0 | 0/0 |  |
@@ -106,10 +106,11 @@ Tränare: Gregg Berhalter. Betyg, mål och assist gäller innevarande säsong en
 | 65 | Oscar Pineda | CDM,CM | 18 | USA | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Maren Haile-Selassie | LW,LM,ST,RW,CAM,CM | 27 | Switzerland | 827 k€ | 7,31 | 8 | 4 | 1/0 |  |
-| 8 | Chris Mueller | ST | 30 | USA | 53 k€ | 6,27 | 0 | 0 | 1/0 |  |
 | 9 | Robert Lewandowski | ST | 38 | Poland | 4,8 M€ | 7,19 | 6 | 2 | 1/0 |  |
 | 11 | Philip Zinckernagel | RW,RM | 31 | Denmark | 2,1 M€ | 7,34 | 5 | 8 | 4/0 |  |
 | 12 | Puso Dithejane | LW,RW | 22 | South Africa | 676 k€ | 6,73 | 2 | 1 | 2/0 |  |
-| 19 | Jonathan Bamba | LW,LM,RW | 30 | Ivory Coast | 2,0 M€ | 6,97 | 2 | 2 | 2/0 |  |
+| 19 | Jonathan Bamba | LW,LM | 30 | Ivory Coast | 2,0 M€ | 6,97 | 2 | 2 | 2/0 |  |
 | 28 | Dean Boltz | ST,CAM | 20 | USA | 757 k€ | – | 0 | 0 | 0/0 |  |
 | 37 | Robert Turdean | CAM,ST,RW,LW | 16 | USA | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Chris Mueller (senast 2026-09-29).

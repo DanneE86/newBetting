@@ -1,6 +1,6 @@
 # Legia (Ekstraklasa) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EK](../../ligor/EK.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EK](../../ligor/EK.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -59,7 +59,7 @@ Form (äldst → senast): VOVOOVOV · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Marek Papszun. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -80,7 +80,6 @@ Tränare: Marek Papszun. Betyg, mål och assist gäller innevarande säsong enli
 | 13 | Arkadiusz Reca | LB,LM | 31 | Poland | 275 k€ | 6,45 | 0 | 0 | 0/0 |  |
 | 22 | Paweł Wszołek | RB,RW,RM,RWB | 34 | Poland | 167 k€ | 7,55 | 1 | 5 | 1/0 |  |
 | 24 | Zoran Arsenić | CB | 32 | Croatia | 216 k€ | 6,85 | 1 | 0 | 0/0 |  |
-| 55 | Artur Jędrzejczyk | CB | 38 | Poland | 122 k€ | – | 0 | 0 | 0/0 |  |
 | 91 | Kamil Piątkowski | CB | 26 | Poland | 1,8 M€ | 7,49 | 0 | 1 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 4 | Damian Szymański | CM,CDM | 31 | Poland | 514 k€ | 7,05 | 0 | 0 | 0/0 |  |
@@ -89,7 +88,7 @@ Tränare: Marek Papszun. Betyg, mål och assist gäller innevarande säsong enli
 | 17 | Mateusz Szczepaniak | CAM | 19 | Poland | 823 k€ | 6,53 | 0 | 0 | 0/0 |  |
 | 19 | Rúben Vinagre | LB,LW,LM,LWB | 27 | Portugal | 1,1 M€ | 7,55 | 1 | 3 | 1/0 |  |
 | 23 | Michal Sevcík | CAM,RW | 24 | Czechia | 546 k€ | 7,17 | 1 | 0 | 0/0 |  |
-| 27 | Bogdan Vyunnyk | LM | 24 | Ukraine | 526 k€ | 6,00 | 0 | 0 | 0/0 |  |
+| 27 | Bogdan Vyunnyk | CAM | 24 | Ukraine | 526 k€ | 6,00 | 0 | 0 | 0/0 |  |
 | 30 | Erik Mikanovich | LM | 18 | Belarus | – | – | 0 | 0 | 0/0 |  |
 | 53 | Wojciech Urbański | CM,CAM,CDM | 21 | Poland | 771 k€ | 6,65 | 0 | 0 | 1/0 |  |
 | 65 | Filip Przybyłko | Midfielder | 18 | Poland | – | – | 0 | 0 | 0/0 |  |
@@ -102,3 +101,5 @@ Tränare: Marek Papszun. Betyg, mål och assist gäller innevarande säsong enli
 | 21 | Vahan Bichakhchyan | RW,CM | 27 | Armenia | 483 k€ | 7,24 | 0 | 1 | 0/0 | skadad, åter Early October 2026 |
 | 79 | Łukasz Zjawiński | ST | 25 | Poland | 207 k€ | 6,89 | 3 | 0 | 0/0 |  |
 | 99 | Samuel Kovácik | LW | 19 | Slovakia | 942 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Artur Jędrzejczyk (senast 2026-09-29).

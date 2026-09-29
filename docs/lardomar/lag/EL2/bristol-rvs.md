@@ -1,6 +1,6 @@
 # Bristol Rvs (League Two) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -63,25 +63,25 @@ Form (äldst → senast): FVVVVFFV · senaste match 2026-09-26
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Steve Evans. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Brad Young | GK | 24 | England | 369 k€ | 6,85 | 0 | 1 | 0/0 |  |
+| 1 | Brad Young | GK | 24 | England | 369 k€ | 6,86 | 0 | 1 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 2 | Tom James | RB,LB,CB | 30 | Wales | 156 k€ | 7,40 | 2 | 1 | 2/0 |  |
-| 4 | Kofi Balmer | CB,RB | 26 | Northern Ireland | 265 k€ | 6,98 | 0 | 1 | 3/0 |  |
-| 5 | Alfie Kilgour | CB | 28 | England | 122 k€ | 7,54 | 0 | 1 | 0/0 |  |
+| 4 | Kofi Balmer | CB,RB | 26 | Northern Ireland | 265 k€ | 7,00 | 0 | 1 | 3/0 |  |
+| 5 | Alfie Kilgour | CB | 28 | England | 122 k€ | 7,71 | 0 | 1 | 0/0 |  |
 | 6 | Clinton Mola | CDM,CB,LB,CM | 25 | England | 183 k€ | 7,05 | 1 | 0 | 2/0 |  |
 | 14 | Ben Purrington | LB | 30 | England | 92 k€ | 7,00 | 1 | 0 | 1/0 |  |
-| 17 | Ciarán Kelly | CB | 28 | Ireland | 201 k€ | 6,71 | 0 | 0 | 0/0 |  |
+| 17 | Ciarán Kelly | CB | 28 | Ireland | 201 k€ | 6,75 | 0 | 0 | 0/0 |  |
 | 22 | Keenan Gough | CB | 20 | England | 259 k€ | 6,77 | 0 | 0 | 0/0 |  |
 | 26 | Riley Harbottle | CB | 26 | England | 249 k€ | 6,91 | 0 | 0 | 1/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 3 | Jack Sparkes | LWB,LB,LM | 25 | England | 211 k€ | 7,43 | 0 | 0 | 0/0 |  |
+| 3 | Jack Sparkes | LWB,LB,LM | 26 | England | 211 k€ | 7,43 | 0 | 0 | 0/0 |  |
 | 8 | Reiss-Alexander Russell-Denny | RW,CDM,CAM | 20 | England | – | 6,18 | 0 | 1 | 0/0 |  |
 | 11 | Jack Aitchison | CAM,CDM | 26 | Scotland | 247 k€ | 6,36 | 0 | 0 | 0/0 |  |
 | 15 | Ryan De Havilland | CDM,CM | 25 | England | 268 k€ | – | 0 | 0 | 0/0 |  |
@@ -92,7 +92,7 @@ Tränare: Steve Evans. Betyg, mål och assist gäller innevarande säsong enligt
 | 30 | Ollie Dewsbury | ST | 18 | Wales | 438 k€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Shaqai Forde | RW,CAM | 22 | England | 232 k€ | 7,05 | 0 | 0 | 1/0 |  |
-| 9 | Joe Quigley | ST | 29 | England | 208 k€ | 6,16 | 0 | 0 | 0/0 |  |
+| 9 | Joe Quigley | ST | 29 | England | 208 k€ | 6,13 | 0 | 0 | 0/0 |  |
 | 10 | Bobby Kamwa | LW,LM,RW,ST | 26 | Cameroon | 265 k€ | 6,86 | 2 | 0 | 1/0 |  |
 | 19 | Ellis Harrison | ST,LW,CAM | 32 | Wales | 128 k€ | 6,83 | 1 | 0 | 2/0 |  |
-| 29 | Fabrizio Cavegn | ST | 24 | Switzerland | 283 k€ | 6,92 | 3 | 1 | 0/0 |  |
+| 29 | Fabrizio Cavegn | ST | 24 | Switzerland | 283 k€ | 6,95 | 3 | 1 | 0/0 |  |

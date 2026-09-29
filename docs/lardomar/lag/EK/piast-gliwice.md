@@ -1,6 +1,6 @@
 # Piast Gliwice (Ekstraklasa) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EK](../../ligor/EK.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EK](../../ligor/EK.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -60,7 +60,7 @@ Form (äldst → senast): VFFOVVVF · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Daniel Myśliwiec. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -90,12 +90,12 @@ Tränare: Daniel Myśliwiec. Betyg, mål och assist gäller innevarande säsong 
 | 31 | Oskar Leśniak | CM,RM,RW,CDM | 21 | Poland | 371 k€ | 6,55 | 0 | 0 | 1/0 |  |
 | 77 | Szczepan Mucha | LW | 22 | Poland | 258 k€ | 6,54 | 1 | 0 | 0/0 |  |
 | 80 | Hugo Vallejo | LM,LW,ST | 26 | Spain | 553 k€ | 7,23 | 3 | 0 | 0/0 |  |
+| 98 | Jason Lokilo | RM,RW,CAM,LW | 28 | DR Congo | – | 6,44 | 0 | 1 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 7 | Jorge Félix | ST,CAM,RW,CM | 35 | Spain | 206 k€ | 6,10 | 0 | 0 | 0/0 |  |
+| 7 | Jorge Félix | ST,CAM,RW | 35 | Spain | 206 k€ | 6,10 | 0 | 0 | 0/0 |  |
 | 10 | Andreas Katsantonis | ST | 26 | Cyprus | 232 k€ | 6,05 | 0 | 0 | 0/0 |  |
 | 11 | Leandro Sanca | LW,LM,ST,RW | 26 | Guinea-Bissau | 416 k€ | 7,27 | 4 | 1 | 2/0 |  |
 | 16 | Mateusz Kopczyński | Attacker | 18 | Poland | 518 k€ | – | 0 | 0 | 0/0 |  |
 | 19 | Samuel Ntamack | ST | 25 | France | 413 k€ | 6,77 | 2 | 1 | 0/0 |  |
 | 90 | Ivan Lima | ST,RM,RW | 21 | Portugal | – | 6,90 | 0 | 2 | 1/0 |  |
 | 91 | Maciej Kucharski | Attacker | 17 | Poland | – | – | 0 | 1 | 0/0 |  |
-| 98 | Jason Lokilo | RW,RM,CAM,LW | 28 | DR Congo | – | 6,44 | 0 | 1 | 0/0 |  |

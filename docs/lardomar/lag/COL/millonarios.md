@@ -1,6 +1,6 @@
 # Millonarios (Primera A) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [COL](../../ligor/COL.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [COL](../../ligor/COL.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -40,11 +40,11 @@ Form senaste 8 (äldst → senast): VOFOOVVO · senaste match 2026-09-25
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Alberto Gamero. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Jhomier Guerrero (skadad, åter Early October 2026), Mateo García (skadad, åter Mid October 2026), Darwin Quintero (skadad, åter Mid October 2026), Rodrigo Contreras (skadad, åter Mid October 2026)
+**Skadade/borta nu:** Carlos Sarabia (skadad, åter Late October 2026), Samuel Martín (skadad, åter Late October 2026), Jhomier Guerrero (skadad, åter Early October 2026), Mateo García (skadad, åter Mid October 2026), Darwin Quintero (skadad, åter Mid October 2026), Rodrigo Contreras (skadad, åter Mid October 2026)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -52,10 +52,9 @@ Tränare: Alberto Gamero. Betyg, mål och assist gäller innevarande säsong enl
 | 1 | Javier Burrai | GK | 35 | Ecuador | 262 k€ | – | 0 | 0 | 0/0 |  |
 | 12 | James Aguirre | GK | 34 | Colombia | 285 k€ | – | 0 | 0 | 0/0 |  |
 | 31 | Jhostin Diaz | Keeper | 19 | Colombia | – | – | 0 | 0 | 0/0 |  |
-| 38 | David Rodríguez | Keeper | 18 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Carlos Sarabia | RWB,RB | 21 | Colombia | 866 k€ | – | 0 | 0 | 0/0 |  |
-| 3 | Samuel Martín | RB | 20 | Colombia | – | – | 0 | 0 | 0/0 |  |
+| 2 | Carlos Sarabia | RWB,RB | 21 | Colombia | 866 k€ | – | 0 | 0 | 0/0 | skadad, åter Late October 2026 |
+| 3 | Samuel Martín | RB | 20 | Colombia | – | – | 0 | 0 | 0/0 | skadad, åter Late October 2026 |
 | 4 | Stiven Barreiro | CB | 32 | Colombia | 1,2 M€ | – | 0 | 0 | 0/0 |  |
 | 6 | Sergio Mosquera | CB | 32 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 17 | Jorge Arias | CB | 33 | Colombia | 265 k€ | – | 0 | 0 | 0/0 |  |
@@ -72,16 +71,17 @@ Tränare: Alberto Gamero. Betyg, mål och assist gäller innevarande säsong enl
 | 15 | Yeiner Romero | Midfielder | 18 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 18 | Rodrigo Ureña | CM,CDM | 33 | Chile | 485 k€ | – | 0 | 0 | 0/0 |  |
 | 19 | Mateo García | CM,CDM | 28 | Colombia | 946 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
-| 24 | Julián Angulo | RW,CAM,CM | 24 | Colombia | 591 k€ | – | 0 | 0 | 0/0 |  |
 | 25 | Darwin Quintero | CAM,LW | 39 | Colombia | 240 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
-| 28 | Stiven Vega | CM,CDM | 28 | Colombia | 315 k€ | – | 0 | 0 | 0/0 |  |
+| 28 | Stiven Vega | CDM,CM | 28 | Colombia | 315 k€ | – | 0 | 0 | 0/0 |  |
 | 30 | Sebastián Viveros | RM,RWB | 21 | Ecuador | 845 k€ | – | 0 | 0 | 0/0 |  |
 | 55 | Leonai | CDM,CM | 31 | Brazil | 600 k€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 9 | Radamel Falcao | ST | 40 | Colombia | 225 k€ | – | 0 | 0 | 0/0 |  |
 | 10 | Daniel Ruiz | ST,LM | 25 | Colombia | 648 k€ | – | 0 | 0 | 0/0 |  |
 | 11 | Andrey Estupiñán | ST,LW | 32 | Colombia | 487 k€ | – | 0 | 0 | 0/0 |  |
 | 23 | Leonardo Castro | ST,RW | 34 | Colombia | 584 k€ | – | 0 | 0 | 0/0 |  |
+| 24 | Julián Angulo | RW,CAM,CM | 24 | Colombia | 591 k€ | – | 0 | 0 | 0/0 |  |
 | 27 | Rodrigo Contreras | ST | 30 | Argentina | 777 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 32 | Santiago Giordana | ST | 31 | Argentina | 293 k€ | – | 0 | 0 | 0/0 |  |
 | 35 | Sebastián Mosquera | CB | 19 | Colombia | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (2): Radamel Falcao (senast 2026-09-29), David Rodríguez (senast 2026-09-29).

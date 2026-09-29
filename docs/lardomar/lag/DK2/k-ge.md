@@ -1,6 +1,6 @@
 # Køge (1. division) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [DK2](../../ligor/DK2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [DK2](../../ligor/DK2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -31,7 +31,7 @@ Form senaste 8 (äldst → senast): FFFOOOOV · senaste match 2026-09-21
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Nicklas Pedersen. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -49,7 +49,6 @@ Tränare: Nicklas Pedersen. Betyg, mål och assist gäller innevarande säsong e
 | 21 | Niklas Jakobsen | LWB | 20 | Denmark | 492 k€ | 6,51 | 0 | 0 | 0/0 |  |
 | 22 | Mattias Jakobsen | CB | 23 | Denmark | 257 k€ | 6,53 | 1 | 0 | 0/0 |  |
 | 23 | Mads Westergren | CB | 24 | Denmark | 256 k€ | 7,09 | 0 | 1 | 0/0 |  |
-| 25 | Vinicius Faloni | Defender | 19 | Denmark | – | – | 0 | 0 | 0/0 |  |
 | 29 | Sebastian Rosenwanger | Defender | 19 | Denmark | – | – | 0 | 0 | 0/0 |  |
 | 30 | Emil Villumsen | RB | 20 | Denmark | – | – | 0 | 0 | 0/0 |  |
 | 31 | Oliver Engberg | Defender | 17 | Denmark | – | – | 0 | 0 | 0/0 |  |
@@ -69,3 +68,5 @@ Tränare: Nicklas Pedersen. Betyg, mål och assist gäller innevarande säsong e
 | 11 | Magnus Warming | LW,ST | 26 | Denmark | 225 k€ | 6,19 | 0 | 0 | 1/0 |  |
 | 19 | Erkan Semovski | LW,RW | 22 | Denmark | 331 k€ | 6,22 | 0 | 0 | 1/0 |  |
 | 27 | Noah Stolshoej | Attacker | 18 | Denmark | – | 5,92 | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Vinicius Faloni (senast 2026-09-29).

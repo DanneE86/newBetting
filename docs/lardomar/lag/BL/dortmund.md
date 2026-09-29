@@ -1,6 +1,6 @@
 # Dortmund (Bundesliga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [BL](../../ligor/BL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [BL](../../ligor/BL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -56,10 +56,10 @@ Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: s
 | Bayern Munich | 16 | 2-3-11 | 22–43 | −0,24 | −1 pe | 2026-02-28 2-3 (h) |
 | Freiburg | 16 | 12-2-2 | 48–13 | +0,38 | −9 pe | 2026-04-26 4-0 (h) |
 | Hoffenheim | 16 | 9-3-4 | 30–26 | +0,01 | −3 pe | 2026-09-05 3-2 (b) |
-| Leverkusen | 16 | 9-2-5 | 37–28 | +0,30 | −12 pe | 2026-04-11 0-1 (h) |
 | M'gladbach | 16 | 11-1-4 | 37–20 | +0,24 | −16 pe | 2026-05-03 0-1 (b) |
 | Mainz | 16 | 10-3-3 | 31–18 | +0,07 | −2 pe | 2026-02-13 4-0 (h) |
 | Ein Frankfurt | 15 | 8-5-2 | 37–22 | +0,12 | +10 pe | 2026-05-08 3-2 (h) |
+| Leverkusen | 15 | 8-2-5 | 33–26 | +0,21 | −11 pe | 2026-04-11 0-1 (h) |
 | RB Leipzig | 15 | 6-3-6 | 24–29 | +0,06 | −5 pe | 2026-02-21 2-2 (b) |
 | Stuttgart | 15 | 8-2-5 | 32–25 | −0,02 | −10 pe | 2026-09-19 1-0 (b) |
 | Union Berlin | 14 | 10-0-4 | 37–14 | +0,18 | −23 pe | 2026-01-24 3-0 (b) |
@@ -81,7 +81,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-12-14 | Europa 2531 | Freiburg - Dortmund | X | 55 % | 48 % |
 | 2025-12-07 | Europa 2529 | Dortmund - Hoffenheim | 1 ✓ | 71 % | 59 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Niko Kovač. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -113,17 +113,18 @@ Tränare: Niko Kovač. Betyg, mål och assist gäller innevarande säsong enligt
 | 17 | Carney Chukwuemeka | CAM | 22 | Austria | 17,4 M€ | 6,26 | 0 | 0 | 0/0 |  |
 | 18 | Ethan Nwaneri | CAM,CM,RW | 19 | England | 31,5 M€ | 6,93 | 0 | 0 | 0/0 |  |
 | 20 | Marcel Sabitzer | CDM,LW,CM,CAM | 32 | Austria | 2,5 M€ | 6,92 | 0 | 1 | 0/0 |  |
-| 24 | Daniel Svensson | LWB,LM,RWB,LB,CB | 24 | Sweden | 19,7 M€ | 7,74 | 0 | 0 | 1/0 |  |
+| 24 | Daniel Svensson | LWB,LM,RWB,LB,CB,RB | 24 | Sweden | 19,7 M€ | 7,74 | 0 | 0 | 1/0 |  |
 | 25 | Joey Veerman | CDM,CM | 27 | Netherlands | 18,3 M€ | 6,80 | 0 | 0 | 1/0 |  |
 | 26 | Julian Ryerson | RWB,RB,RM,LWB | 28 | Norway | 17,6 M€ | 7,12 | 0 | 0 | 2/0 |  |
 | 28 | Justin Lerma | CAM,CDM,CM | 18 | Ecuador | – | – | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
 | 40 | Samuele Inácio | CAM,CM | 18 | Italy | 3,6 M€ | – | 0 | 0 | 0/1 |  |
-| 44 | Enzo Duarte | CM | 17 | Luxembourg | 766 k€ | – | 0 | 0 | 0/0 |  |
 | 45 | Giannis Konstantelias | CAM,CDM,LW,ST | 23 | Greece | 15,6 M€ | 7,87 | 1 | 0 | 0/0 | skadad, åter Late May 2027 |
 | 48 | Mussa Kaba | CDM,CB | 17 | Germany | 453 k€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 |  | Marwan-Omir Mirza | RW | 17 | Germany | – | – | 0 | 0 | 0/0 |  |
 | 9 | Serhou Guirassy | ST | 30 | Guinea | 30,1 M€ | 7,81 | 2 | 2 | 0/0 |  |
-| 19 | Konstantinos Karetsas | RW,CAM,RM | 18 | Greece | 25,9 M€ | 7,14 | 0 | 1 | 0/0 |  |
+| 19 | Konstantinos Karetsas | RW,CAM,RM,CM | 18 | Greece | 25,9 M€ | 7,14 | 0 | 1 | 0/0 |  |
 | 21 | Fábio Silva | ST,CAM | 24 | Portugal | 23,5 M€ | 6,99 | 2 | 0 | 0/0 |  |
 | 41 | Mathis Albert | LW,CAM | 17 | USA | 690 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Enzo Duarte (senast 2026-09-29).

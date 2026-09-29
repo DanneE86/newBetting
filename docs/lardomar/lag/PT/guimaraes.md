@@ -1,6 +1,6 @@
 # Guimaraes (Primeira Liga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [PT](../../ligor/PT.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [PT](../../ligor/PT.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -65,7 +65,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 |---|---|---|---|---|---|
 | 2025-12-28 | Europa 2535 | Casa Pia Lisbon - Vitória de Guimarães | X | 41 % | 40 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Tiago Margarido. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -84,11 +84,11 @@ Tränare: Tiago Margarido. Betyg, mål och assist gäller innevarande säsong en
 | 23 | Tony Strata | RB | 22 | Romania | 751 k€ | 7,15 | 0 | 1 | 1/0 |  |
 | 82 | Francisco Dias | LB,CB | 23 | Portugal | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-|  | Marco Cruz | CM,CDM | 22 | Portugal | 481 k€ | – | 0 | 0 | 0/0 |  |
+|  | Marco Cruz | CDM,CM | 22 | Portugal | 481 k€ | – | 0 | 0 | 0/0 |  |
 | 6 | Matija Mitrović | CDM | 21 | Serbia | 2,1 M€ | 6,39 | 0 | 0 | 1/0 |  |
 | 8 | Gonçalo Nogueira | CDM | 22 | Portugal | 1,5 M€ | 6,61 | 1 | 0 | 1/0 |  |
 | 10 | Alan | CM,CAM,ST | 26 | Brazil | 2,1 M€ | 7,16 | 0 | 1 | 0/0 |  |
-| 16 | Beni | CDM,CM | 24 | Angola | 1,8 M€ | 6,64 | 0 | 0 | 0/0 |  |
+| 16 | Beni | CDM,CM,CAM | 24 | Angola | 1,8 M€ | 6,64 | 0 | 0 | 0/0 |  |
 | 20 | Samu | CAM,CDM | 30 | Portugal | 1,3 M€ | 6,92 | 1 | 0 | 0/0 |  |
 | 44 | Lohann Doucet | CDM | 24 | Burkina Faso | 697 k€ | 6,56 | 0 | 0 | 1/0 |  |
 | 80 | Ricardo Rocha | CDM,RW | 23 | Portugal | – | – | 0 | 0 | 0/0 |  |

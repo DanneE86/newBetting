@@ -1,6 +1,6 @@
 # Bristol City (Championship) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -88,7 +88,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-08-29 | Stryk 4968 | Bristol City - Portsmouth | 1 ✓ | 59 % | 44 % |
 | 2026-01-01 | Europa 2536 | Bristol City - Portsmouth | 1 ✓ | 65 % | 57 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Michael Skubala. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -107,7 +107,7 @@ Tränare: Michael Skubala. Betyg, mål och assist gäller innevarande säsong en
 | 15 | Luke McNally | CB | 27 | Ireland | 1,7 M€ | – | 0 | 0 | 0/0 | skadad, åter Unknown |
 | 16 | Rob Dickie | CB | 30 | England | 1,1 M€ | 7,05 | 1 | 0 | 2/0 |  |
 | 19 | George Tanner | CB,RB,RWB | 26 | England | 1,7 M€ | 6,75 | 0 | 0 | 0/0 |  |
-| 21 | Rio Cardines | LB,RB,RWB,RM,RW,LWB,CM | 20 | Trinidad and Tobago | 634 k€ | 7,85 | 0 | 6 | 1/0 |  |
+| 21 | Rio Cardines | RB,LB,RM,RWB,RW,LWB,CM | 20 | Trinidad and Tobago | 634 k€ | 7,85 | 0 | 6 | 1/0 |  |
 | 24 | Seb Naylor | LB | 21 | England | – | – | 0 | 0 | 0/0 |  |
 | 31 | Elijah Morrison | LB | 20 | England | 462 k€ | – | 0 | 0 | 0/0 |  |
 | 38 | Noah Eile | CB | 24 | Sweden | 2,1 M€ | 7,05 | 0 | 0 | 0/0 |  |

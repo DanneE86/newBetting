@@ -1,6 +1,6 @@
 # Moss (OBOS-ligaen) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [NO2](../../ligor/NO2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [NO2](../../ligor/NO2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -39,7 +39,7 @@ Form senaste 8 (äldst → senast): FOFOFVFV · senaste match 2026-09-20
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Geir Bakke. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -61,7 +61,7 @@ Tränare: Geir Bakke. Betyg, mål och assist gäller innevarande säsong enligt 
 | 26 | Emmanuel Chidi | LB | 19 | Nigeria | 221 k€ | – | 0 | 0 | 1/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 7 | Noah Alexandersson | CM | 24 | Sweden | 366 k€ | – | 0 | 0 | 0/0 |  |
-| 8 | Håkon Vold Krohg | CM | 19 | Norway | 475 k€ | – | 4 | 1 | 2/0 |  |
+| 8 | Håkon Vold Krohg | CM | 20 | Norway | 475 k€ | – | 4 | 1 | 2/0 |  |
 | 14 | Jamiu Musbaudeen | CM | 22 | Nigeria | 212 k€ | – | 0 | 1 | 7/1 |  |
 | 15 | Aksel Aasheim Engesvik | CM | 22 | Norway | 126 k€ | – | 0 | 0 | 0/0 |  |
 | 17 | Patrik Andersen | CM,CB | 21 | Norway | 169 k€ | – | 0 | 1 | 1/0 |  |
@@ -69,7 +69,6 @@ Tränare: Geir Bakke. Betyg, mål och assist gäller innevarande säsong enligt 
 | 19 | Lasse Overgaard | CM | 20 | Denmark | – | – | 1 | 1 | 0/0 |  |
 | 21 | Sigurd Grønli | CM | 25 | Norway | 112 k€ | – | 1 | 0 | 1/0 |  |
 | 27 | Jonas Sørensen Selnæs | CM | 21 | Norway | 256 k€ | – | 0 | 0 | 0/0 |  |
-| 27 | Sigurd Prestmo | CM | 19 | Norway | 389 k€ | – | 0 | 0 | 0/0 |  |
 | 32 | Felix Løvtangen | Midfielder | 17 | Norway | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Julian Lægreid | LW,ST | 19 | Norway | 521 k€ | – | 5 | 2 | 3/0 |  |
@@ -80,3 +79,5 @@ Tränare: Geir Bakke. Betyg, mål och assist gäller innevarande säsong enligt 
 | 23 | Robin Hermanstad | ST,RW,LW | 26 | Norway | 173 k€ | – | 1 | 0 | 1/0 |  |
 | 25 | Taha Usman | Attacker | 19 | Norway | – | – | 0 | 0 | 0/0 |  |
 | 31 | Jonathan Harveg | Attacker | 17 | Norway | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Sigurd Prestmo (senast 2026-09-29).

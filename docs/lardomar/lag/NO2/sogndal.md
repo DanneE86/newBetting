@@ -1,6 +1,6 @@
 # Sogndal (OBOS-ligaen) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [NO2](../../ligor/NO2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [NO2](../../ligor/NO2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -40,7 +40,7 @@ Form senaste 8 (äldst → senast): FFVOFFOF · senaste match 2026-09-20
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Luís Pimenta. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -51,7 +51,6 @@ Tränare: Luís Pimenta. Betyg, mål och assist gäller innevarande säsong enli
 | 24 | Kacper Bieszczad | GK | 24 | Poland | 117 k€ | – | 0 | 0 | 0/0 |  |
 | 38 | Ard Ragnar Sundal | Keeper | 18 | Norway | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Diogo Brás | RB | 26 | Portugal | 141 k€ | – | 0 | 0 | 3/0 |  |
 | 3 | Fredrik Flo | CB | 29 | Norway | 50 k€ | – | 0 | 0 | 0/0 |  |
 | 4 | Even Hovland | CB | 37 | Norway | 152 k€ | – | 3 | 1 | 2/0 |  |
 | 5 | Kristoffer Harrison | CB,RM | 24 | Norway | 197 k€ | – | 0 | 0 | 1/0 |  |
@@ -74,3 +73,5 @@ Tränare: Luís Pimenta. Betyg, mål och assist gäller innevarande säsong enli
 | 15 | Onni Helen | ST | 20 | Finland | 300 k€ | – | 2 | 1 | 3/0 |  |
 | 19 | Tuomas Pippola | RW,ST,RM,CDM | 21 | Finland | 285 k€ | – | 7 | 0 | 2/1 |  |
 | 20 | Preben Asp | ST | 24 | Norway | 184 k€ | – | 1 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Diogo Brás (senast 2026-09-29).

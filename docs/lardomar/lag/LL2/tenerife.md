@@ -1,6 +1,6 @@
 # Tenerife (LaLiga 2) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [LL2](../../ligor/LL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [LL2](../../ligor/LL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -45,7 +45,7 @@ Form (äldst → senast): FVVFOVFO · senaste match 2026-09-26
 | Eibar | 9 | 2-1-6 | 7–13 | −0,41 | −20 pe | 2026-08-16 3-1 (b) |
 | Leganes | 9 | 3-4-2 | 7–5 | +0,06 | +11 pe | 2026-09-13 2-0 (h) |
 | Burgos | 8 | 4-2-2 | 10–5 | +0,23 | −6 pe | 2025-04-12 0-0 (h) |
-| Cadiz | 7 | 3-3-1 | 9–7 | +0,37 | +11 pe | 2026-09-26 1-1 (h) |
+| Cadiz | 6 | 2-3-1 | 8–7 | +0,21 | +18 pe | 2026-09-26 1-1 (h) |
 | Girona | 6 | 4-0-2 | 6–3 | +0,73 | −31 pe | 2022-05-09 1-0 (b) |
 | Granada | 6 | 2-1-3 | 6–10 | −0,01 | −14 pe | 2025-03-28 2-1 (h) |
 | Castellon | 5 | 2-1-2 | 5–8 | +0,19 | −8 pe | 2026-09-19 0-5 (b) |
@@ -59,7 +59,7 @@ Form (äldst → senast): FVVFOVFO · senaste match 2026-09-26
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Álvaro Cervera. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -72,7 +72,7 @@ Tränare: Álvaro Cervera. Betyg, mål och assist gäller innevarande säsong en
 | 40 | Gabriel Lozano | GK | 22 | Spain | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 2 | David Rodríguez | LB | 26 | Spain | 449 k€ | 6,85 | 0 | 0 | 3/0 |  |
-| 3 | Roko Jureškin | LB,LM,LW | 25 | Croatia | 267 k€ | – | 0 | 0 | 0/0 |  |
+| 3 | Roko Jureškin | LB,LM,LW | 26 | Croatia | 267 k€ | – | 0 | 0 | 0/0 |  |
 | 4 | José Leon | CB | 31 | Spain | 141 k€ | 6,64 | 0 | 0 | 0/0 |  |
 | 5 | Jorge Moreno | CB,RB | 25 | Spain | 518 k€ | 6,47 | 0 | 0 | 0/0 |  |
 | 12 | Anthony Landázuri | CB | 29 | Ecuador | 232 k€ | 6,35 | 0 | 0 | 0/0 |  |

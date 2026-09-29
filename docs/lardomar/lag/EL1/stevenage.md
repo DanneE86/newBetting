@@ -1,6 +1,6 @@
 # Stevenage (League One) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -74,7 +74,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-10-04 | Stryk 4921 | Stevenage - Luton | 1 ✓ | 35 % | 35 % |
 | 2026-05-13 | Europa 2574 | Stockport - Stevenage | 1 | 20 % | 22 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Alex Revell. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

@@ -1,6 +1,6 @@
 # Celta B (LaLiga 2) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [LL2](../../ligor/LL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [LL2](../../ligor/LL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -38,11 +38,11 @@ Form (äldst → senast): OVFVFFO · senaste match 2026-09-26
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Fredi Alvarez. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Bernard Somuah (osäker), Andrés Antañón (skadad, åter Mid October 2026)
+**Skadade/borta nu:** Bernard Somuah (skadad, åter Late January 2027), Andrés Antañón (skadad, åter Mid October 2026)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -67,7 +67,7 @@ Tränare: Fredi Alvarez. Betyg, mål och assist gäller innevarande säsong enli
 | 29 | Mateo Sobral | CM | 17 | Spain | – | 6,32 | 0 | 0 | 0/0 |  |
 | 32 | Hugo Lopez | Midfielder | 17 | Spain | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 7 | Bernard Somuah | ST | 20 | Ghana | 769 k€ | 6,56 | 2 | 0 | 0/0 | osäker |
+| 7 | Bernard Somuah | ST | 20 | Ghana | 769 k€ | 6,56 | 2 | 0 | 0/0 | skadad, åter Late January 2027 |
 | 8 | Andrés Antañón | RW,CM | 19 | Spain | 868 k€ | 7,20 | 1 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 9 | Álvaro Marin | ST | 23 | Spain | 373 k€ | 6,63 | 3 | 0 | 0/0 |  |
 | 10 | Oscar Marcos | RW | 20 | Spain | 917 k€ | 6,64 | 1 | 0 | 1/0 |  |

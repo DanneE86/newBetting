@@ -1,6 +1,6 @@
 # Celta (La Liga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [LL](../../ligor/LL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [LL](../../ligor/LL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -38,7 +38,7 @@ Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 l
 | Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
 |---|---|---|---|---|
 | Hugo Gonzalez | 9 % | 0 / 83 | – / 1,40 | – / +0,04 |
-| Borja Iglesias | 9 % | 0 / 83 | – / 1,40 | – / +0,04 |
+| Borja Iglesias | 8 % | 0 / 83 | – / 1,40 | – / +0,04 |
 | Williot Swedberg | 8 % | 9 / 74 | 1,78 / 1,35 | +0,18 / +0,02 |
 | Ferrán Jutglà | 8 % | 5 / 78 | 2,00 / 1,36 | +0,57 / +0,00 |
 | Pablo Durán | 7 % | 4 / 79 | 1,75 / 1,38 | +0,52 / +0,01 |
@@ -99,7 +99,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-08-31 | Europa 2501 | Celta de Vigo - Villarreal | X | 32 % | 33 % |
 | 2025-08-17 | Europa 2497 | Celta de Vigo - Getafe | 2 | 59 % | 60 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Claudio Giráldez. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

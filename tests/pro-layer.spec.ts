@@ -174,42 +174,10 @@ test('traffrutan visar tipsmotorns traff (odds dar de styr), inte grundmodellens
   expect(rows[0].p.reduce((s: number, x: number) => s + x, 0)).toBeCloseTo(1, 2);
 });
 
-test('arenor har koordinater for alla lag i kommande matcher', async () => {
-  const venues = readJson(path.join(root, 'data', 'open', 'venues.json'));
-  const { canonicalTeam } = await import(pathToFileURL(path.join(root, 'scripts', 'weather', 'teams.mjs')).href);
-  const fixtures = readJson(path.join(root, 'data', 'upcoming-fixtures.json'));
-  const missing = new Set<string>();
-  for (const f of fixtures) {
-    for (const team of [f.home, f.away]) {
-      const v = venues.teams[canonicalTeam(team)];
-      if (!v || typeof v.lat !== 'number' || typeof v.lon !== 'number') missing.add(team);
-    }
-  }
-  expect([...missing]).toEqual([]);
-  // Rimlighetskoll: alla arenor i Europa (inkl. Kanarieoarna) eller Brasilien
-  for (const v of Object.values<any>(venues.teams)) {
-    // UEFA-området inkl. Nordnorge, Kanarieöarna, Azorerna och Kazakstan (cupmotstånd, t.ex. Kairat Almaty)
-    const europe = v.lat > 27 && v.lat < 72 && v.lon > -32 && v.lon < 80;
-    // Amerika (Brasilien, Argentina, Chile, Colombia, Mexiko, USA/Kanada) och Östasien (Japan, Sydkorea)
-    const americas = v.lat > -56 && v.lat < 62 && v.lon > -170 && v.lon < -34;
-    const eastAsia = v.lat > 24 && v.lat < 46 && v.lon > 122 && v.lon < 146;
-    expect(europe || americas || eastAsia, `${v.team}: ${v.lat},${v.lon}`).toBeTruthy();
-  }
-});
-
-test('vaderprognos och vaderhistorik', async () => {
-  const forecast = readJson(path.join(root, 'data', 'open', 'weather_forecast.json'));
-  expect(forecast.missingVenues).toEqual([]);
-  const withWeather = forecast.matches.filter((m: any) => m.weather);
-  test.skip(forecast.matches.length === 0, 'Inga matcher inom prognosfonstret');
-  expect(withWeather.length).toBeGreaterThan(0);
-  for (const m of withWeather) {
-    expect(m.weather.tempC).toBeGreaterThan(-30);
-    expect(m.weather.tempC).toBeLessThan(45);
-    expect(m.weather.windKmh).toBeGreaterThanOrEqual(0);
-  }
-  const history = readJson(path.join(root, 'data', 'open', 'weather_history.json'));
-  expect(history.count).toBeGreaterThan(1000);
+test('vader: anvands inte i tipsen, bara den historiska analysen finns kvar', async () => {
+  // Vader paverkar inte utfallet utover vad marknaden prisar in (weatherEffect) och ar borttaget ur logiken
+  const tips = readJson(path.join(root, 'data', 'tips-latest.json'));
+  for (const t of tips.allCandidates ?? []) expect(t.pro?.weather, t.match).toBeUndefined();
   const evaluation = readJson(path.join(root, 'data', 'reports', 'pro-evaluation.json'));
   expect(evaluation.weatherEffect.n).toBeGreaterThan(1000);
 });
@@ -238,6 +206,22 @@ test('spelarandel och historisk franvaro (syntetisk data)', async () => {
   expect(miss.missingShare).toBeCloseTo(0.3, 2);
   // m9: spelade -> ingen franvaro
   expect(players.historicalMissing(model, 'PL', 'X', '2026-01-19', 'm9').missingShare).toBe(0);
+});
+
+test('kommande match: bara spelare i aktuell trupp raknas (salda faller bort)', async () => {
+  const players = await import(pathToFileURL(path.join(root, 'scripts', 'pro', 'players.mjs')).href);
+  const shares = [
+    { name: 'Martin Odegaard', share: 0.2, lastApp: '2026-05-01' },   // stavning: Ødegaard i truppen
+    { name: 'Lee Kang-In', share: 0.1, lastApp: '2026-05-01' },       // omvand ordning
+    { name: 'Ferdi Kadioglu', share: 0.1, lastApp: '2026-05-01' },    // dotless i: Kadıoğlu
+    { name: 'Cala', share: 0.1, lastApp: '2026-09-20' },              // smeknamn men spelade nyss -> kvar
+    { name: 'Mohamed Salah', share: 0.3, lastApp: '2026-05-24' },     // sald, inte i truppen
+  ];
+  const squad = [{ name: 'Martin Ødegaard' }, { name: 'Kang-In Lee' }, { name: 'Ferdi Kadıoğlu' }, { name: 'Álex Calatrava' }];
+  const kept = players.inCurrentSquad(shares, squad, '2026-09-29').map((p: any) => p.name);
+  expect(kept).toEqual(['Martin Odegaard', 'Lee Kang-In', 'Ferdi Kadioglu', 'Cala']);
+  // Ingen trupp sparad -> oforandrat
+  expect(players.inCurrentSquad(shares, null, '2026-09-29')).toHaveLength(5);
 });
 
 test('spelarviktad franvaro i tips och utvardering', async () => {
@@ -274,12 +258,12 @@ test('ligaregister: alla ligor har grupp, namn och kalla', async () => {
   for (const [code, lg] of Object.entries<any>(reg.leagues)) {
     expect(grouped, `${code} saknar grupp`).toContain(code);
     expect(lg.name).toBeTruthy();
-    expect(['fd-main', 'fd-new', 'espn', 'tsdb', 'none']).toContain(lg.history);
+    expect(['fd-main', 'fd-new', 'espn', 'tsdb', 'fotmob', 'none']).toContain(lg.history);
   }
   expect(new Set(grouped).size).toBe(grouped.length); // ingen liga i tva grupper
   const europa = reg.groups.find((g: any) => g.id === 'europa');
   expect(europa.leagues).toEqual(['CL', 'EL', 'ECL']);
-  expect(reg.groups.find((g: any) => g.id === 'england').leagues).toEqual(['PL', 'CH']);
+  expect(reg.groups.find((g: any) => g.id === 'england').leagues).toEqual(['PL', 'CH', 'EL1']);
 });
 
 test('nya ligor finns i store och kommande matcher', async () => {

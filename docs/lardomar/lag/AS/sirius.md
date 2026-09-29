@@ -1,6 +1,6 @@
 # Sirius (Allsvenskan) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [AS](../../ligor/AS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [AS](../../ligor/AS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -62,7 +62,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-09-21 | Europa 2507 | Sirius - Degerfors | 2 | 74 % | 60 % |
 | 2025-09-14 | Europa 2505 | Sirius - GAIS | 1 ✓ | 33 % | 37 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Andreas Engelmark. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

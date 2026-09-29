@@ -1,6 +1,6 @@
 # Raufoss (OBOS-ligaen) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [NO2](../../ligor/NO2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [NO2](../../ligor/NO2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -39,7 +39,7 @@ Form senaste 8 (äldst → senast): FFFFFFVF · senaste match 2026-09-20
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Ole Petter Berget. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -59,16 +59,12 @@ Tränare: Ole Petter Berget. Betyg, mål och assist gäller innevarande säsong 
 | 15 | Elias Gärtig | CB | 23 | Denmark | 94 k€ | – | 1 | 0 | 1/0 |  |
 | 16 | Mads Orrhaug Larsen | CB | 20 | Norway | 309 k€ | – | 0 | 0 | 1/0 |  |
 | 22 | Samba Boye Coulibaly | CB | 18 | Senegal | – | – | 0 | 0 | 0/0 |  |
-| 27 | Oskar Sangnes | Defender | 21 | Norway | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 7 | Emil Sildnes | CM,LM,RM,ST | 33 | Norway | 159 k€ | – | 1 | 2 | 0/0 |  |
 | 8 | Harald Holter | CM | 30 | Norway | 50 k€ | – | 0 | 0 | 3/0 |  |
 | 13 | Alexander Achinioti Jönsson | CM,CB | 30 | Sweden | 82 k€ | – | 2 | 1 | 1/0 |  |
-| 15 | David de Ornelas | RM | 18 | Norway | 458 k€ | – | 2 | 1 | 1/0 |  |
-| 16 | Ole Amund Sveen | CM | 36 | Norway | 51 k€ | – | 0 | 0 | 0/0 |  |
 | 17 | Kristian Lønstad Onsrud | CM,CB | 32 | Norway | 56 k€ | – | 0 | 0 | 1/1 |  |
 | 25 | Tinus Embergsrud Engebakken | CM | 17 | Norway | 380 k€ | – | 0 | 0 | 1/0 |  |
-| 26 | Torjus Rønningen | Midfielder | 18 | Norway | – | – | 0 | 0 | 0/0 |  |
 | 29 | Leander Neverdal | Midfielder | 16 | Norway | – | – | 0 | 0 | 0/0 |  |
 | 31 | Ulrik Danbolt | CM | 16 | Norway | – | – | 1 | 1 | 1/0 |  |
 | 32 | Emil Lyseng Martinsen | Midfielder | 17 | Norway | – | – | 0 | 0 | 0/0 |  |
@@ -80,4 +76,5 @@ Tränare: Ole Petter Berget. Betyg, mål och assist gäller innevarande säsong 
 | 14 | Yaw Agyeman | LW | 23 | Norway | 195 k€ | – | 0 | 0 | 1/0 |  |
 | 19 | Håvard Vatland Karlsen | ST | 24 | Norway | 176 k€ | – | 1 | 1 | 0/0 |  |
 | 27 | Rafik Zekhnini | LW,LM,ST | 28 | Norway | 104 k€ | – | 3 | 1 | 3/0 |  |
-| 29 | Elias Sørum | RB | 19 | Norway | 352 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (5): Ole Amund Sveen (senast 2026-09-29), Oskar Sangnes (senast 2026-09-29), Torjus Rønningen (senast 2026-09-29), David de Ornelas (senast 2026-09-29), Elias Sørum (senast 2026-09-29).

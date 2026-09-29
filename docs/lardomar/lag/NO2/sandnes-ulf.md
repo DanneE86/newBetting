@@ -1,6 +1,6 @@
 # Sandnes Ulf (OBOS-ligaen) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [NO2](../../ligor/NO2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [NO2](../../ligor/NO2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -27,7 +27,7 @@ Form senaste 8 (äldst → senast): FFFFVOFF · senaste match 2026-09-20
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Arturo Max Cleveland. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -42,12 +42,10 @@ Tränare: Arturo Max Cleveland. Betyg, mål och assist gäller innevarande säso
 | 4 | Axel Kryger | CB,RM,RB | 28 | Norway | 164 k€ | – | 0 | 0 | 2/0 |  |
 | 5 | Gullbrandur Øregaard | CB | 24 | Faroe Islands | 199 k€ | – | 1 | 0 | 8/0 |  |
 | 19 | Kevin Nilsen Pereira | RM | 24 | Norway | – | – | 0 | 0 | 0/0 |  |
-| 28 | Jamal Deen Haruna | CB | 26 | Ghana | 204 k€ | – | 0 | 0 | 4/0 |  |
 | 28 | Malthe Henriksen | CB | 20 | Denmark | – | – | 0 | 0 | 1/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 2 | Kevin Egell-Johnsen | RB,RM | 26 | Norway | 146 k€ | – | 0 | 0 | 1/0 |  |
 | 6 | Aksel Jörgensen | CM | 19 | Denmark | – | – | 0 | 0 | 0/0 |  |
-| 6 | Jakob Tromsdal | CM | 28 | Norway | 124 k€ | – | 0 | 0 | 0/0 |  |
 | 7 | Olaf Bárdarson | CM,CAM | 22 | Faroe Islands | 361 k€ | – | 1 | 0 | 1/0 |  |
 | 8 | Sander Saugestad | CM,RM | 25 | Norway | 122 k€ | – | 3 | 2 | 0/0 |  |
 | 10 | Kay Kostadinov | CM | 24 | Norway | 187 k€ | – | 0 | 1 | 2/1 |  |
@@ -65,3 +63,5 @@ Tränare: Arturo Max Cleveland. Betyg, mål och assist gäller innevarande säso
 | 11 | Mathias Sundberg | ST,RW,LW | 24 | Norway | 212 k€ | – | 6 | 6 | 2/0 |  |
 | 20 | Jonas Brune Aune | ST | 23 | Norway | 135 k€ | – | 0 | 0 | 1/0 |  |
 | 77 | Ali Memed | ST | 23 | Norway | 85 k€ | – | 1 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (2): Jakob Tromsdal (senast 2026-09-29), Jamal Deen Haruna (senast 2026-09-29).

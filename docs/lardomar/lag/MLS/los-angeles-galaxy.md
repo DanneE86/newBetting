@@ -1,6 +1,6 @@
 # Los Angeles Galaxy (MLS) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -73,7 +73,7 @@ Form (äldst → senast): FVOFVFOV · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Greg Vanney. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -86,7 +86,7 @@ Tränare: Greg Vanney. Betyg, mål och assist gäller innevarande säsong enligt
 | 12 | James Marcinkowski | GK | 29 | USA | – | 7,25 | 0 | 0 | 2/1 |  |
 | 31 | Brady Scott | GK | 27 | USA | 77 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Calegari | RB,RWB,RM | 24 | Brazil | 1,6 M€ | 7,41 | 0 | 1 | 0/0 |  |
+| 2 | Calegari | RB,RM | 24 | Brazil | 1,6 M€ | 7,41 | 0 | 1 | 0/0 |  |
 | 3 | Julián Aude | LB | 23 | Argentina | 1,7 M€ | 6,77 | 0 | 0 | 2/0 |  |
 | 4 | Maya Yoshida | CB | 38 | Japan | 50 k€ | 6,73 | 2 | 0 | 0/0 |  |
 | 5 | Jakob Glesnes | CB | 32 | Norway | 1,3 M€ | 6,92 | 0 | 0 | 5/0 |  |
@@ -104,14 +104,13 @@ Tränare: Greg Vanney. Betyg, mål och assist gäller innevarande säsong enligt
 | 17 | Pablo Ruiz | CDM,CM | 27 | Argentina | 465 k€ | 6,70 | 1 | 0 | 2/0 |  |
 | 18 | Marco Reus | CAM,ST,CM | 37 | Germany | 769 k€ | 7,32 | 7 | 7 | 2/0 |  |
 | 22 | Elijah Wynder | CM,CDM | 23 | USA | 1,0 M€ | 6,47 | 0 | 0 | 2/0 |  |
-| 45 | Vicente Garcia | RW,CDM,CAM,CM | 16 | USA | – | – | 0 | 0 | 0/0 |  |
 | 76 | Troy Elgersma | LM,LW,CM,CDM | 22 | USA | – | 6,89 | 1 | 0 | 0/0 |  |
-| 90 | Brett Phan | CDM,CM | 18 | USA | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Kyogo Furuhashi | ST | 31 | Japan | 1,6 M€ | 6,40 | 0 | 0 | 0/0 |  |
 | 11 | Hirving Lozano | LW | 31 | Mexico | 2,3 M€ | 7,29 | 1 | 1 | 2/0 |  |
 | 21 | Robert Taylor | RW,LW | 31 | Finland | 492 k€ | 6,89 | 1 | 2 | 1/0 |  |
 | 27 | Erik Thommy | LW,CM,RW,CAM,CDM | 32 | Germany | 448 k€ | 6,77 | 1 | 0 | 0/0 |  |
-| 28 | Joseph Paintsil | LW,ST,RW | 28 | Ghana | 2,5 M€ | 7,06 | 5 | 3 | 3/0 | skadad, åter Late October 2026 |
-| 57 | Julian Placias | ST | 20 | USA | 759 k€ | – | 0 | 0 | 0/0 |  |
+| 28 | Joseph Paintsil | LW,RW,ST | 28 | Ghana | 2,5 M€ | 7,06 | 5 | 3 | 3/0 | skadad, åter Late October 2026 |
 | 99 | João Klauss | ST | 29 | Brazil | 1,3 M€ | 7,22 | 7 | 0 | 1/0 |  |
+
+Har lämnat truppen sedan vi började spara (3): Julian Placias (senast 2026-09-29), Vicente Garcia (senast 2026-09-29), Brett Phan (senast 2026-09-29).

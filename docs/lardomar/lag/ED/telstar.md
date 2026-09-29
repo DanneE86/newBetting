@@ -1,6 +1,6 @@
 # Telstar (Eredivisie) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [ED](../../ligor/ED.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [ED](../../ligor/ED.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -47,7 +47,7 @@ Form (äldst → senast): VVFFOFOF · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Henk Brugge. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -65,12 +65,9 @@ Tränare: Henk Brugge. Betyg, mål och assist gäller innevarande säsong enligt
 | 16 | Sem Valk | CB | 24 | Netherlands | 157 k€ | 6,46 | 0 | 0 | 1/0 |  |
 | 24 | Abdelraffie Benzzine | Defender | 20 | Netherlands | – | – | 0 | 0 | 0/0 |  |
 | 25 | Mano Olfers | CM | 20 | Suriname | – | – | 0 | 0 | 0/0 |  |
-| 26 | Jaylan van Schooneveld | Defender | 21 | Netherlands | 214 k€ | – | 0 | 0 | 0/0 |  |
-| 29 | Dion Malone | CDM | 37 | Suriname | 254 k€ | – | 0 | 0 | 0/0 |  |
 | 43 | Marvin Peersman | LB,CB | 35 | Belgium | 443 k€ | 6,94 | 0 | 0 | 1/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 |  | Amine Mahdar | Midfielder | 20 | Netherlands | – | – | 0 | 0 | 0/0 |  |
-|  | Remi van Ekeris | CM | 24 | Netherlands | 328 k€ | – | 0 | 0 | 0/0 |  |
 | 2 | Jeff Hardeveld | LWB,LM,CB,LB | 31 | Netherlands | 445 k€ | 6,16 | 0 | 0 | 0/0 |  |
 | 3 | Gerald Alders | RWB,LB,RM | 21 | Netherlands | 949 k€ | 6,77 | 0 | 0 | 1/0 |  |
 | 6 | Isaiah Ahmed | CDM | 20 | Curacao | 499 k€ | 6,07 | 0 | 0 | 1/0 |  |
@@ -89,3 +86,5 @@ Tränare: Henk Brugge. Betyg, mål och assist gäller innevarande säsong enligt
 | 19 | Fabiano Rust | Attacker | 21 | Netherlands | – | 5,95 | 0 | 0 | 0/0 |  |
 | 21 | Fofin Turay | RW | 22 | Netherlands | 260 k€ | 5,82 | 0 | 0 | 0/0 |  |
 | 42 | Arjany Martha | RW,CAM,CM,ST | 23 | Curacao | 394 k€ | 6,29 | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (3): Dion Malone (senast 2026-09-29), Remi van Ekeris (senast 2026-09-29), Jaylan van Schooneveld (senast 2026-09-29).

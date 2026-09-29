@@ -1,6 +1,6 @@
 # Monaco (Ligue 1) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [L1](../../ligor/L1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [L1](../../ligor/L1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -88,7 +88,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-10-29 | Europa 2518 | Nantes - Monaco | 2 ✓ | 64 % | 55 % |
 | 2025-08-24 | Europa 2499 | Lille - Monaco | 1 | 56 % | 45 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Filipe Luís. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -100,7 +100,7 @@ Tränare: Filipe Luís. Betyg, mål och assist gäller innevarande säsong enlig
 | 1 | Lukás Hrádecky | GK | 36 | Finland | 692 k€ | 7,68 | 0 | 0 | 1/0 |  |
 | 16 | Philipp Köhn | GK | 28 | Switzerland | 2,4 M€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Vanderson | RB,RWB,RM | 25 | Brazil | 16,5 M€ | 7,55 | 0 | 0 | 1/0 |  |
+| 2 | Vanderson | RB,RWB | 25 | Brazil | 16,5 M€ | 7,55 | 0 | 0 | 1/0 |  |
 | 6 | Denis Zakaria | CDM,CB,RB,CM | 29 | Switzerland | 19,2 M€ | 7,18 | 0 | 0 | 1/0 | skadad, åter Early October 2026 |
 | 13 | Christian Mawissa | CB,LB,RB,LWB | 21 | France | 14,8 M€ | – | 0 | 0 | 0/0 |  |
 | 15 | Eric Dier | CB | 32 | England | 2,3 M€ | 7,69 | 1 | 1 | 0/0 |  |
@@ -110,7 +110,7 @@ Tränare: Filipe Luís. Betyg, mål och assist gäller innevarande säsong enlig
 | 72 | Sadibou Sané | CB | 22 | Senegal | 2,8 M€ | 7,13 | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 |  | Oumar Konaté | CAM | 19 | Ivory Coast | – | – | 0 | 0 | 0/0 |  |
-| 4 | Jordan Teze | CDM,CB,RWB,RM,RB,CM | 26 | Netherlands | 10,9 M€ | 7,55 | 0 | 1 | 1/0 | skadad, åter About 1-2 weeks |
+| 4 | Jordan Teze | CDM,CB,RWB,RM,CM,RB | 26 | Netherlands | 10,9 M€ | 7,55 | 0 | 1 | 1/0 | skadad, åter About 1-2 weeks |
 | 8 | Lamine Camara | CDM,CM,CAM | 22 | Senegal | 29,9 M€ | 8,02 | 0 | 1 | 2/0 |  |
 | 10 | Aleksandr Golovin | CAM,LW,LM,CDM | 30 | Russia | 13,0 M€ | 7,38 | 0 | 2 | 2/0 |  |
 | 18 | Takumi Minamino | CAM,RW | 31 | Japan | 6,8 M€ | – | 0 | 0 | 0/0 |  |

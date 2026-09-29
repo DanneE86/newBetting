@@ -1,6 +1,6 @@
 # Udinese (Serie A) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -41,10 +41,10 @@ Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 l
 |---|---|---|---|---|
 | Keinan Davis | 13 % | 13 / 68 | 0,46 / 1,35 | −0,72 / +0,16 |
 | Nicolo Zaniolo | 12 % | 6 / 75 | 1,00 / 1,23 | −0,13 / +0,03 |
-| Jurgen Ekkelenkamp | 9 % | 5 / 76 | 0,60 / 1,25 | −0,59 / +0,06 |
+| Jurgen Ekkelenkamp | 10 % | 5 / 76 | 0,60 / 1,25 | −0,59 / +0,06 |
+| Idrissa Gueye | 7 % | 0 / 81 | – / 1,21 | – / +0,02 |
 | Enzo Ebosse | 7 % | 0 / 81 | – / 1,21 | – / +0,02 |
 | Mergim Vojvoda | 6 % | 0 / 81 | – / 1,21 | – / +0,02 |
-| Unai Gómez | 6 % | 0 / 81 | – / 1,21 | – / +0,02 |
 
 Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
@@ -85,7 +85,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-12-14 | Europa 2531 | Udinese - Napoli | 1 ✓ | 14 % | 20 % |
 | 2025-09-14 | Europa 2505 | Pisa - Udinese | 2 ✓ | 37 % | 34 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Kosta Runjaić. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -97,7 +97,6 @@ Tränare: Kosta Runjaić. Betyg, mål och assist gäller innevarande säsong enl
 | 40 | Maduka Okoye | GK | 27 | Nigeria | 8,5 M€ | 7,18 | 0 | 0 | 0/0 |  |
 | 41 | Bartosz Mrozek | GK | 26 | Poland | 2,1 M€ | – | 0 | 0 | 0/0 |  |
 | 93 | Daniele Padelli | GK | 40 | Italy | 336 k€ | – | 0 | 0 | 0/0 |  |
-| 99 | Edoardo Piana | GK | 22 | Italy | 422 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 13 | Nicolò Bertola | CB,LM | 23 | Italy | 6,7 M€ | 6,15 | 0 | 0 | 1/0 |  |
 | 14 | James Abankwah | CB,RB,LB | 22 | Ireland | 1,5 M€ | 6,46 | 1 | 0 | 1/0 |  |
@@ -118,7 +117,6 @@ Tränare: Kosta Runjaić. Betyg, mål och assist gäller innevarande säsong enl
 | 38 | Lennon Miller | CM,CDM | 20 | Scotland | 11,0 M€ | 6,08 | 0 | 0 | 1/0 |  |
 | 46 | Unai Gómez | CAM,ST,RW,LW | 23 | Spain | 3,8 M€ | 6,47 | 0 | 1 | 1/0 |  |
 | 59 | Alessandro Zanoli | RM | 25 | Italy | 3,0 M€ | 6,88 | 0 | 0 | 0/0 |  |
-| 79 | David Pejičić | CM | 19 | Slovenia | 1,9 M€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Idrissa Gueye | ST | 20 | Senegal | 5,6 M€ | 6,64 | 1 | 0 | 0/0 |  |
 | 9 | Keinan Davis | ST | 28 | Jamaica | 4,5 M€ | 6,90 | 0 | 2 | 1/0 | osäker |
@@ -126,3 +124,5 @@ Tränare: Kosta Runjaić. Betyg, mål och assist gäller innevarande säsong enl
 | 15 | Vakoun Issouf Bayo | ST,CAM | 29 | Ivory Coast | 1,8 M€ | 6,35 | 0 | 1 | 1/0 |  |
 | 45 | Giulio Vinciati | Attacker | 19 | Italy | – | – | 0 | 0 | 0/0 |  |
 | 91 | Lazar Jovanović | RW | 19 | Serbia | 3,9 M€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (2): Edoardo Piana (senast 2026-09-29), David Pejičić (senast 2026-09-29).

@@ -1,6 +1,6 @@
 # Lincoln (Championship) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -63,7 +63,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-09-12 | Stryk 4970 | Preston - Lincoln | 2 ✓ | 25 % | 34 % |
 | 2026-08-29 | Stryk 4968 | Bolton - Lincoln | 2 ✓ | 27 % | 34 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Chris Cohen. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -78,8 +78,7 @@ Tränare: Chris Cohen. Betyg, mål och assist gäller innevarande säsong enligt
 | | **Backar** | | | | | | | | | |
 | 2 | Tendayi Darikwa | RB,RWB | 34 | Zimbabwe | 290 k€ | 6,38 | 0 | 1 | 0/0 | skadad, åter Mid October 2026 |
 | 3 | Adam Reach | LB,LWB,LM | 33 | England | 285 k€ | 7,01 | 1 | 0 | 0/0 |  |
-| 4 | Andrei Coubiș | CB | 22 | Romania | 591 k€ | 7,00 | 0 | 1 | 0/0 |  |
-| 5 | Adam Jackson | CB | 32 | England | 235 k€ | – | 0 | 0 | 0/0 |  |
+| 4 | Andrei Coubiș | CB | 23 | Romania | 591 k€ | 7,00 | 0 | 1 | 0/0 |  |
 | 6 | Ryley Towler | CB,LB | 24 | England | 837 k€ | 6,86 | 0 | 0 | 2/0 |  |
 | 15 | Sonny Bradley | CB | 35 | England | 281 k€ | 7,05 | 0 | 0 | 0/0 |  |
 | 22 | Thomas Hamer | CB | 26 | England | 666 k€ | 6,42 | 0 | 0 | 1/0 | skadad, åter Unknown |
@@ -92,7 +91,7 @@ Tränare: Chris Cohen. Betyg, mål och assist gäller innevarande säsong enligt
 | 23 | Joshua Honohan | LM,LWB | 25 | Ireland | 329 k€ | – | 0 | 0 | 0/0 |  |
 | 24 | Ivan Varfolomeev | CDM,CM | 22 | Ukraine | 1,1 M€ | 6,72 | 0 | 0 | 2/0 |  |
 | 26 | Yunus Emre Konak | CDM,CM | 20 | Turkiye | 5,2 M€ | 6,17 | 0 | 0 | 0/0 |  |
-| 27 | Chiedozie Ogbene | CAM,RWB,RW,RM | 29 | Ireland | 2,6 M€ | 6,41 | 0 | 0 | 0/0 |  |
+| 27 | Chiedozie Ogbene | CAM,RWB,RM | 29 | Ireland | 2,6 M€ | 6,41 | 0 | 0 | 0/0 |  |
 | 33 | Daniel Oyegoke | RM,RWB,RB | 23 | England | 962 k€ | 6,64 | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Reeco Hackett | RW,CAM,RM | 28 | Saint Lucia | 303 k€ | 7,05 | 2 | 1 | 0/0 |  |
@@ -103,3 +102,5 @@ Tränare: Chris Cohen. Betyg, mål och assist gäller innevarande säsong enligt
 | 19 | Tanto Olaofe | ST,CAM,RW | 26 | England | 470 k€ | 5,97 | 0 | 0 | 1/0 |  |
 | 29 | Ethan Wheatley | ST,CAM | 20 | England | 187 k€ | – | 0 | 0 | 0/0 |  |
 | 34 | Freddie Draper | ST,CAM | 22 | England | 1,1 M€ | 6,68 | 2 | 0 | 4/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Adam Jackson (senast 2026-09-29).

@@ -1,6 +1,6 @@
 # América Mineiro (Brasileirão Série B) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [BR2](../../ligor/BR2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [BR2](../../ligor/BR2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -43,24 +43,18 @@ Form senaste 8 (äldst → senast): FFFVFVFF · senaste match 2026-09-18
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: –. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-|  | Gabriel Sena | Keeper | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Matheus Simões | Keeper | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 1 | Gustavo | GK | 33 | Brazil | 50 k€ | – | 0 | 0 | 0/0 |  |
 | 19 | William | GK | 28 | Brazil | 124 k€ | – | 0 | 0 | 0/0 |  |
 | 27 | Cássio | GK | 24 | Brazil | 317 k€ | – | 0 | 0 | 0/0 |  |
-| 52 | Italo Brito | Keeper | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 91 | Bruno Brígido | GK | 35 | Brazil | 60 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-|  | Pedro Vinicius | Defender | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Rian Henrique | Defender | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Ruan Victor | Defender | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 2 | Emerson | CB | 31 | Brazil | 192 k€ | – | 0 | 0 | 0/0 |  |
 | 3 | Luca Sosa | CB | 32 | Argentina | 446 k€ | – | 0 | 0 | 0/0 |  |
 | 4 | Rafa Barcelos | CB | 22 | Brazil | 328 k€ | – | 0 | 0 | 0/0 |  |
@@ -68,24 +62,14 @@ Tränare: –. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 | 15 | Alex Silva | RB,RWB | 32 | Brazil | 278 k€ | – | 0 | 0 | 0/0 |  |
 | 25 | Tobías Ostchega | LB,LM,LWB | 28 | Argentina | 350 k€ | – | 0 | 0 | 0/0 |  |
 | 26 | Manoel | CB | 36 | Brazil | 199 k€ | – | 0 | 0 | 0/0 |  |
-| 30 | Luidy | Defender | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 31 | Fábio | RB | 25 | Brazil | 265 k€ | – | 0 | 0 | 0/0 |  |
-| 32 | Filipe Dahora | RB | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 44 | Thallyson | Defender | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 45 | Ricardo Silva | CB | 34 | Brazil | 193 k€ | – | 0 | 0 | 0/0 |  |
-| 61 | Gabriel Oliveira | Defender | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 71 | Cristian | Defender | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-|  | Derick | Midfielder | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Gabriel Oliveira | Midfielder | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Luiz Felipe | Midfielder | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 5 | Fernando Elizari | CAM | 35 | Argentina | 192 k€ | – | 0 | 0 | 0/0 |  |
 | 6 | Gabriel Domingos | CAM,CM | 25 | Brazil | 284 k€ | – | 0 | 0 | 0/0 |  |
 | 8 | Felipe Amaral | CDM,CM,CAM | 23 | Brazil | 694 k€ | – | 0 | 0 | 0/0 |  |
 | 16 | Alê | CDM,CAM | 36 | Brazil | 183 k€ | – | 0 | 0 | 0/0 |  |
 | 21 | Eduardo Person | CAM,CM,LW | 29 | Brazil | 200 k€ | – | 0 | 0 | 0/0 |  |
-| 38 | Murilo Povoa | Midfielder | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 55 | Otávio Gonçalves | CDM | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 88 | Barreto | CDM,ST | 30 | Brazil | 181 k€ | – | 0 | 0 | 0/0 |  |
 | 93 | Jorge Jiménez | CDM,CM | 33 | Paraguay | 192 k€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
@@ -94,9 +78,7 @@ Tränare: –. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 | 14 | Rodrigo Piñeiro | LW | 27 | Uruguay | 309 k€ | – | 0 | 0 | 0/0 |  |
 | 17 | Gonzalo Mastriani | ST,LW | 33 | Uruguay | 681 k€ | – | 0 | 0 | 0/0 |  |
 | 20 | Paulo Victor | ST,RW | 25 | Brazil | 295 k€ | – | 0 | 0 | 0/0 |  |
-| 37 | Júlio | RW | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 39 | Ítalo Charbaje | Attacker | 16 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 70 | Kaique Zizero | Attacker | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 77 | Matías Segovia | RW,RM,CAM,CM | 23 | Paraguay | 442 k€ | – | 0 | 0 | 0/0 |  |
-| 80 | Geovane | Attacker | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 99 | Marcelo Maçola | ST | 23 | Brazil | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (20): Geovane (senast 2026-09-29), Filipe Dahora (senast 2026-09-29), Thallyson (senast 2026-09-29), Luiz Felipe (senast 2026-09-28), Italo Brito (senast 2026-09-29), Ruan Victor (senast 2026-09-28), Kaique Zizero (senast 2026-09-29), Otávio Gonçalves (senast 2026-09-29), Pedro Vinicius (senast 2026-09-28), Júlio (senast 2026-09-29), Gabriel Oliveira (senast 2026-09-29), Rian Henrique (senast 2026-09-28), Gabriel Sena (senast 2026-09-28), Gabriel Oliveira (senast 2026-09-28), Luidy (senast 2026-09-29), Ítalo Charbaje (senast 2026-09-29), Derick (senast 2026-09-28), Matheus Simões (senast 2026-09-28), Murilo Povoa (senast 2026-09-29), Cristian (senast 2026-09-29).

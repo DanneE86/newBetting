@@ -1,6 +1,6 @@
 # Newport County (League Two) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -61,43 +61,38 @@ Form (äldst → senast): VFOFFOOV · senaste match 2026-09-26
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Hayden Mullins. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Jordan Wright | GK | 27 | England | 158 k€ | 6,87 | 0 | 0 | 0/0 |  |
+| 1 | Jordan Wright | GK | 27 | England | 158 k€ | 6,75 | 0 | 0 | 0/0 |  |
 | 25 | Jake Turner | GK | 27 | England | 154 k€ | – | 0 | 0 | 0/0 |  |
 | 33 | Shaun MacDonald | GK | 29 | England | 80 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 |  | Anthony Driscoll-Glennon | LB,LWB | 26 | England | 196 k€ | – | 0 | 0 | 0/0 |  |
-|  | Armani Babah | Defender | 19 | Wales | – | – | 0 | 0 | 0/0 |  |
-|  | Sam Watkins | Defender | 19 | Wales | – | – | 0 | 0 | 0/0 |  |
 | 3 | Thomas Davies | LB,LWB | 22 | Wales | – | 6,50 | 0 | 0 | 0/0 |  |
-| 4 | Kyle Cameron | CB | 29 | Scotland | 85 k€ | 6,73 | 1 | 0 | 0/0 |  |
-| 5 | Lee Jenkins | CB | 25 | Wales | 178 k€ | 6,77 | 0 | 0 | 1/0 |  |
+| 4 | Kyle Cameron | CB | 29 | Scotland | 85 k€ | 6,71 | 1 | 0 | 0/0 |  |
+| 5 | Lee Jenkins | CB | 25 | Wales | 178 k€ | 6,78 | 0 | 0 | 1/0 |  |
 | 12 | Joe Thomas | RB,LB,CB,RWB | 24 | Wales | 162 k€ | 6,57 | 0 | 0 | 1/0 |  |
-| 16 | Matty Jacob | LB | 25 | England | 90 k€ | 7,41 | 0 | 1 | 1/0 |  |
+| 16 | Matty Jacob | LB | 25 | England | 90 k€ | 7,39 | 0 | 1 | 1/0 |  |
 | 17 | Alfie Merritt | LB | 18 | England | – | 6,31 | 0 | 1 | 2/0 |  |
 | 22 | Cameron Norman | RWB,RB,CB | 30 | England | 83 k€ | 6,78 | 0 | 1 | 2/0 |  |
-| 31 | Nelson Sanca | CB | 19 | England | 303 k€ | – | 0 | 0 | 0/0 |  |
-| 32 | Jaden Warner | CB | 23 | England | 164 k€ | – | 0 | 0 | 0/0 |  |
 | 34 | Dan Sassi | CB,RB | 22 | England | 178 k€ | 6,18 | 0 | 0 | 0/0 |  |
 | 95 | Harrison Halpin | Defender | 0 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 |  | Jack Norris | Midfielder | 19 | Wales | 306 k€ | – | 0 | 0 | 0/0 |  |
-|  | Kai Whitmore | CM,CAM,CB | 25 | England | – | – | 0 | 0 | 0/0 |  |
 |  | Riley Lonergan | Midfielder | 19 | Wales | – | – | 0 | 0 | 0/0 |  |
 | 2 | Cameron Evans | CDM,RB,CB,CM | 25 | Wales | 198 k€ | 6,56 | 0 | 0 | 1/0 |  |
 | 6 | Ciarán Brennan | CDM,CM,CB | 26 | Ireland | 161 k€ | 7,36 | 0 | 1 | 1/0 |  |
 | 7 | Kieron Evans | CM,CAM,ST,LM | 24 | Wales | 146 k€ | 6,44 | 0 | 0 | 0/0 |  |
 | 8 | Matt Smith | CDM,CM,CAM | 26 | Wales | 139 k€ | 6,24 | 0 | 0 | 0/0 |  |
-| 10 | Harrison Biggins | CAM,CM,CDM,RW | 30 | England | 86 k€ | 7,25 | 2 | 2 | 1/0 |  |
+| 10 | Harrison Biggins | CAM,CM,CDM,RW | 30 | England | 86 k€ | 7,22 | 2 | 2 | 1/0 |  |
 | 14 | Moses Alexander-Walker | Midfielder | 19 | Wales | – | – | 0 | 0 | 0/0 |  |
 | 18 | Aaron Lewis | CDM,CAM,CM | 28 | Wales | 193 k€ | – | 0 | 0 | 0/0 |  |
-| 24 | Matt Dibley-Dias | CDM,CM | 22 | England | 259 k€ | 6,55 | 0 | 0 | 3/0 |  |
+| 24 | Matt Dibley-Dias | CDM,CM | 22 | England | 259 k€ | 6,61 | 0 | 0 | 3/0 |  |
 | 29 | Keenan Patten | CM | 25 | Wales | – | – | 0 | 0 | 0/0 |  |
 | 36 | Harri Pugh | CAM | 18 | Wales | – | – | 0 | 0 | 0/0 |  |
 | 40 | Cole Jarvis | CDM | 25 | Wales | 142 k€ | 5,81 | 1 | 0 | 0/0 |  |
@@ -109,4 +104,6 @@ Tränare: Hayden Mullins. Betyg, mål och assist gäller innevarande säsong enl
 | 20 | Yahya Bamba | RW,LW | 27 | France | – | 6,64 | 1 | 1 | 0/0 |  |
 | 21 | Tanatswa Nyakuhwa | LW | 21 | Wales | 453 k€ | 6,02 | 0 | 0 | 0/0 |  |
 | 23 | Michael Adu-Poku | RW,RWB | 21 | England | – | 6,90 | 0 | 0 | 0/0 |  |
-| 27 | Christian Doidge | ST | 34 | Wales | 72 k€ | 7,01 | 2 | 2 | 1/0 |  |
+| 27 | Christian Doidge | ST | 34 | Wales | 72 k€ | 7,02 | 2 | 2 | 1/0 |  |
+
+Har lämnat truppen sedan vi började spara (5): Jaden Warner (senast 2026-09-29), Kai Whitmore (senast 2026-09-29), Nelson Sanca (senast 2026-09-29), Sam Watkins (senast 2026-09-29), Armani Babah (senast 2026-09-29).

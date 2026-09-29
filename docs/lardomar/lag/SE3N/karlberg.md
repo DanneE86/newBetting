@@ -1,6 +1,6 @@
 # Karlberg (Div 1 Norra) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [SE3N](../../ligor/SE3N.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [SE3N](../../ligor/SE3N.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -36,3 +36,39 @@ Form senaste 8 (äldst → senast): VFOFVFFO · senaste match 2026-09-27
 | Örebro Syrianska | 2 | 1-1-0 | 5–2 | 2025-10-04 1-1 (b) |
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
+
+## Trupp (Transfermarkt, hämtad 2026-09-29)
+
+Tränare: Oscar Lundeberg. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Argyrios Gkoulios | Goalkeeper | 21 | Sweden | – | – | – | – | 0/0 |  |
+| 1 | Ivar Steggo Forsse | Goalkeeper | 19 | Sweden | – | – | – | – | 0/0 |  |
+| 35 | Edrisa Bojang | Goalkeeper | 25 | Sweden | – | – | – | – | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 3 | Viktor Steen | Centre-Back | 25 | Sweden | – | – | – | – | 0/0 |  |
+| 13 | Robin Sundgren | Centre-Back | 24 | Sweden | – | – | – | – | 0/0 |  |
+| 4 | Adam Backman | Centre-Back | 18 | Sweden | – | – | – | – | 0/0 |  |
+| 25 | Felix Högberg | Centre-Back | 21 | Sweden | – | – | – | – | 0/0 |  |
+| 26 | Elias Carlsson | Centre-Back | 19 | Sweden | – | – | – | – | 0/0 |  |
+| 2 | Filip Nieminen Eriksson | Left-Back | 25 | Sweden | – | – | – | – | 0/0 |  |
+| 12 | Abiel Sequar | Left-Back | 27 | Sweden | – | – | – | – | 0/0 |  |
+| 14 | Aladji Fati | Left-Back | 20 | Sweden | – | – | – | – | 0/0 |  |
+| 21 | Felix Nilsson | Right-Back | 19 | Sweden | – | – | – | – | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Ben Basaric | Central Midfield | 20 | Sweden | – | – | – | – | 0/0 |  |
+| 17 | Hugo Åslund | Central Midfield | 19 | Sweden | – | – | – | – | 0/0 |  |
+| 18 | Milan Lalic | Right Midfield | 18 | Sweden | – | – | – | – | 0/0 |  |
+| 8 | Noah Tesfai Negash | Attacking Midfield | 23 | Sweden | – | – | – | – | 0/0 |  |
+| 24 | Lukas Sietsema | Attacking Midfield | 23 | Sweden | – | – | – | – | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 16 | Milian Jansson | Left Winger | 18 | Sweden | – | – | – | – | 0/0 |  |
+| 11 | Mattias Mitku | Right Winger | 25 | Sweden | – | – | – | – | 0/0 |  |
+| 7 | Hugo Fernández | Right Winger | 26 | Sweden | – | – | – | – | 0/0 |  |
+| 10 | Aaron Stoch Rydell | Right Winger | 19 | Sweden | – | – | – | – | 0/0 |  |
+| 15 | Viggo Häll | Right Winger | 20 | Sweden | – | – | – | – | 0/0 |  |
+| 19 | Adam Jemal | Centre-Forward | 24 | Sweden | – | – | – | – | 0/0 |  |
+| 9 | Arthin Jamshidi | Centre-Forward | 20 | Sweden | – | – | – | – | 0/0 |  |
+| 20 | Rinwar Othman | Centre-Forward | 23 | Sweden | – | – | – | – | 0/0 |  |

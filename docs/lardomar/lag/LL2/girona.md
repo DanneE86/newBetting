@@ -1,6 +1,6 @@
 # Girona (LaLiga 2) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [LL2](../../ligor/LL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [LL2](../../ligor/LL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -58,7 +58,7 @@ Form (äldst → senast): OOFVVFVV · senaste match 2026-09-25
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Quique Alvarez. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -97,7 +97,7 @@ Tränare: Quique Alvarez. Betyg, mål och assist gäller innevarande säsong enl
 | 10 | Portu | CAM | 34 | Spain | 682 k€ | – | 0 | 0 | 0/0 |  |
 | 15 | Oleksandr Pyshchur | ST | 21 | Ukraine | 458 k€ | 6,17 | 0 | 0 | 1/0 |  |
 | 17 | Bryan Gil | LW,RW,LM,RM | 25 | Spain | 11,0 M€ | 6,75 | 0 | 0 | 1/0 | skadad, åter Early October 2026 |
-| 19 | Vladyslav Vanat | ST | 24 | Ukraine | 13,0 M€ | 7,13 | 1 | 1 | 0/0 |  |
+| 19 | Vladyslav Vanat | ST,LW | 24 | Ukraine | 13,0 M€ | 7,13 | 1 | 1 | 0/0 |  |
 | 21 | Jastin García | LW,LM | 22 | Spain | – | 7,24 | 1 | 0 | 1/0 | skadad, åter Early October 2026 |
 | 22 | Yáser Asprilla | RW,RM,CAM | 22 | Colombia | 11,5 M€ | 7,40 | 4 | 0 | 0/0 |  |
 | 23 | Carles Pérez | RW,RM,CAM,ST | 28 | Spain | 974 k€ | 7,19 | 2 | 1 | 1/0 |  |

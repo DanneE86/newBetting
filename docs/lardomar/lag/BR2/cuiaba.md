@@ -1,6 +1,6 @@
 # Cuiabá (Brasileirão Série B) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [BR2](../../ligor/BR2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [BR2](../../ligor/BR2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -43,75 +43,40 @@ Form senaste 8 (äldst → senast): VVOVFVOV · senaste match 2026-09-22
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Eduardo Barros. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-|  | João Chaves | Keeper | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Luiz Diogo da Silva | Keeper | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 1 | João Carlos | GK | 38 | Brazil | 201 k€ | – | 0 | 0 | 0/0 |  |
 | 12 | Busatto | GK | 35 | Brazil | 50 k€ | – | 0 | 0 | 0/0 |  |
 | 31 | Marcelo Carné | GK | 36 | Brazil | 217 k€ | – | 0 | 0 | 0/0 |  |
 | 34 | Jean Carlos | Keeper | 26 | Brazil | 295 k€ | – | 0 | 0 | 0/0 |  |
-| 40 | Lucas Moraes | Keeper | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 78 | Pedro Mello | Keeper | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-|  | Gustavo Ferreira da Silva | Defender | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Lázaro | Defender | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Lucas Silva Barbosa | Defender | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Luiz Phellipe da Silva Souza | Defender | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Marcus Vinicius dos Santos Nascimento | Defender | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Mateus Henrique Arruda de Magalhães | Defender | 16 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Mateusinho | Defender | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Oscar | Defender | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 2 | Igor Inocêncio | RB,RWB,LB | 28 | Brazil | 132 k€ | – | 0 | 0 | 0/0 |  |
 | 4 | Vitor Mendes | CB | 27 | Brazil | 237 k€ | – | 0 | 0 | 0/0 |  |
 | 13 | João Basso | CB | 29 | Brazil | 380 k€ | – | 0 | 0 | 0/0 |  |
 | 14 | Eric Melo | CB,LWB | 26 | Brazil | 289 k€ | – | 0 | 0 | 0/0 |  |
-| 26 | João Victor | Defender | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 33 | Alan Empereur | CB | 32 | Brazil | 233 k€ | – | 0 | 0 | 0/0 |  |
-| 91 | Luís Soares | CB | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-|  | André Fernando de Siqueira Almeida | Midfielder | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Arthur Souza Borges | Midfielder | 16 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Caio Rafael Muniz de Souza | Midfielder | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Erick Vitor Campos da Silva | Midfielder | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Gustavo Vieira dos Santos | Midfielder | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Kauan | Midfielder | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Lucas Cauã de Magalhães Perne | Midfielder | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Lucas de Souza Santos Oliveira | Midfielder | 16 | Brazil | – | – | 0 | 0 | 0/0 |  |
 |  | Luiz Felipe | Midfielder | 22 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Mackenzi Gabriel Nascimento Melhado | Midfielder | 16 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Marcos Vinicius Guilherme Barbosa | Midfielder | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Víctor Gabriel de Paula Silva | Midfielder | 16 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 5 | Calebe | CB,CM,CDM,CAM | 23 | Brazil | 492 k€ | – | 0 | 0 | 0/0 |  |
 | 8 | Pepê | CDM,CM,RW,CAM,RM | 28 | Brazil | 863 k€ | – | 0 | 0 | 0/0 |  |
 | 11 | Eliel | CAM,RW | 23 | Brazil | 435 k€ | – | 0 | 0 | 0/0 |  |
-| 20 | David Miguel | CM,CDM,CAM,RM,LW | 19 | Brazil | 1,4 M€ | – | 0 | 0 | 0/0 |  |
-| 22 | Pedro Alemão | Midfielder | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 23 | Marcos Júnior | LW | 33 | Brazil | 171 k€ | – | 0 | 0 | 0/0 |  |
 | 30 | Raul | CDM,CM,CB | 30 | Brazil | 854 k€ | – | 0 | 0 | 0/0 |  |
-| 36 | Lorenzo | LWB | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 37 | Railan | RWB,RB,RM | 26 | Brazil | 401 k€ | – | 0 | 0 | 0/0 |  |
-| 41 | Kauan Cristtyan | CAM,RWB | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 42 | João Vitor | Midfielder | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 50 | Pedro Felipetto | Midfielder | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 53 | Weverson | LM | 23 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 70 | Wesley Dias | CDM | 31 | Brazil | 146 k€ | – | 0 | 0 | 0/0 |  |
 | 97 | Luiz Otávio | CM | 29 | Brazil | 144 k€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-|  | Arthur Braz Dias | Attacker | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Diodato | Attacker | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Mateus Patolino | Attacker | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Widney Magalhães da Silva Almeida | Attacker | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 7 | Ramon | LM | 26 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 27 | Rodrigo Rodrigues | LW,ST,CAM,LM | 26 | Brazil | 407 k€ | – | 0 | 0 | 0/0 |  |
 | 29 | Vinicius Peixoto | ST,RW | 22 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 39 | Mansano | Attacker | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 77 | Jean Dias | CAM,LW,RW,RB | 35 | Brazil | 203 k€ | – | 0 | 0 | 0/0 |  |
 | 90 | Fábio Gomes | ST | 29 | Brazil | 367 k€ | – | 0 | 0 | 0/0 |  |
 | 96 | Pedro Henrique | ST | 29 | Brazil | 911 k€ | – | 0 | 0 | 0/0 |  |
-| 99 | Nathan Cruz | Attacker | 19 | Brazil | 501 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (37): Kauan Cristtyan (senast 2026-09-29), Luís Soares (senast 2026-09-29), David Miguel (senast 2026-09-29), Lorenzo (senast 2026-09-29), Mateus Patolino (senast 2026-09-28), Nathan Cruz (senast 2026-09-29), Pedro Mello (senast 2026-09-29), João Victor (senast 2026-09-29), Oscar (senast 2026-09-28), Lucas Moraes (senast 2026-09-29), Mateusinho (senast 2026-09-28), Diodato (senast 2026-09-28), João Chaves (senast 2026-09-28), Mansano (senast 2026-09-29), Lázaro (senast 2026-09-28), Lucas Silva Barbosa (senast 2026-09-28), Kauan (senast 2026-09-28), Caio Rafael Muniz de Souza (senast 2026-09-28), Widney Magalhães da Silva Almeida (senast 2026-09-28), Luiz Diogo da Silva (senast 2026-09-28), Gustavo Vieira dos Santos (senast 2026-09-28), Marcos Vinicius Guilherme Barbosa (senast 2026-09-28), Pedro Felipetto (senast 2026-09-29), Erick Vitor Campos da Silva (senast 2026-09-28), Luiz Phellipe da Silva Souza (senast 2026-09-28), João Vitor (senast 2026-09-29), Lucas Cauã de Magalhães Perne (senast 2026-09-28), Mackenzi Gabriel Nascimento Melhado (senast 2026-09-28), Marcus Vinicius dos Santos Nascimento (senast 2026-09-28), Mateus Henrique Arruda de Magalhães (senast 2026-09-28), Pedro Alemão (senast 2026-09-29), Arthur Souza Borges (senast 2026-09-28), Gustavo Ferreira da Silva (senast 2026-09-28), Víctor Gabriel de Paula Silva (senast 2026-09-28), André Fernando de Siqueira Almeida (senast 2026-09-28), Arthur Braz Dias (senast 2026-09-28), Lucas de Souza Santos Oliveira (senast 2026-09-28).

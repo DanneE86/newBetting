@@ -1,11 +1,11 @@
 # Millwall (Championship) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - 2025/26: +0,42 poäng per match mot marknaden. Ligan visar ingen persistens, så räkna inte med att det fortsätter.
-- Stark historik mot Blackburn (−0,79 p/match mot marknaden, 16 möten), Stoke (+0,70 p/match mot marknaden, 16 möten), Sheffield United (+0,63 p/match mot marknaden, 10 möten), Watford (+0,78 p/match mot marknaden, 10 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Stark historik mot Blackburn (−0,79 p/match mot marknaden, 16 möten), Stoke (+0,70 p/match mot marknaden, 16 möten), Watford (+0,78 p/match mot marknaden, 10 möten), Sheffield United (+0,83 p/match mot marknaden, 9 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -50,8 +50,8 @@ Form (äldst → senast): VVFFVFOO · senaste match 2026-09-19
 | West Brom | 13 | 4-8-1 | 13–7 | +0,41 | +32 pe | 2026-04-10 0-0 (b) |
 | Cardiff | 12 | 4-5-3 | 16–14 | +0,01 | +11 pe | 2025-01-21 2-2 (h) |
 | Derby | 11 | 6-3-2 | 12–8 | +0,46 | −3 pe | 2026-03-10 1-0 (h) |
-| Sheffield United | 10 | 5-2-3 | 12–11 | +0,63 | −8 pe | 2026-01-31 1-1 (h) |
 | Watford | 10 | 6-2-2 | 15–7 | +0,78 | −9 pe | 2026-01-17 2-0 (b) |
+| Sheffield United | 9 | 5-2-2 | 10–8 | +0,83 | −6 pe | 2026-01-31 1-1 (h) |
 | Southampton | 5 | 2-1-2 | 6–9 | +0,43 | −5 pe | 2026-08-29 1-5 (b) |
 | Burnley | 4 | 1-1-2 | 3–6 | −0,02 | −4 pe | 2025-05-03 1-3 (b) |
 | Charlton | 4 | 3-1-0 | 8–2 | +0,89 | −4 pe | 2026-01-24 4-0 (h) |
@@ -87,7 +87,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-05-07 | Europa 2572 | Hull - Millwall | X | 47 % | 42 % |
 | 2026-01-01 | Europa 2536 | Southampton - Millwall | X | 16 % | 24 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Alex Neil. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -120,12 +120,12 @@ Tränare: Alex Neil. Betyg, mål och assist gäller innevarande säsong enligt F
 | 17 | Mark Sykes | RWB,RW,RM,RB | 29 | Ireland | 1,2 M€ | 6,79 | 1 | 0 | 2/0 |  |
 | 24 | Casper de Norre | CDM,CM | 29 | Belgium | 1,2 M€ | 6,69 | 0 | 0 | 1/0 | skadad, åter Early October 2026 |
 | 25 | Luke Cundle | CAM | 24 | England | 2,0 M€ | 6,60 | 1 | 0 | 0/0 |  |
-| 49 | Derek Mazou-Sacko | CDM,CM | 21 | France | 1,1 M€ | 6,75 | 0 | 0 | 1/0 |  |
+| 49 | Derek Mazou-Sacko | CDM | 21 | France | 1,1 M€ | 6,75 | 0 | 0 | 1/0 |  |
 | 51 | Sacha Tsugita Vieira | Midfielder | 18 | Japan | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Taïryk Arconte | ST,CAM,RW | 22 | Guadeloupe | 2,1 M€ | 7,13 | 3 | 0 | 0/0 |  |
 | 9 | Mihailo Ivanović | ST | 21 | Serbia | 6,0 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
-| 11 | Romain Esse | RW,CAM,LW | 21 | England | 11,5 M€ | 6,28 | 0 | 0 | 0/0 |  |
+| 11 | Romain Esse | RW,LW | 21 | England | 11,5 M€ | 6,28 | 0 | 0 | 0/0 |  |
 | 13 | Lyndon Dykes | ST,CAM | 30 | Scotland | 531 k€ | 7,21 | 4 | 1 | 1/0 |  |
 | 19 | Josh Coburn | ST | 23 | England | 3,6 M€ | 7,22 | 2 | 0 | 1/0 | skadad, åter Early October 2026 |
 | 22 | Kyrell Lisbie | LW,RW | 22 | England | 667 k€ | 6,84 | 0 | 0 | 0/0 |  |

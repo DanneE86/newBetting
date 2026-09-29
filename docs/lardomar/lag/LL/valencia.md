@@ -1,6 +1,6 @@
 # Valencia (La Liga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [LL](../../ligor/LL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [LL](../../ligor/LL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -53,12 +53,12 @@ Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: s
 |---|---|---|---|---|---|---|
 | Barcelona | 17 | 2-4-11 | 21–48 | −0,07 | +3 pe | 2026-09-06 0-5 (h) |
 | Sevilla | 17 | 4-7-6 | 13–16 | −0,08 | +13 pe | 2026-09-11 0-1 (b) |
-| Sociedad | 17 | 5-7-5 | 15–19 | +0,13 | +13 pe | 2026-09-20 2-3 (h) |
 | Ath Bilbao | 16 | 5-6-5 | 14–13 | +0,19 | +9 pe | 2026-05-10 1-0 (b) |
 | Betis | 16 | 4-4-8 | 20–28 | −0,25 | −3 pe | 2026-08-25 0-1 (h) |
 | Celta | 16 | 8-3-5 | 23–19 | +0,34 | −10 pe | 2026-08-22 0-0 (h) |
 | Getafe | 16 | 7-5-4 | 21–15 | +0,22 | −1 pe | 2026-01-18 1-0 (b) |
 | Real Madrid | 16 | 4-2-10 | 16–34 | +0,19 | −8 pe | 2026-02-08 0-2 (h) |
+| Sociedad | 16 | 4-7-5 | 14–19 | +0,03 | +16 pe | 2026-09-20 2-3 (h) |
 | Alaves | 15 | 5-5-5 | 20–17 | −0,20 | +4 pe | 2026-09-15 1-0 (b) |
 | Ath Madrid | 15 | 1-3-11 | 15–32 | −0,46 | −6 pe | 2026-05-02 0-2 (h) |
 | Villarreal | 15 | 5-3-7 | 18–19 | +0,06 | −7 pe | 2026-02-22 1-2 (b) |
@@ -93,7 +93,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-09-14 | Europa 2505 | Barcelona - Valencia | 1 | 3 % | 10 % |
 | 2025-08-24 | Europa 2499 | Osasuna - Valencia | 1 | 21 % | 30 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Javier Aguirre. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -128,7 +128,7 @@ Tränare: Javier Aguirre. Betyg, mål och assist gäller innevarande säsong enl
 | 23 | Filip Ugrinic | CM | 27 | Switzerland | 4,4 M€ | 6,51 | 0 | 0 | 0/0 |  |
 | 27 | David Otorbi | RM | 18 | Spain | – | 6,55 | 0 | 0 | 0/0 |  |
 | 33 | Aaron Mayol | CDM | 18 | Spain | – | 7,30 | 1 | 0 | 1/0 |  |
-| 39 | Ryunosuke Sato | ST,LM,RM,LWB | 19 | Japan | 2,1 M€ | 5,97 | 0 | 0 | 2/0 |  |
+| 39 | Ryunosuke Sato | ST,LM,LWB,RM | 19 | Japan | 2,1 M€ | 5,97 | 0 | 0 | 2/0 |  |
 | | **Anfallare** | | | | | | | | | |
 |  | Aimar | Attacker | 20 | Spain | – | – | 0 | 0 | 0/0 |  |
 |  | Sergi Canós | LW,LM,CAM | 29 | Spain | 365 k€ | – | 0 | 0 | 0/0 | skadad, åter Early December 2026 |

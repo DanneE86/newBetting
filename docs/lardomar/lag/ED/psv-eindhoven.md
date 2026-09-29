@@ -1,6 +1,6 @@
 # PSV Eindhoven (Eredivisie) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [ED](../../ligor/ED.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [ED](../../ligor/ED.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -66,7 +66,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-02-08 | Europa 2547 | Groningen - PSV Eindhoven | 2 ✓ | 68 % | 57 % |
 | 2025-11-09 | Europa 2521 | AZ Alkmaar - PSV Eindhoven | 2 ✓ | 54 % | 49 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Peter Bosz. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -82,19 +82,19 @@ Tränare: Peter Bosz. Betyg, mål och assist gäller innevarande säsong enligt 
 | 4 | Armando Obispo | CB | 27 | Curacao | 1,8 M€ | 7,28 | 0 | 0 | 2/0 |  |
 | 6 | Ryan Flamingo | CB | 23 | Netherlands | 14,2 M€ | 7,03 | 1 | 0 | 0/0 |  |
 | 8 | Sergiño Dest | RB,LB,RW,RM,RWB | 25 | USA | 23,5 M€ | 7,72 | 2 | 2 | 0/0 |  |
-| 17 | Mauro Júnior | LB,CDM,CM,RB | 27 | Brazil | 12,2 M€ | 7,89 | 1 | 2 | 0/0 |  |
-| 22 | Jerdy Schouten | CB,CM,CDM | 29 | Netherlands | 16,3 M€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
+| 17 | Mauro Júnior | LB,CDM,CM | 27 | Brazil | 12,2 M€ | 7,89 | 1 | 2 | 0/0 |  |
+| 22 | Jerdy Schouten | CB,CDM,CM | 29 | Netherlands | 16,3 M€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
 | 25 | Kilian Sildillia | RB | 24 | France | 6,9 M€ | 6,12 | 0 | 0 | 0/0 | skadad, åter Early December 2026 |
 | 39 | Adamo Nagalo | CB | 24 | Burkina Faso | 2,2 M€ | – | 0 | 0 | 0/0 | skadad, åter Out for season |
 | | **Mittfältare** | | | | | | | | | |
 | 10 | Paul Wanner | CDM,CM,CAM,RM | 20 | Austria | 16,4 M€ | 7,13 | 0 | 2 | 0/0 |  |
 | 11 | Sami Ouaissa | RWB,CAM,RW | 21 | Netherlands | 8,5 M€ | 7,25 | 0 | 0 | 0/0 | skadad, åter Day to day |
-| 18 | Filip Kostić | LWB,LB,LM,LW | 33 | Serbia | 1,3 M€ | 6,37 | 0 | 0 | 1/0 |  |
-| 21 | Sven Mijnans | CAM,CM,ST | 26 | Netherlands | 11,3 M€ | 7,50 | 4 | 1 | 0/0 |  |
+| 18 | Filip Kostić | LWB,LB,LW | 33 | Serbia | 1,3 M€ | 6,37 | 0 | 0 | 1/0 |  |
+| 21 | Sven Mijnans | CM,CAM,ST | 26 | Netherlands | 11,3 M€ | 7,50 | 4 | 1 | 0/0 |  |
 | 24 | Kodai Sano | CDM,CAM,CM | 23 | Japan | 12,8 M€ | 7,38 | 1 | 0 | 1/0 |  |
 | | **Anfallare** | | | | | | | | | |
 |  | Sam Lammers | ST | 29 | Netherlands | 2,0 M€ | 6,26 | 0 | 0 | 0/0 | skadad, åter Day to day |
-| 5 | Ivan Perišić | LW,RW,LM,LWB,LB | 37 | Croatia | 775 k€ | 7,58 | 2 | 1 | 2/0 |  |
+| 5 | Ivan Perišić | LW,RW,LB,LM,LWB | 37 | Croatia | 775 k€ | 7,58 | 2 | 1 | 2/0 |  |
 | 7 | Ruben van Bommel | LW | 22 | Netherlands | 11,1 M€ | 7,48 | 2 | 2 | 3/0 |  |
 | 9 | Ricardo Pepi | ST | 23 | USA | 26,2 M€ | 7,05 | 3 | 0 | 0/0 |  |
 | 14 | Alassane Pléa | ST | 33 | France | 1,6 M€ | 7,34 | 0 | 1 | 0/0 | skadad, åter Day to day |

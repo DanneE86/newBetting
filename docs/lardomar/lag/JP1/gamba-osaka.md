@@ -1,6 +1,6 @@
 # Gamba Osaka (J1 League) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [JP1](../../ligor/JP1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [JP1](../../ligor/JP1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -39,11 +39,11 @@ Form (äldst → senast): VOFOOFFF · senaste match 2026-09-20
 
 | Motståndare | M | V-O-F | Mål | Mot marknaden | Kryss mot odds | Senast |
 |---|---|---|---|---|---|---|
-| Sanfrecce Hiroshima | 16 | 5-4-7 | 15–21 | +0,23 | −0 pe | 2026-08-29 0-0 (h) |
 | Urawa Reds | 16 | 8-2-6 | 21–23 | +0,42 | −14 pe | 2026-08-07 4-3 (h) |
 | Cerezo Osaka | 15 | 4-2-9 | 13–22 | −0,28 | −15 pe | 2025-07-05 1-0 (b) |
 | FC Tokyo | 15 | 4-4-7 | 9–18 | −0,21 | −0 pe | 2026-09-12 0-2 (h) |
 | Nagoya Grampus | 15 | 7-2-6 | 23–21 | +0,34 | −15 pe | 2026-08-22 1-3 (b) |
+| Sanfrecce Hiroshima | 15 | 4-4-7 | 14–21 | +0,11 | +2 pe | 2026-08-29 0-0 (h) |
 | Vissel Kobe | 15 | 4-3-8 | 19–24 | −0,15 | −6 pe | 2026-09-20 0-1 (h) |
 | Yokohama F. Marinos | 15 | 6-1-8 | 22–23 | +0,22 | −16 pe | 2025-09-23 3-1 (h) |
 | Kashima Antlers | 14 | 2-6-6 | 11–19 | −0,27 | +16 pe | 2025-10-05 0-0 (b) |
@@ -61,7 +61,7 @@ Form (äldst → senast): VOFOOFFF · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Tomokazu Myojin. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -94,7 +94,7 @@ Tränare: Tomokazu Myojin. Betyg, mål och assist gäller innevarande säsong en
 | 16 | Tokuma Suzuki | CDM | 29 | Japan | 259 k€ | 6,39 | 0 | 0 | 0/0 |  |
 | 27 | Rin Mito | CDM | 24 | Japan | 405 k€ | 6,81 | 0 | 0 | 0/0 |  |
 | 32 | Yuki Yoshihara | CDM | 22 | Japan | – | 5,94 | 0 | 0 | 0/0 |  |
-| 39 | Koshiro Sumi | LM,CAM,RW,LW | 24 | Japan | 321 k€ | 6,17 | 0 | 0 | 0/0 |  |
+| 39 | Koshiro Sumi | LM,CAM,LW,RW | 24 | Japan | 321 k€ | 6,17 | 0 | 0 | 0/0 |  |
 | 48 | Fujimoto Yoshiki | Midfielder | 17 | Japan | – | – | 0 | 0 | 0/0 |  |
 | 60 | Arata Okamoto | Midfielder | 16 | Japan | – | – | 0 | 0 | 0/0 |  |
 | 78 | Juanpe | CDM,CM | 30 | Spain | 278 k€ | – | 0 | 0 | 0/0 |  |

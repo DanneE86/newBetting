@@ -32,6 +32,7 @@
     "matcher": "node scripts/export-league-matches.mjs",
     "felanalys": "node scripts/tips-felanalys.mjs",
     "trupper": "node scripts/fetch-squads.mjs",
+    "trupper:kontroll": "node scripts/verify-squads-tm.mjs",
     "sync": "npm run fetch && npm run store",
     "gui": "node gui/server.mjs",
     "start": "node gui/server.mjs",

@@ -1,6 +1,6 @@
 # Kaiserslautern (2. Bundesliga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [BL2](../../ligor/BL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [BL2](../../ligor/BL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -54,7 +54,7 @@ Form (äldst → senast): VVOOVVFV · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Torsten Lieberknecht. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -64,11 +64,9 @@ Tränare: Torsten Lieberknecht. Betyg, mål och assist gäller innevarande säso
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
 | 1 | Julian Krahl | GK | 26 | Germany | 670 k€ | 7,84 | 0 | 1 | 0/0 |  |
-| 30 | Avdo Spahić | GK | 29 | Bosnia and Herzegovina | 118 k€ | – | 0 | 0 | 0/0 |  |
 | 34 | Yannick Onohiol | GK | 22 | Germany | 207 k€ | – | 0 | 0 | 0/0 |  |
 | 40 | Enis Kamga | GK | 19 | Germany | 558 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-|  | Hendrick Zuck | LB | 36 | Germany | – | – | 0 | 0 | 0/0 |  |
 |  | Jean Zimmer | RWB | 32 | Germany | 90 k€ | – | 0 | 0 | 0/0 |  |
 | 3 | Alex Murphy | LB,CB | 22 | Ireland | 1,3 M€ | 6,94 | 0 | 0 | 0/0 |  |
 | 4 | Maxwell Gyamfi | CB | 26 | Germany | 601 k€ | 7,17 | 0 | 0 | 3/0 |  |
@@ -77,8 +75,6 @@ Tränare: Torsten Lieberknecht. Betyg, mål och assist gäller innevarande säso
 | 33 | Jan Elvedi | CB | 29 | Switzerland | 402 k€ | 7,36 | 0 | 0 | 1/0 |  |
 | 37 | Leon Robinson | CB,CDM,CM | 25 | Germany | 472 k€ | 6,46 | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-|  | Frank Ronstadt | LWB,CB,RWB | 29 | Germany | 137 k€ | – | 0 | 0 | 0/0 |  |
-|  | Kenny-Prince Redondo | CAM | 32 | Germany | 178 k€ | – | 0 | 0 | 0/0 |  |
 | 2 | Simon Asta | RWB | 25 | Germany | 396 k€ | 6,16 | 0 | 0 | 1/0 |  |
 | 6 | Fabian Kunze | CDM,CB,CM | 28 | Germany | 575 k€ | 6,72 | 0 | 0 | 2/0 |  |
 | 7 | Marlon Ritter | CAM,CDM,ST | 31 | Germany | 284 k€ | 6,53 | 0 | 0 | 1/0 |  |
@@ -101,3 +97,5 @@ Tränare: Torsten Lieberknecht. Betyg, mål och assist gäller innevarande säso
 | 20 | Mërgim Berisha | ST | 28 | Germany | 712 k€ | 6,57 | 1 | 0 | 0/0 |  |
 | 45 | Miloš Luković | ST | 20 | Serbia | 4,7 M€ | – | 0 | 0 | 0/0 |  |
 | 46 | Kian Scheer | Attacker | 19 | Germany | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (4): Hendrick Zuck (senast 2026-09-29), Kenny-Prince Redondo (senast 2026-09-29), Avdo Spahić (senast 2026-09-29), Frank Ronstadt (senast 2026-09-29).

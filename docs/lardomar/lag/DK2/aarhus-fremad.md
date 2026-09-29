@@ -1,6 +1,6 @@
 # Aarhus Fremad (1. division) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [DK2](../../ligor/DK2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [DK2](../../ligor/DK2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -31,7 +31,7 @@ Form senaste 8 (äldst → senast): FVOOOVOF · senaste match 2026-09-19
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Mathias Damgaard. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -45,11 +45,9 @@ Tränare: Mathias Damgaard. Betyg, mål och assist gäller innevarande säsong e
 | 4 | Andreas Pisani | CB | 23 | Denmark | 343 k€ | 6,90 | 1 | 0 | 2/0 |  |
 | 10 | Marcus Kirchheiner | CB,RM | 29 | Denmark | 102 k€ | 7,10 | 0 | 0 | 2/0 |  |
 | 15 | Carl Nygaard | LWB | 20 | Denmark | 220 k€ | 6,63 | 1 | 0 | 1/0 |  |
-| 19 | Baptiste Rolland | CB | 23 | France | 126 k€ | – | 0 | 0 | 0/0 |  |
 | 20 | Ólafur Hjaltason | CB | 20 | Iceland | 259 k€ | 6,29 | 0 | 0 | 0/0 |  |
 | 22 | Jonas Østergaard | LWB | 20 | Denmark | – | 6,29 | 0 | 0 | 0/0 |  |
 | 26 | Mikkel Falk | Defender | 20 | Denmark | – | – | 0 | 0 | 0/0 |  |
-| 29 | Oluwasegun Olalere | CB | 26 | Nigeria | 103 k€ | – | 0 | 0 | 0/0 |  |
 | 33 | Alexander Ludwig | CB | 33 | Denmark | 70 k€ | 7,25 | 1 | 0 | 2/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 6 | Frederik Grube | CM,RWB,RM,CB | 26 | Denmark | 206 k€ | 7,14 | 0 | 1 | 1/0 |  |
@@ -67,3 +65,5 @@ Tränare: Mathias Damgaard. Betyg, mål och assist gäller innevarande säsong e
 | 23 | Ingimar Arnar Kristjánsson | ST | 21 | Iceland | 171 k€ | 6,00 | 0 | 0 | 0/0 |  |
 | 28 | Elias Caspersen Egerton | ST,CM | 22 | Norway | 217 k€ | 6,80 | 1 | 3 | 0/0 |  |
 | 70 | Jashar Beluli | LM | 22 | Denmark | 439 k€ | 6,20 | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (2): Baptiste Rolland (senast 2026-09-29), Oluwasegun Olalere (senast 2026-09-29).

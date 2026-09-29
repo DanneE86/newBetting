@@ -1,6 +1,6 @@
 # AB Gladsaxe (1. division) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [DK2](../../ligor/DK2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [DK2](../../ligor/DK2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -12,7 +12,7 @@ Form senaste 8 (äldst → senast): OFVOFFFV · senaste match 2026-09-19
 |---|---|---|---|---|---|---|---|
 | 2026/27 | 9 | 1,00 | 1,25 | 0,80 | 33 % | 1,22–1,11 | 44 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Fannar Berg Gunnolfsson. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

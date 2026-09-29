@@ -1,11 +1,11 @@
 # Blackpool (League One) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Senaste 8: xG-målskillnaden är −0,58 per match sämre än målskillnaden.
-- Stark historik mot AFC Wimbledon (−0,51 p/match mot marknaden, 8 möten), Luton (−0,55 p/match mot marknaden, 7 möten), Leyton Orient (−0,58 p/match mot marknaden, 6 möten), Plymouth (−1,15 p/match mot marknaden, 6 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Stark historik mot Peterboro (+0,52 p/match mot marknaden, 13 möten), AFC Wimbledon (−0,51 p/match mot marknaden, 8 möten), Luton (−0,55 p/match mot marknaden, 7 möten), Leyton Orient (−0,58 p/match mot marknaden, 6 möten), Plymouth (−1,15 p/match mot marknaden, 6 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -38,7 +38,7 @@ Form (äldst → senast): VOVVFFOF · senaste match 2026-09-19
 
 | Motståndare | M | V-O-F | Mål | Mot marknaden | Kryss mot odds | Senast |
 |---|---|---|---|---|---|---|
-| Peterboro | 14 | 8-2-4 | 28–26 | +0,47 | −13 pe | 2026-08-29 4-0 (h) |
+| Peterboro | 13 | 8-1-4 | 26–24 | +0,52 | −19 pe | 2026-08-29 4-0 (h) |
 | Barnsley | 11 | 6-0-5 | 15–11 | +0,34 | −26 pe | 2026-09-02 1-2 (b) |
 | Burton | 11 | 5-3-3 | 13–8 | +0,10 | +1 pe | 2026-03-28 1-0 (h) |
 | Reading | 11 | 7-0-4 | 23–16 | +0,49 | −26 pe | 2026-09-05 1-3 (b) |
@@ -67,7 +67,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 |---|---|---|---|---|---|
 | 2026-04-25 | Stryk 4950 | Blackpool - Leyton Orient | 1 ✓ | 45 % | 36 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Ian Evatt. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -76,13 +76,12 @@ Tränare: Ian Evatt. Betyg, mål och assist gäller innevarande säsong enligt F
 | | **Målvakter** | | | | | | | | | |
 | 1 | Bailey Peacock-Farrell | GK | 29 | Northern Ireland | 448 k€ | 7,09 | 0 | 1 | 0/0 |  |
 | 23 | Luke Southwood | GK | 28 | Northern Ireland | 115 k€ | – | 0 | 0 | 0/0 |  |
-| 43 | Charlie Brier | Keeper | 18 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 2 | Andy Lyons | CB,RB | 26 | Ireland | 216 k€ | 6,33 | 0 | 0 | 0/0 |  |
 | 3 | Zac Ashworth | LWB,CB,LM,LB,LW | 24 | Wales | – | 6,67 | 0 | 1 | 0/0 |  |
 | 4 | Oliver Casey | CB | 25 | England | 515 k€ | 6,98 | 0 | 1 | 0/0 |  |
 | 5 | Fraser Horsfall | CB | 29 | England | 260 k€ | – | 0 | 0 | 0/0 |  |
-| 15 | Hayden Coulson | LB,LW,LWB,CDM | 28 | England | 166 k€ | 6,60 | 0 | 0 | 1/0 |  |
+| 15 | Hayden Coulson | LW,LB,LWB,CDM | 28 | England | 166 k€ | 6,60 | 0 | 0 | 1/0 |  |
 | 20 | Michael Ihiekwe | CB | 33 | England | 257 k€ | – | 0 | 0 | 0/0 |  |
 | 26 | Finley Munroe | LB,LM,LWB | 21 | England | 645 k€ | 6,70 | 1 | 1 | 2/0 |  |
 | 28 | Jordan Williams | RB,LB,CB | 26 | England | 486 k€ | 6,69 | 1 | 0 | 2/0 |  |
@@ -93,14 +92,16 @@ Tränare: Ian Evatt. Betyg, mål och assist gäller innevarande säsong enligt F
 | 7 | Leighton Clarkson | CAM,CDM,RW,LW | 24 | England | 532 k€ | 6,40 | 1 | 0 | 0/0 |  |
 | 8 | Albie Morgan | CM,CDM | 26 | England | 225 k€ | 7,02 | 1 | 0 | 1/0 |  |
 | 10 | George Honeyman | CAM,CM,CDM,LM | 32 | England | 216 k€ | 6,77 | 0 | 1 | 1/0 |  |
-| 11 | Josh Bowler | RW,CAM,RM,CM,CDM | 27 | England | 294 k€ | 7,43 | 2 | 1 | 0/0 |  |
-| 17 | Karoy Anderson | CAM,CM,CDM | 21 | Jamaica | 689 k€ | 6,90 | 1 | 0 | 2/0 |  |
+| 17 | Karoy Anderson | CAM,RW,CDM,CM,LW | 21 | Jamaica | 689 k€ | 6,90 | 1 | 0 | 2/0 |  |
 | 21 | Ilmari Niskanen | RWB,RW,LWB | 28 | Finland | 364 k€ | 6,28 | 0 | 0 | 0/0 |  |
 | 22 | CJ Hamilton | LW,CAM,LM,RWB,LB,LWB,ST | 31 | Ireland | 153 k€ | 6,70 | 0 | 0 | 1/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 9 | Niall Ennis | ST | 27 | England | 310 k€ | – | 0 | 0 | 0/0 |  |
+| 11 | Josh Bowler | RW,CAM,RM,CM,CDM | 27 | England | 294 k€ | 7,43 | 2 | 1 | 0/0 |  |
 | 12 | Jerry Yates | ST | 29 | England | 821 k€ | 6,75 | 2 | 0 | 1/0 |  |
 | 14 | Tom Bloxham | ST,RW | 22 | England | 637 k€ | 6,76 | 2 | 1 | 0/0 |  |
 | 18 | Dale Taylor | ST | 22 | Northern Ireland | 864 k€ | – | 0 | 0 | 0/0 |  |
 | 19 | Dion Charles | ST,CAM | 30 | Northern Ireland | 253 k€ | 6,67 | 1 | 2 | 0/0 |  |
 | 39 | Shay Mannix | Attacker | 18 | England | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Charlie Brier (senast 2026-09-29).

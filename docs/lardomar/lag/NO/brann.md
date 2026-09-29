@@ -1,6 +1,6 @@
 # Brann (Eliteserien) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [NO](../../ligor/NO.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [NO](../../ligor/NO.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -56,7 +56,7 @@ Form (äldst → senast): VFVVOFFV · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Eirik Horneland. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -92,5 +92,6 @@ Tränare: Eirik Horneland. Betyg, mål och assist gäller innevarande säsong en
 | 14 | Ulrik Mathisen | RW,ST | 27 | Norway | 536 k€ | 6,69 | 1 | 3 | 0/0 |  |
 | 16 | Kristian Eriksen | CM,RW,ST | 31 | Norway | 497 k€ | 6,68 | 4 | 4 | 3/0 |  |
 | 22 | Sævar Atli Magnusson | ST,RW | 26 | Iceland | 1,2 M€ | 6,24 | 0 | 0 | 0/0 |  |
-| 26 | Rabbi Matondo | LM | 26 | Wales | 546 k€ | 6,06 | 0 | 0 | 0/0 |  |
 | 29 | Noah Holm | ST | 25 | Norway | 1,5 M€ | 7,01 | 6 | 2 | 4/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Rabbi Matondo (senast 2026-09-29).

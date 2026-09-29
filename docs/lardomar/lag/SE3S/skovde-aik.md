@@ -1,6 +1,6 @@
 # Skövde AIK (Div 1 Södra) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [SE3S](../../ligor/SE3S.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [SE3S](../../ligor/SE3S.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -41,3 +41,36 @@ Form senaste 8 (äldst → senast): FVOVVFFV · senaste match 2026-09-26
 | Åtvidaberg | 2 | 0-1-1 | 1–2 | 2026-08-16 1-2 (b) |
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
+
+## Trupp (Transfermarkt, hämtad 2026-09-29)
+
+Tränare: Roberth Jacobsson. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 25 | Amar Ibrahimovic | Goalkeeper | 26 | Sweden | – | – | – | – | 0/0 |  |
+| 30 | Gustav Torstensson | Goalkeeper | 21 | Sweden | – | – | – | – | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Gottfrid Elofsson | Defender | 20 | Sweden | – | – | – | – | 0/0 |  |
+| 18 | Linus Land | Defender | 27 | Sweden | – | – | – | – | 0/0 |  |
+| 4 | Aldin Basic | Centre-Back | 28 | Sweden | – | – | – | – | 0/0 |  |
+| 14 | Liam Svensson | Centre-Back | 20 | Sweden | – | – | – | – | 0/0 |  |
+| 3 | Samuel Johnson | Centre-Back | 19 | Sweden | – | – | – | – | 0/0 |  |
+| 19 | Samuel Sörman | Right-Back | 26 | Sweden | – | – | – | – | 0/0 |  |
+| 12 | Valdemar Linnarsson | Right-Back | 20 | Sweden | – | – | – | – | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Hannes Forsgård | Midfielder | 22 | Sweden | – | – | – | – | 0/0 |  |
+| 6 | Erik Ström | Midfielder | 20 | Sweden | – | – | – | – | 0/0 |  |
+| 13 | Arvid Remmerfelt | Midfielder | 20 | Sweden | – | – | – | – | 0/0 |  |
+| 15 | Esaïe Yoro | Midfielder | 20 | France | – | – | – | – | 0/0 |  |
+| 16 | Arvid Södeliden | Midfielder | 20 | Sweden | – | – | – | – | 0/0 |  |
+|  | Antonio Almen | Central Midfield | 22 | Finland | – | – | – | – | 0/0 |  |
+|  | Elias Younan | Attacking Midfield | 16 | Sweden | – | – | – | – | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Emil Skillermo | Left Winger | 24 | Sweden | – | – | – | – | 0/0 |  |
+| 10 | Elias Nordström | Left Winger | 22 | Sweden | – | – | – | – | 0/0 |  |
+|  | Alfons Nygaard | Centre-Forward | 24 | Sweden | – | – | – | – | 0/0 |  |
+| 9 | Marc Agerborn | Centre-Forward | 23 | Sweden | – | – | – | – | 0/0 |  |
+| 11 | Liam Samuelsson | Striker | 20 | Sweden | – | – | – | – | 0/0 |  |
+| 20 | Walter Ansgariusson | Striker | 19 | Sweden | – | – | – | – | 0/0 |  |

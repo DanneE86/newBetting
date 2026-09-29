@@ -1,6 +1,6 @@
 # Werder Bremen (Bundesliga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [BL](../../ligor/BL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [BL](../../ligor/BL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -63,9 +63,9 @@ Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: s
 | M'gladbach | 14 | 2-6-6 | 24–28 | −0,35 | +18 pe | 2026-01-31 1-1 (h) |
 | Mainz | 14 | 6-2-6 | 17–20 | +0,08 | −12 pe | 2026-03-15 0-2 (h) |
 | Ein Frankfurt | 13 | 2-6-5 | 19–26 | −0,19 | +21 pe | 2026-01-16 3-3 (h) |
-| Stuttgart | 12 | 3-4-5 | 14–19 | −0,07 | +9 pe | 2026-04-26 1-1 (b) |
 | Union Berlin | 12 | 5-1-6 | 18–17 | +0,06 | −19 pe | 2026-03-08 4-1 (b) |
 | FC Koln | 11 | 3-5-3 | 16–18 | −0,08 | +19 pe | 2026-09-12 1-1 (b) |
+| Stuttgart | 11 | 3-4-4 | 13–17 | +0,05 | +12 pe | 2026-04-26 1-1 (b) |
 | Schalke 04 | 10 | 6-2-2 | 20–11 | +0,53 | −7 pe | 2023-04-29 1-2 (b) |
 | Hamburg | 4 | 2-0-2 | 8–8 | −0,03 | −27 pe | 2026-04-18 3-1 (h) |
 | Paderborn | 4 | 2-0-2 | 10–9 | −0,33 | −24 pe | 2022-01-22 4-3 (b) |
@@ -84,7 +84,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-11-23 | Europa 2525 | RB Leipzig - Werder Bremen | 1 | 12 % | 18 % |
 | 2025-09-14 | Europa 2505 | Mönchengladbach - Werder Bremen | 2 ✓ | 24 % | 29 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Daniel Thioune. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

@@ -1,6 +1,6 @@
 # Sevilla (La Liga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [LL](../../ligor/LL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [LL](../../ligor/LL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -41,7 +41,7 @@ Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 l
 | Felix Correia | 15 % | 0 / 83 | – / 1,17 | – / −0,11 |
 | Lucas Stassin | 14 % | 0 / 83 | – / 1,17 | – / −0,11 |
 | Youssouf Fofana | 11 % | 0 / 83 | – / 1,17 | – / −0,11 |
-| Akor Adams | 10 % | 5 / 78 | 0,80 / 1,19 | −0,62 / −0,08 |
+| Akor Adams | 9 % | 5 / 78 | 0,80 / 1,19 | −0,62 / −0,08 |
 | Jon Guridi | 7 % | 0 / 83 | – / 1,17 | – / −0,11 |
 | Giorgi Kochorashvili | 6 % | 0 / 83 | – / 1,17 | – / −0,11 |
 
@@ -87,22 +87,21 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-11-30 | Europa 2527 | Sevilla - Real Betis | 2 | 34 % | 35 % |
 | 2025-08-17 | Europa 2497 | Athletic Bilbao - Sevilla | 1 | 10 % | 16 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Luis García. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Rubén Vargas (skadad, åter Mid October 2026), Lucas Stassin (skadad, åter Early October 2026)
+**Skadade/borta nu:** Fran González (skadad, åter Mid October 2026), Rubén Vargas (skadad, åter Mid October 2026), Lucas Stassin (skadad, åter Early October 2026)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
 | 1 | Odysseas Vlachodimos | GK | 32 | Greece | 2,1 M€ | 6,75 | 0 | 0 | 0/0 |  |
-| 13 | Fran González | GK | 21 | Spain | 1,4 M€ | – | 0 | 0 | 0/0 |  |
+| 13 | Fran González | GK | 21 | Spain | 1,4 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | | **Backar** | | | | | | | | | |
 | 2 | Juan Iglesias | RB,LWB,RWB,CB,RM | 28 | Spain | 2,4 M€ | 7,12 | 1 | 0 | 1/0 |  |
 | 3 | Julio Díaz | LB | 21 | Spain | – | 6,35 | 0 | 0 | 0/0 |  |
 | 4 | Kike Salas | CB | 24 | Spain | 7,8 M€ | 6,92 | 0 | 0 | 1/1 |  |
-| 5 | Andrés Lopez | CB | 23 | Spain | – | 6,97 | 0 | 0 | 0/0 |  |
 | 12 | Arouna Sangante | CB,RB | 24 | Senegal | 5,1 M€ | 6,11 | 0 | 0 | 0/1 |  |
 | 15 | Fábio Cardoso | CB | 32 | Portugal | 1,1 M€ | – | 0 | 0 | 0/0 |  |
 | 17 | Gabriel Suazo | LB,LWB,LM | 29 | Chile | 4,3 M€ | 7,14 | 0 | 0 | 2/0 |  |
@@ -110,7 +109,7 @@ Tränare: Luis García. Betyg, mål och assist gäller innevarande säsong enlig
 | 23 | Marcão | CB | 30 | Brazil | 1,7 M€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 6 | Lucien Agoumé | CM,CDM,CAM | 24 | France | 10,9 M€ | 7,24 | 0 | 0 | 2/0 |  |
-| 8 | Giorgi Kochorashvili | CM,CDM | 27 | Georgia | 2,3 M€ | 6,59 | 0 | 1 | 1/0 |  |
+| 8 | Giorgi Kochorashvili | CDM,CM | 27 | Georgia | 2,3 M€ | 6,59 | 0 | 1 | 1/0 |  |
 | 10 | Peque Fernández | CAM,CM,RM | 23 | Spain | 3,1 M€ | 6,86 | 1 | 0 | 1/0 |  |
 | 14 | Manu Bueno | CM | 22 | Spain | – | 6,28 | 0 | 0 | 0/0 |  |
 | 18 | Jon Guridi | CM,CAM,CDM | 31 | Spain | 1,4 M€ | 6,69 | 1 | 0 | 3/0 |  |
@@ -125,3 +124,5 @@ Tränare: Luis García. Betyg, mål och assist gäller innevarande säsong enlig
 | 20 | Félix Correia | LW,RW,RM,LM | 25 | Portugal | 5,1 M€ | 7,16 | 0 | 1 | 0/0 |  |
 | 21 | Chidera Ejuke | RW,LM | 28 | Nigeria | 1,9 M€ | 6,58 | 1 | 0 | 1/0 |  |
 | 30 | Miguel Sierra | RW | 22 | Spain | 446 k€ | 7,31 | 2 | 0 | 2/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Andrés Lopez (senast 2026-09-29).

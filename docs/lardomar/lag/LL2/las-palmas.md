@@ -1,10 +1,10 @@
 # Las Palmas (LaLiga 2) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [LL2](../../ligor/LL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [LL2](../../ligor/LL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
-- Stark historik mot Sp Gijon (+0,53 p/match mot marknaden, 12 möten), Girona (−0,51 p/match mot marknaden, 11 möten), Burgos (−1,07 p/match mot marknaden, 7 möten), Valladolid (+0,91 p/match mot marknaden, 6 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Stark historik mot Girona (−0,51 p/match mot marknaden, 11 möten), Sp Gijon (+0,67 p/match mot marknaden, 11 möten), Burgos (−1,07 p/match mot marknaden, 7 möten), Valladolid (+0,91 p/match mot marknaden, 6 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -38,9 +38,9 @@ Form (äldst → senast): VVVFOVFF · senaste match 2026-09-27
 | Motståndare | M | V-O-F | Mål | Mot marknaden | Kryss mot odds | Senast |
 |---|---|---|---|---|---|---|
 | Almeria | 12 | 4-3-5 | 10–15 | −0,02 | −4 pe | 2026-05-16 2-1 (b) |
-| Sp Gijon | 12 | 7-2-3 | 10–9 | +0,53 | −14 pe | 2026-03-22 1-0 (h) |
 | Girona | 11 | 1-3-7 | 7–17 | −0,51 | −1 pe | 2026-08-29 2-5 (b) |
 | Leganes | 11 | 5-2-4 | 12–11 | +0,22 | −12 pe | 2026-09-04 0-0 (h) |
+| Sp Gijon | 11 | 7-2-2 | 10–8 | +0,67 | −12 pe | 2026-03-22 1-0 (h) |
 | Albacete | 10 | 5-2-3 | 17–16 | +0,15 | −10 pe | 2026-08-16 2-1 (h) |
 | Oviedo | 10 | 2-5-3 | 9–9 | −0,32 | +19 pe | 2023-04-09 0-1 (h) |
 | Tenerife | 10 | 4-4-2 | 11–10 | +0,29 | +8 pe | 2023-03-18 1-4 (b) |
@@ -59,7 +59,7 @@ Form (äldst → senast): VVVFOVFF · senaste match 2026-09-27
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Ruben de la Barrera. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -68,7 +68,7 @@ Tränare: Ruben de la Barrera. Betyg, mål och assist gäller innevarande säson
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 13 | José Antonio Caro | GK | 32 | Spain | 257 k€ | 6,71 | 0 | 0 | 0/0 |  |
+| 13 | José Antonio Caro | GK | 32 | Spain | 257 k€ | 6,70 | 0 | 0 | 0/0 |  |
 | 35 | Adri Suárez | Keeper | 21 | Spain | – | – | 0 | 0 | 0/0 |  |
 | 41 | Jorge Valverde | Keeper | 19 | Spain | – | – | 0 | 0 | 0/0 |  |
 | 43 | Eduard Mohedano | Keeper | 22 | Spain | – | – | 0 | 0 | 0/0 |  |
@@ -80,19 +80,19 @@ Tränare: Ruben de la Barrera. Betyg, mål och assist gäller innevarande säson
 | 5 | Enrique Clemente | LB | 27 | Spain | 1,0 M€ | 6,52 | 1 | 0 | 0/0 | skadad, åter Late November 2026 |
 | 15 | Juanma Herzog | CB | 22 | Spain | 1,7 M€ | 6,72 | 0 | 0 | 0/0 |  |
 | 17 | Viti | RB,RM,LW | 29 | Spain | 851 k€ | – | 0 | 0 | 0/0 | skadad, åter Early December 2026 |
-| 21 | Giovanni Bonfanti | CB | 23 | Italy | 2,1 M€ | 6,79 | 0 | 0 | 2/0 |  |
-| 23 | Andrés Rodríguez | LB | 24 | Spain | – | 5,85 | 0 | 0 | 1/0 |  |
+| 21 | Giovanni Bonfanti | CB | 23 | Italy | 2,1 M€ | 6,78 | 0 | 0 | 2/0 |  |
+| 23 | Andrés Rodríguez | LB | 24 | Spain | – | 6,03 | 0 | 0 | 1/0 |  |
 | 25 | Valentín Pezzolesi | RB | 19 | Argentina | 690 k€ | 7,05 | 1 | 0 | 1/0 |  |
 | 40 | Aidan Perez | Defender | 20 | Spain | – | – | 0 | 0 | 0/0 |  |
 | 42 | Rachid Saiah | Defender | 20 | Morocco | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 |  | Edward Cedeño | CM | 23 | Panama | 496 k€ | – | 0 | 0 | 0/0 |  |
-| 6 | Inaki González | CM,CDM | 22 | Spain | 431 k€ | 6,81 | 0 | 1 | 2/1 |  |
+| 6 | Inaki González | CM,CDM | 22 | Spain | 431 k€ | 6,78 | 0 | 1 | 2/1 |  |
 | 8 | Sergio Ruiz | CM,CDM | 31 | Spain | 640 k€ | 6,53 | 0 | 0 | 0/0 | skadad, åter Late December 2026 |
 | 9 | Jeremía Recoba | ST | 22 | Uruguay | 1,1 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
-| 11 | Taisei Miyashiro | RM,ST,CAM,RW,CM,LM,LW | 26 | Japan | 1,4 M€ | 7,07 | 2 | 2 | 0/0 |  |
-| 12 | Enzo Loiodice | CM,CDM | 25 | France | 1,1 M€ | 6,64 | 0 | 0 | 2/0 |  |
-| 14 | Manu Fuster | ST,RM,LM,CAM,LW | 28 | Spain | 1,6 M€ | 7,07 | 1 | 1 | 1/0 |  |
+| 11 | Taisei Miyashiro | RM,ST,CAM,RW,CM,LM | 26 | Japan | 1,4 M€ | 7,10 | 2 | 2 | 0/0 |  |
+| 12 | Enzo Loiodice | CM,CDM,LB | 25 | France | 1,1 M€ | 6,65 | 0 | 0 | 2/0 |  |
+| 14 | Manu Fuster | ST,RM,LM,CAM,LW | 28 | Spain | 1,6 M€ | 7,02 | 1 | 1 | 1/0 |  |
 | 16 | Mateo Aćimović | RW | 18 | Slovenia | – | – | 0 | 0 | 0/0 |  |
 | 20 | Kirian Rodríguez | CM,CDM | 30 | Spain | 796 k€ | 6,69 | 0 | 0 | 2/0 |  |
 | 22 | Ale García | LM,RM,RW,LW | 23 | Spain | 1,5 M€ | – | 0 | 0 | 0/0 | osäker |
@@ -100,7 +100,7 @@ Tränare: Ruben de la Barrera. Betyg, mål och assist gäller innevarande säson
 | 7 | Jefté Betancor | ST,LM | 33 | Spain | 480 k€ | 6,51 | 1 | 0 | 0/0 |  |
 | 10 | Jesé | ST | 33 | Spain | 354 k€ | 6,85 | 2 | 0 | 0/1 |  |
 | 19 | Sandro Ramírez | LM | 31 | Spain | 303 k€ | 6,49 | 1 | 0 | 0/0 |  |
-| 24 | Iván Jaime | LW,CAM | 26 | Spain | 2,5 M€ | 7,32 | 1 | 1 | 1/0 |  |
+| 24 | Iván Jaime | LW,CAM,LM | 26 | Spain | 2,5 M€ | 7,32 | 1 | 1 | 1/0 |  |
 | 26 | Aboubacar Bassinga | RW | 21 | Burkina Faso | 557 k€ | – | 0 | 0 | 0/0 |  |
 | 29 | Adam Arvelo | RM | 21 | Spain | – | – | 0 | 0 | 0/0 |  |
 | 29 | Elías Romero | Attacker | 22 | Spain | – | 6,41 | 0 | 2 | 0/0 |  |

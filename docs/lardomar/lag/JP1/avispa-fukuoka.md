@@ -1,6 +1,6 @@
 # Avispa Fukuoka (J1 League) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [JP1](../../ligor/JP1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [JP1](../../ligor/JP1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -52,7 +52,7 @@ Form (äldst → senast): FVFFFOFF · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Shinya Tsukahara. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -64,7 +64,6 @@ Tränare: Shinya Tsukahara. Betyg, mål och assist gäller innevarande säsong e
 | 41 | Kazuki Fujita | GK | 25 | Japan | 257 k€ | 6,30 | 0 | 0 | 0/0 |  |
 | 99 | Powell Obinna Obi | GK | 28 | Japan | 154 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 3 | Tatsuki Nara | CB | 33 | Japan | 166 k€ | 5,21 | 0 | 0 | 1/0 |  |
 | 5 | Takumi Kamijima | CB | 29 | Japan | 231 k€ | 5,82 | 0 | 0 | 0/1 |  |
 | 15 | Yuma Tsujioka | CB | 24 | Japan | 203 k€ | 6,67 | 1 | 0 | 1/0 |  |
 | 16 | Teppei Oka | CB | 25 | Japan | – | 6,63 | 0 | 0 | 0/0 |  |
@@ -102,3 +101,5 @@ Tränare: Shinya Tsukahara. Betyg, mål och assist gäller innevarande säsong e
 | 32 | Abdul Hanan Sani Brown | Attacker | 20 | Japan | 449 k€ | 5,72 | 0 | 0 | 0/0 |  |
 | 49 | Ichika Maeda | Attacker | 20 | Japan | 373 k€ | – | 0 | 0 | 0/0 |  |
 | 57 | Ryusei Kitahama | Attacker | 22 | Japan | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Tatsuki Nara (senast 2026-09-29).

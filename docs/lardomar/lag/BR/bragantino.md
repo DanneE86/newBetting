@@ -1,6 +1,6 @@
 # Bragantino (Brasileirão Série A) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [BR](../../ligor/BR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [BR](../../ligor/BR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -54,11 +54,11 @@ Form (äldst → senast): OFOVFFOF · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Vágner Mancini. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Tiago Volpi (osäker), Patrick (skadad, åter A few days), Davi Gomes (skadad, åter Mid December 2026)
+**Skadade/borta nu:** Tiago Volpi (osäker), Patrick (skadad, åter A few days)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -75,10 +75,6 @@ Tränare: Vágner Mancini. Betyg, mål och assist gäller innevarande säsong en
 | 23 | Agustín Sant'Anna | RB | 29 | Uruguay | 2,2 M€ | – | 0 | 0 | 0/0 |  |
 | 29 | Juninho Capixaba | LB | 29 | Brazil | 3,0 M€ | – | 0 | 0 | 0/0 |  |
 | 34 | José Hurtado | RB | 24 | Ecuador | – | – | 0 | 0 | 0/0 |  |
-| 46 | Breno de Moraes | RB | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 51 | Cauê Santos | LB | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 52 | Ryan Augusto | RB | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 54 | Weimar Vivas | Defender | 19 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 |  | Patrick | CM | 22 | Brazil | 1,6 M€ | – | 0 | 0 | 0/0 | skadad, åter A few days |
 | 5 | Fabinho | CDM,CM | 24 | Brazil | 3,6 M€ | – | 0 | 0 | 0/0 |  |
@@ -86,15 +82,8 @@ Tränare: Vágner Mancini. Betyg, mål och assist gäller innevarande säsong en
 | 7 | Eric Ramires | CDM,CM,CAM | 26 | Brazil | 2,1 M€ | – | 0 | 0 | 0/0 |  |
 | 15 | Ignacio Sosa | CDM,CM | 23 | Uruguay | 2,8 M€ | – | 0 | 0 | 0/0 |  |
 | 20 | Rodriguinho | CAM,CDM,CM | 22 | Brazil | 5,0 M€ | – | 0 | 0 | 0/0 |  |
-| 22 | Gustavinho | CM,CDM,CAM | 22 | Brazil | 2,2 M€ | – | 0 | 0 | 0/0 |  |
 | 25 | Praxedes | LW | 24 | Brazil | 876 k€ | – | 0 | 0 | 0/0 |  |
-| 27 | Davi Gomes | RW | 21 | Brazil | – | – | 0 | 0 | 0/0 | skadad, åter Mid December 2026 |
 | 35 | Matheus Fernandes | CDM,CM | 28 | Brazil | 973 k€ | – | 0 | 0 | 0/0 |  |
-| 49 | Luis Gustavo | Midfielder | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 55 | Chrystian Delfino | Midfielder | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 58 | Gabriel Lopes | Midfielder | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 62 | Marquinhos | CM | 22 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 62 | Vini Krygsman | Midfielder | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 8 | Eduardo Sasha | ST,CAM | 34 | Brazil | 841 k€ | – | 0 | 0 | 0/0 |  |
 | 9 | Isidro Pitta | ST | 27 | Paraguay | 6,5 M€ | – | 0 | 0 | 0/0 |  |
@@ -104,6 +93,5 @@ Tränare: Vágner Mancini. Betyg, mål och assist gäller innevarande säsong en
 | 21 | Lucas Barbosa | RW,CAM,LW,RM | 25 | Brazil | 2,3 M€ | – | 0 | 0 | 0/0 |  |
 | 30 | Henry Mosquera | LW,LM | 24 | Colombia | 2,5 M€ | – | 0 | 0 | 0/0 |  |
 | 32 | José Herrera | RW,LW,CAM,RM,ST | 23 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 41 | Yuri | LW | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 47 | Wallace Yan | ST | 21 | Brazil | 5,2 M€ | – | 0 | 0 | 0/0 |  |
-| 67 | Jhuan Nunes | ST | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (14): Gustavinho (senast 2026-09-29), Gabriel Lopes (senast 2026-09-29), Wallace Yan (senast 2026-09-29), Marquinhos (senast 2026-09-29), Davi Gomes (senast 2026-09-29), Yuri (senast 2026-09-29), Cauê Santos (senast 2026-09-29), Weimar Vivas (senast 2026-09-29), Ryan Augusto (senast 2026-09-29), Jhuan Nunes (senast 2026-09-29), Luis Gustavo (senast 2026-09-29), Breno de Moraes (senast 2026-09-29), Chrystian Delfino (senast 2026-09-29), Vini Krygsman (senast 2026-09-29).

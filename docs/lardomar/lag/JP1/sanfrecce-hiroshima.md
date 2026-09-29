@@ -1,6 +1,6 @@
 # Sanfrecce Hiroshima (J1 League) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [JP1](../../ligor/JP1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [JP1](../../ligor/JP1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -40,9 +40,9 @@ Form (äldst → senast): VVOOVFVV · senaste match 2026-09-19
 
 | Motståndare | M | V-O-F | Mål | Mot marknaden | Kryss mot odds | Senast |
 |---|---|---|---|---|---|---|
-| Gamba Osaka | 16 | 7-4-5 | 21–15 | −0,23 | −0 pe | 2026-08-29 0-0 (b) |
 | Nagoya Grampus | 16 | 6-2-8 | 19–17 | −0,33 | −16 pe | 2026-09-02 3-0 (h) |
 | Cerezo Osaka | 15 | 9-4-2 | 24–10 | +0,41 | −0 pe | 2026-09-12 6-1 (h) |
+| Gamba Osaka | 15 | 7-4-4 | 21–14 | −0,13 | +2 pe | 2026-08-29 0-0 (b) |
 | Kawasaki Frontale | 15 | 3-5-7 | 17–29 | −0,37 | +8 pe | 2026-08-22 1-1 (h) |
 | Urawa Reds | 15 | 6-4-5 | 24–15 | −0,10 | −2 pe | 2026-08-15 4-1 (b) |
 | FC Tokyo | 14 | 4-4-6 | 17–17 | −0,55 | +2 pe | 2025-10-17 0-0 (h) |
@@ -60,7 +60,7 @@ Form (äldst → senast): VVOOVFVV · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Bartosch Gaul. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

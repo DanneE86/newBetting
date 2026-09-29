@@ -1,5 +1,6 @@
 // Matchkontext fran FotMob (utan nyckel) for Stryktipset/Europatipset: elva (senaste/bekraftad), franvaro med
-// marknadsvarde, vilodagar och nasta match (rotation), domare, arena, vader, form och inbordes moten.
+// marknadsvarde, vilodagar och nasta match (rotation), domare, arena, form och inbordes moten.
+// Vader hamtas inte: det paverkar inte utfallet (data/reports/pro-evaluation.json, weatherEffect).
 // Fungerar for alla lag FotMob tacker: landslag, Europacup, topp 5-ligor, Allsvenskan osv.
 //   const ctx = await fetchMatchContext({ kickoff, home, away, homeCountry, awayCountry })
 // Matchning: FotMobs matchlista for avsparksdagen (UTC), avspark +-2 h och lagnamn (svenska landsnamn oversatta
@@ -179,7 +180,6 @@ export async function fetchMatchContext(ev) {
   const c = md.content;
   const lu = c.lineup || {};
   const ib = c.matchFacts?.infoBox || {};
-  const w = c.weather;
   const [home, away] = await Promise.all([side(lu.homeTeam, ev.kickoff, true), side(lu.awayTeam, ev.kickoff, false)]);
   const form = (c.matchFacts?.teamForm || []).map((arr) => (arr || []).map((x) => x.resultString).join(''));
   return {
@@ -192,7 +192,6 @@ export async function fetchMatchContext(ev) {
     home, away,
     referee: ib.Referee?.text || null,
     stadium: ib.Stadium ? { name: ib.Stadium.name, city: ib.Stadium.city, country: ib.Stadium.country, lat: ib.Stadium.lat, long: ib.Stadium.long, surface: ib.Stadium.surface } : null,
-    weather: w ? { temperature: w.temperature, windSpeed: w.windSpeed, precipChance: w.precipChance, precipitation: w.precipitation, description: w.description } : null,
     form: { home: form[0] || null, away: form[1] || null },
     h2h: c.h2h?.summary ? { homeWins: c.h2h.summary[0], draws: c.h2h.summary[1], awayWins: c.h2h.summary[2] } : null,
     fetchedAt: new Date().toISOString(),
@@ -219,6 +218,5 @@ export function contextNotes(cx, homeName, awayName) {
     if (s.daysToNext != null && s.daysToNext < 4 && s.nextMatch?.tournament && s.nextMatch.tournament !== cx.league) out.push(`${name} spelar ${s.nextMatch.tournament} om ${s.daysToNext} dagar, vilket ger risk för rotation.`);
   }
   if (cx.referee) out.push(`Domare: ${cx.referee}.`);
-  if (cx.weather && (cx.weather.windSpeed >= 10 || cx.weather.precipChance >= 60)) out.push(`Väder: ${cx.weather.description}, vind ${cx.weather.windSpeed} m/s, risk för nederbörd ${cx.weather.precipChance} %.`);
   return out;
 }

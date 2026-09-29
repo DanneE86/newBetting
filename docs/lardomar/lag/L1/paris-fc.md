@@ -1,6 +1,6 @@
 # Paris FC (Ligue 1) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [L1](../../ligor/L1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [L1](../../ligor/L1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -77,7 +77,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-09-21 | Europa 2507 | Marseille - Paris Saint-Germain | 1 | 61 % | 53 % |
 | 2025-08-17 | Europa 2497 | Nantes - Paris Saint-Germain | 2 ✓ | 87 % | 75 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Liam Rosenior. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -92,7 +92,7 @@ Tränare: Liam Rosenior. Betyg, mål och assist gäller innevarande säsong enli
 |  | Emmanuel Mbemba | CB | 18 | France | – | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 5 | Mamadou Mbow | CB | 26 | Senegal | 4,6 M€ | 6,52 | 0 | 0 | 0/0 |  |
 | 6 | Otávio | CB,LB | 24 | Brazil | 10,5 M€ | 7,60 | 0 | 0 | 1/0 | skadad, åter A few weeks |
-| 14 | Hamari Traoré | RB,CB,RWB,LB | 34 | Mali | 909 k€ | 6,70 | 0 | 0 | 1/0 |  |
+| 14 | Hamari Traoré | RB,LB,RWB | 34 | Mali | 909 k€ | 6,70 | 0 | 0 | 1/0 |  |
 | 19 | Nhoa Sangui | LB,LWB,RB,RWB | 20 | France | 10,2 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 25 | Yoan Koré | RB,CB | 21 | France | 655 k€ | – | 0 | 0 | 0/0 |  |
 | 28 | Thibault De Smet | LB,LWB | 28 | Belgium | 950 k€ | 6,80 | 0 | 0 | 1/0 |  |
@@ -106,7 +106,7 @@ Tränare: Liam Rosenior. Betyg, mål och assist gäller innevarande säsong enli
 | 17 | Adama Camara | CM,RB,RWB | 29 | Mali | 1,7 M€ | 7,26 | 0 | 0 | 0/0 |  |
 | 20 | Maxime Lopez | CM,CDM,CAM | 28 | France | 2,1 M€ | 7,38 | 0 | 1 | 1/0 |  |
 | 23 | Rudy Matondo | CM,CDM | 18 | France | 5,5 M€ | 6,46 | 0 | 0 | 1/0 |  |
-| 33 | Pierre Lees-Melou | CDM,CM | 33 | France | 1,9 M€ | 7,65 | 0 | 0 | 0/0 |  |
+| 33 | Pierre Lees-Melou | CM,CDM | 33 | France | 1,9 M€ | 7,65 | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 9 | Lassine Sinayoko | ST,RW,LW,RM | 26 | Mali | 2,9 M€ | 7,96 | 4 | 1 | 1/0 |  |
 | 11 | Jean-Philippe Krasso | ST | 29 | Ivory Coast | 2,0 M€ | – | 0 | 0 | 0/0 |  |

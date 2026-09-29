@@ -1,6 +1,6 @@
 # Liga Profesional (AR) – lärdomar
 
-Genererad 2026-09-28 av `node scripts/analyze-learnings.mjs`. Skriv inte för hand här: egna anteckningar läggs i `docs/lardomar/anteckningar/AR.md`.
+Genererad 2026-09-29 av `node scripts/analyze-learnings.mjs`. Skriv inte för hand här: egna anteckningar läggs i `docs/lardomar/anteckningar/AR.md`.
 
 Underlag: 6384 matcher, säsong 2012/13 – 2026. Marknad = stängningsodds utan marginal (Pinnacle, annars snitt av bolagen), öppningsodds saknas. xG: saknas (0 % av matcherna).
 
@@ -78,7 +78,7 @@ Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (
 
 Inga matcher från ligan i de sparade backtesten ännu.
 
-## Tabell nu (FotMob, 2026-09-28)
+## Tabell nu (FotMob, 2026-09-29)
 
 **Clausura Group A**
 
@@ -94,7 +94,7 @@ Inga matcher från ligan i de sparade backtesten ännu.
 | 8 | Newells Old Boys | 10 | 4 | 4 | 2 | 11-8 | 3 | 16 |
 | 9 | Union de Santa Fe | 10 | 4 | 1 | 5 | 17-16 | 1 | 13 |
 | 10 | San Lorenzo | 10 | 3 | 2 | 5 | 4-8 | -4 | 11 |
-| 11 | Estudiantes Rio Cuarto | 10 | 3 | 1 | 6 | 10-11 | -1 | 10 |
+| 11 | Estudiantes L.P. | 10 | 3 | 1 | 6 | 10-11 | -1 | 10 |
 | 12 | Dep. Riestra | 10 | 2 | 4 | 4 | 8-10 | -2 | 10 |
 | 13 | Platense | 10 | 2 | 3 | 5 | 9-15 | -6 | 9 |
 | 14 | Talleres Cordoba | 10 | 2 | 2 | 6 | 11-17 | -6 | 8 |
@@ -104,9 +104,9 @@ Inga matcher från ligan i de sparade backtesten ännu.
 
 | # | Lag | M | V | O | F | Mål | +/− | P |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Boca Juniors | 10 | 5 | 3 | 2 | 13-9 | 4 | 18 |
+| 1 | Argentinos Jrs | 10 | 5 | 3 | 2 | 13-9 | 4 | 18 |
 | 2 | Rosario Central | 10 | 5 | 3 | 2 | 11-8 | 3 | 18 |
-| 3 | Independiente | 10 | 5 | 2 | 3 | 14-13 | 1 | 17 |
+| 3 | Ind. Rivadavia | 10 | 5 | 2 | 3 | 14-13 | 1 | 17 |
 | 4 | Gimnasia L.P. | 10 | 5 | 2 | 3 | 15-15 | 0 | 17 |
 | 5 | Belgrano | 10 | 4 | 4 | 2 | 11-7 | 4 | 16 |
 | 6 | Huracan | 10 | 4 | 4 | 2 | 10-8 | 2 | 16 |
@@ -124,7 +124,7 @@ Inga matcher från ligan i de sparade backtesten ännu.
 
 | # | Lag | M | V | O | F | Mål | +/− | P |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Estudiantes Rio Cuarto | 16 | 9 | 4 | 3 | 19-7 | 12 | 31 |
+| 1 | Estudiantes L.P. | 16 | 9 | 4 | 3 | 19-7 | 12 | 31 |
 | 2 | Boca Juniors | 16 | 8 | 6 | 2 | 22-9 | 13 | 30 |
 | 3 | Velez Sarsfield | 16 | 7 | 7 | 2 | 18-12 | 6 | 28 |
 | 4 | Talleres Cordoba | 16 | 7 | 5 | 4 | 17-13 | 4 | 26 |
@@ -144,9 +144,9 @@ Inga matcher från ligan i de sparade backtesten ännu.
 
 | # | Lag | M | V | O | F | Mål | +/− | P |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Independiente | 16 | 10 | 4 | 2 | 29-15 | 14 | 34 |
+| 1 | Ind. Rivadavia | 16 | 10 | 4 | 2 | 29-15 | 14 | 34 |
 | 2 | River Plate | 16 | 9 | 2 | 5 | 22-12 | 10 | 29 |
-| 3 | Boca Juniors | 16 | 8 | 5 | 3 | 17-13 | 4 | 29 |
+| 3 | Argentinos Jrs | 16 | 8 | 5 | 3 | 17-13 | 4 | 29 |
 | 4 | Rosario Central | 16 | 8 | 4 | 4 | 20-16 | 4 | 28 |
 | 5 | Belgrano | 16 | 7 | 5 | 4 | 17-13 | 4 | 26 |
 | 6 | Gimnasia L.P. | 16 | 8 | 2 | 6 | 19-19 | 0 | 26 |

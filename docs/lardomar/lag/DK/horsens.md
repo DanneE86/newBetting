@@ -1,6 +1,6 @@
 # Horsens (Superligaen) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [DK](../../ligor/DK.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [DK](../../ligor/DK.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -47,7 +47,7 @@ Form (äldst → senast): FFVVFVFO · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Niki Zimling. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -88,5 +88,6 @@ Tränare: Niki Zimling. Betyg, mål och assist gäller innevarande säsong enlig
 | 25 | Fallou Sene | ST | 22 | Senegal | 489 k€ | – | 0 | 0 | 0/0 |  |
 | 27 | Yamirou Ouorou | RW,RM | 20 | Benin | 407 k€ | 6,92 | 2 | 1 | 1/0 |  |
 | 29 | Frederik Brandhof | RW,CM | 30 | Denmark | 257 k€ | 6,18 | 0 | 0 | 0/0 |  |
-| 38 | Oscar Mandrup | LW | 18 | Denmark | – | – | 0 | 0 | 0/0 |  |
 | 40 | Ismaila Ceesay | Attacker | 18 | The Gambia | – | – | 0 | 0 | 1/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Oscar Mandrup (senast 2026-09-29).

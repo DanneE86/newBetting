@@ -1,6 +1,6 @@
 # Roma (Serie A) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -55,11 +55,11 @@ Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: s
 | Inter | 17 | 2-6-9 | 18–33 | −0,29 | +9 pe | 2026-09-19 2-2 (h) |
 | Atalanta | 16 | 3-4-9 | 18–27 | −0,43 | −2 pe | 2026-09-05 2-1 (h) |
 | Juventus | 16 | 3-6-7 | 19–22 | −0,18 | +9 pe | 2026-03-01 3-3 (h) |
-| Lazio | 16 | 7-4-5 | 19–15 | +0,16 | −4 pe | 2026-05-17 2-0 (h) |
 | Napoli | 16 | 2-6-8 | 14–25 | −0,34 | +9 pe | 2026-02-15 2-2 (b) |
 | Torino | 16 | 11-2-3 | 27–15 | +0,30 | −13 pe | 2026-09-14 2-0 (b) |
 | Udinese | 16 | 11-1-4 | 26–12 | +0,32 | −21 pe | 2026-02-02 0-1 (b) |
 | Bologna | 15 | 7-3-5 | 21–17 | −0,07 | −8 pe | 2026-04-25 2-0 (b) |
+| Lazio | 15 | 6-4-5 | 16–14 | +0,06 | −3 pe | 2026-05-17 2-0 (h) |
 | Milan | 15 | 2-6-7 | 19–26 | −0,52 | +11 pe | 2026-01-25 1-1 (h) |
 | Cagliari | 14 | 9-3-2 | 29–14 | +0,13 | −2 pe | 2026-02-09 2-0 (h) |
 | Genoa | 14 | 8-4-2 | 26–17 | +0,05 | +4 pe | 2026-03-08 1-2 (b) |
@@ -94,7 +94,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-10-05 | Europa 2511 | Fiorentina - Roma | 2 ✓ | 42 % | 39 % |
 | 2025-09-28 | Europa 2509 | Roma - Verona | 1 ✓ | 79 % | 67 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Gian Piero Gasperini. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

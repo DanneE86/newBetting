@@ -1,6 +1,6 @@
 # Strømsgodset (OBOS-ligaen) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [NO2](../../ligor/NO2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [NO2](../../ligor/NO2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -27,7 +27,7 @@ Form senaste 8 (äldst → senast): VFVVVOVV · senaste match 2026-09-20
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Magne Hoseth. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -36,10 +36,9 @@ Tränare: Magne Hoseth. Betyg, mål och assist gäller innevarande säsong enlig
 | | **Målvakter** | | | | | | | | | |
 | 1 | Mattias Lamhauge | GK | 27 | Faroe Islands | 210 k€ | – | 0 | 0 | 3/0 |  |
 | 12 | Simo Lampinen-Skaug | GK | 21 | Norway | 262 k€ | – | 0 | 0 | 0/0 |  |
-| 24 | Mads Myklebust | Keeper | 19 | Norway | – | – | 0 | 0 | 0/0 |  |
 | 52 | Simen Elind | Keeper | 16 | Norway | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 3 | Victor Dedes | LB,LM,LW | 23 | Denmark | 259 k€ | – | 3 | 1 | 1/0 |  |
+| 3 | Victor Dedes | LB,LM | 23 | Denmark | 259 k€ | – | 3 | 1 | 1/0 |  |
 | 4 | Aleksander van der Spa | CB | 21 | Norway | 258 k€ | – | 0 | 0 | 0/0 |  |
 | 5 | Bent Sørmo | CB,RB | 30 | Norway | 104 k€ | – | 1 | 0 | 2/0 |  |
 | 25 | Jesper Taaje | CB | 28 | Norway | 168 k€ | – | 4 | 1 | 2/0 |  |
@@ -58,8 +57,9 @@ Tränare: Magne Hoseth. Betyg, mål och assist gäller innevarande säsong enlig
 | 11 | Sebastian Pingel | ST | 33 | Denmark | 208 k€ | – | 15 | 1 | 3/0 |  |
 | 14 | Ole Kristian Enersen | RW,RB | 24 | Norway | 174 k€ | – | 0 | 0 | 1/0 |  |
 | 23 | Erik Frøland | RW | 19 | Norway | – | – | 1 | 0 | 0/0 |  |
-| 27 | Igor Fabian Gosik | ST | 18 | Norway | 660 k€ | – | 0 | 0 | 0/0 |  |
 | 38 | Jonathan Soerum | Attacker | 17 | Norway | – | – | 0 | 0 | 0/0 |  |
 | 39 | Mats Spiten | ST | 16 | Norway | 407 k€ | – | 1 | 0 | 2/0 |  |
 | 77 | Marcus Mehnert | RW,ST | 28 | Norway | 192 k€ | – | 6 | 4 | 0/0 |  |
 | 80 | Gustav Wikheim | LW,RW,CAM | 33 | Norway | 178 k€ | – | 2 | 1 | 2/0 |  |
+
+Har lämnat truppen sedan vi började spara (2): Mads Myklebust (senast 2026-09-29), Igor Fabian Gosik (senast 2026-09-29).

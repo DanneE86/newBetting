@@ -1,6 +1,6 @@
 # For Sittard (Eredivisie) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [ED](../../ligor/ED.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [ED](../../ligor/ED.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -36,10 +36,10 @@ Form (äldst → senast): FOVFVVFV · senaste match 2026-09-19
 
 | Motståndare | M | V-O-F | Mål | Mot marknaden | Kryss mot odds | Senast |
 |---|---|---|---|---|---|---|
-| Ajax | 16 | 0-2-14 | 10–56 | −0,31 | −2 pe | 2026-09-12 1-5 (h) |
 | AZ Alkmaar | 16 | 2-1-13 | 14–39 | −0,18 | −13 pe | 2026-08-22 0-2 (h) |
 | Feyenoord | 16 | 2-3-11 | 15–34 | +0,07 | +2 pe | 2026-05-03 1-2 (h) |
 | Heerenveen | 16 | 6-3-7 | 26–26 | +0,23 | −7 pe | 2026-04-25 1-2 (b) |
+| Ajax | 15 | 0-2-13 | 10–54 | −0,31 | −1 pe | 2026-09-12 1-5 (h) |
 | PSV Eindhoven | 15 | 0-3-12 | 14–48 | −0,17 | +7 pe | 2026-08-08 2-2 (b) |
 | Groningen | 14 | 7-1-6 | 17–20 | +0,44 | −19 pe | 2026-08-28 3-2 (b) |
 | Sparta Rotterdam | 14 | 2-6-6 | 12–22 | −0,25 | +16 pe | 2026-02-07 2-2 (h) |
@@ -62,7 +62,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 |---|---|---|---|---|---|
 | 2025-12-21 | Europa 2533 | Fortuna Sittard - AZ Alkmaar | 1 ✓ | 15 % | 24 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Danny Buijs. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

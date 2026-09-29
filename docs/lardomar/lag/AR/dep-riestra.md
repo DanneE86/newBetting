@@ -1,6 +1,6 @@
 # Dep. Riestra (Liga Profesional) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -59,7 +59,7 @@ Form (äldst → senast): FVFOOOFO · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Guillermo Duró. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -77,7 +77,6 @@ Tränare: Guillermo Duró. Betyg, mål och assist gäller innevarande säsong en
 | 6 | Ignacio Gariglio | CB | 28 | Argentina | 246 k€ | – | 0 | 0 | 0/0 |  |
 | 13 | Rodrigo Gallo | LWB,CB,LB | 25 | Argentina | 421 k€ | – | 0 | 0 | 0/0 |  |
 | 15 | Nicolás Sansotre | RWB,LWB,CB,RB,LB | 33 | Argentina | 533 k€ | – | 0 | 0 | 0/0 |  |
-| 17 | Manuel Aiello | Defender | 22 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 19 | Juan Randazzo | CB | 31 | Argentina | 280 k€ | – | 0 | 0 | 0/0 |  |
 | 22 | Cristian Paz | CB | 31 | Argentina | 539 k€ | – | 0 | 0 | 0/0 |  |
 | 24 | Facundo Miño | CB | 26 | Argentina | 661 k€ | – | 0 | 0 | 0/0 |  |
@@ -97,7 +96,8 @@ Tränare: Guillermo Duró. Betyg, mål och assist gäller innevarande säsong en
 | 11 | Alexander Díaz | ST,CM | 26 | Argentina | 873 k€ | – | 0 | 0 | 0/0 |  |
 | 17 | Ángel Almada | ST,RW,LW,CAM | 26 | Argentina | 381 k€ | – | 0 | 0 | 0/0 |  |
 | 20 | Thiago Lauro | RW | 21 | Argentina | 436 k€ | – | 0 | 0 | 0/0 |  |
-| 21 | Tomás González | ST | 23 | Argentina | 588 k€ | – | 0 | 0 | 0/0 |  |
+| 21 | Tomás González | RW | 23 | Argentina | 588 k€ | – | 0 | 0 | 0/0 |  |
 | 29 | Agustín Graneros | ST | 30 | Argentina | 492 k€ | – | 0 | 0 | 0/0 |  |
 | 31 | Mauro Smarra | ST | 27 | Argentina | 370 k€ | – | 0 | 0 | 0/0 |  |
-| 34 | Lautaro Duarte | LM | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (2): Manuel Aiello (senast 2026-09-29), Lautaro Duarte (senast 2026-09-29).

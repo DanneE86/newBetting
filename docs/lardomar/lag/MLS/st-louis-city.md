@@ -1,6 +1,6 @@
 # St. Louis City (MLS) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -61,15 +61,16 @@ Form (äldst → senast): VOVOVOVV · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Yoann Damet. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Kyle Hiebert (skadad, åter Early October 2026), Célio Pompeu (skadad, åter Unknown)
+**Skadade/borta nu:** Kyle Hiebert (skadad, åter Early October 2026), Célio Pompeu (skadad, åter Unknown), Palmer Ault (osäker), Brendan McSorley (osäker)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
+|  | Zack Campagnolo | GK | 18 | USA | – | – | 0 | 0 | 0/0 |  |
 | 1 | Roman Bürki | GK | 35 | Switzerland | 702 k€ | 6,68 | 0 | 0 | 1/0 |  |
 | 34 | Colin Welsh | GK | 23 | USA | – | – | 0 | 0 | 0/0 |  |
 | 39 | Benjamin Lundt | GK | 31 | Germany | 109 k€ | 6,40 | 0 | 0 | 1/0 |  |
@@ -77,7 +78,6 @@ Tränare: Yoann Damet. Betyg, mål och assist gäller innevarande säsong enligt
 | 3 | Tahir Reid-Brown | CB,LB | 20 | USA | 696 k€ | 5,79 | 0 | 0 | 1/0 |  |
 | 4 | Mamadou Mbacke | CB | 23 | Senegal | 313 k€ | 6,25 | 0 | 0 | 1/0 |  |
 | 5 | Lukas MacNaughton | CB | 31 | Canada | 292 k€ | 6,96 | 1 | 1 | 2/0 |  |
-| 15 | Joshua Yaro | CB | 31 | Ghana | 101 k€ | – | 0 | 0 | 0/0 |  |
 | 21 | Dante Polvara | CB,CDM,CM | 26 | USA | 389 k€ | 7,11 | 1 | 0 | 4/0 |  |
 | 22 | Kyle Hiebert | CB | 29 | Canada | 488 k€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
 | 27 | Fallou Fall | CB | 22 | Senegal | 2,1 M€ | 7,28 | 1 | 0 | 3/0 |  |
@@ -89,7 +89,7 @@ Tränare: Yoann Damet. Betyg, mål och assist gäller innevarande säsong enligt
 | 8 | Christopher Durkin | CDM,CM | 26 | USA | 1,3 M€ | 7,18 | 2 | 0 | 10/1 |  |
 | 14 | Tomas Totland | LWB,LM,RM,RB | 27 | Norway | 521 k€ | 7,26 | 3 | 4 | 4/0 |  |
 | 19 | Carlo Holse | CAM,LW,RW | 27 | Denmark | 3,7 M€ | 7,00 | 3 | 1 | 1/0 |  |
-| 20 | Rafael Santos | LM,LWB,LB | 28 | Brazil | 238 k€ | 6,81 | 1 | 1 | 1/0 |  |
+| 20 | Rafael Santos | LM,LWB | 28 | Brazil | 238 k€ | 6,81 | 1 | 1 | 1/0 |  |
 | 23 | Alexandru Mățan | CAM,LW,CM,ST | 27 | Romania | 1,1 M€ | 7,22 | 0 | 4 | 1/0 |  |
 | 24 | Daniel Edelman | CDM,CM,CAM | 23 | USA | 1,9 M€ | 7,18 | 4 | 3 | 2/0 |  |
 | 28 | Miguel Perez | CM,CDM | 21 | USA | 558 k€ | 6,32 | 0 | 0 | 2/0 |  |
@@ -99,10 +99,12 @@ Tränare: Yoann Damet. Betyg, mål och assist gäller innevarande säsong enligt
 | 9 | Rafael Navarro | ST | 26 | Brazil | 2,7 M€ | 7,40 | 12 | 3 | 6/0 |  |
 | 11 | Simon Becher | ST | 27 | USA | 613 k€ | 6,98 | 8 | 4 | 2/0 |  |
 | 12 | Célio Pompeu | LW | 26 | Brazil | 355 k€ | 6,40 | 0 | 0 | 0/0 | skadad, åter Unknown |
-| 29 | Palmer Ault | ST | 22 | USA | 108 k€ | 6,20 | 0 | 0 | 0/0 |  |
+| 29 | Palmer Ault | ST | 22 | USA | 108 k€ | 6,20 | 0 | 0 | 0/0 | osäker |
 | 42 | Damion Downs | ST | 22 | USA | 6,8 M€ | 6,06 | 0 | 0 | 0/0 |  |
 | 46 | Caden Glover | LW | 19 | USA | 1,1 M€ | – | 0 | 0 | 0/0 |  |
 | 59 | Mykhi Joyner | RW,LW | 20 | USA | 1,0 M€ | 6,18 | 0 | 0 | 0/0 |  |
-| 77 | Sang-Bin Jeong | CAM,RW,ST,LW | 24 | South Korea | 1,0 M€ | 6,87 | 2 | 1 | 1/0 |  |
-| 80 | Brendan McSorley | ST,RW | 24 | USA | 301 k€ | 6,19 | 1 | 0 | 2/0 |  |
+| 77 | Sang-Bin Jeong | CAM,RW,ST | 24 | South Korea | 1,0 M€ | 6,87 | 2 | 1 | 1/0 |  |
+| 80 | Brendan McSorley | ST,RW | 24 | USA | 301 k€ | 6,19 | 1 | 0 | 2/0 | osäker |
 | 91 | Zach Zengue | LW,LM,ST,CAM | 22 | USA | – | 6,08 | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Joshua Yaro (senast 2026-09-29).

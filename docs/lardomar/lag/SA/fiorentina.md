@@ -1,6 +1,6 @@
 # Fiorentina (Serie A) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -40,8 +40,8 @@ Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 l
 | Franco Mastantuono | 21 % | 0 / 81 | – / 1,37 | – / −0,06 |
 | Alieu Njie | 16 % | 0 / 81 | – / 1,37 | – / −0,06 |
 | Arthur Atta | 10 % | 0 / 81 | – / 1,37 | – / −0,06 |
-| Moise Kean | 9 % | 8 / 73 | 1,88 / 1,32 | +0,24 / −0,09 |
 | Albert Gudmundsson | 9 % | 12 / 69 | 2,08 / 1,25 | +0,48 / −0,15 |
+| Moise Kean | 9 % | 8 / 73 | 1,88 / 1,32 | +0,24 / −0,09 |
 | Beto | 8 % | 0 / 81 | – / 1,37 | – / −0,06 |
 
 Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
@@ -93,7 +93,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-08-31 | Europa 2501 | Torino - Fiorentina | X | 47 % | 42 % |
 | 2025-08-24 | Europa 2499 | Cagliari - Fiorentina | X | 49 % | 43 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Paolo Vanoli. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -115,7 +115,6 @@ Tränare: Paolo Vanoli. Betyg, mål och assist gäller innevarande säsong enlig
 | 20 | Álex Jiménez | RB,RW | 21 | Spain | 21,0 M€ | 7,07 | 1 | 1 | 1/0 |  |
 | 21 | Valde | LB | 19 | Spain | 1,7 M€ | 6,30 | 0 | 0 | 0/0 |  |
 | 33 | Viery | CB,LB | 21 | Brazil | 751 k€ | 6,41 | 0 | 0 | 0/0 |  |
-| 67 | Edoardo Sadotti | RB | 20 | Italy | 287 k€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 4 | Marco Brescianini | CM,CDM,CAM | 26 | Italy | 6,6 M€ | 6,22 | 0 | 0 | 0/0 |  |
 | 14 | Arthur Atta | CM,CAM,CDM | 23 | France | 13,3 M€ | 6,45 | 0 | 0 | 0/0 |  |
@@ -132,6 +131,7 @@ Tränare: Paolo Vanoli. Betyg, mål och assist gäller innevarande säsong enlig
 | 29 | Wilfried Gnonto | LW,RWB | 22 | Italy | 16,8 M€ | 6,13 | 0 | 0 | 0/0 |  |
 | 30 | Franco Mastantuono | RW,RM | 19 | Argentina | 40,0 M€ | 7,27 | 3 | 0 | 1/0 |  |
 | 32 | Mateo Pellegrino | ST | 24 | Argentina | 13,6 M€ | 6,66 | 2 | 0 | 1/0 |  |
-| 68 | Gabriele Bertolini | LW | 20 | Italy | – | – | 0 | 0 | 0/0 |  |
 | 70 | Federico Croci | ST | 16 | Italy | – | – | 0 | 0 | 0/0 |  |
 | 71 | Sulayman Jallow | Attacker | 19 | The Gambia | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (2): Edoardo Sadotti (senast 2026-09-29), Gabriele Bertolini (senast 2026-09-29).

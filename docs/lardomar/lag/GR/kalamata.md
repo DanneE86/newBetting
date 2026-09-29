@@ -1,6 +1,6 @@
 # Kalamata (Super League (Grekland)) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [GR](../../ligor/GR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [GR](../../ligor/GR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -36,7 +36,7 @@ Form (äldst → senast): FFOVF · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Panagiotis Christofileas. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -72,7 +72,7 @@ Tränare: Panagiotis Christofileas. Betyg, mål och assist gäller innevarande s
 | 21 | Marcelino Carreazo | CM | 27 | Venezuela | 810 k€ | 6,41 | 0 | 0 | 0/0 |  |
 | 23 | Gonzalo Piñeiro | CDM,CM | 25 | Argentina | 236 k€ | 7,01 | 0 | 0 | 1/0 |  |
 | 24 | Erik Hamza | CM,CAM,RM | 19 | Greece | – | 7,09 | 2 | 0 | 0/0 |  |
-| 77 | Kenneth Vargas | ST,RM,LM | 24 | Costa Rica | 464 k€ | 7,56 | 1 | 0 | 0/0 |  |
+| 77 | Kenneth Vargas | RM,ST,LM | 24 | Costa Rica | 464 k€ | 7,56 | 1 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 9 | Jovanny Bolívar | ST | 24 | Venezuela | 486 k€ | 6,68 | 2 | 0 | 1/1 |  |
 | 11 | Josete Miranda | LW | 28 | Equatorial Guinea | 83 k€ | – | 0 | 0 | 0/0 |  |

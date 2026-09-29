@@ -1,6 +1,6 @@
 # QPR (Championship) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -41,9 +41,9 @@ Form (äldst → senast): VOVVFOOO · senaste match 2026-09-19
 | Middlesbrough | 17 | 6-3-8 | 22–32 | +0,12 | −10 pe | 2026-09-05 0-1 (h) |
 | Preston | 16 | 8-4-4 | 22–19 | +0,34 | −4 pe | 2026-09-19 2-2 (h) |
 | Stoke | 16 | 6-6-4 | 18–15 | +0,29 | +9 pe | 2026-01-17 0-0 (b) |
-| Swansea | 16 | 5-4-7 | 13–18 | −0,03 | −3 pe | 2026-04-21 1-2 (h) |
 | Bristol City | 15 | 5-4-6 | 14–16 | −0,04 | −1 pe | 2026-04-11 0-0 (h) |
 | Millwall | 15 | 5-4-6 | 19–21 | +0,04 | −3 pe | 2026-04-18 0-2 (b) |
+| Swansea | 15 | 5-4-6 | 13–15 | +0,05 | −1 pe | 2026-04-21 1-2 (h) |
 | West Brom | 14 | 2-4-8 | 16–24 | −0,35 | +2 pe | 2026-09-12 1-1 (b) |
 | Birmingham | 13 | 5-3-5 | 16–15 | +0,03 | −6 pe | 2026-03-11 0-1 (b) |
 | Cardiff | 13 | 8-2-3 | 22–12 | +0,66 | −13 pe | 2026-09-02 2-1 (h) |
@@ -91,7 +91,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-03-08 | Europa 2555 | Queens Park Rangers - Middlesbrough | 2 | 15 % | 23 % |
 | 2026-01-01 | Europa 2536 | Queens Park Rangers - Norwich | 2 | 54 % | 47 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Julien Stéphan. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -118,7 +118,7 @@ Tränare: Julien Stéphan. Betyg, mål och assist gäller innevarande säsong en
 | 11 | Paul Smyth | LM,LW,RM | 29 | Northern Ireland | 399 k€ | 7,04 | 2 | 0 | 0/0 |  |
 | 14 | Koki Saito | LM,LW,RW,CAM | 25 | Japan | 1,9 M€ | 6,95 | 1 | 0 | 1/0 |  |
 | 18 | Glen Kamara | CM | 30 | Finland | 1,5 M€ | 7,27 | 0 | 0 | 2/0 |  |
-| 20 | Harvey Vale | RM,CAM,RW,ST,CM,CDM | 23 | Ireland | 1,9 M€ | 7,43 | 0 | 1 | 0/0 |  |
+| 20 | Harvey Vale | RM,CAM,ST,CM,CDM | 23 | Ireland | 1,9 M€ | 7,43 | 0 | 1 | 0/0 |  |
 | 23 | Isak Alemayehu Mulugeta | CM | 19 | Sweden | 666 k€ | – | 0 | 0 | 0/0 |  |
 | 24 | Nicolas Madsen | CM,CDM | 26 | Denmark | 2,8 M€ | 6,90 | 0 | 0 | 0/0 |  |
 | 40 | Jonathan Varane | CM,CDM | 25 | Martinique | 1,9 M€ | 6,34 | 0 | 0 | 1/0 |  |

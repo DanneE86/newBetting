@@ -11,6 +11,54 @@
       "odds": 4.33,
       "ev": 0.0622,
       "scannedAt": "2026-09-27T17:40:25.025Z"
+    },
+    {
+      "id": "LL2|2026-10-03|Almeria|Burgos|home",
+      "league": "LL2",
+      "date": "2026-10-03",
+      "home": "Almeria",
+      "away": "Burgos",
+      "key": "home",
+      "pick": "1",
+      "odds": 1.77,
+      "ev": 0.0675,
+      "scannedAt": "2026-09-29T19:09:53.130Z"
+    },
+    {
+      "id": "BR2|2026-10-02|Londrina|Criciúma|home",
+      "league": "BR2",
+      "date": "2026-10-02",
+      "home": "Londrina",
+      "away": "Criciúma",
+      "key": "home",
+      "pick": "1",
+      "odds": 3.1,
+      "ev": 0.0604,
+      "scannedAt": "2026-09-29T19:09:53.130Z"
+    },
+    {
+      "id": "BR2|2026-10-03|Avaí|Ceará|away",
+      "league": "BR2",
+      "date": "2026-10-03",
+      "home": "Avaí",
+      "away": "Ceará",
+      "key": "away",
+      "pick": "2",
+      "odds": 2.95,
+      "ev": 0.0441,
+      "scannedAt": "2026-09-29T19:09:53.130Z"
+    },
+    {
+      "id": "LL2|2026-10-04|Las Palmas|Valladolid|draw",
+      "league": "LL2",
+      "date": "2026-10-04",
+      "home": "Las Palmas",
+      "away": "Valladolid",
+      "key": "draw",
+      "pick": "X",
+      "odds": 3.5,
+      "ev": 0.0318,
+      "scannedAt": "2026-09-29T19:09:53.130Z"
     }
   ]
 }

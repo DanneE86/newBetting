@@ -1,6 +1,6 @@
 # Atlante (Liga MX) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [MX](../../ligor/MX.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [MX](../../ligor/MX.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -40,7 +40,7 @@ Form (äldst → senast): OVOFOOFO · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: svag signal (inte bekräftad).
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Miguel Herrera. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -51,7 +51,6 @@ Tränare: Miguel Herrera. Betyg, mål och assist gäller innevarande säsong enl
 | | **Målvakter** | | | | | | | | | |
 | 1 | Óscar Jiménez | GK | 37 | Mexico | 238 k€ | – | 0 | 0 | 0/0 |  |
 | 22 | Roberto Barragán | GK | 22 | Mexico | – | – | 0 | 0 | 0/0 |  |
-| 26 | David Ospina | GK | 38 | Colombia | 244 k€ | – | 0 | 0 | 0/0 |  |
 | 33 | Jordan García | GK | 21 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 3 | Gustavo Sánchez | CB | 26 | Mexico | 593 k€ | – | 0 | 0 | 0/0 |  |
@@ -73,7 +72,6 @@ Tränare: Miguel Herrera. Betyg, mål och assist gäller innevarande säsong enl
 | 18 | Christian Bermúdez | CAM | 39 | Mexico | 120 k€ | – | 0 | 0 | 0/0 |  |
 | 19 | Luis Calzadilla | CM,LW | 26 | Mexico | 387 k€ | – | 0 | 0 | 0/0 |  |
 | 21 | Javier Ibarra | CAM | 28 | Mexico | 106 k€ | – | 0 | 0 | 0/0 |  |
-| 25 | Martín Fernández | CM,CDM | 25 | Uruguay | 323 k€ | – | 0 | 0 | 0/0 |  |
 | 37 | Walter Clar | LWB,LB,LM | 32 | Paraguay | 317 k€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Jhojan Julio | ST,RM,LM,RW | 28 | Ecuador | 587 k€ | – | 0 | 0 | 0/0 |  |
@@ -82,3 +80,5 @@ Tränare: Miguel Herrera. Betyg, mål och assist gäller innevarande säsong enl
 | 15 | Jairón Charcopa | RW | 22 | Ecuador | 220 k€ | – | 0 | 0 | 0/0 |  |
 | 30 | Martín Sarrafiore | LW,CM,CAM,RW | 29 | Argentina | 621 k€ | – | 0 | 0 | 0/0 |  |
 | 184 | Rubén Coubert | Attacker | 22 | Mexico | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (2): David Ospina (senast 2026-09-29), Martín Fernández (senast 2026-09-29).

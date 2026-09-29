@@ -1,6 +1,6 @@
 # Columbus Crew (MLS) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -72,7 +72,7 @@ Form (äldst → senast): FFFFVFFV · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Laurent Courtois. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -87,7 +87,7 @@ Tränare: Laurent Courtois. Betyg, mål och assist gäller innevarande säsong e
 | 41 | Stanislav Lapkes | GK | 20 | Belarus | – | – | 0 | 0 | 0/0 |  |
 | 54 | Luke Pruter | GK | 25 | USA | 172 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 3 | Eric Bailly | CB | 32 | Ivory Coast | 585 k€ | 6,45 | 0 | 0 | 1/0 |  |
+| 3 | Eric Bailly | CB | 32 | Ivory Coast | 585 k€ | 6,57 | 0 | 0 | 1/0 |  |
 | 4 | Rudy Camacho | CB | 35 | France | 61 k€ | 6,66 | 0 | 0 | 6/0 |  |
 | 11 | Brooks Lennon | RB,RM | 29 | USA | 736 k€ | 6,55 | 0 | 1 | 1/0 |  |
 | 12 | Cesar Ruvalcaba | CB | 25 | USA | 171 k€ | 6,56 | 0 | 0 | 2/0 |  |
@@ -96,23 +96,23 @@ Tränare: Laurent Courtois. Betyg, mål och assist gäller innevarande säsong e
 | 25 | Sean Zawadzki | CB,LB,CDM | 26 | USA | 1,5 M€ | 7,02 | 0 | 1 | 3/0 |  |
 | 31 | Steven Moreira | RB,CB | 32 | Cape Verde | 701 k€ | 6,54 | 0 | 0 | 3/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 2 | Andrés Herrera | RWB,RB,RM | 27 | Argentina | 1,0 M€ | 6,69 | 0 | 1 | 2/0 |  |
+| 2 | Andrés Herrera | RB,RWB,RM | 27 | Argentina | 1,0 M€ | 6,69 | 0 | 1 | 2/0 |  |
 | 7 | Dylan Chambost | CM,CDM | 29 | France | 1,4 M€ | 6,92 | 0 | 2 | 3/0 |  |
 | 10 | Brais Méndez | CAM,ST,RW | 29 | Spain | 9,2 M€ | 7,27 | 3 | 1 | 2/0 |  |
-| 14 | Amar Sejdić | CM,CDM | 29 | USA | 50 k€ | 6,66 | 0 | 0 | 0/0 |  |
-| 16 | Taha Habroune | ST,CAM,LM,RM,CM | 20 | USA | 1,7 M€ | 7,02 | 2 | 2 | 3/0 |  |
+| 14 | Amar Sejdić | CM | 29 | USA | 50 k€ | 6,66 | 0 | 0 | 0/0 |  |
+| 16 | Taha Habroune | ST,CAM,LM,CM,RM | 20 | USA | 1,7 M€ | 7,03 | 2 | 2 | 3/0 |  |
 | 17 | Sékou Bangoura | CDM,CM | 24 | Guinea | 456 k€ | 6,61 | 1 | 0 | 4/0 |  |
 | 20 | André Gomes | CM,CDM | 33 | Portugal | 1,4 M€ | 6,87 | 1 | 0 | 2/0 |  |
-| 23 | Mohamed Farsi | RB,RM,RWB | 26 | Algeria | 1,3 M€ | 7,22 | 2 | 3 | 0/0 |  |
+| 23 | Mohamed Farsi | RM,RB,RWB | 26 | Algeria | 1,3 M€ | 7,22 | 2 | 3 | 0/0 |  |
 | 29 | Cole Mrowka | CAM,CDM | 20 | Philippines | 214 k€ | – | 0 | 0 | 0/0 |  |
 | 39 | Kevin Gbamblé | RM,CAM,LW,RW,LM,ST | 19 | USA | – | – | 0 | 0 | 0/0 |  |
 | 50 | Tarun Karumanchi | CM,CDM | 23 | USA | 70 k€ | 6,55 | 0 | 0 | 3/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 8 | Santiago Rodríguez | RW,LW,CM,CAM | 26 | Uruguay | 3,0 M€ | 7,50 | 2 | 0 | 2/0 |  |
+| 8 | Santiago Rodríguez | RW,LW,CM,CAM | 26 | Uruguay | 3,0 M€ | 7,52 | 2 | 0 | 2/0 |  |
 | 9 | Wessam Abou Ali | ST | 27 | Palestine | 3,0 M€ | 6,96 | 5 | 1 | 2/0 | skadad, åter Unknown |
 | 19 | Jamal Thiaré | ST | 33 | Senegal | 93 k€ | 6,41 | 2 | 0 | 3/0 |  |
-| 21 | Anass Zaroury | LW,LM,CAM,RW,LWB | 25 | Morocco | 5,4 M€ | 7,77 | 0 | 0 | 0/0 |  |
+| 21 | Anass Zaroury | LW,LM,CAM,RW,LWB | 25 | Morocco | 5,4 M€ | 7,74 | 0 | 0 | 0/0 |  |
 | 26 | Lautaro Giaccone | LW,RW,LM | 25 | Argentina | 848 k€ | 6,38 | 0 | 0 | 0/0 |  |
 | 33 | Gonzalo Tapia | ST,RW | 24 | Chile | 2,1 M€ | 6,46 | 1 | 1 | 0/0 |  |
 | 46 | Chase Adams | ST | 18 | USA | 1,2 M€ | 6,74 | 1 | 0 | 0/0 |  |
-| 77 | Josef Martínez | ST | 33 | Venezuela | 774 k€ | 6,53 | 1 | 1 | 0/0 |  |
+| 77 | Josef Martínez | ST | 33 | Venezuela | 774 k€ | 6,54 | 1 | 1 | 0/0 |  |

@@ -1,6 +1,6 @@
 # Independiente Santa Fe (Primera A) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [COL](../../ligor/COL.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [COL](../../ligor/COL.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -39,7 +39,7 @@ Form senaste 8 (äldst → senast): VOOVOVVF · senaste match 2026-09-23
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Pablo Repetto. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -78,11 +78,11 @@ Tränare: Pablo Repetto. Betyg, mål och assist gäller innevarande säsong enli
 | 42 | Jhojan Zúñiga | Midfielder | 18 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 8 | Omar Fernández | LW,RW,CAM,LM | 33 | Colombia | 513 k€ | – | 0 | 0 | 0/0 | skadad, åter Late November 2026 |
-| 10 | Alexis Zapata | LW,CAM,CM | 31 | Colombia | 250 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Alexis Zapata | LW,CAM | 31 | Colombia | 250 k€ | – | 0 | 0 | 0/0 |  |
 | 11 | Hugo Rodallega | ST | 41 | Colombia | 500 k€ | – | 0 | 0 | 0/0 |  |
 | 14 | Luis Palacios | RW,RM,LW | 25 | Colombia | 621 k€ | – | 0 | 0 | 0/0 |  |
 | 25 | Emerson Rodríguez | RW,LW | 26 | Colombia | 1,2 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 40 | Martín Palacios | LW | 19 | Colombia | – | – | 0 | 0 | 0/0 |  |
-| 41 | Yan Vega | Attacker | 21 | Colombia | – | – | 0 | 0 | 0/0 |  |
-| 49 | Andrés Amaya | RW,ST | 25 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 77 | Jáder Obrian | RW | 31 | Colombia | 810 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (2): Andrés Amaya (senast 2026-09-29), Yan Vega (senast 2026-09-29).

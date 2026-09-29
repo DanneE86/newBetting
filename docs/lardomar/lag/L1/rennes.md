@@ -1,11 +1,12 @@
 # Rennes (Ligue 1) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [L1](../../ligor/L1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [L1](../../ligor/L1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - 2025/26: +0,25 poäng per match mot marknaden. Ligan visar ingen persistens, så räkna inte med att det fortsätter.
 - Stark historik mot Paris SG (+0,57 p/match mot marknaden, 15 möten), Lens (−0,83 p/match mot marknaden, 12 möten), Lorient (−0,90 p/match mot marknaden, 10 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Utan Ludovic Blas (10 % av anfallet): 1,50 poäng per match mot 1,51 med (4 mot 68 matcher), mot marknaden −0,26 mot −0,00.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -87,7 +88,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-10-29 | Europa 2518 | Toulouse - Rennes | X | 21 % | 25 % |
 | 2025-09-14 | Europa 2505 | Rennes - Lyon | 1 ✓ | 40 % | 39 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Franck Haise. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

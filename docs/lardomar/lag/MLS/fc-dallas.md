@@ -1,6 +1,6 @@
 # FC Dallas (MLS) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -71,7 +71,7 @@ Form (äldst → senast): VVFOVVVO · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Eric Quill. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -81,7 +81,6 @@ Tränare: Eric Quill. Betyg, mål och assist gäller innevarande säsong enligt 
 | 30 | Michael Collodi | GK | 25 | USA | 183 k€ | 6,88 | 0 | 0 | 2/0 |  |
 | 40 | Jonathan Sirois | GK | 25 | Canada | 356 k€ | 7,23 | 0 | 0 | 0/0 |  |
 | 42 | Daniel | GK | 32 | Brazil | 432 k€ | 7,31 | 0 | 0 | 4/0 |  |
-| 98 | Eryk Dymora | GK | 23 | USA | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 2 | Geovane Jesus | RB | 25 | Brazil | 417 k€ | – | 0 | 0 | 0/0 |  |
 | 3 | Osaze Urhoghide | CB | 26 | England | 1,4 M€ | 7,16 | 2 | 1 | 6/0 |  |
@@ -96,13 +95,14 @@ Tränare: Eric Quill. Betyg, mål och assist gäller innevarande säsong enligt 
 | 34 | Kaka Scabin | Defender | 19 | USA | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 6 | Ran Binyamin | LW,CM,LB,LWB,LM,RWB | 22 | Israel | 1,1 M€ | 6,86 | 1 | 2 | 3/0 |  |
-| 8 | Patrickson Delgado | CM,CAM | 22 | Ecuador | 2,2 M€ | 6,71 | 3 | 0 | 3/0 |  |
+| 8 | Patrickson Delgado | CAM,CM | 22 | Ecuador | 2,2 M€ | 6,71 | 3 | 0 | 3/0 |  |
 | 10 | Santiago Moreno | CAM,LW,LM | 26 | Colombia | 2,0 M€ | 6,95 | 3 | 2 | 1/0 |  |
 | 12 | Christian Cappis | CM,CDM,LM | 27 | USA | 356 k€ | 6,67 | 0 | 1 | 4/0 |  |
 | 14 | Herman Johansson | RM,RWB,RB | 28 | Sweden | 1,0 M€ | 6,68 | 0 | 2 | 4/0 |  |
-| 17 | Ramiro | CM,CDM,RM | 33 | Brazil | 118 k€ | 6,96 | 0 | 3 | 6/0 |  |
+| 17 | Ramiro | CM,CDM | 33 | Brazil | 118 k€ | 6,96 | 0 | 3 | 6/0 |  |
 | 21 | Joaquín Valiente | CAM,RW,RM | 25 | Uruguay | 1,1 M€ | 7,11 | 2 | 9 | 1/0 |  |
 | 27 | Caleb Swann | CM,CAM,CDM | 19 | USA | 906 k€ | – | 0 | 0 | 0/0 |  |
+| 28 | Sam Sarver | RM,RW | 23 | USA | 301 k€ | 6,52 | 3 | 1 | 4/0 |  |
 | 33 | Clay Holstad | CDM,CM,RM | 26 | USA | 112 k€ | 6,18 | 0 | 0 | 0/0 |  |
 | 55 | Kaick Ferreira | CM,CDM,CAM | 20 | Brazil | – | 7,04 | 3 | 1 | 4/0 |  |
 | 77 | Bernard Kamungo | LM,LWB,LB | 24 | USA | 961 k€ | 7,16 | 0 | 2 | 2/0 |  |
@@ -113,7 +113,8 @@ Tränare: Eric Quill. Betyg, mål och assist gäller innevarande säsong enligt 
 | 15 | Ricky Louis | RW,ST,RM,LM | 21 | Haiti | 245 k€ | 5,98 | 0 | 0 | 0/0 |  |
 | 16 | Nicholas Simmonds | ST,RW | 19 | Jamaica | 468 k€ | 6,02 | 0 | 0 | 1/0 |  |
 | 23 | Logan Farrington | ST | 24 | USA | 1,3 M€ | 6,92 | 9 | 3 | 3/0 |  |
-| 28 | Sam Sarver | RM,RW | 23 | USA | 301 k€ | 6,52 | 3 | 1 | 4/0 |  |
 | 31 | Benjamin Flowers | LW | 15 | USA | – | – | 0 | 0 | 0/0 |  |
 | 36 | Daniel Baran | LW,LM | 20 | USA | – | – | 0 | 0 | 0/0 |  |
 | 50 | Diego García | LW,CM,CDM,ST | 19 | USA | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Eryk Dymora (senast 2026-09-29).

@@ -1,6 +1,6 @@
 # Sp Lisbon (Primeira Liga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [PT](../../ligor/PT.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [PT](../../ligor/PT.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -49,7 +49,7 @@ Form (äldst → senast): VOVVVVOO · senaste match 2026-09-19
 | Moreirense | 13 | 10-2-1 | 24–6 | +0,08 | −2 pe | 2026-02-21 3-0 (b) |
 | Arouca | 11 | 7-3-1 | 25–9 | −0,22 | +11 pe | 2026-09-19 2-2 (h) |
 | Estoril | 10 | 10-0-0 | 24–2 | +0,60 | −16 pe | 2026-02-27 3-0 (h) |
-| Maritimo | 10 | 6-3-1 | 15–5 | −0,16 | +10 pe | 2023-05-13 2-1 (h) |
+| Maritimo | 9 | 5-3-1 | 13–5 | −0,25 | +13 pe | 2023-05-13 2-1 (h) |
 | Nacional | 9 | 9-0-0 | 26–5 | +0,58 | −16 pe | 2026-09-05 2-0 (h) |
 | Casa Pia | 8 | 8-0-0 | 27–6 | +0,60 | −17 pe | 2026-01-16 3-0 (h) |
 | Estrela | 7 | 6-1-0 | 20–6 | +0,20 | +1 pe | 2026-08-08 2-2 (b) |
@@ -57,7 +57,7 @@ Form (äldst → senast): VOVVVVOO · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Rui Borges. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -78,15 +78,15 @@ Tränare: Rui Borges. Betyg, mål och assist gäller innevarande säsong enligt 
 | 25 | Gonçalo Inácio | CB | 25 | Portugal | 30,2 M€ | 7,05 | 1 | 0 | 2/0 |  |
 | 50 | Rodrigo Dias | RB,LB,CB,RM | 21 | Portugal | 1,1 M€ | 7,14 | 0 | 0 | 0/0 |  |
 | 55 | Ibrahima Ba | CB | 21 | Senegal | 1,6 M€ | 7,51 | 0 | 0 | 0/0 | skadad, åter Day to day |
+| 70 | Salvador Blopa | RB,LM,RW | 19 | Portugal | 2,1 M€ | – | 0 | 0 | 0/0 |  |
 | 72 | Eduardo Quaresma | CB,RB | 24 | Portugal | 13,4 M€ | 6,61 | 0 | 0 | 2/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-|  | Sotiris Alexandropoulos | CM,CDM | 24 | Greece | 797 k€ | – | 0 | 0 | 0/0 |  |
+|  | Sotiris Alexandropoulos | CDM,CM | 24 | Greece | 797 k€ | – | 0 | 0 | 0/0 |  |
 | 4 | Silas Andersen | CDM,CM | 22 | Denmark | 1,1 M€ | 6,48 | 0 | 0 | 0/0 |  |
 | 5 | Sergi Altimira | CDM,CM | 25 | Spain | 16,3 M€ | 7,98 | 1 | 0 | 2/0 |  |
 | 8 | João Simões | CDM,CM | 19 | Portugal | 11,0 M€ | – | 0 | 0 | 0/0 |  |
 | 19 | Nestory Irankunda | RM,ST,LM,LW,CAM | 20 | Australia | 7,2 M€ | 6,39 | 0 | 0 | 1/0 |  |
 | 21 | Pedro Lima | CM,CAM | 23 | Brazil | 820 k€ | – | 0 | 0 | 0/0 |  |
-| 70 | Salvador Blopa | RB,RM,LM,RW | 19 | Portugal | 2,1 M€ | – | 0 | 0 | 0/0 |  |
 | 77 | Issa Doumbia | CM,CDM,LW | 22 | Italy | 7,0 M€ | 7,27 | 0 | 1 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 |  | Delcio Aurelio | Attacker | 19 | Angola | – | – | 0 | 0 | 0/0 |  |

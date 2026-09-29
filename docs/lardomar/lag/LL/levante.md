@@ -1,6 +1,6 @@
 # Levante (La Liga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [LL](../../ligor/LL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [LL](../../ligor/LL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -90,7 +90,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-10-19 | Europa 2515 | Levante - Rayo Vallecano | 2 | 32 % | 35 % |
 | 2025-09-14 | Europa 2505 | Levante - Real Betis | X | 20 % | 28 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Luís Castro. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -104,7 +104,7 @@ Tränare: Luís Castro. Betyg, mål och assist gäller innevarande säsong enlig
 | 32 | Álex Primo | GK | 22 | Spain | – | – | 0 | 0 | 0/0 | skadad, åter Unknown |
 | | **Backar** | | | | | | | | | |
 | 2 | Aïssa Mandi | CB | 34 | Algeria | 1,3 M€ | 6,76 | 0 | 0 | 2/0 |  |
-| 3 | Ifeanyi Ndukwe | CB,LB | 18 | Austria | 2,3 M€ | 6,44 | 0 | 0 | 0/0 |  |
+| 3 | Ifeanyi Ndukwe | CB | 18 | Austria | 2,3 M€ | 6,44 | 0 | 0 | 0/0 |  |
 | 4 | Adrián De La Fuente | CB | 27 | Spain | 2,2 M€ | 6,74 | 1 | 0 | 1/0 |  |
 | 14 | Jorge Cabello | CB | 22 | Spain | 1,3 M€ | – | 0 | 0 | 0/0 |  |
 | 22 | Jeremy Toljan | RB | 32 | Germany | 1,3 M€ | 6,17 | 0 | 1 | 1/0 |  |

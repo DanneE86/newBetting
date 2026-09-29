@@ -1,6 +1,6 @@
 # Nurnberg (2. Bundesliga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [BL2](../../ligor/BL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [BL2](../../ligor/BL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -58,7 +58,7 @@ Form (äldst → senast): VOVVVOVV · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Miroslav Klose. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -78,7 +78,6 @@ Tränare: Miroslav Klose. Betyg, mål och assist gäller innevarande säsong enl
 | 15 | Mikayil Faye | CB | 22 | Senegal | 3,7 M€ | – | 0 | 0 | 0/0 | skadad, åter Back in training |
 | 20 | Fynn Otto | CB | 24 | Germany | 456 k€ | 7,52 | 0 | 1 | 0/0 |  |
 | 21 | Giannis Masouras | RB,RM | 30 | Greece | 145 k€ | 6,25 | 0 | 0 | 0/0 |  |
-| 22 | Enrico Valentini | RB | 37 | Italy | – | – | 0 | 0 | 0/0 |  |
 | 32 | Tim Janisch | RB | 21 | Germany | 872 k€ | 7,05 | 1 | 0 | 1/0 |  |
 | 36 | Kristian Mandic | LB | 18 | Croatia | 577 k€ | 6,72 | 0 | 0 | 1/0 |  |
 | 41 | Eric Porstner | LB | 19 | Germany | 821 k€ | 7,39 | 0 | 1 | 2/0 |  |
@@ -91,7 +90,6 @@ Tränare: Miroslav Klose. Betyg, mål och assist gäller innevarande säsong enl
 | 18 | Rafael Lubach | CM,LW,ST,CAM,CDM | 21 | Germany | 2,2 M€ | 6,39 | 0 | 0 | 1/0 |  |
 | 22 | Finn Becker | CM,CAM,RM,CDM | 26 | Germany | 904 k€ | 7,25 | 0 | 2 | 1/0 |  |
 | 28 | Can Moustfa | LW | 21 | Syria | 300 k€ | – | 0 | 0 | 0/0 |  |
-| 35 | Simon Joachims | Midfielder | 24 | Germany | 86 k€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 |  | Levin Chiumento | Attacker | 19 | Germany | 465 k€ | – | 0 | 0 | 0/0 |  |
 | 7 | Rayan Ghrieb | RW | 27 | France | 571 k€ | 6,00 | 0 | 0 | 1/0 |  |
@@ -101,3 +99,5 @@ Tränare: Miroslav Klose. Betyg, mål och assist gäller innevarande säsong enl
 | 19 | Piet Scobel | ST | 21 | Germany | 824 k€ | 7,38 | 3 | 1 | 1/0 |  |
 | 23 | Mohamed Alì Zoma | LW,ST,LM | 22 | Italy | 2,2 M€ | 8,15 | 6 | 0 | 2/0 |  |
 | 39 | Adriano Grimaldi | ST | 35 | Germany | 161 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (2): Enrico Valentini (senast 2026-09-29), Simon Joachims (senast 2026-09-29).

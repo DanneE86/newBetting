@@ -1,6 +1,6 @@
 # Mito (J1 League) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [JP1](../../ligor/JP1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [JP1](../../ligor/JP1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -37,7 +37,7 @@ Form (äldst → senast): FOVOVOFF · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Daisuke Kimori. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -48,7 +48,6 @@ Tränare: Daisuke Kimori. Betyg, mål och assist gäller innevarande säsong enl
 | 27 | Jakub Słowik | GK | 35 | Poland | 145 k€ | – | 0 | 0 | 0/0 |  |
 | 34 | Konosuke Nishikawa | GK | 24 | Japan | 963 k€ | 7,12 | 0 | 0 | 0/0 |  |
 | 37 | Minato Kamiyama | Keeper | 19 | Japan | – | – | 0 | 0 | 0/0 |  |
-| 77 | Uwabright Hayakawa | Keeper | 19 | Japan | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 2 | Malick Fofana | CB | 26 | Japan | 205 k€ | – | 0 | 0 | 0/0 |  |
 | 4 | Akinari Kawazura | CB | 32 | Japan | 131 k€ | 6,33 | 0 | 0 | 0/0 |  |
@@ -59,7 +58,6 @@ Tränare: Daisuke Kimori. Betyg, mål och assist gäller innevarande säsong enl
 | 25 | Takumi Mase | RB,RM | 28 | Japan | 332 k€ | 6,98 | 1 | 0 | 1/0 |  |
 | 50 | Rei Ieizumi | CB | 26 | Japan | 245 k€ | 6,41 | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-|  | Kota Saga | Midfielder | 22 | Japan | – | – | 0 | 0 | 0/0 |  |
 | 3 | Koshi Osaki | CM,CDM | 28 | Japan | 264 k€ | 6,43 | 0 | 0 | 0/0 |  |
 | 8 | Chihiro Kato | RM,LM,CM | 27 | Japan | 170 k€ | 6,51 | 1 | 0 | 0/0 |  |
 | 11 | Yoshiki Torikai | CAM,ST,RM | 28 | Japan | 304 k€ | 6,66 | 1 | 2 | 1/0 |  |
@@ -75,7 +73,6 @@ Tränare: Daisuke Kimori. Betyg, mål och assist gäller innevarande säsong enl
 | 44 | Motoki Nishihara | CAM | 19 | Japan | 589 k€ | – | 0 | 0 | 0/0 |  |
 | 48 | Yuto Yamashita | CAM,LW | 30 | Japan | 180 k€ | – | 0 | 0 | 0/0 |  |
 | 53 | Shota Yamashita | Midfielder | 18 | Japan | 564 k€ | – | 0 | 0 | 0/0 |  |
-| 82 | Kotatsu Kawakami | CDM | 24 | Japan | 196 k€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 9 | Ryo Nemoto | ST | 26 | Japan | 323 k€ | 6,10 | 0 | 0 | 0/0 |  |
 | 10 | Arata Watanabe | ST,LM,CAM | 31 | Japan | 312 k€ | 6,97 | 5 | 0 | 1/0 |  |
@@ -83,3 +80,5 @@ Tränare: Daisuke Kimori. Betyg, mål och assist gäller innevarande säsong enl
 | 29 | Keisuke Tada | ST | 24 | Japan | 206 k€ | 6,36 | 0 | 0 | 0/0 |  |
 | 33 | Patryck | ST | 28 | Brazil | 158 k€ | 5,77 | 0 | 0 | 0/0 |  |
 | 87 | Kishin Gokita | ST | 22 | Japan | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (3): Kotatsu Kawakami (senast 2026-09-29), Kota Saga (senast 2026-09-29), Uwabright Hayakawa (senast 2026-09-29).

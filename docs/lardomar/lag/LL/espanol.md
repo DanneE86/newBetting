@@ -1,6 +1,6 @@
 # Espanol (La Liga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [LL](../../ligor/LL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [LL](../../ligor/LL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -92,18 +92,17 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-08-24 | Europa 2499 | Real Sociedad - Espanyol | X | 15 % | 19 % |
 | 2025-08-17 | Europa 2497 | Espanyol - Atlético Madrid | 1 ✓ | 9 % | 17 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Manolo González. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Vanja Drkušić (osäker), Jofre Carreras (osäker), Javi Puado (skadad, åter Back in training), Kike García (skadad, åter Unknown), Javi Hernández (osäker)
+**Skadade/borta nu:** Vanja Drkušić (osäker), Jofre Carreras (osäker), Javi Puado (skadad, åter Back in training), Kike García (skadad, åter Unknown), Javi Hernández (skadad, åter Late October 2026)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
 | 1 | Ángel Fortuno | GK | 24 | Spain | 569 k€ | – | 0 | 0 | 0/0 |  |
 | 13 | Marko Dmitrović | GK | 34 | Serbia | 930 k€ | 6,64 | 0 | 0 | 0/0 |  |
-| 30 | Pol Tristán | Keeper | 24 | Spain | 276 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 2 | Andoni Gorosabel | RB | 30 | Spain | 2,3 M€ | – | 0 | 0 | 0/0 |  |
 | 3 | Quilindschy Hartman | LB,LWB | 24 | Netherlands | 18,1 M€ | 7,16 | 0 | 0 | 0/0 |  |
@@ -129,4 +128,6 @@ Tränare: Manolo González. Betyg, mål och assist gäller innevarande säsong e
 | 19 | Kike García | ST | 36 | Spain | 583 k€ | – | 0 | 0 | 0/0 | skadad, åter Unknown |
 | 22 | Álex Calatrava | ST,CAM,RM,RW | 26 | Spain | 2,1 M€ | 6,51 | 1 | 0 | 3/0 |  |
 | 24 | Tyrhys Dolan | LW,RM,RW,LM | 24 | England | 9,3 M€ | 6,69 | 1 | 0 | 0/0 |  |
-| 28 | Javi Hernández | CAM,RW,ST,CM | 22 | Spain | 1,3 M€ | 6,91 | 0 | 4 | 1/0 | osäker |
+| 28 | Javi Hernández | CAM,RW,ST,CM | 22 | Spain | 1,3 M€ | 6,91 | 0 | 4 | 1/0 | skadad, åter Late October 2026 |
+
+Har lämnat truppen sedan vi började spara (1): Pol Tristán (senast 2026-09-29).

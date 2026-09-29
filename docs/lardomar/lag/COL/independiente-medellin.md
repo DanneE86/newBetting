@@ -1,6 +1,6 @@
 # Independiente Medellín (Primera A) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [COL](../../ligor/COL.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [COL](../../ligor/COL.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -41,11 +41,11 @@ Form senaste 8 (äldst → senast): VFVVFOVF · senaste match 2026-09-27
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Luis Perea. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Juan Fernando Quintero (skadad, åter Mid October 2026)
+**Skadade/borta nu:** Kevin Mantilla (skadad, åter About 1-2 weeks), Juan Fernando Quintero (skadad, åter Mid October 2026)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -54,7 +54,7 @@ Tränare: Luis Perea. Betyg, mål och assist gäller innevarande säsong enligt 
 | 12 | Simón Romero | Keeper | 20 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 25 | Eder Chaux | GK | 34 | Colombia | 249 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 4 | Kevin Mantilla | CB | 23 | Colombia | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 4 | Kevin Mantilla | CB | 23 | Colombia | 1,3 M€ | – | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
 | 5 | Joaquín Varela | CB | 28 | Uruguay | 487 k€ | – | 0 | 0 | 0/0 |  |
 | 13 | Jhan Mena | LB | 20 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 15 | Luis Maturana | Defender | 17 | Colombia | – | – | 0 | 0 | 0/0 |  |
@@ -66,7 +66,6 @@ Tränare: Luis Perea. Betyg, mål och assist gäller innevarande säsong enligt 
 | 6 | Didier Moreno | CM,CDM,RW | 35 | Colombia | 380 k€ | – | 0 | 0 | 0/0 |  |
 | 7 | Léider Berrío | CAM,CM,RW | 28 | Colombia | 524 k€ | – | 0 | 0 | 0/0 |  |
 | 8 | Juan Fernando Quintero | CAM,RW | 33 | Colombia | 933 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
-| 10 | Daniel Cataño | ST,CAM,LW,CM | 34 | Colombia | 391 k€ | – | 0 | 0 | 0/0 |  |
 | 11 | Yony González | RW,LM,RM,CAM,LW,ST | 32 | Colombia | 427 k€ | – | 0 | 0 | 0/0 |  |
 | 14 | Baldomero Perlaza | CM,CDM | 34 | Colombia | 249 k€ | – | 0 | 0 | 0/0 |  |
 | 16 | Halam Loboa | CDM,CM | 20 | Colombia | 2,3 M€ | – | 0 | 0 | 0/0 |  |
@@ -79,6 +78,7 @@ Tränare: Luis Perea. Betyg, mål och assist gäller innevarande säsong enligt 
 | 3 | Anderson Murillo | Attacker | 17 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 9 | Enzo Larrosa | ST | 25 | Uruguay | 444 k€ | – | 0 | 0 | 0/0 |  |
 | 9 | Jeison Medina | ST,RW | 31 | Colombia | 536 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Daniel Cataño | ST,CAM,LW | 34 | Colombia | 391 k€ | – | 0 | 0 | 0/0 |  |
 | 17 | Gerónimo Mancilla | CB | 17 | Colombia | 826 k€ | – | 0 | 0 | 0/0 |  |
 | 20 | John Montaño | LM,LW,ST | 19 | Colombia | 1,6 M€ | – | 0 | 0 | 0/0 |  |
 | 28 | Andrés Dávila | ST | 19 | Colombia | – | – | 0 | 0 | 0/0 |  |

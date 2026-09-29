@@ -1,6 +1,6 @@
 # Hoffenheim (Bundesliga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [BL](../../ligor/BL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [BL](../../ligor/BL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -41,9 +41,9 @@ Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 l
 |---|---|---|---|---|
 | Adam Daghim | 15 % | 0 / 72 | – / 1,33 | – / −0,01 |
 | Andrej Kramaric | 11 % | 0 / 72 | – / 1,33 | – / −0,01 |
-| Fisnik Asllani | 10 % | 0 / 72 | – / 1,33 | – / −0,01 |
 | Patrick Wimmer | 10 % | 0 / 72 | – / 1,33 | – / −0,01 |
 | Bambasé Conté | 9 % | 0 / 72 | – / 1,33 | – / −0,01 |
+| Fisnik Asllani | 9 % | 0 / 72 | – / 1,33 | – / −0,01 |
 | Tim Lemperle | 9 % | 3 / 69 | 1,33 / 1,33 | +0,21 / −0,02 |
 
 Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
@@ -58,9 +58,9 @@ Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: s
 | Leverkusen | 16 | 6-3-7 | 27–29 | +0,35 | −3 pe | 2026-01-17 1-0 (h) |
 | M'gladbach | 16 | 4-5-7 | 27–38 | −0,33 | +7 pe | 2026-05-16 0-4 (b) |
 | Mainz | 16 | 3-4-9 | 17–29 | −0,70 | −0 pe | 2026-04-04 1-2 (h) |
-| RB Leipzig | 16 | 3-3-10 | 16–32 | −0,12 | −3 pe | 2026-03-20 0-5 (b) |
 | Bayern Munich | 15 | 3-2-10 | 16–46 | +0,24 | −1 pe | 2026-02-08 1-5 (b) |
 | Freiburg | 15 | 3-4-8 | 22–27 | −0,56 | +0 pe | 2026-02-14 3-0 (h) |
+| RB Leipzig | 15 | 3-3-9 | 15–30 | −0,03 | −1 pe | 2026-03-20 0-5 (b) |
 | Stuttgart | 15 | 4-8-3 | 24–24 | −0,00 | +30 pe | 2026-09-12 2-1 (h) |
 | Union Berlin | 14 | 6-2-6 | 26–23 | −0,08 | −12 pe | 2026-01-31 3-1 (h) |
 | Werder Bremen | 14 | 9-2-3 | 29–16 | +0,50 | −10 pe | 2026-05-09 1-0 (h) |
@@ -80,7 +80,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-12-07 | Europa 2529 | Dortmund - Hoffenheim | 1 | 12 % | 20 % |
 | 2025-11-02 | Europa 2519 | Wolfsburg - Hoffenheim | 2 ✓ | 47 % | 39 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Christian Ilzer. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -100,14 +100,14 @@ Tränare: Christian Ilzer. Betyg, mål och assist gäller innevarande säsong en
 | 34 | Vladimír Coufal | RB,RWB,RM | 34 | Czechia | 1,9 M€ | 7,26 | 0 | 2 | 0/0 |  |
 | 39 | Mats Rots | LB | 20 | Netherlands | 7,9 M€ | 6,73 | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 7 | Leon Avdullahu | CM,CDM | 22 | Kosovo | 22,5 M€ | 7,03 | 1 | 0 | 0/0 |  |
+| 7 | Leon Avdullahu | CDM,CM,CB | 22 | Kosovo | 22,5 M€ | 7,03 | 1 | 0 | 0/0 |  |
 | 17 | Nathan De Cat | CDM,CAM,CM,RW | 18 | Belgium | 5,3 M€ | 6,33 | 0 | 0 | 0/0 |  |
 | 18 | Wouter Burger | CDM,CM,CAM | 25 | Netherlands | 3,0 M€ | 7,07 | 0 | 0 | 3/0 |  |
 | 20 | Bambasé Conté | CAM | 23 | Germany | 2,2 M€ | 6,87 | 0 | 2 | 0/0 |  |
 | 27 | Andrej Kramarić | CAM,RW,RM,CM,ST | 35 | Croatia | 2,1 M€ | 5,94 | 0 | 0 | 1/0 |  |
 | 32 | Cajetan Lenz | CDM | 20 | Germany | 2,3 M€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 8 | Patrick Wimmer | LW,RW,RM,CAM,CM | 25 | Austria | 10,8 M€ | 6,82 | 0 | 0 | 0/0 |  |
+| 8 | Patrick Wimmer | RW,LW,RM,CAM,CM | 25 | Austria | 10,8 M€ | 6,82 | 0 | 0 | 0/0 |  |
 | 9 | Max Moerstedt | ST | 20 | Germany | 8,2 M€ | 6,32 | 0 | 1 | 1/0 |  |
 | 10 | Adam Hložek | ST,CAM | 24 | Czechia | 12,0 M€ | 7,20 | 2 | 0 | 0/0 |  |
 | 11 | Fisnik Asllani | ST,CAM | 24 | Kosovo | 27,6 M€ | 5,94 | 0 | 0 | 0/0 |  |

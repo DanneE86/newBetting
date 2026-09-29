@@ -1,6 +1,6 @@
 # Slovan Liberec (Chance Liga) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [CZ](../../ligor/CZ.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [CZ](../../ligor/CZ.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -35,7 +35,7 @@ Form senaste 8 (äldst → senast): FVOVVVVO · senaste match 2026-09-19
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Branislav Fodrek. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -70,7 +70,7 @@ Tränare: Branislav Fodrek. Betyg, mål och assist gäller innevarande säsong e
 | 19 | Vasil Kušej | CAM,LW,ST,RW | 26 | Czechia | 2,2 M€ | 7,46 | 2 | 1 | 0/1 |  |
 | 60 | Fallou Faye | CDM,CM | 20 | Senegal | 531 k€ | 6,95 | 0 | 0 | 3/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 5 | Petr Hodouš | RW,LW,RM | 22 | Czechia | 829 k€ | 6,42 | 0 | 0 | 1/1 |  |
+| 5 | Petr Hodouš | RW,LW | 22 | Czechia | 829 k€ | 6,42 | 0 | 0 | 1/1 |  |
 | 9 | Lukás Mašek | ST,CAM,LW | 22 | Czechia | 1,5 M€ | 6,79 | 3 | 0 | 1/0 |  |
 | 15 | Milan Lexa | LW,CM,RW | 22 | Czechia | 365 k€ | 6,80 | 0 | 0 | 1/0 |  |
 | 24 | Patrik Dulay | RW | 21 | Slovakia | 493 k€ | 7,12 | 3 | 1 | 1/0 |  |

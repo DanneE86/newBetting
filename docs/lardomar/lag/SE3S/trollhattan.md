@@ -1,6 +1,6 @@
 # Trollhättan (Div 1 Södra) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [SE3S](../../ligor/SE3S.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [SE3S](../../ligor/SE3S.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -41,3 +41,38 @@ Form senaste 8 (äldst → senast): VVFVVVVV · senaste match 2026-09-26
 | Ängelholm | 2 | 1-1-0 | 2–1 | 2026-08-15 1-0 (b) |
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
+
+## Trupp (Transfermarkt, hämtad 2026-09-29)
+
+Tränare: Amin Faily. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+|  | Armin Ibrahimović | Goalkeeper | 28 | Sweden | – | – | – | – | 0/0 |  |
+|  | Kristan Marinković | Goalkeeper | 18 | Sweden | – | – | – | – | 0/0 |  |
+| 25 | Jimmy Henriksson | Goalkeeper | 21 | Sweden | – | – | – | – | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 15 | Vilmer Johansson | Defender | 19 | Sweden | – | – | – | – | 0/0 |  |
+| 16 | Simon Banous | Defender | 19 | Sweden | – | – | – | – | 0/0 |  |
+| 3 | Albin Gashi | Centre-Back | 20 | Sweden | – | – | – | – | 0/0 |  |
+| 5 | Nils Svensson | Centre-Back | 24 | Sweden | – | – | – | – | 0/0 |  |
+| 19 | Filip Sterner | Left-Back | 21 | Sweden | – | – | – | – | 0/0 |  |
+| 2 | Caspar Ekdahl Filipsson | Right-Back | 21 | Sweden | – | – | – | – | 0/0 |  |
+| 11 | Daniel Burubwa | Right-Back | 21 | Sweden | – | – | – | – | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Natanael Lundén | Midfielder | 19 | Sweden | – | – | – | – | 0/0 |  |
+| 4 | Emil Fasth | Midfielder | 18 | Sweden | – | – | – | – | 0/0 |  |
+| 6 | William Jensen | Defensive Midfield | 26 | Sweden | – | – | – | – | 0/0 |  |
+| 8 | Oliver Ocampo Hägglund | Midfielder | 22 | Sweden | – | – | – | – | 0/0 |  |
+| 10 | Amadou-David Sanyang | Attacking Midfield | 22 | Sweden | – | – | – | – | 0/0 |  |
+| 18 | Semir Bosnic | Attacking Midfield | 22 | Bosnia-Herzegovina | – | – | – | – | 0/0 |  |
+| 20 | Wilmer Henriksson | Attacking Midfield | 19 | Sweden | – | – | – | – | 0/0 |  |
+| 22 | Abdirsak Hassan | Attacking Midfield | 21 | Sweden | – | – | – | – | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 13 | Melwin Berg | Right Winger | 22 | Sweden | – | – | – | – | 0/0 |  |
+| 14 | Tyler Sernling | Right Winger | 25 | Sweden | – | – | – | – | 0/0 |  |
+|  | Chisomnazu Chika Chidi | Centre-Forward | 26 | Sweden | – | – | – | – | 0/0 |  |
+|  | Yahye Abdi | Striker | 20 | Sweden | – | – | – | – | 0/0 |  |
+| 9 | Destiny Chibeze Eze | Centre-Forward | 22 | Sweden | – | – | – | – | 0/0 |  |
+| 17 | Valter Hermansson | Striker | 17 | Sweden | – | – | – | – | 0/0 |  |

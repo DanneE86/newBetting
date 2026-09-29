@@ -1,6 +1,6 @@
 # Velez Sarsfield (Liga Profesional) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -72,7 +72,7 @@ Form (äldst → senast): VOOOOVOV · senaste match 2026-09-21
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Guillermo Barros Schelotto. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

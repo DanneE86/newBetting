@@ -1,6 +1,6 @@
 # Fredericia (1. division) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [DK2](../../ligor/DK2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [DK2](../../ligor/DK2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -12,7 +12,7 @@ Form senaste 8 (äldst → senast): OOVOFVOO · senaste match 2026-09-20
 |---|---|---|---|---|---|---|---|
 | 2026/27 | 9 | 1,56 | 1,80 | 1,25 | 56 % | 1,33–0,67 | 44 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Michael Hansen. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

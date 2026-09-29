@@ -1,6 +1,6 @@
 # Sarmiento Junin (Liga Profesional) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -65,7 +65,7 @@ Form (äldst → senast): VVVVFVOF · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Facundo Sava. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -95,18 +95,18 @@ Tränare: Facundo Sava. Betyg, mål och assist gäller innevarande säsong enlig
 | 15 | Cristian Zabala | CM,CDM,CAM,LW | 28 | Argentina | 489 k€ | – | 0 | 0 | 0/0 |  |
 | 16 | Mauricio Martínez | CM,CDM | 33 | Argentina | 283 k€ | – | 0 | 0 | 0/0 |  |
 | 17 | Agustín Nadruz | CM,CDM | 30 | Uruguay | 229 k€ | – | 0 | 0 | 0/0 |  |
-| 18 | Osmar Giménez | CAM,CDM | 19 | Paraguay | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 18 | Osmar Giménez | CAM | 19 | Paraguay | 1,0 M€ | – | 0 | 0 | 0/0 |  |
 | 19 | Julián Contrera | RM,RW,CM | 23 | Argentina | 902 k€ | – | 0 | 0 | 0/0 |  |
 | 21 | Julián Mavilla | LM,CAM | 26 | Argentina | 527 k€ | – | 0 | 0 | 0/0 |  |
 | 23 | Elián Giménez | CM | 22 | Argentina | 745 k€ | – | 0 | 0 | 0/0 |  |
-| 25 | Carlos Villalba | CM,CDM,CAM | 28 | Argentina | 317 k€ | – | 0 | 0 | 0/0 | skadad, åter Late December 2026 |
+| 25 | Carlos Villalba | CM,CAM,CDM | 28 | Argentina | 317 k€ | – | 0 | 0 | 0/0 | skadad, åter Late December 2026 |
 | 26 | Yair Arismendi | LM,LB | 28 | Argentina | 278 k€ | – | 0 | 0 | 0/0 |  |
 | 33 | Gabriel Díaz | LM,LW,CM | 26 | Argentina | 321 k€ | – | 0 | 0 | 0/0 |  |
 | 35 | Facundo Alaggia | Midfielder | 21 | Argentina | 417 k€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Pablo Magnín | ST | 36 | Argentina | 326 k€ | – | 0 | 0 | 0/0 |  |
 | 9 | Diego Churín | ST | 36 | Argentina | 364 k€ | – | 0 | 0 | 0/0 |  |
-| 22 | Gastón González | LW | 25 | Argentina | 782 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Gastón González | CM | 25 | Argentina | 782 k€ | – | 0 | 0 | 0/0 |  |
 | 24 | Jonathan Herrera | ST | 35 | Argentina | 521 k€ | – | 0 | 0 | 0/0 |  |
 | 27 | Junior Marabel | ST | 28 | Paraguay | 1,1 M€ | – | 0 | 0 | 0/0 |  |
 | 40 | Brandon Márquez | Attacker | 21 | Argentina | 573 k€ | – | 0 | 0 | 0/0 |  |

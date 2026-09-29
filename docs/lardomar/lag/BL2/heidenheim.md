@@ -1,11 +1,11 @@
 # Heidenheim (2. Bundesliga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [BL2](../../ligor/BL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [BL2](../../ligor/BL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Senaste 8: tur med +0,57 poäng per match mot xP. Marknaden prisar redan in det i ligan (ingen bekräftad effekt), så det är inget spel i sig.
-- Stark historik mot Holstein Kiel (+0,57 p/match mot marknaden, 12 möten), Darmstadt (+0,59 p/match mot marknaden, 11 möten), Bochum (−0,71 p/match mot marknaden, 10 möten), Greuther Furth (+0,64 p/match mot marknaden, 8 möten), Hannover (+0,84 p/match mot marknaden, 8 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Stark historik mot Holstein Kiel (+0,57 p/match mot marknaden, 12 möten), Darmstadt (+0,59 p/match mot marknaden, 11 möten), Bochum (−0,96 p/match mot marknaden, 9 möten), Greuther Furth (+0,64 p/match mot marknaden, 8 möten), Hannover (+0,84 p/match mot marknaden, 8 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -41,7 +41,7 @@ Form (äldst → senast): VFVFVVVO · senaste match 2026-09-20
 | St Pauli | 14 | 4-3-7 | 17–19 | −0,26 | −6 pe | 2026-04-25 2-0 (h) |
 | Holstein Kiel | 12 | 7-3-2 | 20–11 | +0,57 | −2 pe | 2026-09-13 1-0 (h) |
 | Darmstadt | 11 | 7-1-3 | 18–16 | +0,59 | −18 pe | 2024-04-28 1-0 (b) |
-| Bochum | 10 | 1-3-6 | 6–17 | −0,71 | +2 pe | 2025-05-02 0-0 (h) |
+| Bochum | 9 | 0-3-6 | 3–15 | −0,96 | +6 pe | 2025-05-02 0-0 (h) |
 | Greuther Furth | 8 | 5-2-1 | 8–2 | +0,64 | −3 pe | 2026-09-06 1-0 (b) |
 | Hannover | 8 | 6-0-2 | 17–6 | +0,84 | −28 pe | 2023-04-14 3-0 (b) |
 | Karlsruhe | 8 | 3-3-2 | 15–10 | +0,00 | +11 pe | 2023-03-17 5-2 (h) |
@@ -57,7 +57,7 @@ Form (äldst → senast): VFVFVVVO · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Frank Schmidt. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -73,7 +73,7 @@ Tränare: Frank Schmidt. Betyg, mål och assist gäller innevarande säsong enli
 | 2 | Marnon-Thomas Busch | RB,CB,RWB | 31 | Germany | 562 k€ | 6,89 | 0 | 1 | 0/0 |  |
 | 4 | Tim Siersleben | CB | 26 | Germany | 1,2 M€ | 6,27 | 0 | 0 | 0/0 |  |
 | 6 | Patrick Mainka | CB | 31 | Germany | 1,5 M€ | 6,85 | 0 | 0 | 2/0 |  |
-| 19 | Jonas Föhrenbach | LB,CB,LWB | 30 | Germany | 609 k€ | 6,96 | 1 | 1 | 0/0 |  |
+| 19 | Jonas Föhrenbach | LB,CB,LWB,LM | 30 | Germany | 609 k€ | 6,96 | 1 | 1 | 0/0 |  |
 | 22 | Oualid Mhamdi | RB,RM | 23 | Morocco | 498 k€ | 6,50 | 1 | 0 | 2/0 |  |
 | 23 | Leart Paçarada | LB | 31 | Kosovo | 470 k€ | – | 0 | 0 | 0/0 |  |
 | 27 | Michael Heule | LB | 25 | Switzerland | 1,8 M€ | 7,36 | 0 | 1 | 0/0 |  |
@@ -84,6 +84,7 @@ Tränare: Frank Schmidt. Betyg, mål och assist gäller innevarande säsong enli
 | 16 | Julian Niehues | CDM,CM | 25 | Germany | 946 k€ | 6,80 | 1 | 0 | 0/0 |  |
 | 17 | Mathias Honsak | LW,LM,ST,CAM | 29 | Austria | 859 k€ | 6,50 | 0 | 0 | 1/0 |  |
 | 20 | Luca Kerber | CM | 24 | Germany | 1,3 M€ | 6,26 | 0 | 0 | 2/0 |  |
+| 31 | Sirlord Conteh | CAM | 30 | Sierra Leone | 594 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 38 | Yannik Wagner | LM | 19 | Germany | 1,2 M€ | 6,16 | 0 | 0 | 0/0 |  |
 | 41 | Marko Zrilic | Midfielder | 18 | Germany | – | 6,22 | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
@@ -93,5 +94,5 @@ Tränare: Frank Schmidt. Betyg, mål och assist gäller innevarande säsong enli
 | 18 | Alessandro Vogt | ST | 21 | Switzerland | 6,5 M€ | 6,57 | 0 | 0 | 0/0 |  |
 | 24 | Marcel Costly | RW,RM,ST,CAM,LM | 30 | Germany | 227 k€ | 7,82 | 1 | 3 | 0/0 |  |
 | 29 | Mikkel Kaufmann | ST | 25 | Denmark | 1,3 M€ | 6,99 | 0 | 2 | 1/0 |  |
-| 31 | Sirlord Conteh | RW | 30 | Sierra Leone | 594 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
-| 37 | Tobias Weigel | Attacker | 19 | Germany | 404 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Tobias Weigel (senast 2026-09-29).

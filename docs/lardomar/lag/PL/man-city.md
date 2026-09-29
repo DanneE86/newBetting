@@ -1,6 +1,6 @@
 # Man City (Premier League) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -57,12 +57,12 @@ Ligans test av frånvaro mot marknaden: svag signal (inte bekräftad). Få match
 |---|---|---|---|---|---|---|
 | Crystal Palace | 17 | 11-4-2 | 43–19 | −0,18 | +7 pe | 2026-08-28 4-1 (b) |
 | Man United | 17 | 9-2-6 | 30–18 | −0,30 | −10 pe | 2026-09-13 1-0 (b) |
-| Brighton | 16 | 10-3-3 | 40–15 | −0,21 | +2 pe | 2026-01-07 1-1 (h) |
 | Chelsea | 16 | 10-3-3 | 31–15 | +0,19 | −5 pe | 2026-04-12 3-0 (b) |
 | Everton | 16 | 13-3-0 | 39–10 | +0,29 | +2 pe | 2026-05-04 3-3 (b) |
 | Liverpool | 16 | 6-6-4 | 27–19 | −0,08 | +12 pe | 2026-02-08 2-1 (b) |
 | Tottenham | 16 | 6-3-7 | 21–24 | −0,83 | −1 pe | 2026-02-01 2-2 (b) |
 | Arsenal | 15 | 10-3-2 | 31–14 | +0,33 | −3 pe | 2026-04-19 2-1 (h) |
+| Brighton | 15 | 9-3-3 | 38–15 | −0,24 | +2 pe | 2026-01-07 1-1 (h) |
 | Newcastle | 15 | 10-3-2 | 40–16 | −0,04 | +3 pe | 2026-02-21 2-1 (h) |
 | Aston Villa | 14 | 9-1-4 | 30–15 | −0,25 | −11 pe | 2026-05-24 1-2 (h) |
 | Bournemouth | 13 | 11-1-1 | 34–11 | +0,21 | −7 pe | 2026-08-23 2-1 (h) |
@@ -117,9 +117,11 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-09-14 | Europa 2505 | Manchester City - Manchester United | 1 ✓ | 58 % | 55 % |
 | 2025-08-31 | Europa 2501 | Brighton - Manchester City | 1 | 59 % | 48 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Enzo Maresca. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Nico O'Reilly (skadad, åter About a week)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -134,7 +136,7 @@ Tränare: Enzo Maresca. Betyg, mål och assist gäller innevarande säsong enlig
 | 22 | Vitor Reis | CB | 20 | Brazil | 31,1 M€ | – | 0 | 0 | 0/0 |  |
 | 24 | Joško Gvardiol | CB,LB | 24 | Croatia | 55,3 M€ | 7,78 | 1 | 2 | 1/0 |  |
 | 27 | Matheus Nunes | RB | 28 | Portugal | 38,3 M€ | 7,07 | 0 | 0 | 0/0 |  |
-| 33 | Nico O'Reilly | LB,LW,CDM | 21 | England | 41,9 M€ | 6,83 | 0 | 0 | 0/0 |  |
+| 33 | Nico O'Reilly | LB,CDM,LW,CAM | 21 | England | 41,9 M€ | 6,83 | 0 | 0 | 0/0 | skadad, åter About a week |
 | 45 | Abdukodir Khusanov | CB,RB | 22 | Uzbekistan | 34,3 M€ | 7,63 | 0 | 0 | 1/0 |  |
 | 82 | Rico Lewis | RB,LB,CM | 21 | England | 33,3 M€ | 6,09 | 0 | 0 | 0/0 |  |
 | 97 | Josh Wilson-Esbrand | LB | 23 | England | 1,8 M€ | – | 0 | 0 | 0/0 |  |
@@ -148,7 +150,7 @@ Tränare: Enzo Maresca. Betyg, mål och assist gäller innevarande säsong enlig
 | | **Anfallare** | | | | | | | | | |
 | 7 | Iliman Ndiaye | RW,LW,CAM | 26 | Senegal | 54,0 M€ | 7,34 | 0 | 1 | 0/0 |  |
 | 9 | Erling Haaland | ST | 26 | Norway | 159,3 M€ | 7,98 | 5 | 0 | 0/0 |  |
-| 11 | Jérémy Doku | LW,CAM,RW | 24 | Belgium | 56,9 M€ | 6,13 | 0 | 0 | 0/0 |  |
+| 11 | Jérémy Doku | LW,RW,CAM | 24 | Belgium | 56,9 M€ | 6,13 | 0 | 0 | 0/0 |  |
 | 37 | Allan | RW,RM,RWB | 22 | Brazil | 8,2 M€ | – | 0 | 0 | 0/0 |  |
 | 42 | Antoine Semenyo | LW,RW,ST,RM | 26 | Ghana | 51,8 M€ | 7,77 | 2 | 3 | 0/0 |  |
 | 56 | Ryan McAidoo | RW | 18 | England | – | – | 0 | 0 | 0/0 |  |

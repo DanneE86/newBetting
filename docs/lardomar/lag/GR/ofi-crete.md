@@ -1,6 +1,6 @@
 # OFI Crete (Super League (Grekland)) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [GR](../../ligor/GR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [GR](../../ligor/GR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -42,15 +42,15 @@ Form (äldst → senast): FFVVFVVO · senaste match 2026-09-20
 | Volos NFC | 20 | 9-5-6 | 29–22 | +0,15 | −4 pe | 2026-08-23 2-0 (h) |
 | Olympiakos | 19 | 2-0-17 | 9–42 | −0,14 | −17 pe | 2026-09-12 1-0 (b) |
 | Panetolikos | 19 | 7-3-9 | 28–26 | −0,30 | −14 pe | 2026-01-25 1-0 (h) |
-| AEK | 18 | 3-1-14 | 11–36 | −0,03 | −14 pe | 2025-12-21 1-2 (b) |
 | Panathinaikos | 18 | 4-6-8 | 23–32 | +0,14 | +8 pe | 2026-03-04 1-4 (b) |
+| AEK | 17 | 3-1-13 | 11–33 | +0,01 | −13 pe | 2025-12-21 1-2 (b) |
 | PAOK | 17 | 2-3-12 | 9–42 | −0,04 | −2 pe | 2026-01-18 0-3 (b) |
 | Levadeiakos | 11 | 4-3-4 | 14–16 | −0,03 | −2 pe | 2026-05-13 2-3 (b) |
 | Kifisia | 6 | 1-3-2 | 6–7 | −0,47 | +22 pe | 2026-09-06 2-0 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Christos Kontis. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -82,7 +82,7 @@ Tränare: Christos Kontis. Betyg, mål och assist gäller innevarande säsong en
 | 14 | Thanasis Androutsos | CM,CDM,CAM,RB,RM | 29 | Greece | 338 k€ | 6,65 | 1 | 0 | 0/0 |  |
 | 17 | Borja González | RWB,RB,RM | 30 | Spain | 109 k€ | 6,55 | 0 | 0 | 1/0 |  |
 | 21 | Giannis Apostolakis | CM,RM,LWB,CDM,RW,CAM | 22 | Greece | 1,3 M€ | 7,01 | 1 | 0 | 0/0 |  |
-| 24 | Lorenzo Dickmann | RWB,RM,CB,RB,LWB | 30 | Italy | 261 k€ | 6,59 | 0 | 0 | 0/0 |  |
+| 24 | Lorenzo Dickmann | RWB,RM,RB,LWB | 30 | Italy | 261 k€ | 6,59 | 0 | 0 | 0/0 |  |
 | 30 | Thiago Romano | Midfielder | 20 | Argentina | 297 k€ | – | 0 | 0 | 0/0 | skadad, åter A few weeks |
 | 41 | Andreas Bouchalakis | CDM,CM | 33 | Greece | 167 k€ | 7,38 | 1 | 1 | 2/0 |  |
 | 71 | Athanasios Sitmalidis | Midfielder | 18 | Greece | – | – | 0 | 0 | 0/0 |  |

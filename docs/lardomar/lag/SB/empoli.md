@@ -1,6 +1,6 @@
 # Empoli (Serie B) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [SB](../../ligor/SB.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [SB](../../ligor/SB.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -60,7 +60,7 @@ Form (äldst → senast): FVOVFVFF · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Guido Pagliuca. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -90,7 +90,6 @@ Tränare: Guido Pagliuca. Betyg, mål och assist gäller innevarande säsong enl
 | 38 | Mattia Huqi | Midfielder | 19 | Albania | – | – | 0 | 0 | 0/0 |  |
 | 39 | Edoardo Biondini | CDM,RW,CM | 0 | Italy | – | 6,45 | 0 | 0 | 1/0 |  |
 | 44 | Lapo Deli | Midfielder | 20 | Italy | – | 6,14 | 0 | 0 | 1/0 |  |
-| 53 | Danilo Busiello | Midfielder | 18 | Italy | 886 k€ | – | 0 | 0 | 0/0 |  |
 | 57 | Luca Belardinelli | CDM,CM | 25 | Italy | 271 k€ | 6,19 | 0 | 0 | 1/0 |  |
 | 96 | Andrea Orlandi | Midfielder | 19 | Italy | 423 k€ | – | 0 | 0 | 0/0 |  |
 | 98 | Karim Zedadka | LM,CM | 26 | Algeria | 414 k€ | 6,55 | 0 | 0 | 1/0 |  |
@@ -99,3 +98,5 @@ Tränare: Guido Pagliuca. Betyg, mål och assist gäller innevarande säsong enl
 | 11 | Stiven Shpendi | ST,CAM,RM | 23 | Albania | 1,7 M€ | 6,40 | 1 | 0 | 0/0 |  |
 | 20 | Filippo Distefano | ST | 23 | Italy | 1,2 M€ | 6,52 | 0 | 0 | 1/0 |  |
 | 77 | Bogdan Popov | ST | 19 | Ukraine | 3,5 M€ | 6,40 | 1 | 0 | 1/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Danilo Busiello (senast 2026-09-29).

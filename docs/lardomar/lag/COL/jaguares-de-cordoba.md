@@ -1,6 +1,6 @@
 # Jaguares de Córdoba (Primera A) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [COL](../../ligor/COL.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [COL](../../ligor/COL.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -28,11 +28,11 @@ Form senaste 8 (äldst → senast): FFOVOOOF · senaste match 2026-09-22
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Hubert Bodhert. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Juan Arcila (skadad, åter Late October 2026), Johan Hinestroza (skadad, åter Early November 2026), Faber Gil (skadad, åter Mid November 2026)
+**Skadade/borta nu:** Juan Arcila (skadad, åter Late October 2026), Johan Hinestroza (skadad, åter Early November 2026), Esteban Beltrán (skadad, åter Late October 2026), Faber Gil (skadad, åter Mid November 2026)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -57,7 +57,7 @@ Tränare: Hubert Bodhert. Betyg, mål och assist gäller innevarande säsong enl
 | 10 | Cristian Álvarez | CAM,ST | 34 | Argentina | 225 k€ | – | 0 | 0 | 0/0 |  |
 | 13 | Johan Hinestroza | CDM,CM | 24 | Colombia | 368 k€ | – | 0 | 0 | 0/0 | skadad, åter Early November 2026 |
 | 15 | Jáder Maza | LWB,LW,LM | 31 | Colombia | 278 k€ | – | 0 | 0 | 0/0 |  |
-| 16 | Esteban Beltrán | ST | 26 | Colombia | 301 k€ | – | 0 | 0 | 0/0 |  |
+| 16 | Esteban Beltrán | CAM,ST | 26 | Colombia | 301 k€ | – | 0 | 0 | 0/0 | skadad, åter Late October 2026 |
 | 19 | Carlos Cantillo | LB | 23 | Colombia | 254 k€ | – | 0 | 0 | 0/0 |  |
 | 21 | Rafael Bustamante | CDM,CM | 26 | Colombia | 316 k€ | – | 0 | 0 | 0/0 |  |
 | 27 | Faber Gracia | Midfielder | 19 | Colombia | – | – | 0 | 0 | 0/0 |  |
@@ -66,9 +66,9 @@ Tränare: Hubert Bodhert. Betyg, mål och assist gäller innevarande säsong enl
 | | **Anfallare** | | | | | | | | | |
 | 7 | Wilfrido De La Rosa | RW,RM,LW | 33 | Colombia | 234 k€ | – | 0 | 0 | 0/0 |  |
 | 8 | Duván Rodríguez | RW,RM | 30 | Colombia | 290 k€ | – | 0 | 0 | 0/0 |  |
-| 9 | Johar Mejía | ST,LW | 26 | Colombia | 326 k€ | – | 0 | 0 | 0/0 |  |
+| 9 | Johar Mejía | LW,ST | 26 | Colombia | 326 k€ | – | 0 | 0 | 0/0 |  |
 | 11 | Andrés Rentería | ST,LW | 33 | Colombia | 306 k€ | – | 0 | 0 | 0/0 |  |
 | 17 | Darwin López | RW | 34 | Colombia | 279 k€ | – | 0 | 0 | 0/0 |  |
 | 20 | Faber Gil | RW,RM | 31 | Colombia | 274 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid November 2026 |
-| 24 | Santiago Cubides | ST | 26 | Colombia | 307 k€ | – | 0 | 0 | 0/0 |  |
+| 24 | Santiago Cubides | RW | 26 | Colombia | 307 k€ | – | 0 | 0 | 0/0 |  |
 | 31 | Gildardo Ramírez | Attacker | 18 | Colombia | – | – | 0 | 0 | 0/0 |  |

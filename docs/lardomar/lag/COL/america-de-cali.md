@@ -1,6 +1,6 @@
 # América de Cali (Primera A) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [COL](../../ligor/COL.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [COL](../../ligor/COL.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -40,7 +40,7 @@ Form senaste 8 (äldst → senast): VOVOVFOV · senaste match 2026-09-24
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: David González. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -65,19 +65,19 @@ Tränare: David González. Betyg, mål och assist gäller innevarande säsong en
 | 5 | Josen Escobar | CDM,CM | 21 | Colombia | 2,2 M€ | – | 0 | 0 | 0/0 |  |
 | 6 | José Cavadía | CM | 21 | Colombia | 1,0 M€ | – | 0 | 0 | 0/0 |  |
 | 15 | Rafael Carrascal | CM,CDM,CAM | 33 | Colombia | 516 k€ | – | 0 | 0 | 0/0 |  |
-| 18 | Yani Quintero | CDM,CM,RB | 24 | Colombia | 476 k€ | – | 0 | 0 | 0/0 |  |
+| 18 | Yani Quintero | CDM,RB,CM | 24 | Colombia | 476 k€ | – | 0 | 0 | 0/0 |  |
 | 23 | Luis Quiñones | RW,CAM,RM | 35 | Colombia | 279 k€ | – | 0 | 0 | 0/0 |  |
 | 25 | Juan Aponzá | Midfielder | 18 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 29 | Camilo Amu | CDM | 18 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 32 | Johán Balanta | Midfielder | 18 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Jhon Murillo | LW,LM | 30 | Venezuela | 387 k€ | – | 0 | 0 | 0/0 |  |
-| 9 | Jorge Valencia | ST | 30 | Ecuador | 762 k€ | – | 0 | 0 | 0/0 |  |
 | 10 | Yeison Guzmán | ST,CAM | 28 | Colombia | 1,7 M€ | – | 0 | 0 | 0/0 |  |
 | 17 | Jan Lucumí | RW,ST,RM,LW,CAM,CM,LM | 22 | Colombia | 990 k€ | – | 0 | 0 | 0/0 |  |
 | 19 | Tilman Palacios | LW,LM | 21 | Colombia | 1,5 M€ | – | 0 | 0 | 0/0 |  |
 | 20 | Adrián Ramos | ST | 40 | Colombia | 282 k€ | – | 0 | 0 | 0/0 |  |
 | 21 | Tomás Ángel | ST,RW,RM | 23 | Colombia | 930 k€ | – | 0 | 0 | 0/0 |  |
-| 35 | Kevin Angulo | ST | 18 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 36 | Jhordy Camacho | Attacker | 20 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 77 | Edson Tortolero | LW,LM,CAM,ST,RW | 28 | Venezuela | 349 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (2): Jorge Valencia (senast 2026-09-29), Kevin Angulo (senast 2026-09-29).

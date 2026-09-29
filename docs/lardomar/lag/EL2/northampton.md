@@ -1,6 +1,6 @@
 # Northampton (League Two) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -62,7 +62,7 @@ Form (äldst → senast): FOFOOVFF · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Chris Hogg. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -99,4 +99,5 @@ Tränare: Chris Hogg. Betyg, mål och assist gäller innevarande säsong enligt 
 | 24 | Connor Lemonheigh-Evans | ST | 29 | Wales | 131 k€ | 6,63 | 0 | 0 | 0/0 |  |
 | 26 | Sam Chambers | LW,ST | 19 | Scotland | 659 k€ | 6,45 | 0 | 0 | 1/0 |  |
 | 32 | Harvey Saunders | ST,LW,LM,RW,RM | 29 | England | 204 k€ | 6,32 | 0 | 0 | 0/0 |  |
-| 40 | Neo Dobson | Attacker | 19 | England | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Neo Dobson (senast 2026-09-29).

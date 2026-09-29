@@ -1,21 +1,22 @@
 # Leganes (LaLiga 2) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [LL2](../../ligor/LL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [LL2](../../ligor/LL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
-- Senaste 8: tur med +0,58 poäng per match mot xP. Marknaden prisar redan in det i ligan (ingen bekräftad effekt), så det är inget spel i sig.
+- Senaste 8: tur med +0,68 poäng per match mot xP. Marknaden prisar redan in det i ligan (ingen bekräftad effekt), så det är inget spel i sig.
+- Senaste 8: xG-målskillnaden är −0,53 per match sämre än målskillnaden.
 - Stark historik mot Granada (+0,52 p/match mot marknaden, 7 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
 
 ## Nuläge (senaste 8 ligamatcher)
 
-Form (äldst → senast): FVOVVOFV · senaste match 2026-09-20
+Form (äldst → senast): VOVVOFVF · senaste match 2026-09-28
 
 | Mått | Värde |
 |---|---|
-| Tur (poäng − xP per match) | +0,58 |
-| xG-målskillnad − målskillnad | −0,25 |
-| Poäng mot marknaden per match | +0,46 |
+| Tur (poäng − xP per match) | +0,68 |
+| xG-målskillnad − målskillnad | −0,53 |
+| Poäng mot marknaden per match | +0,47 |
 
 ## Säsonger
 
@@ -30,7 +31,7 @@ Form (äldst → senast): FVOVVOFV · senaste match 2026-09-20
 | 2023/24 | LL2 | 42 | 1,76 | +0,31 (+0,24 / +0,39) | 33 % (32 %) | 1,33–0,64 | 1,21–1,06* | 1,45 |
 | 2024/25 | LL | 38 | 1,05 | +0,21 (+0,17 / +0,26) | 34 % (27 %) | 1,03–1,47 | 1,01–1,72 | 1,00 |
 | 2025/26 | LL2 | 42 | 1,10 | −0,23 (−0,30 / −0,16) | 31 % (29 %) | 1,02–1,21 | 1,35–1,42* | 1,33 |
-| 2026/27 | LL2 | 6 | 1,83 | +0,73 (+1,29 / +0,45) | 33 % (29 %) | 1,00–0,83 | 1,33–1,75* | 1,16 |
+| 2026/27 | LL2 | 7 | 1,57 | +0,46 (+0,48 / +0,45) | 29 % (29 %) | 0,86–1,00 | 1,31–1,81* | 1,11 |
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
 
@@ -51,7 +52,7 @@ Form (äldst → senast): FVOVVOFV · senaste match 2026-09-20
 | Almeria | 6 | 1-2-3 | 6–10 | −0,32 | +5 pe | 2026-04-05 1-2 (b) |
 | Andorra | 6 | 2-2-2 | 7–10 | +0,03 | +1 pe | 2026-04-26 0-4 (h) |
 | Mallorca | 6 | 1-2-3 | 2–4 | −0,50 | +1 pe | 2025-04-19 0-0 (b) |
-| Castellon | 4 | 0-1-3 | 0–5 | −1,20 | −2 pe | 2026-01-16 0-2 (b) |
+| Castellon | 5 | 0-1-4 | 0–7 | −1,18 | −8 pe | 2026-09-28 0-2 (h) |
 | Sociedad B | 4 | 1-1-2 | 4–4 | −0,68 | −5 pe | 2026-01-24 2-0 (h) |
 | Eldense | 3 | 2-1-0 | 4–2 | +0,65 | +3 pe | 2026-08-29 1-0 (h) |
 | Cadiz | 2 | 0-1-1 | 1–4 | −0,93 | +19 pe | 2026-05-24 0-3 (b) |
@@ -67,7 +68,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 |---|---|---|---|---|---|
 | 2026-04-30 | Europa 2570 | Deportivo A Coruña - Leganes | 1 | 12 % | 21 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Rubén Albés. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -77,34 +78,36 @@ Tränare: Rubén Albés. Betyg, mål och assist gäller innevarande säsong enli
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
 | 1 | Raul Fernández | GK | 38 | Spain | 283 k€ | 6,07 | 0 | 0 | 0/1 |  |
-| 13 | Luca Zidane | GK | 28 | Algeria | 597 k€ | 7,04 | 0 | 0 | 0/0 |  |
+| 13 | Luca Zidane | GK | 28 | Algeria | 597 k€ | 7,08 | 0 | 0 | 0/0 |  |
 | 38 | Ale Gorrín | Keeper | 24 | Spain | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Marvel | CB,LB | 23 | Morocco | 968 k€ | 7,18 | 0 | 0 | 3/0 |  |
-| 3 | Francisco Montero | CB | 27 | Spain | 568 k€ | 5,98 | 0 | 0 | 0/0 |  |
-| 4 | Rubén Pulido | CB | 26 | Spain | 352 k€ | 6,11 | 0 | 0 | 1/0 |  |
+| 2 | Marvel | CB,LB | 23 | Morocco | 968 k€ | 7,15 | 0 | 0 | 4/0 |  |
+| 3 | Francisco Montero | CB | 27 | Spain | 568 k€ | 6,14 | 0 | 0 | 0/0 |  |
+| 4 | Rubén Pulido | CB | 26 | Spain | 352 k€ | 6,19 | 0 | 0 | 2/0 |  |
 | 5 | Ignasi Miquel | CB | 34 | Spain | 194 k€ | 6,76 | 0 | 0 | 1/0 |  |
-| 6 | Lalo Aguilar | CB,RB | 24 | Spain | 975 k€ | 6,89 | 0 | 0 | 0/0 |  |
+| 6 | Lalo Aguilar | CB,RB | 24 | Spain | 975 k€ | 6,90 | 0 | 0 | 0/0 |  |
 | 7 | Rubén Pena | RB,RWB,RW,LW | 35 | Spain | 206 k€ | 6,64 | 0 | 0 | 0/0 |  |
-| 11 | Naim García | LB,LW,LM,LWB,RWB,RW | 24 | Spain | 503 k€ | 7,07 | 2 | 1 | 0/0 |  |
+| 11 | Naim García | LB,LW,LM,LWB,RWB,RW | 24 | Spain | 503 k€ | 7,11 | 2 | 1 | 1/0 |  |
 | 15 | Enric Franquesa | LB | 29 | Spain | 501 k€ | – | 0 | 0 | 0/0 | skadad, åter Early November 2026 |
 | 23 | Álvaro Tejero | RB,LB,LM | 30 | Spain | 1,1 M€ | 6,76 | 0 | 0 | 0/0 |  |
 | 28 | Álex Fita | LWB | 19 | Spain | – | – | 0 | 0 | 0/0 |  |
 | 36 | Marcos Leiva | RB | 21 | Spain | 516 k€ | – | 0 | 0 | 0/0 | skadad, åter Early February 2027 |
 | 36 | Sulaiman Mulumba | Defender | 20 | Uganda | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 8 | Yassine Kechta | CDM,CAM,CM,LW,RM | 24 | Morocco | 2,2 M€ | 6,70 | 0 | 0 | 0/0 |  |
-| 10 | Zico Buurmeester | CDM,CM | 24 | Netherlands | 1,3 M€ | 6,72 | 0 | 0 | 1/0 |  |
+| 8 | Yassine Kechta | CDM,CAM,CM,LW,RM | 24 | Morocco | 2,2 M€ | 6,70 | 0 | 0 | 1/0 |  |
+| 10 | Zico Buurmeester | CDM,CM | 24 | Netherlands | 1,3 M€ | 6,75 | 0 | 0 | 1/0 |  |
 | 17 | Ismaël Gharbi | CAM,CM,ST,LW | 22 | Tunisia | 5,1 M€ | 7,62 | 2 | 1 | 1/0 |  |
-| 20 | Miguel Atienza | CM,CDM | 27 | Spain | 944 k€ | 6,91 | 1 | 0 | 0/0 |  |
-| 22 | Álex Sancris | LM,RW,ST | 29 | Spain | 1,1 M€ | 6,67 | 0 | 0 | 2/0 |  |
+| 20 | Miguel Atienza | CM,CDM | 27 | Spain | 944 k€ | 6,95 | 1 | 0 | 0/0 |  |
+| 22 | Álex Sancris | LM,RW,ST | 29 | Spain | 1,1 M€ | 6,79 | 0 | 0 | 2/0 |  |
 | 24 | Amadou Diawara | CM,CDM | 29 | Guinea | 343 k€ | – | 0 | 0 | 0/0 |  |
 | 33 | Jorge Herrero | Midfielder | 21 | Spain | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 9 | Álex Millán | ST | 26 | Spain | – | 6,31 | 0 | 0 | 1/0 |  |
-| 14 | Dani Rodríguez | LW,CM,CAM | 38 | Spain | 164 k€ | 6,28 | 0 | 0 | 0/0 |  |
-| 16 | Unax del Cura | ST,CAM | 21 | Spain | 537 k€ | 6,41 | 0 | 0 | 0/0 |  |
+| 9 | Álex Millán | ST | 26 | Spain | – | 6,15 | 0 | 0 | 1/0 |  |
+| 14 | Dani Rodríguez | LW,CM,CAM | 38 | Spain | 164 k€ | 6,32 | 0 | 0 | 0/0 |  |
+| 16 | Unax del Cura | ST,CAM | 21 | Spain | 537 k€ | 6,61 | 0 | 0 | 1/0 |  |
 | 18 | Andrés Campos | CDM | 24 | Spain | 259 k€ | – | 0 | 0 | 0/0 |  |
-| 19 | Patrick Soko | ST | 28 | Cameroon | 968 k€ | 6,50 | 1 | 0 | 0/0 |  |
-| 21 | Álvaro Morata | ST | 33 | Spain | 4,5 M€ | 5,95 | 0 | 0 | 0/0 |  |
-| 32 | Suleiman El Haddadi | ST | 20 | Morocco | – | 7,04 | 0 | 2 | 0/0 |  |
+| 19 | Patrick Soko | ST | 28 | Cameroon | 968 k€ | 6,54 | 1 | 0 | 0/0 |  |
+| 21 | Álvaro Morata | ST | 33 | Spain | 4,5 M€ | 6,01 | 0 | 0 | 1/0 |  |
+| 32 | Suleiman El Haddadi | ST | 20 | Morocco | – | 6,31 | 0 | 2 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Sulaiman Mulumba (senast 2026-09-28).

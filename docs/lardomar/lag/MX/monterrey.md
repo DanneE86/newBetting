@@ -1,6 +1,6 @@
 # Monterrey (Liga MX) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [MX](../../ligor/MX.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [MX](../../ligor/MX.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -59,7 +59,7 @@ Form (äldst → senast): VFVVFFOV · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: svag signal (inte bekräftad).
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Matías Almeyda. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -72,7 +72,7 @@ Tränare: Matías Almeyda. Betyg, mål och assist gäller innevarande säsong en
 | 2 | Ricardo Chávez | RB,RM | 31 | Mexico | 1,6 M€ | – | 0 | 0 | 0/0 |  |
 | 3 | Gerardo Arteaga | LB,RB | 28 | Mexico | 1,7 M€ | – | 0 | 0 | 0/0 |  |
 | 4 | Víctor Guzmán | CB | 24 | Mexico | 4,4 M€ | – | 0 | 0 | 0/0 |  |
-| 13 | Carlos Salcedo | CB | 32 | Mexico | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 13 | Carlos Salcedo | CB | 33 | Mexico | 1,0 M€ | – | 0 | 0 | 0/0 |  |
 | 14 | Érick Aguirre | RB | 29 | Mexico | 1,2 M€ | – | 0 | 0 | 0/0 |  |
 | 19 | Alonso Aceves | CB,LB | 25 | Mexico | 2,0 M€ | – | 0 | 0 | 0/0 |  |
 | 21 | Luis Reyes | LB,CB,LWB | 35 | Mexico | 341 k€ | – | 0 | 0 | 0/0 |  |
@@ -83,7 +83,7 @@ Tränare: Matías Almeyda. Betyg, mål och assist gäller innevarande säsong en
 | 5 | Fidel Ambríz | CDM,CM | 23 | Mexico | 3,0 M€ | – | 0 | 0 | 0/0 |  |
 | 8 | Óliver Torres | CDM,CM,CAM,RW | 31 | Spain | 1,5 M€ | – | 0 | 0 | 0/0 |  |
 | 11 | Iker Fimbres | CDM,CAM,LW | 21 | Mexico | 3,1 M€ | – | 0 | 0 | 0/0 |  |
-| 17 | Jesús Corona | LW,CAM,RW,LM,RM | 33 | Mexico | 975 k€ | – | 0 | 0 | 0/0 |  |
+| 17 | Jesús Corona | LW,CAM,LM,RW,RM | 33 | Mexico | 975 k€ | – | 0 | 0 | 0/0 |  |
 | 18 | César Garza | CDM,CM | 21 | Mexico | – | – | 0 | 0 | 0/0 |  |
 | 25 | Orbelín Pineda | CM,CDM,CAM,RM | 30 | Mexico | 2,4 M€ | – | 0 | 0 | 0/0 |  |
 | 30 | Jorge Rodríguez | CDM,CM,RW,CB | 31 | Argentina | 1,6 M€ | – | 0 | 0 | 0/0 |  |

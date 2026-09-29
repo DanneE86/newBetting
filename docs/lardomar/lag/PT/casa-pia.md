@@ -1,6 +1,6 @@
 # Casa Pia (Primeira Liga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [PT](../../ligor/PT.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [PT](../../ligor/PT.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -58,7 +58,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 |---|---|---|---|---|---|
 | 2025-12-28 | Europa 2535 | Casa Pia Lisbon - Vitória de Guimarães | X | 24 % | 30 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Filipe Coelho. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -83,7 +83,7 @@ Tränare: Filipe Coelho. Betyg, mål och assist gäller innevarande säsong enli
 | 11 | Mohamed El Boukammiri | RM,RW | 22 | Belgium | 1,2 M€ | 6,74 | 0 | 0 | 0/0 |  |
 | 16 | Selvi Clua | CM,CDM | 21 | Spain | 821 k€ | 7,13 | 1 | 0 | 0/0 |  |
 | 17 | Evans Maurin | RM | 25 | France | 393 k€ | 6,33 | 0 | 0 | 0/0 |  |
-| 24 | Seba Pérez | CM,CDM | 33 | Colombia | 339 k€ | 6,31 | 0 | 1 | 2/0 |  |
+| 24 | Seba Pérez | CM | 33 | Colombia | 339 k€ | 6,31 | 0 | 1 | 2/0 |  |
 | 59 | Abdu Dafe | CM | 18 | Guinea-Bissau | – | 5,80 | 0 | 0 | 0/0 |  |
 | 80 | Lawrence Ofori | CM,CDM | 28 | Ghana | 790 k€ | 6,52 | 0 | 1 | 0/0 |  |
 | 98 | João Pedro | CDM,CAM | 21 | Brazil | 2,2 M€ | 6,74 | 0 | 0 | 1/0 |  |
@@ -93,7 +93,7 @@ Tränare: Filipe Coelho. Betyg, mål och assist gäller innevarande säsong enli
 | 19 | Kevin Prieto | RW,RM | 23 | Uruguay | 643 k€ | 6,38 | 0 | 0 | 0/0 |  |
 | 20 | Alassana Jatta | ST | 27 | The Gambia | 356 k€ | 6,31 | 0 | 0 | 2/0 |  |
 | 21 | Aymen Zouin | LW | 19 | Italy | 377 k€ | – | 0 | 0 | 0/0 |  |
-| 29 | Jérémy Livolant | RW,LW,CAM,RM,ST | 28 | France | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 29 | Jérémy Livolant | RW,LW,ST | 28 | France | 1,3 M€ | – | 0 | 0 | 0/0 |  |
 | 70 | João Rego | LW,RW,CM,CAM | 21 | Portugal | – | 7,13 | 0 | 0 | 0/0 |  |
 | 77 | Benjamin Pauwels | LW | 21 | Belgium | 1,0 M€ | 6,70 | 1 | 0 | 0/0 |  |
 | 90 | Cassiano | ST | 37 | Brazil | 312 k€ | 6,05 | 0 | 0 | 0/0 |  |

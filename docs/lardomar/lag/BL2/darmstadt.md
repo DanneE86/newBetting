@@ -1,6 +1,6 @@
 # Darmstadt (2. Bundesliga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [BL2](../../ligor/BL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [BL2](../../ligor/BL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -58,7 +58,7 @@ Form (äldst → senast): OFOFFFVF · senaste match 2026-09-18
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Florian Kohfeldt. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -79,14 +79,11 @@ Tränare: Florian Kohfeldt. Betyg, mål och assist gäller innevarande säsong e
 | 20 | Aleksandar Vukotić | CB | 31 | Serbia | 285 k€ | 5,93 | 1 | 0 | 0/1 |  |
 | 26 | Matthias Bader | RWB | 29 | Germany | 151 k€ | – | 0 | 0 | 0/0 |  |
 | 28 | Christopher Lannert | RB | 28 | Germany | 242 k€ | 6,25 | 0 | 0 | 0/0 |  |
-| 32 | Fabian Holland | LB,CB | 36 | Germany | 144 k€ | – | 0 | 0 | 0/0 |  |
-| 46 | Tim Arnold | Defender | 20 | Germany | – | – | 0 | 0 | 0/0 |  |
 | 49 | Max Pfister | Defender | 19 | Germany | – | – | 0 | 0 | 0/0 |  |
 | 49 | Yannik Lührs | CB | 23 | Germany | 722 k€ | 6,54 | 0 | 0 | 1/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 3 | Florian Kleinhansl | LWB,LB | 26 | Germany | 230 k€ | 7,16 | 0 | 0 | 0/0 |  |
 | 10 | Nicolas Verkooijen | CM,CAM,RW,ST | 19 | Belgium | 791 k€ | 6,50 | 0 | 0 | 1/0 |  |
-| 11 | Tobias Kempe | RM | 37 | Germany | 129 k€ | – | 0 | 0 | 0/0 |  |
 | 16 | Hiroki Akiyama | CDM,CM | 25 | Japan | 1,8 M€ | 6,48 | 0 | 0 | 0/0 |  |
 | 17 | Kai Klefisch | CDM,CB | 26 | Germany | 927 k€ | 6,82 | 0 | 2 | 2/1 |  |
 | 21 | Merveille Papela | CM,CDM | 25 | Germany | 352 k€ | – | 0 | 0 | 0/0 | skadad, åter Unknown |
@@ -104,3 +101,5 @@ Tränare: Florian Kohfeldt. Betyg, mål och assist gäller innevarande säsong e
 | 19 | Fynn Lakenmacher | ST | 26 | Germany | 210 k€ | 6,05 | 0 | 0 | 0/0 |  |
 | 36 | Milan Smit | ST | 23 | Netherlands | 1,9 M€ | 6,68 | 2 | 0 | 1/0 |  |
 | 44 | Yosuke Furukawa | RM,LW,RW | 23 | Japan | 363 k€ | 6,57 | 0 | 0 | 1/0 |  |
+
+Har lämnat truppen sedan vi började spara (3): Tobias Kempe (senast 2026-09-29), Fabian Holland (senast 2026-09-29), Tim Arnold (senast 2026-09-29).

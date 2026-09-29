@@ -1,6 +1,6 @@
 # Silkeborg (Superligaen) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [DK](../../ligor/DK.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [DK](../../ligor/DK.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -50,7 +50,7 @@ Form (äldst → senast): FVFFOOOV · senaste match 2026-09-18
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Morten Dahm Kjærgaard. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -72,6 +72,7 @@ Tränare: Morten Dahm Kjærgaard. Betyg, mål och assist gäller innevarande sä
 | 24 | Alexander Madsen | CB | 21 | Denmark | 519 k€ | 7,22 | 1 | 0 | 1/0 |  |
 | 25 | Pontus Rödin | CB | 26 | Sweden | 543 k€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
 | 29 | William Loekke Moeller | CB | 18 | Denmark | – | 6,75 | 0 | 0 | 2/0 |  |
+| 36 | Julius Nielsen | LB | 20 | Denmark | 1,2 M€ | 5,99 | 0 | 0 | 0/0 |  |
 | 40 | Alexander Busch | CB | 23 | Denmark | 1,3 M€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
 | | **Mittfältare** | | | | | | | | | |
 | 7 | Villads Westh | CDM,RWB,LWB,CM | 22 | Denmark | 839 k€ | 7,38 | 1 | 3 | 1/0 |  |
@@ -80,9 +81,8 @@ Tränare: Morten Dahm Kjærgaard. Betyg, mål och assist gäller innevarande sä
 | 26 | Mikkel Øxenberg | Midfielder | 19 | Denmark | – | – | 0 | 0 | 0/0 |  |
 | 27 | William Kirk | CDM,CM | 19 | Denmark | – | 6,75 | 1 | 1 | 0/0 |  |
 | 33 | Mads Freundlich | CDM | 23 | Denmark | 1,5 M€ | 6,93 | 0 | 0 | 1/0 |  |
-| 36 | Julius Nielsen | CDM | 20 | Denmark | 1,2 M€ | 5,99 | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 8 | Kristian Kirkegaard | LW,CAM,RW,LM | 28 | Denmark | 247 k€ | 6,64 | 1 | 1 | 1/0 | skadad, åter Early October 2026 |
+| 8 | Kristian Kirkegaard | LW,RW,LM | 28 | Denmark | 247 k€ | 6,64 | 1 | 1 | 1/0 | skadad, åter Early October 2026 |
 | 11 | Oliver Ross | CAM,ST,RW,LW | 21 | Denmark | 1,5 M€ | 7,07 | 3 | 1 | 0/0 |  |
 | 14 | Sofus Berger | RW,CAM | 23 | Denmark | 783 k€ | 6,37 | 0 | 0 | 0/0 |  |
 | 21 | Lucas Riisgaard | RW,CAM | 22 | Denmark | 558 k€ | 6,92 | 2 | 1 | 1/0 |  |

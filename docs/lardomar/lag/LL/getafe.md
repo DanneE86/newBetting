@@ -1,6 +1,6 @@
 # Getafe (La Liga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [LL](../../ligor/LL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [LL](../../ligor/LL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -91,7 +91,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-09-24 | Europa 2508 | Getafe - Alavés | X | 49 % | 40 % |
 | 2025-08-17 | Europa 2497 | Celta de Vigo - Getafe | 2 ✓ | 13 % | 14 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: José Bordalás. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -104,7 +104,6 @@ Tränare: José Bordalás. Betyg, mål och assist gäller innevarande säsong en
 | 13 | David Soria | GK | 33 | Spain | 2,4 M€ | 7,33 | 0 | 0 | 0/0 |  |
 | 35 | Jorge Benito | Keeper | 20 | Spain | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-|  | Luca Lohr | Defender | 24 | Spain | 247 k€ | – | 0 | 0 | 0/0 |  |
 | 2 | Djené | CB,CM | 34 | Togo | 1,0 M€ | 6,92 | 0 | 0 | 2/0 |  |
 | 3 | Davinchi | LWB | 18 | Spain | – | 6,32 | 0 | 0 | 2/0 |  |
 | 4 | Saba Sazonov | CB | 24 | Georgia | 571 k€ | 6,98 | 0 | 0 | 1/0 |  |
@@ -116,10 +115,7 @@ Tränare: José Bordalás. Betyg, mål och assist gäller innevarande säsong en
 | 22 | Johan Mojica | LB,LWB | 34 | Colombia | 1,1 M€ | 7,14 | 0 | 0 | 3/0 |  |
 | 24 | Zaid Abner Romero | CB | 26 | Argentina | 2,0 M€ | 7,10 | 0 | 0 | 1/1 |  |
 | 26 | Jean Ives Valou | CB | 20 | Ivory Coast | 877 k€ | 6,01 | 0 | 0 | 0/0 |  |
-| 31 | Ismael Bekhoucha | RB | 21 | Morocco | 559 k€ | – | 0 | 0 | 0/0 |  |
 | 31 | Mohamed Hamdoune | CB | 22 | Morocco | 295 k€ | – | 0 | 0 | 0/0 |  |
-| 32 | Lucas Laso | CB | 23 | Spain | 217 k€ | – | 0 | 0 | 0/0 |  |
-| 33 | Marc Vilaplana | Defender | 23 | Spain | 251 k€ | – | 0 | 0 | 0/0 |  |
 | 41 | Jorge Montes | LB | 22 | Spain | 232 k€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 |  | Alvaro Gutierrez | RM | 17 | Spain | – | – | 0 | 0 | 0/0 |  |
@@ -139,3 +135,5 @@ Tränare: José Bordalás. Betyg, mål och assist gäller innevarande säsong en
 | 20 | Iván Azon | ST | 23 | Spain | 3,5 M€ | 6,97 | 1 | 1 | 1/0 |  |
 | 27 | Álex Lozano | LM | 21 | Spain | 428 k€ | – | 0 | 0 | 0/0 |  |
 | 32 | Joselu Pérez | ST | 22 | Spain | 239 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (4): Lucas Laso (senast 2026-09-29), Marc Vilaplana (senast 2026-09-29), Ismael Bekhoucha (senast 2026-09-29), Luca Lohr (senast 2026-09-29).

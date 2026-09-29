@@ -1,6 +1,6 @@
 # Crewe (League Two) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -64,39 +64,39 @@ Form (äldst → senast): VVOOOOOO · senaste match 2026-09-26
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Lee Bell. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Tom Booth | GK | 22 | England | – | 7,50 | 0 | 0 | 0/0 |  |
+| 1 | Tom Booth | GK | 22 | England | – | 7,49 | 0 | 0 | 0/0 |  |
 | 13 | Ian Lawlor | GK | 31 | Ireland | 96 k€ | – | 0 | 0 | 0/0 |  |
 | 31 | Luke Unsworth | Keeper | 17 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Lewis Billington | RB,CB,RWB | 22 | England | 373 k€ | 6,91 | 0 | 1 | 1/0 |  |
+| 2 | Lewis Billington | RB,CB,RWB | 22 | England | 373 k€ | 6,92 | 0 | 1 | 1/0 |  |
 | 3 | Reece Hutchinson | LB,LWB | 26 | England | 202 k€ | 7,77 | 1 | 0 | 0/0 |  |
 | 5 | Mickey Demetriou | CB | 36 | England | 82 k€ | 6,95 | 0 | 0 | 2/1 |  |
-| 6 | Luke Offord | CB,RB,CDM | 26 | England | 262 k€ | 7,35 | 1 | 0 | 1/0 |  |
-| 12 | Josh Stephenson | CB | 20 | England | – | 7,37 | 1 | 0 | 1/0 |  |
+| 6 | Luke Offord | CB,RB,CDM | 26 | England | 262 k€ | 7,34 | 1 | 0 | 1/0 |  |
+| 12 | Josh Stephenson | CB | 20 | England | – | 7,35 | 1 | 0 | 1/0 |  |
 | 30 | Stan Dancey | RB | 19 | Wales | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 4 | Kyle Ure | CM,CDM,LB | 20 | Scotland | 232 k€ | 6,37 | 0 | 0 | 1/0 |  |
+| 4 | Kyle Ure | CM,CDM,LB | 20 | Scotland | 232 k€ | 6,34 | 0 | 0 | 1/0 |  |
 | 7 | Jack Lankester | CAM,RW | 26 | England | 139 k€ | 6,60 | 0 | 0 | 0/0 |  |
 | 8 | Conor Thomas | CDM | 32 | England | 86 k€ | 6,02 | 0 | 0 | 0/0 |  |
-| 10 | Joe White | CDM,CM,CAM | 23 | England | 242 k€ | 6,66 | 0 | 0 | 2/0 |  |
+| 10 | Joe White | CDM,CM,CAM | 23 | England | 242 k€ | 6,63 | 0 | 0 | 2/0 |  |
 | 11 | Joel Tabiner | CAM,RW | 22 | England | 393 k€ | 6,98 | 0 | 3 | 0/0 |  |
 | 17 | Matús Holícek | CAM,CDM,CM,LW | 21 | Slovakia | 358 k€ | 7,02 | 0 | 0 | 0/0 |  |
-| 19 | Owen Lunt | CDM,CAM,CM | 22 | England | 250 k€ | 6,22 | 0 | 0 | 0/0 |  |
+| 19 | Owen Lunt | CDM,CAM,CM | 22 | England | 250 k€ | 6,27 | 0 | 0 | 0/0 |  |
 | 32 | Luca Moore | LM | 21 | England | – | – | 0 | 0 | 0/0 |  |
 | 33 | Owen Taylor | Midfielder | 0 | England | 132 k€ | – | 0 | 0 | 0/0 |  |
 | 36 | Joel Ewusi | Midfielder | 0 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 9 | Josh March | ST,LW | 29 | England | 203 k€ | 7,03 | 3 | 0 | 1/0 |  |
-| 14 | Jordan Gibson | LW,RW | 28 | England | 206 k€ | 6,90 | 1 | 0 | 1/0 |  |
+| 14 | Jordan Gibson | LW,RW | 28 | England | 206 k€ | 6,89 | 1 | 0 | 1/0 |  |
 | 20 | Calum Agius | LW,CAM,RB,RW,CM,RM | 21 | Wales | 392 k€ | 6,58 | 0 | 1 | 2/0 |  |
-| 23 | Charlie McNeill | RW,CAM,ST,CM | 23 | England | 653 k€ | 6,15 | 0 | 0 | 0/0 |  |
+| 23 | Charlie McNeill | RW,CAM,ST,CM | 23 | England | 653 k€ | 6,12 | 0 | 0 | 0/0 |  |
 | 27 | Patrick Mlynarski | Attacker | 18 | Wales | – | – | 0 | 0 | 0/0 |  |
 | 29 | Adrien Thibaut | ST | 22 | Ireland | 312 k€ | 6,06 | 0 | 0 | 0/0 |  |
 | 35 | Noah Bell | Attacker | 0 | England | – | – | 0 | 0 | 0/0 |  |

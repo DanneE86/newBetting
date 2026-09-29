@@ -1,6 +1,6 @@
 # HamKam (Eliteserien) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [NO](../../ligor/NO.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [NO](../../ligor/NO.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -47,7 +47,7 @@ Form (äldst → senast): FVOFOFFF · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Thomas Myhre. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -56,7 +56,7 @@ Tränare: Thomas Myhre. Betyg, mål och assist gäller innevarande säsong enlig
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 12 | Marcus Sandberg | GK | 35 | Norway | 313 k€ | 6,66 | 0 | 0 | 1/0 |  |
+| 12 | Marcus Sandberg | GK | 35 | Norway | 313 k€ | 6,67 | 0 | 0 | 1/0 |  |
 | 13 | Sander Østraat | GK | 21 | Norway | 363 k€ | – | 0 | 0 | 0/0 |  |
 | 33 | Simon Rusen | Keeper | 19 | Norway | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
@@ -71,16 +71,16 @@ Tränare: Thomas Myhre. Betyg, mål och assist gäller innevarande säsong enlig
 | 7 | Viðar Ari Jónsson | RM,RWB,LM,LWB | 32 | Iceland | 202 k€ | 6,55 | 0 | 2 | 1/0 |  |
 | 8 | Markus Johnsgård | CM | 27 | Norway | 339 k€ | 6,34 | 2 | 1 | 2/0 |  |
 | 10 | Loris Mettler | CM | 27 | Switzerland | 348 k€ | 6,74 | 1 | 2 | 0/0 |  |
-| 14 | Luc Mares | CM,CB | 29 | Netherlands | 252 k€ | 6,45 | 0 | 0 | 1/0 |  |
+| 14 | Luc Mares | CM,CB | 29 | Netherlands | 252 k€ | 6,46 | 0 | 0 | 1/0 |  |
 | 16 | Anders Trondsen | CM | 31 | Norway | 208 k€ | 6,51 | 1 | 0 | 2/0 |  |
 | 17 | Aksel Baran Potur | CM | 23 | Norway | 782 k€ | 7,16 | 4 | 1 | 1/0 | osäker |
 | 22 | Snorre Nilsen | RM,CB | 29 | Norway | 193 k€ | 6,29 | 0 | 1 | 1/0 |  |
-| 26 | Patrick Metcalfe | CM,RM,RWB | 27 | Canada | 273 k€ | 7,08 | 1 | 5 | 1/0 |  |
+| 26 | Patrick Metcalfe | CM,RM,RWB | 27 | Canada | 273 k€ | 7,07 | 1 | 5 | 1/0 |  |
 | 29 | Blerton Isufi | CM,ST | 20 | Norway | 793 k€ | 6,59 | 1 | 0 | 3/0 |  |
 | | **Anfallare** | | | | | | | | | |
 |  | Mamadou Diop | Attacker | 0 | Senegal | – | – | 0 | 0 | 0/0 |  |
 | 11 | Mohamed Ofkir | ST | 30 | Norway | 255 k€ | 7,08 | 4 | 2 | 0/0 |  |
-| 18 | Duarte Moreira | ST | 24 | Portugal | 382 k€ | 5,98 | 0 | 0 | 0/0 |  |
+| 18 | Duarte Moreira | ST | 25 | Portugal | 382 k€ | 5,98 | 0 | 0 | 0/0 |  |
 | 19 | Henrik Udahl | ST | 29 | Norway | 332 k€ | 6,63 | 5 | 0 | 0/0 |  |
 | 24 | Danilo Al Saed | RM | 27 | Iraq | 376 k€ | 6,44 | 1 | 0 | 0/0 |  |
 | 28 | David Benjamin | ST | 18 | Nigeria | 578 k€ | 6,42 | 0 | 2 | 1/0 |  |

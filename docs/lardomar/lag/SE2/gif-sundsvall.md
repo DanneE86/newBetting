@@ -1,6 +1,6 @@
 # GIF Sundsvall (Superettan) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [SE2](../../ligor/SE2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [SE2](../../ligor/SE2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -38,7 +38,7 @@ Form senaste 8 (äldst → senast): FOFVVFFV · senaste match 2026-09-20
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Per Joar Hansen. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -59,7 +59,6 @@ Tränare: Per Joar Hansen. Betyg, mål och assist gäller innevarande säsong en
 | 26 | Edvard Carrick | RB | 21 | Sweden | 101 k€ | – | 0 | 0 | 0/0 |  |
 | 27 | Amaro Bahtijar | CB,CM,RB | 28 | Sweden | 81 k€ | – | 0 | 0 | 0/0 |  |
 | 28 | Emil Bengtsson | Defender | 17 | Sweden | – | – | 0 | 0 | 0/0 |  |
-| 29 | Randy Bandolo Obam | Defender | 21 | France | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 6 | Marc Manchón | CM,CB | 28 | Spain | 50 k€ | – | 0 | 1 | 5/0 |  |
 | 7 | Miguel Sandberg | LM,RM | 24 | Taiwan | 160 k€ | – | 0 | 1 | 1/0 |  |
@@ -75,7 +74,8 @@ Tränare: Per Joar Hansen. Betyg, mål och assist gäller innevarande säsong en
 | 8 | Carl Björk | ST,LW | 26 | Sweden | 170 k€ | – | 0 | 0 | 0/0 |  |
 | 14 | Abdulahi Shino | Attacker | 20 | Sweden | – | – | 0 | 0 | 0/0 |  |
 | 15 | Shalom Ekong | ST | 22 | Sweden | 187 k€ | – | 2 | 1 | 0/0 |  |
-| 15 | Suwaibou Kebbeh | ST | 19 | The Gambia | 560 k€ | – | 4 | 1 | 3/0 |  |
 | 22 | Mille Eriksson | ST | 20 | Sweden | 252 k€ | – | 1 | 0 | 0/0 |  |
 | 24 | Henrik Baeckstroem | Attacker | 21 | Sweden | – | – | 0 | 0 | 0/0 |  |
 | 24 | Isak Lindstroem Halling | ST | 19 | Sweden | – | – | 0 | 0 | 2/0 |  |
+
+Har lämnat truppen sedan vi började spara (2): Suwaibou Kebbeh (senast 2026-09-29), Randy Bandolo Obam (senast 2026-09-29).

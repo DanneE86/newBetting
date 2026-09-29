@@ -1,6 +1,6 @@
 # Zwolle (Eredivisie) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [ED](../../ligor/ED.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [ED](../../ligor/ED.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -57,7 +57,7 @@ Form (äldst → senast): FFFVFOFF · senaste match 2026-09-18
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Henry van der Vegt. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -85,6 +85,7 @@ Tränare: Henry van der Vegt. Betyg, mål och assist gäller innevarande säsong
 | | **Mittfältare** | | | | | | | | | |
 |  | Filip Krastev | CAM,LW,LM,CM,CDM | 24 | Bulgaria | 2,0 M€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
 | 8 | Tobias Sommer | CDM,CM,CAM | 24 | Denmark | 1,4 M€ | 6,66 | 0 | 1 | 1/0 |  |
+| 9 | Elias Sørensen | LM,LW | 27 | Denmark | 954 k€ | 6,65 | 1 | 0 | 0/0 |  |
 | 20 | Gabriël Reiziger | RW | 20 | Netherlands | 666 k€ | 6,23 | 0 | 0 | 1/0 |  |
 | 25 | Thijs Oosting | CAM,CM,ST | 26 | Netherlands | 956 k€ | 6,58 | 0 | 1 | 0/0 |  |
 | 30 | Ryan Thomas | CDM,CM,CAM | 31 | New Zealand | 524 k€ | 7,32 | 0 | 0 | 1/0 |  |
@@ -93,7 +94,6 @@ Tränare: Henry van der Vegt. Betyg, mål och assist gäller innevarande säsong
 | 38 | Givaro Rahajaän | Midfielder | 18 | Netherlands | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Younes Namli | RW | 32 | Denmark | 881 k€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
-| 9 | Elias Sørensen | LW,LM | 27 | Denmark | 954 k€ | 6,65 | 1 | 0 | 0/0 |  |
 | 10 | Koen Kostons | ST | 27 | Netherlands | 2,8 M€ | 6,81 | 3 | 0 | 3/0 |  |
 | 11 | Dylan Mbayo | RW,RM,ST | 24 | Belgium | 637 k€ | 7,00 | 0 | 3 | 0/0 |  |
 | 17 | Sydney van Hooijdonk | ST | 26 | Netherlands | 1,0 M€ | 6,06 | 0 | 0 | 0/0 |  |

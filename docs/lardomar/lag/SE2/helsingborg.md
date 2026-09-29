@@ -1,6 +1,6 @@
 # Helsingborg (Superettan) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [SE2](../../ligor/SE2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [SE2](../../ligor/SE2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -39,7 +39,7 @@ Form senaste 8 (äldst → senast): FOFOFVFO · senaste match 2026-09-20
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Mikael Stahre. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -64,7 +64,6 @@ Tränare: Mikael Stahre. Betyg, mål och assist gäller innevarande säsong enli
 | 11 | Adam Akimey | LM,RM,ST | 22 | Benin | 211 k€ | – | 1 | 1 | 2/0 |  |
 | 14 | Lukas Kjellnäs | CM,CDM | 22 | Sweden | 119 k€ | – | 1 | 2 | 2/0 |  |
 | 20 | Leo Hedenberg | RW | 22 | Sweden | 112 k€ | – | 0 | 0 | 2/0 |  |
-| 21 | Harold Romana | Midfielder | 22 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 21 | Julian Larsson | CAM,ST,CM,RM | 25 | Sweden | 184 k€ | – | 0 | 2 | 1/0 |  |
 | 22 | Timothé Rupil | LM | 23 | Luxembourg | 119 k€ | – | 1 | 0 | 2/0 |  |
 | 26 | Loret Sadiku | CM,CB | 35 | Kosovo | 50 k€ | – | 1 | 1 | 2/0 |  |
@@ -73,3 +72,5 @@ Tränare: Mikael Stahre. Betyg, mål och assist gäller innevarande säsong enli
 | 8 | Osman Addo | ST,LW | 22 | Somalia | 451 k€ | – | 0 | 0 | 0/0 |  |
 | 9 | Alexander Johansson | ST | 26 | Sweden | 172 k€ | – | 10 | 3 | 3/0 |  |
 | 16 | Amin Al-Hamawi | ST | 22 | Iraq | 438 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Harold Romana (senast 2026-09-29).

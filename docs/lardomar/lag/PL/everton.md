@@ -1,6 +1,6 @@
 # Everton (Premier League) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -62,7 +62,7 @@ Ligans test av frånvaro mot marknaden: svag signal (inte bekräftad). Få match
 | Arsenal | 15 | 5-3-7 | 12–21 | +0,35 | −3 pe | 2026-03-14 0-2 (b) |
 | Aston Villa | 14 | 1-4-9 | 6–21 | −0,75 | +1 pe | 2026-01-18 1-0 (b) |
 | Bournemouth | 12 | 4-1-7 | 14–18 | −0,35 | −18 pe | 2026-08-29 1-1 (b) |
-| Fulham | 12 | 5-3-4 | 15–13 | +0,02 | −2 pe | 2026-02-07 2-1 (b) |
+| Fulham | 11 | 4-3-4 | 12–13 | −0,06 | −0 pe | 2026-02-07 2-1 (b) |
 | Brentford | 10 | 3-4-3 | 13–13 | +0,04 | +12 pe | 2026-04-11 2-2 (b) |
 | Leeds | 8 | 3-3-2 | 10–7 | +0,20 | +9 pe | 2026-01-26 1-1 (h) |
 | Nott'm Forest | 8 | 5-2-1 | 12–5 | +0,74 | −5 pe | 2025-12-30 2-0 (b) |
@@ -107,7 +107,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-10-05 | Europa 2511 | Everton - Crystal Palace | 1 ✓ | 35 % | 37 % |
 | 2025-08-24 | Europa 2499 | Everton - Brighton | 1 ✓ | 32 % | 32 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: David Moyes. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

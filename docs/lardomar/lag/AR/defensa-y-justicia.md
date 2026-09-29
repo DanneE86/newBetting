@@ -1,6 +1,6 @@
 # Defensa y Justicia (Liga Profesional) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -70,7 +70,7 @@ Form (äldst → senast): FVOVVFVO · senaste match 2026-09-18
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Julio Vaccari. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -86,12 +86,11 @@ Tränare: Julio Vaccari. Betyg, mål och assist gäller innevarande säsong enli
 | 2 | Samuel Lucero | LB,LM,CB | 21 | Argentina | 957 k€ | – | 0 | 0 | 0/0 |  |
 | 3 | Fernando Román | LB,CB | 27 | Paraguay | 532 k€ | – | 0 | 0 | 0/0 |  |
 | 6 | Ezequiel Burdín | CB | 21 | Uruguay | 665 k€ | – | 0 | 0 | 0/0 |  |
-| 13 | Mateo López | Defender | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 16 | Ayrton Portillo | RB,RWB,CM,RM,RW | 26 | Argentina | 938 k€ | – | 0 | 0 | 0/0 |  |
 | 21 | David Martínez | CB,LB | 28 | Paraguay | 465 k€ | – | 0 | 0 | 0/0 |  |
 | 28 | Valentín Loza | RB | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 29 | Damián Fernández | CB | 25 | Argentina | 1,4 M€ | – | 0 | 0 | 0/0 |  |
-| 32 | Nazareno Roselli | CB | 20 | Argentina | 582 k€ | – | 0 | 0 | 0/0 |  |
+| 32 | Nazareno Roselli | RB | 20 | Argentina | 582 k€ | – | 0 | 0 | 0/0 |  |
 | 33 | Lucas Souto | CB,RB,RM | 27 | Argentina | 415 k€ | – | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
 | 40 | Máximo Rodríguez | LB | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
@@ -104,8 +103,6 @@ Tränare: Julio Vaccari. Betyg, mål och assist gäller innevarande säsong enli
 | 22 | Maximiliano Porcel | LM | 20 | Argentina | 754 k€ | – | 0 | 0 | 0/0 |  |
 | 23 | Mateo Aguiar | Midfielder | 19 | Argentina | 976 k€ | – | 0 | 0 | 0/0 |  |
 | 27 | Domingo Blanco | LW,LM | 31 | Argentina | 699 k€ | – | 0 | 0 | 0/0 |  |
-| 44 | Jonás Cabrera | Midfielder | 17 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 45 | Thiago Martínez | Midfielder | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 55 | Julián López | CM,CDM | 26 | Argentina | 575 k€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Tomás Pérez | ST | 20 | Argentina | 568 k€ | – | 0 | 0 | 0/0 |  |
@@ -115,6 +112,5 @@ Tränare: Julio Vaccari. Betyg, mål och assist gäller innevarande säsong enli
 | 24 | Juan Gutiérrez | LW,CAM,RW,ST,LM | 24 | Uruguay | 1,6 M€ | – | 0 | 0 | 0/0 |  |
 | 25 | Facundo Altamira | ST | 25 | Argentina | 954 k€ | – | 0 | 0 | 0/0 |  |
 | 26 | Jeremías Lucco | RW | 20 | Argentina | 765 k€ | – | 0 | 0 | 0/0 |  |
-| 31 | Alan Coria | LW | 19 | Argentina | 746 k€ | – | 0 | 0 | 0/0 |  |
-| 41 | Ramiro Gagliardi | Attacker | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 43 | Emiliano Cantero | Attacker | 18 | Paraguay | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (6): Alan Coria (senast 2026-09-29), Mateo López (senast 2026-09-29), Jonás Cabrera (senast 2026-09-29), Emiliano Cantero (senast 2026-09-29), Ramiro Gagliardi (senast 2026-09-29), Thiago Martínez (senast 2026-09-29).

@@ -1,6 +1,6 @@
 # Real Madrid (La Liga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [LL](../../ligor/LL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [LL](../../ligor/LL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -52,9 +52,9 @@ Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: s
 
 | Motståndare | M | V-O-F | Mål | Mot marknaden | Kryss mot odds | Senast |
 |---|---|---|---|---|---|---|
-| Ath Madrid | 17 | 6-7-4 | 22–20 | −0,07 | +13 pe | 2026-09-20 1-2 (b) |
 | Betis | 17 | 6-7-4 | 19–14 | −0,59 | +21 pe | 2026-09-04 0-1 (b) |
 | Sociedad | 17 | 11-3-3 | 30–15 | +0,21 | −6 pe | 2026-08-26 4-1 (h) |
+| Ath Madrid | 16 | 6-6-4 | 22–20 | −0,03 | +10 pe | 2026-09-20 1-2 (b) |
 | Barcelona | 16 | 8-1-7 | 24–30 | +0,24 | −18 pe | 2026-05-10 0-2 (b) |
 | Celta | 16 | 14-1-1 | 41–16 | +0,56 | −14 pe | 2026-03-06 2-1 (b) |
 | Valencia | 16 | 10-2-4 | 34–16 | −0,11 | −8 pe | 2026-02-08 2-0 (b) |
@@ -86,7 +86,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-10-26 | Europa 2517 | Real Madrid - Barcelona | 1 ✓ | 54 % | 52 % |
 | 2025-10-19 | Europa 2515 | Getafe - Real Madrid | 2 ✓ | 81 % | 64 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: José Mourinho. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

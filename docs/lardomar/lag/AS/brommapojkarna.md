@@ -1,6 +1,6 @@
 # Brommapojkarna (Allsvenskan) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [AS](../../ligor/AS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [AS](../../ligor/AS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -61,7 +61,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-04-22 | Europa 2568 | Örgryte - Brommapojkarna | 2 ✓ | 43 % | 40 % |
 | 2025-10-19 | Europa 2515 | Värnamo - Brommapojkarna | X | 44 % | 38 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Ulf Kristiansson. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -73,7 +73,6 @@ Tränare: Ulf Kristiansson. Betyg, mål och assist gäller innevarande säsong e
 | 1 | Leo Cavallius | GK | 21 | Sweden | 1,0 M€ | 6,75 | 0 | 0 | 1/0 |  |
 | 25 | Davor Blažević | GK | 33 | Sweden | 204 k€ | 6,14 | 0 | 0 | 0/0 |  |
 | 40 | John-Oliver Lacayo | GK | 18 | Sweden | – | – | 0 | 0 | 0/0 |  |
-| 41 | Philip Isaksson | GK | 20 | Sweden | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 |  | Luka Petrovic | Defender | 25 | Sweden | – | – | 0 | 0 | 0/0 |  |
 | 2 | Pavle Vagić | CB | 26 | Sweden | 1,0 M€ | 6,01 | 0 | 0 | 0/0 |  |
@@ -85,7 +84,6 @@ Tränare: Ulf Kristiansson. Betyg, mål och assist gäller innevarande säsong e
 | 22 | Rasmus Bergvall | RB | 18 | Sweden | – | 6,19 | 0 | 0 | 0/0 |  |
 | 23 | Jordan Simpson | CB | 23 | Sweden | 225 k€ | 6,45 | 0 | 0 | 4/0 |  |
 | 26 | Baba Apiiga | LB | 19 | Ghana | – | – | 0 | 0 | 0/0 |  |
-| 30 | Eric Björkander | CB | 30 | Sweden | 156 k€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 |  | Abdul Daramy | CM | 18 | Denmark | – | – | 0 | 0 | 0/0 |  |
 | 9 | Mads Kristian Hansen | RM,RW | 24 | Denmark | 810 k€ | 7,61 | 7 | 6 | 2/2 |  |
@@ -104,3 +102,5 @@ Tränare: Ulf Kristiansson. Betyg, mål och assist gäller innevarande säsong e
 | 30 | Lukas Björklund | ST,CM,RW | 22 | Sweden | 843 k€ | 6,68 | 3 | 0 | 4/0 |  |
 | 34 | David Isso | ST | 19 | Sweden | 811 k€ | 6,27 | 1 | 1 | 0/0 |  |
 | 36 | Courage Otokwefor | ST | 19 | Nigeria | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (2): Eric Björkander (senast 2026-09-29), Philip Isaksson (senast 2026-09-29).

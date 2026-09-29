@@ -1,6 +1,6 @@
 # Cremonese (Serie B) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [SB](../../ligor/SB.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [SB](../../ligor/SB.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -57,7 +57,7 @@ Form (äldst → senast): VVFFFVOO · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Fabio Pecchia. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -78,13 +78,13 @@ Tränare: Fabio Pecchia. Betyg, mål och assist gäller innevarande säsong enli
 | 21 | Yuri Rocchetti | LB | 23 | Italy | 442 k€ | 6,52 | 0 | 0 | 0/0 |  |
 | 38 | Alessandro Vogliacco | CB,RB | 28 | Italy | 1,4 M€ | 6,88 | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-|  | Alessio Brambilla | Midfielder | 25 | Italy | – | – | 0 | 0 | 0/0 |  |
 | 2 | Morten Thorsby | CM | 30 | Norway | 2,0 M€ | 6,21 | 0 | 0 | 0/0 |  |
 | 3 | Giuseppe Pezzella | LM,LB | 28 | Italy | 1,6 M€ | 6,22 | 0 | 0 | 0/0 |  |
 | 4 | Tommaso Barbieri | RM | 24 | Italy | 3,0 M€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
 | 8 | Simone Lottici Tessadri | CDM | 20 | Italy | 438 k€ | 6,52 | 0 | 0 | 0/0 |  |
 | 14 | Tommaso Berti | CM,CAM | 22 | Italy | 3,1 M€ | 6,87 | 0 | 1 | 0/0 |  |
 | 16 | Fabio Gerli | CM,CDM | 29 | Italy | 888 k€ | 7,04 | 0 | 0 | 1/0 |  |
+| 17 | Adrian Lickūnas | RM | 20 | Lithuania | 313 k€ | 6,24 | 0 | 0 | 0/0 |  |
 | 18 | Michele Collocolo | RW | 26 | Italy | 1,6 M€ | 6,45 | 1 | 0 | 0/0 |  |
 | 20 | Simone Pontisso | CDM,CM | 29 | Italy | 890 k€ | 6,85 | 0 | 0 | 1/0 |  |
 | 25 | Dachi Lordkipanidze | CM,CDM | 21 | Georgia | 380 k€ | 7,01 | 0 | 0 | 0/0 |  |
@@ -92,11 +92,11 @@ Tränare: Fabio Pecchia. Betyg, mål och assist gäller innevarande säsong enli
 | 33 | Alberto Grassi | CM | 31 | Italy | 944 k€ | 7,00 | 0 | 0 | 0/0 |  |
 | 71 | Salvatore Elia | RWB,LM,RM,LWB,LW | 27 | Italy | 1,5 M€ | 6,33 | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-|  | Nouroudine Faye | Attacker | 19 | Italy | – | – | 0 | 0 | 0/0 |  |
 | 7 | David Stückler | ST | 21 | Denmark | 912 k€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
 | 9 | Manuel De Luca | ST | 28 | Italy | 1,0 M€ | 5,96 | 0 | 0 | 0/0 |  |
 | 10 | Adin Ličina | RW | 19 | Germany | 1,2 M€ | 7,22 | 1 | 1 | 0/0 |  |
 | 11 | Milan Djuric | ST | 36 | Bosnia and Herzegovina | 699 k€ | 6,26 | 0 | 0 | 0/0 |  |
-| 17 | Adrian Lickūnas | RM | 20 | Lithuania | 313 k€ | 6,24 | 0 | 0 | 0/0 |  |
 | 19 | Marco Nasti | ST,CAM | 23 | Italy | 1,6 M€ | 6,33 | 0 | 0 | 0/0 |  |
 | 90 | Federico Bonazzoli | ST | 29 | Italy | 1,9 M€ | 7,26 | 3 | 1 | 2/0 |  |
+
+Har lämnat truppen sedan vi började spara (2): Alessio Brambilla (senast 2026-09-29), Nouroudine Faye (senast 2026-09-29).

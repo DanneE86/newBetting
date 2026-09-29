@@ -1,6 +1,6 @@
 # Andorra (LaLiga 2) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [LL2](../../ligor/LL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [LL2](../../ligor/LL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -54,7 +54,7 @@ Form (äldst → senast): FVFFFFFV · senaste match 2026-09-26
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Carles Manso. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -64,9 +64,7 @@ Tränare: Carles Manso. Betyg, mål och assist gäller innevarande säsong enlig
 | 1 | Nico Ratti | GK | 33 | Argentina | 267 k€ | – | 0 | 0 | 0/0 |  |
 | 13 | Pau López | GK | 31 | Spain | 1,4 M€ | 6,12 | 0 | 0 | 1/0 |  |
 | 25 | Jesús Owono | GK | 25 | Equatorial Guinea | 961 k€ | 6,31 | 0 | 0 | 0/0 |  |
-| 31 | Jan Lagunas | Keeper | 19 | Spain | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-|  | Javier Vicario | CB | 24 | Spain | 215 k€ | – | 0 | 0 | 0/0 |  |
 | 2 | Juan Sebastián | RB | 24 | Spain | 360 k€ | 6,12 | 0 | 0 | 0/0 |  |
 | 3 | Lautaro Spatz | CB | 24 | Argentina | 188 k€ | 6,80 | 0 | 0 | 1/0 |  |
 | 4 | Gael Alonso | CB | 24 | Spain | 1,0 M€ | – | 0 | 0 | 0/0 |  |
@@ -82,12 +80,10 @@ Tränare: Carles Manso. Betyg, mål och assist gäller innevarande säsong enlig
 | 9 | Julian Rijkhoff | CAM,ST | 21 | Netherlands | 761 k€ | 6,27 | 0 | 0 | 0/0 |  |
 | 10 | Marc Domènech | CM,CAM,CDM | 23 | Spain | 639 k€ | 7,18 | 1 | 0 | 2/0 |  |
 | 14 | Sergio Molina | CM,CB | 30 | Spain | 449 k€ | 6,78 | 0 | 0 | 2/0 |  |
-| 16 | Randy Schneider | CAM,LW,CM,RW,CDM | 25 | Philippines | 454 k€ | 6,75 | 0 | 0 | 0/0 |  |
+| 16 | Randy Schneider | CAM,LW,RW,CM,CDM | 25 | Philippines | 454 k€ | 6,75 | 0 | 0 | 0/0 |  |
 | 22 | Diego Díaz | Midfielder | 21 | Spain | – | 6,16 | 0 | 0 | 0/0 |  |
 | 24 | Théo Le Normand | CAM,CM | 26 | France | 290 k€ | – | 0 | 0 | 0/0 |  |
-| 28 | Tiago Olmedo | Midfielder | 18 | Spain | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-|  | Saba Samushia | Attacker | 19 | Georgia | 373 k€ | – | 0 | 0 | 0/0 |  |
 | 11 | Lautaro de León | ST,RW | 25 | Uruguay | 1,0 M€ | 6,69 | 1 | 0 | 1/0 |  |
 | 12 | Enes Sali | LW | 20 | Romania | 1,1 M€ | – | 0 | 0 | 0/0 |  |
 | 15 | Jordi Cano | RW | 31 | Spain | 425 k€ | 7,47 | 4 | 1 | 0/0 |  |
@@ -95,3 +91,5 @@ Tränare: Carles Manso. Betyg, mål och assist gäller innevarande säsong enlig
 | 21 | Moró Sidibe | LW | 24 | Spain | 221 k€ | 6,98 | 0 | 2 | 1/0 |  |
 | 27 | Stefan Golubovic | ST | 20 | Serbia | 313 k€ | 6,28 | 0 | 0 | 2/0 |  |
 | 29 | Hugo López | ST,LW | 19 | Spain | 1,2 M€ | 6,87 | 2 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (4): Javier Vicario (senast 2026-09-29), Saba Samushia (senast 2026-09-29), Jan Lagunas (senast 2026-09-29), Tiago Olmedo (senast 2026-09-29).

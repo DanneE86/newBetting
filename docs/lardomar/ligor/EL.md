@@ -1,6 +1,6 @@
 # Europa League (EL) – lärdomar
 
-Genererad 2026-09-28 av `node scripts/analyze-learnings.mjs`. Cup: lagen hör till sina ligor, se deras lagfiler. Alla matcher: `data/matcher/EL.csv`.
+Genererad 2026-09-29 av `node scripts/analyze-learnings.mjs`. Cup: lagen hör till sina ligor, se deras lagfiler. Alla matcher: `data/matcher/EL.csv`.
 
 ## Lärdomar i korthet
 
@@ -10,7 +10,7 @@ Genererad 2026-09-28 av `node scripts/analyze-learnings.mjs`. Cup: lagen hör ti
 
 17 matcher (Europa League). Kryss: utfall 23,5 %, vår procent 25,4 %, folket 23,8 %. Folket streckar favoriten ×1,10. Logloss vår/folket 0,971/0,968.
 
-## Tabell nu (FotMob, 2026-09-28)
+## Tabell nu (FotMob, 2026-09-29)
 
 | # | Lag | M | V | O | F | Mål | +/− | P |
 |---|---|---|---|---|---|---|---|---|
@@ -32,7 +32,7 @@ Genererad 2026-09-28 av `node scripts/analyze-learnings.mjs`. Cup: lagen hör ti
 | 16 | Sunderland | 1 | 1 | 0 | 0 | 1-0 | 1 | 3 |
 | 17 | Dinamo Zagreb | 1 | 0 | 1 | 0 | 0-0 | 0 | 1 |
 | 18 | Hapoel Be'er | 1 | 0 | 1 | 0 | 0-0 | 0 | 1 |
-| 19 | Rennes | 1 | 0 | 1 | 0 | 0-0 | 0 | 1 |
+| 19 | Stade Rennais | 1 | 0 | 1 | 0 | 0-0 | 0 | 1 |
 | 20 | SK Sturm Graz | 1 | 0 | 1 | 0 | 0-0 | 0 | 1 |
 | 21 | Jagiellonia Bialystok | 1 | 0 | 0 | 1 | 1-2 | -1 | 0 |
 | 22 | Anderlecht | 1 | 0 | 0 | 1 | 1-2 | -1 | 0 |

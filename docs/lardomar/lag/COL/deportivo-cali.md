@@ -1,6 +1,6 @@
 # Deportivo Cali (Primera A) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [COL](../../ligor/COL.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [COL](../../ligor/COL.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -41,7 +41,7 @@ Form senaste 8 (äldst → senast): VOFOOVVV · senaste match 2026-09-23
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Rafael Dudamel. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -52,13 +52,13 @@ Tränare: Rafael Dudamel. Betyg, mål och assist gäller innevarande säsong enl
 | | **Målvakter** | | | | | | | | | |
 | 1 | Pedro Gallese | GK | 36 | Peru | 369 k€ | – | 0 | 0 | 0/0 |  |
 | 22 | Santiago Mondragón | Keeper | 18 | Colombia | – | – | 0 | 0 | 0/0 |  |
-| 32 | Alejandro Rojo | Keeper | 20 | Spain | – | – | 0 | 0 | 0/0 |  |
+| 32 | Alejandro Rojo | GK | 20 | Spain | – | – | 0 | 0 | 0/0 |  |
 | 38 | Alejandro Rodríguez | GK | 25 | Colombia | 662 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 2 | José Moya | CB | 34 | Colombia | 219 k€ | – | 0 | 0 | 0/0 |  |
 | 4 | Fernando Álvarez | CB | 23 | Colombia | 1,2 M€ | – | 0 | 0 | 0/0 |  |
 | 12 | José Caldera | CB | 24 | Colombia | 558 k€ | – | 0 | 0 | 0/0 |  |
-| 15 | Leyser Chaverra | CB,RB,RWB,CM | 29 | Colombia | 601 k€ | – | 0 | 0 | 0/0 |  |
+| 15 | Leyser Chaverra | CB,RB,CM,RWB | 29 | Colombia | 601 k€ | – | 0 | 0 | 0/0 |  |
 | 16 | Keimer Sandoval | CB | 21 | Colombia | 548 k€ | – | 0 | 0 | 0/0 |  |
 | 24 | Kalazan Suárez | LB | 24 | Colombia | 349 k€ | – | 0 | 0 | 0/0 | skadad, åter Early May 2027 |
 | 24 | Santiago Vallecilla | Defender | 17 | Colombia | – | – | 0 | 0 | 0/0 |  |
@@ -71,8 +71,8 @@ Tränare: Rafael Dudamel. Betyg, mål och assist gäller innevarande säsong enl
 | 5 | Gustavo Cuéllar | CDM,CM | 33 | Colombia | 553 k€ | – | 0 | 0 | 0/0 |  |
 | 6 | Ronaldo Pájaro | CM,CDM | 24 | Colombia | 999 k€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
 | 8 | Daniel Giraldo | CM,CDM | 34 | Colombia | 249 k€ | – | 0 | 0 | 0/0 |  |
-| 10 | Emanuel Reynoso | RM,CM,ST | 30 | Argentina | 794 k€ | – | 0 | 0 | 0/0 |  |
-| 19 | Johan Martínez | CAM,LM,RW,ST,RM,LW | 24 | Colombia | – | – | 0 | 0 | 0/0 |  |
+| 10 | Emanuel Reynoso | RM,ST,CM | 30 | Argentina | 794 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | Johan Martínez | CAM,LM,RW,ST,LW,RM,CM | 24 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 20 | Santiago Colonia | Midfielder | 19 | USA | – | – | 0 | 0 | 0/0 |  |
 | 29 | Kevin Suárez | Midfielder | 19 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 36 | Miguel Correa | CM | 0 | Colombia | – | – | 0 | 0 | 0/0 |  |
@@ -82,7 +82,7 @@ Tränare: Rafael Dudamel. Betyg, mål och assist gäller innevarande säsong enl
 | 14 | Alexis Manyoma | LW | 23 | Colombia | 1,2 M€ | – | 0 | 0 | 0/0 |  |
 | 18 | Avilés Hurtado | ST,CAM,CM,LW,RM,RW | 39 | Colombia | 307 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 20 | Eduard Bello | RW,LW,CAM,LM | 31 | Venezuela | 567 k€ | – | 0 | 0 | 0/0 |  |
-| 21 | Nicolás Benedetti | CAM,RW,ST | 29 | Colombia | 918 k€ | – | 0 | 0 | 0/0 | skadad, åter Early December 2026 |
-| 23 | Steven Rodríguez | ST,LW | 27 | Colombia | 798 k€ | – | 0 | 0 | 0/0 |  |
+| 21 | Nicolás Benedetti | RW,CAM,ST | 29 | Colombia | 918 k€ | – | 0 | 0 | 0/0 | skadad, åter Early December 2026 |
+| 23 | Steven Rodríguez | ST,LW,LM | 27 | Colombia | 798 k€ | – | 0 | 0 | 0/0 |  |
 | 45 | Matías Botero | Attacker | 17 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 70 | Carlos Bacca | ST | 40 | Colombia | 288 k€ | – | 0 | 0 | 0/0 |  |

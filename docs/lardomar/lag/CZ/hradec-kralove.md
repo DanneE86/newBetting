@@ -1,6 +1,6 @@
 # Hradec Králové (Chance Liga) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [CZ](../../ligor/CZ.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [CZ](../../ligor/CZ.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -35,7 +35,7 @@ Form senaste 8 (äldst → senast): OVFFVOVF · senaste match 2026-09-20
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: David Horejš. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -55,6 +55,7 @@ Tränare: David Horejš. Betyg, mål och assist gäller innevarande säsong enli
 | 8 | Viktor Zentrich | CAM | 23 | Czechia | 187 k€ | – | 0 | 0 | 0/0 | skadad, åter Unknown |
 | 21 | Tomás Wiesner | RB,RWB | 29 | Czechia | 693 k€ | 6,44 | 0 | 0 | 1/0 | skadad, åter Unknown |
 | 25 | František Čech | CB | 28 | Czechia | 118 k€ | 7,22 | 1 | 0 | 0/1 |  |
+| 30 | Juraj Chvátal | RWB | 30 | Slovakia | 67 k€ | – | 0 | 0 | 0/0 |  |
 | 33 | Ro Abajas | LB | 23 | Spain | 271 k€ | 6,08 | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 2 | David Ludvícek | RWB,RM | 25 | Czechia | 168 k€ | 6,56 | 0 | 0 | 0/0 |  |
@@ -69,7 +70,6 @@ Tränare: David Horejš. Betyg, mål och assist gäller innevarande säsong enli
 | 26 | Daniel Horák | LWB,LM,CB | 26 | Czechia | 677 k€ | 7,04 | 0 | 2 | 0/0 | skadad, åter Mid October 2026 |
 | 27 | Daniel Trubač | CAM,CDM,CM,RWB,LWB | 29 | Czechia | 203 k€ | 6,78 | 0 | 0 | 0/0 |  |
 | 28 | Jakub Kučera | RM,RWB,CAM,CDM | 29 | Czechia | 106 k€ | 6,12 | 0 | 0 | 0/0 | skadad, åter Late September 2026 |
-| 30 | Juraj Chvátal | RM | 30 | Slovakia | 67 k€ | – | 0 | 0 | 0/0 |  |
 | 58 | Adam Vlkanova | CAM,RW | 32 | Czechia | 202 k€ | 6,18 | 0 | 0 | 2/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 17 | Ondřej Mihálik | ST | 29 | Czechia | 288 k€ | 6,22 | 0 | 0 | 0/0 | skadad, åter Unknown |

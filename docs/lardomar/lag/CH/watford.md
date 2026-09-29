@@ -1,6 +1,6 @@
 # Watford (Championship) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -89,7 +89,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-08-22 | Stryk 4967 | Wrexham - Watford | X | 17 % | 22 % |
 | 2026-01-01 | Europa 2536 | Watford - Birmingham | 1 ✓ | 53 % | 42 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Alessio Dionisi. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -109,12 +109,11 @@ Tränare: Alessio Dionisi. Betyg, mål och assist gäller innevarande säsong en
 | 4 | Kévin Keben | CB,RB,LB | 22 | Cameroon | 2,2 M€ | 6,55 | 0 | 0 | 2/0 |  |
 | 6 | Matthew Pollock | CB | 25 | England | 1,7 M€ | 6,84 | 0 | 0 | 2/0 |  |
 | 16 | Marc Bola | LB,LM | 28 | England | 1,2 M€ | 6,31 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
-| 23 | Omar Traoré | RB,RWB | 28 | Germany | 1,5 M€ | 6,67 | 0 | 1 | 1/0 |  |
+| 23 | Omar Traoré | RB,RWB,RM | 28 | Germany | 1,5 M€ | 6,67 | 0 | 1 | 1/0 |  |
 | 29 | Branimir Mlačić | CB | 19 | Croatia | 5,6 M€ | 6,29 | 0 | 0 | 1/0 |  |
 | 53 | James Andrew Clarridge | CB | 22 | England | – | – | 0 | 0 | 0/0 |  |
 | 56 | Albert Eames | RB | 21 | England | – | 6,20 | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-|  | Leo Ramirez-Espain | CDM | 19 | England | – | – | 0 | 0 | 0/0 |  |
 | 5 | Hector Kyprianou | CDM,CM | 25 | Cyprus | 1,3 M€ | 6,79 | 0 | 0 | 2/0 |  |
 | 8 | Edoardo Bove | CDM | 24 | Italy | 2,8 M€ | 6,72 | 0 | 0 | 1/0 | skadad, åter Early October 2026 |
 | 14 | Kwadwo Baah | RW | 23 | England | 2,3 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
@@ -133,3 +132,5 @@ Tränare: Alessio Dionisi. Betyg, mål och assist gäller innevarande säsong en
 | 21 | Amin Nabizada | RW,LW | 19 | Afghanistan | 833 k€ | 6,66 | 3 | 0 | 3/0 |  |
 | 43 | Jack Grieves | CM | 21 | England | 292 k€ | – | 0 | 0 | 0/0 |  |
 | 45 | Stephy Mavididi | LW | 28 | DR Congo | 6,0 M€ | 6,34 | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Leo Ramirez-Espain (senast 2026-09-29).

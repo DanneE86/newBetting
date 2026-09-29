@@ -1,6 +1,6 @@
 # Port Vale (League Two) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -40,7 +40,7 @@ Form (äldst → senast): FFOOFFVF · senaste match 2026-09-19
 
 | Motståndare | M | V-O-F | Mål | Mot marknaden | Kryss mot odds | Senast |
 |---|---|---|---|---|---|---|
-| Exeter | 15 | 8-2-5 | 16–17 | +0,35 | −16 pe | 2026-09-12 1-0 (h) |
+| Exeter | 14 | 8-1-5 | 15–16 | +0,41 | −22 pe | 2026-09-12 1-0 (h) |
 | Cheltenham | 12 | 1-7-4 | 13–16 | −0,57 | +29 pe | 2025-01-01 0-0 (h) |
 | Colchester | 9 | 3-3-3 | 11–9 | −0,12 | +4 pe | 2025-03-11 1-2 (b) |
 | Northampton | 9 | 4-3-2 | 6–5 | +0,31 | +4 pe | 2026-02-24 1-0 (b) |
@@ -64,7 +64,7 @@ Form (äldst → senast): FFOOFFVF · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Jon Brady. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -72,15 +72,11 @@ Tränare: Jon Brady. Betyg, mål och assist gäller innevarande säsong enligt F
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
 | 1 | Jackson Smith | GK | 24 | England | 266 k€ | 6,34 | 0 | 0 | 0/0 |  |
-| 13 | Mason Terry | GK | 22 | England | – | – | 0 | 0 | 0/0 |  |
 | 20 | Marko Maroši | GK | 32 | Slovakia | 128 k€ | 6,05 | 0 | 0 | 0/0 |  |
-| 29 | Arron Davies | Keeper | 20 | England | – | – | 0 | 0 | 0/0 |  |
 | 31 | Keaton Moseley | Keeper | 18 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-|  | Ben Heneghan | CB | 33 | England | 146 k€ | – | 0 | 0 | 0/0 |  |
-|  | Jesse Debrah | CB | 25 | England | 239 k€ | – | 0 | 0 | 0/0 |  |
-|  | Sam Hart | LB | 30 | England | 124 k€ | – | 0 | 0 | 0/0 |  |
 | 2 | Kyle John | CB,RB,RWB,RM | 25 | England | 212 k€ | 6,91 | 0 | 0 | 0/0 |  |
+| 3 | Jaheim Headley | LWB,LB,LM,LW | 25 | England | 236 k€ | 6,56 | 0 | 0 | 0/0 |  |
 | 4 | Jasper Moon | CB | 25 | England | 186 k€ | 6,10 | 0 | 0 | 1/0 |  |
 | 5 | Connor Hall | CB | 33 | England | 157 k€ | 6,71 | 0 | 0 | 0/0 |  |
 | 6 | Jordan Gabriel | RB,RWB,RM,RW,CB | 28 | England | 229 k€ | 7,12 | 0 | 1 | 2/0 |  |
@@ -88,11 +84,7 @@ Tränare: Jon Brady. Betyg, mål och assist gäller innevarande säsong enligt F
 | 15 | Liam Gordon | LB,LWB,LM | 27 | Guyana | 160 k€ | 6,40 | 0 | 0 | 1/0 |  |
 | 22 | Lewis Montsma | CB | 28 | Netherlands | 167 k€ | 6,77 | 0 | 0 | 1/0 |  |
 | 25 | Cameron Humphreys | CB | 28 | England | 329 k€ | 6,54 | 0 | 0 | 1/0 |  |
-| 30 | Ben Lomax | CB | 20 | England | – | – | 0 | 0 | 0/0 |  |
-| 35 | Tyler Magloire | CB | 27 | England | 188 k€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-|  | Funso Ojo | CM,CDM | 35 | Belgium | 162 k€ | – | 0 | 0 | 0/0 |  |
-| 3 | Jaheim Headley | LWB,LM,LB,LW | 25 | England | 236 k€ | 6,56 | 0 | 0 | 0/0 |  |
 | 7 | George Byers | CM,CDM | 30 | Scotland | 133 k€ | 7,19 | 2 | 0 | 2/0 |  |
 | 8 | Ben Garrity | CM,CAM,CDM | 29 | England | 186 k€ | 6,70 | 0 | 0 | 3/0 |  |
 | 10 | Kyle Dempsey | CDM,CAM,CM | 31 | England | 179 k€ | 6,71 | 0 | 0 | 3/0 |  |
@@ -109,6 +101,6 @@ Tränare: Jon Brady. Betyg, mål och assist gäller innevarande säsong enligt F
 | 17 | Tyreece Simpson | ST | 24 | St. Kitts and Nevis | 227 k€ | 5,91 | 0 | 0 | 0/0 |  |
 | 19 | Ben Waine | ST,LM,CAM,LW,RW | 25 | New Zealand | 296 k€ | 6,23 | 0 | 0 | 0/0 |  |
 | 24 | Keyrol Figueroa | ST | 20 | Honduras | 180 k€ | 5,90 | 0 | 0 | 0/0 |  |
-| 31 | Eddie Lake | Attacker | 18 | England | – | – | 0 | 0 | 0/0 |  |
 | 36 | Max Watters | ST | 27 | England | 267 k€ | 6,11 | 0 | 0 | 0/0 |  |
-| 45 | Andre Gray | ST | 35 | Jamaica | 193 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (10): Funso Ojo (senast 2026-09-29), Andre Gray (senast 2026-09-29), Ben Heneghan (senast 2026-09-29), Sam Hart (senast 2026-09-29), Tyler Magloire (senast 2026-09-29), Jesse Debrah (senast 2026-09-29), Ben Lomax (senast 2026-09-29), Mason Terry (senast 2026-09-29), Arron Davies (senast 2026-09-29), Eddie Lake (senast 2026-09-29).

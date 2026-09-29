@@ -1,6 +1,6 @@
 # Gefle (Div 1 Norra) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [SE3N](../../ligor/SE3N.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [SE3N](../../ligor/SE3N.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -38,3 +38,36 @@ Form senaste 8 (äldst → senast): VVOFVFVF · senaste match 2026-09-27
 | Örebro Syrianska | 2 | 0-1-1 | 4–5 | 2025-11-09 3-3 (h) |
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
+
+## Trupp (Transfermarkt, hämtad 2026-09-29)
+
+Tränare: Per Olsson. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Max Croon | Goalkeeper | 20 | Sweden | 100 k€ | – | – | – | 0/0 |  |
+| 27 | Tim Markström | Goalkeeper | 39 | Sweden | – | – | – | – | 0/0 |  |
+| 22 | William Hedvall | Goalkeeper | 18 | Sweden | – | – | – | – | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 4 | Theodor Hansemon | Centre-Back | 23 | Sweden | – | – | – | – | 0/0 |  |
+| 5 | Dillan Ismail | Centre-Back | 34 | Sweden | – | – | – | – | 0/0 |  |
+| 24 | Kevin Persson | Centre-Back | 28 | Sweden | – | – | – | – | 0/0 |  |
+| 77 | Semin Zulum | Centre-Back | 19 | Germany | – | – | – | – | 0/0 |  |
+| 14 | Deniz Yaldir | Left-Back | 31 | Sweden | – | – | – | – | 0/0 |  |
+| 2 | Eric Larsson | Right-Back | 35 | Sweden | – | – | – | – | 0/0 |  |
+| 15 | Alem Nezirevic | Right-Back | 22 | Sweden | – | – | – | – | 0/0 |  |
+| 6 | Isak Edman | Right-Back | 21 | Sweden | – | – | – | – | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 8 | Mamadou Kouyaté | Central Midfield | 29 | Mali | – | – | – | – | 0/0 |  |
+| 13 | Måns Berggren | Central Midfield | 25 | Sweden | – | – | – | – | 0/0 |  |
+| 16 | Rasmus Nehrman | Central Midfield | 19 | Sweden | – | – | – | – | 0/0 |  |
+| 20 | Yukiya Sugita | Attacking Midfield | 33 | Japan | – | – | – | – | 0/0 |  |
+| 18 | Melker Spångberg | Attacking Midfield | 22 | Sweden | – | – | – | – | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 11 | Lukas Vikgren | Left Winger | 22 | Sweden | – | – | – | – | 0/0 |  |
+| 19 | Adem Sipic | Centre-Forward | 20 | United States | 75 k€ | – | – | – | 0/0 |  |
+| 9 | Alen Zahirovic | Centre-Forward | 23 | Sweden | – | – | – | – | 0/0 |  |
+| 10 | Malik Mokédé | Centre-Forward | 21 | Sweden | – | – | – | – | 0/0 |  |
+| 23 | Noah Lundström | Centre-Forward | 27 | Finland | – | – | – | – | 0/0 |  |
+| 21 | Leon Beronius | Centre-Forward | 21 | Sweden | – | – | – | – | 0/0 |  |

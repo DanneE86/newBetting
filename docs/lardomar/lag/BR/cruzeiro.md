@@ -1,6 +1,6 @@
 # Cruzeiro (Brasileirão Série A) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [BR](../../ligor/BR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [BR](../../ligor/BR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -60,22 +60,18 @@ Form (äldst → senast): VVVVFVFV · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Artur Jorge. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Lucas Romero (skadad, åter About 1-2 weeks), Luis Sinisterra (skadad, åter Late December 2026), Gabriel Pec (skadad, åter Late October 2026)
+**Skadade/borta nu:** Lucas Romero (osäker), Luis Sinisterra (skadad, åter Late December 2026), Gabriel Pec (skadad, åter Late October 2026)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
 | 1 | Cássio | GK | 39 | Brazil | 444 k€ | – | 0 | 0 | 0/0 |  |
-| 24 | Marcelo | Keeper | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 41 | Léo Aragão | GK | 24 | Brazil | 511 k€ | – | 0 | 0 | 0/0 |  |
-| 51 | Vitor Lamounier | Keeper | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 81 | Otávio | GK | 20 | Brazil | 1,1 M€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Kauã Moraes | RB,LB | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 6 | Matías Viña | LB | 28 | Uruguay | 2,3 M€ | – | 0 | 0 | 0/0 |  |
 | 12 | William | RB | 31 | Brazil | 1,4 M€ | – | 0 | 0 | 0/0 |  |
 | 15 | Fabrício Bruno | CB | 30 | Brazil | 9,8 M€ | – | 0 | 0 | 0/0 |  |
@@ -83,36 +79,20 @@ Tränare: Artur Jorge. Betyg, mål och assist gäller innevarande säsong enligt
 | 25 | Lucas Villalba | CB,LB | 32 | Argentina | 739 k€ | – | 0 | 0 | 0/0 |  |
 | 27 | Gabriel Rojas | LB,LWB,LM | 29 | Argentina | 2,5 M€ | – | 0 | 0 | 0/0 |  |
 | 34 | Jonathan Jesus | CB | 22 | Brazil | 2,4 M€ | – | 0 | 0 | 0/0 |  |
-| 42 | Nicolas | Defender | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 43 | João Marcelo | CB | 26 | Brazil | 2,2 M€ | – | 0 | 0 | 0/0 |  |
-| 60 | Gustavo Carvalho | Defender | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 64 | Vitor Hugo | Defender | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 84 | Kelvin Coutinho | Defender | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 5 | Zé Lucas | CDM,CM | 18 | Brazil | 7,2 M€ | – | 0 | 0 | 0/0 |  |
 | 8 | Matheus Henrique | CDM,CM | 28 | Brazil | 2,5 M€ | – | 0 | 0 | 0/0 |  |
 | 10 | Matheus Pereira | CAM,ST | 30 | Brazil | 5,9 M€ | – | 0 | 0 | 0/0 |  |
 | 11 | Gerson | CDM,LW,CAM,CM,RW | 29 | Brazil | 15,6 M€ | – | 0 | 0 | 0/0 |  |
 | 16 | Lucas Silva | CDM | 33 | Brazil | 400 k€ | – | 0 | 0 | 0/0 |  |
-| 29 | Lucas Romero | CDM,CM | 32 | Argentina | 1,9 M€ | – | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
-| 38 | Felipe Morais | CAM | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 40 | Rhuan Gabriel | Midfielder | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 55 | André Balbino | Midfielder | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 56 | Alessandro | Midfielder | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 58 | Eduardo Pape | Midfielder | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 67 | João Costa | RW,LWB,RM,LM | 21 | Portugal | – | – | 0 | 0 | 0/0 |  |
+| 29 | Lucas Romero | CDM,CM | 32 | Argentina | 1,9 M€ | – | 0 | 0 | 0/0 | osäker |
 | | **Anfallare** | | | | | | | | | |
 |  | Marquinhos | RW | 23 | Brazil | 2,5 M€ | – | 0 | 0 | 0/0 |  |
 | 9 | Bruno Rodrigues | ST | 29 | Brazil | 961 k€ | – | 0 | 0 | 0/0 |  |
 | 17 | Luis Sinisterra | LW | 27 | Colombia | 7,2 M€ | – | 0 | 0 | 0/0 | skadad, åter Late December 2026 |
 | 19 | Kaio Jorge | ST | 24 | Brazil | 18,6 M€ | – | 0 | 0 | 0/0 |  |
-| 20 | Wesley | LW,RM,RW | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 22 | Néiser Villarreal | ST | 21 | Colombia | – | – | 0 | 0 | 0/0 |  |
-| 57 | Rayan Lelis | RW | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 59 | Danilo Gimenes | Attacker | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 70 | Kaique Kenji | LW | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 77 | Gabriel Pec | RW,CAM | 25 | Brazil | 4,0 M€ | – | 0 | 0 | 0/0 | skadad, åter Late October 2026 |
-| 79 | Pietro Tavares | Attacker | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 94 | Wanderson | LW | 31 | Brazil | 1,9 M€ | – | 0 | 0 | 0/0 |  |
 | 97 | Luciano Rodríguez | ST,LM,LW,RW | 23 | Uruguay | 8,4 M€ | – | 0 | 0 | 0/0 |  |
-| 99 | Keny Arroyo | RW,LW | 20 | Ecuador | 9,4 M€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (22): Wesley (senast 2026-09-29), João Costa (senast 2026-09-29), Keny Arroyo (senast 2026-09-29), Néiser Villarreal (senast 2026-09-29), Kaique Kenji (senast 2026-09-29), Otávio (senast 2026-09-29), Zé Lucas (senast 2026-09-29), Kauã Moraes (senast 2026-09-29), Nicolas (senast 2026-09-29), Vitor Lamounier (senast 2026-09-29), Marcelo (senast 2026-09-29), Rhuan Gabriel (senast 2026-09-29), Rayan Lelis (senast 2026-09-29), Felipe Morais (senast 2026-09-29), Vitor Hugo (senast 2026-09-29), Pietro Tavares (senast 2026-09-29), Alessandro (senast 2026-09-29), André Balbino (senast 2026-09-29), Gustavo Carvalho (senast 2026-09-29), Kelvin Coutinho (senast 2026-09-29), Danilo Gimenes (senast 2026-09-29), Eduardo Pape (senast 2026-09-29).

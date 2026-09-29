@@ -1,6 +1,6 @@
 # Bohemians 1905 (Chance Liga) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [CZ](../../ligor/CZ.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [CZ](../../ligor/CZ.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -35,7 +35,7 @@ Form senaste 8 (äldst → senast): FOVOOFVF · senaste match 2026-09-19
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Jaroslav Veselý. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

@@ -1,6 +1,6 @@
 # Mallorca (LaLiga 2) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [LL2](../../ligor/LL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [LL2](../../ligor/LL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -57,38 +57,38 @@ Form (äldst → senast): VVFVOVVF · senaste match 2026-09-27
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Luis García. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Jan Salas (skadad, åter Late October 2026), Abdón Prats (skadad, åter Early October 2026)
+**Skadade/borta nu:** Iván Cuéllar (skadad, åter Unknown), Jan Salas (skadad, åter Late October 2026), Abdón Prats (skadad, åter Early October 2026)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Arnau Tenas | GK | 25 | Spain | 2,6 M€ | 7,11 | 0 | 1 | 0/0 |  |
+| 1 | Arnau Tenas | GK | 25 | Spain | 2,6 M€ | 7,06 | 0 | 1 | 0/0 |  |
 | 13 | Lucas Bergström | GK | 24 | Finland | 1,1 M€ | – | 0 | 0 | 0/0 |  |
-| 25 | Iván Cuéllar | GK | 42 | Spain | 198 k€ | – | 0 | 0 | 0/0 |  |
+| 25 | Iván Cuéllar | GK | 42 | Spain | 198 k€ | – | 0 | 0 | 0/0 | skadad, åter Unknown |
 | | **Backar** | | | | | | | | | |
 | 3 | Toni Lato | LB | 28 | Spain | 855 k€ | 7,54 | 0 | 0 | 0/0 |  |
 | 4 | David López | CB | 23 | Spain | – | – | 0 | 0 | 0/0 |  |
 | 5 | Alberto Moreno | LB | 34 | Spain | 698 k€ | 6,62 | 0 | 0 | 0/0 |  |
-| 15 | John Donald | CB | 26 | Spain | 1,2 M€ | 6,77 | 0 | 0 | 1/0 |  |
+| 15 | John Donald | CB | 26 | Spain | 1,2 M€ | 6,72 | 0 | 0 | 1/0 |  |
 | 21 | Antonio Raíllo | CB | 34 | Spain | 756 k€ | 7,46 | 1 | 0 | 3/0 |  |
 | 22 | Aboubaka Soumahoro | LB | 21 | France | 1,3 M€ | 6,88 | 0 | 0 | 2/0 |  |
 | 24 | Martin Valjent | CB | 30 | Slovakia | 2,3 M€ | 7,27 | 0 | 0 | 2/0 |  |
 | 29 | Luis Orejuela | LB | 19 | Spain | – | 5,97 | 0 | 0 | 0/0 |  |
 | 32 | Leo Sanchez | Defender | 20 | Spain | – | – | 0 | 0 | 0/0 |  |
-| 34 | Miguel Calatayud | RB | 20 | Spain | – | 7,16 | 0 | 0 | 3/0 |  |
+| 34 | Miguel Calatayud | RB | 20 | Spain | – | 7,14 | 0 | 0 | 3/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 |  | Jan Salas | CM | 21 | Spain | 640 k€ | – | 0 | 0 | 0/0 | skadad, åter Late October 2026 |
 | 2 | Guille Fernández | CM | 18 | Spain | 2,3 M€ | – | 0 | 0 | 0/0 |  |
-| 7 | Álex Sala | CM | 25 | Spain | 968 k€ | 7,19 | 1 | 2 | 1/0 |  |
+| 7 | Álex Sala | CM | 25 | Spain | 968 k€ | 7,18 | 1 | 2 | 1/0 |  |
 | 8 | Manu Morlanes | CDM,CM | 27 | Spain | 1,8 M€ | 7,33 | 0 | 0 | 2/0 |  |
 | 10 | Sergi Darder | CAM,CM,CDM,CB | 32 | Spain | 2,2 M€ | 7,22 | 0 | 0 | 1/0 |  |
 | 20 | Pablo Torre | CAM,ST | 23 | Spain | 4,8 M€ | 6,89 | 1 | 0 | 1/0 |  |
-| 23 | Antoniu Roca | LM | 24 | Spain | – | 6,56 | 0 | 0 | 1/0 |  |
-| 33 | Adrián Liso | ST,LM,RM | 21 | Spain | 8,0 M€ | 6,46 | 0 | 0 | 1/0 |  |
+| 23 | Antoniu Roca | LM | 24 | Spain | – | 6,55 | 0 | 0 | 1/0 |  |
+| 33 | Adrián Liso | ST,LM,RM,LW | 21 | Spain | 8,0 M€ | 6,46 | 0 | 0 | 1/0 |  |
 | 39 | Jandro Garcia | Midfielder | 20 | Spain | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 6 | Antonio Sánchez | RW,RM | 29 | Spain | 1,2 M€ | 6,22 | 0 | 0 | 0/0 |  |
@@ -97,6 +97,6 @@ Tränare: Luis García. Betyg, mål och assist gäller innevarande säsong enlig
 | 16 | Adam Buksa | ST | 30 | Poland | 2,3 M€ | 6,30 | 1 | 0 | 1/0 |  |
 | 17 | Arnau Puigmal | RW | 25 | Spain | 1,3 M€ | 5,98 | 0 | 0 | 0/0 |  |
 | 18 | Adrián Fuentes | ST | 30 | Spain | 969 k€ | 7,14 | 4 | 0 | 0/0 |  |
-| 19 | Josep Cerdà | LW,ST,RW | 23 | Spain | 723 k€ | 6,61 | 0 | 1 | 2/0 |  |
+| 19 | Josep Cerdà | LW,ST,RW | 23 | Spain | 723 k€ | 6,63 | 0 | 1 | 2/0 |  |
 | 30 | Justin Kalumba | RW | 21 | France | 1,2 M€ | – | 0 | 0 | 0/0 |  |
 | 36 | Aimar Pena | Attacker | 22 | Spain | – | – | 0 | 0 | 0/0 |  |

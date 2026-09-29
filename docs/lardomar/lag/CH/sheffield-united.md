@@ -1,12 +1,12 @@
 # Sheffield United (Championship) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Senaste 8: xG-målskillnaden är −0,54 per match sämre än målskillnaden.
 - 2025/26: −0,34 poäng per match mot marknaden. Ligan visar ingen persistens, så räkna inte med att det fortsätter.
-- Stark historik mot Millwall (−0,55 p/match mot marknaden, 10 möten), Watford (+0,59 p/match mot marknaden, 8 möten), Cardiff (+0,96 p/match mot marknaden, 7 möten), Southampton (−1,15 p/match mot marknaden, 6 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Stark historik mot Millwall (−0,77 p/match mot marknaden, 9 möten), Watford (+0,59 p/match mot marknaden, 8 möten), Cardiff (+0,96 p/match mot marknaden, 7 möten), Southampton (−1,15 p/match mot marknaden, 6 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -43,11 +43,11 @@ Form (äldst → senast): OOOVFVFF · senaste match 2026-09-19
 | Blackburn | 11 | 7-1-3 | 19–10 | +0,37 | −18 pe | 2026-09-08 2-1 (b) |
 | Stoke | 11 | 6-2-3 | 20–12 | +0,28 | −10 pe | 2026-09-19 1-2 (b) |
 | Burnley | 10 | 3-1-6 | 12–19 | −0,28 | −19 pe | 2025-04-21 1-2 (b) |
-| Millwall | 10 | 3-2-5 | 11–12 | −0,55 | −8 pe | 2026-01-31 1-1 (b) |
 | Norwich | 10 | 4-4-2 | 14–12 | +0,07 | +13 pe | 2026-09-05 1-3 (h) |
 | Swansea | 10 | 5-3-2 | 14–6 | +0,16 | +3 pe | 2026-08-22 0-0 (b) |
 | Bristol City | 9 | 4-2-3 | 11–11 | −0,23 | −4 pe | 2026-04-06 0-1 (b) |
 | Middlesbrough | 9 | 3-1-5 | 12–13 | −0,33 | −17 pe | 2026-02-09 1-2 (h) |
+| Millwall | 9 | 2-2-5 | 8–10 | −0,77 | −6 pe | 2026-01-31 1-1 (b) |
 | Preston | 9 | 5-2-2 | 18–11 | +0,21 | −5 pe | 2026-04-25 2-3 (h) |
 | QPR | 9 | 5-3-1 | 12–6 | +0,20 | +7 pe | 2026-02-28 2-0 (b) |
 | Birmingham | 8 | 3-4-1 | 10–6 | −0,04 | +23 pe | 2026-08-15 0-0 (h) |
@@ -90,7 +90,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-08-22 | Stryk 4967 | Swansea - Sheffield U | X | 30 % | 36 % |
 | 2026-01-01 | Europa 2536 | Sheffield U - Leicester | 1 ✓ | 62 % | 55 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Chris Wilder. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -104,7 +104,7 @@ Tränare: Chris Wilder. Betyg, mål och assist gäller innevarande säsong enlig
 | | **Backar** | | | | | | | | | |
 | 2 | Matt Doherty | RB,CB | 34 | Ireland | 826 k€ | 6,48 | 0 | 0 | 0/0 |  |
 | 3 | Sam McCallum | LB,LWB,LM | 26 | England | 1,6 M€ | 7,35 | 0 | 1 | 1/0 | skadad, åter Early October 2026 |
-| 5 | Japhet Tanganga | CB,RB | 27 | England | 2,3 M€ | 6,95 | 1 | 0 | 3/0 |  |
+| 5 | Japhet Tanganga | CB | 27 | England | 2,3 M€ | 6,95 | 1 | 0 | 3/0 |  |
 | 8 | Hamza Choudhury | RB,CDM,RM | 28 | Bangladesh | 1,8 M€ | 6,87 | 0 | 0 | 0/0 |  |
 | 14 | Harrison Burrows | LB,LWB | 24 | England | 9,4 M€ | 6,64 | 0 | 0 | 1/0 | skadad, åter Early October 2026 |
 | 15 | Liam Kitching | CB | 27 | Ireland | 7,7 M€ | 6,61 | 0 | 0 | 2/0 |  |

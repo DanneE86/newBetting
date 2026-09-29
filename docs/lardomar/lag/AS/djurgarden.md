@@ -1,6 +1,6 @@
 # Djurgarden (Allsvenskan) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [AS](../../ligor/AS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [AS](../../ligor/AS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -67,7 +67,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-11-02 | Europa 2519 | Djurgården - IFK Göteborg | X | 63 % | 55 % |
 | 2025-08-17 | Europa 2497 | Mjällby - Djurgården | X | 22 % | 31 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Jani Honkavaara. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

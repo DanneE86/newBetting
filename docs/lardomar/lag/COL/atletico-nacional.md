@@ -1,6 +1,6 @@
 # Atlético Nacional (Primera A) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [COL](../../ligor/COL.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [COL](../../ligor/COL.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -40,7 +40,7 @@ Form senaste 8 (äldst → senast): FVVVVVFO · senaste match 2026-09-25
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Lucas González. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -60,10 +60,9 @@ Tränare: Lucas González. Betyg, mål och assist gäller innevarande säsong en
 | 16 | William Tesillo | CB | 36 | Colombia | 243 k€ | – | 0 | 0 | 0/0 |  |
 | 20 | Milton Casco | LB | 38 | Argentina | 295 k€ | – | 0 | 0 | 0/0 |  |
 | 33 | Samuel Velásquez | LB | 23 | Colombia | 730 k€ | – | 0 | 0 | 0/0 |  |
-| 36 | Robinson García | CB | 21 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 8 | Mateus Uribe | CDM,CAM,CM | 35 | Colombia | 373 k€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
-| 10 | Edwin Cardona | CAM,CDM,LW | 33 | Colombia | 250 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 10 | Edwin Cardona | CAM,LW,CDM | 33 | Colombia | 250 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 14 | Andrés Marín | CDM | 19 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 19 | Juan Rengifo | CAM,RW,CDM,LW | 21 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 21 | Jorman Campuzano | CDM | 30 | Colombia | 1,2 M€ | – | 0 | 0 | 0/0 |  |
@@ -74,7 +73,7 @@ Tränare: Lucas González. Betyg, mål och assist gäller innevarande säsong en
 | 35 | Matías Lozano | CAM | 18 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 80 | Juan Zapata | CDM | 26 | Colombia | 933 k€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 7 | Marlos Moreno | RW,LW | 30 | Colombia | 315 k€ | – | 0 | 0 | 0/0 |  |
+| 7 | Marlos Moreno | LW,RW | 30 | Colombia | 315 k€ | – | 0 | 0 | 0/0 |  |
 | 9 | Alfredo Morelos | ST | 30 | Colombia | 1,7 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 13 | Nicolás Rodríguez | RW,LW | 22 | Colombia | 1,3 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 17 | Cristian Arango | ST,LW | 31 | Colombia | 1,8 M€ | – | 0 | 0 | 0/0 | skadad, åter Unknown |
@@ -84,3 +83,5 @@ Tränare: Lucas González. Betyg, mål och assist gäller innevarande säsong en
 | 29 | Andrés Sarmiento | LW,RW,CAM | 28 | Colombia | 738 k€ | – | 0 | 0 | 0/0 |  |
 | 30 | Kevin Parra | LW,LM | 23 | Colombia | 1,1 M€ | – | 0 | 0 | 0/0 |  |
 | 99 | Ian Poveda | RW | 26 | Colombia | 824 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Robinson García (senast 2026-09-29).

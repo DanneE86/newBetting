@@ -1,12 +1,12 @@
 # Oldham (League Two) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Senaste 8: otur med −0,64 poäng per match mot xP. Marknaden prisar redan in det i ligan (ingen bekräftad effekt), så det är inget spel i sig.
 - Senaste 8: xG-målskillnaden är +0,77 per match bättre än målskillnaden.
-- Stark historik mot Newport County (+0,62 p/match mot marknaden, 9 möten), Salford (−0,67 p/match mot marknaden, 9 möten), Swindon (−0,60 p/match mot marknaden, 8 möten), Crewe (−0,50 p/match mot marknaden, 6 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Stark historik mot Newport County (+0,62 p/match mot marknaden, 9 möten), Salford (−0,67 p/match mot marknaden, 9 möten), Swindon (−0,65 p/match mot marknaden, 7 möten), Crewe (−0,50 p/match mot marknaden, 6 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -44,7 +44,7 @@ Form (äldst → senast): VFVOFFFF · senaste match 2026-09-26
 | Cheltenham | 8 | 4-2-2 | 10–8 | +0,40 | −2 pe | 2026-01-17 2-1 (h) |
 | Exeter | 8 | 2-1-5 | 8–15 | −0,17 | −14 pe | 2022-03-19 0-2 (h) |
 | Port Vale | 8 | 3-2-3 | 12–9 | +0,16 | −3 pe | 2026-08-15 2-0 (h) |
-| Swindon | 8 | 1-2-5 | 7–13 | −0,60 | −2 pe | 2026-08-29 3-0 (h) |
+| Swindon | 7 | 1-1-5 | 7–13 | −0,65 | −13 pe | 2026-08-29 3-0 (h) |
 | Walsall | 7 | 2-1-4 | 9–11 | −0,15 | −14 pe | 2025-12-29 2-1 (b) |
 | Crewe | 6 | 1-2-3 | 6–7 | −0,50 | +5 pe | 2026-03-28 1-2 (b) |
 | Grimsby | 6 | 2-3-1 | 6–4 | +0,08 | +22 pe | 2026-03-14 1-0 (h) |
@@ -60,44 +60,40 @@ Form (äldst → senast): VFVOFFFF · senaste match 2026-09-26
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Micky Mellon. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Mathew Hudson | GK | 28 | England | 212 k€ | 6,69 | 0 | 0 | 1/0 |  |
+| 1 | Mathew Hudson | GK | 28 | England | 212 k€ | 6,71 | 0 | 0 | 1/0 |  |
 | 22 | Aston Wilson | Keeper | 19 | England | – | – | 0 | 0 | 0/0 |  |
-| 31 | Tom Donaghy | GK | 23 | England | – | – | 0 | 0 | 0/0 |  |
-| 35 | Scott Moloney | GK | 26 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Gus Scott-Morriss | RWB,RB,CAM | 29 | England | – | 6,36 | 0 | 0 | 0/1 |  |
-| 3 | Jamie Robson | LB,LWB | 28 | Scotland | 158 k€ | 7,12 | 0 | 2 | 1/0 |  |
+| 2 | Gus Scott-Morriss | RWB,RB,CAM | 29 | England | – | 6,40 | 0 | 0 | 0/1 |  |
+| 3 | Jamie Robson | LB,LWB | 28 | Scotland | 158 k€ | 7,13 | 0 | 2 | 1/0 |  |
 | 5 | Donervon Daniels | CB | 32 | Montserrat | 125 k€ | 6,55 | 0 | 0 | 1/0 |  |
-| 6 | Manny Monthé | CB | 31 | Cameroon | 190 k€ | 6,32 | 0 | 0 | 0/0 |  |
+| 6 | Manny Monthé | CB | 31 | Cameroon | 190 k€ | 6,30 | 0 | 0 | 0/0 |  |
 | 16 | Will Sutton | RB,CB | 23 | England | 191 k€ | – | 0 | 0 | 0/0 |  |
 | 19 | Zain Tahir | LB | 19 | England | – | – | 0 | 0 | 0/0 |  |
 | 23 | Ryan Delaney | CB | 30 | Ireland | 102 k€ | 6,90 | 0 | 0 | 1/0 |  |
-| 24 | Lewis Temple | CB | 21 | Ireland | 333 k€ | 5,61 | 0 | 0 | 0/0 |  |
+| 24 | Lewis Temple | CB | 21 | Ireland | 333 k€ | 5,68 | 0 | 0 | 0/0 |  |
 | 39 | Isaac Anderson | Defender | 0 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-|  | Corry Evans | CM | 36 | Northern Ireland | – | – | 0 | 0 | 0/0 |  |
-|  | Josh Kay | CM | 29 | England | 72 k€ | – | 0 | 0 | 0/0 |  |
 | 4 | Tom Pett | CM,RW,CDM,RM,CAM | 34 | England | 121 k€ | 6,24 | 0 | 0 | 0/0 |  |
-| 7 | Keenan Appiah-Forson | CM,CDM | 24 | England | – | 6,82 | 1 | 1 | 0/0 |  |
+| 7 | Keenan Appiah-Forson | CM,CDM | 24 | England | – | 6,80 | 1 | 1 | 0/0 |  |
 | 8 | Oliver Norburn | CDM,CM | 33 | Grenada | 92 k€ | 7,23 | 0 | 1 | 4/0 |  |
 | 10 | Calum Kavanagh | CAM,ST | 23 | Ireland | 373 k€ | 7,38 | 4 | 3 | 1/0 |  |
 | 11 | Jack Stevens | LM,LW | 25 | Wales | 200 k€ | – | 0 | 0 | 0/0 |  |
-| 14 | Noah Chilvers | CM | 25 | England | 234 k€ | 5,89 | 0 | 0 | 0/0 |  |
+| 14 | Noah Chilvers | CM | 25 | England | 234 k€ | 5,90 | 0 | 0 | 0/0 |  |
 | 15 | Kane Drummond | LM,RM,ST,RW,LW | 25 | England | 210 k€ | 6,88 | 1 | 0 | 0/0 |  |
-| 17 | Favour Fawunmi | RW,CAM,RM | 20 | England | 252 k€ | 6,78 | 1 | 0 | 1/0 |  |
+| 17 | Favour Fawunmi | CAM,RW,RM | 20 | England | 252 k€ | 6,70 | 1 | 0 | 1/0 |  |
 | 21 | Josh Hawkes | LW,LM,CAM | 27 | England | 146 k€ | 6,40 | 0 | 0 | 0/0 |  |
 | 26 | Kai Payne | CAM,CM,RW,CDM | 21 | England | 298 k€ | 6,04 | 0 | 0 | 0/0 |  |
 | 30 | Thomas Hill | CAM,RW | 23 | England | – | 6,13 | 0 | 0 | 0/0 |  |
-| 38 | Frankie McMahon-Brown | Midfielder | 19 | Ireland | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-|  | Kieron Morris | LW,RW | 32 | England | 73 k€ | – | 0 | 0 | 0/0 |  |
-| 9 | Mike Fondop-Talum | ST | 32 | England | 161 k€ | 6,85 | 1 | 1 | 0/0 |  |
+| 9 | Mike Fondop-Talum | ST | 32 | England | 161 k€ | 6,86 | 1 | 1 | 0/0 |  |
 | 20 | Elliott Nevitt | ST,CAM | 29 | England | 205 k€ | 6,31 | 1 | 0 | 1/0 |  |
 | 27 | Oliver Hammond | CAM,ST,LW | 23 | Wales | 188 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (6): Corry Evans (senast 2026-09-29), Kieron Morris (senast 2026-09-29), Josh Kay (senast 2026-09-29), Scott Moloney (senast 2026-09-29), Tom Donaghy (senast 2026-09-29), Frankie McMahon-Brown (senast 2026-09-29).

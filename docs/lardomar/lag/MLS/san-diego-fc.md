@@ -1,6 +1,6 @@
 # San Diego FC (MLS) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -55,7 +55,7 @@ Form (äldst → senast): VFVVFFFO · senaste match 2026-09-21
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Mikey Varas. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -83,7 +83,7 @@ Tränare: Mikey Varas. Betyg, mål och assist gäller innevarande säsong enligt
 |  | David Mimbang | Midfielder | 18 | Cameroon | – | – | 0 | 0 | 0/0 |  |
 | 6 | Jeppe Tverskov | CM | 33 | Denmark | 290 k€ | 7,30 | 0 | 3 | 3/1 |  |
 | 8 | Onni Valakari | CM,ST | 27 | Finland | 1,9 M€ | 7,13 | 4 | 4 | 1/0 |  |
-| 12 | Gabriel Pirani | CM,ST,CAM | 24 | Brazil | 866 k€ | 6,56 | 2 | 0 | 2/0 | skadad, åter A few weeks |
+| 12 | Gabriel Pirani | CM,ST | 24 | Brazil | 866 k€ | 6,56 | 2 | 0 | 2/0 | skadad, åter A few weeks |
 | 15 | Pedro Soma | CM | 20 | USA | 867 k€ | 6,56 | 1 | 2 | 2/0 |  |
 | 19 | David Vazquez | CM,LW,RW | 20 | USA | 1,3 M€ | 6,53 | 3 | 0 | 4/0 |  |
 | 20 | Aníbal Godoy | CM,CDM | 36 | Panama | 50 k€ | 6,84 | 1 | 1 | 4/0 |  |
@@ -95,5 +95,5 @@ Tränare: Mikey Varas. Betyg, mål och assist gäller innevarande säsong enligt
 | 14 | Bryan Zamblé | LW | 18 | Ivory Coast | 1,1 M€ | 6,24 | 2 | 0 | 0/0 |  |
 | 24 | Emmanuel Boateng | LW | 32 | Ghana | 53 k€ | – | 0 | 0 | 0/0 |  |
 | 77 | Alex Mighten | LW | 24 | England | 351 k€ | 6,49 | 0 | 2 | 1/0 |  |
-| 90 | Amahl Pellegrino | LW,ST | 36 | Norway | 69 k€ | 6,64 | 3 | 1 | 0/1 |  |
+| 90 | Amahl Pellegrino | LW | 36 | Norway | 69 k€ | 6,64 | 3 | 1 | 0/1 |  |
 | 94 | Cédric Bakambu | ST | 35 | DR Congo | 700 k€ | 6,44 | 1 | 0 | 0/0 |  |

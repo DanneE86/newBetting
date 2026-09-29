@@ -1,6 +1,6 @@
 # Mjallby (Allsvenskan) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [AS](../../ligor/AS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [AS](../../ligor/AS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -63,7 +63,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-09-16 | Europa 2608 | AIK - Mjällby | X | 28 % | 32 % |
 | 2025-08-17 | Europa 2497 | Mjällby - Djurgården | X | 51 % | 42 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Andreas Brännström. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

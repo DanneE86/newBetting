@@ -1,6 +1,6 @@
 # Derby (Championship) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -53,8 +53,8 @@ Form (äldst → senast): FOFVFFFO · senaste match 2026-09-19
 | Portsmouth | 9 | 3-6-0 | 14–7 | +0,24 | +38 pe | 2026-09-01 2-0 (b) |
 | Norwich | 8 | 3-2-3 | 11–11 | +0,24 | −1 pe | 2026-04-21 1-2 (b) |
 | Sheffield United | 8 | 3-0-5 | 9–10 | +0,03 | −27 pe | 2026-05-02 1-2 (h) |
-| Bolton | 6 | 3-1-2 | 8–4 | +0,05 | −10 pe | 2024-03-16 1-0 (h) |
 | Watford | 6 | 0-0-6 | 4–12 | −1,19 | −28 pe | 2026-02-21 0-2 (b) |
+| Bolton | 5 | 3-1-1 | 8–3 | +0,42 | −7 pe | 2024-03-16 1-0 (h) |
 | Lincoln | 4 | 1-2-1 | 4–4 | −0,74 | +25 pe | 2024-01-20 0-0 (b) |
 | Burnley | 3 | 0-3-0 | 1–1 | +0,16 | +72 pe | 2026-09-19 1-1 (b) |
 | Southampton | 2 | 0-1-1 | 2–3 | −0,45 | +24 pe | 2026-04-11 1-2 (b) |
@@ -84,7 +84,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-08-22 | Stryk 4967 | Derby - Cardiff | X | 57 % | 44 % |
 | 2026-01-01 | Europa 2536 | Derby - Middlesbrough | 1 ✓ | 24 % | 33 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: John Eustace. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -95,7 +95,6 @@ Tränare: John Eustace. Betyg, mål och assist gäller innevarande säsong enlig
 | | **Målvakter** | | | | | | | | | |
 |  | Nicholas Bilokapić | GK | 24 | Australia | 227 k€ | – | 0 | 0 | 0/0 |  |
 | 1 | Jacob Widell Zetterström | GK | 28 | Sweden | 1,3 M€ | 6,94 | 0 | 0 | 0/0 | skadad, åter Late October 2026 |
-| 1 | Sam Kane | GK | 20 | Scotland | – | – | 0 | 0 | 0/0 |  |
 | 12 | Richard O'Donnell | GK | 38 | England | 277 k€ | – | 0 | 0 | 0/0 |  |
 | 31 | Josh Vickers | GK | 30 | England | 466 k€ | 6,46 | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
@@ -126,3 +125,5 @@ Tränare: John Eustace. Betyg, mål och assist gäller innevarande säsong enlig
 | 16 | Mohammed Fuseini | ST,CAM,LW | 24 | Ghana | 1,9 M€ | 6,78 | 1 | 0 | 2/0 |  |
 | 19 | Henrik Meister | ST | 22 | Denmark | 3,7 M€ | 5,90 | 0 | 0 | 0/0 |  |
 | 33 | Corey Blackett-Taylor | LW | 29 | England | 279 k€ | 6,30 | 0 | 0 | 2/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Sam Kane (senast 2026-09-29).

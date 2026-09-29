@@ -1,6 +1,6 @@
 # Zlín (Chance Liga) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [CZ](../../ligor/CZ.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [CZ](../../ligor/CZ.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -35,7 +35,7 @@ Form senaste 8 (äldst → senast): FFFFFFFO · senaste match 2026-09-20
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Pavel Hoftych. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -49,7 +49,6 @@ Tränare: Pavel Hoftych. Betyg, mål och assist gäller innevarande säsong enli
 | 64 | Stepán Bachůrek | GK | 24 | Czechia | 130 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 |  | Zvonimir Katalinić | CB | 22 | Croatia | 319 k€ | – | 0 | 0 | 0/0 |  |
-| 5 | Kristers Penkevics | CB,CDM,CM | 23 | Latvia | 190 k€ | 6,09 | 0 | 0 | 0/0 |  |
 | 11 | Adam Gaži | LB | 23 | Slovakia | 222 k€ | 6,35 | 0 | 0 | 0/0 |  |
 | 22 | Michal Fukala | LB,RB,LWB | 25 | Czechia | 273 k€ | 6,66 | 1 | 0 | 1/0 |  |
 | 23 | Miloš Kopečný | RB,RM,RW,RWB | 32 | Czechia | 137 k€ | 6,43 | 0 | 0 | 3/0 |  |
@@ -62,6 +61,7 @@ Tränare: Pavel Hoftych. Betyg, mål och assist gäller innevarande säsong enli
 | | **Mittfältare** | | | | | | | | | |
 | 3 | Jirí Štefan | CAM | 20 | Czechia | – | 6,77 | 0 | 1 | 0/0 |  |
 | 4 | Tom Ulbrich | CAM,CDM | 28 | Czechia | 214 k€ | 6,33 | 0 | 0 | 1/0 |  |
+| 5 | Kristers Penkevics | CB,CDM,CM | 23 | Latvia | 190 k€ | 6,09 | 0 | 0 | 0/0 |  |
 | 6 | Joss Didiba | CDM,CB,CM | 28 | Cameroon | 152 k€ | – | 0 | 0 | 0/0 |  |
 | 10 | Stanislav Petruța | LW,CAM,RW,CDM | 20 | Czechia | 531 k€ | 6,33 | 1 | 0 | 1/0 |  |
 | 13 | Filip Dornak | Midfielder | 20 | Czechia | – | 6,11 | 0 | 0 | 0/0 |  |

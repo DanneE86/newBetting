@@ -1,6 +1,6 @@
 # Magdeburg (2. Bundesliga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [BL2](../../ligor/BL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [BL2](../../ligor/BL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -52,7 +52,7 @@ Form (äldst → senast): VFFVVFVO · senaste match 2026-09-18
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Petrik Sander. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -65,15 +65,14 @@ Tränare: Petrik Sander. Betyg, mål och assist gäller innevarande säsong enli
 | 30 | Noah Kruth | GK | 23 | Germany | 213 k€ | – | 0 | 0 | 0/0 |  |
 | 40 | Robert Kampa | Keeper | 21 | Germany | 214 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Samuel Loric | RM | 26 | France | 236 k€ | – | 0 | 0 | 0/0 |  |
 | 3 | Anselmo MacNulty | CB,LB | 23 | Ireland | 1,1 M€ | 6,91 | 0 | 0 | 3/0 |  |
 | 4 | Eldin Džogović | RM | 23 | Luxembourg | 166 k€ | – | 0 | 0 | 0/0 |  |
 | 5 | Tobias Müller | CB | 32 | Germany | 338 k€ | 6,76 | 0 | 1 | 2/1 |  |
 | 6 | Paul Jaeckel | CB | 28 | Germany | 436 k€ | 4,92 | 0 | 0 | 0/0 |  |
 | 7 | Herbert Bockhorn | RB | 31 | Uganda | 125 k€ | 6,39 | 0 | 1 | 0/1 |  |
 | 15 | Daniel Heber | CB | 32 | Germany | 50 k€ | 7,83 | 0 | 1 | 0/0 |  |
-| 17 | Alexander Nollenberger | LB,LM,RW,CM | 29 | Germany | 286 k€ | 7,52 | 3 | 1 | 1/0 |  |
-| 19 | Lubambo Musonda | LB,RM,RB,RW,CM | 31 | Zambia | 187 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 17 | Alexander Nollenberger | LB,LM,RW | 29 | Germany | 286 k€ | 7,52 | 3 | 1 | 1/0 |  |
+| 19 | Lubambo Musonda | LB,RB,RM,RW | 31 | Zambia | 187 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 24 | Tarek Chahed | RW | 30 | Germany | 56 k€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 10 | Moritz-Broni Kwarteng | CM,LW | 28 | Germany | 551 k€ | 6,89 | 0 | 1 | 0/0 |  |
@@ -87,7 +86,6 @@ Tränare: Petrik Sander. Betyg, mål och assist gäller innevarande säsong enli
 | 35 | Magnus Baars | Midfielder | 19 | Germany | 579 k€ | 6,09 | 0 | 0 | 0/0 |  |
 | 38 | Luka Hyryläinen | CM,CDM | 22 | Finland | 1,5 M€ | 7,36 | 1 | 1 | 2/0 |  |
 | | **Anfallare** | | | | | | | | | |
-|  | Aleksa Marušić | ST | 27 | Montenegro | 163 k€ | – | 0 | 0 | 0/0 |  |
 | 8 | Emmanuel Iyoha | RW,LW,CAM | 28 | Germany | 397 k€ | 7,59 | 4 | 0 | 0/0 |  |
 | 9 | Roko Šimić | ST | 23 | Croatia | 1,4 M€ | – | 0 | 0 | 0/0 |  |
 | 18 | Chung-Hyun Lee | Attacker | 19 | South Korea | – | – | 0 | 0 | 0/0 |  |
@@ -95,3 +93,5 @@ Tränare: Petrik Sander. Betyg, mål och assist gäller innevarande säsong enli
 | 22 | Mateusz Żukowski | ST | 24 | Poland | 946 k€ | 7,16 | 2 | 0 | 1/0 |  |
 | 23 | Barış Atik | LW,CAM | 31 | Turkiye | 379 k€ | 7,83 | 0 | 4 | 1/0 |  |
 | 29 | Richmond Tachie | RW | 27 | Germany | 293 k€ | 6,07 | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (2): Aleksa Marušić (senast 2026-09-29), Samuel Loric (senast 2026-09-29).

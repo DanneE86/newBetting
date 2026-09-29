@@ -1,6 +1,6 @@
 # Start (Eliteserien) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [NO](../../ligor/NO.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [NO](../../ligor/NO.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -51,7 +51,7 @@ Form (äldst → senast): FVFFVFVF · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Azar Karadaş. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -63,6 +63,7 @@ Tränare: Azar Karadaş. Betyg, mål och assist gäller innevarande säsong enli
 | 26 | Magnus Smelhus Sjøeng | GK | 24 | Norway | 646 k€ | 5,36 | 0 | 0 | 0/0 |  |
 | 45 | Filip Manojlović | GK | 30 | Serbia | 289 k€ | 7,33 | 0 | 0 | 0/0 | skadad, åter Late October 2026 |
 | | **Backar** | | | | | | | | | |
+| 2 | Fredrik Mani Pålerud | CB | 32 | Norway | 159 k€ | 6,21 | 0 | 0 | 1/0 |  |
 | 3 | Altin Ujkani | CB,LM | 26 | Norway | 393 k€ | 6,52 | 1 | 0 | 1/1 |  |
 | 4 | Johan Meyer | CB | 22 | Denmark | 410 k€ | 6,58 | 0 | 0 | 0/0 |  |
 | 5 | Sander Aske Granheim | CB,CDM | 19 | Norway | 1,5 M€ | 6,91 | 0 | 0 | 0/0 |  |
@@ -72,14 +73,12 @@ Tränare: Azar Karadaş. Betyg, mål och assist gäller innevarande säsong enli
 | 28 | Jens Husebø | CB | 27 | Norway | 349 k€ | 6,93 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 29 | Erlend Dahl Reitan | CB,RM | 29 | Norway | 194 k€ | 6,65 | 2 | 0 | 7/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 2 | Fredrik Mani Pålerud | RM | 32 | Norway | 159 k€ | 6,21 | 0 | 0 | 1/0 |  |
 | 8 | Nikola Jojić | CM | 23 | Serbia | 350 k€ | 6,22 | 0 | 0 | 0/0 |  |
 | 10 | Steve Mvoué | CM | 24 | Cameroon | 494 k€ | 6,81 | 2 | 0 | 4/0 |  |
 | 11 | Eirik Schulze | CM,ST | 33 | Norway | 315 k€ | 6,77 | 1 | 3 | 3/0 |  |
 | 12 | Deni Dashaev | LM | 21 | Norway | 222 k€ | 6,57 | 1 | 0 | 2/0 |  |
 | 18 | Mikael Ugland | CM,RM | 26 | Norway | 394 k€ | 6,96 | 0 | 1 | 3/0 |  |
 | 23 | Erlend Segberg | CM | 29 | Norway | 191 k€ | 7,08 | 2 | 4 | 3/0 |  |
-| 27 | Ousmane Toure | RM,LWB,LM,LB,RWB | 23 | Norway | 401 k€ | 6,67 | 3 | 0 | 3/2 |  |
 | 37 | Filip Lien | Midfielder | 17 | Norway | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 9 | Nicolas Koutsakos | ST,LW,RW | 22 | Cyprus | 1,0 M€ | 6,72 | 0 | 0 | 0/0 |  |
@@ -87,3 +86,5 @@ Tränare: Azar Karadaş. Betyg, mål och assist gäller innevarande säsong enli
 | 17 | Jesper Cornelius | ST | 25 | Denmark | 744 k€ | 6,72 | 5 | 2 | 1/0 |  |
 | 20 | Håkon Lorentzen | ST,CM | 29 | Norway | 371 k€ | 6,67 | 3 | 3 | 0/0 |  |
 | 35 | Santino Samuyiwa | Attacker | 20 | Sweden | 354 k€ | 5,78 | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Ousmane Toure (senast 2026-09-29).

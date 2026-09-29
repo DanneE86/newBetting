@@ -1,6 +1,6 @@
 # Karlsruhe (2. Bundesliga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [BL2](../../ligor/BL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [BL2](../../ligor/BL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -57,7 +57,7 @@ Form (äldst → senast): OFVOFOFF · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Maximilian Senft. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -71,12 +71,11 @@ Tränare: Maximilian Senft. Betyg, mål och assist gäller innevarande säsong e
 | 2 | Sebastian Jung | RB,RM,RWB,CAM | 36 | Germany | 114 k€ | 6,87 | 0 | 0 | 0/0 |  |
 | 3 | Deniz Ofli | LB | 19 | Turkiye | 622 k€ | 6,43 | 0 | 0 | 3/0 |  |
 | 4 | Héliton | CB | 30 | Brazil | 587 k€ | 7,01 | 0 | 0 | 0/0 |  |
-| 4 | Marcel Beifus | CB | 23 | Germany | 1,6 M€ | – | 0 | 0 | 0/0 |  |
 | 15 | Paul Scholl | CB | 20 | Germany | 818 k€ | 6,80 | 0 | 0 | 0/0 |  |
 | 22 | Christoph Kobald | CB | 29 | Austria | 286 k€ | 6,33 | 0 | 0 | 1/0 |  |
 | 24 | Sandro Trémoulet | CB | 26 | Madagascar | 233 k€ | 7,11 | 0 | 0 | 0/0 |  |
 | 28 | Marcel Franke | CB | 33 | Germany | 132 k€ | 6,66 | 0 | 1 | 1/0 |  |
-| 33 | Viktor Bergh | LB,LM,LWB | 27 | Sweden | 253 k€ | 6,44 | 0 | 0 | 0/0 |  |
+| 33 | Viktor Bergh | LB,LWB | 27 | Sweden | 253 k€ | 6,44 | 0 | 0 | 0/0 |  |
 | 36 | Rafael Pinto Pedrosa | RM,RB,RW,RWB,CAM | 18 | Germany | 4,0 M€ | 6,82 | 1 | 0 | 2/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 5 | Hyeok-Kyu Kwon | CM,CDM | 25 | South Korea | 954 k€ | – | 0 | 0 | 0/0 |  |
@@ -87,7 +86,6 @@ Tränare: Maximilian Senft. Betyg, mål och assist gäller innevarande säsong e
 | 23 | Tim Civeja | CDM,CAM,CM | 24 | Germany | 220 k€ | 5,86 | 0 | 0 | 0/0 |  |
 | 25 | Lilian Egloff | CM | 24 | Germany | 828 k€ | 6,78 | 0 | 1 | 1/0 |  |
 | 26 | Danyal Zor | CDM,CM | 19 | Germany | – | 6,75 | 0 | 0 | 0/0 |  |
-| 35 | Robert Geller | Midfielder | 22 | Germany | 175 k€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 9 | Moritz Broschinski | ST | 26 | Germany | 553 k€ | 7,70 | 2 | 0 | 0/0 |  |
 | 13 | Shio Fukuda | ST | 22 | Japan | 820 k€ | 6,84 | 2 | 0 | 0/0 |  |
@@ -95,3 +93,5 @@ Tränare: Maximilian Senft. Betyg, mål och assist gäller innevarande säsong e
 | 19 | Louey Ben Farhat | ST | 20 | Tunisia | 5,1 M€ | 6,68 | 0 | 1 | 0/0 |  |
 | 27 | John Meyer | Attacker | 17 | Germany | – | 5,76 | 0 | 0 | 0/0 |  |
 | 37 | Jason Ponente | RW | 19 | Italy | – | 6,21 | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (2): Marcel Beifus (senast 2026-09-29), Robert Geller (senast 2026-09-29).

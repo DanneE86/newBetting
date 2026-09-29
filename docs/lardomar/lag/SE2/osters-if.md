@@ -1,6 +1,6 @@
 # Östers IF (Superettan) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [SE2](../../ligor/SE2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [SE2](../../ligor/SE2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -29,7 +29,7 @@ Form senaste 8 (äldst → senast): FVVOFFVF · senaste match 2026-09-19
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Daniel Friberg. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -39,7 +39,6 @@ Tränare: Daniel Friberg. Betyg, mål och assist gäller innevarande säsong enl
 | 1 | Carl Lundahl Persson | GK | 26 | Sweden | 131 k€ | – | 0 | 1 | 0/0 |  |
 | 33 | Michael Hartmann | GK | 32 | USA | 120 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Aapo Mäenpää | RB,RM | 28 | Finland | 149 k€ | – | 0 | 0 | 0/0 |  |
 | 2 | Axel Lindahl | RB | 31 | Sweden | 87 k€ | – | 0 | 0 | 0/0 |  |
 | 3 | Kingsley Gyamfi | CB | 22 | Ghana | 174 k€ | – | 1 | 0 | 3/0 |  |
 | 4 | Sebastian Starke Hedlund | CB | 31 | Sweden | 50 k€ | – | 1 | 0 | 1/0 |  |
@@ -66,3 +65,5 @@ Tränare: Daniel Friberg. Betyg, mål och assist gäller innevarande säsong enl
 | 23 | Samuel Burakovsky | LW | 23 | Sweden | 187 k€ | – | 3 | 8 | 1/0 |  |
 | 24 | Noah Ayorinde | Attacker | 18 | Denmark | – | – | 0 | 0 | 0/0 |  |
 | 34 | William Thellsson | ST | 24 | Sweden | 166 k€ | – | 1 | 1 | 1/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Aapo Mäenpää (senast 2026-09-29).

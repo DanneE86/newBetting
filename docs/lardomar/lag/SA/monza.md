@@ -1,6 +1,6 @@
 # Monza (Serie A) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -81,7 +81,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-09-13 | Europa 2607 | Lecce - Monza | 1 | 31 % | 35 % |
 | 2026-09-06 | Europa 2605 | Parma - Monza | X | 30 % | 34 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Ivan Jurić. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

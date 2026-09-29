@@ -1,6 +1,6 @@
 # Cambridge (League One) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -68,33 +68,33 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-09-19 | Stryk 4971 | Oxford - Cambridge | X | 18 % | 27 % |
 | 2026-08-29 | Stryk 4968 | Cambridge - Huddersfield | 2 | 25 % | 35 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Neil Harris. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Jake Eastwood | GK | 29 | England | 165 k€ | 6,85 | 0 | 0 | 0/0 |  |
+| 1 | Jake Eastwood | GK | 29 | England | 165 k€ | 6,86 | 0 | 0 | 0/0 |  |
 | 13 | Gabriel Breeze | GK | 22 | England | 168 k€ | – | 0 | 0 | 0/0 |  |
 | 25 | Ben Hughes | GK | 22 | Wales | 174 k€ | – | 0 | 0 | 0/0 |  |
 | 31 | JJ Briggs | Keeper | 0 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 3 | Callum Perry | CB,LB | 20 | England | – | 6,86 | 0 | 1 | 2/0 |  |
 | 5 | Patrick Bauer | CB | 33 | Germany | 133 k€ | 6,09 | 0 | 0 | 0/0 |  |
-| 6 | Kelland Watts | CB | 26 | England | 284 k€ | 7,34 | 2 | 0 | 2/0 |  |
-| 15 | Cathal Heffernan | CB | 21 | Ireland | 176 k€ | 6,73 | 0 | 0 | 1/0 |  |
-| 22 | Zak Bradshaw | LWB,LB,CB | 23 | England | 260 k€ | 7,22 | 2 | 1 | 2/0 |  |
+| 6 | Kelland Watts | CB | 26 | England | 284 k€ | 7,31 | 2 | 0 | 2/0 |  |
+| 15 | Cathal Heffernan | CB | 21 | Ireland | 176 k€ | 6,69 | 0 | 0 | 1/0 |  |
+| 22 | Zak Bradshaw | LWB,LB,CB | 23 | England | 260 k€ | 7,20 | 2 | 1 | 2/0 |  |
 | 29 | Sam Curtis | RB | 20 | Ireland | 763 k€ | 6,97 | 0 | 0 | 1/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 2 | Liam Bennett | RWB,RB,RM | 24 | England | 399 k€ | 6,98 | 1 | 0 | 1/0 |  |
-| 4 | Dominic Ball | CDM,CM | 31 | England | 153 k€ | 7,24 | 0 | 1 | 2/0 |  |
-| 7 | Isaac Heath | LWB,CAM,LW,LM | 21 | England | 469 k€ | 6,66 | 1 | 0 | 0/0 |  |
+| 4 | Dominic Ball | CDM,CM | 31 | England | 153 k€ | 7,25 | 0 | 1 | 2/0 |  |
+| 7 | Isaac Heath | LWB,CAM,LW,LM | 21 | England | 469 k€ | 6,65 | 1 | 0 | 0/0 |  |
 | 8 | Owen Moxon | CDM,CM,CAM | 28 | England | 355 k€ | 6,99 | 0 | 1 | 0/0 |  |
-| 10 | Ben Knight | CAM,RW,ST | 24 | England | 365 k€ | 7,18 | 3 | 0 | 1/0 |  |
+| 10 | Ben Knight | CAM,RW,ST | 24 | England | 365 k€ | 7,15 | 3 | 0 | 1/0 |  |
 | 11 | Sullay Kaikai | CAM,LW,RM,LM | 31 | Sierra Leone | 151 k€ | 7,04 | 1 | 1 | 0/0 |  |
 | 12 | Callum Stead | CAM,RM | 26 | England | 325 k€ | – | 0 | 0 | 0/0 |  |
-| 17 | Pelly-Ruddock Mpanzu | CDM,CAM,CM | 32 | DR Congo | 237 k€ | 6,58 | 0 | 2 | 1/0 |  |
+| 17 | Pelly-Ruddock Mpanzu | CDM,CAM,CM | 32 | DR Congo | 237 k€ | 6,57 | 0 | 2 | 1/0 |  |
 | 21 | Shane McLoughlin | CDM,CAM | 29 | England | 143 k€ | 6,85 | 0 | 0 | 0/0 |  |
 | 27 | Glenn McConnell | CAM,LW | 21 | England | 301 k€ | 6,20 | 0 | 0 | 0/0 |  |
 | 30 | Lohan McDougald | Midfielder | 17 | England | – | – | 0 | 0 | 0/0 |  |

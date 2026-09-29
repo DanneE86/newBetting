@@ -1,6 +1,6 @@
 # Elfsborg (Allsvenskan) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [AS](../../ligor/AS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [AS](../../ligor/AS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -72,7 +72,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-10-19 | Europa 2515 | Elfsborg - Öster | 1 ✓ | 55 % | 53 % |
 | 2025-09-14 | Europa 2505 | Elfsborg - Malmö | X | 20 % | 28 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Björn Hamberg. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -87,14 +87,13 @@ Tränare: Björn Hamberg. Betyg, mål och assist gäller innevarande säsong enl
 | | **Backar** | | | | | | | | | |
 | 2 | Viggo Elfström | CB | 19 | Sweden | – | – | 0 | 0 | 0/0 |  |
 | 3 | Jonathan Esenga | LB,CB | 19 | England | – | – | 0 | 0 | 0/0 |  |
-| 4 | Daniel Granli | CB | 32 | Norway | 131 k€ | – | 0 | 0 | 0/0 |  |
 | 4 | Thomas Isherwood | CB,LB | 28 | Sweden | 506 k€ | 7,00 | 0 | 1 | 1/0 |  |
 | 6 | Rasmus Wikström | CB,RB | 25 | Sweden | 1,0 M€ | 7,08 | 1 | 0 | 3/0 |  |
 | 8 | Sebastian Holmén | CB | 34 | Sweden | 184 k€ | 6,85 | 0 | 0 | 4/0 |  |
 | 23 | Niklas Hult | LB,LM | 36 | Sweden | 174 k€ | 7,21 | 1 | 2 | 2/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 5 | Ossian Nordvall | CDM | 19 | Sweden | 523 k€ | 6,41 | 0 | 0 | 0/0 |  |
-| 7 | Marcus Rohdén | RM,CM,CAM,CDM,RW | 35 | Sweden | 153 k€ | 6,16 | 0 | 0 | 0/0 |  |
+| 7 | Marcus Rohdén | RM,CM,CAM,RW | 35 | Sweden | 153 k€ | 6,16 | 0 | 0 | 0/0 |  |
 | 10 | Simon Olsson | CDM,CM | 29 | Sweden | 1,4 M€ | 7,13 | 2 | 2 | 3/0 |  |
 | 14 | Gabríel Gunnarsson | LM | 18 | Iceland | 430 k€ | – | 0 | 0 | 0/0 |  |
 | 15 | Simon Hedlund | RM,RW | 33 | Sweden | 208 k€ | 6,53 | 0 | 1 | 0/0 |  |
@@ -110,3 +109,5 @@ Tränare: Björn Hamberg. Betyg, mål och assist gäller innevarande säsong enl
 | 22 | Dion Krasniqi | ST | 23 | Sweden | 268 k€ | – | 0 | 0 | 0/0 |  |
 | 25 | Ari Sigurpálsson | LW | 23 | Iceland | 464 k€ | 6,49 | 4 | 0 | 1/0 |  |
 | 29 | Momoh Kamara | RW,CM | 21 | Sierra Leone | – | 7,15 | 5 | 3 | 1/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Daniel Granli (senast 2026-09-29).

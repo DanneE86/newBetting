@@ -1,6 +1,6 @@
 # Arsenal (Premier League) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -112,11 +112,11 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-08-31 | Europa 2501 | Liverpool - Arsenal | 1 | 27 % | 32 % |
 | 2025-08-17 | Europa 2497 | Manchester United - Arsenal | 2 ✓ | 54 % | 49 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Mikel Arteta. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** William Saliba (skadad, åter Mid October 2026), Cristhian Mosquera (osäker), Ben White (osäker), Declan Rice (skadad, åter Mid October 2026), Kai Havertz (skadad, åter About 1-2 weeks)
+**Skadade/borta nu:** William Saliba (skadad, åter Mid October 2026), Cristhian Mosquera (osäker), Ben White (osäker), Ezri Konsa (osäker), Martin Ødegaard (osäker), Declan Rice (osäker), Kai Havertz (skadad, åter Late October 2026)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -131,20 +131,20 @@ Tränare: Mikel Arteta. Betyg, mål och assist gäller innevarande säsong enlig
 | 5 | Piero Hincapié | LB,CB | 24 | Ecuador | 46,0 M€ | 6,34 | 0 | 0 | 0/0 |  |
 | 6 | Gabriel | CB | 28 | Brazil | 82,6 M€ | 7,18 | 0 | 0 | 2/0 |  |
 | 12 | Jurriën Timber | RB,CB,LB | 25 | Netherlands | 57,6 M€ | 6,24 | 0 | 0 | 0/0 |  |
-| 15 | Ezri Konsa | CB,RB | 28 | England | 32,1 M€ | 6,70 | 0 | 0 | 0/0 |  |
+| 15 | Ezri Konsa | CB,RB | 28 | England | 32,1 M€ | 6,70 | 0 | 0 | 0/0 | osäker |
 | 33 | Riccardo Calafiori | LB,CB | 24 | Italy | 45,2 M€ | 6,98 | 0 | 2 | 0/0 |  |
 | 49 | Myles Lewis-Skelly | LB,CDM,CM | 20 | England | 37,7 M€ | 6,70 | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 8 | Martin Ødegaard | CM,CAM | 27 | Norway | 59,3 M€ | 7,60 | 2 | 0 | 0/0 |  |
+| 8 | Martin Ødegaard | CM,CAM | 27 | Norway | 59,3 M€ | 7,60 | 2 | 0 | 0/0 | osäker |
 | 10 | Eberechi Eze | CAM,CM,LW,CDM | 28 | England | 44,6 M€ | 6,32 | 0 | 0 | 0/0 |  |
 | 23 | Mikel Merino | CM,ST,CDM | 30 | Spain | 24,4 M€ | 6,37 | 0 | 0 | 1/0 |  |
 | 36 | Martín Zubimendi | CDM,CM,RB | 27 | Spain | 56,1 M€ | 6,13 | 0 | 0 | 0/0 |  |
 | 39 | Bruno Guimarães | CM,CDM,CAM | 28 | Brazil | 51,1 M€ | 6,61 | 1 | 0 | 0/0 |  |
-| 41 | Declan Rice | CDM,CM | 27 | England | 93,0 M€ | 7,55 | 0 | 2 | 1/0 | skadad, åter Mid October 2026 |
+| 41 | Declan Rice | CDM,CM | 27 | England | 93,0 M€ | 7,55 | 0 | 2 | 1/0 | osäker |
 | 56 | Max Dowman | RW,CAM,CM | 16 | England | 7,5 M€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Bukayo Saka | RW,CAM | 25 | England | 84,8 M€ | 7,94 | 3 | 0 | 0/0 |  |
 | 14 | Viktor Gyökeres | ST | 28 | Sweden | 49,2 M€ | 6,04 | 0 | 0 | 0/0 |  |
-| 17 | Christos Tzolis | LW,LM,CAM | 24 | Greece | 23,9 M€ | 7,13 | 0 | 1 | 2/0 |  |
+| 17 | Christos Tzolis | LW,CAM,RW,LM | 24 | Greece | 23,9 M€ | 7,13 | 0 | 1 | 2/0 |  |
 | 20 | Noni Madueke | RW | 24 | England | 49,7 M€ | 7,28 | 0 | 0 | 0/0 |  |
-| 29 | Kai Havertz | ST,CAM,CM | 27 | Germany | 44,3 M€ | 7,21 | 2 | 0 | 1/0 | skadad, åter About 1-2 weeks |
+| 29 | Kai Havertz | ST,CAM,CM | 27 | Germany | 44,3 M€ | 7,21 | 2 | 0 | 1/0 | skadad, åter Late October 2026 |

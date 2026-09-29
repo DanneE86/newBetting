@@ -1,6 +1,6 @@
 # Tranmere (League Two) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -68,7 +68,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 |---|---|---|---|---|---|
 | 2026-05-02 | Stryk 4951 | Tranmere - Grimsby | X | 24 % | 28 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Darrell Clarke. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -80,13 +80,12 @@ Tränare: Darrell Clarke. Betyg, mål och assist gäller innevarande säsong enl
 | 13 | Coniah Boyce-Clarke | GK | 23 | Jamaica | 137 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 |  | Jack McEvilly | CB | 20 | England | – | – | 0 | 0 | 0/0 |  |
-|  | Jason Lowe | CB | 35 | England | 73 k€ | – | 0 | 0 | 0/0 |  |
 | 2 | Joel Senior | RB,RWB,RM | 27 | England | 214 k€ | 6,97 | 0 | 1 | 1/0 |  |
-| 3 | Jacob Slater | LB,LWB | 21 | England | 333 k€ | 7,16 | 0 | 1 | 3/0 |  |
+| 3 | Jacob Slater | LB,LWB | 21 | England | 333 k€ | 7,19 | 0 | 1 | 3/0 |  |
 | 4 | Jordan Turnbull | CB | 31 | England | 92 k€ | 7,15 | 0 | 0 | 0/0 |  |
-| 5 | Nathan Smith | CB | 30 | England | 115 k€ | 7,18 | 0 | 0 | 3/0 |  |
+| 5 | Nathan Smith | CB | 30 | England | 115 k€ | 7,19 | 0 | 0 | 3/0 |  |
 | 14 | Oliver Scott | LB,CM | 25 | England | – | – | 0 | 0 | 0/0 |  |
-| 16 | Bobby Faulkner | CB | 22 | England | 216 k€ | 7,49 | 1 | 1 | 1/1 |  |
+| 16 | Bobby Faulkner | CB | 22 | England | 216 k€ | 7,51 | 1 | 1 | 1/1 |  |
 | 22 | Lee O'Connor | CB,CDM | 26 | Ireland | 129 k€ | 6,03 | 0 | 0 | 0/0 |  |
 | 23 | Patrick Brough | CB,LWB,LB | 30 | England | 109 k€ | 6,90 | 0 | 0 | 0/0 |  |
 | 30 | George Nevett | CB | 20 | Wales | 621 k€ | 6,55 | 0 | 0 | 0/0 |  |
@@ -94,19 +93,20 @@ Tränare: Darrell Clarke. Betyg, mål och assist gäller innevarande säsong enl
 | 6 | Will Vaulks | CDM | 33 | Wales | 247 k€ | 7,46 | 0 | 1 | 1/0 |  |
 | 7 | Charlie Whitaker | CAM,LW,ST,CM | 23 | England | 183 k€ | 6,92 | 1 | 0 | 1/0 |  |
 | 8 | Sam Finley | CDM,CM,CAM | 34 | England | 95 k€ | 6,71 | 0 | 0 | 1/0 |  |
-| 10 | Thomas Ince | CAM,RM,LM,RW | 34 | England | 199 k€ | 7,29 | 2 | 1 | 2/0 |  |
-| 11 | Tom Conlon | CDM,CAM | 30 | England | 85 k€ | 7,13 | 0 | 0 | 0/0 |  |
+| 10 | Thomas Ince | CAM,RM,LM,RW | 34 | England | 199 k€ | 7,31 | 2 | 1 | 2/0 |  |
+| 11 | Tom Conlon | CDM,CAM | 30 | England | 85 k€ | 7,11 | 0 | 0 | 0/0 |  |
 | 20 | Charlie Veevers | CM,CAM | 21 | England | – | – | 0 | 0 | 0/0 |  |
-| 21 | Josh Williams | CM | 22 | Wales | – | – | 0 | 0 | 0/0 |  |
 | 25 | Lewis Warrington | CDM,CM | 23 | England | 318 k€ | – | 0 | 0 | 0/0 |  |
-| 26 | James Plant | RWB,RM,LM,RW,CDM,LWB | 21 | England | 222 k€ | – | 0 | 0 | 0/0 |  |
+| 26 | James Plant | RWB,RM,RW,LM,CDM,LWB | 21 | England | 222 k€ | – | 0 | 0 | 0/0 |  |
 | 44 | Ryan Watson | CDM | 33 | England | 65 k€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 9 | Joe Ironside | ST | 32 | England | 203 k€ | 6,67 | 1 | 1 | 1/0 |  |
-| 15 | Jordan Davies | RW,CM | 28 | Wales | 95 k€ | 6,66 | 1 | 0 | 1/0 |  |
-| 17 | Zane Okoro | RW | 19 | England | 884 k€ | 6,65 | 2 | 1 | 1/0 |  |
+| 9 | Joe Ironside | ST | 32 | England | 203 k€ | 6,66 | 1 | 1 | 1/0 |  |
+| 15 | Jordan Davies | RW | 28 | Wales | 95 k€ | 6,66 | 1 | 0 | 1/0 |  |
+| 17 | Zane Okoro | RW | 19 | England | 884 k€ | 6,63 | 2 | 1 | 1/0 |  |
 | 18 | Connor Jennings | ST,CAM | 34 | England | 145 k€ | – | 0 | 0 | 0/0 |  |
 | 19 | Courtney Baker-Richardson | ST | 30 | England | 212 k€ | – | 0 | 0 | 0/0 |  |
 | 24 | David Kamara | ST | 20 | England | – | 6,38 | 0 | 0 | 0/0 |  |
 | 27 | Sam Mann | Attacker | 19 | England | – | – | 0 | 0 | 0/0 |  |
-| 29 | Dylan Jones | ST,CAM | 21 | England | – | 6,67 | 2 | 0 | 1/0 |  |
+| 29 | Dylan Jones | ST,CAM | 21 | England | – | 6,68 | 2 | 0 | 1/0 |  |
+
+Har lämnat truppen sedan vi började spara (2): Jason Lowe (senast 2026-09-29), Josh Williams (senast 2026-09-29).

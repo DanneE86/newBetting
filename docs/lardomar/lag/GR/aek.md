@@ -1,6 +1,6 @@
 # AEK (Super League (Grekland)) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [GR](../../ligor/GR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [GR](../../ligor/GR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -44,7 +44,7 @@ Form (äldst → senast): VOOVOVOV · senaste match 2026-09-20
 | PAOK | 29 | 7-12-10 | 35–34 | −0,27 | +13 pe | 2026-05-13 1-1 (b) |
 | Aris | 27 | 16-6-5 | 51–24 | +0,09 | −3 pe | 2026-09-05 5-0 (h) |
 | Asteras Tripolis | 18 | 13-5-0 | 37–13 | +0,36 | +5 pe | 2026-09-13 1-1 (b) |
-| OFI Crete | 18 | 14-1-3 | 36–11 | +0,18 | −14 pe | 2025-12-21 2-1 (h) |
+| OFI Crete | 17 | 13-1-3 | 33–11 | +0,12 | −13 pe | 2025-12-21 2-1 (h) |
 | Volos NFC | 17 | 12-2-3 | 38–17 | −0,11 | −6 pe | 2026-09-20 2-1 (b) |
 | Atromitos | 16 | 13-1-2 | 30–11 | +0,35 | −15 pe | 2026-03-15 2-2 (b) |
 | Panetolikos | 16 | 12-1-3 | 34–10 | +0,02 | −13 pe | 2025-12-14 5-0 (b) |
@@ -54,7 +54,7 @@ Form (äldst → senast): VOOVOVOV · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Marko Nikolić. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

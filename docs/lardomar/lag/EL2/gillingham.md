@@ -1,6 +1,6 @@
 # Gillingham (League Two) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -40,10 +40,10 @@ Form (äldst → senast): FOOOVVVF · senaste match 2026-09-26
 | Accrington | 12 | 6-4-2 | 12–8 | +0,50 | +5 pe | 2026-04-06 2-0 (h) |
 | Crewe | 12 | 5-3-4 | 10–10 | +0,14 | −4 pe | 2026-02-14 0-1 (b) |
 | Fleetwood Town | 12 | 1-6-5 | 9–12 | −0,44 | +21 pe | 2026-08-22 0-0 (b) |
-| Shrewsbury | 10 | 2-6-2 | 11–11 | −0,09 | +31 pe | 2026-05-02 1-0 (h) |
 | Swindon | 10 | 3-5-2 | 13–12 | +0,11 | +22 pe | 2026-03-17 0-2 (h) |
 | Tranmere | 10 | 4-4-2 | 15–12 | +0,17 | +10 pe | 2026-09-12 2-0 (h) |
 | Walsall | 10 | 1-5-4 | 6–16 | −0,48 | +21 pe | 2026-08-15 0-3 (h) |
+| Shrewsbury | 9 | 2-5-2 | 9–9 | −0,11 | +26 pe | 2026-05-02 1-0 (h) |
 | Bristol Rvs | 8 | 5-1-2 | 12–5 | +0,74 | −16 pe | 2026-09-19 3-0 (h) |
 | Colchester | 8 | 2-3-3 | 5–8 | −0,22 | +8 pe | 2025-12-29 1-1 (h) |
 | Grimsby | 8 | 1-3-4 | 6–12 | −0,50 | +9 pe | 2026-04-18 1-4 (h) |
@@ -62,20 +62,18 @@ Form (äldst → senast): FOOOVVVF · senaste match 2026-09-26
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Gareth Ainsworth. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-|  | Glenn Morris | GK | 42 | England | 117 k€ | – | 0 | 0 | 0/0 |  |
 | 1 | Oliver Wright | GK | 23 | England | 278 k€ | 6,92 | 0 | 0 | 0/0 |  |
 | 13 | Taite Holtam | GK | 21 | England | 166 k€ | – | 0 | 0 | 0/0 |  |
 | 25 | Lennon MacLorg | GK | 20 | England | – | – | 0 | 0 | 0/0 |  |
 | 40 | Rohan Luthra | GK | 24 | England | 175 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-|  | Max Clark | LB,LWB | 30 | England | 136 k€ | – | 0 | 0 | 0/0 |  |
 | 2 | Samuel Tabares | CB | 21 | England | – | – | 0 | 0 | 0/0 |  |
 | 4 | Liam Gordon | CB | 30 | Scotland | 188 k€ | 6,38 | 0 | 0 | 0/0 |  |
 | 5 | Andrew Smith | CB | 25 | England | – | 7,03 | 0 | 1 | 1/0 |  |
@@ -101,7 +99,6 @@ Tränare: Gareth Ainsworth. Betyg, mål och assist gäller innevarande säsong e
 | 34 | Eli King | CDM | 23 | Wales | 342 k€ | 7,28 | 0 | 1 | 1/0 |  |
 | 35 | Zech Obiero | CAM,CDM | 21 | Kenya | 380 k€ | 6,28 | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-|  | Sam Vokes | ST | 36 | Wales | 119 k€ | – | 0 | 0 | 0/0 |  |
 | 7 | Kadeem Harris | LW,LWB,LM | 33 | England | 85 k€ | 6,23 | 0 | 0 | 2/0 |  |
 | 9 | Will Goodwin | ST | 24 | England | 244 k€ | 6,45 | 0 | 0 | 1/0 |  |
 | 10 | Ronan Hale | ST,LW,CAM | 28 | Northern Ireland | 218 k€ | 6,99 | 2 | 1 | 1/0 |  |
@@ -110,3 +107,5 @@ Tränare: Gareth Ainsworth. Betyg, mål och assist gäller innevarande säsong e
 | 18 | Sheldon Kendall | RW | 18 | England | – | 6,07 | 2 | 0 | 0/0 |  |
 | 30 | Sullivan Booth | LW | 17 | England | – | – | 0 | 0 | 0/0 |  |
 | 34 | Stan Sargent | Attacker | 0 | England | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (3): Glenn Morris (senast 2026-09-29), Sam Vokes (senast 2026-09-29), Max Clark (senast 2026-09-29).

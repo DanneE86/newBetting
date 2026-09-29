@@ -1,6 +1,6 @@
 # Sudtirol (Serie B) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [SB](../../ligor/SB.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [SB](../../ligor/SB.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -53,7 +53,7 @@ Form (äldst → senast): FFOVOVOV · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Davide Possanzini. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -62,17 +62,13 @@ Tränare: Davide Possanzini. Betyg, mål och assist gäller innevarande säsong 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Daniele Borra | GK | 31 | Italy | 139 k€ | – | 0 | 0 | 0/0 |  |
 | 1 | Lukas Ploner | Keeper | 0 | Italy | – | – | 0 | 0 | 0/0 |  |
 | 12 | Rok Vadjunec | Keeper | 20 | Slovenia | – | – | 0 | 0 | 0/0 |  |
 | 22 | Alessandro Plizzari | GK | 26 | Italy | 791 k€ | 7,49 | 0 | 0 | 0/0 |  |
-| 22 | Lorenzo Bonifacio | Keeper | 19 | Italy | – | – | 0 | 0 | 0/0 |  |
-| 31 | Marius Adamonis | GK | 29 | Lithuania | 586 k€ | – | 0 | 0 | 0/0 |  |
 | 32 | Tommaso Laureti | Keeper | 17 | Italy | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 3 | Davide Veroli | CB | 23 | Italy | 1,0 M€ | 6,71 | 0 | 0 | 0/0 |  |
 | 4 | Riccardo Stivanello | CB | 22 | Italy | 678 k€ | 6,95 | 0 | 0 | 0/0 |  |
-| 5 | Andrea Masiello | CB | 40 | Italy | 159 k€ | – | 0 | 0 | 0/0 |  |
 | 13 | Carlo Sabatini | Defender | 19 | Italy | – | – | 0 | 0 | 0/0 |  |
 | 13 | Marco Varnier | CB | 28 | Italy | 300 k€ | – | 0 | 0 | 0/0 |  |
 | 19 | Mattia Pellini | CB | 19 | Italy | – | – | 0 | 0 | 0/0 |  |
@@ -99,3 +95,5 @@ Tränare: Davide Possanzini. Betyg, mål och assist gäller innevarande säsong 
 | 11 | Vasco Lopes | RW,LW,RM,CAM | 27 | Cape Verde | 356 k€ | 7,11 | 1 | 1 | 1/0 |  |
 | 25 | Kenny Mixtur | ST | 22 | Guadeloupe | 315 k€ | 6,60 | 2 | 0 | 1/0 |  |
 | 90 | Alvin Okoro | ST,LW | 21 | Italy | 1,4 M€ | 6,91 | 1 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (4): Andrea Masiello (senast 2026-09-29), Daniele Borra (senast 2026-09-29), Marius Adamonis (senast 2026-09-29), Lorenzo Bonifacio (senast 2026-09-29).

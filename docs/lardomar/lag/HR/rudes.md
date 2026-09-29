@@ -1,6 +1,6 @@
 # Rudeš (HNL) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [HR](../../ligor/HR.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [HR](../../ligor/HR.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -12,7 +12,7 @@ Form senaste 8 (äldst → senast): FFFVFFFO · senaste match 2026-09-18
 |---|---|---|---|---|---|---|---|
 | 2026/27 | 8 | 0,50 | 1,00 | 0,00 | 13 % | 1,25–3,00 | 88 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Alen Peternac. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -26,7 +26,6 @@ Tränare: Alen Peternac. Betyg, mål och assist gäller innevarande säsong enli
 | 95 | Lovre Rogić | GK | 31 | Croatia | 78 k€ | 6,33 | 0 | 0 | 1/0 |  |
 | | **Backar** | | | | | | | | | |
 | 2 | Toni Kolega | LB,RW,CB | 27 | Croatia | 141 k€ | 6,55 | 0 | 0 | 1/0 |  |
-| 3 | Nikica Peranović | Defender | 20 | Croatia | – | – | 0 | 0 | 0/0 |  |
 | 4 | Vedran Celjak | CB | 35 | Croatia | 72 k€ | 6,47 | 0 | 1 | 0/0 |  |
 | 5 | Marko Stolnik | CB | 30 | Croatia | 117 k€ | 6,14 | 0 | 0 | 1/1 |  |
 | 14 | Bruno Unušić | RB,LB | 24 | Croatia | 212 k€ | 6,17 | 0 | 0 | 1/0 |  |
@@ -58,3 +57,5 @@ Tränare: Alen Peternac. Betyg, mål och assist gäller innevarande säsong enli
 | 34 | Kristijan Lovrić | LW | 30 | Croatia | 72 k€ | 5,78 | 0 | 0 | 1/0 |  |
 | 35 | Josip Bralić | Attacker | 18 | Switzerland | – | 6,86 | 1 | 0 | 1/0 |  |
 | 89 | Allyson | Attacker | 25 | Brazil | 173 k€ | – | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
+
+Har lämnat truppen sedan vi började spara (1): Nikica Peranović (senast 2026-09-29).

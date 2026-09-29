@@ -1,6 +1,6 @@
 # Gimnasia L.P. (Liga Profesional) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -72,7 +72,7 @@ Form (äldst → senast): VVFFVVOO · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Ariel Pereyra. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -94,8 +94,8 @@ Tränare: Ariel Pereyra. Betyg, mål och assist gäller innevarande säsong enli
 | 21 | Enzo Martínez | CB | 28 | Uruguay | 892 k€ | – | 0 | 0 | 0/0 |  |
 | 22 | Matías Melluso | LB | 28 | Argentina | 257 k€ | – | 0 | 0 | 0/0 |  |
 | 24 | Pedro Silva Torrejón | LB | 29 | Argentina | 715 k€ | – | 0 | 0 | 0/0 |  |
-| 25 | Alexis Steimbach | RB,RM,CM | 24 | Argentina | 1,1 M€ | – | 0 | 0 | 0/0 |  |
-| 28 | Fabricio Corbalán | RB | 22 | Argentina | 430 k€ | – | 0 | 0 | 0/0 |  |
+| 25 | Alexis Steimbach | RB,RM | 24 | Argentina | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 28 | Fabricio Corbalán | RB | 23 | Argentina | 430 k€ | – | 0 | 0 | 0/0 |  |
 | 31 | Bautista Barros Schelotto | RB,LB | 26 | Argentina | 316 k€ | – | 0 | 0 | 0/0 |  |
 | 35 | Juan Cortazzo | CB | 20 | Argentina | 722 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 36 | Lucas Lamella | Defender | 16 | Argentina | – | – | 0 | 0 | 0/0 |  |
@@ -103,17 +103,15 @@ Tränare: Ariel Pereyra. Betyg, mål och assist gäller innevarande säsong enli
 | 46 | Alejo Gelsomino | Defender | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 5 | Ignacio Miramón | CDM,CM | 23 | Argentina | 1,3 M€ | – | 0 | 0 | 0/0 |  |
-| 8 | Ignacio Fernández | CAM,RW,CM,RM | 36 | Argentina | 296 k€ | – | 0 | 0 | 0/0 |  |
 | 10 | Nicolás Barros Schelotto | CDM,CAM,CM,LM | 20 | Argentina | 1,4 M€ | – | 0 | 0 | 0/0 |  |
 | 16 | Augusto Max | CDM,CM,CB | 34 | Argentina | 283 k€ | – | 0 | 0 | 0/0 |  |
-| 18 | Mateo Seoane | CDM,CM,RM | 22 | Argentina | 553 k€ | – | 0 | 0 | 0/0 |  |
+| 18 | Mateo Seoane | CDM,RM | 22 | Argentina | 553 k€ | – | 0 | 0 | 0/0 |  |
 | 33 | Pablo Aguiar | CDM | 20 | Paraguay | 486 k€ | – | 0 | 0 | 0/0 |  |
 | 34 | Leandro Mamut | CM | 22 | Argentina | 481 k€ | – | 0 | 0 | 0/0 |  |
 | 39 | Facundo Di Biasi | CM | 21 | Argentina | 910 k€ | – | 0 | 0 | 0/0 |  |
 | 42 | Santiago Villarreal | Midfielder | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Manuel Panaro | LW,RW | 23 | Argentina | 1,8 M€ | – | 0 | 0 | 0/0 |  |
-| 9 | Ivo Mammini | ST | 23 | Argentina | 382 k€ | – | 0 | 0 | 0/0 |  |
 | 11 | Jeremías Merlo | LW,RW | 20 | Argentina | 1,4 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 17 | Lucas Janson | LW,ST | 32 | Argentina | 381 k€ | – | 0 | 0 | 0/0 |  |
 | 19 | Agustín Colazo | ST | 25 | Argentina | 570 k€ | – | 0 | 0 | 0/0 |  |
@@ -122,3 +120,5 @@ Tränare: Ariel Pereyra. Betyg, mål och assist gäller innevarande säsong enli
 | 29 | Agustín Auzmendi | ST | 29 | Argentina | 705 k€ | – | 0 | 0 | 0/0 |  |
 | 32 | Marcelo Torres | ST | 28 | Argentina | 1,6 M€ | – | 0 | 0 | 0/0 |  |
 | 43 | Maximiliano Zalazar | RW | 25 | Argentina | 540 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (2): Ignacio Fernández (senast 2026-09-29), Ivo Mammini (senast 2026-09-29).

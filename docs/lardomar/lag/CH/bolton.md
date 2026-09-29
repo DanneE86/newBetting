@@ -1,6 +1,6 @@
 # Bolton (Championship) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -40,7 +40,7 @@ Form (äldst → senast): VOFFFFVV · senaste match 2026-09-20
 | Lincoln | 12 | 6-3-3 | 19–14 | +0,26 | −2 pe | 2026-08-29 0-1 (h) |
 | Charlton | 8 | 5-1-2 | 17–11 | +0,47 | −15 pe | 2025-01-21 1-2 (h) |
 | Portsmouth | 8 | 1-2-5 | 6–10 | −0,58 | −1 pe | 2024-04-13 1-1 (h) |
-| Derby | 6 | 2-1-3 | 4–8 | +0,05 | −10 pe | 2024-03-16 0-1 (b) |
+| Derby | 5 | 1-1-3 | 3–8 | −0,35 | −7 pe | 2024-03-16 0-1 (b) |
 | Birmingham | 3 | 2-0-1 | 4–3 | +1,15 | −25 pe | 2025-03-04 3-1 (h) |
 | Cardiff | 3 | 2-0-1 | 2–2 | +0,67 | −25 pe | 2026-09-12 1-0 (h) |
 | Millwall | 3 | 1-1-1 | 3–6 | +0,42 | +6 pe | 2026-09-05 0-4 (b) |
@@ -67,7 +67,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-08-29 | Stryk 4968 | Bolton - Lincoln | 2 | 46 % | 38 % |
 | 2026-08-22 | Stryk 4967 | Queens Park Rangers - Bolton | X | 17 % | 25 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Steven Schumacher. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -89,7 +89,7 @@ Tränare: Steven Schumacher. Betyg, mål och assist gäller innevarande säsong 
 | | **Mittfältare** | | | | | | | | | |
 | 4 | Xavier Simons | CDM,CM | 23 | England | 1,0 M€ | 6,92 | 1 | 0 | 0/0 |  |
 | 8 | Josh Sheehan | CDM,CM | 31 | Wales | 438 k€ | 6,90 | 0 | 0 | 1/1 |  |
-| 12 | David Watson | CM,CDM,CAM,LM,RW | 21 | Scotland | 2,0 M€ | 5,88 | 0 | 0 | 0/0 |  |
+| 12 | David Watson | CM,CDM,CAM,LM | 21 | Scotland | 2,0 M€ | 5,88 | 0 | 0 | 0/0 |  |
 | 17 | Atsuki Ito | CDM,CAM,RM,CM | 28 | Japan | 1,6 M€ | 6,54 | 1 | 0 | 0/0 |  |
 | 20 | Rúben Rodrigues | CAM,CDM | 30 | Portugal | 255 k€ | 7,14 | 1 | 1 | 0/0 |  |
 | 21 | Ethan Erhahon | CDM | 25 | Scotland | 877 k€ | 7,23 | 1 | 0 | 0/0 |  |

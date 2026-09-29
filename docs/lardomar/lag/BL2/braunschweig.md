@@ -1,6 +1,6 @@
 # Braunschweig (2. Bundesliga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [BL2](../../ligor/BL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [BL2](../../ligor/BL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -52,7 +52,7 @@ Form (äldst → senast): VFVFFFOF · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Lars Kornetka. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -78,12 +78,10 @@ Tränare: Lars Kornetka. Betyg, mål och assist gäller innevarande säsong enli
 | 29 | Lukas Frenkert | CB | 26 | Germany | 466 k€ | 6,35 | 0 | 0 | 0/0 |  |
 | 43 | Damjan Kovacevic | RWB,CM | 22 | Austria | 597 k€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-|  | Léon Bell | LWB,LB | 30 | Cameroon | 211 k€ | – | 0 | 0 | 0/0 |  |
 |  | Leonard Laatsch | Midfielder | 20 | Germany | – | – | 0 | 0 | 0/0 |  |
 | 6 | Florian Flick | CDM,CM,CB | 26 | Germany | 487 k€ | 7,22 | 1 | 0 | 3/0 |  |
 | 10 | Samuele Di Benedetto | CDM,CAM,RW,CM | 21 | Germany | 927 k€ | 6,79 | 1 | 1 | 2/0 |  |
 | 15 | Max Marie | CDM,CM,CAM,LW | 21 | Germany | 1,4 M€ | 7,33 | 0 | 2 | 1/0 |  |
-| 18 | Anas Bakhat | ST | 26 | Germany | 194 k€ | – | 0 | 0 | 0/0 |  |
 | 20 | Lino Tempelmann | CAM,CM | 27 | Germany | 560 k€ | 5,94 | 0 | 0 | 1/0 |  |
 | 30 | Robin Heußer | CAM,CDM | 28 | Germany | 240 k€ | – | 0 | 0 | 0/0 | skadad, åter Unknown |
 | 37 | Sidney Raebiger | LWB | 21 | Germany | 308 k€ | – | 0 | 0 | 0/0 |  |
@@ -95,3 +93,5 @@ Tränare: Lars Kornetka. Betyg, mål och assist gäller innevarande säsong enli
 | 19 | Junior Zé | RW | 20 | Switzerland | 1,7 M€ | 6,44 | 0 | 0 | 0/0 |  |
 | 24 | Sidi Sané | CAM,ST | 23 | Germany | 331 k€ | 6,57 | 0 | 0 | 0/0 |  |
 | 27 | Jan Urbich | ST | 22 | Germany | 309 k€ | 6,77 | 3 | 1 | 1/0 |  |
+
+Har lämnat truppen sedan vi började spara (2): Léon Bell (senast 2026-09-29), Anas Bakhat (senast 2026-09-29).

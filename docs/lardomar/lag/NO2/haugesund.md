@@ -1,6 +1,6 @@
 # Haugesund (OBOS-ligaen) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [NO2](../../ligor/NO2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [NO2](../../ligor/NO2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -27,7 +27,7 @@ Form senaste 8 (äldst → senast): VVFVVVVV · senaste match 2026-09-20
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Endre Eide. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -42,7 +42,7 @@ Tränare: Endre Eide. Betyg, mål och assist gäller innevarande säsong enligt 
 | | **Backar** | | | | | | | | | |
 | 3 | Stian Stray Molde | CB,LB | 29 | Norway | 161 k€ | – | 0 | 0 | 1/0 |  |
 | 4 | Miika Koskela | CB | 23 | Finland | 253 k€ | – | 0 | 0 | 2/0 |  |
-| 5 | Rasmus Møller | CB,LB | 26 | Denmark | 229 k€ | – | 0 | 0 | 2/0 |  |
+| 5 | Rasmus Møller | CB | 26 | Denmark | 229 k€ | – | 0 | 0 | 2/0 |  |
 | 15 | Martin Bjørnbak | CB | 34 | Norway | 60 k€ | – | 0 | 0 | 0/0 |  |
 | 18 | Vegard Solheim | RB | 22 | Norway | 366 k€ | – | 1 | 1 | 2/0 |  |
 | 23 | Jonathan Vonheim Norbye | CB,LB | 19 | Norway | – | – | 2 | 0 | 1/0 |  |

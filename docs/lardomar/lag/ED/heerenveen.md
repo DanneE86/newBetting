@@ -1,6 +1,6 @@
 # Heerenveen (Eredivisie) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [ED](../../ligor/ED.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [ED](../../ligor/ED.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -51,13 +51,13 @@ Form (äldst → senast): OVOFOFOV · senaste match 2026-09-19
 | Nijmegen | 10 | 3-4-3 | 11–14 | −0,04 | +14 pe | 2026-03-22 2-2 (b) |
 | Willem II | 10 | 6-2-2 | 22–13 | +0,39 | −6 pe | 2026-08-30 2-2 (b) |
 | Excelsior | 7 | 4-1-2 | 6–8 | +0,02 | −9 pe | 2026-03-07 2-1 (b) |
-| Den Haag | 6 | 2-4-0 | 11–7 | −0,11 | +43 pe | 2021-03-06 3-0 (h) |
+| Den Haag | 5 | 2-3-0 | 10–6 | −0,02 | +37 pe | 2021-03-06 3-0 (h) |
 | Cambuur | 4 | 3-1-0 | 9–6 | +0,86 | −1 pe | 2023-02-19 2-1 (b) |
 | Telstar | 3 | 2-1-0 | 6–2 | +0,51 | +10 pe | 2026-09-13 0-0 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Robin Veldman. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -78,11 +78,10 @@ Tränare: Robin Veldman. Betyg, mål och assist gäller innevarande säsong enli
 | 23 | Darling Bladi | CM | 22 | France | 507 k€ | – | 0 | 0 | 0/0 |  |
 | 28 | Hristiyan Petrov | LB | 24 | Bulgaria | 904 k€ | 6,95 | 0 | 0 | 0/0 |  |
 | 34 | Robin Bouw | Defender | 20 | Netherlands | – | – | 0 | 0 | 0/0 |  |
-| 38 | Ingmar Mulder | Defender | 21 | Netherlands | – | – | 0 | 0 | 0/0 |  |
 | 41 | Jimte Scholten | RB | 20 | Netherlands | – | – | 0 | 0 | 0/0 |  |
 | 45 | Oliver Braude | RB | 22 | Norway | 3,4 M€ | 7,22 | 1 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 6 | Dirk Proper | CDM,RW | 24 | Netherlands | 1,4 M€ | 6,93 | 0 | 1 | 1/0 | skadad, åter Early October 2026 |
+| 6 | Dirk Proper | CDM | 24 | Netherlands | 1,4 M€ | 6,93 | 0 | 1 | 1/0 | skadad, åter Early October 2026 |
 | 10 | Ringo Meerveld | CAM,LW | 23 | Netherlands | 4,6 M€ | 6,98 | 1 | 0 | 0/0 |  |
 | 14 | Levi Smans | CDM | 23 | Netherlands | 1,5 M€ | 7,20 | 0 | 3 | 0/0 |  |
 | 16 | Marcus Linday | CDM | 23 | Sweden | 5,0 M€ | 7,44 | 0 | 0 | 1/0 |  |
@@ -97,6 +96,7 @@ Tränare: Robin Veldman. Betyg, mål och assist gäller innevarande säsong enli
 | 20 | Jacob Trenskow | RW,CAM | 25 | Denmark | 4,0 M€ | 7,60 | 3 | 1 | 1/0 |  |
 | 21 | Marko Lawk Farji | LW,LM | 22 | Iraq | 1,6 M€ | 7,61 | 1 | 0 | 1/0 |  |
 | 29 | Lanroy Machine | ST | 20 | France | 1,7 M€ | 6,00 | 0 | 0 | 0/0 |  |
-| 33 | Jermaine Rijssel | Attacker | 21 | Suriname | – | – | 0 | 0 | 0/0 |  |
 | 40 | Clayton Bonevacia | Attacker | 20 | Netherlands | – | – | 0 | 0 | 0/0 |  |
 | 47 | Kirayno Schaken | Attacker | 18 | Netherlands | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (2): Jermaine Rijssel (senast 2026-09-29), Ingmar Mulder (senast 2026-09-29).

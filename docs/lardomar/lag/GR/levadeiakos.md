@@ -1,6 +1,6 @@
 # Levadeiakos (Super League (Grekland)) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [GR](../../ligor/GR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [GR](../../ligor/GR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -48,7 +48,7 @@ Form (äldst → senast): VVFFFFOF · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Elias Charalampous. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -59,8 +59,8 @@ Tränare: Elias Charalampous. Betyg, mål och assist gäller innevarande säsong
 | 33 | Stelios Vallindras | Keeper | 21 | Greece | – | – | 0 | 0 | 0/0 |  |
 | 55 | Niv Eliasi | GK | 24 | Israel | 814 k€ | 6,29 | 0 | 0 | 1/0 |  |
 | | **Backar** | | | | | | | | | |
-|  | Giannis Poulos | Defender | 20 | Greece | – | – | 0 | 0 | 0/0 |  |
 |  | Jonathan Panzo | CB | 25 | England | 888 k€ | – | 0 | 0 | 0/0 |  |
+|  | Norbert Gyömbér | CB,RB | 34 | Slovakia | 327 k€ | – | 0 | 0 | 0/0 |  |
 | 2 | Alexandru Pantea | RB,LB | 23 | Romania | 839 k€ | 6,61 | 0 | 0 | 1/0 |  |
 | 3 | Marios Vichos | LB,LWB | 26 | Greece | 843 k€ | 6,54 | 0 | 0 | 2/0 |  |
 | 22 | Taxiarchis Filon | CB,RB | 21 | Greece | 288 k€ | – | 0 | 0 | 0/0 |  |
@@ -81,7 +81,6 @@ Tränare: Elias Charalampous. Betyg, mål och assist gäller innevarande säsong
 | 77 | Georgios Vrakas | RM,LW,LM,RW,CM | 25 | Greece | 276 k€ | 6,24 | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 |  | Aliou Badji | ST | 28 | Senegal | 192 k€ | – | 0 | 0 | 0/0 |  |
-|  | Vasilios Tzebelikos | Attacker | 20 | Greece | – | – | 0 | 0 | 0/0 |  |
 | 9 | Ognjen Ožegović | ST | 32 | Serbia | 154 k€ | 6,08 | 0 | 0 | 0/0 |  |
 | 11 | Agustín Urzi | RW,LW,LM,CAM | 26 | Argentina | 758 k€ | 6,66 | 0 | 0 | 0/0 |  |
 | 14 | Georgios Manthatis | LW | 29 | Greece | 83 k€ | 6,20 | 0 | 0 | 0/0 |  |
@@ -90,3 +89,5 @@ Tränare: Elias Charalampous. Betyg, mål och assist gäller innevarande säsong
 | 27 | Gregorio Rodríguez | LW,RM | 26 | Argentina | 434 k€ | 6,43 | 0 | 0 | 0/0 |  |
 | 30 | Octavian Popescu | LW,CAM | 23 | Romania | 486 k€ | 6,58 | 0 | 0 | 0/0 |  |
 | 99 | David Cobnan | ST | 24 | Nigeria | 645 k€ | 5,92 | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (2): Vasilios Tzebelikos (senast 2026-09-29), Giannis Poulos (senast 2026-09-29).

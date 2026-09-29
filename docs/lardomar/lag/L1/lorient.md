@@ -1,6 +1,6 @@
 # Lorient (Ligue 1) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [L1](../../ligor/L1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [L1](../../ligor/L1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -77,7 +77,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-11-30 | Europa 2527 | Lorient - Nice | 1 ✓ | 45 % | 39 % |
 | 2025-11-23 | Europa 2525 | Nantes - Lorient | X | 37 % | 39 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Alexandre Dujeux. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -96,7 +96,6 @@ Tränare: Alexandre Dujeux. Betyg, mål och assist gäller innevarande säsong e
 | 30 | Srdjan Kuzmić | LB,RB | 22 | Slovenia | 1,7 M€ | – | 0 | 0 | 0/0 |  |
 | 32 | Nathaniel Adjei | CB | 24 | Ghana | 1,6 M€ | 7,28 | 0 | 0 | 1/0 |  |
 | 55 | Nosa Edward Obaretin | CB | 23 | Italy | 1,2 M€ | 6,23 | 0 | 0 | 0/0 |  |
-| 95 | Souleymane Touré | CB | 23 | France | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 7 | Bandiougou Fadiga | CAM | 25 | France | 559 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 8 | Noah Cadiou | CDM,CM | 27 | Guadeloupe | 2,1 M€ | 7,04 | 0 | 0 | 0/0 |  |
@@ -111,7 +110,9 @@ Tränare: Alexandre Dujeux. Betyg, mål och assist gäller innevarande säsong e
 | | **Anfallare** | | | | | | | | | |
 | 9 | Mohamed Bamba | ST | 24 | Ivory Coast | 1,8 M€ | – | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
 | 10 | Isak Steiner Jensen | LW,RW | 22 | Denmark | 1,8 M€ | 6,58 | 1 | 0 | 0/0 |  |
-| 15 | Aiyegun Tosin | ST,CAM,RW | 28 | Benin | 1,1 M€ | 6,13 | 0 | 0 | 0/0 |  |
+| 15 | Aiyegun Tosin | ST,RW | 28 | Benin | 1,1 M€ | 6,13 | 0 | 0 | 0/0 |  |
 | 18 | Ibrahima Baldé | ST | 23 | France | 1,5 M€ | 6,47 | 1 | 0 | 0/0 |  |
 | 19 | Souleymane Faye | LW | 23 | Senegal | 1,9 M€ | 6,38 | 0 | 0 | 0/0 |  |
 | 42 | Mamadou Koné | ST | 19 | Ivory Coast | – | 6,45 | 1 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Souleymane Touré (senast 2026-09-29).

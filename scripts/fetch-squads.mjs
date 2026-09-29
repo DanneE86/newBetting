@@ -2,12 +2,14 @@
 //   data/trupper/<liga>.json  lag -> tranare + spelare (position, alder, nummer, land, marknadsvarde, skada,
 //                             FotMob-betyg, mal, assist, kort) + historik: nar spelaren forst/senast sags i laget
 //   data/ligor/<liga>.json    tabell nu + tabellhistorik per dag (en rad per lag och dag)
+// Saknar FotMob trupp (Ettan, vissa CL-lag) hamtas den fran Transfermarkt (scripts/lib/transfermarkt.mjs), source anges per lag.
 // Lagnamn mappas till vara (football-data/store) via data/matcher/<liga>.csv. Lag hamtade senaste 20 h ateranvands.
 // Befintlig fil skrivs aldrig over med tom data. Kors: npm run trupper [-- PL SA ...] [-- --force]
 import fs from 'node:fs';
 import path from 'node:path';
 import { root } from './lib/learnings-data.mjs';
 import { nameScore } from './lib/match-context.mjs';
+import { TM_COMP, tmClubs, tmSquad } from './lib/transfermarkt.mjs';
 
 const FM = 'https://www.fotmob.com/api/data';
 // FotMob-liga per kod (grupp = tabellnamn i ligor med flera tabeller, t.ex. Ettan Norra/Sodra)
@@ -50,15 +52,16 @@ function tableRows(doc, group) {
   return rows;
 }
 
-// Vara lagnamn i ligan (senaste sasongerna) for mappning
+// Vara lagnamn i ligan (senaste sasongerna) for mappning. Kallorna byter ibland namnform mellan sasonger
+// (Kolding IF -> Kolding, NK Varazdin -> Varazdin), sa innevarande sasongs namn (cur) gar fore aldre.
 function ourTeams(code) {
   const file = path.join(root, 'data', 'matcher', `${code}.csv`);
-  if (!fs.existsSync(file)) return [];
-  const lines = fs.readFileSync(file, 'utf8').split(/\r?\n/).filter(Boolean).slice(-900);
-  const set = new Set();
-  for (const l of lines) { const c = l.split(','); if (c[5]) set.add(c[5]); if (c[6]) set.add(c[6]); }
-  set.delete('home');
-  return [...set];
+  if (!fs.existsSync(file)) return { cur: [], all: [] };
+  const rows = fs.readFileSync(file, 'utf8').split(/\r?\n/).filter(Boolean).slice(1).slice(-900).map((l) => l.split(','));
+  const season = rows.findLast((c) => c[2])?.[2];
+  const cur = new Set(), all = new Set();
+  for (const c of rows) for (const n of [c[5], c[6]]) if (n) { all.add(n); if (!c[2] || c[2] === season) cur.add(n); }
+  return { cur: [...cur], all: [...all] };
 }
 // FotMob-namn som inte liknar football-datas (football-data -> vart namn)
 const ALIASES = {
@@ -66,20 +69,68 @@ const ALIASES = {
   'FC København': 'FC Copenhagen', OB: 'Odense', AGF: 'Aarhus', AB: 'AB Gladsaxe', 'Urawa Red Diamonds': 'Urawa Reds',
   'Deportivo A Coruña': 'La Coruna', 'Celta Fortuna': 'Celta B', 'Real Sociedad B': 'Sociedad B', 'Wisła Kraków': 'Wisla',
   'Zagłębie Lubin': 'Zaglebie', 'Athletic Club': 'Ath Bilbao', 'Atletico Madrid': 'Ath Madrid', 'Atlético Madrid': 'Ath Madrid',
+  'Tokyo Verdy': 'Verdy', 'Argentinos Juniors': 'Argentinos Jrs', 'Independiente Rivadavia': 'Ind. Rivadavia',
+  Estudiantes: 'Estudiantes L.P.', 'Athletic Club MG': 'Athletic', 'NK Lokomotiva': 'Lokomotiva Zagreb', 'Lunds BK': 'Lund',
+  'Paris Saint-Germain': 'Paris SG', Inter: 'Internazionale', 'FK Crvena Zvezda': 'Red Star Belgrade', Rennes: 'Stade Rennais',
 };
 const fold = (x) => String(x).replace(/ø/g, 'o').replace(/Ø/g, 'O').replace(/æ/g, 'ae').replace(/Æ/g, 'Ae').replace(/ł/g, 'l').replace(/Ł/g, 'L')
   .replace(/ß/g, 'ss').normalize('NFD').replace(/[̀-ͯ]/g, '');
+// -> { n: vart namn, s: sakerhet } (alias/exakt = 2, annars nameScore). Innevarande sasong provas forst.
 function mapTeam(names, fm, short) {
-  if (ALIASES[fm] && names.includes(ALIASES[fm])) return ALIASES[fm];
-  const exact = names.find((n) => fold(n).toLowerCase() === fold(fm).toLowerCase() || (short && fold(n).toLowerCase() === fold(short).toLowerCase()));
-  if (exact) return exact;
-  let best = null;
-  for (const n of names) {
-    const a = fold(n), b = fold(fm), c = short ? fold(short) : null;
-    const s = Math.max(nameScore(a, null, b), c ? nameScore(a, null, c) : 0, nameScore(b, null, a));
-    if (s >= 0.5 && (!best || s > best.s)) best = { s, n };
+  for (const list of [names.cur, names.all]) {
+    if (ALIASES[fm] && list.includes(ALIASES[fm])) return { n: ALIASES[fm], s: 2 };
+    const exact = list.find((n) => fold(n).toLowerCase() === fold(fm).toLowerCase() || (short && fold(n).toLowerCase() === fold(short).toLowerCase()));
+    if (exact) return { n: exact, s: 2 };
+    let best = null;
+    for (const n of list) {
+      const a = fold(n), b = fold(fm), c = short ? fold(short) : null;
+      const s = Math.max(nameScore(a, null, b), c ? nameScore(a, null, c) : 0, nameScore(b, null, a));
+      if (s >= 0.5 && (!best || s > best.s)) best = { s, n };
+    }
+    if (best) return best;
   }
-  return best?.n ?? fm;
+  return { n: fm, s: 0 };
+}
+
+// Ett av vara namn far bara ga till ett FotMob-lag (annars skriver t.ex. Argentinos Juniors over Boca Juniors trupp).
+// Vid krock behaller den sakraste kopplingen namnet, ovriga far sitt FotMob-namn.
+function mapTable(names, rows) {
+  const byId = new Map();
+  for (const r of rows) if (!byId.has(r.id)) byId.set(r.id, { ...mapTeam(names, r.name, r.shortName), fm: r.name });
+  const owner = new Map();
+  for (const [id, m] of byId) if (!owner.has(m.n) || m.s > byId.get(owner.get(m.n)).s) owner.set(m.n, id);
+  const out = new Map();
+  for (const [id, m] of byId) {
+    if (owner.get(m.n) === id) out.set(id, m.n);
+    else { console.warn(`  namnkrock: FotMob "${m.fm}" och "${byId.get(owner.get(m.n)).fm}" -> "${m.n}" (behåller FotMob-namnet)`); out.set(id, m.fm); }
+  }
+  return out;
+}
+
+// FotMob listar ibland hela akademin (brasilianska lag 50-60 spelare, U20 med egna trojnummer). I uppblasta trupper
+// tas spelare 21 ar eller yngre utan en enda insats i ar bort (Transfermarkt har dem inte i A-truppen).
+const MAX_SQUAD = 40;
+function dropAcademy(players) {
+  if (players.length <= MAX_SQUAD) return players;
+  return players.filter((p) => p.rating != null || p.goals || p.assists || (p.age ?? 99) > 21);
+}
+
+// PL: FPL (officiell) markerar spelare som lamnat, ar utlanade eller inte registrerade med status 'u'
+async function fplUnavailable() {
+  const d = await getJson('https://fantasy.premierleague.com/api/bootstrap-static/');
+  if (!d?.elements) return null;
+  const key = (s) => fold(s).toLowerCase().replace(/[^a-z ]/g, '').trim();
+  const FPL_TEAM = { 'Man Utd': 'Man United', Spurs: 'Tottenham' };
+  const team = new Map(d.teams.map((t) => [t.id, FPL_TEAM[t.name] ?? t.name]));
+  const set = new Set();
+  for (const e of d.elements) {
+    if (e.status !== 'u') continue;
+    const t = team.get(e.team);
+    for (const k of [key(`${e.first_name} ${e.second_name}`), key(e.web_name)]) set.add(`${t}|${k}`);
+  }
+  // vart lag (Hull) mot FPL:s (Hull City): FPL-namnet borjar med vart
+  const fplTeams = [...new Set(team.values())];
+  return (ours, name) => fplTeams.some((t) => key(t).startsWith(key(ours)) && set.has(`${t}|${key(name)}`));
 }
 
 function player(m, role) {
@@ -100,6 +151,9 @@ fs.mkdirSync(DIR_LG, { recursive: true });
 const now = new Date().toISOString();
 const today = now.slice(0, 10);
 let okLeagues = 0, teamsFetched = 0;
+// Spelare som Transfermarkt-kontrollen (verify-squads-tm.mjs) visat har lamnat klubben
+const excluded = readJson(path.join(DIR_SQ, '_uteslutna.json'), { players: {} }).players;
+const fplOut = !only.length || only.includes('PL') ? await fplUnavailable() : null;
 for (const [code, spec] of Object.entries(FOTMOB)) {
   if (only.length && !only.includes(code)) continue;
   const [id, group] = Array.isArray(spec) ? spec : [spec, null];
@@ -113,18 +167,23 @@ for (const [code, spec] of Object.entries(FOTMOB)) {
   const prevLg = readJson(lgFile, { tableHistory: {} });
 
   // Tabell + historik (en snapshot per dag)
+  const ourName = mapTable(names, rows);
   const table = rows.map((r) => ({
-    rank: r.idx, team: mapTeam(names, r.name, r.shortName), fotmobName: r.name, fotmobId: r.id, group: r.group,
+    rank: r.idx, team: ourName.get(r.id), fotmobName: r.name, fotmobId: r.id, group: r.group,
     played: r.played, won: r.wins, drawn: r.draws, lost: r.losses, goals: r.scoresStr, gd: r.goalConDiff, pts: r.pts,
   }));
   const tableHistory = { ...(prevLg.tableHistory ?? {}), [today]: table.map((t) => [t.team, t.rank, t.played, t.pts, t.gd]) };
 
   // Trupper
   const teams = {};
+  let tmList = null;
+  const tmUsed = new Set(); // en Transfermarkt-klubb per lag (FBK Karlstad / IF Karlstad)
+  // Tidigare trupp bara om den hor till samma FotMob-lag (en gammal felkoppling ska inte leva kvar)
+  const prevOf = (t) => (prevSq.teams?.[t.team]?.fotmobId === t.fotmobId ? prevSq.teams[t.team] : null);
   const isFresh = (prev) => !FORCE && prev?.fetchedAt && (Date.parse(now) - Date.parse(prev.fetchedAt)) / 36e5 < TEAM_MAX_AGE_H;
   // Hamta lagens sidor parallellt (PARALLEL at gangen)
   const docs = new Map();
-  const queue = table.filter((t) => !isFresh(prevSq.teams?.[t.team]));
+  const queue = table.filter((t, i) => !isFresh(prevOf(t)) && table.findIndex((x) => x.fotmobId === t.fotmobId) === i);
   await Promise.all(Array.from({ length: PARALLEL }, async () => {
     for (let t = queue.shift(); t; t = queue.shift()) { docs.set(t.fotmobId, await getJson(`${FM}/teams?id=${t.fotmobId}`)); await sleep(150); }
   }));
@@ -135,9 +194,10 @@ for (const [code, spec] of Object.entries(FOTMOB)) {
     docs.set(id, await getJson(`${FM}/teams?id=${id}`));
   }
   for (const t of table) {
-    const prev = prevSq.teams?.[t.team];
+    if (teams[t.team]) continue; // samma lag i flera tabeller (grupper/konferenser)
+    const prev = prevOf(t);
     const fresh = isFresh(prev);
-    let squad = fresh ? { coach: prev.coach, players: prev.players, fetchedAt: prev.fetchedAt } : null;
+    let squad = fresh ? { coach: prev.coach, players: prev.players, fetchedAt: prev.fetchedAt, source: prev.source, tmId: prev.tmId } : null;
     if (!squad) {
       const doc = docs.get(t.fotmobId);
       const groups = doc?.squad?.squad ?? [];
@@ -146,11 +206,25 @@ for (const [code, spec] of Object.entries(FOTMOB)) {
         const coach = groups.find((g) => g.title === 'coach')?.members?.[0]?.name ?? null;
         const players = groups.filter((g) => g.title !== 'coach').flatMap((g) => (g.members ?? []).map((m) => player(m, g.title)));
         squad = { coach, players, fetchedAt: now };
+      } else if (TM_COMP[code] && (tmList ??= await tmClubs(code)).length) {
+        // FotMob saknar trupp: Transfermarkt
+        const tm = tmList.filter((c) => !tmUsed.has(c.id)).map((c) => ({ c, s: Math.max(nameScore(fold(t.fotmobName), null, fold(c.name)), nameScore(fold(t.team), null, fold(c.name))) }))
+          .sort((a, b) => b.s - a.s)[0];
+        const sq = tm?.s >= 0.5 ? await tmSquad(tm.c.id) : null;
+        if (sq) { tmUsed.add(tm.c.id); teamsFetched++; squad = { ...sq, fetchedAt: now, source: 'Transfermarkt', tmId: tm.c.id }; console.log(`  ${t.team}: Transfermarkt (${tm.c.name}, ${sq.players.length} spelare)`); }
+        else if (prev) squad = { coach: prev.coach, players: prev.players, fetchedAt: prev.fetchedAt, source: prev.source, tmId: prev.tmId };
+        else console.warn(`  ${t.team}: ingen trupp hos FotMob eller Transfermarkt`);
       } else if (prev) {
         squad = { coach: prev.coach, players: prev.players, fetchedAt: prev.fetchedAt }; // behall gammal trupp
       }
     }
     if (!squad) continue;
+    squad.players = dropAcademy(squad.players).filter((p) => !excluded[`${code}|${t.team}|${p.id}`]);
+    if (code === 'PL' && fplOut) {
+      const out = squad.players.filter((p) => fplOut(t.team, p.name));
+      if (out.length) console.log(`  ${t.team}: ${out.map((p) => p.name).join(', ')} borttagen (FPL: ej i truppen/utlånad)`);
+      squad.players = squad.players.filter((p) => !out.includes(p));
+    }
     // Historik: forsta/senaste gang spelaren sags i laget (spelare som lamnat ligger kvar med lastSeen)
     const history = { ...(prev?.history ?? {}) };
     for (const p of squad.players) history[p.id] = { name: p.name, firstSeen: history[p.id]?.firstSeen ?? today, lastSeen: today };
@@ -165,7 +239,7 @@ for (const [code, spec] of Object.entries(FOTMOB)) {
   else console.warn(`${code}: inga trupper hos FotMob (tabellen sparas)`);
   fs.writeFileSync(lgFile, JSON.stringify({ updatedAt: now, league: code, fotmobId: id, name: lgDoc?.details?.name ?? null, country: lgDoc?.details?.country ?? null, table, tableHistory }, null, 1), 'utf8');
   okLeagues++;
-  const unmapped = table.filter((t) => t.team === t.fotmobName && !names.includes(t.team)).map((t) => t.team);
+  const unmapped = table.filter((t) => t.team === t.fotmobName && !names.all.includes(t.team)).map((t) => t.team);
   console.log(`${code.padEnd(5)} ${Object.keys(teams).length} lag, ${Object.values(teams).reduce((s, x) => s + x.players.length, 0)} spelare${unmapped.length ? ` (FotMob-namn, ej i vår historik: ${unmapped.join(', ')})` : ''}`);
 }
 console.log(`Klart: ${okLeagues} ligor, ${teamsFetched} trupper hämtade nu. Filer: data/trupper/, data/ligor/`);

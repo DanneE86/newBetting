@@ -1,6 +1,6 @@
 # Colorado Rapids (MLS) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -44,9 +44,9 @@ Form (äldst → senast): VVFVFOVO · senaste match 2026-09-20
 | Minnesota United | 18 | 8-3-7 | 27–30 | +0,23 | −7 pe | 2026-05-14 1-0 (b) |
 | Sporting Kansas City | 18 | 6-5-7 | 25–29 | −0,06 | +4 pe | 2026-08-16 2-0 (h) |
 | Houston Dynamo | 17 | 6-6-5 | 27–27 | +0,08 | +10 pe | 2026-05-03 0-1 (b) |
-| Seattle Sounders | 17 | 3-6-8 | 18–31 | −0,28 | +10 pe | 2026-09-20 3-3 (h) |
 | FC Dallas | 16 | 8-3-5 | 27–23 | +0,31 | −6 pe | 2026-05-24 1-2 (h) |
 | Los Angeles Galaxy | 16 | 8-2-6 | 24–27 | +0,35 | −11 pe | 2026-03-08 4-1 (h) |
+| Seattle Sounders | 16 | 3-6-7 | 18–27 | −0,27 | +12 pe | 2026-09-20 3-3 (h) |
 | Los Angeles FC | 15 | 5-3-7 | 16–27 | +0,25 | −2 pe | 2026-08-20 1-0 (h) |
 | Portland Timbers | 15 | 5-4-6 | 20–24 | −0,13 | +3 pe | 2026-02-28 2-0 (h) |
 | San Jose Earthquakes | 15 | 6-4-5 | 20–15 | +0,04 | +3 pe | 2025-05-11 0-2 (h) |
@@ -72,7 +72,7 @@ Form (äldst → senast): VVFVFOVO · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Matt Wells. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -83,7 +83,6 @@ Tränare: Matt Wells. Betyg, mål och assist gäller innevarande säsong enligt 
 | | **Målvakter** | | | | | | | | | |
 | 1 | Zack Steffen | GK | 31 | USA | 658 k€ | 6,36 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
 | 41 | Nicholas Hansen | GK | 25 | USA | 268 k€ | 6,97 | 0 | 0 | 0/0 |  |
-| 51 | Zack Campagnolo | GK | 18 | USA | – | – | 0 | 0 | 0/0 |  |
 | 61 | Bryan Dowd | GK | 24 | USA | 250 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 2 | Keegan Rosenberry | RB | 32 | USA | 275 k€ | 6,67 | 1 | 0 | 2/0 |  |
@@ -93,7 +92,7 @@ Tränare: Matt Wells. Betyg, mål och assist gäller innevarande säsong enligt 
 | 24 | Noah Cobb | CB | 21 | USA | 1,1 M€ | 6,37 | 0 | 0 | 2/0 |  |
 | 29 | Miguel Navarro | LB | 27 | Venezuela | 1,3 M€ | 6,84 | 2 | 0 | 6/1 |  |
 | 33 | Kosi Thompson | RB,CB,LB | 23 | Canada | 531 k€ | 6,47 | 2 | 0 | 5/0 |  |
-| 99 | Jackson Travis | LB,LWB,RB | 22 | USA | 514 k€ | 6,51 | 0 | 1 | 2/1 |  |
+| 99 | Jackson Travis | LB,RB,LW | 22 | USA | 514 k€ | 6,51 | 0 | 1 | 2/1 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 8 | Hamzat Ojediran | CDM,CM | 22 | Nigeria | 2,2 M€ | 6,71 | 1 | 0 | 8/0 |  |
 | 10 | Paxten Aaronson | CAM,CM,RW,LW | 23 | USA | 5,5 M€ | 7,36 | 7 | 7 | 1/0 |  |
@@ -106,9 +105,11 @@ Tränare: Matt Wells. Betyg, mål och assist gäller innevarande säsong enligt 
 | 88 | Youssef Maziz | CAM,CM,LW | 28 | France | 463 k€ | 6,85 | 0 | 2 | 1/0 |  |
 | | **Anfallare** | | | | | | | | | |
 |  | Ibrahim Sadiq | RW,LW,ST | 26 | Ghana | 1,6 M€ | – | 0 | 0 | 0/0 |  |
-| 7 | Morgan Whittaker | RW,CAM,ST,RM | 25 | England | 12,0 M€ | 7,43 | 2 | 0 | 0/0 |  |
+| 7 | Morgan Whittaker | RW,ST,CAM,RM | 25 | England | 12,0 M€ | 7,43 | 2 | 0 | 0/0 |  |
 | 9 | Sayed Abu Farkhi | ST,LW | 20 | Israel | 2,3 M€ | 6,22 | 0 | 0 | 0/0 |  |
 | 26 | Mamadou Billo Diop | ST | 20 | Senegal | 1,0 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
 | 32 | Donavan Phillip | ST,RW | 21 | Saint Lucia | – | 6,79 | 2 | 0 | 1/0 |  |
 | 77 | Darren Yapi | LW,ST,RW | 21 | USA | 1,7 M€ | 6,48 | 3 | 2 | 5/0 |  |
 | 93 | Georgi Minoungou | LW | 24 | Burkina Faso | 1,4 M€ | 6,70 | 0 | 2 | 1/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Zack Campagnolo (senast 2026-09-28).

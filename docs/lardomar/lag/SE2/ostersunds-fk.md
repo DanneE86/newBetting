@@ -1,6 +1,6 @@
 # Östersunds FK (Superettan) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [SE2](../../ligor/SE2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [SE2](../../ligor/SE2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -39,7 +39,7 @@ Form senaste 8 (äldst → senast): VOOOVOVO · senaste match 2026-09-18
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Nemanja Miljanović. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -58,7 +58,6 @@ Tränare: Nemanja Miljanović. Betyg, mål och assist gäller innevarande säson
 | 19 | Dennis Widgren | CB | 32 | Sweden | 105 k€ | – | 1 | 0 | 0/0 |  |
 | 27 | Daniel Miljanović | RM,RWB,RB | 25 | Sweden | 155 k€ | – | 0 | 3 | 3/0 |  |
 | 28 | Yannick Adjoumani | LM,LWB,LB | 23 | Ivory Coast | 134 k€ | – | 2 | 3 | 1/0 |  |
-| 29 | Eseg Yossief Worke | LW | 19 | Sweden | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 2 | Elliot Caarls | Midfielder | 19 | Sweden | – | – | 0 | 0 | 0/0 |  |
 | 6 | José Masllorens | CM | 25 | Spain | 235 k€ | – | 0 | 0 | 0/0 |  |
@@ -73,3 +72,5 @@ Tränare: Nemanja Miljanović. Betyg, mål och assist gäller innevarande säson
 | 10 | Simon Marklund | ST,RW,CM,CAM,RM | 27 | Sweden | 113 k€ | – | 6 | 5 | 1/0 |  |
 | 18 | Mario Palomino | ST | 20 | Spain | – | – | 3 | 1 | 3/0 |  |
 | 22 | Jabir Abdihakim Ali | ST | 27 | Sweden | – | – | 2 | 1 | 1/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Eseg Yossief Worke (senast 2026-09-29).

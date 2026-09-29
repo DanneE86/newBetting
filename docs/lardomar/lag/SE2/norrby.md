@@ -1,6 +1,6 @@
 # Norrby (Superettan) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [SE2](../../ligor/SE2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [SE2](../../ligor/SE2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -29,7 +29,7 @@ Form senaste 8 (äldst → senast): VFOFFFFO · senaste match 2026-09-20
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Tobias Linderoth. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -37,8 +37,7 @@ Tränare: Tobias Linderoth. Betyg, mål och assist gäller innevarande säsong e
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
 | 1 | Sebastian Banožić | GK | 23 | Sweden | 146 k€ | – | 0 | 0 | 0/0 |  |
-| 12 | Tim Svensson Lillvik | GK | 25 | Sweden | – | – | 0 | 0 | 0/0 |  |
-| 23 | Albin Neziri | Keeper | 21 | Sweden | – | – | 0 | 0 | 0/0 |  |
+| 12 | Tim Svensson Lillvik | GK | 26 | Sweden | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 3 | Johannes Engvall | CB | 21 | Sweden | 152 k€ | – | 2 | 0 | 2/0 |  |
 | 4 | Aldin Nedzibovic | RB,CB | 22 | Sweden | – | – | 3 | 1 | 2/0 |  |
@@ -58,9 +57,7 @@ Tränare: Tobias Linderoth. Betyg, mål och assist gäller innevarande säsong e
 | 16 | Filip Gustafsson | CM | 24 | Sweden | 129 k€ | – | 1 | 0 | 2/1 |  |
 | 18 | Charlie Axede | CM,RB | 21 | Sweden | 237 k€ | – | 2 | 0 | 5/0 |  |
 | 18 | Leon Isa | Midfielder | 21 | Sweden | – | – | 0 | 0 | 0/0 |  |
-| 20 | Lendi Haziraj | Midfielder | 21 | Sweden | – | – | 0 | 0 | 0/0 |  |
 | 25 | Malte Ljungkull | CM | 19 | Sweden | 339 k€ | – | 0 | 0 | 0/0 |  |
-| 25 | Tim Ekelund | Midfielder | 20 | Sweden | – | – | 0 | 0 | 0/0 |  |
 | 26 | Johan Brådenmark | Midfielder | 20 | Sweden | – | – | 0 | 0 | 0/0 |  |
 | 27 | Adam Sjöberg | LB | 20 | Sweden | – | – | 0 | 0 | 1/0 |  |
 | | **Anfallare** | | | | | | | | | |
@@ -69,3 +66,5 @@ Tränare: Tobias Linderoth. Betyg, mål och assist gäller innevarande säsong e
 | 15 | Eloi Ferreira | Attacker | 19 | Portugal | – | – | 0 | 0 | 0/0 |  |
 | 19 | Finlay Neat | Attacker | 20 | Scotland | 280 k€ | – | 0 | 0 | 0/0 |  |
 | 28 | Hugo Tilly | ST | 24 | Sweden | 96 k€ | – | 4 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (3): Lendi Haziraj (senast 2026-09-29), Albin Neziri (senast 2026-09-29), Tim Ekelund (senast 2026-09-29).

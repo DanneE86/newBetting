@@ -1,6 +1,6 @@
 # Bielefeld (2. Bundesliga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [BL2](../../ligor/BL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [BL2](../../ligor/BL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -56,7 +56,7 @@ Form (äldst → senast): FVFVFOFO · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Oliver Kirch. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -70,7 +70,6 @@ Tränare: Oliver Kirch. Betyg, mål och assist gäller innevarande säsong enlig
 | 41 | Artem Zaloha | Keeper | 19 | Ukraine | – | – | 0 | 0 | 0/0 |  |
 | 47 | Philip Hildesheim | Keeper | 21 | Germany | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-|  | Gerrit Gohlke | CB | 27 | Germany | 161 k€ | – | 0 | 0 | 0/0 |  |
 | 2 | Felix Hagmann | RB,LB | 22 | Germany | 669 k€ | 6,48 | 1 | 0 | 0/0 |  |
 | 3 | Joel Felix | CB | 28 | Denmark | 174 k€ | – | 0 | 0 | 0/0 |  |
 | 5 | Maximilian Bauer | CB | 26 | Germany | 1,4 M€ | 6,58 | 0 | 0 | 2/0 |  |
@@ -80,7 +79,6 @@ Tränare: Oliver Kirch. Betyg, mål och assist gäller innevarande säsong enlig
 | 23 | Leon Schneider | CB | 26 | Germany | 290 k€ | – | 0 | 0 | 0/0 |  |
 | 27 | Benjamin Boakye | RB,RWB | 21 | Germany | 1,1 M€ | 6,48 | 0 | 0 | 1/0 |  |
 | 29 | Tim Handwerker | LB,LWB | 28 | Germany | 180 k€ | 6,15 | 0 | 0 | 1/0 |  |
-| 36 | Justin Lukas | Defender | 20 | Germany | 452 k€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 6 | Marvin Mehlem | CAM,CM | 29 | Germany | 329 k€ | 6,79 | 1 | 0 | 1/0 |  |
 | 8 | Sam Schreck | CM | 27 | Germany | 128 k€ | 6,24 | 0 | 0 | 1/0 |  |
@@ -99,3 +97,5 @@ Tränare: Oliver Kirch. Betyg, mål och assist gäller innevarande säsong enlig
 | 30 | Isaiah Young | LW | 28 | USA | 144 k€ | 6,95 | 0 | 1 | 0/0 |  |
 | 33 | Monti Theiß | Attacker | 19 | Germany | – | – | 0 | 0 | 0/0 |  |
 | 43 | Daniel Richter | Attacker | 18 | Germany | 928 k€ | – | 0 | 0 | 0/0 | osäker |
+
+Har lämnat truppen sedan vi började spara (2): Gerrit Gohlke (senast 2026-09-29), Justin Lukas (senast 2026-09-29).

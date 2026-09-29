@@ -1,6 +1,6 @@
 # New England Revolution (MLS) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -71,7 +71,7 @@ Form (äldst → senast): FVOVFVVV · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: –. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -91,7 +91,6 @@ Tränare: –. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 | 12 | Ilay Feingold | RB | 22 | Israel | 2,4 M€ | 7,13 | 1 | 1 | 1/0 |  |
 | 15 | Cody Baker | RB,CB | 22 | USA | 357 k€ | 6,42 | 0 | 0 | 0/0 |  |
 | 19 | Damario McIntosh | RB,RWB | 19 | Jamaica | – | – | 0 | 0 | 0/0 |  |
-| 21 | Benjamin Sammer | CB | 21 | Austria | 108 k€ | – | 0 | 0 | 0/0 |  |
 | 22 | Ethan Kohler | CB,CDM | 21 | USA | 715 k€ | 6,91 | 0 | 0 | 1/0 |  |
 | 23 | Will Sands | LB,RB,LM | 26 | USA | 220 k€ | 6,82 | 1 | 0 | 4/0 |  |
 | 66 | Joshua Wynder | CB | 21 | USA | 1,3 M€ | 6,55 | 0 | 0 | 1/0 |  |
@@ -115,3 +114,5 @@ Tränare: –. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 | 41 | Luca Langoni | RW | 24 | Argentina | 1,8 M€ | 6,92 | 3 | 6 | 1/0 |  |
 | 77 | Diego Fagúndez | LW,CM | 31 | Uruguay | 495 k€ | 6,29 | 0 | 0 | 0/0 |  |
 | 99 | Dor Turgeman | ST | 22 | Israel | 3,0 M€ | 7,10 | 7 | 7 | 1/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Benjamin Sammer (senast 2026-09-29).

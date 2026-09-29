@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-09-28T19:47:27.474Z",
+ "updatedAt": "2026-09-29T20:15:35.901Z",
  "league": "SE3S",
  "fotmobId": 169,
  "name": "Ettan",
@@ -35,7 +35,7 @@
   },
   {
    "rank": 3,
-   "team": "Hässleholms IF",
+   "team": "Hässleholm",
    "fotmobName": "Hässleholms IF",
    "fotmobId": 418688,
    "group": "Soedra",
@@ -49,7 +49,7 @@
   },
   {
    "rank": 4,
-   "team": "Lunds BK",
+   "team": "Lund",
    "fotmobName": "Lunds BK",
    "fotmobId": 6174,
    "group": "Soedra",
@@ -161,7 +161,7 @@
   },
   {
    "rank": 12,
-   "team": "Eskilsminne IF",
+   "team": "Eskilsminne",
    "fotmobName": "Eskilsminne IF",
    "fotmobId": 303470,
    "group": "Soedra",
@@ -203,7 +203,7 @@
   },
   {
    "rank": 15,
-   "team": "Angelholm",
+   "team": "Ängelholm",
    "fotmobName": "Ängelholms FF",
    "fotmobId": 8189,
    "group": "Soedra",
@@ -332,6 +332,120 @@
    ],
    [
     "Angelholm",
+    15,
+    24,
+    18,
+    -19
+   ],
+   [
+    "Utsikten",
+    16,
+    24,
+    12,
+    -36
+   ]
+  ],
+  "2026-09-29": [
+   [
+    "Trelleborg",
+    1,
+    24,
+    51,
+    25
+   ],
+   [
+    "Åtvidaberg",
+    2,
+    24,
+    45,
+    14
+   ],
+   [
+    "Hässleholm",
+    3,
+    24,
+    42,
+    15
+   ],
+   [
+    "Lund",
+    4,
+    24,
+    41,
+    18
+   ],
+   [
+    "AFC Malmö",
+    5,
+    24,
+    38,
+    9
+   ],
+   [
+    "Rosengård",
+    6,
+    24,
+    38,
+    7
+   ],
+   [
+    "Trollhättan",
+    7,
+    24,
+    37,
+    5
+   ],
+   [
+    "Jönköping Södra",
+    8,
+    24,
+    33,
+    4
+   ],
+   [
+    "Tvååker",
+    9,
+    24,
+    33,
+    -5
+   ],
+   [
+    "BK Olympic",
+    10,
+    24,
+    30,
+    -5
+   ],
+   [
+    "Skövde AIK",
+    11,
+    24,
+    30,
+    -8
+   ],
+   [
+    "Eskilsminne",
+    12,
+    24,
+    29,
+    -5
+   ],
+   [
+    "Kristianstad",
+    13,
+    24,
+    27,
+    -7
+   ],
+   [
+    "Laholm",
+    14,
+    24,
+    22,
+    -12
+   ],
+   [
+    "Ängelholm",
     15,
     24,
     18,

@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-09-28T19:47:27.474Z",
+ "updatedAt": "2026-09-29T20:15:35.901Z",
  "league": "PL",
  "fotmobId": 47,
  "source": "FotMob",
@@ -184,7 +184,7 @@
      "id": 1300526,
      "name": "Nico O'Reilly",
      "role": "defenders",
-     "position": "LB,LW,CDM",
+     "position": "LB,CDM,LW,CAM",
      "number": 33,
      "age": 21,
      "born": "2005-03-21",
@@ -197,7 +197,10 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "87",
+      "expectedReturn": "About a week"
+     }
     },
     {
      "id": 1362998,
@@ -412,7 +415,7 @@
      "id": 942368,
      "name": "Jérémy Doku",
      "role": "attackers",
-     "position": "LW,CAM,RW",
+     "position": "LW,RW,CAM",
      "number": 11,
      "age": 24,
      "born": "2002-05-27",
@@ -485,7 +488,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-09-28T19:47:27.474Z",
+   "fetchedAt": "2026-09-29T20:15:35.901Z",
    "coachHistory": [
     {
      "name": "Enzo Maresca",
@@ -496,127 +499,127 @@
     "239219": {
      "name": "Mateo Kovačić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "245555": {
      "name": "Gerónimo Rulli",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "363357": {
      "name": "Marcus Bettinelli",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "614006": {
      "name": "Rúben Dias",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "618878": {
      "name": "Gianluigi Donnarumma",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "737066": {
      "name": "Erling Haaland",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "815006": {
      "name": "Phil Foden",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "844425": {
      "name": "Marc Guéhi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "933576": {
      "name": "Antoine Semenyo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "933845": {
      "name": "Rayan Aït-Nouri",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "942368": {
      "name": "Jérémy Doku",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "955529": {
      "name": "Matheus Nunes",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "965764": {
      "name": "Iliman Ndiaye",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1070712": {
      "name": "Joško Gvardiol",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1089691": {
      "name": "Elliot Anderson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1104053": {
      "name": "Rayan Cherki",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1137705": {
      "name": "Enzo Fernández",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1187225": {
      "name": "Josh Wilson-Esbrand",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1288450": {
      "name": "Rico Lewis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1300526": {
      "name": "Nico O'Reilly",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1362998": {
      "name": "Abdukodir Khusanov",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1561552": {
      "name": "Ayyoub Bouaddi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1580952": {
      "name": "Vitor Reis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1680328": {
      "name": "Ryan McAidoo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1721789": {
      "name": "Allan",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     }
    },
    "left": []
@@ -823,7 +826,10 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "121",
+      "expectedReturn": "Doubtful"
+     }
     },
     {
      "id": 1105912,
@@ -880,7 +886,10 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "30",
+      "expectedReturn": "Doubtful"
+     }
     },
     {
      "id": 818975,
@@ -977,7 +986,7 @@
      "red": 0,
      "injury": {
       "typeId": "130",
-      "expectedReturn": "Mid October 2026"
+      "expectedReturn": "Doubtful"
      }
     },
     {
@@ -1041,7 +1050,7 @@
      "id": 1157237,
      "name": "Christos Tzolis",
      "role": "attackers",
-     "position": "LW,LM,CAM",
+     "position": "LW,CAM,RW,LM",
      "number": 17,
      "age": 24,
      "born": "2002-01-30",
@@ -1094,11 +1103,11 @@
      "red": 0,
      "injury": {
       "typeId": "14",
-      "expectedReturn": "About 1-2 weeks"
+      "expectedReturn": "Late October 2026"
      }
     }
    ],
-   "fetchedAt": "2026-09-28T19:47:27.474Z",
+   "fetchedAt": "2026-09-29T20:15:35.901Z",
    "coachHistory": [
     {
      "name": "Mikel Arteta",
@@ -1109,122 +1118,122 @@
     "317564": {
      "name": "Kepa Arrizabalaga",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "534670": {
      "name": "Martin Ødegaard",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "562727": {
      "name": "David Raya",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "574645": {
      "name": "Mikel Merino",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "654096": {
      "name": "Declan Rice",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "664500": {
      "name": "Viktor Gyökeres",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "710159": {
      "name": "Ezri Konsa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "749736": {
      "name": "Kai Havertz",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "776151": {
      "name": "Ben White",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "795179": {
      "name": "Gabriel",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "818975": {
      "name": "Eberechi Eze",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "850354": {
      "name": "Bruno Guimarães",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "942381": {
      "name": "Jurriën Timber",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "952029": {
      "name": "Illan Meslier",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "955406": {
      "name": "William Saliba",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "961995": {
      "name": "Bukayo Saka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1031325": {
      "name": "Martín Zubimendi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1084981": {
      "name": "Noni Madueke",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1105912": {
      "name": "Riccardo Calafiori",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1137667": {
      "name": "Piero Hincapié",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1157237": {
      "name": "Christos Tzolis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1298907": {
      "name": "Cristhian Mosquera",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1406436": {
      "name": "Myles Lewis-Skelly",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1635773": {
      "name": "Max Dowman",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     }
    },
    "left": []
@@ -1308,7 +1317,10 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "42",
+      "expectedReturn": "Mid October 2026"
+     }
     },
     {
      "id": 201690,
@@ -1327,7 +1339,10 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "102",
+      "expectedReturn": "Doubtful"
+     }
     },
     {
      "id": 1079456,
@@ -1810,7 +1825,7 @@
      }
     }
    ],
-   "fetchedAt": "2026-09-28T19:47:27.474Z",
+   "fetchedAt": "2026-09-29T20:15:35.901Z",
    "coachHistory": [
     {
      "name": "Fabian Hürzeler",
@@ -1821,147 +1836,147 @@
     "107917": {
      "name": "Jason Steele",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "167008": {
      "name": "Pascal Groß",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "201690": {
      "name": "Lewis Dunk",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "613715": {
      "name": "Olivier Boscagli",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "774448": {
      "name": "Ferdi Kadıoğlu",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "796974": {
      "name": "Pascal Struijk",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "862608": {
      "name": "Kaoru Mitoma",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "866686": {
      "name": "Matthew O'Riley",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "951921": {
      "name": "Michael Svoboda",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "956925": {
      "name": "Georginio Rutter",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "970243": {
      "name": "Mats Wieffer",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1068482": {
      "name": "Evan Ferguson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1079456": {
      "name": "Costinha",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1083185": {
      "name": "Femi Azeez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1131987": {
      "name": "Bart Verbruggen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1134871": {
      "name": "Maxim De Cuyper",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1168311": {
      "name": "Yasin Ayari",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1178324": {
      "name": "Jaouen Hadjam",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1215410": {
      "name": "Ibrahim Osman",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1251334": {
      "name": "Jack Hinshelwood",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1252132": {
      "name": "Promise David",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1354561": {
      "name": "Diego Gómez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1400227": {
      "name": "Yankuba Minteh",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1413996": {
      "name": "Luka Vušković",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1423616": {
      "name": "Stefanos Tzimas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1561249": {
      "name": "Charalampos Kostoulas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1586552": {
      "name": "Chema Andrés",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1602352": {
      "name": "Malick Junior Yalcouyé",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1782648": {
      "name": "Zadok Yohanna",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     }
    },
    "left": []
@@ -2032,7 +2047,7 @@
      "id": 1002039,
      "name": "Aaron Hickey",
      "role": "defenders",
-     "position": "RB,LB",
+     "position": "RB,LB,RWB",
      "number": 2,
      "age": 24,
      "born": "2002-06-10",
@@ -2228,7 +2243,7 @@
      "id": 1478706,
      "name": "Benjamin Fredrick",
      "role": "defenders",
-     "position": "CB,RB,RWB",
+     "position": "CB,RB",
      "number": 48,
      "age": 21,
      "born": "2005-05-28",
@@ -2484,7 +2499,7 @@
      "id": 1171140,
      "name": "Jaidon Anthony",
      "role": "attackers",
-     "position": "LW,LM,RW,CAM",
+     "position": "LW,RW,LM,CAM",
      "number": 19,
      "age": 26,
      "born": "1999-12-01",
@@ -2519,7 +2534,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-09-28T19:47:27.474Z",
+   "fetchedAt": "2026-09-29T20:15:35.901Z",
    "coachHistory": [
     {
      "name": "Keith Andrews",
@@ -2530,142 +2545,142 @@
     "184321": {
      "name": "Callum Wilson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "552718": {
      "name": "Kristoffer Ajer",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "562892": {
      "name": "Rico Henry",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "650616": {
      "name": "Mathias Jensen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "688273": {
      "name": "Vitaly Janelt",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "759566": {
      "name": "Joshua Dasilva",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "776689": {
      "name": "Caoimhín Kelleher",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "806579": {
      "name": "Ellery Balcombe",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "850962": {
      "name": "Hákon Rafn Valdimarsson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "888912": {
      "name": "Mikkel Damsgaard",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "919435": {
      "name": "Sepp van den Berg",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "961306": {
      "name": "Nathan Collins",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "963965": {
      "name": "Fábio Carvalho",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1002039": {
      "name": "Aaron Hickey",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1010426": {
      "name": "Keane Lewis-Potter",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1083796": {
      "name": "Kevin Schade",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1157236": {
      "name": "Yehor Yarmoliuk",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1171140": {
      "name": "Jaidon Anthony",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1185211": {
      "name": "Mamadou Sangaré",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1250253": {
      "name": "Dango Ouattara",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1276312": {
      "name": "Antoni Milambo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1302005": {
      "name": "Igor Thiago",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1341538": {
      "name": "Ji-Soo Kim",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1429912": {
      "name": "Michael Kayode",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1451265": {
      "name": "Malick Diouf",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1478706": {
      "name": "Benjamin Fredrick",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1516030": {
      "name": "Gustavo Nunes",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1572340": {
      "name": "Jannik Schuster",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     }
    },
    "left": []
@@ -2907,25 +2922,6 @@
      "injury": null
     },
     {
-     "id": 717176,
-     "name": "Daniel James",
-     "role": "midfielders",
-     "position": "RW,RWB,CAM,RM",
-     "number": 7,
-     "age": 28,
-     "born": "1997-11-10",
-     "country": "Wales",
-     "height": 170,
-     "value": 11437026,
-     "rating": 5.93,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
      "id": 820024,
      "name": "Sean Longstaff",
      "role": "midfielders",
@@ -3043,6 +3039,25 @@
      }
     },
     {
+     "id": 717176,
+     "name": "Daniel James",
+     "role": "attackers",
+     "position": "RW,RWB,CAM",
+     "number": 7,
+     "age": 28,
+     "born": "1997-11-10",
+     "country": "Wales",
+     "height": 170,
+     "value": 11437026,
+     "rating": 5.93,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
      "id": 612150,
      "name": "Dominic Calvert-Lewin",
      "role": "attackers",
@@ -3078,7 +3093,10 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "87",
+      "expectedReturn": "Doubtful"
+     }
     },
     {
      "id": 861197,
@@ -3103,7 +3121,7 @@
      "id": 915797,
      "name": "Noah Okafor",
      "role": "attackers",
-     "position": "ST,CAM,LW",
+     "position": "CAM,ST,LW",
      "number": 19,
      "age": 26,
      "born": "2000-05-24",
@@ -3138,7 +3156,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-09-28T19:47:27.474Z",
+   "fetchedAt": "2026-09-29T20:15:35.901Z",
    "coachHistory": [
     {
      "name": "Daniel Farke",
@@ -3149,122 +3167,122 @@
     "279481": {
      "name": "Alex Cairns",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "432435": {
      "name": "Michael Zetterer",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "494417": {
      "name": "Harry Wilson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "517346": {
      "name": "Nico Elvedi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "612150": {
      "name": "Dominic Calvert-Lewin",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "710158": {
      "name": "James Justin",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "717174": {
      "name": "Joe Rodon",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "717176": {
      "name": "Daniel James",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "744494": {
      "name": "Gabriel Gudmundsson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "780432": {
      "name": "Ethan Ampadu",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "789646": {
      "name": "Jayden Bogle",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "820024": {
      "name": "Sean Longstaff",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "861197": {
      "name": "Lukas Nmecha",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "861805": {
      "name": "Jaka Bijol",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "881735": {
      "name": "Anton Stach",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "915797": {
      "name": "Noah Okafor",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "935728": {
      "name": "Ao Tanaka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "952322": {
      "name": "Brenden Aaronson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1080983": {
      "name": "Ilia Gruev",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1092403": {
      "name": "Melvin Bard",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1187213": {
      "name": "James Trafford",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1250485": {
      "name": "Tarik Muharemović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1344677": {
      "name": "Mateo Joseph",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1393672": {
      "name": "Jean-Mattéo Bahoya",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     }
    },
    "left": []
@@ -3299,7 +3317,7 @@
      "role": "keepers",
      "position": "GK",
      "number": 25,
-     "age": 25,
+     "age": 26,
      "born": "2000-09-29",
      "country": "Georgia",
      "height": 197,
@@ -3550,7 +3568,7 @@
      "id": 846005,
      "name": "Dominik Szoboszlai",
      "role": "midfielders",
-     "position": "CDM,CAM,RW,CM,RB,LW",
+     "position": "CDM,CAM,RW,RB,LW,CM",
      "number": 8,
      "age": 25,
      "born": "2000-10-25",
@@ -3569,7 +3587,7 @@
      "id": 831489,
      "name": "Alexis Mac Allister",
      "role": "midfielders",
-     "position": "CDM,CAM,CM",
+     "position": "CDM,CM,CAM,LM",
      "number": 10,
      "age": 27,
      "born": "1998-12-24",
@@ -3645,7 +3663,7 @@
      "id": 1152455,
      "name": "Florian Wirtz",
      "role": "attackers",
-     "position": "LW,CAM,ST",
+     "position": "CAM,LW,ST",
      "number": 7,
      "age": 23,
      "born": "2003-05-03",
@@ -3722,7 +3740,7 @@
      "yellow": 0,
      "red": 0,
      "injury": {
-      "typeId": "74",
+      "typeId": "30",
       "expectedReturn": "About 1-2 weeks"
      }
     },
@@ -3790,7 +3808,7 @@
      "id": 1364042,
      "name": "Lewis Koumas",
      "role": "attackers",
-     "position": "LW,ST,RW,CAM",
+     "position": "ST,LW,RW,CAM",
      "number": 67,
      "age": 21,
      "born": "2005-09-19",
@@ -3825,7 +3843,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-09-28T19:47:27.474Z",
+   "fetchedAt": "2026-09-29T20:15:35.901Z",
    "coachHistory": [
     {
      "name": "Andoni Iraola",
@@ -3836,142 +3854,142 @@
     "202643": {
      "name": "Wataru Endo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "209405": {
      "name": "Virgil van Dijk",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "319784": {
      "name": "Alisson Becker",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "568571": {
      "name": "Joseph Gomez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "582276": {
      "name": "Freddie Woodman",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "671529": {
      "name": "Konstantinos Tsimikas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "690107": {
      "name": "Alexander Isak",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "784510": {
      "name": "Federico Chiesa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "806552": {
      "name": "Cody Gakpo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "831489": {
      "name": "Alexis Mac Allister",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "846005": {
      "name": "Dominik Szoboszlai",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "921253": {
      "name": "Ronald Araujo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "948800": {
      "name": "Giorgi Mamardashvili",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "956683": {
      "name": "Ryan Gravenberch",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "966018": {
      "name": "Jeremie Frimpong",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1068920": {
      "name": "Vítezslav Jaroš",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1113690": {
      "name": "Conor Bradley",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1152455": {
      "name": "Florian Wirtz",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1195281": {
      "name": "Miloš Kerkez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1197030": {
      "name": "Hugo Ekitiké",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1236818": {
      "name": "Harvey Davies",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1297165": {
      "name": "Bradley Barcola",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1364042": {
      "name": "Lewis Koumas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1436258": {
      "name": "Trey Nyoni",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1473534": {
      "name": "Jérémy Jacquet",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1553105": {
      "name": "Víctor Muñoz",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1597668": {
      "name": "Rio Ngumoha",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1609209": {
      "name": "Giovanni Leoni",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     }
    },
    "left": []
@@ -4425,7 +4443,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-09-28T19:47:27.474Z",
+   "fetchedAt": "2026-09-29T20:15:35.901Z",
    "coachHistory": [
     {
      "name": "David Moyes",
@@ -4436,117 +4454,117 @@
     "243138": {
      "name": "James Tarkowski",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "266520": {
      "name": "Christian Nørgaard",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "290410": {
      "name": "Michael Keane",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "303919": {
      "name": "Jordan Pickford",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "312765": {
      "name": "Jack Grealish",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "581530": {
      "name": "Tom King",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "604089": {
      "name": "Ainsley Maitland-Niles",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "731855": {
      "name": "Mark Travers",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "874025": {
      "name": "Vitaliy Mykolenko",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "886016": {
      "name": "Kiernan Dewsbury-Hall",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "950474": {
      "name": "James Garner",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "982394": {
      "name": "Hayden Hackney",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1030829": {
      "name": "Jarrad Branthwaite",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1076756": {
      "name": "Brennan Johnson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1098607": {
      "name": "Jake O'Brien",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1128965": {
      "name": "Charly Alcaraz",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1210384": {
      "name": "Merlin Röhl",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1292833": {
      "name": "Tyler Dibling",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1398392": {
      "name": "Thierno Barry",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1424875": {
      "name": "Tyrique George",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1559637": {
      "name": "Harrison Armstrong",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1589726": {
      "name": "Braiden Graham",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1748061": {
      "name": "Malik Olayiwola",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     }
    },
    "left": []
@@ -5056,6 +5074,25 @@
      "injury": null
     },
     {
+     "id": 704138,
+     "name": "Abdülkadir Ömür",
+     "role": "midfielders",
+     "position": "RW,CAM,CM",
+     "number": 33,
+     "age": 27,
+     "born": "1999-06-25",
+     "country": "Turkiye",
+     "height": 168,
+     "value": 1256704,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
      "id": 1574198,
      "name": "Christos Mouzakitis",
      "role": "midfielders",
@@ -5097,7 +5134,7 @@
      "id": 812982,
      "name": "Sorba Thomas",
      "role": "attackers",
-     "position": "LW,RW,RWB,RB,LM",
+     "position": "LW,RW,RWB,RB",
      "number": 7,
      "age": 27,
      "born": "1999-01-25",
@@ -5151,25 +5188,6 @@
      "injury": null
     },
     {
-     "id": 704138,
-     "name": "Abdülkadir Ömür",
-     "role": "attackers",
-     "position": "RW,CAM,CM",
-     "number": 33,
-     "age": 27,
-     "born": "1999-06-25",
-     "country": "Turkiye",
-     "height": 168,
-     "value": 1256704,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
      "id": 1705134,
      "name": "Robinio Vaz",
      "role": "attackers",
@@ -5208,7 +5226,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-09-28T19:47:27.474Z",
+   "fetchedAt": "2026-09-29T20:15:35.901Z",
    "coachHistory": [
     {
      "name": "Sergej Jakirović",
@@ -5219,167 +5237,167 @@
     "280507": {
      "name": "Matt Crooks",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "288880": {
      "name": "Jack Butland",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "295062": {
      "name": "John Egan",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "410836": {
      "name": "Semi Ajayi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "509151": {
      "name": "Oli McBurnie",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "518500": {
      "name": "Dillon Phillips",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "538112": {
      "name": "Matt Targett",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "575780": {
      "name": "Paddy McNair",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "605262": {
      "name": "Kieran Dowell",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "704138": {
      "name": "Abdülkadir Ömür",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "709148": {
      "name": "Lewie Coyle",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "807930": {
      "name": "Regan Slater",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "812982": {
      "name": "Sorba Thomas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "915102": {
      "name": "Hidemasa Morita",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "933635": {
      "name": "Ryan Giles",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "956161": {
      "name": "Joe Gelhardt",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1072068": {
      "name": "Konstantinos Tzolakis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1125874": {
      "name": "Darko Gyabi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1137106": {
      "name": "Lucas Gourna-Douath",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1178514": {
      "name": "Eliot Matazo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1180718": {
      "name": "Mohamed-Ali Cho",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1203512": {
      "name": "Tim Iroegbunam",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1214915": {
      "name": "Brooke Norton-Cuffy",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1231090": {
      "name": "Mohamed Belloumi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1272349": {
      "name": "Elliot Stroud",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1331703": {
      "name": "Charlie Hughes",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1356264": {
      "name": "Óscar Zambrano",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1377949": {
      "name": "Jens Hjertø-Dahl",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1428427": {
      "name": "Nobel Mendy",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1515977": {
      "name": "Ilyas Ansah",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1574198": {
      "name": "Christos Mouzakitis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1686118": {
      "name": "Lucas Herrington",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1705134": {
      "name": "Robinio Vaz",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     }
    },
    "left": []
@@ -5890,28 +5908,9 @@
      "yellow": 3,
      "red": 0,
      "injury": null
-    },
-    {
-     "id": 1418100,
-     "name": "Alfie Harrison",
-     "role": "attackers",
-     "position": "RW,CAM",
-     "number": 44,
-     "age": 20,
-     "born": "2005-11-28",
-     "country": "England",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
     }
    ],
-   "fetchedAt": "2026-09-28T19:47:27.474Z",
+   "fetchedAt": "2026-09-29T20:15:35.901Z",
    "coachHistory": [
     {
      "name": "Matthias Jaissle",
@@ -5922,135 +5921,142 @@
     "188058": {
      "name": "Daniel Burn",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "189982": {
      "name": "Fabian Schär",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "195668": {
      "name": "Mark Gillespie",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "280484": {
      "name": "Nick Pope",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "521148": {
      "name": "Jacob Murphy",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "535936": {
      "name": "Joelinton",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "666857": {
      "name": "Yoane Wissa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "760359": {
      "name": "Harvey Barnes",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "860975": {
      "name": "Joseph Willock",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "956682": {
      "name": "Sven Botman",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "958010": {
      "name": "Amar Dedić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1021929": {
      "name": "Jacob Ramsey",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1050166": {
      "name": "Anthony Elanga",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1107910": {
      "name": "Valentino Livramento",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1137407": {
      "name": "Malick Thiaw",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1186978": {
      "name": "Lukás Hornícek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1197655": {
      "name": "Lewis Hall",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1258092": {
      "name": "William Osula",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1280132": {
      "name": "Nico González",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1296763": {
      "name": "Lewis Miley",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1418100": {
      "name": "Alfie Harrison",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1438570": {
      "name": "Ewen Jaouen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1444231": {
      "name": "Matias Fernandez-Pardo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1624586": {
      "name": "Bazoumana Touré",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1643770": {
      "name": "Sean Steur",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1695681": {
      "name": "Aladji Bamba",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     }
    },
-   "left": []
+   "left": [
+    {
+     "id": "1418100",
+     "name": "Alfie Harrison",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-09-29"
+    }
+   ]
   },
   "Chelsea": {
    "fotmobName": "Chelsea",
@@ -6393,7 +6399,7 @@
      "id": 807729,
      "name": "Reece James",
      "role": "midfielders",
-     "position": "RB,CDM,CM",
+     "position": "CDM,RB",
      "number": 24,
      "age": 26,
      "born": "1999-12-08",
@@ -6592,7 +6598,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-09-28T19:47:27.474Z",
+   "fetchedAt": "2026-09-29T20:15:35.901Z",
    "coachHistory": [
     {
      "name": "Xabi Alonso",
@@ -6603,137 +6609,137 @@
     "113836": {
      "name": "Danny Welbeck",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "156008": {
      "name": "Jordan Henderson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "268375": {
      "name": "Emiliano Martínez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "807729": {
      "name": "Reece James",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "843040": {
      "name": "Pedro Neto",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "883080": {
      "name": "Morgan Rogers",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "917802": {
      "name": "Wesley Fofana",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "950485": {
      "name": "Maxence Lacroix",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "988805": {
      "name": "Pep Chavarría",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1021382": {
      "name": "João Pedro",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1031220": {
      "name": "Gabriel Słonina",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1096353": {
      "name": "Cole Palmer",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1096400": {
      "name": "Levi Colwill",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1113692": {
      "name": "Jamie Gittens",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1117871": {
      "name": "Teddy Sharman-Lowe",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1137668": {
      "name": "Moisés Caicedo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1183148": {
      "name": "Emanuel Emegha",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1190867": {
      "name": "Roméo Lavia",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1197250": {
      "name": "Malo Gusto",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1272440": {
      "name": "Valentín Barco",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1319972": {
      "name": "Mike Penders",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1400216": {
      "name": "Josh Acheampong",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1413846": {
      "name": "Jorrel Hato",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1473806": {
      "name": "Marco Palestra",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1494947": {
      "name": "Aaron Anselmino",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1530314": {
      "name": "Geovany Quenda",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1580774": {
      "name": "Estêvão",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     }
    },
    "left": []
@@ -7301,7 +7307,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-09-28T19:47:27.474Z",
+   "fetchedAt": "2026-09-29T20:15:35.901Z",
    "coachHistory": [
     {
      "name": "Gary O'Neil",
@@ -7312,147 +7318,147 @@
     "111027": {
      "name": "David Button",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "413158": {
      "name": "Chuba Akpom",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "512013": {
      "name": "Christian Walton",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "556972": {
      "name": "Saša Lukić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "609733": {
      "name": "Darnell Furlong",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "643228": {
      "name": "Alex Palmer",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "693599": {
      "name": "Exequiel Palacios",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "696443": {
      "name": "Issa Diop",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "728765": {
      "name": "Daizen Maeda",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "760398": {
      "name": "Cédric Kipré",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "789507": {
      "name": "Jack Taylor",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "789578": {
      "name": "Dara O'Shea",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "793255": {
      "name": "Florentino",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "796398": {
      "name": "Kjell Scherpen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "797594": {
      "name": "Azor Matusiwa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "873559": {
      "name": "Zian Flemming",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "914402": {
      "name": "Jack Clarke",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "980381": {
      "name": "Leif Davis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1073742": {
      "name": "Julio Enciso",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1079103": {
      "name": "Jacob Greaves",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1089645": {
      "name": "Jaden Philogene-Bidace",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1113915": {
      "name": "Kasey McAteer",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1129081": {
      "name": "Marcelino Núñez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1198007": {
      "name": "Anis Mehmeti",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1265626": {
      "name": "Abdul Fatawu",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1307961": {
      "name": "Sindre Walle Egeli",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1320949": {
      "name": "Emersonn",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1343053": {
      "name": "Abdoul Ouattara",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1904519": {
      "name": "Charlie Compton",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     }
    },
    "left": []
@@ -7545,7 +7551,7 @@
      "id": 751550,
      "name": "Diogo Dalot",
      "role": "defenders",
-     "position": "RB,LWB,RWB,LB",
+     "position": "RB,LWB,LB,RWB",
      "number": 2,
      "age": 27,
      "born": "1999-03-18",
@@ -7842,7 +7848,7 @@
      "id": 1575707,
      "name": "Jack Fletcher",
      "role": "midfielders",
-     "position": "CAM,CDM,CM,LB,ST",
+     "position": "CAM,CDM,CM,ST",
      "number": 38,
      "age": 19,
      "born": "2007-03-19",
@@ -8060,7 +8066,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-09-28T19:47:27.474Z",
+   "fetchedAt": "2026-09-29T20:15:35.901Z",
    "coachHistory": [
     {
      "name": "Michael Carrick",
@@ -8071,152 +8077,152 @@
     "24155": {
      "name": "Tom Heaton",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "163604": {
      "name": "Karl Darlow",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "255610": {
      "name": "Harry Maguire",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "362694": {
      "name": "Luke Shaw",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "422685": {
      "name": "Bruno Fernandes",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "465960": {
      "name": "Youri Tielemans",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "696365": {
      "name": "Marcus Rashford",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "750032": {
      "name": "Mason Mount",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "751550": {
      "name": "Diogo Dalot",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "769895": {
      "name": "Matthijs de Ligt",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "775539": {
      "name": "Noussair Mazraoui",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "847983": {
      "name": "Lisandro Martínez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "863098": {
      "name": "Matheus Cunha",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "923312": {
      "name": "Bryan Mbeumo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "950830": {
      "name": "Joshua Zirkzee",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1035614": {
      "name": "Manuel Ugarte",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1070052": {
      "name": "Amad Diallo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1073977": {
      "name": "Benjamin Šeško",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1178602": {
      "name": "Senne Lammens",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1292810": {
      "name": "Kobbie Mainoo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1352713": {
      "name": "Carlos Baleba",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1358581": {
      "name": "Leny Yoro",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1367699": {
      "name": "Dermot Mee",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1372921": {
      "name": "Andrey Santos",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1430832": {
      "name": "Harry Amass",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1436260": {
      "name": "Shea Lacey",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1526560": {
      "name": "Patrick Dorgu",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1559639": {
      "name": "Ayden Heaven",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1575707": {
      "name": "Jack Fletcher",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1676985": {
      "name": "Tyler Fletcher",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     }
    },
    "left": []
@@ -8445,7 +8451,7 @@
      "id": 827315,
      "name": "Nicolás Dominguez",
      "role": "midfielders",
-     "position": "CDM,LW,CM,CAM",
+     "position": "LW,CDM,CM,CAM",
      "number": 8,
      "age": 28,
      "born": "1998-06-28",
@@ -8521,7 +8527,7 @@
      "id": 1107648,
      "name": "James McAtee",
      "role": "midfielders",
-     "position": "CDM,CM,CAM,RW,LW",
+     "position": "CDM,CM,RW,LW,CAM",
      "number": 24,
      "age": 23,
      "born": "2002-10-18",
@@ -8689,7 +8695,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-09-28T19:47:27.474Z",
+   "fetchedAt": "2026-09-29T20:15:35.901Z",
    "coachHistory": [
     {
      "name": "Oliver Glasner",
@@ -8700,122 +8706,122 @@
     "169719": {
      "name": "Chris Wood",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "181069": {
      "name": "Matz Sels",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "620027": {
      "name": "Xaver Schlager",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "682548": {
      "name": "Ola Aina",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "749834": {
      "name": "John Victor",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "766611": {
      "name": "Nikola Milenković",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "775614": {
      "name": "Ryan Yates",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "789502": {
      "name": "Morgan Gibbs-White",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "795371": {
      "name": "Ibrahim Sangaré",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "827315": {
      "name": "Nicolás Dominguez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "846383": {
      "name": "Callum Hudson-Odoi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "859282": {
      "name": "Daniel Muñoz",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "887969": {
      "name": "Steven Benda",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1022649": {
      "name": "Dan Ndoye",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1078788": {
      "name": "Neco Williams",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1082102": {
      "name": "Igor Jesus",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1095445": {
      "name": "Arnaud Kalimuendo-Muinga",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1107648": {
      "name": "James McAtee",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1113903": {
      "name": "Liam Delap",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1155130": {
      "name": "Luca Netz",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1391209": {
      "name": "Jair Cunha",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1425182": {
      "name": "Ousmane Diomande",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1458711": {
      "name": "Murillo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1622290": {
      "name": "Nicolò Savona",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     }
    },
    "left": []
@@ -8918,7 +8924,10 @@
      "penalties": 0,
      "yellow": 2,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "42",
+      "expectedReturn": "Doubtful"
+     }
     },
     {
      "id": 277771,
@@ -9092,25 +9101,6 @@
      "injury": null
     },
     {
-     "id": 1327319,
-     "name": "Chris Rigg",
-     "role": "midfielders",
-     "position": "RW,CAM,CDM",
-     "number": 11,
-     "age": 19,
-     "born": "2007-06-18",
-     "country": "England",
-     "height": 175,
-     "value": null,
-     "rating": 6.09,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
      "id": 1285866,
      "name": "Habib Diarra",
      "role": "midfielders",
@@ -9136,7 +9126,7 @@
      "id": 1359649,
      "name": "Noah Sadiki",
      "role": "midfielders",
-     "position": "CDM,CM,CAM",
+     "position": "CDM,CM,CAM,ST",
      "number": 27,
      "age": 21,
      "born": "2004-12-17",
@@ -9231,7 +9221,7 @@
      "id": 1368654,
      "name": "Chemsdine Talbi",
      "role": "attackers",
-     "position": "LW,RW,LM",
+     "position": "LW,LM,RW",
      "number": 7,
      "age": 21,
      "born": "2005-05-09",
@@ -9265,7 +9255,7 @@
      "red": 0,
      "injury": {
       "typeId": "42",
-      "expectedReturn": "About 1-2 weeks"
+      "expectedReturn": "Doubtful"
      }
     },
     {
@@ -9284,6 +9274,25 @@
      "assists": 1,
      "penalties": 0,
      "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1327319,
+     "name": "Chris Rigg",
+     "role": "attackers",
+     "position": "RW,CDM,CAM",
+     "number": 11,
+     "age": 19,
+     "born": "2007-06-18",
+     "country": "England",
+     "height": 175,
+     "value": null,
+     "rating": 6.09,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
      "red": 0,
      "injury": null
     },
@@ -9367,7 +9376,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-09-28T19:47:27.474Z",
+   "fetchedAt": "2026-09-29T20:15:35.901Z",
    "coachHistory": [
     {
      "name": "Régis Le Bris",
@@ -9378,142 +9387,142 @@
     "180646": {
      "name": "Simon Moore",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "207236": {
      "name": "Granit Xhaka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "277771": {
      "name": "Thomas Meunier",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "434498": {
      "name": "Alan Browne",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "480253": {
      "name": "Luke O'Nien",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "600524": {
      "name": "Reinildo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "602304": {
      "name": "Nordi Mukiele",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "751998": {
      "name": "Omar Alderete",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "754126": {
      "name": "Kevin Danso",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "887703": {
      "name": "Wilson Isidor",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "940446": {
      "name": "Brian Brobbey",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "963940": {
      "name": "Ajibola Alese",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "974268": {
      "name": "Daniel Ballard",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1049999": {
      "name": "Enzo Le Fée",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1067763": {
      "name": "Trai Hume",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1123947": {
      "name": "Romaine Mundle",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1125720": {
      "name": "Robin Roefs",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1186615": {
      "name": "Melker Ellborg",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1239583": {
      "name": "Abdoullah Ba",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1285866": {
      "name": "Habib Diarra",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1287010": {
      "name": "Nilson Angulo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1327319": {
      "name": "Chris Rigg",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1359649": {
      "name": "Noah Sadiki",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1364069": {
      "name": "Malick Fofana",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1368654": {
      "name": "Chemsdine Talbi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1664716": {
      "name": "Dayann Méthalie",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1811265": {
      "name": "Jules Ahoka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1829355": {
      "name": "Juan Angulo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     }
    },
    "left": []
@@ -9799,7 +9808,7 @@
      "id": 1047676,
      "name": "Yéremi Pino",
      "role": "midfielders",
-     "position": "CAM,LW,RW,LM",
+     "position": "CAM,LW,RW",
      "number": 10,
      "age": 23,
      "born": "2002-10-20",
@@ -10065,7 +10074,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-09-28T19:47:27.474Z",
+   "fetchedAt": "2026-09-29T20:15:35.901Z",
    "coachHistory": [
     {
      "name": "Pierre Sage",
@@ -10076,142 +10085,142 @@
     "295067": {
      "name": "Will Hughes",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "448897": {
      "name": "Walter Benítez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "466672": {
      "name": "Jefferson Lerma",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "562726": {
      "name": "Remi Matthews",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "621515": {
      "name": "Daichi Kamada",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "664444": {
      "name": "Takehiro Tomiyasu",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "672469": {
      "name": "Ben Chilwell",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "696646": {
      "name": "Axel Disasi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "706297": {
      "name": "Jean-Philippe Mateta",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "719330": {
      "name": "Dean Henderson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "771294": {
      "name": "Ismaïla Sarr",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "821100": {
      "name": "Jørgen Strand Larsen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "860920": {
      "name": "Edward Nketiah",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "939542": {
      "name": "Dwight McNeil",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "950829": {
      "name": "Chris Richards",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "951954": {
      "name": "Cheick Oumar Doucouré",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "952095": {
      "name": "Óscar Mingueza",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "970563": {
      "name": "Quinten Timber",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1047676": {
      "name": "Yéremi Pino",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1087966": {
      "name": "Evann Guessand",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1120224": {
      "name": "Tyrick Mitchell",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1187506": {
      "name": "Chadi Riad",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1296650": {
      "name": "Adam Wharton",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1329007": {
      "name": "Darío Osorio",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1455818": {
      "name": "Zavier Gozo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1477878": {
      "name": "Anan Khalaili",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1664722": {
      "name": "Jaydee Canvot",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1669629": {
      "name": "Honest Ahanor",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     }
    },
    "left": []
@@ -10753,7 +10762,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-09-28T19:47:27.474Z",
+   "fetchedAt": "2026-09-29T20:15:35.901Z",
    "coachHistory": [
     {
      "name": "Unai Emery",
@@ -10764,137 +10773,137 @@
     "195782": {
      "name": "Marco Bizot",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "215384": {
      "name": "Ross Barkley",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "258269": {
      "name": "Victor Nilsson Lindelöf",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "343748": {
      "name": "Leon Goretzka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "356406": {
      "name": "John McGinn",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "419664": {
      "name": "Tyrone Mings",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "610184": {
      "name": "Emiliano Buendía",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "729731": {
      "name": "Matty Cash",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "749661": {
      "name": "Tammy Abraham",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "760320": {
      "name": "Aaron Wan-Bissaka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "792645": {
      "name": "Pau Torres",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "816325": {
      "name": "Boubacar Kamara",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "966021": {
      "name": "Taylor Harwood-Bellis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "966026": {
      "name": "Ian Maatsen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1051097": {
      "name": "Matteo Ruggeri",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1053679": {
      "name": "Zion Suzuki",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1174672": {
      "name": "João Gomes",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1185748": {
      "name": "Amadou Onana",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1190033": {
      "name": "Lamare Bogarde",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1197347": {
      "name": "Nicolas Jackson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1203665": {
      "name": "Alejandro Garnacho",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1520063": {
      "name": "Johan Manzambi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1593857": {
      "name": "Ibrahim Mbaye",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1607333": {
      "name": "George Hemmings",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1656860": {
      "name": "Alysson Edward",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1714552": {
      "name": "Modou Kéba Cissé",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1729841": {
      "name": "Brian Madjo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     }
    },
    "left": []
@@ -11487,7 +11496,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-09-28T19:47:27.474Z",
+   "fetchedAt": "2026-09-29T20:15:35.901Z",
    "coachHistory": [
     {
      "name": "Marco Rose",
@@ -11498,152 +11507,152 @@
     "95336": {
      "name": "Fraser Forster",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "160447": {
      "name": "Adam Smith",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "439369": {
      "name": "Ryan Christie",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "562724": {
      "name": "Lewis Cook",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "674014": {
      "name": "David Brooks",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "729769": {
      "name": "Tyler Adams",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "766062": {
      "name": "Michele Di Gregorio",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "789630": {
      "name": "Marcus Tavernier",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "794253": {
      "name": "Justin Kluivert",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "956621": {
      "name": "Max Aarons",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "959407": {
      "name": "James Hill",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "979752": {
      "name": "Bafodé Diakité",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1027447": {
      "name": "Julián Araujo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1067256": {
      "name": "Djordje Petrović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1079557": {
      "name": "Amine Adli",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1098096": {
      "name": "Evanilson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1158512": {
      "name": "Juanlu Sánchez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1177358": {
      "name": "Adrien Truffert",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1233655": {
      "name": "Alex Scott",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1253827": {
      "name": "Daniel Jebbison",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1292092": {
      "name": "António Silva",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1324871": {
      "name": "Ben Gannon-Doak",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1327406": {
      "name": "Álvaro Rodriguez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1358655": {
      "name": "Julio Soler",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1449690": {
      "name": "Alex Tóth",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1460534": {
      "name": "Junior Kroupi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1478295": {
      "name": "Rayan",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1666977": {
      "name": "Veljko Milosavljević",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1697214": {
      "name": "Ben Winterburn",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "2251528": {
      "name": "Mack Allan",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     }
    },
    "left": []
@@ -12220,7 +12229,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-09-28T19:47:27.474Z",
+   "fetchedAt": "2026-09-29T20:15:35.901Z",
    "coachHistory": [
     {
      "name": "Frank Lampard",
@@ -12231,147 +12240,147 @@
     "189103": {
      "name": "Daniel Bentley",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "191174": {
      "name": "Jake Bidwell",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "302783": {
      "name": "Ben Wilson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "478357": {
      "name": "Matt Grimes",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "643717": {
      "name": "Taiwo Awoniyi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "711357": {
      "name": "Ethan Pinnock",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "759814": {
      "name": "Jay Dasilva",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "775355": {
      "name": "Gustavo Hamer",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "776184": {
      "name": "Brandon Thomas-Asante",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "798654": {
      "name": "Ephron Mason-Clark",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "845985": {
      "name": "Victor Torp",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "848268": {
      "name": "Haji Wright",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "856685": {
      "name": "Frank Onyeka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "863822": {
      "name": "Joel Latibeaudiere",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "866688": {
      "name": "Luke Woolfenden",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "955411": {
      "name": "Yann Gboho",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "962000": {
      "name": "Josh Eccles",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "982284": {
      "name": "Ellis Simms",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1025603": {
      "name": "Tatsuhiro Sakamoto",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1030830": {
      "name": "Jack Rudoni",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1074750": {
      "name": "Milan van Ewijk",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1089686": {
      "name": "Kaine Kesler-Hayden",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1161885": {
      "name": "Bobby Thomas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1187236": {
      "name": "Carl Rushworth",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1257648": {
      "name": "Aurèle Amenda",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1283034": {
      "name": "Loum Tchaouna",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1524069": {
      "name": "Sidiki Cherif",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1613300": {
      "name": "Stephen Mfuni",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1615927": {
      "name": "Caleb Yirenkyi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     }
    },
    "left": []
@@ -12863,7 +12872,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-09-28T19:47:27.474Z",
+   "fetchedAt": "2026-09-29T20:15:35.901Z",
    "coachHistory": [
     {
      "name": "Álvaro Arbeloa",
@@ -12874,127 +12883,127 @@
     "182962": {
      "name": "Tom Cairney",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "210114": {
      "name": "Benjamin Lecomte",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "215168": {
      "name": "Bernd Leno",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "465750": {
      "name": "Timothy Castagne",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "469804": {
      "name": "Kenny Tete",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "502420": {
      "name": "Harrison Reed",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "503659": {
      "name": "Joachim Andersen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "540963": {
      "name": "Sander Berge",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "604785": {
      "name": "Alex Iwobi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "662428": {
      "name": "Antonee Robinson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "773991": {
      "name": "Ryan Sessegnon",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "821728": {
      "name": "Jorge Cuenca",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "877401": {
      "name": "Calvin Bassey",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "889534": {
      "name": "Emile Smith Rowe",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1073980": {
      "name": "David Affengruber",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1113790": {
      "name": "Oscar Bobb",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1128945": {
      "name": "Rodrigo Muniz",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1281452": {
      "name": "Shea Charles",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1318400": {
      "name": "Kevin",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1339269": {
      "name": "Hugo Larsson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1403691": {
      "name": "César Palacios",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1413847": {
      "name": "Gonzalo García",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1422593": {
      "name": "Joshua King",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1508427": {
      "name": "Manuel Ángel",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1532672": {
      "name": "Jonah Kusi-Asare",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     }
    },
    "left": []
@@ -13065,7 +13074,7 @@
      "id": 357880,
      "name": "Andrew Robertson",
      "role": "defenders",
-     "position": "LB",
+     "position": "LB,LWB",
      "number": 3,
      "age": 32,
      "born": "1994-03-11",
@@ -13394,25 +13403,6 @@
      "injury": null
     },
     {
-     "id": 654908,
-     "name": "Richarlison",
-     "role": "attackers",
-     "position": "ST,LW",
-     "number": 9,
-     "age": 29,
-     "born": "1997-05-10",
-     "country": "Brazil",
-     "height": 184,
-     "value": 21555315,
-     "rating": 5.77,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
      "id": 1288111,
      "name": "Mathys Tel",
      "role": "attackers",
@@ -13552,7 +13542,7 @@
      }
     }
    ],
-   "fetchedAt": "2026-09-28T19:47:27.474Z",
+   "fetchedAt": "2026-09-29T20:15:35.901Z",
    "coachHistory": [
     {
      "name": "Roberto De Zerbi",
@@ -13563,32 +13553,32 @@
     "72241": {
      "name": "Martin Dúbravka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "276121": {
      "name": "Ben Davies",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "357880": {
      "name": "Andrew Robertson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "493165": {
      "name": "James Maddison",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "591734": {
      "name": "Dominic Solanke",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "620618": {
      "name": "Rodrigo Bentancur",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "654908": {
      "name": "Richarlison",
@@ -13598,110 +13588,117 @@
     "683402": {
      "name": "Tosin Adarabioyo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "785411": {
      "name": "Marcos Senesi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "839204": {
      "name": "Omar Marmoush",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "862993": {
      "name": "Brandon Austin",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "867414": {
      "name": "Sandro Tonali",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "891743": {
      "name": "Mohammed Kudus",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "935379": {
      "name": "Dejan Kulusevski",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "941573": {
      "name": "Pedro Porro",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "966027": {
      "name": "Conor Gallagher",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "974618": {
      "name": "Jan Paul van Hecke",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "976506": {
      "name": "Mykhaylo Mudryk",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1052898": {
      "name": "Destiny Udogie",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1097466": {
      "name": "Micky van de Ven",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1173787": {
      "name": "Xavi Simons",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1174337": {
      "name": "Sávio",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1288111": {
      "name": "Mathys Tel",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1323305": {
      "name": "Archie Gray",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1341387": {
      "name": "Wilson Odobert",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1341475": {
      "name": "Antonín Kinský",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1356312": {
      "name": "Mateus Fernandes",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     },
     "1386775": {
      "name": "Lucas Bergvall",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-28"
+     "lastSeen": "2026-09-29"
     }
    },
-   "left": []
+   "left": [
+    {
+     "id": "654908",
+     "name": "Richarlison",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-09-28"
+    }
+   ]
   }
  }
 }

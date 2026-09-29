@@ -1,6 +1,6 @@
 # Stockholm Internazionale (Div 1 Norra) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [SE3N](../../ligor/SE3N.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [SE3N](../../ligor/SE3N.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -37,3 +37,38 @@ Form senaste 8 (äldst → senast): VVVVVVVV · senaste match 2026-09-26
 | Örebro Syrianska | 2 | 2-0-0 | 5–2 | 2025-08-02 3-1 (h) |
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
+
+## Trupp (Transfermarkt, hämtad 2026-09-29)
+
+Tränare: Kiarash Livani. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Sixten Bringzén | Goalkeeper | 19 | Sweden | – | – | – | – | 0/0 |  |
+| 30 | Simon Röse Meyer | Goalkeeper | 33 | Sweden | – | – | – | – | 0/0 |  |
+| 35 | Christvie Mankindu | Goalkeeper | 16 | Sweden | – | – | – | – | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 5 | David Fällman | Centre-Back | 36 | Sweden | – | – | – | – | 0/0 |  |
+| 8 | Luka Dobrijevic | Centre-Back | 28 | Sweden | – | – | – | – | 0/0 |  |
+| 23 | David Tokpah | Centre-Back | 20 | Sweden | – | – | – | – | 0/0 |  |
+| 27 | Ziad Ghanoum | Centre-Back | 25 | Syria | – | – | – | – | 0/0 |  |
+| 19 | Wille Turegård | Centre-Back | 18 | Sweden | – | – | – | – | 0/0 |  |
+| 18 | Rasmus Allbäck | Left-Back | 22 | Sweden | – | – | – | – | 0/0 |  |
+| 22 | Cesar Weilid | Right-Back | 28 | Sweden | – | – | – | – | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 6 | Sebastián Loyola Nydén | Defensive Midfield | 29 | Sweden | – | – | – | – | 0/0 |  |
+| 17 | Alexander Bergendahl Kärki | Defensive Midfield | 30 | Sweden | – | – | – | – | 0/0 |  |
+| 13 | David Zlotnik | Central Midfield | 30 | Sweden | – | – | – | – | 0/0 |  |
+| 15 | Olle Edlund | Central Midfield | 26 | Sweden | – | – | – | – | 0/0 |  |
+| 3 | Swaibou Conta | Central Midfield | 23 | Sweden | – | – | – | – | 0/0 |  |
+| 16 | Oskar Jarde | Central Midfield | 18 | Sweden | – | – | – | – | 0/0 |  |
+| 11 | Tiago Silva Sanchez | Attacking Midfield | 24 | Sweden | – | – | – | – | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 10 | Marijan Cosic | Left Winger | 30 | Sweden | – | – | – | – | 0/0 |  |
+| 21 | Othmane Salama | Left Winger | 25 | Sweden | – | – | – | – | 0/0 |  |
+| 14 | Matheo Canoilas | Right Winger | 21 | Sweden | – | – | – | – | 0/0 |  |
+| 20 | Olle Leonardsson | Centre-Forward | 19 | Sweden | 75 k€ | – | – | – | 0/0 |  |
+| 9 | Lukas Sunesson | Centre-Forward | 27 | Sweden | – | – | – | – | 0/0 |  |
+| 7 | Michee Kabady Kantokoski | Centre-Forward | 21 | Sweden | – | – | – | – | 0/0 |  |
+| 26 | Ture Sahlin | Striker | 18 | Sweden | – | – | – | – | 0/0 |  |

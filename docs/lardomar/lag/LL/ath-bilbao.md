@@ -1,6 +1,6 @@
 # Ath Bilbao (La Liga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [LL](../../ligor/LL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [LL](../../ligor/LL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -56,9 +56,9 @@ Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: s
 | Motståndare | M | V-O-F | Mål | Mot marknaden | Kryss mot odds | Senast |
 |---|---|---|---|---|---|---|
 | Ath Madrid | 17 | 6-2-9 | 19–19 | +0,10 | −18 pe | 2026-09-05 3-0 (h) |
-| Barcelona | 17 | 1-4-12 | 7–30 | −0,33 | +1 pe | 2026-08-27 0-2 (b) |
 | Celta | 17 | 8-3-6 | 22–20 | +0,05 | −12 pe | 2026-08-30 2-0 (b) |
 | Sevilla | 17 | 7-3-7 | 19–18 | −0,04 | −11 pe | 2026-08-22 1-3 (h) |
+| Barcelona | 16 | 1-3-12 | 6–29 | −0,40 | −4 pe | 2026-08-27 0-2 (b) |
 | Getafe | 16 | 3-9-4 | 18–16 | −0,53 | +25 pe | 2026-04-05 0-2 (b) |
 | Sociedad | 16 | 5-4-7 | 20–21 | −0,17 | −7 pe | 2026-02-01 1-1 (h) |
 | Valencia | 16 | 5-6-5 | 13–14 | −0,28 | +9 pe | 2026-05-10 0-1 (h) |
@@ -92,7 +92,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-08-31 | Europa 2501 | Real Betis - Athletic Bilbao | 2 ✓ | 43 % | 39 % |
 | 2025-08-17 | Europa 2497 | Athletic Bilbao - Sevilla | 1 ✓ | 69 % | 58 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Edin Terzić. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

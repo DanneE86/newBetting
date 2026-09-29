@@ -1,6 +1,6 @@
 # Instituto (Liga Profesional) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -61,7 +61,7 @@ Form (äldst → senast): VVVOVFVV · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Diego Flores. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -75,15 +75,13 @@ Tränare: Diego Flores. Betyg, mål och assist gäller innevarande säsong enlig
 | | **Backar** | | | | | | | | | |
 | 2 | Hernán de la Fuente | RB | 29 | Argentina | 244 k€ | – | 0 | 0 | 0/0 |  |
 | 6 | Fernando Alarcón | CB | 32 | Argentina | 775 k€ | – | 0 | 0 | 0/0 |  |
-| 22 | Agustín Massaccesi | CB,RB | 24 | Argentina | 383 k€ | – | 0 | 0 | 0/0 |  |
-| 23 | Andrés Meli | LB | 26 | Argentina | 553 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Agustín Massaccesi | CB | 24 | Argentina | 383 k€ | – | 0 | 0 | 0/0 |  |
+| 23 | Andrés Meli | LM | 26 | Argentina | 553 k€ | – | 0 | 0 | 0/0 |  |
 | 26 | Leonel Mosevich | CB | 29 | Argentina | 704 k€ | – | 0 | 0 | 0/0 |  |
 | 30 | Jonathan Galván | CB | 34 | Argentina | 442 k€ | – | 0 | 0 | 0/0 |  |
 | 32 | Agustín Bravo | CB | 25 | Argentina | 398 k€ | – | 0 | 0 | 0/0 |  |
-| 33 | Iván Erquiaga | LB | 27 | Argentina | 124 k€ | – | 0 | 0 | 0/0 |  |
 | 70 | Genaro Ordóñez | Defender | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-|  | Ignacio Rossi | Midfielder | 23 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 3 | Diego Sosa | LM,LWB,LB | 29 | Argentina | 406 k€ | – | 0 | 0 | 0/0 |  |
 | 5 | Franco Moyano | CDM | 29 | Argentina | 570 k€ | – | 0 | 0 | 0/0 |  |
 | 8 | Jonás Acevedo | CAM | 29 | Argentina | 246 k€ | – | 0 | 0 | 0/0 |  |
@@ -106,3 +104,5 @@ Tränare: Diego Flores. Betyg, mål och assist gäller innevarande säsong enlig
 | 20 | Jhon Córdoba | CAM,RW,ST | 26 | Colombia | 1,0 M€ | – | 0 | 0 | 0/0 |  |
 | 25 | Lorenzo Albarracín | Attacker | 19 | Argentina | 763 k€ | – | 0 | 0 | 0/0 |  |
 | 72 | Luca Rafaelli | CAM | 18 | Argentina | – | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+
+Har lämnat truppen sedan vi började spara (2): Iván Erquiaga (senast 2026-09-29), Ignacio Rossi (senast 2026-09-29).

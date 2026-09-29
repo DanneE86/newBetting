@@ -1,6 +1,6 @@
 # AFC Malmö (Div 1 Södra) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [SE3S](../../ligor/SE3S.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [SE3S](../../ligor/SE3S.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -27,3 +27,42 @@ Form senaste 8 (äldst → senast): OFOOOFVV · senaste match 2026-09-27
 | Åtvidaberg | 2 | 0-1-1 | 2–5 | 2026-09-05 2-2 (h) |
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
+
+## Trupp (Transfermarkt, hämtad 2026-09-29)
+
+Tränare: Kristian Haynes. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 25 | Tyron Zecchin | Goalkeeper | 28 | Switzerland | – | – | – | – | 0/0 |  |
+| 31 | Philip Mårtensson | Goalkeeper | 33 | Sweden | – | – | – | – | 0/0 |  |
+| 1 | Ossian Brandin | Goalkeeper | 19 | Sweden | – | – | – | – | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+|  | Linus Larsen | Defender | 19 | Sweden | – | – | – | – | 0/0 |  |
+| 12 | Gabriel Hebrunn | Defender | 20 | Sweden | – | – | – | – | 0/0 |  |
+| 20 | Naim Sinanov | Defender | 20 | North Macedonia | – | – | – | – | 0/0 |  |
+| 3 | Albin Sjöstrand Bjurnemark | Centre-Back | 25 | Sweden | – | – | – | – | 0/0 |  |
+| 5 | Lucas Larsen | Centre-Back | 24 | Sweden | – | – | – | – | 0/0 |  |
+| 2 | Stefan Walid Karim | Centre-Back | 22 | Sweden | – | – | – | – | 0/0 |  |
+| 17 | Arton Podrimcaku | Left-Back | 24 | Sweden | – | – | – | – | 0/0 |  |
+| 22 | Eren Alievski | Left-Back | 21 | North Macedonia | – | – | – | – | 0/0 |  |
+| 4 | Stefan Arnshed | Right-Back | 29 | Sweden | – | – | – | – | 0/0 |  |
+| 21 | Fredrik Martinsson | Right-Back | 29 | Sweden | – | – | – | – | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Nicola Arcanjo-Köhler | Defensive Midfield | 27 | Germany | – | – | – | – | 0/0 |  |
+| 6 | Brwa Nouri | Defensive Midfield | 39 | Iraq | – | – | – | – | 0/0 |  |
+| 36 | Victor Kristiansson | Defensive Midfield | 28 | Sweden | – | – | – | – | 0/0 |  |
+|  | Markus Björkqvist | Central Midfield | 23 | Sweden | 175 k€ | – | – | – | 0/0 |  |
+| 14 | Lukas Minter Wettergren | Central Midfield | 21 | Sweden | – | – | – | – | 0/0 |  |
+| 10 | Anton Reuterskiöld | Attacking Midfield | 26 | Sweden | – | – | – | – | 0/0 |  |
+| 19 | Mahdi Fatahi | Attacking Midfield | 23 | Palestine | – | – | – | – | 0/0 |  |
+| 77 | Vicente Castro | Attacking Midfield | 25 | Chile | – | – | – | – | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 37 | Petar Petrovic | Left Winger | 31 | Sweden | – | – | – | – | 0/0 |  |
+|  | Kim Dickson | Right Winger | 24 | Sweden | – | – | – | – | 0/0 |  |
+| 9 | Filip Bohman | Centre-Forward | 29 | Sweden | – | – | – | – | 0/0 |  |
+| 11 | André Reinholdsson | Centre-Forward | 30 | Sweden | – | – | – | – | 0/0 |  |
+| 30 | Ahmed Awad | Centre-Forward | 34 | Palestine | – | – | – | – | 0/0 |  |
+| 8 | Kevin Harletun | Centre-Forward | 26 | Sweden | – | – | – | – | 0/0 |  |
+| 99 | Cihan Sener | Centre-Forward | 30 | Sweden | – | – | – | – | 0/0 |  |

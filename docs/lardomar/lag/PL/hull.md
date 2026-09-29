@@ -1,6 +1,6 @@
 # Hull (Premier League) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -78,7 +78,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-09-05 | Stryk 4969 | Hull - Aston Villa | X | 25 % | 24 % |
 | 2026-08-29 | Stryk 4968 | Coventry - Hull | 2 ✓ | 16 % | 20 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Sergej Jakirović. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -114,12 +114,12 @@ Tränare: Sergej Jakirović. Betyg, mål och assist gäller innevarande säsong 
 | 26 | Kieran Dowell | CAM | 28 | England | 383 k€ | – | 0 | 0 | 0/0 |  |
 | 27 | Regan Slater | CDM,CM | 27 | England | 1,5 M€ | 7,13 | 0 | 1 | 1/0 |  |
 | 29 | Lucas Gourna-Douath | CDM,CM | 23 | France | 3,7 M€ | 6,56 | 0 | 0 | 1/0 |  |
+| 33 | Abdülkadir Ömür | RW,CAM,CM | 27 | Turkiye | 1,3 M€ | – | 0 | 0 | 0/0 |  |
 | 36 | Christos Mouzakitis | CDM | 19 | Greece | 19,0 M€ | – | 0 | 0 | 0/0 |  |
 | 42 | Tim Iroegbunam | CDM,CM | 23 | England | 13,4 M€ | 6,67 | 0 | 0 | 1/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 7 | Sorba Thomas | LW,RW,RWB,RB,LM | 27 | Wales | 6,0 M€ | 5,90 | 0 | 0 | 0/0 |  |
+| 7 | Sorba Thomas | LW,RW,RWB,RB | 27 | Wales | 6,0 M€ | 5,90 | 0 | 0 | 0/0 |  |
 | 9 | Oli McBurnie | ST | 30 | Scotland | 1,6 M€ | 6,92 | 0 | 1 | 2/0 |  |
 | 10 | Mohamed Belloumi | RW,RM,CAM | 24 | Algeria | 2,4 M€ | 7,86 | 2 | 2 | 1/0 |  |
-| 33 | Abdülkadir Ömür | RW,CAM,CM | 27 | Turkiye | 1,3 M€ | – | 0 | 0 | 0/0 |  |
 | 47 | Robinio Vaz | ST | 19 | France | 11,8 M€ | 6,29 | 0 | 0 | 0/0 |  |
 | 50 | Mohamed-Ali Cho | RW,ST,CAM,RM | 22 | France | 13,2 M€ | 7,03 | 1 | 0 | 0/0 |  |

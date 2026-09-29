@@ -1,6 +1,6 @@
 # São Bernardo (Brasileirão Série B) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [BR2](../../ligor/BR2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [BR2](../../ligor/BR2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -30,7 +30,7 @@ Form senaste 8 (äldst → senast): OOFVFVVO · senaste match 2026-09-25
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Ricardo Catalá. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -40,7 +40,6 @@ Tränare: Ricardo Catalá. Betyg, mål och assist gäller innevarande säsong en
 | 1 | Alex Alves | GK | 39 | Brazil | 118 k€ | – | 0 | 0 | 0/0 |  |
 | 12 | Júnior Oliveira | GK | 36 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 22 | Léo Lang | GK | 28 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 23 | Arthur | Keeper | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 2 | Rodrigo Ferreira | RB,RM | 31 | Brazil | 133 k€ | – | 0 | 0 | 0/0 |  |
 | 3 | Hélder | CB | 36 | Brazil | 85 k€ | – | 0 | 0 | 0/0 |  |
@@ -62,7 +61,7 @@ Tränare: Ricardo Catalá. Betyg, mål och assist gäller innevarande säsong en
 | 20 | Felipe Rodrigues | Midfielder | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 26 | Dudu Miraíma | CM,CDM,CAM | 26 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 30 | Breno Melo | Midfielder | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 31 | Lucas Fernandes | CM | 29 | Brazil | 315 k€ | – | 0 | 0 | 0/0 |  |
+| 31 | Lucas Fernandes | CAM | 29 | Brazil | 315 k€ | – | 0 | 0 | 0/0 |  |
 | 32 | Rodrigo Andrade | CM | 29 | Brazil | 101 k€ | – | 0 | 0 | 0/0 |  |
 | 36 | Galdino | Midfielder | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 42 | Hyoran | CAM | 33 | Brazil | 262 k€ | – | 0 | 0 | 0/0 |  |
@@ -78,3 +77,5 @@ Tränare: Ricardo Catalá. Betyg, mål och assist gäller innevarande säsong en
 | 70 | Lucas Reis | Attacker | 25 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 89 | Daniel Amorim | ST | 37 | Brazil | 123 k€ | – | 0 | 0 | 0/0 |  |
 | 98 | Léo Jabá | ST | 28 | Brazil | 269 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Arthur (senast 2026-09-29).

@@ -1,6 +1,6 @@
 # Degerfors (Allsvenskan) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [AS](../../ligor/AS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [AS](../../ligor/AS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -59,7 +59,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-09-21 | Europa 2507 | Sirius - Degerfors | 2 ✓ | 10 % | 19 % |
 | 2025-08-24 | Europa 2499 | Degerfors - AIK | 2 | 18 % | 24 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Henok Goitom. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -86,7 +86,6 @@ Tränare: Henok Goitom. Betyg, mål och assist gäller innevarande säsong enlig
 | 22 | Nahom Girmai Netabay | CDM,RW,CM,CAM | 32 | Eritrea | 294 k€ | 6,93 | 1 | 3 | 5/0 |  |
 | 28 | Jesús Hernández | CB | 22 | Spain | 368 k€ | 6,51 | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-|  | Lorik Bunjaku | LW | 19 | Sweden | – | – | 0 | 0 | 0/0 |  |
 | 9 | Karim Boutera | ST | 21 | France | – | 6,32 | 0 | 0 | 3/0 |  |
 | 10 | Noel Milleskog | RW | 24 | Sweden | 700 k€ | 6,42 | 0 | 0 | 0/0 |  |
 | 11 | Dijan Vukojević | CAM,ST,LW,CM | 31 | Sweden | 311 k€ | 6,53 | 4 | 2 | 1/0 |  |
@@ -94,3 +93,5 @@ Tränare: Henok Goitom. Betyg, mål och assist gäller innevarande säsong enlig
 | 17 | Armann Taranis | ST,CAM | 25 | Denmark | 411 k€ | 6,49 | 2 | 0 | 1/0 |  |
 | 20 | Elias Barsoum | LW,CM,CDM | 24 | Sweden | 400 k€ | 6,56 | 0 | 2 | 1/0 |  |
 | 23 | Robin Dzabic | RW,CM,ST | 25 | Sweden | 388 k€ | 6,77 | 0 | 1 | 3/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Lorik Bunjaku (senast 2026-09-29).

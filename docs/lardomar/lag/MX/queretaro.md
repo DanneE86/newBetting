@@ -1,6 +1,6 @@
 # Queretaro (Liga MX) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [MX](../../ligor/MX.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [MX](../../ligor/MX.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -49,10 +49,10 @@ Form (äldst → senast): FVVOFVVO · senaste match 2026-09-21
 | Club Leon | 16 | 2-4-10 | 13–34 | −0,42 | −2 pe | 2026-09-21 1-1 (h) |
 | Pachuca | 16 | 5-5-6 | 16–19 | +0,27 | +5 pe | 2026-07-27 2-1 (b) |
 | Santos Laguna | 16 | 6-3-7 | 23–27 | +0,17 | −8 pe | 2026-02-28 2-2 (h) |
-| Tigres UANL | 16 | 2-4-10 | 7–27 | −0,21 | +0 pe | 2026-08-02 3-2 (h) |
 | Atlas | 15 | 4-3-8 | 18–26 | −0,15 | −9 pe | 2026-08-30 3-1 (b) |
 | Monterrey | 15 | 3-3-9 | 12–25 | −0,04 | −4 pe | 2026-03-05 0-4 (b) |
 | Puebla | 15 | 5-5-5 | 18–17 | −0,02 | +5 pe | 2026-04-25 2-1 (b) |
+| Tigres UANL | 15 | 2-4-9 | 7–25 | −0,15 | +2 pe | 2026-08-02 3-2 (h) |
 | UNAM Pumas | 15 | 4-4-7 | 15–24 | −0,05 | −1 pe | 2026-08-16 0-0 (b) |
 | Atl. San Luis | 14 | 6-2-6 | 18–23 | +0,15 | −14 pe | 2026-02-14 0-3 (b) |
 | Guadalajara Chivas | 14 | 2-7-5 | 14–19 | −0,05 | +23 pe | 2026-01-17 1-2 (b) |
@@ -60,7 +60,7 @@ Form (äldst → senast): FVVOFVVO · senaste match 2026-09-21
 
 Ligans test av inbördes möten mot marknaden: svag signal (inte bekräftad).
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Esteban González. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -83,7 +83,7 @@ Tränare: Esteban González. Betyg, mål och assist gäller innevarande säsong 
 | 4 | Carlo García | CDM,CM | 25 | Spain | 818 k€ | – | 0 | 0 | 0/0 |  |
 | 5 | Santiago Homenchenko | CDM,CM,CB | 23 | Uruguay | 1,9 M€ | – | 0 | 0 | 0/0 |  |
 | 7 | Iker Benito | RM | 24 | Spain | 1,2 M€ | – | 0 | 0 | 0/0 |  |
-| 8 | Bernardo Parra | CM,CDM | 21 | Mexico | 1,9 M€ | – | 0 | 0 | 0/0 |  |
+| 8 | Bernardo Parra | CM | 21 | Mexico | 1,9 M€ | – | 0 | 0 | 0/0 |  |
 | 18 | Erik Dueñas | CDM | 21 | Mexico | 559 k€ | – | 0 | 0 | 0/0 | skadad, åter Unknown |
 | 20 | Álex Alcalá | CAM | 20 | Mexico | 650 k€ | – | 0 | 0 | 0/0 |  |
 | 23 | Juan Robles | ST | 23 | Mexico | 563 k€ | – | 0 | 0 | 0/0 |  |

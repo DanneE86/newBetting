@@ -109,7 +109,6 @@ function auditLeague(code, lg) {
     tipsMarketOnly: pct(up.filter((t) => t.marketOnly).length, up.length),
     tipsDcKnown: pct(up.filter((t) => t.pro?.dc?.knownTeams).length, up.length),
     tipsCorners: pct(up.filter((t) => t.tips?.CORNERS).length, up.length),
-    tipsWeather: pct(up.filter((t) => t.pro?.weather).length, up.length),
     lineupRows: lineupBy.get(code) ?? 0,
     hitrate: accN ? accC / accN : null,
     hitrateN: accN,
@@ -141,7 +140,6 @@ function gapsFor(r) {
   if (!r.cup && r.upcomingTips && (r.tipsCorners ?? 0) < 0.3) add(1, 'Horntips saknas (ingen hornhistorik)', 'kallan saknar HC/AC');
   if (!r.cup && r.upcomingTips && r.tipsDcKnown != null && r.tipsDcKnown < 0.7) add(2, `Dixon-Coles kanner bara ${Math.round(r.tipsDcKnown * 100)} % av lagen`, 'namnmatchning/nyuppflyttade lag');
   if (r.hitrateN >= 60 && r.hitrate < 0.47) add(2, `Svag traffsakerhet ${(r.hitrate * 100).toFixed(0)} % (n=${r.hitrateN})`, 'sank vikt/krav hogre edge i ligan');
-  if (r.upcomingTips && (r.tipsWeather ?? 0) < 0.3) add(1, 'Vader/arena saknas', 'npm run venues');
   return g.sort((a, b) => b.sev - a.sev);
 }
 
@@ -156,8 +154,7 @@ function coverageScore(r) {
     [10, r.shotsShare ?? 0],
     [10, r.upcomingTips ? r.tipsCorners ?? 0 : r.teamCornersShare ?? 0],
     [10, r.upcomingTips ? r.tipsDcKnown ?? 0 : 0],
-    [5, Math.max(r.clubEloShare ?? 0, r.xgShare ?? 0)],
-    [5, r.upcomingTips ? r.tipsWeather ?? 0 : 0],
+    [10, Math.max(r.clubEloShare ?? 0, r.xgShare ?? 0)], // vader borttaget ur tipsen, dess 5 p hit
   ];
   return Math.round(parts.reduce((s, [w, v]) => s + w * v, 0));
 }

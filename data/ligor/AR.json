@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-09-28T19:47:27.474Z",
+ "updatedAt": "2026-09-29T20:15:35.901Z",
  "league": "AR",
  "fotmobId": 112,
  "name": "Liga Profesional",
@@ -147,7 +147,7 @@
   },
   {
    "rank": 11,
-   "team": "Estudiantes Rio Cuarto",
+   "team": "Estudiantes L.P.",
    "fotmobName": "Estudiantes",
    "fotmobId": 10094,
    "group": "Clausura Group A",
@@ -217,7 +217,7 @@
   },
   {
    "rank": 1,
-   "team": "Boca Juniors",
+   "team": "Argentinos Jrs",
    "fotmobName": "Argentinos Juniors",
    "fotmobId": 10086,
    "group": "Clausura Group B",
@@ -245,7 +245,7 @@
   },
   {
    "rank": 3,
-   "team": "Independiente",
+   "team": "Ind. Rivadavia",
    "fotmobName": "Independiente Rivadavia",
    "fotmobId": 161729,
    "group": "Clausura Group B",
@@ -427,7 +427,7 @@
   },
   {
    "rank": 1,
-   "team": "Estudiantes Rio Cuarto",
+   "team": "Estudiantes L.P.",
    "fotmobName": "Estudiantes",
    "fotmobId": 10094,
    "group": "Apertura Group A",
@@ -637,7 +637,7 @@
   },
   {
    "rank": 1,
-   "team": "Independiente",
+   "team": "Ind. Rivadavia",
    "fotmobName": "Independiente Rivadavia",
    "fotmobId": 161729,
    "group": "Apertura Group B",
@@ -665,7 +665,7 @@
   },
   {
    "rank": 3,
-   "team": "Boca Juniors",
+   "team": "Argentinos Jrs",
    "fotmobName": "Argentinos Juniors",
    "fotmobId": 10086,
    "group": "Apertura Group B",
@@ -1179,6 +1179,428 @@
    ],
    [
     "Boca Juniors",
+    3,
+    16,
+    29,
+    4
+   ],
+   [
+    "Rosario Central",
+    4,
+    16,
+    28,
+    4
+   ],
+   [
+    "Belgrano",
+    5,
+    16,
+    26,
+    4
+   ],
+   [
+    "Gimnasia L.P.",
+    6,
+    16,
+    26,
+    0
+   ],
+   [
+    "Huracan",
+    7,
+    16,
+    22,
+    4
+   ],
+   [
+    "Racing Club",
+    8,
+    16,
+    21,
+    2
+   ],
+   [
+    "Barracas Central",
+    9,
+    16,
+    21,
+    0
+   ],
+   [
+    "Tigre",
+    10,
+    16,
+    20,
+    3
+   ],
+   [
+    "Sarmiento Junin",
+    11,
+    16,
+    19,
+    -7
+   ],
+   [
+    "Banfield",
+    12,
+    16,
+    18,
+    -2
+   ],
+   [
+    "Atl. Tucuman",
+    13,
+    16,
+    14,
+    -5
+   ],
+   [
+    "Aldosivi",
+    14,
+    16,
+    8,
+    -13
+   ],
+   [
+    "Estudiantes Rio Cuarto",
+    15,
+    16,
+    5,
+    -19
+   ]
+  ],
+  "2026-09-29": [
+   [
+    "Instituto",
+    1,
+    10,
+    22,
+    6
+   ],
+   [
+    "Velez Sarsfield",
+    2,
+    10,
+    20,
+    6
+   ],
+   [
+    "Defensa y Justicia",
+    3,
+    10,
+    18,
+    2
+   ],
+   [
+    "Gimnasia Mendoza",
+    4,
+    10,
+    17,
+    5
+   ],
+   [
+    "Boca Juniors",
+    5,
+    10,
+    17,
+    3
+   ],
+   [
+    "Independiente",
+    6,
+    10,
+    17,
+    2
+   ],
+   [
+    "Lanus",
+    7,
+    10,
+    16,
+    4
+   ],
+   [
+    "Newells Old Boys",
+    8,
+    10,
+    16,
+    3
+   ],
+   [
+    "Union de Santa Fe",
+    9,
+    10,
+    13,
+    1
+   ],
+   [
+    "San Lorenzo",
+    10,
+    10,
+    11,
+    -4
+   ],
+   [
+    "Estudiantes L.P.",
+    11,
+    10,
+    10,
+    -1
+   ],
+   [
+    "Dep. Riestra",
+    12,
+    10,
+    10,
+    -2
+   ],
+   [
+    "Platense",
+    13,
+    10,
+    9,
+    -6
+   ],
+   [
+    "Talleres Cordoba",
+    14,
+    10,
+    8,
+    -6
+   ],
+   [
+    "Central Cordoba",
+    15,
+    10,
+    8,
+    -6
+   ],
+   [
+    "Argentinos Jrs",
+    1,
+    10,
+    18,
+    4
+   ],
+   [
+    "Rosario Central",
+    2,
+    10,
+    18,
+    3
+   ],
+   [
+    "Ind. Rivadavia",
+    3,
+    10,
+    17,
+    1
+   ],
+   [
+    "Gimnasia L.P.",
+    4,
+    10,
+    17,
+    0
+   ],
+   [
+    "Belgrano",
+    5,
+    10,
+    16,
+    4
+   ],
+   [
+    "Huracan",
+    6,
+    10,
+    16,
+    2
+   ],
+   [
+    "Sarmiento Junin",
+    7,
+    10,
+    16,
+    1
+   ],
+   [
+    "River Plate",
+    8,
+    10,
+    13,
+    1
+   ],
+   [
+    "Atl. Tucuman",
+    9,
+    10,
+    13,
+    1
+   ],
+   [
+    "Tigre",
+    10,
+    10,
+    12,
+    0
+   ],
+   [
+    "Barracas Central",
+    11,
+    10,
+    12,
+    -2
+   ],
+   [
+    "Banfield",
+    12,
+    10,
+    9,
+    -5
+   ],
+   [
+    "Aldosivi",
+    13,
+    10,
+    8,
+    -4
+   ],
+   [
+    "Racing Club",
+    14,
+    10,
+    8,
+    -5
+   ],
+   [
+    "Estudiantes Rio Cuarto",
+    15,
+    10,
+    6,
+    -8
+   ],
+   [
+    "Estudiantes L.P.",
+    1,
+    16,
+    31,
+    12
+   ],
+   [
+    "Boca Juniors",
+    2,
+    16,
+    30,
+    13
+   ],
+   [
+    "Velez Sarsfield",
+    3,
+    16,
+    28,
+    6
+   ],
+   [
+    "Talleres Cordoba",
+    4,
+    16,
+    26,
+    4
+   ],
+   [
+    "Independiente",
+    5,
+    16,
+    24,
+    4
+   ],
+   [
+    "Lanus",
+    6,
+    16,
+    24,
+    3
+   ],
+   [
+    "San Lorenzo",
+    7,
+    16,
+    22,
+    0
+   ],
+   [
+    "Union de Santa Fe",
+    8,
+    16,
+    21,
+    4
+   ],
+   [
+    "Instituto",
+    9,
+    16,
+    21,
+    0
+   ],
+   [
+    "Defensa y Justicia",
+    10,
+    16,
+    19,
+    -3
+   ],
+   [
+    "Gimnasia Mendoza",
+    11,
+    16,
+    19,
+    -8
+   ],
+   [
+    "Platense",
+    12,
+    16,
+    16,
+    -5
+   ],
+   [
+    "Central Cordoba",
+    13,
+    16,
+    16,
+    -10
+   ],
+   [
+    "Newells Old Boys",
+    14,
+    16,
+    15,
+    -12
+   ],
+   [
+    "Dep. Riestra",
+    15,
+    16,
+    11,
+    -7
+   ],
+   [
+    "Ind. Rivadavia",
+    1,
+    16,
+    34,
+    14
+   ],
+   [
+    "River Plate",
+    2,
+    16,
+    29,
+    10
+   ],
+   [
+    "Argentinos Jrs",
     3,
     16,
     29,

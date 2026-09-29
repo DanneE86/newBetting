@@ -1,6 +1,6 @@
 # Alaves (La Liga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [LL](../../ligor/LL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [LL](../../ligor/LL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -91,7 +91,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-11-02 | Europa 2519 | Alavés - Espanyol | 1 ✓ | 41 % | 39 % |
 | 2025-09-24 | Europa 2508 | Getafe - Alavés | X | 18 % | 25 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Quique Sánchez Flores. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

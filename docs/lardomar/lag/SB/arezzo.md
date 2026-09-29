@@ -1,6 +1,6 @@
 # Arezzo (Serie B) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [SB](../../ligor/SB.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [SB](../../ligor/SB.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -36,7 +36,7 @@ Form (äldst → senast): VFFVF · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Cristian Bucchi. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -56,7 +56,7 @@ Tränare: Cristian Bucchi. Betyg, mål och assist gäller innevarande säsong en
 | 13 | Matteo Gilli | CB | 29 | Italy | 168 k€ | 6,16 | 0 | 0 | 1/0 |  |
 | 19 | Marco Chiosa | CB | 32 | Italy | 190 k€ | – | 0 | 0 | 0/0 |  |
 | 26 | Filippo De Col | RWB | 32 | Italy | 168 k€ | – | 0 | 0 | 0/0 |  |
-| 32 | Andrea Cagnano | LB,LWB | 28 | Italy | 250 k€ | 5,92 | 0 | 0 | 0/0 |  |
+| 32 | Andrea Cagnano | LB | 28 | Italy | 250 k€ | 5,92 | 0 | 0 | 0/0 |  |
 | 33 | Davide Mancini | CB | 21 | Italy | 227 k€ | – | 0 | 0 | 0/0 |  |
 | 37 | Samuele Righetti | LB | 24 | Italy | 524 k€ | 6,65 | 0 | 1 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |

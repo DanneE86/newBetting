@@ -1,6 +1,6 @@
 # Hvidovre (1. division) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [DK2](../../ligor/DK2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [DK2](../../ligor/DK2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -12,7 +12,7 @@ Form senaste 8 (äldst → senast): VVVOVVOV · senaste match 2026-09-19
 |---|---|---|---|---|---|---|---|
 | 2026/27 | 9 | 2,33 | 2,00 | 2,60 | 33 % | 2,00–1,00 | 67 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Martin Retov. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

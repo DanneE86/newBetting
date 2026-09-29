@@ -1,6 +1,6 @@
 # Atl. San Luis (Liga MX) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [MX](../../ligor/MX.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [MX](../../ligor/MX.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -53,7 +53,7 @@ Form (äldst → senast): OOFOVFFV · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: svag signal (inte bekräftad).
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Diego Mejía. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -69,7 +69,7 @@ Tränare: Diego Mejía. Betyg, mål och assist gäller innevarande säsong enlig
 | 2 | Román Torres | RB,RWB,RM | 21 | Mexico | 1,2 M€ | – | 0 | 0 | 0/0 |  |
 | 3 | Robson Bambu | CB | 28 | Brazil | 1,4 M€ | – | 0 | 0 | 0/0 | osäker |
 | 6 | Juanpe | CB | 35 | Spain | 342 k€ | – | 0 | 0 | 0/0 |  |
-| 14 | Miguel García | CB,LW,RW | 24 | Mexico | 1,4 M€ | – | 0 | 0 | 0/0 |  |
+| 14 | Miguel García | CB,LW | 24 | Mexico | 1,4 M€ | – | 0 | 0 | 0/0 |  |
 | 16 | Lucas Esteves | LWB,LB,LM,LW | 26 | Brazil | 1,5 M€ | – | 0 | 0 | 0/0 |  |
 | 18 | Aldo Cruz | LB,CB | 29 | Mexico | 657 k€ | – | 0 | 0 | 0/0 |  |
 | 30 | Benjamín Galindo | CB | 27 | Mexico | 452 k€ | – | 0 | 0 | 0/0 |  |
@@ -80,13 +80,13 @@ Tränare: Diego Mejía. Betyg, mål och assist gäller innevarande säsong enlig
 | 10 | Sébastien Salles-Lamonge | CM,CDM,ST,CAM,LM,LW | 30 | France | 1,2 M€ | – | 0 | 0 | 0/0 |  |
 | 11 | David Rodríguez | RM,RW,CAM | 24 | USA | 354 k€ | – | 0 | 0 | 0/0 |  |
 | 13 | Johan Caicedo | CM,CDM | 22 | Colombia | 957 k€ | – | 0 | 0 | 0/0 |  |
+| 17 | Anderson Duarte | LM,ST,LW,LWB | 22 | Uruguay | 1,7 M€ | – | 0 | 0 | 0/0 |  |
 | 21 | Óscar Macías | CM,CDM,CAM | 28 | Mexico | 605 k€ | – | 0 | 0 | 0/0 |  |
-| 22 | Rafa Llorente | CAM,LM,LW | 23 | Spain | 332 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Rafa Llorente | CAM,LW,LM | 23 | Spain | 332 k€ | – | 0 | 0 | 0/0 |  |
 | 26 | Sebastián Pérez Bouquet | CAM,CM | 23 | Mexico | 1,7 M€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 7 | Benjamín Galdames | RW,LW | 25 | Mexico | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| 7 | Benjamín Galdames | RW | 25 | Mexico | 1,6 M€ | – | 0 | 0 | 0/0 |  |
 | 9 | João Pedro | ST | 34 | Italy | 1,1 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid January 2027 |
-| 17 | Anderson Duarte | ST,LM,LW,LWB | 22 | Uruguay | 1,7 M€ | – | 0 | 0 | 0/0 |  |
 | 19 | Santiago Muñóz | RW | 24 | Mexico | 1,5 M€ | – | 0 | 0 | 0/0 |  |
 | 20 | Leonardo Flores | ST | 23 | Mexico | 1,1 M€ | – | 0 | 0 | 0/0 |  |
 | 28 | Jesús Medina | CM,RW,ST,RM | 29 | Paraguay | 1,2 M€ | – | 0 | 0 | 0/0 | osäker |

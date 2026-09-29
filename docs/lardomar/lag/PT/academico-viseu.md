@@ -1,6 +1,6 @@
 # Academico Viseu (Primeira Liga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [PT](../../ligor/PT.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [PT](../../ligor/PT.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -39,7 +39,7 @@ Form (äldst → senast): OFOFVVV · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Bruno Pinheiro. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -58,13 +58,12 @@ Tränare: Bruno Pinheiro. Betyg, mål och assist gäller innevarande säsong enl
 | 21 | Tomás Domingos | RB | 27 | Portugal | 261 k€ | 6,40 | 0 | 0 | 1/0 |  |
 | 41 | Anthony Correia | CB | 27 | France | 873 k€ | 6,62 | 0 | 1 | 2/0 |  |
 | 44 | Rúben Pereira | CB | 28 | Portugal | 297 k€ | 6,91 | 1 | 0 | 1/0 |  |
-| 57 | Gu Costa | LB,LM | 21 | Portugal | 1,2 M€ | 6,65 | 0 | 0 | 1/0 |  |
+| 57 | Gu Costa | LB | 21 | Portugal | 1,2 M€ | 6,65 | 0 | 0 | 1/0 |  |
 | 66 | Igor Milioransa | LB | 30 | Brazil | 257 k€ | 6,61 | 0 | 0 | 1/0 |  |
 | 75 | Robinho | RB | 29 | Portugal | 291 k€ | 7,06 | 0 | 1 | 1/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-|  | Tomas Silva | CDM | 22 | Portugal | 370 k€ | – | 0 | 0 | 0/0 |  |
 | 6 | André Ceitil | CDM | 31 | Portugal | 253 k€ | 6,08 | 0 | 0 | 2/0 |  |
-| 7 | Luís Silva | CDM,CM | 33 | Portugal | 256 k€ | 6,55 | 0 | 0 | 2/0 |  |
+| 7 | Luís Silva | CDM,CM | 34 | Portugal | 256 k€ | 6,55 | 0 | 0 | 2/0 |  |
 | 8 | Cihan Kahraman | CAM,CM | 27 | Turkiye | 287 k€ | 7,13 | 0 | 4 | 1/0 |  |
 | 14 | Soufiane Messeguem | CDM,CM,CAM | 25 | Germany | 942 k€ | 6,63 | 1 | 0 | 2/0 |  |
 | 18 | Cristian Ferreira | CDM | 27 | Argentina | 337 k€ | 6,09 | 0 | 0 | 0/0 |  |
@@ -80,3 +79,5 @@ Tränare: Bruno Pinheiro. Betyg, mål och assist gäller innevarande säsong enl
 | 33 | André Clovis | ST | 28 | Brazil | 1,8 M€ | 6,95 | 4 | 0 | 1/0 |  |
 | 47 | Lorougnon Gohi | RW,LW | 22 | Ivory Coast | 508 k€ | 6,78 | 1 | 0 | 0/0 |  |
 | 77 | Paulinho | ST | 27 | Portugal | 308 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Tomas Silva (senast 2026-09-29).

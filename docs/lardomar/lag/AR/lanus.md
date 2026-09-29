@@ -1,10 +1,10 @@
 # Lanus (Liga Profesional) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
-- Stark historik mot Talleres Cordoba (+1,28 p/match mot marknaden, 13 möten), Newells Old Boys (−0,82 p/match mot marknaden, 11 möten), San Lorenzo (+0,68 p/match mot marknaden, 11 möten), River Plate (−0,58 p/match mot marknaden, 8 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Stark historik mot Talleres Cordoba (+1,28 p/match mot marknaden, 13 möten), Newells Old Boys (−0,82 p/match mot marknaden, 11 möten), San Lorenzo (+0,68 p/match mot marknaden, 11 möten), River Plate (−0,52 p/match mot marknaden, 7 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -59,9 +59,9 @@ Form (äldst → senast): FVFOFVVV · senaste match 2026-09-22
 | Sarmiento Junin | 9 | 4-3-2 | 9–5 | −0,06 | +4 pe | 2025-07-25 2-0 (b) |
 | Argentinos Jrs | 8 | 1-3-4 | 3–11 | −0,46 | +5 pe | 2026-08-25 1-1 (h) |
 | Huracan | 8 | 3-1-4 | 5–8 | −0,10 | −19 pe | 2024-09-22 0-3 (b) |
-| River Plate | 8 | 0-2-6 | 5–19 | −0,58 | −1 pe | 2025-08-26 1-1 (h) |
 | Tigre | 8 | 3-2-3 | 11–11 | −0,10 | −6 pe | 2025-11-27 0-1 (h) |
 | Racing Club | 7 | 2-0-5 | 5–10 | −0,29 | −29 pe | 2024-06-14 2-0 (h) |
+| River Plate | 7 | 0-2-5 | 4–14 | −0,52 | +3 pe | 2025-08-26 1-1 (h) |
 | Instituto | 6 | 2-2-2 | 9–6 | −0,16 | +1 pe | 2026-08-03 0-1 (h) |
 | Aldosivi | 5 | 2-0-3 | 6–8 | −0,35 | −28 pe | 2022-07-31 0-1 (h) |
 | Belgrano | 5 | 4-1-0 | 9–3 | +1,03 | −12 pe | 2024-07-25 3-2 (h) |
@@ -72,61 +72,36 @@ Form (äldst → senast): FVFOFVVV · senaste match 2026-09-22
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Mauricio Pellegrino. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Luciano Romero (skadad, åter Mid October 2026), Felipe Peña Biafore (osäker), Ramiro Carrera (osäker)
+**Skadade/borta nu:** Felipe Peña Biafore (osäker), Ramiro Carrera (osäker)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
 | 1 | Franco Petroli | GK | 28 | Argentina | 1,3 M€ | – | 0 | 0 | 0/0 |  |
-| 12 | Evaristo Dieguiz | Keeper | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 26 | Nahuel Losada | GK | 33 | Argentina | 2,0 M€ | – | 0 | 0 | 0/0 |  |
-| 31 | Martín Díaz | Keeper | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 45 | Tomás Silva | Keeper | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Luciano Romero | LB | 20 | Argentina | 574 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 3 | Nicolás Morgantini | RB | 32 | Argentina | 436 k€ | – | 0 | 0 | 0/0 |  |
 | 4 | Gonzalo Pérez | RB,CDM | 25 | Uruguay | 1,2 M€ | – | 0 | 0 | 0/0 |  |
 | 6 | Sasha Marcich | LB | 28 | Argentina | 2,1 M€ | – | 0 | 0 | 0/0 |  |
 | 13 | José Canale | CB | 30 | Paraguay | 1,2 M€ | – | 0 | 0 | 0/0 |  |
 | 24 | Carlos Izquierdoz | CB | 37 | Argentina | 584 k€ | – | 0 | 0 | 0/0 |  |
-| 28 | Octavio Ontívero | LB | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 32 | Tobías Quiroz | CB | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 33 | Tomás Guidara | RB | 30 | Argentina | 972 k€ | – | 0 | 0 | 0/0 |  |
-| 34 | Elian Acosta | Defender | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 35 | Ronaldo Dejesús | CB | 25 | Paraguay | 1,2 M€ | – | 0 | 0 | 0/0 |  |
-| 40 | Tomás López | Defender | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 42 | Sebastián Leiva | Defender | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 43 | Mateo Ramírez | Defender | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 46 | Elías Prieto | Defender | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 49 | Gabriel Aguirre | Defender | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-|  | Thiago Mejías | Midfielder | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 5 | Felipe Peña Biafore | CDM,CM | 25 | Argentina | 1,4 M€ | – | 0 | 0 | 0/0 | osäker |
-| 8 | Franco Watson | CAM,LW,RW | 24 | Argentina | 667 k€ | – | 0 | 0 | 0/0 |  |
+| 8 | Franco Watson | CAM,RW | 24 | Argentina | 667 k€ | – | 0 | 0 | 0/0 |  |
 | 10 | Marcelino Moreno | CAM,ST | 31 | Argentina | 2,3 M€ | – | 0 | 0 | 0/0 |  |
 | 15 | Raúl Loaiza | CDM | 32 | Colombia | 403 k€ | – | 0 | 0 | 0/0 |  |
 | 16 | Matías Sepúlveda | RW,LM,RM,CM | 27 | Chile | 901 k€ | – | 0 | 0 | 0/0 |  |
-| 17 | Agustín Medina | CDM,CM | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 27 | Facundo Sánchez | CM | 21 | Argentina | 644 k€ | – | 0 | 0 | 0/0 |  |
 | 30 | Agustín Cardozo | CDM,CM | 29 | Argentina | 1,7 M€ | – | 0 | 0 | 0/0 |  |
-| 38 | Benjamín Acosta | RM | 20 | Argentina | 376 k€ | – | 0 | 0 | 0/0 |  |
-| 39 | Thiago Laplace | Midfielder | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 47 | Juan Mujica | Midfielder | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 48 | Ian López | Midfielder | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 50 | Tiago Domínguez | Midfielder | 17 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 11 | Eduardo Salvio | RW,LW,RM,CAM,LM | 36 | Argentina | 761 k€ | – | 0 | 0 | 0/0 |  |
-| 18 | Jeremías Chavero | Attacker | 20 | Argentina | 609 k€ | – | 0 | 0 | 0/0 |  |
-| 19 | Yoshan Valois | ST | 21 | Colombia | 1,6 M€ | – | 0 | 0 | 0/0 |  |
 | 20 | Allan Wlk | ST | 23 | Paraguay | 733 k€ | – | 0 | 0 | 0/0 |  |
-| 21 | Alexis Duarte | Attacker | 19 | Paraguay | – | – | 0 | 0 | 0/0 |  |
 | 23 | Ramiro Carrera | LW,ST,CAM,CDM | 32 | Argentina | 640 k€ | – | 0 | 0 | 0/0 | osäker |
-| 29 | Dante Blanco | Attacker | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 41 | Thiago Balbuena | Attacker | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 42 | Gonzalo Lobos | LW | 19 | Paraguay | – | – | 0 | 0 | 0/0 |  |
-| 44 | Mateo Peralta | Attacker | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 77 | Lucas Besozzi | LW,RW | 23 | Argentina | 759 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (27): Luciano Romero (senast 2026-09-29), Thiago Laplace (senast 2026-09-29), Yoshan Valois (senast 2026-09-29), Octavio Ontívero (senast 2026-09-29), Thiago Balbuena (senast 2026-09-29), Agustín Medina (senast 2026-09-29), Benjamín Acosta (senast 2026-09-29), Jeremías Chavero (senast 2026-09-29), Facundo Sánchez (senast 2026-09-29), Tobías Quiroz (senast 2026-09-29), Evaristo Dieguiz (senast 2026-09-29), Thiago Mejías (senast 2026-09-28), Mateo Peralta (senast 2026-09-29), Tomás López (senast 2026-09-29), Gonzalo Lobos (senast 2026-09-29), Martín Díaz (senast 2026-09-29), Sebastián Leiva (senast 2026-09-29), Mateo Ramírez (senast 2026-09-29), Alexis Duarte (senast 2026-09-29), Dante Blanco (senast 2026-09-29), Juan Mujica (senast 2026-09-29), Tomás Silva (senast 2026-09-29), Elian Acosta (senast 2026-09-29), Elías Prieto (senast 2026-09-29), Tiago Domínguez (senast 2026-09-29), Ian López (senast 2026-09-29), Gabriel Aguirre (senast 2026-09-29).

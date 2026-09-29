@@ -1,6 +1,6 @@
 # Deportivo Pereira (Primera A) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [COL](../../ligor/COL.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [COL](../../ligor/COL.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -39,7 +39,7 @@ Form senaste 8 (äldst → senast): OOVFOFOO · senaste match 2026-09-26
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Arturo Reyes. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -67,7 +67,7 @@ Tränare: Arturo Reyes. Betyg, mål och assist gäller innevarande säsong enlig
 | 8 | Luis Mosquera | CAM | 24 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 10 | Sebastián Acosta | CAM,ST,CM | 31 | Colombia | 234 k€ | – | 0 | 0 | 0/0 |  |
 | 14 | Ederson Moreno | CM | 32 | Colombia | 272 k€ | – | 0 | 0 | 0/0 |  |
-| 20 | Jordy Monroy | RW,CM,RWB,RB,RM | 30 | Armenia | 249 k€ | – | 0 | 0 | 0/0 |  |
+| 20 | Jordy Monroy | RW,CM,RWB,RM | 30 | Armenia | 249 k€ | – | 0 | 0 | 0/0 |  |
 | 24 | Miguel Palacios | Midfielder | 21 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 38 | Juan Belalcazar | Midfielder | 18 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
@@ -76,8 +76,8 @@ Tränare: Arturo Reyes. Betyg, mål och assist gäller innevarande säsong enlig
 |  | Manuel Diaz | ST | 21 | Colombia | – | – | 0 | 0 | 0/0 |  |
 |  | Santiago Álzate | CB | 19 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 7 | Ánderson Plata | RW | 35 | Colombia | 200 k€ | – | 0 | 0 | 0/0 |  |
-| 11 | Jhon Largacha | ST,LW,RW,CAM,CB | 25 | Colombia | – | – | 0 | 0 | 0/0 |  |
-| 13 | Yúber Quiñones | LW,ST,RW,CM,LM | 23 | Colombia | 553 k€ | – | 0 | 0 | 0/0 |  |
+| 11 | Jhon Largacha | ST,RW,CAM,CB | 25 | Colombia | – | – | 0 | 0 | 0/0 |  |
+| 13 | Yúber Quiñones | LW,ST,CM,RW,LM | 23 | Colombia | 553 k€ | – | 0 | 0 | 0/0 |  |
 | 18 | Marco Pérez | ST | 36 | Colombia | 280 k€ | – | 0 | 0 | 0/0 |  |
 | 19 | Miguel Aguirre | RW,CAM,LW,CM,ST | 21 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 26 | Jhon Montoya | LW | 20 | Colombia | – | – | 0 | 0 | 0/0 |  |

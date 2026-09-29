@@ -1,6 +1,6 @@
 # Wrexham (Championship) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -82,7 +82,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-09-05 | Stryk 4969 | Swansea - Wrexham | X | 24 % | 30 % |
 | 2026-08-22 | Stryk 4967 | Wrexham - Watford | X | 62 % | 53 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Phil Parkinson. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -117,10 +117,11 @@ Tränare: Phil Parkinson. Betyg, mål och assist gäller innevarande säsong enl
 | 33 | Nathan Broadhead | CAM,ST,CM | 28 | Wales | 4,6 M€ | 6,95 | 0 | 0 | 1/0 | skadad, åter Early October 2026 |
 | 34 | Aaron James | RWB | 21 | Wales | – | – | 0 | 0 | 0/0 |  |
 | 37 | Matthew James | CDM,CM | 35 | England | 266 k€ | 6,72 | 0 | 0 | 0/0 |  |
-| 38 | Elliot Lee | CAM,ST | 31 | England | 280 k€ | – | 0 | 0 | 0/0 |  |
 | 47 | Ryan Longman | RWB,LWB,RM,RW,LM | 25 | England | 1,5 M€ | 6,25 | 0 | 0 | 0/0 |  |
 | 98 | Joe Rees | Midfielder | 18 | Wales | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 11 | Bailey Cadamarteri | ST,CAM | 21 | Jamaica | 2,1 M€ | 5,98 | 0 | 0 | 1/0 |  |
 | 19 | Kieffer Moore | ST | 34 | Wales | 1,1 M€ | 7,03 | 3 | 0 | 1/0 |  |
 | 28 | Sam Smith | ST | 28 | England | 955 k€ | 6,11 | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Elliot Lee (senast 2026-09-29).

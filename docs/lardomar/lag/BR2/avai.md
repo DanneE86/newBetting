@@ -1,6 +1,6 @@
 # Avaí (Brasileirão Série B) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [BR2](../../ligor/BR2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [BR2](../../ligor/BR2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -43,62 +43,43 @@ Form senaste 8 (äldst → senast): VVFFFOFF · senaste match 2026-09-27
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Allan Rodrigo Aal. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-|  | Matheus Millnitz | Keeper | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 1 | Igor Bohn | GK | 30 | Brazil | 203 k€ | – | 0 | 0 | 0/0 |  |
 | 21 | Otávio | GK | 33 | Brazil | 160 k€ | – | 0 | 0 | 0/0 |  |
-| 33 | Léo | Keeper | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 94 | Bruno Ferreira | GK | 32 | Brazil | 266 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-|  | Diego | Defender | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Kauã Fernandes | Defender | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Kauã Reis | Defender | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Vinicius Melo | Defender | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 2 | Wallison | RB | 25 | Brazil | 311 k€ | – | 0 | 0 | 0/0 |  |
 | 3 | Allyson | CB | 35 | Brazil | 124 k€ | – | 0 | 0 | 0/0 |  |
-| 4 | Gabriel Simples | RB,CB | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 15 | Guilherme Aquino | CB | 22 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 22 | João Vitor | RB,RM | 24 | Brazil | 190 k€ | – | 0 | 0 | 0/0 |  |
-| 26 | Vinicius Alemão | Defender | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 35 | Pedrão | CB | 22 | Brazil | 287 k€ | – | 0 | 0 | 0/0 |  |
 | 36 | Douglas Teixeira | LB,LM | 25 | Brazil | 321 k€ | – | 0 | 0 | 0/0 |  |
 | 38 | Jefferson | CB | 23 | Brazil | 296 k€ | – | 0 | 0 | 0/0 |  |
 | 40 | Reynaldo | CB | 29 | Brazil | 600 k€ | – | 0 | 0 | 0/0 |  |
 | 66 | Quaresma | LB | 30 | Brazil | 193 k€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-|  | Juninho | Midfielder | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Kauan Felipe | Midfielder | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Vinicius | Midfielder | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 5 | Del Piage | CDM | 26 | Brazil | 229 k€ | – | 0 | 0 | 0/0 |  |
 | 8 | Luiz Henrique | CDM,CM,CAM | 27 | Brazil | 239 k€ | – | 0 | 0 | 0/0 |  |
-| 14 | Daniel Penha | CAM,ST,RW | 27 | Brazil | 306 k€ | – | 0 | 0 | 0/0 |  |
 | 18 | Hyan | Midfielder | 22 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 25 | Paulo Vitor | CDM,CM | 22 | Brazil | 1,1 M€ | – | 0 | 0 | 0/0 |  |
 | 27 | Pedro Cuiabá | CM | 24 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 56 | William Fernando | LM | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 77 | Zé Ricardo | CDM,CM,RM | 30 | Brazil | 284 k€ | – | 0 | 0 | 0/0 |  |
-| 90 | Kevin | Midfielder | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 95 | Wenderson | CM,LW,CAM | 27 | Brazil | 658 k€ | – | 0 | 0 | 0/0 |  |
+| 95 | Wenderson | LW,CAM | 27 | Brazil | 658 k€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-|  | Caio Brazil | Attacker | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Samuel | Attacker | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 7 | Léo Chú | LW | 26 | Brazil | 981 k€ | – | 0 | 0 | 0/0 |  |
 | 9 | Léo Gamalho | ST | 40 | Brazil | 237 k€ | – | 0 | 0 | 0/0 |  |
 | 10 | Jean Lucas | LW,CAM,ST | 31 | Brazil | 240 k€ | – | 0 | 0 | 0/0 |  |
 | 11 | Felipe Vizeu | ST | 29 | Brazil | 253 k€ | – | 0 | 0 | 0/0 |  |
+| 14 | Daniel Penha | CAM,ST,RW | 27 | Brazil | 306 k€ | – | 0 | 0 | 0/0 |  |
 | 17 | Juan Rocha | Attacker | 22 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 19 | Caio Suassuna | ST | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 20 | Isaías Pereira | Attacker | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 29 | Marcio Vitor | Attacker | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 30 | Kauã Gabriel | Attacker | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 37 | Rildo | LW | 26 | Brazil | 335 k€ | – | 0 | 0 | 0/0 |  |
 | 39 | Gabriel Cipriano | RW | 26 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 59 | Filipe | Attacker | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 60 | Tucão | Attacker | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 70 | Gaspar | LM | 24 | Brazil | 169 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (21): Vinicius (senast 2026-09-28), Kauã Gabriel (senast 2026-09-29), Kevin (senast 2026-09-29), Léo (senast 2026-09-29), Tucão (senast 2026-09-29), Kauã Fernandes (senast 2026-09-28), Gabriel Simples (senast 2026-09-29), Caio Suassuna (senast 2026-09-29), William Fernando (senast 2026-09-29), Isaías Pereira (senast 2026-09-29), Diego (senast 2026-09-28), Samuel (senast 2026-09-28), Vinicius Alemão (senast 2026-09-29), Matheus Millnitz (senast 2026-09-28), Juninho (senast 2026-09-28), Kauã Reis (senast 2026-09-28), Marcio Vitor (senast 2026-09-29), Kauan Felipe (senast 2026-09-28), Vinicius Melo (senast 2026-09-28), Filipe (senast 2026-09-29), Caio Brazil (senast 2026-09-28).

@@ -1,6 +1,6 @@
 # Preston (Championship) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -47,7 +47,7 @@ Form (äldst → senast): FFFFVFFO · senaste match 2026-09-19
 | Stoke | 15 | 7-5-3 | 18–10 | +0,51 | +3 pe | 2026-03-20 3-1 (h) |
 | Swansea | 15 | 5-4-6 | 17–20 | −0,01 | −2 pe | 2026-02-24 1-1 (b) |
 | Birmingham | 14 | 6-2-6 | 12–13 | +0,04 | −15 pe | 2026-04-22 1-2 (b) |
-| West Brom | 14 | 2-2-10 | 10–28 | −0,43 | −13 pe | 2026-04-18 0-2 (h) |
+| West Brom | 13 | 2-2-9 | 8–25 | −0,36 | −12 pe | 2026-04-18 0-2 (h) |
 | Cardiff | 12 | 3-4-5 | 11–14 | −0,28 | +3 pe | 2025-04-08 2-2 (h) |
 | Derby | 11 | 3-3-5 | 6–7 | −0,27 | −3 pe | 2026-01-17 0-1 (h) |
 | Norwich | 11 | 3-5-3 | 13–16 | +0,20 | +19 pe | 2026-03-14 0-2 (b) |
@@ -92,7 +92,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-08-29 | Stryk 4968 | Charlton - Preston | 1 | 22 % | 27 % |
 | 2026-08-22 | Stryk 4967 | Preston - Wolverhampton | 2 | 16 % | 27 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Jason Euell. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -115,7 +115,7 @@ Tränare: Jason Euell. Betyg, mål och assist gäller innevarande säsong enligt
 |  | Kaedyn Kamara | CM | 20 | England | 249 k€ | – | 0 | 0 | 0/0 |  |
 |  | Theo Carroll | RW | 19 | England | – | – | 0 | 0 | 0/0 |  |
 | 2 | Pol Valentín | RM,RWB,RW,RB | 29 | Spain | 491 k€ | 5,57 | 0 | 0 | 1/0 |  |
-| 4 | Harry Clarke | RM,RWB,RB,CAM,CB | 25 | England | 1,9 M€ | 6,58 | 0 | 0 | 4/0 |  |
+| 4 | Harry Clarke | RM,RWB,CAM,RB,CB | 25 | England | 1,9 M€ | 6,58 | 0 | 0 | 4/0 |  |
 | 7 | Alfie Devine | CM,CAM,LM,RW | 22 | England | 5,4 M€ | 6,98 | 0 | 0 | 0/0 |  |
 | 8 | Alistair McCann | CM,CAM,CDM | 26 | Northern Ireland | 1,6 M€ | 6,50 | 0 | 0 | 2/0 | skadad, åter Early October 2026 |
 | 11 | Thierry Small | LWB,LM,RM | 22 | England | 2,3 M€ | 5,94 | 0 | 0 | 0/0 |  |
@@ -129,7 +129,7 @@ Tränare: Jason Euell. Betyg, mål och assist gäller innevarande säsong enligt
 | 9 | Jusef Erabi | ST | 23 | Sweden | 3,1 M€ | 6,30 | 1 | 0 | 0/0 |  |
 | 10 | Callum Lang | ST,CAM,RW | 28 | England | 1,6 M€ | 6,74 | 3 | 0 | 0/0 |  |
 | 17 | Stanley Mills | RW,RM,LW,CAM | 22 | England | 991 k€ | 6,57 | 0 | 1 | 1/0 |  |
-| 20 | Liam Gibbs | RW,CAM,RB,LW | 23 | England | 1,5 M€ | 6,44 | 0 | 0 | 0/0 |  |
+| 20 | Liam Gibbs | RW,RB,CAM,LW | 23 | England | 1,5 M€ | 6,44 | 0 | 0 | 0/0 |  |
 | 30 | George Gryba | Attacker | 17 | England | – | 5,98 | 0 | 0 | 0/0 |  |
 | 37 | Delano Burgzorg | LW,ST | 27 | Suriname | 1,6 M€ | 6,48 | 0 | 2 | 1/0 |  |
 | 38 | Johnny Kenny | ST,CAM | 23 | Ireland | 1,3 M€ | 6,81 | 2 | 0 | 0/0 |  |

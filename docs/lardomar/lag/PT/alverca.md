@@ -1,6 +1,6 @@
 # Alverca (Primeira Liga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [PT](../../ligor/PT.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [PT](../../ligor/PT.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -47,7 +47,7 @@ Form (äldst → senast): FFOFOFVV · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Sérgio Ferreira. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -62,7 +62,6 @@ Tränare: Sérgio Ferreira. Betyg, mål och assist gäller innevarande säsong e
 | 31 | Matheus Mendes | GK | 27 | Brazil | 523 k€ | 6,78 | 0 | 0 | 1/0 |  |
 | 91 | Jhonatan | GK | 35 | Brazil | 124 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-|  | Gabriel Carioca | CB | 28 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 3 | Julián Martínez | CB | 22 | Honduras | 704 k€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
 | 4 | Yaya Bojang | CB,LB | 22 | The Gambia | 691 k€ | 6,54 | 0 | 0 | 3/0 |  |
 | 14 | Steven Baseya | CB | 21 | France | 529 k€ | 7,07 | 0 | 0 | 0/0 |  |
@@ -87,7 +86,6 @@ Tränare: Sérgio Ferreira. Betyg, mål och assist gäller innevarande säsong e
 | 55 | Francisco Chissumba | LM,LWB | 21 | Portugal | – | 6,73 | 1 | 0 | 0/0 |  |
 | 93 | Zé Rafael | CM,CDM | 33 | Brazil | 935 k€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-|  | Rodrigo Pereira | Attacker | 22 | Portugal | – | – | 0 | 0 | 0/0 |  |
 | 7 | André Vidigal | LW,CAM | 28 | Angola | 371 k€ | 6,11 | 0 | 0 | 1/0 |  |
 | 9 | Vivaldo Semedo | ST | 21 | Portugal | – | 6,42 | 2 | 0 | 1/0 |  |
 | 10 | Chiquinho | LW,RW,CAM | 26 | Portugal | 1,9 M€ | 7,55 | 1 | 2 | 2/1 |  |
@@ -96,3 +94,5 @@ Tränare: Sérgio Ferreira. Betyg, mål och assist gäller innevarande säsong e
 | 19 | Dawda Camara | ST | 23 | Mauritania | 878 k€ | 7,36 | 3 | 0 | 1/0 |  |
 | 22 | Lucas Figueiredo | LW,RW,CAM | 25 | Brazil | 1,6 M€ | 7,25 | 1 | 0 | 1/0 |  |
 | 26 | Matheus França | RW | 22 | Brazil | 5,7 M€ | 6,20 | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (2): Gabriel Carioca (senast 2026-09-29), Rodrigo Pereira (senast 2026-09-29).

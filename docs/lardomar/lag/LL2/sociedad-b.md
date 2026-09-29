@@ -1,6 +1,6 @@
 # Sociedad B (LaLiga 2) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [LL2](../../ligor/LL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [LL2](../../ligor/LL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -51,7 +51,7 @@ Form (äldst → senast): OFVOOVFF · senaste match 2026-09-26
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Ion Ansotegui. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -68,10 +68,7 @@ Tränare: Ion Ansotegui. Betyg, mål och assist gäller innevarande säsong enli
 | 22 | Inaki Rupérez | RB | 23 | Spain | – | 7,30 | 1 | 1 | 1/0 |  |
 | 23 | Unax Agote | LB | 23 | Spain | 311 k€ | 6,80 | 0 | 0 | 3/0 |  |
 | 24 | Unax Ayo | CB | 19 | Spain | 514 k€ | 6,52 | 0 | 0 | 0/0 |  |
-| 26 | Benat Isasa | Defender | 17 | Spain | – | – | 0 | 0 | 0/0 |  |
-| 27 | Eneko Astigarraga | Defender | 22 | Spain | 237 k€ | – | 0 | 0 | 0/0 |  |
 | 29 | Iker Ropero | CB | 20 | Spain | 464 k€ | 6,47 | 0 | 0 | 0/0 |  |
-| 30 | Peru Larranaga | Defender | 17 | Spain | – | 6,25 | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 6 | Alex Lebarbier | CM | 22 | France | 482 k€ | 6,61 | 0 | 0 | 1/0 |  |
 | 8 | Ibai Aguirre | CDM,CM | 19 | Spain | 1,8 M€ | 6,42 | 0 | 0 | 2/0 |  |
@@ -80,7 +77,6 @@ Tränare: Ion Ansotegui. Betyg, mål och assist gäller innevarande säsong enli
 | 16 | Gorka Gorosabel | CAM,CM,CDM,LM | 20 | Spain | 1,8 M€ | 6,86 | 2 | 1 | 0/0 |  |
 | 17 | Lander Astiazarán | RM,RW,LW,ST | 20 | Spain | – | 6,94 | 1 | 0 | 2/0 |  |
 | 21 | Jon Eceizabarrena | LM,CAM,CM | 21 | Spain | 376 k€ | 6,79 | 0 | 1 | 0/0 |  |
-| 31 | Oihan Telletxea | Midfielder | 17 | Spain | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Dani Díaz | RW,RM,ST | 20 | Spain | 2,3 M€ | 6,89 | 1 | 2 | 0/0 |  |
 | 9 | Ekain Orobengoa | ST | 22 | Spain | 506 k€ | 6,05 | 0 | 0 | 0/0 |  |
@@ -88,3 +84,5 @@ Tränare: Ion Ansotegui. Betyg, mål och assist gäller innevarande säsong enli
 | 19 | Javier Soroeta | Attacker | 21 | Spain | 336 k€ | 6,42 | 1 | 0 | 0/0 |  |
 | 20 | Sydney Osazuwa | Attacker | 19 | Spain | – | – | 0 | 0 | 0/0 |  |
 | 34 | Andrews Adjabeng | Attacker | 20 | Ghana | – | 5,81 | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (4): Eneko Astigarraga (senast 2026-09-29), Benat Isasa (senast 2026-09-29), Oihan Telletxea (senast 2026-09-29), Peru Larranaga (senast 2026-09-29).

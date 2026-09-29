@@ -1,6 +1,6 @@
 # Nott'm Forest (Premier League) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -111,7 +111,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-08-24 | Europa 2499 | Crystal Palace - Nottingham | X | 28 % | 30 % |
 | 2025-08-17 | Europa 2497 | Nottingham - Brentford | 1 ✓ | 53 % | 44 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Oliver Glasner. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -133,11 +133,11 @@ Tränare: Oliver Glasner. Betyg, mål och assist gäller innevarande säsong enl
 | 37 | Nicolò Savona | RB | 23 | Italy | 14,8 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | | **Mittfältare** | | | | | | | | | |
 | 6 | Ibrahim Sangaré | CDM,CM | 28 | Ivory Coast | 18,4 M€ | 6,64 | 0 | 0 | 0/0 |  |
-| 8 | Nicolás Dominguez | CDM,LW,CM,CAM | 28 | Argentina | 12,8 M€ | – | 0 | 0 | 0/0 |  |
+| 8 | Nicolás Dominguez | LW,CDM,CM,CAM | 28 | Argentina | 12,8 M€ | – | 0 | 0 | 0/0 |  |
 | 10 | Morgan Gibbs-White | CAM,LM,ST,CM,LW | 26 | England | 45,9 M€ | 7,42 | 1 | 2 | 0/0 |  |
 | 21 | Xaver Schlager | CM,CDM | 29 | Austria | 4,6 M€ | 7,06 | 0 | 0 | 1/0 |  |
 | 22 | Ryan Yates | CDM,CM | 28 | England | 8,0 M€ | – | 0 | 0 | 0/0 |  |
-| 24 | James McAtee | CDM,CM,CAM,RW,LW | 23 | England | 18,7 M€ | 7,23 | 0 | 0 | 2/0 |  |
+| 24 | James McAtee | CDM,CM,RW,LW,CAM | 23 | England | 18,7 M€ | 7,23 | 0 | 0 | 2/0 |  |
 | 25 | Luca Netz | LWB,LB,LM | 23 | Germany | 7,7 M€ | 6,02 | 0 | 0 | 0/0 |  |
 | 27 | Daniel Muñoz | RWB,RM,RB | 30 | Colombia | 21,9 M€ | 6,47 | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |

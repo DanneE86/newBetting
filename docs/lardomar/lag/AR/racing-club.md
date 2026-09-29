@@ -1,6 +1,6 @@
 # Racing Club (Liga Profesional) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -72,9 +72,9 @@ Form (äldst → senast): FFFOFFFV · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
-Tränare: Juan Vojvoda. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+Tränare: Sebastián Romero (tidigare: Juan Vojvoda till 2026-09-28). Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
 **Skadade/borta nu:** Marco Di Césare (skadad, åter Early December 2026), Juan Barinaga (skadad, åter About 1-2 weeks), Alan Forneris (skadad, åter Late January 2027), Valentín Carboni (skadad, åter Early November 2026), Lautaro Díaz (skadad, åter About 1-2 weeks)
 
@@ -92,7 +92,7 @@ Tränare: Juan Vojvoda. Betyg, mål och assist gäller innevarande säsong enlig
 | 6 | Marcos Rojo | CB | 36 | Argentina | 357 k€ | – | 0 | 0 | 0/0 |  |
 | 14 | Juan Barinaga | RB | 25 | Argentina | 2,2 M€ | – | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
 | 18 | Pacha Espino | LB,LW,RB | 34 | Uruguay | 909 k€ | – | 0 | 0 | 0/0 |  |
-| 19 | Ignacio Rodríguez | LB | 24 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 19 | Ignacio Rodríguez | LB,LWB | 24 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 23 | Nazareno Colombo | CB | 27 | Argentina | 1,8 M€ | – | 0 | 0 | 0/0 |  |
 | 38 | Mateo Martínez | CB | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 43 | Gonzalo Escudero | CB | 19 | Argentina | 466 k€ | – | 0 | 0 | 0/0 |  |
@@ -100,9 +100,9 @@ Tränare: Juan Vojvoda. Betyg, mål och assist gäller innevarande säsong enlig
 | 5 | Matías Kranevitter | CDM,CM | 33 | Argentina | 270 k€ | – | 0 | 0 | 0/0 |  |
 | 8 | Alan Forneris | CDM,CM | 21 | Argentina | 1,2 M€ | – | 0 | 0 | 0/0 | skadad, åter Late January 2027 |
 | 10 | Matko Miljevic | CM,CAM,LM,CDM,LW | 25 | USA | 2,6 M€ | – | 0 | 0 | 0/0 |  |
-| 11 | Matías Zaracho | CM,CDM,RW,CAM | 28 | Argentina | 2,3 M€ | – | 0 | 0 | 0/0 |  |
+| 11 | Matías Zaracho | CM,CDM,RW,CAM,RWB | 28 | Argentina | 2,3 M€ | – | 0 | 0 | 0/0 |  |
 | 16 | Ulises Ortegoza | CDM,CM,CAM,LM | 29 | Chile | 1,2 M€ | – | 0 | 0 | 0/0 |  |
-| 20 | Gastón Lodico | CM,CDM,CAM,RM | 28 | Argentina | 2,3 M€ | – | 0 | 0 | 0/0 |  |
+| 20 | Gastón Lodico | CM,CDM,RM | 28 | Argentina | 2,3 M€ | – | 0 | 0 | 0/0 |  |
 | 24 | Adrián Fernández | CAM,CM,LW | 25 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 33 | Leonel Pérez | CDM,CM | 22 | Argentina | 4,9 M€ | – | 0 | 0 | 0/0 |  |
 | 37 | Santino Aguirre | Midfielder | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |

@@ -1,6 +1,6 @@
 # Los Angeles FC (MLS) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -55,18 +55,18 @@ Form (äldst → senast): FFOOOVFO · senaste match 2026-09-20
 | Inter Miami | 4 | 3-0-1 | 7–3 | +0,41 | −23 pe | 2026-02-22 3-0 (h) |
 | New York Red Bulls | 4 | 3-1-0 | 10–4 | +0,49 | +3 pe | 2026-09-10 2-0 (h) |
 | San Diego FC | 4 | 0-1-3 | 5–8 | −1,35 | +1 pe | 2026-08-16 0-1 (h) |
-| Chicago Fire | 3 | 0-2-1 | 3–5 | −1,01 | +43 pe | 2025-08-10 2-2 (b) |
 | DC United | 3 | 2-1-0 | 5–0 | +0,52 | +12 pe | 2026-08-30 0-0 (b) |
 | FC Cincinnati | 3 | 3-0-0 | 6–2 | +1,28 | −21 pe | 2024-09-29 2-1 (b) |
 | New England Revolution | 3 | 3-0-0 | 8–0 | +1,30 | −24 pe | 2025-08-17 2-0 (b) |
 | New York City | 3 | 1-1-1 | 4–4 | −0,31 | +9 pe | 2025-03-02 1-0 (h) |
 | CF Montreal | 2 | 1-1-0 | 6–4 | +0,04 | +27 pe | 2025-05-25 2-2 (b) |
 | Charlotte | 2 | 1-0-1 | 6–2 | −0,42 | −22 pe | 2023-08-27 1-2 (b) |
+| Chicago Fire | 2 | 0-2-0 | 2–2 | −0,75 | +77 pe | 2025-08-10 2-2 (b) |
 | Toronto FC | 2 | 1-1-0 | 3–1 | −0,20 | +31 pe | 2025-10-09 2-0 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Marc Dos Santos. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -82,7 +82,6 @@ Tränare: Marc Dos Santos. Betyg, mål och assist gäller innevarande säsong en
 | 4 | Eddie Segura | LB,CM,CB | 29 | Colombia | 995 k€ | 6,85 | 0 | 0 | 5/0 |  |
 | 5 | Ryan Porteous | CB | 27 | Scotland | 1,5 M€ | 7,05 | 0 | 0 | 4/0 |  |
 | 14 | Sergi Palencia | RB,RWB | 30 | Spain | 1,5 M€ | 6,82 | 1 | 0 | 4/0 |  |
-| 15 | Lorenzo Dellavalle | CB | 22 | Italy | 152 k€ | – | 0 | 0 | 0/0 |  |
 | 21 | Ryan Raposo | RB | 27 | Canada | 269 k€ | 6,50 | 0 | 0 | 4/0 |  |
 | 23 | Evgen Cheberko | LB,CB | 28 | Ukraine | 483 k€ | 7,15 | 0 | 0 | 2/0 |  |
 | 24 | Ryan Hollingshead | RB,LB,LWB,RM | 35 | USA | 171 k€ | 7,20 | 1 | 1 | 2/0 |  |
@@ -108,3 +107,5 @@ Tränare: Marc Dos Santos. Betyg, mål och assist gäller innevarande säsong en
 | 19 | Tyler Boyd | RW | 31 | USA | 116 k€ | 6,46 | 1 | 2 | 2/0 |  |
 | 90 | Tommy Mihalić | LW,RW | 23 | Croatia | – | 6,15 | 0 | 0 | 0/0 |  |
 | 99 | Denis Bouanga | LW,ST,CAM | 31 | Gabon | 2,9 M€ | 7,54 | 14 | 5 | 6/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Lorenzo Dellavalle (senast 2026-09-29).

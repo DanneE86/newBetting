@@ -1,6 +1,6 @@
 # Vancouver Whitecaps (MLS) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -73,7 +73,7 @@ Form (äldst → senast): VFVVFVFV · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Jesper Sørensen. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -100,7 +100,6 @@ Tränare: Jesper Sørensen. Betyg, mål och assist gäller innevarande säsong e
 | 20 | Andrés Cubas | CDM,CM | 30 | Paraguay | 2,3 M€ | 7,55 | 0 | 2 | 7/0 |  |
 | 23 | Aleksa Cvetković | CAM,CM | 21 | Serbia | 249 k€ | 6,83 | 0 | 1 | 0/0 |  |
 | 25 | Ryan Gauld | CAM,RW | 30 | Scotland | 2,1 M€ | 7,44 | 3 | 1 | 2/0 |  |
-| 59 | Jeevan Badwal | RW,CDM,CAM | 20 | Canada | 1,3 M€ | 6,96 | 1 | 2 | 3/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Cheikh Sabaly | RW,LW,CAM | 27 | Senegal | 2,0 M€ | 6,72 | 2 | 1 | 1/0 |  |
 | 11 | Emmanuel Sabbi | RW,LW | 28 | USA | 1,5 M€ | 6,82 | 4 | 3 | 4/0 |  |
@@ -109,4 +108,5 @@ Tränare: Jesper Sørensen. Betyg, mål och assist gäller innevarande säsong e
 | 19 | Rayan Elloumi | ST | 19 | Tunisia | 1,8 M€ | 6,31 | 2 | 0 | 0/0 |  |
 | 22 | Kwasi Poku | ST | 23 | Canada | 386 k€ | – | 0 | 0 | 0/0 |  |
 | 24 | Brian White | ST | 30 | USA | 2,0 M€ | 7,38 | 17 | 2 | 2/0 |  |
+| 59 | Jeevan Badwal | RW,CDM,CAM | 20 | Canada | 1,3 M€ | 6,96 | 1 | 2 | 3/0 |  |
 | 77 | Yadaly Diaby | LW,ST,LM | 26 | Guinea | 738 k€ | 7,39 | 1 | 1 | 2/0 |  |

@@ -1,6 +1,6 @@
 # Motor Lublin (Ekstraklasa) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EK](../../ligor/EK.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EK](../../ligor/EK.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -46,7 +46,7 @@ Form (äldst → senast): FFVOFFFO · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Mariusz Misiura. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -56,7 +56,6 @@ Tränare: Mariusz Misiura. Betyg, mål och assist gäller innevarande säsong en
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
 |  | Borys Moldach | Keeper | 17 | Poland | – | – | 0 | 0 | 0/0 |  |
-|  | Oskar Jeż | Keeper | 19 | Poland | – | – | 0 | 0 | 0/0 |  |
 | 33 | Gašper Tratnik | GK | 26 | Slovenia | 207 k€ | 6,90 | 0 | 0 | 0/0 |  |
 | 71 | Mihai Popa | GK | 25 | Romania | 582 k€ | 6,37 | 0 | 0 | 0/0 |  |
 | 99 | Patryk Kukulski | Keeper | 22 | Poland | 176 k€ | – | 0 | 0 | 0/0 |  |
@@ -74,7 +73,6 @@ Tränare: Mariusz Misiura. Betyg, mål och assist gäller innevarande säsong en
 | 6 | Mateusz Łęgowski | CAM,CM,CDM,ST | 23 | Poland | 1,8 M€ | 6,38 | 0 | 0 | 1/0 |  |
 | 7 | Ivo Rodrigues | CAM,CM | 31 | Portugal | 206 k€ | 7,01 | 0 | 3 | 2/0 | osäker |
 | 8 | Christopher Simon | CAM | 26 | Senegal | 124 k€ | 6,90 | 0 | 0 | 1/0 |  |
-| 21 | Konrad Kraska | Midfielder | 18 | Poland | – | – | 0 | 0 | 0/0 |  |
 | 23 | Florian Haxha | RW | 24 | Kosovo | 218 k€ | – | 0 | 0 | 0/0 |  |
 | 27 | Yacine Bourhane | CM,CDM,CB | 27 | Comoros | 263 k€ | 6,83 | 0 | 0 | 0/0 |  |
 | 47 | Alioune Oumar Tall | CM | 19 | Senegal | – | – | 0 | 0 | 0/0 |  |
@@ -86,3 +84,5 @@ Tränare: Mariusz Misiura. Betyg, mål och assist gäller innevarande säsong en
 | 70 | Makan Aïko | LW,ST,LM | 25 | France | 820 k€ | 6,44 | 1 | 0 | 1/0 |  |
 | 77 | Mateusz Posmyk | Attacker | 17 | Poland | – | – | 0 | 0 | 0/0 |  |
 | 90 | Dominik Gregorski | Attacker | 20 | Poland | – | – | 0 | 1 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (2): Oskar Jeż (senast 2026-09-29), Konrad Kraska (senast 2026-09-29).

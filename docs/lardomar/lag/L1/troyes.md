@@ -1,6 +1,6 @@
 # Troyes (Ligue 1) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [L1](../../ligor/L1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [L1](../../ligor/L1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -62,7 +62,7 @@ Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: s
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Stéphane Dumont. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -83,7 +83,6 @@ Tränare: Stéphane Dumont. Betyg, mål och assist gäller innevarande säsong e
 | 14 | Ismaël Boura | LB,CB | 26 | Comoros | 2,2 M€ | – | 0 | 0 | 0/0 | skadad, åter A few weeks |
 | 31 | Noah Donkor | RB | 19 | France | – | 6,07 | 0 | 0 | 0/0 |  |
 | 34 | Lassana Simakha | Defender | 19 | France | – | – | 0 | 0 | 0/0 |  |
-| 37 | Tom Akpakoun | RB | 21 | France | 395 k€ | – | 0 | 0 | 0/0 |  |
 | 44 | Yvann Titi | RB | 20 | France | 2,0 M€ | 6,59 | 0 | 0 | 0/0 | skadad, åter Late October 2026 |
 | | **Mittfältare** | | | | | | | | | |
 | 8 | Mouhamed Diop | CDM,CM | 25 | Senegal | 2,6 M€ | 6,31 | 0 | 0 | 1/0 |  |
@@ -91,7 +90,7 @@ Tränare: Stéphane Dumont. Betyg, mål och assist gäller innevarande säsong e
 | 11 | Iron Gomis | CM | 26 | France | 987 k€ | 6,69 | 0 | 0 | 1/0 |  |
 | 16 | Roman Murcy | Midfielder | 20 | France | 620 k€ | – | 0 | 0 | 0/0 |  |
 | 17 | Antoine Mille | CAM,CDM,CM | 29 | France | 1,6 M€ | 7,12 | 1 | 1 | 1/0 |  |
-| 22 | Hugo Picard | LM,CAM,LW,ST | 23 | France | 2,3 M€ | 6,80 | 0 | 0 | 0/0 |  |
+| 22 | Hugo Picard | LM,LW,CAM,ST | 23 | France | 2,3 M€ | 6,80 | 0 | 0 | 0/0 |  |
 | 26 | Alexandre Phliponeau | CDM,CM | 26 | France | 404 k€ | 6,41 | 0 | 0 | 0/0 |  |
 | 29 | Dermane Karim | CAM,CDM | 22 | Togo | 2,6 M€ | 6,81 | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
@@ -102,3 +101,5 @@ Tränare: Stéphane Dumont. Betyg, mål och assist gäller innevarande säsong e
 | 34 | Ibrahim Traoré | LW | 20 | France | 486 k€ | – | 0 | 0 | 0/0 |  |
 | 36 | Amadou Diakité | Attacker | 21 | France | 419 k€ | – | 0 | 0 | 0/0 |  |
 | 39 | Yacouba Kone | Attacker | 19 | France | – | 5,98 | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Tom Akpakoun (senast 2026-09-29).

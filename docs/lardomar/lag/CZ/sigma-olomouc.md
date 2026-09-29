@@ -1,6 +1,6 @@
 # Sigma Olomouc (Chance Liga) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [CZ](../../ligor/CZ.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [CZ](../../ligor/CZ.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -35,7 +35,7 @@ Form senaste 8 (äldst → senast): OVVVFVVF · senaste match 2026-09-20
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Pavel Hapal. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -63,7 +63,6 @@ Tränare: Pavel Hapal. Betyg, mål och assist gäller innevarande säsong enligt
 | 7 | Michal Beran | CDM,CM | 26 | Czechia | 1,7 M€ | 6,90 | 0 | 0 | 1/0 |  |
 | 8 | Jirí Spácil | CB | 27 | Czechia | 171 k€ | 6,38 | 0 | 0 | 0/0 |  |
 | 14 | Marko Soldo | CM,CAM | 22 | Croatia | 1,1 M€ | 6,44 | 1 | 0 | 1/0 |  |
-| 24 | David Tkác | LW,CAM | 24 | Czechia | 309 k€ | 6,60 | 2 | 0 | 0/0 |  |
 | 27 | Filip Uriča | LWB | 23 | Czechia | 536 k€ | – | 0 | 0 | 0/0 |  |
 | 28 | Igor Brzyski | Midfielder | 19 | Poland | – | – | 0 | 0 | 0/0 |  |
 | 29 | Anton Ekeroth | LM,LWB | 25 | Sweden | 368 k€ | 6,60 | 0 | 1 | 0/0 |  |
@@ -76,6 +75,7 @@ Tränare: Pavel Hapal. Betyg, mål och assist gäller innevarande säsong enligt
 | 11 | Hilmir Mikaelsson | ST | 22 | Iceland | 269 k€ | 5,91 | 0 | 0 | 1/0 |  |
 | 17 | John Paul Dembe | ST | 21 | Uganda | 577 k€ | 5,98 | 0 | 0 | 0/0 |  |
 | 19 | Daniel Barát | LW | 20 | Czechia | 404 k€ | – | 0 | 0 | 0/0 |  |
-| 23 | Fabijan Krivak | RW,CAM,ST | 21 | Croatia | 1,9 M€ | 6,86 | 1 | 1 | 0/0 |  |
+| 23 | Fabijan Krivak | RW,CAM | 21 | Croatia | 1,9 M€ | 6,86 | 1 | 1 | 0/0 |  |
+| 24 | David Tkác | LW,CAM | 24 | Czechia | 309 k€ | 6,60 | 2 | 0 | 0/0 |  |
 | 39 | Dominik Janošek | LW,RW,CDM | 28 | Czechia | 209 k€ | 7,24 | 1 | 3 | 0/0 |  |
 | 70 | Abubakar Ghali | RW,LW,RM,LM,LWB | 26 | Nigeria | 947 k€ | 7,48 | 3 | 1 | 3/0 |  |

@@ -1,6 +1,6 @@
 # Wieczysta Krakow (Ekstraklasa) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EK](../../ligor/EK.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EK](../../ligor/EK.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -37,7 +37,7 @@ Form (äldst → senast): FFVFFOFO · senaste match 2026-09-18
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Željko Kopić. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -67,7 +67,7 @@ Tränare: Željko Kopić. Betyg, mål och assist gäller innevarande säsong enl
 | 11 | Nikola Knežević | LW | 23 | Serbia | 569 k€ | 6,08 | 0 | 0 | 0/0 |  |
 | 12 | Lucas Piazón | CM,CDM | 32 | Brazil | 149 k€ | 7,33 | 2 | 1 | 3/0 |  |
 | 19 | José Antonio de la Rosa | RM,RW | 22 | Spain | 1,0 M€ | 6,61 | 0 | 0 | 0/0 |  |
-| 20 | Mikkel Maigaard | CM,CDM,LW,RW | 31 | Denmark | 187 k€ | 6,95 | 0 | 0 | 2/1 |  |
+| 20 | Mikkel Maigaard | CM,CDM,LW | 31 | Denmark | 187 k€ | 6,95 | 0 | 0 | 2/1 |  |
 | 23 | Miki Villar | RW | 30 | Spain | 151 k€ | 6,32 | 1 | 1 | 1/0 |  |
 | 70 | Petar Pušić | CM | 27 | Switzerland | 162 k€ | 6,56 | 0 | 1 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |

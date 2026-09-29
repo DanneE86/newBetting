@@ -1,6 +1,6 @@
 # Volos NFC (Super League (Grekland)) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [GR](../../ligor/GR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [GR](../../ligor/GR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -52,7 +52,7 @@ Form (äldst → senast): FFFFOOFF · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Konstantinos Bratsos. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -92,5 +92,6 @@ Tränare: Konstantinos Bratsos. Betyg, mål och assist gäller innevarande säso
 | 9 | Jan Hurtado | ST | 26 | Venezuela | 252 k€ | 6,29 | 0 | 0 | 1/0 |  |
 | 10 | Joca | RW,RM,CM,CAM,RWB | 30 | Portugal | 163 k€ | 7,03 | 0 | 1 | 1/0 |  |
 | 11 | Gustavo Furtado | ST,RW | 25 | Brazil | 459 k€ | 6,32 | 0 | 0 | 2/0 |  |
-| 19 | Nabil Makni | ST | 24 | Tunisia | 197 k€ | – | 0 | 0 | 0/0 |  |
 | 30 | Alexandros Garavelas | Attacker | 18 | Greece | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Nabil Makni (senast 2026-09-29).

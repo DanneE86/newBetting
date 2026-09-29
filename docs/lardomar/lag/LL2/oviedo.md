@@ -1,6 +1,6 @@
 # Oviedo (LaLiga 2) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [LL2](../../ligor/LL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [LL2](../../ligor/LL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -59,11 +59,11 @@ Form (äldst → senast): FOFVOVFV · senaste match 2026-09-27
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Julián Calero. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Nacho Vidal (osäker), Estanis Pedrola (skadad, åter Mid October 2026), Ilyas Chaira (skadad, åter Early October 2026), Carlos Fernández (skadad, åter Late November 2026), Alexandru Ișfan (skadad, åter Mid October 2026)
+**Skadade/borta nu:** Nacho Vidal (osäker), Estanis Pedrola (skadad, åter Mid October 2026), Ilyas Chaira (skadad, åter Early October 2026), Christopher Ramos (skadad, åter Out for season), Carlos Fernández (skadad, åter Late November 2026), Alexandru Ișfan (skadad, åter Mid October 2026)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -91,7 +91,7 @@ Tränare: Julián Calero. Betyg, mål och assist gäller innevarande säsong enl
 |  | Brandon Dominguès | CAM | 26 | France | 454 k€ | – | 0 | 0 | 0/0 |  |
 | 2 | Aisar Ahmed | RW,RB,RWB | 25 | Spain | 630 k€ | 6,95 | 0 | 0 | 1/0 |  |
 | 7 | Ilyas Chaira | LW,LM,RW,RM | 25 | Morocco | 2,7 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
-| 9 | Christopher Ramos | ST | 29 | Spain | 1,7 M€ | 6,35 | 1 | 0 | 1/0 |  |
+| 9 | Christopher Ramos | ST | 29 | Spain | 1,7 M€ | 6,35 | 1 | 0 | 1/0 | skadad, åter Out for season |
 | 11 | Jacobo González | LW,LM,RW,CM,CAM,RB | 29 | Spain | 910 k€ | 6,18 | 0 | 0 | 1/0 |  |
 | 14 | Carlos Fernández | ST,CAM | 30 | Spain | 960 k€ | 5,90 | 0 | 0 | 0/0 | skadad, åter Late November 2026 |
 | 18 | Victor Mingo | Attacker | 23 | Spain | 387 k€ | 6,20 | 0 | 1 | 0/0 |  |

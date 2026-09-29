@@ -1,6 +1,6 @@
 # Coritiba (Brasileirão Série A) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [BR](../../ligor/BR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [BR](../../ligor/BR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -57,11 +57,11 @@ Form (äldst → senast): FVOVVFOF · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Fernando Seabra. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Tinga (skadad, åter Mid October 2026), Brian Ocampo (skadad, åter About a week), Lucas Ronier (skadad, åter Out for season)
+**Skadade/borta nu:** Tinga (skadad, åter Mid October 2026), Brian Ocampo (skadad, åter About a week)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -70,9 +70,7 @@ Tränare: Fernando Seabra. Betyg, mål och assist gäller innevarande säsong en
 | 13 | Keiller | GK | 29 | Brazil | 286 k€ | – | 0 | 0 | 0/0 |  |
 | 22 | Pedro Rangel | GK | 26 | Brazil | 1,0 M€ | – | 0 | 0 | 0/0 |  |
 | 67 | Benassi | GK | 22 | Brazil | 580 k€ | – | 0 | 0 | 0/0 |  |
-| 87 | Gabriel Leite | GK | 38 | Brazil | 230 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-|  | Gabriel Ibson | Defender | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 2 | Tinga | RB | 33 | Brazil | 288 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 3 | Maicon | CB | 38 | Brazil | 381 k€ | – | 0 | 0 | 0/0 |  |
 | 4 | Rodrigo Moledo | CB | 38 | Brazil | 235 k€ | – | 0 | 0 | 0/0 |  |
@@ -82,32 +80,22 @@ Tränare: Fernando Seabra. Betyg, mål och assist gäller innevarande säsong en
 | 26 | Bruno Melo | LB,CB | 33 | Brazil | 397 k€ | – | 0 | 0 | 0/0 |  |
 | 55 | Jacy | CB | 29 | Brazil | 1,7 M€ | – | 0 | 0 | 0/0 |  |
 | 66 | Rodrigo Gelado | LB | 23 | Brazil | 778 k€ | – | 0 | 0 | 0/0 |  |
-| 86 | Lucas Taverna | RB | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-|  | Miguel Silva | Midfielder | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 5 | Nicolás Fonseca | CDM,CM | 27 | Uruguay | 2,2 M€ | – | 0 | 0 | 0/0 |  |
 | 10 | Josué | CAM,CM | 36 | Portugal | 335 k€ | – | 0 | 0 | 0/0 |  |
-| 15 | Alejandro Ararat | Midfielder | 20 | Colombia | 725 k€ | – | 0 | 0 | 0/0 |  |
 | 17 | Brian Ocampo | LM,LW | 27 | Uruguay | 975 k€ | – | 0 | 0 | 0/0 | skadad, åter About a week |
-| 18 | Paulo Roberto | Midfielder | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 19 | Sebastián Gómez | CDM,CAM,CM | 30 | Colombia | 1,3 M€ | – | 0 | 0 | 0/0 |  |
 | 21 | Thiago Santos | CDM | 37 | Brazil | 321 k€ | – | 0 | 0 | 0/0 |  |
 | 25 | Richard | CDM | 32 | Brazil | 280 k€ | – | 0 | 0 | 0/0 |  |
-| 30 | Khensane | Midfielder | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 36 | Vini Paulista | CDM,RW | 25 | Brazil | 1,1 M€ | – | 0 | 0 | 0/0 |  |
 | 39 | Gustavo | CM | 24 | Brazil | 577 k€ | – | 0 | 0 | 0/0 |  |
-| 50 | Tissi | CDM | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 99 | Thiago Azaf | Midfielder | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 |  | Éberth | ST | 23 | Brazil | 392 k€ | – | 0 | 0 | 0/0 |  |
-| 7 | Joaquín Lavega | RW,LW | 21 | Uruguay | 2,2 M€ | – | 0 | 0 | 0/0 |  |
-| 11 | Lucas Ronier | RW,LW | 21 | Brazil | – | – | 0 | 0 | 0/0 | skadad, åter Out for season |
 | 20 | Keno | LW | 37 | Brazil | 299 k€ | – | 0 | 0 | 0/0 |  |
 | 28 | Fabinho | RW | 26 | Brazil | 948 k€ | – | 0 | 0 | 0/0 |  |
 | 32 | Pedro Rocha | ST,RW | 31 | Brazil | 1,1 M€ | – | 0 | 0 | 0/0 |  |
-| 33 | David Alves | Attacker | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 37 | Lucas Crepaldi | Attacker | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 77 | Breno Lopes | LW,CAM,ST,RW | 30 | Brazil | 2,1 M€ | – | 0 | 0 | 0/0 |  |
 | 78 | Renato Marques | ST | 22 | Brazil | 1,3 M€ | – | 0 | 0 | 0/0 |  |
-| 80 | Matheus Dias | Attacker | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 99 | Rodrigo Rodrigues | ST | 30 | Brazil | 323 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (14): Gabriel Leite (senast 2026-09-29), Joaquín Lavega (senast 2026-09-29), Lucas Ronier (senast 2026-09-29), Matheus Dias (senast 2026-09-29), Alejandro Ararat (senast 2026-09-29), Lucas Taverna (senast 2026-09-29), Thiago Azaf (senast 2026-09-29), Tissi (senast 2026-09-29), Miguel Silva (senast 2026-09-28), David Alves (senast 2026-09-29), Paulo Roberto (senast 2026-09-29), Khensane (senast 2026-09-29), Lucas Crepaldi (senast 2026-09-29), Gabriel Ibson (senast 2026-09-28).

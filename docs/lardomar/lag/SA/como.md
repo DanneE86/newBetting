@@ -1,6 +1,6 @@
 # Como (Serie A) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -83,7 +83,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-09-21 | Europa 2507 | Fiorentina - Como | 2 ✓ | 31 % | 34 % |
 | 2025-08-24 | Europa 2499 | Como - Lazio | 1 ✓ | 44 % | 39 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Cesc Fàbregas. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

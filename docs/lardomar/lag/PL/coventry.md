@@ -1,11 +1,11 @@
 # Coventry (Premier League) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - 2025/26: +0,32 poäng per match mot marknaden. Ligan visar ingen persistens, så räkna inte med att det fortsätter.
-- Stark historik mot Hull (−0,67 p/match mot marknaden, 11 möten), Sunderland (+0,76 p/match mot marknaden, 10 möten), Ipswich (−0,58 p/match mot marknaden, 6 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Stark historik mot Hull (−0,67 p/match mot marknaden, 11 möten), Sunderland (+0,87 p/match mot marknaden, 9 möten), Ipswich (−0,58 p/match mot marknaden, 6 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
 - På Stryktipset/Europatipset streckas lagets vinst ×0,70 av vår sannolikhet (4 matcher). Folket underspelar laget: dess vinst ger streckvärde.
 
 ## Nuläge (senaste 8 ligamatcher)
@@ -55,7 +55,7 @@ Ligans test av frånvaro mot marknaden: svag signal (inte bekräftad). Få match
 | Motståndare | M | V-O-F | Mål | Mot marknaden | Kryss mot odds | Senast |
 |---|---|---|---|---|---|---|
 | Hull | 11 | 2-5-4 | 10–13 | −0,67 | +19 pe | 2026-08-29 0-1 (h) |
-| Sunderland | 10 | 5-5-0 | 19–10 | +0,76 | +22 pe | 2025-03-15 3-0 (h) |
+| Sunderland | 9 | 5-4-0 | 18–9 | +0,87 | +17 pe | 2025-03-15 3-0 (h) |
 | Ipswich | 6 | 1-1-4 | 4–10 | −0,58 | −10 pe | 2025-12-29 0-2 (h) |
 | Nott'm Forest | 5 | 2-0-3 | 5–7 | +0,04 | −29 pe | 2026-09-19 1-0 (b) |
 | Bournemouth | 4 | 0-1-3 | 4–12 | −0,77 | −2 pe | 2022-04-18 0-3 (h) |
@@ -77,7 +77,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-08-29 | Stryk 4968 | Coventry - Hull | 2 | 62 % | 56 % |
 | 2026-09-13 | Europa 2607 | Coventry - Brighton | 2 | 20 % | 27 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Frank Lampard. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

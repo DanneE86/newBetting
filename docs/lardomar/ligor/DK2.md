@@ -1,6 +1,6 @@
 # 1. division (DK2) – lärdomar
 
-Genererad 2026-09-28 av `node scripts/analyze-learnings.mjs`. Ligan saknar oddshistorik (inga stängningsodds i våra källor), så signaler och kalibrering kan inte testas mot marknaden här. Alla matcher: `data/matcher/DK2.csv`.
+Genererad 2026-09-29 av `node scripts/analyze-learnings.mjs`. Ligan saknar oddshistorik (inga stängningsodds i våra källor), så signaler och kalibrering kan inte testas mot marknaden här. Alla matcher: `data/matcher/DK2.csv`.
 
 ## Lärdomar i korthet
 
@@ -16,7 +16,7 @@ Genererad 2026-09-28 av `node scripts/analyze-learnings.mjs`. Ligan saknar oddsh
 | 2025/26 | 192 | 40 % | 27 % | 33 % | 2,80 | 55 % | 55 % |
 | 2026/27 | 54 | 33 % | 39 % | 28 % | 2,78 | 56 % | 63 % |
 
-## Tabell nu (FotMob, 2026-09-28)
+## Tabell nu (FotMob, 2026-09-29)
 
 | # | Lag | M | V | O | F | Mål | +/− | P |
 |---|---|---|---|---|---|---|---|---|
@@ -29,7 +29,7 @@ Genererad 2026-09-28 av `node scripts/analyze-learnings.mjs`. Ligan saknar oddsh
 | 7 | Vendsyssel | 9 | 2 | 4 | 3 | 10-14 | -4 | 10 |
 | 8 | AB Gladsaxe | 9 | 2 | 3 | 4 | 11-10 | 1 | 9 |
 | 9 | Hillerød | 9 | 2 | 3 | 4 | 13-14 | -1 | 9 |
-| 10 | Kolding IF | 9 | 1 | 5 | 3 | 10-12 | -2 | 8 |
+| 10 | Kolding | 9 | 1 | 5 | 3 | 10-12 | -2 | 8 |
 | 11 | Køge | 9 | 1 | 4 | 4 | 11-17 | -6 | 7 |
 | 12 | Esbjerg | 9 | 1 | 2 | 6 | 10-19 | -9 | 5 |
 
@@ -46,7 +46,6 @@ Tabellhistorik (en rad per lag och dag sedan 2026-09-28): `data/ligor/DK2.json`.
 - [Hobro](../lag/DK2/hobro.md)
 - [Hvidovre](../lag/DK2/hvidovre.md)
 - [Kolding](../lag/DK2/kolding.md)
-- [Kolding IF](../lag/DK2/kolding-if.md)
 - [Køge](../lag/DK2/k-ge.md)
 - [Vejle](../lag/DK2/vejle.md)
 - [Vendsyssel](../lag/DK2/vendsyssel.md)
