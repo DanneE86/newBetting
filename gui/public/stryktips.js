@@ -1,12 +1,18 @@
 // Flik "Stryktipset": kupong fran Svenska Spel + analys per match (data fran /api/stryktips).
+// Stryktipset A = kupongen som räknas fram i hämtningen. Stryktipset B = samma data, men användaren låser spikar
+// själv och resten av kupongen genereras i webbläsaren (stryk-engine.js).
+import { generateCoupons } from "/stryk-engine.js";
+
 const view = document.getElementById("stryktips-view");
 const tabs = [...document.querySelectorAll(".view-tab")];
 const SIGNS = ["1", "X", "2"];
 
 let data = null;
 let product = null;
+let modeB = false; // Stryktipset B / Europatipset B: egna spikar
 // Adresser: /tips, /stryktipset, /europatipset (dold i menyn, nås bara via adressen).
-// Undersidor: /stryktipset/backtest öppnar backtestet, /<spel>/reducera fäller ut det reducerade systemet.
+// Undersidor: /stryktipset/backtest öppnar backtestet, /<spel>/reducera fäller ut det reducerade systemet,
+// /<spel>/b är B-sidan med egna spikar (vyn heter "<spel>-b"; /europatipset/b är dold i menyn).
 // Gamla länkar (#stryktips, #stryktips/backtest, #stryktips/<spel>/reducera) skickas vidare till de nya.
 const POOLS = ["stryktipset", "europatipset"];
 function parseRoute() {
@@ -17,8 +23,8 @@ function parseRoute() {
     history.replaceState(null, "", `/${game}${sub}`);
   }
   const [first, sub] = location.pathname.split("/").filter(Boolean);
-  const v = POOLS.includes(first) ? first : first === "tips" ? "tips" : null;
-  return { view: v, sub: sub || null };
+  const v = POOLS.includes(first) ? (sub === "b" ? `${first}-b` : first) : first === "tips" ? "tips" : null;
+  return { view: v, sub: sub === "b" ? null : sub || null };
 }
 const route = parseRoute();
 let showBacktest = route.sub === "backtest";
@@ -46,10 +52,15 @@ function oneIn(p) {
 }
 
 // ---------- Flikbyte ----------
-// v = "tips" | "stryktipset" | "europatipset". push = lägg adressen i webbläsarens historik.
+// v = "tips" | "stryktipset" | "europatipset" | "stryktipset-b" | "europatipset-b". push = lägg adressen i historiken.
+const viewPath = (v) => (v.endsWith("-b") ? `/${v.slice(0, -2)}/b` : `/${v}`);
 function setView(v, push = false) {
-  const st = POOLS.includes(v);
-  if (st) product = v;
+  const pool = v.replace(/-b$/, "");
+  const st = POOLS.includes(pool);
+  if (st) {
+    product = pool;
+    modeB = v.endsWith("-b");
+  }
   document.body.classList.toggle("view-stryktips", st);
   view.hidden = !st;
   for (const t of tabs) {
@@ -57,10 +68,10 @@ function setView(v, push = false) {
     t.classList.toggle("active", on);
     t.setAttribute("aria-selected", String(on));
   }
-  if (push && location.pathname !== `/${v}`) history.pushState(null, "", `/${v}`);
-  else if (!push && location.pathname === "/") history.replaceState(null, "", `/${v}`);
+  if (push && location.pathname !== viewPath(v)) history.pushState(null, "", viewPath(v));
+  else if (!push && location.pathname === "/") history.replaceState(null, "", viewPath(v));
   // Europatipset sparas inte som senaste flik: den ska bara nås via adressen
-  if (v !== "europatipset") {
+  if (pool !== "europatipset") {
     try {
       localStorage.setItem("betting.view", v);
     } catch {
@@ -334,7 +345,7 @@ function render() {
   const head = `<div class="st-head">
     <div>
       <p class="eyebrow">Svenska Spel · 13 matcher</p>
-      <h2>${esc(p?.productName || "Stryktipset")}${p ? ` <small>omgång ${p.drawNumber}</small>` : ""}</h2>
+      <h2>${esc(p?.productName || (product === "europatipset" ? "Europatipset" : "Stryktipset"))} ${modeB ? "B" : "A"}${p ? ` <small>omgång ${p.drawNumber}</small>` : ""}</h2>
       <p class="st-sub">${p ? `${p.open ? "Öppen" : "Avgjord"} · ${esc(p.closeDescription || "")}` : "Hämtar kupong…"}${data?.updatedAt ? ` · hämtad ${esc(new Date(data.updatedAt).toLocaleString("sv-SE", { dateStyle: "short", timeStyle: "short" }))}` : ""}</p>
     </div>
     <div class="st-actions">
@@ -344,6 +355,10 @@ function render() {
 
   if (!p) {
     view.innerHTML = `${head}<p class="st-empty">${loading ? "Hämtar kupong och räknar…" : esc(data?.error || data?.fetchError || "Ingen kupong hämtad än – tryck “Hämta från Svenska Spel”.")}</p>`;
+    return;
+  }
+  if (modeB) {
+    renderB(p, head);
     return;
   }
 
@@ -381,11 +396,166 @@ function render() {
   view.innerHTML = `${head}${summary}${r ? `<p class="st-legend"><b>Färger</b> (efter Svenska folkets streck, samma som i Gambling Cabin): <span class="st-in c-green">Grön · favorit</span> folket ≥ ${Math.round(r.rules.colorGreen * 100)} % <span class="st-in c-yellow">Gul</span> mellan <span class="st-in c-red">Röd · skräll</span> folket ≤ ${Math.round(r.rules.colorRed * 100)} % · gråa tecken spelas inte</p>` : ""}<div class="st-list">${p.events.map((e) => matchCard(p, e)).join("")}</div>`;
 }
 
+// ---------- Stryktipset B: egna spikar ----------
+// Spikar sparas per spel och omgång i webbläsaren. scope: "both" = båda kupongerna, "A"/"B" = bara den ena.
+const SCOPES = [["both", "Båda"], ["A", "A"], ["B", "B"]];
+const bStates = new Map();
+const bKey = (p) => `betting.spikes.${p.product}.${p.drawNumber}`;
+function bState(p) {
+  const k = bKey(p);
+  if (!bStates.has(k)) {
+    let spikes = {};
+    try {
+      spikes = JSON.parse(localStorage.getItem(k) || "{}") || {};
+    } catch {
+      /* privat lage */
+    }
+    bStates.set(k, { spikes, result: null, dirty: false, busy: false });
+  }
+  return bStates.get(k);
+}
+function saveSpikes(p, st) {
+  st.dirty = !!st.result;
+  try {
+    localStorage.setItem(bKey(p), JSON.stringify(st.spikes));
+  } catch {
+    /* privat lage */
+  }
+}
+
+function spikeRow(e, spike) {
+  const scope = spike?.scope || "both";
+  return `<div class="sb-row${spike ? " locked" : ""}" data-ev="${e.eventNumber}">
+    <span class="st-num">${e.eventNumber}</span>
+    <div class="sb-match"><b>${esc(e.home)} – ${esc(e.away)}</b><small><span class="st-kick">${esc(kickoff(e.kickoff))}</span> · ${esc(e.league || "")}</small></div>
+    <div class="sb-signs" role="group" aria-label="Spik match ${e.eventNumber}">${SIGNS.map((s, i) => `<button type="button" class="sb-sign${spike?.sign === s ? " on" : ""}" data-sign="${s}" aria-pressed="${spike?.sign === s}" title="Folket ${pct(e.folk?.[i])}">${s}<small>${pct(e.final[i])}</small></button>`).join("")}</div>
+    <div class="sb-scope" role="group" aria-label="Spiken gäller">${SCOPES.map(([k, lbl]) => `<button type="button" data-scope="${k}" aria-pressed="${!!spike && scope === k}"${spike ? "" : " disabled"}>${lbl}</button>`).join("")}</div>
+  </div>`;
+}
+
+function couponCard(c, label, p) {
+  if (!c) return `<div class="sb-coupon"><h3>Kupong ${label}</h3><p class="st-note bad">Gick inte att bygga en kupong med de här spikarna.</p></div>`;
+  const krFmt = (x) => Math.round(x).toLocaleString("sv-SE");
+  const r = c.rules;
+  const utd = r.payoutMax ? `${krFmt(r.payoutMin)}–${krFmt(r.payoutMax)} kr` : `minst ${krFmt(r.payoutMin)} kr`;
+  const locked = c.picks.filter((x) => x.locked).length;
+  return `<div class="sb-coupon">
+    <h3>Kupong ${label} <small>${c.rows} rader · ${krFmt(c.cost)} kr</small></h3>
+    <dl class="sb-facts">
+      <div><dt>Chans 13 rätt</dt><dd>${oneIn(c.hitAll)}</dd></div>
+      <div><dt>Utdelning 13 rätt</dt><dd>ca ${krFmt(c.expectedPayout || 0)} kr</dd></div>
+      <div><dt>Regler</dt><dd>${r.signMin.join("-")} · utdelning ${utd}</dd></div>
+      <div><dt>Dina spikar</dt><dd>${locked}</dd></div>
+    </dl>
+    ${c.relaxed?.length ? `<p class="st-note">Gick inte med alla regler: ${esc(c.relaxed.join(", "))}.</p>` : ""}
+    ${p.open
+      ? `<a class="st-gc" href="${esc(c.gamblingCabinUrl)}" target="_blank" rel="noopener">Öppna kupong ${label} i Gambling Cabin – förifyllt, tryck Reducera → ${krFmt(c.cost)} kr</a>`
+      : `<p class="st-gc-off">Länken till Gambling Cabin fungerar när kupongen är öppen – den här omgången är avgjord.</p>`}
+    <details class="sb-rows"><summary>Visa alla ${c.rows} rader</summary><pre class="st-rows">${c.rowList.map((row, i) => `${String(i + 1).padStart(3, " ")}  ${row}`).join("\n")}</pre></details>
+  </div>`;
+}
+
+function couponTable(p, res) {
+  const cell = (c, i) => {
+    const x = c?.picks[i];
+    if (!x) return "<td>—</td>";
+    const cls = x.signs.length === 1 ? "spik" : x.signs.length === 2 ? "halv" : "hel";
+    return `<td><span class="st-tip ${cls}${x.locked ? " mine" : ""}" title="${x.locked ? "Din spik" : esc(x.type)}">${x.locked ? "🔒 " : ""}${esc(x.signs.split("").join(" + "))}</span></td>`;
+  };
+  return `<div class="st-bt-wrap"><table class="sb-table">
+    <thead><tr><th>#</th><th>Match</th><th>Kupong A</th><th>Kupong B</th></tr></thead>
+    <tbody>${p.events.map((e, i) => `<tr><td>${e.eventNumber}</td><th>${esc(e.home)} – ${esc(e.away)}</th>${cell(res.A, i)}${cell(res.B, i)}</tr>`).join("")}</tbody>
+  </table></div>`;
+}
+
+function renderB(p, head) {
+  const st = bState(p);
+  const n = Object.keys(st.spikes).length;
+  const res = st.result;
+  const picker = `<section class="sb-panel">
+    <div class="sb-panel-head">
+      <div>
+        <h3>1. Välj dina spikar</h3>
+        <p class="st-sub">Klicka 1, X eller 2 för att spika (klicka igen för att ta bort). Välj sedan om spiken gäller båda kupongerna eller bara A eller B. Procenten är vår sannolikhet.</p>
+      </div>
+      <div class="st-actions">
+        <button type="button" class="btn-ghost" id="sb-clear"${n ? "" : " disabled"}>Rensa spikar</button>
+        <button type="button" class="btn-fetch sb-generate" id="sb-generate"${st.busy ? " disabled" : ""}><span class="btn-label">${st.busy ? "Genererar…" : `2. Generera kupong${n ? ` (${n} ${n === 1 ? "spik" : "spikar"})` : ""}`}</span></button>
+      </div>
+    </div>
+    <div class="sb-list">${p.events.map((e) => spikeRow(e, st.spikes[e.eventNumber])).join("")}</div>
+  </section>`;
+  const result = res
+    ? `<section class="sb-panel sb-result">
+        <h3>Din kupong</h3>
+        ${st.dirty ? `<p class="st-note">Du har ändrat spikarna – tryck Generera kupong igen för att uppdatera.</p>` : ""}
+        <p class="st-sub">${res.mode === "split"
+          ? "Samma spikar i båda: ett system på 700–800 rader delas i A (högst utdelning) och B (resten), som på Stryktipset A."
+          : "Olika spikar i A och B: kupongerna byggs var för sig och B väljs så att den täcker rader som A saknar."} Resten av kupongen väljs så att chansen till 13 rätt blir så hög som möjligt inom 350–400 kr.</p>
+        ${couponTable(p, res)}
+        <div class="sb-coupons">${couponCard(res.A, "A", p)}${couponCard(res.B, "B", p)}</div>
+      </section>`
+    : "";
+  // Matchkorten visar den genererade kupongen (eller bara tipset innan något genererats)
+  const pv = { ...p, reducedB: { split: res?.mode === "split" } };
+  const events = p.events.map((e, i) => ({ ...e, systemPick: res?.A?.picks[i] || null, systemPickB: res?.B?.picks[i] || null }));
+  view.innerHTML = `${head}${data.error ? `<p class="st-note bad">Kunde inte uppdatera: ${esc(data.error)}</p>` : ""}${picker}${result}<div class="st-list">${events.map((e) => matchCard(pv, e)).join("")}</div>`;
+}
+
+function handleB(ev) {
+  const p = data?.products?.find((x) => x.product === product);
+  if (!p) return false;
+  const st = bState(p);
+  const row = ev.target.closest(".sb-row");
+  const signBtn = ev.target.closest(".sb-sign");
+  const scopeBtn = ev.target.closest(".sb-scope button");
+  if (row && signBtn) {
+    const nr = row.dataset.ev, s = signBtn.dataset.sign;
+    if (st.spikes[nr]?.sign === s) delete st.spikes[nr];
+    else st.spikes[nr] = { sign: s, scope: st.spikes[nr]?.scope || "both" };
+    saveSpikes(p, st);
+    render();
+    return true;
+  }
+  if (row && scopeBtn && st.spikes[row.dataset.ev]) {
+    st.spikes[row.dataset.ev].scope = scopeBtn.dataset.scope;
+    saveSpikes(p, st);
+    render();
+    return true;
+  }
+  if (ev.target.closest("#sb-clear")) {
+    st.spikes = {};
+    saveSpikes(p, st);
+    render();
+    return true;
+  }
+  if (ev.target.closest("#sb-generate")) {
+    st.busy = true;
+    render();
+    // Låt knappen hinna visa "Genererar…" innan räkningen (vanligtvis under en sekund)
+    setTimeout(() => {
+      try {
+        st.result = generateCoupons(p, st.spikes);
+      } catch (e) {
+        st.result = null;
+        data.error = `kupongen kunde inte genereras: ${e.message}`;
+      }
+      st.busy = false;
+      st.dirty = false;
+      render();
+      view.querySelector(".sb-result")?.scrollIntoView({ block: "start", behavior: "smooth" });
+    }, 30);
+    return true;
+  }
+  return false;
+}
+
 view.addEventListener("click", (ev) => {
   if (ev.target.closest("#st-fetch")) {
     load(true);
     return;
   }
+  if (modeB && handleB(ev)) return;
   const btn = ev.target.closest(".st-analyze");
   if (btn) {
     const key = btn.closest(".st-match").dataset.key;
@@ -405,4 +575,4 @@ try {
 }
 // Adressen går först, annars senast valda flik (äldre sparat värde "stryktips" = Stryktipset)
 if (saved === "stryktips") saved = "stryktipset";
-setView(route.view || (saved === "stryktipset" ? "stryktipset" : "tips"));
+setView(route.view || (["stryktipset", "stryktipset-b"].includes(saved) ? saved : "tips"));
