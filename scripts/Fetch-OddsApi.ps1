@@ -43,12 +43,17 @@ if ($env:ODDS_ALL -eq "1") { $OddsHorizonDays = 3650 } # ODDS_ALL=1: alla ligor 
 $registry = ([System.IO.File]::ReadAllText((Join-Path $Root "config/leagues.json"))) | ConvertFrom-Json
 $fixturesPath = Join-Path $Root "data/upcoming-fixtures.json"
 $soonLeagues = @{} # liga -> antal matcher inom horisonten
+# Cuper (CL/EL/ECL) har ingen modell och blir bara marknadstips - utan odds forsvinner de fran sidan.
+# Omgangarna ligger ofta 2-3 veckor isar, sa de far samma horisont som tipsen (21 d).
+$CupHorizonDays = [math]::Max($OddsHorizonDays, 21)
+$cupLeagues = @{}
+foreach ($p in $registry.leagues.PSObject.Properties) { if ($p.Value.cup) { $cupLeagues[$p.Name] = $true } }
 if (Test-Path $fixturesPath) {
     $today = (Get-Date).Date
-    $limit = $today.AddDays($OddsHorizonDays)
     foreach ($f in (([System.IO.File]::ReadAllText($fixturesPath)).TrimStart([char]0xFEFF) | ConvertFrom-Json)) {
         try {
             $d = [datetime]::Parse($f.date)
+            $limit = $today.AddDays($(if ($cupLeagues.ContainsKey([string]$f.league)) { $CupHorizonDays } else { $OddsHorizonDays }))
             if ($d -ge $today -and $d -le $limit) { $soonLeagues[[string]$f.league] = 1 + [int]$soonLeagues[[string]$f.league] }
         } catch {}
     }

@@ -39,6 +39,13 @@ function leaguesToFetch(registry) {
     const onlyOp = Object.values(t.pro?.oddsBooks ?? {}).every((b) => !b || /OddsPortal/.test(b));
     if (!(t.pro?.odds?.home > 1) || onlyOp) missing.add(t.league);
   }
+  // Cuper har ingen modell: utan odds finns inga tips alls, sa de syns bara i spelschemat (horisont 21 d som tipsen)
+  const fixtures = readJson(path.join(root, 'data', 'upcoming-fixtures.json')) ?? [];
+  const cupLimit = new Date(Date.now() + 21 * 86400e3).toISOString().slice(0, 10);
+  const hasTip = new Set((tips?.allCandidates ?? []).map((t) => t.league));
+  for (const f of Array.isArray(fixtures) ? fixtures : []) {
+    if (registry.leagues[f.league]?.cup && !hasTip.has(f.league) && f.date >= today && f.date <= cupLimit) missing.add(f.league);
+  }
   return withSlug.filter((c) => missing.has(c));
 }
 
