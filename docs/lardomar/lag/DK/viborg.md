@@ -1,6 +1,6 @@
 # Viborg (Superligaen) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [DK](../../ligor/DK.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [DK](../../ligor/DK.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -56,7 +56,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-05-07 | Europa 2572 | Viborg - Sönderjyske | 2 | 60 % | 52 % |
 | 2026-02-15 | Europa 2549 | Viborg - Bröndby | 1 ✓ | 43 % | 38 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Nickolai Lund. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -69,7 +69,7 @@ Tränare: Nickolai Lund. Betyg, mål och assist gäller innevarande säsong enli
 | 20 | Kasper Kiilerich | GK | 20 | Denmark | 1,0 M€ | 6,97 | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 2 | Mohamed Riahi | Defender | 20 | Tunisia | – | – | 0 | 0 | 0/0 | skadad, åter Day to day |
-| 3 | Valgeir Lunddal | RB,RWB | 25 | Iceland | 713 k€ | 6,09 | 0 | 0 | 0/0 |  |
+| 3 | Valgeir Lunddal | RWB | 25 | Iceland | 713 k€ | 6,09 | 0 | 0 | 0/0 |  |
 | 4 | Lukas Kirkegaard | CB | 21 | Denmark | – | 7,12 | 0 | 0 | 1/0 |  |
 | 5 | Žan Zaletel | CB | 27 | Slovenia | 985 k€ | 7,26 | 0 | 1 | 1/0 |  |
 | 23 | Oliver Bundgaard Kristensen | LB | 25 | Denmark | – | 7,35 | 0 | 2 | 2/0 |  |

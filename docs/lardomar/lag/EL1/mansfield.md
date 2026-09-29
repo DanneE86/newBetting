@@ -1,6 +1,6 @@
 # Mansfield (League One) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -68,7 +68,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-02-28 | Stryk 4942 | Mansfield - Wimbledon | X | 52 % | 44 % |
 | 2026-02-21 | Stryk 4941 | Mansfield - Lincoln | 2 | 18 % | 27 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Nigel Clough. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -93,7 +93,7 @@ Tränare: Nigel Clough. Betyg, mål och assist gäller innevarande säsong enlig
 | 13 | Jonathan Russell | CAM,CDM,RW,CM | 25 | Jamaica | 666 k€ | 7,68 | 2 | 1 | 0/0 |  |
 | 16 | Liam Thompson | CAM,CDM,CM | 24 | England | 1,3 M€ | 6,70 | 0 | 0 | 1/0 |  |
 | 19 | Tyler Roberts | CAM,ST | 27 | Wales | 493 k€ | 6,11 | 0 | 0 | 0/0 |  |
-| 22 | Nathan Moriah-Welsh | RW,CAM | 24 | Guyana | 311 k€ | 6,94 | 2 | 2 | 1/0 |  |
+| 22 | Nathan Moriah-Welsh | CAM,RW | 24 | Guyana | 311 k€ | 6,94 | 2 | 2 | 1/0 |  |
 | 24 | Regan Hendry | CAM,LW,CDM,ST | 28 | Scotland | 178 k€ | 7,16 | 0 | 2 | 1/0 |  |
 | 25 | Louis Reed | CDM,CM | 29 | England | 219 k€ | 7,10 | 2 | 0 | 3/0 |  |
 | 39 | Owen Dodgson | LWB,CB,LW | 23 | England | 253 k€ | 6,78 | 0 | 0 | 0/1 |  |

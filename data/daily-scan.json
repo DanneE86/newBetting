@@ -1,73 +1,72 @@
 {
-  "date": "2026-09-27",
-  "startedAt": "2026-09-27T18:03:42.923Z",
-  "finishedAt": "2026-09-27T18:03:43.053Z",
-  "dataUpdatedAt": "2026-09-27T20:03:13.0767559+02:00",
+  "date": "2026-09-29",
+  "startedAt": "2026-09-29T19:09:53.130Z",
+  "finishedAt": "2026-09-29T19:09:53.248Z",
+  "dataUpdatedAt": "2026-09-28T22:23:14.2226086+02:00",
   "days": 7,
-  "poolSize": 624,
+  "poolSize": 642,
   "summary": {
-    "bet": 0,
-    "wait": 3,
-    "noBet": 4
+    "bet": 4,
+    "wait": 0,
+    "noBet": 3
   },
   "record": {
-    "bets": 0,
+    "bets": 5,
     "settled": 0,
-    "open": 0,
+    "open": 5,
     "won": 0,
     "hitRate": null,
     "roi": null
   },
   "matches": [
     {
-      "match": "Las Palmas vs Valladolid",
-      "home": "Las Palmas",
-      "away": "Valladolid",
+      "match": "Almeria vs Burgos",
+      "home": "Almeria",
+      "away": "Burgos",
       "league": "LL2",
-      "date": "2026-10-04",
-      "kickoffUtc": "2026-10-04T16:30Z",
+      "date": "2026-10-03",
+      "kickoffUtc": "2026-10-03T14:15Z",
       "marketOnly": false,
       "why": [
-        "värde EV 11 %",
-        "Elo-diff 198",
+        "värde EV 7 %",
         "skarpt facit"
       ],
       "football": {
         "home": {
-          "elo": 1571.1,
+          "elo": 1587,
           "eloSource": "internal",
-          "form": "WWLDWL",
-          "played": 6,
-          "ppg": 1.6667,
+          "form": "WLLWWWW",
+          "played": 7,
+          "ppg": 2.1429,
           "venuePlayed": 3,
-          "venueWinRate": 0.3333,
-          "gfPg": 1,
-          "gaPg": 1,
-          "bttsRate": 0.6667,
+          "venueWinRate": 1,
+          "gfPg": 2.6667,
+          "gaPg": 0.6667,
+          "bttsRate": 0.3333,
           "over25Rate": 0.6667,
           "xg": {
             "source": "shots-proxy",
-            "xGpg": 1.08,
-            "xGApg": 1.184
+            "xGpg": 1.254,
+            "xGApg": 1.147
           },
           "attackIndex": null
         },
         "away": {
-          "elo": 1437.8,
+          "elo": 1589.5,
           "eloSource": "internal",
-          "form": "LLDWLD",
-          "played": 6,
-          "ppg": 0.8333,
-          "venuePlayed": 4,
-          "venueWinRate": 0,
-          "gfPg": 0.5,
-          "gaPg": 1.25,
-          "bttsRate": 0.5,
-          "over25Rate": 0,
+          "form": "WLDDWWW",
+          "played": 7,
+          "ppg": 2,
+          "venuePlayed": 3,
+          "venueWinRate": 0.3333,
+          "gfPg": 0.6667,
+          "gaPg": 0.6667,
+          "bttsRate": 0.3333,
+          "over25Rate": 0.3333,
           "xg": {
             "source": "shots-proxy",
-            "xGpg": 0.717,
-            "xGApg": 0.69
+            "xGpg": 1.18,
+            "xGApg": 1.823
           },
           "attackIndex": null
         },
@@ -87,7 +86,6 @@
           "away": 0
         },
         "notes": [],
-        "weatherFlags": [],
         "assumptions": [
           "Elvor ej bekräftade – antar ordinarie startelva"
         ]
@@ -95,56 +93,56 @@
       "quant": {
         "available": true,
         "projectedGoals": {
-          "home": 1.59,
-          "away": 0.81,
-          "total": 2.4
+          "home": 1.35,
+          "away": 1.08,
+          "total": 2.43
         },
         "markets": {
           "home": {
-            "p": 0.541,
-            "fair": 1.85
+            "p": 0.603,
+            "fair": 1.66
           },
           "draw": {
-            "p": 0.248,
-            "fair": 4.03
+            "p": 0.235,
+            "fair": 4.25
           },
           "away": {
-            "p": 0.21,
-            "fair": 4.75
+            "p": 0.162,
+            "fair": 6.19
           },
           "over15": {
-            "p": 0.692,
-            "fair": 1.45
+            "p": 0.698,
+            "fair": 1.43
           },
           "over25": {
-            "p": 0.41,
-            "fair": 2.44
+            "p": 0.475,
+            "fair": 2.1
           },
           "over35": {
-            "p": 0.221,
-            "fair": 4.52
+            "p": 0.228,
+            "fair": 4.39
           },
           "btts": {
-            "p": 0.437,
-            "fair": 2.29
+            "p": 0.484,
+            "fair": 2.07
           },
           "under25": {
-            "p": 0.59,
-            "fair": 1.69
+            "p": 0.525,
+            "fair": 1.91
           },
           "bttsNo": {
-            "p": 0.563,
-            "fair": 1.78
+            "p": 0.516,
+            "fair": 1.94
           }
         },
         "teamTotals": {
-          "homeOver05": 0.796,
-          "homeOver15": 0.472,
-          "awayOver05": 0.555,
-          "awayOver15": 0.195
+          "homeOver05": 0.741,
+          "homeOver15": 0.391,
+          "awayOver05": 0.66,
+          "awayOver15": 0.294
         },
         "asianHandicap": {
-          "homeMinus15": 0.299
+          "homeMinus15": 0.2
         },
         "assumptions": [
           "Dixon-Coles (lagstyrka + hemmafördel) blandat 50/50 med Elo/form/xG-modellen",
@@ -159,69 +157,69 @@
       "market": {
         "available": true,
         "fairSource": "pinnacle",
-        "booksCount": 14,
+        "booksCount": 18,
         "rows": [
           {
             "market": "1X2",
             "pick": "1",
             "key": "home",
-            "modelP": 0.541,
-            "fairModel": 1.85,
-            "marketP": 0.412,
-            "book": 2.15,
-            "bookmaker": "Betsson",
-            "implied": 0.465,
-            "edgeModel": 0.076,
-            "ev": -0.1143,
-            "minOdds": 2.5,
-            "value": false,
+            "modelP": 0.603,
+            "fairModel": 1.66,
+            "marketP": 0.603,
+            "book": 1.77,
+            "bookmaker": "Unibet (SE)",
+            "implied": 0.565,
+            "edgeModel": 0.038,
+            "ev": 0.0675,
+            "minOdds": 1.71,
+            "value": true,
             "reason": null
           },
           {
             "market": "1X2",
             "pick": "X",
             "key": "draw",
-            "modelP": 0.248,
-            "fairModel": 4.03,
-            "marketP": 0.3,
-            "book": 3.5,
-            "bookmaker": "Unibet (SE)",
-            "implied": 0.286,
-            "edgeModel": -0.038,
-            "ev": 0.0515,
-            "minOdds": 3.43,
-            "value": true,
+            "modelP": 0.235,
+            "fairModel": 4.26,
+            "marketP": 0.235,
+            "book": 3.85,
+            "bookmaker": "Coolbet",
+            "implied": 0.26,
+            "edgeModel": -0.025,
+            "ev": -0.0942,
+            "minOdds": 4.38,
+            "value": false,
             "reason": null
           },
           {
             "market": "1X2",
             "pick": "2",
             "key": "away",
-            "modelP": 0.21,
-            "fairModel": 4.76,
-            "marketP": 0.288,
-            "book": 3.85,
-            "bookmaker": "Unibet (SE)",
-            "implied": 0.26,
-            "edgeModel": -0.05,
-            "ev": 0.1073,
-            "minOdds": 3.58,
-            "value": true,
+            "modelP": 0.162,
+            "fairModel": 6.17,
+            "marketP": 0.162,
+            "book": 5,
+            "bookmaker": "Coolbet",
+            "implied": 0.2,
+            "edgeModel": -0.038,
+            "ev": -0.192,
+            "minOdds": 6.38,
+            "value": false,
             "reason": null
           },
           {
             "market": "OU25",
             "pick": "Över 2.5",
             "key": "over25",
-            "modelP": 0.41,
-            "fairModel": 2.44,
-            "marketP": 0.47,
-            "book": 2.05,
-            "bookmaker": "Betsson",
-            "implied": 0.488,
-            "edgeModel": -0.078,
-            "ev": -0.0374,
-            "minOdds": 2.24,
+            "modelP": 0.475,
+            "fairModel": 2.11,
+            "marketP": 0.475,
+            "book": 1.97,
+            "bookmaker": "Unibet (SE)",
+            "implied": 0.508,
+            "edgeModel": -0.033,
+            "ev": -0.0636,
+            "minOdds": 2.17,
             "value": false,
             "reason": null
           },
@@ -229,15 +227,15 @@
             "market": "OU25",
             "pick": "Under 2.5",
             "key": "under25",
-            "modelP": 0.59,
-            "fairModel": 1.69,
-            "marketP": 0.53,
-            "book": 1.79,
-            "bookmaker": "Unibet (SE)",
-            "implied": 0.559,
-            "edgeModel": 0.031,
-            "ev": -0.0505,
-            "minOdds": 1.98,
+            "modelP": 0.525,
+            "fairModel": 1.9,
+            "marketP": 0.525,
+            "book": 1.82,
+            "bookmaker": "Coolbet",
+            "implied": 0.549,
+            "edgeModel": -0.024,
+            "ev": -0.0451,
+            "minOdds": 1.97,
             "value": false,
             "reason": null
           }
@@ -245,86 +243,54 @@
         "candidates": [
           {
             "market": "1X2",
-            "pick": "X",
-            "key": "draw",
-            "modelP": 0.248,
-            "fairModel": 4.03,
-            "marketP": 0.3,
-            "book": 3.5,
+            "pick": "1",
+            "key": "home",
+            "modelP": 0.603,
+            "fairModel": 1.66,
+            "marketP": 0.603,
+            "book": 1.77,
             "bookmaker": "Unibet (SE)",
-            "implied": 0.286,
-            "edgeModel": -0.038,
-            "ev": 0.0515,
-            "minOdds": 3.43,
-            "value": true,
-            "reason": null
-          },
-          {
-            "market": "1X2",
-            "pick": "2",
-            "key": "away",
-            "modelP": 0.21,
-            "fairModel": 4.76,
-            "marketP": 0.288,
-            "book": 3.85,
-            "bookmaker": "Unibet (SE)",
-            "implied": 0.26,
-            "edgeModel": -0.05,
-            "ev": 0.1073,
-            "minOdds": 3.58,
+            "implied": 0.565,
+            "edgeModel": 0.038,
+            "ev": 0.0675,
+            "minOdds": 1.71,
             "value": true,
             "reason": null
           }
         ]
       },
       "devil": {
-        "attacks": [
-          "Matchen är 7 dagar bort – tidiga linjer rör sig mycket; värdet måste finnas kvar närmare avspark."
-        ],
+        "attacks": [],
         "fragile": [
-          "Egna modellen (25 %) är lägre än marknaden (30 %) på X",
-          "X @ 3.5: hög varians, långt oddsintervall",
-          "Egna modellen (21 %) är lägre än marknaden (29 %) på 2",
-          "2 @ 3.85: hög varians, långt oddsintervall",
-          "Modell 54 % vs marknad 41 % på home – när de är oense brukar marknaden ha rätt",
           "Elvor inte släppta – rotation/skador kan ändra caset"
         ],
         "kill": [
-          "X: oddset faller under 3.43",
-          "2: oddset faller under 3.58",
-          "värdet är borta när du scannar igen 1–2 dagar före",
+          "1: oddset faller under 1.71",
           "bekräftad elva utan nyckelspelare"
         ],
-        "residual": "Weakened"
+        "residual": "Still plausible"
       },
       "head": {
-        "verdict": "WAIT",
-        "confidence": "LOW",
+        "verdict": "BET",
+        "confidence": "MEDIUM",
         "best": {
           "market": "1X2",
-          "pick": "2",
-          "book": 3.85,
+          "pick": "1",
+          "book": 1.77,
           "bookmaker": "Unibet (SE)",
-          "fair": 3.47,
-          "minOdds": 3.58,
-          "ev": 0.1073,
-          "modelP": 0.21
+          "fair": 1.66,
+          "minOdds": 1.71,
+          "ev": 0.0675,
+          "modelP": 0.603
         },
         "why": [
-          "2 @ 3.85 (Unibet (SE)) har EV 11 % mot pinnacle.",
-          "Caset är försvagat – kör scannern igen närmare avspark (elvor, aktuella odds)."
+          "1 @ 1.77 (Unibet (SE)) har EV 7 % mot pinnacle."
         ],
         "risks": [
-          "Matchen är 7 dagar bort – tidiga linjer rör sig mycket; värdet måste finnas kvar närmare avspark.",
-          "Egna modellen (25 %) är lägre än marknaden (30 %) på X",
-          "X @ 3.5: hög varians, långt oddsintervall",
-          "Egna modellen (21 %) är lägre än marknaden (29 %) på 2",
-          "2 @ 3.85: hög varians, långt oddsintervall"
+          "Elvor inte släppta – rotation/skador kan ändra caset"
         ],
         "changeIf": [
-          "X: oddset faller under 3.43",
-          "2: oddset faller under 3.58",
-          "värdet är borta när du scannar igen 1–2 dagar före",
+          "1: oddset faller under 1.71",
           "bekräftad elva utan nyckelspelare"
         ]
       }
@@ -338,7 +304,7 @@
       "kickoffUtc": "2026-10-02T23:30Z",
       "marketOnly": false,
       "why": [
-        "värde EV 9 %",
+        "värde EV 6 %",
         "skarpt facit"
       ],
       "football": {
@@ -396,7 +362,6 @@
           "away": 0
         },
         "notes": [],
-        "weatherFlags": [],
         "assumptions": [
           "Elvor ej bekräftade – antar ordinarie startelva"
         ]
@@ -404,56 +369,56 @@
       "quant": {
         "available": true,
         "projectedGoals": {
-          "home": 1.21,
-          "away": 1.16,
-          "total": 2.37
+          "home": 1.19,
+          "away": 1.2,
+          "total": 2.39
         },
         "markets": {
           "home": {
-            "p": 0.341,
-            "fair": 2.94
+            "p": 0.336,
+            "fair": 2.98
           },
           "draw": {
-            "p": 0.293,
-            "fair": 3.41
+            "p": 0.29,
+            "fair": 3.45
           },
           "away": {
-            "p": 0.366,
-            "fair": 2.73
+            "p": 0.374,
+            "fair": 2.68
           },
           "over15": {
-            "p": 0.685,
-            "fair": 1.46
+            "p": 0.689,
+            "fair": 1.45
           },
           "over25": {
-            "p": 0.442,
-            "fair": 2.27
+            "p": 0.443,
+            "fair": 2.26
           },
           "over35": {
-            "p": 0.215,
-            "fair": 4.65
+            "p": 0.219,
+            "fair": 4.56
           },
           "btts": {
-            "p": 0.48,
-            "fair": 2.08
+            "p": 0.482,
+            "fair": 2.07
           },
           "under25": {
-            "p": 0.559,
-            "fair": 1.79
+            "p": 0.557,
+            "fair": 1.8
           },
           "bttsNo": {
-            "p": 0.52,
-            "fair": 1.92
+            "p": 0.518,
+            "fair": 1.93
           }
         },
         "teamTotals": {
-          "homeOver05": 0.702,
-          "homeOver15": 0.341,
-          "awayOver05": 0.687,
-          "awayOver15": 0.323
+          "homeOver05": 0.696,
+          "homeOver15": 0.334,
+          "awayOver05": 0.699,
+          "awayOver15": 0.337
         },
         "asianHandicap": {
-          "homeMinus15": 0.16
+          "homeMinus15": 0.151
         },
         "assumptions": [
           "Dixon-Coles (lagstyrka + hemmafördel) blandat 50/50 med Elo/form/xG-modellen",
@@ -474,15 +439,15 @@
             "market": "1X2",
             "pick": "1",
             "key": "home",
-            "modelP": 0.341,
-            "fairModel": 2.93,
+            "modelP": 0.336,
+            "fairModel": 2.98,
             "marketP": 0.342,
-            "book": 3.2,
+            "book": 3.1,
             "bookmaker": "Unibet (SE)",
-            "implied": 0.313,
-            "edgeModel": 0.029,
-            "ev": 0.0946,
-            "minOdds": 3.01,
+            "implied": 0.323,
+            "edgeModel": 0.013,
+            "ev": 0.0604,
+            "minOdds": 3.02,
             "value": true,
             "reason": null
           },
@@ -490,15 +455,15 @@
             "market": "1X2",
             "pick": "X",
             "key": "draw",
-            "modelP": 0.293,
-            "fairModel": 3.41,
+            "modelP": 0.29,
+            "fairModel": 3.45,
             "marketP": 0.291,
             "book": 3.15,
             "bookmaker": "Coolbet",
             "implied": 0.317,
-            "edgeModel": -0.024,
+            "edgeModel": -0.027,
             "ev": -0.0844,
-            "minOdds": 3.54,
+            "minOdds": 3.55,
             "value": false,
             "reason": null
           },
@@ -506,15 +471,15 @@
             "market": "1X2",
             "pick": "2",
             "key": "away",
-            "modelP": 0.366,
-            "fairModel": 2.73,
+            "modelP": 0.374,
+            "fairModel": 2.67,
             "marketP": 0.367,
             "book": 2.55,
             "bookmaker": "Coolbet",
             "implied": 0.392,
-            "edgeModel": -0.026,
+            "edgeModel": -0.018,
             "ev": -0.0635,
-            "minOdds": 2.8,
+            "minOdds": 2.81,
             "value": false,
             "reason": null
           },
@@ -522,15 +487,15 @@
             "market": "OU25",
             "pick": "Över 2.5",
             "key": "over25",
-            "modelP": 0.442,
+            "modelP": 0.443,
             "fairModel": 2.26,
             "marketP": 0.418,
             "book": 2.22,
             "bookmaker": "Nordic Bet",
             "implied": 0.45,
-            "edgeModel": -0.008,
+            "edgeModel": -0.007,
             "ev": -0.0713,
-            "minOdds": 2.51,
+            "minOdds": 2.52,
             "value": false,
             "reason": null
           },
@@ -538,13 +503,13 @@
             "market": "OU25",
             "pick": "Under 2.5",
             "key": "under25",
-            "modelP": 0.559,
-            "fairModel": 1.79,
+            "modelP": 0.557,
+            "fairModel": 1.8,
             "marketP": 0.582,
             "book": 1.61,
             "bookmaker": "Unibet (SE)",
             "implied": 0.621,
-            "edgeModel": -0.062,
+            "edgeModel": -0.064,
             "ev": -0.0635,
             "minOdds": 1.81,
             "value": false,
@@ -556,60 +521,54 @@
             "market": "1X2",
             "pick": "1",
             "key": "home",
-            "modelP": 0.341,
-            "fairModel": 2.93,
+            "modelP": 0.336,
+            "fairModel": 2.98,
             "marketP": 0.342,
-            "book": 3.2,
+            "book": 3.1,
             "bookmaker": "Unibet (SE)",
-            "implied": 0.313,
-            "edgeModel": 0.029,
-            "ev": 0.0946,
-            "minOdds": 3.01,
+            "implied": 0.323,
+            "edgeModel": 0.013,
+            "ev": 0.0604,
+            "minOdds": 3.02,
             "value": true,
             "reason": null
           }
         ]
       },
       "devil": {
-        "attacks": [
-          "Matchen är 5 dagar bort – tidiga linjer rör sig mycket; värdet måste finnas kvar närmare avspark."
-        ],
+        "attacks": [],
         "fragile": [
           "Egna modellen (34 %) är lägre än marknaden (34 %) på 1",
           "Elvor inte släppta – rotation/skador kan ändra caset"
         ],
         "kill": [
-          "1: oddset faller under 3.01",
-          "värdet är borta när du scannar igen 1–2 dagar före",
+          "1: oddset faller under 3.02",
           "bekräftad elva utan nyckelspelare"
         ],
-        "residual": "Weakened"
+        "residual": "Still plausible"
       },
       "head": {
-        "verdict": "WAIT",
-        "confidence": "LOW",
+        "verdict": "BET",
+        "confidence": "MEDIUM",
         "best": {
           "market": "1X2",
           "pick": "1",
-          "book": 3.2,
+          "book": 3.1,
           "bookmaker": "Unibet (SE)",
           "fair": 2.92,
-          "minOdds": 3.01,
-          "ev": 0.0946,
-          "modelP": 0.341
+          "minOdds": 3.02,
+          "ev": 0.0604,
+          "modelP": 0.336
         },
         "why": [
-          "1 @ 3.2 (Unibet (SE)) har EV 9 % mot pinnacle.",
-          "Caset är försvagat – kör scannern igen närmare avspark (elvor, aktuella odds)."
+          "1 @ 3.1 (Unibet (SE)) har EV 6 % mot pinnacle."
         ],
         "risks": [
-          "Matchen är 5 dagar bort – tidiga linjer rör sig mycket; värdet måste finnas kvar närmare avspark.",
           "Egna modellen (34 %) är lägre än marknaden (34 %) på 1",
           "Elvor inte släppta – rotation/skador kan ändra caset"
         ],
         "changeIf": [
-          "1: oddset faller under 3.01",
-          "värdet är borta när du scannar igen 1–2 dagar före",
+          "1: oddset faller under 3.02",
           "bekräftad elva utan nyckelspelare"
         ]
       }
@@ -681,7 +640,6 @@
           "away": 0
         },
         "notes": [],
-        "weatherFlags": [],
         "assumptions": [
           "Elvor ej bekräftade – antar ordinarie startelva"
         ]
@@ -689,56 +647,56 @@
       "quant": {
         "available": true,
         "projectedGoals": {
-          "home": 1.51,
-          "away": 1.01,
+          "home": 1.49,
+          "away": 1.03,
           "total": 2.52
         },
         "markets": {
           "home": {
-            "p": 0.442,
-            "fair": 2.26
+            "p": 0.438,
+            "fair": 2.28
           },
           "draw": {
-            "p": 0.283,
-            "fair": 3.53
+            "p": 0.282,
+            "fair": 3.54
           },
           "away": {
-            "p": 0.275,
-            "fair": 3.64
+            "p": 0.28,
+            "fair": 3.57
           },
           "over15": {
             "p": 0.717,
             "fair": 1.4
           },
           "over25": {
-            "p": 0.417,
-            "fair": 2.4
+            "p": 0.418,
+            "fair": 2.39
           },
           "over35": {
             "p": 0.247,
             "fair": 4.05
           },
           "btts": {
-            "p": 0.474,
-            "fair": 2.11
+            "p": 0.477,
+            "fair": 2.1
           },
           "under25": {
-            "p": 0.583,
-            "fair": 1.71
+            "p": 0.582,
+            "fair": 1.72
           },
           "bttsNo": {
-            "p": 0.526,
-            "fair": 1.9
+            "p": 0.523,
+            "fair": 1.91
           }
         },
         "teamTotals": {
-          "homeOver05": 0.779,
-          "homeOver15": 0.446,
-          "awayOver05": 0.636,
-          "awayOver15": 0.268
+          "homeOver05": 0.775,
+          "homeOver15": 0.439,
+          "awayOver05": 0.643,
+          "awayOver15": 0.275
         },
         "asianHandicap": {
-          "homeMinus15": 0.247
+          "homeMinus15": 0.239
         },
         "assumptions": [
           "Dixon-Coles (lagstyrka + hemmafördel) blandat 50/50 med Elo/form/xG-modellen",
@@ -759,15 +717,15 @@
             "market": "1X2",
             "pick": "1",
             "key": "home",
-            "modelP": 0.442,
-            "fairModel": 2.26,
+            "modelP": 0.438,
+            "fairModel": 2.28,
             "marketP": 0.349,
             "book": 2.62,
             "bookmaker": "Nordic Bet",
             "implied": 0.382,
-            "edgeModel": 0.06,
+            "edgeModel": 0.056,
             "ev": -0.0863,
-            "minOdds": 2.95,
+            "minOdds": 2.96,
             "value": false,
             "reason": null
           },
@@ -775,15 +733,15 @@
             "market": "1X2",
             "pick": "X",
             "key": "draw",
-            "modelP": 0.283,
-            "fairModel": 3.53,
+            "modelP": 0.282,
+            "fairModel": 3.55,
             "marketP": 0.297,
             "book": 3.15,
             "bookmaker": "Unibet (SE)",
             "implied": 0.317,
-            "edgeModel": -0.034,
+            "edgeModel": -0.035,
             "ev": -0.0634,
-            "minOdds": 3.46,
+            "minOdds": 3.47,
             "value": false,
             "reason": null
           },
@@ -791,15 +749,15 @@
             "market": "1X2",
             "pick": "2",
             "key": "away",
-            "modelP": 0.275,
-            "fairModel": 3.64,
+            "modelP": 0.28,
+            "fairModel": 3.57,
             "marketP": 0.354,
             "book": 2.95,
             "bookmaker": "Unibet (SE)",
             "implied": 0.339,
-            "edgeModel": -0.064,
+            "edgeModel": -0.059,
             "ev": 0.0441,
-            "minOdds": 2.91,
+            "minOdds": 2.92,
             "value": true,
             "reason": null
           },
@@ -807,15 +765,15 @@
             "market": "OU25",
             "pick": "Över 2.5",
             "key": "over25",
-            "modelP": 0.417,
-            "fairModel": 2.4,
+            "modelP": 0.418,
+            "fairModel": 2.39,
             "marketP": 0.428,
             "book": 2.22,
             "bookmaker": "Nordic Bet",
             "implied": 0.45,
-            "edgeModel": -0.033,
+            "edgeModel": -0.032,
             "ev": -0.0498,
-            "minOdds": 2.45,
+            "minOdds": 2.46,
             "value": false,
             "reason": null
           },
@@ -823,13 +781,13 @@
             "market": "OU25",
             "pick": "Under 2.5",
             "key": "under25",
-            "modelP": 0.583,
+            "modelP": 0.582,
             "fairModel": 1.72,
             "marketP": 0.572,
             "book": 1.66,
             "bookmaker": "Unibet (SE)",
             "implied": 0.602,
-            "edgeModel": -0.019,
+            "edgeModel": -0.02,
             "ev": -0.0505,
             "minOdds": 1.84,
             "value": false,
@@ -841,112 +799,107 @@
             "market": "1X2",
             "pick": "2",
             "key": "away",
-            "modelP": 0.275,
-            "fairModel": 3.64,
+            "modelP": 0.28,
+            "fairModel": 3.57,
             "marketP": 0.354,
             "book": 2.95,
             "bookmaker": "Unibet (SE)",
             "implied": 0.339,
-            "edgeModel": -0.064,
+            "edgeModel": -0.059,
             "ev": 0.0441,
-            "minOdds": 2.91,
+            "minOdds": 2.92,
             "value": true,
             "reason": null
           }
         ]
       },
       "devil": {
-        "attacks": [
-          "Matchen är 6 dagar bort – tidiga linjer rör sig mycket; värdet måste finnas kvar närmare avspark."
-        ],
+        "attacks": [],
         "fragile": [
           "Egna modellen (28 %) är lägre än marknaden (35 %) på 2",
           "Elvor inte släppta – rotation/skador kan ändra caset"
         ],
         "kill": [
-          "2: oddset faller under 2.91",
-          "värdet är borta när du scannar igen 1–2 dagar före",
+          "2: oddset faller under 2.92",
           "bekräftad elva utan nyckelspelare"
         ],
-        "residual": "Weakened"
+        "residual": "Still plausible"
       },
       "head": {
-        "verdict": "WAIT",
-        "confidence": "LOW",
+        "verdict": "BET",
+        "confidence": "MEDIUM",
         "best": {
           "market": "1X2",
           "pick": "2",
           "book": 2.95,
           "bookmaker": "Unibet (SE)",
           "fair": 2.82,
-          "minOdds": 2.91,
+          "minOdds": 2.92,
           "ev": 0.0441,
-          "modelP": 0.275
+          "modelP": 0.28
         },
         "why": [
-          "2 @ 2.95 (Unibet (SE)) har EV 4 % mot pinnacle.",
-          "Caset är försvagat – kör scannern igen närmare avspark (elvor, aktuella odds)."
+          "2 @ 2.95 (Unibet (SE)) har EV 4 % mot pinnacle."
         ],
         "risks": [
-          "Matchen är 6 dagar bort – tidiga linjer rör sig mycket; värdet måste finnas kvar närmare avspark.",
           "Egna modellen (28 %) är lägre än marknaden (35 %) på 2",
           "Elvor inte släppta – rotation/skador kan ändra caset"
         ],
         "changeIf": [
-          "2: oddset faller under 2.91",
-          "värdet är borta när du scannar igen 1–2 dagar före",
+          "2: oddset faller under 2.92",
           "bekräftad elva utan nyckelspelare"
         ]
       }
     },
     {
-      "match": "Burgos vs Eldense",
-      "home": "Burgos",
-      "away": "Eldense",
+      "match": "Las Palmas vs Valladolid",
+      "home": "Las Palmas",
+      "away": "Valladolid",
       "league": "LL2",
-      "date": "2026-09-27",
-      "kickoffUtc": "2026-09-27T16:30Z",
+      "date": "2026-10-04",
+      "kickoffUtc": "2026-10-04T16:30Z",
       "marketOnly": false,
       "why": [
-        "Elo-diff 208",
+        "värde EV 3 %",
+        "Elo-diff 181",
         "skarpt facit"
       ],
       "football": {
         "home": {
-          "elo": 1584.9,
+          "elo": 1563.2,
           "eloSource": "internal",
-          "form": "WLDDWW",
-          "played": 6,
-          "ppg": 1.8333,
+          "form": "WWLDWLL",
+          "played": 7,
+          "ppg": 1.4286,
           "venuePlayed": 3,
-          "venueWinRate": 0.6667,
-          "gfPg": 2.6667,
-          "gaPg": 1.6667,
-          "bttsRate": 1,
-          "over25Rate": 1,
+          "venueWinRate": 0.3333,
+          "gfPg": 1,
+          "gaPg": 1,
+          "bttsRate": 0.6667,
+          "over25Rate": 0.6667,
           "xg": {
             "source": "shots-proxy",
-            "xGpg": 1.253,
-            "xGApg": 1.881
+            "xGpg": 1.131,
+            "xGApg": 1.287
           },
           "attackIndex": null
         },
         "away": {
-          "elo": 1441.5,
+          "elo": 1447.6,
           "eloSource": "internal",
-          "form": "LDLDWL",
-          "played": 6,
-          "ppg": 0.8333,
-          "venuePlayed": 3,
-          "venueWinRate": 0.3333,
-          "gfPg": 0.3333,
-          "gaPg": 1.3333,
-          "bttsRate": 0,
-          "over25Rate": 0.3333,
+          "form": "LLDWLDW",
+          "played": 7,
+          "ppg": 1.1429,
+          "venuePlayed": 4,
+          "venueWinRate": 0,
+          "gfPg": 0.5,
+          "gaPg": 1.25,
+          "bttsRate": 0.5,
+          "over25Rate": 0,
           "xg": {
             "source": "shots-proxy",
-            "xGpg": 0.847,
-            "xGApg": 0.85
+            "xGpg": 0.897,
+            "xGApg": 0.851
           },
           "attackIndex": null
         },
@@ -966,7 +919,6 @@
           "away": 0
         },
         "notes": [],
-        "weatherFlags": [],
         "assumptions": [
           "Elvor ej bekräftade – antar ordinarie startelva"
         ]
@@ -974,56 +926,56 @@
       "quant": {
         "available": true,
         "projectedGoals": {
-          "home": 1.45,
-          "away": 0.72,
-          "total": 2.17
+          "home": 1.63,
+          "away": 0.9,
+          "total": 2.53
         },
         "markets": {
           "home": {
-            "p": 0.533,
-            "fair": 1.88
+            "p": 0.458,
+            "fair": 2.18
           },
           "draw": {
-            "p": 0.257,
-            "fair": 3.9
+            "p": 0.295,
+            "fair": 3.39
           },
           "away": {
-            "p": 0.21,
-            "fair": 4.76
+            "p": 0.247,
+            "fair": 4.05
           },
           "over15": {
-            "p": 0.638,
-            "fair": 1.57
+            "p": 0.719,
+            "fair": 1.39
           },
           "over25": {
-            "p": 0.435,
-            "fair": 2.3
+            "p": 0.469,
+            "fair": 2.13
           },
           "over35": {
-            "p": 0.175,
-            "fair": 5.72
+            "p": 0.249,
+            "fair": 4.02
           },
           "btts": {
-            "p": 0.425,
-            "fair": 2.35
+            "p": 0.471,
+            "fair": 2.12
           },
           "under25": {
-            "p": 0.565,
-            "fair": 1.77
+            "p": 0.531,
+            "fair": 1.88
           },
           "bttsNo": {
-            "p": 0.575,
-            "fair": 1.74
+            "p": 0.529,
+            "fair": 1.89
           }
         },
         "teamTotals": {
-          "homeOver05": 0.765,
-          "homeOver15": 0.425,
-          "awayOver05": 0.513,
-          "awayOver15": 0.163
+          "homeOver05": 0.804,
+          "homeOver15": 0.485,
+          "awayOver05": 0.593,
+          "awayOver15": 0.228
         },
         "asianHandicap": {
-          "homeMinus15": 0.278
+          "homeMinus15": 0.294
         },
         "assumptions": [
           "Dixon-Coles (lagstyrka + hemmafördel) blandat 50/50 med Elo/form/xG-modellen",
@@ -1038,21 +990,21 @@
       "market": {
         "available": true,
         "fairSource": "pinnacle",
-        "booksCount": 14,
+        "booksCount": 15,
         "rows": [
           {
             "market": "1X2",
             "pick": "1",
             "key": "home",
-            "modelP": 0.533,
-            "fairModel": 1.88,
-            "marketP": 0.672,
-            "book": 1.33,
-            "bookmaker": "Coolbet",
-            "implied": 0.752,
-            "edgeModel": -0.219,
-            "ev": -0.1067,
-            "minOdds": 1.53,
+            "modelP": 0.458,
+            "fairModel": 2.18,
+            "marketP": 0.458,
+            "book": 2.08,
+            "bookmaker": "Betsson",
+            "implied": 0.481,
+            "edgeModel": -0.023,
+            "ev": -0.0471,
+            "minOdds": 2.25,
             "value": false,
             "reason": null
           },
@@ -1060,120 +1012,170 @@
             "market": "1X2",
             "pick": "X",
             "key": "draw",
-            "modelP": 0.257,
-            "fairModel": 3.89,
-            "marketP": 0.247,
-            "book": 4,
-            "bookmaker": "Coolbet",
-            "implied": 0.25,
-            "edgeModel": 0.007,
-            "ev": -0.0109,
-            "minOdds": 4.17,
-            "value": false,
+            "modelP": 0.295,
+            "fairModel": 3.39,
+            "marketP": 0.295,
+            "book": 3.5,
+            "bookmaker": "Unibet (SE)",
+            "implied": 0.286,
+            "edgeModel": 0.009,
+            "ev": 0.0318,
+            "minOdds": 3.5,
+            "value": true,
             "reason": null
           },
           {
             "market": "1X2",
             "pick": "2",
             "key": "away",
-            "modelP": 0.21,
-            "fairModel": 4.76,
-            "marketP": 0.081,
-            "book": 14,
-            "bookmaker": "LeoVegas (SE)",
-            "implied": 0.071,
-            "edgeModel": 0.139,
-            "ev": 0.1351,
-            "minOdds": 12.7,
+            "modelP": 0.247,
+            "fairModel": 4.05,
+            "marketP": 0.247,
+            "book": 3.85,
+            "bookmaker": "Unibet (SE)",
+            "implied": 0.26,
+            "edgeModel": -0.013,
+            "ev": -0.0488,
+            "minOdds": 4.17,
             "value": false,
-            "reason": "odds over 5 (skrall)"
+            "reason": null
+          },
+          {
+            "market": "OU25",
+            "pick": "Över 2.5",
+            "key": "over25",
+            "modelP": 0.469,
+            "fairModel": 2.13,
+            "marketP": 0.469,
+            "book": 2.05,
+            "bookmaker": "Betsson",
+            "implied": 0.488,
+            "edgeModel": -0.019,
+            "ev": -0.0391,
+            "minOdds": 2.25,
+            "value": false,
+            "reason": null
+          },
+          {
+            "market": "OU25",
+            "pick": "Under 2.5",
+            "key": "under25",
+            "modelP": 0.531,
+            "fairModel": 1.88,
+            "marketP": 0.531,
+            "book": 1.79,
+            "bookmaker": "Unibet (SE)",
+            "implied": 0.559,
+            "edgeModel": -0.028,
+            "ev": -0.049,
+            "minOdds": 1.98,
+            "value": false,
+            "reason": null
           }
         ],
-        "candidates": []
+        "candidates": [
+          {
+            "market": "1X2",
+            "pick": "X",
+            "key": "draw",
+            "modelP": 0.295,
+            "fairModel": 3.39,
+            "marketP": 0.295,
+            "book": 3.5,
+            "bookmaker": "Unibet (SE)",
+            "implied": 0.286,
+            "edgeModel": 0.009,
+            "ev": 0.0318,
+            "minOdds": 3.5,
+            "value": true,
+            "reason": null
+          }
+        ]
       },
       "devil": {
-        "attacks": [
-          "Ingen marknad når värdegränsen (EV ≥ 3 %) – oddset är effektivt prissatt."
-        ],
+        "attacks": [],
         "fragile": [
-          "Modell 53 % vs marknad 67 % på home – när de är oense brukar marknaden ha rätt",
-          "Modell 21 % vs marknad 8 % på away – när de är oense brukar marknaden ha rätt",
+          "X @ 3.5: hög varians, långt oddsintervall",
           "Elvor inte släppta – rotation/skador kan ändra caset"
         ],
         "kill": [
+          "X: oddset faller under 3.5",
           "bekräftad elva utan nyckelspelare"
         ],
-        "residual": "Dead"
+        "residual": "Still plausible"
       },
       "head": {
-        "verdict": "NO BET",
-        "confidence": "HIGH",
-        "best": null,
+        "verdict": "BET",
+        "confidence": "MEDIUM",
+        "best": {
+          "market": "1X2",
+          "pick": "X",
+          "book": 3.5,
+          "bookmaker": "Unibet (SE)",
+          "fair": 3.39,
+          "minOdds": 3.5,
+          "ev": 0.0318,
+          "modelP": 0.295
+        },
         "why": [
-          "Ingen marknad med värde vid dagens odds."
+          "X @ 3.5 (Unibet (SE)) har EV 3 % mot pinnacle."
         ],
         "risks": [
-          "Ingen marknad når värdegränsen (EV ≥ 3 %) – oddset är effektivt prissatt.",
-          "Modell 53 % vs marknad 67 % på home – när de är oense brukar marknaden ha rätt",
-          "Modell 21 % vs marknad 8 % på away – när de är oense brukar marknaden ha rätt",
+          "X @ 3.5: hög varians, långt oddsintervall",
           "Elvor inte släppta – rotation/skador kan ändra caset"
         ],
         "changeIf": [
+          "X: oddset faller under 3.5",
           "bekräftad elva utan nyckelspelare"
         ]
       }
     },
     {
-      "match": "Oviedo vs Sp Gijon",
-      "home": "Oviedo",
-      "away": "Sp Gijon",
-      "league": "LL2",
-      "date": "2026-09-27",
-      "kickoffUtc": "2026-09-27T19:00Z",
+      "match": "Seattle Sounders vs Sporting Kansas City",
+      "home": "Seattle Sounders",
+      "away": "Sporting Kansas City",
+      "league": "MLS",
+      "date": "2026-10-02",
+      "kickoffUtc": "2026-10-02T01:30Z",
       "marketOnly": false,
       "why": [
+        "Elo-diff 227",
         "skarpt facit"
       ],
       "football": {
         "home": {
-          "elo": 1569.2,
+          "elo": 1518.4,
           "eloSource": "internal",
-          "form": "DLWDWL",
-          "played": 6,
-          "ppg": 1.3333,
-          "venuePlayed": 3,
-          "venueWinRate": 0,
-          "gfPg": 0,
-          "gaPg": 0.3333,
-          "bttsRate": 0,
-          "over25Rate": 0,
-          "xg": {
-            "source": "shots-proxy",
-            "xGpg": 0.977,
-            "xGApg": 0.768
-          },
+          "form": "LLLLDDDDDW",
+          "played": 25,
+          "ppg": 1.28,
+          "venuePlayed": 12,
+          "venueWinRate": 0.4167,
+          "gfPg": 1.5,
+          "gaPg": 1.5,
+          "bttsRate": 0.5833,
+          "over25Rate": 0.5,
+          "xg": null,
           "attackIndex": null
         },
         "away": {
-          "elo": 1510.2,
+          "elo": 1356.6,
           "eloSource": "internal",
-          "form": "DWWLLW",
-          "played": 6,
-          "ppg": 1.6667,
-          "venuePlayed": 2,
-          "venueWinRate": 1,
-          "gfPg": 2,
-          "gaPg": 0.5,
+          "form": "WLLLDLLLWL",
+          "played": 25,
+          "ppg": 0.72,
+          "venuePlayed": 12,
+          "venueWinRate": 0.1667,
+          "gfPg": 0.9167,
+          "gaPg": 3.0833,
           "bttsRate": 0.5,
-          "over25Rate": 0.5,
-          "xg": {
-            "source": "shots-proxy",
-            "xGpg": 0.843,
-            "xGApg": 0.717
-          },
+          "over25Rate": 0.9167,
+          "xg": null,
           "attackIndex": null
         },
         "missing": [
+          "xG saknas Seattle Sounders",
+          "xG saknas Sporting Kansas City",
           "ClubElo saknas (intern Elo)"
         ]
       },
@@ -1189,7 +1191,6 @@
           "away": 0
         },
         "notes": [],
-        "weatherFlags": [],
         "assumptions": [
           "Elvor ej bekräftade – antar ordinarie startelva"
         ]
@@ -1197,66 +1198,68 @@
       "quant": {
         "available": true,
         "projectedGoals": {
-          "home": 1.31,
-          "away": 1.05,
-          "total": 2.36
+          "home": 2.2,
+          "away": 1.14,
+          "total": 3.34
         },
         "markets": {
           "home": {
-            "p": 0.422,
-            "fair": 2.37
+            "p": 0.643,
+            "fair": 1.56
           },
           "draw": {
-            "p": 0.261,
-            "fair": 3.83
+            "p": 0.188,
+            "fair": 5.31
           },
           "away": {
-            "p": 0.317,
-            "fair": 3.16
+            "p": 0.169,
+            "fair": 5.91
           },
           "over15": {
-            "p": 0.683,
-            "fair": 1.46
+            "p": 0.846,
+            "fair": 1.18
           },
           "over25": {
-            "p": 0.398,
-            "fair": 2.51
+            "p": 0.635,
+            "fair": 1.58
           },
           "over35": {
-            "p": 0.213,
-            "fair": 4.7
+            "p": 0.428,
+            "fair": 2.33
           },
           "btts": {
-            "p": 0.436,
-            "fair": 2.29
+            "p": 0.57,
+            "fair": 1.75
           },
           "under25": {
-            "p": 0.602,
-            "fair": 1.66
+            "p": 0.365,
+            "fair": 2.74
           },
           "bttsNo": {
-            "p": 0.564,
-            "fair": 1.77
+            "p": 0.43,
+            "fair": 2.33
           }
         },
         "teamTotals": {
-          "homeOver05": 0.73,
-          "homeOver15": 0.377,
-          "awayOver05": 0.65,
-          "awayOver15": 0.283
+          "homeOver05": 0.889,
+          "homeOver15": 0.645,
+          "awayOver05": 0.68,
+          "awayOver15": 0.316
         },
         "asianHandicap": {
-          "homeMinus15": 0.194
+          "homeMinus15": 0.388
         },
         "assumptions": [
           "Dixon-Coles (lagstyrka + hemmafördel) blandat 50/50 med Elo/form/xG-modellen",
           "Poisson för målmarknader"
         ],
         "uncertainties": [
+          "xG saknas Seattle Sounders",
+          "xG saknas Sporting Kansas City",
           "ClubElo saknas (intern Elo)",
           "elvor okända"
         ],
-        "confidence": "HIGH"
+        "confidence": "MEDIUM"
       },
       "market": {
         "available": true,
@@ -1267,263 +1270,15 @@
             "market": "1X2",
             "pick": "1",
             "key": "home",
-            "modelP": 0.422,
-            "fairModel": 2.37,
-            "marketP": 0.46,
-            "book": 2.08,
-            "bookmaker": "Unibet (SE)",
-            "implied": 0.481,
-            "edgeModel": -0.059,
-            "ev": -0.0428,
-            "minOdds": 2.24,
-            "value": false,
-            "reason": null
-          },
-          {
-            "market": "1X2",
-            "pick": "X",
-            "key": "draw",
-            "modelP": 0.261,
-            "fairModel": 3.83,
-            "marketP": 0.306,
-            "book": 3.25,
-            "bookmaker": "Coolbet",
-            "implied": 0.308,
-            "edgeModel": -0.047,
-            "ev": -0.0061,
-            "minOdds": 3.37,
-            "value": false,
-            "reason": null
-          },
-          {
-            "market": "1X2",
-            "pick": "2",
-            "key": "away",
-            "modelP": 0.317,
-            "fairModel": 3.15,
-            "marketP": 0.234,
-            "book": 3.85,
-            "bookmaker": "Coolbet",
-            "implied": 0.26,
-            "edgeModel": 0.057,
-            "ev": -0.0991,
-            "minOdds": 4.4,
-            "value": false,
-            "reason": null
-          },
-          {
-            "market": "OU25",
-            "pick": "Över 2.5",
-            "key": "over25",
-            "modelP": 0.398,
-            "fairModel": 2.51,
-            "marketP": 0.393,
-            "book": 2.35,
-            "bookmaker": "Unibet (SE)",
-            "implied": 0.426,
-            "edgeModel": -0.028,
-            "ev": -0.0756,
-            "minOdds": 2.67,
-            "value": false,
-            "reason": null
-          },
-          {
-            "market": "OU25",
-            "pick": "Under 2.5",
-            "key": "under25",
-            "modelP": 0.602,
-            "fairModel": 1.66,
-            "marketP": 0.607,
-            "book": 1.52,
-            "bookmaker": "Betsson",
-            "implied": 0.658,
-            "edgeModel": -0.056,
-            "ev": -0.0779,
-            "minOdds": 1.73,
-            "value": false,
-            "reason": null
-          }
-        ],
-        "candidates": []
-      },
-      "devil": {
-        "attacks": [
-          "Ingen marknad når värdegränsen (EV ≥ 3 %) – oddset är effektivt prissatt."
-        ],
-        "fragile": [
-          "Elvor inte släppta – rotation/skador kan ändra caset"
-        ],
-        "kill": [
-          "bekräftad elva utan nyckelspelare"
-        ],
-        "residual": "Dead"
-      },
-      "head": {
-        "verdict": "NO BET",
-        "confidence": "HIGH",
-        "best": null,
-        "why": [
-          "Ingen marknad med värde vid dagens odds."
-        ],
-        "risks": [
-          "Ingen marknad når värdegränsen (EV ≥ 3 %) – oddset är effektivt prissatt.",
-          "Elvor inte släppta – rotation/skador kan ändra caset"
-        ],
-        "changeIf": [
-          "bekräftad elva utan nyckelspelare"
-        ]
-      }
-    },
-    {
-      "match": "UNAM Pumas vs Atl. San Luis",
-      "home": "UNAM Pumas",
-      "away": "Atl. San Luis",
-      "league": "MX",
-      "date": "2026-09-27",
-      "kickoffUtc": "2026-09-27T18:00Z",
-      "marketOnly": false,
-      "why": [
-        "Elo-diff 183",
-        "skarpt facit"
-      ],
-      "football": {
-        "home": {
-          "elo": 1553.5,
-          "eloSource": "internal",
-          "form": "LWWDDLWLD",
-          "played": 9,
-          "ppg": 1.3333,
-          "venuePlayed": 4,
-          "venueWinRate": 0.25,
-          "gfPg": 1,
-          "gaPg": 1.25,
-          "bttsRate": 0.5,
-          "over25Rate": 0.5,
-          "xg": null,
-          "attackIndex": null
-        },
-        "away": {
-          "elo": 1435.8,
-          "eloSource": "internal",
-          "form": "LDDLDWLLW",
-          "played": 9,
-          "ppg": 1,
-          "venuePlayed": 4,
-          "venueWinRate": 0.25,
-          "gfPg": 1.25,
-          "gaPg": 2,
-          "bttsRate": 0.5,
-          "over25Rate": 0.75,
-          "xg": null,
-          "attackIndex": null
-        },
-        "missing": [
-          "xG saknas UNAM Pumas",
-          "xG saknas Atl. San Luis",
-          "ClubElo saknas (intern Elo)"
-        ]
-      },
-      "research": {
-        "lineupStatus": "none",
-        "lineupSource": null,
-        "homeFormation": null,
-        "awayFormation": null,
-        "homeStarters": [],
-        "awayStarters": [],
-        "keyOuts": {
-          "home": 0,
-          "away": 0
-        },
-        "notes": [],
-        "weatherFlags": [],
-        "assumptions": [
-          "Elvor ej bekräftade – antar ordinarie startelva"
-        ]
-      },
-      "quant": {
-        "available": true,
-        "projectedGoals": {
-          "home": 1.95,
-          "away": 1.14,
-          "total": 3.09
-        },
-        "markets": {
-          "home": {
-            "p": 0.516,
-            "fair": 1.94
-          },
-          "draw": {
-            "p": 0.251,
-            "fair": 3.99
-          },
-          "away": {
-            "p": 0.233,
-            "fair": 4.29
-          },
-          "over15": {
-            "p": 0.814,
-            "fair": 1.23
-          },
-          "over25": {
-            "p": 0.564,
-            "fair": 1.77
-          },
-          "over35": {
-            "p": 0.373,
-            "fair": 2.68
-          },
-          "btts": {
-            "p": 0.551,
-            "fair": 1.81
-          },
-          "under25": {
-            "p": 0.436,
-            "fair": 2.3
-          },
-          "bttsNo": {
-            "p": 0.449,
-            "fair": 2.23
-          }
-        },
-        "teamTotals": {
-          "homeOver05": 0.858,
-          "homeOver15": 0.58,
-          "awayOver05": 0.68,
-          "awayOver15": 0.316
-        },
-        "asianHandicap": {
-          "homeMinus15": 0.331
-        },
-        "assumptions": [
-          "Dixon-Coles (lagstyrka + hemmafördel) blandat 50/50 med Elo/form/xG-modellen",
-          "Poisson för målmarknader"
-        ],
-        "uncertainties": [
-          "xG saknas UNAM Pumas",
-          "xG saknas Atl. San Luis",
-          "ClubElo saknas (intern Elo)",
-          "elvor okända"
-        ],
-        "confidence": "MEDIUM"
-      },
-      "market": {
-        "available": true,
-        "fairSource": "pinnacle",
-        "booksCount": 18,
-        "rows": [
-          {
-            "market": "1X2",
-            "pick": "1",
-            "key": "home",
-            "modelP": 0.516,
-            "fairModel": 1.94,
-            "marketP": 0.467,
-            "book": 2.02,
+            "modelP": 0.643,
+            "fairModel": 1.56,
+            "marketP": 0.643,
+            "book": 1.48,
             "bookmaker": "Nordic Bet",
-            "implied": 0.495,
-            "edgeModel": 0.021,
-            "ev": -0.0564,
-            "minOdds": 2.2,
+            "implied": 0.676,
+            "edgeModel": -0.033,
+            "ev": -0.049,
+            "minOdds": 1.61,
             "value": false,
             "reason": null
           },
@@ -1531,15 +1286,15 @@
             "market": "1X2",
             "pick": "X",
             "key": "draw",
-            "modelP": 0.251,
-            "fairModel": 3.98,
-            "marketP": 0.264,
-            "book": 3.55,
-            "bookmaker": "Unibet (SE)",
-            "implied": 0.282,
-            "edgeModel": -0.031,
-            "ev": -0.0646,
-            "minOdds": 3.91,
+            "modelP": 0.188,
+            "fairModel": 5.32,
+            "marketP": 0.188,
+            "book": 5,
+            "bookmaker": "Coolbet",
+            "implied": 0.2,
+            "edgeModel": -0.012,
+            "ev": -0.0592,
+            "minOdds": 5.48,
             "value": false,
             "reason": null
           },
@@ -1547,31 +1302,31 @@
             "market": "1X2",
             "pick": "2",
             "key": "away",
-            "modelP": 0.233,
-            "fairModel": 4.29,
-            "marketP": 0.269,
-            "book": 3.8,
-            "bookmaker": "Coolbet",
-            "implied": 0.263,
-            "edgeModel": -0.03,
-            "ev": 0.0236,
-            "minOdds": 3.82,
+            "modelP": 0.169,
+            "fairModel": 5.92,
+            "marketP": 0.169,
+            "book": 6.5,
+            "bookmaker": "LeoVegas (SE)",
+            "implied": 0.154,
+            "edgeModel": 0.015,
+            "ev": 0.1003,
+            "minOdds": 6.09,
             "value": false,
-            "reason": null
+            "reason": "odds över 5 (skräll)"
           },
           {
             "market": "OU25",
             "pick": "Över 2.5",
             "key": "over25",
-            "modelP": 0.564,
-            "fairModel": 1.77,
-            "marketP": 0.548,
-            "book": 1.73,
-            "bookmaker": "Coolbet",
-            "implied": 0.578,
-            "edgeModel": -0.014,
-            "ev": -0.0525,
-            "minOdds": 1.92,
+            "modelP": 0.635,
+            "fairModel": 1.57,
+            "marketP": 0.689,
+            "book": 1.37,
+            "bookmaker": "Nordic Bet",
+            "implied": 0.73,
+            "edgeModel": -0.095,
+            "ev": -0.0555,
+            "minOdds": 1.57,
             "value": false,
             "reason": null
           },
@@ -1579,15 +1334,15 @@
             "market": "OU25",
             "pick": "Under 2.5",
             "key": "under25",
-            "modelP": 0.436,
-            "fairModel": 2.29,
-            "marketP": 0.452,
-            "book": 2.12,
-            "bookmaker": "Coolbet",
-            "implied": 0.472,
-            "edgeModel": -0.036,
-            "ev": -0.0411,
-            "minOdds": 2.32,
+            "modelP": 0.365,
+            "fairModel": 2.74,
+            "marketP": 0.311,
+            "book": 3.05,
+            "bookmaker": "Nordic Bet",
+            "implied": 0.328,
+            "edgeModel": 0.037,
+            "ev": -0.0526,
+            "minOdds": 3.48,
             "value": false,
             "reason": null
           }
@@ -1623,52 +1378,53 @@
       }
     },
     {
-      "match": "Fortaleza vs Athletic",
-      "home": "Fortaleza",
-      "away": "Athletic",
+      "match": "Botafogo-SP vs Ponte Preta",
+      "home": "Botafogo-SP",
+      "away": "Ponte Preta",
       "league": "BR2",
-      "date": "2026-09-27",
-      "kickoffUtc": "2026-09-27T21:30Z",
+      "date": "2026-09-29",
+      "kickoffUtc": "2026-09-29T22:30Z",
       "marketOnly": false,
       "why": [
+        "Elo-diff 153",
         "skarpt facit"
       ],
       "football": {
         "home": {
-          "elo": 1563.3,
+          "elo": 1452.2,
           "eloSource": "internal",
-          "form": "WDDDWDWWDW",
+          "form": "LWWDLLLLLD",
           "played": 29,
-          "ppg": 1.7586,
+          "ppg": 1.1034,
           "venuePlayed": 14,
-          "venueWinRate": 0.6429,
-          "gfPg": 1.5714,
-          "gaPg": 0.7857,
-          "bttsRate": 0.5,
-          "over25Rate": 0.4286,
+          "venueWinRate": 0.3571,
+          "gfPg": 1.6429,
+          "gaPg": 1.5,
+          "bttsRate": 0.8571,
+          "over25Rate": 0.7143,
           "xg": {
             "source": "shots-proxy",
-            "xGpg": 1.129,
-            "xGApg": 1.133
+            "xGpg": 1.077,
+            "xGApg": 1.137
           },
           "attackIndex": null
         },
         "away": {
-          "elo": 1500,
+          "elo": 1363.9,
           "eloSource": "internal",
-          "form": "DWWLLLWLWD",
+          "form": "DLDLLLLLLW",
           "played": 29,
-          "ppg": 1.4138,
+          "ppg": 0.4483,
           "venuePlayed": 14,
-          "venueWinRate": 0.2857,
-          "gfPg": 1.1429,
-          "gaPg": 1.2143,
-          "bttsRate": 0.6429,
-          "over25Rate": 0.4286,
+          "venueWinRate": 0.0714,
+          "gfPg": 0.5,
+          "gaPg": 2.7857,
+          "bttsRate": 0.2857,
+          "over25Rate": 0.5714,
           "xg": {
             "source": "shots-proxy",
-            "xGpg": 1.043,
-            "xGApg": 1.441
+            "xGpg": 0.714,
+            "xGApg": 1.308
           },
           "attackIndex": null
         },
@@ -1688,7 +1444,6 @@
           "away": 0
         },
         "notes": [],
-        "weatherFlags": [],
         "assumptions": [
           "Elvor ej bekräftade – antar ordinarie startelva"
         ]
@@ -1696,56 +1451,56 @@
       "quant": {
         "available": true,
         "projectedGoals": {
-          "home": 1.38,
-          "away": 0.77,
-          "total": 2.15
+          "home": 2.02,
+          "away": 0.64,
+          "total": 2.66
         },
         "markets": {
           "home": {
-            "p": 0.482,
-            "fair": 2.07
+            "p": 0.586,
+            "fair": 1.71
           },
           "draw": {
-            "p": 0.293,
-            "fair": 3.42
+            "p": 0.248,
+            "fair": 4.03
           },
           "away": {
-            "p": 0.225,
-            "fair": 4.44
+            "p": 0.166,
+            "fair": 6.03
           },
           "over15": {
-            "p": 0.633,
-            "fair": 1.58
+            "p": 0.744,
+            "fair": 1.34
           },
           "over25": {
-            "p": 0.401,
-            "fair": 2.49
+            "p": 0.503,
+            "fair": 1.99
           },
           "over35": {
-            "p": 0.171,
-            "fair": 5.85
+            "p": 0.277,
+            "fair": 3.61
           },
           "btts": {
-            "p": 0.449,
-            "fair": 2.23
+            "p": 0.426,
+            "fair": 2.35
           },
           "under25": {
-            "p": 0.599,
-            "fair": 1.67
+            "p": 0.497,
+            "fair": 2.01
           },
           "bttsNo": {
-            "p": 0.551,
-            "fair": 1.81
+            "p": 0.574,
+            "fair": 1.74
           }
         },
         "teamTotals": {
-          "homeOver05": 0.748,
-          "homeOver15": 0.401,
-          "awayOver05": 0.537,
-          "awayOver15": 0.18
+          "homeOver05": 0.867,
+          "homeOver15": 0.599,
+          "awayOver05": 0.473,
+          "awayOver15": 0.135
         },
         "asianHandicap": {
-          "homeMinus15": 0.251
+          "homeMinus15": 0.444
         },
         "assumptions": [
           "Dixon-Coles (lagstyrka + hemmafördel) blandat 50/50 med Elo/form/xG-modellen",
@@ -1760,21 +1515,21 @@
       "market": {
         "available": true,
         "fairSource": "pinnacle",
-        "booksCount": 15,
+        "booksCount": 14,
         "rows": [
           {
             "market": "1X2",
             "pick": "1",
             "key": "home",
-            "modelP": 0.482,
-            "fairModel": 2.07,
-            "marketP": 0.598,
-            "book": 1.66,
+            "modelP": 0.586,
+            "fairModel": 1.71,
+            "marketP": 0.762,
+            "book": 1.25,
             "bookmaker": "Unibet (SE)",
-            "implied": 0.602,
-            "edgeModel": -0.12,
-            "ev": -0.0066,
-            "minOdds": 1.72,
+            "implied": 0.8,
+            "edgeModel": -0.214,
+            "ev": -0.0471,
+            "minOdds": 1.36,
             "value": false,
             "reason": null
           },
@@ -1782,47 +1537,47 @@
             "market": "1X2",
             "pick": "X",
             "key": "draw",
-            "modelP": 0.293,
-            "fairModel": 3.41,
-            "marketP": 0.247,
-            "book": 3.85,
-            "bookmaker": "Coolbet",
-            "implied": 0.26,
-            "edgeModel": 0.033,
-            "ev": -0.0475,
-            "minOdds": 4.16,
+            "modelP": 0.248,
+            "fairModel": 4.03,
+            "marketP": 0.165,
+            "book": 5.9,
+            "bookmaker": "Betsson",
+            "implied": 0.169,
+            "edgeModel": 0.079,
+            "ev": -0.0243,
+            "minOdds": 6.23,
             "value": false,
-            "reason": null
+            "reason": "odds över 5 (skräll)"
           },
           {
             "market": "1X2",
             "pick": "2",
             "key": "away",
-            "modelP": 0.225,
-            "fairModel": 4.44,
-            "marketP": 0.154,
-            "book": 5.75,
+            "modelP": 0.166,
+            "fairModel": 6.02,
+            "marketP": 0.072,
+            "book": 12,
             "bookmaker": "Coolbet",
-            "implied": 0.174,
-            "edgeModel": 0.051,
-            "ev": -0.1135,
-            "minOdds": 6.68,
+            "implied": 0.083,
+            "edgeModel": 0.083,
+            "ev": -0.1325,
+            "minOdds": 14.25,
             "value": false,
-            "reason": "odds over 5 (skrall)"
+            "reason": "odds över 5 (skräll)"
           },
           {
             "market": "OU25",
             "pick": "Över 2.5",
             "key": "over25",
-            "modelP": 0.401,
-            "fairModel": 2.49,
-            "marketP": 0.451,
-            "book": 2.14,
+            "modelP": 0.503,
+            "fairModel": 1.99,
+            "marketP": 0.573,
+            "book": 1.66,
             "bookmaker": "Unibet (SE)",
-            "implied": 0.467,
-            "edgeModel": -0.066,
-            "ev": -0.0357,
-            "minOdds": 2.33,
+            "implied": 0.602,
+            "edgeModel": -0.099,
+            "ev": -0.0486,
+            "minOdds": 1.84,
             "value": false,
             "reason": null
           },
@@ -1830,15 +1585,264 @@
             "market": "OU25",
             "pick": "Under 2.5",
             "key": "under25",
-            "modelP": 0.599,
-            "fairModel": 1.67,
-            "marketP": 0.549,
-            "book": 1.7,
+            "modelP": 0.497,
+            "fairModel": 2.01,
+            "marketP": 0.427,
+            "book": 2.22,
             "bookmaker": "Nordic Bet",
-            "implied": 0.588,
-            "edgeModel": 0.011,
-            "ev": -0.066,
-            "minOdds": 1.91,
+            "implied": 0.45,
+            "edgeModel": 0.047,
+            "ev": -0.0523,
+            "minOdds": 2.46,
+            "value": false,
+            "reason": null
+          }
+        ],
+        "candidates": []
+      },
+      "devil": {
+        "attacks": [
+          "Ingen marknad når värdegränsen (EV ≥ 3 %) – oddset är effektivt prissatt."
+        ],
+        "fragile": [
+          "Modell 59 % vs marknad 76 % på home – när de är oense brukar marknaden ha rätt",
+          "Elvor inte släppta – rotation/skador kan ändra caset"
+        ],
+        "kill": [
+          "bekräftad elva utan nyckelspelare"
+        ],
+        "residual": "Dead"
+      },
+      "head": {
+        "verdict": "NO BET",
+        "confidence": "HIGH",
+        "best": null,
+        "why": [
+          "Ingen marknad med värde vid dagens odds."
+        ],
+        "risks": [
+          "Ingen marknad når värdegränsen (EV ≥ 3 %) – oddset är effektivt prissatt.",
+          "Modell 59 % vs marknad 76 % på home – när de är oense brukar marknaden ha rätt",
+          "Elvor inte släppta – rotation/skador kan ändra caset"
+        ],
+        "changeIf": [
+          "bekräftad elva utan nyckelspelare"
+        ]
+      }
+    },
+    {
+      "match": "Boca Juniors vs Tigre",
+      "home": "Boca Juniors",
+      "away": "Tigre",
+      "league": "AR",
+      "date": "2026-10-04",
+      "kickoffUtc": "2026-10-04T22:15Z",
+      "marketOnly": false,
+      "why": [
+        "Elo-diff 193",
+        "skarpt facit"
+      ],
+      "football": {
+        "home": {
+          "elo": 1621.4,
+          "eloSource": "internal",
+          "form": "LDWDDDWDWW",
+          "played": 27,
+          "ppg": 1.7778,
+          "venuePlayed": 13,
+          "venueWinRate": 0.4615,
+          "gfPg": 1.1538,
+          "gaPg": 0.4615,
+          "bttsRate": 0.4615,
+          "over25Rate": 0.0769,
+          "xg": null,
+          "attackIndex": null
+        },
+        "away": {
+          "elo": 1493.4,
+          "eloSource": "internal",
+          "form": "LWDWDWDLLL",
+          "played": 26,
+          "ppg": 1.2308,
+          "venuePlayed": 13,
+          "venueWinRate": 0.1538,
+          "gfPg": 1,
+          "gaPg": 1.0769,
+          "bttsRate": 0.5385,
+          "over25Rate": 0.3846,
+          "xg": null,
+          "attackIndex": null
+        },
+        "missing": [
+          "xG saknas Boca Juniors",
+          "xG saknas Tigre",
+          "ClubElo saknas (intern Elo)"
+        ]
+      },
+      "research": {
+        "lineupStatus": "none",
+        "lineupSource": null,
+        "homeFormation": null,
+        "awayFormation": null,
+        "homeStarters": [],
+        "awayStarters": [],
+        "keyOuts": {
+          "home": 0,
+          "away": 0
+        },
+        "notes": [],
+        "assumptions": [
+          "Elvor ej bekräftade – antar ordinarie startelva"
+        ]
+      },
+      "quant": {
+        "available": true,
+        "projectedGoals": {
+          "home": 1.34,
+          "away": 0.66,
+          "total": 2
+        },
+        "markets": {
+          "home": {
+            "p": 0.503,
+            "fair": 1.99
+          },
+          "draw": {
+            "p": 0.291,
+            "fair": 3.44
+          },
+          "away": {
+            "p": 0.207,
+            "fair": 4.84
+          },
+          "over15": {
+            "p": 0.594,
+            "fair": 1.68
+          },
+          "over25": {
+            "p": 0.333,
+            "fair": 3
+          },
+          "over35": {
+            "p": 0.143,
+            "fair": 7
+          },
+          "btts": {
+            "p": 0.437,
+            "fair": 2.29
+          },
+          "under25": {
+            "p": 0.667,
+            "fair": 1.5
+          },
+          "bttsNo": {
+            "p": 0.563,
+            "fair": 1.78
+          }
+        },
+        "teamTotals": {
+          "homeOver05": 0.738,
+          "homeOver15": 0.387,
+          "awayOver05": 0.483,
+          "awayOver15": 0.142
+        },
+        "asianHandicap": {
+          "homeMinus15": 0.258
+        },
+        "assumptions": [
+          "Dixon-Coles (lagstyrka + hemmafördel) blandat 50/50 med Elo/form/xG-modellen",
+          "Poisson för målmarknader"
+        ],
+        "uncertainties": [
+          "xG saknas Boca Juniors",
+          "xG saknas Tigre",
+          "ClubElo saknas (intern Elo)",
+          "elvor okända"
+        ],
+        "confidence": "MEDIUM"
+      },
+      "market": {
+        "available": true,
+        "fairSource": "pinnacle",
+        "booksCount": 11,
+        "rows": [
+          {
+            "market": "1X2",
+            "pick": "1",
+            "key": "home",
+            "modelP": 0.503,
+            "fairModel": 1.99,
+            "marketP": 0.503,
+            "book": 1.88,
+            "bookmaker": "Betsson",
+            "implied": 0.532,
+            "edgeModel": -0.029,
+            "ev": -0.0547,
+            "minOdds": 2.05,
+            "value": false,
+            "reason": null
+          },
+          {
+            "market": "1X2",
+            "pick": "X",
+            "key": "draw",
+            "modelP": 0.291,
+            "fairModel": 3.44,
+            "marketP": 0.291,
+            "book": 3.25,
+            "bookmaker": "Unibet (SE)",
+            "implied": 0.308,
+            "edgeModel": -0.017,
+            "ev": -0.0555,
+            "minOdds": 3.55,
+            "value": false,
+            "reason": null
+          },
+          {
+            "market": "1X2",
+            "pick": "2",
+            "key": "away",
+            "modelP": 0.207,
+            "fairModel": 4.83,
+            "marketP": 0.207,
+            "book": 4.9,
+            "bookmaker": "Unibet (SE)",
+            "implied": 0.204,
+            "edgeModel": 0.003,
+            "ev": 0.0123,
+            "minOdds": 4.99,
+            "value": false,
+            "reason": null
+          },
+          {
+            "market": "OU25",
+            "pick": "Över 2.5",
+            "key": "over25",
+            "modelP": 0.333,
+            "fairModel": 3,
+            "marketP": 0.373,
+            "book": 2.52,
+            "bookmaker": "Betsson",
+            "implied": 0.397,
+            "edgeModel": -0.064,
+            "ev": -0.0597,
+            "minOdds": 2.9,
+            "value": false,
+            "reason": null
+          },
+          {
+            "market": "OU25",
+            "pick": "Under 2.5",
+            "key": "under25",
+            "modelP": 0.667,
+            "fairModel": 1.5,
+            "marketP": 0.627,
+            "book": 1.5,
+            "bookmaker": "Betsson",
+            "implied": 0.667,
+            "edgeModel": 0,
+            "ev": -0.0597,
+            "minOdds": 1.73,
             "value": false,
             "reason": null
           }
@@ -1859,7 +1863,7 @@
       },
       "head": {
         "verdict": "NO BET",
-        "confidence": "HIGH",
+        "confidence": "MEDIUM",
         "best": null,
         "why": [
           "Ingen marknad med värde vid dagens odds."

@@ -1,6 +1,6 @@
 # Atromitos (Super League (Grekland)) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [GR](../../ligor/GR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [GR](../../ligor/GR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -53,7 +53,7 @@ Form (äldst → senast): VFVFFOOF · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Dušan Kerkez. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -79,7 +79,7 @@ Tränare: Dušan Kerkez. Betyg, mål och assist gäller innevarande säsong enli
 |  | Dani García | CDM | 36 | Spain | 443 k€ | 6,11 | 0 | 0 | 0/0 |  |
 | 5 | Theocharis Tsingaras | CDM,CM | 26 | Greece | 477 k€ | 6,80 | 0 | 0 | 1/0 |  |
 | 6 | Thanasis Karamanis | CDM,CM | 22 | Greece | 355 k€ | 6,54 | 0 | 1 | 1/0 |  |
-| 7 | Steven Zuber | CAM,CM,ST,LW,RW,CDM | 35 | Switzerland | 300 k€ | 6,68 | 0 | 0 | 0/0 |  |
+| 7 | Steven Zuber | CAM,ST,CM,LW,RW,CDM | 35 | Switzerland | 300 k€ | 6,68 | 0 | 0 | 0/0 |  |
 | 8 | Samuel Moutoussamy | CDM,CM | 30 | DR Congo | 457 k€ | 7,12 | 2 | 0 | 1/0 |  |
 | 11 | Cristopher Núnez | CM,ST,CAM,RM,LM | 28 | Costa Rica | 238 k€ | 6,34 | 1 | 1 | 0/0 | skadad, åter Late October 2026 |
 | 17 | Elton Hoxha | Midfielder | 20 | Albania | – | 6,03 | 0 | 0 | 0/0 |  |
@@ -87,7 +87,6 @@ Tränare: Dušan Kerkez. Betyg, mål och assist gäller innevarande säsong enli
 | 30 | Anastasios Kotsis | CM | 19 | Greece | – | 6,11 | 0 | 0 | 0/0 |  |
 | 33 | Konstantinos Batos | Midfielder | 20 | Greece | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-|  | Argyris Marnezos | Attacker | 20 | Greece | – | – | 0 | 0 | 0/0 |  |
 |  | Kelvin Ofori | RW | 25 | Ghana | 614 k€ | – | 0 | 0 | 0/0 |  |
 | 9 | Juan Perea | ST,RW | 26 | Colombia | 512 k€ | 7,38 | 0 | 0 | 1/0 |  |
 | 10 | Stavros Pnevmonidis | LW,RW | 20 | Greece | 1,5 M€ | 6,60 | 0 | 1 | 2/0 |  |
@@ -96,3 +95,5 @@ Tränare: Dušan Kerkez. Betyg, mål och assist gäller innevarande säsong enli
 | 29 | Vangelis Paliouras | Attacker | 17 | Greece | – | – | 0 | 0 | 0/0 |  |
 | 70 | Serginho | ST,RW,LW,RM | 31 | Brazil | 269 k€ | 6,27 | 0 | 0 | 0/0 |  |
 | 99 | Georgios Tzovaras | LW | 26 | Greece | 219 k€ | 6,35 | 0 | 0 | 1/0 | skadad, åter A few weeks |
+
+Har lämnat truppen sedan vi började spara (1): Argyris Marnezos (senast 2026-09-29).

@@ -1,6 +1,6 @@
 # Bradford (League One) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -79,9 +79,9 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-08-16 | Stryk 4914 | Bradford - Luton | 1 ✓ | 22 % | 30 % |
 | 2026-09-19 | Stryk 4971 | Luton - Bradford | 2 ✓ | 24 % | 28 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
-Tränare: Graham Alexander. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+Tränare: Mark Trueman (tidigare: Graham Alexander till 2026-09-28). Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|

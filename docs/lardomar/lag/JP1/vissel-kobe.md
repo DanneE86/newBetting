@@ -1,6 +1,6 @@
 # Vissel Kobe (J1 League) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [JP1](../../ligor/JP1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [JP1](../../ligor/JP1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -39,10 +39,10 @@ Form (äldst → senast): VOFVVVVV · senaste match 2026-09-20
 
 | Motståndare | M | V-O-F | Mål | Mot marknaden | Kryss mot odds | Senast |
 |---|---|---|---|---|---|---|
-| Kashima Antlers | 16 | 6-4-6 | 22–22 | +0,07 | −2 pe | 2026-09-11 2-1 (h) |
 | Cerezo Osaka | 15 | 5-4-6 | 14–16 | −0,25 | −1 pe | 2026-08-29 1-0 (h) |
 | FC Tokyo | 15 | 5-4-6 | 19–23 | −0,26 | +0 pe | 2026-08-15 2-2 (h) |
 | Gamba Osaka | 15 | 8-3-4 | 24–19 | +0,21 | −6 pe | 2026-09-20 1-0 (b) |
+| Kashima Antlers | 15 | 6-4-5 | 22–17 | +0,17 | −1 pe | 2026-09-11 2-1 (h) |
 | Kawasaki Frontale | 15 | 5-3-7 | 21–27 | +0,12 | −4 pe | 2025-06-21 2-1 (b) |
 | Nagoya Grampus | 15 | 6-5-4 | 24–23 | +0,10 | +5 pe | 2025-06-15 2-1 (h) |
 | Yokohama F. Marinos | 15 | 5-1-9 | 18–28 | −0,27 | −17 pe | 2026-08-22 0-1 (b) |
@@ -59,7 +59,7 @@ Form (äldst → senast): VOFVVVVV · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Michael Skibbe. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -68,7 +68,6 @@ Tränare: Michael Skibbe. Betyg, mål och assist gäller innevarande säsong enl
 | | **Målvakter** | | | | | | | | | |
 | 1 | Daiya Maekawa | GK | 32 | Japan | 361 k€ | 7,35 | 0 | 0 | 0/0 |  |
 | 21 | Shota Arai | GK | 37 | Japan | – | – | 0 | 0 | 0/0 |  |
-| 32 | Richard Monday Ubong | Keeper | 20 | Nigeria | – | – | 0 | 0 | 0/0 |  |
 | 39 | Shioki Takayama | Keeper | 25 | Japan | 149 k€ | – | 0 | 0 | 0/0 |  |
 | 71 | Shuichi Gonda | GK | 37 | Japan | 150 k€ | 7,17 | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
@@ -81,25 +80,16 @@ Tränare: Michael Skibbe. Betyg, mål och assist gäller innevarande säsong enl
 | 24 | Gotoku Sakai | RB,CM,CDM | 35 | Japan | 178 k€ | 7,34 | 0 | 0 | 0/0 |  |
 | 31 | Takuya Iwanami | CB | 32 | Japan | 138 k€ | 6,82 | 0 | 0 | 0/0 |  |
 | 41 | Katsuya Nagato | LB,LW | 31 | Japan | 392 k€ | 7,15 | 2 | 1 | 0/0 |  |
-| 42 | Justin Homma | Defender | 21 | Japan | 342 k€ | – | 0 | 0 | 0/0 |  |
-| 43 | Kaito Yamada | CB,RB | 20 | Japan | 834 k€ | – | 0 | 0 | 0/0 |  |
-| 57 | Ryosuke Irie | LB | 21 | Japan | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-|  | Tafuko Satomi | Midfielder | 17 | Japan | – | – | 0 | 0 | 0/0 |  |
 | 5 | Yuta Goke | CAM,CM,ST | 27 | Japan | 497 k€ | 6,78 | 2 | 0 | 2/0 |  |
 | 6 | Takahiro Ogihara | CDM,CM | 34 | Japan | 87 k€ | – | 0 | 0 | 0/0 |  |
 | 7 | Yosuke Ideguchi | CM,CAM,CDM | 30 | Japan | 464 k€ | 7,12 | 0 | 0 | 1/0 |  |
-| 18 | Haruya Ide | CAM,CM | 32 | Japan | 160 k€ | 5,97 | 0 | 0 | 0/0 |  |
+| 18 | Haruya Ide | CM | 32 | Japan | 160 k€ | 5,97 | 0 | 0 | 0/0 |  |
 | 20 | Kota Watanabe | CDM,CM | 27 | Japan | 465 k€ | 5,98 | 0 | 0 | 1/0 |  |
-| 23 | Yuan Iwamoto | CM | 20 | Japan | – | 6,84 | 0 | 0 | 0/0 |  |
 | 25 | Yuya Kuwasaki | CDM,CM,CAM | 28 | Japan | 271 k€ | 6,45 | 0 | 0 | 0/0 |  |
 | 28 | Kento Hamasaki | CM | 19 | Japan | 781 k€ | 5,94 | 0 | 0 | 0/0 |  |
-| 33 | Rikuto Hashimoto | LW | 21 | Japan | 341 k€ | – | 0 | 0 | 0/0 |  |
 | 35 | Niina Tominaga | CM | 22 | Japan | 282 k€ | – | 0 | 0 | 0/0 |  |
 | 44 | Mitsuki Hidaka | CDM | 23 | Japan | 287 k€ | 6,37 | 0 | 0 | 0/0 |  |
-| 51 | Taiga Seguchi | LM | 18 | Japan | – | – | 0 | 0 | 0/0 |  |
-| 55 | Yuta Miyahara | Midfielder | 21 | Japan | – | – | 0 | 0 | 0/0 |  |
-| 61 | Ryotaro Inouchi | Midfielder | 17 | Japan | – | – | 0 | 0 | 0/0 |  |
 | 94 | Erik | CAM,RW,ST | 32 | Brazil | 611 k€ | 7,20 | 1 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 |  | Anderson Lopes | ST | 33 | Brazil | 885 k€ | – | 0 | 0 | 0/0 |  |
@@ -109,6 +99,6 @@ Tränare: Michael Skibbe. Betyg, mål och assist gäller innevarande säsong enl
 | 26 | Jean Patrick | RW | 29 | Brazil | 192 k€ | 6,90 | 0 | 1 | 0/0 |  |
 | 29 | Ren Komatsu | ST | 28 | Japan | 391 k€ | 6,55 | 1 | 0 | 1/0 |  |
 | 38 | Juzo Ura | Attacker | 22 | Japan | 267 k€ | – | 0 | 0 | 0/0 |  |
-| 46 | Sota Ito | Attacker | 19 | Japan | – | – | 0 | 0 | 0/0 |  |
-| 53 | Hayato Watanabe | Attacker | 19 | Japan | – | – | 0 | 0 | 0/0 |  |
 | 62 | Hyoei Kawabata | Attacker | 18 | Japan | – | 6,33 | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (12): Rikuto Hashimoto (senast 2026-09-29), Justin Homma (senast 2026-09-29), Kaito Yamada (senast 2026-09-29), Hayato Watanabe (senast 2026-09-29), Taiga Seguchi (senast 2026-09-29), Richard Monday Ubong (senast 2026-09-29), Tafuko Satomi (senast 2026-09-28), Yuta Miyahara (senast 2026-09-29), Ryosuke Irie (senast 2026-09-29), Sota Ito (senast 2026-09-29), Yuan Iwamoto (senast 2026-09-29), Ryotaro Inouchi (senast 2026-09-29).

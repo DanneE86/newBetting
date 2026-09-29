@@ -1,6 +1,6 @@
 # KFUM Oslo (Eliteserien) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [NO](../../ligor/NO.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [NO](../../ligor/NO.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -46,7 +46,7 @@ Form (äldst → senast): FVVOFFVV · senaste match 2026-09-18
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Jørgen Isnes. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -80,7 +80,7 @@ Tränare: Jørgen Isnes. Betyg, mål och assist gäller innevarande säsong enli
 | 42 | David Hickson Gyedu | RW,CAM | 29 | Norway | 193 k€ | 6,38 | 0 | 1 | 2/0 |  |
 | | **Anfallare** | | | | | | | | | |
 |  | Promise Meliga | RW | 19 | Nigeria | 1,2 M€ | 6,87 | 3 | 0 | 2/0 |  |
-| 9 | Martin Tangen Vinjor | RW,CM,LW,ST,CDM | 26 | Norway | 295 k€ | 6,58 | 0 | 4 | 5/0 |  |
+| 9 | Martin Tangen Vinjor | RW,CM,LW,ST,CDM | 27 | Norway | 295 k€ | 6,58 | 0 | 4 | 5/0 |  |
 | 10 | Bilal Njie | LW,ST,CAM | 28 | Somalia | 356 k€ | 6,90 | 5 | 1 | 1/0 |  |
 | 17 | Julian Bakkeli Gonstad | ST | 20 | Norway | 1,5 M€ | 6,08 | 1 | 0 | 0/0 |  |
 | 18 | Rasmus Eggen Vinge | RW,LW,ST | 25 | Norway | 523 k€ | 6,58 | 3 | 0 | 2/0 |  |

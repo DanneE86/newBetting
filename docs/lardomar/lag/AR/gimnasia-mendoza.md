@@ -1,6 +1,6 @@
 # Gimnasia Mendoza (Liga Profesional) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -45,7 +45,7 @@ Form (äldst → senast): VFVVVOFO · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Darío Franco. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -74,7 +74,6 @@ Tränare: Darío Franco. Betyg, mål och assist gäller innevarande säsong enli
 | 10 | Nicolás Romano | CAM | 26 | Argentina | 476 k€ | – | 0 | 0 | 0/0 |  |
 | 15 | Ulises Sánchez | CM,CDM,RM,CAM | 28 | Argentina | 903 k€ | – | 0 | 0 | 0/0 |  |
 | 19 | Julián Ceballos | RM,CAM | 22 | Argentina | 884 k€ | – | 0 | 0 | 0/0 |  |
-| 20 | Tomás Ortiz | CDM | 26 | Argentina | 346 k€ | – | 0 | 0 | 0/0 |  |
 | 21 | Fermín Antonini | CM,CDM | 29 | Argentina | 277 k€ | – | 0 | 0 | 0/0 |  |
 | 26 | Facundo Lencioni | LM,LW,CM,RW,CAM,CDM | 25 | Argentina | 1,5 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
 | 28 | Tomás O'Connor | CAM,CDM | 22 | Argentina | 699 k€ | – | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
@@ -84,7 +83,8 @@ Tränare: Darío Franco. Betyg, mål och assist gäller innevarande säsong enli
 | 8 | Matías Vargas | ST,CM,CAM | 29 | Argentina | 2,4 M€ | – | 0 | 0 | 0/0 |  |
 | 11 | Santiago Rodríguez | ST | 29 | Argentina | 432 k€ | – | 0 | 0 | 0/0 |  |
 | 17 | Ignacio Sabatini | RW,ST | 27 | Argentina | 444 k€ | – | 0 | 0 | 0/0 |  |
+| 20 | Tomás Ortiz | ST | 26 | Argentina | 346 k€ | – | 0 | 0 | 0/0 |  |
 | 27 | Blas Armoa | ST | 26 | Paraguay | 504 k€ | – | 0 | 0 | 0/0 |  |
 | 29 | Agustín Módica | ST | 23 | Italy | 1,4 M€ | – | 0 | 0 | 0/0 |  |
-| 33 | Brian Andrada | LW,RW | 29 | Argentina | 250 k€ | – | 0 | 0 | 0/0 |  |
+| 33 | Brian Andrada | RW | 29 | Argentina | 250 k€ | – | 0 | 0 | 0/0 |  |
 | 35 | Valentino Simoni | ST | 22 | Argentina | 747 k€ | – | 0 | 0 | 0/0 |  |

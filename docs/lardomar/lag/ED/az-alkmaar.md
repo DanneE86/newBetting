@@ -1,6 +1,6 @@
 # AZ Alkmaar (Eredivisie) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [ED](../../ligor/ED.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [ED](../../ligor/ED.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -67,7 +67,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-11-09 | Europa 2521 | AZ Alkmaar - PSV Eindhoven | 2 | 25 % | 29 % |
 | 2025-09-21 | Europa 2507 | AZ Alkmaar - Feyenoord | X | 36 % | 39 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Leeroy Echteld. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -79,7 +79,6 @@ Tränare: Leeroy Echteld. Betyg, mål och assist gäller innevarande säsong enl
 | 1 | Rome Owusu-Oduro | GK | 22 | Netherlands | 6,0 M€ | – | 0 | 0 | 0/0 |  |
 | 12 | Hobie Verhulst | GK | 33 | Netherlands | 357 k€ | – | 0 | 0 | 0/0 |  |
 | 28 | Jari De Busser | GK | 26 | Belgium | 2,4 M€ | 6,83 | 0 | 0 | 0/0 |  |
-| 31 | Daniël Deen | GK | 23 | Netherlands | 270 k€ | – | 0 | 0 | 0/0 |  |
 | 41 | Jeroen Zoet | GK | 35 | Netherlands | 269 k€ | – | 0 | 0 | 0/0 |  |
 | 71 | Jur Schipper | GK | 20 | Netherlands | 408 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
@@ -93,7 +92,7 @@ Tränare: Leeroy Echteld. Betyg, mål och assist gäller innevarande säsong enl
 | 34 | Mees de Wit | LB,RB | 28 | Netherlands | 1,6 M€ | 6,36 | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 6 | Peer Koopmeiners | CDM,CM | 26 | Netherlands | 7,2 M€ | 8,10 | 1 | 0 | 0/0 |  |
-| 8 | Jordy Clasie | CDM,CM | 35 | Netherlands | 663 k€ | 7,09 | 1 | 0 | 0/0 |  |
+| 8 | Jordy Clasie | CDM | 35 | Netherlands | 663 k€ | 7,09 | 1 | 0 | 0/0 |  |
 | 10 | Kees Smit | CM,CDM,CAM | 20 | Netherlands | 14,0 M€ | 7,21 | 0 | 2 | 0/0 |  |
 | 16 | Stije Resink | CDM,CM | 23 | Netherlands | 5,7 M€ | – | 0 | 0 | 0/0 | skadad, åter Early January 2027 |
 | 17 | Valdemar Byskov | CM,CAM,CDM,RWB,LM,LW | 21 | Denmark | 2,3 M€ | 7,15 | 0 | 2 | 0/0 |  |
@@ -106,3 +105,5 @@ Tränare: Leeroy Echteld. Betyg, mål och assist gäller innevarande säsong enl
 | 19 | Jizz Hornkamp | ST | 28 | Netherlands | 3,1 M€ | 7,13 | 2 | 0 | 0/0 |  |
 | 24 | Ayoub Oufkir | RW,LW | 20 | Netherlands | 1,8 M€ | 6,56 | 2 | 0 | 2/0 |  |
 | 27 | Wassim Bouziane | LW | 19 | Netherlands | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Daniël Deen (senast 2026-09-29).

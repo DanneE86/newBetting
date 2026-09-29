@@ -1,6 +1,6 @@
 # Orgryte (Allsvenskan) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [AS](../../ligor/AS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [AS](../../ligor/AS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -55,7 +55,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-04-22 | Europa 2568 | Örgryte - Brommapojkarna | 2 | 31 % | 34 % |
 | 2026-04-05 | Europa 2563 | Örgryte - Malmö | X | 13 % | 18 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Andreas Holmberg. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

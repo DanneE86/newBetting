@@ -1,6 +1,6 @@
 # Burgos (LaLiga 2) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [LL2](../../ligor/LL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [LL2](../../ligor/LL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -57,7 +57,7 @@ Form (äldst → senast): VVFOOVVV · senaste match 2026-09-27
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Sergio Francisco. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -75,8 +75,8 @@ Tränare: Sergio Francisco. Betyg, mål och assist gäller innevarande säsong e
 | 2 | Álex Lizancos | RB,CB | 23 | Spain | 1,3 M€ | – | 0 | 0 | 0/0 |  |
 | 3 | Ignasi Vilarrasa | LB | 27 | Spain | 410 k€ | 6,85 | 0 | 0 | 0/0 |  |
 | 6 | Sergio González | CB | 29 | Spain | 310 k€ | 7,18 | 0 | 0 | 1/0 | osäker |
-| 8 | Grego Sierra | CB | 33 | Spain | 334 k€ | 6,88 | 0 | 0 | 3/0 |  |
-| 15 | Oier Luengo | CB | 28 | Spain | 505 k€ | 7,10 | 0 | 0 | 2/0 |  |
+| 8 | Grego Sierra | CB | 33 | Spain | 334 k€ | 6,87 | 0 | 0 | 3/0 |  |
+| 15 | Oier Luengo | CB | 28 | Spain | 505 k€ | 6,92 | 0 | 0 | 2/0 |  |
 | 18 | Saúl del Cerro | CB | 22 | Spain | 273 k€ | 6,75 | 0 | 0 | 0/0 |  |
 | 22 | Brais Martínez | LB | 24 | Spain | 276 k€ | 6,56 | 0 | 0 | 0/0 |  |
 | 23 | Alberto Dadie | RB | 24 | Spain | 430 k€ | 7,22 | 1 | 0 | 2/0 |  |
@@ -87,16 +87,16 @@ Tränare: Sergio Francisco. Betyg, mål och assist gäller innevarande säsong e
 | 4 | Pablo Galdames | CM | 29 | Chile | 442 k€ | 6,67 | 0 | 0 | 0/0 |  |
 | 5 | Marcelo Expósito | CM | 23 | Spain | 422 k€ | 6,54 | 0 | 0 | 0/0 |  |
 | 10 | Kévin Appin | LM,ST,LW | 28 | Martinique | 396 k€ | 6,42 | 0 | 0 | 1/0 |  |
-| 12 | Unai Vencedor | CM,CDM | 25 | Spain | 1,1 M€ | 6,95 | 0 | 0 | 1/0 |  |
+| 12 | Unai Vencedor | CM,CDM | 25 | Spain | 1,1 M€ | 6,94 | 0 | 0 | 1/0 |  |
 | 14 | David González | RM,RW | 24 | Spain | 2,0 M€ | 7,52 | 3 | 1 | 1/0 |  |
 | 17 | Mario Cantero | CM | 24 | Spain | 292 k€ | – | 0 | 0 | 0/0 |  |
 | 20 | José Gragera | CM,CDM | 26 | Spain | 939 k€ | 6,91 | 0 | 0 | 3/0 |  |
 | 21 | Fermín García | LM | 22 | Spain | 338 k€ | 6,34 | 0 | 0 | 0/0 |  |
-| 24 | Santiago Lencina | ST | 21 | Argentina | 2,2 M€ | 6,24 | 0 | 0 | 1/0 |  |
+| 24 | Santiago Lencina | ST | 21 | Argentina | 2,2 M€ | 6,21 | 0 | 0 | 1/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 7 | Jon Karrikaburu | ST | 24 | Spain | 1,3 M€ | 6,68 | 1 | 2 | 1/0 |  |
+| 7 | Jon Karrikaburu | ST | 24 | Spain | 1,3 M€ | 6,70 | 1 | 2 | 1/0 |  |
 | 9 | Alex Forés | ST | 25 | Spain | 532 k€ | 6,75 | 3 | 0 | 0/0 |  |
-| 11 | Víctor Mollejo | ST,RM,RW | 25 | Spain | 440 k€ | 6,40 | 0 | 1 | 1/0 |  |
+| 11 | Víctor Mollejo | ST,RM,RW | 25 | Spain | 440 k€ | 6,39 | 0 | 1 | 1/0 |  |
 | 16 | Curro Sánchez | ST,CAM | 30 | Spain | 793 k€ | 7,05 | 1 | 1 | 0/0 |  |
-| 19 | Javi Llabrés | LW,LM | 24 | Spain | 816 k€ | 6,99 | 1 | 1 | 0/0 |  |
+| 19 | Javi Llabrés | LW,LM | 24 | Spain | 816 k€ | 6,98 | 1 | 1 | 0/0 |  |
 | 31 | Irian Ribas | Attacker | 21 | Spain | – | – | 0 | 0 | 0/0 |  |

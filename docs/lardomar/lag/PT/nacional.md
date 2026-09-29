@@ -1,6 +1,6 @@
 # Nacional (Primeira Liga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [PT](../../ligor/PT.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [PT](../../ligor/PT.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -51,7 +51,7 @@ Form (äldst → senast): VOVFFFFF · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Alexandre Santos. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -68,7 +68,6 @@ Tränare: Alexandre Santos. Betyg, mål och assist gäller innevarande säsong e
 | 4 | Ulisses Rocha | CB | 27 | Brazil | 939 k€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
 | 5 | José Gomes | LB,LWB | 30 | Portugal | 592 k€ | 5,69 | 0 | 0 | 0/0 |  |
 | 14 | Ivanildo Fernandes | RB | 30 | Cape Verde | 245 k€ | 6,07 | 0 | 0 | 0/0 |  |
-| 33 | Francisco Gonçalves | CB | 22 | Portugal | 596 k€ | 6,11 | 0 | 0 | 0/0 |  |
 | 34 | Léo Santos | CB | 27 | Brazil | 629 k€ | 7,15 | 1 | 1 | 0/0 | skadad, åter Early October 2026 |
 | 38 | Zé Vítor | CB | 25 | Brazil | 1,6 M€ | 6,54 | 1 | 0 | 1/0 |  |
 | 52 | Wesley | RB,RM,RWB | 26 | Brazil | 352 k€ | 6,79 | 1 | 0 | 1/0 |  |
@@ -96,3 +95,5 @@ Tränare: Alexandre Santos. Betyg, mål och assist gäller innevarande säsong e
 | 12 | Min-Kyu Song | LW,LM | 27 | South Korea | 752 k€ | 6,22 | 0 | 0 | 0/0 |  |
 | 17 | Fernando Nava | LW,LM,RW | 22 | Bolivia | 280 k€ | 5,89 | 0 | 0 | 0/0 |  |
 | 99 | Pablo Ruan | ST,RW | 23 | Brazil | 662 k€ | 6,56 | 1 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Francisco Gonçalves (senast 2026-09-29).

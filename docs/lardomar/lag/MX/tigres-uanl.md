@@ -1,6 +1,6 @@
 # Tigres UANL (Liga MX) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [MX](../../ligor/MX.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [MX](../../ligor/MX.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -54,13 +54,13 @@ Form (äldst → senast): OFFVOOOF · senaste match 2026-09-19
 | Santos Laguna | 18 | 12-3-3 | 36–12 | +0,43 | −9 pe | 2026-08-30 0-0 (b) |
 | Atl. San Luis | 17 | 9-7-1 | 29–15 | +0,14 | +17 pe | 2026-07-26 2-2 (h) |
 | Club Tijuana | 17 | 10-3-4 | 32–15 | +0,13 | −7 pe | 2026-07-17 1-3 (b) |
-| Queretaro | 16 | 10-4-2 | 27–7 | +0,21 | +0 pe | 2026-08-02 2-3 (b) |
 | Juarez | 15 | 9-3-3 | 21–14 | +0,03 | −4 pe | 2026-09-19 0-2 (b) |
+| Queretaro | 15 | 9-4-2 | 25–7 | +0,13 | +2 pe | 2026-08-02 2-3 (b) |
 | Atlante | 1 | 1-0-0 | 2–0 | +0,97 | −22 pe | 2026-08-22 2-0 (h) |
 
 Ligans test av inbördes möten mot marknaden: svag signal (inte bekräftad).
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Víctor Manuel Vucetich. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -88,11 +88,11 @@ Tränare: Víctor Manuel Vucetich. Betyg, mål och assist gäller innevarande s�
 | 5 | César Araújo | CDM,CM | 25 | Uruguay | 2,1 M€ | – | 0 | 0 | 0/0 |  |
 | 6 | Juan Vigón | CDM | 35 | Mexico | 336 k€ | – | 0 | 0 | 0/0 |  |
 | 8 | Fernando Gorriarán | CDM,CM,CAM | 31 | Uruguay | 1,8 M€ | – | 0 | 0 | 0/0 |  |
-| 11 | Juan Brunetta | CAM,CDM,LW,LM,CM,ST | 29 | Argentina | 3,1 M€ | – | 0 | 0 | 0/0 |  |
+| 11 | Juan Brunetta | CAM,LW,CDM,LM,CM,ST | 29 | Argentina | 3,1 M€ | – | 0 | 0 | 0/0 |  |
 | 21 | Ricardo Monreal | RW,RWB,LM,RM,LW,CAM | 25 | Mexico | 1,6 M€ | – | 0 | 0 | 0/0 |  |
 | 34 | Henrique Simeone | CDM | 19 | Mexico | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 9 | Emiliano Gómez | LW,LM,ST,CAM | 25 | Uruguay | 2,0 M€ | – | 0 | 0 | 0/0 |  |
+| 9 | Emiliano Gómez | LW,ST,LM,CM,CAM | 25 | Uruguay | 2,0 M€ | – | 0 | 0 | 0/0 |  |
 | 16 | Diego Lainez | RW,RM | 26 | Mexico | 3,7 M€ | – | 0 | 0 | 0/0 |  |
 | 17 | Rodrigo Aguirre | ST | 31 | Uruguay | 1,9 M€ | – | 0 | 0 | 0/0 |  |
 | 20 | Marcelo Flores | LW,LM | 22 | Canada | 2,0 M€ | – | 0 | 0 | 0/0 | skadad, åter Unknown |

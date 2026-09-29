@@ -1,6 +1,6 @@
 # Atlanta Utd (MLS) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -68,7 +68,7 @@ Form (äldst → senast): VVVFOFOV · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Gerardo Martino. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -85,7 +85,7 @@ Tränare: Gerardo Martino. Betyg, mål och assist gäller innevarande säsong en
 | 27 | Paulo Díaz | CB | 32 | Chile | 1,1 M€ | 6,70 | 0 | 0 | 1/0 |  |
 | 47 | Matthew Edwards | RB,RM | 23 | USA | 174 k€ | 6,36 | 0 | 1 | 3/0 |  |
 | 50 | Dominik Chong-Qui | LB,LWB,LM | 18 | USA | 864 k€ | – | 0 | 0 | 0/0 |  |
-| 55 | Tomás Jacob | RB,CB,CM | 22 | Argentina | 1,8 M€ | 6,95 | 3 | 2 | 7/0 |  |
+| 55 | Tomás Jacob | RB,CM,CB | 22 | Argentina | 1,8 M€ | 6,95 | 3 | 2 | 7/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 |  | Enzo Dovlo | RW,RWB,RM | 23 | Togo | – | 6,67 | 0 | 0 | 0/0 |  |
 | 7 | Steven Alzate | CM | 28 | Colombia | 1,5 M€ | 6,44 | 0 | 0 | 1/0 |  |
@@ -103,7 +103,7 @@ Tränare: Gerardo Martino. Betyg, mål och assist gäller innevarande säsong en
 | 10 | Miguel Almirón | LW,LM,RM,ST | 32 | Paraguay | 13,2 M€ | 7,48 | 4 | 5 | 0/0 |  |
 | 19 | Sérgio Santos | ST | 32 | Brazil | 183 k€ | 6,08 | 0 | 0 | 0/0 |  |
 | 20 | Luke Brennan | RW,LW | 21 | USA | 440 k€ | 6,22 | 0 | 0 | 2/0 |  |
-| 22 | Fabrice Picault | ST,LW | 35 | Haiti | 83 k€ | 6,63 | 3 | 1 | 1/0 |  |
+| 22 | Fabrice Picault | ST,LW,CAM | 35 | Haiti | 83 k€ | 6,63 | 3 | 1 | 1/0 |  |
 | 30 | Cayman Togashi | ST | 33 | Japan | 74 k€ | 6,05 | 0 | 0 | 0/0 |  |
 | 36 | Breel Embolo | ST | 29 | Switzerland | 9,3 M€ | 6,99 | 1 | 0 | 0/0 |  |
 | 59 | Aleksey Miranchuk | RW,ST | 30 | Russia | 2,8 M€ | 7,33 | 6 | 6 | 1/0 |  |

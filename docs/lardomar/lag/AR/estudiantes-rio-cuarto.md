@@ -1,6 +1,6 @@
 # Estudiantes Rio Cuarto (Liga Profesional) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -45,7 +45,7 @@ Form (äldst → senast): OFFOOFFF · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Rubén Forestello. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -63,7 +63,7 @@ Tränare: Rubén Forestello. Betyg, mål och assist gäller innevarande säsong 
 | 6 | Juan Antonini | CB,RB | 27 | Argentina | 338 k€ | – | 0 | 0 | 0/0 |  |
 | 21 | Matías Ruíz Díaz | RB | 30 | Argentina | 262 k€ | – | 0 | 0 | 0/0 | skadad, åter Late October 2026 |
 | 24 | Jeremías Ramponi | CB | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 25 | Tomás Olmos | RB,CB,RWB | 21 | Argentina | 588 k€ | – | 0 | 0 | 0/0 |  |
+| 25 | Tomás Olmos | CB,RB,RWB | 21 | Argentina | 588 k€ | – | 0 | 0 | 0/0 |  |
 | 28 | Facundo Cobos | LB,LWB | 33 | Argentina | 269 k€ | – | 0 | 0 | 0/0 |  |
 | 29 | Agustín Quiroga | CB,LB,LWB | 24 | Argentina | 627 k€ | – | 0 | 0 | 0/0 |  |
 | 30 | Sergio Ojeda | CB | 34 | Argentina | 321 k€ | – | 0 | 0 | 0/0 | skadad, åter A few weeks |
@@ -72,7 +72,7 @@ Tränare: Rubén Forestello. Betyg, mål och assist gäller innevarande säsong 
 | 86 | Matias Pagliaricci | CB | 25 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 4 | Valentín Fenoglio | CM,RM | 23 | Argentina | 718 k€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
-| 5 | Alejandro Cabrera | CM,CDM | 33 | Argentina | 436 k€ | – | 0 | 0 | 0/0 |  |
+| 5 | Alejandro Cabrera | CDM,CM | 33 | Argentina | 436 k€ | – | 0 | 0 | 0/0 |  |
 | 8 | Siro Rosané | CM,CDM,CAM | 26 | Argentina | 402 k€ | – | 0 | 0 | 0/0 |  |
 | 10 | Tomás González | CM,CAM,RW | 27 | Argentina | 332 k€ | – | 0 | 0 | 0/0 |  |
 | 15 | Lautaro Cepeha | Midfielder | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |
@@ -84,7 +84,7 @@ Tränare: Rubén Forestello. Betyg, mål och assist gäller innevarande säsong 
 | | **Anfallare** | | | | | | | | | |
 | 7 | Lucas González | ST,RW | 29 | Argentina | 264 k€ | – | 0 | 0 | 0/0 | skadad, åter Early November 2026 |
 | 9 | Javier Ferreira | ST | 34 | Paraguay | 419 k€ | – | 0 | 0 | 0/0 |  |
-| 11 | Martín Garnerone | LW,ST,RW,RM | 27 | Argentina | 315 k€ | – | 0 | 0 | 0/0 |  |
+| 11 | Martín Garnerone | LW,ST,RW,RM | 28 | Argentina | 315 k€ | – | 0 | 0 | 0/0 |  |
 | 14 | Gonzalo González | RW,RWB,RM | 23 | Argentina | 562 k€ | – | 0 | 0 | 0/0 |  |
 | 16 | Yeison Moreno | ST | 29 | Colombia | 254 k€ | – | 0 | 0 | 0/0 |  |
 | 18 | Joaquín Rivero | Attacker | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |

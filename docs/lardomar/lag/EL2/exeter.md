@@ -1,6 +1,6 @@
 # Exeter (League Two) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -37,7 +37,7 @@ Form (äldst → senast): FVFOOFOF · senaste match 2026-09-26
 
 | Motståndare | M | V-O-F | Mål | Mot marknaden | Kryss mot odds | Senast |
 |---|---|---|---|---|---|---|
-| Port Vale | 15 | 5-2-8 | 17–16 | −0,20 | −16 pe | 2026-09-12 0-1 (b) |
+| Port Vale | 14 | 5-1-8 | 16–15 | −0,19 | −22 pe | 2026-09-12 0-1 (b) |
 | Northampton | 12 | 2-4-6 | 12–19 | −0,58 | +4 pe | 2026-02-14 0-0 (h) |
 | Crawley Town | 10 | 4-3-3 | 16–17 | −0,13 | +4 pe | 2025-04-21 1-3 (b) |
 | Bristol Rvs | 9 | 5-2-2 | 17–11 | +0,56 | −5 pe | 2026-09-26 0-1 (b) |
@@ -61,21 +61,21 @@ Form (äldst → senast): FVFOOFOF · senaste match 2026-09-26
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Matt Taylor. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Jack Bycroft | GK | 25 | England | 181 k€ | 7,20 | 0 | 0 | 0/0 |  |
+| 1 | Jack Bycroft | GK | 25 | England | 181 k€ | 7,21 | 0 | 0 | 0/0 |  |
 | 22 | Frankie Phillips | GK | 20 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 2 | Lakyle Samuel | RB,RWB | 20 | England | 737 k€ | 6,55 | 0 | 0 | 0/0 |  |
-| 3 | Luca Woodhouse | CB,LB,LWB | 22 | England | 309 k€ | 7,36 | 0 | 1 | 0/0 |  |
+| 3 | Luca Woodhouse | CB,LB,LWB | 22 | England | 309 k€ | 7,38 | 0 | 1 | 0/0 |  |
 | 4 | Ed Turns | CB | 23 | Wales | 206 k€ | – | 0 | 0 | 0/0 |  |
-| 5 | Jack Fitzwater | CB | 29 | England | 184 k€ | 7,58 | 2 | 0 | 1/0 |  |
-| 6 | Jack Taylor | CB,LB | 21 | England | – | 6,62 | 0 | 0 | 0/0 |  |
+| 5 | Jack Fitzwater | CB | 29 | England | 184 k€ | 7,59 | 2 | 0 | 1/0 |  |
+| 6 | Jack Taylor | CB,LB | 21 | England | – | 6,57 | 0 | 0 | 0/0 |  |
 | 40 | Edward James | CB | 21 | Wales | 240 k€ | 6,99 | 0 | 0 | 1/0 |  |
 | 43 | Tobias Alsop | Defender | 17 | England | – | – | 0 | 0 | 0/0 |  |
 | 46 | Louie Cayless | CB | 18 | England | – | – | 0 | 0 | 0/0 |  |
@@ -83,19 +83,19 @@ Tränare: Matt Taylor. Betyg, mål och assist gäller innevarande säsong enligt
 | | **Mittfältare** | | | | | | | | | |
 | 7 | Gwion Edwards | LM,LWB,LW,RW,RM,CM,RWB | 33 | Wales | 72 k€ | 6,80 | 1 | 1 | 2/0 |  |
 | 8 | Taylor Perry | CDM,CM,CAM | 25 | England | 251 k€ | 6,21 | 0 | 0 | 1/0 |  |
-| 12 | Reece Cole | CAM | 28 | England | 177 k€ | 6,97 | 1 | 0 | 1/0 |  |
+| 12 | Reece Cole | CAM | 28 | England | 177 k€ | 6,96 | 1 | 0 | 1/0 |  |
 | 14 | Harry Kite | CM,CDM | 26 | England | 210 k€ | – | 0 | 0 | 0/0 |  |
 | 16 | Charlie Cummins | CDM,CM | 21 | Ireland | 287 k€ | 6,99 | 0 | 0 | 1/0 |  |
 | 18 | Liam Oakes | LWB,CDM,CM | 19 | England | 463 k€ | – | 0 | 0 | 0/0 |  |
-| 20 | George Birch | CM | 20 | England | – | 6,15 | 0 | 0 | 0/0 |  |
-| 23 | Ethan Sutherland | LWB,LM,LB,LW | 20 | Scotland | – | 6,31 | 0 | 0 | 0/0 |  |
+| 23 | Ethan Sutherland | LWB,LM,LB,LW | 20 | Scotland | – | 6,33 | 0 | 0 | 0/0 |  |
 | 24 | Vincent Harper | LM,LW,LWB,LB | 26 | Kenya | 182 k€ | 6,96 | 0 | 0 | 1/0 |  |
-| 29 | Kevin McDonald | CDM | 37 | Scotland | 119 k€ | – | 0 | 0 | 0/0 |  |
-| 31 | Jake Doyle-Hayes | CDM,CM | 27 | Ireland | 151 k€ | 6,65 | 0 | 0 | 2/0 |  |
-| 41 | Pedro Borges | RM | 21 | Portugal | 251 k€ | – | 0 | 0 | 0/0 |  |
+| 31 | Jake Doyle-Hayes | CDM,CM | 27 | Ireland | 151 k€ | 6,63 | 0 | 0 | 2/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 10 | Josh Gordon | ST,CAM | 31 | England | 162 k€ | 6,36 | 0 | 0 | 2/0 |  |
-| 11 | Andrew Oluwabori | RW,LW,RM | 24 | England | 184 k€ | 5,99 | 0 | 1 | 0/0 |  |
+| 11 | Andrew Oluwabori | RW,LW,RM | 24 | England | 184 k€ | 5,96 | 0 | 1 | 0/0 |  |
 | 15 | Ajay Matthews | ST | 20 | England | 674 k€ | 5,61 | 0 | 0 | 0/0 |  |
 | 19 | Sonny Cox | CAM,ST | 21 | England | 287 k€ | 6,06 | 0 | 0 | 0/0 |  |
-| 32 | Danny Rose | ST | 32 | England | – | 6,39 | 0 | 0 | 0/0 |  |
+| 20 | George Birch | RW | 20 | England | – | 6,10 | 0 | 0 | 0/0 |  |
+| 32 | Danny Rose | ST | 32 | England | – | 6,34 | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (2): Kevin McDonald (senast 2026-09-29), Pedro Borges (senast 2026-09-29).

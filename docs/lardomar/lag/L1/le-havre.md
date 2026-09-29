@@ -1,6 +1,6 @@
 # Le Havre (Ligue 1) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [L1](../../ligor/L1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [L1](../../ligor/L1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -71,7 +71,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-08-23 | Europa 2601 | Le Havre - Monaco | 2 | 16 % | 25 % |
 | 2026-05-10 | Europa 2573 | Le Havre - Marseille | 2 | 24 % | 26 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Didier Digard. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

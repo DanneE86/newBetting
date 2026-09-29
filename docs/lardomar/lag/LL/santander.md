@@ -1,6 +1,6 @@
 # Santander (La Liga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [LL](../../ligor/LL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [LL](../../ligor/LL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -69,7 +69,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 |---|---|---|---|---|---|
 | 2026-08-23 | Europa 2601 | Getafe - Racing Santander | 1 | 19 % | 24 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: José López. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -80,7 +80,6 @@ Tränare: José López. Betyg, mål och assist gäller innevarande säsong enlig
 | | **Målvakter** | | | | | | | | | |
 | 1 | Simon Eriksson | GK | 20 | Sweden | 1,8 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 13 | Julen Agirrezabala | GK | 25 | Spain | 11,0 M€ | 6,80 | 0 | 0 | 0/0 |  |
-| 31 | Laro Gómez | GK | 19 | Spain | 340 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 2 | Álvaro Mantilla | RB | 26 | Spain | 1,0 M€ | 6,66 | 0 | 0 | 2/0 |  |
 | 4 | Manu | CB | 28 | Spain | 1,1 M€ | 6,17 | 0 | 0 | 1/0 |  |
@@ -89,7 +88,6 @@ Tränare: José López. Betyg, mål och assist gäller innevarande säsong enlig
 | 17 | Jorge Salinas | LB,CB | 19 | Spain | 1,8 M€ | 7,11 | 0 | 1 | 2/0 |  |
 | 22 | Pedro Felipe | CB | 22 | Brazil | 908 k€ | 5,27 | 0 | 0 | 1/0 |  |
 | 24 | Jeanuël Belocian | CB,LB,LWB | 21 | France | 11,8 M€ | 6,32 | 0 | 0 | 1/0 |  |
-| 37 | Aitor Crespo | Defender | 21 | Spain | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 3 | Aarón Martín | LM,LB,LWB | 29 | Spain | 2,6 M€ | 5,56 | 0 | 0 | 0/0 |  |
 | 6 | Íñigo Sainz-Maza | CDM,CM | 28 | Spain | 921 k€ | 6,54 | 0 | 0 | 0/0 |  |
@@ -98,8 +96,6 @@ Tränare: José López. Betyg, mål och assist gäller innevarande säsong enlig
 | 18 | Matteo Prati | CM,CDM | 22 | Italy | 4,9 M€ | 6,53 | 0 | 0 | 0/0 |  |
 | 20 | Sergio Canales | CAM,RW,ST | 35 | Spain | 1,9 M€ | 6,77 | 1 | 0 | 1/0 |  |
 | 23 | Iván Martin | CDM,CM,CAM | 27 | Spain | 4,4 M€ | 6,96 | 0 | 0 | 0/0 |  |
-| 26 | Mario Solórzano | Midfielder | 21 | Spain | – | – | 0 | 0 | 0/0 |  |
-| 33 | Jorge Castellanos | Midfielder | 20 | Spain | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Giorgi Guliashvili | ST | 25 | Georgia | 1,8 M€ | 6,10 | 0 | 0 | 0/0 |  |
 | 9 | Juan Carlos Arana | ST | 26 | Spain | 952 k€ | 6,44 | 0 | 0 | 0/0 |  |
@@ -109,3 +105,5 @@ Tränare: José López. Betyg, mål och assist gäller innevarande säsong enlig
 | 15 | Pablo García | RW | 20 | Spain | 8,1 M€ | 6,59 | 2 | 0 | 1/0 |  |
 | 19 | Iker Luque | LW | 21 | Spain | 1,6 M€ | 6,09 | 0 | 0 | 0/0 |  |
 | 21 | Yassir Zabiri | ST | 21 | Morocco | 1,2 M€ | 7,08 | 6 | 0 | 4/0 |  |
+
+Har lämnat truppen sedan vi började spara (4): Jorge Castellanos (senast 2026-09-29), Aitor Crespo (senast 2026-09-29), Mario Solórzano (senast 2026-09-29), Laro Gómez (senast 2026-09-29).

@@ -1,10 +1,10 @@
 # Doncaster (League One) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
-- Stark historik mot Milton Keynes Dons (+0,54 p/match mot marknaden, 10 möten), Peterboro (+1,09 p/match mot marknaden, 8 möten), Wycombe (−0,69 p/match mot marknaden, 7 möten), Wigan (−1,02 p/match mot marknaden, 6 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Stark historik mot Milton Keynes Dons (+0,54 p/match mot marknaden, 10 möten), Peterboro (+1,09 p/match mot marknaden, 8 möten), Plymouth (−0,67 p/match mot marknaden, 8 möten), Wycombe (−0,69 p/match mot marknaden, 7 möten), Wigan (−1,02 p/match mot marknaden, 6 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -40,10 +40,10 @@ Form (äldst → senast): VFOOOFFV · senaste match 2026-09-19
 | AFC Wimbledon | 16 | 5-4-7 | 18–21 | −0,27 | −3 pe | 2026-09-12 0-1 (b) |
 | Milton Keynes Dons | 10 | 5-3-2 | 13–8 | +0,54 | +4 pe | 2025-02-01 2-1 (h) |
 | Bradford | 9 | 4-2-3 | 10–9 | +0,25 | −6 pe | 2026-01-31 0-1 (b) |
-| Plymouth | 9 | 3-0-6 | 14–20 | −0,45 | −26 pe | 2026-09-05 2-3 (h) |
 | Burton | 8 | 3-3-2 | 12–12 | +0,06 | +11 pe | 2026-02-03 2-1 (b) |
 | Oxford | 8 | 2-3-3 | 10–15 | −0,04 | +13 pe | 2022-04-30 1-1 (b) |
 | Peterboro | 8 | 6-1-1 | 18–9 | +1,09 | −12 pe | 2026-09-19 2-0 (b) |
+| Plymouth | 8 | 2-0-6 | 11–18 | −0,67 | −26 pe | 2026-09-05 2-3 (h) |
 | Blackpool | 7 | 3-1-3 | 8–8 | −0,01 | −13 pe | 2026-03-14 2-1 (h) |
 | Mansfield | 7 | 1-2-4 | 8–15 | −0,38 | +2 pe | 2026-08-15 1-2 (b) |
 | Wycombe | 7 | 1-1-5 | 6–14 | −0,69 | −12 pe | 2026-02-07 0-4 (b) |
@@ -68,7 +68,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 |---|---|---|---|---|---|
 | 2026-04-11 | Stryk 4948 | Doncaster - Reading | 1 ✓ | 45 % | 48 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Grant McCann. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -76,7 +76,6 @@ Tränare: Grant McCann. Betyg, mål och assist gäller innevarande säsong enlig
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
 | 1 | Tommy Simkin | GK | 21 | England | 1,5 M€ | 6,57 | 0 | 0 | 1/0 |  |
-| 32 | Jake Oram | Keeper | 20 | England | – | – | 0 | 0 | 0/0 |  |
 | 41 | Jacob Bryant | Keeper | 19 | England | – | – | 0 | 0 | 0/0 |  |
 | 42 | Josh Clarke | GK | 22 | Northern Ireland | 433 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
@@ -84,13 +83,11 @@ Tränare: Grant McCann. Betyg, mål och assist gäller innevarande säsong enlig
 | 3 | James Husband | CB,LB | 32 | England | 252 k€ | 7,23 | 0 | 0 | 0/0 |  |
 | 5 | Matthew Pearson | CB | 33 | England | 208 k€ | – | 0 | 0 | 0/0 |  |
 | 6 | Jay McGrath | CB | 23 | England | 415 k€ | 7,11 | 0 | 0 | 1/0 |  |
-| 12 | Neill Byrne | CB | 33 | Ireland | 251 k€ | 6,74 | 0 | 0 | 1/0 |  |
+| 12 | Neill Byrne | CB | 33 | Ireland | 251 k€ | 6,74 | 0 | 0 | 2/0 |  |
 | 16 | Tom Nixon | RB | 23 | England | 249 k€ | – | 0 | 0 | 0/0 |  |
 | 23 | Jack Senior | LB,LWB | 29 | England | 255 k€ | 7,13 | 2 | 0 | 4/0 |  |
 | 27 | Seán Grehan | CB,RB | 22 | Ireland | 412 k€ | 7,06 | 1 | 0 | 1/0 |  |
-| 39 | Lincoln Pawlak | Defender | 17 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-|  | Alex Pavan | Midfielder | 17 | England | – | – | 0 | 0 | 0/0 |  |
 | 4 | Owen Bailey | CAM,CDM,CM,CB,RW | 27 | England | 331 k€ | 6,94 | 1 | 0 | 1/0 |  |
 | 8 | George Broadbent | CDM,CAM | 25 | England | 218 k€ | 6,54 | 0 | 0 | 0/0 |  |
 | 15 | Harry Clifton | CAM,CM | 28 | England | 196 k€ | 6,10 | 0 | 0 | 1/0 |  |
@@ -108,3 +105,5 @@ Tränare: Grant McCann. Betyg, mål och assist gäller innevarande säsong enlig
 | 14 | Francis Okoronkwo | ST,LW | 22 | England | 535 k€ | – | 0 | 0 | 0/0 |  |
 | 19 | Jordan Thomas | RW,LW | 25 | England | 347 k€ | 6,68 | 0 | 1 | 1/0 |  |
 | 47 | Hakeeb Adelakun | LW,ST | 30 | England | 188 k€ | 6,28 | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (3): Jake Oram (senast 2026-09-29), Lincoln Pawlak (senast 2026-09-29), Alex Pavan (senast 2026-09-29).

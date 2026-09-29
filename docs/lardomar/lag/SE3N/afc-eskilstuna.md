@@ -1,6 +1,6 @@
 # AFC Eskilstuna (Div 1 Norra) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [SE3N](../../ligor/SE3N.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [SE3N](../../ligor/SE3N.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -38,3 +38,40 @@ Form senaste 8 (äldst → senast): VVVVVVFV · senaste match 2026-09-26
 | Örebro Syrianska | 2 | 1-1-0 | 5–3 | 2025-11-01 4-2 (b) |
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
+
+## Trupp (Transfermarkt, hämtad 2026-09-29)
+
+Tränare: Tony Andersson. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Kevin Dyplin | Goalkeeper | 26 | Sweden | – | – | – | – | 0/0 |  |
+| 13 | Valter Jonasson | Goalkeeper | 20 | Sweden | – | – | – | – | 0/0 |  |
+| 37 | Sebastian Ekholm | Goalkeeper | 30 | Sweden | – | – | – | – | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 5 | Taulant Parallangaj | Centre-Back | 24 | Sweden | – | – | – | – | 0/0 |  |
+| 68 | Filip Rogic | Centre-Back | 33 | Sweden | – | – | – | – | 0/0 |  |
+| 12 | Elias Rigö | Centre-Back | 22 | Sweden | – | – | – | – | 0/0 |  |
+| 19 | Amel Mazalovic | Centre-Back | 21 | Bosnia-Herzegovina | – | – | – | – | 0/0 |  |
+| 23 | Love Lindbäck | Centre-Back | 21 | Sweden | – | – | – | – | 0/0 |  |
+| 36 | Arvid Önnebro | Centre-Back | 20 | Sweden | – | – | – | – | 0/0 |  |
+| 2 | Leond Mahmoud | Left-Back | 21 | Sweden | – | – | – | – | 0/0 |  |
+| 6 | Oliver Blomdahl | Left-Back | 26 | Sweden | – | – | – | – | 0/0 |  |
+| 20 | Mohamed Youla | Right-Back | 25 | Sweden | – | – | – | – | 0/0 |  |
+| 22 | Alexander Marauge | Right-Back | 19 | Sweden | – | – | – | – | 0/0 |  |
+| 55 | Melvin Rydh | Right-Back | 19 | Sweden | – | – | – | – | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 17 | Efdon Mahari | Defensive Midfield | 20 | Sweden | – | – | – | – | 0/0 |  |
+| 24 | Dmitriy Zhuravlev | Central Midfield | 29 | Russia | – | – | – | – | 0/0 |  |
+| 8 | Ibrahim Ahmed | Central Midfield | 21 | Sweden | – | – | – | – | 0/0 |  |
+| 16 | Sixten Sköldqvist | Central Midfield | 22 | Sweden | – | – | – | – | 0/0 |  |
+| 25 | Vincent Lif | Central Midfield | 18 | Sweden | – | – | – | – | 0/0 |  |
+| 30 | Ibrahima Chérif Fofana | Central Midfield | 19 | Guinea | – | – | – | – | 0/0 |  |
+| 15 | Umar Kurfi Amadi | Right Midfield | 24 | Sweden | – | – | – | – | 0/0 |  |
+| 99 | Aleksandar Azizovic | Attacking Midfield | 24 | Sweden | – | – | – | – | 0/0 |  |
+| 11 | Robin Björkman | Attacking Midfield | 18 | Sweden | – | – | – | – | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 10 | Emanuel Chabo | Centre-Forward | 24 | Sweden | – | – | – | – | 0/0 |  |
+| 7 | Lee Hansson | Centre-Forward | 21 | Sweden | – | – | – | – | 0/0 |  |
+| 9 | Albin Flodkvist | Centre-Forward | 19 | Sweden | – | – | – | – | 0/0 |  |

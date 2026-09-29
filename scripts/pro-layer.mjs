@@ -9,7 +9,7 @@ import {
   overround, predictDixonColes, riskReward, round, rps1x2, toDate,
 } from './pro/lib.mjs';
 import { EARLY_ROUNDS, buildTiers, fitLeagueModel, loadLeagueModels, paramsFor } from './pro/league-models.mjs';
-import { historicalMissing, findUsMatch, loadPlayerModel, summarise as summariseMissing, teamShares } from './pro/players.mjs';
+import { historicalMissing, findUsMatch, inCurrentSquad, loadPlayerModel, summarise as summariseMissing, teamShares } from './pro/players.mjs';
 import { TEAM_ALIASES } from './weather/teams.mjs';
 import { adjustProbs } from './lib/learned-adjust.mjs';
 
@@ -21,11 +21,11 @@ const P = {
   fixtures: path.join(root, 'data', 'upcoming-fixtures.json'),
   odds: path.join(root, 'data', 'open', 'upcoming_odds.json'),
   oddsportal: path.join(root, 'data', 'open', 'oddsportal_odds.json'),
-  weatherForecast: path.join(root, 'data', 'open', 'weather_forecast.json'),
   weatherHistory: path.join(root, 'data', 'open', 'weather_history.json'),
   referees: path.join(root, 'data', 'open', 'referees.json'),
   usLeague: path.join(root, 'data', 'open', 'understat_league_matches.json'),
   usPlayers: path.join(root, 'data', 'open', 'understat_player_matches.json'),
+  squads: path.join(root, 'data', 'trupper'),
   playerStats: path.join(root, 'data', 'open', 'player_stats.json'),
   fpl: path.join(root, 'data', 'open', 'fpl_availability.json'),
   lineups: path.join(root, 'data', 'open', 'espn_lineups.json'),
@@ -47,7 +47,6 @@ export const CONFIG = {
   maxEv: 0.25,
   stakeSek: 500,        // fast insats per spel (valt av anvandaren i st f Kelly)
   evalThresholds: [0.02, 0.03, 0.05, 0.1],
-  weather: { windStrongKmh: 30, rainHeavyMm: 2, coldC: 3 }, // flaggor i tips (2 h runt avspark)
   marketAnchor: 0.7,    // bara for utvardering (marketAnchoredAtBestPrice); live anvands inte
   // Bolag med svensk licens i The Odds API (region eu). Basta pris tas bara har.
   userBooks: ['unibet_se', 'leovegas_se', 'betsson', 'nordicbet', 'coolbet'],
@@ -134,10 +133,6 @@ writeJson(P.referees, referees);
 const tips = readJson(P.tips);
 applyTipAccuracy(tips, evaluation.tipAccuracy);
 const fixtures = fs.existsSync(P.fixtures) ? readJson(P.fixtures) : [];
-const forecastByMatch = new Map(
-  (fs.existsSync(P.weatherForecast) ? readJson(P.weatherForecast).matches : [])
-    .map((w) => [`${w.date}|${w.league}|${w.home}|${w.away}`, w]),
-);
 const apiOddsList = fs.existsSync(P.odds) ? readJson(P.odds).events ?? [] : [];
 // Reserv: OddsPortal (1X2-snitt) for matcher som The Odds API saknar - se scripts/fetch-oddsportal.mjs
 const apiHasOdds = (e) => apiOddsList.some((x) => x.league === e.league && x.commence
@@ -179,7 +174,7 @@ tips.proMeta = {
   }])),
   evaluationSummary: evaluation.summary,
   marketTest: evaluation.marketTest,
-  note: 'pro = Dixon-Coles + devig (multiplicative) + spelarviktad franvaro + vilodagar + vader. Fast insats stakeSek per spel. Se docs/krav/01-proffs-research.md',
+  note: 'pro = Dixon-Coles + devig (multiplicative) + spelarviktad franvaro + vilodagar (vader borttaget: paverkar inte utfallet, se weatherEffect). Fast insats stakeSek per spel. Se docs/krav/01-proffs-research.md',
 };
 tips.valueBets = [...enriched.values()]
   .flatMap((p) => p.valueBets.map((v) => ({ match: p.match, date: p.date, league: p.league, ...v })))
@@ -340,9 +335,10 @@ function buildPro(t) {
     const tooLong = price > CONFIG.maxOdds;
     const suspect = evVal > CONFIG.maxEv;
     // Omdome: vart att spela till dagens basta odds? minOdds = lagsta odds med EV >= troskeln
+    // (avrundas uppat: 3.7036 -> 3.71, annars visas "minsta odds 3.70" pa ett odds 3.70 som ar Ej varde)
     verdicts[k] = {
       market: mkt, pick, odds: price, bookmaker, p: round(p), ev: round(evVal), fairSource: g.source,
-      minOdds: round((1 + g.minEv) / p, 2), value: !tooLong && !suspect && evVal >= g.minEv,
+      minOdds: Math.ceil(((1 + g.minEv) / p) * 100 - 1e-9) / 100, value: !tooLong && !suspect && evVal >= g.minEv,
       riskReward: riskReward(price, p, CONFIG.stakeSek),
       ...(tooLong ? { reason: `odds över ${CONFIG.maxOdds} (skräll)` } : suspect ? { reason: `misstänkt EV ${Math.round(evVal * 100)} % – kontrollera oddsen` } : {}),
     };
@@ -369,7 +365,6 @@ function buildPro(t) {
     odds: Object.fromEntries(Object.entries(prices).map(([k, v]) => [k, v.price])),
     oddsBooks: Object.fromEntries(Object.entries(prices).map(([k, v]) => [k, v.bookmaker])),
     rest: { home: restInfo(t.league, t.home, t.date), away: restInfo(t.league, t.away, t.date) },
-    weather: weatherInfo(t),
     availability,
   };
 }
@@ -476,8 +471,11 @@ function availabilityInfo(t) {
   const { fplByUnderstat, lineupByMatch } = liveAvailData();
   const lineup = lineupByMatch.get(`${t.league}|${t.home}|${t.away}`);
   const confirmed = lineup?.lineupStatus === 'confirmed';
+  const squadFile = path.join(P.squads, `${t.league}.json`);
+  const squads = fs.existsSync(squadFile) ? readJson(squadFile).teams : null;
   const side = (team, starters) => {
-    const shares = teamShares(playerModel, t.league, team, t.date);
+    // Salda/utlanade spelare har kvar sin Understat-andel ett ar: rakna bara dem som finns i truppen nu
+    const shares = inCurrentSquad(teamShares(playerModel, t.league, team, t.date), squads?.[team]?.players, t.date);
     if (!shares.length) return { source: 'ingen spelardata', attackFactor: 1, missingShare: 0, players: [] };
     const missing = [];
     if (confirmed) {
@@ -610,23 +608,6 @@ function nameSimilarity(a, b) {
   if (!A.length || !B.length) return 0;
   const share = (X, Y) => X.filter((w) => Y.some((v) => v.startsWith(w) || w.startsWith(v))).length / X.length;
   return Math.max(share(A, B), share(B, A));
-}
-
-function weatherInfo(t) {
-  const f = forecastByMatch.get(`${t.date}|${t.league}|${t.home}|${t.away}`);
-  // Prognos hamtas bara pa matchdagen (osaker langre fram)
-  if (!f) return { available: false, flags: [], note: 'väder hämtas på matchdagen' };
-  const w = f.weather;
-  const c = CONFIG.weather;
-  const flags = [];
-  if (w?.windKmh >= c.windStrongKmh) flags.push(`hard vind ${w.windKmh} km/h`);
-  if (w?.precipMm >= c.rainHeavyMm) flags.push(`kraftigt regn ${w.precipMm} mm`);
-  if (w?.tempC != null && w.tempC <= c.coldC) flags.push(`kallt ${w.tempC}°C`);
-  return {
-    venue: f.venue, kickoffUtc: f.kickoffUtc, kickoffAssumed: f.kickoffAssumed,
-    ...(w ?? {}), available: !!w, flags,
-    note: !w ? 'prognos ej tillganglig an' : flags.length ? flags.join(', ') : 'normalt vader',
-  };
 }
 
 /**
@@ -1141,16 +1122,10 @@ function appendMarkdown(tips, evaluation) {
   }
   lines.push('', `Spel = EV >= ${CONFIG.minEv}. Lagre RPS/Brier = battre. Positiv CLV = slog stangningsoddset. Detaljer: data/reports/pro-evaluation.json`);
 
-  const flagged = [...new Map((tips.allCandidates ?? []).filter((t) => t.pro?.weather?.flags?.length).map((t) => [t.match, t])).values()];
-  lines.push('', '### Vader vid avspark (Open-Meteo)', '');
-  if (flagged.length) {
-    for (const t of flagged) lines.push(`- ${t.date} ${t.match} (${t.league}) @ ${t.pro.weather.venue}: ${t.pro.weather.note}`);
-  } else {
-    lines.push('Inga matcher med hard vind/kraftigt regn/kyla i prognosen.');
-  }
+  // Vader anvands inte i tipsen (paverkar inte utfallet), bara den historiska analysen visas
   const we = evaluation.weatherEffect;
   if (we?.n) {
-    lines.push('', `Vadereffekt pa O/U 2.5 utover Pinnacle closing (${we.n} matcher):`, '');
+    lines.push('', '### Vader (anvands inte i tipsen)', '', `Vadereffekt pa O/U 2.5 utover Pinnacle closing (${we.n} matcher):`, '');
     lines.push('| Variabel | Intervall | Matcher | Mal/match | Over-andel | Marknadens over-p | Residual | z |', '|---|---|---|---|---|---|---|---|');
     for (const v of [we.wind, we.gust, we.precip, we.temp]) {
       for (const b of v.buckets) lines.push(`| ${v.variable} | ${b.bucket} | ${b.n} | ${b.goalsPg} | ${b.overRate} | ${b.marketFairOver} | ${b.residual} | ${b.z} |`);

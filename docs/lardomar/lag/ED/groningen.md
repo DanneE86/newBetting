@@ -1,6 +1,6 @@
 # Groningen (Eredivisie) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [ED](../../ligor/ED.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [ED](../../ligor/ED.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -62,7 +62,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 |---|---|---|---|---|---|
 | 2026-02-08 | Europa 2547 | Groningen - PSV Eindhoven | 2 | 13 % | 21 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Dick Lukkien. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -92,7 +92,7 @@ Tränare: Dick Lukkien. Betyg, mål och assist gäller innevarande säsong enlig
 | 8 | Tika de Jonge | CDM,CM | 23 | Netherlands | 1,6 M€ | 7,44 | 0 | 0 | 0/0 |  |
 | 16 | Alvin Nordin | RM,CM | 18 | Sweden | 565 k€ | – | 0 | 0 | 0/0 |  |
 | 18 | Tygo Land | CDM,CM | 20 | Netherlands | 1,9 M€ | 7,23 | 2 | 1 | 0/0 |  |
-| 24 | Pelle Clement | CDM,LW,CM | 30 | Netherlands | 442 k€ | 7,05 | 0 | 1 | 0/0 |  |
+| 24 | Pelle Clement | CDM,LW | 30 | Netherlands | 442 k€ | 7,05 | 0 | 1 | 0/0 |  |
 | 44 | Jismerai Dillema | Midfielder | 19 | Netherlands | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 9 | Brynjólfur Willumsson | ST | 26 | Iceland | 678 k€ | 7,26 | 4 | 0 | 0/0 |  |

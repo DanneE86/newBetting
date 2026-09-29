@@ -1,6 +1,6 @@
 # Newells Old Boys (Liga Profesional) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -72,7 +72,7 @@ Form (äldst → senast): OFVVOOOV · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Frank Kudelka. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -98,10 +98,10 @@ Tränare: Frank Kudelka. Betyg, mål och assist gäller innevarande säsong enli
 | 97 | Saúl Salcedo | CB | 29 | Paraguay | 898 k€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 |  | Fabricio Tirado | CDM | 22 | Argentina | 574 k€ | – | 0 | 0 | 0/0 |  |
-|  | Mateo García | LM,CAM | 30 | Argentina | 841 k€ | – | 0 | 0 | 0/0 | skadad, åter Out for season |
+|  | Mateo García | CAM,LM | 30 | Argentina | 841 k€ | – | 0 | 0 | 0/0 | skadad, åter Out for season |
 | 5 | Luca Regiardo | CDM,CM | 19 | Argentina | 2,1 M€ | – | 0 | 0 | 0/0 |  |
 | 8 | David Sotelo | CDM | 23 | Argentina | 584 k€ | – | 0 | 0 | 0/0 |  |
-| 10 | Valentino Acuña | CM,CDM,CAM | 20 | Argentina | 1,4 M€ | – | 0 | 0 | 0/0 |  |
+| 10 | Valentino Acuña | CM,CAM,CDM | 20 | Argentina | 1,4 M€ | – | 0 | 0 | 0/0 |  |
 | 15 | Alan Soñora | CAM | 28 | USA | 245 k€ | – | 0 | 0 | 0/0 |  |
 | 19 | Jerónimo Gómez Mattar | CDM,CM | 18 | Argentina | 1,9 M€ | – | 0 | 0 | 0/0 |  |
 | 20 | Facundo Guch | CAM,RW,CM | 19 | Argentina | 1,8 M€ | – | 0 | 0 | 0/0 |  |
@@ -115,7 +115,7 @@ Tränare: Frank Kudelka. Betyg, mål och assist gäller innevarande säsong enli
 | 7 | Walter Mazzantti | RW | 30 | Argentina | 1,5 M€ | – | 0 | 0 | 0/0 |  |
 | 9 | Matías Cóccaro | ST,CAM | 28 | Uruguay | 1,5 M€ | – | 0 | 0 | 0/0 |  |
 | 32 | Santiago Solari | RW,ST,LW,CAM | 28 | Argentina | 2,0 M€ | – | 0 | 0 | 0/0 |  |
-| 33 | Walter Núñez | LW,LM,ST | 23 | Argentina | 938 k€ | – | 0 | 0 | 0/0 |  |
+| 33 | Walter Núñez | LW,ST | 23 | Argentina | 938 k€ | – | 0 | 0 | 0/0 |  |
 | 36 | Francisco Scarpeccio | ST | 20 | Argentina | 546 k€ | – | 0 | 0 | 0/0 |  |
 | 39 | Thomas Ríos | LW | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 99 | Ignacio Ramírez | ST | 29 | Uruguay | 1,2 M€ | – | 0 | 0 | 0/0 |  |

@@ -1,19 +1,18 @@
 // Flik "Stryktipset": kupong fran Svenska Spel + analys per match (data fran /api/stryktips).
-// Stryktipset A = kupongen som räknas fram i hämtningen. Stryktipset B = samma data, men användaren låser spikar
-// själv och resten av kupongen genereras i webbläsaren (stryk-engine.js).
-import { generateCoupons } from "/stryk-engine.js";
+// En sida per spel: användaren låser krav (1, X, 2, 1X, X2, 12, 1X2) för kupong A, B eller båda, och resten av
+// kupongerna genereras i webbläsaren (stryk-engine.js).
+import { generateCoupons, kravSigns } from "/stryk-engine.js";
 
 const view = document.getElementById("stryktips-view");
 const tabs = [...document.querySelectorAll(".view-tab")];
 const SIGNS = ["1", "X", "2"];
+const UTD_MIN = { stryktipset: 30000, europatipset: 20000 }; // kupong A, samma som fetch-stryktipset.mjs
 
 let data = null;
 let product = null;
-let modeB = false; // Stryktipset B / Europatipset B: egna spikar
 // Adresser: /tips, /stryktipset, /europatipset (dold i menyn, nås bara via adressen).
-// Undersidor: /stryktipset/backtest öppnar backtestet, /<spel>/reducera fäller ut det reducerade systemet,
-// /<spel>/b är B-sidan med egna spikar (vyn heter "<spel>-b"; /europatipset/b är dold i menyn).
-// Gamla länkar (#stryktips, #stryktips/backtest, #stryktips/<spel>/reducera) skickas vidare till de nya.
+// Undersidor: /stryktipset/backtest öppnar backtestet. Gamla adresser (/<spel>/b, /<spel>/reducera, #stryktips,
+// #stryktips/backtest, #stryktips/<spel>/reducera) skickas vidare till spelets sida.
 const POOLS = ["stryktipset", "europatipset"];
 function parseRoute() {
   const legacy = location.hash.match(/^#stryktips(?:\/(\w+))?(\/reducera)?/);
@@ -23,12 +22,12 @@ function parseRoute() {
     history.replaceState(null, "", `/${game}${sub}`);
   }
   const [first, sub] = location.pathname.split("/").filter(Boolean);
-  const v = POOLS.includes(first) ? (sub === "b" ? `${first}-b` : first) : first === "tips" ? "tips" : null;
-  return { view: v, sub: sub === "b" ? null : sub || null };
+  if (POOLS.includes(first) && sub && sub !== "backtest") history.replaceState(null, "", `/${first}`);
+  const v = POOLS.includes(first) ? first : first === "tips" ? "tips" : null;
+  return { view: v, sub: sub === "backtest" ? sub : null };
 }
 const route = parseRoute();
 let showBacktest = route.sub === "backtest";
-let showReduced = route.sub === "reducera";
 let loading = false;
 const open = new Set(); // expanderade analyser (produkt|matchnr)
 
@@ -52,15 +51,12 @@ function oneIn(p) {
 }
 
 // ---------- Flikbyte ----------
-// v = "tips" | "stryktipset" | "europatipset" | "stryktipset-b" | "europatipset-b". push = lägg adressen i historiken.
-const viewPath = (v) => (v.endsWith("-b") ? `/${v.slice(0, -2)}/b` : `/${v}`);
+// v = "tips" | "stryktipset" | "europatipset". push = lägg adressen i historiken.
+const viewPath = (v) => `/${v}`;
 function setView(v, push = false) {
-  const pool = v.replace(/-b$/, "");
+  const pool = v;
   const st = POOLS.includes(pool);
-  if (st) {
-    product = pool;
-    modeB = v.endsWith("-b");
-  }
+  if (st) product = pool;
   document.body.classList.toggle("view-stryktips", st);
   view.hidden = !st;
   for (const t of tabs) {
@@ -86,13 +82,11 @@ function setView(v, push = false) {
 
 tabs.forEach((t) => t.addEventListener("click", () => {
   showBacktest = false;
-  showReduced = false;
   setView(t.dataset.view, true);
 }));
 window.addEventListener("popstate", () => {
   const r = parseRoute();
   showBacktest = r.sub === "backtest";
-  showReduced = r.sub === "reducera";
   setView(r.view || "tips");
 });
 
@@ -233,7 +227,7 @@ function contextRow(e) {
     const rest = [x.restDays != null ? `vila ${dec(x.restDays)} d` : "", x.daysToNext != null && x.nextMatch?.tournament ? `nästa: ${esc(x.nextMatch.tournament)} om ${dec(x.daysToNext)} d` : ""].filter(Boolean).join(" · ");
     return `<span class="st-lu-side" title="${esc((x.starters || []).join(", "))}"><b>${esc(team)}</b>${x.formation ? ` (${esc(x.formation)})` : ""}: ${miss}${rest ? ` <small>· ${rest}</small>` : ""}</span>`;
   };
-  const extra = [c.referee ? `Domare: ${esc(c.referee)}` : "", c.weather ? `${esc(c.weather.description || "")} ${c.weather.temperature ?? ""}°, vind ${c.weather.windSpeed ?? "?"} m/s` : ""].filter(Boolean).join(" · ");
+  const extra = c.referee ? `Domare: ${esc(c.referee)}` : "";
   return `<div class="st-lineup"><span class="st-svs-k">Trupp</span>${status}${side(e.home, c.home)}${side(e.away, c.away)}${extra ? `<small class="st-lu-note">${extra}</small>` : ""}</div>`;
 }
 
@@ -311,10 +305,143 @@ function analysisPanel(e) {
   </div>`;
 }
 
+// ---------- Turmatcher och vanliga missar (data.missProfile, scripts/lib/stryk-miss-profile.mjs) ----------
+// Turmatch = matchtypen (spik/halvgardering x tecken x favoritens chans) har historiskt missat minst 30 % av gångerna,
+// dvs 13 rätt krävde att utfallet låg utanför grundraden. rescue = tecknet som oftast kom i stället.
+const TUR_RATE = 0.3;
+function turInfo(e, signs) {
+  const prof = data?.missProfile;
+  if (!prof || !signs || signs.length === 3 || !e.final) return null;
+  const fav = Math.max(...e.final);
+  const band = prof.bandEdges.filter((x) => fav >= x).length;
+  const type = signs.length === 1 ? "spik" : "halv";
+  const favSign = SIGNS[e.final.indexOf(fav)];
+  const onFav = signs.includes(favSign);
+  const g = onFav ? prof.groups[`${type}|${signs}|${band}`] : null;
+  const expected = 1 - [...signs].reduce((s, c) => s + e.final[SIGNS.indexOf(c)], 0);
+  const hist = !!g && g.n >= prof.minN;
+  const rate = hist ? g.rate : expected;
+  const missing = SIGNS.filter((s) => !signs.includes(s));
+  // Tecknet som oftast kom i stället (historiken), annars det som vi ger högst chans
+  const rescue = missing.slice().sort((a, b) => (hist ? (g.by[b] || 0) - (g.by[a] || 0) : 0) || e.final[SIGNS.indexOf(b)] - e.final[SIGNS.indexOf(a)])[0];
+  const lg = type === "spik" ? prof.leagues?.[e.league] : null;
+  return {
+    tur: rate >= TUR_RATE, rate, expected, hist, g, rescue, signs, favSign, onFav, fav,
+    kravSigns: SIGNS.filter((s) => signs.includes(s) || s === rescue).join(""),
+    league: lg && lg.rate >= 0.4 ? { name: e.league, ...lg } : null,
+  };
+}
+
+function turText(t) {
+  const hist = t.hist
+    ? `${esc(t.g.label)}: ${t.g.miss} av ${t.g.n} missade (${pct(t.rate)}, väntat ${pct(t.g.exp)}). I stället kom ${SIGNS.filter((s) => t.g.by[s]).map((s) => `${s} ${t.g.by[s]} ggr`).join(", ")}.`
+    : `För få liknande matcher i historiken – vår chans att ${t.signs.split("").join("")} missar är ${pct(t.rate)}.`;
+  const lg = t.league ? ` Spikar i ${esc(t.league.name)} spricker ${pct(t.league.rate)} (${t.league.miss} av ${t.league.n}).` : "";
+  return `${hist}${lg} För 13 rätt: lägg till <b>${esc(t.rescue)}</b> → <b>${esc(t.kravSigns.split("").join(""))}</b>.`;
+}
+
+// Öppna förklaringar (spel|matchnr), fälls ut när man klickar på turmatch
+const turOpen = new Set();
+const turKey = (e) => `${product}|${e.eventNumber}`;
+function turChip(t, e) {
+  if (!t?.tur) return "";
+  return `<button type="button" class="st-chip tur tur-btn" data-ev="${e.eventNumber}" aria-expanded="${turOpen.has(turKey(e))}">🍀 Turmatch · missar ${pct(t.rate)} <small>${turOpen.has(turKey(e)) ? "▲" : "Varför? ▼"}</small></button>`;
+}
+
+// Förklaring i enkla ord: vad kupongen spelar, hur det gått förut (10 prickar), och vad man kan göra
+function turExplain(e, t, { actions = false, krav = null } = {}) {
+  const names = { 1: `${e.home} vinner (1)`, X: "oavgjort (X)", 2: `${e.away} vinner (2)` };
+  const playTxt = t.signs.length === 1
+    ? `Kupong A har bara <b>ett</b> tecken här: <b>${esc(t.signs)}</b>, alltså att ${esc(names[t.signs])}. Det finns tre sätt en match kan sluta på, och A gissar bara på ett av dem.`
+    : `Kupong A har två tecken här: <b>${esc(t.signs)}</b>. Då blir det bara fel om det blir <b>${esc(SIGNS.find((x) => !t.signs.includes(x)))}</b>.`;
+  const tenth = Math.max(1, Math.min(10, Math.round(t.rate * 10)));
+  const dots = `<span class="tur-dots" aria-label="${tenth} av 10 gånger fel">${Array.from({ length: 10 }, (_, i) => `<span class="${i < tenth ? "miss" : "ok"}"></span>`).join("")}</span>`;
+  const coin = t.rate >= 0.55 ? " Det blir alltså oftare fel än rätt." : t.rate >= 0.45 ? " Det är nästan som att singla slant 🪙." : " Det är ungefär var tredje gång.";
+  const past = t.hist
+    ? `Vi har tittat på <b>${t.g.n}</b> gamla matcher som liknar den här (${esc(t.g.label.toLowerCase())}). I <b>${t.g.miss}</b> av dem blev det fel.
+       Om vi tänker oss 10 sådana matcher blir ungefär <b>${tenth} av 10</b> fel:`
+    : !t.onFav
+      ? `Här har kupong A inte valt favoriten (favoriten är <b>${esc(t.favSign)}</b> med ${pct(t.fav)}). Då finns inga liknande matcher att jämföra med, så vi använder vår egen chans: ${esc(t.signs)} händer bara i ${pct(1 - t.expected)} av gångerna. Om vi tänker oss 10 sådana matcher blir ungefär <b>${tenth} av 10</b> fel:`
+      : `Det finns för få liknande matcher sparade, så vi använder vår egen chans. Om vi tänker oss 10 sådana matcher blir ungefär <b>${tenth} av 10</b> fel:`;
+  const instead = t.hist
+    ? `När det blev fel blev det ${SIGNS.filter((x) => t.g.by[x]).sort((a, b) => t.g.by[b] - t.g.by[a]).map((x) => `<b>${x}</b> ${t.g.by[x]} gånger`).join(" och ")}.`
+    : "";
+  const saved = t.hist && t.g.miss ? ` Det hade räddat ${t.g.by[t.rescue]} av de ${t.g.miss} felen.` : "";
+  const lg = t.league ? `<li>Extra: spikar i ${esc(t.league.name)} går sönder ofta, ${pct(t.league.rate)} av gångerna.</li>` : "";
+  const lockedA = ["both", "A"].includes(krav?.scope);
+  const btn = actions
+    ? (lockedA
+      ? `<p class="tur-hint">Du har själv låst den här matchen i kupong A. Vill du ändra, klicka på tecknen i listan.</p>`
+      : `<button type="button" class="btn-ghost sb-tur-add" data-ev="${e.eventNumber}" data-signs="${esc(t.kravSigns)}">Lägg ${esc(t.kravSigns)} som krav i kupong B</button>`)
+    : "";
+  return `<div class="tur-explain">
+    <h4>🍀 Varför är det en turmatch?</h4>
+    <ol>
+      <li>${playTxt}</li>
+      <li>${past} ${dots}${coin} ${instead}</li>
+      <li>Om det blir fel här kan kupong A <b>inte</b> få 13 rätt, hur bra de andra 12 matcherna än går. Därför behövs tur.</li>
+      ${lg}
+      <li><b>Vad kan du göra?</b> Lägg till <b>${esc(t.rescue)}</b>, det som oftast kom i stället, och spela <b>${esc(t.kravSigns)}</b>.${saved} Det kostar fler rader i kupongen. Vill du inte ändra A kan du lägga ${esc(t.kravSigns)} i kupong B, så täcker B det A missar.</li>
+    </ol>
+    ${btn}
+  </div>`;
+}
+
+// Panel: turmatcherna i omgången (efter kupong A:s tecken) + historikens vanligaste missar
+// kravFor(nr) = användarens krav på matchen (B-sidan); krav som gäller A skrivs aldrig över av turknapparna
+function missPanel(p, events, { bCoupon = null, actions = false, kravFor = () => null } = {}) {
+  const prof = data?.missProfile;
+  if (!prof) return "";
+  const turs = events.map((e, i) => ({ e, i, t: turInfo(e, e.systemPick?.signs) })).filter((x) => x.t?.tur).sort((a, b) => b.t.rate - a.t.rate);
+  const pOk = turs.reduce((s, x) => s * (1 - x.t.rate), 1);
+  const list = turs.length
+    ? `<ol class="st-tur-list">${turs.map(({ e, i, t }) => {
+        const bPick = bCoupon?.picks[i]?.signs;
+        const bCovers = bPick && bPick.includes(t.rescue);
+        return `<li>
+          <div class="st-tur-head"><span class="st-num">${e.eventNumber}</span><b>${esc(e.home)} – ${esc(e.away)}</b>
+            <span class="st-tip ${t.signs.length === 1 ? "spik" : "halv"}">${esc(t.signs.split("").join(" + "))}</span>
+            <span class="st-chip tur">missar ${pct(t.rate)}</span>
+            ${bCoupon ? `<span class="st-chip ${bCovers ? "good" : "bad"}">${bCovers ? `B täcker ${esc(t.rescue)}` : `B saknar ${esc(t.rescue)}`}</span>` : ""}
+            ${actions ? (["both", "A"].includes(kravFor(e.eventNumber)?.scope)
+              ? `<span class="st-sub" title="Ändra kravet i listan ovan om B ska spelas annorlunda">Ditt krav gäller A</span>`
+              : `<button type="button" class="btn-ghost sb-tur-add" data-ev="${e.eventNumber}" data-signs="${esc(t.kravSigns)}">Krav ${esc(t.kravSigns)} i B</button>`) : ""}
+          </div>
+          <p>${turText(t)}</p>
+        </li>`;
+      }).join("")}</ol>`
+    : `<p class="st-sub">Inga turmatcher: alla spikar och halvgarderingar i kupong A har historiskt missat under ${Math.round(TUR_RATE * 100)} %.</p>`;
+  const rows = Object.values(prof.groups).filter((g) => g.n >= prof.minN).sort((a, b) => b.miss - a.miss).slice(0, 8);
+  const over = (g) => g.rate - g.exp > 2 * Math.sqrt((g.exp * (1 - g.exp)) / g.n);
+  const table = `<div class="st-bt-wrap"><table class="st-bt st-miss-table">
+      <thead><tr><th>Matchtyp</th><th>Matcher</th><th>Missade</th><th>Väntat</th><th>Kom i stället</th></tr></thead>
+      <tbody>${rows.map((g) => `<tr${over(g) ? ` class="down"` : ""}><th>${esc(g.label)}${over(g) ? ` <small>· missar oftare än väntat</small>` : ""}</th><td>${g.n}</td><td>${pct(g.rate)}</td><td>${pct(g.exp)}</td><td>${SIGNS.filter((s) => g.by[s]).map((s) => `${s}: ${g.by[s]}`).join(" · ")}</td></tr>`).join("")}</tbody>
+    </table></div>`;
+  const leagues = Object.entries(prof.leagues || {}).sort((a, b) => b[1].rate - a[1].rate).slice(0, 6);
+  const d = prof.outsideDist;
+  return `<section class="sb-panel st-miss">
+    <div class="st-miss-grid">
+      <div>
+        <h3>🍀 Turmatcher i omgången <small>${turs.length} st · kupong A</small></h3>
+        <p class="st-sub">Matchtyper som historiskt har missat minst ${Math.round(TUR_RATE * 100)} % av gångerna – här krävs tur för 13 rätt${turs.length ? `. Chans att alla håller: ${pct(pOk)}` : ""}.${actions ? " Lägg in tecknet som oftast kom i stället som krav i kupong B, så täcker B det A missar." : ""}</p>
+        ${actions && turs.some(({ e }) => !["both", "A"].includes(kravFor(e.eventNumber)?.scope)) ? `<button type="button" class="btn-ghost sb-tur-all">Lägg turmatcherna som krav i B</button>` : ""}
+        ${list}
+      </div>
+      <div>
+        <h3>Vanliga missar <small>${prof.draws} omgångar · ${prof.matches} matcher</small></h3>
+        <p class="st-sub">Från kupongarkivet (${esc(prof.from)} – ${esc(prof.to)}), grundraden i kupong A. Helgarderingar missar aldrig – alla missar är spikar och halvgarderingar. Rätt rad låg i snitt <b>${String(prof.avgOutside).replace(".", ",")}</b> matcher utanför grundraden (0: ${d[0]}, 1: ${d[1]}, 2: ${d[2]}, 3+: ${d[3]} omgångar).</p>
+        ${table}
+        ${leagues.length ? `<p class="st-sub"><b>Spikar per liga</b> (minst ${prof.minN}): ${leagues.map(([n, g]) => `${esc(n)} ${pct(g.rate)} <small>(väntat ${pct(g.exp)})</small>`).join(" · ")}</p>` : ""}
+      </div>
+    </div>
+  </section>`;
+}
+
 function matchCard(p, e) {
   const key = `${p.product}|${e.eventNumber}`;
   const isOpen = open.has(key);
   const sys = e.systemPick;
+  const tur = turInfo(e, sys?.signs);
   return `<article class="st-match${isOpen ? " open" : ""}" data-key="${esc(key)}">
     <header class="st-match-head">
       <span class="st-num">${e.eventNumber}</span>
@@ -324,11 +451,13 @@ function matchCard(p, e) {
       </div>
       <div class="st-verdict">
         ${sys ? `<span class="st-tip ${sys.signs.length === 1 ? "spik" : sys.signs.length === 2 ? "halv" : "hel"}" title="System A – grundrad (reduceras sedan)">${e.systemPickB ? "A: " : ""}${esc(sys.type)} ${esc(sys.signs.split("").join(" + "))}</span>` : `<span class="st-tip">Tips ${esc(e.tip)}</span>`}
-        ${e.systemPickB && !p.reducedB?.split ? `<span class="st-tip sysb" title="System B – går emot A">B: ${esc(e.systemPickB.type)} ${esc(e.systemPickB.signs.split("").join(" + "))}</span>` : ""}
+        ${e.systemPickB && !p.reducedB?.split ? `<span class="st-tip sysb" title="System B – eget system">B: ${esc(e.systemPickB.type)} ${esc(e.systemPickB.signs.split("").join(" + "))}</span>` : ""}
+        ${turChip(tur, e)}
         ${verdictChip(e)}
         ${resultChip(e)}
       </div>
     </header>
+    ${tur?.tur && turOpen.has(turKey(e)) ? turExplain(e, tur) : ""}
     ${probRow(e)}
     ${svsRow(e)}
     ${lineupRow(e)}
@@ -345,7 +474,7 @@ function render() {
   const head = `<div class="st-head">
     <div>
       <p class="eyebrow">Svenska Spel · 13 matcher</p>
-      <h2>${esc(p?.productName || (product === "europatipset" ? "Europatipset" : "Stryktipset"))} ${modeB ? "B" : "A"}${p ? ` <small>omgång ${p.drawNumber}</small>` : ""}</h2>
+      <h2>${esc(p?.productName || (product === "europatipset" ? "Europatipset" : "Stryktipset"))}${p ? ` <small>omgång ${p.drawNumber}</small>` : ""}</h2>
       <p class="st-sub">${p ? `${p.open ? "Öppen" : "Avgjord"} · ${esc(p.closeDescription || "")}` : "Hämtar kupong…"}${data?.updatedAt ? ` · hämtad ${esc(new Date(data.updatedAt).toLocaleString("sv-SE", { dateStyle: "short", timeStyle: "short" }))}` : ""}</p>
     </div>
     <div class="st-actions">
@@ -357,95 +486,81 @@ function render() {
     view.innerHTML = `${head}<p class="st-empty">${loading ? "Hämtar kupong och räknar…" : esc(data?.error || data?.fetchError || "Ingen kupong hämtad än – tryck “Hämta från Svenska Spel”.")}</p>`;
     return;
   }
-  if (modeB) {
-    renderB(p, head);
-    return;
-  }
-
-  const s = p.system;
-  const r = p.reduced;
-  const rb = p.reducedB;
   const krFmt = (x) => Math.round(x).toLocaleString("sv-SE");
-  const gcLink = r?.gamblingCabinUrl
-    ? (p.open
-      ? `<a class="st-gc" href="${esc(r.gamblingCabinUrl)}" target="_blank" rel="noopener">Öppna i Gambling Cabin – förifyllt, tryck Reducera → ${krFmt(r.cost)} kr</a>`
-      : `<p class="st-gc-off">Länken till Gambling Cabin fungerar när kupongen är öppen – den här omgången är avgjord.</p>`)
-    : "";
-  const reducedBox = r ? `<details class="st-method st-reduced"${showReduced ? " open" : ""}><summary>Reducerat system – ${r.rows} rader (${krFmt(r.cost)} kr) · visa regler och rader</summary>
-      <ol class="st-steps">
-        <li><b>Grundrad</b> ${s.rows} rader: spikar, halv- och helgarderingar där de höjer träffchansen mest (se chippen på varje match).</li>
-        <li><b>Utdelningsreducering</b>: bara rader som beräknas ge minst ${krFmt(r.rules.payoutMin)} kr för 13 rätt (${r.afterPayout} rader kvar). Samma beräkning som Gambling Cabin: folkets streck och omsättning ${krFmt(r.rules.turnover / 1e6)} milj kr.</li>
-        <li><b>Teckenreducering</b>: minst <b>${r.rules.signMin[0]}</b> ettor, <b>${r.rules.signMin[1]}</b> kryss och <b>${r.rules.signMin[2]}</b> tvåor per rad (${r.rules.signMin.join("-")}). Max är alltid fullt.</li>
-        <li><b>Budget</b> 350–400 kr: grundrad och utdelningsgräns (aldrig under 30 000 kr, Europatipset 20 000 kr) väljs så att det blir 350–400 rader med högst chans till 13 rätt. Ett system på 700–800 rader (minst 4-2-2) delas i två kuponger efter utdelning: A = raderna med högst utdelning, B = resten. Båda går att öppna i Gambling Cabin (samma grundrad, utdelningsintervall). Valt efter backtest 2026-09-28: högre samlad chans till 13 rätt än A 5-3-2 + motsystem B på båda spelen.</li>
-      </ol>
-      <p>Chans 13 rätt: ${oneIn(r.hitAll)} (grundraden ${oneIn(r.grundHit)}). Beräknad utdelning om systemet tar 13 rätt: ca ${krFmt(r.expectedPayout || 0)} kr. Utdelningen är en uppskattning från streckprocenten och kan skilja sig från den verkliga.</p>
-      ${gcLink}
-      <pre class="st-rows">${r.rowList.map((row, i) => `${String(i + 1).padStart(3, " ")}  ${row}`).join("\n")}</pre>
-    </details>` : "";
-  const summary = `<div class="st-summary">
+  const info = `<div class="st-summary">
     ${p.note ? `<p class="st-note">${esc(p.note)}</p>` : ""}
     ${p.value ? `<p class="st-value ${esc(p.value.level)}">${esc(p.value.text)}</p>` : ""}
-    ${data.error ? `<p class="st-note bad">Kunde inte uppdatera: ${esc(data.error)}</p>` : ""}
-    ${reducedBox}
     ${backtestBox(data.backtest, krFmt)}
     <details class="st-method"><summary>Hur räknas procenten?</summary>
       <ul>${Object.values(data.method || {}).map((m) => `<li>${esc(m)}</li>`).join("")}</ul>
     </details>
   </div>`;
-
-  view.innerHTML = `${head}${summary}${r ? `<p class="st-legend"><b>Färger</b> (efter Svenska folkets streck, samma som i Gambling Cabin): <span class="st-in c-green">Grön · favorit</span> folket ≥ ${Math.round(r.rules.colorGreen * 100)} % <span class="st-in c-yellow">Gul</span> mellan <span class="st-in c-red">Röd · skräll</span> folket ≤ ${Math.round(r.rules.colorRed * 100)} % · gråa tecken spelas inte</p>` : ""}<div class="st-list">${p.events.map((e) => matchCard(p, e)).join("")}</div>`;
+  renderB(p, head, info);
 }
 
-// ---------- Stryktipset B: egna spikar ----------
-// Spikar sparas per spel och omgång i webbläsaren. scope: "both" = båda kupongerna, "A"/"B" = bara den ena.
+// ---------- Stryktipset B: egna krav ----------
+// Krav sparas per spel och omgång i webbläsaren: { signs: "1X", scope }. scope: "both" = båda kupongerna, "A"/"B" = bara den ena.
+// Äldre sparade spikar ({ sign: "1" }) läses som krav med ett tecken.
 const SCOPES = [["both", "Båda"], ["A", "A"], ["B", "B"]];
 const bStates = new Map();
 const bKey = (p) => `betting.spikes.${p.product}.${p.drawNumber}`;
+const kravTxt = (k) => (kravSigns(k) || []).map((i) => SIGNS[i]).join("");
 function bState(p) {
   const k = bKey(p);
   if (!bStates.has(k)) {
-    let spikes = {};
+    let krav = {};
     try {
-      spikes = JSON.parse(localStorage.getItem(k) || "{}") || {};
+      krav = JSON.parse(localStorage.getItem(k) || "{}") || {};
     } catch {
       /* privat lage */
     }
-    bStates.set(k, { spikes, result: null, dirty: false, busy: false });
+    for (const [nr, x] of Object.entries(krav)) {
+      const signs = kravTxt(x);
+      if (signs) krav[nr] = { signs, scope: x.scope || "both" };
+      else delete krav[nr];
+    }
+    bStates.set(k, { krav, result: null, dirty: false, busy: false });
   }
   return bStates.get(k);
 }
-function saveSpikes(p, st) {
+function saveKrav(p, st) {
   st.dirty = !!st.result;
   try {
-    localStorage.setItem(bKey(p), JSON.stringify(st.spikes));
+    localStorage.setItem(bKey(p), JSON.stringify(st.krav));
   } catch {
     /* privat lage */
   }
 }
 
-function spikeRow(e, spike) {
-  const scope = spike?.scope || "both";
-  return `<div class="sb-row${spike ? " locked" : ""}" data-ev="${e.eventNumber}">
+const kravType = (signs) => (signs.length === 1 ? "spik" : signs.length === 2 ? "halv" : "hel");
+function kravRow(e, krav, pick) {
+  const scope = krav?.scope || "both";
+  const signs = krav?.signs || "";
+  const tur = turInfo(e, pick?.signs);
+  return `<div class="sb-row${krav ? " locked" : ""}" data-ev="${e.eventNumber}">
     <span class="st-num">${e.eventNumber}</span>
-    <div class="sb-match"><b>${esc(e.home)} – ${esc(e.away)}</b><small><span class="st-kick">${esc(kickoff(e.kickoff))}</span> · ${esc(e.league || "")}</small></div>
-    <div class="sb-signs" role="group" aria-label="Spik match ${e.eventNumber}">${SIGNS.map((s, i) => `<button type="button" class="sb-sign${spike?.sign === s ? " on" : ""}" data-sign="${s}" aria-pressed="${spike?.sign === s}" title="Folket ${pct(e.folk?.[i])}">${s}<small>${pct(e.final[i])}</small></button>`).join("")}</div>
-    <div class="sb-scope" role="group" aria-label="Spiken gäller">${SCOPES.map(([k, lbl]) => `<button type="button" data-scope="${k}" aria-pressed="${!!spike && scope === k}"${spike ? "" : " disabled"}>${lbl}</button>`).join("")}</div>
+    <div class="sb-match"><b>${esc(e.home)} – ${esc(e.away)}</b><small><span class="st-kick">${esc(kickoff(e.kickoff))}</span> · ${esc(e.league || "")}${tur?.tur ? ` · <button type="button" class="sb-tur tur-btn" data-ev="${e.eventNumber}" aria-expanded="${turOpen.has(turKey(e))}">🍀 turmatch (${esc(pick.signs)} missar ${pct(tur.rate)}) ${turOpen.has(turKey(e)) ? "▲" : "– varför? ▼"}</button>` : ""}</small></div>
+    <div class="sb-krav">
+      <div class="sb-signs" role="group" aria-label="Krav match ${e.eventNumber}">${SIGNS.map((s, i) => `<button type="button" class="sb-sign${signs.includes(s) ? " on" : ""}" data-sign="${s}" aria-pressed="${signs.includes(s)}" title="Folket ${pct(e.folk?.[i])}">${s}<small>${pct(e.final[i])}</small></button>`).join("")}</div>
+      <span class="sb-krav-lbl">${krav ? `<span class="st-tip ${kravType(signs)}">${esc(signs)}</span>` : "fritt"}</span>
+    </div>
+    <div class="sb-scope" role="group" aria-label="Kravet gäller">${SCOPES.map(([k, lbl]) => `<button type="button" data-scope="${k}" aria-pressed="${!!krav && scope === k}"${krav ? "" : " disabled"}>${lbl}</button>`).join("")}</div>
+    ${tur?.tur && turOpen.has(turKey(e)) ? turExplain(e, tur, { actions: true, krav }) : ""}
   </div>`;
 }
 
 function couponCard(c, label, p) {
-  if (!c) return `<div class="sb-coupon"><h3>Kupong ${label}</h3><p class="st-note bad">Gick inte att bygga en kupong med de här spikarna.</p></div>`;
+  if (!c) return `<div class="sb-coupon"><h3>Kupong ${label}</h3><p class="st-note bad">Gick inte att bygga en kupong med de här kraven${label === "B" ? " (B kräver minst 30 000 kr för 13 rätt och en annan grundrad än A)" : ""}.</p></div>`;
   const krFmt = (x) => Math.round(x).toLocaleString("sv-SE");
   const r = c.rules;
-  const utd = r.payoutMax ? `${krFmt(r.payoutMin)}–${krFmt(r.payoutMax)} kr` : `minst ${krFmt(r.payoutMin)} kr`;
   const locked = c.picks.filter((x) => x.locked).length;
   return `<div class="sb-coupon">
     <h3>Kupong ${label} <small>${c.rows} rader · ${krFmt(c.cost)} kr</small></h3>
     <dl class="sb-facts">
       <div><dt>Chans 13 rätt</dt><dd>${oneIn(c.hitAll)}</dd></div>
       <div><dt>Utdelning 13 rätt</dt><dd>ca ${krFmt(c.expectedPayout || 0)} kr</dd></div>
-      <div><dt>Regler</dt><dd>${r.signMin.join("-")} · utdelning ${utd}</dd></div>
-      <div><dt>Dina spikar</dt><dd>${locked}</dd></div>
+      <div><dt>Regler</dt><dd>${r.signMin.join("-")} · utdelning minst ${krFmt(r.payoutMinReal ?? r.payoutMin)} kr, inget tak</dd></div>
+      <div><dt>Dina krav</dt><dd>${locked}</dd></div>
     </dl>
     ${c.relaxed?.length ? `<p class="st-note">Gick inte med alla regler: ${esc(c.relaxed.join(", "))}.</p>` : ""}
     ${p.open
@@ -460,46 +575,114 @@ function couponTable(p, res) {
     const x = c?.picks[i];
     if (!x) return "<td>—</td>";
     const cls = x.signs.length === 1 ? "spik" : x.signs.length === 2 ? "halv" : "hel";
-    return `<td><span class="st-tip ${cls}${x.locked ? " mine" : ""}" title="${x.locked ? "Din spik" : esc(x.type)}">${x.locked ? "🔒 " : ""}${esc(x.signs.split("").join(" + "))}</span></td>`;
+    return `<td><span class="st-tip ${cls}${x.locked ? " mine" : ""}" title="${x.locked ? "Ditt krav" : esc(x.type)}">${x.locked ? "🔒 " : ""}${esc(x.signs.split("").join(" + "))}</span></td>`;
+  };
+  const turCell = (e, i) => {
+    const t = turInfo(e, res.A?.picks[i]?.signs);
+    return t?.tur ? `<td><button type="button" class="st-chip tur tur-btn" data-ev="${e.eventNumber}" data-scroll="1">🍀 ${pct(t.rate)} · varför?</button></td>` : "<td></td>";
   };
   return `<div class="st-bt-wrap"><table class="sb-table">
-    <thead><tr><th>#</th><th>Match</th><th>Kupong A</th><th>Kupong B</th></tr></thead>
-    <tbody>${p.events.map((e, i) => `<tr><td>${e.eventNumber}</td><th>${esc(e.home)} – ${esc(e.away)}</th>${cell(res.A, i)}${cell(res.B, i)}</tr>`).join("")}</tbody>
+    <thead><tr><th>#</th><th>Match</th><th>Kupong A</th><th>Kupong B</th><th>Tur (A)</th></tr></thead>
+    <tbody>${p.events.map((e, i) => `<tr><td>${e.eventNumber}</td><th>${esc(e.home)} – ${esc(e.away)}</th>${cell(res.A, i)}${cell(res.B, i)}${turCell(e, i)}</tr>`).join("")}</tbody>
   </table></div>`;
 }
 
-function renderB(p, head) {
+// Live-streck via Cloudflare-funktionen /live/svs (Svenska Spels API tillåter inte anrop direkt från sidan).
+// Gambling Cabin räknar med strecken just nu, så kupongen byggs på samma streck och radantalet blir detsamma där.
+async function refreshLive(p) {
+  const r = await fetch(`/live/svs?product=${encodeURIComponent(p.product)}`, { cache: "no-store" });
+  const d = (r.headers.get("content-type") || "").includes("json") ? await r.json() : null;
+  if (!r.ok || !d) throw new Error(d?.error || (r.status === 404 ? "live-hämtning finns bara på webben" : `svar ${r.status}`));
+  if (d.drawNumber !== p.drawNumber) throw new Error(`Svenska Spel visar omgång ${d.drawNumber}, sidan ${p.drawNumber} – hämta ny kupong`);
+  for (const e of p.events) {
+    const f = d.events.find((x) => x.eventNumber === e.eventNumber)?.folk;
+    if (!f || f.some((x) => x == null)) continue;
+    const s = f.reduce((a, b) => a + b, 0) || 100; // samma normering som folkProbs i fetch-stryktipset.mjs
+    e.folk = f.map((x) => x / s);
+    e.streckvarde = SIGNS.map((_, i) => Math.round((e.final[i] / Math.max(e.folk[i], 0.01)) * 100) / 100);
+  }
+  // Verklig omsättning: minst den typiska (växer till spelstopp), som i fetch-stryktipset.mjs
+  const rules = p.reduced?.rules;
+  if (rules && d.turnover) rules.realTurnover = Math.max(d.turnover, rules.turnover || 0);
+  p.live = { at: d.fetchedAt, turnover: d.turnover };
+}
+
+function generateInto(p, st) {
+  try {
+    st.result = generateCoupons(p, st.krav);
+  } catch (e) {
+    st.result = null;
+    data.error = `kupongen kunde inte genereras: ${e.message}`;
+  }
+}
+
+// Hämtar live-streck (öppen kupong) och genererar sedan. Misslyckas hämtningen används strecken från senaste hämtningen.
+async function liveGenerate(p, st) {
+  if (p.open) {
+    try {
+      await refreshLive(p);
+      st.liveError = null;
+    } catch (e) {
+      st.liveError = e.message;
+    }
+  }
+  generateInto(p, st);
+}
+
+function streckNote(p, st) {
+  const t = (iso) => new Date(iso).toLocaleTimeString("sv-SE", { hour: "2-digit", minute: "2-digit", second: "2-digit" });
+  if (!p.open) return "";
+  if (p.live) {
+    return `<p class="st-note">Streck hämtade live kl. <b>${t(p.live.at)}</b>${p.live.turnover ? ` (omsättning ${Math.round(p.live.turnover).toLocaleString("sv-SE")} kr)` : ""}. Öppna Gambling Cabin-länken direkt så räknar den med samma streck. Nära spelstopp rör sig strecken snabbt – tryck Generera igen precis innan du spelar.${st.liveError ? ` Senaste försöket misslyckades: ${esc(st.liveError)}.` : ""}</p>`;
+  }
+  return `<p class="st-note${st.liveError ? " bad" : ""}">Streck från hämtningen${data?.updatedAt ? ` ${esc(new Date(data.updatedAt).toLocaleString("sv-SE", { dateStyle: "short", timeStyle: "short" }))}` : ""}${st.liveError ? ` – live-streck kunde inte hämtas (${esc(st.liveError)})` : ""}. Gambling Cabin räknar med strecken just nu, så radantalet där kan skilja.</p>`;
+}
+
+function renderB(p, head, info = "") {
   const st = bState(p);
-  const n = Object.keys(st.spikes).length;
+  if (!st.result && !st.tried) {
+    st.tried = true;
+    generateInto(p, st);
+    // Byt direkt till live-streck i bakgrunden
+    if (p.open && !p.live) {
+      st.busy = true;
+      liveGenerate(p, st).finally(() => {
+        st.busy = false;
+        render();
+      });
+    }
+  }
+  const n = Object.keys(st.krav).length;
   const res = st.result;
+  // Turmatcher utgår från kupong A: den genererade om den finns, annars hämtningens kupong A
+  const picksA = p.events.map((e, i) => res?.A?.picks[i] || e.systemPick || null);
   const picker = `<section class="sb-panel">
     <div class="sb-panel-head">
       <div>
-        <h3>1. Välj dina spikar</h3>
-        <p class="st-sub">Klicka 1, X eller 2 för att spika (klicka igen för att ta bort). Välj sedan om spiken gäller båda kupongerna eller bara A eller B. Procenten är vår sannolikhet.</p>
+        <h3>1. Välj dina krav</h3>
+        <p class="st-sub">Klicka på ett eller flera tecken per match: 1, X eller 2 är en spik, två tecken (1X, X2, 12) en halvgardering och alla tre en helgardering. Klicka igen för att ta bort ett tecken. Välj sedan om kravet gäller båda kupongerna eller bara A eller B. Procenten är vår sannolikhet.</p>
       </div>
       <div class="st-actions">
-        <button type="button" class="btn-ghost" id="sb-clear"${n ? "" : " disabled"}>Rensa spikar</button>
-        <button type="button" class="btn-fetch sb-generate" id="sb-generate"${st.busy ? " disabled" : ""}><span class="btn-label">${st.busy ? "Genererar…" : `2. Generera kupong${n ? ` (${n} ${n === 1 ? "spik" : "spikar"})` : ""}`}</span></button>
+        <button type="button" class="btn-ghost" id="sb-clear"${n ? "" : " disabled"}>Rensa krav</button>
+        <button type="button" class="btn-fetch sb-generate" id="sb-generate"${st.busy ? " disabled" : ""}><span class="btn-label">${st.busy ? "Hämtar streck och genererar…" : `2. Generera kupong${n ? ` (${n} krav)` : ""}`}</span></button>
       </div>
     </div>
-    <div class="sb-list">${p.events.map((e) => spikeRow(e, st.spikes[e.eventNumber])).join("")}</div>
+    <div class="sb-list">${p.events.map((e, i) => kravRow(e, st.krav[e.eventNumber], picksA[i])).join("")}</div>
   </section>`;
   const result = res
     ? `<section class="sb-panel sb-result">
         <h3>Din kupong</h3>
-        ${st.dirty ? `<p class="st-note">Du har ändrat spikarna – tryck Generera kupong igen för att uppdatera.</p>` : ""}
-        <p class="st-sub">${res.mode === "split"
-          ? "Samma spikar i båda: ett system på 700–800 rader delas i A (högst utdelning) och B (resten), som på Stryktipset A."
-          : "Olika spikar i A och B: kupongerna byggs var för sig och B väljs så att den täcker rader som A saknar."} Resten av kupongen väljs så att chansen till 13 rätt blir så hög som möjligt inom 350–400 kr.</p>
+        ${st.dirty ? `<p class="st-note">Du har ändrat kraven – tryck Generera kupong igen för att uppdatera.</p>` : ""}
+        <p class="st-sub">A och B är två olika system, vardera 350–400 kr. A: högst chans till 13 rätt, teckenregler 4-2-2, utdelning minst ${(UTD_MIN[p.product] || 30000).toLocaleString("sv-SE")} kr. B: teckenregler 3-3-3, minst 30 000 kr utan tak, högst 2 spikar och ingen halvgardering exakt som i A, aldrig samma tecken som ett krav du låst bara i A, vald för att täcka rader som A saknar.${res.A && res.B ? ` Gemensamma rader: <b>${res.overlap}</b>. A+B tillsammans: chans till 13 rätt <b>${oneIn(res.unionHit)}</b>.` : ""}</p>
+        ${streckNote(p, st)}
         ${couponTable(p, res)}
         <div class="sb-coupons">${couponCard(res.A, "A", p)}${couponCard(res.B, "B", p)}</div>
       </section>`
     : "";
-  // Matchkorten visar den genererade kupongen (eller bara tipset innan något genererats)
-  const pv = { ...p, reducedB: { split: res?.mode === "split" } };
-  const events = p.events.map((e, i) => ({ ...e, systemPick: res?.A?.picks[i] || null, systemPickB: res?.B?.picks[i] || null }));
-  view.innerHTML = `${head}${data.error ? `<p class="st-note bad">Kunde inte uppdatera: ${esc(data.error)}</p>` : ""}${picker}${result}<div class="st-list">${events.map((e) => matchCard(pv, e)).join("")}</div>`;
+  // Matchkorten visar den genererade kupongen (eller hämtningens kupong A innan något genererats)
+  const events = p.events.map((e, i) => ({ ...e, systemPick: picksA[i], systemPickB: res?.B?.picks[i] || null }));
+  const pv = { ...p, reducedB: { split: false } }; // B är alltid ett eget system här, visa B-chippen
+  view.innerHTML = `${head}${data.error ? `<p class="st-note bad">Kunde inte uppdatera: ${esc(data.error)}</p>` : ""}${picker}${result}${missPanel(p, events, { bCoupon: res?.B || null, actions: true, kravFor: (nr) => st.krav[nr] })}<div class="st-list">${events.map((e) => matchCard(pv, e)).join("")}</div>${info}`;
 }
 
 function handleB(ev) {
@@ -511,40 +694,48 @@ function handleB(ev) {
   const scopeBtn = ev.target.closest(".sb-scope button");
   if (row && signBtn) {
     const nr = row.dataset.ev, s = signBtn.dataset.sign;
-    if (st.spikes[nr]?.sign === s) delete st.spikes[nr];
-    else st.spikes[nr] = { sign: s, scope: st.spikes[nr]?.scope || "both" };
-    saveSpikes(p, st);
+    const cur = st.krav[nr]?.signs || "";
+    const next = SIGNS.filter((x) => (x === s ? !cur.includes(x) : cur.includes(x))).join("");
+    if (next) st.krav[nr] = { signs: next, scope: st.krav[nr]?.scope || "both" };
+    else delete st.krav[nr];
+    saveKrav(p, st);
     render();
     return true;
   }
-  if (row && scopeBtn && st.spikes[row.dataset.ev]) {
-    st.spikes[row.dataset.ev].scope = scopeBtn.dataset.scope;
-    saveSpikes(p, st);
+  if (row && scopeBtn && st.krav[row.dataset.ev]) {
+    st.krav[row.dataset.ev].scope = scopeBtn.dataset.scope;
+    saveKrav(p, st);
+    render();
+    return true;
+  }
+  // Turmatcher: lägg tecknet som oftast kom i stället som krav i kupong B
+  const turBtn = ev.target.closest(".sb-tur-add");
+  if (turBtn || ev.target.closest(".sb-tur-all")) {
+    const btns = turBtn ? [turBtn] : [...view.querySelectorAll(".sb-tur-add")];
+    for (const b of btns) {
+      if (["both", "A"].includes(st.krav[b.dataset.ev]?.scope)) continue; // kupong A:s krav ligger kvar
+      st.krav[b.dataset.ev] = { signs: b.dataset.signs, scope: "B" };
+    }
+    saveKrav(p, st);
     render();
     return true;
   }
   if (ev.target.closest("#sb-clear")) {
-    st.spikes = {};
-    saveSpikes(p, st);
+    st.krav = {};
+    saveKrav(p, st);
     render();
     return true;
   }
   if (ev.target.closest("#sb-generate")) {
     st.busy = true;
     render();
-    // Låt knappen hinna visa "Genererar…" innan räkningen (vanligtvis under en sekund)
-    setTimeout(() => {
-      try {
-        st.result = generateCoupons(p, st.spikes);
-      } catch (e) {
-        st.result = null;
-        data.error = `kupongen kunde inte genereras: ${e.message}`;
-      }
+    // Hämtar live-streck och genererar sedan (räkningen tar vanligtvis under en sekund)
+    liveGenerate(p, st).then(() => {
       st.busy = false;
       st.dirty = false;
       render();
       view.querySelector(".sb-result")?.scrollIntoView({ block: "start", behavior: "smooth" });
-    }, 30);
+    });
     return true;
   }
   return false;
@@ -555,7 +746,16 @@ view.addEventListener("click", (ev) => {
     load(true);
     return;
   }
-  if (modeB && handleB(ev)) return;
+  const tb = ev.target.closest(".tur-btn");
+  if (tb) {
+    const key = `${product}|${tb.dataset.ev}`;
+    if (turOpen.has(key)) turOpen.delete(key);
+    else turOpen.add(key);
+    render();
+    if (tb.dataset.scroll && turOpen.has(key)) view.querySelector(`.sb-row[data-ev="${tb.dataset.ev}"]`)?.scrollIntoView({ block: "center", behavior: "smooth" });
+    return;
+  }
+  if (handleB(ev)) return;
   const btn = ev.target.closest(".st-analyze");
   if (btn) {
     const key = btn.closest(".st-match").dataset.key;
@@ -574,5 +774,5 @@ try {
   /* privat lage */
 }
 // Adressen går först, annars senast valda flik (äldre sparat värde "stryktips" = Stryktipset)
-if (saved === "stryktips") saved = "stryktipset";
-setView(route.view || (["stryktipset", "stryktipset-b"].includes(saved) ? saved : "tips"));
+if (saved === "stryktips" || saved === "stryktipset-b") saved = "stryktipset";
+setView(route.view || (saved === "stryktipset" ? saved : "tips"));

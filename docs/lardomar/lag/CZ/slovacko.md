@@ -1,6 +1,6 @@
 # Slovácko (Chance Liga) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [CZ](../../ligor/CZ.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [CZ](../../ligor/CZ.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -35,7 +35,7 @@ Form senaste 8 (äldst → senast): OFFFOOFO · senaste match 2026-09-19
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Jan Jelínek. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -58,11 +58,11 @@ Tränare: Jan Jelínek. Betyg, mål och assist gäller innevarande säsong enlig
 | 23 | David Stepánek | CB | 29 | Czechia | 96 k€ | 5,33 | 0 | 0 | 0/0 |  |
 | 28 | Leoš Prior | LWB,LB,CB | 21 | Czechia | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 2 | Gigli Ndefe | RM,RWB,LB,CB,LW,LWB | 32 | Angola | 191 k€ | 6,93 | 2 | 0 | 2/0 |  |
-| 6 | Martin Šviderský | CDM,CM,LWB,LM | 23 | Slovakia | 298 k€ | 6,70 | 0 | 0 | 2/0 |  |
+| 2 | Gigli Ndefe | RM,RWB,CB,LB,LW,LWB | 32 | Angola | 191 k€ | 6,93 | 2 | 0 | 2/0 |  |
+| 6 | Martin Šviderský | CM,CDM,LWB,LM | 23 | Slovakia | 298 k€ | 6,70 | 0 | 0 | 2/0 |  |
 | 8 | Daniel Tetour | CM,CDM | 32 | Czechia | 100 k€ | – | 0 | 0 | 0/0 | skadad, åter Unknown |
-| 10 | Michal Trávník | CDM,CM,CAM | 32 | Czechia | 204 k€ | 7,18 | 0 | 1 | 2/0 |  |
-| 15 | Patrik Blahút | LM,LWB,LW,RB | 28 | Slovakia | 224 k€ | 6,40 | 1 | 0 | 0/0 |  |
+| 10 | Michal Trávník | CM,CDM,CAM | 32 | Czechia | 204 k€ | 7,18 | 0 | 1 | 2/0 |  |
+| 15 | Patrik Blahút | LM,LWB,RB,LW | 28 | Slovakia | 224 k€ | 6,40 | 1 | 0 | 0/0 |  |
 | 16 | Gibril Sosseh | CM,CDM | 19 | The Gambia | 745 k€ | 7,05 | 0 | 0 | 0/0 |  |
 | 17 | Filip Hruska | CAM | 18 | Czechia | – | – | 0 | 0 | 0/0 |  |
 | 20 | Marek Havlík | CAM,RW,ST,CM | 31 | Czechia | 204 k€ | 6,77 | 0 | 2 | 0/0 |  |
@@ -72,7 +72,7 @@ Tränare: Jan Jelínek. Betyg, mål och assist gäller innevarande säsong enlig
 | 77 | Pavel Juroška | CAM,ST,LW | 25 | Czechia | 192 k€ | 6,48 | 1 | 0 | 0/1 |  |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Ioannis Niarchos | ST | 24 | Greece | 307 k€ | 6,20 | 0 | 0 | 0/0 |  |
-| 9 | Alan Marinelli | RW,ST | 27 | Argentina | 117 k€ | 6,23 | 0 | 0 | 0/0 |  |
+| 9 | Alan Marinelli | ST,RW | 27 | Argentina | 117 k€ | 6,23 | 0 | 0 | 0/0 |  |
 | 11 | Filip Horský | ST | 23 | Czechia | 303 k€ | 6,25 | 0 | 0 | 0/0 |  |
 | 13 | Ousman Ceesay | Attacker | 21 | The Gambia | 216 k€ | 4,89 | 0 | 0 | 0/1 |  |
 | 18 | Jan Fiala | RW | 25 | Czechia | 292 k€ | 6,14 | 0 | 0 | 0/0 |  |

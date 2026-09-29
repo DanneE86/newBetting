@@ -541,7 +541,7 @@ function injuryTxt(i) {
 function squadLines(code, team) {
   const sq = squadDoc(code)?.teams?.[team];
   if (!sq) return [];
-  const lines = [`## Trupp (FotMob, hämtad ${sq.fetchedAt?.slice(0, 10) ?? '–'})`, '', `Tränare: ${sq.coach ?? '–'}${sq.coachHistory?.length > 1 ? ` (tidigare: ${sq.coachHistory.slice(0, -1).map((c) => `${c.name} till ${c.firstSeen}`).join(', ')})` : ''}. Betyg, mål och assist gäller innevarande säsong enligt FotMob.`, ''];
+  const lines = [`## Trupp (${sq.source ?? 'FotMob'}, hämtad ${sq.fetchedAt?.slice(0, 10) ?? '–'})`, '', `Tränare: ${sq.coach ?? '–'}${sq.coachHistory?.length > 1 ? ` (tidigare: ${sq.coachHistory.slice(0, -1).map((c) => `${c.name} till ${c.firstSeen}`).join(', ')})` : ''}. Betyg, mål och assist gäller innevarande säsong enligt FotMob.`, ''];
   const injured = sq.players.filter((p) => p.injury);
   if (injured.length) lines.push(`**Skadade/borta nu:** ${injured.map((p) => `${p.name} (${injuryTxt(p.injury)})`).join(', ')}`, '');
   lines.push('| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |', '|---|---|---|---|---|---|---|---|---|---|---|');

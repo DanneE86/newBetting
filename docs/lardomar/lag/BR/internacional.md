@@ -1,6 +1,6 @@
 # Internacional (Brasileirão Série A) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [BR](../../ligor/BR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [BR](../../ligor/BR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -62,22 +62,19 @@ Form (äldst → senast): OOOOFFVF · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Eduardo Baptista. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Sergio Rochet (skadad, åter Early October 2026), Calebe (skadad, åter Early October 2026), Benjamin Arhin (skadad, åter Mid October 2026), Kayky (skadad, åter Mid October 2026)
+**Skadade/borta nu:** Sergio Rochet (skadad, åter Early October 2026), Calebe (skadad, åter Early October 2026), Kayky (skadad, åter Mid October 2026)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-|  | Henrique Menke | Keeper | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 1 | Sergio Rochet | GK | 33 | Uruguay | 932 k€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
 | 12 | Anthoni | GK | 24 | Brazil | 2,8 M€ | – | 0 | 0 | 0/0 |  |
 | 22 | Kauan Jesus | Keeper | 23 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 23 | Matheus Cunha | GK | 25 | Brazil | 1,9 M€ | – | 0 | 0 | 0/0 |  |
-| 24 | Filipe	Sirio | Keeper | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 32 | Diego Esser | Keeper | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 3 | Guillermo Maripán | CB | 32 | Chile | 1,4 M€ | – | 0 | 0 | 0/0 |  |
 | 4 | Félix Torres | CB | 29 | Ecuador | 1,4 M€ | – | 0 | 0 | 0/0 |  |
@@ -85,34 +82,23 @@ Tränare: Eduardo Baptista. Betyg, mål och assist gäller innevarande säsong e
 | 15 | Bruno Gomes | RB,CB,CM,CDM | 25 | Brazil | 3,4 M€ | – | 0 | 0 | 0/0 |  |
 | 18 | Juninho | CB,LB | 31 | Brazil | 578 k€ | – | 0 | 0 | 0/0 |  |
 | 25 | Gabriel Mercado | CB | 39 | Argentina | 406 k€ | – | 0 | 0 | 0/0 |  |
-| 30 | Alisson | LB | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 35 | Braian Aguirre | RB,RWB | 26 | Argentina | 1,9 M€ | – | 0 | 0 | 0/0 |  |
-| 41 | Victor Gabriel | CB,LB | 22 | Brazil | 4,9 M€ | – | 0 | 0 | 0/0 |  |
-| 43 | Denis Marfo | Defender | 20 | Ghana | – | – | 0 | 0 | 0/0 |  |
-| 46 | Pedro Kauã | Defender | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 53 | Luiz Felipe | LB | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 41 | Victor Gabriel | CB | 22 | Brazil | 4,9 M€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 5 | Rodrigo Villagra | CM,CDM | 25 | Argentina | 2,0 M€ | – | 0 | 0 | 0/0 |  |
 | 8 | Bruno Henrique | CDM,CM | 36 | Brazil | 341 k€ | – | 0 | 0 | 0/0 |  |
 | 10 | Alan Patrick | CAM,ST,CM | 35 | Brazil | 1,5 M€ | – | 0 | 0 | 0/0 |  |
 | 16 | Ronaldo | CDM,CM | 29 | Brazil | 1,1 M€ | – | 0 | 0 | 0/0 |  |
-| 17 | Niclas Eliasson | RM,RW | 30 | Sweden | 1,8 M€ | – | 0 | 0 | 0/0 |  |
 | 26 | Alexandro Bernabéi | LB,LM,LWB,CAM,LW | 26 | Argentina | 5,2 M€ | – | 0 | 0 | 0/0 |  |
 | 27 | Paulinho Paula | CDM,CM | 29 | Brazil | 896 k€ | – | 0 | 0 | 0/0 |  |
 | 28 | Vitinho | RM,RW,RWB,ST | 27 | Brazil | 3,6 M€ | – | 0 | 0 | 0/0 |  |
 | 29 | Thiago Maia | CDM,CM,CAM | 29 | Brazil | 1,4 M€ | – | 0 | 0 | 0/0 |  |
 | 30 | Calebe | RM,RW | 26 | Brazil | 1,4 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
-| 31 | Allex | CAM,LW,RWB | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 33 | Benjamin Arhin | CDM | 20 | Ghana | – | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
-| 51 | João Kempes | Midfielder | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 52 | Gabriel Vinicius | Midfielder | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Johan Carbonero | ST,LW,CAM,RW,RM | 27 | Colombia | 2,5 M€ | – | 0 | 0 | 0/0 |  |
 | 9 | Alerrandro | ST | 26 | Brazil | 2,2 M€ | – | 0 | 0 | 0/0 |  |
-| 11 | Kayky | CAM | 23 | Brazil | 4,8 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 11 | Kayky | RW | 23 | Brazil | 4,8 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 17 | Niclas Eliasson | RW,RM | 30 | Sweden | 1,8 M€ | – | 0 | 0 | 0/0 |  |
 | 19 | Antonio Sanabria | ST | 30 | Paraguay | 2,2 M€ | – | 0 | 0 | 0/0 |  |
-| 37 | Yago Noal | CAM | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 44 | João Victor | RW | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 48 | Raykkonen | RW | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 49 | João Bezerra | ST | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 54 | Fabricio Prado | Attacker | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (16): Yago Noal (senast 2026-09-29), Pedro Kauã (senast 2026-09-29), Raykkonen (senast 2026-09-29), Henrique Menke (senast 2026-09-28), Allex (senast 2026-09-29), Alisson (senast 2026-09-29), Benjamin Arhin (senast 2026-09-29), Diego Esser (senast 2026-09-29), João Victor (senast 2026-09-29), João Bezerra (senast 2026-09-29), Denis Marfo (senast 2026-09-29), João Kempes (senast 2026-09-29), Luiz Felipe (senast 2026-09-29), Gabriel Vinicius (senast 2026-09-29), Fabricio Prado (senast 2026-09-29), Filipe	Sirio (senast 2026-09-29).

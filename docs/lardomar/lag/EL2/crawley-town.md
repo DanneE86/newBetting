@@ -1,6 +1,6 @@
 # Crawley Town (League Two) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -65,7 +65,7 @@ Form (äldst → senast): OFVFOFFF · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Colin Kazim-Richards. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -81,13 +81,13 @@ Tränare: Colin Kazim-Richards. Betyg, mål och assist gäller innevarande säso
 | 6 | Priestley Farquharson | CB | 29 | England | 158 k€ | 6,84 | 0 | 0 | 4/0 |  |
 | 12 | Lewis Richards | LB,LWB | 24 | England | 168 k€ | 6,10 | 0 | 0 | 0/0 |  |
 | 16 | Jonny Russell | LWB,LB | 22 | Northern Ireland | 234 k€ | 6,69 | 0 | 0 | 1/0 |  |
-| 22 | Ade Adeyemo | LB,RB,LM,RM,LWB | 28 | Denmark | 169 k€ | 6,55 | 0 | 0 | 1/0 |  |
+| 22 | Ade Adeyemo | LB,RB,RM,LWB,LM | 28 | Denmark | 169 k€ | 6,55 | 0 | 0 | 1/0 |  |
 | 24 | Akinwale Joseph Odimayo | CB,RB | 26 | England | – | 6,64 | 0 | 0 | 0/0 |  |
 | 33 | Omari Mrisho | RB | 21 | England | – | – | 0 | 0 | 0/0 |  |
 | 35 | Ty Ewens-Findlay | CB | 19 | England | – | 6,24 | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 2 | Kellan Gordon | RWB,RB | 28 | England | 99 k€ | 6,26 | 0 | 1 | 0/1 |  |
-| 8 | Louie Watson | CAM,CM,ST | 25 | England | 226 k€ | 6,70 | 1 | 0 | 2/0 |  |
+| 8 | Louie Watson | CAM,ST,CM | 25 | England | 226 k€ | 6,70 | 1 | 0 | 2/0 |  |
 | 19 | Dion Pereira | RM,CAM,RWB | 27 | Antigua and Barbuda | 142 k€ | 6,75 | 1 | 0 | 0/0 |  |
 | 20 | Jude Arthurs | CDM,CAM,CM | 25 | England | 266 k€ | 6,88 | 0 | 0 | 4/0 |  |
 | 20 | Justin Ferizaj | CDM | 21 | Ireland | 309 k€ | – | 0 | 0 | 0/0 |  |

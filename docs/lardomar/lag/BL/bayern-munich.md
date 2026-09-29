@@ -1,6 +1,6 @@
 # Bayern Munich (Bundesliga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [BL](../../ligor/BL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [BL](../../ligor/BL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -80,7 +80,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-04-19 | Europa 2567 | Bayern München - Stuttgart | 1 ✓ | 78 % | 65 % |
 | 2026-01-14 | Europa 2540 | Köln - Bayern München | 2 ✓ | 89 % | 76 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Vincent Kompany. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -107,10 +107,10 @@ Tränare: Vincent Kompany. Betyg, mål och assist gäller innevarande säsong en
 | 30 | Cassiano Kiala | CB | 17 | Germany | 1,6 M€ | – | 0 | 0 | 0/0 |  |
 | 44 | Josip Stanišić | RB,LB,RWB | 26 | Croatia | 29,0 M€ | 7,05 | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 6 | Joshua Kimmich | CDM,RB,CM | 31 | Germany | 31,3 M€ | 7,92 | 0 | 2 | 0/0 |  |
+| 6 | Joshua Kimmich | CDM,RB | 31 | Germany | 31,3 M€ | 7,92 | 0 | 2 | 0/0 |  |
 | 7 | Serge Gnabry | CAM,LW | 31 | Germany | 11,8 M€ | 6,07 | 0 | 0 | 0/0 |  |
 | 10 | Jamal Musiala | CAM,LW | 23 | Germany | 102,5 M€ | 6,92 | 1 | 1 | 0/0 | skadad, åter A few weeks |
-| 34 | Ismael Saibari | CAM,ST,CM,LW | 25 | Morocco | 49,6 M€ | 7,37 | 1 | 2 | 0/0 |  |
+| 34 | Ismael Saibari | CAM,ST,LW,CM | 25 | Morocco | 49,6 M€ | 7,37 | 1 | 2 | 0/0 |  |
 | 38 | Erblin Osmani | Midfielder | 17 | Kosovo | 2,0 M€ | – | 0 | 0 | 0/0 |  |
 | 39 | Bara Ndiaye | CDM | 18 | Senegal | 1,8 M€ | – | 0 | 0 | 0/0 |  |
 | 45 | Aleksandar Pavlović | CDM,CM | 22 | Germany | 46,0 M€ | 8,17 | 1 | 1 | 1/0 |  |
@@ -118,6 +118,6 @@ Tränare: Vincent Kompany. Betyg, mål och assist gäller innevarande säsong en
 | | **Anfallare** | | | | | | | | | |
 | 9 | Harry Kane | ST,CAM | 33 | England | 77,8 M€ | 7,78 | 3 | 0 | 0/0 |  |
 | 14 | Luis Díaz | LW | 29 | Colombia | 65,0 M€ | 7,27 | 1 | 0 | 0/0 |  |
-| 17 | Michael Olise | RW,CAM | 24 | France | 139,5 M€ | 8,48 | 4 | 1 | 0/0 |  |
+| 17 | Michael Olise | RW,CAM,RM | 24 | France | 139,5 M€ | 8,48 | 4 | 1 | 0/0 |  |
 | 42 | Lennart Karl | RW,CAM | 18 | Germany | 41,9 M€ | 7,20 | 1 | 0 | 0/0 |  |
 | 48 | Bastian Assomo | ST | 16 | Germany | – | – | 0 | 0 | 0/0 |  |

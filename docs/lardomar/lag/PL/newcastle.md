@@ -1,6 +1,6 @@
 # Newcastle (Premier League) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -38,7 +38,7 @@ Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 l
 | Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
 |---|---|---|---|---|
 | Yoane Wissa | 10 % | 4 / 77 | 2,25 / 1,48 | +0,95 / −0,14 |
-| Harvey Barnes | 9 % | 5 / 76 | 1,20 / 1,54 | −0,78 / −0,04 |
+| Harvey Barnes | 10 % | 5 / 76 | 1,20 / 1,54 | −0,78 / −0,04 |
 | Nick Woltemade | 8 % | 1 / 80 | 3,00 / 1,50 | +1,00 / −0,10 |
 | Anthony Gordon | 7 % | 9 / 72 | 1,89 / 1,47 | +0,31 / −0,13 |
 | Bruno Guimarães | 7 % | 7 / 74 | 0,86 / 1,58 | −0,57 / −0,04 |
@@ -109,7 +109,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-09-28 | Europa 2509 | Newcastle - Arsenal | 2 | 21 % | 26 % |
 | 2025-09-21 | Europa 2507 | Bournemouth - Newcastle | X | 25 % | 33 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Matthias Jaissle. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -146,4 +146,5 @@ Tränare: Matthias Jaissle. Betyg, mål och assist gäller innevarande säsong e
 | 19 | Anthony Elanga | RW,CAM | 24 | Sweden | 36,3 M€ | 7,51 | 2 | 0 | 1/0 | skadad, åter Mid October 2026 |
 | 20 | Matias Fernandez-Pardo | ST,LW | 21 | Belgium | 23,5 M€ | 6,40 | 0 | 0 | 0/0 |  |
 | 23 | Jacob Murphy | RW,RM | 31 | England | 10,2 M€ | 6,59 | 0 | 0 | 3/0 |  |
-| 44 | Alfie Harrison | RW,CAM | 20 | England | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Alfie Harrison (senast 2026-09-29).

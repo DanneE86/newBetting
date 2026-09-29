@@ -1,6 +1,6 @@
 # RB Leipzig (Bundesliga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [BL](../../ligor/BL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [BL](../../ligor/BL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -56,10 +56,10 @@ Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: s
 | Augsburg | 16 | 10-6-0 | 37–12 | +0,11 | +18 pe | 2026-03-07 2-1 (h) |
 | Bayern Munich | 16 | 1-7-8 | 19–38 | −0,18 | +24 pe | 2026-01-17 1-5 (h) |
 | Freiburg | 16 | 9-4-3 | 29–17 | +0,00 | +2 pe | 2026-05-16 1-4 (b) |
-| Hoffenheim | 16 | 10-3-3 | 32–16 | +0,15 | −3 pe | 2026-03-20 5-0 (h) |
 | Mainz | 16 | 7-3-6 | 35–20 | −0,51 | −3 pe | 2026-01-31 1-2 (h) |
 | Dortmund | 15 | 6-3-6 | 29–24 | −0,01 | −5 pe | 2026-02-21 2-2 (h) |
 | Ein Frankfurt | 15 | 5-6-4 | 20–20 | −0,41 | +17 pe | 2026-04-18 3-1 (b) |
+| Hoffenheim | 15 | 9-3-3 | 30–15 | +0,04 | −1 pe | 2026-03-20 5-0 (h) |
 | Werder Bremen | 15 | 10-3-2 | 31–15 | +0,25 | −1 pe | 2026-09-05 1-3 (b) |
 | Union Berlin | 14 | 6-2-6 | 22–15 | −0,47 | −10 pe | 2026-04-24 3-1 (h) |
 | Stuttgart | 13 | 8-1-4 | 28–16 | +0,11 | −15 pe | 2026-03-15 0-1 (b) |
@@ -83,7 +83,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-01-14 | Europa 2540 | RB Leipzig - Freiburg | 1 ✓ | 61 % | 55 % |
 | 2025-11-23 | Europa 2525 | RB Leipzig - Werder Bremen | 1 ✓ | 69 % | 61 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Martín Demichelis. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -110,7 +110,7 @@ Tränare: Martín Demichelis. Betyg, mål och assist gäller innevarande säsong
 | 8 | Assan Ouédraogo | CM | 20 | Germany | 14,5 M€ | 6,74 | 0 | 0 | 0/0 | skadad, åter Late December 2026 |
 | 13 | Nicolas Seiwald | CM,CDM,CB | 25 | Austria | 16,7 M€ | 6,87 | 0 | 0 | 0/0 |  |
 | 14 | Christoph Baumgartner | CM,CAM | 27 | Austria | 14,8 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
-| 20 | Rocco Reitz | CDM,CM,RM,CAM,RW | 24 | Germany | 16,9 M€ | 8,29 | 1 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 20 | Rocco Reitz | CDM,CM,CAM,RM | 24 | Germany | 16,9 M€ | 8,29 | 1 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 21 | Neil El Aynaoui | CDM,CM | 25 | Morocco | 16,3 M€ | 7,01 | 0 | 0 | 1/0 |  |
 | 30 | Andrija Maksimović | CM | 19 | Serbia | 13,2 M€ | 6,22 | 0 | 1 | 0/0 |  |
 | 37 | Benno Kaltefleiter | CM | 18 | Germany | – | – | 0 | 0 | 0/0 |  |

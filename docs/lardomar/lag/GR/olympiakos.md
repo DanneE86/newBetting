@@ -1,6 +1,6 @@
 # Olympiakos (Super League (Grekland)) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [GR](../../ligor/GR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [GR](../../ligor/GR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -51,7 +51,7 @@ Form (äldst → senast): OVOVVOFV · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Imanol Alguacil. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -64,7 +64,7 @@ Tränare: Imanol Alguacil. Betyg, mål och assist gäller innevarande säsong en
 | 31 | Balša Popović | GK | 26 | Montenegro | 799 k€ | – | 0 | 0 | 0/0 |  |
 | 91 | Dimitrios Stournaras | Keeper | 25 | Greece | 223 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 4 | Zinedin Smajlović | CB | 22 | Bosnia and Herzegovina | 1,8 M€ | 6,87 | 0 | 0 | 0/0 |  |
+| 4 | Zinedin Smajlović | CB,RB | 22 | Bosnia and Herzegovina | 1,8 M€ | 6,87 | 0 | 0 | 0/0 |  |
 | 5 | Lorenzo Pirola | CB | 24 | Italy | 5,2 M€ | 6,96 | 0 | 0 | 1/0 |  |
 | 6 | David Carmo | CB | 27 | Angola | 6,5 M€ | 7,24 | 1 | 0 | 1/0 |  |
 | 45 | Panagiotis Retsos | CB | 28 | Greece | 2,9 M€ | 7,33 | 0 | 0 | 2/0 |  |
@@ -72,7 +72,7 @@ Tränare: Imanol Alguacil. Betyg, mål och assist gäller innevarande säsong en
 | 71 | Nair Tiknizyan | LB,LM,LWB | 27 | Armenia | 1,8 M€ | 7,26 | 0 | 0 | 1/0 |  |
 | 72 | Athanasios Koutsogoulas | RB | 22 | Greece | 303 k€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 2 | Manolis Saliakas | RWB,RB | 30 | Greece | 1,2 M€ | 7,58 | 1 | 1 | 0/0 |  |
+| 2 | Manolis Saliakas | RWB,RB,RM | 30 | Greece | 1,2 M€ | 7,58 | 1 | 1 | 0/0 |  |
 | 8 | Gustavo Sá | CAM,CM | 21 | Portugal | 15,0 M€ | 6,64 | 0 | 0 | 0/0 |  |
 | 15 | Gustavo Puerta | CDM,CM | 23 | Colombia | 3,2 M€ | 7,41 | 0 | 0 | 0/0 |  |
 | 16 | Lorenzo Scipioni | CDM | 21 | Argentina | 2,2 M€ | 7,28 | 0 | 0 | 0/0 |  |

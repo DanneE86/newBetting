@@ -1,6 +1,6 @@
 # Atlas (Liga MX) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [MX](../../ligor/MX.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [MX](../../ligor/MX.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -48,9 +48,9 @@ Form (äldst → senast): VFVVFOFO · senaste match 2026-09-20
 | Pachuca | 18 | 5-2-11 | 17–26 | −0,13 | −17 pe | 2026-02-14 1-3 (b) |
 | Puebla | 17 | 8-3-6 | 23–18 | −0,00 | −12 pe | 2026-01-10 1-0 (h) |
 | Santos Laguna | 17 | 6-6-5 | 17–16 | +0,06 | +7 pe | 2026-07-26 1-0 (b) |
-| Toluca | 17 | 3-6-8 | 19–29 | −0,30 | +10 pe | 2026-09-13 2-5 (b) |
 | UNAM Pumas | 17 | 2-10-5 | 12–20 | −0,36 | +30 pe | 2026-09-20 1-1 (h) |
 | Club Tijuana | 16 | 4-4-8 | 15–27 | −0,29 | −2 pe | 2026-03-05 2-1 (h) |
+| Toluca | 16 | 2-6-8 | 17–29 | −0,43 | +12 pe | 2026-09-13 2-5 (b) |
 | Club America | 15 | 3-3-9 | 14–26 | −0,21 | −7 pe | 2026-04-26 1-0 (b) |
 | Necaxa | 15 | 7-3-5 | 22–18 | +0,20 | −9 pe | 2026-01-17 1-0 (b) |
 | Queretaro | 15 | 8-3-4 | 26–18 | +0,24 | −9 pe | 2026-08-30 1-3 (h) |
@@ -60,7 +60,7 @@ Form (äldst → senast): VFVVFOFO · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: svag signal (inte bekräftad).
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Hernán Crespo. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -72,7 +72,7 @@ Tränare: Hernán Crespo. Betyg, mål och assist gäller innevarande säsong enl
 | 12 | Camilo Vargas | GK | 37 | Colombia | 678 k€ | – | 0 | 0 | 0/0 |  |
 | 22 | Antonio Sánchez | GK | 26 | Mexico | 430 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 3 | Jorge Sánchez | RB,RWB,RM | 28 | Mexico | 1,4 M€ | – | 0 | 0 | 0/0 |  |
+| 3 | Jorge Sánchez | RB,RWB | 28 | Mexico | 1,4 M€ | – | 0 | 0 | 0/0 |  |
 | 4 | Adrián Mora | CB | 29 | Mexico | 367 k€ | – | 0 | 0 | 0/0 |  |
 | 5 | Jorge Rodríguez | LB,LWB,CB | 25 | Mexico | 691 k€ | – | 0 | 0 | 0/0 |  |
 | 13 | Gaddi Aguirre | CB,RB | 30 | Mexico | 545 k€ | – | 0 | 0 | 0/0 |  |

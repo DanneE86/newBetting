@@ -1,6 +1,6 @@
 # Notts County (League One) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -50,7 +50,7 @@ Form (äldst → senast): OOOVOOFF · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Martin Paterson. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -59,14 +59,12 @@ Tränare: Martin Paterson. Betyg, mål och assist gäller innevarande säsong en
 | | **Målvakter** | | | | | | | | | |
 | 1 | James Belshaw | GK | 35 | England | 143 k€ | 6,51 | 0 | 0 | 0/0 |  |
 | 21 | Harry Griffiths | GK | 21 | England | – | – | 0 | 0 | 0/0 |  |
-| 24 | Kelle Roos | GK | 34 | Netherlands | 162 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 2 | James Gibbons | CB,RB,LB | 28 | England | 271 k€ | 6,89 | 0 | 0 | 1/0 |  |
 | 3 | Rodney McDonald | CB | 34 | England | – | – | 0 | 0 | 0/0 |  |
 | 4 | Jacob Bedeau | CB | 26 | England | 258 k€ | 6,73 | 0 | 0 | 2/0 |  |
 | 5 | Matty Platt | CB | 28 | England | 171 k€ | – | 0 | 0 | 0/0 |  |
 | 12 | Lucas Ness | CB | 24 | England | 243 k€ | 7,16 | 0 | 0 | 1/0 |  |
-| 23 | Luke Browne | CB | 20 | Ireland | 394 k€ | – | 0 | 0 | 0/0 |  |
 | 26 | Ishé Samuels-Smith | CB,LB | 20 | England | 910 k€ | 6,44 | 0 | 0 | 0/0 |  |
 | 28 | Lewis Macari | CB | 24 | Scotland | 262 k€ | – | 0 | 0 | 0/0 |  |
 | 44 | Matthew Baker | CB | 23 | Wales | 396 k€ | 6,44 | 0 | 0 | 0/0 |  |
@@ -91,3 +89,5 @@ Tränare: Martin Paterson. Betyg, mål och assist gäller innevarande säsong en
 | 22 | Beck-Ray Enoru | LW,LM | 24 | England | 282 k€ | – | 0 | 0 | 0/0 |  |
 | 33 | Emile Acquah | ST | 26 | England | 330 k€ | 6,35 | 0 | 0 | 0/0 |  |
 | 39 | Lee Ndlovu | ST | 32 | Zimbabwe | 194 k€ | 6,30 | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (2): Kelle Roos (senast 2026-09-29), Luke Browne (senast 2026-09-29).

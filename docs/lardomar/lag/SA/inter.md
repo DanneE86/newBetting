@@ -1,6 +1,6 @@
 # Inter (Serie A) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -60,9 +60,9 @@ Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: s
 | Lazio | 16 | 9-3-4 | 32–16 | +0,11 | −7 pe | 2026-05-09 3-0 (b) |
 | Milan | 16 | 8-2-6 | 28–19 | −0,02 | −16 pe | 2026-03-08 0-1 (b) |
 | Bologna | 15 | 7-3-5 | 31–19 | −0,47 | −2 pe | 2026-05-23 3-3 (b) |
-| Cagliari | 15 | 12-2-1 | 33–9 | +0,23 | −5 pe | 2026-08-30 1-0 (b) |
 | Fiorentina | 15 | 8-5-2 | 29–18 | −0,00 | +9 pe | 2026-03-22 1-1 (b) |
 | Torino | 15 | 12-2-1 | 33–10 | +0,47 | −9 pe | 2026-04-26 2-2 (b) |
+| Cagliari | 14 | 11-2-1 | 31–9 | +0,19 | −4 pe | 2026-08-30 1-0 (b) |
 | Genoa | 14 | 11-3-0 | 35–5 | +0,31 | +1 pe | 2026-02-28 2-0 (h) |
 | Sassuolo | 13 | 8-2-3 | 28–17 | −0,17 | −4 pe | 2026-02-08 5-0 (b) |
 | Lecce | 10 | 9-1-0 | 24–2 | +0,43 | −7 pe | 2026-02-21 2-0 (b) |
@@ -96,7 +96,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-11-09 | Europa 2521 | Inter - Lazio | 1 ✓ | 82 % | 72 % |
 | 2025-10-29 | Europa 2518 | Inter - Fiorentina | 1 ✓ | 82 % | 70 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Cristian Chivu. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

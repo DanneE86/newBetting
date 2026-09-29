@@ -1,6 +1,6 @@
 # Inter Miami (MLS) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -65,7 +65,7 @@ Form (äldst → senast): FOFVOOOO · senaste match 2026-09-21
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Cristian González. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -75,14 +75,14 @@ Tränare: Cristian González. Betyg, mål och assist gäller innevarande säsong
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
 | 13 | Luis Barraza | GK | 29 | USA | 70 k€ | – | 0 | 0 | 0/0 |  |
-| 34 | Rocco Ríos Novo | GK | 24 | Argentina | 398 k€ | 6,56 | 0 | 0 | 0/0 |  |
+| 34 | Rocco Ríos Novo | GK | 24 | Argentina | 398 k€ | 6,55 | 0 | 0 | 0/0 |  |
 | 97 | Dayne St. Clair | GK | 29 | Canada | 1,6 M€ | 6,69 | 0 | 0 | 4/0 |  |
 | | **Backar** | | | | | | | | | |
 | 2 | Gonzalo Luján | CB | 25 | Argentina | 1,5 M€ | 6,63 | 1 | 0 | 4/0 |  |
 | 3 | Sergio Reguilón | LB | 29 | Spain | 2,0 M€ | 6,61 | 1 | 0 | 3/0 |  |
-| 4 | Facundo Mura | RB,LB,RM | 27 | Argentina | 1,4 M€ | 6,49 | 0 | 0 | 0/0 |  |
+| 4 | Facundo Mura | RB,RM,LB | 27 | Argentina | 1,4 M€ | 6,49 | 0 | 0 | 0/0 |  |
 | 15 | Fricio Caicedo | LB,CB | 18 | Ecuador | 685 k€ | 6,99 | 0 | 0 | 2/0 |  |
-| 16 | Micael | CB | 26 | Brazil | 2,5 M€ | 6,96 | 1 | 0 | 5/0 |  |
+| 16 | Micael | CB | 26 | Brazil | 2,5 M€ | 6,95 | 1 | 0 | 5/0 |  |
 | 17 | Ian Fray | RB,CB | 24 | Jamaica | 551 k€ | 6,78 | 1 | 2 | 6/0 |  |
 | 26 | Tyler Hall | CB,RB | 20 | USA | 674 k€ | – | 0 | 0 | 0/0 |  |
 | 37 | Maximiliano Falcón | CB | 29 | Uruguay | 992 k€ | 6,56 | 0 | 0 | 6/0 |  |
@@ -90,7 +90,7 @@ Tränare: Cristian González. Betyg, mål och assist gäller innevarande säsong
 | 70 | Daniel Sumalla | CB | 19 | USA | – | – | 0 | 0 | 0/0 |  |
 | 76 | Ezequiel Abadia-Reda | LB,LWB | 20 | USA | 249 k€ | 6,35 | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 5 | Casemiro | CDM,CM,CB | 34 | Brazil | 3,9 M€ | 7,08 | 3 | 0 | 4/0 |  |
+| 5 | Casemiro | CDM,CM,CB | 34 | Brazil | 3,9 M€ | 7,07 | 3 | 0 | 4/0 |  |
 | 7 | Rodrigo De Paul | CM,RM,CDM | 32 | Argentina | 7,7 M€ | 7,62 | 4 | 8 | 5/0 |  |
 | 8 | Telasco Segovia | CM,LW,LM,CDM,CAM | 23 | Venezuela | 1,6 M€ | 7,31 | 3 | 8 | 9/0 |  |
 | 22 | David Ayala | CDM,CM | 24 | Argentina | 1,5 M€ | 6,45 | 0 | 0 | 1/0 |  |
@@ -102,9 +102,9 @@ Tränare: Cristian González. Betyg, mål och assist gäller innevarande säsong
 | | **Anfallare** | | | | | | | | | |
 | 9 | Luis Suárez | ST,LW | 39 | Uruguay | 865 k€ | 7,47 | 13 | 3 | 1/0 |  |
 | 10 | Lionel Messi | ST,RW,CAM | 39 | Argentina | 10,4 M€ | 8,26 | 21 | 11 | 3/0 |  |
-| 11 | Riquelme Fillipi | LW | 20 | Brazil | – | 6,34 | 0 | 0 | 0/0 |  |
+| 11 | Riquelme Fillipi | LW | 20 | Brazil | – | 6,26 | 0 | 0 | 0/0 |  |
 | 19 | Germán Berterame | ST,LW,RW | 27 | Mexico | 6,5 M€ | 7,27 | 7 | 4 | 4/0 |  |
 | 20 | Santiago Morales | LW,CAM | 19 | USA | 632 k€ | 7,03 | 0 | 0 | 1/1 |  |
 | 21 | Tadeo Allende | RW,RM,ST | 27 | Argentina | 2,2 M€ | 6,51 | 0 | 0 | 3/0 | skadad, åter Early October 2026 |
 | 24 | Mateo Silvetti | LW,LM,RW,ST | 20 | Argentina | 6,6 M€ | 7,12 | 3 | 3 | 1/0 |  |
-| 56 | Dániel Pintér | ST,RW | 19 | USA | 687 k€ | 6,52 | 1 | 0 | 2/0 |  |
+| 56 | Dániel Pintér | ST,RW,LW | 19 | USA | 687 k€ | 6,53 | 1 | 0 | 2/0 |  |

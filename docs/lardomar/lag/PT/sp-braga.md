@@ -1,6 +1,6 @@
 # Sp Braga (Primeira Liga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [PT](../../ligor/PT.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [PT](../../ligor/PT.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -63,11 +63,11 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-03-22 | Europa 2559 | Braga - Porto | 2 | 26 % | 30 % |
 | 2025-12-28 | Europa 2535 | Braga - Benfica | X | 18 % | 26 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Carlos Vicens. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Sikou Niakaté (skadad, åter Day to day), Gustaf Lagerbielke (skadad, åter About a week)
+**Skadade/borta nu:** Sikou Niakaté (skadad, åter Day to day)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -77,13 +77,13 @@ Tränare: Carlos Vicens. Betyg, mål och assist gäller innevarande säsong enli
 | | **Backar** | | | | | | | | | |
 | 4 | Sikou Niakaté | CB | 27 | Mali | 4,7 M€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
 | 6 | Carvalho | CB | 29 | Brazil | 2,2 M€ | 7,43 | 0 | 1 | 1/0 |  |
-| 14 | Gustaf Lagerbielke | CB | 26 | Sweden | 2,3 M€ | 7,06 | 0 | 0 | 1/0 | skadad, åter About a week |
+| 14 | Gustaf Lagerbielke | CB | 26 | Sweden | 2,3 M€ | 7,06 | 0 | 0 | 1/0 |  |
 | 22 | Sergio Barcia | CB | 25 | Spain | 1,3 M€ | 6,59 | 0 | 0 | 0/0 |  |
 | 26 | Bright Arrey-Mbi | CB,LB | 23 | Germany | 5,7 M€ | 6,44 | 0 | 0 | 0/0 |  |
 | 37 | Adrian Barišić | CB | 25 | Bosnia and Herzegovina | 2,7 M€ | 6,83 | 0 | 0 | 0/0 |  |
 | 44 | Adrian Bajrami | CB,LB | 24 | Switzerland | 2,0 M€ | 6,91 | 0 | 0 | 2/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 2 | Víctor Gómez | RM,RWB,RB,CB | 26 | Spain | 4,5 M€ | 7,08 | 0 | 0 | 0/0 |  |
+| 2 | Víctor Gómez | RM,RB,RWB,CB | 26 | Spain | 4,5 M€ | 7,08 | 0 | 0 | 0/0 |  |
 | 8 | João Moutinho | CM,CDM | 40 | Portugal | 330 k€ | 7,41 | 0 | 0 | 2/0 |  |
 | 16 | Tomás Marqués | CDM | 19 | Spain | 1,9 M€ | 6,36 | 0 | 0 | 0/0 |  |
 | 20 | Mario Dorgeles | RM,RW,LM | 22 | Ivory Coast | 9,3 M€ | 7,05 | 0 | 0 | 0/0 |  |
@@ -93,7 +93,7 @@ Tränare: Carlos Vicens. Betyg, mål och assist gäller innevarande säsong enli
 | 50 | Diego Rodrigues | CM,CAM,LWB | 21 | Portugal | – | 6,76 | 1 | 0 | 0/0 |  |
 | 77 | Gabri Martínez | LM,LWB,LW,RM | 23 | Spain | 3,5 M€ | 7,09 | 1 | 0 | 1/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 7 | Diogo Travassos | RW,RM,LB,RB,LM | 22 | Portugal | 2,1 M€ | 7,10 | 0 | 0 | 1/0 |  |
+| 7 | Diogo Travassos | RW,LB,RM,RB,LM | 22 | Portugal | 2,1 M€ | 7,10 | 0 | 0 | 1/0 |  |
 | 9 | Fran Navarro | ST | 28 | Spain | 2,4 M€ | 6,75 | 1 | 0 | 0/0 |  |
 | 10 | Pau Víctor | ST,RW,LW,CAM | 24 | Spain | 10,4 M€ | 7,32 | 3 | 1 | 2/0 |  |
 | 11 | Gabriel Silva | LW,RW,ST,RM,LWB | 24 | Brazil | 2,0 M€ | 6,82 | 0 | 1 | 0/0 |  |

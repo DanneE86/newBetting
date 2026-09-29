@@ -1,6 +1,6 @@
 # Central Cordoba (Liga Profesional) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -64,7 +64,7 @@ Form (äldst → senast): VVFFOFFO · senaste match 2026-09-18
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Sebastián Domínguez. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -86,13 +86,12 @@ Tränare: Sebastián Domínguez. Betyg, mål och assist gäller innevarande säs
 | 23 | Darío Cáceres | LB,LWB | 28 | Paraguay | 318 k€ | – | 0 | 0 | 0/0 |  |
 | 24 | Agustín Romero | Defender | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 26 | Lucas Bernabéu | Defender | 22 | Argentina | 524 k€ | – | 0 | 0 | 0/0 |  |
-| 32 | Nicolás Garrido | Defender | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 33 | Santiago Moyano | RB,RWB,CB | 29 | Argentina | 549 k€ | – | 0 | 0 | 0/0 |  |
 | 42 | Juan Pablo Pignani | CB | 25 | Argentina | 596 k€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 5 | Tiago Cravero | CM,CDM | 23 | Argentina | 526 k€ | – | 0 | 0 | 0/0 |  |
 | 8 | Fernando Juárez | CM | 28 | Argentina | 529 k€ | – | 0 | 0 | 0/0 | skadad, åter Late October 2026 |
-| 18 | Lucas González | CM,CAM,RM,CDM,LW | 26 | Argentina | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 18 | Lucas González | CM,CAM,RM,LW | 26 | Argentina | 1,0 M€ | – | 0 | 0 | 0/0 |  |
 | 20 | Fernando Martínez | RM,RW,RB,LB,RWB | 26 | Argentina | 360 k€ | – | 0 | 0 | 0/0 |  |
 | 22 | Matías Vera | CM,CDM | 30 | Argentina | 449 k€ | – | 0 | 0 | 0/0 |  |
 | 30 | Federico Rodríguez | Midfielder | 17 | Argentina | – | – | 0 | 0 | 0/0 |  |
@@ -108,3 +107,5 @@ Tränare: Sebastián Domínguez. Betyg, mål och assist gäller innevarande säs
 | 28 | Leonardo Sequeira | RW,ST | 31 | Argentina | 446 k€ | – | 0 | 0 | 0/0 |  |
 | 29 | Joaquín Flores | Attacker | 21 | Argentina | 582 k€ | – | 0 | 0 | 0/0 |  |
 | 47 | Martín Cuitiño | ST | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Nicolás Garrido (senast 2026-09-29).

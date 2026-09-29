@@ -1,6 +1,44 @@
 {
-  "Brentford": { "venue": "Gtech Community Stadium", "lat": 51.4907, "lon": -0.2886, "note": "Wikidata gav Griffin Park (lamnad 2020)" },
-  "Cuiaba": { "venue": "Arena Pantanal", "lat": -15.6036, "lon": -56.1219, "note": "Wikidata-etiketten var fel, koordinaterna stamde" },
-  "AVS": { "venue": "Vila das Aves (stad)", "lat": 41.37, "lon": -8.41, "note": "AVS Futebol SAD, Vila das Aves - stadsniva" },
-  "Inter D'Escaldes": { "venue": "Escaldes-Engordany (stad)", "lat": 42.51, "lon": 1.54, "note": "Andorra - stadsniva" }
+  "Brentford": {
+    "venue": "Gtech Community Stadium",
+    "lat": 51.4907,
+    "lon": -0.2886,
+    "note": "Wikidata gav Griffin Park (lamnad 2020)"
+  },
+  "Cuiaba": {
+    "venue": "Arena Pantanal",
+    "lat": -15.6036,
+    "lon": -56.1219,
+    "note": "Wikidata-etiketten var fel, koordinaterna stamde"
+  },
+  "AVS": {
+    "venue": "Vila das Aves (stad)",
+    "lat": 41.37,
+    "lon": -8.41,
+    "note": "AVS Futebol SAD, Vila das Aves - stadsniva"
+  },
+  "Inter D'Escaldes": {
+    "venue": "Escaldes-Engordany (stad)",
+    "lat": 42.51,
+    "lon": 1.54,
+    "note": "Andorra - stadsniva"
+  },
+  "Bristol Rvs": {
+    "venue": "Memorial Stadium",
+    "lat": 51.4862,
+    "lon": -2.583,
+    "note": "Bristol Rovers - auto-sokning hittade inget"
+  },
+  "Sp Gijon": {
+    "venue": "El Molinon",
+    "lat": 43.5361,
+    "lon": -5.6372,
+    "note": "Sporting Gijon - auto-sokning hittade inget"
+  },
+  "Östers IF": {
+    "venue": "Visma Arena",
+    "lat": 56.857,
+    "lon": 14.83,
+    "note": "Osters IF, Vaxjo - auto-sokning hittade inget"
+  }
 }

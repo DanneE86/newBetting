@@ -1,6 +1,6 @@
 # Osasuna (La Liga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [LL](../../ligor/LL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [LL](../../ligor/LL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -94,7 +94,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-08-31 | Europa 2501 | Espanyol - Osasuna | 1 | 22 % | 29 % |
 | 2025-08-24 | Europa 2499 | Osasuna - Valencia | 1 ✓ | 46 % | 40 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Luis Ramis. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -124,7 +124,6 @@ Tränare: Luis Ramis. Betyg, mål och assist gäller innevarande säsong enligt 
 | 10 | Aimar Oroz | CAM,CM,ST | 24 | Spain | 9,8 M€ | 6,57 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
 | 16 | Moi Gómez | CM,CAM,CDM,LW | 32 | Spain | 872 k€ | 6,97 | 0 | 1 | 0/0 | skadad, åter Early October 2026 |
 | | **Anfallare** | | | | | | | | | |
-|  | Ander Yoldi | LWB | 26 | Spain | 254 k€ | – | 0 | 0 | 0/0 |  |
 | 9 | Raúl García | ST | 25 | Spain | 2,0 M€ | 6,43 | 0 | 1 | 1/0 |  |
 | 11 | Enrique Barja | LW,LM | 29 | Spain | 1,2 M€ | 6,49 | 1 | 0 | 3/0 |  |
 | 14 | Rubén Garcia | RW,CAM,RM,LW | 33 | Spain | 916 k€ | 6,66 | 0 | 0 | 1/0 |  |
@@ -132,3 +131,5 @@ Tränare: Luis Ramis. Betyg, mål och assist gäller innevarande säsong enligt 
 | 18 | Raúl Moro | LW,RW | 23 | Spain | 3,7 M€ | 6,20 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
 | 20 | Romain Del Castillo | RW,CAM | 30 | France | 3,0 M€ | 6,27 | 0 | 0 | 0/0 |  |
 | 21 | Jonathan Dubasin | RW,ST,RM,LW | 26 | Belgium | 2,5 M€ | 6,16 | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Ander Yoldi (senast 2026-09-29).

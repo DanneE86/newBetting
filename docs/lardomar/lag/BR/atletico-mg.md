@@ -1,6 +1,6 @@
 # Atletico-MG (Brasileirão Série A) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [BR](../../ligor/BR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [BR](../../ligor/BR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -62,7 +62,7 @@ Form (äldst → senast): VOVOVFVO · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Eduardo Domínguez. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -73,9 +73,6 @@ Tränare: Eduardo Domínguez. Betyg, mål och assist gäller innevarande säsong
 | | **Målvakter** | | | | | | | | | |
 | 1 | Gabriel Delfim | GK | 24 | Brazil | 571 k€ | – | 0 | 0 | 0/0 |  |
 | 22 | Everson | GK | 36 | Brazil | 1,1 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
-| 31 | Robert | GK | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 43 | Kaio | Keeper | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 46 | Pedro Cobra | Keeper | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 2 | Natanael | RB,RWB,CB | 24 | Brazil | 3,7 M€ | – | 0 | 0 | 0/0 |  |
 | 3 | Léo Duarte | CB | 30 | Brazil | 1,8 M€ | – | 0 | 0 | 0/0 |  |
@@ -83,40 +80,23 @@ Tränare: Eduardo Domínguez. Betyg, mål och assist gäller innevarande säsong
 | 13 | Lyanco | CB | 29 | Brazil | 2,5 M€ | – | 0 | 0 | 0/0 |  |
 | 14 | Vitor Hugo | CB | 35 | Brazil | 608 k€ | – | 0 | 0 | 0/0 |  |
 | 16 | Renan Lodi | LB,LWB | 28 | Brazil | 9,5 M€ | – | 0 | 0 | 0/0 |  |
-| 32 | Luís Gustavo | Defender | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 34 | Samuel Lima | Defender | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 36 | Kauã Pascini | LB,LWB | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 40 | Vitão | CB | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 42 | Wanderson | Defender | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 44 | Pedro Fachineti | Defender | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 53 | Pedro Lemos | Defender | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 5 | Alexsander | CDM | 22 | Brazil | 4,8 M€ | – | 0 | 0 | 0/0 |  |
 | 7 | Fred | CAM,CDM,CM | 33 | Brazil | 2,1 M€ | – | 0 | 0 | 0/0 |  |
 | 8 | Maycon | CDM,CM | 29 | Brazil | 1,5 M€ | – | 0 | 0 | 0/0 |  |
 | 10 | Gustavo Scarpa | CAM,RWB,CDM,RW | 32 | Brazil | 2,4 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 11 | Bernard | CAM,LW,RW,ST,RM | 34 | Brazil | 682 k€ | – | 0 | 0 | 0/0 |  |
-| 15 | Kevin Castaño | CDM,CM | 25 | Colombia | 4,3 M€ | – | 0 | 0 | 0/0 |  |
+| 15 | Kevin Castaño | CDM,CM | 26 | Colombia | 4,3 M€ | – | 0 | 0 | 0/0 |  |
 | 17 | Igor Gomes | CDM,CM,CAM | 27 | Brazil | 1,3 M€ | – | 0 | 0 | 0/0 |  |
 | 21 | Alan Franco | CDM,CM,RB,CB,RM,RWB | 28 | Ecuador | 2,7 M€ | – | 0 | 0 | 0/0 |  |
 | 23 | Ángelo Preciado | RB,RM,RWB | 28 | Ecuador | 2,2 M€ | – | 0 | 0 | 0/0 |  |
-| 25 | Tomás Pérez | CDM,CM,CB | 21 | Argentina | 2,9 M€ | – | 0 | 0 | 0/0 |  |
 | 27 | Alan Minda | CAM,LW,ST | 23 | Ecuador | 1,9 M€ | – | 0 | 0 | 0/0 |  |
 | 30 | Victor Hugo | CAM,CM,RW,CDM,RM,LW | 22 | Brazil | 4,4 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
-| 38 | Hendel Índio | Midfielder | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 39 | Mamady Cissé | CDM,RW | 19 | Guinea | 2,1 M€ | – | 0 | 0 | 0/0 |  |
-| 45 | Mateus Romero | Midfielder | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 48 | Gutte | Midfielder | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 58 | Eric | Midfielder | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 92 | Dudu | CAM,LW | 34 | Brazil | 726 k€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 9 | Mateo Cassierra | ST | 29 | Colombia | 5,8 M€ | – | 0 | 0 | 0/0 |  |
 | 18 | Thiago Borbas | ST | 24 | Uruguay | 2,3 M€ | – | 0 | 0 | 0/0 |  |
 | 19 | Reinier | ST,CAM | 24 | Brazil | 1,8 M€ | – | 0 | 0 | 0/0 | osäker |
 | 28 | Tomás Cuello | RW,CAM,LM,RWB,LW | 26 | Argentina | 3,7 M€ | – | 0 | 0 | 0/0 |  |
-| 29 | Cauã Soares | ST | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 36 | Gabriel Veneno | Attacker | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 41 | Mosquito | Attacker | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 41 | Murillo Fernandes | Attacker | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 47 | Riquelme Henrique | Attacker | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 49 | João Teixeira | Attacker | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (22): Tomás Pérez (senast 2026-09-29), Samuel Lima (senast 2026-09-29), Robert (senast 2026-09-29), Hendel Índio (senast 2026-09-29), Vitão (senast 2026-09-29), Pedro Cobra (senast 2026-09-29), Gabriel Veneno (senast 2026-09-29), Mosquito (senast 2026-09-29), Wanderson (senast 2026-09-29), Luís Gustavo (senast 2026-09-29), Pedro Fachineti (senast 2026-09-29), Kauã Pascini (senast 2026-09-29), Mamady Cissé (senast 2026-09-29), Murillo Fernandes (senast 2026-09-29), Cauã Soares (senast 2026-09-29), Kaio (senast 2026-09-29), Mateus Romero (senast 2026-09-29), Eric (senast 2026-09-29), João Teixeira (senast 2026-09-29), Riquelme Henrique (senast 2026-09-29), Gutte (senast 2026-09-29), Pedro Lemos (senast 2026-09-29).

@@ -1,6 +1,6 @@
 # DC United (MLS) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -72,7 +72,7 @@ Form (äldst → senast): OOFFOVOF · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: René Weiler. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -94,11 +94,11 @@ Tränare: René Weiler. Betyg, mål och assist gäller innevarande säsong enlig
 | 15 | Kye Rowles | CB,LWB | 28 | Australia | 680 k€ | 6,93 | 1 | 0 | 4/0 |  |
 | 27 | Nikola Marković | CB | 22 | Canada | 285 k€ | 6,44 | 0 | 1 | 1/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 4 | Matti Peltola | CM,CDM | 24 | Finland | 1,2 M€ | 7,06 | 1 | 0 | 1/0 |  |
+| 4 | Matti Peltola | CM | 24 | Finland | 1,2 M€ | 7,06 | 1 | 0 | 1/0 |  |
 | 7 | Peglow | LM,CM,LW,ST | 24 | Brazil | 912 k€ | 7,15 | 1 | 4 | 7/0 |  |
 | 8 | Jared Stroud | RM | 30 | USA | 496 k€ | 6,54 | 1 | 0 | 4/0 |  |
 | 21 | Andre Dozzell | CDM,CM,CB | 27 | England | 1,3 M€ | 6,86 | 0 | 0 | 3/0 |  |
-| 23 | Brandon Servania | CM,CDM | 27 | Puerto Rico | 274 k€ | 6,67 | 0 | 0 | 1/0 |  |
+| 23 | Brandon Servania | CM | 27 | Puerto Rico | 274 k€ | 6,67 | 0 | 0 | 1/0 |  |
 | 25 | Jackson Hopkins | ST,RM,CM,CAM,LM,RW | 22 | USA | 1,5 M€ | 6,81 | 2 | 1 | 4/0 |  |
 | 40 | Kamil Castillo | Midfielder | 16 | Dominican Republic | – | – | 0 | 0 | 0/0 |  |
 | 77 | Hosei Kijima | LM | 24 | Japan | 144 k€ | 6,51 | 0 | 1 | 0/0 |  |

@@ -1,6 +1,6 @@
 # IK Brage (Superettan) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [SE2](../../ligor/SE2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [SE2](../../ligor/SE2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -38,7 +38,7 @@ Form senaste 8 (äldst → senast): FOFFFOOF · senaste match 2026-09-19
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Anders Bååth-Sjöblom. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -61,11 +61,9 @@ Tränare: Anders Bååth-Sjöblom. Betyg, mål och assist gäller innevarande s�
 | | **Mittfältare** | | | | | | | | | |
 | 6 | Lasse Bruun Madsen | CM | 21 | Denmark | 208 k€ | – | 2 | 0 | 2/0 |  |
 | 7 | Jacob Stensson | CM,CDM | 29 | Sweden | 59 k€ | – | 0 | 0 | 1/0 |  |
-| 7 | Marinus Larsen | ST | 22 | Denmark | 132 k€ | – | 0 | 0 | 1/0 |  |
 | 8 | Albin Sporrong | CM,CDM,CAM | 26 | Sweden | 78 k€ | – | 3 | 7 | 1/0 |  |
 | 10 | Gustav Berggren | CM | 26 | Sweden | 168 k€ | – | 0 | 1 | 1/0 |  |
 | 16 | York Rafael | CM,LWB | 27 | Rwanda | 191 k€ | – | 0 | 0 | 0/0 |  |
-| 19 | Haris Brkic | CM | 27 | Sweden | 171 k€ | – | 0 | 0 | 1/0 |  |
 | 20 | Victor Okeke | LM,CM,LB,CAM | 20 | Nigeria | – | – | 0 | 0 | 1/0 |  |
 | 28 | Gideon Granström | CM,CDM | 21 | Sweden | 181 k€ | – | 2 | 0 | 4/0 |  |
 | | **Anfallare** | | | | | | | | | |
@@ -77,3 +75,5 @@ Tränare: Anders Bååth-Sjöblom. Betyg, mål och assist gäller innevarande s�
 | 17 | Pontus Jonsson | RM,ST,RW | 25 | Sweden | 183 k€ | – | 2 | 2 | 0/0 |  |
 | 19 | Mass Modou Sise | ST | 23 | Denmark | 208 k€ | – | 3 | 2 | 3/0 |  |
 | 25 | Albin Pihlstroem | Attacker | 19 | Sweden | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (2): Haris Brkic (senast 2026-09-29), Marinus Larsen (senast 2026-09-29).

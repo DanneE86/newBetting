@@ -1,6 +1,6 @@
 # Barcelona (La Liga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [LL](../../ligor/LL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [LL](../../ligor/LL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -53,9 +53,9 @@ Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: s
 
 | Motståndare | M | V-O-F | Mål | Mot marknaden | Kryss mot odds | Senast |
 |---|---|---|---|---|---|---|
-| Ath Bilbao | 17 | 12-4-1 | 30–7 | +0,32 | +1 pe | 2026-08-27 2-0 (h) |
 | Sevilla | 17 | 13-3-1 | 44–16 | +0,41 | −3 pe | 2026-09-19 3-1 (b) |
 | Valencia | 17 | 11-4-2 | 48–21 | +0,03 | +3 pe | 2026-09-06 5-0 (b) |
+| Ath Bilbao | 16 | 12-3-1 | 29–6 | +0,43 | −4 pe | 2026-08-27 2-0 (h) |
 | Ath Madrid | 16 | 10-3-3 | 26–14 | +0,47 | −8 pe | 2026-04-04 2-1 (b) |
 | Betis | 16 | 12-2-2 | 51–25 | +0,29 | −8 pe | 2026-05-17 3-1 (h) |
 | Celta | 16 | 10-3-3 | 36–23 | −0,04 | +0 pe | 2026-04-22 1-0 (h) |
@@ -92,11 +92,11 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-09-28 | Europa 2509 | Barcelona - Real Sociedad | 1 ✓ | 89 % | 75 % |
 | 2025-09-14 | Europa 2505 | Barcelona - Valencia | 1 ✓ | 88 % | 74 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Hans-Dieter Flick. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Joan García (skadad, åter Early October 2026), Andreas Christensen (skadad, åter Mid October 2026), Eric García (skadad, åter Mid October 2026), Frenkie de Jong (skadad, åter Back in training), Roony Bardghji (skadad, åter Late February 2027)
+**Skadade/borta nu:** Joan García (skadad, åter Early October 2026), Andreas Christensen (skadad, åter Mid October 2026), Eric García (skadad, åter Mid October 2026), Frenkie de Jong (skadad, åter Late October 2026), Roony Bardghji (skadad, åter Late February 2027)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -119,15 +119,15 @@ Tränare: Hans-Dieter Flick. Betyg, mål och assist gäller innevarande säsong 
 | 6 | Gavi | CDM,LW | 22 | Spain | 28,9 M€ | 6,57 | 0 | 0 | 0/0 |  |
 | 7 | Fermín López | CAM,CM,LW | 23 | Spain | 78,7 M€ | 7,72 | 4 | 2 | 1/0 |  |
 | 8 | Pedri | CDM,CM | 23 | Spain | 85,0 M€ | 7,62 | 1 | 1 | 0/0 |  |
+| 14 | Karim Adeyemi | CAM,RW,LW,ST | 24 | Germany | 36,3 M€ | 7,22 | 2 | 2 | 1/0 |  |
 | 16 | Rodri | CDM,CM | 30 | Spain | 53,3 M€ | 7,51 | 0 | 0 | 1/0 |  |
 | 20 | Dani Olmo | CAM,CM,LW | 28 | Spain | 40,6 M€ | 7,18 | 0 | 3 | 0/0 |  |
-| 21 | Frenkie de Jong | CDM,CM | 29 | Netherlands | 31,2 M€ | – | 0 | 0 | 0/0 | skadad, åter Back in training |
+| 21 | Frenkie de Jong | CDM,CM | 29 | Netherlands | 31,2 M€ | – | 0 | 0 | 0/0 | skadad, åter Late October 2026 |
 | 22 | Marc Bernal | CDM,CM | 19 | Spain | 12,6 M€ | 7,30 | 0 | 2 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 9 | Gabriel Jesus | ST | 29 | Brazil | 15,6 M€ | 6,89 | 1 | 0 | 0/0 |  |
 | 10 | Lamine Yamal | RW | 19 | Spain | 154,6 M€ | 8,73 | 7 | 4 | 1/0 |  |
 | 11 | Raphinha | LW,ST,CAM,RW,LM | 29 | Brazil | 50,7 M€ | 9,01 | 12 | 3 | 0/0 |  |
-| 14 | Karim Adeyemi | CAM,RW,LW,ST | 24 | Germany | 36,3 M€ | 7,22 | 2 | 2 | 1/0 |  |
 | 17 | Anthony Gordon | LW,ST | 25 | England | 64,3 M€ | 7,50 | 0 | 4 | 0/0 |  |
 | 19 | Roony Bardghji | RW | 20 | Sweden | 13,3 M€ | – | 0 | 0 | 0/0 | skadad, åter Late February 2027 |
 | 27 | Jesse Bisiwu | LW | 18 | Belgium | 1,3 M€ | – | 0 | 0 | 0/0 |  |

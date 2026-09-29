@@ -1,6 +1,6 @@
 # Twente (Eredivisie) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [ED](../../ligor/ED.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [ED](../../ligor/ED.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -62,7 +62,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 |---|---|---|---|---|---|
 | 2025-11-30 | Europa 2527 | Twente - AZ Alkmaar | 1 ✓ | 51 % | 43 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: John van den Brom. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -71,7 +71,6 @@ Tränare: John van den Brom. Betyg, mål och assist gäller innevarande säsong 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-|  | Issam El Maach | GK | 26 | Morocco | 359 k€ | – | 0 | 0 | 0/0 |  |
 | 1 | Lars Unnerstall | GK | 36 | Germany | 633 k€ | 6,90 | 0 | 0 | 0/0 |  |
 | 16 | Joël Drommel | GK | 29 | Netherlands | 1,8 M€ | 7,52 | 0 | 1 | 0/0 |  |
 | 22 | Remko Pasveer | GK | 42 | Netherlands | 274 k€ | – | 0 | 0 | 0/0 |  |
@@ -101,8 +100,10 @@ Tränare: John van den Brom. Betyg, mål och assist gäller innevarande säsong 
 | 7 | Marko Pjaca | RW,LW | 31 | Croatia | 820 k€ | 7,09 | 2 | 0 | 0/0 |  |
 | 9 | Wout Weghorst | ST | 34 | Netherlands | 1,6 M€ | 7,74 | 4 | 1 | 1/0 |  |
 | 11 | Daan Rots | RW,CAM | 25 | Netherlands | 2,0 M€ | 7,01 | 1 | 1 | 1/0 |  |
-| 17 | Filip Thorvaldsen | RW,ST,RM,LM | 20 | Norway | 4,0 M€ | 6,65 | 0 | 0 | 0/0 |  |
+| 17 | Filip Thorvaldsen | RM,ST,RW,LM | 20 | Norway | 4,0 M€ | 6,65 | 0 | 0 | 0/0 |  |
 | 25 | Lucas Vennegoor of Hesselink | ST | 20 | Netherlands | 772 k€ | 6,20 | 0 | 0 | 0/0 |  |
 | 27 | Sondre Ørjasæter | LW | 22 | Norway | 8,2 M€ | 7,44 | 1 | 2 | 1/0 |  |
 | 36 | Nigel Groenewald | Attacker | 19 | Netherlands | – | – | 0 | 0 | 0/0 |  |
 | 37 | Naci Ünüvar | LW,CAM | 23 | Netherlands | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Issam El Maach (senast 2026-09-29).

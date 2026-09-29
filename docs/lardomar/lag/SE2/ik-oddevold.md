@@ -1,6 +1,6 @@
 # IK Oddevold (Superettan) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [SE2](../../ligor/SE2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [SE2](../../ligor/SE2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -39,7 +39,7 @@ Form senaste 8 (äldst → senast): VOVFVVOF · senaste match 2026-09-19
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Rikard Nilsson. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -67,7 +67,6 @@ Tränare: Rikard Nilsson. Betyg, mål och assist gäller innevarande säsong enl
 | 16 | Awaka Djoro | CM,CDM | 20 | Ivory Coast | 221 k€ | – | 0 | 2 | 2/0 |  |
 | 19 | Hugo Engström | RM,RB,RW,CM | 25 | Sweden | 119 k€ | – | 1 | 2 | 0/1 |  |
 | 20 | Adam Engelbrektsson | RM | 30 | Sweden | 50 k€ | – | 0 | 0 | 1/0 |  |
-| 23 | Riane Haidar | Midfielder | 20 | Sweden | – | – | 0 | 0 | 0/0 |  |
 | 26 | Freddie Lantz | CM | 19 | Sweden | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 8 | Oscar Iglicar Berntsson | LW,ST,RW | 29 | Sweden | 50 k€ | – | 2 | 2 | 3/0 |  |
@@ -77,3 +76,5 @@ Tränare: Rikard Nilsson. Betyg, mål och assist gäller innevarande säsong enl
 | 17 | Olle Kjellman Olblad | LW,CM,RW,LM,CAM | 24 | Sweden | 116 k€ | – | 3 | 3 | 0/0 |  |
 | 18 | Gustav Forssell | RW,ST,CAM | 26 | Sweden | 172 k€ | – | 2 | 2 | 0/0 |  |
 | 23 | Aulon Bitiqi | ST | 22 | Sweden | 119 k€ | – | 1 | 1 | 3/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Riane Haidar (senast 2026-09-29).

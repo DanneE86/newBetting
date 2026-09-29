@@ -1,6 +1,6 @@
 # Rotherham (League Two) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -56,7 +56,7 @@ Form (äldst → senast): FOVOFOVO · senaste match 2026-09-26
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Alex Bruce. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -64,38 +64,36 @@ Tränare: Alex Bruce. Betyg, mål och assist gäller innevarande säsong enligt 
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
 | 1 | Ted Cann | GK | 25 | England | 182 k€ | 6,28 | 0 | 0 | 0/0 |  |
-| 13 | Julian Eyestone | GK | 20 | USA | – | 6,64 | 0 | 0 | 0/0 |  |
+| 13 | Julian Eyestone | GK | 20 | USA | – | 6,67 | 0 | 0 | 0/0 |  |
 | 50 | Ben Childs | Keeper | 17 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Joe Rafferty | CB,RB,CAM | 32 | Ireland | 135 k€ | 6,50 | 0 | 0 | 0/0 |  |
+| 2 | Joe Rafferty | CB,RB,CAM | 32 | Ireland | 135 k€ | 6,45 | 0 | 0 | 0/0 |  |
 | 3 | Ewan Otoo | CB,LB,LWB | 24 | Scotland | 239 k€ | 7,08 | 1 | 1 | 1/0 |  |
 | 5 | Kieran Ngwenya | CB | 24 | Malawi | 187 k€ | 6,29 | 0 | 0 | 1/0 |  |
-| 14 | Sonny Aljofree | CB | 21 | England | 500 k€ | 7,02 | 0 | 0 | 1/0 |  |
+| 14 | Sonny Aljofree | CB | 21 | England | 500 k€ | 7,04 | 0 | 0 | 1/0 |  |
 | 16 | Emmanuel Adegboyega | CB | 23 | Ireland | 210 k€ | 6,63 | 0 | 0 | 0/0 |  |
 | 18 | Lenny Agbaire | CB | 21 | Scotland | 336 k€ | 7,01 | 0 | 0 | 0/0 |  |
-| 24 | Jili Buyabu | LB,LW,LM,LWB,CDM | 23 | England | – | 6,81 | 1 | 0 | 3/0 |  |
+| 24 | Jili Buyabu | LB,LW,LM,LWB,CDM | 23 | England | – | 6,78 | 1 | 0 | 3/0 |  |
 | 26 | Hamish Douglas | CB | 21 | England | 240 k€ | – | 0 | 0 | 0/0 |  |
-| 27 | Dominic Iorfa | CB | 31 | England | 221 k€ | 6,62 | 0 | 0 | 0/0 |  |
 | 36 | Harrison Duncan | Defender | 18 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 4 | Josh Austerfield | CAM,CM,CDM,RW | 24 | England | 205 k€ | 7,24 | 0 | 1 | 3/0 |  |
+|  | James Clarke | RWB | 19 | England | – | – | 0 | 0 | 0/0 |  |
+| 4 | Josh Austerfield | CAM,CM,CDM,RW | 24 | England | 205 k€ | 7,23 | 0 | 1 | 3/0 |  |
 | 6 | Ossama Ashley | CDM,CAM,CM | 26 | England | 148 k€ | 6,94 | 1 | 0 | 1/0 |  |
-| 8 | Kian Spence | CM,CDM,CAM | 25 | England | 186 k€ | 7,06 | 0 | 2 | 1/0 |  |
-| 12 | Denzel Hall | RM,RWB,RB,CB,RW | 25 | Netherlands | 352 k€ | 7,09 | 0 | 0 | 1/0 |  |
+| 8 | Kian Spence | CM,CDM,CAM | 25 | England | 186 k€ | 7,07 | 0 | 2 | 1/0 |  |
+| 12 | Denzel Hall | RM,RWB,RB,CB,RW | 25 | Netherlands | 352 k€ | 7,14 | 0 | 0 | 1/0 |  |
 | 15 | Jayce Fitzgerald | CAM,CDM | 19 | England | – | 6,18 | 0 | 0 | 1/0 |  |
-| 17 | Marvin Kaleta | RWB,RM | 22 | England | 248 k€ | 6,52 | 0 | 0 | 0/0 |  |
+| 17 | Marvin Kaleta | RM | 22 | England | 248 k€ | 6,67 | 0 | 0 | 0/0 |  |
 | 22 | Jamie Jellis | CM,RW,CAM | 25 | England | 233 k€ | 6,75 | 0 | 0 | 0/0 |  |
-| 23 | Aaron Nemane | RM,RW,RWB,LW,CAM | 29 | England | 186 k€ | 6,59 | 1 | 0 | 0/0 |  |
+| 23 | Aaron Nemane | RM,RW,RWB,LW,CAM | 29 | England | 186 k€ | 6,56 | 1 | 0 | 0/0 |  |
 | 25 | Klaidi Lolos | CAM,ST | 25 | Greece | 317 k€ | – | 0 | 0 | 0/0 |  |
-| 27 | Ben Hatton | Midfielder | 20 | England | – | – | 0 | 0 | 0/0 |  |
 | 28 | Brandon Cover | CDM,RB,RW | 23 | Jamaica | 182 k€ | 7,14 | 1 | 0 | 2/0 |  |
-| 35 | Cohen Lee | CDM | 19 | England | – | – | 0 | 0 | 0/0 |  |
-| 38 | Kane Richardson | LM | 19 | England | – | – | 0 | 0 | 0/0 |  |
-| 46 | Dean Gardner | Midfielder | 18 | England | – | – | 0 | 0 | 0/0 |  |
 | 47 | Max Truswell | Midfielder | 0 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Fábio Tavares | ST,CAM | 25 | Portugal | 240 k€ | 6,63 | 1 | 1 | 0/0 |  |
-| 9 | Tom Bradshaw | ST | 34 | Wales | 176 k€ | 6,29 | 1 | 0 | 1/0 |  |
+| 9 | Tom Bradshaw | ST | 34 | Wales | 176 k€ | 6,30 | 1 | 0 | 1/0 |  |
 | 10 | Paul Mullin | ST | 31 | England | 174 k€ | 6,92 | 4 | 0 | 0/0 |  |
 | 19 | George Sebine | ST | 19 | England | – | 6,21 | 0 | 0 | 0/0 |  |
 | 30 | Reece Wilson | Attacker | 19 | England | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (5): Dominic Iorfa (senast 2026-09-29), Ben Hatton (senast 2026-09-29), Dean Gardner (senast 2026-09-29), Kane Richardson (senast 2026-09-29), Cohen Lee (senast 2026-09-29).

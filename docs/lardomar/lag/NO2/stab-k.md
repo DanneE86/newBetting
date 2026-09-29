@@ -1,6 +1,6 @@
 # Stabæk (OBOS-ligaen) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [NO2](../../ligor/NO2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [NO2](../../ligor/NO2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -36,7 +36,7 @@ Form senaste 8 (äldst → senast): VVVVFFFV · senaste match 2026-09-20
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Kjell André Thu. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -54,7 +54,6 @@ Tränare: Kjell André Thu. Betyg, mål och assist gäller innevarande säsong e
 | 15 | Olav Lilleøren Veum | CB | 22 | Norway | 272 k€ | – | 0 | 0 | 1/0 |  |
 | 16 | Andreas Hoven | RB | 28 | Norway | 56 k€ | – | 2 | 1 | 1/0 |  |
 | 27 | Mats Frimann Hansen | Defender | 18 | Norway | – | – | 0 | 0 | 0/0 |  |
-| 28 | Danilo Santos | CB | 22 | Norway | – | – | 0 | 1 | 0/0 |  |
 | 29 | Karsten Arman Ekorness | LB | 20 | Norway | 600 k€ | – | 2 | 1 | 3/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 6 | Aleksa Matić | CM | 24 | Serbia | 330 k€ | – | 5 | 0 | 4/0 |  |
@@ -74,3 +73,5 @@ Tränare: Kjell André Thu. Betyg, mål och assist gäller innevarande säsong e
 | 24 | Jacob Hanstad | RW | 23 | Norway | 249 k€ | – | 9 | 3 | 2/0 |  |
 | 25 | Bossman Debra | LW | 19 | Ghana | 305 k€ | – | 0 | 0 | 0/0 |  |
 | 33 | Axel Oestvold Aamodt | LW,RW | 16 | Norway | – | – | 2 | 3 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Danilo Santos (senast 2026-09-29).

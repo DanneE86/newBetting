@@ -1,6 +1,6 @@
 # Nashville SC (MLS) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -64,7 +64,7 @@ Form (äldst → senast): VVVVOFOV · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: BJ Callaghan. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -86,13 +86,12 @@ Tränare: BJ Callaghan. Betyg, mål och assist gäller innevarande säsong enlig
 | 21 | Thomas Williams | CB | 22 | USA | 358 k€ | – | 0 | 0 | 0/0 |  |
 | 22 | Josh Bauer | RB,LB,CB | 28 | USA | 93 k€ | 6,89 | 0 | 0 | 1/0 |  |
 | 27 | Reed Baker-Whiting | LB,RB | 21 | USA | 1,1 M€ | 6,95 | 1 | 2 | 1/0 |  |
-| 29 | Julian Gaines | RB,CB | 23 | USA | 273 k€ | – | 0 | 0 | 0/0 |  |
 | 31 | Andy Nájar | RB | 33 | Honduras | 75 k€ | 7,32 | 2 | 5 | 5/0 |  |
 | 35 | Malachi Molina | RB,LB | 19 | Jamaica | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 6 | Bryan Acosta | CM,CDM | 32 | Honduras | 117 k€ | 7,05 | 3 | 1 | 3/0 |  |
 | 8 | Patrick Yazbek | CM,CDM | 24 | Australia | 2,4 M€ | 6,95 | 1 | 3 | 1/0 |  |
-| 14 | Shak Mohammed | RW,CM,ST,RM | 23 | Ghana | 318 k€ | 6,81 | 3 | 0 | 2/0 |  |
+| 14 | Shak Mohammed | RW,CM,RM | 23 | Ghana | 318 k€ | 6,81 | 3 | 0 | 2/0 |  |
 | 16 | Matthew Corcoran | CM,CDM,LM | 20 | USA | 1,5 M€ | 6,94 | 0 | 0 | 4/1 |  |
 | 19 | Alex Muyl | LM,CM,LW,RW | 30 | USA | 1,0 M€ | 6,44 | 0 | 1 | 3/0 |  |
 | 20 | Edvard Tagseth | CM,CDM | 25 | Norway | 2,2 M€ | 6,95 | 1 | 0 | 2/0 |  |
@@ -100,9 +99,11 @@ Tränare: BJ Callaghan. Betyg, mål och assist gäller innevarande säsong enlig
 | | **Anfallare** | | | | | | | | | |
 | 7 | Cristian Espinoza | RW,RM | 31 | Argentina | 2,1 M€ | 7,52 | 4 | 11 | 1/0 |  |
 | 9 | Sam Surridge | ST | 28 | England | 3,9 M€ | 7,48 | 16 | 1 | 2/0 |  |
-| 10 | Hany Mukhtar | ST,CAM,LW,RW,CM | 31 | Germany | 2,0 M€ | 7,45 | 13 | 6 | 4/0 |  |
+| 10 | Hany Mukhtar | ST,CAM,LW,CM | 31 | Germany | 2,0 M€ | 7,45 | 13 | 6 | 4/0 |  |
 | 11 | Elias Saad | LW,CAM,ST,LM | 26 | Tunisia | 1,4 M€ | 7,06 | 0 | 3 | 1/0 |  |
 | 15 | Zidane Yáñez | ST | 18 | Chile | – | – | 0 | 0 | 0/0 |  |
 | 23 | Jordan Knight | RB,LW,RM,ST | 24 | Canada | 178 k€ | 6,46 | 0 | 0 | 0/0 |  |
 | 37 | Ahmed Qasem | LM,LW,RW,RM,ST,CM | 23 | Iraq | 2,0 M€ | 6,50 | 2 | 1 | 3/0 |  |
 | 41 | Warren Madrigal | LW,ST,RW,RM | 22 | Costa Rica | 453 k€ | 7,05 | 5 | 2 | 0/0 | skadad, åter Mid October 2026 |
+
+Har lämnat truppen sedan vi började spara (1): Julian Gaines (senast 2026-09-29).

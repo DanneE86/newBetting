@@ -1,6 +1,6 @@
 # Atlético Junior (Primera A) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [COL](../../ligor/COL.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [COL](../../ligor/COL.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -40,40 +40,36 @@ Form senaste 8 (äldst → senast): FOFOOFVV · senaste match 2026-09-27
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Sebastián Viera. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Fabián Correa (skadad, åter Mid October 2026), Kevin Pérez (skadad, åter Early October 2026), Luis Muriel (skadad, åter Early October 2026), Joel Canchimbo (skadad, åter Mid October 2026)
+**Skadade/borta nu:** Kevin Pérez (skadad, åter Early October 2026), Luis Muriel (skadad, åter Early October 2026), Joel Canchimbo (skadad, åter Mid October 2026)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
 | 1 | Mauro Silveira | GK | 26 | Uruguay | 1,1 M€ | – | 0 | 0 | 0/0 |  |
 | 12 | Danny Castro | Keeper | 20 | Colombia | – | – | 0 | 0 | 0/0 |  |
-| 12 | Jaime Acosta | Keeper | 24 | Colombia | 168 k€ | – | 0 | 0 | 0/0 |  |
 | 30 | Jefersson Martínez | GK | 33 | Colombia | 239 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 3 | Edwin Herrera | RB,LB,CB | 28 | Colombia | 404 k€ | – | 0 | 0 | 0/0 |  |
 | 5 | Daniel Rivera | CB,RB | 27 | Colombia | 414 k€ | – | 0 | 0 | 0/0 |  |
-| 15 | José Munive | Defender | 19 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 16 | Carlos Pérez | Defender | 19 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 23 | Pablo Ortíz | CB | 26 | Colombia | 333 k€ | – | 0 | 0 | 0/0 |  |
 | 24 | Jean Pestaña | CB | 29 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 26 | Yeison Suárez | LB,RB,LWB | 29 | Colombia | 768 k€ | – | 0 | 0 | 0/0 |  |
 | 34 | Daniel Socarras | RB | 18 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 98 | Jermein Peña | CB,RB | 26 | Colombia | 911 k€ | – | 0 | 0 | 0/0 |  |
-| 99 | Fabián Correa | Defender | 19 | Colombia | – | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | | **Mittfältare** | | | | | | | | | |
 | 6 | Dilan Villarreal | Midfielder | 18 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 7 | Harold Rivera | CDM,CM | 33 | Colombia | 242 k€ | – | 0 | 0 | 0/0 |  |
-| 8 | Yimmi Chará | CAM,CM,RW,ST,LM | 35 | Colombia | 247 k€ | – | 0 | 0 | 0/0 |  |
+| 8 | Yimmi Chará | CAM,CM,RW,LM,ST | 35 | Colombia | 247 k€ | – | 0 | 0 | 0/0 |  |
 | 14 | Juan Ríos | CDM,CM | 34 | Colombia | 255 k€ | – | 0 | 0 | 0/0 |  |
 | 18 | Kevin Pérez | CAM,RW,LW | 29 | Colombia | 398 k€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
 | 20 | Jannenson Sarmiento | CAM,RW | 26 | Colombia | 642 k€ | – | 0 | 0 | 0/0 |  |
 | 22 | Jesús Rivas | CDM,CAM,CM,RM,ST | 29 | Colombia | 800 k€ | – | 0 | 0 | 0/0 |  |
 | 28 | Guillermo Celis | CDM,CM | 33 | Colombia | 379 k€ | – | 0 | 0 | 0/0 |  |
-| 38 | Andrés Shmalbach | Midfielder | 19 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 80 | Fabián Ángel | CDM,CM | 25 | Colombia | 506 k€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 9 | Guillermo Paiva | ST,LW,RW,CAM | 29 | Paraguay | 716 k€ | – | 0 | 0 | 0/0 |  |
@@ -84,3 +80,5 @@ Tränare: Sebastián Viera. Betyg, mål och assist gäller innevarande säsong e
 | 29 | Teófilo Gutiérrez | ST,CAM | 41 | Colombia | 325 k€ | – | 0 | 0 | 0/0 |  |
 | 77 | Cristian Barrios | RW,LW,RM,CM | 28 | Colombia | 992 k€ | – | 0 | 0 | 0/0 |  |
 | 88 | Bryan Castrillón | LW,LM,RW | 27 | Colombia | 437 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (4): Jaime Acosta (senast 2026-09-29), Fabián Correa (senast 2026-09-29), Andrés Shmalbach (senast 2026-09-29), José Munive (senast 2026-09-29).

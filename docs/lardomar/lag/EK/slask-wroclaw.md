@@ -1,6 +1,6 @@
 # Slask Wroclaw (Ekstraklasa) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EK](../../ligor/EK.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EK](../../ligor/EK.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -59,7 +59,7 @@ Form (äldst → senast): VOFOOFFF · senaste match 2026-09-18
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Ante Šimundža. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -94,7 +94,6 @@ Tränare: Ante Šimundža. Betyg, mål och assist gäller innevarande säsong en
 | 20 | Grzegorz Tomasiewicz | CM,CDM,CAM | 30 | Poland | 281 k€ | 6,52 | 0 | 0 | 2/0 |  |
 | 36 | Przemyslaw Mazan | Midfielder | 16 | Poland | – | – | 0 | 0 | 0/0 |  |
 | 38 | Dorian Markowski | CM | 18 | Poland | – | 5,99 | 0 | 0 | 0/0 |  |
-| 70 | Miłosz Kozak | LW | 29 | Poland | 83 k€ | – | 0 | 0 | 0/0 |  |
 | 77 | Eniss Shabani | CDM,CM,CAM | 23 | Albania | 421 k€ | 6,91 | 1 | 1 | 3/0 |  |
 | 81 | Patryk Sokołowski | CM | 32 | Poland | 120 k€ | – | 0 | 0 | 0/0 |  |
 | 88 | Adam Ciucka | Midfielder | 18 | Poland | – | 7,38 | 1 | 1 | 0/0 |  |
@@ -104,3 +103,5 @@ Tränare: Ante Šimundža. Betyg, mål och assist gäller innevarande säsong en
 | 11 | Luka Marjanac | ST | 23 | Bosnia and Herzegovina | – | 6,62 | 1 | 0 | 1/0 |  |
 | 19 | Przemysław Banaszak | ST | 29 | Poland | 193 k€ | 6,52 | 2 | 0 | 0/0 |  |
 | 23 | Maksymilian Stangret | Attacker | 21 | Poland | 108 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Miłosz Kozak (senast 2026-09-29).

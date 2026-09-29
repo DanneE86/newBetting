@@ -1,6 +1,6 @@
 # Rijeka (HNL) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [HR](../../ligor/HR.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [HR](../../ligor/HR.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -29,7 +29,7 @@ Form senaste 8 (äldst → senast): VVFVOVOV · senaste match 2026-09-20
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Matjaž Kek. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -62,7 +62,7 @@ Tränare: Matjaž Kek. Betyg, mål och assist gäller innevarande säsong enligt
 | 26 | Tiago Dantas | CDM,CM,CAM,LW | 25 | Portugal | 2,4 M€ | 7,68 | 2 | 2 | 0/0 |  |
 | 30 | Simon Cletus | Midfielder | 18 | Nigeria | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 4 | Niko Janković | LW,RW,CAM,CM | 25 | Croatia | 2,4 M€ | 6,75 | 0 | 0 | 0/0 |  |
+| 4 | Niko Janković | LW,RW,CM,CAM | 25 | Croatia | 2,4 M€ | 6,75 | 0 | 0 | 0/0 |  |
 | 9 | Mohammad Mohebbi | ST,LM,LW | 27 | Iran | 1,5 M€ | 6,13 | 0 | 0 | 0/0 |  |
 | 14 | Amer Gojak | LW,RW,LM,CAM | 29 | Bosnia and Herzegovina | 236 k€ | 6,44 | 0 | 0 | 0/0 |  |
 | 15 | Goran Grulović | Attacker | 16 | Croatia | – | – | 0 | 0 | 0/0 |  |

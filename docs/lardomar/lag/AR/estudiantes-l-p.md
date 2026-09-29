@@ -1,6 +1,6 @@
 # Estudiantes L.P. (Liga Profesional) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -71,3 +71,43 @@ Form (äldst → senast): FFVFOFVF · senaste match 2026-09-22
 | Gimnasia Mendoza | 1 | 1-0-0 | 2–1 | +1,36 | −33 pe | 2026-03-18 2-1 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-29)
+
+Tränare: Alexander Medina. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+**Skadade/borta nu:** Santiago Arzamendia (skadad, åter Back in training), Gabriel Neves (skadad, åter Late December 2026), Jalil Elías (skadad, åter About 1-2 weeks), Guido Carrillo (skadad, åter About 1-2 weeks), Tiago Palacios (skadad, åter Mid October 2026), Joaquín Correa (skadad, åter Mid October 2026)
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 1 | Fabricio Iacovich | GK | 24 | Argentina | 623 k€ | – | 0 | 0 | 0/0 |  |
+| 16 | Fernando Muslera | GK | 40 | Uruguay | 649 k€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 4 | Santiago Núñez | CB | 26 | Argentina | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| 13 | Gastón Benedetti | LB | 25 | Argentina | 1,8 M€ | – | 0 | 0 | 0/0 |  |
+| 14 | Leandro González Pírez | CB | 34 | Argentina | 436 k€ | – | 0 | 0 | 0/0 |  |
+| 15 | Santiago Arzamendia | LB | 28 | Paraguay | 1,5 M€ | – | 0 | 0 | 0/0 | skadad, åter Back in training |
+| 20 | Eric Meza | RB | 27 | Argentina | 1,7 M€ | – | 0 | 0 | 0/0 |  |
+| 24 | Tomás Palacios | CB,LB | 23 | Argentina | 2,3 M€ | – | 0 | 0 | 0/0 |  |
+| 26 | Ramiro Funes Mori | CB | 35 | Argentina | 317 k€ | – | 0 | 0 | 0/0 |  |
+| 40 | Eros Mancuso | RB,LB | 27 | Argentina | 2,2 M€ | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 7 | José Sosa | CAM,CDM | 41 | Argentina | 296 k€ | – | 0 | 0 | 0/0 |  |
+| 8 | Gabriel Neves | CDM,CM | 29 | Uruguay | 942 k€ | – | 0 | 0 | 0/0 | skadad, åter Late December 2026 |
+| 21 | Ezequiel Piovi | CDM,CM | 34 | Argentina | 821 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Alexis Castro | CDM,CM,CAM,RW | 31 | Argentina | 642 k€ | – | 0 | 0 | 0/0 |  |
+| 31 | Baltasar Rodríguez | CM,RW,LW,LM,CDM,CAM | 23 | Argentina | 2,3 M€ | – | 0 | 0 | 0/0 |  |
+| 34 | Miguel Monsalve | CAM | 22 | Colombia | 2,9 M€ | – | 0 | 0 | 0/0 |  |
+| 39 | Jalil Elías | CM,CDM | 30 | Syria | 900 k€ | – | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
+| 52 | Bautista Kociubinski | CM | 25 | Argentina | 330 k€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 9 | Guido Carrillo | ST | 35 | Argentina | 374 k€ | – | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
+| 10 | Tiago Palacios | RW,CAM,ST | 25 | Uruguay | 2,8 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 18 | Edwuin Cetré | LW,ST,LM,RW | 28 | Colombia | 2,2 M€ | – | 0 | 0 | 0/0 |  |
+| 19 | Adolfo Gaich | ST | 27 | Argentina | 724 k€ | – | 0 | 0 | 0/0 |  |
+| 27 | Lucas Alario | ST | 33 | Argentina | 321 k€ | – | 0 | 0 | 0/0 |  |
+| 28 | Brian Aguirre | LW,RM | 23 | Argentina | 1,9 M€ | – | 0 | 0 | 0/0 |  |
+| 32 | Joaquín Correa | CAM,ST,LW | 32 | Argentina | 1,1 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+
+Har lämnat truppen sedan vi började spara (23): Axel Atum (senast 2026-09-29), Rodrigo Borzone (senast 2026-09-29), Joaquín Pereyra (senast 2026-09-29), Benjamín Sagüés Barreiro (senast 2026-09-29), Valente Pierani (senast 2026-09-29), Fabricio Pérez (senast 2026-09-29), Joaquín Tobio Burgos (senast 2026-09-29), Matías Magdaleno (senast 2026-09-29), Franco Domínguez (senast 2026-09-29), Máximo Desábato (senast 2026-09-29), Franco Basualdo (senast 2026-09-29), Thiago González (senast 2026-09-29), Ciro Spalletta (senast 2026-09-29), Faustino Messina (senast 2026-09-29), Santino Crego (senast 2026-09-29), Benjamín Maliani (senast 2026-09-29), Agustín Traina (senast 2026-09-29), Bautista Molinari (senast 2026-09-29), Francisco Silvetti (senast 2026-09-29), Jorge Georgieff (senast 2026-09-29), Tiziano Van Der Tuin (senast 2026-09-29), Juan Fernández Soler (senast 2026-09-29), Enzo Sanabria (senast 2026-09-29).

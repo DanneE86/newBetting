@@ -1,6 +1,6 @@
 # Juventus (Serie A) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -56,12 +56,12 @@ Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: s
 | Milan | 17 | 6-7-4 | 15–14 | −0,08 | +13 pe | 2026-09-06 1-1 (h) |
 | Fiorentina | 16 | 7-5-4 | 17–16 | −0,23 | +6 pe | 2026-05-17 0-2 (h) |
 | Inter | 16 | 8-4-4 | 25–20 | +0,50 | −4 pe | 2026-02-14 2-3 (b) |
-| Napoli | 16 | 6-2-8 | 22–24 | −0,21 | −17 pe | 2026-01-25 3-0 (h) |
 | Roma | 16 | 7-6-3 | 22–19 | +0,09 | +9 pe | 2026-03-01 3-3 (b) |
 | Torino | 16 | 9-7-0 | 25–11 | +0,15 | +18 pe | 2026-05-24 2-2 (b) |
 | Udinese | 16 | 13-1-2 | 33–10 | +0,38 | −17 pe | 2026-03-14 1-0 (b) |
 | Bologna | 15 | 9-6-0 | 28–11 | +0,26 | +15 pe | 2026-04-19 2-0 (h) |
 | Lazio | 15 | 7-4-4 | 24–17 | −0,01 | −1 pe | 2026-02-08 2-2 (h) |
+| Napoli | 15 | 5-2-8 | 19–23 | −0,30 | −16 pe | 2026-01-25 3-0 (h) |
 | Cagliari | 14 | 10-2-2 | 26–11 | +0,07 | −7 pe | 2026-01-17 0-1 (b) |
 | Genoa | 14 | 9-3-2 | 23–10 | −0,04 | −0 pe | 2026-04-06 2-0 (h) |
 | Sassuolo | 14 | 7-3-4 | 31–19 | −0,37 | −0 pe | 2026-09-13 2-3 (b) |
@@ -99,7 +99,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-08-31 | Europa 2501 | Genoa - Juventus | 2 ✓ | 62 % | 52 % |
 | 2025-08-24 | Europa 2499 | Juventus - Parma | 1 ✓ | 84 % | 67 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Luciano Spalletti. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -108,6 +108,7 @@ Tränare: Luciano Spalletti. Betyg, mål och assist gäller innevarande säsong 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
+|  | Neto | GK | 37 | Brazil | 472 k€ | – | 0 | 0 | 0/0 |  |
 | 1 | Kamil Grabara | GK | 27 | Poland | 10,4 M€ | – | 0 | 0 | 0/0 | skadad, åter Out for season |
 | 23 | Carlo Pinsoglio | GK | 36 | Italy | 320 k€ | – | 0 | 0 | 0/0 |  |
 | 25 | Guglielmo Vicario | GK | 29 | Italy | 19,4 M€ | 6,93 | 0 | 0 | 0/0 |  |

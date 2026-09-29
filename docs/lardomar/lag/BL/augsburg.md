@@ -1,6 +1,6 @@
 # Augsburg (Bundesliga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [BL](../../ligor/BL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [BL](../../ligor/BL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -80,7 +80,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-01-11 | Europa 2539 | Mönchengladbach - Augsburg | 1 | 20 % | 24 % |
 | 2025-09-14 | Europa 2505 | St. Pauli - Augsburg | 1 | 22 % | 27 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Manuel Baum. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -110,14 +110,14 @@ Tränare: Manuel Baum. Betyg, mål och assist gäller innevarande säsong enligt
 | 16 | Hennes Behrens | LWB,LB | 21 | Germany | 738 k€ | 7,65 | 0 | 1 | 1/0 |  |
 | 18 | Tim Breithaupt | CDM,CM | 24 | Germany | 827 k€ | – | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
 | 19 | Robin Fellhauer | RWB,CDM,CAM,LWB,RM | 28 | Germany | 2,5 M€ | 7,22 | 2 | 0 | 0/0 |  |
-| 20 | Alexis Claude-Maurice | CAM,LW,LM | 28 | France | 10,2 M€ | 7,20 | 1 | 1 | 0/0 |  |
-| 21 | Arijon Ibrahimović | CAM,LM,RW,LW,ST,RWB | 20 | Germany | 5,3 M€ | 6,76 | 1 | 0 | 0/0 |  |
+| 20 | Alexis Claude-Maurice | CAM,ST,LW | 28 | France | 10,2 M€ | 7,20 | 1 | 1 | 0/0 |  |
+| 21 | Arijon Ibrahimović | CAM,LM,RW,ST,RWB,LW | 20 | Germany | 5,3 M€ | 6,76 | 1 | 0 | 0/0 |  |
 | 23 | Faik Sakar | Midfielder | 18 | Germany | 820 k€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
 | 27 | Marius Wolf | RWB,LWB | 31 | Germany | 1,5 M€ | 7,18 | 0 | 1 | 0/0 |  |
 | 30 | Anton Kade | CAM,RWB,ST,RW,RM | 22 | Germany | 8,2 M€ | 8,78 | 1 | 1 | 0/0 | osäker |
-| 32 | Fabian Rieder | CAM,CDM,CM,RW | 24 | Switzerland | 6,5 M€ | 8,02 | 1 | 3 | 1/0 |  |
+| 32 | Fabian Rieder | CAM,CDM,RW,LWB | 24 | Switzerland | 6,5 M€ | 8,02 | 1 | 3 | 1/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 9 | Rodrigo Ribeiro | ST,LW,CAM | 21 | Portugal | 2,8 M€ | 5,98 | 1 | 0 | 0/0 |  |
 | 11 | Michael Gregoritsch | ST,CAM | 32 | Austria | 985 k€ | 7,57 | 3 | 0 | 0/0 | osäker |
-| 15 | Steve Mounié | ST | 31 | Benin | 952 k€ | – | 0 | 0 | 0/0 |  |
+| 15 | Steve Mounié | ST | 32 | Benin | 952 k€ | – | 0 | 0 | 0/0 |  |
 | 39 | Uchenna Ogundu | ST | 20 | Nigeria | 3,6 M€ | – | 0 | 0 | 0/0 |  |

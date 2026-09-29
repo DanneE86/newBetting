@@ -1,6 +1,6 @@
 # Union Berlin (Bundesliga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [BL](../../ligor/BL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [BL](../../ligor/BL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -80,7 +80,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-11-23 | Europa 2525 | St. Pauli - Union Berlin | 2 ✓ | 33 % | 33 % |
 | 2025-09-28 | Europa 2509 | Union Berlin - Hamburg | X | 58 % | 47 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Mauro Lustrinelli. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

@@ -1,6 +1,6 @@
 # Santa Clara (Primeira Liga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [PT](../../ligor/PT.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [PT](../../ligor/PT.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -55,7 +55,7 @@ Form (äldst → senast): FOVVOVVO · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Petit. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -74,7 +74,7 @@ Tränare: Petit. Betyg, mål och assist gäller innevarande säsong enligt FotMo
 | 5 | Guilherme Romão | LB | 28 | Brazil | 472 k€ | 7,09 | 0 | 0 | 1/0 |  |
 | 19 | Ythallo | CB | 22 | Brazil | 679 k€ | – | 0 | 0 | 0/0 |  |
 | 21 | Emanuel Moreira | CB | 23 | Portugal | 438 k€ | 7,05 | 0 | 0 | 2/0 |  |
-| 32 | MT | CB,LB | 25 | Brazil | 2,4 M€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
+| 32 | MT | LB | 25 | Brazil | 2,4 M€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
 | 42 | Lucas Soares | RB,RWB,RM | 28 | Brazil | 856 k€ | 7,29 | 0 | 0 | 1/0 |  |
 | 85 | Kamika | CB | 22 | Portugal | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |

@@ -1,6 +1,6 @@
 # Moreirense (Primeira Liga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [PT](../../ligor/PT.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [PT](../../ligor/PT.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -55,7 +55,7 @@ Form (äldst → senast): OOFVFFVO · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Vasco Botelho da Costa. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -66,16 +66,15 @@ Tränare: Vasco Botelho da Costa. Betyg, mål och assist gäller innevarande sä
 | 12 | Francisco Barbosa | Keeper | 18 | Portugal | – | – | 0 | 0 | 0/0 |  |
 | 13 | André Ferreira | GK | 30 | Portugal | 491 k€ | 6,45 | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-|  | Henrique Sa | Defender | 21 | Portugal | – | – | 0 | 0 | 0/0 |  |
 | 2 | Leandro Santos | RB,RM | 21 | Portugal | 1,8 M€ | 6,38 | 0 | 0 | 1/0 |  |
 | 4 | Kevyn Monteiro | CB | 21 | Brazil | – | 6,41 | 0 | 0 | 1/0 |  |
 | 17 | Álvaro Martínez | LB | 24 | Spain | 549 k€ | – | 0 | 0 | 0/0 |  |
 | 26 | Maracás | CB | 32 | Brazil | 306 k€ | 6,50 | 0 | 0 | 1/0 |  |
-| 27 | Kiko | LB,CB,LM | 24 | Portugal | – | 6,85 | 1 | 0 | 2/0 |  |
+| 27 | Kiko | LB | 24 | Portugal | – | 6,85 | 1 | 0 | 2/0 |  |
 | 31 | Pedro Jesus | Defender | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 32 | Janderson | Defender | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 66 | Gilberto Batista | CB | 22 | Guinea-Bissau | 1,2 M€ | 6,84 | 0 | 0 | 2/0 |  |
-| 76 | Dinis Pinto | RB,CB | 26 | Portugal | 1,8 M€ | 6,93 | 1 | 0 | 1/0 |  |
+| 76 | Dinis Pinto | RB | 26 | Portugal | 1,8 M€ | 6,93 | 1 | 0 | 1/0 |  |
 | 77 | Koby Mottoh | LW | 20 | Ghana | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 6 | Miguel Silva | Midfielder | 18 | Portugal | 697 k€ | – | 0 | 0 | 0/0 |  |
@@ -98,3 +97,5 @@ Tränare: Vasco Botelho da Costa. Betyg, mål och assist gäller innevarande sä
 | 89 | Afonso Vieira | RW | 19 | Portugal | – | 6,11 | 0 | 0 | 0/0 |  |
 | 90 | Rodrigo Soares | Attacker | 19 | Portugal | – | – | 0 | 0 | 0/0 |  |
 | 99 | Maranhão | ST | 24 | Brazil | 656 k€ | 6,07 | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Henrique Sa (senast 2026-09-29).

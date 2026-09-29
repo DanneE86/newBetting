@@ -1,6 +1,6 @@
 # Lazio (Serie A) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -58,11 +58,11 @@ Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: s
 | Atalanta | 16 | 4-5-7 | 20–27 | −0,14 | +4 pe | 2026-02-14 0-2 (h) |
 | Fiorentina | 16 | 8-3-5 | 23–16 | +0,16 | −9 pe | 2026-04-13 0-1 (b) |
 | Inter | 16 | 4-3-9 | 16–32 | −0,04 | −7 pe | 2026-05-09 0-3 (h) |
-| Roma | 16 | 5-4-7 | 15–19 | −0,12 | −4 pe | 2026-05-17 0-2 (b) |
 | Torino | 16 | 6-7-3 | 25–19 | −0,07 | +15 pe | 2026-03-01 0-2 (b) |
 | Udinese | 16 | 6-7-3 | 24–19 | −0,18 | +16 pe | 2026-09-07 2-1 (b) |
 | Juventus | 15 | 4-4-7 | 17–24 | +0,02 | −1 pe | 2026-02-08 2-2 (b) |
 | Napoli | 15 | 6-2-7 | 17–23 | +0,22 | −14 pe | 2026-04-18 2-0 (b) |
+| Roma | 15 | 5-4-6 | 14–16 | −0,04 | −3 pe | 2026-05-17 0-2 (b) |
 | Cagliari | 14 | 12-2-0 | 27–9 | +0,75 | −10 pe | 2026-02-21 0-0 (b) |
 | Genoa | 14 | 11-1-2 | 33–13 | +0,62 | −20 pe | 2026-08-30 1-0 (h) |
 | Sassuolo | 14 | 7-3-4 | 20–15 | −0,08 | −2 pe | 2026-03-09 2-1 (h) |
@@ -97,11 +97,11 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-08-31 | Europa 2501 | Lazio - Verona | 1 ✓ | 72 % | 61 % |
 | 2025-08-24 | Europa 2499 | Como - Lazio | 1 | 29 % | 32 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Gennaro Gattuso. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Luca Pellegrini (osäker), Adam Marušić (skadad, åter Early October 2026), Patric (osäker), Nicolò Rovella (skadad, åter Early October 2026), Danilo Cataldi (skadad, åter Mid October 2026), Albert Guðmundsson (osäker)
+**Skadade/borta nu:** Luca Pellegrini (osäker), Adam Marušić (skadad, åter Early October 2026), Nicolò Rovella (skadad, åter Early October 2026), Danilo Cataldi (skadad, åter Mid October 2026), Albert Guðmundsson (osäker)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -124,7 +124,6 @@ Tränare: Gennaro Gattuso. Betyg, mål och assist gäller innevarande säsong en
 | 76 | Filipe Bordon | CB | 21 | Brazil | 1,2 M€ | – | 0 | 0 | 0/0 |  |
 | 77 | Adam Marušić | RB,LB | 33 | Montenegro | 2,1 M€ | 5,80 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
 | | **Mittfältare** | | | | | | | | | |
-| 4 | Patric | CM | 33 | Spain | 954 k€ | – | 0 | 0 | 0/0 | osäker |
 | 6 | Nicolò Rovella | CM | 24 | Italy | 19,8 M€ | 7,20 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
 | 7 | Fisayo Dele-Bashiru | CM | 25 | Nigeria | 4,9 M€ | 6,64 | 0 | 0 | 0/0 |  |
 | 8 | Bruno Galassi | ST | 19 | Spain | – | – | 0 | 0 | 0/0 |  |
@@ -143,3 +142,5 @@ Tränare: Gennaro Gattuso. Betyg, mål och assist gäller innevarande säsong en
 | 22 | Matteo Cancellieri | RW | 24 | Italy | 3,2 M€ | 7,10 | 1 | 0 | 1/0 |  |
 | 63 | Federico Serra | Attacker | 20 | Italy | 541 k€ | – | 0 | 0 | 0/0 |  |
 | 80 | Albert Guðmundsson | LW,ST,CAM,LM | 29 | Iceland | 11,1 M€ | 6,62 | 1 | 0 | 1/0 | osäker |
+
+Har lämnat truppen sedan vi började spara (1): Patric (senast 2026-09-28).

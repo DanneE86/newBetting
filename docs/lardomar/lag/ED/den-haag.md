@@ -1,6 +1,6 @@
 # Den Haag (Eredivisie) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [ED](../../ligor/ED.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [ED](../../ligor/ED.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -37,9 +37,9 @@ Form (äldst → senast): FFFFOFFO · senaste match 2026-09-19
 | Ajax | 6 | 0-0-6 | 5–27 | −0,20 | −8 pe | 2021-03-21 0-5 (b) |
 | Feyenoord | 6 | 2-2-2 | 13–13 | +0,91 | +19 pe | 2026-08-30 2-2 (b) |
 | Groningen | 6 | 1-1-4 | 3–10 | −0,48 | −9 pe | 2026-08-16 1-4 (h) |
-| Heerenveen | 6 | 0-4-2 | 7–11 | −0,32 | +43 pe | 2021-03-06 0-3 (b) |
 | Utrecht | 6 | 1-1-4 | 9–16 | −0,00 | −2 pe | 2021-04-04 1-4 (h) |
 | For Sittard | 5 | 0-1-4 | 2–9 | −1,01 | −4 pe | 2026-09-06 2-3 (h) |
+| Heerenveen | 5 | 0-3-2 | 6–10 | −0,35 | +37 pe | 2021-03-06 0-3 (b) |
 | PSV Eindhoven | 5 | 0-1-4 | 4–15 | −0,21 | +5 pe | 2021-02-13 2-2 (h) |
 | Willem II | 5 | 2-2-1 | 14–10 | +0,48 | +14 pe | 2021-05-13 1-4 (h) |
 | Zwolle | 5 | 3-0-2 | 6–7 | +0,75 | −26 pe | 2021-05-09 1-0 (b) |
@@ -51,7 +51,7 @@ Form (äldst → senast): FFFFOFFO · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Robin Peter. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -69,11 +69,9 @@ Tränare: Robin Peter. Betyg, mål och assist gäller innevarande säsong enligt
 | 3 | Pascal Mulder | CB | 27 | Netherlands | 230 k€ | 6,57 | 0 | 0 | 1/0 |  |
 | 4 | Matteo Waem | CB | 26 | Belgium | 759 k€ | 6,52 | 0 | 0 | 1/0 |  |
 | 5 | Jonas Jensen-Abbew | CB | 24 | Denmark | 768 k€ | 6,36 | 0 | 0 | 0/0 |  |
-| 5 | Mees Kreekels | LB,RB | 24 | Netherlands | 217 k€ | – | 0 | 0 | 0/0 |  |
 | 15 | Milan Hokke | CB,LB,RB | 22 | Netherlands | 450 k€ | 6,71 | 0 | 1 | 0/0 |  |
 | 18 | Sékou Sylla | LB,LW | 27 | Guinea | 369 k€ | 6,20 | 1 | 0 | 1/0 |  |
 | 22 | Lasse Wilhelm | CB | 23 | Germany | 665 k€ | 6,32 | 0 | 0 | 0/0 |  |
-| 31 | Devyn Payne | Defender | 21 | USA | – | – | 0 | 0 | 0/0 |  |
 | 35 | Sanyika Bergtop | LB | 19 | Suriname | 631 k€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 8 | Jan Žambůrek | CM,CDM | 25 | Czechia | 563 k€ | 6,32 | 0 | 0 | 0/0 |  |
@@ -82,11 +80,9 @@ Tränare: Robin Peter. Betyg, mål och assist gäller innevarande säsong enligt
 | 16 | Finn de Bruin | CM | 22 | Netherlands | 359 k€ | 6,54 | 0 | 1 | 1/0 |  |
 | 17 | Jalen Hawkings | RW,CM | 25 | USA | 375 k€ | 6,28 | 0 | 0 | 1/0 |  |
 | 25 | Juho Kilo | CDM,CM | 24 | Finland | 1,1 M€ | 7,01 | 0 | 1 | 2/0 |  |
-| 30 | Joey Brandt | Midfielder | 21 | Netherlands | – | – | 0 | 0 | 0/0 |  |
 | 33 | Matěj Sín | CM,CAM,RW | 22 | Czechia | 2,5 M€ | 6,87 | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 |  | Alex Pozo | RW,RB | 27 | Spain | 914 k€ | – | 0 | 0 | 0/0 |  |
-|  | Jaynilson Geoffery | Attacker | 20 | Netherlands | – | – | 0 | 0 | 0/0 |  |
 | 7 | Daryl van Mieghem | RW,RM | 36 | Netherlands | 159 k€ | 6,21 | 0 | 0 | 0/0 |  |
 | 9 | Jesse Bal | ST | 19 | Netherlands | 919 k€ | 6,23 | 1 | 0 | 0/0 |  |
 | 10 | Illaijh de Ruijter | RW,LW | 20 | Netherlands | 1,0 M€ | 6,09 | 0 | 0 | 0/0 |  |
@@ -94,6 +90,7 @@ Tränare: Robin Peter. Betyg, mål och assist gäller innevarande säsong enligt
 | 21 | Cameron Peupion | LW,RW | 24 | Australia | 549 k€ | – | 0 | 0 | 0/0 | skadad, åter Late September 2026 |
 | 27 | Nigel Thomas | LW,RW,LM | 25 | Netherlands | 303 k€ | 6,73 | 1 | 1 | 1/0 |  |
 | 32 | Dani van Leonen | Attacker | 19 | Netherlands | – | – | 0 | 0 | 0/0 |  |
-| 33 | Issac Dijkhuizen | Attacker | 22 | Netherlands | – | – | 0 | 0 | 0/0 |  |
 | 46 | Yannick Eduardo | ST | 20 | Czechia | 695 k€ | 6,69 | 2 | 1 | 0/0 |  |
 | 77 | Donat Barany | ST | 26 | Hungary | 805 k€ | 6,35 | 1 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (5): Mees Kreekels (senast 2026-09-29), Devyn Payne (senast 2026-09-29), Issac Dijkhuizen (senast 2026-09-29), Jaynilson Geoffery (senast 2026-09-29), Joey Brandt (senast 2026-09-29).

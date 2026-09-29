@@ -275,6 +275,58 @@ function archiveMatches(league) {
   return value;
 }
 
+const foldName = (s) => String(s || "").replace(/[øØ]/g, "o").replace(/[łŁ]/g, "l").replace(/ß/g, "ss").normalize("NFD")
+  .replace(/[̀-ͯ]/g, "").toLowerCase().replace(/oe/g, "o").replace(/[^a-z ]/g, " ").replace(/\s+/g, " ").trim();
+const samePlayer = (a, b) => {
+  const x = foldName(a), y = foldName(b);
+  if (x === y || ` ${y} `.includes(` ${x} `) || ` ${x} `.includes(` ${y} `)) return true;
+  const xs = x.split(" "), ys = y.split(" ");
+  return xs.length > 1 && ys.length > 1 && xs.at(-1) === ys.at(-1) && xs[0][0] === ys[0][0];
+};
+
+/**
+ * Nyckelspelare för lagklicket, så att de kan granskas:
+ * - topp 5-ligor: tipsmotorns Understat-andel (xG + xA, data/lardomar.json), kontrollerad mot aktuell trupp
+ * - övriga: FotMob-säsongen (mål + assist, sedan betyg)
+ * Plus truppens källa och spelare som Transfermarkt-kontrollen tagit bort.
+ */
+function keyPlayersInfo(league, team) {
+  const sq = readJsonCached(`data/trupper/${league}.json`)?.teams?.[team];
+  const players = sq?.players || [];
+  const find = (name) => players.find((p) => samePlayer(p.name, name));
+  const status = (p) => (!p ? "ej i truppen" : p.injury ? (/doubtful/i.test(p.injury.expectedReturn || "") ? "osäker" : `skadad${p.injury.expectedReturn ? `, åter ${p.injury.expectedReturn}` : ""}`) : "");
+  const row = (p, extra) => ({ name: p.name, pos: p.position || null, number: p.number ?? null, age: p.age ?? null, goals: p.goals ?? null, assists: p.assists ?? null, rating: p.rating ?? null, status: status(p), ...extra });
+  let source, list;
+  const us = readJsonCached("data/lardomar.json")?.teams?.[`${league}|${team}`]?.keyPlayers;
+  if (us?.length) {
+    source = "Tipsmotorn (Understat, andel av lagets xG + xA senaste året)";
+    list = us.slice(0, 6).map((k) => {
+      const p = find(k.name);
+      return p ? row(p, { share: k.share }) : { name: k.name, share: k.share, status: "ej i truppen" };
+    });
+  } else {
+    source = "FotMob, innevarande säsong (mål + assist, sedan betyg)";
+    list = players
+      .filter((p) => p.rating != null || p.goals || p.assists)
+      .sort((a, b) => ((b.goals || 0) + (b.assists || 0)) - ((a.goals || 0) + (a.assists || 0)) || (b.rating || 0) - (a.rating || 0))
+      .slice(0, 6)
+      .map((p) => row(p));
+    // Ingen säsongsstatistik (Argentina, Ettan via Transfermarkt ...): högst marknadsvärde
+    if (!list.length) {
+      source = `${sq?.source || "FotMob"}, högst marknadsvärde (ingen säsongsstatistik)`;
+      list = players.filter((p) => p.value).sort((a, b) => b.value - a.value).slice(0, 6).map((p) => row(p, { value: p.value }));
+    }
+  }
+  const excl = readJsonCached("data/trupper/_uteslutna.json")?.players || {};
+  const removed = Object.entries(excl)
+    .filter(([k]) => k.startsWith(`${league}|${team}|`))
+    .map(([, v]) => ({ name: v.name, club: v.tmClub, checkedAt: v.checkedAt }));
+  return {
+    source, list, removed,
+    squad: sq ? { source: sq.source || "FotMob", fetchedAt: sq.fetchedAt?.slice(0, 10) || null, count: players.length, coach: sq.coach || null, injured: players.filter((p) => p.injury).length } : null,
+  };
+}
+
 /**
  * Lagklick: form denna säsong (hemma eller borta), hur ofta modellen tippat laget och haft rätt,
  * och inbördes möten mot motståndaren (sviter, t.ex. "inte vunnit på 6 möten").
@@ -347,7 +399,7 @@ function teamInfo({ league, team, opp, venue }) {
   // Kalenderårsligor (Allsvenskan, MLS ...) lagras som "2026/27" men spelas 2026
   const calendarYear = readJsonCached("config/leagues.json")?.leagues?.[league]?.calendarYear;
   const seasonLabel = calendarYear ? season.slice(0, 4) : season;
-  return { league, team, opp, venue, season: seasonLabel, venueForm: formOf(atVenue), form: formOf(mine), tips, h2h };
+  return { league, team, opp, venue, season: seasonLabel, venueForm: formOf(atVenue), form: formOf(mine), tips, h2h, keyPlayers: keyPlayersInfo(league, team) };
 }
 
 /** Hur ofta 1 / X / 2 faktiskt hander per liga (alla spelade matcher i store), plus ALL. */

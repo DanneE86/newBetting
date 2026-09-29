@@ -1,6 +1,6 @@
 # Aarhus (Superligaen) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [DK](../../ligor/DK.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [DK](../../ligor/DK.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -54,7 +54,7 @@ Form (äldst → senast): OFOFFOFO · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Jakob Poulsen. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

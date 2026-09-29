@@ -1,6 +1,6 @@
 # Charlotte (MLS) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -61,7 +61,7 @@ Form (äldst → senast): VOVVOVOV · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Dean Smith. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -79,7 +79,7 @@ Tränare: Dean Smith. Betyg, mål och assist gäller innevarande säsong enligt 
 | 14 | Nathan Byrne | RB,LB | 34 | England | 137 k€ | 6,54 | 0 | 0 | 3/0 |  |
 | 15 | Harry Toffolo | LB | 31 | England | 1,2 M€ | 6,80 | 0 | 2 | 2/0 |  |
 | 22 | Henry Kessler | CB | 28 | USA | 674 k€ | 6,94 | 1 | 0 | 1/0 |  |
-| 23 | David Schnegg | LB | 27 | Austria | 674 k€ | 6,91 | 2 | 3 | 6/1 |  |
+| 23 | David Schnegg | LB | 28 | Austria | 674 k€ | 6,91 | 2 | 3 | 6/1 |  |
 | 24 | Mikah Thomas | LB | 21 | USA | – | – | 0 | 0 | 0/0 |  |
 | 34 | Andrew Johnson | CB | 22 | Saint Vincent and The Grenadines | – | – | 0 | 0 | 0/0 |  |
 | 35 | Will Cleary | RB | 23 | USA | 227 k€ | 6,73 | 1 | 1 | 0/0 |  |
@@ -102,4 +102,5 @@ Tränare: Dean Smith. Betyg, mål och assist gäller innevarande säsong enligt 
 | 27 | Nimfasha Berchimas | LW,RW,LM | 18 | USA | 1,7 M€ | – | 0 | 0 | 0/0 | skadad, åter Late October 2026 |
 | 37 | Rodolfo Aloko | RW,ST,LW | 19 | Benin | 1,6 M€ | 6,53 | 1 | 2 | 1/0 |  |
 | 41 | Brian Romero | RW | 20 | USA | 527 k€ | – | 0 | 0 | 0/0 |  |
-| 71 | Nathan Richmond | RW,CM | 22 | USA | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Nathan Richmond (senast 2026-09-29).

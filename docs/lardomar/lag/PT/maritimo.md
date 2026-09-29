@@ -1,6 +1,6 @@
 # Maritimo (Primeira Liga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [PT](../../ligor/PT.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [PT](../../ligor/PT.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -39,11 +39,11 @@ Form (äldst → senast): FVVOFFFO · senaste match 2026-09-19
 | Guimaraes | 10 | 0-2-8 | 3–12 | −0,85 | −8 pe | 2023-04-29 1-2 (h) |
 | Porto | 10 | 1-2-7 | 8–21 | +0,12 | +4 pe | 2023-02-01 0-2 (h) |
 | Sp Braga | 10 | 3-1-6 | 8–17 | +0,35 | −11 pe | 2023-02-12 1-2 (h) |
-| Sp Lisbon | 10 | 1-3-6 | 5–15 | +0,06 | +10 pe | 2023-05-13 1-2 (b) |
 | Famalicao | 9 | 1-4-4 | 9–15 | −0,29 | +17 pe | 2026-08-16 2-1 (b) |
 | Gil Vicente | 9 | 2-2-5 | 7–12 | −0,22 | −8 pe | 2026-09-19 1-1 (b) |
 | Moreirense | 9 | 3-1-5 | 8–13 | −0,19 | −19 pe | 2026-09-14 1-3 (b) |
 | Santa Clara | 9 | 4-2-3 | 15–12 | +0,35 | −9 pe | 2023-02-25 3-1 (h) |
+| Sp Lisbon | 9 | 1-3-5 | 5–13 | +0,12 | +13 pe | 2023-05-13 1-2 (b) |
 | Rio Ave | 7 | 3-3-1 | 8–6 | +0,54 | +14 pe | 2023-05-07 2-2 (h) |
 | Arouca | 5 | 1-2-2 | 7–6 | −0,28 | +10 pe | 2026-08-29 1-2 (b) |
 | Estoril | 4 | 1-1-2 | 3–5 | −0,26 | −5 pe | 2023-05-27 1-3 (b) |
@@ -53,7 +53,7 @@ Form (äldst → senast): FVVOFFFO · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Mitchell van der Gaag. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -84,12 +84,10 @@ Tränare: Mitchell van der Gaag. Betyg, mål och assist gäller innevarande säs
 | 18 | Vladan Danilović | CDM,CM,ST | 27 | Bosnia and Herzegovina | 385 k€ | 6,56 | 0 | 0 | 1/0 |  |
 | 21 | Ibrahim Alani | CM | 20 | Nigeria | 636 k€ | 5,93 | 0 | 0 | 0/0 |  |
 | 25 | Yellu Santiago | CM | 22 | Spain | 1,0 M€ | – | 0 | 0 | 0/0 |  |
-| 35 | Bryan Limbombe | RM,RW | 25 | Belgium | 373 k€ | 6,22 | 0 | 0 | 0/0 |  |
 | 66 | Israel Isaac Ayuma | CDM,CM | 21 | Nigeria | 661 k€ | 6,79 | 1 | 0 | 1/0 |  |
 | 68 | Nelio Batista | Midfielder | 17 | Portugal | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Enrique Peña Zauner | LW | 26 | Venezuela | 319 k€ | – | 0 | 0 | 0/0 |  |
-| 9 | Alberth Elis | RW | 30 | Honduras | 156 k€ | – | 0 | 0 | 0/0 |  |
 | 9 | Jose Melro | ST | 22 | Portugal | – | – | 0 | 0 | 0/0 |  |
 | 10 | Martín Tejón | LW,RW,CM | 22 | Spain | 1,6 M€ | 7,25 | 1 | 1 | 0/0 |  |
 | 11 | Simo Bouzaidi | RW,LW,RM | 26 | Morocco | 576 k€ | 7,08 | 1 | 0 | 0/0 |  |
@@ -97,4 +95,7 @@ Tränare: Mitchell van der Gaag. Betyg, mål och assist gäller innevarande säs
 | 17 | Adrián Butzke | ST | 27 | Spain | 454 k€ | 6,71 | 1 | 0 | 1/0 |  |
 | 20 | Francisco Gomes | LW,RW | 22 | Portugal | – | – | 0 | 0 | 0/0 |  |
 | 27 | Samuel Bamba | LW,ST | 22 | Germany | 378 k€ | 5,96 | 0 | 0 | 0/0 |  |
+| 35 | Bryan Limbombe | RW,RM | 25 | Belgium | 373 k€ | 6,22 | 0 | 0 | 0/0 |  |
 | 90 | Maurice Boakye | RM | 22 | Germany | 213 k€ | 6,44 | 1 | 1 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Alberth Elis (senast 2026-09-29).

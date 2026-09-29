@@ -1,6 +1,6 @@
 # York (League Two) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -39,7 +39,7 @@ Form (äldst → senast): VOVFOVFV · senaste match 2026-09-26
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Scott Lindsey. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -67,10 +67,10 @@ Tränare: Scott Lindsey. Betyg, mål och assist gäller innevarande säsong enli
 | 16 | Arthur Read | CDM,CM | 26 | England | 201 k€ | 6,04 | 0 | 0 | 0/0 |  |
 | 18 | Jovan Malcolm | CAM,ST | 23 | England | 251 k€ | 6,83 | 3 | 0 | 0/0 |  |
 | 21 | Hiram Boateng | CM,CDM | 30 | England | 77 k€ | – | 0 | 0 | 0/0 |  |
-| 23 | Joe Felix | RWB,RM,RB,RW | 26 | England | – | 6,83 | 0 | 1 | 0/0 |  |
+| 23 | Joe Felix | RWB,RM,RW,RB | 27 | England | – | 6,83 | 0 | 1 | 0/0 |  |
 | 25 | Ben Farrar | Midfielder | 18 | England | – | – | 0 | 0 | 0/0 |  |
 | 26 | Ethan Stiver | CDM | 18 | England | – | – | 0 | 0 | 0/0 |  |
-| 30 | Alex Newby | CAM,LM,LW,CM | 30 | England | 192 k€ | 7,56 | 6 | 1 | 0/0 |  |
+| 30 | Alex Newby | LM,CAM,LW,CM | 30 | England | 192 k€ | 7,56 | 6 | 1 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 9 | Josh Stones | ST,LW | 22 | England | 515 k€ | – | 0 | 0 | 0/0 |  |
 | 10 | Ollie Pearce | LW,ST,CAM | 31 | England | – | 7,24 | 3 | 4 | 1/0 |  |

@@ -1,6 +1,6 @@
 # Hammarby Talang (Div 1 Norra) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [SE3N](../../ligor/SE3N.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [SE3N](../../ligor/SE3N.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -37,3 +37,41 @@ Form senaste 8 (äldst → senast): FOOFVOFV · senaste match 2026-09-25
 | Örebro Syrianska | 2 | 2-0-0 | 5–1 | 2025-08-16 2-0 (b) |
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
+
+## Trupp (Transfermarkt, hämtad 2026-09-29)
+
+Tränare: Daniel Erlandsson. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 35 | Gustav Nyberg | Goalkeeper | 28 | Sweden | – | – | – | – | 0/0 |  |
+| 1 | Elton Fischerström Opancar | Goalkeeper | 19 | Sweden | – | – | – | – | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 21 | Jonatan Oreland | Defender | 20 | Sweden | – | – | – | – | 0/0 |  |
+| 27 | Oscar Fayli | Defender | 21 | Sweden | – | – | – | – | 0/0 |  |
+| 4 | Casper Eklund | Centre-Back | 22 | Sweden | – | – | – | – | 0/0 |  |
+| 3 | Jesper Lindahl | Centre-Back | 21 | Sweden | – | – | – | – | 0/0 |  |
+| 5 | Raymond Dwomoh | Centre-Back | 20 | Ghana | – | – | – | – | 0/0 |  |
+| 17 | Oliver Reuterswärd Corlin | Centre-Back | 21 | Sweden | – | – | – | – | 0/0 |  |
+| 18 | Björn Hedlöf | Centre-Back | 18 | Sweden | – | – | – | – | 0/0 |  |
+| 23 | Noah Ek | Left-Back | 20 | Sweden | – | – | – | – | 0/0 |  |
+| 19 | Gustav Andrén | Right-Back | 19 | Sweden | – | – | – | – | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 16 | Gent Elezaj | Central Midfield | 21 | Albania | 150 k€ | – | – | – | 0/0 |  |
+| 6 | Saah Moses Jr. | Central Midfield | 19 | Liberia | – | – | – | – | 0/0 |  |
+| 8 | William Axelsson Tervonen | Central Midfield | 23 | Sweden | – | – | – | – | 0/0 |  |
+| 13 | Alwaly Camara | Central Midfield | 18 | Senegal | – | – | – | – | 0/0 |  |
+| 20 | Alfons Lohake | Central Midfield | 20 | Sweden | – | – | – | – | 0/0 |  |
+| 11 | Adam Johansson | Attacking Midfield | 23 | Sweden | – | – | – | – | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Oskar Moczarny | Left Winger | 20 | Sweden | – | – | – | – | 0/0 |  |
+| 28 | Imran Musa | Left Winger | 18 | Nigeria | – | – | – | – | 0/0 |  |
+| 24 | William Loqvist | Right Winger | 20 | Sweden | – | – | – | – | 0/0 |  |
+| 25 | Modou Lamin Darboe | Right Winger | 19 | The Gambia | – | – | – | – | 0/0 |  |
+| 34 | Bernard Acheampong | Right Winger | 19 | Ghana | – | – | – | – | 0/0 |  |
+| 15 | William Gibson | Centre-Forward | 18 | Liberia | 50 k€ | – | – | – | 0/0 |  |
+| 9 | Emil Sadarangani | Centre-Forward | 18 | Sweden | – | – | – | – | 0/0 |  |
+| 10 | Granit Hana | Centre-Forward | 23 | Kosovo | – | – | – | – | 0/0 |  |
+| 14 | Leart Krasniqi | Centre-Forward | 18 | Albania | – | – | – | – | 0/0 |  |
+| 26 | Dennis Asprilla Ponce | Centre-Forward | 19 | Sweden | – | – | – | – | 0/0 |  |

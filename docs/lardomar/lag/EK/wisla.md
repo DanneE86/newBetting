@@ -1,11 +1,11 @@
 # Wisla (Ekstraklasa) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EK](../../ligor/EK.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EK](../../ligor/EK.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - 2021/22: −0,41 poäng per match mot marknaden. Ligan visar ingen persistens, så räkna inte med att det fortsätter.
-- Stark historik mot Piast Gliwice (−0,61 p/match mot marknaden, 9 möten), Cracovia (+0,63 p/match mot marknaden, 8 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Stark historik mot Piast Gliwice (−0,61 p/match mot marknaden, 9 möten), Cracovia (+0,63 p/match mot marknaden, 8 möten), Korona Kielce (+0,61 p/match mot marknaden, 6 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -45,9 +45,9 @@ Form (äldst → senast): FVFOVOVV · senaste match 2026-09-18
 | Jagiellonia | 8 | 3-3-2 | 13–9 | +0,16 | +11 pe | 2026-09-11 2-0 (h) |
 | Legia | 8 | 2-2-4 | 11–17 | +0,16 | +1 pe | 2022-02-25 1-2 (b) |
 | Pogon Szczecin | 8 | 2-2-4 | 10–14 | −0,08 | −2 pe | 2026-08-23 2-2 (b) |
-| Korona Kielce | 7 | 3-3-1 | 12–6 | +0,31 | +15 pe | 2026-09-05 1-1 (b) |
 | Lech Poznan | 7 | 1-2-4 | 4–14 | −0,17 | +4 pe | 2022-03-13 1-1 (h) |
 | Rakow | 7 | 1-1-5 | 6–12 | −0,42 | −12 pe | 2022-02-06 0-2 (b) |
+| Korona Kielce | 6 | 3-3-0 | 12–5 | +0,61 | +23 pe | 2026-09-05 1-1 (b) |
 | Radomiak Radom | 2 | 0-0-2 | 2–5 | −1,67 | −27 pe | 2022-05-15 2-4 (b) |
 | GKS Katowice | 1 | 1-0-0 | 2–1 | +1,34 | −26 pe | 2026-07-26 2-1 (h) |
 | Gornik Zabrze | 1 | 0-0-1 | 1–2 | −1,09 | −26 pe | 2026-08-16 1-2 (b) |
@@ -55,7 +55,7 @@ Form (äldst → senast): FVFOVOVV · senaste match 2026-09-18
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Mariusz Jop. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -92,7 +92,8 @@ Tränare: Mariusz Jop. Betyg, mål och assist gäller innevarande säsong enligt
 | | **Anfallare** | | | | | | | | | |
 |  | Oumar Conte | Attacker | 19 | Guinea | 500 k€ | – | 0 | 0 | 0/0 |  |
 | 10 | Frederico Duarte | LW,RW | 27 | Portugal | 173 k€ | 6,76 | 0 | 0 | 0/0 |  |
-| 15 | Marcin Barton | Attacker | 22 | Poland | – | – | 0 | 0 | 0/0 |  |
 | 17 | Marko Božić | LW,LM,RW | 28 | Austria | 97 k€ | 7,45 | 2 | 2 | 1/0 |  |
 | 21 | Jérémy Guillemenot | ST,CAM | 28 | Switzerland | 433 k€ | 7,22 | 1 | 0 | 0/0 |  |
 | 27 | Thody Élie Youan | ST,RM,RW | 27 | France | 956 k€ | 7,13 | 1 | 0 | 1/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Marcin Barton (senast 2026-09-29).

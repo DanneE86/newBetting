@@ -1,6 +1,6 @@
 # Dresden (2. Bundesliga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [BL2](../../ligor/BL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [BL2](../../ligor/BL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -51,7 +51,7 @@ Form (äldst → senast): FVFVFFOF · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Thomas Stamm. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -67,7 +67,6 @@ Tränare: Thomas Stamm. Betyg, mål och assist gäller innevarande säsong enlig
 | 45 | Marlon Grafe | Keeper | 20 | Germany | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 4 | Kenneth Schmidt | CB,LB | 24 | Germany | 747 k€ | – | 0 | 0 | 0/0 | skadad, åter Early November 2026 |
-| 6 | Nicolai Rapp | CB,CDM,CM | 29 | Germany | 763 k€ | 6,58 | 1 | 0 | 0/0 |  |
 | 14 | Brooklyn Ezeh | LWB | 25 | Germany | 185 k€ | 6,35 | 0 | 0 | 0/0 |  |
 | 17 | Ahmet Muhamedbegović | CB | 27 | Austria | 183 k€ | 6,71 | 0 | 1 | 1/0 |  |
 | 19 | Alexander Rossipal | LB,LWB | 30 | Germany | 199 k€ | 6,70 | 0 | 1 | 1/0 |  |
@@ -79,6 +78,7 @@ Tränare: Thomas Stamm. Betyg, mål och assist gäller innevarande säsong enlig
 | 42 | Friedrich Müller | CB | 20 | Germany | 380 k€ | 5,82 | 0 | 0 | 0/0 |  |
 | 44 | Simon Straudi | RB,RWB,LB | 27 | Italy | 142 k€ | 6,59 | 0 | 0 | 1/0 |  |
 | | **Mittfältare** | | | | | | | | | |
+| 6 | Nicolai Rapp | CB,CDM,CM | 29 | Germany | 763 k€ | 6,58 | 1 | 0 | 0/0 |  |
 | 8 | Luca Herrmann | CDM,CM | 27 | Germany | 136 k€ | 6,18 | 0 | 0 | 0/0 |  |
 | 18 | Robert Wagner | CDM,CM | 23 | Germany | 1,8 M€ | 6,70 | 1 | 0 | 2/0 |  |
 | 21 | Tobias Raschl | CM | 26 | Germany | 189 k€ | 6,49 | 0 | 1 | 0/0 |  |
@@ -91,5 +91,6 @@ Tränare: Thomas Stamm. Betyg, mål och assist gäller innevarande säsong enlig
 | 11 | Kaan İnanoğlu | RW | 21 | Turkiye | 334 k€ | 6,75 | 0 | 0 | 0/0 |  |
 | 16 | Nils Fröling | LW,CAM | 26 | Sweden | 212 k€ | 6,18 | 0 | 0 | 0/0 |  |
 | 20 | Ben Bobzien | LW,RW | 23 | Germany | 1,4 M€ | 7,37 | 1 | 1 | 2/0 |  |
-| 30 | Stefan Kutschke | ST | 37 | Germany | 142 k€ | – | 0 | 0 | 0/0 |  |
 | 33 | Christoph Daferner | ST | 28 | Germany | 469 k€ | 6,14 | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Stefan Kutschke (senast 2026-09-29).

@@ -1,6 +1,6 @@
 # Pachuca (Liga MX) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [MX](../../ligor/MX.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [MX](../../ligor/MX.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -60,7 +60,7 @@ Form (äldst → senast): FFFOOVVO · senaste match 2026-09-21
 
 Ligans test av inbördes möten mot marknaden: svag signal (inte bekräftad).
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Benjamín Mora. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -82,17 +82,18 @@ Tränare: Benjamín Mora. Betyg, mål och assist gäller innevarande säsong enl
 | 32 | Pedro Budib | Defender | 22 | Lebanon | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 7 | Rodolfo Pizarro | CAM,CM | 32 | Mexico | 730 k€ | – | 0 | 0 | 0/0 |  |
+| 8 | Alexéi Domínguez | RW,RWB,CAM | 21 | Mexico | 3,1 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid November 2026 |
 | 16 | Christian Rivera | CDM,CM | 30 | Colombia | 1,4 M€ | – | 0 | 0 | 0/0 |  |
 | 26 | Alán Bautista | CDM,CAM,CM | 24 | Mexico | – | – | 0 | 0 | 0/0 |  |
 | 30 | Sergio Rodríguez | CDM | 22 | Mexico | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 8 | Alexéi Domínguez | RW,RWB,CAM | 21 | Mexico | 3,1 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid November 2026 |
 | 9 | Adrián Alcaraz | ST | 27 | Paraguay | 820 k€ | – | 0 | 0 | 0/0 |  |
 | 11 | Oussama Idrissi | LW,LM | 30 | Morocco | 2,4 M€ | – | 0 | 0 | 0/0 |  |
-| 19 | Illian Hernández | ST | 26 | Mexico | 462 k€ | – | 0 | 0 | 0/0 |  |
 | 21 | Nicolás Vallejo | LW,RW,LM | 22 | Argentina | 1,0 M€ | – | 0 | 0 | 0/0 |  |
 | 23 | Salomón Rondón | ST | 37 | Venezuela | 986 k€ | – | 0 | 0 | 0/0 |  |
 | 28 | Andrés Arroyo | CAM,RW,LW,LM | 24 | Colombia | 706 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 29 | Kenedy | RW,CAM,RM | 30 | Brazil | 443 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 139 | Jonatan Ramirez | Attacker | 19 | Mexico | – | – | 0 | 0 | 0/0 |  |
 | 187 | Gael Álvarez | RW | 20 | Mexico | 709 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Illian Hernández (senast 2026-09-28).

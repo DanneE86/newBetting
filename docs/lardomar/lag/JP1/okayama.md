@@ -1,6 +1,6 @@
 # Okayama (J1 League) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [JP1](../../ligor/JP1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [JP1](../../ligor/JP1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -49,20 +49,18 @@ Form (äldst → senast): FVOFVVVF · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Takashi Kiyama. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-|  | Kohei Kawakami | GK | 25 | Japan | – | – | 0 | 0 | 0/0 |  |
 | 1 | Lennart Moser | GK | 26 | Germany | 294 k€ | 6,42 | 0 | 0 | 0/0 |  |
 | 13 | Shun Matsuda | GK | 19 | Japan | – | 5,94 | 0 | 0 | 0/0 |  |
 | 52 | Taro Hamada | GK | 26 | Japan | 237 k€ | – | 0 | 0 | 0/0 |  |
 | 77 | Goro Kawanami | GK | 35 | Japan | 155 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 5 | Shu Ikedo | RWB | 20 | Japan | – | – | 0 | 0 | 0/0 |  |
 | 6 | Hiroshi Omori | CB | 24 | Japan | 285 k€ | 7,26 | 1 | 0 | 1/0 |  |
 | 18 | Daichi Tagami | CB | 33 | Japan | 168 k€ | – | 0 | 0 | 0/0 |  |
 | 31 | Ryo Senda | Defender | 19 | Japan | – | – | 0 | 0 | 0/0 |  |
@@ -94,3 +92,5 @@ Tränare: Takashi Kiyama. Betyg, mål och assist gäller innevarande säsong enl
 | 30 | Kanshiro Suemune | Attacker | 19 | Japan | – | – | 0 | 0 | 0/0 |  |
 | 79 | Noah Kenshin Browne | LWB,ST | 25 | Japan | 369 k€ | 6,57 | 1 | 1 | 0/0 |  |
 | 99 | Lucão | ST | 31 | Brazil | 209 k€ | 6,72 | 1 | 3 | 1/1 |  |
+
+Har lämnat truppen sedan vi började spara (2): Kohei Kawakami (senast 2026-09-29), Shu Ikedo (senast 2026-09-29).

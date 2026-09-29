@@ -1,6 +1,6 @@
 # Sparta Prague (Chance Liga) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [CZ](../../ligor/CZ.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [CZ](../../ligor/CZ.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -35,7 +35,7 @@ Form senaste 8 (äldst → senast): VFVVFFVV · senaste match 2026-09-20
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Brian Priske. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -46,7 +46,6 @@ Tränare: Brian Priske. Betyg, mål och assist gäller innevarande säsong enlig
 | | **Målvakter** | | | | | | | | | |
 | 44 | Jakub Surovcík | GK | 24 | Slovakia | 760 k€ | 6,69 | 0 | 0 | 0/0 |  |
 | 47 | Krisztián Hegyi | GK | 24 | Hungary | 177 k€ | – | 0 | 0 | 0/0 |  |
-| 61 | Daniel Kerl | Keeper | 25 | Czechia | 164 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 3 | Pavel Kaderábek | RM,RB,CB,LB | 34 | Czechia | 530 k€ | 6,45 | 0 | 0 | 1/0 |  |
 | 4 | Jakub Martinec | CB | 28 | Czechia | 689 k€ | – | 0 | 0 | 0/0 | skadad, åter Unknown |
@@ -60,7 +59,7 @@ Tränare: Brian Priske. Betyg, mål och assist gäller innevarande säsong enlig
 | 33 | Elias Cobbaut | CB | 28 | Belgium | 229 k€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 2 | Martin Suchomel | RWB,RB,LM | 24 | Czechia | 654 k€ | 6,97 | 0 | 1 | 2/0 |  |
-| 5 | Santiago Eneme | CM,LW,CDM | 25 | Equatorial Guinea | 1,2 M€ | 6,47 | 0 | 0 | 0/0 |  |
+| 5 | Santiago Eneme | CM,LW,CDM | 26 | Equatorial Guinea | 1,2 M€ | 6,47 | 0 | 0 | 0/0 |  |
 | 8 | Magnus Kofod Andersen | CB | 27 | Denmark | 926 k€ | – | 0 | 0 | 0/0 | skadad, åter Unknown |
 | 11 | Matěj Ryneš | LB,LM,LWB | 25 | Czechia | 2,2 M€ | 7,16 | 1 | 1 | 1/0 |  |
 | 18 | Andy Irving | CDM,CM | 26 | Scotland | 2,8 M€ | 7,23 | 2 | 1 | 0/0 |  |
@@ -78,3 +77,5 @@ Tränare: Brian Priske. Betyg, mål och assist gäller innevarande säsong enlig
 | 29 | Matyás Vojta | ST,CAM | 22 | Czechia | 2,0 M€ | 5,80 | 0 | 0 | 0/0 |  |
 | 31 | Matěj Jurásek | RW | 23 | Czechia | 4,8 M€ | 6,38 | 0 | 0 | 0/0 |  |
 | 52 | Ondřej Penxa | Attacker | 19 | Czechia | 681 k€ | – | 0 | 0 | 0/0 | skadad, åter Unknown |
+
+Har lämnat truppen sedan vi började spara (1): Daniel Kerl (senast 2026-09-29).

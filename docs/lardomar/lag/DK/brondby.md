@@ -1,6 +1,6 @@
 # Brondby (Superligaen) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [DK](../../ligor/DK.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [DK](../../ligor/DK.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -64,7 +64,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-03-01 | Europa 2553 | Midtjylland - Bröndby | X | 10 % | 17 % |
 | 2026-02-15 | Europa 2549 | Viborg - Bröndby | 1 | 34 % | 36 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Thomas Nørgaard. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

@@ -1,6 +1,6 @@
 # St Pauli (2. Bundesliga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [BL2](../../ligor/BL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [BL2](../../ligor/BL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -58,7 +58,7 @@ Form (äldst → senast): FFOOFOVO · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Marcel Rapp. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -74,7 +74,7 @@ Tränare: Marcel Rapp. Betyg, mål och assist gäller innevarande säsong enligt
 | 2 | Rony Jansson | RB | 22 | Finland | 400 k€ | 6,04 | 0 | 0 | 0/0 |  |
 | 4 | David Nemeth | CB | 25 | Austria | 1,5 M€ | 7,16 | 0 | 1 | 2/0 |  |
 | 6 | Marcus Mathisen | CB | 30 | Denmark | 476 k€ | 7,44 | 1 | 0 | 1/0 |  |
-| 8 | Eric Smith | CB,CDM | 29 | Sweden | 2,0 M€ | 7,08 | 0 | 0 | 1/0 |  |
+| 8 | Eric Smith | CB,CDM,CM | 29 | Sweden | 2,0 M€ | 7,08 | 0 | 0 | 1/0 |  |
 | 15 | Tomoya Andō | CB | 27 | Japan | 1,5 M€ | 6,39 | 0 | 0 | 3/1 |  |
 | 25 | Adam Dźwigała | CB | 31 | Poland | 335 k€ | 6,36 | 0 | 0 | 0/0 |  |
 | 41 | Jannik Westphal | CB | 22 | Germany | 118 k€ | – | 0 | 0 | 0/0 |  |
@@ -82,13 +82,12 @@ Tränare: Marcel Rapp. Betyg, mål och assist gäller innevarande säsong enligt
 |  | Gísli Thórdarson | CM,CDM | 22 | Iceland | 850 k€ | – | 0 | 0 | 0/0 | skadad, åter Unknown |
 | 10 | Branimir Hrgota | CAM,ST,CM | 33 | Sweden | 268 k€ | 7,15 | 0 | 1 | 0/0 |  |
 | 11 | Arkadiusz Pyrka | RWB,RM,LWB,RB | 24 | Poland | 2,7 M€ | 7,50 | 0 | 2 | 3/0 |  |
-| 16 | Joel Chima Fujita | CAM,CDM,RM,CM,LW | 24 | Japan | 8,3 M€ | 7,05 | 1 | 0 | 1/0 |  |
+| 16 | Joel Chima Fujita | CDM,CAM,CM,LW | 24 | Japan | 8,3 M€ | 7,05 | 1 | 0 | 1/0 |  |
 | 20 | Mathias Rasmussen | CDM,CAM | 28 | Norway | 1,4 M€ | 7,21 | 0 | 0 | 1/0 |  |
 | 21 | Lars Ritzka | LWB,CB,LM | 28 | Germany | 545 k€ | 6,74 | 0 | 0 | 1/0 |  |
 | 22 | Samuel Klein | CM,CDM,CAM,LM | 22 | Australia | – | – | 0 | 0 | 0/0 |  |
 | 23 | Louis Oppie | LWB,LM,LB | 24 | Germany | 1,6 M€ | 6,87 | 0 | 0 | 0/0 |  |
 | 24 | Connor Metcalfe | CAM,RM,ST,CDM | 26 | Australia | 870 k€ | 7,17 | 0 | 0 | 0/0 |  |
-| 28 | Mathias Pereira Lage | CAM,ST,LM | 29 | Portugal | 1,8 M€ | – | 0 | 0 | 0/0 | skadad, åter Unknown |
 | 42 | Marwin Schmitz | Midfielder | 19 | Germany | 503 k€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Youssoupha Niang | RW | 20 | Germany | 332 k€ | 6,07 | 0 | 0 | 0/0 |  |
@@ -98,3 +97,4 @@ Tränare: Marcel Rapp. Betyg, mål och assist gäller innevarande säsong enligt
 | 18 | Taichi Hara | ST,LW | 27 | Japan | 570 k€ | 7,16 | 2 | 1 | 0/0 |  |
 | 19 | Martijn Kaars | ST | 27 | Netherlands | 1,8 M€ | 6,81 | 2 | 0 | 0/0 |  |
 | 26 | Ricky-Jade Jones | ST | 23 | England | 856 k€ | 6,15 | 0 | 1 | 1/0 |  |
+| 28 | Mathias Pereira Lage | ST,CAM,LW | 29 | Portugal | 1,8 M€ | – | 0 | 0 | 0/0 | skadad, åter Unknown |

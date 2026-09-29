@@ -1,6 +1,6 @@
 # Div 1 Norra (SE3N) – lärdomar
 
-Genererad 2026-09-28 av `node scripts/analyze-learnings.mjs`. Ligan saknar oddshistorik (inga stängningsodds i våra källor), så signaler och kalibrering kan inte testas mot marknaden här. Alla matcher: `data/matcher/SE3N.csv`.
+Genererad 2026-09-29 av `node scripts/analyze-learnings.mjs`. Ligan saknar oddshistorik (inga stängningsodds i våra källor), så signaler och kalibrering kan inte testas mot marknaden här. Alla matcher: `data/matcher/SE3N.csv`.
 
 ## Lärdomar i korthet
 
@@ -16,7 +16,7 @@ Genererad 2026-09-28 av `node scripts/analyze-learnings.mjs`. Ligan saknar oddsh
 | 2025/26 | 240 | 46 % | 20 % | 34 % | 3,36 | 64 % | 65 % |
 | 2026/27 | 192 | 40 % | 21 % | 39 % | 3,14 | 59 % | 56 % |
 
-## Tabell nu (FotMob, 2026-09-28)
+## Tabell nu (FotMob, 2026-09-29)
 
 **Norra**
 
@@ -29,11 +29,11 @@ Genererad 2026-09-28 av `node scripts/analyze-learnings.mjs`. Ligan saknar oddsh
 | 5 | FBK Karlstad | 24 | 12 | 6 | 6 | 39-33 | 6 | 42 |
 | 6 | Karlstad | 24 | 11 | 7 | 6 | 36-24 | 12 | 40 |
 | 7 | Enköping | 24 | 12 | 3 | 9 | 37-40 | -3 | 39 |
-| 8 | Assyriska FF | 24 | 9 | 5 | 10 | 43-42 | 1 | 32 |
+| 8 | Assyriska | 24 | 9 | 5 | 10 | 43-42 | 1 | 32 |
 | 9 | Gefle | 24 | 9 | 3 | 12 | 29-42 | -13 | 30 |
 | 10 | Umeå | 24 | 8 | 5 | 11 | 32-40 | -8 | 29 |
 | 11 | Karlberg | 24 | 8 | 5 | 11 | 30-39 | -9 | 29 |
-| 12 | Vasalunds | 24 | 7 | 6 | 11 | 35-48 | -13 | 27 |
+| 12 | Vasalund | 24 | 7 | 6 | 11 | 35-48 | -13 | 27 |
 | 13 | Sollentuna | 24 | 5 | 9 | 10 | 22-33 | -11 | 24 |
 | 14 | Piteå | 24 | 5 | 6 | 13 | 29-45 | -16 | 21 |
 | 15 | Järfälla | 24 | 5 | 3 | 16 | 32-54 | -22 | 18 |
@@ -46,7 +46,6 @@ Tabellhistorik (en rad per lag och dag sedan 2026-09-28): `data/ligor/SE3N.json`
 - [AFC Eskilstuna](../lag/SE3N/afc-eskilstuna.md)
 - [Arlanda](../lag/SE3N/arlanda.md)
 - [Assyriska](../lag/SE3N/assyriska.md)
-- [Assyriska FF](../lag/SE3N/assyriska-ff.md)
 - [Enköping](../lag/SE3N/enkoping.md)
 - [FBK Karlstad](../lag/SE3N/fbk-karlstad.md)
 - [Gefle](../lag/SE3N/gefle.md)
@@ -60,4 +59,3 @@ Tabellhistorik (en rad per lag och dag sedan 2026-09-28): `data/ligor/SE3N.json`
 - [Stocksund](../lag/SE3N/stocksund.md)
 - [Umeå](../lag/SE3N/umea.md)
 - [Vasalund](../lag/SE3N/vasalund.md)
-- [Vasalunds](../lag/SE3N/vasalunds.md)

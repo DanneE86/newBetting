@@ -1,6 +1,6 @@
 # FC Koln (Bundesliga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [BL](../../ligor/BL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [BL](../../ligor/BL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -86,7 +86,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-01-14 | Europa 2540 | Köln - Bayern München | 2 | 3 % | 10 % |
 | 2025-09-28 | Europa 2509 | Köln - Stuttgart | 2 | 31 % | 37 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Rene Wagner. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

@@ -1,6 +1,6 @@
 # Lecce (Serie A) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -45,7 +45,7 @@ Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 l
 | Ivan Ilic | 10 % | 0 / 81 | – / 0,96 | – / −0,05 |
 | Santiago Pierotti | 9 % | 0 / 81 | – / 0,96 | – / −0,05 |
 | Lassana Coulibaly | 8 % | 3 / 78 | 0,33 / 0,99 | −0,06 / −0,05 |
-| Lameck Banda | 7 % | 4 / 77 | 0,75 / 0,97 | −0,12 / −0,04 |
+| Lameck Banda | 8 % | 4 / 77 | 0,75 / 0,97 | −0,12 / −0,04 |
 | Tiago Gabriel | 6 % | 0 / 81 | – / 0,96 | – / −0,05 |
 
 Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
@@ -93,7 +93,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-11-02 | Europa 2519 | Fiorentina - Lecce | 2 ✓ | 13 % | 17 % |
 | 2025-09-28 | Europa 2509 | Lecce - Bologna | X | 15 % | 20 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Eusebio Di Francesco. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

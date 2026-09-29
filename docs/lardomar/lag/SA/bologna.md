@@ -1,6 +1,6 @@
 # Bologna (Serie A) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -40,8 +40,8 @@ Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 l
 | Roberto Piccoli | 13 % | 0 / 81 | – / 1,48 | – / −0,00 |
 | Artem Dovbyk | 10 % | 1 / 80 | 1,00 / 1,49 | −0,73 / +0,01 |
 | Federico Bernardeschi | 10 % | 7 / 74 | 0,71 / 1,55 | −0,60 / +0,06 |
+| Santiago Castro | 9 % | 0 / 81 | – / 1,48 | – / −0,00 |
 | Riccardo Orsolini | 9 % | 8 / 73 | 1,63 / 1,47 | +0,37 / −0,04 |
-| Santiago Castro | 8 % | 0 / 81 | – / 1,48 | – / −0,00 |
 | Jonathan Rowe | 7 % | 3 / 78 | 1,33 / 1,49 | −0,53 / +0,02 |
 
 Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
@@ -98,7 +98,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-09-28 | Europa 2509 | Lecce - Bologna | X | 55 % | 52 % |
 | 2025-09-14 | Europa 2505 | Milan - Bologna | 1 | 18 % | 21 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Raffaele Palladino. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -107,7 +107,6 @@ Tränare: Raffaele Palladino. Betyg, mål och assist gäller innevarande säsong
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-|  | Francesco Raffaelli | Keeper | 21 | Italy | 150 k€ | – | 0 | 0 | 0/0 |  |
 | 1 | Łukasz Skorupski | GK | 35 | Poland | 1,4 M€ | 6,15 | 0 | 0 | 0/0 |  |
 | 25 | Massimo Pessina | GK | 18 | Italy | 1,7 M€ | 6,32 | 0 | 0 | 0/0 |  |
 | 72 | Ukko Happonen | Keeper | 19 | Finland | – | – | 0 | 0 | 0/0 |  |
@@ -139,3 +138,5 @@ Tränare: Raffaele Palladino. Betyg, mål och assist gäller innevarande säsong
 | 28 | Nicolò Cambiaghi | LW | 25 | Italy | 12,3 M€ | 6,62 | 0 | 0 | 1/0 |  |
 | 74 | Simone Negri | Attacker | 18 | Italy | 858 k€ | – | 0 | 0 | 0/0 |  |
 | 91 | Roberto Piccoli | ST | 25 | Italy | 12,1 M€ | 6,44 | 1 | 0 | 1/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Francesco Raffaelli (senast 2026-09-29).

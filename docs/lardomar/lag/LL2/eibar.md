@@ -1,6 +1,6 @@
 # Eibar (LaLiga 2) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [LL2](../../ligor/LL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [LL2](../../ligor/LL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -62,7 +62,7 @@ Form (äldst → senast): FFVVVVVV · senaste match 2026-09-27
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Jokin Aranbarri. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -72,35 +72,36 @@ Tränare: Jokin Aranbarri. Betyg, mål och assist gäller innevarande säsong en
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
 | 1 | Luis López | GK | 25 | Spain | 366 k€ | – | 0 | 0 | 0/0 |  |
-| 13 | Jonmi Magunagoitia | GK | 26 | Spain | 985 k€ | 7,30 | 0 | 0 | 0/0 |  |
+| 13 | Jonmi Magunagoitia | GK | 26 | Spain | 985 k€ | 7,31 | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 2 | Sergio Cubero | RB,RWB,RM | 27 | Spain | 442 k€ | 6,75 | 0 | 1 | 1/0 |  |
 | 3 | Imanol García de Albéniz | LB | 26 | Spain | 664 k€ | – | 0 | 0 | 0/0 |  |
-| 4 | Unai Elgezabal | CB,CM | 33 | Spain | 306 k€ | 6,99 | 0 | 0 | 2/0 |  |
+| 4 | Unai Elgezabal | CB,CM | 33 | Spain | 306 k€ | 7,00 | 0 | 0 | 2/0 |  |
 | 8 | Peru Nolaskoain | CB,CDM | 27 | Spain | 670 k€ | – | 0 | 0 | 0/0 |  |
 | 15 | Jair Amador | CB | 37 | Portugal | 207 k€ | 6,00 | 0 | 0 | 0/1 |  |
 | 18 | Markel Arana | CB | 24 | Spain | 315 k€ | 6,69 | 0 | 0 | 0/0 |  |
 | 22 | Álvaro Rodríguez | RB,LB | 32 | Spain | – | 7,16 | 2 | 1 | 0/0 |  |
-| 23 | Anaitz Arbilla | LB,CB | 39 | Spain | 185 k€ | 7,03 | 0 | 0 | 2/0 |  |
+| 23 | Anaitz Arbilla | LB,CB | 39 | Spain | 185 k€ | 7,00 | 0 | 0 | 2/0 |  |
 | 24 | Juan Bernat | LB | 33 | Spain | 351 k€ | 6,87 | 0 | 0 | 0/0 |  |
 | 34 | Oier Llorente | RB | 21 | Spain | – | – | 0 | 0 | 0/0 |  |
 | 36 | Haritz Ortuzar | Defender | 21 | Spain | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 6 | Sergio Álvarez | CDM,CM | 34 | Spain | 326 k€ | 6,21 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
 | 8 | Ander Madariaga | CDM,CAM,RW | 24 | Spain | – | 7,57 | 1 | 2 | 0/0 |  |
-| 11 | Jon Magunazelaia | CAM,RW,ST | 25 | Spain | 926 k€ | 7,22 | 2 | 1 | 0/1 |  |
+| 11 | Jon Magunazelaia | CAM,RW,ST | 25 | Spain | 926 k€ | 7,23 | 2 | 1 | 0/1 |  |
 | 14 | Lander Olaetxea | CDM,CM | 33 | Spain | 216 k€ | – | 0 | 0 | 0/0 |  |
 | 17 | Pejiño | RM,LM,LW,RW | 30 | Spain | 399 k€ | 6,59 | 0 | 0 | 0/0 |  |
 | 21 | Iván Gil | ST,CAM,CM | 26 | Spain | 708 k€ | 7,25 | 2 | 1 | 0/0 |  |
-| 28 | Lucas Núñez | Midfielder | 20 | Spain | – | 6,41 | 0 | 0 | 1/0 |  |
+| 28 | Lucas Núñez | Midfielder | 20 | Spain | – | 6,39 | 0 | 0 | 1/0 |  |
 | 30 | Aleix Garrido | CDM,CM | 22 | Spain | 1,3 M€ | 7,39 | 1 | 1 | 0/0 |  |
-| 35 | Lucas Sarasketa | Midfielder | 19 | Spain | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Adu Ares | RW,LW,ST,LM,RM | 24 | Spain | – | 7,55 | 2 | 3 | 3/0 |  |
 | 9 | Jon Bautista | ST | 31 | Spain | 1,0 M€ | 6,75 | 1 | 1 | 1/0 |  |
 | 10 | Iker Zubiria | Attacker | 22 | Spain | – | – | 0 | 0 | 0/0 |  |
-| 10 | Jon Guruzeta | LW,CAM,ST | 26 | Spain | 342 k€ | 7,69 | 3 | 2 | 3/0 |  |
+| 10 | Jon Guruzeta | LW,CAM,ST | 26 | Spain | 342 k€ | 7,67 | 3 | 2 | 3/0 |  |
 | 19 | Eric Pérez | LW | 25 | Spain | 314 k€ | 6,91 | 0 | 0 | 0/0 |  |
 | 20 | Javi Martón | ST,CAM | 27 | Spain | 1,2 M€ | 6,40 | 1 | 0 | 1/0 |  |
 | 27 | Elijah Gift | LW,RM | 20 | Spain | – | 6,31 | 0 | 0 | 0/0 |  |
 | 32 | Carlos Lumbreras | Attacker | 21 | Spain | 291 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Lucas Sarasketa (senast 2026-09-29).

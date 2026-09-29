@@ -1,6 +1,6 @@
 # Portland Timbers (MLS) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -72,7 +72,7 @@ Form (äldst → senast): FVOFVOFF · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Martí Cifuentes. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -99,14 +99,14 @@ Tränare: Martí Cifuentes. Betyg, mål och assist gäller innevarande säsong e
 | 29 | Juan Mosquera | RB | 24 | Colombia | 2,1 M€ | 7,28 | 1 | 1 | 0/0 | skadad, åter Early October 2026 |
 | | **Mittfältare** | | | | | | | | | |
 | 10 | David Da Costa | CAM,CM | 25 | Portugal | 3,4 M€ | 7,30 | 4 | 7 | 1/0 |  |
-| 17 | Cole Bassett | CDM,CM,CAM,LW | 25 | USA | 2,3 M€ | 7,05 | 3 | 4 | 2/0 |  |
+| 17 | Cole Bassett | CDM,CM,CAM | 25 | USA | 2,3 M€ | 7,05 | 3 | 4 | 2/0 |  |
 | 21 | Diego Chará | CDM,CM | 40 | Colombia | 50 k€ | 6,82 | 0 | 0 | 5/0 |  |
 | 30 | José Caicedo | CM,CDM | 24 | Colombia | 1,9 M€ | 7,02 | 0 | 0 | 2/0 | skadad, åter Mid October 2026 |
 | 73 | Eric Izoita | CDM,CM | 19 | USA | 917 k€ | 6,35 | 1 | 1 | 0/0 |  |
 | 80 | Joao Ortiz | CM,CDM | 30 | Ecuador | 938 k€ | 6,48 | 0 | 1 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Ariel Lassiter | RW,LW | 32 | Costa Rica | 89 k€ | 7,01 | 4 | 3 | 2/0 |  |
-| 11 | Antony | RW,LW | 25 | Brazil | 2,3 M€ | 6,77 | 3 | 2 | 0/0 |  |
+| 11 | Antony | LW,RW | 25 | Brazil | 2,3 M€ | 6,77 | 3 | 2 | 0/0 |  |
 | 14 | Vincent Janssen | ST | 32 | Netherlands | 2,1 M€ | 6,76 | 3 | 0 | 2/1 |  |
 | 22 | Omir Fernandez | ST | 27 | USA | 491 k€ | 6,05 | 0 | 0 | 0/0 |  |
 | 28 | Alexander Aravena | LW | 24 | Chile | 2,4 M€ | 6,53 | 1 | 0 | 0/0 |  |

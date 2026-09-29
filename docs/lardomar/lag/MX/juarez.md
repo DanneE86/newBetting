@@ -1,6 +1,6 @@
 # Juarez (Liga MX) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [MX](../../ligor/MX.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [MX](../../ligor/MX.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -52,7 +52,7 @@ Form (äldst → senast): FFFFFFFV · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: svag signal (inte bekräftad).
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Gustavo Lema. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -81,7 +81,8 @@ Tränare: Gustavo Lema. Betyg, mål och assist gäller innevarande säsong enlig
 | 13 | Rodrigo Dourado | CDM,CM | 32 | Brazil | 1,4 M€ | – | 0 | 0 | 0/0 |  |
 | 15 | Lucas Romero | CDM,CM | 24 | Paraguay | 448 k€ | – | 0 | 0 | 0/0 | skadad, åter Early April 2027 |
 | 16 | Juan Sigala | CAM | 19 | Mexico | – | – | 0 | 0 | 0/0 |  |
-| 183 | Leonardo Rodríguez | Midfielder | 22 | Mexico | – | – | 0 | 0 | 0/0 |  |
+| 21 | Ricardinho | CAM,RW | 28 | Portugal | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 183 | Leonardo Rodríguez | CM | 22 | Mexico | – | – | 0 | 0 | 0/0 |  |
 | 201 | Jan Carmona | RW | 22 | Mexico | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Raymundo Fulgencio | LM,RW | 26 | Mexico | 1,8 M€ | – | 0 | 0 | 0/0 |  |
@@ -90,5 +91,4 @@ Tränare: Gustavo Lema. Betyg, mål och assist gäller innevarande säsong enlig
 | 11 | José Luis Rodríguez | LW,LM,RM | 28 | Panama | 1,6 M€ | – | 0 | 0 | 0/0 |  |
 | 17 | Luca Martínez Dupuy | ST | 25 | Mexico | 901 k€ | – | 0 | 0 | 0/0 |  |
 | 19 | Óscar Estupiñán | ST | 29 | Colombia | 1,9 M€ | – | 0 | 0 | 0/0 |  |
-| 21 | Ricardinho | CAM,RW | 28 | Portugal | 1,1 M€ | – | 0 | 0 | 0/0 |  |
 | 29 | Ettson Ayón | ST | 25 | Mexico | 847 k€ | – | 0 | 0 | 0/0 | osäker |

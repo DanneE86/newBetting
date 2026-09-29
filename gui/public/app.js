@@ -1004,7 +1004,30 @@ function teamPanelHtml(d) {
     <div class="tp-row"><span class="tp-k">Mot ${escapeHtml(d.opp)}</span>
       <span class="tp-v">${h.total ? `<b>${h.w}-${h.d}-${h.l}</b> i ${h.total} möten sedan ${fmtDateShort(h.since)}` : "inga möten i datan"}</span>
       <span class="tp-badges" title="Senaste mötena, nyast först">${recent}</span></div>
-    ${facts.length ? `<ul class="tp-facts">${facts.map((f) => `<li>${f}</li>`).join("")}</ul>` : ""}`;
+    ${facts.length ? `<ul class="tp-facts">${facts.map((f) => `<li>${f}</li>`).join("")}</ul>` : ""}
+    ${keyPlayersHtml(d.keyPlayers)}`;
+}
+
+/** Nyckelspelare + truppens källa, så att det går att granska att rätt spelare ligger i laget. */
+function keyPlayersHtml(k) {
+  if (!k) return "";
+  const sq = k.squad;
+  const money = (v) => (v >= 1e6 ? `${(v / 1e6).toFixed(1).replace(".", ",")} M€` : `${Math.round(v / 1e3)} k€`);
+  // FotMob ger 0/0 även när säsongsstatistik saknas: visa mål/assist bara om spelaren har betyg eller poäng
+  const played = (p) => p.rating != null || p.goals || p.assists;
+  const stat = (p) => [played(p) && p.goals != null ? `${p.goals} mål` : "", played(p) && p.assists != null ? `${p.assists} ass` : "", p.rating != null ? `betyg ${Number(p.rating).toFixed(2)}` : "", p.value ? money(p.value) : ""].filter(Boolean).join(" · ");
+  const hasShare = k.list.some((p) => p.share != null);
+  const rows = k.list.map((p) => `<tr class="${p.status === "ej i truppen" ? "kp-warn" : ""}">
+      <td>${p.number ?? ""}</td><td><b>${escapeHtml(p.name)}</b></td><td>${escapeHtml(p.pos || "")}</td><td>${p.age ?? ""}</td>
+      ${hasShare ? `<td>${p.share != null ? `${Math.round(p.share * 100)} %` : ""}</td>` : ""}<td>${escapeHtml(stat(p))}</td>
+      <td class="kp-status">${escapeHtml(p.status || "")}</td></tr>`).join("");
+  const removed = k.removed?.length
+    ? `<div class="kp-note">Borttagna efter kontroll mot Transfermarkt: ${k.removed.map((r) => `${escapeHtml(r.name)} (${escapeHtml(r.club)})`).join(", ")}</div>` : "";
+  return `<div class="tp-row kp"><span class="tp-k">Nyckelspelare</span>
+      <span class="tp-v">${escapeHtml(k.source)}</span></div>
+    ${rows ? `<div class="kp-wrap"><table class="kp-table"><thead><tr><th>#</th><th>Spelare</th><th>Pos</th><th>Ålder</th>${hasShare ? "<th>Andel</th>" : ""}<th>Säsong</th><th>Status</th></tr></thead><tbody>${rows}</tbody></table></div>` : `<p class="scan-empty">Ingen spelardata för laget.</p>`}
+    ${sq ? `<div class="kp-note">Trupp: ${sq.count} spelare från ${escapeHtml(sq.source)} (hämtad ${escapeHtml(sq.fetchedAt || "–")})${sq.coach ? ` · tränare ${escapeHtml(sq.coach)}` : ""}${sq.injured ? ` · ${sq.injured} skadade/osäkra` : ""}</div>` : `<div class="kp-note">Ingen trupp sparad för laget.</div>`}
+    ${removed}`;
 }
 
 async function toggleTeamPanel(btn) {

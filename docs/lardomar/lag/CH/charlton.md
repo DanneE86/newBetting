@@ -1,6 +1,6 @@
 # Charlton (Championship) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -89,7 +89,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-02-11 | Europa 2548 | Charlton - Stoke | 1 ✓ | 34 % | 34 % |
 | 2026-01-01 | Europa 2536 | Charlton - Coventry | X | 17 % | 26 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Nathan Jones. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -115,7 +115,6 @@ Tränare: Nathan Jones. Betyg, mål och assist gäller innevarande säsong enlig
 | | **Mittfältare** | | | | | | | | | |
 | 6 | Conor Coventry | CDM,CM | 26 | Ireland | 1,2 M€ | 6,73 | 0 | 0 | 1/0 |  |
 | 8 | Harvey Knibbs | CAM | 27 | England | 1,1 M€ | – | 0 | 0 | 0/0 |  |
-| 10 | Greg Docherty | CM,CDM,CAM | 30 | Scotland | 513 k€ | – | 0 | 0 | 0/0 |  |
 | 14 | Sonny Carey | CAM,CM,ST,LW,RW | 25 | England | 2,6 M€ | 6,97 | 0 | 1 | 0/0 |  |
 | 15 | Nathaniel Chalobah | CDM,CM | 31 | England | 260 k€ | 6,90 | 0 | 0 | 0/0 | skadad, åter Back in training |
 | 16 | Timothy Noor Ouma | CDM,CM | 22 | Kenya | 1,0 M€ | 5,90 | 0 | 0 | 0/0 |  |
@@ -130,6 +129,8 @@ Tränare: Nathan Jones. Betyg, mål och assist gäller innevarande säsong enlig
 | 23 | Charlie Kelman | ST | 24 | England | 2,5 M€ | 5,94 | 0 | 0 | 0/0 |  |
 | 24 | Matt Godden | ST | 35 | England | 330 k€ | 6,25 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
 | 30 | Rob Apter | RW | 23 | Scotland | 1,8 M€ | 5,95 | 0 | 0 | 0/0 |  |
-| 33 | Micah Mbick | ST,CAM,RW | 19 | England | 1000 k€ | 5,94 | 0 | 0 | 0/0 |  |
+| 33 | Micah Mbick | ST,CAM | 19 | England | 1000 k€ | 5,94 | 0 | 0 | 0/0 |  |
 | 35 | Junior Nkeng | LW,LWB,LM,RM,ST | 19 | England | 699 k€ | – | 0 | 0 | 0/0 |  |
 | 53 | Bradley Tagoe | Attacker | 18 | England | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Greg Docherty (senast 2026-09-29).

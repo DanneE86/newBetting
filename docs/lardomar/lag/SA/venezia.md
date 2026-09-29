@@ -1,6 +1,6 @@
 # Venezia (Serie A) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -84,7 +84,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-09-06 | Europa 2605 | Frosinone - Venezia | 1 | 32 % | 33 % |
 | 2026-08-23 | Europa 2601 | Venezia - Lecce | 2 | 45 % | 53 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Giovanni Stroppa. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -125,10 +125,11 @@ Tränare: Giovanni Stroppa. Betyg, mål och assist gäller innevarande säsong e
 | 71 | Kike Pérez | CM,CAM,RW,ST | 29 | Spain | 1,3 M€ | 6,79 | 0 | 0 | 2/0 |  |
 | 77 | Toni Fernández | ST | 18 | Spain | – | 6,03 | 0 | 0 | 1/0 |  |
 | | **Anfallare** | | | | | | | | | |
-|  | Mohamed Toure | Attacker | 19 | Senegal | – | – | 0 | 0 | 0/0 |  |
 | 7 | Albion Rrahmani | ST,LW,RW | 26 | Kosovo | 3,2 M€ | 6,02 | 0 | 0 | 0/0 |  |
 | 9 | Andrea Adorante | ST | 26 | Italy | 2,8 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 10 | John Yeboah | ST,RM,RW,CAM | 26 | Ecuador | 2,0 M€ | 6,81 | 1 | 0 | 0/0 |  |
 | 29 | Lion Lauberbach | ST | 28 | Germany | 1,8 M€ | 6,13 | 0 | 0 | 0/0 |  |
 | 45 | Akor Adams | ST | 26 | Nigeria | 6,6 M€ | 6,56 | 1 | 0 | 0/0 |  |
 | 56 | Kornel Lisman | LW | 20 | Poland | 991 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Mohamed Toure (senast 2026-09-29).

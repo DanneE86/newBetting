@@ -1,6 +1,6 @@
 # Iraklis (Super League (Grekland)) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [GR](../../ligor/GR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [GR](../../ligor/GR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -37,7 +37,7 @@ Form (äldst → senast): FOVOO · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Walter Mazzarri. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -67,13 +67,12 @@ Tränare: Walter Mazzarri. Betyg, mål och assist gäller innevarande säsong en
 | | **Mittfältare** | | | | | | | | | |
 |  | Christos Papazoglou | Midfielder | 0 | Greece | – | – | 0 | 0 | 0/0 |  |
 |  | Efstratios Tachmetzidis | Midfielder | 19 | Greece | – | – | 0 | 0 | 0/0 |  |
-|  | Georgios Konstantakopoulos | LB | 21 | Greece | 267 k€ | – | 0 | 0 | 0/0 |  |
 | 5 | Orestis Tsintonis | CM | 27 | Greece | 88 k€ | – | 0 | 0 | 0/0 |  |
 | 6 | Carlos Rodriguez | Midfielder | 22 | Spain | – | 6,40 | 0 | 0 | 0/0 |  |
 | 8 | Nemanja Radoja | CM,CDM | 33 | Serbia | 151 k€ | 6,45 | 0 | 0 | 0/0 |  |
 | 10 | Yoel Bárcenas | CM,CDM,LM,LW | 32 | Panama | 369 k€ | 7,50 | 1 | 0 | 0/0 | skadad, åter Unknown |
 | 11 | Ivi López | CAM,LW | 32 | Spain | 207 k€ | 6,65 | 1 | 0 | 3/0 |  |
-| 14 | Jakub Hromada | CDM,CM | 30 | Slovakia | 158 k€ | – | 0 | 0 | 0/0 |  |
+| 14 | Jakub Hromada | CM,CDM | 30 | Slovakia | 158 k€ | – | 0 | 0 | 0/0 |  |
 | 17 | Nikolaos Anastasiadis | Midfielder | 23 | Greece | – | – | 0 | 0 | 0/0 |  |
 | 20 | Panagiotis Panagiotidis | CDM | 28 | Greece | 63 k€ | – | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
 | 27 | Marco Krainz | CM | 29 | Austria | 82 k€ | 6,33 | 0 | 0 | 0/0 |  |
@@ -85,3 +84,5 @@ Tränare: Walter Mazzarri. Betyg, mål och assist gäller innevarande säsong en
 | 7 | Elvir Koljić | ST | 31 | Bosnia and Herzegovina | 225 k€ | 6,15 | 0 | 0 | 1/0 |  |
 | 9 | Kristian Kushta | ST | 28 | Albania | 60 k€ | 6,08 | 0 | 0 | 0/0 |  |
 | 43 | Pedro Marques | ST | 28 | Portugal | 443 k€ | 6,51 | 1 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Georgios Konstantakopoulos (senast 2026-09-29).

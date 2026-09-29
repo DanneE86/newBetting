@@ -1,6 +1,6 @@
 # Boyacá Chicó FC (Primera A) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [COL](../../ligor/COL.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [COL](../../ligor/COL.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -40,7 +40,7 @@ Form senaste 8 (äldst → senast): FOOVVFFV · senaste match 2026-09-25
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Jhon Gómez. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -48,7 +48,6 @@ Tränare: Jhon Gómez. Betyg, mål och assist gäller innevarande säsong enligt
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
 |  | David Agudelo | GK | 29 | Colombia | 89 k€ | – | 0 | 0 | 0/0 |  |
-|  | Luis Quintero | GK | 28 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 1 | Rogerio Caicedo | GK | 32 | Colombia | 248 k€ | – | 0 | 0 | 0/0 |  |
 | 12 | Branndon Zapata | GK | 26 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
@@ -58,11 +57,9 @@ Tränare: Jhon Gómez. Betyg, mål och assist gäller innevarande säsong enligt
 |  | Jeronimo Pimentel | Defender | 18 | Colombia | – | – | 0 | 0 | 0/0 |  |
 |  | Jhonier Alomía | CB | 27 | Colombia | 70 k€ | – | 0 | 0 | 0/0 |  |
 |  | Sander Navarro | RB | 23 | Colombia | 469 k€ | – | 0 | 0 | 0/0 |  |
-| 2 | Anyelo Saldaña | CB,RB | 23 | Colombia | 282 k€ | – | 0 | 0 | 0/0 |  |
 | 3 | Juan Quiceno | LB,LWB | 22 | Colombia | 548 k€ | – | 0 | 0 | 0/0 |  |
 | 4 | Jefferson Mena | CB | 37 | Colombia | 222 k€ | – | 0 | 0 | 0/0 |  |
 | 6 | Andrés Aedo | RB,CDM,CB,CM | 22 | Colombia | – | – | 0 | 0 | 0/0 |  |
-| 18 | Junior Palacios | CM | 30 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 22 | Jaime Díaz | RB | 26 | Colombia | 216 k€ | – | 0 | 0 | 0/0 |  |
 | 24 | Arlen Banguero | CB | 26 | Colombia | 359 k€ | – | 0 | 0 | 0/0 |  |
 | 25 | Sebastián Palma | CB | 27 | Colombia | 293 k€ | – | 0 | 0 | 0/0 |  |
@@ -71,22 +68,23 @@ Tränare: Jhon Gómez. Betyg, mål och assist gäller innevarande säsong enligt
 |  | Faiber Arroyo | CDM | 0 | Colombia | – | – | 0 | 0 | 0/0 |  |
 |  | Jeison Mena | CAM | 24 | Colombia | 199 k€ | – | 0 | 0 | 0/0 |  |
 |  | Juan Díaz | CM,CDM | 25 | Colombia | 336 k€ | – | 0 | 0 | 0/0 |  |
-|  | Juan Peñaloza | CB | 26 | Colombia | 321 k€ | – | 0 | 0 | 0/0 |  |
 |  | Yesus Cabrera | CAM,ST,RW | 36 | Colombia | 232 k€ | – | 0 | 0 | 0/0 |  |
 | 8 | Sebastián Salazar | CM,CAM,CDM | 30 | Colombia | 242 k€ | – | 0 | 0 | 0/0 |  |
 | 11 | Delio Ramírez | LM,RM,CAM | 25 | Colombia | 380 k€ | – | 0 | 0 | 0/0 |  |
 | 15 | Jhon Romana | LW | 20 | Colombia | – | – | 0 | 0 | 0/0 |  |
-| 20 | Sebastián Viveros | ST | 29 | Colombia | 98 k€ | – | 0 | 0 | 0/0 |  |
 | 21 | Jacobo Pimentel | CAM,ST | 24 | Colombia | 338 k€ | – | 0 | 0 | 0/0 |  |
+| 23 | Juan Peñaloza | CB | 26 | Colombia | 321 k€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 |  | Alejandro Maya | ST | 22 | Colombia | – | – | 0 | 0 | 0/0 |  |
 |  | Estiven Sarria | RW,RM | 26 | Colombia | 182 k€ | – | 0 | 0 | 0/0 |  |
 |  | Jesús Campo | LW | 18 | Colombia | – | – | 0 | 0 | 0/0 |  |
-|  | Luis Carabalí | Attacker | 19 | Venezuela | – | – | 0 | 0 | 0/0 |  |
 |  | Oscar Caicedo | RW | 20 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 7 | Felipe Cifuentes | ST | 24 | Colombia | 329 k€ | – | 0 | 0 | 0/0 |  |
 | 9 | Isaac Camargo | ST | 26 | Colombia | 324 k€ | – | 0 | 0 | 0/0 |  |
 | 13 | Yaliston Martínez | LW | 26 | Colombia | 319 k€ | – | 0 | 0 | 0/0 |  |
 | 16 | Santiago Mera | LM,LW,ST | 25 | Colombia | 472 k€ | – | 0 | 0 | 0/0 |  |
 | 19 | Julián Castillo | Attacker | 20 | Colombia | – | – | 0 | 0 | 0/0 |  |
+| 29 | Luis Carabalí | Attacker | 19 | Venezuela | – | – | 0 | 0 | 0/0 |  |
 | 30 | Mateo Gómez | Attacker | 0 | Colombia | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (4): Luis Quintero (senast 2026-09-29), Junior Palacios (senast 2026-09-29), Sebastián Viveros (senast 2026-09-29), Anyelo Saldaña (senast 2026-09-29).

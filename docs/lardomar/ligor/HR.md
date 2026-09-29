@@ -1,6 +1,6 @@
 # HNL (HR) – lärdomar
 
-Genererad 2026-09-28 av `node scripts/analyze-learnings.mjs`. Ligan saknar oddshistorik (inga stängningsodds i våra källor), så signaler och kalibrering kan inte testas mot marknaden här. Alla matcher: `data/matcher/HR.csv`.
+Genererad 2026-09-29 av `node scripts/analyze-learnings.mjs`. Ligan saknar oddshistorik (inga stängningsodds i våra källor), så signaler och kalibrering kan inte testas mot marknaden här. Alla matcher: `data/matcher/HR.csv`.
 
 ## Lärdomar i korthet
 
@@ -16,17 +16,17 @@ Genererad 2026-09-28 av `node scripts/analyze-learnings.mjs`. Ligan saknar oddsh
 | 2025/26 | 188 | 44 % | 27 % | 29 % | 2,65 | 48 % | 53 % |
 | 2026/27 | 39 | 62 % | 21 % | 18 % | 3,15 | 64 % | 51 % |
 
-## Tabell nu (FotMob, 2026-09-28)
+## Tabell nu (FotMob, 2026-09-29)
 
 | # | Lag | M | V | O | F | Mål | +/− | P |
 |---|---|---|---|---|---|---|---|---|
 | 1 | Dinamo Zagreb | 7 | 5 | 1 | 1 | 17-9 | 8 | 16 |
 | 2 | Hajduk Split | 8 | 5 | 1 | 2 | 16-8 | 8 | 16 |
 | 3 | Osijek | 8 | 5 | 1 | 2 | 17-11 | 6 | 16 |
-| 4 | NK Varaždin | 8 | 4 | 3 | 1 | 13-7 | 6 | 15 |
+| 4 | Varaždin | 8 | 4 | 3 | 1 | 13-7 | 6 | 15 |
 | 5 | Rijeka | 7 | 4 | 2 | 1 | 13-7 | 6 | 14 |
-| 6 | NK Istra 1961 | 8 | 2 | 3 | 3 | 14-13 | 1 | 9 |
-| 7 | NK Lokomotiva | 8 | 2 | 1 | 5 | 11-16 | -5 | 7 |
+| 6 | Istra 1961 | 8 | 2 | 3 | 3 | 14-13 | 1 | 9 |
+| 7 | Lokomotiva Zagreb | 8 | 2 | 1 | 5 | 11-16 | -5 | 7 |
 | 8 | Slaven Belupo Koprivnica | 8 | 2 | 1 | 5 | 7-16 | -9 | 7 |
 | 9 | HNK Gorica | 8 | 1 | 2 | 5 | 5-12 | -7 | 5 |
 | 10 | Rudeš | 8 | 1 | 1 | 6 | 10-24 | -14 | 4 |
@@ -40,9 +40,6 @@ Tabellhistorik (en rad per lag och dag sedan 2026-09-28): `data/ligor/HR.json`.
 - [Hajduk Split](../lag/HR/hajduk-split.md)
 - [Istra 1961](../lag/HR/istra-1961.md)
 - [Lokomotiva Zagreb](../lag/HR/lokomotiva-zagreb.md)
-- [NK Istra 1961](../lag/HR/nk-istra-1961.md)
-- [NK Lokomotiva](../lag/HR/nk-lokomotiva.md)
-- [NK Varaždin](../lag/HR/nk-varazdin.md)
 - [Osijek](../lag/HR/osijek.md)
 - [Rijeka](../lag/HR/rijeka.md)
 - [Rudeš](../lag/HR/rudes.md)

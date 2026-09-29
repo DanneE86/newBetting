@@ -1,6 +1,6 @@
 # Stoke (Championship) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -89,7 +89,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-02-11 | Europa 2548 | Charlton - Stoke | 1 | 33 % | 34 % |
 | 2026-01-01 | Europa 2536 | Hull - Stoke | 2 ✓ | 24 % | 30 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Mark Robins. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

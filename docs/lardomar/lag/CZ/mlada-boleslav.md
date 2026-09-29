@@ -1,6 +1,6 @@
 # Mladá Boleslav (Chance Liga) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [CZ](../../ligor/CZ.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [CZ](../../ligor/CZ.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -35,7 +35,7 @@ Form senaste 8 (äldst → senast): VOVOVVFV · senaste match 2026-09-19
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Aleš Majer. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -47,7 +47,6 @@ Tränare: Aleš Majer. Betyg, mål och assist gäller innevarande säsong enligt
 | 42 | Vojtěch Vorel | GK | 30 | Czechia | 74 k€ | – | 0 | 0 | 0/0 |  |
 | 47 | Marek Obdrzalek | Keeper | 19 | Czechia | – | – | 0 | 0 | 0/0 |  |
 | 59 | Jirí Floder | GK | 29 | Czechia | 102 k€ | 7,20 | 0 | 0 | 2/0 |  |
-| 83 | Stefan Jovanoski | Keeper | 20 | North Macedonia | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 3 | Martin Králik | CB | 31 | Slovakia | 101 k€ | 7,19 | 0 | 1 | 1/0 |  |
 | 5 | Jan Harušťák | LB | 21 | Czechia | 249 k€ | – | 0 | 0 | 0/0 |  |
@@ -78,3 +77,5 @@ Tränare: Aleš Majer. Betyg, mål och assist gäller innevarande säsong enligt
 | 49 | Josef Kolárík | RW,LW,CAM | 19 | Czechia | 1,4 M€ | 6,69 | 1 | 1 | 0/0 |  |
 | 70 | Jan Buryán | ST | 20 | Czechia | 528 k€ | 6,19 | 0 | 0 | 0/0 |  |
 | 90 | Bolu Ogungbayi | CAM | 22 | Nigeria | 183 k€ | – | 0 | 0 | 0/0 | skadad, åter Unknown |
+
+Har lämnat truppen sedan vi började spara (1): Stefan Jovanoski (senast 2026-09-29).

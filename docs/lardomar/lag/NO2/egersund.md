@@ -1,6 +1,6 @@
 # Egersund (OBOS-ligaen) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [NO2](../../ligor/NO2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [NO2](../../ligor/NO2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -38,7 +38,7 @@ Form senaste 8 (äldst → senast): VVFFOOOF · senaste match 2026-09-20
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Marius Johansen. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -47,7 +47,6 @@ Tränare: Marius Johansen. Betyg, mål och assist gäller innevarande säsong en
 | | **Målvakter** | | | | | | | | | |
 | 1 | Marcel Zapytowski | GK | 25 | Poland | 113 k€ | – | 0 | 0 | 0/0 |  |
 | 12 | Mads Krogsøe Eriksen | Keeper | 22 | Denmark | – | – | 0 | 0 | 0/0 |  |
-| 12 | Sem Aleksander Bergene | GK | 22 | Norway | 73 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 2 | Herman Kleppa | RB,RM | 30 | Norway | 72 k€ | – | 1 | 1 | 3/0 |  |
 | 3 | Bjørn Mæland | CB,LB | 25 | Norway | 150 k€ | – | 0 | 0 | 7/1 |  |
@@ -76,4 +75,5 @@ Tränare: Marius Johansen. Betyg, mål och assist gäller innevarande säsong en
 | 16 | Jostein Ekeland | RW,LW,ST | 29 | Norway | 89 k€ | – | 3 | 1 | 1/0 |  |
 | 19 | Richmond Gyamfi | LW,CM | 22 | Ghana | 650 k€ | – | 0 | 0 | 0/0 |  |
 | 28 | Hinrik Harðarson | RW | 22 | Iceland | 212 k€ | – | 4 | 0 | 2/0 |  |
-| 37 | Mustapha Abu | Attacker | 19 | Ghana | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (2): Sem Aleksander Bergene (senast 2026-09-29), Mustapha Abu (senast 2026-09-29).

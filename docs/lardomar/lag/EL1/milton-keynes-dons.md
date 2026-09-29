@@ -1,6 +1,6 @@
 # Milton Keynes Dons (League One) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -60,7 +60,7 @@ Form (äldst → senast): OOOOFOOO · senaste match 2026-09-17
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Paul Warne. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -92,8 +92,8 @@ Tränare: Paul Warne. Betyg, mål och assist gäller innevarande säsong enligt 
 | | **Anfallare** | | | | | | | | | |
 | 9 | Sam Nombe | ST | 27 | England | 417 k€ | 6,49 | 0 | 0 | 0/0 |  |
 | 10 | Aaron Collins | ST,CM,LW | 29 | Wales | 327 k€ | 7,39 | 5 | 1 | 2/0 |  |
-| 11 | Nathaniel Méndez-Laing | ST,CAM,LW | 34 | Guatemala | 179 k€ | 6,40 | 0 | 0 | 0/0 |  |
+| 11 | Nathaniel Méndez-Laing | ST,LW,CAM | 34 | Guatemala | 179 k€ | 6,40 | 0 | 0 | 0/0 |  |
 | 13 | Callum Paterson | ST,RW | 31 | Scotland | 278 k€ | 6,37 | 1 | 1 | 1/0 |  |
 | 15 | Cohen Bramall | LW,LB,LWB,LM | 30 | England | 152 k€ | 6,43 | 0 | 0 | 2/0 |  |
 | 22 | Ibrahim Fullah | ST | 19 | England | 795 k€ | 5,92 | 0 | 0 | 0/0 |  |
-| 29 | Rushian Hepburn-Murphy | ST,LM | 28 | England | 244 k€ | 6,08 | 0 | 0 | 0/0 |  |
+| 29 | Rushian Hepburn-Murphy | ST | 28 | England | 244 k€ | 6,08 | 0 | 0 | 0/0 |  |

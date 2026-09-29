@@ -1,6 +1,6 @@
 # Rosenborg (Eliteserien) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [NO](../../ligor/NO.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [NO](../../ligor/NO.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -64,7 +64,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 |---|---|---|---|---|---|
 | 2026-04-30 | Europa 2570 | Viking - Rosenborg | 1 | 10 % | 15 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Freyr Alexandersson. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -73,7 +73,7 @@ Tränare: Freyr Alexandersson. Betyg, mål och assist gäller innevarande säson
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Leopold Wahlstedt | GK | 27 | Sweden | 672 k€ | 6,76 | 0 | 0 | 2/0 |  |
+| 1 | Leopold Wahlstedt | GK | 27 | Sweden | 672 k€ | 6,75 | 0 | 0 | 2/0 |  |
 | 12 | Rasmus Sandberg | GK | 25 | Norway | 382 k€ | – | 0 | 0 | 0/0 |  |
 | 24 | Haakon Sørum | Keeper | 20 | Norway | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
@@ -93,7 +93,7 @@ Tränare: Freyr Alexandersson. Betyg, mål och assist gäller innevarande säson
 | 7 | Simen Bolkan Nordli | CM,LM,RM | 26 | Norway | 2,5 M€ | 6,90 | 4 | 0 | 2/0 |  |
 | 8 | Iver Fossum | CM | 30 | Norway | 331 k€ | 7,09 | 3 | 1 | 0/0 | skadad, åter Early October 2026 |
 | 10 | Ole Kristian Selnæs | CM,CDM | 32 | Norway | 449 k€ | 7,77 | 1 | 8 | 2/0 |  |
-| 17 | Mads Bomholt | CM,ST | 20 | Denmark | 2,0 M€ | 7,20 | 2 | 5 | 2/0 |  |
+| 17 | Mads Bomholt | CM,ST | 20 | Denmark | 2,0 M€ | 7,19 | 2 | 5 | 2/0 |  |
 | 20 | Aleksander Borgersen | Midfielder | 17 | Norway | 677 k€ | – | 0 | 0 | 0/0 |  |
 | 25 | Johan Bakke | CM,CAM | 22 | Norway | 625 k€ | 6,08 | 0 | 0 | 0/0 | skadad, åter Out for season |
 | | **Anfallare** | | | | | | | | | |
@@ -104,4 +104,5 @@ Tränare: Freyr Alexandersson. Betyg, mål och assist gäller innevarande säson
 | 29 | Dávid Ďuriš | RW,CM,CAM | 27 | Slovakia | 543 k€ | 6,50 | 1 | 0 | 3/0 |  |
 | 30 | Maciej Soboczynski | RW | 19 | Poland | – | 6,05 | 0 | 0 | 1/0 |  |
 | 35 | Emil Konradsen Ceïde | LW,LM,ST | 25 | Norway | 1,4 M€ | 7,43 | 5 | 5 | 2/0 |  |
-| 57 | Daniel Thorstensen | Attacker | 19 | Norway | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Daniel Thorstensen (senast 2026-09-29).

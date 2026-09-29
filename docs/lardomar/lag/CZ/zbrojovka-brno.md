@@ -1,6 +1,6 @@
 # Zbrojovka Brno (Chance Liga) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [CZ](../../ligor/CZ.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [CZ](../../ligor/CZ.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -12,7 +12,7 @@ Form senaste 8 (äldst → senast): OFVVVFVF · senaste match 2026-09-19
 |---|---|---|---|---|---|---|---|
 | 2026/27 | 9 | 1,78 | 2,40 | 1,00 | 11 % | 1,33–1,33 | 44 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Martin Svedík. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -22,7 +22,6 @@ Tränare: Martin Svedík. Betyg, mål och assist gäller innevarande säsong enl
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
 |  | Colin Andrew | GK | 22 | Czechia | 229 k€ | – | 0 | 0 | 0/0 |  |
-|  | Michal Hlozánek | Keeper | 20 | Czechia | – | – | 0 | 0 | 0/0 |  |
 | 1 | Adam Hrdina | GK | 22 | Slovakia | 383 k€ | 6,98 | 0 | 0 | 0/0 |  |
 | 24 | Dominik Svácek | GK | 29 | Czechia | 50 k€ | – | 0 | 0 | 0/0 |  |
 | 78 | Ondřej Prodělal | Keeper | 20 | Czechia | – | – | 0 | 0 | 0/0 |  |
@@ -49,7 +48,6 @@ Tränare: Martin Svedík. Betyg, mål och assist gäller innevarande säsong enl
 | 29 | Patrik Žitný | CAM | 27 | Czechia | 117 k€ | 6,31 | 0 | 0 | 0/0 |  |
 | 68 | Jakub Janetzký | CDM,CM | 29 | Czechia | 96 k€ | 6,81 | 0 | 0 | 1/0 |  |
 | | **Anfallare** | | | | | | | | | |
-|  | Rigino Cicilia | ST | 32 | Curaçao | 86 k€ | – | 0 | 0 | 0/0 |  |
 |  | Soliu Afolabi | LW,RW | 21 | Nigeria | 1,8 M€ | 6,50 | 1 | 0 | 2/0 |  |
 | 9 | Oliver Velich | Attacker | 25 | Czechia | 235 k€ | 5,89 | 0 | 0 | 0/0 |  |
 | 10 | Antonín Vanícek | LW | 28 | Czechia | 228 k€ | 6,99 | 3 | 1 | 2/0 |  |
@@ -57,3 +55,5 @@ Tränare: Martin Svedík. Betyg, mål och assist gäller innevarande säsong enl
 | 14 | Tadeás Vachoušek | RW,LM,LW | 22 | Czechia | 393 k€ | 7,05 | 1 | 2 | 1/0 |  |
 | 15 | Daniel Vasulín | ST | 28 | Czechia | 396 k€ | 6,91 | 4 | 0 | 0/0 |  |
 | 77 | Lucky Ezeh | ST | 22 | Nigeria | 211 k€ | 6,60 | 1 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (2): Rigino Cicilia (senast 2026-09-29), Michal Hlozánek (senast 2026-09-29).

@@ -1,6 +1,6 @@
 # Cesena (Serie B) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [SB](../../ligor/SB.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [SB](../../ligor/SB.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -48,7 +48,7 @@ Form (äldst → senast): OOFOVOOO · senaste match 2026-09-18
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Alessandro Diamanti. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -75,7 +75,7 @@ Tränare: Alessandro Diamanti. Betyg, mål och assist gäller innevarande säson
 | | **Mittfältare** | | | | | | | | | |
 | 5 | Luca Schirone | Midfielder | 23 | Italy | 275 k€ | 6,15 | 0 | 0 | 0/0 |  |
 | 7 | Gianluca Frabotta | LM,LB | 27 | Italy | 1,1 M€ | 6,63 | 0 | 0 | 1/0 |  |
-| 8 | Matteo Francesconi | CM,CDM | 22 | Italy | 1,6 M€ | 6,17 | 0 | 0 | 0/0 |  |
+| 8 | Matteo Francesconi | CM | 22 | Italy | 1,6 M€ | 6,17 | 0 | 0 | 0/0 |  |
 | 10 | Riccardo Pagano | CAM,CM,CDM | 21 | Italy | 1,7 M€ | 7,00 | 0 | 0 | 0/0 |  |
 | 11 | Maat Caprini | LW | 20 | Italy | 1,7 M€ | – | 0 | 0 | 0/0 |  |
 | 18 | Matteo Guidi | CB,LM,CM | 23 | Italy | 414 k€ | 6,60 | 0 | 1 | 1/0 |  |

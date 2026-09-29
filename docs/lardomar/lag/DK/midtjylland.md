@@ -1,6 +1,6 @@
 # Midtjylland (Superligaen) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [DK](../../ligor/DK.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [DK](../../ligor/DK.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -63,7 +63,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-02-08 | Europa 2547 | Midtjylland - FC Köpenhamn | 1 ✓ | 48 % | 47 % |
 | 2025-11-23 | Europa 2525 | Sönderjyske - Midtjylland | 1 | 63 % | 58 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Mike Tullberg. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -77,6 +77,7 @@ Tränare: Mike Tullberg. Betyg, mål och assist gäller innevarande säsong enli
 | 30 | Ovie Ejeheri | GK | 23 | England | 535 k€ | – | 0 | 0 | 0/0 |  |
 | 60 | Mark Ugboh | GK | 22 | Nigeria | 375 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
+|  | Andreas Maxsø | CB | 32 | Denmark | 557 k€ | – | 0 | 0 | 0/0 |  |
 | 3 | Magnus Jensen | CB | 29 | Denmark | 553 k€ | 7,27 | 2 | 0 | 2/0 |  |
 | 4 | Ousmane Diao | CB | 22 | Senegal | 6,7 M€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
 | 5 | Rasmus Kristensen | CB,RB,RWB | 29 | Denmark | 8,3 M€ | 7,40 | 1 | 0 | 4/0 |  |
@@ -89,7 +90,7 @@ Tränare: Mike Tullberg. Betyg, mål och assist gäller innevarande säsong enli
 | 19 | Pedro Bravo | CDM,CM | 21 | Colombia | 2,0 M€ | 6,85 | 0 | 0 | 0/0 |  |
 | 20 | Hyun-Seok Hong | CAM,ST,RW | 27 | South Korea | 1,8 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
 | 21 | Denil Castillo | CDM,CM,CAM,RW | 22 | Ecuador | – | 6,62 | 1 | 0 | 0/0 |  |
-| 29 | Kjell Wätjen | CAM,CDM,RW,LW,LM | 20 | Germany | 2,8 M€ | 6,81 | 0 | 0 | 1/0 |  |
+| 29 | Kjell Wätjen | CAM,CDM,LW,LM,RW | 20 | Germany | 2,8 M€ | 6,81 | 0 | 0 | 1/0 |  |
 | 33 | Alamari Djabi | CM | 20 | Guinea-Bissau | 486 k€ | – | 0 | 0 | 0/0 |  |
 | 55 | Victor Bak | LWB,LM,LB,CB | 22 | Denmark | 1,8 M€ | 6,71 | 0 | 0 | 1/0 |  |
 | | **Anfallare** | | | | | | | | | |

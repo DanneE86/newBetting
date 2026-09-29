@@ -1,6 +1,6 @@
 # Villarreal (La Liga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [LL](../../ligor/LL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [LL](../../ligor/LL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -90,7 +90,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-12-21 | Europa 2533 | Villarreal - Barcelona | 2 | 16 % | 25 % |
 | 2025-08-31 | Europa 2501 | Celta de Vigo - Villarreal | X | 44 % | 39 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Inigo Pérez. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

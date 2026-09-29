@@ -1,6 +1,6 @@
 # Austin FC (MLS) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -62,7 +62,7 @@ Form (äldst → senast): FVOVOOVO · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Davy Arnaud. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -83,12 +83,12 @@ Tränare: Davy Arnaud. Betyg, mål och assist gäller innevarande säsong enligt
 | 15 | Jon Bell | CB,LB | 29 | Jamaica | 164 k€ | 6,51 | 2 | 1 | 2/0 |  |
 | 22 | Christopher Applewhite | CB | 19 | USA | 856 k€ | – | 0 | 0 | 0/0 |  |
 | 23 | Žan Kolmanič | LB,CB | 26 | Slovenia | 290 k€ | 6,63 | 0 | 2 | 0/0 |  |
-| 29 | Guilherme Biro | CB,LB,LM | 26 | Brazil | 1,3 M€ | 6,87 | 3 | 1 | 5/2 |  |
+| 29 | Guilherme Biro | CB,LB | 26 | Brazil | 1,3 M€ | 6,87 | 3 | 1 | 5/2 |  |
 | 35 | Mateja Djordjević | CB | 23 | Serbia | 923 k€ | 6,30 | 0 | 0 | 1/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 6 | Ilie Sánchez | CM,CDM | 35 | Spain | 50 k€ | 6,51 | 1 | 0 | 4/0 |  |
 | 14 | Besard Šabović | CM,CDM | 28 | Sweden | 945 k€ | 6,59 | 0 | 1 | 5/0 |  |
-| 17 | Jon Gallagher | LM,RB,LW,RM,LWB | 30 | Ireland | 999 k€ | 6,50 | 0 | 2 | 2/0 |  |
+| 17 | Jon Gallagher | LM,RB,LW,LWB | 30 | Ireland | 999 k€ | 6,50 | 0 | 2 | 2/0 |  |
 | 24 | Jorge Alastuey | CM,CAM,ST,RW,LW | 23 | Spain | – | 6,58 | 0 | 0 | 0/0 |  |
 | 30 | Joseph Rosales | RM,LM,LB,RWB,RW,CM,CDM | 25 | Honduras | 1,7 M€ | 6,81 | 1 | 4 | 6/0 |  |
 | 38 | Ervin Torres | CM,CDM,CAM,RW | 18 | USA | 949 k€ | 6,85 | 1 | 3 | 2/0 |  |

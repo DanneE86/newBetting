@@ -1,6 +1,6 @@
 # Osijek (HNL) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [HR](../../ligor/HR.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [HR](../../ligor/HR.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -29,7 +29,7 @@ Form senaste 8 (äldst → senast): VVVFVFVO · senaste match 2026-09-19
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Federico Bessone. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -53,7 +53,6 @@ Tränare: Federico Bessone. Betyg, mål och assist gäller innevarande säsong e
 | 49 | Ivano Kolarik | CB | 19 | Croatia | 701 k€ | 6,72 | 0 | 0 | 1/0 |  |
 | 77 | Senad Mustafić | RB,LB,CM | 21 | Bosnia and Herzegovina | 623 k€ | 6,37 | 0 | 0 | 1/1 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 6 | Mateo Mejía | CDM | 23 | Colombia | 387 k€ | – | 0 | 0 | 0/0 |  |
 | 8 | Šimun Mikolčić | CAM,CM,CDM | 22 | Croatia | 428 k€ | 6,51 | 0 | 0 | 1/0 |  |
 | 16 | Oleksandr Petrusenko | CDM,CM | 28 | Ukraine | 538 k€ | 6,27 | 0 | 0 | 1/0 |  |
 | 18 | Niko Farkaš | CDM | 19 | Croatia | 372 k€ | 6,08 | 0 | 0 | 1/0 |  |
@@ -61,12 +60,14 @@ Tränare: Federico Bessone. Betyg, mål och assist gäller innevarande säsong e
 | 48 | Jona Ježić | CAM,CDM | 17 | Croatia | 565 k€ | 6,67 | 2 | 0 | 2/0 |  |
 | 67 | Balázs Bakti | LM | 21 | Hungary | 619 k€ | 6,37 | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-|  | Álex Cantero | LW | 26 | Spain | 244 k€ | 6,82 | 0 | 0 | 0/0 |  |
-|  | Luka Tunjić | LW | 20 | Croatia | 313 k€ | 7,00 | 0 | 0 | 0/0 |  |
 | 7 | Ivan Dolček | RW | 26 | Croatia | 716 k€ | 7,10 | 1 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 11 | Luka Tunjić | LW | 20 | Croatia | 313 k€ | 7,00 | 0 | 0 | 0/0 |  |
+| 21 | Álex Cantero | LW | 26 | Spain | 244 k€ | 6,82 | 0 | 0 | 0/0 |  |
 | 34 | Anton Matković | ST,LW | 20 | Croatia | 2,3 M€ | – | 0 | 0 | 0/0 | skadad, åter Unknown |
 | 39 | Domagoj Bukvić | RW,CAM,LB,LWB | 22 | Croatia | 535 k€ | 7,71 | 1 | 4 | 3/0 |  |
 | 46 | Ivan Barić | ST | 19 | Croatia | 331 k€ | 6,16 | 0 | 0 | 0/0 |  |
 | 57 | Admir Ljatifi | LW | 19 | North Macedonia | 587 k€ | 6,57 | 0 | 1 | 0/0 |  |
 | 79 | Armando León | ST | 26 | Mexico | 325 k€ | 7,19 | 5 | 0 | 1/0 |  |
 | 99 | Miguel Ângelo Bastos Melo | Attacker | 24 | Portugal | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Mateo Mejía (senast 2026-09-29).

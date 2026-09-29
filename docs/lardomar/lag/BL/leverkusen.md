@@ -1,6 +1,6 @@
 # Leverkusen (Bundesliga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [BL](../../ligor/BL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [BL](../../ligor/BL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -54,11 +54,11 @@ Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: s
 |---|---|---|---|---|---|---|
 | Augsburg | 17 | 11-2-4 | 34–15 | +0,02 | −10 pe | 2026-09-12 2-2 (b) |
 | RB Leipzig | 17 | 7-4-6 | 29–26 | +0,17 | −2 pe | 2026-09-20 2-0 (h) |
-| Dortmund | 16 | 5-2-9 | 28–37 | −0,18 | −12 pe | 2026-04-11 1-0 (b) |
 | Ein Frankfurt | 16 | 11-0-5 | 43–25 | +0,33 | −24 pe | 2026-01-31 3-1 (b) |
 | Freiburg | 16 | 8-5-3 | 32–21 | −0,01 | +7 pe | 2026-03-07 3-3 (b) |
 | Hoffenheim | 16 | 7-3-6 | 29–27 | −0,32 | −3 pe | 2026-01-17 0-1 (b) |
 | Bayern Munich | 15 | 4-5-6 | 19–28 | +0,35 | +13 pe | 2026-03-14 1-1 (h) |
+| Dortmund | 15 | 5-2-8 | 26–33 | −0,10 | −11 pe | 2026-04-11 1-0 (b) |
 | M'gladbach | 15 | 9-4-2 | 31–17 | +0,28 | +4 pe | 2026-02-07 1-1 (b) |
 | Mainz | 15 | 10-3-2 | 31–16 | +0,35 | −3 pe | 2026-02-28 1-1 (h) |
 | Union Berlin | 15 | 8-5-2 | 27–9 | +0,11 | +8 pe | 2026-09-05 4-0 (h) |
@@ -80,7 +80,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-03-04 | Europa 2554 | Hamburg - Bayer Leverkusen | 2 ✓ | 57 % | 47 % |
 | 2025-09-21 | Europa 2507 | Bayer Leverkusen - Mönchengladbach | X | 71 % | 62 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Carles Martínez. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -101,7 +101,6 @@ Tränare: Carles Martínez. Betyg, mål och assist gäller innevarande säsong e
 | 15 | Tim Oermann | CB,RB | 22 | Germany | 3,1 M€ | – | 0 | 0 | 0/0 |  |
 | 20 | Guéla Doué | RB,CB,RWB | 23 | Ivory Coast | 15,7 M€ | 6,49 | 0 | 0 | 1/0 | skadad, åter A few weeks |
 | | **Mittfältare** | | | | | | | | | |
-|  | Naba Mensah | CM | 19 | Germany | – | – | 0 | 0 | 0/0 |  |
 | 3 | Miguel Gutiérrez | LB,LWB,RWB | 25 | Spain | 13,5 M€ | 7,86 | 1 | 3 | 1/0 |  |
 | 6 | Equi Fernández | CDM | 24 | Argentina | 17,5 M€ | 7,44 | 1 | 0 | 0/0 |  |
 | 7 | Jonas Hofmann | CAM,RWB | 34 | Germany | 1,1 M€ | 6,48 | 0 | 0 | 0/0 |  |
@@ -111,7 +110,7 @@ Tränare: Carles Martínez. Betyg, mål och assist gäller innevarande säsong e
 | 18 | Kennet Eichhorn | CDM | 17 | Germany | 7,1 M€ | – | 0 | 0 | 0/0 | skadad, åter Late October 2026 |
 | 23 | Nathan Tella | CAM | 27 | Nigeria | 12,6 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 24 | Aleix García | CDM,CM | 29 | Spain | 24,0 M€ | 7,77 | 0 | 0 | 0/0 |  |
-| 29 | Eliesse Ben Seghir | CAM | 21 | Morocco | 21,8 M€ | – | 0 | 0 | 0/0 |  |
+| 29 | Eliesse Ben Seghir | CM | 21 | Morocco | 21,8 M€ | – | 0 | 0 | 0/0 |  |
 | 30 | Ibrahim Maza | CAM,CDM,CM,RW,ST | 20 | Algeria | 18,7 M€ | 7,57 | 1 | 1 | 2/0 |  |
 | 42 | Montrell Culbreath | RWB,RW | 19 | Germany | 498 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | | **Anfallare** | | | | | | | | | |
@@ -122,3 +121,5 @@ Tränare: Carles Martínez. Betyg, mål och assist gäller innevarande säsong e
 | 19 | Moussa Diaby | RW,LW,ST | 27 | France | 19,3 M€ | 7,06 | 0 | 0 | 0/0 |  |
 | 22 | Victor Okoh Boniface | ST | 25 | Nigeria | 10,3 M€ | – | 0 | 0 | 0/0 |  |
 | 35 | Christian Kofane | ST | 20 | Cameroon | 23,8 M€ | 6,59 | 2 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Naba Mensah (senast 2026-09-29).

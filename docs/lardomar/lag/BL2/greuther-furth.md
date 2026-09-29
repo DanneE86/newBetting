@@ -1,6 +1,6 @@
 # Greuther Furth (2. Bundesliga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [BL2](../../ligor/BL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [BL2](../../ligor/BL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -57,7 +57,7 @@ Form (äldst → senast): FVOFVFOO · senaste match 2026-09-18
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Heiko Vogel. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -66,7 +66,6 @@ Tränare: Heiko Vogel. Betyg, mål och assist gäller innevarande säsong enligt
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-|  | Nils-Jonathan Körber | GK | 29 | Germany | – | – | 0 | 0 | 0/0 |  |
 | 1 | Florian Hellstern | GK | 18 | Germany | 1,5 M€ | 6,80 | 0 | 0 | 0/0 |  |
 | 39 | Christian Ortag | GK | 31 | Germany | 124 k€ | – | 0 | 0 | 0/0 |  |
 | 43 | Silas Prüfrock | GK | 21 | Germany | 865 k€ | – | 0 | 0 | 0/0 |  |
@@ -89,13 +88,13 @@ Tränare: Heiko Vogel. Betyg, mål och assist gäller innevarande säsong enligt
 | 11 | Aaron Keller | LWB,LM | 22 | Switzerland | 1,5 M€ | 6,04 | 0 | 0 | 1/0 |  |
 | 13 | Paul Will | CDM,CM | 27 | Germany | 318 k€ | 7,21 | 0 | 0 | 1/0 |  |
 | 21 | Mika Wallentowitz | RWB | 18 | Germany | 1,8 M€ | 6,29 | 0 | 0 | 0/0 |  |
-| 24 | Marco John | CDM | 24 | Germany | 874 k€ | – | 0 | 0 | 0/0 |  |
 | 28 | Doni Arifi | CM,CDM | 24 | Finland | 357 k€ | 6,02 | 0 | 0 | 1/0 |  |
 | 37 | Faton Ademi | CM,CDM,RM | 20 | Kosovo | 712 k€ | 5,96 | 0 | 0 | 0/0 |  |
-| 37 | Julian Green | CDM,CM | 31 | USA | 243 k€ | – | 0 | 0 | 0/0 |  |
 | 42 | Omar Sillah | CAM | 23 | Germany | 178 k€ | 6,80 | 2 | 1 | 0/0 |  |
 | 44 | Mehmet Avlayici | Midfielder | 20 | Germany | 542 k€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 9 | Jordan Pefok | ST | 30 | USA | 813 k€ | 6,14 | 0 | 0 | 0/0 |  |
 | 19 | Benjamin Zank | ST | 22 | Germany | 382 k€ | – | 0 | 0 | 0/0 | skadad, åter Unknown |
 | 30 | Felix Klaus | ST,RW,CAM,RM | 34 | Germany | 218 k€ | 7,71 | 5 | 1 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (3): Julian Green (senast 2026-09-29), Nils-Jonathan Körber (senast 2026-09-29), Marco John (senast 2026-09-29).

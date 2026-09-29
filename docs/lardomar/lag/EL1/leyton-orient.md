@@ -1,6 +1,6 @@
 # Leyton Orient (League One) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -68,7 +68,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-12-13 | Stryk 4931 | Barnsley - Leyton Orient | 1 | 29 % | 29 % |
 | 2026-08-29 | Stryk 4968 | Leyton Orient - Barnsley | 2 | 48 % | 45 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Richie Wellens. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -92,7 +92,7 @@ Tränare: Richie Wellens. Betyg, mål och assist gäller innevarande säsong enl
 | | **Mittfältare** | | | | | | | | | |
 |  | Zak O'Keefe | Midfielder | 0 | England | – | – | 0 | 0 | 0/0 |  |
 | 8 | Idris El Mizouni | CDM,CAM,CM | 26 | Tunisia | 506 k€ | 7,21 | 0 | 1 | 1/0 |  |
-| 11 | Demetri Mitchell | CAM,RW,RWB,LW,LB | 29 | England | 167 k€ | 6,99 | 0 | 3 | 0/0 |  |
+| 11 | Demetri Mitchell | CAM,RW,RWB,LW | 29 | England | 167 k€ | 6,99 | 0 | 3 | 0/0 |  |
 | 14 | Isaac Hayden | CDM,CM | 31 | Jamaica | 258 k€ | 6,78 | 0 | 0 | 4/0 |  |
 | 20 | Alex Gilbert | CM,CDM,LW | 24 | Ireland | 776 k€ | 7,29 | 1 | 0 | 0/0 |  |
 | 25 | Charlie Wellens | CAM,RWB,RW | 23 | England | 287 k€ | 7,04 | 0 | 0 | 0/0 |  |
@@ -101,12 +101,13 @@ Tränare: Richie Wellens. Betyg, mål och assist gäller innevarande säsong enl
 | | **Anfallare** | | | | | | | | | |
 | 7 | Oliver O'Neill | LW,CAM,RW | 23 | Ireland | 714 k€ | – | 0 | 0 | 0/0 |  |
 | 9 | Jaze Kabia | ST,LW,RW | 26 | Ireland | 294 k€ | 7,29 | 4 | 2 | 2/0 |  |
-| 10 | Aaron Connolly | LW,CAM,ST | 26 | Ireland | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 10 | Aaron Connolly | LW,ST | 26 | Ireland | 1,0 M€ | – | 0 | 0 | 0/0 |  |
 | 17 | Armando Dobra | LW,CAM | 25 | Albania | 337 k€ | 6,43 | 1 | 0 | 0/0 |  |
 | 18 | Dane Scarlett | ST | 22 | England | 1,4 M€ | 5,30 | 0 | 0 | 0/0 |  |
 | 22 | Yusuf Akhamrich | RW,CAM,RWB,RM | 21 | Morocco | 190 k€ | 7,43 | 3 | 2 | 1/0 |  |
 | 27 | Tony Springett | RW,LW,LB | 24 | Ireland | 764 k€ | 6,82 | 1 | 1 | 1/0 |  |
-| 35 | Tariq Al-Sadi | Attacker | 20 | Oman | – | – | 0 | 0 | 0/0 |  |
 | 42 | Lemar Gordon | LW | 20 | England | – | – | 0 | 0 | 0/0 |  |
 | 44 | Theo Archibald | RW,RWB,LWB,LW | 28 | Scotland | 161 k€ | 6,12 | 0 | 0 | 1/0 |  |
 | 49 | Nicholas Oyekunle | ST | 19 | England | – | 6,15 | 1 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Tariq Al-Sadi (senast 2026-09-29).

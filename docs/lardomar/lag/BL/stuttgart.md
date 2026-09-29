@@ -1,6 +1,6 @@
 # Stuttgart (Bundesliga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [BL](../../ligor/BL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [BL](../../ligor/BL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -44,7 +44,7 @@ Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 l
 | Dzenan Pejcinovic | 12 % | 0 / 72 | – / 1,60 | – / −0,01 |
 | Maximilian Mittelstädt | 10 % | 2 / 70 | 3,00 / 1,56 | +1,14 / −0,04 |
 | Chris Führich | 9 % | 0 / 72 | – / 1,60 | – / −0,01 |
-| Ermedin Demirovic | 9 % | 2 / 70 | 0,50 / 1,63 | −0,43 / +0,01 |
+| Ermedin Demirovic | 8 % | 2 / 70 | 0,50 / 1,63 | −0,43 / +0,01 |
 | Bilal El Khannouss | 6 % | 4 / 68 | 2,00 / 1,57 | +0,25 / −0,02 |
 
 Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
@@ -64,8 +64,8 @@ Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: s
 | Mainz | 13 | 7-4-2 | 28–17 | +0,34 | +5 pe | 2026-03-07 2-2 (b) |
 | RB Leipzig | 13 | 4-1-8 | 16–28 | +0,05 | −15 pe | 2026-03-15 1-0 (h) |
 | Union Berlin | 12 | 3-5-4 | 19–19 | −0,36 | +14 pe | 2026-01-18 1-1 (h) |
-| Werder Bremen | 12 | 5-4-3 | 19–14 | −0,02 | +9 pe | 2026-04-26 1-1 (h) |
 | FC Koln | 11 | 7-3-1 | 19–7 | +0,52 | +3 pe | 2026-09-04 4-1 (h) |
+| Werder Bremen | 11 | 4-4-3 | 17–13 | −0,18 | +12 pe | 2026-04-26 1-1 (h) |
 | Schalke 04 | 6 | 1-3-2 | 9–8 | −0,50 | +25 pe | 2023-02-25 1-2 (b) |
 | Hamburg | 4 | 2-0-2 | 10–10 | −0,07 | −24 pe | 2026-04-12 4-0 (h) |
 
@@ -85,7 +85,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-11-30 | Europa 2527 | Hamburg - Stuttgart | 1 | 51 % | 39 % |
 | 2025-09-28 | Europa 2509 | Köln - Stuttgart | 2 ✓ | 46 % | 37 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Sebastian Hoeneß. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -115,8 +115,9 @@ Tränare: Sebastian Hoeneß. Betyg, mål och assist gäller innevarande säsong 
 | 11 | Bilal El Khannouss | CAM,LW,RW,ST,CM | 22 | Morocco | 29,2 M€ | 6,72 | 1 | 0 | 0/0 |  |
 | 16 | Atakan Karazor | CDM,CM | 29 | Turkiye | 7,2 M€ | – | 0 | 0 | 0/0 |  |
 | 21 | Grischa Prömel | CM,CDM | 31 | Germany | 2,4 M€ | 6,53 | 1 | 0 | 1/0 |  |
+| 28 | Nikolas Nartey | CAM,RB,CDM | 26 | Denmark | 495 k€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 8 | Tiago Tomás | RW,CAM,ST | 24 | Portugal | 13,9 M€ | 6,76 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 8 | Tiago Tomás | CAM,ST,RW | 24 | Portugal | 13,9 M€ | 6,76 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
 | 9 | Ermedin Demirović | ST | 28 | Bosnia and Herzegovina | 15,9 M€ | 6,36 | 1 | 0 | 1/0 |  |
 | 17 | Dženan Pejčinović | ST,CAM | 21 | Germany | 9,7 M€ | 6,59 | 0 | 0 | 0/0 |  |
 | 18 | Jamie Leweling | RW,LW,RWB,CAM | 25 | Germany | 22,3 M€ | 6,30 | 0 | 0 | 0/0 |  |

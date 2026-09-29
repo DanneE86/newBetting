@@ -1,6 +1,6 @@
 # Deportes Tolima (Primera A) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [COL](../../ligor/COL.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [COL](../../ligor/COL.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -40,9 +40,9 @@ Form senaste 8 (äldst → senast): FVOVVFFO · senaste match 2026-09-20
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
-Tränare: Sebastián Oliveros. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+Tränare: Luis Fernando Suárez (tidigare: Sebastián Oliveros till 2026-09-28). Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
 **Skadade/borta nu:** Cristian Trujillo (skadad, åter Mid October 2026)
 
@@ -63,7 +63,6 @@ Tränare: Sebastián Oliveros. Betyg, mål och assist gäller innevarande säson
 | 20 | Junior Hernández | LB,LW,LWB | 27 | Colombia | 570 k€ | – | 0 | 0 | 0/0 |  |
 | 25 | Nilder Zapata | Defender | 18 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 26 | Santiago Cabezas | Defender | 19 | Colombia | – | – | 0 | 0 | 0/0 |  |
-| 27 | Michael Martínez | RB | 20 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 30 | Shean Barbosa | LB,CB | 22 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 33 | Jherson Mosquera | RB,LB | 27 | Colombia | 485 k€ | – | 0 | 0 | 0/0 |  |
 | 71 | Yordan Osorio | CB | 32 | Venezuela | 288 k€ | – | 0 | 0 | 0/0 |  |
@@ -77,7 +76,7 @@ Tränare: Sebastián Oliveros. Betyg, mål och assist gäller innevarande säson
 | 32 | Sebastián Guzmán | CDM,CM | 29 | Colombia | 531 k€ | – | 0 | 0 | 0/0 |  |
 | 80 | Brayan Rovira | CDM,CM,CB | 29 | Colombia | 424 k€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 7 | Jorge Hurtado | ST,RW | 23 | Colombia | 501 k€ | – | 0 | 0 | 0/0 |  |
+| 7 | Jorge Hurtado | RW,ST | 23 | Colombia | 501 k€ | – | 0 | 0 | 0/0 |  |
 | 9 | Luis Sandoval | ST,CAM,LW | 27 | Colombia | 804 k€ | – | 0 | 0 | 0/0 |  |
 | 11 | Jader Valencia | ST | 26 | Colombia | 340 k€ | – | 0 | 0 | 0/0 |  |
 | 15 | Sergio Aguayo | ST | 23 | Mexico | – | – | 0 | 0 | 0/0 |  |
@@ -89,3 +88,5 @@ Tränare: Sebastián Oliveros. Betyg, mål och assist gäller innevarande säson
 | 28 | Edwar López | LW,RB,RW,RM | 31 | Colombia | 287 k€ | – | 0 | 0 | 0/0 |  |
 | 29 | Néifer Sánchez | ST | 18 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 31 | Yoimar Moreno | RW | 18 | Colombia | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Michael Martínez (senast 2026-09-29).

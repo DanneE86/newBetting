@@ -1,6 +1,6 @@
 # Walsall (League Two) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -47,8 +47,8 @@ Form (äldst → senast): VOVOOOVO · senaste match 2026-09-26
 | Crewe | 11 | 4-4-3 | 13–10 | −0,06 | +10 pe | 2026-09-01 2-2 (b) |
 | Swindon | 11 | 4-1-6 | 12–18 | −0,09 | −18 pe | 2026-04-06 1-2 (b) |
 | Gillingham | 10 | 4-5-1 | 16–6 | +0,27 | +21 pe | 2026-08-15 3-0 (b) |
-| Accrington | 9 | 3-2-4 | 10–10 | −0,39 | −5 pe | 2026-08-29 3-2 (h) |
 | Port Vale | 9 | 7-1-1 | 18–9 | +1,13 | −19 pe | 2026-09-19 2-0 (h) |
+| Accrington | 8 | 3-2-3 | 10–9 | −0,25 | −2 pe | 2026-08-29 3-2 (h) |
 | Cheltenham | 8 | 1-1-6 | 7–18 | −0,98 | −15 pe | 2026-04-11 0-4 (h) |
 | Exeter | 7 | 1-5-1 | 8–8 | +0,05 | +43 pe | 2026-09-05 0-0 (b) |
 | Oldham | 7 | 4-1-2 | 11–9 | +0,29 | −14 pe | 2025-12-29 1-2 (h) |
@@ -62,43 +62,43 @@ Form (äldst → senast): VOVOOOVO · senaste match 2026-09-26
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Lee Grant. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Jed Ward | GK | 23 | England | 281 k€ | 7,61 | 0 | 0 | 0/0 |  |
-| 21 | Jenson Kilroy | Keeper | 19 | England | – | – | 0 | 0 | 0/0 |  |
+| 1 | Jed Ward | GK | 23 | England | 281 k€ | 7,59 | 0 | 0 | 0/0 |  |
 | 31 | Tom Wooster | GK | 21 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 2 | Rico Browne | CB,RB | 22 | St. Kitts and Nevis | 276 k€ | 6,36 | 0 | 0 | 0/0 |  |
-| 3 | Mason Hancock | LB,LM,LW | 23 | Scotland | 181 k€ | 7,57 | 0 | 1 | 0/0 |  |
-| 4 | James Connolly | CB | 24 | England | 251 k€ | 7,48 | 2 | 0 | 3/0 |  |
+| 3 | Mason Hancock | LB,LM,LW | 23 | Scotland | 181 k€ | 7,56 | 0 | 1 | 0/0 |  |
+| 4 | James Connolly | CB | 24 | England | 251 k€ | 7,49 | 2 | 0 | 3/0 |  |
 | 5 | Harrison Burke | CB | 24 | England | 262 k€ | 7,02 | 1 | 0 | 0/0 |  |
 | 20 | Roman Dixon | RB | 21 | England | 300 k€ | 6,46 | 0 | 0 | 0/0 |  |
 | 22 | Elicha Ahui | RB | 22 | England | 153 k€ | 7,14 | 0 | 1 | 4/0 |  |
 | 24 | Harry Williams | CB | 24 | England | 199 k€ | – | 0 | 0 | 0/0 |  |
-| 25 | Declan Skura | CB | 24 | England | 182 k€ | 7,24 | 0 | 0 | 1/0 |  |
+| 25 | Declan Skura | CB | 24 | England | 182 k€ | 7,28 | 0 | 0 | 1/0 |  |
 | 26 | Ryan Leak | CB | 28 | Wales | 102 k€ | 7,01 | 0 | 0 | 0/0 |  |
 | 29 | James Furlong | LB | 24 | Ireland | 404 k€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 6 | Sven Sprangler | CDM,CM,RW | 31 | Austria | 136 k€ | 7,12 | 0 | 0 | 3/0 |  |
 | 8 | Charlie Crew | CDM,CM | 20 | Wales | 1,0 M€ | 6,57 | 0 | 0 | 2/0 |  |
 | 14 | Antony Evans | CAM | 28 | England | 152 k€ | 6,53 | 0 | 0 | 0/0 |  |
-| 15 | Isaac Moore | CDM,CM,RW | 20 | England | – | 6,98 | 1 | 0 | 2/0 |  |
+| 15 | Isaac Moore | CDM,CM,RW | 20 | England | – | 6,99 | 1 | 0 | 2/0 |  |
 | 17 | Courtney Clarke | CM,RW,CAM,LW,RWB | 23 | England | 149 k€ | 6,82 | 0 | 2 | 0/0 |  |
 | 23 | Alexander Pattison | CM,CDM,CAM | 29 | England | – | – | 0 | 0 | 0/0 |  |
-| 27 | Dylan Thomas | Midfielder | 19 | England | – | – | 0 | 0 | 0/0 |  |
 | 53 | Will Etheridge | CAM | 18 | England | – | – | 0 | 1 | 0/0 |  |
 | 56 | McLloyd Oben | Midfielder | 0 | England | – | – | 0 | 0 | 0/0 |  |
 | 57 | Ryan Sjoerdsma | Midfielder | 0 | England | – | – | 0 | 0 | 0/0 |  |
 | 59 | Stan Straw | CAM | 0 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 7 | Tai Sodje | ST | 23 | England | – | 6,49 | 0 | 0 | 1/0 |  |
+| 7 | Tai Sodje | ST | 23 | England | – | 6,50 | 0 | 0 | 1/0 |  |
 | 9 | Andrew Dallas | ST,CAM | 27 | Scotland | 233 k€ | 6,50 | 1 | 0 | 0/0 |  |
-| 10 | Lewis Simper | RW,CM,CAM,RM,ST,LW | 25 | England | 152 k€ | 6,71 | 0 | 0 | 1/0 |  |
-| 11 | Reece Smith | LW,CAM,LM | 24 | England | 283 k€ | 7,49 | 2 | 2 | 0/0 |  |
-| 19 | Aaron Pressley | ST | 24 | Scotland | 250 k€ | 7,22 | 4 | 0 | 0/0 |  |
+| 10 | Lewis Simper | RW,CAM,RM,CM,ST,LW | 25 | England | 152 k€ | 6,71 | 0 | 0 | 1/0 |  |
+| 11 | Reece Smith | LW,CAM,LM | 24 | England | 283 k€ | 7,46 | 2 | 2 | 0/0 |  |
+| 19 | Aaron Pressley | ST | 24 | Scotland | 250 k€ | 7,21 | 4 | 0 | 0/0 |  |
 | 37 | Albert Adomah | RW,ST,LW | 38 | Ghana | 125 k€ | 5,95 | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (2): Dylan Thomas (senast 2026-09-29), Jenson Kilroy (senast 2026-09-29).

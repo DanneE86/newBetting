@@ -1,6 +1,6 @@
 # New York City (MLS) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -69,7 +69,7 @@ Form (äldst → senast): FFOOOFVF · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Pascal Jansen. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -95,7 +95,7 @@ Tränare: Pascal Jansen. Betyg, mål och assist gäller innevarande säsong enli
 | 45 | Kamran Acito | CB | 22 | USA | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 5 | Kai Trewin | CDM,CB,CM,RWB | 25 | Australia | 1,2 M€ | 6,78 | 0 | 0 | 3/0 | skadad, åter Early October 2026 |
-| 6 | James Sands | CDM,CB,CM | 26 | USA | 4,0 M€ | 6,96 | 1 | 0 | 1/0 |  |
+| 6 | James Sands | CB,CDM,CM | 26 | USA | 4,0 M€ | 6,96 | 1 | 0 | 1/0 |  |
 | 8 | Andrés Perea | CDM,CM,CAM,LW | 25 | USA | 1,7 M€ | 7,01 | 2 | 1 | 1/0 |  |
 | 10 | Maxi Moralez | CAM,ST | 39 | Argentina | 81 k€ | 7,31 | 1 | 6 | 1/0 | skadad, åter Early October 2026 |
 | 15 | Kevin Pierre | CM,CDM | 23 | USA | 157 k€ | 6,54 | 0 | 0 | 0/0 |  |
@@ -110,7 +110,7 @@ Tränare: Pascal Jansen. Betyg, mål och assist gäller innevarande säsong enli
 | 9 | Bénie Traoré | LW,RW,ST,LM,RM | 23 | Ivory Coast | 6,6 M€ | 6,61 | 1 | 0 | 0/0 |  |
 | 11 | Talles Magno | ST | 24 | Brazil | 2,7 M€ | 6,63 | 2 | 2 | 1/0 | skadad, åter Early October 2026 |
 | 16 | Alonso Martínez | ST | 27 | Costa Rica | 2,9 M€ | 6,20 | 0 | 0 | 0/0 |  |
-| 17 | Hannes Wolf | LW,LM | 27 | Austria | 1,9 M€ | 6,95 | 5 | 2 | 2/0 |  |
+| 17 | Hannes Wolf | LW | 27 | Austria | 1,9 M€ | 6,95 | 5 | 2 | 2/0 |  |
 | 20 | Luighi | ST | 20 | Brazil | 5,2 M€ | 6,71 | 4 | 0 | 2/0 |  |
 | 26 | Agustín Ojeda | RW,RM | 22 | Argentina | 2,5 M€ | 7,28 | 5 | 9 | 1/0 |  |
 | 47 | Jacob Arroyave | ST | 18 | USA | – | – | 0 | 0 | 0/0 |  |

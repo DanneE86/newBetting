@@ -1,6 +1,6 @@
 # Rosengård (Div 1 Södra) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [SE3S](../../ligor/SE3S.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [SE3S](../../ligor/SE3S.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -41,3 +41,43 @@ Form senaste 8 (äldst → senast): OOVVFFOV · senaste match 2026-09-26
 | Utsikten | 2 | 1-1-0 | 2–1 | 2026-08-16 1-1 (h) |
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
+
+## Trupp (Transfermarkt, hämtad 2026-09-29)
+
+Tränare: William Bergendahl. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 44 | Aris Vaporakis | Goalkeeper | 31 | Denmark | 50 k€ | – | – | – | 0/0 |  |
+| 30 | Alexander Cederfelt | Goalkeeper | 29 | Sweden | – | – | – | – | 0/0 |  |
+| 1 | Anton Mayland | Goalkeeper | 19 | Denmark | – | – | – | – | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 21 | Ismail Ljajic | Defender | 19 | Sweden | – | – | – | – | 0/0 |  |
+| 3 | Kalle Larsson | Centre-Back | 28 | Sweden | – | – | – | – | 0/0 |  |
+| 28 | Kevin Pasalic | Centre-Back | 19 | Sweden | – | – | – | – | 0/0 |  |
+| 4 | Jens Lynard | Centre-Back | 28 | Sweden | – | – | – | – | 0/0 |  |
+| 8 | Erik Persson | Centre-Back | 23 | Sweden | – | – | – | – | 0/0 |  |
+| 42 | Graham Ankamafio | Centre-Back | 19 | Denmark | – | – | – | – | 0/0 |  |
+| 19 | Rasmus Bonde | Left-Back | 23 | Sweden | – | – | – | – | 0/0 |  |
+| 2 | William Lindberg | Right-Back | 23 | Sweden | – | – | – | – | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Sakariya Adan | Midfielder | 18 | Sweden | – | – | – | – | 0/0 |  |
+| 21 | Filip Aronsson | Midfielder | 17 | Sweden | – | – | – | – | 0/0 |  |
+| 23 | Otto Håkansson | Midfielder | 20 | Sweden | – | – | – | – | 0/0 |  |
+| 6 | Matias Ritari | Central Midfield | 21 | Finland | – | – | – | – | 0/0 |  |
+| 10 | Argjend Malaj | Central Midfield | 32 | Kosovo | – | – | – | – | 0/0 |  |
+| 12 | Gustaf Backaliden | Central Midfield | 29 | Sweden | – | – | – | – | 0/0 |  |
+| 14 | Ludvig Carlius | Central Midfield | 25 | Sweden | – | – | – | – | 0/0 |  |
+|  | Mahmoud Jafleh | Central Midfield | 17 | Sweden | – | – | – | – | 0/0 |  |
+|  | Humphrey Aroko Omondi | Central Midfield | 18 | Kenya | – | – | – | – | 0/0 |  |
+| 25 | Frederik Petersen | Central Midfield | 18 | Denmark | – | – | – | – | 0/0 |  |
+| 11 | Niklas Söderberg | Attacking Midfield | 29 | Sweden | – | – | – | – | 0/0 |  |
+| 17 | Yoel Embaye | Attacking Midfield | 26 | Sweden | – | – | – | – | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 26 | Ziyad Salifu | Left Winger | 20 | Ghana | 75 k€ | – | – | – | 0/0 |  |
+| 9 | Joel Voelkerling Persson | Centre-Forward | 23 | Sweden | – | – | – | – | 0/0 |  |
+| 13 | Emmanuel Igbonekwu | Centre-Forward | 24 | Nigeria | – | – | – | – | 0/0 |  |
+| 7 | Emmanuel Onotu | Striker | 20 | Nigeria | – | – | – | – | 0/0 |  |
+| 15 | Mattias Andersson | Centre-Forward | 24 | Sweden | – | – | – | – | 0/0 |  |
+| 20 | Alie Dumbuya | Striker | 18 | Sierra Leone | – | – | – | – | 0/0 |  |

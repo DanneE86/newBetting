@@ -1,6 +1,6 @@
 # Valladolid (LaLiga 2) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [LL2](../../ligor/LL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [LL2](../../ligor/LL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -60,7 +60,7 @@ Form (äldst → senast): FFFOVFOV · senaste match 2026-09-27
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Fran Escribá. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -69,20 +69,20 @@ Tränare: Fran Escribá. Betyg, mål och assist gäller innevarande säsong enli
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Álvaro Aceves | GK | 23 | Spain | 522 k€ | 6,71 | 0 | 0 | 1/0 |  |
+| 1 | Álvaro Aceves | GK | 23 | Spain | 522 k€ | 6,68 | 0 | 0 | 1/0 |  |
 | 13 | Dani Martín | GK | 21 | Spain | 461 k€ | – | 0 | 0 | 0/0 |  |
 | 26 | Lucas Lavagnino | Keeper | 22 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 31 | Hugo Wauthier | Keeper | 19 | Spain | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 |  | Dani Martín | LB | 29 | Spain | 162 k€ | – | 0 | 0 | 0/0 |  |
-| 2 | Trilli | RB | 23 | Spain | 332 k€ | 7,41 | 0 | 0 | 0/0 |  |
+| 2 | Trilli | RB | 23 | Spain | 332 k€ | 7,44 | 0 | 0 | 0/0 |  |
 | 3 | Guille Bueno | LB | 24 | Spain | 1,3 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
 | 3 | Homam Elamin | LB,LW,LM | 27 | Qatar | 287 k€ | – | 0 | 0 | 0/0 |  |
-| 4 | David Torres | CB | 23 | Spain | 1,8 M€ | 6,90 | 0 | 0 | 2/0 |  |
+| 4 | David Torres | CB | 23 | Spain | 1,8 M€ | 6,91 | 0 | 0 | 2/0 |  |
 | 5 | Ramón Martínez | CB,RB | 23 | Spain | 1,0 M€ | 6,38 | 0 | 0 | 1/0 |  |
-| 12 | Miguel Rubio | CB | 28 | Spain | 1,1 M€ | 6,75 | 0 | 0 | 0/0 |  |
+| 12 | Miguel Rubio | CB | 28 | Spain | 1,1 M€ | 6,70 | 0 | 0 | 0/0 |  |
 | 14 | Iván Alejo | RB | 31 | Spain | 440 k€ | 6,99 | 0 | 0 | 1/0 |  |
-| 15 | Pablo Tomeo | CB | 26 | Spain | 929 k€ | 6,69 | 0 | 0 | 1/0 |  |
+| 15 | Pablo Tomeo | CB | 26 | Spain | 929 k€ | 6,74 | 0 | 0 | 1/0 |  |
 | 18 | Carlos Clerc | LB | 34 | Spain | 191 k€ | 7,34 | 0 | 0 | 1/0 |  |
 | 27 | Iván Garriel | LB | 21 | Spain | 505 k€ | 7,20 | 0 | 0 | 2/0 |  |
 | | **Mittfältare** | | | | | | | | | |
@@ -92,11 +92,11 @@ Tränare: Fran Escribá. Betyg, mål och assist gäller innevarande säsong enli
 | 21 | Julien Ponceau | CDM,CM,CAM | 25 | France | 1,6 M€ | 6,91 | 0 | 2 | 2/0 |  |
 | 24 | Stanko Jurić | CDM,CM | 30 | Croatia | 583 k€ | 6,66 | 0 | 0 | 0/0 |  |
 | 28 | Dani Pérez | CDM | 21 | Spain | – | 6,20 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
-| 30 | Víctor Fernández | CAM | 18 | Spain | 704 k€ | 6,78 | 1 | 0 | 0/0 |  |
+| 30 | Víctor Fernández | CAM | 18 | Spain | 704 k€ | 6,76 | 1 | 0 | 0/0 |  |
 | 32 | Marcos Parriego | Midfielder | 20 | Spain | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 7 | Luis Chacón | ST,CAM,LM,LW,CM | 26 | Spain | 973 k€ | 7,31 | 1 | 0 | 1/0 |  |
-| 9 | Juanmi Latasa | ST | 25 | Spain | 1,3 M€ | 6,32 | 1 | 0 | 3/0 |  |
+| 7 | Luis Chacón | ST,CAM,LM,LW,CM,RW | 26 | Spain | 973 k€ | 7,34 | 1 | 0 | 1/0 |  |
+| 9 | Juanmi Latasa | ST | 25 | Spain | 1,3 M€ | 6,30 | 1 | 0 | 3/0 |  |
 | 11 | Yeray Cabanzón | RW,RM | 23 | Spain | 667 k€ | 6,50 | 0 | 1 | 1/0 |  |
 | 17 | Víctor Barberà | Attacker | 22 | Spain | 526 k€ | 6,77 | 1 | 0 | 0/0 |  |
 | 19 | Adrián Arnuncio | ST | 19 | Spain | – | 7,13 | 1 | 1 | 0/0 |  |

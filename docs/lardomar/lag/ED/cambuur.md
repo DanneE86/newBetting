@@ -1,6 +1,6 @@
 # Cambuur (Eredivisie) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [ED](../../ligor/ED.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [ED](../../ligor/ED.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -50,7 +50,7 @@ Form (äldst → senast): VFFFFOVO · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Johan Plat. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -94,4 +94,4 @@ Tränare: Johan Plat. Betyg, mål och assist gäller innevarande säsong enligt 
 | 19 | Danyello Look | CDM | 19 | Netherlands | 803 k€ | – | 0 | 0 | 0/0 |  |
 | 29 | Iwan Henstra | RW | 19 | Netherlands | 145 k€ | 6,73 | 1 | 0 | 1/0 |  |
 | 30 | Jason Çeka | RW | 26 | Germany | 433 k€ | 5,50 | 0 | 0 | 0/0 |  |
-| 38 | Yme Bruinsma | Attacker | 20 | Netherlands | – | – | 0 | 0 | 0/0 |  |
+| 38 | Yme Bruinsma | Attacker | 21 | Netherlands | – | – | 0 | 0 | 0/0 |  |

@@ -1,6 +1,6 @@
 # Porto (Primeira Liga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [PT](../../ligor/PT.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [PT](../../ligor/PT.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -68,7 +68,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-03-08 | Europa 2555 | Benfica - Porto | X | 18 % | 23 % |
 | 2025-10-05 | Europa 2511 | Porto - Benfica | X | 59 % | 46 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Francesco Farioli. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -86,7 +86,7 @@ Tränare: Francesco Farioli. Betyg, mål och assist gäller innevarande säsong 
 | 5 | Jan Bednarek | CB | 30 | Poland | 5,5 M€ | 7,53 | 1 | 0 | 0/0 |  |
 | 12 | Zaidu Sanusi | LB | 29 | Nigeria | 1,6 M€ | 7,07 | 0 | 0 | 0/0 | skadad, åter Day to day |
 | 18 | Nehuén Pérez | RB | 26 | Argentina | 11,1 M€ | 6,89 | 1 | 0 | 0/0 | skadad, åter Early October 2026 |
-| 20 | Alberto Costa | RB | 22 | Portugal | 13,7 M€ | 7,22 | 0 | 0 | 0/0 |  |
+| 20 | Alberto Costa | RB | 23 | Portugal | 13,7 M€ | 7,22 | 0 | 0 | 0/0 |  |
 | 21 | Dominik Prpić | CB | 22 | Croatia | 3,2 M€ | – | 0 | 0 | 0/0 |  |
 | 33 | Souza | LB,LWB | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 52 | Martim Fernandes | RB,LB | 20 | Portugal | 12,1 M€ | 6,28 | 0 | 0 | 0/0 |  |
@@ -94,7 +94,7 @@ Tränare: Francesco Farioli. Betyg, mål och assist gäller innevarande säsong 
 | | **Mittfältare** | | | | | | | | | |
 | 8 | Victor Froholdt | CM,CAM,CDM | 20 | Denmark | 24,2 M€ | 7,17 | 1 | 0 | 0/0 |  |
 | 10 | Gabriel Veiga | CM,CAM | 24 | Spain | 18,9 M€ | 7,99 | 4 | 3 | 1/0 |  |
-| 13 | Pablo Rosario | CM,CB | 29 | Dominican Republic | 4,3 M€ | 7,14 | 0 | 1 | 0/0 |  |
+| 13 | Pablo Rosario | CM,CB,CDM | 29 | Dominican Republic | 4,3 M€ | 7,14 | 0 | 1 | 0/0 |  |
 | 15 | Vasco Sousa | CM | 23 | Portugal | 1,8 M€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
 | 16 | In-Beom Hwang | CM,CDM,CAM | 30 | South Korea | 3,9 M€ | 6,79 | 1 | 1 | 2/0 |  |
 | 22 | Alan Varela | CM,CDM | 25 | Argentina | 27,5 M€ | 6,46 | 0 | 0 | 0/0 |  |

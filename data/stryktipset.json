@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-28T18:56:55.449Z",
+  "updatedAt": "2026-09-29T18:38:57.308Z",
   "source": "api.spela.svenskaspel.se + football-data.co.uk + eloratings.net",
   "method": {
     "blend": "Slutprocent = 90 % Svenska Spels odds (utan marginal) + 10 % egen modell (10 % vid tunt underlag/landslag).",
@@ -1767,7 +1767,7 @@
           ],
           "modelWeight": 0.1,
           "tip": "2",
-          "tipP": 0.4429952268743637,
+          "tipP": 0.44299522687436377,
           "verdict": {
             "sign": "2",
             "minOdds": 2.33,
@@ -4582,7 +4582,7 @@
       "open": true,
       "closeDescription": "Europatipset v 40, stänger 2026-10-01 20:44",
       "regCloseTime": "2026-10-01T20:44:00+02:00",
-      "turnover": "139036,00",
+      "turnover": "451233,00",
       "comment": "Europatipset v. 2026-40",
       "modelCutoff": "2026-10-01",
       "events": [
@@ -4596,18 +4596,18 @@
           "odds": [
             3.5,
             3.8,
-            2.1
+            2.08
           ],
           "marketSource": "Pinnacle",
           "market": [
-            0.275,
-            0.254,
-            0.472
+            0.281,
+            0.26,
+            0.46
           ],
           "folk": [
-            0.23,
+            0.22,
             0.29,
-            0.48
+            0.49
           ],
           "model": [
             0.281,
@@ -4649,35 +4649,35 @@
           "elo": {
             "home": 1869,
             "away": 2022,
-            "homeRank": 17,
+            "homeRank": 18,
             "awayRank": 5
           },
           "matched": null,
           "neutralVenue": false,
           "thin": true,
           "sharpOdds": [
-            3.52,
-            3.81,
-            2.05
+            3.44,
+            3.72,
+            2.1
           ],
           "final": [
-            0.275,
-            0.257,
-            0.468
+            0.281,
+            0.262,
+            0.457
           ],
           "modelWeight": 0.1,
           "tip": "2",
-          "tipP": 0.46770551482050027,
+          "tipP": 0.45706279781534176,
           "verdict": {
             "sign": "2",
-            "minOdds": 2.2,
-            "odds": 2.1,
+            "minOdds": 2.25,
+            "odds": 2.08,
             "value": false
           },
           "streckvarde": [
-            1.2,
-            0.89,
-            0.97
+            1.28,
+            0.9,
+            0.93
           ],
           "experts": [],
           "tioTidningar": null,
@@ -4708,15 +4708,8 @@
                 "Patrick Dorgu",
                 "Rasmus Højlund"
               ],
-              "unavailable": [
-                {
-                  "name": "Albert Grønbæk",
-                  "type": "injury",
-                  "expectedReturn": "A few weeks",
-                  "marketValue": 3059911
-                }
-              ],
-              "missingValueShare": 0.013,
+              "unavailable": [],
+              "missingValueShare": 0,
               "starterValue": 228355244,
               "restDays": 4.1,
               "prevMatch": {
@@ -4750,13 +4743,19 @@
               ],
               "unavailable": [
                 {
+                  "name": "Francisco Conceição",
+                  "type": "injury",
+                  "expectedReturn": "Doubtful",
+                  "marketValue": 24640928
+                },
+                {
                   "name": "Bruno Fernandes",
                   "type": "injury",
                   "expectedReturn": "Mid October 2026",
                   "marketValue": 30198593
                 }
               ],
-              "missingValueShare": 0.074,
+              "missingValueShare": 0.128,
               "starterValue": 375231990,
               "restDays": 4,
               "prevMatch": {
@@ -4772,7 +4771,7 @@
               "daysToNext": 3,
               "home": false
             },
-            "referee": null,
+            "referee": "Mykola Balakin",
             "stadium": {
               "name": "Parken",
               "city": "København",
@@ -4784,9 +4783,9 @@
             "weather": {
               "temperature": 16,
               "windSpeed": 6,
-              "precipChance": 9,
+              "precipChance": 3,
               "precipitation": 0,
-              "description": "Partly Cloudy"
+              "description": "Mostly Cloudy"
             },
             "form": {
               "home": "WDDLW",
@@ -4797,15 +4796,16 @@
               "draws": 0,
               "awayWins": 5
             },
-            "fetchedAt": "2026-09-28T18:56:50.883Z"
+            "fetchedAt": "2026-09-29T18:38:54.822Z"
           },
           "analysis": [
-            "Portugal har ett övertag (47 %), men det är långt ifrån säkert.",
-            "Landslags-Elo: Danmark 1869 (#17) mot Portugal 2022 (#5).",
+            "Portugal har ett övertag (46 %), men det är långt ifrån säkert.",
+            "Landslags-Elo: Danmark 1869 (#18) mot Portugal 2022 (#5).",
             "Förväntade mål 1,09 – 1,41; troligast 1-1, 0-1, 0-0.",
+            "Streckvärde på 1: vi 28 %, folket bara 22 %.",
             "Elvorna är inte bekräftade än (FotMob visar senaste elvan).",
-            "Danmark saknar 1 spelare (Albert Grønbæk).",
-            "Portugal saknar 1 spelare (Bruno Fernandes)."
+            "Portugal saknar 2 spelare (Bruno Fernandes, Francisco Conceição), 13 % av startelvans + frånvarandes marknadsvärde.",
+            "Domare: Mykola Balakin."
           ],
           "systemPick": {
             "signs": "1X2",
@@ -4829,20 +4829,20 @@
           "country": "Internationell",
           "kickoff": "2026-10-01T20:45:00+02:00",
           "odds": [
-            5.75,
-            4.6,
-            1.58
+            6,
+            4.7,
+            1.55
           ],
           "marketSource": "Pinnacle",
           "market": [
-            0.163,
-            0.211,
-            0.626
+            0.159,
+            0.208,
+            0.633
           ],
           "folk": [
-            0.08,
-            0.14,
-            0.78
+            0.07,
+            0.13,
+            0.8
           ],
           "model": [
             0.151,
@@ -4891,28 +4891,28 @@
           "neutralVenue": false,
           "thin": true,
           "sharpOdds": [
-            5.91,
-            4.56,
-            1.54
+            6.05,
+            4.63,
+            1.52
           ],
           "final": [
-            0.162,
-            0.215,
-            0.623
+            0.158,
+            0.212,
+            0.63
           ],
           "modelWeight": 0.1,
           "tip": "2",
-          "tipP": 0.6230824201678227,
+          "tipP": 0.6297707427135432,
           "verdict": {
             "sign": "2",
-            "minOdds": 1.65,
-            "odds": 1.58,
+            "minOdds": 1.64,
+            "odds": 1.55,
             "value": false
           },
           "streckvarde": [
-            2.02,
-            1.54,
-            0.8
+            2.26,
+            1.63,
+            0.79
           ],
           "experts": [],
           "tioTidningar": null,
@@ -5000,7 +5000,7 @@
               "daysToNext": 3,
               "home": false
             },
-            "referee": null,
+            "referee": "Alejandro José Hernández Hernández",
             "stadium": {
               "name": "Cardiff City Stadium",
               "city": "Cardiff (Caerdydd)",
@@ -5014,7 +5014,7 @@
               "windSpeed": 3,
               "precipChance": 3,
               "precipitation": 0,
-              "description": "Partly Cloudy"
+              "description": "Mostly Cloudy"
             },
             "form": {
               "home": "DDLLL",
@@ -5025,20 +5025,21 @@
               "draws": 0,
               "awayWins": 0
             },
-            "fetchedAt": "2026-09-28T18:56:50.972Z"
+            "fetchedAt": "2026-09-29T18:38:54.889Z"
           },
           "analysis": [
-            "Norge är klar favorit (62 %).",
+            "Norge är klar favorit (63 %).",
             "Landslags-Elo: Wales 1669 (#50) mot Norge 1937 (#11).",
             "Förväntade mål 0,76 – 1,74; troligast 0-1, 0-2, 1-1.",
-            "Svenska folket överstreckar 2 (78 % mot vår 62 %).",
-            "Streckvärde på 1: vi 16 %, folket bara 8 %.",
+            "Svenska folket överstreckar 2 (80 % mot vår 63 %).",
+            "Streckvärde på 1: vi 16 %, folket bara 7 %.",
             "Elvorna är inte bekräftade än (FotMob visar senaste elvan).",
-            "Norge saknar 1 spelare (Martin Ødegaard), 15 % av startelvans + frånvarandes marknadsvärde."
+            "Norge saknar 1 spelare (Martin Ødegaard), 15 % av startelvans + frånvarandes marknadsvärde.",
+            "Domare: Alejandro José Hernández Hernández."
           ],
           "systemPick": {
-            "signs": "1X2",
-            "type": "Helgardering"
+            "signs": "2",
+            "type": "Spik"
           },
           "colors": [
             "red",
@@ -5046,8 +5047,8 @@
             "green"
           ],
           "systemPickB": {
-            "signs": "1X2",
-            "type": "Helgardering"
+            "signs": "2",
+            "type": "Spik"
           }
         },
         {
@@ -5059,19 +5060,19 @@
           "kickoff": "2026-10-01T20:45:00+02:00",
           "odds": [
             1.27,
-            6.75,
+            6.5,
             11.5
           ],
-          "marketSource": "Betfair",
+          "marketSource": "Pinnacle",
           "market": [
-            0.781,
-            0.137,
+            0.759,
+            0.159,
             0.082
           ],
           "folk": [
-            0.84,
+            0.85,
             0.11,
-            0.05
+            0.04
           ],
           "model": [
             0.744,
@@ -5114,34 +5115,34 @@
             "home": 1884,
             "away": 1697,
             "homeRank": 16,
-            "awayRank": 45
+            "awayRank": 44
           },
           "matched": null,
           "neutralVenue": false,
           "thin": true,
           "sharpOdds": [
             1.26,
-            7.2,
-            12
+            6.03,
+            11.62
           ],
           "final": [
-            0.777,
-            0.142,
-            0.08
+            0.758,
+            0.162,
+            0.081
           ],
           "modelWeight": 0.1,
           "tip": "1",
-          "tipP": 0.777495078113384,
+          "tipP": 0.7575396112829171,
           "verdict": {
             "sign": "1",
-            "minOdds": 1.32,
+            "minOdds": 1.36,
             "odds": 1.27,
             "value": false
           },
           "streckvarde": [
-            0.93,
-            1.29,
-            1.61
+            0.89,
+            1.47,
+            2.02
           ],
           "experts": [],
           "tioTidningar": null,
@@ -5235,7 +5236,7 @@
               "daysToNext": 3,
               "home": false
             },
-            "referee": null,
+            "referee": "Espen Eskås",
             "stadium": {
               "name": "Allianz Arena",
               "city": "München",
@@ -5245,11 +5246,11 @@
               "surface": "grass"
             },
             "weather": {
-              "temperature": 17,
-              "windSpeed": 1,
-              "precipChance": 20,
+              "temperature": 18,
+              "windSpeed": 2,
+              "precipChance": 21,
               "precipitation": 0,
-              "description": "Mostly Cloudy"
+              "description": "Cloudy"
             },
             "form": {
               "home": "WLDDL",
@@ -5260,14 +5261,16 @@
               "draws": 1,
               "awayWins": 1
             },
-            "fetchedAt": "2026-09-28T18:56:51.419Z"
+            "fetchedAt": "2026-09-29T18:38:55.419Z"
           },
           "analysis": [
-            "Tyskland är klar favorit (78 %).",
-            "Landslags-Elo: Tyskland 1884 (#16) mot Serbien 1697 (#45).",
+            "Tyskland är klar favorit (76 %).",
+            "Landslags-Elo: Tyskland 1884 (#16) mot Serbien 1697 (#44).",
             "Förväntade mål 2,04 – 0,46; troligast 2-0, 1-0, 3-0.",
+            "Svenska folket överstreckar 1 (85 % mot vår 76 %).",
             "Elvorna är inte bekräftade än (FotMob visar senaste elvan).",
-            "Tyskland saknar 2 spelare (Kai Havertz, Brajan Gruda), 22 % av startelvans + frånvarandes marknadsvärde."
+            "Tyskland saknar 2 spelare (Kai Havertz, Brajan Gruda), 22 % av startelvans + frånvarandes marknadsvärde.",
+            "Domare: Espen Eskås."
           ],
           "systemPick": {
             "signs": "1",
@@ -5292,14 +5295,14 @@
           "kickoff": "2026-10-01T20:45:00+02:00",
           "odds": [
             3.55,
-            3.65,
-            2.1
+            3.6,
+            2.14
           ],
           "marketSource": "Pinnacle",
           "market": [
             0.291,
-            0.271,
-            0.438
+            0.269,
+            0.44
           ],
           "folk": [
             0.21,
@@ -5347,33 +5350,33 @@
             "home": 1801,
             "away": 1974,
             "homeRank": 24,
-            "awayRank": 9
+            "awayRank": 8
           },
           "matched": null,
           "neutralVenue": false,
           "thin": true,
           "sharpOdds": [
             3.32,
-            3.57,
-            2.21
+            3.6,
+            2.2
           ],
           "final": [
             0.288,
-            0.272,
-            0.44
+            0.27,
+            0.442
           ],
           "modelWeight": 0.1,
           "tip": "2",
-          "tipP": 0.44017239647619555,
+          "tipP": 0.4420692040514208,
           "verdict": {
             "sign": "2",
-            "minOdds": 2.34,
-            "odds": 2.1,
+            "minOdds": 2.33,
+            "odds": 2.14,
             "value": false
           },
           "streckvarde": [
             1.37,
-            0.94,
+            0.93,
             0.88
           ],
           "experts": [],
@@ -5448,7 +5451,7 @@
                 {
                   "name": "Brian Brobbey",
                   "type": "injury",
-                  "expectedReturn": "About 1-2 weeks",
+                  "expectedReturn": "Doubtful",
                   "marketValue": 39543000
                 },
                 {
@@ -5474,7 +5477,7 @@
               "daysToNext": 3,
               "home": false
             },
-            "referee": null,
+            "referee": "Marco Guida",
             "stadium": {
               "name": "Stadio Toumbas",
               "city": "Thessaloníki",
@@ -5499,15 +5502,16 @@
               "draws": 0,
               "awayWins": 2
             },
-            "fetchedAt": "2026-09-28T18:56:50.596Z"
+            "fetchedAt": "2026-09-29T18:38:54.865Z"
           },
           "analysis": [
             "Nederländerna har ett övertag (44 %), men det är långt ifrån säkert.",
-            "Landslags-Elo: Grekland 1801 (#24) mot Nederländerna 1974 (#9).",
+            "Landslags-Elo: Grekland 1801 (#24) mot Nederländerna 1974 (#8).",
             "Förväntade mål 1,03 – 1,47; troligast 1-1, 0-1, 0-0.",
             "Streckvärde på 1: vi 29 %, folket bara 21 %.",
             "Elvorna är inte bekräftade än (FotMob visar senaste elvan).",
-            "Nederländerna saknar 3 spelare (Cody Gakpo, Brian Brobbey, Donyell Malen), 25 % av startelvans + frånvarandes marknadsvärde."
+            "Nederländerna saknar 3 spelare (Cody Gakpo, Brian Brobbey, Donyell Malen), 25 % av startelvans + frånvarandes marknadsvärde.",
+            "Domare: Marco Guida."
           ],
           "systemPick": {
             "signs": "1X2",
@@ -5532,19 +5536,19 @@
           "kickoff": "2026-10-01T20:45:00+02:00",
           "odds": [
             3.6,
-            3.3,
-            2.18
+            3.35,
+            2.16
           ],
           "marketSource": "Betfair",
           "market": [
-            0.267,
-            0.287,
-            0.446
+            0.268,
+            0.292,
+            0.439
           ],
           "folk": [
-            0.25,
-            0.3,
-            0.45
+            0.23,
+            0.31,
+            0.46
           ],
           "model": [
             0.312,
@@ -5587,34 +5591,34 @@
             "home": 1715,
             "away": 1845,
             "homeRank": 41,
-            "awayRank": 20
+            "awayRank": 21
           },
           "matched": null,
           "neutralVenue": false,
           "thin": true,
           "sharpOdds": [
             3.7,
-            3.45,
-            2.22
+            3.4,
+            2.26
           ],
           "final": [
-            0.272,
-            0.287,
-            0.441
+            0.273,
+            0.292,
+            0.435
           ],
           "modelWeight": 0.1,
           "tip": "2",
-          "tipP": 0.44101394961176016,
+          "tipP": 0.4353657260907783,
           "verdict": {
             "sign": "2",
-            "minOdds": 2.34,
-            "odds": 2.18,
+            "minOdds": 2.37,
+            "odds": 2.16,
             "value": false
           },
           "streckvarde": [
-            1.09,
-            0.96,
-            0.98
+            1.19,
+            0.94,
+            0.95
           ],
           "experts": [],
           "tioTidningar": null,
@@ -5721,7 +5725,7 @@
               "daysToNext": 2.9,
               "home": false
             },
-            "referee": null,
+            "referee": "Allard Lindhout",
             "stadium": {
               "name": "Aviva Stadium",
               "city": "Dublin",
@@ -5733,7 +5737,7 @@
             "weather": {
               "temperature": 15,
               "windSpeed": 5,
-              "precipChance": 21,
+              "precipChance": 11,
               "precipitation": 0,
               "description": "Mostly Cloudy"
             },
@@ -5746,15 +5750,17 @@
               "draws": 2,
               "awayWins": 1
             },
-            "fetchedAt": "2026-09-28T18:56:52.226Z"
+            "fetchedAt": "2026-09-29T18:38:55.787Z"
           },
           "analysis": [
             "Österrike har ett övertag (44 %), men det är långt ifrån säkert.",
-            "Landslags-Elo: Irland 1715 (#41) mot Österrike 1845 (#20).",
+            "Krysset ligger högt (29 %) – oavgjort är ett rimligt utfall.",
+            "Landslags-Elo: Irland 1715 (#41) mot Österrike 1845 (#21).",
             "Förväntade mål 1,16 – 1,34; troligast 1-1, 0-1, 0-0.",
             "Elvorna är inte bekräftade än (FotMob visar senaste elvan).",
             "Irland saknar 1 spelare (Bosun Lawal).",
-            "Österrike saknar 3 spelare (Konrad Laimer, Raul Florucz, Michael Gregoritsch), 24 % av startelvans + frånvarandes marknadsvärde."
+            "Österrike saknar 3 spelare (Konrad Laimer, Raul Florucz, Michael Gregoritsch), 24 % av startelvans + frånvarandes marknadsvärde.",
+            "Domare: Allard Lindhout."
           ],
           "systemPick": {
             "signs": "1X2",
@@ -5784,14 +5790,14 @@
           ],
           "marketSource": "Betfair",
           "market": [
-            0.294,
-            0.285,
-            0.421
+            0.297,
+            0.281,
+            0.422
           ],
           "folk": [
-            0.26,
-            0.29,
-            0.45
+            0.22,
+            0.3,
+            0.48
           ],
           "model": [
             0.214,
@@ -5833,7 +5839,7 @@
           "elo": {
             "home": 1607,
             "away": 1714,
-            "homeRank": 64,
+            "homeRank": 63,
             "awayRank": 42
           },
           "matched": null,
@@ -5841,27 +5847,27 @@
           "thin": true,
           "sharpOdds": [
             3.35,
-            3.45,
-            2.34
+            3.55,
+            2.36
           ],
           "final": [
-            0.286,
-            0.284,
-            0.43
+            0.289,
+            0.28,
+            0.431
           ],
           "modelWeight": 0.1,
           "tip": "2",
-          "tipP": 0.42995597674041885,
+          "tipP": 0.43115497383893353,
           "verdict": {
             "sign": "2",
-            "minOdds": 2.4,
+            "minOdds": 2.39,
             "odds": 2.23,
             "value": false
           },
           "streckvarde": [
-            1.1,
-            0.98,
-            0.96
+            1.31,
+            0.93,
+            0.9
           ],
           "experts": [],
           "tioTidningar": null,
@@ -5894,13 +5900,19 @@
               ],
               "unavailable": [
                 {
+                  "name": "Idan Toklomati",
+                  "type": "injury",
+                  "expectedReturn": "About 1-2 weeks",
+                  "marketValue": 1513064
+                },
+                {
                   "name": "Omri Gandelman",
                   "type": "injury",
                   "expectedReturn": "About 1-2 weeks",
                   "marketValue": 2270661
                 }
               ],
-              "missingValueShare": 0.047,
+              "missingValueShare": 0.076,
               "starterValue": 45895878,
               "restDays": 4,
               "prevMatch": {
@@ -5962,7 +5974,7 @@
               "daysToNext": 2.9,
               "home": false
             },
-            "referee": null,
+            "referee": "Radu Marián Petrescu",
             "stadium": {
               "name": "Nagyerdei Stadion",
               "city": "Debrecen",
@@ -5973,10 +5985,10 @@
             },
             "weather": {
               "temperature": 14,
-              "windSpeed": 2,
+              "windSpeed": 3,
               "precipChance": 0,
               "precipitation": 0,
-              "description": "Partly Cloudy"
+              "description": "Clear"
             },
             "form": {
               "home": "WDWLL",
@@ -5987,16 +5999,18 @@
               "draws": 1,
               "awayWins": 1
             },
-            "fetchedAt": "2026-09-28T18:56:52.262Z"
+            "fetchedAt": "2026-09-29T18:38:55.851Z"
           },
           "analysis": [
             "Kosovo har ett övertag (43 %), men det är långt ifrån säkert.",
-            "Landslags-Elo: Israel 1607 (#64) mot Kosovo 1714 (#42).",
+            "Landslags-Elo: Israel 1607 (#63) mot Kosovo 1714 (#42).",
             "Förväntade mål 0,93 – 1,57; troligast 1-1, 0-1, 0-2.",
             "Modellen tror mer på 2 än oddsen (51 % mot 42 %).",
+            "Streckvärde på 1: vi 29 %, folket bara 22 %.",
             "Elvorna är inte bekräftade än (FotMob visar senaste elvan).",
-            "Israel saknar 1 spelare (Omri Gandelman).",
-            "Kosovo saknar 2 spelare (Arijanet Murić, Donat Rrudhani), 14 % av startelvans + frånvarandes marknadsvärde."
+            "Israel saknar 2 spelare (Omri Gandelman, Idan Toklomati).",
+            "Kosovo saknar 2 spelare (Arijanet Murić, Donat Rrudhani), 14 % av startelvans + frånvarandes marknadsvärde.",
+            "Domare: Radu Marián Petrescu."
           ],
           "systemPick": {
             "signs": "1X2",
@@ -6024,15 +6038,15 @@
             4.6,
             11.5
           ],
-          "marketSource": "snitt 10 bolag",
+          "marketSource": "Betfair",
           "market": [
-            0.69,
-            0.186,
-            0.124
+            0.748,
+            0.185,
+            0.068
           ],
           "folk": [
-            0.79,
-            0.15,
+            0.8,
+            0.14,
             0.06
           ],
           "model": [
@@ -6075,31 +6089,35 @@
           "elo": {
             "home": 1273,
             "away": 1006,
-            "homeRank": 143,
+            "homeRank": 144,
             "awayRank": 183
           },
           "matched": null,
           "neutralVenue": false,
           "thin": true,
-          "sharpOdds": null,
+          "sharpOdds": [
+            1.31,
+            5.3,
+            14.5
+          ],
           "final": [
-            0.703,
-            0.183,
-            0.115
+            0.755,
+            0.181,
+            0.064
           ],
           "modelWeight": 0.1,
           "tip": "1",
-          "tipP": 0.7025017589123684,
+          "tipP": 0.7545343505975151,
           "verdict": {
             "sign": "1",
-            "minOdds": 1.47,
+            "minOdds": 1.37,
             "odds": 1.3,
             "value": false
           },
           "streckvarde": [
-            0.89,
-            1.22,
-            1.91
+            0.94,
+            1.3,
+            1.07
           ],
           "experts": [],
           "tioTidningar": null,
@@ -6180,7 +6198,7 @@
               "daysToNext": 4,
               "home": false
             },
-            "referee": null,
+            "referee": "Antoni Bandić",
             "stadium": {
               "name": "Ta'Qali National Stadium",
               "city": "Ta'Qali",
@@ -6192,7 +6210,7 @@
             "weather": {
               "temperature": 22,
               "windSpeed": 3,
-              "precipChance": 4,
+              "precipChance": 1,
               "precipitation": 0,
               "description": "Clear"
             },
@@ -6205,15 +6223,15 @@
               "draws": 0,
               "awayWins": 1
             },
-            "fetchedAt": "2026-09-28T18:56:51.941Z"
+            "fetchedAt": "2026-09-29T18:38:55.862Z"
           },
           "analysis": [
-            "Malta är klar favorit (70 %).",
-            "Landslags-Elo: Malta 1273 (#143) mot Gibraltar 1006 (#183).",
+            "Malta är klar favorit (76 %).",
+            "Landslags-Elo: Malta 1273 (#144) mot Gibraltar 1006 (#183).",
             "Förväntade mål 2,21 – 0,29; troligast 2-0, 1-0, 3-0.",
-            "Modellen tror mer på 1 än oddsen (82 % mot 69 %).",
-            "Svenska folket överstreckar 1 (79 % mot vår 70 %).",
-            "Elvorna är inte bekräftade än (FotMob visar senaste elvan)."
+            "Streckvärde på X: vi 18 %, folket bara 14 %.",
+            "Elvorna är inte bekräftade än (FotMob visar senaste elvan).",
+            "Domare: Antoni Bandić."
           ],
           "systemPick": {
             "signs": "1",
@@ -6236,32 +6254,40 @@
           "league": "UEFA Nations League",
           "country": "Internationell",
           "kickoff": "2026-10-02T20:45:00+02:00",
-          "odds": null,
-          "marketSource": null,
-          "market": null,
+          "odds": [
+            3.6,
+            3.65,
+            2.08
+          ],
+          "marketSource": "Betfair",
+          "market": [
+            0.296,
+            0.26,
+            0.445
+          ],
           "folk": [
-            0.21,
-            0.31,
-            0.48
+            0.24,
+            0.3,
+            0.46
           ],
           "model": [
-            0.319,
-            0.29,
-            0.391
+            0.349,
+            0.291,
+            0.36
           ],
-          "basis": "elo+folk",
+          "basis": "elo",
           "lambdas": {
-            "home": 1.17,
-            "away": 1.33
+            "home": 1.24,
+            "away": 1.26
           },
           "topScores": [
             {
               "score": "1-1",
-              "p": 0.138
+              "p": 0.139
             },
             {
               "score": "0-1",
-              "p": 0.099
+              "p": 0.093
             },
             {
               "score": "0-0",
@@ -6269,49 +6295,58 @@
             },
             {
               "score": "1-0",
-              "p": 0.086
+              "p": 0.091
             },
             {
               "score": "1-2",
-              "p": 0.085
+              "p": 0.081
             }
           ],
           "over25": 0.456,
-          "btts": 0.518,
+          "btts": 0.519,
           "homeProfile": null,
           "awayProfile": null,
           "h2h": [],
           "elo": {
-            "home": 1616,
-            "away": 1741,
-            "homeRank": 60,
-            "awayRank": 34
+            "home": 1655,
+            "away": 1759,
+            "homeRank": 52,
+            "awayRank": 30
           },
           "matched": null,
           "neutralVenue": false,
           "thin": true,
+          "sharpOdds": [
+            3.25,
+            3.7,
+            2.16
+          ],
           "final": [
-            0.265,
-            0.3,
+            0.301,
+            0.263,
             0.436
           ],
           "modelWeight": 0.1,
           "tip": "2",
-          "tipP": 0.4355693911472581,
+          "tipP": 0.4363333080954647,
           "verdict": {
             "sign": "2",
             "minOdds": 2.36,
-            "odds": null,
+            "odds": 2.08,
             "value": false
           },
           "streckvarde": [
-            1.26,
-            0.97,
-            0.91
+            1.25,
+            0.88,
+            0.95
           ],
           "experts": [],
           "tioTidningar": null,
-          "startOdds": null,
+          "startOdds": [
+            4.3,
+            3.85,
+            1.87
+          ],
           "context": {
             "fotmobMatchId": 5181841,
             "league": "UEFA Nations League B Grp. 4",
@@ -6320,23 +6355,23 @@
             "lineupConfirmed": false,
             "home": {
               "fotmobTeam": "Bosnia and Herzegovina",
-              "formation": "4-4-2",
+              "formation": "4-2-3-1",
               "starters": [
                 "Martin Zlomislić",
-                "Zinedin Smajlović",
+                "Amar Memić",
                 "Nikola Katić",
                 "Tarik Muharemović",
                 "Sead Kolašinac",
-                "Esmir Bajraktarević",
                 "Ivan Bašić",
-                "Ivan Šunjić",
+                "Armin Gigović",
+                "Esmir Bajraktarević",
+                "Ermin Mahmić",
                 "Kerim Alajbegović",
-                "Ermedin Demirović",
                 "Haris Tabaković"
               ],
               "unavailable": [],
               "missingValueShare": 0,
-              "starterValue": 56280085,
+              "starterValue": 42698478,
               "restDays": 4,
               "prevMatch": {
                 "date": "2026-09-28T18:45:00.000Z",
@@ -6356,16 +6391,16 @@
               "formation": "4-4-2",
               "starters": [
                 "Viktor Johansson",
-                "Emil Holm",
+                "Daniel Svensson",
                 "Carl Starfelt",
                 "Victor Nilsson Lindelöf",
-                "Elliot Stroud",
-                "Alexander Bernhardsson",
+                "Gabriel Gudmundsson",
+                "Patrik Wålemark",
                 "Lucas Bergvall",
                 "Yasin Ayari",
-                "Sebastian Nanasi",
-                "Viktor Gyökeres",
-                "Alexander Isak"
+                "Besfort Zeneli",
+                "Benjamin Nygren",
+                "Viktor Gyökeres"
               ],
               "unavailable": [
                 {
@@ -6373,16 +6408,10 @@
                   "type": "injury",
                   "expectedReturn": "Late December 2026",
                   "marketValue": 10000084
-                },
-                {
-                  "name": "Gustaf Lagerbielke",
-                  "type": "injury",
-                  "expectedReturn": "About a week",
-                  "marketValue": 2273096
                 }
               ],
-              "missingValueShare": 0.049,
-              "starterValue": 237144541,
+              "missingValueShare": 0.053,
+              "starterValue": 179161140,
               "restDays": 4,
               "prevMatch": {
                 "date": "2026-09-28T18:45:00.000Z",
@@ -6414,24 +6443,24 @@
               "description": "Clear"
             },
             "form": {
-              "home": "DLWLD",
-              "away": "WLDLW"
+              "home": "LWLDW",
+              "away": "LDLWW"
             },
             "h2h": {
               "homeWins": 0,
               "draws": 0,
               "awayWins": 0
             },
-            "fetchedAt": "2026-09-28T18:56:52.444Z"
+            "fetchedAt": "2026-09-29T18:38:56.246Z"
           },
           "analysis": [
             "Sverige har ett övertag (44 %), men det är långt ifrån säkert.",
-            "Krysset ligger högt (30 %) – oavgjort är ett rimligt utfall.",
-            "Landslags-Elo: Bosnien & Hercegovina 1616 (#60) mot Sverige 1741 (#34).",
-            "Förväntade mål 1,17 – 1,33; troligast 1-1, 0-1, 0-0.",
-            "Streckvärde på 1: vi 27 %, folket bara 21 %.",
+            "Landslags-Elo: Bosnien & Hercegovina 1655 (#52) mot Sverige 1759 (#30).",
+            "Förväntade mål 1,24 – 1,26; troligast 1-1, 0-1, 0-0.",
+            "Modellen tror mindre på 2 än oddsen (36 % mot 45 %).",
+            "Streckvärde på 1: vi 30 %, folket bara 24 %.",
             "Elvorna är inte bekräftade än (FotMob visar senaste elvan).",
-            "Sverige saknar 2 spelare (Emil Holm, Gustaf Lagerbielke)."
+            "Sverige saknar 1 spelare (Emil Holm)."
           ],
           "systemPick": {
             "signs": "1X2",
@@ -6454,82 +6483,99 @@
           "league": "UEFA Nations League",
           "country": "Internationell",
           "kickoff": "2026-10-02T20:45:00+02:00",
-          "odds": null,
-          "marketSource": null,
-          "market": null,
+          "odds": [
+            1.44,
+            5.3,
+            7
+          ],
+          "marketSource": "Pinnacle",
+          "market": [
+            0.666,
+            0.186,
+            0.148
+          ],
           "folk": [
-            0.77,
-            0.15,
-            0.08
+            0.69,
+            0.21,
+            0.1
           ],
           "model": [
-            0.799,
-            0.161,
-            0.039
+            0.777,
+            0.174,
+            0.049
           ],
-          "basis": "elo+folk",
+          "basis": "elo",
           "lambdas": {
-            "home": 2.17,
-            "away": 0.33
+            "home": 2.12,
+            "away": 0.38
           },
           "topScores": [
             {
               "score": "2-0",
-              "p": 0.193
+              "p": 0.184
             },
             {
               "score": "1-0",
-              "p": 0.174
+              "p": 0.169
             },
             {
               "score": "3-0",
-              "p": 0.14
+              "p": 0.13
             },
             {
               "score": "0-0",
               "p": 0.087
             },
             {
-              "score": "4-0",
-              "p": 0.076
+              "score": "1-1",
+              "p": 0.072
             }
           ],
           "over25": 0.456,
-          "btts": 0.253,
+          "btts": 0.284,
           "homeProfile": null,
           "awayProfile": null,
           "h2h": [],
           "elo": {
-            "home": 2083,
-            "away": 1837,
+            "home": 2103,
+            "away": 1882,
             "homeRank": 4,
-            "awayRank": 22
+            "awayRank": 17
           },
           "matched": null,
           "neutralVenue": false,
           "thin": true,
+          "sharpOdds": [
+            1.44,
+            5.15,
+            6.47
+          ],
           "final": [
-            0.785,
-            0.156,
-            0.06
+            0.677,
+            0.185,
+            0.138
           ],
           "modelWeight": 0.1,
           "tip": "1",
-          "tipP": 0.78461373879472,
+          "tipP": 0.6768310914053371,
           "verdict": {
             "sign": "1",
-            "minOdds": 1.31,
-            "odds": null,
+            "minOdds": 1.52,
+            "odds": 1.44,
             "value": false
           },
           "streckvarde": [
-            1.02,
-            1.04,
-            0.75
+            0.98,
+            0.88,
+            1.38
           ],
           "experts": [],
           "tioTidningar": null,
-          "startOdds": null,
+          "startOdds": [
+            1.47,
+            5.25,
+            6.5
+          ],
           "context": {
             "fotmobMatchId": 5181793,
             "league": "UEFA Nations League A Grp. 1",
@@ -6541,16 +6587,16 @@
               "formation": "4-3-3",
               "starters": [
                 "Mike Maignan",
-                "Jules Koundé",
-                "Dayot Upamecano",
+                "Pierre Kalulu",
+                "Jérémy Jacquet",
                 "Maxence Lacroix",
-                "Adrien Truffert",
-                "Rayan Cherki",
-                "Manu Koné",
-                "Adrien Rabiot",
-                "Michael Olise",
-                "Ousmane Dembélé",
-                "Kylian Mbappé"
+                "Andy Diouf",
+                "Maghnes Akliouche",
+                "Lucas Da Cunha",
+                "Eduardo Camavinga",
+                "Désiré Doué",
+                "Estéban Lepaul",
+                "Bradley Barcola"
               ],
               "unavailable": [
                 {
@@ -6566,8 +6612,8 @@
                   "marketValue": 64228510
                 }
               ],
-              "missingValueShare": 0.121,
-              "starterValue": 612373762,
+              "missingValueShare": 0.176,
+              "starterValue": 395432621,
               "restDays": 4,
               "prevMatch": {
                 "date": "2026-09-28T18:45:00.000Z",
@@ -6584,27 +6630,21 @@
             },
             "away": {
               "fotmobTeam": "Italy",
-              "formation": "4-3-3",
+              "formation": "4-1-2-3",
               "starters": [
                 "Gianluigi Donnarumma",
-                "Giovanni Di Lorenzo",
-                "Gianluca Mancini",
-                "Diego Coppola",
-                "Riccardo Calafiori",
-                "Nicolò Barella",
-                "Alessandro Romano",
+                "Michael Kayode",
+                "Giorgio Scalvini",
+                "Alessandro Bastoni",
+                "Matteo Ruggeri",
                 "Sandro Tonali",
-                "Moise Kean",
+                "Davide Frattesi",
+                "Nicolò Fagioli",
+                "Giacomo Raspadori",
                 "Francesco Pio Esposito",
-                "Nicolò Cambiaghi"
+                "Sebastiano Esposito"
               ],
               "unavailable": [
-                {
-                  "name": "Nicolò Zaniolo",
-                  "type": "injury",
-                  "expectedReturn": "About 1-2 weeks",
-                  "marketValue": 10086815
-                },
                 {
                   "name": "Federico Dimarco",
                   "type": "injury",
@@ -6616,10 +6656,16 @@
                   "type": "injury",
                   "expectedReturn": "Late October 2026",
                   "marketValue": 7758018
+                },
+                {
+                  "name": "Nicolò Zaniolo",
+                  "type": "injury",
+                  "expectedReturn": "Late October 2026",
+                  "marketValue": 10086815
                 }
               ],
-              "missingValueShare": 0.167,
-              "starterValue": 273797752,
+              "missingValueShare": 0.148,
+              "starterValue": 317724362,
               "restDays": 4,
               "prevMatch": {
                 "date": "2026-09-28T18:45:00.000Z",
@@ -6644,30 +6690,31 @@
               "surface": "grass"
             },
             "weather": {
-              "temperature": 18,
+              "temperature": 17,
               "windSpeed": 2,
-              "precipChance": 2,
+              "precipChance": 1,
               "precipitation": 0,
               "description": "Partly Cloudy"
             },
             "form": {
-              "home": "WWLLW",
-              "away": "WDWWL"
+              "home": "WLLWW",
+              "away": "DWWLW"
             },
             "h2h": {
               "homeWins": 6,
               "draws": 2,
               "awayWins": 4
             },
-            "fetchedAt": "2026-09-28T18:56:53.943Z"
+            "fetchedAt": "2026-09-29T18:38:56.817Z"
           },
           "analysis": [
-            "Frankrike är klar favorit (79 %).",
-            "Landslags-Elo: Frankrike 2083 (#4) mot Italien 1837 (#22).",
-            "Förväntade mål 2,17 – 0,33; troligast 2-0, 1-0, 3-0.",
+            "Frankrike är klar favorit (68 %).",
+            "Landslags-Elo: Frankrike 2103 (#4) mot Italien 1882 (#17).",
+            "Förväntade mål 2,12 – 0,38; troligast 2-0, 1-0, 3-0.",
+            "Modellen tror mer på 1 än oddsen (78 % mot 67 %).",
             "Elvorna är inte bekräftade än (FotMob visar senaste elvan).",
-            "Frankrike saknar 2 spelare (Warren Zaïre-Emery, Mattéo Guendouzi), 12 % av startelvans + frånvarandes marknadsvärde.",
-            "Italien saknar 3 spelare (Federico Dimarco, Nicolò Zaniolo, Bryan Cristante), 17 % av startelvans + frånvarandes marknadsvärde."
+            "Frankrike saknar 2 spelare (Warren Zaïre-Emery, Mattéo Guendouzi), 18 % av startelvans + frånvarandes marknadsvärde.",
+            "Italien saknar 3 spelare (Federico Dimarco, Nicolò Zaniolo, Bryan Cristante), 15 % av startelvans + frånvarandes marknadsvärde."
           ],
           "systemPick": {
             "signs": "1",
@@ -6675,7 +6722,7 @@
           },
           "colors": [
             "green",
-            "red",
+            "yellow",
             "red"
           ],
           "systemPickB": {
@@ -6690,251 +6737,28 @@
           "league": "UEFA Nations League",
           "country": "Internationell",
           "kickoff": "2026-10-02T20:45:00+02:00",
-          "odds": null,
-          "marketSource": null,
-          "market": null,
+          "odds": [
+            1.52,
+            5,
+            6
+          ],
+          "marketSource": "Svenska Spel",
+          "market": [
+            0.642,
+            0.195,
+            0.163
+          ],
           "folk": [
-            0.74,
+            0.77,
             0.15,
-            0.11
-          ],
-          "model": [
-            0.692,
-            0.215,
-            0.093
-          ],
-          "basis": "elo+folk",
-          "lambdas": {
-            "home": 1.93,
-            "away": 0.57
-          },
-          "topScores": [
-            {
-              "score": "2-0",
-              "p": 0.153
-            },
-            {
-              "score": "1-0",
-              "p": 0.151
-            },
-            {
-              "score": "3-0",
-              "p": 0.098
-            },
-            {
-              "score": "1-1",
-              "p": 0.098
-            },
-            {
-              "score": "0-0",
-              "p": 0.089
-            }
-          ],
-          "over25": 0.456,
-          "btts": 0.379,
-          "homeProfile": null,
-          "awayProfile": null,
-          "h2h": [],
-          "elo": {
-            "home": 1979,
-            "away": 1839,
-            "homeRank": 8,
-            "awayRank": 21
-          },
-          "matched": null,
-          "neutralVenue": false,
-          "thin": true,
-          "final": [
-            0.716,
-            0.182,
-            0.102
-          ],
-          "modelWeight": 0.1,
-          "tip": "1",
-          "tipP": 0.715880018404988,
-          "verdict": {
-            "sign": "1",
-            "minOdds": 1.44,
-            "odds": null,
-            "value": false
-          },
-          "streckvarde": [
-            0.97,
-            1.22,
-            0.92
-          ],
-          "experts": [],
-          "tioTidningar": null,
-          "startOdds": null,
-          "context": {
-            "fotmobMatchId": 5181792,
-            "league": "UEFA Nations League A Grp. 1",
-            "round": "3",
-            "lineupType": "lastStarting11",
-            "lineupConfirmed": false,
-            "home": {
-              "fotmobTeam": "Belgium",
-              "formation": "4-1-4-1",
-              "starters": [
-                "Senne Lammens",
-                "Timothy Castagne",
-                "Nathan Ngoy",
-                "Brandon Mechele",
-                "Maxim De Cuyper",
-                "Nicolas Raskin",
-                "Diego Moreira",
-                "Kevin De Bruyne",
-                "Youri Tielemans",
-                "Mika Godts",
-                "Charles De Ketelaere"
-              ],
-              "unavailable": [
-                {
-                  "name": "Mike Penders",
-                  "type": "injury",
-                  "expectedReturn": "Mid October 2026",
-                  "marketValue": 18341243
-                },
-                {
-                  "name": "Leandro Trossard",
-                  "type": "injury",
-                  "expectedReturn": "Early October 2026",
-                  "marketValue": 12394590
-                }
-              ],
-              "missingValueShare": 0.145,
-              "starterValue": 181735241,
-              "restDays": 4,
-              "prevMatch": {
-                "date": "2026-09-28T18:45:00.000Z",
-                "tournament": "UEFA Nations League A Grp. 1",
-                "opponent": "France"
-              },
-              "nextMatch": {
-                "date": "2026-10-05T18:45:00.000Z",
-                "tournament": "UEFA Nations League A Grp. 1",
-                "opponent": "France"
-              },
-              "daysToNext": 3,
-              "home": true
-            },
-            "away": {
-              "fotmobTeam": "Turkiye",
-              "formation": "3-4-2-1",
-              "starters": [
-                "Uğurcan Çakir",
-                "Zeki Çelik",
-                "Merih Demiral",
-                "Abdülkerim Bardakci",
-                "Oğuz Aydın",
-                "Ismail Yüksek",
-                "Salih Özcan",
-                "Ferdi Kadıoğlu",
-                "Arda Güler",
-                "Can Uzun",
-                "Barış Alper Yılmaz"
-              ],
-              "unavailable": [
-                {
-                  "name": "Orkun Kökcü",
-                  "type": "injury",
-                  "expectedReturn": "About a week",
-                  "marketValue": 19332622
-                },
-                {
-                  "name": "Muhammed Şengezer",
-                  "type": "injury",
-                  "expectedReturn": "Doubtful",
-                  "marketValue": 2308788
-                }
-              ],
-              "missingValueShare": 0.092,
-              "starterValue": 213101851,
-              "restDays": 4,
-              "prevMatch": {
-                "date": "2026-09-28T18:45:00.000Z",
-                "tournament": "UEFA Nations League A Grp. 1",
-                "opponent": "Italy"
-              },
-              "nextMatch": {
-                "date": "2026-10-05T18:45:00.000Z",
-                "tournament": "UEFA Nations League A Grp. 1",
-                "opponent": "Italy"
-              },
-              "daysToNext": 3,
-              "home": false
-            },
-            "referee": null,
-            "stadium": {
-              "name": "Stade Maurice Dufrasne",
-              "city": "Liège (Luik)",
-              "country": "Belgium",
-              "lat": 50.609892585,
-              "long": 5.543342829,
-              "surface": "grass"
-            },
-            "weather": {
-              "temperature": 15,
-              "windSpeed": 3,
-              "precipChance": 6,
-              "precipitation": 0,
-              "description": "Partly Cloudy"
-            },
-            "form": {
-              "home": "WWWLW",
-              "away": "WLLWL"
-            },
-            "h2h": {
-              "homeWins": 0,
-              "draws": 1,
-              "awayWins": 2
-            },
-            "fetchedAt": "2026-09-28T18:56:52.992Z"
-          },
-          "analysis": [
-            "Belgien är klar favorit (72 %).",
-            "Landslags-Elo: Belgien 1979 (#8) mot Turkiet 1839 (#21).",
-            "Förväntade mål 1,93 – 0,57; troligast 2-0, 1-0, 3-0.",
-            "Streckvärde på X: vi 18 %, folket bara 15 %.",
-            "Elvorna är inte bekräftade än (FotMob visar senaste elvan).",
-            "Belgien saknar 2 spelare (Mike Penders, Leandro Trossard), 14 % av startelvans + frånvarandes marknadsvärde.",
-            "Turkiet saknar 2 spelare (Orkun Kökcü, Muhammed Şengezer)."
-          ],
-          "systemPick": {
-            "signs": "1",
-            "type": "Spik"
-          },
-          "colors": [
-            "green",
-            "red",
-            "red"
-          ],
-          "systemPickB": {
-            "signs": "1",
-            "type": "Spik"
-          }
-        },
-        {
-          "eventNumber": 11,
-          "home": "Ukraina",
-          "away": "Nordirland",
-          "league": "UEFA Nations League",
-          "country": "Internationell",
-          "kickoff": "2026-10-02T20:45:00+02:00",
-          "odds": null,
-          "marketSource": null,
-          "market": null,
-          "folk": [
-            0.66,
-            0.22,
-            0.12
+            0.08
           ],
           "model": [
             0.72,
             0.202,
             0.078
           ],
-          "basis": "elo+folk",
+          "basis": "elo",
           "lambdas": {
             "home": 1.99,
             "away": 0.51
@@ -6967,36 +6791,282 @@
           "awayProfile": null,
           "h2h": [],
           "elo": {
-            "home": 1798,
-            "away": 1633,
-            "homeRank": 26,
-            "awayRank": 54
+            "home": 1959,
+            "away": 1794,
+            "homeRank": 9,
+            "awayRank": 26
           },
           "matched": null,
           "neutralVenue": false,
           "thin": true,
           "final": [
-            0.69,
-            0.211,
-            0.099
+            0.65,
+            0.196,
+            0.154
           ],
           "modelWeight": 0.1,
           "tip": "1",
-          "tipP": 0.6901167462184592,
+          "tipP": 0.6499343081478014,
           "verdict": {
             "sign": "1",
-            "minOdds": 1.49,
-            "odds": null,
+            "minOdds": 1.58,
+            "odds": 1.52,
             "value": false
           },
           "streckvarde": [
-            1.05,
-            0.96,
-            0.82
+            0.84,
+            1.31,
+            1.93
           ],
           "experts": [],
           "tioTidningar": null,
-          "startOdds": null,
+          "startOdds": [
+            1.52,
+            4.9,
+            6
+          ],
+          "context": {
+            "fotmobMatchId": 5181792,
+            "league": "UEFA Nations League A Grp. 1",
+            "round": "3",
+            "lineupType": "lastStarting11",
+            "lineupConfirmed": false,
+            "home": {
+              "fotmobTeam": "Belgium",
+              "formation": "4-2-3-1",
+              "starters": [
+                "Senne Lammens",
+                "Timothy Castagne",
+                "Nathan Ngoy",
+                "Brandon Mechele",
+                "Joaquin Seys",
+                "Roméo Lavia",
+                "Youri Tielemans",
+                "Diego Moreira",
+                "Kevin De Bruyne",
+                "Mika Godts",
+                "Charles De Ketelaere"
+              ],
+              "unavailable": [
+                {
+                  "name": "Diego Moreira",
+                  "type": "suspension",
+                  "expectedReturn": "Early October 2026",
+                  "marketValue": 15472292
+                },
+                {
+                  "name": "Mike Penders",
+                  "type": "injury",
+                  "expectedReturn": "Mid October 2026",
+                  "marketValue": 18341243
+                },
+                {
+                  "name": "Leandro Trossard",
+                  "type": "injury",
+                  "expectedReturn": "Early October 2026",
+                  "marketValue": 12394590
+                }
+              ],
+              "missingValueShare": 0.191,
+              "starterValue": 195631279,
+              "restDays": 4,
+              "prevMatch": {
+                "date": "2026-09-28T18:45:00.000Z",
+                "tournament": "UEFA Nations League A Grp. 1",
+                "opponent": "France"
+              },
+              "nextMatch": {
+                "date": "2026-10-05T18:45:00.000Z",
+                "tournament": "UEFA Nations League A Grp. 1",
+                "opponent": "France"
+              },
+              "daysToNext": 3,
+              "home": true
+            },
+            "away": {
+              "fotmobTeam": "Turkiye",
+              "formation": "4-2-3-1",
+              "starters": [
+                "Altay Bayındır",
+                "Zeki Çelik",
+                "Merih Demiral",
+                "Ozan Kabak",
+                "Eren Elmalı",
+                "Salih Özcan",
+                "Orkun Kökcü",
+                "Oğuz Aydın",
+                "Arda Güler",
+                "Can Uzun",
+                "Barış Alper Yılmaz"
+              ],
+              "unavailable": [],
+              "missingValueShare": 0,
+              "starterValue": 189912553,
+              "restDays": 4,
+              "prevMatch": {
+                "date": "2026-09-28T18:45:00.000Z",
+                "tournament": "UEFA Nations League A Grp. 1",
+                "opponent": "Italy"
+              },
+              "nextMatch": {
+                "date": "2026-10-05T18:45:00.000Z",
+                "tournament": "UEFA Nations League A Grp. 1",
+                "opponent": "Italy"
+              },
+              "daysToNext": 3,
+              "home": false
+            },
+            "referee": null,
+            "stadium": {
+              "name": "Stade Maurice Dufrasne",
+              "city": "Liège (Luik)",
+              "country": "Belgium",
+              "lat": 50.609892585,
+              "long": 5.543342829,
+              "surface": "grass"
+            },
+            "weather": {
+              "temperature": 14,
+              "windSpeed": 2,
+              "precipChance": 5,
+              "precipitation": 0,
+              "description": "Partly Cloudy"
+            },
+            "form": {
+              "home": "WWLWL",
+              "away": "LLWLL"
+            },
+            "h2h": {
+              "homeWins": 0,
+              "draws": 1,
+              "awayWins": 2
+            },
+            "fetchedAt": "2026-09-29T18:38:56.792Z"
+          },
+          "analysis": [
+            "Belgien är klar favorit (65 %).",
+            "Landslags-Elo: Belgien 1959 (#9) mot Turkiet 1794 (#26).",
+            "Förväntade mål 1,99 – 0,51; troligast 2-0, 1-0, 3-0.",
+            "Modellen tror mindre på 2 än oddsen (8 % mot 16 %).",
+            "Svenska folket överstreckar 1 (77 % mot vår 65 %).",
+            "Streckvärde på 2: vi 15 %, folket bara 8 %.",
+            "Elvorna är inte bekräftade än (FotMob visar senaste elvan).",
+            "Belgien saknar 3 spelare (Mike Penders, Diego Moreira, Leandro Trossard), 19 % av startelvans + frånvarandes marknadsvärde."
+          ],
+          "systemPick": {
+            "signs": "1",
+            "type": "Spik"
+          },
+          "colors": [
+            "green",
+            "red",
+            "red"
+          ],
+          "systemPickB": {
+            "signs": "1",
+            "type": "Spik"
+          }
+        },
+        {
+          "eventNumber": 11,
+          "home": "Ukraina",
+          "away": "Nordirland",
+          "league": "UEFA Nations League",
+          "country": "Internationell",
+          "kickoff": "2026-10-02T20:45:00+02:00",
+          "odds": [
+            1.92,
+            3.4,
+            4.5
+          ],
+          "marketSource": "Betfair",
+          "market": [
+            0.502,
+            0.282,
+            0.216
+          ],
+          "folk": [
+            0.62,
+            0.25,
+            0.13
+          ],
+          "model": [
+            0.724,
+            0.201,
+            0.076
+          ],
+          "basis": "elo",
+          "lambdas": {
+            "home": 2,
+            "away": 0.5
+          },
+          "topScores": [
+            {
+              "score": "2-0",
+              "p": 0.164
+            },
+            {
+              "score": "1-0",
+              "p": 0.157
+            },
+            {
+              "score": "3-0",
+              "p": 0.109
+            },
+            {
+              "score": "1-1",
+              "p": 0.089
+            },
+            {
+              "score": "0-0",
+              "p": 0.089
+            }
+          ],
+          "over25": 0.456,
+          "btts": 0.348,
+          "homeProfile": null,
+          "awayProfile": null,
+          "h2h": [],
+          "elo": {
+            "home": 1798,
+            "away": 1630,
+            "homeRank": 25,
+            "awayRank": 56
+          },
+          "matched": null,
+          "neutralVenue": false,
+          "thin": true,
+          "sharpOdds": [
+            1.94,
+            3.45,
+            4.5
+          ],
+          "final": [
+            0.524,
+            0.274,
+            0.202
+          ],
+          "modelWeight": 0.1,
+          "tip": "1",
+          "tipP": 0.5238353243811575,
+          "verdict": {
+            "sign": "1",
+            "minOdds": 1.97,
+            "odds": 1.92,
+            "value": false
+          },
+          "streckvarde": [
+            0.84,
+            1.1,
+            1.56
+          ],
+          "experts": [],
+          "tioTidningar": null,
+          "startOdds": [
+            2.04,
+            3.4,
+            3.95
+          ],
           "context": {
             "fotmobMatchId": 5181805,
             "league": "UEFA Nations League B Grp. 2",
@@ -7005,23 +7075,23 @@
             "lineupConfirmed": false,
             "home": {
               "fotmobTeam": "Ukraine",
-              "formation": "4-3-3",
+              "formation": "3-5-2",
               "starters": [
-                "Dmytro Riznyk",
-                "Illia Krupskyi",
-                "Ilya Zabarnyi",
-                "Mykola Matviyenko",
-                "Vitaliy Mykolenko",
-                "Oleg Ocheretko",
-                "Volodymyr Brazhko",
-                "Georgiy Sudakov",
-                "Viktor Tsigankov",
-                "Danylo Sikan",
+                "Anatoliy Trubin",
+                "Valeriy Bondar",
+                "Eduard Sarapiy",
+                "Taras Mykhavko",
+                "Oleksandr Zubkov",
+                "Oleksandr Pikhalyonok",
+                "Yegor Nazaryna",
+                "Maksym Khlan",
+                "Bogdan Mykhaylychenko",
+                "Matviy Ponomarenko",
                 "Vladyslav Vanat"
               ],
               "unavailable": [],
               "missingValueShare": 0,
-              "starterValue": 128448572,
+              "starterValue": 56797443,
               "restDays": 4.1,
               "prevMatch": {
                 "date": "2026-09-28T16:00:00.000Z",
@@ -7042,7 +7112,7 @@
               "starters": [
                 "Pierce Charles",
                 "Tom Atcheson",
-                "Daniel Ballard",
+                "Ruairi McConville",
                 "Ciaron Brown",
                 "Trai Hume",
                 "Shea Charles",
@@ -7052,9 +7122,16 @@
                 "Isaac Price",
                 "Jamie Donley"
               ],
-              "unavailable": [],
-              "missingValueShare": 0,
-              "starterValue": 69855769,
+              "unavailable": [
+                {
+                  "name": "Daniel Ballard",
+                  "type": "injury",
+                  "expectedReturn": "Doubtful",
+                  "marketValue": 15577760
+                }
+              ],
+              "missingValueShare": 0.215,
+              "starterValue": 56802361,
               "restDays": 4,
               "prevMatch": {
                 "date": "2026-09-28T18:45:00.000Z",
@@ -7087,24 +7164,28 @@
             },
             "form": {
               "home": "LWWWD",
-              "away": "LDWLW"
+              "away": "DWLWD"
             },
             "h2h": {
               "homeWins": 1,
               "draws": 0,
               "awayWins": 1
             },
-            "fetchedAt": "2026-09-28T18:56:53.362Z"
+            "fetchedAt": "2026-09-29T18:38:56.762Z"
           },
           "analysis": [
-            "Ukraina är klar favorit (69 %).",
-            "Landslags-Elo: Ukraina 1798 (#26) mot Nordirland 1633 (#54).",
-            "Förväntade mål 1,99 – 0,51; troligast 2-0, 1-0, 3-0.",
-            "Elvorna är inte bekräftade än (FotMob visar senaste elvan)."
+            "Ukraina har ett övertag (52 %), men det är långt ifrån säkert.",
+            "Landslags-Elo: Ukraina 1798 (#25) mot Nordirland 1630 (#56).",
+            "Förväntade mål 2,00 – 0,50; troligast 2-0, 1-0, 3-0.",
+            "Modellen tror mer på 1 än oddsen (72 % mot 50 %).",
+            "Svenska folket överstreckar 1 (62 % mot vår 52 %).",
+            "Streckvärde på 2: vi 20 %, folket bara 13 %.",
+            "Elvorna är inte bekräftade än (FotMob visar senaste elvan).",
+            "Nordirland saknar 1 spelare (Daniel Ballard), 22 % av startelvans + frånvarandes marknadsvärde."
           ],
           "systemPick": {
-            "signs": "1",
-            "type": "Spik"
+            "signs": "1X2",
+            "type": "Helgardering"
           },
           "colors": [
             "green",
@@ -7112,8 +7193,8 @@
             "red"
           ],
           "systemPickB": {
-            "signs": "1",
-            "type": "Spik"
+            "signs": "1X2",
+            "type": "Helgardering"
           }
         },
         {
@@ -7123,82 +7204,99 @@
           "league": "UEFA Nations League",
           "country": "Internationell",
           "kickoff": "2026-10-02T20:45:00+02:00",
-          "odds": null,
-          "marketSource": null,
-          "market": null,
+          "odds": [
+            1.62,
+            4.2,
+            5.5
+          ],
+          "marketSource": "Betfair",
+          "market": [
+            0.607,
+            0.237,
+            0.157
+          ],
           "folk": [
-            0.65,
-            0.26,
-            0.09
+            0.71,
+            0.21,
+            0.08
           ],
           "model": [
-            0.603,
-            0.249,
-            0.149
+            0.631,
+            0.239,
+            0.13
           ],
-          "basis": "elo+folk",
+          "basis": "elo",
           "lambdas": {
-            "home": 1.75,
-            "away": 0.75
+            "home": 1.8,
+            "away": 0.7
           },
           "topScores": [
             {
               "score": "1-0",
-              "p": 0.135
+              "p": 0.14
             },
             {
               "score": "2-0",
-              "p": 0.125
+              "p": 0.133
             },
             {
               "score": "1-1",
-              "p": 0.117
+              "p": 0.111
             },
             {
               "score": "2-1",
-              "p": 0.094
+              "p": 0.093
             },
             {
               "score": "0-0",
-              "p": 0.091
+              "p": 0.09
             }
           ],
           "over25": 0.456,
-          "btts": 0.446,
+          "btts": 0.427,
           "homeProfile": null,
           "awayProfile": null,
           "h2h": [],
           "elo": {
-            "home": 1699,
-            "away": 1629,
-            "homeRank": 44,
-            "awayRank": 57
+            "home": 1681,
+            "away": 1590,
+            "homeRank": 47,
+            "awayRank": 65
           },
           "matched": null,
           "neutralVenue": false,
           "thin": true,
+          "sharpOdds": [
+            1.6,
+            4.1,
+            6.2
+          ],
           "final": [
-            0.626,
-            0.254,
-            0.119
+            0.609,
+            0.237,
+            0.154
           ],
           "modelWeight": 0.1,
           "tip": "1",
-          "tipP": 0.6262769471422167,
+          "tipP": 0.6090813912815758,
           "verdict": {
             "sign": "1",
-            "minOdds": 1.64,
-            "odds": null,
+            "minOdds": 1.69,
+            "odds": 1.62,
             "value": false
           },
           "streckvarde": [
-            0.96,
-            0.98,
-            1.33
+            0.86,
+            1.13,
+            1.92
           ],
           "experts": [],
           "tioTidningar": null,
-          "startOdds": null,
+          "startOdds": [
+            1.65,
+            4.25,
+            5.1
+          ],
           "context": {
             "fotmobMatchId": 5181842,
             "league": "UEFA Nations League B Grp. 4",
@@ -7207,19 +7305,19 @@
             "lineupConfirmed": false,
             "home": {
               "fotmobTeam": "Poland",
-              "formation": "4-4-1-1",
+              "formation": "3-4-3",
               "starters": [
                 "Marcin Bułka",
-                "Matty Cash",
-                "Kacper Potulski",
+                "Przemysław Wiśniewski",
                 "Jan Bednarek",
                 "Jakub Kiwior",
-                "Michał Skóras",
-                "Bartosz Slisz",
+                "Matty Cash",
+                "Wiktor Nowak",
                 "Piotr Zieliński",
-                "Jakub Kamiński",
+                "Tymoteusz Puchacz",
                 "Sebastian Szymański",
-                "Robert Lewandowski"
+                "Mateusz Żukowski",
+                "Nicola Zalewski"
               ],
               "unavailable": [
                 {
@@ -7241,8 +7339,8 @@
                   "marketValue": 2684277
                 }
               ],
-              "missingValueShare": 0.175,
-              "starterValue": 90081086,
+              "missingValueShare": 0.174,
+              "starterValue": 90568777,
               "restDays": 4,
               "prevMatch": {
                 "date": "2026-09-28T18:45:00.000Z",
@@ -7259,23 +7357,23 @@
             },
             "away": {
               "fotmobTeam": "Romania",
-              "formation": "3-4-1-2",
+              "formation": "4-3-1-2",
               "starters": [
                 "Ionuț Radu",
                 "Andrei Coubiș",
-                "Radu Drăgușin",
-                "Virgil Ghiță",
-                "Andrei Rațiu",
-                "Tudor Băluță",
-                "Răzvan Marin",
-                "Nicușor Bancu",
-                "Ianis Hagi",
-                "Dennis Man",
-                "Louis Munteanu"
+                "Andrei Burcă",
+                "Matei Cristian Ilie",
+                "Lisav Naif Eissat",
+                "Nicolae Stanciu",
+                "Vladimir Screciu",
+                "Vlad Dragomir",
+                "Darius Olaru",
+                "Daniel Bîrligea",
+                "Valentin Mihăilă"
               ],
               "unavailable": [],
               "missingValueShare": 0,
-              "starterValue": 57497749,
+              "starterValue": 20264233,
               "restDays": 4,
               "prevMatch": {
                 "date": "2026-09-28T18:45:00.000Z",
@@ -7307,22 +7405,24 @@
               "description": "Clear"
             },
             "form": {
-              "home": "WLLDD",
-              "away": "LLDWL"
+              "home": "LLDDL",
+              "away": "LDWLL"
             },
             "h2h": {
               "homeWins": 3,
               "draws": 0,
               "awayWins": 0
             },
-            "fetchedAt": "2026-09-28T18:56:53.646Z"
+            "fetchedAt": "2026-09-29T18:38:56.735Z"
           },
           "analysis": [
-            "Polen är klar favorit (63 %).",
-            "Landslags-Elo: Polen 1699 (#44) mot Rumänien 1629 (#57).",
-            "Förväntade mål 1,75 – 0,75; troligast 1-0, 2-0, 1-1.",
+            "Polen är klar favorit (61 %).",
+            "Landslags-Elo: Polen 1681 (#47) mot Rumänien 1590 (#65).",
+            "Förväntade mål 1,80 – 0,70; troligast 1-0, 2-0, 1-1.",
+            "Svenska folket överstreckar 1 (71 % mot vår 61 %).",
+            "Streckvärde på 2: vi 15 %, folket bara 8 %.",
             "Elvorna är inte bekräftade än (FotMob visar senaste elvan).",
-            "Polen saknar 3 spelare (Jakub Kamiński, Jan Bednarek, Filip Rózga), 18 % av startelvans + frånvarandes marknadsvärde."
+            "Polen saknar 3 spelare (Jakub Kamiński, Jan Bednarek, Filip Rózga), 17 % av startelvans + frånvarandes marknadsvärde."
           ],
           "systemPick": {
             "signs": "1X",
@@ -7345,32 +7445,40 @@
           "league": "UEFA Nations League",
           "country": "Internationell",
           "kickoff": "2026-10-02T20:45:00+02:00",
-          "odds": null,
-          "marketSource": null,
-          "market": null,
+          "odds": [
+            2.05,
+            3.45,
+            3.75
+          ],
+          "marketSource": "Betfair",
+          "market": [
+            0.48,
+            0.281,
+            0.239
+          ],
           "folk": [
-            0.66,
-            0.24,
-            0.1
+            0.6,
+            0.27,
+            0.13
           ],
           "model": [
-            0.586,
-            0.254,
-            0.16
+            0.59,
+            0.252,
+            0.157
           ],
-          "basis": "elo+folk",
+          "basis": "elo",
           "lambdas": {
-            "home": 1.71,
-            "away": 0.79
+            "home": 1.72,
+            "away": 0.78
           },
           "topScores": [
             {
               "score": "1-0",
-              "p": 0.132
+              "p": 0.133
             },
             {
               "score": "2-0",
-              "p": 0.121
+              "p": 0.122
             },
             {
               "score": "1-1",
@@ -7386,41 +7494,50 @@
             }
           ],
           "over25": 0.456,
-          "btts": 0.455,
+          "btts": 0.453,
           "homeProfile": null,
           "awayProfile": null,
           "h2h": [],
           "elo": {
-            "home": 1688,
+            "home": 1691,
             "away": 1630,
-            "homeRank": 47,
+            "homeRank": 45,
             "awayRank": 56
           },
           "matched": null,
           "neutralVenue": false,
           "thin": true,
+          "sharpOdds": [
+            1.99,
+            3.4,
+            4
+          ],
           "final": [
-            0.623,
-            0.247,
-            0.13
+            0.491,
+            0.278,
+            0.231
           ],
           "modelWeight": 0.1,
           "tip": "1",
-          "tipP": 0.6230166723652004,
+          "tipP": 0.49113107710462667,
           "verdict": {
             "sign": "1",
-            "minOdds": 1.65,
-            "odds": null,
+            "minOdds": 2.1,
+            "odds": 2.05,
             "value": false
           },
           "streckvarde": [
-            0.94,
+            0.82,
             1.03,
-            1.3
+            1.77
           ],
           "experts": [],
           "tioTidningar": null,
-          "startOdds": null,
+          "startOdds": [
+            2.15,
+            3.4,
+            3.5
+          ],
           "context": {
             "fotmobMatchId": 5181804,
             "league": "UEFA Nations League B Grp. 2",
@@ -7429,23 +7546,30 @@
             "lineupConfirmed": false,
             "home": {
               "fotmobTeam": "Hungary",
-              "formation": "4-3-1-2",
+              "formation": "4-2-3-1",
               "starters": [
                 "Balázs Tóth",
                 "Bendegúz Bolla",
                 "Willi Orbán",
                 "Márk Csinger",
                 "Miloš Kerkez",
-                "Milán Vitális",
-                "Áron Csongvai",
                 "András Schäfer",
+                "Áron Csongvai",
+                "Gabor Jurek",
+                "Tamás Szucs",
                 "Dominik Szoboszlai",
-                "Damir Redzic",
                 "Dániel Lukács"
               ],
-              "unavailable": [],
-              "missingValueShare": 0,
-              "starterValue": 147903006,
+              "unavailable": [
+                {
+                  "name": "Bendegúz Bolla",
+                  "type": "injury",
+                  "expectedReturn": "Late October 2026",
+                  "marketValue": 1642566
+                }
+              ],
+              "missingValueShare": 0.011,
+              "starterValue": 145773909,
               "restDays": 4,
               "prevMatch": {
                 "date": "2026-09-28T18:45:00.000Z",
@@ -7462,23 +7586,23 @@
             },
             "away": {
               "fotmobTeam": "Georgia",
-              "formation": "3-4-2-1",
+              "formation": "5-3-2",
               "starters": [
                 "Giorgi Mamardashvili",
                 "Saba Goglichidze",
                 "Lasha Dvali",
                 "Luka Lochoshvili",
                 "Otar Kakabadze",
+                "Giorgi Tsitaishvili",
                 "Giorgi Kochorashvili",
-                "Anzor Mekvabishvili",
-                "Saba Kharebashvili",
+                "Otar Kiteishvili",
+                "Giorgi Chakvetadze",
                 "Georges Mikautadze",
-                "Giorgi Kvernadze",
                 "Khvicha Kvaratskhelia"
               ],
               "unavailable": [],
               "missingValueShare": 0,
-              "starterValue": 152027895,
+              "starterValue": 154001702,
               "restDays": 4.1,
               "prevMatch": {
                 "date": "2026-09-28T16:00:00.000Z",
@@ -7503,14 +7627,14 @@
               "surface": "grass"
             },
             "weather": {
-              "temperature": 15,
+              "temperature": 16,
               "windSpeed": 1,
               "precipChance": 0,
               "precipitation": 0,
               "description": "Clear"
             },
             "form": {
-              "home": "WDWWL",
+              "home": "DWWLD",
               "away": "WDWLD"
             },
             "h2h": {
@@ -7518,13 +7642,17 @@
               "draws": 0,
               "awayWins": 0
             },
-            "fetchedAt": "2026-09-28T18:56:54.660Z"
+            "fetchedAt": "2026-09-29T18:38:57.196Z"
           },
           "analysis": [
-            "Ungern är klar favorit (62 %).",
-            "Landslags-Elo: Ungern 1688 (#47) mot Georgien 1630 (#56).",
-            "Förväntade mål 1,71 – 0,79; troligast 1-0, 2-0, 1-1.",
-            "Elvorna är inte bekräftade än (FotMob visar senaste elvan)."
+            "Ungern har ett övertag (49 %), men det är långt ifrån säkert.",
+            "Landslags-Elo: Ungern 1691 (#45) mot Georgien 1630 (#56).",
+            "Förväntade mål 1,72 – 0,78; troligast 1-0, 2-0, 1-1.",
+            "Modellen tror mer på 1 än oddsen (59 % mot 48 %).",
+            "Svenska folket överstreckar 1 (60 % mot vår 49 %).",
+            "Streckvärde på 2: vi 23 %, folket bara 13 %.",
+            "Elvorna är inte bekräftade än (FotMob visar senaste elvan).",
+            "Ungern saknar 1 spelare (Bendegúz Bolla)."
           ],
           "systemPick": {
             "signs": "1X2",
@@ -7544,26 +7672,26 @@
       "system": {
         "maxRows": 30000,
         "rows": 4374,
-        "hitAll": 0.1866056818687981,
-        "hitSingle": 0.0008762955454592785
+        "hitAll": 0.13422366560420998,
+        "hitSingle": 0.0004104689303166383
       },
       "value": {
-        "ratio": 0.566,
+        "ratio": 0.484,
         "level": "high",
-        "text": "Omgången har högt värde: förväntad återbetalning från 13 rätt ≈ 57 % av insatsen (normalt 26–40 %)."
+        "text": "Omgången har högt värde: förväntad återbetalning från 13 rätt ≈ 48 % av insatsen (normalt 26–40 %)."
       },
       "reduced": {
         "grundRows": 4374,
-        "afterPayout": 978,
-        "rows": 394,
-        "cost": 394,
+        "afterPayout": 1056,
+        "rows": 391,
+        "cost": 391,
         "rowPrice": 1,
-        "hitAll": 0.00215790995266168,
-        "grundHit": 0.1866056818687981,
-        "expectedPayout": 103398.87758949751,
-        "expectedReturn": 223.12546704442343,
+        "hitAll": 0.0022339777843321316,
+        "grundHit": 0.13422366560420998,
+        "expectedPayout": 84664.97890106698,
+        "expectedReturn": 189.1396819759323,
         "rules": {
-          "payoutMin": 59000,
+          "payoutMin": 50700,
           "payoutMinReal": 20000,
           "jackpot": 0,
           "realTurnover": 10000000,
@@ -7578,416 +7706,413 @@
           "payoutMax": null
         },
         "rowList": [
-          "1X11211X11112",
-          "2X11X11111112",
-          "2X11XX1111112",
-          "1X11X11211112",
-          "1X11121X11112",
-          "2X111X1111112",
-          "2X112211111X2",
-          "1X111X1211112",
-          "1X112212111X2",
-          "21111112111XX",
-          "1X12X11111112",
-          "1X112X1111112",
-          "1111221X111XX",
-          "21112111111XX",
-          "21112X11111XX",
-          "1X11X21111112",
-          "2111X211111XX",
-          "11112112111XX",
-          "11112X12111XX",
-          "2111X11X11112",
-          "1X1X211111112",
-          "2111XX1X11112",
-          "1X1X2X1111112",
-          "1X121X1111112",
-          "1111X212111XX",
-          "XX11211111112",
-          "211X2111111XX",
-          "21121111111XX",
-          "XX112X1111112",
-          "1X1XX21111112",
-          "21111211111XX",
-          "XX11X21111112",
-          "X1112112111XX",
-          "21111X1X11112",
-          "11122111111XX",
-          "11111212111XX",
-          "2111221X111X2",
-          "11122X11111XX",
-          "1X1X121111112",
-          "11112211111XX",
-          "1112X211111XX",
-          "XX11121111112",
-          "211X1211111XX",
-          "21112X12111X2",
-          "1112X11X11112",
-          "11112X1X11112",
-          "211X111X11112",
-          "1112XX1X11112",
-          "211X1X1X11112",
-          "2111X212111X2",
-          "1111X21X11112",
-          "2111XX1111112",
-          "X1111212111XX",
-          "111X2211111XX",
-          "11121211111XX",
-          "X1112211111XX",
-          "211X2112111X2",
-          "111X211X11112",
-          "1111XX1211112",
-          "111X2X1X11112",
-          "11121X1X11112",
-          "X111211X11112",
-          "1112221X111X2",
-          "X1112X1X11112",
-          "21122X11111X2",
-          "111XX21X11112",
-          "211XX11111112",
-          "211XXX1111112",
-          "2X11211X111X2",
-          "X111X21X11112",
-          "2112X211111X2",
-          "2X112X1X111X2",
-          "X1121211111XX",
+          "2211211111XX2",
+          "X211111111X12",
+          "1211221111XX2",
+          "2211111211XX2",
+          "1211211211XX2",
+          "1211111X11X12",
+          "1211121211XX2",
+          "12112112112XX",
           "1211X111111X2",
-          "2X11X21X111X2",
-          "11122X12111X2",
-          "111XX11211112",
-          "111XXX1211112",
-          "X111X11211112",
-          "X11X211X11112",
-          "1112X212111X2",
-          "X112111X11112",
-          "211X1212111X2",
-          "X111XX1211112",
-          "111X121X11112",
-          "X1121X1X11112",
-          "1112XX1111112",
-          "211X1X1111112",
-          "2X11X112111X2",
-          "X111121X11112",
-          "211X2211111X2",
-          "2X11XX12111X2",
-          "2X11121X111X2",
+          "2212X111112X2",
+          "1211XX1111212",
+          "1211211111XXX",
+          "12111212112XX",
+          "2211X211112X2",
+          "X211X111111X2",
+          "121XX11111212",
+          "X211X11111212",
+          "2211X112112X2",
           "12111X11111X2",
-          "X1122112111X2",
-          "111X1X1211112",
-          "111X2212111X2",
-          "X11XX11211112",
-          "X1111X1211112",
-          "X1112212111X2",
-          "111X2X1111112",
-          "1X12211X111X2",
-          "2X111112111X2",
-          "X112X11111112",
-          "X1112X1111112",
-          "X11X121X11112",
-          "1X122X1X111X2",
-          "111XX21111112",
-          "2X111X12111X2",
-          "X112XX1111112",
-          "1X11221X111X2",
-          "2X112111111X2",
-          "X111X21111112",
-          "2X12X111111X2",
-          "2X112X11111X2",
-          "2X12XX11111X2",
+          "22112X11112X2",
+          "121XXX1111212",
+          "X211XX1111212",
+          "1212X211112X2",
+          "2211XX12112X2",
+          "1211121111XXX",
+          "121X1111111X2",
+          "221X2111112X2",
+          "1211X11X111X2",
           "X2111111111X2",
-          "2X11X211111X2",
-          "X11X111211112",
-          "X11X1X1211112",
-          "1X112112111X2",
-          "X11X2212111X2",
-          "X1121212111X2",
-          "X11X211111112",
-          "1X12X112111X2",
-          "1X112X12111X2",
-          "2X1X1112111X2",
-          "X11X2X1111112",
-          "X1121X1111112",
-          "X1122211111X2",
-          "1X11X212111X2",
-          "1X1X221X111X2",
-          "2X1X2111111X2",
-          "1X12121X111X2",
-          "X11XX21111112",
-          "2X121111111X2",
-          "2X1X2X11111X2",
-          "2X121X11111X2",
-          "XX11221X111X2",
-          "2X111211111X2",
-          "2X1XX211111X2",
-          "1X1X2112111X2",
-          "1X121112111X2",
-          "1X1X2X12111X2",
-          "1X121X12111X2",
-          "XX112112111X2",
-          "1X122111111X2",
-          "XX112X12111X2",
-          "1X111212111X2",
-          "1X1XX212111X2",
-          "X11X121111112",
-          "1X122X11111X2",
-          "XX11X212111X2",
-          "1X112211111X2",
-          "1X12X211111X2",
-          "2X1X1211111X2",
-          "XX1X2112111X2",
-          "2111211X111X2",
-          "XX121112111X2",
-          "2112X11X111X2",
-          "21112X1X111X2",
-          "1X1X1212111X2",
-          "2112XX1X111X2",
-          "XX122111111X2",
-          "XX111212111X2",
-          "2111X21X111X2",
-          "1X1X2211111X2",
-          "XX122X11111X2",
-          "1X121211111X2",
-          "XX112211111X2",
-          "XX12X211111X2",
-          "2111X112111X2",
-          "211X211X111X2",
-          "2112111X111X2",
-          "2111XX12111X2",
-          "211X2X1X111X2",
-          "21121X1X111X2",
-          "XX1X1212111X2",
-          "2111121X111X2",
-          "211XX21X111X2",
-          "XX1X2211111X2",
-          "XX121211111X2",
-          "1112211X111X2",
-          "211XX112111X2",
-          "11122X1X111X2",
-          "21111X12111X2",
-          "211XXX12111X2",
-          "1111221X111X2",
-          "1112X21X111X2",
-          "2112X111111X2",
-          "21112X11111X2",
-          "211X121X111X2",
-          "2112XX11111X2",
-          "2111X211111X2",
-          "2X11X11X111X2",
-          "2X11XX1X111X2",
-          "1112X112111X2",
-          "11112X12111X2",
-          "211X1112111X2",
-          "1112XX12111X2",
-          "211X1X12111X2",
-          "X112211X111X2",
-          "1111X212111X2",
-          "111X221X111X2",
-          "211X2111111X2",
-          "X1122X1X111X2",
-          "1112121X111X2",
-          "211X2X11111X2",
-          "21121X11111X2",
-          "X111221X111X2",
-          "X112X21X111X2",
-          "2X11111X111X2",
-          "211XX211111X2",
-          "2X1XX11X111X2",
-          "2X111X1X111X2",
-          "2X1XXX1X111X2",
-          "111X2112111X2",
-          "111X2X12111X2",
-          "11121X12111X2",
-          "X1112112111X2",
-          "X112X112111X2",
-          "X1112X12111X2",
-          "111XX212111X2",
-          "X112XX12111X2",
-          "11122X11111X2",
-          "X111X212111X2",
-          "1X11211X111X2",
-          "X11X221X111X2",
-          "X112121X111X2",
-          "1112X211111X2",
-          "1X12X11X111X2",
-          "1X112X1X111X2",
-          "211X1211111X2",
-          "2X1X111X111X2",
-          "1X12XX1X111X2",
-          "2X1X1X1X111X2",
-          "1X11X21X111X2",
-          "2X11X111111X2",
-          "2X11XX11111X2",
-          "X11X2112111X2",
-          "X1121112111X2",
-          "X11X2X12111X2",
-          "111X1212111X2",
-          "X1121X12111X2",
-          "X1122111111X2",
-          "X1111212111X2",
-          "1X11X112111X2",
-          "X11XX212111X2",
-          "111X2211111X2",
-          "1X1X211X111X2",
-          "X1122X11111X2",
-          "1X12111X111X2",
-          "1X11XX12111X2",
-          "1X1X2X1X111X2",
-          "1X121X1X111X2",
-          "X1112211111X2",
-          "XX11211X111X2",
-          "X112X211111X2",
-          "XX12X11X111X2",
-          "XX112X1X111X2",
-          "1X11121X111X2",
-          "2X111111111X2",
-          "1X1XX21X111X2",
-          "2X1XX111111X2",
-          "XX12XX1X111X2",
-          "2X111X11111X2",
-          "2X1XXX11111X2",
-          "XX11X21X111X2",
-          "1X111112111X2",
-          "X11X1212111X2",
-          "1X1XX112111X2",
-          "1X111X12111X2",
-          "1X1XXX12111X2",
-          "XX11X112111X2",
-          "1X112111111X2",
-          "X11X2211111X2",
-          "XX1X211X111X2",
-          "X1121211111X2",
-          "XX12111X111X2",
-          "1X12X111111X2",
-          "XX11XX12111X2",
-          "1X112X11111X2",
-          "XX1X2X1X111X2",
-          "1X1X121X111X2",
-          "2X1X1111111X2",
-          "XX121X1X111X2",
-          "1X12XX11111X2",
-          "2X1X1X11111X2",
-          "XX11121X111X2",
-          "1X11X211111X2",
-          "XX1XX21X111X2",
-          "1X1X1112111X2",
-          "1X1X1X12111X2",
-          "XX111112111X2",
-          "XX1XX112111X2",
-          "2111X11X111X2",
-          "1X1X2111111X2",
-          "1X121111111X2",
-          "XX111X12111X2",
-          "XX1XXX12111X2",
-          "2111XX1X111X2",
-          "1X1X2X11111X2",
-          "1X121X11111X2",
-          "XX112111111X2",
-          "XX12X111111X2",
-          "XX112X11111X2",
-          "1X111211111X2",
-          "XX1X121X111X2",
-          "1X1XX211111X2",
-          "XX12XX11111X2",
-          "XX11X211111X2",
-          "XX1X1112111X2",
-          "2111111X111X2",
-          "211XX11X111X2",
-          "XX1X1X12111X2",
-          "21111X1X111X2",
-          "211XXX1X111X2",
-          "XX1X2111111X2",
-          "XX121111111X2",
-          "XX1X2X11111X2",
-          "1X1X1211111X2",
-          "XX121X11111X2",
-          "XX111211111X2",
-          "XX1XX211111X2",
-          "1111211X111X2",
-          "1112X11X111X2",
-          "11112X1X111X2",
-          "211X111X111X2",
-          "1112XX1X111X2",
-          "211X1X1X111X2",
-          "1111X21X111X2",
-          "2111X111111X2",
-          "2111XX11111X2",
-          "XX1X1211111X2",
-          "1111X112111X2",
-          "111X211X111X2",
-          "1112111X111X2",
-          "1111XX12111X2",
-          "111X2X1X111X2",
-          "11121X1X111X2",
-          "X111211X111X2",
-          "X112X11X111X2",
-          "X1112X1X111X2",
-          "1111121X111X2",
-          "111XX21X111X2",
-          "211XX111111X2",
-          "X112XX1X111X2",
-          "21111X11111X2",
-          "211XXX11111X2",
-          "X111X21X111X2",
-          "111XX112111X2",
-          "11111X12111X2",
-          "111XXX12111X2",
-          "X111X112111X2",
-          "X11X211X111X2",
-          "X112111X111X2",
-          "1112X111111X2",
-          "X111XX12111X2",
-          "11112X11111X2",
-          "X11X2X1X111X2",
-          "111X121X111X2",
-          "211X1111111X2",
-          "X1121X1X111X2",
-          "1112XX11111X2",
-          "211X1X11111X2",
-          "X111121X111X2",
-          "1111X211111X2",
-          "X11XX21X111X2",
-          "111X1112111X2",
-          "111X1X12111X2",
-          "X1111112111X2",
-          "X11XX112111X2",
-          "111X2111111X2",
-          "X1111X12111X2",
-          "X11XXX12111X2",
-          "111X2X11111X2",
-          "11121X11111X2",
-          "X1112111111X2",
-          "X112X111111X2",
-          "X1112X11111X2",
-          "X11X121X111X2",
-          "111XX211111X2",
-          "X112XX11111X2",
-          "X111X211111X2",
-          "X11X1112111X2",
-          "X11X1X12111X2",
-          "X11X2111111X2",
-          "X1121111111X2",
-          "X11X2X11111X2",
-          "111X1211111X2",
-          "X1121X11111X2",
-          "X1111211111X2",
-          "X11XX211111X2",
-          "X11X1211111X2"
+          "22121X11112X2",
+          "X21XX11111212",
+          "1211X11X11212",
+          "1212X112112X2",
+          "12122X11112X2",
+          "1211111211XXX",
+          "221XX112112X2",
+          "2211X11111XX2",
+          "221X2X11112X2",
+          "X2111X11111X2",
+          "121X1X1111212",
+          "1211XX1X11212",
+          "X2111X1111212",
+          "1211X212112X2",
+          "1212XX12112X2",
+          "2211XX1111XX2",
+          "22111X12112X2",
+          "X2122111112X2",
+          "221X1211112X2",
+          "1211X111112X1",
+          "X21X1111111X2",
+          "2211X21X112X2",
+          "1211111X111X2",
+          "2211211X112X2",
+          "121XX11X11212",
+          "X21X111111212",
+          "X211X11X11212",
+          "12112X12112X2",
+          "121X2211112X2",
+          "1212X11111XX2",
+          "X212X112112X2",
+          "X2112211112X2",
+          "221XX11111XX2",
+          "X2122X11112X2",
+          "221X1112112X2",
+          "2211111111XX2",
+          "1211XX11112X1",
+          "12111X1X111X2",
+          "22112X1X112X2",
+          "2212111X112X2",
+          "X21X1X1111212",
+          "12111X1X11212",
+          "121XX212112X2",
+          "121X2112112X2",
+          "1211X21111XX2",
+          "1211211111XX2",
+          "1212XX1111XX2",
+          "X211X212112X2",
+          "12121X12112X2",
+          "X2112112112X2",
+          "221X1X12112X2",
+          "22111X1111XX2",
+          "1212211X112X2",
+          "X2121211112X2",
+          "121XX111112X1",
+          "121X111X111X2",
+          "221X211X112X2",
+          "X211X111112X1",
+          "2211121X112X2",
+          "X211111X111X2",
+          "121X111X11212",
+          "1211X11211XX2",
+          "121X2X12112X2",
+          "12112X1111XX2",
+          "2211X111112XX",
+          "X211111X11212",
+          "X2112X12112X2",
+          "1212111111XX2",
+          "X21X2211112X2",
+          "1211221X112X2",
+          "X212X11111XX2",
+          "X2121112112X2",
+          "12122X1X112X2",
+          "221X111111XX2",
+          "2211X11X11XX2",
+          "12111X11112X1",
+          "121X1X1X11212",
+          "1211XX1211XX2",
+          "121XX21111XX2",
+          "2211XX11112XX",
+          "X2111X1X11212",
+          "121X211111XX2",
+          "121X1212112X2",
+          "1211121111XX2",
+          "X21X2112112X2",
+          "X211X21111XX2",
+          "12121X1111XX2",
+          "X211211111XX2",
+          "X2111212112X2",
+          "X2121X12112X2",
+          "221X1X1111XX2",
+          "1212121X112X2",
+          "121X1111112X1",
+          "X212211X112X2",
+          "221X121X112X2",
+          "1211X11X112X1",
+          "X2111111112X1",
+          "1212X111112XX",
+          "121XX11211XX2",
+          "1211111211XX2",
+          "121X2X1111XX2",
+          "221XX111112XX",
+          "X21X111X11212",
+          "X211X11211XX2",
+          "22111111112XX",
+          "X2112X1111XX2",
+          "121X221X112X2",
+          "1212X11X11XX2",
+          "X212111111XX2",
+          "X211221X112X2",
+          "121X1X11112X1",
+          "2211111X11XX2",
+          "X2111X11112X1",
+          "1211X211112XX",
+          "12112111112XX",
+          "12111X1211XX2",
+          "121X121111XX2",
+          "22111X11112XX",
+          "1211X21X11XX2",
+          "X21X211111XX2",
+          "1211211X11XX2",
+          "X21X1212112X2",
+          "X211121111XX2",
+          "X2121X1111XX2",
+          "22111X1X11XX2",
+          "X212121X112X2",
+          "1211X112112XX",
+          "X21X1111112X1",
+          "12112X11112XX",
+          "1211111X112X1",
+          "12121111112XX",
+          "121X111211XX2",
+          "221X1111112XX",
+          "X211111211XX2",
+          "12112X1X11XX2",
+          "2211X11X112XX",
+          "1212111X11XX2",
+          "221X111X11XX2",
+          "1211XX12112XX",
+          "121XX211112XX",
+          "12111X1X112X1",
+          "121X2111112XX",
+          "12111211112XX",
+          "X211X211112XX",
+          "12121X11112XX",
+          "X2112111112XX",
+          "121X1X1211XX2",
+          "221X1X11112XX",
+          "X2111X1211XX2",
+          "121X211X11XX2",
+          "X21X121111XX2",
+          "1211121X11XX2",
+          "12121X1X11XX2",
+          "X211211X11XX2",
+          "121XX112112XX",
+          "12111112112XX",
+          "121X2X11112XX",
+          "121X111X112X1",
+          "2211X111112X2",
+          "X211X112112XX",
+          "X2112X11112XX",
+          "X211111X112X1",
+          "1212X11X112XX",
+          "X2121111112XX",
+          "X21X111211XX2",
+          "2211111X112XX",
+          "X2112X1X11XX2",
+          "X212111X11XX2",
+          "12111X12112XX",
+          "2211XX11112X2",
+          "121X1211112XX",
+          "1211X21X112XX",
+          "X21X2111112XX",
+          "1211211X112XX",
+          "X2111211112XX",
+          "121X121X11XX2",
+          "22111X1X112XX",
+          "X211121X11XX2",
+          "1212X111112X2",
+          "121X1112112XX",
+          "221XX111112X2",
+          "X2111112112XX",
+          "12112X1X112XX",
+          "1212111X112XX",
+          "221X111X112XX",
+          "1211X211112X2",
+          "1212XX11112X2",
+          "121X1X12112XX",
+          "221XXX11112X2",
+          "22111X11112X2",
+          "X2111X12112XX",
+          "121X211X112XX",
+          "X21X1211112XX",
+          "1211121X112XX",
+          "12121X1X112XX",
+          "X211211X112XX",
+          "1211X112112X2",
+          "12112X11112X2",
+          "X212X111112X2",
+          "221X1111112X2",
+          "X21X1112112XX",
+          "2211X11X112X2",
+          "X212111X112XX",
+          "1211XX12112X2",
+          "121XX211112X2",
+          "121X2111112X2",
+          "X211X211112X2",
+          "12121X11112X2",
+          "X2112111112X2",
+          "X212XX11112X2",
+          "221X1X11112X2",
+          "2211XX1X112X2",
+          "121X121X112XX",
+          "X211121X112XX",
+          "121XX112112X2",
+          "1211X11111XX2",
+          "121X2X11112X2",
+          "X211X112112X2",
+          "X2112X11112X2",
+          "1212X11X112X2",
+          "X2121111112X2",
+          "221XX11X112X2",
+          "2211111X112X2",
+          "121XXX12112X2",
+          "1211XX1111XX2",
+          "12111X12112X2",
+          "X211XX12112X2",
+          "121X1211112X2",
+          "X21XX211112X2",
+          "1211X21X112X2",
+          "X21X2111112X2",
+          "1211211X112X2",
+          "X2111211112X2",
+          "1212XX1X112X2",
+          "X2121X11112X2",
+          "221XXX1X112X2",
+          "22111X1X112X2",
+          "121XX11111XX2",
+          "121X1112112X2",
+          "1211111111XX2",
+          "X21XX112112X2",
+          "X211X11111XX2",
+          "X2111112112X2",
+          "X21X2X11112X2",
+          "12112X1X112X2",
+          "1212111X112X2",
+          "X212X11X112X2",
+          "221X111X112X2",
+          "121XXX1111XX2",
+          "121X1X12112X2",
+          "12111X1111XX2",
+          "X21XXX12112X2",
+          "X211XX1111XX2",
+          "X2111X12112X2",
+          "121XX21X112X2",
+          "121X211X112X2",
+          "X21X1211112X2",
+          "1211121X112X2",
+          "X211X21X112X2",
+          "12121X1X112X2",
+          "X211211X112X2",
+          "X212XX1X112X2",
+          "221X1X1X112X2",
+          "1211X111112XX",
+          "121X111111XX2",
+          "X21XX11111XX2",
+          "1211X11X11XX2",
+          "X21X1112112X2",
+          "X211111111XX2",
+          "121X2X1X112X2",
+          "X2112X1X112X2",
+          "X212111X112X2",
+          "1211XX11112XX",
+          "121X1X1111XX2",
+          "X21XXX1111XX2",
+          "1211XX1X11XX2",
+          "X21X1X12112X2",
+          "X2111X1111XX2",
+          "121X121X112X2",
+          "X21XX21X112X2",
+          "X21X211X112X2",
+          "X211121X112X2",
+          "X2121X1X112X2",
+          "121XX111112XX",
+          "12111111112XX",
+          "X211X111112XX",
+          "121XX11X11XX2",
+          "X21X111111XX2",
+          "1211111X11XX2",
+          "X211X11X11XX2",
+          "X21X2X1X112X2",
+          "121XXX11112XX",
+          "12111X11112XX",
+          "X211XX11112XX",
+          "121XXX1X11XX2",
+          "X21X1X1111XX2",
+          "12111X1X11XX2",
+          "X211XX1X11XX2",
+          "X21X121X112X2",
+          "121X1111112XX",
+          "X21XX111112XX",
+          "1211X11X112XX",
+          "X2111111112XX",
+          "121X111X11XX2",
+          "X21XX11X11XX2",
+          "X211111X11XX2",
+          "121X1X11112XX",
+          "X21XXX11112XX",
+          "1211XX1X112XX",
+          "X2111X11112XX",
+          "121X1X1X11XX2",
+          "X21XXX1X11XX2",
+          "X2111X1X11XX2",
+          "1211X111112X2",
+          "121XX11X112XX",
+          "X21X1111112XX",
+          "1211111X112XX",
+          "X211X11X112XX",
+          "1211XX11112X2",
+          "X21X111X11XX2",
+          "121XXX1X112XX",
+          "X21X1X11112XX",
+          "12111X1X112XX",
+          "X211XX1X112XX",
+          "X21X1X1X11XX2",
+          "121XX111112X2",
+          "X211X111112X2",
+          "121X111X112XX",
+          "X21XX11X112XX",
+          "X211111X112XX",
+          "121XXX11112X2",
+          "12111X11112X2",
+          "X211XX11112X2",
+          "121X1X1X112XX",
+          "X21XXX1X112XX",
+          "X2111X1X112XX",
+          "121X1111112X2",
+          "X21XX111112X2",
+          "1211X11X112X2",
+          "X2111111112X2",
+          "X21X111X112XX",
+          "121X1X11112X2",
+          "X21XXX11112X2",
+          "1211XX1X112X2",
+          "X2111X11112X2",
+          "X21X1X1X112XX",
+          "121XX11X112X2",
+          "X21X1111112X2",
+          "1211111X112X2",
+          "X211X11X112X2",
+          "121XXX1X112X2",
+          "X21X1X11112X2",
+          "12111X1X112X2",
+          "X211XX1X112X2",
+          "121X111X112X2",
+          "X21XX11X112X2",
+          "X211111X112X2",
+          "121X1X1X112X2",
+          "X21XXX1X112X2",
+          "X2111X1X112X2",
+          "X21X111X112X2",
+          "X21X1X1X112X2"
         ],
         "split": true,
-        "gamblingCabinUrl": "https://reducera.gamblingcabin.se/?spel=europatipset&omg=2612&datum=2026-10-01&v1=2,3,4,2,2,2,4,2,4,4,4,4,4&vX=2,3,0,2,2,2,0,2,0,0,0,2,2&v2=4,4,0,4,4,4,0,4,0,0,0,0,3&antT=1,4,13,2,13,2,13&yellow=0,0,13&red=0,0,13&green=0,0,13&pink=0,0,13&utd=1,59000,100000000"
+        "gamblingCabinUrl": "https://reducera.gamblingcabin.se/?spel=europatipset&omg=2612&datum=2026-10-01&v1=2,0,4,2,2,2,4,2,4,4,4,4,4&vX=2,0,0,2,2,2,0,2,0,0,2,2,2&v2=4,4,0,4,4,4,0,4,0,0,3,0,3&antT=1,4,13,2,13,2,13&yellow=0,0,13&red=0,0,13&green=0,0,13&pink=0,0,13&utd=1,50700,100000000"
       },
       "reducedB": {
         "grundRows": 4374,
-        "afterPayout": 978,
-        "rows": 396,
-        "cost": 396,
+        "afterPayout": 1056,
+        "rows": 394,
+        "cost": 394,
         "rowPrice": 1,
-        "hitAll": 0.0043135694945571875,
-        "grundHit": 0.1866056818687981,
-        "expectedPayout": 39481.74385502592,
-        "expectedReturn": 170.30724588496048,
+        "hitAll": 0.0036108174482463746,
+        "grundHit": 0.13422366560420998,
+        "expectedPayout": 36360.60313729917,
+        "expectedReturn": 131.2915002369217,
         "rules": {
-          "payoutMin": 27350,
+          "payoutMin": 27850,
           "payoutMinReal": 20000,
           "jackpot": 0,
           "realTurnover": 10000000,
@@ -7999,409 +8124,407 @@
           "colorGreen": 0.45,
           "colorRed": 0.2,
           "turnover": 10000000,
-          "payoutMax": 58999
+          "payoutMax": 50699
         },
         "rowList": [
-          "21112X111111X",
-          "2111X2111111X",
-          "X1112211111X1",
-          "111X22111111X",
-          "X11122111111X",
-          "2X112211111XX",
-          "2X11211X11112",
-          "2X112X1X11112",
-          "2X11X11211112",
-          "2X11121X11112",
-          "2X111X1211112",
-          "2X112212111X2",
-          "1X11221X11112",
-          "2X12X11111112",
-          "2X112X1111112",
-          "2111221X111XX",
-          "2X11X21111112",
-          "1X112X1211112",
-          "21112112111XX",
-          "21112X12111XX",
-          "1X11X21211112",
-          "2X1X211111112",
-          "1X12121X11112",
-          "2X1X2X1111112",
-          "2X121X1111112",
-          "2111X212111XX",
-          "XX11221X11112",
-          "2X122211111X2",
-          "2X1XX21111112",
-          "1X1X211211112",
-          "1X121X1211112",
-          "XX11211211112",
-          "21121112111XX",
-          "XX112X1211112",
-          "1X122X1111112",
-          "1112221X111XX",
-          "21122111111XX",
-          "21111212111XX",
-          "XX11X21211112",
-          "21122X11111XX",
-          "1X12X21111112",
-          "2X1X121111112",
-          "21112211111XX",
-          "2X11211X111XX",
-          "2112X211111XX",
-          "2X112X1X111XX",
-          "11122112111XX",
-          "2X11X21X111XX",
-          "11122X12111XX",
-          "2112X11X11112",
-          "21112X1X11112",
-          "1X1X121211112",
-          "11112212111XX",
-          "2112XX1X11112",
-          "1112X212111XX",
-          "XX12211111112",
-          "XX11121211112",
-          "211X1212111XX",
-          "2111X21X11112",
-          "1X1X221111112",
-          "XX122X1111112",
-          "XX11221111112",
-          "2X11X112111XX",
-          "211X2211111XX",
-          "21121211111XX",
-          "XX12X21111112",
-          "2X11XX12111XX",
-          "2X11121X111XX",
-          "211X211X11112",
-          "2111XX1211112",
-          "211X2X1X11112",
-          "21121X1X11112",
-          "111X2212111XX",
-          "11121212111XX",
-          "2112221X111X2",
-          "X1112212111XX",
-          "211XX21X11112",
-          "11122211111XX",
-          "1X12211X111XX",
-          "2X111112111XX",
-          "1211211X111X2",
-          "XX1X221111112",
-          "XX12121111112",
-          "2X111X12111XX",
-          "1X11221X111XX",
-          "2X112111111XX",
-          "2X12X111111XX",
-          "2X112X11111XX",
           "2211X111111X2",
-          "21122X12111X2",
-          "211XX11211112",
-          "11122X1X11112",
-          "2211XX11111X2",
-          "211XXX1211112",
-          "2X11X211111XX",
-          "2112X212111X2",
-          "1112X21X11112",
-          "211X121X11112",
-          "1X112112111XX",
-          "2112XX1111112",
-          "1X12X112111XX",
-          "1X112X12111XX",
-          "1211X112111X2",
-          "2X11X11X11112",
-          "X1122211111XX",
-          "2X11XX1X11112",
-          "1X11X212111XX",
-          "1X1X221X111XX",
-          "2X1X2111111XX",
-          "1X12121X111XX",
-          "2X121111111XX",
-          "1211121X111X2",
-          "2X1X2X11111XX",
-          "2X121X11111XX",
-          "XX11221X111XX",
-          "22111X11111X2",
-          "1112XX1211112",
-          "211X1X1211112",
-          "X112211X11112",
-          "2X111211111XX",
-          "211X2212111X2",
-          "2X1XX211111XX",
-          "111X221X11112",
-          "X1122X1X11112",
-          "211X2X1111112",
-          "X111221X11112",
-          "1X1X2112111XX",
-          "1X121112111XX",
-          "2X12211X111X2",
-          "X112X21X11112",
-          "1X1X2X12111XX",
-          "2X11111X11112",
-          "1X121X12111XX",
-          "2X122X1X111X2",
-          "XX112112111XX",
-          "211XX21111112",
-          "12111X12111X2",
-          "2X1XX11X11112",
-          "2X111X1X11112",
-          "1X122111111XX",
-          "XX112X12111XX",
-          "1X111212111XX",
-          "2X1XXX1X11112",
-          "2X11221X111X2",
-          "1X122X11111XX",
-          "2X12X21X111X2",
-          "12112X11111X2",
-          "111X2X1211112",
-          "XX11X212111XX",
-          "1X112211111XX",
-          "1X12X211111XX",
-          "X112X11211112",
-          "X1112X1211112",
+          "2211XX1111212",
+          "1212X111111X2",
+          "221XX11111212",
           "1211X211111X2",
-          "2X1X1211111XX",
-          "111XX21211112",
-          "X112XX1211112",
-          "2X112112111X2",
-          "X111X21211112",
-          "X11X221X11112",
-          "2X12X112111X2",
-          "X112121X11112",
-          "2X112X12111X2",
-          "1X12X11X11112",
-          "1X112X1X11112",
-          "2X1X111X11112",
-          "2X12XX12111X2",
-          "2111211X111XX",
-          "1X12XX1X11112",
-          "2X1X1X1X11112",
-          "2112X11X111XX",
-          "2X11X212111X2",
-          "21112X1X111XX",
-          "1X1X1212111XX",
+          "22111X11111X2",
+          "1212XX1111212",
+          "1211X112111X2",
+          "12112X11111X2",
+          "2212X211112X2",
+          "221X1111111X2",
+          "X212X11111212",
+          "2211X11X11212",
           "121X2111111X2",
-          "2X1X221X111X2",
-          "1X11X21X11112",
-          "2X12121X111X2",
-          "2112XX1X111XX",
-          "121X2X11111X2",
-          "XX122111111XX",
+          "2212X112112X2",
           "12121X11111X2",
-          "XX111212111XX",
+          "1211XX1211212",
           "X2112111111X2",
-          "2111X21X111XX",
-          "1X1X2211111XX",
-          "X11X211211112",
-          "XX122X11111XX",
-          "1X121211111XX",
-          "X2112X11111X2",
-          "X11X2X1211112",
-          "X1121X1211112",
-          "XX112211111XX",
-          "X1122212111X2",
-          "XX12X211111XX",
-          "X211X211111X2",
-          "2X1X2112111X2",
-          "X11XX21211112",
-          "2X121112111X2",
-          "1X1X211X11112",
-          "X1122X1111112",
-          "1X12111X11112",
-          "2X1X2X12111X2",
-          "1X11XX1211112",
-          "2X121X12111X2",
-          "1X1X2X1X11112",
-          "1X121X1X11112",
-          "2111X112111XX",
-          "XX11211X11112",
-          "211X211X111XX",
-          "1X12221X111X2",
-          "2X122111111X2",
-          "2112111X111XX",
-          "2X111212111X2",
-          "X112X21111112",
-          "XX12X11X11112",
-          "2111XX12111XX",
-          "XX112X1X11112",
-          "2X1XX212111X2",
-          "211X2X1X111XX",
-          "2X122X11111X2",
-          "21121X1X111XX",
-          "1X1XX21X11112",
-          "2X1XX11111112",
-          "XX12XX1X11112",
-          "2X1XXX1111112",
-          "2111121X111XX",
-          "XX11X21X11112",
-          "211XX21X111XX",
-          "2X12X211111X2",
+          "22122X11112X2",
+          "121XX21111212",
+          "X211X21111212",
+          "221X1X1111212",
+          "1211211211XXX",
+          "2211X212112X2",
+          "121XX11211212",
+          "1211X11111X12",
+          "121X2X1111212",
+          "X2121111111X2",
+          "X211X11211212",
+          "X2112X1111212",
+          "2211X111112X1",
+          "2211111X111X2",
+          "1212X11X11212",
+          "12111X12111X2",
+          "22112X12112X2",
           "121X1211111X2",
-          "XX1X2211111XX",
-          "XX121211111XX",
-          "1X122112111X2",
+          "221X2211112X2",
+          "2212X11111XX2",
+          "1211XX1111X12",
+          "1211211X111X2",
           "X2111211111X2",
-          "X11X121211112",
-          "1X122X12111X2",
-          "1X1XX11211112",
-          "1112211X111XX",
-          "1X1XXX1211112",
-          "XX11X11211112",
-          "X11X221111112",
-          "211XX112111XX",
-          "XX1X211X11112",
-          "1X12X212111X2",
-          "11122X1X111XX",
-          "XX12111X11112",
-          "21111X12111XX",
-          "2X1X1212111X2",
-          "XX11XX1211112",
-          "211XXX12111XX",
-          "XX1X2X1X11112",
-          "1X1X121X11112",
-          "2X1X111111112",
-          "XX121X1X11112",
-          "1X12XX1111112",
-          "XX12221X111X2",
-          "2X1X1X1111112",
-          "1112X21X111XX",
-          "2112X111111XX",
-          "XX11121X11112",
-          "2X1X2211111X2",
-          "211X121X111XX",
-          "2X121211111X2",
-          "XX1XX21X11112",
-          "2112XX11111XX",
-          "1X1X111211112",
-          "XX122112111X2",
-          "1X1X1X1211112",
-          "1112X112111XX",
-          "XX11111211112",
-          "1X1X2212111X2",
-          "211X1112111XX",
-          "XX122X12111X2",
-          "1X121212111X2",
-          "XX1XX11211112",
-          "1112XX12111XX",
-          "XX111X1211112",
-          "211X1X12111XX",
-          "X112211X111XX",
-          "XX1XXX1211112",
-          "XX112212111X2",
-          "111X221X111XX",
-          "XX12X212111X2",
-          "X1122X1X111XX",
-          "1X122211111X2",
-          "1112121X111XX",
-          "XX12X11111112",
-          "211X2X11111XX",
-          "XX1X121X11112",
-          "21121X11111XX",
-          "X111221X111XX",
-          "XX12XX1111112",
-          "X112X21X111XX",
-          "211XX211111XX",
-          "111X2112111XX",
-          "11121112111XX",
-          "2112211X111X2",
-          "111X2X12111XX",
-          "XX1X111211112",
-          "11121X12111XX",
-          "21122X1X111X2",
-          "211XX11X11112",
-          "XX1X1X1211112",
-          "X112X112111XX",
-          "X1112X12111XX",
-          "211XXX1X11112",
-          "XX1X2212111X2",
-          "XX121212111X2",
-          "111XX212111XX",
-          "XX1X211111112",
-          "X112XX12111XX",
-          "XX12111111112",
-          "2112X21X111X2",
-          "XX1X2X1111112",
-          "XX121X1111112",
-          "X111X212111XX",
-          "X11X221X111XX",
-          "XX122211111X2",
-          "X112121X111XX",
-          "1211X11X111X2",
-          "XX1XX21111112",
-          "1211XX1X111X2",
-          "2112X112111X2",
-          "2112XX12111X2",
-          "X11X2112111XX",
-          "X1121112111XX",
-          "X11X2X12111XX",
-          "111X1212111XX",
-          "211X221X111X2",
-          "X1121X12111XX",
-          "2112121X111X2",
-          "X1122111111XX",
-          "X11XX212111XX",
-          "X1122X11111XX",
-          "1211111X111X2",
-          "XX1X121111112",
-          "121XX11X111X2",
-          "12111X1X111X2",
-          "121XXX1X111X2",
-          "X112X211111XX",
-          "X211X11X111X2",
-          "X211XX1X111X2",
-          "211X2X12111X2",
-          "21121X12111X2",
-          "X112X11X11112",
-          "211XX212111X2",
-          "X112XX1X11112",
-          "X11X1212111XX",
-          "2X12X11X111X2",
-          "121X111X111X2",
-          "2X12XX1X111X2",
-          "X11X2211111XX",
-          "121X1X1X111X2",
-          "X211111X111X2",
-          "X2111X1X111X2",
+          "X211XX1211212",
+          "1211X21X11212",
+          "X21X211111212",
+          "X2121X1111212",
+          "1212X212112X2",
+          "22111X1X11212",
+          "121X1112111X2",
+          "221X2112112X2",
+          "2211X21111XX2",
+          "X2111112111X2",
+          "22121X12112X2",
+          "121XX11111X12",
+          "1212X111112X1",
+          "X21XX11211212",
+          "1212111X111X2",
+          "X211X11111X12",
+          "2212211X112X2",
+          "12112X1X11212",
+          "12122X12112X2",
+          "221X111X11212",
+          "2211X11211XX2",
+          "22112X1111XX2",
+          "X2122211112X2",
+          "1211X211112X1",
+          "2212111111XX2",
+          "121X1X1211212",
+          "1211121X111X2",
+          "12111X1111X12",
+          "2211221X112X2",
+          "X211XX1111X12",
+          "X211211X111X2",
+          "X2111X1211212",
+          "121X211X11212",
+          "X21X121111212",
+          "22111X11112X1",
+          "12121X1X11212",
+          "X211211X11212",
+          "1212X21111XX2",
+          "1212211111XX2",
+          "2211XX1211XX2",
+          "1211X1111121X",
+          "X2122112112X2",
+          "221X211111XX2",
+          "221X1212112X2",
+          "1211X112112X1",
+          "2211121111XX2",
+          "12112X11112X1",
+          "22121X1111XX2",
+          "121X111111X12",
+          "X21XX11111X12",
+          "1211X11X11X12",
+          "X21X111211212",
+          "2212121X112X2",
+          "121X2X1X11212",
+          "221X1111112X1",
+          "X2112X1X11212",
+          "121X2212112X2",
+          "1212X11211XX2",
+          "12122X1111XX2",
+          "2212X111112XX",
+          "X212111X11212",
+          "X2112212112X2",
+          "1211XX111121X",
+          "221XX11211XX2",
+          "1212221X112X2",
+          "121X2111112X1",
+          "121X1X1111X12",
+          "12121X11112X1",
+          "X2112111112X1",
+          "1211XX1X11X12",
+          "X2111X1111X12",
+          "121X121X11212",
+          "1211X21211XX2",
+          "X21X211X11212",
+          "2211X211112XX",
+          "X211121X11212",
+          "22112111112XX",
+          "1212121111XX2",
+          "121XX1111121X",
+          "22111X1211XX2",
+          "X212211111XX2",
+          "X2121212112X2",
+          "221X121111XX2",
+          "X211X1111121X",
+          "2211X21X11XX2",
+          "2211211X11XX2",
+          "X211X112112X1",
+          "121XX11X11X12",
+          "X21X111111X12",
+          "X2121111112X1",
+          "X211X11X11X12",
+          "12112X1211XX2",
+          "2211X112112XX",
+          "121X221111XX2",
+          "22112X11112XX",
+          "2211111X112X1",
+          "1212111211XX2",
+          "X21X2212112X2",
+          "X212X11211XX2",
+          "X211221111XX2",
+          "22121111112XX",
+          "12111X111121X",
+          "221X111211XX2",
+          "12111X12112X1",
+          "22112X1X11XX2",
+          "121X1211112X1",
+          "1211211X112X1",
+          "2212111X11XX2",
+          "X2111211112X1",
+          "12111X1X11X12",
+          "1212X211112XX",
+          "12122111112XX",
+          "121XX21211XX2",
+          "121X211211XX2",
+          "221X2111112XX",
+          "X211X21211XX2",
+          "12121X1211XX2",
+          "X211211211XX2",
+          "22111211112XX",
+          "22121X11112XX",
+          "221X1X1211XX2",
+          "121X11111121X",
+          "1212211X11XX2",
+          "X212121111XX2",
+          "1211X11X1121X",
+          "121X1112112X1",
+          "X21111111121X",
+          "221X211X11XX2",
+          "2211121X11XX2",
+          "X2111112112X1",
+          "12112X1X112X1",
+          "1212X112112XX",
+          "12112211112XX",
+          "121X111X11X12",
+          "12122X11112XX",
+          "1212111X112X1",
+          "121X2X1211XX2",
+          "2211X11111XXX",
+          "X211111X11X12",
+          "22111112112XX",
+          "X2112X1211XX2",
+          "X21X221111XX2",
+          "1211221X11XX2",
+          "X212111211XX2",
+          "121X1X111121X",
+          "12122X1X11XX2",
+          "X2111X111121X",
+          "X2111X12112X1",
+          "1211X212112XX",
+          "121X211X112X1",
+          "1211121X112X1",
+          "121X1X1X11X12",
+          "X211211X112X1",
+          "12121211112XX",
+          "X2111X1X11X12",
+          "121X121211XX2",
+          "22111X12112XX",
+          "X2122111112XX",
+          "X21X211211XX2",
+          "221X1211112XX",
+          "X211121211XX2",
+          "2211211X112XX",
+          "X2121X1211XX2",
+          "1212121X11XX2",
+          "X21X11111121X",
+          "X212211X11XX2",
+          "1211111X1121X",
+          "X211X11X1121X",
+          "12112X12112XX",
           "1211XX11111X2",
-          "X11X2X1X11112",
-          "X112221X111X2",
-          "2X1X211X111X2",
-          "X11XX21X11112",
-          "2X12111X111X2",
-          "2X1X2X1X111X2",
-          "2X121X1X111X2",
-          "X21X111X111X2",
+          "121X2211112XX",
+          "1212X11111XXX",
+          "12121112112XX",
+          "X2112211112XX",
+          "X21X111X11X12",
+          "221X1112112XX",
+          "2211111111XXX",
+          "121X221X11XX2",
+          "22112X1X112XX",
+          "X211221X11XX2",
+          "2212111X112XX",
+          "12111X1X1121X",
+          "121X2112112XX",
+          "1211X21111XXX",
           "121XX111111X2",
-          "2X1XX21X111X2",
+          "X211X212112XX",
+          "12121X12112XX",
+          "X2112112112XX",
+          "2212XX11112X2",
+          "22111X1111XXX",
+          "1212211X112XX",
+          "X2121211112XX",
+          "X21X121211XX2",
+          "221X211X112XX",
+          "2211121X112XX",
+          "121X111X1121X",
+          "1211X11211XXX",
+          "121X2X12112XX",
           "121XXX11111X2",
-          "X211X111111X2",
-          "X1122X12111X2",
+          "12112X1111XXX",
+          "X211111X1121X",
+          "X2112X12112XX",
           "X211XX11111X2",
-          "X11XXX1211112",
-          "X112X212111X2",
-          "2X1XX112111X2",
-          "2X1XXX12111X2",
-          "1X12X21X111X2",
-          "121X1111111X2",
-          "2X1X121X111X2",
-          "121X1X11111X2",
+          "1212111111XXX",
+          "1211221X112XX",
+          "X2121112112XX",
+          "221X111111XXX",
+          "2211X11X11XXX",
+          "1211XX1211XXX",
+          "X2111X1X1121X",
+          "121X211111XXX",
+          "121X1212112XX",
+          "221XX211112X2",
+          "X21X2112112XX",
+          "X211X21111XXX",
+          "12121X1111XXX",
           "X21XX111111X2",
-          "X2111X11111X2",
+          "X211211111XXX",
+          "X2111212112XX",
+          "1212121X112XX",
+          "121XX11211XXX",
+          "121X2X1111XXX",
+          "X21X111X1121X",
+          "X211X11211XXX",
+          "121X1X11111X2",
           "X21XXX11111X2",
-          "1X12XX12111X2",
-          "2X1X1X12111X2",
-          "XX12211X111X2",
-          "XX122X1X111X2",
-          "XX12X21X111X2",
-          "X21X1111111X2",
+          "X2112X1111XXX",
+          "1211XX1X111X2",
+          "121X221X112XX",
+          "1212X11X11XXX",
+          "X212111111XXX",
+          "2212X11X112X2",
+          "X211221X112XX",
+          "X21XXX1111212",
+          "2211111X11XXX",
+          "12111X1211XXX",
+          "221XXX12112X2",
+          "X212X211112X2",
+          "121X121111XXX",
+          "1211X21X11XXX",
+          "X21X211111XXX",
+          "121XX11X111X2",
+          "1211211X11XXX",
+          "X21X1212112XX",
+          "X211121111XXX",
+          "X211X11X111X2",
+          "2212XX1X112X2",
+          "22111X1X11XXX",
+          "121X111211XXX",
+          "X211111211XXX",
+          "121XXX1X111X2",
+          "12112X1X11XXX",
           "X21X1X11111X2",
-          "XX12X112111X2",
-          "XX12XX12111X2",
-          "XX1X221X111X2",
-          "XX12121X111X2",
-          "XX1X2X12111X2",
-          "XX121X12111X2",
-          "XX1XX212111X2"
+          "X211XX1X111X2",
+          "1212111X11XXX",
+          "121XXX1X11212",
+          "221X111X11XXX",
+          "X211XX1X11212",
+          "X212XX12112X2",
+          "121X1X1211XXX",
+          "221XXX1111XX2",
+          "1212X21X112X2",
+          "X2111X1211XXX",
+          "121X211X11XXX",
+          "X21X121111XXX",
+          "1211121X11XXX",
+          "221XX21X112X2",
+          "X21XX11X111X2",
+          "X211211X11XXX",
+          "22121X1X112X2",
+          "X21XX11X11212",
+          "X21X111211XXX",
+          "121XXX11112X1",
+          "121X1X1X111X2",
+          "221X2X1X112X2",
+          "X211XX11112X1",
+          "X2111X1X111X2",
+          "X212111X11XXX",
+          "X21XXX1X11212",
+          "X21XX212112X2",
+          "X212XX1111XX2",
+          "2211XX1X11XX2",
+          "X212X21X112X2",
+          "121X121X11XXX",
+          "X21XX111112X1",
+          "X211121X11XXX",
+          "X21X111X111X2",
+          "X21X2X12112X2",
+          "221XX11X11XX2",
+          "X2122X1X112X2",
+          "X21XXX11112X1",
+          "1211XX1X112X1",
+          "X21X1X1X111X2",
+          "1212XX11112XX",
+          "121XXX1211XX2",
+          "221XXX11112XX",
+          "X21X1X1X11212",
+          "X211XX1211XX2",
+          "X21XX21111XX2",
+          "1212XX1X11XX2",
+          "221XXX1X11XX2",
+          "121XX11X112X1",
+          "X211X11X112X1",
+          "X212X111112XX",
+          "X21XX11211XX2",
+          "X21X2X1111XX2",
+          "X21X221X112X2",
+          "X212X11X11XX2",
+          "121XXX1X112X1",
+          "X21X1X11112X1",
+          "X211XX1X112X1",
+          "X212XX11112XX",
+          "X21XXX1211XX2",
+          "121XX21X11XX2",
+          "2211XX1X112XX",
+          "X211X21X11XX2",
+          "X212XX1X11XX2",
+          "221X1X1X11XX2",
+          "X21XX11X112X1",
+          "121X2X1X11XX2",
+          "221XX11X112XX",
+          "121XXX12112XX",
+          "121X1X1X112X1",
+          "X211XX12112XX",
+          "X21XX211112XX",
+          "X2111X1X112X1",
+          "1212XX1X112XX",
+          "X2121X11112XX",
+          "X21X1X1211XX2",
+          "221XXX1X112XX",
+          "X21XX21X11XX2",
+          "X21X211X11XX2",
+          "X2121X1X11XX2",
+          "X21XX112112XX",
+          "X21X2X11112XX",
+          "X21X111X112X1",
+          "X212X11X112XX",
+          "X21X2X1X11XX2",
+          "X21XXX12112XX",
+          "X21X1X1X112X1",
+          "121XX21X112XX",
+          "X211X21X112XX",
+          "X212XX1X112XX",
+          "221X1X1X112XX",
+          "X21X121X11XX2",
+          "121X2X1X112XX",
+          "X2112X1X112XX",
+          "X21X1X12112XX",
+          "X21XX21X112XX",
+          "X21X211X112XX",
+          "X2121X1X112XX",
+          "X21X2X1X112XX",
+          "X21X121X112XX"
         ],
         "split": true,
-        "gamblingCabinUrl": "https://reducera.gamblingcabin.se/?spel=europatipset&omg=2612&datum=2026-10-01&v1=2,3,4,2,2,2,4,2,4,4,4,4,4&vX=2,3,0,2,2,2,0,2,0,0,0,2,2&v2=4,4,0,4,4,4,0,4,0,0,0,0,3&antT=1,4,13,2,13,2,13&yellow=0,0,13&red=0,0,13&green=0,0,13&pink=0,0,13&utd=1,27350,58999",
-        "unionHit": 0.0064714794472188674,
+        "gamblingCabinUrl": "https://reducera.gamblingcabin.se/?spel=europatipset&omg=2612&datum=2026-10-01&v1=2,0,4,2,2,2,4,2,4,4,4,4,4&vX=2,0,0,2,2,2,0,2,0,0,2,2,2&v2=4,4,0,4,4,4,0,4,0,0,3,0,3&antT=1,4,13,2,13,2,13&yellow=0,0,13&red=0,0,13&green=0,0,13&pink=0,0,13&utd=1,27850,50699",
+        "unionHit": 0.005844795232578507,
         "overlapRows": 0,
         "sameSingles": 5
       },
@@ -8464,12 +8587,12 @@
         ]
       },
       "latest": {
-        "at": "2026-09-28T18:56:55.447Z",
-        "rows": 394,
-        "cost": 394,
-        "hitAll": 0.00215790995266168,
+        "at": "2026-09-29T18:38:57.305Z",
+        "rows": 391,
+        "cost": 391,
+        "hitAll": 0.0022339777843321316,
         "rules": {
-          "payoutMin": 59000,
+          "payoutMin": 50700,
           "payoutMinReal": 20000,
           "jackpot": 0,
           "realTurnover": 10000000,
@@ -8483,10 +8606,10 @@
           "turnover": 10000000,
           "payoutMax": null
         },
-        "gamblingCabinUrl": "https://reducera.gamblingcabin.se/?spel=europatipset&omg=2612&datum=2026-10-01&v1=2,3,4,2,2,2,4,2,4,4,4,4,4&vX=2,3,0,2,2,2,0,2,0,0,0,2,2&v2=4,4,0,4,4,4,0,4,0,0,0,0,3&antT=1,4,13,2,13,2,13&yellow=0,0,13&red=0,0,13&green=0,0,13&pink=0,0,13&utd=1,59000,100000000",
+        "gamblingCabinUrl": "https://reducera.gamblingcabin.se/?spel=europatipset&omg=2612&datum=2026-10-01&v1=2,0,4,2,2,2,4,2,4,4,4,4,4&vX=2,0,0,2,2,2,0,2,0,0,2,2,2&v2=4,4,0,4,4,4,0,4,0,0,3,0,3&antT=1,4,13,2,13,2,13&yellow=0,0,13&red=0,0,13&green=0,0,13&pink=0,0,13&utd=1,50700,100000000",
         "picks": [
           "1X2",
-          "1X2",
+          "2",
           "1",
           "1X2",
           "1X2",
@@ -8495,7 +8618,7 @@
           "1X2",
           "1",
           "1",
-          "1",
+          "1X2",
           "1X",
           "1X2"
         ],
@@ -8505,49 +8628,49 @@
             "match": "Danmark - Portugal",
             "kickoff": "2026-10-01T20:45:00+02:00",
             "final": [
-              0.275,
-              0.257,
-              0.468
+              0.281,
+              0.262,
+              0.457
             ],
             "market": [
-              0.275,
-              0.254,
-              0.472
+              0.281,
+              0.26,
+              0.46
             ],
             "marketSource": "Pinnacle",
             "svsOdds": [
               3.5,
               3.8,
-              2.1
+              2.08
             ],
             "sharpOdds": [
-              3.52,
-              3.81,
-              2.05
+              3.44,
+              3.72,
+              2.1
             ],
             "folk": [
-              0.23,
+              0.22,
               0.29,
-              0.48
+              0.49
             ],
             "lineupStatus": null,
             "context": {
               "lineupConfirmed": false,
               "home": {
-                "missing": 1,
-                "missingValueShare": 0.013,
+                "missing": 0,
+                "missingValueShare": 0,
                 "restDays": 4.1,
                 "daysToNext": 3,
                 "nextTournament": "UEFA Nations League A Grp. 4"
               },
               "away": {
-                "missing": 1,
-                "missingValueShare": 0.074,
+                "missing": 2,
+                "missingValueShare": 0.128,
                 "restDays": 4,
                 "daysToNext": 3,
                 "nextTournament": "UEFA Nations League A Grp. 4"
               },
-              "referee": null
+              "referee": "Mykola Balakin"
             }
           },
           {
@@ -8555,30 +8678,30 @@
             "match": "Wales - Norge",
             "kickoff": "2026-10-01T20:45:00+02:00",
             "final": [
-              0.162,
-              0.215,
-              0.623
+              0.158,
+              0.212,
+              0.63
             ],
             "market": [
-              0.163,
-              0.211,
-              0.626
+              0.159,
+              0.208,
+              0.633
             ],
             "marketSource": "Pinnacle",
             "svsOdds": [
-              5.75,
-              4.6,
-              1.58
+              6,
+              4.7,
+              1.55
             ],
             "sharpOdds": [
-              5.91,
-              4.56,
-              1.54
+              6.05,
+              4.63,
+              1.52
             ],
             "folk": [
-              0.08,
-              0.14,
-              0.78
+              0.07,
+              0.13,
+              0.8
             ],
             "lineupStatus": null,
             "context": {
@@ -8597,7 +8720,7 @@
                 "daysToNext": 3,
                 "nextTournament": "UEFA Nations League A Grp. 4"
               },
-              "referee": null
+              "referee": "Alejandro José Hernández Hernández"
             }
           },
           {
@@ -8605,30 +8728,30 @@
             "match": "Tyskland - Serbien",
             "kickoff": "2026-10-01T20:45:00+02:00",
             "final": [
-              0.777,
-              0.142,
-              0.08
+              0.758,
+              0.162,
+              0.081
             ],
             "market": [
-              0.781,
-              0.137,
+              0.759,
+              0.159,
               0.082
             ],
-            "marketSource": "Betfair",
+            "marketSource": "Pinnacle",
             "svsOdds": [
               1.27,
-              6.75,
+              6.5,
               11.5
             ],
             "sharpOdds": [
               1.26,
-              7.2,
-              12
+              6.03,
+              11.62
             ],
             "folk": [
-              0.84,
+              0.85,
               0.11,
-              0.05
+              0.04
             ],
             "lineupStatus": null,
             "context": {
@@ -8647,7 +8770,7 @@
                 "daysToNext": 3,
                 "nextTournament": "UEFA Nations League A Grp. 2"
               },
-              "referee": null
+              "referee": "Espen Eskås"
             }
           },
           {
@@ -8656,24 +8779,24 @@
             "kickoff": "2026-10-01T20:45:00+02:00",
             "final": [
               0.288,
-              0.272,
-              0.44
+              0.27,
+              0.442
             ],
             "market": [
               0.291,
-              0.271,
-              0.438
+              0.269,
+              0.44
             ],
             "marketSource": "Pinnacle",
             "svsOdds": [
               3.55,
-              3.65,
-              2.1
+              3.6,
+              2.14
             ],
             "sharpOdds": [
               3.32,
-              3.57,
-              2.21
+              3.6,
+              2.2
             ],
             "folk": [
               0.21,
@@ -8697,7 +8820,7 @@
                 "daysToNext": 3,
                 "nextTournament": "UEFA Nations League A Grp. 2"
               },
-              "referee": null
+              "referee": "Marco Guida"
             }
           },
           {
@@ -8705,30 +8828,30 @@
             "match": "Irland - Österrike",
             "kickoff": "2026-10-01T20:45:00+02:00",
             "final": [
-              0.272,
-              0.287,
-              0.441
+              0.273,
+              0.292,
+              0.435
             ],
             "market": [
-              0.267,
-              0.287,
-              0.446
+              0.268,
+              0.292,
+              0.439
             ],
             "marketSource": "Betfair",
             "svsOdds": [
               3.6,
-              3.3,
-              2.18
+              3.35,
+              2.16
             ],
             "sharpOdds": [
               3.7,
-              3.45,
-              2.22
+              3.4,
+              2.26
             ],
             "folk": [
-              0.25,
-              0.3,
-              0.45
+              0.23,
+              0.31,
+              0.46
             ],
             "lineupStatus": null,
             "context": {
@@ -8747,7 +8870,7 @@
                 "daysToNext": 2.9,
                 "nextTournament": "UEFA Nations League B Grp. 3"
               },
-              "referee": null
+              "referee": "Allard Lindhout"
             }
           },
           {
@@ -8755,14 +8878,14 @@
             "match": "Israel - Kosovo",
             "kickoff": "2026-10-01T20:45:00+02:00",
             "final": [
-              0.286,
-              0.284,
-              0.43
+              0.289,
+              0.28,
+              0.431
             ],
             "market": [
-              0.294,
-              0.285,
-              0.421
+              0.297,
+              0.281,
+              0.422
             ],
             "marketSource": "Betfair",
             "svsOdds": [
@@ -8772,20 +8895,20 @@
             ],
             "sharpOdds": [
               3.35,
-              3.45,
-              2.34
+              3.55,
+              2.36
             ],
             "folk": [
-              0.26,
-              0.29,
-              0.45
+              0.22,
+              0.3,
+              0.48
             ],
             "lineupStatus": null,
             "context": {
               "lineupConfirmed": false,
               "home": {
-                "missing": 1,
-                "missingValueShare": 0.047,
+                "missing": 2,
+                "missingValueShare": 0.076,
                 "restDays": 4,
                 "daysToNext": 3,
                 "nextTournament": "UEFA Nations League B Grp. 3"
@@ -8797,7 +8920,7 @@
                 "daysToNext": 2.9,
                 "nextTournament": "UEFA Nations League B Grp. 3"
               },
-              "referee": null
+              "referee": "Radu Marián Petrescu"
             }
           },
           {
@@ -8805,25 +8928,29 @@
             "match": "Malta - Gibraltar",
             "kickoff": "2026-10-01T20:45:00+02:00",
             "final": [
-              0.703,
-              0.183,
-              0.115
+              0.755,
+              0.181,
+              0.064
             ],
             "market": [
-              0.69,
-              0.186,
-              0.124
+              0.748,
+              0.185,
+              0.068
             ],
-            "marketSource": "snitt 10 bolag",
+            "marketSource": "Betfair",
             "svsOdds": [
               1.3,
               4.6,
               11.5
             ],
-            "sharpOdds": null,
+            "sharpOdds": [
+              1.31,
+              5.3,
+              14.5
+            ],
             "folk": [
-              0.79,
-              0.15,
+              0.8,
+              0.14,
               0.06
             ],
             "lineupStatus": null,
@@ -8843,7 +8970,7 @@
                 "daysToNext": 4,
                 "nextTournament": "Friendlies"
               },
-              "referee": null
+              "referee": "Antoni Bandić"
             }
           },
           {
@@ -8851,18 +8978,30 @@
             "match": "Bosnien & Hercegovina - Sverige",
             "kickoff": "2026-10-02T20:45:00+02:00",
             "final": [
-              0.265,
-              0.3,
+              0.301,
+              0.263,
               0.436
             ],
-            "market": null,
-            "marketSource": null,
-            "svsOdds": null,
-            "sharpOdds": null,
+            "market": [
+              0.296,
+              0.26,
+              0.445
+            ],
+            "marketSource": "Betfair",
+            "svsOdds": [
+              3.6,
+              3.65,
+              2.08
+            ],
+            "sharpOdds": [
+              3.25,
+              3.7,
+              2.16
+            ],
             "folk": [
-              0.21,
-              0.31,
-              0.48
+              0.24,
+              0.3,
+              0.46
             ],
             "lineupStatus": null,
             "context": {
@@ -8875,8 +9014,8 @@
                 "nextTournament": "UEFA Nations League B Grp. 4"
               },
               "away": {
-                "missing": 2,
-                "missingValueShare": 0.049,
+                "missing": 1,
+                "missingValueShare": 0.053,
                 "restDays": 4,
                 "daysToNext": 3,
                 "nextTournament": "UEFA Nations League B Grp. 4"
@@ -8889,32 +9028,44 @@
             "match": "Frankrike - Italien",
             "kickoff": "2026-10-02T20:45:00+02:00",
             "final": [
-              0.785,
-              0.156,
-              0.06
+              0.677,
+              0.185,
+              0.138
             ],
-            "market": null,
-            "marketSource": null,
-            "svsOdds": null,
-            "sharpOdds": null,
+            "market": [
+              0.666,
+              0.186,
+              0.148
+            ],
+            "marketSource": "Pinnacle",
+            "svsOdds": [
+              1.44,
+              5.3,
+              7
+            ],
+            "sharpOdds": [
+              1.44,
+              5.15,
+              6.47
+            ],
             "folk": [
-              0.77,
-              0.15,
-              0.08
+              0.69,
+              0.21,
+              0.1
             ],
             "lineupStatus": null,
             "context": {
               "lineupConfirmed": false,
               "home": {
                 "missing": 2,
-                "missingValueShare": 0.121,
+                "missingValueShare": 0.176,
                 "restDays": 4,
                 "daysToNext": 3,
                 "nextTournament": "UEFA Nations League A Grp. 1"
               },
               "away": {
                 "missing": 3,
-                "missingValueShare": 0.167,
+                "missingValueShare": 0.148,
                 "restDays": 4,
                 "daysToNext": 3,
                 "nextTournament": "UEFA Nations League A Grp. 1"
@@ -8927,32 +9078,40 @@
             "match": "Belgien - Turkiet",
             "kickoff": "2026-10-02T20:45:00+02:00",
             "final": [
-              0.716,
-              0.182,
-              0.102
+              0.65,
+              0.196,
+              0.154
             ],
-            "market": null,
-            "marketSource": null,
-            "svsOdds": null,
+            "market": [
+              0.642,
+              0.195,
+              0.163
+            ],
+            "marketSource": "Svenska Spel",
+            "svsOdds": [
+              1.52,
+              5,
+              6
+            ],
             "sharpOdds": null,
             "folk": [
-              0.74,
+              0.77,
               0.15,
-              0.11
+              0.08
             ],
             "lineupStatus": null,
             "context": {
               "lineupConfirmed": false,
               "home": {
-                "missing": 2,
-                "missingValueShare": 0.145,
+                "missing": 3,
+                "missingValueShare": 0.191,
                 "restDays": 4,
                 "daysToNext": 3,
                 "nextTournament": "UEFA Nations League A Grp. 1"
               },
               "away": {
-                "missing": 2,
-                "missingValueShare": 0.092,
+                "missing": 0,
+                "missingValueShare": 0,
                 "restDays": 4,
                 "daysToNext": 3,
                 "nextTournament": "UEFA Nations League A Grp. 1"
@@ -8965,18 +9124,30 @@
             "match": "Ukraina - Nordirland",
             "kickoff": "2026-10-02T20:45:00+02:00",
             "final": [
-              0.69,
-              0.211,
-              0.099
+              0.524,
+              0.274,
+              0.202
             ],
-            "market": null,
-            "marketSource": null,
-            "svsOdds": null,
-            "sharpOdds": null,
+            "market": [
+              0.502,
+              0.282,
+              0.216
+            ],
+            "marketSource": "Betfair",
+            "svsOdds": [
+              1.92,
+              3.4,
+              4.5
+            ],
+            "sharpOdds": [
+              1.94,
+              3.45,
+              4.5
+            ],
             "folk": [
-              0.66,
-              0.22,
-              0.12
+              0.62,
+              0.25,
+              0.13
             ],
             "lineupStatus": null,
             "context": {
@@ -8989,8 +9160,8 @@
                 "nextTournament": "UEFA Nations League B Grp. 2"
               },
               "away": {
-                "missing": 0,
-                "missingValueShare": 0,
+                "missing": 1,
+                "missingValueShare": 0.215,
                 "restDays": 4,
                 "daysToNext": 3,
                 "nextTournament": "UEFA Nations League B Grp. 2"
@@ -9003,25 +9174,37 @@
             "match": "Polen - Rumänien",
             "kickoff": "2026-10-02T20:45:00+02:00",
             "final": [
-              0.626,
-              0.254,
-              0.119
+              0.609,
+              0.237,
+              0.154
             ],
-            "market": null,
-            "marketSource": null,
-            "svsOdds": null,
-            "sharpOdds": null,
+            "market": [
+              0.607,
+              0.237,
+              0.157
+            ],
+            "marketSource": "Betfair",
+            "svsOdds": [
+              1.62,
+              4.2,
+              5.5
+            ],
+            "sharpOdds": [
+              1.6,
+              4.1,
+              6.2
+            ],
             "folk": [
-              0.65,
-              0.26,
-              0.09
+              0.71,
+              0.21,
+              0.08
             ],
             "lineupStatus": null,
             "context": {
               "lineupConfirmed": false,
               "home": {
                 "missing": 3,
-                "missingValueShare": 0.175,
+                "missingValueShare": 0.174,
                 "restDays": 4,
                 "daysToNext": 3,
                 "nextTournament": "UEFA Nations League B Grp. 4"
@@ -9041,25 +9224,37 @@
             "match": "Ungern - Georgien",
             "kickoff": "2026-10-02T20:45:00+02:00",
             "final": [
-              0.623,
-              0.247,
-              0.13
+              0.491,
+              0.278,
+              0.231
             ],
-            "market": null,
-            "marketSource": null,
-            "svsOdds": null,
-            "sharpOdds": null,
+            "market": [
+              0.48,
+              0.281,
+              0.239
+            ],
+            "marketSource": "Betfair",
+            "svsOdds": [
+              2.05,
+              3.45,
+              3.75
+            ],
+            "sharpOdds": [
+              1.99,
+              3.4,
+              4
+            ],
             "folk": [
-              0.66,
-              0.24,
-              0.1
+              0.6,
+              0.27,
+              0.13
             ],
             "lineupStatus": null,
             "context": {
               "lineupConfirmed": false,
               "home": {
-                "missing": 0,
-                "missingValueShare": 0,
+                "missing": 1,
+                "missingValueShare": 0.011,
                 "restDays": 4,
                 "daysToNext": 3,
                 "nextTournament": "UEFA Nations League B Grp. 2"
@@ -9110,12 +9305,12 @@
         ]
       },
       "latestB": {
-        "at": "2026-09-28T18:56:55.447Z",
-        "rows": 396,
-        "cost": 396,
-        "hitAll": 0.0043135694945571875,
+        "at": "2026-09-29T18:38:57.305Z",
+        "rows": 394,
+        "cost": 394,
+        "hitAll": 0.0036108174482463746,
         "rules": {
-          "payoutMin": 27350,
+          "payoutMin": 27850,
           "payoutMinReal": 20000,
           "jackpot": 0,
           "realTurnover": 10000000,
@@ -9127,12 +9322,12 @@
           "colorGreen": 0.45,
           "colorRed": 0.2,
           "turnover": 10000000,
-          "payoutMax": 58999
+          "payoutMax": 50699
         },
-        "gamblingCabinUrl": "https://reducera.gamblingcabin.se/?spel=europatipset&omg=2612&datum=2026-10-01&v1=2,3,4,2,2,2,4,2,4,4,4,4,4&vX=2,3,0,2,2,2,0,2,0,0,0,2,2&v2=4,4,0,4,4,4,0,4,0,0,0,0,3&antT=1,4,13,2,13,2,13&yellow=0,0,13&red=0,0,13&green=0,0,13&pink=0,0,13&utd=1,27350,58999",
+        "gamblingCabinUrl": "https://reducera.gamblingcabin.se/?spel=europatipset&omg=2612&datum=2026-10-01&v1=2,0,4,2,2,2,4,2,4,4,4,4,4&vX=2,0,0,2,2,2,0,2,0,0,2,2,2&v2=4,4,0,4,4,4,0,4,0,0,3,0,3&antT=1,4,13,2,13,2,13&yellow=0,0,13&red=0,0,13&green=0,0,13&pink=0,0,13&utd=1,27850,50699",
         "picks": [
           "1X2",
-          "1X2",
+          "2",
           "1",
           "1X2",
           "1X2",
@@ -9141,7 +9336,7 @@
           "1X2",
           "1",
           "1",
-          "1",
+          "1X2",
           "1X",
           "1X2"
         ]
@@ -9759,5 +9954,469 @@
       },
       "pairChance": 328
     }
-  ]
+  ],
+  "missProfile": {
+    "builtAt": "2026-09-29T18:43:02.945Z",
+    "from": "2023-08-05",
+    "to": "2026-09-27",
+    "draws": 347,
+    "matches": 4511,
+    "bandEdges": [
+      0.45,
+      0.55,
+      0.65,
+      0.75
+    ],
+    "minN": 25,
+    "avgOutside": 2.187,
+    "outsideDist": [
+      34,
+      73,
+      104,
+      136
+    ],
+    "groups": {
+      "spik|2|2": {
+        "n": 187,
+        "miss": 59,
+        "exp": 0.401,
+        "by": {
+          "1": 27,
+          "2": 0,
+          "X": 32
+        },
+        "rate": 0.316,
+        "label": "Spik 2 · bortafavorit 55–65 %"
+      },
+      "spik|1|3": {
+        "n": 307,
+        "miss": 77,
+        "exp": 0.303,
+        "by": {
+          "1": 0,
+          "2": 28,
+          "X": 49
+        },
+        "rate": 0.251,
+        "label": "Spik 1 · hemmafavorit 65–75 %"
+      },
+      "spik|1|2": {
+        "n": 484,
+        "miss": 184,
+        "exp": 0.403,
+        "by": {
+          "1": 0,
+          "2": 75,
+          "X": 109
+        },
+        "rate": 0.38,
+        "label": "Spik 1 · hemmafavorit 55–65 %"
+      },
+      "spik|1|1": {
+        "n": 316,
+        "miss": 150,
+        "exp": 0.489,
+        "by": {
+          "1": 0,
+          "2": 76,
+          "X": 74
+        },
+        "rate": 0.475,
+        "label": "Spik 1 · hemmafavorit 45–55 %"
+      },
+      "halv|1X|1": {
+        "n": 229,
+        "miss": 57,
+        "exp": 0.227,
+        "by": {
+          "1": 0,
+          "2": 57,
+          "X": 0
+        },
+        "rate": 0.249,
+        "label": "Halvgardering 1X · favorit 45–55 %"
+      },
+      "spik|2|1": {
+        "n": 143,
+        "miss": 84,
+        "exp": 0.492,
+        "by": {
+          "1": 36,
+          "2": 0,
+          "X": 48
+        },
+        "rate": 0.587,
+        "label": "Spik 2 · bortafavorit 45–55 %"
+      },
+      "spik|1|4": {
+        "n": 155,
+        "miss": 27,
+        "exp": 0.196,
+        "by": {
+          "1": 0,
+          "2": 7,
+          "X": 20
+        },
+        "rate": 0.174,
+        "label": "Spik 1 · hemmafavorit minst 75 %"
+      },
+      "halv|1X|2": {
+        "n": 71,
+        "miss": 13,
+        "exp": 0.178,
+        "by": {
+          "1": 0,
+          "2": 13,
+          "X": 0
+        },
+        "rate": 0.183,
+        "label": "Halvgardering 1X · favorit 55–65 %"
+      },
+      "spik|2|3": {
+        "n": 79,
+        "miss": 24,
+        "exp": 0.311,
+        "by": {
+          "1": 9,
+          "2": 0,
+          "X": 15
+        },
+        "rate": 0.304,
+        "label": "Spik 2 · bortafavorit 65–75 %"
+      },
+      "halv|X2|1": {
+        "n": 78,
+        "miss": 11,
+        "exp": 0.226,
+        "by": {
+          "1": 11,
+          "2": 0,
+          "X": 0
+        },
+        "rate": 0.141,
+        "label": "Halvgardering X2 · favorit 45–55 %"
+      },
+      "halv|X2|2": {
+        "n": 33,
+        "miss": 5,
+        "exp": 0.179,
+        "by": {
+          "1": 5,
+          "2": 0,
+          "X": 0
+        },
+        "rate": 0.152,
+        "label": "Halvgardering X2 · favorit 55–65 %"
+      },
+      "halv|12|0": {
+        "n": 133,
+        "miss": 29,
+        "exp": 0.261,
+        "by": {
+          "1": 0,
+          "2": 0,
+          "X": 29
+        },
+        "rate": 0.218,
+        "label": "Halvgardering 12 · favorit under 45 %"
+      },
+      "halv|12|1": {
+        "n": 78,
+        "miss": 14,
+        "exp": 0.246,
+        "by": {
+          "1": 0,
+          "2": 0,
+          "X": 14
+        },
+        "rate": 0.179,
+        "label": "Halvgardering 12 · favorit 45–55 %"
+      },
+      "halv|1X|0": {
+        "n": 29,
+        "miss": 6,
+        "exp": 0.26,
+        "by": {
+          "1": 0,
+          "2": 6,
+          "X": 0
+        },
+        "rate": 0.207,
+        "label": "Halvgardering 1X · favorit under 45 %"
+      },
+      "spik|2|4": {
+        "n": 27,
+        "miss": 6,
+        "exp": 0.207,
+        "by": {
+          "1": 2,
+          "2": 0,
+          "X": 4
+        },
+        "rate": 0.222,
+        "label": "Spik 2 · bortafavorit minst 75 %"
+      },
+      "spik|2|0": {
+        "n": 4,
+        "miss": 3,
+        "exp": 0.574,
+        "by": {
+          "1": 0,
+          "2": 0,
+          "X": 3
+        },
+        "rate": 0.75,
+        "label": "Spik 2 · bortafavorit under 45 %"
+      },
+      "spik|1|0": {
+        "n": 14,
+        "miss": 8,
+        "exp": 0.567,
+        "by": {
+          "1": 0,
+          "2": 5,
+          "X": 3
+        },
+        "rate": 0.571,
+        "label": "Spik 1 · hemmafavorit under 45 %"
+      },
+      "halv|1X|3": {
+        "n": 3,
+        "miss": 0,
+        "exp": 0.101,
+        "by": {
+          "1": 0,
+          "2": 0,
+          "X": 0
+        },
+        "rate": 0,
+        "label": "Halvgardering 1X · favorit 65–75 %"
+      },
+      "halv|X2|3": {
+        "n": 3,
+        "miss": 0,
+        "exp": 0.122,
+        "by": {
+          "1": 0,
+          "2": 0,
+          "X": 0
+        },
+        "rate": 0,
+        "label": "Halvgardering X2 · favorit 65–75 %"
+      },
+      "halv|X2|0": {
+        "n": 7,
+        "miss": 2,
+        "exp": 0.268,
+        "by": {
+          "1": 2,
+          "2": 0,
+          "X": 0
+        },
+        "rate": 0.286,
+        "label": "Halvgardering X2 · favorit under 45 %"
+      },
+      "halv|12|2": {
+        "n": 1,
+        "miss": 0,
+        "exp": 0.209,
+        "by": {
+          "1": 0,
+          "2": 0,
+          "X": 0
+        },
+        "rate": 0,
+        "label": "Halvgardering 12 · favorit 55–65 %"
+      }
+    },
+    "leagues": {
+      "Premier League": {
+        "n": 391,
+        "miss": 144,
+        "exp": 0.37,
+        "by": {
+          "1": 18,
+          "2": 44,
+          "X": 82
+        },
+        "rate": 0.368
+      },
+      "Championship": {
+        "n": 227,
+        "miss": 101,
+        "exp": 0.43,
+        "by": {
+          "1": 10,
+          "2": 32,
+          "X": 59
+        },
+        "rate": 0.445
+      },
+      "League One": {
+        "n": 54,
+        "miss": 20,
+        "exp": 0.457,
+        "by": {
+          "1": 3,
+          "2": 7,
+          "X": 10
+        },
+        "rate": 0.37
+      },
+      "Ligue 1": {
+        "n": 32,
+        "miss": 12,
+        "exp": 0.402,
+        "by": {
+          "1": 1,
+          "2": 5,
+          "X": 6
+        },
+        "rate": 0.375
+      },
+      "FA Cup": {
+        "n": 44,
+        "miss": 15,
+        "exp": 0.334,
+        "by": {
+          "1": 2,
+          "2": 5,
+          "X": 8
+        },
+        "rate": 0.341
+      },
+      "Serie A": {
+        "n": 76,
+        "miss": 26,
+        "exp": 0.389,
+        "by": {
+          "1": 4,
+          "2": 3,
+          "X": 19
+        },
+        "rate": 0.342
+      },
+      "La Liga": {
+        "n": 70,
+        "miss": 22,
+        "exp": 0.39,
+        "by": {
+          "1": 5,
+          "2": 7,
+          "X": 10
+        },
+        "rate": 0.314
+      },
+      "Bundesliga": {
+        "n": 33,
+        "miss": 15,
+        "exp": 0.436,
+        "by": {
+          "1": 1,
+          "2": 6,
+          "X": 8
+        },
+        "rate": 0.455
+      },
+      "Champions League": {
+        "n": 71,
+        "miss": 20,
+        "exp": 0.35,
+        "by": {
+          "1": 4,
+          "2": 6,
+          "X": 10
+        },
+        "rate": 0.282
+      },
+      "Europa League": {
+        "n": 67,
+        "miss": 21,
+        "exp": 0.395,
+        "by": {
+          "1": 1,
+          "2": 7,
+          "X": 13
+        },
+        "rate": 0.313
+      },
+      "Conference League": {
+        "n": 53,
+        "miss": 23,
+        "exp": 0.413,
+        "by": {
+          "1": 1,
+          "2": 4,
+          "X": 18
+        },
+        "rate": 0.434
+      },
+      "UEFA Nations League": {
+        "n": 28,
+        "miss": 7,
+        "exp": 0.361,
+        "by": {
+          "1": 1,
+          "2": 3,
+          "X": 3
+        },
+        "rate": 0.25
+      },
+      "Internationella vänskapsmatcher": {
+        "n": 38,
+        "miss": 12,
+        "exp": 0.331,
+        "by": {
+          "1": 0,
+          "2": 9,
+          "X": 3
+        },
+        "rate": 0.316
+      },
+      "VM-kval, Europa": {
+        "n": 50,
+        "miss": 14,
+        "exp": 0.287,
+        "by": {
+          "1": 3,
+          "2": 2,
+          "X": 9
+        },
+        "rate": 0.28
+      },
+      "Allsvenskan": {
+        "n": 88,
+        "miss": 34,
+        "exp": 0.396,
+        "by": {
+          "1": 5,
+          "2": 11,
+          "X": 18
+        },
+        "rate": 0.386
+      },
+      "Eliteserien": {
+        "n": 42,
+        "miss": 19,
+        "exp": 0.39,
+        "by": {
+          "1": 3,
+          "2": 8,
+          "X": 8
+        },
+        "rate": 0.452
+      },
+      "VM": {
+        "n": 39,
+        "miss": 10,
+        "exp": 0.306,
+        "by": {
+          "1": 0,
+          "2": 1,
+          "X": 9
+        },
+        "rate": 0.256
+      }
+    }
+  }
 }

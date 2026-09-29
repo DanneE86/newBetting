@@ -1,6 +1,6 @@
 # Ceuta (LaLiga 2) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [LL2](../../ligor/LL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [LL2](../../ligor/LL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -49,7 +49,7 @@ Form (äldst → senast): VFFFFFOV · senaste match 2026-09-26
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: José Juan Romero. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -80,14 +80,11 @@ Tränare: José Juan Romero. Betyg, mål och assist gäller innevarande säsong 
 | 15 | Joaquín | CDM,CM | 25 | Spain | – | 6,72 | 0 | 0 | 1/0 |  |
 | 17 | Mawuli Mensah | CDM,CM | 22 | Ghana | 283 k€ | 6,52 | 0 | 0 | 0/0 |  |
 | 20 | Alejandro Meléndez | CM,CDM | 27 | Spain | 370 k€ | 6,36 | 0 | 0 | 1/0 |  |
-| 20 | José Campana | CM | 33 | Spain | 154 k€ | – | 0 | 0 | 0/0 |  |
-| 24 | Víctor Corral | CM | 24 | Spain | 299 k€ | – | 0 | 0 | 0/0 |  |
 | 28 | Abraham Bueno | Midfielder | 20 | Spain | – | – | 0 | 1 | 0/0 |  |
 | 31 | Adrian Romero | Midfielder | 20 | Spain | – | – | 0 | 0 | 0/0 |  |
 | 32 | Chidiebere Okoro | CM | 19 | Nigeria | – | 6,78 | 0 | 0 | 2/0 |  |
 | 36 | Josema | CM | 23 | Spain | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-|  | Manu Vallejo | LW | 29 | Spain | 156 k€ | – | 0 | 0 | 0/0 |  |
 | 7 | Álex Camacho | LW | 28 | Spain | 238 k€ | 6,96 | 0 | 0 | 0/0 |  |
 | 9 | Jordi Escobar | ST | 24 | Spain | 307 k€ | 6,44 | 2 | 1 | 0/0 |  |
 | 11 | Cedric Teguia | RW | 24 | Spain | 760 k€ | 6,60 | 0 | 0 | 1/0 |  |
@@ -95,7 +92,8 @@ Tränare: José Juan Romero. Betyg, mål och assist gäller innevarande säsong 
 | 19 | Edgar Sevikyan | RW | 25 | Armenia | 936 k€ | 6,74 | 0 | 0 | 0/0 |  |
 | 21 | Kenneth Obinna Mamah | RW,LW | 28 | Nigeria | 463 k€ | 6,14 | 0 | 0 | 1/0 | skadad, åter Early October 2026 |
 | 22 | Kialy Abdoul Koné | LW,RW | 29 | Ivory Coast | 656 k€ | 7,40 | 0 | 3 | 1/0 |  |
-| 25 | Salvi Sánchez | RW | 35 | Spain | 211 k€ | – | 0 | 0 | 0/0 |  |
 | 26 | Arick Betancourt | LW | 22 | Spain | – | 6,25 | 0 | 0 | 0/0 |  |
 | 27 | Umaru Konare | Attacker | 22 | Spain | 197 k€ | 5,75 | 0 | 0 | 0/0 |  |
 | 29 | Omar Sadik | ST,LW | 22 | Morocco | 1,1 M€ | 6,16 | 0 | 0 | 1/1 |  |
+
+Har lämnat truppen sedan vi började spara (4): José Campana (senast 2026-09-29), Salvi Sánchez (senast 2026-09-29), Manu Vallejo (senast 2026-09-29), Víctor Corral (senast 2026-09-29).

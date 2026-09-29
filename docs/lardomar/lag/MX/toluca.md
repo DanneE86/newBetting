@@ -1,6 +1,6 @@
 # Toluca (Liga MX) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [MX](../../ligor/MX.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [MX](../../ligor/MX.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -46,11 +46,11 @@ Form (äldst → senast): FVOVVVVF · senaste match 2026-09-21
 | Pachuca | 19 | 7-4-8 | 29–35 | +0,01 | −5 pe | 2026-05-11 0-2 (b) |
 | Guadalajara Chivas | 18 | 6-7-5 | 20–17 | +0,08 | +11 pe | 2026-07-19 2-0 (b) |
 | UNAM Pumas | 18 | 4-6-8 | 23–30 | −0,56 | +7 pe | 2026-07-22 1-2 (h) |
-| Atlas | 17 | 8-6-3 | 29–19 | +0,20 | +10 pe | 2026-09-13 5-2 (h) |
 | Cruz Azul | 17 | 5-6-6 | 25–29 | +0,06 | +8 pe | 2026-02-07 1-1 (h) |
 | Juarez | 17 | 8-4-5 | 29–17 | −0,15 | −1 pe | 2026-08-31 4-0 (h) |
 | Queretaro | 17 | 8-5-4 | 32–17 | −0,04 | +5 pe | 2026-08-22 2-1 (b) |
 | Santos Laguna | 17 | 9-2-6 | 35–31 | +0,18 | −11 pe | 2026-09-21 2-3 (h) |
+| Atlas | 16 | 8-6-2 | 29–17 | +0,31 | +12 pe | 2026-09-13 5-2 (h) |
 | Necaxa | 16 | 9-5-2 | 36–18 | +0,38 | +6 pe | 2026-08-03 3-1 (h) |
 | Puebla | 16 | 7-5-4 | 26–18 | −0,14 | +7 pe | 2026-09-16 1-0 (b) |
 | Club Leon | 15 | 4-7-4 | 27–27 | +0,02 | +23 pe | 2026-04-26 4-1 (h) |
@@ -60,7 +60,7 @@ Form (äldst → senast): FVOVVVVF · senaste match 2026-09-21
 
 Ligans test av inbördes möten mot marknaden: svag signal (inte bekräftad).
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Antonio Mohamed. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -89,12 +89,12 @@ Tränare: Antonio Mohamed. Betyg, mål och assist gäller innevarande säsong en
 | 8 | Nicolás Castro | CAM,CM,LW,CDM,LM | 25 | Argentina | 2,4 M€ | – | 0 | 0 | 0/0 |  |
 | 10 | Jesús Angulo | CAM,RW,RM,CM,ST | 29 | Mexico | 2,2 M€ | – | 0 | 0 | 0/0 |  |
 | 14 | Marcel Ruiz | CDM,CM,CAM | 25 | Mexico | 7,1 M€ | – | 0 | 0 | 0/0 | skadad, åter Early November 2026 |
-| 15 | Pável Pérez | LW,CAM | 28 | Mexico | 1,5 M€ | – | 0 | 0 | 0/0 |  |
 | 24 | Fernando Arce | CDM | 29 | USA | 651 k€ | – | 0 | 0 | 0/0 |  |
 | 35 | Érick Gutiérrez | CAM | 31 | Mexico | 857 k€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 9 | Alexis Vega | LW,LM | 28 | Mexico | 3,1 M€ | – | 0 | 0 | 0/0 |  |
 | 11 | Helinho | RW,RM,CDM,ST | 26 | Brazil | 2,8 M€ | – | 0 | 0 | 0/0 |  |
+| 15 | Pável Pérez | LW,CAM | 28 | Mexico | 1,5 M€ | – | 0 | 0 | 0/0 |  |
 | 16 | Federico Viñas | ST,RW,CAM | 28 | Uruguay | 1,9 M€ | – | 0 | 0 | 0/0 |  |
 | 21 | Iván López | ST | 27 | Mexico | 1,4 M€ | – | 0 | 0 | 0/0 | skadad, åter Unknown |
 | 23 | Oswaldo Virgen | ST | 21 | Mexico | 1,3 M€ | – | 0 | 0 | 0/0 |  |

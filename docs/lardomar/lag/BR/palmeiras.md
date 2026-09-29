@@ -1,6 +1,6 @@
 # Palmeiras (Brasileirão Série A) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [BR](../../ligor/BR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [BR](../../ligor/BR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -61,7 +61,7 @@ Form (äldst → senast): VOFVOOVO · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Abel Ferreira. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -89,9 +89,9 @@ Tränare: Abel Ferreira. Betyg, mål och assist gäller innevarande säsong enli
 | 56 | Arthur | LB | 21 | Brazil | 1,3 M€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 8 | Andreas Pereira | CDM,CM,CAM | 30 | Brazil | 11,0 M€ | – | 0 | 0 | 0/0 |  |
-| 11 | Jhon Arias | LW,RW,CAM,CM,LM,RM | 29 | Colombia | 11,6 M€ | – | 0 | 0 | 0/0 |  |
+| 11 | Jhon Arias | LW,CAM,RW,CM,LM,RM | 29 | Colombia | 11,6 M€ | – | 0 | 0 | 0/0 |  |
 | 17 | Marlon Freitas | CDM,CM | 31 | Brazil | 2,1 M€ | – | 0 | 0 | 0/0 |  |
-| 18 | Mauricio | CAM,LW,RW,LM,ST,CM | 25 | Paraguay | 11,3 M€ | – | 0 | 0 | 0/0 |  |
+| 18 | Mauricio | CAM,LW,RW,LM,ST,CM,RM | 25 | Paraguay | 11,3 M€ | – | 0 | 0 | 0/0 |  |
 | 30 | Lucas Evangelista | CDM,LW,CM | 31 | Brazil | 2,2 M€ | – | 0 | 0 | 0/0 |  |
 | 32 | Emiliano Martínez | CDM,CB,CM | 27 | Uruguay | 5,5 M€ | – | 0 | 0 | 0/0 |  |
 | 48 | Larson | CDM | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
@@ -99,11 +99,12 @@ Tränare: Abel Ferreira. Betyg, mål och assist gäller innevarande säsong enli
 | 55 | Isaac | Midfielder | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 57 | João Paulo | Midfielder | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 7 | Felipe Anderson | LW,CAM,LM | 33 | Brazil | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 7 | Felipe Anderson | LW,CAM | 33 | Brazil | 1,3 M€ | – | 0 | 0 | 0/0 |  |
 | 9 | Vitor Roque | ST | 21 | Brazil | 28,2 M€ | – | 0 | 0 | 0/0 |  |
 | 10 | Paulinho | ST | 26 | Brazil | 7,7 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
 | 19 | Ramón Sosa | ST,RW,LW,CAM,LM | 27 | Paraguay | 7,7 M€ | – | 0 | 0 | 0/0 |  |
 | 29 | Miguel Bilong | Attacker | 18 | Cameroon | – | – | 0 | 0 | 0/0 |  |
 | 42 | José Manuel López | ST,CAM | 25 | Argentina | 16,6 M€ | – | 0 | 0 | 0/0 |  |
 | 49 | Juan Gabriel | Attacker | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 61 | Kauã | Attacker | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Kauã (senast 2026-09-29).

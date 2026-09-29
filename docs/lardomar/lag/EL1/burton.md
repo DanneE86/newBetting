@@ -1,6 +1,6 @@
 # Burton (League One) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -69,7 +69,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-05-02 | Stryk 4951 | Leyton Orient - Burton | X | 17 % | 24 % |
 | 2026-04-25 | Stryk 4950 | Burton - Exeter | X | 53 % | 54 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Gary Bowyer. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -77,31 +77,32 @@ Tränare: Gary Bowyer. Betyg, mål och assist gäller innevarande säsong enligt
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
 | 27 | Kamil Dudek | GK | 20 | Poland | – | – | 0 | 0 | 0/0 |  |
-| 34 | Corey Addai | GK | 28 | Jamaica | 183 k€ | 6,75 | 0 | 0 | 0/0 |  |
+| 34 | Corey Addai | GK | 28 | Jamaica | 183 k€ | 6,76 | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 6 | Toby Sibbick | CB,LWB,RB | 27 | Uganda | 275 k€ | 6,91 | 0 | 0 | 0/0 |  |
-| 16 | Curtis Tilt | CB | 35 | Jamaica | 253 k€ | 6,93 | 1 | 0 | 3/1 |  |
+| 16 | Curtis Tilt | CB | 35 | Jamaica | 253 k€ | 6,92 | 1 | 0 | 3/1 |  |
 | 20 | Jason Sraha | CB | 23 | England | 253 k€ | 6,63 | 0 | 0 | 0/0 |  |
 | 24 | Harvey Araujo | CB | 22 | England | 594 k€ | 6,64 | 0 | 0 | 0/0 |  |
 | 26 | Finn Delap | CB | 21 | England | 369 k€ | 7,60 | 2 | 0 | 0/0 |  |
 | 31 | Joe Lewis | CB | 27 | Wales | 193 k€ | 6,56 | 0 | 0 | 1/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 3 | Jack Armer | LWB,LM,CB,LB | 25 | Scotland | 346 k€ | 7,36 | 3 | 1 | 2/0 |  |
+| 3 | Jack Armer | LWB,LM,CB,LB | 25 | Scotland | 346 k€ | 7,38 | 3 | 1 | 2/0 |  |
 | 4 | Kgaogelo Chauke | CDM,CM,CAM | 23 | England | 330 k€ | 7,04 | 1 | 0 | 0/0 |  |
 | 8 | Charlie Webster | CAM,CM,CDM | 22 | England | 695 k€ | 7,12 | 1 | 0 | 0/0 |  |
-| 12 | George Evans | CDM,CM,CB | 31 | England | 151 k€ | 7,15 | 1 | 0 | 1/0 |  |
-| 14 | William Collar | CM,CDM,CAM | 29 | England | 154 k€ | 6,39 | 0 | 0 | 1/0 |  |
+| 12 | George Evans | CDM,CM,CB | 31 | England | 151 k€ | 7,14 | 1 | 0 | 1/0 |  |
+| 14 | William Collar | CM,CDM,CAM | 29 | England | 154 k€ | 6,40 | 0 | 0 | 1/0 |  |
 | 15 | Kyran Lofthouse | RWB,RM,CAM | 25 | England | 351 k€ | 7,02 | 0 | 3 | 1/0 |  |
-| 17 | Raphael Borges Rodrigues | RWB,LW,LWB,ST,CAM,RM | 23 | Australia | 887 k€ | 6,77 | 0 | 0 | 0/0 |  |
-| 18 | Caylan Vickers | CAM,ST,RW,LW | 21 | England | 271 k€ | 6,90 | 1 | 1 | 0/0 |  |
+| 17 | Raphael Borges Rodrigues | RWB,LW,LWB,ST,CAM,RM | 23 | Australia | 887 k€ | 6,79 | 0 | 0 | 0/0 |  |
+| 18 | Caylan Vickers | CAM,ST,LW | 21 | England | 271 k€ | 6,93 | 1 | 1 | 0/0 |  |
 | 23 | Emeka Adiele | LW,LB,LWB,CAM,LM | 19 | England | 270 k€ | 6,43 | 0 | 0 | 0/0 |  |
 | 25 | Ciaran Gilligan | CDM | 24 | England | 192 k€ | – | 0 | 0 | 0/0 |  |
 | 41 | Sulyman Krubally | CDM,CAM | 18 | England | 740 k€ | 6,93 | 0 | 2 | 4/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 9 | Gbemi Arubi | ST | 22 | Ireland | 206 k€ | – | 0 | 0 | 0/0 |  |
 | 10 | Mark O'Mahony | ST | 21 | Ireland | 495 k€ | – | 0 | 0 | 0/0 |  |
-| 19 | Matthew Dennis | ST,CAM | 24 | England | 346 k€ | 6,55 | 1 | 0 | 1/0 |  |
-| 29 | Kain Adom | ST,RW,RWB,LW | 25 | England | 237 k€ | 5,96 | 0 | 0 | 0/0 |  |
-| 37 | Tomas Kalinauskas | LM,LW,ST | 26 | Lithuania | 232 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | Matthew Dennis | ST,CAM | 24 | England | 346 k€ | 6,53 | 1 | 0 | 1/0 |  |
+| 29 | Kain Adom | ST,RW,LW | 25 | England | 237 k€ | 5,96 | 0 | 0 | 0/0 |  |
 | 40 | Zac Scutt | ST | 18 | England | – | 6,09 | 0 | 0 | 0/0 |  |
 | 52 | Miles Henry | Attacker | 23 | England | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Tomas Kalinauskas (senast 2026-09-29).

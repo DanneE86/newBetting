@@ -1,6 +1,6 @@
 # Machida (J1 League) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [JP1](../../ligor/JP1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [JP1](../../ligor/JP1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -49,7 +49,7 @@ Form (äldst → senast): VVVOVVOF · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Go Kuroda. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -71,7 +71,7 @@ Tränare: Go Kuroda. Betyg, mål och assist gäller innevarande säsong enligt F
 | | **Mittfältare** | | | | | | | | | |
 | 7 | Yuki Soma | CAM,LW | 29 | Japan | 1,1 M€ | 7,66 | 3 | 3 | 0/0 |  |
 | 8 | Keiya Sento | CAM,CDM | 31 | Japan | 204 k€ | – | 0 | 0 | 0/0 |  |
-| 14 | Yusuke Matsuo | CAM,ST | 29 | Japan | 448 k€ | 6,20 | 1 | 0 | 0/0 |  |
+| 14 | Yusuke Matsuo | CAM | 29 | Japan | 448 k€ | 6,20 | 1 | 0 | 0/0 |  |
 | 16 | Hiroyuki Mae | CDM,CM | 31 | Japan | 394 k€ | 6,91 | 0 | 0 | 0/0 |  |
 | 18 | Hokuto Shimoda | CDM | 34 | Japan | 167 k€ | 6,43 | 0 | 0 | 0/1 |  |
 | 20 | Takuma Nishimura | CAM | 29 | Japan | 379 k€ | 6,58 | 2 | 0 | 0/0 |  |

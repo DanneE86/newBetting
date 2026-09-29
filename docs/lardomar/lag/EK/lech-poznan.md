@@ -1,6 +1,6 @@
 # Lech Poznan (Ekstraklasa) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EK](../../ligor/EK.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EK](../../ligor/EK.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -60,7 +60,7 @@ Form (äldst → senast): OVVVVVFV · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Niels Frederiksen. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -98,7 +98,7 @@ Tränare: Niels Frederiksen. Betyg, mål och assist gäller innevarande säsong 
 | | **Anfallare** | | | | | | | | | |
 | 7 | Yannick Agnero | ST | 23 | Ivory Coast | 1,4 M€ | 6,48 | 1 | 0 | 0/0 |  |
 | 9 | Mikael Ishak | ST | 33 | Sweden | 410 k€ | 6,80 | 1 | 1 | 2/0 |  |
-| 10 | Patrik Wålemark | RW,ST,CAM,RM | 24 | Sweden | 1,9 M€ | 7,32 | 2 | 3 | 2/0 |  |
+| 10 | Patrik Wålemark | RW,ST,RM,CAM | 24 | Sweden | 1,9 M€ | 7,32 | 2 | 3 | 2/0 |  |
 | 11 | Daniel Håkans | RW | 25 | Finland | 1,2 M€ | 6,79 | 0 | 1 | 0/0 |  |
 | 17 | Allahyar Sayyadmanesh | RW,LW,CAM,ST,LM | 25 | Iran | 2,6 M€ | 7,39 | 5 | 0 | 1/0 |  |
 | 56 | Wojciech Szymczak | Attacker | 18 | Poland | – | – | 0 | 0 | 0/0 |  |

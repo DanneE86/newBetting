@@ -1,6 +1,6 @@
 # San Lorenzo (Liga Profesional) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -73,7 +73,7 @@ Form (äldst → senast): FFVOFVOF · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Rubén Insúa. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -104,7 +104,7 @@ Tränare: Rubén Insúa. Betyg, mål och assist gäller innevarande säsong enli
 | 5 | Ignacio Perruzzi | CDM,CM | 21 | Argentina | 2,3 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
 | 8 | Manuel Insaurralde | CDM,CM | 27 | Argentina | 592 k€ | – | 0 | 0 | 0/0 |  |
 | 10 | Facundo Gulli | CAM,RW,CDM,LM,RM,CM | 21 | Argentina | 1,8 M€ | – | 0 | 0 | 0/0 |  |
-| 11 | Matías Reali | LW,CAM,LM | 28 | Argentina | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 11 | Matías Reali | CAM,LM,LW | 28 | Argentina | 1,1 M€ | – | 0 | 0 | 0/0 |  |
 | 13 | Juan Rattalino | CDM | 22 | Argentina | 581 k€ | – | 0 | 0 | 0/0 |  |
 | 15 | Mauricio Cardillo | RWB | 23 | Argentina | 572 k€ | – | 0 | 0 | 0/0 |  |
 | 22 | Juan Pablo Álvarez | RM | 30 | Argentina | 450 k€ | – | 0 | 0 | 0/0 |  |

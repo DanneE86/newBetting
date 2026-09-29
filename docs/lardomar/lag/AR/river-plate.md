@@ -1,10 +1,10 @@
 # River Plate (Liga Profesional) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
-- Stark historik mot Rosario Central (−0,51 p/match mot marknaden, 17 möten), Huracan (−0,52 p/match mot marknaden, 10 möten), San Lorenzo (−0,63 p/match mot marknaden, 10 möten), Lanus (+0,59 p/match mot marknaden, 8 möten), Defensa y Justicia (−0,64 p/match mot marknaden, 7 möten), Newells Old Boys (+0,77 p/match mot marknaden, 7 möten), Tigre (−0,83 p/match mot marknaden, 7 möten), Aldosivi (+0,70 p/match mot marknaden, 6 möten), Central Cordoba (+0,73 p/match mot marknaden, 6 möten), Instituto (+0,69 p/match mot marknaden, 6 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Stark historik mot Rosario Central (−0,51 p/match mot marknaden, 17 möten), Huracan (−0,52 p/match mot marknaden, 10 möten), San Lorenzo (−0,63 p/match mot marknaden, 10 möten), Defensa y Justicia (−0,64 p/match mot marknaden, 7 möten), Newells Old Boys (+0,77 p/match mot marknaden, 7 möten), Tigre (−0,83 p/match mot marknaden, 7 möten), Aldosivi (+0,70 p/match mot marknaden, 6 möten), Central Cordoba (+0,73 p/match mot marknaden, 6 möten), Instituto (+0,69 p/match mot marknaden, 6 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -56,9 +56,9 @@ Form (äldst → senast): FFVOVVVF · senaste match 2026-09-19
 | Estudiantes L.P. | 9 | 5-1-3 | 16–9 | −0,06 | −16 pe | 2025-09-13 2-1 (b) |
 | Platense | 9 | 6-3-0 | 13–6 | +0,17 | +10 pe | 2025-07-14 3-1 (h) |
 | Barracas Central | 8 | 6-0-2 | 17–4 | +0,01 | −21 pe | 2026-07-25 0-1 (h) |
-| Lanus | 8 | 6-2-0 | 19–5 | +0,59 | −1 pe | 2025-08-26 1-1 (b) |
 | Sarmiento Junin | 8 | 5-1-2 | 16–5 | −0,15 | −10 pe | 2026-03-15 2-0 (h) |
 | Defensa y Justicia | 7 | 2-3-2 | 6–6 | −0,64 | +19 pe | 2024-10-26 0-0 (b) |
+| Lanus | 7 | 5-2-0 | 14–4 | +0,49 | +3 pe | 2025-08-26 1-1 (b) |
 | Newells Old Boys | 7 | 6-1-0 | 18–6 | +0,77 | −12 pe | 2024-08-26 0-0 (h) |
 | Tigre | 7 | 2-1-4 | 9–12 | −0,83 | −11 pe | 2026-08-08 0-1 (b) |
 | Union de Santa Fe | 7 | 4-1-2 | 13–5 | −0,14 | −10 pe | 2024-08-04 0-0 (b) |
@@ -72,7 +72,7 @@ Form (äldst → senast): FFVOVVVF · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Leonardo Ponzio. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -97,7 +97,7 @@ Tränare: Leonardo Ponzio. Betyg, mål och assist gäller innevarande säsong en
 | 40 | Agustín Obregón | Defender | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 53 | Thiago Salvatierra | Defender | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 5 | Juan Carlos Portillo | CDM,CM | 26 | Argentina | 2,4 M€ | – | 0 | 0 | 0/0 | skadad, åter Late October 2026 |
+| 5 | Juan Carlos Portillo | CM,CDM | 26 | Argentina | 2,4 M€ | – | 0 | 0 | 0/0 | skadad, åter Late October 2026 |
 | 6 | Aníbal Moreno | CDM,CM | 27 | Argentina | 5,6 M€ | – | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
 | 8 | Mauro Arambarri | CM,CDM | 30 | Uruguay | 7,2 M€ | – | 0 | 0 | 0/0 |  |
 | 10 | Ángel Correa | CAM,ST,RW,LW,LM | 31 | Argentina | 3,7 M€ | – | 0 | 0 | 0/0 |  |

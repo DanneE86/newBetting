@@ -1,6 +1,6 @@
 # Baník Ostrava (Chance Liga) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [CZ](../../ligor/CZ.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [CZ](../../ligor/CZ.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -35,7 +35,7 @@ Form senaste 8 (äldst → senast): FFVVFFFO · senaste match 2026-09-19
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Roman Skuhravý. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -59,7 +59,7 @@ Tränare: Roman Skuhravý. Betyg, mål och assist gäller innevarande säsong en
 | 99 | Vlasiy Sinyavskiy | LWB,LB,LM | 29 | Estonia | 196 k€ | 6,71 | 0 | 0 | 0/1 | skadad, åter Late October 2026 |
 | | **Mittfältare** | | | | | | | | | |
 | 5 | Jirí Boula | CDM,CM,CAM,CB | 27 | Czechia | 636 k€ | 7,03 | 0 | 1 | 2/0 |  |
-| 8 | Aboubacar Traoré | RB,CDM,CB,RWB,CM | 22 | Ivory Coast | 556 k€ | 6,70 | 0 | 0 | 0/0 |  |
+| 8 | Aboubacar Traoré | CDM,RB,CB,RWB,CM | 22 | Ivory Coast | 556 k€ | 6,70 | 0 | 0 | 0/0 |  |
 | 14 | Petr Jaroň | ST | 25 | Czechia | 173 k€ | – | 0 | 0 | 0/0 |  |
 | 18 | David Planka | CM,CAM,CDM,LW | 21 | Czechia | 1,8 M€ | 6,26 | 0 | 0 | 0/0 | skadad, åter Back in training |
 | 19 | Filip Šancl | RW | 21 | Czechia | – | 6,72 | 1 | 0 | 0/0 |  |
@@ -70,8 +70,9 @@ Tränare: Roman Skuhravý. Betyg, mål och assist gäller innevarande säsong en
 | 95 | Daniel Holzer | LWB,LB,LM | 31 | Czechia | 198 k€ | 6,42 | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Dantaye Gilbert | ST,CAM,LW | 21 | Trinidad and Tobago | 402 k€ | 6,60 | 0 | 0 | 0/0 |  |
-| 11 | David Látal | CAM | 23 | Czechia | 261 k€ | – | 0 | 0 | 0/0 |  |
-| 12 | Abdallah Gning | ST,CAM | 27 | Senegal | 597 k€ | 6,52 | 0 | 0 | 0/0 | skadad, åter Early January 2027 |
+| 12 | Abdallah Gning | ST,CAM | 28 | Senegal | 597 k€ | 6,52 | 0 | 0 | 0/0 | skadad, åter Early January 2027 |
 | 15 | Václav Jurečka | ST,CAM,LW | 32 | Czechia | 306 k€ | 6,25 | 1 | 0 | 0/0 |  |
 | 22 | Vít Škrkoň | ST | 18 | Czechia | 971 k€ | 6,24 | 1 | 0 | 0/0 |  |
 | 81 | Matús Kmeť | RW,RB,RWB | 26 | Slovakia | 351 k€ | 6,25 | 0 | 0 | 1/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): David Látal (senast 2026-09-29).

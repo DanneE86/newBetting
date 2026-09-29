@@ -1,6 +1,6 @@
 # Ceará (Brasileirão Série B) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [BR2](../../ligor/BR2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [BR2](../../ligor/BR2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -30,7 +30,7 @@ Form senaste 8 (äldst → senast): FVFVFOVO · senaste match 2026-09-26
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Daniel Paulista. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -63,7 +63,6 @@ Tränare: Daniel Paulista. Betyg, mål och assist gäller innevarande säsong en
 | 81 | João Gabriel | CDM,CM,CAM | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 88 | Caio | Midfielder | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-|  | Pablo | Attacker | 22 | Brazil | – | – | 0 | 0 | 0/0 |  |
 |  | Renzo López | ST | 32 | Uruguay | 541 k€ | – | 0 | 0 | 0/0 |  |
 | 8 | Matheus Araújo | LW,CAM | 24 | Brazil | 1,3 M€ | – | 0 | 0 | 0/0 |  |
 | 9 | Wendel | ST | 26 | Brazil | 1,6 M€ | – | 0 | 0 | 0/0 |  |
@@ -74,3 +73,5 @@ Tränare: Daniel Paulista. Betyg, mål och assist gäller innevarande säsong en
 | 77 | Lenny Lobato | RW,RM | 25 | Brazil | 617 k€ | – | 0 | 0 | 0/0 |  |
 | 90 | Kauã Ziegler | Attacker | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 99 | Lucca | ST | 23 | Brazil | 633 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Pablo (senast 2026-09-29).

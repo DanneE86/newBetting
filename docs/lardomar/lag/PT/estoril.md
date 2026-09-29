@@ -1,6 +1,6 @@
 # Estoril (Primeira Liga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [PT](../../ligor/PT.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [PT](../../ligor/PT.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -55,7 +55,7 @@ Form (äldst → senast): FOFFFOFF · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Vasco Matos. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -81,8 +81,8 @@ Tränare: Vasco Matos. Betyg, mål och assist gäller innevarande säsong enligt
 | 57 | Longin Bimai | Defender | 20 | France | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 8 | Xeka | CM,CDM | 31 | Portugal | 661 k€ | 5,87 | 0 | 0 | 1/1 |  |
-| 10 | Jordan Holsgrove | CDM,CM | 27 | Scotland | 1,8 M€ | 7,41 | 0 | 1 | 0/0 |  |
-| 12 | João Carvalho | CAM,LW,LM,RW,CM | 29 | Portugal | 2,0 M€ | 6,71 | 0 | 0 | 2/0 |  |
+| 10 | Jordan Holsgrove | CM,CDM | 27 | Scotland | 1,8 M€ | 7,41 | 0 | 1 | 0/0 |  |
+| 12 | João Carvalho | CAM,LM,RW,LW,CM | 29 | Portugal | 2,0 M€ | 6,71 | 0 | 0 | 2/0 |  |
 | 22 | Pedro Carvalho | RM | 23 | Portugal | 862 k€ | 6,30 | 0 | 1 | 1/0 |  |
 | 44 | Milan Robin | CM,RW,CAM,CDM | 26 | France | 626 k€ | 6,52 | 0 | 0 | 0/0 |  |
 | 80 | Luís Gomes | CM | 22 | Portugal | – | – | 0 | 0 | 0/0 |  |

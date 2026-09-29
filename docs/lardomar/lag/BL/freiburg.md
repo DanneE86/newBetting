@@ -1,6 +1,6 @@
 # Freiburg (Bundesliga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [BL](../../ligor/BL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [BL](../../ligor/BL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -38,11 +38,11 @@ Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 l
 
 | Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
 |---|---|---|---|---|
-| Igor Matanovic | 13 % | 0 / 72 | – / 1,56 | – / +0,17 |
+| Igor Matanovic | 14 % | 0 / 72 | – / 1,56 | – / +0,17 |
 | Yuito Suzuki | 10 % | 5 / 67 | 2,20 / 1,51 | +0,91 / +0,12 |
 | Jan-Niklas Beste | 9 % | 2 / 70 | 2,00 / 1,54 | +0,72 / +0,16 |
-| Vincenzo Grifo | 7 % | 0 / 72 | – / 1,56 | – / +0,17 |
 | Derry Scherhant | 7 % | 0 / 72 | – / 1,56 | – / +0,17 |
+| Vincenzo Grifo | 7 % | 0 / 72 | – / 1,56 | – / +0,17 |
 | Yannick Engelhardt | 7 % | 0 / 72 | – / 1,56 | – / +0,17 |
 
 Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
@@ -86,7 +86,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-12-14 | Europa 2531 | Freiburg - Dortmund | X | 22 % | 25 % |
 | 2025-10-19 | Europa 2515 | Freiburg - Frankfurt | X | 42 % | 38 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Julian Schuster. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -111,7 +111,7 @@ Tränare: Julian Schuster. Betyg, mål och assist gäller innevarande säsong en
 | 43 | Bruno Ogbus | CB | 20 | Switzerland | 1,5 M€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 6 | Patrick Osterhage | CDM | 26 | Germany | 6,6 M€ | – | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
-| 8 | Maximilian Eggestein | CDM | 29 | Germany | 4,8 M€ | 7,64 | 2 | 0 | 0/0 |  |
+| 8 | Maximilian Eggestein | CDM,CM | 29 | Germany | 4,8 M€ | 7,64 | 2 | 0 | 0/0 |  |
 | 14 | Yuito Suzuki | CAM | 24 | Japan | 12,2 M€ | 8,05 | 4 | 0 | 1/0 |  |
 | 16 | Yannik Engelhardt | CDM,CM | 25 | Germany | 4,4 M€ | 7,28 | 2 | 0 | 1/0 |  |
 | 20 | Rihito Yamamoto | CDM,CM | 24 | Japan | 1,5 M€ | – | 0 | 0 | 0/0 | skadad, åter A few weeks |
@@ -120,8 +120,8 @@ Tränare: Julian Schuster. Betyg, mål och assist gäller innevarande säsong en
 | | **Anfallare** | | | | | | | | | |
 | 7 | Derry Scherhant | LW,RW | 23 | Germany | 2,5 M€ | 7,57 | 1 | 2 | 0/0 |  |
 | 9 | Lucas Höler | ST,CAM | 32 | Germany | 2,0 M€ | 6,22 | 0 | 0 | 1/0 |  |
-| 19 | Jan-Niklas Beste | RW | 27 | Germany | 5,3 M€ | 7,22 | 0 | 1 | 0/0 |  |
+| 19 | Jan-Niklas Beste | RW,RM | 27 | Germany | 5,3 M€ | 7,22 | 0 | 1 | 0/0 |  |
 | 22 | Cyriaque Irié | RW | 21 | Burkina Faso | 5,4 M€ | 6,57 | 0 | 0 | 1/0 |  |
 | 31 | Igor Matanović | ST | 23 | Croatia | 9,1 M€ | 8,08 | 3 | 1 | 0/0 |  |
-| 32 | Vincenzo Grifo | LW | 33 | Italy | 2,1 M€ | 6,49 | 0 | 0 | 0/0 |  |
+| 32 | Vincenzo Grifo | LW,LM | 33 | Italy | 2,1 M€ | 6,49 | 0 | 0 | 0/0 |  |
 | 42 | Keisuke Goto | ST | 21 | Japan | 2,5 M€ | 6,29 | 0 | 0 | 1/0 |  |

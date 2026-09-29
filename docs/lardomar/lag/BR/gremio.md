@@ -1,6 +1,6 @@
 # Gremio (Brasileirão Série A) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [BR](../../ligor/BR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [BR](../../ligor/BR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -40,12 +40,12 @@ Form (äldst → senast): VFFVFFFO · senaste match 2026-09-20
 | Motståndare | M | V-O-F | Mål | Mot marknaden | Kryss mot odds | Senast |
 |---|---|---|---|---|---|---|
 | Atletico-MG | 15 | 8-1-6 | 24–24 | +0,42 | −20 pe | 2026-08-16 0-3 (b) |
-| Fluminense | 15 | 8-2-5 | 21–18 | +0,37 | −16 pe | 2026-07-26 1-1 (h) |
 | Palmeiras | 15 | 3-5-7 | 14–23 | −0,11 | +6 pe | 2026-09-20 0-0 (h) |
 | Sao Paulo | 15 | 6-3-6 | 18–16 | +0,18 | −9 pe | 2026-08-08 2-1 (h) |
 | Bahia | 14 | 6-2-6 | 14–17 | −0,08 | −12 pe | 2026-05-17 1-1 (b) |
 | Corinthians | 14 | 1-8-5 | 10–18 | −0,72 | +28 pe | 2026-05-30 1-3 (h) |
 | Flamengo RJ | 14 | 3-3-8 | 15–26 | −0,17 | −5 pe | 2026-05-10 0-1 (h) |
+| Fluminense | 14 | 7-2-5 | 20–18 | +0,29 | −14 pe | 2026-07-26 1-1 (h) |
 | Internacional | 13 | 3-5-5 | 14–14 | −0,17 | +8 pe | 2026-04-12 0-0 (b) |
 | Vasco | 13 | 7-2-4 | 19–11 | +0,21 | −12 pe | 2026-09-12 1-2 (h) |
 | Botafogo RJ | 12 | 6-2-4 | 27–20 | +0,21 | −9 pe | 2026-09-16 2-3 (b) |
@@ -61,11 +61,11 @@ Form (äldst → senast): VFFVFFFO · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Renato Gaúcho. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Marlon (skadad, åter A few weeks), Diego Caito (skadad, åter Early October 2026), Dodi (skadad, åter Mid October 2026)
+**Skadade/borta nu:** Marlon (osäker), Diego Caito (osäker), Dodi (osäker)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -73,8 +73,6 @@ Tränare: Renato Gaúcho. Betyg, mål och assist gäller innevarande säsong enl
 | 1 | Weverton | GK | 38 | Brazil | 950 k€ | – | 0 | 0 | 0/0 |  |
 | 12 | Gabriel Grando | GK | 26 | Brazil | 1,3 M€ | – | 0 | 0 | 0/0 |  |
 | 24 | Thiago Beltrame | GK | 23 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 31 | Gabriel Menegon | Keeper | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 51 | João Victor | Keeper | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 2 | Fabián Balbuena | CB | 35 | Paraguay | 498 k€ | – | 0 | 0 | 0/0 |  |
 | 3 | Wagner Leonardo | CB | 27 | Brazil | 2,1 M€ | – | 0 | 0 | 0/0 |  |
@@ -82,43 +80,24 @@ Tränare: Renato Gaúcho. Betyg, mål och assist gäller innevarande säsong enl
 | 7 | Cristian Pavón | RB,RW,LW,RM | 30 | Argentina | 1,0 M€ | – | 0 | 0 | 0/0 |  |
 | 14 | Marcos Rocha | RB | 37 | Brazil | 259 k€ | – | 0 | 0 | 0/0 |  |
 | 18 | João Pedro | RB | 29 | Brazil | 1,1 M€ | – | 0 | 0 | 0/0 |  |
-| 23 | Marlon | LB | 29 | Brazil | 2,4 M€ | – | 0 | 0 | 0/0 | skadad, åter A few weeks |
-| 27 | Diego Caito | RB,RWB | 22 | Brazil | – | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
-| 32 | Vitor Ribeiro | Defender | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
+| 23 | Marlon | LB | 29 | Brazil | 2,4 M€ | – | 0 | 0 | 0/0 | osäker |
+| 27 | Diego Caito | RB,RWB | 22 | Brazil | – | – | 0 | 0 | 0/0 | osäker |
 | 38 | Caio Paulista | LB,LWB | 28 | Brazil | 1,5 M€ | – | 0 | 0 | 0/0 |  |
-| 43 | Luis Eduardo | CB | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 52 | Vagner | Defender | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 53 | Gustavo Martins | CB,RB | 24 | Brazil | 2,0 M€ | – | 0 | 0 | 0/0 |  |
-| 54 | Pedro Gabriel | LB,LM | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 58 | Emanuel Mariano | Defender | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 82 | Wallace | CB | 21 | Brazil | 409 k€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 5 | Juan Nardoni | CAM,CM,CDM | 24 | Argentina | 9,3 M€ | – | 0 | 0 | 0/0 |  |
 | 10 | Filip Krovinović | CDM,CAM | 31 | Croatia | 1,1 M€ | – | 0 | 0 | 0/0 |  |
 | 15 | Danilo Barbosa | CDM,CB | 30 | Brazil | 1,4 M€ | – | 0 | 0 | 0/0 |  |
-| 17 | Dodi | CDM,CM,CAM | 30 | Brazil | 343 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 17 | Dodi | CDM,CM,CAM | 30 | Brazil | 343 k€ | – | 0 | 0 | 0/0 | osäker |
 | 19 | Erick Noriega | CDM,CM,CB | 24 | Peru | 1,6 M€ | – | 0 | 0 | 0/0 |  |
 | 20 | Mathías Villasanti | CAM,CM,CDM | 29 | Paraguay | 2,3 M€ | – | 0 | 0 | 0/0 |  |
-| 39 | Tiaguinho | CDM | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 40 | Jeferson Forneck | Midfielder | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 48 | João Borne | Midfielder | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 50 | Bernardo Zortea | CDM | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 55 | Danillo | Midfielder | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 59 | Harlley | Midfielder | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 60 | Artur Junior | Midfielder | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 61 | Lago Menezes | Midfielder | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 64 | Adrielson | Midfielder | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 65 | Riquelme | CM | 20 | Brazil | 2,1 M€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 9 | Francis Amuzu | LW | 27 | Ghana | 2,3 M€ | – | 0 | 0 | 0/0 |  |
-| 21 | Tetê | RW,RM | 26 | Brazil | 7,2 M€ | – | 0 | 0 | 0/0 |  |
+| 21 | Tetê | RW | 26 | Brazil | 7,2 M€ | – | 0 | 0 | 0/0 |  |
 | 22 | Martin Braithwaite | ST,CAM | 35 | Denmark | 990 k€ | – | 0 | 0 | 0/0 |  |
 | 30 | Matheus Nascimento | ST | 22 | Brazil | 2,0 M€ | – | 0 | 0 | 0/0 |  |
-| 47 | Roger | RW | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 49 | Lucca | Attacker | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 57 | Benjamin | Attacker | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 62 | Fellipe Magalhães | Attacker | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 63 | Arnaldo | Attacker | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 77 | Jovane Cabral | LW,CAM | 28 | Cabo Verde | 698 k€ | – | 0 | 0 | 0/0 |  |
 | 95 | Carlos Vinícius | ST | 31 | Brazil | 2,5 M€ | – | 0 | 0 | 0/0 |  |
 | 99 | José Enamorado | RW,ST,LW,CAM | 27 | Colombia | 2,0 M€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (23): Riquelme (senast 2026-09-29), Wallace (senast 2026-09-29), Tiaguinho (senast 2026-09-29), Bernardo Zortea (senast 2026-09-29), Luis Eduardo (senast 2026-09-29), Roger (senast 2026-09-29), Gabriel Menegon (senast 2026-09-29), Jeferson Forneck (senast 2026-09-29), Pedro Gabriel (senast 2026-09-29), Vitor Ribeiro (senast 2026-09-29), Lago Menezes (senast 2026-09-29), João Victor (senast 2026-09-29), Lucca (senast 2026-09-29), Emanuel Mariano (senast 2026-09-29), Vagner (senast 2026-09-29), João Borne (senast 2026-09-29), Benjamin (senast 2026-09-29), Harlley (senast 2026-09-29), Danillo (senast 2026-09-29), Arnaldo (senast 2026-09-29), Artur Junior (senast 2026-09-29), Fellipe Magalhães (senast 2026-09-29), Adrielson (senast 2026-09-29).

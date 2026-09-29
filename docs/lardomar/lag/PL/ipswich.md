@@ -1,6 +1,6 @@
 # Ipswich (Premier League) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -85,7 +85,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-08-22 | Stryk 4967 | Ipswich - Sunderland | 1 ✓ | 35 % | 33 % |
 | 2026-08-30 | Europa 2603 | Manchester United - Ipswich | 1 | 8 % | 13 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Gary O'Neil. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

@@ -1,6 +1,6 @@
 # Chelsea (Premier League) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -56,10 +56,10 @@ Ligans test av frånvaro mot marknaden: svag signal (inte bekräftad). Få match
 | Arsenal | 16 | 2-4-10 | 16–31 | −0,68 | −1 pe | 2026-09-06 1-2 (b) |
 | Crystal Palace | 16 | 13-3-0 | 34–10 | +0,62 | −5 pe | 2026-01-25 3-1 (b) |
 | Everton | 16 | 6-4-6 | 20–15 | −0,57 | +2 pe | 2026-03-21 0-3 (b) |
-| Liverpool | 16 | 3-7-6 | 18–25 | −0,15 | +18 pe | 2026-05-09 1-1 (b) |
 | Man City | 16 | 3-3-10 | 15–31 | −0,14 | −5 pe | 2026-04-12 0-3 (h) |
 | Man United | 16 | 2-8-6 | 15–25 | −0,66 | +24 pe | 2026-04-18 0-1 (h) |
 | Tottenham | 16 | 12-2-2 | 29–13 | +0,79 | −14 pe | 2026-05-19 2-1 (h) |
+| Liverpool | 15 | 3-6-6 | 17–24 | −0,14 | +14 pe | 2026-05-09 1-1 (b) |
 | Newcastle | 15 | 8-2-5 | 20–16 | −0,14 | −9 pe | 2026-03-14 0-1 (h) |
 | Aston Villa | 14 | 7-2-5 | 25–16 | −0,21 | −9 pe | 2026-03-04 4-1 (b) |
 | Fulham | 13 | 9-1-3 | 20–10 | +0,20 | −16 pe | 2026-08-24 3-2 (b) |
@@ -108,7 +108,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-11-30 | Europa 2527 | Chelsea - Arsenal | X | 23 % | 31 % |
 | 2025-08-17 | Europa 2497 | Chelsea - Crystal Palace | X | 63 % | 55 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Xabi Alonso. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -136,7 +136,7 @@ Tränare: Xabi Alonso. Betyg, mål och assist gäller innevarande säsong enligt
 | 10 | Cole Palmer | CAM,RW | 24 | England | 91,9 M€ | 7,57 | 2 | 2 | 1/0 | skadad, åter Mid October 2026 |
 | 14 | Jordan Henderson | CDM,CM | 36 | England | 1,4 M€ | 6,80 | 0 | 0 | 0/0 |  |
 | 17 | Morgan Rogers | CAM,LW,RW | 24 | England | 73,4 M€ | 7,87 | 3 | 1 | 1/0 |  |
-| 24 | Reece James | RB,CDM,CM | 26 | England | 40,0 M€ | 6,83 | 0 | 0 | 1/0 | osäker |
+| 24 | Reece James | CDM,RB | 26 | England | 40,0 M€ | 6,83 | 0 | 0 | 1/0 | osäker |
 | 25 | Moisés Caicedo | CDM,CM | 24 | Ecuador | 98,0 M€ | 6,04 | 0 | 0 | 0/0 | osäker |
 | 45 | Roméo Lavia | CDM | 22 | Belgium | 26,5 M€ | 7,14 | 1 | 0 | 1/0 |  |
 | | **Anfallare** | | | | | | | | | |

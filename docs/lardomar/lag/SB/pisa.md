@@ -1,6 +1,6 @@
 # Pisa (Serie B) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [SB](../../ligor/SB.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [SB](../../ligor/SB.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -58,7 +58,7 @@ Form (äldst → senast): FFFFVVFO · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Paolo Bianco. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -85,10 +85,9 @@ Tränare: Paolo Bianco. Betyg, mål och assist gäller innevarande säsong enlig
 | 19 | Tomás Esteves | CAM | 24 | Portugal | 1,1 M€ | 6,25 | 0 | 0 | 0/0 |  |
 | 21 | İsak Vural | CM | 20 | Turkiye | 5,4 M€ | 6,50 | 0 | 0 | 2/0 |  |
 | 23 | Tommaso Marras | CAM,RW | 22 | Italy | 1,2 M€ | 6,97 | 0 | 0 | 0/0 |  |
-| 24 | Jacopo Frosali | Midfielder | 19 | Italy | 490 k€ | – | 0 | 0 | 0/0 |  |
+| 24 | Jacopo Frosali | Midfielder | 20 | Italy | 490 k€ | – | 0 | 0 | 0/0 |  |
 | 29 | Omar Correia | CM,CDM | 26 | France | 1,2 M€ | 7,44 | 1 | 1 | 0/0 |  |
 | 36 | Gabriele Piccinini | CM | 25 | Italy | 2,2 M€ | 5,79 | 0 | 0 | 0/0 |  |
-| 41 | Daniel Battistella | Midfielder | 19 | Italy | – | – | 0 | 0 | 0/0 |  |
 | 55 | Giuseppe Leone | CM,CDM | 25 | Italy | 1,6 M€ | 6,95 | 1 | 0 | 0/0 |  |
 | 72 | Simone Zanon | RM,CAM,RB,RWB | 25 | Italy | 1,5 M€ | 6,83 | 0 | 1 | 1/0 |  |
 | | **Anfallare** | | | | | | | | | |
@@ -99,3 +98,5 @@ Tränare: Paolo Bianco. Betyg, mål och assist gäller innevarande säsong enlig
 | 32 | Stefano Moreo | ST,CAM | 33 | Italy | 743 k€ | 7,03 | 1 | 1 | 0/0 |  |
 | 37 | Andrea Petagna | ST | 31 | Italy | 384 k€ | 6,58 | 0 | 0 | 0/0 |  |
 | 44 | Daniel Denoon | CB | 22 | Switzerland | 803 k€ | 6,01 | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Daniel Battistella (senast 2026-09-29).

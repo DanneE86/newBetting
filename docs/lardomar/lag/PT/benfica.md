@@ -1,6 +1,6 @@
 # Benfica (Primeira Liga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [PT](../../ligor/PT.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [PT](../../ligor/PT.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -67,7 +67,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-12-28 | Europa 2535 | Braga - Benfica | X | 53 % | 45 % |
 | 2025-10-05 | Europa 2511 | Porto - Benfica | X | 16 % | 25 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Marco Silva. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -89,9 +89,9 @@ Tränare: Marco Silva. Betyg, mål och assist gäller innevarande säsong enligt
 | 58 | Daniel Banjaqui | RB | 18 | Portugal | – | 7,22 | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 5 | Enzo Barrenechea | CDM | 25 | Argentina | 12,1 M€ | 7,40 | 0 | 1 | 1/0 | skadad, åter Early November 2026 |
-| 8 | Fredrik Aursnes | CDM,RW,RB,CM,LW,CAM,LB | 30 | Norway | 12,0 M€ | 6,88 | 1 | 0 | 0/0 |  |
+| 8 | Fredrik Aursnes | CDM,RB,RW,CM,LW,CAM | 30 | Norway | 12,0 M€ | 6,88 | 1 | 0 | 0/0 |  |
 | 10 | Georgiy Sudakov | CAM,LW | 24 | Ukraine | 22,4 M€ | 7,07 | 0 | 0 | 2/0 |  |
-| 13 | Jakub Kamiński | CAM,LW,CM,LM,RWB,RM,CDM | 24 | Poland | 11,0 M€ | 6,38 | 0 | 0 | 0/0 | osäker |
+| 13 | Jakub Kamiński | CAM,LW,LM,CM,RWB,RM,CDM | 24 | Poland | 11,0 M€ | 6,38 | 0 | 0 | 0/0 | osäker |
 | 16 | Manu Silva | CDM | 25 | Portugal | 6,6 M€ | 6,52 | 0 | 0 | 0/0 |  |
 | 18 | Leandro Barreiro | CDM,CAM,CM | 26 | Luxembourg | 12,1 M€ | 7,18 | 2 | 1 | 0/0 |  |
 | 27 | Rafa Silva | CAM,RW,LW | 33 | Portugal | 2,3 M€ | 7,19 | 1 | 0 | 0/0 |  |

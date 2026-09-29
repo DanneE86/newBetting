@@ -1,6 +1,6 @@
 # Remo (Brasileirão Série A) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [BR](../../ligor/BR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [BR](../../ligor/BR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -48,7 +48,7 @@ Form (äldst → senast): FOOFFFFF · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Thiago Carpini. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -63,8 +63,6 @@ Tränare: Thiago Carpini. Betyg, mål och assist gäller innevarande säsong enl
 | 94 | Ygor Vinhas | GK | 32 | Brazil | 279 k€ | – | 0 | 0 | 0/0 |  |
 | 97 | Ivan | GK | 29 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-|  | Kauan | Defender | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Kerlon | Defender | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 2 | João Lucas | RB | 28 | Brazil | 1,2 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 2 | Matheus Alexandre | RB | 27 | Brazil | 870 k€ | – | 0 | 0 | 0/0 |  |
 | 4 | Matheus Felipe | CB | 27 | Brazil | 411 k€ | – | 0 | 0 | 0/0 |  |
@@ -84,7 +82,7 @@ Tränare: Thiago Carpini. Betyg, mål och assist gäller innevarande säsong enl
 | 23 | Franco Catarozzi | CM | 26 | Uruguay | 346 k€ | – | 0 | 0 | 0/0 |  |
 | 26 | David Braga | CAM | 24 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 28 | Zé Welison | CDM | 31 | Brazil | 621 k€ | – | 0 | 0 | 0/0 |  |
-| 35 | Edson Fernando | CDM,CM | 28 | Brazil | 317 k€ | – | 0 | 0 | 0/0 |  |
+| 35 | Edson Fernando | CDM | 28 | Brazil | 317 k€ | – | 0 | 0 | 0/0 |  |
 | 55 | Zé Ricardo | CAM,CDM,ST,CM | 27 | Brazil | 352 k€ | – | 0 | 0 | 0/0 |  |
 | 61 | Tico | Midfielder | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 65 | Miguel | Midfielder | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
@@ -96,6 +94,7 @@ Tränare: Thiago Carpini. Betyg, mål och assist gäller innevarande säsong enl
 | 22 | Yago Pikachu | RW,CAM | 34 | Brazil | 398 k€ | – | 0 | 0 | 0/0 |  |
 | 37 | Jája Silva | LW,RW,CAM,ST | 27 | Brazil | 785 k€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
 | 39 | Eduardo Melo | ST | 25 | Brazil | 404 k€ | – | 0 | 0 | 0/0 |  |
-| 63 | Andrés González | Attacker | 20 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 64 | Paulo Henrique | Attacker | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 99 | Gabriel Poveda | ST | 28 | Brazil | 374 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (3): Andrés González (senast 2026-09-29), Kerlon (senast 2026-09-29), Kauan (senast 2026-09-29).

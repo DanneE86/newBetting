@@ -1,6 +1,6 @@
 # Fredrikstad (Eliteserien) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [NO](../../ligor/NO.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [NO](../../ligor/NO.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -47,7 +47,7 @@ Form (äldst → senast): FVVVVFOO · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Casper Røjkjær. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -56,7 +56,6 @@ Tränare: Casper Røjkjær. Betyg, mål och assist gäller innevarande säsong e
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Øystein Øvretveit | GK | 32 | Norway | 160 k€ | – | 0 | 0 | 0/0 |  |
 | 25 | Ole Langbråten | Keeper | 23 | Norway | – | – | 0 | 0 | 0/0 |  |
 | 30 | Jasper Silva Torkildsen | GK | 22 | Norway | 440 k€ | – | 0 | 0 | 0/0 |  |
 | 77 | Martin Børsheim | GK | 21 | Norway | 1,3 M€ | 6,75 | 0 | 0 | 3/0 |  |
@@ -87,3 +86,5 @@ Tränare: Casper Røjkjær. Betyg, mål och assist gäller innevarande säsong e
 | 18 | Bryan Solhaug Fiabema | ST,LW | 23 | Norway | 309 k€ | 6,71 | 1 | 0 | 0/0 |  |
 | 23 | Henrik Langaas Skogvold | ST,LW | 22 | Norway | 1,1 M€ | 6,63 | 0 | 2 | 0/0 |  |
 | 29 | Gabriel Wesseh | RW | 18 | USA | – | 6,72 | 1 | 1 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Øystein Øvretveit (senast 2026-09-29).

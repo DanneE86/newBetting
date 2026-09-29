@@ -1,6 +1,6 @@
 # Enköping (Div 1 Norra) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [SE3N](../../ligor/SE3N.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [SE3N](../../ligor/SE3N.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -38,3 +38,42 @@ Form senaste 8 (äldst → senast): FOFVVVOF · senaste match 2026-09-27
 | Örebro Syrianska | 2 | 0-1-1 | 2–4 | 2025-10-10 1-1 (b) |
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
+
+## Trupp (Transfermarkt, hämtad 2026-09-29)
+
+Tränare: Niklas Wenderyd. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 32 | Victor Astor | Goalkeeper | 25 | Sweden | – | – | – | – | 0/0 |  |
+| 1 | Theodor Kvist | Goalkeeper | 19 | Sweden | – | – | – | – | 0/0 |  |
+| 13 | Gustaf Persson | Goalkeeper | 33 | Sweden | – | – | – | – | 0/0 |  |
+| 26 | Nils Öhrn Sinnerstad | Goalkeeper | 17 | Sweden | – | – | – | – | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 21 | Viktor Nilsson Gärd | Defender | 19 | Sweden | – | – | – | – | 0/0 |  |
+| 4 | Mattias Özgün | Centre-Back | 28 | Sweden | – | – | – | – | 0/0 |  |
+| 2 | William Björk | Centre-Back | 25 | Sweden | – | – | – | – | 0/0 |  |
+| 3 | Melker Hådell | Centre-Back | 19 | Sweden | – | – | – | – | 0/0 |  |
+| 15 | Filiph Ededal | Centre-Back | 25 | Sweden | – | – | – | – | 0/0 |  |
+| 17 | Axel Sveijer | Left-Back | 22 | Sweden | – | – | – | – | 0/0 |  |
+| 6 | Mohammed Belouchi | Right-Back | 25 | Sweden | – | – | – | – | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Leon Beijer | Midfielder | 17 | Sweden | – | – | – | – | 0/0 |  |
+| 20 | El Hadji Fallou Faye | Defensive Midfield | 20 | Senegal | – | – | – | – | 0/0 |  |
+| 7 | Musab Abdi Mohamud | Central Midfield | 20 | Sweden | – | – | – | – | 0/0 |  |
+| 22 | Nathanael Seidouvy | Central Midfield | 18 | Sweden | – | – | – | – | 0/0 |  |
+| 23 | Hugo Norrlin | Central Midfield | 19 | Sweden | – | – | – | – | 0/0 |  |
+| 5 | Axel Lundgren | Right Midfield | 24 | Sweden | – | – | – | – | 0/0 |  |
+| 40 | Isak Bråholm | Left Midfield | 26 | Sweden | – | – | – | – | 0/0 |  |
+| 10 | Hadi Noori | Attacking Midfield | 22 | Sweden | – | – | – | – | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 25 | Munaser Mohamud | Left Winger | 17 | Sweden | – | – | – | – | 0/0 |  |
+| 19 | Paul Osama | Right Winger | 19 | Kenya | – | – | – | – | 0/0 |  |
+| 12 | Lucky Nwafor | Centre-Forward | 21 | Nigeria | – | – | – | – | 0/0 |  |
+| 8 | Andres Odhiambo Omondi | Centre-Forward | 18 | Kenya | – | – | – | – | 0/0 |  |
+| 9 | Felix Johansson | Centre-Forward | 20 | Sweden | – | – | – | – | 0/0 |  |
+| 14 | Alexander Persson-Njie | Centre-Forward | 35 | Sweden | – | – | – | – | 0/0 |  |
+| 16 | Joel Zucco | Striker | 18 | Sweden | – | – | – | – | 0/0 |  |
+| 18 | Hannes Förlin | Striker | 18 | Sweden | – | – | – | – | 0/0 |  |
+| 50 | Adrian Navarrete Hultberg | Striker | 21 | Sweden | – | – | – | – | 0/0 |  |

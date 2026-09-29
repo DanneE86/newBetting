@@ -1,5 +1,5 @@
 {
-    "updatedAt":  "2026-09-27T20:39:27.1785538+02:00",
+    "updatedAt":  "2026-09-29T20:54:31.3585556+02:00",
     "sources":  [
                     {
                         "name":  "csv:PL_2627.csv",
@@ -62,7 +62,7 @@
                         "url":  "https://www.football-data.co.uk/mmz4281/2627/E2.csv",
                         "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\EL1_2627.csv",
                         "ok":  true,
-                        "bytes":  41224
+                        "bytes":  43166
                     },
                     {
                         "name":  "csv:EL1_2526.csv",
@@ -209,7 +209,7 @@
                         "url":  "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
                         "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\LL2_2627.csv",
                         "ok":  true,
-                        "bytes":  31577
+                        "bytes":  36824
                     },
                     {
                         "name":  "csv:LL2_2526.csv",
@@ -383,8 +383,8 @@
                               "BL":  367,
                               "L1":  424,
                               "ED":  441,
-                              "CH":  587
+                              "CH":  568
                           },
-    "weather":  false,
+    "weather":  true,
     "playerImpact":  false
 }

@@ -1,6 +1,6 @@
 # Palermo (Serie B) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [SB](../../ligor/SB.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [SB](../../ligor/SB.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -62,7 +62,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 |---|---|---|---|---|---|
 | 2026-04-30 | Europa 2570 | Palermo - Catanzaro | 1 ✓ | 64 % | 52 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Filippo Inzaghi. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -71,7 +71,6 @@ Tränare: Filippo Inzaghi. Betyg, mål och assist gäller innevarande säsong en
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Alfred Gomis | GK | 33 | Senegal | 154 k€ | – | 0 | 0 | 0/0 |  |
 | 1 | Mattia Perin | GK | 33 | Italy | 1,1 M€ | 6,90 | 0 | 0 | 0/0 | skadad, åter Late September 2026 |
 | 12 | Manfredi Nespola | Keeper | 21 | Italy | 215 k€ | – | 0 | 0 | 0/0 |  |
 | 14 | Mattia Fortin | GK | 23 | Italy | 1,9 M€ | 7,94 | 0 | 0 | 0/0 |  |
@@ -86,14 +85,12 @@ Tränare: Filippo Inzaghi. Betyg, mål och assist gäller innevarande säsong en
 | 93 | Federico Barba | CB,LB | 33 | Italy | 206 k€ | 7,69 | 0 | 0 | 0/0 |  |
 | 96 | Giangiacomo Magnani | CB | 30 | Italy | 834 k€ | 7,44 | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-|  | Valerio Brutto | Midfielder | 19 | Italy | – | – | 0 | 0 | 0/0 |  |
 | 3 | Tommaso Augello | LWB,LB,LM | 32 | Italy | 565 k€ | 7,95 | 1 | 1 | 1/0 |  |
 | 5 | Antonio Palumbo | CAM,RW | 30 | Italy | 1,4 M€ | 7,64 | 1 | 0 | 1/0 |  |
 | 6 | Claudio Gomes | CDM | 26 | France | 876 k€ | 6,04 | 0 | 0 | 0/0 |  |
 | 8 | Jacopo Segre | CDM,CM,CAM | 29 | Italy | 1,1 M€ | 6,67 | 0 | 0 | 1/0 |  |
 | 10 | Filippo Ranocchia | CDM,CM | 25 | Italy | 2,6 M€ | 7,59 | 1 | 0 | 1/0 |  |
 | 11 | Emmanuel Quartsin Gyasi | RWB,CAM | 32 | Ghana | 504 k€ | 6,29 | 0 | 0 | 1/0 |  |
-| 18 | Pietro Avena | Midfielder | 19 | Italy | – | – | 0 | 0 | 0/0 |  |
 | 23 | Hernani | CAM,CM,CDM | 32 | Brazil | 838 k€ | 7,20 | 0 | 1 | 0/0 | skadad, åter Late September 2026 |
 | 24 | Nahuel Estévez | CM,CDM | 30 | Argentina | 1,1 M€ | 6,32 | 0 | 0 | 1/0 |  |
 | 27 | Niccolò Pierozzi | RWB,CB,RB,RM | 25 | Italy | 2,6 M€ | 6,79 | 0 | 0 | 1/0 |  |
@@ -103,6 +100,8 @@ Tränare: Filippo Inzaghi. Betyg, mål och assist gäller innevarande säsong en
 | | **Anfallare** | | | | | | | | | |
 | 7 | Gabriel Strefezza | ST,RW,LW,CAM | 29 | Brazil | 3,5 M€ | 6,66 | 1 | 0 | 1/0 | skadad, åter Early October 2026 |
 | 9 | Dominic Vavassori | RW | 20 | Italy | 1,8 M€ | 7,10 | 2 | 0 | 0/0 |  |
-| 17 | Dennis Tørset Johnsen | LW,CAM,CM,ST | 28 | Norway | 1,7 M€ | 8,30 | 3 | 4 | 0/0 |  |
+| 17 | Dennis Tørset Johnsen | LW,CAM,CM | 28 | Norway | 1,7 M€ | 8,30 | 3 | 4 | 0/0 |  |
 | 20 | Joel Pohjanpalo | ST | 32 | Finland | 2,1 M€ | 7,13 | 1 | 2 | 0/0 |  |
 | 99 | Alessandro Gabrielloni | ST | 32 | Italy | 547 k€ | 6,59 | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (3): Alfred Gomis (senast 2026-09-29), Pietro Avena (senast 2026-09-29), Valerio Brutto (senast 2026-09-29).

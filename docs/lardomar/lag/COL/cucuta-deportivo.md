@@ -1,6 +1,6 @@
 # Cúcuta Deportivo (Primera A) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [COL](../../ligor/COL.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [COL](../../ligor/COL.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -30,7 +30,7 @@ Form senaste 8 (äldst → senast): OVVFOFFV · senaste match 2026-09-26
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Nicolás Chiesa. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -54,7 +54,6 @@ Tränare: Nicolás Chiesa. Betyg, mål och assist gäller innevarande säsong en
 | | **Mittfältare** | | | | | | | | | |
 | 5 | Víctor Mejía | CM,CDM,CB | 33 | Colombia | 248 k€ | – | 0 | 0 | 0/0 |  |
 | 7 | Jader Manyoma | RM | 22 | Colombia | 206 k€ | – | 0 | 0 | 0/0 |  |
-| 8 | Diego Ceballos | CM,CDM | 27 | Colombia | 255 k€ | – | 0 | 0 | 0/0 |  |
 | 10 | Léider Berdugo | CM,RM,ST,CAM,LW,RW,CB | 24 | Colombia | 488 k€ | – | 0 | 0 | 0/0 |  |
 | 13 | Breyner Rodríguez | ST | 19 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 15 | Santiago Vásquez | Midfielder | 0 | Colombia | – | – | 0 | 0 | 0/0 |  |
@@ -71,3 +70,5 @@ Tränare: Nicolás Chiesa. Betyg, mål och assist gäller innevarande säsong en
 | 20 | Dayan Pérez | LM | 18 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 31 | Jesús Díaz | RW | 27 | Colombia | 362 k€ | – | 0 | 0 | 0/0 |  |
 | 32 | Jhonathan Agudelo | ST | 33 | Colombia | 222 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Diego Ceballos (senast 2026-09-29).

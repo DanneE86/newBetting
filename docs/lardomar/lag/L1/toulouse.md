@@ -1,6 +1,6 @@
 # Toulouse (Ligue 1) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [L1](../../ligor/L1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [L1](../../ligor/L1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -76,7 +76,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-10-29 | Europa 2518 | Toulouse - Rennes | X | 52 % | 49 % |
 | 2025-09-21 | Europa 2507 | Auxerre - Toulouse | 1 | 41 % | 42 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Jens Berthel Askou. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

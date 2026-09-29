@@ -1,6 +1,6 @@
 # Chiba (J1 League) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [JP1](../../ligor/JP1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [JP1](../../ligor/JP1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -37,7 +37,7 @@ Form (äldst → senast): FFFFFVOF · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Yoshiyuki Kobayashi. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -60,8 +60,6 @@ Tränare: Yoshiyuki Kobayashi. Betyg, mål och assist gäller innevarande säson
 | 66 | Daniel Hall | CB | 27 | Australia | 278 k€ | 6,17 | 0 | 0 | 1/0 |  |
 | 67 | Masaru Hidaka | LB | 31 | Japan | 146 k€ | 6,93 | 0 | 0 | 2/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-|  | Gentaro Yoshida | LW | 25 | Japan | 121 k€ | – | 0 | 0 | 0/0 |  |
-|  | Soshiro Tanida | CDM | 21 | Japan | 138 k€ | – | 0 | 0 | 0/0 |  |
 | 4 | Taishi Taguchi | CM | 35 | Japan | 110 k€ | 6,71 | 0 | 1 | 0/0 |  |
 | 5 | Yusuke Kobayashi | CM | 31 | Japan | 122 k€ | 6,68 | 0 | 0 | 0/0 |  |
 | 6 | Eduardo | CM | 29 | Brazil | 190 k€ | 6,70 | 0 | 0 | 0/0 |  |
@@ -86,3 +84,5 @@ Tränare: Yoshiyuki Kobayashi. Betyg, mål och assist gäller innevarande säson
 | 30 | Takumi Matsumura | ST,CAM | 22 | Japan | – | 6,07 | 0 | 0 | 0/0 |  |
 | 45 | Leonardo Rocha | ST | 29 | Portugal | 404 k€ | 6,21 | 0 | 0 | 0/0 |  |
 | 99 | Erison | ST | 27 | Brazil | 1,2 M€ | 6,47 | 1 | 0 | 4/0 |  |
+
+Har lämnat truppen sedan vi började spara (2): Soshiro Tanida (senast 2026-09-29), Gentaro Yoshida (senast 2026-09-29).

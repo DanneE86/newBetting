@@ -1,6 +1,6 @@
 # Bournemouth (Premier League) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -112,7 +112,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-10-26 | Europa 2517 | Bournemouth - Nottingham | 1 ✓ | 58 % | 49 % |
 | 2025-09-21 | Europa 2507 | Bournemouth - Newcastle | X | 51 % | 39 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Marco Rose. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

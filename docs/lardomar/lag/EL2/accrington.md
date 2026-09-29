@@ -1,6 +1,6 @@
 # Accrington (League Two) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -42,10 +42,10 @@ Form (äldst → senast): OFFOVFOO · senaste match 2026-09-26
 | Shrewsbury | 12 | 5-4-3 | 12–10 | +0,28 | +4 pe | 2026-02-21 0-2 (h) |
 | Crewe | 10 | 5-2-3 | 12–9 | +0,45 | −6 pe | 2026-04-03 2-0 (h) |
 | Swindon | 9 | 4-4-1 | 19–11 | +0,52 | +19 pe | 2026-09-26 1-1 (b) |
-| Walsall | 9 | 4-2-3 | 10–10 | +0,44 | −5 pe | 2026-08-29 2-3 (b) |
 | Bristol Rvs | 8 | 4-2-2 | 16–11 | +0,43 | −2 pe | 2026-03-28 0-2 (b) |
 | Cheltenham | 8 | 2-3-3 | 9–9 | −0,28 | +10 pe | 2026-01-31 3-1 (h) |
 | Tranmere | 8 | 3-3-2 | 12–10 | +0,13 | +10 pe | 2026-02-17 1-0 (b) |
+| Walsall | 8 | 3-2-3 | 9–10 | +0,28 | −2 pe | 2026-08-29 2-3 (b) |
 | Colchester | 7 | 2-3-2 | 8–7 | +0,09 | +16 pe | 2026-08-15 2-2 (h) |
 | Grimsby | 7 | 2-3-2 | 10–11 | +0,07 | +15 pe | 2026-09-01 2-2 (h) |
 | Newport County | 7 | 4-1-2 | 16–6 | +0,27 | −13 pe | 2026-09-19 0-0 (h) |
@@ -68,30 +68,30 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 |---|---|---|---|---|---|
 | 2026-02-11 | Europa 2548 | Grimsby - Accrington | 1 | 20 % | 24 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: John Doolan. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Louie Moulden | GK | 24 | England | 479 k€ | 6,90 | 0 | 0 | 0/0 |  |
+| 1 | Louie Moulden | GK | 24 | England | 479 k€ | 6,84 | 0 | 0 | 0/0 |  |
 | 21 | James Rogerson | GK | 19 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 |  | Oliver Smith | CB | 19 | England | – | 6,23 | 0 | 0 | 0/0 |  |
 | 4 | Tom Moore | CB | 27 | England | – | 6,42 | 0 | 0 | 1/0 |  |
 | 5 | Farrend Rawson | CB | 30 | England | 181 k€ | 6,72 | 0 | 0 | 1/0 |  |
-| 17 | Devon Matthews | CB | 26 | England | 213 k€ | 6,89 | 1 | 0 | 3/1 |  |
+| 17 | Devon Matthews | CB | 26 | England | 213 k€ | 6,93 | 1 | 0 | 3/1 |  |
 | 22 | Joseph Anderson | CB,LWB,LB | 25 | England | 244 k€ | 7,03 | 0 | 0 | 3/0 |  |
 | 25 | Josh Smith | CB | 21 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 2 | Donald Love | CB,RWB,CDM,LWB | 31 | Scotland | 176 k€ | 7,22 | 0 | 1 | 1/0 |  |
+| 2 | Donald Love | CB,RWB,CDM,LWB | 31 | Scotland | 176 k€ | 7,23 | 0 | 1 | 1/0 |  |
 | 6 | Liam Coyle | CDM | 26 | Northern Ireland | 133 k€ | 6,79 | 0 | 0 | 1/0 |  |
 | 7 | Shaun Whalley | CAM,ST,RW,RWB | 39 | England | 100 k€ | 6,71 | 0 | 1 | 2/0 |  |
 | 8 | Conor Grant | CDM | 31 | England | 86 k€ | 6,23 | 0 | 0 | 0/0 |  |
 | 10 | Alex Henderson | CAM,CDM,CM | 21 | England | 212 k€ | 6,14 | 0 | 0 | 0/0 |  |
 | 11 | Isaac Sinclair | CAM,CDM,ST | 25 | England | 221 k€ | – | 0 | 0 | 0/0 |  |
-| 14 | Stefan Mols | RM,RW,CAM,LM,CM | 27 | Spain | – | 6,82 | 1 | 1 | 1/0 |  |
+| 14 | Stefan Mols | RM,RW,CAM,LM,CM | 27 | Spain | – | 6,83 | 1 | 1 | 1/0 |  |
 | 16 | Aidan Borland | CDM,CM,CAM | 19 | Scotland | 207 k€ | 6,32 | 0 | 0 | 0/0 |  |
 | 20 | Charlie Brown | RWB,LWB,LW,CAM | 27 | England | 152 k€ | – | 0 | 0 | 0/0 |  |
 | 28 | Séamus Conneely | CDM,CB | 38 | Ireland | 67 k€ | 7,01 | 0 | 0 | 1/0 |  |

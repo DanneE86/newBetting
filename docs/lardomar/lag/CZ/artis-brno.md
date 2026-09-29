@@ -1,6 +1,6 @@
 # Artis Brno (Chance Liga) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [CZ](../../ligor/CZ.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [CZ](../../ligor/CZ.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -12,7 +12,7 @@ Form senaste 8 (äldst → senast): OFFFVFFO · senaste match 2026-09-19
 |---|---|---|---|---|---|---|---|
 | 2026/27 | 9 | 0,56 | 0,20 | 1,00 | 22 % | 0,78–2,00 | 67 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Roman Nádvorník. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -40,7 +40,7 @@ Tränare: Roman Nádvorník. Betyg, mål och assist gäller innevarande säsong 
 |  | Youssoupha Sanyang | LW,CAM,LM | 21 | Gambia | 2,2 M€ | 6,37 | 0 | 0 | 0/0 |  |
 | 5 | Michal Jerábek | CM | 31 | Czechia | 79 k€ | 6,34 | 0 | 0 | 0/0 |  |
 | 8 | Sacha Komljenović | CAM | 23 | Netherlands | 259 k€ | 6,57 | 1 | 0 | 0/0 |  |
-| 9 | Albert Labík | CDM,LM,LWB,CM,LB,CAM | 22 | Czechia | 847 k€ | 6,50 | 1 | 0 | 0/0 |  |
+| 9 | Albert Labík | CDM,LM,LWB,CM,LB | 22 | Czechia | 847 k€ | 6,50 | 1 | 0 | 0/0 |  |
 | 13 | Ismael Sylla | Midfielder | 18 | Côte d'Ivoire | 440 k€ | – | 0 | 0 | 0/0 |  |
 | 14 | Adam Petrák | CDM | 27 | Czechia | 150 k€ | 6,31 | 0 | 0 | 0/0 |  |
 | 20 | Dominik Sarapata | CM,CDM | 18 | Poland | 2,6 M€ | 6,09 | 0 | 0 | 0/0 |  |
@@ -50,7 +50,6 @@ Tränare: Roman Nádvorník. Betyg, mål och assist gäller innevarande säsong 
 | 26 | Martin Pospísil | CM,CDM | 35 | Czechia | 89 k€ | 6,46 | 0 | 0 | 0/0 |  |
 | 77 | Vukadin Vukadinović | RW | 35 | Serbia | 93 k€ | 6,16 | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-|  | Jean-David Beauguel | ST | 34 | France | 108 k€ | – | 0 | 0 | 0/0 |  |
 | 6 | Quadri Adediran | ST | 25 | Nigeria | 205 k€ | 6,94 | 2 | 1 | 0/0 |  |
 | 7 | Alexis Alégué | RW,ST,CAM,LW,RM | 29 | Cameroon | 229 k€ | 6,98 | 1 | 0 | 2/0 |  |
 | 11 | Issa Fomba | RW | 25 | Mali | 208 k€ | 6,42 | 1 | 0 | 1/0 |  |
@@ -59,3 +58,5 @@ Tränare: Roman Nádvorník. Betyg, mål och assist gäller innevarande säsong 
 | 19 | Daniel Toula | Attacker | 21 | Czechia | 641 k€ | – | 0 | 0 | 0/0 |  |
 | 30 | Jan Navrátil | RW | 36 | Czechia | 97 k€ | – | 0 | 0 | 0/0 | skadad, åter Unknown |
 | 87 | Vladimir Perišić | ST | 22 | Montenegro | 326 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Jean-David Beauguel (senast 2026-09-29).

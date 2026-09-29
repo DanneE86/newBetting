@@ -1,6 +1,6 @@
 # San Jose Earthquakes (MLS) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -72,7 +72,7 @@ Form (äldst → senast): FFFOOVVO · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Bruce Arena. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -81,7 +81,6 @@ Tränare: Bruce Arena. Betyg, mål och assist gäller innevarande säsong enligt
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-|  | Luca Ulrich | GK | 23 | USA | – | – | 0 | 0 | 0/0 |  |
 | 1 | Angus Gunn | GK | 30 | Scotland | 736 k€ | 6,57 | 0 | 0 | 0/0 |  |
 | 22 | Nate Crockford | GK | 24 | USA | 169 k€ | – | 0 | 0 | 0/0 |  |
 | 31 | Francesco Montali | GK | 26 | USA | – | – | 0 | 0 | 0/0 |  |
@@ -94,7 +93,7 @@ Tränare: Bruce Arena. Betyg, mål och assist gäller innevarande säsong enligt
 | 18 | Reid Roberts | CB | 22 | USA | 558 k€ | 6,89 | 3 | 0 | 8/0 |  |
 | 24 | DeJuan Jones | LB | 29 | USA | 1,4 M€ | 7,37 | 0 | 0 | 2/0 | skadad, åter Late December 2026 |
 | 25 | Max Floriani | CB | 23 | USA | 171 k€ | 6,56 | 0 | 0 | 1/1 |  |
-| 28 | Benji Kikanović | RB,RWB,RM | 26 | USA | 302 k€ | 6,68 | 0 | 0 | 7/0 |  |
+| 28 | Benji Kikanović | RB,RWB | 26 | USA | 302 k€ | 6,68 | 0 | 0 | 7/0 |  |
 | 87 | Vítor Costa | LB,LWB | 32 | Brazil | 68 k€ | 6,47 | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 |  | Edwyn Mendoza | CM,CDM | 20 | USA | – | – | 0 | 0 | 0/0 |  |
@@ -117,3 +116,5 @@ Tränare: Bruce Arena. Betyg, mål och assist gäller innevarande säsong enligt
 | 19 | Preston Judd | ST | 27 | USA | 689 k€ | 7,18 | 15 | 3 | 8/0 |  |
 | 32 | Nonso Adimabua | ST | 26 | Nigeria | 176 k€ | 6,93 | 0 | 1 | 0/0 | skadad, åter Mid October 2026 |
 | 79 | Darius Johnson | LW | 26 | Grenada | 146 k€ | 6,25 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+
+Har lämnat truppen sedan vi började spara (1): Luca Ulrich (senast 2026-09-29).

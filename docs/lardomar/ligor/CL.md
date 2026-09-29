@@ -1,12 +1,12 @@
 # Champions League (CL) – lärdomar
 
-Genererad 2026-09-28 av `node scripts/analyze-learnings.mjs`. Cup: lagen hör till sina ligor, se deras lagfiler. Alla matcher: `data/matcher/CL.csv`.
+Genererad 2026-09-29 av `node scripts/analyze-learnings.mjs`. Cup: lagen hör till sina ligor, se deras lagfiler. Alla matcher: `data/matcher/CL.csv`.
 
 ## Lärdomar i korthet
 
 - Utan odds finns ingen marknad att lära av. Oddsen vi ser före varje match sparas nu (`pre_*` i matcherfilen), så marknadstestet kan köras här efter cirka 150 matcher.
 
-## Tabell nu (FotMob, 2026-09-28)
+## Tabell nu (FotMob, 2026-09-29)
 
 | # | Lag | M | V | O | F | Mål | +/− | P |
 |---|---|---|---|---|---|---|---|---|
@@ -35,7 +35,7 @@ Genererad 2026-09-28 av `node scripts/analyze-learnings.mjs`. Cup: lagen hör ti
 | 23 | Lille | 1 | 0 | 0 | 1 | 2-3 | -1 | 0 |
 | 24 | Slavia Prague | 1 | 0 | 0 | 1 | 2-3 | -1 | 0 |
 | 25 | Atlético Madrid | 1 | 0 | 0 | 1 | 1-2 | -1 | 0 |
-| 26 | Inter | 1 | 0 | 0 | 1 | 1-2 | -1 | 0 |
+| 26 | Internazionale | 1 | 0 | 0 | 1 | 1-2 | -1 | 0 |
 | 27 | LASK Linz | 1 | 0 | 0 | 1 | 0-1 | -1 | 0 |
 | 28 | Napoli | 1 | 0 | 0 | 1 | 0-1 | -1 | 0 |
 | 29 | Galatasaray | 1 | 0 | 0 | 1 | 1-3 | -2 | 0 |

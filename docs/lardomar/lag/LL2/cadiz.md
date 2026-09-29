@@ -1,6 +1,6 @@
 # Cadiz (LaLiga 2) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [LL2](../../ligor/LL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [LL2](../../ligor/LL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -44,10 +44,10 @@ Form (äldst → senast): FOOOFFFO · senaste match 2026-09-26
 | Albacete | 7 | 3-0-4 | 4–7 | −0,20 | −30 pe | 2026-01-18 0-1 (b) |
 | Girona | 7 | 2-1-4 | 8–10 | +0,01 | −13 pe | 2026-09-19 1-2 (h) |
 | Mallorca | 7 | 1-4-2 | 7–7 | −0,23 | +24 pe | 2024-04-28 1-1 (h) |
-| Tenerife | 7 | 1-3-3 | 7–9 | −0,48 | +11 pe | 2026-09-26 1-1 (b) |
 | Valladolid | 7 | 2-4-1 | 5–5 | +0,29 | +28 pe | 2026-08-30 1-1 (h) |
 | Cordoba | 6 | 3-1-2 | 11–10 | +0,33 | −12 pe | 2026-04-04 1-3 (h) |
 | Eibar | 6 | 3-1-2 | 5–4 | +0,45 | −15 pe | 2026-03-01 1-3 (b) |
+| Tenerife | 6 | 1-3-2 | 7–8 | −0,40 | +18 pe | 2026-09-26 1-1 (b) |
 | Oviedo | 5 | 3-0-2 | 8–4 | +0,60 | −32 pe | 2025-06-01 1-2 (b) |
 | Burgos | 4 | 0-3-1 | 5–7 | −0,66 | +43 pe | 2026-02-14 1-1 (b) |
 | Castellon | 4 | 2-2-0 | 6–2 | +1,00 | +25 pe | 2026-05-15 1-1 (b) |
@@ -60,7 +60,7 @@ Form (äldst → senast): FOOOFFFO · senaste match 2026-09-26
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Albert Celades. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -86,10 +86,8 @@ Tränare: Albert Celades. Betyg, mål och assist gäller innevarande säsong enl
 | 32 | Roberto Rosado | Defender | 18 | Spain | – | 5,81 | 0 | 0 | 0/0 |  |
 | 33 | Manuel Rivera | LB | 17 | Spain | – | 6,37 | 0 | 0 | 1/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-|  | David García | CM | 23 | Spain | 317 k€ | – | 0 | 0 | 0/0 |  |
 | 5 | Marc-Olivier Doué | CDM,CM | 25 | France | 272 k€ | 6,82 | 0 | 0 | 2/0 |  |
 | 10 | Javi Ontiveros | LM,LW | 29 | Spain | 606 k€ | 6,42 | 0 | 0 | 0/0 |  |
-| 10 | Suso | CAM,ST,RW,RM | 32 | Spain | 312 k€ | 6,11 | 0 | 0 | 0/0 |  |
 | 12 | Giorgi Gocholeishvili | RM,LB,RB | 25 | Georgia | 1,6 M€ | 6,25 | 0 | 0 | 1/0 | osäker |
 | 17 | Aïmen Moueffek | CM,CAM,CDM | 25 | France | 1,6 M€ | – | 0 | 0 | 0/0 |  |
 | 18 | Jandro Orellana | CM,CDM | 26 | Spain | 650 k€ | 6,57 | 0 | 0 | 2/0 |  |
@@ -97,12 +95,13 @@ Tränare: Albert Celades. Betyg, mål och assist gäller innevarande säsong enl
 | 24 | Ibon Sánchez | CAM | 22 | Spain | – | 6,77 | 1 | 1 | 1/0 |  |
 | 28 | Dilan Zárate | CM | 19 | Colombia | – | 6,58 | 0 | 0 | 1/0 |  |
 | | **Anfallare** | | | | | | | | | |
-|  | Francisco Mwepu | ST | 26 | Zambia | 263 k€ | – | 0 | 0 | 0/0 |  |
 | 8 | Efe Aghama | LW | 22 | Nigeria | 552 k€ | 6,56 | 0 | 0 | 0/0 |  |
 | 9 | Álvaro Pascual | ST,CAM | 24 | Spain | 1,2 M€ | 6,50 | 0 | 0 | 2/0 |  |
 | 12 | Iuri Tabatadze | RW,LM | 26 | Georgia | 964 k€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
 | 16 | Antoñito Cordero | LW,LM,RM,RW | 19 | Spain | 2,4 M€ | 6,71 | 1 | 1 | 1/0 |  |
-| 19 | Urko Izeta | ST | 26 | Spain | 1,2 M€ | 6,60 | 1 | 0 | 0/0 |  |
+| 19 | Urko Izeta | ST | 27 | Spain | 1,2 M€ | 6,60 | 1 | 0 | 0/0 |  |
 | 20 | Borja Vázquez | RW | 21 | Spain | 513 k€ | 6,49 | 0 | 0 | 1/0 |  |
 | 21 | Vladyslav Kopotun | ST | 25 | Ukraine | 378 k€ | 6,45 | 1 | 0 | 0/0 |  |
 | 25 | Gonzalo Petit | ST,LM | 20 | Uruguay | 3,7 M€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (3): Suso (senast 2026-09-29), Francisco Mwepu (senast 2026-09-29), David García (senast 2026-09-29).

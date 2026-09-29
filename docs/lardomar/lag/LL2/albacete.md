@@ -1,6 +1,6 @@
 # Albacete (LaLiga 2) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [LL2](../../ligor/LL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [LL2](../../ligor/LL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -61,7 +61,7 @@ Form (äldst → senast): FFFFFOFF · senaste match 2026-09-25
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Alberto González. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -97,7 +97,6 @@ Tränare: Alberto González. Betyg, mål och assist gäller innevarande säsong 
 | 18 | Sergio Ortuño | CM,CDM,CAM | 27 | Spain | 880 k€ | 6,67 | 0 | 0 | 2/1 |  |
 | 26 | Capi | CM,RM | 20 | Spain | 518 k€ | – | 0 | 0 | 0/0 |  |
 | 32 | Agustín Albarracín | RW,CM,RM | 21 | Uruguay | 2,1 M€ | 6,29 | 0 | 0 | 0/0 |  |
-| 38 | Diego Rodriguez | Midfielder | 19 | Spain | – | – | 0 | 0 | 0/0 |  |
 | 44 | Antonio David | CDM | 20 | Spain | – | 6,09 | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 |  | Alberto Morientes | Attacker | 19 | Spain | – | – | 0 | 0 | 0/0 |  |
@@ -111,3 +110,5 @@ Tränare: Alberto González. Betyg, mål och assist gäller innevarande säsong 
 | 20 | Samuel Obeng | ST | 29 | Ghana | 314 k€ | 6,27 | 0 | 0 | 0/0 | skadad, åter Back in training |
 | 33 | Tomas Ingles | ST | 22 | Spain | – | 6,00 | 0 | 0 | 0/0 |  |
 | 39 | Fabio Garcia | Attacker | 18 | Spain | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Diego Rodriguez (senast 2026-09-29).

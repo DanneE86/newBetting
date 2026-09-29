@@ -1,6 +1,6 @@
 # Zaglebie (Ekstraklasa) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EK](../../ligor/EK.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EK](../../ligor/EK.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -39,9 +39,9 @@ Form (äldst → senast): FVOOOVVF · senaste match 2026-09-20
 
 | Motståndare | M | V-O-F | Mål | Mot marknaden | Kryss mot odds | Senast |
 |---|---|---|---|---|---|---|
-| Pogon Szczecin | 18 | 5-3-10 | 18–23 | −0,13 | −10 pe | 2026-08-29 0-0 (h) |
 | Legia | 17 | 2-1-14 | 12–37 | −0,49 | −19 pe | 2026-08-02 1-3 (b) |
 | Piast Gliwice | 17 | 4-6-7 | 15–21 | −0,10 | +7 pe | 2026-07-27 2-0 (h) |
+| Pogon Szczecin | 17 | 5-3-9 | 18–21 | −0,05 | −9 pe | 2026-08-29 0-0 (h) |
 | Cracovia | 16 | 2-7-7 | 14–20 | −0,48 | +15 pe | 2026-05-03 0-0 (h) |
 | Jagiellonia | 16 | 6-4-6 | 22–18 | +0,11 | −1 pe | 2026-05-23 0-1 (b) |
 | Lech Poznan | 16 | 5-5-6 | 20–23 | +0,31 | +7 pe | 2026-03-15 0-1 (h) |
@@ -59,7 +59,7 @@ Form (äldst → senast): FVOOOVVF · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Leszek Ojrzynski. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

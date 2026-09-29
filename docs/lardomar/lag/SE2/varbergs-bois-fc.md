@@ -1,6 +1,6 @@
 # Varbergs BoIS FC (Superettan) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [SE2](../../ligor/SE2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [SE2](../../ligor/SE2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -40,7 +40,7 @@ Form senaste 8 (äldst → senast): FOFVOFVV · senaste match 2026-09-19
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Victor Salwen. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -54,7 +54,6 @@ Tränare: Victor Salwen. Betyg, mål och assist gäller innevarande säsong enli
 | 2 | Gustav Broman | CB | 25 | Sweden | 166 k€ | – | 2 | 2 | 3/0 |  |
 | 3 | Hampus Zackrisson | CB | 32 | Sweden | 50 k€ | – | 0 | 0 | 0/0 |  |
 | 5 | Emil Hellman | LB | 25 | Sweden | 115 k€ | – | 0 | 1 | 3/0 |  |
-| 6 | Oliver Silverholt | RB | 32 | Sweden | 50 k€ | – | 0 | 1 | 0/0 |  |
 | 15 | Noah Johansson | RB,CM,CB | 23 | Sweden | 181 k€ | – | 1 | 5 | 3/0 |  |
 | 17 | Edvin Tellgren | CB | 21 | Sweden | 254 k€ | – | 2 | 2 | 2/0 |  |
 | 18 | Joakim Lindner | LB | 35 | Sweden | 50 k€ | – | 0 | 0 | 0/0 |  |
@@ -78,3 +77,5 @@ Tränare: Victor Salwen. Betyg, mål och assist gäller innevarande säsong enli
 | 23 | Lucas Sibelius | LM,LW,ST | 24 | Sweden | 175 k€ | – | 0 | 1 | 0/0 |  |
 | 24 | Oliver Brynéus | LW | 28 | Sweden | 50 k€ | – | 0 | 2 | 0/0 |  |
 | 49 | Shanyder Borgelin | ST | 24 | Haiti | 131 k€ | – | 7 | 1 | 2/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Oliver Silverholt (senast 2026-09-29).

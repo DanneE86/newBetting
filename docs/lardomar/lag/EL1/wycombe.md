@@ -1,6 +1,6 @@
 # Wycombe (League One) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -68,7 +68,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-03-14 | Stryk 4944 | Wycombe - Luton | 2 | 60 % | 46 % |
 | 2026-01-24 | Stryk 4937 | Wycombe - Peterborough | 2 | 57 % | 48 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Tom Hounsell. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -82,7 +82,7 @@ Tränare: Tom Hounsell. Betyg, mål och assist gäller innevarande säsong enlig
 | 33 | Joe Wildsmith | GK | 30 | England | 178 k€ | 6,93 | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 2 | Jack Grimmer | RB,CB | 32 | Scotland | 162 k€ | 6,23 | 0 | 0 | 0/0 |  |
-| 3 | Daniel Harvie | LB,LM,LW,LWB | 28 | Scotland | 302 k€ | 6,92 | 1 | 0 | 3/0 |  |
+| 3 | Daniel Harvie | LB,LM,LWB | 28 | Scotland | 302 k€ | 6,92 | 1 | 0 | 3/0 |  |
 | 17 | Dan Casey | CB | 28 | Ireland | 160 k€ | 7,07 | 2 | 0 | 1/0 |  |
 | 22 | Sam Parker | RB | 20 | Wales | 481 k€ | 6,35 | 0 | 0 | 0/0 |  |
 | 26 | Connor Taylor | CB | 24 | England | 304 k€ | 7,15 | 1 | 0 | 0/0 |  |
@@ -95,7 +95,7 @@ Tränare: Tom Hounsell. Betyg, mål och assist gäller innevarande säsong enlig
 | 8 | Caolan Boyd-Munce | CDM,CM | 26 | Northern Ireland | 249 k€ | 6,81 | 0 | 1 | 1/0 |  |
 | 10 | Luke Leahy | CDM,CM,CAM,CB | 33 | England | 259 k€ | – | 0 | 0 | 0/0 |  |
 | 20 | Ewan Henderson | CDM,CAM,CM | 26 | Scotland | 259 k€ | 7,51 | 1 | 4 | 4/0 |  |
-| 21 | Jamie Mullins | CAM,CDM,CM | 21 | Ireland | 435 k€ | 6,20 | 0 | 0 | 0/0 |  |
+| 21 | Jamie Mullins | CAM,CDM,CM | 22 | Ireland | 435 k€ | 6,20 | 0 | 0 | 0/0 |  |
 | 29 | Malik Mothersille | CAM,LW | 22 | England | 474 k€ | 6,55 | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Junior Quitirna | RW,RWB | 26 | Guinea-Bissau | 256 k€ | 6,21 | 0 | 0 | 0/0 |  |

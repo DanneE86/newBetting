@@ -1,6 +1,6 @@
 # Osnabruck (2. Bundesliga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [BL2](../../ligor/BL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [BL2](../../ligor/BL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -49,7 +49,7 @@ Form (äldst → senast): FVFFVVFO · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Timo Schultz. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -60,11 +60,8 @@ Tränare: Timo Schultz. Betyg, mål och assist gäller innevarande säsong enlig
 | | **Målvakter** | | | | | | | | | |
 | 1 | Niklas Sauter | GK | 23 | Germany | 226 k€ | – | 0 | 0 | 0/0 |  |
 | 32 | Jonas Krumrey | GK | 22 | Germany | 1,1 M€ | 6,56 | 0 | 0 | 0/0 |  |
-| 35 | Mats Remberg | Keeper | 20 | Germany | – | – | 0 | 0 | 0/0 |  |
 | 36 | Luca Böggemann | GK | 22 | Germany | 152 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-|  | Ibrahim Touray | Defender | 20 | Germany | 241 k€ | – | 0 | 0 | 0/0 |  |
-|  | Lion Semić | RB | 23 | Germany | 207 k€ | – | 0 | 0 | 0/0 |  |
 | 4 | Joël Abu Hanna | CB | 28 | Israel | 82 k€ | 6,43 | 0 | 0 | 0/0 |  |
 | 20 | Theo Janotta | CB | 23 | Germany | 378 k€ | – | 0 | 0 | 0/0 |  |
 | 24 | Jannik Müller | CB | 32 | Germany | 227 k€ | 6,66 | 0 | 0 | 0/0 |  |
@@ -75,7 +72,6 @@ Tränare: Timo Schultz. Betyg, mål och assist gäller innevarande säsong enlig
 | 42 | Jonathan Gómez | LWB,LB,LM | 23 | USA | 660 k€ | 7,44 | 1 | 0 | 1/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 |  | Jonathan Wensing | RW | 22 | Germany | 541 k€ | – | 0 | 0 | 0/0 |  |
-|  | Robert Tesche | CDM | 39 | Germany | 63 k€ | – | 0 | 0 | 0/0 |  |
 | 6 | Bryan Henning | CDM | 31 | Germany | 92 k€ | 5,86 | 0 | 0 | 0/0 |  |
 | 7 | Daniel-Kofi Kyereh | CM | 30 | Ghana | 210 k€ | 6,36 | 1 | 0 | 0/0 |  |
 | 8 | Leonhard Münst | CAM,CM,CDM,RM | 24 | Germany | 220 k€ | 6,52 | 0 | 1 | 0/0 |  |
@@ -91,3 +87,5 @@ Tränare: Timo Schultz. Betyg, mål och assist gäller innevarande säsong enlig
 | 11 | Robin Meißner | ST | 26 | Germany | 351 k€ | 7,17 | 2 | 0 | 0/0 |  |
 | 19 | Leon Opitz | ST | 21 | Germany | 474 k€ | – | 0 | 0 | 0/0 |  |
 | 22 | Bernd Riesselman | CAM | 21 | Germany | 268 k€ | 6,20 | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (4): Robert Tesche (senast 2026-09-29), Lion Semić (senast 2026-09-29), Mats Remberg (senast 2026-09-29), Ibrahim Touray (senast 2026-09-29).

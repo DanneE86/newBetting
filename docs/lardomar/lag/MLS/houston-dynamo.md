@@ -1,6 +1,6 @@
 # Houston Dynamo (MLS) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -72,7 +72,7 @@ Form (äldst → senast): VVFOOVFO · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Ben Olsen. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -103,9 +103,10 @@ Tränare: Ben Olsen. Betyg, mål och assist gäller innevarande säsong enligt F
 | 24 | Ibrahim Aliyu | RM | 24 | Nigeria | 621 k€ | 6,64 | 2 | 0 | 1/1 |  |
 | 30 | Agustín Bouzat | CDM,CM,CAM,ST | 32 | Argentina | 354 k€ | 6,56 | 1 | 1 | 3/1 |  |
 | | **Anfallare** | | | | | | | | | |
-| 7 | Nelson Quiñónes | LW | 24 | Colombia | 201 k€ | – | 0 | 0 | 0/0 |  |
 | 9 | Lyle Foster | ST,RW | 26 | South Africa | 9,7 M€ | 6,15 | 0 | 0 | 0/0 |  |
 | 17 | Nick Markanich | RW,ST | 26 | Philippines | 232 k€ | 6,23 | 0 | 0 | 0/1 |  |
 | 19 | Mateusz Bogusz | RW,LM,CAM,ST,LW | 25 | Poland | 2,9 M€ | 7,10 | 6 | 1 | 3/0 |  |
 | 20 | Guilherme Augusto | LW,ST,CAM | 31 | Brazil | 1,6 M€ | 7,88 | 14 | 6 | 3/0 |  |
 | 23 | Duncan McGuire | ST | 25 | USA | 1,5 M€ | 6,27 | 2 | 0 | 1/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Nelson Quiñónes (senast 2026-09-29).

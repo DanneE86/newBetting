@@ -1,12 +1,12 @@
 # Conference League (ECL) – lärdomar
 
-Genererad 2026-09-28 av `node scripts/analyze-learnings.mjs`. Cup: lagen hör till sina ligor, se deras lagfiler. Alla matcher: `data/matcher/ECL.csv`.
+Genererad 2026-09-29 av `node scripts/analyze-learnings.mjs`. Cup: lagen hör till sina ligor, se deras lagfiler. Alla matcher: `data/matcher/ECL.csv`.
 
 ## Lärdomar i korthet
 
 - Utan odds finns ingen marknad att lära av. Oddsen vi ser före varje match sparas nu (`pre_*` i matcherfilen), så marknadstestet kan köras här efter cirka 150 matcher.
 
-## Tabell nu (FotMob, 2026-09-28)
+## Tabell nu (FotMob, 2026-09-29)
 
 | # | Lag | M | V | O | F | Mål | +/− | P |
 |---|---|---|---|---|---|---|---|---|
@@ -23,7 +23,7 @@ Genererad 2026-09-28 av `node scripts/analyze-learnings.mjs`. Cup: lagen hör ti
 | 11 | FC Midtjylland | 0 | 0 | 0 | 0 | 0-0 | 0 | 0 |
 | 12 | FC Nordsjælland | 0 | 0 | 0 | 0 | 0-0 | 0 | 0 |
 | 13 | FC Twente | 0 | 0 | 0 | 0 | 0-0 | 0 | 0 |
-| 14 | FK Crvena Zvezda | 0 | 0 | 0 | 0 | 0-0 | 0 | 0 |
+| 14 | Red Star Belgrade | 0 | 0 | 0 | 0 | 0-0 | 0 | 0 |
 | 15 | Kauno Zalgiris | 0 | 0 | 0 | 0 | 0-0 | 0 | 0 |
 | 16 | SC Freiburg | 0 | 0 | 0 | 0 | 0-0 | 0 | 0 |
 | 17 | KAA Gent | 0 | 0 | 0 | 0 | 0-0 | 0 | 0 |

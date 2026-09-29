@@ -1,6 +1,6 @@
 # Napoli (Serie A) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -41,8 +41,8 @@ Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 l
 | Rasmus Højlund | 14 % | 2 / 79 | 1,50 / 2,05 | −0,13 / +0,23 |
 | Costantino Favasuli | 12 % | 0 / 81 | – / 2,04 | – / +0,22 |
 | Scott McTominay | 11 % | 5 / 76 | 1,60 / 2,07 | −0,04 / +0,24 |
-| Kevin De Bruyne | 8 % | 0 / 81 | – / 2,04 | – / +0,22 |
-| Matteo Politano | 8 % | 3 / 78 | 2,00 / 2,04 | +0,34 / +0,21 |
+| Matteo Politano | 7 % | 3 / 78 | 2,00 / 2,04 | +0,34 / +0,21 |
+| Kevin De Bruyne | 7 % | 0 / 81 | – / 2,04 | – / +0,22 |
 | David Neres | 5 % | 10 / 71 | 1,70 / 2,08 | +0,02 / +0,25 |
 
 Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
@@ -55,10 +55,10 @@ Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: s
 | Inter | 17 | 3-6-8 | 22–27 | −0,28 | +8 pe | 2026-09-05 2-3 (b) |
 | Atalanta | 16 | 8-1-7 | 29–29 | +0,16 | −22 pe | 2026-02-22 1-2 (b) |
 | Fiorentina | 16 | 9-4-3 | 31–18 | +0,15 | −1 pe | 2026-09-20 1-1 (b) |
-| Juventus | 16 | 8-2-6 | 24–22 | +0,38 | −17 pe | 2026-01-25 0-3 (b) |
 | Roma | 16 | 8-6-2 | 25–14 | +0,25 | +9 pe | 2026-02-15 2-2 (h) |
 | Udinese | 16 | 11-4-1 | 37–15 | +0,24 | +2 pe | 2026-05-24 1-0 (h) |
 | Genoa | 15 | 9-5-1 | 31–15 | +0,05 | +10 pe | 2026-08-22 2-0 (b) |
+| Juventus | 15 | 8-2-5 | 23–19 | +0,47 | −16 pe | 2026-01-25 0-3 (b) |
 | Lazio | 15 | 7-2-6 | 23–17 | −0,08 | −14 pe | 2026-04-18 0-2 (h) |
 | Milan | 15 | 6-4-5 | 16–18 | +0,04 | −2 pe | 2026-04-06 1-0 (h) |
 | Torino | 15 | 9-4-2 | 20–9 | +0,12 | +2 pe | 2026-03-06 2-1 (h) |
@@ -91,7 +91,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-11-09 | Europa 2521 | Bologna - Napoli | 1 | 36 % | 36 % |
 | 2025-09-28 | Europa 2509 | Milan - Napoli | 1 | 25 % | 24 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Massimiliano Allegri. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

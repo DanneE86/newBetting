@@ -1,6 +1,6 @@
 # Rio Ave (Primeira Liga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [PT](../../ligor/PT.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [PT](../../ligor/PT.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -61,7 +61,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 |---|---|---|---|---|---|
 | 2025-12-28 | Europa 2535 | Sporting Lissabon - Rio Ave | 1 | 2 % | 3 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Sotiris Sylaidopoulos. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -92,7 +92,7 @@ Tränare: Sotiris Sylaidopoulos. Betyg, mål och assist gäller innevarande säs
 | 5 | Andreas-Richardos Ntoi | CM,CDM,CB,RB | 23 | Greece | 2,3 M€ | 6,17 | 0 | 0 | 1/1 |  |
 | 8 | Ryan Guilherme | CDM | 23 | Brazil | – | 5,79 | 0 | 0 | 0/0 | skadad, åter Day to day |
 | 10 | Brandon Aguilera | CM | 23 | Costa Rica | 1,2 M€ | – | 0 | 0 | 0/0 | skadad, åter Early December 2026 |
-| 19 | Malik Sellouki | RM,RW,ST,LM,CAM | 26 | France | 517 k€ | 6,16 | 0 | 0 | 0/0 |  |
+| 19 | Malik Sellouki | RM,ST,LM,CAM,RW | 26 | France | 517 k€ | 6,16 | 0 | 0 | 0/0 |  |
 | 20 | João Tomé | RM,RB | 23 | Portugal | 460 k€ | 6,37 | 0 | 0 | 0/0 |  |
 | 44 | Tamás Nikitscher | CDM,CM | 26 | Hungary | 709 k€ | 6,75 | 0 | 0 | 2/0 |  |
 | 54 | Giorgos Liavas | CM,RB,CDM | 25 | Greece | 640 k€ | 6,06 | 0 | 0 | 1/0 |  |

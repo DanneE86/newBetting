@@ -1,6 +1,6 @@
 # Brest (Ligue 1) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [L1](../../ligor/L1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [L1](../../ligor/L1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -39,8 +39,8 @@ Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 l
 | Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
 |---|---|---|---|---|
 | Kamory Doumbia | 15 % | 8 / 65 | 0,38 / 1,40 | −0,63 / +0,12 |
-| Ludovic Ajorque | 13 % | 0 / 73 | – / 1,29 | – / +0,04 |
-| Romain Del Castillo | 10 % | 7 / 66 | 1,29 / 1,29 | −0,20 / +0,06 |
+| Ludovic Ajorque | 14 % | 0 / 73 | – / 1,29 | – / +0,04 |
+| Romain Del Castillo | 9 % | 7 / 66 | 1,29 / 1,29 | −0,20 / +0,06 |
 | Pathé Mboup | 8 % | 2 / 71 | 3,00 / 1,24 | +1,54 / −0,01 |
 | Remy Labeau Lascary | 7 % | 2 / 71 | 0,00 / 1,32 | −1,12 / +0,07 |
 | Joris Chotard | 5 % | 0 / 73 | – / 1,29 | – / +0,04 |
@@ -77,7 +77,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 |---|---|---|---|---|---|
 | 2025-08-17 | Europa 2497 | Brest - Lille | X | 42 % | 35 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Julien Lachuer. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

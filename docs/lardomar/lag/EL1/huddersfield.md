@@ -1,6 +1,6 @@
 # Huddersfield (League One) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -75,7 +75,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-08-30 | Stryk 4916 | Barnsley - Huddersfield | 1 | 42 % | 38 % |
 | 2026-08-29 | Stryk 4968 | Cambridge - Huddersfield | 2 ✓ | 49 % | 37 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Martin Drury. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -99,7 +99,7 @@ Tränare: Martin Drury. Betyg, mål och assist gäller innevarande säsong enlig
 | 4 | Ryan Ledson | CDM,CM | 29 | England | 1,0 M€ | 7,26 | 0 | 3 | 1/0 |  |
 | 7 | Lynden Gooch | RWB,RM,CDM,RB,LM | 30 | USA | 376 k€ | – | 0 | 0 | 0/0 |  |
 | 8 | Archie Collins | CDM,CM | 27 | England | 529 k€ | 6,65 | 0 | 0 | 0/0 |  |
-| 10 | Marcus Harness | CAM,CM,RW,CDM,LWB | 30 | England | 573 k€ | 7,26 | 1 | 0 | 0/0 |  |
+| 10 | Marcus Harness | CAM,CM,CDM,RW,LWB | 30 | England | 573 k€ | 7,26 | 1 | 0 | 0/0 |  |
 | 14 | Ethan Brierley | CDM | 22 | England | 550 k€ | – | 0 | 0 | 0/0 |  |
 | 16 | Herbie Kane | CM,CDM | 27 | England | 344 k€ | – | 0 | 0 | 0/0 |  |
 | 17 | Marcus McGuane | CDM,CM | 27 | England | 286 k€ | – | 0 | 0 | 0/0 |  |

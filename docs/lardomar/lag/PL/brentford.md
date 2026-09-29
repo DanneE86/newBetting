@@ -1,6 +1,6 @@
 # Brentford (Premier League) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -115,7 +115,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-10-05 | Europa 2511 | Brentford - Manchester City | 2 | 10 % | 20 % |
 | 2025-08-17 | Europa 2497 | Nottingham - Brentford | 1 | 22 % | 27 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Keith Andrews. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -128,7 +128,7 @@ Tränare: Keith Andrews. Betyg, mål och assist gäller innevarande säsong enli
 | 12 | Hákon Rafn Valdimarsson | GK | 24 | Iceland | 2,3 M€ | – | 0 | 0 | 0/0 |  |
 | 31 | Ellery Balcombe | GK | 26 | England | 484 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Aaron Hickey | RB,LB | 24 | Scotland | 14,6 M€ | 6,45 | 0 | 0 | 0/0 |  |
+| 2 | Aaron Hickey | RB,LB,RWB | 24 | Scotland | 14,6 M€ | 6,45 | 0 | 0 | 0/0 |  |
 | 3 | Rico Henry | LB | 29 | Jamaica | 11,0 M€ | – | 0 | 0 | 0/0 |  |
 | 4 | Sepp van den Berg | CB | 24 | Netherlands | 35,9 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 20 | Kristoffer Ajer | CB,LB | 28 | Norway | 16,8 M€ | 7,15 | 0 | 0 | 1/0 |  |
@@ -138,7 +138,7 @@ Tränare: Keith Andrews. Betyg, mål och assist gäller innevarande säsong enli
 | 33 | Michael Kayode | RB,RWB | 22 | Italy | 43,3 M€ | 6,89 | 1 | 0 | 0/0 |  |
 | 36 | Ji-Soo Kim | CB | 21 | South Korea | 1,5 M€ | – | 0 | 0 | 0/0 |  |
 | 44 | Jannik Schuster | CB | 20 | Austria | 2,0 M€ | 7,23 | 0 | 1 | 0/0 |  |
-| 48 | Benjamin Fredrick | CB,RB,RWB | 21 | Nigeria | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 48 | Benjamin Fredrick | CB,RB | 21 | Nigeria | 1,0 M€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 6 | Yehor Yarmoliuk | CDM,CM,CAM | 22 | Ukraine | 31,9 M€ | 6,76 | 0 | 1 | 1/0 |  |
 | 8 | Mathias Jensen | CAM,CDM,CM,RW | 30 | Denmark | 8,1 M€ | 7,29 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
@@ -153,5 +153,5 @@ Tränare: Keith Andrews. Betyg, mål och assist gäller innevarande säsong enli
 | 9 | Igor Thiago | ST | 25 | Brazil | 28,2 M€ | 6,84 | 1 | 0 | 2/0 |  |
 | 11 | Dango Ouattara | RW,LW,ST | 24 | Burkina Faso | 35,8 M€ | 6,83 | 0 | 0 | 0/0 |  |
 | 13 | Callum Wilson | ST | 34 | England | 2,7 M€ | – | 0 | 0 | 0/0 |  |
-| 19 | Jaidon Anthony | LW,LM,RW,CAM | 26 | England | 18,0 M€ | 6,94 | 1 | 0 | 1/0 |  |
+| 19 | Jaidon Anthony | LW,RW,LM,CAM | 26 | England | 18,0 M€ | 6,94 | 1 | 0 | 1/0 |  |
 | 39 | Gustavo Nunes | LW | 20 | Brazil | 9,3 M€ | – | 0 | 0 | 0/0 |  |

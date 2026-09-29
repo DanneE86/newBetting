@@ -1,6 +1,6 @@
 # Talleres Cordoba (Liga Profesional) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -68,7 +68,7 @@ Form (äldst → senast): VFFOOFVF · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Omar De Felippe. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -95,7 +95,7 @@ Tränare: Omar De Felippe. Betyg, mål och assist gäller innevarande säsong en
 | 44 | Santiago Fernández | CB | 21 | Argentina | 1,8 M€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 5 | Matías Galarza | CDM,CM | 24 | Argentina | 3,8 M€ | – | 0 | 0 | 0/0 |  |
-| 8 | Federico Fattori | CDM,CM,CB | 34 | Argentina | 807 k€ | – | 0 | 0 | 0/0 |  |
+| 8 | Federico Fattori | CM,CDM,CB | 34 | Argentina | 807 k€ | – | 0 | 0 | 0/0 |  |
 | 13 | Juan Sforza | CDM,CM | 24 | Argentina | 1,3 M€ | – | 0 | 0 | 0/0 |  |
 | 18 | Franco Cristaldo | CAM,RW | 30 | Argentina | 1,7 M€ | – | 0 | 0 | 0/0 |  |
 | 21 | Matías Gómez | CM | 20 | Argentina | – | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
@@ -107,7 +107,7 @@ Tränare: Omar De Felippe. Betyg, mål och assist gäller innevarande säsong en
 | | **Anfallare** | | | | | | | | | |
 | 7 | Diego Valoyes | RW | 30 | Colombia | 822 k€ | – | 0 | 0 | 0/0 |  |
 | 9 | Agustín Álvarez | ST | 25 | Uruguay | 1,7 M€ | – | 0 | 0 | 0/0 |  |
-| 11 | Valentín Depietri | LW,ST,RW | 25 | Argentina | 380 k€ | – | 0 | 0 | 0/0 |  |
+| 11 | Valentín Depietri | ST,LW,RW | 25 | Argentina | 380 k€ | – | 0 | 0 | 0/0 |  |
 | 24 | Ignacio Alastra | Attacker | 18 | Argentina | 835 k€ | – | 0 | 0 | 0/0 |  |
 | 36 | Emiliano Chiavassa | RW | 20 | Argentina | 645 k€ | – | 0 | 0 | 0/0 |  |
 | 37 | Rick | LW,RW,ST,LM,CAM | 27 | Brazil | 1,6 M€ | – | 0 | 0 | 0/0 |  |

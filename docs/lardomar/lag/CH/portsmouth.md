@@ -1,6 +1,6 @@
 # Portsmouth (Championship) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -86,7 +86,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-08-29 | Stryk 4968 | Bristol City - Portsmouth | 1 | 19 % | 29 % |
 | 2026-01-01 | Europa 2536 | Bristol City - Portsmouth | 1 | 13 % | 18 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: John Mousinho. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -112,7 +112,7 @@ Tränare: John Mousinho. Betyg, mål och assist gäller innevarande säsong enli
 | | **Mittfältare** | | | | | | | | | |
 | 7 | Marlon Pack | CDM | 35 | England | 274 k€ | 6,92 | 0 | 0 | 1/0 |  |
 | 8 | John Swift | CAM,CDM | 31 | England | 451 k€ | 6,44 | 0 | 0 | 0/0 |  |
-| 18 | Márk Kosznovszky | CDM,RW | 24 | Hungary | 1,0 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 18 | Márk Kosznovszky | CDM | 24 | Hungary | 1,0 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
 | 19 | Rocco Shein | CM,CDM,LM | 23 | Estonia | 1,9 M€ | 6,51 | 0 | 0 | 1/0 |  |
 | 27 | Odin Bailey | CDM,CM,CAM,LM | 26 | England | 598 k€ | 5,95 | 0 | 0 | 0/0 |  |
 | 37 | Iyad Mohamed | CM | 25 | Comoros | 360 k€ | 6,54 | 0 | 0 | 0/0 |  |

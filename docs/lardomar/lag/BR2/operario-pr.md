@@ -1,6 +1,6 @@
 # Operário PR (Brasileirão Série B) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [BR2](../../ligor/BR2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [BR2](../../ligor/BR2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -44,59 +44,43 @@ Form senaste 8 (äldst → senast): FOOVVOVO · senaste match 2026-09-26
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Luizinho Lopes. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-|  | Paulo Guilherme | Keeper | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 1 | Elias Curzel | GK | 31 | Brazil | 138 k€ | – | 0 | 0 | 0/0 |  |
 | 12 | Talles | GK | 29 | Brazil | 138 k€ | – | 0 | 0 | 0/0 |  |
 | 33 | Vágner | GK | 40 | Brazil | 209 k€ | – | 0 | 0 | 0/0 |  |
 | 41 | Diego Monteiro | GK | 26 | Brazil | 136 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 |  | André Dantas | CB | 27 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Anthony | Defender | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Kayo | Defender | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 2 | Doka | RB | 26 | Brazil | 394 k€ | – | 0 | 0 | 0/0 |  |
 | 6 | Moraes | LB,LW | 28 | Brazil | 213 k€ | – | 0 | 0 | 0/0 |  |
 | 16 | Miranda | CB | 26 | Brazil | 577 k€ | – | 0 | 0 | 0/0 |  |
-| 17 | Nicolas | LB | 26 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 22 | José Cuenú | CB | 31 | Colombia | 171 k€ | – | 0 | 0 | 0/0 |  |
-| 23 | João Gabriel | RWB | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 26 | Maguinho | RB,RM | 34 | Brazil | 276 k€ | – | 0 | 0 | 0/0 |  |
 | 27 | Gabriel Feliciano | LB | 25 | Brazil | 352 k€ | – | 0 | 0 | 0/0 |  |
-| 34 | Renan Gustavo | Defender | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 43 | Joseph | CB | 31 | Brazil | 195 k€ | – | 0 | 0 | 0/0 |  |
 | 44 | Klaus | CB | 32 | Brazil | 321 k€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-|  | Jaaziel | Midfielder | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Kaua Lucas | Midfielder | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Marcos Otávio | Midfielder | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 3 | Charles | CB | 31 | Brazil | 138 k€ | – | 0 | 0 | 0/0 |  |
-| 5 | Índio | CDM,CM | 33 | Brazil | 194 k€ | – | 0 | 0 | 0/0 |  |
+| 5 | Índio | CDM,CM,CB | 33 | Brazil | 194 k€ | – | 0 | 0 | 0/0 |  |
 | 8 | Juan Zuluaga | CM | 33 | Colombia | 327 k€ | – | 0 | 0 | 0/0 |  |
 | 10 | Boschilia | CAM,CM,RW | 30 | Brazil | 1,1 M€ | – | 0 | 0 | 0/0 |  |
 | 20 | Vinícius Diniz | CDM,CM,CAM | 27 | Brazil | 472 k€ | – | 0 | 0 | 0/0 |  |
-| 21 | Brenno | CDM | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 39 | Matheus Trindade | CM,CDM,CB | 30 | Brazil | 194 k€ | – | 0 | 0 | 0/0 |  |
 | 88 | Neto Paraíba | CM,CDM | 34 | Brazil | 192 k€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-|  | Bruno Iago | Attacker | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Gabriel Cardozo | Attacker | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Germano | Attacker | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Jhow Torres | Attacker | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Jonas | Attacker | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Leonardo Erig | Attacker | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 7 | Ángel Torres | RW | 26 | Colombia | 363 k€ | – | 0 | 0 | 0/0 |  |
 | 9 | Vinícius Mingotti | ST | 26 | Brazil | 208 k€ | – | 0 | 0 | 0/0 |  |
 | 11 | Aylon | LW,RW,LM | 34 | Brazil | 308 k€ | – | 0 | 0 | 0/0 |  |
 | 14 | Hildeberto | RW,LW,RM | 30 | Cabo Verde | 228 k€ | – | 0 | 0 | 0/0 |  |
 | 25 | Caio Dantas | ST | 33 | Brazil | 234 k€ | – | 0 | 0 | 0/0 |  |
-| 28 | Dudu Mosconi | Attacker | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 30 | Pedro Vilhena | LW | 24 | Brazil | 352 k€ | – | 0 | 0 | 0/0 |  |
-| 34 | João Victor | Attacker | 17 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 77 | Maxwell | LW,RW,LM,ST | 31 | Brazil | 182 k€ | – | 0 | 0 | 0/0 |  |
 | 92 | Pablo | ST | 34 | Brazil | 300 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (18): Nicolas (senast 2026-09-29), Dudu Mosconi (senast 2026-09-29), Kayo (senast 2026-09-28), João Gabriel (senast 2026-09-29), Brenno (senast 2026-09-29), Gabriel Cardozo (senast 2026-09-28), Renan Gustavo (senast 2026-09-29), Jhow Torres (senast 2026-09-28), Jaaziel (senast 2026-09-28), Germano (senast 2026-09-28), João Victor (senast 2026-09-29), Marcos Otávio (senast 2026-09-28), Kaua Lucas (senast 2026-09-28), Jonas (senast 2026-09-28), Paulo Guilherme (senast 2026-09-28), Leonardo Erig (senast 2026-09-28), Anthony (senast 2026-09-28), Bruno Iago (senast 2026-09-28).

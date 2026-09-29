@@ -1,6 +1,6 @@
 # Ajax (Eredivisie) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [ED](../../ligor/ED.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [ED](../../ligor/ED.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -39,9 +39,9 @@ Form (äldst → senast): OVOVFVVO · senaste match 2026-09-19
 |---|---|---|---|---|---|---|
 | Heerenveen | 17 | 12-4-1 | 50–17 | +0,06 | +7 pe | 2026-08-16 2-2 (h) |
 | AZ Alkmaar | 16 | 3-4-9 | 19–21 | −0,95 | +2 pe | 2026-02-08 1-1 (b) |
-| For Sittard | 16 | 14-2-0 | 56–10 | +0,33 | −2 pe | 2026-09-12 5-1 (b) |
 | PSV Eindhoven | 16 | 6-6-4 | 29–26 | +0,04 | +15 pe | 2026-09-05 1-3 (h) |
 | Feyenoord | 15 | 9-2-4 | 28–24 | +0,28 | −9 pe | 2026-03-22 1-1 (b) |
+| For Sittard | 15 | 13-2-0 | 54–10 | +0,32 | −1 pe | 2026-09-12 5-1 (b) |
 | Utrecht | 15 | 8-2-5 | 32–19 | −0,37 | −6 pe | 2026-05-10 1-2 (h) |
 | Sparta Rotterdam | 14 | 11-3-0 | 33–12 | +0,30 | +4 pe | 2026-03-14 4-0 (h) |
 | Zwolle | 14 | 12-2-0 | 34–8 | +0,32 | −0 pe | 2026-08-09 2-0 (b) |
@@ -57,7 +57,7 @@ Form (äldst → senast): OVOVFVVO · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Míchel. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -73,7 +73,7 @@ Tränare: Míchel. Betyg, mål och assist gäller innevarande säsong enligt Fot
 | 3 | Anton Gaaei | RB | 23 | Denmark | 3,6 M€ | 7,32 | 0 | 0 | 1/0 |  |
 | 5 | Owen Wijndal | LB,LWB | 26 | Netherlands | 1,9 M€ | 7,04 | 0 | 0 | 0/0 |  |
 | 6 | Thilo Kehrer | CB | 30 | Germany | 12,7 M€ | 7,82 | 1 | 1 | 0/0 |  |
-| 12 | Caio Henrique | LB,CB,LWB,LM | 29 | Brazil | 10,3 M€ | 6,94 | 0 | 1 | 1/0 |  |
+| 12 | Caio Henrique | LB,CB,LWB | 29 | Brazil | 10,3 M€ | 6,94 | 0 | 1 | 1/0 |  |
 | 15 | Youri Baas | CB,LB | 23 | Netherlands | 16,3 M€ | 7,32 | 1 | 0 | 2/0 |  |
 | 17 | Daley Blind | CB | 36 | Netherlands | 879 k€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
 | 21 | Jofre Torrents | LB | 19 | Spain | 1,7 M€ | – | 0 | 0 | 0/0 |  |
@@ -83,7 +83,7 @@ Tränare: Míchel. Betyg, mål och assist gäller innevarande säsong enligt Fot
 |  | Yves Bissouma | CDM,CM | 30 | Mali | 10,8 M€ | – | 0 | 0 | 0/0 |  |
 | 4 | Sofyan Amrabat | CDM,CM | 30 | Morocco | 9,2 M€ | 6,96 | 0 | 0 | 0/0 |  |
 | 8 | Julian Brandt | CAM,CM | 30 | Germany | 10,3 M€ | 7,58 | 4 | 0 | 0/0 |  |
-| 10 | Oscar Gloukh | CAM,CM,RW,LW,ST | 22 | Israel | 13,2 M€ | 7,77 | 1 | 4 | 1/0 |  |
+| 10 | Oscar Gloukh | CAM,CM,ST,RW,LW | 22 | Israel | 13,2 M€ | 7,77 | 1 | 4 | 1/0 |  |
 | 18 | Davy Klaassen | CM,CDM,CAM | 33 | Netherlands | 1,2 M€ | 7,26 | 3 | 0 | 2/0 |  |
 | 24 | Jorthy Mokio | CM,CDM,LB,CB | 18 | DR Congo | 9,1 M€ | 7,08 | 1 | 0 | 1/0 |  |
 | 68 | Abdellah Ouazane | CAM,CM,LW,ST,RW | 17 | Morocco | 2,0 M€ | 6,70 | 1 | 0 | 2/0 |  |

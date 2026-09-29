@@ -1,6 +1,6 @@
 # Kashima Antlers (J1 League) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [JP1](../../ligor/JP1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [JP1](../../ligor/JP1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -43,9 +43,9 @@ Form (äldst → senast): VVVVFFFO · senaste match 2026-09-19
 |---|---|---|---|---|---|---|
 | Kawasaki Frontale | 16 | 3-4-9 | 18–27 | −0,34 | −2 pe | 2026-09-19 3-3 (b) |
 | Urawa Reds | 16 | 4-8-4 | 16–14 | −0,24 | +23 pe | 2026-09-06 0-1 (h) |
-| Vissel Kobe | 16 | 6-4-6 | 22–22 | −0,05 | −2 pe | 2026-09-11 1-2 (b) |
 | Cerezo Osaka | 15 | 11-3-1 | 24–9 | +0,87 | −8 pe | 2025-09-23 3-1 (h) |
 | Nagoya Grampus | 15 | 9-3-3 | 21–8 | +0,51 | −9 pe | 2026-08-15 2-1 (h) |
+| Vissel Kobe | 15 | 5-4-6 | 17–22 | −0,16 | −1 pe | 2026-09-11 1-2 (b) |
 | Yokohama F. Marinos | 15 | 8-0-7 | 30–32 | +0,20 | −25 pe | 2026-08-07 4-3 (b) |
 | FC Tokyo | 14 | 8-2-4 | 22–16 | +0,30 | −14 pe | 2025-08-10 1-0 (b) |
 | Gamba Osaka | 14 | 6-6-2 | 19–11 | +0,11 | +16 pe | 2025-10-05 0-0 (h) |
@@ -61,7 +61,7 @@ Form (äldst → senast): VVVVFFFO · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Toru Oniki. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -79,7 +79,6 @@ Tränare: Toru Oniki. Betyg, mål och assist gäller innevarande säsong enligt 
 | 5 | Ikuma Sekigawa | CB | 26 | Japan | 594 k€ | 7,12 | 1 | 0 | 1/0 |  |
 | 7 | Ryoya Ogawa | LB | 29 | Japan | 703 k€ | 6,98 | 0 | 1 | 1/0 |  |
 | 19 | Sho Omori | LB,LWB | 27 | Japan | 286 k€ | 7,09 | 0 | 1 | 0/0 |  |
-| 23 | Keisuke Tsukui | CB | 22 | Japan | 438 k€ | 6,29 | 0 | 1 | 1/0 |  |
 | 25 | Ryuta Koike | RB,LB | 31 | Japan | 169 k€ | 6,36 | 0 | 0 | 0/0 |  |
 | 35 | Anthony Motosuna | CB | 17 | Japan | – | – | 0 | 0 | 0/0 |  |
 | 37 | Rikuto Hirose | RB,LW,RW | 31 | Japan | 180 k€ | 6,78 | 0 | 0 | 2/0 |  |
@@ -90,6 +89,7 @@ Tränare: Toru Oniki. Betyg, mål och assist gäller innevarande säsong enligt 
 | 10 | Gaku Shibasaki | CM,CDM | 34 | Japan | 176 k€ | 6,89 | 0 | 1 | 0/0 |  |
 | 14 | Yuta Higuchi | CM | 29 | Japan | 354 k€ | – | 0 | 0 | 0/0 |  |
 | 17 | José Elber | LM | 34 | Brazil | 238 k€ | 7,28 | 0 | 1 | 1/0 |  |
+| 23 | Keisuke Tsukui | RB | 22 | Japan | 438 k€ | 6,29 | 0 | 1 | 1/0 |  |
 | 24 | Haruki Hayashi | LM | 22 | Japan | – | 6,26 | 0 | 0 | 0/0 |  |
 | 27 | Yuta Matsumura | RM,LM | 25 | Japan | 483 k€ | 7,15 | 1 | 2 | 0/0 |  |
 | 28 | Yugo Okawa | Midfielder | 19 | Japan | – | – | 0 | 0 | 0/0 |  |

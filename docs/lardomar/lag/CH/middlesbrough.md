@@ -1,6 +1,6 @@
 # Middlesbrough (Championship) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -89,7 +89,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-03-08 | Europa 2555 | Queens Park Rangers - Middlesbrough | 2 ✓ | 63 % | 51 % |
 | 2026-01-01 | Europa 2536 | Derby - Middlesbrough | 1 | 46 % | 38 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Kim Hellberg. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -123,9 +123,9 @@ Tränare: Kim Hellberg. Betyg, mål och assist gäller innevarande säsong enlig
 | 28 | Law McCabe | CDM,CM,LW | 20 | England | 1,1 M€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Will Lankshear | ST | 21 | England | 4,8 M€ | 7,40 | 6 | 0 | 2/0 |  |
-| 9 | Tommy Conway | ST,CAM,LW | 24 | Scotland | 10,2 M€ | 6,66 | 0 | 2 | 0/0 |  |
+| 9 | Tommy Conway | ST,LW,CAM | 24 | Scotland | 10,2 M€ | 6,66 | 0 | 2 | 0/0 |  |
 | 11 | Amario Cozier-Duberry | RW,RM | 21 | England | 2,5 M€ | 8,29 | 2 | 1 | 0/0 |  |
 | 13 | David Strelec | ST | 25 | Slovakia | 5,4 M€ | – | 0 | 0 | 0/0 |  |
 | 16 | Jeremy Sarmiento | LW,LM,CAM | 24 | Ecuador | 3,1 M€ | 6,76 | 1 | 0 | 0/0 |  |
 | 17 | Micah Hamilton | LW,CAM | 22 | England | 1,5 M€ | – | 0 | 0 | 0/0 |  |
-| 22 | Kyle Joseph | LW,ST,RW,CAM | 25 | Scotland | 1,4 M€ | 6,53 | 0 | 0 | 0/0 |  |
+| 22 | Kyle Joseph | ST,LW,RW,CAM | 25 | Scotland | 1,4 M€ | 6,53 | 0 | 0 | 0/0 |  |

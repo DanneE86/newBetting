@@ -1,6 +1,6 @@
 # Tottenham (Premier League) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -111,7 +111,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-10-26 | Europa 2517 | Everton - Tottenham | 2 ✓ | 27 % | 29 % |
 | 2025-10-19 | Europa 2515 | Tottenham - Aston Villa | 2 | 47 % | 42 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Roberto De Zerbi. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -124,7 +124,7 @@ Tränare: Roberto De Zerbi. Betyg, mål och assist gäller innevarande säsong e
 | 39 | Martin Dúbravka | GK | 37 | Slovakia | 774 k€ | – | 0 | 0 | 0/0 |  |
 | 40 | Brandon Austin | GK | 27 | England | 681 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 3 | Andrew Robertson | LB | 32 | Scotland | 6,7 M€ | 6,82 | 0 | 1 | 0/0 |  |
+| 3 | Andrew Robertson | LB,LWB | 32 | Scotland | 6,7 M€ | 6,82 | 0 | 1 | 0/0 |  |
 | 4 | Tosin Adarabioyo | CB | 29 | England | 17,1 M€ | – | 0 | 0 | 0/0 |  |
 | 5 | Marcos Senesi | CB | 29 | Argentina | 15,2 M€ | 6,98 | 0 | 0 | 0/0 |  |
 | 6 | Jan Paul van Hecke | CB | 26 | Netherlands | 43,4 M€ | 7,30 | 1 | 0 | 1/0 |  |
@@ -143,7 +143,6 @@ Tränare: Roberto De Zerbi. Betyg, mål och assist gäller innevarande säsong e
 | 21 | Dejan Kulusevski | ST | 26 | Sweden | 36,6 M€ | – | 0 | 0 | 0/0 | osäker |
 | 30 | Rodrigo Bentancur | CDM,CM,CAM | 29 | Uruguay | 15,4 M€ | 6,70 | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 9 | Richarlison | ST,LW | 29 | Brazil | 21,6 M€ | 5,77 | 0 | 0 | 0/0 |  |
 | 11 | Mathys Tel | LW,ST,LM | 21 | France | 29,3 M€ | 6,34 | 0 | 0 | 0/0 |  |
 | 17 | Sávio | RW,LW | 22 | Brazil | 40,4 M€ | 7,23 | 0 | 0 | 0/0 |  |
 | 19 | Dominic Solanke | ST | 29 | England | 28,4 M€ | 5,96 | 0 | 0 | 0/0 |  |
@@ -151,3 +150,5 @@ Tränare: Roberto De Zerbi. Betyg, mål och assist gäller innevarande säsong e
 | 22 | Omar Marmoush | ST,LW | 27 | Egypt | 44,5 M€ | 6,49 | 0 | 0 | 0/0 |  |
 | 27 | Mykhaylo Mudryk | LW | 25 | Ukraine | 30,6 M€ | 6,01 | 0 | 0 | 0/0 | skadad, åter Early November 2026 |
 | 28 | Wilson Odobert | RW,LW,CAM | 21 | France | 19,5 M€ | – | 0 | 0 | 0/0 | skadad, åter Early November 2026 |
+
+Har lämnat truppen sedan vi började spara (1): Richarlison (senast 2026-09-28).

@@ -1,6 +1,6 @@
 # CRB (Brasileirão Série B) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [BR2](../../ligor/BR2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [BR2](../../ligor/BR2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -42,59 +42,45 @@ Form senaste 8 (äldst → senast): OVFVVFVF · senaste match 2026-09-20
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Fábio Matias. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-|  | Cândido | Keeper | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 1 | Vitor Caetano | GK | 27 | Brazil | 305 k€ | – | 0 | 0 | 0/0 |  |
 | 12 | Matheus Albino | GK | 31 | Brazil | 320 k€ | – | 0 | 0 | 0/0 |  |
 | 23 | Fábio Henrique | Keeper | 23 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-|  | Anderson | Defender | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Cauã Ávila | Defender | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
 |  | Darlisson | CB | 22 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Heitor Brissantt | Defender | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 2 | Kevin | RB,RWB | 29 | Brazil | 207 k€ | – | 0 | 0 | 0/0 |  |
 | 6 | Reverson | LB | 29 | Brazil | 177 k€ | – | 0 | 0 | 0/0 |  |
-| 14 | João Pin | Defender | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 22 | Bressan | CB | 33 | Brazil | 266 k€ | – | 0 | 0 | 0/0 |  |
 | 27 | Fábio Alemão | CB | 29 | Brazil | 192 k€ | – | 0 | 0 | 0/0 |  |
-| 31 | Ruy | Defender | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 32 | Hereda | RB | 28 | Brazil | 384 k€ | – | 0 | 0 | 0/0 |  |
-| 34 | Lyncon | CB | 21 | Brazil | 341 k€ | – | 0 | 0 | 0/0 |  |
 | 36 | Lucas Lovat | LB,LWB | 29 | Brazil | 277 k€ | – | 0 | 0 | 0/0 |  |
 | 44 | Henri | CB | 24 | Brazil | 1,1 M€ | – | 0 | 0 | 0/0 |  |
-| 60 | Maycon | Defender | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 77 | Léo Campos | LB | 34 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-|  | Anderson Santos | Midfielder | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Cauã Carvalho | Midfielder | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
 |  | Lucas Kallyel | CAM | 22 | Brazil | 297 k€ | – | 0 | 0 | 0/0 |  |
-|  | Lucas Pinheiro | Midfielder | 18 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Rian | Midfielder | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 8 | Crystopher | CAM,CM,CDM | 28 | Brazil | 236 k€ | – | 0 | 0 | 0/0 |  |
 | 10 | Danielzinho | CAM,CM | 30 | Brazil | 584 k€ | – | 0 | 0 | 0/0 |  |
 | 18 | Geovane | CAM | 27 | Brazil | 207 k€ | – | 0 | 0 | 0/0 |  |
 | 21 | Pedro Castro | CDM,CM,CAM | 33 | Brazil | 215 k€ | – | 0 | 0 | 0/0 |  |
 | 26 | Estêvão | CAM | 24 | Brazil | 193 k€ | – | 0 | 0 | 0/0 |  |
-| 34 | Eduardo Mecena | Midfielder | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 45 | De Lucca | CM,CB,CDM | 26 | Brazil | 545 k€ | – | 0 | 0 | 0/0 |  |
 | 50 | Luizão | CDM,CM | 28 | Brazil | 198 k€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-|  | Anthony Matheus | Attacker | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
-|  | Rodriguinho | Attacker | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
 |  | Saymom | Attacker | 22 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 7 | Douglas Baggio | RW,LW | 31 | Brazil | 257 k€ | – | 0 | 0 | 0/0 |  |
 | 9 | João Neto | ST | 23 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 11 | Guilherme Pato | RW | 25 | Brazil | 291 k€ | – | 0 | 0 | 0/0 |  |
-| 16 | Guilherme Kauan | Attacker | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 17 | Thiaguinho | RW | 25 | Brazil | 777 k€ | – | 0 | 0 | 0/0 |  |
 | 19 | Luiz Phellype | ST | 33 | Brazil | 251 k€ | – | 0 | 0 | 0/0 |  |
 | 20 | Vinicius Barata | RW | 27 | Brazil | 268 k€ | – | 0 | 0 | 0/0 |  |
 | 28 | Mikael | ST | 27 | Brazil | 809 k€ | – | 0 | 0 | 0/0 |  |
 | 95 | Ygor Catatau | ST,LW | 31 | Brazil | 321 k€ | – | 0 | 0 | 0/0 |  |
 | 97 | Dadá Belmonte | LW,LM | 29 | Brazil | 253 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (16): Lyncon (senast 2026-09-29), Rodriguinho (senast 2026-09-28), Anderson (senast 2026-09-28), Maycon (senast 2026-09-29), Guilherme Kauan (senast 2026-09-29), Ruy (senast 2026-09-29), Cândido (senast 2026-09-28), Anderson Santos (senast 2026-09-28), Cauã Ávila (senast 2026-09-28), Cauã Carvalho (senast 2026-09-28), Rian (senast 2026-09-28), Eduardo Mecena (senast 2026-09-29), Anthony Matheus (senast 2026-09-28), Lucas Pinheiro (senast 2026-09-28), Heitor Brissantt (senast 2026-09-28), João Pin (senast 2026-09-29).

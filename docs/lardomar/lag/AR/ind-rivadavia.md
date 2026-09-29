@@ -1,6 +1,6 @@
 # Ind. Rivadavia (Liga Profesional) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -59,3 +59,50 @@ Form (äldst → senast): FVFOVFVV · senaste match 2026-09-21
 | San Lorenzo | 1 | 1-0-0 | 1–0 | +1,72 | −37 pe | 2024-10-27 1-0 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-29)
+
+Tränare: Alfredo Berti. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 12 | Ramiro Macagno | GK | 29 | Argentina | 258 k€ | – | 0 | 0 | 0/0 |  |
+| 21 | Emmanuel Gómez Riga | GK | 25 | Argentina | 366 k€ | – | 0 | 0 | 0/0 |  |
+| 30 | Nicolás Bolcato | GK | 22 | Argentina | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 59 | Kevin Pagliaroli | Keeper | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 2 | Leonard Costa | CB,CDM | 28 | Uruguay | 874 k€ | – | 0 | 0 | 0/0 |  |
+| 3 | Juan Manuel Elordi | LB,LWB,LW | 32 | Argentina | 442 k€ | – | 0 | 0 | 0/0 |  |
+| 6 | Santiago Cena | Defender | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 13 | Alejo Osella | CB,RWB,RB | 25 | Argentina | 567 k€ | – | 0 | 0 | 0/0 |  |
+| 14 | Luciano Gómez | LB,LWB,RWB,RB | 30 | Argentina | 320 k€ | – | 0 | 0 | 0/0 |  |
+| 28 | Alex Vigo | RB | 27 | Argentina | 522 k€ | – | 0 | 0 | 0/0 |  |
+| 36 | Ezequiel Bonifacio | RB,RWB,LB | 32 | Argentina | 303 k€ | – | 0 | 0 | 0/0 |  |
+| 40 | Iván Villalba | CB | 31 | Paraguay | 746 k€ | – | 0 | 0 | 0/0 |  |
+| 42 | Sheyko Studer | CB | 23 | Argentina | 2,7 M€ | – | 0 | 0 | 0/0 |  |
+| 55 | Matías Salvo | Defender | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+| 5 | Tomás Bottari | CDM,CM,CB | 25 | Argentina | 1,4 M€ | – | 0 | 0 | 0/0 |  |
+| 8 | Leonel Bucca | LM,CM,LB,CDM | 27 | Argentina | 318 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Matías Fernández | CAM,CM,ST,RW,LM,RM | 25 | Argentina | 452 k€ | – | 0 | 0 | 0/0 |  |
+| 11 | Gonzalo Ríos | CM,CDM,RW,LM,RM,CAM | 27 | Argentina | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 19 | Rodrigo Atencio | CAM,RM | 24 | Argentina | 1,8 M€ | – | 0 | 0 | 0/0 |  |
+| 20 | Alessandro Riep | CM | 23 | Argentina | 559 k€ | – | 0 | 0 | 0/0 |  |
+| 23 | Luis Díaz | CAM | 22 | Colombia | 832 k€ | – | 0 | 0 | 0/0 |  |
+| 25 | José Florentín | CDM,CM,CAM | 30 | Paraguay | 1,5 M€ | – | 0 | 0 | 0/0 |  |
+| 32 | Kevin Vázquez | CDM | 25 | Argentina | 625 k€ | – | 0 | 0 | 0/0 |  |
+| 34 | Stéfano Moreyra | CDM,CM | 25 | Argentina | 403 k€ | – | 0 | 0 | 0/0 |  |
+| 47 | Facundo Ortiz | Midfielder | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 56 | Tobías Ganduglia | Midfielder | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 62 | Alex Aguado | Midfielder | 23 | Argentina | 498 k€ | – | 0 | 0 | 0/0 |  |
+| 65 | Agustín Rognoni | Midfielder | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 77 | Luis Sequeira | CAM | 23 | Argentina | 504 k€ | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 7 | Victorio Ramis | ST | 32 | Argentina | 300 k€ | – | 0 | 0 | 0/0 |  |
+| 9 | Álex Arce | ST | 31 | Paraguay | 2,2 M€ | – | 0 | 0 | 0/0 |  |
+| 17 | Maximiliano Salas | ST | 28 | Argentina | 2,5 M€ | – | 0 | 0 | 0/0 |  |
+| 27 | Diego Crego | LW,CM,ST,LB | 29 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 43 | Fabrizio Sartori | ST,CAM | 24 | Argentina | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 45 | Luciano Sábato | ST | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 64 | Román Ruíz | Attacker | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |

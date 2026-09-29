@@ -1,6 +1,6 @@
 # Ranheim (OBOS-ligaen) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [NO2](../../ligor/NO2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [NO2](../../ligor/NO2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -39,7 +39,7 @@ Form senaste 8 (äldst → senast): FVFFFOOV · senaste match 2026-09-20
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Christian Eggen Rismark. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -61,7 +61,6 @@ Tränare: Christian Eggen Rismark. Betyg, mål och assist gäller innevarande s�
 | 28 | John Gundersen | Defender | 17 | Norway | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 |  | Ola Hoeyem-Bye | Midfielder | 0 | Norway | – | – | 0 | 0 | 0/0 |  |
-| 7 | Mathias Johnsrud Emilsen | CM | 23 | Norway | 160 k€ | – | 0 | 0 | 1/0 |  |
 | 8 | Oliver Kvendbø Holden | ST,CM,RM,LM | 21 | Norway | – | – | 5 | 1 | 2/0 |  |
 | 11 | Maurice Sylva | LM | 18 | Senegal | 359 k€ | – | 5 | 3 | 0/0 |  |
 | 17 | Franklin Nyenetue | RM,RW | 25 | Liberia | 134 k€ | – | 4 | 5 | 0/0 |  |
@@ -75,3 +74,5 @@ Tränare: Christian Eggen Rismark. Betyg, mål och assist gäller innevarande s�
 | 9 | Sebastian Heimvik Haugland | ST | 30 | Norway | – | – | 0 | 0 | 0/0 |  |
 | 10 | Mikael Johnsen | ST | 26 | Norway | 317 k€ | – | 14 | 1 | 2/0 |  |
 | 27 | Gustav Mogensen | ST | 25 | Denmark | 108 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Mathias Johnsrud Emilsen (senast 2026-09-29).

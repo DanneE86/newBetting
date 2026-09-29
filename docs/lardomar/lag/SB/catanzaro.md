@@ -1,6 +1,6 @@
 # Catanzaro (Serie B) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [SB](../../ligor/SB.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [SB](../../ligor/SB.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -57,7 +57,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 |---|---|---|---|---|---|
 | 2026-04-30 | Europa 2570 | Palermo - Catanzaro | 1 | 13 % | 23 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Giorgio Gorgone. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -68,7 +68,6 @@ Tränare: Giorgio Gorgone. Betyg, mål och assist gäller innevarande säsong en
 | 22 | Mirko Pigliacelli | GK | 33 | Italy | 196 k€ | 6,64 | 0 | 0 | 0/0 |  |
 | 99 | Edoardo Borrelli | Keeper | 22 | Italy | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-|  | Marcello Piras | Defender | 22 | Italy | 240 k€ | – | 0 | 0 | 0/0 |  |
 |  | Raul Tassoni | Defender | 19 | Italy | – | – | 0 | 0 | 0/0 |  |
 | 3 | Marco Imperiale | CB | 27 | Italy | 581 k€ | 6,31 | 0 | 0 | 0/0 |  |
 | 4 | Matias Antonini Lui | CB | 28 | Brazil | 795 k€ | 6,74 | 0 | 1 | 2/0 |  |
@@ -99,3 +98,5 @@ Tränare: Giorgio Gorgone. Betyg, mål och assist gäller innevarande säsong en
 | 28 | Franck Tchaouna | ST | 21 | Chad | 249 k€ | – | 0 | 0 | 0/0 |  |
 | 31 | Emanuele Pecorino | ST | 25 | Italy | 399 k€ | 6,31 | 0 | 0 | 0/0 |  |
 | 91 | Gabriel Arditi | Attacker | 19 | Italy | 632 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Marcello Piras (senast 2026-09-29).

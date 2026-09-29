@@ -1,6 +1,6 @@
 # CF Montreal (MLS) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -72,7 +72,7 @@ Form (äldst → senast): OVOFFFFF · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: –. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -99,8 +99,8 @@ Tränare: –. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 | 6 | Samuel Piette | CM,CDM | 31 | Canada | 287 k€ | 6,80 | 0 | 0 | 5/0 |  |
 | 7 | Dani Pereira | CM,CDM | 26 | Venezuela | 2,0 M€ | 6,59 | 0 | 1 | 2/0 | skadad, åter Mid October 2026 |
 | 8 | Matty Longstaff | CM,CDM | 26 | England | 779 k€ | 6,84 | 2 | 3 | 7/0 |  |
-| 16 | Wiki Carmona | RW,CAM,CM | 23 | Venezuela | 2,2 M€ | 7,01 | 4 | 2 | 1/0 |  |
-| 21 | Fabian Herbers | CM,CAM,LW | 33 | Germany | 67 k€ | 6,49 | 1 | 0 | 2/0 |  |
+| 16 | Wiki Carmona | CAM,RW,CM | 23 | Venezuela | 2,2 M€ | 7,01 | 4 | 2 | 1/0 |  |
+| 21 | Fabian Herbers | CM,CAM | 33 | Germany | 67 k€ | 6,49 | 1 | 0 | 2/0 |  |
 | 22 | Victor Loturi | CM,CDM | 25 | Canada | 573 k€ | 6,61 | 1 | 1 | 5/0 |  |
 | 25 | Frankie Amaya | CM | 26 | USA | 779 k€ | – | 0 | 0 | 0/0 |  |
 | 26 | Ivan Losenko | CDM | 22 | Ukraine | 471 k€ | – | 0 | 0 | 0/0 |  |
@@ -108,7 +108,7 @@ Tränare: –. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 | 36 | Josh-Duc Nteziryayo | Midfielder | 17 | Canada | – | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
 | | **Anfallare** | | | | | | | | | |
 | 9 | Prince Owusu | ST | 29 | Ghana | 2,5 M€ | 7,16 | 15 | 6 | 6/0 |  |
-| 10 | Alexis Sánchez | ST,CAM,RW,LW | 37 | Chile | 709 k€ | 6,72 | 0 | 0 | 0/0 |  |
+| 10 | Alexis Sánchez | ST,CAM,LW,RW | 37 | Chile | 709 k€ | 6,72 | 0 | 0 | 0/0 |  |
 | 14 | Daniel Ríos | ST,LW | 31 | Mexico | 199 k€ | 6,46 | 5 | 1 | 3/0 |  |
 | 17 | Dante Sealy | RW,LW,RM | 23 | Trinidad and Tobago | 1,1 M€ | 6,47 | 0 | 2 | 2/0 |  |
 | 18 | Hennadii Synchuk | RW | 20 | Ukraine | 2,2 M€ | 6,87 | 1 | 1 | 3/0 |  |

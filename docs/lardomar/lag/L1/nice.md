@@ -1,12 +1,12 @@
 # Nice (Ligue 1) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [L1](../../ligor/L1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [L1](../../ligor/L1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - 2025/26: −0,39 poäng per match mot marknaden. Ligan visar ingen persistens, så räkna inte med att det fortsätter.
 - Stark historik mot Lens (+0,81 p/match mot marknaden, 12 möten), Auxerre (−0,82 p/match mot marknaden, 7 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
-- Utan Jonathan Clauss (13 % av anfallet): 1,80 poäng per match mot 1,29 med (5 mot 68 matcher), mot marknaden +0,53 mot −0,16.
+- Utan Jonathan Clauss (12 % av anfallet): 1,80 poäng per match mot 1,29 med (5 mot 68 matcher), mot marknaden +0,53 mot −0,16.
 - Utan Sepe Elye Wahi (12 % av anfallet): 0,33 poäng per match mot 1,37 med (3 mot 70 matcher), mot marknaden −1,17 mot −0,07.
 - På Stryktipset/Europatipset streckas lagets vinst ×0,87 av vår sannolikhet (8 matcher). Folket underspelar laget: dess vinst ger streckvärde.
 
@@ -44,7 +44,7 @@ Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 l
 | Mohammed Amoura | 20 % | 0 / 73 | – / 1,33 | – / −0,12 |
 | Gauthier Hein | 15 % | 0 / 73 | – / 1,33 | – / −0,12 |
 | Sofiane Diop | 13 % | 2 / 71 | 0,50 / 1,35 | −0,94 / −0,09 |
-| Jonathan Clauss | 13 % | 5 / 68 | 1,80 / 1,29 | +0,53 / −0,16 |
+| Jonathan Clauss | 12 % | 5 / 68 | 1,80 / 1,29 | +0,53 / −0,16 |
 | Sepe Elye Wahi | 12 % | 3 / 70 | 0,33 / 1,37 | −1,17 / −0,07 |
 | Axel Witsel | 8 % | 0 / 73 | – / 1,33 | – / −0,12 |
 
@@ -58,11 +58,11 @@ Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: s
 | Monaco | 16 | 5-4-7 | 21–21 | +0,11 | −2 pe | 2026-02-08 0-0 (h) |
 | Lyon | 15 | 6-2-7 | 19–26 | +0,28 | −11 pe | 2026-02-15 0-2 (b) |
 | Marseille | 15 | 4-3-8 | 18–24 | −0,10 | −8 pe | 2026-04-26 1-1 (b) |
-| Paris SG | 15 | 3-3-9 | 13–28 | +0,15 | +1 pe | 2026-03-21 0-4 (h) |
 | Rennes | 15 | 7-3-5 | 18–20 | +0,39 | −8 pe | 2026-03-08 0-4 (h) |
 | Strasbourg | 15 | 5-4-6 | 15–19 | −0,09 | −2 pe | 2026-04-04 1-3 (b) |
 | Angers | 14 | 8-3-3 | 22–11 | +0,32 | −6 pe | 2026-03-14 2-0 (b) |
 | Brest | 14 | 6-5-3 | 21–14 | +0,06 | +8 pe | 2026-02-01 2-2 (h) |
+| Paris SG | 14 | 3-3-8 | 13–25 | +0,19 | +2 pe | 2026-03-21 0-4 (h) |
 | Lens | 12 | 7-3-2 | 14–9 | +0,81 | −3 pe | 2026-05-02 1-1 (h) |
 | Toulouse | 12 | 3-6-3 | 13–13 | −0,27 | +22 pe | 2026-01-17 1-5 (b) |
 | Lorient | 11 | 3-6-2 | 16–14 | −0,27 | +27 pe | 2026-08-22 0-0 (h) |
@@ -87,7 +87,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-12-07 | Europa 2529 | Nice - Angers | 2 | 55 % | 55 % |
 | 2025-11-30 | Europa 2527 | Lorient - Nice | 1 | 28 % | 33 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Olivier Pantaloni. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

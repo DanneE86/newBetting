@@ -1,6 +1,6 @@
 # Hamburg (Bundesliga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [BL](../../ligor/BL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [BL](../../ligor/BL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -43,7 +43,7 @@ Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 l
 | Patson Daka | 15 % | 0 / 38 | – / 1,08 | – / +0,02 |
 | Albert Grønbæk | 13 % | 0 / 38 | – / 1,08 | – / +0,02 |
 | David Møller Wolfe | 13 % | 0 / 38 | – / 1,08 | – / +0,02 |
-| Fábio Vieira | 10 % | 2 / 36 | 1,50 / 1,06 | +0,50 / −0,01 |
+| Fábio Vieira | 11 % | 2 / 36 | 1,50 / 1,06 | +0,50 / −0,01 |
 | Ransford Königsdörffer | 8 % | 1 / 37 | 1,00 / 1,08 | +1,36 / −0,02 |
 | Nicolás Capaldo | 7 % | 5 / 33 | 1,00 / 1,09 | −0,28 / +0,06 |
 
@@ -86,7 +86,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-09-28 | Europa 2509 | Union Berlin - Hamburg | X | 17 % | 26 % |
 | 2025-08-24 | Europa 2499 | Mönchengladbach - Hamburg | X | 18 % | 26 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Merlin Polzin. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

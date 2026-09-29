@@ -1,6 +1,6 @@
 # FC Copenhagen (Superligaen) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [DK](../../ligor/DK.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [DK](../../ligor/DK.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -55,7 +55,7 @@ Form (äldst → senast): VVFVVVVV · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Bo Svensson. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -78,6 +78,7 @@ Tränare: Bo Svensson. Betyg, mål och assist gäller innevarande säsong enligt
 | 24 | Birger Meling | LB,RB | 31 | Norway | 584 k€ | 7,31 | 4 | 1 | 3/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 8 | Magnus Mattsson | CM | 27 | Denmark | 2,5 M€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
+| 10 | Mohamed Elyounoussi | CAM,ST,RW,RM,CM,LW | 32 | Norway | 2,3 M€ | 7,98 | 6 | 2 | 2/0 |  |
 | 21 | Mads Madsen | CM,CDM,CAM | 28 | Denmark | 1,7 M€ | 7,27 | 2 | 1 | 1/0 |  |
 | 27 | Thomas Delaney | CM,CDM | 35 | Denmark | 287 k€ | 6,80 | 0 | 0 | 1/0 |  |
 | 28 | Hunor Németh | CM,CAM,RW,CB,CDM | 19 | Hungary | 1,4 M€ | 5,93 | 0 | 0 | 0/0 |  |
@@ -85,7 +86,6 @@ Tränare: Bo Svensson. Betyg, mål och assist gäller innevarande säsong enligt
 | 36 | William Clem | CM,CDM | 22 | Denmark | 2,3 M€ | 7,12 | 0 | 1 | 2/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Maher Carrizo | RW | 20 | Argentina | 10,5 M€ | 6,99 | 1 | 0 | 0/0 |  |
-| 10 | Mohamed Elyounoussi | ST,CAM,RW,CM,RM,LW | 32 | Norway | 2,3 M€ | 7,98 | 6 | 2 | 2/0 |  |
 | 12 | Thapelo Maseko | RW,LW | 22 | South Africa | 777 k€ | 6,97 | 2 | 0 | 0/0 |  |
 | 14 | Andreas Cornelius | ST | 33 | Denmark | 329 k€ | 6,84 | 1 | 0 | 0/0 |  |
 | 16 | Robert | LW,LM,RM | 21 | Brazil | 2,4 M€ | 7,05 | 1 | 1 | 2/0 |  |

@@ -1,6 +1,6 @@
 # Leeds (Premier League) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -112,11 +112,11 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-11-23 | Europa 2525 | Leeds - Aston Villa | 2 | 28 % | 30 % |
 | 2025-11-09 | Europa 2521 | Nottingham - Leeds | 1 | 23 % | 28 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Daniel Farke. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Joe Rodon (skadad, åter Late September 2026), Mateo Joseph (skadad, åter Early January 2027)
+**Skadade/borta nu:** Joe Rodon (skadad, åter Late September 2026), Mateo Joseph (skadad, åter Early January 2027), Harry Wilson (osäker)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -135,7 +135,6 @@ Tränare: Daniel Farke. Betyg, mål och assist gäller innevarande säsong enlig
 | 2 | Jayden Bogle | RWB,RM,RB | 26 | England | 15,3 M€ | 6,93 | 1 | 0 | 2/0 |  |
 | 3 | Gabriel Gudmundsson | LWB,LM,LB,CB | 27 | Sweden | 17,1 M€ | 7,09 | 0 | 0 | 0/0 |  |
 | 4 | Ethan Ampadu | CM,CDM,CB | 26 | Wales | 17,3 M€ | 7,25 | 0 | 0 | 0/0 |  |
-| 7 | Daniel James | RW,RWB,CAM,RM | 28 | Wales | 11,4 M€ | 5,93 | 0 | 0 | 0/0 |  |
 | 8 | Sean Longstaff | CM,CAM,CDM | 28 | England | 13,9 M€ | – | 0 | 0 | 0/0 |  |
 | 11 | Brenden Aaronson | CAM,RW,CM,LM,ST,LW | 25 | USA | 15,1 M€ | 6,28 | 0 | 0 | 0/0 |  |
 | 18 | Anton Stach | CM,CAM,CDM,RM | 27 | Germany | 19,7 M€ | 7,45 | 1 | 0 | 0/0 |  |
@@ -143,8 +142,9 @@ Tränare: Daniel Farke. Betyg, mål och assist gäller innevarande säsong enlig
 | 44 | Ilia Gruev | CM,CDM | 26 | Bulgaria | 10,7 M€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 |  | Mateo Joseph | RW,ST | 22 | Spain | 4,0 M€ | – | 0 | 0 | 0/0 | skadad, åter Early January 2027 |
+| 7 | Daniel James | RW,RWB,CAM | 28 | Wales | 11,4 M€ | 5,93 | 0 | 0 | 0/0 |  |
 | 9 | Dominic Calvert-Lewin | ST | 29 | England | 17,8 M€ | 7,28 | 3 | 0 | 3/0 |  |
-| 10 | Harry Wilson | RW,CAM,RM | 29 | Wales | 15,1 M€ | 6,55 | 0 | 0 | 1/0 |  |
+| 10 | Harry Wilson | RW,CAM,RM | 29 | Wales | 15,1 M€ | 6,55 | 0 | 0 | 1/0 | osäker |
 | 14 | Lukas Nmecha | ST | 27 | Germany | 9,2 M€ | 6,36 | 0 | 1 | 0/0 |  |
-| 19 | Noah Okafor | ST,CAM,LW | 26 | Switzerland | 17,2 M€ | 7,05 | 1 | 0 | 0/0 |  |
+| 19 | Noah Okafor | CAM,ST,LW | 26 | Switzerland | 17,2 M€ | 7,05 | 1 | 0 | 0/0 |  |
 | 23 | Jean-Mattéo Bahoya | LW,CAM | 21 | France | 19,6 M€ | – | 0 | 0 | 0/0 |  |

@@ -1,6 +1,6 @@
 # Cagliari (Serie A) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -56,11 +56,11 @@ Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: s
 | Motståndare | M | V-O-F | Mål | Mot marknaden | Kryss mot odds | Senast |
 |---|---|---|---|---|---|---|
 | Genoa | 16 | 3-6-7 | 15–22 | −0,31 | +8 pe | 2026-01-12 0-3 (b) |
-| Inter | 15 | 1-2-12 | 9–33 | −0,18 | −5 pe | 2026-08-30 0-1 (h) |
 | Udinese | 15 | 2-4-9 | 9–25 | −0,54 | −3 pe | 2026-09-19 1-0 (b) |
 | Atalanta | 14 | 5-1-8 | 15–20 | +0,49 | −14 pe | 2026-09-12 2-1 (b) |
 | Bologna | 14 | 5-2-7 | 15–20 | +0,10 | −14 pe | 2026-05-03 0-0 (b) |
 | Fiorentina | 14 | 3-5-6 | 15–20 | +0,05 | +9 pe | 2026-01-24 2-1 (b) |
+| Inter | 14 | 1-2-11 | 9–31 | −0,15 | −4 pe | 2026-08-30 0-1 (h) |
 | Juventus | 14 | 2-2-10 | 11–26 | −0,00 | −7 pe | 2026-01-17 1-0 (h) |
 | Lazio | 14 | 0-2-12 | 9–27 | −0,65 | −10 pe | 2026-02-21 0-0 (h) |
 | Napoli | 14 | 1-3-10 | 7–23 | −0,18 | +1 pe | 2026-03-20 0-1 (h) |
@@ -86,11 +86,11 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-10-19 | Europa 2515 | Cagliari - Bologna | 2 | 18 % | 24 % |
 | 2025-08-24 | Europa 2499 | Cagliari - Fiorentina | X | 23 % | 27 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Fabio Pisacane. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Riyad Idrissi (skadad, åter Early November 2026), Mattia Felici (skadad, åter Out for season), M'Bala Nzola (skadad, åter Early October 2026), Yael Trepy (skadad, åter Early October 2026)
+**Skadade/borta nu:** Riyad Idrissi (skadad, åter Early November 2026), Mattia Felici (skadad, åter Out for season), Alessandro Deiola (skadad, åter Late December 2026), M'Bala Nzola (skadad, åter Early October 2026), Yael Trepy (skadad, åter Early October 2026)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -105,7 +105,6 @@ Tränare: Fabio Pisacane. Betyg, mål och assist gäller innevarande säsong enl
 | 26 | Yerry Mina | CB | 32 | Colombia | 1,9 M€ | 7,92 | 0 | 0 | 0/0 |  |
 | 28 | Yukinari Sugawara | RB,RWB,RM | 26 | Japan | 4,5 M€ | 6,29 | 0 | 0 | 0/0 |  |
 | 33 | Adam Obert | LB,LM,CB,LWB | 24 | Slovakia | 6,8 M€ | 7,44 | 0 | 0 | 0/0 |  |
-| 35 | Antoni Franke | Defender | 19 | Poland | 209 k€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 3 | Riyad Idrissi | LM | 21 | Italy | 2,3 M€ | – | 0 | 0 | 0/0 | skadad, åter Early November 2026 |
 | 4 | Alessandro Romano | CM,CDM | 20 | Italy | 1,8 M€ | 7,33 | 1 | 0 | 0/0 |  |
@@ -116,9 +115,9 @@ Tränare: Fabio Pisacane. Betyg, mål och assist gäller innevarande säsong enl
 | 20 | Riccardo Ciervo | RM,RW,RWB | 24 | Italy | 1,6 M€ | – | 0 | 0 | 0/0 |  |
 | 21 | Roberto Gagliardini | CM | 32 | Italy | 805 k€ | 6,75 | 0 | 0 | 0/0 |  |
 | 24 | Giuseppe Aurelio | LM,LB | 26 | Italy | 658 k€ | – | 0 | 0 | 0/0 |  |
-| 27 | Alessandro Deiola | CM,CB,CDM | 31 | Italy | 1,2 M€ | 6,92 | 0 | 0 | 2/0 |  |
+| 27 | Alessandro Deiola | CM,CB,CDM | 31 | Italy | 1,2 M€ | 6,92 | 0 | 0 | 2/0 | skadad, åter Late December 2026 |
 | 27 | Joseph Liteta | CM,CDM | 20 | Zambia | 1,5 M€ | – | 0 | 0 | 0/0 |  |
-| 30 | Demi Akarakiri | CDM,CAM | 18 | England | – | – | 0 | 0 | 0/0 |  |
+| 30 | Demi Akarakiri | CDM,CAM | 19 | England | – | – | 0 | 0 | 0/0 |  |
 | 32 | Ivan Sulev | Midfielder | 20 | Bulgaria | 544 k€ | – | 0 | 0 | 0/0 |  |
 | 36 | Nicola Grandu | Midfielder | 20 | Italy | – | – | 0 | 0 | 0/0 |  |
 | 79 | Yanis Massolin | CM,ST | 24 | France | 1,7 M€ | – | 0 | 0 | 0/0 |  |
@@ -130,3 +129,5 @@ Tränare: Fabio Pisacane. Betyg, mål och assist gäller innevarande säsong enl
 | 35 | Alessandro Sugamele | Attacker | 19 | Italy | – | 6,20 | 0 | 0 | 0/0 |  |
 | 39 | Alieu Fadera | LW,RW | 24 | The Gambia | 2,8 M€ | 6,23 | 0 | 0 | 0/0 |  |
 | 70 | Daniel Maldini | ST,CAM | 24 | Italy | 7,8 M€ | 7,50 | 3 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Antoni Franke (senast 2026-09-29).

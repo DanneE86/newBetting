@@ -1,6 +1,6 @@
 # Avellino (Serie B) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [SB](../../ligor/SB.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [SB](../../ligor/SB.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -48,7 +48,7 @@ Form (äldst → senast): VFVFVVOF · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Alessandro Nesta. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -67,9 +67,7 @@ Tränare: Alessandro Nesta. Betyg, mål och assist gäller innevarande säsong e
 | 29 | Tommaso Cancellotti | CB,RB,RM | 34 | Italy | 263 k€ | 6,80 | 0 | 0 | 0/0 |  |
 | 44 | Lorenco Šimić | CB | 30 | Croatia | 258 k€ | 7,23 | 0 | 0 | 2/0 | skadad, åter Early October 2026 |
 | 56 | Patrick Enrici | CB | 25 | Italy | 721 k€ | 7,00 | 0 | 0 | 0/0 |  |
-| 58 | Carlo Mellino | Defender | 20 | Italy | – | – | 0 | 0 | 0/0 |  |
 | 59 | António Aloisi | Defender | 18 | Italy | – | – | 0 | 0 | 0/0 |  |
-| 60 | Umberto Volpe | Defender | 20 | Italy | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 2 | Filippo Missori | RM,RWB,RB,LB | 22 | Italy | 1,9 M€ | 6,23 | 0 | 0 | 1/0 |  |
 | 3 | Marco Sala | LM,LB | 27 | Italy | 318 k€ | 5,98 | 0 | 0 | 0/0 |  |
@@ -80,7 +78,7 @@ Tränare: Alessandro Nesta. Betyg, mål och assist gäller innevarande säsong e
 | 20 | Martin Palumbo | CAM,CM,CDM | 24 | Norway | 700 k€ | 7,37 | 0 | 2 | 0/0 |  |
 | 24 | Dimitrios Sounas | CDM,CM | 32 | Greece | 383 k€ | 6,29 | 0 | 0 | 0/0 |  |
 | 27 | Brando Moruzzi | LWB,LM,LB | 22 | Italy | 1,1 M€ | 6,79 | 1 | 0 | 0/0 |  |
-| 30 | Emanuele Adamo | CM,LM,LWB,RM | 28 | Italy | 460 k€ | – | 0 | 0 | 0/0 |  |
+| 30 | Emanuele Adamo | CM,LM,RM | 28 | Italy | 460 k€ | – | 0 | 0 | 0/0 |  |
 | 39 | Michele Besaggio | CDM,CM | 24 | Italy | 984 k€ | 6,96 | 2 | 0 | 3/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Luca Pandolfi | ST | 28 | Italy | 329 k€ | 5,99 | 0 | 0 | 0/0 |  |
@@ -90,3 +88,5 @@ Tränare: Alessandro Nesta. Betyg, mål och assist gäller innevarande säsong e
 | 14 | Tommaso Biasci | ST,CAM | 31 | Italy | 383 k€ | 6,24 | 0 | 0 | 0/0 |  |
 | 77 | Sebastiano Di Paolo | Attacker | 19 | Italy | 906 k€ | – | 0 | 0 | 0/0 |  |
 | 99 | Andrea Favilli | ST | 29 | Italy | 174 k€ | 7,11 | 0 | 3 | 0/0 | skadad, åter Mid October 2026 |
+
+Har lämnat truppen sedan vi började spara (2): Umberto Volpe (senast 2026-09-29), Carlo Mellino (senast 2026-09-29).

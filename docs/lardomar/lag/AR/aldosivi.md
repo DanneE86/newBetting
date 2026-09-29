@@ -1,6 +1,6 @@
 # Aldosivi (Liga Profesional) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -64,7 +64,7 @@ Form (äldst → senast): FFOFFVFV · senaste match 2026-09-21
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Javier Sanguinetti. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -105,7 +105,7 @@ Tränare: Javier Sanguinetti. Betyg, mål och assist gäller innevarande säsong
 | | **Anfallare** | | | | | | | | | |
 | 7 | Natanael Guzmán | RW,RM | 27 | Argentina | 321 k€ | – | 0 | 0 | 0/0 |  |
 | 9 | Nicolás Cordero | ST | 27 | Argentina | 514 k€ | – | 0 | 0 | 0/0 |  |
-| 11 | Agustín Palavecino | LW,CM,RW,RM | 23 | Argentina | 745 k€ | – | 0 | 0 | 0/0 |  |
+| 11 | Agustín Palavecino | LW,CM,RW | 23 | Argentina | 745 k€ | – | 0 | 0 | 0/0 |  |
 | 16 | Bautista Dadín | ST | 20 | Argentina | 717 k€ | – | 0 | 0 | 0/0 |  |
 | 18 | Andrés Chávez | ST | 35 | Argentina | 229 k€ | – | 0 | 0 | 0/0 |  |
 | 21 | Matías Godoy | LM,LW,RW | 24 | Argentina | 432 k€ | – | 0 | 0 | 0/0 |  |

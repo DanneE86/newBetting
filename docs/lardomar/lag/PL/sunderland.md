@@ -1,12 +1,12 @@
 # Sunderland (Premier League) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Senaste 8: xG-målskillnaden är +0,54 per match bättre än målskillnaden.
 - 2025/26: +0,44 poäng per match mot marknaden. Ligan visar ingen persistens, så räkna inte med att det fortsätter.
-- Stark historik mot Coventry (−0,98 p/match mot marknaden, 10 möten), Leeds (+0,57 p/match mot marknaden, 6 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Stark historik mot Coventry (−1,04 p/match mot marknaden, 9 möten), Leeds (+0,57 p/match mot marknaden, 6 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
 - På Stryktipset/Europatipset streckas lagets vinst ×0,86 av vår sannolikhet (36 matcher). Folket underspelar laget: dess vinst ger streckvärde.
 
 ## Nuläge (senaste 8 ligamatcher)
@@ -55,7 +55,7 @@ Ligans test av frånvaro mot marknaden: svag signal (inte bekräftad). Få match
 
 | Motståndare | M | V-O-F | Mål | Mot marknaden | Kryss mot odds | Senast |
 |---|---|---|---|---|---|---|
-| Coventry | 10 | 0-5-5 | 10–19 | −0,98 | +22 pe | 2025-03-15 0-3 (b) |
+| Coventry | 9 | 0-4-5 | 9–18 | −1,04 | +17 pe | 2025-03-15 0-3 (b) |
 | Ipswich | 9 | 4-2-3 | 11–9 | +0,09 | −7 pe | 2026-08-22 1-2 (b) |
 | Hull | 8 | 2-4-2 | 10–10 | −0,31 | +22 pe | 2025-02-22 0-1 (h) |
 | Leeds | 6 | 2-3-1 | 6–5 | +0,57 | +24 pe | 2026-03-03 1-0 (b) |
@@ -118,11 +118,11 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-12-03 | Europa 2528 | Liverpool - Sunderland | X | 10 % | 12 % |
 | 2025-09-21 | Europa 2507 | Sunderland - Aston Villa | X | 27 % | 27 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Régis Le Bris. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Habib Diarra (skadad, åter Late October 2026), Brian Brobbey (skadad, åter About 1-2 weeks), Romaine Mundle (skadad, åter Early January 2027)
+**Skadade/borta nu:** Daniel Ballard (osäker), Habib Diarra (skadad, åter Late October 2026), Brian Brobbey (osäker), Romaine Mundle (skadad, åter Early January 2027)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -132,7 +132,7 @@ Tränare: Régis Le Bris. Betyg, mål och assist gäller innevarande säsong enl
 | 31 | Melker Ellborg | GK | 23 | Sweden | 1,3 M€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 4 | Kevin Danso | CB | 28 | Austria | 17,4 M€ | 5,90 | 0 | 0 | 0/0 |  |
-| 5 | Daniel Ballard | CB | 27 | Northern Ireland | 15,6 M€ | 6,76 | 0 | 0 | 2/0 |  |
+| 5 | Daniel Ballard | CB | 27 | Northern Ireland | 15,6 M€ | 6,76 | 0 | 0 | 2/0 | osäker |
 | 12 | Thomas Meunier | RB,RW | 35 | Belgium | 1,5 M€ | 6,82 | 0 | 1 | 0/0 |  |
 | 13 | Luke O'Nien | CB | 31 | England | 821 k€ | 5,47 | 0 | 0 | 1/0 |  |
 | 15 | Omar Alderete | CB | 29 | Paraguay | 13,1 M€ | 5,44 | 0 | 0 | 0/0 |  |
@@ -143,17 +143,17 @@ Tränare: Régis Le Bris. Betyg, mål och assist gäller innevarande säsong enl
 | | **Mittfältare** | | | | | | | | | |
 | 6 | Dayann Méthalie | LWB,LB | 20 | France | 8,5 M€ | 5,06 | 0 | 0 | 1/0 |  |
 | 8 | Alan Browne | CDM,CAM,CM,RB,RM | 31 | Ireland | 1,5 M€ | – | 0 | 0 | 0/0 |  |
-| 11 | Chris Rigg | RW,CAM,CDM | 19 | England | – | 6,09 | 0 | 0 | 0/0 |  |
 | 19 | Habib Diarra | CAM,CM | 22 | Senegal | 31,7 M€ | 6,41 | 0 | 1 | 0/0 | skadad, åter Late October 2026 |
-| 27 | Noah Sadiki | CDM,CM,CAM | 21 | DR Congo | 27,8 M€ | 6,74 | 0 | 0 | 1/0 |  |
+| 27 | Noah Sadiki | CDM,CM,CAM,ST | 21 | DR Congo | 27,8 M€ | 6,74 | 0 | 0 | 1/0 |  |
 | 28 | Enzo Le Fée | CAM,LW,LM,CM | 26 | France | 21,2 M€ | 7,26 | 1 | 1 | 0/0 |  |
 | 29 | Jules Ahoka | CDM | 20 | DR Congo | – | – | 0 | 0 | 0/0 |  |
 | 34 | Granit Xhaka | CDM,CM | 34 | Switzerland | 12,5 M€ | 7,37 | 0 | 0 | 2/0 |  |
 | | **Anfallare** | | | | | | | | | |
 |  | Juan Angulo | ST,RW | 18 | Ecuador | 808 k€ | – | 0 | 0 | 0/0 |  |
-| 7 | Chemsdine Talbi | LW,RW,LM | 21 | Morocco | 21,8 M€ | 5,84 | 0 | 0 | 0/0 |  |
-| 9 | Brian Brobbey | ST | 24 | Netherlands | 39,5 M€ | 7,00 | 3 | 0 | 1/0 | skadad, åter About 1-2 weeks |
+| 7 | Chemsdine Talbi | LW,LM,RW | 21 | Morocco | 21,8 M€ | 5,84 | 0 | 0 | 0/0 |  |
+| 9 | Brian Brobbey | ST | 24 | Netherlands | 39,5 M€ | 7,00 | 3 | 0 | 1/0 | osäker |
 | 10 | Nilson Angulo | LW,LM,RW,LWB | 23 | Ecuador | 6,3 M€ | 6,92 | 1 | 1 | 1/0 |  |
+| 11 | Chris Rigg | RW,CDM,CAM | 19 | England | – | 6,09 | 0 | 0 | 0/0 |  |
 | 14 | Romaine Mundle | LW | 23 | England | 9,1 M€ | – | 0 | 0 | 0/0 | skadad, åter Early January 2027 |
 | 18 | Wilson Isidor | ST | 26 | Haiti | 15,8 M€ | 6,34 | 1 | 0 | 0/0 |  |
 | 39 | Malick Fofana | LW | 21 | Belgium | 27,5 M€ | 6,15 | 0 | 0 | 0/0 |  |

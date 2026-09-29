@@ -1,10 +1,10 @@
 # Sp Gijon (LaLiga 2) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [LL2](../../ligor/LL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [LL2](../../ligor/LL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
-- Stark historik mot Granada (+0,59 p/match mot marknaden, 8 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Stark historik mot Las Palmas (−0,55 p/match mot marknaden, 11 möten), Granada (+0,59 p/match mot marknaden, 8 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -41,8 +41,8 @@ Form (äldst → senast): VOVVFFVF · senaste match 2026-09-27
 | Tenerife | 15 | 6-4-5 | 15–16 | +0,14 | −6 pe | 2026-08-28 1-0 (b) |
 | Albacete | 14 | 4-6-4 | 20–20 | −0,17 | +12 pe | 2026-02-15 1-1 (b) |
 | Almeria | 12 | 4-2-6 | 13–14 | −0,13 | −12 pe | 2026-05-24 3-1 (h) |
-| Las Palmas | 12 | 3-2-7 | 9–10 | −0,39 | −14 pe | 2026-03-22 0-1 (b) |
 | Burgos | 11 | 5-3-3 | 10–6 | +0,16 | −4 pe | 2026-08-23 1-0 (h) |
+| Las Palmas | 11 | 2-2-7 | 8–10 | −0,55 | −12 pe | 2026-03-22 0-1 (b) |
 | Eibar | 10 | 3-4-3 | 12–10 | +0,06 | +10 pe | 2026-02-01 0-1 (b) |
 | Leganes | 10 | 2-6-2 | 9–9 | −0,12 | +28 pe | 2026-03-02 0-0 (h) |
 | Cadiz | 8 | 4-1-3 | 10–7 | +0,27 | −18 pe | 2026-04-19 3-0 (h) |
@@ -60,7 +60,7 @@ Form (äldst → senast): VOVVFFVF · senaste match 2026-09-27
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Nicolás Larcamón. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -84,7 +84,7 @@ Tränare: Nicolás Larcamón. Betyg, mål och assist gäller innevarande säsong
 | | **Mittfältare** | | | | | | | | | |
 | 3 | Pablo García | LM | 26 | Spain | 518 k€ | 6,54 | 0 | 0 | 0/0 |  |
 | 6 | Nacho Martín | CDM,CM | 24 | Spain | – | 6,33 | 0 | 0 | 1/0 |  |
-| 8 | Manu Rodríguez | CDM,CM | 20 | Spain | 1,4 M€ | 6,73 | 0 | 0 | 1/0 |  |
+| 8 | Manu Rodríguez | CM,CDM | 20 | Spain | 1,4 M€ | 6,73 | 0 | 0 | 1/0 |  |
 | 10 | César Gelabert | CAM,ST,RW,LW,RM,CM | 25 | Spain | 2,6 M€ | 6,33 | 0 | 0 | 1/1 |  |
 | 14 | Alex Corredera | CM,CDM,CAM,LW | 30 | Spain | 646 k€ | 7,41 | 0 | 1 | 1/0 |  |
 | 21 | Mamadou Loum Ndiaye | CM | 29 | Senegal | – | 6,38 | 0 | 0 | 1/0 |  |
@@ -97,5 +97,5 @@ Tränare: Nicolás Larcamón. Betyg, mål och assist gäller innevarande säsong
 | 16 | Alejo Sarco | ST | 20 | Argentina | 2,2 M€ | 6,55 | 1 | 0 | 0/0 |  |
 | 17 | Antonio Casas | ST | 26 | Spain | 728 k€ | 6,42 | 1 | 0 | 0/0 |  |
 | 19 | Juan Otero | ST,RW | 31 | Colombia | 990 k€ | 6,94 | 1 | 1 | 1/0 |  |
-| 20 | Nikita Iosifov | ST,RW,LM | 25 | Russia | 971 k€ | 6,96 | 1 | 1 | 1/0 |  |
+| 20 | Nikita Iosifov | LM,ST,RW | 25 | Russia | 971 k€ | 6,96 | 1 | 1 | 1/0 |  |
 | 35 | Christian Ferreres | Attacker | 22 | Spain | – | – | 0 | 0 | 0/0 |  |

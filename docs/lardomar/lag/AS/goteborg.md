@@ -1,6 +1,6 @@
 # Goteborg (Allsvenskan) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [AS](../../ligor/AS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [AS](../../ligor/AS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -69,7 +69,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-10-26 | Europa 2517 | Halmstad - IFK Göteborg | 2 ✓ | 54 % | 47 % |
 | 2025-08-24 | Europa 2499 | Malmö - IFK Göteborg | X | 12 % | 21 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Joachim Björklund. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -81,8 +81,6 @@ Tränare: Joachim Björklund. Betyg, mål och assist gäller innevarande säsong
 | 1 | Jonathan Rasheed | GK | 34 | Norway | 110 k€ | – | 0 | 0 | 0/0 |  |
 | 12 | Viktor Andersson | GK | 22 | Sweden | 367 k€ | 7,02 | 0 | 0 | 0/0 |  |
 | 25 | Elis Bishesari | GK | 21 | Sweden | 1,8 M€ | 6,28 | 0 | 0 | 0/0 |  |
-| 31 | Alexander Carlsson | Keeper | 19 | Sweden | – | – | 0 | 0 | 0/0 |  |
-| 34 | Fredrik Andersson | GK | 37 | Sweden | 124 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 3 | August Erlingmark | CB,CM | 28 | Sweden | 717 k€ | 6,78 | 1 | 0 | 4/0 | skadad, åter Mid October 2026 |
 | 5 | Jonas Bager | CB | 30 | Denmark | 287 k€ | 6,71 | 0 | 0 | 4/0 |  |
@@ -111,3 +109,5 @@ Tränare: Joachim Björklund. Betyg, mål och assist gäller innevarande säsong
 | 19 | Arbnor Muçolli | CAM | 27 | Albania | 640 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 29 | Adam Bergmark Wiberg | ST,RM,LW | 29 | Sweden | 332 k€ | 6,85 | 1 | 3 | 3/0 | skadad, åter About 1-2 weeks |
 | 30 | Tiago Coimbra | ST | 22 | Canada | 355 k€ | 6,34 | 0 | 0 | 1/0 |  |
+
+Har lämnat truppen sedan vi började spara (2): Fredrik Andersson (senast 2026-09-29), Alexander Carlsson (senast 2026-09-29).

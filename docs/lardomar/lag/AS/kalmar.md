@@ -1,6 +1,6 @@
 # Kalmar (Allsvenskan) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [AS](../../ligor/AS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [AS](../../ligor/AS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -63,7 +63,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 |---|---|---|---|---|---|
 | 2026-05-23 | Europa 2577 | Kalmar - Degerfors | 1 ✓ | 58 % | 45 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Toni Koskela. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -72,7 +72,7 @@ Tränare: Toni Koskela. Betyg, mål och assist gäller innevarande säsong enlig
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Samuel Brolin | GK | 25 | Sweden | 437 k€ | 6,75 | 0 | 0 | 0/0 |  |
+| 1 | Samuel Brolin | GK | 26 | Sweden | 437 k€ | 6,75 | 0 | 0 | 0/0 |  |
 | 30 | Jakob Kindberg | GK | 32 | Sweden | 124 k€ | 6,82 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 32 | Casper Andersson | Keeper | 21 | Sweden | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
@@ -87,6 +87,7 @@ Tränare: Toni Koskela. Betyg, mål och assist gäller innevarande säsong enlig
 | 47 | Aboubacar Keita | CB | 26 | Guinea | 281 k€ | 6,69 | 2 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 |  | Amara Camara | Midfielder | 26 | Belgium | – | – | 0 | 0 | 0/0 |  |
+|  | Kasper Paananen | CM,ST,CAM,LW | 23 | Finland | 425 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 |  | Wilmer Andersson | Midfielder | 21 | Sweden | – | – | 0 | 0 | 0/0 |  |
 | 5 | Melker Hallberg | CM,CB,ST,CAM | 30 | Sweden | 275 k€ | 6,56 | 0 | 2 | 2/0 |  |
 | 7 | Nassef Chourak | CM,CAM,CDM | 22 | Netherlands | 567 k€ | 6,61 | 0 | 0 | 2/0 |  |
@@ -97,7 +98,6 @@ Tränare: Toni Koskela. Betyg, mål och assist gäller innevarande säsong enlig
 | 23 | Robert Gojani | CM,CDM | 33 | Sweden | 124 k€ | 6,84 | 0 | 2 | 1/0 |  |
 | 25 | Noah Shamoun | CM,LM | 23 | Syria | 373 k€ | 6,30 | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-|  | Kasper Paananen | CM,ST,LW,CAM | 23 | Finland | 425 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 9 | Malcolm Stolt | ST | 25 | Sweden | 304 k€ | 6,09 | 0 | 0 | 0/0 |  |
 | 10 | Marius Söderbäck | LW,ST,RW,LM,RM | 22 | Finland | 502 k€ | 6,53 | 0 | 2 | 1/0 |  |
 | 14 | Elion Imeri | Attacker | 17 | Sweden | – | – | 0 | 0 | 0/0 |  |

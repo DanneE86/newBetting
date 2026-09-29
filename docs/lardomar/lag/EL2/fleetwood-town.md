@@ -1,6 +1,6 @@
 # Fleetwood Town (League Two) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -62,47 +62,44 @@ Form (äldst → senast): VOOOVOFF · senaste match 2026-09-26
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Matt Lawlor. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Jay Lynch | GK | 33 | England | 110 k€ | 6,77 | 0 | 0 | 0/0 |  |
+| 1 | Jay Lynch | GK | 33 | England | 110 k€ | 6,78 | 0 | 0 | 0/0 |  |
 | 22 | James Pradic | GK | 21 | Wales | – | – | 0 | 0 | 0/0 |  |
 | 34 | Oliver Bellizia | Keeper | 19 | England | – | – | 0 | 0 | 0/0 |  |
-| 37 | Luke Hewitson | GK | 21 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-|  | James Bolton | CB | 32 | England | 129 k€ | – | 0 | 0 | 0/0 |  |
 | 3 | Danny Andrew | LB,LWB,LW,CB | 35 | England | 87 k€ | 6,43 | 0 | 0 | 0/0 |  |
 | 5 | Finley Potter | CB | 22 | England | 227 k€ | 7,12 | 1 | 0 | 2/0 |  |
 | 6 | Rhys Bennett | CB | 22 | England | 272 k€ | 6,68 | 0 | 1 | 3/0 |  |
 | 16 | Conor Haughey | CB | 19 | Northern Ireland | – | 6,14 | 0 | 0 | 0/0 |  |
-| 24 | Jake Batty | LB,LWB | 21 | England | 276 k€ | 6,51 | 0 | 0 | 0/0 |  |
-| 26 | Shaun Rooney | CB | 30 | Scotland | 183 k€ | 6,93 | 0 | 0 | 2/0 |  |
+| 24 | Jake Batty | LB,LWB | 21 | England | 276 k€ | 6,50 | 0 | 0 | 0/0 |  |
+| 26 | Shaun Rooney | CB | 30 | Scotland | 183 k€ | 6,91 | 0 | 0 | 2/0 |  |
 | 32 | Kayden Hughes | CB | 20 | England | 391 k€ | 6,21 | 0 | 0 | 0/0 |  |
-| 33 | Denver Hume | LB | 28 | England | 127 k€ | – | 0 | 0 | 0/0 |  |
 | 36 | Jesse Dempsey | LB | 21 | Ireland | 221 k€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 |  | Pele Smith | Midfielder | 17 | England | – | – | 0 | 0 | 0/0 |  |
-| 4 | Harrison Neal | CDM,CM | 25 | England | 269 k€ | 7,17 | 0 | 0 | 3/0 |  |
+| 4 | Harrison Neal | CDM,CM | 25 | England | 269 k€ | 7,15 | 0 | 0 | 3/0 |  |
 | 7 | Andy Cannon | CAM | 30 | England | 186 k€ | 7,07 | 0 | 0 | 1/0 |  |
 | 8 | Kane Thompson-Sommers | CM,CDM,RW,LM | 25 | England | 260 k€ | 6,17 | 0 | 0 | 0/0 |  |
-| 10 | Mark Helm | CAM,CM | 24 | England | 211 k€ | 6,96 | 1 | 0 | 1/0 |  |
-| 14 | Lewis McCann | LW,CAM,LWB,ST | 25 | Scotland | 255 k€ | 7,19 | 0 | 0 | 1/0 |  |
+| 10 | Mark Helm | CAM,CM | 24 | England | 211 k€ | 7,00 | 1 | 0 | 1/0 |  |
+| 14 | Lewis McCann | LW,CAM,LWB,ST | 25 | Scotland | 255 k€ | 7,20 | 0 | 0 | 1/0 |  |
 | 27 | Crispin McLean | CAM | 19 | England | – | 6,63 | 0 | 0 | 0/0 |  |
 | 28 | Josh Robertson | CDM,CM | 20 | England | – | 5,97 | 0 | 0 | 0/0 |  |
-| 28 | Liam Roberts | LWB | 18 | England | – | – | 0 | 0 | 0/0 |  |
-| 29 | Raffaele Cirino | CAM | 19 | Montserrat | – | 6,65 | 0 | 0 | 2/0 |  |
+| 29 | Raffaele Cirino | CAM | 19 | Montserrat | – | 6,71 | 0 | 0 | 2/0 |  |
 | 35 | Sean Costelloe | CAM | 19 | Ireland | – | – | 0 | 0 | 0/0 |  |
 | 40 | David Animasaun | Midfielder | 19 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-|  | Owen Devonport | ST | 21 | England | – | – | 0 | 0 | 0/0 |  |
 | 9 | Will Davies | ST | 27 | England | 188 k€ | 6,75 | 2 | 1 | 1/0 |  |
 | 11 | Josh Thomas | ST | 24 | Wales | 145 k€ | – | 0 | 0 | 0/0 |  |
-| 15 | Adam Murphy | RW,CM | 21 | Ireland | 447 k€ | 6,35 | 0 | 0 | 0/0 |  |
-| 17 | Ched Evans | ST | 37 | Wales | 109 k€ | 6,72 | 1 | 2 | 4/0 |  |
-| 19 | Ronan Coughlan | ST | 29 | Ireland | 185 k€ | 7,10 | 2 | 1 | 0/0 |  |
-| 20 | Aaron Loupalo-Bi | ST,LW,RW | 20 | England | 484 k€ | 6,44 | 2 | 1 | 0/0 |  |
+| 15 | Adam Murphy | RW,CM | 21 | Ireland | 447 k€ | 6,39 | 0 | 0 | 0/0 |  |
+| 17 | Ched Evans | ST | 37 | Wales | 109 k€ | 6,61 | 1 | 2 | 4/0 |  |
+| 19 | Ronan Coughlan | ST | 29 | Ireland | 185 k€ | 7,08 | 2 | 1 | 0/0 |  |
+| 20 | Aaron Loupalo-Bi | ST,LW,RW | 20 | England | 484 k€ | 6,43 | 2 | 1 | 0/0 |  |
 | 43 | Noah Sawkins | Attacker | 0 | USA | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (5): James Bolton (senast 2026-09-29), Denver Hume (senast 2026-09-29), Owen Devonport (senast 2026-09-29), Luke Hewitson (senast 2026-09-29), Liam Roberts (senast 2026-09-29).

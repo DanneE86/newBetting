@@ -1,6 +1,6 @@
 # Fulham (Premier League) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -59,10 +59,10 @@ Ligans test av frånvaro mot marknaden: svag signal (inte bekräftad). Få match
 | Arsenal | 12 | 1-3-8 | 10–28 | −0,17 | +3 pe | 2026-05-02 0-3 (b) |
 | Bournemouth | 12 | 2-4-6 | 12–20 | −0,48 | +7 pe | 2026-05-09 0-1 (h) |
 | Crystal Palace | 12 | 2-5-5 | 13–15 | −0,48 | +13 pe | 2026-09-05 2-3 (h) |
-| Everton | 12 | 4-3-5 | 13–15 | −0,00 | −2 pe | 2026-02-07 1-2 (h) |
 | Newcastle | 12 | 3-2-7 | 10–20 | −0,24 | −10 pe | 2026-05-24 2-0 (h) |
 | Nott'm Forest | 12 | 8-1-3 | 21–9 | +0,53 | −20 pe | 2026-03-15 0-0 (b) |
 | Brighton | 11 | 6-4-1 | 18–9 | +0,86 | +9 pe | 2026-01-24 2-1 (h) |
+| Everton | 11 | 4-3-4 | 13–12 | +0,07 | −0 pe | 2026-02-07 1-2 (h) |
 | Man City | 11 | 0-0-11 | 9–33 | −0,44 | −15 pe | 2026-02-11 0-3 (b) |
 | Tottenham | 11 | 4-2-5 | 13–12 | +0,19 | −7 pe | 2026-03-01 2-1 (h) |
 | Aston Villa | 10 | 2-0-8 | 9–19 | −0,56 | −27 pe | 2026-04-25 1-0 (h) |
@@ -116,7 +116,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-09-28 | Europa 2509 | Aston Villa - Fulham | 1 | 30 % | 29 % |
 | 2025-08-24 | Europa 2499 | Fulham - Manchester United | X | 19 % | 29 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Álvaro Arbeloa. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

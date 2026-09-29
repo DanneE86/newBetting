@@ -1,11 +1,10 @@
 # Milan (Serie A) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Stark historik mot Bologna (+0,51 p/match mot marknaden, 16 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
-- Utan Christian Pulisic (10 % av anfallet): 1,86 poäng per match mot 1,77 med (7 mot 74 matcher), mot marknaden +0,09 mot −0,08.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -96,7 +95,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-09-28 | Europa 2509 | Milan - Napoli | 1 ✓ | 44 % | 49 % |
 | 2025-09-14 | Europa 2505 | Milan - Bologna | 1 ✓ | 56 % | 52 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Ruben Amorim. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

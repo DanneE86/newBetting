@@ -1,6 +1,6 @@
 # Valerenga (Eliteserien) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [NO](../../ligor/NO.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [NO](../../ligor/NO.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -57,7 +57,7 @@ Form (äldst → senast): VFFOFOFO · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Johannes Moesgaard. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -92,6 +92,6 @@ Tränare: Johannes Moesgaard. Betyg, mål och assist gäller innevarande säsong
 | 17 | Mathias Grundetjern | ST | 26 | Norway | 862 k€ | 7,03 | 5 | 4 | 4/0 |  |
 | 18 | Even Forcha | Attacker | 17 | Norway | – | – | 0 | 0 | 0/0 |  |
 | 19 | Elbasan Rashani | LW,LM | 33 | Kosovo | 179 k€ | – | 0 | 0 | 0/0 |  |
-| 24 | Petter Strand | RW,CM | 32 | Norway | 339 k€ | 6,57 | 2 | 1 | 0/0 |  |
+| 24 | Petter Strand | RW | 32 | Norway | 339 k€ | 6,57 | 2 | 1 | 0/0 |  |
 | 26 | Dennis Gjengaar | RW,LB,RB,RM,ST | 22 | Norway | 847 k€ | 6,36 | 0 | 0 | 0/0 |  |
 | 90 | Ole Christian Sæter | ST | 30 | Norway | 454 k€ | 6,40 | 0 | 2 | 2/0 |  |

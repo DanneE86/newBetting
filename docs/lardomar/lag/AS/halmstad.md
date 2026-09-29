@@ -1,6 +1,6 @@
 # Halmstad (Allsvenskan) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [AS](../../ligor/AS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [AS](../../ligor/AS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -64,7 +64,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-04-22 | Europa 2568 | Hammarby - Halmstad | X | 4 % | 7 % |
 | 2025-10-26 | Europa 2517 | Halmstad - IFK Göteborg | 2 | 22 % | 28 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Stuart Baxter. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -95,4 +95,5 @@ Tränare: Stuart Baxter. Betyg, mål och assist gäller innevarande säsong enli
 | 19 | Marvin Illary | RM,LW,RW | 19 | Ivory Coast | 621 k€ | 6,67 | 0 | 2 | 0/0 |  |
 | 22 | Oliver Kapsimalis | RW,LW | 19 | Sweden | 696 k€ | 6,30 | 0 | 0 | 1/0 |  |
 | 23 | Ajdin Zeljković | LW,ST | 28 | Sweden | 149 k€ | 6,37 | 0 | 0 | 0/0 |  |
-| 23 | Jesper Westermark | ST | 33 | Sweden | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Jesper Westermark (senast 2026-09-29).

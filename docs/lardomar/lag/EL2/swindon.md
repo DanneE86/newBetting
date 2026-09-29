@@ -1,10 +1,10 @@
 # Swindon (League Two) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
-- Stark historik mot Crewe (−0,53 p/match mot marknaden, 14 möten), Grimsby (+0,51 p/match mot marknaden, 12 möten), Accrington (−0,70 p/match mot marknaden, 9 möten), Oldham (+0,62 p/match mot marknaden, 8 möten), Bristol Rvs (+0,83 p/match mot marknaden, 6 möten), Exeter (−0,68 p/match mot marknaden, 6 möten), Fleetwood Town (+0,67 p/match mot marknaden, 6 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Stark historik mot Crewe (−0,53 p/match mot marknaden, 14 möten), Grimsby (+0,51 p/match mot marknaden, 12 möten), Accrington (−0,70 p/match mot marknaden, 9 möten), Oldham (+0,78 p/match mot marknaden, 7 möten), Bristol Rvs (+0,83 p/match mot marknaden, 6 möten), Exeter (−0,68 p/match mot marknaden, 6 möten), Fleetwood Town (+0,67 p/match mot marknaden, 6 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -50,7 +50,7 @@ Form (äldst → senast): OVFVVFFO · senaste match 2026-09-26
 | Accrington | 9 | 1-4-4 | 11–19 | −0,70 | +19 pe | 2026-09-26 1-1 (h) |
 | Port Vale | 9 | 4-2-3 | 15–11 | +0,21 | −6 pe | 2026-09-01 3-1 (h) |
 | Cheltenham | 8 | 3-3-2 | 14–12 | −0,19 | +11 pe | 2026-08-22 2-1 (h) |
-| Oldham | 8 | 5-2-1 | 13–7 | +0,62 | −2 pe | 2026-08-29 0-3 (b) |
+| Oldham | 7 | 5-1-1 | 13–7 | +0,78 | −13 pe | 2026-08-29 0-3 (b) |
 | Bristol Rvs | 6 | 4-2-0 | 10–3 | +0,83 | +6 pe | 2026-02-28 1-1 (h) |
 | Exeter | 6 | 1-1-4 | 5–11 | −0,68 | −11 pe | 2022-03-08 1-3 (b) |
 | Fleetwood Town | 6 | 3-2-1 | 11–4 | +0,67 | +7 pe | 2026-03-28 1-1 (h) |
@@ -68,51 +68,46 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 |---|---|---|---|---|---|
 | 2026-05-02 | Stryk 4951 | Swindon - Chesterfield | 2 | 31 % | 30 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Ian Holloway. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Connor Ripley | GK | 33 | England | 141 k€ | 7,30 | 0 | 0 | 1/0 |  |
+| 1 | Connor Ripley | GK | 33 | England | 141 k€ | 7,34 | 0 | 0 | 1/0 |  |
 | 12 | Lewis Ward | GK | 29 | England | 72 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-|  | Harrison Minturn | CB | 22 | England | 179 k€ | – | 0 | 0 | 0/0 |  |
-|  | Sonny Hart | Defender | 20 | England | 192 k€ | – | 0 | 0 | 0/0 |  |
 | 2 | Mitchell Clark | RB,LW,RWB | 27 | Wales | 115 k€ | 6,65 | 0 | 0 | 1/1 |  |
 | 5 | Stephan Negru | CB | 24 | Moldova | 245 k€ | 7,13 | 0 | 1 | 0/0 |  |
-| 6 | James Ball | CB,RB,CM | 30 | England | 102 k€ | 6,73 | 0 | 0 | 1/0 |  |
+| 6 | James Ball | CB,RB,CM | 30 | England | 102 k€ | 6,72 | 0 | 0 | 1/0 |  |
 | 16 | Sam Inwood | CB,LB | 21 | Northern Ireland | – | – | 0 | 0 | 0/0 |  |
 | 17 | Ryan Tafazolli | CB | 35 | England | 86 k€ | 6,97 | 0 | 0 | 0/0 |  |
 | 18 | James Debayo | CB | 21 | England | – | 6,26 | 0 | 0 | 1/0 |  |
-| 21 | Kaelan Majekodunmi | CB,RB | 22 | Australia | 194 k€ | 6,96 | 0 | 0 | 2/0 |  |
+| 21 | Kaelan Majekodunmi | CB,RB | 22 | Australia | 194 k€ | 6,97 | 0 | 0 | 2/0 |  |
 | 26 | Dan Butler | LB,LWB | 32 | England | 158 k€ | 7,01 | 0 | 1 | 1/0 |  |
 | 34 | Billy Kirkman | CB,LB | 22 | England | 134 k€ | 6,99 | 0 | 0 | 0/0 |  |
-| 38 | Antony McCormick | CB | 19 | England | – | – | 0 | 0 | 0/0 |  |
 | 38 | Lucas Griffiths-Brown | RWB | 0 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 4 | Gavin Kilkenny | CDM,CM | 26 | Ireland | 247 k€ | – | 0 | 0 | 0/0 |  |
-| 7 | Tom Nichols | CDM,CM | 33 | England | 121 k€ | 6,39 | 0 | 0 | 1/0 |  |
-| 8 | Ollie Clarke | CM,CB,CAM | 34 | England | 85 k€ | 6,73 | 1 | 0 | 2/0 |  |
-| 14 | Daniel Butterworth | CAM | 27 | England | 153 k€ | 6,19 | 0 | 0 | 1/0 |  |
+| 7 | Tom Nichols | CM,CDM | 33 | England | 121 k€ | 6,39 | 0 | 0 | 1/0 |  |
+| 8 | Ollie Clarke | CM,CB,CAM | 34 | England | 85 k€ | 6,72 | 1 | 0 | 2/0 |  |
+| 14 | Daniel Butterworth | CM | 27 | England | 153 k€ | 6,19 | 0 | 0 | 1/0 |  |
 | 19 | Joe Snowdon | RWB,RM,RW,RB,LW | 22 | England | 193 k€ | 6,75 | 0 | 0 | 0/0 |  |
 | 20 | Ben Middlemas | CM,CDM | 21 | England | 360 k€ | 6,69 | 1 | 0 | 0/0 |  |
 | 22 | Jaylan Pearman | CAM | 20 | Australia | 249 k€ | 6,06 | 0 | 0 | 0/0 |  |
 | 24 | Matthew Virtue | CAM,CDM,CM | 29 | England | 134 k€ | 6,91 | 0 | 0 | 1/0 |  |
-| 25 | Jack Thomson | CM | 26 | Scotland | 273 k€ | 7,15 | 0 | 1 | 1/0 |  |
+| 25 | Jack Thomson | CM | 26 | Scotland | 273 k€ | 7,14 | 0 | 1 | 1/0 |  |
 | 27 | Anthony Munda | CAM,CM,CDM | 20 | England | – | 6,89 | 0 | 2 | 1/0 |  |
 | 33 | Joel McGregor | RWB,RB,RM,LWB | 20 | England | 473 k€ | – | 0 | 0 | 0/0 |  |
-| 39 | Dylan Mitchell | Midfielder | 20 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 9 | Paul Glatzel | RW,CAM,ST | 25 | England | 224 k€ | 6,32 | 0 | 0 | 0/0 |  |
+| 9 | Paul Glatzel | RW,CAM,ST | 25 | England | 224 k€ | 6,34 | 0 | 0 | 0/0 |  |
 | 10 | Harry Smith | ST | 31 | England | 128 k€ | – | 0 | 0 | 0/0 |  |
 | 11 | Fletcher Holman | ST,RW,LW | 21 | England | 239 k€ | – | 0 | 0 | 0/0 |  |
-| 15 | Joseph Hungbo | LWB,LW,RW,RM | 26 | England | 266 k€ | 6,57 | 1 | 0 | 0/0 |  |
+| 15 | Joseph Hungbo | LW,LWB,RW,RM | 26 | England | 266 k€ | 6,55 | 1 | 0 | 0/0 |  |
 | 23 | Aaron Drinan | ST,CAM,RW | 28 | Ireland | 398 k€ | 7,19 | 5 | 0 | 0/0 |  |
 | 28 | Ollie Palmer | ST,CAM,RW | 34 | England | 184 k€ | 6,37 | 0 | 0 | 0/0 |  |
 | 29 | Antwoine Hackford | ST | 22 | England | – | 6,01 | 0 | 0 | 0/0 |  |
-| 30 | Junior Hoilett | LW,CAM | 36 | Canada | 144 k€ | – | 0 | 0 | 0/0 |  |
-| 31 | Billy Bodin | RW,ST,LW | 34 | Wales | 130 k€ | – | 0 | 0 | 0/0 |  |
 | 39 | Louis Millard | RW | 0 | England | – | 6,15 | 1 | 0 | 0/0 |  |
-| 40 | George Alston | Attacker | 19 | England | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (7): Junior Hoilett (senast 2026-09-29), Billy Bodin (senast 2026-09-29), Harrison Minturn (senast 2026-09-29), Sonny Hart (senast 2026-09-29), George Alston (senast 2026-09-29), Dylan Mitchell (senast 2026-09-29), Antony McCormick (senast 2026-09-29).

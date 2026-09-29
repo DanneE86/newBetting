@@ -1,6 +1,6 @@
 # West Ham (Championship) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -61,7 +61,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-08-29 | Stryk 4968 | Watford - West Ham | X | 67 % | 54 % |
 | 2026-08-22 | Stryk 4967 | West Ham - Charlton | 2 | 85 % | 66 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Nuno Espírito Santo. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -93,7 +93,7 @@ Tränare: Nuno Espírito Santo. Betyg, mål och assist gäller innevarande säso
 | 66 | Joshua Ajala | CAM,ST,LW,CM,LM | 19 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 9 | Joël Piroe | ST,CAM | 27 | Suriname | 11,6 M€ | 7,07 | 3 | 0 | 0/0 |  |
-| 10 | Manor Solomon | LW,RW,LM,CAM | 27 | Israel | 9,1 M€ | 7,63 | 2 | 2 | 0/0 |  |
+| 10 | Manor Solomon | LW,LM,RW,CAM | 27 | Israel | 9,1 M€ | 7,63 | 2 | 2 | 0/0 |  |
 | 11 | Valentín Castellanos | ST | 27 | Argentina | 27,3 M€ | 7,03 | 1 | 2 | 3/0 |  |
 | 19 | Pablo | ST,CAM,LW | 22 | Brazil | 3,7 M€ | 6,77 | 0 | 1 | 1/0 |  |
 | 20 | Jarrod Bowen | RW,RM,ST,CAM | 29 | England | 28,3 M€ | 7,90 | 4 | 3 | 1/0 |  |

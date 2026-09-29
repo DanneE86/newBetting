@@ -14,6 +14,7 @@ import { fetchMatchContext, contextNotes } from './lib/match-context.mjs';
 import { extraOdds, matchExtraOdds } from './lib/extra-odds.mjs';
 import { clubEloFor } from './lib/club-elo.mjs';
 import { fillXg } from './lib/understat-xg.mjs';
+import { buildMissProfile } from './lib/stryk-miss-profile.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const RAW = path.join(root, 'data', 'raw');
@@ -38,6 +39,9 @@ const signEnv = (v) => (v ? v.split('-').map(Number) : null); // STRYK_SIGN_A=4-
 const SIGN_MIN = { A: signEnv(process.env.STRYK_SIGN_A) || [4, 2, 2], B: signEnv(process.env.STRYK_SIGN_B) || [4, 3, 3] };
 const BUDGET = { min: 350, max: 400 }; // kr per omgang (rader x radpris)
 const COLOR = { green: 0.45, red: 0.2 }; // folkets streck: gron >= 45 %, rod <= 20 %, annars gul
+// Skrall (rott tecken) i en gardering far finnas pa hogst 85 % av kupongens rader (anvandarens regel 2026-09-29).
+// GC saknar regeln, sa den anvands vid valet av system (lanken ger samma rader). Samma som i gui/public/stryk-engine.js.
+const RED_MAX_SHARE = 0.85;
 const PAYOUT_13 = 0.65 * 0.4; // 65 % aterbetalning, 40 % av potten till 13 ratt
 // Minsta utdelning for 13 ratt (kr) per spel, anvandarens regel. Europatipset 20 000: backtest 55 omg (minst 3 topp 4-matcher)
 // gav A +17 677 kr mot -14 134 vid 30 000 (bygger pa en enda 13-ratt, folj upp). STRYK_UTD_MIN overstyr i backtest.
@@ -545,7 +549,7 @@ function gcPayoutFloor(gcTurnover, realTurnover, jackpot, payoutMin) {
   return fStar > 0 ? (PAYOUT_13 * gcTurnover + (jackpot || 0)) / (1 + gcTurnover * fStar) : Infinity;
 }
 
-function reduceSystem(events, grund, { rowPrice = 1, turnover, signMin, realTurnover = turnover, jackpot = 0, payoutMin = 30000, budget = BUDGET }) {
+function reduceSystem(events, grund, { rowPrice = 1, turnover, signMin, realTurnover = turnover, jackpot = 0, payoutMin = 30000, budget = BUDGET, redMax = RED_MAX_SHARE }) {
   const minRows = Math.ceil(budget.min / rowPrice), maxRows = Math.floor(budget.max / rowPrice);
   const colors = events.map((e) => [0, 1, 2].map((k) => signColor(e.folk?.[k])));
   const T = turnover;
@@ -567,21 +571,23 @@ function reduceSystem(events, grund, { rowPrice = 1, turnover, signMin, realTurn
   walk(0, [], 1, 1);
   if (all.length < minRows) return null;
   all.sort((a, b) => b.payout - a.payout);
-  // Hogsta mojliga radantal i budgeten (lagsta utdelningsgrans) med ett jamnt belopp mellan raderna
-  // (GC:s streck kan skilja nagot fran vara -> helst lite marginal mot budgetgranserna)
-  // Gransen laggs i ett glapp pa minst GAP mellan narmaste raderna (tal mitt i glappet), sa att sma skillnader
-  // i streck mellan var hamtning och GC inte flyttar nagon rad over gransen.
+  // Radantalet laggs sa nara mitten av budgeten som mojligt (2026-09-29): GC raknar med aktuella streck, och ett streck
+  // som andrades fran 27 till 26 % efter hamtningen gav 394 -> 404 rader. Mitten ger marginal at bada hallen.
   let cut = null;
-  for (const gap of [1.02, 1.01, 1.003, 1]) {
-    for (const [lo, hi] of [[minRows + 5, maxRows - 5], [minRows, maxRows]]) {
-      if (all.length <= hi && all.length >= lo && all[all.length - 1].payout >= floor * gap) { cut = { n: all.length, t: Math.ceil(floor) }; break; }
-      for (let n = Math.min(hi, all.length - 1); n >= lo && !cut; n--) {
-        const above = all[n - 1].payout, below = all[n].payout;
-        if (above < below * gap) continue;
-        const mid = Math.sqrt(above * below);
-        for (const step of [5000, 1000, 500, 100, 10, 1]) {
-          const t = Math.round(mid / step) * step;
-          if (t <= above / Math.sqrt(gap) && t >= below * Math.sqrt(gap) && t >= floor) { cut = { n, t }; break; }
+  if (all.length >= minRows && all.length <= maxRows && all[all.length - 1].payout >= floor * 1.02) cut = { n: all.length, t: Math.ceil(floor) };
+  const midN = Math.round((minRows + maxRows) / 2);
+  for (const win of [Math.round((maxRows - minRows) / 5), maxRows - midN]) {
+    for (const gap of [1.02, 1.01, 1.003, 1]) {
+      for (let d = 0; d <= win && !cut; d++) {
+        for (const n of d ? [midN - d, midN + d] : [midN]) {
+          if (cut || n < minRows || n > maxRows || n >= all.length) continue;
+          const above = all[n - 1].payout, below = all[n].payout;
+          if (above < below * gap) continue;
+          const mid = Math.sqrt(above * below);
+          for (const step of [5000, 1000, 500, 100, 10, 1]) {
+            const t = Math.round(mid / step) * step;
+            if (t <= above / Math.sqrt(gap) && t >= below * Math.sqrt(gap) && t >= floor) { cut = { n, t }; break; }
+          }
         }
       }
       if (cut) break;
@@ -590,6 +596,8 @@ function reduceSystem(events, grund, { rowPrice = 1, turnover, signMin, realTurn
   }
   if (!cut) return null;
   const kept = all.slice(0, cut.n);
+  // Skrall (rott tecken) i en gardering pa hogst RED_MAX_SHARE av raderna, annars valjs ett annat system
+  if (redMax < 1 && !grund.sets.every((set, i) => set.length < 2 || set.every((k) => colors[i][k] !== 'red' || kept.filter((r) => r.row[i] === k).length <= redMax * kept.length))) return null;
   const hit = kept.reduce((sum, r) => sum + r.p, 0);
   const ev = kept.reduce((sum, r) => sum + r.p * r.real, 0);
   kept.sort((a, b) => b.p - a.p);
@@ -618,6 +626,8 @@ function bestReduced(events, candidates, opts, exclude = null) {
     const sc = score(red);
     if (!best || sc > best.score) best = { system: g, reduced: red, score: sc };
   }
+  // Gar skrallgransen inte att halla med nagon grundrad byggs systemet utan den
+  if (!best && (opts.redMax ?? RED_MAX_SHARE) < 1) return bestReduced(events, candidates, { ...opts, redMax: 1 }, exclude);
   return best;
 }
 
@@ -775,7 +785,7 @@ async function analyzeDraw(product, draw, ctx, result) {
   const cutoff = events.map((e) => e.match?.matchStart?.slice(0, 10)).filter(Boolean).sort()[0] || new Date().toISOString().slice(0, 10);
   const out = [];
   const experts = await fetchExpertAnalyses(draw.productId, draw.drawNumber);
-  // Matchkontext fran FotMob (elva, franvaro, vila/rotation, domare, vader) for oppna omgangar, bade Stryktipset och
+  // Matchkontext fran FotMob (elva, franvaro, vila/rotation, domare) for oppna omgangar, bade Stryktipset och
   // Europatipset. Visas och sparas; flyttar inte procenten (oddsen ar skarpare). STRYK_CONTEXT=0 stanger av.
   const matchCtx = new Map();
   // Klubb-Elo (clubelo.com) for klubbmatcher utan egen lagmodell (Europacup, nordiska ligor), bara oppna omgangar
@@ -1196,6 +1206,7 @@ async function main() {
     products,
     history,
     backtest: loadBacktests(),
+    missProfile: buildMissProfile(), // vanliga missar i kupongarkivet (turmatcher i webben)
   };
   fs.writeFileSync(OUT, JSON.stringify(out, null, 2), 'utf8');
   log(`Klart -> ${path.relative(root, OUT)}`);

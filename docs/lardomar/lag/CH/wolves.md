@@ -1,11 +1,11 @@
 # Wolves (Championship) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - 2025/26: −0,28 poäng per match mot marknaden. Ligan visar ingen persistens, så räkna inte med att det fortsätter.
-- Stark historik mot Southampton (+0,93 p/match mot marknaden, 12 möten), Burnley (−0,84 p/match mot marknaden, 11 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Stark historik mot Burnley (−0,84 p/match mot marknaden, 11 möten), Southampton (+0,90 p/match mot marknaden, 11 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -39,8 +39,8 @@ Form (äldst → senast): OOVVFOVV · senaste match 2026-09-20
 | Motståndare | M | V-O-F | Mål | Mot marknaden | Kryss mot odds | Senast |
 |---|---|---|---|---|---|---|
 | West Ham | 16 | 7-0-9 | 19–25 | −0,00 | −28 pe | 2026-09-01 2-4 (b) |
-| Southampton | 12 | 9-2-1 | 21–11 | +0,93 | −13 pe | 2025-03-15 2-1 (b) |
 | Burnley | 11 | 1-5-5 | 8–16 | −0,84 | +16 pe | 2026-05-24 1-1 (b) |
+| Southampton | 11 | 8-2-1 | 19–11 | +0,90 | −11 pe | 2025-03-15 2-1 (b) |
 | Sheffield United | 7 | 4-1-2 | 7–4 | +0,11 | −14 pe | 2026-09-13 1-0 (b) |
 | Watford | 6 | 4-0-2 | 11–5 | +0,36 | −29 pe | 2022-03-10 4-0 (h) |
 | Norwich | 4 | 2-2-0 | 6–2 | +0,10 | +25 pe | 2022-05-15 1-1 (h) |
@@ -59,7 +59,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 |---|---|---|---|---|---|
 | 2026-08-22 | Stryk 4967 | Preston - Wolverhampton | 2 ✓ | 64 % | 46 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: César Peixoto. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -86,7 +86,7 @@ Tränare: César Peixoto. Betyg, mål och assist gäller innevarande säsong enl
 | 8 | Jordan James | CDM,CAM,CM | 22 | Wales | 11,1 M€ | 6,38 | 1 | 0 | 1/0 |  |
 | 12 | Boubacar Traoré | CDM,CM | 25 | Mali | 2,4 M€ | 6,30 | 0 | 0 | 0/0 |  |
 | 20 | Tommy Doyle | CDM,CAM | 24 | England | 6,6 M€ | 6,45 | 0 | 2 | 0/0 |  |
-| 27 | Jean-Ricner Bellegarde | CM,CAM,LW,CDM | 28 | Haiti | 12,8 M€ | 6,52 | 0 | 0 | 0/0 |  |
+| 27 | Jean-Ricner Bellegarde | CM,CAM,CDM,LW | 28 | Haiti | 12,8 M€ | 6,52 | 0 | 0 | 0/0 |  |
 | 28 | Fer López | CAM,CM,RW,CDM | 22 | Spain | 13,3 M€ | 7,91 | 4 | 2 | 0/0 |  |
 | 36 | Mateus Mané | CAM,CM,LW,ST | 19 | England | 11,0 M€ | 7,07 | 0 | 0 | 2/0 |  |
 | 38 | Jackson Tchatchoua | RM,RB,RWB | 25 | Cameroon | 13,0 M€ | 6,53 | 0 | 0 | 0/0 |  |

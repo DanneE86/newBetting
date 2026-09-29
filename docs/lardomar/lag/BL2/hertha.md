@@ -1,6 +1,6 @@
 # Hertha (2. Bundesliga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [BL2](../../ligor/BL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [BL2](../../ligor/BL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -58,7 +58,7 @@ Form (äldst → senast): VFVVVVVV · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Stefan Leitl. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -73,19 +73,16 @@ Tränare: Stefan Leitl. Betyg, mål och assist gäller innevarande säsong enlig
 | 22 | Mads Valentin Pedersen | LB | 30 | Denmark | 721 k€ | 7,32 | 0 | 2 | 1/0 |  |
 | 27 | Niklas Kolbe | CB,LB | 29 | Germany | 204 k€ | 7,38 | 0 | 0 | 0/0 |  |
 | 31 | Márton Dárdai | CB | 24 | Hungary | 2,0 M€ | – | 0 | 0 | 0/0 |  |
-| 37 | Toni Leistner | CB | 36 | Germany | 143 k€ | – | 0 | 0 | 0/0 |  |
 | 42 | Deyovaisio Zeefuik | RB,LB | 28 | Netherlands | 518 k€ | 7,15 | 1 | 0 | 1/1 |  |
 | 44 | Linus Gechter | CB,RB | 22 | Germany | 2,7 M€ | 7,53 | 0 | 0 | 2/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 |  | Julius Gottschalk | Midfielder | 20 | Germany | 333 k€ | – | 0 | 0 | 0/0 |  |
-| 6 | Diego Demme | CDM | 34 | Germany | 128 k€ | – | 0 | 0 | 0/0 |  |
 | 8 | Kevin Sessa | CDM,CM | 26 | Germany | 349 k€ | 7,20 | 1 | 0 | 0/0 |  |
 | 21 | Boris Lum | CM,CDM | 18 | Germany | 1,2 M€ | – | 0 | 0 | 0/0 |  |
 | 30 | Paul Seguin | CDM,CM | 31 | Germany | 292 k€ | 6,85 | 0 | 0 | 3/1 |  |
 | 33 | Soufian Gouram | CAM,CM | 20 | Estonia | 257 k€ | 6,88 | 0 | 2 | 0/0 |  |
 | 36 | Kian Todorovic | Midfielder | 19 | Turkiye | – | – | 0 | 0 | 0/0 |  |
 | 41 | Pascal Klemens | CDM | 21 | Germany | 2,1 M€ | 6,90 | 0 | 0 | 1/0 |  |
-| 47 | Selim Telib | CAM | 20 | Egypt | 369 k€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Josip Brekalo | LW,CAM,LM | 28 | Croatia | 1,5 M€ | 8,34 | 4 | 3 | 3/0 |  |
 | 9 | Gustaf Nilsson | ST | 29 | Sweden | 1,2 M€ | 6,25 | 0 | 0 | 0/0 |  |
@@ -96,3 +93,6 @@ Tränare: Stefan Leitl. Betyg, mål och assist gäller innevarande säsong enlig
 | 23 | Jón Thorsteinsson | LW,RW,CAM,RM | 27 | Iceland | 347 k€ | 7,67 | 3 | 1 | 3/0 |  |
 | 26 | Niklas Hildebrandt | Attacker | 18 | Germany | – | – | 0 | 0 | 0/0 |  |
 | 28 | Jelani Ndi | Attacker | 19 | Germany | 667 k€ | – | 0 | 0 | 0/0 |  |
+| 47 | Selim Telib | RW | 20 | Egypt | 369 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (2): Diego Demme (senast 2026-09-29), Toni Leistner (senast 2026-09-29).

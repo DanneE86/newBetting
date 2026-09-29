@@ -1,6 +1,6 @@
 # Excelsior (Eredivisie) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [ED](../../ligor/ED.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [ED](../../ligor/ED.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -54,7 +54,7 @@ Form (äldst → senast): VVFVVOFO · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Ruben den Uil. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -77,16 +77,17 @@ Tränare: Ruben den Uil. Betyg, mål och assist gäller innevarande säsong enli
 | 6 | Daniël van Vianen | CDM,CM | 23 | Netherlands | 346 k€ | 6,94 | 0 | 0 | 0/0 |  |
 | 8 | Irakli Yegoian | CM,CAM,CDM | 22 | Georgia | 1,6 M€ | 7,80 | 2 | 5 | 1/0 |  |
 | 9 | Mario Domínguez | Midfielder | 22 | Spain | 363 k€ | 5,92 | 0 | 0 | 1/0 |  |
-| 10 | Noah Naujoks | CM,ST,CAM,CDM | 24 | Netherlands | 1,1 M€ | 9,01 | 2 | 0 | 0/0 |  |
+| 10 | Noah Naujoks | CM,ST,CAM | 24 | Netherlands | 1,1 M€ | 9,01 | 2 | 0 | 0/0 |  |
 | 18 | Valentin Sulzbacher | CDM,CB | 21 | Austria | 1,5 M€ | 6,62 | 1 | 0 | 2/0 |  |
 | 20 | Lennard Hartjes | CM,CDM,CAM | 23 | Netherlands | 698 k€ | 7,17 | 1 | 0 | 1/0 |  |
-| 25 | Gijs van den Berg | Midfielder | 33 | Netherlands | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Aymen Sliti | RW,LW | 20 | Netherlands | 2,5 M€ | 7,05 | 3 | 1 | 0/0 |  |
 | 11 | Alireza Jahanbakhsh | RW,LW,CM | 33 | Iran | 247 k€ | 6,30 | 0 | 0 | 0/0 |  |
 | 12 | Kasey Bos | LB | 22 | Australia | 642 k€ | 6,56 | 0 | 0 | 0/0 |  |
 | 19 | David Garden | ST | 22 | Netherlands | 205 k€ | 6,90 | 3 | 0 | 0/0 |  |
-| 21 | Ilano Silva Timas | LW,RW,LM | 23 | Cape Verde | 300 k€ | 6,45 | 0 | 0 | 0/0 |  |
+| 21 | Ilano Silva Timas | LW,RW,LM | 24 | Cape Verde | 300 k€ | 6,45 | 0 | 0 | 0/0 |  |
 | 23 | Yaqub Finey | ST | 23 | Sweden | 328 k€ | 6,02 | 0 | 0 | 0/0 |  |
 | 28 | Nesto Groen | ST | 22 | Netherlands | 409 k€ | 6,42 | 1 | 0 | 1/0 |  |
-| 30 | Ágúst Thorsteinsson | RW,LW,ST,RM,CAM,LM | 21 | Iceland | 291 k€ | 6,67 | 0 | 1 | 1/0 |  |
+| 30 | Ágúst Thorsteinsson | RW,LW,ST,RM,LM | 21 | Iceland | 291 k€ | 6,67 | 0 | 1 | 1/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Gijs van den Berg (senast 2026-09-29).

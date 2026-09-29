@@ -1,6 +1,6 @@
 # Peterboro (League One) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -40,8 +40,8 @@ Form (äldst → senast): FVFOFOFF · senaste match 2026-09-26
 
 | Motståndare | M | V-O-F | Mål | Mot marknaden | Kryss mot odds | Senast |
 |---|---|---|---|---|---|---|
-| Blackpool | 14 | 4-2-8 | 26–28 | −0,35 | −13 pe | 2026-08-29 0-4 (b) |
 | Burton | 14 | 7-5-2 | 27–15 | +0,15 | +11 pe | 2026-04-19 1-1 (h) |
+| Blackpool | 13 | 4-1-8 | 24–26 | −0,33 | −19 pe | 2026-08-29 0-4 (b) |
 | Barnsley | 12 | 3-3-6 | 13–18 | −0,25 | −0 pe | 2026-02-17 1-2 (b) |
 | Wycombe | 12 | 4-3-5 | 22–24 | −0,18 | −1 pe | 2026-01-24 2-0 (b) |
 | Oxford | 10 | 5-3-2 | 14–9 | +0,32 | +4 pe | 2024-04-13 0-5 (b) |
@@ -72,7 +72,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-11-08 | Stryk 4926 | Peterborough - Wimbledon | 1 ✓ | 40 % | 37 % |
 | 2025-08-23 | Stryk 4915 | Peterborough - Bradford | X | 19 % | 26 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Ryan Harley. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -86,11 +86,11 @@ Tränare: Ryan Harley. Betyg, mål och assist gäller innevarande säsong enligt
 | 31 | Bastian Smith | Keeper | 20 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 |  | Sam Hughes | CB | 29 | England | 237 k€ | – | 0 | 0 | 0/0 |  |
-| 2 | Carl Johnston | LB,RB,CDM | 24 | Northern Ireland | 240 k€ | 6,84 | 0 | 0 | 2/0 |  |
+| 2 | Carl Johnston | LB,RB,CDM | 24 | Northern Ireland | 240 k€ | 6,86 | 0 | 0 | 2/0 |  |
 | 3 | Evan Weir | CB,LB | 24 | Ireland | 297 k€ | 6,85 | 0 | 0 | 1/0 |  |
 | 3 | Rio Adebisi | LB | 26 | England | 228 k€ | – | 0 | 0 | 0/0 |  |
 | 6 | Thomas O'Connor | CB | 27 | Ireland | 366 k€ | 6,17 | 0 | 0 | 0/0 |  |
-| 12 | Josh Feeney | CB | 21 | England | 669 k€ | 6,71 | 0 | 0 | 2/0 |  |
+| 12 | Josh Feeney | CB | 21 | England | 669 k€ | 6,69 | 0 | 0 | 2/0 |  |
 | 14 | Harley Mills | LB | 20 | England | 601 k€ | 6,61 | 0 | 0 | 1/0 |  |
 | 18 | Lucca Mendonça | CB | 18 | Brazil | – | 6,58 | 0 | 0 | 1/0 |  |
 | 26 | David Okagbue | CB | 22 | Ireland | – | 6,43 | 0 | 0 | 1/1 |  |
@@ -98,10 +98,10 @@ Tränare: Ryan Harley. Betyg, mål och assist gäller innevarande säsong enligt
 | 36 | Noah Freeman | Defender | 19 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 |  | Joe Andrews | CAM | 20 | Wales | – | – | 0 | 0 | 0/0 |  |
-| 4 | Liam Kelly | CDM,CM | 30 | Ireland | 152 k€ | 6,80 | 0 | 0 | 0/0 |  |
+| 4 | Liam Kelly | CDM,CM | 30 | Ireland | 152 k€ | 6,78 | 0 | 0 | 0/0 |  |
 | 7 | Harrison Jones | CDM,CAM,CM | 21 | England | 725 k€ | 6,29 | 0 | 0 | 0/0 |  |
-| 8 | Brandon Khela | CDM,CAM,CM | 21 | England | 489 k€ | 6,56 | 0 | 0 | 2/0 |  |
-| 16 | Ben Woods | CDM,CM,CAM | 24 | England | 350 k€ | 6,71 | 2 | 0 | 0/0 |  |
+| 8 | Brandon Khela | CDM,CAM | 21 | England | 489 k€ | 6,56 | 0 | 0 | 2/0 |  |
+| 16 | Ben Woods | CDM,CM,CAM | 24 | England | 350 k€ | 6,72 | 2 | 0 | 0/0 |  |
 | 20 | Christopher Conn-Clarke | CAM,LM | 24 | Northern Ireland | 236 k€ | 6,56 | 1 | 0 | 0/0 |  |
 | 21 | Patryk Sykut | CAM | 18 | Ukraine | – | – | 0 | 0 | 0/0 |  |
 | 22 | Donay O'Brien-Brady | CDM | 22 | England | 343 k€ | – | 0 | 0 | 0/0 |  |

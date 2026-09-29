@@ -1,6 +1,6 @@
 # Estrela (Primeira Liga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [PT](../../ligor/PT.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [PT](../../ligor/PT.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -50,7 +50,7 @@ Form (äldst → senast): OOOVOVOF · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Pepa. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -74,9 +74,9 @@ Tränare: Pepa. Betyg, mål och assist gäller innevarande säsong enligt FotMob
 | | **Mittfältare** | | | | | | | | | |
 |  | Rodrigo Dudok | RM,LM,CM | 19 | Uruguay | 736 k€ | – | 0 | 0 | 0/0 |  |
 |  | Vuk Pavicevic | Midfielder | 18 | Montenegro | – | – | 0 | 0 | 0/0 |  |
-| 6 | Kevin Höög Jansson | CM,CDM | 25 | Sweden | 516 k€ | 6,18 | 0 | 0 | 0/0 |  |
+| 6 | Kevin Höög Jansson | CM,CDM | 26 | Sweden | 516 k€ | 6,18 | 0 | 0 | 0/0 |  |
 | 8 | Robinho | CM,LW,CDM | 24 | Brazil | 634 k€ | 6,57 | 0 | 1 | 1/0 |  |
-| 14 | Lovro Zvonarek | CM,CAM,CDM | 21 | Croatia | 1,8 M€ | 6,70 | 0 | 0 | 0/0 |  |
+| 14 | Lovro Zvonarek | CM,CAM | 21 | Croatia | 1,8 M€ | 6,70 | 0 | 0 | 0/0 |  |
 | 19 | Joan Jordán | CAM | 32 | Spain | 859 k€ | 6,34 | 0 | 0 | 1/0 |  |
 | 28 | Tom Moustier | CDM,CM,CAM | 24 | France | 636 k€ | – | 0 | 0 | 0/0 |  |
 | 39 | Eddy Doué | CDM,CM,CAM | 20 | Ivory Coast | 760 k€ | 7,37 | 0 | 3 | 4/0 |  |
@@ -88,6 +88,7 @@ Tränare: Pepa. Betyg, mål och assist gäller innevarande säsong enligt FotMob
 | 10 | Ianis Stoica | LW,LM,CAM | 23 | Romania | 1,5 M€ | 7,60 | 4 | 2 | 0/0 |  |
 | 37 | Leandro Antonetti | ST | 23 | Puerto Rico | 546 k€ | 7,40 | 4 | 1 | 1/0 |  |
 | 49 | René Mitongo | ST | 18 | Belgium | 860 k€ | 6,00 | 0 | 0 | 0/0 |  |
-| 80 | Alisson Jesus | Attacker | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 93 | Beni Souza | LW | 23 | France | – | 6,42 | 1 | 1 | 1/0 |  |
 | 99 | Abraham Marcus | RW | 26 | Nigeria | 1,1 M€ | 7,70 | 4 | 1 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Alisson Jesus (senast 2026-09-29).

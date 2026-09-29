@@ -1,6 +1,6 @@
 # Schalke 04 (Bundesliga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [BL](../../ligor/BL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [BL](../../ligor/BL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -62,11 +62,11 @@ Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: s
 | FC Koln | 8 | 0-2-6 | 4–14 | −0,90 | +0 pe | 2025-02-09 0-1 (b) |
 | Hoffenheim | 8 | 1-2-5 | 10–18 | −0,39 | +0 pe | 2023-04-09 0-2 (b) |
 | Leverkusen | 8 | 0-2-6 | 5–18 | −0,54 | +3 pe | 2023-04-01 0-3 (h) |
-| Mainz | 8 | 4-3-1 | 9–8 | +0,48 | +11 pe | 2023-05-05 3-2 (b) |
 | RB Leipzig | 8 | 1-1-6 | 6–24 | −0,24 | −9 pe | 2023-05-27 2-4 (b) |
 | Elversberg | 7 | 3-2-2 | 10–7 | +0,25 | +3 pe | 2026-09-20 0-0 (h) |
 | Freiburg | 7 | 0-2-5 | 2–18 | −0,92 | +2 pe | 2023-04-23 0-4 (b) |
 | M'gladbach | 7 | 1-3-3 | 5–11 | −0,16 | +19 pe | 2023-02-04 0-0 (b) |
+| Mainz | 7 | 3-3-1 | 8–8 | +0,41 | +16 pe | 2023-05-05 3-2 (b) |
 | Union Berlin | 7 | 2-4-1 | 8–10 | +0,25 | +29 pe | 2026-09-11 3-1 (b) |
 | Hamburg | 6 | 0-3-3 | 9–15 | −0,67 | +25 pe | 2025-04-19 2-2 (h) |
 | Stuttgart | 6 | 2-3-1 | 8–9 | +0,25 | +25 pe | 2023-02-25 2-1 (h) |
@@ -79,7 +79,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 |---|---|---|---|---|---|
 | 2026-08-30 | Europa 2603 | Augsburg - Schalke 04 | 1 | 19 % | 31 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Miron Muslić. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -98,10 +98,10 @@ Tränare: Miron Muslić. Betyg, mål och assist gäller innevarande säsong enli
 |  | Tomás Kalas | CB | 33 | Czechia | 95 k€ | – | 0 | 0 | 0/0 |  |
 | 4 | Hasan Kuruçay | CB | 29 | Turkiye | 1,2 M€ | 7,54 | 0 | 0 | 1/0 |  |
 | 5 | Timo Becker | RB,CB | 29 | Germany | 1,2 M€ | 7,26 | 0 | 0 | 0/0 |  |
-| 8 | Robin Gosens | LB,LM,LWB | 32 | Germany | 2,5 M€ | 7,09 | 1 | 0 | 0/0 |  |
+| 8 | Robin Gosens | LB,LWB,LM | 32 | Germany | 2,5 M€ | 7,09 | 1 | 0 | 0/0 |  |
 | 25 | Nikola Katić | CB | 29 | Bosnia and Herzegovina | 1,2 M€ | 7,63 | 0 | 0 | 1/0 |  |
 | 30 | Anton Donkor | LB | 28 | Germany | 261 k€ | – | 0 | 0 | 0/0 |  |
-| 39 | Maximilian Wöber | CDM | 28 | Austria | 1,6 M€ | 6,30 | 1 | 0 | 0/0 |  |
+| 39 | Maximilian Wöber | LB | 28 | Austria | 1,6 M€ | 6,30 | 1 | 0 | 0/0 |  |
 | 43 | Mertcan Ayhan | CB | 20 | Turkiye | 1,2 M€ | 6,33 | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 |  | Yassin Ben Balla | CM | 30 | France | 83 k€ | – | 0 | 0 | 0/0 |  |
@@ -112,14 +112,14 @@ Tränare: Miron Muslić. Betyg, mål och assist gäller innevarande säsong enli
 | 19 | Kenan Karaman | CAM,LW | 32 | Turkiye | 1,4 M€ | 7,29 | 0 | 0 | 0/0 |  |
 | 21 | Dejan Ljubičić | RW,CAM,CM,RM,RWB | 28 | Austria | 2,0 M€ | 6,26 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
 | 23 | Soufian El-Faouzi | CDM,CM | 24 | Morocco | 2,0 M€ | 7,24 | 0 | 0 | 0/0 |  |
-| 24 | Adil Aouchiche | LW,CDM,CAM,CM,LM,RW | 24 | Algeria | 2,1 M€ | 7,44 | 1 | 0 | 0/0 |  |
+| 24 | Adil Aouchiche | LW,CDM,CM,CAM,LM,RW | 24 | Algeria | 2,1 M€ | 7,44 | 1 | 0 | 0/0 |  |
 | 27 | Finn Porath | LM,RWB | 29 | Germany | 523 k€ | – | 0 | 0 | 0/0 |  |
 | 33 | Vitalie Becker | LWB,LB | 21 | Germany | 2,3 M€ | 6,06 | 0 | 0 | 0/0 |  |
 | 37 | Max Grüger | CDM | 21 | Germany | 1,4 M€ | – | 0 | 0 | 0/0 |  |
 | 38 | Luca Vozar | Midfielder | 19 | Germany | – | 5,98 | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 |  | Zaid Amoussou-Tchibara | Attacker | 20 | Togo | – | – | 0 | 0 | 0/0 |  |
-| 7 | Hee-Chan Hwang | ST,LW,CAM | 30 | South Korea | 6,0 M€ | 6,52 | 0 | 1 | 0/0 |  |
+| 7 | Hee-Chan Hwang | ST,CAM,LW | 30 | South Korea | 6,0 M€ | 6,52 | 0 | 1 | 0/0 |  |
 | 10 | Edin Džeko | ST | 40 | Bosnia and Herzegovina | 662 k€ | 6,15 | 0 | 0 | 0/0 |  |
 | 11 | Bryan Lasme | ST | 27 | France | 365 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 15 | Emil Højlund | ST | 21 | Denmark | 816 k€ | – | 0 | 0 | 0/0 |  |

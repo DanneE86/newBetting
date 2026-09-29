@@ -1,6 +1,6 @@
 # Internacional de Bogotá (Primera A) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [COL](../../ligor/COL.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [COL](../../ligor/COL.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -41,7 +41,7 @@ Form senaste 8 (äldst → senast): OOOOVFFO · senaste match 2026-09-26
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Ricardo Valiño. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -70,6 +70,7 @@ Tränare: Ricardo Valiño. Betyg, mål och assist gäller innevarande säsong en
 | 14 | Mateo Santamaria | CAM | 21 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 15 | Dannovi Quiñones | CDM,CM | 25 | Colombia | 409 k€ | – | 0 | 0 | 0/0 |  |
 | 24 | Rubén Manjarrés | CDM,CM | 26 | Colombia | 310 k€ | – | 0 | 0 | 0/0 |  |
+| 32 | Jhon Palomeque | Midfielder | 18 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Fabricio Sanguinetti | ST,LM,LW | 26 | Uruguay | 529 k€ | – | 0 | 0 | 0/0 |  |
 | 9 | Diego Duarte | ST,LW,RW | 24 | Paraguay | 397 k€ | – | 0 | 0 | 0/0 |  |
@@ -78,6 +79,7 @@ Tränare: Ricardo Valiño. Betyg, mål och assist gäller innevarande säsong en
 | 18 | Emanuel Arboleda | Attacker | 0 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 19 | Yeider García | ST | 19 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 21 | Yojan Garcés | ST | 20 | Colombia | – | – | 0 | 0 | 0/0 |  |
-| 22 | Sebastián Giraldo | Attacker | 22 | Colombia | 615 k€ | – | 0 | 0 | 0/0 |  |
 | 23 | Johan Caballero | RW,RM,CAM,LW | 28 | Colombia | 405 k€ | – | 0 | 0 | 0/0 |  |
 | 27 | Emilio Gutiérrez | Attacker | 19 | Colombia | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Sebastián Giraldo (senast 2026-09-29).

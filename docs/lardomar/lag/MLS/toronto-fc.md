@@ -1,6 +1,6 @@
 # Toronto FC (MLS) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -72,7 +72,7 @@ Form (äldst → senast): VOVOOVFF · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Robin Fraser. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -104,7 +104,7 @@ Tränare: Robin Fraser. Betyg, mål och assist gäller innevarande säsong enlig
 | 9 | Josh Sargent | ST | 26 | USA | 14,2 M€ | 7,12 | 7 | 2 | 0/0 |  |
 | 11 | Derrick Etienne | ST,LW,RW,LM,CAM | 29 | Haiti | 254 k€ | 6,57 | 4 | 1 | 1/0 |  |
 | 17 | Emilio Aristizábal | ST,RW | 21 | Colombia | 1,3 M€ | 6,50 | 4 | 0 | 1/0 |  |
-| 20 | Dániel Sallói | LW,LM,RW,CAM,CM | 30 | Hungary | 1,2 M€ | 7,04 | 7 | 6 | 2/0 |  |
+| 20 | Dániel Sallói | LW,RW,CAM,LM,CM | 30 | Hungary | 1,2 M€ | 7,04 | 7 | 6 | 2/0 |  |
 | 27 | Alejandro Piedrahita | LW,RW | 24 | Colombia | 837 k€ | 5,97 | 0 | 0 | 0/0 |  |
 | 78 | Malik Henry | RW,RM | 24 | Canada | 242 k€ | 6,22 | 0 | 0 | 3/0 |  |
 | 90 | Lewis Morgan | ST,LW | 29 | Scotland | 566 k€ | 6,41 | 0 | 3 | 1/0 |  |

@@ -1,6 +1,6 @@
 # HNK Gorica (HNL) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [HR](../../ligor/HR.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [HR](../../ligor/HR.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -29,7 +29,7 @@ Form senaste 8 (äldst → senast): FFFFOFOV · senaste match 2026-09-19
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Mario Carević. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -57,7 +57,7 @@ Tränare: Mario Carević. Betyg, mål och assist gäller innevarande säsong enl
 | 7 | Ognjen Bakić | RW,CDM,CAM | 23 | Montenegro | 319 k€ | 6,37 | 0 | 0 | 0/0 |  |
 | 8 | Jakov Pranjić | CAM | 25 | Croatia | 273 k€ | 6,92 | 1 | 0 | 0/0 |  |
 | 14 | Stjepan Kučiš | CAM | 19 | Croatia | 418 k€ | 6,33 | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
-| 24 | Domagoj Pavičić | CAM,CDM | 32 | Croatia | 138 k€ | 6,75 | 0 | 1 | 1/0 |  |
+| 24 | Domagoj Pavičić | CAM | 32 | Croatia | 138 k€ | 6,75 | 0 | 1 | 1/0 |  |
 | 25 | Bruno Bogojević | LWB,LW,LM | 28 | Croatia | 200 k€ | 6,94 | 3 | 0 | 0/0 |  |
 | 36 | Ante Kavelj | CDM,CM | 21 | Croatia | 1,6 M€ | 6,63 | 0 | 0 | 1/0 | skadad, åter A few weeks |
 | 66 | Juraj Frigan | CDM | 17 | Croatia | – | 6,74 | 0 | 1 | 1/0 |  |

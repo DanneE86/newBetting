@@ -1,6 +1,6 @@
 # Oxford (League One) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -41,12 +41,12 @@ Form (äldst → senast): VFOVFVVO · senaste match 2026-09-19
 | Burton | 12 | 8-2-2 | 32–12 | +0,48 | −9 pe | 2026-09-12 3-0 (h) |
 | Peterboro | 10 | 2-3-5 | 9–14 | −0,36 | +4 pe | 2024-04-13 5-0 (h) |
 | Plymouth | 10 | 4-1-5 | 13–15 | −0,22 | −16 pe | 2025-01-14 1-1 (b) |
-| AFC Wimbledon | 8 | 4-1-3 | 15–8 | −0,06 | −14 pe | 2021-12-29 3-0 (h) |
 | Blackpool | 8 | 3-3-2 | 8–7 | +0,13 | +9 pe | 2024-02-10 1-1 (b) |
 | Doncaster | 8 | 3-3-2 | 15–10 | −0,09 | +13 pe | 2022-04-30 1-1 (h) |
 | Milton Keynes Dons | 8 | 3-3-2 | 11–10 | −0,02 | +10 pe | 2026-08-15 2-2 (h) |
 | Sheffield Weds | 8 | 5-2-1 | 14–9 | +0,92 | −2 pe | 2026-04-25 4-1 (h) |
 | Wycombe | 8 | 2-3-3 | 5–8 | −0,36 | +9 pe | 2024-02-17 0-0 (b) |
+| AFC Wimbledon | 7 | 4-1-2 | 14–6 | +0,10 | −12 pe | 2021-12-29 3-0 (h) |
 | Cambridge | 7 | 3-2-2 | 9–8 | −0,20 | +2 pe | 2026-09-19 1-1 (h) |
 | Wigan | 6 | 3-1-2 | 11–10 | +0,12 | −11 pe | 2024-02-13 4-2 (h) |
 | Barnsley | 5 | 1-1-3 | 6–8 | −0,44 | −8 pe | 2024-01-23 0-1 (h) |
@@ -66,7 +66,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 |---|---|---|---|---|---|
 | 2026-09-19 | Stryk 4971 | Oxford - Cambridge | X | 56 % | 45 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Aaron Ramsey. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -93,11 +93,12 @@ Tränare: Aaron Ramsey. Betyg, mål och assist gäller innevarande säsong enlig
 | 20 | Luka Lynch | LB,CAM | 19 | England | – | 6,33 | 0 | 1 | 0/0 |  |
 | 32 | Louie Sibley | CAM | 25 | England | 692 k€ | 6,87 | 1 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-|  | Marselino Ferdinan | RW | 22 | Indonesia | 434 k€ | – | 0 | 0 | 0/0 |  |
 | 9 | Mark Harris | ST | 27 | Wales | 346 k€ | 7,19 | 3 | 1 | 2/0 |  |
-| 10 | Aidomo Emakhu | LW,RW,RM | 22 | Ireland | 888 k€ | 6,48 | 0 | 0 | 0/0 |  |
+| 10 | Aidomo Emakhu | LW,RW | 22 | Ireland | 888 k€ | 6,48 | 0 | 0 | 0/0 |  |
 | 19 | Gatlin O'Donkor | RW | 21 | England | 378 k€ | 7,00 | 3 | 1 | 0/0 |  |
 | 23 | Siriki Dembélé | LW | 30 | Scotland | 395 k€ | 7,46 | 2 | 1 | 0/0 |  |
 | 27 | Leo Snowden | RW | 18 | England | – | 6,86 | 0 | 1 | 0/0 |  |
-| 32 | Jin-Woo Jeon | RW,LW | 27 | South Korea | 344 k€ | – | 0 | 0 | 0/0 |  |
+| 32 | Jin-Woo Jeon | LW,RW | 27 | South Korea | 344 k€ | – | 0 | 0 | 0/0 |  |
 | 57 | Mo Missanga | RW | 18 | England | – | 7,10 | 1 | 1 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Marselino Ferdinan (senast 2026-09-29).

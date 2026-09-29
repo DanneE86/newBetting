@@ -1,6 +1,6 @@
 # Rosario Central (Liga Profesional) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -72,7 +72,7 @@ Form (äldst → senast): VVVOFOVV · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Jorge Almirón. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -109,7 +109,7 @@ Tränare: Jorge Almirón. Betyg, mål och assist gäller innevarande säsong enl
 | 44 | Paolo Giaccone | Midfielder | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Marcelo Cabrera | Attacker | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 8 | Jaminton Campaz | LW,CAM,LM | 26 | Colombia | 2,3 M€ | – | 0 | 0 | 0/0 |  |
+| 8 | Jaminton Campaz | LW,CAM | 26 | Colombia | 2,3 M€ | – | 0 | 0 | 0/0 |  |
 | 16 | Tomás Badaloni | ST | 26 | Argentina | 2,7 M€ | – | 0 | 0 | 0/0 |  |
 | 18 | Julián Fernández | LW,RW,CAM | 22 | Argentina | 2,2 M€ | – | 0 | 0 | 0/0 |  |
 | 22 | Enzo Copetti | ST,LW | 30 | Argentina | 1,8 M€ | – | 0 | 0 | 0/0 |  |

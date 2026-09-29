@@ -1,6 +1,6 @@
 # Hajduk Split (HNL) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [HR](../../ligor/HR.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [HR](../../ligor/HR.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -29,7 +29,7 @@ Form senaste 8 (äldst → senast): FOVVVVVF · senaste match 2026-09-20
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Gonzalo García. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -46,7 +46,7 @@ Tränare: Gonzalo García. Betyg, mål och assist gäller innevarande säsong en
 | 5 | Alec Van Hoorenbeeck | CB | 27 | Belgium | 410 k€ | 7,10 | 0 | 0 | 1/0 |  |
 | 6 | Dennis Hadžikadunić | CB | 28 | Bosnia and Herzegovina | 784 k€ | 6,33 | 0 | 0 | 0/0 |  |
 | 14 | Ron Raçi | CB | 24 | Kosovo | 396 k€ | 6,67 | 0 | 0 | 1/0 |  |
-| 15 | Dario Marešić | CB | 26 | Austria | 1,2 M€ | 7,09 | 0 | 0 | 1/0 |  |
+| 15 | Dario Marešić | CB | 27 | Austria | 1,2 M€ | 7,09 | 0 | 0 | 1/0 |  |
 | 17 | Dario Melnjak | LB,LW | 33 | Croatia | 255 k€ | 7,40 | 0 | 1 | 0/0 |  |
 | 22 | Mathieu Acapandié | RB | 21 | Madagascar | 510 k€ | 6,69 | 0 | 0 | 1/0 |  |
 | 32 | Šimun Hrgović | LB | 22 | Croatia | 2,3 M€ | 7,29 | 1 | 2 | 0/0 |  |

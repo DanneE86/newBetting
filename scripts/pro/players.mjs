@@ -119,6 +119,35 @@ export function summarise(missing) {
   return { missingShare: total, players: missing };
 }
 
+const foldName = (s) => String(s || '').replace(/[øØ]/g, 'o').replace(/[łŁ]/g, 'l').replace(/ı/g, 'i').replace(/ß/g, 'ss').normalize('NFD')
+  .replace(/[̀-ͯ]/g, '').toLowerCase().replace(/oe/g, 'o').replace(/[^a-z ]/g, ' ').replace(/\s+/g, ' ').trim();
+/** Samma spelare trots olika stavning (Understat "Martin Odegaard" / FotMob "Martin Ødegaard", "Richarlison de Andrade"). */
+export function samePlayer(a, b) {
+  const x = foldName(a), y = foldName(b);
+  if (!x || !y) return false;
+  if (x === y || ` ${y} `.includes(` ${x} `) || ` ${x} `.includes(` ${y} `)) return true;
+  const xs = x.split(' '), ys = y.split(' ');
+  if (xs.length > 1 && xs.length === ys.length && xs.every((w) => ys.includes(w))) return true; // Lee Kang-In / Kang-In Lee
+  return xs.length > 1 && ys.length > 1 && xs.at(-1) === ys.at(-1) && xs[0][0] === ys[0][0];
+}
+const lastName = (s) => foldName(s).split(' ').at(-1);
+
+/**
+ * Kommande match: bara spelare som finns i lagets aktuella trupp (data/trupper, kontrollerad mot FPL/Transfermarkt).
+ * Understat-andelen sträcker sig ett år bakåt, så sålda spelare skulle annars räknas som frånvarande.
+ * Kvar räknas: samma namn, samma unika efternamn i truppen (Toni/Antonio Martínez), eller spelat för laget
+ * senaste RECENT_DAYS (smeknamn som Cala / Álex Calatrava). Saknas truppen returneras listan oförändrad.
+ */
+const RECENT_DAYS = 21;
+export function inCurrentSquad(shares, squadPlayers, date) {
+  if (!squadPlayers?.length) return shares;
+  const lastCount = new Map();
+  for (const s of squadPlayers) lastCount.set(lastName(s.name), (lastCount.get(lastName(s.name)) ?? 0) + 1);
+  return shares.filter((p) => squadPlayers.some((s) => samePlayer(p.name, s.name))
+    || lastCount.get(lastName(p.name)) === 1
+    || (date && p.lastApp && daysBetween(p.lastApp, date) <= RECENT_DAYS));
+}
+
 /** Understat-match-id for en store-match (samma lag + datum +-1). */
 export function findUsMatch(model, league, home, away, date) {
   for (const m of model.teamMatches.get(`${league}|${home}`) ?? []) {

@@ -1,6 +1,6 @@
 # Slaven Belupo Koprivnica (HNL) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [HR](../../ligor/HR.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [HR](../../ligor/HR.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -29,7 +29,7 @@ Form senaste 8 (äldst → senast): FFFVFVFO · senaste match 2026-09-18
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Silvijo Čabraja. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -49,7 +49,7 @@ Tränare: Silvijo Čabraja. Betyg, mål och assist gäller innevarande säsong e
 | 5 | Ivan Cvetko | CB | 20 | Croatia | 222 k€ | 5,93 | 0 | 0 | 0/0 |  |
 | 6 | Tomislav Božić | CB | 38 | Croatia | 128 k€ | 6,83 | 0 | 0 | 1/0 |  |
 | 18 | Filip Krušelj | RB,RWB,RM | 21 | Croatia | – | 6,38 | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
-| 33 | Karlo Išasegi | RB,LB | 26 | Croatia | 199 k€ | 6,75 | 0 | 1 | 1/0 |  |
+| 33 | Karlo Išasegi | LB,RB | 26 | Croatia | 199 k€ | 6,75 | 0 | 1 | 1/0 |  |
 | 35 | Leonard Zuta | LB | 34 | North Macedonia | 140 k€ | – | 0 | 0 | 0/0 | skadad, åter Early December 2026 |
 | 77 | Itsuki Urata | LB | 29 | Japan | 127 k€ | 5,78 | 0 | 0 | 0/0 |  |
 | 99 | Filip Kutleša | CB | 17 | Croatia | – | 6,27 | 0 | 0 | 0/1 |  |
@@ -66,7 +66,7 @@ Tränare: Silvijo Čabraja. Betyg, mål och assist gäller innevarande säsong e
 | | **Anfallare** | | | | | | | | | |
 | 7 | Marko Dabro | ST,RW | 29 | Croatia | 194 k€ | 6,78 | 0 | 2 | 1/0 |  |
 | 8 | Lovro Banovec | LW,CAM,CDM,RW | 24 | Croatia | 479 k€ | 6,39 | 0 | 0 | 0/0 |  |
-| 11 | Josip Mitrović | RW,LW | 26 | Croatia | 629 k€ | 7,20 | 1 | 1 | 0/0 |  |
+| 11 | Josip Mitrović | LW,RW | 26 | Croatia | 629 k€ | 7,20 | 1 | 1 | 0/0 |  |
 | 14 | Losika Ratshukudu | ST | 20 | Botswana | – | 5,96 | 0 | 0 | 1/0 |  |
 | 19 | Lukas Zahora | Attacker | 19 | Croatia | 362 k€ | – | 0 | 0 | 0/0 | skadad, åter A few weeks |
 | 27 | Alen Grgić | LW,RB | 32 | Croatia | 138 k€ | 6,82 | 0 | 0 | 0/0 | skadad, åter Mid December 2026 |

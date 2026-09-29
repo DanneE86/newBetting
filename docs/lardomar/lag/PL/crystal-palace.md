@@ -1,6 +1,6 @@
 # Crystal Palace (Premier League) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -116,7 +116,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-08-24 | Europa 2499 | Crystal Palace - Nottingham | X | 42 % | 40 % |
 | 2025-08-17 | Europa 2497 | Chelsea - Crystal Palace | X | 14 % | 21 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Pierre Sage. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -141,7 +141,7 @@ Tränare: Pierre Sage. Betyg, mål och assist gäller innevarande säsong enligt
 | 7 | Ismaïla Sarr | CAM,RW,LW,ST | 28 | Senegal | 30,3 M€ | – | 0 | 0 | 0/0 |  |
 | 8 | Jefferson Lerma | CDM,CM,CB | 31 | Colombia | 3,7 M€ | 7,12 | 0 | 0 | 1/0 |  |
 | 9 | Edward Nketiah | CAM,ST | 27 | England | 12,7 M€ | 6,80 | 0 | 1 | 0/0 |  |
-| 10 | Yéremi Pino | CAM,LW,RW,LM | 23 | Spain | 35,8 M€ | 6,79 | 0 | 0 | 1/0 |  |
+| 10 | Yéremi Pino | CAM,LW,RW | 23 | Spain | 35,8 M€ | 6,79 | 0 | 0 | 1/0 |  |
 | 12 | Zavier Gozo | RWB,RM,RW,LW | 19 | USA | 2,5 M€ | 5,75 | 0 | 0 | 0/0 |  |
 | 18 | Daichi Kamada | CDM,CAM,CM,RW | 30 | Japan | 8,2 M€ | 7,33 | 0 | 3 | 1/0 |  |
 | 19 | Will Hughes | CDM,CM | 31 | England | 3,5 M€ | 6,29 | 0 | 0 | 0/0 |  |

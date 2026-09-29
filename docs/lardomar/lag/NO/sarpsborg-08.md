@@ -1,6 +1,6 @@
 # Sarpsborg 08 (Eliteserien) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [NO](../../ligor/NO.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [NO](../../ligor/NO.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -57,7 +57,7 @@ Form (äldst → senast): VOFFOOOF · senaste match 2026-09-18
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Even Sel. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -82,9 +82,8 @@ Tränare: Even Sel. Betyg, mål och assist gäller innevarande säsong enligt Fo
 | | **Mittfältare** | | | | | | | | | |
 | 6 | Aimar Sher | CDM,CM | 23 | Iraq | 1,5 M€ | 7,15 | 1 | 0 | 3/0 |  |
 | 8 | Sander Christiansen | CDM,CM | 25 | Norway | 610 k€ | 6,99 | 1 | 1 | 2/0 |  |
-| 14 | Jo Inge Berget | CAM,ST | 36 | Norway | 188 k€ | 6,22 | 0 | 0 | 1/0 |  |
 | 18 | Bop Gueye | CAM | 19 | Senegal | – | 6,33 | 0 | 0 | 0/0 |  |
-| 22 | Victor Halvorsen | CM,CAM,CDM,LW | 22 | Norway | 1,1 M€ | 6,82 | 3 | 2 | 0/0 |  |
+| 22 | Victor Halvorsen | CM,CDM,CAM,LW | 22 | Norway | 1,1 M€ | 6,82 | 3 | 2 | 0/0 |  |
 | 26 | Chris Kouakou | CM | 26 | Ivory Coast | 238 k€ | – | 0 | 0 | 0/0 |  |
 | 33 | Andreas Nibe | CAM,ST,CM,CDM | 23 | Denmark | 589 k€ | 6,82 | 3 | 0 | 0/0 |  |
 | 77 | Olaus Jair Skarsem | LM,CAM,CM | 28 | Norway | 280 k€ | 6,74 | 1 | 0 | 1/0 |  |
@@ -95,3 +94,5 @@ Tränare: Even Sel. Betyg, mål och assist gäller innevarande säsong enligt Fo
 | 15 | Michael Opoku | LW | 21 | Denmark | 861 k€ | 6,60 | 0 | 1 | 0/0 | skadad, åter Mid October 2026 |
 | 16 | Frederik Carstensen | LW | 24 | Denmark | 464 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 17 | Noa Williams | LW,ST,LM | 24 | Sweden | 774 k€ | 6,52 | 0 | 1 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Jo Inge Berget (senast 2026-09-29).

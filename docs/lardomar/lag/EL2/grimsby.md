@@ -1,6 +1,6 @@
 # Grimsby (League Two) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -67,7 +67,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-05-02 | Stryk 4951 | Tranmere - Grimsby | X | 50 % | 45 % |
 | 2026-02-11 | Europa 2548 | Grimsby - Accrington | 1 ✓ | 55 % | 50 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: David Artell. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -75,28 +75,26 @@ Tränare: David Artell. Betyg, mål och assist gäller innevarande säsong enlig
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
 | 1 | Harvey Cartwright | GK | 24 | England | 160 k€ | – | 0 | 0 | 0/0 |  |
-| 31 | Christy Pym | GK | 31 | Northern Ireland | 109 k€ | 6,94 | 0 | 0 | 0/0 |  |
+| 31 | Christy Pym | GK | 31 | Northern Ireland | 109 k€ | 7,03 | 0 | 0 | 0/0 |  |
 | 41 | Sebastian Auton | GK | 19 | England | – | 6,29 | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Maldini Kacurri | CB | 20 | Albania | 630 k€ | 7,14 | 0 | 0 | 2/0 |  |
+| 2 | Maldini Kacurri | CB | 20 | Albania | 630 k€ | 7,16 | 0 | 0 | 2/0 |  |
 | 3 | Jayden Sweeney | LB | 24 | England | 171 k€ | 7,28 | 0 | 1 | 1/0 |  |
-| 5 | Harvey Rodgers | RB,CB | 29 | England | 193 k€ | 7,15 | 1 | 1 | 1/0 |  |
+| 5 | Harvey Rodgers | RB,CB | 29 | England | 193 k€ | 7,11 | 1 | 1 | 1/0 |  |
 | 6 | Sam Lavelle | CB | 29 | Scotland | 86 k€ | – | 0 | 0 | 0/0 |  |
 | 12 | Joe Foulkes | RWB | 23 | England | 153 k€ | – | 0 | 0 | 0/0 |  |
-| 16 | Reece Staunton | LB | 24 | England | 265 k€ | 6,28 | 0 | 0 | 0/0 |  |
-| 17 | Cameron McJannet | CB | 28 | England | 237 k€ | 7,35 | 0 | 0 | 2/0 |  |
+| 16 | Reece Staunton | LB | 24 | England | 265 k€ | 6,34 | 0 | 0 | 0/0 |  |
+| 17 | Cameron McJannet | CB | 28 | England | 237 k€ | 7,31 | 0 | 0 | 2/0 |  |
 | 24 | Douglas Tharme | CB | 27 | Wales | – | – | 0 | 0 | 0/0 |  |
 | 26 | Edon Pruti | CB,LB | 24 | England | 180 k€ | 6,93 | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-|  | Evan Khouri | CAM | 23 | England | 304 k€ | – | 0 | 0 | 0/0 |  |
-| 4 | Kieran Green | CAM,RW | 29 | England | 191 k€ | 7,32 | 3 | 2 | 3/0 |  |
-| 7 | Jamie Walker | CAM,CDM | 33 | Scotland | 88 k€ | 6,41 | 0 | 0 | 0/0 |  |
+| 4 | Kieran Green | CAM,RW | 29 | England | 191 k€ | 7,33 | 3 | 2 | 3/0 |  |
+| 7 | Jamie Walker | CAM,CDM | 33 | Scotland | 88 k€ | 6,47 | 0 | 0 | 0/0 |  |
 | 8 | Cian Doyle | CAM | 21 | Ireland | – | 6,82 | 1 | 0 | 0/0 |  |
-| 11 | Ryley Reynolds | CAM | 21 | England | – | 6,12 | 0 | 0 | 0/0 |  |
+| 11 | Ryley Reynolds | CAM | 21 | England | – | 5,96 | 0 | 0 | 0/0 |  |
 | 15 | Géza Dávid Turi | CDM,CM,CAM | 24 | Faroe Islands | 202 k€ | 7,53 | 1 | 1 | 1/0 |  |
 | 18 | Kristian Catchpole | Midfielder | 17 | England | – | – | 0 | 0 | 0/0 |  |
 | 23 | Henry Brown | CAM | 19 | England | 375 k€ | – | 0 | 0 | 0/0 |  |
-| 27 | Fortune Onoh | CDM | 0 | England | – | – | 0 | 0 | 0/0 |  |
 | 28 | Finlay Cartwright | CM,RW,CAM | 19 | England | – | 6,63 | 0 | 0 | 0/0 |  |
 | 29 | Mark Shelton | CM,CDM,CAM | 30 | England | 191 k€ | 6,99 | 1 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
@@ -106,6 +104,7 @@ Tränare: David Artell. Betyg, mål och assist gäller innevarande säsong enlig
 | 19 | Josh Andrews | ST | 24 | England | 244 k€ | 5,70 | 0 | 0 | 0/0 |  |
 | 22 | Cameron Gardner | LW | 21 | England | 308 k€ | – | 0 | 0 | 0/0 |  |
 | 30 | Charles Vernam | LW | 29 | England | 159 k€ | 7,14 | 0 | 2 | 1/0 |  |
-| 35 | Elliot Smith | Attacker | 0 | England | – | – | 0 | 0 | 0/0 |  |
-| 39 | Andy Cook | ST | 35 | England | 136 k€ | 6,98 | 2 | 0 | 1/0 |  |
+| 39 | Andy Cook | ST | 35 | England | 136 k€ | 6,99 | 2 | 0 | 1/0 |  |
 | 42 | Harvey Booth | Attacker | 17 | England | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (3): Evan Khouri (senast 2026-09-29), Fortune Onoh (senast 2026-09-29), Elliot Smith (senast 2026-09-29).

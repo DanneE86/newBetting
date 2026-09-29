@@ -91,6 +91,7 @@ test('hittar landskamp med svenska namn (Bosnien & Hercegovina - Sverige) och fy
   expect(cx.stadium.city).toBe('Zenica');
   expect(cx.form).toEqual({ home: 'WL', away: 'D' });
   expect(cx.h2h).toEqual({ homeWins: 1, draws: 2, awayWins: 3 });
+  expect(cx).not.toHaveProperty('weather'); // vader paverkar inte utfallet och hamtas inte
   // Hamtar bara detaljer for den matchade matchen
   expect(calls.filter((c) => c.includes('matchDetails'))).toHaveLength(1);
 });
@@ -225,11 +226,11 @@ test('contextNotes: rotation bara inom 4 dagar och i en annan turnering', async 
   expect(rot(4, 'Champions League')).toEqual([]);
 });
 
-test('contextNotes: domare alltid, väder bara vid blåst (>= 10 m/s) eller hög nederbördsrisk (>= 60 %)', async () => {
+test('contextNotes: domare alltid, aldrig väder (påverkar inte utfallet)', async () => {
   const { contextNotes } = await load();
   const w = (windSpeed: number, precipChance: number) => contextNotes(cxOf(side(), side(), { referee: 'Glenn Nyberg', weather: { windSpeed, precipChance, description: 'Regn' } }), 'A', 'B');
   expect(w(4, 20)).toContain('Domare: Glenn Nyberg.');
   expect(w(4, 20).some((s: string) => s.startsWith('Väder'))).toBe(false);
-  expect(w(10, 0)).toContain('Väder: Regn, vind 10 m/s, risk för nederbörd 0 %.');
-  expect(w(0, 60).some((s: string) => s.startsWith('Väder'))).toBe(true);
+  expect(w(20, 0).some((s: string) => s.startsWith('Väder'))).toBe(false);
+  expect(w(0, 90).some((s: string) => s.startsWith('Väder'))).toBe(false);
 });

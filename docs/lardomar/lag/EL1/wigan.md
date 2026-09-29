@@ -1,6 +1,6 @@
 # Wigan (League One) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -69,7 +69,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-05-02 | Stryk 4951 | Stevenage - Wigan | 1 | 10 % | 16 % |
 | 2025-10-04 | Stryk 4921 | Plymouth - Wigan | X | 28 % | 30 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Gary Caldwell. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -91,7 +91,7 @@ Tränare: Gary Caldwell. Betyg, mål och assist gäller innevarande säsong enli
 | 6 | Jensen Weir | CDM,CM,RW,RWB,CAM | 24 | England | 376 k€ | 7,05 | 2 | 0 | 2/0 |  |
 | 7 | Fraser Murray | LWB,RW,RWB,CAM,RM | 27 | Scotland | 387 k€ | 6,56 | 0 | 0 | 0/0 |  |
 | 8 | Max Power | CDM,CM | 33 | England | 264 k€ | 7,07 | 1 | 1 | 2/0 |  |
-| 10 | Reggie Walsh | CAM,CDM,LW,CM,ST | 17 | England | – | 6,45 | 0 | 0 | 1/0 |  |
+| 10 | Reggie Walsh | CDM,CAM,LW,CM,ST | 17 | England | – | 6,45 | 0 | 0 | 1/0 |  |
 | 13 | Luke Harris | CAM,LW,CDM | 21 | Wales | 889 k€ | 6,26 | 0 | 0 | 0/0 |  |
 | 14 | Ryan Trevitt | CAM | 23 | England | 236 k€ | 6,20 | 0 | 0 | 0/0 |  |
 | 17 | Akeel Higgins | CAM,ST,LW | 21 | England | 478 k€ | 6,47 | 1 | 0 | 0/0 |  |
@@ -100,8 +100,6 @@ Tränare: Gary Caldwell. Betyg, mål och assist gäller innevarande säsong enli
 | 20 | Callum McManaman | RWB | 35 | England | 137 k€ | – | 0 | 0 | 0/0 |  |
 | 22 | Jon Mellish | LM,LW,LWB,LB,CB | 29 | England | 255 k€ | 6,65 | 0 | 0 | 2/0 |  |
 | 25 | Joe Adams | LW | 22 | England | – | – | 0 | 0 | 0/0 |  |
-| 44 | Ronan Darcy | CAM,RW,CDM | 25 | England | 240 k€ | – | 0 | 0 | 0/0 |  |
-| 51 | Harry Rimmer | CAM | 19 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 9 | Sonny Perkins | ST,RW,CAM | 22 | England | 561 k€ | 6,36 | 1 | 0 | 0/0 |  |
 | 11 | Dara Costelloe | ST,CAM | 23 | Ireland | 399 k€ | 6,70 | 0 | 1 | 2/0 |  |
@@ -109,3 +107,5 @@ Tränare: Gary Caldwell. Betyg, mål och assist gäller innevarande säsong enli
 | 25 | Scott Hogan | ST | 34 | Ireland | 170 k€ | 5,69 | 0 | 0 | 0/0 |  |
 | 27 | Bradley Burrowes | ST,RW,RB,CAM | 18 | England | 2,0 M€ | 6,66 | 0 | 1 | 0/0 |  |
 | 38 | Christian Saydee | ST,CAM | 24 | England | 480 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (2): Ronan Darcy (senast 2026-09-29), Harry Rimmer (senast 2026-09-29).

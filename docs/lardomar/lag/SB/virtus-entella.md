@@ -1,6 +1,6 @@
 # Virtus Entella (Serie B) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [SB](../../ligor/SB.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [SB](../../ligor/SB.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -52,7 +52,7 @@ Form (äldst → senast): VFVFFOVO · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Andrea Chiappella. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -74,7 +74,7 @@ Tränare: Andrea Chiappella. Betyg, mål och assist gäller innevarande säsong 
 |  | Gabriele Costa | Midfielder | 21 | Italy | 337 k€ | – | 0 | 0 | 0/0 |  |
 | 5 | Niccolò Squizzato | CM,CDM | 24 | Italy | 576 k€ | 7,24 | 0 | 0 | 0/0 |  |
 | 7 | Davide Bariti | RWB,RM,CAM | 35 | Italy | 307 k€ | – | 0 | 0 | 0/0 |  |
-| 8 | Luca Vignali | RM,CM,CB | 30 | Italy | 197 k€ | 6,72 | 0 | 1 | 0/0 |  |
+| 8 | Luca Vignali | RM,CB,CM | 30 | Italy | 197 k€ | 6,72 | 0 | 1 | 0/0 |  |
 | 11 | Bernat Guiu | ST,CAM,LM | 26 | Spain | 505 k€ | 7,75 | 1 | 2 | 2/0 |  |
 | 16 | Riccardo Turicchia | LM | 23 | Italy | 395 k€ | – | 0 | 0 | 0/0 |  |
 | 18 | Tommaso Annoni | CM | 18 | Italy | – | 6,22 | 0 | 0 | 0/0 |  |
@@ -85,9 +85,9 @@ Tränare: Andrea Chiappella. Betyg, mål och assist gäller innevarande säsong 
 | 80 | Leonardo Benedetti | CM,CAM | 26 | Italy | 513 k€ | 6,98 | 0 | 1 | 0/0 |  |
 | 94 | Francesco Mezzoni | RWB,RM,CAM | 26 | Italy | 287 k€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-|  | Emanuele Banfi | Attacker | 22 | Italy | – | – | 0 | 0 | 0/0 |  |
 | 9 | Giacomo Corona | ST | 22 | Italy | 401 k€ | 6,38 | 1 | 0 | 0/0 |  |
 | 10 | Luigi Cuppone | ST | 29 | Italy | 291 k€ | 6,92 | 1 | 0 | 0/0 |  |
 | 17 | Mattia Tirelli | ST | 24 | Italy | 306 k€ | 6,52 | 1 | 0 | 0/0 |  |
-| 29 | Andrea Traniello | Attacker | 19 | Italy | – | – | 0 | 0 | 0/0 |  |
 | 32 | Francesco Forte | ST | 33 | Italy | 208 k€ | 6,12 | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (2): Emanuele Banfi (senast 2026-09-29), Andrea Traniello (senast 2026-09-29).

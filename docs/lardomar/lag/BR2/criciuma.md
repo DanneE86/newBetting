@@ -1,6 +1,6 @@
 # Criciúma (Brasileirão Série B) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [BR2](../../ligor/BR2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [BR2](../../ligor/BR2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -42,7 +42,7 @@ Form senaste 8 (äldst → senast): OFFVFFFV · senaste match 2026-09-27
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Umberto Louzer. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -57,7 +57,6 @@ Tränare: Umberto Louzer. Betyg, mål och assist gäller innevarande säsong enl
 | | **Backar** | | | | | | | | | |
 | 3 | Rodrigo | CB | 39 | Brazil | 275 k€ | – | 0 | 0 | 0/0 |  |
 | 4 | Luciano Castán | CB | 37 | Brazil | 276 k€ | – | 0 | 0 | 0/0 |  |
-| 15 | Léo Mana | RM | 22 | Brazil | 949 k€ | – | 0 | 0 | 0/0 |  |
 | 30 | Octávio Henrique | Defender | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 34 | Bruno Alves | CB | 35 | Brazil | 328 k€ | – | 0 | 0 | 0/0 |  |
 | 37 | César Martins | CB | 33 | Brazil | 216 k€ | – | 0 | 0 | 0/0 |  |
@@ -68,7 +67,7 @@ Tränare: Umberto Louzer. Betyg, mål och assist gäller innevarande säsong enl
 | 2 | Willean Lepo | RM,RWB,RB,LWB,LM | 29 | Brazil | 476 k€ | – | 0 | 0 | 0/0 |  |
 | 5 | Eduardo | CM,CDM | 29 | Brazil | 209 k€ | – | 0 | 0 | 0/0 |  |
 | 6 | Marcinho | RWB,RM | 30 | Brazil | 321 k€ | – | 0 | 0 | 0/0 |  |
-| 7 | Fellipe Mateus | LW,CAM,CDM | 35 | Brazil | 240 k€ | – | 0 | 0 | 0/0 |  |
+| 7 | Fellipe Mateus | LW,CAM,CDM,CM | 35 | Brazil | 240 k€ | – | 0 | 0 | 0/0 |  |
 | 10 | Jhonata Robert | CAM,RW,CM | 26 | Brazil | 1,5 M€ | – | 0 | 0 | 0/0 |  |
 | 14 | Ronald | CM,CDM,CAM | 29 | Brazil | 499 k€ | – | 0 | 0 | 0/0 |  |
 | 17 | Lucas Bugs | Midfielder | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
@@ -88,3 +87,5 @@ Tränare: Umberto Louzer. Betyg, mål och assist gäller innevarande säsong enl
 | 33 | Yuri Tanque | ST | 28 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 39 | Thales | ST | 19 | Brazil | 422 k€ | – | 0 | 0 | 0/0 |  |
 | 91 | Rómulo Otero | RW,CAM,LW | 33 | Venezuela | 224 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Léo Mana (senast 2026-09-29).

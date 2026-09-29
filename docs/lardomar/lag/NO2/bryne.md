@@ -1,6 +1,6 @@
 # Bryne (OBOS-ligaen) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [NO2](../../ligor/NO2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [NO2](../../ligor/NO2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -27,7 +27,7 @@ Form senaste 8 (äldst → senast): FVVVFFVV · senaste match 2026-09-19
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Ørjan Heiberg. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -36,7 +36,6 @@ Tränare: Ørjan Heiberg. Betyg, mål och assist gäller innevarande säsong enl
 | | **Målvakter** | | | | | | | | | |
 | 1 | Magnus Rugland Ree | GK | 22 | Norway | 266 k€ | – | 0 | 0 | 2/0 |  |
 | 12 | Jan de Boer | GK | 26 | Netherlands | 128 k€ | – | 0 | 0 | 0/0 |  |
-| 99 | Igor Spiridonov | GK | 38 | Lithuania | 53 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 2 | Sander Elias Fjelldalselv | CB | 19 | Norway | – | – | 0 | 0 | 0/0 |  |
 | 3 | Patrick André Wik | CB,RM | 21 | Norway | 195 k€ | – | 0 | 1 | 5/0 |  |
@@ -53,7 +52,6 @@ Tränare: Ørjan Heiberg. Betyg, mål och assist gäller innevarande säsong enl
 | 14 | Anders Molund | LM,LB,LWB | 22 | Norway | 164 k€ | – | 2 | 1 | 3/0 |  |
 | 16 | Dadi Dodou Gaye | RM,CB,RB,LM | 31 | The Gambia | 89 k€ | – | 1 | 3 | 3/0 |  |
 | 19 | Torjus Engebakken | CM | 19 | Norway | 352 k€ | – | 3 | 0 | 3/0 |  |
-| 21 | David Aksnes | Midfielder | 19 | Norway | – | – | 0 | 0 | 0/0 |  |
 | 29 | Martin Åmot Lye | CM | 18 | Norway | 436 k€ | – | 0 | 0 | 1/0 |  |
 | 43 | Joachim Gursli | Midfielder | 17 | Norway | – | – | 0 | 0 | 0/0 |  |
 | 77 | Paya Pichkah | CM,CB,CDM,ST | 26 | Iran | 158 k€ | – | 0 | 1 | 4/0 |  |
@@ -64,3 +62,5 @@ Tränare: Ørjan Heiberg. Betyg, mål och assist gäller innevarande säsong enl
 | 23 | David Motland | Attacker | 15 | Norway | – | – | 0 | 0 | 0/0 |  |
 | 28 | Jaran Østrem | ST | 19 | Norway | – | – | 0 | 1 | 0/0 |  |
 | 42 | Haakon Tveit | RM | 19 | Norway | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (2): Igor Spiridonov (senast 2026-09-29), David Aksnes (senast 2026-09-29).

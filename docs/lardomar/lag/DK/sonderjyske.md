@@ -1,6 +1,6 @@
 # Sonderjyske (Superligaen) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [DK](../../ligor/DK.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [DK](../../ligor/DK.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -62,7 +62,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-12-07 | Europa 2529 | FC Köpenhamn - Sönderjyske | 2 ✓ | 9 % | 14 % |
 | 2025-11-23 | Europa 2525 | Sönderjyske - Midtjylland | 1 ✓ | 17 % | 19 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Fatah Abdirahman. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -89,7 +89,7 @@ Tränare: Fatah Abdirahman. Betyg, mål och assist gäller innevarande säsong e
 | 8 | Mohamed Cherif | CAM | 20 | Guinea | – | 7,13 | 4 | 0 | 0/0 |  |
 | 10 | Mathias Olesen | CDM,CM | 25 | Luxembourg | 635 k€ | 6,09 | 0 | 0 | 0/0 |  |
 | 17 | Anders Hoeg | CDM,LW | 20 | Denmark | 486 k€ | 6,72 | 0 | 1 | 1/0 |  |
-| 22 | Andreas Oggesen | CDM,RB,CM | 32 | Denmark | 249 k€ | 6,15 | 0 | 0 | 0/0 |  |
+| 22 | Andreas Oggesen | CDM,RB | 32 | Denmark | 249 k€ | 6,15 | 0 | 0 | 0/0 |  |
 | 28 | Anders Bergholt | LM | 21 | Denmark | 510 k€ | 6,22 | 0 | 0 | 0/0 |  |
 | 33 | Jacob Steen Christensen | CDM,CM | 25 | Denmark | 544 k€ | 6,43 | 0 | 2 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |

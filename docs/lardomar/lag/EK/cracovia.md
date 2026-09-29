@@ -1,6 +1,6 @@
 # Cracovia (Ekstraklasa) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EK](../../ligor/EK.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EK](../../ligor/EK.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -59,7 +59,7 @@ Form (äldst → senast): FOVVFFFF · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Bartosz Grzelak. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -68,7 +68,6 @@ Tränare: Bartosz Grzelak. Betyg, mål och assist gäller innevarande säsong en
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-|  | Konrad Golonka | Keeper | 19 | Poland | – | – | 0 | 0 | 0/0 |  |
 | 13 | Sebastian Madejski | GK | 29 | Poland | 452 k€ | 6,57 | 0 | 0 | 0/0 |  |
 | 77 | Jakub Chrapusta | Keeper | 17 | Poland | – | – | 0 | 0 | 0/0 |  |
 | 91 | Aleksander Bobek | GK | 22 | Poland | 293 k€ | – | 0 | 0 | 0/0 |  |
@@ -77,7 +76,7 @@ Tränare: Bartosz Grzelak. Betyg, mål och assist gäller innevarande säsong en
 | 4 | Gustav Henriksson | CB | 28 | Sweden | 402 k€ | 6,85 | 0 | 0 | 1/0 |  |
 | 15 | Kamil Glik | CB | 38 | Poland | 118 k€ | – | 0 | 0 | 0/0 |  |
 | 22 | Dominik Baumgartner | CB | 30 | Austria | 401 k€ | 6,09 | 0 | 0 | 2/1 |  |
-| 25 | Otar Kakabadze | RB,RW,RM,RWB | 31 | Georgia | 564 k€ | 6,75 | 0 | 1 | 1/0 |  |
+| 25 | Otar Kakabadze | RB,RWB,RW | 31 | Georgia | 564 k€ | 6,75 | 0 | 1 | 1/0 |  |
 | 39 | Mauro Perković | LB,LM | 23 | Croatia | 2,2 M€ | 7,13 | 1 | 1 | 0/0 |  |
 | 61 | Brahim Traoré | CB | 22 | France | – | 7,00 | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
@@ -104,3 +103,5 @@ Tränare: Bartosz Grzelak. Betyg, mål och assist gäller innevarande säsong en
 | 47 | Sayfallah Ltaief | LW,ST | 26 | Tunisia | 843 k€ | 6,90 | 0 | 1 | 1/0 |  |
 | 90 | Mohamed Berte | ST | 24 | Belgium | 709 k€ | 6,39 | 1 | 0 | 1/0 |  |
 | 92 | Mateusz Skoczylas | Attacker | 20 | Poland | 412 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Konrad Golonka (senast 2026-09-29).

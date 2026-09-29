@@ -323,6 +323,28 @@ Inget av följande spräcker spikar oftare än oddsen säger:
 - Körningen hämtar färska skarpa odds för PL, Championship, League One och League Two via The Odds API (`STRYK_FRESH_ODDS=1`, max 20 minuter gamla).
 - Namnjämförelsen klarar initialer och alias: Sheffield U/W, Brighton, Nottingham, M'gladbach, Espanol, Bristol Rvs.
 
+## Vanliga missar och turmatcher (2026-09-29, 347 omgångar ST + ET)
+
+**Urval:** hela kupongarkivet (aug 2023 – sep 2026), grundraden i kupong A byggd med nuvarande regler. En miss = utfallet låg utanför grundradens tecken, alltså en match där 13 rätt krävde tur. Byggs av `scripts/lib/stryk-miss-profile.mjs` och följer med varje hämtning (`missProfile` i `data/stryktipset.json`).
+
+- Helgarderingar missar aldrig. Alla missar är spikar och halvgarderingar.
+- Rätt rad låg i snitt 2,2 matcher utanför grundraden (0: 34, 1: 73, 2: 104, minst 3: 136 omgångar).
+
+| Matchtyp | Matcher | Missade | Väntat | Kom i stället |
+|---|---|---|---|---|
+| Spik 1, hemmafavorit 55–65 % | 484 | 38 % | 40 % | X 109, 2 75 |
+| Spik 1, hemmafavorit 45–55 % | 316 | 48 % | 49 % | X 74, 2 76 |
+| **Spik 2, bortafavorit 45–55 %** | 143 | **59 %** | 49 % | 1 36, X 48 |
+| Spik 1, hemmafavorit 65–75 % | 307 | 25 % | 30 % | X 49, 2 28 |
+| Spik 2, bortafavorit 55–65 % | 187 | 32 % | 40 % | 1 27, X 32 |
+| Halvgardering 1X, favorit 45–55 % | 229 | 25 % | 23 % | 2 57 |
+
+- Enda gruppen som missar klart oftare än väntat är spik på bortafavorit 45–55 % (84 mot väntat 70, cirka z +2,3). Med 20+ grupper väntas ungefär en sådan av slumpen. Följ upp innan reglerna ändras.
+- Övriga grupper följer våra procent. Missarna är alltså tur, inte modellfel. När en spik spricker kommer oftast kryss.
+- Spikar per liga (minst 25): Bundesliga 46 %, Eliteserien 45 %, Championship 45 %, Conference League 43 %. Alla ligger inom några procentenheter från väntat.
+
+**På webben:** matcher där kupong A:s tecken hör till en grupp som missat minst 30 % markeras som 🍀 turmatch, med tecknet som oftast kom i stället. På B-sidan kan det läggas in som krav i kupong B med en knapp.
+
 ## Robusta lärdomar (stöds av hela urvalet)
 
 1. **Oddsen slår vår lagmodell.** Logloss över 216 matcher, där lägre är bättre:
@@ -386,6 +408,8 @@ Inget av följande spräcker spikar oftare än oddsen säger:
 Nettot styrs av enstaka träffar: A:s plus kommer från en enda rad med 12 rätt. Med 65 % återbetalning är det normala förväntade utfallet negativt. Nettot säger därför lite om kvaliteten, och rader med 11+ rätt är ett bättre mått.
 
 ## Ändringslogg
+
+- **2026-09-29:** Vanliga missar och turmatcher (se ovan), visas på Stryktipset/Europatipset A och B. B-sidan: krav med valfria tecken (1, X, 2, 1X, X2, 12, 1X2) som gäller A, B eller båda. Kupong B är ett eget system med minst 30 000 kr för 13 rätt utan tak, en annan grundrad än A och vald för att täcka rader A saknar (användarens regel). Hämtningens delade system på Stryktipset A är oförändrat.
 
 - **2026-09-28 (sent):** Spikanalysen (tabell och form) visade inget missat. Stryktipsarkivet går tillbaka till augusti 2023. Den sena körningen går nära spelstopp med vakt och färska skarpa odds. Namnjämförelsen är förbättrad. Folkets streck vägs inte in på Stryktipset.
 

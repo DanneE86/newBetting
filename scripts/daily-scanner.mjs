@@ -137,8 +137,6 @@ function agentResearch(t) {
     if (r?.congested) notes.push(`${lbl}: tät matchning (${r.matches7d} matcher senaste 7 d)`);
     if (r?.restDays != null && r.restDays <= 3) notes.push(`${lbl}: bara ${r.restDays} vilodagar`);
   }
-  const weather = pro.weather?.flags || [];
-  for (const f of weather) notes.push(`Väder: ${f}`);
   const homeStarters = starterNames(t.homeStarters);
   const awayStarters = starterNames(t.awayStarters);
   if (t.lineupSource) notes.push(`Källa: ${t.lineupSource}`);
@@ -151,7 +149,6 @@ function agentResearch(t) {
     awayStarters,
     keyOuts: t.keyOuts || { home: 0, away: 0 },
     notes,
-    weatherFlags: weather,
     assumptions: t.lineupStatus === 'confirmed' ? [] : ['Elvor ej bekräftade – antar ordinarie startelva'],
   };
 }
@@ -301,7 +298,7 @@ function agentDevil(t, football, research, quant, market) {
   if ((research.keyOuts?.home || 0) + (research.keyOuts?.away || 0) > 0) {
     fragile.push(`Nyckelfrånvaro: hemma ${research.keyOuts.home}, borta ${research.keyOuts.away}`);
   }
-  for (const n of research.notes.filter((x) => /tät matchning|vilodagar|Väder/.test(x))) fragile.push(n);
+  for (const n of research.notes.filter((x) => /tät matchning|vilodagar/.test(x))) fragile.push(n);
   if (quant.confidence === 'LOW') {
     attacks.push('Modellens underlag är tunt (LOW confidence).');
     severity += 1;

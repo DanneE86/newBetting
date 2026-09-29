@@ -1,6 +1,6 @@
 # Pogon Szczecin (Ekstraklasa) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [EK](../../ligor/EK.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [EK](../../ligor/EK.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -45,7 +45,7 @@ Form (äldst → senast): FVVOOOVV · senaste match 2026-09-20
 | Jagiellonia | 18 | 7-5-6 | 29–26 | −0,07 | +1 pe | 2026-05-09 2-3 (b) |
 | Lech Poznan | 18 | 3-7-8 | 24–28 | −0,29 | +12 pe | 2026-04-18 1-2 (h) |
 | Piast Gliwice | 18 | 9-6-3 | 15–10 | +0,43 | +5 pe | 2026-09-20 2-1 (b) |
-| Zaglebie | 18 | 10-3-5 | 23–18 | +0,23 | −10 pe | 2026-08-29 0-0 (b) |
+| Zaglebie | 17 | 9-3-5 | 21–18 | +0,14 | −9 pe | 2026-08-29 0-0 (b) |
 | Rakow | 14 | 3-3-8 | 9–16 | −0,31 | −6 pe | 2026-03-08 0-2 (b) |
 | Slask Wroclaw | 14 | 5-5-4 | 18–18 | −0,18 | +8 pe | 2025-03-07 1-1 (b) |
 | Wisla Plock | 13 | 6-3-4 | 20–12 | −0,06 | −4 pe | 2026-09-07 1-1 (h) |
@@ -60,7 +60,7 @@ Form (äldst → senast): FVVOOOVV · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Óscar García. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

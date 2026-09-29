@@ -1,6 +1,6 @@
 # Dinamo Zagreb (HNL) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [HR](../../ligor/HR.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [HR](../../ligor/HR.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -29,7 +29,7 @@ Form senaste 8 (äldst → senast): OVVVOVFV · senaste match 2026-09-20
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Mario Kovačević. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -50,7 +50,7 @@ Tränare: Mario Kovačević. Betyg, mål och assist gäller innevarande säsong 
 | 26 | Scott McKenna | CB | 29 | Scotland | 2,2 M€ | 6,70 | 0 | 0 | 1/0 |  |
 | 36 | Sergi Domínguez | CB | 21 | Spain | 1,4 M€ | 6,73 | 0 | 0 | 1/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 5 | Kirill Kravtsov | CM,CDM | 24 | Russia | 1,1 M€ | 6,97 | 0 | 0 | 1/0 |  |
+| 5 | Kirill Kravtsov | CM | 24 | Russia | 1,1 M€ | 6,97 | 0 | 0 | 1/0 |  |
 | 7 | Luka Stojković | CM,CAM | 22 | Croatia | 1,3 M€ | 7,34 | 0 | 2 | 2/0 |  |
 | 8 | Miha Zajc | CM,CDM,CAM | 32 | Slovenia | 559 k€ | 7,03 | 1 | 0 | 1/0 |  |
 | 17 | Luka Ivanušec | CAM,LW | 27 | Croatia | 2,0 M€ | 6,75 | 0 | 0 | 0/0 |  |

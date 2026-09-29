@@ -1,6 +1,6 @@
 # Marseille (Ligue 1) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [L1](../../ligor/L1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [L1](../../ligor/L1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -86,7 +86,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-09-21 | Europa 2507 | Marseille - Paris Saint-Germain | 1 ✓ | 18 % | 24 % |
 | 2025-08-31 | Europa 2501 | Lyon - Marseille | 1 | 43 % | 39 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Bruno Génésio. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

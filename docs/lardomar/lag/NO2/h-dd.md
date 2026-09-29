@@ -1,6 +1,6 @@
 # Hødd (OBOS-ligaen) – lärdomar
 
-Genererad 2026-09-28. Ligans fil: [NO2](../../ligor/NO2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-09-29. Ligans fil: [NO2](../../ligor/NO2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -38,7 +38,7 @@ Form senaste 8 (äldst → senast): VVVFVOFF · senaste match 2026-09-20
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Ivan Poulsen. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -47,7 +47,6 @@ Tränare: Ivan Poulsen. Betyg, mål och assist gäller innevarande säsong enlig
 | | **Målvakter** | | | | | | | | | |
 | 1 | Thomas Kinn | GK | 27 | Norway | 94 k€ | – | 0 | 0 | 2/0 |  |
 | 25 | Oscar Gadeberg Buur | GK | 19 | Denmark | – | – | 0 | 0 | 0/0 |  |
-| 30 | Christian Hansen | Keeper | 18 | Norway | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 2 | Charles Ondo | LB,CB | 22 | Equatorial Guinea | 335 k€ | – | 0 | 0 | 0/0 |  |
 | 3 | Sondre Fosnæss Hanssen | CB,RB | 25 | Norway | 126 k€ | – | 1 | 0 | 1/0 |  |
@@ -76,3 +75,5 @@ Tränare: Ivan Poulsen. Betyg, mål och assist gäller innevarande säsong enlig
 | 20 | Jon Berisha | ST | 21 | Norway | 179 k€ | – | 3 | 0 | 0/0 |  |
 | 22 | Kasper Reme Abrahamsen | ST | 21 | Norway | – | – | 0 | 0 | 0/0 |  |
 | 29 | Martin Håheim Elveseter | LW,RW,ST | 20 | Norway | 344 k€ | – | 5 | 2 | 1/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Christian Hansen (senast 2026-09-29).

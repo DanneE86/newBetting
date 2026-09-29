@@ -1,6 +1,6 @@
 # Mirassol (Brasileirão Série A) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [BR](../../ligor/BR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [BR](../../ligor/BR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -49,7 +49,7 @@ Form (äldst → senast): FFOOFVOV · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Rafael Guanaes. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -87,10 +87,11 @@ Tränare: Rafael Guanaes. Betyg, mål och assist gäller innevarande säsong enl
 | 9 | André Luís | ST | 32 | Brazil | 719 k€ | – | 0 | 0 | 0/0 |  |
 | 11 | Negueba | RW,LW | 26 | Brazil | 2,1 M€ | – | 0 | 0 | 0/0 | skadad, åter Out for season |
 | 17 | Fernandinho | LW,ST,LM | 29 | Brazil | 321 k€ | – | 0 | 0 | 0/0 |  |
-| 19 | Gustavo Silva | CAM,ST,RW | 29 | Brazil | 938 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | Gustavo Silva | ST,RW,CAM | 29 | Brazil | 938 k€ | – | 0 | 0 | 0/0 |  |
 | 30 | Bruno Santos | ST | 29 | Brazil | 863 k€ | – | 0 | 0 | 0/0 |  |
-| 48 | Felipinho | Attacker | 19 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 77 | Alesson | LW,ST | 27 | Brazil | 1,3 M€ | – | 0 | 0 | 0/0 |  |
-| 95 | Edson Carioca | RW,LW,ST | 29 | Brazil | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 95 | Edson Carioca | RW,ST,LW | 29 | Brazil | 1,2 M€ | – | 0 | 0 | 0/0 |  |
 | 96 | Carlos Eduardo | RW,LW,ST | 29 | Brazil | 356 k€ | – | 0 | 0 | 0/0 |  |
 | 99 | Zé Roberto | ST | 33 | Brazil | 196 k€ | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (1): Felipinho (senast 2026-09-29).

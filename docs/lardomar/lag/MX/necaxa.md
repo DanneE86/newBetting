@@ -1,6 +1,6 @@
 # Necaxa (Liga MX) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [MX](../../ligor/MX.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [MX](../../ligor/MX.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -57,7 +57,7 @@ Form (äldst → senast): VFFOFOFF · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: svag signal (inte bekräftad).
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Juan Reynoso. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -79,14 +79,14 @@ Tränare: Juan Reynoso. Betyg, mål och assist gäller innevarande säsong enlig
 | 8 | Lorenzo Faravelli | CDM,CM,CAM | 33 | Argentina | 734 k€ | – | 0 | 0 | 0/0 |  |
 | 10 | Javier Ruiz | ST,CAM,LW,LM | 22 | Argentina | 2,2 M€ | – | 0 | 0 | 0/0 |  |
 | 11 | Juan Torres | CAM,ST,RW | 22 | Colombia | – | – | 0 | 0 | 0/0 |  |
-| 13 | Owen González | RM,RWB | 23 | Mexico | – | – | 0 | 0 | 0/0 |  |
 | 14 | Mauro Zaleta | LWB,LM | 24 | Mexico | – | – | 0 | 0 | 0/0 |  |
 | 16 | Pedro Pedraza | CDM | 26 | Mexico | 1,6 M€ | – | 0 | 0 | 0/0 |  |
 | 17 | Rogelio Cortéz | CM | 22 | Mexico | 645 k€ | – | 0 | 0 | 0/0 |  |
 | 18 | Israel Tello | CAM,RWB | 20 | Mexico | 1,4 M€ | – | 0 | 0 | 0/0 |  |
-| 21 | Matías Espíndola | ST,LW,CM,CAM,LM,CDM | 22 | Argentina | 617 k€ | – | 0 | 0 | 0/0 |  |
+| 21 | Matías Espíndola | ST,LW,CAM,CM,LM,CDM | 22 | Argentina | 617 k€ | – | 0 | 0 | 0/0 |  |
 | 88 | Carlos Vargas | LWB,LM | 27 | Mexico | 326 k€ | – | 0 | 0 | 0/0 |  |
 | 99 | Emilio Rodríguez | RW | 23 | Mexico | 996 k€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 9 | Julián Carranza | ST | 26 | Argentina | 3,6 M€ | – | 0 | 0 | 0/0 |  |
+| 13 | Owen González | LW,ST,RWB | 23 | Mexico | – | – | 0 | 0 | 0/0 |  |
 | 90 | Juan Valencia | ST | 22 | Colombia | 578 k€ | – | 0 | 0 | 0/0 |  |

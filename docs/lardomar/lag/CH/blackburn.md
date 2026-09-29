@@ -1,6 +1,6 @@
 # Blackburn (Championship) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -85,7 +85,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-08-29 | Stryk 4968 | Blackburn - Queens Park Rangers | 2 | 42 % | 34 % |
 | 2026-08-22 | Stryk 4967 | Blackburn - Middlesbrough | 1 ✓ | 19 % | 26 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Tony Mowbray. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -97,7 +97,6 @@ Tränare: Tony Mowbray. Betyg, mål och assist gäller innevarande säsong enlig
 | 1 | Aynsley Pears | GK | 28 | England | 817 k€ | 6,45 | 0 | 0 | 0/0 |  |
 | 22 | Balázs Tóth | GK | 29 | Hungary | 715 k€ | 6,72 | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 3 | Harry Pickering | LWB,LB | 27 | England | 1,1 M€ | 7,31 | 0 | 2 | 2/0 |  |
 | 6 | Tom Atcheson | CB | 20 | Northern Ireland | 996 k€ | 6,73 | 0 | 1 | 2/1 |  |
 | 12 | Lewis Miller | CB,RWB,RB | 26 | Australia | 1,1 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
 | 15 | Sean McLoughlin | CB | 29 | Ireland | 605 k€ | 7,10 | 1 | 0 | 2/0 |  |
@@ -106,6 +105,7 @@ Tränare: Tony Mowbray. Betyg, mål och assist gäller innevarande säsong enlig
 | 39 | Harvey Pates | LB | 18 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 2 | Ryan Alebiosu | RWB,RB,RM | 24 | Nigeria | 1,5 M€ | 6,76 | 0 | 0 | 0/0 |  |
+| 3 | Harry Pickering | LWB,LB | 27 | England | 1,1 M€ | 7,31 | 0 | 2 | 2/0 |  |
 | 4 | Yuri Ribeiro | LWB,LB,LM | 29 | Portugal | 488 k€ | 6,54 | 0 | 0 | 1/0 | skadad, åter Early October 2026 |
 | 7 | Augustus Kargbo | LM | 27 | Sierra Leone | 688 k€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
 | 8 | Sam Morsy | CDM,CM | 35 | Egypt | 302 k€ | 6,97 | 0 | 1 | 4/0 |  |

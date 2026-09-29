@@ -1,6 +1,6 @@
 # Ein Frankfurt (Bundesliga) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [BL](../../ligor/BL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [BL](../../ligor/BL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -83,7 +83,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-11-30 | Europa 2527 | Frankfurt - Wolfsburg | X | 60 % | 51 % |
 | 2025-10-19 | Europa 2515 | Freiburg - Frankfurt | X | 35 % | 36 % |
 
-## Trupp (FotMob, hämtad 2026-09-28)
+## Trupp (FotMob, hämtad 2026-09-29)
 
 Tränare: Adolf Hütter. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -114,10 +114,10 @@ Tränare: Adolf Hütter. Betyg, mål och assist gäller innevarande säsong enli
 | 22 | Timothy Chandler | LM | 36 | USA | 320 k€ | 6,02 | 0 | 0 | 0/0 |  |
 | 25 | Raphael Onyedika | CDM,CM | 25 | Nigeria | 13,8 M€ | 6,74 | 0 | 0 | 3/0 |  |
 | 27 | Mario Götze | CAM,CM | 34 | Germany | 2,3 M€ | 6,89 | 0 | 1 | 1/0 |  |
-| 42 | Can Uzun | CAM,CM,LM,LW | 20 | Turkiye | 37,7 M€ | 7,39 | 2 | 0 | 0/0 |  |
+| 42 | Can Uzun | CAM,LM,CM,LW | 20 | Turkiye | 37,7 M€ | 7,39 | 2 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 |  | Jessic Ngankam | CB,ST | 26 | Germany | 646 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
-| 7 | Ansgar Knauff | ST,RW,LW,CAM,LM | 24 | Germany | 13,7 M€ | 6,28 | 0 | 0 | 0/0 |  |
+| 7 | Ansgar Knauff | ST,RW,LW,CAM | 24 | Germany | 13,7 M€ | 6,28 | 0 | 0 | 0/0 |  |
 | 9 | Jonathan Burkardt | ST | 26 | Germany | 28,2 M€ | 7,63 | 3 | 1 | 0/0 |  |
 | 11 | Younes Ebnoutalib | ST | 23 | Germany | 1,3 M€ | 7,81 | 4 | 1 | 1/0 |  |
 | 29 | Ayoube Amaimouni-Echghouyab | RW,RM,RWB | 21 | Morocco | 813 k€ | 6,32 | 0 | 0 | 0/0 |  |

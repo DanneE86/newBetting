@@ -1,6 +1,6 @@
 # Argentinos Jrs (Liga Profesional) – lärdomar
 
-Genererad 2026-09-28. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-09-29. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -69,3 +69,45 @@ Form (äldst → senast): VVFOVOOF · senaste match 2026-09-20
 | Estudiantes Rio Cuarto | 2 | 1-1-0 | 3–0 | −0,09 | +24 pe | 2026-07-29 3-0 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+## Trupp (FotMob, hämtad 2026-09-29)
+
+Tränare: Nicolás Diez. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+
+| # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | **Målvakter** | | | | | | | | | |
+| 12 | Gonzalo Siri | GK | 23 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 25 | Brayan Cortés | GK | 31 | Chile | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| | **Backar** | | | | | | | | | |
+| 3 | Luciano Sánchez | CB | 32 | Argentina | 380 k€ | – | 0 | 0 | 0/0 |  |
+| 4 | Érik Godoy | CB | 33 | Argentina | 353 k€ | – | 0 | 0 | 0/0 |  |
+| 6 | Franco Vázquez | CB | 21 | Argentina | 503 k€ | – | 0 | 0 | 0/0 |  |
+| 14 | Kevin Coronel | RB | 22 | Argentina | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 16 | Francisco Álvarez | CB | 26 | Argentina | 2,7 M€ | – | 0 | 0 | 0/0 |  |
+| 17 | Franco Paredes | CB,RB | 27 | Argentina | 435 k€ | – | 0 | 0 | 0/0 |  |
+| 20 | Sebastián Prieto | LB,LWB | 33 | Argentina | 701 k€ | – | 0 | 0 | 0/0 |  |
+| 23 | Mateo Mendoza | CB | 21 | Argentina | 2,2 M€ | – | 0 | 0 | 0/0 |  |
+| 26 | Claudio Bravo | LB | 29 | Argentina | 518 k€ | – | 0 | 0 | 0/0 |  |
+| 30 | Alan Núñez | RB | 21 | Paraguay | 1,5 M€ | – | 0 | 0 | 0/0 |  |
+| 31 | Facundo Carrizo | Defender | 19 | Argentina | 749 k€ | – | 0 | 0 | 0/0 |  |
+| 37 | Thiago Gómez | Defender | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 42 | Santino Gianini | Defender | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| | **Mittfältare** | | | | | | | | | |
+|  | Federico Mancuello | LM | 37 | Argentina | 339 k€ | – | 0 | 0 | 0/0 |  |
+| 11 | Nicolás Oroz | CM,CDM,CAM | 32 | Argentina | 978 k€ | – | 0 | 0 | 0/0 |  |
+| 15 | Kevin Gutiérrez | CDM,CM | 29 | Argentina | 2,0 M€ | – | 0 | 0 | 0/0 |  |
+| 21 | Gabriel Florentín | CDM | 27 | Argentina | 566 k€ | – | 0 | 0 | 0/0 |  |
+| 28 | Joaquín Gho | CDM | 23 | Argentina | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| 32 | Gino Infantino | ST | 23 | Argentina | 728 k€ | – | 0 | 0 | 0/0 |  |
+| 35 | Alan Alcaraz | Midfielder | 17 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 36 | Gastón Bouhier | CAM | 17 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| | **Anfallare** | | | | | | | | | |
+| 8 | Hernán López | RW,CAM,CM,RM,LW,ST | 26 | Argentina | 2,3 M€ | – | 0 | 0 | 0/0 |  |
+| 9 | Gastón Verón | ST | 25 | Argentina | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 19 | Matías Giménez | ST | 27 | Argentina | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 27 | Tomás Molina | ST | 31 | Argentina | 1,8 M€ | – | 0 | 0 | 0/0 |  |
+| 29 | Emiliano Viveros | LW,RW | 23 | Argentina | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 34 | Ryoga Kida | Attacker | 21 | Japan | 450 k€ | – | 0 | 0 | 0/0 |  |
+| 47 | Diego Porcel | LW,ST,LM | 21 | Argentina | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 48 | Facundo Jainikoski | LW | 18 | Argentina | 1,9 M€ | – | 0 | 0 | 0/0 |  |
