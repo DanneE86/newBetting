@@ -623,7 +623,9 @@ function renderAccuracy(acc) {
       <button type="button" class="acc${state.openMarket === key ? " is-open" : ""}" data-market="${key}" data-label="${escapeHtml(label)}">
         <div class="label">${label}</div>
         <div class="val">${fmtPct(a?.rate)}</div>
-        <div class="sub">${a?.correct ?? 0}/${a?.tested ?? 0} i backtest · ${scope}</div>
+        <div class="sub">${a?.source === "tipsmotor"
+          ? `${a.correct}/${a.tested} spelade ${a.season} · väntat ${fmtPct(a.expectedRate)} · ${scope}`
+          : `${a?.correct ?? 0}/${a?.tested ?? 0} i backtest · ${scope}`}</div>
         ${key === "1X2" ? `<div class="acc-outcomes-label">Tipsens träff</div>${picksHtml(a?.byPick)}${outcomesHtml}` : ""}
         <div class="hint">Klicka för chansband</div>
       </button>`

@@ -148,6 +148,32 @@ test('tips har pro-lager, utvardering och domarfil', async () => {
   expect(refs.count).toBeGreaterThan(5);
 });
 
+test('traffrutan visar tipsmotorns traff (odds dar de styr), inte grundmodellens', async () => {
+  const evaluation = readJson(path.join(root, 'data', 'reports', 'pro-evaluation.json'));
+  const tips = readJson(path.join(root, 'data', 'tips-latest.json'));
+  const acc = evaluation.tipAccuracy;
+  test.skip(!acc, 'Pro-lagret har inte korts med tipAccuracy an');
+  for (const [lg, bySeason] of Object.entries<any>(acc)) {
+    for (const a of Object.values<any>(bySeason)) {
+      expect(a.correct).toBeLessThanOrEqual(a.n);
+      expect(a.missDraw + a.missUpset + a.correct).toBe(a.n);
+      expect(a.expectedRate).toBeGreaterThan(0.3);
+      expect(a.bySource.odds.tested + a.bySource.modell.tested).toBe(a.n);
+    }
+    // Ligor med marknadstest styrs av oddsen i backtesten (som live)
+    const mt = evaluation.marketTest?.[lg];
+    const cur = Object.values<any>(bySeason).at(-1);
+    if ((mt?.vsOpening?.n ?? 0) >= 60 || (mt?.vsClosing?.n ?? 0) >= 60) expect(cur.bySource.odds.tested).toBeGreaterThan(0);
+  }
+  const pl = tips.accuracyByLeague?.PL?.['1X2'];
+  expect(pl.source).toBe('tipsmotor');
+  expect(pl.expectedRate).toBeGreaterThan(0);
+  expect(tips.accuracy['1X2'].source).toBe('tipsmotor');
+  const rows = readJson(path.join(root, 'data', 'reports', 'tips-backtest.json')).matches;
+  expect(rows.length).toBeGreaterThan(1000);
+  expect(rows[0].p.reduce((s: number, x: number) => s + x, 0)).toBeCloseTo(1, 2);
+});
+
 test('arenor har koordinater for alla lag i kommande matcher', async () => {
   const venues = readJson(path.join(root, 'data', 'open', 'venues.json'));
   const { canonicalTeam } = await import(pathToFileURL(path.join(root, 'scripts', 'weather', 'teams.mjs')).href);
