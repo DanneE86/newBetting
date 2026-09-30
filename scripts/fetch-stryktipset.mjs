@@ -15,6 +15,7 @@ import { extraOdds, matchExtraOdds } from './lib/extra-odds.mjs';
 import { clubEloFor } from './lib/club-elo.mjs';
 import { fillXg } from './lib/understat-xg.mjs';
 import { buildMissProfile, STRYK_LEAGUES } from './lib/stryk-miss-profile.mjs';
+import { colorBands } from './lib/stryk-color-bands.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const RAW = path.join(root, 'data', 'raw');
@@ -548,16 +549,42 @@ function signColor(folkP) {
   return folkP >= COLOR.green ? 'green' : folkP <= COLOR.red ? 'red' : 'yellow';
 }
 
-// Fargregler. all = rader sorterade pa utdelning (hogst forst), r.c = [grona, gula, roda] i garderingarna.
-// Varje farg far min/max hogst COLOR_TRIM steg in fran spannet. Kombinationerna rangordnas efter chansen i de `target`
-// forsta raderna som klarar reglerna (ungefar de rader utdelningsgransen sedan behaller); vid lika vinner snavast.
+// Fargregler. all = rader sorterade pa utdelning (hogst forst), r.c = [grona, gula, roda] over alla 13 matcher.
+// Med band (scripts/lib/stryk-color-bands.mjs, ratt rad senaste aret, bara Stryktipset): 'outer' = min/max aldrig utanfor
+// det som hant, optimeras fritt dar; 'core' (bara backtest) = min <= p10 och max >= p90. Roda: max RED_MAX_OPTIONS
+// (anvandaren 2026-09-30: snittet ar 1,9, men 3-4 roda ger de stora vinsterna). Utan band: hogst COLOR_TRIM steg in.
+// Kombinationerna rangordnas efter chansen i de `target` forsta raderna som klarar reglerna; vid lika vinner snavast.
 const COLOR_KEYS = ['green', 'yellow', 'red'];
-function colorRuleOptions(all, minRows, target) {
+// Backtest 2026-09-30 (38 omg): max 4 roda gav -8 771 kr mot -19 356 med 3 (optimeraren valjer annars alltid 3).
+const RED_MAX_OPTIONS = (process.env.STRYK_RED_MAX || '4').split(',').map(Number);
+const USE_BANDS = process.env.STRYK_COLOR_BANDS !== '0';
+const BANDS_FOR = new Set((process.env.STRYK_BANDS_FOR || 'stryktipset').split(','));
+const BAND_MODE = process.env.STRYK_BAND_MODE || 'outer'; // 'core' = min <= p10 och max >= p90, 'outer' = bara inom min-max
+function colorRuleOptions(all, minRows, target, bands = null) {
   const lo = [13, 13, 13], hi = [0, 0, 0];
   for (const r of all) for (let c = 0; c < 3; c++) { if (r.c[c] < lo[c]) lo[c] = r.c[c]; if (r.c[c] > hi[c]) hi[c] = r.c[c]; }
   const ranges = [0, 1, 2].map((c) => {
     const out = [];
     const w = Math.min(COLOR_WIDTH, hi[c] - lo[c]);
+    const band = USE_BANDS ? bands?.[COLOR_KEYS[c]] : null;
+    if (band && BAND_MODE === 'outer') {
+      // Historiken som yttre grans: min/max inom det som hant, optimeras fritt dar (roda: max RED_MAX_OPTIONS)
+      const l = Math.min(Math.max(band.range[0], lo[c]), hi[c]), h = Math.max(Math.min(band.range[1], hi[c]), l);
+      const his = COLOR_KEYS[c] === 'red' ? [...new Set(RED_MAX_OPTIONS.map((m) => Math.min(Math.max(m, l), h)))] : null;
+      for (let a = l; a <= Math.min(l + COLOR_TRIM, h); a++) {
+        for (const b of his || Array.from({ length: Math.min(COLOR_TRIM, h - l) + 1 }, (_, j) => h - j)) if (b - a >= Math.min(w, h - l)) out.push([a, b]);
+      }
+      if (out.length) return out;
+    }
+    if (band && BAND_MODE === 'core') {
+      const clamp = (x) => Math.min(Math.max(x, lo[c]), hi[c]);
+      const los = [], his = new Set();
+      for (let a = clamp(band.range[0]); a <= clamp(band.core[0]); a++) los.push(a);
+      if (COLOR_KEYS[c] === 'red') for (const m of RED_MAX_OPTIONS) his.add(clamp(Math.max(m, band.core[1])));
+      else for (let b = clamp(band.core[1]); b <= clamp(band.range[1]); b++) his.add(b);
+      for (const a of los) for (const b of his) if (b - a >= w) out.push([a, b]);
+      if (out.length) return out;
+    }
     for (let a = lo[c]; a <= Math.min(lo[c] + COLOR_TRIM, hi[c]); a++) for (let b = Math.max(hi[c] - COLOR_TRIM, a + w); b <= hi[c]; b++) out.push([a, b]);
     return out.length ? out : [[lo[c], hi[c]]];
   });
@@ -577,7 +604,7 @@ const fitsColors = (c, rule) => rule.every(([a, b], k) => c[k] >= a && c[k] <= b
 
 // Reducera en grundrad till BUDGET med regler som gar att aterskapa exakt i Gambling Cabins verktyg:
 //   tecken 1/X/2: fast minimum per system (A 5-3-2, B 4-3-3), max alltid fullt
-//   farger gron/gul/rod: optimerat min/max per rad (colorRuleOptions), rosa = antal spikar
+//   farger gron/gul/rod: min/max per rad over alla 13 matcher, byggt pa fargbanden (colorRuleOptions)
 //   utdelning 13 ratt >= payoutMin (per spel, se UTD_MIN_BY_PRODUCT; GC:s formel: 26 % x omsattning / (omsattning x radens streck + 1), fast omsattning per spel);
 //   gransen hojs vid behov (jamnt belopp) tills radantalet ryms i budgeten.
 // Utdelningsgransen payoutMin galler VERKLIG utdelning: (26 % x verklig omsattning + jackpot) / (omsattning x streck + 1).
@@ -591,13 +618,13 @@ function gcPayoutFloor(gcTurnover, realTurnover, jackpot, payoutMin) {
   return fStar > 0 ? (PAYOUT_13 * gcTurnover + (jackpot || 0)) / (1 + gcTurnover * fStar) : Infinity;
 }
 
-function reduceSystem(events, grund, { rowPrice = 1, turnover, signMin, realTurnover = turnover, jackpot = 0, payoutMin = 30000, budget = BUDGET, redMax = RED_MAX_SHARE }) {
+function reduceSystem(events, grund, { rowPrice = 1, turnover, signMin, realTurnover = turnover, jackpot = 0, payoutMin = 30000, budget = BUDGET, redMax = RED_MAX_SHARE, colorBands = null }) {
   const minRows = Math.ceil(budget.min / rowPrice), maxRows = Math.floor(budget.max / rowPrice);
   const colors = events.map((e) => [0, 1, 2].map((k) => signColor(e.folk?.[k])));
   const T = turnover;
   const floor = gcPayoutFloor(T, realTurnover, jackpot, payoutMin);
   const all = [];
-  const cc = [0, 0, 0]; // grona/gula/roda tecken i garderingarna (spikar ar rosa i GC)
+  const cc = [0, 0, 0]; // grona/gula/roda tecken i raden (alla 13 matcher, spikar i sin farg)
   const walk = (i, row, p, f) => {
     if (i === events.length) {
       const payout = (PAYOUT_13 * T + jackpot) / (1 + T * f); // GC:s formel
@@ -606,7 +633,7 @@ function reduceSystem(events, grund, { rowPrice = 1, turnover, signMin, realTurn
       return;
     }
     for (const k of grund.sets[i]) {
-      const ci = grund.sets[i].length > 1 ? COLOR_KEYS.indexOf(colors[i][k]) : -1;
+      const ci = COLOR_KEYS.indexOf(colors[i][k]);
       row.push(k); if (ci >= 0) cc[ci]++;
       walk(i + 1, row, p * events[i].final[k], f * (events[i].folk?.[k] ?? events[i].final[k]));
       row.pop(); if (ci >= 0) cc[ci]--;
@@ -616,8 +643,7 @@ function reduceSystem(events, grund, { rowPrice = 1, turnover, signMin, realTurn
   if (all.length < minRows) return null;
   all.sort((a, b) => b.payout - a.payout);
   // Fargreglerna: basta kombinationen dar utdelningsgransen gar att lagga, annars nasta
-  const spikes = grund.sets.filter((x) => x.length === 1).length;
-  for (const opt of colorRuleOptions(all, minRows, Math.round((minRows + maxRows) / 2))) {
+  for (const opt of colorRuleOptions(all, minRows, Math.round((minRows + maxRows) / 2), colorBands)) {
     const res = cutSystem(all.filter((r) => fitsColors(r.c, opt.rule)), floor, minRows, maxRows, grund, colors, redMax, events);
     if (!res) continue;
     const { cut, kept } = res;
@@ -629,7 +655,7 @@ function reduceSystem(events, grund, { rowPrice = 1, turnover, signMin, realTurn
       hitAll: hit, grundHit: grund.hitAll, expectedPayout: hit ? ev / hit : null, expectedReturn: ev,
       rules: {
         payoutMin: cut.t, payoutMinReal: payoutMin, jackpot, realTurnover, signMin, colorGreen: COLOR.green, colorRed: COLOR.red, turnover: T,
-        colorRules: { green: opt.rule[0], yellow: opt.rule[1], red: opt.rule[2], pink: [spikes, spikes] },
+        colorRules: { green: opt.rule[0], yellow: opt.rule[1], red: opt.rule[2] },
       },
       colors: colors.map((c) => c.join(',')),
       rowList: kept.map((r) => r.row.map((k) => SIGNS[k]).join('')),
@@ -779,15 +805,15 @@ function pairStats(a, b) {
 // Tecken: 0 = spelas inte, 2 = gul, 3 = rod, 4 = gron, 5 = rosa (spik) (bara visning). Regler: [aktiv, min, max].
 function gamblingCabinUrl(productId, drawNumber, closeDate, events, sets, reduced) {
   const colorId = { yellow: 2, red: 3, green: 4 };
-  // Spikar (ett tecken) rosa (5), annars farg efter folkets streck. Fargreglerna = de optimerade min/max per rad.
-  const col = (k) => events.map((e, i) => (!sets[i].includes(k) ? 0 : sets[i].length === 1 ? 5 : colorId[e.colors[k]])).join(',');
+  // Farg efter folkets streck, aven spikar (fargreglerna raknar alla 13 matcher). Rosa anvands inte.
+  const col = (k) => events.map((e, i) => (!sets[i].includes(k) ? 0 : colorId[e.colors[k]])).join(',');
   const r = reduced.rules;
   const cr = (c) => (r.colorRules?.[c] ? `1,${r.colorRules[c][0]},${r.colorRules[c][1]}` : '0,0,13');
   const q = [
     `spel=${productId}`, `omg=${drawNumber}`, `datum=${closeDate}`,
     `v1=${col(0)}`, `vX=${col(1)}`, `v2=${col(2)}`,
     `antT=1,${r.signMin[0]},13,${r.signMin[1]},13,${r.signMin[2]},13`,
-    `yellow=${cr('yellow')}`, `red=${cr('red')}`, `green=${cr('green')}`, `pink=${cr('pink')}`,
+    `yellow=${cr('yellow')}`, `red=${cr('red')}`, `green=${cr('green')}`, 'pink=0,0,13',
     `utd=1,${r.payoutMin},${r.payoutMax ?? 100000000}`,
   ];
   return `https://reducera.gamblingcabin.se/?${q.join('&')}`;
@@ -1025,7 +1051,10 @@ async function analyzeDraw(product, draw, ctx, result) {
   if (process.env.STRYK_JACKPOT === '0') jackpot = 0; // for jamforelse i backtest
   const rowPrice = num(draw.rowPrice) || 1;
   const closeDate = (draw.regCloseTime || '').slice(0, 10);
-  const baseOpts = { rowPrice, turnover, realTurnover, jackpot, payoutMin: utdMin(product.id), signMin: SIGN_MIN.A };
+  // Fargband: ratt rad senaste aret i kupongarkivet, bara omgangar fore den har (ingen framtidsdata i backtest)
+  // Bara Stryktipset: pa Europatipset gav banden samre resultat (+10 557 mot +24 712 kr, 55 omg), dar optimeras fritt
+  const bands = BANDS_FOR.has(product.id) ? colorBands(product.id, draw.regCloseTime || new Date().toISOString()) : null;
+  const baseOpts = { rowPrice, turnover, realTurnover, jackpot, payoutMin: utdMin(product.id), signMin: SIGN_MIN.A, colorBands: bands };
   let bestA = null, splitPair = null;
   if (out.length && B_MODE === 'split') {
     const dbl = bestReduced(out, grundCandidates(out, GRUND_MAX_ROWS), { ...baseOpts, budget: { min: 2 * BUDGET.min, max: 2 * BUDGET.max }, split: true });
@@ -1046,7 +1075,7 @@ async function analyzeDraw(product, draw, ctx, result) {
     reducedB.gamblingCabinUrl = gamblingCabinUrl(product.id, draw.drawNumber, closeDate, out, system.sets, reducedB);
   } else if (system) {
     const singlesA = system.sets.map((x) => (x.length === 1 ? x[0] : -1));
-    const bestB = bestReduced(out, grundCandidates(out, GRUND_MAX_ROWS, singlesA), { rowPrice, turnover, realTurnover, jackpot, payoutMin: utdMin(product.id), signMin: SIGN_MIN.B }, B_JOINT ? new Set(reduced.rowList) : null);
+    const bestB = bestReduced(out, grundCandidates(out, GRUND_MAX_ROWS, singlesA), { rowPrice, turnover, realTurnover, jackpot, payoutMin: utdMin(product.id), signMin: SIGN_MIN.B, colorBands: bands }, B_JOINT ? new Set(reduced.rowList) : null);
     systemB = bestB?.system || null; reducedB = bestB?.reduced || null;
     if (systemB) out.forEach((a, i) => { a.systemPickB = systemB.picks[i]; });
     if (reducedB) reducedB.gamblingCabinUrl = gamblingCabinUrl(product.id, draw.drawNumber, closeDate, out, systemB.sets, reducedB);
@@ -1059,6 +1088,7 @@ async function analyzeDraw(product, draw, ctx, result) {
     turnover: draw.currentNetSale, comment: draw.drawComment, modelCutoff: cutoff, events: out,
     system: system && { maxRows: GRUND_MAX_ROWS, rows: system.rows, hitAll: system.hitAll, hitSingle: out.reduce((s, e) => s * Math.max(...e.final), 1) },
     value: drawValue(reduced, jackpot),
+    colorBands: bands, // fargband (ratt rad senaste aret) som webbens kupongmotor bygger fargreglerna pa
     reduced: reduced && { ...reduced, colors: undefined, rowP: undefined, rowReal: undefined, rowPayout: undefined },
     reducedB: reducedB && { ...reducedB, colors: undefined, rowP: undefined, rowReal: undefined, rowPayout: undefined, ...pairStats(reduced, reducedB), sameSingles: out.filter((a) => a.systemPick?.signs.length === 1 && a.systemPickB?.signs === a.systemPick.signs).length },
     result: result ? {

@@ -191,7 +191,7 @@ function backtestBox(list, krFmt) {
 }
 
 // Vad färgerna betyder + hur ofta varje färg missar och hur många per omgång (baktestet med budgeten, kupong A)
-function colorBox(list) {
+function colorBox(list, bands = null) {
   const b = list?.find((x) => x.key === "budget");
   const c = b?.colorStats;
   const num = (x) => (x == null ? "–" : String(x).replace(".", ","));
@@ -209,6 +209,7 @@ function colorBox(list) {
         ${row("red", `<span class="st-in c-red">Röd</span>`, "Skräll – folket högst 20 %. Ger hög utdelning om den går in")}
         ${row("blue", `<span class="st-tip spik">Rosa</span>`, "Spik – vi spelar bara ett tecken i matchen")}
       </tbody></table></div>
+    ${bands ? `<p class="st-sub"><b>Rätt rad senaste året</b> (${bands.draws} omgångar med PL-match, ${esc(bands.from)} – ${esc(bands.to)}): i snitt ${["green", "yellow", "red"].map((k) => `${num(bands[k].mean)} ${{ green: "gröna", yellow: "gula", red: "röda" }[k]} (vanligen ${bands[k].core[0]}–${bands[k].core[1]}, som mest ${bands[k].range[0]}–${bands[k].range[1]})`).join(", ")}. Kupongens färgregler går aldrig utanför det som hänt, och röda får vara högst 4 – det är där de stora vinsterna finns.</p>` : ""}
     ${c ? `<p class="st-sub">Från baktestet med budgeten (${b.draws} omgångar, ${esc(b.from)} – ${esc(b.to)}), grundraden i kupong A. <b>Per omgång</b> = antal spelade tecken med den färgen (13 matcher, helgarderingar räknas som tre tecken). <b>Missar</b> = tecknet blev inte resultatet. Ett tecken i en gardering kan missa utan att kupongen missar – i en helgardering missar alltid två av tre tecken, därför missar gula (oftast i helgarderingar) mest. För blå räknas matchen: spiken sprack. <b>Väntat</b> = hur ofta våra procent sa att det skulle bli fel.</p>` : ""}
   </details>`;
 }
@@ -570,7 +571,7 @@ function render() {
   const info = `<div class="st-summary">
     ${p.note ? `<p class="st-note">${esc(p.note)}</p>` : ""}
     ${p.value ? `<p class="st-value ${esc(p.value.level)}">${esc(p.value.text)}</p>` : ""}
-    ${colorBox(product === "stryktipset" ? data.backtest : null)}
+    ${colorBox(product === "stryktipset" ? data.backtest : null, p.colorBands)}
     ${backtestBox(data.backtest, krFmt)}
     ${product === "stryktipset" ? budgetBox(data.backtest, krFmt) : ""}
     <details class="st-method"><summary>Hur räknas procenten?</summary>

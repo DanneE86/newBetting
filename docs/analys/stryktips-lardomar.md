@@ -363,6 +363,23 @@ Delat system A+B (700–800 rader). Nya varianterna har max 4 spikar och favorit
 - En första körning där favoritregeln bara gällde hela systemet (inte varje halva) gav kupong A med favoriten på 6 % av raderna. Därför kontrolleras halvorna var för sig.
 - Följ upp efter 12+ nya omgångar.
 
+## Färgband från rätt rad (2026-09-30, Stryktipset 38 omg + Europatipset 55 omg, 2025/26 + 2026/27)
+
+Rätt rad 2025/26 (33 ST-omgångar med PL-match), antal tecken per omgång i folkets färg: **grön 5,0** (2–9, vanligen 3–7), **gul 6,1** (3–8), **röd 1,9** (0–6, vanligen 0–4). En grön favorit (folket ≥ 45 %) vann 50 %, gul 30 %, röd 22 %. Färgerna räknas nu över alla 13 matcher (spikar i sin färg, ingen rosa). Banden räknas från kupongarkivet, 365 dagar före omgången (`scripts/lib/stryk-color-bands.mjs`).
+
+| Variant | ST netto | ST 12+ / 11+ / 10+ | ET netto | ET 12+ / 11+ / 10+ |
+|---|---|---|---|---|
+| Utan band (bredd 1, som innan) | −20 716 | 2 / 30 / 200 | **+24 712** | 17 / 115 / 540 |
+| Kärnan p10–p90 måste släppas igenom, röd max 3 | −22 673 | 2 / 24 / 169 | −29 571 | 2 / 44 / 303 |
+| Kärnan p10–p90, röd max 4 | −22 673 | 2 / 24 / 169 | +8 104 | 10 / 75 / 382 |
+| Bandet som yttre gräns, röd max 3 | −19 356 | 1 / 28 / 227 | +10 573 | 13 / 91 / 451 |
+| **Bandet som yttre gräns, röd max 4 (Stryktipset)** | **−8 771** | 3 / 34 / 248 | +10 557 | 13 / 91 / 451 |
+
+- **Stryktipset: yttre band + max 4 röda** är bäst hittills (−8 771 mot −14 612 för gamla motorn och −20 716 utan band), med flest rader med 10+, 11+ och 12+ rätt. Valt.
+- **Europatipset: utan band** är fortfarande bäst, så där används inga band.
+- Att tvinga reglerna att släppa igenom kärnan (p10–p90) blir för brett och sämre, som breda regler tidigare.
+- Rätt rad låg i grundraden bara 2 av 76 gånger på Stryktipset, så nettot styrs av 10–12-rättsrader. Följ upp efter 12+ nya omgångar.
+
 ## Robusta lärdomar (stöds av hela urvalet)
 
 1. **Oddsen slår vår lagmodell.** Logloss över 216 matcher, där lägre är bättre:
@@ -426,6 +443,8 @@ Delat system A+B (700–800 rader). Nya varianterna har max 4 spikar och favorit
 Nettot styrs av enstaka träffar: A:s plus kommer från en enda rad med 12 rätt. Med 65 % återbetalning är det normala förväntade utfallet negativt. Nettot säger därför lite om kvaliteten, och rader med 11+ rätt är ett bättre mått.
 
 ## Ändringslogg
+
+- **2026-09-30 (kväll):** Färgband från rätt rad senaste året som yttre gräns för färgreglerna på Stryktipset, röda högst 4, färger över alla 13 matcher (spikar i sin färg, ingen rosa i Gambling Cabin-länken). Europatipset utan band. Backtest ovan.
 
 - **2026-09-30:** Färgregler per rad (grön/gul/röd, minsta bredd 1, optimeras mot chans till 13 rätt) och rosa = antal spikar i Gambling Cabin-länken. Högst 4 spikar per kupong. Favoriten i en gardering finns på minst 10 % av raderna. Backtest av bredder ovan. Budgetbaktestet är omkört med nya motorn.
 
