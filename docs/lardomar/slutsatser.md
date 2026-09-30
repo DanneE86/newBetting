@@ -38,7 +38,33 @@ Justeringsmodellen med alla signaler samtidigt förbättrade inte kontrollen (mo
 - **Kryssöverskott tidigt på säsongen håller i sig?** Nej: 257 ligasäsonger, lutning −0,04 (z −1,0). Englands 33 % kryss i år (väntat 26 %, z 2,9) har inget historiskt mönster (tidigare säsonger z mellan −1,0 och +1,1).
 - **Situationer mot öppningsoddsen, poolat alla ligor:** oddsrörelse bort från favoriten (favoriten −2,7/−2,3 procentenheter, z −6,3/−3,8) är bekräftad, men den fångas redan av att tipset bygger på de senaste oddsen. Senaste oddsen träffar 51,25 % mot öppningens 50,78 %. Storfavoriter ≥ 70 % vinner oftare än oddsen säger (+1,8/+4,3 procentenheter, z 2,6/4,2), vilket inte ändrar tecknet. Veckodag, månad, omgång 1–10, uppflyttad favorit, vila och målsnåla matcher: ingen säker effekt. Bekräftat per liga: SB (kryss i målsnåla och jämna matcher), ED och GR (oddsrörelse), PT (storfavoriter).
 
+### Förkastat 2026-09-30, spelardatan (`data/spelare`) mot stängningsodds
+Skript: `scripts/lardomar-spelare-signaler.mjs`. Lagets matcher byggs ur spelarnas 10 senaste matcher (alla tävlingar, även cup, Europa och landslag): 3 327 lag-matcher (1 770 matcher) i 23 ligor med odds, sommaren–hösten 2026. Poäng minus oddsens förväntade poäng.
+
+| Signal | Rått (utan odds) | Mot stängning | Mot öppning |
+|---|---|---|---|
+| Vila i dagar, alla tävlingar (det gamla vilotestet saknade cup/Europa) | z −1,9 | z 0,4 | z −0,3 |
+| Kort vila ≤ 3 dagar (n 437) | +0,09 p | −0,02 p (z −0,3) | z 0,0 |
+| Europamatch ≤ 4 dagar före (n 169) | +0,50 p (starka lag) | **+0,14 p (z 1,6)** | z 2,1 |
+| Europamatch ≤ 4 dagar efter (n 104) | +0,38 p | +0,10 p (z 0,8) | z 0,7 |
+| Rotation: startelvans marknadsvärde / lagets median | z −0,3 | z −0,8 | z −1,5 |
+| Hårt roterat, elvan < 80 % av median (n 304) | −0,01 p | +0,02 p (z 0,3) | z −0,3 |
+| Minst 2 av lagets 3 dyraste spelar inte (n 839) | −0,07 p | +0,01 p (z 0,2) | z 0,5 |
+| Landslagsspelare i startelvan (landskamp ≤ 7 dagar före) | z 0,5 | z −0,1 | z 0,2 |
+| Lagnivå: keeperns goals_prevented/90 förra säsongen (361 lag) | – | z 0,7 | – |
+| Lagnivå: avslut (mål − xG)/90 förra säsongen | – | z −0,2 | – |
+| Lagnivå: andel minuter från nyförvärv 2026 | – | z −0,6 | – |
+
+Per liga (80–260 lag-matcher per liga, cirka 230 tester): inget |z| över 2,2, alltså vad slumpen ger. Enstaka: PL Europamatch före −0,44 p (n 9), LL hårt roterat +0,58 p (n 18), BL2 hårt roterat −0,67 p (n 10), MX hårt roterat +0,85 p (n 8). För små urval att använda. **Slutsats: rotation, frånvaro, vila, Europamatcher och landslagsresor är inprisade i stängningsoddsen.** Lagen spelar det oddsen säger. Samma mönster som för nyckelspelare 2026-09-28: tappet syns i rådata men inte mot oddsen. Europamatch före (+0,14 p, z 1,6) pekar åt samma håll som tidigare, att marknaden straffar trötthet lite för mycket. Följ upp.
+
 ## Vad som håller
+
+0. **2026-09-30, truppens marknadsvärde i ligor UTAN odds (kandidat, starkaste fyndet i spelardatan).** Skript: `scripts/lardomar-spelare-truppvarde.mjs`. x = ln(värde hemma / borta), där värdet är summan för de 14 med flest ligaminuter i år, med marknadsvärdet vid matchdatum (`marketValueHistory`). Mot tipsens sannolikheter (`data/reports/tips-backtest.json`):
+   - Ligor utan odds (BR2, COL, CZ, HR, NO2, SE2, n 1 015): b 0,20 p per enhet, **z 3,3**. Per liga: COL z 2,2, NO2 z 2,2, HR z 2,0, BR2 z 1,4, CZ z 0,9, SE2 z −0,2.
+   - Ligor med odds: z 0,5 mot tipsen och z 1,0 mot stängningsodds. Marknaden har det redan.
+   - Halvtest (ligor utan odds): vikten väljs på matcher före 2026-07-07 (k 0,12 i `p' ∝ p·exp(k·x·[1,0,−1])`) och testas efter. Logloss 1,0226 → 1,0139 (z −3,0), bättre i alla 6 ligor, träff 48,6 → 49,2 %. Med k 0,12 blir även första halvan bättre (1,0421 → 1,0407). Fritt vald k på andra halvan (0,28) blir sämre på den första. Använd en försiktig vikt.
+   - Svagheter: truppen är dagens (spelare som kom under säsongen räknas bakåt) och perioden är bara 2026. Modellen (Dixon-Coles på resultat) vet inget om kvalitet utöver resultaten, och där tillför värdet något.
+   - **Förslag, inte infört:** väg in k ≈ 0,10 i 1X2-tipsen för ligor utan odds. Kör om skriptet när NO2, SE2 och BR2 har spelat klart 2026.
 
 1. **Serie A och Serie B: oddsen har en strukturell bias.** Hemmalagen i Serie A vann mer sällan än öppningsoddsen sade i 9 av 9 hela säsonger (2017/18–2025/26). Kryss kom oftare än väntat i 7 av 9 säsonger i båda ligorna, i Serie B i snitt cirka +3 procentenheter. Favoriter vann oftare än väntat, och marknaden stänger bara en del av gapet före avspark. Kalibreringen förbättrade kontrollen: Serie A −0,0046 (z −3,0), Serie B −0,0031 (z −2,3) mot öppning, och −0,0037 (z −2,6) respektive −0,0032 (z −2,0) mot stängning.
 2. **Liga-kalibrering av öppningsodds** för alla fd-ligor (favorit-, hemma- och kryssbias per liga, med straff) gav −0,0006 (z −2,0) i kontrollen. **Infört i Oddset** 2026-09-28 (se beslut). I Oddset-simuleringen: 4 248 spel och avkastning 7,8 % ± 2,4 % mot 1 287 spel och 2,3 % ± 4,6 % utan justering. Den mesta ökningen är kryss. Med snittodds blev det 467 spel och 8,0 % ± 6,5 %, alltså inte säkerställt i kronor.
@@ -71,6 +97,50 @@ Justeringsmodellen med alla signaler samtidigt förbättrade inte kontrollen (mo
 - **Nyckelspelare:** kör om när 2026/27 är klar (fler matcher). Hypotes: marknaden överreagerar på frånvaro.
 - **Uppflyttade och nedflyttade lag:** svag negativ effekt (z ≈ −2), testa igen efter säsongen 2026/27.
 - **Europatipset Serie A/B-undantag:** backtesta med `scripts/backtest-stryktipset.mjs` om användaren vill.
+
+- **Spelardatan (2026-09-30):** Europamatch ≤ 4 dagar före (+0,14 p mot stängning, z 1,6, n 169) och truppvärdet i ligor utan odds. Kör båda skripten igen om 1–2 månader. Spelarloggen är bara 10 matcher, så **spara lag-matchraderna löpande** (se "Data" nedan) för att få ett växande urval.
+
+## Data: var allt ligger och hur det är uppbyggt (2026-09-30)
+
+Läs detta först nästa gång. Alla sökvägar är relativa till projektroten. Sannolikheter i matchfilerna är utan bolagsmarginal.
+
+**Matcher och resultat**
+- `data/matcher/<liga>.csv`, en rad per match (`npm run matcher`, dagligen). Innehåller status spelad/kommande, datum, lag, mål, res H/D/A, skott, xG (`xg_src` understat eller skott-proxy), domare, hörnor, kort, öppnings- och stängningsodds som sannolikheter (`open_*`, `close_*`, `pin_close`), `best_*`, `over25_*`, förberäknade signaler (`luck`, `gap`, `mres`, `rest`, `h2h_*`, `promo`, `releg`, `miss_*`, `steam`, `book`) och våra egna oddsavläsningar (`pre_first_*`, `pre_last_*`). Beskrivning: `data/matcher/README.md`. **Utgå från den här filen** när något ska testas mot odds.
+- Ligor utan oddshistorik (inga `close_*`): BR2, COL, CZ, HR, NO2, SE2, SE3N, SE3S. CL, EL och ECL är cuper och saknar ligamatcher i csv.
+- `data/betting-store.json` är den stora matchbasen, som webben och modellerna läser (`matches` 23 000+, `teams`, `accuracy*`, `edgeBoards`). `data/raw/<liga>_<säsong>.csv` och `data/raw/<liga>_all.csv` är rådata från football-data med mera.
+- `data/open/` innehåller källfiler: Understat-xG per liga och säsong (`understat_xg_<liga>_<säsong>.json`), Understat per spelare och match (`understat_player_matches.json`, topp 5 från 2024/25), ClubElo, FPL-tillgänglighet, ESPN-laguppställningar, domare, Oddsportal, oddshistorik.
+
+**Tips och facit**
+- `data/reports/tips-backtest.json`: `matches[]` med `league, season, date, home, away, result, source (modell/odds), pick, hit, p [H,D,A], dc, base, market`. Tipsens egna sannolikheter per match. Använd den som facit för "tillför X något utöver tipsen", särskilt i ligor utan odds.
+- `data/tips-ledger.json`: live-tips med utfall och CLV (`entries`). `data/tips-latest.json`: senaste körningens tips. `data/reports/pro-evaluation.json`: pro-lagrets marknadstest.
+- `data/lardomar.json` och `data/lardomar-modell.json`: resultat från `npm run lardomar` och `npm run lardomar:modell`, genererade.
+
+**Trupper och spelare**
+- `data/trupper/<liga>.json` (`npm run trupper`): `teams.<lag>` = `{ fotmobName, fotmobId, coach, coachHistory, players[], history, left }`. Per spelare: `id, name, role, position, number, age, born, country, height, value, rating, goals, assists, yellow, red, injury`. Här finns skador, tränarbyten och spelare som lämnat, som dagliga ögonblicksbilder.
+- `data/spelare/<liga>.json` (`npm run spelare`, cirka 2 h första gången, spelare återanvänds i 3 dagar): `teams.<lag>.players[]`, där lagnamnet är samma som i `data/matcher`. Per spelare:
+  - `position.group` (malvakt, mittback, ytterback, defensiv/central/offensiv_mittfaltare, ytter, anfallare). Källa FotMob om spelaren gjort minst 5 matcher på positionen, annars Transfermarkt.
+  - `info`: ålder, längd, fot, land, marknadsvärde, kontrakt, skada, landslagsuppdrag.
+  - `league`: ligans säsongssummor (`minutes_played`, `matches_uppercase`, `rating` med flera).
+  - `season` och `prevSeason`: `stats.<nyckel> = [total, per 90, percentil mot samma position]` samt `shots`, en skottsammanfattning. Nycklarnas svenska namn står i `STAT_LABELS` i `scripts/lib/player-positions.mjs`.
+  - `nyckeltal` per positionsgrupp, `traits`, `form.last5`.
+  - `matches`: de **10 senaste matcherna i alla tävlingar**, som `[datum, lag, motståndare, hemma, minuter, betyg, mål, assist, gula, röda, bänk, turnering]`.
+  - `career` och `marketValueHistory` (`[datum, värde]`, månadsvis).
+  - `_transfermarkt.json` innehåller Transfermarkts positioner, cache 7 dagar.
+- **Fällor i `data/spelare`, alla upptäckta 2026-09-30:**
+  - Utlånade spelare har kvar `fotmobTeam` = moderklubben men spelar för en annan klubb i `matches`. Bestäm klubbens namn som det vanligaste lagnamnet i lagets loggar.
+  - Vissa ligamatcher har andra datum än i csv. Matcha på lag och datum ±1 dag.
+  - Filtrera bort landslag (Nations League, VM, kval, "Friendlies", U21) och "Club Friendlies" när klubbens matcher byggs.
+  - Sök på "Champions League", inte på "Champions", eftersom "Championship" också träffar.
+  - Säsongsstatistiken (`season`) innehåller matcherna man testar på. Använd `prevSeason` eller `marketValueHistory` vid matchdatum för att slippa titta framåt.
+  - Varje spelares logg täcker bara spelarens 10 senaste matcher. Lag-matcher räknas bara där minst 14 spelares loggar når tillbaka.
+- **Spara historik framåt:** spelarloggen skrivs över varje körning. Vill vi ha fler än cirka 10 matcher per lag måste `scripts/lardomar-spelare-signaler.mjs` (eller hämtningen) spara lag-matchraderna (startelva, minuter, värde, vila) i en växande fil, till exempel `data/lagmatcher/<liga>.csv`. Det är inte byggt än.
+
+**Stryktipset och Europatipset**
+- `data/stryktipset.json`: omgångar, historik, backtest och missprofiler. `data/stryktipset-statistik.json`: Svenska Spels statistik per match (`draws`, `matches`, `fields`). `data/stryktips-history/`: arkiverade kuponger. `data/tips-archive/`: sparade system. Backtester: `data/stryktips-backtest-*.json`, `data/europatips-backtest-2526.json`.
+
+**Lärdomar**
+- `docs/lardomar/slutsatser.md` (den här filen, handskriven), `docs/lardomar/anteckningar/<liga>.md` (en per liga, auto-del plus handskrivet), `docs/lardomar/ligor/` och `docs/lardomar/lag/` (genererade).
+- Testmetod: signal mot poäng minus oddsens förväntade poäng (`3·p_vinst + p_kryss`), mot stängning och mot öppning. Krav |z| ≥ 2,5 i träning och ≥ 2 i kontroll. Vikter väljs aldrig på kontrollperioden.
 
 ## Data som skulle kunna ändra slutsatserna
 

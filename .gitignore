@@ -8,12 +8,4 @@ node_modules/
 test-results/
 playwright-report/
 blob-report/
-data/open/*.html
-data/reports/*
-# Grundmodellens backtest: lagpanelen ("modellen tippat laget") i webbygget behöver den
-!data/reports/base-backtest.json
 logs/
-
-
-# Webbversion (byggs av node scripts/build-static-site.mjs, publiceras av daily.yml)
-site/
