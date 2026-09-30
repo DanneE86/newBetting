@@ -52,10 +52,10 @@ const MAX_SPIKES = Number(process.env.STRYK_MAX_SPIKES ?? 4);
 // 2026-09-30): min/max provas upp till COLOR_TRIM steg in fran radernas spann och den kombination som ger hogst chans
 // till 13 ratt inom budgeten valjs. Samma som i gui/public/stryk-engine.js.
 const COLOR_TRIM = Number(process.env.STRYK_COLOR_TRIM ?? 2);
-// Minsta bredd max - min per farg (1 = t.ex. 2-3, 1-2), sa att systemet inte laser exakt antal (anvandaren 2026-09-30).
-// Backtest 2026-09-30 (Stryktipset 38 + Europatipset 55 omg): bredd 1 bast sammantaget; 2, 3 och inga regler samre, se lardomsfilen.
+// Minsta bredd max - min per farg (2 = t.ex. 1-3, 5-7): anvandaren 2026-09-30 tyckte bredd 1 var for snav.
+// Backtest (38 ST / 55 ET omg): ST bredd 2 -8 373 kr mot -8 771 med 1; ET +8 596 mot +24 712 med 1; bredd 3 samst i bada.
 // Ar spannet smalare anvands hela spannet. STRYK_COLOR_WIDTH=99 = inga fargregler (hela spannet), for backtest.
-const COLOR_WIDTH = Number(process.env.STRYK_COLOR_WIDTH ?? 1);
+const COLOR_WIDTH = Number(process.env.STRYK_COLOR_WIDTH ?? 2);
 const PAYOUT_13 = 0.65 * 0.4; // 65 % aterbetalning, 40 % av potten till 13 ratt
 // Minsta utdelning for 13 ratt (kr) per spel, anvandarens regel. Europatipset 20 000: backtest 55 omg (minst 3 topp 4-matcher)
 // gav A +17 677 kr mot -14 134 vid 30 000 (bygger pa en enda 13-ratt, folj upp). STRYK_UTD_MIN overstyr i backtest.
