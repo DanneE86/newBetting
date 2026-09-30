@@ -352,6 +352,7 @@ body.view-stryktips main { display: none !important; }
 .st-backtest .pos { color: #4cc873; }
 .st-backtest .neg { color: #ef6b5b; }
 .st-bt-draws { margin-top: 0.4rem; }
+.st-bt tr.st-bt-sum th, .st-bt tr.st-bt-sum td { border-top: 2px solid var(--line); font-weight: 700; }
 .st-bt-draws summary { cursor: pointer; font-weight: 600; }
 .st-note-small { color: var(--muted); font-size: 0.8rem !important; }
 @media (max-width: 640px) { .st-bt { font-size: 0.75rem; } .st-bt th, .st-bt td { padding: 0.3rem; } }
