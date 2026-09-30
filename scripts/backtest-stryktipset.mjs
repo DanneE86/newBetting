@@ -66,15 +66,15 @@ for (let n = START_DRAW; n > START_DRAW - 200 && draws.length < COUNT; n--) {
   const snap = (red, key) => red && { rowList: red.rowList, cost: red.cost, picks: a.events.map((e) => e[key]?.signs || '') };
   const evalA = a.reduced ? evaluateSnapshot(snap(a.reduced, 'systemPick'), outcomes, result.distribution) : null;
   const evalB = a.reducedB ? evaluateSnapshot(snap(a.reducedB, 'systemPickB'), outcomes, result.distribution) : null;
-  // Klarade ratt rad fargreglerna? (antal grona/gula/roda i garderingarna inom min/max; null = ratt rad utanfor grundraden)
+  // Klarade ratt rad fargreglerna? (antal grona/gula/roda over alla 13 matcher inom min/max; null = ratt rad utanfor grundraden)
   const colorCheck = (red, key) => {
     const cr = red?.rules?.colorRules;
     if (!cr) return null;
     const picks = a.events.map((e) => e[key]?.signs || '');
-    if (outcomes.some((o, i) => !picks[i].includes(o))) return { rules: cr, ok: null };
     const n = { green: 0, yellow: 0, red: 0 };
-    outcomes.forEach((o, i) => { if (picks[i].length > 1) n[a.events[i].colors[SIGNS.indexOf(o)]]++; });
-    return { rules: cr, count: n, ok: ['green', 'yellow', 'red'].every((c) => n[c] >= cr[c][0] && n[c] <= cr[c][1]) };
+    outcomes.forEach((o, i) => { n[a.events[i].colors[SIGNS.indexOf(o)]]++; });
+    const fits = ['green', 'yellow', 'red'].every((c) => n[c] >= cr[c][0] && n[c] <= cr[c][1]); // oavsett grundraden
+    return { rules: cr, count: n, fits, ok: outcomes.some((o, i) => !picks[i].includes(o)) ? null : fits };
   };
   const matches = a.events.map((e) => {
     const k = SIGNS.indexOf(e.result.outcome);

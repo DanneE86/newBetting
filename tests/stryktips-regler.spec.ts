@@ -41,10 +41,10 @@ const realPayout = (rules: any, f: number) => (PAYOUT_13 * rules.realTurnover + 
 // Utdelningsintervall i Gambling Cabin: utd=1,min,max (max saknas = ingen ovre grans)
 const inPayoutRange = (r: any, payout: number) => payout >= r.payoutMin && (r.payoutMax == null || payout <= r.payoutMax);
 const signCount = (row: string) => SIGNS.map((s) => row.split('').filter((c) => c === s).length);
-// Fargregler (2026-09-30): antal grona/gula/roda tecken i garderingarna ligger inom min/max, spikar ar rosa
+// Fargregler (2026-09-30): antal grona/gula/roda tecken i raden (alla 13 matcher) ligger inom min/max
 const MAX_SPIKES = 4;
 const colorCount = (events: any[], picks: string[], row: string, color: string) =>
-  row.split('').filter((c, i) => picks[i].length > 1 && signColor(events[i].folk?.[idx(c)]) === color).length;
+  row.split('').filter((c, i) => signColor(events[i].folk?.[idx(c)]) === color).length;
 const inColorRules = (events: any[], picks: string[], r: any, row: string) =>
   ['green', 'yellow', 'red'].every((c) => { const n = colorCount(events, picks, row, c); return n >= r.colorRules[c][0] && n <= r.colorRules[c][1]; });
 
@@ -147,10 +147,21 @@ test('reducerade system: budget, teckenregler, rader inom grundraden', () => {
         signMinOf(name, red).forEach((m, k) => expect(n[k], `${at} rad ${row}: minst ${m} st ${SIGNS[k]}`).toBeGreaterThanOrEqual(m));
         expect(inColorRules(p.events, picks, red.rules, row), `${at} rad ${row}: färgreglerna`).toBe(true);
       }
-      // Högst 4 spikar, rosa-regeln = antal spikar
+      // Högst 4 spikar
       const spikes = picks.filter((x) => x.length === 1).length;
       expect(spikes, `${at}: högst ${MAX_SPIKES} spikar`).toBeLessThanOrEqual(MAX_SPIKES);
-      expect(red.rules.colorRules.pink, at).toEqual([spikes, spikes]);
+      // Färgband (Stryktipset): reglerna aldrig utanför det rätt rad haft senaste året, röda högst 4
+      if (p.colorBands) {
+        const counts = (c: string) => grundRows(picks).map((r) => colorCount(p.events, picks, r, c));
+        for (const c of ['green', 'yellow', 'red']) {
+          const [lo, hi] = red.rules.colorRules[c];
+          const xs = counts(c), sLo = Math.min(...xs), sHi = Math.max(...xs);
+          const bLo = Math.min(Math.max(p.colorBands[c].range[0], sLo), sHi), bHi = Math.max(Math.min(p.colorBands[c].range[1], sHi), bLo);
+          expect(lo, `${at} ${c}: min inom bandet`).toBeGreaterThanOrEqual(bLo);
+          expect(hi, `${at} ${c}: max inom bandet`).toBeLessThanOrEqual(bHi);
+        }
+        expect(red.rules.colorRules.red[1], `${at}: högst 4 röda`).toBeLessThanOrEqual(4);
+      }
       // Favoriten (troligaste tecknet) i varje gardering på minst 10 % av kupongens rader (2026-09-30)
       picks.forEach((pk, i) => {
         if (pk.length < 2) return;
@@ -211,14 +222,15 @@ test('Gambling Cabin-länk: samma grundrad, färger och regler som systemet', ()
       expect(q.get('datum'), at).toBe((p.regCloseTime || '').slice(0, 10));
       const colorId: Record<string, number> = { yellow: 2, red: 3, green: 4 };
       ['v1', 'vX', 'v2'].forEach((key, k) => {
-        const expected = p.events.map((e: any, i: number) => (!picks[i].includes(SIGNS[k]) ? 0 : picks[i].length === 1 ? 5 : colorId[e.colors[k]])).join(',');
+        const expected = p.events.map((e: any, i: number) => (picks[i].includes(SIGNS[k]) ? colorId[e.colors[k]] : 0)).join(',');
         expect(q.get(key), `${at} ${key}`).toBe(expected);
       });
       const [m1, mx, m2] = signMinOf(name, red);
       expect(q.get('antT'), at).toBe(`1,${m1},13,${mx},13,${m2},13`);
       expect(q.get('utd'), at).toBe(`1,${red.rules.payoutMin},${red.rules.payoutMax ?? 100000000}`);
-      // Färgreglerna är aktiva med systemets min/max, aldrig 0-13
-      for (const c of ['yellow', 'red', 'green', 'pink']) {
+      // Färgreglerna är aktiva med systemets min/max, aldrig 0-13; rosa används inte (spikar har sin färg)
+      expect(q.get('pink'), at).toBe('0,0,13');
+      for (const c of ['yellow', 'red', 'green']) {
         const [lo, hi] = red.rules.colorRules[c];
         expect(q.get(c), `${at} ${c}`).toBe(`1,${lo},${hi}`);
         expect(lo > 0 || hi < 13, `${at} ${c}: inte 0-13`).toBe(true);
