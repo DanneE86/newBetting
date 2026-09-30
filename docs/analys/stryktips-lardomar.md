@@ -402,6 +402,24 @@ Lärdomar:
 - Delat system (A+B): favoritregeln kan inte släppas där. Går det inte byggs A och B var för sig, och favoritregeln släpps bara om ingen kupong alls går att bygga.
 - Webbens kupongmotor: tecken- och utdelningsreglerna släpps sist, och högst 60 färgkombinationer provas. Det tog Stryktipset från 17 s till under 1 s.
 
+## Spikbedömning match för match (2026-09-30, användarens regel: alla matcher bedöms alltid match för match)
+
+Den fasta regeln (spik bara om modellens favoritchans är minst 65 %) är borttagen. I stället bedöms varje match (`scripts/lib/stryk-calibration.mjs`): favoritchansen justeras efter hur ofta favoriter av samma slag vunnit i kupongarkivet före omgången. Samma slag betyder samma spel, 5-procentsband, hemma- eller bortafavorit och liga (krympt mot modellen, K = 40). Systemet byggs på de justerade procenten, och en match får spikas om den justerade chansen är minst 55 %. Bedömningen står i matchanalysen.
+
+Kalibreringen i arkivet: favoriterna vinner nästan så ofta som modellen säger (faktor 0,94–1,08). En spik på en 55 %-favorit spricker alltså 45 % av gångerna som väntat. Det var aldrig modellfel utan chansspikar.
+
+| Variant | ST A+B | ST C | ET A+B | ET C |
+|---|---|---|---|---|
+| Fast 65 %-regel (ST), ingen bedömning (ET) | −20 384 (29 %) | −8 928 (70 %) | −24 950 (39 %) | −10 024 (76 %) |
+| Bedömning, spik från 55 % (vald) | **−6 175 (78 %)** | −9 226 (69 %) | −19 707 (52 %) | −24 750 (42 %) |
+| Bedömning, ingen lägsta nivå | −8 559 (70 %) | −7 938 (73 %) | −33 043 (19 %) | −19 132 (55 %) |
+| Bedömning, spik från 60 % | −5 946 (79 %) | −10 466 (65 %) | −29 976 (27 %) | −32 522 (23 %) |
+| Bedömning, spik från 65 % | −16 789 (41 %) | −12 137 (59 %) | −30 223 (27 %) | −36 440 (14 %) |
+
+- **Stryktipset:** A+B+C −15 401 kr mot −29 312 med den fasta regeln.
+- **Europatipset:** A+B+C −44 457 kr mot −34 974 utan bedömning. Bedömningen gör det sämre här, men den gäller ändå (användarens regel). Följ upp efter 12+ omgångar.
+- A+B ger nu mer än C på båda spelen, och sidans rekommendation är ändrad.
+
 ## Robusta lärdomar (stöds av hela urvalet)
 
 1. **Oddsen slår vår lagmodell.** Logloss över 216 matcher, där lägre är bättre:
@@ -465,6 +483,8 @@ Lärdomar:
 Nettot styrs av enstaka träffar: A:s plus kommer från en enda rad med 12 rätt. Med 65 % återbetalning är det normala förväntade utfallet negativt. Nettot säger därför lite om kvaliteten, och rader med 11+ rätt är ett bättre mått.
 
 ## Ändringslogg
+
+- **2026-09-30 (natt, match för match):** Fast 65 %-spikregel borttagen. Alla matcher bedöms match för match på båda spelen (användarens regel), spik från justerad chans 55 %. Se avsnittet om spikbedömning.
 
 - **2026-09-30 (sent, rekommendation):** Användaren följde rekommendationen. Utdelningsregeln är en LÄGSTA gräns igen, som får höjas (exakt gräns kvar bakom STRYK_EXACT=1). Spikgränsen på Stryktipset och kupong C behålls. Servern bygger A och B var för sig som webben. Backtest med det (38 ST / 55 ET omg), återbetalning per insatt krona: ST C 70 % (−8 928 kr, 11+ 48), ET C 76 % (−10 024, 11+ 105), ST A+B 29 % (−20 384, 11+ 15; det delade systemet gav 64 % men används inte i webben), ET A+B 39 % (−24 950). Sidan rekommenderar att i första hand spela C. **Reglerna fryses** tills minst 12 nya omgångar utvärderats mot facit.
 

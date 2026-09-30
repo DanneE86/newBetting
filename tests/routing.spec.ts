@@ -128,8 +128,13 @@ test('Stryktipset: en sida, egna krav genererar kupong A och B', async ({ page }
   await expect(page.locator('.st-match .st-tip.sysb').first()).toBeVisible();
   // Turknapparna skriver aldrig över ett krav som gäller A
   const turAdd = page.locator('.sb-tur-add');
-  if (await turAdd.count()) {
-    const nr = await turAdd.first().getAttribute('data-ev');
+  // En turmatch utan eget krav (testet har redan lagt krav på några matcher)
+  const freeNrs: string[] = [];
+  for (const nr of await turAdd.evaluateAll((els) => els.map((x) => x.getAttribute('data-ev') || ''))) {
+    if (!(await page.locator(`.sb-row[data-ev="${nr}"] .sb-sign.on`).count())) freeNrs.push(nr);
+  }
+  if (freeNrs.length) {
+    const nr = freeNrs[0];
     const row = page.locator(`.sb-row[data-ev="${nr}"]`);
     await row.locator('.sb-sign[data-sign="X"]').click();
     await expect(page.locator(`.sb-tur-add[data-ev="${nr}"]`)).toHaveCount(0);

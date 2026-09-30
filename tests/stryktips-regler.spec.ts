@@ -159,7 +159,14 @@ test('reducerade system: budget, teckenregler, rader inom grundraden', () => {
       // Högst 4 spikar, och spik bara på favoriter med minst spelets gräns (Stryktipset 65 %)
       const spikes = picks.filter((x) => x.length === 1).length;
       picks.forEach((pk, i) => {
-        if (pk.length === 1) expect(p.events[i].final[idx(pk)], `${at} match ${i + 1}: spik ${pk} på favorit`).toBeGreaterThanOrEqual((SPIK_MIN_BY_PRODUCT[p.product] ?? 0) - 1e-9);
+        if (pk.length !== 1) return;
+        const sp = p.events[i].spik;
+        // Spikbedömning match för match (Stryktipset): spik bara på favoriten och bara om matchen bedömts som spikbar
+        if (sp?.used) {
+          expect(pk, `${at} match ${i + 1}: spik på favoriten`).toBe(sp.fav);
+          expect(sp.spikbar, `${at} match ${i + 1}: spikbar (justerad chans ${sp.calibrated} >= ${sp.spikMin})`).toBe(true);
+          expect(sp.calibrated, `${at} match ${i + 1}`).toBeGreaterThanOrEqual(sp.spikMin - 1e-9);
+        } else expect(p.events[i].final[idx(pk)], `${at} match ${i + 1}: spik ${pk} på favorit`).toBeGreaterThanOrEqual((SPIK_MIN_BY_PRODUCT[p.product] ?? 0) - 1e-9);
       });
       expect(spikes, `${at}: högst ${MAX_SPIKES} spikar`).toBeLessThanOrEqual(MAX_SPIKES);
       // Rörliga färgfönster (hela raden = regeln + spikarnas färger): minst 3 breda och runt väntat antal; rosa = antal spikar
@@ -193,9 +200,11 @@ test('reducerade system: budget, teckenregler, rader inom grundraden', () => {
       // Chanser: reducerat <= grundrad <= 1, och grundradens chans = produkt av valda tecknens sannolikhet
       expect(red.hitAll, at).toBeLessThanOrEqual(red.grundHit + 1e-9);
       expect(red.grundHit, at).toBeLessThanOrEqual(1);
-      const grundHit = p.events.reduce((h: number, e: any, i: number) => h * picks[i].split('').reduce((s, c) => s + e.final[idx(c)], 0), 1);
+      // Systemen byggs på matchens justerade procent (spikbedömningen) när den används
+      const sysP = (e: any) => (e.spik?.used ? e.spik.sysP : e.final);
+      const grundHit = p.events.reduce((h: number, e: any, i: number) => h * picks[i].split('').reduce((s, c) => s + sysP(e)[idx(c)], 0), 1);
       expect(red.grundHit / grundHit, at).toBeCloseTo(1, 1);
-      const hit = red.rowList.reduce((s: number, row: string) => s + row.split('').reduce((q, c, i) => q * p.events[i].final[idx(c)], 1), 0);
+      const hit = red.rowList.reduce((s: number, row: string) => s + row.split('').reduce((q, c, i) => q * sysP(p.events[i])[idx(c)], 1), 0);
       expect(red.hitAll / hit, at).toBeCloseTo(1, 1);
     }
   }

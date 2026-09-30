@@ -57,7 +57,7 @@ test('stryktipset: 13 matcher med avsparkstid, procent och Värde/Ej värde', ()
       expect(p.reducedB.cost).toBeLessThanOrEqual(400);
       // Hogst 1 gemensam spik galler motsystemet; delat system har samma grundrad men inga gemensamma rader
       if (p.reducedB.split) expect(p.reducedB.overlapRows).toBe(0);
-      else expect(p.reducedB.sameSingles).toBeLessThanOrEqual(1);
+      else expect(p.reducedB.sameSingles).toBeLessThanOrEqual(2); // eget B-system: högst 2 spikar som A (2026-09-30)
     }
   }
 });
