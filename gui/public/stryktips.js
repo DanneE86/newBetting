@@ -192,6 +192,42 @@ function backtestBox(list, krFmt) {
   </details>`;
 }
 
+// Budgettabell: varje omgång 2025/26 + 2026/27 med PL-match, nuvarande version, insats/vinst och antal rader per antal rätt
+function budgetBox(list, krFmt) {
+  const b = list?.find((x) => x.key === "budget");
+  if (!b?.perDraw?.length) return "";
+  const signed = (x) => `<b class="${x >= 0 ? "pos" : "neg"}">${x >= 0 ? "+" : ""}${krFmt(x)}</b>`;
+  const draws = [...b.perDraw].sort((x, y) => x.date.localeCompare(y.date));
+  const cls = (d, k) => (d.aClass?.[k] || 0) + (d.bClass?.[k] || 0);
+  // Rätt-kolumner 13 ner till lägsta klass som förekommer
+  const lowest = Math.min(...draws.flatMap((d) => [...Object.keys(d.aClass || {}), ...Object.keys(d.bClass || {})].map(Number)), 9);
+  const ks = Array.from({ length: 14 - lowest }, (_, i) => 13 - i);
+  const season = (d) => (d.date < "2026-07-01" ? "2025/26" : "2026/27");
+  let acc = 0;
+  const line = (d) => {
+    const cost = (d.aCost || 0) + (d.bCost || 0), win = (d.aWin || 0) + (d.bWin || 0);
+    acc += win - cost;
+    return `<tr><th>${d.n} · ${esc(d.date)}</th><td>${d.aBest}/${d.bBest}</td><td>${krFmt(cost)}</td><td>${krFmt(win)}</td><td>${signed(win - cost)}</td><td>${signed(acc)}</td>${ks.map((k) => {
+      const v = cls(d, k);
+      return `<td${k >= 11 && v ? " class=\"up\"" : ""} title="A ${d.aClass?.[k] || 0} · B ${d.bClass?.[k] || 0}">${v || "·"}</td>`;
+    }).join("")}</tr>`;
+  };
+  const total = (label, ds) => {
+    const cost = ds.reduce((s, d) => s + (d.aCost || 0) + (d.bCost || 0), 0), win = ds.reduce((s, d) => s + (d.aWin || 0) + (d.bWin || 0), 0);
+    const aNet = ds.reduce((s, d) => s + (d.aWin || 0) - (d.aCost || 0), 0);
+    return `<tr class="st-bt-sum"><th>${label} (${ds.length} omg.)</th><td>A ${signed(aNet)}</td><td>${krFmt(cost)}</td><td>${krFmt(win)}</td><td>${signed(win - cost)}</td><td></td>${ks.map((k) => `<td>${ds.reduce((s, d) => s + cls(d, k), 0) || "·"}</td>`).join("")}</tr>`;
+  };
+  const seasons = [...new Set(draws.map(season))];
+  const body = seasons.map((s) => draws.filter((d) => season(d) === s).map(line).join("") + total(`Summa ${s}`, draws.filter((d) => season(d) === s))).join("");
+  return `<details class="st-method st-backtest"><summary>Baktest med budgeten – alla omgångar 2025/26 och 2026/27 med PL-match (${draws.length} st)</summary>
+    <p>Så hade det gått om vi tippat varje omgång med nuvarande version: kupong A + kupong B à 350–400 kr (ett delat system på 700–800 rader), räknat mot facit och Svenska Spels verkliga utdelning. <b>Rätt</b>-kolumnerna visar hur många rader (A+B) som fick 13, 12, 11 … rätt – håll muspekaren över en siffra för att se A och B var för sig. Bästa = bästa rad i A/B. Summaraden visar också nettot för bara kupong A.</p>
+    <div class="st-bt-wrap"><table class="st-bt">
+      <thead><tr><th>Omgång</th><th>Bästa</th><th>Insats</th><th>Vinst</th><th>Netto</th><th>Totalt</th>${ks.map((k) => `<th>${k} r</th>`).join("")}</tr></thead>
+      <tbody>${body}${seasons.length > 1 ? total("Summa alla", draws) : ""}</tbody></table></div>
+    <p class="st-note-small">Samma motor som kupongen i dag (modell med data fram till omgångens första match, skarpa slutodds). Återbetalningen på Stryktipset är 65 %, så resultatet styrs av enstaka stora träffar.</p>
+  </details>`;
+}
+
 // Startelvor/frånvaro – samma data som Oddset (ESPN-elva för PL/Championship, annars FPL-skador för PL)
 function lineupRow(e) {
   const l = e.lineup;
@@ -491,6 +527,7 @@ function render() {
     ${p.note ? `<p class="st-note">${esc(p.note)}</p>` : ""}
     ${p.value ? `<p class="st-value ${esc(p.value.level)}">${esc(p.value.text)}</p>` : ""}
     ${backtestBox(data.backtest, krFmt)}
+    ${product === "stryktipset" ? budgetBox(data.backtest, krFmt) : ""}
     <details class="st-method"><summary>Hur räknas procenten?</summary>
       <ul>${Object.values(data.method || {}).map((m) => `<li>${esc(m)}</li>`).join("")}</ul>
     </details>

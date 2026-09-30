@@ -1108,6 +1108,9 @@ const BACKTESTS = [
   { file: 'stryktips-backtest-2526-hel.json', label: 'Steg 2: skarpa odds + jackpot', key: 'step2', col: true },
   { file: 'stryktips-backtest-2526-steg3.json', label: 'Steg 3: delat system 4-2-2 + xG (nu)', key: 'new', col: true },
   { file: 'stryktips-backtest.json', label: 'Hösten 2026 – nuvarande version', key: 'autumn' },
+  // Budgettabellen: 2025/26 + 2026/27 hittills, nuvarande version
+  // (STRYK_SEASONS=2627,2526,2425 node scripts/backtest-stryktipset.mjs --from 2025-08-01 --out data/stryktips-backtest-budget.json)
+  { file: 'stryktips-backtest-budget.json', label: 'Budget 2025/26 + 2026/27', key: 'budget' },
 ];
 function loadBacktests() {
   const out = [];
@@ -1130,9 +1133,11 @@ function loadBacktests() {
       draws: draws.length, matches: x.summary?.matches, logLoss: x.summary?.logLoss, drawRate: x.summary?.drawRate,
       A: sys('A'), B: sys('B'),
       pairChance: (() => { const h = draws.reduce((a, d) => a + (d.A?.hit || 0) + (d.B?.hit || 0), 0); return h ? Math.round(draws.length / h) : null; })(),
-      perDraw: b.key !== 'new' ? undefined : draws.map((d) => ({
+      perDraw: b.key !== 'new' && b.key !== 'budget' ? undefined : draws.map((d) => ({
         n: d.drawNumber, date: d.date, x: d.draws13, prize13: d.prize13?.amount, winners13: d.prize13?.winners,
         aBest: d.A?.best, aWin: d.A?.winnings, bBest: d.B?.best, bWin: d.B?.winnings,
+        // Budgettabellen: insats och antal rader per antal ratt
+        ...(b.key === 'budget' ? { aCost: d.A?.cost || 0, bCost: d.B?.cost || 0, aClass: d.A?.perClass || {}, bClass: d.B?.perClass || {} } : {}),
       })),
     });
   }
@@ -1218,7 +1223,7 @@ function currentRules(productId) {
   return { signMin: SIGN_MIN.A, signMinB: SIGN_MIN.B, bMode: B_MODE, payoutMin: utdMin(productId), budget: BUDGET, modelW: MODEL_W, modelWThin: MODEL_W_THIN, market: MARKET_MODE, grundMax: GRUND_MAX_ROWS };
 }
 
-export { analyzeDraw, oddsetAvailability, evaluateSnapshot, loadNationalElo, loadGroup, fitModel, get, API, SIGN_MIN, currentRules, PRODUCTS };
+export { analyzeDraw, oddsetAvailability, evaluateSnapshot, loadBacktests, loadNationalElo, loadGroup, fitModel, get, API, SIGN_MIN, currentRules, PRODUCTS };
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   main().catch((e) => {
