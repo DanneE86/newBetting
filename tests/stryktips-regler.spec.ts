@@ -42,8 +42,7 @@ const realPayout = (rules: any, f: number) => (PAYOUT_13 * rules.realTurnover + 
 const inPayoutRange = (r: any, payout: number) => payout >= r.payoutMin && (r.payoutMax == null || payout <= r.payoutMax);
 const signCount = (row: string) => SIGNS.map((s) => row.split('').filter((c) => c === s).length);
 // Fargregler (2026-09-30): antal grona/gula/roda tecken i garderingarna ligger inom min/max, spikar ar rosa.
-// Malen galler hela raden: grona 3-7, gula 4-8, roda 1-3; spikarnas farger dras av i lanken.
-const COLOR_TARGET: Record<string, number[]> = { green: [3, 7], yellow: [4, 8], red: [1, 3] };
+// Rorliga fonster: for hela raden minst 3 bred (4 mojliga antal) och innehaller vantat antal; spikarnas farger dras av.
 const MAX_SPIKES = 4;
 const colorCount = (events: any[], picks: string[], row: string, color: string) =>
   row.split('').filter((c, i) => picks[i].length > 1 && signColor(events[i].folk?.[idx(c)]) === color).length;
@@ -152,13 +151,20 @@ test('reducerade system: budget, teckenregler, rader inom grundraden', () => {
       // Högst 4 spikar
       const spikes = picks.filter((x) => x.length === 1).length;
       expect(spikes, `${at}: högst ${MAX_SPIKES} spikar`).toBeLessThanOrEqual(MAX_SPIKES);
-      // Färgmålen: hela raden grön 3-7, gul 4-8, röd 1-3 (spikarnas färger avdragna), rosa = antal spikar
+      // Rörliga färgfönster (hela raden = regeln + spikarnas färger): minst 3 breda och runt väntat antal; rosa = antal spikar
       expect(red.rules.colorRules.pink, at).toEqual([spikes, spikes]);
       if (red.rules.colorTarget) {
-        for (const c of ['green', 'yellow', 'red']) {
+        ['green', 'yellow', 'red'].forEach((c) => {
           const spikC = picks.filter((pk, i) => pk.length === 1 && signColor(p.events[i].folk?.[idx(pk)]) === c).length;
-          expect(red.rules.colorRules[c], `${at} ${c}: målet minus spikar`).toEqual([Math.max(0, COLOR_TARGET[c][0] - spikC), COLOR_TARGET[c][1] - spikC]);
-        }
+          const exp = p.events.reduce((sum: number, e: any) => sum + [0, 1, 2].reduce((q, k) => q + (signColor(e.folk?.[k]) === c ? e.final[k] : 0), 0), 0);
+          const [lo, hi] = red.rules.colorRules[c];
+          const wLo = lo + spikC, wHi = hi + spikC;
+          expect(wHi, `${at} ${c}: max minst väntat ${exp.toFixed(1)}`).toBeGreaterThanOrEqual(exp - 1e-9);
+          if (lo > 0) {
+            expect(wLo, `${at} ${c}: min högst väntat`).toBeLessThanOrEqual(exp + 1e-9);
+            expect(wHi - wLo, `${at} ${c}: inte snävt`).toBeGreaterThanOrEqual(3);
+          }
+        });
       }
       // Favoriten (troligaste tecknet) i varje gardering på minst 10 % av kupongens rader (2026-09-30)
       picks.forEach((pk, i) => {
