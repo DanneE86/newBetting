@@ -487,7 +487,7 @@ function matchCard(p, e) {
       </div>
       <div class="st-verdict">
         ${sys ? `<span class="st-tip ${sys.signs.length === 1 ? "spik" : sys.signs.length === 2 ? "halv" : "hel"}" title="System A – grundrad (reduceras sedan)">${e.systemPickB ? "A: " : ""}${esc(sys.type)} ${esc(sys.signs.split("").join(" + "))}</span>` : `<span class="st-tip">Tips ${esc(e.tip)}</span>`}
-        ${e.systemPickB && !p.reducedB?.split ? `<span class="st-tip sysb" title="System B – eget system">B: ${esc(e.systemPickB.type)} ${esc(e.systemPickB.signs.split("").join(" + "))}</span>` : ""}
+        ${e.systemPickB && !p.reducedB?.split ? `<span class="st-tip sysb${e.systemPickB.signs.length === 1 ? " spik" : ""}" title="System B – eget system">B: ${esc(e.systemPickB.type)} ${esc(e.systemPickB.signs.split("").join(" + "))}</span>` : ""}
         ${turChip(tur, e)}
         ${verdictChip(e)}
         ${resultChip(e)}
@@ -578,7 +578,7 @@ function kravRow(e, krav, pick) {
     <span class="st-num">${e.eventNumber}</span>
     <div class="sb-match"><b>${esc(e.home)} – ${esc(e.away)}</b><small><span class="st-kick">${esc(kickoff(e.kickoff))}</span> · ${esc(e.league || "")}${tur?.tur ? ` · <button type="button" class="sb-tur tur-btn" data-ev="${e.eventNumber}" aria-expanded="${turOpen.has(turKey(e))}">🍀 turmatch (${esc(pick.signs)} missar ${pct(tur.rate)}) ${turOpen.has(turKey(e)) ? "▲" : "– varför? ▼"}</button>` : ""}</small></div>
     <div class="sb-krav">
-      <div class="sb-signs" role="group" aria-label="Krav match ${e.eventNumber}">${SIGNS.map((s, i) => `<button type="button" class="sb-sign${signs.includes(s) ? " on" : ""}" data-sign="${s}" aria-pressed="${signs.includes(s)}" title="Folket ${pct(e.folk?.[i])}">${s}<small>${pct(e.final[i])}</small></button>`).join("")}</div>
+      <div class="sb-signs${signs.length === 1 ? " spik" : ""}" role="group" aria-label="Krav match ${e.eventNumber}">${SIGNS.map((s, i) => `<button type="button" class="sb-sign${signs.includes(s) ? " on" : ""}" data-sign="${s}" aria-pressed="${signs.includes(s)}" title="Folket ${pct(e.folk?.[i])}">${s}<small>${pct(e.final[i])}</small></button>`).join("")}</div>
       <span class="sb-krav-lbl">${krav ? `<span class="st-tip ${kravType(signs)}">${esc(signs)}</span>` : "fritt"}</span>
     </div>
     <div class="sb-scope" role="group" aria-label="Kravet gäller">${SCOPES.map(([k, lbl]) => `<button type="button" data-scope="${k}" aria-pressed="${!!krav && scope === k}"${krav ? "" : " disabled"}>${lbl}</button>`).join("")}</div>

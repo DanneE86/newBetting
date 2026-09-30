@@ -449,3 +449,9 @@ body.view-stryktips main { display: none !important; }
 .st-miss-table th small { color: var(--bad); font-weight: 500; }
 .st-miss-table td:last-child { white-space: nowrap; }
 
+
+/* Spikar (ett tecken) alltid blå – i kupong A, B, egna krav och kupongtabellen */
+.st-tip.spik { background: #7fb6ff; color: #0a1628; box-shadow: none; }
+.st-tip.spik.mine { box-shadow: 0 0 0 2px var(--warn); }
+.sb-signs.spik .sb-sign.on { background: #7fb6ff; border-color: #7fb6ff; color: #0a1628; }
+.sb-signs.spik .sb-sign.on small { color: #0a1628; }
