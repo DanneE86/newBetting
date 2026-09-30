@@ -19,10 +19,14 @@ const script = pathToFileURL(path.join(root, 'scripts', 'fetch-stryktipset.mjs')
 
 const SIGNS = ['1', 'X', '2'];
 const BUDGET = { min: 350, max: 400 };
+// Kupong C (2026-09-30): eget system 700-850 kr, minst 30 000 kr for 13 ratt, samma regler som A
+const BUDGET_C = { min: 700, max: 850 };
+const budgetOf = (name: string) => (name === 'C' ? BUDGET_C : BUDGET);
 // Teckenreglerna ar anvandarens beslut och lases fran skriptet (se beforeAll)
 let SIGN_MIN: { A: number[]; B: number[] };
-test.beforeAll(async () => { ({ SIGN_MIN } = await import(script)); });
-const signMinOf = (name: 'A' | 'B', red: any) => (name === 'A' || red.split ? SIGN_MIN.A : SIGN_MIN.B);
+let SIGN_MIN_C: Record<string, number[]>, SPIK_MIN_BY_PRODUCT: Record<string, number>;
+test.beforeAll(async () => { ({ SIGN_MIN, SIGN_MIN_C, SPIK_MIN_BY_PRODUCT } = await import(script)); });
+const signMinOf = (name: 'A' | 'B' | 'C', red: any, product = 'stryktipset') => (name === 'C' ? SIGN_MIN_C[product] : name === 'A' || red.split ? SIGN_MIN.A : SIGN_MIN.B);
 const UTD_MIN = { stryktipset: 30000, europatipset: 20000 } as Record<string, number>;
 const PAYOUT_13 = 0.65 * 0.4;
 const COLOR = { green: 0.45, red: 0.2 };
@@ -57,9 +61,10 @@ function grundRows(picks: string[]): string[] {
 }
 
 function systems(p: any) {
-  const out: { name: 'A' | 'B'; red: any; picks: string[] }[] = [];
+  const out: { name: 'A' | 'B' | 'C'; red: any; picks: string[] }[] = [];
   if (p.reduced) out.push({ name: 'A', red: p.reduced, picks: p.events.map((e: any) => e.systemPick?.signs) });
   if (p.reducedB) out.push({ name: 'B', red: p.reducedB, picks: p.events.map((e: any) => e.systemPickB?.signs) });
+  if (p.reducedC) out.push({ name: 'C', red: p.reducedC, picks: p.reducedC.picks });
   return out;
 }
 
@@ -127,13 +132,13 @@ test('reducerade system: budget, teckenregler, rader inom grundraden', () => {
     expect(p.reduced, `${p.product}: system A saknas`).toBeTruthy();
     for (const { name, red, picks } of systems(p)) {
       const at = `${p.product} ${p.drawNumber} system ${name}`;
-      expect(red.rules.signMin, at).toEqual(signMinOf(name, red));
-      expect(red.rules.payoutMinReal, at).toBe(UTD_MIN[p.product] ?? 30000);
+      expect(red.rules.signMin, at).toEqual(signMinOf(name, red, p.product));
+      expect(red.rules.payoutMinReal, at).toBe(name === 'C' ? Math.max(30000, UTD_MIN[p.product] ?? 30000) : UTD_MIN[p.product] ?? 30000);
       // Budget
       expect(red.rows, at).toBe(red.rowList.length);
       expect(red.cost, at).toBe(red.rows * red.rowPrice);
-      expect(red.cost, at).toBeGreaterThanOrEqual(BUDGET.min);
-      expect(red.cost, at).toBeLessThanOrEqual(BUDGET.max);
+      expect(red.cost, at).toBeGreaterThanOrEqual(budgetOf(name).min);
+      expect(red.cost, at).toBeLessThanOrEqual(budgetOf(name).max);
       expect(new Set(red.rowList).size, at).toBe(red.rows);
       // Grundraden
       expect(picks.every((x) => typeof x === 'string' && x.length > 0), at).toBe(true);
@@ -145,11 +150,14 @@ test('reducerade system: budget, teckenregler, rader inom grundraden', () => {
         expect(row, at).toMatch(/^[1X2]{13}$/);
         row.split('').forEach((c: string, i: number) => expect(picks[i], `${at} rad ${row} match ${i + 1}`).toContain(c));
         const n = signCount(row);
-        signMinOf(name, red).forEach((m, k) => expect(n[k], `${at} rad ${row}: minst ${m} st ${SIGNS[k]}`).toBeGreaterThanOrEqual(m));
+        signMinOf(name, red, p.product).forEach((m, k) => expect(n[k], `${at} rad ${row}: minst ${m} st ${SIGNS[k]}`).toBeGreaterThanOrEqual(m));
         expect(inColorRules(p.events, picks, red.rules, row), `${at} rad ${row}: färgreglerna`).toBe(true);
       }
-      // Högst 4 spikar
+      // Högst 4 spikar, och spik bara på favoriter med minst spelets gräns (Stryktipset 65 %)
       const spikes = picks.filter((x) => x.length === 1).length;
+      picks.forEach((pk, i) => {
+        if (pk.length === 1) expect(p.events[i].final[idx(pk)], `${at} match ${i + 1}: spik ${pk} på favorit`).toBeGreaterThanOrEqual((SPIK_MIN_BY_PRODUCT[p.product] ?? 0) - 1e-9);
+      });
       expect(spikes, `${at}: högst ${MAX_SPIKES} spikar`).toBeLessThanOrEqual(MAX_SPIKES);
       // Rörliga färgfönster (hela raden = regeln + spikarnas färger): minst 3 breda och runt väntat antal; rosa = antal spikar
       expect(red.rules.colorRules.pink, at).toEqual([spikes, spikes]);
@@ -206,7 +214,7 @@ test('reducerade system: utdelningsgränsen ger exakt samma rader som Gambling C
       // Omvant: ingen rad i grundraden som klarar tecken + utdelning saknas (annars skiljer GC och vi)
       const expected = grundRows(picks).filter((row) => {
         const n = signCount(row);
-        return signMinOf(name, red).every((m, k) => n[k] >= m) && inColorRules(p.events, picks, r, row) && inPayoutRange(r, gcPayout(r, folkProduct(p.events, row)));
+        return signMinOf(name, red, p.product).every((m, k) => n[k] >= m) && inColorRules(p.events, picks, r, row) && inPayoutRange(r, gcPayout(r, folkProduct(p.events, row)));
       });
       expect(expected.length, at).toBe(red.rows);
       expect(new Set(expected), at).toEqual(new Set(red.rowList));
@@ -229,7 +237,7 @@ test('Gambling Cabin-länk: samma grundrad, färger och regler som systemet', ()
         const expected = p.events.map((e: any, i: number) => (!picks[i].includes(SIGNS[k]) ? 0 : picks[i].length === 1 ? 5 : colorId[e.colors[k]])).join(',');
         expect(q.get(key), `${at} ${key}`).toBe(expected);
       });
-      const [m1, mx, m2] = signMinOf(name, red);
+      const [m1, mx, m2] = signMinOf(name, red, p.product);
       expect(q.get('antT'), at).toBe(`1,${m1},13,${mx},13,${m2},13`);
       expect(q.get('utd'), at).toBe(`1,${red.rules.payoutMin},${red.rules.payoutMax ?? 100000000}`);
       // Färgreglerna är aktiva med systemets min/max, aldrig 0-13; rosa = antal spikar

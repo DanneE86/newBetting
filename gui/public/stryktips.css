@@ -391,6 +391,7 @@ body.view-stryktips main { display: none !important; }
 .sb-match b { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .sb-match small { color: var(--muted); font-size: 0.78rem; }
 .sb-signs, .sb-scope { display: flex; gap: 0.25rem; }
+.sb-scope { flex-wrap: wrap; }
 .sb-sign { display: flex; flex-direction: column; align-items: center; min-width: 3.1rem; padding: 0.3rem 0.4rem; border: 1px solid var(--line); border-radius: 10px; background: transparent; color: var(--ink); font: inherit; font-weight: 700; cursor: pointer; }
 .sb-sign small { color: var(--muted); font-size: 0.68rem; font-weight: 500; }
 .sb-sign:hover { border-color: rgba(184, 242, 85, 0.6); }

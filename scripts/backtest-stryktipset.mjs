@@ -65,6 +65,7 @@ for (let n = START_DRAW; n > START_DRAW - 200 && draws.length < COUNT; n--) {
   if (outcomes.some((o) => !o)) { log(`omgång ${n}: ofullständigt facit`); continue; }
   const snap = (red, key) => red && { rowList: red.rowList, cost: red.cost, picks: a.events.map((e) => e[key]?.signs || '') };
   const evalA = a.reduced ? evaluateSnapshot(snap(a.reduced, 'systemPick'), outcomes, result.distribution) : null;
+  const evalC = a.reducedC ? evaluateSnapshot({ rowList: a.reducedC.rowList, cost: a.reducedC.cost, picks: a.reducedC.picks }, outcomes, result.distribution) : null;
   const evalB = a.reducedB ? evaluateSnapshot(snap(a.reducedB, 'systemPickB'), outcomes, result.distribution) : null;
   // Klarade ratt rad fargreglerna? (antal grona/gula/roda over alla 13 matcher inom min/max; null = ratt rad utanfor grundraden)
   const colorCheck = (red, key) => {
@@ -93,6 +94,7 @@ for (let n = START_DRAW; n > START_DRAW - 200 && draws.length < COUNT; n--) {
     prize13: result.distribution[0] ? { amount: result.distribution[0].amount, winners: result.distribution[0].winners } : null,
     A: a.reduced && { rows: a.reduced.rows, cost: a.reduced.cost, grund: a.reduced.grundRows, payoutMin: a.reduced.rules.payoutMin, hit: a.reduced.hitAll, er: a.reduced.expectedReturn, ...evalA },
     B: a.reducedB && { rows: a.reducedB.rows, cost: a.reducedB.cost, grund: a.reducedB.grundRows, payoutMin: a.reducedB.rules.payoutMin, hit: a.reducedB.hitAll, er: a.reducedB.expectedReturn, union: a.reducedB.unionHit, overlap: a.reducedB.overlapRows, ...evalB },
+    C: a.reducedC && { rows: a.reducedC.rows, cost: a.reducedC.cost, grund: a.reducedC.grundRows, payoutMin: a.reducedC.rules.payoutMin, hit: a.reducedC.hitAll, er: a.reducedC.expectedReturn, spikes: a.reducedC.picks.filter((x) => x.length === 1).length, halves: a.reducedC.picks.filter((x) => x.length === 2).length, inGrund: outcomes.every((o, i) => a.reducedC.picks[i].includes(o)), outside: outcomes.filter((o, i) => !a.reducedC.picks[i].includes(o)).length, colorRules: a.reducedC.rules.colorRules, colorTarget: a.reducedC.rules.colorTarget, picks: a.reducedC.picks, ...evalC },
     colorA: colorCheck(a.reduced, 'systemPick'), colorB: colorCheck(a.reducedB, 'systemPickB'),
     pairBest: Math.max(evalA?.best ?? 0, evalB?.best ?? 0),
     grundA: evalA?.groundCorrect, grundB: evalB?.groundCorrect,

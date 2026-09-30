@@ -38,7 +38,16 @@ const signEnv = (v) => (v ? v.split('-').map(Number) : null); // STRYK_SIGN_A=4-
 // A 4-2-2 (anvandarens beslut 2026-09-28 efter backtest: dubbelt system som delas, 4-2-2 gav hogst samlad chans till
 // 13 ratt pa bada spelen: Europatipset 0,305 mot 0,227, Stryktipset 0,149 mot 0,116). B galler bara motsystemslaget.
 const SIGN_MIN = { A: signEnv(process.env.STRYK_SIGN_A) || [4, 2, 2], B: signEnv(process.env.STRYK_SIGN_B) || [4, 3, 3] };
+// Kupong C: Europatipset 3-2-2 (backtest 55 omg: -10 042 kr och 105 rader med 11+ mot -12 651 och 94 med 4-2-2),
+// Stryktipset samma som A (3-2-2 gav ingen skillnad dar).
+const SIGN_MIN_C = { stryktipset: signEnv(process.env.STRYK_SIGN_C) || SIGN_MIN.A, europatipset: signEnv(process.env.STRYK_SIGN_C) || [3, 2, 2] };
 const BUDGET = { min: 350, max: 400 }; // kr per omgang (rader x radpris)
+// Kupong C (anvandaren 2026-09-30): ett eget system pa 700-850 kr, oberoende av A och B, minst 30 000 kr for 13 ratt och
+// samma regler som A. Byggs aven i webben (gui/public/stryk-engine.js, med krav som galler C). Env for backtest:
+// STRYK_C=0 stanger av, STRYK_C_BUDGET="700,850", STRYK_C_UTD=30000, STRYK_SIGN_C=4-2-2, STRYK_C_COLOR=dyn|free.
+const BUDGET_C = (() => { const [min, max] = (process.env.STRYK_C_BUDGET || '700,850').split(',').map(Number); return { min, max }; })();
+const UTD_MIN_C = Number(process.env.STRYK_C_UTD ?? 30000);
+const C_COLOR = process.env.STRYK_C_COLOR || 'dyn';
 const COLOR = { green: 0.45, red: 0.2 }; // folkets streck: gron >= 45 %, rod <= 20 %, annars gul
 // Skrall (rott tecken) i en gardering far finnas pa hogst 85 % av kupongens rader (anvandarens regel 2026-09-29).
 // GC saknar regeln, sa den anvands vid valet av system (lanken ger samma rader). Samma som i gui/public/stryk-engine.js.
@@ -514,12 +523,18 @@ function narrative(a) {
 // System A: troligaste tecknen per match. Motsystem B (singlesA satt): valfria tecken, men hogst MAX_SAME_SINGLES
 // spikar med samma tecken som A; garderingar far overlappa.
 const MAX_SAME_SINGLES = 1;
-function grundCandidates(events, maxRows, singlesA = null) {
+// Spik bara nar favoriten har minst SPIK_MIN (0 = alltid tillatet). Backtest 2026-09-30 (38 ST / 55 ET omg): spikar pa
+// favoriter 50-65 % sprack 40-49 %, pa >= 65 % 16-28 %. Stryktipset med 0,65: A+B -4 738 kr mot -22 557 (11+ 48 mot 23),
+// C -6 341 mot -25 112 (11+ 51 mot 12). Europatipset blev samre (A+B -29 035 mot -24 797), dar ingen grans.
+// Modellen ar for saker pa engelska favoriter. STRYK_SPIK_MIN overstyr (backtest).
+const SPIK_MIN_BY_PRODUCT = { stryktipset: 0.65, europatipset: 0 };
+const spikMinFor = (productId) => Number(process.env.STRYK_SPIK_MIN ?? SPIK_MIN_BY_PRODUCT[productId] ?? 0);
+function grundCandidates(events, maxRows, singlesA = null, spikMin = 0) {
   const SUBSETS = [[0], [1], [2], [0, 1], [0, 2], [1, 2], [0, 1, 2]];
   const options = (e) => {
-    if (singlesA) return SUBSETS;
+    if (singlesA) return SUBSETS.filter((x) => x.length > 1 || e.final[x[0]] >= spikMin);
     const order = [0, 1, 2].sort((a, b) => e.final[b] - e.final[a]);
-    return [1, 2, 3].map((n) => order.slice(0, n).sort());
+    return [1, 2, 3].filter((n) => n > 1 || e.final[order[0]] >= spikMin).map((n) => order.slice(0, n).sort());
   };
   let dp = new Map([['0,0,0', { lp: 0, sets: [] }]]);
   events.forEach((e, i) => {
@@ -628,7 +643,9 @@ function colorRuleOptions(all, minRows, target, bands = null, fixed = null) {
   }
   return opts.sort((a, b) => b.score - a.score || a.width - b.width);
 }
-const fitsColors = (c, rule) => rule.every(([a, b], k) => c[k] >= a && c[k] <= b);
+const fitsColors = (c, r) => c[0] >= r[0][0] && c[0] <= r[0][1] && c[1] >= r[1][0] && c[1] <= r[1][1] && c[2] >= r[2][0] && c[2] <= r[2][1];
+// Högst så många färgkombinationer provas per grundrad (bästa först); resten ger sällan något när skrällregeln fallerar
+const MAX_COLOR_OPTIONS = 60;
 
 // Reducera en grundrad till BUDGET med regler som gar att aterskapa exakt i Gambling Cabins verktyg:
 //   tecken 1/X/2: fast minimum per system (A 5-3-2, B 4-3-3), max alltid fullt
@@ -646,7 +663,7 @@ function gcPayoutFloor(gcTurnover, realTurnover, jackpot, payoutMin) {
   return fStar > 0 ? (PAYOUT_13 * gcTurnover + (jackpot || 0)) / (1 + gcTurnover * fStar) : Infinity;
 }
 
-function reduceSystem(events, grund, { rowPrice = 1, turnover, signMin, realTurnover = turnover, jackpot = 0, payoutMin = 30000, budget = BUDGET, redMax = RED_MAX_SHARE, colorBands = null, colorTarget = true }) {
+function reduceSystem(events, grund, { rowPrice = 1, turnover, signMin, realTurnover = turnover, jackpot = 0, payoutMin = 30000, budget = BUDGET, redMax = RED_MAX_SHARE, favMin = FAV_MIN_SHARE, colorBands = null, colorTarget = true }) {
   const minRows = Math.ceil(budget.min / rowPrice), maxRows = Math.floor(budget.max / rowPrice);
   const colors = events.map((e) => [0, 1, 2].map((k) => signColor(e.folk?.[k])));
   const T = turnover;
@@ -676,8 +693,8 @@ function reduceSystem(events, grund, { rowPrice = 1, turnover, signMin, realTurn
   if (target && target.some((x) => !x.length)) return null;
   // Reserv utan mal: fri optimering (banden raknar hela raden och passar inte nar spikarna ar rosa)
   const options = colorRuleOptions(all, minRows, Math.round((minRows + maxRows) / 2), null, target);
-  for (const opt of options) {
-    const res = cutSystem(all.filter((r) => fitsColors(r.c, opt.rule)), floor, minRows, maxRows, grund, colors, redMax, events);
+  for (const opt of options.slice(0, MAX_COLOR_OPTIONS)) {
+    const res = cutSystem(all.filter((r) => fitsColors(r.c, opt.rule)), floor, minRows, maxRows, grund, colors, redMax, events, favMin);
     if (!res) continue;
     const { cut, kept } = res;
     const hit = kept.reduce((sum, r) => sum + r.p, 0);
@@ -700,7 +717,7 @@ function reduceSystem(events, grund, { rowPrice = 1, turnover, signMin, realTurn
 }
 
 // Utdelningsgransen pa raderna som klarar tecken- och fargreglerna (all sorterad pa utdelning, hogst forst)
-function cutSystem(all, floor, minRows, maxRows, grund, colors, redMax, events) {
+function cutSystem(all, floor, minRows, maxRows, grund, colors, redMax, events, favMin = FAV_MIN_SHARE) {
   if (all.length < minRows) return null;
   // Radantalet laggs sa nara mitten av budgeten som mojligt (2026-09-29): GC raknar med aktuella streck, och ett streck
   // som andrades fran 27 till 26 % efter hamtningen gav 394 -> 404 rader. Mitten ger marginal at bada hallen.
@@ -729,8 +746,8 @@ function cutSystem(all, floor, minRows, maxRows, grund, colors, redMax, events) 
   const kept = all.slice(0, cut.n);
   // Skrall (rott tecken) i en gardering pa hogst RED_MAX_SHARE av raderna, annars valjs ett annat system
   if (redMax < 1 && !grund.sets.every((set, i) => set.length < 2 || set.every((k) => colors[i][k] !== 'red' || kept.filter((r) => r.row[i] === k).length <= redMax * kept.length))) return null;
-  // Favoriten (troligaste tecknet) i en gardering pa minst FAV_MIN_SHARE av raderna (galler tillsammans med skrallgransen)
-  if (redMax < 1 && !grund.sets.every((set, i) => { if (set.length < 2) return true; const fav = set.reduce((b, k) => (events[i].final[k] > events[i].final[b] ? k : b)); return kept.filter((r) => r.row[i] === fav).length >= FAV_MIN_SHARE * kept.length; })) return null;
+  // Favoriten (troligaste tecknet) i en gardering pa minst favMin av raderna (slapps bara som allra sista utvag)
+  if (favMin > 0 && !grund.sets.every((set, i) => { if (set.length < 2) return true; const fav = set.reduce((b, k) => (events[i].final[k] > events[i].final[b] ? k : b)); return kept.filter((r) => r.row[i] === fav).length >= favMin * kept.length; })) return null;
   return { cut, kept };
 }
 
@@ -739,14 +756,22 @@ function cutSystem(all, floor, minRows, maxRows, grund, colors, redMax, events) 
 const OBJECTIVE = process.env.STRYK_OBJECTIVE || 'hit';
 // B byggs tillsammans med A: B valjs sa att paret tacker mest (rader som redan finns i A raknas inte) - STRYK_B_JOINT=0 stanger av
 const B_JOINT = process.env.STRYK_B_JOINT !== '0';
-// Fargmalen slapps forst, skrall- och favoritregeln sist (favoriten ska aldrig under 10 %, anvandarens regel)
+// Ordning: fargfonstren slapps forst, sedan skrallgransen och allra sist favoritregeln (favoriten ska aldrig under 10 %,
+// anvandarens regel - slapps bara om ingen kupong alls gar att bygga). keepShares: varken skrall- eller favoritregeln far
+// slappas (delat system - gar det inte byggs A och B var for sig).
 function bestReduced(events, candidates, opts, exclude = null) {
   const target = opts.colorTarget !== false && COLOR_TARGET;
-  const red = (opts.redMax ?? RED_MAX_SHARE) < 1;
-  const ladder = [[target, red], [false, red], [target, false], [false, false]].filter(([t, r], i, a) => a.findIndex(([t2, r2]) => t2 === t && r2 === r) === i);
-  for (const [t, r] of ladder) {
-    const best = bestReducedOnce(events, candidates, { ...opts, colorTarget: Boolean(t), redMax: r ? (opts.redMax ?? RED_MAX_SHARE) : 1 }, exclude);
-    if (best) return best;
+  const redMax = opts.redMax ?? RED_MAX_SHARE, favMin = opts.favMin ?? FAV_MIN_SHARE;
+  const shares = opts.keepShares ? [[redMax, favMin]] : [[redMax, favMin], [1, favMin], [1, 0]];
+  const seen = new Set();
+  for (const [r, f] of shares) {
+    for (const t of [target, false]) {
+      const key = `${r}|${f}|${Boolean(t)}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      const best = bestReducedOnce(events, candidates, { ...opts, colorTarget: Boolean(t), redMax: r, favMin: f }, exclude);
+      if (best) return best;
+    }
   }
   return null;
 }
@@ -758,8 +783,8 @@ function bestReducedOnce(events, candidates, opts, exclude = null) {
     const red = reduceSystem(events, g, opts);
     if (!red) continue;
     // Delat system: bada halvorna maste klara skrall- och favoritregeln var for sig
-    const redMax = opts.redMax ?? RED_MAX_SHARE;
-    const pair = opts.split ? splitReduced(red, redMax < 1 ? (rows) => sharesOk(events, g.sets, rows, redMax) : null) : null;
+    const redMax = opts.redMax ?? RED_MAX_SHARE, favMin = opts.favMin ?? FAV_MIN_SHARE;
+    const pair = opts.split ? splitReduced(red, redMax < 1 || favMin > 0 ? (rows) => sharesOk(events, g.sets, rows, redMax, favMin) : null) : null;
     if (opts.split && !pair) continue;
     const sc = score(red);
     if (!best || sc > best.score) best = { system: g, reduced: red, score: sc, pair };
@@ -789,12 +814,12 @@ function drawValue(red, jackpot) {
 // Expertgranskning 2026-09-28: B som motsystem gav farre vantade 13 ratt an A:s nasta rader.
 const B_MODE = process.env.STRYK_B_MODE || 'split';
 // Skrall (rott tecken) pa hogst redMax och favoriten pa minst FAV_MIN_SHARE av raderna, per gardering
-function sharesOk(events, sets, rowList, redMax) {
+function sharesOk(events, sets, rowList, redMax, favMin = FAV_MIN_SHARE) {
   return sets.every((set, i) => {
     if (set.length < 2) return true;
     const share = (k) => rowList.filter((r) => r[i] === SIGNS[k]).length / rowList.length;
     const fav = set.reduce((b, k) => (events[i].final[k] > events[i].final[b] ? k : b));
-    return share(fav) >= FAV_MIN_SHARE && set.every((k) => signColor(events[i].folk?.[k]) !== 'red' || share(k) <= redMax);
+    return share(fav) >= favMin && set.every((k) => signColor(events[i].folk?.[k]) !== 'red' || share(k) <= redMax);
   });
 }
 function splitReduced(red, ok = null) {
@@ -1100,11 +1125,11 @@ async function analyzeDraw(product, draw, ctx, result) {
   const baseOpts = { rowPrice, turnover, realTurnover, jackpot, payoutMin: utdMin(product.id), signMin: SIGN_MIN.A, colorBands: bands };
   let bestA = null, splitPair = null;
   if (out.length && B_MODE === 'split') {
-    const dbl = bestReduced(out, grundCandidates(out, GRUND_MAX_ROWS), { ...baseOpts, budget: { min: 2 * BUDGET.min, max: 2 * BUDGET.max }, split: true });
+    const dbl = bestReduced(out, grundCandidates(out, GRUND_MAX_ROWS, null, spikMinFor(product.id)), { ...baseOpts, budget: { min: 2 * BUDGET.min, max: 2 * BUDGET.max }, split: true, keepShares: true });
     splitPair = dbl?.pair || null;
     if (splitPair) bestA = { system: dbl.system, reduced: splitPair[0] };
   }
-  if (!bestA && out.length) bestA = bestReduced(out, grundCandidates(out, GRUND_MAX_ROWS), baseOpts);
+  if (!bestA && out.length) bestA = bestReduced(out, grundCandidates(out, GRUND_MAX_ROWS, null, spikMinFor(product.id)), baseOpts);
   const system = bestA?.system || null, reduced = bestA?.reduced || null;
   if (system) out.forEach((a, i) => { a.systemPick = system.picks[i]; });
   if (reduced) {
@@ -1118,10 +1143,20 @@ async function analyzeDraw(product, draw, ctx, result) {
     reducedB.gamblingCabinUrl = gamblingCabinUrl(product.id, draw.drawNumber, closeDate, out, system.sets, reducedB);
   } else if (system) {
     const singlesA = system.sets.map((x) => (x.length === 1 ? x[0] : -1));
-    const bestB = bestReduced(out, grundCandidates(out, GRUND_MAX_ROWS, singlesA), { rowPrice, turnover, realTurnover, jackpot, payoutMin: utdMin(product.id), signMin: SIGN_MIN.B, colorBands: bands }, B_JOINT ? new Set(reduced.rowList) : null);
+    const bestB = bestReduced(out, grundCandidates(out, GRUND_MAX_ROWS, singlesA, spikMinFor(product.id)), { rowPrice, turnover, realTurnover, jackpot, payoutMin: utdMin(product.id), signMin: SIGN_MIN.B, colorBands: bands }, B_JOINT ? new Set(reduced.rowList) : null);
     systemB = bestB?.system || null; reducedB = bestB?.reduced || null;
     if (systemB) out.forEach((a, i) => { a.systemPickB = systemB.picks[i]; });
     if (reducedB) reducedB.gamblingCabinUrl = gamblingCabinUrl(product.id, draw.drawNumber, closeDate, out, systemB.sets, reducedB);
+  }
+  // Kupong C: eget system, oberoende av A och B
+  let systemC = null, reducedC = null;
+  if (out.length && process.env.STRYK_C !== '0') {
+    const bestC = bestReduced(out, grundCandidates(out, GRUND_MAX_ROWS, null, spikMinFor(product.id)), { ...baseOpts, payoutMin: Math.max(UTD_MIN_C, utdMin(product.id)), signMin: SIGN_MIN_C[product.id] || SIGN_MIN.A, budget: BUDGET_C, colorTarget: C_COLOR !== 'free' });
+    systemC = bestC?.system || null; reducedC = bestC?.reduced || null;
+    if (reducedC) {
+      reducedC.picks = systemC.picks.map((x) => x.signs);
+      reducedC.gamblingCabinUrl = gamblingCabinUrl(product.id, draw.drawNumber, closeDate, out, systemC.sets, reducedC);
+    }
   }
   const bestRowOf = (red) => red && Math.max(...red.rowList.map((row) => out.filter((a, i) => a.result && row[i] === a.result.outcome).length));
   const bestRow = () => bestRowOf(reduced);
@@ -1133,6 +1168,7 @@ async function analyzeDraw(product, draw, ctx, result) {
     value: drawValue(reduced, jackpot),
     colorBands: bands, // fargband (ratt rad senaste aret) som webbens kupongmotor bygger fargreglerna pa
     reduced: reduced && { ...reduced, colors: undefined, rowP: undefined, rowReal: undefined, rowPayout: undefined },
+    reducedC: reducedC && { ...reducedC, colors: undefined, rowP: undefined, rowReal: undefined, rowPayout: undefined },
     reducedB: reducedB && { ...reducedB, colors: undefined, rowP: undefined, rowReal: undefined, rowPayout: undefined, ...pairStats(reduced, reducedB), sameSingles: out.filter((a) => a.systemPick?.signs.length === 1 && a.systemPickB?.signs === a.systemPick.signs).length },
     result: result ? {
       correct: out.filter((a) => a.result && a.result.outcome === a.tip).length,
@@ -1395,7 +1431,7 @@ function currentRules(productId) {
   return { signMin: SIGN_MIN.A, signMinB: SIGN_MIN.B, bMode: B_MODE, payoutMin: utdMin(productId), budget: BUDGET, modelW: MODEL_W, modelWThin: MODEL_W_THIN, market: MARKET_MODE, grundMax: GRUND_MAX_ROWS };
 }
 
-export { analyzeDraw, oddsetAvailability, evaluateSnapshot, loadBacktests, loadNationalElo, loadGroup, fitModel, get, API, SIGN_MIN, currentRules, PRODUCTS };
+export { analyzeDraw, oddsetAvailability, evaluateSnapshot, loadBacktests, loadNationalElo, loadGroup, fitModel, get, API, SIGN_MIN, SIGN_MIN_C, SPIK_MIN_BY_PRODUCT, currentRules, PRODUCTS };
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   main().catch((e) => {
