@@ -246,67 +246,6 @@
       "score": 51
     },
     {
-      "code": "DK2",
-      "name": "1. division",
-      "history": "tsdb",
-      "cup": false,
-      "matches": 246,
-      "seasons": 2,
-      "currentSeason": "2026/27",
-      "currentSeasonMatches": 54,
-      "lastResult": "2026-09-21",
-      "staleDays": 8,
-      "shotsShare": 0,
-      "cornersShare": 0,
-      "closingOddsShare": 0,
-      "ouOddsShare": 0,
-      "refereeShare": 0,
-      "teams": 18,
-      "clubEloShare": 0,
-      "xgShare": 0,
-      "teamCornersShare": 0,
-      "venueShare": 0,
-      "upcomingFixtures": 0,
-      "upcomingTips": 6,
-      "tipsSoon": 0,
-      "tipsWithOdds": null,
-      "tipsWithOuOdds": null,
-      "tipsWithOddsAll": 0,
-      "tipsMarketOnly": 0,
-      "tipsDcKnown": 1,
-      "tipsCorners": 0,
-      "lineupRows": 0,
-      "hitrate": 0.463768115942029,
-      "hitrateN": 138,
-      "unmapped": [],
-      "fetchError": null,
-      "oddsKey": null,
-      "oddsportal": "denmark/1st-division",
-      "gaps": [
-        {
-          "sev": 2,
-          "text": "Historiska closing-odds saknas (ingen CLV/facit)",
-          "fix": "begransat av kallan"
-        },
-        {
-          "sev": 2,
-          "text": "Svag traffsakerhet 46 % (n=138)",
-          "fix": "sank vikt/krav hogre edge i ligan"
-        },
-        {
-          "sev": 1,
-          "text": "Skottdata saknas (ingen xG-proxy)",
-          "fix": "begransat av kallan"
-        },
-        {
-          "sev": 1,
-          "text": "Horntips saknas (ingen hornhistorik)",
-          "fix": "kallan saknar HC/AC"
-        }
-      ],
-      "score": 51
-    },
-    {
       "code": "CZ",
       "name": "Chance Liga",
       "history": "tsdb",

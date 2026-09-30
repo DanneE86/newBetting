@@ -154,19 +154,6 @@
       "n": 246,
       "early": null
     },
-    "DK2": {
-      "params": {
-        "xi": 0.0015,
-        "shrink": 5,
-        "prior": true,
-        "drawK": 1.1,
-        "earlyMarket": false
-      },
-      "rpsDefault": 0.2176,
-      "rpsTuned": 0.2156,
-      "n": 192,
-      "early": null
-    },
     "ED": {
       "params": {
         "xi": 0.0025,

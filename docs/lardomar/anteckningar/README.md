@@ -15,7 +15,6 @@ Uppdaterad 2026-09-28 av `node scripts/tips-felanalys.mjs`. Aktuell säsong, tip
 | [COL](COL.md) | Primera A | 306 | 46,7 % | 46,2 % | 0,2 | inom slumpen |
 | [CZ](CZ.md) | Chance Liga | 71 | 53,5 % | 46,8 % | 1,1 | inom slumpen |
 | [DK](DK.md) | Superligaen | 54 | 50,0 % | 54,1 % | −0,6 | inom slumpen |
-| [DK2](DK2.md) | 1. division | 54 | 37,0 % | 41,2 % | −0,6 | inom slumpen |
 | [ECL](ECL.md) | Conference League | – | – | – | – | ingen backtest |
 | [ED](ED.md) | Eredivisie | 63 | 54,0 % | 59,4 % | −0,9 | inom slumpen |
 | [EK](EK.md) | Ekstraklasa | 78 | 50,0 % | 46,0 % | 0,7 | inom slumpen |
