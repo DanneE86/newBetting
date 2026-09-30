@@ -345,8 +345,10 @@ function analysisPanel(e) {
 // Turmatch = matchtypen (spik/halvgardering x tecken x favoritens chans) har historiskt missat minst 30 % av gångerna,
 // dvs 13 rätt krävde att utfallet låg utanför grundraden. rescue = tecknet som oftast kom i stället.
 const TUR_RATE = 0.3;
+// Stryktipset: profil med bara de engelska ligorna (PL, Championship, League One), annars hela arkivet
+const missProf = () => (product === "stryktipset" && data?.missProfileStryk) || data?.missProfile;
 function turInfo(e, signs) {
-  const prof = data?.missProfile;
+  const prof = missProf();
   if (!prof || !signs || signs.length === 3 || !e.final) return null;
   const fav = Math.max(...e.final);
   const band = prof.bandEdges.filter((x) => fav >= x).length;
@@ -426,7 +428,7 @@ function turExplain(e, t, { actions = false, krav = null } = {}) {
 // Panel: turmatcherna i omgången (efter kupong A:s tecken) + historikens vanligaste missar
 // kravFor(nr) = användarens krav på matchen (B-sidan); krav som gäller A skrivs aldrig över av turknapparna
 function missPanel(p, events, { bCoupon = null, actions = false, kravFor = () => null } = {}) {
-  const prof = data?.missProfile;
+  const prof = missProf();
   if (!prof) return "";
   const turs = events.map((e, i) => ({ e, i, t: turInfo(e, e.systemPick?.signs) })).filter((x) => x.t?.tur).sort((a, b) => b.t.rate - a.t.rate);
   const pOk = turs.reduce((s, x) => s * (1 - x.t.rate), 1);
@@ -465,7 +467,7 @@ function missPanel(p, events, { bCoupon = null, actions = false, kravFor = () =>
       </div>
       <div>
         <h3>Vanliga missar <small>${prof.draws} omgångar · ${prof.matches} matcher</small></h3>
-        <p class="st-sub">Från kupongarkivet (${esc(prof.from)} – ${esc(prof.to)}), grundraden i kupong A. Helgarderingar missar aldrig – alla missar är spikar och halvgarderingar. Rätt rad låg i snitt <b>${String(prof.avgOutside).replace(".", ",")}</b> matcher utanför grundraden (0: ${d[0]}, 1: ${d[1]}, 2: ${d[2]}, 3+: ${d[3]} omgångar).</p>
+        <p class="st-sub">Från kupongarkivet (${esc(prof.from)} – ${esc(prof.to)}), grundraden i kupong A${prof.leaguesOnly ? `, bara ${esc(prof.leaguesOnly.join(", "))}` : ""}. Helgarderingar missar aldrig – alla missar är spikar och halvgarderingar. Rätt rad låg i snitt <b>${String(prof.avgOutside).replace(".", ",")}</b> ${prof.leaguesOnly ? "av de här matcherna" : "matcher"} utanför grundraden (0: ${d[0]}, 1: ${d[1]}, 2: ${d[2]}, 3+: ${d[3]} omgångar).</p>
         ${table}
         ${leagues.length ? `<p class="st-sub"><b>Spikar per liga</b> (minst ${prof.minN}): ${leagues.map(([n, g]) => `${esc(n)} ${pct(g.rate)} <small>(väntat ${pct(g.exp)})</small>`).join(" · ")}</p>` : ""}
       </div>

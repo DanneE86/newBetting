@@ -14,7 +14,7 @@ import { fetchMatchContext, contextNotes } from './lib/match-context.mjs';
 import { extraOdds, matchExtraOdds } from './lib/extra-odds.mjs';
 import { clubEloFor } from './lib/club-elo.mjs';
 import { fillXg } from './lib/understat-xg.mjs';
-import { buildMissProfile } from './lib/stryk-miss-profile.mjs';
+import { buildMissProfile, STRYK_LEAGUES } from './lib/stryk-miss-profile.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const RAW = path.join(root, 'data', 'raw');
@@ -1212,6 +1212,7 @@ async function main() {
     history,
     backtest: loadBacktests(),
     missProfile: buildMissProfile(), // vanliga missar i kupongarkivet (turmatcher i webben)
+    missProfileStryk: buildMissProfile(undefined, { product: 'stryktipset', leagues: STRYK_LEAGUES }), // Stryktipset: bara PL, Championship, League One
   };
   fs.writeFileSync(OUT, JSON.stringify(out, null, 2), 'utf8');
   log(`Klart -> ${path.relative(root, OUT)}`);

@@ -25,12 +25,17 @@ function groupLabel(signs, band) {
 const empty = () => ({ n: 0, miss: 0, exp: 0, by: { 1: 0, X: 0, 2: 0 } });
 const r3 = (x) => Math.round(x * 1000) / 1000;
 
-export function buildMissProfile(dir = path.join(root, 'data', 'tips-archive', 'systems')) {
+// Stryktipset: bara de engelska ligorna (användarens val 2026-09-30), bara Stryktipsets egna omgångar
+export const STRYK_LEAGUES = ['Premier League', 'Championship', 'League One'];
+
+// opts.product = filprefix i arkivet (t.ex. 'stryktipset'), opts.leagues = bara matcher från dessa ligor
+export function buildMissProfile(dir = path.join(root, 'data', 'tips-archive', 'systems'), opts = {}) {
+  const only = opts.leagues ? new Set(opts.leagues) : null;
   if (!fs.existsSync(dir)) return null;
   const groups = {}, leagues = {};
   const perDraw = [];
   let from = null, to = null, matches = 0;
-  for (const f of fs.readdirSync(dir).filter((x) => x.endsWith('.json'))) {
+  for (const f of fs.readdirSync(dir).filter((x) => x.endsWith('.json') && (!opts.product || x.startsWith(`${opts.product}-`)))) {
     let d;
     try {
       d = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'));
@@ -46,6 +51,7 @@ export function buildMissProfile(dir = path.join(root, 'data', 'tips-archive', '
     d.matches.forEach((m, i) => {
       const pick = picks[i];
       if (!pick || !m.outcome || !m.final) return;
+      if (only && !only.has(m.league)) return;
       matches++;
       const fav = Math.max(...m.final);
       const exp = 1 - [...pick].reduce((s, c) => s + m.final[SIGNS.indexOf(c)], 0);
@@ -75,7 +81,7 @@ export function buildMissProfile(dir = path.join(root, 'data', 'tips-archive', '
   for (const x of perDraw) dist[Math.min(3, x)]++;
   return {
     builtAt: new Date().toISOString(),
-    from, to, draws: perDraw.length, matches,
+    from, to, draws: perDraw.length, matches, leaguesOnly: opts.leagues || null,
     bandEdges: BAND_EDGES, minN: 25,
     avgOutside: r3(perDraw.reduce((s, x) => s + x, 0) / perDraw.length),
     outsideDist: dist, // antal omgångar med 0, 1, 2 och minst 3 utfall utanför grundraden
@@ -90,6 +96,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
   const file = path.join(root, 'data', 'stryktipset.json');
   const data = JSON.parse(fs.readFileSync(file, 'utf8').replace(/^﻿/, ''));
   data.missProfile = prof;
+  data.missProfileStryk = buildMissProfile(undefined, { product: 'stryktipset', leagues: STRYK_LEAGUES });
   fs.writeFileSync(file, JSON.stringify(data, null, 2), 'utf8');
   console.log(`Vanliga missar: ${prof.draws} omgångar, ${prof.matches} matcher, snitt ${prof.avgOutside} utfall utanför grundraden -> data/stryktipset.json`);
 }

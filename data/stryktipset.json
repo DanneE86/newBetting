@@ -11157,11 +11157,12 @@
     }
   ],
   "missProfile": {
-    "builtAt": "2026-09-29T18:43:02.945Z",
+    "builtAt": "2026-09-30T04:12:49.162Z",
     "from": "2023-08-05",
     "to": "2026-09-27",
     "draws": 347,
     "matches": 4511,
+    "leaguesOnly": null,
     "bandEdges": [
       0.45,
       0.55,
@@ -11617,6 +11618,297 @@
           "X": 9
         },
         "rate": 0.256
+      }
+    }
+  },
+  "missProfileStryk": {
+    "builtAt": "2026-09-30T04:12:49.177Z",
+    "from": "2023-08-05",
+    "to": "2026-09-26",
+    "draws": 167,
+    "matches": 1452,
+    "leaguesOnly": [
+      "Premier League",
+      "Championship",
+      "League One"
+    ],
+    "bandEdges": [
+      0.45,
+      0.55,
+      0.65,
+      0.75
+    ],
+    "minN": 25,
+    "avgOutside": 1.635,
+    "outsideDist": [
+      56,
+      30,
+      33,
+      48
+    ],
+    "groups": {
+      "spik|1|1": {
+        "n": 127,
+        "miss": 65,
+        "exp": 0.49,
+        "by": {
+          "1": 0,
+          "2": 34,
+          "X": 31
+        },
+        "rate": 0.512,
+        "label": "Spik 1 · hemmafavorit 45–55 %"
+      },
+      "spik|1|2": {
+        "n": 168,
+        "miss": 68,
+        "exp": 0.404,
+        "by": {
+          "1": 0,
+          "2": 25,
+          "X": 43
+        },
+        "rate": 0.405,
+        "label": "Spik 1 · hemmafavorit 55–65 %"
+      },
+      "spik|1|3": {
+        "n": 73,
+        "miss": 21,
+        "exp": 0.305,
+        "by": {
+          "1": 0,
+          "2": 9,
+          "X": 12
+        },
+        "rate": 0.288,
+        "label": "Spik 1 · hemmafavorit 65–75 %"
+      },
+      "halv|X2|0": {
+        "n": 2,
+        "miss": 0,
+        "exp": 0.265,
+        "by": {
+          "1": 0,
+          "2": 0,
+          "X": 0
+        },
+        "rate": 0,
+        "label": "Halvgardering X2 · favorit under 45 %"
+      },
+      "spik|2|1": {
+        "n": 52,
+        "miss": 33,
+        "exp": 0.491,
+        "by": {
+          "1": 16,
+          "2": 0,
+          "X": 17
+        },
+        "rate": 0.635,
+        "label": "Spik 2 · bortafavorit 45–55 %"
+      },
+      "halv|1X|1": {
+        "n": 88,
+        "miss": 23,
+        "exp": 0.23,
+        "by": {
+          "1": 0,
+          "2": 23,
+          "X": 0
+        },
+        "rate": 0.261,
+        "label": "Halvgardering 1X · favorit 45–55 %"
+      },
+      "halv|12|1": {
+        "n": 26,
+        "miss": 6,
+        "exp": 0.251,
+        "by": {
+          "1": 0,
+          "2": 0,
+          "X": 6
+        },
+        "rate": 0.231,
+        "label": "Halvgardering 12 · favorit 45–55 %"
+      },
+      "spik|1|4": {
+        "n": 46,
+        "miss": 9,
+        "exp": 0.191,
+        "by": {
+          "1": 0,
+          "2": 2,
+          "X": 7
+        },
+        "rate": 0.196,
+        "label": "Spik 1 · hemmafavorit minst 75 %"
+      },
+      "spik|2|2": {
+        "n": 50,
+        "miss": 13,
+        "exp": 0.409,
+        "by": {
+          "1": 8,
+          "2": 0,
+          "X": 5
+        },
+        "rate": 0.26,
+        "label": "Spik 2 · bortafavorit 55–65 %"
+      },
+      "halv|1X|2": {
+        "n": 16,
+        "miss": 6,
+        "exp": 0.185,
+        "by": {
+          "1": 0,
+          "2": 6,
+          "X": 0
+        },
+        "rate": 0.375,
+        "label": "Halvgardering 1X · favorit 55–65 %"
+      },
+      "spik|2|3": {
+        "n": 16,
+        "miss": 3,
+        "exp": 0.305,
+        "by": {
+          "1": 2,
+          "2": 0,
+          "X": 1
+        },
+        "rate": 0.188,
+        "label": "Spik 2 · bortafavorit 65–75 %"
+      },
+      "halv|12|0": {
+        "n": 54,
+        "miss": 16,
+        "exp": 0.265,
+        "by": {
+          "1": 0,
+          "2": 0,
+          "X": 16
+        },
+        "rate": 0.296,
+        "label": "Halvgardering 12 · favorit under 45 %"
+      },
+      "halv|X2|1": {
+        "n": 17,
+        "miss": 2,
+        "exp": 0.232,
+        "by": {
+          "1": 2,
+          "2": 0,
+          "X": 0
+        },
+        "rate": 0.118,
+        "label": "Halvgardering X2 · favorit 45–55 %"
+      },
+      "halv|1X|0": {
+        "n": 14,
+        "miss": 3,
+        "exp": 0.264,
+        "by": {
+          "1": 0,
+          "2": 3,
+          "X": 0
+        },
+        "rate": 0.214,
+        "label": "Halvgardering 1X · favorit under 45 %"
+      },
+      "halv|X2|2": {
+        "n": 3,
+        "miss": 1,
+        "exp": 0.203,
+        "by": {
+          "1": 1,
+          "2": 0,
+          "X": 0
+        },
+        "rate": 0.333,
+        "label": "Halvgardering X2 · favorit 55–65 %"
+      },
+      "spik|2|4": {
+        "n": 3,
+        "miss": 1,
+        "exp": 0.222,
+        "by": {
+          "1": 0,
+          "2": 0,
+          "X": 1
+        },
+        "rate": 0.333,
+        "label": "Spik 2 · bortafavorit minst 75 %"
+      },
+      "halv|1X|3": {
+        "n": 1,
+        "miss": 0,
+        "exp": 0.108,
+        "by": {
+          "1": 0,
+          "2": 0,
+          "X": 0
+        },
+        "rate": 0,
+        "label": "Halvgardering 1X · favorit 65–75 %"
+      },
+      "spik|1|0": {
+        "n": 5,
+        "miss": 2,
+        "exp": 0.562,
+        "by": {
+          "1": 0,
+          "2": 1,
+          "X": 1
+        },
+        "rate": 0.4,
+        "label": "Spik 1 · hemmafavorit under 45 %"
+      },
+      "spik|2|0": {
+        "n": 1,
+        "miss": 1,
+        "exp": 0.578,
+        "by": {
+          "1": 0,
+          "2": 0,
+          "X": 1
+        },
+        "rate": 1,
+        "label": "Spik 2 · bortafavorit under 45 %"
+      }
+    },
+    "leagues": {
+      "Championship": {
+        "n": 200,
+        "miss": 90,
+        "exp": 0.43,
+        "by": {
+          "1": 8,
+          "2": 31,
+          "X": 51
+        },
+        "rate": 0.45
+      },
+      "Premier League": {
+        "n": 293,
+        "miss": 108,
+        "exp": 0.369,
+        "by": {
+          "1": 15,
+          "2": 34,
+          "X": 59
+        },
+        "rate": 0.369
+      },
+      "League One": {
+        "n": 48,
+        "miss": 18,
+        "exp": 0.456,
+        "by": {
+          "1": 3,
+          "2": 6,
+          "X": 9
+        },
+        "rate": 0.375
       }
     }
   }
