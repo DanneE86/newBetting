@@ -133,7 +133,10 @@ test('reducerade system: budget, teckenregler, rader inom grundraden', () => {
     for (const { name, red, picks } of systems(p)) {
       const at = `${p.product} ${p.drawNumber} system ${name}`;
       expect(red.rules.signMin, at).toEqual(signMinOf(name, red, p.product));
-      expect(red.rules.payoutMinReal, at).toBe(name === 'C' ? Math.max(30000, UTD_MIN[p.product] ?? 30000) : UTD_MIN[p.product] ?? 30000);
+      expect(red.rules.payoutMinReal, at).toBe(name === 'A' ? UTD_MIN[p.product] ?? 30000 : Math.max(30000, UTD_MIN[p.product] ?? 30000));
+      // Exakt gräns (2026-09-30: "30k, inte mindre, inte mer"): länkens gräns är regeln, om den inte fick höjas som reserv
+      if (red.rules.payoutExact) expect(red.rules.payoutMin, `${at}: exakt utdelningsgräns`).toBe(red.rules.payoutMinReal);
+      else expect(red.rules.payoutMin, `${at}: höjd gräns`).toBeGreaterThan(red.rules.payoutMinReal);
       // Budget
       expect(red.rows, at).toBe(red.rowList.length);
       expect(red.cost, at).toBe(red.rows * red.rowPrice);
@@ -209,7 +212,7 @@ test('reducerade system: utdelningsgränsen ger exakt samma rader som Gambling C
         const f = folkProduct(p.events, row);
         expect(gcPayout(r, f), `${at} rad ${row}`).toBeGreaterThanOrEqual(r.payoutMin - 1);
         if (r.payoutMax != null) expect(gcPayout(r, f), `${at} rad ${row}`).toBeLessThanOrEqual(r.payoutMax);
-        expect(realPayout(r, f), `${at} rad ${row}`).toBeGreaterThanOrEqual(r.payoutMinReal - 1);
+        if (!r.payoutExact) expect(realPayout(r, f), `${at} rad ${row}`).toBeGreaterThanOrEqual(r.payoutMinReal - 1);
       }
       // Omvant: ingen rad i grundraden som klarar tecken + utdelning saknas (annars skiljer GC och vi)
       const expected = grundRows(picks).filter((row) => {
@@ -250,7 +253,7 @@ test('Gambling Cabin-länk: samma grundrad, färger och regler som systemet', ()
   }
 });
 
-test('kupong B: delat system (A högst utdelning, B resten) eller motsystem med högst 1 gemensam spik', () => {
+test('kupong B: eget system (högst 2 spikar som A, ingen samma halvgardering) eller delat system', () => {
   for (const p of products.filter((x) => x.reduced && x.reducedB)) {
     const at = `${p.product} ${p.drawNumber}`;
     const A = p.reduced, B = p.reducedB;
@@ -273,7 +276,11 @@ test('kupong B: delat system (A högst utdelning, B resten) eller motsystem med 
       expect(A.cost + B.cost, at).toBeLessThanOrEqual(2 * BUDGET.max);
       expect(B.unionHit, at).toBeCloseTo(A.hitAll + B.hitAll, 9);
     } else {
-      expect(same, `${at}: motsystem högst 1 gemensam spik`).toBeLessThanOrEqual(1);
+      // Eget B-system (standard sedan 2026-09-30): högst 2 spikar som i A och aldrig exakt samma halvgardering
+      expect(same, `${at}: motsystem högst 2 gemensamma spikar`).toBeLessThanOrEqual(2);
+      p.events.forEach((e: any, i: number) => {
+        if (e.systemPick.signs.length === 2) expect(e.systemPickB.signs, `${at} match ${i + 1}: inte samma halvgardering som A`).not.toBe(e.systemPick.signs);
+      });
     }
     // A+B-chansen ar minst A:s och hogst summan av bada
     expect(p.reducedB.unionHit, at).toBeGreaterThanOrEqual(p.reduced.hitAll - 1e-9);

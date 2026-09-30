@@ -466,6 +466,8 @@ Nettot styrs av enstaka träffar: A:s plus kommer från en enda rad med 12 rätt
 
 ## Ändringslogg
 
+- **2026-09-30 (natt, exakt gräns):** Utdelningsgränsen i Gambling Cabin-länken är exakt regeln (användaren: "30k, inte mindre, inte mer"): A 30 000 / Europatipset 20 000, B och C 30 000. Budgeten nås med grundrad och färgregler. Går det inte höjs gränsen som reserv, och kupongen säger det. Servern bygger nu A och B var för sig (B 3-3-3, högst 2 spikar som A, ingen samma halvgardering, minst 30 000), eftersom det delade systemet alltid gav A en högre gräns. Backtest: Europatipset exakt i 55/55 omgångar (A, B, C), A+B −26 708 kr (11+ 69) mot −24 809, C −26 366 (11+ 79) mot −10 024. Stryktipset exakt bara i A 11/38, B 22/38, C 26/38 (30 000 släpper igenom för många rader), A+B −20 572 (11+ 18) mot −10 194, C −11 648 (11+ 43) mot −8 928.
+
 - **2026-09-30 (natt, C-backtest):** Egna krav för kupong C (knapparna C och Alla; A+B gäller inte C). C byggs även i fetch-stryktipset.mjs och backtestas. Stryktipset: spik bara på favoriter ≥ 65 % (A, B, C). Europatipset C: 3-2-2. Favoritregeln släpps sist (efter skrällgränsen) och aldrig i delat system. Se avsnittet om kupong C.
 
 - **2026-09-30 (natt, C):** Kupong C på sidan: ett eget system på 700–850 kr, oberoende av A och B och utan krav, samma regler som A och minst 30 000 kr för 13 rätt (användarens beslut). Europatipset 2612: 728 rader, chans 1 på 213; Stryktipset 4972: 774 rader, 1 på 184. Inte backtestad än (byggs bara i webbläsaren).
