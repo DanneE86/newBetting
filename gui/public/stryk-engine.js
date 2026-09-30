@@ -12,6 +12,10 @@ const COLOR = { green: 0.45, red: 0.2 };
 const UTD_MIN_BY_PRODUCT = { stryktipset: 30000, europatipset: 20000 };
 // Kupong B: minst 30 000 kr för 13 rätt på båda spelen och inget tak (användarens regel 2026-09-29)
 const UTD_MIN_B = 30000;
+// Kupong C (användaren 2026-09-30): ett helt eget system på 700–850 kr, oberoende av A och B och utan dina krav.
+// Samma regler som A (4-2-2, färgfönster, högst 4 spikar, skräll- och favoritregeln) och minst 30 000 kr för 13 rätt.
+const BUDGET_C = { min: 700, max: 850 };
+const UTD_MIN_C = 30000;
 // Kupong B mot A (användarens regel 2026-09-29): högst 2 spikar med samma tecken på samma match och aldrig exakt samma
 // halvgardering. Egna krav räknas inte. Går det inte att bygga släpps spikgränsen stegvis (B_SAME_LADDER).
 const B_MAX_SAME_SPIK = 2;
@@ -357,5 +361,9 @@ export function generateCoupons(p, krav) {
     const setA = new Set(A?.rowList || []);
     B.rowList.forEach((row, i) => { if (setA.has(row)) overlap++; else unionHit += B.rowP[i]; });
   }
-  return { A, B, overlap, unionHit };
+  // Kupong C: fritt från A, B och kraven
+  const none = events.map(() => null);
+  const c = buildWithLadder(events, none, { ...base, payoutMin: Math.max(UTD_MIN_C, base.payoutMin) }, BUDGET_C, null, { payoutLadder: [1] });
+  const C = c && finish(c, "C", none);
+  return { A, B, C, overlap, unionHit };
 }

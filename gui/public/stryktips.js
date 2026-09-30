@@ -633,7 +633,7 @@ function kravRow(e, krav, pick) {
 }
 
 function couponCard(c, label, p) {
-  if (!c) return `<div class="sb-coupon"><h3>Kupong ${label}</h3><p class="st-note bad">Gick inte att bygga en kupong med de här kraven${label === "B" ? " (B kräver minst 30 000 kr för 13 rätt och en annan grundrad än A)" : ""}.</p></div>`;
+  if (!c) return `<div class="sb-coupon"><h3>Kupong ${label}</h3><p class="st-note bad">${label === "C" ? "Gick inte att bygga kupong C (700–850 kr, minst 30 000 kr för 13 rätt)" : `Gick inte att bygga en kupong med de här kraven${label === "B" ? " (B kräver minst 30 000 kr för 13 rätt och en annan grundrad än A)" : ""}`}.</p></div>`;
   const krFmt = (x) => Math.round(x).toLocaleString("sv-SE");
   const r = c.rules;
   const locked = c.picks.filter((x) => x.locked).length;
@@ -643,7 +643,7 @@ function couponCard(c, label, p) {
       <div><dt>Chans 13 rätt</dt><dd>${oneIn(c.hitAll)}</dd></div>
       <div><dt>Utdelning 13 rätt</dt><dd>ca ${krFmt(c.expectedPayout || 0)} kr</dd></div>
       <div><dt>Regler</dt><dd>${r.signMin.join("-")} · utdelning minst ${krFmt(r.payoutMinReal ?? r.payoutMin)} kr, inget tak</dd></div>
-      <div><dt>Dina krav</dt><dd>${locked}</dd></div>
+      <div><dt>Dina krav</dt><dd>${label === "C" ? "gäller inte C" : locked}</dd></div>
     </dl>
     ${c.relaxed?.length ? `<p class="st-note">Gick inte med alla regler: ${esc(c.relaxed.join(", "))}.</p>` : ""}
     ${p.open
@@ -665,8 +665,8 @@ function couponTable(p, res) {
     return t?.tur ? `<td><button type="button" class="st-chip tur tur-btn" data-ev="${e.eventNumber}" data-scroll="1">🍀 ${pct(t.rate)} · varför?</button></td>` : "<td></td>";
   };
   return `<div class="st-bt-wrap"><table class="sb-table">
-    <thead><tr><th>#</th><th>Match</th><th>Kupong A</th><th>Kupong B</th><th>Tur (A)</th></tr></thead>
-    <tbody>${p.events.map((e, i) => `<tr><td>${e.eventNumber}</td><th>${esc(e.home)} – ${esc(e.away)}</th>${cell(res.A, i)}${cell(res.B, i)}${turCell(e, i)}</tr>`).join("")}</tbody>
+    <thead><tr><th>#</th><th>Match</th><th>Kupong A</th><th>Kupong B</th><th>Kupong C</th><th>Tur (A)</th></tr></thead>
+    <tbody>${p.events.map((e, i) => `<tr><td>${e.eventNumber}</td><th>${esc(e.home)} – ${esc(e.away)}</th>${cell(res.A, i)}${cell(res.B, i)}${cell(res.C, i)}${turCell(e, i)}</tr>`).join("")}</tbody>
   </table></div>`;
 }
 
@@ -756,10 +756,10 @@ function renderB(p, head, info = "") {
     ? `<section class="sb-panel sb-result">
         <h3>Din kupong</h3>
         ${st.dirty ? `<p class="st-note">Du har ändrat kraven – tryck Generera kupong igen för att uppdatera.</p>` : ""}
-        <p class="st-sub">A och B är två olika system, vardera 350–400 kr. Högst 4 spikar per kupong, och färgreglerna (antal gröna, gula och röda tecken per rad) väljs så att chansen till 13 rätt blir högst – aldrig 0 till max. A: högst chans till 13 rätt, teckenregler 4-2-2, utdelning minst ${(UTD_MIN[p.product] || 30000).toLocaleString("sv-SE")} kr. B: teckenregler 3-3-3, minst 30 000 kr utan tak, högst 2 spikar och ingen halvgardering exakt som i A, aldrig samma tecken som ett krav du låst bara i A, vald för att täcka rader som A saknar.${res.A && res.B ? ` Gemensamma rader: <b>${res.overlap}</b>. A+B tillsammans: chans till 13 rätt <b>${oneIn(res.unionHit)}</b>.` : ""}</p>
+        <p class="st-sub">A och B är två olika system, vardera 350–400 kr. Högst 4 spikar per kupong, och färgreglerna (antal gröna, gula och röda tecken per rad) väljs så att chansen till 13 rätt blir högst – aldrig 0 till max. A: högst chans till 13 rätt, teckenregler 4-2-2, utdelning minst ${(UTD_MIN[p.product] || 30000).toLocaleString("sv-SE")} kr. B: teckenregler 3-3-3, minst 30 000 kr utan tak, högst 2 spikar och ingen halvgardering exakt som i A, aldrig samma tecken som ett krav du låst bara i A, vald för att täcka rader som A saknar.${res.A && res.B ? ` Gemensamma rader: <b>${res.overlap}</b>. A+B tillsammans: chans till 13 rätt <b>${oneIn(res.unionHit)}</b>.` : ""} <b>C</b> är ett helt eget system på 700–850 kr som inte har med A och B att göra: dina krav gäller inte där, samma regler som A och minst 30 000 kr för 13 rätt.</p>
         ${streckNote(p, st)}
         ${couponTable(p, res)}
-        <div class="sb-coupons">${couponCard(res.A, "A", p)}${couponCard(res.B, "B", p)}</div>
+        <div class="sb-coupons">${couponCard(res.A, "A", p)}${couponCard(res.B, "B", p)}${couponCard(res.C, "C", p)}</div>
       </section>`
     : "";
   // Matchkorten visar den genererade kupongen (eller hämtningens kupong A innan något genererats)

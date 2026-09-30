@@ -105,6 +105,14 @@ test('Stryktipset: en sida, egna krav genererar kupong A och B', async ({ page }
   await expect(page.locator('.sb-coupon h3').first()).toContainText(/Kupong A \d+ rader/);
   await expect(page.locator('.sb-coupon h3').nth(1)).toContainText(/Kupong B \d+ rader/);
   await expect(page.locator('.sb-coupon').nth(1)).toContainText('minst 30 000 kr, inget tak');
+  // Kupong C: eget system 700-850 kr, kraven gäller inte där (inga lås i C-kolumnen)
+  const cHead = await page.locator('.sb-coupon h3').nth(2).textContent();
+  const cCost = Number(cHead!.match(/(\d[\d\s]*) kr/)![1].replace(/\s/g, ''));
+  expect(cCost).toBeGreaterThanOrEqual(700);
+  expect(cCost).toBeLessThanOrEqual(850);
+  await expect(page.locator('.sb-coupon').nth(2)).toContainText('minst 30 000 kr');
+  await expect(page.locator('.sb-coupon').nth(2)).toContainText('gäller inte C');
+  await expect(table.nth(0).locator('td').nth(3)).not.toContainText('🔒');
   // Turmatcher och vanliga missar visas
   await expect(page.locator('.st-miss')).toContainText('Vanliga missar');
   await expect(page.locator('.st-miss-table tbody tr').first()).toBeVisible();
@@ -134,7 +142,7 @@ test('Europatipset har samma sida via /europatipset', async ({ page }) => {
   await expect(page).toHaveURL(base + '/europatipset');
   await expect(page.locator('#stryktips-view h2')).toContainText('Europatipset', { timeout: 30_000 });
   await expect(page.locator('.sb-row')).toHaveCount(13);
-  await expect(page.locator('.sb-coupon')).toHaveCount(2);
+  await expect(page.locator('.sb-coupon')).toHaveCount(3); // A, B och C
   await expect(page.locator('.view-tab.active')).toHaveAttribute('data-view', 'europatipset');
   // Krav bara i A (1X på sista matchen): B väljer aldrig exakt samma tecken där
   await page.evaluate(() => localStorage.clear());
