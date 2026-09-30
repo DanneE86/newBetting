@@ -16,6 +16,7 @@ import { clubEloFor } from './lib/club-elo.mjs';
 import { fillXg } from './lib/understat-xg.mjs';
 import { buildMissProfile, STRYK_LEAGUES } from './lib/stryk-miss-profile.mjs';
 import { colorBands } from './lib/stryk-color-bands.mjs';
+import { calibrationTable, assessMatch, assessmentText } from './lib/stryk-calibration.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const RAW = path.join(root, 'data', 'raw');
@@ -528,15 +529,31 @@ const MAX_SAME_SINGLES = 2;
 // favoriter 50-65 % sprack 40-49 %, pa >= 65 % 16-28 %. Stryktipset med 0,65: A+B -4 738 kr mot -22 557 (11+ 48 mot 23),
 // C -6 341 mot -25 112 (11+ 51 mot 12). Europatipset blev samre (A+B -29 035 mot -24 797), dar ingen grans.
 // Modellen ar for saker pa engelska favoriter. STRYK_SPIK_MIN overstyr (backtest).
-const SPIK_MIN_BY_PRODUCT = { stryktipset: 0.65, europatipset: 0 };
+// 2026-09-30 (sent): den fasta 65 %-gransen ar borttagen (anvandaren) - i stallet bedoms varje match (SPIK_CAL_MIN nedan).
+const SPIK_MIN_BY_PRODUCT = { stryktipset: 0, europatipset: 0 };
+// Spikbedomning match for match (scripts/lib/stryk-calibration.mjs): favoritchansen justeras efter hur ofta favoriter av
+// samma slag (chansniva, hemma/borta, liga) vunnit i kupongarkivet fore omgangen, systemet byggs pa de justerade procenten
+// och en match far spikas om den justerade chansen ar minst SPIK_CAL_MIN. STRYK_CALIB=0 stanger av, STRYK_SPIK_CAL styr.
+// Backtest 2026-09-30 (38 ST omg), aterbetalning A+B / C: fast 65 %-grans 29 % / 70 %; match for match med spik fran
+// 55 % 78 % / 69 % (A+B+C -15 401 kr mot -29 312), 60 % 79 % / 65 %, 65 % 41 % / 59 %, ingen niva 70 % / 73 %.
+// Europatipset (55 omg) blev samre av justeringen (A+B 19 % mot 39 %, C 55 % mot 76 %): dar byggs systemet pa modellens
+// procent och bedomningen visas bara.
+const CALIB = process.env.STRYK_CALIB !== '0';
+// Anvandarens regel 2026-09-30: alla matcher bedoms ALLTID match for match, pa bada spelen.
+const CALIB_FOR = new Set((process.env.STRYK_CALIB_FOR || 'stryktipset,europatipset').split(','));
+// Europatipset (55 omg) med bedomning: spik fran 55 % A+B+C -44 457 kr, ingen niva -52 175, 60 % -62 498, 65 % -66 663.
+const SPIK_CAL_MIN_BY_PRODUCT = { stryktipset: 0.55, europatipset: 0.55 };
+const spikCalMinFor = (productId) => Number(process.env.STRYK_SPIK_CAL ?? SPIK_CAL_MIN_BY_PRODUCT[productId] ?? 0);
 const spikMinFor = (productId) => Number(process.env.STRYK_SPIK_MIN ?? SPIK_MIN_BY_PRODUCT[productId] ?? 0);
 function grundCandidates(events, maxRows, singlesA = null, spikMin = 0, setsA = null) {
   const SUBSETS = [[0], [1], [2], [0, 1], [0, 2], [1, 2], [0, 1, 2]];
+  // Spik: matchens egen bedomning (e.spik) om den finns, annars favoritchansen mot spikMin
+  const spikOk = (e, k) => (e.spik ? e.spik.fav === SIGNS[k] && e.spik.spikbar : e.final[k] >= spikMin);
   const sameHalf = (x, i) => x.length === 2 && setsA?.[i]?.length === 2 && x[0] === setsA[i][0] && x[1] === setsA[i][1];
   const options = (e, i) => {
-    if (singlesA) return SUBSETS.filter((x) => (x.length > 1 || e.final[x[0]] >= spikMin) && !sameHalf(x, i));
+    if (singlesA) return SUBSETS.filter((x) => (x.length > 1 || spikOk(e, x[0])) && !sameHalf(x, i));
     const order = [0, 1, 2].sort((a, b) => e.final[b] - e.final[a]);
-    return [1, 2, 3].filter((n) => n > 1 || e.final[order[0]] >= spikMin).map((n) => order.slice(0, n).sort());
+    return [1, 2, 3].filter((n) => n > 1 || spikOk(e, order[0])).map((n) => order.slice(0, n).sort());
   };
   let dp = new Map([['0,0,0', { lp: 0, sets: [] }]]);
   events.forEach((e, i) => {
@@ -1175,14 +1192,26 @@ async function analyzeDraw(product, draw, ctx, result) {
   // Fargband: ratt rad senaste aret i kupongarkivet, bara omgangar fore den har (ingen framtidsdata i backtest)
   // Bara Stryktipset: pa Europatipset gav banden samre resultat (+10 557 mot +24 712 kr, 55 omg), dar optimeras fritt
   const bands = BANDS_FOR.has(product.id) ? colorBands(product.id, draw.regCloseTime || new Date().toISOString()) : null;
+  // Spikbedomning match for match; systemen byggs pa de justerade procenten (sysEv), matchkorten visar modellens
+  const calib = CALIB ? calibrationTable(product.id, draw.regCloseTime || new Date().toISOString()) : null;
+  const used = CALIB_FOR.has(product.id);
+  out.forEach((a) => {
+    a.spik = assessMatch(a.final, a.league, calib, used ? spikCalMinFor(product.id) : 0);
+    if (a.spik) {
+      a.spik.used = used; // Europatipset: bara visning
+      // Forst i analysen: FotMob-kontexten ska ligga sist
+      a.analysis = [assessmentText(a.spik, a.home, a.away), ...(a.analysis || [])];
+    }
+  });
+  const sysEv = out.map((a) => (a.spik?.used ? { ...a, final: a.spik.sysP } : { ...a, spik: undefined }));
   const baseOpts = { rowPrice, turnover, realTurnover, jackpot, payoutMin: utdMin(product.id), signMin: SIGN_MIN.A, colorBands: bands };
   let bestA = null, splitPair = null;
   if (out.length && B_MODE === 'split') {
-    const dbl = bestReduced(out, grundCandidates(out, GRUND_MAX_ROWS, null, spikMinFor(product.id)), { ...baseOpts, budget: { min: 2 * BUDGET.min, max: 2 * BUDGET.max }, split: true, keepShares: true });
+    const dbl = bestReduced(sysEv, grundCandidates(sysEv, GRUND_MAX_ROWS, null, spikMinFor(product.id)), { ...baseOpts, budget: { min: 2 * BUDGET.min, max: 2 * BUDGET.max }, split: true, keepShares: true });
     splitPair = dbl?.pair || null;
     if (splitPair) bestA = { system: dbl.system, reduced: splitPair[0] };
   }
-  if (!bestA && out.length) bestA = bestReduced(out, grundCandidates(out, GRUND_MAX_ROWS, null, spikMinFor(product.id)), baseOpts);
+  if (!bestA && out.length) bestA = bestReduced(sysEv, grundCandidates(sysEv, GRUND_MAX_ROWS, null, spikMinFor(product.id)), baseOpts);
   const system = bestA?.system || null, reduced = bestA?.reduced || null;
   if (system) out.forEach((a, i) => { a.systemPick = system.picks[i]; });
   if (reduced) {
@@ -1197,7 +1226,7 @@ async function analyzeDraw(product, draw, ctx, result) {
   } else if (system) {
     const singlesA = system.sets.map((x) => (x.length === 1 ? x[0] : -1));
     // B som i webben: minst 30 000 kr (aven Europatipset), 3-3-3, hogst 2 spikar och ingen halvgardering exakt som A
-    const bestB = bestReduced(out, grundCandidates(out, GRUND_MAX_ROWS, singlesA, spikMinFor(product.id), system.sets), { rowPrice, turnover, realTurnover, jackpot, payoutMin: Math.max(30000, utdMin(product.id)), signMin: SIGN_MIN.B, colorBands: bands }, B_JOINT ? new Set(reduced.rowList) : null);
+    const bestB = bestReduced(sysEv, grundCandidates(sysEv, GRUND_MAX_ROWS, singlesA, spikMinFor(product.id), system.sets), { rowPrice, turnover, realTurnover, jackpot, payoutMin: Math.max(30000, utdMin(product.id)), signMin: SIGN_MIN.B, colorBands: bands }, B_JOINT ? new Set(reduced.rowList) : null);
     systemB = bestB?.system || null; reducedB = bestB?.reduced || null;
     if (systemB) out.forEach((a, i) => { a.systemPickB = systemB.picks[i]; });
     if (reducedB) reducedB.gamblingCabinUrl = gamblingCabinUrl(product.id, draw.drawNumber, closeDate, out, systemB.sets, reducedB);
@@ -1205,7 +1234,7 @@ async function analyzeDraw(product, draw, ctx, result) {
   // Kupong C: eget system, oberoende av A och B
   let systemC = null, reducedC = null;
   if (out.length && process.env.STRYK_C !== '0') {
-    const bestC = bestReduced(out, grundCandidates(out, GRUND_MAX_ROWS, null, spikMinFor(product.id)), { ...baseOpts, payoutMin: Math.max(UTD_MIN_C, utdMin(product.id)), signMin: SIGN_MIN_C[product.id] || SIGN_MIN.A, budget: BUDGET_C, colorTarget: C_COLOR !== 'free' });
+    const bestC = bestReduced(sysEv, grundCandidates(sysEv, GRUND_MAX_ROWS, null, spikMinFor(product.id)), { ...baseOpts, payoutMin: Math.max(UTD_MIN_C, utdMin(product.id)), signMin: SIGN_MIN_C[product.id] || SIGN_MIN.A, budget: BUDGET_C, colorTarget: C_COLOR !== 'free' });
     systemC = bestC?.system || null; reducedC = bestC?.reduced || null;
     if (reducedC) {
       reducedC.picks = systemC.picks.map((x) => x.signs);

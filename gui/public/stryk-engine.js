@@ -27,7 +27,11 @@ const SIGN_LADDER = [SIGN_MIN, [3, 2, 2], [3, 1, 1], [2, 1, 1], [0, 0, 0]];
 // Spik bara när favoriten har minst så här mycket (dina egna krav gäller alltid). Backtest 2026-09-30: på Stryktipset
 // sprack spikar på favoriter 50–65 % i 40–49 % av fallen; med 0,65 gick A+B från -22 557 till -4 738 kr och C från
 // -25 112 till -6 341. På Europatipset blev det sämre, där ingen gräns. Samma som fetch-stryktipset.mjs.
-const SPIK_MIN_BY_PRODUCT = { stryktipset: 0.65, europatipset: 0 };
+// 2026-09-30 (sent): den fasta 65 %-gränsen är borttagen – varje match bedöms i stället (e.spik från servern, se
+// scripts/lib/stryk-calibration.mjs): Stryktipset bygger på den justerade chansen och spikar bara när den är minst 55 %.
+const SPIK_MIN_BY_PRODUCT = { stryktipset: 0, europatipset: 0 };
+// Spik tillåten: matchens bedömning om den används, annars favoritchansen mot spikMin
+const spikOk = (e, k, spikMin) => (e.spik?.used ? e.spik.fav === SIGNS[k] && e.spik.spikbar : e.final[k] >= spikMin);
 // Kupong C: Europatipset 3-2-2 (backtest: bättre än 4-2-2), Stryktipset samma som A
 const SIGN_MIN_C_BY_PRODUCT = { stryktipset: SIGN_MIN, europatipset: [3, 2, 2] };
 const SIGN_LADDER_B = [SIGN_MIN_B, [3, 2, 2], [3, 1, 1], [2, 1, 1], [0, 0, 0]];
@@ -91,9 +95,9 @@ function grundCandidates(events, maxRows, forced, other = null, spikMin = 0) {
     if (other) {
       for (const k of [0, 1, 2]) if (!subs.some((x) => same(x, [k]))) subs.push([k]);
       for (const x of [[0, 1], [0, 2], [1, 2]]) if (!subs.some((y) => same(y, x))) subs.push(x);
-      return subs.filter((x) => !((x.length === 2 || other.locked?.[i]) && same(x, other.sets[i])) && (x.length > 1 || e.final[x[0]] >= spikMin));
+      return subs.filter((x) => !((x.length === 2 || other.locked?.[i]) && same(x, other.sets[i])) && (x.length > 1 || spikOk(e, x[0], spikMin)));
     }
-    return subs.filter((x) => x.length > 1 || e.final[x[0]] >= spikMin);
+    return subs.filter((x) => x.length > 1 || spikOk(e, x[0], spikMin));
   };
   let dp = new Map([["0,0,0", { lp: 0, sets: [] }]]);
   events.forEach((e, i) => {
@@ -397,7 +401,8 @@ export function kravSigns(k) {
  *     identisk med A, valt så att det täcker så mycket som möjligt av det A saknar (några gemensamma rader är tillåtna).
  */
 export function generateCoupons(p, krav) {
-  const events = p.events;
+  // Systemen byggs på matchens justerade procent (spikbedömningen) när den används, annars på modellens
+  const events = p.events.map((e) => (e.spik?.used && e.spik.sysP ? { ...e, final: e.spik.sysP } : e));
   const forcedFor = (sys) => events.map((e) => {
     const k = krav[e.eventNumber];
     const on = k && (k.scope === sys || k.scope === "all" || (k.scope === "both" && sys !== "C"));
