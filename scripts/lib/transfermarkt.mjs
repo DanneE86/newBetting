@@ -1,5 +1,7 @@
 // Transfermarkt som reserv for trupper dar FotMob saknar data (Ettan Norra/Sodra, vissa CL-lag).
 // Vanlig HTML-hamtning (ingen inloggning). Sidor utan saison_id ger innevarande trupp.
+import { nameScore } from './match-context.mjs';
+
 const BASE = 'https://www.transfermarkt.com';
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36';
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -104,4 +106,42 @@ export async function tmSquad(clubId, { coach: withCoach = true } = {}) {
   const staff = await getHtml(`${BASE}/x/mitarbeiter/verein/${clubId}`);
   const coach = staff?.match(/profil\/trainer\/\d+">\s*([^<]+?)\s*</)?.[1] ?? null;
   return { coach: coach ? decode(coach) : null, players };
+}
+
+// ---- Namn- och klubbjamforelse FotMob <-> Transfermarkt (verify-squads-tm.mjs, fetch-player-stats-fotmob.mjs) ----
+export const fold = (x) => String(x).replace(/[øØ]/g, 'o').replace(/[łŁ]/g, 'l').replace(/[æÆ]/g, 'ae').replace(/ß/g, 'ss').replace(/[đĐ]/g, 'd')
+  .normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z ]/g, ' ').replace(/\s+/g, ' ').trim();
+// FotMob skriver ibland o som oe (Bjoerklund), Transfermarkt som o
+export const loose = (x) => fold(x).replace(/oe/g, 'o').replace(/ae/g, 'a').replace(/ue/g, 'u').replace(/aa/g, 'a');
+export function sameName(a, b) {
+  const x = loose(a), y = loose(b);
+  if (x === y || ` ${y} `.includes(` ${x} `) || ` ${x} `.includes(` ${y} `)) return true;
+  const xs = x.split(' '), ys = y.split(' ');
+  return xs.length > 1 && ys.length > 1 && xs.at(-1) === ys.at(-1) && xs[0][0] === ys[0][0];
+}
+export const foldClub = (x) => String(x).replace(/[øØ]/g, 'o').replace(/[łŁ]/g, 'l').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim();
+export const clubScore = (a, b) => Math.max(nameScore(foldClub(a), null, foldClub(b)), nameScore(foldClub(b), null, foldClub(a)));
+// Samma klubb, aven dess U19/U21/B-lag
+export const YOUTH = /\b(u\s?\d\d|ii|b|b team|reserves|youth|academy|juniors?|sub \d\d|atletico|castilla|jong|primavera|promesas)\b/g;
+// names = vart lagnamn, FotMobs och Transfermarkts (TM skriver "1.FC Nuremberg", vi "Nurnberg")
+export const sameClub = (tmClub, names) => names.some((n) => clubScore(foldClub(tmClub).replace(YOUTH, ' '), n) >= 0.5 || clubScore(tmClub, n) >= 0.5);
+// Okand klubb i soket ("---", tomt) ar inget bevis for att spelaren lamnat
+export const unknownClub = (c) => !c || /^-+$/.test(c.trim());
+
+// Vara lag -> Transfermarkt-klubbar: forst sakra namnlikheter, sedan de som blir over parvis efter basta likhet
+export function pairClubs(code, teams, clubs) {
+  const out = new Map(), used = new Set();
+  // Fasta id galler aven nar klubben saknas i Transfermarkts ligalista (inaktuell efter upp-/nedflyttning)
+  for (const [team] of teams) {
+    const id = TM_TEAM_ID[`${code}|${team}`];
+    if (id) { out.set(team, clubs.find((c) => c.id === id) ?? { id, name: team }); used.add(id); }
+  }
+  const cand = [];
+  for (const [team, x] of teams) for (const c of clubs) cand.push({ team, c, s: Math.max(clubScore(team, c.name), clubScore(x.fotmobName, c.name)) });
+  cand.sort((a, b) => b.s - a.s);
+  for (const k of cand) {
+    if (out.has(k.team) || used.has(k.c.id) || (k.s < 0.5 && teams.length - out.size > 1 && k.s < 0.2)) continue;
+    out.set(k.team, k.c); used.add(k.c.id);
+  }
+  return out;
 }
