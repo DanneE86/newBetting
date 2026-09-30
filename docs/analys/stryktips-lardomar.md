@@ -345,6 +345,24 @@ Inget av följande spräcker spikar oftare än oddsen säger:
 
 **På webben:** matcher där kupong A:s tecken hör till en grupp som missat minst 30 % markeras som 🍀 turmatch, med tecknet som oftast kom i stället. På B-sidan kan det läggas in som krav i kupong B med en knapp.
 
+## Färgregler, max 4 spikar och favoritregeln (2026-09-30, 38 omg ST + 55 omg ET, 2025/26 + 2026/27)
+
+Delat system A+B (700–800 rader). Nya varianterna har max 4 spikar och favoriten i varje gardering på minst 10 % av raderna i **båda** halvorna. Bredd = minsta max − min per färg (grön/gul/röd i garderingarna).
+
+| Variant | ST netto | ST 11+ / 10+ rader | ET netto | ET 13 r | ET 11+ / 10+ rader |
+|---|---|---|---|---|---|
+| Gammal (fria spikar, inga färgregler, ingen favoritregel) | −14 612 | 18 / 171 | −34 380 | 0 | 25 / 274 |
+| Bredd 0 (exakta antal tillåtna) | −20 754 | 30 / 200 | +23 153 | 1 | 108 / 496 |
+| **Bredd 1 (vald)** | −20 716 | 30 / 200 | +24 712 | 1 | 115 / 540 |
+| Bredd 2 (t.ex. 1–3, 2–4) | −21 735 | 23 / 163 | +8 596 | 1 | 84 / 442 |
+| Bredd 3 | −21 043 | 29 / 178 | −27 131 | 0 | 56 / 365 |
+| Inga färgregler | −22 268 | 27 / 180 | +11 574 | 1 | 88 / 444 |
+
+- **Bredd 1 är bäst i båda spelen** på netto och på 10+/11+-rader. Bredd 2 (användarens exempel 1–3, 2–4) är sämre än 1 i båda.
+- **Max 4 spikar + favoritregeln** lyfter Europatipset från −34 000 till +25 000 kr (13 rätt en gång, 115 mot 25 rader med 11+). På Stryktipset ger nya motorn fler 11+-rader (30 mot 18) och 10+-rader (200 mot 171). Den gamla hade högre vinst tack vare några enstaka utdelningar (brus).
+- En första körning där favoritregeln bara gällde hela systemet (inte varje halva) gav kupong A med favoriten på 6 % av raderna. Därför kontrolleras halvorna var för sig.
+- Följ upp efter 12+ nya omgångar.
+
 ## Robusta lärdomar (stöds av hela urvalet)
 
 1. **Oddsen slår vår lagmodell.** Logloss över 216 matcher, där lägre är bättre:
@@ -408,6 +426,8 @@ Inget av följande spräcker spikar oftare än oddsen säger:
 Nettot styrs av enstaka träffar: A:s plus kommer från en enda rad med 12 rätt. Med 65 % återbetalning är det normala förväntade utfallet negativt. Nettot säger därför lite om kvaliteten, och rader med 11+ rätt är ett bättre mått.
 
 ## Ändringslogg
+
+- **2026-09-30:** Färgregler per rad (grön/gul/röd, minsta bredd 1, optimeras mot chans till 13 rätt) och rosa = antal spikar i Gambling Cabin-länken. Högst 4 spikar per kupong. Favoriten i en gardering finns på minst 10 % av raderna. Backtest av bredder ovan. Budgetbaktestet är omkört med nya motorn.
 
 - **2026-09-29:** Vanliga missar och turmatcher (se ovan), visas på Stryktipset/Europatipset A och B. B-sidan: krav med valfria tecken (1, X, 2, 1X, X2, 12, 1X2) som gäller A, B eller båda. Kupong B är ett eget system med minst 30 000 kr för 13 rätt utan tak, en annan grundrad än A och vald för att täcka rader A saknar (användarens regel). Hämtningens delade system på Stryktipset A är oförändrat.
 

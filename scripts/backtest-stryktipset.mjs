@@ -66,6 +66,16 @@ for (let n = START_DRAW; n > START_DRAW - 200 && draws.length < COUNT; n--) {
   const snap = (red, key) => red && { rowList: red.rowList, cost: red.cost, picks: a.events.map((e) => e[key]?.signs || '') };
   const evalA = a.reduced ? evaluateSnapshot(snap(a.reduced, 'systemPick'), outcomes, result.distribution) : null;
   const evalB = a.reducedB ? evaluateSnapshot(snap(a.reducedB, 'systemPickB'), outcomes, result.distribution) : null;
+  // Klarade ratt rad fargreglerna? (antal grona/gula/roda i garderingarna inom min/max; null = ratt rad utanfor grundraden)
+  const colorCheck = (red, key) => {
+    const cr = red?.rules?.colorRules;
+    if (!cr) return null;
+    const picks = a.events.map((e) => e[key]?.signs || '');
+    if (outcomes.some((o, i) => !picks[i].includes(o))) return { rules: cr, ok: null };
+    const n = { green: 0, yellow: 0, red: 0 };
+    outcomes.forEach((o, i) => { if (picks[i].length > 1) n[a.events[i].colors[SIGNS.indexOf(o)]]++; });
+    return { rules: cr, count: n, ok: ['green', 'yellow', 'red'].every((c) => n[c] >= cr[c][0] && n[c] <= cr[c][1]) };
+  };
   const matches = a.events.map((e) => {
     const k = SIGNS.indexOf(e.result.outcome);
     return {
@@ -83,6 +93,7 @@ for (let n = START_DRAW; n > START_DRAW - 200 && draws.length < COUNT; n--) {
     prize13: result.distribution[0] ? { amount: result.distribution[0].amount, winners: result.distribution[0].winners } : null,
     A: a.reduced && { rows: a.reduced.rows, cost: a.reduced.cost, grund: a.reduced.grundRows, payoutMin: a.reduced.rules.payoutMin, hit: a.reduced.hitAll, er: a.reduced.expectedReturn, ...evalA },
     B: a.reducedB && { rows: a.reducedB.rows, cost: a.reducedB.cost, grund: a.reducedB.grundRows, payoutMin: a.reducedB.rules.payoutMin, hit: a.reducedB.hitAll, er: a.reducedB.expectedReturn, union: a.reducedB.unionHit, overlap: a.reducedB.overlapRows, ...evalB },
+    colorA: colorCheck(a.reduced, 'systemPick'), colorB: colorCheck(a.reducedB, 'systemPickB'),
     pairBest: Math.max(evalA?.best ?? 0, evalB?.best ?? 0),
     grundA: evalA?.groundCorrect, grundB: evalB?.groundCorrect,
     matches,

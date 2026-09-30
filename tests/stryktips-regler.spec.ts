@@ -151,6 +151,19 @@ test('reducerade system: budget, teckenregler, rader inom grundraden', () => {
       const spikes = picks.filter((x) => x.length === 1).length;
       expect(spikes, `${at}: högst ${MAX_SPIKES} spikar`).toBeLessThanOrEqual(MAX_SPIKES);
       expect(red.rules.colorRules.pink, at).toEqual([spikes, spikes]);
+      // Favoriten (troligaste tecknet) i varje gardering på minst 10 % av kupongens rader (2026-09-30)
+      picks.forEach((pk, i) => {
+        if (pk.length < 2) return;
+        const fav = pk.split('').reduce((b, c) => (p.events[i].final[idx(c)] > p.events[i].final[idx(b)] ? c : b));
+        const share = red.rowList.filter((r: string) => r[i] === fav).length / red.rows;
+        expect(share, `${at} match ${i + 1}: favoriten ${fav} på minst 10 %`).toBeGreaterThanOrEqual(0.1);
+      });
+      // Färgreglerna är minst 1 bred där spannet tillåter (inte ett exakt antal)
+      for (const c of ['green', 'yellow', 'red']) {
+        const [lo, hi] = red.rules.colorRules[c];
+        const counts = red.rowList.map((r: string) => colorCount(p.events, picks, r, c));
+        if (Math.max(...counts) > Math.min(...counts)) expect(hi - lo, `${at} ${c}: inte exakt antal`).toBeGreaterThanOrEqual(1);
+      }
       // Chanser: reducerat <= grundrad <= 1, och grundradens chans = produkt av valda tecknens sannolikhet
       expect(red.hitAll, at).toBeLessThanOrEqual(red.grundHit + 1e-9);
       expect(red.grundHit, at).toBeLessThanOrEqual(1);
