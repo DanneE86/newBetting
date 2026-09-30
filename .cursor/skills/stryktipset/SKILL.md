@@ -18,7 +18,7 @@ Mål: bygga en **genomtänkt kupong** — inte 13 isolerade favorittips.
 - Budget **350–400 kr per system** (1 kr/rad). Ersätter alla äldre standardbelopp.
 - **Två kuponger per omgång (från 2026-09-28):** ett system på 700–800 rader delas efter utdelning i **A** (högst utdelning) och **B** (resten, utdelningsintervall), vardera 350–400 kr med egen Gambling Cabin-länk. Det gamla motsystemet B (högst 1 gemensam spik) finns kvar med `STRYK_B_MODE=counter`.
 - Reducering (Gambling Cabin-logik): utdelning för 13 rätt **≥ 30 000 kr** (Europatipset **≥ 20 000 kr**), beräknad från folkets streck, teckenminimum **4-2-2** (1-X-2, användarens beslut 2026-09-28 efter backtest; minst 3 kryss gäller inte längre). Max alltid fullt.
-- **Högst 4 spikar per kupong** och **färgregler aldrig 0–13** (användarens regler 2026-09-30): min/max för gröna, gula och röda tecken per rad (i garderingarna) optimeras mot högst chans till 13 rätt; rosa = antal spikar. Står i Gambling Cabin-länken (`green=1,min,max` osv.).
+- **Högst 4 spikar per kupong** och **färgregler aldrig 0–13** (användarens regler 2026-09-30): min/max för gröna, gula och röda tecken per rad (i garderingarna) optimeras mot högst chans till 13 rätt med minsta bredd 1 (aldrig exakt antal; backtest 2026-09-30: bredd 1 bäst, 2 sämre); rosa = antal spikar. Står i Gambling Cabin-länken (`green=1,min,max` osv.). Favoriten i en gardering på **minst 10 %** av raderna i varje kupong (även varje halva av det delade systemet).
 - Grundrad + utdelningsgräns väljs för högst chans till 13 rätt inom budget.
 - Varje system får en **förifylld länk till Gambling Cabin** (reducera.gamblingcabin.se) – ingen filuppladdning.
 - Öppna kuponger sparas i `data/stryktips-history/` och **följs upp mot facit** automatiskt.

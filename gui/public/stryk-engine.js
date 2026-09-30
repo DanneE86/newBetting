@@ -25,6 +25,11 @@ const PAYOUT_LADDER = [1, 2 / 3, 1 / 3, 0];
 // alltid har minst 15 % (användarens regel 2026-09-29; utdelningsgränsen drev annars skrällen till 91–93 %).
 // Gambling Cabin har ingen sådan regel, så den används vid valet av system: länken ger fortfarande samma rader.
 const RED_MAX_SHARE = 0.85;
+// Favoriten i en gardering får aldrig ligga på under 10 % av raderna, t.ex. X på 90 % (användarens regel 2026-09-30).
+// Gäller tillsammans med skrällgränsen och släpps samtidigt som den.
+const FAV_MIN_SHARE = 0.1;
+// Minsta bredd max - min per färg (1 = t.ex. 2–3 eller 1–2), så att systemet inte låser ett exakt antal. Backtest 2026-09-30: 1 bäst.
+const COLOR_WIDTH = 1;
 // Högst 4 spikar per kupong (användarens regel 2026-09-30). Låser användaren fler spikar gäller deras krav.
 const MAX_SPIKES = 4;
 // Färgregler (antal gröna/gula/röda tecken per rad i garderingarna, spikar är rosa) är aldrig 0–13 (användarens regel
@@ -90,8 +95,9 @@ function colorRuleOptions(all, minRows, target) {
   for (const r of all) for (let c = 0; c < 3; c++) { if (r.c[c] < lo[c]) lo[c] = r.c[c]; if (r.c[c] > hi[c]) hi[c] = r.c[c]; }
   const ranges = [0, 1, 2].map((c) => {
     const out = [];
-    for (let a = lo[c]; a <= Math.min(lo[c] + COLOR_TRIM, hi[c]); a++) for (let b = Math.max(hi[c] - COLOR_TRIM, a); b <= hi[c]; b++) out.push([a, b]);
-    return out;
+    const w = Math.min(COLOR_WIDTH, hi[c] - lo[c]);
+    for (let a = lo[c]; a <= Math.min(lo[c] + COLOR_TRIM, hi[c]); a++) for (let b = Math.max(hi[c] - COLOR_TRIM, a + w); b <= hi[c]; b++) out.push([a, b]);
+    return out.length ? out : [[lo[c], hi[c]]];
   });
   const opts = [];
   for (const g of ranges[0]) for (const y of ranges[1]) for (const rd of ranges[2]) {
@@ -116,8 +122,14 @@ function gcPayoutFloor(gcTurnover, realTurnover, jackpot, payoutMin) {
 // Andel av raderna med ett rött tecken i en gardering som är högst (1 = ingen gräns)
 function redShareOk(events, grund, kept, redMax) {
   if (redMax >= 1) return true;
-  return events.every((e, i) => grund.sets[i].length < 2 || grund.sets[i].every((k) =>
-    signColor(e.folk?.[k]) !== "red" || kept.filter((r) => r.row[i] === k).length <= redMax * kept.length));
+  return events.every((e, i) => {
+    const set = grund.sets[i];
+    if (set.length < 2) return true;
+    const share = (k) => kept.filter((r) => r.row[i] === k).length / kept.length;
+    // Favoriten (troligaste tecknet) i garderingen minst FAV_MIN_SHARE av raderna
+    const fav = set.reduce((b, k) => (e.final[k] > e.final[b] ? k : b));
+    return share(fav) >= FAV_MIN_SHARE && set.every((k) => signColor(e.folk?.[k]) !== "red" || share(k) <= redMax);
+  });
 }
 
 function reduceSystem(events, grund, { rowPrice = 1, turnover, signMin, realTurnover = turnover, jackpot = 0, payoutMin, budget, redMax = 1 }) {
@@ -246,7 +258,7 @@ function buildWithLadder(events, forced, base, budget, exclude, { avoid = null, 
       const best = bestReduced(events, cands, { ...base, signMin: sm, payoutMin: base.payoutMin * pf, budget: b, redMax }, exclude, avoid);
       if (best) {
         const relaxed = [];
-        if (redMax === 1) relaxed.push(`skrällgränsen (rött tecken på högst ${Math.round(RED_MAX_SHARE * 100)} % av raderna) gick inte att hålla`);
+        if (redMax === 1) relaxed.push(`skrällgränsen (rött tecken på högst ${Math.round(RED_MAX_SHARE * 100)} % av raderna, favoriten på minst ${Math.round(FAV_MIN_SHARE * 100)} %) gick inte att hålla`);
         if (sm !== signLadder[0]) relaxed.push(`teckenreglerna sänktes till ${sm.join("-")}`);
         if (pf !== 1) relaxed.push(pf === 0 ? "utdelningsgränsen togs bort" : `utdelningsgränsen sänktes till ${Math.round(base.payoutMin * pf).toLocaleString("sv-SE")} kr`);
         if (b.min < budget.min) relaxed.push(`kraven lämnar bara ${free} möjliga rader`);

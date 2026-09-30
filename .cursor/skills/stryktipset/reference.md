@@ -46,7 +46,7 @@ Gardera mer sällan vid:
 - **Utdelning för 13 rätt** = 26 % × omsättning / (omsättning × radens streckprodukt + 1), med fast omsättning 25 milj kr (Stryktipset) och 10 milj kr (Europatipset). Samma formel som reducera.gamblingcabin.se, så radantalet blir identiskt där.
 - Gräns **≥ 30 000 kr** för Stryktipset och **≥ 20 000 kr** för Europatipset (backtest 2026-09-28, se lärdomsfilen). Den höjs till ett jämnt belopp i ett glapp på ≥ 2 % mellan rader, så att små streckskillnader inte ändrar antalet rader.
 - **Tecken:** minst 4-2-2, max fullt. Systemet (700–800 rader) delas i kupong A (utdelning ≥ t_mid) och kupong B (utdelning mellan gränsen och t_mid); `utd=1,min,max` i Gambling Cabin-länken.
-- **Färger:** gröna/gula/röda tecken per rad räknas bara i garderingarna (spikar är rosa, 5). Min/max per färg provas upp till 2 steg in från radernas spann, kombinationen med högst chans till 13 rätt inom budgeten väljs (`colorRuleOptions`). Högst 4 spikar per kupong (fler bara om användaren låst dem själv).
+- **Färger:** gröna/gula/röda tecken per rad räknas bara i garderingarna (spikar är rosa, 5). Min/max per färg provas upp till 2 steg in från radernas spann med minsta bredd 1 (`STRYK_COLOR_WIDTH`), kombinationen med högst chans till 13 rätt inom budgeten väljs (`colorRuleOptions`). Högst 4 spikar per kupong (fler bara om användaren låst dem själv). Favoriten i varje gardering på minst 10 % av raderna (`FAV_MIN_SHARE`, kontrolleras per kupong/halva, släpps ihop med skrällgränsen).
 - **Länkformat:** `?spel=&omg=&datum=&v1=&vX=&v2=` (0 = spelas ej, 2 gul, 3 röd, 4 grön), `antT=1,min1,13,minX,13,min2,13`, `utd=1,<min>,100000000`.
 - **Vinstklasser i praktiken:** 10 rätt ger ofta 0 kr och 11 rätt ofta under 100 kr. Det är 13 (och 12) som räknas.
 
