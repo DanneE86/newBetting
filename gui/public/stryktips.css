@@ -327,11 +327,11 @@ body.view-stryktips main { display: none !important; }
 .st-in.c-green { background: #4cc873; color: #0b1a10; }
 .st-in.c-yellow { background: #f0c541; color: #1d1604; }
 .st-in.c-red { background: #ef6b5b; color: #fff; }
-.st-prob.c-blue { border-color: #7fb6ff; background: rgba(127, 182, 255, 0.12); box-shadow: inset 4px 0 0 #7fb6ff; }
-.st-prob.c-blue .st-bar span { background: #7fb6ff; }
-.st-prob.c-blue .st-prob-top strong { color: #7fb6ff; }
-.st-prob.hit.c-blue { box-shadow: inset 4px 0 0 #7fb6ff, inset 0 0 0 2px rgba(255, 255, 255, 0.55); }
-.st-in.c-blue { background: #7fb6ff; color: #0a1628; }
+.st-prob.c-pink { border-color: #f07ab8; background: rgba(240, 122, 184, 0.12); box-shadow: inset 4px 0 0 #f07ab8; }
+.st-prob.c-pink .st-bar span { background: #f07ab8; }
+.st-prob.c-pink .st-prob-top strong { color: #f07ab8; }
+.st-prob.hit.c-pink { box-shadow: inset 4px 0 0 #f07ab8, inset 0 0 0 2px rgba(255, 255, 255, 0.55); }
+.st-in.c-pink { background: #f07ab8; color: #2a0a1c; }
 .st-legend { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem 0.5rem; margin: 0 0 0.9rem; color: var(--muted); font-size: 0.82rem; }
 .st-legend b { color: var(--ink); }
 .st-gc { display: inline-block; margin-top: 0.5rem; padding: 0.55rem 1rem; border-radius: 999px; background: #0a8a3a; color: #fff; font-weight: 700; text-decoration: none; }
@@ -455,10 +455,10 @@ body.view-stryktips main { display: none !important; }
 .st-miss-table td:last-child { white-space: nowrap; }
 
 
-/* Spikar (ett tecken) alltid blå – i kupong A, B, egna krav och kupongtabellen */
-.st-tip.spik { background: #7fb6ff; color: #0a1628; box-shadow: none; }
+/* Spikar (ett tecken) alltid rosa (samma som Gambling Cabins rosa) – i kupong A, B, egna krav och kupongtabellen */
+.st-tip.spik { background: #f07ab8; color: #2a0a1c; box-shadow: none; }
 .st-tip.spik.mine { box-shadow: 0 0 0 2px var(--warn); }
-.sb-signs.spik .sb-sign.on { background: #7fb6ff; border-color: #7fb6ff; color: #0a1628; }
-.sb-signs.spik .sb-sign.on small { color: #0a1628; }
+.sb-signs.spik .sb-sign.on { background: #f07ab8; border-color: #f07ab8; color: #2a0a1c; }
+.sb-signs.spik .sb-sign.on small { color: #2a0a1c; }
 .st-bt tr.st-bt-lg th { padding-top: 0.8rem; color: var(--lime); text-align: left; }
 .st-bt tr.st-bt-lg th small { color: var(--muted); font-weight: 500; }

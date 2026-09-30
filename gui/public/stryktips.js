@@ -106,15 +106,15 @@ async function load(force = false) {
 }
 
 // ---------- Rendering ----------
-const COLOR_LABEL = { green: "Grön · favorit", yellow: "Gul", red: "Röd · skräll", blue: "Blå · spik" };
+const COLOR_LABEL = { green: "Grön · favorit", yellow: "Gul", red: "Röd · skräll", pink: "Rosa · spik" };
 function probRow(e) {
   const names = [e.home, "Oavgjort", e.away];
   return `<div class="st-probs">${SIGNS.map((s, i) => {
     const inSys = e.systemPick ? e.systemPick.signs.includes(s) : e.tip === s;
     const hit = e.result?.outcome === s;
     const sv = e.streckvarde?.[i];
-    // Spik (ett tecken i system A) alltid blå, annars färg efter folkets streck
-    const col = !inSys ? null : e.systemPick?.signs.length === 1 ? "blue" : e.colors ? e.colors[i] : null;
+    // Spik (ett tecken i system A) alltid rosa (som i Gambling Cabin-länken), annars färg efter folkets streck
+    const col = !inSys ? null : e.systemPick?.signs.length === 1 ? "pink" : e.colors ? e.colors[i] : null;
     return `<div class="st-prob${inSys ? " tip" : " out"}${col ? ` c-${col}` : ""}${hit ? " hit" : ""}">
       <div class="st-prob-top"><span class="st-sign">${s}</span><span class="st-team">${esc(names[i])}</span>${inSys ? `<span class="st-in${col ? ` c-${col}` : ""}" title="Tecknet spelas · färg efter folkets streck">${col ? COLOR_LABEL[col] : "✓ spelas"}</span>` : ""}${e.systemPickB?.signs.includes(s) ? `<span class="st-b" title="Spelas i system B">B</span>` : ""}<strong>${pct(e.final[i])}</strong></div>
       <div class="st-bar"><span style="width:${Math.round(e.final[i] * 100)}%"></span></div>
@@ -200,14 +200,14 @@ function colorBox(list) {
     return `<tr><th>${badge}</th><td>${text}</td>${c ? `<td>${num(s?.perDraw)}</td><td>${s ? `<b>${pct(s.rate)}</b> <small>(${s.miss} av ${s.n})</small>` : "–"}</td><td>${s ? pct(s.exp) : "–"}</td>` : ""}</tr>`;
   };
   return `<details class="st-method st-colors"><summary>Vad betyder färgerna?</summary>
-    <p>Färgen på ett spelat tecken visar hur mycket <b>svenska folket</b> har streckat det. Blått visar att matchen är en <b>spik</b> (bara ett tecken).</p>
+    <p>Färgen på ett spelat tecken visar hur mycket <b>svenska folket</b> har streckat det. Rosa visar att matchen är en <b>spik</b> (bara ett tecken).</p>
     <div class="st-bt-wrap"><table class="st-bt">
       <thead><tr><th>Färg</th><th>Betyder</th>${c ? "<th>Per omgång</th><th>Missar</th><th>Väntat</th>" : ""}</tr></thead>
       <tbody>
         ${row("green", `<span class="st-in c-green">Grön</span>`, "Favorit – folket har streckat tecknet minst 45 %")}
         ${row("yellow", `<span class="st-in c-yellow">Gul</span>`, "Mellan – folket 21–44 %")}
         ${row("red", `<span class="st-in c-red">Röd</span>`, "Skräll – folket högst 20 %. Ger hög utdelning om den går in")}
-        ${row("blue", `<span class="st-tip spik">Blå</span>`, "Spik – vi spelar bara ett tecken i matchen")}
+        ${row("blue", `<span class="st-tip spik">Rosa</span>`, "Spik – vi spelar bara ett tecken i matchen")}
       </tbody></table></div>
     ${c ? `<p class="st-sub">Från baktestet med budgeten (${b.draws} omgångar, ${esc(b.from)} – ${esc(b.to)}), grundraden i kupong A. <b>Per omgång</b> = antal spelade tecken med den färgen (13 matcher, helgarderingar räknas som tre tecken). <b>Missar</b> = tecknet blev inte resultatet. Ett tecken i en gardering kan missa utan att kupongen missar – i en helgardering missar alltid två av tre tecken, därför missar gula (oftast i helgarderingar) mest. För blå räknas matchen: spiken sprack. <b>Väntat</b> = hur ofta våra procent sa att det skulle bli fel.</p>` : ""}
   </details>`;

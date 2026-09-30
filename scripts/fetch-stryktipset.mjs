@@ -697,10 +697,11 @@ function pairStats(a, b) {
 }
 
 // Forifylld lank till Gambling Cabins reduceringsverktyg (samma grundrad, farger och regler).
-// Tecken: 0 = spelas inte, 2 = gul, 3 = rod, 4 = gron (bara visning). Regler: [aktiv, min, max].
+// Tecken: 0 = spelas inte, 2 = gul, 3 = rod, 4 = gron, 5 = rosa (spik) (bara visning). Regler: [aktiv, min, max].
 function gamblingCabinUrl(productId, drawNumber, closeDate, events, sets, reduced) {
   const colorId = { yellow: 2, red: 3, green: 4 };
-  const col = (k) => events.map((e, i) => (sets[i].includes(k) ? colorId[e.colors[k]] : 0)).join(',');
+  // Spikar (ett tecken) rosa (5), annars farg efter folkets streck. Fargreglerna ar avstangda, sa raderna andras inte.
+  const col = (k) => events.map((e, i) => (!sets[i].includes(k) ? 0 : sets[i].length === 1 ? 5 : colorId[e.colors[k]])).join(',');
   const r = reduced.rules;
   const q = [
     `spel=${productId}`, `omg=${drawNumber}`, `datum=${closeDate}`,
