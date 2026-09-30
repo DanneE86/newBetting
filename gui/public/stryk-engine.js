@@ -169,7 +169,8 @@ function bestReduced(events, candidates, opts, exclude = null, avoid = null) {
 
 function gamblingCabinUrl(p, events, sets, reduced) {
   const colorId = { yellow: 2, red: 3, green: 4 };
-  const col = (k) => events.map((e, i) => (sets[i].includes(k) ? colorId[signColor(e.folk?.[k])] : 0)).join(",");
+  // Spikar (ett tecken) rosa (5), annars färg efter folkets streck. Färgreglerna är avstängda, så raderna ändras inte.
+  const col = (k) => events.map((e, i) => (!sets[i].includes(k) ? 0 : sets[i].length === 1 ? 5 : colorId[signColor(e.folk?.[k])])).join(",");
   const r = reduced.rules;
   const q = [
     `spel=${p.product}`, `omg=${p.drawNumber}`, `datum=${(p.regCloseTime || "").slice(0, 10)}`,
