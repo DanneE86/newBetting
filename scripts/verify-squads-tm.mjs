@@ -6,49 +6,11 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { root } from './lib/learnings-data.mjs';
-import { nameScore } from './lib/match-context.mjs';
-import { TM_LEAGUE, TM_TEAM_ID, tmClubs, tmSquad, tmSearchPlayer } from './lib/transfermarkt.mjs';
+import { TM_LEAGUE, tmClubs, tmSquad, tmSearchPlayer, sameName, sameClub, unknownClub, pairClubs } from './lib/transfermarkt.mjs';
 
 const DIR_SQ = path.join(root, 'data', 'trupper');
 const EXCL = path.join(DIR_SQ, '_uteslutna.json');
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
-const fold = (x) => String(x).replace(/[øØ]/g, 'o').replace(/[łŁ]/g, 'l').replace(/[æÆ]/g, 'ae').replace(/ß/g, 'ss').replace(/[đĐ]/g, 'd')
-  .normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z ]/g, ' ').replace(/\s+/g, ' ').trim();
-// FotMob skriver ibland o som oe (Bjoerklund), Transfermarkt som o
-const loose = (x) => fold(x).replace(/oe/g, 'o').replace(/ae/g, 'a').replace(/ue/g, 'u').replace(/aa/g, 'a');
-function sameName(a, b) {
-  const x = loose(a), y = loose(b);
-  if (x === y || ` ${y} `.includes(` ${x} `) || ` ${x} `.includes(` ${y} `)) return true;
-  const xs = x.split(' '), ys = y.split(' ');
-  return xs.length > 1 && ys.length > 1 && xs.at(-1) === ys.at(-1) && xs[0][0] === ys[0][0];
-}
-const foldClub = (x) => String(x).replace(/[øØ]/g, 'o').replace(/[łŁ]/g, 'l').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim();
-const clubScore = (a, b) => Math.max(nameScore(foldClub(a), null, foldClub(b)), nameScore(foldClub(b), null, foldClub(a)));
-// Samma klubb, aven dess U19/U21/B-lag
-const YOUTH = /\b(u\s?\d\d|ii|b|b team|reserves|youth|academy|juniors?|sub \d\d|atletico|castilla|jong|primavera|promesas)\b/g;
-// names = vart lagnamn, FotMobs och Transfermarkts (TM skriver "1.FC Nuremberg", vi "Nurnberg")
-const sameClub = (tmClub, names) => names.some((n) => clubScore(foldClub(tmClub).replace(YOUTH, ' '), n) >= 0.5 || clubScore(tmClub, n) >= 0.5);
-// Okand klubb i soket ("---", tomt) ar inget bevis for att spelaren lamnat
-const unknownClub = (c) => !c || /^-+$/.test(c.trim());
-
-// Vara lag -> Transfermarkt-klubbar: forst sakra namnlikheter, sedan de som blir over parvis efter basta likhet
-function pairClubs(code, teams, clubs) {
-  const out = new Map(), used = new Set();
-  // Fasta id galler aven nar klubben saknas i Transfermarkts ligalista (inaktuell efter upp-/nedflyttning)
-  for (const [team] of teams) {
-    const id = TM_TEAM_ID[`${code}|${team}`];
-    if (id) { out.set(team, clubs.find((c) => c.id === id) ?? { id, name: team }); used.add(id); }
-  }
-  const cand = [];
-  for (const [team, x] of teams) for (const c of clubs) cand.push({ team, c, s: Math.max(clubScore(team, c.name), clubScore(x.fotmobName, c.name)) });
-  cand.sort((a, b) => b.s - a.s);
-  for (const k of cand) {
-    if (out.has(k.team) || used.has(k.c.id) || (k.s < 0.5 && teams.length - out.size > 1 && k.s < 0.2)) continue;
-    out.set(k.team, k.c); used.add(k.c.id);
-  }
-  return out;
-}
-
 const only = process.argv.slice(2).filter((x) => !x.startsWith('--'));
 const excl = fs.existsSync(EXCL) ? JSON.parse(fs.readFileSync(EXCL, 'utf8')) : { players: {} };
 const today = new Date().toISOString().slice(0, 10);
