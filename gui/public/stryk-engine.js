@@ -162,6 +162,8 @@ const MAX_COLOR_OPTIONS = 60;
 // spelets regel och budgeten nås med grundrad och färgregler i stället för att höja gränsen. Går det inte höjs gränsen
 // som reserv, och kupongen säger det. Raderna grupperas per färgtriplett så att många kombinationer kan provas snabbt.
 // Samma som fetch-stryktipset.mjs.
+// Av som standard (2026-09-30 sent): exakt gräns gav sämre resultat i backtest, regeln är en lägsta gräns som får höjas.
+const EXACT_FLOOR = false;
 const COLOR_TRIM_EXACT = 3;
 function exactColorOptions(all, minRows, maxRows, fixed = null) {
   const groups = new Map();
@@ -212,7 +214,7 @@ function redShareOk(events, grund, kept, redMax, favMin = FAV_MIN_SHARE) {
 // Raderna i en grundrad (efter tecken- och utdelningsregler) räknas en gång per grundrad och regeluppsättning och
 // återanvänds när reservordningen provar färg- och skrällregler igen (annars upp till 40 omräkningar).
 const walkCache = new WeakMap();
-function reduceSystem(events, grund, { rowPrice = 1, turnover, signMin, realTurnover = turnover, jackpot = 0, payoutMin, budget, redMax = 1, favMin = FAV_MIN_SHARE, colorTarget = true, exactFloor = true }) {
+function reduceSystem(events, grund, { rowPrice = 1, turnover, signMin, realTurnover = turnover, jackpot = 0, payoutMin, budget, redMax = 1, favMin = FAV_MIN_SHARE, colorTarget = true, exactFloor = EXACT_FLOOR }) {
   const minRows = Math.ceil(budget.min / rowPrice), maxRows = Math.floor(budget.max / rowPrice);
   const T = turnover;
   // Exakt: gränsen i Gambling Cabins formel är regeln själv. Reserv: verklig utdelning >= regeln, gränsen höjs till budgeten.
@@ -353,13 +355,13 @@ function buildWithLadder(events, forced, base, budget, exclude, { avoid = null, 
   if (!candCache.has(maxSame)) candCache.set(maxSame, grundCandidates(events, GRUND_MAX_ROWS, forced, maxSame == null ? null : { sets: avoid, maxSame, locked: avoidLocked }, base.spikMin || 0));
   const cands = candCache.get(maxSame);
   // Exakt utdelningsgräns är viktigare än färgfönster och skrällgräns: den höjs först när de har släppts
-  for (const exactFloor of [true, false]) {
+  for (const exactFloor of EXACT_FLOOR ? [true, false] : [false]) {
   for (const [redMax, favMin] of shareLevels) {
     for (const colorTarget of [true, false]) {
       const best = bestReduced(events, cands, { ...base, signMin: sm, payoutMin: base.payoutMin * pf, budget: b, redMax, favMin, colorTarget, exactFloor }, exclude, avoid);
       if (best) {
         const relaxed = [];
-        if (!exactFloor && pf === 1) relaxed.push(`utdelningsgränsen ${Math.round(base.payoutMin).toLocaleString("sv-SE")} kr gav inte ${budget.min}–${budget.max} kr med exakt gräns – den höjdes till ${Math.round(best.reduced.rules.payoutMin).toLocaleString("sv-SE")} kr i länken`);
+        if (EXACT_FLOOR && !exactFloor && pf === 1) relaxed.push(`utdelningsgränsen ${Math.round(base.payoutMin).toLocaleString("sv-SE")} kr gav inte ${budget.min}–${budget.max} kr med exakt gräns – den höjdes till ${Math.round(best.reduced.rules.payoutMin).toLocaleString("sv-SE")} kr i länken`);
         if (!colorTarget) relaxed.push("färgfönstren runt det väntade antalet gick inte att hålla – färgerna optimerades fritt");
         if (redMax === 1) relaxed.push(`skrällgränsen (rött tecken på högst ${Math.round(RED_MAX_SHARE * 100)} % av raderna) gick inte att hålla`);
         if (favMin === 0) relaxed.push(`favoriten på minst ${Math.round(FAV_MIN_SHARE * 100)} % av raderna gick inte att hålla`);
