@@ -1112,6 +1112,22 @@ const BACKTESTS = [
   // (STRYK_SEASONS=2627,2526,2425 node scripts/backtest-stryktipset.mjs --from 2025-08-01 --out data/stryktips-backtest-budget.json)
   { file: 'stryktips-backtest-budget.json', label: 'Budget 2025/26 + 2026/27', key: 'budget' },
 ];
+// Farger i kupong A (grundraden): hur manga tecken per omgang och hur ofta tecknet inte blev utfallet (mot vantat = 1 - var sannolikhet).
+// Bla = spik (ett tecken), raknas per match.
+function colorStats(draws) {
+  const st = {};
+  const add = (k, miss, exp) => { const s = (st[k] ??= { n: 0, miss: 0, exp: 0 }); s.n++; s.miss += miss ? 1 : 0; s.exp += exp; };
+  for (const d of draws) for (const m of d.matches || []) {
+    if (!m.pickA || !m.outcome) continue;
+    for (const s of m.pickA) {
+      const k = SIGNS.indexOf(s);
+      add(signColor(m.folk?.[k]), s !== m.outcome, 1 - (m.final?.[k] ?? 0));
+    }
+    if (m.pickA.length === 1) add('blue', m.pickA !== m.outcome, 1 - (m.final?.[SIGNS.indexOf(m.pickA)] ?? 0));
+  }
+  const n = draws.length || 1;
+  return Object.fromEntries(Object.entries(st).map(([k, s]) => [k, { perDraw: r2(s.n / n), n: s.n, miss: s.miss, rate: r2(s.miss / s.n), exp: r2(s.exp / s.n) }]));
+}
 function loadBacktests() {
   const out = [];
   for (const b of BACKTESTS) {
@@ -1132,6 +1148,7 @@ function loadBacktests() {
       key: b.key, label: b.label, col: Boolean(b.col), modelWeight: x.summary?.modelWeight ?? null, from: x.summary?.from, to: x.summary?.to,
       draws: draws.length, matches: x.summary?.matches, logLoss: x.summary?.logLoss, drawRate: x.summary?.drawRate,
       A: sys('A'), B: sys('B'),
+      colorStats: b.key === 'budget' ? colorStats(draws) : undefined,
       pairChance: (() => { const h = draws.reduce((a, d) => a + (d.A?.hit || 0) + (d.B?.hit || 0), 0); return h ? Math.round(draws.length / h) : null; })(),
       perDraw: b.key !== 'new' && b.key !== 'budget' ? undefined : draws.map((d) => ({
         n: d.drawNumber, date: d.date, x: d.draws13, prize13: d.prize13?.amount, winners13: d.prize13?.winners,
