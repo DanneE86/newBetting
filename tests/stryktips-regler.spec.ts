@@ -135,8 +135,8 @@ test('reducerade system: budget, teckenregler, rader inom grundraden', () => {
       expect(red.rules.signMin, at).toEqual(signMinOf(name, red, p.product));
       expect(red.rules.payoutMinReal, at).toBe(name === 'A' ? UTD_MIN[p.product] ?? 30000 : Math.max(30000, UTD_MIN[p.product] ?? 30000));
       // Exakt gräns (2026-09-30: "30k, inte mindre, inte mer"): länkens gräns är regeln, om den inte fick höjas som reserv
+      // Standard sedan 2026-09-30 (sent): regeln är en lägsta gräns (verklig utdelning, se nästa test); exakt bara med STRYK_EXACT=1
       if (red.rules.payoutExact) expect(red.rules.payoutMin, `${at}: exakt utdelningsgräns`).toBe(red.rules.payoutMinReal);
-      else expect(red.rules.payoutMin, `${at}: höjd gräns`).toBeGreaterThan(red.rules.payoutMinReal);
       // Budget
       expect(red.rows, at).toBe(red.rowList.length);
       expect(red.cost, at).toBe(red.rows * red.rowPrice);

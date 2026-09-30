@@ -652,7 +652,9 @@ const MAX_COLOR_OPTIONS = 60;
 // spelets regel (A 30 000 / Europatipset 20 000, B och C 30 000) och budgeten nas med grundrad och fargregler i stallet for
 // att hoja gransen. Gar det inte hojs gransen som reserv (payoutExact: false). STRYK_EXACT=0 stanger av (backtest).
 // Raderna grupperas per fargtriplett sa att manga fargkombinationer kan provas snabbt; hela poolen maste rymmas i budgeten.
-const EXACT_FLOOR = process.env.STRYK_EXACT !== '0';
+// 2026-09-30 (sent): av som standard efter backtest - exakt gräns gav samre resultat (ET C -26 366 mot -10 024, ST A+B
+// -20 572 mot -10 194), anvandaren valde rekommendationen: regeln ar en LAGSTA grans som far hojas. STRYK_EXACT=1 slar pa.
+const EXACT_FLOOR = process.env.STRYK_EXACT === '1';
 const COLOR_TRIM_EXACT = 3;
 function exactColorOptions(all, minRows, maxRows, fixed = null) {
   const groups = new Map();
