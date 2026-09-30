@@ -755,7 +755,7 @@ function renderB(p, head, info = "") {
     ? `<section class="sb-panel sb-result">
         <h3>Din kupong</h3>
         ${st.dirty ? `<p class="st-note">Du har ändrat kraven – tryck Generera kupong igen för att uppdatera.</p>` : ""}
-        <p class="st-sub">A och B är två olika system, vardera 350–400 kr. A: högst chans till 13 rätt, teckenregler 4-2-2, utdelning minst ${(UTD_MIN[p.product] || 30000).toLocaleString("sv-SE")} kr. B: teckenregler 3-3-3, minst 30 000 kr utan tak, högst 2 spikar och ingen halvgardering exakt som i A, aldrig samma tecken som ett krav du låst bara i A, vald för att täcka rader som A saknar.${res.A && res.B ? ` Gemensamma rader: <b>${res.overlap}</b>. A+B tillsammans: chans till 13 rätt <b>${oneIn(res.unionHit)}</b>.` : ""}</p>
+        <p class="st-sub">A och B är två olika system, vardera 350–400 kr. Högst 4 spikar per kupong, och färgreglerna (antal gröna, gula och röda tecken per rad) väljs så att chansen till 13 rätt blir högst – aldrig 0 till max. A: högst chans till 13 rätt, teckenregler 4-2-2, utdelning minst ${(UTD_MIN[p.product] || 30000).toLocaleString("sv-SE")} kr. B: teckenregler 3-3-3, minst 30 000 kr utan tak, högst 2 spikar och ingen halvgardering exakt som i A, aldrig samma tecken som ett krav du låst bara i A, vald för att täcka rader som A saknar.${res.A && res.B ? ` Gemensamma rader: <b>${res.overlap}</b>. A+B tillsammans: chans till 13 rätt <b>${oneIn(res.unionHit)}</b>.` : ""}</p>
         ${streckNote(p, st)}
         ${couponTable(p, res)}
         <div class="sb-coupons">${couponCard(res.A, "A", p)}${couponCard(res.B, "B", p)}</div>

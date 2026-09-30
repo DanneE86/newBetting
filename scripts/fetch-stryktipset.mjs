@@ -42,6 +42,12 @@ const COLOR = { green: 0.45, red: 0.2 }; // folkets streck: gron >= 45 %, rod <=
 // Skrall (rott tecken) i en gardering far finnas pa hogst 85 % av kupongens rader (anvandarens regel 2026-09-29).
 // GC saknar regeln, sa den anvands vid valet av system (lanken ger samma rader). Samma som i gui/public/stryk-engine.js.
 const RED_MAX_SHARE = 0.85;
+// Hogst 4 spikar per kupong (anvandarens regel 2026-09-30)
+const MAX_SPIKES = 4;
+// Fargregler (antal grona/gula/roda tecken per rad i garderingarna, spikar ar rosa) ar aldrig 0-13 (anvandarens regel
+// 2026-09-30): min/max provas upp till COLOR_TRIM steg in fran radernas spann och den kombination som ger hogst chans
+// till 13 ratt inom budgeten valjs. Samma som i gui/public/stryk-engine.js.
+const COLOR_TRIM = 2;
 const PAYOUT_13 = 0.65 * 0.4; // 65 % aterbetalning, 40 % av potten till 13 ratt
 // Minsta utdelning for 13 ratt (kr) per spel, anvandarens regel. Europatipset 20 000: backtest 55 omg (minst 3 topp 4-matcher)
 // gav A +17 677 kr mot -14 134 vid 30 000 (bygger pa en enda 13-ratt, folj upp). STRYK_UTD_MIN overstyr i backtest.
@@ -523,7 +529,8 @@ function grundCandidates(events, maxRows, singlesA = null) {
     }
     dp = next;
   });
-  return [...dp.values()].map((st) => ({
+  // Antal spikar = 13 - halv - hel, sa gransen kan tas efter DP:n utan att basta grundrad per nyckel tappas
+  return [...dp.values()].filter((st) => st.sets.filter((x) => x.length === 1).length <= MAX_SPIKES).map((st) => ({
     rows: st.sets.reduce((n, x) => n * x.length, 1), hitAll: Math.exp(st.lp), sets: st.sets,
     picks: st.sets.map((x) => ({ signs: x.map((k) => SIGNS[k]).join(''), type: x.length === 1 ? 'Spik' : x.length === 2 ? 'Halvgardering' : 'Helgardering' })),
   }));
@@ -534,8 +541,35 @@ function signColor(folkP) {
   return folkP >= COLOR.green ? 'green' : folkP <= COLOR.red ? 'red' : 'yellow';
 }
 
+// Fargregler. all = rader sorterade pa utdelning (hogst forst), r.c = [grona, gula, roda] i garderingarna.
+// Varje farg far min/max hogst COLOR_TRIM steg in fran spannet. Kombinationerna rangordnas efter chansen i de `target`
+// forsta raderna som klarar reglerna (ungefar de rader utdelningsgransen sedan behaller); vid lika vinner snavast.
+const COLOR_KEYS = ['green', 'yellow', 'red'];
+function colorRuleOptions(all, minRows, target) {
+  const lo = [13, 13, 13], hi = [0, 0, 0];
+  for (const r of all) for (let c = 0; c < 3; c++) { if (r.c[c] < lo[c]) lo[c] = r.c[c]; if (r.c[c] > hi[c]) hi[c] = r.c[c]; }
+  const ranges = [0, 1, 2].map((c) => {
+    const out = [];
+    for (let a = lo[c]; a <= Math.min(lo[c] + COLOR_TRIM, hi[c]); a++) for (let b = Math.max(hi[c] - COLOR_TRIM, a); b <= hi[c]; b++) out.push([a, b]);
+    return out;
+  });
+  const opts = [];
+  for (const g of ranges[0]) for (const y of ranges[1]) for (const rd of ranges[2]) {
+    let n = 0, sum = 0;
+    for (const r of all) {
+      if (r.c[0] < g[0] || r.c[0] > g[1] || r.c[1] < y[0] || r.c[1] > y[1] || r.c[2] < rd[0] || r.c[2] > rd[1]) continue;
+      sum += r.p;
+      if (++n >= target) break;
+    }
+    if (n >= minRows) opts.push({ rule: [g, y, rd], score: sum, width: g[1] - g[0] + y[1] - y[0] + rd[1] - rd[0] });
+  }
+  return opts.sort((a, b) => b.score - a.score || a.width - b.width);
+}
+const fitsColors = (c, rule) => rule.every(([a, b], k) => c[k] >= a && c[k] <= b);
+
 // Reducera en grundrad till BUDGET med regler som gar att aterskapa exakt i Gambling Cabins verktyg:
 //   tecken 1/X/2: fast minimum per system (A 5-3-2, B 4-3-3), max alltid fullt
+//   farger gron/gul/rod: optimerat min/max per rad (colorRuleOptions), rosa = antal spikar
 //   utdelning 13 ratt >= payoutMin (per spel, se UTD_MIN_BY_PRODUCT; GC:s formel: 26 % x omsattning / (omsattning x radens streck + 1), fast omsattning per spel);
 //   gransen hojs vid behov (jamnt belopp) tills radantalet ryms i budgeten.
 // Utdelningsgransen payoutMin galler VERKLIG utdelning: (26 % x verklig omsattning + jackpot) / (omsattning x streck + 1).
@@ -555,22 +589,51 @@ function reduceSystem(events, grund, { rowPrice = 1, turnover, signMin, realTurn
   const T = turnover;
   const floor = gcPayoutFloor(T, realTurnover, jackpot, payoutMin);
   const all = [];
+  const cc = [0, 0, 0]; // grona/gula/roda tecken i garderingarna (spikar ar rosa i GC)
   const walk = (i, row, p, f) => {
     if (i === events.length) {
       const payout = (PAYOUT_13 * T + jackpot) / (1 + T * f); // GC:s formel
       const real = (PAYOUT_13 * realTurnover + jackpot) / (1 + realTurnover * f);
-      if (payout >= floor && [0, 1, 2].every((k) => row.filter((x) => x === k).length >= signMin[k])) all.push({ row: [...row], p, payout, real });
+      if (payout >= floor && [0, 1, 2].every((k) => row.filter((x) => x === k).length >= signMin[k])) all.push({ row: [...row], p, payout, real, c: cc.slice() });
       return;
     }
     for (const k of grund.sets[i]) {
-      row.push(k);
+      const ci = grund.sets[i].length > 1 ? COLOR_KEYS.indexOf(colors[i][k]) : -1;
+      row.push(k); if (ci >= 0) cc[ci]++;
       walk(i + 1, row, p * events[i].final[k], f * (events[i].folk?.[k] ?? events[i].final[k]));
-      row.pop();
+      row.pop(); if (ci >= 0) cc[ci]--;
     }
   };
   walk(0, [], 1, 1);
   if (all.length < minRows) return null;
   all.sort((a, b) => b.payout - a.payout);
+  // Fargreglerna: basta kombinationen dar utdelningsgransen gar att lagga, annars nasta
+  const spikes = grund.sets.filter((x) => x.length === 1).length;
+  for (const opt of colorRuleOptions(all, minRows, Math.round((minRows + maxRows) / 2))) {
+    const res = cutSystem(all.filter((r) => fitsColors(r.c, opt.rule)), floor, minRows, maxRows, grund, colors, redMax);
+    if (!res) continue;
+    const { cut, kept } = res;
+    const hit = kept.reduce((sum, r) => sum + r.p, 0);
+    const ev = kept.reduce((sum, r) => sum + r.p * r.real, 0);
+    kept.sort((a, b) => b.p - a.p);
+    return {
+      grundRows: grund.rows, afterPayout: all.length, rows: kept.length, cost: kept.length * rowPrice, rowPrice,
+      hitAll: hit, grundHit: grund.hitAll, expectedPayout: hit ? ev / hit : null, expectedReturn: ev,
+      rules: {
+        payoutMin: cut.t, payoutMinReal: payoutMin, jackpot, realTurnover, signMin, colorGreen: COLOR.green, colorRed: COLOR.red, turnover: T,
+        colorRules: { green: opt.rule[0], yellow: opt.rule[1], red: opt.rule[2], pink: [spikes, spikes] },
+      },
+      colors: colors.map((c) => c.join(',')),
+      rowList: kept.map((r) => r.row.map((k) => SIGNS[k]).join('')),
+      rowP: kept.map((r) => r.p), rowReal: kept.map((r) => r.real), rowPayout: kept.map((r) => r.payout), // for A+B-optimering/delning (skrivs inte till JSON)
+    };
+  }
+  return null;
+}
+
+// Utdelningsgransen pa raderna som klarar tecken- och fargreglerna (all sorterad pa utdelning, hogst forst)
+function cutSystem(all, floor, minRows, maxRows, grund, colors, redMax) {
+  if (all.length < minRows) return null;
   // Radantalet laggs sa nara mitten av budgeten som mojligt (2026-09-29): GC raknar med aktuella streck, och ett streck
   // som andrades fran 27 till 26 % efter hamtningen gav 394 -> 404 rader. Mitten ger marginal at bada hallen.
   let cut = null;
@@ -598,17 +661,7 @@ function reduceSystem(events, grund, { rowPrice = 1, turnover, signMin, realTurn
   const kept = all.slice(0, cut.n);
   // Skrall (rott tecken) i en gardering pa hogst RED_MAX_SHARE av raderna, annars valjs ett annat system
   if (redMax < 1 && !grund.sets.every((set, i) => set.length < 2 || set.every((k) => colors[i][k] !== 'red' || kept.filter((r) => r.row[i] === k).length <= redMax * kept.length))) return null;
-  const hit = kept.reduce((sum, r) => sum + r.p, 0);
-  const ev = kept.reduce((sum, r) => sum + r.p * r.real, 0);
-  kept.sort((a, b) => b.p - a.p);
-  return {
-    grundRows: grund.rows, afterPayout: all.length, rows: kept.length, cost: kept.length * rowPrice, rowPrice,
-    hitAll: hit, grundHit: grund.hitAll, expectedPayout: hit ? ev / hit : null, expectedReturn: ev,
-    rules: { payoutMin: cut.t, payoutMinReal: payoutMin, jackpot, realTurnover, signMin, colorGreen: COLOR.green, colorRed: COLOR.red, turnover: T },
-    colors: colors.map((c) => c.join(',')),
-    rowList: kept.map((r) => r.row.map((k) => SIGNS[k]).join('')),
-    rowP: kept.map((r) => r.p), rowReal: kept.map((r) => r.real), rowPayout: kept.map((r) => r.payout), // for A+B-optimering/delning (skrivs inte till JSON)
-  };
+  return { cut, kept };
 }
 
 // Basta reducerade system over alla grundradskandidater (hogst chans till 13 ratt)
@@ -700,14 +753,15 @@ function pairStats(a, b) {
 // Tecken: 0 = spelas inte, 2 = gul, 3 = rod, 4 = gron, 5 = rosa (spik) (bara visning). Regler: [aktiv, min, max].
 function gamblingCabinUrl(productId, drawNumber, closeDate, events, sets, reduced) {
   const colorId = { yellow: 2, red: 3, green: 4 };
-  // Spikar (ett tecken) rosa (5), annars farg efter folkets streck. Fargreglerna ar avstangda, sa raderna andras inte.
+  // Spikar (ett tecken) rosa (5), annars farg efter folkets streck. Fargreglerna = de optimerade min/max per rad.
   const col = (k) => events.map((e, i) => (!sets[i].includes(k) ? 0 : sets[i].length === 1 ? 5 : colorId[e.colors[k]])).join(',');
   const r = reduced.rules;
+  const cr = (c) => (r.colorRules?.[c] ? `1,${r.colorRules[c][0]},${r.colorRules[c][1]}` : '0,0,13');
   const q = [
     `spel=${productId}`, `omg=${drawNumber}`, `datum=${closeDate}`,
     `v1=${col(0)}`, `vX=${col(1)}`, `v2=${col(2)}`,
     `antT=1,${r.signMin[0]},13,${r.signMin[1]},13,${r.signMin[2]},13`,
-    'yellow=0,0,13', 'red=0,0,13', 'green=0,0,13', 'pink=0,0,13',
+    `yellow=${cr('yellow')}`, `red=${cr('red')}`, `green=${cr('green')}`, `pink=${cr('pink')}`,
     `utd=1,${r.payoutMin},${r.payoutMax ?? 100000000}`,
   ];
   return `https://reducera.gamblingcabin.se/?${q.join('&')}`;

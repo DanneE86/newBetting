@@ -41,6 +41,12 @@ const realPayout = (rules: any, f: number) => (PAYOUT_13 * rules.realTurnover + 
 // Utdelningsintervall i Gambling Cabin: utd=1,min,max (max saknas = ingen ovre grans)
 const inPayoutRange = (r: any, payout: number) => payout >= r.payoutMin && (r.payoutMax == null || payout <= r.payoutMax);
 const signCount = (row: string) => SIGNS.map((s) => row.split('').filter((c) => c === s).length);
+// Fargregler (2026-09-30): antal grona/gula/roda tecken i garderingarna ligger inom min/max, spikar ar rosa
+const MAX_SPIKES = 4;
+const colorCount = (events: any[], picks: string[], row: string, color: string) =>
+  row.split('').filter((c, i) => picks[i].length > 1 && signColor(events[i].folk?.[idx(c)]) === color).length;
+const inColorRules = (events: any[], picks: string[], r: any, row: string) =>
+  ['green', 'yellow', 'red'].every((c) => { const n = colorCount(events, picks, row, c); return n >= r.colorRules[c][0] && n <= r.colorRules[c][1]; });
 
 // Alla rader i grundraden (kartesisk produkt av tecknen per match)
 function grundRows(picks: string[]): string[] {
@@ -139,7 +145,12 @@ test('reducerade system: budget, teckenregler, rader inom grundraden', () => {
         row.split('').forEach((c: string, i: number) => expect(picks[i], `${at} rad ${row} match ${i + 1}`).toContain(c));
         const n = signCount(row);
         signMinOf(name, red).forEach((m, k) => expect(n[k], `${at} rad ${row}: minst ${m} st ${SIGNS[k]}`).toBeGreaterThanOrEqual(m));
+        expect(inColorRules(p.events, picks, red.rules, row), `${at} rad ${row}: färgreglerna`).toBe(true);
       }
+      // Högst 4 spikar, rosa-regeln = antal spikar
+      const spikes = picks.filter((x) => x.length === 1).length;
+      expect(spikes, `${at}: högst ${MAX_SPIKES} spikar`).toBeLessThanOrEqual(MAX_SPIKES);
+      expect(red.rules.colorRules.pink, at).toEqual([spikes, spikes]);
       // Chanser: reducerat <= grundrad <= 1, och grundradens chans = produkt av valda tecknens sannolikhet
       expect(red.hitAll, at).toBeLessThanOrEqual(red.grundHit + 1e-9);
       expect(red.grundHit, at).toBeLessThanOrEqual(1);
@@ -167,7 +178,7 @@ test('reducerade system: utdelningsgränsen ger exakt samma rader som Gambling C
       // Omvant: ingen rad i grundraden som klarar tecken + utdelning saknas (annars skiljer GC och vi)
       const expected = grundRows(picks).filter((row) => {
         const n = signCount(row);
-        return signMinOf(name, red).every((m, k) => n[k] >= m) && inPayoutRange(r, gcPayout(r, folkProduct(p.events, row)));
+        return signMinOf(name, red).every((m, k) => n[k] >= m) && inColorRules(p.events, picks, r, row) && inPayoutRange(r, gcPayout(r, folkProduct(p.events, row)));
       });
       expect(expected.length, at).toBe(red.rows);
       expect(new Set(expected), at).toEqual(new Set(red.rowList));
@@ -187,13 +198,18 @@ test('Gambling Cabin-länk: samma grundrad, färger och regler som systemet', ()
       expect(q.get('datum'), at).toBe((p.regCloseTime || '').slice(0, 10));
       const colorId: Record<string, number> = { yellow: 2, red: 3, green: 4 };
       ['v1', 'vX', 'v2'].forEach((key, k) => {
-        const expected = p.events.map((e: any, i: number) => (picks[i].includes(SIGNS[k]) ? colorId[e.colors[k]] : 0)).join(',');
+        const expected = p.events.map((e: any, i: number) => (!picks[i].includes(SIGNS[k]) ? 0 : picks[i].length === 1 ? 5 : colorId[e.colors[k]])).join(',');
         expect(q.get(key), `${at} ${key}`).toBe(expected);
       });
       const [m1, mx, m2] = signMinOf(name, red);
       expect(q.get('antT'), at).toBe(`1,${m1},13,${mx},13,${m2},13`);
       expect(q.get('utd'), at).toBe(`1,${red.rules.payoutMin},${red.rules.payoutMax ?? 100000000}`);
-      for (const c of ['yellow', 'red', 'green', 'pink']) expect(q.get(c), at).toBe('0,0,13');
+      // Färgreglerna är aktiva med systemets min/max, aldrig 0-13
+      for (const c of ['yellow', 'red', 'green', 'pink']) {
+        const [lo, hi] = red.rules.colorRules[c];
+        expect(q.get(c), `${at} ${c}`).toBe(`1,${lo},${hi}`);
+        expect(lo > 0 || hi < 13, `${at} ${c}: inte 0-13`).toBe(true);
+      }
     }
   }
 });
