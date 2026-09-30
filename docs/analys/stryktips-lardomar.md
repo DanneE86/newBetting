@@ -444,6 +444,8 @@ Nettot styrs av enstaka träffar: A:s plus kommer från en enda rad med 12 rätt
 
 ## Ändringslogg
 
+- **2026-09-30 (sent):** Färgreglerna har minsta bredd 2 (t.ex. röd 1–3), användarens beslut: bredd 1 var för snäv i Gambling Cabin. Backtest: Stryktipset (yttre band, röd max 4) −8 373 kr mot −8 771 med bredd 1 (12+ 4 mot 3, 11+ 29 mot 34); Europatipset +8 596 mot +24 712 kr (11+ 84 mot 115). Bredd 3: −21 461 respektive −27 131, sämst i båda.
+
 - **2026-09-30 (kväll):** Färgband från rätt rad senaste året som yttre gräns för färgreglerna på Stryktipset, röda högst 4, färger över alla 13 matcher (spikar i sin färg, ingen rosa i Gambling Cabin-länken). Europatipset utan band. Backtest ovan.
 
 - **2026-09-30:** Färgregler per rad (grön/gul/röd, minsta bredd 1, optimeras mot chans till 13 rätt) och rosa = antal spikar i Gambling Cabin-länken. Högst 4 spikar per kupong. Favoriten i en gardering finns på minst 10 % av raderna. Backtest av bredder ovan. Budgetbaktestet är omkört med nya motorn.

@@ -28,8 +28,8 @@ const RED_MAX_SHARE = 0.85;
 // Favoriten i en gardering får aldrig ligga på under 10 % av raderna, t.ex. X på 90 % (användarens regel 2026-09-30).
 // Gäller tillsammans med skrällgränsen och släpps samtidigt som den.
 const FAV_MIN_SHARE = 0.1;
-// Minsta bredd max - min per färg (1 = t.ex. 2–3 eller 1–2), så att systemet inte låser ett exakt antal. Backtest 2026-09-30: 1 bäst.
-const COLOR_WIDTH = 1;
+// Minsta bredd max - min per färg (2 = t.ex. 1–3 eller 5–7; användaren 2026-09-30: bredd 1 var för snäv).
+const COLOR_WIDTH = 2;
 // Högst 4 spikar per kupong (användarens regel 2026-09-30). Låser användaren fler spikar gäller deras krav.
 const MAX_SPIKES = 4;
 // Färgregler (antal gröna/gula/röda tecken per rad, alla 13 matcher) är aldrig 0–13 (användarens regel 2026-09-30).

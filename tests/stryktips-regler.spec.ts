@@ -169,11 +169,11 @@ test('reducerade system: budget, teckenregler, rader inom grundraden', () => {
         const share = red.rowList.filter((r: string) => r[i] === fav).length / red.rows;
         expect(share, `${at} match ${i + 1}: favoriten ${fav} på minst 10 %`).toBeGreaterThanOrEqual(0.1);
       });
-      // Färgreglerna är minst 1 bred där spannet tillåter (inte ett exakt antal)
+      // Färgreglerna är minst 2 breda där spannet tillåter (t.ex. 1-3, inte ett exakt antal)
       for (const c of ['green', 'yellow', 'red']) {
         const [lo, hi] = red.rules.colorRules[c];
         const counts = red.rowList.map((r: string) => colorCount(p.events, picks, r, c));
-        if (Math.max(...counts) > Math.min(...counts)) expect(hi - lo, `${at} ${c}: inte exakt antal`).toBeGreaterThanOrEqual(1);
+        expect(hi - lo, `${at} ${c}: minst 3 olika antal där raderna tillåter`).toBeGreaterThanOrEqual(Math.min(2, Math.max(...counts) - Math.min(...counts)));
       }
       // Chanser: reducerat <= grundrad <= 1, och grundradens chans = produkt av valda tecknens sannolikhet
       expect(red.hitAll, at).toBeLessThanOrEqual(red.grundHit + 1e-9);
