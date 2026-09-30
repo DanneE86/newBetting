@@ -7,7 +7,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { root } from './lib/learnings-data.mjs';
 import { nameScore } from './lib/match-context.mjs';
-import { TM_LEAGUE, tmClubs, tmSquad, tmSearchPlayer } from './lib/transfermarkt.mjs';
+import { TM_LEAGUE, TM_TEAM_ID, tmClubs, tmSquad, tmSearchPlayer } from './lib/transfermarkt.mjs';
 
 const DIR_SQ = path.join(root, 'data', 'trupper');
 const EXCL = path.join(DIR_SQ, '_uteslutna.json');
@@ -32,8 +32,13 @@ const sameClub = (tmClub, names) => names.some((n) => clubScore(foldClub(tmClub)
 const unknownClub = (c) => !c || /^-+$/.test(c.trim());
 
 // Vara lag -> Transfermarkt-klubbar: forst sakra namnlikheter, sedan de som blir over parvis efter basta likhet
-function pairClubs(teams, clubs) {
+function pairClubs(code, teams, clubs) {
   const out = new Map(), used = new Set();
+  // Fasta id galler aven nar klubben saknas i Transfermarkts ligalista (inaktuell efter upp-/nedflyttning)
+  for (const [team] of teams) {
+    const id = TM_TEAM_ID[`${code}|${team}`];
+    if (id) { out.set(team, clubs.find((c) => c.id === id) ?? { id, name: team }); used.add(id); }
+  }
   const cand = [];
   for (const [team, x] of teams) for (const c of clubs) cand.push({ team, c, s: Math.max(clubScore(team, c.name), clubScore(x.fotmobName, c.name)) });
   cand.sort((a, b) => b.s - a.s);
@@ -55,9 +60,11 @@ for (const code of Object.keys(TM_LEAGUE)) {
   const teams = Object.entries(sq.teams).filter(([, x]) => x.source !== 'Transfermarkt');
   const clubs = await tmClubs(code);
   if (!clubs.length) { console.warn(`${code}: ingen klubblista hos Transfermarkt`); continue; }
-  const pair = pairClubs(teams, clubs);
-  // Ligans tidigare uteslutningar ersatts av denna kontroll
-  for (const k of Object.keys(excl.players)) if (k.startsWith(`${code}|`)) delete excl.players[k];
+  const pair = pairClubs(code, teams, clubs);
+  // Ligans tidigare uteslutningar ersatts av denna kontroll, utom for spelare som redan ar bortfiltrerade ur
+  // truppfilen (de kontrolleras inte nu och skulle annars komma tillbaka vid nasta FotMob-hamtning)
+  const present = new Set(teams.flatMap(([team, x]) => x.players.map((p) => `${code}|${team}|${p.id}`)));
+  for (const k of Object.keys(excl.players)) if (present.has(k)) delete excl.players[k];
   let checked = 0, removed = 0;
   for (const [team, x] of teams) {
     const club = pair.get(team);
@@ -66,7 +73,8 @@ for (const code of Object.keys(TM_LEAGUE)) {
     const tm = await tmSquad(club.id, { coach: false });
     if (!tm) { console.warn(`  ${team}: tom trupp hos Transfermarkt (${club.name})`); continue; }
     checked++;
-    const missing = x.players.filter((p) => !tm.players.some((t) => sameName(p.name, t.name)));
+    // Samma fodelsedag = samma spelare trots annat namn (FotMob "Benjamin Hansen", TM "Benjamin Tiedemann")
+    const missing = x.players.filter((p) => !tm.players.some((t) => sameName(p.name, t.name) || (p.born && p.born === t.born)));
     const out = [];
     for (const p of missing) {
       await sleep(900);

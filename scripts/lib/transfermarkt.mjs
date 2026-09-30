@@ -16,6 +16,14 @@ export const TM_LEAGUE = {
   MLS: 'MLS1', MX: 'MEXA', BR: 'BRA1', BR2: 'BRA2', AR: 'AR1N', COL: 'COLP', CZ: 'TS1', HR: 'KR1',
 };
 for (const [code, comp] of Object.entries(TM_LEAGUE)) TM_COMP[code] ??= { comp };
+// Lag vars namn inte liknar Transfermarkts ("liga|vart lagnamn" -> klubb-id)
+export const TM_TEAM_ID = {
+  'DK2|AaB': '1053', // Aalborg BK
+  'DK2|AB Gladsaxe': '362', // Akademisk Boldklub
+  'AR|Gimnasia Mendoza': '14687', // Gimnasia y Esgrima de Mendoza (saknas i TM:s AR1N-lista)
+  'AR|Aldosivi': '12301', // CA Aldosivi (saknas i TM:s AR1N-lista)
+  'AR|Estudiantes Rio Cuarto': '14602', // AA Estudiantes (saknas i TM:s AR1N-lista)
+};
 
 async function getHtml(url) {
   for (let i = 0; i < 3; i++) {
