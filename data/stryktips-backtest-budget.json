@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T16:08:26.664Z",
+  "generatedAt": "2026-09-30T16:20:17.045Z",
   "summary": {
     "product": "stryktipset",
     "from": "2025-08-16",
@@ -9,24 +9,24 @@
     "modelWeight": 0.1,
     "seasons": "2627,2526,2425",
     "A": {
-      "cost": 14224,
-      "winnings": 5807,
+      "cost": 14251,
+      "winnings": 6801,
       "best": [
         9,
-        9,
-        10,
-        6,
-        6,
-        8,
-        8,
         8,
         10,
-        9,
+        6,
+        8,
+        8,
+        8,
         8,
         10,
-        7,
-        6,
         9,
+        8,
+        6,
+        8,
+        6,
+        6,
         10,
         11,
         9,
@@ -37,56 +37,56 @@
         9,
         7,
         7,
+        11,
         10,
         8,
         8,
         8,
-        8,
-        8,
+        7,
         11,
         6,
-        7,
+        6,
         8,
         7,
         10,
         7
       ],
       "spik": {
-        "n": 117,
-        "lost": 52
+        "n": 103,
+        "lost": 48
       },
-      "net": -8417,
+      "net": -7450,
       "quality": {
-        "rows": 14224,
-        "ge9": 361,
-        "ge10": 90,
-        "ge11": 11,
-        "meanCorrect": 5.116,
-        "xCovered": 70,
+        "rows": 14251,
+        "ge9": 399,
+        "ge10": 101,
+        "ge11": 18,
+        "meanCorrect": 5.012,
+        "xCovered": 72,
         "xTotal": 130
       }
     },
     "B": {
-      "cost": 14089,
-      "winnings": 14133,
+      "cost": 14151,
+      "winnings": 5447,
       "best": [
         8,
-        9,
+        8,
         10,
         7,
-        7,
-        9,
+        8,
+        8,
         8,
         9,
         11,
         10,
-        8,
-        9,
         8,
         6,
+        9,
+        6,
+        6,
         10,
-        10,
-        12,
+        11,
         9,
         8,
         8,
@@ -96,11 +96,11 @@
         8,
         8,
         11,
+        10,
         9,
         9,
         9,
-        9,
-        9,
+        7,
         10,
         7,
         6,
@@ -110,17 +110,17 @@
         8
       ],
       "spik": {
-        "n": 117,
-        "lost": 52
+        "n": 103,
+        "lost": 48
       },
-      "net": 44,
+      "net": -8704,
       "quality": {
-        "rows": 14089,
-        "ge9": 502,
-        "ge10": 110,
-        "ge11": 18,
-        "meanCorrect": 5.256,
-        "xCovered": 70,
+        "rows": 14151,
+        "ge9": 454,
+        "ge10": 101,
+        "ge11": 11,
+        "meanCorrect": 5.108,
+        "xCovered": 72,
         "xTotal": 130
       }
     },
@@ -288,8 +288,8 @@
       "colorA": {
         "rules": {
           "green": [
-            6,
-            8
+            2,
+            4
           ],
           "yellow": [
             4,
@@ -298,6 +298,10 @@
           "red": [
             0,
             2
+          ],
+          "pink": [
+            4,
+            4
           ]
         },
         "count": {
@@ -311,8 +315,8 @@
       "colorB": {
         "rules": {
           "green": [
-            6,
-            8
+            2,
+            4
           ],
           "yellow": [
             4,
@@ -321,6 +325,10 @@
           "red": [
             0,
             2
+          ],
+          "pink": [
+            4,
+            4
           ]
         },
         "count": {
@@ -869,63 +877,68 @@
         "winners": 1
       },
       "A": {
-        "rows": 378,
-        "cost": 378,
-        "grund": 5832,
-        "payoutMin": 48200,
-        "hit": 0.002416232462053754,
-        "er": 160.96778478934135,
-        "best": 9,
+        "rows": 364,
+        "cost": 364,
+        "grund": 4608,
+        "payoutMin": 337000,
+        "hit": 0.0007196490070627886,
+        "er": 365.36455380743087,
+        "best": 8,
         "perClass": {
-          "2": 1,
-          "3": 36,
-          "4": 100,
-          "5": 116,
-          "6": 69,
-          "7": 39,
-          "8": 14,
-          "9": 3
+          "1": 3,
+          "2": 27,
+          "3": 59,
+          "4": 98,
+          "5": 105,
+          "6": 55,
+          "7": 15,
+          "8": 2
         },
         "winnings": 0,
-        "net": -378,
-        "groundCorrect": 10
+        "net": -364,
+        "groundCorrect": 9
       },
       "B": {
-        "rows": 371,
-        "cost": 371,
-        "grund": 5832,
-        "payoutMin": 34300,
-        "hit": 0.0028938878982597708,
-        "er": 115.19405041041844,
-        "union": 0.005310120360313525,
+        "rows": 383,
+        "cost": 383,
+        "grund": 4608,
+        "payoutMin": 191500,
+        "hit": 0.0010940977740340717,
+        "er": 270.3301463277497,
+        "union": 0.0018137467810968601,
         "overlap": 0,
-        "best": 9,
+        "best": 8,
         "perClass": {
-          "2": 6,
-          "3": 51,
-          "4": 69,
-          "5": 98,
-          "6": 77,
-          "7": 52,
-          "8": 15,
-          "9": 3
+          "0": 1,
+          "1": 17,
+          "2": 48,
+          "3": 77,
+          "4": 112,
+          "5": 73,
+          "6": 36,
+          "7": 15,
+          "8": 4
         },
         "winnings": 0,
-        "net": -371,
-        "groundCorrect": 10
+        "net": -383,
+        "groundCorrect": 9
       },
       "colorA": {
         "rules": {
           "green": [
-            6,
-            8
+            1,
+            5
           ],
           "yellow": [
-            3,
-            6
+            4,
+            8
           ],
           "red": [
-            0,
+            1,
+            3
+          ],
+          "pink": [
+            2,
             2
           ]
         },
@@ -934,21 +947,25 @@
           "yellow": 7,
           "red": 3
         },
-        "fits": false,
+        "fits": true,
         "ok": null
       },
       "colorB": {
         "rules": {
           "green": [
-            6,
-            8
+            1,
+            5
           ],
           "yellow": [
-            3,
-            6
+            4,
+            8
           ],
           "red": [
-            0,
+            1,
+            3
+          ],
+          "pink": [
+            2,
             2
           ]
         },
@@ -957,12 +974,12 @@
           "yellow": 7,
           "red": 3
         },
-        "fits": false,
+        "fits": true,
         "ok": null
       },
-      "pairBest": 9,
-      "grundA": 10,
-      "grundB": 10,
+      "pairBest": 8,
+      "grundA": 9,
+      "grundB": 9,
       "matches": [
         {
           "n": 1,
@@ -993,8 +1010,8 @@
           ],
           "pOutcome": 0.582,
           "folkOutcome": 0.72,
-          "pickA": "2",
-          "pickB": "2",
+          "pickA": "X2",
+          "pickB": "X2",
           "inA": true,
           "inB": true,
           "ll": {
@@ -1033,10 +1050,10 @@
           ],
           "pOutcome": 0.263,
           "folkOutcome": 0.28,
-          "pickA": "1X2",
-          "pickB": "1X2",
-          "inA": true,
-          "inB": true,
+          "pickA": "12",
+          "pickB": "12",
+          "inA": false,
+          "inB": false,
           "ll": {
             "final": 1.336,
             "market": 1.347,
@@ -1193,8 +1210,8 @@
           ],
           "pOutcome": 0.296,
           "folkOutcome": 0.24,
-          "pickA": "1X2",
-          "pickB": "1X2",
+          "pickA": "12",
+          "pickB": "12",
           "inA": true,
           "inB": true,
           "ll": {
@@ -1393,8 +1410,8 @@
           ],
           "pOutcome": 0.343,
           "folkOutcome": 0.25,
-          "pickA": "1X2",
-          "pickB": "1X2",
+          "pickA": "12",
+          "pickB": "12",
           "inA": true,
           "inB": true,
           "ll": {
@@ -1433,8 +1450,8 @@
           ],
           "pOutcome": 0.564,
           "folkOutcome": 0.67,
-          "pickA": "1",
-          "pickB": "1",
+          "pickA": "1X",
+          "pickB": "1X",
           "inA": true,
           "inB": true,
           "ll": {
@@ -1473,8 +1490,8 @@
           ],
           "pOutcome": 0.303,
           "folkOutcome": 0.25,
-          "pickA": "1X2",
-          "pickB": "1X2",
+          "pickA": "12",
+          "pickB": "12",
           "inA": true,
           "inB": true,
           "ll": {
@@ -1548,8 +1565,8 @@
       "colorA": {
         "rules": {
           "green": [
-            5,
-            8
+            1,
+            4
           ],
           "yellow": [
             5,
@@ -1558,6 +1575,10 @@
           "red": [
             0,
             0
+          ],
+          "pink": [
+            4,
+            4
           ]
         },
         "count": {
@@ -1571,8 +1592,8 @@
       "colorB": {
         "rules": {
           "green": [
-            5,
-            8
+            1,
+            4
           ],
           "yellow": [
             5,
@@ -1581,6 +1602,10 @@
           "red": [
             0,
             0
+          ],
+          "pink": [
+            4,
+            4
           ]
         },
         "count": {
@@ -2129,62 +2154,67 @@
         "winners": 22
       },
       "A": {
-        "rows": 389,
-        "cost": 389,
+        "rows": 366,
+        "cost": 366,
         "grund": 4608,
-        "payoutMin": 127000,
-        "hit": 0.0009966616060388014,
-        "er": 217.6144086447173,
+        "payoutMin": 272000,
+        "hit": 0.0006711366050792252,
+        "er": 272.5151228541545,
         "best": 6,
         "perClass": {
-          "0": 9,
-          "1": 43,
-          "2": 97,
-          "3": 121,
-          "4": 83,
-          "5": 31,
-          "6": 5
+          "0": 11,
+          "1": 40,
+          "2": 96,
+          "3": 107,
+          "4": 78,
+          "5": 25,
+          "6": 9
         },
         "winnings": 0,
-        "net": -389,
+        "net": -366,
         "groundCorrect": 9
       },
       "B": {
-        "rows": 358,
-        "cost": 358,
+        "rows": 368,
+        "cost": 368,
         "grund": 4608,
-        "payoutMin": 47360,
-        "hit": 0.0014299302873705614,
-        "er": 107.11999507897487,
-        "union": 0.0024265918934093626,
+        "payoutMin": 135000,
+        "hit": 0.0009613231757581928,
+        "er": 171.37951174340697,
+        "union": 0.001632459780837418,
         "overlap": 0,
         "best": 7,
         "perClass": {
-          "1": 10,
-          "2": 47,
-          "3": 93,
-          "4": 105,
-          "5": 74,
-          "6": 24,
-          "7": 5
+          "0": 1,
+          "1": 20,
+          "2": 59,
+          "3": 103,
+          "4": 103,
+          "5": 62,
+          "6": 18,
+          "7": 2
         },
         "winnings": 0,
-        "net": -358,
+        "net": -368,
         "groundCorrect": 9
       },
       "colorA": {
         "rules": {
           "green": [
-            5,
-            9
-          ],
-          "yellow": [
             3,
             6
+          ],
+          "yellow": [
+            4,
+            8
           ],
           "red": [
             0,
             1
+          ],
+          "pink": [
+            2,
+            2
           ]
         },
         "count": {
@@ -2198,16 +2228,20 @@
       "colorB": {
         "rules": {
           "green": [
-            5,
-            9
-          ],
-          "yellow": [
             3,
             6
+          ],
+          "yellow": [
+            4,
+            8
           ],
           "red": [
             0,
             1
+          ],
+          "pink": [
+            2,
+            2
           ]
         },
         "count": {
@@ -2756,61 +2790,67 @@
         "winners": 4
       },
       "A": {
-        "rows": 391,
-        "cost": 391,
-        "grund": 2304,
-        "payoutMin": 65500,
-        "hit": 0.0012330053156484973,
-        "er": 142.08276243161941,
-        "best": 6,
+        "rows": 379,
+        "cost": 379,
+        "grund": 2048,
+        "payoutMin": 117800,
+        "hit": 0.000849965524675897,
+        "er": 173.48755358316293,
+        "best": 8,
         "perClass": {
-          "1": 19,
-          "2": 72,
-          "3": 124,
-          "4": 114,
-          "5": 53,
-          "6": 9
+          "2": 17,
+          "3": 59,
+          "4": 106,
+          "5": 106,
+          "6": 66,
+          "7": 23,
+          "8": 2
         },
         "winnings": 0,
-        "net": -391,
-        "groundCorrect": 7
+        "net": -379,
+        "groundCorrect": 8
       },
       "B": {
-        "rows": 378,
-        "cost": 378,
-        "grund": 2304,
-        "payoutMin": 37100,
-        "hit": 0.0017097446191055667,
-        "er": 84.59453866992878,
-        "union": 0.002942749934754064,
+        "rows": 373,
+        "cost": 373,
+        "grund": 2048,
+        "payoutMin": 53000,
+        "hit": 0.0013077396596092544,
+        "er": 102.47993432289255,
+        "union": 0.0021577051842851516,
         "overlap": 0,
-        "best": 7,
+        "best": 8,
         "perClass": {
-          "1": 17,
-          "2": 56,
-          "3": 104,
-          "4": 113,
-          "5": 65,
-          "6": 20,
-          "7": 3
+          "1": 4,
+          "2": 22,
+          "3": 63,
+          "4": 97,
+          "5": 97,
+          "6": 63,
+          "7": 23,
+          "8": 4
         },
         "winnings": 0,
-        "net": -378,
-        "groundCorrect": 7
+        "net": -373,
+        "groundCorrect": 8
       },
       "colorA": {
         "rules": {
           "green": [
-            4,
-            6
+            1,
+            5
           ],
           "yellow": [
-            5,
-            7
+            4,
+            8
           ],
           "red": [
             1,
             3
+          ],
+          "pink": [
+            2,
+            2
           ]
         },
         "count": {
@@ -2818,22 +2858,26 @@
           "yellow": 8,
           "red": 2
         },
-        "fits": false,
+        "fits": true,
         "ok": null
       },
       "colorB": {
         "rules": {
           "green": [
-            4,
-            6
+            1,
+            5
           ],
           "yellow": [
-            5,
-            7
+            4,
+            8
           ],
           "red": [
             1,
             3
+          ],
+          "pink": [
+            2,
+            2
           ]
         },
         "count": {
@@ -2841,12 +2885,12 @@
           "yellow": 8,
           "red": 2
         },
-        "fits": false,
+        "fits": true,
         "ok": null
       },
-      "pairBest": 7,
-      "grundA": 7,
-      "grundB": 7,
+      "pairBest": 8,
+      "grundA": 8,
+      "grundB": 8,
       "matches": [
         {
           "n": 1,
@@ -2957,8 +3001,8 @@
           ],
           "pOutcome": 0.335,
           "folkOutcome": 0.35,
-          "pickA": "1X2",
-          "pickB": "1X2",
+          "pickA": "12",
+          "pickB": "12",
           "inA": true,
           "inB": true,
           "ll": {
@@ -2997,8 +3041,8 @@
           ],
           "pOutcome": 0.322,
           "folkOutcome": 0.29,
-          "pickA": "1X2",
-          "pickB": "1X2",
+          "pickA": "12",
+          "pickB": "12",
           "inA": true,
           "inB": true,
           "ll": {
@@ -3317,10 +3361,10 @@
           ],
           "pOutcome": 0.255,
           "folkOutcome": 0.21,
-          "pickA": "1",
-          "pickB": "1",
-          "inA": false,
-          "inB": false,
+          "pickA": "1X",
+          "pickB": "1X",
+          "inA": true,
+          "inB": true,
           "ll": {
             "final": 1.366,
             "market": 1.366,
@@ -3382,67 +3426,70 @@
         "winners": 6
       },
       "A": {
-        "rows": 379,
-        "cost": 379,
-        "grund": 8192,
-        "payoutMin": 546000,
-        "hit": 0.00025948041494354006,
-        "er": 189.74199533657142,
+        "rows": 373,
+        "cost": 373,
+        "grund": 3072,
+        "payoutMin": 140200,
+        "hit": 0.0006761511502115384,
+        "er": 160.37310361794306,
         "best": 8,
         "perClass": {
           "0": 1,
-          "1": 7,
-          "2": 25,
-          "3": 73,
-          "4": 96,
-          "5": 94,
-          "6": 60,
-          "7": 19,
-          "8": 4
+          "1": 11,
+          "2": 37,
+          "3": 85,
+          "4": 107,
+          "5": 84,
+          "6": 38,
+          "7": 9,
+          "8": 1
         },
         "winnings": 0,
-        "net": -379,
+        "net": -373,
         "groundCorrect": 9
       },
       "B": {
-        "rows": 369,
-        "cost": 369,
-        "grund": 8192,
-        "payoutMin": 372000,
-        "hit": 0.000361033568510436,
-        "er": 161.90264549065802,
-        "union": 0.0006205139834539761,
+        "rows": 377,
+        "cost": 377,
+        "grund": 3072,
+        "payoutMin": 62773,
+        "hit": 0.001304071053350653,
+        "er": 123.81587122326896,
+        "union": 0.0019802222035621916,
         "overlap": 0,
-        "best": 9,
+        "best": 8,
         "perClass": {
           "0": 1,
-          "1": 4,
-          "2": 29,
-          "3": 65,
-          "4": 91,
-          "5": 93,
-          "6": 54,
-          "7": 23,
-          "8": 7,
-          "9": 2
+          "1": 12,
+          "2": 47,
+          "3": 85,
+          "4": 96,
+          "5": 74,
+          "6": 44,
+          "7": 15,
+          "8": 3
         },
         "winnings": 0,
-        "net": -369,
+        "net": -377,
         "groundCorrect": 9
       },
       "colorA": {
         "rules": {
           "green": [
-            4,
-            6
+            1,
+            5
           ],
           "yellow": [
             4,
-            6
+            8
           ],
           "red": [
+            1,
+            3
+          ],
+          "pink": [
             2,
-            4
+            2
           ]
         },
         "count": {
@@ -3450,22 +3497,26 @@
           "yellow": 7,
           "red": 2
         },
-        "fits": false,
+        "fits": true,
         "ok": null
       },
       "colorB": {
         "rules": {
           "green": [
-            4,
-            6
+            1,
+            5
           ],
           "yellow": [
             4,
-            6
+            8
           ],
           "red": [
+            1,
+            3
+          ],
+          "pink": [
             2,
-            4
+            2
           ]
         },
         "count": {
@@ -3473,10 +3524,10 @@
           "yellow": 7,
           "red": 2
         },
-        "fits": false,
+        "fits": true,
         "ok": null
       },
-      "pairBest": 9,
+      "pairBest": 8,
       "grundA": 9,
       "grundB": 9,
       "matches": [
@@ -3549,8 +3600,8 @@
           ],
           "pOutcome": 0.143,
           "folkOutcome": 0.1,
-          "pickA": "1X",
-          "pickB": "1X",
+          "pickA": "1",
+          "pickB": "1",
           "inA": false,
           "inB": false,
           "ll": {
@@ -3869,10 +3920,10 @@
           ],
           "pOutcome": 0.275,
           "folkOutcome": 0.28,
-          "pickA": "12",
-          "pickB": "12",
-          "inA": false,
-          "inB": false,
+          "pickA": "1X2",
+          "pickB": "1X2",
+          "inA": true,
+          "inB": true,
           "ll": {
             "final": 1.291,
             "market": 1.295,
@@ -3949,10 +4000,10 @@
           ],
           "pOutcome": 0.217,
           "folkOutcome": 0.23,
-          "pickA": "X2",
-          "pickB": "X2",
-          "inA": true,
-          "inB": true,
+          "pickA": "2",
+          "pickB": "2",
+          "inA": false,
+          "inB": false,
           "ll": {
             "final": 1.528,
             "market": 1.546,
@@ -4014,63 +4065,67 @@
         "winners": 8
       },
       "A": {
-        "rows": 372,
-        "cost": 372,
-        "grund": 2592,
-        "payoutMin": 60900,
-        "hit": 0.0014393894850155216,
-        "er": 126.11832528654035,
+        "rows": 364,
+        "cost": 364,
+        "grund": 1728,
+        "payoutMin": 64800,
+        "hit": 0.001155986097027765,
+        "er": 126.39955330193337,
         "best": 8,
         "perClass": {
-          "2": 7,
-          "3": 41,
-          "4": 103,
-          "5": 115,
-          "6": 71,
-          "7": 29,
-          "8": 6
+          "2": 8,
+          "3": 44,
+          "4": 94,
+          "5": 109,
+          "6": 74,
+          "7": 28,
+          "8": 7
+        },
+        "winnings": 0,
+        "net": -364,
+        "groundCorrect": 9
+      },
+      "B": {
+        "rows": 372,
+        "cost": 372,
+        "grund": 1728,
+        "payoutMin": 30180,
+        "hit": 0.0020953350624010095,
+        "er": 93.72418352531932,
+        "union": 0.0032513211594287746,
+        "overlap": 0,
+        "best": 8,
+        "perClass": {
+          "1": 2,
+          "2": 21,
+          "3": 66,
+          "4": 108,
+          "5": 103,
+          "6": 51,
+          "7": 18,
+          "8": 3
         },
         "winnings": 0,
         "net": -372,
         "groundCorrect": 9
       },
-      "B": {
-        "rows": 375,
-        "cost": 375,
-        "grund": 2592,
-        "payoutMin": 35400,
-        "hit": 0.0020223683189157004,
-        "er": 95.02618867817166,
-        "union": 0.003461757803931222,
-        "overlap": 0,
-        "best": 8,
-        "perClass": {
-          "1": 4,
-          "2": 27,
-          "3": 73,
-          "4": 112,
-          "5": 92,
-          "6": 50,
-          "7": 14,
-          "8": 3
-        },
-        "winnings": 0,
-        "net": -375,
-        "groundCorrect": 9
-      },
       "colorA": {
         "rules": {
           "green": [
-            6,
-            9
+            2,
+            5
           ],
           "yellow": [
             4,
-            6
+            7
           ],
           "red": [
             0,
             0
+          ],
+          "pink": [
+            4,
+            4
           ]
         },
         "count": {
@@ -4084,16 +4139,20 @@
       "colorB": {
         "rules": {
           "green": [
-            6,
-            9
+            2,
+            5
           ],
           "yellow": [
             4,
-            6
+            7
           ],
           "red": [
             0,
             0
+          ],
+          "pink": [
+            4,
+            4
           ]
         },
         "count": {
@@ -4445,8 +4504,8 @@
           ],
           "pOutcome": 0.294,
           "folkOutcome": 0.27,
-          "pickA": "1X2",
-          "pickB": "1X2",
+          "pickA": "1X",
+          "pickB": "1X",
           "inA": true,
           "inB": true,
           "ll": {
@@ -4630,62 +4689,67 @@
         "winners": 418
       },
       "A": {
-        "rows": 350,
-        "cost": 350,
+        "rows": 369,
+        "cost": 369,
         "grund": 2048,
-        "payoutMin": 63000,
-        "hit": 0.0010676332725620807,
-        "er": 119.88771933827519,
+        "payoutMin": 64700,
+        "hit": 0.0010610240917487376,
+        "er": 122.90802217830729,
         "best": 8,
         "perClass": {
-          "3": 9,
-          "4": 41,
-          "5": 95,
-          "6": 120,
+          "2": 1,
+          "3": 13,
+          "4": 52,
+          "5": 100,
+          "6": 119,
           "7": 68,
-          "8": 17
+          "8": 16
         },
         "winnings": 0,
-        "net": -350,
+        "net": -369,
         "groundCorrect": 10
       },
       "B": {
-        "rows": 350,
-        "cost": 350,
+        "rows": 367,
+        "cost": 367,
         "grund": 2048,
         "payoutMin": 30300,
-        "hit": 0.002006040299451221,
-        "er": 84.87709397024682,
-        "union": 0.0030736735720133016,
+        "hit": 0.0020667537089103668,
+        "er": 88.70081917860247,
+        "union": 0.003127777800659104,
         "overlap": 0,
         "best": 9,
         "perClass": {
           "2": 1,
-          "3": 10,
-          "4": 44,
-          "5": 84,
-          "6": 102,
+          "3": 11,
+          "4": 46,
+          "5": 94,
+          "6": 105,
           "7": 70,
-          "8": 33,
+          "8": 34,
           "9": 6
         },
         "winnings": 0,
-        "net": -350,
+        "net": -367,
         "groundCorrect": 10
       },
       "colorA": {
         "rules": {
           "green": [
-            4,
-            7
+            2,
+            5
           ],
           "yellow": [
             5,
-            8
+            9
           ],
           "red": [
             0,
             1
+          ],
+          "pink": [
+            2,
+            2
           ]
         },
         "count": {
@@ -4693,22 +4757,26 @@
           "yellow": 6,
           "red": 0
         },
-        "fits": true,
+        "fits": false,
         "ok": null
       },
       "colorB": {
         "rules": {
           "green": [
-            4,
-            7
+            2,
+            5
           ],
           "yellow": [
             5,
-            8
+            9
           ],
           "red": [
             0,
             1
+          ],
+          "pink": [
+            2,
+            2
           ]
         },
         "count": {
@@ -4716,7 +4784,7 @@
           "yellow": 6,
           "red": 0
         },
-        "fits": true,
+        "fits": false,
         "ok": null
       },
       "pairBest": 9,
@@ -5297,8 +5365,8 @@
       "colorA": {
         "rules": {
           "green": [
-            6,
-            8
+            2,
+            4
           ],
           "yellow": [
             6,
@@ -5307,6 +5375,10 @@
           "red": [
             0,
             1
+          ],
+          "pink": [
+            4,
+            4
           ]
         },
         "count": {
@@ -5314,14 +5386,14 @@
           "yellow": 7,
           "red": 0
         },
-        "fits": true,
+        "fits": false,
         "ok": null
       },
       "colorB": {
         "rules": {
           "green": [
-            6,
-            8
+            2,
+            4
           ],
           "yellow": [
             6,
@@ -5330,6 +5402,10 @@
           "red": [
             0,
             1
+          ],
+          "pink": [
+            4,
+            4
           ]
         },
         "count": {
@@ -5337,7 +5413,7 @@
           "yellow": 7,
           "red": 0
         },
-        "fits": true,
+        "fits": false,
         "ok": null
       },
       "pairBest": 11,
@@ -5925,8 +6001,8 @@
       "colorA": {
         "rules": {
           "green": [
-            4,
-            6
+            0,
+            2
           ],
           "yellow": [
             6,
@@ -5935,6 +6011,10 @@
           "red": [
             0,
             0
+          ],
+          "pink": [
+            4,
+            4
           ]
         },
         "count": {
@@ -5948,8 +6028,8 @@
       "colorB": {
         "rules": {
           "green": [
-            4,
-            6
+            0,
+            2
           ],
           "yellow": [
             6,
@@ -5958,6 +6038,10 @@
           "red": [
             0,
             0
+          ],
+          "pink": [
+            4,
+            4
           ]
         },
         "count": {
@@ -6527,40 +6611,44 @@
         "groundCorrect": 10
       },
       "B": {
-        "rows": 357,
-        "cost": 357,
+        "rows": 355,
+        "cost": 355,
         "grund": 2048,
         "payoutMin": 32130,
-        "hit": 0.0012212805220410605,
-        "er": 68.35459057602273,
-        "union": 0.001950484220797048,
+        "hit": 0.0012106862088272685,
+        "er": 67.99615368385372,
+        "union": 0.0019398899075832561,
         "overlap": 0,
         "best": 8,
         "perClass": {
           "2": 2,
           "3": 22,
-          "4": 79,
-          "5": 120,
+          "4": 78,
+          "5": 119,
           "6": 95,
           "7": 35,
           "8": 4
         },
         "winnings": 0,
-        "net": -357,
+        "net": -355,
         "groundCorrect": 10
       },
       "colorA": {
         "rules": {
           "green": [
-            3,
-            8
+            1,
+            5
           ],
           "yellow": [
-            3,
+            4,
             8
           ],
           "red": [
             1,
+            3
+          ],
+          "pink": [
+            2,
             2
           ]
         },
@@ -6575,15 +6663,19 @@
       "colorB": {
         "rules": {
           "green": [
-            3,
-            8
+            1,
+            5
           ],
           "yellow": [
-            3,
+            4,
             8
           ],
           "red": [
             1,
+            3
+          ],
+          "pink": [
+            2,
             2
           ]
         },
@@ -7133,63 +7225,66 @@
         "winners": 19
       },
       "A": {
-        "rows": 374,
-        "cost": 374,
-        "grund": 1728,
-        "payoutMin": 62500,
-        "hit": 0.001493777009558017,
-        "er": 140.68555027108675,
-        "best": 10,
+        "rows": 400,
+        "cost": 400,
+        "grund": 4096,
+        "payoutMin": 466000,
+        "hit": 0.00032222604454184553,
+        "er": 243.95116523323748,
+        "best": 6,
         "perClass": {
-          "3": 6,
-          "4": 34,
-          "5": 91,
-          "6": 110,
-          "7": 90,
-          "8": 34,
-          "9": 8,
-          "10": 1
-        },
-        "winnings": 77,
-        "net": -297,
-        "groundCorrect": 10
-      },
-      "B": {
-        "rows": 373,
-        "cost": 373,
-        "grund": 1728,
-        "payoutMin": 32000,
-        "hit": 0.0026385779429231393,
-        "er": 110.38495239819035,
-        "union": 0.004132354952481156,
-        "overlap": 0,
-        "best": 9,
-        "perClass": {
-          "3": 10,
-          "4": 50,
-          "5": 90,
-          "6": 114,
-          "7": 65,
-          "8": 37,
-          "9": 7
+          "0": 12,
+          "1": 56,
+          "2": 108,
+          "3": 124,
+          "4": 76,
+          "5": 23,
+          "6": 1
         },
         "winnings": 0,
-        "net": -373,
-        "groundCorrect": 10
+        "net": -400,
+        "groundCorrect": 8
+      },
+      "B": {
+        "rows": 350,
+        "cost": 350,
+        "grund": 4096,
+        "payoutMin": 256000,
+        "hit": 0.0005289123543915201,
+        "er": 170.31259133794353,
+        "union": 0.0008511383989333657,
+        "overlap": 0,
+        "best": 6,
+        "perClass": {
+          "0": 2,
+          "1": 21,
+          "2": 72,
+          "3": 107,
+          "4": 95,
+          "5": 44,
+          "6": 9
+        },
+        "winnings": 0,
+        "net": -350,
+        "groundCorrect": 8
       },
       "colorA": {
         "rules": {
           "green": [
-            5,
-            7
+            2,
+            6
           ],
           "yellow": [
-            6,
+            4,
             8
           ],
           "red": [
-            0,
-            0
+            1,
+            3
+          ],
+          "pink": [
+            1,
+            1
           ]
         },
         "count": {
@@ -7197,22 +7292,26 @@
           "yellow": 5,
           "red": 2
         },
-        "fits": false,
+        "fits": true,
         "ok": null
       },
       "colorB": {
         "rules": {
           "green": [
-            5,
-            7
+            2,
+            6
           ],
           "yellow": [
-            6,
+            4,
             8
           ],
           "red": [
-            0,
-            0
+            1,
+            3
+          ],
+          "pink": [
+            1,
+            1
           ]
         },
         "count": {
@@ -7220,12 +7319,12 @@
           "yellow": 5,
           "red": 2
         },
-        "fits": false,
+        "fits": true,
         "ok": null
       },
-      "pairBest": 10,
-      "grundA": 10,
-      "grundB": 10,
+      "pairBest": 6,
+      "grundA": 8,
+      "grundB": 8,
       "matches": [
         {
           "n": 1,
@@ -7256,8 +7355,8 @@
           ],
           "pOutcome": 0.552,
           "folkOutcome": 0.62,
-          "pickA": "1",
-          "pickB": "1",
+          "pickA": "1X",
+          "pickB": "1X",
           "inA": true,
           "inB": true,
           "ll": {
@@ -7336,8 +7435,8 @@
           ],
           "pOutcome": 0.583,
           "folkOutcome": 0.7,
-          "pickA": "2",
-          "pickB": "2",
+          "pickA": "X2",
+          "pickB": "X2",
           "inA": true,
           "inB": true,
           "ll": {
@@ -7376,10 +7475,10 @@
           ],
           "pOutcome": 0.291,
           "folkOutcome": 0.23,
-          "pickA": "1X2",
-          "pickB": "1X2",
-          "inA": true,
-          "inB": true,
+          "pickA": "1X",
+          "pickB": "1X",
+          "inA": false,
+          "inB": false,
           "ll": {
             "final": 1.234,
             "market": 1.234,
@@ -7496,8 +7595,8 @@
           ],
           "pOutcome": 0.389,
           "folkOutcome": 0.45,
-          "pickA": "1X2",
-          "pickB": "1X2",
+          "pickA": "12",
+          "pickB": "12",
           "inA": true,
           "inB": true,
           "ll": {
@@ -7576,8 +7675,8 @@
           ],
           "pOutcome": 0.572,
           "folkOutcome": 0.7,
-          "pickA": "1",
-          "pickB": "1",
+          "pickA": "1X",
+          "pickB": "1X",
           "inA": true,
           "inB": true,
           "ll": {
@@ -7616,10 +7715,10 @@
           ],
           "pOutcome": 0.292,
           "folkOutcome": 0.28,
-          "pickA": "1X2",
-          "pickB": "1X2",
-          "inA": true,
-          "inB": true,
+          "pickA": "12",
+          "pickB": "12",
+          "inA": false,
+          "inB": false,
           "ll": {
             "final": 1.231,
             "market": 1.245,
@@ -7761,61 +7860,66 @@
         "winners": 159
       },
       "A": {
-        "rows": 376,
-        "cost": 376,
-        "grund": 3456,
-        "payoutMin": 82300,
-        "hit": 0.0010089526709180147,
-        "er": 119.10537093692449,
-        "best": 7,
+        "rows": 378,
+        "cost": 378,
+        "grund": 2048,
+        "payoutMin": 99500,
+        "hit": 0.0007519333402067267,
+        "er": 143.84799062866347,
+        "best": 8,
         "perClass": {
-          "2": 15,
-          "3": 33,
-          "4": 121,
+          "2": 4,
+          "3": 21,
+          "4": 60,
           "5": 103,
-          "6": 86,
-          "7": 18
+          "6": 107,
+          "7": 64,
+          "8": 19
         },
         "winnings": 0,
-        "net": -376,
+        "net": -378,
         "groundCorrect": 10
       },
       "B": {
-        "rows": 373,
-        "cost": 373,
-        "grund": 3456,
-        "payoutMin": 50900,
-        "hit": 0.0012986717282032537,
-        "er": 83.26888095239673,
-        "union": 0.0023076243991212685,
+        "rows": 389,
+        "cost": 389,
+        "grund": 2048,
+        "payoutMin": 34500,
+        "hit": 0.0013469941690264892,
+        "er": 80.99750232364192,
+        "union": 0.002098927509233216,
         "overlap": 0,
-        "best": 8,
+        "best": 9,
         "perClass": {
-          "2": 12,
-          "3": 34,
-          "4": 55,
-          "5": 111,
-          "6": 81,
-          "7": 73,
-          "8": 7
+          "3": 9,
+          "4": 36,
+          "5": 74,
+          "6": 108,
+          "7": 93,
+          "8": 52,
+          "9": 17
         },
         "winnings": 0,
-        "net": -373,
+        "net": -389,
         "groundCorrect": 10
       },
       "colorA": {
         "rules": {
           "green": [
-            5,
-            7
+            1,
+            5
           ],
           "yellow": [
-            5,
+            4,
             8
           ],
           "red": [
-            0,
-            1
+            1,
+            3
+          ],
+          "pink": [
+            2,
+            2
           ]
         },
         "count": {
@@ -7823,22 +7927,26 @@
           "yellow": 6,
           "red": 1
         },
-        "fits": true,
+        "fits": false,
         "ok": null
       },
       "colorB": {
         "rules": {
           "green": [
-            5,
-            7
+            1,
+            5
           ],
           "yellow": [
-            5,
+            4,
             8
           ],
           "red": [
-            0,
-            1
+            1,
+            3
+          ],
+          "pink": [
+            2,
+            2
           ]
         },
         "count": {
@@ -7846,10 +7954,10 @@
           "yellow": 6,
           "red": 1
         },
-        "fits": true,
+        "fits": false,
         "ok": null
       },
-      "pairBest": 8,
+      "pairBest": 9,
       "grundA": 10,
       "grundB": 10,
       "matches": [
@@ -8002,8 +8110,8 @@
           ],
           "pOutcome": 0.349,
           "folkOutcome": 0.37,
-          "pickA": "1X2",
-          "pickB": "1X2",
+          "pickA": "12",
+          "pickB": "12",
           "inA": true,
           "inB": true,
           "ll": {
@@ -8042,8 +8150,8 @@
           ],
           "pOutcome": 0.417,
           "folkOutcome": 0.49,
-          "pickA": "1X2",
-          "pickB": "1X2",
+          "pickA": "12",
+          "pickB": "12",
           "inA": true,
           "inB": true,
           "ll": {
@@ -8082,8 +8190,8 @@
           ],
           "pOutcome": 0.341,
           "folkOutcome": 0.44,
-          "pickA": "1X2",
-          "pickB": "1X2",
+          "pickA": "12",
+          "pickB": "12",
           "inA": true,
           "inB": true,
           "ll": {
@@ -8122,8 +8230,8 @@
           ],
           "pOutcome": 0.253,
           "folkOutcome": 0.21,
-          "pickA": "1",
-          "pickB": "1",
+          "pickA": "1X",
+          "pickB": "1X",
           "inA": false,
           "inB": false,
           "ll": {
@@ -8387,58 +8495,62 @@
         "winners": 11
       },
       "A": {
-        "rows": 371,
-        "cost": 371,
-        "grund": 1728,
-        "payoutMin": 88500,
-        "hit": 0.0018930480718114498,
-        "er": 267.40322337169073,
+        "rows": 379,
+        "cost": 379,
+        "grund": 2048,
+        "payoutMin": 197600,
+        "hit": 0.0007885996538010464,
+        "er": 280.1246354319851,
         "best": 6,
         "perClass": {
-          "2": 57,
-          "3": 140,
-          "4": 129,
-          "5": 43,
-          "6": 2
+          "2": 23,
+          "3": 95,
+          "4": 143,
+          "5": 94,
+          "6": 24
         },
         "winnings": 0,
-        "net": -371,
+        "net": -379,
         "groundCorrect": 6
       },
       "B": {
-        "rows": 373,
-        "cost": 373,
-        "grund": 1728,
-        "payoutMin": 34800,
-        "hit": 0.003336189968152877,
-        "er": 169.3121851376302,
-        "union": 0.005229238039964327,
+        "rows": 370,
+        "cost": 370,
+        "grund": 2048,
+        "payoutMin": 77100,
+        "hit": 0.0017099954220565524,
+        "er": 188.5946743645163,
+        "union": 0.002498595075857599,
         "overlap": 0,
         "best": 6,
         "perClass": {
-          "2": 63,
-          "3": 149,
-          "4": 119,
-          "5": 38,
-          "6": 4
+          "2": 29,
+          "3": 97,
+          "4": 129,
+          "5": 89,
+          "6": 26
         },
         "winnings": 0,
-        "net": -373,
+        "net": -370,
         "groundCorrect": 6
       },
       "colorA": {
         "rules": {
           "green": [
-            5,
-            7
+            1,
+            5
           ],
           "yellow": [
             4,
-            7
+            8
           ],
           "red": [
             1,
             3
+          ],
+          "pink": [
+            2,
+            2
           ]
         },
         "count": {
@@ -8446,22 +8558,26 @@
           "yellow": 8,
           "red": 3
         },
-        "fits": false,
+        "fits": true,
         "ok": null
       },
       "colorB": {
         "rules": {
           "green": [
-            5,
-            7
+            1,
+            5
           ],
           "yellow": [
             4,
-            7
+            8
           ],
           "red": [
             1,
             3
+          ],
+          "pink": [
+            2,
+            2
           ]
         },
         "count": {
@@ -8469,7 +8585,7 @@
           "yellow": 8,
           "red": 3
         },
-        "fits": false,
+        "fits": true,
         "ok": null
       },
       "pairBest": 6,
@@ -8505,10 +8621,10 @@
           ],
           "pOutcome": 0.227,
           "folkOutcome": 0.21,
-          "pickA": "2",
-          "pickB": "2",
-          "inA": false,
-          "inB": false,
+          "pickA": "X2",
+          "pickB": "X2",
+          "inA": true,
+          "inB": true,
           "ll": {
             "final": 1.483,
             "market": 1.487,
@@ -8585,8 +8701,8 @@
           ],
           "pOutcome": 0.222,
           "folkOutcome": 0.21,
-          "pickA": "1",
-          "pickB": "1",
+          "pickA": "1X",
+          "pickB": "1X",
           "inA": false,
           "inB": false,
           "ll": {
@@ -8865,8 +8981,8 @@
           ],
           "pOutcome": 0.35,
           "folkOutcome": 0.36,
-          "pickA": "1X2",
-          "pickB": "1X2",
+          "pickA": "12",
+          "pickB": "12",
           "inA": true,
           "inB": true,
           "ll": {
@@ -8905,8 +9021,8 @@
           ],
           "pOutcome": 0.441,
           "folkOutcome": 0.4,
-          "pickA": "1X2",
-          "pickB": "1X2",
+          "pickA": "1X",
+          "pickB": "1X",
           "inA": true,
           "inB": true,
           "ll": {
@@ -8985,10 +9101,10 @@
           ],
           "pOutcome": 0.272,
           "folkOutcome": 0.17,
-          "pickA": "1X2",
-          "pickB": "1X2",
-          "inA": true,
-          "inB": true,
+          "pickA": "1X",
+          "pickB": "1X",
+          "inA": false,
+          "inB": false,
           "ll": {
             "final": 1.302,
             "market": 1.284,
@@ -9010,59 +9126,61 @@
         "winners": 1380
       },
       "A": {
-        "rows": 381,
-        "cost": 381,
-        "grund": 2592,
-        "payoutMin": 58800,
-        "hit": 0.0016535595433053371,
-        "er": 130.1221050869883,
-        "best": 9,
+        "rows": 371,
+        "cost": 371,
+        "grund": 8192,
+        "payoutMin": 1628000,
+        "hit": 0.00015108115791559403,
+        "er": 319.7961186300086,
+        "best": 6,
         "perClass": {
-          "4": 17,
-          "5": 53,
-          "6": 117,
-          "7": 122,
-          "8": 61,
-          "9": 11
+          "1": 8,
+          "2": 58,
+          "3": 101,
+          "4": 115,
+          "5": 72,
+          "6": 17
         },
         "winnings": 0,
-        "net": -381,
-        "groundCorrect": 12
+        "net": -371,
+        "groundCorrect": 11
       },
       "B": {
-        "rows": 368,
-        "cost": 368,
-        "grund": 2592,
-        "payoutMin": 36770,
-        "hit": 0.002350021121572587,
-        "er": 96.80065261016202,
-        "union": 0.004003580664877924,
+        "rows": 380,
+        "cost": 380,
+        "grund": 8192,
+        "payoutMin": 1077900,
+        "hit": 0.00023385562854761938,
+        "er": 284.2512537691566,
+        "union": 0.0003849367864632134,
         "overlap": 0,
-        "best": 10,
+        "best": 6,
         "perClass": {
-          "4": 8,
-          "5": 41,
-          "6": 87,
-          "7": 114,
-          "8": 83,
-          "9": 32,
-          "10": 3
+          "2": 26,
+          "3": 91,
+          "4": 118,
+          "5": 111,
+          "6": 34
         },
         "winnings": 0,
-        "net": -368,
-        "groundCorrect": 12
+        "net": -380,
+        "groundCorrect": 11
       },
       "colorA": {
         "rules": {
           "green": [
-            5,
+            3,
             7
           ],
           "yellow": [
-            6,
+            4,
             8
           ],
           "red": [
+            1,
+            3
+          ],
+          "pink": [
             0,
             0
           ]
@@ -9078,14 +9196,18 @@
       "colorB": {
         "rules": {
           "green": [
-            5,
+            3,
             7
           ],
           "yellow": [
-            6,
+            4,
             8
           ],
           "red": [
+            1,
+            3
+          ],
+          "pink": [
             0,
             0
           ]
@@ -9098,9 +9220,9 @@
         "fits": false,
         "ok": null
       },
-      "pairBest": 10,
-      "grundA": 12,
-      "grundB": 12,
+      "pairBest": 6,
+      "grundA": 11,
+      "grundB": 11,
       "matches": [
         {
           "n": 1,
@@ -9131,8 +9253,8 @@
           ],
           "pOutcome": 0.55,
           "folkOutcome": 0.68,
-          "pickA": "2",
-          "pickB": "2",
+          "pickA": "X2",
+          "pickB": "X2",
           "inA": true,
           "inB": true,
           "ll": {
@@ -9171,8 +9293,8 @@
           ],
           "pOutcome": 0.669,
           "folkOutcome": 0.73,
-          "pickA": "1",
-          "pickB": "1",
+          "pickA": "1X",
+          "pickB": "1X",
           "inA": true,
           "inB": true,
           "ll": {
@@ -9291,8 +9413,8 @@
           ],
           "pOutcome": 0.413,
           "folkOutcome": 0.48,
-          "pickA": "1X2",
-          "pickB": "1X2",
+          "pickA": "12",
+          "pickB": "12",
           "inA": true,
           "inB": true,
           "ll": {
@@ -9331,8 +9453,8 @@
           ],
           "pOutcome": 0.614,
           "folkOutcome": 0.76,
-          "pickA": "1",
-          "pickB": "1",
+          "pickA": "1X",
+          "pickB": "1X",
           "inA": true,
           "inB": true,
           "ll": {
@@ -9371,8 +9493,8 @@
           ],
           "pOutcome": 0.587,
           "folkOutcome": 0.71,
-          "pickA": "1",
-          "pickB": "1",
+          "pickA": "1X",
+          "pickB": "1X",
           "inA": true,
           "inB": true,
           "ll": {
@@ -9411,10 +9533,10 @@
           ],
           "pOutcome": 0.301,
           "folkOutcome": 0.3,
-          "pickA": "1X2",
-          "pickB": "1X2",
-          "inA": true,
-          "inB": true,
+          "pickA": "X2",
+          "pickB": "X2",
+          "inA": false,
+          "inB": false,
           "ll": {
             "final": 1.201,
             "market": 1.228,
@@ -9571,8 +9693,8 @@
           ],
           "pOutcome": 0.36,
           "folkOutcome": 0.48,
-          "pickA": "1X2",
-          "pickB": "1X2",
+          "pickA": "12",
+          "pickB": "12",
           "inA": true,
           "inB": true,
           "ll": {
@@ -9611,8 +9733,8 @@
           ],
           "pOutcome": 0.344,
           "folkOutcome": 0.38,
-          "pickA": "1X2",
-          "pickB": "1X2",
+          "pickA": "12",
+          "pickB": "12",
           "inA": true,
           "inB": true,
           "ll": {
@@ -9636,66 +9758,70 @@
         "winners": 2
       },
       "A": {
-        "rows": 399,
-        "cost": 399,
+        "rows": 371,
+        "cost": 371,
         "grund": 4096,
-        "payoutMin": 297500,
-        "hit": 0.00041511194043865026,
-        "er": 208.5607345754495,
+        "payoutMin": 336000,
+        "hit": 0.00035810901974311747,
+        "er": 195.34277408604055,
         "best": 10,
         "perClass": {
-          "2": 4,
-          "3": 26,
-          "4": 61,
-          "5": 95,
-          "6": 97,
-          "7": 67,
-          "8": 35,
+          "2": 2,
+          "3": 18,
+          "4": 60,
+          "5": 94,
+          "6": 95,
+          "7": 62,
+          "8": 26,
           "9": 12,
           "10": 2
         },
         "winnings": 900,
-        "net": 501,
+        "net": 529,
         "groundCorrect": 10
       },
       "B": {
-        "rows": 352,
-        "cost": 352,
+        "rows": 373,
+        "cost": 373,
         "grund": 4096,
-        "payoutMin": 148000,
-        "hit": 0.0006689166763010672,
-        "er": 139.96949593262343,
-        "union": 0.0010840286167397174,
+        "payoutMin": 183000,
+        "hit": 0.0006380054694488297,
+        "er": 155.48927431160587,
+        "union": 0.0009961144891919471,
         "overlap": 0,
         "best": 10,
         "perClass": {
-          "2": 10,
-          "3": 32,
-          "4": 58,
-          "5": 86,
-          "6": 79,
-          "7": 49,
-          "8": 28,
-          "9": 8,
+          "2": 11,
+          "3": 38,
+          "4": 64,
+          "5": 79,
+          "6": 82,
+          "7": 59,
+          "8": 32,
+          "9": 6,
           "10": 2
         },
         "winnings": 900,
-        "net": 548,
+        "net": 527,
         "groundCorrect": 10
       },
       "colorA": {
         "rules": {
           "green": [
-            4,
+            2,
             6
           ],
           "yellow": [
-            5,
-            7
+            4,
+            8
           ],
           "red": [
-            2,
-            4
+            1,
+            3
+          ],
+          "pink": [
+            1,
+            1
           ]
         },
         "count": {
@@ -9709,16 +9835,20 @@
       "colorB": {
         "rules": {
           "green": [
-            4,
+            2,
             6
           ],
           "yellow": [
-            5,
-            7
+            4,
+            8
           ],
           "red": [
-            2,
-            4
+            1,
+            3
+          ],
+          "pink": [
+            1,
+            1
           ]
         },
         "count": {
@@ -10267,67 +10397,71 @@
         "winners": 23
       },
       "A": {
-        "rows": 360,
-        "cost": 360,
+        "rows": 390,
+        "cost": 390,
         "grund": 4096,
-        "payoutMin": 253300,
-        "hit": 0.000603161551325641,
-        "er": 250.2282651702778,
+        "payoutMin": 403000,
+        "hit": 0.0004917616854935901,
+        "er": 322.4375411569103,
         "best": 11,
         "perClass": {
-          "3": 8,
-          "4": 26,
-          "5": 44,
-          "6": 87,
-          "7": 87,
-          "8": 61,
-          "9": 30,
+          "3": 3,
+          "4": 24,
+          "5": 47,
+          "6": 92,
+          "7": 83,
+          "8": 81,
+          "9": 41,
+          "10": 14,
+          "11": 5
+        },
+        "winnings": 2256,
+        "net": 1866,
+        "groundCorrect": 12
+      },
+      "B": {
+        "rows": 364,
+        "cost": 364,
+        "grund": 4096,
+        "payoutMin": 240900,
+        "hit": 0.0006679643445885145,
+        "er": 210.1974153328318,
+        "union": 0.0011597260300821046,
+        "overlap": 0,
+        "best": 11,
+        "perClass": {
+          "2": 1,
+          "3": 9,
+          "4": 25,
+          "5": 60,
+          "6": 68,
+          "7": 97,
+          "8": 60,
+          "9": 27,
           "10": 16,
           "11": 1
         },
         "winnings": 1362,
-        "net": 1002,
-        "groundCorrect": 12
-      },
-      "B": {
-        "rows": 391,
-        "cost": 391,
-        "grund": 4096,
-        "payoutMin": 123200,
-        "hit": 0.0009776448911073964,
-        "er": 172.88823428597522,
-        "union": 0.0015808064424330374,
-        "overlap": 0,
-        "best": 12,
-        "perClass": {
-          "3": 15,
-          "4": 32,
-          "5": 66,
-          "6": 72,
-          "7": 86,
-          "8": 56,
-          "9": 44,
-          "10": 16,
-          "11": 2,
-          "12": 2
-        },
-        "winnings": 10132,
-        "net": 9741,
+        "net": 998,
         "groundCorrect": 12
       },
       "colorA": {
         "rules": {
           "green": [
-            4,
+            2,
             6
           ],
           "yellow": [
-            6,
+            4,
             8
           ],
           "red": [
             1,
-            4
+            3
+          ],
+          "pink": [
+            1,
+            1
           ]
         },
         "count": {
@@ -10341,16 +10475,20 @@
       "colorB": {
         "rules": {
           "green": [
-            4,
+            2,
             6
           ],
           "yellow": [
-            6,
+            4,
             8
           ],
           "red": [
             1,
-            4
+            3
+          ],
+          "pink": [
+            1,
+            1
           ]
         },
         "count": {
@@ -10361,7 +10499,7 @@
         "fits": true,
         "ok": null
       },
-      "pairBest": 12,
+      "pairBest": 11,
       "grundA": 12,
       "grundB": 12,
       "matches": [
@@ -10899,62 +11037,66 @@
         "winners": 47
       },
       "A": {
-        "rows": 355,
-        "cost": 355,
+        "rows": 359,
+        "cost": 359,
         "grund": 1728,
-        "payoutMin": 66500,
-        "hit": 0.001745361507725529,
-        "er": 150.65485800978442,
+        "payoutMin": 67700,
+        "hit": 0.0017071430833130899,
+        "er": 155.31919009290004,
         "best": 9,
         "perClass": {
           "3": 14,
-          "4": 56,
-          "5": 109,
+          "4": 58,
+          "5": 112,
           "6": 103,
-          "7": 55,
+          "7": 54,
           "8": 16,
           "9": 2
         },
         "winnings": 0,
-        "net": -355,
+        "net": -359,
         "groundCorrect": 10
       },
       "B": {
-        "rows": 351,
-        "cost": 351,
+        "rows": 361,
+        "cost": 361,
         "grund": 1728,
         "payoutMin": 36900,
-        "hit": 0.002964952971618189,
-        "er": 118.046596641249,
-        "union": 0.004710314479343718,
+        "hit": 0.003032186553843044,
+        "er": 121.73220402517171,
+        "union": 0.004739329637156134,
         "overlap": 0,
         "best": 9,
         "perClass": {
           "3": 8,
-          "4": 46,
-          "5": 86,
-          "6": 106,
-          "7": 70,
+          "4": 48,
+          "5": 89,
+          "6": 109,
+          "7": 72,
           "8": 29,
           "9": 6
         },
         "winnings": 0,
-        "net": -351,
+        "net": -361,
         "groundCorrect": 10
       },
       "colorA": {
         "rules": {
           "green": [
-            5,
-            8
+            0,
+            4
           ],
           "yellow": [
             5,
-            8
+            9
           ],
           "red": [
             0,
             0
+          ],
+          "pink": [
+            4,
+            4
           ]
         },
         "count": {
@@ -10968,16 +11110,20 @@
       "colorB": {
         "rules": {
           "green": [
-            5,
-            8
+            0,
+            4
           ],
           "yellow": [
             5,
-            8
+            9
           ],
           "red": [
             0,
             0
+          ],
+          "pink": [
+            4,
+            4
           ]
         },
         "count": {
@@ -11574,8 +11720,8 @@
       "colorA": {
         "rules": {
           "green": [
-            5,
-            7
+            1,
+            3
           ],
           "yellow": [
             6,
@@ -11584,6 +11730,10 @@
           "red": [
             0,
             0
+          ],
+          "pink": [
+            4,
+            4
           ]
         },
         "count": {
@@ -11597,8 +11747,8 @@
       "colorB": {
         "rules": {
           "green": [
-            5,
-            7
+            1,
+            3
           ],
           "yellow": [
             6,
@@ -11607,6 +11757,10 @@
           "red": [
             0,
             0
+          ],
+          "pink": [
+            4,
+            4
           ]
         },
         "count": {
@@ -12203,8 +12357,8 @@
       "colorA": {
         "rules": {
           "green": [
-            5,
-            7
+            1,
+            3
           ],
           "yellow": [
             5,
@@ -12213,6 +12367,10 @@
           "red": [
             0,
             1
+          ],
+          "pink": [
+            4,
+            4
           ]
         },
         "count": {
@@ -12226,8 +12384,8 @@
       "colorB": {
         "rules": {
           "green": [
-            5,
-            7
+            1,
+            3
           ],
           "yellow": [
             5,
@@ -12236,6 +12394,10 @@
           "red": [
             0,
             1
+          ],
+          "pink": [
+            4,
+            4
           ]
         },
         "count": {
@@ -12784,66 +12946,70 @@
         "winners": 10
       },
       "A": {
-        "rows": 375,
-        "cost": 375,
-        "grund": 3072,
-        "payoutMin": 61000,
-        "hit": 0.0011212378944098027,
-        "er": 99.66073324466062,
+        "rows": 360,
+        "cost": 360,
+        "grund": 2048,
+        "payoutMin": 65370,
+        "hit": 0.0009446320281628987,
+        "er": 109.85463693284385,
         "best": 9,
         "perClass": {
-          "1": 4,
-          "2": 23,
-          "3": 52,
-          "4": 92,
-          "5": 95,
-          "6": 65,
-          "7": 34,
-          "8": 9,
+          "1": 1,
+          "2": 11,
+          "3": 40,
+          "4": 77,
+          "5": 101,
+          "6": 74,
+          "7": 43,
+          "8": 12,
           "9": 1
         },
         "winnings": 0,
-        "net": -375,
+        "net": -360,
         "groundCorrect": 9
       },
       "B": {
-        "rows": 376,
-        "cost": 376,
-        "grund": 3072,
-        "payoutMin": 34950,
-        "hit": 0.0016468278878183516,
-        "er": 75.19274378342655,
-        "union": 0.0027680657822281543,
+        "rows": 377,
+        "cost": 377,
+        "grund": 2048,
+        "payoutMin": 30040,
+        "hit": 0.0017587075942853078,
+        "er": 76.28268816008897,
+        "union": 0.0027033396224482066,
         "overlap": 0,
         "best": 9,
         "perClass": {
-          "1": 4,
-          "2": 15,
-          "3": 52,
-          "4": 89,
-          "5": 95,
-          "6": 73,
-          "7": 34,
-          "8": 13,
-          "9": 1
+          "1": 3,
+          "2": 11,
+          "3": 40,
+          "4": 84,
+          "5": 94,
+          "6": 88,
+          "7": 39,
+          "8": 15,
+          "9": 3
         },
         "winnings": 0,
-        "net": -376,
+        "net": -377,
         "groundCorrect": 9
       },
       "colorA": {
         "rules": {
           "green": [
-            4,
-            6
+            2,
+            5
           ],
           "yellow": [
             6,
-            8
+            9
           ],
           "red": [
             0,
             0
+          ],
+          "pink": [
+            2,
+            2
           ]
         },
         "count": {
@@ -12857,16 +13023,20 @@
       "colorB": {
         "rules": {
           "green": [
-            4,
-            6
+            2,
+            5
           ],
           "yellow": [
             6,
-            8
+            9
           ],
           "red": [
             0,
             0
+          ],
+          "pink": [
+            2,
+            2
           ]
         },
         "count": {
@@ -13070,8 +13240,8 @@
           ],
           "pOutcome": 0.318,
           "folkOutcome": 0.23,
-          "pickA": "1X2",
-          "pickB": "1X2",
+          "pickA": "12",
+          "pickB": "12",
           "inA": true,
           "inB": true,
           "ll": {
@@ -13466,8 +13636,8 @@
       "colorA": {
         "rules": {
           "green": [
-            4,
-            6
+            1,
+            3
           ],
           "yellow": [
             6,
@@ -13476,6 +13646,10 @@
           "red": [
             0,
             0
+          ],
+          "pink": [
+            3,
+            3
           ]
         },
         "count": {
@@ -13483,14 +13657,14 @@
           "yellow": 8,
           "red": 0
         },
-        "fits": true,
+        "fits": false,
         "ok": null
       },
       "colorB": {
         "rules": {
           "green": [
-            4,
-            6
+            1,
+            3
           ],
           "yellow": [
             6,
@@ -13499,6 +13673,10 @@
           "red": [
             0,
             0
+          ],
+          "pink": [
+            3,
+            3
           ]
         },
         "count": {
@@ -13506,7 +13684,7 @@
           "yellow": 8,
           "red": 0
         },
-        "fits": true,
+        "fits": false,
         "ok": null
       },
       "pairBest": 12,
@@ -14075,8 +14253,8 @@
       "colorA": {
         "rules": {
           "green": [
-            4,
-            6
+            1,
+            3
           ],
           "yellow": [
             6,
@@ -14085,6 +14263,10 @@
           "red": [
             0,
             0
+          ],
+          "pink": [
+            3,
+            3
           ]
         },
         "count": {
@@ -14098,8 +14280,8 @@
       "colorB": {
         "rules": {
           "green": [
-            4,
-            6
+            1,
+            3
           ],
           "yellow": [
             6,
@@ -14108,6 +14290,10 @@
           "red": [
             0,
             0
+          ],
+          "pink": [
+            3,
+            3
           ]
         },
         "count": {
@@ -14701,8 +14887,8 @@
       "colorA": {
         "rules": {
           "green": [
-            4,
-            6
+            1,
+            3
           ],
           "yellow": [
             6,
@@ -14711,6 +14897,10 @@
           "red": [
             0,
             0
+          ],
+          "pink": [
+            3,
+            3
           ]
         },
         "count": {
@@ -14724,8 +14914,8 @@
       "colorB": {
         "rules": {
           "green": [
-            4,
-            6
+            1,
+            3
           ],
           "yellow": [
             6,
@@ -14734,6 +14924,10 @@
           "red": [
             0,
             0
+          ],
+          "pink": [
+            3,
+            3
           ]
         },
         "count": {
@@ -15325,8 +15519,8 @@
       "colorA": {
         "rules": {
           "green": [
-            5,
-            7
+            1,
+            3
           ],
           "yellow": [
             5,
@@ -15335,6 +15529,10 @@
           "red": [
             0,
             0
+          ],
+          "pink": [
+            4,
+            4
           ]
         },
         "count": {
@@ -15342,14 +15540,14 @@
           "yellow": 7,
           "red": 0
         },
-        "fits": true,
+        "fits": false,
         "ok": null
       },
       "colorB": {
         "rules": {
           "green": [
-            5,
-            7
+            1,
+            3
           ],
           "yellow": [
             5,
@@ -15358,6 +15556,10 @@
           "red": [
             0,
             0
+          ],
+          "pink": [
+            4,
+            4
           ]
         },
         "count": {
@@ -15365,7 +15567,7 @@
           "yellow": 7,
           "red": 0
         },
-        "fits": true,
+        "fits": false,
         "ok": null
       },
       "pairBest": 8,
@@ -15906,67 +16108,70 @@
         "winners": 232
       },
       "A": {
-        "rows": 370,
-        "cost": 370,
-        "grund": 2048,
-        "payoutMin": 67200,
-        "hit": 0.0011682755898385969,
-        "er": 123.85811749026378,
-        "best": 10,
+        "rows": 393,
+        "cost": 393,
+        "grund": 5184,
+        "payoutMin": 76650,
+        "hit": 0.001503514761526858,
+        "er": 155.28851862893595,
+        "best": 11,
         "perClass": {
-          "2": 1,
-          "3": 11,
-          "4": 23,
-          "5": 57,
-          "6": 99,
-          "7": 87,
-          "8": 54,
-          "9": 28,
-          "10": 10
+          "3": 1,
+          "4": 16,
+          "5": 51,
+          "6": 79,
+          "7": 94,
+          "8": 85,
+          "9": 48,
+          "10": 16,
+          "11": 3
         },
-        "winnings": 0,
-        "net": -370,
-        "groundCorrect": 12
+        "winnings": 81,
+        "net": -312,
+        "groundCorrect": 13
       },
       "B": {
-        "rows": 371,
-        "cost": 371,
-        "grund": 2048,
-        "payoutMin": 30200,
-        "hit": 0.0019595080448520535,
-        "er": 87.23174523896633,
-        "union": 0.00312778363469065,
+        "rows": 360,
+        "cost": 360,
+        "grund": 5184,
+        "payoutMin": 51400,
+        "hit": 0.001853038428445161,
+        "er": 113.32894252544598,
+        "union": 0.003356553189972019,
         "overlap": 0,
         "best": 11,
         "perClass": {
-          "2": 1,
           "3": 2,
-          "4": 31,
-          "5": 60,
-          "6": 67,
-          "7": 82,
-          "8": 78,
-          "9": 34,
-          "10": 11,
-          "11": 5
+          "4": 17,
+          "5": 43,
+          "6": 77,
+          "7": 96,
+          "8": 76,
+          "9": 38,
+          "10": 10,
+          "11": 1
         },
-        "winnings": 135,
-        "net": -236,
-        "groundCorrect": 12
+        "winnings": 27,
+        "net": -333,
+        "groundCorrect": 13
       },
       "colorA": {
         "rules": {
           "green": [
-            4,
-            6
+            1,
+            3
           ],
           "yellow": [
-            5,
-            8
+            7,
+            9
           ],
           "red": [
             0,
-            2
+            1
+          ],
+          "pink": [
+            3,
+            3
           ]
         },
         "count": {
@@ -15974,22 +16179,26 @@
           "yellow": 7,
           "red": 0
         },
-        "fits": true,
-        "ok": null
+        "fits": false,
+        "ok": false
       },
       "colorB": {
         "rules": {
           "green": [
-            4,
-            6
+            1,
+            3
           ],
           "yellow": [
-            5,
-            8
+            7,
+            9
           ],
           "red": [
             0,
-            2
+            1
+          ],
+          "pink": [
+            3,
+            3
           ]
         },
         "count": {
@@ -15997,12 +16206,12 @@
           "yellow": 7,
           "red": 0
         },
-        "fits": true,
-        "ok": null
+        "fits": false,
+        "ok": false
       },
       "pairBest": 11,
-      "grundA": 12,
-      "grundB": 12,
+      "grundA": 13,
+      "grundB": 13,
       "matches": [
         {
           "n": 1,
@@ -16073,8 +16282,8 @@
           ],
           "pOutcome": 0.356,
           "folkOutcome": 0.35,
-          "pickA": "12",
-          "pickB": "12",
+          "pickA": "1X2",
+          "pickB": "1X2",
           "inA": true,
           "inB": true,
           "ll": {
@@ -16153,8 +16362,8 @@
           ],
           "pOutcome": 0.645,
           "folkOutcome": 0.7,
-          "pickA": "1X",
-          "pickB": "1X",
+          "pickA": "1",
+          "pickB": "1",
           "inA": true,
           "inB": true,
           "ll": {
@@ -16193,8 +16402,8 @@
           ],
           "pOutcome": 0.293,
           "folkOutcome": 0.29,
-          "pickA": "12",
-          "pickB": "12",
+          "pickA": "1X2",
+          "pickB": "1X2",
           "inA": true,
           "inB": true,
           "ll": {
@@ -16273,8 +16482,8 @@
           ],
           "pOutcome": 0.312,
           "folkOutcome": 0.25,
-          "pickA": "12",
-          "pickB": "12",
+          "pickA": "1X2",
+          "pickB": "1X2",
           "inA": true,
           "inB": true,
           "ll": {
@@ -16513,10 +16722,10 @@
           ],
           "pOutcome": 0.282,
           "folkOutcome": 0.31,
-          "pickA": "12",
-          "pickB": "12",
-          "inA": false,
-          "inB": false,
+          "pickA": "1X2",
+          "pickB": "1X2",
+          "inA": true,
+          "inB": true,
           "ll": {
             "final": 1.266,
             "market": 1.273,
@@ -16538,65 +16747,71 @@
         "winners": 8
       },
       "A": {
-        "rows": 384,
-        "cost": 384,
-        "grund": 2048,
-        "payoutMin": 66530,
-        "hit": 0.0008699285719061484,
-        "er": 106.45460759916485,
-        "best": 8,
+        "rows": 387,
+        "cost": 387,
+        "grund": 4096,
+        "payoutMin": 220118,
+        "hit": 0.0003884539060757474,
+        "er": 138.76749961666584,
+        "best": 10,
         "perClass": {
-          "0": 2,
-          "1": 7,
-          "2": 28,
-          "3": 58,
-          "4": 90,
-          "5": 95,
-          "6": 71,
-          "7": 28,
-          "8": 5
+          "0": 1,
+          "2": 11,
+          "3": 21,
+          "4": 60,
+          "5": 81,
+          "6": 96,
+          "7": 65,
+          "8": 41,
+          "9": 10,
+          "10": 1
         },
-        "winnings": 0,
-        "net": -384,
-        "groundCorrect": 10
+        "winnings": 96,
+        "net": -291,
+        "groundCorrect": 11
       },
       "B": {
-        "rows": 362,
-        "cost": 362,
-        "grund": 2048,
-        "payoutMin": 30300,
-        "hit": 0.0016897460773883468,
-        "er": 74.8736515148261,
-        "union": 0.0025596746492944954,
+        "rows": 358,
+        "cost": 358,
+        "grund": 4096,
+        "payoutMin": 122000,
+        "hit": 0.0006433064732170818,
+        "er": 104.97078769158446,
+        "union": 0.0010317603792928292,
         "overlap": 0,
-        "best": 9,
+        "best": 10,
         "perClass": {
-          "1": 6,
-          "2": 19,
-          "3": 48,
-          "4": 77,
-          "5": 88,
-          "6": 70,
-          "7": 38,
-          "8": 14,
-          "9": 2
+          "1": 3,
+          "2": 12,
+          "3": 32,
+          "4": 54,
+          "5": 80,
+          "6": 75,
+          "7": 61,
+          "8": 28,
+          "9": 11,
+          "10": 2
         },
-        "winnings": 0,
-        "net": -362,
-        "groundCorrect": 10
+        "winnings": 192,
+        "net": -166,
+        "groundCorrect": 11
       },
       "colorA": {
         "rules": {
           "green": [
-            4,
-            7
+            2,
+            6
           ],
           "yellow": [
-            5,
+            4,
             8
           ],
           "red": [
-            0,
+            1,
+            3
+          ],
+          "pink": [
+            1,
             1
           ]
         },
@@ -16605,21 +16820,25 @@
           "yellow": 4,
           "red": 3
         },
-        "fits": false,
+        "fits": true,
         "ok": null
       },
       "colorB": {
         "rules": {
           "green": [
-            4,
-            7
+            2,
+            6
           ],
           "yellow": [
-            5,
+            4,
             8
           ],
           "red": [
-            0,
+            1,
+            3
+          ],
+          "pink": [
+            1,
             1
           ]
         },
@@ -16628,12 +16847,12 @@
           "yellow": 4,
           "red": 3
         },
-        "fits": false,
+        "fits": true,
         "ok": null
       },
-      "pairBest": 9,
-      "grundA": 10,
-      "grundB": 10,
+      "pairBest": 10,
+      "grundA": 11,
+      "grundB": 11,
       "matches": [
         {
           "n": 1,
@@ -16984,10 +17203,10 @@
           ],
           "pOutcome": 0.215,
           "folkOutcome": 0.17,
-          "pickA": "1",
-          "pickB": "1",
-          "inA": false,
-          "inB": false,
+          "pickA": "1X",
+          "pickB": "1X",
+          "inA": true,
+          "inB": true,
           "ll": {
             "final": 1.537,
             "market": 1.561,
@@ -17213,8 +17432,8 @@
       "colorA": {
         "rules": {
           "green": [
-            4,
-            6
+            0,
+            2
           ],
           "yellow": [
             6,
@@ -17223,6 +17442,10 @@
           "red": [
             0,
             0
+          ],
+          "pink": [
+            4,
+            4
           ]
         },
         "count": {
@@ -17236,8 +17459,8 @@
       "colorB": {
         "rules": {
           "green": [
-            4,
-            6
+            0,
+            2
           ],
           "yellow": [
             6,
@@ -17246,6 +17469,10 @@
           "red": [
             0,
             0
+          ],
+          "pink": [
+            4,
+            4
           ]
         },
         "count": {
@@ -17838,8 +18065,8 @@
       "colorA": {
         "rules": {
           "green": [
-            6,
-            8
+            2,
+            4
           ],
           "yellow": [
             5,
@@ -17848,6 +18075,10 @@
           "red": [
             0,
             1
+          ],
+          "pink": [
+            4,
+            4
           ]
         },
         "count": {
@@ -17855,14 +18086,14 @@
           "yellow": 5,
           "red": 1
         },
-        "fits": true,
+        "fits": false,
         "ok": null
       },
       "colorB": {
         "rules": {
           "green": [
-            6,
-            8
+            2,
+            4
           ],
           "yellow": [
             5,
@@ -17871,6 +18102,10 @@
           "red": [
             0,
             1
+          ],
+          "pink": [
+            4,
+            4
           ]
         },
         "count": {
@@ -17878,7 +18113,7 @@
           "yellow": 5,
           "red": 1
         },
-        "fits": true,
+        "fits": false,
         "ok": null
       },
       "pairBest": 9,
@@ -18467,8 +18702,8 @@
       "colorA": {
         "rules": {
           "green": [
-            5,
-            7
+            1,
+            3
           ],
           "yellow": [
             6,
@@ -18477,6 +18712,10 @@
           "red": [
             0,
             0
+          ],
+          "pink": [
+            4,
+            4
           ]
         },
         "count": {
@@ -18490,8 +18729,8 @@
       "colorB": {
         "rules": {
           "green": [
-            5,
-            7
+            1,
+            3
           ],
           "yellow": [
             6,
@@ -18500,6 +18739,10 @@
           "red": [
             0,
             0
+          ],
+          "pink": [
+            4,
+            4
           ]
         },
         "count": {
@@ -19048,54 +19291,54 @@
         "winners": 615
       },
       "A": {
-        "rows": 374,
-        "cost": 374,
-        "grund": 3072,
-        "payoutMin": 54700,
-        "hit": 0.0009764292000539815,
-        "er": 87.81059877966123,
-        "best": 8,
+        "rows": 365,
+        "cost": 365,
+        "grund": 18432,
+        "payoutMin": 709700,
+        "hit": 0.0002119945738787619,
+        "er": 189.13141569516694,
+        "best": 7,
         "perClass": {
-          "2": 3,
-          "3": 28,
-          "4": 76,
-          "5": 108,
-          "6": 99,
-          "7": 51,
-          "8": 9
+          "1": 3,
+          "2": 41,
+          "3": 93,
+          "4": 119,
+          "5": 79,
+          "6": 26,
+          "7": 4
         },
         "winnings": 0,
-        "net": -374,
+        "net": -365,
         "groundCorrect": 11
       },
       "B": {
-        "rows": 373,
-        "cost": 373,
-        "grund": 3072,
-        "payoutMin": 30100,
-        "hit": 0.0017759317664326501,
-        "er": 70.59393266977007,
-        "union": 0.0027523609664866317,
+        "rows": 385,
+        "cost": 385,
+        "grund": 18432,
+        "payoutMin": 540700,
+        "hit": 0.00029674696592790344,
+        "er": 183.74488894746756,
+        "union": 0.0005087415398066654,
         "overlap": 0,
-        "best": 9,
+        "best": 7,
         "perClass": {
-          "3": 6,
-          "4": 38,
-          "5": 94,
-          "6": 107,
-          "7": 85,
-          "8": 39,
-          "9": 4
+          "1": 3,
+          "2": 21,
+          "3": 79,
+          "4": 123,
+          "5": 102,
+          "6": 48,
+          "7": 9
         },
         "winnings": 0,
-        "net": -373,
+        "net": -385,
         "groundCorrect": 11
       },
       "colorA": {
         "rules": {
           "green": [
-            4,
-            6
+            3,
+            5
           ],
           "yellow": [
             6,
@@ -19103,7 +19346,11 @@
           ],
           "red": [
             0,
-            1
+            2
+          ],
+          "pink": [
+            0,
+            0
           ]
         },
         "count": {
@@ -19117,8 +19364,8 @@
       "colorB": {
         "rules": {
           "green": [
-            4,
-            6
+            3,
+            5
           ],
           "yellow": [
             6,
@@ -19126,7 +19373,11 @@
           ],
           "red": [
             0,
-            1
+            2
+          ],
+          "pink": [
+            0,
+            0
           ]
         },
         "count": {
@@ -19137,7 +19388,7 @@
         "fits": false,
         "ok": null
       },
-      "pairBest": 9,
+      "pairBest": 7,
       "grundA": 11,
       "grundB": 11,
       "matches": [
@@ -19250,8 +19501,8 @@
           ],
           "pOutcome": 0.658,
           "folkOutcome": 0.82,
-          "pickA": "1",
-          "pickB": "1",
+          "pickA": "1X",
+          "pickB": "1X",
           "inA": true,
           "inB": true,
           "ll": {
@@ -19330,8 +19581,8 @@
           ],
           "pOutcome": 0.284,
           "folkOutcome": 0.28,
-          "pickA": "1X",
-          "pickB": "1X",
+          "pickA": "1X2",
+          "pickB": "1X2",
           "inA": true,
           "inB": true,
           "ll": {
@@ -19490,8 +19741,8 @@
           ],
           "pOutcome": 0.645,
           "folkOutcome": 0.76,
-          "pickA": "1",
-          "pickB": "1",
+          "pickA": "1X",
+          "pickB": "1X",
           "inA": true,
           "inB": true,
           "ll": {
@@ -19722,8 +19973,8 @@
       "colorA": {
         "rules": {
           "green": [
-            6,
-            8
+            2,
+            4
           ],
           "yellow": [
             6,
@@ -19732,6 +19983,10 @@
           "red": [
             0,
             1
+          ],
+          "pink": [
+            4,
+            4
           ]
         },
         "count": {
@@ -19739,14 +19994,14 @@
           "yellow": 8,
           "red": 1
         },
-        "fits": false,
+        "fits": true,
         "ok": null
       },
       "colorB": {
         "rules": {
           "green": [
-            6,
-            8
+            2,
+            4
           ],
           "yellow": [
             6,
@@ -19755,6 +20010,10 @@
           "red": [
             0,
             1
+          ],
+          "pink": [
+            4,
+            4
           ]
         },
         "count": {
@@ -19762,7 +20021,7 @@
           "yellow": 8,
           "red": 1
         },
-        "fits": false,
+        "fits": true,
         "ok": null
       },
       "pairBest": 11,
@@ -20348,8 +20607,8 @@
       "colorA": {
         "rules": {
           "green": [
-            5,
-            7
+            1,
+            3
           ],
           "yellow": [
             6,
@@ -20358,6 +20617,10 @@
           "red": [
             0,
             0
+          ],
+          "pink": [
+            4,
+            4
           ]
         },
         "count": {
@@ -20371,8 +20634,8 @@
       "colorB": {
         "rules": {
           "green": [
-            5,
-            7
+            1,
+            3
           ],
           "yellow": [
             6,
@@ -20381,6 +20644,10 @@
           "red": [
             0,
             0
+          ],
+          "pink": [
+            4,
+            4
           ]
         },
         "count": {
@@ -20929,62 +21196,64 @@
         "winners": 2
       },
       "A": {
-        "rows": 380,
-        "cost": 380,
-        "grund": 2304,
-        "payoutMin": 59500,
-        "hit": 0.0012793998790566474,
-        "er": 115.25596457408032,
-        "best": 7,
+        "rows": 386,
+        "cost": 386,
+        "grund": 2048,
+        "payoutMin": 113000,
+        "hit": 0.0007585458167298467,
+        "er": 159.69974876226865,
+        "best": 6,
         "perClass": {
-          "0": 1,
-          "1": 17,
-          "2": 48,
-          "3": 106,
-          "4": 109,
-          "5": 69,
-          "6": 26,
-          "7": 4
+          "1": 22,
+          "2": 70,
+          "3": 120,
+          "4": 106,
+          "5": 57,
+          "6": 11
         },
         "winnings": 0,
-        "net": -380,
-        "groundCorrect": 7
+        "net": -386,
+        "groundCorrect": 6
       },
       "B": {
-        "rows": 371,
-        "cost": 371,
-        "grund": 2304,
-        "payoutMin": 30400,
-        "hit": 0.0017147567698752215,
-        "er": 72.90105724168448,
-        "union": 0.0029941566489318687,
+        "rows": 373,
+        "cost": 373,
+        "grund": 2048,
+        "payoutMin": 55200,
+        "hit": 0.001181349770005854,
+        "er": 91.85166667756971,
+        "union": 0.0019398955867357007,
         "overlap": 0,
         "best": 6,
         "perClass": {
-          "0": 7,
-          "1": 35,
-          "2": 82,
+          "0": 6,
+          "1": 31,
+          "2": 81,
           "3": 108,
-          "4": 88,
-          "5": 41,
-          "6": 10
+          "4": 97,
+          "5": 38,
+          "6": 12
         },
         "winnings": 0,
-        "net": -371,
-        "groundCorrect": 7
+        "net": -373,
+        "groundCorrect": 6
       },
       "colorA": {
         "rules": {
           "green": [
-            5,
-            7
+            1,
+            5
           ],
           "yellow": [
-            5,
-            7
+            4,
+            8
           ],
           "red": [
-            0,
+            1,
+            3
+          ],
+          "pink": [
+            2,
             2
           ]
         },
@@ -20999,15 +21268,19 @@
       "colorB": {
         "rules": {
           "green": [
-            5,
-            7
+            1,
+            5
           ],
           "yellow": [
-            5,
-            7
+            4,
+            8
           ],
           "red": [
-            0,
+            1,
+            3
+          ],
+          "pink": [
+            2,
             2
           ]
         },
@@ -21019,9 +21292,9 @@
         "fits": false,
         "ok": null
       },
-      "pairBest": 7,
-      "grundA": 7,
-      "grundB": 7,
+      "pairBest": 6,
+      "grundA": 6,
+      "grundB": 6,
       "matches": [
         {
           "n": 1,
@@ -21212,8 +21485,8 @@
           ],
           "pOutcome": 0.359,
           "folkOutcome": 0.29,
-          "pickA": "1X2",
-          "pickB": "1X2",
+          "pickA": "12",
+          "pickB": "12",
           "inA": true,
           "inB": true,
           "ll": {
@@ -21332,10 +21605,10 @@
           ],
           "pOutcome": 0.294,
           "folkOutcome": 0.21,
-          "pickA": "1X2",
-          "pickB": "1X2",
-          "inA": true,
-          "inB": true,
+          "pickA": "1X",
+          "pickB": "1X",
+          "inA": false,
+          "inB": false,
           "ll": {
             "final": 1.224,
             "market": 1.228,
@@ -21412,8 +21685,8 @@
           ],
           "pOutcome": 0.248,
           "folkOutcome": 0.23,
-          "pickA": "1",
-          "pickB": "1",
+          "pickA": "1X",
+          "pickB": "1X",
           "inA": false,
           "inB": false,
           "ll": {
@@ -21605,8 +21878,8 @@
       "colorA": {
         "rules": {
           "green": [
-            4,
-            6
+            1,
+            3
           ],
           "yellow": [
             7,
@@ -21615,6 +21888,10 @@
           "red": [
             0,
             0
+          ],
+          "pink": [
+            3,
+            3
           ]
         },
         "count": {
@@ -21628,8 +21905,8 @@
       "colorB": {
         "rules": {
           "green": [
-            4,
-            6
+            1,
+            3
           ],
           "yellow": [
             7,
@@ -21638,6 +21915,10 @@
           "red": [
             0,
             0
+          ],
+          "pink": [
+            3,
+            3
           ]
         },
         "count": {
@@ -22186,61 +22467,65 @@
         "winners": 5
       },
       "A": {
-        "rows": 359,
-        "cost": 359,
+        "rows": 376,
+        "cost": 376,
         "grund": 2048,
-        "payoutMin": 66200,
-        "hit": 0.0009066174180655195,
-        "er": 109.96107918541679,
+        "payoutMin": 80800,
+        "hit": 0.0008571907875499095,
+        "er": 133.31283930408986,
         "best": 7,
         "perClass": {
-          "1": 2,
-          "2": 28,
-          "3": 88,
-          "4": 115,
-          "5": 88,
-          "6": 34,
-          "7": 4
+          "1": 5,
+          "2": 39,
+          "3": 102,
+          "4": 119,
+          "5": 82,
+          "6": 27,
+          "7": 2
         },
         "winnings": 0,
-        "net": -359,
+        "net": -376,
         "groundCorrect": 7
       },
       "B": {
-        "rows": 362,
-        "cost": 362,
+        "rows": 373,
+        "cost": 373,
         "grund": 2048,
-        "payoutMin": 30270,
-        "hit": 0.0015246946893304114,
-        "er": 67.49716302621269,
-        "union": 0.002431312107395931,
+        "payoutMin": 34950,
+        "hit": 0.001437286032675696,
+        "er": 75.45189620536561,
+        "union": 0.0022944768202256055,
         "overlap": 0,
         "best": 7,
         "perClass": {
           "1": 5,
-          "2": 31,
-          "3": 82,
-          "4": 116,
-          "5": 83,
+          "2": 33,
+          "3": 85,
+          "4": 117,
+          "5": 88,
           "6": 38,
           "7": 7
         },
         "winnings": 0,
-        "net": -362,
+        "net": -373,
         "groundCorrect": 7
       },
       "colorA": {
         "rules": {
           "green": [
-            4,
-            7
+            1,
+            5
           ],
           "yellow": [
             4,
-            7
+            8
           ],
           "red": [
-            0,
+            1,
+            3
+          ],
+          "pink": [
+            2,
             2
           ]
         },
@@ -22255,15 +22540,19 @@
       "colorB": {
         "rules": {
           "green": [
-            4,
-            7
+            1,
+            5
           ],
           "yellow": [
             4,
-            7
+            8
           ],
           "red": [
-            0,
+            1,
+            3
+          ],
+          "pink": [
+            2,
             2
           ]
         },
@@ -22813,62 +23102,66 @@
         "winners": 23
       },
       "A": {
-        "rows": 358,
-        "cost": 358,
+        "rows": 372,
+        "cost": 372,
         "grund": 2048,
-        "payoutMin": 72000,
-        "hit": 0.0010022570328907857,
-        "er": 126.83136508698564,
+        "payoutMin": 83000,
+        "hit": 0.0008742871566276644,
+        "er": 147.65675933724458,
         "best": 10,
         "perClass": {
-          "4": 24,
-          "5": 56,
-          "6": 101,
-          "7": 92,
-          "8": 57,
-          "9": 24,
+          "4": 14,
+          "5": 59,
+          "6": 94,
+          "7": 102,
+          "8": 67,
+          "9": 32,
           "10": 4
         },
         "winnings": 260,
-        "net": -98,
+        "net": -112,
         "groundCorrect": 11
       },
       "B": {
-        "rows": 362,
-        "cost": 362,
+        "rows": 370,
+        "cost": 370,
         "grund": 2048,
         "payoutMin": 30300,
-        "hit": 0.001980904368200201,
-        "er": 90.08160039500493,
-        "union": 0.0029831614010909866,
+        "hit": 0.0019053673390800824,
+        "er": 94.31579449019546,
+        "union": 0.002779654495707747,
         "overlap": 0,
         "best": 10,
         "perClass": {
           "3": 10,
-          "4": 28,
-          "5": 73,
-          "6": 80,
-          "7": 90,
-          "8": 51,
-          "9": 22,
+          "4": 38,
+          "5": 71,
+          "6": 93,
+          "7": 84,
+          "8": 48,
+          "9": 18,
           "10": 8
         },
         "winnings": 520,
-        "net": 158,
+        "net": 150,
         "groundCorrect": 11
       },
       "colorA": {
         "rules": {
           "green": [
-            5,
-            7
+            1,
+            5
           ],
           "yellow": [
             4,
             8
           ],
           "red": [
-            0,
+            1,
+            3
+          ],
+          "pink": [
+            2,
             2
           ]
         },
@@ -22877,21 +23170,25 @@
           "yellow": 7,
           "red": 2
         },
-        "fits": false,
+        "fits": true,
         "ok": null
       },
       "colorB": {
         "rules": {
           "green": [
-            5,
-            7
+            1,
+            5
           ],
           "yellow": [
             4,
             8
           ],
           "red": [
-            0,
+            1,
+            3
+          ],
+          "pink": [
+            2,
             2
           ]
         },
@@ -22900,7 +23197,7 @@
           "yellow": 7,
           "red": 2
         },
-        "fits": false,
+        "fits": true,
         "ok": null
       },
       "pairBest": 10,
@@ -23486,8 +23783,8 @@
       "colorA": {
         "rules": {
           "green": [
-            6,
-            8
+            2,
+            4
           ],
           "yellow": [
             4,
@@ -23496,6 +23793,10 @@
           "red": [
             0,
             1
+          ],
+          "pink": [
+            4,
+            4
           ]
         },
         "count": {
@@ -23509,8 +23810,8 @@
       "colorB": {
         "rules": {
           "green": [
-            6,
-            8
+            2,
+            4
           ],
           "yellow": [
             4,
@@ -23519,6 +23820,10 @@
           "red": [
             0,
             1
+          ],
+          "pink": [
+            4,
+            4
           ]
         },
         "count": {
