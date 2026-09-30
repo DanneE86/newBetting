@@ -555,26 +555,43 @@ function signColor(folkP) {
 // (anvandaren 2026-09-30: snittet ar 1,9, men 3-4 roda ger de stora vinsterna). Utan band: hogst COLOR_TRIM steg in.
 // Kombinationerna rangordnas efter chansen i de `target` forsta raderna som klarar reglerna; vid lika vinner snavast.
 const COLOR_KEYS = ['green', 'yellow', 'red'];
-// Fasta fargmal for hela raden (13 matcher), anvandarens beslut 2026-09-30 utifran ratt rad senaste aret: grona 3-7,
-// gula 4-8, roda 1-3. Spikar ar rosa i GC och raknas inte dar, sa spikarnas farger dras av fran malen (3 grona spikar ->
-// gron 0-4 i garderingarna); rosa = antal spikar. Gar malen inte att halla optimeras fargerna fritt (colorTarget: false).
-// STRYK_COLOR_TARGET=0 stanger av (backtest).
-const COLOR_TARGET = process.env.STRYK_COLOR_TARGET === '0' ? null : { green: [3, 7], yellow: [4, 8], red: [1, 3] };
-function targetRule(events, grund, colors) {
-  const spik = { green: 0, yellow: 0, red: 0 };
-  grund.sets.forEach((set, i) => { if (set.length === 1) spik[colors[i][set[0]]]++; });
-  const rule = COLOR_KEYS.map((c) => [Math.max(0, COLOR_TARGET[c][0] - spik[c]), COLOR_TARGET[c][1] - spik[c]]);
-  return rule.every(([, b]) => b >= 0) ? rule : null;
+// Rorliga fargfonster per omgang (anvandaren 2026-09-30: inte fasta, inte snava). Vantat antal grona/gula/roda i ratt
+// rad = summan av vara procent for tecknen med den fargen (alla 13 matcher). Fonstret for hela raden har bredd DYN_WIDTHS
+// (4 = t.ex. 5-9, fem mojliga antal) och innehaller alltid det vantade antalet. Spikar ar rosa i GC och raknas inte dar,
+// sa spikarnas farger dras av (3 grona spikar: 5-9 -> 2-6 i garderingarna); rosa = antal spikar. Fonstren rangordnas
+// efter chansen som ovan. Gar inget fonster att halla optimeras fargerna fritt (colorTarget: false).
+// STRYK_COLOR_TARGET=0 stanger av, STRYK_DYN_W="3,4" styr bredderna (backtest).
+const COLOR_TARGET = process.env.STRYK_COLOR_TARGET !== '0';
+const DYN_WIDTHS = (process.env.STRYK_DYN_W || '3,4').split(',').map(Number);
+function colorExpected(events, colors) {
+  const exp = [0, 0, 0];
+  events.forEach((e, i) => [0, 1, 2].forEach((k) => { exp[COLOR_KEYS.indexOf(colors[i][k])] += e.final[k]; }));
+  return exp;
+}
+function dynamicRanges(events, grund, colors) {
+  const spik = [0, 0, 0];
+  grund.sets.forEach((set, i) => { if (set.length === 1) spik[COLOR_KEYS.indexOf(colors[i][set[0]])]++; });
+  const exp = colorExpected(events, colors);
+  return [0, 1, 2].map((c) => {
+    const out = new Map();
+    for (const w of DYN_WIDTHS) {
+      for (let a = Math.max(0, Math.ceil(exp[c] - w)); a <= Math.floor(exp[c]); a++) {
+        const ga = Math.max(0, a - spik[c]), gb = a + w - spik[c];
+        if (gb >= 0) out.set(`${ga},${gb}`, [ga, gb]);
+      }
+    }
+    return [...out.values()];
+  });
 }
 // Backtest 2026-09-30 (38 omg): max 4 roda gav -8 771 kr mot -19 356 med 3 (optimeraren valjer annars alltid 3).
 const RED_MAX_OPTIONS = (process.env.STRYK_RED_MAX || '4').split(',').map(Number);
 const USE_BANDS = process.env.STRYK_COLOR_BANDS !== '0';
 const BANDS_FOR = new Set((process.env.STRYK_BANDS_FOR || 'stryktipset').split(','));
 const BAND_MODE = process.env.STRYK_BAND_MODE || 'outer'; // 'core' = min <= p10 och max >= p90, 'outer' = bara inom min-max
-function colorRuleOptions(all, minRows, target, bands = null) {
+function colorRuleOptions(all, minRows, target, bands = null, fixed = null) {
   const lo = [13, 13, 13], hi = [0, 0, 0];
   for (const r of all) for (let c = 0; c < 3; c++) { if (r.c[c] < lo[c]) lo[c] = r.c[c]; if (r.c[c] > hi[c]) hi[c] = r.c[c]; }
-  const ranges = [0, 1, 2].map((c) => {
+  const ranges = fixed || [0, 1, 2].map((c) => {
     const out = [];
     const w = Math.min(COLOR_WIDTH, hi[c] - lo[c]);
     const band = USE_BANDS ? bands?.[COLOR_KEYS[c]] : null;
@@ -655,10 +672,10 @@ function reduceSystem(events, grund, { rowPrice = 1, turnover, signMin, realTurn
   all.sort((a, b) => b.payout - a.payout);
   // Fargreglerna: basta kombinationen dar utdelningsgransen gar att lagga, annars nasta
   const spikes = grund.sets.filter((x) => x.length === 1).length;
-  const target = colorTarget && COLOR_TARGET ? targetRule(events, grund, colors) : null;
-  if (colorTarget && COLOR_TARGET && !target) return null;
+  const target = colorTarget && COLOR_TARGET ? dynamicRanges(events, grund, colors) : null;
+  if (target && target.some((x) => !x.length)) return null;
   // Reserv utan mal: fri optimering (banden raknar hela raden och passar inte nar spikarna ar rosa)
-  const options = target ? [{ rule: target }] : colorRuleOptions(all, minRows, Math.round((minRows + maxRows) / 2), null);
+  const options = colorRuleOptions(all, minRows, Math.round((minRows + maxRows) / 2), null, target);
   for (const opt of options) {
     const res = cutSystem(all.filter((r) => fitsColors(r.c, opt.rule)), floor, minRows, maxRows, grund, colors, redMax, events);
     if (!res) continue;
@@ -672,6 +689,7 @@ function reduceSystem(events, grund, { rowPrice = 1, turnover, signMin, realTurn
       rules: {
         payoutMin: cut.t, payoutMinReal: payoutMin, jackpot, realTurnover, signMin, colorGreen: COLOR.green, colorRed: COLOR.red, turnover: T,
         colorRules: { green: opt.rule[0], yellow: opt.rule[1], red: opt.rule[2], pink: [spikes, spikes] }, colorTarget: Boolean(target),
+        colorExpected: colorExpected(events, colors).map((x) => Math.round(x * 10) / 10), // vantat antal i ratt rad (hela raden)
       },
       colors: colors.map((c) => c.join(',')),
       rowList: kept.map((r) => r.row.map((k) => SIGNS[k]).join('')),

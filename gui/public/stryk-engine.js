@@ -40,15 +40,25 @@ const MAX_SPIKES = 4;
 const COLOR_TRIM = 2;
 const RED_MAX_OPTIONS = [4];
 const COLOR_KEYS = ["green", "yellow", "red"];
-// Fasta färgmål för hela raden (13 matcher), användarens beslut 2026-09-30 utifrån rätt rad senaste året: gröna 3–7,
-// gula 4–8, röda 1–3. Spikar är rosa i Gambling Cabin och räknas inte där, så spikarnas färger dras av från målen
-// (3 gröna spikar -> grön 0–4 i garderingarna); rosa = antal spikar. Går målen inte att hålla optimeras färgerna fritt.
-const COLOR_TARGET = { green: [3, 7], yellow: [4, 8], red: [1, 3] };
-function targetRule(grund, colorIdx) {
-  const spik = [0, 0, 0];
+// Rörliga färgfönster per omgång (användaren 2026-09-30: inte fasta, inte snäva). Väntat antal gröna/gula/röda i rätt
+// rad = summan av våra procent för tecknen med den färgen (alla 13 matcher). Fönstret för hela raden har bredd 3 eller 4
+// (t.ex. 5–9) och innehåller alltid det väntade antalet. Spikar är rosa i Gambling Cabin och räknas inte där, så
+// spikarnas färger dras av (3 gröna spikar: 5–9 -> 2–6 i garderingarna); rosa = antal spikar. Samma som fetch-stryktipset.mjs.
+const DYN_WIDTHS = [3, 4];
+function dynamicRanges(events, grund, colorIdx) {
+  const spik = [0, 0, 0], exp = [0, 0, 0];
   grund.sets.forEach((set, i) => { if (set.length === 1) spik[colorIdx[i][set[0]]]++; });
-  const rule = COLOR_KEYS.map((c, j) => [Math.max(0, COLOR_TARGET[c][0] - spik[j]), COLOR_TARGET[c][1] - spik[j]]);
-  return rule.every(([, b]) => b >= 0) ? rule : null;
+  events.forEach((e, i) => [0, 1, 2].forEach((k) => { exp[colorIdx[i][k]] += e.final[k]; }));
+  return [0, 1, 2].map((c) => {
+    const out = new Map();
+    for (const w of DYN_WIDTHS) {
+      for (let a = Math.max(0, Math.ceil(exp[c] - w)); a <= Math.floor(exp[c]); a++) {
+        const ga = Math.max(0, a - spik[c]), gb = a + w - spik[c];
+        if (gb >= 0) out.set(`${ga},${gb}`, [ga, gb]);
+      }
+    }
+    return [...out.values()];
+  });
 }
 
 const pickOf = (x) => ({
@@ -104,10 +114,10 @@ function signColor(folkP) {
 
 // Färgregler. all = rader sorterade på utdelning (högst först), r.c = [gröna, gula, röda] över alla 13 matcher.
 // Kombinationerna rangordnas efter chansen i de `target` första raderna som klarar reglerna; vid lika vinner snävast.
-function colorRuleOptions(all, minRows, target, bands = null) {
+function colorRuleOptions(all, minRows, target, bands = null, fixed = null) {
   const lo = [13, 13, 13], hi = [0, 0, 0];
   for (const r of all) for (let c = 0; c < 3; c++) { if (r.c[c] < lo[c]) lo[c] = r.c[c]; if (r.c[c] > hi[c]) hi[c] = r.c[c]; }
-  const ranges = [0, 1, 2].map((c) => {
+  const ranges = fixed || [0, 1, 2].map((c) => {
     const out = [];
     const w = Math.min(COLOR_WIDTH, hi[c] - lo[c]);
     const band = bands?.[COLOR_KEYS[c]];
@@ -180,11 +190,11 @@ function reduceSystem(events, grund, { rowPrice = 1, turnover, signMin, realTurn
   walk(0, 1, 1);
   if (all.length < minRows) return null;
   all.sort((a, b) => b.payout - a.payout);
-  // Färgreglerna: målen (grön 3–7, gul 4–8, röd 1–3), annars bästa fria kombinationen där utdelningsgränsen går att lägga
+  // Färgreglerna: bästa rörliga fönstret, annars bästa fria kombinationen där utdelningsgränsen går att lägga
   const spikes = grund.sets.filter((x) => x.length === 1).length;
-  const target = colorTarget ? targetRule(grund, colorIdx) : null;
-  if (colorTarget && !target) return null;
-  for (const opt of target ? [{ rule: target }] : colorRuleOptions(all, minRows, Math.round((minRows + maxRows) / 2))) {
+  const target = colorTarget ? dynamicRanges(events, grund, colorIdx) : null;
+  if (target && target.some((x) => !x.length)) return null;
+  for (const opt of colorRuleOptions(all, minRows, Math.round((minRows + maxRows) / 2), null, target)) {
     const cut = cutRows(all.filter((r) => fitsColors(r.c, opt.rule)), floor, minRows, maxRows);
     if (!cut) continue;
     const kept = cut.kept;
@@ -284,7 +294,7 @@ function buildWithLadder(events, forced, base, budget, exclude, { avoid = null, 
       const best = bestReduced(events, cands, { ...base, signMin: sm, payoutMin: base.payoutMin * pf, budget: b, redMax, colorTarget }, exclude, avoid);
       if (best) {
         const relaxed = [];
-        if (!colorTarget) relaxed.push("färgmålen (grön 3–7, gul 4–8, röd 1–3 på hela raden) gick inte att hålla – färgerna optimerades fritt");
+        if (!colorTarget) relaxed.push("färgfönstren runt det väntade antalet gick inte att hålla – färgerna optimerades fritt");
         if (redMax === 1) relaxed.push(`skrällgränsen (rött tecken på högst ${Math.round(RED_MAX_SHARE * 100)} % av raderna, favoriten på minst ${Math.round(FAV_MIN_SHARE * 100)} %) gick inte att hålla`);
         if (sm !== signLadder[0]) relaxed.push(`teckenreglerna sänktes till ${sm.join("-")}`);
         if (pf !== 1) relaxed.push(pf === 0 ? "utdelningsgränsen togs bort" : `utdelningsgränsen sänktes till ${Math.round(base.payoutMin * pf).toLocaleString("sv-SE")} kr`);
