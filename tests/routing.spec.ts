@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 import { spawn, ChildProcess } from 'child_process';
 import path from 'path';
 
-// Sidadresser i webben: /tips, /stryktipset, /europatipset (dold i menyn). Kor mot gui/server.mjs lokalt.
+// Sidadresser i webben: /tips, /stryktipset, /europatipset. Kor mot gui/server.mjs lokalt.
 const root = path.resolve(__dirname, '..');
 const port = 4100 + Math.floor(Math.random() * 80);
 const base = `http://127.0.0.1:${port}`;
@@ -36,10 +36,12 @@ test('flikarna ger /tips och /stryktipset, bakåt fungerar', async ({ page }) =>
   await expect(page.locator('#stryktips-view')).toBeVisible();
 });
 
-test('Europatipset finns inte i menyn men nås via /europatipset', async ({ page }) => {
+test('Europatipset finns i menyn och nås via /europatipset', async ({ page }) => {
   await page.goto(base + '/tips');
-  await expect(page.locator('.view-tab')).toHaveCount(2);
-  await expect(page.locator('.view-tabs')).not.toContainText('Europatipset');
+  await expect(page.locator('.view-tab')).toHaveCount(3);
+  await page.click('.view-tab[data-view="europatipset"]');
+  await expect(page).toHaveURL(base + '/europatipset');
+  await expect(page.locator('#stryktips-view h2')).toContainText('Europatipset', { timeout: 30_000 });
   await page.goto(base + '/stryktipset');
   await expect(page.locator('#stryktips-view')).not.toContainText('Europatipset omgång');
   await page.goto(base + '/europatipset');
@@ -127,14 +129,13 @@ test('Stryktipset: en sida, egna krav genererar kupong A och B', async ({ page }
   await expect(page).toHaveURL(base + '/stryktipset');
 });
 
-test('Europatipset har samma sida via /europatipset men finns inte i menyn', async ({ page }) => {
+test('Europatipset har samma sida via /europatipset', async ({ page }) => {
   await page.goto(base + '/europatipset/b');
   await expect(page).toHaveURL(base + '/europatipset');
   await expect(page.locator('#stryktips-view h2')).toContainText('Europatipset', { timeout: 30_000 });
   await expect(page.locator('.sb-row')).toHaveCount(13);
   await expect(page.locator('.sb-coupon')).toHaveCount(2);
-  await expect(page.locator('.view-tab.active')).toHaveCount(0);
-  await expect(page.locator('.view-tabs')).not.toContainText('Europatipset');
+  await expect(page.locator('.view-tab.active')).toHaveAttribute('data-view', 'europatipset');
   // Krav bara i A (1X på sista matchen): B väljer aldrig exakt samma tecken där
   await page.evaluate(() => localStorage.clear());
   const last = page.locator('.sb-row').nth(12);
