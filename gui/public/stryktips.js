@@ -189,6 +189,29 @@ function backtestBox(list, krFmt) {
   </details>`;
 }
 
+// Vad färgerna betyder + hur ofta varje färg missar och hur många per omgång (baktestet med budgeten, kupong A)
+function colorBox(list) {
+  const b = list?.find((x) => x.key === "budget");
+  const c = b?.colorStats;
+  const num = (x) => (x == null ? "–" : String(x).replace(".", ","));
+  const row = (k, badge, text) => {
+    const s = c?.[k];
+    return `<tr><th>${badge}</th><td>${text}</td>${c ? `<td>${num(s?.perDraw)}</td><td>${s ? `<b>${pct(s.rate)}</b> <small>(${s.miss} av ${s.n})</small>` : "–"}</td><td>${s ? pct(s.exp) : "–"}</td>` : ""}</tr>`;
+  };
+  return `<details class="st-method st-colors"><summary>Vad betyder färgerna?</summary>
+    <p>Färgen på ett spelat tecken visar hur mycket <b>svenska folket</b> har streckat det. Blått visar att matchen är en <b>spik</b> (bara ett tecken).</p>
+    <div class="st-bt-wrap"><table class="st-bt">
+      <thead><tr><th>Färg</th><th>Betyder</th>${c ? "<th>Per omgång</th><th>Missar</th><th>Väntat</th>" : ""}</tr></thead>
+      <tbody>
+        ${row("green", `<span class="st-in c-green">Grön</span>`, "Favorit – folket har streckat tecknet minst 45 %")}
+        ${row("yellow", `<span class="st-in c-yellow">Gul</span>`, "Mellan – folket 21–44 %")}
+        ${row("red", `<span class="st-in c-red">Röd</span>`, "Skräll – folket högst 20 %. Ger hög utdelning om den går in")}
+        ${row("blue", `<span class="st-tip spik">Blå</span>`, "Spik – vi spelar bara ett tecken i matchen")}
+      </tbody></table></div>
+    ${c ? `<p class="st-sub">Från baktestet med budgeten (${b.draws} omgångar, ${esc(b.from)} – ${esc(b.to)}), grundraden i kupong A. <b>Per omgång</b> = antal spelade tecken med den färgen (13 matcher, helgarderingar räknas som tre tecken). <b>Missar</b> = tecknet blev inte resultatet. Ett tecken i en gardering kan missa utan att kupongen missar – i en helgardering missar alltid två av tre tecken, därför missar gula (oftast i helgarderingar) mest. För blå räknas matchen: spiken sprack. <b>Väntat</b> = hur ofta våra procent sa att det skulle bli fel.</p>` : ""}
+  </details>`;
+}
+
 // Budgettabell: varje omgång 2025/26 + 2026/27 med PL-match, nuvarande version, insats/vinst och antal rader per antal rätt
 function budgetBox(list, krFmt) {
   const b = list?.find((x) => x.key === "budget");
@@ -546,6 +569,7 @@ function render() {
   const info = `<div class="st-summary">
     ${p.note ? `<p class="st-note">${esc(p.note)}</p>` : ""}
     ${p.value ? `<p class="st-value ${esc(p.value.level)}">${esc(p.value.text)}</p>` : ""}
+    ${colorBox(product === "stryktipset" ? data.backtest : null)}
     ${backtestBox(data.backtest, krFmt)}
     ${product === "stryktipset" ? budgetBox(data.backtest, krFmt) : ""}
     <details class="st-method"><summary>Hur räknas procenten?</summary>

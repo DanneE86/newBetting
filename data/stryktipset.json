@@ -9994,6 +9994,36 @@
         "ge13": 0,
         "chance": 401
       },
+      "colorStats": {
+        "green": {
+          "perDraw": 10.21,
+          "n": 388,
+          "miss": 205,
+          "rate": 0.53,
+          "exp": 0.49
+        },
+        "blue": {
+          "perDraw": 4.89,
+          "n": 186,
+          "miss": 85,
+          "rate": 0.46,
+          "exp": 0.42
+        },
+        "yellow": {
+          "perDraw": 15.87,
+          "n": 603,
+          "miss": 413,
+          "rate": 0.68,
+          "exp": 0.69
+        },
+        "red": {
+          "perDraw": 1.13,
+          "n": 43,
+          "miss": 27,
+          "rate": 0.63,
+          "exp": 0.73
+        }
+      },
       "pairChance": 234,
       "perDraw": [
         {
