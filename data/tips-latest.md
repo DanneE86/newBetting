@@ -543,10 +543,6 @@ Masterdata: data/betting-store.json. Uppdatera: .\scripts\Update-BettingStore.ps
 | 2026-10-09 Kashiwa Reysol vs Vissel Kobe (JP1) | O/U 2.5 | UNDER 2.5 | - | Inga odds | - | - | - | - |
 | 2026-10-09 Fortaleza CEIF vs Millonarios (COL) | 1X2 | 2 | - | Inga odds | - | - | - | - |
 | 2026-10-09 Fortaleza CEIF vs Millonarios (COL) | O/U 2.5 | UNDER 2.5 | - | Inga odds | - | - | - | - |
-| 2026-10-09 AB Gladsaxe vs Aarhus Fremad (DK2) | 1X2 | 1 | - | Inga odds | - | - | - | - |
-| 2026-10-09 AB Gladsaxe vs Aarhus Fremad (DK2) | O/U 2.5 | UNDER 2.5 | - | Inga odds | - | - | - | - |
-| 2026-10-09 Vejle vs Hvidovre (DK2) | 1X2 | 1 | - | Inga odds | - | - | - | - |
-| 2026-10-09 Vejle vs Hvidovre (DK2) | O/U 2.5 | OVER 2.5 | - | Inga odds | - | - | - | - |
 | 2026-10-09 Nordsjaelland vs Odense (DK) | 1X2 | 1 | 1.52 | Ej varde | 1.67 | 500 kr -> +260 kr (1:0.52, EV -29 kr) | 62.0% / 65.8% | - |
 | 2026-10-09 Nordsjaelland vs Odense (DK) | O/U 2.5 | UNDER 2.5 | 2.82 | Ej varde | 3.21 | 500 kr -> +910 kr (1:1.82, EV -25 kr) | 33.7% / 35.5% | - |
 | 2026-10-09 Braunschweig vs Holstein Kiel (BL2) | 1X2 | 2 | 2.45 | Ej varde | 2.75 | 500 kr -> +725 kr (1:1.45, EV -40 kr) | 37.6% / 40.8% | - |
@@ -675,12 +671,6 @@ Masterdata: data/betting-store.json. Uppdatera: .\scripts\Update-BettingStore.ps
 | 2026-10-10 Virtus Entella vs Juve Stabia (SB) | O/U 2.5 | UNDER 2.5 | 1.78 | Ej varde | 1.99 | 500 kr -> +390 kr (1:0.78, EV -30 kr) | 52.8% / 56.2% | - |
 | 2026-10-10 Charlotte vs FC Dallas (MLS) | 1X2 | 1 | 1.92 | Ej varde | 2.24 | 500 kr -> +460 kr (1:0.92, EV -50 kr) | 46.9% / 52.1% | - |
 | 2026-10-10 Charlotte vs FC Dallas (MLS) | O/U 2.5 | OVER 2.5 | 1.5 | Ej varde | 1.73 | 500 kr -> +250 kr (1:0.5, EV -30 kr) | 62.6% / 66.7% | - |
-| 2026-10-10 Esbjerg vs AaB (DK2) | 1X2 | 1 | - | Inga odds | - | - | - | - |
-| 2026-10-10 Esbjerg vs AaB (DK2) | O/U 2.5 | OVER 2.5 | - | Inga odds | - | - | - | - |
-| 2026-10-10 Hobro vs Kolding (DK2) | 1X2 | 1 | - | Inga odds | - | - | - | - |
-| 2026-10-10 Hobro vs Kolding (DK2) | O/U 2.5 | OVER 2.5 | - | Inga odds | - | - | - | - |
-| 2026-10-10 Hillerød vs Fredericia (DK2) | 1X2 | 1 | - | Inga odds | - | - | - | - |
-| 2026-10-10 Hillerød vs Fredericia (DK2) | O/U 2.5 | UNDER 2.5 | - | Inga odds | - | - | - | - |
 | 2026-10-10 New England Revolution vs Seattle Sounders (MLS) | 1X2 | 1 | 1.72 | Ej varde | 1.96 | 500 kr -> +360 kr (1:0.72, EV -37 kr) | 53.8% / 58.1% | - |
 | 2026-10-10 New England Revolution vs Seattle Sounders (MLS) | O/U 2.5 | UNDER 2.5 | 2.85 | Ej varde | 3.19 | 500 kr -> +925 kr (1:1.85, EV -16 kr) | 34.0% / 35.1% | - |
 | 2026-10-10 Darmstadt vs Cottbus (BL2) | 1X2 | 1 | 2.08 | Ej varde | 2.32 | 500 kr -> +540 kr (1:1.08, EV -37 kr) | 44.5% / 48.1% | - |
@@ -947,8 +937,6 @@ Masterdata: data/betting-store.json. Uppdatera: .\scripts\Update-BettingStore.ps
 | 2026-10-11 Aalesund vs Sarpsborg 08 (NO) | O/U 2.5 | OVER 2.5 | 1.44 | Ej varde | 1.64 | 500 kr -> +220 kr (1:0.44, EV -26 kr) | 65.9% / 69.4% | - |
 | 2026-10-11 Teplice vs Sigma Olomouc (CZ) | 1X2 | 1 | 2.62 | Ej varde | 3.08 | 500 kr -> +810 kr (1:1.62, EV -40 kr) | 35.1% / 38.2% | - |
 | 2026-10-11 Teplice vs Sigma Olomouc (CZ) | O/U 2.5 | OVER 2.5 | - | Inga odds | - | - | - | - |
-| 2026-10-11 Vendsyssel vs Køge (DK2) | 1X2 | 1 | - | Inga odds | - | - | - | - |
-| 2026-10-11 Vendsyssel vs Køge (DK2) | O/U 2.5 | OVER 2.5 | - | Inga odds | - | - | - | - |
 | 2026-10-11 Fredrikstad vs Tromso (NO) | 1X2 | 2 | 2.41 | Ej varde | 2.59 | 500 kr -> +705 kr (1:1.41, EV -20 kr) | 39.8% / 41.5% | - |
 | 2026-10-11 Fredrikstad vs Tromso (NO) | O/U 2.5 | OVER 2.5 | 1.8 | Ej varde | 1.97 | 500 kr -> +400 kr (1:0.8, EV -19 kr) | 53.4% / 55.6% | - |
 | 2026-10-11 Gremio vs Internacional (BR) | 1X2 | 1 | 2.35 | Ej varde | 2.65 | 500 kr -> +675 kr (1:1.35, EV -34 kr) | 39.6% / 42.5% | - |
@@ -1622,7 +1610,6 @@ Facit = Pinnacles odds utan marginal. Pris = basta odds hos unibet_se, leovegas_
 | SE2 | 385 | 0.2224 | - | - | - | - | - (0) |
 | NO2 | 369 | 0.2108 | - | - | - | - | - (0) |
 | BR2 | 619 | 0.2162 | - | - | - | - | - (0) |
-| DK2 | 192 | 0.2156 | - | - | - | - | - (0) |
 | CZ | 288 | 0.2123 | - | - | - | - | - (0) |
 | HR | 174 | 0.2027 | - | - | - | - | - (0) |
 

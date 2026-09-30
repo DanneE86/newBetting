@@ -861,7 +861,7 @@ function evaluate() {
 
 /**
  * Oddshistorik per match: forsta och senaste pris fore avspark (bast pris + marginalfritt facit).
- * Senaste snapshot = "stangning" i ligor dar football-data saknar closing (Div 1, DK2, JP3, HR, CZ ...),
+ * Senaste snapshot = "stangning" i ligor dar football-data saknar closing (Div 1, HR, CZ ...),
  * forsta = "oppning". Ledgern raknar CLV mot den och marketTest provar modellen mot den nar matchen spelats.
  */
 function recordOddsHistory(proByKey) {

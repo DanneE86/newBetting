@@ -111,7 +111,6 @@ Här kan inget mätas mot marknaden. Filerna visar profil, säsonger, modellens 
 | [Europa League](ligor/EL.md) (cup) | 0 | 0 |
 | [Conference League](ligor/ECL.md) (cup) | 0 | 0 |
 | [OBOS-ligaen](ligor/NO2.md) | 424 | 16 |
-| [1. division](ligor/DK2.md) | 246 | 12 |
 | [HNL](ligor/HR.md) | 227 | 10 |
 | [Chance Liga](ligor/CZ.md) | 341 | 16 |
 | [Primera A](ligor/COL.md) | 757 | 20 |

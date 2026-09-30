@@ -64,7 +64,7 @@ npx playwright test --project=lardomar --reporter=line
 Enskilda matcher är något annat än Stryktipset/Europatipset: där spelas en rad per match mot bolagets pris, inte ett system mot folkets streck. Gå igenom **varje liga i webben** (`config/leagues.json`, 34 st), inte bara den som syns i en skärmbild:
 
 1. **Finns odds?** Läs `marketTest[liga]` i `data/reports/pro-evaluation.json`. Är marknaden bättre (`modelAddsInfo: false`) styr oddsen tipset (`marketLedTips`). Kontrollera att tipsen i `data/tips-latest.json` har `marketLed` i ligan.
-2. **Ingen oddshistorik** (COL, BR2, SE2, SE3N, SE3S, NO2, DK2, CZ, HR): tipsen följer modellen. Jämför modellens träff (`accuracyByLeague` i `data/betting-store.json`) med att alltid tippa hemmavinst. Är modellen sämre, granska ligans parametrar (`npm run tune`) och säg det. Ligafilen flaggar det.
+2. **Ingen oddshistorik** (COL, BR2, SE2, SE3N, SE3S, NO2, CZ, HR): tipsen följer modellen. Jämför modellens träff (`accuracyByLeague` i `data/betting-store.json`) med att alltid tippa hemmavinst. Är modellen sämre, granska ligans parametrar (`npm run tune`) och säg det. Ligafilen flaggar det.
 3. **Kryss tippas nästan aldrig**, och det är korrekt för ett träff-tips. Värdet i kryss syns i Värde/Ej värde-omdömet, inte i tipset.
 4. Rapportera per liga: tips med odds / utan, oddsstyrda, modellens träff mot baslinjen, och vad som saknas (odds, xG, trupp).
 
