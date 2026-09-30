@@ -106,14 +106,15 @@ async function load(force = false) {
 }
 
 // ---------- Rendering ----------
-const COLOR_LABEL = { green: "Grön · favorit", yellow: "Gul", red: "Röd · skräll" };
+const COLOR_LABEL = { green: "Grön · favorit", yellow: "Gul", red: "Röd · skräll", blue: "Blå · spik" };
 function probRow(e) {
   const names = [e.home, "Oavgjort", e.away];
   return `<div class="st-probs">${SIGNS.map((s, i) => {
     const inSys = e.systemPick ? e.systemPick.signs.includes(s) : e.tip === s;
     const hit = e.result?.outcome === s;
     const sv = e.streckvarde?.[i];
-    const col = inSys && e.colors ? e.colors[i] : null;
+    // Spik (ett tecken i system A) alltid blå, annars färg efter folkets streck
+    const col = !inSys ? null : e.systemPick?.signs.length === 1 ? "blue" : e.colors ? e.colors[i] : null;
     return `<div class="st-prob${inSys ? " tip" : " out"}${col ? ` c-${col}` : ""}${hit ? " hit" : ""}">
       <div class="st-prob-top"><span class="st-sign">${s}</span><span class="st-team">${esc(names[i])}</span>${inSys ? `<span class="st-in${col ? ` c-${col}` : ""}" title="Tecknet spelas · färg efter folkets streck">${col ? COLOR_LABEL[col] : "✓ spelas"}</span>` : ""}${e.systemPickB?.signs.includes(s) ? `<span class="st-b" title="Spelas i system B">B</span>` : ""}<strong>${pct(e.final[i])}</strong></div>
       <div class="st-bar"><span style="width:${Math.round(e.final[i] * 100)}%"></span></div>
