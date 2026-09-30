@@ -649,26 +649,7 @@ function renderSources(sources) {
   $("#source-pills").innerHTML = pills.map((p) => `<span class="pill">${escapeHtml(p)}</span>`).join("");
 }
 
-// TILLFÄLLIGT: lag som truppkontrollen (npm run trupper:kontroll) inte hittade hos Transfermarkt.
-// Visas överst under "Alla" tills användaren kollat upp dem – töm listan (eller ta bort) när det är klart.
-const SQUAD_TODO = [
-  { league: "DK2", team: "AaB" },
-  { league: "DK2", team: "AB Gladsaxe" },
-  { league: "AR", team: "Gimnasia Mendoza" },
-  { league: "AR", team: "Aldosivi" },
-  { league: "AR", team: "Estudiantes Rio Cuarto" },
-];
-function renderSquadTodo() {
-  const box = $("#squad-todo");
-  if (!box) return;
-  box.hidden = state.league !== "ALL" || !SQUAD_TODO.length;
-  if (box.hidden) return;
-  box.innerHTML = `<b>Att kolla upp:</b> truppen kunde inte kontrolleras mot Transfermarkt (laget hittades inte där) –
-    ${SQUAD_TODO.map((t) => `${escapeHtml(t.team)} <span class="squad-todo-lg">${escapeHtml(leagueName(t.league))}</span>`).join(" · ")}`;
-}
-
 function syncLeaguePills() {
-  renderSquadTodo();
   const sel = state.league;
   document.querySelectorAll("#league-filters .filter-pill, #league-sub .filter-pill").forEach((btn) => {
     const g = btn.dataset.group;

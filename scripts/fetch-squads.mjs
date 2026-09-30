@@ -9,7 +9,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { root } from './lib/learnings-data.mjs';
 import { nameScore } from './lib/match-context.mjs';
-import { TM_COMP, tmClubs, tmSquad } from './lib/transfermarkt.mjs';
+import { TM_COMP, TM_TEAM_ID, tmClubs, tmSquad } from './lib/transfermarkt.mjs';
 
 const FM = 'https://www.fotmob.com/api/data';
 // FotMob-liga per kod (grupp = tabellnamn i ligor med flera tabeller, t.ex. Ettan Norra/Sodra)
@@ -208,7 +208,8 @@ for (const [code, spec] of Object.entries(FOTMOB)) {
         squad = { coach, players, fetchedAt: now };
       } else if (TM_COMP[code] && (tmList ??= await tmClubs(code)).length) {
         // FotMob saknar trupp: Transfermarkt
-        const tm = tmList.filter((c) => !tmUsed.has(c.id)).map((c) => ({ c, s: Math.max(nameScore(fold(t.fotmobName), null, fold(c.name)), nameScore(fold(t.team), null, fold(c.name))) }))
+        const fixed = TM_TEAM_ID[`${code}|${t.team}`]; // galler aven utanfor Transfermarkts ligalista
+        const tm = fixed ? { c: tmList.find((c) => c.id === fixed) ?? { id: fixed, name: t.team }, s: 2 } : tmList.filter((c) => !tmUsed.has(c.id)).map((c) => ({ c, s: Math.max(nameScore(fold(t.fotmobName), null, fold(c.name)), nameScore(fold(t.team), null, fold(c.name))) }))
           .sort((a, b) => b.s - a.s)[0];
         const sq = tm?.s >= 0.5 ? await tmSquad(tm.c.id) : null;
         if (sq) { tmUsed.add(tm.c.id); teamsFetched++; squad = { ...sq, fetchedAt: now, source: 'Transfermarkt', tmId: tm.c.id }; console.log(`  ${t.team}: Transfermarkt (${tm.c.name}, ${sq.players.length} spelare)`); }
