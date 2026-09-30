@@ -10,7 +10,7 @@ const UTD_MIN = { stryktipset: 30000, europatipset: 20000 }; // kupong A, samma 
 
 let data = null;
 let product = null;
-// Adresser: /tips, /stryktipset, /europatipset (dold i menyn, nås bara via adressen).
+// Adresser: /tips, /stryktipset, /europatipset.
 // Undersidor: /stryktipset/backtest öppnar backtestet. Gamla adresser (/<spel>/b, /<spel>/reducera, #stryktips,
 // #stryktips/backtest, #stryktips/<spel>/reducera) skickas vidare till spelets sida.
 const POOLS = ["stryktipset", "europatipset"];
@@ -66,13 +66,10 @@ function setView(v, push = false) {
   }
   if (push && location.pathname !== viewPath(v)) history.pushState(null, "", viewPath(v));
   else if (!push && location.pathname === "/") history.replaceState(null, "", viewPath(v));
-  // Europatipset sparas inte som senaste flik: den ska bara nås via adressen
-  if (pool !== "europatipset") {
-    try {
-      localStorage.setItem("betting.view", v);
-    } catch {
-      /* privat lage */
-    }
+  try {
+    localStorage.setItem("betting.view", v);
+  } catch {
+    /* privat lage */
   }
   if (st) {
     if (!data && !loading) load();
@@ -835,4 +832,4 @@ try {
 }
 // Adressen går först, annars senast valda flik (äldre sparat värde "stryktips" = Stryktipset)
 if (saved === "stryktips" || saved === "stryktipset-b") saved = "stryktipset";
-setView(route.view || (saved === "stryktipset" ? saved : "tips"));
+setView(route.view || (POOLS.includes(saved) ? saved : "tips"));
