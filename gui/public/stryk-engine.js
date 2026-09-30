@@ -158,6 +158,37 @@ function colorRuleOptions(all, minRows, target, bands = null, fixed = null) {
 const fitsColors = (c, r) => c[0] >= r[0][0] && c[0] <= r[0][1] && c[1] >= r[1][0] && c[1] <= r[1][1] && c[2] >= r[2][0] && c[2] <= r[2][1];
 // Högst så många färgkombinationer provas per grundrad (bästa först); resten ger sällan något när skrällregeln fallerar
 const MAX_COLOR_OPTIONS = 60;
+// Exakt utdelningsgräns (användaren 2026-09-30: "30k, inte mindre, inte mer"): gränsen i Gambling Cabin-länken är alltid
+// spelets regel och budgeten nås med grundrad och färgregler i stället för att höja gränsen. Går det inte höjs gränsen
+// som reserv, och kupongen säger det. Raderna grupperas per färgtriplett så att många kombinationer kan provas snabbt.
+// Samma som fetch-stryktipset.mjs.
+const COLOR_TRIM_EXACT = 3;
+function exactColorOptions(all, minRows, maxRows, fixed = null) {
+  const groups = new Map();
+  for (const r of all) {
+    const k = r.c.join(",");
+    const g = groups.get(k) || { c: r.c, n: 0, p: 0 };
+    g.n++; g.p += r.p;
+    groups.set(k, g);
+  }
+  const gl = [...groups.values()];
+  const lo = [13, 13, 13], hi = [0, 0, 0];
+  for (const g of gl) for (let c = 0; c < 3; c++) { if (g.c[c] < lo[c]) lo[c] = g.c[c]; if (g.c[c] > hi[c]) hi[c] = g.c[c]; }
+  const ranges = fixed || [0, 1, 2].map((c) => {
+    const out = [];
+    const w = Math.min(COLOR_WIDTH, hi[c] - lo[c]);
+    for (let a = lo[c]; a <= Math.min(lo[c] + COLOR_TRIM_EXACT, hi[c]); a++) for (let b = Math.max(hi[c] - COLOR_TRIM_EXACT, a + w); b <= hi[c]; b++) out.push([a, b]);
+    return out.length ? out : [[lo[c], hi[c]]];
+  });
+  const opts = [];
+  for (const g of ranges[0]) for (const y of ranges[1]) for (const rd of ranges[2]) {
+    const rule = [g, y, rd];
+    let n = 0, p = 0;
+    for (const x of gl) if (fitsColors(x.c, rule)) { n += x.n; p += x.p; }
+    if (n >= minRows && n <= maxRows) opts.push({ rule, score: p, width: g[1] - g[0] + y[1] - y[0] + rd[1] - rd[0] });
+  }
+  return opts.sort((a, b) => b.score - a.score || a.width - b.width);
+}
 
 function gcPayoutFloor(gcTurnover, realTurnover, jackpot, payoutMin) {
   if (payoutMin <= 0) return 0;
@@ -181,10 +212,11 @@ function redShareOk(events, grund, kept, redMax, favMin = FAV_MIN_SHARE) {
 // Raderna i en grundrad (efter tecken- och utdelningsregler) räknas en gång per grundrad och regeluppsättning och
 // återanvänds när reservordningen provar färg- och skrällregler igen (annars upp till 40 omräkningar).
 const walkCache = new WeakMap();
-function reduceSystem(events, grund, { rowPrice = 1, turnover, signMin, realTurnover = turnover, jackpot = 0, payoutMin, budget, redMax = 1, favMin = FAV_MIN_SHARE, colorTarget = true }) {
+function reduceSystem(events, grund, { rowPrice = 1, turnover, signMin, realTurnover = turnover, jackpot = 0, payoutMin, budget, redMax = 1, favMin = FAV_MIN_SHARE, colorTarget = true, exactFloor = true }) {
   const minRows = Math.ceil(budget.min / rowPrice), maxRows = Math.floor(budget.max / rowPrice);
   const T = turnover;
-  const floor = gcPayoutFloor(T, realTurnover, jackpot, payoutMin);
+  // Exakt: gränsen i Gambling Cabins formel är regeln själv. Reserv: verklig utdelning >= regeln, gränsen höjs till budgeten.
+  const floor = exactFloor ? payoutMin : gcPayoutFloor(T, realTurnover, jackpot, payoutMin);
   const colorIdx = events.map((e) => [0, 1, 2].map((k) => COLOR_KEYS.indexOf(signColor(e.folk?.[k]))));
   const cacheKey = `${signMin.join()}|${floor}|${T}|${realTurnover}|${jackpot}`;
   const byGrund = walkCache.get(grund) || new Map();
@@ -217,8 +249,10 @@ function reduceSystem(events, grund, { rowPrice = 1, turnover, signMin, realTurn
   const spikes = grund.sets.filter((x) => x.length === 1).length;
   const target = colorTarget ? dynamicRanges(events, grund, colorIdx) : null;
   if (target && target.some((x) => !x.length)) return null;
-  for (const opt of colorRuleOptions(all, minRows, Math.round((minRows + maxRows) / 2), null, target).slice(0, MAX_COLOR_OPTIONS)) {
-    const cut = cutRows(all.filter((r) => fitsColors(r.c, opt.rule)), floor, minRows, maxRows);
+  const options = exactFloor ? exactColorOptions(all, minRows, maxRows, target) : colorRuleOptions(all, minRows, Math.round((minRows + maxRows) / 2), null, target);
+  for (const opt of options.slice(0, MAX_COLOR_OPTIONS)) {
+    const pool = all.filter((r) => fitsColors(r.c, opt.rule));
+    const cut = exactFloor ? { t: payoutMin, kept: pool } : cutRows(pool, floor, minRows, maxRows);
     if (!cut) continue;
     const kept = cut.kept;
     if (!redShareOk(events, grund, kept, redMax, favMin)) continue;
@@ -229,7 +263,7 @@ function reduceSystem(events, grund, { rowPrice = 1, turnover, signMin, realTurn
       grundRows: grund.rows, afterPayout: all.length, rows: kept.length, cost: kept.length * rowPrice, rowPrice,
       hitAll: hit, grundHit: grund.hitAll, expectedPayout: hit ? ev / hit : null, expectedReturn: ev,
       rules: {
-        payoutMin: Math.max(0, cut.t), payoutMinReal: payoutMin, jackpot, realTurnover, signMin, turnover: T,
+        payoutMin: Math.max(0, cut.t), payoutMinReal: payoutMin, payoutExact: exactFloor, jackpot, realTurnover, signMin, turnover: T,
         colorRules: { green: opt.rule[0], yellow: opt.rule[1], red: opt.rule[2], pink: [spikes, spikes] }, colorTarget: Boolean(target),
       },
       rowList: kept.map((r) => r.row.map((k) => SIGNS[k]).join("")),
@@ -318,11 +352,14 @@ function buildWithLadder(events, forced, base, budget, exclude, { avoid = null, 
   for (const maxSame of sameLadder) {
   if (!candCache.has(maxSame)) candCache.set(maxSame, grundCandidates(events, GRUND_MAX_ROWS, forced, maxSame == null ? null : { sets: avoid, maxSame, locked: avoidLocked }, base.spikMin || 0));
   const cands = candCache.get(maxSame);
+  // Exakt utdelningsgräns är viktigare än färgfönster och skrällgräns: den höjs först när de har släppts
+  for (const exactFloor of [true, false]) {
   for (const [redMax, favMin] of shareLevels) {
     for (const colorTarget of [true, false]) {
-      const best = bestReduced(events, cands, { ...base, signMin: sm, payoutMin: base.payoutMin * pf, budget: b, redMax, favMin, colorTarget }, exclude, avoid);
+      const best = bestReduced(events, cands, { ...base, signMin: sm, payoutMin: base.payoutMin * pf, budget: b, redMax, favMin, colorTarget, exactFloor }, exclude, avoid);
       if (best) {
         const relaxed = [];
+        if (!exactFloor && pf === 1) relaxed.push(`utdelningsgränsen ${Math.round(base.payoutMin).toLocaleString("sv-SE")} kr gav inte ${budget.min}–${budget.max} kr med exakt gräns – den höjdes till ${Math.round(best.reduced.rules.payoutMin).toLocaleString("sv-SE")} kr i länken`);
         if (!colorTarget) relaxed.push("färgfönstren runt det väntade antalet gick inte att hålla – färgerna optimerades fritt");
         if (redMax === 1) relaxed.push(`skrällgränsen (rött tecken på högst ${Math.round(RED_MAX_SHARE * 100)} % av raderna) gick inte att hålla`);
         if (favMin === 0) relaxed.push(`favoriten på minst ${Math.round(FAV_MIN_SHARE * 100)} % av raderna gick inte att hålla`);
@@ -333,6 +370,7 @@ function buildWithLadder(events, forced, base, budget, exclude, { avoid = null, 
         return { ...best, relaxed };
       }
     }
+  }
   }
   }
   }
