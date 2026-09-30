@@ -380,6 +380,28 @@ Rätt rad 2025/26 (33 ST-omgångar med PL-match), antal tecken per omgång i fol
 - Att tvinga reglerna att släppa igenom kärnan (p10–p90) blir för brett och sämre, som breda regler tidigare.
 - Rätt rad låg i grundraden bara 2 av 76 gånger på Stryktipset, så nettot styrs av 10–12-rättsrader. Följ upp efter 12+ nya omgångar.
 
+## Kupong C och spikgränsen (2026-09-30, Stryktipset 38 omg + Europatipset 55 omg)
+
+Kupong C är ett eget system på 700–850 kr med minst 30 000 kr för 13 rätt. Baktest av tio varianter per spel och sedan spikgränser:
+
+| Kupong C | ST netto | ST 12+ / 11+ / 10+ | ET netto | ET 12+ / 11+ / 10+ |
+|---|---|---|---|---|
+| Start (4-2-2, färgfönster, max 4 spikar) | −25 112 | 1 / 12 / 129 | −12 651 | 8 / 94 / 522 |
+| Teckenregler 3-2-2 | −24 835 | 1 / 15 / 144 | **−10 042** | 8 / 105 / 602 |
+| Inga teckenregler | −18 974 | 2 / 40 / 253 | −20 752 | 7 / 90 / 506 |
+| Max 2 spikar | −20 731 | 2 / 45 / 281 | −33 762 | 1 / 32 / 230 |
+| Spik bara om favoriten ≥ 65 % | **−6 341** | 8 / 51 / 258 | −34 143 | 1 / 28 / 205 |
+| Utdelning minst 20 000 kr | −25 112 | 1 / 12 / 129 | +8 918 (en 13-rätt) | 14 / 88 / 432 |
+| Utdelning minst 50 000 kr | −26 080 | 0 / 10 / 117 | +99 711 (en 13-rätt) | 10 / 64 / 370 |
+
+Lärdomar:
+- **Spikar på favoriter 50–65 % spricker ofta:** 46–49 % på Stryktipset och 40–44 % på Europatipset. Favoriter ≥ 65 % spricker 26–28 % respektive 15–17 %.
+- **Stryktipset: spik bara på favoriter ≥ 65 %** (gäller A, B och C). A+B −22 557 → −10 194 kr (11+ 23 → 35), C −25 112 → −8 928 (11+ 12 → 48). Modellen är för säker på engelska favoriter (väntad 13 rätt sjunker, utfallet blir bättre).
+- **Europatipset: ingen spikgräns** (den gjorde allt sämre), men C med teckenregler 3-2-2: −10 024 kr, 11+ 105.
+- Rätt rad låg i C:s grundrad 4 gånger på Europatipset men föll bort i reduceringen alla 4 gångerna. Två gånger betalade 13 rätt bara 3 500–5 300 kr (rätt att den föll bort). En gång, omgång 2545, betalade 13 rätt 32 668 kr, men gränsen hade höjts till 31 140 kr för att få plats i budgeten. Med 20 000 kr tog C 13 rätt där. Utdelningsgränsen för C är kvar på 30 000 kr (användarens regel).
+- Delat system (A+B): favoritregeln kan inte släppas där. Går det inte byggs A och B var för sig, och favoritregeln släpps bara om ingen kupong alls går att bygga.
+- Webbens kupongmotor: tecken- och utdelningsreglerna släpps sist, och högst 60 färgkombinationer provas. Det tog Stryktipset från 17 s till under 1 s.
+
 ## Robusta lärdomar (stöds av hela urvalet)
 
 1. **Oddsen slår vår lagmodell.** Logloss över 216 matcher, där lägre är bättre:
@@ -443,6 +465,8 @@ Rätt rad 2025/26 (33 ST-omgångar med PL-match), antal tecken per omgång i fol
 Nettot styrs av enstaka träffar: A:s plus kommer från en enda rad med 12 rätt. Med 65 % återbetalning är det normala förväntade utfallet negativt. Nettot säger därför lite om kvaliteten, och rader med 11+ rätt är ett bättre mått.
 
 ## Ändringslogg
+
+- **2026-09-30 (natt, C-backtest):** Egna krav för kupong C (knapparna C och Alla; A+B gäller inte C). C byggs även i fetch-stryktipset.mjs och backtestas. Stryktipset: spik bara på favoriter ≥ 65 % (A, B, C). Europatipset C: 3-2-2. Favoritregeln släpps sist (efter skrällgränsen) och aldrig i delat system. Se avsnittet om kupong C.
 
 - **2026-09-30 (natt, C):** Kupong C på sidan: ett eget system på 700–850 kr, oberoende av A och B och utan krav, samma regler som A och minst 30 000 kr för 13 rätt (användarens beslut). Europatipset 2612: 728 rader, chans 1 på 213; Stryktipset 4972: 774 rader, 1 på 184. Inte backtestad än (byggs bara i webbläsaren).
 

@@ -111,8 +111,16 @@ test('Stryktipset: en sida, egna krav genererar kupong A och B', async ({ page }
   expect(cCost).toBeGreaterThanOrEqual(700);
   expect(cCost).toBeLessThanOrEqual(850);
   await expect(page.locator('.sb-coupon').nth(2)).toContainText('minst 30 000 kr');
-  await expect(page.locator('.sb-coupon').nth(2)).toContainText('gäller inte C');
+  // Krav på A+B låses inte i C
   await expect(table.nth(0).locator('td').nth(3)).not.toContainText('🔒');
+  // Eget krav på C: spik 2 på match 8 bara i C
+  await rows.nth(7).locator('.sb-sign[data-sign="2"]').click();
+  await rows.nth(7).locator('.sb-scope button[data-scope="C"]').click();
+  await page.click('#sb-generate');
+  await expect(table.nth(7).locator('td').nth(3)).toHaveText('🔒 2');
+  await expect(table.nth(7).locator('td').nth(1)).not.toContainText('🔒');
+  await expect(table.nth(7).locator('td').nth(2)).not.toContainText('🔒');
+  await rows.nth(7).locator('.sb-sign[data-sign="2"]').click();
   // Turmatcher och vanliga missar visas
   await expect(page.locator('.st-miss')).toContainText('Vanliga missar');
   await expect(page.locator('.st-miss-table tbody tr').first()).toBeVisible();

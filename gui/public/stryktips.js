@@ -428,7 +428,7 @@ function turExplain(e, t, { actions = false, krav = null } = {}) {
     : "";
   const saved = t.hist && t.g.miss ? ` Det hade räddat ${t.g.by[t.rescue]} av de ${t.g.miss} felen.` : "";
   const lg = t.league ? `<li>Extra: spikar i ${esc(t.league.name)} går sönder ofta, ${pct(t.league.rate)} av gångerna.</li>` : "";
-  const lockedA = ["both", "A"].includes(krav?.scope);
+  const lockedA = ["both", "A", "all"].includes(krav?.scope);
   const btn = actions
     ? (lockedA
       ? `<p class="tur-hint">Du har själv låst den här matchen i kupong A. Vill du ändra, klicka på tecknen i listan.</p>`
@@ -463,7 +463,7 @@ function missPanel(p, events, { bCoupon = null, actions = false, kravFor = () =>
             <span class="st-tip ${t.signs.length === 1 ? "spik" : "halv"}">${esc(t.signs.split("").join(" + "))}</span>
             <span class="st-chip tur">missar ${pct(t.rate)}</span>
             ${bCoupon ? `<span class="st-chip ${bCovers ? "good" : "bad"}">${bCovers ? `B täcker ${esc(t.rescue)}` : `B saknar ${esc(t.rescue)}`}</span>` : ""}
-            ${actions ? (["both", "A"].includes(kravFor(e.eventNumber)?.scope)
+            ${actions ? (["both", "A", "all"].includes(kravFor(e.eventNumber)?.scope)
               ? `<span class="st-sub" title="Ändra kravet i listan ovan om B ska spelas annorlunda">Ditt krav gäller A</span>`
               : `<button type="button" class="btn-ghost sb-tur-add" data-ev="${e.eventNumber}" data-signs="${esc(t.kravSigns)}">Krav ${esc(t.kravSigns)} i B</button>`) : ""}
           </div>
@@ -503,7 +503,7 @@ function missPanel(p, events, { bCoupon = null, actions = false, kravFor = () =>
       <div>
         <h3>🍀 Turmatcher i omgången <small>${turs.length} st · kupong A</small></h3>
         <p class="st-sub">Matchtyper som historiskt har missat minst ${Math.round(TUR_RATE * 100)} % av gångerna – här krävs tur för 13 rätt${turs.length ? `. Chans att alla håller: ${pct(pOk)}` : ""}.${actions ? " Lägg in tecknet som oftast kom i stället som krav i kupong B, så täcker B det A missar." : ""}</p>
-        ${actions && turs.some(({ e }) => !["both", "A"].includes(kravFor(e.eventNumber)?.scope)) ? `<button type="button" class="btn-ghost sb-tur-all">Lägg turmatcherna som krav i B</button>` : ""}
+        ${actions && turs.some(({ e }) => !["both", "A", "all"].includes(kravFor(e.eventNumber)?.scope)) ? `<button type="button" class="btn-ghost sb-tur-all">Lägg turmatcherna som krav i B</button>` : ""}
         ${list}
       </div>
       <div>
@@ -582,9 +582,10 @@ function render() {
 }
 
 // ---------- Stryktipset B: egna krav ----------
-// Krav sparas per spel och omgång i webbläsaren: { signs: "1X", scope }. scope: "both" = båda kupongerna, "A"/"B" = bara den ena.
+// Krav sparas per spel och omgång i webbläsaren: { signs: "1X", scope }. scope: "both" = A och B, "A"/"B"/"C" = bara den
+// kupongen, "all" = alla tre. Kupong C är ett eget system och påverkas bara av "C" och "all".
 // Äldre sparade spikar ({ sign: "1" }) läses som krav med ett tecken.
-const SCOPES = [["both", "Båda"], ["A", "A"], ["B", "B"]];
+const SCOPES = [["both", "A+B"], ["A", "A"], ["B", "B"], ["C", "C"], ["all", "Alla"]];
 const bStates = new Map();
 const bKey = (p) => `betting.spikes.${p.product}.${p.drawNumber}`;
 const kravTxt = (k) => (kravSigns(k) || []).map((i) => SIGNS[i]).join("");
@@ -643,7 +644,7 @@ function couponCard(c, label, p) {
       <div><dt>Chans 13 rätt</dt><dd>${oneIn(c.hitAll)}</dd></div>
       <div><dt>Utdelning 13 rätt</dt><dd>ca ${krFmt(c.expectedPayout || 0)} kr</dd></div>
       <div><dt>Regler</dt><dd>${r.signMin.join("-")} · utdelning minst ${krFmt(r.payoutMinReal ?? r.payoutMin)} kr, inget tak</dd></div>
-      <div><dt>Dina krav</dt><dd>${label === "C" ? "gäller inte C" : locked}</dd></div>
+      <div><dt>Dina krav</dt><dd>${locked}</dd></div>
     </dl>
     ${c.relaxed?.length ? `<p class="st-note">Gick inte med alla regler: ${esc(c.relaxed.join(", "))}.</p>` : ""}
     ${p.open
@@ -743,7 +744,7 @@ function renderB(p, head, info = "") {
     <div class="sb-panel-head">
       <div>
         <h3>1. Välj dina krav</h3>
-        <p class="st-sub">Klicka på ett eller flera tecken per match: 1, X eller 2 är en spik, två tecken (1X, X2, 12) en halvgardering och alla tre en helgardering. Klicka igen för att ta bort ett tecken. Välj sedan om kravet gäller båda kupongerna eller bara A eller B. Procenten är vår sannolikhet.</p>
+        <p class="st-sub">Klicka på ett eller flera tecken per match: 1, X eller 2 är en spik, två tecken (1X, X2, 12) en halvgardering och alla tre en helgardering. Klicka igen för att ta bort ett tecken. Välj sedan vilken kupong kravet gäller: A+B, bara A, B eller C, eller Alla tre. C är ett eget system och påverkas bara av krav på C eller Alla. Procenten är vår sannolikhet.</p>
       </div>
       <div class="st-actions">
         <button type="button" class="btn-ghost" id="sb-clear"${n ? "" : " disabled"}>Rensa krav</button>
@@ -756,7 +757,7 @@ function renderB(p, head, info = "") {
     ? `<section class="sb-panel sb-result">
         <h3>Din kupong</h3>
         ${st.dirty ? `<p class="st-note">Du har ändrat kraven – tryck Generera kupong igen för att uppdatera.</p>` : ""}
-        <p class="st-sub">A och B är två olika system, vardera 350–400 kr. Högst 4 spikar per kupong, och färgreglerna (antal gröna, gula och röda tecken per rad) väljs så att chansen till 13 rätt blir högst – aldrig 0 till max. A: högst chans till 13 rätt, teckenregler 4-2-2, utdelning minst ${(UTD_MIN[p.product] || 30000).toLocaleString("sv-SE")} kr. B: teckenregler 3-3-3, minst 30 000 kr utan tak, högst 2 spikar och ingen halvgardering exakt som i A, aldrig samma tecken som ett krav du låst bara i A, vald för att täcka rader som A saknar.${res.A && res.B ? ` Gemensamma rader: <b>${res.overlap}</b>. A+B tillsammans: chans till 13 rätt <b>${oneIn(res.unionHit)}</b>.` : ""} <b>C</b> är ett helt eget system på 700–850 kr som inte har med A och B att göra: dina krav gäller inte där, samma regler som A och minst 30 000 kr för 13 rätt.</p>
+        <p class="st-sub">A och B är två olika system, vardera 350–400 kr. Högst 4 spikar per kupong, och färgreglerna (antal gröna, gula och röda tecken per rad) väljs så att chansen till 13 rätt blir högst – aldrig 0 till max. A: högst chans till 13 rätt, teckenregler 4-2-2, utdelning minst ${(UTD_MIN[p.product] || 30000).toLocaleString("sv-SE")} kr. B: teckenregler 3-3-3, minst 30 000 kr utan tak, högst 2 spikar och ingen halvgardering exakt som i A, aldrig samma tecken som ett krav du låst bara i A, vald för att täcka rader som A saknar.${res.A && res.B ? ` Gemensamma rader: <b>${res.overlap}</b>. A+B tillsammans: chans till 13 rätt <b>${oneIn(res.unionHit)}</b>.` : ""} <b>C</b> är ett helt eget system på 700–850 kr som inte har med A och B att göra: bara krav du lagt på C (eller Alla) gäller där, samma regler som A (Europatipset: teckenregler 3-2-2) och minst 30 000 kr för 13 rätt.${p.product === "stryktipset" ? " På Stryktipset spikas bara favoriter med minst 65 % – spikar på 50–65 % sprack nästan varannan gång i baktestet." : ""}</p>
         ${streckNote(p, st)}
         ${couponTable(p, res)}
         <div class="sb-coupons">${couponCard(res.A, "A", p)}${couponCard(res.B, "B", p)}${couponCard(res.C, "C", p)}</div>
@@ -796,7 +797,7 @@ function handleB(ev) {
   if (turBtn || ev.target.closest(".sb-tur-all")) {
     const btns = turBtn ? [turBtn] : [...view.querySelectorAll(".sb-tur-add")];
     for (const b of btns) {
-      if (["both", "A"].includes(st.krav[b.dataset.ev]?.scope)) continue; // kupong A:s krav ligger kvar
+      if (["both", "A", "all"].includes(st.krav[b.dataset.ev]?.scope)) continue; // kupong A:s krav ligger kvar
       st.krav[b.dataset.ev] = { signs: b.dataset.signs, scope: "B" };
     }
     saveKrav(p, st);
