@@ -80,7 +80,7 @@ test('Stryktipset: en sida, egna krav genererar kupong A och B', async ({ page }
     await page.locator('.sb-list .tur-btn').first().click();
     await expect(page.locator('.sb-list .tur-explain')).toHaveCount(0);
   }
-  await expect(page.locator('.st-backtest')).toBeAttached();
+  await expect(page.locator('.st-backtest').first()).toBeAttached();
   // Spik X på match 1 (båda), spik 1 på match 4 bara i kupong B
   await rows.nth(0).locator('.sb-sign[data-sign="X"]').click();
   await rows.nth(3).locator('.sb-sign[data-sign="1"]').click();
