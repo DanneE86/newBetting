@@ -457,6 +457,25 @@ function missPanel(p, events, { bCoupon = null, actions = false, kravFor = () =>
     </table></div>`;
   const leagues = Object.entries(prof.leagues || {}).sort((a, b) => b[1].rate - a[1].rate).slice(0, 6);
   const d = prof.outsideDist;
+  // Stryktipset: varje tips (1, X, 2, 1X, X2, 12) per engelsk liga – hur ofta det satt och vad det blev när det inte satt
+  const ORDER = ["1", "X", "2", "1X", "X2", "12"];
+  const tipName = { 1: "1 (hemmaseger)", X: "X (oavgjort)", 2: "2 (bortaseger)", "1X": "1X (inte borta)", X2: "X2 (inte hemma)", 12: "12 (inte oavgjort)" };
+  const lp = prof.leaguesOnly && prof.leaguePicks ? prof.leaguesOnly.filter((l) => prof.leaguePicks[l]) : [];
+  const lgRow = (l) => {
+    const sp = prof.leagues?.[l];
+    const tips = ORDER.filter((k) => prof.leaguePicks[l][k]).map((k) => {
+      const g = prof.leaguePicks[l][k];
+      const worse = g.rate > g.exp + 0.05, better = g.rate < g.exp - 0.05;
+      return `<tr><th>${esc(tipName[k])}</th><td>${g.n}</td><td>${g.n - g.miss} (${pct(1 - g.rate)})</td><td${worse ? " class=\"down\"" : better ? " class=\"up\"" : ""}>${g.miss} (${pct(g.rate)})</td><td>${pct(g.exp)}</td><td>${SIGNS.filter((x) => g.by[x]).map((x) => `${x}: ${g.by[x]}`).join(" · ") || "–"}</td></tr>`;
+    }).join("");
+    return `<tr class="st-bt-lg"><th colspan="6">${esc(l)}${sp ? ` <small>· alla spikar: fel ${pct(sp.rate)}, väntat ${pct(sp.exp)}</small>` : ""}</th></tr>${tips}`;
+  };
+  const lgTable = lp.length ? `<h3>Tipsen per liga</h3>
+        <p class="st-sub"><b>Fel</b> = hur många gånger resultatet inte fanns bland tecknen vi tippade. <b>Väntat fel</b> = hur ofta våra procent sa att det skulle bli fel. Är Fel klart högre än Väntat (rött) har vi varit för säkra på det tipset; lägre (grönt) = bättre än väntat. <b>Blev i stället</b> = vad matchen slutade när tipset var fel.</p>
+        <div class="st-bt-wrap"><table class="st-bt st-miss-table">
+          <thead><tr><th>Tips</th><th>Tippat</th><th>Rätt</th><th>Fel</th><th>Väntat fel</th><th>Blev i stället</th></tr></thead>
+          <tbody>${lp.map(lgRow).join("")}</tbody>
+        </table></div>` : "";
   return `<section class="sb-panel st-miss">
     <div class="st-miss-grid">
       <div>
@@ -468,8 +487,10 @@ function missPanel(p, events, { bCoupon = null, actions = false, kravFor = () =>
       <div>
         <h3>Vanliga missar <small>${prof.draws} omgångar · ${prof.matches} matcher</small></h3>
         <p class="st-sub">Från kupongarkivet (${esc(prof.from)} – ${esc(prof.to)}), grundraden i kupong A${prof.leaguesOnly ? `, bara ${esc(prof.leaguesOnly.join(", "))}` : ""}. Helgarderingar missar aldrig – alla missar är spikar och halvgarderingar. Rätt rad låg i snitt <b>${String(prof.avgOutside).replace(".", ",")}</b> ${prof.leaguesOnly ? "av de här matcherna" : "matcher"} utanför grundraden (0: ${d[0]}, 1: ${d[1]}, 2: ${d[2]}, 3+: ${d[3]} omgångar).</p>
+        ${prof.leaguesOnly ? `<p class="st-sub"><b>Missade</b> = hur ofta den typen av tips blev fel. <b>Väntat</b> = hur ofta våra procent sa att det skulle bli fel.</p>` : ""}
         ${table}
-        ${leagues.length ? `<p class="st-sub"><b>Spikar per liga</b> (minst ${prof.minN}): ${leagues.map(([n, g]) => `${esc(n)} ${pct(g.rate)} <small>(väntat ${pct(g.exp)})</small>`).join(" · ")}</p>` : ""}
+        ${lgTable}
+        ${!lp.length && leagues.length ? `<p class="st-sub"><b>Spikar per liga</b> (minst ${prof.minN}): ${leagues.map(([n, g]) => `${esc(n)} ${pct(g.rate)} <small>(väntat ${pct(g.exp)})</small>`).join(" · ")}</p>` : ""}
       </div>
     </div>
   </section>`;

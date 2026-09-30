@@ -32,7 +32,7 @@ export const STRYK_LEAGUES = ['Premier League', 'Championship', 'League One'];
 export function buildMissProfile(dir = path.join(root, 'data', 'tips-archive', 'systems'), opts = {}) {
   const only = opts.leagues ? new Set(opts.leagues) : null;
   if (!fs.existsSync(dir)) return null;
-  const groups = {}, leagues = {};
+  const groups = {}, leagues = {}, leaguePicks = {}; // leaguePicks: liga -> tipset (1, X, 2, 1X, X2, 12)
   const perDraw = [];
   let from = null, to = null, matches = 0;
   for (const f of fs.readdirSync(dir).filter((x) => x.endsWith('.json') && (!opts.product || x.startsWith(`${opts.product}-`)))) {
@@ -65,6 +65,7 @@ export function buildMissProfile(dir = path.join(root, 'data', 'tips-archive', '
       };
       if (pick.length < 3) add(groups, groupKey(pick, fav));
       if (pick.length === 1 && m.league) add(leagues, m.league);
+      if (pick.length < 3 && m.league) add((leaguePicks[m.league] ||= {}), [...pick].sort((a, b) => SIGNS.indexOf(a) - SIGNS.indexOf(b)).join(''));
     });
     perDraw.push(outside);
   }
@@ -86,6 +87,7 @@ export function buildMissProfile(dir = path.join(root, 'data', 'tips-archive', '
     avgOutside: r3(perDraw.reduce((s, x) => s + x, 0) / perDraw.length),
     outsideDist: dist, // antal omgångar med 0, 1, 2 och minst 3 utfall utanför grundraden
     groups: out,
+    leaguePicks: Object.fromEntries(Object.entries(leaguePicks).map(([l, ps]) => [l, Object.fromEntries(Object.entries(ps).map(([k, g]) => [k, finish(g)]))])),
     leagues: lg,
   };
 }
