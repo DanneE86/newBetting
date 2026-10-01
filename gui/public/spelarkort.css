@@ -1,0 +1,103 @@
+/* Spelarkort (gui/public/spelarkort.js): spindel mot ligan, jämförelse och alla stats. Hemmalag lime, bortalag blå,
+   andra spelaren i samma lag gul. */
+.pc-c-home { color: #b8f255; fill: currentColor; stroke: currentColor; }
+.pc-c-away { color: #9ec1ff; fill: currentColor; stroke: currentColor; }
+.pc-c-alt { color: #f3cd6b; fill: currentColor; stroke: currentColor; }
+
+.pc-host:empty { display: none; }
+.pc-host { margin-top: 0.7rem; }
+.pc-card { display: grid; gap: 0.6rem; padding: 0.75rem; border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(0, 0, 0, 0.22); min-width: 0; }
+.pc-top { display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; }
+.pc-top h4 { margin: 0; font-size: 0.95rem; }
+.pc-close { border: 1px solid var(--line); background: transparent; color: var(--muted); border-radius: 999px; width: 1.9rem; height: 1.9rem;
+  cursor: pointer; font-size: 0.85rem; flex: none; }
+.pc-close:hover { color: var(--ink); border-color: rgba(255, 255, 255, 0.4); }
+.pc-sub { color: var(--muted); font-size: 0.72rem; font-weight: 400; }
+.pc-warn { color: var(--warn); }
+.pc-heads { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.5rem; }
+.pc-ph { padding: 0.45rem 0.55rem; border-radius: 8px; background: rgba(255, 255, 255, 0.04); border-left: 3px solid; font-size: 0.84rem; min-width: 0; }
+.pc-ph-home { border-color: #b8f255; }
+.pc-ph-away { border-color: #9ec1ff; }
+.pc-summary { padding: 0.5rem 0.65rem; border-radius: 8px; background: rgba(184, 242, 85, 0.06); border: 1px solid rgba(184, 242, 85, 0.18);
+  font-size: 0.82rem; line-height: 1.5; }
+.pc-summary small { color: var(--muted); }
+.pc-key { display: inline-block; width: 0.8rem; height: 0.32rem; border-radius: 2px; margin: 0 0.3rem 0.12rem 0.15rem; background: currentColor; }
+.pc-key-league { background: none; border-top: 2px dashed rgba(255, 255, 255, 0.55); height: 0; vertical-align: 0.2em; }
+
+.pc-vs { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem; }
+.pc-chip { border: 1px solid var(--line); background: transparent; color: var(--ink); border-radius: 999px; padding: 0.2rem 0.65rem;
+  font-family: var(--font-body); font-size: 0.74rem; cursor: pointer; }
+.pc-chip:hover { background: rgba(255, 255, 255, 0.07); }
+.pc-chip.is-on { border-color: rgba(255, 255, 255, 0.6); background: rgba(255, 255, 255, 0.1); }
+.pc-vs select { max-width: 100%; border: 1px solid var(--line); background: rgba(0, 0, 0, 0.3); color: var(--ink); border-radius: 8px;
+  padding: 0.25rem 0.5rem; font-family: var(--font-body); font-size: 0.74rem; }
+
+.pc-radar { margin: 0; display: grid; justify-items: center; gap: 0.3rem; }
+.pc-radar svg { width: 100%; max-width: 460px; height: auto; overflow: visible; }
+.pc-radar figcaption { font-size: 0.74rem; text-align: center; }
+.pc-ring { fill: none; stroke: rgba(255, 255, 255, 0.12); stroke-width: 1; }
+.pc-ring-league { stroke: rgba(255, 255, 255, 0.5); stroke-dasharray: 4 3; }
+.pc-area { fill-opacity: 0.2; stroke-width: 2; stroke-linejoin: round; }
+.pc-lbl text { fill: var(--muted); font-size: 10px; font-family: var(--font-body); }
+
+.pc-all summary { cursor: pointer; font-weight: 600; font-size: 0.85rem; }
+.pc-all > .pc-sub { margin: 0.3rem 0; }
+.pc-table-wrap { overflow-x: auto; }
+.pc-table { width: 100%; border-collapse: collapse; font-size: 0.76rem; }
+.pc-table th, .pc-table td { padding: 0.3rem 0.4rem; border-top: 1px solid rgba(255, 255, 255, 0.06); text-align: left; vertical-align: top; }
+.pc-table thead th { border-top: 0; color: var(--muted); font-size: 0.7rem; }
+.pc-table tbody th { font-weight: 400; color: #c5dbc9; width: 40%; }
+.pc-table .pc-cat th { color: var(--ink); font-weight: 700; font-size: 0.74rem; padding-top: 0.6rem; text-transform: uppercase; letter-spacing: 0.04em; }
+.pc-v { font-variant-numeric: tabular-nums; }
+.pc-v small { color: var(--muted); font-size: 0.64rem; }
+.pc-v.is-better .pc-val { font-weight: 700; }
+.pc-bar { display: block; height: 0.3rem; margin-top: 0.2rem; border-radius: 999px; background: rgba(255, 255, 255, 0.08); overflow: hidden; }
+.pc-pct { display: block; }
+
+/* Klickbara namn i Duellanalysen */
+.mx-pl { border: 0; background: none; padding: 0; color: inherit; font: inherit; cursor: pointer; text-align: left;
+  text-decoration: underline dotted rgba(255, 255, 255, 0.35); text-underline-offset: 3px; }
+.mx-pl:hover, .mx-pl.pc-is-sel { text-decoration-color: currentColor; }
+.mx-pl.pc-is-sel { font-weight: 700; }
+.mx-pl:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; border-radius: 3px; }
+.mx-legend { margin-top: 0.5rem; }
+.se-card-btn { margin-top: 0.35rem; }
+
+@media (max-width: 520px) {
+  .pc-card { padding: 0.55rem; }
+  .pc-table tbody th { width: 34%; }
+}
+
+/* Spelare 1 och 2 i kortet: egna färger oberoende av lag */
+.pc-c-p1 { color: #6cb8ff; fill: currentColor; stroke: currentColor; }
+.pc-c-p2 { color: #ffa24d; fill: currentColor; stroke: currentColor; }
+.pc-ph.pc-c-p1, .pc-ph.pc-c-p2 { fill: none; stroke: none; border-left-color: currentColor; }
+.pc-ph.pc-c-p1 b, .pc-ph.pc-c-p2 b { color: var(--ink); }
+.pc-radar .pc-area { fill-opacity: 0.28; }
+
+/* Staplar efter nivå i ligan: grön bra, gul medel, röd svagt */
+.pc-bar i { display: block; height: 100%; background: var(--muted); }
+.pc-bar.pc-hi i, .pc-sw.pc-hi { background: #7ddc5a; }
+.pc-bar.pc-mid i, .pc-sw.pc-mid { background: #e7c04a; }
+.pc-bar.pc-lo i, .pc-sw.pc-lo { background: #ef6b5b; }
+.pc-legend { margin: 0.35rem 0 0; font-size: 0.74rem; color: #c5dbc9; display: flex; flex-wrap: wrap; align-items: center; gap: 0.2rem 0.4rem; }
+.pc-sw { display: inline-block; width: 0.8rem; height: 0.45rem; border-radius: 2px; }
+.pc-best { color: var(--ink); font-size: 0.62rem; }
+.pc-chip small { color: var(--muted); font-size: 0.66rem; margin-left: 0.15rem; }
+.pc-missing { margin: 0; padding: 0.5rem 0.65rem; border-radius: 8px; border: 1px solid rgba(240, 180, 41, 0.45); background: rgba(240, 180, 41, 0.08);
+  color: #f3cd6b; font-size: 0.8rem; line-height: 1.5; }
+.pc-missing code { color: var(--ink); }
+
+/* Större namn: tabellhuvudet (följer med vid scroll) och spelarrutorna */
+.pc-table thead th { font-size: 1rem; font-weight: 700; color: var(--ink); padding: 0.5rem 0.4rem; }
+.pc-table thead th:first-child { font-size: 0.72rem; font-weight: 600; color: var(--muted); }
+.pc-table thead .pc-key { width: 1.1rem; height: 0.45rem; }
+.pc-table thead th { position: sticky; top: 2.75rem; z-index: 2; background: #0f1a16; box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1); }
+.pc-table-wrap { overflow: visible; }
+@media (max-width: 520px) { .pc-table { table-layout: fixed; } .pc-table tbody th, .pc-table thead th:first-child { width: 32%; overflow-wrap: anywhere; } .pc-v small { display: block; margin: 0; } .pc-table th, .pc-table td { padding-inline: 0.25rem; } }
+.pc-ph b { font-size: 1.05rem; }
+.pc-top h4 { font-size: 1.05rem; }
+@media (max-width: 520px) { .pc-table thead th { font-size: 0.9rem; } }
+/* overflow:hidden på korten hindrar rubriken från att följa med; clip klipper likadant men tillåter sticky */
+.tip:has(.pc-card), .st-match:has(.pc-card) { overflow: clip; }

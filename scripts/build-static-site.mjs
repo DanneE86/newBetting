@@ -104,9 +104,10 @@ try {
   for (const [k, v] of Object.entries(matchups)) (byLeague[k.split("|")[0]] ??= {})[k] = v;
   for (const [lg, list] of Object.entries(byLeague)) write(`api/matchup/${lg}.json`, list);
 
-  // Domarpanelen: domare mot ligasnittet och lagen, en fil per liga (bara engelska ligor har domardata)
+  // Domarpanelen: domare mot ligasnittet och lagen, en fil per liga (ligor utan domardata ger 404 och hoppas over)
+  const { REF_LEAGUES } = await import(new URL("./lib/referee-streaks.mjs", import.meta.url).href);
   const refs = {};
-  for (const t of tips.filter((x) => ["PL", "CH", "EL1", "EL2"].includes(x.league))) {
+  for (const t of tips.filter((x) => REF_LEAGUES.has(x.league))) {
     const qs = new URLSearchParams({ league: t.league, date: t.date, home: t.home, away: t.away });
     try {
       (refs[t.league] ??= {})[[t.league, t.date, t.home, t.away].join("|")] = await get(`/api/referees?${qs}`);
@@ -114,6 +115,16 @@ try {
   }
   log(`domare: ${Object.values(refs).reduce((a, g) => a + Object.keys(g).length, 0)} matcher`);
   for (const [lg, list] of Object.entries(refs)) write(`api/referees/${lg}.json`, list);
+  // Ligans domarvy (knappen Domare i ligaraden): en fil per liga
+  let refLeagues = 0;
+  for (const lg of REF_LEAGUES) {
+    try {
+      write(`api/refleague/${lg}.json`, await get(`/api/refleague?league=${encodeURIComponent(lg)}`));
+      refLeagues++;
+    } catch { /* ingen domardata */ }
+  }
+  log(`domare per liga: ${refLeagues}`);
+  write("api/refleagues.json", await get("/api/refleagues"));
 
   // Startelvan: elvorna på planen och spelare mot spelare (data/startelvor.json), en fil per liga eller kupong
   const { readStore, keyGroup } = await import(new URL("./lib/startelva.mjs", import.meta.url).href);

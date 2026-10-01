@@ -6,6 +6,8 @@
 // Värden: startelvaButton(key) och startelvaPanel(key) ger HTML som värdsidan lägger in. Modulen håller tillståndet
 // per match och ritar om sin egen panel, så att en omritning av värdsidan inte stänger den.
 
+import { setCardContext, cardHostHtml, radarSvg as pcRadar, radarTally as pcTally, axesFor } from "/spelarkort.js";
+
 const state = new Map(); // key -> { open, loading, data, error, sel, focus }
 const st = (key) => {
   if (!state.has(key)) state.set(key, { open: false, loading: false, data: null, error: null, sel: null, focus: null, mode: "duel", pick: [] });
@@ -58,6 +60,17 @@ async function load(key, { refresh = false } = {}) {
     if (body.error === "Okänd API-route") throw new Error("GUI-servern kör en äldre version – starta om den (npm run gui) och ladda om sidan.");
     if (!res.ok && !body.reason) throw new Error(body.error || `Servern svarade ${res.status}`);
     s.data = body;
+    // Spelarkortet (spindel mot ligan, jämförelse, alla stats) för matchens 22 spelare
+    if (body.ok) {
+      const players = {};
+      for (const p of Object.values(body.players)) {
+        if (p.noData) continue;
+        players[p.id] = { key: String(p.id), name: p.name, short: p.short, team: p.team, teamName: body.teams[p.team].name, group: p.group,
+          posLabel: p.roleLabel, club: p.club, age: p.age, statsFrom: p.statsFrom, minutes: p.minutes, rating: p.rating,
+          goals: p.goals, assists: p.assists, stats: p.stats };
+      }
+      setCardContext(`se|${key}`, { players, labels: body.statLabels });
+    }
     // Första nyckelduellen visas direkt
     if (body.ok && (!s.sel || !body.comparisons?.[s.sel])) {
       s.sel = body.keyDuels?.[0] || Object.keys(body.comparisons || {})[0] || null;
@@ -96,7 +109,7 @@ function panelBody(key, s) {
 
   const out = (t) => (t.unavailable?.length ? `<div class="se-note"><b>${esc(t.name)}</b> saknar: ${t.unavailable.map((u) => `${esc(u.name)}${u.type ? ` (${u.type === "injury" ? "skada" : u.type === "suspension" ? "avstängd" : esc(u.type)})` : ""}`).join(", ")}</div>` : "");
 
-  return `<div class="se-wrap">
+  return `<div class="se-wrap" data-pc-ctx="${esc(`se|${key}`)}">
     <div class="se-head">
       <span class="se-chip ${v.confirmed ? "se-chip-ok" : ""}">${esc(v.status)}</span>
       <span class="se-sub">FotMob${when ? ` · hämtad ${esc(when)}` : ""}</span>
@@ -119,6 +132,7 @@ function panelBody(key, s) {
     </div>
     ${out(H)}${out(A)}
     ${free ? (s.pick.length === 2 ? freeHtml(v, s) : "") : s.sel && v.comparisons[s.sel] ? compareHtml(v, s) : ""}
+    ${cardHostHtml(`se|${key}`)}
   </div>`;
 }
 
@@ -178,6 +192,7 @@ function playerHead(p, team) {
     <div class="se-ph-n"><span class="se-dot se-${p.team}"></span><b>${esc(p.name)}</b> <span class="se-sub">${esc(team)}</span></div>
     <div class="se-sub">${esc(bits)}</div>
     <div class="se-sub">${esc(basis)}${p.injury ? ` · <span class="se-warn">skadad: ${esc(p.injury)}</span>` : ""}</div>
+    ${p.noData ? "" : `<button type="button" class="se-alt se-card-btn" data-pc-open="${esc(p.id)}">Spindel mot ligan och alla stats</button>`}
   </div>`;
 }
 
@@ -285,58 +300,13 @@ function summaryHtml(c, a, b) {
   return `<div class="se-summary"><p><b>Kort sagt:</b> ${esc(head)}</p><ul>${lines.map((l) => `<li>${esc(l)}</li>`).join("")}</ul></div>`;
 }
 
-const RADAR = [["expected_goals", "xG"], ["shots", "Skott"], ["chances_created", "Skapade chanser"], ["expected_assists", "xA"],
-  ["dribbles_succeeded", "Dribblingar"], ["successful_passes", "Passningar"], ["successful_passes_accuracy", "Passningsträff"],
-  ["duel_won_percent", "Dueller"], ["aerials_won_percent", "Luftdueller"], ["matchstats.headers.tackles", "Tacklingar"],
-  ["interceptions", "Brytningar"], ["recoveries", "Återerövringar"]];
-const RADAR_GK = [["save_percentage", "Räddnings-%"], ["saves", "Räddningar"], ["goals_prevented", "Förhindrade mål"],
-  ["clean_sheet_team_title", "Nollor"], ["keeper_high_claim", "Höga bollar"], ["keeper_sweeper", "Utrusningar"],
-  ["successful_passes_accuracy", "Passningsträff"], ["long_ball_succeeeded_accuracy", "Långbollar"]];
-const radarAxes = (a, b) => (a.role === "gk" && b.role === "gk" ? RADAR_GK : RADAR);
-
-/** Färg per spelare: lagets färg, men gul för den andra om båda är i samma lag. */
-const radarCls = (a, b) => [`se-rad-${a.team}`, a.team === b.team ? "se-rad-alt" : `se-rad-${b.team}`];
-
-/** Spindeldiagram (SVG) över percentilerna för två spelare. */
+// Spindeln är spelarkortets (gui/public/spelarkort.js): axlarna följer första spelarens position, streckad ring = ligasnitt
+const radarCls = (a, b) => [`pc-c-${a.team}`, a.team === b.team ? "pc-c-alt" : `pc-c-${b.team}`];
 function radarSvg(a, b) {
-  const axes = radarAxes(a, b);
-  const n = axes.length, R = 100;
-  const pt = (i, r) => {
-    const ang = -Math.PI / 2 + (2 * Math.PI * i) / n;
-    return [r * Math.cos(ang), r * Math.sin(ang)];
-  };
-  const xy = (p) => p.map((x) => x.toFixed(1)).join(",");
-  const pc = (p, k) => p.stats?.[k]?.[2];
-  const poly = (p) => axes.map(([k], i) => xy(pt(i, (Math.max(0, Math.min(100, pc(p, k) ?? 0)) * R) / 100))).join(" ");
-  const rings = [25, 50, 75, 100].map((r) => `<polygon class="se-rad-ring" points="${axes.map((_, i) => xy(pt(i, r))).join(" ")}"/>`).join("");
-  const spokes = axes.map((_, i) => {
-    const [x, y] = pt(i, R);
-    return `<line class="se-rad-ring" x1="0" y1="0" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}"/>`;
-  }).join("");
-  const labels = axes.map(([k, l], i) => {
-    const [x, y] = pt(i, R + 12);
-    const anchor = Math.abs(x) < 6 ? "middle" : x > 0 ? "start" : "end";
-    const miss = pc(a, k) == null || pc(b, k) == null ? "*" : "";
-    return `<text x="${x.toFixed(1)}" y="${(y + 3).toFixed(1)}" text-anchor="${anchor}">${esc(l)}${miss}</text>`;
-  }).join("");
   const [ca, cb] = radarCls(a, b);
-  const dots = (p, cls) => axes.map(([k, l], i) => {
-    if (pc(p, k) == null) return "";
-    const [x, y] = pt(i, (pc(p, k) * R) / 100);
-    return `<circle class="${cls}" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="2.6"><title>${esc(`${p.short}: ${l} ${ordinal(pc(p, k))} perc.`)}</title></circle>`;
-  }).join("");
-  const missing = axes.some(([k]) => pc(a, k) == null || pc(b, k) == null);
-  return `<figure class="se-radar">
-    <svg viewBox="-205 -126 410 252" role="img" aria-label="${esc(`Spindeldiagram: ${a.name} mot ${b.name}, percentiler`)}">
-      ${rings}${spokes}
-      <polygon class="se-rad-area ${ca}" points="${poly(a)}"/><polygon class="se-rad-area ${cb}" points="${poly(b)}"/>
-      ${dots(a, ca)}${dots(b, cb)}
-      <g class="se-rad-lbl">${labels}</g>
-    </svg>
-    <figcaption><span class="se-key ${ca}"></span>${esc(a.short)} <span class="se-key ${cb}"></span>${esc(b.short)}
-      <span class="se-sub">· percentil per 90 min, längre ut = bättre${missing ? " · * = saknas för någon av dem" : ""}</span></figcaption>
-  </figure>`;
+  return pcRadar([{ p: a, cls: ca }, { p: b, cls: cb }], axesFor(a.group));
 }
+const radarTally = (a, b) => pcTally(a, b, axesFor(a.group));
 
 // Fri jämförelse: vilka två spelare som helst
 const FREE_ROWS = ["rating", "goals", "expected_goals", "shots", "chances_created", "expected_assists", "dribbles_succeeded",
@@ -345,18 +315,6 @@ const FREE_ROWS = ["rating", "goals", "expected_goals", "shots", "chances_create
 const FREE_ROWS_GK = ["rating", "save_percentage", "saves", "goals_prevented", "clean_sheet_team_title", "error_led_to_goal",
   "keeper_high_claim", "keeper_sweeper", "successful_passes_accuracy", "long_ball_succeeeded_accuracy"];
 
-/** Hur många områden i spindeln varje spelare vinner (minst 8 percentilenheter). */
-function radarTally(a, b) {
-  let wa = 0, wb = 0, even = 0;
-  for (const [k] of radarAxes(a, b)) {
-    const x = a.stats?.[k]?.[2], y = b.stats?.[k]?.[2];
-    if (x == null || y == null) continue;
-    if (x - y >= 8) wa++;
-    else if (y - x >= 8) wb++;
-    else even++;
-  }
-  return { wa, wb, even };
-}
 
 function radarFreeSide(v, s) {
   if (s.pick.length < 2) return `<p class="se-empty">Välj två spelare så visas spindeldiagrammet här.</p>`;

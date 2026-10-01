@@ -12,7 +12,7 @@ import { EARLY_ROUNDS, buildTiers, fitLeagueModel, loadLeagueModels, paramsFor }
 import { historicalMissing, findUsMatch, inCurrentSquad, loadPlayerModel, summarise as summariseMissing, teamShares } from './pro/players.mjs';
 import { TEAM_ALIASES } from './weather/teams.mjs';
 import { adjustProbs } from './lib/learned-adjust.mjs';
-import { buildRefIndex, mergeRefereeMatches, refereeFlags, REF_LEAGUES } from './lib/referee-streaks.mjs';
+import { buildRefIndex, loadRefereeMatches, refereeFlags, REF_LEAGUES } from './lib/referee-streaks.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const P = {
@@ -201,8 +201,8 @@ function applyRefereeStreaks(list) {
   const upcoming = fs.existsSync(P.refUpcoming) ? readJson(P.refUpcoming).matches ?? [] : [];
   const refOf = new Map(upcoming.filter((m) => m.referee).map((m) => [`${m.league}|${m.date}|${m.home}|${m.away}`, m.referee]));
   if (!refOf.size) return;
-  const history = fs.existsSync(P.refHistory) ? Object.values(readJson(P.refHistory).bySeason ?? {}).flat() : [];
-  const index = buildRefIndex(mergeRefereeMatches(history, store.matches));
+  const rd = (rel) => { const f = path.join(root, rel); return fs.existsSync(f) ? readJson(f) : null; };
+  const index = buildRefIndex(loadRefereeMatches(rd, store.matches));
   for (const t of list ?? []) {
     if (!REF_LEAGUES.has(t.league)) continue;
     const referee = refOf.get(`${t.league}|${t.date}|${t.home}|${t.away}`);

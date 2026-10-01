@@ -306,7 +306,10 @@ function contextRow(e) {
     const rest = [x.restDays != null ? `vila ${Math.round(x.restDays)} d` : "", x.daysToNext != null && x.nextMatch?.tournament ? `nästa: ${esc(x.nextMatch.tournament)} om ${Math.round(x.daysToNext)} d` : ""].filter(Boolean).join(" · ");
     return `<span class="st-lu-side" title="${esc((x.starters || []).join(", "))}"><b>${esc(team)}</b>${x.formation ? ` (${esc(x.formation)})` : ""}: ${miss}${rest ? ` <small>· ${rest}</small>` : ""}</span>`;
   };
-  const extra = c.referee ? `Domare: ${esc(c.referee)}` : "";
+  // Domarens facit mot lagen (V-O-F i ligamatcher) när domaren är tillsatt
+  const rs = e.refereeStreak;
+  const rec = (x, name) => (x?.matches ? ` · ${esc(name)} ${x.record.w}-${x.record.d}-${x.record.l} (${Math.round((x.record.w / x.matches) * 100)} % V)` : "");
+  const extra = c.referee ? `Domare: ${esc(c.referee)}${rs ? `${rec(rs.home, e.home)}${rec(rs.away, e.away)}` : ""}` : "";
   return `<div class="st-lineup"><span class="st-svs-k">Trupp</span>${status}${side(e.home, c.home)}${side(e.away, c.away)}${extra ? `<small class="st-lu-note">${extra}</small>` : ""}</div>`;
 }
 

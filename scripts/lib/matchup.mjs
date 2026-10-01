@@ -207,6 +207,8 @@ function slim(p, extra = {}) {
     side: sideOf(p),
     age: p.info?.age ?? null,
     shirt: p.info?.shirt ?? null,
+    club: p.fotmobTeam ?? null,
+    seasonLabel: p.season?.tournament ? `${p.season.tournament} ${p.season.season ?? ''}`.trim() : null,
     rating: L.rating ?? src.stats?.rating?.[0] ?? null,
     goals: L.goals ?? src.stats?.goals?.[0] ?? null,
     assists: L.assists ?? src.stats?.assists?.[0] ?? null,
@@ -635,8 +637,10 @@ export function buildMatchup(tip) {
 
   const sideTeam = (l, s) => ({
     status: l.status, source: l.source, formation: l.formationSource || s.formation,
+    // stats = hela säsongens statistik [total, per 90, percentil] för spelarkortet (spindel och alla stats i GUI:t)
     xi: l.xi.map((p) => ({ name: p.name, group: p.group, side: p.side ?? null, minutes: p.minutes ?? 0, goals: p.goals ?? null, assists: p.assists ?? null,
-      rating: p.rating ?? null, ...(p.notInData ? { notInData: true } : {}) })),
+      rating: p.rating ?? null, age: p.age ?? null, club: p.club ?? null, statsFrom: p.statsFrom ?? p.seasonLabel ?? null, stats: p._src?.stats || {},
+      ...(p.notInData ? { notInData: true } : {}) })),
     unknown: l.unknown, out: l.out, notes: l.notes, bench: l.bench,
     roles: {
       gk: s.gk?.name ?? null, cbs: s.cbs.map((p) => p.name), rb: s.rb?.name ?? null, lb: s.lb?.name ?? null,
@@ -660,6 +664,7 @@ export function buildMatchup(tip) {
     ok: true,
     league, date: tip.date, kickoffUtc: tip.kickoffUtc || null, home, away,
     playerDataAt: doc.updatedAt || null,
+    statLabels: STAT_LABELS,
     lineupsUpdatedAt: readJson('data/open/espn_lineups.json')?.updatedAt || null,
     names,
     table: { home: row(home), away: row(away), size: table.length || null },

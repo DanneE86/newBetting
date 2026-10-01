@@ -964,11 +964,11 @@ test.describe('startelva: jämförelse och vy', () => {
     expect(v.reason).toMatch(/ingen elva/i);
   });
 
-  test('slimRecord och recordFromPlayerData: bara nyckeltalen som används, säsong och form', async () => {
+  test('slimRecord och recordFromPlayerData: alla nyckeltal med värde, säsong och form', async () => {
     const { slimRecord, recordFromPlayerData } = await lib('startelva.mjs');
     const s = slimRecord({ id: 5, name: 'N', season: { season: '2026', tournament: 'L', stats: { goals: [1, 0.1, 50], weird_stat: [1, 1, 1] } }, matches: Array(9).fill([]) });
     expect(s.season.stats.goals).toEqual([1, 0.1, 50]);
-    expect(s.season.stats.weird_stat).toBeUndefined();
+    expect(s.season.stats.weird_stat).toEqual([1, 1, 1]); // alla nyckeltal behålls för spelarkortet
     expect(s.matches).toHaveLength(5);
     const d = recordFromPlayerData({
       id: 7, name: 'Spelare', primaryTeam: { teamName: 'Klubb' },
@@ -1054,5 +1054,83 @@ test.describe('referee-streaks: domarstatistik per liga (panelen Domare)', () =>
     expect(refereePanel({ matches: rows, index: idx, league: 'PL', home: 'Arsenal', away: 'Leeds', today: '2026-10-01' }).referee).toBeNull();
     const nu = refereePanel({ matches: rows, index: idx, league: 'PL', home: 'Arsenal', away: 'Leeds', referee: 'Sam Allison', today: '2026-10-01' });
     expect(nu.referee).toMatchObject({ otherLeagues: true, matches: 1, yellowPg: 4, foulsPg: 24 });
+  });
+});
+
+test.describe('referee-streaks: FotMob, straffar och alla ligor', () => {
+  const md = (over: any = {}) => ({
+    general: { homeTeam: { id: 1 }, awayTeam: { id: 2 } },
+    content: {
+      matchFacts: { infoBox: { Referee: { text: 'Glenn Nyberg' } }, events: { events: [] } },
+      stats: { Periods: { All: { stats: [{ stats: [{ key: 'yellow_cards', stats: [2, 3] }, { key: 'yellow_cards', stats: [9, 9] }, { key: 'red_cards', stats: [0, 1] }, { key: 'fouls', stats: [12, 14] }] }] } } },
+      shotmap: { shots: [
+        { situation: 'Penalty', teamId: 1, period: 'FirstHalf', eventType: 'Goal' },
+        { situation: 'Penalty', teamId: 2, period: 'SecondHalf', eventType: 'AttemptSaved' },
+        { situation: 'Penalty', teamId: 2, period: 'PenaltyShootout', eventType: 'Goal' },
+        { situation: 'RegularPlay', teamId: 1, period: 'FirstHalf', eventType: 'Miss' },
+      ] },
+      ...over,
+    },
+  });
+  const fx = { id: 99, home: { name: 'Djurgården' }, away: { name: 'Malmö FF' }, status: { utcTime: '2026-05-01T15:00:00Z', scoreStr: '2 - 1' } };
+
+  test('rowFromFotmob: domare, mål, första värdet per stat, straffar utan straffläggning', async () => {
+    const { rowFromFotmob } = await lib('referee-streaks.mjs');
+    expect(rowFromFotmob(md(), fx, 'AS')).toEqual({ id: '99', d: '2026-05-01', lg: 'AS', h: 'Djurgården', a: 'Malmö FF', hg: 2, ag: 1, r: 'Glenn Nyberg', hy: 2, ay: 3, hr: 0, ar: 1, hf: 12, af: 14, hp: 1, ap: 1 });
+    expect(rowFromFotmob(md(), { ...fx, status: { ...fx.status, scoreStr: '' } }, 'AS')).toBeNull();
+  });
+
+  test('penaltiesFromFotmob: utan skottkarta räknas straffmål och missade straffar i händelserna', async () => {
+    const { penaltiesFromFotmob } = await lib('referee-streaks.mjs');
+    const ev = { matchFacts: { events: { events: [
+      { type: 'Goal', goalDescriptionKey: 'penalty', isHome: true },
+      { type: 'MissedPenalty', isHome: true },
+      { type: 'Goal', goalDescriptionKey: 'header', isHome: false },
+      { type: 'Goal', goalDescriptionKey: 'penalty', isHome: false, isPenaltyShootoutEvent: true },
+    ] } } };
+    expect(penaltiesFromFotmob({ general: { homeTeam: { id: 1 } }, content: { shotmap: { shots: [] }, ...ev } })).toEqual([2, 0]);
+    expect(penaltiesFromFotmob({ content: {} })).toBeNull();
+  });
+
+  test('attachPenalties: England får straffar från FotMob via liga + dag + domare', async () => {
+    const { attachPenalties } = await lib('referee-streaks.mjs');
+    const fd = [{ d: '2026-09-20', lg: 'PL', h: 'Man City', a: 'Arsenal', hg: 1, ag: 1, r: 'M Oliver' }, { d: '2026-09-20', lg: 'PL', h: 'Leeds', a: 'Spurs', hg: 0, ag: 0, r: 'A Taylor' }];
+    const fm = [{ d: '2026-09-20', lg: 'PL', h: 'Manchester City', a: 'Arsenal', r: 'Michael Oliver', hp: 1, ap: 0 }];
+    const out = attachPenalties(fd, fm);
+    expect(out[0]).toMatchObject({ h: 'Man City', hp: 1, ap: 0 });
+    expect(out[1].hp).toBeUndefined();
+  });
+
+  test('loadRefereeMatches: football-data + FotMob, FotMob-rader för England dubbleras inte', async () => {
+    const { loadRefereeMatches, hasRefereeData } = await lib('referee-streaks.mjs');
+    const files: Record<string, any> = {
+      'data/open/referee_history.json': { bySeason: { '2627|E0': [{ d: '2026-09-20', lg: 'PL', h: 'Man City', a: 'Arsenal', hg: 1, ag: 1, r: 'M Oliver' }] } },
+      'data/open/referee_fotmob.json': { leagues: {
+        PL: { matches: { 1: { d: '2026-09-20', lg: 'PL', h: 'Manchester City', a: 'Arsenal', hg: 1, ag: 1, r: 'Michael Oliver', hp: 2, ap: 0 } } },
+        AS: { matches: { 2: { d: '2026-05-01', lg: 'AS', h: 'Djurgården', a: 'Malmö FF', hg: 2, ag: 1, r: 'Glenn Nyberg', hp: 0, ap: 1 }, 3: { d: '2026-05-02', lg: 'AS', h: 'AIK', a: 'IFK Göteborg', hg: 0, ag: 0, r: null } } },
+      } },
+    };
+    const all = loadRefereeMatches((rel: string) => files[rel] ?? null, []);
+    expect(all.length).toBe(2);
+    expect(all.find((m: any) => m.lg === 'PL')).toMatchObject({ h: 'Man City', hp: 2 });
+    expect(hasRefereeData(all, 'AS', '2026-10-01')).toBe(true);
+    expect(hasRefereeData(all, 'SE2', '2026-10-01')).toBe(false);
+  });
+
+  test('refereeLeagueReport: kalenderårsliga (Allsvenskan) och straffar/röda mot snittet, Ettan delar nyckel', async () => {
+    const { refereeLeagueReport, refLeagueKey, disciplineStats } = await lib('referee-streaks.mjs');
+    expect(refLeagueKey('SE3N')).toBe('SE3');
+    expect(refLeagueKey('SE3S')).toBe('SE3');
+    expect(refLeagueKey('AS')).toBe('AS');
+    const r = (d: string, ref: string, hp: number, hr: number) => ({ d, lg: 'AS', h: 'A', a: 'B', hg: 1, ag: 0, r: ref, hy: 1, ay: 1, hr, ar: 0, hf: 10, af: 10, hp, ap: 0 });
+    const rows = [r('2024-04-01', 'Glenn Nyberg', 1, 0), r('2025-05-01', 'Glenn Nyberg', 1, 1), r('2026-06-01', 'Kristoffer Karlsson', 0, 0), r('2026-07-01', 'Kristoffer Karlsson', 0, 0), r('2023-12-01', 'Gammal Domare', 3, 3)];
+    const rep = refereeLeagueReport(rows, 'AS', { today: '2026-10-01' });
+    expect(rep.calendar).toBe(true);
+    expect(rep.since).toBe('2024-01-01');
+    expect(rep.leagueAvg).toMatchObject({ matches: 4, penaltyPg: 0.5, penaltyTotal: 2, redPg: 0.25, redTotal: 1, yellowTotal: 8 });
+    const gn = rep.referees.find((x: any) => x.key === 'g nyberg');
+    expect(gn).toMatchObject({ matches: 2, penaltyPg: 1, penaltyTotal: 2, penaltyVsAvg: { pct: 100 }, redVsAvg: { pct: 100 } });
+    expect(rep.referees.some((x: any) => x.referee === 'Gammal Domare')).toBe(false);
+    expect(disciplineStats([{ hg: 0, ag: 0 }]).penaltyPg).toBeNull();
   });
 });

@@ -57,11 +57,15 @@
       const hit = (await loadMatchups(p.get("league")))[key];
       return hit ? json(200, hit) : json(404, { error: "Ingen förberäknad duellanalys för matchen" });
     }
+    if (url.pathname === "/api/refleague") {
+      const res = await realFetch(`/api/refleague/${encodeURIComponent(url.searchParams.get("league") || "")}.json`);
+      return res.ok ? res : json(404, { error: "Ingen domardata för ligan än" });
+    }
     if (url.pathname === "/api/referees") {
       const p = url.searchParams;
       const key = [p.get("league"), p.get("date"), p.get("home"), p.get("away")].join("|");
       const hit = (await loadReferees(p.get("league")))[key];
-      return hit ? json(200, hit) : json(404, { error: "Domarstatistik finns bara för engelska ligor (PL–League Two)" });
+      return hit ? json(200, hit) : json(404, { error: "Ingen domardata för matchen än" });
     }
     if (url.pathname === "/api/startelva") {
       const key = url.searchParams.get("key") || "";

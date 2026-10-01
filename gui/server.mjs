@@ -62,20 +62,42 @@ async function matchupOne({ league, date, home, away }) {
   return t ? buildMatchup(t) : null;
 }
 
+/** All domarhistorik (football-data + FotMob + store), cache tills nagon av filerna andras. */
+let refCache = null;
+async function refereeData() {
+  const rs = await import(new URL("../scripts/lib/referee-streaks.mjs", import.meta.url).href);
+  const files = ["data/open/referee_history.json", "data/open/referee_fotmob.json", "data/betting-store.json"];
+  const stamp = files.map((f) => (fs.existsSync(path.join(ROOT, f)) ? fs.statSync(path.join(ROOT, f)).mtimeMs : 0)).join("|");
+  if (refCache?.stamp === stamp) return refCache;
+  const storeRefs = readJsonCached("data/betting-store.json", (st) => (st?.matches || []).filter((m) => m.referee && rs.ENGLISH_LEAGUES.has(m.league)), "store:refs");
+  const matches = rs.loadRefereeMatches((rel) => readJson(rel), storeRefs || []);
+  refCache = { stamp, matches, index: rs.buildRefIndex(matches) };
+  return refCache;
+}
+
+/** Ligans domare (knappen Domare i ligaraden): alla snitt, antal matcher, gula, röda, straffar. */
+async function refereeLeague({ league }) {
+  const rs = await import(new URL("../scripts/lib/referee-streaks.mjs", import.meta.url).href);
+  const ref = await refereeData();
+  if (!rs.hasRefereeData(ref.matches, league)) return null;
+  const report = rs.refereeLeagueReport(ref.matches, league);
+  const upcoming = readJson("data/open/referees_upcoming.json")?.matches || [];
+  return { ...report, appointments: rs.leagueAppointments(ref.index, report, upcoming, league) };
+}
+
+/** Ligor med domardata (flikarna i ligans domarvy). */
+async function refereeLeagues() {
+  const rs = await import(new URL("../scripts/lib/referee-streaks.mjs", import.meta.url).href);
+  const ref = await refereeData();
+  if (!ref.leagues) ref.leagues = rs.leaguesWithData(ref.matches);
+  return { leagues: ref.leagues };
+}
+
 /** Domarpanelen: tillsatt domare mot ligasnittet och lagen + alla ligans domare (scripts/lib/referee-streaks.mjs). */
 async function refereeOne({ league, date, home, away }) {
   const rs = await import(new URL("../scripts/lib/referee-streaks.mjs", import.meta.url).href);
-  if (!rs.REF_LEAGUES.has(league)) return null;
-  const ref = readJsonCached(
-    "data/open/referee_history.json",
-    (h) => {
-      const storeRefs = readJsonCached("data/betting-store.json", (st) => (st?.matches || []).filter((m) => m.referee && rs.REF_LEAGUES.has(m.league)), "store:refs");
-      const matches = rs.mergeRefereeMatches(Object.values(h?.bySeason || {}).flat(), storeRefs || []);
-      return { matches, index: rs.buildRefIndex(matches) };
-    },
-    "referees:index"
-  );
-  if (!ref) return null;
+  const ref = await refereeData();
+  if (!rs.hasRefereeData(ref.matches, league)) return null;
   const t = findTip(readJsonCached("data/tips-latest.json"), { league, date, home, away });
   const up = (readJson("data/open/referees_upcoming.json")?.matches || []).find((m) => m.league === league && m.date === date && m.home === home && m.away === away);
   const referee = t?.referee?.referee || up?.referee || null;
@@ -863,10 +885,24 @@ const server = http.createServer((req, res) => {
     return;
   }
 
+  if (req.method === "GET" && url.pathname === "/api/refleagues") {
+    refereeLeagues()
+      .then((m) => sendJson(res, 200, m))
+      .catch((e) => sendJson(res, 500, { error: String(e.message || e) }));
+    return;
+  }
+
+  if (req.method === "GET" && url.pathname === "/api/refleague") {
+    refereeLeague({ league: url.searchParams.get("league") || "" })
+      .then((m) => (m ? sendJson(res, 200, m) : sendJson(res, 404, { error: "Ingen domardata för ligan än" })))
+      .catch((e) => sendJson(res, 500, { error: String(e.message || e) }));
+    return;
+  }
+
   if (req.method === "GET" && url.pathname === "/api/referees") {
     const q = Object.fromEntries(["league", "date", "home", "away"].map((k) => [k, url.searchParams.get(k) || ""]));
     refereeOne(q)
-      .then((m) => (m ? sendJson(res, 200, m) : sendJson(res, 404, { error: "Domarstatistik finns bara för engelska ligor (PL–League Two)" })))
+      .then((m) => (m ? sendJson(res, 200, m) : sendJson(res, 404, { error: "Ingen domardata för ligan än" })))
       .catch((e) => sendJson(res, 500, { error: String(e.message || e) }));
     return;
   }
