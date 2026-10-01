@@ -1,0 +1,364 @@
+{
+ "updatedAt": "2026-10-01T03:44:18.889Z",
+ "league": "CZ",
+ "fotmobId": 122,
+ "source": "FotMob",
+ "seasons": {
+  "2025/26": {
+   "Sparta Prague": {
+    "fotmobName": "Sparta Prague",
+    "m": 35,
+    "poss": 64.5,
+    "pass": 433.1,
+    "longBalls": 25.9,
+    "possWonAtt3rd": 3.4,
+    "clearances": 18.2,
+    "tackles": 10.7,
+    "interceptions": 6.2
+   },
+   "Slavia Prague": {
+    "fotmobName": "Slavia Prague",
+    "m": 35,
+    "poss": 56.9,
+    "pass": 293,
+    "longBalls": 28.5,
+    "possWonAtt3rd": 4.8,
+    "clearances": 24.7,
+    "tackles": 13.8,
+    "interceptions": 9.9
+   },
+   "Viktoria Plzeň": {
+    "fotmobName": "Viktoria Plzen",
+    "m": 35,
+    "poss": 56,
+    "pass": 327.5,
+    "longBalls": 24.6,
+    "possWonAtt3rd": 3.8,
+    "clearances": 23,
+    "tackles": 15.3,
+    "interceptions": 8.5
+   },
+   "Mladá Boleslav": {
+    "fotmobName": "Mlada Boleslav",
+    "m": 35,
+    "poss": 55,
+    "pass": 353.4,
+    "longBalls": 20.3,
+    "possWonAtt3rd": 3.3,
+    "clearances": 25.3,
+    "tackles": 12.5,
+    "interceptions": 7.3
+   },
+   "Karviná": {
+    "fotmobName": "Karvina",
+    "m": 34,
+    "poss": 54,
+    "pass": 310.8,
+    "longBalls": 23.4,
+    "possWonAtt3rd": 3.3,
+    "clearances": 26.2,
+    "tackles": 15.9,
+    "interceptions": 7.6
+   },
+   "Baník Ostrava": {
+    "fotmobName": "Banik Ostrava",
+    "m": 35,
+    "poss": 52.3,
+    "pass": 302.2,
+    "longBalls": 25,
+    "possWonAtt3rd": 3.1,
+    "clearances": 23.3,
+    "tackles": 15.4,
+    "interceptions": 7.8
+   },
+   "Sigma Olomouc": {
+    "fotmobName": "Sigma Olomouc",
+    "m": 34,
+    "poss": 51.2,
+    "pass": 271.2,
+    "longBalls": 25.4,
+    "possWonAtt3rd": 3.7,
+    "clearances": 28.1,
+    "tackles": 14.9,
+    "interceptions": 8.6
+   },
+   "Slovácko": {
+    "fotmobName": "Slovacko",
+    "m": 35,
+    "poss": 51.2,
+    "pass": 298.3,
+    "longBalls": 24.2,
+    "possWonAtt3rd": 3,
+    "clearances": 29.1,
+    "tackles": 13,
+    "interceptions": 8.6
+   },
+   "Jablonec": {
+    "fotmobName": "Jablonec",
+    "m": 35,
+    "poss": 49.1,
+    "pass": 297.2,
+    "longBalls": 22.1,
+    "possWonAtt3rd": 2.6,
+    "clearances": 28.9,
+    "tackles": 12.6,
+    "interceptions": 7.7
+   },
+   "Slovan Liberec": {
+    "fotmobName": "Slovan Liberec",
+    "m": 35,
+    "poss": 47,
+    "pass": 229.9,
+    "longBalls": 21.8,
+    "possWonAtt3rd": 3.7,
+    "clearances": 25.7,
+    "tackles": 14.5,
+    "interceptions": 8.3
+   },
+   "Bohemians 1905": {
+    "fotmobName": "Bohemians 1905",
+    "m": 32,
+    "poss": 45.7,
+    "pass": 227.4,
+    "longBalls": 27.5,
+    "possWonAtt3rd": 4.4,
+    "clearances": 29,
+    "tackles": 14.2,
+    "interceptions": 8.5
+   },
+   "Pardubice": {
+    "fotmobName": "Pardubice",
+    "m": 32,
+    "poss": 45.6,
+    "pass": 241.4,
+    "longBalls": 22.7,
+    "possWonAtt3rd": 2.8,
+    "clearances": 34.3,
+    "tackles": 13.8,
+    "interceptions": 8.2
+   },
+   "Hradec Králové": {
+    "fotmobName": "Hradec Kralove",
+    "m": 35,
+    "poss": 45.1,
+    "pass": 273,
+    "longBalls": 22.2,
+    "possWonAtt3rd": 2.6,
+    "clearances": 29.5,
+    "tackles": 13.8,
+    "interceptions": 7.7
+   },
+   "Dukla Praha": {
+    "fotmobName": "Dukla Praha",
+    "m": 35,
+    "poss": 43.3,
+    "pass": 218.7,
+    "longBalls": 22.4,
+    "possWonAtt3rd": 2.5,
+    "clearances": 30.4,
+    "tackles": 12.7,
+    "interceptions": 9.2
+   },
+   "Teplice": {
+    "fotmobName": "Teplice",
+    "m": 35,
+    "poss": 42.1,
+    "pass": 207.4,
+    "longBalls": 19.4,
+    "possWonAtt3rd": 2.7,
+    "clearances": 28.7,
+    "tackles": 13.5,
+    "interceptions": 8.4
+   },
+   "Zlín": {
+    "fotmobName": "FC Zlin",
+    "m": 35,
+    "poss": 40.1,
+    "pass": 186.9,
+    "longBalls": 25.9,
+    "possWonAtt3rd": 2.4,
+    "clearances": 32,
+    "tackles": 14.9,
+    "interceptions": 8.7
+   }
+  },
+  "2026/27": {
+   "Sparta Prague": {
+    "fotmobName": "Sparta Prague",
+    "m": 9,
+    "poss": 64,
+    "pass": 441.8,
+    "longBalls": 23.4,
+    "possWonAtt3rd": 5.1,
+    "clearances": 18.6,
+    "tackles": 12.2,
+    "interceptions": 5.9
+   },
+   "Jablonec": {
+    "fotmobName": "Jablonec",
+    "m": 9,
+    "poss": 55.8,
+    "pass": 371.9,
+    "longBalls": 23.3,
+    "possWonAtt3rd": 3,
+    "clearances": 27.7,
+    "tackles": 13.3,
+    "interceptions": 7.6
+   },
+   "Sigma Olomouc": {
+    "fotmobName": "Sigma Olomouc",
+    "m": 9,
+    "poss": 55.3,
+    "pass": 419,
+    "longBalls": 23.2,
+    "possWonAtt3rd": 4.3,
+    "clearances": 28.3,
+    "tackles": 16.6,
+    "interceptions": 8.7
+   },
+   "Slavia Prague": {
+    "fotmobName": "Slavia Prague",
+    "m": 9,
+    "poss": 54.3,
+    "pass": 302.1,
+    "longBalls": 28.2,
+    "possWonAtt3rd": 3.7,
+    "clearances": 29.6,
+    "tackles": 15,
+    "interceptions": 8.7
+   },
+   "Hradec Králové": {
+    "fotmobName": "Hradec Králové",
+    "m": 9,
+    "poss": 54.2,
+    "pass": 384.2,
+    "longBalls": 22.1,
+    "possWonAtt3rd": 2.2,
+    "clearances": 23.9,
+    "tackles": 16.7,
+    "interceptions": 7.8
+   },
+   "Viktoria Plzeň": {
+    "fotmobName": "Viktoria Plzeň",
+    "m": 9,
+    "poss": 53.6,
+    "pass": 367.6,
+    "longBalls": 24.6,
+    "possWonAtt3rd": 3,
+    "clearances": 25.8,
+    "tackles": 13.9,
+    "interceptions": 8
+   },
+   "Mladá Boleslav": {
+    "fotmobName": "Mladá Boleslav",
+    "m": 8,
+    "poss": 51.9,
+    "pass": 362.1,
+    "longBalls": 18,
+    "possWonAtt3rd": 2.8,
+    "clearances": 27,
+    "tackles": 14.6,
+    "interceptions": 8.3
+   },
+   "Slovácko": {
+    "fotmobName": "Slovácko",
+    "m": 9,
+    "poss": 49.9,
+    "pass": 347,
+    "longBalls": 21,
+    "possWonAtt3rd": 3.2,
+    "clearances": 25.3,
+    "tackles": 14.6,
+    "interceptions": 6.9
+   },
+   "Bohemians 1905": {
+    "fotmobName": "Bohemians 1905",
+    "m": 8,
+    "poss": 48.1,
+    "pass": 281.4,
+    "longBalls": 24.8,
+    "possWonAtt3rd": 4.6,
+    "clearances": 24.9,
+    "tackles": 14.5,
+    "interceptions": 9.1
+   },
+   "Baník Ostrava": {
+    "fotmobName": "Baník Ostrava",
+    "m": 9,
+    "poss": 48,
+    "pass": 294,
+    "longBalls": 19.9,
+    "possWonAtt3rd": 4.2,
+    "clearances": 20.8,
+    "tackles": 15.9,
+    "interceptions": 7.1
+   },
+   "Teplice": {
+    "fotmobName": "Teplice",
+    "m": 9,
+    "poss": 46.8,
+    "pass": 287.8,
+    "longBalls": 20.4,
+    "possWonAtt3rd": 1.8,
+    "clearances": 30.2,
+    "tackles": 12.7,
+    "interceptions": 7.3
+   },
+   "Artis Brno": {
+    "fotmobName": "Artis Brno",
+    "m": 9,
+    "poss": 45.7,
+    "pass": 253.8,
+    "longBalls": 28.9,
+    "possWonAtt3rd": 2.9,
+    "clearances": 26.3,
+    "tackles": 17.1,
+    "interceptions": 8.2
+   },
+   "Zbrojovka Brno": {
+    "fotmobName": "FC Zbrojovka Brno",
+    "m": 9,
+    "poss": 45.6,
+    "pass": 267.1,
+    "longBalls": 25.1,
+    "possWonAtt3rd": 2.6,
+    "clearances": 27.7,
+    "tackles": 14.2,
+    "interceptions": 8.7
+   },
+   "Slovan Liberec": {
+    "fotmobName": "Slovan Liberec",
+    "m": 9,
+    "poss": 45,
+    "pass": 242.8,
+    "longBalls": 25.1,
+    "possWonAtt3rd": 4.2,
+    "clearances": 23.4,
+    "tackles": 19.2,
+    "interceptions": 7.8
+   },
+   "Pardubice": {
+    "fotmobName": "Pardubice",
+    "m": 9,
+    "poss": 40.9,
+    "pass": 248.9,
+    "longBalls": 24,
+    "possWonAtt3rd": 2.7,
+    "clearances": 26,
+    "tackles": 13.2,
+    "interceptions": 8.1
+   },
+   "Zlín": {
+    "fotmobName": "FC Zlín",
+    "m": 9,
+    "poss": 40.9,
+    "pass": 212,
+    "longBalls": 25.6,
+    "possWonAtt3rd": 3.2,
+    "clearances": 33.2,
+    "tackles": 17.4,
+    "interceptions": 7.1
+   }
+  }
+ }
+}

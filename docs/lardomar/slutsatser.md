@@ -28,6 +28,7 @@ Alla ligor tillsammans, mot stängningsodds. z = styrka, och |z| ≥ 2,5 i trän
 | **Bolagssnitt mot Pinnacle** | Ingen effekt | Pinnacle räcker som facit |
 | **Över/under-marknaden mot kryss** | Ingen effekt | 1X2- och O/U-marknaderna är samstämmiga |
 | **Sista 4 omgångarna, omgång 1–5** | Ingen effekt | – |
+| **Stilmatchning** (2026-10-01): backar hem mot backar hem, bollinnehav, långbollar, press – och "laget X har svårt för lagtyp Y" | Ligamönster: inget |z| > 1,2 (kryss och över 2,5 inom ±2 pe). Lagmönster: tidig halva förutsäger inte sen, korrelation 0,00 ± 0,05 över ~4 000 par, 48–52 % samma tecken | Oddsen prisar redan in stilmötet. Lagspecifika "svårt för"-mönster är slump. Se [stilmatchning.md](../analys/stilmatchning.md). Använd inte för att flytta procent |
 | **Lag som marknaden felvärderar** (säsong → nästa) | Ingen persistens i någon liga | Ett lag som slagit oddsen en säsong är inte ett bättre spel nästa |
 
 Justeringsmodellen med alla signaler samtidigt förbättrade inte kontrollen (mot öppning −0,0004, z −1,0, mot stängning −0,0002, z −0,7). **Slutsats: lägg inte tid på att flytta procent efter form, xG, H2H eller frånvaro. Oddsen gör det redan.**
