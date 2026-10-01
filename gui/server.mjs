@@ -55,6 +55,13 @@ async function analyzeOne({ league, date, home, away }) {
   return analyzeMatch(t, teams);
 }
 
+/** Duellanalys: förväntad/officiell elva och spelare mot spelare (scripts/lib/matchup.mjs). */
+async function matchupOne({ league, date, home, away }) {
+  const { buildMatchup } = await import(new URL("../scripts/lib/matchup.mjs", import.meta.url).href);
+  const t = findTip(readJsonCached("data/tips-latest.json"), { league, date, home, away });
+  return t ? buildMatchup(t) : null;
+}
+
 /** Hämta elva for en enskild match (Fotmob/ESPN), spara cache + patcha tips, returnera analys. */
 async function fetchLineupOne({ league, date, home, away }) {
   const mod = await import(new URL("../scripts/fetch-match-lineup.mjs", import.meta.url).href);
@@ -823,6 +830,14 @@ const server = http.createServer((req, res) => {
   if (req.method === "GET" && url.pathname === "/api/analyze") {
     const q = Object.fromEntries(["league", "date", "home", "away"].map((k) => [k, url.searchParams.get(k) || ""]));
     analyzeOne(q)
+      .then((m) => (m ? sendJson(res, 200, m) : sendJson(res, 404, { error: "Matchen finns inte bland kommande tips" })))
+      .catch((e) => sendJson(res, 500, { error: String(e.message || e) }));
+    return;
+  }
+
+  if (req.method === "GET" && url.pathname === "/api/matchup") {
+    const q = Object.fromEntries(["league", "date", "home", "away"].map((k) => [k, url.searchParams.get(k) || ""]));
+    matchupOne(q)
       .then((m) => (m ? sendJson(res, 200, m) : sendJson(res, 404, { error: "Matchen finns inte bland kommande tips" })))
       .catch((e) => sendJson(res, 500, { error: String(e.message || e) }));
     return;

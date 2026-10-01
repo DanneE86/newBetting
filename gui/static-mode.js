@@ -12,6 +12,11 @@
     if (!analyses) analyses = realFetch("/api/analyze.json").then((r) => (r.ok ? r.json() : {}));
     return analyses;
   };
+  const matchups = {};
+  const loadMatchups = async (league) => {
+    if (!matchups[league]) matchups[league] = realFetch(`/api/matchup/${encodeURIComponent(league)}.json`).then((r) => (r.ok ? r.json() : {}));
+    return matchups[league];
+  };
   let teams = null;
   const loadTeams = async () => {
     if (!teams) teams = realFetch("/api/team.json").then((r) => (r.ok ? r.json() : {}));
@@ -30,6 +35,12 @@
       const key = [p.get("league"), p.get("date"), p.get("home"), p.get("away")].join("|");
       const hit = (await loadAnalyses())[key];
       return hit ? json(200, hit) : json(404, { error: "Ingen förberäknad analys för matchen" });
+    }
+    if (url.pathname === "/api/matchup") {
+      const p = url.searchParams;
+      const key = [p.get("league"), p.get("date"), p.get("home"), p.get("away")].join("|");
+      const hit = (await loadMatchups(p.get("league")))[key];
+      return hit ? json(200, hit) : json(404, { error: "Ingen förberäknad duellanalys för matchen" });
     }
     if (url.pathname === "/api/team") {
       const p = url.searchParams;

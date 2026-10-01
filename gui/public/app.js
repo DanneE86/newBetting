@@ -380,7 +380,12 @@ function tipCard(tip, i) {
             data-league="${escapeHtml(tip.league || "")}" data-date="${escapeHtml(tip.date || "")}"
             data-home="${escapeHtml(tip.home || "")}" data-away="${escapeHtml(tip.away || "")}"
             title="Hämta startelva för just den här matchen (Fotmob/ESPN)">Hämta elva</button>
+          <button type="button" class="btn-matchup" aria-expanded="false"
+            data-league="${escapeHtml(tip.league || "")}" data-date="${escapeHtml(tip.date || "")}"
+            data-home="${escapeHtml(tip.home || "")}" data-away="${escapeHtml(tip.away || "")}"
+            title="Spelare mot spelare: ytter mot ytterback, anfall mot försvar, mittfält och målvakt">Duellanalys</button>
         </div>
+        <div class="matchup" hidden></div>
         <div class="analysis" hidden></div>
       </div>
     </article>
@@ -944,6 +949,11 @@ async function fetchLineupForTip(btn) {
         </div></div></div>`;
       box.dataset.loaded = "1";
     }
+    // Duellanalysen byter till den officiella elvan: ladda om om den är öppen, annars vid nästa klick
+    const mxBtn = wrap?.querySelector(".btn-matchup");
+    const mxBox = wrap?.querySelector(".matchup");
+    if (mxBox) delete mxBox.dataset.loaded;
+    if (mxBtn && mxBox && !mxBox.hidden) toggleMatchup(mxBtn, { reload: true });
     // Uppdatera badge på kortet utan full reload
     const tip = btn.closest(".tip");
     if (tip && body.lineup?.lineupStatus) {
@@ -961,6 +971,145 @@ async function fetchLineupForTip(btn) {
     btn.disabled = false;
     btn.textContent = prev;
   }
+}
+
+// ---------- Duellanalys (GET /api/matchup, scripts/lib/matchup.mjs) ----------
+
+const pctShort = (p) => (p == null ? "—" : `${Math.round(Number(p) * 100)} %`);
+
+function mxPlayer(p) {
+  if (!p) return "—";
+  const bits = [p.goals != null && p.minutes ? `${p.goals}+${p.assists ?? 0}` : "", p.rating ? Number(p.rating).toFixed(2).replace(".", ",") : ""].filter(Boolean).join(" · ");
+  const flag = p.notInData ? ' <span class="mx-flag" title="Spelaren saknas i spelardatan">?</span>' : "";
+  return `<span class="mx-name">${escapeHtml(p.name)}</span>${flag}${bits ? ` <span class="mx-sub">${escapeHtml(bits)}</span>` : ""}`;
+}
+
+/** Elvan i led: målvakt, backlinje (V → H), mittfält, kanter och anfall. */
+function mxLineup(name, side, t, tableRow, tableSize) {
+  const r = t.roles;
+  const byName = new Map(t.xi.map((p) => [p.name, p]));
+  const row = (label, names) => (names.length ? `<div class="mx-line"><span class="mx-k">${label}</span><span class="mx-v">${names.map((n) => mxPlayer(byName.get(n) || { name: n })).join("<br>")}</span></div>` : "");
+  const back = [r.lb, ...r.cbs, r.rb].filter((x, i, a) => x && a.indexOf(x) === i);
+  const front = [r.lw, r.rw].filter((x) => x && !back.includes(x));
+  const used = new Set([r.gk, ...back, ...r.mid, ...front, ...r.attack]);
+  const rest = t.xi.map((p) => p.name).filter((n) => !used.has(n));
+  const tbl = tableRow ? `${tableRow.rank}:a${tableSize ? ` av ${tableSize}` : ""} · ${tableRow.pts} p · ${escapeHtml(tableRow.goals)}` : "";
+  const out = t.out?.length ? `<div class="mx-note">Borta: ${t.out.map((o) => `${escapeHtml(o.name)} – ${escapeHtml(o.why)}`).join("; ")}</div>` : "";
+  const notes = (t.notes || []).map((n) => `<div class="mx-note mx-warn">${escapeHtml(n)}</div>`).join("");
+  const unknown = t.unknown?.length ? `<div class="mx-note">Saknas i spelardatan: ${t.unknown.map(escapeHtml).join(", ")}</div>` : "";
+  const bench = t.bench?.length ? `<div class="mx-note">Närmast in: ${t.bench.map(escapeHtml).join(", ")}</div>` : "";
+  return `<div class="mx-team mx-${side}">
+      <div class="mx-team-head"><b>${escapeHtml(name)}</b> <span class="mx-sub">${escapeHtml(t.formation || "")}</span>${tbl ? `<span class="mx-table">${tbl}</span>` : ""}</div>
+      ${row("Mål", [r.gk].filter(Boolean))}
+      ${row("Försvar", back)}
+      ${row("Mittfält", [...r.mid, ...rest])}
+      ${row("Kanter", front)}
+      ${row("Anfall", r.attack)}
+      ${out}${notes}${unknown}${bench}
+    </div>`;
+}
+
+function mxDuelRow(d, m) {
+  if (!d) return "";
+  const cls = d.edge.who == null ? "mx-even" : d.edge.who === m.home ? "mx-home" : "mx-away";
+  const who = d.edge.who == null ? d.edge.text : d.edge.text.replace(d.edge.who, d.edge.who === m.home ? m.names.home : m.names.away);
+  const sc = d.attack.score != null && d.defend.score != null ? `<span class="mx-score">${d.attack.score}–${d.defend.score}</span>` : "";
+  return `<tr>
+      <td class="mx-duel"><div>${escapeHtml(d.title)}</div>${d.why.length ? `<ul class="mx-why">${d.why.map((w) => `<li>${escapeHtml(w)}</li>`).join("")}</ul>` : ""}</td>
+      <td class="mx-edge"><span class="mx-badge ${cls}">${escapeHtml(who)}</span>${sc}</td>
+    </tr>`;
+}
+
+function mxSection(title, rows, m) {
+  const list = rows.filter(Boolean);
+  if (!list.length) return "";
+  return `<div class="agent-box agent-wide"><h4>${escapeHtml(title)}</h4>
+    <table class="mx-table-duels"><tbody>${list.map((d) => mxDuelRow(d, m)).join("")}</tbody></table></div>`;
+}
+
+function matchupHtml(m) {
+  if (!m.ok) return `<p class="scan-empty">${escapeHtml(m.reason || "Ingen duellanalys för matchen")}</p>`;
+  const H = m.names.home, A = m.names.away;
+  const official = m.teams.home.status === "officiell" && m.teams.away.status === "officiell";
+  const xiTxt = official ? "Officiella elvor" : m.teams.home.status === "officiell" || m.teams.away.status === "officiell" ? "Elvor: en officiell, en förväntad" : "Förväntade elvor";
+  const v = m.verdict;
+  const pickTeam = v.pick === "1" ? H : v.pick === "2" ? A : "oavgjort";
+  const val = v.value
+    ? `${escapeHtml(v.pick)} @ ${escapeHtml(fmtOdd(v.value.odds))}${v.value.bookmaker ? ` (${escapeHtml(v.value.bookmaker)})` : ""} – ${v.value.value ? '<span class="val-badge val-yes">Värde</span>' : `<span class="val-badge val-no">Ej värde</span> <span class="mx-sub">från ${escapeHtml(fmtOdd(v.value.minOdds))}</span>`}`
+    : '<span class="val-badge val-none">Inga odds</span>';
+  const other = v.otherValue?.length ? `<div class="mx-note">Värde i stället: ${v.otherValue.map((o) => `${escapeHtml(o.pick)} @ ${escapeHtml(fmtOdd(o.odds))}`).join(", ")}</div>` : "";
+  const strengths = (list, name) => (list.length ? `<li><b>${escapeHtml(name)}:</b> ${list.map(escapeHtml).join(" · ")}</li>` : "");
+  const edgeTxt = m.edgeTeam
+    ? `Duellerna väger över till <b>${escapeHtml(m.edgeTeam === m.home ? H : A)}</b> (${m.edge > 0 ? "+" : ""}${String(m.edge).replace(".", ",")})`
+    : "Duellerna väger jämnt";
+  const probs = (p) => (p ? `${pctShort(p.home)} / ${pctShort(p.draw)} / ${pctShort(p.away)}` : "—");
+  return `<div class="mx-wrap">
+    <div class="mx-head">
+      <div><b>${escapeHtml(H)} – ${escapeHtml(A)}</b> <span class="mx-sub">${escapeHtml(fmtKick(m))}</span></div>
+      <div class="mx-head-r"><span class="mx-chip ${official ? "mx-chip-ok" : ""}">${escapeHtml(xiTxt)}</span>
+        <button type="button" class="btn-ghost mx-print" title="Skriv ut duellanalysen">Skriv ut</button></div>
+    </div>
+    <div class="scan-body">
+      <div class="agent-box agent-wide"><h4>${escapeHtml(xiTxt)}${official ? "" : " · minuter i de senaste 5 matcherna"}</h4>
+        <div class="mx-teams">${mxLineup(H, "home", m.teams.home, m.table?.home, m.table?.size)}${mxLineup(A, "away", m.teams.away, m.table?.away, m.table?.size)}</div>
+      </div>
+      ${mxSection("Ytter mot ytterback", m.duels.flanks, m)}
+      ${mxSection("Anfall mot försvar", m.duels.central, m)}
+      ${mxSection("Mittfält mot mittfält", [m.duels.midfield], m)}
+      ${mxSection("Målvakt", [m.duels.keeper], m)}
+      <div class="agent-box agent-wide mx-summary"><h4>Sammanvägning och tips</h4>
+        <p>${edgeTxt}.</p>
+        <ul class="mx-why">${strengths(m.strengths.home, H)}${strengths(m.strengths.away, A)}</ul>
+        <div class="mx-tip">
+          <div><span class="mx-k">Tips</span> <b>${escapeHtml(v.pick)}</b> (${escapeHtml(pickTeam)})</div>
+          <div><span class="mx-k">Resultat</span> <b>${escapeHtml(v.score || "—")}</b></div>
+          <div><span class="mx-k">Båda gör mål</span> <b>${escapeHtml(v.btts)}</b> <span class="mx-sub">${pctShort(v.pBtts)}</span></div>
+          <div><span class="mx-k">Mål</span> <b>${escapeHtml(v.over25)} 2,5</b> <span class="mx-sub">${pctShort(v.pOver25)}</span></div>
+        </div>
+        <div class="mx-note">1 / X / 2: ${probs(v.probs)} <span class="mx-sub">(modellen/marknaden före dueller: ${probs(v.baseProbs)})</span></div>
+        <div class="mx-val">${val}</div>${other}
+        <div class="mx-note">Duellerna justerar bara den här analysen – tipsmotorn och värdeomdömet ovan påverkas inte. Percentiler från FotMob (per 90 min, mot spelare på samma position; högre = bättre).${m.playerDataAt ? ` Spelardata ${escapeHtml(new Date(m.playerDataAt).toLocaleDateString("sv-SE"))}.` : ""}</div>
+      </div>
+    </div>
+  </div>`;
+}
+
+async function toggleMatchup(btn, { reload = false } = {}) {
+  const box = btn.closest(".tip-analyze")?.querySelector(".matchup");
+  if (!box) return;
+  const open = btn.getAttribute("aria-expanded") === "true";
+  if (!reload) {
+    btn.setAttribute("aria-expanded", String(!open));
+    box.hidden = open;
+    btn.textContent = open ? "Duellanalys" : "Dölj dueller";
+    if (open || box.dataset.loaded) return;
+  }
+  box.innerHTML = `<p class="scan-empty">Ställer upp elvorna…</p>`;
+  try {
+    const qs = new URLSearchParams({ league: btn.dataset.league, date: btn.dataset.date, home: btn.dataset.home, away: btn.dataset.away });
+    const res = await fetch(`/api/matchup?${qs}`, { cache: "no-store" });
+    const body = await res.json();
+    if (!res.ok) throw new Error(body.error === "Okänd API-route" ? "GUI-servern kör en äldre version – starta om den (npm run gui) och ladda om sidan." : body.error || "Duellanalysen misslyckades");
+    box.innerHTML = matchupHtml(body);
+    box.dataset.loaded = "1";
+  } catch (e) {
+    box.innerHTML = `<p class="scan-empty">${escapeHtml(e.message || e)}</p>`;
+  }
+}
+
+/** Skriv ut bara den här duellanalysen. */
+function printMatchup(btn) {
+  const box = btn.closest(".matchup");
+  if (!box) return;
+  box.classList.add("print-target");
+  document.body.classList.add("print-one");
+  const done = () => {
+    box.classList.remove("print-target");
+    document.body.classList.remove("print-one");
+    window.removeEventListener("afterprint", done);
+  };
+  window.addEventListener("afterprint", done);
+  window.print();
 }
 
 const R_CLASS = { V: "r-w", O: "r-d", F: "r-l" };
@@ -1096,6 +1245,16 @@ for (const id of ["#tips", "#candidates"]) {
     const lineupBtn = e.target.closest(".btn-lineup");
     if (lineupBtn) {
       fetchLineupForTip(lineupBtn);
+      return;
+    }
+    const printBtn = e.target.closest(".mx-print");
+    if (printBtn) {
+      printMatchup(printBtn);
+      return;
+    }
+    const matchupBtn = e.target.closest(".btn-matchup");
+    if (matchupBtn) {
+      toggleMatchup(matchupBtn);
       return;
     }
     const btn = e.target.closest(".btn-analyze");
