@@ -87,6 +87,23 @@ try {
   log(`analyser: ${Object.keys(analyses).length} ok, ${failed} saknas`);
   write("api/analyze.json", analyses);
 
+  // Duellanalysen: förväntad (eller officiell) elva och spelare mot spelare för varje match
+  const matchups = {};
+  let matchupFailed = 0;
+  for (const t of tips) {
+    const qs = new URLSearchParams({ league: t.league, date: t.date, home: t.home, away: t.away });
+    try {
+      matchups[[t.league, t.date, t.home, t.away].join("|")] = await get(`/api/matchup?${qs}`);
+    } catch {
+      matchupFailed++;
+    }
+  }
+  log(`dueller: ${Object.keys(matchups).length} ok, ${matchupFailed} saknas`);
+  // En fil per liga (api/matchup/<liga>.json), så att ett klick bara laddar ligans matcher
+  const byLeague = {};
+  for (const [k, v] of Object.entries(matchups)) (byLeague[k.split("|")[0]] ??= {})[k] = v;
+  for (const [lg, list] of Object.entries(byLeague)) write(`api/matchup/${lg}.json`, list);
+
   // Lagklicket: form, modellens träff och inbördes möten för båda lagen i varje match
   const teams = {};
   let teamFailed = 0;
