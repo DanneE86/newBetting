@@ -1,0 +1,801 @@
+{
+ "updatedAt": "2026-10-01T03:41:23.987Z",
+ "league": "GR",
+ "fotmobId": 135,
+ "source": "FotMob",
+ "seasons": {
+  "2021/22": {
+   "OFI Crete": {
+    "fotmobName": "OFI Crete",
+    "m": 1,
+    "poss": 61.9,
+    "pass": 382,
+    "longBalls": 43,
+    "possWonAtt3rd": 2,
+    "clearances": 9,
+    "tackles": 5,
+    "interceptions": 2
+   },
+   "Asteras Tripolis": {
+    "fotmobName": "Asteras Tripolis",
+    "m": 1,
+    "poss": 38.1,
+    "pass": 224,
+    "longBalls": 41,
+    "possWonAtt3rd": 4,
+    "clearances": 19,
+    "tackles": 17,
+    "interceptions": 15
+   }
+  },
+  "2022/23": {
+   "AEK": {
+    "fotmobName": "AEK Athens",
+    "m": 36,
+    "poss": 62.2,
+    "pass": 385.1,
+    "longBalls": 39.9,
+    "possWonAtt3rd": 5.4,
+    "clearances": 8.2,
+    "tackles": 12.8,
+    "interceptions": 9.6
+   },
+   "Panathinaikos": {
+    "fotmobName": "Panathinaikos",
+    "m": 36,
+    "poss": 58.4,
+    "pass": 406.9,
+    "longBalls": 33.9,
+    "possWonAtt3rd": 4.1,
+    "clearances": 8.8,
+    "tackles": 12.3,
+    "interceptions": 8.6
+   },
+   "PAOK": {
+    "fotmobName": "PAOK Thessaloniki",
+    "m": 36,
+    "poss": 58.2,
+    "pass": 405.6,
+    "longBalls": 31.1,
+    "possWonAtt3rd": 5.6,
+    "clearances": 11.6,
+    "tackles": 11.5,
+    "interceptions": 7.7
+   },
+   "Aris": {
+    "fotmobName": "Aris Thessaloniki",
+    "m": 36,
+    "poss": 57.1,
+    "pass": 398.9,
+    "longBalls": 30.6,
+    "possWonAtt3rd": 3.2,
+    "clearances": 11.5,
+    "tackles": 12.6,
+    "interceptions": 9.9
+   },
+   "Olympiakos": {
+    "fotmobName": "Olympiacos",
+    "m": 36,
+    "poss": 55.5,
+    "pass": 400.5,
+    "longBalls": 31.3,
+    "possWonAtt3rd": 4.2,
+    "clearances": 9.9,
+    "tackles": 13,
+    "interceptions": 9.1
+   },
+   "OFI Crete": {
+    "fotmobName": "OFI Crete",
+    "m": 33,
+    "poss": 54.6,
+    "pass": 364.2,
+    "longBalls": 32.8,
+    "possWonAtt3rd": 3.8,
+    "clearances": 13.7,
+    "tackles": 11,
+    "interceptions": 10.5
+   },
+   "Atromitos": {
+    "fotmobName": "Atromitos",
+    "m": 33,
+    "poss": 47.6,
+    "pass": 325.9,
+    "longBalls": 34.3,
+    "possWonAtt3rd": 2.2,
+    "clearances": 16,
+    "tackles": 12.1,
+    "interceptions": 10.9
+   },
+   "Asteras Tripolis": {
+    "fotmobName": "Asteras Tripolis",
+    "m": 33,
+    "poss": 47.6,
+    "pass": 323.9,
+    "longBalls": 30.1,
+    "possWonAtt3rd": 3.4,
+    "clearances": 15,
+    "tackles": 13.1,
+    "interceptions": 7.9
+   },
+   "Ionikos": {
+    "fotmobName": "Ionikos",
+    "m": 33,
+    "poss": 45.2,
+    "pass": 249.5,
+    "longBalls": 26.2,
+    "possWonAtt3rd": 3.2,
+    "clearances": 12.7,
+    "tackles": 13.4,
+    "interceptions": 11.2
+   },
+   "Volos NFC": {
+    "fotmobName": "NFC Volos",
+    "m": 36,
+    "poss": 43.8,
+    "pass": 275.6,
+    "longBalls": 30.8,
+    "possWonAtt3rd": 2.9,
+    "clearances": 14.5,
+    "tackles": 10.8,
+    "interceptions": 9.3
+   },
+   "Lamia": {
+    "fotmobName": "Lamia",
+    "m": 33,
+    "poss": 42.6,
+    "pass": 238.2,
+    "longBalls": 26.6,
+    "possWonAtt3rd": 3.2,
+    "clearances": 14.9,
+    "tackles": 12,
+    "interceptions": 10.7
+   },
+   "Panetolikos": {
+    "fotmobName": "Panetolikos",
+    "m": 33,
+    "poss": 42.5,
+    "pass": 268.6,
+    "longBalls": 30.8,
+    "possWonAtt3rd": 2.3,
+    "clearances": 16.4,
+    "tackles": 13.4,
+    "interceptions": 11.3
+   },
+   "Giannina": {
+    "fotmobName": "PAS Giannina",
+    "m": 33,
+    "poss": 41.5,
+    "pass": 261.5,
+    "longBalls": 28.8,
+    "possWonAtt3rd": 2.9,
+    "clearances": 15.5,
+    "tackles": 13.7,
+    "interceptions": 11.2
+   },
+   "Levadeiakos": {
+    "fotmobName": "Levadiakos",
+    "m": 33,
+    "poss": 39.9,
+    "pass": 212.2,
+    "longBalls": 24.2,
+    "possWonAtt3rd": 3.4,
+    "clearances": 14,
+    "tackles": 13.4,
+    "interceptions": 11.4
+   }
+  },
+  "2023/24": {
+   "AEK": {
+    "fotmobName": "AEK Athens",
+    "m": 36,
+    "poss": 62.3,
+    "pass": 415.6,
+    "longBalls": 35.8,
+    "possWonAtt3rd": 5,
+    "clearances": 12.4,
+    "tackles": 14.6,
+    "interceptions": 9.1
+   },
+   "Panathinaikos": {
+    "fotmobName": "Panathinaikos",
+    "m": 36,
+    "poss": 61.3,
+    "pass": 449.6,
+    "longBalls": 29.8,
+    "possWonAtt3rd": 4.8,
+    "clearances": 14.7,
+    "tackles": 14.9,
+    "interceptions": 7.8
+   },
+   "Olympiakos": {
+    "fotmobName": "Olympiacos",
+    "m": 36,
+    "poss": 58.5,
+    "pass": 397.9,
+    "longBalls": 30.5,
+    "possWonAtt3rd": 5.6,
+    "clearances": 12.9,
+    "tackles": 16,
+    "interceptions": 9.1
+   },
+   "PAOK": {
+    "fotmobName": "PAOK Thessaloniki",
+    "m": 36,
+    "poss": 57.2,
+    "pass": 402.5,
+    "longBalls": 34,
+    "possWonAtt3rd": 5,
+    "clearances": 13.4,
+    "tackles": 13.1,
+    "interceptions": 8.3
+   },
+   "OFI Crete": {
+    "fotmobName": "OFI Crete",
+    "m": 33,
+    "poss": 52,
+    "pass": 352.7,
+    "longBalls": 28.7,
+    "possWonAtt3rd": 3.5,
+    "clearances": 16.3,
+    "tackles": 14.8,
+    "interceptions": 9.3
+   },
+   "Aris": {
+    "fotmobName": "Aris Thessaloniki",
+    "m": 36,
+    "poss": 51.3,
+    "pass": 347.3,
+    "longBalls": 29.7,
+    "possWonAtt3rd": 3.8,
+    "clearances": 19.2,
+    "tackles": 15.8,
+    "interceptions": 10.4
+   },
+   "Atromitos": {
+    "fotmobName": "Atromitos",
+    "m": 33,
+    "poss": 50.1,
+    "pass": 318.6,
+    "longBalls": 31.1,
+    "possWonAtt3rd": 2.9,
+    "clearances": 16.1,
+    "tackles": 13.3,
+    "interceptions": 11
+   },
+   "Asteras Tripolis": {
+    "fotmobName": "Asteras Tripolis",
+    "m": 33,
+    "poss": 47.9,
+    "pass": 306.8,
+    "longBalls": 28.5,
+    "possWonAtt3rd": 3.9,
+    "clearances": 18.4,
+    "tackles": 12.7,
+    "interceptions": 9.7
+   },
+   "Panserraikos": {
+    "fotmobName": "Panserraikos FC",
+    "m": 33,
+    "poss": 44.6,
+    "pass": 276.8,
+    "longBalls": 25.5,
+    "possWonAtt3rd": 3.6,
+    "clearances": 20.8,
+    "tackles": 13.2,
+    "interceptions": 10.3
+   },
+   "Panetolikos": {
+    "fotmobName": "Panetolikos",
+    "m": 33,
+    "poss": 44.3,
+    "pass": 281,
+    "longBalls": 29.2,
+    "possWonAtt3rd": 3.3,
+    "clearances": 19.8,
+    "tackles": 14.3,
+    "interceptions": 10.1
+   },
+   "Volos NFC": {
+    "fotmobName": "NFC Volos",
+    "m": 33,
+    "poss": 43.7,
+    "pass": 248.8,
+    "longBalls": 24.8,
+    "possWonAtt3rd": 3.2,
+    "clearances": 20.1,
+    "tackles": 14.7,
+    "interceptions": 9.5
+   },
+   "Kifisia": {
+    "fotmobName": "Kifisia FC",
+    "m": 33,
+    "poss": 42.3,
+    "pass": 228.3,
+    "longBalls": 26.1,
+    "possWonAtt3rd": 3.6,
+    "clearances": 19.7,
+    "tackles": 13.8,
+    "interceptions": 11.6
+   },
+   "Giannina": {
+    "fotmobName": "PAS Giannina",
+    "m": 33,
+    "poss": 41.8,
+    "pass": 248.7,
+    "longBalls": 30.5,
+    "possWonAtt3rd": 3.2,
+    "clearances": 18.4,
+    "tackles": 15.2,
+    "interceptions": 9.8
+   },
+   "Lamia": {
+    "fotmobName": "Lamia",
+    "m": 36,
+    "poss": 40,
+    "pass": 246.1,
+    "longBalls": 23.9,
+    "possWonAtt3rd": 3,
+    "clearances": 23.4,
+    "tackles": 16.2,
+    "interceptions": 10.9
+   }
+  },
+  "2024/25": {
+   "AEK": {
+    "fotmobName": "AEK Athens",
+    "m": 32,
+    "poss": 64.9,
+    "pass": 410.2,
+    "longBalls": 27.6,
+    "possWonAtt3rd": 4.4,
+    "clearances": 15.5,
+    "tackles": 14,
+    "interceptions": 8
+   },
+   "PAOK": {
+    "fotmobName": "PAOK Thessaloniki",
+    "m": 32,
+    "poss": 57.6,
+    "pass": 377.5,
+    "longBalls": 27.5,
+    "possWonAtt3rd": 5,
+    "clearances": 19.6,
+    "tackles": 13.5,
+    "interceptions": 8.6
+   },
+   "Olympiakos": {
+    "fotmobName": "Olympiacos",
+    "m": 32,
+    "poss": 57.6,
+    "pass": 342.9,
+    "longBalls": 30.4,
+    "possWonAtt3rd": 5.8,
+    "clearances": 18.7,
+    "tackles": 18.5,
+    "interceptions": 8
+   },
+   "Panathinaikos": {
+    "fotmobName": "Panathinaikos",
+    "m": 32,
+    "poss": 56.8,
+    "pass": 365.6,
+    "longBalls": 22.3,
+    "possWonAtt3rd": 4.6,
+    "clearances": 24.5,
+    "tackles": 14.3,
+    "interceptions": 7.9
+   },
+   "Aris": {
+    "fotmobName": "Aris Thessaloniki",
+    "m": 32,
+    "poss": 54,
+    "pass": 372,
+    "longBalls": 27.7,
+    "possWonAtt3rd": 3.7,
+    "clearances": 21.8,
+    "tackles": 15.7,
+    "interceptions": 7.5
+   },
+   "Levadeiakos": {
+    "fotmobName": "Levadiakos",
+    "m": 36,
+    "poss": 49.7,
+    "pass": 315.9,
+    "longBalls": 24.1,
+    "possWonAtt3rd": 3.7,
+    "clearances": 25.4,
+    "tackles": 17.4,
+    "interceptions": 9.3
+   },
+   "Panserraikos": {
+    "fotmobName": "Panserraikos FC",
+    "m": 36,
+    "poss": 48.4,
+    "pass": 320.5,
+    "longBalls": 23.4,
+    "possWonAtt3rd": 3.4,
+    "clearances": 25.4,
+    "tackles": 14.9,
+    "interceptions": 8.5
+   },
+   "OFI Crete": {
+    "fotmobName": "OFI Crete",
+    "m": 32,
+    "poss": 47.7,
+    "pass": 303.3,
+    "longBalls": 25.8,
+    "possWonAtt3rd": 2.8,
+    "clearances": 25.6,
+    "tackles": 14.3,
+    "interceptions": 8.6
+   },
+   "Volos NFC": {
+    "fotmobName": "NFC Volos",
+    "m": 36,
+    "poss": 47.4,
+    "pass": 301.1,
+    "longBalls": 22.8,
+    "possWonAtt3rd": 3.4,
+    "clearances": 22.8,
+    "tackles": 16.4,
+    "interceptions": 7.8
+   },
+   "Asteras Tripolis": {
+    "fotmobName": "Asteras Tripolis",
+    "m": 32,
+    "poss": 45.4,
+    "pass": 288.1,
+    "longBalls": 23.3,
+    "possWonAtt3rd": 3,
+    "clearances": 26.9,
+    "tackles": 13.9,
+    "interceptions": 8.2
+   },
+   "Atromitos": {
+    "fotmobName": "Atromitos",
+    "m": 32,
+    "poss": 45.3,
+    "pass": 277.5,
+    "longBalls": 20.1,
+    "possWonAtt3rd": 4.3,
+    "clearances": 25.5,
+    "tackles": 16.3,
+    "interceptions": 7.4
+   },
+   "Athens Kallithea": {
+    "fotmobName": "Athens Kallithea FC",
+    "m": 36,
+    "poss": 45.2,
+    "pass": 271.8,
+    "longBalls": 25.9,
+    "possWonAtt3rd": 2.8,
+    "clearances": 26.5,
+    "tackles": 16.3,
+    "interceptions": 7.6
+   },
+   "Panetolikos": {
+    "fotmobName": "Panetolikos",
+    "m": 36,
+    "poss": 42.6,
+    "pass": 281.3,
+    "longBalls": 24.3,
+    "possWonAtt3rd": 3,
+    "clearances": 29,
+    "tackles": 15,
+    "interceptions": 8
+   },
+   "Lamia": {
+    "fotmobName": "Lamia",
+    "m": 36,
+    "poss": 40.8,
+    "pass": 251.4,
+    "longBalls": 20.4,
+    "possWonAtt3rd": 2.8,
+    "clearances": 26.9,
+    "tackles": 16.8,
+    "interceptions": 9
+   }
+  },
+  "2025/26": {
+   "Olympiakos": {
+    "fotmobName": "Olympiacos",
+    "m": 32,
+    "poss": 60.4,
+    "pass": 372.6,
+    "longBalls": 26.5,
+    "possWonAtt3rd": 5.7,
+    "clearances": 17.6,
+    "tackles": 15.3,
+    "interceptions": 9.2
+   },
+   "PAOK": {
+    "fotmobName": "PAOK Thessaloniki",
+    "m": 32,
+    "poss": 59.6,
+    "pass": 406.7,
+    "longBalls": 28.5,
+    "possWonAtt3rd": 4.1,
+    "clearances": 22.3,
+    "tackles": 13.2,
+    "interceptions": 7.8
+   },
+   "AEK": {
+    "fotmobName": "AEK Athens",
+    "m": 32,
+    "poss": 57.1,
+    "pass": 380.5,
+    "longBalls": 22.6,
+    "possWonAtt3rd": 3.1,
+    "clearances": 19.5,
+    "tackles": 13.6,
+    "interceptions": 7
+   },
+   "Levadeiakos": {
+    "fotmobName": "Levadiakos",
+    "m": 32,
+    "poss": 56.4,
+    "pass": 379.4,
+    "longBalls": 27.7,
+    "possWonAtt3rd": 2.8,
+    "clearances": 23.8,
+    "tackles": 15.1,
+    "interceptions": 8.3
+   },
+   "Atromitos": {
+    "fotmobName": "Atromitos",
+    "m": 36,
+    "poss": 52.8,
+    "pass": 370.9,
+    "longBalls": 20,
+    "possWonAtt3rd": 3.1,
+    "clearances": 24.4,
+    "tackles": 13.9,
+    "interceptions": 8.1
+   },
+   "Panathinaikos": {
+    "fotmobName": "Panathinaikos",
+    "m": 32,
+    "poss": 52.5,
+    "pass": 364.8,
+    "longBalls": 21.8,
+    "possWonAtt3rd": 4.1,
+    "clearances": 20.4,
+    "tackles": 15.8,
+    "interceptions": 8.4
+   },
+   "Aris": {
+    "fotmobName": "Aris Thessaloniki",
+    "m": 32,
+    "poss": 51.1,
+    "pass": 313.5,
+    "longBalls": 24,
+    "possWonAtt3rd": 3.6,
+    "clearances": 26.8,
+    "tackles": 13,
+    "interceptions": 7.1
+   },
+   "Kifisia": {
+    "fotmobName": "Kifisia FC",
+    "m": 36,
+    "poss": 47.8,
+    "pass": 282.5,
+    "longBalls": 23.1,
+    "possWonAtt3rd": 3.2,
+    "clearances": 25.7,
+    "tackles": 15.5,
+    "interceptions": 6.7
+   },
+   "Volos NFC": {
+    "fotmobName": "NFC Volos",
+    "m": 32,
+    "poss": 46.3,
+    "pass": 283.9,
+    "longBalls": 22.8,
+    "possWonAtt3rd": 3.1,
+    "clearances": 21.9,
+    "tackles": 14.5,
+    "interceptions": 8.5
+   },
+   "Panetolikos": {
+    "fotmobName": "Panetolikos",
+    "m": 36,
+    "poss": 45.7,
+    "pass": 297.1,
+    "longBalls": 25.5,
+    "possWonAtt3rd": 2.6,
+    "clearances": 25.9,
+    "tackles": 12,
+    "interceptions": 7.1
+   },
+   "OFI Crete": {
+    "fotmobName": "OFI Crete",
+    "m": 32,
+    "poss": 45.4,
+    "pass": 291.5,
+    "longBalls": 22.6,
+    "possWonAtt3rd": 2.7,
+    "clearances": 25.1,
+    "tackles": 13,
+    "interceptions": 8.1
+   },
+   "Asteras Tripolis": {
+    "fotmobName": "Asteras Tripolis",
+    "m": 36,
+    "poss": 45,
+    "pass": 269.4,
+    "longBalls": 27.2,
+    "possWonAtt3rd": 3.5,
+    "clearances": 24.9,
+    "tackles": 13.1,
+    "interceptions": 7.7
+   },
+   "Panserraikos": {
+    "fotmobName": "Panserraikos FC",
+    "m": 36,
+    "poss": 37.3,
+    "pass": 225.6,
+    "longBalls": 22.4,
+    "possWonAtt3rd": 2.7,
+    "clearances": 27.8,
+    "tackles": 15.8,
+    "interceptions": 9.4
+   }
+  },
+  "2026/27": {
+   "Panathinaikos": {
+    "fotmobName": "Panathinaikos",
+    "m": 5,
+    "poss": 65,
+    "pass": 498.2,
+    "longBalls": 23.8,
+    "possWonAtt3rd": 3,
+    "clearances": 15.8,
+    "tackles": 15.4,
+    "interceptions": 7.6
+   },
+   "Olympiakos": {
+    "fotmobName": "Olympiacos",
+    "m": 5,
+    "poss": 63.4,
+    "pass": 417.6,
+    "longBalls": 28.2,
+    "possWonAtt3rd": 7.2,
+    "clearances": 17.4,
+    "tackles": 15.6,
+    "interceptions": 4.8
+   },
+   "AEK": {
+    "fotmobName": "AEK Athens",
+    "m": 5,
+    "poss": 61.1,
+    "pass": 435.4,
+    "longBalls": 26.2,
+    "possWonAtt3rd": 3.8,
+    "clearances": 15.4,
+    "tackles": 15,
+    "interceptions": 6.8
+   },
+   "OFI Crete": {
+    "fotmobName": "OFI Crete",
+    "m": 5,
+    "poss": 53,
+    "pass": 407.4,
+    "longBalls": 27.2,
+    "possWonAtt3rd": 2.8,
+    "clearances": 19.6,
+    "tackles": 12.6,
+    "interceptions": 10.2
+   },
+   "Aris": {
+    "fotmobName": "Aris Thessaloniki",
+    "m": 5,
+    "poss": 51.6,
+    "pass": 312.8,
+    "longBalls": 26,
+    "possWonAtt3rd": 3.8,
+    "clearances": 19.6,
+    "tackles": 15,
+    "interceptions": 9
+   },
+   "Asteras Tripolis": {
+    "fotmobName": "Asteras Tripolis",
+    "m": 5,
+    "poss": 49.8,
+    "pass": 301.2,
+    "longBalls": 28.4,
+    "possWonAtt3rd": 4.2,
+    "clearances": 29.4,
+    "tackles": 16.2,
+    "interceptions": 6.8
+   },
+   "Volos NFC": {
+    "fotmobName": "NFC Volos",
+    "m": 5,
+    "poss": 47.1,
+    "pass": 264,
+    "longBalls": 19.4,
+    "possWonAtt3rd": 3.6,
+    "clearances": 22.2,
+    "tackles": 13,
+    "interceptions": 8
+   },
+   "Atromitos": {
+    "fotmobName": "Atromitos",
+    "m": 5,
+    "poss": 45.9,
+    "pass": 273.6,
+    "longBalls": 18,
+    "possWonAtt3rd": 2.2,
+    "clearances": 28.4,
+    "tackles": 14.6,
+    "interceptions": 7.8
+   },
+   "PAOK": {
+    "fotmobName": "PAOK Thessaloniki",
+    "m": 5,
+    "poss": 45.3,
+    "pass": 286.6,
+    "longBalls": 23.4,
+    "possWonAtt3rd": 2.2,
+    "clearances": 29.2,
+    "tackles": 16,
+    "interceptions": 8.8
+   },
+   "Kifisia": {
+    "fotmobName": "Kifisia FC",
+    "m": 5,
+    "poss": 45,
+    "pass": 300.6,
+    "longBalls": 24.2,
+    "possWonAtt3rd": 3,
+    "clearances": 27.8,
+    "tackles": 10.2,
+    "interceptions": 11
+   },
+   "Levadeiakos": {
+    "fotmobName": "Levadiakos",
+    "m": 5,
+    "poss": 44,
+    "pass": 273.6,
+    "longBalls": 26.4,
+    "possWonAtt3rd": 4.6,
+    "clearances": 33.2,
+    "tackles": 21.2,
+    "interceptions": 9.2
+   },
+   "Kalamata": {
+    "fotmobName": "Kalamata",
+    "m": 5,
+    "poss": 43.4,
+    "pass": 239.4,
+    "longBalls": 18.4,
+    "possWonAtt3rd": 2.8,
+    "clearances": 29.2,
+    "tackles": 14.8,
+    "interceptions": 9.6
+   },
+   "Iraklis": {
+    "fotmobName": "Iraklis",
+    "m": 5,
+    "poss": 42.9,
+    "pass": 271.4,
+    "longBalls": 22.8,
+    "possWonAtt3rd": 2.4,
+    "clearances": 30.8,
+    "tackles": 12.8,
+    "interceptions": 7.2
+   },
+   "Panetolikos": {
+    "fotmobName": "Panetolikos",
+    "m": 5,
+    "poss": 42.5,
+    "pass": 249.8,
+    "longBalls": 28.6,
+    "possWonAtt3rd": 2.6,
+    "clearances": 32.4,
+    "tackles": 11,
+    "interceptions": 8.4
+   }
+  }
+ }
+}

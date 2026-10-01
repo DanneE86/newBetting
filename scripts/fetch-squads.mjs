@@ -9,16 +9,11 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { root } from './lib/learnings-data.mjs';
 import { nameScore } from './lib/match-context.mjs';
+import { fold, mapTable } from './lib/fotmob-names.mjs';
+import { FOTMOB_LEAGUES as FOTMOB } from './lib/fotmob-leagues.mjs';
 import { TM_COMP, TM_TEAM_ID, tmClubs, tmSquad } from './lib/transfermarkt.mjs';
 
 const FM = 'https://www.fotmob.com/api/data';
-// FotMob-liga per kod (grupp = tabellnamn i ligor med flera tabeller, t.ex. Ettan Norra/Sodra)
-export const FOTMOB = {
-  PL: 47, CH: 48, EL1: 108, EL2: 109, BL: 54, BL2: 146, LL: 87, LL2: 140, SA: 55, SB: 86, L1: 53, ED: 57, PT: 61, GR: 135,
-  AS: 67, SE2: 168, SE3N: [169, 'Norra'], SE3S: [169, 'Soedra'], NO: 59, NO2: 203, DK: 46, EK: 196,
-  JP1: 223, MLS: 130, MX: 230, BR: 268, BR2: 8814, AR: 112, COL: 274,
-  CZ: 122, HR: 252, CL: 42, EL: 73, ECL: 10216,
-};
 const TEAM_MAX_AGE_H = 20;
 const PARALLEL = 3;
 const DIR_SQ = path.join(root, 'data', 'trupper');
@@ -63,50 +58,6 @@ function ourTeams(code) {
   for (const c of rows) for (const n of [c[5], c[6]]) if (n) { all.add(n); if (!c[2] || c[2] === season) cur.add(n); }
   return { cur: [...cur], all: [...all] };
 }
-// FotMob-namn som inte liknar football-datas (football-data -> vart namn)
-const ALIASES = {
-  'Sporting CP': 'Sp Lisbon', 'Sporting Braga': 'Sp Braga', 'Olympiacos': 'Olympiakos', 'Levadiakos': 'Levadeiakos',
-  'FC København': 'FC Copenhagen', OB: 'Odense', AGF: 'Aarhus', AB: 'AB Gladsaxe', 'Urawa Red Diamonds': 'Urawa Reds',
-  'Deportivo A Coruña': 'La Coruna', 'Celta Fortuna': 'Celta B', 'Real Sociedad B': 'Sociedad B', 'Wisła Kraków': 'Wisla',
-  'Zagłębie Lubin': 'Zaglebie', 'Athletic Club': 'Ath Bilbao', 'Atletico Madrid': 'Ath Madrid', 'Atlético Madrid': 'Ath Madrid',
-  'Tokyo Verdy': 'Verdy', 'Argentinos Juniors': 'Argentinos Jrs', 'Independiente Rivadavia': 'Ind. Rivadavia',
-  Estudiantes: 'Estudiantes L.P.', 'Athletic Club MG': 'Athletic', 'NK Lokomotiva': 'Lokomotiva Zagreb', 'Lunds BK': 'Lund',
-  'Paris Saint-Germain': 'Paris SG', Inter: 'Internazionale', 'FK Crvena Zvezda': 'Red Star Belgrade', Rennes: 'Stade Rennais',
-};
-const fold = (x) => String(x).replace(/ø/g, 'o').replace(/Ø/g, 'O').replace(/æ/g, 'ae').replace(/Æ/g, 'Ae').replace(/ł/g, 'l').replace(/Ł/g, 'L')
-  .replace(/ß/g, 'ss').normalize('NFD').replace(/[̀-ͯ]/g, '');
-// -> { n: vart namn, s: sakerhet } (alias/exakt = 2, annars nameScore). Innevarande sasong provas forst.
-function mapTeam(names, fm, short) {
-  for (const list of [names.cur, names.all]) {
-    if (ALIASES[fm] && list.includes(ALIASES[fm])) return { n: ALIASES[fm], s: 2 };
-    const exact = list.find((n) => fold(n).toLowerCase() === fold(fm).toLowerCase() || (short && fold(n).toLowerCase() === fold(short).toLowerCase()));
-    if (exact) return { n: exact, s: 2 };
-    let best = null;
-    for (const n of list) {
-      const a = fold(n), b = fold(fm), c = short ? fold(short) : null;
-      const s = Math.max(nameScore(a, null, b), c ? nameScore(a, null, c) : 0, nameScore(b, null, a));
-      if (s >= 0.5 && (!best || s > best.s)) best = { s, n };
-    }
-    if (best) return best;
-  }
-  return { n: fm, s: 0 };
-}
-
-// Ett av vara namn far bara ga till ett FotMob-lag (annars skriver t.ex. Argentinos Juniors over Boca Juniors trupp).
-// Vid krock behaller den sakraste kopplingen namnet, ovriga far sitt FotMob-namn.
-function mapTable(names, rows) {
-  const byId = new Map();
-  for (const r of rows) if (!byId.has(r.id)) byId.set(r.id, { ...mapTeam(names, r.name, r.shortName), fm: r.name });
-  const owner = new Map();
-  for (const [id, m] of byId) if (!owner.has(m.n) || m.s > byId.get(owner.get(m.n)).s) owner.set(m.n, id);
-  const out = new Map();
-  for (const [id, m] of byId) {
-    if (owner.get(m.n) === id) out.set(id, m.n);
-    else { console.warn(`  namnkrock: FotMob "${m.fm}" och "${byId.get(owner.get(m.n)).fm}" -> "${m.n}" (behåller FotMob-namnet)`); out.set(id, m.fm); }
-  }
-  return out;
-}
-
 // FotMob listar ibland hela akademin (brasilianska lag 50-60 spelare, U20 med egna trojnummer). I uppblasta trupper
 // tas spelare 21 ar eller yngre utan en enda insats i ar bort (Transfermarkt har dem inte i A-truppen).
 const MAX_SQUAD = 40;
