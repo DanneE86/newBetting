@@ -18312,17 +18312,56 @@
       "referee": {
         "referee": "Andrés José Rojas Noguera",
         "home": {
-          "team": "Atlético-GO",
-          "matches": 0,
+          "team": "Atlético Nacional",
+          "matches": 8,
           "record": {
-            "w": 0,
-            "d": 0,
-            "l": 0
+            "w": 3,
+            "d": 2,
+            "l": 3
           },
-          "streak": null,
+          "streak": {
+            "res": "W",
+            "n": 2
+          },
           "flag": null,
-          "yellowPg": null,
-          "last": []
+          "yellowPg": 1.88,
+          "last": [
+            {
+              "date": "2026-10-01",
+              "opp": "Junior FC",
+              "home": true,
+              "score": "3-1",
+              "res": "W"
+            },
+            {
+              "date": "2026-02-05",
+              "opp": "América de Cali",
+              "home": true,
+              "score": "2-1",
+              "res": "W"
+            },
+            {
+              "date": "2025-12-08",
+              "opp": "América de Cali",
+              "home": false,
+              "score": "2-3",
+              "res": "L"
+            },
+            {
+              "date": "2025-11-30",
+              "opp": "Junior FC",
+              "home": false,
+              "score": "1-2",
+              "res": "L"
+            },
+            {
+              "date": "2025-09-08",
+              "opp": "Independiente Medellín",
+              "home": false,
+              "score": "3-3",
+              "res": "D"
+            }
+          ]
         },
         "away": {
           "team": "Atlético-GO",
@@ -158662,7 +158701,7 @@
     "source": "the-odds-api.com v4"
   },
   "proMeta": {
-    "updatedAt": "2026-10-01T14:16:40.072Z",
+    "updatedAt": "2026-10-01T14:29:29.177Z",
     "config": {
       "dcWeight": 0.5,
       "minEv": 0.03,
