@@ -67,10 +67,10 @@ test('Stryktipset: en sida, egna krav genererar kupong A och B', async ({ page }
   await expect(rows).toHaveCount(13);
   // Kupongen genereras direkt, utan krav
   await expect(page.locator('.sb-table tbody tr')).toHaveCount(13);
-  // A och B skiljer sig: högst 2 identiska spikar, aldrig samma halvgardering
+  // A och B skiljer sig: högst 2 identiska spikar, aldrig samma halv- eller helgardering
   const pairs = await page.locator('.sb-table tbody tr').evaluateAll((trs) => trs.map((tr) => [tr.children[2].textContent!.trim(), tr.children[3].textContent!.trim()]));
   expect(pairs.filter(([a, b]) => a === b && a.split('+').length === 1).length).toBeLessThanOrEqual(2);
-  expect(pairs.filter(([a, b]) => a === b && a.split('+').length === 2).length).toBe(0);
+  expect(pairs.filter(([a, b]) => a === b && a.split('+').length > 1).length).toBe(0);
   // Klick på turmatch fäller ut en förklaring i enkla ord
   const turBtn = page.locator('.sb-list .tur-btn').first();
   if (await turBtn.count()) {

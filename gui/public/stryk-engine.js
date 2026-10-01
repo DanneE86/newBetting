@@ -18,7 +18,7 @@ const UTD_MIN_B = 30000;
 const BUDGET_C = { min: 700, max: 850 };
 const UTD_MIN_C = 30000;
 // Kupong B mot A (användarens regel 2026-10-01, A är huvudsystemet): högst 1 spik med samma tecken på samma match och aldrig exakt samma
-// halvgardering. Egna krav räknas inte. Går det inte att bygga släpps spikgränsen stegvis (B_SAME_LADDER).
+// halv- eller helgardering (bara spiken får vara identisk). Egna krav räknas inte. Går det inte att bygga släpps spikgränsen stegvis (B_SAME_LADDER).
 const B_MAX_SAME_SPIK = 1;
 const B_SAME_LADDER = [1, 2, 3, 4];
 const GC_TURNOVER = { stryktipset: 25e6, europatipset: 1e7 };
@@ -83,7 +83,7 @@ const pickOf = (x) => ({
 
 // forced[i] = låsta tecken (t.ex. [0, 1] för 1X) eller null. Övriga matcher: de 1–3 troligaste tecknen.
 // other = { sets, maxSame, locked }: grundraden får högst maxSame spikar som är identiska med other.sets och ingen identisk
-// halvgardering (kupong B mot A). Där användaren låst ett krav bara i A (locked[i]) får B aldrig ha exakt samma tecken,
+// halv- eller helgardering (kupong B mot A). Där användaren låst ett krav bara i A (locked[i]) får B aldrig ha exakt samma tecken,
 // oavsett typ (spik, halv- eller helgardering). Krav i B räknas inte.
 function grundCandidates(events, maxRows, forced, other = null, spikMin = 0) {
   const same = (a, b) => a.length === b.length && a.every((x, j) => x === b[j]);
@@ -95,7 +95,7 @@ function grundCandidates(events, maxRows, forced, other = null, spikMin = 0) {
     if (other) {
       for (const k of [0, 1, 2]) if (!subs.some((x) => same(x, [k]))) subs.push([k]);
       for (const x of [[0, 1], [0, 2], [1, 2]]) if (!subs.some((y) => same(y, x))) subs.push(x);
-      return subs.filter((x) => !((x.length === 2 || other.locked?.[i]) && same(x, other.sets[i])) && (x.length > 1 || spikOk(e, x[0], spikMin)));
+      return subs.filter((x) => !((x.length > 1 || other.locked?.[i]) && same(x, other.sets[i])) && (x.length > 1 || spikOk(e, x[0], spikMin)));
     }
     return subs.filter((x) => x.length > 1 || spikOk(e, x[0], spikMin));
   };
