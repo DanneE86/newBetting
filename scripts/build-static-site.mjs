@@ -104,6 +104,31 @@ try {
   for (const [k, v] of Object.entries(matchups)) (byLeague[k.split("|")[0]] ??= {})[k] = v;
   for (const [lg, list] of Object.entries(byLeague)) write(`api/matchup/${lg}.json`, list);
 
+  // Domarpanelen: domare mot ligasnittet och lagen, en fil per liga (bara engelska ligor har domardata)
+  const refs = {};
+  for (const t of tips.filter((x) => ["PL", "CH", "EL1", "EL2"].includes(x.league))) {
+    const qs = new URLSearchParams({ league: t.league, date: t.date, home: t.home, away: t.away });
+    try {
+      (refs[t.league] ??= {})[[t.league, t.date, t.home, t.away].join("|")] = await get(`/api/referees?${qs}`);
+    } catch { /* saknas */ }
+  }
+  log(`domare: ${Object.values(refs).reduce((a, g) => a + Object.keys(g).length, 0)} matcher`);
+  for (const [lg, list] of Object.entries(refs)) write(`api/referees/${lg}.json`, list);
+
+  // Startelvan: elvorna på planen och spelare mot spelare (data/startelvor.json), en fil per liga eller kupong
+  const { readStore, keyGroup } = await import(new URL("./lib/startelva.mjs", import.meta.url).href);
+  const elvor = {};
+  let elvaFailed = 0;
+  for (const key of readStore().matches.flatMap((m) => m.keys || [])) {
+    try {
+      (elvor[keyGroup(key)] ??= {})[key] = await get(`/api/startelva?${new URLSearchParams({ key })}`);
+    } catch {
+      elvaFailed++;
+    }
+  }
+  log(`startelvor: ${Object.values(elvor).reduce((a, g) => a + Object.keys(g).length, 0)} ok, ${elvaFailed} utan elva`);
+  for (const [g, list] of Object.entries(elvor)) write(`api/startelva/${g}.json`, list);
+
   // Lagklicket: form, modellens träff och inbördes möten för båda lagen i varje match
   const teams = {};
   let teamFailed = 0;

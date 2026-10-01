@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/styles.css" />
   <link rel="stylesheet" href="/stryktips.css" />
+  <link rel="stylesheet" href="/startelva.css" />
 </head>
 <body>
   <div class="noise" aria-hidden="true"></div>
@@ -39,8 +40,9 @@
 
   <section class="st-view" id="stryktips-view" hidden aria-live="polite"></section>
 
-  <section class="status-bar status-line" id="status-bar" aria-label="Status">
-    <span id="updated-at">—</span>
+  <section class="status-bar status-line is-loading" id="status-bar" aria-label="Status" aria-live="polite">
+    <span class="status-loading">Hämtar tips…</span>
+    <span id="updated-at"></span>
     <span class="sep" aria-hidden="true">·</span>
     <span id="match-count">—</span>
     <span class="sep" aria-hidden="true">·</span>
@@ -48,7 +50,8 @@
     <span id="status-msg" hidden></span>
   </section>
 
-  <section class="acc-row" id="accuracy" aria-label="Modellträffsäkerhet"></section>
+  <button type="button" class="acc-summary" id="acc-summary" aria-expanded="false" aria-controls="accuracy" hidden></button>
+  <section class="acc-row" id="accuracy" aria-label="Modellträffsäkerhet" hidden></section>
   <div class="acc-detail" id="acc-detail" hidden>
     <div class="acc-detail-inner">
       <header class="acc-detail-head">
@@ -69,15 +72,6 @@
     <div class="filter-sub" id="league-sub" role="group" aria-label="Välj turnering" hidden></div>
   </section>
 
-  <details class="help-score">
-    <summary>Vad betyder <em>chans</em>?</summary>
-    <p>
-      <strong>Chans</strong> är modellens uppskattade sannolikhet att tipset går in, i procent.
-      På varje rad visas chansen för just det tipset (1/X/2, BTTS JA/NEJ, Ö/U).
-      Uppe till höger på kortet står kortets främsta tips med sin chans: marknaden med Värde om någon har det, annars marknaden med högst chans.
-      Under ~58&nbsp;% filtreras tipset normalt bort från “Bästa tips”.
-    </p>
-  </details>
 
   <section class="log-panel" id="log-panel" hidden>
     <div class="log-head">
@@ -114,13 +108,26 @@
 
   <main>
     <div class="section-head section-head-row">
-      <h2>Bästa tips</h2>
+      <h2>Bästa tips <button type="button" class="help-i" id="help-chans-btn" aria-expanded="false" aria-controls="help-chans" title="Vad betyder chans?">ⓘ<span class="help-i-txt"> Vad betyder chans?</span></button></h2>
       <div class="value-filter" id="value-filter" role="group" aria-label="Visa">
-        <button type="button" class="vf-btn" data-vf="all" aria-pressed="true">Alla <span class="count" id="vf-all">–</span></button>
-        <button type="button" class="vf-btn" data-vf="value" aria-pressed="false">Bara Värde <span class="count" id="vf-value">–</span></button>
+        <button type="button" class="vf-btn" data-vf="all" aria-pressed="true">Alla <span class="count" id="vf-all"></span></button>
+        <button type="button" class="vf-btn" data-vf="value" aria-pressed="false">Bara Värde <span class="count" id="vf-value"></span></button>
       </div>
     </div>
-    <div id="tips" class="tips"></div>
+    <div class="help-score" id="help-chans" hidden>
+      <p>
+        <strong>Chans</strong> är modellens uppskattade sannolikhet att tipset går in, i procent.
+        På varje rad visas chansen för just det tipset (1/X/2, BTTS JA/NEJ, Ö/U).
+        Uppe till höger på kortet står kortets främsta tips med sin chans: marknaden med Värde om någon har det, annars marknaden med högst chans.
+        Under ~58&nbsp;% filtreras tipset normalt bort från “Bästa tips”.
+      </p>
+    </div>
+    <div id="tips" class="tips" aria-busy="true">
+      <div class="tip-skeleton" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div class="tip-skeleton" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div class="tip-skeleton" aria-hidden="true"><span></span><span></span><span></span></div>
+      <p class="sr-only">Hämtar tips…</p>
+    </div>
 
     <details class="cand-wrap" id="cand-wrap">
       <summary class="section-head secondary">

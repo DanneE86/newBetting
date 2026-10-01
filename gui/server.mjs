@@ -62,6 +62,26 @@ async function matchupOne({ league, date, home, away }) {
   return t ? buildMatchup(t) : null;
 }
 
+/** Domarpanelen: tillsatt domare mot ligasnittet och lagen + alla ligans domare (scripts/lib/referee-streaks.mjs). */
+async function refereeOne({ league, date, home, away }) {
+  const rs = await import(new URL("../scripts/lib/referee-streaks.mjs", import.meta.url).href);
+  if (!rs.REF_LEAGUES.has(league)) return null;
+  const ref = readJsonCached(
+    "data/open/referee_history.json",
+    (h) => {
+      const storeRefs = readJsonCached("data/betting-store.json", (st) => (st?.matches || []).filter((m) => m.referee && rs.REF_LEAGUES.has(m.league)), "store:refs");
+      const matches = rs.mergeRefereeMatches(Object.values(h?.bySeason || {}).flat(), storeRefs || []);
+      return { matches, index: rs.buildRefIndex(matches) };
+    },
+    "referees:index"
+  );
+  if (!ref) return null;
+  const t = findTip(readJsonCached("data/tips-latest.json"), { league, date, home, away });
+  const up = (readJson("data/open/referees_upcoming.json")?.matches || []).find((m) => m.league === league && m.date === date && m.home === home && m.away === away);
+  const referee = t?.referee?.referee || up?.referee || null;
+  return { date, home, away, ...rs.refereePanel({ matches: ref.matches, index: ref.index, league, home, away, referee }) };
+}
+
 /** Hämta elva for en enskild match (Fotmob/ESPN), spara cache + patcha tips, returnera analys. */
 async function fetchLineupOne({ league, date, home, away }) {
   const mod = await import(new URL("../scripts/fetch-match-lineup.mjs", import.meta.url).href);
@@ -839,6 +859,53 @@ const server = http.createServer((req, res) => {
     const q = Object.fromEntries(["league", "date", "home", "away"].map((k) => [k, url.searchParams.get(k) || ""]));
     matchupOne(q)
       .then((m) => (m ? sendJson(res, 200, m) : sendJson(res, 404, { error: "Matchen finns inte bland kommande tips" })))
+      .catch((e) => sendJson(res, 500, { error: String(e.message || e) }));
+    return;
+  }
+
+  if (req.method === "GET" && url.pathname === "/api/referees") {
+    const q = Object.fromEntries(["league", "date", "home", "away"].map((k) => [k, url.searchParams.get(k) || ""]));
+    refereeOne(q)
+      .then((m) => (m ? sendJson(res, 200, m) : sendJson(res, 404, { error: "Domarstatistik finns bara för engelska ligor (PL–League Two)" })))
+      .catch((e) => sendJson(res, 500, { error: String(e.message || e) }));
+    return;
+  }
+
+  // Startelva och spelare mot spelare (scripts/lib/startelva.mjs). key = liga|datum|hemma|borta eller svs|spel|omgång|nr
+  if (req.method === "GET" && url.pathname === "/api/startelva") {
+    const key = url.searchParams.get("key") || "";
+    import(new URL("../scripts/lib/startelva.mjs", import.meta.url).href)
+      .then(({ readStore, findEntry, buildView }) => {
+        const store = readStore();
+        const entry = findEntry(store, key);
+        const v = buildView(entry, { extra: store.players });
+        sendJson(res, entry ? 200 : 404, entry ? v : { ...v, error: v.reason });
+      })
+      .catch((e) => sendJson(res, 500, { error: String(e.message || e) }));
+    return;
+  }
+
+  // Hämta om elvan för en match nu (FotMob), t.ex. när den officiella elvan släppts
+  if (req.method === "POST" && url.pathname === "/api/startelva/fetch") {
+    const key = url.searchParams.get("key") || "";
+    Promise.all([
+      import(new URL("../scripts/lib/startelva.mjs", import.meta.url).href),
+      import(new URL("../scripts/lib/match-context.mjs", import.meta.url).href),
+    ])
+      .then(async ([se, mc]) => {
+        const store = se.readStore();
+        const m = se.collectMatches({ days: 30 }).find((x) => x.key === key)
+          || (() => {
+            const e = se.findEntry(store, key);
+            return e ? { key, league: e.league, kickoff: e.kickoff, home: e.home, away: e.away, fotmobMatchId: e.fotmobMatchId } : null;
+          })();
+        if (!m) return sendJson(res, 404, { error: "Matchen finns inte bland kommande matcher" });
+        await se.updateStore([m], { store, force: true, findMatch: mc.findMatch });
+        se.writeStore(store);
+        const entry = se.findEntry(store, key);
+        const v = se.buildView(entry, { extra: store.players });
+        sendJson(res, entry ? 200 : 404, entry ? v : { ...v, error: "Matchen hittades inte på FotMob" });
+      })
       .catch((e) => sendJson(res, 500, { error: String(e.message || e) }));
     return;
   }

@@ -283,6 +283,16 @@ try {
     $report.extraLeagues = $false
 }
 
+# --- Domare: historik (football-data E0-E3) + tillsatt domare for kommande engelska matcher (FotMob) ---
+Write-Host "`n=== Domare (domarsviter per lag) ==="
+try {
+    node (Join-Path $PSScriptRoot "fetch-referees.mjs")
+    $report.referees = ($LASTEXITCODE -eq 0)
+} catch {
+    Write-Host "Domare failed: $($_.Exception.Message)"
+    $report.referees = $false
+}
+
 # --- bolldata.se (Allsvenskan xG/spelardata): Playwright-test, hamtar max 1 gang/dygn, 100 s mellan anrop ---
 Write-Host "`n=== bolldata.se (Allsvenskan) ==="
 try {

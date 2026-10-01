@@ -2,6 +2,10 @@
 // En sida per spel: användaren låser krav (1, X, 2, 1X, X2, 12, 1X2) för kupong A, B eller båda, och resten av
 // kupongerna genereras i webbläsaren (stryk-engine.js).
 import { generateCoupons, kravSigns } from "/stryk-engine.js";
+import { startelvaButton, startelvaPanel } from "/startelva.js";
+
+// Startelvan per match (gui/public/startelva.js), samma nyckel som scripts/lib/startelva.mjs svsKey
+const seKey = (p, e) => ["svs", p.product, p.drawNumber, e.eventNumber].join("|");
 
 const view = document.getElementById("stryktips-view");
 const tabs = [...document.querySelectorAll(".view-tab")];
@@ -533,12 +537,31 @@ function missPanel(p, events, { bCoupon = null, actions = false, kravFor = () =>
   return { tur, stats };
 }
 
+// Domarsvit (minst 5 raka segrar/förluster för ett lag med matchens domare), engelska ligor
+function refereeAlert(e) {
+  const r = e.refereeStreak;
+  if (!r?.flagged) return "";
+  const flagged = [[r.home, e.home], [r.away, e.away]].filter(([s]) => s?.flag);
+  const kind = flagged.every(([s]) => s.flag === "wins") ? "win" : flagged.every(([s]) => s.flag === "losses") ? "loss" : "mixed";
+  const last = (s) => (s.last || []).map((m) => `${m.date} ${m.home ? "hemma" : "borta"} mot ${m.opp} ${m.score}`).join("\n");
+  const rows = flagged.map(([s, name]) => `<li class="${s.flag === "wins" ? "win" : "loss"}" title="${esc(last(s))}"><b>${esc(name)}</b>: ${s.streak.n} ${s.flag === "wins" ? "raka segrar" : "raka förluster"} med domaren <small>(${s.record.w}-${s.record.d}-${s.record.l} på ${s.matches} ligamatcher)</small></li>`).join("");
+  return `<div class="ref-alert ${kind}" role="note"><span class="ref-alert-k">⚑ Domarsvit</span> <b>${esc(r.referee)}</b> dömer<ul>${rows}</ul></div>`;
+}
+function refereeBadge(e) {
+  const r = e.refereeStreak;
+  if (!r?.flagged) return "";
+  const kinds = [r.home?.flag, r.away?.flag].filter(Boolean);
+  const kind = kinds.every((k) => k === "wins") ? "win" : kinds.every((k) => k === "losses") ? "loss" : "mixed";
+  const txt = [[r.home, e.home], [r.away, e.away]].filter(([s]) => s?.flag).map(([s, n]) => `${n} ${s.streak.n} raka ${s.flag === "wins" ? "segrar" : "förluster"}`).join(", ");
+  return ` · <span class="ref-badge ${kind}" title="Domare ${esc(r.referee)}: ${esc(txt)}">⚑ domarsvit</span>`;
+}
+
 function matchCard(p, e) {
   const key = `${p.product}|${e.eventNumber}`;
   const isOpen = open.has(key);
   const sys = e.systemPick;
   const tur = turInfo(e, sys?.signs);
-  return `<article class="st-match${isOpen ? " open" : ""}" data-key="${esc(key)}">
+  return `<article class="st-match${isOpen ? " open" : ""}${e.refereeStreak?.flagged ? " ref-flagged" : ""}" data-key="${esc(key)}">
     <header class="st-match-head">
       <span class="st-num">${e.eventNumber}</span>
       <div class="st-title">
@@ -553,6 +576,7 @@ function matchCard(p, e) {
         ${resultChip(e)}
       </div>
     </header>
+    ${refereeAlert(e)}
     ${tur?.tur && turOpen.has(turKey(e)) ? turExplain(e, tur) : ""}
     ${probRow(e)}
     ${svsRow(e)}
@@ -560,6 +584,8 @@ function matchCard(p, e) {
     ${contextRow(e)}
     <button type="button" class="st-analyze" aria-expanded="${isOpen}">${isOpen ? "Dölj analys" : `Analysera ${esc(e.home)} vs ${esc(e.away)}`}</button>
     ${isOpen ? analysisPanel(e) : ""}
+    ${startelvaButton(seKey(p, e), { cls: "st-se" })}
+    ${startelvaPanel(seKey(p, e))}
   </article>`;
 }
 
@@ -658,7 +684,7 @@ function kravRow(e, krav, pick) {
   const best = e.final ? e.final.indexOf(Math.max(...e.final)) : -1;
   return `<div class="sb-row${krav ? " locked" : ""}" data-ev="${e.eventNumber}">
     <span class="st-num">${e.eventNumber}</span>
-    <div class="sb-match"><b>${esc(e.home)} – ${esc(e.away)}</b><small><span class="st-kick">${esc(kickoff(e.kickoff))}</span> · ${esc(e.league || "")}${tur?.tur ? ` · <button type="button" class="sb-tur tur-btn" data-ev="${e.eventNumber}" aria-expanded="${turOpen.has(turKey(e))}">🍀 turmatch (${esc(pick.signs)} missar ${pct(tur.rate)}) ${turOpen.has(turKey(e)) ? "▲" : "– varför? ▼"}</button>` : ""}</small></div>
+    <div class="sb-match"><b>${esc(e.home)} – ${esc(e.away)}</b><small><span class="st-kick">${esc(kickoff(e.kickoff))}</span> · ${esc(e.league || "")}${refereeBadge(e)}${tur?.tur ? ` · <button type="button" class="sb-tur tur-btn" data-ev="${e.eventNumber}" aria-expanded="${turOpen.has(turKey(e))}">🍀 turmatch (${esc(pick.signs)} missar ${pct(tur.rate)}) ${turOpen.has(turKey(e)) ? "▲" : "– varför? ▼"}</button>` : ""}</small></div>
     <div class="sb-krav">
       <div class="sb-signs${signs.length === 1 ? " spik" : ""}" role="group" aria-label="Krav match ${e.eventNumber}">${SIGNS.map((s, i) => `<button type="button" class="sb-sign${signs.includes(s) ? " on" : ""}${i === best ? " best" : ""}" data-sign="${s}" aria-pressed="${signs.includes(s)}" title="${i === best ? "Modellens mest sannolika tecken · " : ""}Folket ${pct(e.folk?.[i])}">${s}<small>${pct(e.final[i])}</small></button>`).join("")}</div>
       <span class="sb-krav-lbl" title="${krav ? "Ditt krav på matchen" : "Inget krav – kupongen väljer själv"}">${krav ? `<span class="st-tip ${kravType(signs)}">${esc(signs)}</span>` : "inget krav"}</span>

@@ -680,3 +680,379 @@ test('tips-archive: slimDraw/slimResult behaller bara analysfalten', async () =>
   expect(slimResult({ drawNumber: 1, skrap: 1, events: [{ eventNumber: 1, outcome: '1', x: 1 }], distribution: [{ name: '13 rätt', winners: 2, amount: '100', y: 1 }] }))
     .toEqual({ drawNumber: 1, events: [{ eventNumber: 1, outcome: '1' }], distribution: [{ name: '13 rätt', winners: 2, amount: '100' }] });
 });
+
+// ---------- referee-streaks.mjs ----------
+
+test.describe('referee-streaks: domarsviter per lag', () => {
+  // Arsenal med "A Taylor": 5 raka segrar efter en forlust; Leeds 5 raka forluster med samma domare
+  const fd = (d: string, h: string, a: string, hg: number, ag: number, r = 'A Taylor') => ({ d, lg: 'PL', h, a, hg, ag, r });
+  const hist = [
+    fd('2020-01-01', 'Arsenal', 'Leeds', 0, 1),
+    fd('2021-01-01', 'Arsenal', 'Leeds', 2, 0),
+    fd('2022-01-01', 'Leeds', 'Arsenal', 0, 3),
+    fd('2023-01-01', 'Arsenal', 'Leeds', 1, 0),
+    fd('2024-01-01', 'Leeds', 'Arsenal', 1, 2),
+    fd('2025-01-01', 'Arsenal', 'Leeds', 4, 1),
+    fd('2025-02-01', 'Arsenal', 'Chelsea', 1, 1, 'M Oliver'),
+  ];
+
+  test('refKey: initial + efternamn, FotMob och football-data blir samma', async () => {
+    const { refKey } = await lib('referee-streaks.mjs');
+    expect(refKey('Anthony Taylor')).toBe('a taylor');
+    expect(refKey('A Taylor')).toBe('a taylor');
+    expect(refKey('A. Taylor ')).toBe('a taylor');
+    expect(refKey("Jamie O'Connor")).toBe('j oconnor');
+    expect(refKey('J jBrooks')).toBe('j brooks');
+    expect(refKey('P  Wright')).toBe('p wright');
+    expect(refKey('Robert Madley')).not.toBe(refKey('Andy Madley'));
+    expect(refKey('')).toBe('');
+  });
+
+  test('parseRefereeCsv: datum, mal, domare; ospelade och domarlosa hoppas over', async () => {
+    const { parseRefereeCsv } = await lib('referee-streaks.mjs');
+    const csv = '\uFEFFDiv,Date,Time,HomeTeam,AwayTeam,FTHG,FTAG,FTR,Referee\r\nE0,16/08/2025,20:00,Liverpool,Bournemouth,4,2,H,A Taylor\r\nE0,17/08/15,15:00,Arsenal,Leeds,,,,M Oliver\r\nE0,18/08/2025,15:00,Chelsea,Fulham,1,1,D,\r\n';
+    const rows = parseRefereeCsv(csv, 'PL');
+    expect(rows).toEqual([{ d: '2025-08-16', lg: 'PL', h: 'Liverpool', a: 'Bournemouth', hg: 4, ag: 2, r: 'A Taylor' }]);
+    expect(parseRefereeCsv('Div,Date,HomeTeam\nE0,1/1/20,X', 'PL')).toEqual([]);
+  });
+
+  test('mergeRefereeMatches: store fyller pa, inga dubbletter, bara engelska ligor', async () => {
+    const { mergeRefereeMatches } = await lib('referee-streaks.mjs');
+    const store = [
+      { date: '2025-01-01', league: 'PL', home: 'Arsenal', away: 'Leeds', hg: 4, ag: 1, referee: 'A Taylor' }, // dubblett
+      { date: '2026-01-01', league: 'PL', home: 'Leeds', away: 'Arsenal', hg: 0, ag: 1, referee: 'A Taylor' },
+      { date: '2026-01-01', league: 'LL', home: 'Betis', away: 'Getafe', hg: 0, ag: 1, referee: 'X Y' },
+      { date: '2026-02-01', league: 'PL', home: 'Leeds', away: 'Arsenal', hg: null, ag: null, referee: 'A Taylor' },
+    ];
+    const all = mergeRefereeMatches(hist, store);
+    expect(all.length).toBe(hist.length + 1);
+    expect(all.at(-1).d).toBe('2026-01-01');
+  });
+
+  test('currentStreak och refereeFlags: 5 raka segrar resp. forluster flaggas, FotMob-namn matchar', async () => {
+    const { buildRefIndex, currentStreak, refereeFlags, MIN_STREAK } = await lib('referee-streaks.mjs');
+    expect(MIN_STREAK).toBe(5);
+    const idx = buildRefIndex(hist);
+    expect(currentStreak(idx.byPair.get('Arsenal|a taylor'))).toEqual({ res: 'W', n: 5 });
+    expect(currentStreak([])).toBeNull();
+    const rf = refereeFlags(idx, { referee: 'Anthony Taylor', home: 'Arsenal', away: 'Leeds United' });
+    expect(rf.flagged).toBe(true);
+    expect(rf.home).toMatchObject({ team: 'Arsenal', flag: 'wins', matches: 6, record: { w: 5, d: 0, l: 1 } });
+    expect(rf.away).toMatchObject({ team: 'Leeds', flag: 'losses', streak: { res: 'L', n: 5 } });
+    expect(rf.home.last.length).toBe(5);
+    expect(rf.home.last[0]).toEqual({ date: '2025-01-01', opp: 'Leeds', home: true, score: '4-1', res: 'W' });
+    // Annan domare: ingen svit; kryss bryter svit
+    const other = refereeFlags(idx, { referee: 'Michael Oliver', home: 'Arsenal', away: 'Chelsea' });
+    expect(other.flagged).toBe(false);
+    expect(other.home.streak).toEqual({ res: 'D', n: 1 });
+    expect(refereeFlags(idx, { referee: null, home: 'Arsenal', away: 'Leeds' })).toBeNull();
+  });
+
+  test('4 raka racker inte, okant lag ger null-sida', async () => {
+    const { buildRefIndex, refereeFlags } = await lib('referee-streaks.mjs');
+    const idx = buildRefIndex(hist.slice(0, 5));
+    const rf = refereeFlags(idx, { referee: 'A Taylor', home: 'Arsenal', away: 'Real Madrid' });
+    expect(rf.home.streak).toEqual({ res: 'W', n: 4 });
+    expect(rf.home.flag).toBeNull();
+    expect(rf.away).toBeNull();
+    expect(rf.flagged).toBe(false);
+  });
+
+  test('refereeNotes: svensk rad per flaggat lag, tom utan flagga', async () => {
+    const { buildRefIndex, refereeFlags, refereeNotes } = await lib('referee-streaks.mjs');
+    const rf = refereeFlags(buildRefIndex(hist), { referee: 'Anthony Taylor', home: 'Arsenal', away: 'Leeds' });
+    expect(refereeNotes(rf, 'Arsenal', 'Leeds')).toEqual([
+      'Domare Anthony Taylor: Arsenal har vunnit 5 ligamatcher i rad med domaren (totalt 5-0-1 i 6 matcher).',
+      'Domare Anthony Taylor: Leeds har förlorat 5 ligamatcher i rad med domaren (totalt 1-0-5 i 6 matcher).',
+    ]);
+    expect(refereeNotes(null, 'A', 'B')).toEqual([]);
+  });
+});
+
+// ---------- startelva.mjs ----------
+
+// Elva i FotMob-format: [positions-id, x (djup), y (sida, högt = höger)]
+const xi = (team: string, rows: [number, number, number][]) =>
+  rows.map(([pid, x, y], i) => ({ id: `${team}${i}`, name: `${team} Spelare${i}`, pid, x, y, shirt: String(i + 1) }));
+const F4231: [number, number, number][] = [[11, 0.1, 0.5], [32, 0.29, 0.875], [34, 0.29, 0.625], [36, 0.29, 0.375], [38, 0.29, 0.125],
+  [64, 0.485, 0.7], [66, 0.485, 0.3], [83, 0.678, 0.837], [85, 0.678, 0.5], [87, 0.678, 0.163], [115, 0.87, 0.5]];
+const F3421: [number, number, number][] = [[11, 0.1, 0.5], [33, 0.29, 0.79], [35, 0.29, 0.5], [37, 0.29, 0.21], [62, 0.485, 0.875],
+  [64, 0.485, 0.625], [66, 0.485, 0.375], [68, 0.485, 0.125], [84, 0.678, 0.7], [86, 0.678, 0.3], [105, 0.87, 0.5]];
+const F442: [number, number, number][] = [[11, 0.1, 0.5], [32, 0.357, 0.875], [34, 0.357, 0.625], [36, 0.357, 0.375], [38, 0.357, 0.125],
+  [72, 0.613, 0.875], [74, 0.613, 0.625], [76, 0.613, 0.375], [78, 0.613, 0.125], [104, 0.87, 0.7], [106, 0.87, 0.3]];
+const F343: [number, number, number][] = [[11, 0.1, 0.5], [33, 0.357, 0.79], [35, 0.357, 0.5], [37, 0.357, 0.21], [72, 0.613, 0.875],
+  [74, 0.613, 0.625], [76, 0.613, 0.375], [78, 0.613, 0.125], [103, 0.87, 0.79], [105, 0.87, 0.5], [107, 0.87, 0.21]];
+const F532: [number, number, number][] = [[11, 0.1, 0.5], [33, 0.357, 0.695], [35, 0.357, 0.5], [37, 0.357, 0.305], [51, 0.371, 0.89],
+  [59, 0.371, 0.11], [73, 0.613, 0.79], [75, 0.613, 0.5], [77, 0.613, 0.21], [104, 0.87, 0.7], [106, 0.87, 0.3]];
+const roles = (list: any[]) => list.map((p) => p.role + (p.side || '')).join(' ');
+// Spelarpost där alla nyckeltal har samma percentil och gott om minuter
+const rec = (pct: number) => ({
+  id: 1, name: 'X', season: { season: '2026/2027', stats: Object.fromEntries(['dribbles_succeeded', 'won_contest_subtitle', 'chances_created', 'expected_assists',
+    'expected_goals', 'touches_opp_box', 'crosses_succeeeded', 'dribbled_past', 'duel_won_percent', 'matchstats.headers.tackles', 'interceptions', 'recoveries',
+    'expected_goals_against_while_on_pitch', 'defensive_actions', 'minutes_played'].map((k) => [k, [k === 'minutes_played' ? 1800 : 5, 1, pct]])) },
+});
+
+test.describe('startelva: roller och motståndare', () => {
+  test('assignRoles: 4-2-3-1 -> ytterbackar, mittbackar, defensiva, yttrar, offensiv mittfältare, anfallare', async () => {
+    const { assignRoles } = await lib('startelva.mjs');
+    expect(roles(assignRoles(xi('h', F4231)))).toBe('gk fbR cb cb fbL dm dm wingR am wingL st');
+  });
+
+  test('assignRoles: trebackslinje -> breda mittfältare blir wingbacks, 3x i mitten är mittbackar', async () => {
+    const { assignRoles } = await lib('startelva.mjs');
+    expect(roles(assignRoles(xi('h', F3421)))).toBe('gk cb cb cb wbR dm dm wbL am am st');
+    expect(roles(assignRoles(xi('h', F532)))).toBe('gk cb cb cb wbR wbL cm cm cm st st');
+  });
+
+  test('assignRoles: 4-4-2 -> breda mittfältare är yttrar; 3-4-3 -> yttre anfallarna är yttrar', async () => {
+    const { assignRoles } = await lib('startelva.mjs');
+    expect(roles(assignRoles(xi('h', F442)))).toBe('gk fbR cb cb fbL wingR cm cm wingL st st');
+    expect(roles(assignRoles(xi('h', F343)))).toBe('gk cb cb cb wbR cm cm wbL wingR st wingL');
+  });
+
+  test('roleOf: utan positions-id används planpositionen', async () => {
+    const { roleOf } = await lib('startelva.mjs');
+    expect(roleOf(null, { x: 0.1, y: 0.5 })).toEqual({ role: 'gk', side: null });
+    expect(roleOf(null, { x: 0.3, y: 0.9 })).toEqual({ role: 'fb', side: 'R' });
+    expect(roleOf(null, { x: 0.3, y: 0.5 })).toEqual({ role: 'cb', side: null });
+    expect(roleOf(null, { x: 0.7, y: 0.1 })).toEqual({ role: 'wing', side: 'L' });
+    expect(roleOf(null, { x: 0.9, y: 0.5 })).toEqual({ role: 'st', side: null });
+    expect(roleOf(null, null)).toEqual({ role: 'cm', side: null });
+  });
+
+  test('roleLabel: sida bara för kantroller', async () => {
+    const { roleLabel } = await lib('startelva.mjs');
+    expect(roleLabel('fb', 'R')).toBe('Höger ytterback');
+    expect(roleLabel('wing', 'L')).toBe('Vänster ytter');
+    expect(roleLabel('cb', 'R')).toBe('Mittback');
+    expect(roleLabel('okand', null)).toBe('Spelare');
+  });
+
+  test('pairOpponents: högerytter mot vänsterback, anfallare mot närmaste mittback, målvakt mot målvakt', async () => {
+    const { assignRoles, pairOpponents } = await lib('startelva.mjs');
+    const H = assignRoles(xi('h', F4231)), A = assignRoles(xi('a', F4231));
+    const o = pairOpponents(H, A);
+    const by = (list: any[], role: string, side: string | null = null) => list.find((p) => p.role === role && (side == null || p.side === side)).id;
+    expect(o[by(H, 'wing', 'R')][0]).toBe(by(A, 'fb', 'L'));
+    expect(o[by(H, 'wing', 'L')][0]).toBe(by(A, 'fb', 'R'));
+    expect(o[by(A, 'fb', 'R')][0]).toBe(by(H, 'wing', 'L'));
+    expect(A.filter((p: any) => p.role === 'cb').map((p: any) => p.id)).toContain(o[by(H, 'st')][0]);
+    expect(o[by(H, 'gk')]).toEqual([by(A, 'gk')]);
+    expect(o[by(H, 'am')][0]).toMatch(/^a/);
+    for (const list of Object.values(o) as string[][]) expect(list.length).toBeLessThanOrEqual(3);
+  });
+
+  test('pairOpponents: wingback mot wingback i 3-4-2-1 mot 5-3-2, och reserv när rollen saknas', async () => {
+    const { assignRoles, pairOpponents } = await lib('startelva.mjs');
+    const H = assignRoles(xi('h', F3421)), A = assignRoles(xi('a', F532));
+    const o = pairOpponents(H, A);
+    const wbR = H.find((p: any) => p.role === 'wb' && p.side === 'R');
+    const opp = A.find((p: any) => p.id === o[wbR.id][0]);
+    expect(opp.role).toBe('wb');
+    expect(opp.side).toBe('L');
+    // Yttrar utan ytterback/wingback hos motståndaren -> mittback
+    const W = assignRoles(xi('w', F4231)), noFb = assignRoles(xi('n', F4231)).map((p: any) => (p.role === 'fb' ? { ...p, role: 'cb' } : p));
+    const o2 = pairOpponents(W, noFb);
+    expect(noFb.find((p: any) => p.id === o2[W.find((p: any) => p.role === 'wing').id][0]).role).toBe('cb');
+  });
+
+  test('mirrorDist: speglad position, samma kant ger kortast avstånd', async () => {
+    const { mirrorDist } = await lib('startelva.mjs');
+    expect(mirrorDist({ x: 0.68, y: 0.84 }, { x: 0.29, y: 0.13 })).toBeLessThan(0.1);
+    expect(mirrorDist({ x: 0.68, y: 0.84 }, { x: 0.29, y: 0.87 })).toBeGreaterThan(1);
+  });
+});
+
+test.describe('startelva: jämförelse och vy', () => {
+  test('duelKind: kant, centralt, mittfält, målvakt och allmän', async () => {
+    const { duelKind } = await lib('startelva.mjs');
+    expect(duelKind('wing', 'fb')).toBe('kant');
+    expect(duelKind('wb', 'wb')).toBe('kant');
+    expect(duelKind('st', 'cb')).toBe('centralt');
+    expect(duelKind('cb', 'am')).toBe('centralt');
+    expect(duelKind('dm', 'am')).toBe('mittfalt');
+    expect(duelKind('gk', 'gk')).toBe('malvakt');
+    expect(duelKind('gk', 'st')).toBe('allman');
+    expect(duelKind('st', 'fb')).toBe('allman');
+  });
+
+  test('compare: bättre spelare får fördelen, två aspekter, tabellrader och ingen NaN', async () => {
+    const { compare } = await lib('startelva.mjs');
+    const c = compare({ id: 'a', name: 'Anna Ytter', short: 'Ytter', role: 'wing', side: 'R', rec: rec(90) },
+      { id: 'b', name: 'Bo Back', short: 'Back', role: 'fb', side: 'L', rec: rec(20) });
+    expect(c.kind).toBe('kant');
+    expect(c.aspects).toHaveLength(2);
+    expect(c.aspects[0].title).toBe('Ytter anfaller – Back försvarar');
+    expect(c.aspects[0].who).toBe('a');
+    expect(c.who).toBe('a');
+    expect(c.edge).toBeGreaterThan(25);
+    expect(c.rows.length).toBeGreaterThan(5);
+    expect(JSON.stringify(c)).not.toMatch(/NaN|undefined/);
+    const d = compare({ id: 'a', name: 'A', short: 'A', role: 'wing', rec: rec(20) }, { id: 'b', name: 'B', short: 'B', role: 'fb', rec: rec(90) });
+    expect(d.who).toBe('b');
+  });
+
+  test('compare: utan spelardata -> ingen fördel och notis om lite speltid', async () => {
+    const { compare } = await lib('startelva.mjs');
+    const c = compare({ id: 'a', name: 'A', role: 'st', rec: null }, { id: 'b', name: 'B', role: 'cb', rec: null });
+    expect(c.kind).toBe('centralt');
+    expect(c.edge).toBeNull();
+    expect(c.who).toBeNull();
+    expect(c.aspects.every((x: any) => x.diff == null)).toBe(true);
+    expect(c.note).toMatch(/Lite speltid/);
+  });
+
+  test('parseLineup: förväntad/senaste elvan är inte officiell, saknad elva ger null', async () => {
+    const { parseLineup, lineupStatusText } = await lib('startelva.mjs');
+    const team = (name: string) => ({ name, formation: '4-2-3-1', starters: [{ id: 1, name: 'A', positionId: 11, shirtNumber: 1, horizontalLayout: { x: 0.1, y: 0.5 }, primaryTeamName: 'Klubb' }] });
+    const md = (lineupType: string) => ({ content: { lineup: { lineupType, homeTeam: team('H'), awayTeam: team('B') } } });
+    expect(parseLineup(md('predicted')).confirmed).toBe(false);
+    expect(parseLineup(md('lastStarting11')).confirmed).toBe(false);
+    expect(parseLineup(md('standard')).confirmed).toBe(true);
+    expect(parseLineup(md('predicted')).home.starters[0]).toMatchObject({ id: 1, pid: 11, shirt: '1', x: 0.1, y: 0.5, club: 'Klubb' });
+    expect(parseLineup({ content: { lineup: { homeTeam: { starters: [] }, awayTeam: { starters: [] } } } })).toBeNull();
+    expect(parseLineup(null)).toBeNull();
+    expect(lineupStatusText(parseLineup(md('predicted')))).toBe('Förväntad elva (FotMob)');
+    expect(lineupStatusText(parseLineup(md('standard')))).toBe('Officiell startelva');
+    expect(lineupStatusText(parseLineup(md('lastStarting11')))).toMatch(/Senaste elvan/);
+    expect(lineupStatusText(null)).toBe('Ingen elva än');
+  });
+
+  test('nycklar: tipKey, svsKey och keyGroup', async () => {
+    const { tipKey, svsKey, keyGroup } = await lib('startelva.mjs');
+    expect(tipKey({ league: 'PL', date: '2026-10-03', home: 'Arsenal', away: 'Leeds' })).toBe('PL|2026-10-03|Arsenal|Leeds');
+    expect(svsKey('stryktipset', 4973, 8)).toBe('svs|stryktipset|4973|8');
+    expect(keyGroup('PL|2026-10-03|Arsenal|Leeds')).toBe('PL');
+    expect(keyGroup('svs|europatipset|2612|1')).toBe('svs-europatipset');
+  });
+
+  test('buildView: elvor, roller, motståndare, jämförelser för alla par och nyckeldueller', async () => {
+    const { buildView } = await lib('startelva.mjs');
+    const starters = (t: string, rows: [number, number, number][]) => rows.map(([pid, x, y], i) => ({ id: (t === 'h' ? 100 : 200) + i, name: `${t.toUpperCase()} Namn${i}`, pid, x, y, shirt: String(i + 1) }));
+    const entry = { keys: ['svs|stryktipset|1|1'], league: 'X', home: 'Hemma', away: 'Borta', fetchedAt: '2026-10-01T10:00:00Z',
+      lineup: { lineupType: 'predicted', confirmed: false, home: { name: 'Hemma', formation: '4-2-3-1', starters: starters('h', F4231) }, away: { name: 'Borta', formation: '3-4-2-1', starters: starters('a', F3421) } } };
+    const index = new Map([['100', { ...rec(70), id: 100, name: 'H Namn0', fotmobTeam: 'Klubb' }]]);
+    const v = buildView(entry, { index });
+    expect(v.ok).toBe(true);
+    expect(v.status).toBe('Förväntad elva (FotMob)');
+    expect(Object.keys(v.players)).toHaveLength(22);
+    expect(v.players[100].noData).toBe(false);
+    expect(v.players[100].club).toBe('Klubb');
+    expect(v.players[101].noData).toBe(true);
+    expect(v.players[101].roleLabel).toBe('Höger ytterback');
+    expect(v.players[100]._rec).toBeUndefined();
+    for (const [id, opp] of Object.entries(v.opponents) as [string, number[]][]) {
+      for (const o of opp) {
+        const k = v.players[id].team === 'home' ? `${id}-${o}` : `${o}-${id}`;
+        expect(v.comparisons[k], k).toBeTruthy();
+      }
+    }
+    expect(v.keyDuels.length).toBeGreaterThan(3);
+    for (const k of v.keyDuels) {
+      expect(v.comparisons[k].kind).not.toBe('allman');
+      expect(v.players[k.split('-')[0]].team).toBe('home');
+    }
+    expect(v.keyDuels.map((k: string) => v.comparisons[k].kind)).toContain('malvakt');
+    expect(JSON.stringify(v)).not.toMatch(/NaN/);
+  });
+
+  test('buildView: utan post eller elva -> ok:false med orsak', async () => {
+    const { buildView } = await lib('startelva.mjs');
+    expect(buildView(null, { index: new Map() })).toMatchObject({ ok: false });
+    const v = buildView({ keys: ['a'], home: 'H', away: 'B', lineup: null }, { index: new Map() });
+    expect(v.ok).toBe(false);
+    expect(v.reason).toMatch(/ingen elva/i);
+  });
+
+  test('slimRecord och recordFromPlayerData: bara nyckeltalen som används, säsong och form', async () => {
+    const { slimRecord, recordFromPlayerData } = await lib('startelva.mjs');
+    const s = slimRecord({ id: 5, name: 'N', season: { season: '2026', tournament: 'L', stats: { goals: [1, 0.1, 50], weird_stat: [1, 1, 1] } }, matches: Array(9).fill([]) });
+    expect(s.season.stats.goals).toEqual([1, 0.1, 50]);
+    expect(s.season.stats.weird_stat).toBeUndefined();
+    expect(s.matches).toHaveLength(5);
+    const d = recordFromPlayerData({
+      id: 7, name: 'Spelare', primaryTeam: { teamName: 'Klubb' },
+      playerInformation: [{ translationKey: 'age_sentencecase', value: { numberValue: 25 } }],
+      mainLeague: { leagueName: 'Liga', season: '2026/2027', stats: [{ localizedTitleId: 'rating', value: 7.1 }] },
+      statSeasons: [{ seasonName: '2026/2027', tournaments: [{ name: 'Liga' }] }],
+      firstSeasonStats: { topStatCard: { items: [{ localizedTitleId: 'goals', statValue: '3', per90: 0.3, percentileRankPer90: 80 }] } },
+      recentMatches: [{ matchDate: { utcTime: '2026-09-20T12:00:00Z' }, minutesPlayed: 90, ratingProps: { rating: '7.5' }, opponentTeamName: 'Mot' }],
+    });
+    expect(d).toMatchObject({ id: 7, fotmobTeam: 'Klubb', info: { age: 25 }, league: { name: 'Liga', rating: 7.1 } });
+    expect(d.season.stats.goals).toEqual([3, 0.3, 80]);
+    expect(d.form.last5.avgRating).toBe(7.5);
+    expect(d.matches[0][0]).toBe('2026-09-20');
+  });
+
+  test('collectMatches: unika nycklar, Oddset inom dagarna och kupongernas kommande matcher', async () => {
+    const { collectMatches } = await lib('startelva.mjs');
+    const list = collectMatches({ days: 4 });
+    for (const m of list) expect(m.key && m.home && m.away).toBeTruthy();
+    expect(new Set(list.map((m: any) => m.key)).size).toBe(list.length);
+    const st = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'stryktipset.json'), 'utf8'));
+    const upcoming = (st.products || []).flatMap((p: any) => p.events.filter((e: any) => Date.parse(e.kickoff) > Date.now()));
+    expect(list.filter((m: any) => m.key.startsWith('svs|')).length).toBeGreaterThanOrEqual(upcoming.length);
+  });
+});
+
+test.describe('referee-streaks: domarstatistik per liga (panelen Domare)', () => {
+  // Liga X: domare A Taylor 2 matcher (6 gula, 30 frisparkar), M Oliver 2 matcher (2 gula, 20 frisparkar)
+  const m = (d: string, h: string, a: string, hg: number, ag: number, r: string, y: number, f: number, lg = 'PL') =>
+    ({ d, lg, h, a, hg, ag, r, hy: y / 2, ay: y / 2, hr: 0, ar: 0, hf: f / 2, af: f / 2 });
+  const rows = [
+    m('2025-08-10', 'Arsenal', 'Leeds', 2, 0, 'A Taylor', 6, 30),
+    m('2025-09-10', 'Leeds', 'Arsenal', 1, 1, 'A Taylor', 6, 30),
+    m('2025-10-10', 'Chelsea', 'Leeds', 0, 1, 'M Oliver', 2, 20),
+    m('2026-08-20', 'Arsenal', 'Chelsea', 3, 1, 'M Oliver', 2, 20),
+    m('2020-01-01', 'Arsenal', 'Leeds', 1, 0, 'H Webb', 2, 20), // utanfor perioden
+    m('2025-08-11', 'Ipswich', 'Leeds', 1, 0, 'S Allison', 4, 24, 'CH'),
+  ];
+
+  test('parseRefereeCsv tar med gula, roda och frisparkar nar de finns', async () => {
+    const { parseRefereeCsv } = await lib('referee-streaks.mjs');
+    const csv = 'Div,Date,HomeTeam,AwayTeam,FTHG,FTAG,Referee,HF,AF,HY,AY,HR,AR\nE0,16/08/2025,Liverpool,Bournemouth,4,2,A Taylor,10,12,1,3,0,1\nE0,17/08/2025,Arsenal,Leeds,1,0,M Oliver,,,,,,';
+    const [a, b] = parseRefereeCsv(csv, 'PL');
+    expect(a).toMatchObject({ hy: 1, ay: 3, hr: 0, ar: 1, hf: 10, af: 12 });
+    expect(b.hy).toBeUndefined();
+  });
+
+  test('disciplineStats och vsAverage: snitt per match och skillnad mot ligan', async () => {
+    const { disciplineStats, vsAverage } = await lib('referee-streaks.mjs');
+    const st = disciplineStats(rows.slice(0, 4));
+    expect(st).toMatchObject({ matches: 4, yellowPg: 4, foulsPg: 25, homeWinRate: 0.5, drawRate: 0.25, awayWinRate: 0.25 });
+    expect(vsAverage(6, 4)).toEqual({ diff: 2, pct: 50 });
+    expect(vsAverage(3, 4)).toEqual({ diff: -1, pct: -25 });
+    expect(vsAverage(null, 4)).toBeNull();
+    // Matcher utan kort/frisparkar raknas inte i de snitten
+    expect(disciplineStats([{ hg: 1, ag: 0 }]).yellowPg).toBeNull();
+  });
+
+  test('refereeLeagueReport: bara ligan och perioden, domare jamfors mot ligasnittet', async () => {
+    const { refereeLeagueReport } = await lib('referee-streaks.mjs');
+    const rep = refereeLeagueReport(rows, 'PL', { today: '2026-10-01' });
+    expect(rep.since).toBe('2024-07-01');
+    expect(rep.leagueAvg).toMatchObject({ matches: 4, yellowPg: 4, foulsPg: 25 });
+    expect(rep.referees.map((r: any) => r.referee).sort()).toEqual(['A Taylor', 'M Oliver']);
+    const at = rep.referees.find((r: any) => r.key === 'a taylor');
+    expect(at).toMatchObject({ matches: 2, yellowPg: 6, foulsPg: 30, yellowVsAvg: { diff: 2, pct: 50 }, foulsVsAvg: { diff: 5, pct: 20 } });
+    const mo = rep.referees.find((r: any) => r.key === 'm oliver');
+    expect(mo.yellowVsAvg).toEqual({ diff: -2, pct: -50 });
+  });
+
+  test('refereePanel: tillsatt domare (FotMob-namn) med lagens facit + tabell over alla domare', async () => {
+    const { refereePanel, buildRefIndex } = await lib('referee-streaks.mjs');
+    const idx = buildRefIndex(rows);
+    const p = refereePanel({ matches: rows, index: idx, league: 'PL', home: 'Arsenal', away: 'Leeds United', referee: 'Anthony Taylor', today: '2026-10-01' });
+    expect(p.teams).toEqual({ home: 'Arsenal', away: 'Leeds' });
+    expect(p.referee).toMatchObject({ referee: 'Anthony Taylor', key: 'a taylor', otherLeagues: false, matches: 2, yellowPg: 6, yellowVsAvg: { pct: 50 } });
+    expect(p.referee.home).toMatchObject({ team: 'Arsenal', record: { w: 1, d: 1, l: 0 }, yellowPg: 3 });
+    expect(p.referee.away).toMatchObject({ team: 'Leeds', record: { w: 0, d: 1, l: 1 } });
+    const row = p.referees.find((r: any) => r.key === 'm oliver');
+    expect(row.home).toEqual({ matches: 1, w: 1, d: 0, l: 0 });
+    expect(row.away).toEqual({ matches: 1, w: 1, d: 0, l: 0 });
+    // Ingen domare tillsatt: bara tabellen; domare ny i ligan: profil fran andra ligor
+    expect(refereePanel({ matches: rows, index: idx, league: 'PL', home: 'Arsenal', away: 'Leeds', today: '2026-10-01' }).referee).toBeNull();
+    const nu = refereePanel({ matches: rows, index: idx, league: 'PL', home: 'Arsenal', away: 'Leeds', referee: 'Sam Allison', today: '2026-10-01' });
+    expect(nu.referee).toMatchObject({ otherLeagues: true, matches: 1, yellowPg: 4, foulsPg: 24 });
+  });
+});

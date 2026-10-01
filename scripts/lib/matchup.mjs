@@ -82,7 +82,7 @@ const KEEPER = [['goals_prevented', 2], ['save_percentage', 2], ['error_led_to_g
 
 // Tal som visas som "x %" och tal där percentilen är bra trots högt värde ska läsas omvänt i texten
 const PERCENT_KEYS = new Set(['won_contest_subtitle', 'duel_won_percent', 'aerials_won_percent', 'successful_passes_accuracy',
-  'save_percentage', 'crosses_succeeeded_accuracy']);
+  'save_percentage', 'crosses_succeeeded_accuracy', 'long_ball_succeeeded_accuracy']);
 const NEGATIVE_KEYS = new Set(['dribbled_past', 'goals_conceded_while_on_pitch', 'expected_goals_against_while_on_pitch',
   'error_led_to_goal', 'fouls', 'dispossessed']);
 const SHORT_LABEL = {
@@ -94,6 +94,9 @@ const SHORT_LABEL = {
   expected_goals_against_while_on_pitch: 'xG emot på planen', successful_passes_accuracy: 'passningsträff',
   successful_passes: 'lyckade passningar', big_chance_created_team_title: 'skapade stora chanser', goals_prevented: 'förhindrade mål',
   save_percentage: 'räddningsprocent', error_led_to_goal: 'misstag som ledde till mål',
+  defensive_actions: 'defensiva aktioner', poss_won_att_3rd_team_title: 'bollvinster högt upp', line_breaking_passes: 'linjebrytande passningar',
+  long_balls_accurate: 'lyckade långbollar', long_ball_succeeeded_accuracy: 'långbollar som når fram', keeper_sweeper: 'utrusningar',
+  keeper_high_claim: 'höga ingripanden',
 };
 
 export const ordinal = (n) => {
@@ -681,4 +684,7 @@ function strip(d, rename = (s) => s) {
 }
 
 // Interna delar för enhetstesterna (tests/lib-units.spec.ts)
+// Används av scripts/lib/startelva.mjs (spelare mot spelare i startelvan)
+export { statSource, score, edgeText, statText, highlights, fmtVal, PERCENT_KEYS, SHORT_LABEL,
+  ATTACK_WIDE, DEFEND_WIDE, ATTACK_CENTRAL, DEFEND_CENTRAL, MID_CONTROL, MID_CREATE, KEEPER };
 export const _internal = { statSource, pct, score, sideOf, lineupPosition, predictedXI, findPlayer, officialXI, shape, edgeText, verdictFor, fmtVal };

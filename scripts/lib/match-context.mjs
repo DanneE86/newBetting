@@ -110,7 +110,7 @@ async function matchesOn(ymd) {
   return dayCache.get(ymd);
 }
 
-async function findMatch({ kickoff, home, away, homeCountry, awayCountry }) {
+export async function findMatch({ kickoff, home, away, homeCountry, awayCountry }, tolHours = 2) {
   const t = new Date(kickoff).getTime();
   if (!Number.isFinite(t)) return null;
   const days = [...new Set([-1, 0, 1].map((d) => new Date(t + d * 86400e3).toISOString().slice(0, 10)))];
@@ -118,7 +118,7 @@ async function findMatch({ kickoff, home, away, homeCountry, awayCountry }) {
   for (const ymd of days) {
     for (const m of await matchesOn(ymd)) {
       const mt = new Date(m.status?.utcTime || m.time).getTime();
-      if (!Number.isFinite(mt) || Math.abs(mt - t) > 2 * 3600e3) continue;
+      if (!Number.isFinite(mt) || Math.abs(mt - t) > tolHours * 3600e3) continue;
       // Bada lagen maste likna (annars t.ex. "Malmo FF - Hammarby" for "Malmo FF - IFK Goteborg" vid samma tid)
       const sh = nameScore(home, homeCountry, m.home?.name), sa = nameScore(away, awayCountry, m.away?.name);
       const s = sh + sa;
@@ -196,6 +196,16 @@ export async function fetchMatchContext(ev) {
     h2h: c.h2h?.summary ? { homeWins: c.h2h.summary[0], draws: c.h2h.summary[1], awayWins: c.h2h.summary[2] } : null,
     fetchedAt: new Date().toISOString(),
   };
+}
+
+// Bara domaren (FotMob infoBox), for Oddset-matcher. Utan avsparkstid soks hela dagen (12:00 UTC +-14 h).
+// Returnerar { fotmobMatchId, referee } (referee null om ingen ar tillsatt an) eller null om matchen inte hittas.
+export async function fetchReferee({ kickoff, date, home, away }) {
+  const hit = await findMatch({ kickoff: kickoff || `${date}T12:00:00Z`, home, away }, kickoff ? 2 : 14);
+  if (!hit) return null;
+  const md = await getJson(`${FM}/matchDetails?matchId=${hit.id}`);
+  const ref = String(md?.content?.matchFacts?.infoBox?.Referee?.text || '').trim();
+  return { fotmobMatchId: hit.id, referee: ref || null };
 }
 
 // Korta svenska rader for analystexten

@@ -176,3 +176,75 @@ test('Europatipset har samma sida via /europatipset', async ({ page }) => {
   await expect(row.locator('td').nth(2)).not.toHaveText('1 + X');
   await page.evaluate(() => localStorage.clear());
 });
+
+// Domarsvit (minst 5 raka segrar/förluster med matchens domare) markeras tydligt på Oddset-tipsen och Stryktipset
+const refFlag = (home: string, away: string) => ({
+  referee: 'Anthony Taylor', flagged: true,
+  home: { team: home, matches: 7, record: { w: 6, d: 0, l: 1 }, streak: { res: 'W', n: 6 }, flag: 'wins', last: [{ date: '2026-01-01', opp: away, home: true, score: '2-0', res: 'W' }] },
+  away: { team: away, matches: 7, record: { w: 1, d: 1, l: 5 }, streak: { res: 'L', n: 5 }, flag: 'losses', last: [] },
+});
+
+test('Oddset: domarsvit markeras på tipskorten', async ({ page }) => {
+  await page.route('**/api/dashboard*', async (route) => {
+    const res = await route.fetch();
+    const body = await res.json();
+    for (const k of ['bestUpcoming', 'allCandidates']) for (const t of body[k] || []) t.referee = refFlag(t.home, t.away);
+    await route.fulfill({ response: res, json: body });
+  });
+  await page.goto(base + '/tips');
+  const alert = page.locator('.ref-alert').first();
+  const badge = page.locator('.ref-badge').first();
+  await expect(alert.or(badge)).toBeVisible({ timeout: 30_000 });
+  if (await alert.count()) {
+    await expect(alert).toContainText('Anthony Taylor');
+    await expect(alert).toContainText('6 raka segrar');
+    await expect(alert).toContainText('5 raka förluster');
+    await expect(alert).toHaveClass(/mixed/);
+  }
+});
+
+test('Stryktipset: domarsvit markeras på matcherna', async ({ page }) => {
+  await page.route('**/api/stryktips', async (route) => {
+    const res = await route.fetch();
+    const body = await res.json();
+    for (const p of body.products || []) for (const e of p.events || []) e.refereeStreak = refFlag(e.home, e.away);
+    await route.fulfill({ response: res, json: body });
+  });
+  await page.goto(base + '/stryktipset');
+  const badge = page.locator('#stryktips-view .ref-badge').first();
+  await expect(badge).toBeVisible({ timeout: 30_000 });
+  await expect(badge).toContainText('domarsvit');
+  await expect(badge).toHaveAttribute('title', /Anthony Taylor.*6 raka segrar.*5 raka förluster/);
+});
+
+test('Oddset: knappen Domare bredvid Duellanalys visar domarstatistik för engelska matcher', async ({ page }) => {
+  // API: ligasnitt och alla ligans domare för en riktig engelsk match
+  const dash = await (await fetch(base + '/api/dashboard')).json();
+  const eng = [...(dash.allCandidates || [])].find((t: any) => ['PL', 'CH', 'EL1'].includes(t.league));
+  test.skip(!eng, 'inga engelska matcher i tipsen just nu');
+  const qs = new URLSearchParams({ league: eng.league, date: eng.date, home: eng.home, away: eng.away });
+  const api = await (await fetch(`${base}/api/referees?${qs}`)).json();
+  expect(api.leagueAvg.yellowPg).toBeGreaterThan(1);
+  expect(api.leagueAvg.foulsPg).toBeGreaterThan(10);
+  expect(api.referees.length).toBeGreaterThan(5);
+  expect(api.referees[0]).toHaveProperty('yellowVsAvg');
+  expect((await fetch(`${base}/api/referees?league=LL&date=2026-10-10&home=A&away=B`)).status).toBe(404);
+
+  // GUI: bara den engelska matchen som kort, knappen ligger direkt efter Duellanalys
+  await page.route('**/api/dashboard*', async (route) => {
+    const res = await route.fetch();
+    const body = await res.json();
+    body.bestUpcoming = [eng];
+    await route.fulfill({ response: res, json: body });
+  });
+  await page.goto(base + '/tips');
+  const card = page.locator('.tip:has(.btn-referee)').first();
+  await expect(card).toBeVisible({ timeout: 30_000 });
+  const order = await card.locator('.tip-actions button').evaluateAll((els) => els.map((e) => e.className));
+  expect(order[order.indexOf('btn-matchup') + 1]).toBe('btn-referee');
+  await card.locator('.btn-referee').click();
+  await expect(card.locator('.rf-wrap')).toBeVisible({ timeout: 30_000 });
+  await expect(card.locator('.rf-all summary')).toContainText('Alla domare i');
+  await expect(card.locator('.rf-table tfoot')).toContainText('Ligasnitt');
+  await expect(card.locator('.rf-stats')).toContainText(/ligasnitt|ligan/i);
+});

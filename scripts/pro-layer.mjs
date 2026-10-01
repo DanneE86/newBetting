@@ -12,6 +12,7 @@ import { EARLY_ROUNDS, buildTiers, fitLeagueModel, loadLeagueModels, paramsFor }
 import { historicalMissing, findUsMatch, inCurrentSquad, loadPlayerModel, summarise as summariseMissing, teamShares } from './pro/players.mjs';
 import { TEAM_ALIASES } from './weather/teams.mjs';
 import { adjustProbs } from './lib/learned-adjust.mjs';
+import { buildRefIndex, mergeRefereeMatches, refereeFlags, REF_LEAGUES } from './lib/referee-streaks.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const P = {
@@ -23,6 +24,8 @@ const P = {
   oddsportal: path.join(root, 'data', 'open', 'oddsportal_odds.json'),
   weatherHistory: path.join(root, 'data', 'open', 'weather_history.json'),
   referees: path.join(root, 'data', 'open', 'referees.json'),
+  refHistory: path.join(root, 'data', 'open', 'referee_history.json'),
+  refUpcoming: path.join(root, 'data', 'open', 'referees_upcoming.json'),
   usLeague: path.join(root, 'data', 'open', 'understat_league_matches.json'),
   usPlayers: path.join(root, 'data', 'open', 'understat_player_matches.json'),
   squads: path.join(root, 'data', 'trupper'),
@@ -165,6 +168,8 @@ for (const t of marketOnly) {
   tips.allCandidates.push(t);
   if (Object.values(t.pro.verdicts).some((v) => v.value)) tips.bestUpcoming.push(t);
 }
+// Domarsviter per lag (minst 5 raka segrar/forluster med matchens domare), engelska ligor - npm run domare
+applyRefereeStreaks([...(tips.bestUpcoming ?? []), ...(tips.allCandidates ?? [])]);
 tips.proMeta = {
   updatedAt: new Date().toISOString(),
   config: CONFIG,
@@ -191,6 +196,19 @@ for (const [lg, s] of Object.entries(evaluation.summary)) {
 }
 
 // ======================================================================
+
+function applyRefereeStreaks(list) {
+  const upcoming = fs.existsSync(P.refUpcoming) ? readJson(P.refUpcoming).matches ?? [] : [];
+  const refOf = new Map(upcoming.filter((m) => m.referee).map((m) => [`${m.league}|${m.date}|${m.home}|${m.away}`, m.referee]));
+  if (!refOf.size) return;
+  const history = fs.existsSync(P.refHistory) ? Object.values(readJson(P.refHistory).bySeason ?? {}).flat() : [];
+  const index = buildRefIndex(mergeRefereeMatches(history, store.matches));
+  for (const t of list ?? []) {
+    if (!REF_LEAGUES.has(t.league)) continue;
+    const referee = refOf.get(`${t.league}|${t.date}|${t.home}|${t.away}`);
+    t.referee = referee ? refereeFlags(index, { referee, home: t.home, away: t.away }) : null;
+  }
+}
 
 function buildPro(t) {
   const model = models[t.league];

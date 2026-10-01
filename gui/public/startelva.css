@@ -1,0 +1,240 @@
+/* Startelva och spelare mot spelare (gui/public/startelva.js). Hemmalag = lime, bortalag = blå, som i Duellanalysen. */
+:root {
+  --se-home: #b8f255;
+  --se-away: #9ec1ff;
+  --se-home-bg: rgba(184, 242, 85, 0.16);
+  --se-away-bg: rgba(120, 180, 255, 0.18);
+  --se-grass: #12352a;
+  --se-grass-2: #154032;
+  --se-chalk: rgba(235, 255, 240, 0.22);
+}
+
+.btn-startelva {
+  border: 1px solid rgba(158, 193, 255, 0.5);
+  background: transparent;
+  color: var(--se-away);
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.78rem;
+  cursor: pointer;
+}
+.btn-startelva:hover { background: rgba(158, 193, 255, 0.1); }
+.btn-startelva[aria-expanded="true"] { background: rgba(158, 193, 255, 0.14); }
+
+.se-panel { margin-top: 0.6rem; }
+.se-panel[hidden] { display: none; }
+.se-wrap { display: grid; gap: 0.7rem; min-width: 0; }
+.se-empty { color: var(--muted); font-size: 0.82rem; margin: 0.4rem 0; }
+.se-head { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; }
+.se-head .se-refresh { margin-left: auto; width: auto; padding: 0.25rem 0.8rem; font-size: 0.74rem; }
+.se-chip { font-size: 0.7rem; padding: 0.15rem 0.6rem; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+.se-chip-ok { border-color: rgba(184, 242, 85, 0.55); color: var(--lime); }
+.se-sub { color: var(--muted); font-size: 0.72rem; font-weight: 400; }
+.se-note { color: var(--muted); font-size: 0.72rem; margin: 0; line-height: 1.45; }
+.se-warn { color: var(--warn); }
+.se-k { color: var(--muted); font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.05em; margin: 0.5rem 0 0.25rem; }
+.se-h { margin: 0.4rem 0 0; font-size: 0.85rem; }
+.se-dot { display: inline-block; width: 0.55rem; height: 0.55rem; border-radius: 50%; margin-right: 0.3rem; vertical-align: 0.05em; }
+.se-dot.se-home, .se-home-bg { background: var(--se-home); }
+.se-dot.se-away, .se-away-bg { background: var(--se-away); }
+
+/* Planen: bortalaget överst, hemmalaget nederst */
+.se-grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 0.8rem; align-items: start; }
+.se-pitch {
+  position: relative;
+  aspect-ratio: 68 / 96;
+  border-radius: 10px;
+  border: 1px solid var(--se-chalk);
+  background: repeating-linear-gradient(180deg, var(--se-grass) 0 10%, var(--se-grass-2) 10% 20%);
+  overflow: hidden;
+  min-width: 0;
+}
+.se-line.se-mid { position: absolute; left: 0; right: 0; top: 50%; border-top: 1px solid var(--se-chalk); }
+.se-circle { position: absolute; left: 50%; top: 50%; width: 22%; aspect-ratio: 1; border: 1px solid var(--se-chalk); border-radius: 50%; transform: translate(-50%, -50%); }
+.se-box { position: absolute; left: 25%; width: 50%; height: 11%; border: 1px solid var(--se-chalk); }
+.se-box-top { top: -1px; border-top: 0; }
+.se-box-bottom { bottom: -1px; border-bottom: 0; }
+.se-team-label { position: absolute; left: 0.5rem; font-size: 0.7rem; font-weight: 600; color: var(--ink); z-index: 1; text-shadow: 0 1px 2px #000; }
+.se-team-label small { color: var(--muted); font-weight: 400; }
+.se-top { top: 0.35rem; }
+.se-bottom { bottom: 0.35rem; }
+
+.se-p {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
+  width: 4.6rem;
+  padding: 0.1rem;
+  border: 0;
+  background: none;
+  color: var(--ink);
+  font-family: var(--font-body);
+  cursor: pointer;
+  z-index: 2;
+}
+.se-shirt {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #0b1510;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+.se-home .se-shirt { background: var(--se-home); }
+.se-away .se-shirt { background: var(--se-away); }
+.se-c { position: absolute; right: -0.35rem; top: -0.3rem; font-style: normal; font-size: 0.55rem; background: #0b1510; color: var(--ink); border-radius: 50%; width: 0.85rem; height: 0.85rem; display: grid; place-items: center; }
+.se-name { max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 0.66rem; line-height: 1.15; text-shadow: 0 1px 2px #000; }
+.se-r { font-size: 0.58rem; color: var(--muted); line-height: 1; }
+.se-p:hover .se-shirt, .se-p:focus-visible .se-shirt { transform: scale(1.12); }
+.se-p:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; border-radius: 6px; }
+.se-p.is-sel .se-shirt { box-shadow: 0 0 0 3px #fff, 0 0 12px rgba(255, 255, 255, 0.6); }
+.se-p.is-sel .se-name { font-weight: 700; }
+.se-p.no-data .se-shirt { opacity: 0.6; }
+
+/* Nyckeldueller */
+.se-duels h4 { margin: 0 0 0.3rem; font-size: 0.85rem; }
+.se-dgroup { margin-bottom: 0.35rem; }
+.se-duel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.4rem;
+  width: 100%;
+  margin: 0.15rem 0;
+  padding: 0.3rem 0.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 0.76rem;
+  text-align: left;
+  cursor: pointer;
+}
+.se-duel:hover { background: rgba(255, 255, 255, 0.07); }
+.se-duel.is-sel { border-color: rgba(255, 255, 255, 0.55); background: rgba(255, 255, 255, 0.09); }
+.se-duel-n { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.se-badge { display: inline-block; flex: none; padding: 0.1rem 0.5rem; border-radius: 999px; font-size: 0.7rem; font-weight: 600; white-space: nowrap; }
+.se-badge.se-home { background: var(--se-home-bg); color: var(--se-home); }
+.se-badge.se-away { background: var(--se-away-bg); color: var(--se-away); }
+.se-badge.se-even { background: rgba(255, 255, 255, 0.07); color: var(--muted); }
+
+/* Jämförelsen */
+.se-compare { padding: 0.7rem; border-radius: 10px; border: 1px solid var(--line); background: rgba(255, 255, 255, 0.03); display: grid; gap: 0.6rem; min-width: 0; }
+.se-compare-h { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 0.4rem; font-size: 0.8rem; }
+.se-compare-h h4 { margin: 0; font-size: 0.92rem; }
+.se-alts { font-size: 0.74rem; color: var(--muted); display: flex; flex-wrap: wrap; align-items: center; gap: 0.3rem; }
+.se-alt { border: 1px solid var(--line); background: transparent; color: var(--ink); border-radius: 999px; padding: 0.15rem 0.6rem; font-family: var(--font-body); font-size: 0.72rem; cursor: pointer; }
+.se-alt:hover { background: rgba(255, 255, 255, 0.07); }
+.se-two { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.6rem; }
+.se-ph { padding: 0.45rem 0.55rem; border-radius: 8px; background: rgba(255, 255, 255, 0.04); border-left: 3px solid; min-width: 0; }
+.se-ph-home { border-color: var(--se-home); }
+.se-ph-away { border-color: var(--se-away); }
+.se-ph-n { font-size: 0.84rem; margin-bottom: 0.15rem; overflow-wrap: anywhere; }
+.se-aspects { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0.6rem; }
+.se-aspect { padding: 0.45rem 0.55rem; border-radius: 8px; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.05); min-width: 0; }
+.se-aspect-h { display: flex; justify-content: space-between; gap: 0.4rem; align-items: center; font-size: 0.78rem; font-weight: 600; margin-bottom: 0.35rem; }
+.se-vs { display: grid; grid-template-columns: auto 1fr auto; gap: 0.4rem; align-items: center; font-size: 0.74rem; }
+.se-vs-n { white-space: nowrap; }
+.se-vs-bar { display: flex; height: 0.45rem; border-radius: 999px; overflow: hidden; background: rgba(255, 255, 255, 0.08); }
+.se-vs-bar i { display: block; height: 100%; }
+.se-why { margin: 0.35rem 0 0; padding-left: 1rem; color: #c5dbc9; font-size: 0.72rem; }
+.se-why li { margin: 0.1rem 0; }
+
+.se-table-wrap { overflow-x: auto; }
+.se-table { width: 100%; border-collapse: collapse; font-size: 0.76rem; }
+.se-table th, .se-table td { padding: 0.32rem 0.4rem; border-top: 1px solid rgba(255, 255, 255, 0.06); text-align: left; vertical-align: top; }
+.se-table thead th { border-top: 0; color: var(--muted); font-weight: 600; font-size: 0.7rem; }
+.se-table tbody th { font-weight: 400; color: #c5dbc9; width: 38%; }
+.se-v { width: 31%; font-variant-numeric: tabular-nums; }
+.se-v small { color: var(--muted); font-size: 0.64rem; margin-left: 0.25rem; }
+.se-v.is-better .se-val { color: var(--ink); font-weight: 700; }
+.se-v .se-pct { display: block; margin: 0.1rem 0 0; }
+.se-bar { display: block; height: 0.3rem; margin-top: 0.2rem; border-radius: 999px; background: rgba(255, 255, 255, 0.08); overflow: hidden; }
+.se-bar i { display: block; height: 100%; background: var(--muted); }
+.se-v.is-better .se-bar i { background: var(--lime); }
+
+.se-success { list-style: none; margin: 0.3rem 0 0; padding: 0; font-size: 0.74rem; }
+.se-success li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 0 0.4rem; padding: 0.22rem 0; border-top: 1px solid rgba(255, 255, 255, 0.05); }
+.se-s-l { color: #c5dbc9; }
+.se-s-v { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.se-s-v small { color: var(--muted); font-size: 0.66rem; }
+.se-bar-s { grid-column: 1 / -1; margin-top: 0.15rem; }
+.se-bar-s i { background: var(--lime-dim); }
+
+.se-recent { display: flex; flex-wrap: wrap; gap: 0.25rem; }
+.se-m { min-width: 2rem; text-align: center; padding: 0.1rem 0.35rem; border-radius: 6px; font-size: 0.7rem; font-weight: 600; background: rgba(255, 255, 255, 0.07); color: var(--muted); }
+.se-m.r-hi { background: rgba(184, 242, 85, 0.2); color: var(--lime); }
+.se-m.r-mid { background: rgba(240, 180, 41, 0.16); color: #f3cd6b; }
+.se-m.r-lo { background: rgba(239, 107, 91, 0.18); color: #f49a8e; }
+
+@media (max-width: 760px) {
+  .se-grid { grid-template-columns: 1fr; }
+  .se-pitch { max-width: 440px; width: 100%; margin-inline: auto; }
+}
+@media (max-width: 520px) {
+  .se-p { width: 3.9rem; }
+  .se-shirt { width: 1.5rem; height: 1.5rem; font-size: 0.64rem; }
+  .se-name { font-size: 0.6rem; }
+  .se-r { display: none; }
+  .se-two { grid-template-columns: 1fr; }
+  .se-table tbody th { width: 34%; }
+}
+
+/* Stryktipsets/Europatipsets matchkort: knappen i samma stil som "Analysera" */
+.btn-startelva.st-se {
+  display: block;
+  width: 100%;
+  margin-top: 0.5rem;
+  border-style: dashed;
+  border-radius: 10px;
+  padding: 0.55rem 0.9rem;
+  font-size: 0.85rem;
+}
+.st-match .se-panel { margin-top: 0.75rem; }
+
+/* Läge: jämför två valfria spelare, hjälp, sammanfattning, spindeldiagram */
+.se-mode {
+  border: 1px solid rgba(243, 205, 107, 0.5);
+  background: transparent;
+  color: #f3cd6b;
+  border-radius: 999px;
+  padding: 0.25rem 0.8rem;
+  font-family: var(--font-body);
+  font-size: 0.74rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.se-mode:hover, .se-mode.is-on { background: rgba(243, 205, 107, 0.12); }
+.se-head .se-mode { margin-left: auto; }
+.se-head .se-mode + .se-refresh { margin-left: 0; }
+.se-pickbar { font-size: 0.8rem; padding: 0.4rem 0.6rem; border-radius: 8px; background: rgba(243, 205, 107, 0.08); border: 1px dashed rgba(243, 205, 107, 0.4); }
+.se-help { font-size: 0.78rem; border: 1px solid var(--line); border-radius: 8px; padding: 0.4rem 0.6rem; background: rgba(255, 255, 255, 0.02); }
+.se-help summary { cursor: pointer; color: var(--ink); font-weight: 600; }
+.se-help ul { margin: 0.4rem 0 0.1rem; padding-left: 1.1rem; color: #c5dbc9; line-height: 1.5; }
+.se-help li { margin: 0.2rem 0; }
+.se-summary { padding: 0.5rem 0.65rem; border-radius: 8px; background: rgba(184, 242, 85, 0.06); border: 1px solid rgba(184, 242, 85, 0.18); font-size: 0.82rem; }
+.se-summary p { margin: 0; }
+.se-summary ul { margin: 0.3rem 0 0; padding-left: 1.1rem; color: #c5dbc9; font-size: 0.78rem; }
+.se-summary li { margin: 0.12rem 0; }
+
+.se-radar { margin: 0; display: grid; justify-items: center; gap: 0.3rem; }
+.se-radar svg { width: 100%; max-width: 440px; height: auto; overflow: visible; }
+.se-radar figcaption { font-size: 0.74rem; text-align: center; }
+.se-rad-ring { fill: none; stroke: rgba(255, 255, 255, 0.12); stroke-width: 1; }
+.se-rad-area { fill-opacity: 0.2; stroke-width: 2; stroke-linejoin: round; }
+.se-rad-lbl text { fill: var(--muted); font-size: 10px; font-family: var(--font-body); }
+.se-rad-home { color: var(--se-home); fill: currentColor; stroke: currentColor; }
+.se-rad-away { color: var(--se-away); fill: currentColor; stroke: currentColor; }
+.se-rad-alt { color: #f3cd6b; fill: currentColor; stroke: currentColor; }
+.se-key { display: inline-block; width: 0.8rem; height: 0.3rem; border-radius: 2px; margin: 0 0.3rem 0.1rem 0.2rem; background: currentColor; }
