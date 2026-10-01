@@ -79,7 +79,7 @@ Lag där sämsta/bästa motståndartyp avviker med |z| ≥ 2 från lagets eget s
 | L1 | [Le Havre](stil/L1.md#le-havre) | Svårt mot Högpress | −0,44 | −2,9 | 21 |
 | SB | [Sampdoria](stil/SB.md#sampdoria) | Svårt mot Kortpass | −0,37 | −2,7 | 56 |
 | JP1 | [Gamba Osaka](stil/JP1.md#gamba-osaka) | Svårt mot Direktspel | −0,42 | −2,7 | 56 |
-| AR | [Gimnasia L.P.](stil/AR.md#gimnasia-l-p) | Bra mot Bollinnehav | +0,51 | +2,6 | 41 |
+| AR | [Gimnasia L.P.](stil/AR.md#gimnasia-lp) | Bra mot Bollinnehav | +0,51 | +2,6 | 41 |
 | AR | [San Lorenzo](stil/AR.md#san-lorenzo) | Svårt mot Kortpass | −0,38 | −2,6 | 48 |
 | EL2 | [Shrewsbury](stil/EL2.md#shrewsbury) | Svårt mot Kortpass | −0,32 | −2,6 | 74 |
 | ED | [Feyenoord](stil/ED.md#feyenoord) | Bra mot Backar hem | +0,30 | +2,6 | 68 |

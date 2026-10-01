@@ -27,7 +27,8 @@ const readJson = (p, d = null) => { try { return JSON.parse(fs.readFileSync(p, '
 const num = (x) => (x === '' || x == null ? null : Number(x));
 const fmt = (x, d = 2) => (x == null || !Number.isFinite(x) ? '–' : `${x > 0 ? '+' : x < 0 ? '−' : ''}${Math.abs(x).toFixed(d).replace('.', ',')}`);
 const pct = (x) => (x == null || !Number.isFinite(x) ? '–' : `${x > 0 ? '+' : x < 0 ? '−' : ''}${Math.abs(Math.round(x * 100))} pe`);
-const slug = (s) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+// Rubrikankare som GitHub/VS Code: skiljetecken tas bort, mellanslag blir bindestreck, bokstaver behalls
+const slug = (s) => s.toLowerCase().replace(/[^\p{L}\p{M}\p{N}\p{Pc} -]/gu, '').replace(/ /g, '-');
 
 function readMatches(code) {
   const file = path.join(root, 'data', 'matcher', `${code}.csv`);

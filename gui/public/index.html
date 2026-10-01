@@ -14,7 +14,7 @@
   <div class="noise" aria-hidden="true"></div>
   <header class="top">
     <div class="brand-block">
-      <p class="eyebrow">Europa · toppligor</p>
+      <p class="eyebrow">Fotboll · Oddset & tipset</p>
       <h1 class="brand">Betting</h1>
       <p class="tagline">Lokala tips drivna av ClubElo, spelardata, xG och ESPN-elvor.</p>
     </div>
@@ -39,23 +39,13 @@
 
   <section class="st-view" id="stryktips-view" hidden aria-live="polite"></section>
 
-  <section class="status-bar" id="status-bar">
-    <div>
-      <span class="k">Senast</span>
-      <span id="updated-at">—</span>
-    </div>
-    <div>
-      <span class="k">Status</span>
-      <span id="status-msg">—</span>
-    </div>
-    <div>
-      <span class="k">Matcher</span>
-      <span id="match-count">—</span>
-    </div>
-    <div>
-      <span class="k">Elvor</span>
-      <span id="lineup-meta">—</span>
-    </div>
+  <section class="status-bar status-line" id="status-bar" aria-label="Status">
+    <span id="updated-at">—</span>
+    <span class="sep" aria-hidden="true">·</span>
+    <span id="match-count">—</span>
+    <span class="sep" aria-hidden="true">·</span>
+    <span id="lineup-meta">—</span>
+    <span id="status-msg" hidden></span>
   </section>
 
   <section class="acc-row" id="accuracy" aria-label="Modellträffsäkerhet"></section>
@@ -84,7 +74,7 @@
     <p>
       <strong>Chans</strong> är modellens uppskattade sannolikhet att tipset går in, i procent.
       På varje rad visas chansen för just det tipset (1/X/2, BTTS JA/NEJ, Ö/U).
-      Siffran uppe till höger är ett snitt över marknaderna — högre = starkare underlag.
+      Uppe till höger på kortet står kortets främsta tips med sin chans: marknaden med Värde om någon har det, annars marknaden med högst chans.
       Under ~58&nbsp;% filtreras tipset normalt bort från “Bästa tips”.
     </p>
   </details>
@@ -123,20 +113,26 @@
   </section>
 
   <main>
-    <div class="section-head">
+    <div class="section-head section-head-row">
       <h2>Bästa tips</h2>
+      <div class="value-filter" id="value-filter" role="group" aria-label="Visa">
+        <button type="button" class="vf-btn" data-vf="all" aria-pressed="true">Alla <span class="count" id="vf-all">–</span></button>
+        <button type="button" class="vf-btn" data-vf="value" aria-pressed="false">Bara Värde <span class="count" id="vf-value">–</span></button>
+      </div>
     </div>
     <div id="tips" class="tips"></div>
 
-    <div class="section-head secondary">
-      <h2>Alla kandidater</h2>
-      <p id="cand-sub">Även under filtertröskel</p>
-    </div>
-    <div id="candidates" class="tips muted-list"></div>
+    <details class="cand-wrap" id="cand-wrap">
+      <summary class="section-head secondary">
+        <h2>Alla kandidater <span class="cand-count" id="cand-count"></span></h2>
+        <p id="cand-sub">Även matcher under filtertröskeln · klicka för att visa</p>
+      </summary>
+      <div id="candidates" class="tips muted-list"></div>
+    </details>
   </main>
 
   <footer class="foot">
-    <span>Lokal GUI · port 3847</span>
+    <span id="foot-local">Lokal GUI · port 3847</span>
     <span id="source-pills"></span>
   </footer>
 

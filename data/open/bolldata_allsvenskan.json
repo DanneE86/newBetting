@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-29T18:51:22.772Z",
+  "fetchedAt": "2026-10-01T03:51:51.942Z",
   "source": "https://bolldata.se",
   "note": "Crawl-delay 100 s respekterad",
   "pages": {
@@ -4986,7 +4986,7 @@
             "team": "Elfsborg",
             "values": {
               "SM": 22,
-              "FP": 3369,
+              "FP": 3368,
               "LFP": 2527,
               "LFP%": 75
             }
@@ -5042,7 +5042,7 @@
             "values": {
               "SM": 22,
               "FP": 3258,
-              "LFP": 2388,
+              "LFP": 2389,
               "LFP%": 73.3
             }
           },
@@ -5096,7 +5096,7 @@
             "team": "Västerås SK",
             "values": {
               "SM": 22,
-              "FP": 3114,
+              "FP": 3113,
               "LFP": 2180,
               "LFP%": 70
             }
@@ -6207,9 +6207,9 @@
             "values": {
               "SM": 22,
               "AMB": 32,
-              "PL": 350,
+              "PL": 349,
               "AMB/90": 1.45,
-              "PL/90": 15.91
+              "PL/90": 15.86
             }
           },
           {
@@ -6697,11 +6697,11 @@
             "team": "AIK",
             "values": {
               "SM": 22,
-              "OD": 1377,
-              "VOD%": 48.8,
-              "DD": 1209,
-              "VDD%": 20.1,
-              "LD": 604,
+              "OD": 1382,
+              "VOD%": 48.9,
+              "DD": 1213,
+              "VDD%": 20,
+              "LD": 610,
               "VLD%": 45.9,
               "VD%": 38.1
             }
@@ -6714,9 +6714,9 @@
               "SM": 22,
               "OD": 1169,
               "VOD%": 45.2,
-              "DD": 1313,
+              "DD": 1316,
               "VDD%": 21.7,
-              "LD": 784,
+              "LD": 790,
               "VLD%": 49.9,
               "VD%": 37.7
             }
@@ -6727,10 +6727,10 @@
             "team": "Mjällby",
             "values": {
               "SM": 22,
-              "OD": 1445,
+              "OD": 1454,
               "VOD%": 48,
-              "DD": 1395,
-              "VDD%": 19.6,
+              "DD": 1398,
+              "VDD%": 19.5,
               "LD": 650,
               "VLD%": 48.3,
               "VD%": 37.5
@@ -6742,9 +6742,9 @@
             "team": "Örgryte",
             "values": {
               "SM": 22,
-              "OD": 1245,
-              "VOD%": 46.9,
-              "DD": 1333,
+              "OD": 1249,
+              "VOD%": 46.8,
+              "DD": 1335,
               "VDD%": 20.6,
               "LD": 616,
               "VLD%": 52.1,
@@ -6787,10 +6787,10 @@
             "team": "Elfsborg",
             "values": {
               "SM": 22,
-              "OD": 1296,
-              "VOD%": 45.4,
-              "DD": 1268,
-              "VDD%": 21.3,
+              "OD": 1299,
+              "VOD%": 45.5,
+              "DD": 1277,
+              "VDD%": 21.2,
               "LD": 634,
               "VLD%": 47.9,
               "VD%": 37.3
@@ -6971,8 +6971,8 @@
             "team": "Västerås SK",
             "values": {
               "SM": 22,
-              "ÅE": 1873,
-              "ÅE/M": 85.14
+              "ÅE": 1874,
+              "ÅE/M": 85.18
             }
           },
           {
@@ -7051,8 +7051,8 @@
             "team": "AIK",
             "values": {
               "SM": 22,
-              "ÅE": 1708,
-              "ÅE/M": 77.64
+              "ÅE": 1709,
+              "ÅE/M": 77.68
             }
           },
           {
@@ -11630,6 +11630,18 @@
             }
           },
           {
+            "id": "20656",
+            "name": "H. Matthys",
+            "team": "AIK",
+            "values": {
+              "SM": 10,
+              "MIN": 893,
+              "P": 777,
+              "LP": 711,
+              "P%": 91.5
+            }
+          },
+          {
             "id": "20561",
             "name": "O. Ågren",
             "team": "GAIS",
@@ -11639,18 +11651,6 @@
               "P": 1124,
               "LP": 1027,
               "P%": 91.4
-            }
-          },
-          {
-            "id": "20656",
-            "name": "H. Matthys",
-            "team": "AIK",
-            "values": {
-              "SM": 10,
-              "MIN": 893,
-              "P": 779,
-              "LP": 711,
-              "P%": 91.3
             }
           },
           {
@@ -11897,6 +11897,18 @@
             }
           },
           {
+            "id": "20656",
+            "name": "H. Matthys",
+            "team": "AIK",
+            "values": {
+              "SM": 10,
+              "MIN": 893,
+              "FP": 300,
+              "LFP": 251,
+              "LFP%": 83.7
+            }
+          },
+          {
             "id": "20761",
             "name": "M. Hallberg",
             "team": "Kalmar",
@@ -11929,18 +11941,6 @@
               "MIN": 1114,
               "FP": 248,
               "LFP": 206,
-              "LFP%": 83.1
-            }
-          },
-          {
-            "id": "20656",
-            "name": "H. Matthys",
-            "team": "AIK",
-            "values": {
-              "SM": 10,
-              "MIN": 893,
-              "FP": 301,
-              "LFP": 250,
               "LFP%": 83.1
             }
           },
@@ -13174,8 +13174,8 @@
               "MIN": 2071,
               "OD": 134,
               "VOD%": 50.7,
-              "DD": 168,
-              "VDD%": 25,
+              "DD": 169,
+              "VDD%": 24.9,
               "D": 382,
               "VD%": 38.5
             }
@@ -13187,12 +13187,12 @@
             "values": {
               "SM": 22,
               "MIN": 1840,
-              "OD": 131,
-              "VOD%": 58.8,
-              "DD": 203,
-              "VDD%": 22.7,
-              "D": 379,
-              "VD%": 37.7
+              "OD": 132,
+              "VOD%": 59.1,
+              "DD": 204,
+              "VDD%": 22.5,
+              "D": 381,
+              "VD%": 37.8
             }
           },
           {
@@ -13371,8 +13371,8 @@
               "VOD%": 35.8,
               "DD": 70,
               "VDD%": 28.6,
-              "D": 347,
-              "VD%": 36.3
+              "D": 349,
+              "VD%": 36.1
             }
           }
         ]
@@ -13734,6 +13734,17 @@
             }
           },
           {
+            "id": "20471",
+            "name": "A. Norén",
+            "team": "Mjällby",
+            "values": {
+              "SM": 19,
+              "MIN": 1662,
+              "ÅE": 246,
+              "ÅE/90": 13.32
+            }
+          },
+          {
             "id": "20714",
             "name": "J. Une-Larsson",
             "team": "Djurgården",
@@ -13742,17 +13753,6 @@
               "MIN": 1541,
               "ÅE": 228,
               "ÅE/90": 13.32
-            }
-          },
-          {
-            "id": "20471",
-            "name": "A. Norén",
-            "team": "Mjällby",
-            "values": {
-              "SM": 19,
-              "MIN": 1662,
-              "ÅE": 245,
-              "ÅE/90": 13.27
             }
           },
           {
@@ -17114,8 +17114,8 @@
         "LÅNGA PASSNINGAR & GENOMSKÄRARE | L&G/90": 7.69,
         "ÅTERERÖVRINGAR | SM": 19,
         "ÅTERERÖVRINGAR | MIN": 1662,
-        "ÅTERERÖVRINGAR | ÅE": 245,
-        "ÅTERERÖVRINGAR | ÅE/90": 13.27
+        "ÅTERERÖVRINGAR | ÅE": 246,
+        "ÅTERERÖVRINGAR | ÅE/90": 13.32
       }
     },
     {
@@ -18180,8 +18180,8 @@
         "Duellspel | MIN": 2071,
         "Duellspel | OD": 134,
         "Duellspel | VOD%": 50.7,
-        "Duellspel | DD": 168,
-        "Duellspel | VDD%": 25,
+        "Duellspel | DD": 169,
+        "Duellspel | VDD%": 24.9,
         "Duellspel | D": 382,
         "Duellspel | VD%": 38.5,
         "Fouls | SM": 22,
@@ -18684,8 +18684,8 @@
         "Duellspel | VOD%": 35.8,
         "Duellspel | DD": 70,
         "Duellspel | VDD%": 28.6,
-        "Duellspel | D": 347,
-        "Duellspel | VD%": 36.3
+        "Duellspel | D": 349,
+        "Duellspel | VD%": 36.1
       }
     },
     {
@@ -18709,14 +18709,14 @@
       "stats": {
         "PASSNINGAR & PASSNINGSPROCENT | SM": 10,
         "PASSNINGAR & PASSNINGSPROCENT | MIN": 893,
-        "PASSNINGAR & PASSNINGSPROCENT | P": 779,
+        "PASSNINGAR & PASSNINGSPROCENT | P": 777,
         "PASSNINGAR & PASSNINGSPROCENT | LP": 711,
-        "PASSNINGAR & PASSNINGSPROCENT | P%": 91.3,
+        "PASSNINGAR & PASSNINGSPROCENT | P%": 91.5,
         "FRAMÅTPASSNINGAR | SM": 10,
         "FRAMÅTPASSNINGAR | MIN": 893,
-        "FRAMÅTPASSNINGAR | FP": 301,
-        "FRAMÅTPASSNINGAR | LFP": 250,
-        "FRAMÅTPASSNINGAR | LFP%": 83.1
+        "FRAMÅTPASSNINGAR | FP": 300,
+        "FRAMÅTPASSNINGAR | LFP": 251,
+        "FRAMÅTPASSNINGAR | LFP%": 83.7
       }
     },
     {
@@ -18988,12 +18988,12 @@
       "stats": {
         "Duellspel | SM": 22,
         "Duellspel | MIN": 1840,
-        "Duellspel | OD": 131,
-        "Duellspel | VOD%": 58.8,
-        "Duellspel | DD": 203,
-        "Duellspel | VDD%": 22.7,
-        "Duellspel | D": 379,
-        "Duellspel | VD%": 37.7,
+        "Duellspel | OD": 132,
+        "Duellspel | VOD%": 59.1,
+        "Duellspel | DD": 204,
+        "Duellspel | VDD%": 22.5,
+        "Duellspel | D": 381,
+        "Duellspel | VD%": 37.8,
         "Fouls | SM": 22,
         "Fouls | MIN": 1840,
         "Fouls | VF": 47,
@@ -22113,7 +22113,7 @@
         "PASSNINGAR & PASSNINGSPROCENT | LP": 8607,
         "PASSNINGAR & PASSNINGSPROCENT | P%": 84.5,
         "FRAMÅTPASSNINGAR | SM": 22,
-        "FRAMÅTPASSNINGAR | FP": 3369,
+        "FRAMÅTPASSNINGAR | FP": 3368,
         "FRAMÅTPASSNINGAR | LFP": 2527,
         "FRAMÅTPASSNINGAR | LFP%": 75,
         "NYCKELPASSNINGAR | SM": 22,
@@ -22149,10 +22149,10 @@
         "DEFENSIV SOLIDITET | MCE": 178,
         "DEFENSIV SOLIDITET | MCE/M": 8.09,
         "Duellspel | SM": 22,
-        "Duellspel | OD": 1296,
-        "Duellspel | VOD%": 45.4,
-        "Duellspel | DD": 1268,
-        "Duellspel | VDD%": 21.3,
+        "Duellspel | OD": 1299,
+        "Duellspel | VOD%": 45.5,
+        "Duellspel | DD": 1277,
+        "Duellspel | VDD%": 21.2,
         "Duellspel | LD": 634,
         "Duellspel | VLD%": 47.9,
         "Duellspel | VD%": 37.3,
@@ -22573,7 +22573,7 @@
         "PASSNINGAR & PASSNINGSPROCENT | LP": 7583,
         "PASSNINGAR & PASSNINGSPROCENT | P%": 82.5,
         "FRAMÅTPASSNINGAR | SM": 22,
-        "FRAMÅTPASSNINGAR | FP": 3114,
+        "FRAMÅTPASSNINGAR | FP": 3113,
         "FRAMÅTPASSNINGAR | LFP": 2180,
         "FRAMÅTPASSNINGAR | LFP%": 70,
         "NYCKELPASSNINGAR | SM": 22,
@@ -22611,14 +22611,14 @@
         "Duellspel | SM": 22,
         "Duellspel | OD": 1169,
         "Duellspel | VOD%": 45.2,
-        "Duellspel | DD": 1313,
+        "Duellspel | DD": 1316,
         "Duellspel | VDD%": 21.7,
-        "Duellspel | LD": 784,
+        "Duellspel | LD": 790,
         "Duellspel | VLD%": 49.9,
         "Duellspel | VD%": 37.7,
         "ÅTERERÖVRINGAR | SM": 22,
-        "ÅTERERÖVRINGAR | ÅE": 1873,
-        "ÅTERERÖVRINGAR | ÅE/M": 85.14,
+        "ÅTERERÖVRINGAR | ÅE": 1874,
+        "ÅTERERÖVRINGAR | ÅE/M": 85.18,
         "Hörnor | SM": 22,
         "Hörnor | HF": 92,
         "Hörnor | HE": 119,
@@ -23034,7 +23034,7 @@
         "PASSNINGAR & PASSNINGSPROCENT | P%": 84.8,
         "FRAMÅTPASSNINGAR | SM": 22,
         "FRAMÅTPASSNINGAR | FP": 3258,
-        "FRAMÅTPASSNINGAR | LFP": 2388,
+        "FRAMÅTPASSNINGAR | LFP": 2389,
         "FRAMÅTPASSNINGAR | LFP%": 73.3,
         "NYCKELPASSNINGAR | SM": 22,
         "NYCKELPASSNINGAR | P": 10467,
@@ -23059,9 +23059,9 @@
         "Bollinnehav | BI(%)": 55.1,
         "ACC. & PROGRESSIVA LÖPNINGAR | SM": 22,
         "ACC. & PROGRESSIVA LÖPNINGAR | AMB": 32,
-        "ACC. & PROGRESSIVA LÖPNINGAR | PL": 350,
+        "ACC. & PROGRESSIVA LÖPNINGAR | PL": 349,
         "ACC. & PROGRESSIVA LÖPNINGAR | AMB/90": 1.45,
-        "ACC. & PROGRESSIVA LÖPNINGAR | PL/90": 15.91,
+        "ACC. & PROGRESSIVA LÖPNINGAR | PL/90": 15.86,
         "DEFENSIV SOLIDITET | SM": 22,
         "DEFENSIV SOLIDITET | IM": 34,
         "DEFENSIV SOLIDITET | HN": 4,
@@ -23069,16 +23069,16 @@
         "DEFENSIV SOLIDITET | MCE": 242,
         "DEFENSIV SOLIDITET | MCE/M": 11,
         "Duellspel | SM": 22,
-        "Duellspel | OD": 1377,
-        "Duellspel | VOD%": 48.8,
-        "Duellspel | DD": 1209,
-        "Duellspel | VDD%": 20.1,
-        "Duellspel | LD": 604,
+        "Duellspel | OD": 1382,
+        "Duellspel | VOD%": 48.9,
+        "Duellspel | DD": 1213,
+        "Duellspel | VDD%": 20,
+        "Duellspel | LD": 610,
         "Duellspel | VLD%": 45.9,
         "Duellspel | VD%": 38.1,
         "ÅTERERÖVRINGAR | SM": 22,
-        "ÅTERERÖVRINGAR | ÅE": 1708,
-        "ÅTERERÖVRINGAR | ÅE/M": 77.64,
+        "ÅTERERÖVRINGAR | ÅE": 1709,
+        "ÅTERERÖVRINGAR | ÅE/M": 77.68,
         "Hörnor | SM": 22,
         "Hörnor | HF": 112,
         "Hörnor | HE": 112,
@@ -23989,10 +23989,10 @@
         "DEFENSIV SOLIDITET | MCE": 237,
         "DEFENSIV SOLIDITET | MCE/M": 10.77,
         "Duellspel | SM": 22,
-        "Duellspel | OD": 1445,
+        "Duellspel | OD": 1454,
         "Duellspel | VOD%": 48,
-        "Duellspel | DD": 1395,
-        "Duellspel | VDD%": 19.6,
+        "Duellspel | DD": 1398,
+        "Duellspel | VDD%": 19.5,
         "Duellspel | LD": 650,
         "Duellspel | VLD%": 48.3,
         "Duellspel | VD%": 37.5,
@@ -24679,9 +24679,9 @@
         "DEFENSIV SOLIDITET | MCE": 256,
         "DEFENSIV SOLIDITET | MCE/M": 11.64,
         "Duellspel | SM": 22,
-        "Duellspel | OD": 1245,
-        "Duellspel | VOD%": 46.9,
-        "Duellspel | DD": 1333,
+        "Duellspel | OD": 1249,
+        "Duellspel | VOD%": 46.8,
+        "Duellspel | DD": 1335,
         "Duellspel | VDD%": 20.6,
         "Duellspel | LD": 616,
         "Duellspel | VLD%": 52.1,

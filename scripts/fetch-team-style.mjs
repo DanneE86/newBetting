@@ -68,13 +68,16 @@ for (const [code, spec] of Object.entries(FOTMOB_LEAGUES)) {
   const current = lgNow?.allAvailableSeasons?.[0];
   const allNames = [...new Set([...seasons.values()].flatMap((s) => [...s]))];
   const out = { updatedAt: new Date().toISOString(), league: code, fotmobId: id, source: 'FotMob', seasons: { ...prev.seasons } };
+  // sasonger sparade medan de pagick: hamtas om tills de sparats som avslutade
+  const ongoing = new Set(prev.ongoing ?? []);
   let fetched = 0;
   for (const [season, names] of seasons) {
     const fs_ = fmSeason(season);
     // Liga MX: FotMob delar sasongen i Apertura och Clausura, de slas ihop (viktat med matcher)
     const parts = available.has(fs_) ? [fs_] : [...available].filter((x) => x.startsWith(`${fs_} - `));
     if (!parts.length) continue;
-    if (!FORCE && out.seasons[season] && !parts.includes(current)) continue;
+    const isCurrent = parts.includes(current);
+    if (!FORCE && out.seasons[season] && !isCurrent && !ongoing.has(season)) continue;
     const teams = new Map(); // FotMob-id -> { name, m, stats }
     for (const part of parts) {
       const doc = part === current ? lgNow : await getJson(`${FM}/leagues?id=${id}&season=${encodeURIComponent(part)}`);
@@ -113,8 +116,10 @@ for (const [code, spec] of Object.entries(FOTMOB_LEAGUES)) {
     const missing = [...names].filter((n) => !rows[n]);
     if (missing.length) console.warn(`  ${code} ${season}: saknar stil for ${missing.join(', ')}`);
     out.seasons[season] = rows;
+    if (isCurrent) ongoing.add(season); else ongoing.delete(season);
     fetched++;
   }
+  out.ongoing = [...ongoing];
   fs.writeFileSync(outFile, JSON.stringify(out, null, 1), 'utf8');
   console.log(`${code}: ${fetched} sasonger hamtade, ${Object.keys(out.seasons).length} totalt`);
 }

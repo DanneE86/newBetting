@@ -76,10 +76,10 @@ function fmtKick(tip) {
 function noteLines(tip) {
   const parts = [];
   if (tip.marketOnly) parts.push(`<span class="market-only">Marknadstips – chansen är ${escapeHtml(tip.marketSource || "marknaden")} utan marginal (ingen modell för denna liga)</span>`);
-  if (tip.marketLed) parts.push(`<span class="market-only">${escapeHtml(tip.marketLedNote || "Tidig säsong – marknadens chans styr tipset")}</span>`);
+  if (tip.marketLed) parts.push(`<span class="market-only">${escapeHtml((tip.marketLedNote || "Tidig säsong – marknadens chans styr tipset").replace(/\b(pinnacle|betfair)\b/g, capFirst))}</span>`);
   if (tip.lineupStatus && tip.lineupStatus !== "none") {
     const cls = tip.lineupStatus === "confirmed" ? "xi-confirmed" : "xi-pending";
-    parts.push(`<span class="${cls}">Elvor: ${tip.lineupStatus}</span>`);
+    parts.push(`<span class="${cls}">Elvor: ${tip.lineupStatus === "confirmed" ? "bekräftade" : "ej släppta än"}</span>`);
   }
   for (const n of tip.lineupNotes || []) parts.push(escapeHtml(n));
   for (const n of tip.playerAttackNotes || []) parts.push(escapeHtml(n));
@@ -127,7 +127,7 @@ function oddsCells(tip) {
       under: pro.under25 ?? null,
       bttsYes: null,
       bttsNo: null,
-      book: books.length ? `bästa pris · ${books.join(", ")}` : "",
+      book: books.length ? `bästa pris · ${books.map(capFirst).join(", ")}` : "",
     };
   }
   const od = tip.value?.odds;
@@ -142,7 +142,7 @@ function oddsCells(tip) {
     under: od.under25 ?? null,
     bttsYes: od.bttsYes ?? null,
     bttsNo: od.bttsNo ?? null,
-    book: tip.value?.bookmaker ? String(tip.value.bookmaker) : "",
+    book: tip.value?.bookmaker ? capFirst(String(tip.value.bookmaker)) : "",
   };
 }
 
@@ -152,11 +152,15 @@ function fmtOdd(v) {
 }
 
 /** Alla utfall med fasta farger; tippat utfall markeras. Med mkt blir utfallen klickbara (värde per utfall). */
-function oddsGroup(items, activeKey, mkt = null) {
+const capFirst = (x) => (x ? x[0].toUpperCase() + x.slice(1) : x);
+
+function oddsGroup(items, activeKey, mkt = null, valueKeys = []) {
   const parts = items.map(({ key, label, odd }) => {
-    const active = key === activeKey ? " is-tip is-selected" : "";
+    // Utfall med Värde markeras på själva chipet, även när det inte är det tippade utfallet
+    const val = valueKeys.includes(key);
+    const active = (key === activeKey ? " is-tip is-selected" : "") + (val ? " is-value" : "");
     const click = mkt ? ` role="button" tabindex="0" data-mkt="${mkt}" data-key="${key}" title="Klicka: spelvärde för ${escapeHtml(label)}"` : "";
-    return `<span class="odd-pill odd-${key}${active}${mkt ? " is-clickable" : ""}"${click}><em>${escapeHtml(label)}</em><b>${escapeHtml(fmtOdd(odd))}</b></span>`;
+    return `<span class="odd-pill odd-${key}${active}${mkt ? " is-clickable" : ""}"${click}><em>${escapeHtml(label)}</em><b>${escapeHtml(fmtOdd(odd))}</b>${val ? `<i class="pill-val">Värde</i>` : ""}</span>`;
   });
   return `<div class="odds-group">${parts.join("")}</div>`;
 }
@@ -166,16 +170,30 @@ const MODEL_ONLY_MIN_EV = 0.08;
 const tipIndex = new Map();
 const tipId = (t) => `${t.league}|${t.date}|${t.home}|${t.away}`;
 
-/** Utfall utan odds: modellens chans -> lägsta odds där spelet har värde. */
+/** Lägsta odds där ett utfall utan marknadsfacit har värde (modellens chans + marginal). */
+const modelMin = (p) => Math.round(((1 + MODEL_ONLY_MIN_EV) / p) * 100) / 100;
+
+/** Utfall utan odds: modellens chans -> lägsta odds där spelet har värde. Detaljerna ligger i title och Detaljer. */
 function modelValueCell(p, label) {
   if (p == null || !(p > 0)) return `<td class="val"><span class="val-badge val-none">Inga odds</span></td>`;
-  const minOdds = Math.round(((1 + MODEL_ONLY_MIN_EV) / p) * 100) / 100;
+  const minOdds = modelMin(p);
   const fair = Math.round((1 / p) * 100) / 100;
   const title = `Inga odds i källorna för ${label}. Modellens chans ${Math.round(p * 100)} % ger fair odds ${fair}; spelvärde från ${minOdds} (+8 % marginal, inget marknadsfacit).`;
-  return `<td class="val" title="${escapeHtml(title)}"><div class="val-for">${escapeHtml(label)}</div><span class="val-badge val-none">Inga odds</span>
-    <div class="val-min">spela från <b>${minOdds}</b></div>
-    <div class="val-rr">chans ${Math.round(p * 100)} % · fair ${fair}</div>
-    <div class="val-min">facit: bara modell</div></td>`;
+  return `<td class="val" title="${escapeHtml(title)}"><div class="val-line"><span class="val-badge val-none">Inga odds</span><span class="val-from">spela från <b>${minOdds}</b></span></div></td>`;
+}
+
+/** Modellens chans för Ö/U (samma källa som BTTS-raden: pro-lagrets blandning, annars tipsmotorn). */
+function ouP(tip, key) {
+  const po = tip.pro?.blended?.over25 ?? tip.tips?.OU25?.pOver;
+  if (po == null) return null;
+  return key === "over25" ? po : 1 - po;
+}
+
+/** Ö/U: omdöme mot odds om det finns, annars "spela från" som BTTS. */
+function ouCell(tip, key, label = null) {
+  const x = tip.pro?.verdicts?.[key];
+  if (x && x.value != null) return valueCell(tip, key, ["over25", "under25"], label);
+  return modelValueCell(ouP(tip, key), key === "over25" ? "Över 2.5" : "Under 2.5");
 }
 
 /** Värdecellen för valt utfall i en marknad (klick på oddsknapp eller tippat utfall). */
@@ -188,7 +206,7 @@ function valueFor(tip, mkt, key) {
   }
   if (mkt === "OU25") {
     const k = key === "over" ? "over25" : "under25";
-    return valueCell(tip, k, ["over25", "under25"], key === "over" ? "Över 2.5" : "Under 2.5");
+    return ouCell(tip, k, key === "over" ? "Över 2.5" : "Under 2.5");
   }
   if (mkt === "BTTS") {
     const pYes = tip.pro?.blended?.btts ?? t.BTTS?.pYes;
@@ -211,44 +229,118 @@ function valueCell(tip, pickKey, keys, label = null) {
   const x = v[pickKey];
   const others = keys
     .filter((k) => k !== pickKey && v[k]?.value)
-    .map((k) => `${escapeHtml(v[k].pick)} @ ${escapeHtml(fmtOdd(v[k].odds))}`);
-  const otherTxt = others.length ? `<div class="val-other">Värde: ${others.join(", ")}</div>` : "";
+    .map((k) => `${escapeHtml(v[k].pick)} @ ${escapeHtml(fmtOdd(v[k].odds))} (från ${escapeHtml(fmtOdd(v[k].minOdds))})`);
+  // Övriga utfall med odds men utan värde får också ett omdöme (varje visat odds ska ha Värde/Ej värde)
+  const noVal = keys.filter((k) => k !== pickKey && v[k]?.value === false).map((k) => escapeHtml(v[k].pick));
+  const otherTxt = (others.length ? `<div class="val-other">Värde: ${others.join(", ")}</div>` : "")
+    + (noVal.length ? `<div class="val-min">Ej värde: ${noVal.join(", ")}</div>` : "");
   const forTxt = label ? `<div class="val-for">${escapeHtml(label)}${x?.odds ? ` @ ${escapeHtml(fmtOdd(x.odds))}` : ""}</div>` : "";
   if (!x || x.value == null) {
     // Pro-lagret ger alltid ett omdöme när det finns odds; saknas det finns inga odds för utfallet
     return `<td class="val">${forTxt}<span class="val-badge val-none">Inga odds</span>${otherTxt}</td>`;
   }
-  // Facit utan Pinnacle/Betfair (snitt av bolagen): svagare, därför högre tröskel - visas under omdömet
-  const basis = x.fairSource && !/pinnacle|betfair/.test(x.fairSource) ? `<div class="val-min">facit: ${escapeHtml(x.fairSource)}</div>` : "";
-  const title = `Värt att spela från odds ${x.minOdds}${basis ? ` (facit: ${x.fairSource})` : ""}`;
-  const rrTxt = riskRewardLines(x);
-  return x.value
-    ? `<td class="val" title="${escapeHtml(title)}">${forTxt}<span class="val-badge val-yes">Värde</span>${rrTxt}${basis}${otherTxt}</td>`
-    : x.reason
-      ? `<td class="val" title="Skrällodds – chansen överskattas, spelas aldrig">${forTxt}<span class="val-badge val-no">Ej värde</span><div class="val-min">${escapeHtml(x.reason)}</div>${rrTxt}${otherTxt}</td>`
-      : `<td class="val" title="${escapeHtml(title)}">${forTxt}<span class="val-badge val-no">Ej värde</span><div class="val-min">från ${escapeHtml(fmtOdd(x.minOdds))}</div>${rrTxt}${basis}${otherTxt}</td>`;
+  const from = x.minOdds ? `<span class="val-from">från <b>${escapeHtml(fmtOdd(x.minOdds))}</b></span>` : "";
+  // EV, krav, chans/krävs och facit: i title (ⓘ) och i kortets Detaljer, inte på raden
+  const title = `${x.reason ? "Skrällodds – chansen överskattas, spelas aldrig. " : ""}Värt att spela från odds ${x.minOdds}. ${rrText(x)}${x.fairSource ? ` · facit: ${x.fairSource}` : ""}`;
+  const badge = x.value ? `<span class="val-badge val-yes">Värde</span>` : `<span class="val-badge val-no">Ej värde</span>`;
+  const reason = x.reason ? `<div class="val-min">${escapeHtml(x.reason)}</div>` : "";
+  return `<td class="val" title="${escapeHtml(title)}">${forTxt}<div class="val-line">${badge}${from}<span class="val-info" aria-hidden="true">ⓘ</span></div>${reason}${otherTxt}</td>`;
 }
 
 /**
- * Risk vs reward: insats mot möjlig vinst, förväntat värde i kr,
- * och vår chans mot break-even-chansen (1/odds) som oddset kräver.
+ * Risk vs reward i procent (flat insats, inga kronbelopp):
+ * förväntat värde mot kravet för "Värde", och vår chans mot break-even-chansen (1/odds).
  */
-function riskRewardLines(x) {
+function rrText(x) {
   const rr = x.riskReward;
-  if (!rr) return "";
   const pc = (p) => `${Math.round(p * 100)} %`;
-  const ev = `${rr.evSek >= 0 ? "+" : "−"}${Math.abs(rr.evSek)} kr`;
   // Krav för "Värde" = marginal över break-even (3 % mot Pinnacle/Betfair, högre mot bolagssnitt).
   // minOdds är satt så att p x minOdds - 1 = kravet -> kravet kan räknas tillbaka.
   const evPct = x.ev != null ? x.ev : x.p * x.odds - 1;
   const req = x.minOdds && x.p ? x.minOdds * x.p - 1 : null;
   const pctTxt = (v) => `${v >= 0 ? "+" : "−"}${Math.abs(Math.round(v * 1000) / 10).toLocaleString("sv-SE")} %`;
-  const cls = x.value ? "rr-pos" : rr.evSek > 0 ? "rr-near" : "rr-neg";
-  const tip = `Risk ${rr.stake} kr för att vinna ${rr.win} kr (1:${rr.ratio}). Oddset kräver ${pc(rr.breakEven)} chans, facit ger ${pc(x.p)}. `
-    + `Förväntat värde ${ev} per spel i snitt (${pctTxt(evPct)} av insatsen)${req != null ? `; för "Värde" krävs minst ${pctTxt(req)} som säkerhetsmarginal` : ""}.`;
-  return `<div class="val-rr" title="${escapeHtml(tip)}">${rr.stake} kr → +${rr.win} kr</div>`
-    + `<div class="val-rr" title="${escapeHtml(tip)}">EV <b class="${cls}">${ev} (${pctTxt(evPct)})</b>${req != null ? ` · krav ${pctTxt(req)}` : ""}</div>`
-    + `<div class="val-rr">chans ${pc(x.p)} · krävs ${pc(rr.breakEven)}</div>`;
+  const parts = [`EV ${pctTxt(evPct)}`];
+  if (req != null) parts.push(`krav ${pctTxt(req)}`);
+  if (x.p != null) parts.push(`chans ${pc(x.p)}`);
+  if (rr?.breakEven != null) parts.push(`krävs ${pc(rr.breakEven)}`);
+  return parts.join(" · ");
+}
+
+const PICK_LABEL = { home: "1", draw: "X", away: "2", over25: "Över 2.5", under25: "Under 2.5" };
+const KEY_1X2 = { 1: "home", X: "draw", 2: "away" };
+const mktLabel = (k) => (k.length > 4 ? PICK_LABEL[k] : `1X2 · ${PICK_LABEL[k]}`);
+
+/** BTTS-chans för JA/NEJ (samma som BTTS-raden). */
+function bttsP(tip, pick) {
+  const pYes = tip.pro?.blended?.btts ?? tip.tips?.BTTS?.pYes;
+  if (pYes == null) return null;
+  return pick === "JA" ? pYes : 1 - pYes;
+}
+
+/**
+ * Kortets främsta tips: ett utfall med Värde (högst EV) om något har det, annars den tippade marknaden
+ * (1X2, BTTS, Ö/U) med högst chans. Bara presentation av befintliga omdömen.
+ */
+function primaryOf(tip) {
+  const t = tip.tips || {};
+  const v = tip.pro?.verdicts || {};
+  const vals = Object.entries(v).filter(([, x]) => x?.value).sort((a, b) => (b[1].ev ?? 0) - (a[1].ev ?? 0));
+  if (vals.length) {
+    const [k, x] = vals[0];
+    const p = k.length > 4 ? ouP(tip, k) : t["1X2"]?.probs?.[k];
+    return { label: mktLabel(k), p: p ?? x.p, verdict: "yes", odds: x.odds, from: x.minOdds };
+  }
+  const cands = [];
+  if (t["1X2"]?.pick && KEY_1X2[t["1X2"].pick]) cands.push({ label: `1X2 · ${t["1X2"].pick}`, p: t["1X2"].confidence, key: KEY_1X2[t["1X2"].pick] });
+  if (t.BTTS?.pick) cands.push({ label: `BTTS ${t.BTTS.pick}`, p: t.BTTS.confidence, modelP: bttsP(tip, t.BTTS.pick) });
+  if (t.OU25?.pick) {
+    const k = /OVER/i.test(t.OU25.pick) ? "over25" : "under25";
+    cands.push({ label: PICK_LABEL[k], p: t.OU25.confidence, key: k, modelP: ouP(tip, k) });
+  }
+  const best = cands.filter((c) => c.p != null).sort((a, b) => b.p - a.p)[0];
+  if (!best) return null;
+  const x = best.key ? v[best.key] : null;
+  if (x && x.value != null) return { label: best.label, p: best.p, verdict: "no", odds: x.odds, from: x.minOdds };
+  const mp = best.modelP;
+  return { label: best.label, p: best.p, verdict: "none", from: mp > 0 ? modelMin(mp) : null };
+}
+
+/** Omdömesbadge: Värde grön, Ej värde grå, alltid med "från X" när det finns. */
+function verdictBadge(pr) {
+  if (!pr) return "";
+  const from = pr.from ? ` · från ${escapeHtml(fmtOdd(pr.from))}` : "";
+  if (pr.verdict === "yes") return `<span class="val-badge val-yes">Värde${from}</span>`;
+  if (pr.verdict === "no") return `<span class="val-badge val-no">Ej värde${from}</span>`;
+  return `<span class="val-badge val-none">Inga odds${pr.from ? ` · spela från ${escapeHtml(fmtOdd(pr.from))}` : ""}</span>`;
+}
+
+const hasValue = (tip) => Object.values(tip.pro?.verdicts || {}).some((x) => x?.value);
+
+/** Detaljer per kort: EV, krav, chans mot krävs och facit för varje marknad. */
+function detailsHtml(tip) {
+  const t = tip.tips || {};
+  const v = tip.pro?.verdicts || {};
+  const items = [];
+  const seen = new Set();
+  const add = (k) => {
+    const x = v[k];
+    if (!x || x.value == null || seen.has(k)) return;
+    seen.add(k);
+    items.push(`<li><b>${escapeHtml(mktLabel(k))} @ ${escapeHtml(fmtOdd(x.odds))}</b> – ${x.value ? "Värde" : "Ej värde"}, från ${escapeHtml(fmtOdd(x.minOdds))} · ${escapeHtml(rrText(x))}${x.fairSource ? ` · facit: ${escapeHtml(x.fairSource)}` : ""}${x.reason ? ` · ${escapeHtml(x.reason)}` : ""}</li>`);
+  };
+  if (KEY_1X2[t["1X2"]?.pick]) add(KEY_1X2[t["1X2"].pick]);
+  for (const [k, x] of Object.entries(v)) if (x?.value) add(k);
+  const ouK = /OVER/i.test(t.OU25?.pick || "") ? "over25" : /UNDER/i.test(t.OU25?.pick || "") ? "under25" : null;
+  if (ouK) add(ouK);
+  const model = (label, p) => {
+    if (!(p > 0)) return;
+    items.push(`<li><b>${escapeHtml(label)}</b> – inga odds, spela från ${modelMin(p)} · chans ${Math.round(p * 100)} % · fair ${Math.round((1 / p) * 100) / 100} · facit: bara modell (+8 % marginal)</li>`);
+  };
+  if (t.BTTS?.pick) model(`BTTS ${t.BTTS.pick}`, bttsP(tip, t.BTTS.pick));
+  if (ouK && !(v[ouK] && v[ouK].value != null)) model(PICK_LABEL[ouK], ouP(tip, ouK));
+  if (!items.length) return "";
+  return `<details class="tip-details"><summary>Detaljer</summary><ul>${items.join("")}</ul>
+    <p class="tip-details-note">EV = förväntat värde per spel. Krav = marginalen som krävs för Värde. Chans/krävs = facits chans mot den chans oddset kräver. Kortets snittchans: ${fmtChance(tip.tipScore)}.</p></details>`;
 }
 
 function tipCard(tip, i) {
@@ -257,9 +349,13 @@ function tipCard(tip, i) {
   const style = `animation-delay:${Math.min(i * 0.04, 0.4)}s`;
   const leagueShort = tip.league || "";
   const leagueFull = leagueName(tip.league);
-  const roundShort = tip.round
-    ? String(tip.round).replace(/^Matchday\s+/i, "Omg ")
-    : "";
+  // Bara riktiga omgångar ("Matchday 24" -> "Omg 24"); id-strängar som "2026-27-german-2-bundesliga" visas inte
+  const roundRaw = String(tip.round || "");
+  const roundShort = !roundRaw || /^\d{4}(-\d{2})?-[a-z]/i.test(roundRaw)
+    ? ""
+    : /^[a-z]+(-[a-z]+)+$/.test(roundRaw)
+      ? roundRaw.split("-").map(capFirst).join(" ") // "torneo-clausura" -> "Torneo Clausura"
+      : roundRaw.replace(/^Matchday\s+/i, "Omg ");
 
   const pick1 = t["1X2"]?.pick ?? "";
   const pickB = t.BTTS?.pick ?? "";
@@ -278,6 +374,7 @@ function tipCard(tip, i) {
   const confC = c?.confidence;
 
   tipIndex.set(tipId(tip), tip);
+  const pr = primaryOf(tip);
   const cornersRow = c
     ? `<tr data-mkt="CORNERS">
             <td class="mkt">Hörn ${escapeHtml(cornerLine)}</td>
@@ -295,7 +392,7 @@ function tipCard(tip, i) {
     : "";
 
   return `
-    <article class="tip" style="${style}" data-tip-id="${escapeHtml(tipId(tip))}">
+    <article class="tip${pr?.verdict === "yes" ? " has-value" : ""}" style="${style}" data-tip-id="${escapeHtml(tipId(tip))}">
       <header class="tip-head">
         <div class="tip-meta">
           <time class="date">${escapeHtml(fmtKick(tip))}</time>
@@ -309,14 +406,14 @@ function tipCard(tip, i) {
             ? `<button type="button" class="team-link" data-venue="home" title="Form, modellens träff och inbördes möten">${escapeHtml(tip.home)}</button> vs <button type="button" class="team-link" data-venue="away" title="Form, modellens träff och inbördes möten">${escapeHtml(tip.away)}</button>`
             : escapeHtml(tip.match || "")
         }</h3>
-        <div class="score-box" title="Samlad chans att tipset håller (snitt över marknaderna)">
-          <div class="n">${fmtChance(tip.tipScore)}</div>
-          <div class="l">chans</div>
+        <div class="score-box" title="Kortets främsta tips: marknaden med Värde om någon har det, annars den med högst chans. Snitt över marknaderna: ${fmtChance(tip.tipScore)}">
+          ${pr ? `<div class="n">${fmtChance(pr.p)}</div><div class="l">${escapeHtml(pr.label)}</div>${verdictBadge(pr)}` : `<div class="n">${fmtChance(tip.tipScore)}</div><div class="l">snitt chans</div>`}
         </div>
       </header>
       <div class="team-panel" hidden></div>
 
       <table class="tip-table">
+        <colgroup><col class="c-mkt" /><col class="c-odds" /><col class="c-num" /><col class="c-val" /></colgroup>
         <thead>
           <tr>
             <th>Marknad</th>
@@ -335,7 +432,8 @@ function tipCard(tip, i) {
                 { key: "away", label: "2", odd: od.two },
               ],
               pick1 === "1" ? "home" : pick1 === "X" ? "draw" : pick1 === "2" ? "away" : "",
-              "1X2"
+              "1X2",
+              ["home", "draw", "away"].filter((k) => tip.pro?.verdicts?.[k]?.value)
             )}</td>
             <td class="num">${fmtChance(conf1)}</td>
             ${valueCell(tip, pick1 === "1" ? "home" : pick1 === "X" ? "draw" : "away", ["home", "draw", "away"])}
@@ -361,21 +459,23 @@ function tipCard(tip, i) {
                 { key: "under", label: "U", odd: od.under },
               ],
               ouKey,
-              "OU25"
+              "OU25",
+              [["over", "over25"], ["under", "under25"]].filter(([, k]) => tip.pro?.verdicts?.[k]?.value).map(([key]) => key)
             )}</td>
             <td class="num">${fmtChance(confO)}</td>
-            ${valueCell(tip, ouKey === "over" ? "over25" : "under25", ["over25", "under25"])}
+            ${ouCell(tip, ouKey === "over" ? "over25" : "under25")}
           </tr>
           ${cornersRow}
         </tbody>
       </table>
       ${od.book ? `<div class="odds-src">Odds: ${escapeHtml(od.book)}</div>` : ""}
       ${noteLines(tip)}
+      ${detailsHtml(tip)}
       <div class="tip-analyze">
         <div class="tip-actions">
           <button type="button" class="btn-analyze" aria-expanded="false"
             data-league="${escapeHtml(tip.league || "")}" data-date="${escapeHtml(tip.date || "")}"
-            data-home="${escapeHtml(tip.home || "")}" data-away="${escapeHtml(tip.away || "")}">Analys · agent 1–6</button>
+            data-home="${escapeHtml(tip.home || "")}" data-away="${escapeHtml(tip.away || "")}">Analys</button>
           <button type="button" class="btn-lineup"
             data-league="${escapeHtml(tip.league || "")}" data-date="${escapeHtml(tip.date || "")}"
             data-home="${escapeHtml(tip.home || "")}" data-away="${escapeHtml(tip.away || "")}"
@@ -431,54 +531,135 @@ function groupByLeague(list) {
 }
 
 function groupHead(title, count) {
-  return `<h3 class="tip-group-head">${escapeHtml(title)}<span class="count">${count}</span></h3>`;
+  return `<h3 class="tip-group-head">${escapeHtml(title)}<span class="count"> · ${count} ${count === 1 ? "match" : "matcher"}</span></h3>`;
 }
 
-function renderList(el, list, emptyMsg, { top = false } = {}) {
-  const filtered = byLeague(list);
+/** En rad per match i Alla kandidater: tid, match, liga, främsta tips, odds, chans, omdöme. Klick fäller ut hela kortet. */
+function candRow(tip) {
+  tipIndex.set(tipId(tip), tip);
+  const pr = primaryOf(tip);
+  const odds = pr?.odds ? `<span class="cr-odds">@ ${escapeHtml(fmtOdd(pr.odds))}</span>` : "";
+  return `<details class="cand-row" data-tip-id="${escapeHtml(tipId(tip))}">
+    <summary>
+      <time class="cr-time" data-league="${escapeHtml(tip.league || "")}">${escapeHtml(fmtKick(tip))}</time>
+      <span class="cr-match">${escapeHtml(tip.home && tip.away ? `${tip.home} – ${tip.away}` : tip.match || "")}</span>
+      <span class="cr-league" title="${escapeHtml(leagueName(tip.league))}">${escapeHtml(tip.league || "")}</span>
+      <span class="cr-tip">${escapeHtml(pr?.label || "—")} ${odds}</span>
+      <span class="cr-chance">${pr ? fmtChance(pr.p) : "—"}</span>
+      <span class="cr-verdict">${verdictBadge(pr)}</span>
+    </summary>
+    <div class="cand-body"></div>
+  </details>`;
+}
+
+function renderList(el, list, emptyMsg, { top = false, limit = Infinity, compact = false } = {}) {
+  const all = byLeague(list);
+  const filtered = all.length > limit ? [...all].sort((a, b) => kickMs(a) - kickMs(b)).slice(0, limit) : all;
   if (!filtered.length) {
     el.innerHTML = `<div class="empty">${escapeHtml(emptyMsg)}</div>`;
     return;
   }
   let i = 0;
-  const card = (t) => tipCard(t, i++);
+  const card = compact ? (t) => candRow(t) : (t) => tipCard(t, i++);
   let html = "";
   let rest = filtered;
   if (top) {
     const { day, top: best } = topOfDay(filtered);
     if (best.length) {
       const today = new Date().toLocaleDateString("sv-SE");
-      const dayTxt = day === today
-        ? "idag"
-        : new Date(`${day}T12:00:00`).toLocaleDateString("sv-SE", { weekday: "short", day: "numeric", month: "short" });
-      html += groupHead(`Topp ${best.length} · ${dayTxt}`, best.length) + best.map(card).join("");
+      const d = new Date(`${day}T12:00:00`).toLocaleDateString("sv-SE", { weekday: "long", day: "numeric", month: "short" }).replace(/\.$/, "");
+      const dayTxt = day === today ? `Idag, ${d}` : d.charAt(0).toUpperCase() + d.slice(1);
+      html += groupHead(`${dayTxt} · dagens bästa`, best.length) + best.map(card).join("");
       rest = filtered.filter((t) => !best.includes(t));
     }
   }
   for (const [lg, tips] of groupByLeague(rest)) {
     html += groupHead(leagueName(lg), tips.length) + tips.map(card).join("");
   }
+  if (all.length > filtered.length) {
+    html += `<button type="button" class="btn-ghost btn-more" data-more>Visa fler (${filtered.length} av ${all.length})</button>`;
+  }
   el.innerHTML = html;
 }
 
-function renderTips() {
+// Alla kandidater kan vara flera hundra kort: renderas först när listan fälls ut, i omgångar
+const CAND_STEP = 30;
+let candLimit = CAND_STEP;
+
+function renderCandidates() {
+  const n = byLeague(state.allCandidates).length;
+  $("#cand-count").textContent = n ? `${n} st` : "";
+  if (!$("#cand-wrap").open) {
+    $("#candidates").innerHTML = "";
+    return;
+  }
   const selName = leagueName(state.league);
-  renderList(
-    $("#tips"),
-    state.bestUpcoming,
-    state.bestUpcoming.length
-      ? `Inga tips i ${selName} just nu.`
-      : "Inga kommande tips. Tryck på Hämta data.",
-    { top: true }
-  );
   renderList(
     $("#candidates"),
     state.allCandidates,
-    state.allCandidates.length
-      ? `Inga kandidater i ${selName}.`
-      : "Inga kommande kandidater."
+    state.allCandidates.length ? `Inga kandidater i ${selName}.` : "Inga kommande kandidater.",
+    { limit: candLimit, compact: true }
   );
 }
+
+let valueOnly = false;
+try {
+  valueOnly = localStorage.getItem("betting.valueOnly") === "1";
+} catch {
+  /* privat läge */
+}
+
+function syncValueFilter() {
+  const inLeague = byLeague(state.bestUpcoming);
+  $("#vf-all").textContent = inLeague.length;
+  $("#vf-value").textContent = inLeague.filter(hasValue).length;
+  document.querySelectorAll("#value-filter .vf-btn").forEach((b) => b.setAttribute("aria-pressed", String((b.dataset.vf === "value") === valueOnly)));
+}
+
+$("#value-filter").addEventListener("click", (e) => {
+  const b = e.target.closest(".vf-btn");
+  if (!b) return;
+  valueOnly = b.dataset.vf === "value";
+  try {
+    localStorage.setItem("betting.valueOnly", valueOnly ? "1" : "0");
+  } catch {
+    /* privat läge */
+  }
+  renderTips();
+});
+
+function renderTips() {
+  const selName = leagueName(state.league);
+  syncValueFilter();
+  const best = valueOnly ? state.bestUpcoming.filter(hasValue) : state.bestUpcoming;
+  renderList(
+    $("#tips"),
+    best,
+    valueOnly && state.bestUpcoming.length
+      ? `Inga tips med Värde i ${selName} just nu – välj Alla för att se alla tips.`
+      : state.bestUpcoming.length
+        ? `Inga tips i ${selName} just nu.`
+        : "Inga kommande tips. Tryck på Hämta data.",
+    { top: true }
+  );
+  candLimit = CAND_STEP;
+  renderCandidates();
+}
+
+$("#cand-wrap").addEventListener("toggle", (e) => {
+  if (e.target === $("#cand-wrap")) renderCandidates();
+});
+// Kandidatrad fälls ut: rendera hela kortet först då
+$("#candidates").addEventListener("toggle", (e) => {
+  const row = e.target.closest?.(".cand-row");
+  if (!row || e.target !== row || !row.open) return;
+  const body = row.querySelector(".cand-body");
+  const tip = tipIndex.get(row.dataset.tipId);
+  if (body && tip && !body.dataset.loaded) {
+    body.innerHTML = tipCard(tip, 0);
+    body.dataset.loaded = "1";
+  }
+}, true);
 
 function activeAccuracy() {
   if (state.league && state.league !== "ALL" && state.accuracyByLeague?.[state.league]) {
@@ -755,9 +936,29 @@ function setLeague(league, { keepGroup = false } = {}) {
   renderTips();
   renderAccuracy(activeAccuracy());
   const mc = $("#match-count");
-  if (mc && state._matchCount != null) {
-    mc.textContent = `${byLeague(state.bestUpcoming).length} tips · ${state._matchCount} i store`;
+  if (mc) mc.textContent = `${byLeague(state.bestUpcoming).length} tips`;
+}
+
+/** Statusraden: "Uppdaterad 28 sep 22:23 · 38 tips · Startelvor 0/56 klara". Äldre än 24 h = bärnsten. */
+function renderStatus(data) {
+  const up = $("#updated-at");
+  const d = new Date(data.updatedAt || "");
+  if (Number.isNaN(d.getTime())) {
+    up.textContent = "Uppdaterad –";
+  } else {
+    const when = d.toLocaleString("sv-SE", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" }).replace(/\./g, "");
+    const ageH = (Date.now() - d.getTime()) / 36e5;
+    const days = Math.floor(ageH / 24);
+    const ago = ageH < 24 ? "" : ` <span class="lbl-long">(${days === 1 ? "1 dag" : `${days} dagar`} sedan)</span><span class="lbl-short">(${days} d sedan)</span>`;
+    up.innerHTML = `<span class="lbl-long">Uppdaterad</span><span class="lbl-short">Uppd.</span> ${escapeHtml(when)}${ago}`;
+    up.classList.toggle("is-stale", ageH >= 24);
+    up.title = ageH >= 24 ? "Datan är mer än ett dygn gammal – tryck Hämta data" : "";
   }
+  $("#match-count").textContent = `${byLeague(state.bestUpcoming).length} tips`;
+  const lu = data.sources?.lineups;
+  $("#lineup-meta").innerHTML = `<span class="lbl-long">Startelvor</span><span class="lbl-short">Elvor</span> ${lu ? `${lu.confirmed}/${lu.fixtures ?? lu.confirmed + lu.pending}<span class="lbl-long"> klara</span>` : "–"}`;
+  $("#status-msg").textContent = data.message || data.status || "";
+  $("#status-bar").title = data.message || "";
 }
 
 async function loadDashboard() {
@@ -792,13 +993,7 @@ async function loadDashboard() {
 
   buildLeagueFilters(data.leagues || ["PL", "CH"]);
 
-  $("#updated-at").textContent = fmtWhen(data.updatedAt);
-  $("#status-msg").textContent = data.message || data.status || "—";
-  $("#match-count").textContent = `${byLeague(state.bestUpcoming).length} tips · ${state._matchCount} i store`;
-  const lu = data.sources?.lineups;
-  $("#lineup-meta").textContent = lu
-    ? `${lu.confirmed} bekräftade · ${lu.pending} pending`
-    : "—";
+  renderStatus(data);
 
   renderAccuracy(activeAccuracy());
   syncLeaguePills();
@@ -887,7 +1082,7 @@ async function toggleAnalysis(btn) {
   const open = btn.getAttribute("aria-expanded") === "true";
   btn.setAttribute("aria-expanded", String(!open));
   box.hidden = open;
-  btn.textContent = open ? "Analys · agent 1–6" : "Dölj analys";
+  btn.textContent = open ? "Analys" : "Dölj analys";
   if (open || box.dataset.loaded) return;
   box.innerHTML = `<p class="scan-empty">Agenterna analyserar…</p>`;
   try {
@@ -1257,6 +1452,11 @@ for (const id of ["#tips", "#candidates"]) {
       toggleMatchup(matchupBtn);
       return;
     }
+    if (e.target.closest("[data-more]")) {
+      candLimit += CAND_STEP;
+      renderCandidates();
+      return;
+    }
     const btn = e.target.closest(".btn-analyze");
     if (btn) toggleAnalysis(btn);
   });
@@ -1297,10 +1497,12 @@ function evTxt(ev) {
   return `${n > 0 ? "+" : ""}${n}%`;
 }
 
-function setScanButton(state, label) {
+function setScanButton(state, label, short = label) {
   const btn = $("#btn-scan");
   btn.dataset.state = state;
-  btn.querySelector(".btn-label").textContent = label;
+  const el = btn.querySelector(".btn-label");
+  el.innerHTML = `<span class="lbl-long">${escapeHtml(label)}</span><span class="lbl-short">${escapeHtml(short)}</span>`;
+  btn.title = label;
 }
 
 /** Knappens text säger hur det går: kör, antal BET/WAIT, eller fel. */
@@ -1308,14 +1510,14 @@ function scanButtonFromResult(result, st) {
   if (st?.running) {
     const p = st.progress;
     const pctDone = p?.total ? Math.round((p.step / p.total) * 100) : 0;
-    return setScanButton("running", `Scannar… ${pctDone}%`);
+    return setScanButton("running", `Scannar… ${pctDone}%`, `${pctDone}%`);
   }
   if (st?.ok === false) return setScanButton("error", "Scanner: fel");
-  if (!result) return setScanButton("idle", "Daily Scanner");
+  if (!result) return setScanButton("idle", "Daily Scanner", "Scanner");
   const s = result.summary || {};
-  if (s.bet) return setScanButton("bet", `Scanner: ${s.bet} BET`);
-  if (s.wait) return setScanButton("wait", `Scanner: ${s.wait} WAIT`);
-  return setScanButton("idle", "Scanner: inga spel");
+  if (s.bet) return setScanButton("bet", `Scanner: ${s.bet} BET`, `Scanner ${s.bet}`);
+  if (s.wait) return setScanButton("wait", `Scanner: ${s.wait} WAIT`, `Scanner ${s.wait}`);
+  return setScanButton("idle", "Scanner: inga spel", "Scanner 0");
 }
 
 function renderScanProgress(st) {
@@ -1569,7 +1771,7 @@ $("#scan-run").addEventListener("click", () => runScan().catch((e) => ($("#scan-
 $("#scan-close").addEventListener("click", () => ($("#scan-panel").hidden = true));
 
 syncLeaguePills();
-loadScan().catch(() => setScanButton("idle", "Daily Scanner"));
+loadScan().catch(() => setScanButton("idle", "Daily Scanner", "Scanner"));
 loadDashboard().catch((e) => {
   $("#tips").innerHTML = `<div class="empty">${escapeHtml(e.message || e)}</div>`;
 });
