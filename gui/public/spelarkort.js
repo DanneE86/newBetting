@@ -226,7 +226,7 @@ function allStatsHtml(ctx, a, b) {
   return `<details class="pc-all" open><summary>Alla stats (${keys.size} nyckeltal)</summary>
     <p class="pc-legend"><span class="pc-sw pc-hi"></span>bra (topp tredjedel i ligan) <span class="pc-sw pc-mid"></span>medel <span class="pc-sw pc-lo"></span>svagt (botten tredjedel)${b ? ' · <b>▲</b> = tydligt bättre än den andra' : ""}</p>
     <p class="pc-sub">Huvudtalet är per 90 minuter, det lilla är totalt för säsongen. Stapeln och percentilen jämför mot samma position i spelarens egen liga.</p>
-    <div class="pc-table-wrap"><table class="pc-table"><thead>${head}</thead><tbody>${body}</tbody></table></div></details>`;
+    <div class="pc-table-wrap"><table class="pc-table ds-table"><thead>${head}</thead><tbody>${body}</tbody></table></div></details>`;
 }
 
 function headHtml(p, cls = "pc-c-p1") {
@@ -241,14 +241,14 @@ function vsPicker(ctx, p, vs) {
   const others = Object.values(ctx.players).filter((x) => x.key !== p.key);
   // Förslag: samma position, motståndarlaget först
   const sugg = others.filter((x) => x.group === p.group).sort((x, y) => Number(x.team === p.team) - Number(y.team === p.team)).slice(0, 4);
-  const chips = sugg.map((x) => `<button type="button" class="pc-chip${vs?.key === x.key ? " is-on" : ""}" data-pc-vs="${esc(x.key)}">${esc(x.short || x.name)} <small>${esc(x.teamName || "")}</small></button>`).join("");
+  const chips = sugg.map((x) => `<button type="button" class="pc-chip ds-toggle${vs?.key === x.key ? " is-on" : ""}" data-pc-vs="${esc(x.key)}">${esc(x.short || x.name)} <small>${esc(x.teamName || "")}</small></button>`).join("");
   const opt = (team) => others.filter((x) => x.team === team).map((x) => `<option value="${esc(x.key)}"${vs?.key === x.key ? " selected" : ""}>${esc(`${x.name} – ${(x.posLabel || GROUP_LABEL[x.group] || "").toLowerCase()}`)}</option>`).join("");
   const teamName = (team) => others.find((x) => x.team === team)?.teamName || (team === "home" ? "Hemma" : "Borta");
   return `<div class="pc-vs"><span class="pc-sub">Jämför med:</span>${chips}
-    <select data-pc-vs-select aria-label="Jämför med valfri spelare"><option value="">Välj spelare…</option>
+    <select class="ds-select" data-pc-vs-select aria-label="Jämför med valfri spelare"><option value="">Välj spelare…</option>
       <optgroup label="${esc(teamName(p.team === "home" ? "away" : "home"))}">${opt(p.team === "home" ? "away" : "home")}</optgroup>
       <optgroup label="${esc(teamName(p.team))}">${opt(p.team)}</optgroup></select>
-    ${vs ? '<button type="button" class="pc-chip" data-pc-solo>Bara mot ligan</button>' : ""}</div>`;
+    ${vs ? '<button type="button" class="pc-chip ds-toggle" data-pc-solo>Bara mot ligan</button>' : ""}</div>`;
 }
 
 const noStats = (p) => !!p && !Object.keys(p.stats || {}).length;
@@ -263,9 +263,9 @@ function cardHtml(ctx) {
   const diffLeague = vs && leagueOf(p) !== leagueOf(vs)
     ? `<p class="pc-sub pc-warn">Olika ligor (${esc(p.statsFrom)} / ${esc(vs.statsFrom)}): percentilerna mäts mot respektive liga.</p>` : "";
   const posNote = vs && vs.group !== p.group ? `<p class="pc-sub">Spindeln visar ${esc((GROUP_LABEL[p.group] || "").toLowerCase())}ens områden; ${esc(vs.short || vs.name)} mäts mot sin egen position.</p>` : "";
-  return `<section class="pc-card" aria-label="${esc(`Spelarkort ${p.name}`)}">
+  return `<section class="pc-card ds-dialog" aria-label="${esc(`Spelarkort ${p.name}`)}">
     <div class="pc-top"><h4>${esc(p.name)}${vs ? ` mot ${esc(vs.name)}` : " mot ligan"}</h4>
-      <button type="button" class="pc-close" data-pc-close aria-label="Stäng spelarkortet">✕</button></div>
+      <button type="button" class="pc-close ds-btn ds-btn--secondary" data-pc-close aria-label="Stäng spelarkortet">✕</button></div>
     <div class="pc-heads">${headHtml(p, ca)}${vs ? headHtml(vs, cb) : ""}</div>
     <div class="pc-summary"><b>Kort sagt:</b> ${vs ? esc(pairSummary(p, vs, axes)) : soloSummary(ctx, p)}</div>
     ${diffLeague}${posNote}

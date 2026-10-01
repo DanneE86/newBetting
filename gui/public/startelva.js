@@ -258,7 +258,7 @@ function compareHtml(v, s) {
     ${radarSvg(a, b)}
     <div class="se-aspects">${aspects}</div>
     ${c.note ? `<p class="se-note se-warn">${esc(c.note)}</p>` : ""}
-    ${rows ? `<div class="se-table-wrap"><table class="se-table">
+    ${rows ? `<div class="se-table-wrap"><table class="se-table ds-table">
       <thead><tr><th scope="col">Per 90 minuter</th><th scope="col"><span class="se-dot se-home"></span>${esc(a.short)}</th><th scope="col"><span class="se-dot se-away"></span>${esc(b.short)}</th></tr></thead>
       <tbody>${rows}</tbody></table></div>` : ""}
     <h4 class="se-h">Lyckade prestationer – säsongen</h4>
@@ -348,7 +348,7 @@ function freeHtml(v, s) {
     <div class="se-summary"><p><b>Kort sagt:</b> ${esc(head)}</p></div>
     ${leagueWarn}
     <div class="se-two">${playerHead(a, teamName(a))}${playerHead(b, teamName(b))}</div>
-    ${rows ? `<div class="se-table-wrap"><table class="se-table">
+    ${rows ? `<div class="se-table-wrap"><table class="se-table ds-table">
       <thead><tr><th scope="col">Per 90 minuter</th><th scope="col"><span class="se-key ${ca}"></span>${esc(a.short)}</th><th scope="col"><span class="se-key ${cb}"></span>${esc(b.short)}</th></tr></thead>
       <tbody>${rows}</tbody></table></div>` : ""}
     <h4 class="se-h">Lyckade prestationer – säsongen</h4>
