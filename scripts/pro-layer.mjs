@@ -431,7 +431,7 @@ function applyMarketLed(t) {
   }
   t.marketLed = true;
   t.marketLedNote = ml.kind === 'backtest'
-    ? `Oddsen (${ml.source}) styr tipset – de var bättre än modellen i backtest (${ml.n} matcher)${ml.modelW ? `, modellen väger ${Math.round(ml.modelW * 100)} %` : ''}`
+    ? `Oddsen (${String(ml.source).replace(/^./, (c) => c.toUpperCase())}) styr tipset – de var bättre än modellen i backtest (${ml.n} matcher)${ml.modelW ? `, modellen väger ${Math.round(ml.modelW * 100)} %` : ''}`
     : `Tidig säsong – marknadens chans (${ml.source}) styr tipset tills lagen spelat ${ml.rounds} ligamatcher`;
 }
 

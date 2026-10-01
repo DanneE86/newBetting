@@ -37,6 +37,14 @@ function read(file) {
 
 /** Returnerar true om requesten hanterades. */
 export function handleStryktips(req, res, url, root) {
+  // Live-streck: samma Cloudflare-funktion som på webben, så kupongen byggs på aktuella streck även lokalt
+  if (req.method === "GET" && url.pathname === "/live/svs") {
+    import("../functions/live/svs.js")
+      .then((m) => m.onRequestGet({ request: new Request(url.href) }))
+      .then(async (r) => send(res, r.status, await r.json()))
+      .catch((e) => send(res, 502, { error: String(e.message || e) }));
+    return true;
+  }
   if (!url.pathname.startsWith("/api/stryktips")) return false;
   const file = path.join(root, "data", "stryktipset.json");
 

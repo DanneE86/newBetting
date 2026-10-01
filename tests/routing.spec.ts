@@ -67,9 +67,9 @@ test('Stryktipset: en sida, egna krav genererar kupong A och B', async ({ page }
   await expect(rows).toHaveCount(13);
   // Kupongen genereras direkt, utan krav
   await expect(page.locator('.sb-table tbody tr')).toHaveCount(13);
-  // A och B skiljer sig: högst 2 identiska spikar, aldrig samma halv- eller helgardering
+  // A och B skiljer sig: högst 1 identisk spik, aldrig samma halv- eller helgardering
   const pairs = await page.locator('.sb-table tbody tr').evaluateAll((trs) => trs.map((tr) => [tr.children[2].textContent!.trim(), tr.children[3].textContent!.trim()]));
-  expect(pairs.filter(([a, b]) => a === b && a.split('+').length === 1).length).toBeLessThanOrEqual(2);
+  expect(pairs.filter(([a, b]) => a === b && a.split('+').length === 1).length).toBeLessThanOrEqual(1);
   expect(pairs.filter(([a, b]) => a === b && a.split('+').length > 1).length).toBe(0);
   // Klick på turmatch fäller ut en förklaring i enkla ord
   const turBtn = page.locator('.sb-list .tur-btn').first();
@@ -94,6 +94,12 @@ test('Stryktipset: en sida, egna krav genererar kupong A och B', async ({ page }
   await page.click('#sb-generate');
   const table = page.locator('.sb-table tbody tr');
   await expect(table).toHaveCount(13);
+  // Tabellen ligger först, kupongkorten (med Gambling Cabin-länkarna) under den
+  const order = await page.locator('.sb-result').evaluate((el) => {
+    const t = el.querySelector('.sb-table')!, c = el.querySelector('.sb-coupons')!;
+    return !!(t.compareDocumentPosition(c) & Node.DOCUMENT_POSITION_FOLLOWING);
+  });
+  expect(order).toBe(true);
   await expect(table.nth(0).locator('td').nth(1)).toHaveText('🔒 X');
   await expect(table.nth(0).locator('td').nth(2)).toHaveText('🔒 X');
   await expect(table.nth(3).locator('td').nth(2)).toHaveText('🔒 1');
@@ -121,7 +127,8 @@ test('Stryktipset: en sida, egna krav genererar kupong A och B', async ({ page }
   await expect(table.nth(7).locator('td').nth(1)).not.toContainText('🔒');
   await expect(table.nth(7).locator('td').nth(2)).not.toContainText('🔒');
   await rows.nth(7).locator('.sb-sign[data-sign="2"]').click();
-  // Turmatcher och vanliga missar visas
+  // Turmatcher och vanliga missar visas (historiken ligger i den hopfällda sektionen "Statistik & historik")
+  await page.locator('.st-history > summary').click();
   await expect(page.locator('.st-miss')).toContainText('Vanliga missar');
   await expect(page.locator('.st-miss-table tbody tr').first()).toBeVisible();
   // Matchkorten visar B-kupongens tecken (även när hämtningens system är delat)

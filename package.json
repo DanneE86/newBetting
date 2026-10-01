@@ -44,6 +44,7 @@
     "test:e2e": "playwright test --project=e2e-screenshots",
     "test:players": "playwright test --project=player-stats",
     "test:unit": "playwright test --project=unit-data",
+    "test:lib": "playwright test --project=lib-units",
     "report:tips": "playwright test --project=e2e-screenshots -g \"screenshot: lokal tipsrapport\"",
     "trello:close-done": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Close-TrelloDone.ps1",
     "ralph": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/ralph-iterate.ps1",

@@ -49,6 +49,10 @@ export default defineConfig({
       testMatch: /player-stats\.spec\.ts/,
     },
     {
+      name: 'lib-units',
+      testMatch: /lib-units\.spec\.ts/,
+    },
+    {
       name: 'e2e-screenshots',
       testMatch: /e2e-fetch-screenshots\.spec\.ts/,
     },

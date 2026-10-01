@@ -158,7 +158,7 @@ function lineupPosition(abbr) {
   const side = /(^L|-L$)/.test(a) ? 'L' : /(^R|-R$)/.test(a) ? 'R' : null;
   if (/^G/.test(a)) return { group: 'malvakt', side: null, exact: true };
   if (/WB|^LB|^RB/.test(a)) return { group: 'ytterback', side, exact: true };
-  if (/^CD|^CB|^SW/.test(a)) return { group: 'mittback', side: null, exact: true };
+  if (/^CD(?!M)|^CB|^SW/.test(a)) return { group: 'mittback', side: null, exact: true };
   if (/^DM|^CDM/.test(a)) return { group: 'defensiv_mittfaltare', side: null, exact: true };
   if (/^AM|^CAM/.test(a)) return { group: side ? 'ytter' : 'offensiv_mittfaltare', side, exact: true };
   if (/^LW|^RW|^LM|^RM/.test(a)) return { group: 'ytter', side, exact: true };
@@ -679,3 +679,6 @@ function strip(d, rename = (s) => s) {
   return { ...d, label: rename(d.label), why: d.why.map(rename), diff: r(d.diff),
     attack: { team: d.attack.team, score: r(d.attack.score) }, defend: { team: d.defend.team, score: r(d.defend.score) } };
 }
+
+// Interna delar för enhetstesterna (tests/lib-units.spec.ts)
+export const _internal = { statSource, pct, score, sideOf, lineupPosition, predictedXI, findPlayer, officialXI, shape, edgeText, verdictFor, fmtVal };

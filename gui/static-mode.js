@@ -59,6 +59,6 @@
   };
 
   const style = document.createElement("style");
-  style.textContent = `#btn-fetch, #scan-run, .btn-lineup, #st-fetch { display: none !important; }`;
+  style.textContent = `#btn-fetch, #scan-run, .btn-lineup, #st-fetch, #foot-local { display: none !important; }`;
   document.head.appendChild(style);
 })();
