@@ -57,6 +57,10 @@ export default defineConfig({
       testMatch: /gui-sok-startelva\.spec\.ts/,
     },
     {
+      name: 'design',
+      testMatch: /design-tokens\.spec\.ts/,
+    },
+    {
       name: 'e2e-screenshots',
       testMatch: /e2e-fetch-screenshots\.spec\.ts/,
     },
