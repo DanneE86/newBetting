@@ -438,7 +438,7 @@ function tipCard(tip, i) {
         </div>
         <h3 class="match">${
           tip.home && tip.away
-            ? `<button type="button" class="team-link" data-venue="home" title="Form, modellens träff och inbördes möten">${escapeHtml(tip.home)}</button> vs <button type="button" class="team-link" data-venue="away" title="Form, modellens träff och inbördes möten">${escapeHtml(tip.away)}</button>`
+            ? `<button type="button" class="team-link" data-venue="home" title="Form, modellens träff och inbördes möten">${escapeHtml(tip.home)}</button> – <button type="button" class="team-link" data-venue="away" title="Form, modellens träff och inbördes möten">${escapeHtml(tip.away)}</button>`
             : escapeHtml(tip.match || "")
         }</h3>
         <div class="score-box" title="Kortets främsta tips: marknaden med Värde om någon har det, annars den med högst chans. Snitt över marknaderna: ${fmtChance(tip.tipScore)}">
@@ -620,7 +620,7 @@ function renderList(el, list, emptyMsg, { top = false, limit = Infinity, compact
     html += groupHead(leagueName(lg), tips.length) + tips.map(card).join("");
   }
   if (all.length > filtered.length) {
-    html += `<button type="button" class="btn-ghost btn-more" data-more>Visa fler (${filtered.length} av ${all.length})</button>`;
+    html += `<button type="button" class="btn-ghost ds-btn ds-btn--secondary btn-more" data-more>Visa fler (${filtered.length} av ${all.length})</button>`;
   }
   el.innerHTML = html;
 }
@@ -966,21 +966,21 @@ function buildLeagueFilters(leagues) {
   if (!host) return;
   const present = new Set((leagues || []).filter(Boolean));
   const grouped = new Set();
-  const pills = [`<button type="button" class="filter-pill" data-league="ALL">Alla</button>`];
+  const pills = [`<button type="button" class="filter-pill ds-toggle" data-league="ALL">Alla</button>`];
   for (const g of state.leagueGroups) {
     const ls = g.leagues.filter((l) => present.has(l));
     ls.forEach((l) => grouped.add(l));
     if (!ls.length) continue;
     const n = countFor(ls);
     if (ls.length > 1) {
-      pills.push(`<button type="button" class="filter-pill is-group" data-group="${escapeHtml(g.id)}" aria-expanded="${state.openGroup === g.id}">${escapeHtml(g.name)}<span class="count">${n}</span></button>`);
+      pills.push(`<button type="button" class="filter-pill ds-toggle is-group" data-group="${escapeHtml(g.id)}" aria-expanded="${state.openGroup === g.id}">${escapeHtml(g.name)}<span class="count">${n}</span></button>`);
     } else {
-      pills.push(`<button type="button" class="filter-pill" data-league="${escapeHtml(ls[0])}" title="${escapeHtml(leagueName(ls[0]))}">${escapeHtml(g.name)}<span class="count">${n}</span></button>`);
+      pills.push(`<button type="button" class="filter-pill ds-toggle" data-league="${escapeHtml(ls[0])}" title="${escapeHtml(leagueName(ls[0]))}">${escapeHtml(g.name)}<span class="count">${n}</span></button>`);
     }
   }
   // Ligor som inte finns i någon grupp
   for (const l of present) {
-    if (!grouped.has(l)) pills.push(`<button type="button" class="filter-pill" data-league="${escapeHtml(l)}">${escapeHtml(leagueName(l))}<span class="count">${countFor([l])}</span></button>`);
+    if (!grouped.has(l)) pills.push(`<button type="button" class="filter-pill ds-toggle" data-league="${escapeHtml(l)}">${escapeHtml(leagueName(l))}<span class="count">${countFor([l])}</span></button>`);
   }
   host.innerHTML = pills.join("");
   renderLeagueSub(present);
@@ -993,7 +993,7 @@ function renderLeagueSub(present) {
   if (!sub) return;
   const g = state.leagueGroups.find((x) => x.id === state.openGroup);
   const ls = g ? g.leagues.filter((l) => !present || present.has(l)) : [];
-  const refPill = () => `<button type="button" class="filter-pill ref-pill${state.refView?.open ? " active" : ""}" data-refleague aria-expanded="${!!state.refView?.open}" title="Ligans domare: dömda matcher, gula, röda, straffar och frisparkar mot ligasnittet">⚖ Domare</button>`;
+  const refPill = () => `<button type="button" class="filter-pill ds-toggle ref-pill${state.refView?.open ? " active" : ""}" data-refleague aria-expanded="${!!state.refView?.open}" title="Ligans domare: dömda matcher, gula, röda, straffar och frisparkar mot ligasnittet">⚖ Domare</button>`;
   if (!g || ls.length < 2) {
     // Enskild liga vald (t.ex. Frankrike): raden visar bara Domare-knappen
     if (state.league && state.league !== "ALL" && hasRefData(state.league)) {
@@ -1008,7 +1008,7 @@ function renderLeagueSub(present) {
   }
   sub.hidden = false;
   sub.innerHTML = ls
-    .map((l) => `<button type="button" class="filter-pill" data-league="${escapeHtml(l)}">${escapeHtml(leagueName(l))}<span class="count">${countFor([l])}</span></button>`)
+    .map((l) => `<button type="button" class="filter-pill ds-toggle" data-league="${escapeHtml(l)}">${escapeHtml(leagueName(l))}<span class="count">${countFor([l])}</span></button>`)
     .join("") + (ls.some((l) => hasRefData(l)) ? refPill() : "");
 }
 
@@ -1094,7 +1094,7 @@ function showLoading() {
 
 function showLoadError(e) {
   $("#tips").setAttribute("aria-busy", "false");
-  $("#tips").innerHTML = `<div class="load-error" role="alert"><span>Kunde inte hämta tipsen: ${escapeHtml(e?.message || e)}</span><button type="button" class="btn-ghost" data-retry>Försök igen</button></div>`;
+  $("#tips").innerHTML = `<div class="load-error" role="alert"><span>Kunde inte hämta tipsen: ${escapeHtml(e?.message || e)}</span><button type="button" class="btn-ghost ds-btn ds-btn--secondary ds-btn--sm" data-retry>Försök igen</button></div>`;
   const bar = $("#status-bar");
   bar.classList.remove("is-loading");
   bar.classList.add("is-error");
@@ -1270,9 +1270,9 @@ function renderLeagueSearch() {
   const pills = [
     ...res.groups.map((g) => {
       const ls = g.leagues.filter((l) => presentLeagues().has(l));
-      return `<button type="button" class="filter-pill is-country" data-search-group="${escapeHtml(g.id)}" title="${escapeHtml(ls.map(leagueName).join(", "))}">${escapeHtml(g.name)}<small>${ls.length > 1 ? `${ls.length} ligor` : escapeHtml(leagueName(ls[0]))}</small><span class="count">${countFor(ls)}</span></button>`;
+      return `<button type="button" class="filter-pill ds-toggle is-country" data-search-group="${escapeHtml(g.id)}" title="${escapeHtml(ls.map(leagueName).join(", "))}">${escapeHtml(g.name)}<small>${ls.length > 1 ? `${ls.length} ligor` : escapeHtml(leagueName(ls[0]))}</small><span class="count">${countFor(ls)}</span></button>`;
     }),
-    ...res.leagues.map(({ l, g }) => `<button type="button" class="filter-pill${state.league === l ? " active" : ""}" data-search-league="${escapeHtml(l)}">${escapeHtml(leagueName(l))}${g && g.name !== leagueName(l) ? `<small>${escapeHtml(g.name)}</small>` : ""}<span class="count">${countFor([l])}</span></button>`),
+    ...res.leagues.map(({ l, g }) => `<button type="button" class="ds-toggle filter-pill${state.league === l ? " active" : ""}" data-search-league="${escapeHtml(l)}">${escapeHtml(leagueName(l))}${g && g.name !== leagueName(l) ? `<small>${escapeHtml(g.name)}</small>` : ""}<span class="count">${countFor([l])}</span></button>`),
   ];
   box.innerHTML = pills.length ? pills.join("") : `<span class="league-search-empty">Inget land eller liga med matcher heter "${escapeHtml(q.trim())}"</span>`;
 }
@@ -1501,7 +1501,7 @@ function matchupHtml(m, cardId = null) {
     <div class="mx-head">
       <div><b>${escapeHtml(H)} – ${escapeHtml(A)}</b> <span class="mx-sub">${escapeHtml(fmtKick(m))}</span></div>
       <div class="mx-head-r"><span class="mx-chip ${official ? "mx-chip-ok" : ""}">${escapeHtml(xiTxt)}</span>
-        <button type="button" class="btn-ghost mx-print" title="Skriv ut duellanalysen">Skriv ut</button></div>
+        <button type="button" class="btn-ghost ds-btn ds-btn--secondary ds-btn--sm mx-print" title="Skriv ut duellanalysen">Skriv ut</button></div>
     </div>
     <div class="scan-body">
       <div class="agent-box agent-wide"><h4>${escapeHtml(xiTxt)}${official ? "" : " · minuter i de senaste 5 matcherna"}</h4>
@@ -1685,7 +1685,7 @@ function refTableInner(id) {
   return `<div class="rf-controls">
       <span class="tp-k">Sortera</span>${Object.entries(RF_SORT).map(([k, s]) => `<button type="button" class="rf-chip${t.sort === k ? " on" : ""}" data-rf-sort="${k}">${s.label}${t.sort === k ? (t.dir < 0 ? " ▼" : " ▲") : ""}</button>`).join("")}
       <span class="tp-k">Filter</span>${Object.entries(RF_FILTER).map(([k, f]) => `<button type="button" class="rf-chip${t.filters.has(k) ? " on" : ""}" data-rf-filter="${k}" aria-pressed="${t.filters.has(k)}">${f.label}</button>`).join("")}
-      <label class="rf-min">Minst <select data-rf-min>${[1, 5, 10, 20].map((n) => `<option value="${n}"${t.min === n ? " selected" : ""}>${n}</option>`).join("")}</select> matcher</label>
+      <label class="rf-min">Minst <select class="ds-select" data-rf-min>${[1, 5, 10, 20].map((n) => `<option value="${n}"${t.min === n ? " selected" : ""}>${n}</option>`).join("")}</select> matcher</label>
     </div>
     <div class="rf-table-wrap"><table class="rf-table">
       <thead><tr><th>Domare</th>${th("matches", "Matcher")}<th class="num">Gula</th>${th("yellow", "Gula/m")}<th class="num">Röda</th>${th("red", "Röda/m")}<th class="num">Straffar</th>${th("pen", "Straffar/m")}${th("fouls", "Frisp./m")}${th("home", "Hemmaseger")}${teamTh}</tr></thead>
@@ -1794,7 +1794,7 @@ async function renderRefLeague() {
     const d = refLeagueCache.get(league);
     host.innerHTML = `${tabs}<div class="rf-wrap">
       <div class="mx-head"><div><span class="mx-k">Domare</span> <b class="rf-name">${escapeHtml(leagueName(league))}</b> <span class="mx-sub">${(d.referees || []).length} domare · ligamatcher sedan ${seasonSv(d.since, d.calendar)}</span></div>
-        <button type="button" class="btn-ghost rf-close" data-ref-close>Stäng</button></div>
+        <button type="button" class="btn-ghost ds-btn ds-btn--secondary ds-btn--sm rf-close" data-ref-close>Stäng</button></div>
       ${refAppointments(d)}
       <h4 class="rf-h">Ligasnitt</h4>
       ${refStatTiles(null, d.leagueAvg || {})}
@@ -1896,7 +1896,7 @@ function teamPanelHtml(d) {
     .join("");
   return `
     <div class="tp-head"><b>${escapeHtml(d.team)}</b> <span class="tp-sub">säsong ${escapeHtml(d.season)} · ${d.league}</span>
-      <button type="button" class="btn-ghost tp-close" aria-label="Stäng">Stäng</button></div>
+      <button type="button" class="btn-ghost ds-btn ds-btn--secondary ds-btn--sm tp-close" aria-label="Stäng">Stäng</button></div>
     ${formRow(`${venueTxt}form`, d.venueForm)}
     ${formRow("Alla matcher", d.form)}
     <div class="tp-row"><span class="tp-k">Modellen</span>
@@ -2122,7 +2122,7 @@ function researchBox(m) {
   const status = r.lineupStatus || "none";
   const form =
     r.homeFormation || r.awayFormation
-      ? `${escapeHtml(r.homeFormation || "?")} vs ${escapeHtml(r.awayFormation || "?")}`
+      ? `${escapeHtml(r.homeFormation || "?")} – ${escapeHtml(r.awayFormation || "?")}`
       : null;
   const xi = (label, names) =>
     names?.length
@@ -2135,7 +2135,7 @@ function researchBox(m) {
       status === "confirmed" && (r.homeStarters?.length || r.awayStarters?.length)
         ? `<div class="xi-grid">${xi("Hemma", r.homeStarters)}${xi("Borta", r.awayStarters)}</div>`
         : status === "pending"
-          ? `<p class="scan-empty">Elvor ej släppta än — tryck “Hämta elva” igen närmare kickoff.</p>`
+          ? `<p class="scan-empty">Elvor ej släppta än – tryck “Hämta elva” igen närmare kickoff.</p>`
           : `<p class="scan-empty">Ingen elva i cache. Tryck “Hämta elva” för just den här matchen.</p>`
     }`;
 }
@@ -2160,7 +2160,7 @@ function agentBody(m, { withVerdict = false } = {}) {
     )
     .join("");
   const verdictTxt = withVerdict
-    ? ` — <span class="verdict ${vcls}">${escapeHtml(h.verdict)}</span> confidence ${escapeHtml(h.confidence)}`
+    ? ` – <span class="verdict ${vcls}">${escapeHtml(h.verdict)}</span> confidence ${escapeHtml(h.confidence)}`
     : "";
   return `
       <div class="scan-body">
@@ -2199,7 +2199,7 @@ function agentBody(m, { withVerdict = false } = {}) {
           }
         </div>
         <div class="agent-box agent-wide">
-          <h4>Agent 5 · Devil's Advocate — <span class="${resCls}">${escapeHtml(m.devil.residual)}</span></h4>
+          <h4>Agent 5 · Devil's Advocate – <span class="${resCls}">${escapeHtml(m.devil.residual)}</span></h4>
           ${agentList([...m.devil.attacks, ...m.devil.fragile], "Inga invändningar")}
         </div>
       </div>`;

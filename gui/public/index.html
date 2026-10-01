@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Betting — tips & data</title>
+  <title>Betting – tips & data</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/tokens.css" />
   <link rel="stylesheet" href="/styles.css" />
   <link rel="stylesheet" href="/stryktips.css" />
@@ -22,22 +22,22 @@
       <p class="tagline">Lokala tips drivna av ClubElo, spelardata, xG och ESPN-elvor.</p>
     </div>
     <div class="actions">
-      <button type="button" id="btn-fetch" class="btn-fetch">
+      <button type="button" id="btn-fetch" class="btn-fetch ds-btn ds-btn--primary">
         <span class="btn-glow" aria-hidden="true"></span>
         <span class="btn-label">Hämta data</span>
       </button>
-      <button type="button" id="btn-scan" class="btn-scan" aria-controls="scan-panel">
+      <button type="button" id="btn-scan" class="btn-scan ds-btn ds-btn--secondary" aria-controls="scan-panel">
         <span class="scan-dot" aria-hidden="true"></span>
         <span class="btn-label">Daily Scanner</span>
       </button>
-      <button type="button" id="btn-refresh" class="btn-ghost">Uppdatera vy</button>
+      <button type="button" id="btn-refresh" class="btn-ghost ds-btn ds-btn--secondary">Uppdatera vy</button>
     </div>
   </header>
 
-  <nav class="view-tabs" role="tablist" aria-label="Vy">
-    <button type="button" role="tab" class="view-tab active" data-view="tips" aria-selected="true">Tips</button>
-    <button type="button" role="tab" class="view-tab" data-view="stryktipset" aria-selected="false">Stryktipset</button>
-    <button type="button" role="tab" class="view-tab" data-view="europatipset" aria-selected="false">Europatipset</button>
+  <nav class="view-tabs ds-tabs" role="tablist" aria-label="Vy">
+    <button type="button" role="tab" class="view-tab ds-tab active" data-view="tips" aria-selected="true">Tips</button>
+    <button type="button" role="tab" class="view-tab ds-tab" data-view="stryktipset" aria-selected="false">Stryktipset</button>
+    <button type="button" role="tab" class="view-tab ds-tab" data-view="europatipset" aria-selected="false">Europatipset</button>
   </nav>
 
   <section class="st-view" id="stryktips-view" hidden aria-live="polite"></section>
@@ -58,7 +58,7 @@
     <div class="acc-detail-inner">
       <header class="acc-detail-head">
         <h3 id="acc-detail-title">Chansband</h3>
-        <button type="button" class="btn-ghost" id="acc-detail-close" aria-label="Stäng">Stäng</button>
+        <button type="button" class="btn-ghost ds-btn ds-btn--secondary ds-btn--sm" id="acc-detail-close" aria-label="Stäng">Stäng</button>
       </header>
       <p class="acc-detail-lead" id="acc-detail-lead"></p>
       <div class="acc-bands" id="acc-bands"></div>
@@ -70,11 +70,11 @@
     <span class="filters-label">Liga</span>
     <label class="league-search">
       <span class="sr-only">Sök land eller liga</span>
-      <input type="search" id="league-search" placeholder="Sök land eller liga" autocomplete="off" spellcheck="false" />
+      <input type="search" id="league-search" class="ds-input" placeholder="Sök land eller liga" autocomplete="off" spellcheck="false" />
     </label>
     <div class="filter-pills" id="league-results" role="group" aria-label="Sökträffar" aria-live="polite" hidden></div>
     <div class="filter-pills" id="league-filters" role="group">
-      <button type="button" class="filter-pill active" data-league="ALL">Alla</button>
+      <button type="button" class="filter-pill ds-toggle active" data-league="ALL">Alla</button>
     </div>
     <div class="filter-sub" id="league-sub" role="group" aria-label="Välj turnering" hidden></div>
     <div class="ref-league" id="ref-league" aria-live="polite" hidden></div>
@@ -97,13 +97,13 @@
       </div>
       <div class="scan-controls">
         <label for="scan-days">Horisont</label>
-        <select id="scan-days">
+        <select id="scan-days" class="ds-select">
           <option value="2">2 dagar</option>
           <option value="7" selected>7 dagar</option>
           <option value="14">14 dagar</option>
         </select>
-        <button type="button" id="scan-run" class="btn-ghost">Kör scan</button>
-        <button type="button" id="scan-close" class="btn-ghost" aria-label="Stäng scanner">Stäng</button>
+        <button type="button" id="scan-run" class="btn-ghost ds-btn ds-btn--secondary">Kör scan</button>
+        <button type="button" id="scan-close" class="btn-ghost ds-btn ds-btn--secondary" aria-label="Stäng scanner">Stäng</button>
       </div>
     </header>
     <div class="scan-status" id="scan-status">
@@ -118,8 +118,8 @@
     <div class="section-head section-head-row">
       <h2>Bästa tips <button type="button" class="help-i" id="help-chans-btn" aria-expanded="false" aria-controls="help-chans" title="Vad betyder chans?">ⓘ<span class="help-i-txt"> Vad betyder chans?</span></button></h2>
       <div class="value-filter" id="value-filter" role="group" aria-label="Visa">
-        <button type="button" class="vf-btn" data-vf="all" aria-pressed="true">Alla <span class="count" id="vf-all"></span></button>
-        <button type="button" class="vf-btn" data-vf="value" aria-pressed="false">Bara Värde <span class="count" id="vf-value"></span></button>
+        <button type="button" class="vf-btn ds-toggle" data-vf="all" aria-pressed="true">Alla <span class="count" id="vf-all"></span></button>
+        <button type="button" class="vf-btn ds-toggle" data-vf="value" aria-pressed="false">Bara Värde <span class="count" id="vf-value"></span></button>
       </div>
     </div>
     <div class="help-score" id="help-chans" hidden>
