@@ -52,7 +52,7 @@
   /* Domänfärger som måste matcha externa verktyg – ändra inte värdet */
   --color-spik: #f07ab8;                     /* Gambling Cabin rosa (id 5) */
   --color-spik-text: #2a0a1c;
-  --color-gc-button: #0a8a3a;                /* Gambling Cabin-knapp */
+  --color-gc-button: #07783a;                /* Gambling Cabin-knapp (mörkad för 4,5:1 mot vit text) */
 
   /* Fokus */
   --focus-ring-color: var(--ss-blue);
