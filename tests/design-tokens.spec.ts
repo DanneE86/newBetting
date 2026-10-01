@@ -7,7 +7,7 @@ const pub = path.join(__dirname, '..', 'gui', 'public');
 const read = (f: string) => fs.readFileSync(path.join(pub, f), 'utf8');
 
 // Filer som är migrerade till tokens. Hex/rgb får bara stå i custom properties (--namn: #...).
-const MIGRATED_CSS: string[] = [];
+const MIGRATED_CSS: string[] = ['startelva.css', 'spelarkort.css'];
 
 test('tokens.css har Svenska Spels färger och laddas före övriga stilmallar', () => {
   const tokens = read('tokens.css').toLowerCase();

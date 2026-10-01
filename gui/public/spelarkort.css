@@ -1,103 +1,145 @@
-/* Spelarkort (gui/public/spelarkort.js): spindel mot ligan, jämförelse och alla stats. Hemmalag lime, bortalag blå,
-   andra spelaren i samma lag gul. */
-.pc-c-home { color: #b8f255; fill: currentColor; stroke: currentColor; }
-.pc-c-away { color: #9ec1ff; fill: currentColor; stroke: currentColor; }
-.pc-c-alt { color: #f3cd6b; fill: currentColor; stroke: currentColor; }
+/* Spelarkort (gui/public/spelarkort.js): spindel mot ligan, jämförelse och alla stats. Hemmalag rött, bortalag blått,
+   andra spelaren i samma lag mörkgul. */
+:root {
+  /* Seriefärger i spindeln och nycklarna. Byggda på --color-brand och --color-info; alla har minst 3:1 mot vit yta
+     och skiljer sig åt. Hemmalaget har samma röda som tröjorna i Startelva. */
+  --pc-home: var(--color-brand-hover);
+  --pc-away: var(--color-info);
+  --pc-alt: var(--color-warning);
+  --pc-p1: var(--color-info);
+  --pc-p2: var(--color-brand);
+}
+
+.pc-c-home { color: var(--pc-home); fill: currentColor; stroke: currentColor; }
+.pc-c-away { color: var(--pc-away); fill: currentColor; stroke: currentColor; }
+.pc-c-alt { color: var(--pc-alt); fill: currentColor; stroke: currentColor; }
 
 .pc-host:empty { display: none; }
-.pc-host { margin-top: 0.7rem; }
-.pc-card { display: grid; gap: 0.6rem; padding: 0.75rem; border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.16);
-  background: rgba(0, 0, 0, 0.22); min-width: 0; }
-.pc-top { display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; }
-.pc-top h4 { margin: 0; font-size: 0.95rem; }
-.pc-close { border: 1px solid var(--line); background: transparent; color: var(--muted); border-radius: 999px; width: 1.9rem; height: 1.9rem;
-  cursor: pointer; font-size: 0.85rem; flex: none; }
-.pc-close:hover { color: var(--ink); border-color: rgba(255, 255, 255, 0.4); }
-.pc-sub { color: var(--muted); font-size: 0.72rem; font-weight: 400; }
-.pc-warn { color: var(--warn); }
-.pc-heads { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.5rem; }
-.pc-ph { padding: 0.45rem 0.55rem; border-radius: 8px; background: rgba(255, 255, 255, 0.04); border-left: 3px solid; font-size: 0.84rem; min-width: 0; }
-.pc-ph-home { border-color: #b8f255; }
-.pc-ph-away { border-color: #9ec1ff; }
-.pc-summary { padding: 0.5rem 0.65rem; border-radius: 8px; background: rgba(184, 242, 85, 0.06); border: 1px solid rgba(184, 242, 85, 0.18);
-  font-size: 0.82rem; line-height: 1.5; }
-.pc-summary small { color: var(--muted); }
-.pc-key { display: inline-block; width: 0.8rem; height: 0.32rem; border-radius: 2px; margin: 0 0.3rem 0.12rem 0.15rem; background: currentColor; }
-.pc-key-league { background: none; border-top: 2px dashed rgba(255, 255, 255, 0.55); height: 0; vertical-align: 0.2em; }
+.pc-host { margin-top: var(--space-3); }
+/* Kortet: dialogstil enligt designsystemet (vit yta, stor radie, stor skugga) */
+.pc-card {
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-5);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+  box-shadow: var(--shadow-lg);
+  font-family: var(--font-body);
+  min-width: 0;
+}
+.pc-top { display: flex; justify-content: space-between; align-items: center; gap: var(--space-2); }
+.pc-top h4 { margin: 0; font-size: var(--font-size-lg); font-weight: var(--font-weight-bold); line-height: var(--line-height-tight); }
+.pc-card .pc-close {
+  flex: none;
+  width: var(--target-min);
+  min-width: var(--target-min);
+  height: var(--target-min);
+  padding: 0;
+  border: 2px solid var(--color-text);
+  border-radius: var(--radius-pill);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: var(--font-size-md);
+  cursor: pointer;
+}
+.pc-card .pc-close:hover { background: var(--color-surface-muted); }
+.pc-card .pc-close:focus-visible { outline: 2px solid var(--focus-ring-color); outline-offset: 2px; }
+.pc-sub { color: var(--color-text-muted); font-size: var(--font-size-xs); font-weight: var(--font-weight-regular); }
+.pc-warn { color: var(--color-warning); }
+.pc-heads { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-2); }
+.pc-ph { padding: var(--space-2) var(--space-3); border-radius: var(--radius-md); background: var(--color-surface-muted); border-left: 4px solid; font-size: var(--font-size-sm); min-width: 0; }
+.pc-ph-home { border-color: var(--pc-home); }
+.pc-ph-away { border-color: var(--pc-away); }
+.pc-summary { padding: var(--space-3) var(--space-4); border-radius: var(--radius-md); background: var(--color-info-bg); border-left: 4px solid var(--color-info);
+  color: var(--color-text); font-size: var(--font-size-sm); line-height: var(--line-height-body); }
+.pc-summary small { color: var(--color-text-muted); }
+.pc-key { display: inline-block; width: 0.8rem; height: 0.32rem; border-radius: 2px; margin: 0 var(--space-1) 2px 2px; background: currentColor; }
+.pc-key-league { background: none; border-top: 2px dashed var(--color-text-muted); height: 0; vertical-align: 0.2em; }
 
-.pc-vs { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem; }
-.pc-chip { border: 1px solid var(--line); background: transparent; color: var(--ink); border-radius: 999px; padding: 0.2rem 0.65rem;
-  font-family: var(--font-body); font-size: 0.74rem; cursor: pointer; }
-.pc-chip:hover { background: rgba(255, 255, 255, 0.07); }
-.pc-chip.is-on { border-color: rgba(255, 255, 255, 0.6); background: rgba(255, 255, 255, 0.1); }
-.pc-vs select { max-width: 100%; border: 1px solid var(--line); background: rgba(0, 0, 0, 0.3); color: var(--ink); border-radius: 8px;
-  padding: 0.25rem 0.5rem; font-family: var(--font-body); font-size: 0.74rem; }
+.pc-vs { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2); }
+.pc-chip { min-height: 36px; border: 1px solid var(--color-border-strong); background: var(--color-surface); color: var(--color-text); border-radius: var(--radius-pill);
+  padding: var(--space-1) var(--space-3); font-family: var(--font-body); font-size: var(--font-size-xs); font-weight: var(--font-weight-medium); cursor: pointer;
+  transition: background-color var(--duration-fast) var(--easing), border-color var(--duration-fast) var(--easing); }
+.pc-chip:hover { border-color: var(--color-text); }
+.pc-chip.is-on { border-color: var(--color-text); background: var(--color-text); color: var(--color-surface); }
+.pc-chip:focus-visible { outline: 2px solid var(--focus-ring-color); outline-offset: 2px; }
+.pc-vs select { max-width: 100%; min-height: 36px; border: 1px solid var(--color-border-strong); background: var(--color-surface); color: var(--color-text); border-radius: var(--radius-md);
+  padding: var(--space-1) var(--space-2); font-family: var(--font-body); font-size: var(--font-size-sm); }
+.pc-vs select:hover { border-color: var(--color-text-muted); }
+.pc-vs select:focus-visible { outline: none; border-color: var(--focus-ring-color); box-shadow: var(--focus-ring); }
 
-.pc-radar { margin: 0; display: grid; justify-items: center; gap: 0.3rem; }
+.pc-radar { margin: 0; display: grid; justify-items: center; gap: var(--space-1); }
 .pc-radar svg { width: 100%; max-width: 460px; height: auto; overflow: visible; }
-.pc-radar figcaption { font-size: 0.74rem; text-align: center; }
-.pc-ring { fill: none; stroke: rgba(255, 255, 255, 0.12); stroke-width: 1; }
-.pc-ring-league { stroke: rgba(255, 255, 255, 0.5); stroke-dasharray: 4 3; }
+.pc-radar figcaption { font-size: var(--font-size-sm); text-align: center; color: var(--color-text); }
+.pc-ring { fill: none; stroke: var(--color-border-strong); stroke-width: 1; }
+.pc-ring-league { stroke: var(--color-text-muted); stroke-dasharray: 4 3; }
 .pc-area { fill-opacity: 0.2; stroke-width: 2; stroke-linejoin: round; }
-.pc-lbl text { fill: var(--muted); font-size: 10px; font-family: var(--font-body); }
+.pc-lbl text { fill: var(--color-text-muted); font-size: 10px; font-family: var(--font-body); }
 
-.pc-all summary { cursor: pointer; font-weight: 600; font-size: 0.85rem; }
-.pc-all > .pc-sub { margin: 0.3rem 0; }
+.pc-all summary { cursor: pointer; font-weight: var(--font-weight-bold); font-size: var(--font-size-md); min-height: 32px; display: list-item; }
+.pc-all summary:focus-visible { outline: 2px solid var(--focus-ring-color); outline-offset: 2px; border-radius: var(--radius-sm); }
+.pc-all > .pc-sub { margin: var(--space-1) 0; }
 .pc-table-wrap { overflow-x: auto; }
-.pc-table { width: 100%; border-collapse: collapse; font-size: 0.76rem; }
-.pc-table th, .pc-table td { padding: 0.3rem 0.4rem; border-top: 1px solid rgba(255, 255, 255, 0.06); text-align: left; vertical-align: top; }
-.pc-table thead th { border-top: 0; color: var(--muted); font-size: 0.7rem; }
-.pc-table tbody th { font-weight: 400; color: #c5dbc9; width: 40%; }
-.pc-table .pc-cat th { color: var(--ink); font-weight: 700; font-size: 0.74rem; padding-top: 0.6rem; text-transform: uppercase; letter-spacing: 0.04em; }
+.pc-card .pc-table { width: 100%; border-collapse: collapse; font-size: var(--font-size-sm); }
+.pc-card .pc-table th, .pc-card .pc-table td { padding: var(--space-1) var(--space-2); border-top: 0; border-bottom: 1px solid var(--color-border); text-align: left; vertical-align: top; }
+.pc-card .pc-table tbody th { font-weight: var(--font-weight-regular); color: var(--color-text); width: 40%; }
+.pc-card .pc-table .pc-cat th { color: var(--color-text); font-weight: var(--font-weight-bold); font-size: var(--font-size-xs); padding-top: var(--space-4); text-transform: uppercase; letter-spacing: 0.04em;
+  border-bottom: 2px solid var(--color-border-strong); }
 .pc-v { font-variant-numeric: tabular-nums; }
-.pc-v small { color: var(--muted); font-size: 0.64rem; }
-.pc-v.is-better .pc-val { font-weight: 700; }
-.pc-bar { display: block; height: 0.3rem; margin-top: 0.2rem; border-radius: 999px; background: rgba(255, 255, 255, 0.08); overflow: hidden; }
+.pc-v small { color: var(--color-text-muted); font-size: var(--font-size-xs); }
+.pc-v.is-better .pc-val { font-weight: var(--font-weight-bold); }
+.pc-bar { display: block; height: 0.375rem; margin-top: var(--space-1); border-radius: var(--radius-pill); background: var(--color-surface-sunken); overflow: hidden; }
 .pc-pct { display: block; }
 
 /* Klickbara namn i Duellanalysen */
 .mx-pl { border: 0; background: none; padding: 0; color: inherit; font: inherit; cursor: pointer; text-align: left;
-  text-decoration: underline dotted rgba(255, 255, 255, 0.35); text-underline-offset: 3px; }
+  text-decoration: underline dotted var(--color-text-muted); text-underline-offset: 3px; }
 .mx-pl:hover, .mx-pl.pc-is-sel { text-decoration-color: currentColor; }
-.mx-pl.pc-is-sel { font-weight: 700; }
-.mx-pl:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; border-radius: 3px; }
-.mx-legend { margin-top: 0.5rem; }
-.se-card-btn { margin-top: 0.35rem; }
+.mx-pl.pc-is-sel { font-weight: var(--font-weight-bold); }
+.mx-pl:focus-visible { outline: 2px solid var(--focus-ring-color); outline-offset: 2px; border-radius: var(--radius-sm); }
+.mx-legend { margin-top: var(--space-2); }
+.se-card-btn { margin-top: var(--space-2); }
 
 @media (max-width: 520px) {
-  .pc-card { padding: 0.55rem; }
-  .pc-table tbody th { width: 34%; }
+  .pc-card { padding: var(--space-3); }
+  .pc-card .pc-table tbody th { width: 34%; }
 }
 
 /* Spelare 1 och 2 i kortet: egna färger oberoende av lag */
-.pc-c-p1 { color: #6cb8ff; fill: currentColor; stroke: currentColor; }
-.pc-c-p2 { color: #ffa24d; fill: currentColor; stroke: currentColor; }
+.pc-c-p1 { color: var(--pc-p1); fill: currentColor; stroke: currentColor; }
+.pc-c-p2 { color: var(--pc-p2); fill: currentColor; stroke: currentColor; }
 .pc-ph.pc-c-p1, .pc-ph.pc-c-p2 { fill: none; stroke: none; border-left-color: currentColor; }
-.pc-ph.pc-c-p1 b, .pc-ph.pc-c-p2 b { color: var(--ink); }
-.pc-radar .pc-area { fill-opacity: 0.28; }
+.pc-ph.pc-c-p1 b, .pc-ph.pc-c-p2 b { color: var(--color-text); }
+.pc-radar .pc-area { fill-opacity: 0.2; }
 
-/* Staplar efter nivå i ligan: grön bra, gul medel, röd svagt */
-.pc-bar i { display: block; height: 100%; background: var(--muted); }
-.pc-bar.pc-hi i, .pc-sw.pc-hi { background: #7ddc5a; }
-.pc-bar.pc-mid i, .pc-sw.pc-mid { background: #e7c04a; }
-.pc-bar.pc-lo i, .pc-sw.pc-lo { background: #ef6b5b; }
-.pc-legend { margin: 0.35rem 0 0; font-size: 0.74rem; color: #c5dbc9; display: flex; flex-wrap: wrap; align-items: center; gap: 0.2rem 0.4rem; }
-.pc-sw { display: inline-block; width: 0.8rem; height: 0.45rem; border-radius: 2px; }
-.pc-best { color: var(--ink); font-size: 0.62rem; }
-.pc-chip small { color: var(--muted); font-size: 0.66rem; margin-left: 0.15rem; }
-.pc-missing { margin: 0; padding: 0.5rem 0.65rem; border-radius: 8px; border: 1px solid rgba(240, 180, 41, 0.45); background: rgba(240, 180, 41, 0.08);
-  color: #f3cd6b; font-size: 0.8rem; line-height: 1.5; }
-.pc-missing code { color: var(--ink); }
+/* Staplar efter nivå i ligan: grön bra, gul medel, röd svagt (staplarna har minst 3:1 mot vit yta) */
+.pc-bar i { display: block; height: 100%; background: var(--color-text-muted); }
+.pc-bar.pc-hi i, .pc-sw.pc-hi { background: var(--color-success); }
+.pc-bar.pc-mid i, .pc-sw.pc-mid { background: var(--color-warning); }
+.pc-bar.pc-lo i, .pc-sw.pc-lo { background: var(--color-danger-fill); }
+.pc-legend { margin: var(--space-2) 0 0; font-size: var(--font-size-sm); color: var(--color-text); display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-1) var(--space-2); }
+.pc-sw { display: inline-block; width: 0.8rem; height: 0.5rem; border-radius: 2px; }
+.pc-best { color: var(--color-success); font-size: 0.625rem; }
+.pc-chip small { color: var(--color-text-muted); font-size: var(--font-size-xs); margin-left: 2px; }
+.pc-chip.is-on small { color: var(--color-surface); }
+.pc-missing { margin: 0; padding: var(--space-3) var(--space-4); border-radius: var(--radius-md); border-left: 4px solid var(--color-warning-fill); background: var(--color-warning-bg);
+  color: var(--color-text); font-size: var(--font-size-sm); line-height: var(--line-height-body); }
+.pc-missing code { color: var(--color-text); font-weight: var(--font-weight-bold); }
 
 /* Större namn: tabellhuvudet (följer med vid scroll) och spelarrutorna */
-.pc-table thead th { font-size: 1rem; font-weight: 700; color: var(--ink); padding: 0.5rem 0.4rem; }
-.pc-table thead th:first-child { font-size: 0.72rem; font-weight: 600; color: var(--muted); }
+.pc-card .pc-table thead th { font-size: var(--font-size-md); font-weight: var(--font-weight-bold); color: var(--color-text); padding: var(--space-2); border-bottom: 2px solid var(--color-border-strong); }
+.pc-card .pc-table thead th:first-child { font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); color: var(--color-text-muted); }
 .pc-table thead .pc-key { width: 1.1rem; height: 0.45rem; }
-.pc-table thead th { position: sticky; top: 2.75rem; z-index: 2; background: #0f1a16; box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1); }
+.pc-card .pc-table thead th { position: sticky; top: 2.75rem; z-index: 2; background: var(--color-surface); box-shadow: 0 1px 0 var(--color-border-strong); }
 .pc-table-wrap { overflow: visible; }
-@media (max-width: 520px) { .pc-table { table-layout: fixed; } .pc-table tbody th, .pc-table thead th:first-child { width: 32%; overflow-wrap: anywhere; } .pc-v small { display: block; margin: 0; } .pc-table th, .pc-table td { padding-inline: 0.25rem; } }
-.pc-ph b { font-size: 1.05rem; }
-.pc-top h4 { font-size: 1.05rem; }
-@media (max-width: 520px) { .pc-table thead th { font-size: 0.9rem; } }
+@media (max-width: 520px) { .pc-card .pc-table { table-layout: fixed; } .pc-card .pc-table tbody th, .pc-card .pc-table thead th:first-child { width: 32%; overflow-wrap: anywhere; } .pc-v small { display: block; margin: 0; } .pc-card .pc-table th, .pc-card .pc-table td { padding-inline: var(--space-1); } }
+.pc-ph b { font-size: var(--font-size-md); }
+@media (max-width: 520px) { .pc-card .pc-table thead th { font-size: var(--font-size-sm); } }
 /* overflow:hidden på korten hindrar rubriken från att följa med; clip klipper likadant men tillåter sticky */
 .tip:has(.pc-card), .st-match:has(.pc-card) { overflow: clip; }
+
+@media (prefers-reduced-motion: reduce) {
+  .pc-chip { transition: none; }
+}
