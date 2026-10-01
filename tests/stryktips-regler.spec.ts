@@ -262,7 +262,7 @@ test('Gambling Cabin-länk: samma grundrad, färger och regler som systemet', ()
   }
 });
 
-test('kupong B: eget system (högst 1 spik som A, ingen samma halvgardering) eller delat system', () => {
+test('kupong B: eget system (högst 1 spik som A, ingen samma halv- eller helgardering) eller delat system', () => {
   for (const p of products.filter((x) => x.reduced && x.reducedB)) {
     const at = `${p.product} ${p.drawNumber}`;
     const A = p.reduced, B = p.reducedB;
@@ -285,10 +285,10 @@ test('kupong B: eget system (högst 1 spik som A, ingen samma halvgardering) ell
       expect(A.cost + B.cost, at).toBeLessThanOrEqual(2 * BUDGET.max);
       expect(B.unionHit, at).toBeCloseTo(A.hitAll + B.hitAll, 9);
     } else {
-      // Eget B-system (standard sedan 2026-09-30): högst 1 spik som i A (2026-10-01) och aldrig exakt samma halvgardering
+      // Eget B-system (standard sedan 2026-09-30): högst 1 spik som i A (2026-10-01) och aldrig exakt samma halv- eller helgardering
       expect(same, `${at}: motsystem högst 1 gemensam spik`).toBeLessThanOrEqual(1);
       p.events.forEach((e: any, i: number) => {
-        if (e.systemPick.signs.length === 2) expect(e.systemPickB.signs, `${at} match ${i + 1}: inte samma halvgardering som A`).not.toBe(e.systemPick.signs);
+        if (e.systemPick.signs.length > 1) expect(e.systemPickB.signs, `${at} match ${i + 1}: inte samma gardering som A`).not.toBe(e.systemPick.signs);
       });
     }
     // A+B-chansen ar minst A:s och hogst summan av bada
