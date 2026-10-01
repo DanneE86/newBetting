@@ -55,6 +55,11 @@ jobs:
         shell: pwsh
         run: powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Fetch-Lineups.ps1
 
+      - name: Domare (tillsatta domare, domarsviter)
+        if: steps.guard.outputs.run == 'true'
+        continue-on-error: true
+        run: node scripts/fetch-referees.mjs --upcoming
+
       - name: Oddset-tips med elvor/frånvaro
         if: steps.guard.outputs.run == 'true'
         shell: pwsh
@@ -63,6 +68,13 @@ jobs:
       - name: Stryktipset/Europatipset (färska odds, streck, elvor)
         if: steps.guard.outputs.run == 'true'
         run: node scripts/fetch-stryktipset.mjs
+
+      # Startelvor (FotMob) för Oddset-matcher och kupongerna: spelare mot spelare i GUI:t, data/startelvor.json
+      - name: Startelvor
+        if: steps.guard.outputs.run == 'true'
+        continue-on-error: true
+        timeout-minutes: 15
+        run: node scripts/fetch-startelvor.mjs
 
       - name: Bygg webbversion
         if: steps.guard.outputs.run == 'true'

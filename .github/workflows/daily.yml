@@ -99,6 +99,12 @@ jobs:
         timeout-minutes: 30
         run: node scripts/fetch-squads.mjs
 
+      # Startelvor (FotMob) för Oddset-matcher och kupongerna: spelare mot spelare i GUI:t, data/startelvor.json
+      - name: Startelvor
+        continue-on-error: true
+        timeout-minutes: 15
+        run: node scripts/fetch-startelvor.mjs
+
       - name: Bygg webbversion
         run: node scripts/build-static-site.mjs
 

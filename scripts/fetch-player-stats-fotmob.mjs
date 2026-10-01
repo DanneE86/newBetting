@@ -13,6 +13,7 @@ import path from 'node:path';
 import { root } from './lib/learnings-data.mjs';
 import { TM_COMP, tmClubs, tmSquad, pairClubs, sameName } from './lib/transfermarkt.mjs';
 import { GROUPS, KEY_STATS, positionGroup, tmGroup } from './lib/player-positions.mjs';
+import { day, r, statMap, form, matchRows } from './lib/fotmob-player.mjs';
 
 const FM = 'https://www.fotmob.com/api/data';
 const PLAYER_MAX_AGE_D = 3;
@@ -25,9 +26,6 @@ const TM_FILE = path.join(DIR_OUT, '_transfermarkt.json');
 const readJson = (p, d = null) => { try { return JSON.parse(fs.readFileSync(p, 'utf8')); } catch { return d; } };
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const ageDays = (iso) => (iso ? (Date.now() - Date.parse(iso)) / 864e5 : Infinity);
-// FotMob ger datum som text eller { utcTime }
-const day = (x) => { const v = typeof x === 'string' ? x : x?.utcTime; return typeof v === 'string' ? v.slice(0, 10) : null; };
-const r = (x, d = 2) => (x == null || !Number.isFinite(Number(x)) ? null : Math.round(Number(x) * 10 ** d) / 10 ** d);
 
 async function getJson(url) {
   for (let i = 0; i < 4; i++) {
@@ -40,25 +38,6 @@ async function getJson(url) {
     await sleep(1000 * (i + 1));
   }
   return null;
-}
-
-// FotMobs statistiksektioner -> { key: [total, per90, percentil per 90] }
-function statMap(doc) {
-  const out = {};
-  const add = (i) => {
-    const v = Number(String(i.statValue ?? '').replace(',', '.'));
-    if (!i.localizedTitleId || !Number.isFinite(v)) return;
-    out[i.localizedTitleId] = [v, r(i.per90, 3), r(i.percentileRankPer90 ?? i.percentileRank, 1)];
-  };
-  for (const i of doc?.topStatCard?.items ?? []) add(i);
-  for (const g of doc?.statsSection?.items ?? []) for (const i of g.items ?? []) add(i);
-  // Harledda
-  const v = (k) => out[k]?.[0];
-  if (v('goals') != null && v('expected_goals') != null) out.goals_minus_xg = [r(v('goals') - v('expected_goals')), null, null];
-  if (v('expected_goals_on_target') != null && v('expected_goals') != null) out.xgot_minus_xg = [r(v('expected_goals_on_target') - v('expected_goals')), null, null];
-  if (v('expected_goals_against_while_on_pitch') != null && v('goals_conceded_while_on_pitch') != null)
-    out.xga_minus_conceded = [r(v('expected_goals_against_while_on_pitch') - v('goals_conceded_while_on_pitch')), null, null];
-  return out;
 }
 
 // Skottkartan sammanfattad (hela kartan ar for stor att spara for alla spelare)
@@ -94,20 +73,6 @@ function prevSeasonEntry(d) {
 }
 
 const info = (d, key) => d.playerInformation?.find((x) => x.translationKey === key)?.value;
-
-function form(matches) {
-  const played = matches.filter((m) => m.playedInMatch || m.minutesPlayed > 0);
-  const last5 = matches.slice(0, 5);
-  const ratings = last5.map((m) => Number(m.ratingProps?.rating)).filter((x) => x > 0);
-  return {
-    last5: {
-      matches: last5.length, played: last5.filter((m) => m.minutesPlayed > 0).length, benched: last5.filter((m) => m.onBench && !m.minutesPlayed).length,
-      minutes: last5.reduce((a, m) => a + (m.minutesPlayed ?? 0), 0), goals: last5.reduce((a, m) => a + (m.goals ?? 0), 0),
-      assists: last5.reduce((a, m) => a + (m.assists ?? 0), 0), avgRating: ratings.length ? r(ratings.reduce((a, b) => a + b) / ratings.length) : null,
-    },
-    lastPlayed: day(played[0]?.matchDate),
-  };
-}
 
 function record(p, team, d, prevRec, prevDoc, prevMeta, tmPos) {
   const main = d.positionDescription?.positions?.find((x) => x.isMainPosition) ?? d.positionDescription?.positions?.[0];
@@ -148,8 +113,7 @@ function record(p, team, d, prevRec, prevDoc, prevMeta, tmPos) {
     traits: d.traits ? { comparedTo: d.traits.key?.replace('stats_comparison_', ''), ...Object.fromEntries((d.traits.items ?? []).map((t) => [t.key, t.value])) } : null,
     form: form(recent),
     // [datum, lag, motstandare, hemma, minuter, betyg, mal, assist, gula, roda, bank, liga]
-    matches: recent.slice(0, RECENT_MATCHES).map((m) => [day(m.matchDate), m.teamName, m.opponentTeamName, m.isHomeTeam ? 1 : 0,
-      m.minutesPlayed ?? 0, Number(m.ratingProps?.rating) || null, m.goals ?? 0, m.assists ?? 0, m.yellowCards ?? 0, m.redCards ?? 0, m.onBench ? 1 : 0, m.leagueName]),
+    matches: matchRows(recent, RECENT_MATCHES),
     // [lag, fran, till, matcher, mal, assist, overgang]
     career: (d.careerHistory?.careerItems?.senior?.teamEntries ?? []).map((c) => [c.team, day(c.startDate), day(c.endDate),
       c.appearances != null ? Number(c.appearances) : null, c.goals != null ? Number(c.goals) : null, c.assists != null ? Number(c.assists) : null,

@@ -17,6 +17,7 @@ import { fillXg } from './lib/understat-xg.mjs';
 import { buildMissProfile, STRYK_LEAGUES } from './lib/stryk-miss-profile.mjs';
 import { colorBands } from './lib/stryk-color-bands.mjs';
 import { calibrationTable, assessMatch, assessmentText } from './lib/stryk-calibration.mjs';
+import { buildRefIndex, mergeRefereeMatches, refereeFlags, refereeNotes } from './lib/referee-streaks.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const RAW = path.join(root, 'data', 'raw');
@@ -468,10 +469,22 @@ function folkProbs(ev) {
 }
 
 // Kompakt kontext i sparade system (for senare backtest av franvaro/rotation)
-function ctxSummary(cx) {
+// Domarsviter per lag (football-data E0-E3 + store), laddas en gang. Bara engelska ligamatcher.
+let refIdx;
+function refereeIndex() {
+  if (refIdx !== undefined) return refIdx;
+  try {
+    const rd = (f) => JSON.parse(fs.readFileSync(path.join(root, 'data', ...f), 'utf8').replace(/^﻿/, ''));
+    const hist = fs.existsSync(path.join(root, 'data', 'open', 'referee_history.json')) ? Object.values(rd(['open', 'referee_history.json']).bySeason || {}).flat() : [];
+    refIdx = buildRefIndex(mergeRefereeMatches(hist, rd(['betting-store.json']).matches));
+  } catch { refIdx = null; }
+  return refIdx;
+}
+
+function ctxSummary(cx, rf) {
   if (!cx?.home) return null;
   const sd = (x) => x && { missing: x.unavailable.length, missingValueShare: x.missingValueShare, restDays: x.restDays, daysToNext: x.daysToNext, nextTournament: x.nextMatch?.tournament || null };
-  return { lineupConfirmed: cx.lineupConfirmed, home: sd(cx.home), away: sd(cx.away), referee: cx.referee };
+  return { lineupConfirmed: cx.lineupConfirmed, home: sd(cx.home), away: sd(cx.away), referee: cx.referee, refereeFlag: rf?.flagged ? { home: rf.home?.flag || null, away: rf.away?.flag || null } : null };
 }
 
 function narrative(a) {
@@ -1171,7 +1184,11 @@ async function analyzeDraw(product, draw, ctx, result) {
     const so = ev.startOdds ? [num(ev.startOdds.one), num(ev.startOdds.x), num(ev.startOdds.two)] : null;
     a.startOdds = so?.every((x) => x > 1) ? so : null;
     a.context = matchCtx.get(ev.eventNumber) || null;
-    a.analysis = [...narrative({ ...a, final: a.final }), ...contextNotes(a.context, home, away)];
+    // Domarsvit: minst 5 raka segrar/forluster for nagot av lagen med matchens domare (engelska ligor)
+    a.refereeStreak = a.context?.referee && country === 'England' && refereeIndex()
+      ? refereeFlags(refereeIndex(), { referee: a.context.referee, home: a.matched?.home || home, away: a.matched?.away || away })
+      : null;
+    a.analysis = [...narrative({ ...a, final: a.final }), ...contextNotes(a.context, home, away), ...refereeNotes(a.refereeStreak, home, away)];
     // Facit (avgjord kupong)
     const r = result?.events?.find((x) => x.eventNumber === ev.eventNumber);
     if (r?.outcome) a.result = { outcome: r.outcome, score: r.outcomeScore ? `${r.outcomeScore.home}-${r.outcomeScore.away}` : null };
@@ -1307,7 +1324,7 @@ function saveSnapshot(a) {
     rules: a.reduced.rules, gamblingCabinUrl: a.reduced.gamblingCabinUrl, rowList: a.reduced.rowList,
     picks: a.events.map((e) => e.systemPick?.signs || ''),
     // Odds och streck som de sag ut nar systemet sparades (for rattvisa backtest senare)
-    matches: a.events.map((e) => ({ n: e.eventNumber, match: `${e.home} - ${e.away}`, kickoff: e.kickoff, final: e.final, market: e.market, marketSource: e.marketSource, svsOdds: e.odds, sharpOdds: e.sharpOdds || null, folk: e.folk, lineupStatus: e.lineup?.status || null, context: ctxSummary(e.context) })),
+    matches: a.events.map((e) => ({ n: e.eventNumber, match: `${e.home} - ${e.away}`, kickoff: e.kickoff, final: e.final, market: e.market, marketSource: e.marketSource, svsOdds: e.odds, sharpOdds: e.sharpOdds || null, folk: e.folk, lineupStatus: e.lineup?.status || null, context: ctxSummary(e.context, e.refereeStreak) })),
   };
   const snapB = a.reducedB && {
     at: snap.at, rows: a.reducedB.rows, cost: a.reducedB.cost, hitAll: a.reducedB.hitAll,

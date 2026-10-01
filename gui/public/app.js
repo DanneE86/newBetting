@@ -1,3 +1,5 @@
+import { startelvaButton, startelvaPanel } from "/startelva.js";
+
 const $ = (sel) => document.querySelector(sel);
 
 let state = {
@@ -227,13 +229,18 @@ function valueFor(tip, mkt, key) {
 function valueCell(tip, pickKey, keys, label = null) {
   const v = tip.pro?.verdicts || {};
   const x = v[pickKey];
-  const others = keys
-    .filter((k) => k !== pickKey && v[k]?.value)
-    .map((k) => `${escapeHtml(v[k].pick)} @ ${escapeHtml(fmtOdd(v[k].odds))} (från ${escapeHtml(fmtOdd(v[k].minOdds))})`);
-  // Övriga utfall med odds men utan värde får också ett omdöme (varje visat odds ska ha Värde/Ej värde)
-  const noVal = keys.filter((k) => k !== pickKey && v[k]?.value === false).map((k) => escapeHtml(v[k].pick));
-  const otherTxt = (others.length ? `<div class="val-other">Värde: ${others.join(", ")}</div>` : "")
-    + (noVal.length ? `<div class="val-min">Ej värde: ${noVal.join(", ")}</div>` : "");
+  // Övriga utfall i marknaden på EN dämpad rad, varje med omdöme + "från X" (Värde markeras grönt)
+  const rest = keys
+    .filter((k) => k !== pickKey && v[k] && v[k].value != null)
+    .map((k) => {
+      const y = v[k];
+      const name = escapeHtml(PICK_LABEL[k] || y.pick);
+      const fromTxt = y.minOdds ? ` från ${escapeHtml(fmtOdd(y.minOdds))}` : "";
+      return y.value
+        ? `<span class="vo-yes" title="Värde vid odds ${escapeHtml(fmtOdd(y.odds))}">${name} Värde${fromTxt}</span>`
+        : `<span title="Ej värde vid odds ${escapeHtml(fmtOdd(y.odds))}">${name}${fromTxt}</span>`;
+    });
+  const otherTxt = rest.length ? `<div class="val-others">Övriga: ${rest.join(" · ")}</div>` : "";
   const forTxt = label ? `<div class="val-for">${escapeHtml(label)}${x?.odds ? ` @ ${escapeHtml(fmtOdd(x.odds))}` : ""}</div>` : "";
   if (!x || x.value == null) {
     // Pro-lagret ger alltid ett omdöme när det finns odds; saknas det finns inga odds för utfallet
@@ -265,6 +272,9 @@ function rrText(x) {
   if (rr?.breakEven != null) parts.push(`krävs ${pc(rr.breakEven)}`);
   return parts.join(" · ");
 }
+
+/** Utfallsnamn i normal skrift: "OVER 2.5" -> "Över 2.5". */
+const pickName = (p) => String(p ?? "").replace(/^OVER/i, "Över").replace(/^UNDER/i, "Under");
 
 const PICK_LABEL = { home: "1", draw: "X", away: "2", over25: "Över 2.5", under25: "Under 2.5" };
 const KEY_1X2 = { 1: "home", X: "draw", 2: "away" };
@@ -343,6 +353,28 @@ function detailsHtml(tip) {
     <p class="tip-details-note">EV = förväntat värde per spel. Krav = marginalen som krävs för Värde. Chans/krävs = facits chans mot den chans oddset kräver. Kortets snittchans: ${fmtChance(tip.tipScore)}.</p></details>`;
 }
 
+// Domarsvit (minst 5 raka segrar/förluster för ett lag med matchens domare): tydlig ruta, annars en kort domarrad
+const refRec = (s) => `${s.record.w}-${s.record.d}-${s.record.l}`;
+const refLast = (s) => (s.last || []).map((m) => `${m.date} ${m.home ? "hemma" : "borta"} mot ${m.opp} ${m.score}`).join("\n");
+function refereeBox(r, home, away) {
+  if (!r?.referee) return "";
+  const sides = [[r.home, home], [r.away, away]];
+  if (!r.flagged) {
+    const rec = sides.filter(([s]) => s?.matches).map(([s, name]) => `${escapeHtml(name)} ${refRec(s)}`).join(" · ");
+    return `<div class="ref-line">Domare: <b>${escapeHtml(r.referee)}</b>${rec ? ` <small>· med domaren (V-O-F): ${rec}</small>` : ""}</div>`;
+  }
+  const flagged = sides.filter(([s]) => s?.flag);
+  const kind = flagged.every(([s]) => s.flag === "wins") ? "win" : flagged.every(([s]) => s.flag === "losses") ? "loss" : "mixed";
+  const rows = flagged.map(([s, name]) => `<li class="${s.flag === "wins" ? "win" : "loss"}" title="${escapeHtml(refLast(s))}"><b>${escapeHtml(name)}</b>: ${s.streak.n} ${s.flag === "wins" ? "raka segrar" : "raka förluster"} med domaren <small>(${refRec(s)} på ${s.matches} ligamatcher)</small></li>`).join("");
+  return `<div class="ref-alert ${kind}" role="note"><span class="ref-alert-k">⚑ Domarsvit</span> <b>${escapeHtml(r.referee)}</b> dömer<ul>${rows}</ul></div>`;
+}
+function refereeBadge(r) {
+  if (!r?.flagged) return "";
+  const kinds = [r.home?.flag, r.away?.flag].filter(Boolean);
+  const kind = kinds.every((k) => k === "wins") ? "win" : kinds.every((k) => k === "losses") ? "loss" : "mixed";
+  return `<span class="ref-badge ${kind}" title="Domarsvit: ${escapeHtml(r.referee)}">⚑ domare</span>`;
+}
+
 function tipCard(tip, i) {
   const t = tip.tips || {};
   const od = oddsCells(tip);
@@ -392,7 +424,7 @@ function tipCard(tip, i) {
     : "";
 
   return `
-    <article class="tip${pr?.verdict === "yes" ? " has-value" : ""}" style="${style}" data-tip-id="${escapeHtml(tipId(tip))}">
+    <article class="tip${pr?.verdict === "yes" ? " has-value" : ""}${tip.referee?.flagged ? " ref-flagged" : ""}" style="${style}" data-tip-id="${escapeHtml(tipId(tip))}">
       <header class="tip-head">
         <div class="tip-meta">
           <time class="date">${escapeHtml(fmtKick(tip))}</time>
@@ -410,6 +442,7 @@ function tipCard(tip, i) {
           ${pr ? `<div class="n">${fmtChance(pr.p)}</div><div class="l">${escapeHtml(pr.label)}</div>${verdictBadge(pr)}` : `<div class="n">${fmtChance(tip.tipScore)}</div><div class="l">snitt chans</div>`}
         </div>
       </header>
+      ${refereeBox(tip.referee, tip.home, tip.away)}
       <div class="team-panel" hidden></div>
 
       <table class="tip-table">
@@ -484,8 +517,15 @@ function tipCard(tip, i) {
             data-league="${escapeHtml(tip.league || "")}" data-date="${escapeHtml(tip.date || "")}"
             data-home="${escapeHtml(tip.home || "")}" data-away="${escapeHtml(tip.away || "")}"
             title="Spelare mot spelare: ytter mot ytterback, anfall mot försvar, mittfält och målvakt">Duellanalys</button>
+          ${REF_LEAGUES.has(tip.league) ? `<button type="button" class="btn-referee" aria-expanded="false"
+            data-league="${escapeHtml(tip.league || "")}" data-date="${escapeHtml(tip.date || "")}"
+            data-home="${escapeHtml(tip.home || "")}" data-away="${escapeHtml(tip.away || "")}"
+            title="Domaren: gula och frisparkar mot ligasnittet, lagens facit mot domaren och alla ligans domare">Domare</button>` : ""}
+          ${startelvaButton([tip.league, tip.date, tip.home, tip.away].join("|"))}
         </div>
+        ${startelvaPanel([tip.league, tip.date, tip.home, tip.away].join("|"))}
         <div class="matchup" hidden></div>
+        <div class="refpanel" hidden></div>
         <div class="analysis" hidden></div>
       </div>
     </article>
@@ -542,7 +582,7 @@ function candRow(tip) {
   return `<details class="cand-row" data-tip-id="${escapeHtml(tipId(tip))}">
     <summary>
       <time class="cr-time" data-league="${escapeHtml(tip.league || "")}">${escapeHtml(fmtKick(tip))}</time>
-      <span class="cr-match">${escapeHtml(tip.home && tip.away ? `${tip.home} – ${tip.away}` : tip.match || "")}</span>
+      <span class="cr-match">${escapeHtml(tip.home && tip.away ? `${tip.home} – ${tip.away}` : tip.match || "")}${refereeBadge(tip.referee)}</span>
       <span class="cr-league" title="${escapeHtml(leagueName(tip.league))}">${escapeHtml(tip.league || "")}</span>
       <span class="cr-tip">${escapeHtml(pr?.label || "—")} ${odds}</span>
       <span class="cr-chance">${pr ? fmtChance(pr.p) : "—"}</span>
@@ -770,13 +810,48 @@ function toggleAccDetail(label, marketKey) {
   $("#acc-detail")?.scrollIntoView({ behavior: "smooth", block: "nearest" });
 }
 
+// Träffsäkerhetskorten är hopfällda bakom en rad; utfällt läge sparas per webbläsare
+let accOpen = false;
+try {
+  accOpen = localStorage.getItem("betting.accOpen") === "1";
+} catch {
+  /* privat läge */
+}
+const pctSv = (rate) => (rate == null || rate === "" ? "—" : `${(Number(rate) * 100).toFixed(1).replace(".", ",")} %`);
+
+function syncAccOpen() {
+  const btn = $("#acc-summary");
+  btn.setAttribute("aria-expanded", String(accOpen));
+  btn.classList.toggle("is-open", accOpen);
+  $("#accuracy").hidden = !accOpen || !$("#accuracy").children.length;
+  if (!accOpen) closeAccDetail();
+}
+
+$("#acc-summary").addEventListener("click", () => {
+  accOpen = !accOpen;
+  try {
+    localStorage.setItem("betting.accOpen", accOpen ? "1" : "0");
+  } catch {
+    /* privat läge */
+  }
+  syncAccOpen();
+});
+
 function renderAccuracy(acc) {
   const box = $("#accuracy");
+  const sum = $("#acc-summary");
   if (!acc) {
     box.innerHTML = "";
+    sum.hidden = true;
     closeAccDetail();
+    syncAccOpen();
     return;
   }
+  sum.hidden = false;
+  sum.innerHTML = `<span class="acc-sum-k">Träffsäkerhet</span>${[["1X2", acc["1X2"]], ["BTTS", acc.BTTS], ["Ö/U", acc.OU25]]
+    .map(([l, a]) => `<span class="acc-sum-i"><span class="acc-sum-l">${l}</span> <b>${pctSv(a?.rate)}</b></span>`)
+    .join("")}<span class="acc-sum-chev" aria-hidden="true">›</span>`;
+  sum.title = accOpen ? "Dölj träffsäkerheten" : "Visa träffsäkerheten per marknad och chansband";
   const scope = state.league === "ALL" ? "Alla ligor" : leagueName(state.league);
   const rows = [
     ["1X2", "1X2", acc["1X2"]],
@@ -818,12 +893,19 @@ function renderAccuracy(acc) {
     )
     .join("");
 
-  if (state.openMarket) {
+  syncAccOpen();
+  if (state.openMarket && accOpen) {
     const row = rows.find(([, key]) => key === state.openMarket);
     if (row) showAccDetail(row[0], row[1]);
     else closeAccDetail();
   }
 }
+
+$("#help-chans-btn").addEventListener("click", () => {
+  const box = $("#help-chans");
+  box.hidden = !box.hidden;
+  $("#help-chans-btn").setAttribute("aria-expanded", String(!box.hidden));
+});
 
 function renderSources(sources) {
   const pills = [];
@@ -845,7 +927,27 @@ function syncLeaguePills() {
     btn.classList.toggle("active", active);
     if (g) btn.classList.toggle("open", state.openGroup === g);
   });
+  // Scrolla raden (inte sidan) så att det aktiva valet syns
+  for (const row of [$("#league-filters"), $("#league-sub")]) {
+    const act = row?.querySelector(".filter-pill.active");
+    if (!act || row.scrollWidth <= row.clientWidth) continue;
+    const l = act.offsetLeft - row.offsetLeft, r = l + act.offsetWidth;
+    if (l < row.scrollLeft + 24) row.scrollLeft = Math.max(0, l - 24);
+    else if (r > row.scrollLeft + row.clientWidth - 24) row.scrollLeft = r - row.clientWidth + 24;
+  }
+  syncFilterFade();
 }
+
+/** Fade i kanterna på ligaraden när det finns mer att scrolla åt det hållet. */
+function syncFilterFade() {
+  const row = $("#league-filters");
+  if (!row) return;
+  const more = row.scrollWidth - row.clientWidth;
+  row.classList.toggle("fade-r", more > 2 && row.scrollLeft < more - 2);
+  row.classList.toggle("fade-l", row.scrollLeft > 2);
+}
+$("#league-filters").addEventListener("scroll", syncFilterFade, { passive: true });
+window.addEventListener("resize", syncFilterFade);
 
 /** Antal kandidater per liga (visas på knapparna). */
 function countFor(codes) {
@@ -961,10 +1063,38 @@ function renderStatus(data) {
   $("#status-bar").title = data.message || "";
 }
 
+const SKELETONS = `${'<div class="tip-skeleton" aria-hidden="true"><span></span><span></span><span></span></div>'.repeat(3)}<p class="sr-only">Hämtar tips…</p>`;
+
+/** Skelettkort och "Hämtar tips…" medan /api/dashboard laddas. */
+function showLoading() {
+  $("#tips").setAttribute("aria-busy", "true");
+  $("#tips").innerHTML = SKELETONS;
+  $("#status-bar").classList.add("is-loading");
+  $("#status-bar").classList.remove("is-error");
+}
+
+function showLoadError(e) {
+  $("#tips").setAttribute("aria-busy", "false");
+  $("#tips").innerHTML = `<div class="load-error" role="alert"><span>Kunde inte hämta tipsen: ${escapeHtml(e?.message || e)}</span><button type="button" class="btn-ghost" data-retry>Försök igen</button></div>`;
+  const bar = $("#status-bar");
+  bar.classList.remove("is-loading");
+  bar.classList.add("is-error");
+  bar.querySelector(".status-loading").textContent = "Kunde inte hämta tips";
+}
+
+$("#tips").addEventListener("click", (e) => {
+  if (!e.target.closest("[data-retry]")) return;
+  $("#status-bar .status-loading").textContent = "Hämtar tips…";
+  showLoading();
+  loadDashboard().catch(showLoadError);
+});
+
 async function loadDashboard() {
   const res = await fetch("/api/dashboard", { cache: "no-store" });
-  if (!res.ok) throw new Error("Kunde inte läsa dashboard");
+  if (!res.ok) throw new Error(`servern svarade ${res.status}`);
   const data = await res.json();
+  $("#status-bar").classList.remove("is-loading", "is-error");
+  $("#tips").setAttribute("aria-busy", "false");
 
   state.bestUpcoming = data.bestUpcoming || [];
   state.allCandidates = data.allCandidates || [];
@@ -1232,7 +1362,7 @@ function matchupHtml(m) {
   const val = v.value
     ? `${escapeHtml(v.pick)} @ ${escapeHtml(fmtOdd(v.value.odds))}${v.value.bookmaker ? ` (${escapeHtml(v.value.bookmaker)})` : ""} – ${v.value.value ? '<span class="val-badge val-yes">Värde</span>' : `<span class="val-badge val-no">Ej värde</span> <span class="mx-sub">från ${escapeHtml(fmtOdd(v.value.minOdds))}</span>`}`
     : '<span class="val-badge val-none">Inga odds</span>';
-  const other = v.otherValue?.length ? `<div class="mx-note">Värde i stället: ${v.otherValue.map((o) => `${escapeHtml(o.pick)} @ ${escapeHtml(fmtOdd(o.odds))}`).join(", ")}</div>` : "";
+  const other = v.otherValue?.length ? `<div class="mx-note">Värde i stället: ${v.otherValue.map((o) => `${escapeHtml(pickName(o.pick))} @ ${escapeHtml(fmtOdd(o.odds))}${o.minOdds ? ` (från ${escapeHtml(fmtOdd(o.minOdds))})` : ""}`).join(", ")}</div>` : "";
   const strengths = (list, name) => (list.length ? `<li><b>${escapeHtml(name)}:</b> ${list.map(escapeHtml).join(" · ")}</li>` : "");
   const edgeTxt = m.edgeTeam
     ? `Duellerna väger över till <b>${escapeHtml(m.edgeTeam === m.home ? H : A)}</b> (${m.edge > 0 ? "+" : ""}${String(m.edge).replace(".", ",")})`
@@ -1286,6 +1416,120 @@ async function toggleMatchup(btn, { reload = false } = {}) {
     const body = await res.json();
     if (!res.ok) throw new Error(body.error === "Okänd API-route" ? "GUI-servern kör en äldre version – starta om den (npm run gui) och ladda om sidan." : body.error || "Duellanalysen misslyckades");
     box.innerHTML = matchupHtml(body);
+    box.dataset.loaded = "1";
+  } catch (e) {
+    box.innerHTML = `<p class="scan-empty">${escapeHtml(e.message || e)}</p>`;
+  }
+}
+
+// ---------- Domarpanelen (bredvid Duellanalys): domaren mot ligasnittet och lagen + alla ligans domare ----------
+const REF_LEAGUES = new Set(["PL", "CH", "EL1", "EL2"]);
+const REF_TABLE_MIN = 5;
+const numSv = (x, d = 1) => (x == null ? "—" : Number(x).toFixed(d).replace(".", ","));
+const signSv = (x, d = 1) => (x == null ? "" : `${x > 0 ? "+" : x < 0 ? "−" : "±"}${numSv(Math.abs(x), d)}`);
+const pctSign = (p) => `${p > 0 ? "+" : p < 0 ? "−" : "±"}${Math.abs(p)} %`;
+const seasonSv = (since) => (since ? `${since.slice(0, 4)}/${String((Number(since.slice(2, 4)) + 1) % 100).padStart(2, "0")}` : "");
+// Mer än snittet = varm färg, mindre = kall, inom ±5 % = som snittet
+const cmpClass = (c) => (!c || Math.abs(c.pct) < 5 ? "even" : c.pct > 0 ? "more" : "less");
+
+// "3,44 · ligan 3,89 · −0,45 (−12 %) mindre än snittet"
+function refVsAvg(v, avg, cmp, d = 2) {
+  if (v == null) return `<span class="rf-v">—</span>`;
+  const word = !cmp ? "" : Math.abs(cmp.pct) < 5 ? "som snittet" : cmp.pct > 0 ? "mer än snittet" : "mindre än snittet";
+  return `<span class="rf-v">${numSv(v, d)}</span><span class="rf-avg">ligan ${numSv(avg, d)}</span>${cmp ? `<span class="rf-diff ${cmpClass(cmp)}">${signSv(cmp.diff, d)} (${pctSign(cmp.pct)}) ${word}</span>` : ""}`;
+}
+
+const recTxt = (r) => (r?.matches ? `${r.w}-${r.d}-${r.l}` : "—");
+const pctOf = (n, of) => (of ? `${Math.round((n / of) * 100)} %` : "—");
+
+function refStreakTxt(s) {
+  if (!s) return "—";
+  const one = { W: "seger", L: "förlust", D: "oavgjord" }[s.res];
+  const many = { W: "raka segrar", L: "raka förluster", D: "raka oavgjorda" }[s.res];
+  return s.n === 1 ? `1 ${one}` : `${s.n} ${many}`;
+}
+
+function refTeamBox(name, s) {
+  if (!s) return `<div class="rf-team"><h5>${escapeHtml(name)}</h5><p class="mx-sub">Laget finns inte i domarhistoriken.</p></div>`;
+  if (!s.matches) return `<div class="rf-team"><h5>${escapeHtml(name)}</h5><p class="mx-sub">Har inte haft domaren i någon ligamatch sedan 2012/13.</p></div>`;
+  const r = s.record;
+  const badges = (s.last || []).slice(0, 8).map((m) => {
+    const k = m.res === "W" ? "V" : m.res === "D" ? "O" : "F";
+    return `<span class="r-badge ${R_CLASS[k]}" title="${escapeHtml(`${fmtDateShort(m.date)} ${m.home ? "hemma" : "borta"} mot ${m.opp} ${m.score}`)}">${k}</span>`;
+  }).join("");
+  const flag = s.flag ? ` <span class="ref-badge ${s.flag === "wins" ? "win" : "loss"}">⚑ ${s.streak.n} raka</span>` : "";
+  return `<div class="rf-team${s.flag ? ` flag-${s.flag === "wins" ? "win" : "loss"}` : ""}"><h5>${escapeHtml(name)}${flag}</h5>
+    <div class="rf-grid">
+      <span class="tp-k">Matcher</span><span>${s.matches}</span>
+      <span class="tp-k">V-O-F</span><span><b>${r.w}-${r.d}-${r.l}</b></span>
+      <span class="tp-k">Vinner</span><span>${pctOf(r.w, s.matches)}</span>
+      <span class="tp-k">Förlorar</span><span>${pctOf(r.l, s.matches)}</span>
+      <span class="tp-k">Gula/match</span><span>${numSv(s.yellowPg, 2)} <small class="mx-sub">för laget</small></span>
+      <span class="tp-k">Svit nu</span><span>${refStreakTxt(s.streak)}</span>
+    </div>
+    ${badges ? `<div class="rf-last"><span class="tp-k">Senaste, nyast först</span> ${badges}</div>` : ""}
+  </div>`;
+}
+
+function refereeHtml(d) {
+  const H = d.home, A = d.away, avg = d.leagueAvg || {};
+  const lg = leagueName(d.league) || d.league;
+  const r = d.referee;
+  const period = `ligamatcher i ${escapeHtml(lg)} sedan ${seasonSv(d.since)}`;
+  const head = r
+    ? `<div class="mx-head"><div><span class="mx-k">Domare</span> <b class="rf-name">${escapeHtml(r.referee)}</b> <span class="mx-sub">${r.matches} matcher (${r.otherLeagues ? "alla engelska ligor, ny i ligan" : period})</span></div></div>
+      <div class="rf-stats">
+        <div class="rf-stat"><span class="tp-k">Gula kort per match</span>${refVsAvg(r.yellowPg, avg.yellowPg, r.yellowVsAvg, 2)}</div>
+        <div class="rf-stat"><span class="tp-k">Frisparkar per match</span>${refVsAvg(r.foulsPg, avg.foulsPg, r.foulsVsAvg, 1)}</div>
+        <div class="rf-stat"><span class="tp-k">Röda kort per match</span><span class="rf-v">${numSv(r.redPg, 2)}</span><span class="rf-avg">ligan ${numSv(avg.redPg, 2)}</span></div>
+        <div class="rf-stat"><span class="tp-k">1 / X / 2 med domaren</span><span class="rf-v">${pctShort(r.homeWinRate)} / ${pctShort(r.drawRate)} / ${pctShort(r.awayWinRate)}</span><span class="rf-avg">ligan ${pctShort(avg.homeWinRate)} / ${pctShort(avg.drawRate)} / ${pctShort(avg.awayWinRate)}</span></div>
+      </div>
+      <div class="rf-teams">${refTeamBox(H, r.home)}${refTeamBox(A, r.away)}</div>`
+    : `<div class="mx-head"><div><span class="mx-k">Domare</span> <b>inte tillsatt än</b> <span class="mx-sub">FotMob har domaren normalt 2–4 dagar före matchen. Tabellen visar lagens facit mot ligans alla domare.</span></div></div>
+      <div class="rf-stats">
+        <div class="rf-stat"><span class="tp-k">Ligasnitt gula per match</span><span class="rf-v">${numSv(avg.yellowPg, 2)}</span></div>
+        <div class="rf-stat"><span class="tp-k">Ligasnitt frisparkar per match</span><span class="rf-v">${numSv(avg.foulsPg, 1)}</span></div>
+      </div>`;
+  const diffCell = (c) => (c ? `<span class="rf-diff ${cmpClass(c)}">${pctSign(c.pct)}</span>` : "");
+  const teamCell = (x) => (x?.matches ? `<b>${recTxt(x)}</b> <small class="mx-sub">${pctOf(x.w, x.matches)} V</small>` : `<span class="mx-sub">—</span>`);
+  // Färre än REF_TABLE_MIN matcher i ligan ger brusiga snitt: döljs, utom matchens domare
+  const shown = (d.referees || []).filter((x) => x.matches >= REF_TABLE_MIN || (r && x.key === r.key));
+  const hidden = (d.referees || []).length - shown.length;
+  const rows = shown.map((x) => `<tr class="${r && x.key === r.key ? "rf-current" : ""}">
+      <td>${escapeHtml(x.referee)}</td><td class="num">${x.matches}</td>
+      <td class="num">${numSv(x.yellowPg, 2)} ${diffCell(x.yellowVsAvg)}</td>
+      <td class="num">${numSv(x.foulsPg, 1)} ${diffCell(x.foulsVsAvg)}</td>
+      <td class="num">${pctShort(x.homeWinRate)}</td>
+      <td>${teamCell(x.home)}</td><td>${teamCell(x.away)}</td></tr>`).join("");
+  return `<div class="rf-wrap">
+    ${head}
+    <details class="rf-all"${r ? "" : " open"}><summary>Alla domare i ${escapeHtml(lg)} (${shown.length}): kort, frisparkar och lagens facit</summary>
+      <div class="rf-table-wrap"><table class="rf-table">
+        <thead><tr><th>Domare</th><th class="num">Matcher</th><th class="num">Gula/m</th><th class="num">Frisp./m</th><th class="num">Hemmaseger</th><th>${escapeHtml(H)} V-O-F</th><th>${escapeHtml(A)} V-O-F</th></tr></thead>
+        <tbody>${rows || `<tr><td colspan="7" class="mx-sub">Inga domare med matcher i ligan</td></tr>`}</tbody>
+        <tfoot><tr><td>Ligasnitt</td><td class="num">${avg.matches ?? "—"}</td><td class="num">${numSv(avg.yellowPg, 2)}</td><td class="num">${numSv(avg.foulsPg, 1)}</td><td class="num">${pctShort(avg.homeWinRate)}</td><td></td><td></td></tr></tfoot>
+      </table></div>
+      ${hidden ? `<p class="mx-note">${hidden} domare med färre än ${REF_TABLE_MIN} matcher i ligan visas inte (för få matcher för ett snitt).</p>` : ""}
+    </details>
+    <div class="mx-note">Kort och frisparkar: ${period} (football-data.co.uk). Lagens V-O-F: alla ligamatcher med domaren sedan 2012/13 (PL–League Two). Domarstatistiken påverkar inte tipset eller värdeomdömet.</div>
+  </div>`;
+}
+
+async function toggleReferee(btn) {
+  const box = btn.closest(".tip-analyze")?.querySelector(".refpanel");
+  if (!box) return;
+  const open = btn.getAttribute("aria-expanded") === "true";
+  btn.setAttribute("aria-expanded", String(!open));
+  box.hidden = open;
+  btn.textContent = open ? "Domare" : "Dölj domare";
+  if (open || box.dataset.loaded) return;
+  box.innerHTML = `<p class="scan-empty">Hämtar domarstatistik…</p>`;
+  try {
+    const qs = new URLSearchParams({ league: btn.dataset.league, date: btn.dataset.date, home: btn.dataset.home, away: btn.dataset.away });
+    const res = await fetch(`/api/referees?${qs}`, { cache: "no-store" });
+    const body = await res.json();
+    if (!res.ok) throw new Error(body.error === "Okänd API-route" ? "GUI-servern kör en äldre version – starta om den (npm run gui) och ladda om sidan." : body.error || "Domarstatistiken misslyckades");
+    box.innerHTML = refereeHtml(body);
     box.dataset.loaded = "1";
   } catch (e) {
     box.innerHTML = `<p class="scan-empty">${escapeHtml(e.message || e)}</p>`;
@@ -1447,6 +1691,11 @@ for (const id of ["#tips", "#candidates"]) {
       printMatchup(printBtn);
       return;
     }
+    const refBtn = e.target.closest(".btn-referee");
+    if (refBtn) {
+      toggleReferee(refBtn);
+      return;
+    }
     const matchupBtn = e.target.closest(".btn-matchup");
     if (matchupBtn) {
       toggleMatchup(matchupBtn);
@@ -1547,7 +1796,7 @@ function scanItem(m) {
         </span>
         <span class="scan-pick">${
           b
-            ? `${escapeHtml(b.pick)} @ ${escapeHtml(fmtOdd(b.book))} <small>EV ${evTxt(b.ev)} · spela från ${escapeHtml(fmtOdd(b.minOdds))}</small>`
+            ? `${escapeHtml(pickName(b.pick))} @ ${escapeHtml(fmtOdd(b.book))} <small>EV ${evTxt(b.ev)} · spela från ${escapeHtml(fmtOdd(b.minOdds))}</small>`
             : `<small>${escapeHtml(h.why[0] || "")}</small>`
         }</span>
       </summary>
@@ -1592,7 +1841,7 @@ function agentBody(m, { withVerdict = false } = {}) {
       : "saknas";
   const marketRows = m.market.rows
     .map(
-      (r) => `<tr><td>${escapeHtml(r.pick)}</td><td>${pctTxt(r.modelP)}</td><td>${pctTxt(r.marketP)}</td>
+      (r) => `<tr><td>${escapeHtml(pickName(r.pick))}</td><td>${pctTxt(r.modelP)}</td><td>${pctTxt(r.marketP)}</td>
         <td>${escapeHtml(fmtOdd(r.book))}</td><td>${evTxt(r.ev)}</td>
         <td>${r.value === true ? '<span class="val-badge val-yes">Värde</span>' : r.value === false ? '<span class="val-badge val-no">Ej värde</span>' : "—"}</td></tr>`
     )
@@ -1772,6 +2021,4 @@ $("#scan-close").addEventListener("click", () => ($("#scan-panel").hidden = true
 
 syncLeaguePills();
 loadScan().catch(() => setScanButton("idle", "Daily Scanner", "Scanner"));
-loadDashboard().catch((e) => {
-  $("#tips").innerHTML = `<div class="empty">${escapeHtml(e.message || e)}</div>`;
-});
+loadDashboard().catch(showLoadError);

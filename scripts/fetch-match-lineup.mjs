@@ -130,7 +130,8 @@ async function fetchFotmobLineup(hit, meta) {
   }
   const homeXi = startersFromFotmob(lu.homeTeam);
   const awayXi = startersFromFotmob(lu.awayTeam);
-  const confirmed = homeXi.length >= 11 && awayXi.length >= 11;
+  // FotMob visar förväntad elva (predicted) och senaste elvan (lastStarting11) innan den officiella släpps
+  const confirmed = homeXi.length >= 11 && awayXi.length >= 11 && !/last|predict/i.test(lu.lineupType || "");
   return {
     ...baseFixture(meta, hit),
     lineupStatus: confirmed ? "confirmed" : "pending",
