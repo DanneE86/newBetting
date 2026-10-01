@@ -1,37 +1,55 @@
-/* Flikar + Stryktipset-vyn (gui/public/stryktips.js). Bygger pa tokens i styles.css. */
+/* Flikar + Stryktipset-vyn (gui/public/stryktips.js). Bygger på tokens i tokens.css (svenskaspel.design). */
+
+/*
+ * Lokala färger som speglar Gambling Cabins cellfärger (grön/gul/röd).
+ * De MÅSTE ha samma värden som i Gambling Cabin – mappa dem inte till varumärkestokens.
+ * Rosa (spik) och Gambling Cabin-knappen finns redan som --color-spik / --color-gc-button i tokens.css.
+ */
+:root {
+  --gc-green: #4cc873;
+  --gc-yellow: #f0c541;
+  --gc-red: #ef6b5b;
+  --gc-green-text: #0b1a10;  /* 9:1 mot --gc-green */
+  --gc-yellow-text: #1d1604; /* 11:1 mot --gc-yellow */
+  --gc-red-text: var(--color-text); /* 5,2:1 mot --gc-red (vit text gav bara 3:1) */
+  --st-tint: 12%;            /* andel färg i tonade ytor */
+}
 
 .view-tabs, .st-view {
   position: relative;
   z-index: 1;
-  width: min(1120px, calc(100% - 2rem));
+  width: min(var(--container-max), calc(100% - var(--space-6)));
   margin-inline: auto;
 }
 
+/* Samma utseende som .ds-tabs / .ds-tab */
 .view-tabs {
   display: flex;
-  gap: 0.25rem;
-  margin-bottom: 1.2rem;
-  border-bottom: 1px solid var(--line);
+  gap: var(--space-1);
+  margin-bottom: var(--space-5);
+  border-bottom: 1px solid var(--color-border-strong);
 }
 
 .view-tab {
+  min-height: var(--target-min);
   border: 0;
   background: transparent;
-  color: var(--muted);
+  color: var(--color-text-muted);
   font-family: var(--font-body);
-  font-weight: 700;
-  font-size: 0.95rem;
-  padding: 0.7rem 1.1rem;
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-tight);
+  padding: var(--space-2) var(--space-4);
   cursor: pointer;
-  border-bottom: 2px solid transparent;
+  border-bottom: 3px solid transparent;
   margin-bottom: -1px;
-  transition: color 0.15s ease, border-color 0.15s ease;
+  transition: color var(--duration-fast) var(--easing), border-color var(--duration-fast) var(--easing);
 }
 
-.view-tab:hover { color: var(--ink); }
-.view-tab.active { color: var(--lime); border-bottom-color: var(--lime); }
+.view-tab:hover { color: var(--color-text); }
+.view-tab.active { color: var(--color-text); border-bottom-color: var(--color-brand); font-weight: var(--font-weight-bold); }
 
-/* Tips-vyns sektioner doljs i Stryktips-fliken */
+/* Tips-vyns sektioner döljs i Stryktips-fliken */
 body.view-stryktips .status-bar,
 body.view-stryktips .acc-row,
 body.view-stryktips .acc-detail,
@@ -40,105 +58,104 @@ body.view-stryktips .help-score,
 body.view-stryktips .scan-panel,
 body.view-stryktips main { display: none !important; }
 
-.st-view { padding-bottom: 2rem; }
+.st-view { padding-bottom: var(--space-6); color: var(--color-text); font-family: var(--font-body); }
 
 .st-head {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-end;
-  gap: 1rem;
-  margin-bottom: 1rem;
+  gap: var(--space-4);
+  margin-bottom: var(--space-4);
 }
 
 .st-head h2 {
   margin: 0;
   font-family: var(--font-display);
-  font-size: clamp(1.6rem, 4vw, 2.3rem);
+  font-size: clamp(var(--font-size-xl), 4vw, var(--font-size-xxl));
+  line-height: var(--line-height-tight);
+  color: var(--color-text);
   text-transform: uppercase;
   letter-spacing: -0.01em;
 }
 
 .st-head h2 small {
   font-family: var(--font-body);
-  font-size: 0.9rem;
-  color: var(--muted);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
   text-transform: none;
-  font-weight: 600;
+  font-weight: var(--font-weight-medium);
   letter-spacing: 0;
 }
 
-.st-sub { margin: 0.35rem 0 0; color: var(--muted); font-size: 0.88rem; }
+.st-sub { margin: var(--space-1) 0 0; color: var(--color-text-muted); font-size: var(--font-size-sm); }
 
-.st-actions { display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: center; }
-.st-actions .btn-ghost { padding: 0.55rem 1rem; }
+.st-actions { display: flex; flex-wrap: wrap; gap: var(--space-2); align-items: center; }
 .st-actions .btn-ghost:disabled { opacity: 0.6; cursor: progress; }
 
-.st-empty { color: var(--muted); padding: 2rem 0; }
+.st-empty { color: var(--color-text-muted); padding: var(--space-6) 0; }
 
-.st-summary { display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 1.1rem; }
+.st-summary { display: flex; flex-direction: column; gap: var(--space-3); margin-bottom: var(--space-4); }
 
+/* Färgen kommer från .ds-notice-varianten i markupen */
 .st-note {
   margin: 0;
-  padding: 0.7rem 0.95rem;
-  border: 1px solid rgba(240, 180, 41, 0.35);
-  background: rgba(240, 180, 41, 0.08);
-  border-radius: 12px;
-  font-size: 0.88rem;
-  line-height: 1.45;
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-body);
 }
-.st-note.bad { border-color: rgba(239, 107, 91, 0.4); background: rgba(239, 107, 91, 0.08); }
 
 .st-stats {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-  gap: 0.6rem;
+  gap: var(--space-2);
 }
 
 .st-stats > div {
   display: flex;
   flex-direction: column;
-  gap: 0.15rem;
-  padding: 0.75rem 0.95rem;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  background: var(--panel);
+  gap: 2px;
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
 }
 
-.st-stats .k { font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
-.st-stats strong { font-size: 1.1rem; letter-spacing: 0.04em; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
-.st-stats small { color: var(--muted); font-size: 0.78rem; }
+.st-stats .k { font-size: var(--font-size-xs); letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-text-muted); font-weight: var(--font-weight-bold); }
+.st-stats strong { font-size: var(--font-size-lg); letter-spacing: 0.04em; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.st-stats small { color: var(--color-text-muted); font-size: var(--font-size-xs); }
 
 .st-method {
-  padding: 0.65rem 0.95rem;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  background: rgba(0, 0, 0, 0.2);
-  color: var(--muted);
-  font-size: 0.85rem;
-  line-height: 1.45;
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-body);
 }
-.st-method summary { cursor: pointer; color: var(--ink); font-weight: 600; }
-.st-method ul { margin: 0.5rem 0; padding-left: 1.1rem; }
+.st-method summary { cursor: pointer; color: var(--color-text); font-weight: var(--font-weight-bold); }
+.st-method ul { margin: var(--space-2) 0; padding-left: var(--space-4); }
 .st-method p { margin: 0; }
 
-.st-list { display: flex; flex-direction: column; gap: 0.7rem; }
+.st-list { display: flex; flex-direction: column; gap: var(--space-3); }
 
+/* Matchkortet har även .ds-card i markupen */
 .st-match {
-  padding: 0.95rem 1.1rem 1rem;
-  border: 1px solid var(--line);
-  border-radius: 16px;
-  background: linear-gradient(120deg, rgba(184, 242, 85, 0.05), transparent 40%), var(--panel);
-  animation: rise 0.45s ease both;
+  padding: var(--space-4) var(--space-4) var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+  animation: rise var(--duration-base) var(--easing) both;
 }
-.st-match.open { border-color: rgba(184, 242, 85, 0.35); }
+.st-match.open { border-color: var(--color-text-muted); box-shadow: var(--shadow-md); }
 
 .st-match-head {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
-  gap: 0.8rem;
+  gap: var(--space-3);
   align-items: center;
-  margin-bottom: 0.8rem;
+  margin-bottom: var(--space-3);
 }
 
 .st-num {
@@ -146,150 +163,148 @@ body.view-stryktips main { display: none !important; }
   place-items: center;
   width: 2.1rem;
   height: 2.1rem;
-  border-radius: 10px;
-  background: rgba(184, 242, 85, 0.12);
-  color: var(--lime);
-  font-weight: 700;
+  border-radius: var(--radius-md);
+  background: var(--color-surface-sunken);
+  color: var(--color-text);
+  font-weight: var(--font-weight-bold);
   font-variant-numeric: tabular-nums;
 }
 
-.st-title h3 { margin: 0; font-size: 1.08rem; line-height: 1.25; }
-.st-title h3 span { color: var(--muted); font-weight: 400; }
-.st-title p { margin: 0.2rem 0 0; color: var(--muted); font-size: 0.8rem; }
-.st-kick { color: var(--ink); font-weight: 600; }
+.st-title h3 { margin: 0; font-size: var(--font-size-md); line-height: var(--line-height-tight); color: var(--color-text); }
+.st-title h3 span { color: var(--color-text-muted); font-weight: var(--font-weight-regular); }
+.st-title p { margin: var(--space-1) 0 0; color: var(--color-text-muted); font-size: var(--font-size-xs); }
+.st-kick { color: var(--color-text); font-weight: var(--font-weight-bold); }
 
-.st-verdict { display: flex; flex-wrap: wrap; gap: 0.35rem; justify-content: flex-end; align-items: center; }
+.st-verdict { display: flex; flex-wrap: wrap; gap: var(--space-1); justify-content: flex-end; align-items: center; }
 
+/* Spelat tecken i kupong A: grön ifylld = ett tecken utan färgklass, kontur = halv/hel/B */
 .st-tip {
-  padding: 0.3rem 0.7rem;
-  border-radius: 999px;
-  background: var(--lime);
-  color: #102014;
-  font-weight: 700;
-  font-size: 0.82rem;
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-pill);
+  background: var(--color-success);
+  color: var(--color-text-on-brand);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-tight);
   white-space: nowrap;
 }
 
 .st-chip {
-  padding: 0.25rem 0.6rem;
-  border-radius: 999px;
-  border: 1px solid var(--line);
-  font-size: 0.74rem;
-  font-weight: 600;
+  padding: 2px var(--space-2);
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--color-border-strong);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
   white-space: nowrap;
 }
-.st-chip.good { color: var(--lime); border-color: rgba(184, 242, 85, 0.5); background: rgba(184, 242, 85, 0.08); }
-.st-chip.bad { color: var(--bad); border-color: rgba(239, 107, 91, 0.45); background: rgba(239, 107, 91, 0.07); }
-.st-chip.warn { color: var(--warn); border-color: rgba(240, 180, 41, 0.45); background: rgba(240, 180, 41, 0.07); }
-.st-chip.sys { color: var(--ink); background: rgba(255, 255, 255, 0.04); }
+.st-chip.good { color: var(--color-success); border-color: var(--color-success); background: var(--color-surface); }
+.st-chip.bad { color: var(--color-danger); border-color: var(--color-danger); background: var(--color-danger-bg); }
+.st-chip.warn { color: var(--color-warning); border-color: var(--color-warning); background: var(--color-surface); }
+.st-chip.sys { color: var(--color-text); background: var(--color-surface); }
 
-.st-probs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.5rem; }
+.st-probs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-2); }
 
 .st-prob {
-  padding: 0.55rem 0.7rem 0.6rem;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  background: rgba(0, 0, 0, 0.18);
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
   min-width: 0;
 }
-.st-prob.out { opacity: 0.45; }
-.st-in { padding: 0.05rem 0.4rem; border-radius: 999px; background: var(--lime); color: #102014; font-size: 0.68rem; font-weight: 700; white-space: nowrap; }
-.st-tip.halv { background: transparent; color: var(--lime); box-shadow: inset 0 0 0 2px var(--lime); }
-.st-tip.hel { background: transparent; color: var(--warn); box-shadow: inset 0 0 0 2px var(--warn); }
-.st-prob.tip { border-color: rgba(184, 242, 85, 0.6); background: rgba(184, 242, 85, 0.07); }
-.st-prob.hit { box-shadow: inset 0 0 0 2px rgba(240, 180, 41, 0.55); }
+/* Dämpad = inte med i A. Ingen opacitet (texten måste klara 4,5:1), i stället streckad ram och grå yta */
+.st-prob.out { background: var(--color-surface-muted); border-style: dashed; }
+.st-in { padding: 1px var(--space-2); border-radius: var(--radius-pill); background: var(--color-success); color: var(--color-text-on-brand); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); white-space: nowrap; }
+.st-tip.halv { background: var(--color-surface); color: var(--color-success); box-shadow: inset 0 0 0 2px var(--color-success); }
+.st-tip.hel { background: var(--color-surface); color: var(--color-warning); box-shadow: inset 0 0 0 2px var(--color-warning); }
+.st-prob.tip { border-color: var(--color-success); background: var(--color-success-bg); }
+.st-prob.hit { box-shadow: inset 0 0 0 2px var(--color-warning); }
 
-.st-prob-top { display: flex; align-items: baseline; gap: 0.45rem; }
-.st-sign { color: var(--muted); font-weight: 700; font-size: 0.78rem; }
-.st-team { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 0.86rem; }
-.st-prob-top strong { font-size: 1.05rem; font-variant-numeric: tabular-nums; }
-.st-prob.tip .st-prob-top strong { color: var(--lime); }
+.st-prob-top { display: flex; align-items: baseline; gap: var(--space-2); }
+.st-sign { color: var(--color-text-muted); font-weight: var(--font-weight-bold); font-size: var(--font-size-xs); }
+.st-team { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: var(--font-size-sm); }
+.st-prob-top strong { font-size: var(--font-size-md); font-variant-numeric: tabular-nums; color: var(--color-text); }
+.st-prob.tip .st-prob-top strong { color: var(--color-text); }
 
-.st-bar { height: 5px; margin: 0.45rem 0 0.4rem; border-radius: 99px; background: rgba(255, 255, 255, 0.07); overflow: hidden; }
-.st-bar span { display: block; height: 100%; border-radius: 99px; background: var(--muted); }
-.st-prob.tip .st-bar span { background: var(--lime); }
+.st-bar { height: 5px; margin: var(--space-2) 0 var(--space-2); border-radius: var(--radius-pill); background: var(--color-surface-sunken); overflow: hidden; }
+.st-bar span { display: block; height: 100%; border-radius: var(--radius-pill); background: var(--color-text-muted); }
+.st-prob.tip .st-bar span { background: var(--color-success); }
 
-.st-prob-sub { display: flex; flex-wrap: wrap; gap: 0.2rem 0.6rem; color: var(--muted); font-size: 0.72rem; font-variant-numeric: tabular-nums; }
-.st-sv { color: var(--warn); font-weight: 600; }
+.st-prob-sub { display: flex; flex-wrap: wrap; gap: 2px var(--space-2); color: var(--color-text-muted); font-size: var(--font-size-xs); font-variant-numeric: tabular-nums; }
+.st-sv { color: var(--color-warning); font-weight: var(--font-weight-bold); }
 
+/* Knappen har .ds-btn .ds-btn--secondary i markupen; här bara bredd och avstånd */
 .st-analyze {
-  margin-top: 0.75rem;
+  margin-top: var(--space-3);
   width: 100%;
-  border: 1px dashed rgba(184, 242, 85, 0.35);
-  background: transparent;
-  color: var(--lime);
-  font-family: var(--font-body);
-  font-weight: 600;
-  font-size: 0.85rem;
-  padding: 0.55rem 0.9rem;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: background 0.15s ease;
 }
-.st-analyze:hover { background: rgba(184, 242, 85, 0.07); }
 
 .st-analysis {
-  margin-top: 0.85rem;
-  padding-top: 0.85rem;
-  border-top: 1px solid var(--line);
+  margin-top: var(--space-3);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--color-border);
   display: flex;
   flex-direction: column;
-  gap: 0.9rem;
-  animation: rise 0.35s ease both;
+  gap: var(--space-4);
+  animation: rise var(--duration-base) var(--easing) both;
 }
 
-.st-bullets { margin: 0; padding-left: 1.1rem; line-height: 1.55; font-size: 0.9rem; }
-.st-bullets li + li { margin-top: 0.2rem; }
+.st-bullets { margin: 0; padding-left: var(--space-4); line-height: var(--line-height-body); font-size: var(--font-size-sm); }
+.st-bullets li + li { margin-top: var(--space-1); }
 
-.st-svs { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem 0.5rem; margin-top: 0.6rem; font-size: 0.78rem; }
-.st-svs-k { color: var(--muted); font-weight: 600; margin-left: 0.4rem; }
+.st-svs { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-1) var(--space-2); margin-top: var(--space-2); font-size: var(--font-size-xs); }
+.st-svs-k { color: var(--color-text-muted); font-weight: var(--font-weight-bold); margin-left: var(--space-2); }
 .st-svs-k:first-child { margin-left: 0; }
-.st-exp { padding: 0.15rem 0.5rem; border: 1px solid var(--line); border-radius: 999px; white-space: nowrap; font-variant-numeric: tabular-nums; }
-.st-exp.good { color: var(--lime); border-color: rgba(184, 242, 85, 0.45); }
-.st-exp.bad { color: var(--bad, #f07171); border-color: rgba(240, 113, 113, 0.4); }
-.st-experts { margin-top: 0.9rem; }
-.st-experts h4 { margin: 0 0 0.4rem; font-size: 0.85rem; }
-.st-expert { padding: 0.6rem 0.75rem; border: 1px solid var(--line); border-radius: 10px; font-size: 0.86rem; line-height: 1.5; }
-.st-expert + .st-expert { margin-top: 0.4rem; }
+.st-exp { padding: 2px var(--space-2); border: 1px solid var(--color-border-strong); border-radius: var(--radius-pill); background: var(--color-surface); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.st-exp.good { color: var(--color-success); border-color: var(--color-success); }
+.st-exp.bad { color: var(--color-danger); border-color: var(--color-danger); }
+.st-experts { margin-top: var(--space-4); }
+.st-experts h4 { margin: 0 0 var(--space-2); font-size: var(--font-size-sm); }
+.st-expert { padding: var(--space-2) var(--space-3); border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-surface); font-size: var(--font-size-sm); line-height: var(--line-height-body); }
+.st-expert + .st-expert { margin-top: var(--space-2); }
 .st-expert p { margin: 0; }
-.st-expert-head { margin-bottom: 0.25rem !important; color: var(--muted); }
-.st-expert-head strong, .st-expert-head b { color: var(--ink); }
+.st-expert-head { margin-bottom: var(--space-1) !important; color: var(--color-text-muted); }
+.st-expert-head strong, .st-expert-head b { color: var(--color-text); }
 
-.st-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 0.9rem; }
+.st-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: var(--space-4); }
 
-.st-cmp { width: 100%; border-collapse: collapse; font-size: 0.84rem; font-variant-numeric: tabular-nums; }
-.st-cmp th, .st-cmp td { padding: 0.38rem 0.5rem; border-bottom: 1px solid var(--line); text-align: right; }
-.st-cmp th:first-child { text-align: left; color: var(--muted); font-weight: 600; }
-.st-cmp thead th { color: var(--muted); font-size: 0.74rem; }
-.st-cmp tr.final td, .st-cmp tr.final th { color: var(--lime); font-weight: 700; }
+/* Tabellerna har även .ds-table i markupen; reglerna nedan finjusterar (högerställda siffror) */
+.st-cmp { width: 100%; border-collapse: collapse; font-size: var(--font-size-sm); font-variant-numeric: tabular-nums; }
+.st-cmp th, .st-cmp td { padding: var(--space-1) var(--space-2); border-bottom: 1px solid var(--color-border); text-align: right; color: var(--color-text); }
+.st-cmp th:first-child { text-align: left; color: var(--color-text-muted); font-weight: var(--font-weight-bold); }
+.st-cmp thead th { color: var(--color-text-muted); font-size: var(--font-size-xs); border-bottom: 2px solid var(--color-border-strong); }
+.st-cmp tr.final td, .st-cmp tr.final th { color: var(--color-success); font-weight: var(--font-weight-bold); }
 
-.st-goals { display: flex; flex-direction: column; gap: 0.35rem; font-size: 0.85rem; }
-.st-goals p { margin: 0; display: flex; justify-content: space-between; gap: 0.8rem; padding: 0.35rem 0; border-bottom: 1px solid var(--line); }
-.st-goals span { color: var(--muted); }
-.st-goals strong { text-align: right; font-weight: 600; }
+.st-goals { display: flex; flex-direction: column; gap: var(--space-1); font-size: var(--font-size-sm); }
+.st-goals p { margin: 0; display: flex; justify-content: space-between; gap: var(--space-3); padding: var(--space-1) 0; border-bottom: 1px solid var(--color-border); }
+.st-goals span { color: var(--color-text-muted); }
+.st-goals strong { text-align: right; font-weight: var(--font-weight-bold); }
 
-.st-teams { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.7rem; }
+.st-teams { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-3); }
 
-.st-team-card { padding: 0.75rem 0.9rem; border: 1px solid var(--line); border-radius: 12px; background: rgba(0, 0, 0, 0.18); font-size: 0.84rem; }
-.st-team-card h4 { margin: 0 0 0.5rem; font-size: 0.95rem; }
-.st-team-card h4 small { color: var(--muted); font-weight: 500; font-size: 0.76rem; }
-.st-team-card dl { margin: 0; display: flex; flex-direction: column; gap: 0.25rem; }
-.st-team-card dl div { display: flex; justify-content: space-between; gap: 0.6rem; }
-.st-team-card dt { color: var(--muted); }
+/* Lagkortet har även .ds-card i markupen */
+.st-team-card { padding: var(--space-3) var(--space-4); border: 1px solid var(--color-border); border-radius: var(--radius-lg); background: var(--color-surface-muted); box-shadow: none; font-size: var(--font-size-sm); }
+.st-team-card h4 { margin: 0 0 var(--space-2); font-size: var(--font-size-md); }
+.st-team-card h4 small { color: var(--color-text-muted); font-weight: var(--font-weight-medium); font-size: var(--font-size-xs); }
+.st-team-card dl { margin: 0; display: flex; flex-direction: column; gap: var(--space-1); }
+.st-team-card dl div { display: flex; justify-content: space-between; gap: var(--space-2); }
+.st-team-card dt { color: var(--color-text-muted); }
 .st-team-card dd { margin: 0; text-align: right; }
-.st-team-card dd small { color: var(--muted); }
+.st-team-card dd small { color: var(--color-text-muted); }
 
-.st-form { display: flex; gap: 0.25rem; margin: 0.6rem 0 0.4rem; }
-.st-form span { display: grid; place-items: center; width: 1.45rem; height: 1.45rem; border-radius: 6px; font-size: 0.72rem; font-weight: 700; }
-.st-form .f-V { background: rgba(184, 242, 85, 0.2); color: var(--lime); }
-.st-form .f-O { background: rgba(255, 255, 255, 0.08); color: var(--ink); }
-.st-form .f-F { background: rgba(239, 107, 91, 0.18); color: var(--bad); }
+.st-form { display: flex; gap: var(--space-1); margin: var(--space-2) 0 var(--space-2); }
+.st-form span { display: grid; place-items: center; width: 1.45rem; height: 1.45rem; border-radius: var(--radius-sm); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); }
+.st-form .f-V { background: var(--color-success); color: var(--color-text-on-brand); }
+.st-form .f-O { background: var(--color-surface-sunken); color: var(--color-text); }
+.st-form .f-F { background: var(--color-danger-bg); color: var(--color-danger); }
 
-.st-last, .st-h2h ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 0.15rem; font-size: 0.8rem; }
-.st-last span, .st-h2h span { color: var(--muted); font-variant-numeric: tabular-nums; margin-right: 0.35rem; }
-.st-last b.f-V { color: var(--lime); }
-.st-last b.f-F { color: var(--bad); }
-.st-h2h h4 { margin: 0 0 0.35rem; font-size: 0.9rem; }
+.st-last, .st-h2h ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 2px; font-size: var(--font-size-xs); }
+.st-last span, .st-h2h span { color: var(--color-text-muted); font-variant-numeric: tabular-nums; margin-right: var(--space-1); }
+.st-last b.f-V { color: var(--color-success); }
+.st-last b.f-F { color: var(--color-danger); }
+.st-h2h h4 { margin: 0 0 var(--space-1); font-size: var(--font-size-sm); }
 
 @media (max-width: 820px) {
   .st-match-head { grid-template-columns: auto minmax(0, 1fr); }
@@ -298,120 +313,125 @@ body.view-stryktips main { display: none !important; }
 }
 
 @media (max-width: 560px) {
-  .view-tabs, .st-view { width: calc(100% - 2rem); }
+  .view-tabs, .st-view { width: calc(100% - var(--space-6)); }
   .st-probs { grid-template-columns: 1fr; }
   .st-actions { width: 100%; }
 }
 
 .st-dot { display: inline-block; width: 0.6rem; height: 0.6rem; border-radius: 50%; flex: none; vertical-align: middle; }
-.st-dot.green { background: #4cc873; }
-.st-dot.yellow { background: #f0c541; }
-.st-dot.red { background: #ef6b5b; }
+.st-dot.green { background: var(--gc-green); }
+.st-dot.yellow { background: var(--gc-yellow); }
+.st-dot.red { background: var(--gc-red); }
 .st-prob-top .st-dot { align-self: center; }
-.st-steps { margin: 0.5rem 0; padding-left: 1.2rem; line-height: 1.55; }
-.st-steps li + li { margin-top: 0.25rem; }
-.st-reduced p { margin: 0.4rem 0 0.6rem; }
-.st-rows { max-height: 18rem; overflow: auto; margin: 0.6rem 0 0; padding: 0.6rem 0.75rem; border: 1px solid var(--line); border-radius: 10px; font-size: 0.8rem; line-height: 1.45; letter-spacing: 0.08em; }
+.st-steps { margin: var(--space-2) 0; padding-left: var(--space-5); line-height: var(--line-height-body); }
+.st-steps li + li { margin-top: var(--space-1); }
+.st-reduced p { margin: var(--space-2) 0 var(--space-2); }
+.st-rows { max-height: 18rem; overflow: auto; margin: var(--space-2) 0 0; padding: var(--space-2) var(--space-3); border: 1px solid var(--color-border-strong); border-radius: var(--radius-md); background: var(--color-surface-muted); color: var(--color-text); font-size: var(--font-size-xs); line-height: var(--line-height-body); letter-spacing: 0.08em; }
 
-/* Fargkodning (Gambling Cabin): hela rutan i tecknets farg */
-.st-prob.c-green { border-color: #4cc873; background: rgba(76, 200, 115, 0.12); box-shadow: inset 4px 0 0 #4cc873; }
-.st-prob.c-yellow { border-color: #f0c541; background: rgba(240, 197, 65, 0.1); box-shadow: inset 4px 0 0 #f0c541; }
-.st-prob.c-red { border-color: #ef6b5b; background: rgba(239, 107, 91, 0.12); box-shadow: inset 4px 0 0 #ef6b5b; }
-.st-prob.c-green .st-bar span { background: #4cc873; }
-.st-prob.c-yellow .st-bar span { background: #f0c541; }
-.st-prob.c-red .st-bar span { background: #ef6b5b; }
-.st-prob.c-green .st-prob-top strong { color: #4cc873; }
-.st-prob.c-yellow .st-prob-top strong { color: #f0c541; }
-.st-prob.c-red .st-prob-top strong { color: #ef6b5b; }
-.st-prob.hit.c-green, .st-prob.hit.c-yellow, .st-prob.hit.c-red { box-shadow: inset 4px 0 0 currentColor, inset 0 0 0 2px rgba(255, 255, 255, 0.55); }
-.st-in.c-green { background: #4cc873; color: #0b1a10; }
-.st-in.c-yellow { background: #f0c541; color: #1d1604; }
-.st-in.c-red { background: #ef6b5b; color: #fff; }
-.st-prob.c-pink { border-color: #f07ab8; background: rgba(240, 122, 184, 0.12); box-shadow: inset 4px 0 0 #f07ab8; }
-.st-prob.c-pink .st-bar span { background: #f07ab8; }
-.st-prob.c-pink .st-prob-top strong { color: #f07ab8; }
-.st-prob.hit.c-pink { box-shadow: inset 4px 0 0 #f07ab8, inset 0 0 0 2px rgba(255, 255, 255, 0.55); }
-.st-in.c-pink { background: #f07ab8; color: #2a0a1c; }
-.st-legend { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem 0.5rem; margin: 0 0 0.9rem; color: var(--muted); font-size: 0.82rem; }
-.st-legend b { color: var(--ink); }
-.st-gc { display: inline-block; margin-top: 0.5rem; padding: 0.55rem 1rem; border-radius: 999px; background: #0a8a3a; color: #fff; font-weight: 700; text-decoration: none; }
-.st-gc:hover { background: #0ca045; }
-.st-gc.small { align-self: flex-start; padding: 0.3rem 0.7rem; font-size: 0.78rem; }
-.st-gc-off { color: var(--muted); font-size: 0.85rem; }
+/* Färgkodning (Gambling Cabin): hela rutan i tecknets färg. Siffran står i textfärg för kontrastens skull. */
+.st-prob.c-green { border-color: var(--gc-green); background: color-mix(in srgb, var(--gc-green) var(--st-tint), var(--color-surface)); box-shadow: inset 4px 0 0 var(--gc-green); }
+.st-prob.c-yellow { border-color: var(--gc-yellow); background: color-mix(in srgb, var(--gc-yellow) var(--st-tint), var(--color-surface)); box-shadow: inset 4px 0 0 var(--gc-yellow); }
+.st-prob.c-red { border-color: var(--gc-red); background: color-mix(in srgb, var(--gc-red) var(--st-tint), var(--color-surface)); box-shadow: inset 4px 0 0 var(--gc-red); }
+.st-prob.c-green .st-bar span { background: var(--gc-green); }
+.st-prob.c-yellow .st-bar span { background: var(--gc-yellow); }
+.st-prob.c-red .st-bar span { background: var(--gc-red); }
+.st-prob.c-green .st-prob-top strong,
+.st-prob.c-yellow .st-prob-top strong,
+.st-prob.c-red .st-prob-top strong { color: var(--color-text); }
+.st-prob.hit.c-green { box-shadow: inset 4px 0 0 var(--gc-green), inset 0 0 0 2px var(--color-text); }
+.st-prob.hit.c-yellow { box-shadow: inset 4px 0 0 var(--gc-yellow), inset 0 0 0 2px var(--color-text); }
+.st-prob.hit.c-red { box-shadow: inset 4px 0 0 var(--gc-red), inset 0 0 0 2px var(--color-text); }
+.st-in.c-green { background: var(--gc-green); color: var(--gc-green-text); }
+.st-in.c-yellow { background: var(--gc-yellow); color: var(--gc-yellow-text); }
+.st-in.c-red { background: var(--gc-red); color: var(--gc-red-text); }
+/* Spikar alltid rosa (Gambling Cabin id 5) */
+.st-prob.c-pink { border-color: var(--color-spik); background: color-mix(in srgb, var(--color-spik) var(--st-tint), var(--color-surface)); box-shadow: inset 4px 0 0 var(--color-spik); }
+.st-prob.c-pink .st-bar span { background: var(--color-spik); }
+.st-prob.c-pink .st-prob-top strong { color: var(--color-spik-text); }
+.st-prob.hit.c-pink { box-shadow: inset 4px 0 0 var(--color-spik), inset 0 0 0 2px var(--color-text); }
+.st-in.c-pink { background: var(--color-spik); color: var(--color-spik-text); }
+.st-legend { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-1) var(--space-2); margin: 0 0 var(--space-4); color: var(--color-text-muted); font-size: var(--font-size-sm); }
+.st-legend b { color: var(--color-text); }
+/* Gambling Cabin-knappen har även .ds-btn i markupen men behåller Gambling Cabins gröna färg */
+.st-gc { display: inline-flex; margin-top: var(--space-2); padding: var(--space-2) var(--space-4); border-radius: var(--radius-pill); background: var(--color-gc-button); color: var(--color-text-on-brand); font-weight: var(--font-weight-bold); text-decoration: none; }
+.st-gc:hover { background: color-mix(in srgb, var(--color-gc-button) 80%, var(--color-text)); }
+.st-gc.small { align-self: flex-start; min-height: 32px; padding: var(--space-1) var(--space-3); font-size: var(--font-size-xs); }
+.st-gc-off { color: var(--color-text-muted); font-size: var(--font-size-sm); }
 
-.st-wait { color: var(--warn); font-size: 0.82rem; }
+.st-wait { color: var(--color-warning); font-size: var(--font-size-xs); }
 
-/* System B (gar emot A) */
-.st-tip.sysb { background: transparent; color: #7fb6ff; box-shadow: inset 0 0 0 2px #7fb6ff; }
-.st-b { padding: 0.05rem 0.35rem; border-radius: 999px; background: #7fb6ff; color: #0a1628; font-size: 0.66rem; font-weight: 800; }
-.st-stats > div.sysb { border-color: rgba(127, 182, 255, 0.45); }
+/* System B (går emot A) */
+.st-tip.sysb { background: var(--color-surface); color: var(--color-info); box-shadow: inset 0 0 0 2px var(--color-info); }
+.st-b { padding: 1px var(--space-1); border-radius: var(--radius-pill); background: var(--color-info); color: var(--color-text-on-brand); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); }
+.st-stats > div.sysb { border-color: var(--color-info); }
 
 /* Backtest */
-.st-backtest p { margin: 0.5rem 0; line-height: 1.5; font-size: 0.88rem; }
-.st-bt { width: 100%; border-collapse: collapse; margin: 0.6rem 0; font-size: 0.85rem; font-variant-numeric: tabular-nums; }
-.st-bt th, .st-bt td { padding: 0.35rem 0.5rem; border-bottom: 1px solid var(--line); text-align: right; }
-.st-bt th:first-child { text-align: left; font-weight: 600; }
-.st-bt thead th { color: var(--muted); font-weight: 600; }
-.st-bt td.up { color: #4cc873; font-weight: 700; }
-.st-bt td.down { color: #ef6b5b; }
-.st-backtest .pos { color: #4cc873; }
-.st-backtest .neg { color: #ef6b5b; }
-.st-bt-draws { margin-top: 0.4rem; }
-.st-bt tr.st-bt-sum th, .st-bt tr.st-bt-sum td { border-top: 2px solid var(--line); font-weight: 700; }
-.st-bt-draws summary { cursor: pointer; font-weight: 600; }
-.st-note-small { color: var(--muted); font-size: 0.8rem !important; }
-@media (max-width: 640px) { .st-bt { font-size: 0.75rem; } .st-bt th, .st-bt td { padding: 0.3rem; } }
+.st-backtest p { margin: var(--space-2) 0; line-height: var(--line-height-body); font-size: var(--font-size-sm); }
+.st-bt { width: 100%; border-collapse: collapse; margin: var(--space-2) 0; font-size: var(--font-size-sm); font-variant-numeric: tabular-nums; }
+.st-bt th, .st-bt td { padding: var(--space-1) var(--space-2); border-bottom: 1px solid var(--color-border); text-align: right; color: var(--color-text); }
+.st-bt th:first-child { text-align: left; font-weight: var(--font-weight-bold); }
+.st-bt thead th { color: var(--color-text-muted); font-weight: var(--font-weight-bold); border-bottom: 2px solid var(--color-border-strong); }
+.st-bt tbody th { color: var(--color-text); }
+.st-bt td.up { color: var(--color-success); font-weight: var(--font-weight-bold); }
+.st-bt td.down { color: var(--color-danger); }
+.st-backtest .pos { color: var(--color-success); }
+.st-backtest .neg { color: var(--color-danger); }
+.st-bt-draws { margin-top: var(--space-2); }
+.st-bt tr.st-bt-sum th, .st-bt tr.st-bt-sum td { border-top: 2px solid var(--color-border-strong); font-weight: var(--font-weight-bold); }
+.st-bt-draws summary { cursor: pointer; font-weight: var(--font-weight-bold); color: var(--color-text); }
+.st-note-small { color: var(--color-text-muted); font-size: var(--font-size-xs) !important; }
+@media (max-width: 640px) { .st-bt { font-size: var(--font-size-xs); } .st-bt th, .st-bt td { padding: var(--space-1); } }
 
 /* Startelvor (samma data som Oddset) */
-.st-lineup { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem 0.6rem; margin-top: 0.5rem; font-size: 0.8rem; }
-.st-lu { padding: 0.15rem 0.55rem; border-radius: 999px; border: 1px solid var(--line); font-weight: 600; }
-.st-lu.ok { color: #4cc873; border-color: rgba(76, 200, 115, 0.5); }
-.st-lu.wait { color: var(--warn); border-color: rgba(240, 180, 41, 0.45); }
-.st-lu-side small { color: var(--muted); }
-.st-lu-note { flex-basis: 100%; color: var(--muted); }
+.st-lineup { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-1) var(--space-2); margin-top: var(--space-2); font-size: var(--font-size-xs); }
+.st-lu { padding: 2px var(--space-2); border-radius: var(--radius-pill); border: 1px solid var(--color-border-strong); background: var(--color-surface); font-weight: var(--font-weight-bold); }
+.st-lu.ok { color: var(--color-success); border-color: var(--color-success); }
+.st-lu.wait { color: var(--color-warning); border-color: var(--color-warning); }
+.st-lu-side small { color: var(--color-text-muted); }
+.st-lu-note { flex-basis: 100%; color: var(--color-text-muted); }
 .st-bt-wrap { overflow-x: auto; }
 
-/* Varde per omgang */
-.st-value { margin: 0; padding: 0.6rem 0.9rem; border-radius: 12px; border: 1px solid var(--line); font-size: 0.9rem; }
-.st-value.low { border-color: rgba(239, 107, 91, 0.55); background: rgba(239, 107, 91, 0.08); color: #f3a39a; }
-.st-value.high { border-color: rgba(76, 200, 115, 0.55); background: rgba(76, 200, 115, 0.08); color: #8fe0a8; }
-.st-value.normal { color: var(--muted); }
+/* Värde per omgång (har även .ds-notice i markupen) */
+.st-value { margin: 0; font-size: var(--font-size-sm); color: var(--color-text); }
+.st-value.low { border-left-color: var(--color-danger); background: var(--color-danger-bg); }
+.st-value.high { border-left-color: var(--color-success); background: var(--color-success-bg); }
+.st-value.normal { border-left-color: var(--color-border-strong); background: var(--color-surface-muted); color: var(--color-text-muted); }
 
-/* Stryktipset B: egna spikar (renderB i stryktips.js) */
-.sb-panel { margin: 1rem 0; padding: 1rem; border: 1px solid var(--line); border-radius: 16px; background: var(--panel); }
-.sb-panel h3 { margin: 0; font-size: 1.05rem; }
-.sb-panel h3 small { color: var(--muted); font-weight: 500; font-size: 0.85rem; }
-.sb-panel-head { display: flex; flex-wrap: wrap; gap: 0.8rem; justify-content: space-between; align-items: flex-start; margin-bottom: 0.8rem; }
+/* Stryktipset B: egna spikar (renderB i stryktips.js). Panelerna har även .ds-card i markupen */
+.sb-panel { margin: var(--space-4) 0; padding: var(--space-4); border: 1px solid var(--color-border); border-radius: var(--radius-lg); background: var(--color-surface); box-shadow: var(--shadow-sm); }
+.sb-panel h3 { margin: 0; font-size: var(--font-size-lg); line-height: var(--line-height-tight); color: var(--color-text); }
+.sb-panel h3 small { color: var(--color-text-muted); font-weight: var(--font-weight-medium); font-size: var(--font-size-sm); }
+.sb-panel-head { display: flex; flex-wrap: wrap; gap: var(--space-3); justify-content: space-between; align-items: flex-start; margin-bottom: var(--space-3); }
 .sb-panel-head > div:first-child { flex: 1 1 22rem; }
-.sb-generate { padding: 0.6rem 1.1rem; }
-.sb-list { display: grid; gap: 0.4rem; }
-.sb-row { display: grid; grid-template-columns: auto minmax(0, 1fr) auto auto; gap: 0.6rem; align-items: center; padding: 0.45rem 0.6rem; border: 1px solid var(--line); border-radius: 12px; background: rgba(0, 0, 0, 0.18); }
-.sb-row.locked { border-color: rgba(184, 242, 85, 0.6); background: rgba(184, 242, 85, 0.06); }
+.sb-list { display: grid; gap: var(--space-2); }
+.sb-row { display: grid; grid-template-columns: auto minmax(0, 1fr) auto auto; gap: var(--space-2); align-items: center; padding: var(--space-2) var(--space-3); border: 1px solid var(--color-border); border-radius: var(--radius-lg); background: var(--color-surface-muted); }
+.sb-row.locked { border-color: var(--color-success); background: var(--color-success-bg); }
 .sb-match { min-width: 0; display: flex; flex-direction: column; }
 .sb-match b { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.sb-match small { color: var(--muted); font-size: 0.78rem; }
-.sb-signs, .sb-scope { display: flex; gap: 0.25rem; }
+.sb-match small { color: var(--color-text-muted); font-size: var(--font-size-xs); }
+.sb-signs, .sb-scope { display: flex; gap: var(--space-1); }
 .sb-scope { flex-wrap: wrap; }
-.sb-sign { display: flex; flex-direction: column; align-items: center; min-width: 3.1rem; padding: 0.3rem 0.4rem; border: 1px solid var(--line); border-radius: 10px; background: transparent; color: var(--ink); font: inherit; font-weight: 700; cursor: pointer; }
-.sb-sign small { color: var(--muted); font-size: 0.68rem; font-weight: 500; }
-.sb-sign:hover { border-color: rgba(184, 242, 85, 0.6); }
-.sb-sign.on { background: var(--lime); border-color: var(--lime); color: #102014; }
-.sb-sign.on small { color: #102014; }
-.sb-scope button { padding: 0.3rem 0.55rem; border: 1px solid var(--line); border-radius: 999px; background: transparent; color: var(--muted); font: inherit; font-size: 0.78rem; font-weight: 600; cursor: pointer; }
-.sb-scope button[aria-pressed="true"] { color: var(--lime); border-color: rgba(184, 242, 85, 0.6); background: rgba(184, 242, 85, 0.1); }
-.sb-scope button:disabled { opacity: 0.35; cursor: default; }
-.sb-table { width: 100%; border-collapse: collapse; margin: 0.6rem 0; font-size: 0.85rem; }
-.sb-table th, .sb-table td { padding: 0.3rem 0.5rem; border-bottom: 1px solid var(--line); text-align: left; white-space: nowrap; }
-.sb-table thead th { color: var(--muted); font-weight: 600; }
-.sb-table tbody th { font-weight: 500; }
-.st-tip.mine { box-shadow: 0 0 0 2px var(--warn); }
-.sb-coupons { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); gap: 0.8rem; margin-top: 0.8rem; }
-.sb-coupon { padding: 0.8rem; border: 1px solid var(--line); border-radius: 12px; background: rgba(0, 0, 0, 0.18); min-width: 0; }
-.sb-facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.4rem 0.8rem; margin: 0.6rem 0; }
-.sb-facts dt { color: var(--muted); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; }
-.sb-facts dd { margin: 0; font-weight: 600; }
-.sb-rows { margin-top: 0.6rem; }
-.sb-rows summary { cursor: pointer; font-weight: 600; }
+.sb-sign { display: flex; flex-direction: column; align-items: center; min-width: 3.1rem; min-height: var(--target-min); padding: var(--space-1) var(--space-2); border: 1px solid var(--color-text-muted); border-radius: var(--radius-md); background: var(--color-surface); color: var(--color-text); font: inherit; font-weight: var(--font-weight-bold); cursor: pointer; transition: background-color var(--duration-fast) var(--easing), border-color var(--duration-fast) var(--easing); }
+.sb-sign small { color: var(--color-text-muted); font-size: var(--font-size-xs); font-weight: var(--font-weight-medium); }
+.sb-sign:hover { border-color: var(--color-text); background: var(--color-surface-muted); }
+.sb-sign.on { background: var(--color-success); border-color: var(--color-success); color: var(--color-text-on-brand); }
+.sb-sign.on small { color: var(--color-text-on-brand); }
+.sb-scope button { padding: var(--space-1) var(--space-2); border: 1px solid var(--color-text-muted); border-radius: var(--radius-pill); background: var(--color-surface); color: var(--color-text); font: inherit; font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); cursor: pointer; }
+.sb-scope button[aria-pressed="true"] { color: var(--color-surface); border-color: var(--color-text); background: var(--color-text); }
+.sb-scope button:disabled { opacity: 0.5; cursor: default; }
+.sb-table { width: 100%; border-collapse: collapse; margin: var(--space-2) 0; font-size: var(--font-size-sm); }
+.sb-table th, .sb-table td { padding: var(--space-1) var(--space-2); border-bottom: 1px solid var(--color-border); text-align: left; white-space: nowrap; color: var(--color-text); }
+.sb-table thead th { color: var(--color-text-muted); font-weight: var(--font-weight-bold); border-bottom: 2px solid var(--color-border-strong); }
+.sb-table tbody th { font-weight: var(--font-weight-medium); }
+.st-tip.mine { box-shadow: 0 0 0 2px var(--color-warning); }
+.sb-coupons { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); gap: var(--space-3); margin-top: var(--space-3); }
+.sb-coupon { padding: var(--space-3); border: 1px solid var(--color-border); border-radius: var(--radius-lg); background: var(--color-surface); min-width: 0; }
+.sb-coupon h3 small { color: var(--color-text-muted); font-weight: var(--font-weight-medium); font-size: var(--font-size-sm); }
+.sb-facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-2) var(--space-3); margin: var(--space-2) 0; }
+.sb-facts dt { color: var(--color-text-muted); font-size: var(--font-size-xs); text-transform: uppercase; letter-spacing: 0.08em; }
+.sb-facts dd { margin: 0; font-weight: var(--font-weight-bold); }
+.sb-rows { margin-top: var(--space-2); }
+.sb-rows summary { cursor: pointer; font-weight: var(--font-weight-bold); }
 @media (max-width: 720px) {
   .sb-row { grid-template-columns: auto minmax(0, 1fr); }
   .sb-krav { grid-column: 1 / -1; }
@@ -422,143 +442,145 @@ body.view-stryktips main { display: none !important; }
 }
 
 /* Krav (1, X, 2, 1X, X2, 12, 1X2) på B-sidan */
-.sb-krav { display: flex; align-items: center; gap: 0.4rem; }
-.sb-krav-lbl { min-width: 3.2rem; color: var(--muted); font-size: 0.78rem; text-align: center; }
-.sb-krav-lbl .st-tip { font-size: 0.78rem; }
-.sb-tur { padding: 0; border: 0; background: none; color: #6fd6a0; font: inherit; font-weight: 600; cursor: pointer; text-decoration: underline dotted; text-underline-offset: 3px; }
+.sb-krav { display: flex; align-items: center; gap: var(--space-2); }
+.sb-krav-lbl { min-width: 3.2rem; color: var(--color-text-muted); font-size: var(--font-size-xs); text-align: center; }
+.sb-krav-lbl .st-tip { font-size: var(--font-size-xs); }
+.sb-tur { padding: 0; border: 0; background: none; color: var(--color-text); font: inherit; font-weight: var(--font-weight-bold); cursor: pointer; text-decoration: underline dotted; text-underline-offset: 3px; }
 .tur-btn { cursor: pointer; font: inherit; }
-.st-chip.tur-btn small { opacity: 0.8; font-weight: 500; }
+.st-chip.tur-btn { font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); }
+.st-chip.tur-btn small { font-weight: var(--font-weight-medium); }
+.st-chip.tur-btn:hover { background: var(--color-success-bg); }
 .sb-row .tur-explain { grid-column: 1 / -1; }
-.tur-explain { margin: 0.5rem 0 0.2rem; padding: 0.7rem 0.9rem; border: 1px solid rgba(111, 214, 160, 0.35); border-radius: 12px; background: rgba(111, 214, 160, 0.07); font-size: 0.9rem; line-height: 1.5; }
-.tur-explain h4 { margin: 0 0 0.4rem; font-size: 0.95rem; color: #6fd6a0; }
-.tur-explain ol { margin: 0; padding-left: 1.2rem; display: grid; gap: 0.35rem; }
-.tur-explain .btn-ghost { margin-top: 0.6rem; padding: 0.35rem 0.8rem; font-size: 0.85rem; }
-.tur-hint { margin: 0.5rem 0 0; color: var(--muted); font-size: 0.82rem; }
-.tur-dots { display: inline-flex; gap: 3px; vertical-align: middle; margin: 0 0.3rem; }
+/* Rutan har även .ds-notice .ds-notice--success i markupen */
+.tur-explain { margin: var(--space-2) 0 var(--space-1); font-size: var(--font-size-sm); line-height: var(--line-height-body); }
+.tur-explain h4 { margin: 0 0 var(--space-2); font-size: var(--font-size-md); color: var(--color-text); }
+.tur-explain ol { margin: 0; padding-left: var(--space-5); display: grid; gap: var(--space-1); }
+.tur-explain .btn-ghost { margin-top: var(--space-2); }
+.tur-hint { margin: var(--space-2) 0 0; color: var(--color-text-muted); font-size: var(--font-size-sm); }
+.tur-dots { display: inline-flex; gap: 3px; vertical-align: middle; margin: 0 var(--space-1); }
 .tur-dots span { width: 0.7rem; height: 0.7rem; border-radius: 50%; }
-.tur-dots .miss { background: var(--bad); }
-.tur-dots .ok { background: var(--lime); }
+.tur-dots .miss { background: var(--color-danger-fill); }
+.tur-dots .ok { background: var(--color-success); }
 
 /* Turmatcher och vanliga missar */
-.st-chip.tur { color: #6fd6a0; border-color: rgba(111, 214, 160, 0.5); background: rgba(111, 214, 160, 0.09); }
-.st-tur-note { margin: 0.4rem 0 0; padding: 0.45rem 0.65rem; border-left: 3px solid #6fd6a0; border-radius: 8px; background: rgba(111, 214, 160, 0.07); font-size: 0.85rem; }
-.st-miss { border-color: rgba(111, 214, 160, 0.35); }
-.st-miss-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); gap: 1.2rem; }
+.st-chip.tur { color: var(--color-success); border-color: var(--color-success); background: var(--color-surface); }
+.st-tur-note { margin: var(--space-2) 0 0; padding: var(--space-2) var(--space-3); border-left: 3px solid var(--color-success); border-radius: var(--radius-md); background: var(--color-success-bg); font-size: var(--font-size-sm); }
+.st-miss { border-color: var(--color-border); }
+.st-miss-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); gap: var(--space-5); }
 .st-miss-grid > div { min-width: 0; }
-.st-miss .st-sub { margin: 0.35rem 0 0.6rem; }
-.st-tur-list { list-style: none; margin: 0.6rem 0 0; padding: 0; display: grid; gap: 0.5rem; }
-.st-tur-list li { padding: 0.5rem 0.65rem; border: 1px solid var(--line); border-radius: 12px; background: rgba(0, 0, 0, 0.18); }
-.st-tur-list p { margin: 0.35rem 0 0; font-size: 0.83rem; color: var(--muted); }
-.st-tur-list p b { color: var(--ink); }
-.st-tur-head { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; }
-.st-tur-head .btn-ghost, .sb-tur-all { padding: 0.25rem 0.6rem; font-size: 0.78rem; }
-.st-miss-table th small { color: var(--bad); font-weight: 500; }
+.st-miss .st-sub { margin: var(--space-1) 0 var(--space-2); }
+.st-tur-list { list-style: none; margin: var(--space-2) 0 0; padding: 0; display: grid; gap: var(--space-2); }
+.st-tur-list li { padding: var(--space-2) var(--space-3); border: 1px solid var(--color-border); border-radius: var(--radius-lg); background: var(--color-surface-muted); }
+.st-tur-list p { margin: var(--space-1) 0 0; font-size: var(--font-size-sm); color: var(--color-text-muted); }
+.st-tur-list p b { color: var(--color-text); }
+.st-tur-head { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2); }
+.st-tur-head .btn-ghost, .sb-tur-all, .tur-explain .btn-ghost { min-height: 32px; padding: var(--space-1) var(--space-3); font-size: var(--font-size-xs); }
+.st-miss-table th small { color: var(--color-danger); font-weight: var(--font-weight-medium); }
 .st-miss-table td:last-child { white-space: nowrap; }
 
 
 /* Spikar (ett tecken) alltid rosa (samma som Gambling Cabins rosa) – i kupong A, B, egna krav och kupongtabellen */
-.st-tip.spik { background: #f07ab8; color: #2a0a1c; box-shadow: none; }
-.st-tip.spik.mine { box-shadow: 0 0 0 2px var(--warn); }
-.sb-signs.spik .sb-sign.on { background: #f07ab8; border-color: #f07ab8; color: #2a0a1c; }
-.sb-signs.spik .sb-sign.on small { color: #2a0a1c; }
-.st-bt tr.st-bt-lg th { padding-top: 0.8rem; color: var(--lime); text-align: left; }
-.st-bt tr.st-bt-lg th small { color: var(--muted); font-weight: 500; }
+.st-tip.spik { background: var(--color-spik); color: var(--color-spik-text); box-shadow: none; }
+.st-tip.spik.mine { box-shadow: 0 0 0 2px var(--color-warning); }
+.sb-signs.spik .sb-sign.on { background: var(--color-spik); border-color: var(--color-spik); color: var(--color-spik-text); }
+.sb-signs.spik .sb-sign.on small { color: var(--color-spik-text); }
+.st-bt tr.st-bt-lg th { padding-top: var(--space-3); color: var(--color-text); text-align: left; }
+.st-bt tr.st-bt-lg th small { color: var(--color-text-muted); font-weight: var(--font-weight-medium); }
 
 /* ---------- UX-pass 2026-10-01: Stryktipset/Europatipset ---------- */
 
-/* Krav: "Gäller"-knapparna syns först när matchen har ett krav, tydlig aktiv/inaktiv-stil */
-.sb-krav-lbl { color: #b9cbbf; }
+/* Krav: "Gäller"-knapparna syns först när matchen har ett krav, tydlig aktiv/inaktiv-stil (.ds-toggle i markupen) */
+.sb-krav-lbl { color: var(--color-text-muted); }
 .sb-scope { align-items: center; }
 .sb-scope.is-empty { display: none; }
-.sb-scope-k { color: #b9cbbf; font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; margin-right: 0.15rem; }
-.sb-scope button { color: #d6e4da; border-color: rgba(214, 228, 218, 0.28); background: rgba(255, 255, 255, 0.03); min-width: 2.4rem; }
-.sb-scope button:hover { border-color: rgba(184, 242, 85, 0.6); color: var(--ink); }
-.sb-scope button[aria-pressed="true"] { color: #102014; background: var(--lime); border-color: var(--lime); }
-.sb-scope button:focus-visible, .sb-sign:focus-visible { outline: 2px solid var(--lime); outline-offset: 2px; }
+.sb-scope-k { color: var(--color-text-muted); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); text-transform: uppercase; letter-spacing: 0.06em; margin-right: 2px; }
+.sb-scope button { min-height: 32px; min-width: 2.4rem; }
+.sb-scope button:hover { border-color: var(--color-text); }
+.sb-scope button[aria-pressed="true"]:hover { background: var(--color-text); }
+.sb-scope button:focus-visible, .sb-sign:focus-visible { outline: 2px solid var(--focus-ring-color); outline-offset: 2px; }
 
 /* "Hur funkar det?" */
-.sb-howto { margin-top: 0.45rem; color: var(--muted); font-size: 0.85rem; line-height: 1.5; }
-.sb-howto summary { cursor: pointer; color: var(--lime); font-weight: 600; width: fit-content; }
-.sb-howto ul { margin: 0.45rem 0 0.2rem; padding-left: 1.1rem; display: grid; gap: 0.25rem; }
-.sb-howto b { color: var(--ink); }
-.sb-panel h3 small { margin-left: 0.3rem; }
-.sb-result > .st-note, .sb-result > .st-sub { margin-top: 0.55rem; }
+.sb-howto { margin-top: var(--space-2); color: var(--color-text-muted); font-size: var(--font-size-sm); line-height: var(--line-height-body); }
+.sb-howto summary { cursor: pointer; color: var(--color-text); font-weight: var(--font-weight-bold); text-decoration: underline; text-underline-offset: 3px; width: fit-content; }
+.sb-howto ul { margin: var(--space-2) 0 var(--space-1); padding-left: var(--space-4); display: grid; gap: var(--space-1); }
+.sb-howto b { color: var(--color-text); }
+.sb-panel h3 small { margin-left: var(--space-1); }
+.sb-result > .st-note, .sb-result > .st-sub { margin-top: var(--space-2); }
 
-/* Kupongkort: A och B framhävda, C dämpad */
+/* Kupongkort: A och B framhävda, C dämpad (ingen opacitet – texten ska klara 4,5:1) */
 .sb-coupons { grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr)); }
 .sb-coupon { display: flex; flex-direction: column; }
-.sb-coupon.is-main { border-color: rgba(184, 242, 85, 0.55); background: rgba(184, 242, 85, 0.06); }
-.sb-coupon.is-extra { opacity: 0.72; border-style: dashed; }
-.sb-coupon.is-extra:hover, .sb-coupon.is-extra:focus-within { opacity: 1; }
-.sb-coupon.is-extra .st-gc { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1px var(--line); }
-.sb-coupon.is-extra .st-gc:hover { background: rgba(255, 255, 255, 0.05); }
-.sb-coupon-tag { align-self: flex-start; margin-bottom: 0.4rem; padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; background: var(--lime); color: #102014; }
-.sb-coupon-tag.extra { background: transparent; color: var(--muted); border: 1px solid var(--line); }
-.st-gc-wrap { display: flex; flex-direction: column; align-items: flex-start; gap: 0.3rem; margin-top: 0.5rem; }
+.sb-coupon.is-main { border: 2px solid var(--color-success); background: var(--color-surface); }
+.sb-coupon.is-extra { border-style: dashed; border-color: var(--color-border-strong); background: var(--color-surface-muted); box-shadow: none; }
+.sb-coupon.is-extra:hover, .sb-coupon.is-extra:focus-within { border-color: var(--color-text-muted); }
+.sb-coupon.is-extra .st-gc { background: var(--color-surface); color: var(--color-text); box-shadow: inset 0 0 0 1px var(--color-text-muted); }
+.sb-coupon.is-extra .st-gc:hover { background: var(--color-surface-sunken); }
+.sb-coupon-tag { align-self: flex-start; margin-bottom: var(--space-2); padding: 2px var(--space-2); border-radius: var(--radius-pill); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); letter-spacing: 0.06em; text-transform: uppercase; background: var(--color-success); color: var(--color-text-on-brand); }
+.sb-coupon-tag.extra { background: var(--color-surface); color: var(--color-text-muted); border: 1px solid var(--color-border-strong); }
+.st-gc-wrap { display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-1); margin-top: var(--space-2); }
 .st-gc-wrap .st-gc { margin-top: 0; white-space: nowrap; }
-.st-gc-help { color: var(--muted); font-size: 0.76rem; }
+.st-gc-help { color: var(--color-text-muted); font-size: var(--font-size-xs); }
 
 /* Turmatcher (synliga, hör till kupongen) */
-.st-tur { border-color: rgba(111, 214, 160, 0.35); }
-.st-tur .st-sub { margin: 0.35rem 0 0.6rem; }
+.st-tur { border-color: var(--color-success); }
+.st-tur .st-sub { margin: var(--space-1) 0 var(--space-2); }
 
 /* Matcherna */
-.st-matches { margin-top: 1.4rem; }
-.st-section-h { margin: 0 0 0.5rem; font-size: 1.05rem; }
-.st-section-h small { color: var(--muted); font-weight: 500; font-size: 0.85rem; margin-left: 0.3rem; }
-.st-legend { margin: 0 0 0.8rem; }
+.st-matches { margin-top: var(--space-5); }
+.st-section-h { margin: 0 0 var(--space-2); font-size: var(--font-size-lg); line-height: var(--line-height-tight); color: var(--color-text); }
+.st-section-h small { color: var(--color-text-muted); font-weight: var(--font-weight-medium); font-size: var(--font-size-sm); margin-left: var(--space-1); }
+.st-legend { margin: 0 0 var(--space-3); }
 .st-legend .st-in, .st-legend .st-b { cursor: help; }
 .st-b { cursor: help; }
 
 /* Statistik & historik: hopfälld, full bredd */
-.st-history { margin-top: 1.4rem; }
-.st-history > summary { cursor: pointer; list-style: none; display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.2rem 0.7rem; }
+.st-history { margin-top: var(--space-5); }
+.st-history > summary { cursor: pointer; list-style: none; display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--space-1) var(--space-3); }
 .st-history > summary::-webkit-details-marker { display: none; }
 .st-history > summary h3 { display: inline; }
-.st-history > summary h3::before { content: "▸"; display: inline-block; margin-right: 0.5rem; color: var(--lime); transition: transform 0.15s ease; }
+.st-history > summary h3::before { content: "▸"; display: inline-block; margin-right: var(--space-2); color: var(--color-brand); transition: transform var(--duration-fast) var(--easing); }
 .st-history[open] > summary h3::before { transform: rotate(90deg); }
-.st-history > summary small { color: var(--muted); font-size: 0.82rem; }
-.st-history > summary:hover h3 { color: var(--lime); }
-.st-history-body { display: flex; flex-direction: column; gap: 0.75rem; margin-top: 0.9rem; }
-.st-history-body .st-miss h3 { margin: 0 0 0.2rem; font-size: 1rem; }
-.st-history-body .st-miss h3 + p, .st-history-body .st-miss .st-sub { margin: 0.35rem 0 0.6rem; }
+.st-history > summary small { color: var(--color-text-muted); font-size: var(--font-size-sm); }
+.st-history > summary:hover h3 { color: var(--color-brand-hover); }
+.st-history-body { display: flex; flex-direction: column; gap: var(--space-3); margin-top: var(--space-4); }
+.st-history-body .st-miss h3 { margin: 0 0 var(--space-1); font-size: var(--font-size-md); }
+.st-history-body .st-miss h3 + p, .st-history-body .st-miss .st-sub { margin: var(--space-1) 0 var(--space-2); }
 .st-miss-table td { white-space: nowrap; }
 
 /* Sticky åtgärdsrad längst ner (desktop och mobil) */
 .sb-actionbar {
   position: sticky;
-  bottom: 0.75rem;
+  bottom: var(--space-3);
   z-index: 5;
   display: flex;
   align-items: center;
-  gap: 0.6rem;
-  margin-top: 1.2rem;
-  padding: 0.6rem 0.7rem 0.6rem 1rem;
-  border: 1px solid rgba(184, 242, 85, 0.45);
-  border-radius: 999px;
-  background: rgba(10, 20, 16, 0.94);
+  gap: var(--space-2);
+  margin-top: var(--space-5);
+  padding: var(--space-2) var(--space-2) var(--space-2) var(--space-4);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-pill);
+  background: color-mix(in srgb, var(--color-surface) 95%, transparent);
   backdrop-filter: blur(10px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  box-shadow: var(--shadow-lg);
 }
-.sb-actionbar-txt { flex: 1; min-width: 0; color: var(--muted); font-size: 0.88rem; }
-.sb-actionbar-txt b { color: var(--ink); }
-.sb-dirty { color: var(--warn); }
-.sb-actionbar .btn-ghost { padding: 0.55rem 1rem; }
-.sb-actionbar .btn-ghost:disabled { opacity: 0.45; cursor: default; }
-.sb-actionbar .sb-generate { padding: 0.6rem 1.2rem; white-space: nowrap; }
+.sb-actionbar-txt { flex: 1; min-width: 0; color: var(--color-text-muted); font-size: var(--font-size-sm); }
+.sb-actionbar-txt b { color: var(--color-text); }
+.sb-dirty { color: var(--color-warning); }
+.sb-actionbar .btn-ghost:disabled { opacity: 0.5; cursor: default; }
+.sb-actionbar .sb-generate { white-space: nowrap; }
 
 @media (max-width: 720px) {
-  .sb-scope { gap: 0.3rem; flex-wrap: nowrap; }
+  .sb-scope { gap: var(--space-1); flex-wrap: nowrap; }
   .sb-scope-k { flex: none; }
 }
 @media (max-width: 560px) {
-  .sb-actionbar { bottom: 0.5rem; gap: 0.4rem; padding: 0.45rem 0.45rem 0.45rem 0.8rem; border-radius: 16px; }
-  .sb-actionbar-txt { font-size: 0.8rem; }
-  .sb-actionbar .btn-ghost { width: auto; padding: 0.5rem 0.75rem; font-size: 0.8rem; }
-  .sb-actionbar .sb-generate { width: auto; padding: 0.55rem 0.9rem; font-size: 0.82rem; }
+  .sb-actionbar { bottom: var(--space-2); gap: var(--space-2); padding: var(--space-2) var(--space-2) var(--space-2) var(--space-3); border-radius: var(--radius-lg); }
+  .sb-actionbar-txt { font-size: var(--font-size-xs); }
+  .sb-actionbar .btn-ghost { width: auto; padding: var(--space-2) var(--space-3); font-size: var(--font-size-xs); }
+  .sb-actionbar .sb-generate { width: auto; padding: var(--space-2) var(--space-4); font-size: var(--font-size-xs); }
 }
 /* Ändrade krav: bärnstensram på Generera i stället för lång text på smal skärm */
-.sb-actionbar.is-dirty .sb-generate { box-shadow: 0 0 0 2px var(--warn); }
+.sb-actionbar.is-dirty .sb-generate { box-shadow: 0 0 0 2px var(--color-surface), 0 0 0 4px var(--color-warning); }
 @media (max-width: 560px) {
   .sb-dirty { display: none; }
 }
@@ -581,43 +603,55 @@ body.view-stryktips main { display: none !important; }
   .sb-dirty-long { display: none; }
 }
 
-/* Streck-notisen: neutral info på en rad, resten fälls ut */
-.st-streck { padding: 0.5rem 0.85rem; border: 1px solid var(--line); border-radius: 12px; background: rgba(255, 255, 255, 0.03); color: var(--muted); font-size: 0.84rem; line-height: 1.45; }
-.st-streck > summary { cursor: pointer; color: var(--ink); }
-.st-streck p { margin: 0.4rem 0 0; }
-.st-streck.is-warn { border-color: rgba(240, 180, 41, 0.45); background: rgba(240, 180, 41, 0.07); }
-.sb-result > .st-streck { margin-top: 0.55rem; }
+/* Streck-notisen: neutral info på en rad, resten fälls ut (.ds-notice i markupen) */
+.st-streck { font-size: var(--font-size-sm); line-height: var(--line-height-body); }
+.st-streck > summary { cursor: pointer; color: var(--color-text); }
+.st-streck p { margin: var(--space-2) 0 0; color: var(--color-text-muted); }
+.st-streck.is-warn { border-left-color: var(--color-warning-fill); background: var(--color-warning-bg); }
+.sb-result > .st-streck { margin-top: var(--space-2); }
 
 /* Kupongkort: chans och utdelning dominerar, reglerna i normal vikt */
-.sb-facts dd.sb-rule { font-weight: 400; font-size: 0.8rem; color: #c5d6ca; line-height: 1.35; }
-.sb-facts dd { font-size: 1.05rem; font-variant-numeric: tabular-nums; }
+.sb-facts dd.sb-rule { font-weight: var(--font-weight-regular); font-size: var(--font-size-xs); color: var(--color-text-muted); line-height: var(--line-height-tight); }
+.sb-facts dd { font-size: var(--font-size-md); font-variant-numeric: tabular-nums; }
 
 /* Truppraden: dämpad text när elvan inte är bekräftad */
-.st-lu-muted { color: var(--muted); font-style: italic; }
+.st-lu-muted { color: var(--color-text-muted); font-style: italic; }
 
 /* Förklaringsraden */
-.st-legend-note { flex-basis: 100%; color: var(--muted); font-size: 0.78rem; }
+.st-legend-note { flex-basis: 100%; color: var(--color-text-muted); font-size: var(--font-size-xs); }
 
 /* Statistiktabellerna: staplade kort under 600 px */
 @media (max-width: 600px) {
   .st-miss-table, .st-miss-table tbody, .st-miss-table tr { display: block; width: 100%; }
   .st-miss-table thead { display: none; }
-  .st-miss-table tr { padding: 0.5rem 0.1rem; border-bottom: 1px solid var(--line); }
+  .st-miss-table tr { padding: var(--space-2) 2px; border-bottom: 1px solid var(--color-border); }
   .st-miss-table th, .st-miss-table td { display: inline; padding: 0; border: 0; text-align: left; white-space: normal; }
-  .st-miss-table tbody th { display: block; margin-bottom: 0.2rem; font-size: 0.85rem; }
-  .st-miss-table td { font-size: 0.8rem; }
-  .st-miss-table td::before { content: attr(data-l) " "; color: var(--muted); }
+  .st-miss-table tbody th { display: block; margin-bottom: var(--space-1); font-size: var(--font-size-sm); }
+  .st-miss-table td { font-size: var(--font-size-xs); }
+  .st-miss-table td::before { content: attr(data-l) " "; color: var(--color-text-muted); }
   .st-miss-table td + td::before { content: " · " attr(data-l) " "; }
-  .st-miss-table td.down, .st-miss-table td.up { font-weight: 700; }
-  .st-miss-table tr.st-bt-lg { border-bottom: 0; padding-top: 0.9rem; }
+  .st-miss-table td.down, .st-miss-table td.up { font-weight: var(--font-weight-bold); }
+  .st-miss-table tr.st-bt-lg { border-bottom: 0; padding-top: var(--space-4); }
   .st-miss-table td:last-child { white-space: normal; }
 }
 
 /* Ej värde är neutral info (grå), inte ett fel – samma som i Tips-vyn */
-.st-chip.nv { color: var(--muted); border-color: var(--line); background: rgba(255, 255, 255, 0.04); }
+.st-chip.nv { color: var(--color-text-muted); border-color: var(--color-border-strong); background: var(--color-surface-muted); }
 
 /* Modellens mest sannolika tecken i kravraden */
-.sb-sign.best small { font-weight: 800; color: var(--ink); }
+.sb-sign.best small { font-weight: var(--font-weight-bold); color: var(--color-text); }
 .sb-sign.best { position: relative; }
 .sb-sign.best::after { content: ""; position: absolute; top: 5px; right: 6px; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
 .sb-sign.best.on small { color: inherit; }
+
+/* Fokus: tydlig ring på alla klickbara element i vyn (tokens.css ger grundregeln) */
+.st-view summary:focus-visible,
+.st-view .tur-btn:focus-visible,
+.st-view .st-gc:focus-visible,
+.view-tab:focus-visible { outline: 2px solid var(--focus-ring-color); outline-offset: 2px; }
+
+/* Reducerad rörelse */
+@media (prefers-reduced-motion: reduce) {
+  .st-match, .st-analysis { animation: none; }
+  .view-tab, .sb-sign, .st-history > summary h3::before { transition: none; }
+}
