@@ -139,7 +139,8 @@ test.describe('spelarkort', () => {
     await page.waitForSelector('#league-filters .filter-pill[data-group]');
     await page.locator('#league-search').fill('allsvenskan');
     await page.locator('#league-results .filter-pill').first().click();
-    await page.locator('#cand-wrap > summary').click();
+    // Listan fälls ut automatiskt när man väljer en liga; öppna bara om den är stängd
+    if (!(await page.locator('#cand-wrap').evaluate((d) => (d as HTMLDetailsElement).open))) await page.locator('#cand-wrap > summary').click();
     const row = page.locator('.cand-row', { hasText: `${asTip.home} – ${asTip.away}` }).first();
     await row.locator('summary').click();
     const body = row.locator('.cand-body');
