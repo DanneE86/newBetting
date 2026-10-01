@@ -17,10 +17,10 @@ const UTD_MIN_B = 30000;
 // Samma regler som A (4-2-2, färgfönster, högst 4 spikar, skräll- och favoritregeln) och minst 30 000 kr för 13 rätt.
 const BUDGET_C = { min: 700, max: 850 };
 const UTD_MIN_C = 30000;
-// Kupong B mot A (användarens regel 2026-09-29): högst 2 spikar med samma tecken på samma match och aldrig exakt samma
+// Kupong B mot A (användarens regel 2026-10-01, A är huvudsystemet): högst 1 spik med samma tecken på samma match och aldrig exakt samma
 // halvgardering. Egna krav räknas inte. Går det inte att bygga släpps spikgränsen stegvis (B_SAME_LADDER).
-const B_MAX_SAME_SPIK = 2;
-const B_SAME_LADDER = [2, 3, 4];
+const B_MAX_SAME_SPIK = 1;
+const B_SAME_LADDER = [1, 2, 3, 4];
 const GC_TURNOVER = { stryktipset: 25e6, europatipset: 1e7 };
 // Går det inte att bygga ett system med spikarna släpps teckenreglerna först, sedan utdelningsgränsen
 const SIGN_LADDER = [SIGN_MIN, [3, 2, 2], [3, 1, 1], [2, 1, 1], [0, 0, 0]];
@@ -397,7 +397,7 @@ export function kravSigns(k) {
  * krav: { [eventNumber]: { signs: "1" | "1X" | "X2" | "12" | "1X2" | ..., scope: "both" | "A" | "B" | "C" | "all" } }
  * "both" = A och B, "all" = A, B och C.
  * A = bästa systemet med A:s krav (350–400 kr, spelets utdelningsgräns).
- * B = ett eget system med B:s krav: minst 30 000 kr för 13 rätt utan tak, teckenregler 3-3-3, högst 2 spikar och ingen halvgardering
+ * B = ett eget system med B:s krav: minst 30 000 kr för 13 rätt utan tak, teckenregler 3-3-3, högst 1 spik samma som A och ingen halvgardering
  *     identisk med A, valt så att det täcker så mycket som möjligt av det A saknar (några gemensamma rader är tillåtna).
  */
 export function generateCoupons(p, krav) {
