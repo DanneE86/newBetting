@@ -228,13 +228,4 @@
 .se-summary ul { margin: 0.3rem 0 0; padding-left: 1.1rem; color: #c5dbc9; font-size: 0.78rem; }
 .se-summary li { margin: 0.12rem 0; }
 
-.se-radar { margin: 0; display: grid; justify-items: center; gap: 0.3rem; }
-.se-radar svg { width: 100%; max-width: 440px; height: auto; overflow: visible; }
-.se-radar figcaption { font-size: 0.74rem; text-align: center; }
-.se-rad-ring { fill: none; stroke: rgba(255, 255, 255, 0.12); stroke-width: 1; }
-.se-rad-area { fill-opacity: 0.2; stroke-width: 2; stroke-linejoin: round; }
-.se-rad-lbl text { fill: var(--muted); font-size: 10px; font-family: var(--font-body); }
-.se-rad-home { color: var(--se-home); fill: currentColor; stroke: currentColor; }
-.se-rad-away { color: var(--se-away); fill: currentColor; stroke: currentColor; }
-.se-rad-alt { color: #f3cd6b; fill: currentColor; stroke: currentColor; }
 .se-key { display: inline-block; width: 0.8rem; height: 0.3rem; border-radius: 2px; margin: 0 0.3rem 0.1rem 0.2rem; background: currentColor; }

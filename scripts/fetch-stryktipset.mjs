@@ -17,7 +17,7 @@ import { fillXg } from './lib/understat-xg.mjs';
 import { buildMissProfile, STRYK_LEAGUES } from './lib/stryk-miss-profile.mjs';
 import { colorBands } from './lib/stryk-color-bands.mjs';
 import { calibrationTable, assessMatch, assessmentText } from './lib/stryk-calibration.mjs';
-import { buildRefIndex, mergeRefereeMatches, refereeFlags, refereeNotes } from './lib/referee-streaks.mjs';
+import { buildRefIndex, loadRefereeMatches, refereeFlags, refereeNotes } from './lib/referee-streaks.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const RAW = path.join(root, 'data', 'raw');
@@ -469,14 +469,13 @@ function folkProbs(ev) {
 }
 
 // Kompakt kontext i sparade system (for senare backtest av franvaro/rotation)
-// Domarsviter per lag (football-data E0-E3 + store), laddas en gang. Bara engelska ligamatcher.
+// Domarsviter per lag (football-data England + FotMob ovriga ligor + store), laddas en gang.
 let refIdx;
 function refereeIndex() {
   if (refIdx !== undefined) return refIdx;
   try {
-    const rd = (f) => JSON.parse(fs.readFileSync(path.join(root, 'data', ...f), 'utf8').replace(/^﻿/, ''));
-    const hist = fs.existsSync(path.join(root, 'data', 'open', 'referee_history.json')) ? Object.values(rd(['open', 'referee_history.json']).bySeason || {}).flat() : [];
-    refIdx = buildRefIndex(mergeRefereeMatches(hist, rd(['betting-store.json']).matches));
+    const rd = (rel) => { const f = path.join(root, rel); return fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8').replace(/^﻿/, '')) : null; };
+    refIdx = buildRefIndex(loadRefereeMatches(rd, rd('data/betting-store.json')?.matches || []));
   } catch { refIdx = null; }
   return refIdx;
 }
@@ -1185,7 +1184,8 @@ async function analyzeDraw(product, draw, ctx, result) {
     a.startOdds = so?.every((x) => x > 1) ? so : null;
     a.context = matchCtx.get(ev.eventNumber) || null;
     // Domarsvit: minst 5 raka segrar/forluster for nagot av lagen med matchens domare (engelska ligor)
-    a.refereeStreak = a.context?.referee && country === 'England' && refereeIndex()
+    // Alla matcher med känd domare; landslag finns inte i domarhistoriken och får ingen träff
+    a.refereeStreak = a.context?.referee && refereeIndex()
       ? refereeFlags(refereeIndex(), { referee: a.context.referee, home: a.matched?.home || home, away: a.matched?.away || away })
       : null;
     a.analysis = [...narrative({ ...a, final: a.final }), ...contextNotes(a.context, home, away), ...refereeNotes(a.refereeStreak, home, away)];

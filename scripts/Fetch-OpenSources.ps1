@@ -286,6 +286,8 @@ try {
 # --- Domare: historik (football-data E0-E3) + tillsatt domare for kommande engelska matcher (FotMob) ---
 Write-Host "`n=== Domare (domarsviter per lag) ==="
 try {
+    # Nya spelade matcher (aktuell sasong) fran FotMob: domare, kort, frisparkar och straffar for alla ligor
+    node (Join-Path $PSScriptRoot "fetch-referees-fotmob.mjs") --current
     node (Join-Path $PSScriptRoot "fetch-referees.mjs")
     $report.referees = ($LASTEXITCODE -eq 0)
 } catch {

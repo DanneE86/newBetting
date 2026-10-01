@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="/styles.css" />
   <link rel="stylesheet" href="/stryktips.css" />
   <link rel="stylesheet" href="/startelva.css" />
+  <link rel="stylesheet" href="/spelarkort.css" />
 </head>
 <body>
   <div class="noise" aria-hidden="true"></div>
@@ -66,10 +67,16 @@
 
   <section class="filters" aria-label="Filtrera liga">
     <span class="filters-label">Liga</span>
+    <label class="league-search">
+      <span class="sr-only">Sök land eller liga</span>
+      <input type="search" id="league-search" placeholder="Sök land eller liga" autocomplete="off" spellcheck="false" />
+    </label>
+    <div class="filter-pills" id="league-results" role="group" aria-label="Sökträffar" aria-live="polite" hidden></div>
     <div class="filter-pills" id="league-filters" role="group">
       <button type="button" class="filter-pill active" data-league="ALL">Alla</button>
     </div>
     <div class="filter-sub" id="league-sub" role="group" aria-label="Välj turnering" hidden></div>
+    <div class="ref-league" id="ref-league" aria-live="polite" hidden></div>
   </section>
 
 

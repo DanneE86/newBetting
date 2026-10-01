@@ -228,7 +228,7 @@ test('Oddset: knappen Domare bredvid Duellanalys visar domarstatistik för engel
   expect(api.leagueAvg.foulsPg).toBeGreaterThan(10);
   expect(api.referees.length).toBeGreaterThan(5);
   expect(api.referees[0]).toHaveProperty('yellowVsAvg');
-  expect((await fetch(`${base}/api/referees?league=LL&date=2026-10-10&home=A&away=B`)).status).toBe(404);
+  expect((await fetch(`${base}/api/referees?league=XX&date=2026-10-10&home=A&away=B`)).status).toBe(404);
 
   // GUI: bara den engelska matchen som kort, knappen ligger direkt efter Duellanalys
   await page.route('**/api/dashboard*', async (route) => {
@@ -247,4 +247,49 @@ test('Oddset: knappen Domare bredvid Duellanalys visar domarstatistik för engel
   await expect(card.locator('.rf-all summary')).toContainText('Alla domare i');
   await expect(card.locator('.rf-table tfoot')).toContainText('Ligasnitt');
   await expect(card.locator('.rf-stats')).toContainText(/ligasnitt|ligan/i);
+});
+
+test('Ligaraden: Domare sist i raden visar ligans domare, sortering och filter på gula/röda/straffar', async ({ page }) => {
+  await page.goto(base + '/tips');
+  await page.evaluate(() => localStorage.clear());
+  await page.goto(base + '/tips');
+  await page.click('.filter-pill[data-group="england"]');
+  const sub = page.locator('#league-sub .filter-pill');
+  await expect(sub.last()).toHaveAttribute('data-refleague', '');
+  await sub.last().click();
+  const view = page.locator('#ref-league');
+  await expect(view.locator('.rf-table')).toBeVisible({ timeout: 30_000 });
+  await expect(view).toContainText('Ligasnitt');
+  await expect(view.locator('.rf-stats')).toContainText('Straffar per match');
+  await expect(view.locator('thead')).toContainText('Straffar/m');
+  // Sortera på straffar: fallande, sedan stigande vid nytt klick
+  await view.locator('.rf-chip[data-rf-sort="pen"]').click();
+  await expect(view.locator('.rf-chip[data-rf-sort="pen"]')).toContainText('▼');
+  await view.locator('.rf-chip[data-rf-sort="pen"]').click();
+  await expect(view.locator('.rf-chip[data-rf-sort="pen"]')).toContainText('▲');
+  // Filter: bara domare med fler gula än snittet
+  const before = await view.locator('tbody tr').count();
+  await view.locator('.rf-chip[data-rf-filter="yellow"]').click();
+  await expect(view.locator('.rf-chip[data-rf-filter="yellow"]')).toHaveAttribute('aria-pressed', 'true');
+  expect(await view.locator('tbody tr').count()).toBeLessThanOrEqual(before);
+  for (const txt of await view.locator('tbody tr td:nth-child(4) .rf-diff').allTextContents()) expect(txt.startsWith('+')).toBeTruthy();
+  // Byt liga i vyn och stäng
+  await view.locator('[data-ref-tab="CH"]').click();
+  await expect(view.locator('.rf-name')).toContainText('Championship', { timeout: 30_000 });
+  await view.locator('[data-ref-close]').click();
+  await expect(view).toBeHidden();
+});
+
+test('Alla kandidater fälls ut när man går in i en liga', async ({ page }) => {
+  await page.goto(base + '/tips');
+  await page.evaluate(() => localStorage.clear());
+  await page.goto(base + '/tips');
+  await page.waitForSelector('#league-filters .filter-pill[data-group], #league-filters .filter-pill[data-league]:not([data-league="ALL"])', { timeout: 30_000 });
+  await expect(page.locator('#cand-wrap')).not.toHaveAttribute('open', '');
+  await page.click('.filter-pill[data-group="england"]');
+  await expect(page.locator('#cand-wrap')).toHaveAttribute('open', '');
+  await expect(page.locator('#candidates .cand-row').first()).toBeVisible({ timeout: 30_000 });
+  // Även efter omladdning med sparad liga
+  await page.reload();
+  await expect(page.locator('#cand-wrap')).toHaveAttribute('open', '', { timeout: 30_000 });
 });

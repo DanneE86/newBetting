@@ -19,6 +19,7 @@ import {
   statSource, score, edgeText, highlights, ATTACK_WIDE, DEFEND_WIDE, ATTACK_CENTRAL, DEFEND_CENTRAL, MID_CONTROL, MID_CREATE, KEEPER,
 } from './matchup.mjs';
 import { statMap, form, matchRows } from './fotmob-player.mjs';
+import { STAT_LABELS } from './player-positions.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
 export const STORE = path.join(ROOT, 'data', 'startelvor.json');
@@ -281,11 +282,8 @@ export function compare(A, B) {
 
 // ---------- Spelardata ----------
 
-const ALL_KEYS = new Set([...Object.values(TABLE).flat(), ...SUCCESS.flatMap(([, a, b]) => [a, b]), ...SUCCESS_GK.flatMap(([, a, b]) => [a, b]),
-  ...[ATTACK_WIDE, DEFEND_WIDE, ATTACK_CENTRAL, DEFEND_CENTRAL, MID_CONTROL, MID_CREATE, KEEPER, FB_ATTACK, WIDE_DEFEND, BUILD_UP, PRESS, GK_FEET]
-    .flat().map(([k]) => k), 'minutes_played', 'matches_uppercase', 'player_started_matches', 'rating', 'goals', 'assists'].filter(Boolean));
-
-const pickStats = (s) => (s ? Object.fromEntries(Object.entries(s).filter(([k]) => ALL_KEYS.has(k))) : {});
+// Alla nyckeltal behålls (spelarkortet i GUI:t visar alla stats); bara tal utan värde tas bort
+const pickStats = (s) => (s ? Object.fromEntries(Object.entries(s).filter(([, v]) => Array.isArray(v) && v[0] != null)) : {});
 
 /** Spelarpost i data/spelare-format, bantad till det startelvan behöver. */
 export function slimRecord(p) {
@@ -432,7 +430,7 @@ export function buildView(entry, { index = playerIndex(), extra = {} } = {}) {
       const tour = rec?.season?.tournament && !src?.label ? `${rec.season.tournament} ${rec.season.season ?? ''}`.trim() : src?.label || null;
       const short = shortName(p.name);
       players[p.id] = {
-        id: p.id, name: p.name, short, team: side, role: p.role, side: p.side, roleLabel: roleLabel(p.role, p.side),
+        id: p.id, name: p.name, short, team: side, role: p.role, group: ROLE_GROUP[p.role] ?? null, side: p.side, roleLabel: roleLabel(p.role, p.side),
         shirt: p.shirt, age: p.age ?? rec?.info?.age ?? null, club: rec?.fotmobTeam || p.club || null, captain: p.captain || false,
         x: p.x, y: p.y,
         statsFrom: tour, minutes: src?.minutes ?? 0,
@@ -498,7 +496,7 @@ export function buildView(entry, { index = playerIndex(), extra = {} } = {}) {
     lineupType: lu.lineupType, confirmed: lu.confirmed, status: lineupStatusText(lu),
     teams: { home, away },
     players, opponents, comparisons, keyDuels,
-    success: SUCCESS, successGk: SUCCESS_GK, statName: STAT_NAME, rateKeys: [...RATE_KEYS],
+    success: SUCCESS, successGk: SUCCESS_GK, statName: STAT_NAME, rateKeys: [...RATE_KEYS], statLabels: STAT_LABELS,
   };
 }
 

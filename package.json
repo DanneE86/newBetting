@@ -33,6 +33,7 @@
     "lardomar:modell": "node scripts/learnings-model.mjs && node scripts/analyze-learnings.mjs",
     "matcher": "node scripts/export-league-matches.mjs",
     "domare": "node scripts/fetch-referees.mjs",
+    "domare:fotmob": "node scripts/fetch-referees-fotmob.mjs",
     "felanalys": "node scripts/tips-felanalys.mjs",
     "trupper": "node scripts/fetch-squads.mjs",
     "trupper:kontroll": "node scripts/verify-squads-tm.mjs",
