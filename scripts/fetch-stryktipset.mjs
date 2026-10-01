@@ -524,7 +524,7 @@ function narrative(a) {
 // System A: troligaste tecknen per match. Motsystem B (singlesA satt): valfria tecken, men hogst MAX_SAME_SINGLES
 // spikar med samma tecken som A och aldrig exakt samma halvgardering som A (setsA); helgarderingar far overlappa.
 // Samma som webbens kupong B (2026-09-30: servern bygger A och B var for sig nar gransen ar exakt).
-const MAX_SAME_SINGLES = 2;
+const MAX_SAME_SINGLES = 1; // Anvandarens regel 2026-10-01: hogst 1 spik samma i A och B (A ar huvudsystemet)
 // Spik bara nar favoriten har minst SPIK_MIN (0 = alltid tillatet). Backtest 2026-09-30 (38 ST / 55 ET omg): spikar pa
 // favoriter 50-65 % sprack 40-49 %, pa >= 65 % 16-28 %. Stryktipset med 0,65: A+B -4 738 kr mot -22 557 (11+ 48 mot 23),
 // C -6 341 mot -25 112 (11+ 51 mot 12). Europatipset blev samre (A+B -29 035 mot -24 797), dar ingen grans.
@@ -1225,7 +1225,7 @@ async function analyzeDraw(product, draw, ctx, result) {
     reducedB.gamblingCabinUrl = gamblingCabinUrl(product.id, draw.drawNumber, closeDate, out, system.sets, reducedB);
   } else if (system) {
     const singlesA = system.sets.map((x) => (x.length === 1 ? x[0] : -1));
-    // B som i webben: minst 30 000 kr (aven Europatipset), 3-3-3, hogst 2 spikar och ingen halvgardering exakt som A
+    // B som i webben: minst 30 000 kr (aven Europatipset), 3-3-3, hogst 1 spik samma som A och ingen halvgardering exakt som A
     const bestB = bestReduced(sysEv, grundCandidates(sysEv, GRUND_MAX_ROWS, singlesA, spikMinFor(product.id), system.sets), { rowPrice, turnover, realTurnover, jackpot, payoutMin: Math.max(30000, utdMin(product.id)), signMin: SIGN_MIN.B, colorBands: bands }, B_JOINT ? new Set(reduced.rowList) : null);
     systemB = bestB?.system || null; reducedB = bestB?.reduced || null;
     if (systemB) out.forEach((a, i) => { a.systemPickB = systemB.picks[i]; });
