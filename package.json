@@ -36,6 +36,7 @@
     "domare:fotmob": "node scripts/fetch-referees-fotmob.mjs",
     "domare:allsvenskan": "node scripts/fetch-referees-allsvenskan.mjs",
     "domare:england": "node scripts/fetch-referees-england.mjs",
+    "domare:officiella": "node scripts/fetch-referees-official.mjs",
     "felanalys": "node scripts/tips-felanalys.mjs",
     "trupper": "node scripts/fetch-squads.mjs",
     "trupper:kontroll": "node scripts/verify-squads-tm.mjs",

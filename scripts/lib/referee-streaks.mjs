@@ -9,9 +9,11 @@ export const MIN_STREAK = 5;
 export const REF_DIVISIONS = { E0: 'PL', E1: 'CH', E2: 'EL1', E3: 'EL2' };
 export const ENGLISH_LEAGUES = new Set(Object.values(REF_DIVISIONS));
 // Alla ligor med domardata: England via football-data, ovriga via FotMob (scripts/fetch-referees-fotmob.mjs).
-// Superettan och Div 1 saknas: FotMob har ingen domare dar (0 av ~2 000 matcher 2023-2026).
-export const REF_LEAGUES = new Set([...ENGLISH_LEAGUES, 'BL', 'BL2', 'LL', 'LL2', 'SA', 'SB', 'L1', 'ED', 'PT', 'GR', 'AS',
+// Superettan: FotMob har ingen domare dar -> superettan.se (scripts/fetch-referees-allsvenskan.mjs). Div 1 saknas.
+export const REF_LEAGUES = new Set([...ENGLISH_LEAGUES, 'BL', 'BL2', 'LL', 'LL2', 'SA', 'SB', 'L1', 'ED', 'PT', 'GR', 'AS', 'SE2',
   'NO', 'NO2', 'DK', 'EK', 'JP1', 'MLS', 'MX', 'BR', 'BR2', 'AR', 'COL', 'CZ', 'HR', 'CL', 'EL', 'ECL']);
+// Officiella domarkallor (se applyOfficialReferees)
+const OFFICIAL_FILES = ['data/open/referee_allsvenskan.json', 'data/open/referee_official.json'];
 // Ettan Norra och Sodra ar samma FotMob-liga och delar domare -> en nyckel
 const LEAGUE_KEY = { SE3N: 'SE3', SE3S: 'SE3' };
 export const refLeagueKey = (code) => LEAGUE_KEY[code] || code;
@@ -48,6 +50,8 @@ export function refKey(name) {
 
 // Nyckeln utan alias (avgor vilket namn som visas)
 function rawKey(name) {
+  // Utlandska domare i Superettan: "Juuso Vuorinen, Finland" / "Peiman Simani (Finland)" -> utan land
+  name = String(name || '').replace(/\([^)]*\)/g, ' ').split(',')[0];
   let t = plain(String(name || '').replace(/(\p{Ll})(\p{Lu})/gu, '$1 $2')).replace(/['’.-]/g, '').split(/[^a-z]+/).filter(Boolean);
   while (t.length > 1 && TITLES.has(t[0])) t = t.slice(1);
   for (let i = t.length - 2; i >= 1; i--) if (PARTICLES.has(t[i])) t.splice(i, 2, t[i] + t[i + 1]);
@@ -441,11 +445,14 @@ export function refereePanel({ matches, index, league, home, away, referee = nul
 // readJson(relativ sokvag) -> objekt eller null. Rader utan domare tas bort.
 export function loadRefereeMatches(readJson, storeMatches = []) {
   const fd = Object.values(readJson('data/open/referee_history.json')?.bySeason || {}).flat();
-  const fm = applyOfficialReferees(
-    Object.values(readJson('data/open/referee_fotmob.json')?.leagues || {}).flatMap((l) => Object.values(l.matches || {})),
-    Object.values(readJson('data/open/referee_allsvenskan.json')?.matches || {}),
-  );
-  const merged = mergeRefereeMatches([...fd, ...fm.filter((m) => m.r && !ENGLISH_LEAGUES.has(m.lg))], storeMatches);
+  const fmRaw = Object.values(readJson('data/open/referee_fotmob.json')?.leagues || {}).flatMap((l) => Object.values(l.matches || {}));
+  const official = OFFICIAL_FILES.flatMap((f) => Object.values(readJson(f)?.matches || {}));
+  const fm = applyOfficialReferees(fmRaw, official);
+  // Ligor utan FotMob-rader (Superettan): de officiella raderna med resultat och kort anvands direkt
+  const fmLeagues = new Set(fmRaw.map((m) => m.lg));
+  const standalone = official.filter((o) => o.r && !fmLeagues.has(o.lg) && !ENGLISH_LEAGUES.has(o.lg) && Number.isFinite(o.hg) && Number.isFinite(o.ag))
+    .map(({ id, v, src, ...m }) => m);
+  const merged = mergeRefereeMatches([...fd, ...fm.filter((m) => m.r && !ENGLISH_LEAGUES.has(m.lg)), ...standalone], storeMatches);
   const fmEng = fm.filter((m) => m.r && ENGLISH_LEAGUES.has(m.lg));
   // Officiella engelska domare efter straffkopplingen (den gar pa football-datas domarnamn)
   return applyEnglishOfficials(attachPenalties(merged, fmEng), Object.values(readJson('data/open/referee_england.json')?.matches || {}), fmEng);
@@ -478,19 +485,93 @@ export function applyEnglishOfficials(rows, official = [], fotmobRows = []) {
   });
 }
 
-// Allsvenskan: huvuddomaren fran allsvenskan.se (officiell, scripts/fetch-referees-allsvenskan.mjs) ersatter
-// FotMobs domare. Kontroll 2026-10-02: FotMob saknade domare i 12 av 176 matcher och hade fel domare i 2.
-// official = [{ d, lg, h, a, r }]; kopplas pa liga, datum (+-1 dag) och bada lagnamnen. Kort/straffar behalls fran FotMob.
-const teamStem = (s) => plain(s).replace(/\b(if|ff|aif|bk|fc|ik|ifk|is|sk|fk)\b/g, '').replace(/[^a-z]/g, '');
+// Officiella domare (allsvenskan.se, cbf.com.br, chanceliga.cz, laliga.com, uefa.com, data.j-league.or.jp; se
+// scripts/fetch-referees-allsvenskan.mjs och fetch-referees-official.mjs) fyller luckor och rattar FotMob.
+// Kontroll Allsvenskan 2026-10-02: FotMob saknade domare i 12 av 176 matcher och hade fel domare i 2.
+// official = [{ d, lg, h, a, r }]; kopplas pa liga, datum (+-1 dag) och lagnamnen. Kort/straffar behalls fran FotMob.
+const teamStem = (s) => plain(s).replace(/\b(if|ff|aif|bk|fc|ik|ifk|is|sk|fk|ac|cf|cd|ud|sd|ec|sc|kf|nk|hnk|gnk|sv|afc|saf)\b/g, '').replace(/[^a-z]/g, '');
 const sameTeam = (a, b) => { const x = teamStem(a), y = teamStem(b); return !!x && !!y && (x.startsWith(y.slice(0, 5)) || y.startsWith(x.slice(0, 5))); };
 const dayDiff = (a, b) => Math.abs(Date.parse(a) - Date.parse(b)) / 864e5;
+
+// Officiell match for en FotMob-rad: samma liga, datum +-1 dag och bada lagen, annars ett av lagen (ett lag spelar
+// bara en ligamatch per dygn; lagnamnen skrivs olika mellan kallorna, t.ex. "Red Bull Bragantino"/"Bragantino")
+// Ett-lag-reserven kraver hela namnet (inte bara 5 forsta bokstaverna: "Racing Santander" != "Racing Ferrol")
+// och exakt en kandidat.
+const strictTeam = (a, b) => { const x = teamStem(a), y = teamStem(b); return x.length > 2 && y.length > 2 && (x.startsWith(y) || y.startsWith(x)); };
+function findOfficial(list, m) {
+  const one = [];
+  for (const x of list || []) {
+    if (dayDiff(x.d, m.d) > 1) continue;
+    if (sameTeam(x.h, m.h) && sameTeam(x.a, m.a)) return x;
+    if (strictTeam(x.h, m.h) || strictTeam(x.a, m.a)) one.push(x);
+  }
+  return one.length === 1 ? one[0] : null;
+}
+
+// Samma domare enligt namnet: samma forsta bokstav i fornamnet och minst ett gemensamt efternamn som inte ar
+// vanligt ("Iván Caparrós Hernández" = "Iván Caparrós", men "Paulo Cesar da Silva" != "Paulo Roberto Silva")
+const COMMON_SURNAMES = new Set(['silva', 'santos', 'oliveira', 'souza', 'sousa', 'pereira', 'lima', 'junior', 'filho', 'neto',
+  'costa', 'rodrigues', 'ferreira', 'alves', 'gomes', 'martins', 'carvalho', 'hernandez', 'garcia', 'fernandez', 'martinez',
+  'lopez', 'gonzalez', 'rodriguez', 'sanchez', 'perez', 'gomez', 'diaz', 'ruiz', 'jimenez', 'moreno', 'munoz', 'alvarez',
+  'romero', 'navarro', 'torres', 'dominguez', 'vazquez', 'ramos', 'gil', 'serrano', 'blanco', 'molina', 'morales', 'suarez']);
+const nameTokens = (n) => plain(n).replace(/['’.-]/g, '').split(/[^a-z]+/).filter((t) => t.length > 1 && !['de', 'da', 'do', 'dos', 'das', 'del', 'la', 'van', 'von', 'der'].includes(t));
+function sameRefName(a, b) {
+  const x = nameTokens(a), y = nameTokens(b);
+  // Samma nyckel racker bara nar efternamnet inte ar vanligt ("p silva" kan vara manga olika domare)
+  if (refKey(a) === refKey(b) && !COMMON_SURNAMES.has(refKey(a).split(' ').pop())) return true;
+  if (x.length < 2 || y.length < 2 || x[0][0] !== y[0][0]) return false;
+  const sy = new Set(y.slice(1));
+  return x.slice(1).some((t) => sy.has(t) && !COMMON_SURNAMES.has(t));
+}
+// sportomedia-matchhandelser (allsvenskan.se/superettan.se) -> kort och straffar per lag.
+// WARNING = gult, PENALTY = utvisning (rott), PENALTY_KICK = dömd straff; byHomeTeam = laget handelsen galler.
+export function disciplineFromEvents(events) {
+  const row = { hy: 0, ay: 0, hr: 0, ar: 0, hp: 0, ap: 0 };
+  for (const e of events || []) {
+    const side = e.byHomeTeam ? 'h' : 'a';
+    if (e.type === 'WARNING') row[`${side}y`]++;
+    else if (e.type === 'PENALTY') row[`${side}r`]++;
+    else if (e.type === 'PENALTY_KICK') row[`${side}p`]++;
+  }
+  return row;
+}
+
+// Officiella namn skrivs ofta annorlunda an FotMobs (fullstandiga namn, efternamn forst). Namnet oversatts till
+// FotMobs stavning for samma domare, sa att domaren far en nyckel: 1) inlart fran matcher dar bada har domare
+// (minst 2 ganger och 60 % av fallen), 2) namnlikhet mot ligans FotMob-namn, 3) annars det officiella namnet.
 export function applyOfficialReferees(rows, official = []) {
   if (!official?.length) return rows;
   const byLg = new Map();
   for (const o of official) if (o?.r) { if (!byLg.has(o.lg)) byLg.set(o.lg, []); byLg.get(o.lg).push(o); }
-  return rows.map((m) => {
-    const o = (byLg.get(m.lg) || []).find((x) => dayDiff(x.d, m.d) <= 1 && sameTeam(x.h, m.h) && sameTeam(x.a, m.a));
-    return o && o.r !== m.r ? { ...m, r: o.r } : m;
+  const pairs = rows.map((m) => [m, byLg.has(m.lg) ? findOfficial(byLg.get(m.lg), m) : null]);
+  const learned = new Map(), fmNames = new Map();
+  const bump = (map, k, v) => { if (!map.has(k)) map.set(k, new Map()); const c = map.get(k); c.set(v, (c.get(v) || 0) + 1); };
+  for (const [m, o] of pairs) {
+    if (!m.r) continue;
+    bump(fmNames, m.lg, m.r);
+    if (o) bump(learned, `${m.lg}|${o.r}`, m.r);
+  }
+  const top = (c) => [...c].sort((a, b) => b[1] - a[1])[0];
+  const cache = new Map();
+  const canon = (lg, name) => {
+    const ck = `${lg}|${name}`;
+    if (cache.has(ck)) return cache.get(ck);
+    let out = null;
+    const c = learned.get(ck);
+    if (c) { const [n, k] = top(c); const total = [...c.values()].reduce((s, x) => s + x, 0); if (k >= 2 && k / total >= 0.6) out = n; }
+    if (!out) {
+      const cand = [...(fmNames.get(lg) || [])].filter(([n]) => sameRefName(n, name));
+      if (cand.length && new Set(cand.map(([n]) => refKey(n))).size === 1) out = top(new Map(cand))[0];
+    }
+    if (!out && /[a-z]/i.test(name)) out = name;
+    cache.set(ck, out);
+    return out;
+  };
+  return pairs.map(([m, o]) => {
+    if (!o) return m;
+    const name = canon(m.lg, o.r);
+    if (!name || (m.r && refKey(m.r) === refKey(name))) return m;
+    return { ...m, r: name };
   });
 }
 

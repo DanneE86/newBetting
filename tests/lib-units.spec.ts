@@ -719,6 +719,7 @@ test.describe('referee-streaks: domarsviter per lag', () => {
       ['Mohammad Usman Aslam', 'Usman Aslam'], ['Carlos Andrés Gariano', 'Andrés Carlos Gariano'],
       ['Joakim Sars', 'Joakim Östling'], ['Granit Maqedonci', 'Granit Maqedonki'], ['Andreas Ekberg', 'Lars Christian Andreas Ekberg'],
       ['Sunny Sukhvir Gill', 'S Singh'], ['S Gill', 'Sunny Singh'],
+      ['Juuso Vuorinen', 'Juuso Vuorinen, Finland'], ['Peiman Simani', 'Peiman Simani (Finland)'],
     ];
     for (const [a, b] of same) expect(refKey(b), `${a} = ${b}`).toBe(refKey(a));
     // Olika personer med samma efternamn halls isar
@@ -1214,6 +1215,38 @@ test.describe('referee-streaks: FotMob, straffar och alla ligor', () => {
     expect(by('Oxford').r).toBe('J Bell');
     // CH: efl.com ensam (FotMob säger football-datas domare) -> oförändrat
     expect(by('Middlesbrough').r).toBe('J Smith');
+  });
+
+  test('Officiella källor: namn översätts till FotMobs stavning, ett lag räcker, Superettan fristående', async () => {
+    const { applyOfficialReferees, loadRefereeMatches, refereeLeagueReport, disciplineFromEvents } = await lib('referee-streaks.mjs');
+    const fm = (d: string, h: string, a: string, r: string | null) => ({ d, lg: 'LL2', h, a, hg: 1, ag: 0, r });
+    const rows = [
+      fm('2026-08-14', 'Real Sociedad B', 'Castellon', 'Iván Caparrós'),
+      fm('2026-08-21', 'Leganes', 'Malaga', 'Iván Caparrós'),
+      fm('2026-08-28', 'Eibar', 'Huesca', null),
+      fm('2026-09-04', 'Cadiz', 'Zaragoza', 'Rafael Sánchez'),
+    ];
+    const off = [
+      // Fullständigt namn hos laliga.com; "R. Sociedad B" matchar inte, men Castellón gör det
+      { d: '2026-08-14', lg: 'LL2', h: 'R. Sociedad B', a: 'CD Castellón', r: 'Iván Caparrós Hernández' },
+      { d: '2026-08-21', lg: 'LL2', h: 'CD Leganés', a: 'Málaga CF', r: 'Iván Caparrós Hernández' },
+      { d: '2026-08-28', lg: 'LL2', h: 'SD Eibar', a: 'SD Huesca', r: 'Iván Caparrós Hernández' },
+      // Annan domare än FotMob -> rättas (officiellt namn när FotMob inte känner domaren)
+      { d: '2026-09-04', lg: 'LL2', h: 'Cádiz CF', a: 'Real Zaragoza', r: 'Eder Mallo Fernández' },
+    ];
+    const out = applyOfficialReferees(rows, off);
+    expect(out.map((m: any) => m.r)).toEqual(['Iván Caparrós', 'Iván Caparrós', 'Iván Caparrós', 'Eder Mallo Fernández']);
+    // Vanliga efternamn räcker inte för att anse två namn vara samma domare
+    const br = applyOfficialReferees([{ d: '2026-05-01', lg: 'BR', h: 'Santos', a: 'Bahia', hg: 0, ag: 0, r: null },
+      { d: '2026-04-01', lg: 'BR', h: 'Gremio', a: 'Vitoria', hg: 0, ag: 0, r: 'Paulo Roberto Silva' }],
+    [{ d: '2026-05-01', lg: 'BR', h: 'Santos FC', a: 'Bahia', r: 'Paulo Cesar Zanovelli da Silva' }]);
+    expect(br[0].r).toBe('Paulo Cesar Zanovelli da Silva');
+    // Superettan: inga FotMob-rader -> officiella rader med resultat och kort används direkt
+    const se2 = { matches: { 1: { id: '1', v: 2, d: '2026-05-01', lg: 'SE2', h: 'Helsingborgs IF', a: 'Östers IF', hg: 4, ag: 1, r: 'Farouk Nehdi', ...disciplineFromEvents([{ type: 'WARNING', byHomeTeam: false }, { type: 'PENALTY_KICK', byHomeTeam: true }, { type: 'PENALTY', byHomeTeam: true }]) } } };
+    const all = loadRefereeMatches((rel: string) => (rel === 'data/open/referee_allsvenskan.json' ? se2 : null), []);
+    expect(all).toHaveLength(1);
+    expect(all[0]).toMatchObject({ lg: 'SE2', r: 'Farouk Nehdi', hy: 0, ay: 1, hr: 1, ar: 0, hp: 1, ap: 0 });
+    expect(refereeLeagueReport(all, 'SE2', { today: '2026-10-02' }).referees[0]).toMatchObject({ referee: 'Farouk Nehdi', matches: 1 });
   });
 
   test('Allsvenskan: domare från allsvenskan.se fyller luckor och rättar FotMob, kort behålls', async () => {
