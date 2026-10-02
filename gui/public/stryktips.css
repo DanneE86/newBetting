@@ -3,7 +3,7 @@
 /*
  * Lokala färger som speglar Gambling Cabins cellfärger (grön/gul/röd).
  * De MÅSTE ha samma värden som i Gambling Cabin – mappa dem inte till varumärkestokens.
- * Rosa (spik) och Gambling Cabin-knappen finns redan som --color-spik / --color-gc-button i tokens.css.
+ * Blått (spik) och Gambling Cabin-knappen finns redan som --color-spik / --color-gc-button i tokens.css.
  */
 :root {
   --gc-green: #4cc873;
@@ -344,12 +344,15 @@ body.view-stryktips main { display: none !important; }
 .st-in.c-green { background: var(--gc-green); color: var(--gc-green-text); }
 .st-in.c-yellow { background: var(--gc-yellow); color: var(--gc-yellow-text); }
 .st-in.c-red { background: var(--gc-red); color: var(--gc-red-text); }
-/* Spikar alltid rosa (Gambling Cabin id 5) */
-.st-prob.c-pink { border-color: var(--color-spik); background: color-mix(in srgb, var(--color-spik) var(--st-tint), var(--color-surface)); box-shadow: inset 4px 0 0 var(--color-spik); }
-.st-prob.c-pink .st-bar span { background: var(--color-spik); }
-.st-prob.c-pink .st-prob-top strong { color: var(--color-spik-text); }
-.st-prob.hit.c-pink { box-shadow: inset 4px 0 0 var(--color-spik), inset 0 0 0 2px var(--color-text); }
-.st-in.c-pink { background: var(--color-spik); color: var(--color-spik-text); }
+/* Spikar alltid blå (Gambling Cabins grundfärg, id 1) */
+.st-prob.c-blue { border-color: var(--color-spik); background: color-mix(in srgb, var(--color-spik) var(--st-tint), var(--color-surface)); box-shadow: inset 4px 0 0 var(--color-spik); }
+.st-prob.c-blue .st-bar span { background: var(--color-spik); }
+.st-in.c-blue { background: var(--color-spik); color: var(--color-spik-text); }
+.st-prob.c-spik { border-color: var(--color-spik); background: color-mix(in srgb, var(--color-spik) var(--st-tint), var(--color-surface)); box-shadow: inset 4px 0 0 var(--color-spik); }
+.st-prob.c-spik .st-bar span { background: var(--color-spik); }
+.st-prob.c-spik .st-prob-top strong { color: var(--color-spik-text); }
+.st-prob.hit.c-spik { box-shadow: inset 4px 0 0 var(--color-spik), inset 0 0 0 2px var(--color-text); }
+.st-in.c-spik { background: var(--color-spik); color: var(--color-spik-text); }
 .st-legend { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-1) var(--space-2); margin: 0 0 var(--space-4); color: var(--color-text-muted); font-size: var(--font-size-sm); }
 .st-legend b { color: var(--color-text); }
 /* Gambling Cabin-knappen har även .ds-btn i markupen men behåller Gambling Cabins gröna färg */
@@ -479,8 +482,8 @@ body.view-stryktips main { display: none !important; }
 .st-miss-table td:last-child { white-space: nowrap; }
 
 
-/* Spikar (ett tecken) alltid rosa (samma som Gambling Cabins rosa) – i kupong A, B, egna krav och kupongtabellen */
-.st-tip.spik { background: var(--color-spik); color: var(--color-spik-text); box-shadow: none; }
+/* Spikar (ett tecken) alltid blå (samma som Gambling Cabins blå grundfärg) – i kupong A, B, egna krav och kupongtabellen */
+.st-tip.spik, .st-tip.blue { background: var(--color-spik); color: var(--color-spik-text); box-shadow: none; }
 .st-tip.spik.mine { box-shadow: 0 0 0 2px var(--color-warning); }
 .sb-signs.spik .sb-sign.on { background: var(--color-spik); border-color: var(--color-spik); color: var(--color-spik-text); }
 .sb-signs.spik .sb-sign.on small { color: var(--color-spik-text); }

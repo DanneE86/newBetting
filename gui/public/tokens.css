@@ -63,8 +63,8 @@
   --color-warning-solid: #8a5a00;
 
   /* Domänfärger som måste matcha externa verktyg – ändra inte värdet */
-  --color-spik: #f07ab8;                     /* Gambling Cabin rosa (id 5) */
-  --color-spik-text: #2a0a1c;
+  --color-spik: #1e90ff;                     /* Gambling Cabin blå grundfärg (id 1) */
+  --color-spik-text: #07275c;                /* Gambling Cabins mörkblå, 4,6:1 mot spik-blått */
   --color-gc-button: #07783a;                /* Gambling Cabin-knapp (mörkad för 4,5:1 mot vit text) */
 
   /* Fokus */
@@ -122,7 +122,7 @@
  * Mörkt läge. Väljs med data-theme="dark" på <html> (temaväljaren i sidhuvudet, theme.js), eller
  * automatiskt när systemet är mörkt och användaren inte valt ljust (data-theme="auto" eller inget val).
  * Bara de semantiska rollerna byts – komponenterna läser samma variabler i båda teman.
- * Spik-rosa, Gambling Cabin-färgerna och *-solid-ytorna är oförändrade.
+ * Spik-blått, Gambling Cabin-färgerna och *-solid-ytorna är oförändrade.
  * Blocket finns två gånger (manuellt val + systemval) eftersom CSS inte kan dela en regel mellan dem.
  */
 :root[data-theme="dark"] {
