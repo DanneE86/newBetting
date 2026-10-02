@@ -289,6 +289,69 @@ export function refereeLeagueReport(matches, league, { today = new Date().toISOS
   return { league, since, today, seasons, calendar, leagueAvg, referees };
 }
 
+// ---------- Sasongsfilter i domarvyn (anvandarens onskan 2026-10-02: arets sasong som standard, aldre valbara) ----------
+export const HISTORY_SEASONS = 5;
+const seasonLabel = (y, calendar) => (calendar ? String(y) : `${y}/${String((y + 1) % 100).padStart(2, '0')}`);
+
+// Sasonger i domarvyn, nyast forst: [{ id: '2026', label, since, until }] + { id: 'all' } (senaste REPORT_SEASONS)
+export function refereeSeasons(league, today = new Date().toISOString().slice(0, 10), n = HISTORY_SEASONS) {
+  const calendar = CALENDAR_LEAGUES.has(refLeagueKey(league));
+  const cur = calendar ? Number(today.slice(0, 4)) : seasonStartYear(today);
+  const start = calendar ? '01-01' : '07-01';
+  const end = calendar ? '12-31' : '06-30';
+  const out = [];
+  for (let y = cur; y > cur - n; y--) out.push({ id: String(y), label: seasonLabel(y, calendar), since: `${y}-${start}`, until: `${calendar ? y : y + 1}-${end}` });
+  out.push({ id: 'all', label: `Senaste ${REPORT_SEASONS} säsongerna`, since: `${cur - REPORT_SEASONS + 1}-${start}`, until: today });
+  return { calendar, current: String(cur), seasons: out };
+}
+
+// En sasong: ligasnitt och alla domare som domt i ligan den sasongen
+function seasonReport(inLeague, s) {
+  const list = inLeague.filter((m) => m.d >= s.since && m.d <= s.until);
+  const leagueAvg = disciplineStats(list);
+  const byRef = new Map();
+  for (const m of list) {
+    const k = refKey(m.r);
+    if (!k) continue;
+    if (!byRef.has(k)) byRef.set(k, []);
+    byRef.get(k).push(m);
+  }
+  const referees = [...byRef].map(([key, l]) => {
+    l.sort((a, b) => a.d.localeCompare(b.d));
+    const st = disciplineStats(l);
+    return { key, referee: l[l.length - 1].r, lastDate: l[l.length - 1].d, ...st, ...vsAll(st, leagueAvg) };
+  }).sort((a, b) => b.matches - a.matches || a.referee.localeCompare(b.referee));
+  return { since: s.since, until: s.until, leagueAvg, referees };
+}
+
+// Ligans domarvy med sasongsfilter: rapport per sasong + alla matcher (for "domarens matcher" vid klick).
+// Toppnivans leagueAvg/referees/since = innevarande sasong.
+export function refereeLeagueSeasons(matches, league, { today = new Date().toISOString().slice(0, 10), n = HISTORY_SEASONS } = {}) {
+  const lgKey = refLeagueKey(league);
+  const { calendar, current, seasons } = refereeSeasons(league, today, n);
+  const oldest = seasons[seasons.length - 2].since;
+  const inLeague = (matches || []).filter((m) => m.lg === lgKey && m.d >= oldest && m.d <= today);
+  const reports = {};
+  for (const s of seasons) {
+    reports[s.id] = s.id === 'all' ? (({ since, leagueAvg, referees }) => ({ since, until: today, leagueAvg, referees }))(refereeLeagueReport(matches, league, { today })) : seasonReport(inLeague, s);
+  }
+  // Tomma sasonger (ligan saknar data) visas inte i valet
+  const withData = seasons.filter((s) => reports[s.id].leagueAvg.matches > 0);
+  const games = inLeague.map((m) => {
+    const g = { d: m.d, h: m.h, a: m.a, hg: m.hg, ag: m.ag, k: refKey(m.r) };
+    for (const f of ['hy', 'ay', 'hr', 'ar', 'hp', 'ap']) if (m[f] != null) g[f] = m[f];
+    return g;
+  }).sort((a, b) => b.d.localeCompare(a.d));
+  return { league, calendar, today, season: current, seasons: withData, reports, games, since: reports[current].since, leagueAvg: reports[current].leagueAvg, referees: reports[current].referees };
+}
+
+// Lagets alla matcher med domaren (nyast forst), for listan i matchens domarpanel
+function teamGames(index, team, key) {
+  if (!team) return [];
+  return (index.byPair.get(`${team}|${key}`) || []).slice().reverse()
+    .map((m) => ({ date: m.date, league: m.league, opp: m.opp, home: m.home, score: `${m.gf}-${m.ga}`, res: m.res, yc: m.yc }));
+}
+
 // Lagets facit mot en domare (alla ligor, all historik), kompakt for tabellen
 function teamRecord(index, team, key) {
   if (!team) return null;
@@ -313,12 +376,23 @@ export function refereePanel({ matches, index, league, home, away, referee = nul
     appointed = {
       ...prof, referee, key: rk, otherLeagues: !inLg,
       ...vsAll(prof, report.leagueAvg),
-      home: flags?.home || null, away: flags?.away || null, flagged: !!flags?.flagged,
+      home: flags?.home ? { ...flags.home, games: teamGames(index, flags.home.team, rk) } : null,
+      away: flags?.away ? { ...flags.away, games: teamGames(index, flags.away.team, rk) } : null,
+      flagged: !!flags?.flagged,
     };
+  }
+  // Lagens facit mot alla domare som domt i ligan de senaste HISTORY_SEASONS sasongerna (tabellens sasongsfilter)
+  const oldest = refereeSeasons(league, report.today).seasons.at(-2).since;
+  const lgKey = refLeagueKey(league);
+  const teamRecs = {};
+  for (const m of matches || []) {
+    if (m.lg !== lgKey || m.d < oldest) continue;
+    const k = refKey(m.r);
+    if (k && !teamRecs[k]) teamRecs[k] = { home: teamRecord(index, th, k), away: teamRecord(index, ta, k) };
   }
   return {
     league, since: report.since, seasons: report.seasons, calendar: report.calendar, leagueAvg: report.leagueAvg,
-    teams: { home: th, away: ta }, referee: appointed,
+    teams: { home: th, away: ta }, referee: appointed, teamRecs,
     referees: report.referees.map((r) => ({ ...r, home: teamRecord(index, th, r.key), away: teamRecord(index, ta, r.key) })),
   };
 }

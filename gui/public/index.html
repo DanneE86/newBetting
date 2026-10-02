@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="/stryktips.css" />
   <link rel="stylesheet" href="/startelva.css" />
   <link rel="stylesheet" href="/spelarkort.css" />
+  <script src="/theme.js"></script>
 </head>
 <body>
   <div class="noise" aria-hidden="true"></div>
@@ -20,6 +21,11 @@
       <p class="eyebrow">Fotboll · Oddset & tipset</p>
       <h1 class="brand">Betting</h1>
       <p class="tagline">Lokala tips drivna av ClubElo, spelardata, xG och ESPN-elvor.</p>
+      <div class="theme-switch" role="group" aria-label="Färgläge">
+        <button type="button" class="ds-toggle" data-theme-choice="light" aria-pressed="false">Ljust</button>
+        <button type="button" class="ds-toggle" data-theme-choice="dark" aria-pressed="false">Mörkt</button>
+        <button type="button" class="ds-toggle" data-theme-choice="auto" aria-pressed="false" title="Följer datorns eller telefonens inställning">Auto</button>
+      </div>
     </div>
     <div class="actions">
       <button type="button" id="btn-fetch" class="btn-fetch ds-btn ds-btn--primary">
