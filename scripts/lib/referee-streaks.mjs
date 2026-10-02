@@ -18,14 +18,54 @@ export const refLeagueKey = (code) => LEAGUE_KEY[code] || code;
 // Ligor som spelar over kalenderaret (sasong = ar i st f juli-juni)
 export const CALENDAR_LEAGUES = new Set(['AS', 'SE2', 'SE3', 'NO', 'NO2', 'JP1', 'MLS', 'BR', 'BR2', 'AR', 'COL']);
 
-const plain = (s) => String(s || '').normalize('NFD').replace(/\p{M}/gu, '').toLowerCase();
+// Bokstaver som NFD inte delar upp (ł, ø ...) -> latinska motsvarigheter
+const SPECIAL = { 'ł': 'l', 'ø': 'o', 'æ': 'ae', 'œ': 'oe', 'ß': 'ss', 'đ': 'd', 'ı': 'i', 'þ': 'th' };
+const plain = (s) => String(s || '').toLowerCase().replace(/[łøæœßđıþ]/g, (c) => SPECIAL[c])
+  .normalize('NFD').replace(/\p{M}/gu, '');
+// Translitterering: "Ladebaeck" = "Ladebäck", "Eskaas" = "Eskås", "Groetta" = "Grøtta", "Badstuebner" = "Badstübner"
+const translit = (s) => s.replace(/ae|aa/g, 'a').replace(/oe/g, 'o').replace(/ue/g, 'u');
+// Titlar fore namnet ("Dr. Matthias Jöllenbeck") och partiklar som skrivs bade med och utan bindestreck ("Al-Hakim")
+const TITLES = new Set(['dr', 'prof']);
+const PARTICLES = new Set(['al', 'el']);
+// Stavfel och namnvarianter i kallorna (nyckel -> nyckeln for samma domare), hittade 2026-10-02
+const REF_ALIASES = {
+  'k oldhfer': 'k oldhafer', 'k katoikos': 'k katikos', 'd huittron': 'd huitron',
+  's zampalas': 's zabalas', 's zamplalas': 's zabalas', 'f fill': 'f fillho', 'l tisnei': 'l tisne',
+  'l motorel': 'l matorel', 'a alhatam': 'a alhatem', 'u aslam': 'm aslam', 'a gariano': 'c gariano',
+  'a muniz': 'a ruiz', 'o nielsen': 'o nilsen',
+  // Allsvenskan (kontroll mot allsvenskan.se): stavfel hos allsvenskan.se, FotMobs fulla namn, namnbyte 2025
+  'g maqedonki': 'g maqedonci', 'l ekberg': 'a ekberg', 'j ostling': 'j sars',
+  // England: Sunny Sukhvir Singh Gill skrivs "S Singh", "S Gill", "Sunny Singh" eller "Sunny Sukhvir Gill"
+  's singh': 's gill',
+};
 
 // "Anthony Taylor" / "A Taylor" / "A. Taylor" -> "a taylor"; "Jamie O'Connor" -> "j oconnor"; "J jBrooks" -> "j brooks"
+// "Mohammed Al Hakim" / "Mohammed Al-Hakim" -> "m alhakim"; "Adam Ladebäck" / "Adam Ladebaeck" -> "a ladeback"
 export function refKey(name) {
-  const t = plain(String(name || '').replace(/(\p{Ll})(\p{Lu})/gu, '$1 $2')).replace(/['’.-]/g, '').split(/[^a-z]+/).filter(Boolean);
+  const k = rawKey(name);
+  return REF_ALIASES[k] || k;
+}
+
+// Nyckeln utan alias (avgor vilket namn som visas)
+function rawKey(name) {
+  let t = plain(String(name || '').replace(/(\p{Ll})(\p{Lu})/gu, '$1 $2')).replace(/['’.-]/g, '').split(/[^a-z]+/).filter(Boolean);
+  while (t.length > 1 && TITLES.has(t[0])) t = t.slice(1);
+  for (let i = t.length - 2; i >= 1; i--) if (PARTICLES.has(t[i])) t.splice(i, 2, t[i] + t[i + 1]);
   if (!t.length) return '';
-  if (t.length === 1) return t[0];
-  return `${t[0][0]} ${t[t.length - 1]}`;
+  if (t.length === 1) return translit(t[0]);
+  return `${t[0][0]} ${translit(t[t.length - 1])}`;
+}
+
+// Namnet som visas for en domarnyckel: vanligaste stavningen (vid lika: den senaste). Alias (stavfel, gamla
+// namn som "Joakim Östling") visas bara om domaren saknar andra stavningar.
+function displayName(list) {
+  const real = list.filter((m) => !REF_ALIASES[rawKey(m.r)]);
+  if (real.length) list = real;
+  const n = new Map();
+  for (const m of list) n.set(m.r, (n.get(m.r) || 0) + 1);
+  let best = null;
+  for (const m of list) if (!best || n.get(m.r) >= n.get(best)) best = m.r;
+  return best;
 }
 
 // dd/mm/yy eller dd/mm/yyyy -> yyyy-mm-dd
@@ -283,7 +323,7 @@ export function refereeLeagueReport(matches, league, { today = new Date().toISOS
     const last = list[list.length - 1];
     if (last.d < activeSince) continue;
     const st = disciplineStats(list);
-    referees.push({ key, referee: last.r, lastDate: last.d, ...st, ...vsAll(st, leagueAvg) });
+    referees.push({ key, referee: displayName(list), lastDate: last.d, ...st, ...vsAll(st, leagueAvg) });
   }
   referees.sort((a, b) => b.matches - a.matches || a.referee.localeCompare(b.referee));
   return { league, since, today, seasons, calendar, leagueAvg, referees };
@@ -319,7 +359,7 @@ function seasonReport(inLeague, s) {
   const referees = [...byRef].map(([key, l]) => {
     l.sort((a, b) => a.d.localeCompare(b.d));
     const st = disciplineStats(l);
-    return { key, referee: l[l.length - 1].r, lastDate: l[l.length - 1].d, ...st, ...vsAll(st, leagueAvg) };
+    return { key, referee: displayName(l), lastDate: l[l.length - 1].d, ...st, ...vsAll(st, leagueAvg) };
   }).sort((a, b) => b.matches - a.matches || a.referee.localeCompare(b.referee));
   return { since: s.since, until: s.until, leagueAvg, referees };
 }
@@ -401,9 +441,57 @@ export function refereePanel({ matches, index, league, home, away, referee = nul
 // readJson(relativ sokvag) -> objekt eller null. Rader utan domare tas bort.
 export function loadRefereeMatches(readJson, storeMatches = []) {
   const fd = Object.values(readJson('data/open/referee_history.json')?.bySeason || {}).flat();
-  const fm = Object.values(readJson('data/open/referee_fotmob.json')?.leagues || {}).flatMap((l) => Object.values(l.matches || {}));
+  const fm = applyOfficialReferees(
+    Object.values(readJson('data/open/referee_fotmob.json')?.leagues || {}).flatMap((l) => Object.values(l.matches || {})),
+    Object.values(readJson('data/open/referee_allsvenskan.json')?.matches || {}),
+  );
   const merged = mergeRefereeMatches([...fd, ...fm.filter((m) => m.r && !ENGLISH_LEAGUES.has(m.lg))], storeMatches);
-  return attachPenalties(merged, fm.filter((m) => m.r && ENGLISH_LEAGUES.has(m.lg)));
+  const fmEng = fm.filter((m) => m.r && ENGLISH_LEAGUES.has(m.lg));
+  // Officiella engelska domare efter straffkopplingen (den gar pa football-datas domarnamn)
+  return applyEnglishOfficials(attachPenalties(merged, fmEng), Object.values(readJson('data/open/referee_england.json')?.matches || {}), fmEng);
+}
+
+// England: football-data (rad) mot officiella kallor (scripts/fetch-referees-england.mjs). Kontroll 2026-10-02:
+//  - PL: premierleague.com galler alltid (1 avvikelse pa 430, tillsatt domare bytt sent). Fullt namn + VAR.
+//  - CH/EL1/EL2: efl.com hade fel i halften av sina 6 avvikelser -> rattar bara nar FotMob sager samma som efl.com.
+const ENG_TEAM = {
+  'man city': 'manchester city', 'man united': 'manchester united', "nott'm forest": 'nottingham forest',
+  'nottm forest': 'nottingham forest', wolves: 'wolverhampton', spurs: 'tottenham', 'sheffield weds': 'sheffield wednesday',
+  'west brom': 'west bromwich', qpr: 'queens park rangers', 'mk dons': 'milton keynes dons', 'bristol rvs': 'bristol rovers',
+  'brighton and hove albion': 'brighton', 'brighton & hove albion': 'brighton', 'afc wimbledon': 'wimbledon',
+};
+const engStem = (s) => { const p = plain(s).trim(); return (ENG_TEAM[p] || p).replace(/\b(fc|afc|the)\b/g, '').replace(/[^a-z]/g, ''); };
+const sameEngTeam = (a, b) => { const x = engStem(a), y = engStem(b); return x.length > 2 && y.length > 2 && (x.startsWith(y) || y.startsWith(x)); };
+const findEng = (list, m) => list?.find((x) => dayDiff(x.d, m.d) <= 1 && sameEngTeam(x.h, m.h) && sameEngTeam(x.a, m.a));
+export function applyEnglishOfficials(rows, official = [], fotmobRows = []) {
+  if (!official?.length) return rows;
+  const group = (list) => { const g = new Map(); for (const x of list || []) if (x?.r) { if (!g.has(x.lg)) g.set(x.lg, []); g.get(x.lg).push(x); } return g; };
+  const off = group(official), fm = group(fotmobRows);
+  return rows.map((m) => {
+    if (!ENGLISH_LEAGUES.has(m.lg)) return m;
+    const o = findEng(off.get(m.lg), m);
+    if (!o) return m;
+    if (o.src === 'pl') return { ...m, r: o.r, ...(o.var ? { var: o.var } : {}) };
+    if (refKey(o.r) === refKey(m.r)) return m;
+    const f = findEng(fm.get(m.lg), m);
+    return f && refKey(f.r) === refKey(o.r) ? { ...m, r: o.r } : m;
+  });
+}
+
+// Allsvenskan: huvuddomaren fran allsvenskan.se (officiell, scripts/fetch-referees-allsvenskan.mjs) ersatter
+// FotMobs domare. Kontroll 2026-10-02: FotMob saknade domare i 12 av 176 matcher och hade fel domare i 2.
+// official = [{ d, lg, h, a, r }]; kopplas pa liga, datum (+-1 dag) och bada lagnamnen. Kort/straffar behalls fran FotMob.
+const teamStem = (s) => plain(s).replace(/\b(if|ff|aif|bk|fc|ik|ifk|is|sk|fk)\b/g, '').replace(/[^a-z]/g, '');
+const sameTeam = (a, b) => { const x = teamStem(a), y = teamStem(b); return !!x && !!y && (x.startsWith(y.slice(0, 5)) || y.startsWith(x.slice(0, 5))); };
+const dayDiff = (a, b) => Math.abs(Date.parse(a) - Date.parse(b)) / 864e5;
+export function applyOfficialReferees(rows, official = []) {
+  if (!official?.length) return rows;
+  const byLg = new Map();
+  for (const o of official) if (o?.r) { if (!byLg.has(o.lg)) byLg.set(o.lg, []); byLg.get(o.lg).push(o); }
+  return rows.map((m) => {
+    const o = (byLg.get(m.lg) || []).find((x) => dayDiff(x.d, m.d) <= 1 && sameTeam(x.h, m.h) && sameTeam(x.a, m.a));
+    return o && o.r !== m.r ? { ...m, r: o.r } : m;
+  });
 }
 
 // England: football-data saknar straffar. FotMob-raden for samma liga, dag och domare (en domare domer en match
