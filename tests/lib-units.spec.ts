@@ -708,6 +708,29 @@ test.describe('referee-streaks: domarsviter per lag', () => {
     expect(refKey('')).toBe('');
   });
 
+  test('refKey: stavningsvarianter av samma domare blir en nyckel (inga dubbletter i domarlistan)', async () => {
+    const { refKey, refereeLeagueReport } = await lib('referee-streaks.mjs');
+    const same = [
+      ['Mohammed Al-Hakim', 'Mohammed Al Hakim'], ['Adam Ladebäck', 'Adam Ladebaeck'],
+      ['Espen Eskås', 'Espen Eskaas'], ['Marius Hansen Grøtta', 'Marius Hansen Groetta'], ['Marius Hansen Grøtta', 'Marius Hansen Grotta'],
+      ['Florian Badstübner', 'Florian Badstuebner'], ['Matthias Jöllenbeck', 'Dr. Matthias Jöllenbeck'], ['Matthias Jöllenbeck', 'Matthias Joellenbeck'],
+      ['Jarosław Przybył', 'Jaroslaw Przybyl'], ['Łukasz Kuźma', 'Lukasz Kuzma'], ['Sandro Schärer', 'Sandro Schaerer'],
+      ['Ali Al-Hatem', 'Ali Al Hatam'], ['Konrad Oldhafer', 'Konrad Oldhfer'], ['Spiros Zabalas', 'Spyros Zampalas'],
+      ['Mohammad Usman Aslam', 'Usman Aslam'], ['Carlos Andrés Gariano', 'Andrés Carlos Gariano'],
+      ['Joakim Sars', 'Joakim Östling'], ['Granit Maqedonci', 'Granit Maqedonki'], ['Andreas Ekberg', 'Lars Christian Andreas Ekberg'],
+      ['Sunny Sukhvir Gill', 'S Singh'], ['S Gill', 'Sunny Singh'],
+    ];
+    for (const [a, b] of same) expect(refKey(b), `${a} = ${b}`).toBe(refKey(a));
+    // Olika personer med samma efternamn halls isar
+    expect(refKey('Kristoffer Karlsson')).not.toBe(refKey('Niclas Karlsson'));
+    expect(refKey('Chris Penso')).not.toBe(refKey('Tori Penso'));
+    // Domarlistan: en rad per domare, vanligaste stavningen visas
+    const m = (d, r) => ({ d, lg: 'AS', h: 'A', a: 'B', hg: 1, ag: 0, r, hy: 2, ay: 1 });
+    const rep = refereeLeagueReport([m('2026-04-01', 'Mohammed Al Hakim'), m('2026-05-01', 'Mohammed Al Hakim'), m('2026-06-01', 'Mohammed Al-Hakim')], 'AS', { today: '2026-10-02' });
+    expect(rep.referees).toHaveLength(1);
+    expect(rep.referees[0]).toMatchObject({ referee: 'Mohammed Al Hakim', matches: 3 });
+  });
+
   test('parseRefereeCsv: datum, mal, domare; ospelade och domarlosa hoppas over', async () => {
     const { parseRefereeCsv } = await lib('referee-streaks.mjs');
     const csv = '\uFEFFDiv,Date,Time,HomeTeam,AwayTeam,FTHG,FTAG,FTR,Referee\r\nE0,16/08/2025,20:00,Liverpool,Bournemouth,4,2,H,A Taylor\r\nE0,17/08/15,15:00,Arsenal,Leeds,,,,M Oliver\r\nE0,18/08/2025,15:00,Chelsea,Fulham,1,1,D,\r\n';
@@ -1155,6 +1178,70 @@ test.describe('referee-streaks: FotMob, straffar och alla ligor', () => {
     expect(all.find((m: any) => m.lg === 'PL')).toMatchObject({ h: 'Man City', hp: 2 });
     expect(hasRefereeData(all, 'AS', '2026-10-01')).toBe(true);
     expect(hasRefereeData(all, 'SE2', '2026-10-01')).toBe(false);
+  });
+
+  test('England: premierleague.com gäller alltid, efl.com bara när FotMob håller med; straffar behålls', async () => {
+    const { loadRefereeMatches } = await lib('referee-streaks.mjs');
+    const fd = { bySeason: { x: [
+      { d: '2026-02-01', lg: 'PL', h: "Nott'm Forest", a: 'Crystal Palace', hg: 1, ag: 1, r: 'M Salisbury', hy: 2, ay: 3 },
+      { d: '2026-02-01', lg: 'PL', h: 'Man City', a: 'Man United', hg: 2, ag: 0, r: 'A Taylor' },
+      { d: '2025-11-29', lg: 'CH', h: 'Stoke', a: 'Hull', hg: 0, ag: 0, r: 'L Doughty' },
+      { d: '2025-10-18', lg: 'CH', h: 'Oxford', a: 'Derby', hg: 1, ag: 2, r: 'J Bell' },
+      { d: '2025-12-13', lg: 'CH', h: 'Middlesbrough', a: 'QPR', hg: 1, ag: 0, r: 'J Smith' },
+    ] } };
+    const fm = { leagues: { PL: { matches: { 1: { d: '2026-02-01', lg: 'PL', h: 'Nottingham Forest', a: 'Crystal Palace', hg: 1, ag: 1, r: 'Michael Salisbury', hp: 1, ap: 0 } } },
+      CH: { matches: {
+        2: { d: '2025-11-29', lg: 'CH', h: 'Stoke City', a: 'Hull City', r: 'Joshua Smith' },
+        3: { d: '2025-10-18', lg: 'CH', h: 'Oxford United', a: 'Derby County', r: 'James Bell' },
+        4: { d: '2025-12-13', lg: 'CH', h: 'Middlesbrough', a: 'Queens Park Rangers', r: 'Joshua Smith' },
+      } } } };
+    const eng = { matches: {
+      a: { src: 'pl', d: '2026-02-01', lg: 'PL', h: 'Nottingham Forest', a: 'Crystal Palace', r: 'Tony Harrington', var: 'Darren England' },
+      b: { src: 'pl', d: '2026-02-01', lg: 'PL', h: 'Manchester City', a: 'Manchester United', r: 'Anthony Taylor' },
+      c: { src: 'efl', d: '2025-11-29', lg: 'CH', h: 'Stoke City', a: 'Hull City', r: 'Josh Smith' },
+      d: { src: 'efl', d: '2025-10-18', lg: 'CH', h: 'Oxford United', a: 'Derby County', r: 'Gavin Ward' },
+      e: { src: 'efl', d: '2025-12-13', lg: 'CH', h: 'Middlesbrough', a: 'Queens Park Rangers', r: 'David Webb' },
+    } };
+    const files: Record<string, any> = { 'data/open/referee_history.json': fd, 'data/open/referee_fotmob.json': fm, 'data/open/referee_england.json': eng };
+    const all = loadRefereeMatches((rel: string) => files[rel] ?? null, []);
+    const by = (h: string) => all.find((m: any) => m.h === h);
+    // PL: officiellt namn och VAR; straffen (kopplad via football-datas domare) och korten finns kvar
+    expect(by("Nott'm Forest")).toMatchObject({ r: 'Tony Harrington', var: 'Darren England', hp: 1, hy: 2 });
+    expect(by('Man City').r).toBe('Anthony Taylor');
+    // CH: efl.com + FotMob mot football-data -> rättas
+    expect(by('Stoke').r).toBe('Josh Smith');
+    // CH: FotMob håller med football-data -> oförändrat
+    expect(by('Oxford').r).toBe('J Bell');
+    // CH: efl.com ensam (FotMob säger football-datas domare) -> oförändrat
+    expect(by('Middlesbrough').r).toBe('J Smith');
+  });
+
+  test('Allsvenskan: domare från allsvenskan.se fyller luckor och rättar FotMob, kort behålls', async () => {
+    const { loadRefereeMatches, applyOfficialReferees, refereeLeagueReport } = await lib('referee-streaks.mjs');
+    const fm = { leagues: { AS: { matches: {
+      1: { d: '2026-05-10', lg: 'AS', h: 'AIK', a: 'Djurgården', hg: 1, ag: 1, r: 'Mohammed Nasser Ahmed', hy: 3, ay: 2 },
+      2: { d: '2026-04-05', lg: 'AS', h: 'AIK', a: 'Halmstads BK', hg: 2, ag: 0, r: null, hy: 1, ay: 4 },
+      3: { d: '2025-04-14', lg: 'AS', h: 'AIK', a: 'Malmö FF', hg: 0, ag: 1, r: 'Joakim Östling', hy: 2, ay: 2 },
+      4: { d: '2026-06-01', lg: 'AS', h: 'Häcken', a: 'Mjällby', hg: 3, ag: 1, r: 'Joakim Sars', hy: 0, ay: 1 },
+    } } } };
+    // allsvenskan.se: UTC-datum kan vara dagen innan, lagnamnen skrivs med förkortningar
+    const off = { matches: {
+      a: { d: '2026-05-09', lg: 'AS', h: 'AIK', a: 'Djurgårdens IF', r: 'Mohammed Al-Hakim' },
+      b: { d: '2026-04-05', lg: 'AS', h: 'AIK', a: 'Halmstads BK', r: 'Adam Ladebäck' },
+      c: { d: '2026-04-05', lg: 'AS', h: 'IFK Göteborg', a: 'IF Elfsborg', r: 'Victor Wolf' },
+    } };
+    const files: Record<string, any> = { 'data/open/referee_fotmob.json': fm, 'data/open/referee_allsvenskan.json': off };
+    const all = loadRefereeMatches((rel: string) => files[rel] ?? null, []);
+    expect(all.length).toBe(4);
+    expect(all.find((m: any) => m.d === '2026-05-10')).toMatchObject({ r: 'Mohammed Al-Hakim', hy: 3 });
+    expect(all.find((m: any) => m.d === '2026-04-05')).toMatchObject({ r: 'Adam Ladebäck', ay: 4 });
+    // Utan officiell data: oförändrat
+    expect(applyOfficialReferees([fm.leagues.AS.matches[1]], [])[0].r).toBe('Mohammed Nasser Ahmed');
+    // Joakim Östling heter numera Sars: en rad, nuvarande namnet visas
+    const rep = refereeLeagueReport(all, 'AS', { today: '2026-10-02' });
+    const sars = rep.referees.filter((r: any) => /Sars|Östling/.test(r.referee));
+    expect(sars).toHaveLength(1);
+    expect(sars[0]).toMatchObject({ referee: 'Joakim Sars', matches: 2 });
   });
 
   test('refereeLeagueReport: kalenderårsliga (Allsvenskan) och straffar/röda mot snittet, Ettan delar nyckel', async () => {
