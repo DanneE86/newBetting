@@ -11,8 +11,9 @@ const SIGN_MIN_B = [3, 3, 3];
 // Folkets streck: grön >= 45 %, röd 25 % eller lägre (användaren 2026-10-02, avrundat till hela procent), annars gul
 const COLOR = { green: 0.45, red: 0.25 };
 const UTD_MIN_BY_PRODUCT = { stryktipset: 30000, europatipset: 20000 };
-// Kupong B: minst 30 000 kr för 13 rätt på båda spelen och inget tak (användarens regel 2026-09-29)
-const UTD_MIN_B = 30000;
+// Kupong B (risksystemet): 50 000–75 000 kr för 13 rätt på båda spelen (användaren 2026-10-02 kväll: "öka B till 50k-75k",
+// tidigare 30 000–50 000)
+const UTD_MIN_B = 50000, PAYOUT_BAND_B = 75 / 50;
 // Kupong C (användaren 2026-09-30): ett helt eget system på 700–850 kr, oberoende av A och B. Bara krav som gäller C
 // (scope "C" eller "all") låses där; "both" = A och B.
 // Samma regler som A (4-2-2, färgfönster, högst 4 spikar, skräll- och favoritregeln) och minst 30 000 kr för 13 rätt.
@@ -55,6 +56,10 @@ const MIN_HELG = 3;
 // möjligt", tidigare 2). Går det inte (för få röda tecken i omgången, dina krav) blir det så många som går.
 // Röd max i färgregeln minst RED_REACH när reglerna optimeras fritt (sista reserv). Samma som fetch-stryktipset.mjs.
 const MIN_RED = 5;
+// Kupong B (risksystemet): rött på minst 6 matcher om det går (användaren 2026-10-02 kväll: "försök ha 6 röda tecken men behåll
+// 2-4" – färgregeln för rött är kvar). Samma som fetch-stryktipset.mjs.
+const MIN_RED_B = 6;
+let minRed = MIN_RED; // för systemet som byggs just nu (sätts i buildWithLadder)
 const RED_REACH = 2;
 // Två halvgarderingar blå (Gambling Cabins grundfärg, id 1) och fria från färgreglerna (användaren 2026-10-02). Motorn
 // väljer de två säkraste halvgarderingarna utan rött tecken – skrällarna ligger kvar i de färgade. Samma som fetch.
@@ -65,6 +70,32 @@ const BLUE_HALVES = 2;
 // Räknas som en vanlig spik (2–4 per kupong). Stryktipset 4973: Burton–Huddersfield 2 (46 % mot folkets 38 %) gav lägre
 // utdelningsgräns (133 000 -> 104 900 kr) och högre chans (1 på 1 065 -> 1 på 815). Samma som fetch-stryktipset.mjs.
 const SKRALL_SPIK = { min: 0.35, max: 0.47, edge: 0.03, count: 1 };
+// Kupong B (risksystemet) har minst SKRALL_MIN_B skrällspik (användaren 2026-10-02 kväll: "ha minst en skräll spik som är
+// på runt 40 %"). Går det inte (ingen match har en, eller A har den) eller håller B inte 50 000–75 000 kr med den: utan.
+const SKRALL_MIN_B = 1;
+let skrallMin = 0; // för systemet som byggs just nu (sätts i buildWithLadder)
+// "Saknas aldrig, ta en som är näst på tur" (användaren 2026-10-02 kväll): finns ingen skrällspik på 35–47 % för B (A har
+// den, eller ingen finns) räknas nästa kandidat ur skrallQueue också som skrällspik ("i:k", sätts i buildWithLadder)
+let extraSkrall = new Set();
+const isSkrall = (e, i, k) => skrallOk(e, k) || extraSkrall.has(`${i}:${k}`);
+// Kandidaterna när ingen skrallOk går: tecken som inte är matchens favorit, inte A:s spik, inte låsta och inte redan
+// skrallOk, närmast 35–47 % och med mest värde mot folket (avstånd till fönstret + det som saknas till 3 procentenheter)
+export function skrallQueue(events, setsA = null, forced = []) {
+  const out = [];
+  events.forEach((e, i) => {
+    if (forced[i] != null) return;
+    const fav = e.final.indexOf(Math.max(...e.final));
+    for (const k of [0, 1, 2]) {
+      if (k === fav || e.folk?.[k] == null || skrallOk(e, k) || (setsA?.[i]?.length === 1 && setsA[i][0] === k)) continue;
+      const p = e.final[k];
+      const dist = p < SKRALL_SPIK.min ? SKRALL_SPIK.min - p : p > SKRALL_SPIK.max ? p - SKRALL_SPIK.max : 0;
+      out.push({ i, k, p, folk: e.folk[k], score: dist + Math.max(0, SKRALL_SPIK.edge - (p - e.folk[k])) });
+    }
+  });
+  return out.sort((a, b) => a.score - b.score || b.p - a.p);
+}
+// Så många kandidater i tur provas innan B får gå utan skrällspik
+const SKRALL_NEXT_TRIES = 5;
 export const skrallOk = (e, k) => e.folk?.[k] != null && e.final[k] >= SKRALL_SPIK.min && e.final[k] <= SKRALL_SPIK.max && e.final[k] - e.folk[k] >= SKRALL_SPIK.edge;
 // Färgregler (antal gröna/gula/röda tecken per rad, alla 13 matcher) är aldrig 0–13 (användarens regel 2026-09-30).
 // Stryktipset: p.colorBands (rätt rad senaste året, scripts/lib/stryk-color-bands.mjs) är yttre gräns – min/max aldrig
@@ -121,14 +152,14 @@ function grundCandidates(events, maxRows, forced, avoid = null, spikMin = 0, loo
     // Halvgardering favorit + skräll (rött tecken) så att grundraden kan få med röda
     for (const k of [0, 1, 2]) if (k !== order[0] && isRed(e, k) && !subs.some((x) => same(x, [order[0], k].sort()))) subs.push([order[0], k].sort());
     // Skrällspik (runt 40 %, värde mot folket)
-    for (const k of [0, 1, 2]) if (skrallOk(e, k) && !subs.some((x) => same(x, [k]))) subs.push([k]);
+    for (const k of [0, 1, 2]) if (isSkrall(e, i, k) && !subs.some((x) => same(x, [k]))) subs.push([k]);
     // Andra spikar och halvgarderingar än A: alla tecken och par, inte bara de troligaste
     if (avoid) {
       for (const k of [0, 1, 2]) if (!subs.some((x) => same(x, [k]))) subs.push([k]);
       for (const x of [[0, 1], [0, 2], [1, 2]]) if (!subs.some((y) => same(y, x))) subs.push(x);
-      return subs.filter((x) => !same(x, avoid[i]) && (x.length > 1 || canSpik(e, x[0]) || skrallOk(e, x[0])));
+      return subs.filter((x) => !same(x, avoid[i]) && (x.length > 1 || canSpik(e, x[0]) || isSkrall(e, i, x[0])));
     }
-    return subs.filter((x) => x.length > 1 || canSpik(e, x[0]) || skrallOk(e, x[0]));
+    return subs.filter((x) => x.length > 1 || canSpik(e, x[0]) || isSkrall(e, i, x[0]));
   };
   // Nyckel: halv, hel, reservspikar (spik på favorit som inte bedömts som spikbar, aldrig dina krav) och röda tecken i
   // garderingarna (högst MIN_RED räknas) och skrällspikar (högst SKRALL_SPIK.count)
@@ -140,17 +171,17 @@ function grundCandidates(events, maxRows, forced, avoid = null, spikMin = 0, loo
       for (const sub of options(e, i)) {
         const nh = h + (sub.length === 2), nf = f + (sub.length === 3);
         const free = forced[i] == null && sub.length === 1 && !spikOk(e, sub[0], spikMin);
-        const skr = free && skrallOk(e, sub[0]);
+        const skr = free && isSkrall(e, i, sub[0]);
         const ns = sk + (skr ? 1 : 0), nl = l + (free && !skr ? 1 : 0);
         if (ns > SKRALL_SPIK.count || 2 ** nh * 3 ** nf > maxRows) continue;
         const lp = st.lp + Math.log(Math.max(1e-9, sub.reduce((sum, k) => sum + e.final[k], 0)));
         // Räknas per match (två röda tecken på samma match kan aldrig båda gå in – användaren 2026-10-02)
-        const nr = Math.min(MIN_RED, rc + (sub.length > 1 && sub.some((x) => isRed(e, x)) ? 1 : 0));
+        const nr = Math.min(minRed, rc + (sub.length > 1 && sub.some((x) => isRed(e, x)) ? 1 : 0));
         // Helgula garderingar bara som de blå halvorna (högst BLUE_HALVES) – fler ger ändå alltid en gul per rad (2026-10-02)
         const nay = ay + (sub.length > 1 && !(forced?.[i] != null) && allYellowMatch(e) ? 1 : 0);
         if (nay > ayLimit) continue;
         const k = `${nh},${nf},${nl},${nr},${ns},${nay}`;
-        if (!next.has(k) || next.get(k).lp < lp) next.set(k, { lp, sets: [...st.sets, sub], nl, nr });
+        if (!next.has(k) || next.get(k).lp < lp) next.set(k, { lp, sets: [...st.sets, sub], nl, nr, ns });
       }
     }
     dp = next;
@@ -162,7 +193,7 @@ function grundCandidates(events, maxRows, forced, avoid = null, spikMin = 0, loo
   const minHelg = Math.min(MIN_HELG, forced.filter((f) => f == null || f.length === 3).length);
   // Minst BLUE_HALVES halvgarderingar (de blir blå); låser användaren så mycket att det inte går gäller deras krav
   const minHalf = Math.min(BLUE_HALVES, forced.filter((f) => f == null || f.length === 2).length);
-  const ok = (st) => spikes(st) >= minSpikes && spikes(st) <= maxSpikes && (st.nl === 0 || spikes(st) === minSpikes || loose === "max") && st.sets.filter((x) => x.length === 3).length >= minHelg && st.sets.filter((x) => x.length === 2).length >= minHalf;
+  const ok = (st) => spikes(st) >= minSpikes && spikes(st) <= maxSpikes && (st.nl === 0 || spikes(st) === minSpikes || loose === "max") && st.sets.filter((x) => x.length === 3).length >= minHelg && st.sets.filter((x) => x.length === 2).length >= minHalf && (st.ns || 0) >= skrallMin;
   const okList = [...dp.values()].filter(ok);
   // Går det inte med högst BLUE_HALVES helgula garderingar (för få spikbara matcher) släpps den gränsen
   if (!okList.length && ayLimit < 13 && loose) {
@@ -281,6 +312,15 @@ export function colorRuleOk(rule, present = [true, true, true]) {
 // Gult väljs fritt men aldrig exakt och aldrig samma fönster som grönt eller rött. Röd/grön står kvar även om gränsen inte
 // går att nå. fixedColors stängs av bara som sista reserv när ingen kupong alls går att bygga (står i kupongen).
 const RED_RULE = [1, 3];
+// Kupong B är risksystemet (användaren 2026-10-02 kväll: "kör 1-4 eller 2-4 röda ... inte mer än 2 röda som minst",
+// "behåll A som det är"): röd 1–4 eller 2–4, den som ger högst chans väljs. Backtest 107 omg (2023/24–2026/27): rätt rad i
+// omgångar över 500 000 kr hade i snitt 5,2 röda och 34 av 37 fler än 3. A och C har kvar 1–3. Samma som fetch-stryktipset.mjs.
+export const RED_RULES_B = [[1, 4], [2, 4]];
+let redRules = [RED_RULE]; // rödreglerna för systemet som byggs just nu (sätts i buildWithLadder)
+// Skyddet "3 röda + resten gröna" (redGreenRows) gäller med 3 röda även i B. Med B:s röd max 4 fick B släppa reglerna
+// (Stryktipset 4973) och gränsen hamnade på 111 000 kr (Europatipset 2613); raderna med 3 röda ryms ändå i 1–4/2–4.
+const RED_GREEN_TOP = RED_RULE[1];
+const redRuleText = () => redRules.map((r) => r.join("–")).join(" eller ");
 const GREEN_RULE = [3, 6]; // 3–6 sedan 2026-10-02 (användaren: "begränsa så grön blir 3-6"), tidigare 4–6
 let fixedColors = true;
 let yellowFull = true; // false = gult får skära (reserv för att hålla 30 000–50 000 kr)
@@ -330,19 +370,22 @@ export function redGreenColors(sets, colorIdx, blue = new Set(), rows = redGreen
 function fittedRules(ranges, triples, redAtLeast = 0) {
   const present = colorsPresent(triples);
   if (fixedColors) {
-    const G = present[0] ? GREEN_RULE : [0, 0], R = present[2] ? RED_RULE : [0, 0];
+    const out = new Map();
+    // En regel per rödregel (A: 1–3, B: 1–4 och 2–4); rangordningen sker där reglerna används
+    for (const RR of redRules) {
+    const G = present[0] ? GREEN_RULE : [0, 0], R = present[2] ? RR : [0, 0];
     // Gult skär aldrig bort rader (användaren 2026-10-02: "får jag in mina röda vill jag kunna få in alla gröna och
     // gula"): gulregeln är hela spannet som går att nå med grön 3–6 och röd 1–3. Full täckning även för grönt gick inte
     // ihop med grön 4–6, 350–400 kr och 30 000–50 000 kr (Stryktipset 4973: ingen grundrad klarade det).
     if (triples && yellowFull) {
       const ins = triples.filter((tr) => fitsColors(tr, [G, [0, 13], R]));
-      if (!ins.length) return [];
+      if (!ins.length) continue;
       let yy = [Math.min(...ins.map((tr) => tr[1])), Math.max(...ins.map((tr) => tr[1]))];
       if (yy[0] === yy[1] && present[1]) yy = [yy[0], yy[1] + 1];
       const rule = [G.slice(), yy, R.slice()];
-      return colorRuleOk(rule, present) ? [rule] : [];
+      if (colorRuleOk(rule, present)) out.set(rule.join(";"), rule);
+      continue;
     }
-    const out = new Map();
     for (const y of [...ranges[1], [0, 13]]) {
       const ins = triples ? triples.filter((tr) => fitsColors(tr, [G, y, R])) : null;
       if (ins && !ins.length) continue;
@@ -351,6 +394,7 @@ function fittedRules(ranges, triples, redAtLeast = 0) {
       if (yy[0] === yy[1] && present[1] && !(triples || []).some((tr) => tr[1] === yy[1] + 1 && fitsColors(tr, [G, [0, 13], R]))) yy = [yy[0], yy[1] + 1];
       const rule = [G.slice(), yy, R.slice()];
       if (colorRuleOk(rule, present)) out.set(rule.join(";"), rule);
+    }
     }
     return [...out.values()];
   }
@@ -429,14 +473,14 @@ function redShareOk(events, grund, kept, redMax, favMin = FAV_MIN_SHARE) {
 // Raderna i en grundrad (efter tecken- och utdelningsregler) räknas en gång per grundrad och regeluppsättning och
 // återanvänds när reservordningen provar färg- och skrällregler igen (annars upp till 40 omräkningar).
 const walkCache = new WeakMap();
-function reduceSystem(events, grund, { rowPrice = 1, turnover, signMin, realTurnover = turnover, jackpot = 0, payoutMin, budget, redMax = 1, favMin = FAV_MIN_SHARE, colorTarget = true, exactFloor = EXACT_FLOOR }) {
+function reduceSystem(events, grund, { rowPrice = 1, turnover, signMin, realTurnover = turnover, jackpot = 0, payoutMin, budget, redMax = 1, favMin = FAV_MIN_SHARE, colorTarget = true, exactFloor = EXACT_FLOOR, payoutBand = PAYOUT_BAND }) {
   const minRows = Math.ceil(budget.min / rowPrice), maxRows = Math.floor(budget.max / rowPrice);
   const T = turnover;
   // Exakt: gränsen i Gambling Cabins formel är regeln själv. Reserv: verklig utdelning >= regeln, gränsen höjs till budgeten.
   const floor = exactFloor ? payoutMin : gcPayoutFloor(T, realTurnover, jackpot, payoutMin);
   // exactFloor: true = gräns 30 000–50 000 kr, "near" = lägsta gräns som går (närmast regeln), false = höjd. Aldrig tak.
   const near = exactFloor === "near";
-  const cap = exactFloor === true ? payoutMin * PAYOUT_BAND : Infinity;
+  const cap = exactFloor === true ? payoutMin * payoutBand : Infinity;
   const colorIdx = events.map((e) => [0, 1, 2].map((k) => COLOR_KEYS.indexOf(signColor(e.folk?.[k]))));
   const blue = blueHalves(events, grund.sets);
   // Röd max + resten gröna (redGreenRows): färgreglerna får aldrig stoppa de raderna. Grön 3–6 är fast, så faller deras
@@ -444,7 +488,7 @@ function reduceSystem(events, grund, { rowPrice = 1, turnover, signMin, realTurn
   // Räknas en gång per grundrad (samma grundrad provas i många steg i reservordningen)
   let rg = redGreenCache.get(grund);
   if (!rg) {
-    const rows = redGreenRows(grund.sets, colorIdx, blue);
+    const rows = redGreenRows(grund.sets, colorIdx, blue, RED_GREEN_TOP);
     rg = { colors: redGreenColors(grund.sets, colorIdx, blue, rows), signs: [0, 1, 2].map((k) => Math.min(13, ...rows.map((row) => [...row].filter((x) => x === SIGNS[k]).length))) };
     redGreenCache.set(grund, rg);
   }
@@ -619,7 +663,16 @@ export function floorOrder(locked) {
 
 // Prova reglerna i ordning tills ett system går att bygga. relaxed = vilka regler som fick släppas.
 // payoutLadder = [1] håller utdelningsgränsen fast (kupong B).
-function buildWithLadder(events, forced, base, budget, exclude, { avoid = null, payoutLadder = PAYOUT_LADDER, signLadder = SIGN_LADDER } = {}) {
+// base.redRules = rödreglerna för systemet (B: RED_RULES_B), annars RED_RULE
+function buildWithLadder(events, forced, base, budget, exclude, opts = {}) {
+  const prev = [redRules, skrallMin, extraSkrall, minRed];
+  minRed = base.minRed || MIN_RED;
+  redRules = base.redRules || [RED_RULE];
+  skrallMin = base.skrallMin || 0;
+  extraSkrall = base.extraSkrall || new Set();
+  try { return buildWithLadderRules(events, forced, base, budget, exclude, opts); } finally { [redRules, skrallMin, extraSkrall, minRed] = prev; }
+}
+function buildWithLadderRules(events, forced, base, budget, exclude, { avoid = null, payoutLadder = PAYOUT_LADDER, signLadder = SIGN_LADDER } = {}) {
   const free = forced.reduce((n, f) => n * (f == null ? 3 : f.length), 1);
   const b = { min: Math.min(budget.min, free * base.rowPrice), max: budget.max };
   const candCache = new Map(); // samma grundradskandidater (och deras rader i walkCache) för alla steg i reservordningen
@@ -628,6 +681,8 @@ function buildWithLadder(events, forced, base, budget, exclude, { avoid = null, 
   // tecken- och utdelningsreglerna (de släpps bara när dina krav gör kupongen omöjlig). Tidigare provades alla tecken- och
   // utdelningssteg innan skrällregeln släpptes – upp till 40 omräkningar och 17 sekunder på Stryktipset.
   // Favoritregeln (minst 10 %) släpps aldrig i första varvet – bara om ingen kupong alls går att bygga (andra varvet)
+  const band = base.payoutBand || PAYOUT_BAND;
+  const bandTxt = `${Math.round(base.payoutMin).toLocaleString("sv-SE")}–${Math.round(base.payoutMin * band).toLocaleString("sv-SE")} kr`;
   for (const shareLevels of [[[RED_MAX_SHARE, FAV_MIN_SHARE], [1, FAV_MIN_SHARE]], [[1, 0]]]) {
   // Utdelningsgränsen 30 000–50 000 kr är viktigare än färgfönster, skrällgräns, spikbedömning och teckenregler (användaren
   // 2026-10-02: "30–50k är minsta utdelningen"): sedan lägsta gräns som går, sist höjd gräns – aldrig tak
@@ -657,19 +712,19 @@ function buildWithLadder(events, forced, base, budget, exclude, { avoid = null, 
       const best = bestReduced(events, cands, { ...base, signMin: sm, payoutMin: base.payoutMin * pf, budget: b, redMax, favMin, colorTarget, exactFloor }, exclude, avoid);
       if (best) {
         const relaxed = [];
-        if (EXACT_FLOOR && !exactFloor && pf === 1) relaxed.push(`utdelningsgränsen ${Math.round(base.payoutMin).toLocaleString("sv-SE")}–${Math.round(base.payoutMin * PAYOUT_BAND).toLocaleString("sv-SE")} kr gav inte ${budget.min}–${budget.max} kr – den höjdes till ${Math.round(best.reduced.rules.payoutMin).toLocaleString("sv-SE")} kr i länken`);
-        if (exactFloor === "near") relaxed.push(`utdelningsgränsen ${Math.round(base.payoutMin).toLocaleString("sv-SE")}–${Math.round(base.payoutMin * PAYOUT_BAND).toLocaleString("sv-SE")} kr gav för många rader – lägsta gräns som går är ${Math.round(best.reduced.rules.payoutMin).toLocaleString("sv-SE")} kr (inget tak)`);
+        if (EXACT_FLOOR && !exactFloor && pf === 1) relaxed.push(`utdelningsgränsen ${bandTxt} gav inte ${budget.min}–${budget.max} kr – den höjdes till ${Math.round(best.reduced.rules.payoutMin).toLocaleString("sv-SE")} kr i länken`);
+        if (exactFloor === "near") relaxed.push(`utdelningsgränsen ${bandTxt} gav för många rader – lägsta gräns som går är ${Math.round(best.reduced.rules.payoutMin).toLocaleString("sv-SE")} kr (inget tak)`);
         if (!colorTarget) relaxed.push("färgfönstren runt det väntade antalet gick inte att hålla – färgerna optimerades fritt");
         if (redMax === 1) relaxed.push(`skrällgränsen (rött tecken på högst ${Math.round(RED_MAX_SHARE * 100)} % av raderna) gick inte att hålla`);
         if (favMin === 0) relaxed.push(`favoriten på minst ${Math.round(FAV_MIN_SHARE * 100)} % av raderna gick inte att hålla`);
         if (sm !== signLadder[0]) relaxed.push(`teckenreglerna sänktes till ${sm.join("-")}`);
         if (pf !== 1) relaxed.push(pf === 0 ? "utdelningsgränsen togs bort" : `utdelningsgränsen sänktes till ${Math.round(base.payoutMin * pf).toLocaleString("sv-SE")} kr`);
         if (b.min < budget.min) relaxed.push(`kraven lämnar bara ${free} möjliga rader`);
-        if (!yf) relaxed.push("30 000–50 000 kr gick inte med fritt gult – gulregeln skär bort några rader");
-        if (loose === "max") relaxed.push(`för att hålla reglerna (30 000–50 000 kr, högst 2 helgula garderingar) minskades strecken med spik på favoriter (högst ${MAX_SPIKES} spikar)`);
+        if (!yf) relaxed.push(`${bandTxt} gick inte med fritt gult – gulregeln skär bort några rader`);
+        if (loose === "max") relaxed.push(`för att hålla reglerna (${bandTxt}, högst 2 helgula garderingar) minskades strecken med spik på favoriter (högst ${MAX_SPIKES} spikar)`);
         else if (loose) relaxed.push(`för få matcher bedömdes som spikbara – spik på favoriten för att få minst ${MIN_SPIKES} spikar`);
-        if (!rg) relaxed.push("färgreglerna stoppar några rader med 3 röda + resten gröna – det gick inte att undvika");
-        else if (rg === "colors") relaxed.push("teckenreglerna stoppar några rader med 3 röda + högst 1 gul (t.ex. rader utan X) – att släppa dem hade krävt teckenregler under 2-1-1");
+        if (!rg) relaxed.push(`färgreglerna stoppar några rader med ${RED_GREEN_TOP} röda + resten gröna – det gick inte att undvika`);
+        else if (rg === "colors") relaxed.push(`teckenreglerna stoppar några rader med ${RED_GREEN_TOP} röda + högst 1 gul (t.ex. rader utan X) – att släppa dem hade krävt teckenregler under 2-1-1`);
         yellowFull = true;
         redGreenFull = "signs";
         best.reduced.rules.yellowFull = yf;
@@ -685,12 +740,12 @@ function buildWithLadder(events, forced, base, budget, exclude, { avoid = null, 
   }
   redGreenFull = "signs";
   }
-  // Sista reserv: ingen kupong alls med grön 3–6 och röd 1–3 – färgerna optimeras fritt och kupongen säger det
+  // Sista reserv: ingen kupong alls med grön 3–6 och rödregeln (A 1–3, B 1–4/2–4) – färgerna optimeras fritt och kupongen säger det
   if (fixedColors) {
     fixedColors = false;
     try {
       const r = buildWithLadder(events, forced, base, budget, exclude, { avoid, payoutLadder, signLadder });
-      if (r) r.relaxed.push("grön 3–6 och röd 1–3 gick inte att hålla – färgerna optimerades fritt");
+      if (r) r.relaxed.push(`grön 3–6 och röd ${redRuleText()} gick inte att hålla – färgerna optimerades fritt`);
       return r;
     } finally { fixedColors = true; }
   }
@@ -709,7 +764,7 @@ export function kravSigns(k) {
  * krav: { [eventNumber]: { signs: "1" | "1X" | "X2" | "12" | "1X2" | ..., scope: "both" | "A" | "B" | "C" | "all" } }
  * "both" = A och B, "all" = A, B och C.
  * A = bästa systemet med A:s krav (350–400 kr, spelets utdelningsgräns).
- * B = ett eget system med B:s krav: minst 30 000 kr för 13 rätt utan tak, teckenregler 3-3-3, aldrig samma tecken som A på någon match
+ * B = risksystemet med B:s krav: röd 1–4 eller 2–4, minst 30 000 kr för 13 rätt utan tak, teckenregler 3-3-3, aldrig samma tecken som A på någon match
  *     (inte ens spiken), valt så att det täcker så mycket som möjligt av det A saknar. Alla kuponger har 2–4 spikar.
  */
 export function generateCoupons(p, krav) {
@@ -740,8 +795,28 @@ export function generateCoupons(p, krav) {
     system: sys,
   });
   const a = buildWithLadder(events, fA, base, BUDGET, null);
-  const b = buildWithLadder(events, fB, { ...base, payoutMin: Math.max(UTD_MIN_B, base.payoutMin) }, BUDGET,
-    a ? new Set(a.reduced.rowList) : null, { avoid: a?.system.sets ?? null, payoutLadder: [1], signLadder: SIGN_LADDER_B });
+  const baseB = { ...base, payoutMin: Math.max(UTD_MIN_B, base.payoutMin), payoutBand: PAYOUT_BAND_B, minRed: MIN_RED_B };
+  const optsB = { avoid: a?.system.sets ?? null, payoutLadder: [1], signLadder: SIGN_LADDER_B };
+  // Gränsen går före risken (användaren 2026-10-02: gränsen "får inte röras"): röd 1–4/2–4 gav för många rader över taket i
+  // 21 av 107 omgångar. Ordning: skrällspik på 35–47 % (risk, sedan röd 1–3), sedan nästa skrällkandidat i tur (skrallQueue,
+  // "saknas aldrig") på samma sätt, sist utan skrällspik – första som håller gränsen. rules.redFallback = röd 1–3,
+  // rules.skrallNext = kandidaten i tur, rules.skrallMissing = ingen skrällspik. Håller inget gränsen blir det det första som gick.
+  const bTxt = `${Math.round(baseB.payoutMin).toLocaleString("sv-SE")}–${Math.round(baseB.payoutMin * PAYOUT_BAND_B).toLocaleString("sv-SE")} kr`;
+  const pc = (x) => `${Math.round(x * 100)} %`;
+  const queue = skrallQueue(events, a?.system.sets ?? null, fB).slice(0, SKRALL_NEXT_TRIES);
+  const steps = [null, ...queue].flatMap((c) => [[RED_RULES_B, SKRALL_MIN_B, c], [null, SKRALL_MIN_B, c]]).concat([[RED_RULES_B, 0, null], [null, 0, null]]);
+  let b = null;
+  for (const [redRulesB, sk, c] of steps) {
+    const r = buildWithLadder(events, fB, { ...baseB, redRules: redRulesB, skrallMin: sk, extraSkrall: c ? new Set([`${c.i}:${c.k}`]) : null }, BUDGET, a ? new Set(a.reduced.rowList) : null, optsB);
+    if (!r) continue;
+    r.reduced = { ...r.reduced, rules: { ...r.reduced.rules, payoutBand: PAYOUT_BAND_B, ...(redRulesB ? {} : { redFallback: true }), ...(sk ? {} : { skrallMissing: true }),
+      ...(c ? { skrallNext: { match: c.i + 1, sign: SIGNS[c.k], p: Math.round(c.p * 1000) / 1000, folk: Math.round(c.folk * 1000) / 1000 } } : {}) } };
+    if (!redRulesB) r.relaxed.push(`${bTxt} gick inte med röd 1–4 eller 2–4 – B fick röd 1–3`);
+    if (c) r.relaxed.push(`ingen skrällspik på 35–47 % gick i B – B tog nästa på tur: match ${c.i + 1} ${SIGNS[c.k]} (${pc(c.p)}, folket ${pc(c.folk)})`);
+    if (!sk) r.relaxed.push("ingen skrällspik (runt 40 %) gick att få in i B");
+    if (!b) b = r;
+    if (r.reduced.rules.payoutExact === true) { b = r; break; }
+  }
   const A = a && finish(a, "A", fA), B = b && finish(b, "B", fB);
   // A+B tillsammans: gemensamma rader och chansen att någon av kupongerna tar 13 rätt
   let overlap = 0, unionHit = A ? A.hitAll : 0;
