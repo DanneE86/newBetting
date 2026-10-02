@@ -1411,7 +1411,7 @@ test.describe('stryk-engine: kupong A, B och C', () => {
         const sysE = (e: any) => ({ final: e.spik?.used ? e.spik.sysP : e.final, folk: e.folk });
         const notSpikbar = c.picks.map((x: any, i: number) => x.signs.length === 1 && p.events[i].spik?.used && !(p.events[i].spik.spikbar && p.events[i].spik.fav === x.signs));
         // B: skrällspik "näst på tur" (rules.skrallNext) räknas också som skrällspik
-        const isNext = (x: any, i: number) => name === 'B' && c.rules.skrallNext?.match === i + 1 && c.rules.skrallNext.sign === x.signs;
+        const isNext = (x: any, i: number) => ['B', 'C'].includes(name) && c.rules.skrallNext?.match === i + 1 && c.rules.skrallNext.sign === x.signs;
         const skrall = c.picks.filter((x: any, i: number) => (notSpikbar[i] || isNext(x, i)) && (skrallOk(sysE(p.events[i]), '1X2'.indexOf(x.signs)) || isNext(x, i))).length;
         expect(skrall, `${at} ${name}: högst en skrällspik`).toBeLessThanOrEqual(1);
         const reserve = notSpikbar.filter(Boolean).length - skrall;
@@ -1548,12 +1548,13 @@ test.describe('stryk-engine: kupong A, B och C', () => {
         const on = ['green', 'yellow', 'red'].filter((k) => !c.rules.colorsOff.includes(k));
         // Röd 1–3 i A och C; B är risksystemet med röd 1–4 eller 2–4 (användaren 2026-10-02 kväll)
         if (on.includes('red')) {
-          if (name === 'B' && c.rules.redFallback) {
+          if (['B', 'C'].includes(name) && c.rules.redFallback) {
             // 30 000–50 000 kr gick inte med röd max 4: röd 1–3 och gränsen hålls (står i kupongen)
             expect(cr.red, `${p.product} B reserv`).toEqual([1, 3]);
             expect(c.rules.payoutExact, `${p.product} B reserv håller 50 000–75 000 kr`).toBe(true);
-            expect(c.relaxed.some((t: string) => t.includes('B fick röd 1–3')), `${p.product} B reserv i texten`).toBe(true);
+            expect(c.relaxed.some((t: string) => t.includes(`${name} fick röd 1–3`)), `${p.product} ${name} reserv i texten`).toBe(true);
           } else if (name === 'B') expect([[1, 4], [2, 4]], `${p.product} ${name}: röd 1–4 eller 2–4`).toContainEqual(cr.red);
+          else if (name === 'C') expect(cr.red, `${p.product} C: röd 2–6`).toEqual([2, 6]);
           else expect(cr.red, `${p.product} ${name}: röd alltid 1–3`).toEqual([1, 3]);
         }
         if (on.includes('green')) expect(cr.green, `${p.product} ${name}: grön alltid 3–6`).toEqual([3, 6]);
@@ -1575,10 +1576,10 @@ test.describe('stryk-engine: kupong A, B och C', () => {
           on.slice(j + 1).forEach((o) => expect(cr[o].join(), `${p.product} ${name}: ${k} och ${o} samma fönster`).not.toBe(cr[k].join()));
         });
         // Länken: gränsen 30 000–50 000 kr (B 50 000–75 000 kr) när den kunde hållas, aldrig tak
-        if (name === 'B') expect(c.rules.payoutMinReal, `${p.product} B: 50 000 kr`).toBe(50000);
-        if (c.rules.payoutExact === true) expect(c.rules.payoutMin, `${p.product} ${name}`).toBeLessThanOrEqual(c.rules.payoutMinReal * (name === 'B' ? 75 / 50 : 50 / 30) + 1);
+        if (['B', 'C'].includes(name)) expect(c.rules.payoutMinReal, `${p.product} B: 50 000 kr`).toBe(50000);
+        if (c.rules.payoutExact === true) expect(c.rules.payoutMin, `${p.product} ${name}`).toBeLessThanOrEqual(c.rules.payoutMinReal * (['B', 'C'].includes(name) ? 75 / 50 : 50 / 30) + 1);
         // B: minst en skrällspik (35–47 %, minst 3 procentenheter över folket) om den inte fick släppas (står i kupongen)
-        if (name === 'B') {
+        if (['B', 'C'].includes(name)) {
           const ev = p.events.map((e: any) => (e.spik?.used && e.spik.sysP ? { ...e, final: e.spik.sysP } : e));
           const nx = c.rules.skrallNext;
           const sk = c.picks.filter((x: any, i: number) => x.signs.length === 1 && (skrallOk(ev[i], '1X2'.indexOf(x.signs)) || (nx?.match === i + 1 && nx.sign === x.signs))).length;
@@ -1647,6 +1648,39 @@ test.describe('stryk-engine: kupong A, B och C', () => {
         expect(B.rules.payoutMin).toBeLessThanOrEqual(75000);
       }
       expect(B.gamblingCabinUrl).toContain(`utd=1,${B.rules.payoutMin},100000000`);
+    }
+  });
+
+  test('kupong C (skrällsystemet): skrällspik, röd 2–6, högsta rad minst 1 miljon, gräns 50 000–75 000 kr, 700–850 kr', async () => {
+    test.skip(products.length === 0, 'data/stryktipset.json saknas');
+    test.setTimeout(300_000);
+    const { generateCoupons, skrallOk, skrallQueue } = await engine();
+    for (const p of products.slice(0, 2)) {
+      const ev = p.events.map((e: any) => (e.spik?.used && e.spik.sysP ? { ...e, final: e.spik.sysP } : e));
+      const { C } = generateCoupons(p, {});
+      expect(C.rules.skrallMissing, `${p.product}: C saknar skrällspik – ${C.relaxed.join('; ')}`).toBeFalsy();
+      const nx = C.rules.skrallNext;
+      const sk = C.picks.filter((x: any, i: number) => x.signs.length === 1 && (skrallOk(ev[i], '1X2'.indexOf(x.signs)) || (nx?.match === i + 1 && nx.sign === x.signs))).length;
+      expect(sk, `${p.product}: C skrällspik`).toBe(1);
+      // C är fri från A: kön har ingen A-spärr
+      if (nx) expect(skrallQueue(ev).slice(0, 5).map((c: any) => `${c.i + 1}:${'1X2'[c.k]}`)).toContain(`${nx.match}:${nx.sign}`);
+      if (C.rules.redFallback) expect(C.rules.colorRules.red).toEqual([1, 3]);
+      else if (!C.rules.colorsOff?.includes('red')) expect(C.rules.colorRules.red).toEqual([2, 6]);
+      // Skrällsystemet: högsta raden minst 1 miljon (verklig utdelning), annars flaggat och i texten
+      const maxRow = Math.max(...C.rowReal);
+      expect(C.rules.maxRowPayout).toBe(Math.round(maxRow));
+      if (C.rules.maxRowShort) expect(C.relaxed.some((t: string) => t.includes('1 miljon gick inte')), p.product).toBe(true);
+      else expect(maxRow, `${p.product}: C högsta rad`).toBeGreaterThanOrEqual(1e6);
+      expect(C.rules.minRedMatches).toBeGreaterThanOrEqual(6);
+      expect(C.rules.minRedMatches).toBeLessThanOrEqual(10);
+      expect(C.rules.payoutMinReal).toBe(50000);
+      expect(C.rules.payoutBand).toBeCloseTo(1.5, 6);
+      if (C.rules.payoutExact === true) {
+        expect(C.rules.payoutMin).toBeGreaterThanOrEqual(50000);
+        expect(C.rules.payoutMin).toBeLessThanOrEqual(75000);
+      }
+      expect(C.cost).toBeGreaterThanOrEqual(700);
+      expect(C.cost).toBeLessThanOrEqual(850);
     }
   });
 
