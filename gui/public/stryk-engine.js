@@ -607,6 +607,16 @@ function gamblingCabinUrl(p, events, sets, reduced) {
   return `https://reducera.gamblingcabin.se/?${q.join("&")}`;
 }
 
+// Ordningen mellan regeln om 3 röda + resten gröna (redGreenFull) och utdelningsgränsen (exactFloor). Utan egna krav går
+// röd + grön först; med egna krav går gränsen 30 000–50 000 kr först. Med egna krav provas lägsta gräns som går och höjd
+// gräns först när inte heller fria färger (utan grön 3–6 och röd 1–3, sista reserven) håller 30 000–50 000 kr.
+export function floorOrder(locked) {
+  const rgs = ["signs", "colors", false];
+  const floors = EXACT_FLOOR ? [true, "near", false] : [false];
+  if (!locked) return rgs.flatMap((rg) => floors.map((f) => [rg, f]));
+  return (fixedColors ? [true] : floors).flatMap((f) => rgs.map((rg) => [rg, f]));
+}
+
 // Prova reglerna i ordning tills ett system går att bygga. relaxed = vilka regler som fick släppas.
 // payoutLadder = [1] håller utdelningsgränsen fast (kupong B).
 function buildWithLadder(events, forced, base, budget, exclude, { avoid = null, payoutLadder = PAYOUT_LADDER, signLadder = SIGN_LADDER } = {}) {
@@ -623,9 +633,11 @@ function buildWithLadder(events, forced, base, budget, exclude, { avoid = null, 
   // 2026-10-02: "30–50k är minsta utdelningen"): sedan lägsta gräns som går, sist höjd gräns – aldrig tak
   // Röd max + resten gröna (redGreenRows) går före utdelningsgräns och allt annat – hellre ett mindre system
   // (användaren 2026-10-02: "minska systemet om du måste"). Släpps bara om ingen kupong alls går att bygga.
-  for (const rg of ["signs", "colors", false]) {
+  // Egna krav (användaren 2026-10-02: "även om jag väljer själv vill jag ha min utdelning mellan 30–50k"): med låsta
+  // matcher går gränsen 30 000–50 000 kr före regeln om 3 röda + resten gröna – egna skrällspikar gör annars alla rader
+  // dyra och gränsen hamnade på 200 000 kr och mer. Utan krav gäller ordningen ovan.
+  for (const [rg, exactFloor] of floorOrder(forced.some((f) => f != null))) {
   redGreenFull = rg;
-  for (const exactFloor of EXACT_FLOOR ? [true, "near", false] : [false]) {
   for (const pf of payoutLadder) {
   // Fritt gult (skär aldrig) går före teckenreglerna; först när inget annat håller 30 000–50 000 kr får gult skära
   for (const yf of exactFloor === true ? [true, false] : [true]) {
@@ -668,7 +680,6 @@ function buildWithLadder(events, forced, base, budget, exclude, { avoid = null, 
   }
   }
   yellowFull = true;
-  }
   }
   }
   }
