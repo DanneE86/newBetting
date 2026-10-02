@@ -618,3 +618,50 @@ export function leagueAppointments(index, report, upcoming, league) {
       };
     });
 }
+
+// ---------- Domare med lag hemmavinst: bortalaget vinner oftare an oddsen sager ----------
+// Anvandaren 2026-10-02 kvall ("fixa detta"). Test England PL/CH/EL1/EL2 2022/23 -> (16 870 lagmatcher, stangningsodds,
+// bara data fore matchen): domare med hemmavinst <= 38 % pa minst 40 tidigare engelska ligamatcher -> bortalaget vann 37 %
+// mot oddsens 32 % (n 622, z 2,9, samma hall alla fyra hela sasonger), hemmalaget 39 % mot 42 %, kryss 24 % mot 26 %.
+// Justeringen ar ungefar 60 % av det uppmatta (krymps mot noll for att inte overskatta): hemma -2, kryss -1, borta +3
+// procentenheter. Bara engelska ligor (dar det ar testat).
+export const AWAY_REF = { minMatches: 40, maxHomeRate: 0.38, shift: [-0.02, -0.01, 0.03] };
+
+// Domarnyckel -> [{ d, hw }] (engelska ligamatcher, aldst forst; hw = hemmavinst)
+export function buildRefHomeIndex(matches) {
+  const idx = new Map();
+  for (const m of matches || []) {
+    if (!ENGLISH_LEAGUES.has(m.lg) || !m.r || !Number.isFinite(m.hg) || !Number.isFinite(m.ag)) continue;
+    const k = refKey(m.r);
+    if (!k) continue;
+    if (!idx.has(k)) idx.set(k, []);
+    idx.get(k).push({ d: m.d, hw: m.hg > m.ag });
+  }
+  for (const list of idx.values()) list.sort((a, b) => a.d.localeCompare(b.d));
+  return idx;
+}
+
+// Domarens hemmavinst i matcher fore `date` (YYYY-MM-DD). flag = minst AWAY_REF.minMatches och hogst maxHomeRate.
+export function refereeHomeBias(index, referee, date) {
+  const k = refKey(referee);
+  const list = k && index?.get(k);
+  if (!list?.length) return null;
+  const before = list.filter((m) => m.d < date);
+  if (!before.length) return null;
+  const homeRate = before.filter((m) => m.hw).length / before.length;
+  return { referee, matches: before.length, homeRate: Math.round(homeRate * 1000) / 1000, flag: before.length >= AWAY_REF.minMatches && homeRate <= AWAY_REF.maxHomeRate };
+}
+
+// [hemma, kryss, borta] flyttat mot bortalaget nar domaren flaggas, normerat till 1
+export function applyRefereeAway(p, bias) {
+  if (!bias?.flag || !p) return p;
+  const q = p.map((x, k) => Math.max(0.01, x + AWAY_REF.shift[k]));
+  const s = q.reduce((a, b) => a + b, 0);
+  return q.map((x) => x / s);
+}
+
+// Analysrad i klartext
+export function refereeAwayNotes(bias, home, away) {
+  if (!bias?.flag) return [];
+  return [`Domare ${bias.referee}: hemmalaget har vunnit bara ${Math.round(bias.homeRate * 100)} % av domarens ${bias.matches} engelska ligamatcher – i sådana matcher har bortalaget vunnit oftare än oddsen sagt. ${away} +3 procentenheter, ${home} −2.`];
+}

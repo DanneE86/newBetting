@@ -65,10 +65,10 @@ const inColorRules = (events: any[], picks: string[], r: any, row: string) =>
 // aldrig stoppa dem (utdelnings- och teckenreglerna gäller som vanligt). Räknas över hela grundraden, oberoende av skriptet.
 // Tillägg 2026-10-02 ("om 3 röda går in och en gul då kan jag inte få 13 rätt"): högst 1 av de andra garderingarna får gå gult
 // i stället för grönt, och raderna ska klara teckenreglerna också (utom rules.redGreenSignsFree: skulle krävt under 2-1-1).
-function redGreenViolations(events: any[], picks: string[], r: any): string[] {
+function redGreenViolations(events: any[], picks: string[], r: any, redTop = 3): string[] {
   const blue: number[] = r.blueHalves || [];
   const colored = (i: number) => picks[i].length > 1 && !blue.includes(i);
-  const top = Math.min(3, picks.filter((pk, i) => colored(i) && pk.split('').some((c) => signColor(events[i].folk?.[idx(c)]) === 'red')).length);
+  const top = Math.min(redTop, picks.filter((pk, i) => colored(i) && pk.split('').some((c) => signColor(events[i].folk?.[idx(c)]) === 'red')).length);
   if (top < 1) return [];
   const bad: string[] = [];
   for (const row of grundRows(picks)) {
@@ -137,7 +137,8 @@ test('matcher: avsparkstid, tips = troligaste tecknet, Värde/Ej värde räknat 
       // Procentens kalla: odds + modell, eller utan odds modell 50 % + folk 50 % (basis '<modell>+folk')
       expect(e.basis, at).toMatch(/^(club|elo|clubelo)(\+folk)?$|^(folk|none)$/);
       if (e.market && e.model) {
-        e.final.forEach((x: number, i: number) => expect(x, `${at} odds+modell`).toBeCloseTo((1 - e.modelWeight) * e.market[i] + e.modelWeight * e.model[i], 2));
+        // Domare med låg hemmavinst och ny tränare flyttar procenten efteråt (finalBase = före)
+        (e.finalBase || e.final).forEach((x: number, i: number) => expect(x, `${at} odds+modell`).toBeCloseTo((1 - e.modelWeight) * e.market[i] + e.modelWeight * e.model[i], 2));
       } else if (/\+folk$/.test(e.basis)) {
         expect(e.market, at).toBeNull();
         e.final.forEach((x: number, i: number) => expect(x, `${at} modell+folk`).toBeCloseTo(0.5 * e.model[i] + 0.5 * e.folk[i], 2));
@@ -187,18 +188,21 @@ test('reducerade system: budget, teckenregler, rader inom grundraden', () => {
         red.rules.signMin.forEach((v: number, k: number) => expect(v, at).toBeLessThanOrEqual(red.rules.signMinRule[k]));
         red.rules.signMin.forEach((v: number, k: number) => expect(v, at).toBeGreaterThanOrEqual([2, 1, 1][k]));
       } else expect(red.rules.signMin, at).toEqual(signMinOf(name, red, p.product));
-      expect(red.rules.payoutMinReal, at).toBe(name === 'A' ? UTD_MIN[p.product] ?? 30000 : Math.max(30000, UTD_MIN[p.product] ?? 30000));
+      // B (risksystemet) 50 000–75 000 kr (användaren 2026-10-02 kväll: "öka B till 50k-75k"), C minst 30 000
+      expect(red.rules.payoutMinReal, at).toBe(name === 'A' ? UTD_MIN[p.product] ?? 30000 : name === 'B' ? 50000 : Math.max(30000, UTD_MIN[p.product] ?? 30000));
+      const band = name === 'B' ? 75 / 50 : 50 / 30;
+      if (name === 'B') expect(red.rules.payoutBand, at).toBeCloseTo(1.5, 6);
       // Exakt gräns (2026-09-30: "30k, inte mindre, inte mer"): länkens gräns är regeln, om den inte fick höjas som reserv
       // Standard sedan 2026-09-30 (sent): regeln är en lägsta gräns (verklig utdelning, se nästa test); exakt bara med STRYK_EXACT=1
       // 2026-10-02 ("minsta utdelning 30k, kan diffa lite för Stryktipset"): utan tak 30 000–50 000 kr (regeln x 50/30, användaren 2026-10-02: "30–50k är minsta utdelningen"),
       // annars lägsta gräns som går (payoutExact 'near'), sist höjd gräns (false, står i kupongen). Aldrig tak (2026-10-02).
       if (red.rules.payoutExact === true) {
         expect(red.rules.payoutMin, `${at}: gräns minst regeln`).toBeGreaterThanOrEqual(red.rules.payoutMinReal);
-        expect(red.rules.payoutMin, `${at}: gräns högst regeln x 50/30`).toBeLessThanOrEqual(red.rules.payoutMinReal * 50 / 30 + 1);
+        expect(red.rules.payoutMin, `${at}: gräns högst regeln x 50/30`).toBeLessThanOrEqual(red.rules.payoutMinReal * band + 1);
         expect(red.rules.payoutMax, at).toBeUndefined();
       }
       expect(red.rules.payoutMax, `${at}: ingen övre gräns`).toBeUndefined();
-      if (red.rules.payoutExact === 'near') expect(red.rules.payoutMin, `${at}: lägsta gräns över regeln x 50/30`).toBeGreaterThan(red.rules.payoutMinReal * 50 / 30 - 1);
+      if (red.rules.payoutExact === 'near') expect(red.rules.payoutMin, `${at}: lägsta gräns över regeln x 50/30`).toBeGreaterThan(red.rules.payoutMinReal * band - 1);
       // Blått (2026-10-02): varje gardering med bara gula tecken är alltid blå, och minst 2 halvgarderingar är blå
       // (påfyllda med de säkraste). Inget annat är blått än garderingar.
       const halves = picks.map((pk, i) => (pk.length === 2 ? i : -1)).filter((i) => i >= 0);
@@ -216,8 +220,16 @@ test('reducerade system: budget, teckenregler, rader inom grundraden', () => {
       expect(blue.filter((i) => picks[i].length === 2).length, `${at}: exakt 2 blå halvor`).toBe(2);
       // Färgreglerna: aldrig exakt antal (2–2) och aldrig samma fönster för två färger; färger som inte finns är av
       const on = ['green', 'yellow', 'red'].filter((c) => !(red.rules.colorsOff || []).includes(c));
-      // Röd alltid 1–3 (användaren 2026-10-02: "rött ska alltid vara 1-3, 25 % eller lägre är röda")
-      if (on.includes('red')) expect(red.rules.colorRules.red, `${at}: röd 1–3`).toEqual([1, 3]);
+      // Röd 1–3 i A och C (användaren 2026-10-02: "rött ska alltid vara 1-3, 25 % eller lägre är röda"). B är risksystemet
+      // (2026-10-02 kväll: "kör 1-4 eller 2-4 röda ... inte mer än 2 röda som minst", "behåll A som det är")
+      if (on.includes('red')) {
+        // ... utom när 30 000–50 000 kr inte gick med röd max 4: då röd 1–3 och gränsen hålls (rules.redFallback)
+        if (name === 'B' && red.rules.redFallback) {
+          expect(red.rules.colorRules.red, `${at}: B reserv röd 1–3`).toEqual([1, 3]);
+          expect(red.rules.payoutExact, `${at}: B reserv håller 50 000–75 000 kr`).toBe(true);
+        } else if (name === 'B') expect([[1, 4], [2, 4]], `${at}: röd 1–4 eller 2–4`).toContainEqual(red.rules.colorRules.red);
+        else expect(red.rules.colorRules.red, `${at}: röd 1–3`).toEqual([1, 3]);
+      }
       // Grön alltid 3–6 (användaren 2026-10-02, tidigare 4–6; A, B och C)
       if (on.includes('green')) expect(red.rules.colorRules.green, `${at}: grön 3–6`).toEqual([3, 6]);
       expect(red.rules.colorsFree, `${at}: fasta färgregler`).toBeFalsy();
@@ -228,7 +240,7 @@ test('reducerade system: budget, teckenregler, rader inom grundraden', () => {
         expect(red.rules.colorRules.yellow[0], `${at}: gul min = lägsta som går`).toBe(span[0]);
         expect(red.rules.colorRules.yellow[1], `${at}: gul max = högsta som går`).toBeGreaterThanOrEqual(span[1]);
       }
-      if (!red.rules.redGreenFree) expect(redGreenViolations(p.events, picks, red.rules).slice(0, 3), `${at}: 3 röda + resten gröna stoppas av färgreglerna`).toEqual([]);
+      if (!red.rules.redGreenFree) expect(redGreenViolations(p.events, picks, red.rules).slice(0, 3), `${at}: 3 röda + resten gröna stoppas av färgreglerna (även B)`).toEqual([]);
       on.forEach((c, j) => {
         expect(red.rules.colorRules[c][1], `${at} ${c}: inte exakt ${red.rules.colorRules[c].join('–')}`).toBeGreaterThan(red.rules.colorRules[c][0]);
         on.slice(j + 1).forEach((o) => expect(red.rules.colorRules[o].join(), `${at}: ${c} och ${o} samma fönster`).not.toBe(red.rules.colorRules[c].join()));
@@ -242,6 +254,8 @@ test('reducerade system: budget, teckenregler, rader inom grundraden', () => {
       // Räknas per match: två röda tecken på samma match kan aldrig båda gå in (användaren 2026-10-02, match 10 X och 2)
       const redMatchesIn = picks.filter((pk, i) => pk.length > 1 && !red.rules.blueHalves.includes(i) && pk.split('').some((c) => signColor(p.events[i].folk?.[idx(c)]) === 'red')).length;
       if (redMatches >= 6 && redSigns >= 8) expect(redMatchesIn, `${at}: rött på minst 5 matcher (${redMatches} matcher med rött i omgången)`).toBeGreaterThanOrEqual(5);
+      // B (risksystemet): rött på minst 6 matcher om det går (användaren 2026-10-02 kväll: "försök ha 6 röda tecken men behåll 2-4")
+      if (name === 'B' && redMatches >= 8 && redSigns >= 10) expect(redMatchesIn, `${at}: B rött på minst 6 matcher (${redMatches} matcher med rött)`).toBeGreaterThanOrEqual(6);
       const redPossible = picks.filter((pk, i) => pk.length > 1 && !red.rules.blueHalves.includes(i) && pk.split('').some((c) => signColor(p.events[i].folk?.[idx(c)]) === 'red')).length;
       expect(red.rules.colorRules.red[1], `${at}: röd max minst 2 när det går`).toBeGreaterThanOrEqual(Math.min(2, redPossible));
       // Budget
@@ -273,6 +287,13 @@ test('reducerade system: budget, teckenregler, rader inom grundraden', () => {
         const sysK = (sp?.used ? sp.sysP : p.events[i].final)[idx(pk)], folkK = p.events[i].folk?.[idx(pk)];
         const strict = sp?.used ? sp.spikbar && pk === sp.fav : true;
         if (!strict && folkK != null && sysK >= SKRALL_SPIK.min - 1e-9 && sysK <= SKRALL_SPIK.max + 1e-9 && sysK - folkK >= SKRALL_SPIK.edge - 1e-9) { skrall++; return; }
+        // B: skrällspik "näst på tur" (rules.skrallNext, användaren 2026-10-02 kväll: "saknas aldrig") – inte favoriten
+        const nx = red.rules.skrallNext;
+        if (name === 'B' && nx && nx.match === i + 1 && nx.sign === pk) {
+          expect(Math.max(...(sp?.used ? sp.sysP : p.events[i].final)), `${at} match ${i + 1}: skräll i tur är inte favoriten`).toBeGreaterThan(sysK);
+          skrall++;
+          return;
+        }
         // Reserv (rules.spikLoose): för få spikbara matcher för minst 2 spikar – då spik på favoriten i systemets procent
         if (red.rules.spikLoose && !(sp?.used && sp.spikbar && pk === sp.fav)) {
           reserve++;
@@ -291,6 +312,8 @@ test('reducerade system: budget, teckenregler, rader inom grundraden', () => {
       if (reserve > 0 && red.rules.spikLoose !== 'max') expect(spikes, `${at}: reservspikar bara upp till ${MIN_SPIKES}`).toBe(MIN_SPIKES);
       expect(spikes, `${at}: högst ${MAX_SPIKES} spikar`).toBeLessThanOrEqual(MAX_SPIKES);
       expect(skrall, `${at}: högst en skrällspik`).toBeLessThanOrEqual(1);
+      // B (risksystemet): minst en skrällspik på runt 40 % (användaren 2026-10-02 kväll) om den inte fick släppas (rules.skrallMissing)
+      if (name === 'B' && !red.rules.skrallMissing) expect(skrall, `${at}: B minst en skrällspik`).toBe(1);
       expect(picks.filter((pk: string) => pk.length === 3).length, `${at}: minst ${MIN_HELG} helgarderingar`).toBeGreaterThanOrEqual(MIN_HELG);
       // Rörliga färgfönster (hela raden = regeln + spikarnas färger): minst 3 breda och runt väntat antal
       expect(red.rules.colorRules.pink, at).toBeUndefined();
@@ -449,6 +472,42 @@ test('värde per omgång: kvot, nivå och text stämmer, inga insatsbelopp', () 
     expect(p.value.text, at).not.toMatch(/\d\s*kr\b/);
     // Forvantad utdelning vid 13 ratt ar forvantad aterbetalning / chans
     if (p.reduced.hitAll > 0) expect(p.reduced.expectedPayout / (p.reduced.expectedReturn / p.reduced.hitAll), at).toBeCloseTo(1, 3);
+  }
+});
+
+// Domare med låg hemmavinst (användaren 2026-10-02 kväll): flaggad match flyttas mot bortalaget, bara engelska matcher
+test('domare med låg hemmavinst: procenten flyttas mot bortalaget och står i analysen', () => {
+  for (const p of products) for (const e of p.events) {
+    const at = `${p.product} ${p.drawNumber} match ${e.eventNumber}`;
+    if (!e.refereeAway) continue;
+    expect(e.refereeAway.matches, at).toBeGreaterThan(0);
+    if (!e.refereeAway.flag) continue;
+    expect(e.refereeAway.matches, at).toBeGreaterThanOrEqual(40);
+    expect(e.refereeAway.homeRate, at).toBeLessThanOrEqual(0.38);
+    expect(e.finalBase, `${at}: procenten före justeringen sparas`).toBeTruthy();
+    // Utan ny tränare: bara domaren flyttar (borta upp, hemma ned)
+    if (!e.newCoach) {
+      expect(e.final[2], `${at}: bortalaget upp`).toBeGreaterThan(e.finalBase[2]);
+      expect(e.final[0], `${at}: hemmalaget ned`).toBeLessThan(e.finalBase[0]);
+    }
+    expect(e.analysis.some((t: string) => t.includes('bortalaget vunnit oftare')), at).toBe(true);
+  }
+});
+
+// Ny tränare (användaren 2026-10-02 kväll): lagets 5 första ligamatcher efter ett byte, bara engelska matcher
+test('ny tränare: laget med ny tränare får lägre vinstchans och det står i analysen', () => {
+  for (const p of products) for (const e of p.events) {
+    if (!e.newCoach) continue;
+    const at = `${p.product} ${p.drawNumber} match ${e.eventNumber}`;
+    expect(e.country, at).toBe('England');
+    expect(e.finalBase, at).toBeTruthy();
+    for (const [t, k] of [[e.newCoach.home, 0], [e.newCoach.away, 2]] as const) {
+      if (!t) continue;
+      expect(t.isNew && t.changed, at).toBe(true);
+      expect(t.matches, at).toBeLessThan(5);
+      if (!e.refereeAway?.flag && !(e.newCoach.home && e.newCoach.away)) expect(e.final[k], `${at}: lägre vinstchans`).toBeLessThan(e.finalBase[k]);
+    }
+    expect(e.analysis.some((t: string) => t.startsWith('Ny tränare:')), at).toBe(true);
   }
 });
 

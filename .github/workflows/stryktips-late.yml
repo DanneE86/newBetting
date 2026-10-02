@@ -71,6 +71,12 @@ jobs:
         continue-on-error: true
         run: node scripts/fetch-stryktips-statistik.mjs
 
+      # Tranare per match (FotMob, aktuell sasong): ny tranare de 5 forsta matcherna flyttar Stryktipsprocenten
+      - name: Tränare (FotMob)
+        if: steps.guard.outputs.run == 'true'
+        continue-on-error: true
+        run: node scripts/fetch-coaches-fotmob.mjs --current
+
       - name: Stryktipset/Europatipset (färska odds, streck, elvor)
         if: steps.guard.outputs.run == 'true'
         run: node scripts/fetch-stryktipset.mjs
