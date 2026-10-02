@@ -1,4 +1,4 @@
-// Fargband for ratt rad: hur manga grona/gula/roda tecken (folkets streck: gron >= 45 %, rod <= 20 %, annars gul)
+// Fargband for ratt rad: hur manga grona/gula/roda tecken (folkets streck: gron >= 45 %, rod under 25 %, annars gul)
 // ratt rad hade per omgang i kupongarkivet (data/tips-archive/systems). Kupongernas fargregler byggs pa banden
 // (anvandarens beslut 2026-09-30): reglerna maste slappa igenom karnan (p10-p90) och far aldrig ga utanfor det som
 // hant (min-max). Urval som i backtestet: Stryktipset = minst 1 PL-match, Europatipset = minst 3 topp 4-matcher.
@@ -11,14 +11,14 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
 const DIR = path.join(root, 'data', 'tips-archive', 'systems');
 const SIGNS = ['1', 'X', '2'];
-const COLOR = { green: 0.45, red: 0.2 }; // samma som fetch-stryktipset.mjs
+const COLOR = { green: 0.45, red: 0.25 }; // samma som fetch-stryktipset.mjs (rod 25 % eller lagre sedan 2026-10-02)
 export const BAND_COLORS = ['green', 'yellow', 'red'];
 const TOP4 = new Set(['Premier League', 'La Liga', 'Serie A', 'Bundesliga']);
 const WINDOW_DAYS = 365;
 const MIN_DRAWS = 10; // farre omgangar i fonstret -> inga band (fargreglerna optimeras fritt)
 const CORE = [0.1, 0.9];
 
-const colorOf = (f) => (f == null ? 'yellow' : f >= COLOR.green ? 'green' : f <= COLOR.red ? 'red' : 'yellow');
+const colorOf = (f) => (f == null ? 'yellow' : f >= COLOR.green ? 'green' : Math.round(f * 100) <= COLOR.red * 100 ? 'red' : 'yellow');
 
 let cache = null;
 function archive() {

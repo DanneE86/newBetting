@@ -1174,3 +1174,209 @@ test.describe('referee-streaks: FotMob, straffar och alla ligor', () => {
     expect(disciplineStats([{ hg: 0, ag: 0 }]).penaltyPg).toBeNull();
   });
 });
+
+// ---------- gui/public/stryk-engine.js (webbens kupongmotor) ----------
+
+test.describe('stryk-engine: kupong A, B och C', () => {
+  const dataFile = path.join(ROOT, 'data', 'stryktipset.json');
+  const products: any[] = fs.existsSync(dataFile) ? JSON.parse(fs.readFileSync(dataFile, 'utf8')).products ?? [] : [];
+  const engine = () => import(pathToFileURL(path.join(ROOT, 'gui', 'public', 'stryk-engine.js')).href);
+  const spikes = (c: any) => c.picks.filter((x: any) => x.signs.length === 1).length;
+
+  test('2-4 spikar per kupong och B har aldrig samma tecken som A (inte ens spiken)', async () => {
+    test.skip(products.length === 0, 'data/stryktipset.json saknas');
+    test.setTimeout(300_000);
+    const { generateCoupons, skrallOk } = await engine();
+    for (const p of products.slice(0, 2)) {
+      const { A, B, C } = generateCoupons(p, {});
+      const at = `${p.product} ${p.drawNumber}`;
+      expect(A && B, at).toBeTruthy();
+      for (const [name, c] of [['A', A], ['B', B], ['C', C]] as const) {
+        if (!c) continue;
+        expect(spikes(c), `${at} ${name}: minst 2 spikar`).toBeGreaterThanOrEqual(2);
+        expect(spikes(c), `${at} ${name}: högst 4 spikar`).toBeLessThanOrEqual(4);
+        // Minst 3 helgarderingar (användarens regel 2026-10-02)
+        expect(c.picks.filter((x: any) => x.signs.length === 3).length, `${at} ${name}: minst 3 helgarderingar`).toBeGreaterThanOrEqual(3);
+        // Spik på en match som inte bedömts som spikbar (reserv) bara för att nå 2 spikar, aldrig fler
+        // Skrällspik (högst en, runt 40 % med värde mot folket) räknas inte som reserv
+        const sysE = (e: any) => ({ final: e.spik?.used ? e.spik.sysP : e.final, folk: e.folk });
+        const notSpikbar = c.picks.map((x: any, i: number) => x.signs.length === 1 && p.events[i].spik?.used && !(p.events[i].spik.spikbar && p.events[i].spik.fav === x.signs));
+        const skrall = c.picks.filter((x: any, i: number) => notSpikbar[i] && skrallOk(sysE(p.events[i]), '1X2'.indexOf(x.signs))).length;
+        expect(skrall, `${at} ${name}: högst en skrällspik`).toBeLessThanOrEqual(1);
+        const reserve = notSpikbar.filter(Boolean).length - skrall;
+        // Undantag (2026-10-02): gick systemet inte in på 30 000–50 000 kr får fler favoriter spikas (högst 4)
+        if (reserve > 0 && !c.relaxed.some((t: string) => t.includes('minskades strecken'))) expect(spikes(c), `${at} ${name}: reservspikar bara upp till 2`).toBe(2);
+      }
+      A.picks.forEach((x: any, i: number) => expect(B.picks[i].signs, `${at} match ${i + 1}`).not.toBe(x.signs));
+    }
+  });
+
+  // Användarens Gambling Cabin-bild 2026-10-02: 13 halvgarderingar, gula 8–11 + gröna 4–7 lämnar 1 tecken till rött
+  // (0 = grön, 1 = gul, 2 = röd; tecken 0/1/2 = 1/X/2, oanvänt tecken får gul)
+  const gcSets = [[1, 2], [1, 2], [0, 1], [0, 2], [0, 2], [0, 2], [0, 2], [0, 2], [0, 2], [0, 1], [0, 1], [0, 2], [0, 1]];
+  const gcColors = [[1, 1, 0], [1, 1, 0], [0, 2, 1], [1, 1, 1], [1, 1, 1], [0, 1, 1], [1, 1, 1], [1, 1, 1], [1, 1, 1], [0, 1, 1], [0, 2, 1], [0, 1, 1], [0, 1, 1]];
+  const reachable = (rule: number[][], triples: number[][]) =>
+    [0, 1, 2].every((c) => [0, 1].every((j) => triples.some((t) => t[c] === rule[c][j] && [0, 1, 2].every((o) => t[o] >= rule[o][0] && t[o] <= rule[o][1]))));
+
+  for (const [name, load] of [
+    ['stryk-engine.js', () => import(pathToFileURL(path.join(ROOT, 'gui', 'public', 'stryk-engine.js')).href)],
+    ['fetch-stryktipset.mjs', () => import(pathToFileURL(path.join(ROOT, 'scripts', 'fetch-stryktipset.mjs')).href)],
+  ] as const) {
+    test(`fitColorRule (${name}): röd max går att nå – gult/grönt min sänks, inga döda gränser`, async () => {
+      const { colorTriples, fitColorRule } = await load();
+      const triples = colorTriples(gcSets, gcColors);
+      expect(triples.every((t: number[]) => t[0] + t[1] + t[2] === 13)).toBe(true);
+      // Utan justering: högst 1 röd går att få med gröna 4–7, gula 8–11
+      const before = [[4, 7], [8, 11], [0, 2]];
+      expect(Math.max(...triples.filter((t: number[]) => t[0] >= 4 && t[0] <= 7 && t[1] >= 8 && t[1] <= 11).map((t: number[]) => t[2]))).toBe(1);
+      const fit = fitColorRule(before, triples);
+      expect(fit[2][1], 'röd max 2 ska gå att nå').toBe(2);
+      expect(fit[1][0], 'gult min (högst min) sänks först').toBe(7);
+      expect(fit[0][0], 'grönt min orört').toBe(4);
+      expect(reachable(fit, triples), JSON.stringify(fit)).toBe(true);
+      // Redan sammanhängande regel ändras inte, och fitColorRule är idempotent
+      expect(fitColorRule(fit, triples)).toEqual(fit);
+      // Röd max större än antalet röda tecken som finns dras in till 2
+      expect(fitColorRule([[0, 13], [0, 13], [0, 9]], triples)[2][1]).toBe(2);
+      // Spikar räknas inte: med spik på match 1 är summan 12
+      const withSpik = colorTriples([[2], ...gcSets.slice(1)], gcColors);
+      expect(withSpik.every((t: number[]) => t[0] + t[1] + t[2] === 12)).toBe(true);
+    });
+  }
+
+  // Användarens Gambling Cabin-bild 2026-10-02 (Stryktipset 4973, kupong A): "får jag in 3 röda så kan jag få in alla
+  // gröna också". Färger per match [1, X, 2] (0 grön, 1 gul, 2 röd), matcher 5 och 7 är blå halvor.
+  const rgSets = [[2], [1, 2], [0, 1], [2], [0, 2], [0, 1, 2], [0, 2], [0], [2], [0, 1, 2], [0, 1], [0, 1, 2], [0, 1]];
+  const rgColors = [[1, 2, 0], [1, 1, 0], [0, 2, 2], [1, 1, 1], [1, 2, 1], [0, 2, 1], [1, 1, 1], [1, 1, 1], [1, 1, 1], [0, 2, 2], [0, 2, 2], [0, 1, 1], [0, 2, 2]];
+  for (const [name, load] of [
+    ['stryk-engine.js', () => import(pathToFileURL(path.join(ROOT, 'gui', 'public', 'stryk-engine.js')).href)],
+    ['fetch-stryktipset.mjs', () => import(pathToFileURL(path.join(ROOT, 'scripts', 'fetch-stryktipset.mjs')).href)],
+  ] as const) {
+    test(`redGreenRows (${name}): 3 röda + högst 1 gul + resten gröna`, async () => {
+      const { redGreenRows, redGreenColors } = await load();
+      const blue = new Set([4, 6]);
+      // Utan gul: 5 matcher med rött tecken, 3 av dem röda (match 10 har två röda tecken) x 2 x 2 blå halvor = 16 x 4
+      const pure: string[] = redGreenRows(rgSets, rgColors, blue, 3, 0);
+      expect(pure.length).toBe(64);
+      expect(pure).toContain('22X21X1121X11');
+      expect(pure.every((r) => r[1] === '2' && r[11] === '1')).toBe(true);
+      // Med högst 1 gul (användaren 2026-10-02: "om 3 röda går in och en gul då kan jag inte få 13 rätt")
+      const rows: string[] = redGreenRows(rgSets, rgColors, blue);
+      expect(rows.length).toBe(284);
+      expect(new Set(rows).size).toBe(284);
+      pure.forEach((r) => expect(rows).toContain(r));
+      expect(rows, 'gul X på match 12').toContain('22X21X1121XX1');
+      expect(rows, 'två gula').not.toContain('2XX21X1121XX1');
+      expect(redGreenColors(rgSets, rgColors, blue)).toEqual([[4, 0, 3], [3, 1, 3]]);
+      // Tre gröna halvor till (match 4, 8, 9): 7 gröna med 3 röda – grön 3–6 skulle stoppa dem
+      const more = rgSets.map((x, i) => ([3, 7, 8].includes(i) ? [0, 2] : x));
+      const moreColors = rgColors.map((x, i) => ([3, 7, 8].includes(i) ? [0, 1, 1] : x));
+      expect(redGreenColors(more, moreColors, blue)).toEqual([[7, 0, 3], [6, 1, 3]]);
+      // Inga röda tecken i garderingarna: inga krav
+      expect(redGreenRows(rgSets.map((x, i) => ([2, 5, 9, 10, 12].includes(i) ? [0] : x)), rgColors, blue)).toEqual([]);
+      // Bara 2 röda garderingar: röd max = 2
+      expect(redGreenColors(rgSets.map((x, i) => ([9, 10, 12].includes(i) ? [0] : x)), rgColors, blue)).toEqual([[2, 0, 2], [1, 1, 2]]);
+    });
+  }
+
+  for (const [name, load] of [
+    ['stryk-engine.js', () => import(pathToFileURL(path.join(ROOT, 'gui', 'public', 'stryk-engine.js')).href)],
+    ['fetch-stryktipset.mjs', () => import(pathToFileURL(path.join(ROOT, 'scripts', 'fetch-stryktipset.mjs')).href)],
+  ] as const) {
+    test(`colorRuleOk (${name}): aldrig exakt antal och aldrig samma fönster för två färger`, async () => {
+      const { colorRuleOk, colorsPresent } = await load();
+      // Användarens Gambling Cabin-bild 2026-10-02: gul 2–2, röd 2–2, grön 3–3
+      expect(colorRuleOk([[3, 3], [2, 2], [2, 2]])).toBe(false);
+      expect(colorRuleOk([[3, 4], [2, 3], [2, 3]]), 'gul och röd samma fönster').toBe(false);
+      expect(colorRuleOk([[3, 5], [1, 2], [2, 3]])).toBe(true);
+      expect(colorRuleOk([[5, 6], [0, 1], [1, 2]])).toBe(true);
+      // Färg som inte finns i garderingarna (alltid 0) räknas inte
+      expect(colorsPresent([[3, 0, 1], [2, 0, 2]])).toEqual([true, false, true]);
+      expect(colorRuleOk([[2, 3], [0, 0], [1, 2]], [true, false, true])).toBe(true);
+      expect(colorRuleOk([[2, 3], [0, 0], [1, 2]])).toBe(false);
+    });
+  }
+
+  test('skrallOk: skrällspik bara på 35–47 % med minst 3 procentenheter över folket', async () => {
+    const { skrallOk } = await engine();
+    const e = (final: number[], folk: number[] | null) => ({ final, folk });
+    expect(skrallOk(e([0.27, 0.27, 0.46], [0.35, 0.27, 0.38]), 2), 'Burton 2: 46 % mot 38 %').toBe(true);
+    expect(skrallOk(e([0.37, 0.29, 0.34], [0.45, 0.27, 0.28]), 2), '34 % räcker inte').toBe(false);
+    expect(skrallOk(e([0.38, 0.30, 0.32], [0.45, 0.24, 0.31]), 0), 'under folket').toBe(false);
+    expect(skrallOk(e([0.25, 0.25, 0.50], [0.30, 0.25, 0.40]), 2), 'över 47 %').toBe(false);
+    expect(skrallOk(e([0.40, 0.30, 0.30], [0.38, 0.31, 0.31]), 0), 'bara 2 procentenheter').toBe(false);
+    expect(skrallOk(e([0.40, 0.30, 0.30], null), 0), 'utan streck').toBe(false);
+  });
+
+  test('kuponger: färgreglernas min och max går alltid att nå i grundraden', async () => {
+    test.skip(products.length === 0, 'data/stryktipset.json saknas');
+    test.setTimeout(300_000);
+    const { generateCoupons, colorTriples, redGreenColors } = await engine();
+    const col = (f: number | null | undefined) => (f == null ? 1 : f >= 0.45 ? 0 : Math.round(f * 100) <= 25 ? 2 : 1);
+    for (const p of products.slice(0, 2)) {
+      const out = generateCoupons(p, {});
+      for (const name of ['A', 'B', 'C']) {
+        const c = out[name];
+        const cr = c?.rules?.colorRules;
+        if (!cr) continue;
+        const sets = c.picks.map((x: any) => [...x.signs].map((s: string) => '1X2'.indexOf(s)));
+        const triples = colorTriples(sets, p.events.map((e: any) => [0, 1, 2].map((k) => col(e.folk?.[k]))), new Set(c.rules.blueHalves));
+        // "2 halvor blå alltid" (2026-10-02): minst 2 halvgarderingar och exakt 2 av dem blå
+        expect(sets.filter((x: number[]) => x.length === 2).length, `${p.product} ${name}: minst 2 halvgarderingar`).toBeGreaterThanOrEqual(2);
+        expect(c.rules.blueHalves.filter((i: number) => sets[i].length === 2).length, `${p.product} ${name}: exakt 2 blå halvor`).toBe(2);
+        // Inga blå helgarderingar, ingen helgul helgardering och högst 2 helgula garderingar (användaren 2026-10-02)
+        const allYellow = (i: number) => [0, 1, 2].every((k) => col(p.events[i].folk?.[k]) === 1);
+        sets.forEach((x: number[], i: number) => { if (allYellow(i)) expect(x.length, `${p.product} ${name} match ${i + 1}: helgul helgardering`).toBeLessThan(3); });
+        // Fler bara när det inte går (t.ex. B får inte spika samma tecken som A) – rules.allYellowMax säger hur många
+        expect(sets.filter((x: number[], i: number) => x.length > 1 && allYellow(i)).length, `${p.product} ${name}`).toBeLessThanOrEqual(c.rules.allYellowMax ?? 2);
+        c.rules.blueHalves.forEach((i: number) => expect(sets[i].length, `${p.product} ${name} match ${i + 1}`).toBe(2));
+        // Färgreglerna: aldrig exakt antal (2–2) och aldrig samma fönster för två färger (färger som inte finns är av)
+        const on = ['green', 'yellow', 'red'].filter((k) => !c.rules.colorsOff.includes(k));
+        if (on.includes('red')) expect(cr.red, `${p.product} ${name}: röd alltid 1–3`).toEqual([1, 3]);
+        if (on.includes('green')) expect(cr.green, `${p.product} ${name}: grön alltid 3–6`).toEqual([3, 6]);
+        expect(c.relaxed.some((t: string) => t.includes('grön 3–6')), `${p.product} ${name}: fasta färger hölls`).toBe(false);
+        // Gult skär aldrig bort rader (2026-10-02) om inte 30 000–50 000 kr kräver det (rules.yellowFull false, står i kupongen)
+        if (on.includes('yellow')) {
+          const ys = triples.filter((t: number[]) => t[0] >= cr.green[0] && t[0] <= cr.green[1] && t[2] >= cr.red[0] && t[2] <= cr.red[1]).map((t: number[]) => t[1]);
+          if (c.rules.yellowFull !== false) {
+            expect(cr.yellow[0], `${p.product} ${name}: gul min`).toBe(Math.min(...ys));
+            expect(cr.yellow[1], `${p.product} ${name}: gul max`).toBeGreaterThanOrEqual(Math.max(...ys));
+          } else expect(c.relaxed.some((t: string) => t.includes('gulregeln skär')), `${p.product} ${name}`).toBe(true);
+        }
+        // 3 röda + resten gröna stoppas aldrig av färgreglerna (användaren 2026-10-02), annars mindre system
+        const rgc = redGreenColors(sets, p.events.map((e: any) => [0, 1, 2].map((k) => col(e.folk?.[k]))), new Set(c.rules.blueHalves));
+        rgc.forEach((t: number[]) => expect([0, 1, 2].every((o) => t[o] >= [cr.green, cr.yellow, cr.red][o][0] && t[o] <= [cr.green, cr.yellow, cr.red][o][1]), `${p.product} ${name}: 3 röda + gröna ${t} mot ${JSON.stringify(cr)}`).toBe(true));
+        expect(c.relaxed.some((t: string) => t.includes('3 röda + resten gröna')), `${p.product} ${name}`).toBe(false);
+        on.forEach((k, j) => {
+          expect(cr[k][1], `${p.product} ${name} ${k}: inte exakt ${cr[k].join('–')}`).toBeGreaterThan(cr[k][0]);
+          on.slice(j + 1).forEach((o) => expect(cr[o].join(), `${p.product} ${name}: ${k} och ${o} samma fönster`).not.toBe(cr[k].join()));
+        });
+        // Länken: gränsen 30 000–50 000 kr när den kunde hållas, aldrig tak
+        if (c.rules.payoutExact === true) expect(c.rules.payoutMin, `${p.product} ${name}`).toBeLessThanOrEqual(c.rules.payoutMinReal * 50 / 30 + 1);
+        expect(c.gamblingCabinUrl, `${p.product} ${name}`).toContain(',100000000');
+        // Röd 1–3 och grön 3–6 är fasta (2026-10-02) och får ha döda gränser; gult min går alltid att nå inom regeln
+        const rule = [cr.green, cr.yellow, cr.red];
+        const inRule = (t: number[]) => [0, 1, 2].every((o) => t[o] >= rule[o][0] && t[o] <= rule[o][1]);
+        [1].forEach((k) => [0].forEach((j) => expect(triples.some((t: number[]) => t[k] === rule[k][j] && inRule(t)), `${p.product} ${p.drawNumber} ${name}: ${JSON.stringify(cr)}`).toBe(true)));
+      }
+    }
+  });
+
+  test('krav i bara A: B väljer ändå andra tecken; krav i B får vara samma som A', async () => {
+    test.skip(products.length === 0, 'data/stryktipset.json saknas');
+    test.setTimeout(300_000);
+    const { generateCoupons } = await engine();
+    const p = products[0];
+    const e0 = p.events[0], e1 = p.events[1];
+    const fav = (e: any) => ['1', 'X', '2'][e.final.indexOf(Math.max(...e.final))];
+    const { A, B } = generateCoupons(p, { [e0.eventNumber]: { signs: fav(e0), scope: 'A' }, [e1.eventNumber]: { signs: '1X2', scope: 'both' } });
+    expect(A.picks[0].signs).toBe(fav(e0));
+    expect(B.picks[0].signs, 'krav bara i A').not.toBe(fav(e0));
+    // Egna krav i B gäller även när A har samma tecken
+    expect(A.picks[1].signs).toBe('1X2');
+    expect(B.picks[1].signs).toBe('1X2');
+    A.picks.forEach((x: any, i: number) => { if (i !== 1) expect(B.picks[i].signs, `match ${i + 1}`).not.toBe(x.signs); });
+    expect(spikes(A)).toBeGreaterThanOrEqual(2);
+    expect(spikes(B)).toBeGreaterThanOrEqual(2);
+  });
+});

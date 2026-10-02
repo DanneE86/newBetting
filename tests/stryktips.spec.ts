@@ -34,7 +34,10 @@ test('stryktipset: 13 matcher med avsparkstid, procent och Värde/Ej värde', ()
       expect(typeof e.verdict.value).toBe('boolean');
       expect(e.verdict.minOdds).toBeGreaterThan(1);
       expect(e.analysis.length).toBeGreaterThan(0);
-      expect(e.systemPick.signs).toContain(e.tip);
+      // Reservspik (2026-10-02: högst 2 helgula garderingar) ligger på favoriten i systemets justerade procent, som kan skilja från tipset
+      const sysP = e.spik?.used ? e.spik.sysP : e.final;
+      const reserveSpik = e.systemPick.signs.length === 1 && sysP['1X2'.indexOf(e.systemPick.signs)] === Math.max(...sysP);
+      if (!reserveSpik) expect(e.systemPick.signs).toContain(e.tip);
       expect(e.colors).toHaveLength(3);
       // Svenska Spels expertanalyser (kan vara tomma innan de publicerats)
       expect(Array.isArray(e.experts)).toBe(true);
@@ -50,14 +53,19 @@ test('stryktipset: 13 matcher med avsparkstid, procent och Värde/Ej värde', ()
     // Minsta verkliga utdelning per spel (Stryktipset 30 000, Europatipset 20 000 enligt UTD_MIN_BY_PRODUCT)
     expect(p.reduced.rules.payoutMinReal).toBeGreaterThanOrEqual(p.product === "stryktipset" ? 30000 : 20000);
     expect(p.value?.level).toMatch(/^(low|normal|high)$/);
-    expect(p.reduced.gamblingCabinUrl).toContain(antT(SIGN_MIN.A));
+    // Teckenregeln får sänkas (aldrig under 2-1-1) för 30 000–50 000 kr eller så att 3 röda + högst 1 gul går in (2026-10-02)
+    expect(p.reduced.rules.signMinRule ?? p.reduced.rules.signMin).toEqual(SIGN_MIN.A);
+    p.reduced.rules.signMin.forEach((v: number, k: number) => expect(v).toBeGreaterThanOrEqual([2, 1, 1][k]));
+    expect(p.reduced.gamblingCabinUrl).toContain(antT(p.reduced.rules.signMin));
     if (p.reducedB) {
-      expect(p.reducedB.gamblingCabinUrl).toContain(antT(p.reducedB.split ? SIGN_MIN.A : SIGN_MIN.B));
+      // Teckenregeln får sänkas bara för att hålla gränsen 30 000–50 000 kr (rules.signMinRule = spelets regel, 2026-10-02)
+      expect(p.reducedB.rules.signMinRule ?? p.reducedB.rules.signMin).toEqual(p.reducedB.split ? SIGN_MIN.A : SIGN_MIN.B);
+      expect(p.reducedB.gamblingCabinUrl).toContain(antT(p.reducedB.rules.signMin));
       expect(p.reducedB.cost).toBeGreaterThanOrEqual(350);
       expect(p.reducedB.cost).toBeLessThanOrEqual(400);
-      // Hogst 1 gemensam spik galler motsystemet; delat system har samma grundrad men inga gemensamma rader
+      // Motsystemet har aldrig samma tecken som A (inte ens spiken); delat system har samma grundrad men inga gemensamma rader
       if (p.reducedB.split) expect(p.reducedB.overlapRows).toBe(0);
-      else expect(p.reducedB.sameSingles).toBeLessThanOrEqual(2); // eget B-system: högst 2 spikar som A (2026-09-30)
+      else expect(p.reducedB.sameSingles).toBe(0); // eget B-system: ingen spik som A (2026-10-02)
     }
   }
 });
@@ -69,4 +77,10 @@ test('stryktipset: engelska klubblag (PL–League Two) matchas mot lagmodellen',
     expect(e.basis, `${e.home} - ${e.away}`).toBe('club');
     expect(e.homeProfile.played).toBeGreaterThan(0);
   }
+});
+
+test('kupongkortet visar inte chansen till 13 rätt (användaren 2026-10-02: ointressant)', () => {
+  const src = fs.readFileSync(path.join(root, 'gui', 'public', 'stryktips.js'), 'utf8');
+  expect(src).not.toContain('<dt>Chans 13 rätt</dt>');
+  expect(src).not.toMatch(/A\+B tillsammans: chans till 13 rätt/);
 });

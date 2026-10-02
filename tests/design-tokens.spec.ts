@@ -20,8 +20,8 @@ test('tokens.css har Svenska Spels färger och laddas före övriga stilmallar',
   expect(links).toEqual(expect.arrayContaining(['styles.css', 'stryktips.css', 'startelva.css', 'spelarkort.css']));
 });
 
-test('spikar behåller Gambling Cabins rosa', () => {
-  expect(read('tokens.css').toLowerCase()).toMatch(/--color-spik:\s*#f07ab8/);
+test('spikar har Gambling Cabins blå grundfärg (id 1)', () => {
+  expect(read('tokens.css').toLowerCase()).toMatch(/--color-spik:\s*#1e90ff/);
 });
 
 test('tokens.css har synlig fokusmarkering och respekterar reducerad rörelse', () => {
