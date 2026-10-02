@@ -1600,7 +1600,7 @@ async function toggleMatchup(btn, { reload = false } = {}) {
 // ---------- Domarpanelen (bredvid Duellanalys): domaren mot ligasnittet och lagen + alla ligans domare ----------
 // Och ligans domarvy (knappen Domare sist i ligaraden). Tabellen kan sorteras och filtreras på gula, röda, straffar.
 // Ligor som kan ha domardata; vilka som faktiskt har det hämtas från /api/refleagues (refAvailable)
-const REF_LEAGUES = new Set(["PL", "CH", "EL1", "EL2", "BL", "BL2", "LL", "LL2", "SA", "SB", "L1", "ED", "PT", "GR", "AS",
+const REF_LEAGUES = new Set(["PL", "CH", "EL1", "EL2", "BL", "BL2", "LL", "LL2", "SA", "SB", "L1", "ED", "PT", "GR", "AS", "SE2",
   "NO", "NO2", "DK", "EK", "JP1", "MLS", "MX", "BR", "BR2", "AR", "COL", "CZ", "HR", "CL", "EL", "ECL"]);
 let refAvailable = null;
 const hasRefData = (l) => (refAvailable ? refAvailable.has(l) : REF_LEAGUES.has(l));

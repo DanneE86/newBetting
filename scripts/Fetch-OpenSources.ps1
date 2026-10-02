@@ -288,8 +288,10 @@ Write-Host "`n=== Domare (domarsviter per lag) ==="
 try {
     # Nya spelade matcher (aktuell sasong) fran FotMob: domare, kort, frisparkar och straffar for alla ligor
     node (Join-Path $PSScriptRoot "fetch-referees-fotmob.mjs") --current
-    # Allsvenskan: officiella domare fran allsvenskan.se (FotMob saknar/har fel domare i en del matcher)
+    # Allsvenskan + Superettan: officiella domare fran allsvenskan.se/superettan.se (FotMob saknar/har fel domare)
     node (Join-Path $PSScriptRoot "fetch-referees-allsvenskan.mjs") --current
+    # Brasilien A/B, Tjeckien, LaLiga 2, CL/EL/ECL, J1: officiella domare dar FotMob har luckor
+    node (Join-Path $PSScriptRoot "fetch-referees-official.mjs") --current
     # England: officiella domare fran premierleague.com och efl.com (kontroll av football-data)
     node (Join-Path $PSScriptRoot "fetch-referees-england.mjs") --current
     node (Join-Path $PSScriptRoot "fetch-referees.mjs")
