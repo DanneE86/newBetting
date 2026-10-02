@@ -18,6 +18,7 @@ import { buildMissProfile, STRYK_LEAGUES } from './lib/stryk-miss-profile.mjs';
 import { colorBands } from './lib/stryk-color-bands.mjs';
 import { calibrationTable, assessMatch, assessmentText } from './lib/stryk-calibration.mjs';
 import { buildRefIndex, loadRefereeMatches, refereeFlags, refereeNotes } from './lib/referee-streaks.mjs';
+import { streckFlopFlags, streckFlopNotes, streckFlopSeasonList } from './lib/streck-flop.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const RAW = path.join(root, 'data', 'raw');
@@ -495,6 +496,17 @@ function refereeIndex() {
     refIdx = buildRefIndex(loadRefereeMatches(rd, rd('data/betting-store.json')?.matches || []));
   } catch { refIdx = null; }
   return refIdx;
+}
+
+// Svenska Spels resultatsidor (streck + utfall) for streckfavoriter som inte vinner, laddas en gang
+let statMatches;
+function streckStats() {
+  if (statMatches) return statMatches;
+  statMatches = [];
+  for (const f of ['stryktipset', 'europatipset']) {
+    try { statMatches.push(...JSON.parse(fs.readFileSync(path.join(root, 'data', `${f}-statistik.json`), 'utf8').replace(/^﻿/, '')).matches); } catch { /* saknas */ }
+  }
+  return statMatches;
 }
 
 function ctxSummary(cx, rf) {
@@ -1490,7 +1502,10 @@ async function analyzeDraw(product, draw, ctx, result) {
     a.refereeStreak = a.context?.referee && refereeIndex()
       ? refereeFlags(refereeIndex(), { referee: a.context.referee, home: a.matched?.home || home, away: a.matched?.away || away })
       : null;
-    a.analysis = [...narrative({ ...a, final: a.final }), ...contextNotes(a.context, home, away), ...refereeNotes(a.refereeStreak, home, away)];
+    // Streckfavorit utan seger: minst 2 ggr streckat >= 50 % denna sasong och minst halften utan seger
+    a.streckFlop = streckFlopFlags(streckStats(), { home, away, date: (a.kickoff || new Date().toISOString()).slice(0, 10), country });
+    // Matchkontexten (FotMob) ligger sist i analysen
+    a.analysis = [...narrative({ ...a, final: a.final }), ...streckFlopNotes(a.streckFlop, home, away), ...contextNotes(a.context, home, away), ...refereeNotes(a.refereeStreak, home, away)];
     // Facit (avgjord kupong)
     const r = result?.events?.find((x) => x.eventNumber === ev.eventNumber);
     if (r?.outcome) a.result = { outcome: r.outcome, score: r.outcomeScore ? `${r.outcomeScore.home}-${r.outcomeScore.away}` : null };
@@ -1821,6 +1836,8 @@ async function main() {
     backtest: loadBacktests(),
     missProfile: buildMissProfile(), // vanliga missar i kupongarkivet (turmatcher i webben)
     missProfileStryk: buildMissProfile(undefined, { product: 'stryktipset', leagues: STRYK_LEAGUES }), // Stryktipset: bara PL, Championship, League One
+    // Lag som streckats som favorit denna sasong och hur ofta de inte vunnit (panelen Risklag)
+    streckFlopSeason: streckFlopSeasonList(streckStats(), new Date().toISOString().slice(0, 10)),
   };
   fs.writeFileSync(OUT, JSON.stringify(out, null, 2), 'utf8');
   log(`Klart -> ${path.relative(root, OUT)}`);

@@ -547,6 +547,66 @@ function refereeAlert(e) {
   const rows = flagged.map(([s, name]) => `<li class="${s.flag === "wins" ? "win" : "loss"}" title="${esc(last(s))}"><b>${esc(name)}</b>: ${s.streak.n} ${s.flag === "wins" ? "raka segrar" : "raka förluster"} med domaren <small>(${s.record.w}-${s.record.d}-${s.record.l} på ${s.matches} ligamatcher)</small></li>`).join("");
   return `<div class="ref-alert ${kind}" role="note"><span class="ref-alert-k">⚑ Domarsvit</span> <b>${esc(r.referee)}</b> dömer<ul>${rows}</ul></div>`;
 }
+// Streckfavorit utan seger: laget streckas ofta som favorit (≥ 50 %) men har inte vunnit minst hälften denna säsong
+function streckFlopAlert(e) {
+  const f = e.streckFlop;
+  if (!f?.flagged) return "";
+  const pc = (x) => `${Math.round(x * 100)} %`;
+  const res = { V: "vinst", O: "kryss", F: "förlust" };
+  const last = (s) => s.last.map((m) => `${m.date} ${m.home ? "hemma" : "borta"} mot ${m.opp} ${m.score} (streck ${m.folk} %, ${res[m.res]})`).join("\n");
+  const rows = [[f.home, e.home], [f.away, e.away]].filter(([t]) => t).map(([t, name]) => {
+    const s = t.season;
+    const prev = t.prev ? ` · förra säsongen ${t.prev.noWin} av ${t.prev.games} (${pc(t.prev.rate)})` : "";
+    return `<li class="loss" title="${esc(last(s))}"><b>${esc(name)}</b>: ingen seger i ${s.noWin} av ${s.games} matcher som streckfavorit (${pc(s.rate)}) <small>– ${s.draws} kryss, ${s.losses} förluster, streckat i snitt ${s.avgFolk} %${prev}</small></li>`;
+  }).join("");
+  return `<div class="ref-alert loss streck-flop" role="note"><span class="ref-alert-k">▼ Streckfavorit utan seger</span> Kort sagt: folket tror ofta på laget, men det vinner sällan denna säsong. Fundera på att gardera.<ul>${rows}</ul></div>`;
+}
+// Etikett vid lagnamnet: laget är ett risklag (streckfavorit som sällan vinner denna säsong)
+function teamName(e, side) {
+  const t = e.streckFlop?.[side];
+  const name = esc(e[side]);
+  if (!t) return name;
+  const s = t.season;
+  return `${name}<span class="risk-tag" title="Risklag: ingen seger i ${s.noWin} av ${s.games} matcher som streckfavorit denna säsong (${Math.round(s.rate * 100)} %)">⚠ risklag</span>`;
+}
+
+// Panel: alla lag som streckats som favorit minst 2 gånger denna säsong, risklagen överst
+const RES_TXT = { V: "vinst", O: "kryss", F: "förlust" };
+function riskPanel(p) {
+  const list = data?.streckFlopSeason || [];
+  if (!list.length) return "";
+  const inCoupon = new Set(p.events.flatMap((e) => [e.home, e.away]));
+  const risk = list.filter((r) => r.risk);
+  const rest = list.filter((r) => !r.risk);
+  const pc = (x) => `${Math.round(x * 100)} %`;
+  const row = (r) => {
+    const s = r.season;
+    const dots = [...s.last].reverse().map((m) => `<span class="rk-dot ${m.res}" title="${esc(`${m.date} ${m.home ? "hemma" : "borta"} mot ${m.opp} ${m.score} – streck ${m.folk} %, ${RES_TXT[m.res]}`)}">${m.res === "V" ? "✓" : m.res === "O" ? "X" : "✕"}</span>`).join("");
+    const prev = r.prev ? `förra säsongen ${r.prev.noWin} av ${r.prev.games} (${pc(r.prev.rate)})` : "ingen favoritmatch förra säsongen";
+    const here = inCoupon.has(r.team);
+    return `<li class="rk-row${r.risk ? " is-risk" : ""}${here ? " in-coupon" : ""}">
+      <div class="rk-team"><b>${esc(r.team)}</b>${here ? `<span class="rk-here">i kupongen</span>` : ""}<small>${esc(r.league || "")}</small></div>
+      <div class="rk-dots" aria-label="Matcher som streckfavorit, äldst först">${dots}</div>
+      <div class="rk-rate"><span class="rk-pct">${pc(s.rate)}</span><span class="rk-bar"><i style="width:${Math.round(s.rate * 100)}%"></i></span><small>utan seger</small></div>
+      <div class="rk-meta">${s.noWin} av ${s.games} · ${s.draws} kryss, ${s.losses} förl. · streck ${s.avgFolk} %<br><small>${esc(prev)}</small></div>
+    </li>`;
+  };
+  const couponRisk = risk.filter((r) => inCoupon.has(r.team)).map((r) => r.team);
+  return `<details class="sb-panel rk-panel ds-card"${keep("risklag")}>
+    <summary><h3>⚠ Risklag denna säsong</h3><small>${risk.length} risklag${couponRisk.length ? ` · ${couponRisk.length} i kupongen: ${esc(couponRisk.join(", "))}` : " · inget i kupongen"}</small></summary>
+    <p class="rk-short"><b>Kort sagt:</b> de här lagen har folket trott på (minst 50 % streck på seger), men de har ofta kryssat eller förlorat. Är ett risklag med i kupongen – tänk på att gardera.</p>
+    <details class="sb-howto"><summary>Så läser du det här</summary>
+      <ul>
+        <li>Varje ruta är en match där laget var streckfavorit denna säsong, äldst till vänster: <span class="rk-dot V">✓</span> vinst, <span class="rk-dot O">X</span> kryss, <span class="rk-dot F">✕</span> förlust. Håll musen över en ruta för motståndare, resultat och streck.</li>
+        <li><b>Risklag</b> = minst 2 matcher som streckfavorit och ingen seger i minst hälften. De får etiketten <span class="risk-tag">⚠ risklag</span> i matchlistan.</li>
+        <li>Bara engelska lag är med. Säsongen räknas från juli, och förra säsongen visas bara som jämförelse.</li>
+      </ul>
+    </details>
+    ${risk.length ? `<ol class="rk-list">${risk.map(row).join("")}</ol>` : `<p class="st-sub">Inga risklag än denna säsong.</p>`}
+    ${rest.length ? `<details class="rk-more"><summary>Övriga streckfavoriter (${rest.length}) – vinner oftast</summary><ol class="rk-list">${rest.map(row).join("")}</ol></details>` : ""}
+  </details>`;
+}
+
 function refereeBadge(e) {
   const r = e.refereeStreak;
   if (!r?.flagged) return "";
@@ -561,11 +621,11 @@ function matchCard(p, e) {
   const isOpen = open.has(key);
   const sys = e.systemPick;
   const tur = turInfo(e, sys?.signs);
-  return `<article class="st-match ds-card${isOpen ? " open" : ""}${e.refereeStreak?.flagged ? " ref-flagged" : ""}" data-key="${esc(key)}">
+  return `<article class="st-match ds-card${isOpen ? " open" : ""}${e.refereeStreak?.flagged ? " ref-flagged" : ""}${e.streckFlop?.flagged ? " flop-flagged" : ""}" data-key="${esc(key)}">
     <header class="st-match-head">
       <span class="st-num">${e.eventNumber}</span>
       <div class="st-title">
-        <h3>${esc(e.home)} <span>–</span> ${esc(e.away)}</h3>
+        <h3>${teamName(e, "home")} <span>–</span> ${teamName(e, "away")}</h3>
         <p><span class="st-kick">${esc(kickoff(e.kickoff))}</span> · ${esc(e.league || "")}</p>
       </div>
       <div class="st-verdict">
@@ -577,6 +637,7 @@ function matchCard(p, e) {
       </div>
     </header>
     ${refereeAlert(e)}
+    ${streckFlopAlert(e)}
     ${tur?.tur && turOpen.has(turKey(e)) ? turExplain(e, tur) : ""}
     ${probRow(e)}
     ${svsRow(e)}
@@ -624,7 +685,7 @@ function render() {
 }
 
 // Utfällda <details> överlever omritningen (render() byter hela vyns HTML vid varje klick)
-const keepOpen = new Set();
+const keepOpen = new Set(["risklag"]); // risklagspanelen är öppen tills man fäller ihop den
 const keep = (k, def = false) => ` data-keep="${k}"${keepOpen.has(k) || def ? " open" : ""}`;
 view.addEventListener("toggle", (ev) => {
   const k = ev.target?.dataset?.keep;
@@ -684,7 +745,7 @@ function kravRow(e, krav, pick) {
   const best = e.final ? e.final.indexOf(Math.max(...e.final)) : -1;
   return `<div class="sb-row${krav ? " locked" : ""}" data-ev="${e.eventNumber}">
     <span class="st-num">${e.eventNumber}</span>
-    <div class="sb-match"><b>${esc(e.home)} – ${esc(e.away)}</b><small><span class="st-kick">${esc(kickoff(e.kickoff))}</span> · ${esc(e.league || "")}${refereeBadge(e)}${tur?.tur ? ` · <button type="button" class="sb-tur tur-btn" data-ev="${e.eventNumber}" aria-expanded="${turOpen.has(turKey(e))}">🍀 turmatch (${esc(pick.signs)} missar ${pct(tur.rate)}) ${turOpen.has(turKey(e)) ? "▲" : "– varför? ▼"}</button>` : ""}</small></div>
+    <div class="sb-match"><b>${teamName(e, "home")} – ${teamName(e, "away")}</b><small><span class="st-kick">${esc(kickoff(e.kickoff))}</span> · ${esc(e.league || "")}${refereeBadge(e)}${tur?.tur ? ` · <button type="button" class="sb-tur tur-btn" data-ev="${e.eventNumber}" aria-expanded="${turOpen.has(turKey(e))}">🍀 turmatch (${esc(pick.signs)} missar ${pct(tur.rate)}) ${turOpen.has(turKey(e)) ? "▲" : "– varför? ▼"}</button>` : ""}</small></div>
     <div class="sb-krav">
       <div class="sb-signs${signs.length === 1 ? " spik" : ""}" role="group" aria-label="Krav match ${e.eventNumber}">${SIGNS.map((s, i) => `<button type="button" class="sb-sign${signs.includes(s) ? " on" : ""}${i === best ? " best" : ""}" data-sign="${s}" aria-pressed="${signs.includes(s)}" title="${i === best ? "Modellens mest sannolika tecken · " : ""}Folket ${pct(e.folk?.[i])}">${s}<small>${pct(e.final[i])}</small></button>`).join("")}</div>
       <span class="sb-krav-lbl" title="${krav ? "Ditt krav på matchen" : "Inget krav – kupongen väljer själv"}">${krav ? `<span class="st-tip ${kravType(signs)}">${esc(signs)}</span>` : "inget krav"}</span>
@@ -878,7 +939,7 @@ function renderB(p, head, top = "", extras = "") {
     <button type="button" class="btn-ghost ds-btn ds-btn--secondary" id="sb-clear"${n ? "" : " disabled"}>Rensa</button>
     <button type="button" class="btn-fetch sb-generate ds-btn ds-btn--primary" id="sb-generate"${st.busy ? " disabled" : ""}><span class="btn-label">${st.busy ? "Genererar…" : "Generera kupong"}</span></button>
   </div>`;
-  view.innerHTML = `${head}${data.error ? `<p class="st-note bad ds-notice ds-notice--danger">Kunde inte uppdatera: ${esc(data.error)}</p>` : ""}${top}${picker}${result}${miss.tur}${matches}${stats}${bar}`;
+  view.innerHTML = `${head}${data.error ? `<p class="st-note bad ds-notice ds-notice--danger">Kunde inte uppdatera: ${esc(data.error)}</p>` : ""}${top}${picker}${result}${miss.tur}${riskPanel(p)}${matches}${stats}${bar}`;
 }
 
 function handleB(ev) {

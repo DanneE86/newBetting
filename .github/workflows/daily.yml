@@ -79,6 +79,11 @@ jobs:
         continue-on-error: true
         run: node scripts/audit-leagues.mjs --quiet
 
+      # Streck + utfall per omgång (inkrementellt): streckfavoriter utan seger i kupongen
+      - name: Stryktipsstatistik (Svenska Spel)
+        continue-on-error: true
+        run: node scripts/fetch-stryktips-statistik.mjs
+
       - name: Stryktipset (Svenska Spel)
         continue-on-error: true
         run: node scripts/fetch-stryktipset.mjs
