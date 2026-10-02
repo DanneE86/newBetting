@@ -3,7 +3,7 @@
 :root {
   /* Seriefärger i spindeln och nycklarna. Byggda på --color-brand och --color-info; alla har minst 3:1 mot vit yta
      och skiljer sig åt. Hemmalaget har samma röda som tröjorna i Startelva. */
-  --pc-home: var(--color-brand-hover);
+  --pc-home: var(--color-brand-text);
   --pc-away: var(--color-info);
   --pc-alt: var(--color-warning);
   --pc-p1: var(--color-info);
@@ -116,8 +116,8 @@
 
 /* Staplar efter nivå i ligan: grön bra, gul medel, röd svagt (staplarna har minst 3:1 mot vit yta) */
 .pc-bar i { display: block; height: 100%; background: var(--color-text-muted); }
-.pc-bar.pc-hi i, .pc-sw.pc-hi { background: var(--color-success); }
-.pc-bar.pc-mid i, .pc-sw.pc-mid { background: var(--color-warning); }
+.pc-bar.pc-hi i, .pc-sw.pc-hi { background: var(--color-success-solid); }
+.pc-bar.pc-mid i, .pc-sw.pc-mid { background: var(--color-warning-solid); }
 .pc-bar.pc-lo i, .pc-sw.pc-lo { background: var(--color-danger-fill); }
 .pc-legend { margin: var(--space-2) 0 0; font-size: var(--font-size-sm); color: var(--color-text); display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-1) var(--space-2); }
 .pc-sw { display: inline-block; width: 0.8rem; height: 0.5rem; border-radius: 2px; }

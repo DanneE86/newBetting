@@ -53,7 +53,7 @@ html, body {
   font-size: var(--font-size-xs);
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--color-brand-hover);
+  color: var(--color-brand-text);
   font-weight: var(--font-weight-bold);
 }
 
@@ -715,7 +715,7 @@ html, body {
 }
 /* Vit text på grön fyllning (4,9:1) */
 .val-yes {
-  background: var(--color-success);
+  background: var(--color-success-solid);
   border-color: var(--color-success);
   color: var(--color-text-on-brand);
 }
@@ -834,10 +834,10 @@ html, body {
   background: var(--color-text-muted);
   flex: none;
 }
-.btn-scan[data-state="running"] .scan-dot { background: var(--color-warning); animation: pulse 1s ease-in-out infinite; }
-.btn-scan[data-state="bet"] .scan-dot { background: var(--color-success); box-shadow: 0 0 0 3px var(--color-success-bg); }
-.btn-scan[data-state="wait"] .scan-dot { background: var(--color-warning); }
-.btn-scan[data-state="error"] .scan-dot { background: var(--color-danger); }
+.btn-scan[data-state="running"] .scan-dot { background: var(--color-warning-solid); animation: pulse 1s ease-in-out infinite; }
+.btn-scan[data-state="bet"] .scan-dot { background: var(--color-success-solid); box-shadow: 0 0 0 3px var(--color-success-bg); }
+.btn-scan[data-state="wait"] .scan-dot { background: var(--color-warning-solid); }
+.btn-scan[data-state="error"] .scan-dot { background: var(--color-danger-solid); }
 @keyframes pulse { 50% { opacity: 0.3; transform: scale(0.8); } }
 
 .scan-panel {
@@ -881,7 +881,7 @@ html, body {
   display: block;
   height: 100%;
   width: 0;
-  background: var(--color-success);
+  background: var(--color-success-solid);
   transition: width var(--duration-base) var(--easing);
 }
 .scan-status p { margin: var(--space-2) 0 0; font-size: var(--font-size-sm); color: var(--color-text-muted); }
@@ -927,7 +927,7 @@ html, body {
   letter-spacing: 0.04em;
   white-space: nowrap;
 }
-.verdict-bet { background: var(--color-success); border-color: var(--color-success); color: var(--color-text-on-brand); }
+.verdict-bet { background: var(--color-success-solid); border-color: var(--color-success); color: var(--color-text-on-brand); }
 .verdict-wait { background: var(--color-warning-bg); border-color: var(--color-warning); color: var(--color-warning); }
 .verdict-nobet { border-color: var(--color-border-strong); color: var(--color-text-muted); }
 .scan-match { min-width: 0; }
@@ -1130,7 +1130,7 @@ html, body {
   transition: transform var(--duration-fast) var(--easing);
 }
 .cand-wrap[open] > summary h2::before { transform: rotate(90deg); }
-.cand-wrap > summary:hover h2 { color: var(--color-brand-hover); }
+.cand-wrap > summary:hover h2 { color: var(--color-brand-text); }
 .cand-wrap > summary:focus-visible { outline: 2px solid var(--focus-ring-color); outline-offset: 4px; border-radius: var(--radius-md); }
 .cand-count { font-family: var(--font-body); font-size: var(--font-size-sm); color: var(--color-text-muted); letter-spacing: 0.04em; margin-left: var(--space-2); }
 .btn-more { align-self: center; margin-top: var(--space-2); }
@@ -1194,9 +1194,10 @@ nav.view-tabs {
   position: sticky;
   top: 0;
   z-index: 30;
-  background: var(--color-bg);
-  box-shadow: 0 0 0 100vmax var(--color-bg);
+  background: var(--color-nav-bg);
+  box-shadow: 0 0 0 100vmax var(--color-nav-bg);
   clip-path: inset(0 -100vmax);
+  border-bottom: 0;
 }
 
 /* Statusraden: en kompakt rad i klarspråk */
@@ -1222,7 +1223,7 @@ nav.view-tabs {
 .vf-btn .count { margin-left: var(--space-1); color: var(--color-text-muted); font-weight: var(--font-weight-medium); }
 .vf-btn[aria-pressed="true"] { background: var(--color-text); color: var(--color-surface); }
 .vf-btn[aria-pressed="true"] .count { color: var(--color-surface-sunken); }
-.vf-btn[data-vf="value"][aria-pressed="true"] { background: var(--color-success); color: var(--color-text-on-brand); }
+.vf-btn[data-vf="value"][aria-pressed="true"] { background: var(--color-success-solid); color: var(--color-text-on-brand); }
 .vf-btn[data-vf="value"][aria-pressed="true"] .count { color: var(--color-text-on-brand); }
 
 /* Kortets huvud: främsta tipset + omdöme */
@@ -1320,7 +1321,7 @@ nav.view-tabs {
 
 /* Värde-etikett på oddschipet som har värde (även när det inte är det tippade utfallet) */
 .odd-pill.is-value { position: relative; }
-.odd-pill .pill-val { margin-left: var(--space-1); padding: 0 var(--space-1); border-radius: var(--radius-sm); background: var(--color-success); color: var(--color-text-on-brand); font-size: var(--font-size-xs); font-style: normal; font-weight: var(--font-weight-bold); letter-spacing: 0.02em; }
+.odd-pill .pill-val { margin-left: var(--space-1); padding: 0 var(--space-1); border-radius: var(--radius-sm); background: var(--color-success-solid); color: var(--color-text-on-brand); font-size: var(--font-size-xs); font-style: normal; font-weight: var(--font-weight-bold); letter-spacing: 0.02em; }
 
 /* ---------- UX-pass runda 5: tips ovanför vecket, laddningsläge, kortare intoning ---------- */
 
@@ -1498,7 +1499,11 @@ main > .section-head:first-child { margin-top: var(--space-4); }
 .tip-analyze .refpanel { margin-top: var(--space-2); }
 .rf-wrap { border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-3); background: var(--color-surface); }
 .rf-name { font-size: var(--font-size-md); }
-.rf-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: var(--space-2); margin-bottom: var(--space-3); }
+.rf-stats { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-3); }
+.rf-stats > .rf-stat { flex: 1 1 120px; }
+/* 1 / X / 2 alltid på en rad: rutan får växa efter innehållet i stället för att radbrytas */
+.rf-stats > .rf-stat-1x2 { flex: 2 1 auto; }
+.rf-stat-1x2 .rf-v { white-space: nowrap; }
 .rf-stat { display: flex; flex-direction: column; gap: 2px; padding: var(--space-2) var(--space-3); border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-surface); }
 .rf-v { font-size: var(--font-size-lg); font-weight: var(--font-weight-bold); font-variant-numeric: tabular-nums; }
 .rf-avg { color: var(--color-text-muted); font-size: var(--font-size-xs); }
@@ -1548,6 +1553,11 @@ main > .section-head:first-child { margin-top: var(--space-4); }
 .filter-pill small { margin-left: var(--space-1); color: var(--color-text-muted); font-weight: var(--font-weight-regular); font-size: var(--font-size-xs); }
 .filter-pill.active small { color: var(--color-surface-sunken); }
 .filter-pill.is-country { border-color: var(--color-success); }
+/* Favoritligor: stjärna först i ligaknappen (svag tills man pekar på den), favoriter guld och först i raden */
+.filter-pill .fav-star { display: inline-block; margin: -0.25em var(--space-1) -0.25em calc(-1 * var(--space-1)); padding: 0.25em; color: inherit; opacity: 0.4; line-height: 1; border-radius: var(--radius-pill); transition: opacity var(--duration-fast) var(--easing), color var(--duration-fast) var(--easing); }
+.filter-pill:hover .fav-star { opacity: 0.7; }
+.filter-pill .fav-star:hover, .filter-pill .fav-star.is-fav { color: var(--color-warning-fill); opacity: 1; }
+.filter-pills .fav-sep { flex: 0 0 1px; align-self: stretch; margin: var(--space-1); background: var(--color-border-strong); }
 .league-search-empty { color: var(--color-text-muted); font-size: var(--font-size-sm); padding: var(--space-2) var(--space-1); white-space: nowrap; }
 @media (max-width: 640px) {
   .league-search input { width: 7.5rem; padding-right: var(--space-2); }
@@ -1585,3 +1595,25 @@ main > .section-head:first-child { margin-top: var(--space-4); }
 .ref-team { white-space: nowrap; }
 .rf-table tr.rf-flagged td { background: var(--color-warning-bg); }
 .rf-appt td { white-space: normal; }
+/* Domarvyn: säsongsval, klickbar domare med matchlista, lagens matcher med domaren */
+.rf-season { margin-left: 0; margin-right: var(--space-2); }
+.rf-ref { all: unset; cursor: pointer; color: var(--color-text); font-weight: var(--font-weight-bold); border-bottom: 1px dotted var(--color-text-muted); }
+.rf-ref:hover, .rf-ref[aria-expanded="true"] { color: var(--color-warning); border-bottom-color: var(--color-warning); }
+.rf-ref:focus-visible { outline: 2px solid var(--focus-ring-color); outline-offset: 2px; border-radius: 2px; }
+.rf-ref-caret { font-size: var(--font-size-xs); color: var(--color-text-muted); }
+.rf-table tr.rf-open td { background: var(--color-surface-muted); }
+.rf-table tr.rf-games-row > td { padding: var(--space-2) var(--space-3) var(--space-3); background: var(--color-surface-muted); white-space: normal; }
+.rf-games-sum { margin: 0 0 var(--space-1); font-size: var(--font-size-xs); }
+.rf-games-table { font-size: var(--font-size-xs); }
+.rf-games-table td { white-space: nowrap; }
+.rf-table tr.rf-involved td { background: var(--color-warning-bg); font-weight: var(--font-weight-bold); }
+.rf-involved-key { background: var(--color-warning-bg); padding: 0 var(--space-1); border-radius: var(--radius-sm); }
+.rf-table tr.rf-homewin:not(.rf-involved) td { background: var(--color-success-bg); }
+.rf-table tr.rf-homewin td:first-child { box-shadow: inset 3px 0 0 var(--color-success); }
+.rf-table tr.rf-homewin td:nth-child(3) b { color: var(--color-success); }
+.rf-homewin-key { background: var(--color-success-bg); color: var(--color-success); font-weight: var(--font-weight-bold); padding: 0 var(--space-1); border-radius: var(--radius-sm); }
+.rf-teamgames { margin-top: var(--space-2); }
+.rf-teamgames summary { cursor: pointer; font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); color: var(--color-text-muted); margin-bottom: var(--space-1); }
+.rf-teamgames .rf-table-wrap, .rf-teamgames table { max-width: 100%; }
+.rf-h2h { margin: 0 0 var(--space-2); font-size: var(--font-size-sm); }
+.rf-h2h .tp-k { margin-right: var(--space-1); }

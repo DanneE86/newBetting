@@ -11,7 +11,7 @@
   --gc-red: #ef6b5b;
   --gc-green-text: #0b1a10;  /* 9:1 mot --gc-green */
   --gc-yellow-text: #1d1604; /* 11:1 mot --gc-yellow */
-  --gc-red-text: var(--color-text); /* 5,2:1 mot --gc-red (vit text gav bara 3:1) */
+  --gc-red-text: var(--ss-black); /* 5,2:1 mot --gc-red (vit text gav bara 3:1) */
   --st-tint: 12%;            /* andel färg i tonade ytor */
 }
 
@@ -34,7 +34,7 @@
   min-height: var(--target-min);
   border: 0;
   background: transparent;
-  color: var(--color-text-muted);
+  color: var(--color-nav-text-muted);
   font-family: var(--font-body);
   font-weight: var(--font-weight-medium);
   font-size: var(--font-size-md);
@@ -46,8 +46,8 @@
   transition: color var(--duration-fast) var(--easing), border-color var(--duration-fast) var(--easing);
 }
 
-.view-tab:hover { color: var(--color-text); }
-.view-tab.active { color: var(--color-text); border-bottom-color: var(--color-brand); font-weight: var(--font-weight-bold); }
+.view-tab:hover { color: var(--color-nav-text); }
+.view-tab.active, .view-tab[aria-selected="true"] { color: var(--color-nav-text); border-bottom-color: var(--color-brand); font-weight: var(--font-weight-bold); }
 
 /* Tips-vyns sektioner döljs i Stryktips-fliken */
 body.view-stryktips .status-bar,
@@ -181,7 +181,7 @@ body.view-stryktips main { display: none !important; }
 .st-tip {
   padding: var(--space-1) var(--space-3);
   border-radius: var(--radius-pill);
-  background: var(--color-success);
+  background: var(--color-success-solid);
   color: var(--color-text-on-brand);
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-xs);
@@ -216,7 +216,7 @@ body.view-stryktips main { display: none !important; }
 }
 /* Dämpad = inte med i A. Ingen opacitet (texten måste klara 4,5:1), i stället streckad ram och grå yta */
 .st-prob.out { background: var(--color-surface-muted); border-style: dashed; }
-.st-in { padding: 1px var(--space-2); border-radius: var(--radius-pill); background: var(--color-success); color: var(--color-text-on-brand); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); white-space: nowrap; }
+.st-in { padding: 1px var(--space-2); border-radius: var(--radius-pill); background: var(--color-success-solid); color: var(--color-text-on-brand); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); white-space: nowrap; }
 .st-tip.halv { background: var(--color-surface); color: var(--color-success); box-shadow: inset 0 0 0 2px var(--color-success); }
 .st-tip.hel { background: var(--color-surface); color: var(--color-warning); box-shadow: inset 0 0 0 2px var(--color-warning); }
 .st-prob.tip { border-color: var(--color-success); background: var(--color-success-bg); }
@@ -230,7 +230,7 @@ body.view-stryktips main { display: none !important; }
 
 .st-bar { height: 5px; margin: var(--space-2) 0 var(--space-2); border-radius: var(--radius-pill); background: var(--color-surface-sunken); overflow: hidden; }
 .st-bar span { display: block; height: 100%; border-radius: var(--radius-pill); background: var(--color-text-muted); }
-.st-prob.tip .st-bar span { background: var(--color-success); }
+.st-prob.tip .st-bar span { background: var(--color-success-solid); }
 
 .st-prob-sub { display: flex; flex-wrap: wrap; gap: 2px var(--space-2); color: var(--color-text-muted); font-size: var(--font-size-xs); font-variant-numeric: tabular-nums; }
 .st-sv { color: var(--color-warning); font-weight: var(--font-weight-bold); }
@@ -296,7 +296,7 @@ body.view-stryktips main { display: none !important; }
 
 .st-form { display: flex; gap: var(--space-1); margin: var(--space-2) 0 var(--space-2); }
 .st-form span { display: grid; place-items: center; width: 1.45rem; height: 1.45rem; border-radius: var(--radius-sm); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); }
-.st-form .f-V { background: var(--color-success); color: var(--color-text-on-brand); }
+.st-form .f-V { background: var(--color-success-solid); color: var(--color-text-on-brand); }
 .st-form .f-O { background: var(--color-surface-sunken); color: var(--color-text); }
 .st-form .f-F { background: var(--color-danger-bg); color: var(--color-danger); }
 
@@ -362,7 +362,7 @@ body.view-stryktips main { display: none !important; }
 
 /* System B (går emot A) */
 .st-tip.sysb { background: var(--color-surface); color: var(--color-info); box-shadow: inset 0 0 0 2px var(--color-info); }
-.st-b { padding: 1px var(--space-1); border-radius: var(--radius-pill); background: var(--color-info); color: var(--color-text-on-brand); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); }
+.st-b { padding: 1px var(--space-1); border-radius: var(--radius-pill); background: var(--color-info-solid); color: var(--color-text-on-brand); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); }
 .st-stats > div.sysb { border-color: var(--color-info); }
 
 /* Backtest */
@@ -414,7 +414,7 @@ body.view-stryktips main { display: none !important; }
 .sb-sign { display: flex; flex-direction: column; align-items: center; min-width: 3.1rem; min-height: var(--target-min); padding: var(--space-1) var(--space-2); border: 1px solid var(--color-text-muted); border-radius: var(--radius-md); background: var(--color-surface); color: var(--color-text); font: inherit; font-weight: var(--font-weight-bold); cursor: pointer; transition: background-color var(--duration-fast) var(--easing), border-color var(--duration-fast) var(--easing); }
 .sb-sign small { color: var(--color-text-muted); font-size: var(--font-size-xs); font-weight: var(--font-weight-medium); }
 .sb-sign:hover { border-color: var(--color-text); background: var(--color-surface-muted); }
-.sb-sign.on { background: var(--color-success); border-color: var(--color-success); color: var(--color-text-on-brand); }
+.sb-sign.on { background: var(--color-success-solid); border-color: var(--color-success); color: var(--color-text-on-brand); }
 .sb-sign.on small { color: var(--color-text-on-brand); }
 .sb-scope button { padding: var(--space-1) var(--space-2); border: 1px solid var(--color-text-muted); border-radius: var(--radius-pill); background: var(--color-surface); color: var(--color-text); font: inherit; font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); cursor: pointer; }
 .sb-scope button[aria-pressed="true"] { color: var(--color-surface); border-color: var(--color-text); background: var(--color-text); }
@@ -460,7 +460,7 @@ body.view-stryktips main { display: none !important; }
 .tur-dots { display: inline-flex; gap: 3px; vertical-align: middle; margin: 0 var(--space-1); }
 .tur-dots span { width: 0.7rem; height: 0.7rem; border-radius: 50%; }
 .tur-dots .miss { background: var(--color-danger-fill); }
-.tur-dots .ok { background: var(--color-success); }
+.tur-dots .ok { background: var(--color-success-solid); }
 
 /* Turmatcher och vanliga missar */
 .st-chip.tur { color: var(--color-success); border-color: var(--color-success); background: var(--color-surface); }
@@ -515,7 +515,7 @@ body.view-stryktips main { display: none !important; }
 .sb-coupon.is-extra:hover, .sb-coupon.is-extra:focus-within { border-color: var(--color-text-muted); }
 .sb-coupon.is-extra .st-gc { background: var(--color-surface); color: var(--color-text); box-shadow: inset 0 0 0 1px var(--color-text-muted); }
 .sb-coupon.is-extra .st-gc:hover { background: var(--color-surface-sunken); }
-.sb-coupon-tag { align-self: flex-start; margin-bottom: var(--space-2); padding: 2px var(--space-2); border-radius: var(--radius-pill); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); letter-spacing: 0.06em; text-transform: uppercase; background: var(--color-success); color: var(--color-text-on-brand); }
+.sb-coupon-tag { align-self: flex-start; margin-bottom: var(--space-2); padding: 2px var(--space-2); border-radius: var(--radius-pill); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); letter-spacing: 0.06em; text-transform: uppercase; background: var(--color-success-solid); color: var(--color-text-on-brand); }
 .sb-coupon-tag.extra { background: var(--color-surface); color: var(--color-text-muted); border: 1px solid var(--color-border-strong); }
 .st-gc-wrap { display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-1); margin-top: var(--space-2); }
 .st-gc-wrap .st-gc { margin-top: 0; white-space: nowrap; }
@@ -541,7 +541,7 @@ body.view-stryktips main { display: none !important; }
 .st-history > summary h3::before { content: "▸"; display: inline-block; margin-right: var(--space-2); color: var(--color-brand); transition: transform var(--duration-fast) var(--easing); }
 .st-history[open] > summary h3::before { transform: rotate(90deg); }
 .st-history > summary small { color: var(--color-text-muted); font-size: var(--font-size-sm); }
-.st-history > summary:hover h3 { color: var(--color-brand-hover); }
+.st-history > summary:hover h3 { color: var(--color-brand-text); }
 .st-history-body { display: flex; flex-direction: column; gap: var(--space-3); margin-top: var(--space-4); }
 .st-history-body .st-miss h3 { margin: 0 0 var(--space-1); font-size: var(--font-size-md); }
 .st-history-body .st-miss h3 + p, .st-history-body .st-miss .st-sub { margin: var(--space-1) 0 var(--space-2); }

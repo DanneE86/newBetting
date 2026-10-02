@@ -74,6 +74,50 @@ test.describe('sök land eller liga', () => {
   });
 });
 
+test.describe('favoritligor', () => {
+  test.beforeEach(async ({ page }) => {
+    await page.goto(base + '/tips');
+    await page.evaluate(() => localStorage.clear());
+    await page.goto(base + '/tips');
+    await page.waitForSelector('#league-filters .filter-pill[data-group]');
+  });
+
+  test('stjärnan favoritmarkerar utan att välja, favoriten hamnar först och sparas', async ({ page }) => {
+    const row = page.locator('#league-filters');
+    const last = row.locator('.filter-pill').last();
+    const key = await last.locator('.fav-star').getAttribute('data-fav');
+    await last.locator('.fav-star').click();
+    // Inte vald, bara favorit: andra knappen (efter Alla) är favoriten, sedan ett skiljestreck
+    await expect(row.locator('.filter-pill.active')).toHaveAttribute('data-league', 'ALL');
+    const second = row.locator('.filter-pill').nth(1);
+    await expect(second).toHaveClass(/is-fav/);
+    await expect(second.locator('.fav-star')).toHaveAttribute('data-fav', key!);
+    await expect(second.locator('.fav-star')).toHaveAttribute('aria-pressed', 'true');
+    await expect(row.locator('.fav-sep')).toHaveCount(1);
+    expect(JSON.parse((await page.evaluate(() => localStorage.getItem('betting.favLeagues')))!)).toEqual([key]);
+    // Finns kvar efter omladdning och går att ta bort
+    await page.reload();
+    await page.waitForSelector('#league-filters .filter-pill.is-fav');
+    await row.locator('.filter-pill.is-fav .fav-star').click();
+    await expect(row.locator('.filter-pill.is-fav')).toHaveCount(0);
+    await expect(row.locator('.fav-sep')).toHaveCount(0);
+    expect(await page.evaluate(() => localStorage.getItem('betting.favLeagues'))).toBe('[]');
+  });
+
+  test('en turnering inom ett land kan favoritmarkeras och får en egen knapp först', async ({ page }) => {
+    test.skip(!leaguesWithMatches.has('PL') || !leaguesWithMatches.has('CH'), 'engelska ligor saknar matcher');
+    await page.click('.filter-pill[data-group="england"]');
+    await page.locator('#league-sub .filter-pill[data-league="CH"] .fav-star').click();
+    const fav = page.locator('#league-filters .filter-pill').nth(1);
+    await expect(fav).toHaveAttribute('data-league', 'CH');
+    // Landet finns kvar bland övriga, underradens Championship är markerad
+    await expect(page.locator('#league-filters .filter-pill[data-group="england"]')).toHaveCount(1);
+    await expect(page.locator('#league-sub .filter-pill[data-league="CH"]')).toHaveClass(/is-fav/);
+    await fav.click({ position: { x: (await fav.boundingBox())!.width - 12, y: 12 } });
+    await expect(page.locator('#league-filters .filter-pill.active[data-league="CH"]')).toHaveCount(1);
+  });
+});
+
 // Startelva: kräver hämtade elvor (npm run elvor)
 const store = (() => {
   try { return JSON.parse(fs.readFileSync(path.join(root, 'data', 'startelvor.json'), 'utf8')); } catch { return null; }

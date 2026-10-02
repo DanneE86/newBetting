@@ -33,9 +33,15 @@
   --color-border: var(--ss-beige-light);
   --color-border-strong: var(--ss-grey-light);
 
+  /* Huvudmenyn (Tips/Stryktipset/Europatipset): mörkt band så den syns */
+  --color-nav-bg: var(--ss-black);
+  --color-nav-text: var(--ss-white);
+  --color-nav-text-muted: var(--ss-beige-light);  /* 12:1 mot --ss-black */
+
   --color-brand: var(--ss-red);
   --color-brand-hover: var(--ss-red-dark);
   --color-brand-active: var(--ss-red-darker);
+  --color-brand-text: var(--ss-red-dark);   /* röd text (rubrikrader, hemmalag), 8:1 mot vitt */
 
   --color-link: var(--ss-blue);
   --color-info: var(--ss-blue);
@@ -49,6 +55,13 @@
   --color-danger-fill: var(--ss-red);
   --color-danger-bg: #fde8ea;
 
+  /* Heltäckande ytor med vit text (Värde-märken, valda tecken, gräsplan). Samma värde i båda teman så att
+     vit text alltid når 4,5:1 – i mörkt läge blir textfärgerna ovan ljusare, men de här ligger kvar. */
+  --color-success-solid: var(--ss-green);
+  --color-info-solid: var(--ss-blue);
+  --color-danger-solid: var(--ss-red-dark);
+  --color-warning-solid: #8a5a00;
+
   /* Domänfärger som måste matcha externa verktyg – ändra inte värdet */
   --color-spik: #f07ab8;                     /* Gambling Cabin rosa (id 5) */
   --color-spik-text: #2a0a1c;
@@ -56,7 +69,7 @@
 
   /* Fokus */
   --focus-ring-color: var(--ss-blue);
-  --focus-ring: 0 0 0 2px var(--ss-white), 0 0 0 4px var(--focus-ring-color);
+  --focus-ring: 0 0 0 2px var(--color-bg), 0 0 0 4px var(--focus-ring-color);
 
   /* Typografi */
   --font-display: "Svenska Spel Arena", "Archivo Black", Impact, sans-serif;
@@ -101,7 +114,76 @@
   /* Interaktiva mått */
   --target-min: 44px;  /* minsta klickyta */
   --container-max: 1120px;
+
+  color-scheme: light;
 }
+
+/*
+ * Mörkt läge. Väljs med data-theme="dark" på <html> (temaväljaren i sidhuvudet, theme.js), eller
+ * automatiskt när systemet är mörkt och användaren inte valt ljust (data-theme="auto" eller inget val).
+ * Bara de semantiska rollerna byts – komponenterna läser samma variabler i båda teman.
+ * Spik-rosa, Gambling Cabin-färgerna och *-solid-ytorna är oförändrade.
+ * Blocket finns två gånger (manuellt val + systemval) eftersom CSS inte kan dela en regel mellan dem.
+ */
+:root[data-theme="dark"] {
+  --color-bg: #141312;
+  --color-surface: #1f1d1c;
+  --color-surface-muted: #2a2826;
+  --color-surface-sunken: #33302d;
+  --color-text: #f3eeea;                     /* 15:1 mot --color-surface */
+  --color-text-muted: #b3aba5;               /* 7,6:1 mot --color-surface */
+  --color-border: #34312e;
+  --color-border-strong: #4d4845;
+  --color-nav-bg: #0b0a0a;
+  --color-brand-text: #ff7a7a;              /* 6,6:1 mot --color-surface */
+  --color-link: #6cb4ff;                     /* 7,6:1 mot --color-surface */
+  --color-info: #6cb4ff;
+  --color-info-bg: #13263b;
+  --color-success: #4ccb85;                  /* 8:1 mot --color-surface */
+  --color-success-bg: #12291c;
+  --color-warning: #f0b429;                  /* 9:1 mot --color-surface */
+  --color-warning-bg: #2f2510;
+  --color-danger: #ff7a7a;                   /* 6,6:1 mot --color-surface */
+  --color-danger-bg: #3a1418;
+  --focus-ring-color: #6cb4ff;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.6);
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]):not([data-theme="dark"]) {
+    --color-bg: #141312;
+    --color-surface: #1f1d1c;
+    --color-surface-muted: #2a2826;
+    --color-surface-sunken: #33302d;
+    --color-text: #f3eeea;
+    --color-text-muted: #b3aba5;
+    --color-border: #34312e;
+    --color-border-strong: #4d4845;
+    --color-nav-bg: #0b0a0a;
+    --color-brand-text: #ff7a7a;
+    --color-link: #6cb4ff;
+    --color-info: #6cb4ff;
+    --color-info-bg: #13263b;
+    --color-success: #4ccb85;
+    --color-success-bg: #12291c;
+    --color-warning: #f0b429;
+    --color-warning-bg: #2f2510;
+    --color-danger: #ff7a7a;
+    --color-danger-bg: #3a1418;
+    --focus-ring-color: #6cb4ff;
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+    --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.5);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.6);
+    color-scheme: dark;
+  }
+}
+
+/* Temaväljaren i sidhuvudet (Ljust / Mörkt / Auto) */
+.theme-switch { display: inline-flex; gap: var(--space-1); margin-top: var(--space-3); }
+.theme-switch .ds-toggle { min-height: 32px; padding: var(--space-1) var(--space-3); font-size: var(--font-size-xs); }
 
 @media (prefers-reduced-motion: reduce) {
   :root {

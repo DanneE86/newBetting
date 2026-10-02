@@ -957,32 +957,66 @@ function countFor(codes) {
   return state.allCandidates.filter((t) => codes.includes(t.league)).length;
 }
 
+// ---------- Favoritligor ----------
+// Nyckel: "G:<grupp-id>" för ett land med flera ligor, annars ligakoden. Sparas i webbläsaren.
+const FAV_KEY = "betting.favLeagues";
+let favLeagues = (() => {
+  try { return new Set(JSON.parse(localStorage.getItem(FAV_KEY) || "[]")); } catch { return new Set(); }
+})();
+
+function toggleFav(key) {
+  if (favLeagues.has(key)) favLeagues.delete(key);
+  else favLeagues.add(key);
+  try { localStorage.setItem(FAV_KEY, JSON.stringify([...favLeagues])); } catch { /* privat läge */ }
+  buildLeagueFilters([...presentLeagues()]);
+}
+
+/** Stjärnan i en ligaknapp (span, eftersom knappar inte får ligga i knappar). */
+function favStar(key, label) {
+  const on = favLeagues.has(key);
+  return `<span class="fav-star${on ? " is-fav" : ""}" data-fav="${escapeHtml(key)}" role="button" aria-pressed="${on}" aria-label="${on ? "Ta bort" : "Lägg till"} ${escapeHtml(label)} som favorit" title="${on ? "Ta bort favorit" : "Favoritmarkera"}">${on ? "★" : "☆"}</span>`;
+}
+
 /**
  * Grupperade ligafilter: grupper med flera ligor (England, Europa, Sverige ...) fäller ut
  * sina turneringar i en underrad. Grupper med en liga blir en vanlig knapp.
+ * Favoritmarkerade länder/ligor läggs först (efter Alla), skilda från resten med ett streck.
  */
 function buildLeagueFilters(leagues) {
   const host = $("#league-filters");
   if (!host) return;
   const present = new Set((leagues || []).filter(Boolean));
   const grouped = new Set();
-  const pills = [`<button type="button" class="filter-pill ds-toggle" data-league="ALL">Alla</button>`];
+  const items = [];
+  const leaguePill = (l, label) => ({
+    key: l,
+    html: `<button type="button" class="filter-pill ds-toggle${favLeagues.has(l) ? " is-fav" : ""}" data-league="${escapeHtml(l)}" title="${escapeHtml(leagueName(l))}">${favStar(l, leagueName(l))}${escapeHtml(label)}<span class="count">${countFor([l])}</span></button>`,
+  });
   for (const g of state.leagueGroups) {
     const ls = g.leagues.filter((l) => present.has(l));
     ls.forEach((l) => grouped.add(l));
     if (!ls.length) continue;
-    const n = countFor(ls);
     if (ls.length > 1) {
-      pills.push(`<button type="button" class="filter-pill ds-toggle is-group" data-group="${escapeHtml(g.id)}" aria-expanded="${state.openGroup === g.id}">${escapeHtml(g.name)}<span class="count">${n}</span></button>`);
+      const key = `G:${g.id}`;
+      items.push({ key, html: `<button type="button" class="filter-pill ds-toggle is-group${favLeagues.has(key) ? " is-fav" : ""}" data-group="${escapeHtml(g.id)}" aria-expanded="${state.openGroup === g.id}">${favStar(key, g.name)}${escapeHtml(g.name)}<span class="count">${countFor(ls)}</span></button>` });
+      // Favoritmarkerad turnering inom landet (t.ex. Championship) får en egen knapp bland favoriterna
+      for (const l of ls) if (favLeagues.has(l)) items.push({ ...leaguePill(l, leagueName(l)), favOnly: true });
     } else {
-      pills.push(`<button type="button" class="filter-pill ds-toggle" data-league="${escapeHtml(ls[0])}" title="${escapeHtml(leagueName(ls[0]))}">${escapeHtml(g.name)}<span class="count">${n}</span></button>`);
+      items.push(leaguePill(ls[0], g.name));
     }
   }
   // Ligor som inte finns i någon grupp
   for (const l of present) {
-    if (!grouped.has(l)) pills.push(`<button type="button" class="filter-pill ds-toggle" data-league="${escapeHtml(l)}">${escapeHtml(leagueName(l))}<span class="count">${countFor([l])}</span></button>`);
+    if (!grouped.has(l)) items.push(leaguePill(l, leagueName(l)));
   }
-  host.innerHTML = pills.join("");
+  const favs = items.filter((x) => favLeagues.has(x.key));
+  const rest = items.filter((x) => !favLeagues.has(x.key) && !x.favOnly);
+  host.innerHTML = [
+    `<button type="button" class="filter-pill ds-toggle" data-league="ALL">Alla</button>`,
+    ...favs.map((x) => x.html),
+    ...(favs.length ? [`<span class="fav-sep" aria-hidden="true"></span>`] : []),
+    ...rest.map((x) => x.html),
+  ].join("");
   renderLeagueSub(present);
   syncLeaguePills();
   if ($("#league-search")?.value) renderLeagueSearch();
@@ -1008,7 +1042,7 @@ function renderLeagueSub(present) {
   }
   sub.hidden = false;
   sub.innerHTML = ls
-    .map((l) => `<button type="button" class="filter-pill ds-toggle" data-league="${escapeHtml(l)}">${escapeHtml(leagueName(l))}<span class="count">${countFor([l])}</span></button>`)
+    .map((l) => `<button type="button" class="filter-pill ds-toggle${favLeagues.has(l) ? " is-fav" : ""}" data-league="${escapeHtml(l)}">${favStar(l, leagueName(l))}${escapeHtml(leagueName(l))}<span class="count">${countFor([l])}</span></button>`)
     .join("") + (ls.some((l) => hasRefData(l)) ? refPill() : "");
 }
 
@@ -1219,6 +1253,12 @@ async function startFetch() {
 
 for (const id of ["#league-filters", "#league-sub"]) {
   $(id).addEventListener("click", (e) => {
+    // Stjärnan favoritmarkerar utan att välja ligan
+    const star = e.target.closest(".fav-star");
+    if (star) {
+      toggleFav(star.dataset.fav);
+      return;
+    }
     const btn = e.target.closest(".filter-pill");
     if (!btn) return;
     if (btn.hasAttribute("data-refleague")) toggleRefLeague();
@@ -1598,14 +1638,23 @@ function refStreakTxt(s) {
   return s.n === 1 ? `1 ${one}` : `${s.n} ${many}`;
 }
 
-function refTeamBox(name, s) {
+// Lagets matcher med domaren: facit, svit och alla matcherna (nyast först). other = motståndarens namn i
+// historiken -> inbördes möten med domaren markeras.
+function refTeamBox(name, s, other = null, league = null) {
   if (!s) return `<div class="rf-team"><h5>${escapeHtml(name)}</h5><p class="mx-sub">Laget finns inte i domarhistoriken.</p></div>`;
   if (!s.matches) return `<div class="rf-team"><h5>${escapeHtml(name)}</h5><p class="mx-sub">Har inte haft domaren i någon ligamatch i historiken.</p></div>`;
   const r = s.record;
-  const badges = (s.last || []).slice(0, 8).map((m) => {
-    const k = m.res === "W" ? "V" : m.res === "D" ? "O" : "F";
-    return `<span class="r-badge ${R_CLASS[k]}" title="${escapeHtml(`${fmtDateShort(m.date)} ${m.home ? "hemma" : "borta"} mot ${m.opp} ${m.score}`)}">${k}</span>`;
-  }).join("");
+  const badge = (res) => {
+    const k = res === "W" ? "V" : res === "D" ? "O" : "F";
+    return `<span class="r-badge ${R_CLASS[k]}">${k}</span>`;
+  };
+  const games = s.games || [];
+  const list = games.length
+    ? `<details class="rf-teamgames"${games.length <= 12 ? " open" : ""}><summary>Alla ${games.length} matcher med domaren</summary>
+      <table class="rf-table rf-games-table"><thead><tr><th>Datum</th><th></th><th>Mot</th><th class="num">Res.</th><th></th><th class="num" title="Gula kort för laget">Gula</th></tr></thead><tbody>
+      ${games.map((m) => `<tr class="${other && m.opp === other ? "rf-involved" : ""}"><td>${escapeHtml(fmtDateShort(m.date))}</td><td class="mx-sub">${m.home ? "H" : "B"}</td><td>${escapeHtml(m.opp)}${m.league && m.league !== league ? ` <small class="mx-sub">${escapeHtml(leagueName(m.league) || m.league)}</small>` : ""}</td><td class="num"><b>${escapeHtml(m.score)}</b></td><td>${badge(m.res)}</td><td class="num">${m.yc ?? "—"}</td></tr>`).join("")}
+      </tbody></table></details>`
+    : (s.last || []).length ? `<div class="rf-last"><span class="tp-k">Senaste, nyast först</span> ${s.last.slice(0, 8).map((m) => badge(m.res)).join("")}</div>` : "";
   const flag = s.flag ? ` <span class="ref-badge ${s.flag === "wins" ? "win" : "loss"}">⚑ ${s.streak.n} raka</span>` : "";
   return `<div class="rf-team${s.flag ? ` flag-${s.flag === "wins" ? "win" : "loss"}` : ""}"><h5>${escapeHtml(name)}${flag}</h5>
     <div class="rf-grid">
@@ -1616,15 +1665,24 @@ function refTeamBox(name, s) {
       <span class="tp-k">Gula/match</span><span>${numSv(s.yellowPg, 2)} <small class="mx-sub">för laget</small></span>
       <span class="tp-k">Svit nu</span><span>${refStreakTxt(s.streak)}</span>
     </div>
-    ${badges ? `<div class="rf-last"><span class="tp-k">Senaste, nyast först</span> ${badges}</div>` : ""}
+    ${list}
   </div>`;
+}
+
+// Inbördes möten mellan lagen med domaren (ur hemmalagets lista)
+function refH2h(r) {
+  const opp = r?.away?.team;
+  const list = (r?.home?.games || []).filter((m) => opp && m.opp === opp);
+  if (!list.length) return "";
+  const txt = list.map((m) => `${fmtDateShort(m.date)}: ${m.home ? `${r.home.team} – ${opp}` : `${opp} – ${r.home.team}`} ${m.home ? m.score : m.score.split("-").reverse().join("-")}`);
+  return `<p class="rf-h2h"><span class="tp-k">Inbördes med domaren</span> ${list.length} ${list.length === 1 ? "match" : "matcher"} · ${txt.map(escapeHtml).join(" · ")}</p>`;
 }
 
 // Snittrutor: matcher, gula, röda, straffar, frisparkar, 1/X/2 (domaren mot ligan, eller bara ligan)
 function refStatTiles(x, avg) {
   if (!x) {
-    const t = (k, v) => `<div class="rf-stat"><span class="tp-k">${k}</span><span class="rf-v">${v}</span></div>`;
-    return `<div class="rf-stats">${t("Matcher", avg.matches ?? "—")}${t("Gula per match", numSv(avg.yellowPg, 2))}${t("Röda per match", numSv(avg.redPg, 2))}${t("Straffar per match", numSv(avg.penaltyPg, 2))}${t("Frisparkar per match", numSv(avg.foulsPg, 1))}${t("1 / X / 2", `${pctShort(avg.homeWinRate)} / ${pctShort(avg.drawRate)} / ${pctShort(avg.awayWinRate)}`)}</div>`;
+    const t = (k, v, cls = "") => `<div class="rf-stat${cls}"><span class="tp-k">${k}</span><span class="rf-v">${v}</span></div>`;
+    return `<div class="rf-stats">${t("Matcher", avg.matches ?? "—")}${t("Gula per match", numSv(avg.yellowPg, 2))}${t("Röda per match", numSv(avg.redPg, 2))}${t("Straffar per match", numSv(avg.penaltyPg, 2))}${t("Frisparkar per match", numSv(avg.foulsPg, 1))}${t("1 / X / 2", `${pctShort(avg.homeWinRate)} / ${pctShort(avg.drawRate)} / ${pctShort(avg.awayWinRate)}`, " rf-stat-1x2")}</div>`;
   }
   const tot = (n, label) => (n != null ? `<span class="rf-avg">${n} ${label} totalt</span>` : "");
   return `<div class="rf-stats">
@@ -1633,11 +1691,12 @@ function refStatTiles(x, avg) {
     <div class="rf-stat"><span class="tp-k">Röda kort per match</span>${refVsAvg(x.redPg, avg.redPg, x.redVsAvg, 2)}${tot(x.redTotal, "röda")}</div>
     <div class="rf-stat"><span class="tp-k">Straffar per match</span>${refVsAvg(x.penaltyPg, avg.penaltyPg, x.penaltyVsAvg, 2)}${tot(x.penaltyTotal, "straffar")}</div>
     <div class="rf-stat"><span class="tp-k">Frisparkar per match</span>${refVsAvg(x.foulsPg, avg.foulsPg, x.foulsVsAvg, 1)}</div>
-    <div class="rf-stat"><span class="tp-k">1 / X / 2 med domaren</span><span class="rf-v">${pctShort(x.homeWinRate)} / ${pctShort(x.drawRate)} / ${pctShort(x.awayWinRate)}</span><span class="rf-avg">ligan ${pctShort(avg.homeWinRate)} / ${pctShort(avg.drawRate)} / ${pctShort(avg.awayWinRate)}</span></div>
+    <div class="rf-stat rf-stat-1x2"><span class="tp-k">1 / X / 2 med domaren</span><span class="rf-v">${pctShort(x.homeWinRate)} / ${pctShort(x.drawRate)} / ${pctShort(x.awayWinRate)}</span><span class="rf-avg">ligan ${pctShort(avg.homeWinRate)} / ${pctShort(avg.drawRate)} / ${pctShort(avg.awayWinRate)}</span></div>
   </div>`;
 }
 
-// ---- Domartabellen: sortering och filter (state per tabell, ritas om utan ny hämtning) ----
+/// ---- Domartabellen: säsong, sortering och filter (state per tabell, ritas om utan ny hämtning) ----
+// pack = ligans domarvy (/api/refleague) med rapport per säsong och alla matcher (domarens matchlista vid klick)
 const refTables = new Map();
 let refTableSeq = 0;
 const RF_SORT = {
@@ -1653,46 +1712,94 @@ const RF_FILTER = {
   red: { label: "Röda över snittet", ok: (x) => x.redVsAvg?.pct > 0 },
   pen: { label: "Straffar över snittet", ok: (x) => x.penaltyVsAvg?.pct > 0 },
 };
+// En säsong: alla domare med minst 1 match (tidigt på säsongen har ingen 5); flera säsonger: minst 5
+const rfDefaultMin = (season) => (season && season !== "all" ? 1 : REF_TABLE_MIN);
 
-function refTableBox(d, { current = null, teams = null, open = true } = {}) {
+function refTableBox(d, { current = null, teams = null, pack = null, season = null, onSeason = null } = {}) {
   const id = `rf${++refTableSeq}`;
-  refTables.set(id, { rows: d.referees || [], avg: d.leagueAvg || {}, current, teams, sort: "matches", dir: -1, filters: new Set(), min: REF_TABLE_MIN });
+  const s = pack?.reports ? (pack.reports[season] ? season : pack.season) : null;
+  refTables.set(id, {
+    rows: d.referees || [], avg: d.leagueAvg || {}, current, teams, teamRecs: d.teamRecs || null, teamNames: d.teams || null,
+    pack: s ? pack : null, season: s, onSeason, open: null,
+    sort: "matches", dir: -1, filters: new Set(), min: rfDefaultMin(s), minTouched: false,
+  });
   return `<div class="rf-tablebox" data-rfid="${id}">${refTableInner(id)}</div>`;
+}
+
+/** Tabellens rader och ligasnitt för vald säsong (lagens V-O-F från matchpanelen läggs på per domare). */
+function rfData(t) {
+  const rep = t.pack?.reports?.[t.season];
+  const rows = rep ? rep.referees : t.rows;
+  const withTeams = t.teamRecs ? rows.map((x) => ({ ...x, ...(t.teamRecs[x.key] || { home: null, away: null }) })) : rows;
+  return { rows: withTeams, avg: rep ? rep.leagueAvg : t.avg };
+}
+
+/** Domarens matcher i ligan under vald säsong: datum, match, resultat, kort och straffar. */
+function refGamesHtml(t, key) {
+  const rep = t.pack?.reports?.[t.season];
+  if (!rep || !t.pack.games) return `<p class="mx-note">Matchlistan finns inte för den här vyn.</p>`;
+  const list = t.pack.games.filter((g) => g.k === key && g.d >= rep.since && g.d <= rep.until);
+  if (!list.length) return `<p class="mx-note">Inga matcher den här säsongen.</p>`;
+  const names = [t.teamNames?.home, t.teamNames?.away].filter(Boolean);
+  const res = { h: 0, d: 0, a: 0 };
+  for (const g of list) res[g.hg > g.ag ? "h" : g.hg < g.ag ? "a" : "d"]++;
+  const pair = (a, b) => (a == null || b == null ? "—" : `${a}–${b}`);
+  const team = (n, won) => (won ? `<b>${escapeHtml(n)}</b>` : escapeHtml(n));
+  const rows = list.map((g) => {
+    const involved = names.some((n) => n === g.h || n === g.a);
+    const cls = [involved && "rf-involved", g.hg > g.ag && "rf-homewin"].filter(Boolean).join(" ");
+    return `<tr class="${cls}"><td>${escapeHtml(fmtDateShort(g.d))}</td>
+      <td>${team(g.h, g.hg > g.ag)} – ${team(g.a, g.ag > g.hg)}</td>
+      <td class="num"><b>${g.hg}–${g.ag}</b></td><td class="num">${pair(g.hy, g.ay)}</td><td class="num">${pair(g.hr, g.ar)}</td><td class="num">${pair(g.hp, g.ap)}</td></tr>`;
+  }).join("");
+  return `<div class="rf-games">
+    <p class="rf-games-sum"><b>${list.length} matcher</b> · <span class="rf-homewin-key">hemmaseger ${res.h}</span> · oavgjort ${res.d} · bortaseger ${res.a}${names.length ? ` · <span class="rf-involved-key">markerat</span> = matchens lag` : ""}</p>
+    <table class="rf-table rf-games-table"><thead><tr><th>Datum</th><th>Match</th><th class="num">Resultat</th><th class="num">Gula H–B</th><th class="num">Röda H–B</th><th class="num">Straffar H–B</th></tr></thead>
+    <tbody>${rows}</tbody></table></div>`;
 }
 
 function refTableInner(id) {
   const t = refTables.get(id);
-  const avg = t.avg;
+  const { rows: all, avg } = rfData(t);
   const cell = (v, c, d) => `${numSv(v, d)} ${c ? `<span class="rf-diff ${cmpClass(c)}">${pctSign(c.pct)}</span>` : ""}`;
   const teamCell = (x) => (x?.matches ? `<b>${recTxt(x)}</b> <small class="mx-sub">${pctOf(x.w, x.matches)} V</small>` : `<span class="mx-sub">—</span>`);
   const val = RF_SORT[t.sort].v;
-  const shown = t.rows
+  const shown = all
     .filter((x) => x.matches >= t.min || x.key === t.current)
     .filter((x) => [...t.filters].every((f) => RF_FILTER[f].ok(x)))
     .sort((a, b) => ((val(a) ?? -Infinity) - (val(b) ?? -Infinity)) * t.dir || b.matches - a.matches);
-  const hidden = t.rows.filter((x) => x.matches < t.min && x.key !== t.current).length;
+  const hidden = all.filter((x) => x.matches < t.min && x.key !== t.current).length;
+  const cols = t.teams ? 10 : 8;
   const th = (k, txt) => `<th class="num rf-sortable${t.sort === k ? " on" : ""}" data-rf-sort="${k}" title="Sortera på ${escapeHtml(RF_SORT[k].label.toLowerCase())}">${txt}${t.sort === k ? (t.dir < 0 ? " ▼" : " ▲") : ""}</th>`;
   const teamTh = t.teams ? `<th>${escapeHtml(t.teams.home)} V-O-F</th><th>${escapeHtml(t.teams.away)} V-O-F</th>` : "";
-  const rows = shown.map((x) => `<tr class="${x.key === t.current ? "rf-current" : ""}">
-      <td>${escapeHtml(x.referee)}</td><td class="num">${x.matches}</td>
+  const canOpen = !!t.pack?.games;
+  const rows = shown.map((x) => {
+    const open = canOpen && t.open === x.key;
+    const name = canOpen
+      ? `<button type="button" class="rf-ref" data-rf-ref="${escapeHtml(x.key)}" aria-expanded="${open}" title="Visa matcherna domaren dömt">${escapeHtml(x.referee)} <span class="rf-ref-caret" aria-hidden="true">${open ? "▾" : "▸"}</span></button>`
+      : escapeHtml(x.referee);
+    return `<tr class="${x.key === t.current ? "rf-current" : ""}${open ? " rf-open" : ""}">
+      <td>${name}</td><td class="num">${x.matches}</td>
       <td class="num">${x.yellowTotal ?? "—"}</td><td class="num">${cell(x.yellowPg, x.yellowVsAvg, 2)}</td>
-      <td class="num">${x.redTotal ?? "—"}</td><td class="num">${cell(x.redPg, x.redVsAvg, 2)}</td>
-      <td class="num">${x.penaltyTotal ?? "—"}</td><td class="num">${cell(x.penaltyPg, x.penaltyVsAvg, 2)}</td>
+      <td class="num">${x.redTotal ?? "—"}</td>
+      <td class="num">${x.penaltyTotal ?? "—"}</td>
       <td class="num">${cell(x.foulsPg, x.foulsVsAvg, 1)}</td>
       <td class="num">${pctShort(x.homeWinRate)}</td>
-      ${t.teams ? `<td>${teamCell(x.home)}</td><td>${teamCell(x.away)}</td>` : ""}</tr>`).join("");
-  const cols = t.teams ? 12 : 10;
+      ${t.teams ? `<td>${teamCell(x.home)}</td><td>${teamCell(x.away)}</td>` : ""}</tr>${open ? `<tr class="rf-games-row"><td colspan="${cols}">${refGamesHtml(t, x.key)}</td></tr>` : ""}`;
+  }).join("");
+  const seasonSel = Array.isArray(t.pack?.seasons) ? `<label class="rf-min rf-season">Säsong <select class="ds-select" data-rf-season>${t.pack.seasons.map((s) => `<option value="${escapeHtml(s.id)}"${t.season === s.id ? " selected" : ""}>${escapeHtml(s.id === t.pack.season ? `${s.label} (i år)` : s.label)}</option>`).join("")}</select></label>` : "";
   return `<div class="rf-controls">
+      ${seasonSel}
       <span class="tp-k">Sortera</span>${Object.entries(RF_SORT).map(([k, s]) => `<button type="button" class="rf-chip${t.sort === k ? " on" : ""}" data-rf-sort="${k}">${s.label}${t.sort === k ? (t.dir < 0 ? " ▼" : " ▲") : ""}</button>`).join("")}
       <span class="tp-k">Filter</span>${Object.entries(RF_FILTER).map(([k, f]) => `<button type="button" class="rf-chip${t.filters.has(k) ? " on" : ""}" data-rf-filter="${k}" aria-pressed="${t.filters.has(k)}">${f.label}</button>`).join("")}
       <label class="rf-min">Minst <select class="ds-select" data-rf-min>${[1, 5, 10, 20].map((n) => `<option value="${n}"${t.min === n ? " selected" : ""}>${n}</option>`).join("")}</select> matcher</label>
     </div>
     <div class="rf-table-wrap"><table class="rf-table">
-      <thead><tr><th>Domare</th>${th("matches", "Matcher")}<th class="num">Gula</th>${th("yellow", "Gula/m")}<th class="num">Röda</th>${th("red", "Röda/m")}<th class="num">Straffar</th>${th("pen", "Straffar/m")}${th("fouls", "Frisp./m")}${th("home", "Hemmaseger")}${teamTh}</tr></thead>
+      <thead><tr><th>Domare</th>${th("matches", "Matcher")}<th class="num">Gula</th>${th("yellow", "Gula/m")}<th class="num">Röda</th><th class="num">Straffar</th>${th("fouls", "Frisp./m")}${th("home", "Hemmaseger")}${teamTh}</tr></thead>
       <tbody>${rows || `<tr><td colspan="${cols}" class="mx-sub">Inga domare matchar filtret</td></tr>`}</tbody>
-      <tfoot><tr><td>Ligasnitt</td><td class="num">${avg.matches ?? "—"}</td><td class="num">${avg.yellowTotal ?? ""}</td><td class="num">${numSv(avg.yellowPg, 2)}</td><td class="num">${avg.redTotal ?? ""}</td><td class="num">${numSv(avg.redPg, 2)}</td><td class="num">${avg.penaltyTotal ?? ""}</td><td class="num">${numSv(avg.penaltyPg, 2)}</td><td class="num">${numSv(avg.foulsPg, 1)}</td><td class="num">${pctShort(avg.homeWinRate)}</td>${t.teams ? "<td></td><td></td>" : ""}</tr></tfoot>
+      <tfoot><tr><td>Ligasnitt</td><td class="num">${avg.matches ?? "—"}</td><td class="num">${avg.yellowTotal ?? ""}</td><td class="num">${numSv(avg.yellowPg, 2)}</td><td class="num">${avg.redTotal ?? ""}</td><td class="num">${avg.penaltyTotal ?? ""}</td><td class="num">${numSv(avg.foulsPg, 1)}</td><td class="num">${pctShort(avg.homeWinRate)}</td>${t.teams ? "<td></td><td></td>" : ""}</tr></tfoot>
     </table></div>
-    <p class="mx-note">${shown.length} domare visas${hidden ? ` · ${hidden} med färre än ${t.min} matcher döljs` : ""}${t.filters.size ? " · filter på" : ""}. Klicka på en kolumn för att sortera.</p>`;
+    <p class="mx-note">${shown.length} domare visas${hidden ? ` · ${hidden} med färre än ${t.min} matcher döljs` : ""}${t.filters.size ? " · filter på" : ""}. Klicka på en kolumn för att sortera${canOpen ? ", på en domare för att se matcherna hen dömt" : ""}.</p>`;
 }
 
 document.addEventListener("click", (e) => {
@@ -1702,6 +1809,7 @@ document.addEventListener("click", (e) => {
   if (!t) return;
   const s = e.target.closest("[data-rf-sort]");
   const f = e.target.closest("[data-rf-filter]");
+  const r = e.target.closest("[data-rf-ref]");
   if (s) {
     const k = s.dataset.rfSort;
     t.dir = t.sort === k ? -t.dir : -1;
@@ -1709,19 +1817,31 @@ document.addEventListener("click", (e) => {
   } else if (f) {
     const k = f.dataset.rfFilter;
     if (t.filters.has(k)) t.filters.delete(k); else t.filters.add(k);
+  } else if (r) {
+    t.open = t.open === r.dataset.rfRef ? null : r.dataset.rfRef;
   } else return;
   box.innerHTML = refTableInner(box.dataset.rfid);
 });
 document.addEventListener("change", (e) => {
-  const sel = e.target.closest("[data-rf-min]");
-  const box = sel?.closest(".rf-tablebox");
+  const box = e.target.closest(".rf-tablebox");
   const t = box && refTables.get(box.dataset.rfid);
   if (!t) return;
-  t.min = Number(sel.value);
+  const min = e.target.closest("[data-rf-min]");
+  const season = e.target.closest("[data-rf-season]");
+  if (min) {
+    t.min = Number(min.value);
+    t.minTouched = true;
+  } else if (season) {
+    t.season = season.value;
+    if (!t.minTouched) t.min = rfDefaultMin(t.season);
+    // Ligans domarvy: ligasnitt-rutorna och rubriken följer säsongen
+    t.onSeason?.(t.season, box);
+  } else return;
   box.innerHTML = refTableInner(box.dataset.rfid);
 });
 
-function refereeHtml(d) {
+// pack = ligans domarvy (/api/refleague): ger tabellen säsongsfilter och domarnas matchlistor
+function refereeHtml(d, pack = null) {
   const H = d.home, A = d.away, avg = d.leagueAvg || {};
   const lg = leagueName(d.league) || d.league;
   const r = d.referee;
@@ -1729,16 +1849,32 @@ function refereeHtml(d) {
   const head = r
     ? `<div class="mx-head"><div><span class="mx-k">Domare</span> <b class="rf-name">${escapeHtml(r.referee)}</b> <span class="mx-sub">${r.matches} dömda matcher (${r.otherLeagues ? "andra ligor, ny i ligan" : period})</span></div></div>
       ${refStatTiles(r, avg)}
-      <div class="rf-teams">${refTeamBox(H, r.home)}${refTeamBox(A, r.away)}</div>`
+      <h4 class="rf-h">Så har domaren dömt lagens matcher</h4>
+      ${refH2h(r)}
+      <div class="rf-teams">${refTeamBox(H, r.home, r.away?.team, d.league)}${refTeamBox(A, r.away, r.home?.team, d.league)}</div>`
     : `<div class="mx-head"><div><span class="mx-k">Domare</span> <b>inte tillsatt än</b> <span class="mx-sub">FotMob har domaren normalt 2–4 dagar före matchen. Nedan ligasnittet och lagens facit mot ligans alla domare.</span></div></div>
       ${refStatTiles(null, avg)}`;
   return `<div class="rf-wrap">
     ${head}
     <details class="rf-all"${r ? "" : " open"}><summary>Alla domare i ${escapeHtml(lg)}: kort, straffar, frisparkar och lagens facit</summary>
-      ${refTableBox(d, { current: r?.key || null, teams: { home: H, away: A } })}
+      ${refTableBox(d, { current: r?.key || null, teams: { home: H, away: A }, pack })}
     </details>
-    <div class="mx-note">Snitt: ${period} (England: football-data.co.uk, straffar och övriga ligor: FotMob). Lagens V-O-F: alla ligamatcher med domaren i historiken. Domarstatistiken påverkar inte tipset eller värdeomdömet.</div>
+    <div class="mx-note">Domarrutorna: ${period} (England: football-data.co.uk, straffar och övriga ligor: FotMob). Tabellen: vald säsong. Lagens V-O-F och matchlistor: alla ligamatcher med domaren i historiken. Domarstatistiken påverkar inte tipset eller värdeomdömet.</div>
   </div>`;
+}
+
+const apiErr = (body, fallback) => (body.error === "Okänd API-route" ? "GUI-servern kör en äldre version – starta om den (npm run gui) och ladda om sidan." : body.error || fallback);
+
+// Ligans domarvy (säsonger + matcher), delas av ligaraden och matchpanelen
+const refLeagueCache = new Map();
+async function getRefLeague(league) {
+  if (!refLeagueCache.has(league)) {
+    const res = await fetch(`/api/refleague?league=${encodeURIComponent(league)}`, { cache: "no-store" });
+    const body = await res.json();
+    if (!res.ok) throw new Error(apiErr(body, "Domarstatistiken misslyckades"));
+    refLeagueCache.set(league, body);
+  }
+  return refLeagueCache.get(league);
 }
 
 async function toggleReferee(btn) {
@@ -1752,10 +1888,13 @@ async function toggleReferee(btn) {
   box.innerHTML = `<p class="scan-empty">Hämtar domarstatistik…</p>`;
   try {
     const qs = new URLSearchParams({ league: btn.dataset.league, date: btn.dataset.date, home: btn.dataset.home, away: btn.dataset.away });
-    const res = await fetch(`/api/referees?${qs}`, { cache: "no-store" });
+    const [res, pack] = await Promise.all([
+      fetch(`/api/referees?${qs}`, { cache: "no-store" }),
+      getRefLeague(btn.dataset.league).catch(() => null), // utan säsongsdata: tabellen över tre säsonger som förut
+    ]);
     const body = await res.json();
-    if (!res.ok) throw new Error(body.error === "Okänd API-route" ? "GUI-servern kör en äldre version – starta om den (npm run gui) och ladda om sidan." : body.error || "Domarstatistiken misslyckades");
-    box.innerHTML = refereeHtml(body);
+    if (!res.ok) throw new Error(apiErr(body, "Domarstatistiken misslyckades"));
+    box.innerHTML = refereeHtml(body, pack);
     box.dataset.loaded = "1";
   } catch (e) {
     box.innerHTML = `<p class="scan-empty">${escapeHtml(e.message || e)}</p>`;
@@ -1763,13 +1902,20 @@ async function toggleReferee(btn) {
 }
 
 // ---- Ligans domarvy: knappen "Domare" sist i ligaraden ----
-const refLeagueCache = new Map();
 /** Vilken liga domarvyn gäller: vald liga, annars öppna gruppens högsta liga med domardata. */
 function refViewLeagues() {
   const g = state.leagueGroups.find((x) => x.id === state.openGroup) || state.leagueGroups.find((x) => x.leagues.includes(state.league));
   const present = presentLeagues();
   const ls = (g ? g.leagues : [state.league]).filter((l) => hasRefData(l) && (present.has(l) || l === state.league));
   return ls;
+}
+
+// Rubrik och ligasnitt för vald säsong (ritas om när säsongen byts i tabellen)
+function refLeagueSeasonHtml(d, season) {
+  const rep = d.reports?.[season] || d;
+  const s = (Array.isArray(d.seasons) ? d.seasons : []).find((x) => x.id === season);
+  const when = s ? (s.id === "all" ? s.label.toLowerCase() : `säsongen ${s.label}`) : `sedan ${seasonSv(d.since, d.calendar)}`;
+  return { sub: `${(rep.referees || []).length} domare · ligamatcher ${escapeHtml(when)}`, tiles: refStatTiles(null, rep.leagueAvg || {}) };
 }
 
 async function renderRefLeague() {
@@ -1784,27 +1930,35 @@ async function renderRefLeague() {
   const tabs = ls.length > 1 ? `<div class="rf-tabs">${ls.map((l) => `<button type="button" class="rf-chip${l === league ? " on" : ""}" data-ref-tab="${escapeHtml(l)}">${escapeHtml(leagueName(l))}</button>`).join("")}</div>` : "";
   host.innerHTML = `${tabs}<p class="scan-empty">Hämtar domare i ${escapeHtml(leagueName(league))}…</p>`;
   try {
-    if (!refLeagueCache.has(league)) {
-      const res = await fetch(`/api/refleague?league=${encodeURIComponent(league)}`, { cache: "no-store" });
-      const body = await res.json();
-      if (!res.ok) throw new Error(body.error === "Okänd API-route" ? "GUI-servern kör en äldre version – starta om den (npm run gui) och ladda om sidan." : body.error || "Domarstatistiken misslyckades");
-      refLeagueCache.set(league, body);
-    }
+    const d = await getRefLeague(league);
     if (state.refView.league !== league) return;
-    const d = refLeagueCache.get(league);
+    // Årets säsong som standard; valet sparas per liga medan sidan är öppen
+    const seasons = (state.refView.seasons ??= {});
+    const season = d.reports?.[seasons[league]] ? seasons[league] : d.season;
+    const cur = refLeagueSeasonHtml(d, season);
     host.innerHTML = `${tabs}<div class="rf-wrap">
-      <div class="mx-head"><div><span class="mx-k">Domare</span> <b class="rf-name">${escapeHtml(leagueName(league))}</b> <span class="mx-sub">${(d.referees || []).length} domare · ligamatcher sedan ${seasonSv(d.since, d.calendar)}</span></div>
+      <div class="mx-head"><div><span class="mx-k">Domare</span> <b class="rf-name">${escapeHtml(leagueName(league))}</b> <span class="mx-sub rf-league-sub">${cur.sub}</span></div>
         <button type="button" class="btn-ghost ds-btn ds-btn--secondary ds-btn--sm rf-close" data-ref-close>Stäng</button></div>
       ${refAppointments(d)}
       <h4 class="rf-h">Ligasnitt</h4>
-      ${refStatTiles(null, d.leagueAvg || {})}
-      ${refTableBox(d)}
+      <div class="rf-league-tiles">${cur.tiles}</div>
+      ${refTableBox(d, {
+        pack: d, season,
+        onSeason: (s, box) => {
+          seasons[league] = s;
+          const wrap = box.closest(".rf-wrap");
+          const x = refLeagueSeasonHtml(d, s);
+          wrap.querySelector(".rf-league-sub").innerHTML = x.sub;
+          wrap.querySelector(".rf-league-tiles").innerHTML = x.tiles;
+        },
+      })}
       <div class="mx-note">England: football-data.co.uk (straffar från FotMob), övriga ligor: FotMob. Straffar = dömda straffar (mål och missar), inte straffläggning.</div>
     </div>`;
   } catch (e) {
     host.innerHTML = `${tabs}<p class="scan-empty">${escapeHtml(e.message || e)}</p>`;
   }
 }
+
 
 // Tillsatta domare för kommande matcher: domarens facit mot båda lagen (5 raka = flagga) och domarens snitt
 function refAppointments(d) {
@@ -1822,14 +1976,12 @@ function refAppointments(d) {
       <td><b>${escapeHtml(m.home)}</b> – <b>${escapeHtml(m.away)}</b></td>
       <td>${escapeHtml(m.referee)}${m.profile ? ` <small class="mx-sub">${m.profile.matches} m</small>` : ""}</td>
       <td>${rec(m.homeRec)}</td><td>${rec(m.awayRec)}</td>
-      <td class="num">${m.profile ? `${numSv(m.profile.yellowPg, 2)}${dc(m.profile.yellowVsAvg)}` : "—"}</td>
-      <td class="num">${m.profile ? `${numSv(m.profile.redPg, 2)}${dc(m.profile.redVsAvg)}` : "—"}</td>
-      <td class="num">${m.profile ? `${numSv(m.profile.penaltyPg, 2)}${dc(m.profile.penaltyVsAvg)}` : "—"}</td></tr>`).join("");
+      <td class="num">${m.profile ? `${numSv(m.profile.yellowPg, 2)}${dc(m.profile.yellowVsAvg)}` : "—"}</td></tr>`).join("");
   return `<h4 class="rf-h">Kommande matcher med tillsatt domare (${list.length})</h4>
     <div class="rf-table-wrap"><table class="rf-table rf-appt">
-      <thead><tr><th>Avspark</th><th>Match</th><th>Domare</th><th>Hemmalaget mot domaren</th><th>Bortalaget mot domaren</th><th class="num">Gula/m</th><th class="num">Röda/m</th><th class="num">Straffar/m</th></tr></thead>
+      <thead><tr><th>Avspark</th><th>Match</th><th>Domare</th><th>Hemmalaget mot domaren</th><th>Bortalaget mot domaren</th><th class="num">Gula/m</th></tr></thead>
       <tbody>${rows}</tbody></table></div>
-    <p class="mx-note">V-O-F = lagets vinster, oavgjorda och förluster i ligamatcher med domaren. ⚑ = minst 5 raka segrar eller förluster med domaren.</p>`;
+    <p class="mx-note">V-O-F = lagets vinster, oavgjorda och förluster i ligamatcher med domaren. ⚑ = minst 5 raka segrar eller förluster med domaren. Gula/m: domarens snitt gula kort per match de senaste tre säsongerna.</p>`;
 }
 
 function toggleRefLeague() {

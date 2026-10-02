@@ -247,6 +247,46 @@ test('Oddset: knappen Domare bredvid Duellanalys visar domarstatistik för engel
   await expect(card.locator('.rf-all summary')).toContainText('Alla domare i');
   await expect(card.locator('.rf-table tfoot')).toContainText('Ligasnitt');
   await expect(card.locator('.rf-stats')).toContainText(/ligasnitt|ligan/i);
+  // Tabellen i matchpanelen har samma säsongsval (årets som standard) och klickbara domare
+  await expect(card.locator('.rf-all [data-rf-season] option:checked')).toContainText('(i år)');
+  expect(api.teamRecs).toBeTruthy();
+});
+
+test('Matchens domarpanel: domarens alla matcher med vardera laget, inbördes möten markeras', async ({ page }) => {
+  const dash = await (await fetch(base + '/api/dashboard')).json();
+  const eng = [...(dash.allCandidates || [])].find((t: any) => ['PL', 'CH', 'EL1'].includes(t.league));
+  test.skip(!eng, 'inga engelska matcher i tipsen just nu');
+  const games = (opp: string) => [
+    { date: '2026-09-01', league: eng.league, opp, home: true, score: '2-1', res: 'W', yc: 2 },
+    { date: '2026-03-01', league: eng.league, opp: 'Annat lag', home: false, score: '0-0', res: 'D', yc: null },
+    { date: '2025-11-01', league: eng.league, opp: 'Tredje laget', home: true, score: '0-1', res: 'L', yc: 1 },
+  ];
+  const side = (team: string, opp: string) => ({ team, matches: 3, record: { w: 1, d: 1, l: 1 }, streak: { res: 'W', n: 1 }, flag: null, yellowPg: 1.5, last: [], games: games(opp) });
+  await page.route('**/api/dashboard*', async (route) => {
+    const res = await route.fetch();
+    const body = await res.json();
+    body.bestUpcoming = [eng];
+    await route.fulfill({ response: res, json: body });
+  });
+  await page.route('**/api/referees?*', async (route) => {
+    const res = await route.fetch();
+    const body = await res.json();
+    body.teams = { home: 'Hemma', away: 'Borta' };
+    body.referee = { referee: 'Test Domare', key: 't domare', matches: 30, yellowPg: 3.5, otherLeagues: false, home: side('Hemma', 'Borta'), away: side('Borta', 'Hemma') };
+    await route.fulfill({ response: res, json: body });
+  });
+  await page.goto(base + '/tips');
+  const card = page.locator('.tip:has(.btn-referee)').first();
+  await expect(card).toBeVisible({ timeout: 30_000 });
+  await card.locator('.btn-referee').click();
+  const teams = card.locator('.rf-teams .rf-team');
+  await expect(teams).toHaveCount(2, { timeout: 30_000 });
+  await expect(teams.first().locator('.rf-teamgames summary')).toContainText('Alla 3 matcher med domaren');
+  await expect(teams.first().locator('.rf-teamgames tbody tr')).toHaveCount(3);
+  // Inbördes mötet (mot det andra laget) markeras och listas ovanför
+  await expect(teams.first().locator('tr.rf-involved')).toHaveCount(1);
+  await expect(teams.first().locator('tr.rf-involved')).toContainText('2-1');
+  await expect(card.locator('.rf-h2h')).toContainText('Inbördes med domaren');
 });
 
 test('Ligaraden: Domare sist i raden visar ligans domare, sortering och filter på gula/röda/straffar', async ({ page }) => {
@@ -261,7 +301,14 @@ test('Ligaraden: Domare sist i raden visar ligans domare, sortering och filter p
   await expect(view.locator('.rf-table')).toBeVisible({ timeout: 30_000 });
   await expect(view).toContainText('Ligasnitt');
   await expect(view.locator('.rf-stats')).toContainText('Straffar per match');
-  await expect(view.locator('thead')).toContainText('Straffar/m');
+  // 1 / X / 2 ska stå på en rad (ingen radbrytning i värdet)
+  const x12 = view.locator('.rf-stat-1x2 .rf-v');
+  const lh = await x12.evaluate((el) => parseFloat(getComputedStyle(el).lineHeight) || 24);
+  expect((await x12.boundingBox())!.height).toBeLessThan(lh * 1.5);
+  await expect(view.locator('thead')).toContainText('Straffar');
+  // Röda/m och Straffar/m är borttagna (ointressanta)
+  await expect(view.locator('thead')).not.toContainText('Röda/m');
+  await expect(view.locator('thead')).not.toContainText('Straffar/m');
   // Sortera på straffar: fallande, sedan stigande vid nytt klick
   await view.locator('.rf-chip[data-rf-sort="pen"]').click();
   await expect(view.locator('.rf-chip[data-rf-sort="pen"]')).toContainText('▼');
@@ -273,11 +320,60 @@ test('Ligaraden: Domare sist i raden visar ligans domare, sortering och filter p
   await expect(view.locator('.rf-chip[data-rf-filter="yellow"]')).toHaveAttribute('aria-pressed', 'true');
   expect(await view.locator('tbody tr').count()).toBeLessThanOrEqual(before);
   for (const txt of await view.locator('tbody tr td:nth-child(4) .rf-diff').allTextContents()) expect(txt.startsWith('+')).toBeTruthy();
+  await view.locator('.rf-chip[data-rf-filter="yellow"]').click();
+
+  // Säsong: årets som standard, äldre valbara – rubrik, ligasnitt och tabell följer valet
+  const season = view.locator('[data-rf-season]');
+  await expect(season.locator('option:checked')).toContainText('(i år)');
+  await expect(view.locator('.rf-league-sub')).toContainText('säsongen');
+  const nowAvg = await view.locator('tfoot td').nth(1).textContent();
+  const prevId = await season.locator('option').nth(1).getAttribute('value');
+  await season.selectOption(prevId!);
+  await expect(view.locator('.rf-league-sub')).toContainText(await season.locator('option:checked').textContent() as string);
+  expect(Number(await view.locator('tfoot td').nth(1).textContent())).toBeGreaterThan(Number(nowAvg));
+  // Sorteringen ligger kvar när säsongen byts
+  await expect(view.locator('.rf-chip[data-rf-sort="pen"]')).toContainText('▲');
+  await season.selectOption('all');
+  await expect(view.locator('.rf-league-sub')).toContainText('senaste 3 säsongerna');
+  await season.selectOption(prevId!);
+
+  // Klick på domaren: alla matcher hen dömt den säsongen, med resultat
+  const ref = view.locator('.rf-ref').first();
+  const n = Number(await view.locator('tbody tr:has(.rf-ref) td:nth-child(2)').first().textContent());
+  await ref.click();
+  await expect(ref).toHaveAttribute('aria-expanded', 'true');
+  const games = view.locator('.rf-games-row .rf-games-table tbody tr');
+  await expect(games).toHaveCount(n);
+  await expect(games.first().locator('td:nth-child(3)')).toHaveText(/^\d+–\d+$/);
+  await expect(view.locator('.rf-games-sum')).toContainText(`${n} matcher`);
+  // Hemmasegrar markeras: lika många markerade rader som siffran i sammanfattningen
+  const homeWins = Number((await view.locator('.rf-homewin-key').textContent())!.match(/\d+/)![0]);
+  await expect(view.locator('.rf-games-row tr.rf-homewin')).toHaveCount(homeWins);
+  await ref.click();
+  await expect(view.locator('.rf-games-row')).toHaveCount(0);
   // Byt liga i vyn och stäng
   await view.locator('[data-ref-tab="CH"]').click();
   await expect(view.locator('.rf-name')).toContainText('Championship', { timeout: 30_000 });
   await view.locator('[data-ref-close]').click();
   await expect(view).toBeHidden();
+});
+
+test('Ligans domarvy kraschar inte om servern skickar gamla svaret (seasons som tal)', async ({ page }) => {
+  // En gammal, ej omstartad server gav seasons: 3 och inga reports -> "(d.seasons || []).find is not a function"
+  await page.route('**/api/refleague?*', async (route) => {
+    const res = await route.fetch();
+    const body = await res.json();
+    await route.fulfill({ response: res, json: { ...body, seasons: 3, reports: undefined } });
+  });
+  await page.goto(base + '/tips');
+  await page.evaluate(() => localStorage.clear());
+  await page.goto(base + '/tips');
+  await page.click('.filter-pill[data-group="england"]');
+  await page.locator('#league-sub .filter-pill').last().click();
+  const view = page.locator('#ref-league');
+  await expect(view.locator('.rf-table')).toBeVisible({ timeout: 30_000 });
+  await expect(view).not.toContainText('is not a function');
+  await expect(view.locator('[data-rf-season]')).toHaveCount(0);
 });
 
 test('Alla kandidater fälls ut när man går in i en liga', async ({ page }) => {

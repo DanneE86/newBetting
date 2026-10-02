@@ -57,6 +57,10 @@ export default defineConfig({
       testMatch: /gui-sok-startelva\.spec\.ts/,
     },
     {
+      name: 'sidor-laddar',
+      testMatch: /sidor-laddar\.spec\.ts/,
+    },
+    {
       name: 'design',
       testMatch: /design-tokens\.spec\.ts/,
     },

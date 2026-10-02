@@ -1055,6 +1055,46 @@ test.describe('referee-streaks: domarstatistik per liga (panelen Domare)', () =>
     const nu = refereePanel({ matches: rows, index: idx, league: 'PL', home: 'Arsenal', away: 'Leeds', referee: 'Sam Allison', today: '2026-10-01' });
     expect(nu.referee).toMatchObject({ otherLeagues: true, matches: 1, yellowPg: 4, foulsPg: 24 });
   });
+
+  test('refereeLeagueSeasons: årets säsong som standard, äldre säsonger valbara, matcherna för domarens lista', async () => {
+    const { refereeLeagueSeasons, refereeSeasons } = await lib('referee-streaks.mjs');
+    const s = refereeSeasons('PL', '2026-10-01');
+    expect(s.current).toBe('2026');
+    expect(s.seasons.map((x: any) => x.id)).toEqual(['2026', '2025', '2024', '2023', '2022', 'all']);
+    expect(s.seasons[0]).toMatchObject({ label: '2026/27', since: '2026-07-01', until: '2027-06-30' });
+    expect(refereeSeasons('AS', '2026-10-01').seasons[1]).toMatchObject({ id: '2025', label: '2025', since: '2025-01-01', until: '2025-12-31' });
+
+    const p = refereeLeagueSeasons(rows, 'PL', { today: '2026-10-01' });
+    // Toppnivån = innevarande säsong: bara M Oliver har dömt 2026/27
+    expect(p.season).toBe('2026');
+    expect(p.referees.map((r: any) => r.referee)).toEqual(['M Oliver']);
+    expect(p.leagueAvg.matches).toBe(1);
+    // Förra säsongen: A Taylor 2 matcher, M Oliver 1 – snitt mot den säsongens liga
+    const prev = p.reports['2025'];
+    expect(prev.leagueAvg.matches).toBe(3);
+    expect(prev.referees.find((r: any) => r.key === 'a taylor')).toMatchObject({ matches: 2, yellowVsAvg: { pct: 28 } }); // 6 mot 4,67
+    // Tre säsonger = samma som den gamla rapporten; säsonger utan matcher visas inte i valet
+    expect(p.reports.all.leagueAvg.matches).toBe(4);
+    expect(p.seasons.map((x: any) => x.id)).toEqual(['2026', '2025', 'all']);
+    // Matcherna: nyast först, domarnyckel, kort och resultat (H Webb 2020 ligger utanför fem säsonger, CH-matchen är annan liga)
+    expect(p.games.map((g: any) => g.d)).toEqual(['2026-08-20', '2025-10-10', '2025-09-10', '2025-08-10']);
+    expect(p.games[0]).toMatchObject({ h: 'Arsenal', a: 'Chelsea', hg: 3, ag: 1, k: 'm oliver', hy: 1, ay: 1, hr: 0, ar: 0 });
+  });
+
+  test('refereePanel: domarens alla matcher med vardera laget och lagens facit mot alla säsongers domare', async () => {
+    const { refereePanel, buildRefIndex } = await lib('referee-streaks.mjs');
+    const idx = buildRefIndex(rows);
+    const p = refereePanel({ matches: rows, index: idx, league: 'PL', home: 'Arsenal', away: 'Leeds United', referee: 'Anthony Taylor', today: '2026-10-01' });
+    // Nyast först, ur lagets perspektiv: inbördes mötena syns för båda lagen
+    expect(p.referee.home.games).toEqual([
+      { date: '2025-09-10', league: 'PL', opp: 'Leeds', home: false, score: '1-1', res: 'D', yc: 3 },
+      { date: '2025-08-10', league: 'PL', opp: 'Leeds', home: true, score: '2-0', res: 'W', yc: 3 },
+    ]);
+    expect(p.referee.away.games.map((g: any) => `${g.score} ${g.res}`)).toEqual(['1-1 D', '0-2 L']);
+    expect(p.teamRecs['m oliver']).toEqual({ home: { matches: 1, w: 1, d: 0, l: 0 }, away: { matches: 1, w: 1, d: 0, l: 0 } });
+    expect(p.teamRecs['a taylor'].home).toEqual({ matches: 2, w: 1, d: 1, l: 0 });
+    expect(p.teamRecs['h webb']).toBeUndefined(); // 2020: utanför säsongsvalet
+  });
 });
 
 test.describe('referee-streaks: FotMob, straffar och alla ligor', () => {

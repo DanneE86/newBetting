@@ -3,18 +3,18 @@
   /* Lagfärger: byggda på --color-brand (röd) och --color-info (blå). Hemmalaget tar det mörkare röda steget så att vit
      text på tröjan når 4,5:1. Båda har minst 3:1 mot vit yta och skiljer sig tydligt åt. */
   --se-home: var(--color-brand-hover);
-  --se-away: var(--color-info);
+  --se-away: var(--color-info-solid);
   --se-home-bg: color-mix(in srgb, var(--se-home) 12%, var(--color-surface));
   --se-away-bg: color-mix(in srgb, var(--se-away) 12%, var(--color-surface));
   /* Text i bortalagets märke: mörkare blått så att det når 4,5:1 mot den ljusblå bakgrunden */
   --se-away-text: color-mix(in srgb, var(--color-info) 75%, var(--color-text));
 
   /* Planen är en domänbild och får vara grön. Gräset bygger på --color-success så att vit text på planen når 4,5:1. */
-  --se-grass: var(--color-success);
-  --se-grass-2: color-mix(in srgb, var(--color-success) 88%, var(--color-text));
-  --se-chalk: color-mix(in srgb, var(--color-surface) 45%, transparent);
+  --se-grass: var(--color-success-solid);
+  --se-grass-2: color-mix(in srgb, var(--color-success-solid) 88%, var(--ss-black));
+  --se-chalk: color-mix(in srgb, var(--ss-white) 45%, transparent);
   --se-on-grass: var(--color-text-on-brand);
-  --se-shadow-on-grass: 0 1px 2px var(--color-text);
+  --se-shadow-on-grass: 0 1px 2px var(--ss-black);
 }
 
 .btn-startelva {
@@ -157,7 +157,7 @@
 .se-duel:focus-visible { outline: 2px solid var(--focus-ring-color); outline-offset: 2px; }
 .se-duel-n { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .se-badge { display: inline-flex; align-items: center; flex: none; padding: 2px var(--space-2); border-radius: var(--radius-pill); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); line-height: var(--line-height-tight); white-space: nowrap; }
-.se-badge.se-home { background: var(--se-home-bg); color: var(--se-home); }
+.se-badge.se-home { background: var(--se-home-bg); color: var(--color-brand-text); }
 .se-badge.se-away { background: var(--se-away-bg); color: var(--se-away-text); }
 .se-badge.se-even { background: var(--color-surface-sunken); color: var(--color-text); }
 
@@ -207,7 +207,7 @@
 .se-v .se-pct { display: block; margin: 2px 0 0; }
 .se-bar { display: block; height: 0.375rem; margin-top: var(--space-1); border-radius: var(--radius-pill); background: var(--color-surface-sunken); overflow: hidden; }
 .se-bar i { display: block; height: 100%; background: var(--color-text-muted); }
-.se-v.is-better .se-bar i { background: var(--color-success); }
+.se-v.is-better .se-bar i { background: var(--color-success-solid); }
 
 .se-success { list-style: none; margin: var(--space-2) 0 0; padding: 0; font-size: var(--font-size-sm); }
 .se-success li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 0 var(--space-2); padding: var(--space-1) 0; border-top: 1px solid var(--color-border); }
@@ -215,7 +215,7 @@
 .se-s-v { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
 .se-s-v small { color: var(--color-text-muted); font-size: var(--font-size-xs); }
 .se-bar-s { grid-column: 1 / -1; margin-top: 2px; }
-.se-bar-s i { background: var(--color-success); }
+.se-bar-s i { background: var(--color-success-solid); }
 
 .se-recent { display: flex; flex-wrap: wrap; gap: var(--space-1); }
 .se-m { min-width: 2rem; text-align: center; padding: 2px var(--space-2); border-radius: var(--radius-sm); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); background: var(--color-surface-sunken); color: var(--color-text); }

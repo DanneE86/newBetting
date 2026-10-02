@@ -80,9 +80,11 @@ async function refereeLeague({ league }) {
   const rs = await import(new URL("../scripts/lib/referee-streaks.mjs", import.meta.url).href);
   const ref = await refereeData();
   if (!rs.hasRefereeData(ref.matches, league)) return null;
-  const report = rs.refereeLeagueReport(ref.matches, league);
+  // Arets sasong som standard, aldre sasonger valbara (reports per sasong + matcherna for domarens matchlista)
+  const report = rs.refereeLeagueSeasons(ref.matches, league);
   const upcoming = readJson("data/open/referees_upcoming.json")?.matches || [];
-  return { ...report, appointments: rs.leagueAppointments(ref.index, report, upcoming, league) };
+  // Kommande matcher: domarens snitt over de senaste tre sasongerna (stabilare an bara i ar)
+  return { ...report, appointments: rs.leagueAppointments(ref.index, report.reports.all, upcoming, league) };
 }
 
 /** Ligor med domardata (flikarna i ligans domarvy). */
