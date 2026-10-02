@@ -18,7 +18,13 @@ const UTD_MIN_B = 50000, PAYOUT_BAND_B = 75 / 50;
 // (scope "C" eller "all") låses där; "both" = A och B.
 // Samma regler som A (4-2-2, färgfönster, högst 4 spikar, skräll- och favoritregeln) och minst 30 000 kr för 13 rätt.
 const BUDGET_C = { min: 700, max: 850 };
-const UTD_MIN_C = 30000;
+// C är också ett risksystem (användaren 2026-10-02 kväll: "gör om C, mer likt B, 50-75k som gräns där också")
+const UTD_MIN_C = 50000;
+// Kupong C är skrällsystemet (användaren 2026-10-02 kväll: "C är inte skräll, max vinst är 300k typ"): högsta raden ska ge
+// minst 1 miljon. Röd 2–6 och rött på allt fler matcher (6, 7 … 10) tills högsta raden når 1 miljon – 50 000–75 000 kr
+// gäller fortfarande först. Stryktipset 4973: rött på 8 matcher gav högsta rad 1,4 milj (14 rader över 1 milj), gränsen
+// 73 800 kr, chans 13 rätt 1 på 599 (mot 1 på 261 med rött på 6). Går 1 miljon inte: den med högst högsta rad.
+const RISK_C = { redRules: [[2, 6]], minReds: [6, 7, 8, 9, 10], maxRowMin: 1e6 };
 // Kupong B mot A (användarens regel 2026-10-02, A är huvudsystemet): aldrig exakt samma tecken på samma match – varken spik,
 // halv- eller helgardering. Släpps aldrig. Bara B:s egna krav får ge samma tecken som A.
 const GC_TURNOVER = { stryktipset: 25e6, europatipset: 1e7 };
@@ -752,6 +758,51 @@ function buildWithLadderRules(events, forced, base, budget, exclude, { avoid = n
   return null;
 }
 
+// Risksystemen B och C (användaren 2026-10-02 kväll): röd 1–4/2–4, rött på minst MIN_RED_B matcher, utdelning
+// base.payoutMin x PAYOUT_BAND_B (50 000–75 000 kr) och alltid en skrällspik. Gränsen går före risken (gränsen "får inte
+// röras"): röd 1–4/2–4 gav för många rader över taket i 21 av 107 omgångar. Ordning: skrällspik på 35–47 % (risk, sedan
+// röd 1–3), sedan nästa skrällkandidat i tur (skrallQueue, "saknas aldrig") på samma sätt, sist utan skrällspik – första som
+// håller gränsen. rules.redFallback = röd 1–3, rules.skrallNext = kandidaten i tur, rules.skrallMissing = ingen skrällspik.
+// Håller inget gränsen blir det det första som gick. avoidSets = A:s grundrad som B inte får upprepa (C: null).
+// riskC = RISK_C (kupong C): röd 2–6 och rött på allt fler matcher tills högsta raden når maxRowMin (rules.maxRowPayout)
+function buildRisk(name, events, forced, base, budget, exclude, opts, avoidSets, riskC = null) {
+  if (riskC) {
+    let top = null;
+    for (const mr of riskC.minReds) {
+      const r = buildRiskOnce(name, events, forced, { ...base, minRed: mr }, budget, exclude, opts, avoidSets, riskC.redRules);
+      if (!r) continue;
+      const maxRow = Math.max(...r.reduced.rowReal);
+      r.reduced = { ...r.reduced, rules: { ...r.reduced.rules, maxRowPayout: Math.round(maxRow), minRedMatches: mr, ...(maxRow >= riskC.maxRowMin ? {} : { maxRowShort: true }) } };
+      const holds = r.reduced.rules.payoutExact === true;
+      if (holds && maxRow >= riskC.maxRowMin) return r;
+      if (!top || (holds && top.reduced.rules.payoutExact !== true) || (holds === (top.reduced.rules.payoutExact === true) && maxRow > top.reduced.rules.maxRowPayout)) top = r;
+    }
+    if (top?.reduced.rules.maxRowShort) top.relaxed.push(`högsta raden blev ${top.reduced.rules.maxRowPayout.toLocaleString("sv-SE")} kr – 1 miljon gick inte att nå med 50 000–75 000 kr`);
+    return top;
+  }
+  return buildRiskOnce(name, events, forced, base, budget, exclude, opts, avoidSets, RED_RULES_B);
+}
+function buildRiskOnce(name, events, forced, base, budget, exclude, opts, avoidSets, riskRed) {
+  const b0 = { minRed: MIN_RED_B, ...base, payoutBand: PAYOUT_BAND_B };
+  const txt = `${Math.round(b0.payoutMin).toLocaleString("sv-SE")}–${Math.round(b0.payoutMin * PAYOUT_BAND_B).toLocaleString("sv-SE")} kr`;
+  const pc = (x) => `${Math.round(x * 100)} %`;
+  const queue = skrallQueue(events, avoidSets, forced).slice(0, SKRALL_NEXT_TRIES);
+  const steps = [null, ...queue].flatMap((c) => [[riskRed, SKRALL_MIN_B, c], [null, SKRALL_MIN_B, c]]).concat([[riskRed, 0, null], [null, 0, null]]);
+  let best = null;
+  for (const [redRulesX, sk, c] of steps) {
+    const r = buildWithLadder(events, forced, { ...b0, redRules: redRulesX, skrallMin: sk, extraSkrall: c ? new Set([`${c.i}:${c.k}`]) : null }, budget, exclude, opts);
+    if (!r) continue;
+    r.reduced = { ...r.reduced, rules: { ...r.reduced.rules, payoutBand: PAYOUT_BAND_B, ...(redRulesX ? {} : { redFallback: true }), ...(sk ? {} : { skrallMissing: true }),
+      ...(c ? { skrallNext: { match: c.i + 1, sign: SIGNS[c.k], p: Math.round(c.p * 1000) / 1000, folk: Math.round(c.folk * 1000) / 1000 } } : {}) } };
+    if (!redRulesX) r.relaxed.push(`${txt} gick inte med röd ${riskRed.map((x) => x.join("–")).join(" eller ")} – ${name} fick röd 1–3`);
+    if (c) r.relaxed.push(`ingen skrällspik på 35–47 % gick i ${name} – ${name} tog nästa på tur: match ${c.i + 1} ${SIGNS[c.k]} (${pc(c.p)}, folket ${pc(c.folk)})`);
+    if (!sk) r.relaxed.push(`ingen skrällspik (runt 40 %) gick att få in i ${name}`);
+    if (!best) best = r;
+    if (r.reduced.rules.payoutExact === true) { best = r; break; }
+  }
+  return best;
+}
+
 // Krav från webben: { signs: "1X", scope } (äldre sparade spikar: { sign: "1", scope }) -> sorterade teckenindex
 export function kravSigns(k) {
   const txt = k?.signs ?? k?.sign ?? "";
@@ -764,6 +815,7 @@ export function kravSigns(k) {
  * krav: { [eventNumber]: { signs: "1" | "1X" | "X2" | "12" | "1X2" | ..., scope: "both" | "A" | "B" | "C" | "all" } }
  * "both" = A och B, "all" = A, B och C.
  * A = bästa systemet med A:s krav (350–400 kr, spelets utdelningsgräns).
+ * C = skrällsystemet (700–850 kr, 50 000–75 000 kr, röd 2–6, högsta rad minst 1 miljon), fritt från A och B.
  * B = risksystemet med B:s krav: röd 1–4 eller 2–4, minst 30 000 kr för 13 rätt utan tak, teckenregler 3-3-3, aldrig samma tecken som A på någon match
  *     (inte ens spiken), valt så att det täcker så mycket som möjligt av det A saknar. Alla kuponger har 2–4 spikar.
  */
@@ -795,28 +847,8 @@ export function generateCoupons(p, krav) {
     system: sys,
   });
   const a = buildWithLadder(events, fA, base, BUDGET, null);
-  const baseB = { ...base, payoutMin: Math.max(UTD_MIN_B, base.payoutMin), payoutBand: PAYOUT_BAND_B, minRed: MIN_RED_B };
-  const optsB = { avoid: a?.system.sets ?? null, payoutLadder: [1], signLadder: SIGN_LADDER_B };
-  // Gränsen går före risken (användaren 2026-10-02: gränsen "får inte röras"): röd 1–4/2–4 gav för många rader över taket i
-  // 21 av 107 omgångar. Ordning: skrällspik på 35–47 % (risk, sedan röd 1–3), sedan nästa skrällkandidat i tur (skrallQueue,
-  // "saknas aldrig") på samma sätt, sist utan skrällspik – första som håller gränsen. rules.redFallback = röd 1–3,
-  // rules.skrallNext = kandidaten i tur, rules.skrallMissing = ingen skrällspik. Håller inget gränsen blir det det första som gick.
-  const bTxt = `${Math.round(baseB.payoutMin).toLocaleString("sv-SE")}–${Math.round(baseB.payoutMin * PAYOUT_BAND_B).toLocaleString("sv-SE")} kr`;
-  const pc = (x) => `${Math.round(x * 100)} %`;
-  const queue = skrallQueue(events, a?.system.sets ?? null, fB).slice(0, SKRALL_NEXT_TRIES);
-  const steps = [null, ...queue].flatMap((c) => [[RED_RULES_B, SKRALL_MIN_B, c], [null, SKRALL_MIN_B, c]]).concat([[RED_RULES_B, 0, null], [null, 0, null]]);
-  let b = null;
-  for (const [redRulesB, sk, c] of steps) {
-    const r = buildWithLadder(events, fB, { ...baseB, redRules: redRulesB, skrallMin: sk, extraSkrall: c ? new Set([`${c.i}:${c.k}`]) : null }, BUDGET, a ? new Set(a.reduced.rowList) : null, optsB);
-    if (!r) continue;
-    r.reduced = { ...r.reduced, rules: { ...r.reduced.rules, payoutBand: PAYOUT_BAND_B, ...(redRulesB ? {} : { redFallback: true }), ...(sk ? {} : { skrallMissing: true }),
-      ...(c ? { skrallNext: { match: c.i + 1, sign: SIGNS[c.k], p: Math.round(c.p * 1000) / 1000, folk: Math.round(c.folk * 1000) / 1000 } } : {}) } };
-    if (!redRulesB) r.relaxed.push(`${bTxt} gick inte med röd 1–4 eller 2–4 – B fick röd 1–3`);
-    if (c) r.relaxed.push(`ingen skrällspik på 35–47 % gick i B – B tog nästa på tur: match ${c.i + 1} ${SIGNS[c.k]} (${pc(c.p)}, folket ${pc(c.folk)})`);
-    if (!sk) r.relaxed.push("ingen skrällspik (runt 40 %) gick att få in i B");
-    if (!b) b = r;
-    if (r.reduced.rules.payoutExact === true) { b = r; break; }
-  }
+  const b = buildRisk("B", events, fB, { ...base, payoutMin: Math.max(UTD_MIN_B, base.payoutMin) }, BUDGET, a ? new Set(a.reduced.rowList) : null,
+    { avoid: a?.system.sets ?? null, payoutLadder: [1], signLadder: SIGN_LADDER_B }, a?.system.sets ?? null);
   const A = a && finish(a, "A", fA), B = b && finish(b, "B", fB);
   // A+B tillsammans: gemensamma rader och chansen att någon av kupongerna tar 13 rätt
   let overlap = 0, unionHit = A ? A.hitAll : 0;
@@ -824,10 +856,12 @@ export function generateCoupons(p, krav) {
     const setA = new Set(A?.rowList || []);
     B.rowList.forEach((row, i) => { if (setA.has(row)) overlap++; else unionHit += B.rowP[i]; });
   }
-  // Kupong C: fri från A och B, bara C:s egna krav
+  // Kupong C: skrällsystemet (röd 2–6, rött på 6–10 matcher tills högsta rad >= 1 milj, 50 000–75 000 kr, skrällspik),
+  // fri från A och B, bara C:s egna krav
   const fC = forcedFor("C");
   const signC = SIGN_MIN_C_BY_PRODUCT[p.product] || SIGN_MIN;
-  const c = buildWithLadder(events, fC, { ...base, payoutMin: Math.max(UTD_MIN_C, base.payoutMin) }, BUDGET_C, null, { payoutLadder: [1], signLadder: [signC, ...SIGN_LADDER.filter((x) => x.join() !== signC.join() && x.every((v, k) => v <= signC[k]))] });
+  const c = buildRisk("C", events, fC, { ...base, payoutMin: Math.max(UTD_MIN_C, base.payoutMin) }, BUDGET_C, null,
+    { payoutLadder: [1], signLadder: [signC, ...SIGN_LADDER.filter((x) => x.join() !== signC.join() && x.every((v, k) => v <= signC[k]))] }, null, RISK_C);
   const C = c && finish(c, "C", fC);
   return { A, B, C, overlap, unionHit };
 }

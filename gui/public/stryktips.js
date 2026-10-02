@@ -761,7 +761,7 @@ function couponCard(c, label, p) {
   // A och B är rekommendationen och framhävs; C är ett valfritt extra system och visas dämpat
   const cls = label === "C" ? "sb-coupon is-extra" : "sb-coupon is-main";
   const tag = label === "C" ? `<span class="sb-coupon-tag extra">Extra · valfri</span>` : `<span class="sb-coupon-tag">Rekommenderad</span>`;
-  if (!c) return `<div class="${cls} ds-card">${tag}<h3>Kupong ${label}</h3><p class="st-note bad ds-notice ds-notice--danger">${label === "C" ? "Gick inte att bygga kupong C (700–850 kr, minst 30 000 kr för 13 rätt)" : `Gick inte att bygga en kupong med de här kraven${label === "B" ? " (B kräver minst 30 000 kr för 13 rätt och en annan grundrad än A)" : ""}`}.</p></div>`;
+  if (!c) return `<div class="${cls} ds-card">${tag}<h3>Kupong ${label}</h3><p class="st-note bad ds-notice ds-notice--danger">${label === "C" ? "Gick inte att bygga kupong C (risksystem: 700–850 kr, 50 000–75 000 kr för 13 rätt)" : `Gick inte att bygga en kupong med de här kraven${label === "B" ? " (B är risksystemet: 50 000–75 000 kr för 13 rätt och en annan grundrad än A)" : ""}`}.</p></div>`;
   const krFmt = (x) => Math.round(x).toLocaleString("sv-SE");
   const r = c.rules;
   const locked = c.picks.filter((x) => x.locked).length;

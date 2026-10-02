@@ -50,7 +50,13 @@ const BUDGET = { min: 350, max: 400 }; // kr per omgang (rader x radpris)
 // samma regler som A. Byggs aven i webben (gui/public/stryk-engine.js, med krav som galler C). Env for backtest:
 // STRYK_C=0 stanger av, STRYK_C_BUDGET="700,850", STRYK_C_UTD=30000, STRYK_SIGN_C=4-2-2, STRYK_C_COLOR=dyn|free.
 const BUDGET_C = (() => { const [min, max] = (process.env.STRYK_C_BUDGET || '700,850').split(',').map(Number); return { min, max }; })();
-const UTD_MIN_C = Number(process.env.STRYK_C_UTD ?? 30000);
+// C ar ocksa ett risksystem (anvandaren 2026-10-02 kvall: "gor om C, mer likt B, 50-75k som grans dar ocksa")
+const UTD_MIN_C = Number(process.env.STRYK_C_UTD ?? 50000);
+// Kupong C ar skrallsystemet (anvandaren 2026-10-02 kvall: "C ar inte skrall, max vinst ar 300k typ"): hogsta raden ska ge
+// minst 1 miljon. Rod 2-6 och rott pa allt fler matcher (6, 7 ... 10) tills hogsta raden nar 1 miljon - 50 000-75 000 kr
+// galler fortfarande forst. Stryktipset 4973: rott pa 8 matcher gav hogsta rad 1,4 milj (14 rader over 1 milj), gransen
+// 73 800 kr, chans 13 ratt 1 pa 599 (mot 1 pa 261 med rott pa 6). Gar 1 miljon inte: den med hogst hogsta rad.
+const RISK_C = { redRules: [[2, 6]], minReds: [6, 7, 8, 9, 10], maxRowMin: 1e6 };
 const C_COLOR = process.env.STRYK_C_COLOR || 'dyn';
 const COLOR = { green: 0.45, red: 0.25 }; // folkets streck: gron >= 45 %, rod 25 % eller lagre (anvandaren 2026-10-02, hela procent), annars gul
 // Skrall (rott tecken) i en gardering far finnas pa hogst 85 % av kupongens rader (anvandarens regel 2026-09-29).
@@ -705,6 +711,43 @@ function bestWithSpikes(events, spikMin, setsA, opts, exclude = null) {
   skrallMin = opts.skrallMin || 0;
   extraSkrall = opts.extraSkrall || new Set();
   try { return bestWithSpikesRules(events, spikMin, setsA, opts, exclude); } finally { [redRules, skrallMin, extraSkrall, minRed] = prev; }
+}
+// Risksystemen B och C (anvandaren 2026-10-02 kvall): rod 1-4/2-4, rott pa minst MIN_RED_B matcher, utdelning
+// opts.payoutMin x PAYOUT_BAND_B (50 000-75 000 kr) och alltid en skrallspik. Gransen gar fore risken (gransen "far inte
+// roras"): rod 1-4/2-4 gav for manga rader over taket i 21 av 107 omgangar. Ordning: skrallspik pa 35-47 % (risk, sedan
+// rod 1-3), sedan nasta skrallkandidat i tur (skrallQueue, "saknas aldrig") pa samma satt, sist utan skrallspik - forsta som
+// haller gransen. rules.redFallback = rod 1-3, rules.skrallNext = kandidaten i tur, rules.skrallMissing = ingen skrallspik.
+// Haller inget gransen blir det det forsta som gick. setsA = A:s grundrad som B inte far upprepa (C: null).
+// riskC = RISK_C (kupong C): rod 2-6 och rott pa allt fler matcher tills hogsta raden nar maxRowMin (rules.maxRowPayout)
+function bestRisk(events, spikMin, setsA, opts, exclude = null, riskC = null) {
+  if (riskC) {
+    let top = null;
+    for (const mr of riskC.minReds) {
+      const r = bestRiskOnce(events, spikMin, setsA, { ...opts, minRed: mr }, exclude, riskC.redRules);
+      if (!r) continue;
+      const maxRow = Math.max(...r.reduced.rowReal);
+      r.reduced = { ...r.reduced, rules: { ...r.reduced.rules, maxRowPayout: Math.round(maxRow), minRedMatches: mr, ...(maxRow >= riskC.maxRowMin ? {} : { maxRowShort: true }) } };
+      const holds = r.reduced.rules.payoutExact === true;
+      if (holds && maxRow >= riskC.maxRowMin) return r;
+      if (!top || (holds && top.reduced.rules.payoutExact !== true) || (holds === (top.reduced.rules.payoutExact === true) && maxRow > top.reduced.rules.maxRowPayout)) top = r;
+    }
+    return top;
+  }
+  return bestRiskOnce(events, spikMin, setsA, opts, exclude, RED_RULES_B);
+}
+function bestRiskOnce(events, spikMin, setsA, opts, exclude, riskRed) {
+  const queue = skrallQueue(events, setsA).slice(0, SKRALL_NEXT_TRIES);
+  const steps = [null, ...queue].flatMap((c) => [[riskRed, SKRALL_MIN_B, c], [null, SKRALL_MIN_B, c]]).concat([[riskRed, 0, null], [null, 0, null]]);
+  let best = null;
+  for (const [redRulesX, sk, c] of steps) {
+    const r = bestWithSpikes(events, spikMin, setsA, { minRed: MIN_RED_B, ...opts, payoutBand: PAYOUT_BAND_B, redRules: redRulesX, skrallMin: sk, extraSkrall: c ? new Set([`${c.i}:${c.k}`]) : null }, exclude);
+    if (!r) continue;
+    r.reduced = { ...r.reduced, rules: { ...r.reduced.rules, payoutBand: PAYOUT_BAND_B, ...(redRulesX ? {} : { redFallback: true }), ...(sk ? {} : { skrallMissing: true }),
+      ...(c ? { skrallNext: { match: c.i + 1, sign: SIGNS[c.k], p: r3(c.p), folk: r3(c.folk) } } : {}) } };
+    if (!best) best = r;
+    if (r.reduced.rules.payoutExact === true) { best = r; break; }
+  }
+  return best;
 }
 function bestWithSpikesRules(events, spikMin, setsA, opts, exclude = null) {
   // 'max' (anvandaren 2026-10-02: "om du inte far in systemet far du minska strecken pa annat hall"): gar gransen
@@ -1648,30 +1691,17 @@ async function analyzeDraw(product, draw, ctx, result) {
   } else if (system) {
     // B som i webben (risksystemet): 50 000-75 000 kr (aven Europatipset), 3-3-3, rod 1-4 eller 2-4, minst en skrallspik,
     // aldrig samma tecken som A pa nagon match (inte ens spiken)
-    const optsB = { rowPrice, turnover, realTurnover, jackpot, payoutMin: Math.max(UTD_MIN_B, utdMin(product.id)), payoutBand: PAYOUT_BAND_B, signMin: SIGN_MIN.B, colorBands: bands, minRed: MIN_RED_B };
-    // Gransen gar fore risken (anvandaren 2026-10-02: gransen "far inte roras"): rod 1-4/2-4 gav for manga rader over taket i
-    // 21 av 107 omgangar. Ordning: skrallspik pa 35-47 % (risk, sedan rod 1-3), sedan nasta skrallkandidat i tur (skrallQueue,
-    // "saknas aldrig") pa samma satt, sist utan skrallspik - forsta som haller gransen. rules.redFallback = rod 1-3,
-    // rules.skrallNext = kandidaten i tur, rules.skrallMissing = ingen skrallspik. Haller inget gransen blir det det forsta som gick.
-    const queue = skrallQueue(sysEv, system.sets).slice(0, SKRALL_NEXT_TRIES);
-    const steps = [null, ...queue].flatMap((c) => [[RED_RULES_B, SKRALL_MIN_B, c], [null, SKRALL_MIN_B, c]]).concat([[RED_RULES_B, 0, null], [null, 0, null]]);
-    let bestB = null;
-    for (const [redRulesB, sk, c] of steps) {
-      const r = bestWithSpikes(sysEv, spikMinFor(product.id), system.sets, { ...optsB, redRules: redRulesB, skrallMin: sk, extraSkrall: c ? new Set([`${c.i}:${c.k}`]) : null }, B_JOINT ? new Set(reduced.rowList) : null);
-      if (!r) continue;
-      r.reduced = { ...r.reduced, rules: { ...r.reduced.rules, payoutBand: PAYOUT_BAND_B, ...(redRulesB ? {} : { redFallback: true }), ...(sk ? {} : { skrallMissing: true }),
-        ...(c ? { skrallNext: { match: c.i + 1, sign: SIGNS[c.k], p: r3(c.p), folk: r3(c.folk) } } : {}) } };
-      if (!bestB) bestB = r;
-      if (r.reduced.rules.payoutExact === true) { bestB = r; break; }
-    }
+    const optsB = { rowPrice, turnover, realTurnover, jackpot, payoutMin: Math.max(UTD_MIN_B, utdMin(product.id)), signMin: SIGN_MIN.B, colorBands: bands };
+    const bestB = bestRisk(sysEv, spikMinFor(product.id), system.sets, optsB, B_JOINT ? new Set(reduced.rowList) : null);
     systemB = bestB?.system || null; reducedB = bestB?.reduced || null;
     if (systemB) out.forEach((a, i) => { a.systemPickB = systemB.picks[i]; });
     if (reducedB) reducedB.gamblingCabinUrl = gamblingCabinUrl(product.id, draw.drawNumber, closeDate, out, systemB.sets, reducedB);
   }
-  // Kupong C: eget system, oberoende av A och B
+  // Kupong C: skrallsystemet (rod 2-6, rott pa 6-10 matcher tills hogsta rad >= 1 milj, 50 000-75 000 kr, skrallspik),
+  // oberoende av A och B, 700-850 kr
   let systemC = null, reducedC = null;
   if (out.length && process.env.STRYK_C !== '0') {
-    const bestC = bestWithSpikes(sysEv, spikMinFor(product.id), null, { ...baseOpts, payoutMin: Math.max(UTD_MIN_C, utdMin(product.id)), signMin: SIGN_MIN_C[product.id] || SIGN_MIN.A, budget: BUDGET_C, colorTarget: C_COLOR !== 'free' });
+    const bestC = bestRisk(sysEv, spikMinFor(product.id), null, { ...baseOpts, payoutMin: Math.max(UTD_MIN_C, utdMin(product.id)), signMin: SIGN_MIN_C[product.id] || SIGN_MIN.A, budget: BUDGET_C, colorTarget: C_COLOR !== 'free' }, null, RISK_C);
     systemC = bestC?.system || null; reducedC = bestC?.reduced || null;
     if (reducedC) {
       reducedC.picks = systemC.picks.map((x) => x.signs);
