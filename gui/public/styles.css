@@ -1488,6 +1488,8 @@ main > .section-head:first-child { margin-top: var(--space-4); }
 .ref-alert li.loss::marker { color: var(--color-danger); }
 .ref-alert small { color: var(--color-text-muted); }
 .tip.ref-flagged, .st-match.ref-flagged { box-shadow: inset 4px 0 0 var(--color-warning-fill), var(--shadow-sm); }
+/* Streckfavorit utan seger: laget streckas som favorit men vinner sällan denna säsong */
+.st-match.flop-flagged { box-shadow: inset 4px 0 0 var(--color-danger), var(--shadow-sm); }
 .ref-badge {
   display: inline-block; margin-left: var(--space-2); padding: 1px var(--space-2); border-radius: var(--radius-pill); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold);
   white-space: nowrap; vertical-align: middle; border: 1px solid var(--color-warning); color: var(--color-warning); background: var(--color-warning-bg);
@@ -1617,3 +1619,48 @@ main > .section-head:first-child { margin-top: var(--space-4); }
 .rf-teamgames .rf-table-wrap, .rf-teamgames table { max-width: 100%; }
 .rf-h2h { margin: 0 0 var(--space-2); font-size: var(--font-size-sm); }
 .rf-h2h .tp-k { margin-right: var(--space-1); }
+
+/* Risklag: streckfavoriter som sällan vinner denna säsong (etikett vid lagnamnet + panel) */
+.risk-tag {
+  display: inline-block; margin-left: var(--space-1); padding: 0 var(--space-2); border-radius: var(--radius-pill); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold);
+  white-space: nowrap; vertical-align: middle; line-height: 1.6; color: var(--color-danger); background: var(--color-danger-bg); border: 1px solid var(--color-danger); cursor: help;
+}
+.rk-panel > summary { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--space-2); cursor: pointer; }
+.rk-panel > summary h3 { margin: 0; }
+.rk-panel > summary small { color: var(--color-text-muted); }
+.rk-short { margin: var(--space-3) 0 var(--space-2); font-size: var(--font-size-sm); }
+.rk-list { list-style: none; margin: var(--space-3) 0 0; padding: 0; display: grid; gap: var(--space-2); }
+.rk-row {
+  display: grid; grid-template-columns: minmax(130px, 1.2fr) minmax(110px, 1.3fr) minmax(110px, 1fr) minmax(160px, 1.6fr); gap: var(--space-3); align-items: center;
+  padding: var(--space-2) var(--space-3); border-radius: var(--radius-md); border: 1px solid var(--color-border); background: var(--color-surface);
+}
+.rk-row.is-risk { border-left: 4px solid var(--color-danger); }
+.rk-row.in-coupon { background: var(--color-danger-bg); }
+.rk-row:not(.is-risk).in-coupon { background: var(--color-success-bg); }
+.rk-team { display: flex; flex-wrap: wrap; align-items: center; gap: 2px var(--space-2); }
+.rk-team small { flex-basis: 100%; color: var(--color-text-muted); font-size: var(--font-size-xs); }
+.rk-here { font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); padding: 0 var(--space-2); border-radius: var(--radius-pill); background: var(--color-text); color: var(--color-bg); }
+.rk-dots { display: flex; flex-wrap: wrap; gap: 3px; }
+.rk-dot {
+  display: inline-grid; place-items: center; width: 20px; height: 20px; border-radius: 5px; font-size: 11px; font-weight: var(--font-weight-bold); cursor: help; color: var(--color-text-on-brand);
+}
+.rk-dot.V { background: var(--color-success-solid); }
+.rk-dot.O { background: var(--color-warning-fill); color: var(--color-text); }
+.rk-dot.F { background: var(--color-danger-solid); }
+.rk-rate { display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 2px var(--space-2); }
+.rk-pct { font-size: var(--font-size-lg); font-weight: var(--font-weight-bold); font-variant-numeric: tabular-nums; }
+.rk-row.is-risk .rk-pct { color: var(--color-danger); }
+.rk-bar { height: 6px; border-radius: 3px; background: var(--color-border); overflow: hidden; }
+.rk-bar i { display: block; height: 100%; background: var(--color-danger-solid); }
+.rk-row:not(.is-risk) .rk-bar i { background: var(--color-text-muted); }
+.rk-rate small { grid-column: 1 / -1; color: var(--color-text-muted); font-size: var(--font-size-xs); }
+.rk-meta { font-size: var(--font-size-sm); font-variant-numeric: tabular-nums; }
+.rk-meta small { color: var(--color-text-muted); }
+.rk-more { margin-top: var(--space-3); }
+.rk-more > summary { cursor: pointer; font-size: var(--font-size-sm); color: var(--color-text-muted); }
+@media (max-width: 700px) {
+  .rk-row { grid-template-columns: 1fr auto; }
+  .rk-dots, .rk-meta { grid-column: 1 / -1; }
+  .rk-rate { grid-row: 1; grid-column: 2; grid-template-columns: auto; text-align: right; }
+  .rk-bar { display: none; }
+}

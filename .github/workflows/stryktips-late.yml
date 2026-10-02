@@ -65,6 +65,12 @@ jobs:
         shell: pwsh
         run: powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Update-BettingStore.ps1 -SkipDownload
 
+      # Streck + utfall per omgång (inkrementellt): streckfavoriter utan seger i kupongen
+      - name: Stryktipsstatistik (Svenska Spel)
+        if: steps.guard.outputs.run == 'true'
+        continue-on-error: true
+        run: node scripts/fetch-stryktips-statistik.mjs
+
       - name: Stryktipset/Europatipset (färska odds, streck, elvor)
         if: steps.guard.outputs.run == 'true'
         run: node scripts/fetch-stryktipset.mjs

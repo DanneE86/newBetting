@@ -80,3 +80,26 @@ for (const [vy, namn] of [['stryktipset', 'Stryktipset'], ['europatipset', 'Euro
     expect(fel, fel.join('\n')).toEqual([]);
   });
 }
+
+test('Stryktipset: panelen Risklag denna säsong och etiketten risklag på flaggade lag', async ({ page }) => {
+  const data = JSON.parse(fs.readFileSync(path.join(root, 'data', 'stryktipset.json'), 'utf8'));
+  const p = data.products.find((x: any) => x.product === 'stryktipset');
+  const lista = data.streckFlopSeason || [];
+  test.skip(!p || !lista.length, 'ingen kupong eller säsongslista i data/stryktipset.json');
+  const fel = await oppna(page, 'stryktipset');
+  const view = page.locator('#stryktips-view');
+  await expect(view.locator('.st-match')).toHaveCount(13, { timeout: 30_000 });
+  const panel = view.locator('.rk-panel');
+  await expect(panel).toBeVisible();
+  await expect(panel).toHaveAttribute('open', '');
+  await expect(panel).toContainText('Kort sagt');
+  // En rad per risklag, med en ruta per match som streckfavorit
+  const risk = lista.filter((r: any) => r.risk);
+  await expect(panel.locator('.rk-list').first().locator('.rk-row.is-risk')).toHaveCount(risk.length);
+  if (risk.length) await expect(panel.locator('.rk-row.is-risk').first().locator('.rk-dot')).toHaveCount(risk[0].season.last.length);
+  // Flaggade lag i kupongen får etiketten i både kravlistan och matchkortet
+  const flaggade = p.events.reduce((n: number, e: any) => n + (e.streckFlop?.home ? 1 : 0) + (e.streckFlop?.away ? 1 : 0), 0);
+  await expect(view.locator('.sb-row .risk-tag')).toHaveCount(flaggade);
+  await expect(view.locator('.st-match h3 .risk-tag')).toHaveCount(flaggade);
+  expect(fel, fel.join('\n')).toEqual([]);
+});

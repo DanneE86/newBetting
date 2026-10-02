@@ -1529,3 +1529,91 @@ test.describe('stryk-engine: kupong A, B och C', () => {
     }
   });
 });
+
+// ---------- streck-flop.mjs ----------
+
+test.describe('streck-flop: streckfavoriter som inte vinner', () => {
+  // m(datum, hemma, borta, folk1, folk2, utfall)
+  const m = (date: string, home: string, away: string, f1: number, f2: number, outcome: string | null, extra = {}) =>
+    ({ date, home, away, folk1: f1, folkX: 100 - f1 - f2, folk2: f2, prob1: f1 / 120, prob2: f2 / 120, outcome, ftHome: 1, ftAway: 1, cancelled: false, ...extra });
+  const hist = [
+    m('2026-03-01', 'Chelsea', 'Leeds', 70, 10, '1'), // forra sasongen: vinst
+    m('2026-04-01', 'Leeds', 'Chelsea', 15, 65, 'X'), // forra sasongen: kryss
+    m('2026-08-10', 'Chelsea', 'Spurs', 68, 12, 'X'), // denna: kryss
+    m('2026-08-20', 'Fulham', 'Chelsea', 20, 55, '1'), // denna: forlust
+    m('2026-08-30', 'Chelsea', 'Wolves', 72, 8, '1'), // denna: vinst
+    m('2026-09-05', 'Chelsea', 'Brentford', 45, 30, 'X'), // inte streckfavorit (< 50 %)
+    m('2026-09-12', 'Chelsea', 'Everton', 70, 10, '2', { cancelled: true }), // struken
+    m('2026-10-03', 'Chelsea', 'Burnley', 75, 8, null), // ej spelad
+  ];
+
+  test('seasonStart: juli-juni i England, kalenderar i Norden', async () => {
+    const { seasonStart } = await lib('streck-flop.mjs');
+    expect(seasonStart('2026-10-03', 'England')).toBe('2026-07-01');
+    expect(seasonStart('2026-03-03', 'England')).toBe('2025-07-01');
+    expect(seasonStart('2026-10-03', 'Sverige')).toBe('2026-01-01');
+  });
+
+  test('streckFavStats: bara >= 50 % streck, spelade och ej strukna matcher', async () => {
+    const { streckFavStats } = await lib('streck-flop.mjs');
+    const s = streckFavStats(hist, 'Chelsea', '2026-07-01', '2026-10-03');
+    expect(s).toMatchObject({ games: 3, noWin: 2, draws: 1, losses: 1, avgFolk: 65 });
+    expect(s.rate).toBeCloseTo(2 / 3);
+    expect(s.last[0]).toMatchObject({ date: '2026-08-30', res: 'V', home: true });
+  });
+
+  test('streckFlopFlags: flaggar denna sasong (minst 2 matcher, minst 50 % utan seger) med forra sasongen som jamforelse', async () => {
+    const { streckFlopFlags, streckFlopNotes } = await lib('streck-flop.mjs');
+    const f = streckFlopFlags(hist, { home: 'Chelsea', away: 'Burnley', date: '2026-10-03', country: 'England' });
+    expect(f.flagged).toBe(true);
+    expect(f.away).toBeNull();
+    expect(f.home.season.games).toBe(3);
+    expect(f.home.prev).toMatchObject({ games: 2, noWin: 1 });
+    const notes = streckFlopNotes(f, 'Chelsea', 'Burnley');
+    expect(notes).toHaveLength(1);
+    expect(notes[0]).toContain('Chelsea');
+    expect(notes[0]).toContain('67 %');
+    // Ingen framtidsdata: fore 2026-08-20 finns bara en match denna sasong -> ingen flagga
+    expect(streckFlopFlags(hist, { home: 'Chelsea', away: 'Burnley', date: '2026-08-20', country: 'England' })).toBeNull();
+  });
+
+  test('streckFlopFlags: ett lag som vinner som favorit flaggas inte', async () => {
+    const { streckFlopFlags } = await lib('streck-flop.mjs');
+    const wins = [m('2026-08-10', 'Arsenal', 'X', 70, 10, '1'), m('2026-08-20', 'Arsenal', 'Y', 70, 10, '1'), m('2026-08-30', 'Z', 'Arsenal', 10, 70, 'X')];
+    expect(streckFlopFlags(wins, { home: 'Arsenal', away: 'Q', date: '2026-10-03', country: 'England' })).toBeNull();
+  });
+
+  test('streckFlopTop: sorterar pa andel utan seger med minsta antal matcher', async () => {
+    const { streckFlopTop } = await lib('streck-flop.mjs');
+    const top = streckFlopTop(hist, '2026-07-01', '2026-10-03', { minGames: 2 });
+    expect(top.map((r) => r.team)).toEqual(['Chelsea']);
+  });
+});
+
+test.describe('streck-flop: säsongslistan (panelen Risklag)', () => {
+  const m = (date: string, home: string, away: string, f1: number, f2: number, outcome: string, country = 'England') =>
+    ({ date, home, away, folk1: f1, folkX: 100 - f1 - f2, folk2: f2, prob1: 0.5, prob2: 0.2, outcome, ftHome: 0, ftAway: 0, cancelled: false, league: country === 'England' ? 'Championship' : 'Allsvenskan', country });
+  const hist = [
+    m('2026-08-10', 'Burnley', 'A', 60, 15, 'X'), m('2026-08-20', 'B', 'Burnley', 15, 60, '1'), // risklag 2/2
+    m('2026-08-10', 'Leeds', 'C', 60, 15, '1'), m('2026-08-20', 'D', 'Leeds', 15, 60, '2'), // vinner -> inte risk
+    m('2026-03-01', 'Häcken', 'E', 60, 15, 'X', 'Sverige'), m('2026-09-01', 'Häcken', 'F', 60, 15, '2', 'Sverige'), // kalenderar: 2/2
+    m('2026-09-20', 'Wrexham', 'G', 70, 10, 'X'), // bara 1 match -> inte med
+    m('2026-10-05', 'Leeds', 'H', 60, 15, 'X'), // efter datumet -> raknas inte
+  ];
+
+  test('risklag overst, vinnande favoriter efter, lag med en match utanfor, ingen framtidsdata', async () => {
+    const { streckFlopSeasonList } = await lib('streck-flop.mjs');
+    const list = streckFlopSeasonList(hist, '2026-10-02');
+    // Bara engelska lag (användaren 2026-10-02): Häcken (2/2 utan seger) är inte med
+    expect(list.map((r: any) => [r.team, r.risk])).toEqual([['Burnley', true], ['Leeds', false]]);
+    expect(list.every((r: any) => r.country === 'England')).toBe(true);
+    expect(list[0]).toMatchObject({ league: 'Championship', season: { games: 2, noWin: 2 } });
+    expect(list[0].season.last.map((x: any) => x.res)).toEqual(['F', 'O']); // senaste forst
+  });
+
+  test('flaggan i kupongen bara for engelska matcher', async () => {
+    const { streckFlopFlags } = await lib('streck-flop.mjs');
+    expect(streckFlopFlags(hist, { home: 'Burnley', away: 'Z', date: '2026-10-02', country: 'England' })?.home?.flag).toBe(true);
+    expect(streckFlopFlags(hist, { home: 'Häcken', away: 'Z', date: '2026-10-02', country: 'Sverige' })).toBeNull();
+  });
+});
