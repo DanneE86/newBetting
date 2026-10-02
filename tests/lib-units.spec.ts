@@ -1466,4 +1466,33 @@ test.describe('stryk-engine: kupong A, B och C', () => {
     expect(spikes(A)).toBeGreaterThanOrEqual(2);
     expect(spikes(B)).toBeGreaterThanOrEqual(2);
   });
+
+  // Användaren 2026-10-02: "även om jag väljer själv vill jag ha min utdelning mellan 30–50k, inget max".
+  // Egna skrällspikar gav förut gränsen 441 500 kr i länken – med egna krav går gränsen före röd + grön och färgreglerna.
+  test('floorOrder: utan krav röd + grön först, med krav gränsen 30 000–50 000 kr först', async () => {
+    const { floorOrder } = await engine();
+    const free = floorOrder(false), locked = floorOrder(true);
+    expect(free.slice(0, 3)).toEqual([['signs', true], ['signs', 'near'], ['signs', false]]);
+    expect(locked).toEqual([['signs', true], ['colors', true], [false, true]]);
+  });
+
+  test('egna skrällspikar: gränsen i länken ligger ändå på 30 000–50 000 kr', async () => {
+    const p = products.find((x) => x.product === 'stryktipset');
+    test.skip(!p, 'data/stryktipset.json saknar Stryktipset');
+    test.setTimeout(300_000);
+    const { generateCoupons } = await engine();
+    const und = (e: any) => ['1', 'X', '2'][e.final.indexOf(Math.min(...e.final))];
+    for (const n of [1, 2, 3]) {
+      const krav = Object.fromEntries(p.events.slice(0, n).map((e: any) => [e.eventNumber, { signs: und(e), scope: 'A' }]));
+      const { A } = generateCoupons(p, krav);
+      expect(A, `${n} skrällspikar`).toBeTruthy();
+      expect(A.rules.payoutExact, `${n} skrällspikar: ${A.relaxed.join('; ')}`).toBe(true);
+      expect(A.rules.payoutMin).toBeGreaterThanOrEqual(30000);
+      expect(A.rules.payoutMin).toBeLessThanOrEqual(50000);
+      expect(A.gamblingCabinUrl).toContain(`utd=1,${A.rules.payoutMin},100000000`);
+      p.events.slice(0, n).forEach((e: any, i: number) => expect(A.picks[i].signs).toBe(und(e)));
+      expect(A.cost).toBeGreaterThanOrEqual(350);
+      expect(A.cost).toBeLessThanOrEqual(400);
+    }
+  });
 });
