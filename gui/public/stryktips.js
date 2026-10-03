@@ -783,20 +783,72 @@ function couponCard(c, label, p) {
 }
 
 function couponTable(p, res) {
-  const cell = (c, i) => {
+  const cell = (c, i, sys) => {
     const x = c?.picks[i];
     if (!x) return "<td>—</td>";
+// ---------- Missar per system (data.missProfileSystems, buildSystemMissProfiles i scripts/lib/stryk-miss-profile.mjs) ----------
+// Användaren 2026-10-03: "markera dom matcher i dessa system du brukar ha fel på". Varje kupong (A, B, C) har en egen profil ur
+// bakkörningen av de nuvarande systemen. ⚠ = sådana tecken (spik/halvgardering x tecken x favoritens chans, eller skräll) har
+// missat minst SYS_MISS_RATE av gångerna; röd = oftare än vår egen chans säger (mer än 2 standardavvikelser).
+const SYS_MISS_RATE = 0.3;
+const sysGroupKey = (signs, final) => {
+  const fav = Math.max(...final);
+  const favSign = SIGNS[final.indexOf(fav)];
+  const type = signs.length === 1 ? "spik" : "halv";
+  if (!signs.includes(favSign)) return `skrall|${type}`;
+  const prof = data?.missProfileSystems;
+  return `${type}|${signs}|${(prof?.bandEdges || [0.45, 0.55, 0.65, 0.75]).filter((x) => fav >= x).length}`;
+};
+function sysMiss(e, signs, sys) {
+  const prof = data?.missProfileSystems;
+  if (!prof || product !== "stryktipset" || !signs || signs.length === 3 || !e.final) return null;
+  // Profilen bygger på PL, Championship och League One – landskamper och andra ligor markeras inte
+  if (prof.leaguesOnly && !prof.leaguesOnly.includes(e.league)) return null;
+  const g = prof.systems?.[sys]?.[sysGroupKey(signs, e.final)];
+  if (!g || g.n < prof.minN) return null;
+  const over = g.rate - g.exp > 2 * Math.sqrt((g.exp * (1 - g.exp)) / g.n);
+  return { ...g, over, mark: g.rate >= SYS_MISS_RATE };
+}
+const sysMissMark = (m, sys) => m?.mark
+  ? ` <span class="st-sysmiss${m.over ? " over" : ""}" title="Kupong ${sys}: ${esc(m.label)} missade ${m.miss} av ${m.n} gånger i bakkörningen (${pct(m.rate)}, vår chans sa ${pct(m.exp)})${m.over ? " – oftare än väntat" : ""}">⚠ ${pct(m.rate)}</span>`
+  : "";
+
+// Risklag i B och C (användaren 2026-10-03: "markera risk matcher i b och c om du tippat dom"): kupongen har tippat på att ett
+// risklag (streckfavorit som sällan vinner denna säsong, e.streckFlop) vinner utan att helgardera matchen
+function riskTipped(e, signs) {
+  if (!e?.streckFlop?.flagged || !signs || signs.length === 3) return null;
+  const hit = [["home", "1"], ["away", "2"]].find(([side, s]) => e.streckFlop[side] && signs.includes(s));
+  if (!hit) return null;
+  const s = e.streckFlop[hit[0]].season;
+  return { team: e[hit[0]], sign: hit[1], spik: signs.length === 1, ...s };
+}
+const riskMark = (r, sys) => r
+  ? ` <span class="sb-risk${r.spik ? " spik" : ""}" title="Kupong ${sys} har tippat ${r.sign} på risklaget ${esc(r.team)}${r.spik ? " som spik" : ""}: ingen seger i ${r.noWin} av ${r.games} matcher som streckfavorit denna säsong (${pct(r.rate)}). Fundera på att gardera.">⚠ risklag</span>`
+  : "";
+
     const blue = c.rules?.blueHalves?.includes(i);
     const cls = (x.signs.length === 1 ? "spik" : x.signs.length === 2 ? "halv" : "hel") + (blue ? " blue" : "");
-    return `<td><span class="st-tip ${cls}${x.locked ? " mine" : ""}" title="${x.locked ? "Ditt krav" : blue ? `${esc(x.type)} · blå, räknas inte i färgreglerna` : esc(x.type)}">${x.locked ? "🔒 " : ""}${esc(x.signs.split("").join(" + "))}</span></td>`;
+    return `<td><span class="st-tip ${cls}${x.locked ? " mine" : ""}" title="${x.locked ? "Ditt krav" : blue ? `${esc(x.type)} · blå, räknas inte i färgreglerna` : esc(x.type)}">${x.locked ? "🔒 " : ""}${esc(x.signs.split("").join(" + "))}</span>${sysMissMark(sysMiss(p.events[i], x.signs, sys), sys)}${sys === "A" ? "" : riskMark(riskTipped(p.events[i], x.signs), sys)}</td>`;
   };
   const turCell = (e, i) => {
     const t = turInfo(e, res.A?.picks[i]?.signs);
     return t?.tur ? `<td><button type="button" class="st-chip tur tur-btn" data-ev="${e.eventNumber}" data-scroll="1">🍀 ${pct(t.rate)} · varför?</button></td>` : "<td></td>";
   };
-  return `<div class="st-bt-wrap"><table class="sb-table ds-table">
+  const prof = data?.missProfileSystems;
+  const marks = ["A", "B", "C"].reduce((n, s) => n + p.events.filter((e, i) => sysMiss(e, res[s]?.picks[i]?.signs, s)?.mark).length, 0);
+  const risks = ["B", "C"].reduce((n, s) => n + p.events.filter((e, i) => riskTipped(e, res[s]?.picks[i]?.signs)).length, 0);
+  const legend = prof && product === "stryktipset"
+    ? `<p class="st-sub sb-miss-legend"><b>Kort sagt:</b> ⚠ visar tecken som systemet brukar ha fel på – ${marks} st i omgången.
+       <b>Så läser du det här:</b> procenten är hur ofta just den kupongen missade sådana tecken i bakkörningen (${prof.draws} omgångar,
+       ${esc(prof.from)} – ${esc(prof.to)}, PL/Championship/League One). <span class="st-sysmiss over">röd</span> = oftare än vår egen chans sa.
+       Håll musen över för detaljer.</p>`
+    : "";
+  const riskLegend = risks
+    ? `<p class="st-sub sb-risk-legend"><span class="sb-risk">⚠ risklag</span> = B eller C har tippat att ett risklag vinner (${risks} st) – laget streckas ofta som favorit men vinner sällan denna säsong. Fundera på att gardera.</p>`
+    : "";
+  return `${legend}${riskLegend}<div class="st-bt-wrap"><table class="sb-table ds-table">
     <thead><tr><th>#</th><th>Match</th><th>Kupong A</th><th>Kupong B</th><th>Kupong C</th><th>Tur (A)</th></tr></thead>
-    <tbody>${p.events.map((e, i) => `<tr><td>${e.eventNumber}</td><th>${esc(e.home)} – ${esc(e.away)}</th>${cell(res.A, i)}${cell(res.B, i)}${cell(res.C, i)}${turCell(e, i)}</tr>`).join("")}</tbody>
+    <tbody>${p.events.map((e, i) => `<tr><td>${e.eventNumber}</td><th>${esc(e.home)} – ${esc(e.away)}</th>${cell(res.A, i, "A")}${cell(res.B, i, "B")}${cell(res.C, i, "C")}${turCell(e, i)}</tr>`).join("")}</tbody>
   </table></div>`;
 }
 
@@ -904,12 +956,13 @@ function renderB(p, head, top = "", extras = "") {
         <details class="sb-howto"${keep("howto-kupong")}><summary>Hur funkar det?</summary>
           <ul>
             <li>Minst 2 och högst 4 spikar och minst 3 helgarderingar per kupong. Spikarna och exakt två halvgarderingar är <b>blå</b> (helgula först, annars de säkraste). Helgarderingar är aldrig blå och läggs aldrig på matcher där alla tecken är gula (det vore samma sak som blått). Blått räknas inte i färgreglerna, precis som spikarna.</li>
-            <li>Röd = folket 25 % eller lägre. Kupongen tar med rött på minst 5 olika matcher i garderingarna när omgången har så många, och röd är alltid 1–3 och grön alltid 3–6 per rad (A, B och C), så att skrällar kan gå in. Gult skär aldrig bort rader – går röda in kan alla gula komma med – utom när det behövs för att hålla 30 000–50 000 kr (då står det i kupongen).</li>
-            <li>Lägsta utdelning ligger på 30 000–50 000 kr, utan tak. Ger det för många rader blir gränsen så låg som går, och kupongen säger det.</li>
+            <li>Röd = folket 25 % eller lägre. Grön är alltid 3–6 per rad. Röd per rad: A 1–3, B 1–4 eller 2–4, C 2–6. Rött på minst 5 olika matcher i garderingarna i A, minst 6 i B, och i C fler (6–10) tills högsta raden ger minst 1 miljon. Gult skär aldrig bort rader – går röda in kan alla gula komma med – utom när det behövs för att hålla utdelningsgränsen (då står det i kupongen).</li>
+            <li>Lägsta utdelning: A 30 000–50 000 kr, B och C 50 000–75 000 kr, utan tak. Ger det för många rader blir gränsen så låg som går, och kupongen säger det.</li>
             <li>Färgreglerna (antal gröna, gula och röda tecken per rad) väljs så att chansen till 13 rätt blir högst – aldrig 0 till max, aldrig ett exakt antal (som 2–2) och aldrig samma fönster för två färger.</li>
             <li><b>A:</b> högst chans till 13 rätt, teckenregler 4-2-2, utdelning minst ${(UTD_MIN[p.product] || 30000).toLocaleString("sv-SE")} kr.</li>
-            <li><b>B:</b> teckenregler 3-3-3, minst 30 000 kr utan tak, aldrig samma tecken som A på någon match (inte ens spiken), vald för att täcka rader som A saknar.</li>
-            <li><b>C</b> är ett helt eget system på 700–850 kr som inte har med A och B att göra: bara krav du lagt på C (eller Alla) gäller där, samma regler som A (Europatipset: teckenregler 3-2-2) och minst 30 000 kr för 13 rätt.</li>
+            <li><b>B</b> är risksystemet: teckenregler 3-3-3, 50 000–75 000 kr, alltid en skrällspik (runt 40 %, annars den som är näst på tur), aldrig samma tecken som A på någon match (inte ens spiken). Håller gränsen inte med röd 1–4/2–4 får B röd 1–3.</li>
+            <li><b>C</b> är skrällsystemet: ett eget system på 700–850 kr som inte har med A och B att göra (bara krav du lagt på C eller Alla gäller där). Högsta raden ska ge minst 1 miljon, 50 000–75 000 kr, alltid en skrällspik, teckenregler som A (Europatipset 3-2-2).</li>
+            <li>⚠ i tabellen = tecken som just den kupongen brukar ha fel på (minst 30 % missar i bakkörningen), röd = oftare än vår egen chans sa.</li>
             ${p.product === "stryktipset" ? "<li>På Stryktipset spikas bara favoriter med minst 65 % – spikar på 50–65 % sprack nästan varannan gång i baktestet.</li>" : ""}
           </ul>
         </details>

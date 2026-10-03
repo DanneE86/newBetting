@@ -92,6 +92,55 @@ export function buildMissProfile(dir = path.join(root, 'data', 'tips-archive', '
   };
 }
 
+// ---------- Missar per system (A, B, C) ur bakkörningen ----------
+// Användaren 2026-10-03: "markera dom matcher i dessa system du brukar ha fel på". B och C är nya (risk/skräll) och har ingen
+// sparad historik, så profilen byggs ur bakkörningen av de nuvarande systemen (scripts/backtest-stryktipset.mjs, samma kod som
+// kupongerna). Grupper som ovan (spik/halvgardering x tecken x favoritens chans); spik eller halvgardering utan favoriten är
+// en skräll och samlas i 'skrall|spik' / 'skrall|halv' (B och C har alltid en skrällspik).
+export const SYSTEM_BACKTESTS = ['stryktips-backtest-2324-riskC.json', 'stryktips-backtest-2425-riskC.json', 'stryktips-backtest-budget-riskC.json'];
+export const sysGroupKey = (signs, final) => {
+  const fav = Math.max(...final);
+  const favSign = SIGNS[final.indexOf(fav)];
+  return signs.includes(favSign) ? groupKey(signs, fav) : `skrall|${pickType(signs)}`;
+};
+export function buildSystemMissProfiles(files = SYSTEM_BACKTESTS, { dir = path.join(root, 'data'), leagues = STRYK_LEAGUES } = {}) {
+  const only = leagues ? new Set(leagues) : null;
+  const acc = { A: {}, B: {}, C: {} };
+  let draws = 0, from = null, to = null;
+  for (const f of files) {
+    const file = path.join(dir, f);
+    if (!fs.existsSync(file)) continue;
+    let doc;
+    try { doc = JSON.parse(fs.readFileSync(file, 'utf8')); } catch { continue; }
+    for (const d of doc.draws || []) {
+      draws++;
+      if (!from || d.date < from) from = d.date;
+      if (!to || d.date > to) to = d.date;
+      d.matches.forEach((m, i) => {
+        if (!m.outcome || !m.final || (only && !only.has(m.league))) return;
+        const picks = { A: m.pickA, B: m.pickB, C: d.C?.picks?.[i] };
+        for (const [sys, pick] of Object.entries(picks)) {
+          if (!pick || pick.length === 3) continue;
+          const g = (acc[sys][sysGroupKey(pick, m.final)] ||= empty());
+          g.n++;
+          g.exp += 1 - [...pick].reduce((t, c) => t + m.final[SIGNS.indexOf(c)], 0);
+          if (!pick.includes(m.outcome)) { g.miss++; g.by[m.outcome]++; }
+        }
+      });
+    }
+  }
+  if (!draws) return null;
+  const label = (k) => {
+    const [type, signs, band] = k.split('|');
+    return type === 'skrall' ? (signs === 'spik' ? 'Skrällspik (inte favoriten)' : 'Halvgardering utan favoriten') : groupLabel(signs, Number(band));
+  };
+  const systems = {};
+  for (const [sys, groups] of Object.entries(acc)) {
+    systems[sys] = Object.fromEntries(Object.entries(groups).map(([k, g]) => [k, { ...g, rate: r3(g.miss / g.n), exp: r3(g.exp / g.n), label: label(k) }]));
+  }
+  return { builtAt: new Date().toISOString(), source: files, from, to, draws, leaguesOnly: leagues || null, bandEdges: BAND_EDGES, minN: 15, systems };
+}
+
 // Kör direkt: bygg om profilen och lägg in den i data/stryktipset.json
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   const prof = buildMissProfile();
