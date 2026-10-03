@@ -17,3 +17,7 @@ logs/
 
 # Webbversion (byggs av node scripts/build-static-site.mjs, publiceras av daily.yml)
 site/
+
+# Hästar: rådata från ATG (6+ MB per omgång) stannar lokalt, analyser och backtest versioneras
+data/hastar/raw/
+data/hastar/historik/

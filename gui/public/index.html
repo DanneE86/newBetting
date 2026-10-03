@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="/stryktips.css" />
   <link rel="stylesheet" href="/startelva.css" />
   <link rel="stylesheet" href="/spelarkort.css" />
+  <link rel="stylesheet" href="/hastar.css" />
   <script src="/theme.js"></script>
 </head>
 <body>
@@ -44,9 +45,11 @@
     <button type="button" role="tab" class="view-tab ds-tab active" data-view="tips" aria-selected="true">Tips</button>
     <button type="button" role="tab" class="view-tab ds-tab" data-view="stryktipset" aria-selected="false">Stryktipset</button>
     <button type="button" role="tab" class="view-tab ds-tab" data-view="europatipset" aria-selected="false">Europatipset</button>
+    <button type="button" role="tab" class="view-tab ds-tab" data-view="hastar" aria-selected="false">Hästar</button>
   </nav>
 
   <section class="st-view" id="stryktips-view" hidden aria-live="polite"></section>
+  <section class="hs-view" id="hastar-view" hidden aria-live="polite"></section>
 
   <section class="status-bar status-line is-loading" id="status-bar" aria-label="Status" aria-live="polite">
     <span class="status-loading">Hämtar tips…</span>
@@ -159,5 +162,6 @@
 
   <script src="/app.js" type="module"></script>
   <script src="/stryktips.js" type="module"></script>
+  <script src="/hastar.js" type="module"></script>
 </body>
 </html>

@@ -38,7 +38,7 @@ test('flikarna ger /tips och /stryktipset, bakåt fungerar', async ({ page }) =>
 
 test('Europatipset finns i menyn och nås via /europatipset', async ({ page }) => {
   await page.goto(base + '/tips');
-  await expect(page.locator('.view-tab')).toHaveCount(3);
+  await expect(page.locator('.view-tab')).toHaveCount(4);
   await page.click('.view-tab[data-view="europatipset"]');
   await expect(page).toHaveURL(base + '/europatipset');
   await expect(page.locator('#stryktips-view h2')).toContainText('Europatipset', { timeout: 30_000 });

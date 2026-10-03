@@ -27,7 +27,7 @@ function parseRoute() {
   }
   const [first, sub] = location.pathname.split("/").filter(Boolean);
   if (POOLS.includes(first) && sub && sub !== "backtest") history.replaceState(null, "", `/${first}`);
-  const v = POOLS.includes(first) ? first : first === "tips" ? "tips" : null;
+  const v = POOLS.includes(first) ? first : first === "tips" || first === "hastar" ? first : null;
   return { view: v, sub: sub === "backtest" ? sub : null };
 }
 const route = parseRoute();
@@ -50,13 +50,17 @@ function kickoff(iso) {
 
 
 // ---------- Flikbyte ----------
-// v = "tips" | "stryktipset" | "europatipset". push = lägg adressen i historiken.
+// v = "tips" | "stryktipset" | "europatipset" | "hastar". push = lägg adressen i historiken.
+// Hästar ritas av hastar.js, som lyssnar på händelsen "betting:view".
 const viewPath = (v) => `/${v}`;
 function setView(v, push = false) {
   const pool = v;
   const st = POOLS.includes(pool);
   if (st) product = pool;
   document.body.classList.toggle("view-stryktips", st);
+  document.body.classList.toggle("view-hastar", v === "hastar");
+  window.__bettingView = v;
+  window.dispatchEvent(new CustomEvent("betting:view", { detail: v }));
   view.hidden = !st;
   for (const t of tabs) {
     const on = t.dataset.view === v;
@@ -1085,4 +1089,4 @@ try {
 }
 // Adressen går först, annars senast valda flik (äldre sparat värde "stryktips" = Stryktipset)
 if (saved === "stryktips" || saved === "stryktipset-b") saved = "stryktipset";
-setView(route.view || (POOLS.includes(saved) ? saved : "tips"));
+setView(route.view || (POOLS.includes(saved) || saved === "hastar" ? saved : "tips"));
