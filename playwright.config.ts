@@ -53,6 +53,10 @@ export default defineConfig({
       testMatch: /lib-units\.spec\.ts/,
     },
     {
+      name: 'hastar',
+      testMatch: /hastar\.spec\.ts/,
+    },
+    {
       name: 'gui',
       testMatch: /gui-sok-startelva\.spec\.ts/,
     },

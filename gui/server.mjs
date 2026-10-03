@@ -4,6 +4,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { spawn } from "node:child_process";
 import { handleStryktips } from "./stryktips-routes.mjs";
+import { handleHastar } from "./hastar-routes.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
@@ -156,8 +157,8 @@ function contentType(filePath) {
 
 function serveStatic(req, res) {
   let urlPath = decodeURIComponent((req.url || "/").split("?")[0]);
-  // Sidadresser (/tips, /stryktipset, /europatipset och undersidor) visar samma sida, stryktips.js läser adressen
-  if (urlPath === "/" || /^\/(tips|stryktipset|europatipset)(\/[\w-]*)?\/?$/.test(urlPath)) urlPath = "/index.html";
+  // Sidadresser (/tips, /stryktipset, /europatipset, /hastar och undersidor) visar samma sida, stryktips.js läser adressen
+  if (urlPath === "/" || /^\/(tips|stryktipset|europatipset|hastar)(\/[\w-]*)?\/?$/.test(urlPath)) urlPath = "/index.html";
   const safe = path.normalize(urlPath).replace(/^(\.\.[/\\])+/, "");
   const filePath = path.join(PUBLIC, safe);
   if (!filePath.startsWith(PUBLIC) || !fs.existsSync(filePath) || fs.statSync(filePath).isDirectory()) {
@@ -755,6 +756,7 @@ function startFetch(mode = "sync") {
 const server = http.createServer((req, res) => {
   const url = new URL(req.url || "/", `http://${req.headers.host || "localhost"}`);
   if (handleStryktips(req, res, url, ROOT)) return;
+  if (handleHastar(req, res, url, ROOT)) return;
 
   if (req.method === "GET" && url.pathname === "/api/dashboard") {
     try {
