@@ -37,6 +37,11 @@ const SIGN_LADDER = [SIGN_MIN, [3, 2, 2], [3, 1, 1], [2, 1, 1], [0, 0, 0]];
 // scripts/lib/stryk-calibration.mjs): Stryktipset bygger på den justerade chansen och spikar bara när den är minst 55 %.
 const SPIK_MIN_BY_PRODUCT = { stryktipset: 0, europatipset: 0 };
 // Spik tillåten: matchens bedömning om den används, annars favoritchansen mot spikMin
+// Testvarianter via adressen (2026-10-03, samma som STRYK_SPIK_X_MAX / STRYK_RED_A / STRYK_RED_B i fetch-stryktipset.mjs),
+// t.ex. /stryktipset?spikx=0.27&reda=1,4&redb=1,5;2,5. Utan parametrar gäller vanliga regler (och alltid i tester/Node).
+const qs = (() => { try { return new URLSearchParams(globalThis.location?.search || ""); } catch { return new URLSearchParams(); } })();
+const redQ = (k) => qs.get(k)?.split(";").map((r) => r.split(",").map(Number)).filter((r) => r.length === 2 && r.every(Number.isFinite));
+export const VARIANT = { spikX: Number(qs.get("spikx")) || null, redA: redQ("reda")?.[0] || null, redB: redQ("redb")?.length ? redQ("redb") : null };
 const spikOk = (e, k, spikMin) => (e.spik?.used ? e.spik.fav === SIGNS[k] && e.spik.spikbar : e.final[k] >= spikMin);
 // Kupong C: Europatipset 3-2-2 (backtest: bättre än 4-2-2), Stryktipset samma som A
 const SIGN_MIN_C_BY_PRODUCT = { stryktipset: SIGN_MIN, europatipset: [3, 2, 2] };
@@ -145,7 +150,10 @@ const pickOf = (x) => ({
 function grundCandidates(events, maxRows, forced, avoid = null, spikMin = 0, loose = false) {
   const same = (a, b) => a.length === b.length && a.every((x, j) => x === b[j]);
   const fav = (e) => e.final.indexOf(Math.max(...e.final));
-  const canSpik = (e, k) => spikOk(e, k, spikMin) || (loose && k === fav(e));
+  // Reservspik (loose) bara på omgångens SPIK_TOP starkaste favoriter (A och C, inte B) och, som testvariant, när krysset
+  // är under spikXMax. Går det inte provas utan reglerna
+  const top = spikTopOn && !avoid ? events.map((e) => Math.max(...e.final)).sort((x, y) => y - x)[SPIK_TOP - 1] ?? 0 : 0;
+  const canSpik = (e, k) => spikOk(e, k, spikMin) || (loose && k === fav(e) && e.final[1] < spikXMax && e.final[k] >= top);
   const options = (e, i) => {
     if (forced[i] != null) return [forced[i]];
     // Ingen helgardering där alla tecken är gula (användaren 2026-10-02: "3 gula helor är exakt samma sak som blå helor")
@@ -202,6 +210,10 @@ function grundCandidates(events, maxRows, forced, avoid = null, spikMin = 0, loo
   const ok = (st) => spikes(st) >= minSpikes && spikes(st) <= maxSpikes && (st.nl === 0 || spikes(st) === minSpikes || loose === "max") && st.sets.filter((x) => x.length === 3).length >= minHelg && st.sets.filter((x) => x.length === 2).length >= minHalf && (st.ns || 0) >= skrallMin;
   const okList = [...dp.values()].filter(ok);
   // Går det inte med högst BLUE_HALVES helgula garderingar (för få spikbara matcher) släpps den gränsen
+  if (!okList.length && loose && (spikXMax < 1 || (spikTopOn && !avoid))) {
+    const prev = [spikXMax, spikTopOn]; spikXMax = 1; spikTopOn = false;
+    try { return grundCandidates(...arguments); } finally { [spikXMax, spikTopOn] = prev; }
+  }
   if (!okList.length && ayLimit < 13 && loose) {
     ayLimit++;
     try { return grundCandidates(...arguments); } finally { ayLimit--; }
@@ -215,6 +227,14 @@ function grundCandidates(events, maxRows, forced, avoid = null, spikMin = 0, loo
 
 const isRed = (e, k) => signColor(e.folk?.[k]) === "red";
 let ayLimit = BLUE_HALVES;
+let spikXMax = VARIANT.spikX || 1; // kryss-tak för reservspikar (1 = av)
+// Reservspik (favorit som inte bedomts spikbar) bara pa omgangens SPIK_TOP starkaste favoriter, i A och C (anvandaren
+// 2026-10-03: "kanske kan fa en annan spik istallet"). Backtest 107 omg: svaga reservspikar satt 34-43 % medan en
+// starkare garderad favorit hade suttit 68-79 %. Med top 4: spiktraff A 53 -> 56 %, C 41 -> 47 %, chans C 0,21 -> 0,27 %,
+// 11+ ratt C 12 -> 15 omg. B blev samre (44,5 mot 46,5 %, B far inte valja A:s tecken) och har kvar gamla regeln.
+// Gar det inte provas utan regeln. data/stryktips-backtest-*-spiktop4.json, docs/lardomar/slutsatser.md
+export const SPIK_TOP = 4; // A och C; B (avoid satt) har kvar gamla regeln. Samma som fetch-stryktipset.mjs
+let spikTopOn = true; // false = reserv när regeln gör kupongen omöjlig
 const allYellowMatch = (e) => [0, 1, 2].every((k) => signColor(e.folk?.[k]) === "yellow");
 // Blå garderingar (index): blå i länken och fria från färgreglerna.
 // Exakt BLUE_HALVES halvgarderingar blå ("2 halvor blå alltid", 2026-10-02): helgula först, sedan de säkraste utan rött
@@ -317,11 +337,13 @@ export function colorRuleOk(rule, present = [true, true, true]) {
 // Fasta färgregler för A, B och C (användaren 2026-10-02): röd alltid 1–3 (folket 25 % eller lägre), grön alltid 4–6.
 // Gult väljs fritt men aldrig exakt och aldrig samma fönster som grönt eller rött. Röd/grön står kvar även om gränsen inte
 // går att nå. fixedColors stängs av bara som sista reserv när ingen kupong alls går att bygga (står i kupongen).
-const RED_RULE = [1, 3];
+const RED_RULE = VARIANT.redA || [1, 3];
 // Kupong B är risksystemet (användaren 2026-10-02 kväll: "kör 1-4 eller 2-4 röda ... inte mer än 2 röda som minst",
 // "behåll A som det är"): röd 1–4 eller 2–4, den som ger högst chans väljs. Backtest 107 omg (2023/24–2026/27): rätt rad i
 // omgångar över 500 000 kr hade i snitt 5,2 röda och 34 av 37 fler än 3. A och C har kvar 1–3. Samma som fetch-stryktipset.mjs.
-export const RED_RULES_B = [[1, 4], [2, 4]];
+// 2026-10-03: röd max 5 (1-5/2-5). Backtest 107 omg: B netto -1 807 -> +4 033 kr, 12 rätt 4 -> 5, samma chans, gränsen
+// höll lika ofta (106/107). Med 1-4 stoppades B 4847 (247 257 kr, 5 roda). data/stryktips-backtest-*-redB5.json
+export const RED_RULES_B = VARIANT.redB || [[1, 5], [2, 5]];
 let redRules = [RED_RULE]; // rödreglerna för systemet som byggs just nu (sätts i buildWithLadder)
 // Skyddet "3 röda + resten gröna" (redGreenRows) gäller med 3 röda även i B. Med B:s röd max 4 fick B släppa reglerna
 // (Stryktipset 4973) och gränsen hamnade på 111 000 kr (Europatipset 2613); raderna med 3 röda ryms ändå i 1–4/2–4.
@@ -746,7 +768,7 @@ function buildWithLadderRules(events, forced, base, budget, exclude, { avoid = n
   }
   redGreenFull = "signs";
   }
-  // Sista reserv: ingen kupong alls med grön 3–6 och rödregeln (A 1–3, B 1–4/2–4) – färgerna optimeras fritt och kupongen säger det
+  // Sista reserv: ingen kupong alls med grön 3–6 och rödregeln (A 1–3, B 1–5/2–5) – färgerna optimeras fritt och kupongen säger det
   if (fixedColors) {
     fixedColors = false;
     try {
@@ -816,7 +838,7 @@ export function kravSigns(k) {
  * "both" = A och B, "all" = A, B och C.
  * A = bästa systemet med A:s krav (350–400 kr, spelets utdelningsgräns).
  * C = skrällsystemet (700–850 kr, 50 000–75 000 kr, röd 2–6, högsta rad minst 1 miljon), fritt från A och B.
- * B = risksystemet med B:s krav: röd 1–4 eller 2–4, minst 30 000 kr för 13 rätt utan tak, teckenregler 3-3-3, aldrig samma tecken som A på någon match
+ * B = risksystemet med B:s krav: röd 1–5 eller 2–5, minst 30 000 kr för 13 rätt utan tak, teckenregler 3-3-3, aldrig samma tecken som A på någon match
  *     (inte ens spiken), valt så att det täcker så mycket som möjligt av det A saknar. Alla kuponger har 2–4 spikar.
  */
 export function generateCoupons(p, krav) {

@@ -55,6 +55,11 @@ Mer om ligan (signaler, kalibrering, Stryktipset): [ligor/PL.md](../ligor/PL.md)
 
 ## Lärdomar och beslut (handskrivet, daterat – nyast överst)
 
+### 2026-10-03: spikar på Stryktipset (bakkörning 107 omgångar, A/B/C)
+
+- Premier League: 469 favoritspikar (A+B+C) satt 56 % (väntat 56 %). Med kryss ≥ 27 % satt de 42 % (142 st), under 27 % 62 % (327 st). 105 av 207 missar blev kryss. Spikar i PL håller när krysset är lågt. Undvik spik i jämna PL-matcher med högt kryss.
+- Samlat i [slutsatser.md](../slutsatser.md) (2026-10-03): det fanns nästan alltid en starkare garderad favorit med kryss < 27 % som hade suttit 68–79 %.
+
 ### 2026-09-28: felanalys och förbättringsvarv
 
 - Webben visade grundmodellens träff (40,0 %, 30 matcher). Tipsmotorns riktiga träff 2026/27 är 46,0 % (50 matcher) mot väntat 50,3 % (z −0,6): inom slumpen. 16 kryss mot väntat 12,1 och hemmafavoriterna vann 15 av 33 (väntat 17,6). Inget av det har hållit i sig tidigare säsonger.

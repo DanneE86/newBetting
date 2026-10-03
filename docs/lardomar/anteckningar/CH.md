@@ -54,6 +54,11 @@ Mer om ligan (signaler, kalibrering, Stryktipset): [ligor/CH.md](../ligor/CH.md)
 
 ## Lärdomar och beslut (handskrivet, daterat – nyast överst)
 
+### 2026-10-03: spikar på Stryktipset (bakkörning 107 omgångar, A/B/C)
+
+- Championship: 371 favoritspikar (A+B+C) satt 44 % (väntat 48 %). Med kryss ≥ 27 % satt de bara 35 % (205 st, över hälften av spikarna), under 27 % 55 % (166 st). 86 av 209 missar blev kryss. Championship är där vi oftast spikar matcher med högt kryss. Spika hellre en starkare favorit (oftast PL) och gardera Championship-matchen.
+- Samlat i [slutsatser.md](../slutsatser.md) (2026-10-03): det fanns nästan alltid en starkare garderad favorit med kryss < 27 % som hade suttit 68–79 %.
+
 ### 2026-09-28: felanalys och förbättringsvarv
 
 - Huvudfelet: webben visade grundmodellens träff (36,6 %). Grundmodellen tippar hemmalaget i 63 av 71 matcher (oddsen i 52), och när den och oddsen var oense hade den rätt 0 gånger av 17 (oddsen 10). Tipsen styrs av oddsen, och den riktiga träffen 2026/27 är 45,3 % mot väntat 47,1 % (z −0,4).

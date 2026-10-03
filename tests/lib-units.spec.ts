@@ -1518,9 +1518,15 @@ test.describe('stryk-engine: kupong A, B och C', () => {
       expect(redGreenRows(rgSets.map((x, i) => ([2, 5, 9, 10, 12].includes(i) ? [0] : x)), rgColors, blue)).toEqual([]);
       // Bara 2 röda garderingar: röd max = 2
       expect(redGreenColors(rgSets.map((x, i) => ([9, 10, 12].includes(i) ? [0] : x)), rgColors, blue)).toEqual([[2, 0, 2], [1, 1, 2]]);
-      // Kupong B är risksystemet (2026-10-02 kväll): röd 1–4 eller 2–4, aldrig min över 2
+      // Kupong B är risksystemet (2026-10-02 kväll): röd 1–4 eller 2–4, aldrig min över 2. Sedan 2026-10-03 röd max 5
+      // (backtest 107 omg: netto −1 807 → +4 033 kr, 12 rätt 4 → 5)
       const { RED_RULES_B } = await load();
-      expect(RED_RULES_B, 'B: röd 1–4 eller 2–4').toEqual([[1, 4], [2, 4]]);
+      expect(RED_RULES_B, 'B: röd 1–5 eller 2–5').toEqual([[1, 5], [2, 5]]);
+      // Reservspik bara på omgångens 4 starkaste favoriter i A och C, B har kvar gamla regeln (backtest 2026-10-03:
+      // spikträff A 53 → 56 %, C 41 → 47 %, B blev sämre). Samma i båda motorerna
+      const m = await load();
+      expect(m.SPIK_TOP, 'A och C: reservspik bland de 4 starkaste favoriterna').toBe(4);
+      if ('SPIK_TOP_B' in m) expect(m.SPIK_TOP_B, 'B: ingen toppregel').toBe(0);
     });
   }
 
@@ -1577,14 +1583,14 @@ test.describe('stryk-engine: kupong A, B och C', () => {
         c.rules.blueHalves.forEach((i: number) => expect(sets[i].length, `${p.product} ${name} match ${i + 1}`).toBe(2));
         // Färgreglerna: aldrig exakt antal (2–2) och aldrig samma fönster för två färger (färger som inte finns är av)
         const on = ['green', 'yellow', 'red'].filter((k) => !c.rules.colorsOff.includes(k));
-        // Röd 1–3 i A och C; B är risksystemet med röd 1–4 eller 2–4 (användaren 2026-10-02 kväll)
+        // Röd 1–3 i A och C; B är risksystemet med röd 1–5 eller 2–5 (användaren 2026-10-02 kväll, max 5 sedan 2026-10-03)
         if (on.includes('red')) {
           if (['B', 'C'].includes(name) && c.rules.redFallback) {
-            // 30 000–50 000 kr gick inte med röd max 4: röd 1–3 och gränsen hålls (står i kupongen)
+            // 30 000–50 000 kr gick inte med röd max 5: röd 1–3 och gränsen hålls (står i kupongen)
             expect(cr.red, `${p.product} B reserv`).toEqual([1, 3]);
             expect(c.rules.payoutExact, `${p.product} B reserv håller 50 000–75 000 kr`).toBe(true);
             expect(c.relaxed.some((t: string) => t.includes(`${name} fick röd 1–3`)), `${p.product} ${name} reserv i texten`).toBe(true);
-          } else if (name === 'B') expect([[1, 4], [2, 4]], `${p.product} ${name}: röd 1–4 eller 2–4`).toContainEqual(cr.red);
+          } else if (name === 'B') expect([[1, 5], [2, 5]], `${p.product} ${name}: röd 1–5 eller 2–5`).toContainEqual(cr.red);
           else if (name === 'C') expect(cr.red, `${p.product} C: röd 2–6`).toEqual([2, 6]);
           else expect(cr.red, `${p.product} ${name}: röd alltid 1–3`).toEqual([1, 3]);
         }

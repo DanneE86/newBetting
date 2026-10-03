@@ -28,6 +28,11 @@ const START_DRAW = Number(arg('start', PRODUCT.start));
 // --all tar alla omgangar.
 const TOP4 = new Set(['Premier League', 'La Liga', 'Serie A', 'Bundesliga']);
 const ALL = process.argv.includes('--all');
+// Parallellt (scripts/backtest-parallel.mjs): --list skriver bara ut vilka omgångar som väljs (JSON) och avslutar,
+// --draws 4848,4847 kör bara de omgångarna (inom samma urval)
+const LIST = process.argv.includes('--list');
+const ONLY = arg('draws') ? new Set(arg('draws').split(',').map(Number)) : null;
+const listed = [];
 const SIGNS = ['1', 'X', '2'];
 const log = (s) => process.stdout.write(`${s}\n`);
 const r3 = (x) => (x == null ? null : Math.round(x * 1000) / 1000);
@@ -60,6 +65,8 @@ for (let n = START_DRAW; n > START_DRAW - 200 && draws.length < COUNT; n--) {
   if (!ok) { log(`omgång ${n} (${d.regCloseTime.slice(0, 10)}): PL ${pl}, topp 4 ${top4} – hoppar över`); continue; }
   const result = entry?.result || null;
   if (!result?.events?.length || !result.distribution?.length) { log(`omgång ${n}: facit saknas`); continue; }
+  if (LIST) { listed.push(n); continue; }
+  if (ONLY && !ONLY.has(n)) continue;
   const a = await analyzeDraw(PRODUCT, d, ctx, result);
   const outcomes = a.events.map((e) => e.result?.outcome);
   if (outcomes.some((o) => !o)) { log(`omgång ${n}: ofullständigt facit`); continue; }
@@ -67,16 +74,24 @@ for (let n = START_DRAW; n > START_DRAW - 200 && draws.length < COUNT; n--) {
   const evalA = a.reduced ? evaluateSnapshot(snap(a.reduced, 'systemPick'), outcomes, result.distribution) : null;
   const evalC = a.reducedC ? evaluateSnapshot({ rowList: a.reducedC.rowList, cost: a.reducedC.cost, picks: a.reducedC.picks }, outcomes, result.distribution) : null;
   const evalB = a.reducedB ? evaluateSnapshot(snap(a.reducedB, 'systemPickB'), outcomes, result.distribution) : null;
-  // Klarade ratt rad fargreglerna? (antal grona/gula/roda over alla 13 matcher inom min/max; null = ratt rad utanfor grundraden)
-  const colorCheck = (red, key) => {
+  // Klarade ratt rad fargreglerna? Raknas som Gambling Cabin: bara de fargade garderingarna (inte spikar och bla halvor).
+  // Tidigare raknades alla 13 matcher, och da gick det inte att se vilken regel som stoppade ratt rad (2026-10-03).
+  // count13 = over alla 13 (jamforelse), stop = reglerna ratt rad bryter mot, ok null = ratt rad utanfor grundraden.
+  // picks = teckenstrangar (C har dem direkt i reducedC.picks)
+  const colorCheck = (red, picks) => {
     const cr = red?.rules?.colorRules;
     if (!cr) return null;
-    const picks = a.events.map((e) => e[key]?.signs || '');
-    const n = { green: 0, yellow: 0, red: 0 };
-    outcomes.forEach((o, i) => { n[a.events[i].colors[SIGNS.indexOf(o)]]++; });
-    const fits = ['green', 'yellow', 'red'].every((c) => n[c] >= cr[c][0] && n[c] <= cr[c][1]); // oavsett grundraden
-    return { rules: cr, count: n, fits, ok: outcomes.some((o, i) => !picks[i].includes(o)) ? null : fits };
+    const blue = new Set(red.rules.blueHalves || []);
+    const n = { green: 0, yellow: 0, red: 0 }, n13 = { green: 0, yellow: 0, red: 0 };
+    outcomes.forEach((o, i) => {
+      const c = a.events[i].colors[SIGNS.indexOf(o)];
+      n13[c]++;
+      if (picks[i].length > 1 && !blue.has(i)) n[c]++;
+    });
+    const stop = ['green', 'yellow', 'red'].filter((c) => !(red.rules.colorsOff || []).includes(c) && (n[c] < cr[c][0] || n[c] > cr[c][1]));
+    return { rules: cr, count: n, count13: n13, fits: !stop.length, stop, ok: outcomes.some((o, i) => !picks[i].includes(o)) ? null : !stop.length };
   };
+  const picksOf = (key) => a.events.map((e) => e[key]?.signs || '');
   const matches = a.events.map((e) => {
     const k = SIGNS.indexOf(e.result.outcome);
     return {
@@ -95,16 +110,18 @@ for (let n = START_DRAW; n > START_DRAW - 200 && draws.length < COUNT; n--) {
     A: a.reduced && { rows: a.reduced.rows, cost: a.reduced.cost, grund: a.reduced.grundRows, payoutMin: a.reduced.rules.payoutMin, exact: a.reduced.rules.payoutExact, hit: a.reduced.hitAll, er: a.reduced.expectedReturn, ...evalA },
     B: a.reducedB && { rows: a.reducedB.rows, cost: a.reducedB.cost, grund: a.reducedB.grundRows, payoutMin: a.reducedB.rules.payoutMin, exact: a.reducedB.rules.payoutExact, hit: a.reducedB.hitAll, er: a.reducedB.expectedReturn, union: a.reducedB.unionHit, overlap: a.reducedB.overlapRows, ...evalB },
     C: a.reducedC && { rows: a.reducedC.rows, cost: a.reducedC.cost, grund: a.reducedC.grundRows, payoutMin: a.reducedC.rules.payoutMin, exact: a.reducedC.rules.payoutExact, hit: a.reducedC.hitAll, er: a.reducedC.expectedReturn, spikes: a.reducedC.picks.filter((x) => x.length === 1).length, halves: a.reducedC.picks.filter((x) => x.length === 2).length, inGrund: outcomes.every((o, i) => a.reducedC.picks[i].includes(o)), outside: outcomes.filter((o, i) => !a.reducedC.picks[i].includes(o)).length, colorRules: a.reducedC.rules.colorRules, colorTarget: a.reducedC.rules.colorTarget, picks: a.reducedC.picks, ...evalC },
-    colorA: colorCheck(a.reduced, 'systemPick'), colorB: colorCheck(a.reducedB, 'systemPickB'),
+    colorA: colorCheck(a.reduced, picksOf('systemPick')), colorB: colorCheck(a.reducedB, picksOf('systemPickB')), colorC: a.reducedC ? colorCheck(a.reducedC, a.reducedC.picks) : null,
     pairBest: Math.max(evalA?.best ?? 0, evalB?.best ?? 0),
     grundA: evalA?.groundCorrect, grundB: evalB?.groundCorrect,
     matches,
   });
   log(`omgång ${n} ${d.regCloseTime.slice(0, 10)} (PL ${pl}): facit ${outcomes.join('')} · A bästa ${evalA?.best ?? '-'} (${evalA?.net ?? '-'} kr) · B bästa ${evalB?.best ?? '-'} (${evalB?.net ?? '-'} kr) · grundrad A ${evalA?.groundCorrect}/13`);
 }
+// Bara listan: inget skrivs (process.exit kraschade på Windows med kod 0xC0000409, så skriptet får ta slut av sig självt)
+if (LIST) log(`LIST:${JSON.stringify(listed)}`);
 
 // Sammanfattning
-const all = draws.flatMap((d) => d.matches);
+const all =draws.flatMap((d) => d.matches);
 const mean = (xs) => { const v = xs.filter((x) => x != null); return v.length ? v.reduce((s, x) => s + x, 0) / v.length : null; };
 const byKey = (key) => mean(all.map((m) => m.ll[key]));
 const spik = (sys) => {
@@ -136,6 +153,6 @@ summary.A.net = summary.A.winnings - summary.A.cost;
 summary.B.net = summary.B.winnings - summary.B.cost;
 summary.A.quality = rowQuality('A');
 summary.B.quality = rowQuality('B');
-fs.writeFileSync(OUT, JSON.stringify({ generatedAt: new Date().toISOString(), summary, draws }, null, 2), 'utf8');
+if (!LIST) fs.writeFileSync(OUT, JSON.stringify({ generatedAt: new Date().toISOString(), summary, draws }, null, 2), 'utf8');
 log(`\nKlart: ${draws.length} omgångar -> ${path.relative(root, OUT)}`);
-log(JSON.stringify({ ...summary, byLeague: undefined }, null, 1));
+if (!LIST) log(JSON.stringify({ ...summary, byLeague: undefined }, null, 1));

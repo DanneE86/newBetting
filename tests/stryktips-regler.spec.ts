@@ -223,11 +223,11 @@ test('reducerade system: budget, teckenregler, rader inom grundraden', () => {
       // Röd 1–3 i A och C (användaren 2026-10-02: "rött ska alltid vara 1-3, 25 % eller lägre är röda"). B är risksystemet
       // (2026-10-02 kväll: "kör 1-4 eller 2-4 röda ... inte mer än 2 röda som minst", "behåll A som det är")
       if (on.includes('red')) {
-        // ... utom när 30 000–50 000 kr inte gick med röd max 4: då röd 1–3 och gränsen hålls (rules.redFallback)
+        // ... utom när 30 000–50 000 kr inte gick med röd max 5: då röd 1–3 och gränsen hålls (rules.redFallback)
         if (['B', 'C'].includes(name) && red.rules.redFallback) {
           expect(red.rules.colorRules.red, `${at}: ${name} reserv röd 1–3`).toEqual([1, 3]);
           expect(red.rules.payoutExact, `${at}: ${name} reserv håller 50 000–75 000 kr`).toBe(true);
-        } else if (name === 'B') expect([[1, 4], [2, 4]], `${at}: röd 1–4 eller 2–4`).toContainEqual(red.rules.colorRules.red);
+        } else if (name === 'B') expect([[1, 5], [2, 5]], `${at}: röd 1–5 eller 2–5 (max 5 sedan 2026-10-03)`).toContainEqual(red.rules.colorRules.red);
         // C är skrällsystemet (2026-10-02 kväll: "C är inte skräll, max vinst är 300k typ"): röd 2–6, högsta rad minst 1 miljon
         else if (name === 'C') {
           expect(red.rules.colorRules.red, `${at}: C röd 2–6`).toEqual([2, 6]);

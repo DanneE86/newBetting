@@ -643,7 +643,11 @@ function grundCandidates(events, maxRows, spikMin = 0, setsA = null, loose = fal
   const fav = (e) => e.final.indexOf(Math.max(...e.final));
   // Spik: matchens egen bedomning (e.spik) om den finns, annars favoritchansen mot spikMin; loose = aven favoriten
   const strictOk = (e, k) => (e.spik ? e.spik.fav === SIGNS[k] && e.spik.spikbar : e.final[k] >= spikMin);
-  const spikOk = (e, k) => strictOk(e, k) || (loose && k === fav(e));
+  // Reservspik (loose) bara nar krysset ar under SPIK_X_MAX (backtest); gar det inte provas utan taket
+  // Reservspik bara pa omgangens spikTop starkaste favoriter (A och C, se SPIK_TOP) och, som backtest-reglage, nar
+  // krysset ar under spikXMax
+  const topP = spikTop ? events.map((e) => Math.max(...e.final)).sort((x, y) => y - x)[spikTop - 1] ?? 0 : 0;
+  const spikOk = (e, k) => strictOk(e, k) || (loose && k === fav(e) && e.final[1] < spikXMax && e.final[k] >= topP);
   const sameA = (x, i) => setsA?.[i]?.length === x.length && x.every((k, j) => k === setsA[i][j]);
   // Ingen helgardering dar alla tecken ar gula (anvandaren 2026-10-02: "3 gula helor ar exakt samma sak som bla helor")
   const options = (e, i) => options0(e, i).filter((x) => x.length < 3 || !allYellowMatch(e));
@@ -687,6 +691,10 @@ function grundCandidates(events, maxRows, spikMin = 0, setsA = null, loose = fal
   const spikesOk = (st) => { const n = st.sets.filter((x) => x.length === 1).length; return n >= MIN_SPIKES && n <= MAX_SPIKES && (st.nl === 0 || n === MIN_SPIKES || loose === 'max') && st.sets.filter((x) => x.length === 3).length >= MIN_HELG && st.sets.filter((x) => x.length === 2).length >= BLUE_HALVES && (st.ns || 0) >= skrallMin; };
   const okList = [...dp.values()].filter(spikesOk);
   // Gar det inte med hogst BLUE_HALVES helgula garderingar (for fa spikbara matcher) slapps den gransen
+  if (!okList.length && loose && (spikXMax < 1 || spikTop)) {
+    const prev = [spikXMax, spikTop]; spikXMax = 1; spikTop = 0;
+    try { return grundCandidates(...arguments); } finally { [spikXMax, spikTop] = prev; }
+  }
   if (!okList.length && ayLimit < 13 && loose) {
     ayLimit++;
     try { return grundCandidates(...arguments); } finally { ayLimit--; }
@@ -705,12 +713,13 @@ function grundCandidates(events, maxRows, spikMin = 0, setsA = null, loose = fal
 const SIGN_STEPS = [[3, 2, 2], [3, 1, 1], [2, 1, 1]];
 // opts.redRules = rodreglerna for systemet (B: RED_RULES_B), annars RED_RULE
 function bestWithSpikes(events, spikMin, setsA, opts, exclude = null) {
-  const prev = [redRules, skrallMin, extraSkrall, minRed];
+  const prev = [redRules, skrallMin, extraSkrall, minRed, spikTop];
+  spikTop = setsA ? SPIK_TOP_B : SPIK_TOP;
   minRed = opts.minRed || MIN_RED;
   redRules = opts.redRules || [RED_RULE];
   skrallMin = opts.skrallMin || 0;
   extraSkrall = opts.extraSkrall || new Set();
-  try { return bestWithSpikesRules(events, spikMin, setsA, opts, exclude); } finally { [redRules, skrallMin, extraSkrall, minRed] = prev; }
+  try { return bestWithSpikesRules(events, spikMin, setsA, opts, exclude); } finally { [redRules, skrallMin, extraSkrall, minRed, spikTop] = prev; }
 }
 // Risksystemen B och C (anvandaren 2026-10-02 kvall): rod 1-4/2-4, rott pa minst MIN_RED_B matcher, utdelning
 // opts.payoutMin x PAYOUT_BAND_B (50 000-75 000 kr) och alltid en skrallspik. Gransen gar fore risken (gransen "far inte
@@ -794,6 +803,15 @@ function bestWithSpikesRules(events, spikMin, setsA, opts, exclude = null) {
 
 const isRed = (e, k) => signColor(e.folk?.[k]) === 'red';
 let ayLimit = BLUE_HALVES;
+let spikXMax = Number(process.env.STRYK_SPIK_X_MAX ?? 1); // kryss-tak for reservspikar (1 = av)
+// Reservspik (favorit som inte bedomts spikbar) bara pa omgangens SPIK_TOP starkaste favoriter, i A och C (anvandaren
+// 2026-10-03: "kanske kan fa en annan spik istallet"). Backtest 107 omg: svaga reservspikar satt 34-43 % medan en
+// starkare garderad favorit hade suttit 68-79 %. Med top 4: spiktraff A 53 -> 56 %, C 41 -> 47 %, chans C 0,21 -> 0,27 %,
+// 11+ ratt C 12 -> 15 omg. B blev samre (44,5 mot 46,5 %, B far inte valja A:s tecken) och har kvar gamla regeln.
+// Gar det inte provas utan regeln. data/stryktips-backtest-*-spiktop4.json, docs/lardomar/slutsatser.md
+const SPIK_TOP = Number(process.env.STRYK_SPIK_TOP ?? 4); // A och C (0 = av)
+const SPIK_TOP_B = Number(process.env.STRYK_SPIK_TOP_B ?? 0); // B
+let spikTop = SPIK_TOP; // regeln for systemet som byggs just nu (satts i bestWithSpikes)
 const allYellowMatch = (e) => [0, 1, 2].every((k) => signColor(e.folk?.[k]) === 'yellow');
 // Bla garderingar (index): bla i lanken och fria fran fargreglerna. Samma som stryk-engine.js.
 // Exakt BLUE_HALVES halvgarderingar bla ("2 halvor bla alltid"): helgula forst, sedan de sakraste utan rott tecken.
@@ -941,11 +959,14 @@ function colorRuleOk(rule, present = [true, true, true]) {
 // Fasta fargregler for A, B och C (anvandaren 2026-10-02): rod alltid 1-3 (folket 25 % eller lagre), gron alltid 4-6.
 // Gult valjs fritt men aldrig exakt och aldrig samma fonster som gront eller rott. Rod/gron star kvar aven om gransen inte
 // gar att na. fixedColors stangs av bara som sista reserv nar ingen kupong alls gar att bygga (star i kupongen).
-const RED_RULE = [1, 3];
+const redEnv = (k) => process.env[k]?.split(';').map((r) => r.split(',').map(Number));
+const RED_RULE = redEnv('STRYK_RED_A')?.[0] || [1, 3];
 // Kupong B ar risksystemet (anvandaren 2026-10-02 kvall: "kor 1-4 eller 2-4 roda ... inte mer an 2 roda som minst",
 // "behall A som det ar"): rod 1-4 eller 2-4, den som ger hogst chans valjs. Backtest 107 omg (2023/24-2026/27): ratt rad i
 // omgangar over 500 000 kr hade i snitt 5,2 roda och 34 av 37 fler an 3. A och C har kvar 1-3. Samma som stryk-engine.js.
-const RED_RULES_B = [[1, 4], [2, 4]];
+// 2026-10-03: röd max 5 (1-5/2-5). Backtest 107 omg: B netto -1 807 -> +4 033 kr, 12 ratt 4 -> 5, samma chans, gransen
+// holl lika ofta (106/107). Med 1-4 stoppades B 4847 (247 257 kr, 5 roda). data/stryktips-backtest-*-redB5.json
+const RED_RULES_B = redEnv('STRYK_RED_B') || [[1, 5], [2, 5]];
 let redRules = [RED_RULE]; // rodreglerna for systemet som byggs just nu (satts i bestWithSpikes)
 // Skyddet "3 roda + resten grona" (redGreenRows) galler med 3 roda aven i B. Med B:s rod max 4 fick B slappa reglerna
 // (Stryktipset 4973) och gransen hamnade pa 111 000 kr (Europatipset 2613); raderna med 3 roda ryms anda i 1-4/2-4.
@@ -1984,7 +2005,7 @@ function currentRules(productId) {
   return { signMin: SIGN_MIN.A, signMinB: SIGN_MIN.B, bMode: B_MODE, payoutMin: utdMin(productId), budget: BUDGET, modelW: MODEL_W, modelWThin: MODEL_W_THIN, market: MARKET_MODE, grundMax: GRUND_MAX_ROWS };
 }
 
-export { colorTriples, fitColorRule, colorRuleOk, colorsPresent, analyzeDraw, oddsetAvailability, evaluateSnapshot, loadBacktests, loadNationalElo, loadGroup, fitModel, get, API, SIGN_MIN, SIGN_MIN_C, SPIK_MIN_BY_PRODUCT, MIN_SPIKES, MAX_SPIKES, MIN_HELG, SKRALL_SPIK, RED_RULES_B, currentRules, PRODUCTS };
+export { colorTriples, fitColorRule, colorRuleOk, colorsPresent, analyzeDraw, oddsetAvailability, evaluateSnapshot, loadBacktests, loadNationalElo, loadGroup, fitModel, get, API, SIGN_MIN, SIGN_MIN_C, SPIK_MIN_BY_PRODUCT, MIN_SPIKES, MAX_SPIKES, MIN_HELG, SKRALL_SPIK, RED_RULES_B, SPIK_TOP, SPIK_TOP_B, currentRules, PRODUCTS };
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   main().catch((e) => {
