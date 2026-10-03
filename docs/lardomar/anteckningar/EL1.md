@@ -55,6 +55,11 @@ Mer om ligan (signaler, kalibrering, Stryktipset): [ligor/EL1.md](../ligor/EL1.m
 
 ## Lärdomar och beslut (handskrivet, daterat – nyast överst)
 
+### 2026-10-03: spikar på Stryktipset (bakkörning 107 omgångar, A/B/C)
+
+- League One: 35 favoritspikar (A+B+C) satt 34 % (väntat 43 %). Med kryss ≥ 27 % satt de 26 % (23 st), under 27 % 50 % (12 st). 14 av 23 missar blev kryss. Litet urval, men samma mönster som Championship och starkare. Spika helst inte League One.
+- Samlat i [slutsatser.md](../slutsatser.md) (2026-10-03): det fanns nästan alltid en starkare garderad favorit med kryss < 27 % som hade suttit 68–79 %.
+
 ### 2026-09-28: felanalys och förbättringsvarv
 
 - Tipsmotorns träff 2026/27 är 34,5 % mot väntat 46,1 % (z −2,2), den enda ligan som ligger klart under vad tipsens egna procent lovade. Kontroll av datafel: med ombytta hemma- och bortaodds blir träffen 32 %, så lagen är rätt matchade. Förra säsongen låg samma motor 2,8 procentenheter över förväntan (z +1,3).

@@ -60,6 +60,24 @@ Per liga (80–260 lag-matcher per liga, cirka 230 tester): inget |z| över 2,2,
 
 ## Vad som håller
 
+**2026-10-03, Stryktipset: varför systemen missar 13 rätt, och spikarna (A, B och C, 107 omgångar 2023/24–2026/27, `data/stryktips-backtest-*-riskC.json`).**
+- **Rätt rad finns nästan aldrig i grundraden.** Den låg utanför i 100 av 107 omgångar för A, 105 för B och 104 för C. Det är grundraden (tecknen) som avgör, inte reduceringen. I 70 av A:s 100 missar var 3 eller fler matcher fel.
+- Rätt rad har i snitt 4,0 röda (folket ≤ 25 %) och 3,3 kryss. Av A:s missade tecken var 206 av 332 röda och 152 kryss.
+- **Modellen är välkalibrerad.** Favoriter vinner som vi säger på alla nivåer (till exempel 70–100 %: 77,7 % mot 76,7 %) och i alla ligor. Felet sitter i vilka matcher som spikas, inte i procenten.
+- **Spikarna går sämre än favoriter i allmänhet.** A:s favoritspikar på 45–55 % satt 32 % (väntat 51 %, n 75). Ospikade favoriter på samma nivå vann 49 %. Under 55 % satt A:s spikar 34 % (väntat 45 %, n 166).
+- **Kryss är det som fäller spikarna.** Spik när vårt kryss är ≥ 27 %: A satt 32 % (väntat 41 %), under 27 % 62 % (väntat 63 %). 91 av 159 missade favoritspikar i A blev kryss, B 64 av 152, C 68 av 162.
+- **Det fanns nästan alltid en bättre spik.** Vid varje svag favoritspik (kryss ≥ 27 % eller p < 55 %) fanns i samma omgång en garderad favorit med kryss < 27 %. Svaga spikar satt / starkaste garderade favoriten hade suttit: A 34 % / 68 % (n 166), B 43 % / 79 % (n 209), C 37 % / 76 % (n 230). Troligen spikar motorn svaga favoriter för att utdelningsgränsen tar bort rader där starka favoriter vinner (de betalar lite). Reservspikarna (favorit som inte bedömts spikbar, för att nå minst 2 spikar eller hålla 30–75k) är de svaga.
+- **Exakt vad som stoppade rätt rad när den fanns i grundraden** (räknat som Gambling Cabin, bara färgade garderingar): B 4847 (247 257 kr) 5 röda mot röd max 4; A 4873 (254 901 kr) 4 röda och 2 gröna; A 4915 (285 598 kr) 7 röda och 1 grön; A 4846 (97 744 kr) och C 4825 (92 431 kr) utdelningsgränsen. Övriga betalade 559–9 180 kr och ska bort. Bakkörningen räknade tidigare färger över alla 13 matcher, sedan 2026-10-03 som GC (`colorA/B/C.stop`).
+- **B:s röd max skär inga rader** när B har 7 färgade garderingar (4 spikar + 2 blå halvor): grön + gul + röd = 7 och grön minst 3 ger högst 4 röda. Grön 2–6 i B testades (röd 0–6 gav då fler rader) men gav netto −25 339 kr mot −1 807 kr (12 rätt 4 → 2). Grönt är kvar på 3–6 (användaren 2026-10-03). Körningen: `data/stryktips-backtest-*-greenB26.json`.
+- **Resultat av varianterna (107 omg, `data/stryktips-backtest-*-{redB5,spik27,spiktop4,redA4,nya-regler}.json`):**
+  - B röd max 5 (1–5/2–5): netto −1 807 → +4 033 kr, 12 rätt 4 → 5, samma chans och gräns. **Infört.**
+  - Reservspik bara på omgångens 4 starkaste favoriter: spikträff A 53,3 → 56,2 %, C 41,1 → 46,5 %, B 46,5 → 44,5 %. Chans C 0,21 → 0,27 %, 11+ rätt C 12 → 15. **Infört i A och C** (`SPIK_TOP`), inte i B. Går det inte (för få starka favoriter när utdelningsgränsen kräver 4 spikar) väljs som förut.
+  - Reservspik bara när krysset < 27 %: samma riktning men svagare (A 54,8 %, C 45,9 %, B 45,9 %). Inte infört, reglaget finns kvar (`STRYK_SPIK_X_MAX`).
+  - A röd 1–4: **förkastat**. Chans A 0,22 → 0,14 %, gränsen höll bara 49 av 107 gånger (idag 98), B blev också sämre.
+  - Båda införda tillsammans: A netto −22 111 → +24 239 kr (en 13:a, omg 4876), B −1 807 → +11 273 kr, C +216 877 → −49 034 kr. C tappade 13 rätt i omg 4847 (280 850 kr) men fick högre chans (0,27 mot 0,21 %) och fler 11+ (15 mot 12). Nettot avgörs av enstaka omgångar – följ upp spikträffen live.
+  - Nästa idé: när toppregeln inte går, vidga gradvis (5, 6 starkaste) i stället för att släppa den helt. Bakkörningen går nu på 15–20 min med `scripts/backtest-parallel.mjs`.
+- Analysen ska göras om när fler omgångar finns: spikar per kryssnivå och "fanns en bättre spik". Skript: per-match-fälten i bakkörningen (`pickA/pickB`, `C.picks`, `final`, `folk`, `outcome`).
+
 0. **2026-09-30, truppens marknadsvärde i ligor UTAN odds (kandidat, starkaste fyndet i spelardatan).** Skript: `scripts/lardomar-spelare-truppvarde.mjs`. x = ln(värde hemma / borta), där värdet är summan för de 14 med flest ligaminuter i år, med marknadsvärdet vid matchdatum (`marketValueHistory`). Mot tipsens sannolikheter (`data/reports/tips-backtest.json`):
    - Ligor utan odds (BR2, COL, CZ, HR, NO2, SE2, n 1 015): b 0,20 p per enhet, **z 3,3**. Per liga: COL z 2,2, NO2 z 2,2, HR z 2,0, BR2 z 1,4, CZ z 0,9, SE2 z −0,2.
    - Ligor med odds: z 0,5 mot tipsen och z 1,0 mot stängningsodds. Marknaden har det redan.
