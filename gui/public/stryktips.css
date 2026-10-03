@@ -451,6 +451,14 @@ body.view-stryktips main { display: none !important; }
 .sb-tur { padding: 0; border: 0; background: none; color: var(--color-text); font: inherit; font-weight: var(--font-weight-bold); cursor: pointer; text-decoration: underline dotted; text-underline-offset: 3px; }
 .tur-btn { cursor: pointer; font: inherit; }
 .st-chip.tur-btn { font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); }
+/* Missar per system: ⚠ på tecken kupongen brukar ha fel på (gul), röd = oftare än vår chans sa */
+.st-sysmiss { display: inline-block; margin-left: 4px; padding: 0 5px; border-radius: 999px; font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); background: var(--color-warning-bg); color: var(--color-warning); white-space: nowrap; cursor: help; }
+.st-sysmiss.over { background: var(--color-danger-bg); color: var(--color-danger); }
+.sb-miss-legend { margin: 0 0 8px; }
+/* Risklag som B/C har tippat (streckfavorit som sällan vinner); spik = starkare */
+.sb-risk { display: inline-block; margin-left: 4px; padding: 0 5px; border-radius: 999px; border: 1px solid var(--color-danger); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); color: var(--color-danger); white-space: nowrap; cursor: help; }
+.sb-risk.spik { background: var(--color-danger-bg); }
+.sb-risk-legend { margin: 0 0 8px; }
 .st-chip.tur-btn small { font-weight: var(--font-weight-medium); }
 .st-chip.tur-btn:hover { background: var(--color-success-bg); }
 .sb-row .tur-explain { grid-column: 1 / -1; }

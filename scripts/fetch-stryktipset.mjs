@@ -14,7 +14,7 @@ import { fetchMatchContext, contextNotes } from './lib/match-context.mjs';
 import { extraOdds, matchExtraOdds } from './lib/extra-odds.mjs';
 import { clubEloFor } from './lib/club-elo.mjs';
 import { fillXg } from './lib/understat-xg.mjs';
-import { buildMissProfile, STRYK_LEAGUES } from './lib/stryk-miss-profile.mjs';
+import { buildMissProfile, buildSystemMissProfiles, STRYK_LEAGUES } from './lib/stryk-miss-profile.mjs';
 import { colorBands } from './lib/stryk-color-bands.mjs';
 import { calibrationTable, assessMatch, assessmentText } from './lib/stryk-calibration.mjs';
 import { buildRefIndex, loadRefereeMatches, refereeFlags, refereeNotes, buildRefHomeIndex, refereeHomeBias, applyRefereeAway, refereeAwayNotes, resolveTeam } from './lib/referee-streaks.mjs';
@@ -1970,6 +1970,7 @@ async function main() {
     backtest: loadBacktests(),
     missProfile: buildMissProfile(), // vanliga missar i kupongarkivet (turmatcher i webben)
     missProfileStryk: buildMissProfile(undefined, { product: 'stryktipset', leagues: STRYK_LEAGUES }), // Stryktipset: bara PL, Championship, League One
+    missProfileSystems: buildSystemMissProfiles(), // missar per kupong A/B/C ur bakkorningen (markeringen i kupongtabellen)
     // Lag som streckats som favorit denna sasong och hur ofta de inte vunnit (panelen Risklag)
     streckFlopSeason: streckFlopSeasonList(streckStats(), new Date().toISOString().slice(0, 10)),
   };

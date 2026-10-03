@@ -81,6 +81,62 @@ for (const [vy, namn] of [['stryktipset', 'Stryktipset'], ['europatipset', 'Euro
   });
 }
 
+test('Stryktipset: kupongtabellen markerar tecken som A, B och C brukar ha fel på (⚠), inga JS-fel', async ({ page }) => {
+  const data = JSON.parse(fs.readFileSync(path.join(root, 'data', 'stryktipset.json'), 'utf8'));
+  test.skip(!data.missProfileSystems, 'ingen missprofil per system i data/stryktipset.json');
+  const fel = await oppna(page, 'stryktipset');
+  const view = page.locator('#stryktips-view');
+  await expect(view.locator('.sb-row')).toHaveCount(13, { timeout: 30_000 });
+  await page.locator('#sb-generate').click();
+  const table = view.locator('table.sb-table');
+  await expect(table).toBeVisible({ timeout: 60_000 });
+  const legend = view.locator('.sb-miss-legend');
+  await expect(legend).toContainText('brukar ha fel på');
+  // Antalet i förklaringen = antalet markeringar i tabellen
+  const n = Number((await legend.textContent())!.match(/(\d+) st i omgången/)![1]);
+  await expect(table.locator('.st-sysmiss')).toHaveCount(n);
+  if (n) await expect(table.locator('.st-sysmiss').first()).toHaveAttribute('title', /missade \d+ av \d+ gånger i bakkörningen/);
+  // Risklag i B och C (2026-10-03): markering när kupongen tippat risklagets seger utan helgardering, aldrig i A
+  const p = data.products.find((x: any) => x.product === 'stryktipset');
+  const rows = table.locator('tbody tr');
+  for (let i = 0; i < p.events.length; i++) {
+    const e = p.events[i];
+    const tds = rows.nth(i).locator('td');
+    await expect(tds.nth(1).locator('.sb-risk'), `match ${i + 1} A`).toHaveCount(0);
+    for (const [col, sys] of [[2, 'B'], [3, 'C']] as const) {
+      const signs = ((await tds.nth(col).locator('.st-tip').textContent()) || '').replace(/[^1X2]/g, '');
+      const want = !!e.streckFlop?.flagged && signs.length < 3 && ((e.streckFlop.home && signs.includes('1')) || (e.streckFlop.away && signs.includes('2')));
+      await expect(tds.nth(col).locator('.sb-risk'), `match ${i + 1} ${sys} ${signs}`).toHaveCount(want ? 1 : 0);
+    }
+  }
+  await table.screenshot({ path: path.join(root, 'test-results', 'stryktips-sysmiss.png') });
+  expect(fel, fel.join('\n')).toEqual([]);
+});
+
+test('Stryktipset: krav på risklagets seger i B ger markeringen ⚠ risklag i B men aldrig i A', async ({ page }) => {
+  const data = JSON.parse(fs.readFileSync(path.join(root, 'data', 'stryktipset.json'), 'utf8'));
+  const p = data.products.find((x: any) => x.product === 'stryktipset');
+  const e = p?.events.find((x: any) => x.streckFlop?.flagged);
+  test.skip(!e, 'inget risklag i omgången');
+  const sign = e.streckFlop.home ? '1' : '2';
+  const fel = await oppna(page, 'stryktipset');
+  const view = page.locator('#stryktips-view');
+  const row = view.locator(`.sb-row[data-ev="${e.eventNumber}"]`);
+  await expect(row).toBeVisible({ timeout: 30_000 });
+  await row.locator(`.sb-sign[data-sign="${sign}"]`).click();
+  await row.locator('.sb-scope [data-scope="B"]').click();
+  await page.locator('#sb-generate').click();
+  const tr = view.locator('table.sb-table tbody tr').nth(p.events.indexOf(e));
+  await expect(tr.locator('td').nth(2).locator('.st-tip'), 'B har kravet').toContainText(sign, { timeout: 60_000 });
+  const mark = tr.locator('td').nth(2).locator('.sb-risk');
+  await expect(mark).toHaveCount(1);
+  await expect(mark).toHaveAttribute('title', new RegExp(`Kupong B har tippat ${sign} på risklaget`));
+  await expect(tr.locator('td').nth(1).locator('.sb-risk'), 'aldrig i A').toHaveCount(0);
+  await expect(view.locator('.sb-risk-legend')).toContainText('risklag');
+  await view.locator('table.sb-table').screenshot({ path: path.join(root, 'test-results', 'stryktips-risk.png') });
+  expect(fel, fel.join('\n')).toEqual([]);
+});
+
 test('Stryktipset: panelen Risklag denna säsong och etiketten risklag på flaggade lag', async ({ page }) => {
   const data = JSON.parse(fs.readFileSync(path.join(root, 'data', 'stryktipset.json'), 'utf8'));
   const p = data.products.find((x: any) => x.product === 'stryktipset');

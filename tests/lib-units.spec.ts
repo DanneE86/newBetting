@@ -681,6 +681,37 @@ test('tips-archive: slimDraw/slimResult behaller bara analysfalten', async () =>
     .toEqual({ drawNumber: 1, events: [{ eventNumber: 1, outcome: '1' }], distribution: [{ name: '13 rätt', winners: 2, amount: '100' }] });
 });
 
+// ---------- stryk-miss-profile.mjs: missar per system (A, B, C) ----------
+
+test.describe('stryk-miss-profile: missar per kupong ur bakkörningen', () => {
+  test('buildSystemMissProfiles: grupper per system, skräll utan favoriten, bara valda ligor', async () => {
+    const { buildSystemMissProfiles, sysGroupKey } = await lib('stryk-miss-profile.mjs');
+    // Favorit 1 med 50 % -> band 1 (45–55 %); spik 2 utan favoriten = skräll
+    expect(sysGroupKey('1', [0.5, 0.3, 0.2])).toBe('spik|1|1');
+    expect(sysGroupKey('1X', [0.5, 0.3, 0.2])).toBe('halv|1X|1');
+    expect(sysGroupKey('2', [0.5, 0.3, 0.2])).toBe('skrall|spik');
+    expect(sysGroupKey('X2', [0.5, 0.3, 0.2])).toBe('skrall|halv');
+    const m = (outcome: string, pickA: string, pickB: string, league = 'Premier League') => ({ outcome, final: [0.5, 0.3, 0.2], league, pickA, pickB });
+    const draws = [
+      { date: '2025-01-04', C: { picks: ['2', '1X2'] }, matches: [m('X', '1', '1X'), m('1', '1X2', '2')] },
+      { date: '2025-01-11', C: { picks: ['2', '1'] }, matches: [m('1', '1', '1X'), m('2', '1', '2', 'Serie A')] },
+    ];
+    const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'sysmiss-'));
+    fs.writeFileSync(path.join(dir, 'bt.json'), JSON.stringify({ draws }));
+    const p = buildSystemMissProfiles(['bt.json', 'saknas.json'], { dir });
+    expect(p).toMatchObject({ draws: 2, from: '2025-01-04', to: '2025-01-11', leaguesOnly: ['Premier League', 'Championship', 'League One'] });
+    // A: spik 1 två gånger i PL (en miss med X); Serie A-matchen räknas inte
+    expect(p.systems.A['spik|1|1']).toMatchObject({ n: 2, miss: 1, rate: 0.5, by: { 1: 0, X: 1, 2: 0 }, label: 'Spik 1 · hemmafavorit 45–55 %' });
+    expect(p.systems.A['spik|1|1'].exp).toBeCloseTo(0.5, 3);
+    // B: 1X två gånger utan miss; skrällspik 2 en gång (miss, kom 1)
+    expect(p.systems.B['halv|1X|1']).toMatchObject({ n: 2, miss: 0 });
+    expect(p.systems.B['skrall|spik']).toMatchObject({ n: 1, miss: 1, label: 'Skrällspik (inte favoriten)' });
+    // C: skrällspik 2 två gånger (X och 1 kom), helgardering räknas inte
+    expect(p.systems.C['skrall|spik']).toMatchObject({ n: 2, miss: 2, rate: 1 });
+    expect(buildSystemMissProfiles(['saknas.json'], { dir })).toBeNull();
+  });
+});
+
 // ---------- coaches.mjs ----------
 
 test.describe('coaches: tränare per match från FotMob', () => {
