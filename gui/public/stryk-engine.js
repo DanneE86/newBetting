@@ -11,7 +11,10 @@ const SIGN_MIN = [4, 2, 2];
 export const SIGN_MIN_B = [3, 2, 2];
 // Folkets streck: grön >= 45 %, röd 25 % eller lägre (användaren 2026-10-02, avrundat till hela procent), annars gul
 const COLOR = { green: 0.45, red: 0.25 };
-const UTD_MIN_BY_PRODUCT = { stryktipset: 30000, europatipset: 20000 };
+// Stryktipset A 15 000 kr (gränsfönster 15 000-25 000) sedan 2026-10-04 (anvandaren: "kor 15k pa A"). Backtest
+// 107 omg (C av, data/stryktips-backtest-*-{tB2,utd15}.json): A chans 13 rätt 27,5 -> 39,9 % (summa), 11+ 12 -> 16, 10+ 32 -> 40,
+// netto +13 088 -> +23 824 kr. B och C har kvar 50 000-75 000 kr, D 30 000-50 000 kr.
+const UTD_MIN_BY_PRODUCT = { stryktipset: 15000, europatipset: 20000 };
 // Kupong B (risksystemet): 50 000–75 000 kr för 13 rätt på båda spelen (användaren 2026-10-02 kväll: "öka B till 50k-75k",
 // tidigare 30 000–50 000)
 const UTD_MIN_B = 50000, PAYOUT_BAND_B = 75 / 50;
@@ -171,13 +174,16 @@ const pickOf = (x) => ({
 // forced[i] = låsta tecken (t.ex. [0, 1] för 1X) eller null. Övriga matcher: de 1–3 troligaste tecknen.
 // avoid = A:s grundrad (kupong B): B får aldrig samma gardering som A på någon match, men ärver A:s spikar – högst
 // AB_SPIK_DIFF match får skilja på spik (användaren 2026-10-03: "A och B får inte ha samma garderingar men max 1 spik
-// skilja"). Krav i B räknas inte. loose = spik får läggas på favoriten även när matchen inte bedömts som spikbar
+// skilja"). B_INHERIT false = motsystem (inte ens samma spik). Krav i B räknas inte. loose = spik får läggas på favoriten även när matchen inte bedömts som spikbar
 // (reserv när minst MIN_SPIKES spikar annars inte går).
 // Grundrad mot utdelningsgränsen (2026-10-04): DP:n väljer grundrad efter chansen att rätt rad finns i grundraden, men
 // gränsen 30 000–50 000 kr stryker sedan favoritraderna. Extra kandidater från DP:n med tecknens vikt p × folk^−beta
 // (tecken folket understreckar väger tyngre) – valet görs ändå efter kupongens chans efter alla regler. Backtest 107 omg:
 // A chans 26,75 → 27,46 %, B 15,67 → 16,66 %. Samma som fetch-stryktipset.mjs (GRUND_TILT).
 export const GRUND_TILT = [0, 0.3, 0.5];
+// Kupong B (avoid satt) lutar starkare mot understreckade tecken (2026-10-04, 107 omg): chans 16,67 → 16,35 %, väntad
+// återbetalning 0,48 → 0,66 kr/kr, 12 rätt 3 → 4. Samma som fetch-stryktipset.mjs (GRUND_TILT_B).
+export const GRUND_TILT_B = [0.5, 0.8, 1];
 let grundTilt = 0;
 // Andel av matchens vikt som garderingen sub tacker, med vikten p x folk^-beta (beta 0 = vanlig chans)
 export function tiltShare(e, sub, beta) {
@@ -189,7 +195,7 @@ function grundCandidates(events, maxRows, forced, avoid = null, spikMin = 0, loo
   const seen = new Set(), out = [];
   const prev = grundTilt;
   try {
-    for (const t of GRUND_TILT) {
+    for (const t of avoid ? GRUND_TILT_B : GRUND_TILT) {
       grundTilt = t;
       for (const c of grundCandidates1(events, maxRows, forced, avoid, spikMin, loose)) {
         const k = c.sets.map((x) => x.join("")).join("|");
@@ -211,9 +217,9 @@ function grundCandidates1(events, maxRows, forced, avoid = null, spikMin = 0, lo
   // Ingen spik på överstreckad favorit (OVER_SPIK) i A och C
   const canSpik = (e, k) => canSpik1(e, k) && !(!avoid && overStreck(e, k));
   // B ärver A:s spik; matcher där någon av dem spikar utan att spikarna är lika räknas (högst AB_SPIK_DIFF)
-  const inheritA = (x, i) => x.length === 1 && avoid?.[i]?.length === 1 && avoid[i][0] === x[0];
+  const inheritA = (x, i) => B_INHERIT && x.length === 1 && avoid?.[i]?.length === 1 && avoid[i][0] === x[0];
   const xFolkHere = (e) => xFolkOn && e.final.indexOf(Math.max(...e.final)) !== 1 && xFolk(e);
-  const spikDiff = (x, i) => (avoid && forced[i] == null && (x.length === 1 || avoid[i].length === 1) && !inheritA(x, i) ? 1 : 0);
+  const spikDiff = (x, i) => (B_INHERIT && avoid && forced[i] == null && (x.length === 1 || avoid[i].length === 1) && !inheritA(x, i) ? 1 : 0);
   const options = (e, i) => {
     if (forced[i] != null) return [forced[i]];
     // Ingen helgardering där alla tecken är gula (användaren 2026-10-02: "3 gula helor är exakt samma sak som blå helor")
@@ -277,7 +283,7 @@ function grundCandidates1(events, maxRows, forced, avoid = null, spikMin = 0, lo
   // (AB_SPIK_DIFF). Har A så många helor att 3 inte går i B blir det så många som går (A/B-regeln går före, 2026-10-03)
   // Inte på matcher där alla tecken ligger på 26–44 % (där blir det aldrig helgardering)
   const helgOk = (i) => forced[i]?.length === 3 || (forced[i] == null && !allYellowMatch(events[i]));
-  const bHelgMax = avoid ? avoid.filter((x, i) => x.length === 2 && helgOk(i)).length + Math.min(AB_SPIK_DIFF, avoid.filter((x, i) => x.length === 1 && helgOk(i)).length) : 13;
+  const bHelgMax = avoid && B_INHERIT ? avoid.filter((x, i) => x.length === 2 && helgOk(i)).length + Math.min(AB_SPIK_DIFF, avoid.filter((x, i) => x.length === 1 && helgOk(i)).length) : 13;
   const minHelg = Math.min(MIN_HELG, bHelgMax, forced.filter((f) => f == null || f.length === 3).length);
   // Minst BLUE_HALVES halvgarderingar (de blir blå); låser användaren så mycket att det inte går gäller deras krav
   const minHalf = Math.min(BLUE_HALVES, forced.filter((f) => f == null || f.length === 2).length);
@@ -316,6 +322,10 @@ export const SPIK_TOP = 4; // A och C; B (avoid satt) har kvar gamla regeln. Sam
 let spikTopOn = true; // false = reserv när regeln gör kupongen omöjlig
 // A och B (användaren 2026-10-03): aldrig samma gardering, högst 1 spik får skilja – B ärver A:s spikar. Samma som fetch.
 export const AB_SPIK_DIFF = 1;
+// B ärver A:s spikar (B_INHERIT). Motsystem (aldrig samma tecken, inte ens spiken) provat 2026-10-04, 107 omg: B chans
+// 13 rätt 16,7 -> 12,7 % (summa), A+B 43,8 -> 39,3 %, 12 rätt 3 -> 1, B gick inte att bygga i 4 omg. Arvet behålls
+// (användaren 2026-10-04). false = motsystem (AB_SPIK_DIFF gäller bara med arv). Samma som fetch-stryktipset.mjs.
+export const B_INHERIT = true;
 // Skrällspik i A (35–47 %). Samma som SKRALL_A i fetch-stryktipset.mjs. B och C har alltid sin.
 export const SKRALL_A = true;
 let skrallCount = SKRALL_SPIK.count; // för systemet som byggs just nu (sätts i buildWithLadder)
@@ -1017,7 +1027,8 @@ export function generateCoupons(p, krav) {
     turnover: rules.turnover || GC_TURNOVER[p.product] || 1e7,
     realTurnover: rules.realTurnover || rules.turnover || GC_TURNOVER[p.product] || 1e7,
     jackpot: rules.jackpot || 0,
-    payoutMin: rules.payoutMinReal || UTD_MIN_BY_PRODUCT[p.product] || 30000,
+    // Spelets regel här går före datafilens (gammal data kan ha en äldre gräns, t.ex. 30 000 före 2026-10-04)
+    payoutMin: UTD_MIN_BY_PRODUCT[p.product] || rules.payoutMinReal || 30000,
     colorBands: p.colorBands || null,
     spikMin: SPIK_MIN_BY_PRODUCT[p.product] ?? 0,
   };

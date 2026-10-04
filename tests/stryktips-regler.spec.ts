@@ -35,7 +35,8 @@ test.beforeAll(async () => {
   expect(MIN_HELG).toBe(3);
 });
 const signMinOf = (name: 'A' | 'B' | 'C', red: any, product = 'stryktipset') => (name === 'C' ? SIGN_MIN_C[product] : name === 'A' || red.split ? SIGN_MIN.A : SIGN_MIN.B);
-const UTD_MIN = { stryktipset: 30000, europatipset: 20000 } as Record<string, number>;
+// Stryktipset A 15 000 sedan 2026-10-04 (tidigare 30 000)
+const UTD_MIN = { stryktipset: 15000, europatipset: 20000 } as Record<string, number>;
 const PAYOUT_13 = 0.65 * 0.4;
 const COLOR = { green: 0.45, red: 0.25 };
 const VALUE_LEVELS = { low: 0.26, high: 0.4 };

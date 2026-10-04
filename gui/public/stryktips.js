@@ -10,7 +10,7 @@ const seKey = (p, e) => ["svs", p.product, p.drawNumber, e.eventNumber].join("|"
 const view = document.getElementById("stryktips-view");
 const tabs = [...document.querySelectorAll(".view-tab")];
 const SIGNS = ["1", "X", "2"];
-const UTD_MIN = { stryktipset: 30000, europatipset: 20000 }; // kupong A, samma som fetch-stryktipset.mjs
+const UTD_MIN = { stryktipset: 15000, europatipset: 20000 }; // kupong A, samma som fetch-stryktipset.mjs (Stryktipset 15k sedan 2026-10-04)
 
 let data = null;
 let product = null;
@@ -940,6 +940,7 @@ function streckNote(p, st) {
   return `<details class="st-streck ds-notice${st.liveError ? " is-warn" : ""}"${keep("streck")}><summary>${head}</summary><p>${more}</p></details>`;
 }
 
+
 let backtestOpened = false;
 function renderB(p, head, top = "", extras = "") {
   const st = bState(p);
@@ -991,7 +992,7 @@ function renderB(p, head, top = "", extras = "") {
             <li>Minst 2 och högst 4 spikar och minst 3 helgarderingar per kupong. Spikarna och exakt två halvgarderingar är <b>blå</b> (helgula först, annars de säkraste). Helgarderingar är aldrig blå och läggs aldrig på matcher där alla tecken ligger på 26–44 %. Blått räknas inte i färgreglerna, precis som spikarna.</li>
             <li>Bara tre färger, som i Gambling Cabin: <b>blå</b> (spikar, de blå halvorna och tecken som folket streckat 26–44 %), <b>grön</b> (minst 45 %) och <b>röd</b> (25 % eller lägre). Blått har ingen färgregel.</li>
             <li>Röd = folket 25 % eller lägre. Grön är alltid 3–6 per rad. Röd per rad: A 1–2, B 1–5 eller 2–5, C 2–6 (B får 1–2, annars 1–3, och C 1–3 om gränsen annars inte går). Rött på minst 5 olika matcher i garderingarna i A, minst 6 i B, och i C fler (6–10) tills högsta raden ger minst 1 miljon.</li>
-            <li>Lägsta utdelning: A 30 000–50 000 kr, B och C 50 000–75 000 kr, utan tak. Ger det för många rader blir gränsen så låg som går, och kupongen säger det.</li>
+            <li>Lägsta utdelning: A ${(UTD_MIN[p.product] || 30000).toLocaleString("sv-SE")}–${Math.round((UTD_MIN[p.product] || 30000) * 50 / 30).toLocaleString("sv-SE")} kr, B och C 50 000–75 000 kr, utan tak. Ger det för många rader blir gränsen så låg som går, och kupongen säger det.</li>
             <li>Färgreglerna (antal gröna och röda tecken per rad) väljs så att chansen till 13 rätt blir högst – aldrig 0 till max, aldrig ett exakt antal (som 2–2) och aldrig samma fönster för två färger.</li>
             <li><b>A:</b> högst chans till 13 rätt, teckenregler 4-2-2, utdelning minst ${(UTD_MIN[p.product] || 30000).toLocaleString("sv-SE")} kr.</li>
             <li><b>B</b> är risksystemet: teckenregler 3-2-2, 50 000–75 000 kr, alltid en skrällspik (runt 40 %, annars den som är näst på tur), aldrig samma gardering som A, och högst en spik får skilja – B har A:s spikar utom på högst en match. Håller gränsen inte med röd 1–5/2–5 får B röd 1–3.</li>

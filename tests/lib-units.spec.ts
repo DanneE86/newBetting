@@ -1484,7 +1484,7 @@ test.describe('stryk-engine: kupong A, B och C', () => {
     expect(fetch.GRUND_TILT).toEqual(web.GRUND_TILT);
     // Hemmafavorit 50 % som folket streckar 75 %, kryss 28 % på 15 %, borta 22 % på 10 %
     const e = { final: [0.5, 0.28, 0.22], folk: [0.75, 0.15, 0.1] };
-    for (const sub of [[0], [0, 1], [1, 2], [0, 1, 2]]) for (const b of [0, 0.3, 0.5]) expect(fetch.tiltShare(e, sub, b)).toBeCloseTo(web.tiltShare(e, sub, b), 12);
+    for (const sub of [[0], [0, 1], [1, 2], [0, 1, 2]]) for (const b of [0, 0.3, 0.5, 0.8, 1]) expect(fetch.tiltShare(e, sub, b)).toBeCloseTo(web.tiltShare(e, sub, b), 12);
     // beta 0 = vanlig chans
     expect(web.tiltShare(e, [0, 1], 0)).toBeCloseTo(0.78, 12);
     // Med vikten blir X2 tyngre än chansen och favoriten lättare; helgardering alltid 1
@@ -1541,6 +1541,9 @@ test.describe('stryk-engine: kupong A, B och C', () => {
     const fetch = await import(pathToFileURL(path.join(ROOT, 'scripts', 'fetch-stryktipset.mjs')).href);
     expect(web.AB_SPIK_DIFF).toBe(1);
     expect(fetch.AB_SPIK_DIFF).toBe(web.AB_SPIK_DIFF);
+    // B ärver A:s spikar (motsystem provat 2026-10-04: lägre chans och B saknades i 4 av 107 omg – arvet behålls)
+    expect(web.B_INHERIT).toBe(true);
+    expect(fetch.B_INHERIT).toBe(web.B_INHERIT);
     for (const lib of [web, fetch]) {
       // Gult räknas aldrig som färg, även när raderna har gula tecken
       expect(lib.colorsPresent([[2, 3, 1], [3, 2, 2]])).toEqual([true, false, true]);
@@ -1843,7 +1846,8 @@ test.describe('stryk-engine: kupong A, B och C', () => {
       // B:s egen skrällspik (A:s spikar ärvs sedan 2026-10-03 och räknas inte – A kan ha en egen skrällspik)
       const sk = B.picks.filter((x: any, i: number) => x.signs.length === 1 && A.picks[i].signs !== x.signs && (skrallOk(ev[i], '1X2'.indexOf(x.signs)) || (nx?.match === i + 1 && nx.sign === x.signs))).length;
       const inheritedSkrall = B.picks.filter((x: any, i: number) => x.signs.length === 1 && A.picks[i].signs === x.signs && skrallOk(ev[i], '1X2'.indexOf(x.signs))).length;
-      expect(sk + inheritedSkrall, `${p.product}: B skrällspik`).toBeGreaterThanOrEqual(1);
+      // Fick skrällspiken släppas (rules.skrallMissing, står i kupongen ovan) krävs den inte
+      if (!B.rules.skrallMissing) expect(sk + inheritedSkrall, `${p.product}: B skrällspik`).toBeGreaterThanOrEqual(1);
       expect(sk, `${p.product}: högst en egen skrällspik i B`).toBeLessThanOrEqual(1);
       if (nx) {
         // Kandidaten i tur: inte favoriten, inte A:s spik, och en av de första i kön
@@ -1999,7 +2003,7 @@ test.describe('stryk-engine: kupong A, B och C', () => {
     expect(skrallQueue(events, [[0], [0], [0]]).map((c: any) => `${c.i}:${'1X2'[c.k]}`)).not.toContain('1:1');
   });
 
-  test('egna skrällspikar: gränsen i länken ligger ändå på 30 000–50 000 kr', async () => {
+  test('egna skrällspikar: gränsen i länken ligger ändå på A:s fönster (Stryktipset 15 000–25 000 kr)', async () => {
     const p = products.find((x) => x.product === 'stryktipset');
     test.skip(!p, 'data/stryktipset.json saknar Stryktipset');
     test.setTimeout(300_000);
@@ -2010,8 +2014,9 @@ test.describe('stryk-engine: kupong A, B och C', () => {
       const { A } = generateCoupons(p, krav);
       expect(A, `${n} skrällspikar`).toBeTruthy();
       expect(A.rules.payoutExact, `${n} skrällspikar: ${A.relaxed.join('; ')}`).toBe(true);
-      expect(A.rules.payoutMin).toBeGreaterThanOrEqual(30000);
-      expect(A.rules.payoutMin).toBeLessThanOrEqual(50000);
+      // Stryktipset A 15 000 sedan 2026-10-04, fönstret regeln x 50/30
+      expect(A.rules.payoutMin).toBeGreaterThanOrEqual(15000);
+      expect(A.rules.payoutMin).toBeLessThanOrEqual(25000);
       expect(A.gamblingCabinUrl).toContain(`utd=1,${A.rules.payoutMin},100000000`);
       p.events.slice(0, n).forEach((e: any, i: number) => expect(A.picks[i].signs).toBe(und(e)));
       expect(A.cost).toBeGreaterThanOrEqual(350);
