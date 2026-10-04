@@ -54,6 +54,12 @@ Mer om ligan (signaler, kalibrering, Stryktipset): [ligor/CH.md](../ligor/CH.md)
 
 ## Lärdomar och beslut (handskrivet, daterat – nyast överst)
 
+### 2026-10-03: missas något tecken (1/X/2) oftare än väntat i Stryktipset A/B? (107 omg)
+
+- Championship: A missade 1 25/292 (väntat 19, z 1,6), X 51/169 (54), 2 64/202 (56, z 1,3). B 1 45 (34, z 2,4), X 78 (90, z −1,5), 2 64 (60). B:s 1:or sticker ut men nästan bara 2025/26– och åt motsatt håll mot A. Brus vid ~40 tester, ingen ändring.
+- Samlat: nej. Kryss missas oftast men som modellen väntar. Se [slutsatser.md](../slutsatser.md) (Förkastat 2026-10-03).
+- Senare samma dag bakkördes "ta med X oftare" i A och B (1X/X2 före 12, inget favoritspik vid högt kryss, X-vikt). Färre X-missar men fler missade 1:or/2:or, lägre chans till 13 och sämre netto. Inget infört, tabellen finns i slutsatser.md.
+
 ### 2026-10-03: spikar på Stryktipset (bakkörning 107 omgångar, A/B/C)
 
 - Championship: 371 favoritspikar (A+B+C) satt 44 % (väntat 48 %). Med kryss ≥ 27 % satt de bara 35 % (205 st, över hälften av spikarna), under 27 % 55 % (166 st). 86 av 209 missar blev kryss. Championship är där vi oftast spikar matcher med högt kryss. Spika hellre en starkare favorit (oftast PL) och gardera Championship-matchen.

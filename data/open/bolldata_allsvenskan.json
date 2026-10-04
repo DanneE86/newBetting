@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-01T03:51:51.942Z",
+  "fetchedAt": "2026-10-03T12:48:59.872Z",
   "source": "https://bolldata.se",
   "note": "Crawl-delay 100 s respekterad",
   "pages": {
@@ -5107,8 +5107,8 @@
             "team": "IFK Göteborg",
             "values": {
               "SM": 22,
-              "FP": 3223,
-              "LFP": 2253,
+              "FP": 3226,
+              "LFP": 2255,
               "LFP%": 69.9
             }
           },
@@ -6789,8 +6789,8 @@
               "SM": 22,
               "OD": 1299,
               "VOD%": 45.5,
-              "DD": 1277,
-              "VDD%": 21.2,
+              "DD": 1280,
+              "VDD%": 21.3,
               "LD": 634,
               "VLD%": 47.9,
               "VD%": 37.3
@@ -6817,13 +6817,13 @@
             "team": "IFK Göteborg",
             "values": {
               "SM": 22,
-              "OD": 1209,
+              "OD": 1212,
               "VOD%": 49.9,
               "DD": 1457,
               "VDD%": 19.7,
               "LD": 657,
               "VLD%": 45.4,
-              "VD%": 37.1
+              "VD%": 37.2
             }
           },
           {
@@ -7031,8 +7031,8 @@
             "team": "Elfsborg",
             "values": {
               "SM": 22,
-              "ÅE": 1761,
-              "ÅE/M": 80.05
+              "ÅE": 1762,
+              "ÅE/M": 80.09
             }
           },
           {
@@ -12443,6 +12443,18 @@
             }
           },
           {
+            "id": "20638",
+            "name": "Alexander Jensen",
+            "team": "Elfsborg",
+            "values": {
+              "SM": 9,
+              "MIN": 794,
+              "SP": 2,
+              "SP%": 0,
+              "SP/90": 0.23
+            }
+          },
+          {
             "id": "20630",
             "name": "A. Zeneli",
             "team": "Elfsborg",
@@ -12488,18 +12500,6 @@
               "SP": 2,
               "SP%": 0,
               "SP/90": 0.21
-            }
-          },
-          {
-            "id": "20861",
-            "name": "M. Illary",
-            "team": "Halmstad",
-            "values": {
-              "SM": 20,
-              "MIN": 932,
-              "SP": 2,
-              "SP%": 0,
-              "SP/90": 0.19
             }
           }
         ]
@@ -12746,6 +12746,18 @@
             }
           },
           {
+            "id": "20756",
+            "name": "N. Tolf",
+            "team": "IFK Göteborg",
+            "values": {
+              "SM": 14,
+              "MIN": 1103,
+              "PP": 125,
+              "PP%": 75.2,
+              "PP/90": 10.2
+            }
+          },
+          {
             "id": "20614",
             "name": "O. Cotton",
             "team": "Brommapojkarna",
@@ -12755,18 +12767,6 @@
               "PP": 88,
               "PP%": 61.4,
               "PP/90": 10.18
-            }
-          },
-          {
-            "id": "20756",
-            "name": "N. Tolf",
-            "team": "IFK Göteborg",
-            "values": {
-              "SM": 14,
-              "MIN": 1103,
-              "PP": 124,
-              "PP%": 75,
-              "PP/90": 10.12
             }
           }
         ]
@@ -18598,6 +18598,11 @@
       "name": "Alexander Jensen",
       "team": "Elfsborg",
       "stats": {
+        "SMARTA PASSNINGAR | SM": 9,
+        "SMARTA PASSNINGAR | MIN": 794,
+        "SMARTA PASSNINGAR | SP": 2,
+        "SMARTA PASSNINGAR | SP%": 0,
+        "SMARTA PASSNINGAR | SP/90": 0.23,
         "HUVUDSPEL & LUFTDUELLER | SM": 9,
         "HUVUDSPEL & LUFTDUELLER | MIN": 794,
         "HUVUDSPEL & LUFTDUELLER | LD": 11,
@@ -19587,9 +19592,9 @@
         "NYCKELPASSNINGAR | NP/90": 1.14,
         "PROGRESSIVA PASSNINGAR | SM": 14,
         "PROGRESSIVA PASSNINGAR | MIN": 1103,
-        "PROGRESSIVA PASSNINGAR | PP": 124,
-        "PROGRESSIVA PASSNINGAR | PP%": 75,
-        "PROGRESSIVA PASSNINGAR | PP/90": 10.12,
+        "PROGRESSIVA PASSNINGAR | PP": 125,
+        "PROGRESSIVA PASSNINGAR | PP%": 75.2,
+        "PROGRESSIVA PASSNINGAR | PP/90": 10.2,
         "LÅNGA PASSNINGAR & GENOMSKÄRARE | SM": 14,
         "LÅNGA PASSNINGAR & GENOMSKÄRARE | MIN": 1103,
         "LÅNGA PASSNINGAR & GENOMSKÄRARE | LåP": 100,
@@ -20760,11 +20765,6 @@
       "name": "M. Illary",
       "team": "Halmstad",
       "stats": {
-        "SMARTA PASSNINGAR | SM": 20,
-        "SMARTA PASSNINGAR | MIN": 932,
-        "SMARTA PASSNINGAR | SP": 2,
-        "SMARTA PASSNINGAR | SP%": 0,
-        "SMARTA PASSNINGAR | SP/90": 0.19,
         "ACC. & PROGRESSIVA LÖPNINGAR | SM": 20,
         "ACC. & PROGRESSIVA LÖPNINGAR | MIN": 932,
         "ACC. & PROGRESSIVA LÖPNINGAR | AMB": 5,
@@ -22151,14 +22151,14 @@
         "Duellspel | SM": 22,
         "Duellspel | OD": 1299,
         "Duellspel | VOD%": 45.5,
-        "Duellspel | DD": 1277,
-        "Duellspel | VDD%": 21.2,
+        "Duellspel | DD": 1280,
+        "Duellspel | VDD%": 21.3,
         "Duellspel | LD": 634,
         "Duellspel | VLD%": 47.9,
         "Duellspel | VD%": 37.3,
         "ÅTERERÖVRINGAR | SM": 22,
-        "ÅTERERÖVRINGAR | ÅE": 1761,
-        "ÅTERERÖVRINGAR | ÅE/M": 80.05,
+        "ÅTERERÖVRINGAR | ÅE": 1762,
+        "ÅTERERÖVRINGAR | ÅE/M": 80.09,
         "Hörnor | SM": 22,
         "Hörnor | HF": 93,
         "Hörnor | HE": 114,
@@ -23263,8 +23263,8 @@
         "PASSNINGAR & PASSNINGSPROCENT | LP": 7977,
         "PASSNINGAR & PASSNINGSPROCENT | P%": 81.6,
         "FRAMÅTPASSNINGAR | SM": 22,
-        "FRAMÅTPASSNINGAR | FP": 3223,
-        "FRAMÅTPASSNINGAR | LFP": 2253,
+        "FRAMÅTPASSNINGAR | FP": 3226,
+        "FRAMÅTPASSNINGAR | LFP": 2255,
         "FRAMÅTPASSNINGAR | LFP%": 69.9,
         "NYCKELPASSNINGAR | SM": 22,
         "NYCKELPASSNINGAR | P": 9773,
@@ -23299,13 +23299,13 @@
         "DEFENSIV SOLIDITET | MCE": 183,
         "DEFENSIV SOLIDITET | MCE/M": 8.32,
         "Duellspel | SM": 22,
-        "Duellspel | OD": 1209,
+        "Duellspel | OD": 1212,
         "Duellspel | VOD%": 49.9,
         "Duellspel | DD": 1457,
         "Duellspel | VDD%": 19.7,
         "Duellspel | LD": 657,
         "Duellspel | VLD%": 45.4,
-        "Duellspel | VD%": 37.1,
+        "Duellspel | VD%": 37.2,
         "ÅTERERÖVRINGAR | SM": 22,
         "ÅTERERÖVRINGAR | ÅE": 1900,
         "ÅTERERÖVRINGAR | ÅE/M": 86.36,

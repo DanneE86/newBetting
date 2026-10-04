@@ -25,7 +25,6 @@ async function tipslogg(a) {
   if (c.ny || c.andrad || n) log(`Tipslogg: ${c.ny} nya lopp, ${c.andrad} ändrade, facit för ${n}`);
 }
 
-
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const DIR = path.join(ROOT, "data", "hastar");
 const API = "https://www.atg.se/services/racinginfo/v1/api";
@@ -84,6 +83,9 @@ export async function listGames(date) {
     }
   return { date, games: out, calendar: cal };
 }
+
+/** Bara spelet (lopp, starter, utdelning) utan detaljer per start – ett anrop. */
+export const fetchGameInfo = (id) => get(`${API}/games/${id}`);
 
 export async function fetchGame(id) {
   const game = await get(`${API}/games/${id}`);

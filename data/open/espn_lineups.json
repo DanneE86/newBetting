@@ -1,11 +1,143 @@
 {
-  "updatedAt": "2026-10-01T13:11:00.688Z",
+  "updatedAt": "2026-10-02T19:29:26.690Z",
   "source": "fotmob+espn (per-match + bulk)",
   "note": "Elvor bekraftas nar ESPN publicerar starters (~1h fore kickoff). pending = ej slappta an.",
-  "fixtureCount": 58,
+  "fixtureCount": 59,
   "confirmedCount": 0,
-  "pendingCount": 58,
+  "pendingCount": 59,
   "fixtures": [
+    {
+      "date": "2026-10-02",
+      "kickoffUtc": "2026-10-02T23:00:00.000Z",
+      "league": "BR",
+      "home": "Sao Paulo",
+      "away": "Santos",
+      "matchStatus": null,
+      "homeFormation": "3-4-2-1",
+      "awayFormation": "4-1-4-1",
+      "lineupStatus": "pending",
+      "homeStarters": [
+        {
+          "name": "Rafael",
+          "jersey": "23",
+          "position": "0"
+        },
+        {
+          "name": "Domingos Duarte",
+          "jersey": "22",
+          "position": "1"
+        },
+        {
+          "name": "Robert Arboleda",
+          "jersey": "5",
+          "position": "1"
+        },
+        {
+          "name": "Rafael Tolói",
+          "jersey": "2",
+          "position": "1"
+        },
+        {
+          "name": "Pedro Lima",
+          "jersey": "32",
+          "position": "2"
+        },
+        {
+          "name": "Marcos Antônio",
+          "jersey": "8",
+          "position": "2"
+        },
+        {
+          "name": "Djhordney",
+          "jersey": "48",
+          "position": "2"
+        },
+        {
+          "name": "Iago",
+          "jersey": "12",
+          "position": "2"
+        },
+        {
+          "name": "Luciano",
+          "jersey": "10",
+          "position": "2"
+        },
+        {
+          "name": "Artur",
+          "jersey": "37",
+          "position": "2"
+        },
+        {
+          "name": "Jonathan Calleri",
+          "jersey": "9",
+          "position": "3"
+        }
+      ],
+      "awayStarters": [
+        {
+          "name": "Diógenes",
+          "jersey": "1",
+          "position": "0"
+        },
+        {
+          "name": "Rodinei",
+          "jersey": "23",
+          "position": "1"
+        },
+        {
+          "name": "Lucas Veríssimo",
+          "jersey": "4",
+          "position": "1"
+        },
+        {
+          "name": "Luan Peres",
+          "jersey": "14",
+          "position": "1"
+        },
+        {
+          "name": "Gonzalo Escobar",
+          "jersey": "31",
+          "position": "1"
+        },
+        {
+          "name": "Christian Oliva",
+          "jersey": "28",
+          "position": "2"
+        },
+        {
+          "name": "Gabriel Bontempo",
+          "jersey": "8",
+          "position": "3"
+        },
+        {
+          "name": "Gustavo Henrique",
+          "jersey": "48",
+          "position": "2"
+        },
+        {
+          "name": "Arthur",
+          "jersey": "6",
+          "position": "2"
+        },
+        {
+          "name": "Rony",
+          "jersey": "33",
+          "position": "3"
+        },
+        {
+          "name": "Gabriel Barbosa",
+          "jersey": "9",
+          "position": "3"
+        }
+      ],
+      "homeStarterCount": 11,
+      "awayStarterCount": 11,
+      "source": "fotmob",
+      "fotmobMatchId": "5103566",
+      "fotmobLeague": "Série A",
+      "lineupType": "lastStarting11",
+      "fetchedAt": "2026-10-02T19:29:26.689Z"
+    },
     {
       "espnEventId": "401841168",
       "date": "2026-10-03",

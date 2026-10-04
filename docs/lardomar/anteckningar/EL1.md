@@ -55,6 +55,12 @@ Mer om ligan (signaler, kalibrering, Stryktipset): [ligor/EL1.md](../ligor/EL1.m
 
 ## Lärdomar och beslut (handskrivet, daterat – nyast överst)
 
+### 2026-10-03: missas något tecken (1/X/2) oftare än väntat i Stryktipset A/B? (107 omg)
+
+- League One: för få matcher (25 hemmavinster, 23 kryss, 31 bortavinster). A missade 1 1 (väntat 2), X 12 (10), 2 8 (5); B 6 (5), 13 (13), 6 (7). Inget att läsa ut.
+- Samlat: nej. Kryss missas oftast men som modellen väntar. Se [slutsatser.md](../slutsatser.md) (Förkastat 2026-10-03).
+- Senare samma dag bakkördes "ta med X oftare" i A och B (1X/X2 före 12, inget favoritspik vid högt kryss, X-vikt). Färre X-missar men fler missade 1:or/2:or, lägre chans till 13 och sämre netto. Inget infört, tabellen finns i slutsatser.md.
+
 ### 2026-10-03: spikar på Stryktipset (bakkörning 107 omgångar, A/B/C)
 
 - League One: 35 favoritspikar (A+B+C) satt 34 % (väntat 43 %). Med kryss ≥ 27 % satt de 26 % (23 st), under 27 % 50 % (12 st). 14 av 23 missar blev kryss. Litet urval, men samma mönster som Championship och starkare. Spika helst inte League One.

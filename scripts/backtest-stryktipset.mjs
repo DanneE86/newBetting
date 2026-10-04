@@ -89,7 +89,7 @@ for (let n = START_DRAW; n > START_DRAW - 200 && draws.length < COUNT; n--) {
       if (picks[i].length > 1 && !blue.has(i)) n[c]++;
     });
     const stop = ['green', 'yellow', 'red'].filter((c) => !(red.rules.colorsOff || []).includes(c) && (n[c] < cr[c][0] || n[c] > cr[c][1]));
-    return { rules: cr, count: n, count13: n13, fits: !stop.length, stop, ok: outcomes.some((o, i) => !picks[i].includes(o)) ? null : !stop.length };
+    return { rules: cr, blue: [...blue], count: n, count13: n13, fits: !stop.length, stop, ok: outcomes.some((o, i) => !picks[i].includes(o)) ? null : !stop.length };
   };
   const picksOf = (key) => a.events.map((e) => e[key]?.signs || '');
   const matches = a.events.map((e) => {

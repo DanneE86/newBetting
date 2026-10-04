@@ -63,9 +63,15 @@ test('stryktipset: 13 matcher med avsparkstid, procent och Värde/Ej värde', ()
       expect(p.reducedB.gamblingCabinUrl).toContain(antT(p.reducedB.rules.signMin));
       expect(p.reducedB.cost).toBeGreaterThanOrEqual(350);
       expect(p.reducedB.cost).toBeLessThanOrEqual(400);
-      // Motsystemet har aldrig samma tecken som A (inte ens spiken); delat system har samma grundrad men inga gemensamma rader
+      // Motsystemet: aldrig samma gardering som A, högst 1 spik skiljer (B ärver A:s spikar, 2026-10-03);
+      // delat system har samma grundrad men inga gemensamma rader
       if (p.reducedB.split) expect(p.reducedB.overlapRows).toBe(0);
-      else expect(p.reducedB.sameSingles).toBe(0); // eget B-system: ingen spik som A (2026-10-02)
+      else {
+        const ev = p.events;
+        ev.forEach((e: any) => { if (e.systemPick.signs.length > 1) expect(e.systemPickB.signs).not.toBe(e.systemPick.signs); });
+        expect(ev.filter((e: any) => (e.systemPick.signs.length === 1 || e.systemPickB.signs.length === 1) && e.systemPickB.signs !== e.systemPick.signs).length).toBeLessThanOrEqual(1);
+        expect(p.reducedB.sameSingles).toBe(ev.filter((e: any) => e.systemPick.signs.length === 1 && e.systemPickB.signs === e.systemPick.signs).length);
+      }
     }
   }
 });

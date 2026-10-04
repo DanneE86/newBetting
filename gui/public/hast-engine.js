@@ -14,6 +14,15 @@
 // och om det fortfarande är för många rader behålls raderna med högst värdeviktad sannolikhet.
 
 export const ROW_PRICE = { V85: 0.5, V75: 0.5, V86: 0.25, GS75: 1, V65: 1, V64: 1 };
+// Radpriset ändras från ett datum (nya V75 från 2026-11-28: 60 öre, 65 % återbetalning, 40 % av potten till 7 rätt –
+// travsport.se 2026-09-17). Äldre omgångar räknas med det gamla priset, så bakkörningen rättas mot rätt insats.
+export const ROW_PRICE_FROM = { V75: [["2026-11-28", 0.6]] };
+/** Radpris för spelformen en viss dag (ISO-datum). Utan datum: dagens pris. */
+export function rowPrice(type, date = new Date().toISOString().slice(0, 10)) {
+  let price = ROW_PRICE[type] ?? 1;
+  for (const [from, p] of ROW_PRICE_FROM[type] || []) if (String(date) >= from) price = p;
+  return price;
+}
 export const BUDGETS = [100, 200, 500, 1000, 2000, 5000];
 // Högsta vinstnivåns andel av omsättningen utan jackpott (ATG-data 2025–2026, 10:e percentilen/vanligaste värdet)
 export const TOP_SHARE = { V85: 0.195, V86: 0.26, V75: 0.26, GS75: 0.285, V64: 0.34, V65: 0.355 };
@@ -21,6 +30,13 @@ export const TOP_SHARE = { V85: 0.195, V86: 0.26, V75: 0.26, GS75: 0.285, V64: 0
 export const MIN_TOP = 50000;
 export const TOP_LEVELS = [50000, 250000, 1000000];
 export const SKRALL_MAX = 0.1; // häst med streck under 10 % räknas som skräll i systemvillkoren
+// Standard per spelform (bakkörning V85 2026, 56 omgångar, rullande vikter, 2026-10-03):
+// Värdefokus Normal (alpha 0,5) slog Träff (alpha 0) på alla budgetar 200–2000 kr, även med största vinsten borträknad.
+export const DEFAULT_ALPHA = { V85: 0.5 };
+// Bekräftat på V85 2025 (18 omgångar, inte med i valet): Normal bättre på alla 5 budgetar. V75 2025 (59 omg), V86 och
+// GS75: alpha 0,5 gav inget säkert lyft – där gäller Träff. Testat och avvisat: spikspärr (spik bara vid
+// streck ≥ 50/60 %) – färre spikar föll, men de extra hästarna kostade mer än de gav på 4 av 5 budgetar.
+export const defaultAlpha = (type) => DEFAULT_ALPHA[type] ?? 0;
 
 const clamp = (x, a, b) => Math.max(a, Math.min(b, x));
 

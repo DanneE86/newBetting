@@ -9,7 +9,7 @@ import { pathToFileURL } from 'url';
 //   budget 350-400 kr per kupong, teckenminimum SIGN_MIN.A (4-2-2) fran skriptet, max 13,
 //   utdelning 13 ratt >= 30 000 kr (Europatipset 20 000 kr) enligt Gambling Cabins formel,
 //   delat lage (reducedB.split): ett system pa 700-800 rader delas efter utdelning, A = hogst utdelning, B = resten,
-//   samma grundrad och inga gemensamma rader. Motsystem (STRYK_B_MODE=counter): B SIGN_MIN.B, aldrig samma tecken som A. Alla kuponger 2-4 spikar.
+//   samma grundrad och inga gemensamma rader. Motsystem (STRYK_B_MODE=counter): B SIGN_MIN.B, aldrig samma gardering som A och hogst 1 spik som skiljer (2026-10-03). Alla kuponger 2-4 spikar.
 //   Varje odds har ett Varde/Ej varde-omdome, varje match har avsparkstid.
 
 const root = path.resolve(__dirname, '..');
@@ -222,10 +222,14 @@ test('reducerade system: budget, teckenregler, rader inom grundraden', () => {
       const on = ['green', 'yellow', 'red'].filter((c) => !(red.rules.colorsOff || []).includes(c));
       // Röd 1–3 i A och C (användaren 2026-10-02: "rött ska alltid vara 1-3, 25 % eller lägre är röda"). B är risksystemet
       // (2026-10-02 kväll: "kör 1-4 eller 2-4 röda ... inte mer än 2 röda som minst", "behåll A som det är")
-      if (on.includes('red')) {
+      // B får fria färger som sista reserv när A/B-regeln (samma spikar, aldrig samma gardering) och A:s form inte lämnar
+      // någon B med fasta färger (Europatipset 2613, 2026-10-04) – flaggat i kupongen. A och C har alltid fasta färger.
+      const freeB = name === 'B' && red.rules.colorsFree;
+      if (on.includes('red') && !freeB) {
         // ... utom när 30 000–50 000 kr inte gick med röd max 5: då röd 1–3 och gränsen hålls (rules.redFallback)
         if (['B', 'C'].includes(name) && red.rules.redFallback) {
-          expect(red.rules.colorRules.red, `${at}: ${name} reserv röd 1–3`).toEqual([1, 3]);
+          // Reserv: B 1–2 som A, C 1–3 (2026-10-03 natt)
+          expect(name === 'B' ? [[1, 2], [1, 3]] : [[1, 3]], `${at}: ${name} reserv`).toContainEqual(red.rules.colorRules.red);
           expect(red.rules.payoutExact, `${at}: ${name} reserv håller 50 000–75 000 kr`).toBe(true);
         } else if (name === 'B') expect([[1, 5], [2, 5]], `${at}: röd 1–5 eller 2–5 (max 5 sedan 2026-10-03)`).toContainEqual(red.rules.colorRules.red);
         // C är skrällsystemet (2026-10-02 kväll: "C är inte skräll, max vinst är 300k typ"): röd 2–6, högsta rad minst 1 miljon
@@ -234,11 +238,12 @@ test('reducerade system: budget, teckenregler, rader inom grundraden', () => {
           if (!red.rules.maxRowShort) expect(red.rules.maxRowPayout, `${at}: C högsta rad`).toBeGreaterThanOrEqual(1e6);
           expect(red.rules.minRedMatches, at).toBeGreaterThanOrEqual(6);
         }
-        else expect(red.rules.colorRules.red, `${at}: röd 1–3`).toEqual([1, 3]);
+        // A röd 1–2 sedan 2026-10-03 (natt): högst chans till 13 rätt i 30 iterationer
+        else expect(red.rules.colorRules.red, `${at}: röd 1–2`).toEqual([1, 2]);
       }
       // Grön alltid 3–6 (användaren 2026-10-02, tidigare 4–6; A, B och C)
-      if (on.includes('green')) expect(red.rules.colorRules.green, `${at}: grön 3–6`).toEqual([3, 6]);
-      expect(red.rules.colorsFree, `${at}: fasta färgregler`).toBeFalsy();
+      if (on.includes('green') && !freeB) expect(red.rules.colorRules.green, `${at}: grön 3–6`).toEqual([3, 6]);
+      if (!freeB) expect(red.rules.colorsFree, `${at}: fasta färgregler`).toBeFalsy();
       // Gult skär aldrig bort rader ("får jag in mina röda vill jag kunna få in alla gröna och gula", 2026-10-02): gulregeln
       // är hela spannet som går att nå med grön 3–6 och röd 1–3 – utom när 30 000–50 000 kr annars inte går (yellowFull false)
       if (on.includes('yellow') && red.rules.yellowFull !== false) {
@@ -246,7 +251,8 @@ test('reducerade system: budget, teckenregler, rader inom grundraden', () => {
         expect(red.rules.colorRules.yellow[0], `${at}: gul min = lägsta som går`).toBe(span[0]);
         expect(red.rules.colorRules.yellow[1], `${at}: gul max = högsta som går`).toBeGreaterThanOrEqual(span[1]);
       }
-      if (!red.rules.redGreenFree) expect(redGreenViolations(p.events, picks, red.rules).slice(0, 3), `${at}: 3 röda + resten gröna stoppas av färgreglerna (även B)`).toEqual([]);
+      // Skyddet gäller med 3 röda, aldrig över systemets röd max (A röd 1–2 sedan 2026-10-03 natt: 2 röda + resten gröna)
+      if (!red.rules.redGreenFree && !freeB) expect(redGreenViolations(p.events, picks, red.rules, Math.min(3, red.rules.colorRules.red[1])).slice(0, 3), `${at}: 3 röda + resten gröna stoppas av färgreglerna (även B)`).toEqual([]);
       on.forEach((c, j) => {
         expect(red.rules.colorRules[c][1], `${at} ${c}: inte exakt ${red.rules.colorRules[c].join('–')}`).toBeGreaterThan(red.rules.colorRules[c][0]);
         on.slice(j + 1).forEach((o) => expect(red.rules.colorRules[o].join(), `${at}: ${c} och ${o} samma fönster`).not.toBe(red.rules.colorRules[c].join()));
@@ -288,6 +294,8 @@ test('reducerade system: budget, teckenregler, rader inom grundraden', () => {
       let reserve = 0, skrall = 0;
       picks.forEach((pk, i) => {
         if (pk.length !== 1) return;
+        // B ärver A:s spikar (2026-10-03) – A har redan bedömt dem (även A:s reserv- och skrällspik)
+        if (name === 'B' && p.events[i].systemPick?.signs === pk) return;
         const sp = p.events[i].spik;
         // Skrällspik: tecken med vår chans 35–47 % och minst 3 procentenheter över folket, högst en per kupong
         const sysK = (sp?.used ? sp.sysP : p.events[i].final)[idx(pk)], folkK = p.events[i].folk?.[idx(pk)];
@@ -320,12 +328,17 @@ test('reducerade system: budget, teckenregler, rader inom grundraden', () => {
       expect(skrall, `${at}: högst en skrällspik`).toBeLessThanOrEqual(1);
       // B (risksystemet): minst en skrällspik på runt 40 % (användaren 2026-10-02 kväll) om den inte fick släppas (rules.skrallMissing)
       if (['B', 'C'].includes(name) && !red.rules.skrallMissing) expect(skrall, `${at}: ${name} minst en skrällspik`).toBe(1);
-      expect(picks.filter((pk: string) => pk.length === 3).length, `${at}: minst ${MIN_HELG} helgarderingar`).toBeGreaterThanOrEqual(MIN_HELG);
+      // B helgarderar bara där A inte gör det (A:s halvor utan helgula matcher + högst 1 spikskillnad) – A/B-regeln går före
+      const allY = (i: number) => [0, 1, 2].every((k) => { const f = p.events[i].folk?.[k]; return f != null && f < 0.45 && Math.round(f * 100) > 25; });
+      const pa = p.events.map((e: any) => e.systemPick?.signs || '');
+      const helgCap = name === 'B' ? pa.filter((x: string, i: number) => x.length === 2 && !allY(i)).length + Math.min(1, pa.filter((x: string, i: number) => x.length === 1 && !allY(i)).length) : 13;
+      expect(picks.filter((pk: string) => pk.length === 3).length, `${at}: minst ${MIN_HELG} helgarderingar`).toBeGreaterThanOrEqual(Math.min(MIN_HELG, helgCap));
       // Rörliga färgfönster (hela raden = regeln + spikarnas färger): minst 3 breda och runt väntat antal
       expect(red.rules.colorRules.pink, at).toBeUndefined();
       if (red.rules.colorTarget) {
         // Röd (1–3) och grön (3–6) är fasta (användaren 2026-10-02) och följer inte fönstret runt väntat antal
-        ['yellow'].forEach((c) => {
+        // Gult är ingen färg i Gambling Cabin sedan 2026-10-03 (ingen regel att kontrollera)
+        ['yellow'].filter((c) => !(red.rules.colorsOff || []).includes(c)).forEach((c) => {
           const spikC = picks.filter((pk, i) => pk.length === 1 && signColor(p.events[i].folk?.[idx(pk)]) === c).length;
           // Väntat antal räknas på systemets procent (spikbedömningens justerade när den används), som motorn gör
           const exp = p.events.reduce((sum: number, e: any, i: number) => (red.rules.blueHalves.includes(i) ? sum : sum + [0, 1, 2].reduce((q, k) => q + (signColor(e.folk?.[k]) === c ? (e.spik?.used ? e.spik.sysP : e.final)[k] : 0), 0)), 0);
@@ -356,7 +369,7 @@ test('reducerade system: budget, teckenregler, rader inom grundraden', () => {
         expect(share, `${at} match ${i + 1}: favoriten ${fav} på minst 10 %`).toBeGreaterThanOrEqual(0.1);
       });
       // Utan mål: färgreglerna är minst 2 breda där spannet tillåter (t.ex. 1-3, inte ett exakt antal)
-      if (!red.rules.colorTarget) for (const c of ['green', 'yellow', 'red']) {
+      if (!red.rules.colorTarget) for (const c of ['green', 'yellow', 'red'].filter((x) => !(red.rules.colorsOff || []).includes(x))) {
         const [lo, hi] = red.rules.colorRules[c];
         const counts = red.rowList.map((r: string) => colorCount(p.events, picks, r, c, red.rules.blueHalves));
         expect(hi - lo, `${at} ${c}: minst 3 olika antal där raderna tillåter`).toBeGreaterThanOrEqual(Math.min(2, Math.max(...counts) - Math.min(...counts)));
@@ -408,7 +421,8 @@ test('Gambling Cabin-länk: samma grundrad, färger och regler som systemet', ()
       expect(q.get('spel'), at).toBe(p.product);
       expect(q.get('omg'), at).toBe(String(p.drawNumber));
       expect(q.get('datum'), at).toBe((p.regCloseTime || '').slice(0, 10));
-      const colorId: Record<string, number> = { yellow: 2, red: 3, green: 4 };
+      // Bara tre färger (användaren 2026-10-03): tecken på 26–44 % (internt gula) är blå (1), aldrig gul cell (2)
+      const colorId: Record<string, number> = { yellow: 1, red: 3, green: 4 };
       ['v1', 'vX', 'v2'].forEach((key, k) => {
         // Spikar och blå halvgarderingar blå (id 1)
         const expected = p.events.map((e: any, i: number) => (!picks[i].includes(SIGNS[k]) ? 0 : picks[i].length === 1 || red.rules.blueHalves.includes(i) ? 1 : colorId[e.colors[k]])).join(',');
@@ -420,7 +434,9 @@ test('Gambling Cabin-länk: samma grundrad, färger och regler som systemet', ()
       // Spikar är blå (id 1, 2026-10-02) och rosa används inte: rosa regeln av
       expect(q.get('pink'), at).toBe('0,0,13');
       // Färgreglerna är aktiva med systemets min/max, aldrig 0-13
-      for (const c of ['yellow', 'red', 'green']) {
+      expect(q.get('yellow'), `${at}: ingen gul regel`).toBe('0,0,13');
+      expect(red.rules.colorsOff, `${at}: gult är av`).toContain('yellow');
+      for (const c of ['red', 'green'].filter((x) => !(red.rules.colorsOff || []).includes(x))) {
         const [lo, hi] = red.rules.colorRules[c];
         expect(q.get(c), `${at} ${c}`).toBe(`1,${lo},${hi}`);
         expect(lo > 0 || hi < 13, `${at} ${c}: inte 0-13`).toBe(true);
@@ -429,7 +445,7 @@ test('Gambling Cabin-länk: samma grundrad, färger och regler som systemet', ()
   }
 });
 
-test('kupong B: eget system (aldrig samma tecken som A på någon match) eller delat system', () => {
+test('kupong B: eget system (aldrig samma gardering som A, högst 1 spik skiljer) eller delat system', () => {
   for (const p of products.filter((x) => x.reduced && x.reducedB)) {
     const at = `${p.product} ${p.drawNumber}`;
     const A = p.reduced, B = p.reducedB;
@@ -452,11 +468,13 @@ test('kupong B: eget system (aldrig samma tecken som A på någon match) eller d
       expect(A.cost + B.cost, at).toBeLessThanOrEqual(2 * BUDGET.max);
       expect(B.unionHit, at).toBeCloseTo(A.hitAll + B.hitAll, 9);
     } else {
-      // Eget B-system (standard sedan 2026-09-30): aldrig samma tecken som A på någon match, inte ens spiken (2026-10-02)
-      expect(same, `${at}: inga gemensamma spikar`).toBe(0);
+      // Eget B-system: aldrig samma gardering som A, men B ärver A:s spikar – högst 1 match skiljer på spik
+      // (användaren 2026-10-03: "A och B får inte ha samma garderingar men max 1 spik skilja", ersätter "inte ens spiken")
       p.events.forEach((e: any, i: number) => {
-        expect(e.systemPickB.signs, `${at} match ${i + 1}: B har inte samma tecken som A`).not.toBe(e.systemPick.signs);
+        if (e.systemPick.signs.length > 1) expect(e.systemPickB.signs, `${at} match ${i + 1}: B har inte samma gardering som A`).not.toBe(e.systemPick.signs);
       });
+      const diff = p.events.filter((e: any) => (e.systemPick.signs.length === 1 || e.systemPickB.signs.length === 1) && e.systemPickB.signs !== e.systemPick.signs).length;
+      expect(diff, `${at}: högst 1 spik skiljer A och B`).toBeLessThanOrEqual(1);
     }
     // A+B-chansen ar minst A:s och hogst summan av bada
     expect(p.reducedB.unionHit, at).toBeGreaterThanOrEqual(p.reduced.hitAll - 1e-9);

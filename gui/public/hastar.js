@@ -1,6 +1,6 @@
 // Flik "Hästar": V75/V85/V86/V64/V65/GS75 + Dagens Dubbel från ATG (data från /api/hastar, se gui/hastar-routes.mjs).
 // Modellen räknas i scripts/lib/trav-model.mjs när data hämtas; systembyggaren (hast-engine.js) körs här i webbläsaren.
-import { BUDGETS, ROW_PRICE, TOP_SHARE, TOP_LEVELS, MIN_TOP, SKRALL_MAX, ATG_FILE_TYPES, atgFileName, atgFileXml, atgGameUrl, buildSystem, compressRows, couponRows, couponText, reduceSystem } from "/hast-engine.js";
+import { BUDGETS, rowPrice, TOP_SHARE, TOP_LEVELS, MIN_TOP, SKRALL_MAX, ATG_FILE_TYPES, atgFileName, atgFileXml, atgGameUrl, buildSystem, compressRows, couponRows, couponText, defaultAlpha, reduceSystem } from "/hast-engine.js";
 
 const view = document.getElementById("hastar-view");
 const GAME_NAME = { dd: "Dagens Dubbel" };
@@ -14,10 +14,13 @@ let loaded = false;
 const today = () => new Date().toLocaleDateString("sv-SE", { timeZone: "Europe/Stockholm" });
 let date = today();
 const ALPHA = { traff: 0, lag: 0.25, normal: 0.5, hog: 1 };
-const sys = { budget: 500, mode: "rakt", expand: 4, focus: "traff", minTop: MIN_TOP, conds: { minA: "", maxA: "", minSkrall: "", maxSkrall: "", minStreck: "", maxStreck: "" } };
+// "standard" = spelformens bakkörda standard (defaultAlpha i hast-engine.js): V85 Normal, övriga Träff
+const alphaFor = (type) => (sys.focus === "standard" ? defaultAlpha(type) : ALPHA[sys.focus]);
+const sys = { budget: 500, mode: "rakt", expand: 4, focus: "standard", minTop: MIN_TOP, conds: { minA: "", maxA: "", minSkrall: "", maxSkrall: "", minStreck: "", maxStreck: "" } };
 let lastRows = null;
 let lastLegs = null; // utgångs-/raka systemets hästar per avdelning, för kupongmallen
 const FOCUS_TEXT = {
+  standard: "Standard: V85 spelas med Normal, övriga spel med Träff. Bakkört V85 2026 (56 omgångar): Normal gav mer tillbaka än Träff på alla budgetar 200–2000 kr – Träff tar nästan bara favoriter och träffar mest billiga omgångar.",
   traff: "Träff: bara vinstchansen räknas – flest rätt. Bakkört 2026 (469 omgångar): alla rätt oftare än ett system efter strecket på varje budget.",
   lag: "Låg: nästan bara vinstchansen räknas – systemet tar mest favoriter.",
   normal: "Normal: chansen styr, men underspelade hästar går före överspelade när chansen är ungefär lika.",
@@ -182,7 +185,7 @@ const topLine = (s, a) => {
 };
 function systemBuilder(a) {
   if (a.type === "dd" || !a.races.length) return "";
-  const price = ROW_PRICE[a.type] ?? 1;
+  const price = rowPrice(a.type, a.date);
   const legs = a.races.map((r) => ({ leg: r.leg, number: r.number, horses: r.horses }));
   const topShare = TOP_SHARE[a.type] ?? 0.25;
   const byLeg = Object.fromEntries(a.races.map((r) => [r.leg, Object.fromEntries(r.horses.map((h) => [h.nr, h]))]));
@@ -191,13 +194,13 @@ function systemBuilder(a) {
   lastLegs = null;
   try {
     if (sys.mode === "rakt") {
-      const s = buildSystem(legs, { budget: sys.budget, price, alpha: ALPHA[sys.focus], minTop: sys.minTop, topShare });
+      const s = buildSystem(legs, { budget: sys.budget, price, alpha: alphaFor(a.type), minTop: sys.minTop, topShare });
       lastLegs = s.legs;
       body = systemTable(s.legs, byLeg) + `<p class="hs-sys-sum"><b>${s.rows.toLocaleString("sv-SE")} rader · ${kr(s.cost)}</b> ·
         alla rätt: ${pct(s.hit, 2)} enligt modellen, ${pct(s.marketHit, 2)} enligt strecket ·
         <span title="Modellens träffchans delat med folkets. Över 1 = systemet träffar oftare än folket tror, alltså högre utdelning när det sitter.">värdeindex <b>${dec(s.valueIndex)}</b></span></p>` + topLine(s, a);
     } else {
-      const r = reduceSystem(legs, sys.conds, { budget: sys.budget, price, expand: sys.expand, alpha: ALPHA[sys.focus], minTop: sys.minTop, topShare });
+      const r = reduceSystem(legs, sys.conds, { budget: sys.budget, price, expand: sys.expand, alpha: alphaFor(a.type), minTop: sys.minTop, topShare });
       lastRows = r.rows;
       lastLegs = r.base.legs;
       body = systemTable(r.base.legs, byLeg) + `<p class="hs-sys-sum">Utgångssystem ${r.total.toLocaleString("sv-SE")} rader (${kr(r.total * price)}) ·
@@ -226,7 +229,7 @@ function systemBuilder(a) {
     <div class="hs-mode" role="group" aria-label="Systemtyp">
       <button type="button" class="ds-toggle" data-mode="rakt" aria-pressed="${sys.mode === "rakt"}">Rakt system</button>
       <button type="button" class="ds-toggle" data-mode="reducerat" aria-pressed="${sys.mode === "reducerat"}">Reducerat system</button>
-      <label title="Hur mycket spelvärdet väger mot ren vinstchans när hästar väljs">Värdefokus <select class="ds-select" id="hs-focus">${[["traff", "Träff (standard)"], ["lag", "Låg"], ["normal", "Normal"], ["hog", "Hög"]].map(([k, t]) => `<option value="${k}" ${sys.focus === k ? "selected" : ""}>${t}</option>`).join("")}</select></label>
+      <label title="Hur mycket spelvärdet väger mot ren vinstchans när hästar väljs">Värdefokus <select class="ds-select" id="hs-focus">${[["standard", "Standard"], ["traff", "Träff"], ["lag", "Låg"], ["normal", "Normal"], ["hog", "Hög"]].map(([k, t]) => `<option value="${k}" ${sys.focus === k ? "selected" : ""}>${t}</option>`).join("")}</select></label>
     </div>
     <div class="hs-mode" role="group" aria-label="Högsta rad">
       <label title="Systemets mest ospelade rad ska kunna ge minst så här mycket vid alla rätt. 50 000 kr gäller alltid.">Högsta rad minst <select class="ds-select" id="hs-top">${TOP_LEVELS.map((x) => `<option value="${x}" ${sys.minTop === x ? "selected" : ""}>${x.toLocaleString("sv-SE")} kr${x === MIN_TOP ? " (alltid)" : ""}</option>`).join("")}</select></label>
@@ -259,7 +262,7 @@ function atgBlock(a) {
   if (!lastLegs) return "";
   const ft = ATG_FILE_TYPES[a.type];
   const coupons = atgCoupons();
-  const price = ROW_PRICE[a.type] ?? 1;
+  const price = rowPrice(a.type, a.date);
   const tooMany = ft && coupons && coupons.length > ft.max;
   const file = ft && coupons
     ? tooMany

@@ -40,6 +40,17 @@ function race(number: number, starts: any[], o: any = {}) {
 // ---------- Faktorer ----------
 
 test.describe('trav-model: faktorer', () => {
+  test('normRecord sparar skor, banunderlag och loppform per tidigare start', async () => {
+    const { normRecord } = await model();
+    const raw: any = rec('2026-09-01', '1');
+    raw.start.horse = { shoes: { front: false, back: true } };
+    raw.track.condition = 'heavy';
+    raw.race.sport = 'monté';
+    expect(normRecord(raw)).toMatchObject({ shoes: { front: false, back: true }, trackCondition: 'heavy', sport: 'monté' });
+    // saknas uppgiften blir det null, inte fel
+    expect(normRecord(rec('2026-09-01', '1'))).toMatchObject({ shoes: null, trackCondition: null, sport: null });
+  });
+
   test('formScore: placeringspoäng med nyast tyngst, galopp = 0', async () => {
     const { formScore, normRecord } = await model();
     const r = (p: string, g = false) => normRecord(rec('2026-09-01', p, { g }));
@@ -325,11 +336,19 @@ test.describe('hast-engine: systembyggaren', () => {
     expect(atgFileName('V85_2026-10-03_11_5-960-rader', '123456789')).toBe('V85_2026-10-03_11_5-960-rader-bb3d.xml');
   });
 
-  test('radpris: V85 och V75 0,50 kr, V86 0,25 kr', async () => {
+  test('radpris: V85 och V75 0,50 kr, V86 0,25 kr, nya V75 0,60 kr från 2026-11-28', async () => {
     const { ROW_PRICE } = await engine();
     expect(ROW_PRICE.V85).toBe(0.5);
     expect(ROW_PRICE.V75).toBe(0.5);
     expect(ROW_PRICE.V86).toBe(0.25);
+    // nya V75 från 2026-11-28: 60 öre; äldre omgångar (bakkörning) räknas med 50 öre
+    const { rowPrice } = await engine();
+    expect(rowPrice('V75', '2025-06-07')).toBe(0.5);
+    expect(rowPrice('V75', '2026-11-27')).toBe(0.5);
+    expect(rowPrice('V75', '2026-11-28')).toBe(0.6);
+    expect(rowPrice('V85', '2026-11-28')).toBe(0.5);
+    expect(rowPrice('V86', '2027-01-01')).toBe(0.25);
+    expect(rowPrice('okänd', '2026-01-01')).toBe(1);
   });
 });
 
@@ -390,6 +409,9 @@ test.describe('GUI: fliken Hästar', () => {
     await expect(page.locator('.hs-sys-top')).toBeVisible();
     // värde förklaras i klartext, värdefokus beskrivs och värdehästar märks
     await expect(page.locator('.hs-value-explain')).toContainText('vinner oftare än folket tror');
+    // värdefokus: Standard (spelformens bakkörda val) är förvalt och förklaras
+    await expect(page.locator('#hs-focus')).toHaveValue('standard');
+    await expect(page.locator('.hs-focus-text')).toContainText('Standard:');
     await page.selectOption('#hs-focus', 'hog');
     await expect(page.locator('.hs-focus-text')).toContainText('Hög:');
     const valuePicks = await page.locator('.hs-sys-legs .hs-pick.is-value').count();
@@ -499,6 +521,30 @@ function normRace(id: string, date: string, n: number, winner: number, o: any = 
   };
 }
 
+test.describe('loppets förstapris', () => {
+  test('parsePrize läser förstapriset ur ATG:s pristext', async () => {
+    const { parsePrize } = await model();
+    expect(parsePrize('Pris: 150.000-75.000-40.000 kr (8 prisplacerade). Lägst 2.500 kr')).toBe(150000);
+    expect(parsePrize('Pris: 1.000.000-500.000 kr')).toBe(1000000);
+    // utländska lopp: ingen "Pris:", valuta sist (räknas om till ungefär kr)
+    expect(parsePrize('18.000-9.000-6.000-4.500-3.500-(3.000) NOK')).toBe(18000);
+    expect(parsePrize('7500-5000-3500-2500-2000 DKK')).toBe(11250);
+    expect(parsePrize('10.000-5.000 EUR')).toBe(115000);
+    for (const t of [null, '', 'Inget pris', 'Pris: -']) expect(parsePrize(t)).toBeNull();
+  });
+
+  test('normalizeGame sparar förstapriset; komplettering fyller bara i lopp som saknar det', async () => {
+    const { normalizeGame } = await model();
+    const { addPrizes } = await sasong();
+    const g = normalizeGame({ id: 'V85_2026-01-03_1_5', type: 'V85', races: [{ id: 'R1', date: '2026-01-03', number: 1, prize: 'Pris: 200.000-100.000 kr', starts: [] }] }, {});
+    expect(g.races[0].firstPrize).toBe(200000);
+    const old = { races: [{ id: 'R1' }, { id: 'R2', firstPrize: 5 }, { id: 'R3' }] };
+    addPrizes(old, { races: [{ id: 'R1', prize: 'Pris: 80.000-40.000 kr' }, { id: 'R2', prize: 'Pris: 1.000 kr' }, { id: 'R3', prize: 'okänd' }] });
+    expect(old.races.map((r: any) => r.firstPrize)).toEqual([80000, 5, null]);
+  });
+
+});
+
 test.describe('trav-features: inlärning', () => {
   test('z inom loppet: snitt 0, saknat = 0, konstant = 0', async () => {
     const { zScores } = await features();
@@ -586,6 +632,20 @@ const topLegs = () => Array.from({ length: 8 }, (_, i) => ({
 }));
 const streckProd = (legs: any[], sysLegs: any[]) => sysLegs.reduce((a: number, l: any, i: number) =>
   a * Math.min(...l.horses.map((nr: number) => legs[i].horses.find((h: any) => h.nr === nr).marketPct)), 1);
+
+test.describe('hast-engine: standard per spelform', () => {
+  test('V85 spelas med Normal (alpha 0,5), övriga med Träff (alpha 0)', async () => {
+    const { defaultAlpha, DEFAULT_ALPHA, buildSystem, TOP_SHARE } = await engine();
+    expect(DEFAULT_ALPHA).toEqual({ V85: 0.5 });
+    expect(defaultAlpha('V85')).toBe(0.5);
+    for (const t of ['V86', 'V75', 'GS75', 'V64', 'V65', 'dd', undefined]) expect(defaultAlpha(t)).toBe(0);
+    // standardvalet ger exakt samma system som Normal
+    const legs = topLegs();
+    const a = buildSystem(legs, { budget: 500, price: 0.5, alpha: defaultAlpha('V85'), minTop: 50000, topShare: TOP_SHARE.V85 });
+    const b = buildSystem(legs, { budget: 500, price: 0.5, alpha: 0.5, minTop: 50000, topShare: TOP_SHARE.V85 });
+    expect(a.legs).toEqual(b.legs);
+  });
+});
 
 test.describe('hast-engine: högsta rad minst X kr vid alla rätt', () => {
   test('utdelning = potandel × radpris / streckprodukt; alla system har minst 50 000 kr som golv', async () => {

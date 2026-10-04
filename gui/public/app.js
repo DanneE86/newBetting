@@ -168,7 +168,7 @@ function oddsGroup(items, activeKey, mkt = null, valueKeys = []) {
   return `<div class="odds-group">${parts.join("")}</div>`;
 }
 
-// Utan marknadsfacit (BTTS, hörn: inga odds i källorna) krävs samma marginal som tunnaste facit i pro-lagret
+// Utan marknadsfacit (BTTS, hörn, kort: inga odds i källorna) krävs samma marginal som tunnaste facit i pro-lagret
 const MODEL_ONLY_MIN_EV = 0.08;
 const tipIndex = new Map();
 const tipId = (t) => `${t.league}|${t.date}|${t.home}|${t.away}`;
@@ -183,6 +183,26 @@ function modelValueCell(p, label) {
   const fair = Math.round((1 / p) * 100) / 100;
   const title = `Inga odds i källorna för ${label}. Modellens chans ${Math.round(p * 100)} % ger fair odds ${fair}; spelvärde från ${minOdds} (+8 % marginal, inget marknadsfacit).`;
   return `<td class="val" title="${escapeHtml(title)}"><div class="val-line"><span class="val-badge val-none">Inga odds</span><span class="val-from">spela från <b>${minOdds}</b></span></div></td>`;
+}
+
+/** Antal kort: modellens chans för över/under en linje (3.5 / 4.5 / 5.5). */
+function cardsP(c, line, key) {
+  const po = c?.pOver?.[String(line)];
+  if (po == null) return null;
+  return key === "over" ? po : 1 - po;
+}
+
+/** Kortraden: projektion, domare och "spela från" för alla Oddset-linjer (man ser oddsen för alla tre). */
+function cardsInfo(c) {
+  const ref = c.referee ? ` · domare ${escapeHtml(c.referee.name)} ${numSv(c.referee.cardsPg, 1)}/match` : "";
+  const lines = Object.keys(c.pOver || {})
+    .map((l) => {
+      const o = cardsP(c, l, "over"), u = cardsP(c, l, "under");
+      return `${escapeHtml(l)}: Ö ${o > 0 ? modelMin(o) : "–"} / U ${u > 0 ? modelMin(u) : "–"}`;
+    })
+    .join(" · ");
+  const old = c.dataTo && Date.now() - Date.parse(c.dataTo) > 60 * 86400000 ? ` · kortdata t.o.m. ${escapeHtml(c.dataTo)}` : "";
+  return `<div class="odds-src">Proj. ${numSv(c.expCards, 1)} kort (liga ${numSv(c.leagueAvg, 1)})${ref}${old}</div><div class="odds-src">Spela från – ${lines}</div>`;
 }
 
 /** Modellens chans för Ö/U (samma källa som BTTS-raden: pro-lagrets blandning, annars tipsmotorn). */
@@ -219,6 +239,11 @@ function valueFor(tip, mkt, key) {
     const c = t.CORNERS;
     const line = c?.line ?? 9.5;
     return modelValueCell(c?.pOver == null ? null : key === "over" ? c.pOver : 1 - c.pOver, `${key === "over" ? "Över" : "Under"} ${line} hörn`);
+  }
+  if (mkt === "CARDS") {
+    const c = t.CARDS;
+    const p = cardsP(c, c?.line, key);
+    return modelValueCell(p, `${key === "over" ? "Över" : "Under"} ${c?.line} kort`);
   }
   return `<td class="val"><span class="val-badge val-none">Inga odds</span></td>`;
 }
@@ -348,6 +373,10 @@ function detailsHtml(tip) {
     items.push(`<li><b>${escapeHtml(label)}</b> – inga odds, spela från ${modelMin(p)} · chans ${Math.round(p * 100)} % · fair ${Math.round((1 / p) * 100) / 100} · facit: bara modell (+8 % marginal)</li>`);
   };
   if (t.BTTS?.pick) model(`BTTS ${t.BTTS.pick}`, bttsP(tip, t.BTTS.pick));
+  if (t.CARDS?.pick) {
+    const k = /OVER/i.test(t.CARDS.pick) ? "over" : "under";
+    model(`Kort ${k === "over" ? "Över" : "Under"} ${t.CARDS.line}`, cardsP(t.CARDS, t.CARDS.line, k));
+  }
   if (ouK && !(v[ouK] && v[ouK].value != null)) model(PICK_LABEL[ouK], ouP(tip, ouK));
   if (!items.length) return "";
   return `<details class="tip-details"><summary>Detaljer</summary><ul>${items.join("")}</ul>
@@ -402,6 +431,10 @@ function tipCard(tip, i) {
   const pickC = String(c?.pick || "").toUpperCase();
   const cornerKey = pickC.includes("OVER") ? "over" : pickC.includes("UNDER") ? "under" : "";
 
+  const k = t.CARDS;
+  const pickK = String(k?.pick || "").toUpperCase();
+  const cardKey = pickK.includes("OVER") ? "over" : pickK.includes("UNDER") ? "under" : "";
+
   // Chans att respektive tips går in (confidence), inte rå pYes/pOver
   const conf1 = t["1X2"]?.confidence;
   const confB = t.BTTS?.confidence;
@@ -423,6 +456,21 @@ function tipCard(tip, i) {
             )}${c.expCorners != null ? `<div class="odds-src">Proj. ${escapeHtml(String(c.expCorners))} hörn</div>` : ""}</td>
             <td class="num">${fmtChance(confC)}</td>
             ${valueFor(tip, "CORNERS", cornerKey || "over")}
+          </tr>`
+    : "";
+  const cardsRow = k
+    ? `<tr data-mkt="CARDS">
+            <td class="mkt">Kort ${escapeHtml(String(k.line))}</td>
+            <td>${oddsGroup(
+              [
+                { key: "over", label: "Ö", odd: null },
+                { key: "under", label: "U", odd: null },
+              ],
+              cardKey,
+              "CARDS"
+            )}${cardsInfo(k)}</td>
+            <td class="num">${fmtChance(k.confidence)}</td>
+            ${valueFor(tip, "CARDS", cardKey || "over")}
           </tr>`
     : "";
 
@@ -502,6 +550,7 @@ function tipCard(tip, i) {
             ${ouCell(tip, ouKey === "over" ? "over25" : "under25")}
           </tr>
           ${cornersRow}
+          ${cardsRow}
         </tbody>
       </table>
       ${od.book ? `<div class="odds-src">Odds: ${escapeHtml(od.book)}</div>` : ""}
@@ -2109,7 +2158,7 @@ async function toggleTeamPanel(btn) {
   }
 }
 
-/** Klick på ett utfall (1 / X / 2, BTTS, Ö/U, hörn): visa spelvärdet för just det utfallet i raden. */
+/** Klick på ett utfall (1 / X / 2, BTTS, Ö/U, hörn, kort): visa spelvärdet för just det utfallet i raden. */
 function selectOutcome(pill) {
   const card = pill.closest(".tip");
   const row = pill.closest("tr");

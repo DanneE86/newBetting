@@ -1423,7 +1423,7 @@ test.describe('stryk-engine: kupong A, B och C', () => {
   const engine = () => import(pathToFileURL(path.join(ROOT, 'gui', 'public', 'stryk-engine.js')).href);
   const spikes = (c: any) => c.picks.filter((x: any) => x.signs.length === 1).length;
 
-  test('2-4 spikar per kupong och B har aldrig samma tecken som A (inte ens spiken)', async () => {
+  test('2-4 spikar per kupong, B har aldrig samma gardering som A och högst 1 spik skiljer', async () => {
     test.skip(products.length === 0, 'data/stryktipset.json saknas');
     test.setTimeout(300_000);
     const { generateCoupons, skrallOk } = await engine();
@@ -1436,11 +1436,16 @@ test.describe('stryk-engine: kupong A, B och C', () => {
         expect(spikes(c), `${at} ${name}: minst 2 spikar`).toBeGreaterThanOrEqual(2);
         expect(spikes(c), `${at} ${name}: högst 4 spikar`).toBeLessThanOrEqual(4);
         // Minst 3 helgarderingar (användarens regel 2026-10-02)
-        expect(c.picks.filter((x: any) => x.signs.length === 3).length, `${at} ${name}: minst 3 helgarderingar`).toBeGreaterThanOrEqual(3);
+        // B helgarderar bara där A inte gör det (A:s halvor utan helgula matcher + högst 1 spikskillnad) – A/B-regeln går före
+        const allY = (i: number) => [0, 1, 2].every((k) => { const f = p.events[i].folk?.[k]; return f != null && f < 0.45 && Math.round(f * 100) > 25; });
+        const helgCap = name === 'B' ? A.picks.filter((x: any, i: number) => x.signs.length === 2 && !allY(i)).length + Math.min(1, A.picks.filter((x: any, i: number) => x.signs.length === 1 && !allY(i)).length) : 13;
+        expect(c.picks.filter((x: any) => x.signs.length === 3).length, `${at} ${name}: minst 3 helgarderingar`).toBeGreaterThanOrEqual(Math.min(3, helgCap));
         // Spik på en match som inte bedömts som spikbar (reserv) bara för att nå 2 spikar, aldrig fler
         // Skrällspik (högst en, runt 40 % med värde mot folket) räknas inte som reserv
         const sysE = (e: any) => ({ final: e.spik?.used ? e.spik.sysP : e.final, folk: e.folk });
-        const notSpikbar = c.picks.map((x: any, i: number) => x.signs.length === 1 && p.events[i].spik?.used && !(p.events[i].spik.spikbar && p.events[i].spik.fav === x.signs));
+        // B ärver A:s spikar (2026-10-03) – en ärvd spik är A:s bedömning och räknas inte som B:s reservspik
+        const inherited = (x: any, i: number) => name === 'B' && A.picks[i].signs.length === 1 && A.picks[i].signs === x.signs;
+        const notSpikbar = c.picks.map((x: any, i: number) => x.signs.length === 1 && !inherited(x, i) && p.events[i].spik?.used && !(p.events[i].spik.spikbar && p.events[i].spik.fav === x.signs));
         // B: skrällspik "näst på tur" (rules.skrallNext) räknas också som skrällspik
         const isNext = (x: any, i: number) => ['B', 'C'].includes(name) && c.rules.skrallNext?.match === i + 1 && c.rules.skrallNext.sign === x.signs;
         const skrall = c.picks.filter((x: any, i: number) => (notSpikbar[i] || isNext(x, i)) && (skrallOk(sysE(p.events[i]), '1X2'.indexOf(x.signs)) || isNext(x, i))).length;
@@ -1449,8 +1454,112 @@ test.describe('stryk-engine: kupong A, B och C', () => {
         // Undantag (2026-10-02): gick systemet inte in på 30 000–50 000 kr får fler favoriter spikas (högst 4)
         if (reserve > 0 && !c.relaxed.some((t: string) => t.includes('minskades strecken'))) expect(spikes(c), `${at} ${name}: reservspikar bara upp till 2`).toBe(2);
       }
-      A.picks.forEach((x: any, i: number) => expect(B.picks[i].signs, `${at} match ${i + 1}`).not.toBe(x.signs));
+      // Användaren 2026-10-03: "A och B får inte ha samma garderingar men max 1 spik skilja" – B ärver A:s spikar
+      A.picks.forEach((x: any, i: number) => { if (x.signs.length > 1) expect(B.picks[i].signs, `${at} match ${i + 1}: samma gardering`).not.toBe(x.signs); });
+      const diff = A.picks.filter((x: any, i: number) => (x.signs.length === 1 || B.picks[i].signs.length === 1) && B.picks[i].signs !== x.signs).length;
+      expect(diff, `${at}: högst 1 spik skiljer A och B`).toBeLessThanOrEqual(1);
     }
+  });
+
+  // 2026-10-03: B 3-3-3 uteslöt rätt rad i 51 av 107 omgångar; 3-2-2 gav högre chans till 13 rätt i alla tre perioderna.
+  // A är kvar på 4-2-2 (3-2-2 gav ingen skillnad i A och sämre C, som ärver A:s regel på Stryktipset).
+  test('teckenregler: A 4-2-2, B 3-2-2, samma i webben och skriptet', async () => {
+    const { SIGN_MIN_B } = await engine();
+    const { SIGN_MIN, SIGN_MIN_C } = await import(pathToFileURL(path.join(ROOT, 'scripts', 'fetch-stryktipset.mjs')).href);
+    expect(SIGN_MIN_B).toEqual([3, 2, 2]);
+    expect(SIGN_MIN.B).toEqual(SIGN_MIN_B);
+    expect(SIGN_MIN.A).toEqual([4, 2, 2]);
+    expect(SIGN_MIN_C.stryktipset).toEqual([4, 2, 2]);
+    // Rätt rad i 4847 (247 257 kr, B hade den i grundraden men 3-3-3 tog bort den) klarar nu B:s regel
+    const n = [...'2X1122112211X'].reduce((c, s) => (c['1X2'.indexOf(s)]++, c), [0, 0, 0]);
+    expect(n.every((v, k) => v >= SIGN_MIN_B[k])).toBe(true);
+  });
+
+  // 2026-10-04: grundraden provas även med tecknens vikt p × folk^−beta (beta 0,3 och 0,5) så att den passar gränsen
+  // 30 000–50 000 kr, som stryker favoritraderna. Backtest 107 omg: A chans 26,75 → 27,46 %, B 15,67 → 16,66 %.
+  test('grundrad mot utdelningsgränsen: samma vikter i webben och skriptet, understreckade tecken väger tyngre', async () => {
+    const web = await engine();
+    const fetch = await import(pathToFileURL(path.join(ROOT, 'scripts', 'fetch-stryktipset.mjs')).href);
+    expect(web.GRUND_TILT).toEqual([0, 0.3, 0.5]);
+    expect(fetch.GRUND_TILT).toEqual(web.GRUND_TILT);
+    // Hemmafavorit 50 % som folket streckar 75 %, kryss 28 % på 15 %, borta 22 % på 10 %
+    const e = { final: [0.5, 0.28, 0.22], folk: [0.75, 0.15, 0.1] };
+    for (const sub of [[0], [0, 1], [1, 2], [0, 1, 2]]) for (const b of [0, 0.3, 0.5]) expect(fetch.tiltShare(e, sub, b)).toBeCloseTo(web.tiltShare(e, sub, b), 12);
+    // beta 0 = vanlig chans
+    expect(web.tiltShare(e, [0, 1], 0)).toBeCloseTo(0.78, 12);
+    // Med vikten blir X2 tyngre än chansen och favoriten lättare; helgardering alltid 1
+    expect(web.tiltShare(e, [1, 2], 0.5)).toBeGreaterThan(0.5);
+    expect(web.tiltShare(e, [0], 0.5)).toBeLessThan(0.5);
+    expect(web.tiltShare(e, [0, 1, 2], 0.5)).toBeCloseTo(1, 12);
+  });
+
+  // "Kan falla" (2026-10-03): favorit (1 eller 2) med folket ≥ 50 % och vår chans < 55 %, samma gränser i webben och skriptet
+  test('canFall: favorit som folket tror på men som har under 55 % hos oss, samma i webben och skriptet', async () => {
+    const { canFall, FALL } = await engine();
+    const fetch = await import(pathToFileURL(path.join(ROOT, 'scripts', 'fetch-stryktipset.mjs')).href);
+    expect(FALL).toEqual({ folk: 0.5, p: 0.55 });
+    expect(fetch.FALL).toEqual(FALL);
+    const cases: [number[], number[], string | null][] = [
+      [[0.5, 0.27, 0.23], [0.62, 0.2, 0.18], '1'], // hemmafavorit 50 %, folket 62 %
+      [[0.25, 0.27, 0.48], [0.15, 0.2, 0.65], '2'], // bortafavorit
+      [[0.6, 0.22, 0.18], [0.7, 0.2, 0.1], null], // 60 % – inte svag
+      [[0.5, 0.27, 0.23], [0.45, 0.3, 0.25], null], // folket under 50 %
+      [[0.54, 0.26, 0.2], [0.5, 0.3, 0.2], '1'], // precis på gränserna (folk 50 %, chans under 55 %)
+      [[0.55, 0.25, 0.2], [0.8, 0.1, 0.1], null], // chans 55 % räcker
+    ];
+    for (const [final, folk, sign] of cases) {
+      const e = { final, folk };
+      expect(canFall(e)?.sign ?? null, `${final} / ${folk}`).toBe(sign);
+      const k = sign ? '1X2'.indexOf(sign) : (final[0] >= final[2] ? 0 : 2);
+      expect(fetch.canFall(e, k), `skriptet ${final} / ${folk}`).toBe(Boolean(sign));
+    }
+    expect(canFall({ final: [0.5, 0.27, 0.23], folk: [0.62, 0.2, 0.18] })?.side).toBe('home');
+    expect(canFall({ final: [0.5, 0.27, 0.23] })).toBeNull(); // utan streck ingen varning
+  });
+
+  // 30 iterationer 2026-10-03 (natt): A röd 1–2 och gränsen på 90 % av budgeten (ca 395 rader) gav högst chans till 13 rätt
+  test('A röd 1–2, reserv B 1–2 (sedan 1–3) och C 1–3, budgetsikte 90 %: samma i webben och skriptet', async () => {
+    const web = await engine();
+    expect(web.RED_FALLBACK).toEqual({ B: [[1, 2], [1, 3]], C: [[1, 3]] });
+    const fetch = await import(pathToFileURL(path.join(ROOT, 'scripts', 'fetch-stryktipset.mjs')).href);
+    expect(web.CUT_AIM).toBe(0.9);
+    // 350–400 rader: sikte 395
+    expect(Math.round(350 + web.CUT_AIM * 50)).toBe(395);
+    for (const lib of [web, fetch]) {
+      // Utan röd max i anropet gäller 3 röda + resten gröna (B och C), A skickar in sin röd max 2
+      const sets = [[0, 2], [0, 2], [0, 2], [0, 2]], colors = [[0, 1, 2], [0, 1, 2], [0, 1, 2], [0, 1, 2]];
+      const three = lib.redGreenRows(sets, colors, new Set(), undefined, 0), two = lib.redGreenRows(sets, colors, new Set(), 2, 0);
+      expect(three.every((r: string) => [...r].filter((x) => x === '2').length === 3)).toBe(true);
+      expect(two.every((r: string) => [...r].filter((x) => x === '2').length === 2)).toBe(true);
+    }
+  });
+
+  // Användaren 2026-10-03: bara tre färger i Gambling Cabin (blå, grön, röd) och "A och B får inte ha samma garderingar
+  // men max 1 spik skilja". Samma i webben och skriptet.
+  test('tre färger och A/B-regeln: gult är aldrig en färg, högst 1 spik skiljer, samma i webben och skriptet', async () => {
+    const web = await engine();
+    const fetch = await import(pathToFileURL(path.join(ROOT, 'scripts', 'fetch-stryktipset.mjs')).href);
+    expect(web.AB_SPIK_DIFF).toBe(1);
+    expect(fetch.AB_SPIK_DIFF).toBe(web.AB_SPIK_DIFF);
+    for (const lib of [web, fetch]) {
+      // Gult räknas aldrig som färg, även när raderna har gula tecken
+      expect(lib.colorsPresent([[2, 3, 1], [3, 2, 2]])).toEqual([true, false, true]);
+      expect(lib.colorsPresent([[0, 4, 0]])).toEqual([false, false, false]);
+      // Utan gul som färg får gult samma fönster som en annan färg (finns inte i länken)
+      expect(lib.colorRuleOk([[3, 6], [3, 6], [1, 3]], lib.colorsPresent([[3, 3, 1], [6, 6, 3]]))).toBe(true);
+    }
+  });
+
+  // Reglagen från historiken 2023–2026 (backtestade 2026-10-03), samma gränser i webben och skriptet
+  test('överstreckad favorit och kryss där folket missar det: samma reglage i webben och skriptet', async () => {
+    const web = await engine();
+    const fetch = await import(pathToFileURL(path.join(ROOT, 'scripts', 'fetch-stryktipset.mjs')).href);
+    expect(fetch.OVER_SPIK).toBe(web.OVER_SPIK);
+    expect(fetch.X_FOLK.on).toBe(web.X_FOLK.on);
+    if (web.X_FOLK.on) expect([fetch.X_FOLK.folk, fetch.X_FOLK.p]).toEqual([web.X_FOLK.folk, web.X_FOLK.p]);
+    // xFolk: folket under gränsen och vår chans minst p
+    expect(web.xFolk({ final: [0.5, 0.25, 0.25], folk: [0.6, 0.15, 0.25] })).toBe(web.X_FOLK.folk > 0.15 && web.X_FOLK.p <= 0.25);
+    expect(web.xFolk({ final: [0.6, 0.2, 0.2], folk: [0.6, 0.25, 0.15] })).toBe(false);
   });
 
   // Användarens Gambling Cabin-bild 2026-10-02: 13 halvgarderingar, gula 8–11 + gröna 4–7 lämnar 1 tecken till rött
@@ -1546,6 +1655,28 @@ test.describe('stryk-engine: kupong A, B och C', () => {
       expect(colorRuleOk([[2, 3], [0, 0], [1, 2]], [true, false, true])).toBe(true);
       expect(colorRuleOk([[2, 3], [0, 0], [1, 2]])).toBe(false);
     });
+
+    // "Kryss oftare" i A och B testades 2026-10-03 (107 omg, data/stryktips-backtest-*-kryss-*.json): halv-bonus, X-vikt och
+    // kryss-tak för spik gav färre X-missar men sämre netto, 12+ och 13 rätt (eller ingen X-effekt). Inget infört: reglagen
+    // ska vara neutrala som standard i båda motorerna, och xCover räknar som vanlig täckning när de är neutrala.
+    test(`X_TILT (${name}): kryss-reglagen är neutrala som standard`, async () => {
+      const { X_TILT, xCover } = await load();
+      expect({ half: X_TILT.half, spik: X_TILT.spik, w: X_TILT.w }, 'inget infört').toEqual({ half: 0, spik: 1, w: 1 });
+      const e = { final: [0.5, 0.27, 0.23] };
+      expect(xCover(e, [0, 2])).toBeCloseTo(0.73, 10);
+      expect(xCover(e, [0, 1])).toBeCloseTo(0.77, 10);
+      expect(xCover(e, [0, 1, 2])).toBeCloseTo(1, 10);
+      // Variant (a) halv-bonus 0,03: 1X före 12 när krysset ligger inom 3 procentenheter av tvåan
+      const halfA = { half: 0.03, spik: 1, w: 1 };
+      expect(xCover({ final: [0.5, 0.21, 0.29] }, [0, 1], halfA)).toBeCloseTo(0.74, 10);
+      expect(xCover({ final: [0.5, 0.21, 0.29] }, [0, 2], halfA)).toBeCloseTo(0.79, 10);
+      expect(xCover({ final: [0.5, 0.24, 0.26] }, [0, 1], halfA)).toBeGreaterThan(xCover({ final: [0.5, 0.24, 0.26] }, [0, 2], halfA));
+      // Bonusen gäller bara halvgarderingar, inte spik på X eller helgardering
+      expect(xCover(e, [1], halfA)).toBeCloseTo(0.27, 10);
+      expect(xCover(e, [0, 1, 2], halfA)).toBeCloseTo(1, 10);
+      // Variant (c) X-vikt 1,2
+      expect(xCover(e, [1], { half: 0, spik: 1, w: 1.2 })).toBeCloseTo(0.324, 10);
+    });
   }
 
   test('skrallOk: skrällspik bara på 35–47 % med minst 3 procentenheter över folket', async () => {
@@ -1559,10 +1690,34 @@ test.describe('stryk-engine: kupong A, B och C', () => {
     expect(skrallOk(e([0.40, 0.30, 0.30], null), 0), 'utan streck').toBe(false);
   });
 
+  test('blå halvor: en av de två har alltid X i A och B (blueX)', async () => {
+    const { blueHalves } = await engine();
+    // folk: X rött (20 %) i alla matcher, så utan regeln väljs de säkraste halvorna utan rött – 12-halvorna
+    const ev = (final: number[], folk: number[]) => ({ final, folk });
+    const events = [
+      ev([0.5, 0.25, 0.25], [0.5, 0.2, 0.3]), // 12, säkrast
+      ev([0.48, 0.27, 0.25], [0.5, 0.2, 0.3]), // 12
+      ev([0.45, 0.32, 0.23], [0.5, 0.2, 0.3]), // 1X, störst kryss
+      ev([0.45, 0.28, 0.27], [0.5, 0.2, 0.3]), // 1X
+    ];
+    const sets = [[0, 2], [0, 2], [0, 1], [0, 1]];
+    expect([...blueHalves(events, sets, false)].sort(), 'utan regeln: två 12-halvor').toEqual([0, 1]);
+    const blue = [...blueHalves(events, sets, true)].sort();
+    expect(blue, 'den säkraste halvan står kvar, halvan med störst kryss tar den andra platsen').toEqual([0, 2]);
+    expect(blue.filter((i) => sets[i].length === 2).length, 'fortfarande exakt 2 blå').toBe(2);
+    // Enda halvan med X (match 1) tar den svagaste blå platsen (match 3); finns ingen halva med X blir det som förut
+    expect([...blueHalves(events, [[0, 1], [0, 2], [0, 2], [0]], false)].sort()).toEqual([1, 2]);
+    expect([...blueHalves(events, [[0, 1], [0, 2], [0, 2], [0]], true)].sort()).toEqual([0, 1]);
+    expect([...blueHalves(events, [[0, 2], [0, 2], [0, 2], [0]], true)].sort()).toEqual([0, 1]);
+    // X redan blått (helgul halva går först): ingenting byts
+    const yel = [ev([0.4, 0.3, 0.3], [0.4, 0.3, 0.3]), ...events.slice(1)];
+    expect([...blueHalves(yel, [[0, 1], [0, 2], [0, 2], [0]], true)].sort()).toEqual([0, 1]);
+  });
+
   test('kuponger: färgreglernas min och max går alltid att nå i grundraden', async () => {
     test.skip(products.length === 0, 'data/stryktipset.json saknas');
     test.setTimeout(300_000);
-    const { generateCoupons, colorTriples, redGreenColors, skrallOk } = await engine();
+    const { generateCoupons, colorTriples, redGreenColors, redGreenRows, skrallOk } = await engine();
     const col = (f: number | null | undefined) => (f == null ? 1 : f >= 0.45 ? 0 : Math.round(f * 100) <= 25 ? 2 : 1);
     for (const p of products.slice(0, 2)) {
       const out = generateCoupons(p, {});
@@ -1581,18 +1736,25 @@ test.describe('stryk-engine: kupong A, B och C', () => {
         // Fler bara när det inte går (t.ex. B får inte spika samma tecken som A) – rules.allYellowMax säger hur många
         expect(sets.filter((x: number[], i: number) => x.length > 1 && allYellow(i)).length, `${p.product} ${name}`).toBeLessThanOrEqual(c.rules.allYellowMax ?? 2);
         c.rules.blueHalves.forEach((i: number) => expect(sets[i].length, `${p.product} ${name} match ${i + 1}`).toBe(2));
+        // "En av de två blå halvorna har alltid X" i A och B (användaren 2026-10-03) när någon halva har X – utom när blått X
+        // hade krävt att fler regler släpps (rules.blueXOff, står i kupongen)
+        if (name !== 'C' && sets.some((x: number[]) => x.length === 2 && x.includes(1))) {
+          if (c.rules.blueXOff) expect(c.relaxed.some((t: string) => t.includes('ingen blå halva med X')), `${p.product} ${name}`).toBe(true);
+          else expect(c.rules.blueHalves.some((i: number) => sets[i].includes(1)), `${p.product} ${name}: blå halva med X`).toBe(true);
+        }
         // Färgreglerna: aldrig exakt antal (2–2) och aldrig samma fönster för två färger (färger som inte finns är av)
         const on = ['green', 'yellow', 'red'].filter((k) => !c.rules.colorsOff.includes(k));
-        // Röd 1–3 i A och C; B är risksystemet med röd 1–5 eller 2–5 (användaren 2026-10-02 kväll, max 5 sedan 2026-10-03)
+        // Röd 1–2 i A (sedan 2026-10-03 natt, förut 1–3), C 2–6; B är risksystemet med röd 1–5 eller 2–5 (användaren 2026-10-02 kväll, max 5 sedan 2026-10-03)
         if (on.includes('red')) {
           if (['B', 'C'].includes(name) && c.rules.redFallback) {
             // 30 000–50 000 kr gick inte med röd max 5: röd 1–3 och gränsen hålls (står i kupongen)
-            expect(cr.red, `${p.product} B reserv`).toEqual([1, 3]);
+            // Reserv: B 1–2, sedan 1–3; C 1–3
+            expect(name === 'B' ? [[1, 2], [1, 3]] : [[1, 3]], `${p.product} ${name} reserv`).toContainEqual(cr.red);
             expect(c.rules.payoutExact, `${p.product} B reserv håller 50 000–75 000 kr`).toBe(true);
-            expect(c.relaxed.some((t: string) => t.includes(`${name} fick röd 1–3`)), `${p.product} ${name} reserv i texten`).toBe(true);
+            expect(c.relaxed.some((t: string) => t.includes(`${name} fick röd ${cr.red.join('–')}`)), `${p.product} ${name} reserv i texten`).toBe(true);
           } else if (name === 'B') expect([[1, 5], [2, 5]], `${p.product} ${name}: röd 1–5 eller 2–5`).toContainEqual(cr.red);
           else if (name === 'C') expect(cr.red, `${p.product} C: röd 2–6`).toEqual([2, 6]);
-          else expect(cr.red, `${p.product} ${name}: röd alltid 1–3`).toEqual([1, 3]);
+          else expect(cr.red, `${p.product} ${name}: röd alltid 1–2`).toEqual([1, 2]);
         }
         if (on.includes('green')) expect(cr.green, `${p.product} ${name}: grön alltid 3–6`).toEqual([3, 6]);
         expect(c.relaxed.some((t: string) => t.includes('grön 3–6')), `${p.product} ${name}: fasta färger hölls`).toBe(false);
@@ -1605,7 +1767,9 @@ test.describe('stryk-engine: kupong A, B och C', () => {
           } else expect(c.relaxed.some((t: string) => t.includes('gulregeln skär')), `${p.product} ${name}`).toBe(true);
         }
         // 3 röda + resten gröna stoppas aldrig av färgreglerna (användaren 2026-10-02, även B), annars mindre system
-        const rgc = redGreenColors(sets, p.events.map((e: any) => [0, 1, 2].map((k) => col(e.folk?.[k]))), new Set(c.rules.blueHalves));
+        // Skyddet: 3 röda, aldrig över systemets röd max (A röd 1–2: 2 röda + resten gröna)
+        const cIdx = p.events.map((e: any) => [0, 1, 2].map((k) => col(e.folk?.[k])));
+        const rgc = redGreenColors(sets, cIdx, new Set(c.rules.blueHalves), redGreenRows(sets, cIdx, new Set(c.rules.blueHalves), Math.min(3, cr.red[1])));
         rgc.forEach((t: number[]) => expect([0, 1, 2].every((o) => t[o] >= [cr.green, cr.yellow, cr.red][o][0] && t[o] <= [cr.green, cr.yellow, cr.red][o][1]), `${p.product} ${name}: 3 röda + gröna ${t} mot ${JSON.stringify(cr)}`).toBe(true));
         expect(c.relaxed.some((t: string) => t.includes('3 röda + resten gröna')), `${p.product} ${name}`).toBe(false);
         on.forEach((k, j) => {
@@ -1624,6 +1788,11 @@ test.describe('stryk-engine: kupong A, B och C', () => {
           else expect(sk, `${p.product} B: minst en skrällspik`).toBeGreaterThanOrEqual(1);
         }
         expect(c.gamblingCabinUrl, `${p.product} ${name}`).toContain(',100000000');
+        // Bara tre färger i Gambling Cabin (användaren 2026-10-03): ingen gul cell (2), ingen gul regel, gult aldrig en färg
+        const gc = new URL(c.gamblingCabinUrl);
+        expect(gc.searchParams.get('yellow'), `${p.product} ${name}: gul regel av`).toBe('0,0,13');
+        ['v1', 'vX', 'v2'].forEach((k) => expect(gc.searchParams.get(k)!.split(',').every((x) => ['0', '1', '3', '4'].includes(x)), `${p.product} ${name} ${k}`).toBe(true));
+        expect(c.rules.colorsOff, `${p.product} ${name}: gult är av`).toContain('yellow');
         // Röd 1–3 och grön 3–6 är fasta (2026-10-02) och får ha döda gränser; gult min går alltid att nå inom regeln
         const rule = [cr.green, cr.yellow, cr.red];
         const inRule = (t: number[]) => [0, 1, 2].every((o) => t[o] >= rule[o][0] && t[o] <= rule[o][1]);
@@ -1632,7 +1801,7 @@ test.describe('stryk-engine: kupong A, B och C', () => {
     }
   });
 
-  test('krav i bara A: B väljer ändå andra tecken; krav i B får vara samma som A', async () => {
+  test('krav i bara A: B följer A-regeln (andra garderingar, högst 1 spik skiljer); krav i B får vara samma som A', async () => {
     test.skip(products.length === 0, 'data/stryktipset.json saknas');
     test.setTimeout(300_000);
     const { generateCoupons } = await engine();
@@ -1641,11 +1810,12 @@ test.describe('stryk-engine: kupong A, B och C', () => {
     const fav = (e: any) => ['1', 'X', '2'][e.final.indexOf(Math.max(...e.final))];
     const { A, B } = generateCoupons(p, { [e0.eventNumber]: { signs: fav(e0), scope: 'A' }, [e1.eventNumber]: { signs: '1X2', scope: 'both' } });
     expect(A.picks[0].signs).toBe(fav(e0));
-    expect(B.picks[0].signs, 'krav bara i A').not.toBe(fav(e0));
     // Egna krav i B gäller även när A har samma tecken
     expect(A.picks[1].signs).toBe('1X2');
     expect(B.picks[1].signs).toBe('1X2');
-    A.picks.forEach((x: any, i: number) => { if (i !== 1) expect(B.picks[i].signs, `match ${i + 1}`).not.toBe(x.signs); });
+    A.picks.forEach((x: any, i: number) => { if (i !== 1 && x.signs.length > 1) expect(B.picks[i].signs, `match ${i + 1}`).not.toBe(x.signs); });
+    const diff = A.picks.filter((x: any, i: number) => i !== 1 && (x.signs.length === 1 || B.picks[i].signs.length === 1) && B.picks[i].signs !== x.signs).length;
+    expect(diff, 'högst 1 spik skiljer').toBeLessThanOrEqual(1);
     expect(spikes(A)).toBeGreaterThanOrEqual(2);
     expect(spikes(B)).toBeGreaterThanOrEqual(2);
   });
@@ -1667,10 +1837,14 @@ test.describe('stryk-engine: kupong A, B och C', () => {
       const ev = p.events.map((e: any) => (e.spik?.used && e.spik.sysP ? { ...e, final: e.spik.sysP } : e));
       const { A, B } = generateCoupons(p, {});
       // "Saknas aldrig, ta en som är näst på tur" (användaren 2026-10-02 kväll)
-      expect(B.rules.skrallMissing, `${p.product}: B saknar skrällspik – ${B.relaxed.join('; ')}`).toBeFalsy();
+      // Saknas skrällspiken (A/B-regeln: spikskillnaden gick åt) ska det stå i kupongen
+      if (B.rules.skrallMissing) expect(B.relaxed.some((t: string) => t.includes('ingen skrällspik')), `${p.product}: ${B.relaxed.join('; ')}`).toBe(true);
       const nx = B.rules.skrallNext;
-      const sk = B.picks.filter((x: any, i: number) => x.signs.length === 1 && (skrallOk(ev[i], '1X2'.indexOf(x.signs)) || (nx?.match === i + 1 && nx.sign === x.signs))).length;
-      expect(sk, `${p.product}: B skrällspik`).toBe(1);
+      // B:s egen skrällspik (A:s spikar ärvs sedan 2026-10-03 och räknas inte – A kan ha en egen skrällspik)
+      const sk = B.picks.filter((x: any, i: number) => x.signs.length === 1 && A.picks[i].signs !== x.signs && (skrallOk(ev[i], '1X2'.indexOf(x.signs)) || (nx?.match === i + 1 && nx.sign === x.signs))).length;
+      const inheritedSkrall = B.picks.filter((x: any, i: number) => x.signs.length === 1 && A.picks[i].signs === x.signs && skrallOk(ev[i], '1X2'.indexOf(x.signs))).length;
+      expect(sk + inheritedSkrall, `${p.product}: B skrällspik`).toBeGreaterThanOrEqual(1);
+      expect(sk, `${p.product}: högst en egen skrällspik i B`).toBeLessThanOrEqual(1);
       if (nx) {
         // Kandidaten i tur: inte favoriten, inte A:s spik, och en av de första i kön
         const setsA = A.picks.map((x: any) => [...x.signs].map((s: string) => '1X2'.indexOf(s)));
@@ -1719,6 +1893,94 @@ test.describe('stryk-engine: kupong A, B och C', () => {
       expect(C.cost).toBeGreaterThanOrEqual(700);
       expect(C.cost).toBeLessThanOrEqual(850);
     }
+  });
+
+  // Kupong D (användaren 2026-10-03): 4 spikar, 4 halvor, 5 helor, röd (≤25 %) 1–3, grön (26–35 %, var gul före tre färger) 1–3, tecken minst 4-3-3,
+  // lägsta utdelning 30 000–50 000 kr, 350–400 kr
+  test('kupong D: form 4/4/5, röd 1–3, grön 1–3, 4-3-3, gräns 30 000–50 000 kr och Gambling Cabin-länken', async () => {
+    test.skip(products.length === 0, 'data/stryktipset.json saknas');
+    test.setTimeout(300_000);
+    const { buildCouponD, colorD, D_RULES } = await engine();
+    expect(D_RULES).toMatchObject({ shape: { spik: 4, halv: 4, hel: 5 }, red: [1, 3], green: [1, 3], signMin: [4, 3, 3], payout: [30000, 50000] });
+    expect([0.25, 0.254, 0.255, 0.26, 0.35, 0.354, 0.355, 0.6].map(colorD)).toEqual(['red', 'red', 'green', 'green', 'green', 'green', 'blue', 'blue']);
+    for (const p of products) {
+      const ev = p.events.map((e: any) => (e.spik?.used && e.spik.sysP ? { ...e, final: e.spik.sysP } : e));
+      const r = p.reduced?.rules || {};
+      const T = r.turnover, base = { rowPrice: 1, turnover: T, realTurnover: r.realTurnover || T, jackpot: r.jackpot || 0 };
+      const D = buildCouponD(p, ev, ev.map(() => null), base);
+      const at = `${p.product} ${p.drawNumber}`;
+      expect(D, at).toBeTruthy();
+      expect(D.picks.map((x: any) => x.signs.length).sort().join(''), `${at}: 4 spikar, 4 halvor, 5 helor`).toBe('1111222233333');
+      expect(D.rules.payoutMin).toBeGreaterThanOrEqual(30000);
+      expect(D.rules.payoutMin).toBeLessThanOrEqual(50000);
+      if (D.rules.budget === 'ok') {
+        expect(D.cost).toBeGreaterThanOrEqual(350);
+        expect(D.cost).toBeLessThanOrEqual(400);
+      } else expect(D.relaxed.length).toBe(1);
+      for (const row of D.rowList) {
+        let red = 0, yel = 0, f = 1;
+        const cnt = [0, 0, 0];
+        [...row].forEach((s: string, i: number) => {
+          const k = '1X2'.indexOf(s);
+          expect(D.picks[i].signs, `${at}: raden följer grundraden`).toContain(s);
+          cnt[k]++;
+          f *= ev[i].folk[k];
+          if (D.picks[i].signs.length > 1) { red += +(colorD(ev[i].folk[k]) === 'red'); yel += +(colorD(ev[i].folk[k]) === 'green'); }
+        });
+        expect(red, `${at} ${row}: röd`).toBeGreaterThanOrEqual(1);
+        expect(red).toBeLessThanOrEqual(3);
+        expect(yel, `${at} ${row}: grön`).toBeGreaterThanOrEqual(1);
+        expect(yel).toBeLessThanOrEqual(3);
+        expect(cnt[0] >= 4 && cnt[1] >= 3 && cnt[2] >= 3, `${at} ${row}: 4-3-3`).toBe(true);
+        // Gambling Cabins formel: raden ger minst gränsen
+        expect((0.65 * 0.4 * T + base.jackpot) / (1 + T * f)).toBeGreaterThanOrEqual(D.rules.payoutMin);
+      }
+      const url = new URL(D.gamblingCabinUrl);
+      expect(url.searchParams.get('antT')).toBe('1,4,13,3,13,3,13');
+      expect(url.searchParams.get('red')).toBe('1,1,3');
+      // Bara tre färger (2026-10-03): gult av, grönt 1–3
+      expect(url.searchParams.get('yellow')).toBe('0,0,13');
+      expect(url.searchParams.get('green')).toBe('1,1,3');
+      expect(url.searchParams.get('utd')).toBe(`1,${D.rules.payoutMin},100000000`);
+      // Spikar blå (1), garderingar efter folket: röd 3, grön 4 (26–35 %), över 35 % blå 1
+      const v = ['v1', 'vX', 'v2'].map((k) => url.searchParams.get(k)!.split(',').map(Number));
+      D.picks.forEach((x: any, i: number) => [0, 1, 2].forEach((k) => {
+        const want = !x.signs.includes('1X2'[k]) ? 0 : x.signs.length === 1 ? 1 : { blue: 1, green: 4, red: 3 }[colorD(ev[i].folk[k]) as string];
+        expect(v[k][i], `${at} match ${i + 1} ${'1X2'[k]}`).toBe(want);
+      }));
+    }
+  });
+
+  test('kupong D: bara krav på D eller Alla låses, krav som inte passar 4/4/5 ger ingen kupong', async () => {
+    test.skip(products.length === 0, 'data/stryktipset.json saknas');
+    test.setTimeout(300_000);
+    const { buildCouponD } = await engine();
+    const p = products[0];
+    const ev = p.events.map((e: any) => (e.spik?.used && e.spik.sysP ? { ...e, final: e.spik.sysP } : e));
+    const base = { rowPrice: 1, turnover: p.reduced.rules.turnover, realTurnover: p.reduced.rules.turnover, jackpot: 0 };
+    const forced = ev.map(() => null);
+    forced[4] = [0];      // spik 1
+    forced[5] = [0, 1, 2]; // helgardering
+    const D = buildCouponD(p, ev, forced, base);
+    expect(D.picks[4]).toMatchObject({ signs: '1', locked: true });
+    expect(D.picks[5]).toMatchObject({ signs: '1X2', locked: true });
+    expect(D.picks.map((x: any) => x.signs.length).sort().join('')).toBe('1111222233333');
+    // 5 låsta spikar går inte ihop med exakt 4
+    expect(buildCouponD(p, ev, ev.map((_: any, i: number) => (i < 5 ? [0] : null)), base)).toBeNull();
+  });
+
+  test('kupong D: floorD lägger gränsen i ett glapp inom 30 000–50 000 kr så att det blir 350–400 rader', async () => {
+    const { floorD } = await engine();
+    const rows = (n: number, top: number, step: number) => Array.from({ length: n }, (_, i) => ({ payout: top - i * step }));
+    // 1 000 rader från 80 000 och nedåt med 50 kr: rad 400 ger 60 050 – över 50 000, så 50 000 och för många rader
+    expect(floorD(rows(1000, 80000, 50))).toMatchObject({ floor: 50000, budget: 'over' });
+    // 600 rader 60 000 → 30 050 (50 kr steg): 400 rader = gräns strax över rad 401 (40 000) -> 40 100
+    const r = floorD(rows(600, 60000, 50));
+    expect(r).toMatchObject({ n: 400, budget: 'ok' });
+    expect(r.floor).toBeGreaterThan(40000);
+    expect(r.floor).toBeLessThanOrEqual(40050);
+    // Bara 200 rader över 30 000: gränsen 30 000 och för få rader
+    expect(floorD(rows(300, 40000, 50))).toMatchObject({ floor: 30000, n: 201, budget: 'under' });
   });
 
   test('skrallQueue: närmast 35–47 % med värde mot folket, aldrig favoriten eller A:s spik', async () => {
@@ -1943,5 +2205,113 @@ test.describe('tipslogg: vad som tippats sparas och analyseras', () => {
     expect(h[0].id).toBe('V85_2026-10-10_5_5|5');
     expect(h[0].tip.top.map((x: any) => x.nr)).toEqual([2, 1]);
     expect(h[0].tip.spik).toBe(2);
+  });
+});
+
+// ---------- cards-model.mjs (Antal kort Ö/U som på Oddset) ----------
+
+test.describe('cards-model: antal kort över/under 3.5/4.5/5.5', () => {
+  // Liga X: 3 kort/match (2 hemma, 1 borta) utom Butchers som alltid får 3 egna. Domare Hård dömer dubbelt så många.
+  const teams = ['A', 'B', 'C', 'D', 'Butchers'];
+  const rows: any[] = [];
+  const day = (i: number) => new Date(Date.UTC(2026, 0, 1) + i * 86400000).toISOString().slice(0, 10);
+  for (let i = 0; i < 200; i++) {
+    const h = teams[i % 5], a = teams[(i + 1 + Math.floor(i / 5)) % 5];
+    if (h === a) continue;
+    const hard = i % 4 === 0;
+    const hy = (h === 'Butchers' ? 3 : 2) * (hard ? 2 : 1), ay = (a === 'Butchers' ? 3 : 1) * (hard ? 2 : 1);
+    rows.push({ d: day(i), lg: 'X', h, a, r: hard ? 'Hård' : 'Snäll', hy, ay, hr: 0, ar: 0 });
+  }
+  const asOf = day(201);
+
+  test('probOver: Poisson och negativ binomial stämmer med handräknat', async () => {
+    const { probOver } = await lib('cards-model.mjs');
+    // Poisson mu=4: P(X<=4) = e^-4 (1+4+8+10.667+10.667) = 0.6288
+    expect(probOver(4, 4.5)).toBeCloseTo(1 - 0.6288, 3);
+    // Stor dispersion -> nästan Poisson; liten dispersion -> fetare svans (mer över 5.5)
+    expect(probOver(4, 4.5, 1e7)).toBeCloseTo(probOver(4, 4.5), 4);
+    expect(probOver(4, 5.5, 3)).toBeGreaterThan(probOver(4, 5.5));
+    expect(probOver(4, 3.5)).toBeGreaterThan(probOver(4, 4.5));
+  });
+
+  test('lag som får fler kort och hård domare ger högre prognos, bara data före asOf', async () => {
+    const { buildCardIndex, predictCards } = await lib('cards-model.mjs');
+    const idx = buildCardIndex(rows, asOf);
+    const base = predictCards(idx, { league: 'X', home: 'A', away: 'B' });
+    const butch = predictCards(idx, { league: 'X', home: 'Butchers', away: 'B' });
+    const hard = predictCards(idx, { league: 'X', home: 'A', away: 'B', referee: 'Hård' });
+    const soft = predictCards(idx, { league: 'X', home: 'A', away: 'B', referee: 'Snäll' });
+    expect(butch.expCards).toBeGreaterThan(base.expCards);
+    expect(hard.expCards).toBeGreaterThan(base.expCards);
+    expect(soft.expCards).toBeLessThan(base.expCards);
+    expect(hard.referee.factor).toBeGreaterThan(1.2);
+    expect(Object.keys(base.pOver)).toEqual(['3.5', '4.5', '5.5']);
+    // Okänt lag, okänd liga, eller bara framtida matcher -> ingen prognos
+    expect(predictCards(idx, { league: 'X', home: 'A', away: 'Okänd' })).toBeNull();
+    expect(predictCards(idx, { league: 'Y', home: 'A', away: 'B' })).toBeNull();
+    expect(predictCards(buildCardIndex(rows, day(0)), { league: 'X', home: 'A', away: 'B' })).toBeNull();
+  });
+
+  test('domarnamn matchas via refKey och lagnamn via resolveName', async () => {
+    const { buildCardIndex, predictCards } = await lib('cards-model.mjs');
+    const { refKey, resolveTeam } = await lib('referee-streaks.mjs');
+    const named = rows.map((m) => ({ ...m, r: m.r === 'Hård' ? 'Anthony Taylor' : m.r }));
+    const idx = buildCardIndex(named, asOf, undefined, { refKey });
+    const p = predictCards(idx, { league: 'X', home: 'Butchers FC', away: 'B', referee: 'A. Taylor' }, { resolveName: resolveTeam });
+    expect(p).not.toBeNull();
+    expect(p.referee.name).toBe('A. Taylor');
+    expect(p.referee.factor).toBeGreaterThan(1.2);
+  });
+
+  test('trasiga liga-månader (FotMob skriver 0 kort) räknas inte', async () => {
+    const { brokenCardMonths, usableCardRows, buildCardIndex, leagueCardStats } = await lib('cards-model.mjs');
+    // 2026-08: 10 matcher, 9 med 0 kort (och 1 ofullständig) -> hela månaden bort; 2026-09 med 2 matcher ärver
+    const broken = [...Array(10)].map((_, i) => ({ d: `2026-08-${String(i + 10)}`, lg: 'X', h: 'A', a: 'B', hy: i === 0 ? 1 : 0, ay: 0 }));
+    const tail = [{ d: '2026-09-02', lg: 'X', h: 'A', a: 'B', hy: 0, ay: 0 }, { d: '2026-09-03', lg: 'X', h: 'C', a: 'D', hy: 1, ay: 0 }];
+    // En vanlig månad med 1 nolla av 10 är riktig data
+    const okMonth = [...Array(10)].map((_, i) => ({ d: `2026-05-${String(i + 10)}`, lg: 'X', h: 'A', a: 'B', hy: i === 0 ? 0 : 2, ay: i === 0 ? 0 : 2 }));
+    const all = [...rows, ...okMonth, ...broken, ...tail];
+    const b = brokenCardMonths(all);
+    expect(b.has('X|2026-08')).toBe(true);
+    expect(b.has('X|2026-09')).toBe(true);
+    expect(b.has('X|2026-05')).toBe(false);
+    const use = usableCardRows(all);
+    expect(use.some((m: any) => m.d.startsWith('2026-08') || m.d.startsWith('2026-09'))).toBe(false);
+    expect(okMonth.every((m) => use.includes(m))).toBe(true);
+    // Ligasnittet påverkas inte av de trasiga nollorna
+    const s = leagueCardStats(buildCardIndex(all, '2026-10-01'), 'X');
+    expect(s.last < '2026-08-01').toBe(true);
+    expect(s.total).toBeGreaterThan(2.5);
+  });
+
+  test('pickCardLine väljer linjen närmast 50 % och cardsOutcome ger facit', async () => {
+    const { pickCardLine, cardsOutcome } = await lib('cards-model.mjs');
+    const pk = pickCardLine({ pOver: { '3.5': 0.78, '4.5': 0.58, '5.5': 0.36 } });
+    expect(pk).toEqual({ line: 4.5, pick: 'OVER 4.5', pOver: 0.58, confidence: 0.58 });
+    expect(pickCardLine({ pOver: { '3.5': 0.45, '4.5': 0.27, '5.5': 0.14 } }).pick).toBe('UNDER 3.5');
+    expect(pickCardLine(null)).toBeNull();
+    expect(cardsOutcome({ hy: 2, ay: 2, hr: 1, ar: 0 }, 4.5)).toEqual({ total: 5, result: 'OVER 4.5' });
+    expect(cardsOutcome({ hy: 2, ay: 2 }, 4.5).result).toBe('UNDER 4.5');
+    expect(cardsOutcome({ hy: null, ay: 1 }, 4.5)).toBeNull();
+  });
+
+  test('tipslogg: korttipset loggas med linje och rättas mot gula + röda', async () => {
+    const { oddsetRecord, oddsetResult, gradeRecord } = await lib('tipslogg.mjs');
+    const t = {
+      date: '2026-10-04', league: 'PL', home: 'Arsenal', away: 'Leeds',
+      tips: { CARDS: { pick: 'OVER 4.5', line: 4.5, confidence: 0.56, expCards: 4.9, referee: { name: 'A Taylor' } } },
+    };
+    const r = oddsetRecord(t);
+    expect(r.tip.markets.CARDS).toEqual({ pick: 'OVER 4.5', line: 4.5, p: 0.56, expCards: 4.9, referee: 'A Taylor' });
+    const m = { result: 'H', hg: 2, ag: 0, btts: false, over25: false, discipline: { homeYellow: 2, awayYellow: 2, homeRed: 0, awayRed: 1 } };
+    expect(oddsetResult(m).cards).toBe(5);
+    // Utan football-data-kort: FotMob-raden; utan någon kortkälla: ingen cards-nyckel
+    expect(oddsetResult({ ...m, discipline: {} }, 3).cards).toBe(3);
+    expect('cards' in oddsetResult({ ...m, discipline: {} })).toBe(false);
+    const g = gradeRecord({ product: 'oddset', first: r.tip, result: oddsetResult(m) });
+    expect(g.find((x: any) => x.market === 'CARDS')).toMatchObject({ pick: 'OVER 4.5', hit: true, p: 0.56 });
+    const miss = gradeRecord({ product: 'oddset', first: r.tip, result: { ...oddsetResult(m), cards: 4 } });
+    expect(miss.find((x: any) => x.market === 'CARDS').hit).toBe(false);
+    expect(gradeRecord({ product: 'oddset', first: r.tip, result: { '1X2': '1' } }).some((x: any) => x.market === 'CARDS')).toBe(false);
   });
 });
