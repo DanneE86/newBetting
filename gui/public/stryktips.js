@@ -723,7 +723,7 @@ const SCOPE_TITLE = {
   A: "Kravet gäller bara kupong A",
   B: "Kravet gäller bara kupong B",
   C: "Kravet gäller bara kupong C (eget system)",
-  D: "Kravet gäller bara kupong D (fritt system för vinster över 20 000 kr)",
+  D: "Kravet gäller bara kupong D (fritt reducerat system för vinster över 20 000 kr)",
   all: "Kravet gäller alla fyra kupongerna",
 };
 const bStates = new Map();
@@ -777,12 +777,19 @@ function kravRow(e, krav, pick) {
   </div>`;
 }
 
+// Kupong D: reglerna som sökningen valde (antal 1/X/2, gröna och röda bland garderingarna) och hur mycket de reducerar
+function dRules(r, c) {
+  const span = ([a, b]) => (a === b ? `${a}` : `${a}–${b}`);
+  const parts = r.signRules ? ["1", "X", "2"].map((s, k) => `${s} ${span(r.signRules[k])}`) : [];
+  for (const [key, name] of [["green", "grön"], ["red", "röd"]]) if (r.colorRules?.[key]) parts.push(`${name} ${span(r.colorRules[key])}`);
+  return `Fritt reducerat · ${c.grundRows.toLocaleString("sv-SE")} → ${c.rows} rader${parts.length ? ` · ${parts.join(", ")}` : ""}`;
+}
 function couponCard(c, label, p) {
   // A och B är rekommendationen och framhävs; C och D är valfria extra system och visas dämpade
   const extra = label === "C" || label === "D";
   const cls = extra ? "sb-coupon is-extra" : "sb-coupon is-main";
   const tag = extra ? `<span class="sb-coupon-tag extra">Extra · valfri</span>` : `<span class="sb-coupon-tag">Rekommenderad</span>`;
-  if (!c) return `<div class="${cls} ds-card">${tag}<h3>Kupong ${label}</h3><p class="st-note bad ds-notice ds-notice--danger">${label === "C" ? "Gick inte att bygga kupong C (risksystem: 700–850 kr, 50 000–75 000 kr för 13 rätt)" : label === "D" ? "Gick inte att bygga kupong D (fritt system, minst 20 000 kr för 13 rätt) med dina krav på D" : `Gick inte att bygga en kupong med de här kraven${label === "B" ? " (B är risksystemet: 50 000–75 000 kr för 13 rätt och en annan grundrad än A)" : ""}`}.</p></div>`;
+  if (!c) return `<div class="${cls} ds-card">${tag}<h3>Kupong ${label}</h3><p class="st-note bad ds-notice ds-notice--danger">${label === "C" ? "Gick inte att bygga kupong C (risksystem: 700–850 kr, 50 000–75 000 kr för 13 rätt)" : label === "D" ? "Gick inte att bygga kupong D (fritt reducerat system, minst 20 000 kr för 13 rätt) med dina krav på D" : `Gick inte att bygga en kupong med de här kraven${label === "B" ? " (B är risksystemet: 50 000–75 000 kr för 13 rätt och en annan grundrad än A)" : ""}`}.</p></div>`;
   const krFmt = (x) => Math.round(x).toLocaleString("sv-SE");
   const r = c.rules;
   const locked = c.picks.filter((x) => x.locked).length;
@@ -791,7 +798,7 @@ function couponCard(c, label, p) {
     <h3>Kupong ${label} <small>${c.rows} rader · ${krFmt(c.cost)} kr</small></h3>
     <dl class="sb-facts">
       <div><dt>Utdelning 13 rätt</dt><dd>ca ${krFmt(c.expectedPayout || 0)} kr</dd></div>
-      <div><dt>Regler</dt><dd class="sb-rule">${r.free ? "Fritt system, inga färg- eller teckenregler" : r.signMin.join("-")} · utdelning minst ${krFmt(r.payoutMinReal ?? r.payoutMin)} kr, inget tak</dd></div>
+      <div><dt>Regler</dt><dd class="sb-rule">${r.free ? dRules(r, c) : r.signMin.join("-")} · utdelning minst ${krFmt(r.payoutMinReal ?? r.payoutMin)} kr, inget tak</dd></div>
       <div><dt>Dina krav</dt><dd>${locked}</dd></div>
     </dl>
     ${c.relaxed?.length ? `<p class="st-note ds-notice ds-notice--warning">Gick inte med alla regler: ${esc(c.relaxed.join(", "))}.</p>` : ""}

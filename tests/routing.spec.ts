@@ -123,10 +123,10 @@ test('Stryktipset: en sida, egna krav genererar kupong A och B', async ({ page }
   await expect(page.locator('.sb-coupon').nth(2)).toContainText('minst 50 000 kr');
   // Krav på A+B låses inte i C
   await expect(table.nth(0).locator('td').nth(3)).not.toContainText('🔒');
-  // Kupong D: fritt system för vinster över 20 000 kr, krav på A+B låses inte där
+  // Kupong D: fritt reducerat system för vinster över 20 000 kr, krav på A+B låses inte där
   const dCard = page.locator('.sb-coupon').nth(3);
   await expect(dCard.locator('h3')).toContainText(/Kupong D \d+ rader/);
-  await expect(dCard).toContainText('Fritt system, inga färg- eller teckenregler');
+  await expect(dCard).toContainText(/Fritt reducerat · [\d\s]+ → \d+ rader · 1 \d/);
   await expect(table.nth(0).locator('td').nth(4)).not.toContainText('🔒');
   const dSigns = await table.evaluateAll((trs) => trs.map((tr) => tr.querySelectorAll('td')[4].textContent!.trim()));
   expect(dSigns).toHaveLength(13);
