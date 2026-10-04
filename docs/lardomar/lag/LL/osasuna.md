@@ -1,11 +1,15 @@
 # Osasuna (La Liga) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [LL](../../ligor/LL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [LL](../../ligor/LL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Senaste 8: xG-målskillnaden är +0,68 per match bättre än målskillnaden.
 - Stark historik mot Betis (−0,75 p/match mot marknaden, 14 möten), Alaves (+0,67 p/match mot marknaden, 13 möten), Vallecano (+0,52 p/match mot marknaden, 11 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Efter landslagsuppehåll: 0,83 poäng per match mot 1,42 annars (4-8-12 på 24 matcher), mot marknaden −0,31 mot +0,15. Sedan 2023: 3-2-6. Sämre än vanligt, men få matcher: i hela ligan är effekten 0,00 mot marknaden.
+- Spelstil 2025/26: Balanserat, Blandat, Mellanpress, Farlig på fasta, Medel mot fasta. Bäst mot Blandat (+0,17, samma håll i båda halvorna men svagt), Mellanpress (+0,14, samma håll i båda halvorna men svagt), Balanserat (+0,09, samma håll i båda halvorna men svagt). Svårast mot Kortpass (−0,32, stabilt), Svag på fasta (−0,15, samma håll i båda halvorna men svagt), Högpress (−0,13, samma håll i båda halvorna men svagt). Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2025/26: 0,40 mål för per match (xG 0,32), 0,21 emot (xG 0,22), 3,7 hörnor.
+- Svårt för: Ath Madrid (2-0-13, 0,40 p/match, mot marknaden −0,34), Betis (1-3-10, 0,43 p/match, mot marknaden −0,75), Real Madrid (1-4-9, 0,50 p/match, mot marknaden −0,09), Barcelona (2-2-10, 0,57 p/match, mot marknaden +0,02), Sociedad (3-3-8, 0,86 p/match, mot marknaden −0,12), Getafe (3-5-7, 0,93 p/match, mot marknaden −0,40), Ath Bilbao (3-5-6, 1,00 p/match, mot marknaden +0,03), Villarreal (4-3-7, 1,07 p/match, mot marknaden +0,03). Där marknaden ligger nära noll är laget bara sämre i de mötena än annars, och oddsen vet redan om det.
 - På Stryktipset/Europatipset streckas lagets vinst ×0,87 av vår sannolikhet (14 matcher). Folket underspelar laget: dess vinst ger streckvärde.
 
 ## Nuläge (senaste 8 ligamatcher)
@@ -34,6 +38,74 @@ Form (äldst → senast): FOVVFFFO · senaste match 2026-09-19
 | 2026/27 | LL | 7 | 1,14 | −0,23 (−0,34 / −0,08) | 29 % (28 %) | 0,86–1,86 | 1,27–1,71 | 1,31 |
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/LL.md#osasuna) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2025/26: **Balanserat, Blandat, Mellanpress, Farlig på fasta, Medel mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026/27 | 7 | 0,00 | 0,24 | 0,14 | 0,13 | 3,0 |
+| 2025/26 | 38 | 0,40 | 0,32 | 0,21 | 0,22 | 3,7 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Backar hem | 86 | 1,16–1,24 | +0,04 | −0,03 (−0,2) | −1 pe | −1 pe | svag |
+| Balanserat | 106 | 1,08–1,29 | +0,16 | +0,09 (0,8) | +1 pe | −3 pe | ✔ samma håll |
+| Bollinnehav | 81 | 1,05–1,51 | −0,02 | −0,09 (−0,8) | +3 pe | −0 pe | ✔ samma håll |
+| Kortpass | 68 | 1,00–1,60 | −0,25 | −0,32 (−2,4) | +1 pe | −0 pe | ⚑ stabil |
+| Blandat | 126 | 1,12–1,26 | +0,23 | +0,17 (1,6) | +2 pe | −4 pe | ✔ samma håll |
+| Direktspel | 79 | 1,15–1,24 | +0,07 | +0,01 (0,0) | −2 pe | +0 pe | svag |
+| Lågpress | 74 | 1,19–1,36 | −0,03 | −0,10 (−0,8) | +6 pe | +1 pe | ✔ samma håll |
+| Mellanpress | 125 | 1,20–1,46 | +0,20 | +0,14 (1,2) | −4 pe | +3 pe | ✔ samma håll |
+| Högpress | 74 | 0,84–1,11 | −0,06 | −0,13 (−1,1) | +4 pe | −12 pe | ✔ samma håll |
+| Svag på fasta | 79 | 0,95–1,37 | −0,08 | −0,15 (−1,2) | +8 pe | −1 pe | ✔ samma håll |
+| Medel på fasta | 114 | 1,20–1,31 | +0,14 | +0,07 (0,7) | +2 pe | −2 pe | ✔ samma håll |
+| Farlig på fasta | 80 | 1,10–1,36 | +0,11 | +0,04 (0,3) | −7 pe | −2 pe | svag |
+| Stark mot fasta | 100 | 1,10–1,30 | +0,09 | +0,02 (0,2) | +6 pe | −2 pe | svag |
+| Medel mot fasta | 105 | 1,10–1,31 | +0,02 | −0,05 (−0,4) | −2 pe | −3 pe | svag |
+| Svag mot fasta | 68 | 1,10–1,44 | +0,11 | +0,05 (0,3) | −4 pe | +0 pe | svag |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
+
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 24 | 4-8-12 | 0,83 | −0,31 |
+| Efter uppehåll sedan 2023 | 11 | 3-2-6 | 1,00 | −0,35 |
+| Övriga matcher | 332 | 125-96-111 | 1,42 | +0,15 |
+
+Hela ligan efter uppehåll: 0,00 mot marknaden (n 630). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2026-04-05 | Alaves - Osasuna | 2-2 O | +0,36 |
+| 2025-11-22 | Osasuna - Sociedad | 1-3 F | −1,40 |
+| 2025-10-18 | Ath Madrid - Osasuna | 1-0 F | −0,66 |
+| 2025-09-14 | Osasuna - Vallecano | 2-0 V | +1,59 |
+| 2024-11-24 | Osasuna - Villarreal | 2-2 O | −0,39 |
+| 2024-10-19 | Osasuna - Betis | 1-2 F | −1,51 |
+| 2024-09-16 | Vallecano - Osasuna | 3-1 F | −1,34 |
+| 2024-03-30 | Almeria - Osasuna | 0-3 V | +1,45 |
+| 2023-11-26 | Villarreal - Osasuna | 3-1 F | −1,39 |
+| 2023-10-20 | Osasuna - Granada | 2-0 V | +1,02 |
+| 2023-09-17 | Getafe - Osasuna | 3-2 F | −1,58 |
+| 2023-03-31 | Mallorca - Osasuna | 0-0 O | +0,66 |
+| 2022-12-31 | Sociedad - Osasuna | 2-0 F | −1,19 |
+| 2022-10-02 | Real Madrid - Osasuna | 1-1 O | +1,29 |
+| 2022-04-03 | Betis - Osasuna | 4-1 F | −1,22 |
+| 2021-11-20 | Ath Madrid - Osasuna | 1-0 F | −0,78 |
+| 2021-10-17 | Villarreal - Osasuna | 1-2 V | +2,12 |
+| 2021-09-12 | Osasuna - Valencia | 1-4 F | −1,59 |
+| 2021-04-03 | Osasuna - Getafe | 0-0 O | −0,49 |
+| 2020-11-20 | Osasuna - Huesca | 1-1 O | −0,46 |
+| 2020-10-18 | Eibar - Osasuna | 0-0 O | +0,34 |
+| 2019-11-24 | Osasuna - Ath Bilbao | 1-2 F | −1,35 |
+| 2019-10-18 | Granada - Osasuna | 1-0 F | −1,53 |
+| 2019-09-15 | Valladolid - Osasuna | 1-1 O | +0,65 |
 
 ## Nyckelspelare (Understat, 2024/25–)
 
@@ -75,6 +147,8 @@ Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: s
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): Ath Madrid 0,40 p/match (−0,34), Betis 0,43 p/match (−0,75), Real Madrid 0,50 p/match (−0,09), Barcelona 0,57 p/match (+0,02), Sociedad 0,86 p/match (−0,12), Getafe 0,93 p/match (−0,40), Ath Bilbao 1,00 p/match (+0,03), Villarreal 1,07 p/match (+0,03).
+
 ## Stryktipset / Europatipset
 
 | Datum | Spel | Match | Utfall | Folket på laget | Vår procent |
@@ -94,42 +168,42 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-08-31 | Europa 2501 | Espanyol - Osasuna | 1 | 22 % | 29 % |
 | 2025-08-24 | Europa 2499 | Osasuna - Valencia | 1 ✓ | 46 % | 40 % |
 
-## Trupp (FotMob, hämtad 2026-09-29)
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Luis Ramis. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Jorge Herrando (skadad, åter Early October 2026), Valentin Rosier (osäker), Aimar Oroz (skadad, åter Early October 2026), Moi Gómez (skadad, åter Early October 2026), Raúl Moro (skadad, åter Early October 2026)
+**Skadade/borta nu:** Jorge Herrando (osäker), Aimar Oroz (osäker), Moi Gómez (osäker), Raúl García (osäker), Raúl Moro (skadad, åter Mid October 2026)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Sergio Herrera | GK | 33 | Spain | 2,1 M€ | 6,28 | 0 | 0 | 3/0 |  |
-| 13 | Aitor Fernández | GK | 35 | Spain | 302 k€ | 6,66 | 0 | 0 | 0/0 |  |
-| 31 | Rafa Fernández | Keeper | 22 | Spain | 351 k€ | – | 0 | 0 | 0/0 |  |
+| 1 | Sergio Herrera | GK | 33 | Spain | 2,2 M€ | 6,28 | 0 | 0 | 3/0 |  |
+| 13 | Aitor Fernández | GK | 35 | Spain | 319 k€ | 6,66 | 0 | 0 | 0/0 |  |
+| 31 | Rafa Fernández | Keeper | 22 | Spain | 247 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 |  | Unai Santos | CB | 20 | Spain | – | 5,94 | 0 | 0 | 0/0 |  |
-| 5 | Jorge Herrando | CB | 25 | Spain | 3,0 M€ | 6,83 | 0 | 0 | 1/0 | skadad, åter Early October 2026 |
-| 15 | Diego Rico | LB,LWB | 33 | Spain | 774 k€ | 6,10 | 0 | 0 | 0/0 |  |
-| 19 | Valentin Rosier | RB,RM,RWB | 30 | France | 2,3 M€ | – | 0 | 0 | 0/0 | osäker |
-| 22 | Flavien Boyomo | CB | 24 | Cameroon | 18,4 M€ | 5,94 | 0 | 0 | 0/0 |  |
-| 23 | Abel Bretones | LB,LM,LWB | 26 | Spain | 2,6 M€ | 6,39 | 0 | 0 | 2/0 |  |
-| 24 | Alejandro Catena | CB | 31 | Spain | 1,8 M€ | 6,46 | 0 | 0 | 0/0 |  |
-| 27 | Iñigo Arguibide | RB,RWB | 21 | Spain | 825 k€ | 6,25 | 0 | 0 | 0/0 |  |
+| 5 | Jorge Herrando | CB | 25 | Spain | 4,4 M€ | 6,83 | 0 | 0 | 1/0 | osäker |
+| 15 | Diego Rico | LB,LWB | 33 | Spain | 817 k€ | 6,10 | 0 | 0 | 0/0 |  |
+| 19 | Valentin Rosier | RB,RWB | 30 | France | 2,3 M€ | – | 0 | 0 | 0/0 |  |
+| 22 | Flavien Boyomo | CB | 24 | Cameroon | 16,9 M€ | 5,94 | 0 | 0 | 0/0 |  |
+| 23 | Abel Bretones | LB,LWB,LM | 26 | Spain | 3,7 M€ | 6,39 | 0 | 0 | 2/0 |  |
+| 24 | Alejandro Catena | CB | 31 | Spain | 2,0 M€ | 6,46 | 0 | 0 | 0/0 |  |
+| 27 | Iñigo Arguibide | RB,RWB | 21 | Spain | 793 k€ | 6,25 | 0 | 0 | 0/0 |  |
 | 29 | Asier Osambela | CB | 21 | Spain | – | 6,61 | 0 | 0 | 1/0 |  |
-| 48 | Rockson Yeboah | CB | 22 | Ghana | 376 k€ | 6,38 | 0 | 0 | 1/0 |  |
+| 48 | Rockson Yeboah | CB | 22 | Ghana | 717 k€ | 6,38 | 0 | 0 | 1/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 6 | Lucas Torró | CDM,CM | 32 | Spain | 1,4 M€ | 6,60 | 0 | 0 | 0/0 |  |
-| 7 | Jon Moncayola | CDM,CM,RM,RB | 28 | Spain | 5,2 M€ | 6,52 | 0 | 0 | 3/0 |  |
-| 8 | Iker Muñoz | CDM,CM | 24 | Spain | 2,0 M€ | 6,56 | 0 | 0 | 1/0 |  |
-| 10 | Aimar Oroz | CAM,CM,ST | 24 | Spain | 9,8 M€ | 6,57 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
-| 16 | Moi Gómez | CM,CAM,CDM,LW | 32 | Spain | 872 k€ | 6,97 | 0 | 1 | 0/0 | skadad, åter Early October 2026 |
+| 6 | Lucas Torró | CDM,CM | 32 | Spain | 1,6 M€ | 6,60 | 0 | 0 | 0/0 |  |
+| 7 | Jon Moncayola | CDM,CM,RM,RB | 28 | Spain | 7,1 M€ | 6,52 | 0 | 0 | 3/0 |  |
+| 8 | Iker Muñoz | CDM,CM | 24 | Spain | 2,1 M€ | 6,56 | 0 | 0 | 1/0 |  |
+| 10 | Aimar Oroz | CAM,CM,ST | 24 | Spain | 10,2 M€ | 6,57 | 0 | 0 | 0/0 | osäker |
+| 16 | Moi Gómez | CM,CAM,CDM,LW | 32 | Spain | 900 k€ | 6,97 | 0 | 1 | 0/0 | osäker |
 | | **Anfallare** | | | | | | | | | |
-| 9 | Raúl García | ST | 25 | Spain | 2,0 M€ | 6,43 | 0 | 1 | 1/0 |  |
+| 9 | Raúl García | ST | 25 | Spain | 3,8 M€ | 6,43 | 0 | 1 | 1/0 | osäker |
 | 11 | Enrique Barja | LW,LM | 29 | Spain | 1,2 M€ | 6,49 | 1 | 0 | 3/0 |  |
-| 14 | Rubén Garcia | RW,CAM,RM,LW | 33 | Spain | 916 k€ | 6,66 | 0 | 0 | 1/0 |  |
-| 17 | Ante Budimir | ST | 35 | Croatia | 2,0 M€ | 7,42 | 5 | 0 | 0/0 |  |
-| 18 | Raúl Moro | LW,RW | 23 | Spain | 3,7 M€ | 6,20 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
-| 20 | Romain Del Castillo | RW,CAM | 30 | France | 3,0 M€ | 6,27 | 0 | 0 | 0/0 |  |
-| 21 | Jonathan Dubasin | RW,ST,RM,LW | 26 | Belgium | 2,5 M€ | 6,16 | 0 | 0 | 0/0 |  |
+| 14 | Rubén Garcia | RW,CAM,RM,LW | 33 | Spain | 1,2 M€ | 6,66 | 0 | 0 | 1/0 |  |
+| 17 | Ante Budimir | ST | 35 | Croatia | 1,9 M€ | 7,42 | 5 | 0 | 0/0 |  |
+| 18 | Raúl Moro | LW,RW | 23 | Spain | 4,9 M€ | 6,20 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 20 | Romain Del Castillo | RW,CAM | 30 | France | 4,4 M€ | 6,27 | 0 | 0 | 0/0 |  |
+| 21 | Jonathan Dubasin | RW,ST,RM,LW | 26 | Belgium | 3,6 M€ | 6,16 | 0 | 0 | 0/0 |  |
 
 Har lämnat truppen sedan vi började spara (1): Ander Yoldi (senast 2026-09-29).

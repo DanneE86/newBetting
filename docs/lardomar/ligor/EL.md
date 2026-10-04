@@ -1,6 +1,6 @@
 # Europa League (EL) – lärdomar
 
-Genererad 2026-09-29 av `node scripts/analyze-learnings.mjs`. Cup: lagen hör till sina ligor, se deras lagfiler. Alla matcher: `data/matcher/EL.csv`.
+Genererad 2026-10-04 av `node scripts/analyze-learnings.mjs`. Cup: lagen hör till sina ligor, se deras lagfiler. Alla matcher: `data/matcher/EL.csv`.
 
 ## Lärdomar i korthet
 
@@ -10,7 +10,7 @@ Genererad 2026-09-29 av `node scripts/analyze-learnings.mjs`. Cup: lagen hör ti
 
 17 matcher (Europa League). Kryss: utfall 23,5 %, vår procent 25,4 %, folket 23,8 %. Folket streckar favoriten ×1,10. Logloss vår/folket 0,971/0,968.
 
-## Tabell nu (FotMob, 2026-09-29)
+## Tabell nu (FotMob, 2026-10-04)
 
 | # | Lag | M | V | O | F | Mål | +/− | P |
 |---|---|---|---|---|---|---|---|---|

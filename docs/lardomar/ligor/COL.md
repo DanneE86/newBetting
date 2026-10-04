@@ -1,47 +1,75 @@
 # Primera A (COL) – lärdomar
 
-Genererad 2026-09-29 av `node scripts/analyze-learnings.mjs`. Ligan saknar oddshistorik (inga stängningsodds i våra källor), så signaler och kalibrering kan inte testas mot marknaden här. Alla matcher: `data/matcher/COL.csv`.
+Genererad 2026-10-04 av `node scripts/analyze-learnings.mjs`. Ligan saknar oddshistorik (inga stängningsodds i våra källor), så signaler och kalibrering kan inte testas mot marknaden här. Alla matcher: `data/matcher/COL.csv`.
 
 ## Lärdomar i korthet
 
-- 757 matcher (2025-01-24 – 2026-09-27): hemmavinst 45,7 %, kryss 29,5 %, bortavinst 24,8 %, 2,40 mål per match.
-- Modellens 1X2-tips träffade 47,0 % (134/285). 
-- Över/under 2,5: träff 45,3 % (285). BTTS: 53,7 %.
+- 766 matcher (2025-01-24 – 2026-10-03): hemmavinst 45,7 %, kryss 29,5 %, bortavinst 24,8 %, 2,40 mål per match.
+- Modellens 1X2-tips träffade 47,3 % (139/294). 
+- Över/under 2,5: träff 44,9 % (294). BTTS: 54,1 %.
 - Utan odds finns ingen marknad att lära av. Oddsen vi ser före varje match sparas nu (`pre_*` i matcherfilen), så marknadstestet kan köras här efter cirka 150 matcher.
+
+## Höghöjd
+
+Hemmalag på arena ≥ 1500 m mot bortalag från minst 1000 m lägre (arenahöjder i `scripts/lib/altitude.mjs`).
+
+| Hemmamatcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| På höghöjd mot låglandslag | 172 | 72-45-55 | 1,52 | – |
+| Övriga | 594 | 278-181-135 | 1,71 | – |
+
+Ligan saknar odds, så höjden kan bara jämföras i poäng (marknaden kan redan ta hänsyn till den).
+
+### Bortalag på höghöjd
+
+| Lag | M på höghöjd | P/M höghöjd | P/M övriga borta | Skillnad | Mot marknaden höghöjd / övriga |
+|---|---|---|---|---|---|
+| Cúcuta Deportivo | 7 | 0,00 | 0,89 | −0,89 | – |
+| Independiente Medellín | 11 | 1,18 | 1,60 | −0,42 | – |
+| Deportes Tolima | 15 | 1,33 | 1,54 | −0,20 | – |
+| Atlético Bucaramanga | 16 | 1,25 | 1,39 | −0,14 | – |
+| Alianza FC | 14 | 0,93 | 0,95 | −0,02 | – |
+| Deportivo Cali | 15 | 1,07 | 0,95 | +0,12 | – |
+| Deportivo Pereira | 12 | 0,75 | 0,39 | +0,36 | – |
+| América de Cali | 16 | 1,56 | 0,96 | +0,60 | – |
+| Llaneros FC | 16 | 1,31 | 0,70 | +0,61 | – |
+| Atlético Junior | 17 | 1,71 | 1,04 | +0,67 | – |
+| Atlético Nacional | 14 | 2,07 | 1,16 | +0,91 | – |
+| Unión Magdalena | 9 | 1,11 | 0,18 | +0,93 | – |
 
 ## Säsonger
 
 | Säsong | M | Hemma | Kryss | Borta | Mål/M | Över 2,5 | Båda gör mål |
 |---|---|---|---|---|---|---|---|
 | 2025/26 | 451 | 46 % | 29 % | 25 % | 2,29 | 42 % | 46 % |
-| 2026/27 | 306 | 45 % | 31 % | 24 % | 2,56 | 48 % | 54 % |
+| 2026/27 | 315 | 45 % | 31 % | 24 % | 2,57 | 49 % | 55 % |
 
-## Tabell nu (FotMob, 2026-09-29)
+## Tabell nu (FotMob, 2026-10-04)
 
 **Clausura**
 
 | # | Lag | M | V | O | F | Mål | +/− | P |
 |---|---|---|---|---|---|---|---|---|
 | 1 | América de Cali | 11 | 7 | 3 | 1 | 22-6 | 16 | 24 |
-| 2 | Deportivo Cali | 11 | 6 | 3 | 2 | 17-8 | 9 | 21 |
-| 3 | Atlético Bucaramanga | 10 | 5 | 5 | 0 | 17-9 | 8 | 20 |
-| 4 | Millonarios | 12 | 5 | 5 | 2 | 16-9 | 7 | 20 |
-| 5 | Atlético Nacional | 9 | 6 | 1 | 2 | 18-9 | 9 | 19 |
-| 6 | Independiente Medellín | 10 | 6 | 1 | 3 | 17-13 | 4 | 19 |
-| 7 | Deportes Tolima | 11 | 5 | 3 | 3 | 15-13 | 2 | 18 |
-| 8 | Independiente Santa Fe | 10 | 4 | 4 | 2 | 16-11 | 5 | 16 |
+| 2 | Deportivo Cali | 12 | 7 | 3 | 2 | 20-9 | 11 | 24 |
+| 3 | Atlético Nacional | 10 | 7 | 1 | 2 | 21-10 | 11 | 22 |
+| 4 | Millonarios | 13 | 5 | 6 | 2 | 18-11 | 7 | 21 |
+| 5 | Atlético Bucaramanga | 10 | 5 | 5 | 0 | 17-9 | 8 | 20 |
+| 6 | Independiente Medellín | 11 | 6 | 2 | 3 | 19-15 | 4 | 20 |
+| 7 | Independiente Santa Fe | 11 | 5 | 4 | 2 | 18-12 | 6 | 19 |
+| 8 | Deportes Tolima | 12 | 5 | 4 | 3 | 15-13 | 2 | 19 |
 | 9 | Llaneros FC | 11 | 4 | 2 | 5 | 14-14 | 0 | 14 |
-| 10 | Once Caldas | 11 | 3 | 3 | 5 | 14-15 | -1 | 12 |
-| 11 | Internacional de Bogotá | 12 | 2 | 6 | 4 | 13-17 | -4 | 12 |
-| 12 | Cúcuta Deportivo | 11 | 3 | 3 | 5 | 11-19 | -8 | 12 |
-| 13 | Águilas Doradas | 10 | 2 | 5 | 3 | 12-15 | -3 | 11 |
-| 14 | Boyacá Chicó FC | 10 | 3 | 2 | 5 | 10-18 | -8 | 11 |
-| 15 | Alianza FC | 11 | 3 | 2 | 6 | 11-21 | -10 | 11 |
-| 16 | Atlético Junior | 9 | 2 | 3 | 4 | 14-14 | 0 | 9 |
+| 10 | Águilas Doradas | 11 | 3 | 5 | 3 | 14-15 | -1 | 14 |
+| 11 | Once Caldas | 11 | 3 | 3 | 5 | 14-15 | -1 | 12 |
+| 12 | Internacional de Bogotá | 12 | 2 | 6 | 4 | 13-17 | -4 | 12 |
+| 13 | Cúcuta Deportivo | 11 | 3 | 3 | 5 | 11-19 | -8 | 12 |
+| 14 | Boyacá Chicó FC | 11 | 3 | 3 | 5 | 10-18 | -8 | 12 |
+| 15 | Alianza FC | 12 | 3 | 2 | 7 | 12-24 | -12 | 11 |
+| 16 | Atlético Junior | 10 | 2 | 3 | 5 | 15-17 | -2 | 9 |
 | 17 | Fortaleza CEIF | 11 | 1 | 6 | 4 | 13-18 | -5 | 9 |
-| 18 | Deportivo Pereira | 9 | 1 | 5 | 3 | 6-11 | -5 | 8 |
+| 18 | Deportivo Pereira | 10 | 1 | 5 | 4 | 7-13 | -6 | 8 |
 | 19 | Deportivo Pasto | 11 | 2 | 2 | 7 | 9-18 | -9 | 8 |
-| 20 | Jaguares de Córdoba | 10 | 1 | 4 | 5 | 11-18 | -7 | 7 |
+| 20 | Jaguares de Córdoba | 11 | 1 | 4 | 6 | 11-20 | -9 | 7 |
 
 **Apertura**
 

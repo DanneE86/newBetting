@@ -1,6 +1,6 @@
 # Superettan (SE2) – lärdomar
 
-Genererad 2026-09-29 av `node scripts/analyze-learnings.mjs`. Ligan saknar oddshistorik (inga stängningsodds i våra källor), så signaler och kalibrering kan inte testas mot marknaden här. Alla matcher: `data/matcher/SE2.csv`.
+Genererad 2026-10-04 av `node scripts/analyze-learnings.mjs`. Ligan saknar oddshistorik (inga stängningsodds i våra källor), så signaler och kalibrering kan inte testas mot marknaden här. Alla matcher: `data/matcher/SE2.csv`.
 
 ## Lärdomar i korthet
 
@@ -20,7 +20,7 @@ Genererad 2026-09-29 av `node scripts/analyze-learnings.mjs`. Ligan saknar oddsh
 
 20 matcher (Superettan). Kryss: utfall 40,0 %, vår procent 25,7 %, folket 24,1 %. Folket streckar favoriten ×1,10. Logloss vår/folket 1,121/1,139.
 
-## Tabell nu (FotMob, 2026-09-29)
+## Tabell nu (FotMob, 2026-10-04)
 
 | # | Lag | M | V | O | F | Mål | +/− | P |
 |---|---|---|---|---|---|---|---|---|

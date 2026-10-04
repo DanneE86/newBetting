@@ -1,11 +1,14 @@
 # Barracas Central (Liga Profesional) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - 2025: +0,50 poäng per match mot marknaden. Ligan visar ingen persistens, så räkna inte med att det fortsätter.
 - Stark historik mot Huracan (+0,53 p/match mot marknaden, 9 möten), Tigre (+0,64 p/match mot marknaden, 8 möten), Aldosivi (+0,83 p/match mot marknaden, 6 möten), Boca Juniors (−0,54 p/match mot marknaden, 6 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Spelstil 2026: Balanserat, Kortpass, Farlig på fasta, Stark mot fasta. Bäst mot Stark mot fasta (+0,20, samma håll i båda halvorna men svagt), Blandat (+0,11, samma håll i båda halvorna men svagt), Farlig på fasta (+0,14, svagt). Svårast mot Kortpass (−0,17, samma håll i båda halvorna men svagt), Medel mot fasta (−0,11, svagt), Svag på fasta (−0,11, svagt). Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2026: 0,37 mål för per match (xG 0,23), 0,22 emot (xG 0,16), 2,7 hörnor.
+- Svårt för: Boca Juniors (0-1-5, 0,17 p/match, mot marknaden −0,54), Velez Sarsfield (0-3-3, 0,50 p/match, mot marknaden −0,46), Central Cordoba (0-4-2, 0,67 p/match, mot marknaden −0,40), Independiente (0-4-2, 0,67 p/match, mot marknaden −0,25), Estudiantes L.P. (1-2-4, 0,71 p/match, mot marknaden −0,07), River Plate (2-0-6, 0,75 p/match, mot marknaden +0,20), Gimnasia L.P. (2-1-5, 0,88 p/match, mot marknaden −0,32), Racing Club (1-3-2, 1,00 p/match, mot marknaden +0,27), Atl. Tucuman (2-1-3, 1,17 p/match, mot marknaden +0,14). Där marknaden ligger nära noll är laget bara sämre i de mötena än annars, och oddsen vet redan om det.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -26,6 +29,34 @@ Form (äldst → senast): VFFFOOOF · senaste match 2026-09-21
 | 2024 | AR | 42 | 1,17 | +0,23 (−0,05 / +0,48) | 38 % (29 %) | 0,83–1,21 | – | – |
 | 2025 | AR | 35 | 1,43 | +0,50 (+0,22 / +0,77) | 40 % (31 %) | 1,11–1,14 | – | – |
 | 2026 | AR | 26 | 1,27 | +0,30 (−0,13 / +0,74) | 35 % (31 %) | 0,77–0,85 | – | – |
+
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/AR.md#barracas-central) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2026: **Balanserat, Kortpass, Farlig på fasta, Stark mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026 | 27 | 0,37 | 0,23 | 0,22 | 0,16 | 2,7 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Backar hem | 39 | 0,95–1,13 | +0,11 | −0,05 (−0,2) | +11 pe | – | ✔ samma håll |
+| Balanserat | 67 | 0,73–1,21 | +0,21 | +0,06 (0,4) | +3 pe | – | svag |
+| Bollinnehav | 28 | 0,89–1,21 | +0,08 | −0,07 (−0,4) | +21 pe | – | svag |
+| Kortpass | 32 | 0,69–1,19 | −0,02 | −0,17 (−1,1) | +20 pe | – | ✔ samma håll |
+| Blandat | 63 | 0,92–1,14 | +0,27 | +0,11 (0,7) | +5 pe | – | ✔ samma håll |
+| Direktspel | 39 | 0,79–1,26 | +0,11 | −0,04 (−0,2) | +6 pe | – | ✔ samma håll |
+| Lågpress | 50 | 0,82–1,06 | +0,16 | +0,01 (0,0) | +3 pe | – | svag |
+| Mellanpress | 45 | 0,91–1,31 | +0,20 | +0,05 (0,3) | +15 pe | – | svag |
+| Högpress | 39 | 0,74–1,21 | +0,08 | −0,07 (−0,4) | +10 pe | – | svag |
+| Svag på fasta | 45 | 0,69–1,29 | +0,05 | −0,11 (−0,7) | +8 pe | – | svag |
+| Medel på fasta | 42 | 0,98–1,26 | +0,19 | +0,04 (0,2) | +8 pe | – | svag |
+| Farlig på fasta | 27 | 0,89–1,19 | +0,29 | +0,14 (0,6) | +8 pe | – | svag |
+| Stark mot fasta | 48 | 0,98–1,15 | +0,36 | +0,20 (1,2) | +5 pe | – | ✔ samma håll |
+| Medel mot fasta | 47 | 0,74–1,40 | +0,04 | −0,11 (−0,7) | +14 pe | – | svag |
+| Svag mot fasta | 14 | 0,79–1,21 | −0,17 | −0,32 (−1,3) | +13 pe | – | svag |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -62,51 +93,53 @@ Form (äldst → senast): VFFFOOOF · senaste match 2026-09-21
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): Boca Juniors 0,17 p/match (−0,54), Velez Sarsfield 0,50 p/match (−0,46), Central Cordoba 0,67 p/match (−0,40), Independiente 0,67 p/match (−0,25), Estudiantes L.P. 0,71 p/match (−0,07), River Plate 0,75 p/match (+0,20), Gimnasia L.P. 0,88 p/match (−0,32), Racing Club 1,00 p/match (+0,27), Atl. Tucuman 1,17 p/match (+0,14).
+
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Damián Ayude. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Juan Espínola (skadad, åter Mid October 2026), Fernando Tobio (skadad, åter Mid October 2026), Tomás Porra (skadad, åter Mid October 2026), Manuel Duarte (skadad, åter Out for season), Lucas Gamba (skadad, åter Mid October 2026), Nicolás Orsini (skadad, åter Early October 2026)
+**Skadade/borta nu:** Tomás Porra (skadad, åter Mid October 2026), Manuel Duarte (skadad, åter Out for season), Lucas Gamba (skadad, åter Mid October 2026)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Juan Espínola | GK | 31 | Paraguay | 554 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
-| 30 | Marcelo Miño | GK | 29 | Argentina | 328 k€ | – | 0 | 0 | 0/0 |  |
+| 1 | Juan Espínola | GK | 31 | Paraguay | 559 k€ | – | 0 | 0 | 0/0 |  |
+| 30 | Marcelo Miño | GK | 29 | Argentina | 538 k€ | – | 0 | 0 | 0/0 |  |
 | 38 | Juan Insúa | Keeper | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 43 | Luca Fernández | Keeper | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Nicolás Capraro | CB | 28 | Argentina | 881 k€ | – | 0 | 0 | 0/0 |  |
-| 4 | Damián Martínez | RWB,RM,RB | 36 | Argentina | 293 k€ | – | 0 | 0 | 0/0 |  |
-| 13 | Rafael Barrios | RWB,RM | 33 | Argentina | 327 k€ | – | 0 | 0 | 0/0 |  |
+| 2 | Nicolás Capraro | CB | 28 | Argentina | 958 k€ | – | 0 | 0 | 0/0 |  |
+| 4 | Damián Martínez | RWB,RM,RB | 36 | Argentina | 345 k€ | – | 0 | 0 | 0/0 |  |
+| 13 | Rafael Barrios | RWB,RM | 33 | Argentina | 407 k€ | – | 0 | 0 | 0/0 |  |
 | 14 | Kevin Jappert | CB | 22 | Argentina | 1,8 M€ | – | 0 | 0 | 0/0 |  |
-| 15 | Yonatthan Rak | CB | 33 | Uruguay | 260 k€ | – | 0 | 0 | 0/0 |  |
-| 31 | Nicolás Demartini | CB | 26 | Argentina | 797 k€ | – | 0 | 0 | 0/0 |  |
-| 32 | Fernando Tobio | CB | 36 | Argentina | 458 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
-| 37 | Gastón Campi | CB | 35 | Argentina | 282 k€ | – | 0 | 0 | 0/0 |  |
+| 15 | Yonatthan Rak | CB | 33 | Uruguay | 281 k€ | – | 0 | 0 | 0/0 |  |
+| 31 | Nicolás Demartini | CB | 26 | Argentina | 996 k€ | – | 0 | 0 | 0/0 |  |
+| 32 | Fernando Tobio | CB | 36 | Argentina | 530 k€ | – | 0 | 0 | 0/0 |  |
+| 37 | Gastón Campi | CB | 35 | Argentina | 274 k€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 5 | Dardo Miloc | CM,CDM | 35 | Argentina | 367 k€ | – | 0 | 0 | 0/0 |  |
-| 6 | Rodrigo Insúa | LWB,LM | 28 | Argentina | 1,3 M€ | – | 0 | 0 | 0/0 |  |
-| 8 | Tomás Porra | CM,CAM,RM | 22 | Argentina | 1,1 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
-| 10 | Iván Tapia | CM,CDM,LW | 27 | Argentina | 756 k€ | – | 0 | 0 | 0/0 |  |
-| 16 | Iván Guaraz | CM | 21 | Argentina | 563 k€ | – | 0 | 0 | 0/0 |  |
-| 17 | Elías Pereyra | LWB,LM | 27 | Argentina | 432 k€ | – | 0 | 0 | 0/0 |  |
-| 18 | Manuel Duarte | CM | 25 | Argentina | 485 k€ | – | 0 | 0 | 0/0 | skadad, åter Out for season |
+| 5 | Dardo Miloc | CM,CDM | 35 | Argentina | 571 k€ | – | 0 | 0 | 0/0 |  |
+| 6 | Rodrigo Insúa | LWB,LM | 28 | Argentina | 1,4 M€ | – | 0 | 0 | 0/0 |  |
+| 8 | Tomás Porra | CM,CAM,RM | 22 | Argentina | 1,3 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 10 | Iván Tapia | CM,CDM,LW | 27 | Argentina | 933 k€ | – | 0 | 0 | 0/0 |  |
+| 16 | Iván Guaraz | CM | 21 | Argentina | 465 k€ | – | 0 | 0 | 0/0 |  |
+| 17 | Elías Pereyra | LWB,LM | 27 | Argentina | 457 k€ | – | 0 | 0 | 0/0 |  |
+| 18 | Manuel Duarte | CM | 25 | Argentina | 510 k€ | – | 0 | 0 | 0/0 | skadad, åter Out for season |
 | 19 | Carlos Arce | CM | 36 | Argentina | 295 k€ | – | 0 | 0 | 0/0 |  |
-| 24 | Enzo Taborda | LW | 21 | Argentina | 756 k€ | – | 0 | 0 | 0/0 |  |
+| 23 | Wilfredo Rivera | CAM | 22 | Puerto Rico | 500 k€ | – | 0 | 0 | 0/0 |  |
+| 24 | Enzo Taborda | LW | 21 | Argentina | 671 k€ | – | 0 | 0 | 0/0 |  |
 | 25 | Yeison Gordillo | CM | 34 | Colombia | 270 k€ | – | 0 | 0 | 0/0 |  |
-| 28 | Rodrigo Bogarín | CAM,CM | 29 | Paraguay | 253 k€ | – | 0 | 0 | 0/0 |  |
+| 28 | Rodrigo Bogarín | CAM,CM | 29 | Paraguay | 254 k€ | – | 0 | 0 | 0/0 |  |
 | 35 | Esteban Rolón | CM,CAM | 31 | Argentina | 255 k€ | – | 0 | 0 | 0/0 |  |
-| 79 | Maxi Puig | RWB | 26 | Argentina | 369 k€ | – | 0 | 0 | 0/0 |  |
+| 79 | Maxi Puig | RWB | 26 | Argentina | 368 k€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 7 | Juan Barbieri | ST | 30 | Argentina | 229 k€ | – | 0 | 0 | 0/0 |  |
-| 9 | Gonzalo Morales | ST | 23 | Argentina | 859 k€ | – | 0 | 0 | 0/0 |  |
-| 11 | Norberto Briasco | ST,CAM,RW | 30 | Armenia | 322 k€ | – | 0 | 0 | 0/0 |  |
-| 20 | Jhonatan Candia | ST | 31 | Uruguay | 354 k€ | – | 0 | 0 | 0/0 |  |
-| 21 | Lucas Gamba | ST | 39 | Argentina | 322 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 7 | Juan Barbieri | ST | 30 | Argentina | 249 k€ | – | 0 | 0 | 0/0 |  |
+| 9 | Gonzalo Morales | ST | 23 | Argentina | 838 k€ | – | 0 | 0 | 0/0 |  |
+| 11 | Norberto Briasco | ST,CAM,RW | 30 | Armenia | 357 k€ | – | 0 | 0 | 0/0 |  |
+| 20 | Jhonatan Candia | ST | 31 | Uruguay | 451 k€ | – | 0 | 0 | 0/0 |  |
+| 21 | Lucas Gamba | ST | 39 | Argentina | 358 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 22 | Valentino Gandín | Attacker | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 23 | Wilfredo Rivera | RW | 22 | Puerto Rico | 500 k€ | – | 0 | 0 | 0/0 |  |
 | 33 | Gonzalo Maroni | ST,CAM,LW,CM | 27 | Argentina | 1,1 M€ | – | 0 | 0 | 0/0 |  |
-| 34 | Nicolás Orsini | LW | 32 | Argentina | 301 k€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 34 | Nicolás Orsini | LW | 32 | Argentina | 427 k€ | – | 0 | 0 | 0/0 |  |
 | 36 | Tomás Lavezzi | Attacker | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 77 | Facundo Bruera | ST | 28 | Argentina | 1,4 M€ | – | 0 | 0 | 0/0 |  |
+| 77 | Facundo Bruera | ST | 28 | Argentina | 1,6 M€ | – | 0 | 0 | 0/0 |  |

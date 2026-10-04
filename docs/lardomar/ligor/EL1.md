@@ -1,6 +1,6 @@
 # League One (EL1) – lärdomar
 
-Genererad 2026-09-29 av `node scripts/analyze-learnings.mjs`. Skriv inte för hand här: egna anteckningar läggs i `docs/lardomar/anteckningar/EL1.md`.
+Genererad 2026-10-04 av `node scripts/analyze-learnings.mjs`. Skriv inte för hand här: egna anteckningar läggs i `docs/lardomar/anteckningar/EL1.md`.
 
 Underlag: 4903 matcher, säsong 2017/18 – 2026/27. Marknad = stängningsodds utan marginal (Pinnacle, annars snitt av bolagen), öppningsodds finns för 4902 matcher. xG: skott-proxy (100 % av matcherna).
 
@@ -95,26 +95,26 @@ Källa: backtesten i `data/stryktips-backtest-2526-steg3.json`, `data/stryktips-
 |---|---|---|---|---|
 | 1 | 33,3 % | 39,0 % | 41,5 % | 0,80 |
 | X | 33,3 % | 27,4 % | 25,7 % | 1,30 |
-| 2 | 33,3 % | 33,6 % | 32,7 % | 1,02 |
+| 2 | 33,3 % | 33,7 % | 32,7 % | 1,02 |
 
 - Folket överstreckar favoriter (×1,12). Utdelningsgränsen fångar det redan, men garderingar mot favoriter i ligan ger mer i utdelning.
 - Folket streckar kryss 1,6 procentenheter under vår procent. Kryss ger streckvärde.
 
-## Tabell nu (FotMob, 2026-09-29)
+## Tabell nu (FotMob, 2026-10-04)
 
 | # | Lag | M | V | O | F | Mål | +/− | P |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Bradford | 7 | 5 | 0 | 2 | 7-4 | 3 | 15 |
-| 2 | Sheffield Weds | 7 | 4 | 2 | 1 | 13-6 | 7 | 14 |
-| 3 | Stockport | 8 | 4 | 1 | 3 | 17-10 | 7 | 13 |
-| 4 | Plymouth | 8 | 4 | 1 | 3 | 14-11 | 3 | 13 |
-| 5 | Cambridge | 8 | 3 | 4 | 1 | 13-11 | 2 | 13 |
-| 6 | Huddersfield | 7 | 3 | 3 | 1 | 11-6 | 5 | 12 |
-| 7 | Burton | 8 | 3 | 3 | 2 | 13-12 | 1 | 12 |
-| 8 | AFC Wimbledon | 8 | 3 | 3 | 2 | 6-8 | -2 | 12 |
-| 9 | Reading | 7 | 3 | 2 | 2 | 16-9 | 7 | 11 |
+| 1 | Plymouth | 9 | 5 | 1 | 3 | 16-11 | 5 | 16 |
+| 2 | Bradford | 8 | 5 | 1 | 2 | 8-5 | 3 | 16 |
+| 3 | Huddersfield | 8 | 4 | 3 | 1 | 14-7 | 7 | 15 |
+| 4 | Sheffield Weds | 7 | 4 | 2 | 1 | 13-6 | 7 | 14 |
+| 5 | Stockport | 8 | 4 | 1 | 3 | 17-10 | 7 | 13 |
+| 6 | Cambridge | 8 | 3 | 4 | 1 | 13-11 | 2 | 13 |
+| 7 | Reading | 8 | 3 | 3 | 2 | 17-10 | 7 | 12 |
+| 8 | Burton | 9 | 3 | 3 | 3 | 14-15 | -1 | 12 |
+| 9 | AFC Wimbledon | 8 | 3 | 3 | 2 | 6-8 | -2 | 12 |
 | 10 | Oxford | 6 | 3 | 2 | 1 | 13-7 | 6 | 11 |
-| 11 | Leyton Orient | 7 | 3 | 1 | 3 | 13-9 | 4 | 10 |
+| 11 | Leyton Orient | 8 | 3 | 1 | 4 | 13-11 | 2 | 10 |
 | 12 | Wycombe | 8 | 2 | 4 | 2 | 13-16 | -3 | 10 |
 | 13 | Stevenage | 7 | 2 | 3 | 2 | 11-8 | 3 | 9 |
 | 14 | Leicester | 7 | 2 | 3 | 2 | 9-11 | -2 | 9 |

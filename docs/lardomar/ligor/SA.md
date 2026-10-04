@@ -1,6 +1,6 @@
 # Serie A (SA) – lärdomar
 
-Genererad 2026-09-29 av `node scripts/analyze-learnings.mjs`. Skriv inte för hand här: egna anteckningar läggs i `docs/lardomar/anteckningar/SA.md`.
+Genererad 2026-10-04 av `node scripts/analyze-learnings.mjs`. Skriv inte för hand här: egna anteckningar läggs i `docs/lardomar/anteckningar/SA.md`.
 
 Underlag: 3470 matcher, säsong 2017/18 – 2026/27. Marknad = stängningsodds utan marginal (Pinnacle, annars snitt av bolagen), öppningsodds finns för 3469 matcher. xG: Understat (100 % av matcherna).
 
@@ -97,7 +97,7 @@ Källa: backtesten i `data/stryktips-backtest-2526-steg3.json`, `data/stryktips-
 | X | 26,6 % | 27,5 % | 26,3 % | 1,01 |
 | 2 | 36,7 % | 35,7 % | 35,9 % | 1,02 |
 
-## Tabell nu (FotMob, 2026-09-29)
+## Tabell nu (FotMob, 2026-10-04)
 
 | # | Lag | M | V | O | F | Mål | +/− | P |
 |---|---|---|---|---|---|---|---|---|

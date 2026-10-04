@@ -1,11 +1,15 @@
 # Rennes (Ligue 1) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [L1](../../ligor/L1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [L1](../../ligor/L1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - 2025/26: +0,25 poäng per match mot marknaden. Ligan visar ingen persistens, så räkna inte med att det fortsätter.
 - Stark historik mot Paris SG (+0,57 p/match mot marknaden, 15 möten), Lens (−0,83 p/match mot marknaden, 12 möten), Lorient (−0,90 p/match mot marknaden, 10 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Efter landslagsuppehåll: 1,21 poäng per match mot 1,60 annars (10-10-13 på 33 matcher), mot marknaden −0,23 mot +0,07. Sedan 2023: 6-3-3. Sämre än vanligt, men få matcher: i hela ligan är effekten 0,00 mot marknaden.
+- Spelstil 2025/26: Bollinnehav, Kortpass, Högpress, Medel på fasta, Stark mot fasta. Bäst mot Direktspel (+0,19, samma håll i båda halvorna men svagt), Lågpress (+0,17, samma håll i båda halvorna men svagt), Backar hem (+0,15, svagt). Svårast mot Högpress (−0,30, svagt), Kortpass (−0,31, samma håll i båda halvorna men svagt), Bollinnehav (−0,13, samma håll i båda halvorna men svagt). Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2025/26: 0,27 mål för per match (xG 0,32), 0,12 emot (xG 0,15), 6,0 hörnor.
+- Svårt för: Lens (0-6-6, 0,50 p/match, mot marknaden −0,83), Lille (2-6-7, 0,80 p/match, mot marknaden −0,47), Monaco (4-2-9, 0,93 p/match, mot marknaden −0,26), Lorient (3-1-6, 1,00 p/match, mot marknaden −0,90), Marseille (5-3-8, 1,13 p/match, mot marknaden −0,11), Nice (5-3-7, 1,20 p/match, mot marknaden −0,31), Paris SG (5-3-7, 1,20 p/match, mot marknaden +0,57), Auxerre (2-2-2, 1,33 p/match, mot marknaden −0,44). Där marknaden ligger nära noll är laget bara sämre i de mötena än annars, och oddsen vet redan om det.
 - Utan Ludovic Blas (10 % av anfallet): 1,50 poäng per match mot 1,51 med (4 mot 68 matcher), mot marknaden −0,26 mot −0,00.
 
 ## Nuläge (senaste 8 ligamatcher)
@@ -34,6 +38,83 @@ Form (äldst → senast): FVFOVVVF · senaste match 2026-09-19
 | 2026/27 | L1 | 5 | 2,00 | +0,37 (+0,79 / −0,26) | 20 % (22 %) | 1,60–1,80 | 2,10–2,29* | 1,33 |
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/L1.md#rennes) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2025/26: **Bollinnehav, Kortpass, Högpress, Medel på fasta, Stark mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026/27 | 5 | 0,00 | 0,16 | 0,20 | 0,30 | 5,0 |
+| 2025/26 | 34 | 0,27 | 0,32 | 0,12 | 0,15 | 6,0 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Backar hem | 75 | 1,77–1,11 | +0,18 | +0,15 (1,1) | −3 pe | +10 pe | svag |
+| Balanserat | 103 | 1,54–1,26 | +0,01 | −0,02 (−0,1) | −9 pe | +4 pe | svag |
+| Bollinnehav | 71 | 1,51–1,38 | −0,10 | −0,13 (−0,9) | −2 pe | +3 pe | ✔ samma håll |
+| Kortpass | 61 | 1,30–1,41 | −0,28 | −0,31 (−1,9) | −10 pe | +4 pe | ✔ samma håll |
+| Blandat | 121 | 1,64–1,26 | +0,08 | +0,05 (0,4) | −5 pe | +5 pe | svag |
+| Direktspel | 67 | 1,82–1,09 | +0,22 | +0,19 (1,4) | −1 pe | +7 pe | ✔ samma håll |
+| Lågpress | 69 | 1,59–1,01 | +0,20 | +0,17 (1,2) | −2 pe | +1 pe | ✔ samma håll |
+| Mellanpress | 116 | 1,67–1,26 | +0,09 | +0,07 (0,6) | −4 pe | +5 pe | ✔ samma håll |
+| Högpress | 64 | 1,48–1,48 | −0,28 | −0,30 (−2,0) | −11 pe | +11 pe | svag |
+| Svag på fasta | 70 | 1,43–1,34 | +0,15 | +0,12 (0,8) | −7 pe | +5 pe | ✔ samma håll |
+| Medel på fasta | 115 | 1,70–1,20 | +0,02 | −0,01 (−0,1) | −9 pe | +8 pe | svag |
+| Farlig på fasta | 64 | 1,63–1,23 | −0,09 | −0,11 (−0,8) | +2 pe | +1 pe | svag |
+| Stark mot fasta | 67 | 1,52–1,06 | +0,06 | +0,03 (0,2) | −13 pe | +10 pe | svag |
+| Medel mot fasta | 125 | 1,57–1,26 | −0,01 | −0,04 (−0,3) | +0 pe | +2 pe | svag |
+| Svag mot fasta | 57 | 1,77–1,46 | +0,08 | +0,05 (0,3) | −9 pe | +7 pe | svag |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
+
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 33 | 10-10-13 | 1,21 | −0,23 |
+| Efter uppehåll sedan 2023 | 12 | 6-3-3 | 1,75 | +0,10 |
+| Övriga matcher | 292 | 136-60-96 | 1,60 | +0,07 |
+
+Hela ligan efter uppehåll: 0,00 mot marknaden (n 626). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2026-04-04 | Brest - Rennes | 3-4 V | +1,17 |
+| 2025-11-22 | Rennes - Monaco | 4-1 V | +1,55 |
+| 2025-10-19 | Rennes - Auxerre | 2-2 O | −0,85 |
+| 2025-09-14 | Rennes - Lyon | 3-1 V | +1,53 |
+| 2025-03-30 | Angers - Rennes | 0-3 V | +1,01 |
+| 2024-11-24 | Lille - Rennes | 1-0 F | −1,22 |
+| 2024-10-19 | Brest - Rennes | 1-1 O | +0,37 |
+| 2024-09-15 | Rennes - Montpellier | 3-0 V | +0,80 |
+| 2024-03-31 | Strasbourg - Rennes | 2-0 F | −1,82 |
+| 2023-11-26 | Rennes - Reims | 3-1 V | +1,36 |
+| 2023-10-22 | Lorient - Rennes | 2-1 F | −2,06 |
+| 2023-09-16 | Rennes - Lille | 2-2 O | −0,66 |
+| 2023-04-01 | Rennes - Lens | 0-1 F | −1,24 |
+| 2022-12-29 | Reims - Rennes | 3-1 F | −1,82 |
+| 2022-10-01 | Strasbourg - Rennes | 1-3 V | +1,13 |
+| 2022-04-02 | Nice - Rennes | 1-1 O | +0,30 |
+| 2021-11-20 | Rennes - Montpellier | 2-0 V | +0,79 |
+| 2021-10-17 | Metz - Rennes | 0-3 V | +0,78 |
+| 2021-09-12 | Rennes - Reims | 0-2 F | −1,94 |
+| 2021-04-04 | Reims - Rennes | 2-2 O | +0,07 |
+| 2020-11-20 | Rennes - Bordeaux | 0-1 F | −1,68 |
+| 2020-10-16 | Dijon - Rennes | 1-1 O | −0,20 |
+| 2019-11-23 | Dijon - Rennes | 2-1 F | −1,71 |
+| 2019-10-20 | Monaco - Rennes | 3-2 F | −1,08 |
+| 2019-09-14 | Brest - Rennes | 0-0 O | +0,20 |
+| 2019-03-29 | Rennes - Lyon | 0-1 F | −0,91 |
+| 2018-11-25 | Montpellier - Rennes | 2-2 O | +0,51 |
+| 2018-10-21 | St Etienne - Rennes | 1-1 O | +0,51 |
+| 2018-09-14 | Nice - Rennes | 2-1 F | −1,62 |
+| 2018-04-04 | Rennes - Monaco | 1-1 O | −0,10 |
+| 2017-11-18 | Strasbourg - Rennes | 2-1 F | −1,33 |
+| 2017-10-14 | Guingamp - Rennes | 2-0 F | −1,36 |
+| 2017-09-10 | Marseille - Rennes | 1-3 V | +2,10 |
 
 ## Nyckelspelare (Understat, 2024/25–)
 
@@ -64,7 +145,7 @@ Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: s
 | Brest | 14 | 7-5-2 | 25–17 | +0,11 | +9 pe | 2026-04-04 4-3 (b) |
 | Angers | 13 | 9-2-2 | 27–14 | +0,37 | −10 pe | 2026-09-06 2-1 (b) |
 | Lens | 12 | 0-6-6 | 6–14 | −0,83 | +22 pe | 2026-02-07 1-3 (b) |
-| Toulouse | 12 | 4-4-4 | 16–17 | −0,22 | +6 pe | 2026-02-28 1-0 (h) |
+| Toulouse | 11 | 4-3-4 | 15–16 | −0,17 | +0 pe | 2026-02-28 1-0 (h) |
 | Lorient | 10 | 3-1-6 | 14–14 | −0,90 | −15 pe | 2026-01-24 0-2 (h) |
 | Auxerre | 6 | 2-2-2 | 10–7 | −0,44 | +7 pe | 2026-02-22 3-0 (b) |
 | Le Havre | 6 | 3-3-0 | 12–6 | +0,14 | +24 pe | 2026-01-18 1-1 (h) |
@@ -73,6 +154,8 @@ Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: s
 | Le Mans | 1 | 1-0-0 | 3–2 | +0,72 | −18 pe | 2026-08-30 3-2 (h) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): Lens 0,50 p/match (−0,83), Lille 0,80 p/match (−0,47), Monaco 0,93 p/match (−0,26), Lorient 1,00 p/match (−0,90), Marseille 1,13 p/match (−0,11), Nice 1,20 p/match (−0,31), Paris SG 1,20 p/match (+0,57), Auxerre 1,33 p/match (−0,44).
 
 ## Stryktipset / Europatipset
 
@@ -88,39 +171,39 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-10-29 | Europa 2518 | Toulouse - Rennes | X | 21 % | 25 % |
 | 2025-09-14 | Europa 2505 | Rennes - Lyon | 1 ✓ | 40 % | 39 % |
 
-## Trupp (FotMob, hämtad 2026-09-29)
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Franck Haise. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 16 | Nicolas Lemaître | GK | 29 | France | 584 k€ | 7,42 | 0 | 0 | 0/0 |  |
-| 30 | Brice Samba | GK | 32 | France | 4,5 M€ | 7,05 | 0 | 0 | 0/0 |  |
+| 16 | Nicolas Lemaître | GK | 29 | France | 551 k€ | 7,42 | 0 | 0 | 0/0 |  |
+| 30 | Brice Samba | GK | 32 | France | 5,6 M€ | 7,05 | 0 | 0 | 0/0 |  |
 | 60 | Kilian Belazzoug | GK | 20 | Algeria | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 4 | Charlie Cresswell | CB | 24 | England | 15,3 M€ | 6,86 | 0 | 0 | 1/0 |  |
-| 5 | Gonçalo Oliveira | CB | 20 | Portugal | 1,3 M€ | – | 0 | 0 | 0/0 |  |
-| 14 | Bryan Reynolds | RB,LB | 25 | USA | 1,9 M€ | 6,29 | 0 | 0 | 0/0 |  |
-| 18 | Mahamadou Nagida | LB,RB,LWB | 21 | Cameroon | 1,6 M€ | 6,91 | 0 | 0 | 0/0 |  |
-| 24 | Anthony Rouault | CB | 25 | France | 11,2 M€ | 7,58 | 0 | 0 | 0/0 |  |
-| 26 | Quentin Merlin | LB,LM,RM,CM | 24 | France | 12,6 M€ | 6,42 | 0 | 0 | 1/0 |  |
-| 48 | Abdelhamid Aït Boudlal | CB | 20 | Morocco | 4,8 M€ | 6,91 | 0 | 0 | 1/0 |  |
+| 4 | Charlie Cresswell | CB | 24 | England | 22,5 M€ | 6,86 | 0 | 0 | 1/0 |  |
+| 5 | Gonçalo Oliveira | CB | 20 | Portugal | 4,7 M€ | – | 0 | 0 | 0/0 |  |
+| 14 | Bryan Reynolds | RB,LB | 25 | USA | 4,3 M€ | 6,29 | 0 | 0 | 0/0 |  |
+| 18 | Mahamadou Nagida | LB,RB,LWB | 21 | Cameroon | 4,3 M€ | 6,91 | 0 | 0 | 0/0 |  |
+| 24 | Anthony Rouault | CB | 25 | France | 13,9 M€ | 7,58 | 0 | 0 | 0/0 |  |
+| 26 | Quentin Merlin | LB,RM,LM,CM | 24 | France | 17,9 M€ | 6,42 | 0 | 0 | 1/0 |  |
+| 48 | Abdelhamid Aït Boudlal | CB | 20 | Morocco | 10,1 M€ | 6,91 | 0 | 0 | 1/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 |  | Ayanda Sishuba | Midfielder | 21 | Belgium | 1,1 M€ | – | 0 | 0 | 0/0 |  |
-| 6 | Djaoui Cissé | CM | 22 | France | 13,2 M€ | – | 0 | 0 | 0/0 |  |
-| 10 | Ludovic Blas | RM,RW,CM,LW | 28 | France | 9,2 M€ | 6,98 | 0 | 0 | 0/0 |  |
-| 11 | Mousa Tamari | LM,RW,ST,LW,RM | 29 | Jordan | 3,0 M€ | 6,70 | 0 | 0 | 1/0 |  |
-| 17 | Sebastian Szymański | CAM,CM,RW,RM,CDM | 27 | Poland | 9,8 M€ | 7,16 | 1 | 1 | 0/0 |  |
-| 21 | Valentin Rongier | CM,CDM | 31 | France | 4,7 M€ | 7,45 | 1 | 0 | 1/0 |  |
-| 28 | Adrien Thomasson | CDM,CAM,CM | 32 | France | 2,5 M€ | 7,40 | 1 | 2 | 1/0 |  |
-| 45 | Mahdi Camara | CM,CAM,CDM | 28 | France | 8,2 M€ | 7,17 | 0 | 0 | 0/0 |  |
-| 95 | Przemysław Frankowski | RM,RB | 31 | Poland | 3,5 M€ | 7,09 | 1 | 1 | 1/0 |  |
+| 6 | Djaoui Cissé | CM | 22 | France | 12,7 M€ | – | 0 | 0 | 0/0 |  |
+| 10 | Ludovic Blas | RM,RW,CM,LW | 28 | France | 7,8 M€ | 6,98 | 0 | 0 | 0/0 |  |
+| 11 | Mousa Tamari | LM,RW,ST,LW,RM | 29 | Jordan | 9,3 M€ | 6,70 | 0 | 0 | 1/0 |  |
+| 17 | Sebastian Szymański | CAM,RW,CM,RM,CDM | 27 | Poland | 13,4 M€ | 7,16 | 1 | 1 | 0/0 |  |
+| 21 | Valentin Rongier | CM,CDM | 31 | France | 5,7 M€ | 7,45 | 1 | 0 | 1/0 |  |
+| 28 | Adrien Thomasson | CDM,CAM,CM | 32 | France | 2,6 M€ | 7,40 | 1 | 2 | 1/0 |  |
+| 45 | Mahdi Camara | CM,CAM,CDM | 28 | France | 13,0 M€ | 7,17 | 0 | 0 | 0/0 |  |
+| 95 | Przemysław Frankowski | RM,RB,RWB | 31 | Poland | 4,1 M€ | 7,09 | 1 | 1 | 1/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 9 | Estéban Lepaul | ST | 26 | France | 13,7 M€ | 7,33 | 3 | 0 | 1/0 |  |
-| 12 | Eliezer Mayenda | ST,RW | 21 | Spain | 20,2 M€ | 6,16 | 0 | 0 | 0/0 |  |
-| 22 | Boulaye Dia | ST,CAM | 29 | Senegal | 7,1 M€ | 6,17 | 0 | 0 | 0/0 |  |
+| 9 | Estéban Lepaul | ST | 26 | France | 24,7 M€ | 7,33 | 3 | 0 | 1/0 |  |
+| 12 | Eliezer Mayenda | ST,RW | 21 | Spain | 19,2 M€ | 6,16 | 0 | 0 | 0/0 |  |
+| 22 | Boulaye Dia | ST | 29 | Senegal | 6,1 M€ | 6,17 | 0 | 0 | 0/0 |  |
 | 35 | Elías Legendre | Attacker | 18 | Ecuador | 2,1 M€ | – | 0 | 0 | 0/0 |  |
 | 65 | Henrick Do Marcolino | Attacker | 20 | Gabon | – | 6,18 | 0 | 0 | 0/0 |  |
-| 70 | Arnaud Nordin | LW,ST | 28 | France | 1,9 M€ | 5,74 | 0 | 0 | 0/0 |  |
-| 90 | Issa Soumaré | ST,LW,CAM | 25 | Senegal | 2,6 M€ | 6,76 | 0 | 1 | 1/0 |  |
+| 70 | Arnaud Nordin | LW,ST | 28 | France | 3,4 M€ | 5,74 | 0 | 0 | 0/0 |  |
+| 90 | Issa Soumaré | ST,LW,CAM | 25 | Senegal | 6,7 M€ | 6,76 | 0 | 1 | 1/0 |  |

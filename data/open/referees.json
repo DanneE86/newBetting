@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-04T05:55:50.271Z",
+  "updatedAt": "2026-10-04T09:44:48.378Z",
   "source": "football-data.co.uk Referee/HY/AY/HR/AR/HF/AF",
   "count": 124,
   "referees": [
@@ -609,17 +609,6 @@
       "homeWinRate": 0.5
     },
     {
-      "league": "CH",
-      "referee": "W Finnie",
-      "matches": 24,
-      "yellowPg": 3.75,
-      "redPg": 0.167,
-      "bookingPointsPg": 41.7,
-      "foulsPg": 21.6,
-      "goalsPg": 2.67,
-      "homeWinRate": 0.417
-    },
-    {
       "league": "PL",
       "referee": "P Bankes",
       "matches": 48,
@@ -629,6 +618,17 @@
       "foulsPg": 21.2,
       "goalsPg": 2.96,
       "homeWinRate": 0.604
+    },
+    {
+      "league": "CH",
+      "referee": "W Finnie",
+      "matches": 24,
+      "yellowPg": 3.75,
+      "redPg": 0.167,
+      "bookingPointsPg": 41.7,
+      "foulsPg": 21.6,
+      "goalsPg": 2.67,
+      "homeWinRate": 0.417
     },
     {
       "league": "EL1",

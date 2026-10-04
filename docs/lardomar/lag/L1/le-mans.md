@@ -1,6 +1,6 @@
 # Le Mans (Ligue 1) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [L1](../../ligor/L1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [L1](../../ligor/L1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -55,7 +55,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 |---|---|---|---|---|---|
 | 2026-09-13 | Europa 2607 | Le Mans FC - Lens | X | 15 % | 20 % |
 
-## Trupp (FotMob, hämtad 2026-09-29)
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Patrick Videira. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -64,35 +64,35 @@ Tränare: Patrick Videira. Betyg, mål och assist gäller innevarande säsong en
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Ewan Hatfout | GK | 26 | France | 514 k€ | 6,21 | 0 | 0 | 0/0 |  |
-| 55 | Augustin Delbecque | Keeper | 24 | France | 369 k€ | – | 0 | 0 | 0/0 |  |
-| 98 | Nicolas Kocik | GK | 28 | France | 803 k€ | 6,92 | 0 | 0 | 0/0 |  |
+| 1 | Ewan Hatfout | GK | 26 | France | 602 k€ | 6,21 | 0 | 0 | 0/0 |  |
+| 55 | Augustin Delbecque | Keeper | 24 | France | 472 k€ | – | 0 | 0 | 0/0 |  |
+| 98 | Nicolas Kocik | GK | 28 | France | 890 k€ | 6,92 | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 5 | Harold Voyer | CB | 29 | France | 495 k€ | 6,89 | 0 | 0 | 1/0 |  |
+| 5 | Harold Voyer | CB | 29 | France | 641 k€ | 6,89 | 0 | 0 | 1/0 |  |
 | 12 | João Almeida | LB | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 15 | Noa Boissé | CB | 20 | France | 1,4 M€ | 6,42 | 0 | 0 | 2/0 |  |
-| 16 | Raúl Torrente | CB | 25 | Spain | 1,8 M€ | 7,02 | 0 | 0 | 0/0 |  |
-| 17 | Samuel Yohou | CB | 35 | France | 401 k€ | 6,61 | 0 | 0 | 0/0 |  |
+| 15 | Noa Boissé | CB | 20 | France | 1,9 M€ | 6,42 | 0 | 0 | 2/0 |  |
+| 16 | Raúl Torrente | CB | 25 | Spain | 1,7 M€ | 7,02 | 0 | 0 | 0/0 |  |
+| 17 | Samuel Yohou | CB | 35 | France | 569 k€ | 6,61 | 0 | 0 | 0/0 |  |
 | 21 | Théo Eyoum | CB | 24 | France | 1,1 M€ | 5,93 | 0 | 0 | 0/0 |  |
-| 22 | Lucas Calodat | LWB,LW,LM | 24 | France | 1,2 M€ | 7,25 | 1 | 1 | 0/0 |  |
-| 76 | Yasser Larouci | LB | 25 | Algeria | 1,2 M€ | 6,46 | 0 | 0 | 0/0 |  |
+| 22 | Lucas Calodat | LWB,LW,LM | 24 | France | 1,5 M€ | 7,25 | 1 | 1 | 0/0 |  |
+| 76 | Yasser Larouci | LB | 25 | Algeria | 1,3 M€ | 6,46 | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 6 | Edwin Quarshie | CM,CAM,CDM | 30 | Central African Rep. | 323 k€ | – | 0 | 0 | 0/0 |  |
-| 8 | Alexandre Lauray | CDM,CM | 29 | France | 305 k€ | 6,81 | 0 | 0 | 3/0 |  |
-| 10 | Jean Vercruysse | CM | 26 | France | 552 k€ | 6,64 | 0 | 1 | 1/0 |  |
+| 6 | Edwin Quarshie | CM,CAM,CDM | 30 | Central African Rep. | 311 k€ | – | 0 | 0 | 0/0 |  |
+| 8 | Alexandre Lauray | CDM,CM | 29 | France | 354 k€ | 6,81 | 0 | 0 | 3/0 |  |
+| 10 | Jean Vercruysse | CM | 26 | France | 560 k€ | 6,64 | 0 | 1 | 1/0 |  |
 | 11 | Adil Bourabaa | CM,CAM | 21 | France | – | 7,64 | 3 | 2 | 1/0 |  |
-| 18 | Lucas Buadés | RWB,CAM,LW,RM | 28 | France | 583 k€ | 6,90 | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
-| 19 | Djibril Sidibé | CB,RWB,RM,LM | 34 | France | 694 k€ | 6,99 | 0 | 0 | 1/1 |  |
-| 23 | Daouda Traoré | CDM | 20 | France | 565 k€ | 6,08 | 0 | 0 | 0/0 |  |
+| 18 | Lucas Buadés | RWB,CAM,LW,RM | 28 | France | 1,0 M€ | 6,90 | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
+| 19 | Djibril Sidibé | CB,RWB,RM,LM | 34 | France | 723 k€ | 6,99 | 0 | 0 | 1/1 |  |
+| 23 | Daouda Traoré | CDM | 20 | France | 490 k€ | 6,08 | 0 | 0 | 0/0 |  |
 | 26 | Rayan Bamba | CAM,RM | 22 | France | 1,2 M€ | 7,24 | 0 | 1 | 0/0 |  |
-| 27 | Martin Rossignol | CM,CAM | 22 | France | 642 k€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
-| 29 | Lucas Bretelle | CDM,CM,CAM | 24 | France | 513 k€ | 6,82 | 0 | 1 | 0/0 |  |
+| 27 | Martin Rossignol | CM,CAM | 22 | France | 559 k€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 29 | Lucas Bretelle | CDM,CM,CAM | 24 | France | 868 k€ | 6,82 | 0 | 1 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 |  | Enzo Vágner | Attacker | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 7 | Billal Brahimi | CM | 26 | Algeria | 941 k€ | 6,08 | 0 | 0 | 0/0 |  |
-| 9 | Antoine Rabillard | ST | 31 | France | 378 k€ | 6,66 | 0 | 0 | 0/0 |  |
+| 7 | Billal Brahimi | CM | 26 | Algeria | 897 k€ | 6,08 | 0 | 0 | 0/0 |  |
+| 9 | Antoine Rabillard | ST | 31 | France | 397 k€ | 6,66 | 0 | 0 | 0/0 |  |
 | 13 | Habibou Mouhamadou Diallo | ST | 31 | Senegal | – | 6,75 | 1 | 0 | 1/0 |  |
-| 14 | Louis Mafouta | ST,RW | 32 | Central African Rep. | 997 k€ | 7,43 | 3 | 1 | 0/0 |  |
-| 20 | William Harhouz | ST | 26 | France | 524 k€ | 5,93 | 0 | 0 | 0/0 |  |
-| 25 | Dame Gueye | ST | 31 | Senegal | 368 k€ | 6,49 | 1 | 0 | 0/0 |  |
-| 28 | Erwan Colas | ST | 29 | France | 319 k€ | 6,01 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 14 | Louis Mafouta | ST,RW | 32 | Central African Rep. | 1,1 M€ | 7,43 | 3 | 1 | 0/0 |  |
+| 20 | William Harhouz | ST | 26 | France | 543 k€ | 5,93 | 0 | 0 | 0/0 |  |
+| 25 | Dame Gueye | ST | 31 | Senegal | 407 k€ | 6,49 | 1 | 0 | 0/0 |  |
+| 28 | Erwan Colas | ST | 29 | France | 460 k€ | 6,01 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |

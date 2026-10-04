@@ -580,6 +580,50 @@ test.describe('trav-features: inlärning', () => {
     expect(evaluate(rows, b, ['barfota']).logLoss).toBeLessThan(evaluate(rows, m, []).logLoss);
   });
 
+  test('skobyte räknas mot förra starten: barfota runt om → skor bak = skor PÅ, inte av', async () => {
+    const { shoeChange, rawFeatures } = await features();
+    const bare = { front: false, back: false };
+    const shod = { front: true, back: true };
+    // Readly Brodde, V85 Boden 2026-10-03: barfota runt om senast, skor bak i dag
+    expect(shoeChange({ front: false, back: true, changed: true }, bare)).toEqual({ av: 0, pa: 1 });
+    // skor runt om senast, barfota bak i dag = skor av
+    expect(shoeChange({ front: true, back: false, changed: true }, shod)).toEqual({ av: 1, pa: 0 });
+    expect(shoeChange({ front: false, back: false, changed: true }, shod)).toEqual({ av: 1, pa: 0 });
+    // av fram och på bak samtidigt = varken eller
+    expect(shoeChange({ front: false, back: true, changed: true }, { front: true, back: false })).toEqual({ av: 0, pa: 0 });
+    // inget byte, eller okänd sko i dag
+    expect(shoeChange({ front: false, back: true, changed: false }, bare)).toEqual({ av: 0, pa: 0 });
+    expect(shoeChange({ front: null, back: true, changed: true }, bare)).toEqual({ av: 0, pa: 0 });
+    // utan förra startens skor: bara säkra fall
+    expect(shoeChange({ front: false, back: false, changed: true }, null)).toEqual({ av: 1, pa: 0 });
+    expect(shoeChange({ front: true, back: true, changed: true }, { front: null, back: null })).toEqual({ av: 0, pa: 1 });
+    expect(shoeChange({ front: false, back: true, changed: true }, null)).toEqual({ av: 0, pa: 0 });
+    // rawFeatures använder senaste ej strukna starten
+    const race = { startTime: '2026-10-03T15:00:00', distance: 2140, startMethod: 'auto' };
+    const h = { shoes: { front: false, back: true, changed: true }, records: [
+      { date: '2026-09-20', scratched: true, shoes: shod },
+      { date: '2026-09-06', place: 1, km: 72.7, shoes: bare },
+    ] };
+    const f = rawFeatures(race, h, {});
+    expect(f.skorPa).toBe(1);
+    expect(f.skorAv).toBe(0);
+  });
+
+  test('kommentaren säger skor på/av när riktningen är känd', async () => {
+    const { analyzeRace } = await model();
+    const race = normRace('K', '2026-05-01', 3, 1);
+    race.starts[0].shoes = { front: false, back: true, changed: true };
+    (race.starts[0].records[0] as any).shoes = { front: false, back: false };
+    race.starts[1].shoes = { front: true, back: false, changed: true };
+    (race.starts[1].records[0] as any).shoes = { front: true, back: true };
+    race.starts[2].shoes = { front: false, back: true, changed: true };
+    const a = analyzeRace(race, {}, { learned: false });
+    const c = (nr: number) => a.horses.find((h: any) => h.nr === nr).comments;
+    expect(c(1)).toContain('Skor på (ändrat)');
+    expect(c(2)).toContain('Skor av (ändrat)');
+    expect(c(3)).toContain('Skoändring');
+  });
+
   test('samma lopp i två spel (V86 + V64) räknas en gång', async () => {
     const { buildRows } = await features();
     const { postTable } = await model();

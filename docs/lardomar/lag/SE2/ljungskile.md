@@ -1,6 +1,6 @@
 # Ljungskile (Superettan) – lärdomar
 
-Genererad 2026-09-29. Ligans fil: [SE2](../../ligor/SE2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-10-04. Ligans fil: [SE2](../../ligor/SE2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -28,7 +28,7 @@ Form senaste 8 (äldst → senast): FFOFOVFF · senaste match 2026-09-20
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Tor-Arne Fredheim. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -36,33 +36,33 @@ Tränare: Tor-Arne Fredheim. Betyg, mål och assist gäller innevarande säsong 
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
 | 1 | Lukas Eriksson | GK | 23 | Sweden | – | – | 0 | 1 | 0/0 |  |
-| 20 | Cameron Hogg | GK | 31 | New Zealand | 66 k€ | – | 0 | 0 | 0/0 |  |
+| 20 | Cameron Hogg | GK | 31 | New Zealand | 52 k€ | – | 0 | 0 | 0/0 |  |
 | 37 | William Henriksson-Liljedahl | Keeper | 22 | Sweden | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Rasmus Nåfors Dahlin | RB | 19 | Sweden | 295 k€ | – | 0 | 0 | 0/0 |  |
+| 2 | Rasmus Nåfors Dahlin | RB | 19 | Sweden | 267 k€ | – | 0 | 0 | 0/0 |  |
 | 3 | Gustav Hedin | CB,RB | 23 | Sweden | – | – | 0 | 0 | 0/0 |  |
 | 5 | Filip Örnblom | CB | 27 | Sweden | 50 k€ | – | 1 | 0 | 1/0 |  |
-| 16 | Emilio Reljanovic | RB,LB,LM | 25 | Sweden | 110 k€ | – | 0 | 2 | 3/0 |  |
+| 16 | Emilio Reljanovic | RB,LB,LM | 25 | Sweden | 75 k€ | – | 0 | 2 | 3/0 |  |
 | 17 | Alexander Bjoerk | Defender | 20 | Sweden | – | – | 0 | 0 | 0/0 |  |
-| 23 | Mehmet Uzel | LB | 24 | Sweden | – | – | 3 | 1 | 2/0 |  |
-| 60 | Gideon Mensah | CB | 25 | Ghana | 104 k€ | – | 1 | 0 | 4/0 |  |
-| 69 | Ivan Maric | CB | 24 | Bosnia and Herzegovina | 171 k€ | – | 1 | 1 | 6/0 |  |
+| 23 | Mehmet Uzel | LB | 24 | Sweden | 191 k€ | – | 3 | 1 | 2/0 |  |
+| 60 | Gideon Mensah | CB | 25 | Ghana | 88 k€ | – | 1 | 0 | 4/0 |  |
+| 69 | Ivan Maric | CB | 24 | Bosnia and Herzegovina | 173 k€ | – | 1 | 1 | 6/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 7 | Jonathan Liljedahl | CAM | 24 | Sweden | 87 k€ | – | 1 | 0 | 0/0 |  |
-| 8 | Vilmer Tyrén | CAM,ST,CM | 21 | Sweden | 144 k€ | – | 1 | 3 | 2/0 |  |
-| 10 | Filip Ambrož | CDM,CM | 22 | Croatia | 179 k€ | – | 2 | 1 | 6/0 |  |
+| 7 | Jonathan Liljedahl | CAM | 24 | Sweden | 70 k€ | – | 1 | 0 | 0/0 |  |
+| 8 | Vilmer Tyrén | CAM,ST,CM | 21 | Sweden | 175 k€ | – | 1 | 3 | 2/0 |  |
+| 10 | Filip Ambrož | CDM,CM | 22 | Croatia | 174 k€ | – | 2 | 1 | 6/0 |  |
 | 12 | Samuel Hoegblom | Midfielder | 19 | Sweden | – | – | 0 | 0 | 0/0 |  |
 | 14 | Daniel Lagerloef | CDM,CM | 22 | Sweden | – | – | 1 | 1 | 3/0 |  |
-| 15 | David Frisk | CAM,RW | 24 | Sweden | 175 k€ | – | 0 | 3 | 0/0 |  |
+| 15 | David Frisk | CAM,RW | 24 | Sweden | 172 k€ | – | 0 | 3 | 0/0 |  |
 | 18 | Hugo Borstam | RW | 23 | Sweden | – | – | 0 | 0 | 1/0 |  |
 | 22 | Ailo Zackrisson | Midfielder | 19 | Sweden | – | – | 0 | 0 | 0/0 |  |
 | 58 | Samuel Adrian | CDM | 28 | Sweden | 50 k€ | – | 0 | 0 | 0/0 |  |
-| 71 | Daniel Ljung | CAM,LW,CDM,CM | 27 | Sweden | 74 k€ | – | 2 | 3 | 1/0 |  |
+| 71 | Daniel Ljung | CAM,CDM,LW,CM | 27 | Sweden | 85 k€ | – | 2 | 3 | 1/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 9 | Alex Rasheed | ST | 21 | Sweden | – | – | 4 | 0 | 3/0 |  |
-| 11 | Shakur Omar | LW,RW | 22 | Sweden | 159 k€ | – | 4 | 2 | 1/0 |  |
-| 13 | William Nilsson | RW,ST | 21 | Sweden | 211 k€ | – | 3 | 2 | 4/0 |  |
-| 19 | Elton Hedström | ST | 23 | Sweden | 206 k€ | – | 1 | 0 | 0/0 |  |
-| 27 | Alfons Borén | RW,LW | 20 | Sweden | 328 k€ | – | 1 | 1 | 2/0 |  |
-| 45 | Isaac Shears | ST | 26 | Sweden | 144 k€ | – | 1 | 0 | 1/0 |  |
+| 11 | Shakur Omar | LW,RW | 22 | Sweden | 139 k€ | – | 4 | 2 | 1/0 |  |
+| 13 | William Nilsson | RW,ST | 21 | Sweden | 181 k€ | – | 3 | 2 | 4/0 |  |
+| 19 | Elton Hedström | ST | 23 | Sweden | 102 k€ | – | 1 | 0 | 0/0 |  |
+| 27 | Alfons Borén | RW,LW | 20 | Sweden | 256 k€ | – | 1 | 1 | 2/0 |  |
+| 45 | Isaac Shears | ST | 26 | Sweden | 157 k€ | – | 1 | 0 | 1/0 |  |
 | 99 | Lukas Lindholm Corner | ST,LW | 27 | Sweden | 62 k€ | – | 4 | 4 | 2/0 |  |

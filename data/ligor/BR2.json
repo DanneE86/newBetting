@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-09-29T20:15:35.901Z",
+ "updatedAt": "2026-10-04T09:27:34.347Z",
  "league": "BR2",
  "fotmobId": 8814,
  "name": "Serie B",
@@ -11,13 +11,13 @@
    "fotmobName": "Vila Nova",
    "fotmobId": 109706,
    "group": null,
-   "played": 30,
-   "won": 16,
+   "played": 31,
+   "won": 17,
    "drawn": 6,
    "lost": 8,
-   "goals": "43-31",
-   "gd": 12,
-   "pts": 54
+   "goals": "44-31",
+   "gd": 13,
+   "pts": 57
   },
   {
    "rank": 2,
@@ -25,55 +25,55 @@
    "fotmobName": "Juventude",
    "fotmobId": 10274,
    "group": null,
-   "played": 30,
-   "won": 15,
+   "played": 31,
+   "won": 16,
    "drawn": 8,
    "lost": 7,
-   "goals": "32-19",
-   "gd": 13,
-   "pts": 53
+   "goals": "35-19",
+   "gd": 16,
+   "pts": 56
   },
   {
    "rank": 3,
-   "team": "Fortaleza",
-   "fotmobName": "Fortaleza",
-   "fotmobId": 8287,
-   "group": null,
-   "played": 30,
-   "won": 14,
-   "drawn": 10,
-   "lost": 6,
-   "goals": "35-26",
-   "gd": 9,
-   "pts": 52
-  },
-  {
-   "rank": 4,
    "team": "Novorizontino",
    "fotmobName": "Novorizontino",
    "fotmobId": 581838,
    "group": null,
-   "played": 30,
-   "won": 14,
+   "played": 31,
+   "won": 15,
    "drawn": 9,
    "lost": 7,
-   "goals": "49-27",
-   "gd": 22,
-   "pts": 51
+   "goals": "52-27",
+   "gd": 25,
+   "pts": 54
   },
   {
-   "rank": 5,
+   "rank": 4,
    "team": "Criciúma",
    "fotmobName": "Criciúma",
    "fotmobId": 7729,
    "group": null,
-   "played": 30,
-   "won": 14,
+   "played": 31,
+   "won": 15,
    "drawn": 8,
    "lost": 8,
-   "goals": "31-27",
-   "gd": 4,
-   "pts": 50
+   "goals": "33-27",
+   "gd": 6,
+   "pts": 53
+  },
+  {
+   "rank": 5,
+   "team": "Fortaleza",
+   "fotmobName": "Fortaleza",
+   "fotmobId": 8287,
+   "group": null,
+   "played": 31,
+   "won": 14,
+   "drawn": 11,
+   "lost": 6,
+   "goals": "36-27",
+   "gd": 9,
+   "pts": 53
   },
   {
    "rank": 6,
@@ -81,13 +81,13 @@
    "fotmobName": "Atlético-GO",
    "fotmobId": 165545,
    "group": null,
-   "played": 30,
-   "won": 13,
+   "played": 31,
+   "won": 14,
    "drawn": 10,
    "lost": 7,
-   "goals": "37-27",
-   "gd": 10,
-   "pts": 49
+   "goals": "39-27",
+   "gd": 12,
+   "pts": 52
   },
   {
    "rank": 7,
@@ -95,12 +95,12 @@
    "fotmobName": "CRB",
    "fotmobId": 104821,
    "group": null,
-   "played": 30,
+   "played": 31,
    "won": 14,
    "drawn": 6,
-   "lost": 10,
-   "goals": "45-41",
-   "gd": 4,
+   "lost": 11,
+   "goals": "46-44",
+   "gd": 2,
    "pts": 48
   },
   {
@@ -109,12 +109,12 @@
    "fotmobName": "Operário-PR",
    "fotmobId": 197429,
    "group": null,
-   "played": 30,
+   "played": 31,
    "won": 13,
    "drawn": 9,
-   "lost": 8,
-   "goals": "43-38",
-   "gd": 5,
+   "lost": 9,
+   "goals": "43-41",
+   "gd": 2,
    "pts": 48
   },
   {
@@ -123,13 +123,13 @@
    "fotmobName": "Sport Recife",
    "fotmobId": 6305,
    "group": null,
-   "played": 30,
-   "won": 11,
+   "played": 31,
+   "won": 12,
    "drawn": 11,
    "lost": 8,
-   "goals": "40-32",
-   "gd": 8,
-   "pts": 44
+   "goals": "42-33",
+   "gd": 9,
+   "pts": 47
   },
   {
    "rank": 10,
@@ -137,69 +137,69 @@
    "fotmobName": "Cuiabá",
    "fotmobId": 197815,
    "group": null,
-   "played": 30,
-   "won": 10,
+   "played": 31,
+   "won": 11,
    "drawn": 13,
    "lost": 7,
-   "goals": "30-25",
-   "gd": 5,
-   "pts": 43
+   "goals": "32-25",
+   "gd": 7,
+   "pts": 46
   },
   {
    "rank": 11,
-   "team": "Goiás",
-   "fotmobName": "Goiás",
-   "fotmobId": 9862,
-   "group": null,
-   "played": 30,
-   "won": 12,
-   "drawn": 6,
-   "lost": 12,
-   "goals": "30-36",
-   "gd": -6,
-   "pts": 42
-  },
-  {
-   "rank": 12,
    "team": "São Bernardo",
    "fotmobName": "São Bernardo",
    "fotmobId": 231931,
    "group": null,
-   "played": 30,
-   "won": 11,
+   "played": 31,
+   "won": 12,
    "drawn": 9,
    "lost": 10,
-   "goals": "40-31",
-   "gd": 9,
+   "goals": "43-32",
+   "gd": 11,
+   "pts": 45
+  },
+  {
+   "rank": 12,
+   "team": "Goiás",
+   "fotmobName": "Goiás",
+   "fotmobId": 9862,
+   "group": null,
+   "played": 31,
+   "won": 12,
+   "drawn": 6,
+   "lost": 13,
+   "goals": "30-39",
+   "gd": -9,
    "pts": 42
   },
   {
    "rank": 13,
-   "team": "Athletic",
-   "fotmobName": "Athletic Club MG",
-   "fotmobId": 1221604,
-   "group": null,
-   "played": 30,
-   "won": 10,
-   "drawn": 12,
-   "lost": 8,
-   "goals": "36-33",
-   "gd": 3,
-   "pts": 42
-  },
-  {
-   "rank": 14,
    "team": "Náutico",
    "fotmobName": "Náutico",
    "fotmobId": 2369,
    "group": null,
-   "played": 30,
+   "played": 31,
    "won": 11,
-   "drawn": 8,
+   "drawn": 9,
    "lost": 11,
-   "goals": "38-37",
+   "goals": "39-38",
    "gd": 1,
-   "pts": 41
+   "pts": 42
+  },
+  {
+   "rank": 14,
+   "team": "Athletic",
+   "fotmobName": "Athletic Club MG",
+   "fotmobId": 1221604,
+   "group": null,
+   "played": 31,
+   "won": 10,
+   "drawn": 12,
+   "lost": 9,
+   "goals": "37-35",
+   "gd": 2,
+   "pts": 42
   },
   {
    "rank": 15,
@@ -207,13 +207,13 @@
    "fotmobName": "Ceará",
    "fotmobId": 172341,
    "group": null,
-   "played": 30,
-   "won": 9,
+   "played": 31,
+   "won": 10,
    "drawn": 9,
    "lost": 12,
-   "goals": "33-39",
-   "gd": -6,
-   "pts": 36
+   "goals": "34-39",
+   "gd": -5,
+   "pts": 39
   },
   {
    "rank": 16,
@@ -221,13 +221,13 @@
    "fotmobName": "Botafogo SP",
    "fotmobId": 8355,
    "group": null,
-   "played": 29,
-   "won": 8,
+   "played": 31,
+   "won": 9,
    "drawn": 8,
-   "lost": 13,
-   "goals": "32-36",
-   "gd": -4,
-   "pts": 32
+   "lost": 14,
+   "goals": "34-37",
+   "gd": -3,
+   "pts": 35
   },
   {
    "rank": 17,
@@ -235,12 +235,12 @@
    "fotmobName": "Avaí",
    "fotmobId": 104822,
    "group": null,
-   "played": 30,
+   "played": 31,
    "won": 8,
    "drawn": 6,
-   "lost": 16,
-   "goals": "30-41",
-   "gd": -11,
+   "lost": 17,
+   "goals": "30-42",
+   "gd": -12,
    "pts": 30
   },
   {
@@ -249,12 +249,12 @@
    "fotmobName": "Londrina",
    "fotmobId": 298660,
    "group": null,
-   "played": 30,
+   "played": 31,
    "won": 7,
    "drawn": 7,
-   "lost": 16,
-   "goals": "39-43",
-   "gd": -4,
+   "lost": 17,
+   "goals": "39-45",
+   "gd": -6,
    "pts": 28
   },
   {
@@ -263,12 +263,12 @@
    "fotmobName": "América-MG",
    "fotmobId": 1757,
    "group": null,
-   "played": 30,
+   "played": 31,
    "won": 4,
    "drawn": 5,
-   "lost": 21,
-   "goals": "21-50",
-   "gd": -29,
+   "lost": 22,
+   "goals": "21-52",
+   "gd": -31,
    "pts": 17
   },
   {
@@ -277,12 +277,12 @@
    "fotmobName": "Ponte Preta",
    "fotmobId": 8630,
    "group": null,
-   "played": 29,
+   "played": 31,
    "won": 3,
    "drawn": 4,
-   "lost": 22,
-   "goals": "17-62",
-   "gd": -45,
+   "lost": 24,
+   "goals": "17-66",
+   "gd": -49,
    "pts": 13
   }
  ],
@@ -569,6 +569,148 @@
     29,
     13,
     -45
+   ]
+  ],
+  "2026-10-04": [
+   [
+    "Vila Nova",
+    1,
+    31,
+    57,
+    13
+   ],
+   [
+    "Juventude",
+    2,
+    31,
+    56,
+    16
+   ],
+   [
+    "Novorizontino",
+    3,
+    31,
+    54,
+    25
+   ],
+   [
+    "Criciúma",
+    4,
+    31,
+    53,
+    6
+   ],
+   [
+    "Fortaleza",
+    5,
+    31,
+    53,
+    9
+   ],
+   [
+    "Atlético Goianiense",
+    6,
+    31,
+    52,
+    12
+   ],
+   [
+    "CRB",
+    7,
+    31,
+    48,
+    2
+   ],
+   [
+    "Operário PR",
+    8,
+    31,
+    48,
+    2
+   ],
+   [
+    "Sport",
+    9,
+    31,
+    47,
+    9
+   ],
+   [
+    "Cuiabá",
+    10,
+    31,
+    46,
+    7
+   ],
+   [
+    "São Bernardo",
+    11,
+    31,
+    45,
+    11
+   ],
+   [
+    "Goiás",
+    12,
+    31,
+    42,
+    -9
+   ],
+   [
+    "Náutico",
+    13,
+    31,
+    42,
+    1
+   ],
+   [
+    "Athletic",
+    14,
+    31,
+    42,
+    2
+   ],
+   [
+    "Ceará",
+    15,
+    31,
+    39,
+    -5
+   ],
+   [
+    "Botafogo-SP",
+    16,
+    31,
+    35,
+    -3
+   ],
+   [
+    "Avaí",
+    17,
+    31,
+    30,
+    -12
+   ],
+   [
+    "Londrina",
+    18,
+    31,
+    28,
+    -6
+   ],
+   [
+    "América Mineiro",
+    19,
+    31,
+    17,
+    -31
+   ],
+   [
+    "Ponte Preta",
+    20,
+    31,
+    13,
+    -49
    ]
   ]
  }

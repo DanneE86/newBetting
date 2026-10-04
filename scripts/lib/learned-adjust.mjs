@@ -5,12 +5,14 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { root } from './learnings-data.mjs';
+import { altitudeShift } from './altitude.mjs';
 
 export const ADJ_FILE = path.join(root, 'config', 'learned-adjustments.json');
 // Signaler per bas: vid oppning finns inte oddsrorelse/stangningsodds. miss testas separat (kort historik).
+// alt (hoghojd) och sp (fasta situationer) fran scripts/lib/extra-signals.mjs.
 export const SIGNAL_KEYS = {
-  open: ['luck', 'gap', 'mres', 'h2hPts', 'h2hRes', 'rest', 'promo', 'releg'],
-  close: ['luck', 'gap', 'mres', 'h2hPts', 'h2hRes', 'rest', 'promo', 'releg', 'steam', 'book'],
+  open: ['luck', 'gap', 'mres', 'h2hPts', 'h2hRes', 'rest', 'promo', 'releg', 'alt', 'sp'],
+  close: ['luck', 'gap', 'mres', 'h2hPts', 'h2hRes', 'rest', 'promo', 'releg', 'steam', 'book', 'alt', 'sp'],
 };
 export const DRAW_KEYS = { open: ['h2hDraw', 'underOpen'], close: ['h2hDraw', 'under'] };
 
@@ -58,14 +60,21 @@ export function applyParams(p, params, f = {}) {
  * applied beskriver vad som anvandes (tomt = ingen justering).
  */
 export function adjustProbs(p, league, f = {}, base = 'open', doc = loadAdjustments()) {
+  if (!p || p.some((x) => !Number.isFinite(x))) return { p, applied: [] };
+  let out = p;
+  const applied = [];
   const set = doc?.[base];
-  if (!set || !p || p.some((x) => !Number.isFinite(x))) return { p, applied: [] };
-  const params = { beta: set.beta ?? {}, drawBeta: set.drawBeta ?? {}, scale: set.scale ?? {}, league: set.leagues?.[league] ?? {} };
-  const applied = [
-    ...(set.leagues?.[league] ? ['liga-kalibrering'] : []),
-    ...Object.keys(params.beta).filter((k) => f[k] != null && Number.isFinite(f[k])),
-    ...Object.keys(params.drawBeta).filter((k) => f[k] != null && Number.isFinite(f[k])),
-  ];
-  if (!applied.length) return { p, applied };
-  return { p: applyParams(p, params, f), applied };
+  if (set) {
+    const params = { beta: set.beta ?? {}, drawBeta: set.drawBeta ?? {}, scale: set.scale ?? {}, league: set.leagues?.[league] ?? {} };
+    const used = [
+      ...(set.leagues?.[league] ? ['liga-kalibrering'] : []),
+      ...Object.keys(params.beta).filter((k) => f[k] != null && Number.isFinite(f[k])),
+      ...Object.keys(params.drawBeta).filter((k) => f[k] != null && Number.isFinite(f[k])),
+    ];
+    if (used.length) { out = applyParams(out, params, f); applied.push(...used); }
+  }
+  // Hoghojd (egen parameter per liga, galler bada baserna): hemmalaget pa hoghojd mot lagland-lag
+  const alt = doc?.altitude?.[league];
+  if (alt && f.alt === 1) { out = altitudeShift(out, alt.b); applied.push('höghöjd'); }
+  return { p: out, applied };
 }

@@ -1,6 +1,6 @@
 # Internacional de Bogotá (Primera A) – lärdomar
 
-Genererad 2026-09-29. Ligans fil: [COL](../../ligor/COL.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-10-04. Ligans fil: [COL](../../ligor/COL.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -41,7 +41,18 @@ Form senaste 8 (äldst → senast): OOOOVFFO · senaste match 2026-09-26
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+## Höghöjd
+
+Arenans höjd: ca 2640 m. Höghöjdsmatch = arena ≥ 1500 m och bortalaget från minst 1000 m lägre.
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Hemma mot låglandslag | 24 | 8-4-12 | 1,17 | – |
+| Hemma mot övriga | 12 | 4-5-3 | 1,42 | – |
+
+Ligan: se [COL](../../ligor/COL.md#höghöjd).
+
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Ricardo Valiño. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -50,36 +61,35 @@ Tränare: Ricardo Valiño. Betyg, mål och assist gäller innevarande säsong en
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Wuilker Fariñez | GK | 28 | Venezuela | 689 k€ | – | 0 | 0 | 0/0 |  |
+| 1 | Wuilker Fariñez | GK | 28 | Venezuela | 849 k€ | – | 0 | 0 | 0/0 |  |
 | 12 | Ignacio Carrasco | Keeper | 19 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 30 | Simón Zapata | GK | 20 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 33 | Kevin Cataño | GK | 23 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Carlos Vivas | CB | 24 | Venezuela | 1,1 M€ | – | 0 | 0 | 0/0 |  |
-| 4 | Mateo Rodas | CB | 28 | Colombia | 254 k€ | – | 0 | 0 | 0/0 |  |
+| 2 | Carlos Vivas | CB | 24 | Venezuela | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 3 | Esteban Valencia | Defender | 0 | Colombia | – | – | 0 | 0 | 0/0 |  |
+| 4 | Mateo Rodas | CB | 28 | Colombia | 257 k€ | – | 0 | 0 | 0/0 |  |
 | 6 | Miguel Amaya | CB | 22 | Colombia | – | – | 0 | 0 | 0/0 |  |
-| 13 | Miguel Pernía | LB,LM,LWB | 25 | Venezuela | 334 k€ | – | 0 | 0 | 0/0 |  |
-| 16 | Yulián Gómez | LB,LWB | 29 | Colombia | 258 k€ | – | 0 | 0 | 0/0 | skadad, åter Late October 2026 |
-| 20 | Joan Castro | RB,CB | 29 | Colombia | 249 k€ | – | 0 | 0 | 0/0 |  |
+| 13 | Miguel Pernía | LB,LM,LWB | 25 | Venezuela | 327 k€ | – | 0 | 0 | 0/0 |  |
+| 16 | Yulián Gómez | LB,LWB | 29 | Colombia | 299 k€ | – | 0 | 0 | 0/0 | skadad, åter Late October 2026 |
+| 20 | Joan Castro | RB,CB | 29 | Colombia | 250 k€ | – | 0 | 0 | 0/0 |  |
 | 25 | Ronaldo Julio | RB,RW,RWB | 21 | Colombia | – | – | 0 | 0 | 0/0 |  |
-| 26 | Agustín Irazoque | CB | 26 | Argentina | 531 k€ | – | 0 | 0 | 0/0 |  |
+| 26 | Agustín Irazoque | CB | 26 | Argentina | 551 k€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 5 | Larry Vásquez | CM,CDM | 35 | Colombia | 247 k€ | – | 0 | 0 | 0/0 |  |
-| 8 | Dewar Victoria | CDM,CM | 25 | Colombia | 466 k€ | – | 0 | 0 | 0/0 |  |
-| 10 | Facundo Boné | CAM,ST,CM,RW | 30 | Uruguay | 475 k€ | – | 0 | 0 | 0/0 |  |
+| 5 | Larry Vásquez | CM,CDM | 35 | Colombia | 309 k€ | – | 0 | 0 | 0/0 |  |
+| 8 | Dewar Victoria | CDM,CM | 25 | Colombia | 449 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Facundo Boné | CAM,ST,CM,RW | 30 | Uruguay | 541 k€ | – | 0 | 0 | 0/0 |  |
 | 14 | Mateo Santamaria | CAM | 21 | Colombia | – | – | 0 | 0 | 0/0 |  |
-| 15 | Dannovi Quiñones | CDM,CM | 25 | Colombia | 409 k€ | – | 0 | 0 | 0/0 |  |
-| 24 | Rubén Manjarrés | CDM,CM | 26 | Colombia | 310 k€ | – | 0 | 0 | 0/0 |  |
+| 24 | Rubén Manjarrés | CDM,CM | 26 | Colombia | 304 k€ | – | 0 | 0 | 0/0 |  |
 | 32 | Jhon Palomeque | Midfielder | 18 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 7 | Fabricio Sanguinetti | ST,LM,LW | 26 | Uruguay | 529 k€ | – | 0 | 0 | 0/0 |  |
-| 9 | Diego Duarte | ST,LW,RW | 24 | Paraguay | 397 k€ | – | 0 | 0 | 0/0 |  |
-| 11 | Cristian Dájome | RW,LW,CDM,RM | 32 | Colombia | 515 k€ | – | 0 | 0 | 0/0 |  |
+| 7 | Fabricio Sanguinetti | ST,LM,LW | 26 | Uruguay | 685 k€ | – | 0 | 0 | 0/0 |  |
+| 9 | Diego Duarte | ST,LW,RW | 24 | Paraguay | 443 k€ | – | 0 | 0 | 0/0 |  |
+| 11 | Cristian Dájome | RW,LW,CDM,RM | 32 | Colombia | 530 k€ | – | 0 | 0 | 0/0 |  |
 | 17 | Fabian Chaverra | RM | 23 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 18 | Emanuel Arboleda | Attacker | 0 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 19 | Yeider García | ST | 19 | Colombia | – | – | 0 | 0 | 0/0 |  |
-| 21 | Yojan Garcés | ST | 20 | Colombia | – | – | 0 | 0 | 0/0 |  |
-| 23 | Johan Caballero | RW,RM,CAM,LW | 28 | Colombia | 405 k€ | – | 0 | 0 | 0/0 |  |
-| 27 | Emilio Gutiérrez | Attacker | 19 | Colombia | – | – | 0 | 0 | 0/0 |  |
+| 23 | Johan Caballero | RW,RM,CAM,LW | 28 | Colombia | 423 k€ | – | 0 | 0 | 0/0 |  |
+| 27 | Emilio Gutiérrez | Attacker | 20 | Colombia | – | – | 0 | 0 | 0/0 |  |
 
-Har lämnat truppen sedan vi började spara (1): Sebastián Giraldo (senast 2026-09-29).
+Har lämnat truppen sedan vi började spara (3): Dannovi Quiñones (senast 2026-09-29), Sebastián Giraldo (senast 2026-09-29), Yojan Garcés (senast 2026-09-29).

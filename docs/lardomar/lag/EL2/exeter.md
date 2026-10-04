@@ -1,10 +1,13 @@
 # Exeter (League Two) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Stark historik mot Northampton (−0,58 p/match mot marknaden, 12 möten), Bristol Rvs (+0,56 p/match mot marknaden, 9 möten), Cheltenham (−0,54 p/match mot marknaden, 8 möten), Tranmere (−0,97 p/match mot marknaden, 7 möten), Swindon (+0,79 p/match mot marknaden, 6 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Spelstil 2021/22: Balanserat, Blandat, Högpress, Svag på fasta, Medel mot fasta. Bäst mot Högpress (+0,19, samma håll i båda halvorna men svagt), Backar hem (+0,20, samma håll i båda halvorna men svagt), Svag mot fasta (+0,21, svagt). Svårast mot Mellanpress (−0,18, samma håll i båda halvorna men svagt), Kortpass (−0,19, svagt), Bollinnehav (−0,12, samma håll i båda halvorna men svagt). Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2026/27: 0,22 mål för per match (xG 0,43), 0,33 emot (xG 0,20), 4,8 hörnor.
+- Svårt för: Tranmere (1-1-5, 0,57 p/match, mot marknaden −0,97), Northampton (2-4-6, 0,83 p/match, mot marknaden −0,58), Cheltenham (2-2-4, 1,00 p/match, mot marknaden −0,54), Walsall (1-5-1, 1,14 p/match, mot marknaden −0,48), Port Vale (5-1-8, 1,14 p/match, mot marknaden −0,19). Där marknaden ligger nära noll är laget bara sämre i de mötena än annars, och oddsen vet redan om det.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -32,6 +35,54 @@ Form (äldst → senast): FVFOOFOF · senaste match 2026-09-26
 | 2026/27 | EL2 | 8 | 0,75 | −0,55 (+0,04 / −1,14) | 38 % (26 %) | 0,50–0,75 | 1,12–1,38* | 1,21 |
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/EL2.md#exeter) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2021/22: **Balanserat, Blandat, Högpress, Svag på fasta, Medel mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026/27 | 9 | 0,22 | 0,43 | 0,33 | 0,20 | 4,8 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Backar hem | 89 | 1,09–0,93 | +0,25 | +0,20 (1,5) | −1 pe | −11 pe | ✔ samma håll |
+| Balanserat | 118 | 1,32–1,25 | −0,03 | −0,08 (−0,7) | −3 pe | +3 pe | svag |
+| Bollinnehav | 68 | 1,32–1,63 | −0,07 | −0,12 (−0,9) | +7 pe | +2 pe | ✔ samma håll |
+| Kortpass | 59 | 1,15–1,68 | −0,14 | −0,19 (−1,4) | +9 pe | +3 pe | svag |
+| Blandat | 142 | 1,30–1,17 | +0,10 | +0,05 (0,4) | −5 pe | −2 pe | ✔ samma håll |
+| Direktspel | 74 | 1,23–1,04 | +0,12 | +0,07 (0,5) | +3 pe | −6 pe | ✔ samma håll |
+| Lågpress | 64 | 1,23–1,28 | +0,04 | −0,01 (−0,1) | +1 pe | −2 pe | svag |
+| Mellanpress | 107 | 1,15–1,32 | −0,13 | −0,18 (−1,5) | +0 pe | −3 pe | ✔ samma håll |
+| Högpress | 104 | 1,36–1,14 | +0,24 | +0,19 (1,6) | −0 pe | +0 pe | ✔ samma håll |
+| Svag på fasta | 92 | 1,36–1,34 | +0,03 | −0,03 (−0,2) | −2 pe | +2 pe | ✔ samma håll |
+| Medel på fasta | 126 | 1,21–1,24 | +0,08 | +0,02 (0,2) | +2 pe | −1 pe | svag |
+| Farlig på fasta | 57 | 1,14–1,11 | +0,04 | −0,01 (−0,1) | −1 pe | −11 pe | svag |
+| Stark mot fasta | 98 | 1,23–1,29 | +0,00 | −0,05 (−0,4) | −4 pe | +1 pe | svag |
+| Medel mot fasta | 114 | 1,02–1,29 | −0,02 | −0,07 (−0,7) | +4 pe | −7 pe | ✔ samma håll |
+| Svag mot fasta | 63 | 1,68–1,10 | +0,27 | +0,21 (1,5) | +1 pe | +3 pe | svag |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
+
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 5 | 2-2-1 | 1,60 | +0,07 |
+| Efter uppehåll sedan 2023 | 0 | – | – | – |
+| Övriga matcher | 408 | 160-109-139 | 1,44 | +0,08 |
+
+Hela ligan efter uppehåll: 0,00 mot marknaden (n 84). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2022-12-02 | Morecambe - Exeter | 1-1 O | +0,16 |
+| 2021-11-13 | Exeter - Oldham | 2-1 V | +1,01 |
+| 2019-11-16 | Exeter - Cheltenham | 0-0 O | −0,65 |
+| 2017-12-09 | Colchester - Exeter | 3-1 F | −1,52 |
+| 2017-11-11 | Exeter - Grimsby | 2-0 V | +1,36 |
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -61,41 +112,44 @@ Form (äldst → senast): FVFOOFOF · senaste match 2026-09-26
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): Tranmere 0,57 p/match (−0,97), Northampton 0,83 p/match (−0,58), Cheltenham 1,00 p/match (−0,54), Walsall 1,14 p/match (−0,48), Port Vale 1,14 p/match (−0,19).
+
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Matt Taylor. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Jack Bycroft | GK | 25 | England | 181 k€ | 7,21 | 0 | 0 | 0/0 |  |
+| 1 | Jack Bycroft | GK | 25 | England | 149 k€ | 7,22 | 0 | 0 | 0/0 |  |
 | 22 | Frankie Phillips | GK | 20 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Lakyle Samuel | RB,RWB | 20 | England | 737 k€ | 6,55 | 0 | 0 | 0/0 |  |
-| 3 | Luca Woodhouse | CB,LB,LWB | 22 | England | 309 k€ | 7,38 | 0 | 1 | 0/0 |  |
-| 4 | Ed Turns | CB | 23 | Wales | 206 k€ | – | 0 | 0 | 0/0 |  |
-| 5 | Jack Fitzwater | CB | 29 | England | 184 k€ | 7,59 | 2 | 0 | 1/0 |  |
-| 6 | Jack Taylor | CB,LB | 21 | England | – | 6,57 | 0 | 0 | 0/0 |  |
-| 40 | Edward James | CB | 21 | Wales | 240 k€ | 6,99 | 0 | 0 | 1/0 |  |
+| 2 | Lakyle Samuel | RB,RWB | 20 | England | 590 k€ | 6,66 | 0 | 0 | 0/0 |  |
+| 3 | Luca Woodhouse | CB,LB,LWB | 22 | England | 247 k€ | 7,49 | 0 | 1 | 1/0 |  |
+| 4 | Ed Turns | CB | 23 | Wales | 195 k€ | – | 0 | 0 | 0/0 |  |
+| 5 | Jack Fitzwater | CB | 29 | England | 147 k€ | 7,66 | 2 | 0 | 1/0 |  |
+| 6 | Jack Taylor | CB,LB | 21 | England | – | 6,98 | 0 | 0 | 0/0 |  |
+| 40 | Edward James | CB | 21 | Wales | 199 k€ | 6,99 | 0 | 0 | 1/0 |  |
 | 43 | Tobias Alsop | Defender | 17 | England | – | – | 0 | 0 | 0/0 |  |
 | 46 | Louie Cayless | CB | 18 | England | – | – | 0 | 0 | 0/0 |  |
 | 47 | Liam Cartwright | Defender | 18 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 7 | Gwion Edwards | LM,LWB,LW,RW,RM,CM,RWB | 33 | Wales | 72 k€ | 6,80 | 1 | 1 | 2/0 |  |
-| 8 | Taylor Perry | CDM,CM,CAM | 25 | England | 251 k€ | 6,21 | 0 | 0 | 1/0 |  |
-| 12 | Reece Cole | CAM | 28 | England | 177 k€ | 6,96 | 1 | 0 | 1/0 |  |
-| 14 | Harry Kite | CM,CDM | 26 | England | 210 k€ | – | 0 | 0 | 0/0 |  |
-| 16 | Charlie Cummins | CDM,CM | 21 | Ireland | 287 k€ | 6,99 | 0 | 0 | 1/0 |  |
-| 18 | Liam Oakes | LWB,CDM,CM | 19 | England | 463 k€ | – | 0 | 0 | 0/0 |  |
-| 23 | Ethan Sutherland | LWB,LM,LB,LW | 20 | Scotland | – | 6,33 | 0 | 0 | 0/0 |  |
-| 24 | Vincent Harper | LM,LW,LWB,LB | 26 | Kenya | 182 k€ | 6,96 | 0 | 0 | 1/0 |  |
-| 31 | Jake Doyle-Hayes | CDM,CM | 27 | Ireland | 151 k€ | 6,63 | 0 | 0 | 2/0 |  |
+| 7 | Gwion Edwards | LM,LWB,LW,RW,RM,CM,RWB | 33 | Wales | 90 k€ | 6,78 | 1 | 1 | 2/0 |  |
+| 8 | Taylor Perry | CDM,CM,CAM | 25 | England | 302 k€ | 6,36 | 0 | 0 | 1/0 |  |
+| 12 | Reece Cole | CAM | 28 | England | 111 k€ | 6,96 | 1 | 0 | 1/0 |  |
+| 14 | Harry Kite | CM,CDM | 26 | England | 208 k€ | – | 0 | 0 | 0/0 |  |
+| 16 | Charlie Cummins | CDM,CM | 21 | Ireland | 205 k€ | 7,03 | 0 | 0 | 2/0 |  |
+| 18 | Liam Oakes | LWB,CDM,CM | 19 | England | 378 k€ | 6,01 | 0 | 0 | 0/0 |  |
+| 20 | George Birch | CM | 20 | England | – | 6,37 | 0 | 1 | 0/0 |  |
+| 23 | Ethan Sutherland | LWB,LM,LB,LW | 20 | Scotland | – | 6,36 | 0 | 0 | 0/0 |  |
+| 24 | Vincent Harper | LM,LW,LWB,LB | 26 | Kenya | 154 k€ | 6,96 | 0 | 0 | 1/0 |  |
+| 25 | Anthony Scully | CAM,LW,CM | 27 | Ireland | 160 k€ | 7,88 | 1 | 0 | 0/0 |  |
+| 31 | Jake Doyle-Hayes | CDM,CM | 27 | Ireland | 121 k€ | 6,71 | 0 | 0 | 2/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 10 | Josh Gordon | ST,CAM | 31 | England | 162 k€ | 6,36 | 0 | 0 | 2/0 |  |
-| 11 | Andrew Oluwabori | RW,LW,RM | 24 | England | 184 k€ | 5,96 | 0 | 1 | 0/0 |  |
-| 15 | Ajay Matthews | ST | 20 | England | 674 k€ | 5,61 | 0 | 0 | 0/0 |  |
-| 19 | Sonny Cox | CAM,ST | 21 | England | 287 k€ | 6,06 | 0 | 0 | 0/0 |  |
-| 20 | George Birch | RW | 20 | England | – | 6,10 | 0 | 0 | 0/0 |  |
+| 10 | Josh Gordon | ST,CAM | 31 | England | 199 k€ | 6,37 | 0 | 0 | 2/0 |  |
+| 11 | Andrew Oluwabori | LW,RM,RW | 25 | England | 172 k€ | 5,96 | 0 | 1 | 0/0 |  |
+| 15 | Ajay Matthews | ST | 20 | England | 544 k€ | 5,61 | 0 | 0 | 0/0 |  |
+| 19 | Sonny Cox | CAM,ST | 21 | England | 248 k€ | 6,06 | 0 | 0 | 0/0 |  |
 | 32 | Danny Rose | ST | 32 | England | – | 6,34 | 0 | 0 | 0/0 |  |
 
 Har lämnat truppen sedan vi började spara (2): Kevin McDonald (senast 2026-09-29), Pedro Borges (senast 2026-09-29).

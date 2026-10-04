@@ -1,10 +1,11 @@
 # Wrexham (Championship) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
-- Inget som avviker från marknaden. Följ oddsen.
+- Spelstil 2025/26: Balanserat, Blandat, Lågpress, Medel på fasta, Medel mot fasta. Bäst mot Blandat (+0,44, stabilt), Farlig på fasta (+0,37, samma håll i båda halvorna men svagt), Stark mot fasta (+0,31, samma håll i båda halvorna men svagt). Svårast mot Bollinnehav (−0,41, stabilt), Svag på fasta (−0,39, samma håll i båda halvorna men svagt), Kortpass (−0,24, samma håll i båda halvorna men svagt). Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2025/26: 0,35 mål för per match (xG 0,32), 0,30 emot (xG 0,23), 4,5 hörnor.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -26,6 +27,54 @@ Form (äldst → senast): OOFVOOFV · senaste match 2026-09-19
 | 2026/27 | CH | 8 | 1,25 | +0,03 (−0,35 / +0,40) | 50 % (27 %) | 1,13–1,50 | 1,20–1,45* | 1,25 |
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/CH.md#wrexham) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2025/26: **Balanserat, Blandat, Lågpress, Medel på fasta, Medel mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026/27 | 8 | 0,25 | 0,31 | 0,50 | 0,33 | 4,8 |
+| 2025/26 | 46 | 0,35 | 0,32 | 0,30 | 0,23 | 4,5 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Backar hem | 30 | 1,53–1,07 | +0,50 | +0,21 (0,9) | −7 pe | +1 pe | ✔ samma håll |
+| Balanserat | 37 | 1,57–1,08 | +0,48 | +0,19 (1,0) | −3 pe | +4 pe | ✔ samma håll |
+| Bollinnehav | 33 | 1,24–1,18 | −0,13 | −0,41 (−2,2) | +15 pe | −3 pe | ⚑ stabil |
+| Kortpass | 61 | 1,39–1,28 | +0,05 | −0,24 (−1,6) | +8 pe | +1 pe | ✔ samma håll |
+| Blandat | 30 | 1,50–0,83 | +0,72 | +0,44 (2,1) | −1 pe | −3 pe | ⚑ stabil |
+| Direktspel | 9 | 1,67–0,89 | +0,44 | +0,16 (0,3) | −28 pe | +11 pe | svag |
+| Lågpress | 34 | 1,53–1,56 | +0,15 | −0,14 (−0,6) | +6 pe | +10 pe | ✔ samma håll |
+| Mellanpress | 34 | 1,53–1,00 | +0,50 | +0,22 (1,1) | −1 pe | +0 pe | svag |
+| Högpress | 32 | 1,28–0,75 | +0,19 | −0,09 (−0,4) | +1 pe | −9 pe | svag |
+| Svag på fasta | 26 | 1,38–1,27 | −0,11 | −0,39 (−1,9) | +31 pe | −10 pe | ✔ samma håll |
+| Medel på fasta | 53 | 1,49–1,04 | +0,33 | +0,05 (0,3) | −5 pe | +4 pe | svag |
+| Farlig på fasta | 21 | 1,43–1,10 | +0,65 | +0,37 (1,4) | −18 pe | +6 pe | ✔ samma håll |
+| Stark mot fasta | 28 | 1,61–1,04 | +0,59 | +0,31 (1,3) | −6 pe | +8 pe | ✔ samma håll |
+| Medel mot fasta | 48 | 1,52–0,94 | +0,29 | +0,01 (0,0) | +6 pe | −4 pe | svag |
+| Svag mot fasta | 24 | 1,13–1,54 | −0,10 | −0,38 (−1,6) | +2 pe | +0 pe | ✔ samma håll |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
+
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 4 | 0-2-2 | 0,50 | −0,29 |
+| Efter uppehåll sedan 2023 | 4 | 0-2-2 | 0,50 | −0,29 |
+| Övriga matcher | 142 | 74-37-31 | 1,82 | +0,26 |
+
+Hela ligan efter uppehåll: +0,01 mot marknaden (n 766). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2026-04-03 | West Brom - Wrexham | 2-2 O | +0,62 |
+| 2025-11-22 | Ipswich - Wrexham | 0-0 O | +1,19 |
+| 2025-10-18 | Stoke - Wrexham | 1-0 F | −1,32 |
+| 2025-09-13 | Wrexham - QPR | 1-3 F | −1,65 |
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -82,46 +131,46 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-09-05 | Stryk 4969 | Swansea - Wrexham | X | 24 % | 30 % |
 | 2026-08-22 | Stryk 4967 | Wrexham - Watford | X | 62 % | 53 % |
 
-## Trupp (FotMob, hämtad 2026-09-29)
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Phil Parkinson. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Max Cleworth (skadad, åter Early October 2026), Liberato Cacace (skadad, åter Early October 2026), George Thomason (skadad, åter Early October 2026), Oliver Rathbone (skadad, åter Early October 2026), Sebastian Revan (skadad, åter Early October 2026), Nathan Broadhead (skadad, åter Early October 2026)
+**Skadade/borta nu:** Max Cleworth (skadad, åter Mid October 2026), Liberato Cacace (osäker), George Thomason (osäker), Oliver Rathbone (skadad, åter Mid October 2026), Sebastian Revan (skadad, åter Mid October 2026), Nathan Broadhead (skadad, åter Mid October 2026)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 21 | Danny Ward | GK | 33 | Wales | 335 k€ | – | 0 | 0 | 0/0 |  |
-| 22 | Anthony Patterson | GK | 26 | England | 9,3 M€ | 6,67 | 0 | 0 | 0/0 |  |
+| 21 | Danny Ward | GK | 33 | Wales | 268 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Anthony Patterson | GK | 26 | England | 10,5 M€ | 6,67 | 0 | 0 | 0/0 |  |
 | 25 | Callum Burton | GK | 30 | England | 277 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Callum Doyle | CB | 22 | England | 9,7 M€ | 7,29 | 1 | 0 | 0/0 |  |
-| 3 | Jacques Ekomié | LB,LWB,LM | 23 | Gabon | 2,1 M€ | 7,18 | 2 | 0 | 0/0 |  |
-| 4 | Max Cleworth | CB | 24 | Wales | 5,0 M€ | 7,47 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
-| 5 | Dominic Hyam | CB | 30 | Scotland | 1,0 M€ | 6,80 | 0 | 0 | 3/0 |  |
-| 6 | Joe Worrall | CB | 29 | England | 1,6 M€ | 4,95 | 0 | 0 | 0/0 |  |
+| 2 | Callum Doyle | CB | 23 | England | 16,6 M€ | 7,29 | 1 | 0 | 0/0 |  |
+| 3 | Jacques Ekomié | LB,LWB,LM | 23 | Gabon | 5,6 M€ | 7,18 | 2 | 0 | 0/0 |  |
+| 4 | Max Cleworth | CB | 24 | Wales | 10,5 M€ | 7,47 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 5 | Dominic Hyam | CB | 30 | Scotland | 1,2 M€ | 6,80 | 0 | 0 | 3/0 |  |
+| 6 | Joe Worrall | CB | 29 | England | 1,3 M€ | 4,95 | 0 | 0 | 0/0 |  |
 | 26 | Zak Vyner | CB,CDM,CM | 29 | Kenya | 2,0 M€ | 6,58 | 0 | 0 | 0/0 |  |
 | 30 | Daniel Imray | RB,RWB,RM,RW | 23 | England | – | 6,71 | 1 | 2 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 8 | Ben Whiteman | CM,CDM,CAM | 30 | England | 1,3 M€ | 6,87 | 0 | 1 | 2/0 |  |
-| 10 | Josh Windass | CAM,ST,RW | 32 | England | 843 k€ | 6,60 | 0 | 1 | 0/0 |  |
+| 8 | Ben Whiteman | CM,CDM,CAM | 30 | England | 1,5 M€ | 6,87 | 0 | 1 | 2/0 |  |
+| 10 | Josh Windass | CAM,ST,RW | 32 | England | 886 k€ | 6,60 | 0 | 1 | 0/0 |  |
 | 12 | Issa Kaboré | RWB,RM,RB | 25 | Burkina Faso | 2,6 M€ | 6,83 | 0 | 1 | 1/0 |  |
-| 13 | Liberato Cacace | LWB,LB,LM | 26 | New Zealand | 1,9 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
-| 14 | George Thomason | LWB,LM,CM | 25 | England | 1,8 M€ | 7,01 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
-| 15 | George Dobson | CDM,CM,CAM | 28 | England | 1,1 M€ | 6,56 | 0 | 0 | 0/0 |  |
-| 17 | Callum O'Hare | CAM,LM,LW | 28 | England | 2,7 M€ | 6,95 | 1 | 0 | 0/0 |  |
-| 18 | Ben Sheaf | CDM,CM | 28 | England | 4,8 M€ | 6,78 | 0 | 0 | 0/0 |  |
-| 20 | Oliver Rathbone | CAM,CM | 29 | England | 661 k€ | 6,68 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
-| 23 | Sebastian Revan | LWB | 23 | England | – | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
-| 27 | Lewis O'Brien | CAM,CDM,CM | 27 | England | 3,4 M€ | 6,96 | 0 | 1 | 0/0 |  |
-| 33 | Nathan Broadhead | CAM,ST,CM | 28 | Wales | 4,6 M€ | 6,95 | 0 | 0 | 1/0 | skadad, åter Early October 2026 |
+| 13 | Liberato Cacace | LWB,LB,LM | 26 | New Zealand | 1,9 M€ | – | 0 | 0 | 0/0 | osäker |
+| 14 | George Thomason | LWB,LM,CM | 25 | England | 2,1 M€ | 7,01 | 0 | 0 | 0/0 | osäker |
+| 15 | George Dobson | CDM,CM,CAM | 28 | England | 1,2 M€ | 6,56 | 0 | 0 | 0/0 |  |
+| 17 | Callum O'Hare | CAM,LM,LW | 28 | England | 4,2 M€ | 6,95 | 1 | 0 | 0/0 |  |
+| 18 | Ben Sheaf | CDM,CM | 28 | England | 5,3 M€ | 6,78 | 0 | 0 | 0/0 |  |
+| 20 | Oliver Rathbone | CAM,CM | 29 | England | 727 k€ | 6,68 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 23 | Sebastian Revan | LWB | 23 | England | – | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 27 | Lewis O'Brien | CAM,CDM,CM | 27 | England | 4,7 M€ | 6,96 | 0 | 1 | 0/0 |  |
+| 33 | Nathan Broadhead | CAM,ST,CM | 28 | Wales | 6,1 M€ | 6,95 | 0 | 0 | 1/0 | skadad, åter Mid October 2026 |
 | 34 | Aaron James | RWB | 21 | Wales | – | – | 0 | 0 | 0/0 |  |
-| 37 | Matthew James | CDM,CM | 35 | England | 266 k€ | 6,72 | 0 | 0 | 0/0 |  |
-| 47 | Ryan Longman | RWB,LWB,RM,RW,LM | 25 | England | 1,5 M€ | 6,25 | 0 | 0 | 0/0 |  |
+| 37 | Matthew James | CDM,CM | 35 | England | 322 k€ | 6,72 | 0 | 0 | 0/0 |  |
+| 47 | Ryan Longman | RWB,RM,LWB,RW,LM | 25 | England | 1,6 M€ | 6,25 | 0 | 0 | 0/0 |  |
 | 98 | Joe Rees | Midfielder | 18 | Wales | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 11 | Bailey Cadamarteri | ST,CAM | 21 | Jamaica | 2,1 M€ | 5,98 | 0 | 0 | 1/0 |  |
 | 19 | Kieffer Moore | ST | 34 | Wales | 1,1 M€ | 7,03 | 3 | 0 | 1/0 |  |
-| 28 | Sam Smith | ST | 28 | England | 955 k€ | 6,11 | 0 | 0 | 0/0 |  |
+| 28 | Sam Smith | ST | 28 | England | 1,2 M€ | 6,11 | 0 | 0 | 0/0 |  |
 
 Har lämnat truppen sedan vi började spara (1): Elliot Lee (senast 2026-09-29).

@@ -1,6 +1,6 @@
 # Once Caldas (Primera A) – lärdomar
 
-Genererad 2026-09-29. Ligans fil: [COL](../../ligor/COL.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-10-04. Ligans fil: [COL](../../ligor/COL.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -40,42 +40,53 @@ Form senaste 8 (äldst → senast): OOVFFVFF · senaste match 2026-09-26
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+## Höghöjd
 
-Tränare: Hernán Herrera. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+Arenans höjd: ca 2150 m. Höghöjdsmatch = arena ≥ 1500 m och bortalaget från minst 1000 m lägre.
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Hemma mot låglandslag | 14 | 7-2-5 | 1,64 | – |
+| Hemma mot övriga | 25 | 13-5-7 | 1,76 | – |
+
+Ligan: se [COL](../../ligor/COL.md#höghöjd).
+
+## Trupp (FotMob, hämtad 2026-10-04)
+
+Tränare: –. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-|  | Jesús Camargo | GK | 28 | Venezuela | 244 k€ | – | 0 | 0 | 0/0 |  |
+|  | Jesús Camargo | GK | 28 | Venezuela | 485 k€ | – | 0 | 0 | 0/0 |  |
 |  | Mathias Gonzalez | Keeper | 16 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 25 | Esteban Gallego | Keeper | 21 | Colombia | – | – | 0 | 0 | 0/0 |  |
-| 99 | Joan Parra | GK | 26 | Colombia | 601 k€ | – | 0 | 0 | 0/0 |  |
+| 99 | Joan Parra | GK | 26 | Colombia | 841 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Jorge Cardona | CB,LB | 27 | Colombia | 324 k€ | – | 0 | 0 | 0/0 |  |
-| 3 | Andrés Correa | LB,LWB | 32 | Colombia | 267 k€ | – | 0 | 0 | 0/0 |  |
-| 4 | Efraín Navarro | CB | 27 | Colombia | 265 k€ | – | 0 | 0 | 0/0 |  |
-| 16 | Juan Castaño | CB | 28 | Colombia | 404 k€ | – | 0 | 0 | 0/0 |  |
-| 18 | Jáider Riquett | CB | 36 | Colombia | 240 k€ | – | 0 | 0 | 0/0 |  |
+| 2 | Jorge Cardona | CB,LB | 27 | Colombia | 338 k€ | – | 0 | 0 | 0/0 |  |
+| 3 | Andrés Correa | LB,LWB | 32 | Colombia | 318 k€ | – | 0 | 0 | 0/0 |  |
+| 4 | Efraín Navarro | CB | 27 | Colombia | 264 k€ | – | 0 | 0 | 0/0 |  |
+| 16 | Juan Castaño | CB | 28 | Colombia | 407 k€ | – | 0 | 0 | 0/0 |  |
+| 18 | Jáider Riquett | CB | 36 | Colombia | 241 k€ | – | 0 | 0 | 0/0 |  |
 | 22 | Juan Cuesta | RB,LB | 28 | Colombia | – | – | 0 | 0 | 0/0 |  |
-| 30 | Daniel Londoño | CB,LB | 31 | Colombia | 385 k€ | – | 0 | 0 | 0/0 |  |
+| 30 | Daniel Londoño | CB,LB | 31 | Colombia | 437 k€ | – | 0 | 0 | 0/0 |  |
 | 33 | Juan Patiño | LB | 28 | Colombia | 484 k€ | – | 0 | 0 | 0/0 |  |
 | 39 | Hian Rincon | Defender | 18 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 5 | Juan Nieto | CDM | 33 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 6 | Daniel Marmolejo | Midfielder | 22 | Colombia | – | – | 0 | 0 | 0/0 |  |
-| 15 | Jaime Alvarado | CM,CDM,ST | 27 | Colombia | 376 k€ | – | 0 | 0 | 0/0 |  |
+| 15 | Jaime Alvarado | CM,CDM,ST | 27 | Colombia | 334 k€ | – | 0 | 0 | 0/0 |  |
 | 19 | Tomas García | CM | 20 | Colombia | – | – | 0 | 0 | 0/0 |  |
-| 20 | Andrés Roa | CM,CAM,CDM,ST | 33 | Colombia | 296 k€ | – | 0 | 0 | 0/0 |  |
-| 23 | Andrés Colorado | CM,CDM,CAM | 27 | Colombia | 406 k€ | – | 0 | 0 | 0/0 |  |
+| 20 | Andrés Roa | CM,CAM,CDM,ST | 33 | Colombia | 304 k€ | – | 0 | 0 | 0/0 |  |
+| 23 | Andrés Colorado | CM,CDM,CAM | 27 | Colombia | 398 k€ | – | 0 | 0 | 0/0 |  |
 | 31 | Jorman Beltran | Midfielder | 19 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 36 | Rafael Acuña | Midfielder | 20 | Colombia | – | – | 0 | 0 | 0/0 |  |
-| 42 | Jader Quiñónes | CAM,CM,CDM | 25 | Colombia | 438 k€ | – | 0 | 0 | 0/0 |  |
+| 42 | Jader Quiñónes | CAM,CM,CDM | 25 | Colombia | 405 k€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 7 | Michael Barrios | RW,LW,RM,ST,LM | 35 | Colombia | 276 k€ | – | 0 | 0 | 0/0 |  |
-| 9 | Pipe Gómez | LW | 26 | Colombia | 532 k€ | – | 0 | 0 | 0/0 |  |
-| 14 | Jefry Zapata | RW,ST | 26 | Colombia | 772 k€ | – | 0 | 0 | 0/0 |  |
-| 17 | Dayro Moreno | ST,LW | 41 | Colombia | 353 k€ | – | 0 | 0 | 0/0 |  |
+| 7 | Michael Barrios | RW,LW,RM,ST,LM | 35 | Colombia | 286 k€ | – | 0 | 0 | 0/0 |  |
+| 9 | Pipe Gómez | LW | 26 | Colombia | 629 k€ | – | 0 | 0 | 0/0 |  |
+| 14 | Jefry Zapata | RW,ST | 26 | Colombia | 749 k€ | – | 0 | 0 | 0/0 |  |
+| 17 | Dayro Moreno | ST,LW | 41 | Colombia | 440 k€ | – | 0 | 0 | 0/0 |  |
 | 21 | Helieyker Guzman | LW | 19 | Colombia | – | – | 0 | 0 | 0/0 |  |
-| 28 | Mateo Zuleta | LW,LM,RM | 24 | Colombia | 937 k€ | – | 0 | 0 | 0/0 |  |
+| 28 | Mateo Zuleta | LW,LM,RM | 24 | Colombia | 906 k€ | – | 0 | 0 | 0/0 |  |
 | 29 | Edwin Torres | RW,LW | 28 | Colombia | – | – | 0 | 0 | 0/0 |  |

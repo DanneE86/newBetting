@@ -1,6 +1,6 @@
 # Varbergs BoIS FC (Superettan) – lärdomar
 
-Genererad 2026-09-29. Ligans fil: [SE2](../../ligor/SE2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-10-04. Ligans fil: [SE2](../../ligor/SE2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -40,7 +40,7 @@ Form senaste 8 (äldst → senast): FOFVOFVV · senaste match 2026-09-19
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Victor Salwen. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -48,34 +48,34 @@ Tränare: Victor Salwen. Betyg, mål och assist gäller innevarande säsong enli
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
 | 1 | Oliver Maartensson | Keeper | 17 | Sweden | – | – | 0 | 0 | 0/0 |  |
-| 1 | Oscar Ekman | GK | 27 | Sweden | 58 k€ | – | 0 | 1 | 0/0 |  |
-| 29 | Daniel Strindholm | GK | 24 | Sweden | 109 k€ | – | 0 | 0 | 0/0 |  |
+| 1 | Oscar Ekman | GK | 27 | Sweden | 50 k€ | – | 0 | 1 | 0/0 |  |
+| 29 | Daniel Strindholm | GK | 24 | Sweden | 134 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Gustav Broman | CB | 25 | Sweden | 166 k€ | – | 2 | 2 | 3/0 |  |
+| 2 | Gustav Broman | CB | 25 | Sweden | 230 k€ | – | 2 | 2 | 3/0 |  |
 | 3 | Hampus Zackrisson | CB | 32 | Sweden | 50 k€ | – | 0 | 0 | 0/0 |  |
-| 5 | Emil Hellman | LB | 25 | Sweden | 115 k€ | – | 0 | 1 | 3/0 |  |
-| 15 | Noah Johansson | RB,CM,CB | 23 | Sweden | 181 k€ | – | 1 | 5 | 3/0 |  |
-| 17 | Edvin Tellgren | CB | 21 | Sweden | 254 k€ | – | 2 | 2 | 2/0 |  |
+| 5 | Emil Hellman | LB | 25 | Sweden | 83 k€ | – | 0 | 1 | 3/0 |  |
+| 15 | Noah Johansson | RB,CM,CB | 23 | Sweden | 131 k€ | – | 1 | 5 | 3/0 |  |
+| 17 | Edvin Tellgren | CB | 21 | Sweden | 357 k€ | – | 2 | 2 | 2/0 |  |
 | 18 | Joakim Lindner | LB | 35 | Sweden | 50 k€ | – | 0 | 0 | 0/0 |  |
 | 22 | Niklas Dahlström | RB | 29 | Sweden | 50 k€ | – | 2 | 1 | 3/0 |  |
 | 40 | William Selvén | Defender | 18 | Sweden | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 8 | Albin Winbo | CM | 28 | Sweden | 50 k€ | – | 3 | 7 | 3/0 |  |
-| 10 | Axel Vidjeskog | CM | 25 | Finland | 60 k€ | – | 0 | 0 | 1/0 |  |
-| 14 | Oliver Alfonsi | ST | 23 | Sweden | 304 k€ | – | 1 | 1 | 0/0 |  |
+| 10 | Axel Vidjeskog | CM | 25 | Finland | 75 k€ | – | 0 | 0 | 1/0 |  |
+| 14 | Oliver Alfonsi | ST | 23 | Sweden | 213 k€ | – | 1 | 1 | 0/0 |  |
 | 16 | Anton Thorsson | LW | 27 | Sweden | 50 k€ | – | 0 | 1 | 0/0 |  |
-| 21 | Isak Vidjeskog | CM | 22 | Finland | 217 k€ | – | 4 | 3 | 5/0 |  |
-| 28 | Erion Sadiku | CM | 24 | Sweden | 117 k€ | – | 1 | 2 | 6/0 |  |
+| 21 | Isak Vidjeskog | CM | 22 | Finland | 138 k€ | – | 4 | 3 | 5/0 |  |
+| 28 | Erion Sadiku | CM | 24 | Sweden | 86 k€ | – | 1 | 2 | 6/0 |  |
 | 42 | Milan Kordik | Midfielder | 18 | Sweden | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 7 | Wilhelm Ärlig | RW | 26 | Sweden | 129 k€ | – | 8 | 2 | 1/0 |  |
-| 9 | Laorent Shabani | LW,RW | 27 | Sweden | 293 k€ | – | 0 | 1 | 0/0 |  |
-| 11 | Nuurdin Ali Mohudin | RW | 19 | Sweden | 280 k€ | – | 0 | 0 | 0/0 |  |
-| 12 | Lucas Kåhed | CM | 24 | Sweden | 280 k€ | – | 1 | 0 | 0/0 |  |
-| 19 | Jonathan Nilsson | LW | 24 | Sweden | 154 k€ | – | 5 | 1 | 1/0 |  |
+| 7 | Wilhelm Ärlig | RW | 26 | Sweden | 99 k€ | – | 8 | 2 | 1/0 |  |
+| 9 | Laorent Shabani | LW | 27 | Sweden | 285 k€ | – | 0 | 1 | 0/0 |  |
+| 11 | Nuurdin Ali Mohudin | RW | 19 | Sweden | 269 k€ | – | 0 | 0 | 0/0 |  |
+| 12 | Lucas Kåhed | CM | 24 | Sweden | 179 k€ | – | 1 | 0 | 0/0 |  |
+| 19 | Jonathan Nilsson | LW | 24 | Sweden | 177 k€ | – | 5 | 1 | 1/0 |  |
 | 20 | Olle Werner | LW | 21 | Sweden | – | – | 1 | 1 | 0/0 |  |
-| 23 | Lucas Sibelius | LM,LW,ST | 24 | Sweden | 175 k€ | – | 0 | 1 | 0/0 |  |
+| 23 | Lucas Sibelius | LM,LW,ST | 24 | Sweden | 181 k€ | – | 0 | 1 | 0/0 |  |
 | 24 | Oliver Brynéus | LW | 28 | Sweden | 50 k€ | – | 0 | 2 | 0/0 |  |
-| 49 | Shanyder Borgelin | ST | 24 | Haiti | 131 k€ | – | 7 | 1 | 2/0 |  |
+| 49 | Shanyder Borgelin | ST | 24 | Haiti | 117 k€ | – | 7 | 1 | 2/0 |  |
 
 Har lämnat truppen sedan vi började spara (1): Oliver Silverholt (senast 2026-09-29).

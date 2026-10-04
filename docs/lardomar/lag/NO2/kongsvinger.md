@@ -1,6 +1,6 @@
 # Kongsvinger (OBOS-ligaen) – lärdomar
 
-Genererad 2026-09-29. Ligans fil: [NO2](../../ligor/NO2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-10-04. Ligans fil: [NO2](../../ligor/NO2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -37,7 +37,7 @@ Form senaste 8 (äldst → senast): FVVVOVOV · senaste match 2026-09-20
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Johan Peter Vennberg. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -48,26 +48,26 @@ Tränare: Johan Peter Vennberg. Betyg, mål och assist gäller innevarande säso
 | 71 | Sayouba Mandé | GK | 33 | Ivory Coast | 148 k€ | – | 0 | 0 | 0/0 |  |
 | 93 | Aleksey Gorodovoy | GK | 33 | Russia | 70 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Victor Fors | LB,RB,RM | 27 | Eritrea | 168 k€ | – | 3 | 2 | 7/0 |  |
-| 3 | Sondre Norheim | CB | 29 | Norway | 162 k€ | – | 0 | 1 | 1/0 |  |
-| 5 | Daniel Lysgård | CB,RB | 27 | Norway | 94 k€ | – | 0 | 0 | 2/0 |  |
-| 6 | Adrian Aleksander Hansen | CB | 25 | Norway | 181 k€ | – | 0 | 0 | 0/0 |  |
-| 12 | Mapenda Mbow | CB | 22 | Senegal | 282 k€ | – | 1 | 0 | 4/0 |  |
-| 16 | Herman Jorsett-Udnæs | LB | 21 | Norway | 292 k€ | – | 2 | 2 | 0/1 |  |
+| 2 | Victor Fors | LB,RB,RM | 27 | Eritrea | 179 k€ | – | 3 | 2 | 7/0 |  |
+| 3 | Sondre Norheim | CB | 29 | Norway | 164 k€ | – | 0 | 1 | 1/0 |  |
+| 5 | Daniel Lysgård | CB,RB | 27 | Norway | 172 k€ | – | 0 | 0 | 2/0 |  |
+| 6 | Adrian Aleksander Hansen | CB | 25 | Norway | 196 k€ | – | 0 | 0 | 0/0 |  |
+| 12 | Mapenda Mbow | CB | 22 | Senegal | 272 k€ | – | 1 | 0 | 4/0 |  |
+| 16 | Herman Jorsett-Udnæs | LB | 21 | Norway | 208 k€ | – | 2 | 2 | 0/1 |  |
 | 17 | Mathias Berg Gjerstrøm | RB | 29 | Norway | 86 k€ | – | 0 | 0 | 1/0 |  |
-| 19 | Emil Adrendrup Nielsen | LB,RB | 26 | Denmark | 111 k€ | – | 0 | 0 | 1/0 |  |
-| 25 | Saadiq Faisal Elmi | LB | 25 | Somalia | 111 k€ | – | 0 | 1 | 0/0 |  |
-| 30 | Elias Berstad Tenden | Defender | 19 | Norway | 280 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | Emil Adrendrup Nielsen | LB,RB | 26 | Denmark | 134 k€ | – | 0 | 0 | 1/0 |  |
+| 25 | Saadiq Faisal Elmi | LB | 25 | Somalia | 95 k€ | – | 0 | 1 | 0/0 |  |
+| 30 | Elias Berstad Tenden | Defender | 19 | Norway | 238 k€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 8 | Andreas Dybevik | CM | 28 | Norway | 177 k€ | – | 10 | 1 | 4/0 |  |
-| 14 | Leon-Robin Juberg-Hovland | ST | 22 | Norway | 213 k€ | – | 0 | 0 | 0/0 |  |
-| 23 | Frederik Juul Christensen | CM | 26 | Denmark | 234 k€ | – | 6 | 1 | 2/0 |  |
+| 8 | Andreas Dybevik | CM | 28 | Norway | 180 k€ | – | 10 | 1 | 4/0 |  |
+| 14 | Leon-Robin Juberg-Hovland | ST | 22 | Norway | 161 k€ | – | 0 | 0 | 0/0 |  |
+| 23 | Frederik Juul Christensen | CM | 26 | Denmark | 215 k€ | – | 6 | 1 | 2/0 |  |
 | 27 | Mads Sande | CM | 28 | Norway | 109 k€ | – | 5 | 2 | 1/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 9 | Gabriel Johnson | ST | 24 | Sweden | 145 k€ | – | 0 | 1 | 0/0 |  |
-| 15 | Vetle Lysell | ST | 16 | Norway | 703 k€ | – | 2 | 0 | 0/0 |  |
-| 18 | Markus Flores | RW,ST | 21 | Norway | 417 k€ | – | 4 | 2 | 0/0 |  |
+| 9 | Gabriel Johnson | ST | 24 | Sweden | 139 k€ | – | 0 | 1 | 0/0 |  |
+| 15 | Vetle Lysell | ST | 16 | Norway | 578 k€ | – | 2 | 0 | 0/0 |  |
+| 18 | Markus Flores | RW,ST | 21 | Norway | 378 k€ | – | 4 | 2 | 0/0 |  |
 | 21 | Angelos Chaminta Ntiso | LW | 19 | Greece | – | – | 3 | 3 | 0/0 |  |
-| 22 | Ludvig Langrekken | ST,RW,RB | 27 | Norway | 154 k€ | – | 11 | 2 | 3/0 |  |
-| 28 | Rasmus Opdal Christiansen | RW,ST | 22 | Norway | 338 k€ | – | 10 | 2 | 0/0 |  |
+| 22 | Ludvig Langrekken | ST,RW,RB | 27 | Norway | 167 k€ | – | 11 | 2 | 3/0 |  |
+| 28 | Rasmus Opdal Christiansen | RW,ST | 22 | Norway | 231 k€ | – | 10 | 2 | 0/0 |  |
 | 29 | Philip Fjellman | CB | 18 | Norway | – | – | 0 | 0 | 0/0 |  |

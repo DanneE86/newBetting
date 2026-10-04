@@ -1,10 +1,10 @@
 # Coritiba (Brasileirão Série A) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [BR](../../ligor/BR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [BR](../../ligor/BR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
-- Inget som avviker från marknaden. Följ oddsen.
+- Svårt för: Flamengo RJ (1-0-6, 0,43 p/match, mot marknaden −0,30), Santos (1-1-5, 0,57 p/match, mot marknaden −0,44), Athletico-PR (1-2-5, 0,63 p/match, mot marknaden −0,41), Sao Paulo (0-5-3, 0,63 p/match, mot marknaden −0,27), Botafogo RJ (1-3-3, 0,86 p/match, mot marknaden −0,15), Internacional (1-3-3, 0,86 p/match, mot marknaden −0,13), Palmeiras (2-0-5, 0,86 p/match, mot marknaden +0,17), Corinthians (2-1-5, 0,88 p/match, mot marknaden −0,15), Bragantino (2-2-4, 1,00 p/match, mot marknaden +0,07), Atletico-MG (2-1-4, 1,00 p/match, mot marknaden +0,23), Fluminense (2-2-3, 1,14 p/match, mot marknaden +0,14). Där marknaden ligger nära noll är laget bara sämre i de mötena än annars, och oddsen vet redan om det.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -30,6 +30,23 @@ Form (äldst → senast): FVOVVFOF · senaste match 2026-09-20
 | 2022 | BR | 38 | 1,11 | −0,05 (+0,55 / −0,65) | 16 % (27 %) | 1,03–1,58 | – | – |
 | 2023 | BR | 38 | 0,79 | −0,21 (−0,36 / −0,06) | 16 % (26 %) | 1,08–1,92 | – | – |
 | 2026 | BR | 28 | 1,36 | +0,25 (−0,05 / +0,55) | 29 % (28 %) | 1,32–1,54 | – | – |
+
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 2 | 1-0-1 | 1,50 | +0,49 |
+| Efter uppehåll sedan 2023 | 1 | 1-0-0 | 3,00 | +1,97 |
+| Övriga matcher | 368 | 107-93-168 | 1,13 | −0,08 |
+
+Hela ligan efter uppehåll: −0,04 mot marknaden (n 58). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2026-03-12 | Corinthians - Coritiba | 0-2 V | +1,97 |
+| 2016-12-11 | Ponte Preta - Coritiba | 2-0 F | −0,99 |
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -57,7 +74,9 @@ Form (äldst → senast): FVOVVFOF · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): Flamengo RJ 0,43 p/match (−0,30), Santos 0,57 p/match (−0,44), Athletico-PR 0,63 p/match (−0,41), Sao Paulo 0,63 p/match (−0,27), Botafogo RJ 0,86 p/match (−0,15), Internacional 0,86 p/match (−0,13), Palmeiras 0,86 p/match (+0,17), Corinthians 0,88 p/match (−0,15), Bragantino 1,00 p/match (+0,07), Atletico-MG 1,00 p/match (+0,23), Fluminense 1,14 p/match (+0,14).
+
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Fernando Seabra. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -71,30 +90,30 @@ Tränare: Fernando Seabra. Betyg, mål och assist gäller innevarande säsong en
 | 22 | Pedro Rangel | GK | 26 | Brazil | 1,0 M€ | – | 0 | 0 | 0/0 |  |
 | 67 | Benassi | GK | 22 | Brazil | 580 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Tinga | RB | 33 | Brazil | 288 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
-| 3 | Maicon | CB | 38 | Brazil | 381 k€ | – | 0 | 0 | 0/0 |  |
-| 4 | Rodrigo Moledo | CB | 38 | Brazil | 235 k€ | – | 0 | 0 | 0/0 |  |
+| 2 | Tinga | RB | 33 | Brazil | 304 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 3 | Maicon | CB | 38 | Brazil | 406 k€ | – | 0 | 0 | 0/0 |  |
+| 4 | Rodrigo Moledo | CB | 38 | Brazil | 276 k€ | – | 0 | 0 | 0/0 |  |
 | 6 | Felipe Jonatan | LB,LWB | 28 | Brazil | 1,5 M€ | – | 0 | 0 | 0/0 |  |
-| 14 | Fabricio Bustos | RB | 30 | Argentina | 1,4 M€ | – | 0 | 0 | 0/0 |  |
-| 23 | Tiago Cóser | CB | 22 | Brazil | 1,1 M€ | – | 0 | 0 | 0/0 |  |
-| 26 | Bruno Melo | LB,CB | 33 | Brazil | 397 k€ | – | 0 | 0 | 0/0 |  |
+| 14 | Fabricio Bustos | RB | 30 | Argentina | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 23 | Tiago Cóser | CB | 22 | Brazil | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 26 | Bruno Melo | LB,CB | 33 | Brazil | 384 k€ | – | 0 | 0 | 0/0 |  |
 | 55 | Jacy | CB | 29 | Brazil | 1,7 M€ | – | 0 | 0 | 0/0 |  |
-| 66 | Rodrigo Gelado | LB | 23 | Brazil | 778 k€ | – | 0 | 0 | 0/0 |  |
+| 66 | Rodrigo Gelado | LB | 23 | Brazil | 437 k€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 5 | Nicolás Fonseca | CDM,CM | 27 | Uruguay | 2,2 M€ | – | 0 | 0 | 0/0 |  |
-| 10 | Josué | CAM,CM | 36 | Portugal | 335 k€ | – | 0 | 0 | 0/0 |  |
-| 17 | Brian Ocampo | LM,LW | 27 | Uruguay | 975 k€ | – | 0 | 0 | 0/0 | skadad, åter About a week |
-| 19 | Sebastián Gómez | CDM,CAM,CM | 30 | Colombia | 1,3 M€ | – | 0 | 0 | 0/0 |  |
-| 21 | Thiago Santos | CDM | 37 | Brazil | 321 k€ | – | 0 | 0 | 0/0 |  |
-| 25 | Richard | CDM | 32 | Brazil | 280 k€ | – | 0 | 0 | 0/0 |  |
-| 36 | Vini Paulista | CDM,RW | 25 | Brazil | 1,1 M€ | – | 0 | 0 | 0/0 |  |
-| 39 | Gustavo | CM | 24 | Brazil | 577 k€ | – | 0 | 0 | 0/0 |  |
+| 5 | Nicolás Fonseca | CDM,CM | 27 | Uruguay | 2,1 M€ | – | 0 | 0 | 0/0 |  |
+| 10 | Josué | CAM | 36 | Portugal | 369 k€ | – | 0 | 0 | 0/0 |  |
+| 17 | Brian Ocampo | LM,LW | 27 | Uruguay | 987 k€ | – | 0 | 0 | 0/0 | skadad, åter About a week |
+| 19 | Sebastián Gómez | CDM,CAM | 30 | Colombia | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 21 | Thiago Santos | CDM | 37 | Brazil | 303 k€ | – | 0 | 0 | 0/0 |  |
+| 25 | Richard | CDM | 32 | Brazil | 282 k€ | – | 0 | 0 | 0/0 |  |
+| 36 | Vini Paulista | CDM,RW | 25 | Brazil | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 39 | Gustavo | CM | 24 | Brazil | 654 k€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 |  | Éberth | ST | 23 | Brazil | 392 k€ | – | 0 | 0 | 0/0 |  |
-| 20 | Keno | LW | 37 | Brazil | 299 k€ | – | 0 | 0 | 0/0 |  |
+| 20 | Keno | LW | 37 | Brazil | 300 k€ | – | 0 | 0 | 0/0 |  |
 | 28 | Fabinho | RW | 26 | Brazil | 948 k€ | – | 0 | 0 | 0/0 |  |
-| 32 | Pedro Rocha | ST,RW | 31 | Brazil | 1,1 M€ | – | 0 | 0 | 0/0 |  |
-| 77 | Breno Lopes | LW,CAM,ST,RW | 30 | Brazil | 2,1 M€ | – | 0 | 0 | 0/0 |  |
+| 32 | Pedro Rocha | ST,RW | 32 | Brazil | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 77 | Breno Lopes | LW,CAM,ST,RW | 30 | Brazil | 2,2 M€ | – | 0 | 0 | 0/0 |  |
 | 78 | Renato Marques | ST | 22 | Brazil | 1,3 M€ | – | 0 | 0 | 0/0 |  |
 | 99 | Rodrigo Rodrigues | ST | 30 | Brazil | 323 k€ | – | 0 | 0 | 0/0 |  |
 

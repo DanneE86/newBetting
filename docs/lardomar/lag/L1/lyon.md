@@ -1,10 +1,14 @@
 # Lyon (Ligue 1) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [L1](../../ligor/L1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [L1](../../ligor/L1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Stark historik mot Angers (+0,50 p/match mot marknaden, 13 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Efter landslagsuppehåll: 1,75 poäng per match mot 1,76 annars (15-11-6 på 32 matcher), mot marknaden +0,07 mot −0,03. Sedan 2023: 1-6-5. Ingen skillnad värd att spela på.
+- Spelstil 2025/26: Balanserat, Kortpass, Lågpress, Medel på fasta, Svag mot fasta. Bäst mot Farlig på fasta (+0,22, samma håll i båda halvorna men svagt), Svag på fasta (+0,09, samma håll i båda halvorna men svagt), Stark mot fasta (+0,09, svagt). Svårast mot Medel på fasta (−0,16, svagt), Svag mot fasta (−0,11, samma håll i båda halvorna men svagt), Balanserat (−0,07, svagt). Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2025/26: 0,23 mål för per match (xG 0,30), 0,27 emot (xG 0,23), 5,9 hörnor.
+- Svårt för: Paris SG (4-1-11, 0,81 p/match, mot marknaden +0,06), Lens (4-3-5, 1,25 p/match, mot marknaden −0,33), Brest (5-5-3, 1,54 p/match, mot marknaden −0,34), Lorient (4-4-2, 1,60 p/match, mot marknaden −0,36). Där marknaden ligger nära noll är laget bara sämre i de mötena än annars, och oddsen vet redan om det.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -30,6 +34,82 @@ Form (äldst → senast): VFFVOVOV · senaste match 2026-09-19
 | 2024/25 | L1 | 34 | 1,68 | +0,00 (+0,16 / −0,16) | 18 % (23 %) | 1,91–1,35 | 1,91–1,42 | 1,63 |
 | 2025/26 | L1 | 34 | 1,76 | +0,17 (+0,40 / −0,06) | 18 % (25 %) | 1,56–1,18 | 1,62–1,41 | 1,51 |
 | 2026/27 | L1 | 5 | 2,20 | +0,58 (+0,32 / +0,97) | 40 % (24 %) | 2,00–0,40 | 1,99–1,18 | 1,75 |
+
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/L1.md#lyon) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2025/26: **Balanserat, Kortpass, Lågpress, Medel på fasta, Svag mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026/27 | 5 | 0,40 | 0,20 | 0,00 | – | 5,0 |
+| 2025/26 | 34 | 0,23 | 0,30 | 0,27 | 0,23 | 5,9 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Backar hem | 70 | 1,87–1,20 | +0,02 | +0,07 (0,5) | −1 pe | +3 pe | svag |
+| Balanserat | 111 | 1,53–1,31 | −0,12 | −0,07 (−0,6) | −2 pe | −4 pe | svag |
+| Bollinnehav | 69 | 1,88–1,30 | +0,00 | +0,05 (0,3) | −4 pe | +11 pe | svag |
+| Kortpass | 62 | 1,55–1,23 | −0,05 | +0,00 (0,0) | −2 pe | −1 pe | svag |
+| Blandat | 118 | 1,75–1,38 | −0,06 | −0,01 (−0,1) | −5 pe | +5 pe | svag |
+| Direktspel | 70 | 1,84–1,14 | −0,03 | +0,01 (0,1) | +2 pe | +1 pe | svag |
+| Lågpress | 68 | 1,76–1,13 | −0,03 | +0,01 (0,1) | −1 pe | +5 pe | ✔ samma håll |
+| Mellanpress | 113 | 1,68–1,27 | −0,08 | −0,03 (−0,2) | +2 pe | +0 pe | svag |
+| Högpress | 69 | 1,75–1,43 | −0,01 | +0,03 (0,2) | −11 pe | +2 pe | svag |
+| Svag på fasta | 63 | 1,83–1,21 | +0,05 | +0,09 (0,6) | +2 pe | +6 pe | ✔ samma håll |
+| Medel på fasta | 124 | 1,60–1,36 | −0,21 | −0,16 (−1,4) | −1 pe | −5 pe | svag |
+| Farlig på fasta | 63 | 1,86–1,17 | +0,17 | +0,22 (1,4) | −10 pe | +12 pe | ✔ samma håll |
+| Stark mot fasta | 68 | 1,88–1,19 | +0,04 | +0,09 (0,6) | −6 pe | +1 pe | svag |
+| Medel mot fasta | 133 | 1,64–1,32 | −0,05 | −0,00 (−0,0) | −3 pe | +3 pe | svag |
+| Svag mot fasta | 49 | 1,73–1,27 | −0,16 | −0,11 (−0,6) | +6 pe | +3 pe | ✔ samma håll |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
+
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 32 | 15-11-6 | 1,75 | +0,07 |
+| Efter uppehåll sedan 2023 | 12 | 1-6-5 | 0,75 | −0,64 |
+| Övriga matcher | 293 | 151-62-80 | 1,76 | −0,03 |
+
+Hela ligan efter uppehåll: 0,00 mot marknaden (n 626). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2026-04-05 | Angers - Lyon | 0-0 O | −0,24 |
+| 2025-11-23 | Auxerre - Lyon | 0-0 O | −0,01 |
+| 2025-10-18 | Nice - Lyon | 3-2 F | −1,55 |
+| 2025-09-14 | Rennes - Lyon | 3-1 F | −1,53 |
+| 2025-03-28 | Strasbourg - Lyon | 4-2 F | −1,65 |
+| 2024-11-23 | Reims - Lyon | 1-1 O | +0,19 |
+| 2024-10-20 | Le Havre - Lyon | 0-4 V | +0,85 |
+| 2024-09-15 | Lens - Lyon | 0-0 O | +0,85 |
+| 2024-03-30 | Lyon - Reims | 1-1 O | −0,67 |
+| 2023-11-26 | Lyon - Lille | 0-2 F | −1,24 |
+| 2023-10-22 | Lyon - Clermont | 1-2 F | −1,78 |
+| 2023-09-17 | Lyon - Le Havre | 0-0 O | −0,92 |
+| 2023-04-02 | Paris SG - Lyon | 0-1 V | +2,20 |
+| 2022-12-28 | Brest - Lyon | 2-4 V | +1,16 |
+| 2022-10-02 | Lens - Lyon | 1-0 F | −1,48 |
+| 2022-04-03 | Lyon - Angers | 3-2 V | +0,70 |
+| 2021-10-16 | Lyon - Monaco | 2-0 V | +1,33 |
+| 2021-09-12 | Lyon - Strasbourg | 3-1 V | +0,94 |
+| 2021-04-03 | Lens - Lyon | 1-1 O | −0,15 |
+| 2020-11-22 | Angers - Lyon | 0-1 V | +0,96 |
+| 2020-10-18 | Strasbourg - Lyon | 2-3 V | +0,84 |
+| 2019-11-23 | Lyon - Nice | 2-1 V | +0,94 |
+| 2019-10-19 | Lyon - Dijon | 0-0 O | −1,32 |
+| 2019-09-13 | Amiens - Lyon | 2-2 O | −0,05 |
+| 2019-03-29 | Rennes - Lyon | 0-1 V | +0,91 |
+| 2018-11-23 | Lyon - St Etienne | 1-0 V | +0,96 |
+| 2018-10-19 | Lyon - Nimes | 2-0 V | +0,62 |
+| 2018-09-15 | Caen - Lyon | 2-2 O | −0,35 |
+| 2018-04-01 | Lyon - Toulouse | 2-0 V | +0,73 |
+| 2017-11-19 | Lyon - Montpellier | 0-0 O | −1,12 |
+| 2017-10-13 | Lyon - Monaco | 3-2 V | +1,23 |
+| 2017-09-10 | Lyon - Guingamp | 2-1 V | +0,78 |
 
 ## Nyckelspelare (Understat, 2024/25–)
 
@@ -69,6 +149,8 @@ Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: s
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): Paris SG 0,81 p/match (+0,06), Lens 1,25 p/match (−0,33), Brest 1,54 p/match (−0,34), Lorient 1,60 p/match (−0,36).
+
 ## Stryktipset / Europatipset
 
 | Datum | Spel | Match | Utfall | Folket på laget | Vår procent |
@@ -90,7 +172,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-09-14 | Europa 2505 | Rennes - Lyon | 1 | 36 % | 34 % |
 | 2025-08-31 | Europa 2501 | Lyon - Marseille | 1 ✓ | 33 % | 34 % |
 
-## Trupp (FotMob, hämtad 2026-09-29)
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Paulo Fonseca. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -99,35 +181,35 @@ Tränare: Paulo Fonseca. Betyg, mål och assist gäller innevarande säsong enli
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Dominik Greif | GK | 29 | Slovakia | 4,5 M€ | 7,52 | 0 | 0 | 0/0 |  |
-| 25 | Justin Bengui | GK | 21 | France | 658 k€ | – | 0 | 0 | 0/0 |  |
-| 40 | Rémy Descamps | GK | 30 | France | 1,2 M€ | 7,51 | 0 | 0 | 0/0 |  |
+| 1 | Dominik Greif | GK | 29 | Slovakia | 10,1 M€ | 7,52 | 0 | 0 | 0/0 |  |
+| 25 | Justin Bengui | GK | 21 | France | 738 k€ | – | 0 | 0 | 0/0 |  |
+| 40 | Rémy Descamps | GK | 30 | France | 1,1 M€ | 7,51 | 0 | 0 | 0/0 |  |
 | 50 | Lassine Diarra | GK | 23 | Mali | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 3 | Nicolás Tagliafico | LB,CB | 34 | Argentina | 1,9 M€ | 6,81 | 0 | 0 | 0/0 | skadad, åter A few weeks |
-| 13 | Zachary Athekame | RB,RM | 21 | Switzerland | 10,3 M€ | 7,93 | 2 | 2 | 1/0 |  |
-| 16 | Abner | LB,LWB,LW,CDM,CM | 26 | Brazil | 6,0 M€ | 6,86 | 0 | 0 | 0/0 |  |
-| 19 | Moussa Niakhaté | CB | 30 | Senegal | 13,6 M€ | 7,28 | 0 | 0 | 1/0 |  |
-| 20 | Felix Bacher | CB | 25 | Austria | 1,5 M€ | 7,23 | 1 | 0 | 1/0 |  |
-| 21 | Ruben Kluivert | CB,LB,RB | 25 | Netherlands | 2,1 M€ | – | 0 | 0 | 0/0 |  |
+| 3 | Nicolás Tagliafico | LB,CB | 34 | Argentina | 2,2 M€ | 6,81 | 0 | 0 | 0/0 | skadad, åter A few weeks |
+| 13 | Zachary Athekame | RB,RM | 21 | Switzerland | 18,4 M€ | 7,93 | 2 | 2 | 1/0 |  |
+| 16 | Abner | LB,LWB,LW,CDM,CM | 26 | Brazil | 11,8 M€ | 6,86 | 0 | 0 | 0/0 |  |
+| 19 | Moussa Niakhaté | CB | 30 | Senegal | 16,3 M€ | 7,28 | 0 | 0 | 1/0 |  |
+| 20 | Felix Bacher | CB | 25 | Austria | 5,4 M€ | 7,23 | 1 | 0 | 1/0 |  |
+| 21 | Ruben Kluivert | CB,LB,RB | 25 | Netherlands | 5,8 M€ | – | 0 | 0 | 0/0 |  |
 | 22 | Clinton Mata | CB,RB | 33 | Angola | 1,9 M€ | 7,56 | 0 | 0 | 0/0 |  |
-| 37 | Steeve Kango | RB | 19 | France | 1,5 M€ | – | 0 | 0 | 0/0 |  |
-| 85 | Noham Kamara | CB | 19 | France | 2,1 M€ | – | 0 | 0 | 0/0 |  |
+| 37 | Steeve Kango | RB | 19 | France | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| 85 | Noham Kamara | CB | 19 | France | 4,2 M€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 |  | Paul Akouokou | CDM,CM | 28 | Ivory Coast | 316 k€ | – | 0 | 0 | 0/0 |  |
-| 2 | Mads Bidstrup | CM,CDM | 25 | Denmark | 10,4 M€ | 6,99 | 0 | 0 | 0/0 |  |
-| 6 | Tanner Tessmann | CDM,CM,CB | 25 | USA | 8,0 M€ | 6,11 | 0 | 0 | 1/0 |  |
-| 8 | Corentin Tolisso | CAM,CM,CDM,LW | 32 | France | 4,9 M€ | 7,73 | 1 | 2 | 0/0 |  |
-| 18 | Khalis Merah | CAM,CM,ST | 19 | France | 11,0 M€ | 6,68 | 0 | 0 | 0/0 |  |
-| 23 | Tyler Morton | CDM,CM | 23 | England | 15,2 M€ | 6,65 | 0 | 0 | 1/0 |  |
-| 76 | Mohamed Ouédraogo | LM,LB,LWB,CB | 23 | Burkina Faso | 1,1 M€ | 7,28 | 0 | 0 | 0/0 |  |
-| 99 | Noah Nartey | CM,ST,CAM,CDM | 20 | Denmark | 9,4 M€ | 6,77 | 1 | 0 | 2/0 |  |
+| 2 | Mads Bidstrup | CDM,CM | 25 | Denmark | 15,4 M€ | 6,99 | 0 | 0 | 0/0 |  |
+| 6 | Tanner Tessmann | CDM,CM,CB | 25 | USA | 11,3 M€ | 6,11 | 0 | 0 | 1/0 |  |
+| 8 | Corentin Tolisso | CAM,CDM,CM,LW | 32 | France | 8,4 M€ | 7,73 | 1 | 2 | 0/0 |  |
+| 18 | Khalis Merah | CAM,CM | 19 | France | 20,4 M€ | 6,68 | 0 | 0 | 0/0 |  |
+| 23 | Tyler Morton | CDM,CM | 23 | England | 27,2 M€ | 6,65 | 0 | 0 | 1/0 |  |
+| 76 | Mohamed Ouédraogo | LM,LB,LWB,CB | 23 | Burkina Faso | 1,2 M€ | 7,28 | 0 | 0 | 0/0 |  |
+| 99 | Noah Nartey | CM,ST,CAM,CDM | 20 | Denmark | 15,5 M€ | 6,77 | 1 | 0 | 2/0 |  |
 | | **Anfallare** | | | | | | | | | |
 |  | Alejandro Gomes Rodríguez | ST,LW | 18 | England | 1,4 M€ | – | 0 | 0 | 0/0 |  |
-| 7 | Ernest Nuamah | RW | 22 | Ghana | 11,2 M€ | 7,76 | 3 | 1 | 0/0 |  |
-| 10 | Pavel Šulc | CAM,ST,RW,LW | 25 | Czechia | 12,3 M€ | 7,09 | 0 | 3 | 1/0 |  |
-| 11 | Keito Nakamura | LW,LWB,ST,LM | 26 | Japan | 6,1 M€ | 6,16 | 0 | 0 | 0/0 |  |
-| 17 | Loïs Openda | ST | 26 | Belgium | 26,7 M€ | 7,36 | 1 | 1 | 1/0 |  |
-| 24 | Julien Duranville | RW,LW | 20 | Belgium | 5,7 M€ | 6,64 | 0 | 0 | 0/0 |  |
-| 26 | Kaïl Boudache | CAM,RW | 20 | Algeria | 2,6 M€ | 6,66 | 0 | 0 | 0/0 |  |
-| 45 | Rémi Himbert | RW,ST | 18 | France | 9,4 M€ | 6,63 | 0 | 0 | 0/0 |  |
+| 7 | Ernest Nuamah | RW | 22 | Ghana | 12,0 M€ | 7,76 | 3 | 1 | 0/0 |  |
+| 10 | Pavel Šulc | CAM,ST,RW,LW | 25 | Czechia | 20,2 M€ | 7,09 | 0 | 3 | 1/0 |  |
+| 11 | Keito Nakamura | LW,LWB,ST,LM | 26 | Japan | 8,1 M€ | 6,16 | 0 | 0 | 0/0 |  |
+| 17 | Loïs Openda | ST | 26 | Belgium | 24,9 M€ | 7,36 | 1 | 1 | 1/0 |  |
+| 24 | Julien Duranville | RW,LW | 20 | Belgium | 10,2 M€ | 6,64 | 0 | 0 | 0/0 |  |
+| 26 | Kaïl Boudache | CAM,RW | 20 | Algeria | 7,7 M€ | 6,66 | 0 | 0 | 0/0 |  |
+| 45 | Rémi Himbert | RW,ST | 18 | France | 13,3 M€ | 6,63 | 0 | 0 | 0/0 |  |

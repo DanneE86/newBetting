@@ -1,6 +1,6 @@
 # Eredivisie (ED) – lärdomar
 
-Genererad 2026-09-29 av `node scripts/analyze-learnings.mjs`. Skriv inte för hand här: egna anteckningar läggs i `docs/lardomar/anteckningar/ED.md`.
+Genererad 2026-10-04 av `node scripts/analyze-learnings.mjs`. Skriv inte för hand här: egna anteckningar läggs i `docs/lardomar/anteckningar/ED.md`.
 
 Underlag: 2743 matcher, säsong 2017/18 – 2026/27. Marknad = stängningsodds utan marginal (Pinnacle, annars snitt av bolagen), öppningsodds finns för 2740 matcher. xG: skott-proxy (100 % av matcherna).
 
@@ -100,7 +100,7 @@ Källa: backtesten i `data/stryktips-backtest-2526-steg3.json`, `data/stryktips-
 - Folket streckar kryss 3,3 procentenheter under vår procent. Kryss ger streckvärde.
 - Bara 7 matcher: se det som indikation, inte regel.
 
-## Tabell nu (FotMob, 2026-09-29)
+## Tabell nu (FotMob, 2026-10-04)
 
 | # | Lag | M | V | O | F | Mål | +/− | P |
 |---|---|---|---|---|---|---|---|---|

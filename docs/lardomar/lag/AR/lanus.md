@@ -1,10 +1,13 @@
 # Lanus (Liga Profesional) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Stark historik mot Talleres Cordoba (+1,28 p/match mot marknaden, 13 möten), Newells Old Boys (−0,82 p/match mot marknaden, 11 möten), San Lorenzo (+0,68 p/match mot marknaden, 11 möten), River Plate (−0,52 p/match mot marknaden, 7 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Spelstil 2026: Balanserat, Kortpass, Medel på fasta, Medel mot fasta. Bäst mot Lågpress (+0,20, samma håll i båda halvorna men svagt), Backar hem (+0,12, svagt), Svag mot fasta (+0,13, samma håll i båda halvorna men svagt). Svårast mot Bollinnehav (−0,19, samma håll i båda halvorna men svagt), Högpress (−0,11, samma håll i båda halvorna men svagt), Stark mot fasta (−0,08, samma håll i båda halvorna men svagt). Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2026: 0,21 mål för per match (xG 0,23), 0,25 emot (xG 0,15), 4,3 hörnor.
+- Svårt för: River Plate (0-2-5, 0,29 p/match, mot marknaden −0,52), Newells Old Boys (2-1-8, 0,64 p/match, mot marknaden −0,82), Argentinos Jrs (1-3-4, 0,75 p/match, mot marknaden −0,46), Velez Sarsfield (2-3-6, 0,82 p/match, mot marknaden −0,40), Racing Club (2-0-5, 0,86 p/match, mot marknaden −0,29), Union de Santa Fe (2-5-5, 0,92 p/match, mot marknaden −0,42), Boca Juniors (4-4-7, 1,07 p/match, mot marknaden +0,09), Banfield (3-5-5, 1,08 p/match, mot marknaden −0,36), Central Cordoba (2-6-1, 1,33 p/match, mot marknaden −0,30). Där marknaden ligger nära noll är laget bara sämre i de mötena än annars, och oddsen vet redan om det.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -36,6 +39,52 @@ Form (äldst → senast): FVFOFVVV · senaste match 2026-09-22
 | 2024 | AR | 41 | 1,44 | +0,01 (−0,08 / +0,10) | 34 % (31 %) | 1,17–1,10 | – | – |
 | 2025 | AR | 34 | 1,50 | +0,08 (+0,17 / −0,01) | 35 % (32 %) | 0,97–0,74 | – | – |
 | 2026 | AR | 26 | 1,42 | −0,10 (−0,05 / −0,15) | 27 % (32 %) | 1,15–1,00 | – | – |
+
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/AR.md#lanus) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2026: **Balanserat, Kortpass, Medel på fasta, Medel mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026 | 28 | 0,21 | 0,23 | 0,25 | 0,15 | 4,3 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Backar hem | 56 | 1,25–1,02 | +0,10 | +0,12 (0,8) | +3 pe | – | svag |
+| Balanserat | 75 | 1,09–1,01 | +0,02 | +0,04 (0,3) | +4 pe | – | ✔ samma håll |
+| Bollinnehav | 51 | 0,98–1,27 | −0,21 | −0,19 (−1,1) | −1 pe | – | ✔ samma håll |
+| Kortpass | 47 | 1,11–1,15 | −0,03 | −0,01 (−0,1) | +1 pe | – | svag |
+| Blandat | 79 | 1,10–1,05 | −0,01 | +0,01 (0,1) | +1 pe | – | svag |
+| Direktspel | 56 | 1,13–1,09 | −0,02 | −0,00 (−0,0) | +5 pe | – | svag |
+| Lågpress | 55 | 1,11–0,82 | +0,18 | +0,20 (1,1) | −6 pe | – | ✔ samma håll |
+| Mellanpress | 58 | 1,09–1,17 | −0,08 | −0,06 (−0,4) | +12 pe | – | svag |
+| Högpress | 69 | 1,13–1,23 | −0,13 | −0,11 (−0,8) | +1 pe | – | ✔ samma håll |
+| Svag på fasta | 64 | 1,13–1,11 | +0,02 | +0,04 (0,3) | +5 pe | – | svag |
+| Medel på fasta | 56 | 0,98–1,04 | −0,09 | −0,07 (−0,4) | +3 pe | – | svag |
+| Farlig på fasta | 38 | 1,24–1,18 | +0,01 | +0,03 (0,2) | −1 pe | – | svag |
+| Stark mot fasta | 60 | 1,10–1,05 | −0,10 | −0,08 (−0,5) | +2 pe | – | ✔ samma håll |
+| Medel mot fasta | 66 | 1,06–1,15 | −0,03 | −0,01 (−0,1) | +3 pe | – | svag |
+| Svag mot fasta | 31 | 1,16–1,10 | +0,11 | +0,13 (0,6) | +5 pe | – | ✔ samma håll |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
+
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 3 | 1-1-1 | 1,33 | +0,12 |
+| Efter uppehåll sedan 2023 | 0 | – | – | – |
+| Övriga matcher | 479 | 187-148-144 | 1,48 | +0,04 |
+
+Hela ligan efter uppehåll: 0,00 mot marknaden (n 66). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2019-11-23 | Defensa y Justicia - Lanus | 2-0 F | −1,62 |
+| 2019-09-15 | Independiente - Lanus | 2-2 O | +0,69 |
+| 2012-10-21 | Atl. Rafaela - Lanus | 1-2 V | +1,28 |
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -72,36 +121,39 @@ Form (äldst → senast): FVFOFVVV · senaste match 2026-09-22
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): River Plate 0,29 p/match (−0,52), Newells Old Boys 0,64 p/match (−0,82), Argentinos Jrs 0,75 p/match (−0,46), Velez Sarsfield 0,82 p/match (−0,40), Racing Club 0,86 p/match (−0,29), Union de Santa Fe 0,92 p/match (−0,42), Boca Juniors 1,07 p/match (+0,09), Banfield 1,08 p/match (−0,36), Central Cordoba 1,33 p/match (−0,30).
+
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Mauricio Pellegrino. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Felipe Peña Biafore (osäker), Ramiro Carrera (osäker)
+**Skadade/borta nu:** Felipe Peña Biafore (skadad, åter About 1-2 weeks), Ramiro Carrera (skadad, åter About 1-2 weeks)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
 | 1 | Franco Petroli | GK | 28 | Argentina | 1,3 M€ | – | 0 | 0 | 0/0 |  |
-| 26 | Nahuel Losada | GK | 33 | Argentina | 2,0 M€ | – | 0 | 0 | 0/0 |  |
+| 26 | Nahuel Losada | GK | 33 | Argentina | 2,1 M€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 3 | Nicolás Morgantini | RB | 32 | Argentina | 436 k€ | – | 0 | 0 | 0/0 |  |
+| 3 | Nicolás Morgantini | RB | 32 | Argentina | 437 k€ | – | 0 | 0 | 0/0 |  |
 | 4 | Gonzalo Pérez | RB,CDM | 25 | Uruguay | 1,2 M€ | – | 0 | 0 | 0/0 |  |
-| 6 | Sasha Marcich | LB | 28 | Argentina | 2,1 M€ | – | 0 | 0 | 0/0 |  |
-| 13 | José Canale | CB | 30 | Paraguay | 1,2 M€ | – | 0 | 0 | 0/0 |  |
-| 24 | Carlos Izquierdoz | CB | 37 | Argentina | 584 k€ | – | 0 | 0 | 0/0 |  |
-| 33 | Tomás Guidara | RB | 30 | Argentina | 972 k€ | – | 0 | 0 | 0/0 |  |
+| 6 | Sasha Marcich | LB | 28 | Argentina | 2,2 M€ | – | 0 | 0 | 0/0 |  |
+| 13 | José Canale | CB | 30 | Paraguay | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 24 | Carlos Izquierdoz | CB | 37 | Argentina | 744 k€ | – | 0 | 0 | 0/0 |  |
+| 33 | Tomás Guidara | RB | 30 | Argentina | 987 k€ | – | 0 | 0 | 0/0 |  |
 | 35 | Ronaldo Dejesús | CB | 25 | Paraguay | 1,2 M€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 5 | Felipe Peña Biafore | CDM,CM | 25 | Argentina | 1,4 M€ | – | 0 | 0 | 0/0 | osäker |
-| 8 | Franco Watson | CAM,RW | 24 | Argentina | 667 k€ | – | 0 | 0 | 0/0 |  |
+| 5 | Felipe Peña Biafore | CDM,CM | 25 | Argentina | 1,4 M€ | – | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
+| 8 | Franco Watson | CAM,RW | 24 | Argentina | 670 k€ | – | 0 | 0 | 0/0 |  |
 | 10 | Marcelino Moreno | CAM,ST | 31 | Argentina | 2,3 M€ | – | 0 | 0 | 0/0 |  |
 | 15 | Raúl Loaiza | CDM | 32 | Colombia | 403 k€ | – | 0 | 0 | 0/0 |  |
-| 16 | Matías Sepúlveda | RW,LM,RM,CM | 27 | Chile | 901 k€ | – | 0 | 0 | 0/0 |  |
-| 30 | Agustín Cardozo | CDM,CM | 29 | Argentina | 1,7 M€ | – | 0 | 0 | 0/0 |  |
+| 16 | Matías Sepúlveda | RW,LM,RM,CM | 27 | Chile | 897 k€ | – | 0 | 0 | 0/0 |  |
+| 30 | Agustín Cardozo | CDM,CM | 29 | Argentina | 1,8 M€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 11 | Eduardo Salvio | RW,LW,RM,CAM,LM | 36 | Argentina | 761 k€ | – | 0 | 0 | 0/0 |  |
-| 20 | Allan Wlk | ST | 23 | Paraguay | 733 k€ | – | 0 | 0 | 0/0 |  |
-| 23 | Ramiro Carrera | LW,ST,CAM,CDM | 32 | Argentina | 640 k€ | – | 0 | 0 | 0/0 | osäker |
-| 77 | Lucas Besozzi | LW,RW | 23 | Argentina | 759 k€ | – | 0 | 0 | 0/0 |  |
+| 11 | Eduardo Salvio | RW,LW,RM,CAM,LM | 36 | Argentina | 866 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | Yoshan Valois | ST | 22 | Colombia | 1,5 M€ | – | 0 | 0 | 0/0 |  |
+| 20 | Allan Wlk | ST | 23 | Paraguay | 880 k€ | – | 0 | 0 | 0/0 |  |
+| 23 | Ramiro Carrera | LW,ST,CAM,CDM | 32 | Argentina | 724 k€ | – | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
+| 77 | Lucas Besozzi | LW,RW | 23 | Argentina | 771 k€ | – | 0 | 0 | 0/0 |  |
 
-Har lämnat truppen sedan vi började spara (27): Luciano Romero (senast 2026-09-29), Thiago Laplace (senast 2026-09-29), Yoshan Valois (senast 2026-09-29), Octavio Ontívero (senast 2026-09-29), Thiago Balbuena (senast 2026-09-29), Agustín Medina (senast 2026-09-29), Benjamín Acosta (senast 2026-09-29), Jeremías Chavero (senast 2026-09-29), Facundo Sánchez (senast 2026-09-29), Tobías Quiroz (senast 2026-09-29), Evaristo Dieguiz (senast 2026-09-29), Thiago Mejías (senast 2026-09-28), Mateo Peralta (senast 2026-09-29), Tomás López (senast 2026-09-29), Gonzalo Lobos (senast 2026-09-29), Martín Díaz (senast 2026-09-29), Sebastián Leiva (senast 2026-09-29), Mateo Ramírez (senast 2026-09-29), Alexis Duarte (senast 2026-09-29), Dante Blanco (senast 2026-09-29), Juan Mujica (senast 2026-09-29), Tomás Silva (senast 2026-09-29), Elian Acosta (senast 2026-09-29), Elías Prieto (senast 2026-09-29), Tiago Domínguez (senast 2026-09-29), Ian López (senast 2026-09-29), Gabriel Aguirre (senast 2026-09-29).
+Har lämnat truppen sedan vi började spara (26): Luciano Romero (senast 2026-09-29), Thiago Laplace (senast 2026-09-29), Octavio Ontívero (senast 2026-09-29), Thiago Balbuena (senast 2026-09-29), Agustín Medina (senast 2026-09-29), Benjamín Acosta (senast 2026-09-29), Jeremías Chavero (senast 2026-09-29), Facundo Sánchez (senast 2026-09-29), Tobías Quiroz (senast 2026-09-29), Evaristo Dieguiz (senast 2026-09-29), Thiago Mejías (senast 2026-09-28), Mateo Peralta (senast 2026-09-29), Tomás López (senast 2026-09-29), Gonzalo Lobos (senast 2026-09-29), Martín Díaz (senast 2026-09-29), Sebastián Leiva (senast 2026-09-29), Mateo Ramírez (senast 2026-09-29), Alexis Duarte (senast 2026-09-29), Dante Blanco (senast 2026-09-29), Juan Mujica (senast 2026-09-29), Tomás Silva (senast 2026-09-29), Elian Acosta (senast 2026-09-29), Elías Prieto (senast 2026-09-29), Tiago Domínguez (senast 2026-09-29), Ian López (senast 2026-09-29), Gabriel Aguirre (senast 2026-09-29).

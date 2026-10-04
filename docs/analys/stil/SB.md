@@ -1,6 +1,6 @@
 # Stilmatchning – Serie B (SB)
 
-Genererad 2026-10-01 av `scripts/analyze-style-matchups.mjs`. Spelstil per lag från FotMob (bollinnehav, långbollar, bollvinster högt upp), justerad för lagets styrka, från lagets föregående säsong. 1632 matcher med stängningsodds och stil för båda lagen.
+Genererad 2026-10-04 av `scripts/analyze-style-matchups.mjs`. Spelstil per lag från FotMob (bollinnehav, långbollar, bollvinster högt upp), justerad för lagets styrka, från lagets föregående säsong. 1632 matcher med stängningsodds och stil för båda lagen.
 
 Läs så här: **mot marknaden** = poäng per match minus vad stängningsoddsen väntade sig. **Rel. eget snitt** = mot marknaden mot lagtypen minus lagets eget snitt mot marknaden (visar om laget har *särskilt* svårt för typen). **kryss/ö2,5** = utfall minus oddsens sannolikhet i procentenheter. ✔ = åt samma håll i första och andra halvan av lagets matcher, ⚑ = |z| ≥ 2 och ✔. Se [sammanfattningen](../stilmatchning.md) för hur ofta sådana mönster håller.
 
@@ -22,21 +22,38 @@ Läs så här: **mot marknaden** = poäng per match minus vad stängningsoddsen 
 | **Balanserat** | 173 m · hemma −0,07 · kryss +5 pe · ö2,5 −5 pe | 462 m · hemma +0,02 · kryss +3 pe · ö2,5 −3 pe | 220 m · hemma −0,02 · kryss −1 pe · ö2,5 +4 pe |
 | **Bollinnehav** | 100 m · hemma +0,07 · kryss −3 pe · ö2,5 −6 pe | 220 m · hemma +0,06 · kryss +2 pe · ö2,5 +3 pe | 86 m · hemma −0,22 · kryss +8 pe · ö2,5 −1 pe |
 
+### Fasta situationer: lagets anfall mot motståndarens försvar
+
+Från det anfallande lagets perspektiv: hur går det mot oddsen när ett lag som är farligt på fasta möter ett lag som är svagt mot fasta?
+
+| Laget \ Motståndaren | Stark mot fasta | Medel mot fasta | Svag mot fasta |
+|---|---|---|---|
+| **Svag på fasta** | 178 m · mot marknaden −0,21 (z −2,3) · mål 1,20 · ö2,5 +4 pe | 562 m · mot marknaden +0,05 (z +1,1) · mål 1,36 · ö2,5 −0 pe | 130 m · mot marknaden −0,02 (z −0,2) · mål 1,20 · ö2,5 −0 pe |
+| **Medel på fasta** | 420 m · mot marknaden +0,01 (z +0,1) · mål 1,20 · ö2,5 −1 pe | 1216 m · mot marknaden −0,01 (z −0,3) · mål 1,16 · ö2,5 −2 pe | 296 m · mot marknaden −0,01 (z −0,2) · mål 1,13 · ö2,5 −2 pe |
+| **Farlig på fasta** | 83 m · mot marknaden −0,01 (z −0,0) · mål 1,36 · ö2,5 +4 pe | 289 m · mot marknaden −0,07 (z −1,0) · mål 1,30 · ö2,5 +2 pe | 90 m · mot marknaden +0,08 (z +0,6) · mål 1,31 · ö2,5 +1 pe |
+
 ## Lag (säsong 2026/27)
 
 ### Avellino
 
-Egen stil nu (jämfört med vad lagets styrka motiverar): **Backar hem, Kortpass, Lågpress** (faktiskt bollinnehav 44,7 %). 2 matcher med stil, mot marknaden totalt +1,10 per match.
+Egen stil 2025/26 (jämfört med vad lagets styrka motiverar): **Balanserat, Kortpass, Lågpress, Medel på fasta, Medel mot fasta** (faktiskt bollinnehav 44,7 %). 2 matcher med stil, mot marknaden totalt +1,10 per match.
+
+Fasta situationer per match: 2026/27 (5 m): 0,40 mål för (xG 0,18), 0,40 emot (xG 0,08), 2,60 hörnor · 2025/26 (38 m): 0,32 mål för (xG 0,29), 0,29 emot (xG 0,27), 4,26 hörnor.
 
 | Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Halvor |
 |---|---|---|---|---|---|---|---|
 | Backar hem | 2 | 1,00–0,50 | +1,10 | 0,00 (0,0) | +23 pe | −48 pe | +1,13 / −1,13  |
 | Blandat | 2 | 1,00–0,50 | +1,10 | 0,00 (0,0) | +23 pe | −48 pe | +1,13 / −1,13  |
 | Lågpress | 2 | 1,00–0,50 | +1,10 | 0,00 (0,0) | +23 pe | −48 pe | +1,13 / −1,13  |
+| Medel på fasta | 1 | 1,00–0,00 | +2,23 | +1,13 (+11,3) | −26 pe | −47 pe | +1,13 / –  |
+| Farlig på fasta | 1 | 1,00–1,00 | −0,03 | −1,13 (−11,3) | +72 pe | −50 pe | – / −1,13  |
+| Medel mot fasta | 2 | 1,00–0,50 | +1,10 | 0,00 (0,0) | +23 pe | −48 pe | +1,13 / −1,13  |
 
 ### Carrarese
 
-Egen stil nu (jämfört med vad lagets styrka motiverar): **Backar hem, Kortpass, Lågpress** (faktiskt bollinnehav 39,1 %). 33 matcher med stil, mot marknaden totalt −0,16 per match.
+Egen stil 2025/26 (jämfört med vad lagets styrka motiverar): **Balanserat, Blandat, Lågpress, Medel på fasta, Medel mot fasta** (faktiskt bollinnehav 39,1 %). 33 matcher med stil, mot marknaden totalt −0,16 per match.
+
+Fasta situationer per match: 2026/27 (5 m): 0,00 mål för (xG 0,46), 0,20 emot (xG 0,20), 5,60 hörnor · 2025/26 (38 m): 0,37 mål för (xG 0,29), 0,21 emot (xG 0,28), 5,66 hörnor.
 
 | Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Halvor |
 |---|---|---|---|---|---|---|---|
@@ -48,12 +65,21 @@ Egen stil nu (jämfört med vad lagets styrka motiverar): **Backar hem, Kortpass
 | Direktspel | 2 | 2,50–1,00 | +0,69 | +0,85 (+1,5) | +20 pe | +55 pe | +0,85 / –  |
 | Lågpress | 26 | 0,88–1,42 | −0,33 | −0,17 (−0,9) | +2 pe | −8 pe | −0,02 / −0,29 ✔ |
 | Mellanpress | 7 | 1,71–0,86 | +0,46 | +0,62 (+1,4) | +13 pe | +13 pe | +1,03 / +0,08  |
+| Svag på fasta | 6 | 1,00–1,50 | −0,23 | −0,07 (−0,2) | +5 pe | +4 pe | +0,27 / −0,73  |
+| Medel på fasta | 15 | 1,20–1,20 | −0,04 | +0,12 (+0,4) | −2 pe | −0 pe | +0,26 / −0,01  |
+| Farlig på fasta | 12 | 0,92–1,33 | −0,28 | −0,12 (−0,4) | +12 pe | −12 pe | +0,18 / −0,33  |
+| Stark mot fasta | 6 | 0,83–1,17 | −0,43 | −0,27 (−3,0) | +53 pe | −29 pe | −0,18 / −0,36  |
+| Medel mot fasta | 18 | 1,11–1,33 | −0,16 | +0,00 (+0,0) | −6 pe | +8 pe | +0,40 / −0,39  |
+| Svag mot fasta | 9 | 1,11–1,33 | +0,01 | +0,17 (+0,4) | −8 pe | −11 pe | +0,20 / +0,15  |
 
 - Svårast mot **Kortpass** (−0,24 p/match rel. eget snitt, z −1,1, 21 m) – åt samma håll i båda halvorna men svagt
+- Bäst mot **Medel på fasta** (+0,12 p/match rel. eget snitt, z +0,4, 15 m) – inte stabilt, troligen slump
 
 ### Catanzaro
 
-Egen stil nu (jämfört med vad lagets styrka motiverar): **Bollinnehav, Kortpass, Lågpress** (faktiskt bollinnehav 57,9 %). 64 matcher med stil, mot marknaden totalt +0,13 per match.
+Egen stil 2025/26 (jämfört med vad lagets styrka motiverar): **Bollinnehav, Kortpass, Lågpress, Farlig på fasta, Medel mot fasta** (faktiskt bollinnehav 57,9 %). 64 matcher med stil, mot marknaden totalt +0,13 per match.
+
+Fasta situationer per match: 2026/27 (5 m): 0,20 mål för (xG 0,30), 0,80 emot (xG 0,22), 5,20 hörnor · 2025/26 (38 m): 0,50 mål för (xG 0,29), 0,40 emot (xG 0,22), 4,18 hörnor.
 
 | Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Halvor |
 |---|---|---|---|---|---|---|---|
@@ -66,13 +92,21 @@ Egen stil nu (jämfört med vad lagets styrka motiverar): **Bollinnehav, Kortpas
 | Lågpress | 31 | 1,45–1,32 | +0,23 | +0,10 (+0,5) | +13 pe | +8 pe | +0,14 / +0,08 ✔ |
 | Mellanpress | 26 | 1,58–1,42 | +0,04 | −0,09 (−0,4) | +16 pe | +17 pe | −0,00 / −0,37 ✔ |
 | Högpress | 7 | 0,43–0,57 | +0,03 | −0,10 (−0,2) | +13 pe | −44 pe | +0,10 / −1,36  |
+| Svag på fasta | 14 | 1,71–1,50 | +0,31 | +0,18 (+0,6) | +13 pe | +18 pe | +0,29 / +0,02 ✔ |
+| Medel på fasta | 38 | 1,32–1,21 | +0,06 | −0,07 (−0,4) | +17 pe | +3 pe | −0,02 / −0,12 ✔ |
+| Farlig på fasta | 12 | 1,25–1,25 | +0,15 | +0,02 (+0,0) | +4 pe | +4 pe | −0,09 / +0,12  |
+| Stark mot fasta | 8 | 2,38–1,00 | +1,13 | +1,00 (+3,2) | −5 pe | +29 pe | +0,95 / +1,05  |
+| Medel mot fasta | 40 | 1,30–1,48 | −0,09 | −0,22 (−1,5) | +18 pe | +7 pe | −0,17 / −0,25 ✔ |
+| Svag mot fasta | 16 | 1,13–0,94 | +0,17 | +0,04 (+0,1) | +14 pe | −6 pe | +0,08 / −0,01  |
 
-- Svårast mot **Mellanpress** (−0,09 p/match rel. eget snitt, z −0,4, 26 m) – åt samma håll i båda halvorna men svagt
+- Svårast mot **Medel mot fasta** (−0,22 p/match rel. eget snitt, z −1,5, 40 m) – åt samma håll i båda halvorna men svagt
 - Bäst mot **Balanserat** (+0,21 p/match rel. eget snitt, z +1,0, 28 m) – åt samma håll i båda halvorna men svagt
 
 ### Cesena
 
-Egen stil nu (jämfört med vad lagets styrka motiverar): **Backar hem, Kortpass, Mellanpress** (faktiskt bollinnehav 44,1 %). 35 matcher med stil, mot marknaden totalt −0,14 per match.
+Egen stil 2025/26 (jämfört med vad lagets styrka motiverar): **Balanserat, Kortpass, Lågpress, Medel på fasta, Medel mot fasta** (faktiskt bollinnehav 44,1 %). 35 matcher med stil, mot marknaden totalt −0,14 per match.
+
+Fasta situationer per match: 2026/27 (5 m): 0,20 mål för (xG 0,18), 0,40 emot (xG 0,24), 3,80 hörnor · 2025/26 (38 m): 0,21 mål för (xG 0,35), 0,45 emot (xG 0,25), 4,92 hörnor.
 
 | Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Halvor |
 |---|---|---|---|---|---|---|---|
@@ -84,13 +118,21 @@ Egen stil nu (jämfört med vad lagets styrka motiverar): **Backar hem, Kortpass
 | Direktspel | 2 | 0,50–1,00 | −1,02 | −0,88 (−1,7) | +21 pe | −45 pe | −1,61 / −0,14  |
 | Lågpress | 25 | 1,00–1,52 | −0,22 | −0,08 (−0,3) | −1 pe | +10 pe | +0,12 / −0,33  |
 | Mellanpress | 10 | 1,20–1,10 | +0,05 | +0,19 (+0,5) | +21 pe | −16 pe | +0,73 / −0,04  |
+| Svag på fasta | 6 | 0,50–1,00 | −0,38 | −0,23 (−0,5) | +4 pe | −28 pe | −0,14 / −0,32  |
+| Medel på fasta | 21 | 1,14–1,52 | −0,16 | −0,02 (−0,1) | +9 pe | +15 pe | +0,17 / −0,19  |
+| Farlig på fasta | 8 | 1,25–1,38 | +0,08 | +0,22 (+0,5) | −4 pe | −8 pe | +0,66 / −0,21  |
+| Stark mot fasta | 7 | 1,29–1,43 | +0,26 | +0,40 (+0,9) | −0 pe | +10 pe | +0,69 / +0,19  |
+| Medel mot fasta | 19 | 0,89–1,53 | −0,55 | −0,40 (−1,6) | +8 pe | +1 pe | −0,38 / −0,43 ✔ |
+| Svag mot fasta | 9 | 1,22–1,11 | +0,40 | +0,54 (+1,2) | +4 pe | +0 pe | +1,39 / −0,14  |
 
-- Svårast mot **Kortpass** (−0,18 p/match rel. eget snitt, z −0,7, 20 m) – åt samma håll i båda halvorna men svagt
+- Svårast mot **Medel mot fasta** (−0,40 p/match rel. eget snitt, z −1,6, 19 m) – åt samma håll i båda halvorna men svagt
 - Bäst mot **Backar hem** (+0,10 p/match rel. eget snitt, z +0,3, 15 m) – inte stabilt, troligen slump
 
 ### Cremonese
 
-Egen stil nu (jämfört med vad lagets styrka motiverar): **Bollinnehav, Kortpass, Lågpress** (faktiskt bollinnehav 58,4 %). 227 matcher med stil, mot marknaden totalt −0,01 per match.
+Egen stil 2024/25 (jämfört med vad lagets styrka motiverar): **Bollinnehav, Kortpass, Lågpress, Medel på fasta, Medel mot fasta** (faktiskt bollinnehav 58,4 %). 227 matcher med stil, mot marknaden totalt −0,01 per match.
+
+Fasta situationer per match: 2026/27 (5 m): 0,20 mål för (xG 0,10), 0,20 emot (xG 0,24), 4,20 hörnor.
 
 | Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Halvor |
 |---|---|---|---|---|---|---|---|
@@ -103,13 +145,21 @@ Egen stil nu (jämfört med vad lagets styrka motiverar): **Bollinnehav, Kortpas
 | Lågpress | 57 | 0,91–1,42 | −0,20 | −0,19 (−1,3) | −3 pe | +3 pe | +0,28 / −0,32  |
 | Mellanpress | 108 | 1,43–1,22 | +0,06 | +0,07 (+0,6) | −0 pe | +5 pe | −0,03 / +0,19  |
 | Högpress | 62 | 1,16–1,18 | +0,05 | +0,06 (+0,4) | +9 pe | −7 pe | −0,12 / +0,41  |
+| Svag på fasta | 68 | 1,15–1,37 | −0,17 | −0,16 (−1,3) | +10 pe | −0 pe | −0,18 / −0,15 ✔ |
+| Medel på fasta | 124 | 1,29–1,23 | +0,03 | +0,04 (+0,3) | −3 pe | +4 pe | −0,08 / +0,14  |
+| Farlig på fasta | 35 | 1,14–1,17 | +0,18 | +0,19 (+1,0) | +1 pe | −5 pe | +0,36 / −0,03  |
+| Stark mot fasta | 58 | 1,16–1,36 | −0,04 | −0,03 (−0,2) | +3 pe | +2 pe | +0,00 / −0,06  |
+| Medel mot fasta | 137 | 1,23–1,26 | −0,02 | −0,02 (−0,2) | +2 pe | +1 pe | −0,06 / +0,03  |
+| Svag mot fasta | 32 | 1,34–1,09 | +0,12 | +0,12 (+0,6) | −5 pe | −1 pe | +0,03 / +0,24 ✔ |
 
-- Svårast mot **Lågpress** (−0,19 p/match rel. eget snitt, z −1,3, 57 m) – inte stabilt, troligen slump
-- Bäst mot **Kortpass** (+0,12 p/match rel. eget snitt, z +0,6, 45 m) – inte stabilt, troligen slump
+- Svårast mot **Svag på fasta** (−0,16 p/match rel. eget snitt, z −1,3, 68 m) – åt samma håll i båda halvorna men svagt
+- Bäst mot **Farlig på fasta** (+0,19 p/match rel. eget snitt, z +1,0, 35 m) – inte stabilt, troligen slump
 
 ### Empoli
 
-Egen stil nu (jämfört med vad lagets styrka motiverar): **Backar hem, Kortpass, Lågpress** (faktiskt bollinnehav 44,4 %). 243 matcher med stil, mot marknaden totalt −0,01 per match.
+Egen stil 2025/26 (jämfört med vad lagets styrka motiverar): **Balanserat, Kortpass, Lågpress, Farlig på fasta, Svag mot fasta** (faktiskt bollinnehav 44,4 %). 243 matcher med stil, mot marknaden totalt −0,01 per match.
+
+Fasta situationer per match: 2026/27 (5 m): 0,20 mål för (xG 0,38), 0,20 emot (xG 0,28), 4,00 hörnor · 2025/26 (38 m): 0,40 mål för (xG 0,44), 0,50 emot (xG 0,33), 4,82 hörnor.
 
 | Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Halvor |
 |---|---|---|---|---|---|---|---|
@@ -122,13 +172,21 @@ Egen stil nu (jämfört med vad lagets styrka motiverar): **Backar hem, Kortpass
 | Lågpress | 59 | 1,15–1,44 | −0,09 | −0,08 (−0,6) | +8 pe | +1 pe | +0,26 / −0,17  |
 | Mellanpress | 118 | 1,18–1,55 | −0,05 | −0,04 (−0,4) | −0 pe | −3 pe | +0,07 / −0,18  |
 | Högpress | 66 | 1,06–1,15 | +0,14 | +0,15 (+1,1) | +17 pe | −20 pe | +0,14 / +0,18 ✔ |
+| Svag på fasta | 64 | 1,11–1,42 | −0,05 | −0,04 (−0,3) | +6 pe | −4 pe | +0,10 / −0,16  |
+| Medel på fasta | 129 | 1,15–1,38 | −0,02 | −0,01 (−0,1) | +6 pe | −8 pe | +0,20 / −0,24  |
+| Farlig på fasta | 50 | 1,16–1,50 | +0,08 | +0,09 (+0,5) | +7 pe | −7 pe | −0,11 / +0,30  |
+| Stark mot fasta | 75 | 1,19–1,23 | +0,14 | +0,15 (+1,0) | +7 pe | −9 pe | +0,27 / +0,06 ✔ |
+| Medel mot fasta | 136 | 1,08–1,54 | −0,12 | −0,11 (−1,1) | +6 pe | −6 pe | +0,00 / −0,24  |
+| Svag mot fasta | 32 | 1,28–1,31 | +0,10 | +0,11 (+0,5) | +6 pe | −7 pe | +0,29 / −0,05  |
 
 - Svårast mot **Balanserat** (−0,20 p/match rel. eget snitt, z −1,8, 97 m) – åt samma håll i båda halvorna men svagt
 - Bäst mot **Bollinnehav** (+0,25 p/match rel. eget snitt, z +1,6, 63 m) – åt samma håll i båda halvorna men svagt
 
 ### Juve Stabia
 
-Egen stil nu (jämfört med vad lagets styrka motiverar): **Bollinnehav, Kortpass, Högpress** (faktiskt bollinnehav 58,2 %). 34 matcher med stil, mot marknaden totalt −0,01 per match.
+Egen stil 2025/26 (jämfört med vad lagets styrka motiverar): **Bollinnehav, Kortpass, Mellanpress, Medel på fasta, Medel mot fasta** (faktiskt bollinnehav 58,2 %). 34 matcher med stil, mot marknaden totalt −0,01 per match.
+
+Fasta situationer per match: 2026/27 (5 m): 0,20 mål för (xG 0,26), 0,20 emot (xG 0,12), 5,60 hörnor · 2025/26 (38 m): 0,32 mål för (xG 0,23), 0,32 emot (xG 0,22), 4,74 hörnor.
 
 | Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Halvor |
 |---|---|---|---|---|---|---|---|
@@ -140,13 +198,21 @@ Egen stil nu (jämfört med vad lagets styrka motiverar): **Bollinnehav, Kortpas
 | Direktspel | 3 | 1,33–1,33 | +0,72 | +0,72 (+0,9) | −31 pe | +26 pe | +1,48 / +0,34  |
 | Lågpress | 26 | 0,81–1,31 | −0,37 | −0,36 (−2,1) | +17 pe | −5 pe | −0,23 / −0,52 ✔ ⚑ |
 | Mellanpress | 8 | 1,75–1,00 | +1,16 | +1,17 (+3,2) | −17 pe | +22 pe | +1,63 / +0,90  |
+| Svag på fasta | 6 | 1,33–1,67 | +0,07 | +0,07 (+0,2) | −13 pe | +44 pe | +0,16 / −0,02  |
+| Medel på fasta | 17 | 0,59–1,29 | −0,43 | −0,42 (−1,8) | +12 pe | −8 pe | −0,38 / −0,46 ✔ |
+| Farlig på fasta | 11 | 1,55–0,91 | +0,60 | +0,61 (+2,1) | +16 pe | −6 pe | +0,93 / +0,34 ✔ ⚑ |
+| Stark mot fasta | 6 | 1,00–1,83 | −0,59 | −0,58 (−1,9) | +4 pe | +24 pe | −0,12 / −1,04  |
+| Medel mot fasta | 20 | 0,85–1,20 | −0,10 | −0,09 (−0,4) | +11 pe | −3 pe | −0,18 / −0,00 ✔ |
+| Svag mot fasta | 8 | 1,50–0,88 | +0,65 | +0,66 (+1,7) | +8 pe | −3 pe | +0,96 / +0,35  |
 
 - Svårast mot **Lågpress** (−0,36 p/match rel. eget snitt, z −2,1, 26 m) – ⚑ håller i båda halvorna
 - Bäst mot **Backar hem** (+0,26 p/match rel. eget snitt, z +0,9, 18 m) – åt samma håll i båda halvorna men svagt
 
 ### Mantova
 
-Egen stil nu (jämfört med vad lagets styrka motiverar): **Backar hem, Blandat, Mellanpress** (faktiskt bollinnehav 48,9 %). 35 matcher med stil, mot marknaden totalt +0,06 per match.
+Egen stil 2025/26 (jämfört med vad lagets styrka motiverar): **Bollinnehav, Kortpass, Mellanpress, Medel på fasta, Medel mot fasta** (faktiskt bollinnehav 48,9 %). 35 matcher med stil, mot marknaden totalt +0,06 per match.
+
+Fasta situationer per match: 2026/27 (5 m): 0,40 mål för (xG 0,24), 0,20 emot (xG 0,24), 4,00 hörnor · 2025/26 (38 m): 0,26 mål för (xG 0,24), 0,40 emot (xG 0,35), 4,66 hörnor.
 
 | Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Halvor |
 |---|---|---|---|---|---|---|---|
@@ -158,13 +224,21 @@ Egen stil nu (jämfört med vad lagets styrka motiverar): **Backar hem, Blandat,
 | Direktspel | 3 | 1,33–1,67 | −0,60 | −0,66 (−2,0) | +38 pe | +19 pe | −1,46 / −0,27  |
 | Lågpress | 27 | 1,15–1,78 | −0,08 | −0,14 (−0,6) | −13 pe | +10 pe | −0,55 / +0,29  |
 | Mellanpress | 8 | 2,00–0,88 | +0,54 | +0,48 (+1,2) | +8 pe | +3 pe | −0,14 / +0,86  |
+| Svag på fasta | 6 | 1,17–1,83 | −0,33 | −0,39 (−0,8) | −11 pe | +18 pe | −1,15 / +0,37  |
+| Medel på fasta | 18 | 1,06–1,67 | +0,03 | −0,03 (−0,1) | −6 pe | +1 pe | −0,36 / +0,29  |
+| Farlig på fasta | 11 | 1,91–1,27 | +0,33 | +0,27 (+0,7) | −10 pe | +15 pe | −0,28 / +0,73  |
+| Stark mot fasta | 4 | 0,75–2,50 | −1,04 | −1,10 (−8,9) | −28 pe | +27 pe | −1,29 / −0,90  |
+| Medel mot fasta | 22 | 1,18–1,73 | −0,12 | −0,18 (−0,8) | −5 pe | +5 pe | −0,76 / +0,39  |
+| Svag mot fasta | 9 | 2,00–0,78 | +1,00 | +0,93 (+2,8) | −7 pe | +8 pe | +0,71 / +1,11  |
 
-- Svårast mot **Lågpress** (−0,14 p/match rel. eget snitt, z −0,6, 27 m) – inte stabilt, troligen slump
+- Svårast mot **Medel mot fasta** (−0,18 p/match rel. eget snitt, z −0,8, 22 m) – inte stabilt, troligen slump
 - Bäst mot **Backar hem** (+0,04 p/match rel. eget snitt, z +0,1, 17 m) – inte stabilt, troligen slump
 
 ### Modena
 
-Egen stil nu (jämfört med vad lagets styrka motiverar): **Balanserat, Kortpass, Mellanpress** (faktiskt bollinnehav 54,3 %). 94 matcher med stil, mot marknaden totalt −0,16 per match.
+Egen stil 2025/26 (jämfört med vad lagets styrka motiverar): **Backar hem, Blandat, Lågpress, Medel på fasta, Medel mot fasta** (faktiskt bollinnehav 54,3 %). 94 matcher med stil, mot marknaden totalt −0,16 per match.
+
+Fasta situationer per match: 2026/27 (5 m): 0,40 mål för (xG 0,46), 0,20 emot (xG 0,14), 5,80 hörnor · 2025/26 (38 m): 0,32 mål för (xG 0,38), 0,26 emot (xG 0,17), 5,29 hörnor.
 
 | Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Halvor |
 |---|---|---|---|---|---|---|---|
@@ -177,13 +251,21 @@ Egen stil nu (jämfört med vad lagets styrka motiverar): **Balanserat, Kortpass
 | Lågpress | 41 | 1,27–1,15 | −0,21 | −0,05 (−0,3) | −0 pe | +8 pe | −0,14 / −0,02 ✔ |
 | Mellanpress | 36 | 1,25–1,14 | +0,02 | +0,17 (+0,9) | +13 pe | +12 pe | +0,11 / +0,28 ✔ |
 | Högpress | 17 | 0,88–1,12 | −0,40 | −0,25 (−1,1) | +28 pe | −23 pe | −0,38 / +0,18  |
+| Svag på fasta | 18 | 1,39–1,39 | −0,05 | +0,11 (+0,4) | +14 pe | +13 pe | +0,21 / −0,06  |
+| Medel på fasta | 61 | 1,15–1,13 | −0,21 | −0,05 (−0,3) | +7 pe | +3 pe | −0,20 / +0,13  |
+| Farlig på fasta | 15 | 1,13–0,87 | −0,08 | +0,07 (+0,2) | +17 pe | −4 pe | +0,15 / +0,05  |
+| Stark mot fasta | 19 | 1,74–1,21 | +0,18 | +0,33 (+1,3) | +22 pe | +21 pe | +0,41 / +0,20 ✔ |
+| Medel mot fasta | 56 | 1,09–1,14 | −0,20 | −0,05 (−0,3) | +3 pe | +3 pe | −0,11 / +0,01  |
+| Svag mot fasta | 19 | 0,95–1,05 | −0,35 | −0,19 (−0,9) | +17 pe | −10 pe | −0,72 / +0,19  |
 
 - Svårast mot **Högpress** (−0,25 p/match rel. eget snitt, z −1,1, 17 m) – inte stabilt, troligen slump
-- Bäst mot **Mellanpress** (+0,17 p/match rel. eget snitt, z +0,9, 36 m) – åt samma håll i båda halvorna men svagt
+- Bäst mot **Stark mot fasta** (+0,33 p/match rel. eget snitt, z +1,3, 19 m) – åt samma håll i båda halvorna men svagt
 
 ### Padova
 
-Egen stil nu (jämfört med vad lagets styrka motiverar): **Backar hem, Kortpass, Högpress** (faktiskt bollinnehav 41,8 %). 4 matcher med stil, mot marknaden totalt +0,03 per match.
+Egen stil 2025/26 (jämfört med vad lagets styrka motiverar): **Balanserat, Kortpass, Mellanpress, Medel på fasta, Medel mot fasta** (faktiskt bollinnehav 41,8 %). 4 matcher med stil, mot marknaden totalt +0,03 per match.
+
+Fasta situationer per match: 2026/27 (5 m): 0,20 mål för (xG 0,40), 0,20 emot (xG 0,26), 5,20 hörnor · 2025/26 (38 m): 0,34 mål för (xG 0,23), 0,26 emot (xG 0,32), 4,03 hörnor.
 
 | Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Halvor |
 |---|---|---|---|---|---|---|---|
@@ -194,10 +276,17 @@ Egen stil nu (jämfört med vad lagets styrka motiverar): **Backar hem, Kortpass
 | Direktspel | 1 | 1,00–0,00 | +2,13 | +2,10 (+21,0) | −27 pe | −46 pe | +2,10 / –  |
 | Lågpress | 3 | 1,00–2,00 | −0,67 | −0,70 (−4,1) | +6 pe | +18 pe | −0,32 / −0,89  |
 | Mellanpress | 1 | 1,00–0,00 | +2,13 | +2,10 (+21,0) | −27 pe | −46 pe | +2,10 / –  |
+| Medel på fasta | 3 | 1,00–1,33 | +0,28 | +0,25 (+0,3) | +5 pe | −12 pe | +0,89 / −1,04  |
+| Farlig på fasta | 1 | 1,00–2,00 | −0,71 | −0,74 (−7,4) | −23 pe | +44 pe | – / −0,74  |
+| Stark mot fasta | 1 | 1,00–3,00 | −1,00 | −1,04 (−10,4) | −29 pe | +55 pe | – / −1,04  |
+| Medel mot fasta | 2 | 1,00–1,00 | +0,71 | +0,68 (+0,7) | −25 pe | −1 pe | +2,10 / −0,74  |
+| Svag mot fasta | 1 | 1,00–1,00 | −0,29 | −0,32 (−3,2) | +70 pe | −46 pe | −0,32 / –  |
 
 ### Palermo
 
-Egen stil nu (jämfört med vad lagets styrka motiverar): **Backar hem, Kortpass, Mellanpress** (faktiskt bollinnehav 51,1 %). 94 matcher med stil, mot marknaden totalt +0,04 per match.
+Egen stil 2025/26 (jämfört med vad lagets styrka motiverar): **Backar hem, Blandat, Lågpress, Farlig på fasta, Medel mot fasta** (faktiskt bollinnehav 51,1 %). 94 matcher med stil, mot marknaden totalt +0,04 per match.
+
+Fasta situationer per match: 2026/27 (5 m): 0,80 mål för (xG 0,54), 0,20 emot (xG 0,18), 4,40 hörnor · 2025/26 (38 m): 0,42 mål för (xG 0,53), 0,16 emot (xG 0,17), 5,13 hörnor.
 
 | Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Halvor |
 |---|---|---|---|---|---|---|---|
@@ -210,13 +299,21 @@ Egen stil nu (jämfört med vad lagets styrka motiverar): **Backar hem, Kortpass
 | Lågpress | 35 | 1,34–0,94 | −0,01 | −0,05 (−0,3) | +6 pe | −5 pe | +0,06 / −0,08  |
 | Mellanpress | 43 | 1,81–1,30 | +0,24 | +0,20 (+1,0) | −10 pe | +11 pe | +0,03 / +0,45 ✔ |
 | Högpress | 16 | 1,25–1,38 | −0,38 | −0,42 (−1,5) | +14 pe | −5 pe | −0,57 / +0,64  |
+| Svag på fasta | 22 | 1,55–1,45 | −0,02 | −0,06 (−0,3) | +2 pe | +12 pe | −0,13 / +0,04  |
+| Medel på fasta | 62 | 1,55–1,13 | +0,02 | −0,02 (−0,1) | +2 pe | +0 pe | −0,12 / +0,10  |
+| Farlig på fasta | 10 | 1,50–0,90 | +0,28 | +0,24 (+0,6) | −19 pe | −6 pe | −1,10 / +0,39  |
+| Stark mot fasta | 20 | 1,40–1,20 | +0,01 | −0,03 (−0,1) | +6 pe | −3 pe | −0,16 / +0,17  |
+| Medel mot fasta | 60 | 1,48–1,22 | −0,10 | −0,14 (−0,9) | −2 pe | +2 pe | −0,30 / +0,02  |
+| Svag mot fasta | 14 | 2,00–1,00 | +0,69 | +0,65 (+2,3) | −1 pe | +11 pe | +0,87 / +0,53 ✔ ⚑ |
 
 - Svårast mot **Bollinnehav** (−0,40 p/match rel. eget snitt, z −1,6, 25 m) – åt samma håll i båda halvorna men svagt
 - Bäst mot **Backar hem** (+0,39 p/match rel. eget snitt, z +1,6, 22 m) – inte stabilt, troligen slump
 
 ### Pisa
 
-Egen stil nu (jämfört med vad lagets styrka motiverar): **Backar hem, Kortpass, Lågpress** (faktiskt bollinnehav 45,8 %). 189 matcher med stil, mot marknaden totalt −0,04 per match.
+Egen stil 2024/25 (jämfört med vad lagets styrka motiverar): **Backar hem, Blandat, Lågpress, Farlig på fasta, Svag mot fasta** (faktiskt bollinnehav 45,8 %). 189 matcher med stil, mot marknaden totalt −0,04 per match.
+
+Fasta situationer per match: 2026/27 (5 m): 0,80 mål för (xG 0,36), 0,00 emot (xG 0,14), 5,00 hörnor.
 
 | Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Halvor |
 |---|---|---|---|---|---|---|---|
@@ -229,13 +326,21 @@ Egen stil nu (jämfört med vad lagets styrka motiverar): **Backar hem, Kortpass
 | Lågpress | 51 | 1,14–1,47 | +0,01 | +0,05 (+0,4) | +5 pe | +8 pe | −0,03 / +0,07  |
 | Mellanpress | 80 | 1,25–1,30 | −0,05 | −0,01 (−0,1) | −2 pe | +9 pe | +0,05 / −0,07  |
 | Högpress | 58 | 1,22–1,34 | −0,07 | −0,03 (−0,2) | +4 pe | +4 pe | +0,07 / −0,35  |
+| Svag på fasta | 56 | 1,18–1,30 | −0,04 | −0,01 (−0,0) | −2 pe | +2 pe | +0,13 / −0,17  |
+| Medel på fasta | 114 | 1,20–1,34 | −0,07 | −0,04 (−0,3) | +5 pe | +10 pe | −0,03 / −0,04 ✔ |
+| Farlig på fasta | 19 | 1,37–1,63 | +0,19 | +0,23 (+0,8) | −2 pe | +7 pe | +0,26 / +0,19 ✔ |
+| Stark mot fasta | 42 | 1,07–1,64 | −0,30 | −0,26 (−1,6) | +1 pe | +19 pe | −0,10 / −0,36 ✔ |
+| Medel mot fasta | 130 | 1,25–1,28 | +0,04 | +0,07 (+0,7) | +1 pe | +4 pe | +0,10 / +0,05 ✔ |
+| Svag mot fasta | 17 | 1,29–1,29 | +0,03 | +0,07 (+0,3) | +17 pe | +2 pe | −0,00 / +0,11  |
 
-- Svårast mot **Kortpass** (−0,15 p/match rel. eget snitt, z −1,0, 42 m) – åt samma håll i båda halvorna men svagt
-- Bäst mot **Lågpress** (+0,05 p/match rel. eget snitt, z +0,4, 51 m) – inte stabilt, troligen slump
+- Svårast mot **Stark mot fasta** (−0,26 p/match rel. eget snitt, z −1,6, 42 m) – åt samma håll i båda halvorna men svagt
+- Bäst mot **Farlig på fasta** (+0,23 p/match rel. eget snitt, z +0,8, 19 m) – åt samma håll i båda halvorna men svagt
 
 ### Sampdoria
 
-Egen stil nu (jämfört med vad lagets styrka motiverar): **Balanserat, Kortpass, Högpress** (faktiskt bollinnehav 50,7 %). 277 matcher med stil, mot marknaden totalt −0,11 per match.
+Egen stil 2025/26 (jämfört med vad lagets styrka motiverar): **Balanserat, Kortpass, Mellanpress, Medel på fasta, Medel mot fasta** (faktiskt bollinnehav 50,7 %). 277 matcher med stil, mot marknaden totalt −0,11 per match.
+
+Fasta situationer per match: 2026/27 (5 m): 0,00 mål för (xG 0,24), 0,40 emot (xG 0,26), 5,60 hörnor · 2025/26 (38 m): 0,21 mål för (xG 0,27), 0,34 emot (xG 0,27), 5,00 hörnor.
 
 | Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Halvor |
 |---|---|---|---|---|---|---|---|
@@ -248,13 +353,21 @@ Egen stil nu (jämfört med vad lagets styrka motiverar): **Balanserat, Kortpass
 | Lågpress | 75 | 1,17–1,48 | −0,14 | −0,02 (−0,2) | −2 pe | +8 pe | +0,31 / −0,29  |
 | Mellanpress | 120 | 1,04–1,53 | −0,15 | −0,04 (−0,4) | −3 pe | −3 pe | −0,01 / −0,07 ✔ |
 | Högpress | 82 | 1,12–1,56 | −0,03 | +0,08 (+0,6) | −2 pe | +3 pe | +0,21 / −0,11  |
+| Svag på fasta | 78 | 1,10–1,65 | −0,13 | −0,02 (−0,2) | −0 pe | −1 pe | −0,07 / +0,04  |
+| Medel på fasta | 141 | 1,18–1,48 | −0,06 | +0,05 (+0,5) | −3 pe | +3 pe | +0,35 / −0,18  |
+| Farlig på fasta | 58 | 0,90–1,47 | −0,22 | −0,10 (−0,7) | −6 pe | +3 pe | +0,04 / −0,30  |
+| Stark mot fasta | 62 | 1,10–1,47 | −0,14 | −0,02 (−0,1) | −10 pe | +2 pe | +0,44 / −0,46  |
+| Medel mot fasta | 159 | 1,09–1,56 | −0,11 | +0,00 (+0,0) | −1 pe | +3 pe | +0,07 / −0,05  |
+| Svag mot fasta | 56 | 1,13–1,50 | −0,10 | +0,02 (+0,1) | −0 pe | −1 pe | +0,05 / −0,04  |
 
 - Svårast mot **Kortpass** (−0,37 p/match rel. eget snitt, z −2,7, 56 m) – ⚑ håller i båda halvorna
 - Bäst mot **Blandat** (+0,11 p/match rel. eget snitt, z +1,1, 119 m) – åt samma håll i båda halvorna men svagt
 
 ### Sudtirol
 
-Egen stil nu (jämfört med vad lagets styrka motiverar): **Balanserat, Kortpass, Lågpress** (faktiskt bollinnehav 50,3 %). 93 matcher med stil, mot marknaden totalt +0,07 per match.
+Egen stil 2025/26 (jämfört med vad lagets styrka motiverar): **Backar hem, Direktspel, Högpress, Medel på fasta, Medel mot fasta** (faktiskt bollinnehav 50,3 %). 93 matcher med stil, mot marknaden totalt +0,07 per match.
+
+Fasta situationer per match: 2026/27 (5 m): 0,40 mål för (xG 0,12), 0,00 emot (xG 0,12), 2,40 hörnor · 2025/26 (38 m): 0,37 mål för (xG 0,37), 0,37 emot (xG 0,24), 4,34 hörnor.
 
 | Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Halvor |
 |---|---|---|---|---|---|---|---|
@@ -267,13 +380,21 @@ Egen stil nu (jämfört med vad lagets styrka motiverar): **Balanserat, Kortpass
 | Lågpress | 40 | 1,10–1,25 | −0,02 | −0,09 (−0,5) | +7 pe | +3 pe | −0,11 / −0,09 ✔ |
 | Mellanpress | 37 | 1,19–1,54 | +0,05 | −0,02 (−0,1) | −5 pe | +16 pe | −0,11 / +0,16  |
 | Högpress | 16 | 1,50–1,13 | +0,34 | +0,28 (+0,8) | −0 pe | +19 pe | +0,07 / +1,16  |
+| Svag på fasta | 22 | 0,91–1,00 | +0,13 | +0,06 (+0,3) | +10 pe | −3 pe | +0,20 / −0,13  |
+| Medel på fasta | 58 | 1,31–1,34 | +0,08 | +0,01 (+0,1) | −0 pe | +15 pe | −0,07 / +0,10  |
+| Farlig på fasta | 13 | 1,23–1,92 | −0,08 | −0,15 (−0,4) | −7 pe | +18 pe | −1,50 / +0,09  |
+| Stark mot fasta | 18 | 1,00–1,33 | −0,10 | −0,16 (−0,6) | +13 pe | +10 pe | −0,29 / −0,00 ✔ |
+| Medel mot fasta | 60 | 1,25–1,30 | +0,03 | −0,04 (−0,3) | +2 pe | +9 pe | −0,03 / −0,04 ✔ |
+| Svag mot fasta | 15 | 1,27–1,53 | +0,41 | +0,34 (+1,0) | −17 pe | +19 pe | +0,26 / +0,39 ✔ |
 
-- Svårast mot **Lågpress** (−0,09 p/match rel. eget snitt, z −0,5, 40 m) – åt samma håll i båda halvorna men svagt
-- Bäst mot **Högpress** (+0,28 p/match rel. eget snitt, z +0,8, 16 m) – inte stabilt, troligen slump
+- Svårast mot **Stark mot fasta** (−0,16 p/match rel. eget snitt, z −0,6, 18 m) – åt samma håll i båda halvorna men svagt
+- Bäst mot **Svag mot fasta** (+0,34 p/match rel. eget snitt, z +1,0, 15 m) – åt samma håll i båda halvorna men svagt
 
 ### Verona
 
-Egen stil nu (jämfört med vad lagets styrka motiverar): **Bollinnehav, Kortpass, Mellanpress** (faktiskt bollinnehav 58,3 %). 273 matcher med stil, mot marknaden totalt −0,05 per match.
+Egen stil 2018/19 (jämfört med vad lagets styrka motiverar): **Bollinnehav, Kortpass, Lågpress, Medel på fasta, Svag mot fasta** (faktiskt bollinnehav 58,3 %). 273 matcher med stil, mot marknaden totalt −0,05 per match.
+
+Fasta situationer per match: 2026/27 (5 m): 0,20 mål för (xG 0,34), 0,20 emot (xG 0,34), 5,80 hörnor.
 
 | Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Halvor |
 |---|---|---|---|---|---|---|---|
@@ -286,13 +407,21 @@ Egen stil nu (jämfört med vad lagets styrka motiverar): **Bollinnehav, Kortpas
 | Lågpress | 66 | 0,83–1,39 | −0,08 | −0,02 (−0,2) | +2 pe | −2 pe | +0,28 / −0,15  |
 | Mellanpress | 125 | 1,15–1,45 | −0,06 | −0,01 (−0,1) | +2 pe | +2 pe | −0,01 / +0,00  |
 | Högpress | 82 | 1,13–1,59 | −0,03 | +0,03 (+0,2) | +2 pe | +2 pe | +0,06 / −0,02  |
+| Svag på fasta | 82 | 1,05–1,37 | +0,03 | +0,09 (+0,7) | +2 pe | −2 pe | +0,17 / +0,02 ✔ |
+| Medel på fasta | 133 | 1,05–1,56 | −0,14 | −0,09 (−0,9) | +5 pe | +0 pe | −0,12 / −0,06 ✔ |
+| Farlig på fasta | 58 | 1,16–1,43 | +0,02 | +0,07 (+0,5) | −6 pe | +6 pe | +0,27 / −0,18  |
+| Stark mot fasta | 80 | 1,21–1,36 | +0,06 | +0,11 (+0,8) | +4 pe | +5 pe | +0,17 / +0,07 ✔ |
+| Medel mot fasta | 151 | 1,02–1,55 | −0,08 | −0,03 (−0,3) | +1 pe | +2 pe | +0,08 / −0,12  |
+| Svag mot fasta | 42 | 0,98–1,43 | −0,17 | −0,11 (−0,6) | +2 pe | −10 pe | −0,10 / −0,13 ✔ |
 
-- Svårast mot **Balanserat** (−0,09 p/match rel. eget snitt, z −0,9, 109 m) – inte stabilt, troligen slump
+- Svårast mot **Medel på fasta** (−0,09 p/match rel. eget snitt, z −0,9, 133 m) – åt samma håll i båda halvorna men svagt
 - Bäst mot **Direktspel** (+0,15 p/match rel. eget snitt, z +1,2, 94 m) – åt samma håll i båda halvorna men svagt
 
 ### Virtus Entella
 
-Egen stil nu (jämfört med vad lagets styrka motiverar): **Bollinnehav, Kortpass, Högpress** (faktiskt bollinnehav 52,1 %). 34 matcher med stil, mot marknaden totalt −0,35 per match.
+Egen stil 2025/26 (jämfört med vad lagets styrka motiverar): **Backar hem, Blandat, Mellanpress, Medel på fasta, Svag mot fasta** (faktiskt bollinnehav 52,1 %). 34 matcher med stil, mot marknaden totalt −0,35 per match.
+
+Fasta situationer per match: 2026/27 (5 m): 0,20 mål för (xG 0,18), 0,80 emot (xG 0,24), 4,00 hörnor · 2025/26 (38 m): 0,26 mål för (xG 0,36), 0,66 emot (xG 0,31), 5,13 hörnor.
 
 | Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Halvor |
 |---|---|---|---|---|---|---|---|
@@ -305,5 +434,12 @@ Egen stil nu (jämfört med vad lagets styrka motiverar): **Bollinnehav, Kortpas
 | Lågpress | 4 | 0,50–1,00 | −0,84 | −0,48 (−1,3) | +20 pe | +6 pe | −0,40 / −0,56  |
 | Mellanpress | 17 | 1,06–1,53 | −0,17 | +0,18 (+0,8) | +18 pe | +1 pe | −0,04 / +0,43  |
 | Högpress | 13 | 0,77–1,85 | −0,44 | −0,09 (−0,3) | −28 pe | +7 pe | +0,33 / −0,44  |
+| Svag på fasta | 8 | 0,50–1,63 | −0,47 | −0,11 (−0,6) | +23 pe | −24 pe | −0,49 / +0,26  |
+| Medel på fasta | 22 | 1,00–1,55 | −0,28 | +0,08 (+0,3) | −10 pe | +14 pe | +0,27 / −0,12  |
+| Farlig på fasta | 4 | 1,00–1,75 | −0,55 | −0,19 (−0,9) | +20 pe | +5 pe | −0,10 / −0,28  |
+| Stark mot fasta | 7 | 0,57–1,29 | −0,30 | +0,06 (+0,2) | −0 pe | −4 pe | +0,19 / −0,05  |
+| Medel mot fasta | 25 | 0,92–1,68 | −0,39 | −0,03 (−0,2) | −4 pe | +6 pe | −0,01 / −0,06 ✔ |
+| Svag mot fasta | 2 | 1,50–1,50 | −0,14 | +0,21 (+2,3) | +69 pe | +4 pe | +0,34 / +0,08  |
 
+- Svårast mot **Medel mot fasta** (−0,03 p/match rel. eget snitt, z −0,2, 25 m) – åt samma håll i båda halvorna men svagt
 - Bäst mot **Mellanpress** (+0,18 p/match rel. eget snitt, z +0,8, 17 m) – inte stabilt, troligen slump

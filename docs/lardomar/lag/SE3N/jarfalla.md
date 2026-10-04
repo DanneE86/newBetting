@@ -1,16 +1,16 @@
 # Järfälla (Div 1 Norra) – lärdomar
 
-Genererad 2026-09-29. Ligans fil: [SE3N](../../ligor/SE3N.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-10-04. Ligans fil: [SE3N](../../ligor/SE3N.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
-Form senaste 8 (äldst → senast): FFFFFVFF · senaste match 2026-09-26
+Form senaste 8 (äldst → senast): FFFFVFFO · senaste match 2026-10-03
 
 ## Säsonger
 
 | Säsong | M | P/M | Hemma P/M | Borta P/M | Kryss | Mål för–emot | Över 2,5 |
 |---|---|---|---|---|---|---|---|
-| 2026/27 | 24 | 0,75 | 0,75 | 0,75 | 13 % | 1,33–2,25 | 71 % |
+| 2026/27 | 25 | 0,76 | 0,75 | 0,77 | 16 % | 1,32–2,20 | 68 % |
 
 ## Inbördes möten
 
@@ -25,10 +25,11 @@ Form senaste 8 (äldst → senast): FFFFFVFF · senaste match 2026-09-26
 | Piteå | 2 | 1-0-1 | 2–3 | 2026-09-20 1-3 (b) |
 | Sollentuna | 2 | 0-0-2 | 1–3 | 2026-08-15 1-2 (b) |
 | Stockholm Internazionale | 2 | 0-0-2 | 0–6 | 2026-08-21 0-2 (b) |
+| Stocksund | 2 | 0-1-1 | 2–7 | 2026-10-03 1-1 (b) |
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (Transfermarkt, hämtad 2026-09-29)
+## Trupp (Transfermarkt, hämtad 2026-10-04)
 
 Tränare: Mikael Andersson. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

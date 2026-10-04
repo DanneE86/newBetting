@@ -1,11 +1,15 @@
 # Empoli (Serie B) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [SB](../../ligor/SB.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [SB](../../ligor/SB.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - 2025/26: −0,29 poäng per match mot marknaden. Ligan visar ingen persistens, så räkna inte med att det fortsätter.
 - Stark historik mot Verona (−0,52 p/match mot marknaden, 8 möten), Cremonese (+0,59 p/match mot marknaden, 7 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Efter landslagsuppehåll: 0,92 poäng per match mot 1,30 annars (5-9-12 på 26 matcher), mot marknaden −0,13 mot +0,04. Sedan 2023: 2-5-5. Ingen skillnad värd att spela på.
+- Spelstil 2025/26: Balanserat, Kortpass, Lågpress, Farlig på fasta, Svag mot fasta. Bäst mot Bollinnehav (+0,25, samma håll i båda halvorna men svagt), Högpress (+0,15, samma håll i båda halvorna men svagt), Stark mot fasta (+0,15, samma håll i båda halvorna men svagt). Svårast mot Balanserat (−0,20, samma håll i båda halvorna men svagt), Medel mot fasta (−0,11, svagt), Lågpress (−0,08, svagt). Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2025/26: 0,40 mål för per match (xG 0,44), 0,50 emot (xG 0,33), 4,8 hörnor.
+- Svårt för: Verona (1-3-4, 0,75 p/match, mot marknaden −0,52), Sampdoria (2-2-4, 1,00 p/match, mot marknaden −0,42), Virtus Entella (2-1-3, 1,17 p/match, mot marknaden −0,44).
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -34,6 +38,76 @@ Form (äldst → senast): FVOVFVFF · senaste match 2026-09-20
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
 
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/SB.md#empoli) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2025/26: **Balanserat, Kortpass, Lågpress, Farlig på fasta, Svag mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026/27 | 5 | 0,20 | 0,38 | 0,20 | 0,28 | 4,0 |
+| 2025/26 | 38 | 0,40 | 0,44 | 0,50 | 0,33 | 4,8 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Backar hem | 83 | 1,18–1,59 | +0,03 | +0,04 (0,3) | +2 pe | −3 pe | svag |
+| Balanserat | 97 | 1,11–1,42 | −0,21 | −0,20 (−1,8) | +10 pe | −9 pe | ✔ samma håll |
+| Bollinnehav | 63 | 1,13–1,17 | +0,24 | +0,25 (1,6) | +6 pe | −8 pe | ✔ samma håll |
+| Kortpass | 50 | 1,20–1,36 | +0,07 | +0,07 (0,4) | +4 pe | −1 pe | ✔ samma håll |
+| Blandat | 96 | 1,10–1,58 | −0,03 | −0,02 (−0,2) | +2 pe | −4 pe | svag |
+| Direktspel | 97 | 1,14–1,28 | −0,03 | −0,02 (−0,2) | +12 pe | −12 pe | svag |
+| Lågpress | 59 | 1,15–1,44 | −0,09 | −0,08 (−0,6) | +8 pe | +1 pe | svag |
+| Mellanpress | 118 | 1,18–1,55 | −0,05 | −0,04 (−0,4) | −0 pe | −3 pe | svag |
+| Högpress | 66 | 1,06–1,15 | +0,14 | +0,15 (1,1) | +17 pe | −20 pe | ✔ samma håll |
+| Svag på fasta | 64 | 1,11–1,42 | −0,05 | −0,04 (−0,3) | +6 pe | −4 pe | svag |
+| Medel på fasta | 129 | 1,15–1,38 | −0,02 | −0,01 (−0,1) | +6 pe | −8 pe | svag |
+| Farlig på fasta | 50 | 1,16–1,50 | +0,08 | +0,09 (0,5) | +7 pe | −7 pe | svag |
+| Stark mot fasta | 75 | 1,19–1,23 | +0,14 | +0,15 (1,0) | +7 pe | −9 pe | ✔ samma håll |
+| Medel mot fasta | 136 | 1,08–1,54 | −0,12 | −0,11 (−1,1) | +6 pe | −6 pe | svag |
+| Svag mot fasta | 32 | 1,28–1,31 | +0,10 | +0,11 (0,5) | +6 pe | −7 pe | svag |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
+
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 26 | 5-9-12 | 0,92 | −0,13 |
+| Efter uppehåll sedan 2023 | 12 | 2-5-5 | 0,92 | −0,06 |
+| Övriga matcher | 324 | 107-100-117 | 1,30 | +0,04 |
+
+Hela ligan efter uppehåll: +0,00 mot marknaden (n 535). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2026-04-06 | Sampdoria - Empoli | 1-0 F | −1,51 |
+| 2025-11-22 | Avellino - Empoli | 0-3 V | +1,45 |
+| 2025-10-19 | Empoli - Venezia | 1-1 O | −0,25 |
+| 2025-09-14 | Empoli - Spezia | 1-1 O | −0,23 |
+| 2025-03-29 | Como - Empoli | 1-1 O | +0,86 |
+| 2024-11-25 | Empoli - Udinese | 1-1 O | −0,30 |
+| 2024-10-20 | Empoli - Napoli | 0-1 F | −0,79 |
+| 2024-09-14 | Empoli - Juventus | 0-0 O | +0,30 |
+| 2024-04-01 | Inter - Empoli | 2-0 F | −0,41 |
+| 2023-11-26 | Empoli - Sassuolo | 3-4 F | −1,37 |
+| 2023-10-23 | Fiorentina - Empoli | 0-2 V | +2,23 |
+| 2023-09-17 | Roma - Empoli | 7-0 F | −0,72 |
+| 2023-04-03 | Empoli - Lecce | 1-0 V | +1,59 |
+| 2022-10-01 | Empoli - Milan | 1-3 F | −0,73 |
+| 2022-04-03 | Fiorentina - Empoli | 1-0 F | −0,94 |
+| 2021-11-22 | Verona - Empoli | 2-1 F | −1,09 |
+| 2021-10-17 | Empoli - Atalanta | 1-4 F | −0,72 |
+| 2021-09-11 | Empoli - Venezia | 1-2 F | −1,96 |
+| 2020-10-17 | Pescara - Empoli | 1-2 V | +1,38 |
+| 2019-11-23 | Empoli - Venezia | 1-1 O | −0,93 |
+| 2019-10-20 | Empoli - Cremonese | 1-1 O | −0,75 |
+| 2019-09-15 | Crotone - Empoli | 0-0 O | +0,52 |
+| 2019-03-30 | Juventus - Empoli | 1-0 F | −0,60 |
+| 2018-11-25 | Empoli - Atalanta | 3-2 V | +2,23 |
+| 2018-10-21 | Frosinone - Empoli | 3-3 O | +0,20 |
+| 2018-09-16 | Empoli - Lazio | 0-1 F | −0,78 |
+
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
 | Motståndare | M | V-O-F | Mål | Mot marknaden | Kryss mot odds | Senast |
@@ -60,43 +134,45 @@ Form (äldst → senast): FVOVFVFF · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): Verona 0,75 p/match (−0,52), Sampdoria 1,00 p/match (−0,42), Virtus Entella 1,17 p/match (−0,44).
 
-Tränare: Guido Pagliuca. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+## Trupp (FotMob, hämtad 2026-10-04)
+
+Tränare: Matteo Andreoletti (tidigare: Guido Pagliuca till 2026-09-28). Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
 | 1 | Samuele Perisan | GK | 29 | Italy | 156 k€ | – | 0 | 0 | 0/0 |  |
 | 12 | Jacopo Seghetti | GK | 21 | Italy | – | 7,34 | 0 | 0 | 0/0 |  |
-| 13 | Emiliano Filippis | Keeper | 22 | Italy | 799 k€ | – | 0 | 0 | 0/0 |  |
+| 13 | Emiliano Filippis | Keeper | 22 | Italy | 632 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 6 | Simone Romagnoli | CB | 36 | Italy | 133 k€ | 5,87 | 0 | 0 | 0/0 |  |
-| 25 | Marco Curto | CB | 27 | Italy | 442 k€ | 6,27 | 0 | 0 | 1/1 |  |
-| 28 | Gabriele Indragoli | CB | 22 | Italy | 287 k€ | – | 0 | 0 | 0/0 |  |
+| 6 | Simone Romagnoli | CB | 36 | Italy | 159 k€ | 5,87 | 0 | 0 | 0/0 |  |
+| 25 | Marco Curto | CB | 27 | Italy | 435 k€ | 6,27 | 0 | 0 | 1/1 |  |
+| 28 | Gabriele Indragoli | CB | 22 | Italy | 275 k€ | – | 0 | 0 | 0/0 |  |
 | 31 | Samsondeen Babalola | Defender | 18 | Germany | – | – | 0 | 0 | 0/0 |  |
-| 33 | Cristian Cauz | CB | 30 | Italy | 143 k€ | 6,94 | 0 | 1 | 1/0 |  |
+| 33 | Cristian Cauz | CB | 30 | Italy | 184 k€ | 6,94 | 0 | 1 | 1/0 |  |
 | 36 | Dawid Bembnista | Defender | 19 | Poland | – | – | 0 | 0 | 0/0 |  |
 | 40 | Roberto Berizzi | Defender | 19 | Italy | – | – | 0 | 0 | 0/0 |  |
-| 91 | Niccolò Corrado | LB,LM | 26 | Italy | 799 k€ | 6,51 | 0 | 0 | 0/0 |  |
+| 91 | Niccolò Corrado | LB,LM | 26 | Italy | 406 k€ | 6,51 | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 5 | Duccio Degli Innocenti | CM,CDM,CAM | 23 | Italy | 1,2 M€ | – | 0 | 0 | 0/0 |  |
-| 8 | Luca Magnino | CM,CB,CDM,RW | 29 | Italy | 291 k€ | 6,82 | 0 | 1 | 3/0 |  |
-| 10 | Edoardo Saporiti | CAM,ST,LW,CM | 25 | Italy | 623 k€ | 7,14 | 1 | 0 | 0/0 |  |
-| 15 | Joseph Ceesay | CAM,RM,RWB,ST,LM | 28 | The Gambia | 238 k€ | 6,18 | 0 | 0 | 0/1 |  |
-| 21 | Gerard Yepes | CDM,CM | 24 | Spain | 628 k€ | 7,09 | 1 | 0 | 1/0 |  |
-| 23 | Filippo Bandinelli | CM,CAM | 31 | Italy | 310 k€ | 6,59 | 0 | 0 | 0/0 |  |
-| 35 | Matteo Egan | RWB | 18 | Ireland | 600 k€ | 6,80 | 0 | 1 | 0/0 |  |
+| 5 | Duccio Degli Innocenti | CM,CDM,CAM | 23 | Italy | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 8 | Luca Magnino | CM,CB,CDM,RW | 29 | Italy | 358 k€ | 6,82 | 0 | 1 | 3/0 |  |
+| 10 | Edoardo Saporiti | CAM,ST,LW,CM | 25 | Italy | 613 k€ | 7,14 | 1 | 0 | 0/0 |  |
+| 15 | Joseph Ceesay | CAM,RWB,RM,ST,LM | 28 | The Gambia | 248 k€ | 6,18 | 0 | 0 | 0/1 |  |
+| 21 | Gerard Yepes | CDM,CM | 24 | Spain | 836 k€ | 7,09 | 1 | 0 | 1/0 |  |
+| 23 | Filippo Bandinelli | CM,CAM | 31 | Italy | 291 k€ | 6,59 | 0 | 0 | 0/0 |  |
+| 35 | Matteo Egan | RWB | 18 | Ireland | 609 k€ | 6,80 | 0 | 1 | 0/0 |  |
 | 38 | Mattia Huqi | Midfielder | 19 | Albania | – | – | 0 | 0 | 0/0 |  |
 | 39 | Edoardo Biondini | CDM,RW,CM | 0 | Italy | – | 6,45 | 0 | 0 | 1/0 |  |
-| 44 | Lapo Deli | Midfielder | 20 | Italy | – | 6,14 | 0 | 0 | 1/0 |  |
-| 57 | Luca Belardinelli | CDM,CM | 25 | Italy | 271 k€ | 6,19 | 0 | 0 | 1/0 |  |
-| 96 | Andrea Orlandi | Midfielder | 19 | Italy | 423 k€ | – | 0 | 0 | 0/0 |  |
-| 98 | Karim Zedadka | LM,CM | 26 | Algeria | 414 k€ | 6,55 | 0 | 0 | 1/0 |  |
+| 44 | Lapo Deli | Midfielder | 20 | Italy | 324 k€ | 6,14 | 0 | 0 | 1/0 |  |
+| 57 | Luca Belardinelli | CDM,CM | 25 | Italy | 257 k€ | 6,19 | 0 | 0 | 1/0 |  |
+| 96 | Andrea Orlandi | Midfielder | 19 | Italy | 324 k€ | – | 0 | 0 | 0/0 |  |
+| 98 | Karim Zedadka | LM,CM | 26 | Algeria | 386 k€ | 6,55 | 0 | 0 | 1/0 |  |
 | | **Anfallare** | | | | | | | | | |
 |  | Salvatore Monaco | ST | 19 | Italy | 367 k€ | – | 0 | 0 | 0/0 |  |
-| 11 | Stiven Shpendi | ST,CAM,RM | 23 | Albania | 1,7 M€ | 6,40 | 1 | 0 | 0/0 |  |
-| 20 | Filippo Distefano | ST | 23 | Italy | 1,2 M€ | 6,52 | 0 | 0 | 1/0 |  |
-| 77 | Bogdan Popov | ST | 19 | Ukraine | 3,5 M€ | 6,40 | 1 | 0 | 1/0 |  |
+| 11 | Stiven Shpendi | ST,CAM,RM | 23 | Albania | 4,7 M€ | 6,40 | 1 | 0 | 0/0 |  |
+| 20 | Filippo Distefano | ST | 23 | Italy | 1,1 M€ | 6,52 | 0 | 0 | 1/0 |  |
+| 77 | Bogdan Popov | ST | 19 | Ukraine | 4,3 M€ | 6,40 | 1 | 0 | 1/0 |  |
 
 Har lämnat truppen sedan vi började spara (1): Danilo Busiello (senast 2026-09-29).

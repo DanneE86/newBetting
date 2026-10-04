@@ -1,12 +1,13 @@
 # Rochdale (League Two) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Senaste 8: xG-målskillnaden är −0,50 per match sämre än målskillnaden.
 - 2022/23: −0,36 poäng per match mot marknaden. Ligan visar ingen persistens, så räkna inte med att det fortsätter.
 - Stark historik mot Gillingham (−0,79 p/match mot marknaden, 8 möten), Shrewsbury (+0,66 p/match mot marknaden, 7 möten), Accrington (+1,31 p/match mot marknaden, 6 möten), Walsall (+0,60 p/match mot marknaden, 6 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Svårt för: Gillingham (0-3-5, 0,38 p/match, mot marknaden −0,79), Swindon (1-3-2, 1,00 p/match, mot marknaden −0,27), Bristol Rvs (2-1-3, 1,17 p/match, mot marknaden −0,03), Fleetwood Town (2-1-3, 1,17 p/match, mot marknaden +0,14). Där marknaden ligger nära noll är laget bara sämre i de mötena än annars, och oddsen vet redan om det.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -32,14 +33,30 @@ Form (äldst → senast): FFFVFOVV · senaste match 2026-09-26
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
 
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 1 | 0-1-0 | 1,00 | −0,36 |
+| Efter uppehåll sedan 2023 | 0 | – | – | – |
+| Övriga matcher | 271 | 71-75-125 | 1,06 | −0,18 |
+
+Hela ligan efter uppehåll: 0,00 mot marknaden (n 84). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2021-11-13 | Rochdale - Leyton Orient | 2-2 O | −0,36 |
+
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
 | Motståndare | M | V-O-F | Mål | Mot marknaden | Kryss mot odds | Senast |
 |---|---|---|---|---|---|---|
 | Gillingham | 8 | 0-3-5 | 7–17 | −0,79 | +10 pe | 2026-09-05 1-4 (h) |
-| Bristol Rvs | 7 | 2-2-3 | 10–12 | −0,11 | +1 pe | 2022-04-30 3-4 (h) |
 | Shrewsbury | 7 | 4-1-2 | 10–7 | +0,66 | −14 pe | 2026-09-01 3-0 (h) |
 | Accrington | 6 | 5-0-1 | 10–5 | +1,31 | −26 pe | 2021-04-17 3-1 (h) |
+| Bristol Rvs | 6 | 2-1-3 | 10–12 | −0,03 | −11 pe | 2022-04-30 3-4 (h) |
 | Fleetwood Town | 6 | 2-1-3 | 8–9 | +0,14 | −10 pe | 2026-09-26 2-1 (b) |
 | Northampton | 6 | 2-3-1 | 6–6 | +0,32 | +21 pe | 2023-02-11 1-1 (h) |
 | Swindon | 6 | 1-3-2 | 9–13 | −0,27 | +22 pe | 2023-03-18 4-4 (h) |
@@ -58,45 +75,47 @@ Form (äldst → senast): FFFVFOVV · senaste match 2026-09-26
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): Gillingham 0,38 p/match (−0,79), Swindon 1,00 p/match (−0,27), Bristol Rvs 1,17 p/match (−0,03), Fleetwood Town 1,17 p/match (+0,14).
+
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Ian Watson. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Nils Ramming | GK | 19 | Sweden | 990 k€ | 6,66 | 0 | 0 | 1/0 |  |
+| 1 | Nils Ramming | GK | 19 | Sweden | 813 k€ | 6,75 | 0 | 0 | 1/0 |  |
 | 12 | Jake Spaven | Keeper | 19 | England | – | – | 0 | 0 | 0/0 |  |
-| 20 | Sam Waller | GK | 23 | England | 186 k€ | 7,33 | 0 | 0 | 0/0 |  |
+| 20 | Sam Waller | GK | 23 | England | 169 k€ | 7,33 | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Charlie Tasker | RB,RWB,RM | 20 | England | 555 k€ | 7,03 | 1 | 0 | 0/0 |  |
-| 3 | Kaiden Wilson | CB,RB | 21 | England | – | 6,33 | 0 | 0 | 1/0 |  |
-| 5 | Laurence Maguire | CB | 29 | England | 122 k€ | 6,40 | 0 | 0 | 0/0 |  |
-| 6 | Ethan Ebanks-Landell | CB | 33 | England | 68 k€ | 6,74 | 1 | 0 | 0/0 |  |
-| 26 | Sam Sherring | CB,RB | 26 | England | 141 k€ | 6,51 | 0 | 0 | 1/0 |  |
+| 2 | Charlie Tasker | RB,RWB,RM | 20 | England | 317 k€ | 7,19 | 1 | 0 | 0/0 |  |
+| 3 | Kaiden Wilson | CB,RB | 21 | England | – | 6,39 | 0 | 0 | 1/0 |  |
+| 5 | Laurence Maguire | CB | 29 | England | 176 k€ | 6,40 | 0 | 0 | 0/0 |  |
+| 6 | Ethan Ebanks-Landell | CB | 33 | England | 101 k€ | 6,74 | 1 | 0 | 0/0 |  |
+| 26 | Sam Sherring | CB,RB | 26 | England | 144 k€ | 6,67 | 0 | 0 | 1/0 |  |
 | 33 | Sam Beckwith | CB | 24 | England | – | – | 0 | 0 | 0/0 |  |
-| 44 | Aden Flint | CB | 37 | England | 174 k€ | 7,80 | 1 | 0 | 0/0 |  |
+| 44 | Aden Flint | CB | 37 | England | 202 k€ | 7,93 | 1 | 1 | 0/0 |  |
 | 54 | Tom Bradley | RB | 0 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 4 | Ryan East | CM,CDM,CAM | 28 | England | 96 k€ | 6,91 | 0 | 1 | 0/0 |  |
-| 8 | Harvey Gilmour | CM,CDM,CAM | 27 | England | – | 6,62 | 0 | 0 | 2/0 |  |
-| 13 | Olutobi Adebayo-Rowling | RM,RW,RB,CM,LB,CB | 29 | England | – | 6,32 | 0 | 0 | 3/1 |  |
-| 14 | Edward Francis | CDM,CM | 27 | England | 215 k€ | 5,99 | 0 | 0 | 1/1 |  |
+| 4 | Ryan East | CM,CDM,CAM | 28 | England | 124 k€ | 6,91 | 0 | 1 | 0/0 |  |
+| 8 | Harvey Gilmour | CM,CDM,CAM | 27 | England | – | 6,63 | 0 | 0 | 2/0 |  |
+| 13 | Olutobi Adebayo-Rowling | RM,RW,RB,LB,CM,CB | 29 | England | – | 6,32 | 0 | 0 | 3/1 |  |
+| 14 | Edward Francis | CDM,CM | 27 | England | 224 k€ | 6,18 | 0 | 0 | 1/1 |  |
 | 16 | Casey Pettit | CM | 23 | England | – | – | 0 | 0 | 0/0 |  |
-| 17 | Babajide Adeeko | CDM | 23 | Ireland | 286 k€ | 6,84 | 1 | 1 | 1/0 |  |
-| 21 | Kane Taylor | RM,LW,CAM | 21 | England | 343 k€ | 6,54 | 0 | 1 | 0/0 |  |
+| 17 | Babajide Adeeko | CDM | 23 | Ireland | 218 k€ | 6,86 | 1 | 1 | 1/0 |  |
+| 21 | Kane Taylor | RM,LW,CAM | 21 | England | 274 k€ | 6,54 | 0 | 1 | 0/0 |  |
 | 22 | Dan Moss | LM,LB,CB | 25 | England | – | 7,14 | 1 | 0 | 2/0 |  |
-| 27 | Bryant Bilongo | LB,LWB,LW | 25 | England | 73 k€ | 5,11 | 0 | 0 | 1/1 |  |
+| 27 | Bryant Bilongo | LB,LWB,LW | 25 | England | 76 k€ | 5,11 | 0 | 0 | 1/1 |  |
 | 28 | Will Jenkins | RW | 24 | England | – | – | 0 | 0 | 0/0 |  |
 | 56 | Reece Leonard | Midfielder | 0 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 |  | Lucas Bispo Martinez | Attacker | 0 | England | – | – | 0 | 0 | 0/0 |  |
-| 7 | Cian Hayes | RW | 23 | England | 281 k€ | 6,60 | 0 | 0 | 0/0 |  |
-| 9 | Emmanuel Dieseruvwe | ST | 31 | England | – | 6,27 | 0 | 1 | 0/0 |  |
-| 10 | Devante Rodney | ST,CAM,LW,RW | 28 | England | 115 k€ | 5,78 | 0 | 0 | 0/0 |  |
-| 11 | Zain Silcott-Duberry | LW | 21 | England | 408 k€ | 6,10 | 0 | 0 | 0/0 |  |
-| 18 | Jonny Smith | RW | 29 | England | 168 k€ | 6,68 | 1 | 0 | 0/0 |  |
-| 19 | Luke Hannant | LW,RW,LM,RM | 32 | England | 85 k€ | 6,70 | 1 | 0 | 1/0 |  |
-| 39 | Dajaune Brown | ST,CAM,RW | 20 | Jamaica | 624 k€ | 6,94 | 2 | 2 | 0/0 |  |
+| 7 | Cian Hayes | RW | 23 | England | 265 k€ | 6,77 | 1 | 0 | 0/0 |  |
+| 9 | Emmanuel Dieseruvwe | ST | 31 | England | – | 6,24 | 0 | 1 | 0/0 |  |
+| 10 | Devante Rodney | ST,CAM,LW,RW | 28 | England | 96 k€ | 5,78 | 0 | 0 | 0/0 |  |
+| 11 | Zain Silcott-Duberry | LW | 21 | England | 242 k€ | 6,10 | 0 | 0 | 0/0 |  |
+| 18 | Jonny Smith | RW | 29 | England | 157 k€ | 6,59 | 1 | 0 | 0/0 |  |
+| 19 | Luke Hannant | LW,RW,LM,RM | 32 | England | 86 k€ | 6,58 | 1 | 0 | 1/0 |  |
+| 39 | Dajaune Brown | ST,CAM,RW | 20 | Jamaica | 597 k€ | 6,98 | 2 | 2 | 0/0 |  |
 | 40 | Ian Henderson | ST | 41 | England | 50 k€ | – | 0 | 0 | 0/0 |  |
-| 45 | Glenn Middleton | LW,RW | 26 | Scotland | 237 k€ | 6,90 | 0 | 2 | 1/0 |  |
+| 45 | Glenn Middleton | LW,RW | 26 | Scotland | 229 k€ | 7,20 | 0 | 2 | 1/0 |  |

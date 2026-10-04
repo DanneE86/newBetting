@@ -1,6 +1,6 @@
 # Slavia Prague (Chance Liga) – lärdomar
 
-Genererad 2026-09-29. Ligans fil: [CZ](../../ligor/CZ.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-10-04. Ligans fil: [CZ](../../ligor/CZ.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -35,48 +35,48 @@ Form senaste 8 (äldst → senast): VVOOVVVV · senaste match 2026-09-20
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Jindřich Trpišovský. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** David Zima (skadad, åter Early October 2026), Igoh Ogbu (skadad, åter Late September 2026), Ange N'Guessan (skadad, åter Back in training), Mubarak Suleiman (skadad, åter Back in training), Mojmír Chytil (skadad, åter Mid October 2026), Adonija Ouanda (skadad, åter Late September 2026)
+**Skadade/borta nu:** David Zima (osäker), Igoh Ogbu (skadad, åter Late September 2026), Ange N'Guessan (skadad, åter Back in training), Mubarak Suleiman (skadad, åter Back in training), Pavel Kačor (skadad, åter Late October 2026), Mojmír Chytil (skadad, åter Mid October 2026), Adonija Ouanda (osäker)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Ondřej Kolár | GK | 31 | Czechia | 75 k€ | – | 0 | 0 | 0/0 |  |
-| 29 | Nazar Domchak | GK | 19 | Ukraine | 1,6 M€ | – | 0 | 0 | 0/0 |  |
-| 35 | Jakub Markovič | GK | 25 | Czechia | 2,2 M€ | 7,05 | 0 | 0 | 0/0 |  |
-| 40 | Adam Rezek | Keeper | 20 | Czechia | 417 k€ | – | 0 | 0 | 0/0 |  |
+| 1 | Ondřej Kolár | GK | 31 | Czechia | 60 k€ | – | 0 | 0 | 0/0 |  |
+| 29 | Nazar Domchak | GK | 19 | Ukraine | 3,8 M€ | – | 0 | 0 | 0/0 |  |
+| 35 | Jakub Markovič | GK | 25 | Czechia | 2,5 M€ | 7,05 | 0 | 0 | 0/0 |  |
+| 40 | Adam Rezek | Keeper | 20 | Czechia | 289 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-|  | Hamidou Kante | LB | 21 | Senegal | 837 k€ | – | 0 | 0 | 0/0 |  |
-| 2 | Stepán Chaloupek | CB | 23 | Czechia | 3,1 M€ | 7,33 | 1 | 1 | 2/0 |  |
-| 3 | Tomás Holeš | CB,RB | 33 | Czechia | 853 k€ | 7,16 | 1 | 0 | 1/0 |  |
-| 4 | David Zima | CB | 25 | Czechia | 4,3 M€ | 7,23 | 1 | 0 | 0/0 | skadad, åter Early October 2026 |
-| 5 | Igoh Ogbu | CB | 26 | Nigeria | 4,8 M€ | – | 0 | 0 | 0/0 | skadad, åter Late September 2026 |
-| 6 | Ange N'Guessan | CB | 23 | France | 2,1 M€ | 6,82 | 0 | 1 | 1/0 | skadad, åter Back in training |
-| 27 | Tomás Vlček | CB,RB | 25 | Czechia | 2,7 M€ | 7,08 | 0 | 0 | 1/0 |  |
-| 42 | Mikulás Konečný | CB | 20 | Czechia | 2,5 M€ | 7,44 | 0 | 0 | 0/1 |  |
+|  | Hamidou Kante | LB | 21 | Senegal | 951 k€ | – | 0 | 0 | 0/0 |  |
+| 2 | Stepán Chaloupek | CB,RB | 23 | Czechia | 7,8 M€ | 7,33 | 1 | 1 | 2/0 |  |
+| 3 | Tomás Holeš | CB,RB | 33 | Czechia | 894 k€ | 7,16 | 1 | 0 | 1/0 |  |
+| 4 | David Zima | CB | 25 | Czechia | 6,7 M€ | 7,23 | 1 | 0 | 0/0 | osäker |
+| 5 | Igoh Ogbu | CB | 26 | Nigeria | 6,1 M€ | – | 0 | 0 | 0/0 | skadad, åter Late September 2026 |
+| 6 | Ange N'Guessan | CB | 23 | France | 4,0 M€ | 6,82 | 0 | 1 | 1/0 | skadad, åter Back in training |
+| 27 | Tomás Vlček | CB,RB | 25 | Czechia | 2,6 M€ | 7,08 | 0 | 0 | 1/0 |  |
+| 42 | Mikulás Konečný | CB | 20 | Czechia | 2,4 M€ | 7,44 | 0 | 0 | 0/1 |  |
 | 47 | David Barčot | CB | 17 | Czechia | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 8 | Oskar Kubiak | LM,LWB,RW | 20 | Poland | 1,0 M€ | 6,93 | 0 | 0 | 0/0 |  |
-| 9 | Adam Rajnoha | CDM,CM | 18 | Slovakia | 514 k€ | – | 0 | 0 | 0/0 |  |
-| 14 | Samuel Isife | RWB,RM | 22 | Nigeria | 1,8 M€ | 7,28 | 0 | 2 | 1/0 |  |
-| 15 | Mubarak Suleiman | CAM,LWB,CM | 19 | Nigeria | 1,5 M€ | 7,65 | 1 | 1 | 2/0 | skadad, åter Back in training |
-| 16 | David Moses | CDM,CM,RWB,RM | 22 | Nigeria | 8,2 M€ | 6,76 | 0 | 1 | 0/0 |  |
-| 17 | Lukás Provod | CAM,RW,CM | 29 | Czechia | 3,8 M€ | 6,96 | 0 | 0 | 0/0 |  |
-| 22 | Toumani Diakité | CDM,CM | 20 | Ivory Coast | 1,3 M€ | 6,32 | 0 | 0 | 0/0 |  |
-| 23 | Michal Sadílek | CDM,CM,CAM | 27 | Czechia | 4,6 M€ | 7,71 | 1 | 3 | 1/0 |  |
+| 8 | Oskar Kubiak | LM,LWB,RW | 20 | Poland | 1,6 M€ | 6,93 | 0 | 0 | 0/0 |  |
+| 9 | Adam Rajnoha | CM,CDM | 18 | Slovakia | 584 k€ | – | 0 | 0 | 0/0 |  |
+| 14 | Samuel Isife | RWB,RM | 22 | Nigeria | 2,2 M€ | 7,28 | 0 | 2 | 1/0 |  |
+| 15 | Mubarak Suleiman | CAM,LWB,CM | 19 | Nigeria | 1,7 M€ | 7,65 | 1 | 1 | 2/0 | skadad, åter Back in training |
+| 16 | David Moses | CDM,CM,RWB,RM | 22 | Nigeria | 11,9 M€ | 6,76 | 0 | 1 | 0/0 |  |
+| 17 | Lukás Provod | CAM,RW,CM | 29 | Czechia | 6,0 M€ | 6,96 | 0 | 0 | 0/0 |  |
+| 22 | Toumani Diakité | CDM,CM | 20 | Ivory Coast | 1,6 M€ | 6,32 | 0 | 0 | 0/0 |  |
+| 23 | Michal Sadílek | CDM,CM | 27 | Czechia | 7,1 M€ | 7,71 | 1 | 3 | 1/0 |  |
 | 26 | Ivan Schranz | CDM | 33 | Slovakia | 324 k€ | 6,19 | 0 | 1 | 0/0 |  |
 | 30 | Wiktor Nowak | CM,CDM,ST,RB,CAM | 22 | Poland | 1,5 M€ | 7,55 | 5 | 1 | 3/0 |  |
-| 32 | Pavel Kačor | CDM,RW | 20 | Czechia | 1,2 M€ | 6,31 | 0 | 0 | 0/0 |  |
-| 39 | David Jurásek | LWB,LB,LM | 26 | Czechia | 2,0 M€ | 7,27 | 1 | 0 | 0/0 |  |
-| 43 | Eliás Piták | RWB,RM | 20 | Czechia | 613 k€ | 6,87 | 0 | 0 | 0/0 |  |
-| 45 | Jakub Kolísek | LM,CAM | 19 | Czechia | 619 k€ | 6,11 | 0 | 0 | 1/0 |  |
+| 32 | Pavel Kačor | CDM,RW | 20 | Czechia | 1,4 M€ | 6,31 | 0 | 0 | 0/0 | skadad, åter Late October 2026 |
+| 39 | David Jurásek | LWB,LB,LM | 26 | Czechia | 4,8 M€ | 7,27 | 1 | 0 | 0/0 |  |
+| 43 | Eliás Piták | RWB,RM | 20 | Czechia | 535 k€ | 6,87 | 0 | 0 | 0/0 |  |
+| 45 | Jakub Kolísek | LM,CAM | 19 | Czechia | 686 k€ | 6,11 | 0 | 0 | 1/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 10 | Danijel Šturm | LW,RW,CAM,ST,LM | 27 | Slovenia | 1,3 M€ | 7,19 | 1 | 2 | 2/0 |  |
-| 13 | Mojmír Chytil | ST,RW,CAM | 27 | Czechia | 2,0 M€ | 7,06 | 4 | 0 | 0/0 | skadad, åter Mid October 2026 |
-| 18 | Adonija Ouanda | ST,RW,LW | 21 | Canada | – | 7,25 | 1 | 1 | 0/0 | skadad, åter Late September 2026 |
-| 20 | Emmanuel Ayaosi | RW,LW,ST,CAM | 21 | Nigeria | 1,1 M€ | 7,48 | 3 | 1 | 1/0 |  |
-| 25 | Tomás Chorý | ST,LW | 31 | Czechia | 1,4 M€ | 7,30 | 4 | 0 | 1/0 |  |
-| 43 | Dan Kohout | Attacker | 20 | Czechia | 261 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Danijel Šturm | LW,RW,CAM,ST,LM | 27 | Slovenia | 1,5 M€ | 7,19 | 1 | 2 | 2/0 |  |
+| 13 | Mojmír Chytil | ST,RW,CAM | 27 | Czechia | 3,6 M€ | 7,06 | 4 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 18 | Adonija Ouanda | ST,RW,LW | 21 | Canada | – | 7,25 | 1 | 1 | 0/0 | osäker |
+| 20 | Emmanuel Ayaosi | RW,LW,ST,CAM | 21 | Nigeria | 1,3 M€ | 7,48 | 3 | 1 | 1/0 |  |
+| 25 | Tomás Chorý | ST,LW | 31 | Czechia | 1,5 M€ | 7,30 | 4 | 0 | 1/0 |  |
+| 43 | Dan Kohout | Attacker | 20 | Czechia | 211 k€ | – | 0 | 0 | 0/0 |  |

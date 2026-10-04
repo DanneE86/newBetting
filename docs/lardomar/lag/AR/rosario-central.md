@@ -1,11 +1,14 @@
 # Rosario Central (Liga Profesional) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - 2025: +0,49 poäng per match mot marknaden. Ligan visar ingen persistens, så räkna inte med att det fortsätter.
 - Stark historik mot Newells Old Boys (+0,63 p/match mot marknaden, 14 möten), Central Cordoba (+0,59 p/match mot marknaden, 7 möten), Union de Santa Fe (−0,70 p/match mot marknaden, 7 möten), Instituto (+0,98 p/match mot marknaden, 6 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Spelstil 2026: Balanserat, Kortpass, Farlig på fasta, Stark mot fasta. Bäst mot Mellanpress (+0,28, samma håll i båda halvorna men svagt), Svag på fasta (+0,19, samma håll i båda halvorna men svagt), Direktspel (+0,20, samma håll i båda halvorna men svagt). Svårast mot Kortpass (−0,30, samma håll i båda halvorna men svagt), Högpress (−0,21, samma håll i båda halvorna men svagt), Backar hem (−0,14, svagt). Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2026: 0,31 mål för per match (xG 0,43), 0,10 emot (xG 0,11), 5,1 hörnor.
+- Svårt för: Union de Santa Fe (0-4-3, 0,57 p/match, mot marknaden −0,70), Boca Juniors (1-4-4, 0,78 p/match, mot marknaden −0,21), Huracan (3-0-8, 0,82 p/match, mot marknaden −0,44), Tigre (1-3-3, 0,86 p/match, mot marknaden −0,40), San Lorenzo (2-3-4, 1,00 p/match, mot marknaden −0,28), Lanus (2-4-4, 1,00 p/match, mot marknaden −0,23), Racing Club (2-5-3, 1,10 p/match, mot marknaden −0,12), Defensa y Justicia (2-1-3, 1,17 p/match, mot marknaden −0,18), Independiente (4-2-6, 1,17 p/match, mot marknaden −0,01), Banfield (3-4-4, 1,18 p/match, mot marknaden −0,25), Talleres Cordoba (3-4-4, 1,18 p/match, mot marknaden −0,09), Barracas Central (3-2-3, 1,38 p/match, mot marknaden −0,31). Där marknaden ligger nära noll är laget bara sämre i de mötena än annars, och oddsen vet redan om det.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -36,6 +39,52 @@ Form (äldst → senast): VVVOFOVV · senaste match 2026-09-20
 | 2024 | AR | 41 | 1,15 | −0,15 (−0,01 / −0,27) | 27 % (31 %) | 0,90–1,17 | – | – |
 | 2025 | AR | 35 | 1,97 | +0,49 (+0,31 / +0,70) | 34 % (32 %) | 1,20–0,51 | – | – |
 | 2026 | AR | 29 | 1,72 | +0,10 (−0,08 / +0,28) | 28 % (30 %) | 1,21–0,93 | – | – |
+
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/AR.md#rosario-central) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2026: **Balanserat, Kortpass, Farlig på fasta, Stark mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026 | 29 | 0,31 | 0,43 | 0,10 | 0,11 | 5,1 |
+| 2025 | 35 | 0,63 | 0,09 | – | – | 4,9 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Backar hem | 65 | 1,14–1,00 | −0,01 | −0,14 (−1,1) | +10 pe | – | svag |
+| Balanserat | 76 | 1,12–0,96 | +0,25 | +0,12 (0,9) | −3 pe | – | ✔ samma håll |
+| Bollinnehav | 47 | 1,13–1,09 | +0,13 | +0,00 (0,0) | −5 pe | – | svag |
+| Kortpass | 44 | 0,98–1,05 | −0,17 | −0,30 (−1,5) | −6 pe | – | ✔ samma håll |
+| Blandat | 85 | 1,07–0,96 | +0,15 | +0,02 (0,2) | +4 pe | – | svag |
+| Direktspel | 59 | 1,32–1,03 | +0,33 | +0,20 (1,3) | +2 pe | – | ✔ samma håll |
+| Lågpress | 58 | 1,05–0,84 | +0,10 | −0,03 (−0,2) | −2 pe | – | svag |
+| Mellanpress | 59 | 1,27–1,00 | +0,42 | +0,28 (2,0) | −2 pe | – | ✔ samma håll |
+| Högpress | 71 | 1,07–1,14 | −0,08 | −0,21 (−1,5) | +6 pe | – | ✔ samma håll |
+| Svag på fasta | 76 | 1,12–0,88 | +0,33 | +0,19 (1,4) | −1 pe | – | ✔ samma håll |
+| Medel på fasta | 56 | 1,02–1,21 | −0,03 | −0,16 (−1,1) | −2 pe | – | svag |
+| Farlig på fasta | 32 | 1,25–0,94 | +0,01 | −0,12 (−0,6) | +13 pe | – | svag |
+| Stark mot fasta | 57 | 1,14–0,93 | +0,28 | +0,15 (0,9) | −6 pe | – | ✔ samma håll |
+| Medel mot fasta | 69 | 1,19–1,14 | +0,07 | −0,06 (−0,4) | +4 pe | – | svag |
+| Svag mot fasta | 34 | 0,94–0,91 | +0,02 | −0,11 (−0,6) | +9 pe | – | svag |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
+
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 2 | 1-1-0 | 2,00 | +0,23 |
+| Efter uppehåll sedan 2023 | 0 | – | – | – |
+| Övriga matcher | 446 | 166-139-141 | 1,43 | +0,03 |
+
+Hela ligan efter uppehåll: 0,00 mot marknaden (n 66). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2019-11-26 | Rosario Central - Aldosivi | 5-1 V | +0,87 |
+| 2019-09-15 | Rosario Central - Newells Old Boys | 1-1 O | −0,41 |
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -72,48 +121,50 @@ Form (äldst → senast): VVVOFOVV · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): Union de Santa Fe 0,57 p/match (−0,70), Boca Juniors 0,78 p/match (−0,21), Huracan 0,82 p/match (−0,44), Tigre 0,86 p/match (−0,40), San Lorenzo 1,00 p/match (−0,28), Lanus 1,00 p/match (−0,23), Racing Club 1,10 p/match (−0,12), Defensa y Justicia 1,17 p/match (−0,18), Independiente 1,17 p/match (−0,01), Banfield 1,18 p/match (−0,25), Talleres Cordoba 1,18 p/match (−0,09), Barracas Central 1,38 p/match (−0,31).
+
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Jorge Almirón. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Axel Werner | GK | 30 | Argentina | 405 k€ | – | 0 | 0 | 0/0 |  |
+| 1 | Axel Werner | GK | 30 | Argentina | 456 k€ | – | 0 | 0 | 0/0 |  |
 | 23 | Jeremías Ledesma | GK | 33 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 38 | Damián Fernández | LW | 22 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Sebastián Zaracho | CB | 27 | Paraguay | 357 k€ | – | 0 | 0 | 0/0 |  |
-| 3 | Agustín Sández | LB | 25 | Paraguay | 2,1 M€ | – | 0 | 0 | 0/0 |  |
+| 2 | Sebastián Zaracho | CB | 27 | Paraguay | 391 k€ | – | 0 | 0 | 0/0 |  |
+| 3 | Agustín Sández | LB | 25 | Paraguay | 2,3 M€ | – | 0 | 0 | 0/0 |  |
 | 6 | Juan Cruz Komar | CB | 30 | Argentina | 449 k€ | – | 0 | 0 | 0/0 |  |
-| 13 | Gastón Ávila | CB,LB | 24 | Argentina | 2,7 M€ | – | 0 | 0 | 0/0 |  |
-| 15 | Facundo Mallo | CB | 31 | Uruguay | 637 k€ | – | 0 | 0 | 0/0 |  |
-| 24 | Juan Giménez | CB | 20 | Argentina | 2,1 M€ | – | 0 | 0 | 0/0 |  |
-| 32 | Emanuel Coronel | RB | 29 | Argentina | 1,6 M€ | – | 0 | 0 | 0/0 |  |
-| 33 | Alexis Soto | LB,LM,CB,LWB | 32 | Argentina | 626 k€ | – | 0 | 0 | 0/0 |  |
+| 13 | Gastón Ávila | CB,LB | 25 | Argentina | 3,8 M€ | – | 0 | 0 | 0/0 |  |
+| 15 | Facundo Mallo | CB | 31 | Uruguay | 638 k€ | – | 0 | 0 | 0/0 |  |
+| 24 | Juan Giménez | CB | 20 | Argentina | 2,0 M€ | – | 0 | 0 | 0/0 |  |
+| 32 | Emanuel Coronel | RB | 29 | Argentina | 1,7 M€ | – | 0 | 0 | 0/0 |  |
+| 33 | Alexis Soto | LB,LM,CB,LWB | 32 | Argentina | 638 k€ | – | 0 | 0 | 0/0 |  |
 | 35 | Lucas Ramos López | CDM | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 36 | Álvaro Güich | Defender | 17 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 41 | Leonardo Ríos | Defender | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 42 | Elías Verón | RB | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 46 | Ignacio Ovando | CB | 19 | Argentina | 5,1 M€ | – | 0 | 0 | 0/0 |  |
-| 47 | Luca Raffin | CB | 20 | Argentina | 552 k€ | – | 0 | 0 | 0/0 |  |
+| 46 | Ignacio Ovando | CB | 19 | Argentina | 10,8 M€ | – | 0 | 0 | 0/0 |  |
+| 47 | Luca Raffin | CB | 20 | Argentina | 595 k€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 5 | Franco Ibarra | CDM,CM | 25 | Argentina | 2,7 M€ | – | 0 | 0 | 0/0 |  |
-| 10 | Franco Cervi | CM | 32 | Argentina | 435 k€ | – | 0 | 0 | 0/0 |  |
-| 11 | Ángel Di María | CAM,ST,LW,RW | 38 | Argentina | 973 k€ | – | 0 | 0 | 0/0 |  |
-| 19 | Santiago Segovia | CAM | 19 | Argentina | 757 k€ | – | 0 | 0 | 0/0 |  |
-| 20 | Vicente Pizarro | CDM,CAM,CM | 23 | Chile | 2,5 M€ | – | 0 | 0 | 0/0 |  |
-| 28 | Pol Fernández | CM,CAM,CDM | 34 | Argentina | 266 k€ | – | 0 | 0 | 0/0 |  |
+| 5 | Franco Ibarra | CDM,CM | 25 | Argentina | 6,3 M€ | – | 0 | 0 | 0/0 |  |
+| 10 | Franco Cervi | CM | 32 | Argentina | 451 k€ | – | 0 | 0 | 0/0 |  |
+| 11 | Ángel Di María | CAM,ST,LW,RW | 38 | Argentina | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 19 | Santiago Segovia | CAM | 19 | Argentina | 606 k€ | – | 0 | 0 | 0/0 |  |
+| 20 | Vicente Pizarro | CDM,CAM,CM | 23 | Chile | 3,9 M€ | – | 0 | 0 | 0/0 |  |
+| 28 | Pol Fernández | CM,CAM,CDM | 34 | Argentina | 267 k€ | – | 0 | 0 | 0/0 |  |
 | 31 | Federico Navarro | CDM,CM | 26 | Argentina | 1,5 M€ | – | 0 | 0 | 0/0 |  |
 | 40 | Bautista Cantero | Midfielder | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 44 | Paolo Giaccone | Midfielder | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Marcelo Cabrera | Attacker | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 8 | Jaminton Campaz | LW,CAM | 26 | Colombia | 2,3 M€ | – | 0 | 0 | 0/0 |  |
-| 16 | Tomás Badaloni | ST | 26 | Argentina | 2,7 M€ | – | 0 | 0 | 0/0 |  |
-| 18 | Julián Fernández | LW,RW,CAM | 22 | Argentina | 2,2 M€ | – | 0 | 0 | 0/0 |  |
-| 22 | Enzo Copetti | ST,LW | 30 | Argentina | 1,8 M€ | – | 0 | 0 | 0/0 |  |
-| 26 | Giovanni Cantizano | RW,LW | 19 | Argentina | 1,2 M€ | – | 0 | 0 | 0/0 |  |
-| 27 | Gaspar Duarte | RW | 23 | Argentina | 1,1 M€ | – | 0 | 0 | 0/0 |  |
-| 29 | Marco Ruben | ST | 39 | Argentina | 353 k€ | – | 0 | 0 | 0/0 |  |
+| 8 | Jaminton Campaz | LW,CAM | 26 | Colombia | 2,8 M€ | – | 0 | 0 | 0/0 |  |
+| 16 | Tomás Badaloni | ST | 26 | Argentina | 2,8 M€ | – | 0 | 0 | 0/0 |  |
+| 18 | Julián Fernández | LW,RW,CAM | 22 | Argentina | 3,9 M€ | – | 0 | 0 | 0/0 |  |
+| 22 | Enzo Copetti | ST,LW | 30 | Argentina | 1,9 M€ | – | 0 | 0 | 0/0 |  |
+| 26 | Giovanni Cantizano | RW,LW | 19 | Argentina | 1,7 M€ | – | 0 | 0 | 0/0 |  |
+| 27 | Gaspar Duarte | RW | 23 | Argentina | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 29 | Marco Ruben | ST | 39 | Argentina | 310 k€ | – | 0 | 0 | 0/0 |  |
 | 88 | Alan Rodríguez | RW,CDM,LM | 26 | Uruguay | 1,6 M€ | – | 0 | 0 | 0/0 |  |

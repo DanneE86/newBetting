@@ -1,10 +1,14 @@
 # Valencia (La Liga) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [LL](../../ligor/LL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [LL](../../ligor/LL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Stark historik mot Levante (+0,62 p/match mot marknaden, 9 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Efter landslagsuppehåll: 1,31 poäng per match mot 1,34 annars (10-12-10 på 32 matcher), mot marknaden −0,01 mot −0,00. Sedan 2023: 4-3-4. Ingen skillnad värd att spela på.
+- Spelstil 2025/26: Balanserat, Kortpass, Mellanpress, Medel på fasta, Medel mot fasta. Bäst mot Mellanpress (+0,10, samma håll i båda halvorna men svagt), Balanserat (+0,08, svagt), Svag på fasta (+0,08, svagt). Svårast mot Backar hem (−0,10, svagt), Lågpress (−0,09, svagt), Svag mot fasta (−0,08, samma håll i båda halvorna men svagt). Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2025/26: 0,26 mål för per match (xG 0,25), 0,32 emot (xG 0,22), 5,1 hörnor.
+- Svårt för: Ath Madrid (1-3-11, 0,40 p/match, mot marknaden −0,46), Barcelona (2-4-11, 0,59 p/match, mot marknaden −0,07), Real Madrid (4-2-10, 0,88 p/match, mot marknaden +0,19), Betis (4-4-8, 1,00 p/match, mot marknaden −0,25), Vallecano (2-7-3, 1,08 p/match, mot marknaden −0,42), Sevilla (4-7-6, 1,12 p/match, mot marknaden −0,08), Sociedad (4-7-5, 1,19 p/match, mot marknaden +0,03), Villarreal (5-3-7, 1,20 p/match, mot marknaden +0,06). Där marknaden ligger nära noll är laget bara sämre i de mötena än annars, och oddsen vet redan om det.
 - På Stryktipset/Europatipset streckas lagets vinst ×0,84 av vår sannolikhet (17 matcher). Folket underspelar laget: dess vinst ger streckvärde.
 
 ## Nuläge (senaste 8 ligamatcher)
@@ -32,6 +36,82 @@ Form (äldst → senast): VOFFFFVF · senaste match 2026-09-20
 | 2025/26 | LL | 38 | 1,29 | +0,02 (+0,10 / −0,07) | 26 % (28 %) | 1,21–1,45 | 1,42–1,46 | 1,40 |
 | 2026/27 | LL | 7 | 0,57 | −0,63 (−0,88 / −0,28) | 14 % (27 %) | 0,57–1,86 | 0,81–1,81 | 0,88 |
 
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/LL.md#valencia) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2025/26: **Balanserat, Kortpass, Mellanpress, Medel på fasta, Medel mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026/27 | 7 | 0,00 | 0,16 | 0,29 | 0,24 | 4,4 |
+| 2025/26 | 38 | 0,26 | 0,25 | 0,32 | 0,22 | 5,1 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Backar hem | 86 | 1,19–1,27 | −0,15 | −0,10 (−0,8) | +0 pe | +5 pe | svag |
+| Balanserat | 129 | 1,12–1,16 | +0,02 | +0,08 (0,7) | +11 pe | −7 pe | svag |
+| Bollinnehav | 90 | 1,22–1,57 | −0,07 | −0,02 (−0,1) | −2 pe | +0 pe | svag |
+| Kortpass | 67 | 1,25–1,75 | −0,08 | −0,02 (−0,2) | −1 pe | +9 pe | svag |
+| Blandat | 138 | 1,10–1,22 | −0,03 | +0,02 (0,2) | +6 pe | −7 pe | svag |
+| Direktspel | 100 | 1,21–1,14 | −0,07 | −0,02 (−0,1) | +4 pe | −2 pe | svag |
+| Lågpress | 76 | 1,08–1,33 | −0,14 | −0,09 (−0,8) | +8 pe | −3 pe | svag |
+| Mellanpress | 142 | 1,31–1,38 | +0,05 | +0,10 (1,0) | +3 pe | +2 pe | ✔ samma håll |
+| Högpress | 87 | 1,02–1,18 | −0,14 | −0,08 (−0,6) | +3 pe | −6 pe | ✔ samma håll |
+| Svag på fasta | 90 | 1,23–1,32 | +0,03 | +0,08 (0,6) | −0 pe | −1 pe | svag |
+| Medel på fasta | 121 | 1,15–1,30 | −0,09 | −0,03 (−0,3) | +9 pe | −3 pe | svag |
+| Farlig på fasta | 94 | 1,14–1,32 | −0,08 | −0,03 (−0,3) | +2 pe | −1 pe | svag |
+| Stark mot fasta | 108 | 1,21–1,31 | −0,01 | +0,04 (0,4) | +2 pe | +5 pe | svag |
+| Medel mot fasta | 114 | 1,21–1,30 | −0,03 | +0,02 (0,2) | +6 pe | −6 pe | svag |
+| Svag mot fasta | 83 | 1,06–1,34 | −0,13 | −0,08 (−0,7) | +6 pe | −5 pe | ✔ samma håll |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
+
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 32 | 10-12-10 | 1,31 | −0,01 |
+| Efter uppehåll sedan 2023 | 11 | 4-3-4 | 1,36 | +0,05 |
+| Övriga matcher | 317 | 111-93-113 | 1,34 | −0,00 |
+
+Hela ligan efter uppehåll: 0,00 mot marknaden (n 630). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2026-04-05 | Valencia - Celta | 2-3 F | −1,51 |
+| 2025-11-21 | Valencia - Levante | 1-0 V | +1,32 |
+| 2025-10-20 | Alaves - Valencia | 0-0 O | +0,61 |
+| 2025-09-14 | Barcelona - Valencia | 6-0 F | −0,60 |
+| 2024-11-23 | Valencia - Betis | 4-2 V | +1,54 |
+| 2024-10-21 | Valencia - Las Palmas | 2-3 F | −1,80 |
+| 2024-09-15 | Ath Madrid - Valencia | 3-0 F | −0,71 |
+| 2024-03-30 | Valencia - Mallorca | 0-0 O | −0,67 |
+| 2023-11-25 | Valencia - Celta | 0-0 O | −0,56 |
+| 2023-10-23 | Valencia - Cadiz | 2-0 V | +1,01 |
+| 2023-09-16 | Valencia - Ath Madrid | 3-0 V | +1,87 |
+| 2023-04-03 | Valencia - Vallecano | 1-1 O | −0,69 |
+| 2022-12-31 | Villarreal - Valencia | 2-1 F | −1,29 |
+| 2022-10-02 | Espanol - Valencia | 2-2 O | +0,31 |
+| 2022-04-03 | Valencia - Cadiz | 0-0 O | −0,69 |
+| 2021-11-21 | Sociedad - Valencia | 0-0 O | +1,03 |
+| 2021-10-17 | Barcelona - Valencia | 3-1 F | −0,90 |
+| 2021-09-12 | Osasuna - Valencia | 1-4 V | +1,59 |
+| 2021-04-04 | Cadiz - Valencia | 2-1 F | −1,91 |
+| 2020-11-22 | Alaves - Valencia | 2-2 O | +0,39 |
+| 2020-10-18 | Villarreal - Valencia | 2-1 F | −1,02 |
+| 2019-11-23 | Betis - Valencia | 2-1 F | −1,51 |
+| 2019-10-19 | Ath Madrid - Valencia | 1-1 O | +1,08 |
+| 2019-09-14 | Barcelona - Valencia | 5-2 F | −0,95 |
+| 2019-03-31 | Sevilla - Valencia | 0-1 V | +1,36 |
+| 2018-11-24 | Valencia - Vallecano | 3-0 V | +0,75 |
+| 2018-10-20 | Valencia - Leganes | 1-1 O | −1,06 |
+| 2018-09-15 | Valencia - Betis | 0-0 O | −0,95 |
+| 2018-04-01 | Leganes - Valencia | 0-1 V | +1,07 |
+| 2017-11-19 | Espanol - Valencia | 0-2 V | +1,39 |
+| 2017-10-15 | Betis - Valencia | 3-6 V | +1,32 |
+| 2017-09-09 | Valencia - Ath Madrid | 0-0 O | −0,22 |
+
 ## Nyckelspelare (Understat, 2024/25–)
 
 Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
@@ -41,9 +121,9 @@ Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 l
 | Aimar Blázquez | 16 % | 0 / 83 | – / 1,19 | – / −0,02 |
 | Umar Sadiq | 10 % | 1 / 82 | 0,00 / 1,21 | −1,27 / −0,00 |
 | Hugo Duro | 9 % | 6 / 77 | 1,83 / 1,14 | +0,70 / −0,08 |
-| Arnaut Danjuma Groeneveld | 8 % | 1 / 82 | 3,00 / 1,17 | +1,93 / −0,04 |
 | Largie Ramazani | 8 % | 5 / 78 | 1,00 / 1,21 | +0,08 / −0,03 |
 | Javier Guerra | 8 % | 0 / 83 | – / 1,19 | – / −0,02 |
+| Arnaut Danjuma Groeneveld | 8 % | 1 / 82 | 3,00 / 1,17 | +1,93 / −0,04 |
 
 Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: siffrorna ovan är beskrivande, inte bevis.
 
@@ -71,6 +151,8 @@ Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: s
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): Ath Madrid 0,40 p/match (−0,46), Barcelona 0,59 p/match (−0,07), Real Madrid 0,88 p/match (+0,19), Betis 1,00 p/match (−0,25), Vallecano 1,08 p/match (−0,42), Sevilla 1,12 p/match (−0,08), Sociedad 1,19 p/match (+0,03), Villarreal 1,20 p/match (+0,06).
+
 ## Stryktipset / Europatipset
 
 | Datum | Spel | Match | Utfall | Folket på laget | Vår procent |
@@ -93,46 +175,46 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-09-14 | Europa 2505 | Barcelona - Valencia | 1 | 3 % | 10 % |
 | 2025-08-24 | Europa 2499 | Osasuna - Valencia | 1 | 21 % | 30 % |
 
-## Trupp (FotMob, hämtad 2026-09-29)
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Javier Aguirre. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** José Copete (skadad, åter Back in training), César Tárrega (skadad, åter Early October 2026), Dimitri Foulquier (osäker), Guido Rodríguez (osäker), Sergi Canós (skadad, åter Early December 2026), Umar Sadiq (skadad, åter Early November 2026), Diego López (skadad, åter Early January 2027)
+**Skadade/borta nu:** José Copete (skadad, åter Back in training), Dimitri Foulquier (skadad, åter Mid October 2026), Guido Rodríguez (osäker), Luis Rioja (skadad, åter Mid October 2026), David Otorbi (skadad, åter Late October 2026), Sergi Canós (skadad, åter Early December 2026), Umar Sadiq (skadad, åter Early November 2026), Arnaut Danjuma (osäker), Diego López (skadad, åter Early February 2027)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Stole Dimitrievski | GK | 32 | North Macedonia | 1,7 M€ | 6,78 | 0 | 0 | 1/0 |  |
+| 1 | Stole Dimitrievski | GK | 32 | North Macedonia | 1,8 M€ | 6,78 | 0 | 0 | 1/0 |  |
 | 13 | Cristian Rivero | GK | 28 | Spain | 363 k€ | – | 0 | 0 | 0/0 |  |
-| 25 | Kayne van Oevelen | GK | 23 | Netherlands | 1,7 M€ | – | 0 | 0 | 0/0 |  |
+| 25 | Kayne van Oevelen | GK | 23 | Netherlands | 2,1 M€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 3 | José Copete | CB | 26 | Spain | 3,5 M€ | – | 0 | 0 | 0/0 | skadad, åter Back in training |
+| 3 | José Copete | CB | 26 | Spain | 5,1 M€ | – | 0 | 0 | 0/0 | skadad, åter Back in training |
 | 4 | Mouctar Diakhaby | CB | 29 | Guinea | 922 k€ | 6,15 | 0 | 0 | 2/0 |  |
-| 5 | César Tárrega | CB | 24 | Spain | 13,0 M€ | 6,42 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
-| 12 | Justin De Haas | CB | 26 | Netherlands | 1,7 M€ | 7,00 | 0 | 0 | 2/0 |  |
-| 14 | José Gayà | LB,LWB | 31 | Spain | 2,1 M€ | 6,97 | 0 | 0 | 1/0 |  |
-| 20 | Dimitri Foulquier | RB,CB | 33 | Guadeloupe | 597 k€ | – | 0 | 0 | 0/0 | osäker |
-| 21 | Jesus Vázquez | LB,LM,LWB | 23 | Spain | 2,7 M€ | 6,44 | 0 | 0 | 0/0 |  |
-| 22 | Arnau Martínez | RB,LB,CB,CM,CDM | 23 | Spain | 10,0 M€ | 5,48 | 0 | 0 | 1/0 |  |
-| 24 | Pablo Maffeo | RB,RWB | 29 | Argentina | 2,3 M€ | 6,50 | 0 | 0 | 1/0 |  |
+| 5 | César Tárrega | CB | 24 | Spain | 12,4 M€ | 6,42 | 0 | 0 | 0/0 |  |
+| 12 | Justin De Haas | CB | 26 | Netherlands | 5,5 M€ | 7,00 | 0 | 0 | 2/0 |  |
+| 14 | José Gayà | LB,LWB | 31 | Spain | 2,2 M€ | 6,97 | 0 | 0 | 1/0 |  |
+| 20 | Dimitri Foulquier | RB,CB | 33 | Guadeloupe | 597 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 21 | Jesus Vázquez | LB,LM,LWB | 23 | Spain | 4,4 M€ | 6,44 | 0 | 0 | 0/0 |  |
+| 22 | Arnau Martínez | RB,LB,CB,CM,CDM | 23 | Spain | 14,3 M€ | 5,48 | 0 | 0 | 1/0 |  |
+| 24 | Pablo Maffeo | RB,RWB | 29 | Argentina | 2,4 M€ | 6,50 | 0 | 0 | 1/0 |  |
 | 32 | Amos Wanjala | Defender | 20 | Kenya | – | – | 0 | 0 | 0/0 |  |
-| 36 | Iker Córdoba | CB | 20 | Spain | 1,1 M€ | 6,39 | 0 | 0 | 0/0 |  |
+| 36 | Iker Córdoba | CB | 20 | Spain | 983 k€ | 6,39 | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 2 | Guido Rodríguez | CM,CDM | 32 | Argentina | 2,5 M€ | 7,15 | 0 | 0 | 1/0 | osäker |
-| 7 | Arnaut Danjuma | LM,ST,LW | 29 | Netherlands | 2,0 M€ | 6,50 | 0 | 0 | 0/0 |  |
-| 8 | Javier Guerra | CM,CDM,ST,CAM,LM | 23 | Spain | 21,2 M€ | 6,43 | 0 | 1 | 1/0 |  |
-| 10 | Harvey Elliott | CAM | 23 | England | 23,1 M€ | 6,31 | 0 | 0 | 0/0 |  |
-| 11 | Luis Rioja | RM,LM,RW | 32 | Spain | 1,1 M€ | 6,71 | 1 | 0 | 0/0 |  |
+| 8 | Javier Guerra | CM,CDM,ST,CAM,LM | 23 | Spain | 26,1 M€ | 6,43 | 0 | 1 | 1/0 |  |
+| 10 | Harvey Elliott | CAM | 23 | England | 20,8 M€ | 6,31 | 0 | 0 | 0/0 |  |
+| 11 | Luis Rioja | RM,LM,RW | 32 | Spain | 1,2 M€ | 6,71 | 1 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 15 | Aliou Dieng | CDM,CM,RW,RM | 28 | Mali | 1,9 M€ | 6,51 | 0 | 0 | 0/0 |  |
-| 18 | Pepelu | CM,CB,CDM | 28 | Spain | 6,6 M€ | 6,64 | 0 | 0 | 1/0 |  |
-| 23 | Filip Ugrinic | CM | 27 | Switzerland | 4,4 M€ | 6,51 | 0 | 0 | 0/0 |  |
-| 27 | David Otorbi | RM | 18 | Spain | – | 6,55 | 0 | 0 | 0/0 |  |
+| 18 | Pepelu | CM,CB,CDM | 28 | Spain | 7,4 M€ | 6,64 | 0 | 0 | 1/0 |  |
+| 23 | Filip Ugrinic | CM | 27 | Switzerland | 6,0 M€ | 6,51 | 0 | 0 | 0/0 |  |
+| 27 | David Otorbi | RM | 18 | Spain | – | 6,55 | 0 | 0 | 0/0 | skadad, åter Late October 2026 |
 | 33 | Aaron Mayol | CDM | 18 | Spain | – | 7,30 | 1 | 0 | 1/0 |  |
-| 39 | Ryunosuke Sato | ST,LM,LWB,RM | 19 | Japan | 2,1 M€ | 5,97 | 0 | 0 | 2/0 |  |
+| 39 | Ryunosuke Sato | ST,LM,LWB,RM | 19 | Japan | 3,5 M€ | 5,97 | 0 | 0 | 2/0 |  |
 | | **Anfallare** | | | | | | | | | |
 |  | Aimar | Attacker | 20 | Spain | – | – | 0 | 0 | 0/0 |  |
-|  | Sergi Canós | LW,LM,CAM | 29 | Spain | 365 k€ | – | 0 | 0 | 0/0 | skadad, åter Early December 2026 |
-| 6 | Umar Sadiq | ST | 29 | Nigeria | 2,5 M€ | 6,46 | 1 | 0 | 0/0 | skadad, åter Early November 2026 |
-| 9 | Hugo Duro | ST | 26 | Spain | 10,0 M€ | 6,34 | 0 | 1 | 0/0 |  |
-| 16 | Diego López | RW,RM,ST,LM | 24 | Spain | 12,2 M€ | – | 0 | 0 | 0/0 | skadad, åter Early January 2027 |
-| 19 | Dani Raba | CAM | 30 | Spain | 610 k€ | – | 0 | 0 | 0/0 |  |
+|  | Sergi Canós | LW,LM,CAM | 29 | Spain | 363 k€ | – | 0 | 0 | 0/0 | skadad, åter Early December 2026 |
+| 6 | Umar Sadiq | ST | 29 | Nigeria | 2,7 M€ | 6,46 | 1 | 0 | 0/0 | skadad, åter Early November 2026 |
+| 7 | Arnaut Danjuma | LM,ST,LW | 29 | Netherlands | 2,1 M€ | 6,50 | 0 | 0 | 0/0 | osäker |
+| 9 | Hugo Duro | ST | 26 | Spain | 12,2 M€ | 6,34 | 0 | 1 | 0/0 |  |
+| 16 | Diego López | RW,RM,ST,LM | 24 | Spain | 10,9 M€ | – | 0 | 0 | 0/0 | skadad, åter Early February 2027 |
+| 19 | Dani Raba | CAM | 30 | Spain | 650 k€ | – | 0 | 0 | 0/0 |  |

@@ -1,16 +1,16 @@
 # Piteå (Div 1 Norra) – lärdomar
 
-Genererad 2026-09-29. Ligans fil: [SE3N](../../ligor/SE3N.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-10-04. Ligans fil: [SE3N](../../ligor/SE3N.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
-Form senaste 8 (äldst → senast): OOFVFFVV · senaste match 2026-09-27
+Form senaste 8 (äldst → senast): OFVFFVVO · senaste match 2026-10-03
 
 ## Säsonger
 
 | Säsong | M | P/M | Hemma P/M | Borta P/M | Kryss | Mål för–emot | Över 2,5 |
 |---|---|---|---|---|---|---|---|
-| 2026/27 | 24 | 0,88 | 0,75 | 1,00 | 25 % | 1,21–1,88 | 58 % |
+| 2026/27 | 25 | 0,88 | 0,77 | 1,00 | 28 % | 1,20–1,84 | 56 % |
 
 ## Inbördes möten
 
@@ -23,12 +23,13 @@ Form senaste 8 (äldst → senast): OOFVFFVV · senaste match 2026-09-27
 | Hammarby Talang | 2 | 0-1-1 | 2–5 | 2026-08-23 1-1 (b) |
 | Järfälla | 2 | 1-0-1 | 3–2 | 2026-09-20 3-1 (h) |
 | Karlberg | 2 | 1-0-1 | 4–3 | 2026-09-06 3-0 (h) |
+| Karlstad | 2 | 0-1-1 | 2–3 | 2026-10-03 1-1 (h) |
 | Umeå | 2 | 0-0-2 | 0–4 | 2026-09-16 0-2 (h) |
 | Vasalund | 2 | 1-1-0 | 3–2 | 2026-08-16 1-1 (h) |
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (Transfermarkt, hämtad 2026-09-29)
+## Trupp (Transfermarkt, hämtad 2026-10-04)
 
 Tränare: Viktor Jonsson. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -46,7 +47,7 @@ Tränare: Viktor Jonsson. Betyg, mål och assist gäller innevarande säsong enl
 | 24 | Adam Ingemarson | Centre-Back | 23 | Sweden | – | – | – | – | 0/0 |  |
 | 3 | Joshua Mambu | Left-Back | 19 | Sweden | – | – | – | – | 0/0 |  |
 | 5 | Bekir Kavur | Left-Back | 22 | Sweden | – | – | – | – | 0/0 |  |
-| 6 | Siavash Jamehdar | Right-Back | 30 | Sweden | – | – | – | – | 0/0 |  |
+| 6 | Siavash Jamehdar | Right-Back | 31 | Sweden | – | – | – | – | 0/0 |  |
 | 18 | Jonathan Johnsson | Right-Back | 24 | Sweden | – | – | – | – | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 21 | Hugo Bergström | Central Midfield | 24 | Sweden | – | – | – | – | 0/0 |  |

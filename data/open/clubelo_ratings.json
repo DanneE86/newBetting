@@ -1,26 +1,26 @@
 {
-    "updatedAt":  "2026-10-01T06:18:13.9061813+02:00",
+    "updatedAt":  "2026-10-04T11:19:49.2126538+02:00",
     "source":  "http://clubelo.com/ENG",
     "teamCount":  45,
     "teams":  [
                   {
-                      "name":  "Man City",
-                      "clubEloName":  "Man City",
-                      "elo":  2036.1,
+                      "name":  "Arsenal",
+                      "clubEloName":  "Arsenal",
+                      "elo":  2040.3,
                       "level":  1,
                       "source":  "clubelo-json"
                   },
                   {
-                      "name":  "Arsenal",
-                      "clubEloName":  "Arsenal",
-                      "elo":  2032.6,
+                      "name":  "Man City",
+                      "clubEloName":  "Man City",
+                      "elo":  2028.2,
                       "level":  1,
                       "source":  "clubelo-json"
                   },
                   {
                       "name":  "Liverpool",
                       "clubEloName":  "Liverpool",
-                      "elo":  1937.1,
+                      "elo":  1937,
                       "level":  1,
                       "source":  "clubelo-json"
                   },
@@ -34,7 +34,7 @@
                   {
                       "name":  "Brighton",
                       "clubEloName":  "Brighton",
-                      "elo":  1890.7,
+                      "elo":  1890.9,
                       "level":  1,
                       "source":  "clubelo-json"
                   },
@@ -48,28 +48,28 @@
                   {
                       "name":  "Newcastle",
                       "clubEloName":  "Newcastle",
-                      "elo":  1879.5,
+                      "elo":  1879.4,
                       "level":  1,
                       "source":  "clubelo-json"
                   },
                   {
                       "name":  "Man United",
                       "clubEloName":  "Man United",
-                      "elo":  1879.2,
-                      "level":  1,
-                      "source":  "clubelo-json"
-                  },
-                  {
-                      "name":  "Bournemouth",
-                      "clubEloName":  "Bournemouth",
-                      "elo":  1860.7,
+                      "elo":  1879,
                       "level":  1,
                       "source":  "clubelo-json"
                   },
                   {
                       "name":  "Brentford",
                       "clubEloName":  "Brentford",
-                      "elo":  1860,
+                      "elo":  1861.9,
+                      "level":  1,
+                      "source":  "clubelo-json"
+                  },
+                  {
+                      "name":  "Bournemouth",
+                      "clubEloName":  "Bournemouth",
+                      "elo":  1860.6,
                       "level":  1,
                       "source":  "clubelo-json"
                   },
@@ -83,7 +83,7 @@
                   {
                       "name":  "Crystal Palace",
                       "clubEloName":  "Crystal Palace",
-                      "elo":  1824.6,
+                      "elo":  1824.4,
                       "level":  1,
                       "source":  "clubelo-json"
                   },
@@ -97,14 +97,14 @@
                   {
                       "name":  "Fulham",
                       "clubEloName":  "Fulham",
-                      "elo":  1806.5,
+                      "elo":  1806.6,
                       "level":  1,
                       "source":  "clubelo-json"
                   },
                   {
                       "name":  "Nott\u0027m Forest",
                       "clubEloName":  "Forest",
-                      "elo":  1805.2,
+                      "elo":  1805.1,
                       "level":  1,
                       "source":  "clubelo-json"
                   },
@@ -139,42 +139,42 @@
                   {
                       "name":  "Southampton",
                       "clubEloName":  "Southampton",
-                      "elo":  1699.4,
+                      "elo":  1699.2,
                       "level":  2,
                       "source":  "clubelo-json"
                   },
                   {
                       "name":  "Ipswich",
                       "clubEloName":  "Ipswich",
-                      "elo":  1694.4,
+                      "elo":  1694.3,
                       "level":  1,
                       "source":  "clubelo-json"
                   },
                   {
                       "name":  "Coventry",
                       "clubEloName":  "Coventry",
-                      "elo":  1691.5,
+                      "elo":  1689.2,
                       "level":  1,
                       "source":  "clubelo-json"
                   },
                   {
                       "name":  "Middlesbrough",
                       "clubEloName":  "Middlesbrough",
-                      "elo":  1649.9,
+                      "elo":  1649.7,
                       "level":  2,
                       "source":  "clubelo-json"
                   },
                   {
                       "name":  "Burnley",
                       "clubEloName":  "Burnley",
-                      "elo":  1645.7,
+                      "elo":  1645.6,
                       "level":  2,
                       "source":  "clubelo-json"
                   },
                   {
                       "name":  "Millwall",
                       "clubEloName":  "Millwall",
-                      "elo":  1639.5,
+                      "elo":  1639.2,
                       "level":  2,
                       "source":  "clubelo-json"
                   },
@@ -209,21 +209,21 @@
                   {
                       "name":  "Norwich",
                       "clubEloName":  "Norwich",
-                      "elo":  1612,
+                      "elo":  1611,
                       "level":  null,
                       "source":  "clubelo-html"
                   },
                   {
                       "name":  "Sheffield United",
                       "clubEloName":  "Sheffield United",
-                      "elo":  1609,
+                      "elo":  1608,
                       "level":  null,
                       "source":  "clubelo-html"
                   },
                   {
                       "name":  "West Brom",
                       "clubEloName":  "West Brom",
-                      "elo":  1591,
+                      "elo":  1590,
                       "level":  null,
                       "source":  "clubelo-html"
                   },
@@ -258,21 +258,21 @@
                   {
                       "name":  "Derby",
                       "clubEloName":  "Derby",
-                      "elo":  1570,
+                      "elo":  1569,
                       "level":  null,
                       "source":  "clubelo-html"
                   },
                   {
                       "name":  "Stoke",
                       "clubEloName":  "Stoke",
-                      "elo":  1560,
+                      "elo":  1559,
                       "level":  null,
                       "source":  "clubelo-html"
                   },
                   {
                       "name":  "Portsmouth",
                       "clubEloName":  "Portsmouth",
-                      "elo":  1555,
+                      "elo":  1554,
                       "level":  null,
                       "source":  "clubelo-html"
                   },
@@ -286,14 +286,14 @@
                   {
                       "name":  "Luton",
                       "clubEloName":  "Luton",
-                      "elo":  1544,
+                      "elo":  1543,
                       "level":  null,
                       "source":  "clubelo-html"
                   },
                   {
                       "name":  "Oxford",
                       "clubEloName":  "Oxford",
-                      "elo":  1534,
+                      "elo":  1533,
                       "level":  null,
                       "source":  "clubelo-html"
                   },
@@ -307,7 +307,7 @@
                   {
                       "name":  "Preston",
                       "clubEloName":  "Preston",
-                      "elo":  1526,
+                      "elo":  1525,
                       "level":  null,
                       "source":  "clubelo-html"
                   },

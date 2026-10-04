@@ -28,7 +28,7 @@
 // 4. Spelvärde = modellens chans / streck. Värde om kvoten ≥ 1,15 och chansen ≥ 3 %.
 // Vikterna är startvärden och ska bara ändras efter backtest (data/hastar/backtest.json), aldrig efter enstaka omgångar.
 
-import { learnedProbs, driverIndex } from "./trav-features.mjs";
+import { learnedProbs, driverIndex, shoeChange } from "./trav-features.mjs";
 import { LEARNED } from "./trav-weights.mjs";
 
 export const BASE_WEIGHTS = { form: 0.18, fart: 0.15, kusk: 0.12, tranare: 0.06, klass: 0.1, spar: 0.12, galopp: -0.1, tillagg: -0.08 };
@@ -324,7 +324,10 @@ function comments(h, race) {
   const gl = h.records.slice(0, 5).filter((r) => r.galloped).length;
   if (gl >= 2) out.push(`Galopp i ${gl} av 5 senaste`);
   if (h.shoes && h.shoes.front === false && h.shoes.back === false) out.push(h.shoes.changed ? "Barfota runt om (ändrat)" : "Barfota runt om");
-  else if (h.shoes?.changed) out.push("Skoändring");
+  else if (h.shoes?.changed) {
+    const sc = shoeChange(h.shoes, last?.shoes);
+    out.push(sc.pa ? "Skor på (ändrat)" : sc.av ? "Skor av (ändrat)" : "Skoändring");
+  }
   if (h.sulky?.changed) out.push(`Vagnbyte: ${h.sulky.text}`);
   if (h.handicap > 0) out.push(`Tillägg ${h.handicap} m`);
   return out;

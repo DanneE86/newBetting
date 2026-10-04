@@ -1,10 +1,14 @@
 # Union Berlin (Bundesliga) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [BL](../../ligor/BL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [BL](../../ligor/BL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Stark historik mot Freiburg (+0,57 p/match mot marknaden, 14 möten), Mainz (+0,73 p/match mot marknaden, 14 möten), RB Leipzig (+0,57 p/match mot marknaden, 14 möten), FC Koln (+0,87 p/match mot marknaden, 13 möten), Schalke 04 (−0,54 p/match mot marknaden, 7 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Efter landslagsuppehåll: 1,60 poäng per match mot 1,36 annars (11-7-7 på 25 matcher), mot marknaden +0,21 mot +0,03. Sedan 2023: 4-4-4. Ingen skillnad värd att spela på.
+- Spelstil 2025/26: Backar hem, Direktspel, Lågpress, Farlig på fasta, Stark mot fasta. Bäst mot Blandat (+0,21, samma håll i båda halvorna men svagt), Medel på fasta (+0,11, svagt), Mellanpress (+0,11, samma håll i båda halvorna men svagt). Svårast mot Direktspel (−0,17, samma håll i båda halvorna men svagt), Högpress (−0,17, svagt), Farlig på fasta (−0,18, samma håll i båda halvorna men svagt). Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2025/26: 0,50 mål för per match (xG 0,49), 0,23 emot (xG 0,21), 5,0 hörnor.
+- Svårt för: Bayern Munich (0-5-10, 0,33 p/match, mot marknaden −0,09), Leverkusen (2-5-8, 0,73 p/match, mot marknaden −0,19), Dortmund (4-0-10, 0,86 p/match, mot marknaden +0,04), Schalke 04 (1-4-2, 1,00 p/match, mot marknaden −0,54), Augsburg (3-5-6, 1,00 p/match, mot marknaden −0,49). Där marknaden ligger nära noll är laget bara sämre i de mötena än annars, och oddsen vet redan om det.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -32,6 +36,75 @@ Form (äldst → senast): FOVVOFFF · senaste match 2026-09-18
 | 2026/27 | BL | 4 | 0,25 | −0,69 (−0,92 / −0,45) | 25 % (19 %) | 1,00–4,25 | 1,23–3,21 | 0,61 |
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/BL.md#union-berlin) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2025/26: **Backar hem, Direktspel, Lågpress, Farlig på fasta, Stark mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026/27 | 4 | 0,75 | 0,70 | 0,75 | 0,47 | 3,0 |
+| 2025/26 | 34 | 0,50 | 0,49 | 0,23 | 0,21 | 5,0 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Backar hem | 75 | 1,31–1,40 | +0,08 | −0,00 (−0,0) | +1 pe | +9 pe | svag |
+| Balanserat | 116 | 1,19–1,45 | +0,03 | −0,05 (−0,5) | −2 pe | −6 pe | svag |
+| Bollinnehav | 81 | 1,49–1,52 | +0,17 | +0,08 (0,6) | +6 pe | +5 pe | ✔ samma håll |
+| Kortpass | 63 | 1,22–1,43 | −0,01 | −0,10 (−0,6) | +3 pe | +1 pe | svag |
+| Blandat | 109 | 1,32–1,39 | +0,29 | +0,21 (1,7) | +3 pe | −0 pe | ✔ samma håll |
+| Direktspel | 100 | 1,36–1,55 | −0,08 | −0,17 (−1,4) | −2 pe | +3 pe | ✔ samma håll |
+| Lågpress | 78 | 1,33–1,37 | +0,19 | +0,10 (0,7) | +3 pe | +2 pe | svag |
+| Mellanpress | 91 | 1,32–1,38 | +0,20 | +0,11 (0,9) | +2 pe | −0 pe | ✔ samma håll |
+| Högpress | 103 | 1,29–1,58 | −0,08 | −0,17 (−1,4) | −1 pe | +2 pe | svag |
+| Svag på fasta | 84 | 1,26–1,65 | +0,05 | −0,04 (−0,3) | −1 pe | +4 pe | svag |
+| Medel på fasta | 130 | 1,32–1,23 | +0,19 | +0,11 (1,0) | +2 pe | −1 pe | svag |
+| Farlig på fasta | 58 | 1,38–1,67 | −0,09 | −0,18 (−1,1) | +3 pe | +3 pe | ✔ samma håll |
+| Stark mot fasta | 87 | 1,26–1,32 | −0,01 | −0,10 (−0,8) | +3 pe | +2 pe | ✔ samma håll |
+| Medel mot fasta | 144 | 1,28–1,52 | +0,11 | +0,02 (0,2) | +0 pe | +1 pe | svag |
+| Svag mot fasta | 41 | 1,54–1,51 | +0,22 | +0,14 (0,7) | +1 pe | −1 pe | svag |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
+
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 25 | 11-7-7 | 1,60 | +0,21 |
+| Efter uppehåll sedan 2023 | 12 | 4-4-4 | 1,33 | +0,05 |
+| Övriga matcher | 285 | 102-81-102 | 1,36 | +0,03 |
+
+Hela ligan efter uppehåll: 0,00 mot marknaden (n 576). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2026-04-05 | Union Berlin - St Pauli | 1-1 O | −0,68 |
+| 2025-11-23 | St Pauli - Union Berlin | 0-1 V | +1,38 |
+| 2025-10-17 | Union Berlin - M'gladbach | 3-1 V | +1,42 |
+| 2025-09-13 | Union Berlin - Hoffenheim | 2-4 F | −1,28 |
+| 2025-03-30 | Freiburg - Union Berlin | 1-2 V | +1,76 |
+| 2024-11-23 | Wolfsburg - Union Berlin | 1-0 F | −1,37 |
+| 2024-10-20 | Holstein Kiel - Union Berlin | 0-2 V | +1,04 |
+| 2024-09-14 | RB Leipzig - Union Berlin | 0-0 O | +1,16 |
+| 2024-03-30 | Ein Frankfurt - Union Berlin | 0-0 O | +0,76 |
+| 2023-11-25 | Union Berlin - Augsburg | 1-1 O | −0,73 |
+| 2023-10-21 | Union Berlin - Stuttgart | 0-3 F | −1,41 |
+| 2023-09-16 | Wolfsburg - Union Berlin | 2-1 F | −1,39 |
+| 2023-04-01 | Union Berlin - Stuttgart | 3-0 V | +1,36 |
+| 2022-10-01 | Ein Frankfurt - Union Berlin | 2-0 F | −1,51 |
+| 2022-04-01 | Union Berlin - FC Koln | 1-0 V | +1,44 |
+| 2021-11-20 | Union Berlin - Hertha | 2-0 V | +1,25 |
+| 2021-10-16 | Union Berlin - Wolfsburg | 2-0 V | +1,48 |
+| 2021-09-11 | Union Berlin - Augsburg | 0-0 O | −0,98 |
+| 2021-04-04 | Union Berlin - Hertha | 1-1 O | −0,41 |
+| 2020-11-22 | FC Koln - Union Berlin | 1-2 V | +1,20 |
+| 2020-10-18 | Schalke 04 - Union Berlin | 1-1 O | +0,19 |
+| 2019-11-23 | Union Berlin - M'gladbach | 2-0 V | +1,93 |
+| 2019-10-19 | Union Berlin - Freiburg | 2-0 V | +1,63 |
+| 2019-09-14 | Union Berlin - Werder Bremen | 1-2 F | −1,48 |
+| 2018-04-01 | Greuther Furth - Union Berlin | 2-1 F | −1,53 |
 
 ## Nyckelspelare (Understat, 2024/25–)
 
@@ -71,6 +144,8 @@ Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: s
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): Bayern Munich 0,33 p/match (−0,09), Leverkusen 0,73 p/match (−0,19), Dortmund 0,86 p/match (+0,04), Schalke 04 1,00 p/match (−0,54), Augsburg 1,00 p/match (−0,49).
+
 ## Stryktipset / Europatipset
 
 | Datum | Spel | Match | Utfall | Folket på laget | Vår procent |
@@ -80,7 +155,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-11-23 | Europa 2525 | St. Pauli - Union Berlin | 2 ✓ | 33 % | 33 % |
 | 2025-09-28 | Europa 2509 | Union Berlin - Hamburg | X | 58 % | 47 % |
 
-## Trupp (FotMob, hämtad 2026-09-29)
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Mauro Lustrinelli. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -90,35 +165,35 @@ Tränare: Mauro Lustrinelli. Betyg, mål och assist gäller innevarande säsong 
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
 | 1 | Frederik Rønnow | GK | 34 | Denmark | 1,3 M€ | 5,82 | 0 | 0 | 0/0 |  |
-| 25 | Carl Klaus | GK | 32 | Germany | 308 k€ | – | 0 | 0 | 0/0 |  |
-| 31 | Matheo Raab | GK | 27 | Germany | 309 k€ | 4,90 | 0 | 0 | 0/0 |  |
+| 25 | Carl Klaus | GK | 32 | Germany | 304 k€ | – | 0 | 0 | 0/0 |  |
+| 31 | Matheo Raab | GK | 27 | Germany | 312 k€ | 4,90 | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Felix Uduokhai | CB | 29 | Germany | 1,9 M€ | 5,89 | 0 | 0 | 3/0 |  |
-| 3 | Andrik Markgraf | Defender | 20 | Germany | 228 k€ | – | 0 | 0 | 0/0 | skadad, åter Early March 2027 |
-| 4 | Zeno Van Den Bosch | CB | 23 | Belgium | 5,6 M€ | 5,72 | 0 | 0 | 2/0 |  |
-| 5 | Marvin Friedrich | CB | 30 | Germany | 938 k€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
-| 14 | Leopold Querfeld | CB | 22 | Austria | 13,8 M€ | 6,53 | 1 | 1 | 0/0 |  |
-| 15 | Tom Rothe | LB,LM,CB,LWB | 21 | Germany | 9,7 M€ | 6,10 | 0 | 1 | 0/0 |  |
+| 2 | Felix Uduokhai | CB | 29 | Germany | 1,8 M€ | 5,89 | 0 | 0 | 3/0 |  |
+| 3 | Andrik Markgraf | Defender | 20 | Germany | 328 k€ | – | 0 | 0 | 0/0 | skadad, åter Early March 2027 |
+| 4 | Zeno Van Den Bosch | CB | 23 | Belgium | 4,7 M€ | 5,72 | 0 | 0 | 2/0 |  |
+| 5 | Marvin Friedrich | CB | 30 | Germany | 926 k€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 14 | Leopold Querfeld | CB | 22 | Austria | 18,7 M€ | 6,53 | 1 | 1 | 0/0 |  |
+| 15 | Tom Rothe | LB,LM,CB,LWB | 21 | Germany | 11,6 M€ | 6,10 | 0 | 1 | 0/0 |  |
 | 18 | Josip Juranović | RB,LWB | 31 | Croatia | 1,2 M€ | 6,81 | 0 | 2 | 0/0 | skadad, åter About 1-2 weeks |
 | 34 | Stanley N'Soki | CB | 27 | France | 1,2 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
 | | **Mittfältare** | | | | | | | | | |
-| 6 | Aljoscha Kemlein | CDM,CM,CB | 22 | Germany | 8,2 M€ | 6,41 | 0 | 0 | 1/0 |  |
-| 8 | Rani Khedira | CDM,CM,CAM | 32 | Tunisia | 1,2 M€ | 6,35 | 0 | 0 | 1/0 |  |
-| 11 | Woo-Yeong Jeong | CAM,ST,RW | 27 | South Korea | 2,0 M€ | 6,58 | 0 | 0 | 0/0 |  |
-| 13 | András Schäfer | CDM,CM,CAM | 27 | Hungary | 2,2 M€ | 6,46 | 0 | 0 | 0/0 |  |
-| 17 | Derrick Köhn | LWB,LM,LB | 27 | Ghana | 2,3 M€ | – | 0 | 0 | 0/0 |  |
-| 19 | Janik Haberer | RWB,CDM,RM | 32 | Germany | 959 k€ | 6,51 | 0 | 0 | 0/0 |  |
-| 20 | Michel Aebischer | CM,CDM,LM | 29 | Switzerland | 2,5 M€ | 6,12 | 0 | 0 | 1/0 |  |
-| 24 | Robert Skov | LM | 30 | Denmark | 1,2 M€ | – | 0 | 0 | 0/0 |  |
-| 28 | Christopher Trimmel | RWB,RB,RM | 39 | Austria | 484 k€ | 5,41 | 0 | 0 | 0/0 |  |
-| 30 | Kastriot Imeri | LW,RM,LM,CAM | 26 | Switzerland | 1,3 M€ | – | 0 | 0 | 0/0 |  |
-| 38 | Julien Friedrich | Midfielder | 19 | Germany | 461 k€ | – | 0 | 0 | 0/0 |  |
-| 49 | Linus Guether | Midfielder | 16 | Germany | 1,8 M€ | – | 0 | 0 | 0/0 |  |
+| 6 | Aljoscha Kemlein | CDM,CM,CB | 22 | Germany | 14,2 M€ | 6,41 | 0 | 0 | 1/0 |  |
+| 8 | Rani Khedira | CDM,CM,CAM | 32 | Tunisia | 1,5 M€ | 6,35 | 0 | 0 | 1/0 |  |
+| 11 | Woo-Yeong Jeong | CAM,ST,RW | 27 | South Korea | 2,1 M€ | 6,58 | 0 | 0 | 0/0 |  |
+| 13 | András Schäfer | CDM,CM,CAM | 27 | Hungary | 2,3 M€ | 6,46 | 0 | 0 | 0/0 |  |
+| 17 | Derrick Köhn | LWB,LM,LB | 27 | Ghana | 3,4 M€ | – | 0 | 0 | 0/0 |  |
+| 19 | Janik Haberer | RWB,RM,CDM | 32 | Germany | 1,2 M€ | 6,51 | 0 | 0 | 0/0 |  |
+| 20 | Michel Aebischer | CM,CDM,LM,RW | 29 | Switzerland | 2,6 M€ | 6,12 | 0 | 0 | 1/0 |  |
+| 24 | Robert Skov | LM | 30 | Denmark | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 28 | Christopher Trimmel | RWB,RB,RM | 39 | Austria | 505 k€ | 5,41 | 0 | 0 | 0/0 |  |
+| 30 | Kastriot Imeri | LW,RM,LM,CAM | 26 | Switzerland | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 38 | Julien Friedrich | Midfielder | 19 | Germany | 737 k€ | – | 0 | 0 | 0/0 |  |
+| 49 | Linus Guether | Midfielder | 16 | Germany | 1,9 M€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Oliver Burke | ST,CAM,RW | 29 | Scotland | 3,6 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
-| 9 | Livan Burcu | LW,CAM | 22 | Germany | 2,3 M€ | 6,52 | 0 | 0 | 1/0 |  |
+| 9 | Livan Burcu | LW,CAM | 22 | Germany | 2,4 M€ | 6,52 | 0 | 0 | 1/0 |  |
 | 21 | Tim Skarke | CAM,RW | 30 | Germany | 1,0 M€ | 7,01 | 2 | 0 | 0/0 |  |
-| 23 | Andrej Ilić | ST | 26 | Serbia | 4,4 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
-| 27 | Marin Ljubičić | ST,LW | 24 | Croatia | 1,5 M€ | 6,20 | 0 | 0 | 1/0 |  |
-| 29 | Emmanuel Latte Lath | ST | 27 | Ivory Coast | 11,8 M€ | 6,38 | 1 | 0 | 0/0 |  |
+| 23 | Andrej Ilić | ST | 26 | Serbia | 6,7 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 27 | Marin Ljubičić | ST,LW | 24 | Croatia | 1,4 M€ | 6,20 | 0 | 0 | 1/0 |  |
+| 29 | Emmanuel Latte Lath | ST | 27 | Ivory Coast | 10,7 M€ | 6,38 | 1 | 0 | 0/0 |  |
 | 32 | Mekhi Gray | Attacker | 19 | Jamaica | – | – | 0 | 0 | 0/0 |  |

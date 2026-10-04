@@ -1,6 +1,6 @@
 # Estudiantes Rio Cuarto (Liga Profesional) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -45,7 +45,7 @@ Form (äldst → senast): OFFOOFFF · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Rubén Forestello. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -54,45 +54,44 @@ Tränare: Rubén Forestello. Betyg, mål och assist gäller innevarande säsong 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Lucas Bruera | GK | 28 | Argentina | 232 k€ | – | 0 | 0 | 0/0 |  |
+| 1 | Lucas Bruera | GK | 28 | Argentina | 283 k€ | – | 0 | 0 | 0/0 |  |
 | 12 | Francisco Gualtieri | Keeper | 23 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 43 | Agustín Lastra | GK | 25 | Argentina | 561 k€ | – | 0 | 0 | 0/0 |  |
+| 43 | Agustín Lastra | GK | 25 | Argentina | 551 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 |  | Lucas Baños | Defender | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 2 | Gonzalo Maffini | CB | 33 | Argentina | 281 k€ | – | 0 | 0 | 0/0 |  |
-| 6 | Juan Antonini | CB,RB | 27 | Argentina | 338 k€ | – | 0 | 0 | 0/0 |  |
-| 21 | Matías Ruíz Díaz | RB | 30 | Argentina | 262 k€ | – | 0 | 0 | 0/0 | skadad, åter Late October 2026 |
-| 24 | Jeremías Ramponi | CB | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 25 | Tomás Olmos | CB,RB,RWB | 21 | Argentina | 588 k€ | – | 0 | 0 | 0/0 |  |
-| 28 | Facundo Cobos | LB,LWB | 33 | Argentina | 269 k€ | – | 0 | 0 | 0/0 |  |
-| 29 | Agustín Quiroga | CB,LB,LWB | 24 | Argentina | 627 k€ | – | 0 | 0 | 0/0 |  |
-| 30 | Sergio Ojeda | CB | 34 | Argentina | 321 k€ | – | 0 | 0 | 0/0 | skadad, åter A few weeks |
-| 31 | Matías Valenti | CB,LB | 24 | Argentina | 436 k€ | – | 0 | 0 | 0/0 |  |
-| 45 | Raúl Lozano | RB | 29 | Argentina | 383 k€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 2 | Gonzalo Maffini | CB | 33 | Argentina | 325 k€ | – | 0 | 0 | 0/0 |  |
+| 6 | Juan Antonini | CB,RB | 27 | Argentina | 302 k€ | – | 0 | 0 | 0/0 |  |
+| 21 | Matías Ruíz Díaz | RB | 30 | Argentina | 275 k€ | – | 0 | 0 | 0/0 | skadad, åter Late October 2026 |
+| 28 | Facundo Cobos | LB,LWB | 33 | Argentina | 243 k€ | – | 0 | 0 | 0/0 |  |
+| 29 | Agustín Quiroga | CB,LB,LWB | 24 | Argentina | 596 k€ | – | 0 | 0 | 0/0 |  |
+| 30 | Sergio Ojeda | CB | 34 | Argentina | 168 k€ | – | 0 | 0 | 0/0 | skadad, åter A few weeks |
+| 31 | Matías Valenti | CB,LB | 24 | Argentina | 450 k€ | – | 0 | 0 | 0/0 |  |
+| 45 | Raúl Lozano | RB | 29 | Argentina | 437 k€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
 | 86 | Matias Pagliaricci | CB | 25 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 4 | Valentín Fenoglio | CM,RM | 23 | Argentina | 718 k€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
-| 5 | Alejandro Cabrera | CDM,CM | 33 | Argentina | 436 k€ | – | 0 | 0 | 0/0 |  |
-| 8 | Siro Rosané | CM,CDM,CAM | 26 | Argentina | 402 k€ | – | 0 | 0 | 0/0 |  |
-| 10 | Tomás González | CM,CAM,RW | 27 | Argentina | 332 k€ | – | 0 | 0 | 0/0 |  |
+| 5 | Alejandro Cabrera | CDM,CM | 34 | Argentina | 438 k€ | – | 0 | 0 | 0/0 |  |
+| 8 | Siro Rosané | CM,CDM,CAM | 26 | Argentina | 368 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Tomás González | CM,CAM,RW | 27 | Argentina | 360 k€ | – | 0 | 0 | 0/0 |  |
 | 15 | Lautaro Cepeha | Midfielder | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 17 | Gabriel Alanís | CAM,LW,LM,ST | 32 | Argentina | 450 k€ | – | 0 | 0 | 0/0 |  |
-| 19 | Nicolás Talpone | CM,CAM,CDM | 30 | Argentina | 273 k€ | – | 0 | 0 | 0/0 |  |
-| 27 | Juan Garro | RM,ST | 33 | Argentina | 249 k€ | – | 0 | 0 | 0/0 | skadad, åter A few weeks |
+| 17 | Gabriel Alanís | CAM,LW,LM,ST | 32 | Argentina | 470 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | Nicolás Talpone | CM,CAM,CDM | 30 | Argentina | 271 k€ | – | 0 | 0 | 0/0 |  |
+| 27 | Juan Garro | RM,ST | 33 | Argentina | 290 k€ | – | 0 | 0 | 0/0 | skadad, åter A few weeks |
 | 35 | Facundo Gallardo | RM | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 40 | Francesco Lo Celso | CAM | 26 | Argentina | 394 k€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 40 | Francesco Lo Celso | CAM | 26 | Argentina | 367 k€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Lucas González | ST,RW | 29 | Argentina | 264 k€ | – | 0 | 0 | 0/0 | skadad, åter Early November 2026 |
-| 9 | Javier Ferreira | ST | 34 | Paraguay | 419 k€ | – | 0 | 0 | 0/0 |  |
-| 11 | Martín Garnerone | LW,ST,RW,RM | 28 | Argentina | 315 k€ | – | 0 | 0 | 0/0 |  |
-| 14 | Gonzalo González | RW,RWB,RM | 23 | Argentina | 562 k€ | – | 0 | 0 | 0/0 |  |
-| 16 | Yeison Moreno | ST | 29 | Colombia | 254 k€ | – | 0 | 0 | 0/0 |  |
+| 9 | Javier Ferreira | ST | 34 | Paraguay | 416 k€ | – | 0 | 0 | 0/0 |  |
+| 11 | Martín Garnerone | LW,ST,RW,RM | 28 | Argentina | 303 k€ | – | 0 | 0 | 0/0 |  |
+| 14 | Gonzalo González | RW,RWB,RM | 23 | Argentina | 577 k€ | – | 0 | 0 | 0/0 |  |
+| 16 | Yeison Moreno | ST | 29 | Colombia | 366 k€ | – | 0 | 0 | 0/0 |  |
 | 18 | Joaquín Rivero | Attacker | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 22 | Mauro Valiente | ST,LM,LW | 26 | Argentina | 354 k€ | – | 0 | 0 | 0/0 |  |
-| 23 | Fernando Rodríguez | LW | 25 | Argentina | 191 k€ | – | 0 | 0 | 0/0 |  |
-| 29 | Mauro Molina | ST | 27 | Argentina | 377 k€ | – | 0 | 0 | 0/0 |  |
-| 32 | Mateo Bajamich | ST,RW | 27 | Argentina | 355 k€ | – | 0 | 0 | 0/0 |  |
-| 50 | Ramón Ábila | ST | 36 | Argentina | 332 k€ | – | 0 | 0 | 0/0 |  |
-| 77 | Ibrahim Hesar | ST | 32 | Syria | 214 k€ | – | 0 | 0 | 0/0 |  |
-| 99 | Francisco Galván | ST | 27 | Argentina | 329 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Mauro Valiente | ST,LM,LW | 26 | Argentina | 349 k€ | – | 0 | 0 | 0/0 |  |
+| 23 | Fernando Rodríguez | LW | 25 | Argentina | 344 k€ | – | 0 | 0 | 0/0 |  |
+| 29 | Mauro Molina | ST | 27 | Argentina | 376 k€ | – | 0 | 0 | 0/0 |  |
+| 32 | Mateo Bajamich | ST,RW | 27 | Argentina | 416 k€ | – | 0 | 0 | 0/0 |  |
+| 50 | Ramón Ábila | ST | 36 | Argentina | 358 k€ | – | 0 | 0 | 0/0 |  |
+| 77 | Ibrahim Hesar | ST | 32 | Syria | 307 k€ | – | 0 | 0 | 0/0 |  |
 | 99 | Juan Chala | Attacker | 22 | Colombia | – | – | 0 | 0 | 0/0 |  |
+
+Har lämnat truppen sedan vi började spara (3): Francisco Galván (senast 2026-09-29), Tomás Olmos (senast 2026-09-29), Jeremías Ramponi (senast 2026-09-29).

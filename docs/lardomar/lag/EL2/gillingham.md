@@ -1,10 +1,13 @@
 # Gillingham (League Two) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Stark historik mot Bristol Rvs (+0,74 p/match mot marknaden, 8 möten), Grimsby (−0,50 p/match mot marknaden, 8 möten), Newport County (−0,88 p/match mot marknaden, 8 möten), Rochdale (+0,69 p/match mot marknaden, 8 möten), Salford (+0,57 p/match mot marknaden, 8 möten), Cheltenham (−0,76 p/match mot marknaden, 6 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Spelstil 2025/26: Backar hem, Direktspel, Lågpress, Farlig på fasta, Svag mot fasta. Bäst mot Bollinnehav (+0,19, samma håll i båda halvorna men svagt), Svag på fasta (+0,13, samma håll i båda halvorna men svagt), Mellanpress (+0,09, svagt). Svårast mot Farlig på fasta (−0,23, samma håll i båda halvorna men svagt), Svag mot fasta (−0,15, samma håll i båda halvorna men svagt), Blandat (−0,09, samma håll i båda halvorna men svagt). Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2025/26: 0,35 mål för per match (xG 0,48), 0,54 emot (xG 0,41), 5,1 hörnor.
+- Svårt för: Cheltenham (0-4-2, 0,67 p/match, mot marknaden −0,76), Newport County (2-0-6, 0,75 p/match, mot marknaden −0,88), Grimsby (1-3-4, 0,75 p/match, mot marknaden −0,50), Fleetwood Town (1-6-5, 0,75 p/match, mot marknaden −0,44), Walsall (1-5-4, 0,80 p/match, mot marknaden −0,48), Colchester (2-3-3, 1,13 p/match, mot marknaden −0,22). Där marknaden ligger nära noll är laget bara sämre i de mötena än annars, och oddsen vet redan om det.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -32,6 +35,35 @@ Form (äldst → senast): FOOOVVVF · senaste match 2026-09-26
 | 2026/27 | EL2 | 8 | 1,50 | +0,52 (+0,46 / +0,58) | 38 % (27 %) | 1,38–1,13 | 1,26–1,43* | 1,33 |
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/EL2.md#gillingham) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2025/26: **Backar hem, Direktspel, Lågpress, Farlig på fasta, Svag mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026/27 | 9 | 0,33 | 0,31 | 0,56 | 0,31 | 3,6 |
+| 2025/26 | 46 | 0,35 | 0,48 | 0,54 | 0,41 | 5,1 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Backar hem | 77 | 0,99–1,30 | −0,09 | −0,06 (−0,5) | +6 pe | −9 pe | ✔ samma håll |
+| Balanserat | 120 | 0,84–1,15 | −0,10 | −0,07 (−0,7) | +2 pe | −15 pe | ✔ samma håll |
+| Bollinnehav | 69 | 1,28–1,39 | +0,17 | +0,19 (1,3) | −5 pe | −4 pe | ✔ samma håll |
+| Kortpass | 65 | 1,11–1,32 | +0,05 | +0,08 (0,5) | −1 pe | −9 pe | ✔ samma håll |
+| Blandat | 113 | 0,96–1,23 | −0,12 | −0,09 (−0,8) | +1 pe | −10 pe | ✔ samma håll |
+| Direktspel | 88 | 0,95–1,24 | +0,03 | +0,06 (0,5) | +3 pe | −12 pe | ✔ samma håll |
+| Lågpress | 77 | 1,12–1,25 | −0,06 | −0,03 (−0,3) | +7 pe | −6 pe | svag |
+| Mellanpress | 109 | 1,06–1,26 | +0,07 | +0,09 (0,8) | −3 pe | −9 pe | svag |
+| Högpress | 80 | 0,80–1,26 | −0,12 | −0,09 (−0,7) | −1 pe | −17 pe | ✔ samma håll |
+| Svag på fasta | 98 | 1,08–1,22 | +0,11 | +0,13 (1,1) | −1 pe | −6 pe | ✔ samma håll |
+| Medel på fasta | 115 | 0,88–1,10 | −0,03 | −0,01 (−0,1) | −0 pe | −19 pe | svag |
+| Farlig på fasta | 53 | 1,09–1,64 | −0,25 | −0,23 (−1,5) | +7 pe | −0 pe | ✔ samma håll |
+| Stark mot fasta | 82 | 0,95–1,23 | −0,01 | +0,02 (0,1) | +3 pe | −9 pe | ✔ samma håll |
+| Medel mot fasta | 111 | 1,12–1,20 | +0,06 | +0,08 (0,7) | +1 pe | −7 pe | ✔ samma håll |
+| Svag mot fasta | 73 | 0,86–1,37 | −0,17 | −0,15 (−1,1) | −2 pe | −16 pe | ✔ samma håll |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -62,50 +94,53 @@ Form (äldst → senast): FOOOVVVF · senaste match 2026-09-26
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): Cheltenham 0,67 p/match (−0,76), Newport County 0,75 p/match (−0,88), Grimsby 0,75 p/match (−0,50), Fleetwood Town 0,75 p/match (−0,44), Walsall 0,80 p/match (−0,48), Colchester 1,13 p/match (−0,22).
+
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Gareth Ainsworth. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Oliver Wright | GK | 23 | England | 278 k€ | 6,92 | 0 | 0 | 0/0 |  |
+| 1 | Oliver Wright | GK | 23 | England | 400 k€ | 7,02 | 0 | 0 | 0/0 |  |
 | 13 | Taite Holtam | GK | 21 | England | 166 k€ | – | 0 | 0 | 0/0 |  |
 | 25 | Lennon MacLorg | GK | 20 | England | – | – | 0 | 0 | 0/0 |  |
 | 40 | Rohan Luthra | GK | 24 | England | 175 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 2 | Samuel Tabares | CB | 21 | England | – | – | 0 | 0 | 0/0 |  |
-| 4 | Liam Gordon | CB | 30 | Scotland | 188 k€ | 6,38 | 0 | 0 | 0/0 |  |
+| 4 | Liam Gordon | CB | 30 | Scotland | 189 k€ | 6,38 | 0 | 0 | 0/0 |  |
 | 5 | Andrew Smith | CB | 25 | England | – | 7,03 | 0 | 1 | 1/0 |  |
-| 19 | Omar Beckles | CB | 34 | Grenada | 103 k€ | 7,29 | 1 | 0 | 2/0 |  |
-| 20 | Jack Daley | CB | 20 | England | – | 6,17 | 0 | 0 | 0/0 |  |
-| 26 | Logan Dobbs | CB | 20 | England | – | 7,26 | 1 | 0 | 1/0 |  |
+| 19 | Omar Beckles | CB | 34 | Grenada | 133 k€ | 7,30 | 1 | 0 | 2/0 |  |
+| 20 | Jack Daley | CB | 20 | England | – | 6,15 | 0 | 0 | 1/0 |  |
+| 26 | Logan Dobbs | CB | 20 | England | – | 7,18 | 1 | 0 | 2/0 |  |
 | 29 | Harry Webster | RM | 20 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 3 | Conor McManus | LWB,LB,LW | 22 | Ireland | – | 7,18 | 1 | 0 | 2/0 |  |
-| 6 | Ethan Coleman | CDM,CM | 26 | England | 140 k€ | – | 0 | 0 | 0/0 |  |
-| 8 | Armani Little | CDM,CM | 29 | England | 83 k€ | 6,77 | 0 | 0 | 0/0 |  |
-| 14 | Robbie McKenzie | CDM,CM,CB | 28 | England | 172 k€ | 6,54 | 0 | 0 | 4/0 |  |
-| 15 | Zane Albarus | CM,CDM,CB | 20 | England | – | 5,99 | 0 | 0 | 1/1 |  |
-| 16 | James Brophy | LWB,RW,CAM,RM,LW | 32 | England | 199 k€ | 7,59 | 3 | 0 | 1/0 |  |
-| 17 | Cameron Antwi | CM,CDM | 24 | England | 242 k€ | 6,51 | 0 | 0 | 0/0 |  |
-| 22 | Nick Freeman | RWB,CDM,RB | 30 | England | 86 k€ | 7,37 | 0 | 3 | 0/0 |  |
-| 23 | Bradley Dack | CAM,RW,CM | 32 | England | 85 k€ | 5,95 | 0 | 0 | 0/0 |  |
-| 24 | Harry Waldock | CDM,CAM | 19 | England | – | 6,62 | 0 | 1 | 0/0 |  |
+| 6 | Ethan Coleman | CDM,CM | 26 | England | 135 k€ | – | 0 | 0 | 0/0 |  |
+| 8 | Armani Little | CDM,CM | 29 | England | 84 k€ | 6,77 | 0 | 0 | 0/0 |  |
+| 14 | Robbie McKenzie | CDM,CM,CB | 28 | England | 186 k€ | 6,57 | 0 | 0 | 4/0 |  |
+| 15 | Zane Albarus | CDM,CM,CB | 20 | England | – | 6,04 | 0 | 0 | 1/1 |  |
+| 16 | James Brophy | LWB,RW,CAM,RM,LW,LM | 32 | England | 307 k€ | 7,59 | 3 | 0 | 1/0 |  |
+| 17 | Cameron Antwi | CM,CDM | 24 | England | 244 k€ | 6,51 | 0 | 0 | 0/0 |  |
+| 22 | Nick Freeman | RWB,CDM,RB | 30 | England | 102 k€ | 7,34 | 0 | 3 | 0/0 |  |
+| 23 | Bradley Dack | CAM,RW,CM | 32 | England | 84 k€ | 5,95 | 0 | 0 | 0/0 |  |
+| 24 | Harry Waldock | CDM,CAM,RW | 19 | England | – | 6,56 | 0 | 1 | 0/0 |  |
 | 27 | Michael Luxton | LM | 18 | England | – | – | 0 | 0 | 0/0 |  |
 | 28 | Damien Theodore | Midfielder | 19 | England | – | – | 0 | 0 | 0/0 |  |
 | 32 | Louie Dayal | CM | 18 | England | – | – | 0 | 0 | 0/0 |  |
-| 33 | Cruz Beszant | CAM | 18 | England | – | – | 0 | 0 | 0/0 |  |
-| 34 | Eli King | CDM | 23 | Wales | 342 k€ | 7,28 | 0 | 1 | 1/0 |  |
-| 35 | Zech Obiero | CAM,CDM | 21 | Kenya | 380 k€ | 6,28 | 0 | 0 | 0/0 |  |
+| 33 | Cruz Beszant | CAM | 19 | England | – | – | 0 | 0 | 0/0 |  |
+| 34 | Eli King | CDM | 23 | Wales | 325 k€ | 7,30 | 0 | 1 | 1/0 |  |
+| 35 | Zech Obiero | CAM,CDM | 21 | Kenya | 404 k€ | 6,28 | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 7 | Kadeem Harris | LW,LWB,LM | 33 | England | 85 k€ | 6,23 | 0 | 0 | 2/0 |  |
-| 9 | Will Goodwin | ST | 24 | England | 244 k€ | 6,45 | 0 | 0 | 1/0 |  |
-| 10 | Ronan Hale | ST,LW,CAM | 28 | Northern Ireland | 218 k€ | 6,99 | 2 | 1 | 1/0 |  |
-| 11 | Lamin Sillah | ST | 20 | The Gambia | – | 6,91 | 1 | 0 | 0/0 |  |
-| 12 | Garath McCleary | RW,LW,ST,CAM | 39 | Jamaica | 102 k€ | 6,33 | 0 | 1 | 2/0 |  |
-| 18 | Sheldon Kendall | RW | 18 | England | – | 6,07 | 2 | 0 | 0/0 |  |
+| 7 | Kadeem Harris | LW,LWB,LM | 33 | England | 86 k€ | 6,23 | 0 | 0 | 2/0 |  |
+| 9 | Will Goodwin | ST | 24 | England | 244 k€ | 6,46 | 0 | 0 | 1/0 |  |
+| 10 | Ronan Hale | ST,LW,CAM | 28 | Northern Ireland | 413 k€ | 6,91 | 2 | 1 | 2/0 |  |
+| 11 | Lamin Sillah | ST | 20 | The Gambia | – | 6,78 | 1 | 0 | 1/0 |  |
+| 12 | Garath McCleary | RW,LW,ST,CAM | 39 | Jamaica | 112 k€ | 6,35 | 0 | 1 | 2/0 |  |
+| 18 | Sheldon Kendall | RW | 18 | England | – | 6,04 | 2 | 0 | 0/0 |  |
 | 30 | Sullivan Booth | LW | 17 | England | – | – | 0 | 0 | 0/0 |  |
 | 34 | Stan Sargent | Attacker | 0 | England | – | – | 0 | 0 | 0/0 |  |
+| 39 | Tom Eaves | ST | 34 | England | 230 k€ | 6,01 | 0 | 0 | 0/0 |  |
 
 Har lämnat truppen sedan vi började spara (3): Glenn Morris (senast 2026-09-29), Sam Vokes (senast 2026-09-29), Max Clark (senast 2026-09-29).

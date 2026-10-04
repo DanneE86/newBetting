@@ -671,3 +671,14 @@ body.view-stryktips main { display: none !important; }
 .fall-tag { display: inline-block; margin-left: 4px; padding: 0 6px; border-radius: 999px; font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); white-space: nowrap; vertical-align: middle; line-height: 1.6; color: var(--color-warning); background: var(--color-warning-bg); border: 1px solid var(--color-warning); cursor: help; }
 .sb-fall { display: inline-block; margin-left: 4px; padding: 0 5px; border-radius: 999px; border: 1px solid var(--color-warning); background: var(--color-warning-bg); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); color: var(--color-warning); white-space: nowrap; cursor: help; }
 .sb-fall-legend { margin: 0 0 8px; }
+
+/* Skrällspik att läsa om (överst, ligger inte i kupongen) */
+.st-skrall { margin-bottom: var(--space-4); border-left: 4px solid var(--color-danger); background: var(--color-danger-bg); color: var(--color-text); font-size: var(--font-size-sm); }
+.st-skrall p { margin: 0 0 var(--space-2); }
+.st-skrall-h { font-weight: 700; }
+.st-skrall-h small { font-weight: 400; color: var(--color-text-muted); margin-left: var(--space-2); }
+.st-skrall-sign { color: var(--color-danger); font-size: 1.15em; }
+.st-skrall .sb-howto ul { margin: var(--space-2) 0 0; padding-left: var(--space-5); }
+.st-skrall-item { padding-top: var(--space-2); border-top: 1px solid var(--color-border); }
+.st-skrall-rank { font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--color-text-muted); }
+.st-skrall-pick .st-num { display: inline-flex; vertical-align: middle; margin-right: var(--space-2); }

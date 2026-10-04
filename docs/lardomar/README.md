@@ -1,6 +1,6 @@
 # Lärdomar per liga och lag
 
-Genererad 2026-09-29 av `node scripts/analyze-learnings.mjs` (91346 matcher, 23 ligor, 458 lag). Agenten `.claude/agents/lardomar.md` kör och tolkar analysen.
+Genererad 2026-10-04 av `node scripts/analyze-learnings.mjs` (91371 matcher, 23 ligor, 458 lag). Agenten `.claude/agents/lardomar.md` kör och tolkar analysen.
 
 Frågan i varje test: **ger signalen något utöver stängningsoddsen?** Allt som oddsen redan prisar in har inget värde för våra spel. Träning på säsonger före 2023/24, kontroll på 2023/24 och senare. En signal räknas som bekräftad först när den håller i båda.
 
@@ -10,13 +10,13 @@ Slutsatser och beslut (handskrivet, levande): [slutsatser.md](slutsatser.md). Al
 
 | Signal | Hela perioden | Träning (< 2023/24) | Kontroll (2023/24–) | Mot öppningsodds | Oddsrörelse | Effekt p90–p10 | Bedömning |
 |---|---|---|---|---|---|---|---|
-| xG-tur (poäng − xP, senaste 8) | −0,024 (z −2,6, n 48303) | −0,028 (z −2,4, n 31381) | −0,016 (z −1,1, n 16922) | −0,034 (z −3,6, n 48260) | −0,010 (z −15,5, n 48260) | −0,037 p | svag signal (inte bekräftad) |
-| xG-form mot målform (xGD − GD, senaste 8) | +0,014 (z 1,9, n 48303) | +0,012 (z 1,3, n 31381) | +0,017 (z 1,4, n 16922) | +0,021 (z 2,9, n 48260) | +0,007 (z 13,4, n 48260) | +0,027 p | ingen effekt |
-| Form mot marknaden (poäng − förväntat, senaste 8) | −0,028 (z −4,1, n 89028) | −0,032 (z −3,9, n 62152) | −0,019 (z −1,6, n 26876) | −0,038 (z −4,0, n 48261) | −0,004 (z −6,3, n 48261) | −0,043 p | svag signal (inte bekräftad) |
-| Inbördes möten mot marknaden (≥ 3 möten, 8 år) | +0,007 (z 0,7, n 60123) | +0,001 (z 0,1, n 38393) | +0,020 (z 1,1, n 21730) | +0,021 (z 1,5, n 29245) | −0,002 (z −1,5, n 29245) | +0,008 p | ingen effekt |
-| Inbördes möten, poängskillnad | +0,011 (z 2,6, n 60123) | +0,006 (z 1,2, n 38393) | +0,020 (z 2,9, n 21730) | +0,019 (z 3,6, n 29245) | +0,001 (z 1,7, n 29245) | +0,033 p | svag signal (inte bekräftad) |
-| Inbördes möten, kryss mot förväntat | +0,009 (z 0,9, n 60123) | +0,005 (z 0,4, n 38393) | +0,019 (z 1,0, n 21730) | – | – | +0,004 p | ingen effekt |
-| Vilodagar (hemma − borta, ligamatcher) | −0,003 (z −1,2, n 87545) | +0,001 (z 0,2, n 61511) | −0,011 (z −2,5, n 26034) | −0,002 (z −0,5, n 47836) | −0,000 (z −0,9, n 47836) | −0,006 p | ingen effekt |
+| xG-tur (poäng − xP, senaste 8) | −0,024 (z −2,6, n 48308) | −0,028 (z −2,4, n 31381) | −0,017 (z −1,1, n 16927) | −0,034 (z −3,7, n 48265) | −0,010 (z −15,5, n 48265) | −0,037 p | svag signal (inte bekräftad) |
+| xG-form mot målform (xGD − GD, senaste 8) | +0,014 (z 1,9, n 48308) | +0,012 (z 1,3, n 31381) | +0,017 (z 1,4, n 16927) | +0,021 (z 2,9, n 48265) | +0,007 (z 13,4, n 48265) | +0,027 p | ingen effekt |
+| Form mot marknaden (poäng − förväntat, senaste 8) | −0,028 (z −4,1, n 89083) | −0,032 (z −3,9, n 62164) | −0,020 (z −1,6, n 26919) | −0,038 (z −4,1, n 48266) | −0,004 (z −6,3, n 48266) | −0,043 p | svag signal (inte bekräftad) |
+| Inbördes möten mot marknaden (≥ 3 möten, 8 år) | +0,006 (z 0,6, n 60318) | +0,001 (z 0,1, n 38442) | +0,019 (z 1,0, n 21876) | +0,021 (z 1,5, n 29245) | −0,002 (z −1,5, n 29245) | +0,007 p | ingen effekt |
+| Inbördes möten, poängskillnad | +0,010 (z 2,5, n 60318) | +0,006 (z 1,1, n 38442) | +0,019 (z 2,8, n 21876) | +0,019 (z 3,6, n 29245) | +0,001 (z 1,7, n 29245) | +0,032 p | svag signal (inte bekräftad) |
+| Inbördes möten, kryss mot förväntat | +0,009 (z 0,9, n 60318) | +0,005 (z 0,4, n 38442) | +0,017 (z 0,9, n 21876) | – | – | +0,004 p | ingen effekt |
+| Vilodagar (hemma − borta, ligamatcher) | −0,003 (z −1,2, n 87573) | +0,001 (z 0,2, n 61513) | −0,011 (z −2,5, n 26060) | −0,002 (z −0,5, n 47836) | −0,000 (z −0,9, n 47836) | −0,006 p | ingen effekt |
 | Nyckelspelare borta (andel av xG+xA, hemma − borta; träning 2024/25, kontroll 2025/26–) | +0,873 (z 4,1, n 3752) | +1,023 (z 3,4, n 1752) | +0,724 (z 2,4, n 2000) | +0,759 (z 3,6, n 3752) | −0,113 (z −8,1, n 3752) | +0,199 p | **bekräftad** |
 | Oddsrörelse öppning → stängning (förväntade poäng) | +0,090 (z 1,4, n 49507) | +0,064 (z 0,8, n 32428) | +0,149 (z 1,4, n 17079) | – | – | +0,019 p | ingen effekt |
 | Bolagssnitt mot Pinnacle vid stängning | −0,357 (z −2,2, n 73872) | −0,467 (z −2,4, n 53144) | −0,044 (z −0,1, n 20728) | – | – | −0,023 p | ingen effekt |
@@ -25,17 +25,17 @@ Slutsatser och beslut (handskrivet, levande): [slutsatser.md](slutsatser.md). Al
 | Situation | Snitt mot marknaden | Träning | Kontroll | Bedömning |
 |---|---|---|---|---|
 | Omgång 1–5 (hemmalagets poäng mot marknaden) | −0,011 (z −1,0, n 13159) | −0,010 (z −0,8, n 8997) | −0,011 (z −0,6, n 4162) | ingen effekt |
-| Sista 4 omgångarna (hemmalagets poäng) | −0,004 (z −0,3, n 8954) | +0,009 (z 0,6, n 6258) | −0,034 (z −1,4, n 2696) | ingen effekt |
-| Sista 4 omgångarna (kryss mot förväntat) | −0,006 (z −1,3, n 8954) | −0,008 (z −1,5, n 6258) | −0,000 (z −0,0, n 2696) | ingen effekt |
-| Uppflyttat lag, omgång 1–10 (lagets poäng mot marknaden) | −0,035 (z −2,1, n 5556) | −0,031 (z −1,5, n 3684) | −0,044 (z −1,6, n 1872) | ingen effekt |
+| Sista 4 omgångarna (hemmalagets poäng) | −0,004 (z −0,3, n 8966) | +0,009 (z 0,6, n 6265) | −0,036 (z −1,5, n 2701) | ingen effekt |
+| Sista 4 omgångarna (kryss mot förväntat) | −0,006 (z −1,3, n 8966) | −0,008 (z −1,5, n 6265) | −0,001 (z −0,1, n 2701) | ingen effekt |
+| Uppflyttat lag, omgång 1–10 (lagets poäng mot marknaden) | −0,036 (z −2,2, n 5528) | −0,032 (z −1,6, n 3665) | −0,044 (z −1,6, n 1863) | ingen effekt |
 | Nedflyttat lag, omgång 1–10 (lagets poäng mot marknaden) | −0,062 (z −1,9, n 1419) | −0,003 (z −0,1, n 814) | −0,140 (z −2,7, n 605) | ingen effekt |
-| Hemmalaget ≤ 3 dagars vila, bortalaget ≥ 6 | +0,032 (z 1,7, n 4142) | +0,007 (z 0,3, n 2911) | +0,091 (z 2,6, n 1231) | ingen effekt |
+| Hemmalaget ≤ 3 dagars vila, bortalaget ≥ 6 | +0,033 (z 1,7, n 4144) | +0,007 (z 0,3, n 2911) | +0,093 (z 2,6, n 1233) | ingen effekt |
 | Hemmalaget saknar ≥ 25 % av anfallet (xG+xA) | +0,237 (z 1,3, n 42) | – | +0,237 (z 1,3, n 42) | ingen effekt |
 | Bortalaget saknar ≥ 25 % av anfallet (hemmalagets poäng) | +0,224 (z 1,4, n 58) | – | +0,224 (z 1,4, n 58) | ingen effekt |
 
 ## Justeringsmodell: blir sannolikheterna bättre?
 
-Alla signaler och en kalibrering per liga (favorit-/skrällbias, hemmabias, kryss) läggs på marknadens sannolikheter. Anpassning före 2021/22, val på 2021/22–2022/23, en enda mätning på 2023/24 och senare. Mått: logloss-skillnad per match (negativ = bättre). Grovt räknat ändras chansen till 13 rätt med faktorn e^(−13 × skillnaden), så −0,001 ≈ +1,3 %. Genererad av `scripts/learnings-model.mjs` 2026-09-28.
+Alla signaler och en kalibrering per liga (favorit-/skrällbias, hemmabias, kryss) läggs på marknadens sannolikheter. Anpassning före 2021/22, val på 2021/22–2022/23, en enda mätning på 2023/24 och senare. Mått: logloss-skillnad per match (negativ = bättre). Grovt räknat ändras chansen till 13 rätt med faktorn e^(−13 × skillnaden), så −0,001 ≈ +1,3 %. Genererad av `scripts/learnings-model.mjs` 2026-10-04.
 
 Oddset-simuleringen spelar tecken med EV ≥ 3 % och odds ≤ 5. "Bästa pris" = högsta odds bland alla bolag i football-data. Det är för optimistiskt (gamla och begränsade priser), så jämför varianterna med varandra, inte med noll. CLV mäts mot ojusterad stängning och blir därför lägre för justerade varianter.
 
@@ -44,11 +44,11 @@ Oddset-simuleringen spelar tecken med EV ≥ 3 % och odds ≤ 5. "Bästa pris" =
 | Variant | Logloss-skillnad (z) | Bästa pris: spel / ROI ± SE / CLV | Snittodds: spel / ROI ± SE |
 |---|---|---|---|
 | bas | – | 1287 / 2,3 % ± 4,6 % / 3,6 % | 4 / 12,3 % ± 59,7 % |
-| alla ligor + alla signaler | −0,0004 (−1,0) | 6907 / 5,6 % ± 1,8 % / 0,4 % | 1498 / 6,5 % ± 3,6 % |
+| alla ligor + alla signaler | −0,0004 (−0,9) | 6963 / 5,8 % ± 1,8 % / 0,4 % | 1504 / 6,4 % ± 3,6 % |
 | ligakalibrering (alla ligor) | −0,0006 (−2,0) | 4248 / 7,8 % ± 2,4 % / 1,7 % | 467 / 8,0 % ± 6,5 % |
 | valt på validering | −0,0005 (−1,8) | 2938 / 7,1 % ± 2,7 % / 1,7 % | 433 / 5,8 % ± 6,4 % |
 
-Signaler en i taget (validering, negativ = bättre): luck −0,0001 (z −0,6), gap −0,0001 (z −0,9), mres +0,0001 (z 0,2), h2hPts −0,0001 (z −3,9), h2hRes +0,0001 (z 3,8), rest +0,0001 (z 0,9), promo 0,0000 (z 0,3), releg 0,0000 (z −0,6), h2hDraw 0,0000 (z 0,7), underOpen −0,0001 (z −1,2).
+Signaler en i taget (validering, negativ = bättre): luck −0,0001 (z −0,6), gap −0,0001 (z −0,9), mres +0,0001 (z 0,2), h2hPts −0,0001 (z −3,9), h2hRes +0,0001 (z 3,8), rest +0,0001 (z 0,9), promo 0,0000 (z 0,3), releg 0,0000 (z −0,6), sp 0,0000 (z −0,4), h2hDraw 0,0000 (z 0,7), underOpen −0,0001 (z −1,2).
 
 **Används live:** ligakalibrering, alla ligor, inga signaler (kontroll −0,0006, z −2,0).
 
@@ -57,11 +57,11 @@ Signaler en i taget (validering, negativ = bättre): luck −0,0001 (z −0,6), 
 | Variant | Logloss-skillnad (z) | Bästa pris: spel / ROI ± SE / CLV | Snittodds: spel / ROI ± SE |
 |---|---|---|---|
 | bas | – | 5186 / 5,7 % ± 2,2 % / 5,8 % | – / – |
-| alla ligor + alla signaler | −0,0002 (−0,7) | 11191 / 5,1 % ± 1,4 % / 2,1 % | – / – |
-| ligakalibrering (alla ligor) | −0,0002 (−0,7) | 9421 / 5,6 % ± 1,5 % / 2,8 % | – / – |
+| alla ligor + alla signaler | −0,0002 (−0,9) | 11269 / 5,3 % ± 1,4 % / 2,1 % | – / – |
+| ligakalibrering (alla ligor) | −0,0002 (−0,8) | 9423 / 5,6 % ± 1,5 % / 2,8 % | – / – |
 | valt på validering | −0,0001 (−0,5) | 5938 / 5,8 % ± 1,9 % / 4,9 % | – / – |
 
-Signaler en i taget (validering, negativ = bättre): luck 0,0000 (z −0,5), gap 0,0000 (z −0,8), mres 0,0000 (z 0,2), h2hPts 0,0000 (z 2,9), h2hRes +0,0001 (z 2,7), rest 0,0000 (z 1,1), promo 0,0000 (z 0,5), releg 0,0000 (z 0,5), steam 0,0000 (z 0,7), book −0,0001 (z −2,0), h2hDraw 0,0000 (z 1,3), under 0,0000 (z −1,3).
+Signaler en i taget (validering, negativ = bättre): luck 0,0000 (z −0,5), gap 0,0000 (z −0,8), mres 0,0000 (z 0,2), h2hPts 0,0000 (z 2,9), h2hRes +0,0001 (z 2,7), rest 0,0000 (z 1,1), promo 0,0000 (z 0,4), releg 0,0000 (z 0,5), steam 0,0000 (z 0,7), book −0,0001 (z −2,0), alt 0,0000 (z 0,1), sp 0,0000 (z −0,3), h2hDraw 0,0000 (z 1,3), under 0,0000 (z −1,3).
 
 **Används inte:** ingen variant blev bättre med z ≤ −2 i kontrollen.
 
@@ -92,8 +92,8 @@ Vikt 0,159 mot öppning och 0,183 mot stängning. Positiv vikt betyder att laget
 | [Superligaen](ligor/DK.md) | 3006 | 2012/13–2026/27 | saknas | 1 |
 | [Ekstraklasa](ligor/EK.md) | 4160 | 2012/13–2026/27 | saknas | 0 |
 | [J1 League](ligor/JP1.md) | 4603 | 2012–2026/27 | saknas | 0 |
-| [MLS](ligor/MLS.md) | 6204 | 2012–2026 | saknas | 0 |
-| [Liga MX](ligor/MX.md) | 4731 | 2012/13–2026/27 | saknas | 0 |
+| [MLS](ligor/MLS.md) | 6220 | 2012–2026 | saknas | 0 |
+| [Liga MX](ligor/MX.md) | 4740 | 2012/13–2026/27 | saknas | 0 |
 | [Brasileirão Série A](ligor/BR.md) | 5596 | 2012–2026 | saknas | 0 |
 | [Liga Profesional](ligor/AR.md) | 6384 | 2012/13–2026 | saknas | 0 |
 
@@ -104,16 +104,16 @@ Här kan inget mätas mot marknaden. Filerna visar profil, säsonger, modellens 
 | Liga | Matcher | Lagfiler |
 |---|---|---|
 | [Superettan](ligor/SE2.md) | 439 | 16 |
-| [Div 1 Norra](ligor/SE3N.md) | 432 | 16 |
-| [Div 1 Södra](ligor/SE3S.md) | 432 | 16 |
-| [Brasileirão Série B](ligor/BR2.md) | 676 | 20 |
+| [Div 1 Norra](ligor/SE3N.md) | 438 | 16 |
+| [Div 1 Södra](ligor/SE3S.md) | 439 | 16 |
+| [Brasileirão Série B](ligor/BR2.md) | 690 | 20 |
 | [Champions League](ligor/CL.md) (cup) | 0 | 0 |
 | [Europa League](ligor/EL.md) (cup) | 0 | 0 |
 | [Conference League](ligor/ECL.md) (cup) | 0 | 0 |
-| [OBOS-ligaen](ligor/NO2.md) | 424 | 16 |
+| [OBOS-ligaen](ligor/NO2.md) | 429 | 16 |
 | [HNL](ligor/HR.md) | 227 | 10 |
 | [Chance Liga](ligor/CZ.md) | 341 | 16 |
-| [Primera A](ligor/COL.md) | 757 | 20 |
+| [Primera A](ligor/COL.md) | 766 | 20 |
 
 ## Stryktipset och Europatipset, alla ligor
 
@@ -124,7 +124,7 @@ Källa: backtesten i `data/stryktips-backtest-2526-steg3.json`, `data/stryktips-
 | Logloss slutprocent / marknad / folket / lagmodell | 1,014 / 1,013 / 1,026 / 1,033 |
 | Folket streckar favoriten | ×1,13 av vår sannolikhet |
 | Kryss: utfall / vår procent / folket | 26,4 % / 26,0 % / 23,9 % |
-| Favoriter ≥ 55 %: höll / väntat | 67,6 % / 63,9 % (n 293) |
+| Favoriter ≥ 55 %: höll / väntat | 67,6 % / 63,8 % (n 293) |
 
 | Tecken | Utfall | Vår procent | Folket | Utfall / folket |
 |---|---|---|---|---|

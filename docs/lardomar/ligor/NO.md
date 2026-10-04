@@ -1,6 +1,6 @@
 # Eliteserien (NO) – lärdomar
 
-Genererad 2026-09-29 av `node scripts/analyze-learnings.mjs`. Skriv inte för hand här: egna anteckningar läggs i `docs/lardomar/anteckningar/NO.md`.
+Genererad 2026-10-04 av `node scripts/analyze-learnings.mjs`. Skriv inte för hand här: egna anteckningar läggs i `docs/lardomar/anteckningar/NO.md`.
 
 Underlag: 3550 matcher, säsong 2012 – 2026. Marknad = stängningsodds utan marginal (Pinnacle, annars snitt av bolagen), öppningsodds saknas. xG: saknas (0 % av matcherna).
 
@@ -52,11 +52,11 @@ Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (
 
 | Signal | Hela perioden | Träning (< 2023/24) | Kontroll (2023/24–) | Mot öppningsodds | Oddsrörelse | Effekt p90–p10 | Bedömning |
 |---|---|---|---|---|---|---|---|
-| Form mot marknaden (poäng − förväntat, senaste 8) | +0,020 (z 0,6, n 3444) | +0,022 (z 0,6, n 2658) | +0,012 (z 0,2, n 786) | – | – | +0,031 p | ingen effekt |
-| Inbördes möten mot marknaden (≥ 3 möten, 8 år) | +0,047 (z 0,9, n 2609) | −0,011 (z −0,2, n 1990) | +0,293 (z 2,4, n 619) | – | – | +0,055 p | ingen effekt |
-| Inbördes möten, poängskillnad | +0,027 (z 1,3, n 2609) | +0,016 (z 0,7, n 1990) | +0,069 (z 1,6, n 619) | – | – | +0,082 p | ingen effekt |
-| Inbördes möten, kryss mot förväntat | +0,004 (z 0,1, n 2609) | +0,027 (z 0,5, n 1990) | −0,088 (z −0,8, n 619) | – | – | +0,002 p | ingen effekt |
-| Vilodagar (hemma − borta, ligamatcher) | +0,005 (z 0,4, n 3385) | +0,004 (z 0,3, n 2620) | +0,006 (z 0,3, n 765) | – | – | +0,010 p | ingen effekt |
+| Form mot marknaden (poäng − förväntat, senaste 8) | +0,017 (z 0,5, n 3449) | +0,022 (z 0,6, n 2658) | +0,003 (z 0,0, n 791) | – | – | +0,027 p | ingen effekt |
+| Inbördes möten mot marknaden (≥ 3 möten, 8 år) | +0,049 (z 0,9, n 2651) | −0,011 (z −0,2, n 1990) | +0,248 (z 2,3, n 661) | – | – | +0,057 p | ingen effekt |
+| Inbördes möten, poängskillnad | +0,027 (z 1,3, n 2651) | +0,016 (z 0,7, n 1990) | +0,060 (z 1,5, n 661) | – | – | +0,080 p | ingen effekt |
+| Inbördes möten, kryss mot förväntat | +0,001 (z 0,0, n 2651) | +0,027 (z 0,5, n 1990) | −0,085 (z −0,8, n 661) | – | – | +0,001 p | ingen effekt |
+| Vilodagar (hemma − borta, ligamatcher) | +0,005 (z 0,4, n 3386) | +0,004 (z 0,3, n 2620) | +0,006 (z 0,3, n 766) | – | – | +0,010 p | ingen effekt |
 | Bolagssnitt mot Pinnacle vid stängning | −0,295 (z −0,4, n 3346) | −1,286 (z −1,5, n 2745) | +3,263 (z 2,0, n 601) | – | – | −0,019 p | ingen effekt |
 
 ## Situationer
@@ -64,21 +64,21 @@ Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (
 | Situation | Snitt mot marknaden | Träning | Kontroll | Bedömning |
 |---|---|---|---|---|
 | Omgång 1–5 (hemmalagets poäng mot marknaden) | +0,028 (z 0,5, n 576) | +0,066 (z 1,2, n 464) | −0,132 (z −1,1, n 112) | ingen effekt |
-| Sista 4 omgångarna (hemmalagets poäng) | +0,056 (z 0,9, n 452) | +0,031 (z 0,5, n 332) | +0,124 (z 1,1, n 120) | ingen effekt |
-| Sista 4 omgångarna (kryss mot förväntat) | −0,031 (z −1,7, n 452) | −0,018 (z −0,8, n 332) | −0,068 (z −2,1, n 120) | ingen effekt |
-| Uppflyttat lag, omgång 1–10 (lagets poäng mot marknaden) | −0,004 (z −0,1, n 291) | −0,045 (z −0,5, n 217) | +0,114 (z 0,8, n 74) | ingen effekt |
+| Sista 4 omgångarna (hemmalagets poäng) | +0,050 (z 0,9, n 456) | +0,031 (z 0,5, n 332) | +0,102 (z 0,9, n 124) | ingen effekt |
+| Sista 4 omgångarna (kryss mot förväntat) | −0,031 (z −1,6, n 456) | −0,018 (z −0,8, n 332) | −0,065 (z −2,0, n 124) | ingen effekt |
+| Uppflyttat lag, omgång 1–10 (lagets poäng mot marknaden) | −0,007 (z −0,1, n 281) | −0,045 (z −0,5, n 217) | +0,121 (z 0,8, n 64) | ingen effekt |
 | Hemmalaget ≤ 3 dagars vila, bortalaget ≥ 6 | −0,080 (z −0,7, n 136) | −0,007 (z −0,1, n 86) | −0,205 (z −1,2, n 50) | ingen effekt |
 
 ## Lag som marknaden felvärderar?
 
-- Lagets poäng mot marknaden en säsong → nästa: lutning 0,11 (z 1,4, n 189). Ingen persistens: ett lag som slagit oddsen är inte ett bättre spel nästa säsong.
-- Lagets extra hemmafördel → nästa säsong: lutning −0,07 (z −1,0, n 189). Lagspecifik hemmafördel utöver marknaden är brus.
+- Lagets poäng mot marknaden en säsong → nästa: lutning 0,11 (z 1,4, n 190). Ingen persistens: ett lag som slagit oddsen är inte ett bättre spel nästa säsong.
+- Lagets extra hemmafördel → nästa säsong: lutning −0,07 (z −0,9, n 190). Lagspecifik hemmafördel utöver marknaden är brus.
 
 ## Stryktipset och Europatipset
 
 Inga matcher från ligan i de sparade backtesten ännu.
 
-## Tabell nu (FotMob, 2026-09-29)
+## Tabell nu (FotMob, 2026-10-04)
 
 | # | Lag | M | V | O | F | Mål | +/− | P |
 |---|---|---|---|---|---|---|---|---|

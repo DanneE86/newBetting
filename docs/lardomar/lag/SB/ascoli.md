@@ -1,10 +1,11 @@
 # Ascoli (Serie B) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [SB](../../ligor/SB.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [SB](../../ligor/SB.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
-- Inget som avviker från marknaden. Följ oddsen.
+- Efter landslagsuppehåll: 1,72 poäng per match mot 1,22 annars (9-4-5 på 18 matcher), mot marknaden +0,43 mot +0,02. Sedan 2023: 1-1-2. Bättre än vanligt, men få matcher: i hela ligan är effekten +0,00 mot marknaden.
+- Svårt för: Palermo (1-1-4, 0,67 p/match, mot marknaden −0,39), Cremonese (2-4-3, 1,11 p/match, mot marknaden +0,09). Där marknaden ligger nära noll är laget bara sämre i de mötena än annars, och oddsen vet redan om det.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -31,13 +32,46 @@ Form (äldst → senast): FOVVOVFV · senaste match 2026-09-19
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
 
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 18 | 9-4-5 | 1,72 | +0,43 |
+| Efter uppehåll sedan 2023 | 4 | 1-1-2 | 1,00 | −0,14 |
+| Övriga matcher | 255 | 79-74-102 | 1,22 | +0,02 |
+
+Hela ligan efter uppehåll: +0,00 mot marknaden (n 535). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2024-04-01 | Spezia - Ascoli | 2-1 F | −1,19 |
+| 2023-11-25 | Reggiana - Ascoli | 1-1 O | +0,53 |
+| 2023-10-21 | Lecco - Ascoli | 0-2 V | +1,26 |
+| 2023-09-16 | Ascoli - Palermo | 0-1 F | −1,16 |
+| 2023-04-01 | Ascoli - Brescia | 4-3 V | +1,41 |
+| 2022-11-27 | Sudtirol - Ascoli | 2-2 O | +0,48 |
+| 2022-10-02 | Benevento - Ascoli | 1-1 O | +0,84 |
+| 2022-04-02 | Ascoli - Pordenone | 1-0 V | +1,07 |
+| 2021-11-20 | Pordenone - Ascoli | 0-1 V | +1,42 |
+| 2021-10-16 | Ascoli - Lecce | 1-1 O | −0,05 |
+| 2021-09-11 | Como - Ascoli | 0-1 V | +1,48 |
+| 2021-04-02 | Cosenza - Ascoli | 2-1 F | −1,63 |
+| 2020-10-17 | Frosinone - Ascoli | 1-0 F | −1,25 |
+| 2019-11-24 | Ascoli - Cosenza | 3-2 V | +1,48 |
+| 2019-10-20 | Chievo - Ascoli | 2-0 F | −1,20 |
+| 2019-09-14 | Ascoli - Livorno | 2-0 V | +1,48 |
+| 2018-10-20 | Ascoli - Carpi | 1-0 V | +1,24 |
+| 2018-09-15 | Ascoli - Lecce | 1-0 V | +1,55 |
+
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
 | Motståndare | M | V-O-F | Mål | Mot marknaden | Kryss mot odds | Senast |
 |---|---|---|---|---|---|---|
-| Cremonese | 10 | 2-5-3 | 9–13 | +0,05 | +20 pe | 2024-02-16 0-0 (h) |
 | Pisa | 10 | 4-1-5 | 9–11 | +0,01 | −20 pe | 2024-05-10 2-1 (h) |
 | Benevento | 9 | 3-3-3 | 10–14 | +0,22 | +5 pe | 2026-09-05 1-0 (h) |
+| Cremonese | 9 | 2-4-3 | 9–13 | +0,09 | +15 pe | 2024-02-16 0-0 (h) |
 | Palermo | 6 | 1-1-4 | 7–12 | −0,39 | −12 pe | 2024-05-05 2-2 (b) |
 | Empoli | 4 | 2-1-1 | 5–3 | +0,80 | −2 pe | 2021-05-01 2-0 (h) |
 | Modena | 4 | 1-1-2 | 2–3 | −0,23 | −6 pe | 2024-04-20 0-0 (h) |
@@ -54,42 +88,44 @@ Form (äldst → senast): FOVVOVFV · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): Palermo 0,67 p/match (−0,39), Cremonese 1,11 p/match (+0,09).
+
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Francesco Tomei. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Samuele Vitale | GK | 24 | Italy | 791 k€ | 7,25 | 0 | 0 | 0/0 |  |
+| 1 | Samuele Vitale | GK | 24 | Italy | 984 k€ | 7,25 | 0 | 0 | 0/0 |  |
 | 12 | Rocco Dente | Keeper | 18 | Italy | – | – | 0 | 0 | 0/0 |  |
-| 22 | Matteo Raffaelli | Keeper | 21 | Italy | 521 k€ | – | 0 | 0 | 0/0 |  |
-| 41 | Rok Brzan | GK | 22 | Slovenia | 252 k€ | – | 0 | 0 | 0/0 |  |
-| 45 | Gian Crespi | GK | 25 | Italy | 208 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Matteo Raffaelli | Keeper | 21 | Italy | 515 k€ | – | 0 | 0 | 0/0 |  |
+| 41 | Rok Brzan | GK | 22 | Slovenia | 282 k€ | – | 0 | 0 | 0/0 |  |
+| 45 | Gian Crespi | GK | 25 | Italy | 264 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 |  | Damiano Menna | Defender | 31 | Italy | 153 k€ | – | 0 | 0 | 0/0 |  |
-| 3 | Manuel Nicoletti | LM | 27 | Italy | 192 k€ | – | 0 | 0 | 0/0 |  |
+| 3 | Manuel Nicoletti | LM | 27 | Italy | 214 k€ | – | 0 | 0 | 0/0 |  |
 | 17 | Filippo Diamanti | Defender | 17 | Italy | – | – | 0 | 0 | 0/0 |  |
-| 19 | Abdoul Guiébré | LB,LM | 29 | Burkina Faso | 252 k€ | 7,03 | 0 | 0 | 2/0 |  |
-| 23 | Manuel Alagna | Defender | 24 | Italy | 428 k€ | – | 0 | 0 | 0/0 |  |
-| 30 | Marcos Curado | CB | 31 | Argentina | 169 k€ | 7,35 | 0 | 0 | 1/0 |  |
-| 32 | Federico Gattoni | CB | 27 | Argentina | 532 k€ | – | 0 | 0 | 0/0 |  |
-| 33 | Nicholas Rizzo | CB | 26 | Italy | 303 k€ | 7,04 | 0 | 0 | 3/0 |  |
-| 62 | Tommaso Milanese | RB,CB | 24 | Italy | 575 k€ | 6,86 | 0 | 1 | 0/0 |  |
+| 19 | Abdoul Guiébré | LB,LM | 29 | Burkina Faso | 424 k€ | 7,03 | 0 | 0 | 2/0 |  |
+| 23 | Manuel Alagna | Defender | 24 | Italy | 504 k€ | – | 0 | 0 | 0/0 |  |
+| 30 | Marcos Curado | CB | 31 | Argentina | 218 k€ | 7,35 | 0 | 0 | 1/0 |  |
+| 32 | Federico Gattoni | CB | 27 | Argentina | 426 k€ | – | 0 | 0 | 0/0 |  |
+| 33 | Nicholas Rizzo | CB | 26 | Italy | 349 k€ | 7,04 | 0 | 0 | 3/0 |  |
+| 62 | Tommaso Milanese | RB,CB | 24 | Italy | 659 k€ | 6,86 | 0 | 1 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 4 | Samuele Damiani | CDM,CM | 28 | Italy | 292 k€ | 7,41 | 0 | 1 | 0/0 |  |
-| 7 | Andrea Silipo | RM,RW | 25 | Italy | 336 k€ | 7,49 | 3 | 0 | 0/0 |  |
-| 8 | Giovanni Corradini | CDM,CM | 23 | Italy | 339 k€ | 7,12 | 0 | 0 | 3/0 |  |
+| 4 | Samuele Damiani | CDM,CM | 28 | Italy | 459 k€ | 7,41 | 0 | 1 | 0/0 |  |
+| 7 | Andrea Silipo | RM,RW | 25 | Italy | 406 k€ | 7,49 | 3 | 0 | 0/0 |  |
+| 8 | Giovanni Corradini | CDM,CM | 23 | Italy | 324 k€ | 7,12 | 0 | 0 | 3/0 |  |
 | 11 | Sergiu Perciun | CM,ST | 20 | Moldova | 1,8 M€ | 6,73 | 0 | 0 | 0/0 |  |
-| 13 | Gennaro Acampora | CDM,CAM | 32 | Italy | 224 k€ | 6,13 | 0 | 0 | 0/0 |  |
-| 14 | Andrea Oliveri | RM,RWB | 23 | Italy | 555 k€ | 6,37 | 0 | 0 | 0/0 |  |
+| 13 | Gennaro Acampora | CDM,CAM | 32 | Italy | 268 k€ | 6,13 | 0 | 0 | 0/0 |  |
+| 14 | Andrea Oliveri | RM | 23 | Italy | 484 k€ | 6,37 | 0 | 0 | 0/0 |  |
 | 16 | Antonio Russo | Midfielder | 18 | Italy | – | – | 0 | 0 | 0/0 |  |
 | 18 | Luca Lo Scalzo | CAM | 19 | Italy | – | – | 0 | 0 | 0/0 |  |
-| 21 | Giacomo De Pieri | CAM | 19 | Italy | 1,8 M€ | 6,64 | 0 | 1 | 1/0 |  |
-| 27 | Matteo Ricci | CM,CDM | 32 | Italy | 184 k€ | – | 0 | 0 | 0/0 |  |
-| 77 | Don Bolsius | CAM | 27 | Netherlands | 174 k€ | 6,44 | 0 | 0 | 0/0 |  |
+| 21 | Giacomo De Pieri | CAM | 19 | Italy | 1,6 M€ | 6,64 | 0 | 1 | 1/0 |  |
+| 27 | Matteo Ricci | CM,CDM | 32 | Italy | 290 k€ | – | 0 | 0 | 0/0 |  |
+| 77 | Don Bolsius | CAM | 27 | Netherlands | 325 k€ | 6,44 | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 9 | Amine Chakir | ST | 25 | Italy | – | 6,94 | 0 | 1 | 0/0 |  |
-| 15 | Simone D'Uffizi | LW,ST | 22 | Italy | 821 k€ | 7,48 | 1 | 0 | 2/0 |  |
-| 35 | Gabriele Gori | ST | 27 | Italy | 492 k€ | 6,67 | 1 | 1 | 1/0 |  |
-| 99 | Matteo Brunori | ST,CAM | 31 | Italy | 962 k€ | 6,75 | 1 | 0 | 0/0 |  |
+| 15 | Simone D'Uffizi | LW,ST | 22 | Italy | 983 k€ | 7,48 | 1 | 0 | 2/0 |  |
+| 35 | Gabriele Gori | ST | 27 | Italy | 559 k€ | 6,67 | 1 | 1 | 1/0 |  |
+| 99 | Matteo Brunori | ST,CAM | 31 | Italy | 998 k€ | 6,75 | 1 | 0 | 0/0 |  |

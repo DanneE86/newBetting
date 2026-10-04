@@ -1,10 +1,13 @@
 # Fleetwood Town (League Two) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Stark historik mot Swindon (−0,73 p/match mot marknaden, 6 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Spelstil 2025/26: Balanserat, Blandat, Lågpress, Medel på fasta, Svag mot fasta. Bäst mot Bollinnehav (+0,15, samma håll i båda halvorna men svagt), Farlig på fasta (+0,16, svagt), Kortpass (+0,10, svagt). Svårast mot Medel på fasta (−0,11, samma håll i båda halvorna men svagt), Svag mot fasta (−0,12, samma håll i båda halvorna men svagt), Balanserat (−0,10, samma håll i båda halvorna men svagt). Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2025/26: 0,26 mål för per match (xG 0,36), 0,52 emot (xG 0,34), 4,8 hörnor.
+- Svårt för: Swindon (1-2-3, 0,83 p/match, mot marknaden −0,73), Port Vale (1-3-2, 1,00 p/match, mot marknaden −0,23). Där marknaden ligger nära noll är laget bara sämre i de mötena än annars, och oddsen vet redan om det.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -32,6 +35,51 @@ Form (äldst → senast): VOOOVOFF · senaste match 2026-09-26
 | 2026/27 | EL2 | 8 | 1,25 | +0,02 (−0,38 / +0,42) | 50 % (27 %) | 1,13–1,13 | 1,45–1,34* | 1,45 |
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/EL2.md#fleetwood-town) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2025/26: **Balanserat, Blandat, Lågpress, Medel på fasta, Svag mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026/27 | 9 | 0,22 | 0,29 | 0,11 | 0,36 | 4,8 |
+| 2025/26 | 46 | 0,26 | 0,36 | 0,52 | 0,34 | 4,8 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Backar hem | 89 | 1,25–1,20 | −0,11 | −0,01 (−0,1) | +8 pe | −3 pe | svag |
+| Balanserat | 107 | 1,10–1,42 | −0,20 | −0,10 (−0,9) | −0 pe | +2 pe | ✔ samma håll |
+| Bollinnehav | 79 | 1,28–1,34 | +0,05 | +0,15 (1,1) | +9 pe | −2 pe | ✔ samma håll |
+| Kortpass | 67 | 1,25–1,45 | −0,01 | +0,10 (0,6) | +1 pe | +2 pe | svag |
+| Blandat | 111 | 1,22–1,32 | −0,11 | −0,01 (−0,1) | +3 pe | +4 pe | svag |
+| Direktspel | 97 | 1,14–1,26 | −0,15 | −0,05 (−0,4) | +9 pe | −9 pe | ✔ samma håll |
+| Lågpress | 73 | 1,16–1,34 | −0,06 | +0,04 (0,3) | +7 pe | −3 pe | svag |
+| Mellanpress | 112 | 1,10–1,21 | −0,14 | −0,04 (−0,4) | +11 pe | −5 pe | ✔ samma håll |
+| Högpress | 90 | 1,36–1,47 | −0,08 | +0,02 (0,1) | −4 pe | +4 pe | svag |
+| Svag på fasta | 104 | 1,14–1,28 | −0,10 | +0,00 (0,0) | +5 pe | −1 pe | svag |
+| Medel på fasta | 102 | 1,13–1,37 | −0,21 | −0,11 (−1,0) | +7 pe | −1 pe | ✔ samma håll |
+| Farlig på fasta | 69 | 1,39–1,33 | +0,06 | +0,16 (1,0) | +2 pe | −1 pe | svag |
+| Stark mot fasta | 86 | 1,22–1,34 | −0,07 | +0,03 (0,2) | +7 pe | +3 pe | svag |
+| Medel mot fasta | 120 | 1,21–1,27 | −0,05 | +0,05 (0,4) | +4 pe | −4 pe | svag |
+| Svag mot fasta | 69 | 1,16–1,41 | −0,22 | −0,12 (−0,9) | +3 pe | −2 pe | ✔ samma håll |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
+
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 1 | 0-1-0 | 1,00 | +1,44 |
+| Efter uppehåll sedan 2023 | 0 | – | – | – |
+| Övriga matcher | 410 | 128-125-157 | 1,24 | −0,08 |
+
+Hela ligan efter uppehåll: 0,00 mot marknaden (n 84). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2022-12-02 | Ipswich - Fleetwood Town | 1-1 O | +1,44 |
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -62,44 +110,46 @@ Form (äldst → senast): VOOOVOFF · senaste match 2026-09-26
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): Swindon 0,83 p/match (−0,73), Port Vale 1,00 p/match (−0,23).
+
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Matt Lawlor. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Jay Lynch | GK | 33 | England | 110 k€ | 6,78 | 0 | 0 | 0/0 |  |
+| 1 | Jay Lynch | GK | 33 | England | 135 k€ | 6,81 | 0 | 0 | 0/0 |  |
 | 22 | James Pradic | GK | 21 | Wales | – | – | 0 | 0 | 0/0 |  |
 | 34 | Oliver Bellizia | Keeper | 19 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 3 | Danny Andrew | LB,LWB,LW,CB | 35 | England | 87 k€ | 6,43 | 0 | 0 | 0/0 |  |
-| 5 | Finley Potter | CB | 22 | England | 227 k€ | 7,12 | 1 | 0 | 2/0 |  |
-| 6 | Rhys Bennett | CB | 22 | England | 272 k€ | 6,68 | 0 | 1 | 3/0 |  |
+| 3 | Danny Andrew | LB,LWB,LW,CB | 35 | England | 77 k€ | 6,43 | 0 | 0 | 0/0 |  |
+| 5 | Finley Potter | CB | 22 | England | 196 k€ | 7,15 | 1 | 0 | 2/0 |  |
+| 6 | Rhys Bennett | CB | 22 | England | 265 k€ | 6,66 | 0 | 1 | 3/0 |  |
 | 16 | Conor Haughey | CB | 19 | Northern Ireland | – | 6,14 | 0 | 0 | 0/0 |  |
-| 24 | Jake Batty | LB,LWB | 21 | England | 276 k€ | 6,50 | 0 | 0 | 0/0 |  |
-| 26 | Shaun Rooney | CB | 30 | Scotland | 183 k€ | 6,91 | 0 | 0 | 2/0 |  |
-| 32 | Kayden Hughes | CB | 20 | England | 391 k€ | 6,21 | 0 | 0 | 0/0 |  |
-| 36 | Jesse Dempsey | LB | 21 | Ireland | 221 k€ | – | 0 | 0 | 0/0 |  |
+| 24 | Jake Batty | LB,LWB | 21 | England | 267 k€ | 6,51 | 0 | 0 | 0/0 |  |
+| 26 | Shaun Rooney | CB | 30 | Scotland | 185 k€ | 6,92 | 0 | 0 | 2/0 |  |
+| 32 | Kayden Hughes | CB | 20 | England | 223 k€ | 6,21 | 0 | 0 | 0/0 |  |
+| 36 | Jesse Dempsey | LB | 21 | Ireland | 237 k€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 |  | Pele Smith | Midfielder | 17 | England | – | – | 0 | 0 | 0/0 |  |
-| 4 | Harrison Neal | CDM,CM | 25 | England | 269 k€ | 7,15 | 0 | 0 | 3/0 |  |
+| 4 | Harrison Neal | CDM,CM | 25 | England | 385 k€ | 7,02 | 0 | 0 | 3/0 |  |
 | 7 | Andy Cannon | CAM | 30 | England | 186 k€ | 7,07 | 0 | 0 | 1/0 |  |
-| 8 | Kane Thompson-Sommers | CM,CDM,RW,LM | 25 | England | 260 k€ | 6,17 | 0 | 0 | 0/0 |  |
-| 10 | Mark Helm | CAM,CM | 24 | England | 211 k€ | 7,00 | 1 | 0 | 1/0 |  |
-| 14 | Lewis McCann | LW,CAM,LWB,ST | 25 | Scotland | 255 k€ | 7,20 | 0 | 0 | 1/0 |  |
-| 27 | Crispin McLean | CAM | 19 | England | – | 6,63 | 0 | 0 | 0/0 |  |
-| 28 | Josh Robertson | CDM,CM | 20 | England | – | 5,97 | 0 | 0 | 0/0 |  |
-| 29 | Raffaele Cirino | CAM | 19 | Montserrat | – | 6,71 | 0 | 0 | 2/0 |  |
+| 8 | Kane Thompson-Sommers | CM,CDM,RW,LM | 25 | England | 246 k€ | 6,17 | 0 | 0 | 0/0 |  |
+| 10 | Mark Helm | CAM,CM | 24 | England | 294 k€ | 6,97 | 1 | 0 | 1/0 |  |
+| 14 | Lewis McCann | LW,CAM,LWB,ST | 25 | Scotland | 280 k€ | 7,18 | 0 | 0 | 1/0 |  |
+| 27 | Crispin McLean | CAM | 20 | England | – | 6,63 | 0 | 0 | 0/0 |  |
+| 28 | Josh Robertson | CDM,CM | 21 | England | – | 6,28 | 0 | 0 | 0/0 |  |
+| 29 | Raffaele Cirino | CAM | 19 | Montserrat | – | 6,70 | 0 | 0 | 2/0 |  |
 | 35 | Sean Costelloe | CAM | 19 | Ireland | – | – | 0 | 0 | 0/0 |  |
 | 40 | David Animasaun | Midfielder | 19 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 9 | Will Davies | ST | 27 | England | 188 k€ | 6,75 | 2 | 1 | 1/0 |  |
-| 11 | Josh Thomas | ST | 24 | Wales | 145 k€ | – | 0 | 0 | 0/0 |  |
-| 15 | Adam Murphy | RW,CM | 21 | Ireland | 447 k€ | 6,39 | 0 | 0 | 0/0 |  |
-| 17 | Ched Evans | ST | 37 | Wales | 109 k€ | 6,61 | 1 | 2 | 4/0 |  |
-| 19 | Ronan Coughlan | ST | 29 | Ireland | 185 k€ | 7,08 | 2 | 1 | 0/0 |  |
-| 20 | Aaron Loupalo-Bi | ST,LW,RW | 20 | England | 484 k€ | 6,43 | 2 | 1 | 0/0 |  |
+| 9 | Will Davies | ST | 27 | England | 255 k€ | 6,71 | 2 | 1 | 1/0 |  |
+| 11 | Josh Thomas | ST | 24 | Wales | 159 k€ | – | 0 | 0 | 0/0 |  |
+| 15 | Adam Murphy | RW,CM | 21 | Ireland | 447 k€ | 6,40 | 0 | 0 | 0/0 |  |
+| 17 | Ched Evans | ST | 37 | Wales | 230 k€ | 6,55 | 1 | 2 | 4/0 |  |
+| 19 | Ronan Coughlan | ST | 30 | Ireland | 205 k€ | 6,96 | 2 | 1 | 1/0 |  |
+| 20 | Aaron Loupalo-Bi | ST,LW,RW | 20 | England | 310 k€ | 6,42 | 2 | 1 | 0/0 |  |
 | 43 | Noah Sawkins | Attacker | 0 | USA | – | – | 0 | 0 | 0/0 |  |
 
 Har lämnat truppen sedan vi började spara (5): James Bolton (senast 2026-09-29), Denver Hume (senast 2026-09-29), Owen Devonport (senast 2026-09-29), Luke Hewitson (senast 2026-09-29), Liam Roberts (senast 2026-09-29).

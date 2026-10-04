@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-09-29T20:15:35.901Z",
+ "updatedAt": "2026-10-04T09:27:34.347Z",
  "league": "BL",
  "fotmobId": 54,
  "source": "FotMob",
@@ -19,7 +19,7 @@
      "born": "1997-12-06",
      "country": "Switzerland",
      "height": 193,
-     "value": 29933795,
+     "value": 35376847,
      "rating": 7.35,
      "goals": 0,
      "assists": 0,
@@ -57,7 +57,7 @@
      "born": "2003-11-19",
      "country": "Germany",
      "height": 197,
-     "value": 387930,
+     "value": 185423,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -76,7 +76,7 @@
      "born": "1991-04-13",
      "country": "Germany",
      "height": 196,
-     "value": 293653,
+     "value": 284369,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -152,7 +152,7 @@
      "born": "1996-07-20",
      "country": "Germany",
      "height": 189,
-     "value": 14137690,
+     "value": 15188697,
      "rating": 7.86,
      "goals": 0,
      "assists": 1,
@@ -171,14 +171,17 @@
      "born": "1999-12-01",
      "country": "Germany",
      "height": 191,
-     "value": 31610625,
+     "value": 60400514,
      "rating": 7.99,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "30",
+      "expectedReturn": "About 1-2 weeks"
+     }
     },
     {
      "id": 559065,
@@ -190,7 +193,7 @@
      "born": "1995-04-16",
      "country": "Algeria",
      "height": 186,
-     "value": 9615582,
+     "value": 8173244,
      "rating": 6.43,
      "goals": 0,
      "assists": 0,
@@ -209,7 +212,7 @@
      "born": "2007-01-17",
      "country": "France",
      "height": 195,
-     "value": 10966926,
+     "value": 22025620,
      "rating": 7.25,
      "goals": 0,
      "assists": 0,
@@ -228,7 +231,7 @@
      "born": "1994-01-12",
      "country": "Germany",
      "height": 184,
-     "value": 1968706,
+     "value": 1849615,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -250,7 +253,7 @@
      "born": "2008-08-12",
      "country": "Brazil",
      "height": 184,
-     "value": 2080378,
+     "value": 5617022,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -269,7 +272,7 @@
      "born": "2005-03-08",
      "country": "Italy",
      "height": 188,
-     "value": 2304286,
+     "value": 2174589,
      "rating": 6.22,
      "goals": 0,
      "assists": 0,
@@ -291,7 +294,7 @@
      "born": "2008-01-09",
      "country": "Italy",
      "height": 194,
-     "value": 5258436,
+     "value": 11210651,
      "rating": 6.35,
      "goals": 0,
      "assists": 0,
@@ -310,7 +313,7 @@
      "born": "2005-09-23",
      "country": "England",
      "height": 191,
-     "value": 27601524,
+     "value": 45914752,
      "rating": 7.85,
      "goals": 0,
      "assists": 1,
@@ -329,7 +332,7 @@
      "born": "2000-10-10",
      "country": "Germany",
      "height": 190,
-     "value": 40768582,
+     "value": 58493494,
      "rating": 7.77,
      "goals": 2,
      "assists": 0,
@@ -348,7 +351,7 @@
      "born": "2002-10-17",
      "country": "Germany",
      "height": 183,
-     "value": 30819886,
+     "value": 44321262,
      "rating": 7.38,
      "goals": 1,
      "assists": 2,
@@ -367,7 +370,7 @@
      "born": "2003-10-20",
      "country": "Austria",
      "height": 188,
-     "value": 17432231,
+     "value": 23893745,
      "rating": 6.26,
      "goals": 0,
      "assists": 0,
@@ -386,7 +389,7 @@
      "born": "2007-03-21",
      "country": "England",
      "height": 176,
-     "value": 31486233,
+     "value": 36019496,
      "rating": 6.93,
      "goals": 0,
      "assists": 0,
@@ -405,7 +408,7 @@
      "born": "1994-03-17",
      "country": "Austria",
      "height": 177,
-     "value": 2544850,
+     "value": 2668022,
      "rating": 6.92,
      "goals": 0,
      "assists": 1,
@@ -424,7 +427,7 @@
      "born": "2002-02-12",
      "country": "Sweden",
      "height": 183,
-     "value": 19663807,
+     "value": 23955881,
      "rating": 7.74,
      "goals": 0,
      "assists": 0,
@@ -443,7 +446,7 @@
      "born": "1998-11-19",
      "country": "Netherlands",
      "height": 185,
-     "value": 18299923,
+     "value": 20549782,
      "rating": 6.8,
      "goals": 0,
      "assists": 0,
@@ -462,14 +465,17 @@
      "born": "1997-11-17",
      "country": "Norway",
      "height": 183,
-     "value": 17587438,
+     "value": 20595292,
      "rating": 7.12,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
      "yellow": 2,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "87",
+      "expectedReturn": "Doubtful"
+     }
     },
     {
      "id": 1636870,
@@ -497,13 +503,13 @@
      "id": 1761151,
      "name": "Samuele Inácio",
      "role": "midfielders",
-     "position": "CAM,CM",
+     "position": "CAM",
      "number": 40,
      "age": 18,
      "born": "2008-04-02",
      "country": "Italy",
      "height": null,
-     "value": 3609294,
+     "value": 10921587,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -516,13 +522,13 @@
      "id": 1215014,
      "name": "Giannis Konstantelias",
      "role": "midfielders",
-     "position": "CAM,CDM,LW,ST",
+     "position": "CAM,CDM,ST",
      "number": 45,
      "age": 23,
      "born": "2003-03-05",
      "country": "Greece",
      "height": 175,
-     "value": 15610614,
+     "value": 23674924,
      "rating": 7.87,
      "goals": 1,
      "assists": 0,
@@ -544,7 +550,7 @@
      "born": "2008-11-17",
      "country": "Germany",
      "height": null,
-     "value": 453057,
+     "value": 381550,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -582,7 +588,7 @@
      "born": "1996-03-12",
      "country": "Guinea",
      "height": 187,
-     "value": 30052476,
+     "value": 31057599,
      "rating": 7.81,
      "goals": 2,
      "assists": 2,
@@ -601,7 +607,7 @@
      "born": "2007-11-19",
      "country": "Greece",
      "height": 171,
-     "value": 25870428,
+     "value": 44402311,
      "rating": 7.14,
      "goals": 0,
      "assists": 1,
@@ -620,7 +626,7 @@
      "born": "2002-07-19",
      "country": "Portugal",
      "height": 185,
-     "value": 23452281,
+     "value": 24433272,
      "rating": 6.99,
      "goals": 2,
      "assists": 0,
@@ -639,7 +645,7 @@
      "born": "2009-05-21",
      "country": "USA",
      "height": null,
-     "value": 690259,
+     "value": 725133,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -649,7 +655,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-09-29T20:15:35.901Z",
+   "fetchedAt": "2026-10-04T09:27:34.347Z",
    "coachHistory": [
     {
      "name": "Niko Kovač",
@@ -660,132 +666,132 @@
     "215151": {
      "name": "Marcel Sabitzer",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "307021": {
      "name": "Emre Can",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "359203": {
      "name": "Patrick Drewes",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "448540": {
      "name": "Serhou Guirassy",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "559065": {
      "name": "Ramy Bensebaini",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "659272": {
      "name": "Julian Ryerson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "664970": {
      "name": "Waldemar Anton",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "743381": {
      "name": "Alexander Meyer",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "764018": {
      "name": "Gregor Kobel",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "792429": {
      "name": "Joey Veerman",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "966019": {
      "name": "Felix Nmecha",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1002058": {
      "name": "Nico Schlotterbeck",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1047667": {
      "name": "Maximilian Beier",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1050158": {
      "name": "Fábio Silva",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1089685": {
      "name": "Carney Chukwuemeka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1209228": {
      "name": "Daniel Svensson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1215014": {
      "name": "Giannis Konstantelias",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1254234": {
      "name": "Ethan Nwaneri",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1287373": {
      "name": "Jobe Bellingham",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1316269": {
      "name": "Silas Ostrzinski",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1479742": {
      "name": "Joane Gadou",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1536436": {
      "name": "Konstantinos Karetsas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1636870": {
      "name": "Justin Lerma",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1663094": {
      "name": "Filippo Mane",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1684432": {
      "name": "Mussa Kaba",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1692797": {
      "name": "Mathis Albert",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1729839": {
      "name": "Enzo Duarte",
@@ -795,37 +801,37 @@
     "1750565": {
      "name": "Kauã Prates",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1761151": {
      "name": "Samuele Inácio",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1845173": {
      "name": "Luca Reggiani",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1845215": {
      "name": "Jan-Luca Riedl",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1845220": {
      "name": "Roméo Ritter",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1845223": {
      "name": "Miguel Adje",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1845228": {
      "name": "Marwan-Omir Mirza",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     }
    },
    "left": [
@@ -852,7 +858,7 @@
      "born": "1986-03-27",
      "country": "Germany",
      "height": 193,
-     "value": 1973513,
+     "value": 2219328,
      "rating": 7.41,
      "goals": 0,
      "assists": 0,
@@ -890,7 +896,7 @@
      "born": "2003-08-08",
      "country": "Germany",
      "height": 189,
-     "value": 13727768,
+     "value": 20988284,
      "rating": 6.73,
      "goals": 0,
      "assists": 0,
@@ -909,7 +915,7 @@
      "born": "2007-03-01",
      "country": "Germany",
      "height": 185,
-     "value": 502115,
+     "value": 401692,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -928,7 +934,7 @@
      "born": "2005-02-28",
      "country": "Germany",
      "height": 188,
-     "value": 380832,
+     "value": 203110,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -947,7 +953,7 @@
      "born": "1998-10-27",
      "country": "France",
      "height": 185,
-     "value": 34676190,
+     "value": 56980258,
      "rating": 7.97,
      "goals": 1,
      "assists": 0,
@@ -966,7 +972,7 @@
      "born": "1996-11-15",
      "country": "South Korea",
      "height": 188,
-     "value": 20622973,
+     "value": 18560675,
      "rating": 7.22,
      "goals": 0,
      "assists": 0,
@@ -985,7 +991,7 @@
      "born": "1996-02-11",
      "country": "Germany",
      "height": 194,
-     "value": 22789431,
+     "value": 29366212,
      "rating": 8.33,
      "goals": 0,
      "assists": 0,
@@ -1004,7 +1010,7 @@
      "born": "2005-06-28",
      "country": "Germany",
      "height": 176,
-     "value": 34148308,
+     "value": 45943159,
      "rating": 7.2,
      "goals": 0,
      "assists": 2,
@@ -1023,7 +1029,7 @@
      "born": "2003-06-16",
      "country": "Germany",
      "height": 180,
-     "value": 33692615,
+     "value": 67667157,
      "rating": 6.59,
      "goals": 0,
      "assists": 0,
@@ -1042,7 +1048,7 @@
      "born": "2000-11-02",
      "country": "Canada",
      "height": 183,
-     "value": 32999805,
+     "value": 42425985,
      "rating": 8.16,
      "goals": 0,
      "assists": 2,
@@ -1061,7 +1067,7 @@
      "born": "1999-05-12",
      "country": "Japan",
      "height": 186,
-     "value": 14132258,
+     "value": 16036585,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -1080,7 +1086,7 @@
      "born": "2000-09-13",
      "country": "France",
      "height": 178,
-     "value": 11006380,
+     "value": 10655394,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -1099,17 +1105,14 @@
      "born": "1997-05-27",
      "country": "Austria",
      "height": 180,
-     "value": 24508278,
+     "value": 38388501,
      "rating": 7.3,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": "87",
-      "expectedReturn": "A few weeks"
-     }
+     "injury": null
     },
     {
      "id": 1771196,
@@ -1121,7 +1124,7 @@
      "born": "2009-01-11",
      "country": "Germany",
      "height": null,
-     "value": 1649360,
+     "value": 1751370,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -1140,7 +1143,7 @@
      "born": "2000-04-02",
      "country": "Croatia",
      "height": 186,
-     "value": 28985274,
+     "value": 41155890,
      "rating": 7.05,
      "goals": 0,
      "assists": 0,
@@ -1159,7 +1162,7 @@
      "born": "1995-02-08",
      "country": "Germany",
      "height": 176,
-     "value": 31275932,
+     "value": 36441425,
      "rating": 7.92,
      "goals": 0,
      "assists": 2,
@@ -1178,7 +1181,7 @@
      "born": "1995-07-14",
      "country": "Germany",
      "height": 175,
-     "value": 11759807,
+     "value": 12935787,
      "rating": 6.07,
      "goals": 0,
      "assists": 0,
@@ -1197,7 +1200,7 @@
      "born": "2003-02-26",
      "country": "Germany",
      "height": 180,
-     "value": 102458989,
+     "value": 137855653,
      "rating": 6.92,
      "goals": 1,
      "assists": 1,
@@ -1219,7 +1222,7 @@
      "born": "2001-01-28",
      "country": "Morocco",
      "height": 185,
-     "value": 49583828,
+     "value": 44503817,
      "rating": 7.37,
      "goals": 1,
      "assists": 2,
@@ -1238,7 +1241,7 @@
      "born": "2009-05-19",
      "country": "Kosovo",
      "height": null,
-     "value": 2014249,
+     "value": 1975030,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -1257,7 +1260,7 @@
      "born": "2007-12-31",
      "country": "Senegal",
      "height": 180,
-     "value": 1825186,
+     "value": 2628267,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -1276,7 +1279,7 @@
      "born": "2004-05-03",
      "country": "Germany",
      "height": 188,
-     "value": 46027344,
+     "value": 75632587,
      "rating": 8.17,
      "goals": 1,
      "assists": 1,
@@ -1295,7 +1298,7 @@
      "born": "2007-01-10",
      "country": "Portugal",
      "height": 185,
-     "value": 931626,
+     "value": 1117951,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -1308,13 +1311,13 @@
      "id": 194165,
      "name": "Harry Kane",
      "role": "attackers",
-     "position": "ST,CAM",
+     "position": "ST",
      "number": 9,
      "age": 33,
      "born": "1993-07-28",
      "country": "England",
      "height": 188,
-     "value": 77775750,
+     "value": 69998175,
      "rating": 7.78,
      "goals": 3,
      "assists": 0,
@@ -1333,7 +1336,7 @@
      "born": "1997-01-13",
      "country": "Colombia",
      "height": 180,
-     "value": 65036559,
+     "value": 73625266,
      "rating": 7.27,
      "goals": 1,
      "assists": 0,
@@ -1346,13 +1349,13 @@
      "id": 1029063,
      "name": "Michael Olise",
      "role": "attackers",
-     "position": "RW,CAM,RM",
+     "position": "RW,CAM",
      "number": 17,
      "age": 24,
      "born": "2001-12-12",
      "country": "France",
      "height": 184,
-     "value": 139520016,
+     "value": 198061698,
      "rating": 8.48,
      "goals": 4,
      "assists": 1,
@@ -1371,7 +1374,7 @@
      "born": "2008-02-22",
      "country": "Germany",
      "height": 168,
-     "value": 41891779,
+     "value": 64140072,
      "rating": 7.2,
      "goals": 1,
      "assists": 0,
@@ -1400,7 +1403,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-09-29T20:15:35.901Z",
+   "fetchedAt": "2026-10-04T09:27:34.347Z",
    "coachHistory": [
     {
      "name": "Vincent Kompany",
@@ -1411,147 +1414,147 @@
     "27299": {
      "name": "Manuel Neuer",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "94841": {
      "name": "Sven Ulreich",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "194165": {
      "name": "Harry Kane",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "385437": {
      "name": "Serge Gnabry",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "460632": {
      "name": "Joshua Kimmich",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "469700": {
      "name": "Jonathan Tah",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "526827": {
      "name": "Konrad Laimer",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "658554": {
      "name": "Dayot Upamecano",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "751202": {
      "name": "Alphonso Davies",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "828159": {
      "name": "Min-Jae Kim",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "851626": {
      "name": "Hiroki Ito",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "860914": {
      "name": "Luis Díaz",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "950824": {
      "name": "Josip Stanišić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1029063": {
      "name": "Michael Olise",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1034808": {
      "name": "Sacha Boey",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1156141": {
      "name": "Jamal Musiala",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1180288": {
      "name": "Ismael Saibari",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1285872": {
      "name": "Jonas Urbig",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1286183": {
      "name": "Tom Bischof",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1395447": {
      "name": "Nathaniel Brown",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1432341": {
      "name": "Tarek Buchmann",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1473580": {
      "name": "Aleksandar Pavlović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1664982": {
      "name": "Leon Klanac",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1737700": {
      "name": "Lennart Karl",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1771196": {
      "name": "Cassiano Kiala",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1771197": {
      "name": "David Santos Daiber",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1798782": {
      "name": "Bara Ndiaye",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1904968": {
      "name": "Erblin Osmani",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1970833": {
      "name": "Bastian Assomo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     }
    },
    "left": []
@@ -1571,7 +1574,7 @@
      "born": "2004-04-16",
      "country": "Germany",
      "height": 194,
-     "value": 5618085,
+     "value": 11311985,
      "rating": 6.59,
      "goals": 0,
      "assists": 0,
@@ -1628,7 +1631,7 @@
      "born": "1996-07-11",
      "country": "Austria",
      "height": 185,
-     "value": 4877683,
+     "value": 5578547,
      "rating": 7.37,
      "goals": 0,
      "assists": 0,
@@ -1647,7 +1650,7 @@
      "born": "1991-11-03",
      "country": "Germany",
      "height": 184,
-     "value": 303705,
+     "value": 291914,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -1666,7 +1669,7 @@
      "born": "1992-08-30",
      "country": "Germany",
      "height": 183,
-     "value": 870830,
+     "value": 919472,
      "rating": 6.61,
      "goals": 0,
      "assists": 0,
@@ -1685,7 +1688,7 @@
      "born": "2005-02-25",
      "country": "Turkiye",
      "height": 178,
-     "value": 2758498,
+     "value": 6412557,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -1704,7 +1707,7 @@
      "born": "1994-01-19",
      "country": "Germany",
      "height": 189,
-     "value": 2793956,
+     "value": 2235164,
      "rating": 8.09,
      "goals": 0,
      "assists": 3,
@@ -1723,7 +1726,7 @@
      "born": "2000-12-03",
      "country": "Germany",
      "height": 173,
-     "value": 6899291,
+     "value": 13287699,
      "rating": 7.02,
      "goals": 0,
      "assists": 0,
@@ -1742,7 +1745,7 @@
      "born": "1993-02-28",
      "country": "Germany",
      "height": 185,
-     "value": 1166881,
+     "value": 1259360,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -1761,7 +1764,7 @@
      "born": "2001-08-03",
      "country": "DR Congo",
      "height": 191,
-     "value": 2548511,
+     "value": 5988478,
      "rating": 7.6,
      "goals": 0,
      "assists": 2,
@@ -1780,7 +1783,7 @@
      "born": "2003-02-10",
      "country": "Germany",
      "height": 186,
-     "value": 2679928,
+     "value": 4146841,
      "rating": 6.42,
      "goals": 0,
      "assists": 0,
@@ -1799,7 +1802,7 @@
      "born": "2005-12-17",
      "country": "Switzerland",
      "height": null,
-     "value": 1482213,
+     "value": 4001976,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -1818,7 +1821,7 @@
      "born": "2000-02-01",
      "country": "Germany",
      "height": 184,
-     "value": 6576431,
+     "value": 8150228,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -1834,13 +1837,13 @@
      "id": 602523,
      "name": "Maximilian Eggestein",
      "role": "midfielders",
-     "position": "CDM,CM",
+     "position": "CDM",
      "number": 8,
      "age": 29,
      "born": "1996-12-08",
      "country": "Germany",
      "height": 181,
-     "value": 4793006,
+     "value": 6726276,
      "rating": 7.64,
      "goals": 2,
      "assists": 0,
@@ -1859,7 +1862,7 @@
      "born": "2001-10-25",
      "country": "Japan",
      "height": 175,
-     "value": 12213291,
+     "value": 17157038,
      "rating": 8.05,
      "goals": 4,
      "assists": 0,
@@ -1878,7 +1881,7 @@
      "born": "2001-02-07",
      "country": "Germany",
      "height": 184,
-     "value": 4395412,
+     "value": 6006747,
      "rating": 7.28,
      "goals": 2,
      "assists": 0,
@@ -1897,7 +1900,7 @@
      "born": "2001-12-12",
      "country": "Japan",
      "height": 179,
-     "value": 1483062,
+     "value": 4004268,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -1919,7 +1922,7 @@
      "born": "1998-07-06",
      "country": "Kosovo",
      "height": 172,
-     "value": 1184902,
+     "value": 1240563,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -1941,7 +1944,7 @@
      "born": "2007-07-24",
      "country": "Germany",
      "height": 181,
-     "value": 732418,
+     "value": 767317,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -1954,13 +1957,13 @@
      "id": 1302666,
      "name": "Derry Scherhant",
      "role": "attackers",
-     "position": "LW,RW",
+     "position": "LW,RW,LM",
      "number": 7,
      "age": 23,
      "born": "2002-11-10",
      "country": "Germany",
      "height": 184,
-     "value": 2523008,
+     "value": 6206990,
      "rating": 7.57,
      "goals": 1,
      "assists": 2,
@@ -1979,7 +1982,7 @@
      "born": "1994-07-10",
      "country": "Germany",
      "height": 184,
-     "value": 2009991,
+     "value": 2143947,
      "rating": 6.22,
      "goals": 0,
      "assists": 0,
@@ -1992,13 +1995,13 @@
      "id": 864157,
      "name": "Jan-Niklas Beste",
      "role": "attackers",
-     "position": "RW,RM",
+     "position": "RW",
      "number": 19,
      "age": 27,
      "born": "1999-01-04",
      "country": "Germany",
      "height": 174,
-     "value": 5288566,
+     "value": 10438153,
      "rating": 7.22,
      "goals": 0,
      "assists": 1,
@@ -2017,7 +2020,7 @@
      "born": "2005-06-20",
      "country": "Burkina Faso",
      "height": 184,
-     "value": 5403573,
+     "value": 7286573,
      "rating": 6.57,
      "goals": 0,
      "assists": 0,
@@ -2036,7 +2039,7 @@
      "born": "2003-03-31",
      "country": "Croatia",
      "height": 194,
-     "value": 9068850,
+     "value": 14902025,
      "rating": 8.08,
      "goals": 3,
      "assists": 1,
@@ -2049,13 +2052,13 @@
      "id": 400625,
      "name": "Vincenzo Grifo",
      "role": "attackers",
-     "position": "LW,LM",
+     "position": "LW",
      "number": 32,
      "age": 33,
      "born": "1993-04-07",
      "country": "Italy",
      "height": 180,
-     "value": 2096291,
+     "value": 2240451,
      "rating": 6.49,
      "goals": 0,
      "assists": 0,
@@ -2074,7 +2077,7 @@
      "born": "2005-06-03",
      "country": "Japan",
      "height": 191,
-     "value": 2542760,
+     "value": 6579391,
      "rating": 6.29,
      "goals": 0,
      "assists": 0,
@@ -2084,7 +2087,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-09-29T20:15:35.901Z",
+   "fetchedAt": "2026-10-04T09:27:34.347Z",
    "coachHistory": [
     {
      "name": "Julian Schuster",
@@ -2095,137 +2098,137 @@
     "303912": {
      "name": "Matthias Ginter",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "307209": {
      "name": "Lukas Kübler",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "343766": {
      "name": "Anthony Jung",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "355358": {
      "name": "Christian Günter",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "400625": {
      "name": "Vincenzo Grifo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "556503": {
      "name": "Jannik Huth",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "556524": {
      "name": "Lucas Höler",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "602523": {
      "name": "Maximilian Eggestein",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "643724": {
      "name": "Philipp Lienhart",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "737365": {
      "name": "Florian Müller",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "848666": {
      "name": "Florent Muslija",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "864157": {
      "name": "Jan-Niklas Beste",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1030836": {
      "name": "Rihito Yamamoto",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1075815": {
      "name": "Patrick Osterhage",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1134467": {
      "name": "Yuito Suzuki",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1210893": {
      "name": "Igor Matanović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1269497": {
      "name": "Yannik Engelhardt",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1281090": {
      "name": "Philipp Treu",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1281107": {
      "name": "Max Rosenfelder",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1281108": {
      "name": "Jordy Makengo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1302666": {
      "name": "Derry Scherhant",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1352996": {
      "name": "Mio Backhaus",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1436730": {
      "name": "Keisuke Goto",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1526221": {
      "name": "Cyriaque Irié",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1577843": {
      "name": "Bruno Ogbus",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1580371": {
      "name": "Berkay Yılmaz",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1815572": {
      "name": "Rouven Tarnutzer",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     }
    },
    "left": []
@@ -2245,7 +2248,7 @@
      "born": "1998-03-27",
      "country": "Germany",
      "height": 188,
-     "value": 7858890,
+     "value": 8285515,
      "rating": 7.79,
      "goals": 0,
      "assists": 0,
@@ -2264,7 +2267,7 @@
      "born": "1999-10-10",
      "country": "Croatia",
      "height": 194,
-     "value": 1573683,
+     "value": 1562969,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -2321,7 +2324,7 @@
      "born": "1999-08-22",
      "country": "Germany",
      "height": 196,
-     "value": 1265940,
+     "value": 1822953,
      "rating": 7.69,
      "goals": 1,
      "assists": 0,
@@ -2340,7 +2343,7 @@
      "born": "2002-05-15",
      "country": "France",
      "height": 190,
-     "value": 17740554,
+     "value": 23916471,
      "rating": 7.14,
      "goals": 0,
      "assists": 0,
@@ -2359,7 +2362,7 @@
      "born": "1991-07-10",
      "country": "Netherlands",
      "height": 187,
-     "value": 736654,
+     "value": 661466,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -2378,7 +2381,7 @@
      "born": "1998-12-05",
      "country": "South Korea",
      "height": 180,
-     "value": 1919063,
+     "value": 3576253,
      "rating": 6.14,
      "goals": 0,
      "assists": 1,
@@ -2397,7 +2400,7 @@
      "born": "2006-04-11",
      "country": "Sierra Leone",
      "height": 195,
-     "value": 9211360,
+     "value": 15136199,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -2416,7 +2419,7 @@
      "born": "2006-12-01",
      "country": "USA",
      "height": 193,
-     "value": 12426284,
+     "value": 20418994,
      "rating": 7.05,
      "goals": 0,
      "assists": 0,
@@ -2435,7 +2438,7 @@
      "born": "2004-04-07",
      "country": "Turkiye",
      "height": null,
-     "value": 395384,
+     "value": 316307,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -2473,7 +2476,7 @@
      "born": "2001-07-07",
      "country": "France",
      "height": 178,
-     "value": 5428423,
+     "value": 9252642,
      "rating": 7.15,
      "goals": 0,
      "assists": 1,
@@ -2492,7 +2495,7 @@
      "born": "2005-05-28",
      "country": "Germany",
      "height": 190,
-     "value": 1770768,
+     "value": 3976380,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -2514,7 +2517,7 @@
      "born": "2005-07-17",
      "country": "Turkiye",
      "height": 183,
-     "value": 12816026,
+     "value": 15803473,
      "rating": 6.51,
      "goals": 0,
      "assists": 0,
@@ -2533,7 +2536,7 @@
      "born": "2000-02-15",
      "country": "Germany",
      "height": 180,
-     "value": 1525504,
+     "value": 1519355,
      "rating": 6.03,
      "goals": 0,
      "assists": 0,
@@ -2552,7 +2555,7 @@
      "born": "2005-01-19",
      "country": "Germany",
      "height": 175,
-     "value": 737633,
+     "value": 1924496,
      "rating": 7.65,
      "goals": 0,
      "assists": 1,
@@ -2571,7 +2574,7 @@
      "born": "2002-02-07",
      "country": "Germany",
      "height": 192,
-     "value": 826936,
+     "value": 823236,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -2593,7 +2596,7 @@
      "born": "1998-01-21",
      "country": "Germany",
      "height": 182,
-     "value": 2519203,
+     "value": 3939374,
      "rating": 7.22,
      "goals": 2,
      "assists": 0,
@@ -2612,7 +2615,7 @@
      "born": "1998-06-06",
      "country": "France",
      "height": 177,
-     "value": 10208333,
+     "value": 12692505,
      "rating": 7.2,
      "goals": 1,
      "assists": 1,
@@ -2631,7 +2634,7 @@
      "born": "2005-12-11",
      "country": "Germany",
      "height": 179,
-     "value": 5256813,
+     "value": 11604635,
      "rating": 6.76,
      "goals": 1,
      "assists": 0,
@@ -2650,7 +2653,7 @@
      "born": "2008-01-14",
      "country": "Germany",
      "height": null,
-     "value": 819571,
+     "value": 1094290,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -2672,7 +2675,7 @@
      "born": "1995-05-27",
      "country": "Germany",
      "height": 187,
-     "value": 1521361,
+     "value": 1533908,
      "rating": 7.18,
      "goals": 0,
      "assists": 1,
@@ -2691,7 +2694,7 @@
      "born": "2004-01-17",
      "country": "Germany",
      "height": 179,
-     "value": 8222588,
+     "value": 13721389,
      "rating": 8.78,
      "goals": 1,
      "assists": 1,
@@ -2713,7 +2716,7 @@
      "born": "2002-02-16",
      "country": "Switzerland",
      "height": 179,
-     "value": 6511507,
+     "value": 14661281,
      "rating": 8.02,
      "goals": 1,
      "assists": 3,
@@ -2732,7 +2735,7 @@
      "born": "2005-04-28",
      "country": "Portugal",
      "height": 185,
-     "value": 2778008,
+     "value": 6042278,
      "rating": 5.98,
      "goals": 1,
      "assists": 0,
@@ -2751,17 +2754,14 @@
      "born": "1994-04-18",
      "country": "Austria",
      "height": 190,
-     "value": 984564,
+     "value": 1162492,
      "rating": 7.57,
      "goals": 3,
      "assists": 0,
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": "30",
-      "expectedReturn": "Doubtful"
-     }
+     "injury": null
     },
     {
      "id": 478527,
@@ -2792,7 +2792,7 @@
      "born": "2006-05-12",
      "country": "Nigeria",
      "height": 188,
-     "value": 3552875,
+     "value": 6663287,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -2802,7 +2802,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-09-29T20:15:35.901Z",
+   "fetchedAt": "2026-10-04T09:27:34.347Z",
    "coachHistory": [
     {
      "name": "Manuel Baum",
@@ -2813,147 +2813,147 @@
     "198316": {
      "name": "Michael Gregoritsch",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "245315": {
      "name": "Jeffrey Gouweleeuw",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "478527": {
      "name": "Steve Mounié",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "556029": {
      "name": "Marius Wolf",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "689065": {
      "name": "Alexis Claude-Maurice",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "844431": {
      "name": "Yannik Keitel",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "926445": {
      "name": "Finn Dahmen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "978680": {
      "name": "Han-Noah Massengo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1132818": {
      "name": "Young-Woo Seol",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1161211": {
      "name": "Fabian Rieder",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1178512": {
      "name": "Chrislain Matsima",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1185609": {
      "name": "Robin Fellhauer",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1201713": {
      "name": "Tim Breithaupt",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1284464": {
      "name": "Nediljko Labrović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1300329": {
      "name": "Calvin Brackelmann",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1310103": {
      "name": "Anton Kade",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1327150": {
      "name": "Arijon Ibrahimović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1343749": {
      "name": "Rodrigo Ribeiro",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1453218": {
      "name": "Mert Kömür",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1539619": {
      "name": "Juma Bah",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1561984": {
      "name": "Sima Suso",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1641063": {
      "name": "Noahkai Banks",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1645635": {
      "name": "Mahmut Kücüksahin",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1678681": {
      "name": "Hennes Behrens",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1679517": {
      "name": "Faik Sakar",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1718174": {
      "name": "Uchenna Ogundu",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1975573": {
      "name": "Tom Wisbereit",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "2113980": {
      "name": "Robert Draghici",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "2113985": {
      "name": "Milo Adleff",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     }
    },
    "left": []
@@ -2973,7 +2973,7 @@
      "born": "1993-06-13",
      "country": "Netherlands",
      "height": 189,
-     "value": 3952076,
+     "value": 4365132,
      "rating": 6.61,
      "goals": 0,
      "assists": 0,
@@ -2992,7 +2992,7 @@
      "born": "1991-05-02",
      "country": "Germany",
      "height": 193,
-     "value": 351226,
+     "value": 363345,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -3030,7 +3030,7 @@
      "born": "1999-05-28",
      "country": "Argentina",
      "height": 184,
-     "value": 14616602,
+     "value": 14476168,
      "rating": 7.1,
      "goals": 1,
      "assists": 0,
@@ -3049,7 +3049,7 @@
      "born": "2003-01-29",
      "country": "England",
      "height": 190,
-     "value": 34191668,
+     "value": 46311940,
      "rating": 6.84,
      "goals": 0,
      "assists": 1,
@@ -3068,7 +3068,7 @@
      "born": "2000-04-11",
      "country": "France",
      "height": 191,
-     "value": 18509361,
+     "value": 22491906,
      "rating": 6.39,
      "goals": 0,
      "assists": 0,
@@ -3087,7 +3087,7 @@
      "born": "1994-09-22",
      "country": "Germany",
      "height": 185,
-     "value": 3932188,
+     "value": 4603748,
      "rating": 6.32,
      "goals": 0,
      "assists": 0,
@@ -3106,7 +3106,7 @@
      "born": "1999-02-02",
      "country": "Burkina Faso",
      "height": 190,
-     "value": 29490318,
+     "value": 39586692,
      "rating": 6.77,
      "goals": 0,
      "assists": 1,
@@ -3125,7 +3125,7 @@
      "born": "2003-10-06",
      "country": "Germany",
      "height": 189,
-     "value": 3087374,
+     "value": 5667411,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -3144,7 +3144,7 @@
      "born": "2002-10-17",
      "country": "Ivory Coast",
      "height": 187,
-     "value": 15724680,
+     "value": 18775914,
      "rating": 6.49,
      "goals": 0,
      "assists": 0,
@@ -3166,7 +3166,7 @@
      "born": "2001-07-27",
      "country": "Spain",
      "height": 180,
-     "value": 13452909,
+     "value": 22713894,
      "rating": 7.86,
      "goals": 1,
      "assists": 3,
@@ -3185,7 +3185,7 @@
      "born": "2002-07-25",
      "country": "Argentina",
      "height": 179,
-     "value": 17545935,
+     "value": 23775306,
      "rating": 7.44,
      "goals": 1,
      "assists": 0,
@@ -3223,7 +3223,7 @@
      "born": "2002-05-28",
      "country": "USA",
      "height": 187,
-     "value": 25128449,
+     "value": 26227619,
      "rating": 6.82,
      "goals": 0,
      "assists": 1,
@@ -3242,7 +3242,7 @@
      "born": "1997-03-04",
      "country": "France",
      "height": 184,
-     "value": 9285923,
+     "value": 7893034,
      "rating": 6.23,
      "goals": 0,
      "assists": 0,
@@ -3261,7 +3261,7 @@
      "born": "1991-07-01",
      "country": "Spain",
      "height": 173,
-     "value": 969951,
+     "value": 916335,
      "rating": 5.32,
      "goals": 0,
      "assists": 0,
@@ -3280,7 +3280,7 @@
      "born": "2009-07-27",
      "country": "Germany",
      "height": 186,
-     "value": 7097674,
+     "value": 13669775,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -3302,17 +3302,14 @@
      "born": "1999-07-05",
      "country": "Nigeria",
      "height": 173,
-     "value": 12635830,
+     "value": 16324040,
      "rating": null,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": "45",
-      "expectedReturn": "Mid October 2026"
-     }
+     "injury": null
     },
     {
      "id": 642551,
@@ -3343,7 +3340,7 @@
      "born": "2005-02-16",
      "country": "Morocco",
      "height": 178,
-     "value": 21802029,
+     "value": 27308348,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -3362,7 +3359,7 @@
      "born": "2005-11-24",
      "country": "Algeria",
      "height": 180,
-     "value": 18735956,
+     "value": 30787109,
      "rating": 7.57,
      "goals": 1,
      "assists": 1,
@@ -3381,7 +3378,7 @@
      "born": "2007-08-29",
      "country": "Germany",
      "height": 172,
-     "value": 497664,
+     "value": 1343692,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -3403,7 +3400,7 @@
      "born": "2008-12-04",
      "country": "Serbia",
      "height": 192,
-     "value": 6382805,
+     "value": 9420137,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -3441,7 +3438,7 @@
      "born": "2005-03-19",
      "country": "Portugal",
      "height": 176,
-     "value": 1638736,
+     "value": 4424587,
      "rating": 6.92,
      "goals": 0,
      "assists": 0,
@@ -3460,7 +3457,7 @@
      "born": "1996-01-24",
      "country": "Czechia",
      "height": 191,
-     "value": 14776608,
+     "value": 17017309,
      "rating": 7.95,
      "goals": 4,
      "assists": 1,
@@ -3479,7 +3476,7 @@
      "born": "1999-07-07",
      "country": "France",
      "height": 170,
-     "value": 19334700,
+     "value": 17401230,
      "rating": 7.06,
      "goals": 0,
      "assists": 0,
@@ -3498,7 +3495,7 @@
      "born": "2000-12-23",
      "country": "Nigeria",
      "height": 191,
-     "value": 10281492,
+     "value": 9253342,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -3517,7 +3514,7 @@
      "born": "2006-07-26",
      "country": "Cameroon",
      "height": 189,
-     "value": 23828675,
+     "value": 39155513,
      "rating": 6.59,
      "goals": 2,
      "assists": 0,
@@ -3527,7 +3524,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-09-29T20:15:35.901Z",
+   "fetchedAt": "2026-10-04T09:27:34.347Z",
    "coachHistory": [
     {
      "name": "Carles Martínez",
@@ -3538,122 +3535,122 @@
     "278814": {
      "name": "Janis Blaswich",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "330643": {
      "name": "Mark Flekken",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "331542": {
      "name": "Jonas Hofmann",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "358675": {
      "name": "Niklas Lomb",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "359193": {
      "name": "Lucas Vázquez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "411851": {
      "name": "Robert Andrich",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "540097": {
      "name": "Patrik Schick",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "642551": {
      "name": "Aleix García",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "770136": {
      "name": "Martin Terrier",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "789914": {
      "name": "Edmond Tapsoba",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "812652": {
      "name": "Facundo Medina",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "877700": {
      "name": "Nathan Tella",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "923498": {
      "name": "Moussa Diaby",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "942379": {
      "name": "Miguel Gutiérrez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1035208": {
      "name": "Victor Okoh Boniface",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1107620": {
      "name": "Jarell Quansah",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1119461": {
      "name": "Loic Badé",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1126058": {
      "name": "Malik Tillman",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1199959": {
      "name": "Equi Fernández",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1367047": {
      "name": "Afonso Moreira",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1381853": {
      "name": "Tim Oermann",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1393439": {
      "name": "Eliesse Ben Seghir",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1395704": {
      "name": "Guéla Doué",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1457626": {
      "name": "Ibrahim Maza",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1571197": {
      "name": "Naba Mensah",
@@ -3663,27 +3660,27 @@
     "1649343": {
      "name": "Aleksa Damjanović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1705081": {
      "name": "Christian Kofane",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1793199": {
      "name": "Montrell Culbreath",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1793217": {
      "name": "Kennet Eichhorn",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1843414": {
      "name": "Ndjicoura Bomba",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     }
    },
    "left": [
@@ -3710,7 +3707,7 @@
      "born": "1992-06-02",
      "country": "Germany",
      "height": 190,
-     "value": 310242,
+     "value": 351258,
      "rating": 7.44,
      "goals": 0,
      "assists": 0,
@@ -3729,7 +3726,7 @@
      "born": "1994-10-28",
      "country": "Germany",
      "height": 193,
-     "value": 1779405,
+     "value": 1729403,
      "rating": 6.51,
      "goals": 0,
      "assists": 0,
@@ -3751,7 +3748,7 @@
      "born": "2003-12-04",
      "country": "Germany",
      "height": null,
-     "value": 240801,
+     "value": 334429,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -3789,7 +3786,7 @@
      "born": "2002-09-03",
      "country": "Peru",
      "height": 188,
-     "value": 1688968,
+     "value": 4228664,
      "rating": 6.99,
      "goals": 0,
      "assists": 0,
@@ -3808,7 +3805,7 @@
      "born": "1997-05-14",
      "country": "Austria",
      "height": 190,
-     "value": 2815415,
+     "value": 3883205,
      "rating": 7.12,
      "goals": 0,
      "assists": 0,
@@ -3827,7 +3824,7 @@
      "born": "1991-08-24",
      "country": "Germany",
      "height": 194,
-     "value": 365859,
+     "value": 360048,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -3846,7 +3843,7 @@
      "born": "1993-07-13",
      "country": "Germany",
      "height": 185,
-     "value": 816288,
+     "value": 916184,
      "rating": 7.15,
      "goals": 1,
      "assists": 0,
@@ -3865,7 +3862,7 @@
      "born": "1994-01-31",
      "country": "Germany",
      "height": 183,
-     "value": 1689125,
+     "value": 1766604,
      "rating": 7.12,
      "goals": 0,
      "assists": 0,
@@ -3906,7 +3903,7 @@
      "born": "2007-10-19",
      "country": "Poland",
      "height": 195,
-     "value": 1204226,
+     "value": 3251409,
      "rating": 6.29,
      "goals": 0,
      "assists": 0,
@@ -3944,7 +3941,7 @@
      "born": "1994-01-29",
      "country": "Austria",
      "height": 168,
-     "value": 1003273,
+     "value": 1059957,
      "rating": 7.21,
      "goals": 1,
      "assists": 1,
@@ -3963,7 +3960,7 @@
      "born": "2002-04-29",
      "country": "Germany",
      "height": 187,
-     "value": 7139367,
+     "value": 7726759,
      "rating": 7.09,
      "goals": 1,
      "assists": 0,
@@ -3985,7 +3982,7 @@
      "born": "2000-12-30",
      "country": "Japan",
      "height": 176,
-     "value": 21322112,
+     "value": 42822640,
      "rating": 7.76,
      "goals": 0,
      "assists": 2,
@@ -4004,7 +4001,7 @@
      "born": "1992-08-10",
      "country": "South Korea",
      "height": 180,
-     "value": 1320102,
+     "value": 1509857,
      "rating": 7,
      "goals": 0,
      "assists": 1,
@@ -4017,13 +4014,13 @@
      "id": 1175939,
      "name": "Paul Nebel",
      "role": "midfielders",
-     "position": "CM,CAM,RW",
+     "position": "CM,CAM",
      "number": 8,
      "age": 23,
      "born": "2002-10-10",
      "country": "Germany",
      "height": 169,
-     "value": 12251841,
+     "value": 15949716,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -4045,7 +4042,7 @@
      "born": "1996-10-27",
      "country": "Germany",
      "height": 180,
-     "value": 12468732,
+     "value": 12788980,
      "rating": 7.16,
      "goals": 0,
      "assists": 0,
@@ -4064,7 +4061,7 @@
      "born": "1999-10-08",
      "country": "USA",
      "height": 187,
-     "value": 1966172,
+     "value": 1806384,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -4083,7 +4080,7 @@
      "born": "1997-07-01",
      "country": "France",
      "height": 184,
-     "value": 6854975,
+     "value": 5826728,
      "rating": 7.16,
      "goals": 0,
      "assists": 1,
@@ -4102,7 +4099,7 @@
      "born": "2006-01-31",
      "country": "Finland",
      "height": 180,
-     "value": 970074,
+     "value": 1614401,
      "rating": 6.23,
      "goals": 0,
      "assists": 1,
@@ -4121,7 +4118,7 @@
      "born": "2001-07-30",
      "country": "Japan",
      "height": 171,
-     "value": 1343402,
+     "value": 1308667,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -4140,7 +4137,7 @@
      "born": "1993-03-05",
      "country": "Switzerland",
      "height": 182,
-     "value": 599096,
+     "value": 667569,
      "rating": 6.18,
      "goals": 0,
      "assists": 0,
@@ -4162,7 +4159,7 @@
      "born": "2000-06-04",
      "country": "Germany",
      "height": null,
-     "value": 104794,
+     "value": 71939,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -4181,7 +4178,7 @@
      "born": "1997-07-09",
      "country": "Germany",
      "height": 186,
-     "value": 2756660,
+     "value": 3589390,
      "rating": 7.89,
      "goals": 4,
      "assists": 0,
@@ -4194,13 +4191,13 @@
      "id": 1121170,
      "name": "Ransford Königsdörffer",
      "role": "attackers",
-     "position": "ST,CAM,RW",
+     "position": "ST,CAM,LW,RW",
      "number": 11,
      "age": 25,
      "born": "2001-09-13",
      "country": "Ghana",
      "height": 179,
-     "value": 2830976,
+     "value": 4725651,
      "rating": 6.46,
      "goals": 1,
      "assists": 0,
@@ -4219,7 +4216,7 @@
      "born": "2001-05-17",
      "country": "Germany",
      "height": 181,
-     "value": 7674709,
+     "value": 9101504,
      "rating": 6.04,
      "goals": 0,
      "assists": 0,
@@ -4238,7 +4235,7 @@
      "born": "1995-02-09",
      "country": "Suriname",
      "height": 180,
-     "value": 1014998,
+     "value": 1156898,
      "rating": 7.7,
      "goals": 2,
      "assists": 3,
@@ -4289,7 +4286,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-09-29T20:15:35.901Z",
+   "fetchedAt": "2026-10-04T09:27:34.347Z",
    "coachHistory": [
     {
      "name": "Urs Fischer",
@@ -4300,152 +4297,152 @@
     "193901": {
      "name": "Stefan Bell",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "240537": {
      "name": "Danny da Costa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "248437": {
      "name": "Alexander Schwolow",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "275034": {
      "name": "Silvan Widmer",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "303905": {
      "name": "Dominik Kohr",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "423812": {
      "name": "Phillipp Mwene",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "495222": {
      "name": "Sheraldo Becker",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "523749": {
      "name": "Jae-Sung Lee",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "556505": {
      "name": "Robin Zentner",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "557325": {
      "name": "Stefan Posch",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "614449": {
      "name": "Nadiem Amiri",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "686315": {
      "name": "Phillip Tietz",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "771401": {
      "name": "Anthony Caci",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "921197": {
      "name": "Lennard Maloney",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "959404": {
      "name": "Silas Katompa Mvumpa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1033111": {
      "name": "Kaishu Sano",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1121170": {
      "name": "Ransford Königsdörffer",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1134759": {
      "name": "Sota Kawasaki",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1175939": {
      "name": "Paul Nebel",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1185568": {
      "name": "Benedict Hollerbach",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1185629": {
      "name": "Fabio Moreno Fell",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1199283": {
      "name": "Eric Martel",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1283288": {
      "name": "Maximilian Kinzig",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1347994": {
      "name": "Otto Ruoppi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1362417": {
      "name": "Fabio Gruber",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1800401": {
      "name": "Kacper Potulski",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1820817": {
      "name": "Jeremiah Debrah",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1958091": {
      "name": "Daniel Imafidon",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "2101304": {
      "name": "Alynho Haidara",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "2140397": {
      "name": "Rael Nakuzola",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     }
    },
    "left": []
@@ -4465,7 +4462,7 @@
      "born": "1989-04-29",
      "country": "Germany",
      "height": 191,
-     "value": 72000,
+     "value": 103680,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -4503,7 +4500,7 @@
      "born": "1999-12-20",
      "country": "Austria",
      "height": 186,
-     "value": 1972425,
+     "value": 2599436,
      "rating": 6.9,
      "goals": 0,
      "assists": 0,
@@ -4522,7 +4519,7 @@
      "born": "1993-06-28",
      "country": "Germany",
      "height": 186,
-     "value": 161796,
+     "value": 244472,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -4541,7 +4538,7 @@
      "born": "1999-07-24",
      "country": "Thailand",
      "height": 173,
-     "value": 629466,
+     "value": 623685,
      "rating": 6.41,
      "goals": 0,
      "assists": 0,
@@ -4598,7 +4595,7 @@
      "born": "2000-01-22",
      "country": "Germany",
      "height": 189,
-     "value": 1849874,
+     "value": 1940067,
      "rating": 7.04,
      "goals": 0,
      "assists": 1,
@@ -4617,7 +4614,7 @@
      "born": "2003-03-21",
      "country": "Germany",
      "height": 183,
-     "value": 1813323,
+     "value": 2611184,
      "rating": 6.53,
      "goals": 0,
      "assists": 0,
@@ -4636,7 +4633,7 @@
      "born": "1999-06-14",
      "country": "Germany",
      "height": 185,
-     "value": 1397473,
+     "value": 1604654,
      "rating": 6.33,
      "goals": 0,
      "assists": 0,
@@ -4655,7 +4652,7 @@
      "born": "1995-06-18",
      "country": "Ghana",
      "height": 184,
-     "value": 319466,
+     "value": 379288,
      "rating": 6.68,
      "goals": 0,
      "assists": 0,
@@ -4674,7 +4671,7 @@
      "born": "1995-06-27",
      "country": "Germany",
      "height": 195,
-     "value": 547976,
+     "value": 750589,
      "rating": 6.76,
      "goals": 0,
      "assists": 0,
@@ -4693,7 +4690,7 @@
      "born": "2003-06-14",
      "country": "Germany",
      "height": 178,
-     "value": 1315746,
+     "value": 1233594,
      "rating": 7.13,
      "goals": 1,
      "assists": 0,
@@ -4712,7 +4709,7 @@
      "born": "1997-01-06",
      "country": "Germany",
      "height": 173,
-     "value": 883642,
+     "value": 871111,
      "rating": 5.97,
      "goals": 0,
      "assists": 0,
@@ -4731,7 +4728,7 @@
      "born": "2000-03-13",
      "country": "Poland",
      "height": 180,
-     "value": 1860458,
+     "value": 1945549,
      "rating": 6.77,
      "goals": 0,
      "assists": 0,
@@ -4750,7 +4747,7 @@
      "born": "2005-09-07",
      "country": "Germany",
      "height": null,
-     "value": 562896,
+     "value": 675475,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -4769,7 +4766,7 @@
      "born": "2002-12-21",
      "country": "Germany",
      "height": 183,
-     "value": 700353,
+     "value": 626241,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -4788,7 +4785,7 @@
      "born": "2007-04-29",
      "country": "Germany",
      "height": 184,
-     "value": 3187687,
+     "value": 7904468,
      "rating": 7.03,
      "goals": 0,
      "assists": 1,
@@ -4807,7 +4804,7 @@
      "born": "2005-08-11",
      "country": "Germany",
      "height": 176,
-     "value": 2938590,
+     "value": 4522437,
      "rating": 7.04,
      "goals": 3,
      "assists": 0,
@@ -4826,7 +4823,7 @@
      "born": "2002-12-06",
      "country": "Germany",
      "height": 183,
-     "value": 3173381,
+     "value": 6921602,
      "rating": 6.27,
      "goals": 0,
      "assists": 1,
@@ -4845,7 +4842,7 @@
      "born": "2006-09-25",
      "country": "Germany",
      "height": null,
-     "value": 1246389,
+     "value": 5047878,
      "rating": 6.43,
      "goals": 0,
      "assists": 1,
@@ -4864,7 +4861,7 @@
      "born": "1996-08-20",
      "country": "Germany",
      "height": 196,
-     "value": 477272,
+     "value": 565895,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -4883,7 +4880,7 @@
      "born": "1994-05-06",
      "country": "Germany",
      "height": 183,
-     "value": 551034,
+     "value": 608362,
      "rating": 6.35,
      "goals": 0,
      "assists": 0,
@@ -4902,7 +4899,7 @@
      "born": "2000-11-01",
      "country": "Bulgaria",
      "height": 182,
-     "value": 2142917,
+     "value": 2257845,
      "rating": 7.59,
      "goals": 1,
      "assists": 1,
@@ -4921,7 +4918,7 @@
      "born": "1998-09-22",
      "country": "Germany",
      "height": 180,
-     "value": 1270029,
+     "value": 1388283,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -4943,7 +4940,7 @@
      "born": "2006-02-20",
      "country": "USA",
      "height": 170,
-     "value": 5003738,
+     "value": 7325145,
      "rating": 7.01,
      "goals": 1,
      "assists": 0,
@@ -4962,7 +4959,7 @@
      "born": "2004-05-03",
      "country": "France",
      "height": 181,
-     "value": 1640274,
+     "value": 4953272,
      "rating": 7.13,
      "goals": 2,
      "assists": 0,
@@ -4972,7 +4969,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-09-29T20:15:35.901Z",
+   "fetchedAt": "2026-10-04T09:27:34.347Z",
    "coachHistory": [
     {
      "name": "Vincent Wagner",
@@ -4983,137 +4980,137 @@
     "94840": {
      "name": "Frank Lehmann",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "458602": {
      "name": "Jan Gyamerah",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "459010": {
      "name": "Luca Schnellbacher",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "594886": {
      "name": "Florian Le Joncour",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "633721": {
      "name": "Nicholas Mickelson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "659051": {
      "name": "Tim Boss",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "763990": {
      "name": "Amara Condé",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "784735": {
      "name": "Luca Pfeiffer",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "940015": {
      "name": "Tom Zimmerschied",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "962113": {
      "name": "Łukasz Poręba",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1077911": {
      "name": "Maximilian Rohr",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1093782": {
      "name": "Lukas Petkov",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1097361": {
      "name": "Luca Sirch",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1138725": {
      "name": "Noel Futkeu",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1245692": {
      "name": "Lasse Günther",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1280560": {
      "name": "Lukas Pinckert",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1281256": {
      "name": "Frederik Schmahl",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1285926": {
      "name": "Nicolas Kristof",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1288195": {
      "name": "Cole Campbell",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1366338": {
      "name": "Felix Keidel",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1400774": {
      "name": "Luis Seifert",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1412933": {
      "name": "Maurice Krattenmacher",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1459758": {
      "name": "David Mokwa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1479921": {
      "name": "Noah Darvich",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1603681": {
      "name": "Francis Onyeka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1730149": {
      "name": "Raif Adam",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "2155059": {
      "name": "Elias Etringer",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     }
    },
    "left": []
@@ -5133,7 +5130,7 @@
      "born": "2002-04-13",
      "country": "Estonia",
      "height": 194,
-     "value": 1958985,
+     "value": 1827466,
      "rating": 6.9,
      "goals": 0,
      "assists": 0,
@@ -5171,7 +5168,7 @@
      "born": "1996-02-01",
      "country": "Austria",
      "height": 184,
-     "value": 1498236,
+     "value": 1470321,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -5190,7 +5187,7 @@
      "born": "2000-04-06",
      "country": "Belgium",
      "height": 181,
-     "value": 2650655,
+     "value": 2642385,
      "rating": 7.03,
      "goals": 0,
      "assists": 0,
@@ -5209,7 +5206,7 @@
      "born": "2003-07-21",
      "country": "Poland",
      "height": 191,
-     "value": 1052620,
+     "value": 1754878,
      "rating": 6.43,
      "goals": 0,
      "assists": 0,
@@ -5247,7 +5244,7 @@
      "born": "1998-01-17",
      "country": "Germany",
      "height": 192,
-     "value": 1944930,
+     "value": 2157034,
      "rating": 6.95,
      "goals": 0,
      "assists": 0,
@@ -5266,7 +5263,7 @@
      "born": "1994-04-21",
      "country": "Germany",
      "height": 176,
-     "value": 1913015,
+     "value": 1607379,
      "rating": 7.46,
      "goals": 1,
      "assists": 0,
@@ -5285,7 +5282,7 @@
      "born": "2002-06-18",
      "country": "Senegal",
      "height": 181,
-     "value": 2067054,
+     "value": 2193108,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -5307,7 +5304,7 @@
      "born": "1999-09-27",
      "country": "Nigeria",
      "height": 180,
-     "value": 3008025,
+     "value": 2406420,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -5348,7 +5345,7 @@
      "born": "2007-09-09",
      "country": "Germany",
      "height": null,
-     "value": 922898,
+     "value": 1236480,
      "rating": 5.83,
      "goals": 0,
      "assists": 0,
@@ -5367,7 +5364,7 @@
      "born": "2007-06-01",
      "country": "Germany",
      "height": 180,
-     "value": 384000,
+     "value": 383331,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -5386,7 +5383,7 @@
      "born": "2006-02-11",
      "country": "Germany",
      "height": null,
-     "value": 435896,
+     "value": 658176,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -5405,7 +5402,7 @@
      "born": "1996-11-08",
      "country": "Denmark",
      "height": 185,
-     "value": 9733227,
+     "value": 11836698,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -5427,7 +5424,7 @@
      "born": "2003-03-17",
      "country": "Brazil",
      "height": 174,
-     "value": 5724362,
+     "value": 7435695,
      "rating": 7.38,
      "goals": 0,
      "assists": 0,
@@ -5446,7 +5443,7 @@
      "born": "1999-02-19",
      "country": "Belgium",
      "height": 185,
-     "value": 5538348,
+     "value": 6052529,
      "rating": 6.37,
      "goals": 0,
      "assists": 0,
@@ -5468,7 +5465,7 @@
      "born": "2000-06-01",
      "country": "Netherlands",
      "height": 178,
-     "value": 2484331,
+     "value": 2205271,
      "rating": 7.01,
      "goals": 0,
      "assists": 0,
@@ -5487,7 +5484,7 @@
      "born": "2001-12-13",
      "country": "Turkiye",
      "height": 188,
-     "value": 2942113,
+     "value": 4467824,
      "rating": 6.98,
      "goals": 1,
      "assists": 0,
@@ -5506,7 +5503,7 @@
      "born": "2004-04-29",
      "country": "Spain",
      "height": 176,
-     "value": 1447636,
+     "value": 3908617,
      "rating": 7.35,
      "goals": 0,
      "assists": 2,
@@ -5525,7 +5522,7 @@
      "born": "2005-12-08",
      "country": "Poland",
      "height": 182,
-     "value": 1568984,
+     "value": 1499016,
      "rating": 7.04,
      "goals": 1,
      "assists": 0,
@@ -5544,7 +5541,7 @@
      "born": "2002-05-04",
      "country": "France",
      "height": 202,
-     "value": 1633165,
+     "value": 1620695,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -5582,7 +5579,7 @@
      "born": "2003-08-18",
      "country": "Netherlands",
      "height": 177,
-     "value": 4298458,
+     "value": 6995035,
      "rating": 7.56,
      "goals": 0,
      "assists": 0,
@@ -5601,7 +5598,7 @@
      "born": "2004-03-25",
      "country": "Germany",
      "height": 192,
-     "value": 3579080,
+     "value": 4572428,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -5623,7 +5620,7 @@
      "born": "1993-02-09",
      "country": "Germany",
      "height": 188,
-     "value": 2399818,
+     "value": 2389684,
      "rating": 7.44,
      "goals": 3,
      "assists": 0,
@@ -5642,7 +5639,7 @@
      "born": "2000-11-15",
      "country": "Germany",
      "height": 182,
-     "value": 4266314,
+     "value": 5526606,
      "rating": 6.53,
      "goals": 0,
      "assists": 0,
@@ -5664,7 +5661,7 @@
      "born": "1998-07-06",
      "country": "Austria",
      "height": 182,
-     "value": 2347888,
+     "value": 2516377,
      "rating": 8.34,
      "goals": 2,
      "assists": 4,
@@ -5683,7 +5680,7 @@
      "born": "2006-07-17",
      "country": "France",
      "height": null,
-     "value": 1703468,
+     "value": 4017628,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -5721,7 +5718,7 @@
      "born": "1996-12-27",
      "country": "Switzerland",
      "height": 189,
-     "value": 1442325,
+     "value": 1559280,
      "rating": 6.13,
      "goals": 0,
      "assists": 0,
@@ -5740,14 +5737,17 @@
      "born": "2006-02-22",
      "country": "Germany",
      "height": 198,
-     "value": 334429,
+     "value": 401314,
      "rating": 6.08,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "69",
+      "expectedReturn": "Early January 2027"
+     }
     },
     {
      "id": 1810868,
@@ -5759,7 +5759,7 @@
      "born": "2007-08-19",
      "country": "Germany",
      "height": null,
-     "value": 601375,
+     "value": 817157,
      "rating": 6.11,
      "goals": 0,
      "assists": 0,
@@ -5769,7 +5769,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-09-29T20:15:35.901Z",
+   "fetchedAt": "2026-10-04T09:27:34.347Z",
    "coachHistory": [
     {
      "name": "Daniel Thioune",
@@ -5780,167 +5780,167 @@
     "276769": {
      "name": "Markus Kolke",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "276791": {
      "name": "Niclas Füllkrug",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "298823": {
      "name": "Mitchell Weiser",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "425962": {
      "name": "Niklas Stark",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "450739": {
      "name": "Alexander Schlager",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "502543": {
      "name": "Dawid Kownacki",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "528811": {
      "name": "Jens Stage",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "726956": {
      "name": "Cedric Itten",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "765998": {
      "name": "Amos Pieper",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "767789": {
      "name": "Marco Friedl",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "869326": {
      "name": "Ludovit Reis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "919742": {
      "name": "Senne Lynen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "937368": {
      "name": "Felix Agu",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "969856": {
      "name": "Olivier Deman",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "982692": {
      "name": "Karl Hein",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1024292": {
      "name": "Marco Grüll",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1053674": {
      "name": "Moussa N'Diaye",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1111980": {
      "name": "Youri Regeer",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1137364": {
      "name": "Justin Njinmah",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1146376": {
      "name": "Eren Dinkçi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1276988": {
      "name": "Dariusz Stalmach",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1283403": {
      "name": "Oskar Wójcik",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1315344": {
      "name": "Chuki",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1319717": {
      "name": "Keke Topp",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1353457": {
      "name": "Arthur",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1393480": {
      "name": "Skelly Alvero",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1646629": {
      "name": "Salim Musah",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1714103": {
      "name": "Mick Schmetgens",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1792647": {
      "name": "Luca Hoecker",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1810868": {
      "name": "Paul Erevbenagie",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1869761": {
      "name": "Kenny Quetant",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1921960": {
      "name": "Mats Heitmann",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "2155105": {
      "name": "Darwin Soylu",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     }
    },
    "left": []
@@ -5998,7 +5998,7 @@
      "born": "2002-02-26",
      "country": "Belgium",
      "height": 189,
-     "value": 7108251,
+     "value": 15104514,
      "rating": 7.25,
      "goals": 0,
      "assists": 0,
@@ -6017,7 +6017,7 @@
      "born": "2005-04-22",
      "country": "France",
      "height": 192,
-     "value": 2046573,
+     "value": 5525749,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -6036,7 +6036,7 @@
      "born": "2002-05-26",
      "country": "France",
      "height": 193,
-     "value": 23774688,
+     "value": 31963566,
      "rating": 6.75,
      "goals": 0,
      "assists": 0,
@@ -6055,7 +6055,7 @@
      "born": "1992-11-03",
      "country": "Hungary",
      "height": 186,
-     "value": 2402357,
+     "value": 2366069,
      "rating": 7.37,
      "goals": 1,
      "assists": 0,
@@ -6074,7 +6074,7 @@
      "born": "1996-06-03",
      "country": "Germany",
      "height": 188,
-     "value": 2006570,
+     "value": 1995673,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -6093,7 +6093,7 @@
      "born": "1998-04-08",
      "country": "Germany",
      "height": 176,
-     "value": 7690607,
+     "value": 8776006,
      "rating": 7.1,
      "goals": 2,
      "assists": 0,
@@ -6112,7 +6112,7 @@
      "born": "1998-04-22",
      "country": "Germany",
      "height": 180,
-     "value": 12477835,
+     "value": 16754460,
      "rating": 7.29,
      "goals": 0,
      "assists": 0,
@@ -6131,7 +6131,7 @@
      "born": "2002-12-17",
      "country": "France",
      "height": 184,
-     "value": 38442016,
+     "value": 56775660,
      "rating": 7.13,
      "goals": 0,
      "assists": 0,
@@ -6150,7 +6150,7 @@
      "born": "2004-03-27",
      "country": "Germany",
      "height": 183,
-     "value": 3046797,
+     "value": 6899139,
      "rating": 6.07,
      "goals": 0,
      "assists": 0,
@@ -6169,7 +6169,7 @@
      "born": "1997-02-23",
      "country": "Germany",
      "height": 182,
-     "value": 6816337,
+     "value": 5793886,
      "rating": 6.68,
      "goals": 0,
      "assists": 0,
@@ -6188,7 +6188,7 @@
      "born": "2005-02-16",
      "country": "DR Congo",
      "height": 191,
-     "value": 17446318,
+     "value": 18222746,
      "rating": 7.09,
      "goals": 0,
      "assists": 1,
@@ -6207,7 +6207,7 @@
      "born": "2006-05-09",
      "country": "Germany",
      "height": 192,
-     "value": 14480216,
+     "value": 23794034,
      "rating": 6.74,
      "goals": 0,
      "assists": 0,
@@ -6229,7 +6229,7 @@
      "born": "2001-05-04",
      "country": "Austria",
      "height": 179,
-     "value": 16715230,
+     "value": 22440675,
      "rating": 6.87,
      "goals": 0,
      "assists": 0,
@@ -6248,7 +6248,7 @@
      "born": "1999-08-01",
      "country": "Austria",
      "height": 178,
-     "value": 14759244,
+     "value": 24252538,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -6270,7 +6270,7 @@
      "born": "2002-05-29",
      "country": "Germany",
      "height": 175,
-     "value": 16926798,
+     "value": 23220232,
      "rating": 8.29,
      "goals": 1,
      "assists": 0,
@@ -6292,7 +6292,7 @@
      "born": "2001-07-02",
      "country": "Morocco",
      "height": 182,
-     "value": 16258270,
+     "value": 24645112,
      "rating": 7.01,
      "goals": 0,
      "assists": 0,
@@ -6311,7 +6311,7 @@
      "born": "2007-06-05",
      "country": "Serbia",
      "height": 182,
-     "value": 13225543,
+     "value": 12199494,
      "rating": 6.22,
      "goals": 0,
      "assists": 1,
@@ -6349,7 +6349,7 @@
      "born": "2007-11-22",
      "country": "Germany",
      "height": null,
-     "value": 837271,
+     "value": 1020088,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -6368,7 +6368,7 @@
      "born": "2005-04-17",
      "country": "Norway",
      "height": 180,
-     "value": 32332716,
+     "value": 42114430,
      "rating": 7.89,
      "goals": 2,
      "assists": 2,
@@ -6387,7 +6387,7 @@
      "born": "2006-01-04",
      "country": "Spain",
      "height": 187,
-     "value": 14795100,
+     "value": 20186451,
      "rating": 6,
      "goals": 0,
      "assists": 0,
@@ -6409,7 +6409,7 @@
      "born": "2004-05-31",
      "country": "Germany",
      "height": 178,
-     "value": 28852891,
+     "value": 32820355,
      "rating": 6.92,
      "goals": 0,
      "assists": 0,
@@ -6431,7 +6431,7 @@
      "born": "2003-04-20",
      "country": "Belgium",
      "height": 179,
-     "value": 22577282,
+     "value": 25287376,
      "rating": 5.51,
      "goals": 0,
      "assists": 0,
@@ -6450,7 +6450,7 @@
      "born": "2006-08-08",
      "country": "France",
      "height": 183,
-     "value": 5939984,
+     "value": 8017623,
      "rating": 7.14,
      "goals": 1,
      "assists": 2,
@@ -6469,7 +6469,7 @@
      "born": "1997-11-14",
      "country": "France",
      "height": 178,
-     "value": 24429264,
+     "value": 24099503,
      "rating": 7.07,
      "goals": 1,
      "assists": 1,
@@ -6488,7 +6488,7 @@
      "born": "2002-02-08",
      "country": "Brazil",
      "height": 193,
-     "value": 26417443,
+     "value": 33272350,
      "rating": 6.88,
      "goals": 1,
      "assists": 0,
@@ -6507,7 +6507,7 @@
      "born": "2009-02-27",
      "country": "France",
      "height": null,
-     "value": 1862779,
+     "value": 1836605,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -6517,7 +6517,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-09-29T20:15:35.901Z",
+   "fetchedAt": "2026-10-04T09:27:34.347Z",
    "coachHistory": [
     {
      "name": "Martín Demichelis",
@@ -6528,147 +6528,147 @@
     "73409": {
      "name": "Ørjan Håskjold Nyland",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "278856": {
      "name": "Willi Orbán",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "450972": {
      "name": "Leopold Zingerle",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "526657": {
      "name": "Lukas Klostermann",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "681383": {
      "name": "Benjamin Henrichs",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "704523": {
      "name": "Christopher Nkunku",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "747718": {
      "name": "Christoph Baumgartner",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "806669": {
      "name": "David Raum",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "883087": {
      "name": "Ridle Baku",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "972200": {
      "name": "Maarten Vandevoordt",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1024672": {
      "name": "Nicolas Seiwald",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1174726": {
      "name": "Rocco Reitz",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1203194": {
      "name": "Johan Bakayoko",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1248482": {
      "name": "Antonio Nusa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1250443": {
      "name": "Maxime Estève",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1253852": {
      "name": "Castello Lukeba",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1274060": {
      "name": "Neil El Aynaoui",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1310001": {
      "name": "Ezechiel Banzuzi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1314412": {
      "name": "Rômulo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1412137": {
      "name": "Marc Guiu",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1430151": {
      "name": "Brajan Gruda",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1482209": {
      "name": "Andrija Maksimović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1482733": {
      "name": "Tidiam Gomis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1486541": {
      "name": "Assan Ouédraogo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1529161": {
      "name": "Max Finkgräfe",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1643776": {
      "name": "Abdoul Koné",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1667986": {
      "name": "Viggo Gebel",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1860819": {
      "name": "Samba Konaté",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1875892": {
      "name": "Benno Kaltefleiter",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     }
    },
    "left": []
@@ -6688,7 +6688,7 @@
      "born": "2002-05-25",
      "country": "Germany",
      "height": 190,
-     "value": 16604406,
+     "value": 22434312,
      "rating": 7.02,
      "goals": 0,
      "assists": 0,
@@ -6745,7 +6745,7 @@
      "born": "2003-04-11",
      "country": "Brazil",
      "height": 196,
-     "value": 5544730,
+     "value": 9028669,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -6764,7 +6764,7 @@
      "born": "2005-10-26",
      "country": "Germany",
      "height": 180,
-     "value": 3702500,
+     "value": 4906159,
      "rating": 6.39,
      "goals": 0,
      "assists": 1,
@@ -6783,7 +6783,7 @@
      "born": "1999-11-02",
      "country": "France",
      "height": 184,
-     "value": 11169553,
+     "value": 13514586,
      "rating": 6.94,
      "goals": 0,
      "assists": 0,
@@ -6802,7 +6802,7 @@
      "born": "1996-07-17",
      "country": "Germany",
      "height": 187,
-     "value": 12046640,
+     "value": 11403604,
      "rating": 7.18,
      "goals": 0,
      "assists": 1,
@@ -6840,7 +6840,7 @@
      "born": "2006-03-18",
      "country": "Japan",
      "height": 172,
-     "value": 7739209,
+     "value": 8065628,
      "rating": 6.6,
      "goals": 0,
      "assists": 0,
@@ -6859,7 +6859,7 @@
      "born": "2004-01-10",
      "country": "Germany",
      "height": 191,
-     "value": 17322257,
+     "value": 24163275,
      "rating": 6.21,
      "goals": 0,
      "assists": 0,
@@ -6878,7 +6878,7 @@
      "born": "2004-11-11",
      "country": "Germany",
      "height": 193,
-     "value": 287330,
+     "value": 317869,
      "rating": 8.04,
      "goals": 0,
      "assists": 1,
@@ -6919,7 +6919,7 @@
      "born": "2007-04-25",
      "country": "Germany",
      "height": null,
-     "value": 331776,
+     "value": 398131,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -6932,13 +6932,13 @@
      "id": 1336529,
      "name": "Oscar Højlund",
      "role": "midfielders",
-     "position": "CDM,CM,CB",
+     "position": "CM,CDM,CB",
      "number": 6,
      "age": 21,
      "born": "2005-01-04",
      "country": "Denmark",
      "height": 187,
-     "value": 9187425,
+     "value": 18120351,
      "rating": 5.98,
      "goals": 0,
      "assists": 0,
@@ -6957,7 +6957,7 @@
      "born": "2002-11-28",
      "country": "Algeria",
      "height": 183,
-     "value": 14326206,
+     "value": 16601977,
      "rating": 6.71,
      "goals": 0,
      "assists": 0,
@@ -6979,7 +6979,7 @@
      "born": "2005-11-22",
      "country": "Germany",
      "height": 175,
-     "value": 8242450,
+     "value": 14946060,
      "rating": 6.74,
      "goals": 0,
      "assists": 0,
@@ -6998,7 +6998,7 @@
      "born": "1998-06-16",
      "country": "Japan",
      "height": 172,
-     "value": 15791708,
+     "value": 14212537,
      "rating": 6.98,
      "goals": 0,
      "assists": 1,
@@ -7036,7 +7036,7 @@
      "born": "2001-04-19",
      "country": "Nigeria",
      "height": 184,
-     "value": 13838210,
+     "value": 22445069,
      "rating": 6.74,
      "goals": 0,
      "assists": 0,
@@ -7055,7 +7055,7 @@
      "born": "1992-06-03",
      "country": "Germany",
      "height": 176,
-     "value": 2296436,
+     "value": 2262002,
      "rating": 6.89,
      "goals": 0,
      "assists": 1,
@@ -7068,13 +7068,13 @@
      "id": 1367924,
      "name": "Can Uzun",
      "role": "midfielders",
-     "position": "CAM,LM,CM,LW",
+     "position": "CAM,LM,LW,CM",
      "number": 42,
      "age": 20,
      "born": "2005-11-11",
      "country": "Turkiye",
      "height": 186,
-     "value": 37708269,
+     "value": 51209248,
      "rating": 7.39,
      "goals": 2,
      "assists": 0,
@@ -7093,7 +7093,7 @@
      "born": "2000-07-20",
      "country": "Germany",
      "height": 182,
-     "value": 646033,
+     "value": 699543,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -7109,13 +7109,13 @@
      "id": 1175708,
      "name": "Ansgar Knauff",
      "role": "attackers",
-     "position": "ST,RW,LW,CAM",
+     "position": "ST,RW,CAM,LW",
      "number": 7,
      "age": 24,
      "born": "2002-01-10",
      "country": "Germany",
      "height": 180,
-     "value": 13663893,
+     "value": 15138001,
      "rating": 6.28,
      "goals": 0,
      "assists": 0,
@@ -7134,7 +7134,7 @@
      "born": "2000-07-11",
      "country": "Germany",
      "height": 181,
-     "value": 28247925,
+     "value": 32661108,
      "rating": 7.63,
      "goals": 3,
      "assists": 1,
@@ -7153,7 +7153,7 @@
      "born": "2003-09-13",
      "country": "Germany",
      "height": 191,
-     "value": 1267814,
+     "value": 3423098,
      "rating": 7.81,
      "goals": 4,
      "assists": 1,
@@ -7172,7 +7172,7 @@
      "born": "2004-11-30",
      "country": "Morocco",
      "height": 179,
-     "value": 812593,
+     "value": 2194002,
      "rating": 6.32,
      "goals": 0,
      "assists": 0,
@@ -7191,7 +7191,7 @@
      "born": "2008-05-17",
      "country": "Sweden",
      "height": null,
-     "value": 5453660,
+     "value": 7300098,
      "rating": 6.06,
      "goals": 0,
      "assists": 0,
@@ -7220,7 +7220,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-09-29T20:15:35.901Z",
+   "fetchedAt": "2026-10-04T09:27:34.347Z",
    "coachHistory": [
     {
      "name": "Adolf Hütter",
@@ -7231,142 +7231,142 @@
     "97746": {
      "name": "Jens Grahl",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "158234": {
      "name": "Timothy Chandler",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "177714": {
      "name": "Mario Götze",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "628201": {
      "name": "Robin Koch",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "629805": {
      "name": "Ritsu Doan",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "947901": {
      "name": "Jonathan Burkardt",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1073941": {
      "name": "Lilian Brassier",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1083717": {
      "name": "Jessic Ngankam",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1126768": {
      "name": "Raphael Onyedika",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1175708": {
      "name": "Ansgar Knauff",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1176780": {
      "name": "Nnamdi Collins",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1281100": {
      "name": "Noah Atubolu",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1336529": {
      "name": "Oscar Højlund",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1345875": {
      "name": "Farès Chaïbi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1367924": {
      "name": "Can Uzun",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1418816": {
      "name": "Kauã",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1421821": {
      "name": "Elias Baum",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1447050": {
      "name": "Younes Ebnoutalib",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1596359": {
      "name": "Noël Aséko",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1627706": {
      "name": "Keita Kosugi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1671553": {
      "name": "Jeremiaha Maluze",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1680173": {
      "name": "Ayoube Amaimouni-Echghouyab",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1690128": {
      "name": "Malik Pimpong",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1696773": {
      "name": "Amil Šiljević",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1717491": {
      "name": "Love Arrhov",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1738366": {
      "name": "Otávio",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1793881": {
      "name": "Marvin Dills",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "2130230": {
      "name": "Collin Etse",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     }
    },
    "left": []
@@ -7386,7 +7386,7 @@
      "born": "2005-02-11",
      "country": "Germany",
      "height": 183,
-     "value": 112879,
+     "value": 69149,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -7405,7 +7405,7 @@
      "born": "1993-06-22",
      "country": "Germany",
      "height": 189,
-     "value": 658574,
+     "value": 746046,
      "rating": 7.68,
      "goals": 0,
      "assists": 0,
@@ -7443,7 +7443,7 @@
      "born": "2006-03-02",
      "country": "Germany",
      "height": 195,
-     "value": 518571,
+     "value": 877159,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -7462,7 +7462,7 @@
      "born": "2005-06-02",
      "country": "Cameroon",
      "height": 187,
-     "value": 143344,
+     "value": 142778,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -7481,7 +7481,7 @@
      "born": "2004-11-05",
      "country": "France",
      "height": 181,
-     "value": 253666,
+     "value": 162163,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -7500,7 +7500,7 @@
      "born": "1993-05-15",
      "country": "Czechia",
      "height": 184,
-     "value": 95488,
+     "value": 76390,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -7519,7 +7519,7 @@
      "born": "1997-08-31",
      "country": "Turkiye",
      "height": 185,
-     "value": 1181926,
+     "value": 1356370,
      "rating": 7.54,
      "goals": 0,
      "assists": 0,
@@ -7538,7 +7538,7 @@
      "born": "1997-03-25",
      "country": "Germany",
      "height": 186,
-     "value": 1216746,
+     "value": 1262265,
      "rating": 7.26,
      "goals": 0,
      "assists": 0,
@@ -7557,7 +7557,7 @@
      "born": "1994-07-05",
      "country": "Germany",
      "height": 181,
-     "value": 2481904,
+     "value": 2617284,
      "rating": 7.09,
      "goals": 1,
      "assists": 0,
@@ -7576,7 +7576,7 @@
      "born": "1996-10-10",
      "country": "Bosnia and Herzegovina",
      "height": 194,
-     "value": 1230076,
+     "value": 1381921,
      "rating": 7.63,
      "goals": 0,
      "assists": 0,
@@ -7595,7 +7595,7 @@
      "born": "1997-11-11",
      "country": "Germany",
      "height": 183,
-     "value": 260787,
+     "value": 295830,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -7614,7 +7614,7 @@
      "born": "1998-02-04",
      "country": "Austria",
      "height": 189,
-     "value": 1614242,
+     "value": 1602101,
      "rating": 6.3,
      "goals": 1,
      "assists": 0,
@@ -7633,7 +7633,7 @@
      "born": "2006-09-08",
      "country": "Turkiye",
      "height": 178,
-     "value": 1241531,
+     "value": 3352134,
      "rating": 6.33,
      "goals": 0,
      "assists": 0,
@@ -7652,7 +7652,7 @@
      "born": "1996-02-24",
      "country": "France",
      "height": 180,
-     "value": 82944,
+     "value": 91289,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -7671,7 +7671,7 @@
      "born": "1998-10-06",
      "country": "Germany",
      "height": 185,
-     "value": 1165400,
+     "value": 1337063,
      "rating": 5.7,
      "goals": 0,
      "assists": 0,
@@ -7690,7 +7690,7 @@
      "born": "2002-08-13",
      "country": "Japan",
      "height": 172,
-     "value": 1962161,
+     "value": 2011996,
      "rating": 6.88,
      "goals": 0,
      "assists": 0,
@@ -7709,7 +7709,7 @@
      "born": "1996-05-06",
      "country": "Germany",
      "height": 189,
-     "value": 282610,
+     "value": 301242,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -7728,7 +7728,7 @@
      "born": "2001-04-18",
      "country": "Switzerland",
      "height": 183,
-     "value": 999268,
+     "value": 981735,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -7750,7 +7750,7 @@
      "born": "1994-03-05",
      "country": "Turkiye",
      "height": 189,
-     "value": 1354819,
+     "value": 1176653,
      "rating": 7.29,
      "goals": 0,
      "assists": 0,
@@ -7769,7 +7769,7 @@
      "born": "1997-10-08",
      "country": "Austria",
      "height": 186,
-     "value": 1998042,
+     "value": 2081856,
      "rating": 6.26,
      "goals": 0,
      "assists": 0,
@@ -7791,7 +7791,7 @@
      "born": "2002-07-13",
      "country": "Morocco",
      "height": 178,
-     "value": 1959254,
+     "value": 5289987,
      "rating": 7.24,
      "goals": 0,
      "assists": 0,
@@ -7810,7 +7810,7 @@
      "born": "2002-07-15",
      "country": "Algeria",
      "height": 181,
-     "value": 2097957,
+     "value": 2258770,
      "rating": 7.44,
      "goals": 1,
      "assists": 0,
@@ -7829,7 +7829,7 @@
      "born": "1997-02-23",
      "country": "Germany",
      "height": 179,
-     "value": 523266,
+     "value": 437872,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -7848,7 +7848,7 @@
      "born": "2005-03-03",
      "country": "Germany",
      "height": 179,
-     "value": 2260886,
+     "value": 2083026,
      "rating": 6.06,
      "goals": 0,
      "assists": 0,
@@ -7867,7 +7867,7 @@
      "born": "2005-05-24",
      "country": "Germany",
      "height": 185,
-     "value": 1442606,
+     "value": 992707,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -7924,7 +7924,7 @@
      "born": "1996-01-26",
      "country": "South Korea",
      "height": 177,
-     "value": 5966711,
+     "value": 5071704,
      "rating": 6.52,
      "goals": 0,
      "assists": 1,
@@ -7943,7 +7943,7 @@
      "born": "1986-03-17",
      "country": "Bosnia and Herzegovina",
      "height": 193,
-     "value": 662321,
+     "value": 891736,
      "rating": 6.15,
      "goals": 0,
      "assists": 0,
@@ -7984,7 +7984,7 @@
      "born": "2005-01-04",
      "country": "Denmark",
      "height": 191,
-     "value": 815744,
+     "value": 794679,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -8003,7 +8003,7 @@
      "born": "2001-06-06",
      "country": "Austria",
      "height": 183,
-     "value": 1714632,
+     "value": 4090276,
      "rating": 6.77,
      "goals": 0,
      "assists": 1,
@@ -8022,7 +8022,7 @@
      "born": "2000-11-21",
      "country": "Cameroon",
      "height": 184,
-     "value": 3482860,
+     "value": 5993215,
      "rating": 6.8,
      "goals": 0,
      "assists": 0,
@@ -8032,7 +8032,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-09-29T20:15:35.901Z",
+   "fetchedAt": "2026-10-04T09:27:34.347Z",
    "coachHistory": [
     {
      "name": "Miron Muslić",
@@ -8043,172 +8043,172 @@
     "15403": {
      "name": "Edin Džeko",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "201934": {
      "name": "Tomás Kalas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "215159": {
      "name": "Kevin Müller",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "287894": {
      "name": "Loris Karius",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "469763": {
      "name": "Kenan Karaman",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "518346": {
      "name": "Robin Gosens",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "560976": {
      "name": "Janik Bachmann",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "620026": {
      "name": "Hee-Chan Hwang",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "701149": {
      "name": "Maximilian Wöber",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "721091": {
      "name": "Finn Porath",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "725655": {
      "name": "Nikola Katić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "785739": {
      "name": "Timo Becker",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "788496": {
      "name": "Anton Donkor",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "794619": {
      "name": "Hasan Kuruçay",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "815566": {
      "name": "Bryan Lasme",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "820974": {
      "name": "Ron Schallenberg",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "840426": {
      "name": "Yassin Ben Balla",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "861668": {
      "name": "Dejan Ljubičić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "882163": {
      "name": "Chukwubuike Adamu",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1040889": {
      "name": "Junior Dina Ebimbe",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1047664": {
      "name": "Adil Aouchiche",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1155066": {
      "name": "Satoshi Tanaka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1179182": {
      "name": "Adrian Gantenbein",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1249185": {
      "name": "Soufian El-Faouzi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1320890": {
      "name": "Emil Højlund",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1659420": {
      "name": "Vitalie Becker",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1659450": {
      "name": "Max Grüger",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1669831": {
      "name": "Tidiane Touré",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1684959": {
      "name": "Steve Noode",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1717550": {
      "name": "Zaid Amoussou-Tchibara",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1738299": {
      "name": "Faaris Yusufu",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1755657": {
      "name": "Mertcan Ayhan",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1826776": {
      "name": "Johannes Siebeking",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1842512": {
      "name": "Luca Vozar",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     }
    },
    "left": []
@@ -8228,7 +8228,7 @@
      "born": "1998-06-12",
      "country": "Germany",
      "height": 184,
-     "value": 237812,
+     "value": 342448,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -8247,7 +8247,7 @@
      "born": "2003-03-17",
      "country": "Germany",
      "height": 188,
-     "value": 2179983,
+     "value": 2143342,
      "rating": 7.4,
      "goals": 0,
      "assists": 0,
@@ -8266,7 +8266,7 @@
      "born": "2006-02-06",
      "country": "Germany",
      "height": 190,
-     "value": 686659,
+     "value": 635807,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -8281,11 +8281,11 @@
      "role": "defenders",
      "position": "CB",
      "number": null,
-     "age": 22,
+     "age": 23,
      "born": "2003-10-04",
      "country": "Germany",
      "height": 192,
-     "value": 717792,
+     "value": 619493,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -8304,7 +8304,7 @@
      "born": "2000-08-07",
      "country": "Germany",
      "height": 190,
-     "value": 366832,
+     "value": 362541,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -8326,7 +8326,7 @@
      "born": "1998-02-11",
      "country": "Germany",
      "height": 185,
-     "value": 1145868,
+     "value": 1163027,
      "rating": 6.33,
      "goals": 0,
      "assists": 0,
@@ -8345,7 +8345,7 @@
      "born": "2002-06-19",
      "country": "Germany",
      "height": 181,
-     "value": 819540,
+     "value": 964831,
      "rating": 7.13,
      "goals": 0,
      "assists": 0,
@@ -8364,7 +8364,7 @@
      "born": "2004-05-15",
      "country": "Germany",
      "height": 183,
-     "value": 1856717,
+     "value": 1943465,
      "rating": 7,
      "goals": 0,
      "assists": 0,
@@ -8402,7 +8402,7 @@
      "born": "2002-01-12",
      "country": "Germany",
      "height": 192,
-     "value": 1687794,
+     "value": 1941186,
      "rating": 7.36,
      "goals": 0,
      "assists": 0,
@@ -8421,7 +8421,7 @@
      "born": "1999-07-15",
      "country": "Germany",
      "height": 180,
-     "value": 1030306,
+     "value": 890717,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -8462,7 +8462,7 @@
      "born": "2004-05-08",
      "country": "Germany",
      "height": null,
-     "value": 513594,
+     "value": 568889,
      "rating": 6.78,
      "goals": 0,
      "assists": 1,
@@ -8481,7 +8481,7 @@
      "born": "2004-11-13",
      "country": "USA",
      "height": 188,
-     "value": 2479861,
+     "value": 4255172,
      "rating": 7.21,
      "goals": 1,
      "assists": 0,
@@ -8500,7 +8500,7 @@
      "born": "1999-03-13",
      "country": "Germany",
      "height": 180,
-     "value": 315861,
+     "value": 295315,
      "rating": 6.38,
      "goals": 0,
      "assists": 0,
@@ -8519,7 +8519,7 @@
      "born": "1990-07-15",
      "country": "Germany",
      "height": 178,
-     "value": 243045,
+     "value": 343160,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -8538,7 +8538,7 @@
      "born": "2001-10-30",
      "country": "Germany",
      "height": 185,
-     "value": 2069106,
+     "value": 2289818,
      "rating": 7.51,
      "goals": 0,
      "assists": 1,
@@ -8576,7 +8576,7 @@
      "born": "1996-04-01",
      "country": "Philippines",
      "height": 182,
-     "value": 652414,
+     "value": 746583,
      "rating": 6.88,
      "goals": 0,
      "assists": 0,
@@ -8595,7 +8595,7 @@
      "born": "1998-06-30",
      "country": "Germany",
      "height": 180,
-     "value": 486139,
+     "value": 489340,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -8617,7 +8617,7 @@
      "born": "2005-01-31",
      "country": "Germany",
      "height": 180,
-     "value": 1868204,
+     "value": 4441317,
      "rating": 6.87,
      "goals": 0,
      "assists": 0,
@@ -8630,13 +8630,13 @@
      "id": 1701615,
      "name": "Clemens Lippmann",
      "role": "midfielders",
-     "position": "LWB,RWB,LM",
+     "position": "LWB,RWB",
      "number": 29,
      "age": 20,
      "born": "2006-06-29",
      "country": "Germany",
      "height": 183,
-     "value": 743065,
+     "value": 704066,
      "rating": 5.94,
      "goals": 0,
      "assists": 0,
@@ -8649,13 +8649,13 @@
      "id": 978381,
      "name": "Timur Gayret",
      "role": "midfielders",
-     "position": "RW,RM,LM,CM,CDM,LW",
+     "position": "RW,RM,LM,CDM,LW,CM",
      "number": 44,
      "age": 28,
      "born": "1998-08-08",
      "country": "Germany",
      "height": 176,
-     "value": 223981,
+     "value": 322532,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -8677,7 +8677,7 @@
      "born": "2008-03-25",
      "country": "Germany",
      "height": 197,
-     "value": 710395,
+     "value": 623458,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -8690,13 +8690,13 @@
      "id": 950822,
      "name": "Oliver Batista Meier",
      "role": "attackers",
-     "position": "ST,CAM,CM",
+     "position": "ST,CAM",
      "number": 7,
      "age": 25,
      "born": "2001-02-16",
      "country": "Germany",
      "height": 178,
-     "value": 1107526,
+     "value": 1201369,
      "rating": 6.06,
      "goals": 0,
      "assists": 0,
@@ -8709,13 +8709,13 @@
      "id": 1079892,
      "name": "Rayan Philippe",
      "role": "attackers",
-     "position": "RW,ST,CAM",
+     "position": "RW,ST",
      "number": 9,
      "age": 25,
      "born": "2000-10-23",
      "country": "France",
      "height": 176,
-     "value": 2345443,
+     "value": 4554295,
      "rating": 6.17,
      "goals": 0,
      "assists": 0,
@@ -8730,11 +8730,11 @@
      "role": "attackers",
      "position": "ST,CAM,RW",
      "number": 18,
-     "age": 26,
+     "age": 27,
      "born": "1999-10-04",
      "country": "Germany",
      "height": 191,
-     "value": 2192247,
+     "value": 3383477,
      "rating": 5.97,
      "goals": 0,
      "assists": 0,
@@ -8753,7 +8753,7 @@
      "born": "1998-07-31",
      "country": "Germany",
      "height": 193,
-     "value": 437822,
+     "value": 505874,
      "rating": 6.5,
      "goals": 1,
      "assists": 0,
@@ -8772,7 +8772,7 @@
      "born": "2004-03-12",
      "country": "Germany",
      "height": 186,
-     "value": 950498,
+     "value": 1074888,
      "rating": 6.59,
      "goals": 1,
      "assists": 0,
@@ -8791,7 +8791,7 @@
      "born": "2008-02-28",
      "country": "Germany",
      "height": null,
-     "value": 1009544,
+     "value": 1274923,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -8810,7 +8810,7 @@
      "born": "2006-12-13",
      "country": "Germany",
      "height": 181,
-     "value": 1648148,
+     "value": 4763130,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -8829,7 +8829,7 @@
      "born": "2003-12-01",
      "country": "Croatia",
      "height": 180,
-     "value": 2084487,
+     "value": 2150327,
      "rating": 6.66,
      "goals": 0,
      "assists": 0,
@@ -8839,7 +8839,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-09-29T20:15:35.901Z",
+   "fetchedAt": "2026-10-04T09:27:34.347Z",
    "coachHistory": [
     {
      "name": "Ralf Kettemann",
@@ -8850,132 +8850,132 @@
     "419774": {
      "name": "Sven Michel",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "658444": {
      "name": "Tom Baack",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "659046": {
      "name": "Markus Schubert",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "706500": {
      "name": "Steffen Tigges",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "767790": {
      "name": "Felix Götze",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "784225": {
      "name": "Raphael Obermair",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "840947": {
      "name": "Sebastian Klaas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "950822": {
      "name": "Oliver Batista Meier",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "956913": {
      "name": "Marvin Pieringer",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "970587": {
      "name": "Marcel Hoffmeier",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "978381": {
      "name": "Timur Gayret",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1079892": {
      "name": "Rayan Philippe",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1257826": {
      "name": "Nahuel Noll",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1276453": {
      "name": "Gabriel Vidović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1321553": {
      "name": "Stefano Marino",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1362492": {
      "name": "Santiago Castañeda",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1367587": {
      "name": "Laurin Ulrich",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1406447": {
      "name": "Tristan Zobel",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1415373": {
      "name": "Tjark Scheller",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1426060": {
      "name": "Laurin Curda",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1473681": {
      "name": "Nyamekye Awortwie-Grant",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1515975": {
      "name": "Florian Pruhs",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1515976": {
      "name": "Mattes Hansen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1520469": {
      "name": "Jano ter Horst",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1520593": {
      "name": "Jonah Sticker",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1580112": {
      "name": "Deniz Zeitler",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1586401": {
      "name": "Luka Djuric",
@@ -8985,32 +8985,32 @@
     "1688956": {
      "name": "Ruben Müller",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1701615": {
      "name": "Clemens Lippmann",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1801952": {
      "name": "Niklas Mohr",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1804160": {
      "name": "Albert Millgramm",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1844511": {
      "name": "Lasse Eickel",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1881322": {
      "name": "Noah Ringbeck",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     }
    },
    "left": [
@@ -9037,7 +9037,7 @@
      "born": "1995-04-25",
      "country": "Germany",
      "height": 188,
-     "value": 1693724,
+     "value": 1782333,
      "rating": 6.63,
      "goals": 0,
      "assists": 0,
@@ -9113,7 +9113,7 @@
      "born": "2007-01-12",
      "country": "Germany",
      "height": 178,
-     "value": 405715,
+     "value": 275721,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -9132,7 +9132,7 @@
      "born": "1998-09-23",
      "country": "Switzerland",
      "height": 188,
-     "value": 1991600,
+     "value": 1985789,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -9151,7 +9151,7 @@
      "born": "1996-07-20",
      "country": "Germany",
      "height": 190,
-     "value": 1007270,
+     "value": 997518,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -9173,7 +9173,7 @@
      "born": "1998-07-18",
      "country": "Ghana",
      "height": 178,
-     "value": 2602419,
+     "value": 2662116,
      "rating": 6.57,
      "goals": 0,
      "assists": 0,
@@ -9192,7 +9192,7 @@
      "born": "1997-05-17",
      "country": "Belgium",
      "height": 178,
-     "value": 1733970,
+     "value": 1729403,
      "rating": 6.7,
      "goals": 0,
      "assists": 0,
@@ -9214,7 +9214,7 @@
      "born": "2005-11-04",
      "country": "England",
      "height": 187,
-     "value": 3768645,
+     "value": 11403779,
      "rating": 6.63,
      "goals": 0,
      "assists": 0,
@@ -9233,7 +9233,7 @@
      "born": "1998-05-29",
      "country": "Georgia",
      "height": 192,
-     "value": 1548765,
+     "value": 1826907,
      "rating": 6.46,
      "goals": 0,
      "assists": 0,
@@ -9252,7 +9252,7 @@
      "born": "2000-01-27",
      "country": "Norway",
      "height": 187,
-     "value": 3742797,
+     "value": 4847083,
      "rating": 6.08,
      "goals": 0,
      "assists": 0,
@@ -9271,7 +9271,7 @@
      "born": "2004-07-07",
      "country": "Netherlands",
      "height": 190,
-     "value": 8107272,
+     "value": 9599968,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -9290,7 +9290,7 @@
      "born": "2006-01-15",
      "country": "Germany",
      "height": 175,
-     "value": 512491,
+     "value": 409992,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -9303,13 +9303,13 @@
      "id": 622091,
      "name": "Borna Sosa",
      "role": "midfielders",
-     "position": "LWB,LM",
+     "position": "LWB",
      "number": 3,
      "age": 28,
      "born": "1998-01-21",
      "country": "Croatia",
      "height": 187,
-     "value": 2292087,
+     "value": 2290178,
      "rating": 6.25,
      "goals": 0,
      "assists": 0,
@@ -9328,7 +9328,7 @@
      "born": "2001-06-22",
      "country": "Germany",
      "height": 182,
-     "value": 2105279,
+     "value": 4614965,
      "rating": 6.7,
      "goals": 0,
      "assists": 0,
@@ -9347,7 +9347,7 @@
      "born": "1995-05-10",
      "country": "Tunisia",
      "height": 185,
-     "value": 2316340,
+     "value": 2279687,
      "rating": 6.95,
      "goals": 0,
      "assists": 2,
@@ -9366,7 +9366,7 @@
      "born": "2003-03-23",
      "country": "Iceland",
      "height": 180,
-     "value": 7997316,
+     "value": 10305378,
      "rating": 6.51,
      "goals": 0,
      "assists": 0,
@@ -9385,7 +9385,7 @@
      "born": "2005-01-24",
      "country": "Australia",
      "height": 186,
-     "value": 1361733,
+     "value": 1634079,
      "rating": 6.51,
      "goals": 0,
      "assists": 0,
@@ -9398,13 +9398,13 @@
      "id": 1119643,
      "name": "Jan Thielmann",
      "role": "midfielders",
-     "position": "RM,RW,ST,RWB",
+     "position": "RM,RW,RWB",
      "number": 29,
      "age": 24,
      "born": "2002-05-26",
      "country": "Germany",
      "height": 178,
-     "value": 4340408,
+     "value": 5518869,
      "rating": 6.84,
      "goals": 0,
      "assists": 0,
@@ -9436,13 +9436,13 @@
      "id": 930035,
      "name": "Linton Maina",
      "role": "midfielders",
-     "position": "RW,CAM,LM",
+     "position": "RW,CAM",
      "number": 37,
      "age": 27,
      "born": "1999-06-23",
      "country": "Germany",
      "height": 173,
-     "value": 1715346,
+     "value": 1694009,
      "rating": 7.26,
      "goals": 1,
      "assists": 1,
@@ -9461,7 +9461,7 @@
      "born": "1996-05-19",
      "country": "Germany",
      "height": 181,
-     "value": 1299909,
+     "value": 1108188,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -9480,14 +9480,17 @@
      "born": "1998-07-28",
      "country": "Germany",
      "height": 182,
-     "value": 6088828,
+     "value": 9680720,
      "rating": 6.62,
      "goals": 1,
      "assists": 0,
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "69",
+      "expectedReturn": "About 1-2 weeks"
+     }
     },
     {
      "id": 1613676,
@@ -9499,7 +9502,7 @@
      "born": "2006-08-26",
      "country": "Germany",
      "height": 183,
-     "value": 24284603,
+     "value": 39904701,
      "rating": 6.92,
      "goals": 1,
      "assists": 0,
@@ -9537,7 +9540,7 @@
      "born": "1999-02-16",
      "country": "Bosnia and Herzegovina",
      "height": 190,
-     "value": 832677,
+     "value": 823357,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -9556,7 +9559,7 @@
      "born": "2005-04-02",
      "country": "Germany",
      "height": 193,
-     "value": 545186,
+     "value": 521733,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -9575,14 +9578,17 @@
      "born": "2000-08-03",
      "country": "Netherlands",
      "height": 190,
-     "value": 9945986,
+     "value": 9928617,
      "rating": 6.99,
      "goals": 2,
      "assists": 0,
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "76",
+      "expectedReturn": "Late June 2027"
+     }
     },
     {
      "id": 626890,
@@ -9594,7 +9600,7 @@
      "born": "1993-03-29",
      "country": "Germany",
      "height": 188,
-     "value": 1119252,
+     "value": 1225484,
      "rating": 6.65,
      "goals": 0,
      "assists": 0,
@@ -9613,7 +9619,7 @@
      "born": "2007-08-11",
      "country": "England",
      "height": 180,
-     "value": 14538430,
+     "value": 22096570,
      "rating": 6.69,
      "goals": 0,
      "assists": 0,
@@ -9623,7 +9629,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-09-29T20:15:35.901Z",
+   "fetchedAt": "2026-10-04T09:27:34.347Z",
    "coachHistory": [
     {
      "name": "Rene Wagner",
@@ -9634,157 +9640,157 @@
     "41087": {
      "name": "Ron-Robert Zieler",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "540073": {
      "name": "Gian-Luca Waldschmidt",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "573465": {
      "name": "Marvin Schwäbe",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "574642": {
      "name": "Ellyes Skhiri",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "622091": {
      "name": "Borna Sosa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "626890": {
      "name": "Marius Bülter",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "682385": {
      "name": "Timo Hübers",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "748620": {
      "name": "Alessio Castro-Montes",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "771630": {
      "name": "Gideon Mensah",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "772193": {
      "name": "Ragnar Ache",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "784175": {
      "name": "Luka Lochoshvili",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "864002": {
      "name": "Matthias Köbbing",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "885085": {
      "name": "Thijs Dallinga",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "916092": {
      "name": "Imad Rondić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "930035": {
      "name": "Linton Maina",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "936140": {
      "name": "Sebastian Sebulonsen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "992060": {
      "name": "Tom Krauß",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1000428": {
      "name": "Ísak Jóhannesson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1003254": {
      "name": "Joël Schmied",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1119643": {
      "name": "Jan Thielmann",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1199391": {
      "name": "Rav van den Berg",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1407250": {
      "name": "Mikey Moore",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1463271": {
      "name": "Jahmai Simpson-Pusey",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1487890": {
      "name": "Fayssal Harchaoui",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1527363": {
      "name": "Paul Okon-Engstler",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1573172": {
      "name": "Cenny Neumann",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1613676": {
      "name": "Saïd El Mala",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1640790": {
      "name": "Malek El Mala",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1665352": {
      "name": "Reigan Heskey",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1766349": {
      "name": "Gil Neves",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1830671": {
      "name": "Martin James",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     }
    },
    "left": []
@@ -9804,7 +9810,7 @@
      "born": "1990-06-02",
      "country": "Germany",
      "height": 186,
-     "value": 1482276,
+     "value": 1606435,
      "rating": 6.64,
      "goals": 0,
      "assists": 0,
@@ -9823,7 +9829,7 @@
      "born": "2000-11-28",
      "country": "Germany",
      "height": 192,
-     "value": 452267,
+     "value": 427729,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -9842,7 +9848,7 @@
      "born": "2000-01-29",
      "country": "Czechia",
      "height": 190,
-     "value": 1533340,
+     "value": 4140019,
      "rating": 6.29,
      "goals": 0,
      "assists": 0,
@@ -9861,7 +9867,7 @@
      "born": "2000-03-25",
      "country": "Turkiye",
      "height": 185,
-     "value": 2610636,
+     "value": 6755019,
      "rating": 6.96,
      "goals": 1,
      "assists": 0,
@@ -9880,7 +9886,7 @@
      "born": "1995-05-14",
      "country": "Brazil",
      "height": 186,
-     "value": 1840316,
+     "value": 2168649,
      "rating": 7.45,
      "goals": 0,
      "assists": 0,
@@ -9902,7 +9908,7 @@
      "born": "2000-06-21",
      "country": "France",
      "height": 179,
-     "value": 4698760,
+     "value": 5301765,
      "rating": 6.64,
      "goals": 0,
      "assists": 0,
@@ -9921,7 +9927,7 @@
      "born": "2003-05-18",
      "country": "Kosovo",
      "height": 189,
-     "value": 16905729,
+     "value": 26163429,
      "rating": 6.39,
      "goals": 0,
      "assists": 0,
@@ -9940,7 +9946,7 @@
      "born": "1992-08-22",
      "country": "Czechia",
      "height": 176,
-     "value": 1937999,
+     "value": 1949008,
      "rating": 7.26,
      "goals": 0,
      "assists": 2,
@@ -9959,7 +9965,7 @@
      "born": "2006-03-11",
      "country": "Netherlands",
      "height": 185,
-     "value": 7852995,
+     "value": 13663184,
      "rating": 6.73,
      "goals": 0,
      "assists": 0,
@@ -9978,7 +9984,7 @@
      "born": "2004-02-23",
      "country": "Kosovo",
      "height": 185,
-     "value": 22507488,
+     "value": 36984526,
      "rating": 7.03,
      "goals": 1,
      "assists": 0,
@@ -9997,7 +10003,7 @@
      "born": "2008-07-19",
      "country": "Belgium",
      "height": 192,
-     "value": 5331993,
+     "value": 11223939,
      "rating": 6.33,
      "goals": 0,
      "assists": 0,
@@ -10016,7 +10022,7 @@
      "born": "2001-02-16",
      "country": "Netherlands",
      "height": 190,
-     "value": 3026848,
+     "value": 7505639,
      "rating": 7.07,
      "goals": 0,
      "assists": 0,
@@ -10035,7 +10041,7 @@
      "born": "2003-07-07",
      "country": "Germany",
      "height": 180,
-     "value": 2245120,
+     "value": 2348340,
      "rating": 6.87,
      "goals": 0,
      "assists": 2,
@@ -10048,13 +10054,13 @@
      "id": 173461,
      "name": "Andrej Kramarić",
      "role": "midfielders",
-     "position": "CAM,RW,RM,CM,ST",
+     "position": "CAM,RW,RM,CM",
      "number": 27,
      "age": 35,
      "born": "1991-06-19",
      "country": "Croatia",
      "height": 177,
-     "value": 2052424,
+     "value": 2155021,
      "rating": 5.94,
      "goals": 0,
      "assists": 0,
@@ -10073,7 +10079,7 @@
      "born": "2006-06-16",
      "country": "Germany",
      "height": null,
-     "value": 2263216,
+     "value": 5856073,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -10092,7 +10098,7 @@
      "born": "2001-05-30",
      "country": "Austria",
      "height": 182,
-     "value": 10809847,
+     "value": 13520437,
      "rating": 6.82,
      "goals": 0,
      "assists": 0,
@@ -10111,7 +10117,7 @@
      "born": "2006-01-15",
      "country": "Germany",
      "height": 194,
-     "value": 8233065,
+     "value": 10109382,
      "rating": 6.32,
      "goals": 0,
      "assists": 1,
@@ -10130,7 +10136,7 @@
      "born": "2002-07-25",
      "country": "Czechia",
      "height": 185,
-     "value": 11972602,
+     "value": 12811239,
      "rating": 7.2,
      "goals": 2,
      "assists": 0,
@@ -10149,7 +10155,7 @@
      "born": "2002-08-08",
      "country": "Kosovo",
      "height": 188,
-     "value": 27593408,
+     "value": 40451897,
      "rating": 5.94,
      "goals": 0,
      "assists": 0,
@@ -10168,7 +10174,7 @@
      "born": "2005-09-28",
      "country": "Denmark",
      "height": 186,
-     "value": 6846080,
+     "value": 7998913,
      "rating": 7.58,
      "goals": 2,
      "assists": 2,
@@ -10187,7 +10193,7 @@
      "born": "2002-02-05",
      "country": "Germany",
      "height": 186,
-     "value": 14334605,
+     "value": 17059259,
      "rating": 7.05,
      "goals": 1,
      "assists": 0,
@@ -10197,7 +10203,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-09-29T20:15:35.901Z",
+   "fetchedAt": "2026-10-04T09:27:34.347Z",
    "coachHistory": [
     {
      "name": "Christian Ilzer",
@@ -10208,107 +10214,107 @@
     "173461": {
      "name": "Andrej Kramarić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "178778": {
      "name": "Oliver Baumann",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "307317": {
      "name": "Vladimír Coufal",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "637716": {
      "name": "Bernardo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "845990": {
      "name": "Ozan Kabak",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "947884": {
      "name": "Wouter Burger",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "969870": {
      "name": "Adam Hložek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1073498": {
      "name": "Patrick Wimmer",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1077653": {
      "name": "Valentin Gendrey",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1124825": {
      "name": "Tim Lemperle",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1175933": {
      "name": "Luca Philipp",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1186015": {
      "name": "Albian Hajdari",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1219540": {
      "name": "Fisnik Asllani",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1225995": {
      "name": "Robin Hranác",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1338957": {
      "name": "Bambasé Conté",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1353000": {
      "name": "Adam Daghim",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1445416": {
      "name": "Mats Rots",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1478148": {
      "name": "Leon Avdullahu",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1486537": {
      "name": "Max Moerstedt",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1664759": {
      "name": "Nathan De Cat",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1793498": {
      "name": "Cajetan Lenz",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     }
    },
    "left": []
@@ -10328,7 +10334,7 @@
      "born": "1995-03-02",
      "country": "Germany",
      "height": 191,
-     "value": 346448,
+     "value": 331460,
      "rating": 7.21,
      "goals": 0,
      "assists": 0,
@@ -10366,17 +10372,14 @@
      "born": "2005-12-01",
      "country": "Germany",
      "height": 192,
-     "value": 9730497,
+     "value": 14368398,
      "rating": null,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": "42",
-      "expectedReturn": "Early October 2026"
-     }
+     "injury": null
     },
     {
      "id": 1175706,
@@ -10407,14 +10410,17 @@
      "born": "2002-03-06",
      "country": "Belgium",
      "height": 187,
-     "value": 2364181,
+     "value": 2239166,
      "rating": null,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "14",
+      "expectedReturn": "Late October 2026"
+     }
     },
     {
      "id": 1125187,
@@ -10426,7 +10432,7 @@
      "born": "2001-07-18",
      "country": "Netherlands",
      "height": 189,
-     "value": 7219917,
+     "value": 13905211,
      "rating": 5.6,
      "goals": 0,
      "assists": 0,
@@ -10445,7 +10451,7 @@
      "born": "2000-12-11",
      "country": "Germany",
      "height": 190,
-     "value": 8447798,
+     "value": 10655394,
      "rating": 7.25,
      "goals": 2,
      "assists": 1,
@@ -10464,7 +10470,7 @@
      "born": "1997-03-18",
      "country": "Germany",
      "height": 180,
-     "value": 13660242,
+     "value": 15829190,
      "rating": 7.92,
      "goals": 1,
      "assists": 1,
@@ -10483,7 +10489,7 @@
      "born": "2003-06-02",
      "country": "Switzerland",
      "height": 187,
-     "value": 9438213,
+     "value": 12928014,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -10505,7 +10511,7 @@
      "born": "2002-03-03",
      "country": "Switzerland",
      "height": 180,
-     "value": 2055028,
+     "value": 2026869,
      "rating": 6.2,
      "goals": 0,
      "assists": 0,
@@ -10524,7 +10530,7 @@
      "born": "2000-06-22",
      "country": "France",
      "height": 179,
-     "value": 7990646,
+     "value": 10688603,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -10568,7 +10574,7 @@
      "born": "1998-02-12",
      "country": "Germany",
      "height": 195,
-     "value": 11894831,
+     "value": 13663848,
      "rating": 6.95,
      "goals": 0,
      "assists": 0,
@@ -10587,7 +10593,7 @@
      "born": "2006-07-17",
      "country": "Germany",
      "height": 188,
-     "value": 31257592,
+     "value": 49996080,
      "rating": 6.72,
      "goals": 0,
      "assists": 1,
@@ -10606,7 +10612,7 @@
      "born": "2001-04-04",
      "country": "Germany",
      "height": 183,
-     "value": 34489357,
+     "value": 44045057,
      "rating": 6.66,
      "goals": 0,
      "assists": 0,
@@ -10625,7 +10631,7 @@
      "born": "1998-01-09",
      "country": "Germany",
      "height": 178,
-     "value": 8057239,
+     "value": 11171762,
      "rating": 7.05,
      "goals": 0,
      "assists": 0,
@@ -10644,7 +10650,7 @@
      "born": "2004-05-10",
      "country": "Morocco",
      "height": 180,
-     "value": 29172028,
+     "value": 42474616,
      "rating": 6.72,
      "goals": 1,
      "assists": 0,
@@ -10663,7 +10669,7 @@
      "born": "1996-10-13",
      "country": "Turkiye",
      "height": 190,
-     "value": 7150143,
+     "value": 7122475,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -10682,7 +10688,7 @@
      "born": "1995-01-09",
      "country": "Germany",
      "height": 182,
-     "value": 2430071,
+     "value": 2523437,
      "rating": 6.53,
      "goals": 1,
      "assists": 0,
@@ -10701,26 +10707,29 @@
      "born": "2000-02-22",
      "country": "Denmark",
      "height": 185,
-     "value": 495070,
+     "value": 1336689,
      "rating": null,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "87",
+      "expectedReturn": "Doubtful"
+     }
     },
     {
      "id": 1164506,
      "name": "Tiago Tomás",
      "role": "attackers",
-     "position": "CAM,ST,RW",
+     "position": "ST,RW,CAM",
      "number": 8,
      "age": 24,
      "born": "2002-06-16",
      "country": "Portugal",
      "height": 180,
-     "value": 13867807,
+     "value": 18427771,
      "rating": 6.76,
      "goals": 0,
      "assists": 0,
@@ -10742,7 +10751,7 @@
      "born": "1998-03-25",
      "country": "Bosnia and Herzegovina",
      "height": 184,
-     "value": 15934308,
+     "value": 15443572,
      "rating": 6.36,
      "goals": 1,
      "assists": 0,
@@ -10761,7 +10770,7 @@
      "born": "2005-02-15",
      "country": "Germany",
      "height": 188,
-     "value": 9718123,
+     "value": 18195324,
      "rating": 6.59,
      "goals": 0,
      "assists": 0,
@@ -10780,7 +10789,7 @@
      "born": "2001-02-26",
      "country": "Germany",
      "height": 184,
-     "value": 22279698,
+     "value": 41660462,
      "rating": 6.3,
      "goals": 0,
      "assists": 0,
@@ -10799,7 +10808,7 @@
      "born": "1996-07-19",
      "country": "Germany",
      "height": 179,
-     "value": 11925547,
+     "value": 21089683,
      "rating": 6.3,
      "goals": 0,
      "assists": 0,
@@ -10828,7 +10837,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-09-29T20:15:35.901Z",
+   "fetchedAt": "2026-10-04T09:27:34.347Z",
    "coachHistory": [
     {
      "name": "Sebastian Hoeneß",
@@ -10839,132 +10848,132 @@
     "522236": {
      "name": "Fabian Bredlow",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "614384": {
      "name": "Maximilian Mittelstädt",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "625175": {
      "name": "Grischa Prömel",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "659086": {
      "name": "Marius Funk",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "661519": {
      "name": "Deniz Undav",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "684983": {
      "name": "Atakan Karazor",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "840241": {
      "name": "Ermedin Demirović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "852347": {
      "name": "Dan-Axel Zagadou",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "867080": {
      "name": "Jeff Chabot",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "869298": {
      "name": "Nikolas Nartey",
      "firstSeen": "2026-09-29",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "892679": {
      "name": "Chris Führich",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "928454": {
      "name": "Josha Vagnoman",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1019947": {
      "name": "Leonidas Stergiou",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1071186": {
      "name": "Angelo Stiller",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1074968": {
      "name": "Jamie Leweling",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1125187": {
      "name": "Ramon Hendriks",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1164506": {
      "name": "Tiago Tomás",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1175706": {
      "name": "Stefan Drljača",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1192406": {
      "name": "Lorenz Assignon",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1270002": {
      "name": "Luca Jaquez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1279764": {
      "name": "Ameen Al Dakhil",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1340895": {
      "name": "Bilal El Khannouss",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1366602": {
      "name": "Dženan Pejčinović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1425998": {
      "name": "Leo Sauer",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1478098": {
      "name": "Dennis Seimen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1487877": {
      "name": "Finn Jeltsch",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     }
    },
    "left": []
@@ -10984,7 +10993,7 @@
      "born": "1992-11-13",
      "country": "Portugal",
      "height": 188,
-     "value": 1032618,
+     "value": 1022442,
      "rating": 5.9,
      "goals": 0,
      "assists": 0,
@@ -11003,7 +11012,7 @@
      "born": "2002-11-29",
      "country": "Norway",
      "height": 193,
-     "value": 2298761,
+     "value": 3979258,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -11022,7 +11031,7 @@
      "born": "2007-10-13",
      "country": "Germany",
      "height": null,
-     "value": 959795,
+     "value": 1015002,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -11060,7 +11069,7 @@
      "born": "2002-04-23",
      "country": "Norway",
      "height": 185,
-     "value": 8436724,
+     "value": 14656638,
      "rating": 6.12,
      "goals": 0,
      "assists": 0,
@@ -11079,7 +11088,7 @@
      "born": "2001-12-31",
      "country": "Morocco",
      "height": 175,
-     "value": 13088854,
+     "value": 14833952,
      "rating": 6.45,
      "goals": 0,
      "assists": 0,
@@ -11098,7 +11107,7 @@
      "born": "2000-04-23",
      "country": "Comoros",
      "height": 185,
-     "value": 2638007,
+     "value": 3961851,
      "rating": 6.13,
      "goals": 0,
      "assists": 0,
@@ -11117,7 +11126,7 @@
      "born": "1997-08-07",
      "country": "Nigeria",
      "height": 189,
-     "value": 2425249,
+     "value": 2439185,
      "rating": 5.88,
      "goals": 0,
      "assists": 0,
@@ -11136,7 +11145,7 @@
      "born": "1998-09-14",
      "country": "Argentina",
      "height": 178,
-     "value": 2626895,
+     "value": 6963110,
      "rating": 6.19,
      "goals": 1,
      "assists": 0,
@@ -11155,17 +11164,14 @@
      "born": "1999-03-22",
      "country": "Belgium",
      "height": 191,
-     "value": 7764145,
+     "value": 8796766,
      "rating": 5.55,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": "87",
-      "expectedReturn": "About 1-2 weeks"
-     }
+     "injury": null
     },
     {
      "id": 1685570,
@@ -11177,7 +11183,7 @@
      "born": "2005-03-08",
      "country": "Germany",
      "height": 190,
-     "value": 353078,
+     "value": 458743,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -11196,7 +11202,7 @@
      "born": "2007-01-15",
      "country": "Germany",
      "height": 195,
-     "value": 551654,
+     "value": 641693,
      "rating": 5.65,
      "goals": 0,
      "assists": 0,
@@ -11228,13 +11234,13 @@
      "id": 1283407,
      "name": "Bilal Nadir",
      "role": "midfielders",
-     "position": "CDM,CAM",
+     "position": "CDM",
      "number": 4,
      "age": 22,
      "born": "2003-11-28",
      "country": "Morocco",
      "height": 172,
-     "value": 4875730,
+     "value": 10217368,
      "rating": 6,
      "goals": 0,
      "assists": 0,
@@ -11253,7 +11259,7 @@
      "born": "2003-12-02",
      "country": "France",
      "height": 180,
-     "value": 2302231,
+     "value": 5957023,
      "rating": 6.02,
      "goals": 0,
      "assists": 0,
@@ -11272,7 +11278,7 @@
      "born": "1999-10-22",
      "country": "Belgium",
      "height": 183,
-     "value": 6967393,
+     "value": 12000504,
      "rating": 6.58,
      "goals": 0,
      "assists": 0,
@@ -11291,7 +11297,7 @@
      "born": "2001-04-25",
      "country": "Suriname",
      "height": 175,
-     "value": 1007334,
+     "value": 990522,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -11313,7 +11319,7 @@
      "born": "2001-05-23",
      "country": "Denmark",
      "height": 185,
-     "value": 3059911,
+     "value": 5306171,
      "rating": 7.16,
      "goals": 0,
      "assists": 2,
@@ -11335,7 +11341,7 @@
      "born": "1998-06-06",
      "country": "The Gambia",
      "height": 184,
-     "value": 1044265,
+     "value": 1038454,
      "rating": 6.27,
      "goals": 0,
      "assists": 0,
@@ -11354,7 +11360,7 @@
      "born": "2000-05-30",
      "country": "Portugal",
      "height": 170,
-     "value": 11969174,
+     "value": 19187382,
      "rating": 6.87,
      "goals": 0,
      "assists": 0,
@@ -11373,7 +11379,7 @@
      "born": "2000-06-19",
      "country": "Germany",
      "height": 185,
-     "value": 5498206,
+     "value": 10127790,
      "rating": 6.19,
      "goals": 0,
      "assists": 0,
@@ -11392,7 +11398,7 @@
      "born": "2005-05-06",
      "country": "Germany",
      "height": 186,
-     "value": 1709948,
+     "value": 4031910,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -11414,7 +11420,7 @@
      "born": "1998-03-24",
      "country": "Switzerland",
      "height": 182,
-     "value": 2338066,
+     "value": 2846756,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -11436,7 +11442,7 @@
      "born": "2009-10-08",
      "country": "Germany",
      "height": null,
-     "value": 579020,
+     "value": 515840,
      "rating": 6.2,
      "goals": 0,
      "assists": 0,
@@ -11474,14 +11480,17 @@
      "born": "1999-05-25",
      "country": "Nigeria",
      "height": 188,
-     "value": 6896768,
+     "value": 9098259,
      "rating": 6.06,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "14",
+      "expectedReturn": "Doubtful"
+     }
     },
     {
      "id": 266527,
@@ -11493,7 +11502,7 @@
      "born": "1994-06-15",
      "country": "Denmark",
      "height": 193,
-     "value": 686040,
+     "value": 837110,
      "rating": 6.94,
      "goals": 1,
      "assists": 0,
@@ -11512,7 +11521,7 @@
      "born": "2007-02-09",
      "country": "Germany",
      "height": 187,
-     "value": 3744248,
+     "value": 6341725,
      "rating": 5.88,
      "goals": 0,
      "assists": 0,
@@ -11531,14 +11540,17 @@
      "born": "1998-10-09",
      "country": "Zambia",
      "height": 183,
-     "value": 2226937,
+     "value": 2112957,
      "rating": 6.54,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "69",
+      "expectedReturn": "A few weeks"
+     }
     },
     {
      "id": 1644278,
@@ -11550,7 +11562,7 @@
      "born": "2007-01-20",
      "country": "Norway",
      "height": 173,
-     "value": 6027992,
+     "value": 7983261,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -11563,7 +11575,7 @@
      }
     }
    ],
-   "fetchedAt": "2026-09-29T20:15:35.901Z",
+   "fetchedAt": "2026-10-04T09:27:34.347Z",
    "coachHistory": [
     {
      "name": "Merlin Polzin",
@@ -11574,152 +11586,152 @@
     "266527": {
      "name": "Yussuf Poulsen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "406501": {
      "name": "Daniel Heuer Fernandes",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "644459": {
      "name": "Patson Daka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "700074": {
      "name": "Jordan Torunarigha",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "759817": {
      "name": "Miro Muheim",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "763998": {
      "name": "Bakery Jatta",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "885005": {
      "name": "Terem Moffi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "901495": {
      "name": "Albert Sambi Lokonga",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "922892": {
      "name": "Sebastiaan Bornauw",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1018564": {
      "name": "Nicolás Capaldo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1025462": {
      "name": "Fábio Vieira",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1049679": {
      "name": "David Møller Wolfe",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1066260": {
      "name": "Mario Vušković",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1071178": {
      "name": "Immanuël Pherai",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1133381": {
      "name": "Albert Grønbæk",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1145714": {
      "name": "Sander Tangvik",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1188890": {
      "name": "Nicolai Remberg",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1202595": {
      "name": "Warmed Omari",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1283407": {
      "name": "Bilal Nadir",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1287871": {
      "name": "Zakaria El Ouahdi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1324082": {
      "name": "Martin Adeline",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1576487": {
      "name": "Otto Stange",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1587901": {
      "name": "Kofi Amoako",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1644278": {
      "name": "Alexander Røssing",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1667992": {
      "name": "Fernando Dickes",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1685570": {
      "name": "Joel Agyekum",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1804634": {
      "name": "Shafiq Nandja",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1899791": {
      "name": "Louis Lemke",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "2062053": {
      "name": "Finn Barkowsky",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "2073721": {
      "name": "Mads Broecker",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     }
    },
    "left": []
@@ -11739,7 +11751,7 @@
      "born": "1992-08-04",
      "country": "Denmark",
      "height": 188,
-     "value": 1343152,
+     "value": 1307564,
      "rating": 5.82,
      "goals": 0,
      "assists": 0,
@@ -11758,7 +11770,7 @@
      "born": "1994-01-16",
      "country": "Germany",
      "height": 189,
-     "value": 307513,
+     "value": 303797,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -11777,7 +11789,7 @@
      "born": "1998-12-18",
      "country": "Germany",
      "height": 186,
-     "value": 308851,
+     "value": 311971,
      "rating": 4.9,
      "goals": 0,
      "assists": 0,
@@ -11796,7 +11808,7 @@
      "born": "1997-09-09",
      "country": "Germany",
      "height": 188,
-     "value": 1888230,
+     "value": 1782503,
      "rating": 5.89,
      "goals": 0,
      "assists": 0,
@@ -11815,7 +11827,7 @@
      "born": "2006-03-07",
      "country": "Germany",
      "height": null,
-     "value": 228000,
+     "value": 328320,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -11837,7 +11849,7 @@
      "born": "2003-07-06",
      "country": "Belgium",
      "height": 191,
-     "value": 5553719,
+     "value": 4748128,
      "rating": 5.72,
      "goals": 0,
      "assists": 0,
@@ -11856,7 +11868,7 @@
      "born": "1995-12-13",
      "country": "Germany",
      "height": 190,
-     "value": 938389,
+     "value": 926248,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -11878,7 +11890,7 @@
      "born": "2003-12-20",
      "country": "Austria",
      "height": 190,
-     "value": 13840830,
+     "value": 18695924,
      "rating": 6.53,
      "goals": 1,
      "assists": 1,
@@ -11897,7 +11909,7 @@
      "born": "2004-10-29",
      "country": "Germany",
      "height": 188,
-     "value": 9713045,
+     "value": 11607315,
      "rating": 6.1,
      "goals": 0,
      "assists": 1,
@@ -11916,7 +11928,7 @@
      "born": "1995-08-16",
      "country": "Croatia",
      "height": 173,
-     "value": 1153627,
+     "value": 1154872,
      "rating": 6.81,
      "goals": 0,
      "assists": 2,
@@ -11938,7 +11950,7 @@
      "born": "1999-04-09",
      "country": "France",
      "height": 178,
-     "value": 1221074,
+     "value": 1199818,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -11960,7 +11972,7 @@
      "born": "2004-08-02",
      "country": "Germany",
      "height": 185,
-     "value": 8153411,
+     "value": 14185870,
      "rating": 6.41,
      "goals": 0,
      "assists": 0,
@@ -11979,7 +11991,7 @@
      "born": "1994-01-27",
      "country": "Tunisia",
      "height": 188,
-     "value": 1180678,
+     "value": 1476941,
      "rating": 6.35,
      "goals": 0,
      "assists": 0,
@@ -11998,7 +12010,7 @@
      "born": "1999-09-20",
      "country": "South Korea",
      "height": 179,
-     "value": 2013667,
+     "value": 2114796,
      "rating": 6.58,
      "goals": 0,
      "assists": 0,
@@ -12017,7 +12029,7 @@
      "born": "1999-04-13",
      "country": "Hungary",
      "height": 179,
-     "value": 2158026,
+     "value": 2338076,
      "rating": 6.46,
      "goals": 0,
      "assists": 0,
@@ -12036,7 +12048,7 @@
      "born": "1999-02-04",
      "country": "Ghana",
      "height": 180,
-     "value": 2346139,
+     "value": 3382656,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -12049,13 +12061,13 @@
      "id": 304354,
      "name": "Janik Haberer",
      "role": "midfielders",
-     "position": "RWB,CDM,RM",
+     "position": "RWB,RM,CDM",
      "number": 19,
      "age": 32,
      "born": "1994-04-02",
      "country": "Germany",
      "height": 187,
-     "value": 959044,
+     "value": 1194579,
      "rating": 6.51,
      "goals": 0,
      "assists": 0,
@@ -12068,13 +12080,13 @@
      "id": 792756,
      "name": "Michel Aebischer",
      "role": "midfielders",
-     "position": "CM,CDM,LM",
+     "position": "CM,CDM,LM,RW",
      "number": 20,
      "age": 29,
      "born": "1997-01-06",
      "country": "Switzerland",
      "height": 185,
-     "value": 2507560,
+     "value": 2603579,
      "rating": 6.12,
      "goals": 0,
      "assists": 0,
@@ -12093,7 +12105,7 @@
      "born": "1996-05-20",
      "country": "Denmark",
      "height": 183,
-     "value": 1203796,
+     "value": 1127245,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -12112,7 +12124,7 @@
      "born": "1987-02-24",
      "country": "Austria",
      "height": 189,
-     "value": 483533,
+     "value": 504824,
      "rating": 5.41,
      "goals": 0,
      "assists": 0,
@@ -12131,7 +12143,7 @@
      "born": "2000-06-27",
      "country": "Switzerland",
      "height": 173,
-     "value": 1266021,
+     "value": 1249132,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -12150,7 +12162,7 @@
      "born": "2006-11-12",
      "country": "Germany",
      "height": null,
-     "value": 460567,
+     "value": 737440,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -12169,7 +12181,7 @@
      "born": "2010-04-08",
      "country": "Germany",
      "height": null,
-     "value": 1767201,
+     "value": 1910822,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -12210,7 +12222,7 @@
      "born": "2004-09-28",
      "country": "Germany",
      "height": 178,
-     "value": 2312775,
+     "value": 2368700,
      "rating": 6.52,
      "goals": 0,
      "assists": 0,
@@ -12229,7 +12241,7 @@
      "born": "1996-09-07",
      "country": "Germany",
      "height": 179,
-     "value": 1006904,
+     "value": 1009905,
      "rating": 7.01,
      "goals": 2,
      "assists": 0,
@@ -12248,7 +12260,7 @@
      "born": "2000-04-03",
      "country": "Serbia",
      "height": 189,
-     "value": 4388570,
+     "value": 6685375,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -12270,7 +12282,7 @@
      "born": "2002-02-28",
      "country": "Croatia",
      "height": 183,
-     "value": 1460410,
+     "value": 1441264,
      "rating": 6.2,
      "goals": 0,
      "assists": 0,
@@ -12289,7 +12301,7 @@
      "born": "1999-01-02",
      "country": "Ivory Coast",
      "height": 177,
-     "value": 11843822,
+     "value": 10659439,
      "rating": 6.38,
      "goals": 1,
      "assists": 0,
@@ -12318,7 +12330,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-09-29T20:15:35.901Z",
+   "fetchedAt": "2026-10-04T09:27:34.347Z",
    "coachHistory": [
     {
      "name": "Mauro Lustrinelli",
@@ -12329,152 +12341,152 @@
     "166733": {
      "name": "Christopher Trimmel",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "186557": {
      "name": "Frederik Rønnow",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "304348": {
      "name": "Rani Khedira",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "304354": {
      "name": "Janik Haberer",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "447959": {
      "name": "Robert Skov",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "451628": {
      "name": "Carl Klaus",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "530858": {
      "name": "Marvin Friedrich",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "609504": {
      "name": "Oliver Burke",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "622373": {
      "name": "Josip Juranović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "658440": {
      "name": "Tim Skarke",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "767800": {
      "name": "Felix Uduokhai",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "783585": {
      "name": "Emmanuel Latte Lath",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "792756": {
      "name": "Michel Aebischer",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "836726": {
      "name": "András Schäfer",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "852049": {
      "name": "Kastriot Imeri",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "860260": {
      "name": "Derrick Köhn",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "907495": {
      "name": "Stanley N'Soki",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "949673": {
      "name": "Woo-Yeong Jeong",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1047670": {
      "name": "Andrej Ilić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1156148": {
      "name": "Matheo Raab",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1199947": {
      "name": "Leopold Querfeld",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1231677": {
      "name": "Zeno Van Den Bosch",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1242198": {
      "name": "Marin Ljubičić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1282582": {
      "name": "Tom Rothe",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1403332": {
      "name": "Aljoscha Kemlein",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1520506": {
      "name": "Livan Burcu",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1555056": {
      "name": "Julien Friedrich",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1796861": {
      "name": "Andrik Markgraf",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1958812": {
      "name": "Linus Guether",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "2062767": {
      "name": "Mekhi Gray",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     }
    },
    "left": []
@@ -12494,7 +12506,7 @@
      "born": "1997-10-21",
      "country": "Germany",
      "height": 193,
-     "value": 4545133,
+     "value": 7220689,
      "rating": 6.14,
      "goals": 0,
      "assists": 0,
@@ -12551,7 +12563,7 @@
      "born": "1991-01-12",
      "country": "Germany",
      "height": 190,
-     "value": 580072,
+     "value": 599939,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -12570,7 +12582,7 @@
      "born": "2005-06-05",
      "country": "Italy",
      "height": 186,
-     "value": 2505464,
+     "value": 4199801,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -12583,13 +12595,13 @@
      "id": 566158,
      "name": "Kevin Diks",
      "role": "defenders",
-     "position": "CB,RM",
+     "position": "CB,RB,RM",
      "number": 4,
      "age": 29,
      "born": "1996-10-06",
      "country": "Indonesia",
      "height": 182,
-     "value": 3030510,
+     "value": 4647267,
      "rating": 5.4,
      "goals": 0,
      "assists": 0,
@@ -12608,7 +12620,7 @@
      "born": "2007-04-12",
      "country": "Poland",
      "height": 184,
-     "value": 1010528,
+     "value": 1237185,
      "rating": 6.23,
      "goals": 0,
      "assists": 0,
@@ -12627,7 +12639,7 @@
      "born": "1997-01-27",
      "country": "Japan",
      "height": 185,
-     "value": 6854975,
+     "value": 6921409,
      "rating": 4.98,
      "goals": 0,
      "assists": 0,
@@ -12646,7 +12658,7 @@
      "born": "1999-05-17",
      "country": "Japan",
      "height": 182,
-     "value": 880068,
+     "value": 922805,
      "rating": 5.86,
      "goals": 0,
      "assists": 0,
@@ -12665,7 +12677,7 @@
      "born": "1998-02-21",
      "country": "Germany",
      "height": 185,
-     "value": 2565497,
+     "value": 2642557,
      "rating": 6.33,
      "goals": 0,
      "assists": 0,
@@ -12684,7 +12696,7 @@
      "born": "2003-02-20",
      "country": "Germany",
      "height": 185,
-     "value": 2112486,
+     "value": 4982144,
      "rating": 5.52,
      "goals": 0,
      "assists": 0,
@@ -12703,7 +12715,7 @@
      "born": "1999-08-26",
      "country": "Ukraine",
      "height": 179,
-     "value": 1574984,
+     "value": 4498995,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -12722,7 +12734,7 @@
      "born": "2004-03-16",
      "country": "Germany",
      "height": 177,
-     "value": 6734544,
+     "value": 9321170,
      "rating": 6.82,
      "goals": 0,
      "assists": 2,
@@ -12741,7 +12753,7 @@
      "born": "2007-12-09",
      "country": "Germany",
      "height": 177,
-     "value": 682108,
+     "value": 491581,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -12760,7 +12772,7 @@
      "born": "1993-08-27",
      "country": "Austria",
      "height": 175,
-     "value": 918912,
+     "value": 943044,
      "rating": 6.07,
      "goals": 0,
      "assists": 0,
@@ -12779,7 +12791,7 @@
      "born": "2000-07-23",
      "country": "Germany",
      "height": 174,
-     "value": 2004420,
+     "value": 3789943,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -12801,7 +12813,7 @@
      "born": "1997-03-16",
      "country": "Germany",
      "height": 183,
-     "value": 1566193,
+     "value": 1511080,
      "rating": 8.01,
      "goals": 1,
      "assists": 0,
@@ -12820,7 +12832,7 @@
      "born": "2003-07-29",
      "country": "South Korea",
      "height": 177,
-     "value": 4975001,
+     "value": 12689921,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -12842,7 +12854,7 @@
      "born": "2007-05-30",
      "country": "Germany",
      "height": null,
-     "value": 655510,
+     "value": 973320,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -12861,7 +12873,7 @@
      "born": "2002-12-31",
      "country": "USA",
      "height": 178,
-     "value": 6986402,
+     "value": 8977176,
      "rating": 6.36,
      "goals": 1,
      "assists": 0,
@@ -12880,7 +12892,7 @@
      "born": "2008-05-14",
      "country": "Germany",
      "height": null,
-     "value": null,
+     "value": 2708893,
      "rating": 6.64,
      "goals": 0,
      "assists": 0,
@@ -12899,7 +12911,7 @@
      "born": "2008-12-31",
      "country": "Germany",
      "height": 176,
-     "value": 2099521,
+     "value": 5668707,
      "rating": 6.28,
      "goals": 0,
      "assists": 0,
@@ -12918,7 +12930,7 @@
      "born": "2003-07-24",
      "country": "Sweden",
      "height": 179,
-     "value": 3103190,
+     "value": 7712172,
      "rating": 7.17,
      "goals": 2,
      "assists": 0,
@@ -12937,7 +12949,7 @@
      "born": "2003-11-20",
      "country": "Japan",
      "height": 176,
-     "value": 982477,
+     "value": 1298835,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -12959,7 +12971,7 @@
      "born": "1998-09-08",
      "country": "Sweden",
      "height": 185,
-     "value": 2358441,
+     "value": 5488621,
      "rating": 6.45,
      "goals": 1,
      "assists": 0,
@@ -12978,14 +12990,17 @@
      "born": "1996-08-11",
      "country": "France",
      "height": 180,
-     "value": 8031247,
+     "value": 5914761,
      "rating": 7.25,
      "goals": 0,
      "assists": 2,
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "87",
+      "expectedReturn": "About 1-2 weeks"
+     }
     },
     {
      "id": 442728,
@@ -12997,7 +13012,7 @@
      "born": "1995-08-31",
      "country": "Germany",
      "height": 194,
-     "value": 7713209,
+     "value": 6499408,
      "rating": 5.89,
      "goals": 0,
      "assists": 0,
@@ -13012,11 +13027,11 @@
      "role": "attackers",
      "position": "ST,CAM",
      "number": 18,
-     "age": 26,
+     "age": 27,
      "born": "1999-09-30",
      "country": "Japan",
      "height": 184,
-     "value": 4289622,
+     "value": 2746076,
      "rating": 5.91,
      "goals": 1,
      "assists": 0,
@@ -13035,7 +13050,7 @@
      "born": "2000-01-01",
      "country": "Germany",
      "height": 174,
-     "value": 10966767,
+     "value": 10921619,
      "rating": 6.48,
      "goals": 0,
      "assists": 0,
@@ -13057,7 +13072,7 @@
      "born": "1998-08-27",
      "country": "Germany",
      "height": 176,
-     "value": 7000405,
+     "value": 6190995,
      "rating": 6.09,
      "goals": 0,
      "assists": 0,
@@ -13076,7 +13091,7 @@
      "born": "2007-04-06",
      "country": "Guinea-Bissau",
      "height": 170,
-     "value": 654255,
+     "value": 956214,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -13086,7 +13101,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-09-29T20:15:35.901Z",
+   "fetchedAt": "2026-10-04T09:27:34.347Z",
    "coachHistory": [
     {
      "name": "Alexander Blessin",
@@ -13097,157 +13112,157 @@
     "37678": {
      "name": "Tobias Sippel",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "212873": {
      "name": "Daniel Batz",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "276739": {
      "name": "Kevin Stöger",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "442728": {
      "name": "Tim Kleindienst",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "501543": {
      "name": "Franck Honorat",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "566158": {
      "name": "Kevin Diks",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "620917": {
      "name": "Ko Itakura",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "655095": {
      "name": "Isac Lidberg",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "764507": {
      "name": "Florian Neuhaus",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "784146": {
      "name": "Moritz Nicolas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "878296": {
      "name": "Daiki Hashioka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "884919": {
      "name": "Robin Hack",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "888745": {
      "name": "Nicolas-Gerrit Kühn",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "915111": {
      "name": "Shuto Machino",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "951918": {
      "name": "Philipp Sander",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "959696": {
      "name": "Joseph Scally",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1054026": {
      "name": "Yukhym Konoplya",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1129317": {
      "name": "Jan Olschowsky",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1185902": {
      "name": "Jens Castrop",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1276331": {
      "name": "Fabio Chiarodia",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1301517": {
      "name": "Enzo Leopold",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1337143": {
      "name": "Zento Uno",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1351569": {
      "name": "Hugo Bolin",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1356589": {
      "name": "David Herold",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1398483": {
      "name": "Lukas Ullrich",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1660228": {
      "name": "Jan Leszczyński",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1793874": {
      "name": "Wael Mohya",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1838513": {
      "name": "Fritz Fleck",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1904630": {
      "name": "Iaia Manco Danfa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1975572": {
      "name": "Mathieu Nguefack",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "2030060": {
      "name": "Josiah Uwakhonye",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     }
    },
    "left": []

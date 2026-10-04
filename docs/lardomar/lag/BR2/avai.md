@@ -1,17 +1,17 @@
 # Avaí (Brasileirão Série B) – lärdomar
 
-Genererad 2026-09-29. Ligans fil: [BR2](../../ligor/BR2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-10-04. Ligans fil: [BR2](../../ligor/BR2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
-Form senaste 8 (äldst → senast): VVFFFOFF · senaste match 2026-09-27
+Form senaste 8 (äldst → senast): VFFFOFFF · senaste match 2026-10-03
 
 ## Säsonger
 
 | Säsong | M | P/M | Hemma P/M | Borta P/M | Kryss | Mål för–emot | Över 2,5 |
 |---|---|---|---|---|---|---|---|
 | 2025/26 | 38 | 1,47 | 1,89 | 1,05 | 37 % | 1,32–1,05 | 50 % |
-| 2026/27 | 30 | 1,00 | 1,36 | 0,69 | 20 % | 1,00–1,37 | 47 % |
+| 2026/27 | 31 | 0,97 | 1,27 | 0,69 | 19 % | 0,97–1,35 | 45 % |
 
 ## Inbördes möten
 
@@ -30,6 +30,7 @@ Form senaste 8 (äldst → senast): VVFFFOFF · senaste match 2026-09-27
 | Cuiabá | 3 | 2-1-0 | 5–2 | 2026-06-21 1-0 (h) |
 | Amazonas | 2 | 1-0-1 | 3–2 | 2025-08-26 1-2 (h) |
 | Athletico-PR | 2 | 0-1-1 | 2–3 | 2025-10-15 1-1 (b) |
+| Ceará | 2 | 0-0-2 | 1–3 | 2026-10-03 0-1 (h) |
 | Chapecoense | 2 | 2-0-0 | 3–1 | 2025-09-26 1-0 (b) |
 | Coritiba | 2 | 0-0-2 | 1–4 | 2025-09-29 0-2 (h) |
 | Ferroviária | 2 | 0-2-0 | 3–3 | 2025-09-20 2-2 (h) |
@@ -43,42 +44,42 @@ Form senaste 8 (äldst → senast): VVFFFOFF · senaste match 2026-09-27
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+## Trupp (FotMob, hämtad 2026-10-04)
 
-Tränare: Allan Rodrigo Aal. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
+Tränare: Marquinhos Santos (tidigare: Allan Rodrigo Aal till 2026-09-28). Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
 | 1 | Igor Bohn | GK | 30 | Brazil | 203 k€ | – | 0 | 0 | 0/0 |  |
-| 21 | Otávio | GK | 33 | Brazil | 160 k€ | – | 0 | 0 | 0/0 |  |
+| 21 | Otávio | GK | 33 | Brazil | 149 k€ | – | 0 | 0 | 0/0 |  |
 | 94 | Bruno Ferreira | GK | 32 | Brazil | 266 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Wallison | RB | 25 | Brazil | 311 k€ | – | 0 | 0 | 0/0 |  |
-| 3 | Allyson | CB | 35 | Brazil | 124 k€ | – | 0 | 0 | 0/0 |  |
+| 2 | Wallison | RB | 25 | Brazil | 308 k€ | – | 0 | 0 | 0/0 |  |
+| 3 | Allyson | CB | 35 | Brazil | 149 k€ | – | 0 | 0 | 0/0 |  |
 | 15 | Guilherme Aquino | CB | 22 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 22 | João Vitor | RB,RM | 24 | Brazil | 190 k€ | – | 0 | 0 | 0/0 |  |
-| 35 | Pedrão | CB | 22 | Brazil | 287 k€ | – | 0 | 0 | 0/0 |  |
-| 36 | Douglas Teixeira | LB,LM | 25 | Brazil | 321 k€ | – | 0 | 0 | 0/0 |  |
-| 38 | Jefferson | CB | 23 | Brazil | 296 k€ | – | 0 | 0 | 0/0 |  |
+| 35 | Pedrão | CB | 22 | Brazil | 373 k€ | – | 0 | 0 | 0/0 |  |
+| 36 | Douglas Teixeira | LB,LM | 25 | Brazil | 390 k€ | – | 0 | 0 | 0/0 |  |
+| 38 | Jefferson | CB | 23 | Brazil | 275 k€ | – | 0 | 0 | 0/0 |  |
 | 40 | Reynaldo | CB | 29 | Brazil | 600 k€ | – | 0 | 0 | 0/0 |  |
 | 66 | Quaresma | LB | 30 | Brazil | 193 k€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 5 | Del Piage | CDM | 26 | Brazil | 229 k€ | – | 0 | 0 | 0/0 |  |
-| 8 | Luiz Henrique | CDM,CM,CAM | 27 | Brazil | 239 k€ | – | 0 | 0 | 0/0 |  |
+| 5 | Del Piage | CDM | 26 | Brazil | 253 k€ | – | 0 | 0 | 0/0 |  |
+| 8 | Luiz Henrique | CDM,CM,CAM | 27 | Brazil | 264 k€ | – | 0 | 0 | 0/0 |  |
 | 18 | Hyan | Midfielder | 22 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 25 | Paulo Vitor | CDM,CM | 22 | Brazil | 1,1 M€ | – | 0 | 0 | 0/0 |  |
 | 27 | Pedro Cuiabá | CM | 24 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 77 | Zé Ricardo | CDM,CM,RM | 30 | Brazil | 284 k€ | – | 0 | 0 | 0/0 |  |
+| 77 | Zé Ricardo | CDM,CM,RM | 30 | Brazil | 307 k€ | – | 0 | 0 | 0/0 |  |
 | 95 | Wenderson | LW,CAM | 27 | Brazil | 658 k€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 7 | Léo Chú | LW | 26 | Brazil | 981 k€ | – | 0 | 0 | 0/0 |  |
-| 9 | Léo Gamalho | ST | 40 | Brazil | 237 k€ | – | 0 | 0 | 0/0 |  |
-| 10 | Jean Lucas | LW,CAM,ST | 31 | Brazil | 240 k€ | – | 0 | 0 | 0/0 |  |
-| 11 | Felipe Vizeu | ST | 29 | Brazil | 253 k€ | – | 0 | 0 | 0/0 |  |
-| 14 | Daniel Penha | CAM,ST,RW | 27 | Brazil | 306 k€ | – | 0 | 0 | 0/0 |  |
+| 7 | Léo Chú | LW | 26 | Brazil | 967 k€ | – | 0 | 0 | 0/0 |  |
+| 9 | Léo Gamalho | ST | 40 | Brazil | 226 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Jean Lucas | LW,CAM,ST | 31 | Brazil | 292 k€ | – | 0 | 0 | 0/0 |  |
+| 11 | Felipe Vizeu | ST | 29 | Brazil | 322 k€ | – | 0 | 0 | 0/0 |  |
+| 14 | Daniel Penha | CAM,ST,RW | 27 | Brazil | 300 k€ | – | 0 | 0 | 0/0 |  |
 | 17 | Juan Rocha | Attacker | 22 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 37 | Rildo | LW | 26 | Brazil | 335 k€ | – | 0 | 0 | 0/0 |  |
+| 37 | Rildo | LW | 26 | Brazil | 306 k€ | – | 0 | 0 | 0/0 |  |
 | 39 | Gabriel Cipriano | RW | 26 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 70 | Gaspar | LM | 24 | Brazil | 169 k€ | – | 0 | 0 | 0/0 |  |
 

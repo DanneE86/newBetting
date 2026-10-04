@@ -1,20 +1,24 @@
 # CF Montreal (MLS) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Stark historik mot New York Red Bulls (+0,51 p/match mot marknaden, 15 möten), Charlotte (+0,56 p/match mot marknaden, 9 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Spelstil 2026: Balanserat, Kortpass, Högpress, Svag på fasta, Svag mot fasta. Bäst mot Farlig på fasta (+0,17, samma håll i båda halvorna men svagt), Högpress (+0,12, samma håll i båda halvorna men svagt), Balanserat (+0,08, samma håll i båda halvorna men svagt). Svårast mot Svag på fasta (−0,12, samma håll i båda halvorna men svagt), Mellanpress (−0,09, samma håll i båda halvorna men svagt), Bollinnehav (−0,07, samma håll i båda halvorna men svagt). Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2026: 0,11 mål för per match (xG 0,24), 0,59 emot (xG 0,35), 5,0 hörnor.
+- Höghöjd: borta på höghöjd 0,43 poäng per match mot 0,88 i övriga bortamatcher (7 matcher, mot marknaden −0,55 mot −0,01): **svårare på höghöjd**.
+- Svårt för: Nashville SC (1-4-7, 0,58 p/match, mot marknaden −0,44), Philadelphia Union (3-4-9, 0,81 p/match, mot marknaden −0,23), New England Revolution (6-3-11, 1,05 p/match, mot marknaden −0,16), FC Cincinnati (5-2-8, 1,13 p/match, mot marknaden −0,14), Atlanta Utd (4-5-6, 1,13 p/match, mot marknaden −0,05), New York City (5-2-8, 1,13 p/match, mot marknaden +0,08), Columbus Crew (5-4-7, 1,19 p/match, mot marknaden +0,09). Där marknaden ligger nära noll är laget bara sämre i de mötena än annars, och oddsen vet redan om det.
 
 ## Nuläge (senaste 8 ligamatcher)
 
-Form (äldst → senast): OVOFFFFF · senaste match 2026-09-20
+Form (äldst → senast): VOFFFFFV · senaste match 2026-09-27
 
 | Mått | Värde |
 |---|---|
 | Tur (poäng − xP per match) | – |
 | xG-målskillnad − målskillnad | – |
-| Poäng mot marknaden per match | −0,49 |
+| Poäng mot marknaden per match | −0,20 |
 
 ## Säsonger
 
@@ -34,7 +38,54 @@ Form (äldst → senast): OVOFFFFF · senaste match 2026-09-20
 | 2023 | MLS | 34 | 1,21 | −0,02 (+0,48 / −0,52) | 15 % (26 %) | 1,06–1,53 | – | – |
 | 2024 | MLS | 35 | 1,26 | +0,23 (+0,32 / +0,12) | 31 % (24 %) | 1,43–1,89 | – | – |
 | 2025 | MLS | 34 | 0,82 | −0,20 (−0,62 / +0,23) | 29 % (24 %) | 1,00–1,76 | – | – |
-| 2026 | MLS | 26 | 0,81 | −0,41 (−0,37 / −0,45) | 23 % (24 %) | 1,19–2,04 | – | – |
+| 2026 | MLS | 27 | 0,89 | −0,33 (−0,22 / −0,45) | 22 % (24 %) | 1,26–2,00 | – | – |
+
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/MLS.md#cf-montreal) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2026: **Balanserat, Kortpass, Högpress, Svag på fasta, Svag mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026 | 27 | 0,11 | 0,24 | 0,59 | 0,35 | 5,0 |
+| 2025 | 34 | 0,21 | 0,30 | 0,38 | 0,39 | 5,1 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Backar hem | 96 | 1,44–1,66 | +0,01 | −0,03 (−0,3) | −6 pe | – | svag |
+| Balanserat | 124 | 1,35–1,43 | +0,13 | +0,08 (0,7) | −2 pe | – | ✔ samma håll |
+| Bollinnehav | 97 | 1,31–1,99 | −0,03 | −0,07 (−0,6) | −7 pe | – | ✔ samma håll |
+| Kortpass | 61 | 1,21–1,80 | +0,02 | −0,02 (−0,1) | −10 pe | – | svag |
+| Blandat | 141 | 1,43–1,72 | +0,07 | +0,03 (0,2) | −4 pe | – | ✔ samma håll |
+| Direktspel | 115 | 1,36–1,53 | +0,02 | −0,02 (−0,2) | −3 pe | – | svag |
+| Lågpress | 89 | 1,60–1,63 | +0,06 | +0,02 (0,1) | −7 pe | – | svag |
+| Mellanpress | 138 | 1,23–1,80 | −0,04 | −0,09 (−0,8) | −3 pe | – | ✔ samma håll |
+| Högpress | 90 | 1,33–1,51 | +0,16 | +0,12 (0,9) | −5 pe | – | ✔ samma håll |
+| Svag på fasta | 104 | 1,33–1,83 | −0,07 | −0,12 (−1,0) | −6 pe | – | ✔ samma håll |
+| Medel på fasta | 137 | 1,42–1,69 | +0,04 | −0,00 (−0,0) | −2 pe | – | svag |
+| Farlig på fasta | 76 | 1,32–1,42 | +0,21 | +0,17 (1,2) | −7 pe | – | ✔ samma håll |
+| Stark mot fasta | 118 | 1,28–1,64 | +0,08 | +0,03 (0,3) | −7 pe | – | ✔ samma håll |
+| Medel mot fasta | 122 | 1,36–1,72 | −0,01 | −0,05 (−0,5) | −3 pe | – | ✔ samma håll |
+| Svag mot fasta | 77 | 1,49–1,64 | +0,08 | +0,03 (0,2) | −4 pe | – | svag |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
+
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 3 | 1-0-2 | 1,00 | −0,08 |
+| Efter uppehåll sedan 2023 | 1 | 0-0-1 | 0,00 | −1,27 |
+| Övriga matcher | 503 | 176-105-222 | 1,26 | +0,02 |
+
+Hela ligan efter uppehåll: −0,00 mot marknaden (n 121). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2026-04-04 | New England Revolution - CF Montreal | 3-0 F | −1,27 |
+| 2020-11-20 | New England Revolution - CF Montreal | 2-1 F | −0,77 |
+| 2016-11-23 | CF Montreal - Toronto FC | 3-2 V | +1,81 |
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -43,14 +94,14 @@ Form (äldst → senast): OVOFFFFF · senaste match 2026-09-20
 | New England Revolution | 20 | 6-3-11 | 24–37 | −0,16 | −9 pe | 2026-08-02 2-2 (h) |
 | Toronto FC | 19 | 8-3-8 | 29–33 | +0,13 | −9 pe | 2026-07-17 0-0 (h) |
 | Orlando City | 18 | 6-5-7 | 22–22 | +0,06 | +2 pe | 2026-05-09 2-0 (h) |
-| DC United | 17 | 5-7-5 | 20–25 | +0,03 | +16 pe | 2026-08-16 1-1 (h) |
 | Columbus Crew | 16 | 5-4-7 | 20–23 | +0,09 | −0 pe | 2026-09-20 0-2 (h) |
+| DC United | 16 | 5-7-4 | 20–20 | +0,11 | +19 pe | 2026-08-16 1-1 (h) |
 | Philadelphia Union | 16 | 3-4-9 | 23–32 | −0,23 | +0 pe | 2026-09-06 0-2 (b) |
 | Atlanta Utd | 15 | 4-5-6 | 21–26 | −0,05 | +8 pe | 2026-05-03 1-3 (b) |
 | Chicago Fire | 15 | 6-3-6 | 19–22 | +0,15 | −5 pe | 2026-05-16 0-2 (h) |
+| FC Cincinnati | 15 | 5-2-8 | 26–35 | −0,14 | −11 pe | 2026-09-27 3-1 (h) |
 | New York City | 15 | 5-2-8 | 10–19 | +0,08 | −11 pe | 2026-04-25 1-0 (h) |
 | New York Red Bulls | 15 | 7-2-6 | 24–19 | +0,51 | −12 pe | 2026-04-18 4-1 (h) |
-| FC Cincinnati | 14 | 4-2-8 | 23–34 | −0,27 | −10 pe | 2026-03-22 3-4 (b) |
 | Inter Miami | 14 | 6-1-7 | 21–29 | +0,23 | −16 pe | 2026-08-30 1-7 (b) |
 | Nashville SC | 12 | 1-4-7 | 7–18 | −0,44 | +7 pe | 2026-07-23 0-1 (b) |
 | Charlotte | 9 | 5-1-3 | 13–8 | +0,56 | −14 pe | 2026-09-10 1-2 (h) |
@@ -72,7 +123,20 @@ Form (äldst → senast): OVOFFFFF · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): Nashville SC 0,58 p/match (−0,44), Philadelphia Union 0,81 p/match (−0,23), New England Revolution 1,05 p/match (−0,16), FC Cincinnati 1,13 p/match (−0,14), Atlanta Utd 1,13 p/match (−0,05), New York City 1,13 p/match (+0,08), Columbus Crew 1,19 p/match (+0,09).
+
+## Höghöjd
+
+Arenans höjd: ca 200 m. Höghöjdsmatch = arena ≥ 1500 m och bortalaget från minst 1000 m lägre.
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Borta på höghöjd | 7 | 1-0-6 | 0,43 | −0,55 |
+| Borta övriga | 244 | 54-53-137 | 0,88 | −0,01 |
+
+Ligan: se [MLS](../../ligor/MLS.md#höghöjd).
+
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: –. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -82,34 +146,34 @@ Tränare: –. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
 | 1 | Sébastian Breza | GK | 28 | Canada | 172 k€ | 6,80 | 0 | 0 | 1/0 |  |
-| 31 | Thomas Gillier | GK | 22 | Chile | 1,3 M€ | 6,35 | 0 | 0 | 3/0 |  |
-| 33 | Emil Gazdov | GK | 23 | Canada | 244 k€ | – | 0 | 0 | 0/0 |  |
+| 31 | Thomas Gillier | GK | 22 | Chile | 1,5 M€ | 6,35 | 0 | 0 | 3/0 |  |
+| 33 | Emil Gazdov | GK | 23 | Canada | 156 k€ | – | 0 | 0 | 0/0 |  |
 | 41 | Samsy Keita | Keeper | 17 | Canada | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-|  | Viktor Radojević | LB | 22 | Serbia | 1,4 M€ | 6,59 | 0 | 1 | 3/0 |  |
-| 2 | Jalen Neal | CB | 23 | USA | 908 k€ | 6,77 | 0 | 0 | 2/0 |  |
+| 2 | Jalen Neal | CB | 23 | USA | 812 k€ | 6,77 | 0 | 0 | 2/0 |  |
 | 3 | Brayan Ceballos | CB,RB | 25 | Colombia | 1,2 M€ | 6,69 | 2 | 0 | 6/0 |  |
-| 4 | Brayan Vera | CB,LB | 27 | Colombia | 971 k€ | 6,51 | 1 | 0 | 5/1 | skadad, åter Mid October 2026 |
-| 5 | Brandan Craig | CB | 22 | USA | 225 k€ | 6,62 | 0 | 0 | 3/0 |  |
-| 13 | Luca Petrasso | LB | 26 | Canada | 368 k€ | 6,82 | 0 | 3 | 1/0 |  |
+| 4 | Brayan Vera | CB,LB | 27 | Colombia | 1,0 M€ | 6,51 | 1 | 0 | 5/1 | skadad, åter Mid October 2026 |
+| 5 | Brandan Craig | CB | 22 | USA | 168 k€ | 6,62 | 0 | 0 | 3/0 |  |
+| 13 | Luca Petrasso | LB | 26 | Canada | 582 k€ | 6,82 | 0 | 3 | 1/0 |  |
 | 19 | Bode Hidalgo | RB | 24 | USA | 1,2 M€ | 5,65 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
-| 24 | Efraín Morales | CB | 22 | Bolivia | 730 k€ | 6,63 | 0 | 2 | 0/0 |  |
-| 27 | Dawid Bugaj | RB | 22 | Poland | 549 k€ | 6,61 | 0 | 0 | 2/0 |  |
+| 24 | Efraín Morales | CB | 22 | Bolivia | 544 k€ | 6,63 | 0 | 2 | 0/0 |  |
+| 27 | Dawid Bugaj | RB | 22 | Poland | 427 k€ | 6,61 | 0 | 0 | 2/0 |  |
+| 28 | Viktor Radojević | LB | 22 | Serbia | 1,4 M€ | 6,59 | 0 | 1 | 3/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 6 | Samuel Piette | CM,CDM | 31 | Canada | 287 k€ | 6,80 | 0 | 0 | 5/0 |  |
+| 6 | Samuel Piette | CM,CDM | 31 | Canada | 285 k€ | 6,80 | 0 | 0 | 5/0 |  |
 | 7 | Dani Pereira | CM,CDM | 26 | Venezuela | 2,0 M€ | 6,59 | 0 | 1 | 2/0 | skadad, åter Mid October 2026 |
-| 8 | Matty Longstaff | CM,CDM | 26 | England | 779 k€ | 6,84 | 2 | 3 | 7/0 |  |
+| 8 | Matty Longstaff | CM,CDM | 26 | England | 803 k€ | 6,84 | 2 | 3 | 7/0 |  |
 | 16 | Wiki Carmona | CAM,RW,CM | 23 | Venezuela | 2,2 M€ | 7,01 | 4 | 2 | 1/0 |  |
-| 21 | Fabian Herbers | CM,CAM | 33 | Germany | 67 k€ | 6,49 | 1 | 0 | 2/0 |  |
-| 22 | Victor Loturi | CM,CDM | 25 | Canada | 573 k€ | 6,61 | 1 | 1 | 5/0 |  |
-| 25 | Frankie Amaya | CM | 26 | USA | 779 k€ | – | 0 | 0 | 0/0 |  |
-| 26 | Ivan Losenko | CDM | 22 | Ukraine | 471 k€ | – | 0 | 0 | 0/0 |  |
-| 29 | Olger Escobar | CAM,CM,RW | 20 | Guatemala | 607 k€ | 6,30 | 0 | 0 | 2/0 |  |
+| 21 | Fabian Herbers | CM,CAM | 33 | Germany | 62 k€ | 6,49 | 1 | 0 | 2/0 |  |
+| 22 | Victor Loturi | CM,CDM | 25 | Canada | 602 k€ | 6,61 | 1 | 1 | 5/0 |  |
+| 25 | Frankie Amaya | CM | 26 | USA | 759 k€ | – | 0 | 0 | 0/0 |  |
+| 26 | Ivan Losenko | CDM | 22 | Ukraine | 518 k€ | – | 0 | 0 | 0/0 |  |
+| 29 | Olger Escobar | CAM,CM,RW | 20 | Guatemala | 524 k€ | 6,30 | 0 | 0 | 2/0 |  |
 | 36 | Josh-Duc Nteziryayo | Midfielder | 17 | Canada | – | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
 | | **Anfallare** | | | | | | | | | |
-| 9 | Prince Owusu | ST | 29 | Ghana | 2,5 M€ | 7,16 | 15 | 6 | 6/0 |  |
-| 10 | Alexis Sánchez | ST,CAM,LW,RW | 37 | Chile | 709 k€ | 6,72 | 0 | 0 | 0/0 |  |
-| 14 | Daniel Ríos | ST,LW | 31 | Mexico | 199 k€ | 6,46 | 5 | 1 | 3/0 |  |
+| 9 | Prince Owusu | ST | 29 | Ghana | 2,6 M€ | 7,16 | 15 | 6 | 6/0 |  |
+| 10 | Alexis Sánchez | ST,CAM,LW,RW | 37 | Chile | 805 k€ | 6,72 | 0 | 0 | 0/0 |  |
+| 14 | Daniel Ríos | ST,LW | 31 | Mexico | 190 k€ | 6,46 | 5 | 1 | 3/0 |  |
 | 17 | Dante Sealy | RW,LW,RM | 23 | Trinidad and Tobago | 1,1 M€ | 6,47 | 0 | 2 | 2/0 |  |
-| 18 | Hennadii Synchuk | RW | 20 | Ukraine | 2,2 M€ | 6,87 | 1 | 1 | 3/0 |  |
-| 23 | Noah Streit | LW,RW,RM | 20 | Switzerland | 623 k€ | 6,58 | 1 | 1 | 1/0 |  |
+| 18 | Hennadii Synchuk | RW | 20 | Ukraine | 4,7 M€ | 6,87 | 1 | 1 | 3/0 |  |
+| 23 | Noah Streit | RW,LW,RM | 20 | Switzerland | 719 k€ | 6,58 | 1 | 1 | 1/0 |  |

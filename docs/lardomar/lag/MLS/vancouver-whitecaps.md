@@ -1,21 +1,25 @@
 # Vancouver Whitecaps (MLS) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - 2025: +0,28 poäng per match mot marknaden. Ligan visar ingen persistens, så räkna inte med att det fortsätter.
 - Stark historik mot FC Dallas (+0,53 p/match mot marknaden, 16 möten), Toronto FC (+0,65 p/match mot marknaden, 11 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Spelstil 2026: Balanserat, Kortpass, Högpress, Farlig på fasta, Medel mot fasta. Bäst mot Stark mot fasta (+0,31, stabilt), Blandat (+0,07, samma håll i båda halvorna men svagt), Bollinnehav (+0,05, svagt). Svårast mot Medel mot fasta (−0,15, samma håll i båda halvorna men svagt), Kortpass (−0,09, svagt), Svag mot fasta (−0,07, samma håll i båda halvorna men svagt). Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2026: 0,46 mål för per match (xG 0,53), 0,19 emot (xG 0,11), 6,0 hörnor.
+- Höghöjd: borta på höghöjd 0,94 poäng per match mot 1,08 i övriga bortamatcher (16 matcher, mot marknaden −0,09 mot +0,13).
+- Svårt för: San Jose Earthquakes (5-4-9, 1,06 p/match, mot marknaden −0,28), Houston Dynamo (4-4-7, 1,07 p/match, mot marknaden −0,24), Seattle Sounders (5-6-8, 1,11 p/match, mot marknaden +0,07). Där marknaden ligger nära noll är laget bara sämre i de mötena än annars, och oddsen vet redan om det.
 
 ## Nuläge (senaste 8 ligamatcher)
 
-Form (äldst → senast): VFVVFVFV · senaste match 2026-09-20
+Form (äldst → senast): FVVFVFVO · senaste match 2026-09-27
 
 | Mått | Värde |
 |---|---|
 | Tur (poäng − xP per match) | – |
 | xG-målskillnad − målskillnad | – |
-| Poäng mot marknaden per match | −0,25 |
+| Poäng mot marknaden per match | −0,58 |
 
 ## Säsonger
 
@@ -35,7 +39,54 @@ Form (äldst → senast): VFVVFVFV · senaste match 2026-09-20
 | 2023 | MLS | 36 | 1,33 | −0,04 (−0,06 / −0,02) | 33 % (25 %) | 1,58–1,50 | – | – |
 | 2024 | MLS | 38 | 1,39 | +0,00 (−0,25 / +0,25) | 21 % (25 %) | 1,61–1,37 | – | – |
 | 2025 | MLS | 39 | 1,82 | +0,28 (+0,12 / +0,42) | 28 % (25 %) | 1,95–1,15 | – | – |
-| 2026 | MLS | 25 | 1,96 | −0,04 (−0,21 / +0,18) | 16 % (21 %) | 2,24–0,92 | – | – |
+| 2026 | MLS | 26 | 1,92 | −0,10 (−0,30 / +0,18) | 19 % (20 %) | 2,27–1,00 | – | – |
+
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/MLS.md#vancouver-whitecaps) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2026: **Balanserat, Kortpass, Högpress, Farlig på fasta, Medel mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026 | 26 | 0,46 | 0,53 | 0,19 | 0,11 | 6,0 |
+| 2025 | 39 | 0,46 | 0,45 | 0,20 | 0,23 | 5,8 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Backar hem | 103 | 1,63–1,58 | +0,12 | −0,01 (−0,1) | −1 pe | – | svag |
+| Balanserat | 121 | 1,36–1,32 | +0,11 | −0,03 (−0,2) | +3 pe | – | svag |
+| Bollinnehav | 99 | 1,53–1,60 | +0,18 | +0,05 (0,4) | −1 pe | – | svag |
+| Kortpass | 62 | 1,74–1,40 | +0,05 | −0,09 (−0,5) | −3 pe | – | svag |
+| Blandat | 136 | 1,48–1,39 | +0,20 | +0,07 (0,7) | +4 pe | – | ✔ samma håll |
+| Direktspel | 125 | 1,40–1,64 | +0,11 | −0,03 (−0,2) | −1 pe | – | svag |
+| Lågpress | 114 | 1,50–1,33 | +0,14 | +0,00 (0,0) | +0 pe | – | svag |
+| Mellanpress | 129 | 1,57–1,71 | +0,12 | −0,02 (−0,2) | +1 pe | – | svag |
+| Högpress | 80 | 1,39–1,36 | +0,16 | +0,03 (0,2) | +1 pe | – | svag |
+| Svag på fasta | 99 | 1,67–1,58 | +0,16 | +0,02 (0,2) | +1 pe | – | svag |
+| Medel på fasta | 135 | 1,44–1,44 | +0,16 | +0,02 (0,2) | +2 pe | – | svag |
+| Farlig på fasta | 89 | 1,40–1,47 | +0,07 | −0,06 (−0,5) | −2 pe | – | svag |
+| Stark mot fasta | 88 | 1,48–1,44 | +0,45 | +0,31 (2,2) | −5 pe | – | ⚑ stabil |
+| Medel mot fasta | 147 | 1,46–1,55 | −0,01 | −0,15 (−1,5) | +0 pe | – | ✔ samma håll |
+| Svag mot fasta | 88 | 1,59–1,43 | +0,07 | −0,07 (−0,5) | +7 pe | – | ✔ samma håll |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
+
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 3 | 1-1-1 | 1,33 | −0,28 |
+| Efter uppehåll sedan 2023 | 2 | 1-1-0 | 2,00 | +0,02 |
+| Övriga matcher | 508 | 193-130-185 | 1,40 | +0,12 |
+
+Hela ligan efter uppehåll: −0,00 mot marknaden (n 121). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2026-04-05 | Vancouver Whitecaps - Portland Timbers | 3-2 V | +0,66 |
+| 2025-11-23 | Vancouver Whitecaps - Los Angeles FC | 2-2 O | −0,62 |
+| 2021-11-20 | Sporting Kansas City - Vancouver Whitecaps | 3-1 F | −0,89 |
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -43,8 +94,8 @@ Form (äldst → senast): VFVVFVFV · senaste match 2026-09-20
 |---|---|---|---|---|---|---|
 | Los Angeles FC | 23 | 7-7-9 | 30–44 | +0,27 | +9 pe | 2026-08-02 1-1 (h) |
 | Portland Timbers | 21 | 11-3-7 | 37–28 | +0,37 | −9 pe | 2026-04-05 3-2 (h) |
-| Los Angeles Galaxy | 19 | 8-3-8 | 31–33 | +0,26 | −6 pe | 2026-09-10 3-0 (h) |
 | Seattle Sounders | 19 | 5-6-8 | 21–30 | +0,07 | +6 pe | 2026-08-17 2-0 (b) |
+| Los Angeles Galaxy | 18 | 8-3-7 | 31–30 | +0,32 | −6 pe | 2026-09-10 3-0 (h) |
 | San Jose Earthquakes | 18 | 5-4-9 | 25–28 | −0,28 | −2 pe | 2026-05-10 1-1 (b) |
 | Sporting Kansas City | 18 | 9-3-6 | 24–24 | +0,30 | −6 pe | 2026-08-30 3-0 (b) |
 | Real Salt Lake | 17 | 8-1-8 | 25–25 | +0,18 | −19 pe | 2026-09-20 3-0 (b) |
@@ -61,9 +112,9 @@ Form (äldst → senast): VFVVFVFV · senaste match 2026-09-20
 | New York City | 4 | 1-2-1 | 4–4 | +0,02 | +26 pe | 2026-04-12 2-0 (h) |
 | San Diego FC | 4 | 2-1-1 | 11–9 | +0,34 | −1 pe | 2026-05-24 4-2 (b) |
 | Columbus Crew | 3 | 0-1-2 | 2–7 | −0,60 | +9 pe | 2025-06-15 1-2 (b) |
+| DC United | 3 | 1-2-0 | 6–5 | −0,25 | +46 pe | 2026-09-27 3-3 (h) |
 | New England Revolution | 3 | 0-1-2 | 2–7 | −0,66 | +10 pe | 2024-06-16 2-3 (b) |
 | Charlotte | 2 | 0-1-1 | 2–3 | −0,80 | +25 pe | 2024-03-03 1-1 (h) |
-| DC United | 2 | 1-1-0 | 3–2 | +0,34 | +25 pe | 2023-10-01 2-2 (h) |
 | Inter Miami | 2 | 0-0-2 | 2–5 | −1,50 | −24 pe | 2025-12-06 1-3 (b) |
 | Nashville SC | 2 | 0-1-1 | 1–4 | −0,54 | +24 pe | 2022-08-28 0-3 (h) |
 | New York Red Bulls | 2 | 0-2-0 | 3–3 | +0,22 | +75 pe | 2024-04-28 1-1 (b) |
@@ -73,7 +124,20 @@ Form (äldst → senast): VFVVFVFV · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): San Jose Earthquakes 1,06 p/match (−0,28), Houston Dynamo 1,07 p/match (−0,24), Seattle Sounders 1,11 p/match (+0,07).
+
+## Höghöjd
+
+Arenans höjd: ca 200 m. Höghöjdsmatch = arena ≥ 1500 m och bortalaget från minst 1000 m lägre.
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Borta på höghöjd | 16 | 4-3-9 | 0,94 | −0,09 |
+| Borta övriga | 240 | 65-65-110 | 1,08 | +0,13 |
+
+Ligan: se [MLS](../../ligor/MLS.md#höghöjd).
+
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Jesper Sørensen. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -84,29 +148,29 @@ Tränare: Jesper Sørensen. Betyg, mål och assist gäller innevarande säsong e
 | | **Målvakter** | | | | | | | | | |
 | 1 | Yohei Takaoka | GK | 30 | Japan | 1,6 M€ | 6,97 | 0 | 1 | 0/1 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Mathías Laborda | CB,LB,RB | 27 | Uruguay | 1,8 M€ | 7,28 | 3 | 2 | 4/0 |  |
-| 3 | Sam Adekugbe | LB | 31 | Canada | 147 k€ | 6,48 | 0 | 0 | 0/0 |  |
-| 4 | Ranko Veselinović | CB | 27 | Serbia | 1,3 M€ | 6,23 | 0 | 0 | 0/0 |  |
-| 6 | Ralph Priso | CB | 24 | Canada | 544 k€ | 7,07 | 1 | 0 | 0/0 |  |
+| 2 | Mathías Laborda | CB,LB,RB | 27 | Uruguay | 1,9 M€ | 7,28 | 3 | 2 | 4/0 |  |
+| 3 | Sam Adekugbe | LB | 31 | Canada | 118 k€ | 6,48 | 0 | 0 | 0/0 |  |
+| 4 | Ranko Veselinović | CB | 27 | Serbia | 1,4 M€ | 6,23 | 0 | 0 | 0/0 |  |
+| 6 | Ralph Priso | CB | 24 | Canada | 537 k€ | 7,07 | 1 | 0 | 0/0 |  |
 | 12 | Belal Halbouni | CB | 26 | Syria | 140 k€ | – | 0 | 0 | 0/0 | skadad, åter Unknown |
-| 18 | Édier Ocampo | RB | 22 | Colombia | 1,9 M€ | 7,40 | 2 | 1 | 7/0 |  |
+| 18 | Édier Ocampo | RB | 23 | Colombia | 4,2 M€ | 7,40 | 2 | 1 | 7/0 |  |
 | 28 | Tate Johnson | LB | 21 | USA | 2,2 M€ | 7,09 | 0 | 0 | 3/0 |  |
-| 29 | Mihail Gherasimencov | LB,CB | 21 | Moldova | 809 k€ | 6,39 | 0 | 0 | 0/0 |  |
-| 33 | Tristan Blackmon | CB | 30 | USA | 1,9 M€ | 7,11 | 1 | 0 | 4/0 |  |
+| 29 | Mihail Gherasimencov | LB,CB | 21 | Moldova | 701 k€ | 6,39 | 0 | 0 | 0/0 |  |
+| 33 | Tristan Blackmon | CB | 30 | USA | 2,0 M€ | 7,11 | 1 | 0 | 4/0 |  |
 | 70 | Rui Modesto | RB,CB,RWB | 26 | Angola | 1,3 M€ | 6,26 | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 8 | Oliver Larraz | CDM | 25 | USA | 665 k€ | 6,89 | 0 | 4 | 4/0 |  |
+| 8 | Oliver Larraz | CDM | 25 | USA | 596 k€ | 6,89 | 0 | 4 | 4/0 |  |
 | 13 | Thomas Müller | CAM | 37 | Germany | 1,7 M€ | 7,70 | 9 | 6 | 1/0 |  |
-| 20 | Andrés Cubas | CDM,CM | 30 | Paraguay | 2,3 M€ | 7,55 | 0 | 2 | 7/0 |  |
-| 23 | Aleksa Cvetković | CAM,CM | 21 | Serbia | 249 k€ | 6,83 | 0 | 1 | 0/0 |  |
-| 25 | Ryan Gauld | CAM,RW | 30 | Scotland | 2,1 M€ | 7,44 | 3 | 1 | 2/0 |  |
+| 20 | Andrés Cubas | CDM,CM | 30 | Paraguay | 2,2 M€ | 7,55 | 0 | 2 | 7/0 |  |
+| 23 | Aleksa Cvetković | CAM,CM | 21 | Serbia | 299 k€ | 6,83 | 0 | 1 | 0/0 |  |
+| 25 | Ryan Gauld | CAM,RW | 30 | Scotland | 2,0 M€ | 7,44 | 3 | 1 | 2/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 7 | Cheikh Sabaly | RW,LW,CAM | 27 | Senegal | 2,0 M€ | 6,72 | 2 | 1 | 1/0 |  |
+| 7 | Cheikh Sabaly | RW,LW,CAM | 27 | Senegal | 2,1 M€ | 6,72 | 2 | 1 | 1/0 |  |
 | 11 | Emmanuel Sabbi | RW,LW | 28 | USA | 1,5 M€ | 6,82 | 4 | 3 | 4/0 |  |
 | 14 | Bruno Caicedo | LW,RW | 21 | Ecuador | 1,5 M€ | 7,06 | 5 | 3 | 3/0 |  |
 | 17 | Kenji Cabrera | LW,RW | 23 | Peru | – | 6,77 | 0 | 2 | 2/0 | skadad, åter Early October 2026 |
-| 19 | Rayan Elloumi | ST | 19 | Tunisia | 1,8 M€ | 6,31 | 2 | 0 | 0/0 |  |
-| 22 | Kwasi Poku | ST | 23 | Canada | 386 k€ | – | 0 | 0 | 0/0 |  |
-| 24 | Brian White | ST | 30 | USA | 2,0 M€ | 7,38 | 17 | 2 | 2/0 |  |
-| 59 | Jeevan Badwal | RW,CDM,CAM | 20 | Canada | 1,3 M€ | 6,96 | 1 | 2 | 3/0 |  |
-| 77 | Yadaly Diaby | LW,ST,LM | 26 | Guinea | 738 k€ | 7,39 | 1 | 1 | 2/0 |  |
+| 19 | Rayan Elloumi | ST | 19 | Tunisia | 1,5 M€ | 6,31 | 2 | 0 | 0/0 |  |
+| 22 | Kwasi Poku | ST | 23 | Canada | 351 k€ | – | 0 | 0 | 0/0 |  |
+| 24 | Brian White | ST | 30 | USA | 3,9 M€ | 7,38 | 17 | 2 | 2/0 |  |
+| 59 | Jeevan Badwal | RW,CDM,CAM | 20 | Canada | 1,2 M€ | 6,96 | 1 | 2 | 3/0 |  |
+| 77 | Yadaly Diaby | LW,ST,LM | 26 | Guinea | 813 k€ | 7,39 | 1 | 1 | 2/0 |  |

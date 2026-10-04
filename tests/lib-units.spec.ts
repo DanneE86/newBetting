@@ -1899,92 +1899,73 @@ test.describe('stryk-engine: kupong A, B och C', () => {
     }
   });
 
-  // Kupong D (användaren 2026-10-03): 4 spikar, 4 halvor, 5 helor, röd (≤25 %) 1–3, grön (26–35 %, var gul före tre färger) 1–3, tecken minst 4-3-3,
-  // lägsta utdelning 30 000–50 000 kr, 350–400 kr
-  test('kupong D: form 4/4/5, röd 1–3, grön 1–3, 4-3-3, gräns 30 000–50 000 kr och Gambling Cabin-länken', async () => {
+  // Kupong D (användaren 2026-10-04): fritt system för vinster över 20 000 kr. Inga färg-, tecken- eller formregler,
+  // valfri grundrad, bara lägsta utdelning (GC-formeln) minst 20 000 kr och 350–400 kr.
+  test('kupong D: fritt system, gräns minst 20 000 kr, 350–400 rader och Gambling Cabin-länken utan regler', async () => {
     test.skip(products.length === 0, 'data/stryktipset.json saknas');
     test.setTimeout(300_000);
-    const { buildCouponD, colorD, D_RULES } = await engine();
-    expect(D_RULES).toMatchObject({ shape: { spik: 4, halv: 4, hel: 5 }, red: [1, 3], green: [1, 3], signMin: [4, 3, 3], payout: [30000, 50000] });
-    expect([0.25, 0.254, 0.255, 0.26, 0.35, 0.354, 0.355, 0.6].map(colorD)).toEqual(['red', 'red', 'green', 'green', 'green', 'green', 'blue', 'blue']);
+    const { buildCouponD, D_RULES } = await engine();
+    expect(D_RULES).toMatchObject({ payoutMin: 20000, budget: { min: 350, max: 400 } });
     for (const p of products) {
       const ev = p.events.map((e: any) => (e.spik?.used && e.spik.sysP ? { ...e, final: e.spik.sysP } : e));
       const r = p.reduced?.rules || {};
-      const T = r.turnover, base = { rowPrice: 1, turnover: T, realTurnover: r.realTurnover || T, jackpot: r.jackpot || 0 };
-      const D = buildCouponD(p, ev, ev.map(() => null), base);
+      // payoutMin 15 000 = A:s gräns i motorns gemensamma inställningar, D ska ändå ha minst 20 000
+      const T = r.turnover, base = { rowPrice: 1, turnover: T, realTurnover: r.realTurnover || T, jackpot: r.jackpot || 0, payoutMin: 15000 };
+      const D = buildCouponD(p, ev, ev.map(() => null), base, { evals: 20000 });
       const at = `${p.product} ${p.drawNumber}`;
       expect(D, at).toBeTruthy();
-      expect(D.picks.map((x: any) => x.signs.length).sort().join(''), `${at}: 4 spikar, 4 halvor, 5 helor`).toBe('1111222233333');
-      expect(D.rules.payoutMin).toBeGreaterThanOrEqual(30000);
-      expect(D.rules.payoutMin).toBeLessThanOrEqual(50000);
+      expect(D.rules).toMatchObject({ free: true, colorRules: null, signMin: null });
+      expect(D.rules.payoutMin, `${at}: gränsen`).toBeGreaterThanOrEqual(20000);
       if (D.rules.budget === 'ok') {
         expect(D.cost).toBeGreaterThanOrEqual(350);
         expect(D.cost).toBeLessThanOrEqual(400);
+        expect(D.relaxed).toEqual([]);
       } else expect(D.relaxed.length).toBe(1);
-      for (const row of D.rowList) {
-        let red = 0, yel = 0, f = 1;
-        const cnt = [0, 0, 0];
-        [...row].forEach((s: string, i: number) => {
-          const k = '1X2'.indexOf(s);
-          expect(D.picks[i].signs, `${at}: raden följer grundraden`).toContain(s);
-          cnt[k]++;
-          f *= ev[i].folk[k];
-          if (D.picks[i].signs.length > 1) { red += +(colorD(ev[i].folk[k]) === 'red'); yel += +(colorD(ev[i].folk[k]) === 'green'); }
-        });
-        expect(red, `${at} ${row}: röd`).toBeGreaterThanOrEqual(1);
-        expect(red).toBeLessThanOrEqual(3);
-        expect(yel, `${at} ${row}: grön`).toBeGreaterThanOrEqual(1);
-        expect(yel).toBeLessThanOrEqual(3);
-        expect(cnt[0] >= 4 && cnt[1] >= 3 && cnt[2] >= 3, `${at} ${row}: 4-3-3`).toBe(true);
-        // Gambling Cabins formel: raden ger minst gränsen
-        expect((0.65 * 0.4 * T + base.jackpot) / (1 + T * f)).toBeGreaterThanOrEqual(D.rules.payoutMin);
-      }
+      expect(D.rows).toBe(D.rowList.length);
+      expect(new Set(D.rowList).size).toBe(D.rows);
+      // Alla rader i grundraden som klarar gränsen är med (GC reducerar bara på utdelning), inga andra
+      let inGrund = 0;
+      const walk = (i: number, f: number) => {
+        if (i === ev.length) { if ((0.65 * 0.4 * T + base.jackpot) / (1 + T * f) >= D.rules.payoutMin) inGrund++; return; }
+        for (const s of D.picks[i].signs) walk(i + 1, f * ev[i].folk['1X2'.indexOf(s)]);
+      };
+      walk(0, 1);
+      expect(inGrund, `${at}: raderna = grundraden över gränsen`).toBe(D.rows);
+      for (const row of D.rowList) [...row].forEach((s: string, i: number) => expect(D.picks[i].signs).toContain(s));
+      // Chansen i kupongen = summan av radernas chans
+      expect(D.hitAll).toBeCloseTo(D.rowP.reduce((a: number, b: number) => a + b, 0), 10);
       const url = new URL(D.gamblingCabinUrl);
-      expect(url.searchParams.get('antT')).toBe('1,4,13,3,13,3,13');
-      expect(url.searchParams.get('red')).toBe('1,1,3');
-      // Bara tre färger (2026-10-03): gult av, grönt 1–3
-      expect(url.searchParams.get('yellow')).toBe('0,0,13');
-      expect(url.searchParams.get('green')).toBe('1,1,3');
+      expect(url.searchParams.get('antT')).toBe('0,0,13,0,13,0,13');
+      for (const c of ['yellow', 'red', 'green', 'pink']) expect(url.searchParams.get(c), c).toBe('0,0,13');
       expect(url.searchParams.get('utd')).toBe(`1,${D.rules.payoutMin},100000000`);
-      // Spikar blå (1), garderingar efter folket: röd 3, grön 4 (26–35 %), över 35 % blå 1
+      // Alla valda tecken blå (1), övriga 0
       const v = ['v1', 'vX', 'v2'].map((k) => url.searchParams.get(k)!.split(',').map(Number));
-      D.picks.forEach((x: any, i: number) => [0, 1, 2].forEach((k) => {
-        const want = !x.signs.includes('1X2'[k]) ? 0 : x.signs.length === 1 ? 1 : { blue: 1, green: 4, red: 3 }[colorD(ev[i].folk[k]) as string];
-        expect(v[k][i], `${at} match ${i + 1} ${'1X2'[k]}`).toBe(want);
-      }));
+      D.picks.forEach((x: any, i: number) => [0, 1, 2].forEach((k) => expect(v[k][i], `${at} match ${i + 1} ${'1X2'[k]}`).toBe(x.signs.includes('1X2'[k]) ? 1 : 0)));
     }
   });
 
-  test('kupong D: bara krav på D eller Alla låses, krav som inte passar 4/4/5 ger ingen kupong', async () => {
+  test('kupong D: sökningen hittar bättre grundrad än startraden, samma indata ger samma kupong, låsta krav hålls', async () => {
     test.skip(products.length === 0, 'data/stryktipset.json saknas');
     test.setTimeout(300_000);
-    const { buildCouponD } = await engine();
+    const { buildCouponD, searchD, makeEvalD } = await engine();
     const p = products[0];
     const ev = p.events.map((e: any) => (e.spik?.used && e.spik.sysP ? { ...e, final: e.spik.sysP } : e));
     const base = { rowPrice: 1, turnover: p.reduced.rules.turnover, realTurnover: p.reduced.rules.turnover, jackpot: 0 };
+    const none = ev.map(() => null);
+    const few = searchD(ev, none, base, { evals: 1 });
+    const many = searchD(ev, none, base, { evals: 20000 });
+    expect(many.score).toBeGreaterThanOrEqual(few.score);
+    expect(searchD(ev, none, base, { evals: 20000 }).sets).toEqual(many.sets);
+    // makeEvalD räknar samma chans som en fullständig uppräkning
+    const e = makeEvalD(ev, base)(many.sets);
+    expect(e.hit).toBeCloseTo(many.hit, 12);
     const forced = ev.map(() => null);
     forced[4] = [0];      // spik 1
     forced[5] = [0, 1, 2]; // helgardering
-    const D = buildCouponD(p, ev, forced, base);
+    const D = buildCouponD(p, ev, forced, base, { evals: 5000 });
     expect(D.picks[4]).toMatchObject({ signs: '1', locked: true });
     expect(D.picks[5]).toMatchObject({ signs: '1X2', locked: true });
-    expect(D.picks.map((x: any) => x.signs.length).sort().join('')).toBe('1111222233333');
-    // 5 låsta spikar går inte ihop med exakt 4
-    expect(buildCouponD(p, ev, ev.map((_: any, i: number) => (i < 5 ? [0] : null)), base)).toBeNull();
-  });
-
-  test('kupong D: floorD lägger gränsen i ett glapp inom 30 000–50 000 kr så att det blir 350–400 rader', async () => {
-    const { floorD } = await engine();
-    const rows = (n: number, top: number, step: number) => Array.from({ length: n }, (_, i) => ({ payout: top - i * step }));
-    // 1 000 rader från 80 000 och nedåt med 50 kr: rad 400 ger 60 050 – över 50 000, så 50 000 och för många rader
-    expect(floorD(rows(1000, 80000, 50))).toMatchObject({ floor: 50000, budget: 'over' });
-    // 600 rader 60 000 → 30 050 (50 kr steg): 400 rader = gräns strax över rad 401 (40 000) -> 40 100
-    const r = floorD(rows(600, 60000, 50));
-    expect(r).toMatchObject({ n: 400, budget: 'ok' });
-    expect(r.floor).toBeGreaterThan(40000);
-    expect(r.floor).toBeLessThanOrEqual(40050);
-    // Bara 200 rader över 30 000: gränsen 30 000 och för få rader
-    expect(floorD(rows(300, 40000, 50))).toMatchObject({ floor: 30000, n: 201, budget: 'under' });
+    expect(D.picks.filter((x: any) => x.locked).length).toBe(2);
   });
 
   test('skrallQueue: närmast 35–47 % med värde mot folket, aldrig favoriten eller A:s spik', async () => {
@@ -2001,6 +1982,66 @@ test.describe('stryk-engine: kupong A, B och C', () => {
     expect(q.indexOf('1:1')).toBeLessThan(q.indexOf('2:2'));
     // A:s spik på samma tecken tas aldrig
     expect(skrallQueue(events, [[0], [0], [0]]).map((c: any) => `${c.i}:${'1X2'[c.k]}`)).not.toContain('1:1');
+  });
+
+  test('skrallTip: skrällspik att läsa om – aldrig favoriten, minst 30 % och understreckad, 35–47 % först, med varför', async () => {
+    const { skrallTip, SKRALL_TIP } = await engine();
+    expect(SKRALL_TIP.min).toBe(0.3);
+    const e = (eventNumber: number, final: number[], folk: number[], extra: any = {}) => ({ eventNumber, home: `H${eventNumber}`, away: `B${eventNumber}`, final, folk, ...extra });
+    const events = [
+      e(1, [0.30, 0.25, 0.45], [0.20, 0.20, 0.60]), // 1 30 %: +10 men utanför 35–47
+      e(2, [0.40, 0.25, 0.35], [0.45, 0.25, 0.30]), // 2 35 %: +5 och i fönstret -> vinner
+      e(3, [0.29, 0.21, 0.50], [0.10, 0.20, 0.70]), // 1 29 %: under 30 %
+      e(4, [0.60, 0.25, 0.15], [0.40, 0.30, 0.30]), // favoriten understreckad: aldrig
+    ];
+    const t = skrallTip(events);
+    expect(`${t.eventNumber}:${t.sign}`).toBe('2:2');
+    expect(t.window).toBe(true);
+    expect(t.reasons[0]).toContain('35 %');
+    expect(t.reasons.at(-1)).toContain('chansning');
+    expect(t.hit).toBeNull();
+    // Utan fönsterkandidat: störst värde mot folket
+    expect(skrallTip([events[0], events[2], events[3]])).toMatchObject({ eventNumber: 1, sign: '1' });
+    // Inget understreckat tecken på minst 30 %: ingen skräll
+    expect(skrallTip([events[2], events[3]])).toBeNull();
+    // Facit och skäl från risklag, oddsrörelse och experter
+    const r = skrallTip([e(5, [0.50, 0.30, 0.20], [0.60, 0.22, 0.18], {
+      result: { outcome: 'X', score: '1-1' }, odds: [2.0, 3.2, 5.0], startOdds: [1.9, 3.5, 5.0],
+      experts: [{ signs: '1X' }, { signs: '1' }], streckFlop: { flagged: true, home: { season: { noWin: 3, games: 4 } } },
+    })]);
+    expect(r).toMatchObject({ sign: 'X', hit: true, score: '1-1' });
+    expect(r.reasons.join(' ')).toContain('ned från 3,50');
+    expect(r.reasons.join(' ')).toContain('H5 är ett risklag');
+    expect(r.reasons.join(' ')).toContain('1 av 2');
+  });
+
+  test('skrallTips: alltid två att välja på – olika matcher, reserv (weak) när bara en klarar kravet', async () => {
+    const { skrallTips, SKRALL_TIP } = await engine();
+    expect(SKRALL_TIP.count).toBe(2);
+    expect(SKRALL_TIP.weakMin).toBe(0.25);
+    const e = (eventNumber: number, final: number[], folk: number[]) => ({ eventNumber, home: `H${eventNumber}`, away: `B${eventNumber}`, final, folk });
+    const events = [
+      e(1, [0.30, 0.25, 0.45], [0.20, 0.20, 0.60]), // 1 30 %: +10
+      e(2, [0.40, 0.25, 0.35], [0.45, 0.25, 0.30]), // 2 35 %: i fönstret -> först
+      e(3, [0.29, 0.21, 0.50], [0.10, 0.20, 0.70]), // 1 29 %: bara reserv
+      e(4, [0.60, 0.25, 0.15], [0.40, 0.30, 0.30]), // favoriten: aldrig
+    ];
+    const two = skrallTips(events);
+    expect(two.map((t: any) => `${t.eventNumber}:${t.sign}`)).toEqual(['2:2', '1:1']);
+    expect(two.every((t: any) => !t.weak)).toBe(true);
+    // Högst en per match, även när två tecken i samma match klarar kravet
+    const same = skrallTips([e(7, [0.36, 0.30, 0.34], [0.60, 0.20, 0.20]), e(8, [0.31, 0.19, 0.50], [0.20, 0.20, 0.60])]);
+    expect(new Set(same.map((t: any) => t.eventNumber)).size).toBe(same.length);
+    expect(same.map((t: any) => t.eventNumber)).toEqual([7, 8]);
+    // Bara en klarar kravet: reserven fyller på och märks weak
+    const fill = skrallTips([events[1], events[2], events[3]]);
+    expect(fill.map((t: any) => `${t.eventNumber}:${t.sign}:${t.weak}`)).toEqual(['2:2:false', '3:1:true']);
+    // Ingen klarar kravet: skrallTip säger null men skrallTips ger reserven
+    const { skrallTip } = await engine();
+    expect(skrallTip([events[2], events[3]])).toBeNull();
+    expect(skrallTips([events[2], events[3]])).toHaveLength(1);
+    // Inget understreckat tecken på minst 25 %: tomt
+    expect(skrallTips([events[3]])).toEqual([]);
   });
 
   test('egna skrällspikar: gränsen i länken ligger ändå på A:s fönster (Stryktipset 15 000–25 000 kr)', async () => {
@@ -2342,5 +2383,299 @@ test.describe('cards-model: antal kort över/under 3.5/4.5/5.5', () => {
     expect(g.find((x: any) => x.market === 'BOTH_CARDS')).toMatchObject({ pick: 'JA', hit: true });
     const noAway = oddsetResult({ ...m, discipline: { homeYellow: 3, awayYellow: 0, homeRed: 0, awayRed: 0 } });
     expect(gradeRecord({ product: 'oddset', first: r.tip, result: noAway }).find((x: any) => x.market === 'BOTH_CARDS').hit).toBe(false);
+  });
+});
+
+// ---------- learnings-signals.mjs: landslagsuppehall och svara motstandare ----------
+
+test.describe('learnings-signals: landslagsuppehall', () => {
+  test('breakEnds: 12–50 dagars ligauppehall i sep–dec/mar–apr, inte sommar eller lang vinterpaus', async () => {
+    const { breakEnds } = await lib('learnings-signals.mjs');
+    const dates = ['2025-08-16', '2025-08-23', '2025-08-30', '2025-09-13', '2025-09-20', '2025-09-27', '2025-10-04', '2025-10-18', '2025-10-25', '2025-11-01', '2025-11-08', '2025-11-22', '2026-03-14', '2026-03-21', '2026-04-04', '2026-05-24', '2026-08-15'];
+    // 30/8 -> 13/9 = 14 d (sep), 4/10 -> 18/10 = 14 d, 8/11 -> 22/11 = 14 d, 21/3 -> 4/4 = 14 d (apr); 22/11 -> 14/3 och sommaren for langa
+    expect(breakEnds(dates)).toEqual(['2025-09-13', '2025-10-18', '2025-11-22', '2026-04-04']);
+    // 11 dagar raknas inte, och ett 14-dagarsuppehall i februari (cuphelg) inte heller
+    expect(breakEnds(['2025-10-01', '2025-10-12', '2026-02-01', '2026-02-15'])).toEqual([]);
+    // VM-uppehallet 2022: 13/11 -> 26/12 = 43 dagar
+    expect(breakEnds(['2022-11-13', '2022-12-26'])).toEqual(['2022-12-26']);
+  });
+
+  test('afterBreakKeys: varje lags forsta match inom 4 dagar efter omstarten, inte nasta', async () => {
+    const { afterBreakKeys } = await lib('learnings-signals.mjs');
+    const list = [
+      { date: '2025-08-30', home: 'Arsenal', away: 'Leeds' },
+      { date: '2025-08-30', home: 'Chelsea', away: 'Fulham' },
+      { date: '2025-09-13', home: 'Arsenal', away: 'Fulham' },
+      { date: '2025-09-15', home: 'Leeds', away: 'Chelsea' }, // mandagsmatch efter uppehallet
+      { date: '2025-09-20', home: 'Chelsea', away: 'Arsenal' }, // andra matchen efter: raknas inte
+    ];
+    const k = afterBreakKeys(list);
+    expect([...k].sort()).toEqual(['Arsenal|2025-09-13', 'Chelsea|2025-09-15', 'Fulham|2025-09-13', 'Leeds|2025-09-15']);
+    expect(k.has('Arsenal|2025-09-20')).toBe(false);
+  });
+
+  test('hardOpponents: minst 6 moten och lag poang eller dalig mot marknaden, samst forst', async () => {
+    const { hardOpponents } = await lib('learnings-signals.mjs');
+    const h2h = [
+      { opp: 'Man City', n: 15, w: 2, d: 3, l: 10, res: -0.3 },
+      { opp: 'Liverpool', n: 16, w: 3, d: 6, l: 7, res: -0.21 },
+      { opp: 'Brighton', n: 17, w: 7, d: 5, l: 5, res: -0.45 },
+      { opp: 'Chelsea', n: 16, w: 10, d: 4, l: 2, res: 0.69 },
+      { opp: 'Ipswich', n: 2, w: 0, d: 0, l: 2, res: -1 }, // for fa moten
+    ];
+    const hard = hardOpponents(h2h);
+    expect(hard.map((h: any) => h.opp)).toEqual(['Man City', 'Liverpool', 'Brighton']);
+    expect(hard[0].ppg).toBeCloseTo(0.6, 5);
+    expect(hardOpponents([])).toEqual([]);
+    expect(hardOpponents(undefined)).toEqual([]);
+  });
+});
+// ---------- team-style.mjs: fasta situationer och stilsammanfattning ----------
+
+test.describe('team-style: fasta situationer', () => {
+  test('statFields: sasongstotal blir per match, xG ur SubStatValue, xG 0 = saknas', async () => {
+    const { statFields } = await lib('team-style.mjs');
+    expect(statFields('poss', { StatValue: 59.3, MatchesPlayed: 5 })).toEqual({ poss: 59.3 });
+    expect(statFields('spFor', { StatValue: 23, SubStatValue: 20.6, MatchesPlayed: 38 })).toEqual({ spFor: 0.605, spXgFor: 0.542 });
+    expect(statFields('spAgainst', { StatValue: 7, SubStatValue: 0, MatchesPlayed: 38 })).toEqual({ spAgainst: 0.184, spXgAgainst: null });
+    expect(statFields('corners', { StatValue: 216, SubStatValue: 0, MatchesPlayed: 38 })).toEqual({ corners: 5.684 });
+    expect(statFields('spFor', { StatValue: 3, SubStatValue: 2, MatchesPlayed: 0 })).toEqual({ spFor: null, spXgFor: null });
+  });
+
+  test('spValue: snitt av mal och xG, bara mal om xG saknas', async () => {
+    const { spValue } = await lib('team-style.mjs');
+    expect(spValue(0.6, 0.5)).toBeCloseTo(0.55, 9);
+    expect(spValue(0.4, null)).toBe(0.4);
+    expect(spValue(null, 0.5)).toBeNull();
+  });
+
+  test('styleSummary: basta/samsta typer aven svaga, minsta antal matcher, stabilitet', async () => {
+    const { styleSummary, ownStyleLabels } = await lib('team-style.mjs');
+    const tj = {
+      own: { poss: { c: 0 }, direct: { c: 1 }, press: { c: 0 }, spAtt: { c: 2 }, spDef: { c: 0 } },
+      vs: {
+        'poss|Bollinnehav': { n: 87, rel: 0.23, zRel: 2.1, both: true, strong: true },
+        'direct|Direktspel': { n: 106, rel: -0.12, zRel: -1.0, both: true, strong: false },
+        'poss|Backar hem': { n: 98, rel: -0.13, zRel: -1.0, both: false, strong: false },
+        'spDef|Svag mot fasta': { n: 60, rel: 0.05, zRel: 0.4, both: false, strong: false },
+        'press|Högpress': { n: 10, rel: -0.9, zRel: -3, both: true, strong: true }, // for fa matcher
+      },
+    };
+    const s = styleSummary(tj);
+    expect(s.best.map((r: any) => r.type)).toEqual(['Bollinnehav', 'Svag mot fasta']);
+    expect(s.best[0].stab).toBe('stabil');
+    expect(s.worst.map((r: any) => [r.type, r.stab])).toEqual([['Direktspel', 'samma håll'], ['Backar hem', 'svag']]);
+    expect(styleSummary(tj, { minN: 1 }).rows).toHaveLength(5);
+    expect(styleSummary(null).rows).toEqual([]);
+    expect(ownStyleLabels(tj.own)).toEqual(['Backar hem', 'Blandat', 'Lågpress', 'Farlig på fasta', 'Stark mot fasta']);
+    expect(ownStyleLabels(null)).toEqual([]);
+  });
+});
+// ---------- altitude.mjs: hoghojd ----------
+
+test.describe('altitude: hoghojd', () => {
+  test('isAltitudeGame: arena >= 1500 m och bortalaget minst 1000 m lagre, okanda lag = lag hojd', async () => {
+    const { isAltitudeGame, altitudeOf } = await lib('altitude.mjs');
+    expect(isAltitudeGame('MX', 'Toluca', 'Monterrey')).toBe(true);
+    expect(isAltitudeGame('MX', 'Toluca', 'Club America')).toBe(false); // bada hoga
+    expect(isAltitudeGame('MX', 'Monterrey', 'Toluca')).toBe(false); // lag arena
+    expect(isAltitudeGame('MLS', 'Colorado Rapids', 'Seattle Sounders')).toBe(true);
+    expect(isAltitudeGame('MLS', 'Real Salt Lake', 'Seattle Sounders')).toBe(false); // 1300 m < 1500
+    expect(isAltitudeGame('PL', 'Arsenal', 'Leeds')).toBe(false);
+    expect(altitudeOf('MLS', 'Seattle Sounders')).toBe(200);
+  });
+
+  test('altitudeStats och hardestAtAltitude: poang och mot marknaden per lag', async () => {
+    const { altitudeStats, hardestAtAltitude } = await lib('altitude.mjs');
+    const p = { pH: 0.5, pD: 0.25, pA: 0.25 }; // hemma vantas 1,75 p, borta 1,0 p
+    const ms = [
+      { home: 'Toluca', away: 'Monterrey', hg: 2, ag: 0, ...p },
+      { home: 'Toluca', away: 'Monterrey', hg: 1, ag: 1, ...p },
+      { home: 'Tigres UANL', away: 'Monterrey', hg: 0, ag: 1, ...p },
+      { home: 'Toluca', away: 'Club America', hg: 0, ag: 0, ...p },
+    ];
+    const s = altitudeStats('MX', ms);
+    expect(s.league.alt).toMatchObject({ n: 2, w: 1, d: 1, l: 0, ppg: 2 });
+    expect(s.league.alt.res).toBeCloseTo(0.25, 9);
+    expect(s.away.Monterrey.alt).toMatchObject({ n: 2, ppg: 0.5 });
+    expect(s.away.Monterrey.other).toMatchObject({ n: 1, ppg: 3 });
+    expect(s.home.Toluca.alt.n).toBe(2);
+    expect(s.home.Toluca.other.n).toBe(1);
+    expect(s.home['Tigres UANL']).toBeUndefined(); // lag arena
+    const hard = hardestAtAltitude(s, { minN: 2 });
+    expect(hard.map((h: any) => h.team)).toEqual(['Monterrey']);
+    expect(hard[0].diff).toBeCloseTo(-2.5, 9);
+    // utan odds: poang men inget mot marknaden
+    const noOdds = altitudeStats('COL', [{ home: 'Millonarios', away: 'Atlético Junior', hg: 1, ag: 0 }]);
+    expect(noOdds.league.alt).toMatchObject({ n: 1, ppg: 3, res: null });
+  });
+});
+// ---------- extra-signals.mjs + learned-adjust: hoghojd och fasta i motorerna ----------
+
+test.describe('extra-signals och hoghojdsjustering', () => {
+  test('prevSeason och seasonOf: host-var och kalenderar som i data/matcher', async () => {
+    const { prevSeason, seasonOf } = await lib('extra-signals.mjs');
+    expect(prevSeason('2026/27')).toBe('2025/26');
+    expect(prevSeason('2000/01')).toBe('1999/00');
+    expect(prevSeason('2026')).toBe('2025');
+    expect(seasonOf('PL', '2026-10-04')).toBe('2026/27');
+    expect(seasonOf('PL', '2027-03-01')).toBe('2026/27');
+    expect(seasonOf('MX', '2026-07-20')).toBe('2026/27');
+    expect(seasonOf('MLS', '2026-10-04')).toBe('2026');
+    expect(seasonOf('AR', '2026-02-10')).toBe('2025/26'); // AR ar markt host-var i vara filer
+  });
+
+  test('extraSignals: alt bara i hoghojdsligor, sp ur forra sasongens z', async () => {
+    const { extraSignals, spSignal } = await lib('extra-signals.mjs');
+    const z = { MX: { '2025/26|Toluca': { spAtt: 1, spDef: -0.5 }, '2025/26|Monterrey': { spAtt: 0.2, spDef: 0.8 } }, ENG: { '2025/26|Arsenal': { spAtt: 1.5, spDef: -1 } } };
+    // (1 + 0,8) - (0,2 + -0,5) = 2,1
+    expect(spSignal(z, 'MX', '2026/27', 'Toluca', 'Monterrey')).toBeCloseTo(2.1, 9);
+    expect(extraSignals('MX', '2026/27', 'Toluca', 'Monterrey', z)).toEqual({ alt: 1, sp: expect.closeTo(2.1, 9) });
+    expect(extraSignals('MX', '2026/27', 'Monterrey', 'Toluca', z).alt).toBe(0);
+    // PL: ingen hoghojd, Leeds saknas i z -> ingen sp
+    expect(extraSignals('PL', '2026/27', 'Arsenal', 'Leeds', z)).toEqual({});
+    expect(spSignal(null, 'PL', '2026/27', 'Arsenal', 'Leeds')).toBeNull();
+  });
+
+  test('adjustProbs: hoghojd flyttar mot hemmalaget aven utan bas-justering, bara nar alt = 1', async () => {
+    const { adjustProbs } = await lib('learned-adjust.mjs');
+    const doc = { altitude: { MX: { b: 0.26 } } };
+    const p = [0.5, 0.27, 0.23];
+    const r = adjustProbs(p, 'MX', { alt: 1 }, 'close', doc);
+    expect(r.applied).toEqual(['höghöjd']);
+    expect(r.p[0]).toBeGreaterThan(0.52);
+    expect(r.p[2]).toBeLessThan(0.23);
+    expect(r.p.reduce((a: number, b: number) => a + b, 0)).toBeCloseTo(1, 9);
+    expect(adjustProbs(p, 'MX', { alt: 0 }, 'close', doc)).toEqual({ p, applied: [] });
+    expect(adjustProbs(p, 'PL', { alt: 1 }, 'close', doc).applied).toEqual([]);
+    // ligakalibrering + hoghojd tillsammans
+    const both = adjustProbs(p, 'MX', { alt: 1 }, 'open', { open: { leagues: { MX: { g: 0, h: 0.1, d: 0 } } }, altitude: { MX: { b: 0.26 } } });
+    expect(both.applied).toEqual(['liga-kalibrering', 'höghöjd']);
+  });
+
+  test('fitAltitude: hittar positiv effekt nar hemmalaget pa hoghojd vinner oftare an oddsen', async () => {
+    const { fitAltitude } = await lib('altitude.mjs');
+    const rows: any[] = [];
+    // 60 % hemmavinster i hoghojdsmatcher dar oddsen sager 50 %, fore och efter split
+    for (let i = 0; i < 400; i++) {
+      const date = i < 200 ? '2020-01-01' : '2024-01-01';
+      rows.push({ date, p: [0.5, 0.27, 0.23], y: i % 10 < 6 ? 0 : i % 10 < 8 ? 1 : 2, alt: true });
+      rows.push({ date, p: [0.5, 0.27, 0.23], y: i % 2 === 0 ? 0 : 1, alt: false });
+    }
+    const f = fitAltitude(rows, '2023-07-01');
+    expect(f.bTrain).toBeGreaterThan(0.2);
+    expect(f.test.dLL).toBeLessThan(0);
+    expect(f.test.nAlt).toBe(200);
+  });
+});
+// ---------- odds-history.mjs: dubbletter med olika versaler ----------
+
+test.describe('odds-history: versaldubbletter', () => {
+  test('mergeCaseDuplicates: en post per match, nyaste nyckeln, tidigaste first, summerade snapshots', async () => {
+    const { mergeCaseDuplicates } = await lib('odds-history.mjs');
+    const m: any = {
+      '2026-10-15|EL|Jagiellonia Bialystok|ARARAT-ARMENIA': { match: 'Jagiellonia Bialystok vs ARARAT-ARMENIA', first: { at: '2026-09-29T04:00Z', odds: { home: 1.42 } }, last: { at: '2026-09-29T04:00Z' }, snapshots: 1 },
+      '2026-10-15|EL|Jagiellonia Bialystok|Ararat-Armenia': { match: 'Jagiellonia Bialystok vs Ararat-Armenia', first: { at: '2026-10-01T10:00Z', odds: { home: 1.4 } }, last: { at: '2026-10-04T09:00Z' }, snapshots: 3 },
+      '2026-10-10|PL|Arsenal|Leeds': { first: { at: '2026-09-28T10:00Z' }, last: { at: '2026-10-04T09:00Z' }, snapshots: 5 },
+    };
+    expect(mergeCaseDuplicates(m)).toBe(1);
+    expect(Object.keys(m).sort()).toEqual(['2026-10-10|PL|Arsenal|Leeds', '2026-10-15|EL|Jagiellonia Bialystok|Ararat-Armenia']);
+    const e = m['2026-10-15|EL|Jagiellonia Bialystok|Ararat-Armenia'];
+    expect(e.match).toBe('Jagiellonia Bialystok vs Ararat-Armenia');
+    expect(e.first.odds.home).toBe(1.42); // tidigaste oppningen behalls
+    expect(e.last.at).toBe('2026-10-04T09:00Z');
+    expect(e.snapshots).toBe(4);
+    expect(mergeCaseDuplicates(m)).toBe(0);
+  });
+});
+// ---------- team-aliases.mjs + odds-history: namnvarianter ----------
+
+test.describe('lagnamn: varianter och dubbletter', () => {
+  test('canonTeam: kanda varianter till namnet som anvands, per liga och skiftlageskansligt', async () => {
+    const { canonTeam } = await lib('team-aliases.mjs');
+    const al = { EK: { 'Gornik Z.': 'Gornik Zabrze' }, EL: { 'ARARAT-ARMENIA': 'Ararat-Armenia' } };
+    expect(canonTeam('EK', 'Gornik Z.', al)).toBe('Gornik Zabrze');
+    expect(canonTeam('EK', 'Gornik Zabrze', al)).toBe('Gornik Zabrze');
+    expect(canonTeam('PL', 'Gornik Z.', al)).toBe('Gornik Z.'); // annan liga
+    expect(canonTeam('EL', 'ARARAT-ARMENIA', al)).toBe('Ararat-Armenia');
+    expect(canonTeam('EL', 'Ararat-armenia', al)).toBe('Ararat-armenia');
+    expect(canonTeam('EL', null, al)).toBeNull();
+  });
+
+  test('config/team-aliases.json: olika klubbar slas aldrig ihop', async () => {
+    const { loadAliases } = await lib('team-aliases.mjs');
+    const al = loadAliases();
+    const pairs: [string, string, string][] = [['AS', 'Osters', 'Ostersunds'], ['AS', 'Oster', 'Ostersunds'], ['EK', 'Zaglebie', 'Zaglebie Sosnowiec'], ['EK', 'Wisla', 'Wisla Plock'], ['BR2', 'Athletic', 'Athletico-PR'], ['JP1', 'Yamaga', 'Montedio Yamagata'], ['LL2', 'Lorca', 'Mallorca'], ['SE3N', 'Karlstad', 'FBK Karlstad']];
+    for (const [lg, a, b] of pairs) {
+      const ca = al[lg]?.[a] ?? a, cb = al[lg]?.[b] ?? b;
+      expect(ca, `${lg}: ${a} och ${b} är olika klubbar`).not.toBe(cb);
+    }
+  });
+
+  test('sameTeamName: kort/langt namn och accenter, men inte olika lag', async () => {
+    const { sameTeamName } = await lib('team-aliases.mjs');
+    expect(sameTeamName('Inter', 'Internazionale')).toBe(true);
+    expect(sameTeamName('FC Koln', '1. FC Köln')).toBe(true);
+    expect(sameTeamName('Bodo/Glimt', 'Bodø/Glimt')).toBe(true);
+    expect(sameTeamName('Arsenal', 'Leeds')).toBe(false);
+    expect(sameTeamName('', 'Leeds')).toBe(false);
+  });
+
+  test('mergeNameVariants: samma dag och liga med namnvarianter blir en post, olika matcher ror den inte', async () => {
+    const { mergeNameVariants } = await lib('odds-history.mjs');
+    const { sameTeamName } = await lib('team-aliases.mjs');
+    const m: any = {
+      '2026-10-13|CL|Internazionale|Club Brugge': { first: { at: '2026-09-29T04:00Z', odds: { home: 1.5 } }, last: { at: '2026-09-29T04:00Z' }, snapshots: 1 },
+      '2026-10-13|CL|Inter|Club Brugge KV': { first: { at: '2026-10-01T10:00Z' }, last: { at: '2026-10-04T09:00Z' }, snapshots: 2 },
+      '2026-10-13|CL|Viking FK|Bayern Munich': { first: { at: '2026-10-01T10:00Z' }, last: { at: '2026-10-04T09:00Z' }, snapshots: 1 },
+      '2026-10-14|CL|Inter|Club Brugge KV': { first: { at: '2026-10-01T10:00Z' }, last: { at: '2026-10-04T09:00Z' }, snapshots: 1 }, // annan dag
+    };
+    expect(mergeNameVariants(m, sameTeamName)).toBe(1);
+    expect(Object.keys(m).sort()).toEqual(['2026-10-13|CL|Inter|Club Brugge KV', '2026-10-13|CL|Viking FK|Bayern Munich', '2026-10-14|CL|Inter|Club Brugge KV']);
+    expect(m['2026-10-13|CL|Inter|Club Brugge KV']).toMatchObject({ snapshots: 3, first: { odds: { home: 1.5 } } });
+  });
+});
+test('mergeNameVariants: tva egna lag i historiken (Wisla / Wisla Plock) slas inte ihop samma dag', async () => {
+  const { mergeNameVariants } = await lib('odds-history.mjs');
+  const { sameTeamName } = await lib('team-aliases.mjs');
+  const m: any = {
+    '2018-11-10|EK|Wisla|Zaglebie': { first: { at: '1' }, last: { at: '1' }, snapshots: 1 },
+    '2018-11-10|EK|Wisla Plock|Zaglebie Sosnowiec': { first: { at: '1' }, last: { at: '2' }, snapshots: 1 },
+  };
+  const hist = new Set(['Wisla', 'Wisla Plock', 'Zaglebie', 'Zaglebie Sosnowiec']);
+  expect(mergeNameVariants(m, sameTeamName, (_lg: string, a: string, b: string) => hist.has(a) && hist.has(b))).toBe(0);
+  expect(Object.keys(m)).toHaveLength(2);
+  // utan spärren hade de slagits ihop
+  expect(mergeNameVariants({ ...m }, sameTeamName)).toBe(1);
+});
+// ---------- next-round.mjs ----------
+
+test.describe('next-round: bara kommande omgång per liga', () => {
+  const now = new Date('2026-10-04T10:00:00');
+  const fx = (league: string, date: string, round: string) => ({ league, date, round, home: `${league}${date}a`, away: `${league}${date}b` });
+
+  test('säsongsmärkning i round (2026-allsvenskan) avgränsas på datum: 9–12 okt, inte 24 okt', async () => {
+    const { nextRoundsFromFixtures, filterNextRoundOnly } = await lib('next-round.mjs');
+    const fixtures = ['2026-10-09', '2026-10-10', '2026-10-12', '2026-10-17', '2026-10-24'].map((d) => fx('AS', d, '2026-allsvenskan'));
+    const next = nextRoundsFromFixtures(fixtures, now);
+    expect(next.get('AS')).toEqual({ type: 'date', value: '2026-10-09' });
+    const kept = filterNextRoundOnly(fixtures, next).map((t: any) => t.date);
+    expect(kept).toEqual(['2026-10-09', '2026-10-10', '2026-10-12']);
+  });
+
+  test('riktiga omgångar (Matchday 7/8) används som omgång', async () => {
+    const { nextRoundsFromFixtures, filterNextRoundOnly } = await lib('next-round.mjs');
+    const fixtures = [fx('PL', '2026-10-10', 'Matchday 7'), fx('PL', '2026-10-14', 'Matchday 7'), fx('PL', '2026-10-17', 'Matchday 8')];
+    const next = nextRoundsFromFixtures(fixtures, now);
+    expect(next.get('PL')).toEqual({ type: 'round', value: 'Matchday 7' });
+    expect(filterNextRoundOnly(fixtures, next).map((t: any) => t.date)).toEqual(['2026-10-10', '2026-10-14']);
+  });
+
+  test('spelade matcher räknas inte, liga utan schema faller tillbaka på tidigaste datum', async () => {
+    const { nextRoundsFromFixtures, filterNextRoundOnly } = await lib('next-round.mjs');
+    const fixtures = [fx('PL', '2026-10-01', 'Matchday 6'), fx('PL', '2026-10-10', 'Matchday 7')];
+    expect(nextRoundsFromFixtures(fixtures, now).get('PL')).toEqual({ type: 'date', value: '2026-10-10' });
+    const tips = [fx('SE2', '2026-10-10', 'x'), fx('SE2', '2026-10-13', 'x'), fx('SE2', '2026-10-17', 'x')];
+    expect(filterNextRoundOnly(tips, new Map()).map((t: any) => t.date)).toEqual(['2026-10-10', '2026-10-13']);
   });
 });

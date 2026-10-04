@@ -1,11 +1,14 @@
 # Bradford (League One) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Senaste 8: tur med +0,74 poäng per match mot xP. Marknaden prisar redan in det i ligan (ingen bekräftad effekt), så det är inget spel i sig.
 - Stark historik mot Stevenage (+0,89 p/match mot marknaden, 10 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Spelstil 2025/26: Balanserat, Direktspel, Högpress, Medel på fasta, Svag mot fasta. Bäst mot Farlig på fasta (+0,25, samma håll i båda halvorna men svagt), Mellanpress (+0,12, svagt), Svag mot fasta (+0,07, samma håll i båda halvorna men svagt). Svårast mot Medel mot fasta (−0,08, svagt), Högpress (−0,08, svagt), Svag på fasta (−0,08, samma håll i båda halvorna men svagt). Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2025/26: 0,35 mål för per match (xG 0,41), 0,39 emot (xG 0,25), 5,6 hörnor.
+- Svårt för: Leyton Orient (2-3-4, 1,00 p/match, mot marknaden −0,48).
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -34,13 +37,58 @@ Form (äldst → senast): VVVFFVVV · senaste match 2026-09-19
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
 
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/EL1.md#bradford) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2025/26: **Balanserat, Direktspel, Högpress, Medel på fasta, Svag mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026/27 | 8 | 0,38 | 0,30 | 0,25 | 0,19 | 6,3 |
+| 2025/26 | 46 | 0,35 | 0,41 | 0,39 | 0,25 | 5,6 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Backar hem | 74 | 1,34–1,15 | +0,08 | +0,06 (0,4) | −4 pe | +7 pe | ✔ samma håll |
+| Balanserat | 134 | 1,10–1,05 | −0,03 | −0,05 (−0,5) | +3 pe | −4 pe | svag |
+| Bollinnehav | 55 | 1,40–1,04 | +0,08 | +0,05 (0,3) | −2 pe | −6 pe | svag |
+| Kortpass | 58 | 1,38–1,17 | −0,01 | −0,04 (−0,2) | −3 pe | −3 pe | svag |
+| Blandat | 141 | 1,16–1,01 | +0,06 | +0,04 (0,3) | −1 pe | −2 pe | svag |
+| Direktspel | 64 | 1,25–1,13 | −0,02 | −0,05 (−0,3) | +4 pe | +2 pe | svag |
+| Lågpress | 71 | 1,21–1,08 | −0,03 | −0,06 (−0,4) | +2 pe | −7 pe | svag |
+| Mellanpress | 99 | 1,28–1,00 | +0,15 | +0,12 (0,9) | +0 pe | −1 pe | svag |
+| Högpress | 93 | 1,19–1,15 | −0,06 | −0,08 (−0,6) | −2 pe | +3 pe | svag |
+| Svag på fasta | 84 | 1,29–1,12 | −0,05 | −0,08 (−0,5) | +5 pe | −0 pe | ✔ samma håll |
+| Medel på fasta | 128 | 1,18–1,14 | −0,03 | −0,05 (−0,4) | −4 pe | −0 pe | svag |
+| Farlig på fasta | 51 | 1,27–0,84 | +0,28 | +0,25 (1,5) | +2 pe | −6 pe | ✔ samma håll |
+| Stark mot fasta | 89 | 1,16–1,06 | +0,07 | +0,04 (0,3) | −1 pe | −3 pe | ✔ samma håll |
+| Medel mot fasta | 110 | 1,33–1,16 | −0,05 | −0,08 (−0,6) | +0 pe | +4 pe | svag |
+| Svag mot fasta | 64 | 1,17–0,95 | +0,10 | +0,07 (0,5) | +0 pe | −8 pe | ✔ samma håll |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
+
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 1 | 0-1-0 | 1,00 | +0,64 |
+| Efter uppehåll sedan 2023 | 0 | – | – | – |
+| Övriga matcher | 411 | 161-106-144 | 1,43 | −0,04 |
+
+Hela ligan efter uppehåll: 0,00 mot marknaden (n 24). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2021-11-13 | Port Vale - Bradford | 1-1 O | +0,64 |
+
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
 | Motståndare | M | V-O-F | Mål | Mot marknaden | Kryss mot odds | Senast |
 |---|---|---|---|---|---|---|
 | Mansfield | 13 | 6-3-4 | 15–19 | +0,27 | −5 pe | 2026-09-05 1-0 (h) |
-| AFC Wimbledon | 10 | 3-5-2 | 8–8 | +0,01 | +21 pe | 2026-02-21 1-3 (b) |
 | Stevenage | 10 | 7-2-1 | 19–8 | +0,89 | −10 pe | 2026-04-11 0-1 (h) |
+| AFC Wimbledon | 9 | 2-5-2 | 7–8 | −0,22 | +27 pe | 2026-02-21 1-3 (b) |
 | Doncaster | 9 | 3-2-4 | 9–10 | −0,19 | −6 pe | 2026-01-31 1-0 (h) |
 | Leyton Orient | 9 | 2-3-4 | 6–11 | −0,48 | +5 pe | 2026-03-07 2-1 (h) |
 | Plymouth | 7 | 2-3-2 | 8–9 | −0,07 | +15 pe | 2026-08-29 0-2 (b) |
@@ -63,6 +111,8 @@ Form (äldst → senast): VVVFFVVV · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): Leyton Orient 1,00 p/match (−0,48).
+
 ## Stryktipset / Europatipset
 
 | Datum | Spel | Match | Utfall | Folket på laget | Vår procent |
@@ -79,40 +129,41 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-08-16 | Stryk 4914 | Bradford - Luton | 1 ✓ | 22 % | 30 % |
 | 2026-09-19 | Stryk 4971 | Luton - Bradford | 2 ✓ | 24 % | 28 % |
 
-## Trupp (FotMob, hämtad 2026-09-29)
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Mark Trueman (tidigare: Graham Alexander till 2026-09-28). Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Cameron Dawson | GK | 31 | England | 153 k€ | – | 0 | 0 | 0/0 |  |
-| 21 | Jon McCracken | GK | 26 | Scotland | 424 k€ | 7,15 | 0 | 0 | 0/0 |  |
+| 1 | Cameron Dawson | GK | 31 | England | 159 k€ | 6,82 | 0 | 0 | 0/0 |  |
+| 13 | Colin Doyle | GK | 41 | Ireland | – | – | 0 | 0 | 0/0 |  |
+| 21 | Jon McCracken | GK | 26 | Scotland | 579 k€ | 7,15 | 0 | 0 | 0/0 |  |
 | 31 | Zac Hadi | Keeper | 20 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Reece Welch | CB | 23 | England | 341 k€ | 6,91 | 0 | 0 | 0/0 |  |
-| 5 | Macaulay Gillesphey | CB | 30 | England | 269 k€ | 7,16 | 1 | 0 | 1/0 |  |
-| 14 | Hayden Matthews | CB | 22 | Australia | 1,5 M€ | – | 0 | 0 | 0/0 |  |
-| 15 | Aden Baldwin | CB | 29 | England | 219 k€ | 7,54 | 1 | 0 | 0/0 |  |
-| 16 | George Pratt | CB | 23 | England | 300 k€ | 7,20 | 1 | 0 | 2/0 |  |
-| 27 | Corey O'Keeffe | RB,RWB,LB,CB,LWB | 28 | Ireland | 273 k€ | 5,55 | 0 | 0 | 0/0 |  |
-| 28 | Matthew Pennington | CB | 31 | England | 156 k€ | 7,46 | 0 | 1 | 1/0 |  |
+| 2 | Reece Welch | CB | 23 | England | 361 k€ | 6,91 | 0 | 0 | 0/0 |  |
+| 5 | Macaulay Gillesphey | CB | 30 | England | 318 k€ | 7,16 | 1 | 0 | 1/0 |  |
+| 14 | Hayden Matthews | CB | 22 | Australia | 1,4 M€ | – | 0 | 0 | 0/0 |  |
+| 15 | Aden Baldwin | CB | 29 | England | 330 k€ | 7,49 | 1 | 0 | 1/0 |  |
+| 16 | George Pratt | CB | 23 | England | 432 k€ | 7,24 | 1 | 0 | 2/0 |  |
+| 27 | Corey O'Keeffe | RB,RWB,LB,CB,LWB | 28 | Ireland | 303 k€ | 5,55 | 0 | 0 | 0/0 |  |
+| 28 | Matthew Pennington | CB | 31 | England | 181 k€ | 7,36 | 0 | 1 | 1/0 |  |
 | 30 | Oscar Lunn | Defender | 18 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 3 | Ibou Touray | LWB,CB,LM,LB | 31 | The Gambia | 153 k€ | 7,18 | 0 | 0 | 1/0 |  |
-| 6 | Callum Connolly | CDM,CB | 29 | England | 291 k€ | 7,20 | 0 | 1 | 3/0 |  |
-| 7 | Josh Neufville | RWB | 25 | England | 565 k€ | 7,15 | 0 | 0 | 0/0 |  |
-| 8 | Adam Phillips | RW,CDM,CAM,RM | 28 | England | 441 k€ | 6,35 | 0 | 1 | 1/0 |  |
-| 10 | Antoni Sarcevic | CAM,CDM | 34 | England | 154 k€ | 7,43 | 1 | 0 | 3/0 |  |
-| 17 | Tyreik Samuel Wright | LWB,CAM,RW | 25 | Ireland | 271 k€ | – | 0 | 0 | 0/0 |  |
-| 20 | Henry Cartwright | CDM | 21 | England | 574 k€ | 6,12 | 0 | 0 | 0/0 |  |
-| 22 | Kieran Morgan | CM,CDM | 20 | England | 1,6 M€ | 6,25 | 0 | 0 | 1/0 |  |
-| 23 | Bobby Pointon | CAM | 22 | England | 431 k€ | 7,24 | 2 | 0 | 0/0 |  |
-| 25 | Nick Powell | RW | 32 | England | 133 k€ | 6,32 | 1 | 0 | 1/0 |  |
-| 32 | George Lapslie | CAM,RWB | 29 | England | 145 k€ | – | 0 | 0 | 0/0 |  |
+| 3 | Ibou Touray | LWB,CB,LM,LB | 31 | The Gambia | 239 k€ | 7,19 | 0 | 0 | 2/0 |  |
+| 6 | Callum Connolly | CDM,CB | 29 | England | 359 k€ | 7,17 | 0 | 1 | 3/0 |  |
+| 7 | Josh Neufville | RWB | 25 | England | 689 k€ | 7,15 | 0 | 0 | 0/0 |  |
+| 8 | Adam Phillips | RW,CDM,CAM,RM | 28 | England | 528 k€ | 6,37 | 0 | 1 | 1/0 |  |
+| 10 | Antoni Sarcevic | CAM,CDM | 34 | England | 327 k€ | 7,36 | 1 | 0 | 3/0 |  |
+| 17 | Tyreik Samuel Wright | LWB,CAM,RW | 25 | Ireland | 245 k€ | – | 0 | 0 | 0/0 |  |
+| 20 | Henry Cartwright | CDM | 21 | England | 405 k€ | 6,12 | 0 | 0 | 0/0 |  |
+| 22 | Kieran Morgan | CM,CDM | 20 | England | 1,5 M€ | 6,25 | 0 | 0 | 1/0 |  |
+| 23 | Bobby Pointon | CAM | 22 | England | 457 k€ | 7,28 | 2 | 1 | 1/0 |  |
+| 24 | Will Swan | CAM,ST | 25 | England | 299 k€ | 6,05 | 0 | 0 | 0/0 |  |
+| 25 | Nick Powell | RW | 32 | England | 161 k€ | 6,42 | 1 | 0 | 1/0 |  |
+| 32 | George Lapslie | CAM,RWB | 29 | England | 145 k€ | 6,63 | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 9 | Jake Beesley | ST | 29 | England | 377 k€ | 6,65 | 0 | 1 | 1/0 |  |
-| 11 | Stephen Humphrys | ST,LW | 29 | England | 282 k€ | – | 0 | 0 | 0/0 |  |
-| 19 | Kayden Jackson | ST,CAM,RWB | 32 | England | 298 k€ | 6,79 | 0 | 1 | 1/0 |  |
-| 24 | Will Swan | ST,CAM | 25 | England | 236 k€ | 6,09 | 0 | 0 | 0/0 |  |
+| 9 | Jake Beesley | ST | 29 | England | 513 k€ | 6,73 | 1 | 1 | 1/0 |  |
+| 11 | Stephen Humphrys | ST,LW | 29 | England | 334 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | Kayden Jackson | ST,CAM,RWB | 32 | England | 336 k€ | 6,75 | 0 | 1 | 1/0 |  |
 | 29 | Harry Ibbitson | Attacker | 20 | England | – | – | 0 | 0 | 0/0 |  |

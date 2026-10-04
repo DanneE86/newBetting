@@ -1,10 +1,14 @@
 # Portsmouth (Championship) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Stark historik mot Charlton (−0,56 p/match mot marknaden, 13 möten), Lincoln (+0,82 p/match mot marknaden, 11 möten), Derby (−0,62 p/match mot marknaden, 9 möten), Bolton (+0,59 p/match mot marknaden, 8 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Efter landslagsuppehåll: 1,50 poäng per match mot 1,57 annars (3-3-2 på 8 matcher), mot marknaden +0,58 mot +0,03. Sedan 2023: 3-3-1. Bättre än vanligt, men få matcher: i hela ligan är effekten +0,01 mot marknaden.
+- Spelstil 2025/26: Bollinnehav, Blandat, Mellanpress, Farlig på fasta, Svag mot fasta. Bäst mot Högpress (+0,24, samma håll i båda halvorna men svagt), Medel mot fasta (+0,17, samma håll i båda halvorna men svagt), Farlig på fasta (+0,23, samma håll i båda halvorna men svagt). Svårast mot Lågpress (−0,30, stabilt), Kortpass (−0,13, svagt), Svag mot fasta (−0,16, samma håll i båda halvorna men svagt). Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2025/26: 0,33 mål för per match (xG 0,42), 0,46 emot (xG 0,31), 5,6 hörnor.
+- Svårt för: Derby (0-6-3, 0,67 p/match, mot marknaden −0,62), Charlton (3-4-6, 1,00 p/match, mot marknaden −0,56).
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -32,6 +36,58 @@ Form (äldst → senast): OFVFFVOO · senaste match 2026-09-19
 | 2026/27 | CH | 7 | 1,14 | −0,25 (−0,54 / +0,14) | 29 % (28 %) | 1,29–1,43 | 1,67–1,38* | 1,55 |
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/CH.md#portsmouth) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2025/26: **Bollinnehav, Blandat, Mellanpress, Farlig på fasta, Svag mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026/27 | 7 | 0,43 | 0,44 | 0,29 | 0,23 | 7,0 |
+| 2025/26 | 46 | 0,33 | 0,42 | 0,46 | 0,31 | 5,6 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Backar hem | 85 | 1,33–1,09 | +0,10 | +0,04 (0,3) | +1 pe | +1 pe | svag |
+| Balanserat | 121 | 1,43–1,33 | +0,08 | +0,02 (0,2) | −6 pe | +7 pe | svag |
+| Bollinnehav | 77 | 1,32–1,09 | −0,03 | −0,08 (−0,7) | +15 pe | −3 pe | ✔ samma håll |
+| Kortpass | 97 | 1,23–1,44 | −0,08 | −0,13 (−1,1) | +6 pe | +2 pe | svag |
+| Blandat | 105 | 1,42–1,11 | +0,14 | +0,09 (0,8) | +2 pe | +2 pe | ✔ samma håll |
+| Direktspel | 81 | 1,48–1,00 | +0,10 | +0,04 (0,3) | −4 pe | +2 pe | svag |
+| Lågpress | 71 | 1,10–1,31 | −0,24 | −0,30 (−2,4) | +17 pe | +2 pe | ⚑ stabil |
+| Mellanpress | 120 | 1,40–1,09 | +0,05 | −0,01 (−0,1) | −4 pe | −2 pe | svag |
+| Högpress | 92 | 1,54–1,24 | +0,30 | +0,24 (1,9) | −3 pe | +9 pe | ✔ samma håll |
+| Svag på fasta | 118 | 1,30–1,07 | −0,00 | −0,06 (−0,5) | +7 pe | −3 pe | svag |
+| Medel på fasta | 116 | 1,30–1,28 | +0,02 | −0,04 (−0,3) | +2 pe | +2 pe | svag |
+| Farlig på fasta | 49 | 1,71–1,29 | +0,29 | +0,23 (1,3) | −11 pe | +17 pe | ✔ samma håll |
+| Stark mot fasta | 108 | 1,38–1,23 | −0,04 | −0,09 (−0,8) | +1 pe | +6 pe | ✔ samma håll |
+| Medel mot fasta | 116 | 1,45–1,15 | +0,22 | +0,17 (1,4) | +1 pe | +2 pe | ✔ samma håll |
+| Svag mot fasta | 59 | 1,20–1,22 | −0,10 | −0,16 (−1,0) | +5 pe | −2 pe | ✔ samma håll |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
+
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 8 | 3-3-2 | 1,50 | +0,58 |
+| Efter uppehåll sedan 2023 | 7 | 3-3-1 | 1,71 | +0,91 |
+| Övriga matcher | 402 | 175-106-121 | 1,57 | +0,03 |
+
+Hela ligan efter uppehåll: +0,01 mot marknaden (n 766). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2026-04-03 | Norwich - Portsmouth | 1-1 O | +0,67 |
+| 2025-11-22 | Portsmouth - Millwall | 3-1 V | +1,46 |
+| 2025-10-18 | Leicester - Portsmouth | 1-1 O | +1,04 |
+| 2025-09-14 | Southampton - Portsmouth | 0-0 O | +0,89 |
+| 2025-03-29 | Portsmouth - Blackburn | 1-0 V | +1,46 |
+| 2024-10-19 | QPR - Portsmouth | 1-2 V | +1,77 |
+| 2024-09-15 | Portsmouth - West Brom | 0-3 F | −0,95 |
+| 2022-12-04 | Wycombe - Portsmouth | 2-0 F | −1,67 |
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -61,6 +117,8 @@ Form (äldst → senast): OFVFFVOO · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): Derby 0,67 p/match (−0,62), Charlton 1,00 p/match (−0,56).
+
 ## Stryktipset / Europatipset
 
 | Datum | Spel | Match | Utfall | Folket på laget | Vår procent |
@@ -81,54 +139,54 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-08-30 | Stryk 4916 | Portsmouth - Preston | 1 ✓ | 55 % | 41 % |
 | 2025-08-23 | Stryk 4915 | West Bromwich - Portsmouth | X | 13 % | 18 % |
 | 2026-09-19 | Stryk 4971 | Portsmouth - Blackburn | X | 50 % | 42 % |
-| 2026-09-12 | Stryk 4970 | Charlton - Portsmouth | X | 32 % | 35 % |
+| 2026-09-12 | Stryk 4970 | Charlton - Portsmouth | X | 32 % | 36 % |
 | 2026-09-05 | Stryk 4969 | Portsmouth - Cardiff | 1 ✓ | 41 % | 39 % |
 | 2026-08-29 | Stryk 4968 | Bristol City - Portsmouth | 1 | 19 % | 29 % |
 | 2026-01-01 | Europa 2536 | Bristol City - Portsmouth | 1 | 13 % | 18 % |
 
-## Trupp (FotMob, hämtad 2026-09-29)
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: John Mousinho. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Connor Ogilvie (osäker), Conor Shaughnessy (osäker), Márk Kosznovszky (skadad, åter Early October 2026), Franco Umeh-Chibueze (osäker), Thomas Waddingham (osäker), Josh Murphy (skadad, åter Late October 2026), Ryan Kavuma-McQueen (osäker), Luke Brooke-Smith (skadad, åter Out for season), Marezi (osäker), Keshi Anderson (osäker)
+**Skadade/borta nu:** Connor Ogilvie (osäker), Conor Shaughnessy (osäker), Márk Kosznovszky (skadad, åter Mid October 2026), Franco Umeh-Chibueze (osäker), Thomas Waddingham (osäker), Josh Murphy (skadad, åter Late October 2026), Ryan Kavuma-McQueen (osäker), Luke Brooke-Smith (skadad, åter Out for season), Marezi (osäker), Keshi Anderson (osäker)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
 | 1 | Nicolas Schmid | GK | 29 | Austria | 1,5 M€ | 6,41 | 0 | 0 | 0/0 |  |
 | 30 | Ben Killip | GK | 30 | England | 250 k€ | – | 0 | 0 | 0/0 |  |
-| 31 | Daniel Bielica | GK | 27 | Poland | 797 k€ | 7,14 | 0 | 0 | 0/0 |  |
+| 31 | Daniel Bielica | GK | 27 | Poland | 958 k€ | 7,14 | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Benjamin Arthur | CB | 20 | England | 767 k€ | 6,96 | 0 | 0 | 0/0 |  |
-| 3 | Connor Ogilvie | LB,CB | 30 | England | 659 k€ | – | 0 | 0 | 0/0 | osäker |
-| 5 | Regan Poole | CB | 28 | Wales | 686 k€ | 6,08 | 0 | 0 | 0/0 |  |
-| 6 | Conor Shaughnessy | CB | 30 | Ireland | 392 k€ | 7,06 | 1 | 0 | 0/0 | osäker |
-| 16 | Jayden Meghoma | LB,LM | 20 | England | 1,6 M€ | 6,64 | 0 | 0 | 0/0 |  |
-| 22 | Zak Swanson | LB,RB,CB | 26 | England | 970 k€ | 6,60 | 1 | 0 | 1/0 |  |
-| 24 | Terry Devlin | RB,RWB,RM | 22 | Northern Ireland | 2,0 M€ | 7,25 | 1 | 0 | 1/0 |  |
+| 2 | Benjamin Arthur | CB | 20 | England | 1,0 M€ | 6,96 | 0 | 0 | 0/0 |  |
+| 3 | Connor Ogilvie | LB,CB | 30 | England | 750 k€ | – | 0 | 0 | 0/0 | osäker |
+| 5 | Regan Poole | CB | 28 | Wales | 873 k€ | 6,08 | 0 | 0 | 0/0 |  |
+| 6 | Conor Shaughnessy | CB | 30 | Ireland | 370 k€ | 7,06 | 1 | 0 | 0/0 | osäker |
+| 16 | Jayden Meghoma | LB,LM | 20 | England | 4,2 M€ | 6,64 | 0 | 0 | 0/0 |  |
+| 22 | Zak Swanson | LB,RB,CB | 26 | England | 1,1 M€ | 6,60 | 1 | 0 | 1/0 |  |
+| 24 | Terry Devlin | RB,RWB,RM | 22 | Northern Ireland | 4,4 M€ | 7,25 | 1 | 0 | 1/0 |  |
 | 39 | Chinedu Agu | Defender | 18 | England | – | – | 0 | 0 | 0/0 |  |
-| 55 | Madiodio Dia | CB | 22 | Senegal | 639 k€ | 6,44 | 0 | 0 | 0/0 |  |
-| 99 | Michael Ani | Defender | 20 | England | – | – | 0 | 0 | 0/0 |  |
+| 55 | Madiodio Dia | CB | 22 | Senegal | 623 k€ | 6,44 | 0 | 0 | 0/0 |  |
+| 99 | Michael Ani | Defender | 18 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 7 | Marlon Pack | CDM | 35 | England | 274 k€ | 6,92 | 0 | 0 | 1/0 |  |
-| 8 | John Swift | CAM,CDM | 31 | England | 451 k€ | 6,44 | 0 | 0 | 0/0 |  |
-| 18 | Márk Kosznovszky | CDM | 24 | Hungary | 1,0 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
-| 19 | Rocco Shein | CM,CDM,LM | 23 | Estonia | 1,9 M€ | 6,51 | 0 | 0 | 1/0 |  |
-| 27 | Odin Bailey | CDM,CM,CAM,LM | 26 | England | 598 k€ | 5,95 | 0 | 0 | 0/0 |  |
-| 37 | Iyad Mohamed | CM | 25 | Comoros | 360 k€ | 6,54 | 0 | 0 | 0/0 |  |
-| 38 | Ebou Adams | CDM,CM,CAM | 30 | The Gambia | 521 k€ | 7,06 | 1 | 1 | 1/0 |  |
+| 7 | Marlon Pack | CDM | 35 | England | 382 k€ | 6,92 | 0 | 0 | 1/0 |  |
+| 8 | John Swift | CAM,CDM | 31 | England | 361 k€ | 6,44 | 0 | 0 | 0/0 |  |
+| 18 | Márk Kosznovszky | CDM | 24 | Hungary | 1,0 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 19 | Rocco Shein | CM,CDM,LM | 23 | Estonia | 2,0 M€ | 6,51 | 0 | 0 | 1/0 |  |
+| 27 | Odin Bailey | CDM,CM,CAM,LM | 26 | England | 753 k€ | 5,95 | 0 | 0 | 0/0 |  |
+| 37 | Iyad Mohamed | CM,CDM | 25 | Comoros | 343 k€ | 6,54 | 0 | 0 | 0/0 |  |
+| 38 | Ebou Adams | CDM,CM,CAM | 30 | The Gambia | 573 k€ | 7,06 | 1 | 1 | 1/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 9 | Colby Bishop | ST | 29 | England | 1,1 M€ | 6,44 | 1 | 0 | 0/0 |  |
-| 10 | Adrian Segečić | RW,CAM,LW | 22 | Croatia | 2,0 M€ | 7,00 | 1 | 1 | 0/0 |  |
-| 11 | Abu Kamara | RW | 23 | England | 2,4 M€ | 7,03 | 0 | 1 | 0/0 |  |
+| 9 | Colby Bishop | ST | 29 | England | 1,2 M€ | 6,44 | 1 | 0 | 0/0 |  |
+| 10 | Adrian Segečić | RW,CAM,LW | 22 | Croatia | 4,0 M€ | 7,00 | 1 | 1 | 0/0 |  |
+| 11 | Abu Kamara | RW | 23 | England | 1,8 M€ | 7,03 | 0 | 1 | 0/0 |  |
 | 15 | Franco Umeh-Chibueze | RW | 21 | Ireland | 775 k€ | – | 0 | 0 | 0/0 | osäker |
-| 17 | Tyrese Shade | ST,LW | 26 | St. Kitts and Nevis | 361 k€ | 6,79 | 0 | 1 | 0/0 |  |
-| 20 | Thomas Waddingham | ST | 21 | Australia | 861 k€ | – | 0 | 0 | 0/0 | osäker |
+| 17 | Tyrese Shade | ST,LW | 26 | St. Kitts and Nevis | 462 k€ | 6,79 | 0 | 1 | 0/0 |  |
+| 20 | Thomas Waddingham | ST | 21 | Australia | 766 k€ | – | 0 | 0 | 0/0 | osäker |
 | 23 | Josh Murphy | LW,CAM | 31 | England | 1,3 M€ | 6,38 | 0 | 0 | 0/0 | skadad, åter Late October 2026 |
 | 25 | Ryan Kavuma-McQueen | LW,RW | 17 | England | – | 6,97 | 1 | 1 | 0/0 | osäker |
 | 28 | Luke Brooke-Smith | LW | 18 | New Zealand | 1,0 M€ | 6,07 | 0 | 0 | 0/0 | skadad, åter Out for season |
-| 29 | Marezi | ST | 23 | Serbia | 1,8 M€ | 6,60 | 2 | 0 | 0/0 | osäker |
-| 32 | Eoin Kenny | RW,ST,RM,LW,CAM | 20 | Northern Ireland | 232 k€ | – | 0 | 0 | 0/0 |  |
-| 34 | Harvey Blair | LW | 23 | England | 447 k€ | 6,27 | 0 | 0 | 0/0 |  |
+| 29 | Marezi | ST | 23 | Serbia | 2,8 M€ | 6,60 | 2 | 0 | 0/0 | osäker |
+| 32 | Eoin Kenny | RW,ST,LW,RM,CAM | 20 | Northern Ireland | 279 k€ | – | 0 | 0 | 0/0 |  |
+| 34 | Harvey Blair | LW | 23 | England | 432 k€ | 6,27 | 0 | 0 | 0/0 |  |
 | 37 | Keshi Anderson | LW | 31 | England | 294 k€ | – | 0 | 0 | 0/0 | osäker |
 | 48 | Nathaniel Chioma | Attacker | 18 | England | – | – | 0 | 0 | 0/0 |  |

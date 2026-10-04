@@ -1,6 +1,6 @@
 # Brasileirão Série A (BR) – lärdomar
 
-Genererad 2026-09-29 av `node scripts/analyze-learnings.mjs`. Skriv inte för hand här: egna anteckningar läggs i `docs/lardomar/anteckningar/BR.md`.
+Genererad 2026-10-04 av `node scripts/analyze-learnings.mjs`. Skriv inte för hand här: egna anteckningar läggs i `docs/lardomar/anteckningar/BR.md`.
 
 Underlag: 5596 matcher, säsong 2012 – 2026. Marknad = stängningsodds utan marginal (Pinnacle, annars snitt av bolagen), öppningsodds saknas. xG: saknas (0 % av matcherna).
 
@@ -78,7 +78,7 @@ Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (
 
 Inga matcher från ligan i de sparade backtesten ännu.
 
-## Tabell nu (FotMob, 2026-09-29)
+## Tabell nu (FotMob, 2026-10-04)
 
 | # | Lag | M | V | O | F | Mål | +/− | P |
 |---|---|---|---|---|---|---|---|---|
@@ -88,11 +88,11 @@ Inga matcher från ligan i de sparade backtesten ännu.
 | 4 | Fluminense | 28 | 13 | 9 | 6 | 44-36 | 8 | 48 |
 | 5 | Bahia | 28 | 12 | 10 | 6 | 43-35 | 8 | 46 |
 | 6 | Cruzeiro | 28 | 13 | 6 | 9 | 42-40 | 2 | 45 |
-| 7 | Atletico-MG | 27 | 11 | 7 | 9 | 36-32 | 4 | 40 |
-| 8 | Santos | 27 | 10 | 8 | 9 | 41-40 | 1 | 38 |
+| 7 | Atletico-MG | 28 | 12 | 7 | 9 | 37-32 | 5 | 43 |
+| 8 | Santos | 28 | 11 | 8 | 9 | 43-41 | 2 | 41 |
 | 9 | Coritiba | 28 | 10 | 8 | 10 | 37-43 | -6 | 38 |
-| 10 | Bragantino | 27 | 10 | 6 | 11 | 33-31 | 2 | 36 |
-| 11 | Sao Paulo | 27 | 10 | 6 | 11 | 32-30 | 2 | 36 |
+| 10 | Sao Paulo | 28 | 10 | 6 | 12 | 33-32 | 1 | 36 |
+| 11 | Bragantino | 28 | 10 | 6 | 12 | 33-32 | 1 | 36 |
 | 12 | Botafogo RJ | 28 | 9 | 8 | 11 | 41-45 | -4 | 35 |
 | 13 | Vitoria | 28 | 9 | 6 | 13 | 28-42 | -14 | 33 |
 | 14 | Corinthians | 28 | 8 | 8 | 12 | 29-32 | -3 | 32 |

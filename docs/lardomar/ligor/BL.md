@@ -1,6 +1,6 @@
 # Bundesliga (BL) – lärdomar
 
-Genererad 2026-09-29 av `node scripts/analyze-learnings.mjs`. Skriv inte för hand här: egna anteckningar läggs i `docs/lardomar/anteckningar/BL.md`.
+Genererad 2026-10-04 av `node scripts/analyze-learnings.mjs`. Skriv inte för hand här: egna anteckningar läggs i `docs/lardomar/anteckningar/BL.md`.
 
 Underlag: 2790 matcher, säsong 2017/18 – 2026/27. Marknad = stängningsodds utan marginal (Pinnacle, annars snitt av bolagen), öppningsodds finns för 2789 matcher. xG: Understat (100 % av matcherna).
 
@@ -101,7 +101,7 @@ Källa: backtesten i `data/stryktips-backtest-2526-steg3.json`, `data/stryktips-
 - Folket streckar kryss 2,9 procentenheter under vår procent. Kryss ger streckvärde.
 - Folket slog vår slutprocent i ligan. Kontrollera oddskällan (gamla odds?).
 
-## Tabell nu (FotMob, 2026-09-29)
+## Tabell nu (FotMob, 2026-10-04)
 
 | # | Lag | M | V | O | F | Mål | +/− | P |
 |---|---|---|---|---|---|---|---|---|

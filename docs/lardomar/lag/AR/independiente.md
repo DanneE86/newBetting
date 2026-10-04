@@ -1,10 +1,13 @@
 # Independiente (Liga Profesional) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Stark historik mot Union de Santa Fe (+0,56 p/match mot marknaden, 9 möten), Platense (−0,52 p/match mot marknaden, 8 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Spelstil 2026: Balanserat, Kortpass, Farlig på fasta, Svag mot fasta. Bäst mot Stark mot fasta (+0,12, samma håll i båda halvorna men svagt), Direktspel (+0,09, svagt), Farlig på fasta (+0,10, svagt). Svårast mot Medel mot fasta (−0,10, samma håll i båda halvorna men svagt), Blandat (−0,09, svagt), Svag på fasta (−0,09, samma håll i båda halvorna men svagt). Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2026: 0,32 mål för per match (xG 0,31), 0,29 emot (xG 0,19), 5,8 hörnor.
+- Svårt för: River Plate (1-4-6, 0,64 p/match, mot marknaden −0,28), Racing Club (3-4-6, 1,00 p/match, mot marknaden −0,25), Lanus (3-4-5, 1,08 p/match, mot marknaden −0,35), Boca Juniors (2-6-3, 1,09 p/match, mot marknaden −0,01), Platense (2-3-3, 1,13 p/match, mot marknaden −0,52), Atl. Tucuman (4-1-6, 1,18 p/match, mot marknaden −0,39), Newells Old Boys (3-1-4, 1,25 p/match, mot marknaden −0,34), Gimnasia L.P. (4-2-5, 1,27 p/match, mot marknaden −0,37). Där marknaden ligger nära noll är laget bara sämre i de mötena än annars, och oddsen vet redan om det.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -35,6 +38,51 @@ Form (äldst → senast): FFVOFVOV · senaste match 2026-09-19
 | 2024 | AR | 41 | 1,54 | +0,08 (+0,02 / +0,14) | 44 % (32 %) | 0,95–0,66 | – | – |
 | 2025 | AR | 35 | 1,54 | +0,00 (+0,11 / −0,10) | 34 % (31 %) | 1,11–0,71 | – | – |
 | 2026 | AR | 27 | 1,52 | −0,04 (−0,19 / +0,10) | 30 % (31 %) | 1,30–1,15 | – | – |
+
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/AR.md#independiente) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2026: **Balanserat, Kortpass, Farlig på fasta, Svag mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026 | 28 | 0,32 | 0,31 | 0,29 | 0,19 | 5,8 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Backar hem | 57 | 1,12–1,05 | −0,08 | −0,06 (−0,4) | +2 pe | – | svag |
+| Balanserat | 76 | 1,16–0,96 | +0,05 | +0,06 (0,4) | +1 pe | – | ✔ samma håll |
+| Bollinnehav | 48 | 0,96–0,79 | −0,05 | −0,03 (−0,2) | +15 pe | – | svag |
+| Kortpass | 43 | 1,12–0,79 | +0,02 | +0,04 (0,2) | +12 pe | – | ✔ samma håll |
+| Blandat | 78 | 1,08–1,06 | −0,11 | −0,09 (−0,7) | +6 pe | – | svag |
+| Direktspel | 60 | 1,10–0,90 | +0,07 | +0,09 (0,6) | −1 pe | – | svag |
+| Lågpress | 58 | 1,03–0,84 | −0,00 | +0,01 (0,1) | +8 pe | – | svag |
+| Mellanpress | 54 | 1,31–1,09 | +0,03 | +0,05 (0,3) | +2 pe | – | svag |
+| Högpress | 69 | 0,97–0,91 | −0,07 | −0,05 (−0,3) | +5 pe | – | svag |
+| Svag på fasta | 62 | 0,97–1,00 | −0,10 | −0,09 (−0,6) | +6 pe | – | ✔ samma håll |
+| Medel på fasta | 55 | 1,11–0,85 | −0,04 | −0,03 (−0,2) | +12 pe | – | svag |
+| Farlig på fasta | 42 | 1,12–0,93 | +0,08 | +0,10 (0,5) | +0 pe | – | svag |
+| Stark mot fasta | 53 | 1,11–0,85 | +0,10 | +0,12 (0,8) | +8 pe | – | ✔ samma håll |
+| Medel mot fasta | 74 | 0,96–0,89 | −0,11 | −0,10 (−0,7) | +8 pe | – | ✔ samma håll |
+| Svag mot fasta | 29 | 1,17–1,14 | −0,09 | −0,07 (−0,3) | +1 pe | – | ✔ samma håll |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
+
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 2 | 1-1-0 | 2,00 | +0,40 |
+| Efter uppehåll sedan 2023 | 0 | – | – | – |
+| Övriga matcher | 445 | 170-148-127 | 1,48 | −0,01 |
+
+Hela ligan efter uppehåll: 0,00 mot marknaden (n 66). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2019-09-15 | Independiente - Lanus | 2-2 O | −0,69 |
+| 2012-10-20 | Argentinos Jrs - Independiente | 0-1 V | +1,48 |
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -71,47 +119,50 @@ Form (äldst → senast): FFVOFVOV · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): River Plate 0,64 p/match (−0,28), Racing Club 1,00 p/match (−0,25), Lanus 1,08 p/match (−0,35), Boca Juniors 1,09 p/match (−0,01), Platense 1,13 p/match (−0,52), Atl. Tucuman 1,18 p/match (−0,39), Newells Old Boys 1,25 p/match (−0,34), Gimnasia L.P. 1,27 p/match (−0,37).
+
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Jádson Viera. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Jonathan De Irastorza (skadad, åter Out for season), Chimy Ávila (osäker)
+**Skadade/borta nu:** Jonathan De Irastorza (skadad, åter Out for season), Facundo Zabala (skadad, åter Mid October 2026), Juan Miguel Arrayago (skadad, åter About 1-2 weeks)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
 |  | Santiago Mele | GK | 29 | Uruguay | 1,4 M€ | – | 0 | 0 | 0/0 |  |
 | 1 | Joaquín Blázquez | GK | 25 | Argentina | 341 k€ | – | 0 | 0 | 0/0 |  |
-| 33 | Rodrigo Rey | GK | 35 | Argentina | 631 k€ | – | 0 | 0 | 0/0 |  |
+| 33 | Rodrigo Rey | GK | 35 | Argentina | 963 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-|  | Franco Calderón | CB | 28 | Argentina | 861 k€ | – | 0 | 0 | 0/0 |  |
+|  | Franco Calderón | CB | 28 | Argentina | 864 k€ | – | 0 | 0 | 0/0 |  |
 |  | Joshua Velárdez | Defender | 20 | Paraguay | – | – | 0 | 0 | 0/0 |  |
-|  | Ramiro Martino | Defender | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 3 | Jonathan De Irastorza | LB | 21 | Argentina | 498 k€ | – | 0 | 0 | 0/0 | skadad, åter Out for season |
-| 4 | Santiago Arias | RB | 34 | Colombia | 846 k€ | – | 0 | 0 | 0/0 |  |
-| 13 | Juan Fedorco | CB | 25 | Argentina | 719 k€ | – | 0 | 0 | 0/0 |  |
+|  | Nahuel Banegas | LB | 29 | Argentina | 762 k€ | – | 0 | 0 | 0/0 |  |
+|  | Ramiro Martino | LB | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 3 | Jonathan De Irastorza | LB | 21 | Argentina | 487 k€ | – | 0 | 0 | 0/0 | skadad, åter Out for season |
+| 4 | Santiago Arias | RB | 34 | Colombia | 858 k€ | – | 0 | 0 | 0/0 |  |
+| 13 | Juan Fedorco | CB | 25 | Argentina | 693 k€ | – | 0 | 0 | 0/0 |  |
 | 21 | Fernando Closter | CB | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 22 | Facundo Zabala | LB | 27 | Argentina | 1,2 M€ | – | 0 | 0 | 0/0 |  |
-| 29 | Leonardo Godoy | RB | 31 | Argentina | 919 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Facundo Zabala | LB | 27 | Argentina | 1,4 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 29 | Leonardo Godoy | RB | 31 | Argentina | 907 k€ | – | 0 | 0 | 0/0 |  |
 | 31 | Gonzalo Bordón | Defender | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 35 | Juan Miguel Arrayago | CB | 17 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 36 | Sebastián Valdéz | CB | 30 | Argentina | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 35 | Juan Miguel Arrayago | CB | 17 | Argentina | – | – | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
+| 36 | Sebastián Valdéz | CB | 30 | Argentina | 1,2 M€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 8 | Maximiliano Meza | CM,RW,LW | 33 | Argentina | 521 k€ | – | 0 | 0 | 0/0 |  |
-| 10 | Luciano Cabral | CAM,CM | 31 | Chile | 841 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Luciano Cabral | CAM,CM | 31 | Chile | 842 k€ | – | 0 | 0 | 0/0 |  |
 | 14 | Lautaro Millán | CAM,LW,CDM | 21 | Chile | – | – | 0 | 0 | 0/0 |  |
-| 16 | Mateo Pérez Curci | CDM,CM,CAM | 20 | Argentina | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 16 | Mateo Pérez Curci | CDM,CM,CAM | 20 | Argentina | 1,6 M€ | – | 0 | 0 | 0/0 |  |
 | 20 | Facundo Cruz | Midfielder | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 23 | Iván Marcone | CDM,CM | 36 | Argentina | 395 k€ | – | 0 | 0 | 0/0 |  |
+| 23 | Iván Marcone | CDM,CM | 36 | Argentina | 488 k€ | – | 0 | 0 | 0/0 |  |
 | 30 | Tomás Parmo | Midfielder | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 32 | David Martínez | CM,CDM,CB | 22 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 37 | Joel Medina | CM | 19 | Argentina | 831 k€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-|  | Chimy Ávila | ST,RW,CAM | 32 | Argentina | 958 k€ | – | 0 | 0 | 0/0 | osäker |
-|  | Iván Morales | ST,RW | 27 | Chile | 911 k€ | – | 0 | 0 | 0/0 |  |
+|  | Chimy Ávila | ST,CAM | 32 | Argentina | 981 k€ | – | 0 | 0 | 0/0 |  |
+|  | Iván Morales | ST,RW | 27 | Chile | 1,1 M€ | – | 0 | 0 | 0/0 |  |
 | 7 | Santiago Montiel | RW,CAM | 25 | Argentina | 2,7 M€ | – | 0 | 0 | 0/0 |  |
 | 15 | Imanol Machuca | LW | 26 | Malaysia | 1,7 M€ | – | 0 | 0 | 0/0 |  |
-| 19 | Matías Abaldo | LW | 22 | Uruguay | 4,5 M€ | – | 0 | 0 | 0/0 |  |
+| 19 | Matías Abaldo | LW | 22 | Uruguay | 6,8 M€ | – | 0 | 0 | 0/0 |  |
 | 24 | Josias Palais | LW | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 34 | Felipe Tempone | ST | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 51 | Simón Bodnar | Attacker | 19 | Hungary | – | – | 0 | 0 | 0/0 |  |

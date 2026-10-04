@@ -226,3 +226,23 @@ test.describe('spelarkort', () => {
     expect(await card.locator('.pc-table tbody tr:not(.pc-cat)').count()).toBeGreaterThan(10);
   });
 });
+
+test.describe('ligaraden radbryts', () => {
+  for (const vp of [{ name: 'dator', width: 1440, height: 900 }, { name: 'mobil', width: 390, height: 844 }]) {
+    test(`alla länder syns utan att scrolla (${vp.name})`, async ({ page }) => {
+      await page.setViewportSize({ width: vp.width, height: vp.height });
+      await page.goto(base + '/tips');
+      await page.waitForSelector('#league-filters .filter-pill[data-group]');
+      const row = page.locator('#league-filters');
+      // Ingen vågrät scroll: innehållet ryms i radens bredd
+      const { sw, cw } = await row.evaluate((el) => ({ sw: el.scrollWidth, cw: el.clientWidth }));
+      expect(sw).toBeLessThanOrEqual(cw + 1);
+      // Varje knapp ligger helt inom raden, och raden bryts till fler rader
+      const box = (await row.boundingBox())!;
+      const pills = await row.locator('.filter-pill').evaluateAll((els) => els.map((e) => { const r = e.getBoundingClientRect(); return { l: r.left, r: r.right, t: r.top }; }));
+      expect(pills.length).toBeGreaterThan(5);
+      for (const p of pills) { expect(p.l).toBeGreaterThanOrEqual(box.x - 1); expect(p.r).toBeLessThanOrEqual(box.x + box.width + 1); }
+      expect(new Set(pills.map((p) => Math.round(p.t))).size).toBeGreaterThan(1);
+    });
+  }
+});

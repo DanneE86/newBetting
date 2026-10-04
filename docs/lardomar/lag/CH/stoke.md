@@ -1,10 +1,14 @@
 # Stoke (Championship) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Stark historik mot Millwall (−0,71 p/match mot marknaden, 16 möten), Preston (−0,55 p/match mot marknaden, 15 möten), Birmingham (−0,51 p/match mot marknaden, 14 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Efter landslagsuppehåll: 1,63 poäng per match mot 1,16 annars (15-7-10 på 32 matcher), mot marknaden +0,21 mot −0,17. Sedan 2023: 6-2-4. Bättre än vanligt, men få matcher: i hela ligan är effekten +0,01 mot marknaden.
+- Spelstil 2025/26: Bollinnehav, Kortpass, Lågpress, Svag på fasta, Svag mot fasta. Bäst mot Kortpass (+0,20, samma håll i båda halvorna men svagt), Bollinnehav (+0,09, samma håll i båda halvorna men svagt), Lågpress (+0,08, samma håll i båda halvorna men svagt). Svårast mot Direktspel (−0,25, stabilt), Backar hem (−0,11, samma håll i båda halvorna men svagt), Svag mot fasta (−0,09, svagt). Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2025/26: 0,20 mål för per match (xG 0,29), 0,41 emot (xG 0,35), 6,0 hörnor.
+- Svårt för: Millwall (2-5-9, 0,69 p/match, mot marknaden −0,71), Middlesbrough (3-5-8, 0,88 p/match, mot marknaden −0,29), Preston (3-5-7, 0,93 p/match, mot marknaden −0,55), Birmingham (3-5-6, 1,00 p/match, mot marknaden −0,51), Cardiff (2-7-4, 1,00 p/match, mot marknaden −0,42), Watford (3-2-6, 1,00 p/match, mot marknaden −0,27), Norwich (3-4-6, 1,00 p/match, mot marknaden −0,18), West Brom (3-4-6, 1,00 p/match, mot marknaden −0,18), Sheffield United (3-2-6, 1,00 p/match, mot marknaden −0,17), QPR (4-6-6, 1,13 p/match, mot marknaden −0,38). Där marknaden ligger nära noll är laget bara sämre i de mötena än annars, och oddsen vet redan om det.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -33,6 +37,82 @@ Form (äldst → senast): FFFVVOVV · senaste match 2026-09-19
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
 
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/CH.md#stoke) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2025/26: **Bollinnehav, Kortpass, Lågpress, Svag på fasta, Svag mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026/27 | 8 | 0,00 | 0,19 | 0,25 | 0,20 | 4,5 |
+| 2025/26 | 46 | 0,20 | 0,29 | 0,41 | 0,35 | 6,0 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Backar hem | 111 | 0,99–1,20 | −0,27 | −0,11 (−1,1) | +2 pe | −9 pe | ✔ samma håll |
+| Balanserat | 152 | 1,19–1,23 | −0,14 | +0,02 (0,2) | −4 pe | −1 pe | svag |
+| Bollinnehav | 101 | 1,12–1,30 | −0,07 | +0,09 (0,7) | +1 pe | +0 pe | ✔ samma håll |
+| Kortpass | 110 | 1,19–1,31 | +0,04 | +0,20 (1,7) | −2 pe | −3 pe | ✔ samma håll |
+| Blandat | 140 | 1,21–1,24 | −0,11 | +0,05 (0,5) | −4 pe | +2 pe | svag |
+| Direktspel | 114 | 0,91–1,17 | −0,41 | −0,25 (−2,4) | +3 pe | −10 pe | ⚑ stabil |
+| Lågpress | 103 | 1,16–1,16 | −0,08 | +0,08 (0,7) | +1 pe | −1 pe | ✔ samma håll |
+| Mellanpress | 143 | 1,12–1,28 | −0,19 | −0,03 (−0,3) | −4 pe | −4 pe | svag |
+| Högpress | 118 | 1,06–1,26 | −0,20 | −0,04 (−0,3) | +1 pe | −4 pe | ✔ samma håll |
+| Svag på fasta | 130 | 1,07–1,37 | −0,20 | −0,04 (−0,4) | −0 pe | −2 pe | svag |
+| Medel på fasta | 139 | 1,16–1,20 | −0,12 | +0,04 (0,3) | −3 pe | −3 pe | ✔ samma håll |
+| Farlig på fasta | 95 | 1,09–1,12 | −0,16 | +0,00 (0,0) | +2 pe | −6 pe | svag |
+| Stark mot fasta | 122 | 1,21–1,18 | −0,15 | +0,01 (0,1) | −4 pe | −1 pe | svag |
+| Medel mot fasta | 163 | 1,08–1,27 | −0,12 | +0,04 (0,4) | +1 pe | −4 pe | svag |
+| Svag mot fasta | 79 | 1,01–1,27 | −0,25 | −0,09 (−0,6) | −1 pe | −6 pe | svag |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
+
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 32 | 15-7-10 | 1,63 | +0,21 |
+| Efter uppehåll sedan 2023 | 12 | 6-2-4 | 1,67 | +0,19 |
+| Övriga matcher | 382 | 111-109-162 | 1,16 | −0,17 |
+
+Hela ligan efter uppehåll: +0,01 mot marknaden (n 766). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2026-04-03 | Stoke - Sheffield Weds | 2-0 V | +0,79 |
+| 2025-11-22 | Leicester - Stoke | 2-1 F | −1,33 |
+| 2025-10-18 | Stoke - Wrexham | 1-0 V | +1,32 |
+| 2025-09-13 | Stoke - Birmingham | 1-0 V | +1,74 |
+| 2025-03-29 | Stoke - QPR | 3-1 V | +1,37 |
+| 2024-11-23 | QPR - Stoke | 1-1 O | +0,26 |
+| 2024-10-19 | Stoke - Norwich | 1-1 O | −0,42 |
+| 2024-09-14 | Oxford - Stoke | 1-0 F | −1,79 |
+| 2024-03-29 | Hull - Stoke | 0-2 V | +1,74 |
+| 2023-11-25 | Stoke - Blackburn | 0-3 F | −1,59 |
+| 2023-10-21 | Stoke - Sunderland | 2-1 V | +1,45 |
+| 2023-09-16 | Norwich - Stoke | 1-0 F | −1,23 |
+| 2023-04-01 | Coventry - Stoke | 0-4 V | +1,52 |
+| 2022-10-02 | Stoke - Watford | 0-4 F | −1,37 |
+| 2022-04-02 | Stoke - Sheffield United | 1-0 V | +1,79 |
+| 2021-11-20 | Stoke - Peterboro | 2-0 V | +0,97 |
+| 2021-10-16 | Sheffield United - Stoke | 2-1 F | −1,37 |
+| 2021-09-11 | Stoke - Huddersfield | 2-1 V | +1,22 |
+| 2021-04-02 | Bristol City - Stoke | 0-2 V | +1,06 |
+| 2020-11-21 | Stoke - Huddersfield | 4-3 V | +1,25 |
+| 2020-10-17 | Luton - Stoke | 0-2 V | +1,06 |
+| 2019-11-23 | Stoke - Wigan | 2-1 V | +1,13 |
+| 2019-10-19 | Stoke - Fulham | 2-0 V | +1,73 |
+| 2019-09-14 | Stoke - Bristol City | 1-2 F | −1,66 |
+| 2019-03-30 | Stoke - Sheffield Weds | 0-0 O | −0,53 |
+| 2018-11-24 | Stoke - QPR | 2-2 O | −0,77 |
+| 2018-10-20 | Stoke - Birmingham | 0-1 F | −1,76 |
+| 2018-09-15 | Sheffield Weds - Stoke | 2-2 O | +0,18 |
+| 2018-04-01 | Arsenal - Stoke | 3-0 F | −0,59 |
+| 2017-11-20 | Brighton - Stoke | 2-2 O | +0,53 |
+| 2017-10-14 | Man City - Stoke | 7-2 F | −0,33 |
+| 2017-09-09 | Stoke - Man United | 2-2 O | +0,38 |
+
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
 | Motståndare | M | V-O-F | Mål | Mot marknaden | Kryss mot odds | Senast |
@@ -55,11 +135,13 @@ Form (äldst → senast): FFFVVOVV · senaste match 2026-09-19
 | Southampton | 5 | 2-0-3 | 4–7 | +0,15 | −25 pe | 2026-08-22 1-3 (b) |
 | Burnley | 4 | 0-2-2 | 1–4 | −0,40 | +24 pe | 2025-01-01 0-0 (b) |
 | Portsmouth | 4 | 2-0-2 | 9–7 | +0,02 | −29 pe | 2026-04-25 1-3 (h) |
-| Bolton | 2 | 1-1-0 | 2–0 | +0,03 | +24 pe | 2018-12-29 0-0 (b) |
 | Wrexham | 2 | 1-0-1 | 1–2 | +0,19 | −26 pe | 2026-04-18 0-2 (b) |
+| Bolton | 1 | 0-1-0 | 0–0 | −0,79 | +71 pe | 2018-12-29 0-0 (b) |
 | Wolves | 1 | 0-0-1 | 1–4 | −0,82 | −24 pe | 2026-08-29 1-4 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): Millwall 0,69 p/match (−0,71), Middlesbrough 0,88 p/match (−0,29), Preston 0,93 p/match (−0,55), Birmingham 1,00 p/match (−0,51), Cardiff 1,00 p/match (−0,42), Watford 1,00 p/match (−0,27), Norwich 1,00 p/match (−0,18), West Brom 1,00 p/match (−0,18), Sheffield United 1,00 p/match (−0,17), QPR 1,13 p/match (−0,38).
 
 ## Stryktipset / Europatipset
 
@@ -89,44 +171,44 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-02-11 | Europa 2548 | Charlton - Stoke | 1 | 33 % | 34 % |
 | 2026-01-01 | Europa 2536 | Hull - Stoke | 2 ✓ | 24 % | 30 % |
 
-## Trupp (FotMob, hämtad 2026-09-29)
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Mark Robins. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Aaron Cresswell (skadad, åter Early October 2026), Bosun Lawal (osäker), Svante Ingelsson (skadad, åter Early October 2026), Ato Ampah (osäker)
+**Skadade/borta nu:** Aaron Cresswell (osäker), Bosun Lawal (osäker), Svante Ingelsson (osäker), Ato Ampah (osäker)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Viktor Johansson | GK | 28 | Sweden | 9,2 M€ | 6,90 | 0 | 0 | 0/0 |  |
+| 1 | Viktor Johansson | GK | 28 | Sweden | 13,1 M€ | 6,90 | 0 | 0 | 0/0 |  |
 | 24 | Joshua Griffiths | GK | 25 | England | 1,6 M€ | – | 0 | 0 | 0/0 |  |
 | 34 | Frank Fielding | GK | 38 | England | 241 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Ben Johnson | LB,RB,RM | 26 | England | 4,4 M€ | 7,13 | 1 | 0 | 0/0 |  |
-| 3 | Aaron Cresswell | LB,CB | 36 | England | 410 k€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
-| 5 | Luke Graham | CB | 22 | Scotland | 1,6 M€ | 7,20 | 0 | 0 | 2/0 |  |
-| 16 | Ben Wilmot | CB,RB | 26 | England | 2,5 M€ | 6,90 | 0 | 0 | 1/0 |  |
-| 17 | Eric Bocat | LB,LM,LWB | 27 | France | 1,5 M€ | 7,25 | 2 | 2 | 1/0 |  |
-| 18 | Bosun Lawal | CB,RB,LB,CDM | 23 | Ireland | 2,3 M€ | 6,68 | 0 | 0 | 2/0 | osäker |
-| 21 | Luca Bombino | LB,RB,LM | 20 | USA | 2,4 M€ | 6,62 | 0 | 0 | 0/0 |  |
-| 22 | Junior Tchamadeu | RB,RM,RWB | 22 | Cameroon | 2,2 M€ | 7,15 | 0 | 1 | 0/0 |  |
-| 23 | Ben Gibson | CB,LB | 33 | England | 270 k€ | 6,70 | 0 | 0 | 0/0 |  |
-| 40 | Maksym Talovierov | CB,RB | 26 | Ukraine | 1,5 M€ | 6,83 | 0 | 0 | 2/0 |  |
-| 43 | Freddie Anderson | CB | 19 | England | 593 k€ | – | 0 | 0 | 0/0 |  |
+| 2 | Ben Johnson | LB,RB,RM | 26 | England | 3,0 M€ | 7,13 | 1 | 0 | 0/0 |  |
+| 3 | Aaron Cresswell | LB,CB | 36 | England | 411 k€ | – | 0 | 0 | 0/0 | osäker |
+| 5 | Luke Graham | CB | 22 | Scotland | 1,9 M€ | 7,20 | 0 | 0 | 2/0 |  |
+| 16 | Ben Wilmot | CB,RB | 26 | England | 5,7 M€ | 6,90 | 0 | 0 | 1/0 |  |
+| 17 | Eric Bocat | LB,LM,LWB | 27 | France | 1,6 M€ | 7,25 | 2 | 2 | 1/0 |  |
+| 18 | Bosun Lawal | CB,RB,LB,CDM | 23 | Ireland | 2,2 M€ | 6,68 | 0 | 0 | 2/0 | osäker |
+| 21 | Luca Bombino | LB,RB,LM | 20 | USA | 3,7 M€ | 6,62 | 0 | 0 | 0/0 |  |
+| 22 | Junior Tchamadeu | RB,RM,RWB | 22 | Cameroon | 2,1 M€ | 7,15 | 0 | 1 | 0/0 |  |
+| 23 | Ben Gibson | CB,LB | 33 | England | 271 k€ | 6,70 | 0 | 0 | 0/0 |  |
+| 40 | Maksym Talovierov | CB,RB | 26 | Ukraine | 1,6 M€ | 6,83 | 0 | 0 | 2/0 |  |
+| 43 | Freddie Anderson | CB | 19 | England | 650 k€ | – | 0 | 0 | 0/0 |  |
 | 52 | Laurence Giani | LB | 18 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 4 | Ben Pearson | CDM | 31 | England | 413 k€ | 6,48 | 0 | 0 | 0/0 |  |
-| 6 | Svante Ingelsson | CM,CDM,CAM | 28 | Sweden | 886 k€ | 5,40 | 0 | 0 | 1/1 | skadad, åter Early October 2026 |
-| 7 | Jack McGlynn | CM,CAM,RW | 23 | USA | 3,2 M€ | 7,25 | 2 | 0 | 0/0 |  |
-| 8 | Ethan Galbraith | RB,CDM,CM | 25 | Northern Ireland | 2,0 M€ | 7,42 | 3 | 1 | 4/0 |  |
+| 4 | Ben Pearson | CDM | 31 | England | 334 k€ | 6,48 | 0 | 0 | 0/0 |  |
+| 6 | Svante Ingelsson | CDM,CM,CAM | 28 | Sweden | 1,1 M€ | 5,40 | 0 | 0 | 1/1 | osäker |
+| 7 | Jack McGlynn | CM,CAM,RW | 23 | USA | 3,7 M€ | 7,25 | 2 | 0 | 0/0 |  |
+| 8 | Ethan Galbraith | RB,CDM,CM | 25 | Northern Ireland | 2,2 M€ | 7,42 | 3 | 1 | 4/0 |  |
 | 10 | Jun-Ho Bae | CAM,LW | 23 | South Korea | – | 6,80 | 0 | 0 | 1/0 |  |
-| 13 | Justin Devenny | LWB,CM,CAM,LM,RWB,LW | 22 | Northern Ireland | 11,7 M€ | 7,34 | 2 | 0 | 1/0 |  |
-| 19 | Tomás Rigo | CDM,CAM,CM | 24 | Slovakia | 2,9 M€ | 7,01 | 0 | 1 | 0/0 |  |
-| 27 | Djibril Soumaré | CM,CDM | 23 | Senegal | 1,8 M€ | 6,75 | 0 | 0 | 1/0 |  |
+| 13 | Justin Devenny | LWB,CM,CAM,LM,RWB,LW | 22 | Northern Ireland | 13,0 M€ | 7,34 | 2 | 0 | 1/0 |  |
+| 19 | Tomás Rigo | CDM,CAM,CM | 24 | Slovakia | 4,4 M€ | 7,01 | 0 | 1 | 0/0 |  |
+| 27 | Djibril Soumaré | CM,CDM | 23 | Senegal | 2,0 M€ | 6,75 | 0 | 0 | 1/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 9 | Róbert Bozeník | ST | 26 | Slovakia | 1,8 M€ | 6,38 | 0 | 1 | 0/0 |  |
-| 11 | Lamine Cissé | ST,RW,LW | 23 | France | 1,9 M€ | 6,78 | 0 | 1 | 0/0 |  |
-| 14 | Ato Ampah | LW,RW | 20 | England | 187 k€ | – | 0 | 0 | 0/0 | osäker |
-| 15 | George Hirst | ST | 27 | Scotland | 6,6 M€ | 6,28 | 1 | 0 | 1/0 |  |
-| 20 | Sam Gallagher | ST,CAM,RW | 31 | Scotland | 531 k€ | 6,85 | 2 | 1 | 2/0 |  |
-| 42 | Million Manhoef | RW,CAM | 24 | Netherlands | 2,9 M€ | 6,27 | 0 | 0 | 0/0 |  |
+| 11 | Lamine Cissé | ST,RW,LW | 23 | France | 4,2 M€ | 6,78 | 0 | 1 | 0/0 |  |
+| 14 | Ato Ampah | LW,RW | 20 | England | 224 k€ | – | 0 | 0 | 0/0 | osäker |
+| 15 | George Hirst | ST | 27 | Scotland | 10,9 M€ | 6,28 | 1 | 0 | 1/0 |  |
+| 20 | Sam Gallagher | ST,CAM,RW | 31 | Scotland | 567 k€ | 6,85 | 2 | 1 | 2/0 |  |
+| 42 | Million Manhoef | RW,CAM | 24 | Netherlands | 4,9 M€ | 6,27 | 0 | 0 | 0/0 |  |

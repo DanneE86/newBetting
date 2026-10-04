@@ -1,6 +1,6 @@
 # Iraklis (Super League (Grekland)) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [GR](../../ligor/GR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [GR](../../ligor/GR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -37,7 +37,7 @@ Form (äldst → senast): FOVOO · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Walter Mazzarri. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -47,42 +47,42 @@ Tränare: Walter Mazzarri. Betyg, mål och assist gäller innevarande säsong en
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
 | 1 | Georgios Karakasidis | GK | 21 | Greece | – | – | 0 | 0 | 0/0 |  |
-| 16 | Panagiotis Tsintotas | GK | 33 | Greece | 72 k€ | – | 0 | 0 | 0/0 |  |
-| 33 | Georgios Athanasiadis | GK | 33 | Greece | 114 k€ | 6,90 | 0 | 0 | 0/0 |  |
+| 16 | Panagiotis Tsintotas | GK | 33 | Greece | 104 k€ | – | 0 | 0 | 0/0 |  |
+| 33 | Georgios Athanasiadis | GK | 33 | Greece | 110 k€ | 6,90 | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 |  | Nikolaos Tsiligeridis | Defender | 0 | Greece | – | – | 0 | 0 | 0/0 |  |
 |  | Stelios Karagogos | Defender | 18 | Greece | – | – | 0 | 0 | 0/0 |  |
-| 2 | Praxitelis Vouros | CB | 31 | Greece | 176 k€ | 6,59 | 0 | 0 | 2/0 |  |
-| 3 | Vitor Meer | LB,LM | 22 | Brazil | – | 5,62 | 0 | 0 | 1/1 |  |
-| 4 | Soufiane Chakla | CB | 33 | Morocco | 82 k€ | 5,75 | 0 | 0 | 0/0 |  |
-| 18 | Rob Nizet | RM | 24 | Belgium | 133 k€ | 6,78 | 0 | 0 | 1/0 |  |
-| 21 | Piña | CB | 31 | Spain | 194 k€ | 6,65 | 0 | 0 | 0/0 |  |
-| 22 | Kylian Kaiboué | CB,CM,CDM | 28 | France | 481 k€ | 6,40 | 0 | 0 | 2/0 |  |
+| 2 | Praxitelis Vouros | CB | 31 | Greece | 158 k€ | 6,59 | 0 | 0 | 2/0 |  |
+| 3 | Vitor Meer | LB,LM | 22 | Brazil | 180 k€ | 5,62 | 0 | 0 | 1/1 |  |
+| 4 | Soufiane Chakla | CB | 33 | Morocco | 73 k€ | 5,75 | 0 | 0 | 0/0 |  |
+| 18 | Rob Nizet | RM | 24 | Belgium | 140 k€ | 6,78 | 0 | 0 | 1/0 |  |
+| 21 | Piña | CB | 31 | Spain | 223 k€ | 6,65 | 0 | 0 | 0/0 |  |
+| 22 | Kylian Kaiboué | CB,CM,CDM | 28 | France | 570 k€ | 6,40 | 0 | 0 | 2/0 |  |
 | 23 | Daniel Muñoz | LB | 20 | Spain | – | 6,33 | 0 | 0 | 0/0 |  |
-| 30 | Carles Soria | RB,RWB | 29 | Spain | 118 k€ | 6,78 | 0 | 0 | 0/0 |  |
-| 31 | Nanú | RB,LWB,LB,RM | 32 | Guinea-Bissau | 105 k€ | 7,03 | 1 | 0 | 0/0 |  |
+| 30 | Carles Soria | RB,RWB | 29 | Spain | 94 k€ | 6,78 | 0 | 0 | 0/0 |  |
+| 31 | Nanú | RB,LWB,LB,RM | 32 | Guinea-Bissau | 54 k€ | 7,03 | 1 | 0 | 0/0 |  |
 | 44 | Rasmus Lauritsen | CB | 30 | Denmark | 643 k€ | – | 0 | 0 | 0/0 |  |
-| 69 | Yohan Roche | CB,LB | 29 | Benin | 107 k€ | 7,33 | 0 | 0 | 2/0 |  |
-| 94 | Giorgos Giannoutsos | CB | 28 | Greece | 92 k€ | – | 0 | 0 | 0/0 | skadad, åter Unknown |
+| 69 | Yohan Roche | CB,LB | 29 | Benin | 156 k€ | 7,33 | 0 | 0 | 2/0 |  |
+| 94 | Giorgos Giannoutsos | CB | 28 | Greece | 81 k€ | – | 0 | 0 | 0/0 | skadad, åter Unknown |
 | | **Mittfältare** | | | | | | | | | |
 |  | Christos Papazoglou | Midfielder | 0 | Greece | – | – | 0 | 0 | 0/0 |  |
 |  | Efstratios Tachmetzidis | Midfielder | 19 | Greece | – | – | 0 | 0 | 0/0 |  |
-| 5 | Orestis Tsintonis | CM | 27 | Greece | 88 k€ | – | 0 | 0 | 0/0 |  |
+| 5 | Orestis Tsintonis | CM | 27 | Greece | 70 k€ | – | 0 | 0 | 0/0 |  |
 | 6 | Carlos Rodriguez | Midfielder | 22 | Spain | – | 6,40 | 0 | 0 | 0/0 |  |
 | 8 | Nemanja Radoja | CM,CDM | 33 | Serbia | 151 k€ | 6,45 | 0 | 0 | 0/0 |  |
-| 10 | Yoel Bárcenas | CM,CDM,LM,LW | 32 | Panama | 369 k€ | 7,50 | 1 | 0 | 0/0 | skadad, åter Unknown |
-| 11 | Ivi López | CAM,LW | 32 | Spain | 207 k€ | 6,65 | 1 | 0 | 3/0 |  |
-| 14 | Jakub Hromada | CM,CDM | 30 | Slovakia | 158 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Yoel Bárcenas | CM,CDM,LM,LW | 32 | Panama | 408 k€ | 7,50 | 1 | 0 | 0/0 | skadad, åter Unknown |
+| 11 | Ivi López | CAM | 32 | Spain | 133 k€ | 6,65 | 1 | 0 | 3/0 |  |
+| 14 | Jakub Hromada | CM,CDM | 30 | Slovakia | 126 k€ | – | 0 | 0 | 0/0 |  |
 | 17 | Nikolaos Anastasiadis | Midfielder | 23 | Greece | – | – | 0 | 0 | 0/0 |  |
 | 20 | Panagiotis Panagiotidis | CDM | 28 | Greece | 63 k€ | – | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
-| 27 | Marco Krainz | CM | 29 | Austria | 82 k€ | 6,33 | 0 | 0 | 0/0 |  |
-| 90 | Vasilios Sourlis | CM,CDM | 23 | Greece | 182 k€ | 6,57 | 0 | 0 | 0/0 |  |
+| 27 | Marco Krainz | CM | 29 | Austria | 65 k€ | 6,33 | 0 | 0 | 0/0 |  |
+| 90 | Vasilios Sourlis | CM,CDM | 23 | Greece | 147 k€ | 6,57 | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-|  | Adam Žulevič | ST | 19 | Slovakia | 649 k€ | – | 0 | 0 | 0/0 |  |
+|  | Adam Žulevič | ST | 19 | Slovakia | 537 k€ | – | 0 | 0 | 0/0 |  |
 |  | Georgios Simseropoulos | Attacker | 18 | Greece | – | – | 0 | 0 | 0/0 |  |
 |  | Xande Silva | LW,ST | 29 | Portugal | 249 k€ | – | 0 | 0 | 0/0 |  |
-| 7 | Elvir Koljić | ST | 31 | Bosnia and Herzegovina | 225 k€ | 6,15 | 0 | 0 | 1/0 |  |
-| 9 | Kristian Kushta | ST | 28 | Albania | 60 k€ | 6,08 | 0 | 0 | 0/0 |  |
-| 43 | Pedro Marques | ST | 28 | Portugal | 443 k€ | 6,51 | 1 | 0 | 0/0 |  |
+| 7 | Elvir Koljić | ST | 31 | Bosnia and Herzegovina | 261 k€ | 6,15 | 0 | 0 | 1/0 |  |
+| 9 | Kristian Kushta | ST | 28 | Albania | 50 k€ | 6,08 | 0 | 0 | 0/0 |  |
+| 43 | Pedro Marques | ST | 28 | Portugal | 368 k€ | 6,51 | 1 | 0 | 0/0 |  |
 
 Har lämnat truppen sedan vi började spara (1): Georgios Konstantakopoulos (senast 2026-09-29).

@@ -84,6 +84,22 @@ export function marketOf(race, live) {
 }
 
 /**
+ * Skobyte mot förra starten: { av, pa } (1/0). ATG:s "changed" säger bara ATT skorna ändrats, inte åt vilket håll.
+ * Med förra startens skor: av = skor bara borttagna, pa = skor bara pålagda (båda håll = 0/0). Utan förra startens
+ * skor: barfota runt om = av, skor runt om = pa, blandat = okänt (0/0). Före 2026-10-04 räknades varje byte där hästen
+ * var barfota fram eller bak som "skor av" – även barfota runt om → skor bak (Readly Brodde, V85 Boden 2026-10-03).
+ */
+export function shoeChange(cur, prev) {
+  if (!cur?.changed || cur.front == null || cur.back == null) return { av: 0, pa: 0 };
+  if (prev && prev.front != null && prev.back != null) {
+    const add = (cur.front && !prev.front ? 1 : 0) + (cur.back && !prev.back ? 1 : 0);
+    const rem = (!cur.front && prev.front ? 1 : 0) + (!cur.back && prev.back ? 1 : 0);
+    return { av: rem && !add ? 1 : 0, pa: add && !rem ? 1 : 0 };
+  }
+  return { av: !cur.front && !cur.back ? 1 : 0, pa: cur.front && cur.back ? 1 : 0 };
+}
+
+/**
  * Råvärden per ej struken häst. ctx: { posts (postTable), driverForm (driverIndex-funktion) }.
  * Högre värde = bättre är INTE garanterat – tecknet lärs av fitLogit.
  */
@@ -110,6 +126,7 @@ export function rawFeatures(race, h, ctx = {}) {
   const handicap = Math.max(0, (h.distance || race.distance) - race.distance);
   const days = last && date ? daysBetween(last.date, date) : null;
   const sh = h.shoes;
+  const sc = sh ? shoeChange(sh, last?.shoes) : null;
   const df = ctx.driverForm && h.driverId ? ctx.driverForm(h.driverId, date) : null;
   const oddsHist = last5.filter((r) => r.odds > 1).map((r) => Math.log(r.odds));
   const prize = last5.filter((r) => r.firstPrize > 0).map((r) => Math.log(r.firstPrize));
@@ -125,8 +142,8 @@ export function rawFeatures(race, h, ctx = {}) {
     vila: days != null ? Math.log(1 + days) : null,
     vilaLang: days != null ? (days > 60 ? 1 : 0) : null,
     barfota: sh ? (!sh.front && !sh.back ? 1 : 0) : null,
-    skorAv: sh ? (sh.changed && (!sh.front || !sh.back) ? 1 : 0) : null,
-    skorPa: sh ? (sh.changed && sh.front && sh.back ? 1 : 0) : null,
+    skorAv: sc ? sc.av : null,
+    skorPa: sc ? sc.pa : null,
     jankare: h.sulky ? (/amerik/i.test(h.sulky.text || "") ? 1 : 0) : null,
     vagnByte: h.sulky ? (h.sulky.changed ? 1 : 0) : null,
     kuskByte: last && h.driverId ? (last.driverId && last.driverId !== h.driverId ? 1 : 0) : null,

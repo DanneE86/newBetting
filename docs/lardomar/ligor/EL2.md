@@ -1,6 +1,6 @@
 # League Two (EL2) – lärdomar
 
-Genererad 2026-09-29 av `node scripts/analyze-learnings.mjs`. Skriv inte för hand här: egna anteckningar läggs i `docs/lardomar/anteckningar/EL2.md`.
+Genererad 2026-10-04 av `node scripts/analyze-learnings.mjs`. Skriv inte för hand här: egna anteckningar läggs i `docs/lardomar/anteckningar/EL2.md`.
 
 Underlag: 4950 matcher, säsong 2017/18 – 2026/27. Marknad = stängningsodds utan marginal (Pinnacle, annars snitt av bolagen), öppningsodds finns för 4943 matcher. xG: skott-proxy (100 % av matcherna).
 
@@ -84,31 +84,31 @@ Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (
 
 Inga matcher från ligan i de sparade backtesten ännu.
 
-## Tabell nu (FotMob, 2026-09-29)
+## Tabell nu (FotMob, 2026-10-04)
 
 | # | Lag | M | V | O | F | Mål | +/− | P |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Barnet | 7 | 4 | 3 | 0 | 17-10 | 7 | 15 |
-| 2 | Cheltenham | 8 | 4 | 3 | 1 | 16-12 | 4 | 15 |
-| 3 | Bristol Rvs | 8 | 5 | 0 | 3 | 13-11 | 2 | 15 |
-| 4 | York | 8 | 4 | 2 | 2 | 16-10 | 6 | 14 |
-| 5 | Walsall | 8 | 3 | 5 | 0 | 11-5 | 6 | 14 |
-| 6 | Grimsby | 8 | 3 | 4 | 1 | 12-8 | 4 | 13 |
-| 7 | Salford | 8 | 4 | 1 | 3 | 12-10 | 2 | 13 |
-| 8 | Gillingham | 8 | 3 | 3 | 2 | 11-9 | 2 | 12 |
-| 9 | Crewe | 8 | 2 | 6 | 0 | 8-6 | 2 | 12 |
-| 10 | Tranmere | 8 | 2 | 5 | 1 | 10-8 | 2 | 11 |
-| 11 | Chesterfield | 8 | 3 | 2 | 3 | 11-10 | 1 | 11 |
-| 12 | Swindon | 8 | 3 | 2 | 3 | 9-12 | -3 | 11 |
-| 13 | Rotherham | 8 | 2 | 4 | 2 | 11-11 | 0 | 10 |
-| 14 | Fleetwood Town | 8 | 2 | 4 | 2 | 9-9 | 0 | 10 |
-| 15 | Colchester | 8 | 2 | 4 | 2 | 10-12 | -2 | 10 |
-| 16 | Rochdale | 8 | 3 | 1 | 4 | 9-11 | -2 | 10 |
-| 17 | Newport County | 8 | 2 | 3 | 3 | 12-12 | 0 | 9 |
-| 18 | Shrewsbury | 8 | 2 | 2 | 4 | 7-13 | -6 | 8 |
-| 19 | Accrington | 8 | 1 | 4 | 3 | 11-14 | -3 | 7 |
-| 20 | Oldham | 8 | 2 | 1 | 5 | 9-13 | -4 | 7 |
-| 21 | Exeter | 8 | 1 | 3 | 4 | 4-6 | -2 | 6 |
+| 1 | Salford | 9 | 5 | 1 | 3 | 13-10 | 3 | 16 |
+| 2 | Barnet | 7 | 4 | 3 | 0 | 17-10 | 7 | 15 |
+| 3 | Crewe | 9 | 3 | 6 | 0 | 11-7 | 4 | 15 |
+| 4 | Cheltenham | 9 | 4 | 3 | 2 | 16-14 | 2 | 15 |
+| 5 | Bristol Rvs | 9 | 5 | 0 | 4 | 14-14 | 0 | 15 |
+| 6 | York | 8 | 4 | 2 | 2 | 16-10 | 6 | 14 |
+| 7 | Walsall | 8 | 3 | 5 | 0 | 11-5 | 6 | 14 |
+| 8 | Chesterfield | 9 | 4 | 2 | 3 | 15-12 | 3 | 14 |
+| 9 | Grimsby | 9 | 3 | 4 | 2 | 13-10 | 3 | 13 |
+| 10 | Gillingham | 9 | 3 | 4 | 2 | 11-9 | 2 | 13 |
+| 11 | Rochdale | 9 | 4 | 1 | 4 | 10-11 | -1 | 13 |
+| 12 | Tranmere | 9 | 2 | 5 | 2 | 12-12 | 0 | 11 |
+| 13 | Swindon | 9 | 3 | 2 | 4 | 9-13 | -4 | 11 |
+| 14 | Shrewsbury | 9 | 3 | 2 | 4 | 9-14 | -5 | 11 |
+| 15 | Newport County | 9 | 2 | 4 | 3 | 12-12 | 0 | 10 |
+| 16 | Accrington | 9 | 2 | 4 | 3 | 13-14 | -1 | 10 |
+| 17 | Rotherham | 9 | 2 | 4 | 3 | 11-12 | -1 | 10 |
+| 18 | Fleetwood Town | 9 | 2 | 4 | 3 | 9-10 | -1 | 10 |
+| 19 | Colchester | 8 | 2 | 4 | 2 | 10-12 | -2 | 10 |
+| 20 | Exeter | 9 | 2 | 3 | 4 | 5-6 | -1 | 9 |
+| 21 | Oldham | 8 | 2 | 1 | 5 | 9-13 | -4 | 7 |
 | 22 | Northampton | 7 | 1 | 3 | 3 | 3-6 | -3 | 6 |
 | 23 | Port Vale | 7 | 1 | 2 | 4 | 3-9 | -6 | 5 |
 | 24 | Crawley Town | 7 | 1 | 1 | 5 | 6-13 | -7 | 4 |

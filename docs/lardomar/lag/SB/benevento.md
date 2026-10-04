@@ -1,10 +1,12 @@
 # Benevento (Serie B) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [SB](../../ligor/SB.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [SB](../../ligor/SB.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - 2022/23: −0,31 poäng per match mot marknaden. Ligan visar ingen persistens, så räkna inte med att det fortsätter.
+- Efter landslagsuppehåll: 1,37 poäng per match mot 1,32 annars (7-5-7 på 19 matcher), mot marknaden +0,10 mot −0,02. Ingen skillnad värd att spela på.
+- Svårt för: Pisa (1-3-2, 1,00 p/match, mot marknaden −0,50).
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -30,6 +32,40 @@ Form (äldst → senast): FVFFOFVV · senaste match 2026-09-19
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
 
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 19 | 7-5-7 | 1,37 | +0,10 |
+| Efter uppehåll sedan 2023 | 0 | – | – | – |
+| Övriga matcher | 212 | 76-51-85 | 1,32 | −0,02 |
+
+Hela ligan efter uppehåll: +0,00 mot marknaden (n 535). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2023-04-01 | Bari - Benevento | 2-0 F | −1,25 |
+| 2022-11-27 | Reggina - Benevento | 2-2 O | +0,73 |
+| 2022-10-02 | Benevento - Ascoli | 1-1 O | −0,84 |
+| 2022-04-02 | Benevento - Pisa | 5-1 V | +1,53 |
+| 2021-11-21 | Pisa - Benevento | 1-0 F | −1,64 |
+| 2021-10-17 | Cremonese - Benevento | 1-1 O | +0,58 |
+| 2021-09-10 | Benevento - Lecce | 0-0 O | −0,54 |
+| 2021-04-03 | Benevento - Parma | 2-2 O | −0,28 |
+| 2020-11-22 | Fiorentina - Benevento | 0-1 V | +2,17 |
+| 2020-10-18 | Roma - Benevento | 5-2 F | −0,69 |
+| 2019-11-23 | Benevento - Crotone | 2-0 V | +1,36 |
+| 2019-10-19 | Benevento - Perugia | 1-0 V | +1,17 |
+| 2019-09-16 | Salernitana - Benevento | 0-2 V | +1,17 |
+| 2018-10-22 | Benevento - Livorno | 1-0 V | +0,89 |
+| 2018-09-14 | Venezia - Benevento | 2-3 V | +1,31 |
+| 2018-03-31 | Lazio - Benevento | 6-2 F | −0,48 |
+| 2017-11-19 | Benevento - Sassuolo | 1-2 F | −1,20 |
+| 2017-10-16 | Verona - Benevento | 1-0 F | −1,19 |
+| 2017-09-10 | Benevento - Torino | 0-1 F | −0,99 |
+
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
 | Motståndare | M | V-O-F | Mål | Mot marknaden | Kryss mot odds | Senast |
@@ -51,7 +87,9 @@ Form (äldst → senast): FVFFOFVV · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): Pisa 1,00 p/match (−0,50).
+
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Antonio Floro Flores. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -60,37 +98,37 @@ Tränare: Antonio Floro Flores. Betyg, mål och assist gäller innevarande säso
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 22 | Manuel Esposito | Keeper | 21 | Italy | 318 k€ | – | 0 | 0 | 0/0 |  |
-| 26 | Gianmarco Vannucchi | GK | 31 | Italy | 328 k€ | 6,77 | 0 | 0 | 0/0 |  |
-| 96 | Alioune Sylla | Keeper | 23 | Senegal | 156 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Manuel Esposito | Keeper | 21 | Italy | 372 k€ | – | 0 | 0 | 0/0 |  |
+| 26 | Gianmarco Vannucchi | GK | 31 | Italy | 434 k€ | 6,77 | 0 | 0 | 0/0 |  |
+| 96 | Alioune Sylla | Keeper | 23 | Senegal | 290 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 5 | Luca Caldirola | CB | 35 | Italy | 134 k€ | 6,32 | 0 | 0 | 0/0 |  |
-| 13 | Raffaele Celia | LM | 27 | Italy | 169 k€ | – | 0 | 0 | 0/0 |  |
-| 14 | Stefano Scognamillo | CB | 32 | Italy | 400 k€ | 7,04 | 0 | 0 | 0/0 |  |
-| 15 | Christian Dalle Mura | CB | 24 | Italy | 446 k€ | 6,17 | 0 | 0 | 0/0 |  |
-| 20 | Pietro Beruatto | CB,LB,LM,CM | 27 | Italy | 479 k€ | 6,38 | 0 | 0 | 1/0 |  |
-| 23 | Pietro Saio | CB | 23 | Italy | 590 k€ | 6,82 | 0 | 0 | 0/0 |  |
-| 31 | Giacomo Ricci | LM | 30 | Italy | 233 k€ | – | 0 | 0 | 0/0 |  |
-| 77 | Edoardo Pierozzi | RB | 25 | Italy | 552 k€ | 6,94 | 1 | 0 | 0/0 |  |
+| 5 | Luca Caldirola | CB | 35 | Italy | 159 k€ | 6,32 | 0 | 0 | 0/0 |  |
+| 13 | Raffaele Celia | LM | 27 | Italy | 182 k€ | – | 0 | 0 | 0/0 |  |
+| 14 | Stefano Scognamillo | CB | 32 | Italy | 440 k€ | 7,04 | 0 | 0 | 0/0 |  |
+| 15 | Christian Dalle Mura | CB | 24 | Italy | 510 k€ | 6,17 | 0 | 0 | 0/0 |  |
+| 20 | Pietro Beruatto | CB,LB,LM,CM | 27 | Italy | 544 k€ | 6,38 | 0 | 0 | 1/0 |  |
+| 23 | Pietro Saio | CB | 23 | Italy | 652 k€ | 6,82 | 0 | 0 | 0/0 |  |
+| 31 | Giacomo Ricci | LM | 30 | Italy | 295 k€ | – | 0 | 0 | 0/0 |  |
+| 77 | Edoardo Pierozzi | RB | 25 | Italy | 612 k€ | 6,94 | 1 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 4 | Antonio Prisco | CDM | 22 | Italy | 832 k€ | 6,67 | 1 | 0 | 2/1 |  |
-| 6 | Antonis Siatounis | CDM | 24 | Greece | 282 k€ | 6,71 | 0 | 0 | 2/0 |  |
-| 8 | Mattia Maita | CDM,CAM | 32 | Italy | 384 k€ | 7,47 | 0 | 2 | 1/0 |  |
+| 4 | Antonio Prisco | CDM | 22 | Italy | 773 k€ | 6,67 | 1 | 0 | 2/1 |  |
+| 6 | Antonis Siatounis | CDM | 24 | Greece | 381 k€ | 6,71 | 0 | 0 | 2/0 |  |
+| 8 | Mattia Maita | CDM,CAM | 32 | Italy | 451 k€ | 7,47 | 0 | 2 | 1/0 |  |
 | 10 | Luigi Cherubini | CAM,RW,LW,LM,RM,CM | 22 | Italy | 2,3 M€ | 6,93 | 0 | 0 | 0/0 |  |
-| 16 | Mattia Mannini | CM,RM | 20 | Italy | 1,5 M€ | 6,05 | 0 | 0 | 0/0 |  |
-| 17 | Leonardo Sernicola | RM,RB,LB | 29 | Italy | 461 k€ | 7,01 | 0 | 0 | 1/0 |  |
-| 18 | Pier Luigi Simonetti | Midfielder | 25 | Italy | 272 k€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
-| 21 | Emanuele Schimmenti | Midfielder | 24 | Italy | 301 k€ | 6,28 | 0 | 0 | 0/0 |  |
-| 25 | Raffaele Romano | Midfielder | 21 | Italy | 713 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
-| 28 | Christian Kouan | CDM | 26 | Ivory Coast | 294 k€ | 6,96 | 0 | 1 | 3/0 |  |
+| 16 | Mattia Mannini | RM | 20 | Italy | 1,1 M€ | 6,05 | 0 | 0 | 0/0 |  |
+| 17 | Leonardo Sernicola | RM,RB,LB | 29 | Italy | 470 k€ | 7,01 | 0 | 0 | 1/0 |  |
+| 18 | Pier Luigi Simonetti | Midfielder | 25 | Italy | 307 k€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
+| 21 | Emanuele Schimmenti | Midfielder | 24 | Italy | 385 k€ | 6,28 | 0 | 0 | 0/0 |  |
+| 25 | Raffaele Romano | Midfielder | 21 | Italy | 703 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 28 | Christian Kouan | CDM | 26 | Ivory Coast | 446 k€ | 6,96 | 0 | 1 | 3/0 |  |
 | 38 | Angelo Talia | CAM | 23 | Italy | 315 k€ | 6,10 | 0 | 0 | 0/0 |  |
-| 80 | Matteo Donatiello | Midfielder | 20 | Italy | 410 k€ | – | 0 | 0 | 0/0 |  |
+| 80 | Matteo Donatiello | Midfielder | 20 | Italy | 387 k€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 9 | Francesco Paolo Salvemini | ST | 30 | Italy | – | 7,03 | 2 | 0 | 1/0 |  |
-| 11 | Davide Lamesta | RW | 26 | Italy | 546 k€ | 7,10 | 1 | 1 | 0/0 |  |
+| 11 | Davide Lamesta | RW | 26 | Italy | 656 k€ | 7,10 | 1 | 1 | 0/0 |  |
 | 24 | Marco Giugliano | LW | 18 | Italy | – | – | 0 | 0 | 0/0 |  |
 | 29 | David Okereke | ST,CAM | 29 | Nigeria | 897 k€ | 7,47 | 1 | 0 | 0/0 |  |
 | 30 | Logan | Attacker | 20 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 32 | Guglielmo Mignani | Attacker | 24 | Italy | 366 k€ | 5,96 | 0 | 0 | 0/0 |  |
-| 90 | Simone Verdi | ST | 34 | Italy | 159 k€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
-| 93 | Marco Tumminello | ST | 27 | Italy | 373 k€ | 6,25 | 0 | 0 | 1/0 |  |
+| 32 | Guglielmo Mignani | Attacker | 24 | Italy | 423 k€ | 5,96 | 0 | 0 | 0/0 |  |
+| 90 | Simone Verdi | ST | 34 | Italy | 161 k€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
+| 93 | Marco Tumminello | ST | 27 | Italy | 399 k€ | 6,25 | 0 | 0 | 1/0 |  |

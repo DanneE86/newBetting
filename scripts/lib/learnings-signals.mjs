@@ -3,6 +3,7 @@
 import path from 'node:path';
 import { UNDERSTAT, attachXg, loadMatches, root } from './learnings-data.mjs';
 import { historicalMissing, findUsMatch, loadPlayerModel } from '../pro/players.mjs';
+import { extraSignals } from './extra-signals.mjs';
 
 export const FORM_N = 8;     // senaste ligamatcherna for form/tur
 export const H2H_YEARS = 8;
@@ -59,6 +60,49 @@ export function h2hFeatures(meetings, hk, date) {
     h2hPts: avg(persp.map((x) => x.pts - x.opp)),
     h2hDraw: avg(persp.map((x) => x.draw - x.pD)),
   };
+}
+
+/**
+ * Landslagsuppehall ur ligans spelschema: datum da ligan startar igen efter ett ligaovergripande uppehall pa
+ * minGap–maxGap dagar som slutar i sep–dec eller mar–apr (FIFA-fonstren + VM-uppehallet 2022). Sommaruppehall och
+ * vinteruppehall over maxGap raknas inte.
+ */
+export function breakEnds(dates, { minGap = 12, maxGap = 50, months = [9, 10, 11, 12, 3, 4] } = {}) {
+  const ds = [...new Set(dates)].sort();
+  const out = [];
+  for (let i = 1; i < ds.length; i++) {
+    const gap = (Date.parse(ds[i]) - Date.parse(ds[i - 1])) / 864e5;
+    if (gap >= minGap && gap <= maxGap && months.includes(Number(ds[i].slice(5, 7)))) out.push(ds[i]);
+  }
+  return out;
+}
+
+/** Varje lags forsta ligamatch efter ett landslagsuppehall (inom `window` dagar fran omstarten). Set med "lag|datum". */
+export function afterBreakKeys(list, { window = 4, ...opts } = {}) {
+  const ends = breakEnds(list.map((m) => m.date), opts);
+  const keys = new Set();
+  const seen = new Set();
+  const sorted = [...list].sort((a, b) => a.date.localeCompare(b.date));
+  for (const e of ends) {
+    for (const m of sorted) {
+      const d = (Date.parse(m.date) - Date.parse(e)) / 864e5;
+      if (d < 0 || d > window) continue;
+      for (const t of [m.home, m.away]) {
+        if (seen.has(`${t}|${e}`)) continue;
+        seen.add(`${t}|${e}`);
+        keys.add(`${t}|${m.date}`);
+      }
+    }
+  }
+  return keys;
+}
+
+/** Motstandare laget har svart for: minst minN moten och hogst maxPpg poang per match eller hogst maxRes mot marknaden. */
+export function hardOpponents(h2h, { minN = 6, maxPpg = 1.2, maxRes = -0.3 } = {}) {
+  return (h2h ?? [])
+    .map((h) => ({ ...h, ppg: (3 * h.w + h.d) / h.n }))
+    .filter((h) => h.n >= minN && (h.ppg <= maxPpg || h.res <= maxRes))
+    .sort((a, b) => a.ppg - b.ppg || a.res - b.res);
 }
 
 /**
@@ -153,6 +197,7 @@ export function buildSignals({ players = true, log = console.log } = {}) {
     if (m.pinClose && m.avgClose) f.book = expPts(m.avgClose) - expPts(m.pinClose);
     if (m.overClose != null) f.under = 1 - m.overClose;
     if (m.overOpen != null) f.underOpen = 1 - m.overOpen;
+    Object.assign(f, extraSignals(m.league, m.season, m.home, m.away));
     m.f = f;
     m.y = pts(m.hg, m.ag) - expPts(m.close);
     m.yD = (m.res === 'D' ? 1 : 0) - m.close[1];

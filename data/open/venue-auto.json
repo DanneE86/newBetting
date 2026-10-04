@@ -2738,27 +2738,6 @@
       "Victor Fors"
     ]
   },
-  "Angelholm": {
-    "team": "Angelholm",
-    "wiki": "Ängelholms FF",
-    "qid": "Q255225",
-    "venue": "Ängelholms IP",
-    "lat": 56.234444,
-    "lon": 12.856389,
-    "source": "wikidata-auto"
-  },
-  "Hässleholms IF": {
-    "team": "Hässleholms IF",
-    "source": "wikidata-auto",
-    "notFound": true,
-    "searched": [
-      "Hässleholms IF",
-      "IFK Hässleholm",
-      "Isak Bjerkebo",
-      "Lennart Larsson (footballer)",
-      "Tobias Linderoth"
-    ]
-  },
   "Rosengård": {
     "team": "Rosengård",
     "wiki": "FC Rosengård",
@@ -2820,18 +2799,6 @@
       "Ettan Fotboll",
       "Edriss Hushmand",
       "List of diaspora football clubs in Sweden"
-    ]
-  },
-  "Eskilsminne IF": {
-    "team": "Eskilsminne IF",
-    "source": "wikidata-auto",
-    "notFound": true,
-    "searched": [
-      "Eskilsminne IF",
-      "Filip Ottosson",
-      "Abdul Arshad",
-      "Marcus Nilsson (footballer)",
-      "Alexander Zaim"
     ]
   },
   "Ljungskile": {
@@ -2963,15 +2930,6 @@
     "notFound": true,
     "searched": []
   },
-  "Lunds BK": {
-    "team": "Lunds BK",
-    "wiki": "Lunds BK",
-    "qid": "Q1456427",
-    "venue": "Klostergårdens IP",
-    "lat": 55.69527778,
-    "lon": 13.18,
-    "source": "wikidata-auto"
-  },
   "Team TG": {
     "team": "Team TG",
     "wiki": "Team TG FF",
@@ -2990,15 +2948,6 @@
     "lon": 13.4935,
     "source": "wikidata-auto"
   },
-  "Vasalunds": {
-    "team": "Vasalunds",
-    "wiki": "Vasalund IF",
-    "qid": "Q602918",
-    "venue": "Skytteholms IP",
-    "lat": 59.35944444,
-    "lon": 17.99361111,
-    "source": "wikidata-auto"
-  },
   "Karlberg": {
     "team": "Karlberg",
     "source": "wikidata-auto",
@@ -3010,15 +2959,6 @@
       "Ettan Fotboll",
       "Stockholm"
     ]
-  },
-  "Assyriska FF": {
-    "team": "Assyriska FF",
-    "wiki": "Assyriska FF",
-    "qid": "Q746046",
-    "venue": "Södertälje fotbollsarena",
-    "lat": 59.187558701,
-    "lon": 17.570436431,
-    "source": "wikidata-auto"
   },
   "Stockholm Internazionale": {
     "team": "Stockholm Internazionale",
@@ -3656,15 +3596,6 @@
     "lon": 8.439444,
     "source": "wikidata-auto"
   },
-  "NK Lokomotiva": {
-    "team": "NK Lokomotiva",
-    "wiki": "NK Lokomotiva Zagreb",
-    "qid": "Q959086",
-    "venue": "Stadion Maksimir",
-    "lat": 45.818858333,
-    "lon": 16.018077777,
-    "source": "wikidata-auto"
-  },
   "Vukovar": {
     "team": "Vukovar",
     "source": "wikidata-auto",
@@ -3731,15 +3662,6 @@
     "lon": 16.431667,
     "source": "wikidata-auto"
   },
-  "NK Istra 1961": {
-    "team": "NK Istra 1961",
-    "wiki": "NK Istra 1961",
-    "qid": "Q725916",
-    "venue": "Stadion Aldo Drosina",
-    "lat": 44.861565,
-    "lon": 13.851561,
-    "source": "wikidata-auto"
-  },
   "Dresden": {
     "team": "Dresden",
     "wiki": "Dynamo Dresden",
@@ -3747,15 +3669,6 @@
     "venue": "Rudolf-Harbig-Stadion",
     "lat": 51.040278,
     "lon": 13.747778,
-    "source": "wikidata-auto"
-  },
-  "NK Varaždin": {
-    "team": "NK Varaždin",
-    "wiki": "NK Varaždin (2012)",
-    "qid": "Q16958147",
-    "venue": "Stadion Varteks",
-    "lat": 46.293333333,
-    "lon": 16.344166666,
     "source": "wikidata-auto"
   },
   "HNK Gorica": {
@@ -4805,15 +4718,6 @@
     "lon": 23.148889,
     "source": "wikidata-auto"
   },
-  "ARARAT-ARMENIA": {
-    "team": "ARARAT-ARMENIA",
-    "wiki": "FC Ararat-Armenia",
-    "qid": "Q39056364",
-    "venue": "Football Academy Stadium (Yerevan)",
-    "lat": 40.22111111,
-    "lon": 44.55527778,
-    "source": "wikidata-auto"
-  },
   "Olympiacos": {
     "team": "Olympiacos",
     "wiki": "Olympiacos F.C.",
@@ -4848,15 +4752,6 @@
     "venue": "Roazhon Park",
     "lat": 48.10743,
     "lon": -1.71282,
-    "source": "wikidata-auto"
-  },
-  "OFI CRETE": {
-    "team": "OFI CRETE",
-    "wiki": "OFI Crete F.C.",
-    "qid": "Q931704",
-    "venue": "Theodoros Vardinogiannis Stadium",
-    "lat": 35.338056,
-    "lon": 25.114722,
     "source": "wikidata-auto"
   },
   "TSG Hoffenheim": {
@@ -5957,6 +5852,15 @@
     "venue": "Estadi de la Nova Creu Alta",
     "lat": 41.554722,
     "lon": 2.091944,
+    "source": "wikidata-auto"
+  },
+  "Ararat-Armenia": {
+    "team": "Ararat-Armenia",
+    "wiki": "FC Ararat-Armenia",
+    "qid": "Q39056364",
+    "venue": "Football Academy Stadium (Yerevan)",
+    "lat": 40.22111111,
+    "lon": 44.55527778,
     "source": "wikidata-auto"
   }
 }

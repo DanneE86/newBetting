@@ -1,10 +1,12 @@
 # Sao Paulo (Brasileirão Série A) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [BR](../../ligor/BR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [BR](../../ligor/BR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
-- Inget som avviker från marknaden. Följ oddsen.
+- Spelstil 2026: Bollinnehav, Kortpass, Medel på fasta, Svag mot fasta. Bäst mot Svag mot fasta (+0,25, svagt), Balanserat (+0,13, samma håll i båda halvorna men svagt), Högpress (+0,13, svagt). Svårast mot Backar hem (−0,20, samma håll i båda halvorna men svagt), Blandat (−0,15, samma håll i båda halvorna men svagt), Svag på fasta (−0,13, samma håll i båda halvorna men svagt). Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2026: 0,21 mål för per match (xG 0,24), 0,39 emot (xG 0,24), 6,9 hörnor.
+- Svårt för: Palmeiras (2-5-10, 0,65 p/match, mot marknaden −0,46), Atletico-MG (4-6-6, 1,13 p/match, mot marknaden −0,18), Vasco (4-2-6, 1,17 p/match, mot marknaden −0,41), Botafogo RJ (4-4-5, 1,23 p/match, mot marknaden −0,36), Chapecoense-SC (3-2-2, 1,57 p/match, mot marknaden −0,30). Där marknaden ligger nära noll är laget bara sämre i de mötena än annars, och oddsen vet redan om det.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -36,6 +38,52 @@ Form (äldst → senast): OFOFVVFV · senaste match 2026-09-20
 | 2025 | BR | 38 | 1,34 | −0,09 (+0,06 / −0,24) | 24 % (30 %) | 1,13–1,24 | – | – |
 | 2026 | BR | 27 | 1,33 | −0,10 (+0,40 / −0,57) | 22 % (28 %) | 1,19–1,11 | – | – |
 
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/BR.md#sao-paulo) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2026: **Bollinnehav, Kortpass, Medel på fasta, Svag mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026 | 28 | 0,21 | 0,24 | 0,39 | 0,24 | 6,9 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Backar hem | 82 | 1,12–1,15 | −0,19 | −0,20 (−1,6) | −5 pe | – | ✔ samma håll |
+| Balanserat | 105 | 1,36–1,06 | +0,14 | +0,13 (1,2) | +6 pe | – | ✔ samma håll |
+| Bollinnehav | 74 | 1,05–1,03 | +0,05 | +0,04 (0,3) | −2 pe | – | svag |
+| Kortpass | 67 | 1,24–1,03 | +0,15 | +0,13 (0,9) | −7 pe | – | ✔ samma håll |
+| Blandat | 102 | 1,15–1,26 | −0,14 | −0,15 (−1,2) | +1 pe | – | ✔ samma håll |
+| Direktspel | 92 | 1,23–0,90 | +0,08 | +0,07 (0,6) | +5 pe | – | svag |
+| Lågpress | 77 | 1,18–1,00 | +0,03 | +0,02 (0,2) | +1 pe | – | ✔ samma håll |
+| Mellanpress | 100 | 1,23–1,10 | −0,11 | −0,12 (−1,1) | +7 pe | – | svag |
+| Högpress | 84 | 1,18–1,12 | +0,14 | +0,13 (1,0) | −8 pe | – | svag |
+| Svag på fasta | 98 | 1,05–1,10 | −0,11 | −0,13 (−1,1) | +6 pe | – | ✔ samma håll |
+| Medel på fasta | 74 | 1,26–1,07 | +0,05 | +0,04 (0,3) | −3 pe | – | svag |
+| Farlig på fasta | 77 | 1,31–1,03 | +0,09 | +0,08 (0,6) | −2 pe | – | ✔ samma håll |
+| Stark mot fasta | 84 | 1,08–0,87 | −0,08 | −0,09 (−0,8) | +6 pe | – | ✔ samma håll |
+| Medel mot fasta | 102 | 1,20–1,33 | −0,06 | −0,07 (−0,6) | +0 pe | – | svag |
+| Svag mot fasta | 54 | 1,35–0,87 | +0,27 | +0,25 (1,6) | −5 pe | – | svag |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
+
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 3 | 3-0-0 | 3,00 | +0,94 |
+| Efter uppehåll sedan 2023 | 2 | 2-0-0 | 3,00 | +1,14 |
+| Övriga matcher | 556 | 226-156-174 | 1,50 | −0,05 |
+
+Hela ligan efter uppehåll: −0,04 mot marknaden (n 58). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2026-03-12 | Sao Paulo - Chapecoense-SC | 2-0 V | +0,81 |
+| 2025-09-14 | Sao Paulo - Botafogo RJ | 1-0 V | +1,46 |
+| 2016-12-11 | Sao Paulo - Santa Cruz | 5-0 V | +0,56 |
+
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
 | Motståndare | M | V-O-F | Mål | Mot marknaden | Kryss mot odds | Senast |
@@ -48,9 +96,9 @@ Form (äldst → senast): OFOFVVFV · senaste match 2026-09-20
 | Fluminense | 15 | 6-2-7 | 18–25 | −0,10 | −16 pe | 2026-05-16 1-2 (b) |
 | Gremio | 15 | 6-3-6 | 16–18 | −0,09 | −9 pe | 2026-08-08 1-2 (b) |
 | Athletico-PR | 14 | 7-4-3 | 17–10 | +0,21 | −0 pe | 2026-07-23 1-2 (h) |
-| Botafogo RJ | 14 | 4-5-5 | 18–15 | −0,36 | +8 pe | 2026-05-23 1-1 (h) |
 | Bragantino | 14 | 5-5-4 | 18–15 | +0,01 | +6 pe | 2026-08-30 2-1 (h) |
 | Bahia | 13 | 6-5-2 | 17–8 | +0,22 | +9 pe | 2026-05-03 2-2 (h) |
+| Botafogo RJ | 13 | 4-4-5 | 16–13 | −0,36 | +4 pe | 2026-05-23 1-1 (h) |
 | Santos | 13 | 4-5-4 | 16–15 | −0,24 | +9 pe | 2026-02-04 1-1 (b) |
 | Vasco | 12 | 4-2-6 | 15–18 | −0,41 | −12 pe | 2026-04-18 1-2 (b) |
 | Cruzeiro | 10 | 5-2-3 | 11–6 | +0,25 | −11 pe | 2026-04-04 4-1 (h) |
@@ -62,44 +110,46 @@ Form (äldst → senast): OFOFVVFV · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): Palmeiras 0,65 p/match (−0,46), Atletico-MG 1,13 p/match (−0,18), Vasco 1,17 p/match (−0,41), Botafogo RJ 1,23 p/match (−0,36), Chapecoense-SC 1,57 p/match (−0,30).
+
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Dorival Júnior. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Aurélio Buta (skadad, åter Late November 2026), Domingos Duarte (skadad, åter Out for season), Lucas Moura (skadad, åter Late October 2026), Damián Bobadilla (osäker)
+**Skadade/borta nu:** Rafael (osäker), Iago Borduchi (osäker), Wendell (osäker), Aurélio Buta (skadad, åter Late November 2026), Domingos Duarte (skadad, åter Out for season), Lucas Moura (skadad, åter Late October 2026), Danielzinho (osäker), Luciano (osäker)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 23 | Rafael | GK | 37 | Brazil | 877 k€ | – | 0 | 0 | 0/0 |  |
+| 23 | Rafael | GK | 37 | Brazil | 941 k€ | – | 0 | 0 | 0/0 | osäker |
 | 31 | Carlos Coronel | GK | 29 | Paraguay | 1,1 M€ | – | 0 | 0 | 0/0 |  |
 | 50 | Young | GK | 24 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Rafael Tolói | CB | 35 | Italy | 433 k€ | – | 0 | 0 | 0/0 |  |
-| 5 | Robert Arboleda | CB | 34 | Ecuador | 505 k€ | – | 0 | 0 | 0/0 |  |
-| 12 | Iago Borduchi | LB,LWB | 29 | Brazil | 2,2 M€ | – | 0 | 0 | 0/0 |  |
+| 2 | Rafael Tolói | CB | 35 | Italy | 424 k€ | – | 0 | 0 | 0/0 |  |
+| 5 | Robert Arboleda | CB | 34 | Ecuador | 633 k€ | – | 0 | 0 | 0/0 |  |
+| 12 | Iago Borduchi | LB,LWB | 29 | Brazil | 2,3 M€ | – | 0 | 0 | 0/0 | osäker |
 | 13 | Enzo Díaz | LB,LWB | 30 | Argentina | 2,0 M€ | – | 0 | 0 | 0/0 |  |
-| 18 | Wendell | LB,LWB | 33 | Brazil | 1,2 M€ | – | 0 | 0 | 0/0 |  |
-| 19 | Lucas Ramon | RB,RWB | 32 | Brazil | 714 k€ | – | 0 | 0 | 0/0 |  |
+| 18 | Wendell | LB,LWB | 33 | Brazil | 1,2 M€ | – | 0 | 0 | 0/0 | osäker |
+| 19 | Lucas Ramon | RB,RWB | 32 | Brazil | 814 k€ | – | 0 | 0 | 0/0 |  |
 | 20 | Aurélio Buta | RB,RM | 29 | Portugal | 1,2 M€ | – | 0 | 0 | 0/0 | skadad, åter Late November 2026 |
-| 22 | Domingos Duarte | CB | 31 | Portugal | 788 k€ | – | 0 | 0 | 0/0 | skadad, åter Out for season |
-| 35 | Sabino | CB | 29 | Brazil | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 22 | Domingos Duarte | CB | 31 | Portugal | 1,3 M€ | – | 0 | 0 | 0/0 | skadad, åter Out for season |
+| 35 | Sabino | CB | 29 | Brazil | 1,2 M€ | – | 0 | 0 | 0/0 |  |
 | 44 | Matheus Belém | CB | 23 | Brazil | 575 k€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 6 | Cédric Soares | RB,RWB,RM | 35 | Portugal | 544 k€ | – | 0 | 0 | 0/0 |  |
-| 7 | Lucas Moura | CAM,ST | 34 | Brazil | 1,2 M€ | – | 0 | 0 | 0/0 | skadad, åter Late October 2026 |
-| 8 | Marcos Antônio | CDM,CM,CAM,LM,RW | 26 | Brazil | 7,9 M€ | – | 0 | 0 | 0/0 |  |
-| 21 | Damián Bobadilla | CDM,CM,CAM | 25 | Paraguay | 3,2 M€ | – | 0 | 0 | 0/0 | osäker |
+| 6 | Cédric Soares | RB,RWB,RM | 35 | Portugal | 545 k€ | – | 0 | 0 | 0/0 |  |
+| 7 | Lucas Moura | CAM,ST | 34 | Brazil | 1,1 M€ | – | 0 | 0 | 0/0 | skadad, åter Late October 2026 |
+| 8 | Marcos Antônio | CDM,CM,CAM,LM,RW | 26 | Brazil | 13,7 M€ | – | 0 | 0 | 0/0 |  |
+| 21 | Damián Bobadilla | CDM,CM,CAM | 25 | Paraguay | 9,3 M€ | – | 0 | 0 | 0/0 |  |
 | 28 | Newton | CB,CDM,CM | 26 | Brazil | 2,2 M€ | – | 0 | 0 | 0/0 |  |
-| 29 | Pablo Maia | CDM,CM | 24 | Brazil | 4,7 M€ | – | 0 | 0 | 0/0 |  |
-| 94 | Danielzinho | CDM,CM,CAM,CB | 31 | Brazil | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 29 | Pablo Maia | CDM,CM | 24 | Brazil | 5,6 M€ | – | 0 | 0 | 0/0 |  |
+| 94 | Danielzinho | CDM,CM,CAM,CB | 31 | Brazil | 1,1 M€ | – | 0 | 0 | 0/0 | osäker |
 | | **Anfallare** | | | | | | | | | |
 | 9 | Jonathan Calleri | ST | 33 | Argentina | 1,0 M€ | – | 0 | 0 | 0/0 |  |
-| 10 | Luciano | ST,CAM | 33 | Brazil | 1,1 M€ | – | 0 | 0 | 0/0 |  |
-| 11 | Ferreira | LW,ST,LM | 28 | Brazil | 2,3 M€ | – | 0 | 0 | 0/0 |  |
+| 10 | Luciano | ST,CAM | 33 | Brazil | 1,1 M€ | – | 0 | 0 | 0/0 | osäker |
+| 11 | Ferreira | LW,LM,ST | 28 | Brazil | 2,5 M€ | – | 0 | 0 | 0/0 |  |
 | 17 | André Silva | ST,CAM | 29 | Brazil | 2,1 M€ | – | 0 | 0 | 0/0 |  |
 | 27 | Victor Sá | LW | 32 | Brazil | 1,7 M€ | – | 0 | 0 | 0/0 |  |
-| 37 | Artur | RW,CAM,RM | 28 | Brazil | 3,5 M€ | – | 0 | 0 | 0/0 |  |
+| 37 | Artur | RW,CAM,RM | 28 | Brazil | 8,3 M€ | – | 0 | 0 | 0/0 |  |
 | 80 | Cauly | LW,CAM | 31 | Brazil | 2,0 M€ | – | 0 | 0 | 0/0 |  |
 
 Har lämnat truppen sedan vi började spara (22): Pedro Lima (senast 2026-09-29), Igão (senast 2026-09-29), Isac (senast 2026-09-29), Juan Potes (senast 2026-09-29), Ryan Francisco (senast 2026-09-29), Lucca Marques (senast 2026-09-29), Paulinho (senast 2026-09-29), Nicolas (senast 2026-09-29), Pedro Ferreira (senast 2026-09-29), Felipe Preis (senast 2026-09-29), Igor Felisberto (senast 2026-09-29), Tetê (senast 2026-09-29), Djhordney (senast 2026-09-29), João Pedro (senast 2026-09-29), Felipe Oliveira (senast 2026-09-29), Matheus Ferreira (senast 2026-09-29), Luis Osorio (senast 2026-09-29), Robert William (senast 2026-09-29), Guilherme Reis (senast 2026-09-29), Pedro Bezerra (senast 2026-09-29), Brenno Junqueira (senast 2026-09-29), Gustavo Santana (senast 2026-09-29).

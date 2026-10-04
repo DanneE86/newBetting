@@ -1,20 +1,24 @@
 # FC Dallas (MLS) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Stark historik mot Sporting Kansas City (+0,55 p/match mot marknaden, 18 möten), Austin FC (+0,51 p/match mot marknaden, 16 möten), Vancouver Whitecaps (−0,59 p/match mot marknaden, 16 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Spelstil 2026: Backar hem, Kortpass, Mellanpress, Medel på fasta, Stark mot fasta. Bäst mot Kortpass (+0,19, svagt), Stark mot fasta (+0,11, samma håll i båda halvorna men svagt), Medel på fasta (+0,08, svagt). Svårast mot Svag mot fasta (−0,09, svagt), Farlig på fasta (−0,07, samma håll i båda halvorna men svagt), Lågpress (−0,05, svagt). Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2026: 0,22 mål för per match (xG 0,26), 0,22 emot (xG 0,17), 4,4 hörnor.
+- Höghöjd: borta på höghöjd 0,88 poäng per match mot 0,97 i övriga bortamatcher (17 matcher, mot marknaden −0,25 mot −0,07).
+- Svårt för: Vancouver Whitecaps (2-5-9, 0,69 p/match, mot marknaden −0,59), Seattle Sounders (3-6-9, 0,83 p/match, mot marknaden −0,24), Nashville SC (2-2-4, 1,00 p/match, mot marknaden −0,39), Los Angeles FC (4-2-8, 1,00 p/match, mot marknaden +0,10), Minnesota United (5-6-8, 1,11 p/match, mot marknaden −0,25), Colorado Rapids (5-3-8, 1,13 p/match, mot marknaden −0,25). Där marknaden ligger nära noll är laget bara sämre i de mötena än annars, och oddsen vet redan om det.
 
 ## Nuläge (senaste 8 ligamatcher)
 
-Form (äldst → senast): VVFOVVVO · senaste match 2026-09-20
+Form (äldst → senast): VFOVVVOV · senaste match 2026-09-27
 
 | Mått | Värde |
 |---|---|
 | Tur (poäng − xP per match) | – |
 | xG-målskillnad − målskillnad | – |
-| Poäng mot marknaden per match | +0,73 |
+| Poäng mot marknaden per match | +0,71 |
 
 ## Säsonger
 
@@ -34,7 +38,55 @@ Form (äldst → senast): VVFOVVVO · senaste match 2026-09-20
 | 2023 | MLS | 37 | 1,32 | +0,04 (+0,06 / +0,01) | 35 % (27 %) | 1,19–1,11 | – | – |
 | 2024 | MLS | 34 | 1,21 | +0,06 (+0,38 / −0,26) | 24 % (26 %) | 1,59–1,65 | – | – |
 | 2025 | MLS | 36 | 1,25 | +0,18 (−0,24 / +0,61) | 33 % (25 %) | 1,47–1,64 | – | – |
-| 2026 | MLS | 26 | 1,69 | +0,35 (+0,05 / +0,61) | 31 % (24 %) | 1,88–1,62 | – | – |
+| 2026 | MLS | 27 | 1,74 | +0,39 (+0,16 / +0,61) | 30 % (24 %) | 1,85–1,56 | – | – |
+
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/MLS.md#fc-dallas) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2026: **Backar hem, Kortpass, Mellanpress, Medel på fasta, Stark mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026 | 27 | 0,22 | 0,26 | 0,22 | 0,17 | 4,4 |
+| 2025 | 36 | 0,19 | 0,22 | 0,25 | 0,31 | 3,6 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Backar hem | 110 | 1,37–1,31 | −0,04 | −0,03 (−0,3) | +4 pe | – | svag |
+| Balanserat | 113 | 1,50–1,42 | −0,03 | −0,03 (−0,3) | +10 pe | – | ✔ samma håll |
+| Bollinnehav | 91 | 1,53–1,43 | +0,08 | +0,08 (0,7) | +8 pe | – | svag |
+| Kortpass | 50 | 1,72–1,74 | +0,19 | +0,19 (1,1) | −1 pe | – | svag |
+| Blandat | 145 | 1,36–1,32 | −0,03 | −0,03 (−0,3) | +8 pe | – | svag |
+| Direktspel | 119 | 1,48–1,30 | −0,05 | −0,05 (−0,4) | +10 pe | – | svag |
+| Lågpress | 118 | 1,49–1,32 | −0,06 | −0,05 (−0,5) | +12 pe | – | svag |
+| Mellanpress | 121 | 1,36–1,42 | +0,00 | +0,01 (0,1) | +4 pe | – | ✔ samma håll |
+| Högpress | 75 | 1,57–1,41 | +0,08 | +0,08 (0,5) | +7 pe | – | svag |
+| Svag på fasta | 98 | 1,64–1,43 | −0,03 | −0,03 (−0,3) | +11 pe | – | svag |
+| Medel på fasta | 117 | 1,44–1,30 | +0,08 | +0,08 (0,8) | +6 pe | – | svag |
+| Farlig på fasta | 99 | 1,31–1,43 | −0,07 | −0,07 (−0,6) | +6 pe | – | ✔ samma håll |
+| Stark mot fasta | 93 | 1,42–1,17 | +0,11 | +0,11 (0,9) | +6 pe | – | ✔ samma håll |
+| Medel mot fasta | 139 | 1,50–1,45 | −0,02 | −0,02 (−0,2) | +8 pe | – | svag |
+| Svag mot fasta | 82 | 1,45–1,50 | −0,09 | −0,09 (−0,7) | +9 pe | – | svag |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
+
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 4 | 1-2-1 | 1,25 | +0,44 |
+| Efter uppehåll sedan 2023 | 1 | 1-0-0 | 3,00 | +1,55 |
+| Övriga matcher | 507 | 190-150-167 | 1,42 | +0,06 |
+
+Hela ligan efter uppehåll: −0,00 mot marknaden (n 121). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2026-04-05 | DC United - FC Dallas | 0-4 V | +1,55 |
+| 2020-11-23 | Portland Timbers - FC Dallas | 1-1 O | +0,63 |
+| 2019-10-19 | Seattle Sounders - FC Dallas | 3-3 O | +0,87 |
+| 2015-11-23 | Portland Timbers - FC Dallas | 3-1 F | −1,30 |
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -44,14 +96,14 @@ Form (äldst → senast): VVFOVVVO · senaste match 2026-09-20
 | Houston Dynamo | 18 | 7-7-4 | 30–23 | +0,19 | +12 pe | 2026-03-22 4-3 (h) |
 | Seattle Sounders | 18 | 3-6-9 | 16–21 | −0,24 | +8 pe | 2026-04-26 1-2 (b) |
 | Sporting Kansas City | 18 | 11-2-5 | 37–28 | +0,55 | −13 pe | 2026-09-06 4-3 (h) |
-| Portland Timbers | 17 | 6-7-4 | 25–18 | +0,11 | +16 pe | 2026-09-13 2-1 (h) |
 | Austin FC | 16 | 9-4-3 | 26–18 | +0,51 | −2 pe | 2026-09-20 0-0 (h) |
 | Colorado Rapids | 16 | 5-3-8 | 23–27 | −0,25 | −6 pe | 2026-05-24 2-1 (b) |
+| Portland Timbers | 16 | 6-6-4 | 25–18 | +0,13 | +12 pe | 2026-09-13 2-1 (h) |
 | Real Salt Lake | 16 | 7-6-3 | 30–23 | +0,36 | +11 pe | 2026-08-20 4-3 (b) |
 | Vancouver Whitecaps | 16 | 2-5-9 | 15–30 | −0,59 | +7 pe | 2026-08-23 0-5 (b) |
 | Los Angeles Galaxy | 15 | 8-3-4 | 28–18 | +0,43 | −4 pe | 2026-08-02 0-0 (b) |
+| Los Angeles FC | 14 | 4-2-8 | 14–20 | +0,10 | −8 pe | 2026-09-27 1-0 (h) |
 | San Jose Earthquakes | 14 | 3-8-3 | 23–23 | −0,17 | +32 pe | 2026-05-17 3-2 (b) |
-| Los Angeles FC | 13 | 3-2-8 | 13–20 | −0,00 | −7 pe | 2026-03-08 0-1 (b) |
 | Nashville SC | 8 | 2-2-4 | 4–10 | −0,39 | −3 pe | 2026-03-01 0-0 (h) |
 | St. Louis City | 8 | 3-4-1 | 13–7 | +0,29 | +25 pe | 2026-08-31 3-3 (b) |
 | DC United | 5 | 3-0-2 | 10–5 | +0,49 | −27 pe | 2026-04-05 4-0 (b) |
@@ -71,48 +123,61 @@ Form (äldst → senast): VVFOVVVO · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): Vancouver Whitecaps 0,69 p/match (−0,59), Seattle Sounders 0,83 p/match (−0,24), Nashville SC 1,00 p/match (−0,39), Los Angeles FC 1,00 p/match (+0,10), Minnesota United 1,11 p/match (−0,25), Colorado Rapids 1,13 p/match (−0,25).
+
+## Höghöjd
+
+Arenans höjd: ca 200 m. Höghöjdsmatch = arena ≥ 1500 m och bortalaget från minst 1000 m lägre.
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Borta på höghöjd | 17 | 3-6-8 | 0,88 | −0,25 |
+| Borta övriga | 239 | 53-72-114 | 0,97 | −0,07 |
+
+Ligan: se [MLS](../../ligor/MLS.md#höghöjd).
+
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Eric Quill. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 30 | Michael Collodi | GK | 25 | USA | 183 k€ | 6,88 | 0 | 0 | 2/0 |  |
-| 40 | Jonathan Sirois | GK | 25 | Canada | 356 k€ | 7,23 | 0 | 0 | 0/0 |  |
-| 42 | Daniel | GK | 32 | Brazil | 432 k€ | 7,31 | 0 | 0 | 4/0 |  |
+| 30 | Michael Collodi | GK | 25 | USA | 151 k€ | 6,88 | 0 | 0 | 2/0 |  |
+| 40 | Jonathan Sirois | GK | 25 | Canada | 326 k€ | 7,23 | 0 | 0 | 0/0 |  |
+| 42 | Daniel | GK | 32 | Brazil | 482 k€ | 7,31 | 0 | 0 | 4/0 |  |
 | | **Backar** | | | | | | | | | |
 | 2 | Geovane Jesus | RB | 25 | Brazil | 417 k€ | – | 0 | 0 | 0/0 |  |
-| 3 | Osaze Urhoghide | CB | 26 | England | 1,4 M€ | 7,16 | 2 | 1 | 6/0 |  |
+| 3 | Osaze Urhoghide | CB | 26 | England | 1,5 M€ | 7,16 | 2 | 1 | 6/0 |  |
 | 5 | Lalas Abubakar | CB | 31 | Ghana | 50 k€ | 6,13 | 1 | 0 | 2/0 |  |
-| 18 | Shaq Moore | CB,RB,RM | 29 | USA | 674 k€ | 7,01 | 1 | 2 | 5/0 |  |
+| 18 | Shaq Moore | CB,RB,RM | 29 | USA | 712 k€ | 7,01 | 1 | 2 | 5/0 |  |
 | 22 | Álvaro Augusto | CB | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 24 | Joshua Torquato | LB | 19 | USA | 1,1 M€ | 5,41 | 0 | 0 | 1/0 |  |
-| 25 | Sebastien Ibeagha | CB | 34 | Nigeria | 82 k€ | 6,73 | 1 | 1 | 2/0 |  |
+| 24 | Joshua Torquato | LB | 19 | USA | 931 k€ | 5,41 | 0 | 0 | 1/0 |  |
+| 25 | Sebastien Ibeagha | CB | 34 | Nigeria | 117 k€ | 6,73 | 1 | 1 | 2/0 |  |
 | 26 | Slade Starnes | CB | 22 | USA | – | – | 0 | 0 | 0/0 |  |
 | 29 | Enzo Newman | RB | 20 | USA | – | – | 0 | 0 | 0/0 |  |
-| 32 | Nolan Norris | CB,LB | 21 | USA | 727 k€ | 6,91 | 1 | 0 | 7/0 |  |
+| 32 | Nolan Norris | CB,LB | 21 | USA | 752 k€ | 6,91 | 1 | 0 | 7/0 |  |
 | 34 | Kaka Scabin | Defender | 19 | USA | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 6 | Ran Binyamin | LW,CM,LB,LWB,LM,RWB | 22 | Israel | 1,1 M€ | 6,86 | 1 | 2 | 3/0 |  |
+| 6 | Ran Binyamin | CM,LW,LB,LWB,LM,RWB | 22 | Israel | 1,1 M€ | 6,86 | 1 | 2 | 3/0 |  |
 | 8 | Patrickson Delgado | CAM,CM | 22 | Ecuador | 2,2 M€ | 6,71 | 3 | 0 | 3/0 |  |
 | 10 | Santiago Moreno | CAM,LW,LM | 26 | Colombia | 2,0 M€ | 6,95 | 3 | 2 | 1/0 |  |
-| 12 | Christian Cappis | CM,CDM,LM | 27 | USA | 356 k€ | 6,67 | 0 | 1 | 4/0 |  |
-| 14 | Herman Johansson | RM,RWB,RB | 28 | Sweden | 1,0 M€ | 6,68 | 0 | 2 | 4/0 |  |
-| 17 | Ramiro | CM,CDM | 33 | Brazil | 118 k€ | 6,96 | 0 | 3 | 6/0 |  |
-| 21 | Joaquín Valiente | CAM,RW,RM | 25 | Uruguay | 1,1 M€ | 7,11 | 2 | 9 | 1/0 |  |
-| 27 | Caleb Swann | CM,CAM,CDM | 19 | USA | 906 k€ | – | 0 | 0 | 0/0 |  |
-| 28 | Sam Sarver | RM,RW | 23 | USA | 301 k€ | 6,52 | 3 | 1 | 4/0 |  |
-| 33 | Clay Holstad | CDM,CM,RM | 26 | USA | 112 k€ | 6,18 | 0 | 0 | 0/0 |  |
+| 12 | Christian Cappis | CM,CDM,LM | 27 | USA | 394 k€ | 6,67 | 0 | 1 | 4/0 |  |
+| 14 | Herman Johansson | RM,RWB,RB | 28 | Sweden | 1,1 M€ | 6,68 | 0 | 2 | 4/0 |  |
+| 17 | Ramiro | CM,CDM | 33 | Brazil | 133 k€ | 6,96 | 0 | 3 | 6/0 |  |
+| 21 | Joaquín Valiente | CAM,RW,RM | 25 | Uruguay | 1,3 M€ | 7,11 | 2 | 9 | 1/0 |  |
+| 27 | Caleb Swann | CM,CAM,CDM | 19 | USA | 753 k€ | – | 0 | 0 | 0/0 |  |
+| 28 | Sam Sarver | RM,RW | 23 | USA | 393 k€ | 6,52 | 3 | 1 | 4/0 |  |
+| 33 | Clay Holstad | CDM,CM,RM | 26 | USA | 96 k€ | 6,18 | 0 | 0 | 0/0 |  |
 | 55 | Kaick Ferreira | CM,CDM,CAM | 20 | Brazil | – | 7,04 | 3 | 1 | 4/0 |  |
-| 77 | Bernard Kamungo | LM,LWB,LB | 24 | USA | 961 k€ | 7,16 | 0 | 2 | 2/0 |  |
+| 77 | Bernard Kamungo | LM,LWB,LB | 24 | USA | 954 k€ | 7,16 | 0 | 2 | 2/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 7 | Daniel Job | LW | 21 | Nigeria | 715 k€ | – | 0 | 0 | 0/0 |  |
-| 9 | Petar Musa | ST | 28 | Croatia | 4,6 M€ | 7,60 | 18 | 5 | 2/0 |  |
-| 11 | Anderson Julio | ST | 30 | Ecuador | 1,2 M€ | 5,93 | 0 | 0 | 1/0 |  |
-| 15 | Ricky Louis | RW,ST,RM,LM | 21 | Haiti | 245 k€ | 5,98 | 0 | 0 | 0/0 |  |
-| 16 | Nicholas Simmonds | ST,RW | 19 | Jamaica | 468 k€ | 6,02 | 0 | 0 | 1/0 |  |
-| 23 | Logan Farrington | ST | 24 | USA | 1,3 M€ | 6,92 | 9 | 3 | 3/0 |  |
+| 7 | Daniel Job | LW | 21 | Nigeria | 964 k€ | – | 0 | 0 | 0/0 |  |
+| 9 | Petar Musa | ST | 28 | Croatia | 11,6 M€ | 7,60 | 18 | 5 | 2/0 |  |
+| 11 | Anderson Julio | ST | 30 | Ecuador | 1,3 M€ | 5,93 | 0 | 0 | 1/0 |  |
+| 15 | Ricky Louis | RW,ST,RM,LM | 22 | Haiti | 212 k€ | 5,98 | 0 | 0 | 0/0 |  |
+| 16 | Nicholas Simmonds | ST,RW | 19 | Jamaica | 554 k€ | 6,02 | 0 | 0 | 1/0 |  |
+| 23 | Logan Farrington | ST | 24 | USA | 1,7 M€ | 6,92 | 9 | 3 | 3/0 |  |
 | 31 | Benjamin Flowers | LW | 15 | USA | – | – | 0 | 0 | 0/0 |  |
 | 36 | Daniel Baran | LW,LM | 20 | USA | – | – | 0 | 0 | 0/0 |  |
 | 50 | Diego García | LW,CM,CDM,ST | 19 | USA | – | – | 0 | 0 | 0/0 |  |

@@ -1,10 +1,13 @@
 # Fredrikstad (Eliteserien) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [NO](../../ligor/NO.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [NO](../../ligor/NO.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Stark historik mot Sandefjord (+0,88 p/match mot marknaden, 6 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Spelstil 2026: Balanserat, Kortpass, Mellanpress, Medel på fasta, Svag mot fasta. Bäst mot Backar hem (+0,35, samma håll i båda halvorna men svagt), Svag på fasta (+0,28, samma håll i båda halvorna men svagt), Stark mot fasta (+0,05, svagt). Svårast mot Kortpass (−0,13, samma håll i båda halvorna men svagt), Bollinnehav (−0,15, svagt), Medel på fasta (−0,06, samma håll i båda halvorna men svagt). Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2026: 0,29 mål för per match (xG 0,30), 0,43 emot (xG 0,43), 4,2 hörnor.
+- Svårt för: Bodo/Glimt (0-1-5, 0,17 p/match, mot marknaden −0,34).
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -24,6 +27,57 @@ Form (äldst → senast): FVVVVFOO · senaste match 2026-09-20
 | 2024 | NO | 30 | 1,70 | +0,27 (+0,18 / +0,35) | 30 % (27 %) | 1,30–1,17 | – | – |
 | 2025 | NO | 30 | 1,40 | +0,15 (+0,12 / +0,18) | 30 % (25 %) | 1,27–1,17 | – | – |
 | 2026 | NO | 21 | 1,33 | +0,16 (+0,35 / −0,00) | 19 % (24 %) | 1,19–1,52 | – | – |
+
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/NO.md#fredrikstad) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2026: **Balanserat, Kortpass, Mellanpress, Medel på fasta, Svag mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026 | 21 | 0,29 | 0,30 | 0,43 | 0,43 | 4,2 |
+| 2025 | 30 | 0,40 | 0,36 | 0,23 | 0,25 | 4,7 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Backar hem | 15 | 1,47–1,20 | +0,41 | +0,35 (1,1) | −6 pe | – | ✔ samma håll |
+| Balanserat | 10 | 0,90–1,60 | −0,21 | −0,27 (−1,0) | +4 pe | – | svag |
+| Bollinnehav | 17 | 0,88–1,24 | −0,10 | −0,15 (−0,6) | +7 pe | – | svag |
+| Kortpass | 36 | 0,94–1,39 | −0,07 | −0,13 (−0,7) | +0 pe | – | ✔ samma håll |
+| Blandat | 4 | 1,50–0,75 | +0,54 | +0,49 (1,3) | +25 pe | – | svag |
+| Direktspel | 2 | 3,00–1,00 | +1,44 | +1,38 (5,5) | −25 pe | – | svag |
+| Lågpress | 14 | 1,14–1,43 | +0,20 | +0,14 (0,5) | −9 pe | – | svag |
+| Mellanpress | 26 | 1,15–1,31 | +0,04 | −0,02 (−0,1) | +6 pe | – | ✔ samma håll |
+| Högpress | 2 | 0,00–0,50 | −0,66 | −0,71 (−1,2) | +23 pe | – | svag |
+| Svag på fasta | 16 | 1,19–1,06 | +0,33 | +0,28 (0,9) | −8 pe | – | ✔ samma håll |
+| Medel på fasta | 18 | 1,06–1,50 | −0,01 | −0,06 (−0,3) | +4 pe | – | ✔ samma håll |
+| Farlig på fasta | 8 | 1,00–1,38 | −0,35 | −0,41 (−1,7) | +14 pe | – | svag |
+| Stark mot fasta | 20 | 1,15–1,10 | +0,11 | +0,05 (0,2) | +5 pe | – | svag |
+| Medel mot fasta | 9 | 0,56–1,56 | −0,57 | −0,63 (−2,2) | +9 pe | – | svag |
+| Svag mot fasta | 13 | 1,38–1,46 | +0,41 | +0,35 (1,1) | −9 pe | – | ✔ samma håll |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
+
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 7 | 5-0-2 | 2,14 | +0,81 |
+| Efter uppehåll sedan 2023 | 7 | 5-0-2 | 2,14 | +0,81 |
+| Övriga matcher | 104 | 37-25-42 | 1,31 | +0,03 |
+
+Hela ligan efter uppehåll: 0,00 mot marknaden (n 578). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2026-04-07 | Aalesund - Fredrikstad | 2-3 V | +1,44 |
+| 2025-11-23 | Fredrikstad - Viking | 0-1 F | −0,72 |
+| 2025-10-19 | Stromsgodset - Fredrikstad | 0-3 V | +1,52 |
+| 2025-09-13 | Molde - Fredrikstad | 1-2 V | +1,92 |
+| 2024-11-23 | Fredrikstad - HamKam | 1-0 V | +1,19 |
+| 2024-10-20 | Fredrikstad - Lillestrom | 2-1 V | +1,29 |
+| 2024-09-14 | Molde - Fredrikstad | 6-1 F | −0,96 |
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -47,7 +101,9 @@ Form (äldst → senast): FVVVVFOO · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): Bodo/Glimt 0,17 p/match (−0,34).
+
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Casper Røjkjær. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -58,33 +114,33 @@ Tränare: Casper Røjkjær. Betyg, mål och assist gäller innevarande säsong e
 | | **Målvakter** | | | | | | | | | |
 | 25 | Ole Langbråten | Keeper | 23 | Norway | – | – | 0 | 0 | 0/0 |  |
 | 30 | Jasper Silva Torkildsen | GK | 22 | Norway | 440 k€ | – | 0 | 0 | 0/0 |  |
-| 77 | Martin Børsheim | GK | 21 | Norway | 1,3 M€ | 6,75 | 0 | 0 | 3/0 |  |
+| 77 | Martin Børsheim | GK | 21 | Norway | 1,2 M€ | 6,75 | 0 | 0 | 3/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Kennedy Okpaleke | CB | 17 | Sweden | 655 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
-| 4 | Fredrik Holmé | CB | 25 | Norway | 302 k€ | 7,04 | 2 | 1 | 3/0 |  |
-| 5 | Simen Rafn | CB,LM | 34 | Norway | 207 k€ | 6,77 | 1 | 1 | 3/0 |  |
-| 12 | Ulrik Fredriksen | CB | 27 | Norway | 399 k€ | 7,02 | 1 | 0 | 1/0 |  |
-| 17 | Sigurd Kvile | CB | 26 | Norway | 317 k€ | 6,16 | 0 | 0 | 1/0 | skadad, åter Out for season |
-| 26 | Joachim Nysveen | LM | 20 | Norway | 512 k€ | 6,51 | 0 | 0 | 0/0 |  |
+| 2 | Kennedy Okpaleke | CB | 17 | Sweden | 652 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 4 | Fredrik Holmé | CB | 25 | Norway | 362 k€ | 7,04 | 2 | 1 | 3/0 |  |
+| 5 | Simen Rafn | CB,LM | 34 | Norway | 209 k€ | 6,77 | 1 | 1 | 3/0 |  |
+| 12 | Ulrik Fredriksen | CB | 27 | Norway | 407 k€ | 7,02 | 1 | 0 | 1/0 |  |
+| 17 | Sigurd Kvile | CB | 26 | Norway | 307 k€ | 6,16 | 0 | 0 | 1/0 | skadad, åter Out for season |
+| 26 | Joachim Nysveen | LM | 20 | Norway | 442 k€ | 6,51 | 0 | 0 | 0/0 |  |
 | 27 | Chris Pondy | Defender | 18 | Cameroon | – | – | 0 | 0 | 0/0 |  |
-| 28 | Solomon Owusu | CB | 30 | Ghana | 322 k€ | 6,93 | 2 | 0 | 1/0 |  |
+| 28 | Solomon Owusu | CB | 30 | Ghana | 325 k€ | 6,93 | 2 | 0 | 1/0 |  |
 | 35 | Elias Toft Nordrum | Defender | 19 | Norway | – | – | 0 | 0 | 0/0 |  |
-| 38 | Isak Helstad Amundsen | CB,RB | 26 | Norway | 508 k€ | 6,89 | 0 | 0 | 1/1 |  |
+| 38 | Isak Helstad Amundsen | CB,RB | 26 | Norway | 510 k€ | 6,89 | 0 | 0 | 1/1 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 6 | Samuel Leach Holm | CM,CB | 28 | Sweden | 499 k€ | 7,00 | 1 | 2 | 1/0 |  |
-| 13 | Sondre Sørløkk | LM,LWB,CM,ST | 29 | Norway | 413 k€ | 6,65 | 0 | 1 | 0/0 |  |
-| 14 | Max Nilsson | CM,CDM | 21 | Sweden | 830 k€ | 7,13 | 2 | 1 | 3/0 |  |
-| 16 | Daniel Eid | RM,RWB | 27 | Norway | 284 k€ | 7,12 | 2 | 2 | 3/0 |  |
-| 19 | Fanuel Yrga-Alem | LM,LWB | 19 | Norway | 1,1 M€ | 6,47 | 0 | 0 | 4/0 |  |
-| 21 | Jakub Jezierski | CDM | 22 | Poland | 408 k€ | 6,48 | 0 | 0 | 0/0 |  |
-| 24 | Leonard Owusu | CM,CDM | 29 | Ghana | 367 k€ | 6,65 | 0 | 1 | 1/0 |  |
+| 6 | Samuel Leach Holm | CM,CB | 28 | Sweden | 500 k€ | 7,00 | 1 | 2 | 1/0 |  |
+| 13 | Sondre Sørløkk | LM,LWB,ST | 29 | Norway | 416 k€ | 6,65 | 0 | 1 | 0/0 |  |
+| 14 | Max Nilsson | CM,CDM | 21 | Sweden | 844 k€ | 7,13 | 2 | 1 | 3/0 |  |
+| 16 | Daniel Eid | RM,RWB | 27 | Norway | 300 k€ | 7,12 | 2 | 2 | 3/0 |  |
+| 19 | Fanuel Yrga-Alem | LM,LWB | 19 | Norway | 978 k€ | 6,47 | 0 | 0 | 4/0 |  |
+| 21 | Jakub Jezierski | CDM | 22 | Poland | 390 k€ | 6,48 | 0 | 0 | 0/0 |  |
+| 24 | Leonard Owusu | CM,CDM | 29 | Ghana | 368 k€ | 6,65 | 0 | 1 | 1/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 7 | Benjamin Thoresen Faraas | RW,CAM | 21 | Norway | 606 k€ | 6,62 | 3 | 0 | 2/0 |  |
-| 9 | Salim Laghzaoui | LW,ST,CAM | 20 | Norway | 1,4 M€ | 6,34 | 0 | 1 | 0/0 |  |
+| 7 | Benjamin Thoresen Faraas | RW,CAM | 21 | Norway | 524 k€ | 6,62 | 3 | 0 | 2/0 |  |
+| 9 | Salim Laghzaoui | LW,ST,CAM | 20 | Norway | 1,3 M€ | 6,34 | 0 | 1 | 0/0 |  |
 | 10 | Johannes Nuñez | ST | 29 | Norway | 510 k€ | 6,30 | 1 | 1 | 1/0 |  |
 | 11 | Liam West | RW | 18 | Norway | – | 6,12 | 0 | 0 | 0/0 |  |
-| 18 | Bryan Solhaug Fiabema | ST,LW | 23 | Norway | 309 k€ | 6,71 | 1 | 0 | 0/0 |  |
-| 23 | Henrik Langaas Skogvold | ST,LW | 22 | Norway | 1,1 M€ | 6,63 | 0 | 2 | 0/0 |  |
+| 18 | Bryan Solhaug Fiabema | ST,LW | 23 | Norway | 276 k€ | 6,71 | 1 | 0 | 0/0 |  |
+| 23 | Henrik Langaas Skogvold | ST,LW | 22 | Norway | 1,2 M€ | 6,63 | 0 | 2 | 0/0 |  |
 | 29 | Gabriel Wesseh | RW | 18 | USA | – | 6,72 | 1 | 1 | 0/0 |  |
 
 Har lämnat truppen sedan vi började spara (1): Øystein Øvretveit (senast 2026-09-29).

@@ -1,16 +1,16 @@
 # Tvååker (Div 1 Södra) – lärdomar
 
-Genererad 2026-09-29. Ligans fil: [SE3S](../../ligor/SE3S.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-10-04. Ligans fil: [SE3S](../../ligor/SE3S.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
-Form senaste 8 (äldst → senast): VVOVOFFF · senaste match 2026-09-26
+Form senaste 8 (äldst → senast): VOVOFFFF · senaste match 2026-10-03
 
 ## Säsonger
 
 | Säsong | M | P/M | Hemma P/M | Borta P/M | Kryss | Mål för–emot | Över 2,5 |
 |---|---|---|---|---|---|---|---|
-| 2026/27 | 24 | 1,38 | 1,33 | 1,42 | 25 % | 1,33–1,54 | 54 % |
+| 2026/27 | 25 | 1,32 | 1,23 | 1,42 | 24 % | 1,32–1,56 | 56 % |
 
 ## Inbördes möten
 
@@ -19,6 +19,7 @@ Form senaste 8 (äldst → senast): VVOVOFFF · senaste match 2026-09-26
 | AFC Malmö | 2 | 1-1-0 | 1–0 | 2026-09-12 0-0 (h) |
 | BK Olympic | 2 | 2-0-0 | 5–3 | 2026-08-22 4-3 (b) |
 | Eskilsminne | 2 | 1-0-1 | 3–4 | 2026-09-17 2-4 (b) |
+| Hässleholm | 2 | 0-0-2 | 3–6 | 2026-10-03 1-2 (h) |
 | Jönköping Södra | 2 | 2-0-0 | 3–1 | 2026-09-06 1-0 (b) |
 | Kristianstad | 2 | 1-0-1 | 3–3 | 2026-08-15 2-1 (b) |
 | Skövde AIK | 2 | 0-2-0 | 1–1 | 2026-08-29 1-1 (h) |
@@ -28,7 +29,7 @@ Form senaste 8 (äldst → senast): VVOVOFFF · senaste match 2026-09-26
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (Transfermarkt, hämtad 2026-09-29)
+## Trupp (Transfermarkt, hämtad 2026-10-04)
 
 Tränare: Ali Kraym. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -48,7 +49,7 @@ Tränare: Ali Kraym. Betyg, mål och assist gäller innevarande säsong enligt F
 | | **Mittfältare** | | | | | | | | | |
 | 6 | Lorik Ademi | Midfielder | 25 | Sweden | – | – | – | – | 0/0 |  |
 | 10 | Liam Munther | Midfielder | 25 | Sweden | – | – | – | – | 0/0 |  |
-|  | Malte Nydén | Midfielder | 23 | Sweden | – | – | – | – | 0/0 |  |
+|  | Malte Nydén | Midfielder | 24 | Sweden | – | – | – | – | 0/0 |  |
 | 6 | Adam Lund | Midfielder | 20 | Sweden | – | – | – | – | 0/0 |  |
 | 8 | Isak Wiman | Midfielder | 23 | Sweden | – | – | – | – | 0/0 |  |
 | 14 | Mohanad Saeed | Midfielder | 24 | Sweden | – | – | – | – | 0/0 |  |

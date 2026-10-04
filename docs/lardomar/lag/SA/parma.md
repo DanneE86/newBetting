@@ -1,11 +1,15 @@
 # Parma (Serie A) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Senaste 8: xG-målskillnaden är −0,72 per match sämre än målskillnaden.
 - Stark historik mot Genoa (+0,63 p/match mot marknaden, 13 möten), Cagliari (−0,72 p/match mot marknaden, 12 möten), Fiorentina (+0,56 p/match mot marknaden, 10 möten), Sassuolo (+0,90 p/match mot marknaden, 8 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Efter landslagsuppehåll: 1,30 poäng per match mot 1,29 annars (10-9-11 på 30 matcher), mot marknaden +0,09 mot +0,07. Sedan 2023: 3-5-4. Ingen skillnad värd att spela på.
+- Spelstil 2025/26: Balanserat, Kortpass, Lågpress, Medel på fasta, Stark mot fasta. Bäst mot Högpress (+0,17, samma håll i båda halvorna men svagt), Farlig på fasta (+0,14, samma håll i båda halvorna men svagt), Balanserat (+0,08, svagt). Svårast mot Bollinnehav (−0,20, svagt), Mellanpress (−0,16, samma håll i båda halvorna men svagt), Svag mot fasta (−0,14, svagt). Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2025/26: 0,21 mål för per match (xG 0,32), 0,24 emot (xG 0,22), 3,8 hörnor.
+- Svårt för: Inter (0-3-6, 0,33 p/match, mot marknaden −0,17), Atalanta (1-1-8, 0,40 p/match, mot marknaden −0,19), Lazio (1-2-7, 0,50 p/match, mot marknaden −0,20), Juventus (1-2-7, 0,50 p/match, mot marknaden +0,02), Cagliari (1-4-7, 0,58 p/match, mot marknaden −0,72), Roma (2-0-8, 0,60 p/match, mot marknaden −0,07), Milan (2-3-5, 0,90 p/match, mot marknaden +0,24), Bologna (2-4-4, 1,00 p/match, mot marknaden −0,00), Napoli (2-3-4, 1,00 p/match, mot marknaden +0,47), Como (3-4-4, 1,18 p/match, mot marknaden −0,01). Där marknaden ligger nära noll är laget bara sämre i de mötena än annars, och oddsen vet redan om det.
 - På Stryktipset/Europatipset streckas lagets vinst ×0,72 av vår sannolikhet (14 matcher). Folket underspelar laget: dess vinst ger streckvärde.
 
 ## Nuläge (senaste 8 ligamatcher)
@@ -35,6 +39,80 @@ Form (äldst → senast): FFVFFOFV · senaste match 2026-09-20
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
 
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/SA.md#parma) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2025/26: **Balanserat, Kortpass, Lågpress, Medel på fasta, Stark mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026/27 | 5 | 0,00 | 0,20 | 0,20 | 0,60 | 3,4 |
+| 2025/26 | 38 | 0,21 | 0,32 | 0,24 | 0,22 | 3,8 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Backar hem | 54 | 1,35–1,30 | +0,14 | +0,08 (0,5) | +2 pe | −0 pe | ✔ samma håll |
+| Balanserat | 120 | 1,26–1,35 | +0,13 | +0,08 (0,7) | +7 pe | +1 pe | svag |
+| Bollinnehav | 69 | 0,99–1,43 | −0,14 | −0,20 (−1,4) | +2 pe | −7 pe | svag |
+| Kortpass | 57 | 0,93–1,44 | +0,02 | −0,03 (−0,2) | +5 pe | −10 pe | svag |
+| Blandat | 112 | 1,19–1,41 | +0,05 | −0,00 (−0,0) | +3 pe | +0 pe | svag |
+| Direktspel | 74 | 1,43–1,23 | +0,08 | +0,03 (0,2) | +7 pe | +1 pe | svag |
+| Lågpress | 75 | 1,12–1,44 | +0,06 | +0,01 (0,0) | +4 pe | −7 pe | svag |
+| Mellanpress | 89 | 1,08–1,30 | −0,10 | −0,16 (−1,3) | +13 pe | −4 pe | ✔ samma håll |
+| Högpress | 79 | 1,42–1,35 | +0,23 | +0,17 (1,2) | −4 pe | +5 pe | ✔ samma håll |
+| Svag på fasta | 74 | 1,32–1,42 | +0,03 | −0,03 (−0,2) | +8 pe | +4 pe | svag |
+| Medel på fasta | 132 | 1,20–1,39 | +0,03 | −0,02 (−0,2) | +3 pe | +0 pe | ✔ samma håll |
+| Farlig på fasta | 37 | 0,95–1,16 | +0,20 | +0,14 (0,7) | +4 pe | −20 pe | ✔ samma håll |
+| Stark mot fasta | 61 | 1,05–1,07 | +0,02 | −0,03 (−0,2) | +15 pe | −8 pe | svag |
+| Medel mot fasta | 147 | 1,34–1,40 | +0,10 | +0,05 (0,5) | +6 pe | +1 pe | svag |
+| Svag mot fasta | 35 | 0,89–1,71 | −0,08 | −0,14 (−0,6) | −17 pe | −3 pe | svag |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
+
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 30 | 10-9-11 | 1,30 | +0,09 |
+| Efter uppehåll sedan 2023 | 12 | 3-5-4 | 1,17 | +0,04 |
+| Övriga matcher | 321 | 106-96-119 | 1,29 | +0,07 |
+
+Hela ligan efter uppehåll: 0,00 mot marknaden (n 652). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2026-04-04 | Lazio - Parma | 1-1 O | +0,76 |
+| 2025-11-23 | Verona - Parma | 1-2 V | +1,63 |
+| 2025-10-19 | Genoa - Parma | 0-0 O | +0,60 |
+| 2025-09-13 | Cagliari - Parma | 2-0 F | −1,43 |
+| 2025-03-31 | Verona - Parma | 0-0 O | +0,29 |
+| 2024-11-23 | Parma - Atalanta | 1-3 F | −0,72 |
+| 2024-10-19 | Como - Parma | 1-1 O | +0,89 |
+| 2024-09-16 | Parma - Udinese | 2-3 F | −1,57 |
+| 2024-04-01 | Parma - Catanzaro | 0-2 F | −2,03 |
+| 2023-11-25 | Parma - Modena | 1-1 O | −0,74 |
+| 2023-10-20 | Parma - Como | 2-1 V | +1,28 |
+| 2023-09-17 | Catanzaro - Parma | 0-5 V | +1,49 |
+| 2023-04-01 | Parma - Palermo | 2-1 V | +1,02 |
+| 2022-11-26 | Parma - Modena | 1-2 F | −1,95 |
+| 2022-10-01 | Parma - Frosinone | 2-1 V | +1,52 |
+| 2022-04-02 | Cosenza - Parma | 1-3 V | +1,05 |
+| 2021-11-21 | Parma - Cosenza | 1-1 O | −1,29 |
+| 2021-10-17 | Parma - Monza | 0-0 O | −0,58 |
+| 2021-09-12 | Pordenone - Parma | 0-4 V | +1,18 |
+| 2021-04-03 | Benevento - Parma | 2-2 O | +0,28 |
+| 2020-11-22 | Roma - Parma | 3-0 F | −0,73 |
+| 2020-10-18 | Udinese - Parma | 3-2 F | −1,28 |
+| 2020-09-20 | Parma - Napoli | 0-2 F | −0,58 |
+| 2019-11-24 | Bologna - Parma | 2-2 O | +0,86 |
+| 2019-10-20 | Parma - Genoa | 5-1 V | +1,62 |
+| 2019-09-15 | Parma - Cagliari | 1-3 F | −1,64 |
+| 2019-03-31 | Parma - Atalanta | 1-3 F | −0,70 |
+| 2018-11-25 | Parma - Sassuolo | 2-1 V | +1,87 |
+| 2018-10-21 | Parma - Lazio | 0-2 F | −0,70 |
+| 2018-09-15 | Inter - Parma | 0-1 V | +2,41 |
+
 ## Nyckelspelare (Understat, 2024/25–)
 
 Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).
@@ -42,8 +120,8 @@ Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 l
 | Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |
 |---|---|---|---|---|
 | David Romero | 15 % | 0 / 81 | – / 1,05 | – / +0,12 |
-| Mateo Pellegrino | 13 % | 0 / 81 | – / 1,05 | – / +0,12 |
 | Simone Lontani | 13 % | 0 / 81 | – / 1,05 | – / +0,12 |
+| Mateo Pellegrino | 12 % | 0 / 81 | – / 1,05 | – / +0,12 |
 | Nesta Elphege | 11 % | 2 / 79 | 3,00 / 1,00 | +1,70 / +0,08 |
 | Emanuele Valeri | 9 % | 6 / 75 | 0,50 / 1,09 | −0,33 / +0,15 |
 | El Bilal Touré | 7 % | 0 / 81 | – / 1,05 | – / +0,12 |
@@ -76,6 +154,8 @@ Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: s
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): Inter 0,33 p/match (−0,17), Atalanta 0,40 p/match (−0,19), Lazio 0,50 p/match (−0,20), Juventus 0,50 p/match (+0,02), Cagliari 0,58 p/match (−0,72), Roma 0,60 p/match (−0,07), Milan 0,90 p/match (+0,24), Bologna 1,00 p/match (−0,00), Napoli 1,00 p/match (+0,47), Como 1,18 p/match (−0,01).
+
 ## Stryktipset / Europatipset
 
 | Datum | Spel | Match | Utfall | Folket på laget | Vår procent |
@@ -95,7 +175,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-09-21 | Europa 2507 | Cremonese - Parma | X | 32 % | 33 % |
 | 2025-08-24 | Europa 2499 | Juventus - Parma | 1 | 4 % | 13 % |
 
-## Trupp (FotMob, hämtad 2026-09-29)
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Alberto Gilardino. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -104,35 +184,35 @@ Tränare: Alberto Gilardino. Betyg, mål och assist gäller innevarande säsong 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 22 | Simone Ghidotti | GK | 26 | Italy | 332 k€ | – | 0 | 0 | 0/0 |  |
-| 30 | Giovanni Daffara | GK | 21 | Italy | 1,3 M€ | – | 0 | 0 | 0/0 |  |
-| 40 | Edoardo Corvi | GK | 25 | Italy | 1,3 M€ | 7,04 | 0 | 0 | 0/0 |  |
+| 22 | Simone Ghidotti | GK | 26 | Italy | 331 k€ | – | 0 | 0 | 0/0 |  |
+| 30 | Giovanni Daffara | GK | 21 | Italy | 3,6 M€ | – | 0 | 0 | 0/0 |  |
+| 40 | Edoardo Corvi | GK | 25 | Italy | 1,5 M€ | 7,04 | 0 | 0 | 0/0 |  |
 | 75 | Alessandro Mazzocchi | Keeper | 18 | Italy | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 3 | Abdoulaye Ndiaye | CB | 24 | Senegal | 5,6 M€ | 6,44 | 0 | 0 | 0/0 |  |
-| 5 | Lautaro Valenti | CB | 27 | Argentina | 1,4 M€ | 6,04 | 0 | 0 | 0/0 |  |
-| 15 | Enrico Del Prato | CB,RB,RM,RWB | 26 | Italy | 3,8 M€ | 6,70 | 0 | 0 | 2/0 |  |
-| 34 | Diego Carlos | CB | 33 | Brazil | 2,8 M€ | 6,66 | 0 | 0 | 0/0 |  |
-| 37 | Mariano Troilo | CB | 23 | Argentina | 7,0 M€ | 6,83 | 0 | 0 | 2/0 |  |
-| 72 | Dominik Drobnič | CB | 19 | Slovenia | – | 6,29 | 0 | 0 | 1/0 | skadad, åter Mid November 2026 |
+| 3 | Abdoulaye Ndiaye | CB | 24 | Senegal | 6,7 M€ | 6,44 | 0 | 0 | 0/0 |  |
+| 5 | Lautaro Valenti | CB | 27 | Argentina | 1,6 M€ | 6,04 | 0 | 0 | 0/0 |  |
+| 15 | Enrico Del Prato | CB,RB,RM,RWB | 26 | Italy | 4,6 M€ | 6,70 | 0 | 0 | 2/0 |  |
+| 34 | Diego Carlos | CB | 33 | Brazil | 2,3 M€ | 6,66 | 0 | 0 | 0/0 |  |
+| 37 | Mariano Troilo | CB | 23 | Argentina | 12,9 M€ | 6,83 | 0 | 0 | 2/0 |  |
+| 72 | Dominik Drobnič | CB | 19 | Slovenia | 1,1 M€ | 6,29 | 0 | 0 | 1/0 | skadad, åter Mid November 2026 |
 | | **Mittfältare** | | | | | | | | | |
-| 4 | Vincent Sierro | CM,CDM | 30 | Switzerland | 1,5 M€ | 6,15 | 0 | 0 | 0/0 |  |
-| 8 | Benjamín Cremaschi | CM,CAM | 21 | USA | 2,8 M€ | 5,93 | 0 | 0 | 0/0 |  |
-| 10 | Adrián Bernabé | CM,RM,CAM,RW,CDM | 25 | Spain | 11,1 M€ | 6,68 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
-| 14 | Emanuele Valeri | LM,LB,LWB,LW | 27 | Italy | 2,3 M€ | 6,82 | 0 | 0 | 0/0 |  |
-| 16 | Mandela Keita | CM,CDM | 24 | Belgium | 14,2 M€ | 6,56 | 0 | 0 | 1/0 |  |
-| 27 | Sascha Britschgi | RM,LB,RB,RWB,LM | 20 | Switzerland | 10,0 M€ | 6,15 | 0 | 0 | 0/0 |  |
-| 29 | Franco Carboni | LM,CM | 23 | Argentina | 1,0 M€ | – | 0 | 0 | 0/0 |  |
-| 32 | Christian Ordóñez | CM | 22 | Argentina | 6,7 M€ | 6,63 | 0 | 0 | 0/0 |  |
-| 41 | Hans Nicolussi Caviglia | CM,CDM | 26 | Italy | 4,4 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
-| 47 | Abdou-Salam Konaté | CM | 19 | France | 794 k€ | 5,95 | 0 | 0 | 1/0 |  |
-| 80 | Giovanni Fabbian | CAM,CM | 23 | Italy | 8,5 M€ | 6,03 | 0 | 0 | 0/0 |  |
+| 4 | Vincent Sierro | CM,CDM | 30 | Switzerland | 1,6 M€ | 6,15 | 0 | 0 | 0/0 |  |
+| 8 | Benjamín Cremaschi | CM,CAM | 21 | USA | 4,9 M€ | 5,93 | 0 | 0 | 0/0 |  |
+| 10 | Adrián Bernabé | CM,RM,CAM,RW | 25 | Spain | 13,5 M€ | 6,68 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 14 | Emanuele Valeri | LM,LB,LWB,LW | 27 | Italy | 2,4 M€ | 6,82 | 0 | 0 | 0/0 |  |
+| 16 | Mandela Keita | CM,CDM | 24 | Belgium | 23,3 M€ | 6,56 | 0 | 0 | 1/0 |  |
+| 27 | Sascha Britschgi | RM,LB,RB,RWB,LM | 20 | Switzerland | 14,4 M€ | 6,15 | 0 | 0 | 0/0 |  |
+| 29 | Franco Carboni | LM,CM | 23 | Argentina | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 32 | Christian Ordóñez | CM | 22 | Argentina | 10,1 M€ | 6,63 | 0 | 0 | 0/0 |  |
+| 41 | Hans Nicolussi Caviglia | CM,CDM | 26 | Italy | 6,2 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 47 | Abdou-Salam Konaté | CM | 19 | France | 839 k€ | 5,95 | 0 | 0 | 1/0 |  |
+| 80 | Giovanni Fabbian | CAM,CM | 23 | Italy | 12,6 M€ | 6,03 | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 7 | Ousmane Diallo | RW | 19 | Spain | 1,6 M€ | 5,97 | 0 | 0 | 0/0 |  |
-| 9 | David Romero | ST | 23 | Argentina | 815 k€ | 6,96 | 2 | 0 | 0/0 |  |
+| 7 | Ousmane Diallo | RW | 19 | Spain | 1,5 M€ | 5,97 | 0 | 0 | 0/0 |  |
+| 9 | David Romero | ST | 23 | Argentina | 2,2 M€ | 6,96 | 2 | 0 | 0/0 |  |
 | 11 | Pontus Almqvist | RM | 27 | Sweden | 933 k€ | 6,49 | 1 | 1 | 1/0 |  |
-| 19 | El Bilal Touré | LW,ST,CAM | 24 | Mali | 12,4 M€ | 6,53 | 0 | 1 | 0/0 |  |
-| 20 | Matija Frigan | LW | 23 | Croatia | 7,2 M€ | 6,28 | 0 | 0 | 0/0 |  |
-| 23 | Nesta Elphege | ST | 25 | France | 824 k€ | 6,64 | 0 | 1 | 0/0 |  |
-| 25 | Thomás de Martis | ST | 18 | Argentina | 869 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | El Bilal Touré | LW,ST,CAM | 25 | Mali | 12,5 M€ | 6,53 | 0 | 1 | 0/0 |  |
+| 20 | Matija Frigan | LW | 23 | Croatia | 9,1 M€ | 6,28 | 0 | 0 | 0/0 |  |
+| 23 | Nesta Elphege | ST | 25 | France | 989 k€ | 6,64 | 0 | 1 | 0/0 |  |
+| 25 | Thomás de Martis | ST | 18 | Argentina | 900 k€ | – | 0 | 0 | 0/0 |  |
 | 76 | Simone Lontani | ST,LW,CAM | 18 | Italy | – | 6,64 | 1 | 0 | 0/0 |  |

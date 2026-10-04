@@ -1,6 +1,6 @@
 # Cúcuta Deportivo (Primera A) – lärdomar
 
-Genererad 2026-09-29. Ligans fil: [COL](../../ligor/COL.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-10-04. Ligans fil: [COL](../../ligor/COL.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -30,45 +30,56 @@ Form senaste 8 (äldst → senast): OVVFOFFV · senaste match 2026-09-26
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+## Höghöjd
+
+Arenans höjd: ca 320 m. Höghöjdsmatch = arena ≥ 1500 m och bortalaget från minst 1000 m lägre.
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Borta på höghöjd | 7 | 0-0-7 | 0,00 | – |
+| Borta övriga | 9 | 1-5-3 | 0,89 | – |
+
+Ligan: se [COL](../../ligor/COL.md#höghöjd).
+
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Nicolás Chiesa. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Samir Mayo (skadad, åter Late September 2026)
+**Skadade/borta nu:** Samir Mayo (skadad, åter Mid October 2026)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Juan Ramírez | GK | 29 | Colombia | 231 k€ | – | 0 | 0 | 0/0 |  |
+| 1 | Juan Ramírez | GK | 29 | Colombia | 207 k€ | – | 0 | 0 | 0/0 |  |
 | 12 | Diego Muñoz | Keeper | 0 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 24 | Federico Abadía | GK | 28 | Argentina | 286 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Hernán Lópes | CB,LB | 35 | Argentina | 250 k€ | – | 0 | 0 | 0/0 |  |
+| 2 | Hernán Lópes | CB,LB | 35 | Argentina | 245 k€ | – | 0 | 0 | 0/0 |  |
 | 3 | Diego Calcaterra | CB,CM | 25 | Argentina | 337 k€ | – | 0 | 0 | 0/0 |  |
 | 4 | Jhon Quiñónes | CB | 22 | Colombia | – | – | 0 | 0 | 0/0 |  |
-| 14 | Kevin Tamayo | LB,LWB | 26 | Colombia | 261 k€ | – | 0 | 0 | 0/0 |  |
+| 14 | Kevin Tamayo | LB,LWB | 26 | Colombia | 289 k€ | – | 0 | 0 | 0/0 |  |
 | 17 | Leison Ochoa | CB | 26 | Colombia | – | – | 0 | 0 | 0/0 |  |
-| 26 | Joao Abonía | RB,RWB | 26 | Colombia | 324 k€ | – | 0 | 0 | 0/0 |  |
-| 27 | Mauricio Duarte | LB,LWB | 34 | Colombia | 249 k€ | – | 0 | 0 | 0/0 |  |
+| 26 | Joao Abonía | RB,RWB | 26 | Colombia | 312 k€ | – | 0 | 0 | 0/0 |  |
+| 27 | Mauricio Duarte | LB,LWB | 34 | Colombia | 257 k€ | – | 0 | 0 | 0/0 |  |
 | 30 | Brayan Montaño | CB,LB,CM | 24 | Colombia | 336 k€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 5 | Víctor Mejía | CM,CDM,CB | 33 | Colombia | 248 k€ | – | 0 | 0 | 0/0 |  |
-| 7 | Jader Manyoma | RM | 22 | Colombia | 206 k€ | – | 0 | 0 | 0/0 |  |
-| 10 | Léider Berdugo | CM,RM,ST,CAM,LW,RW,CB | 24 | Colombia | 488 k€ | – | 0 | 0 | 0/0 |  |
+| 5 | Víctor Mejía | CM,CDM,CB | 33 | Colombia | 272 k€ | – | 0 | 0 | 0/0 |  |
+| 7 | Jader Manyoma | RM | 22 | Colombia | 291 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Léider Berdugo | CM,RM,ST,CAM,LW,RW,CB | 24 | Colombia | 586 k€ | – | 0 | 0 | 0/0 |  |
 | 13 | Breyner Rodríguez | ST | 19 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 15 | Santiago Vásquez | Midfielder | 0 | Colombia | – | – | 0 | 0 | 0/0 |  |
-| 16 | Kevin Londoño | CM,CAM | 26 | Colombia | 324 k€ | – | 0 | 0 | 0/0 |  |
+| 16 | Kevin Londoño | CM,CAM | 26 | Colombia | 322 k€ | – | 0 | 0 | 0/0 |  |
 | 21 | Marlon Carabalí | LW,LM | 23 | Colombia | 185 k€ | – | 0 | 0 | 0/0 |  |
-| 23 | Samir Mayo | CM | 23 | Colombia | 470 k€ | – | 0 | 0 | 0/0 | skadad, åter Late September 2026 |
-| 29 | Lucas Ríos | CM,LM | 28 | Argentina | 247 k€ | – | 0 | 0 | 0/0 |  |
-| 33 | Sebastián Támara | RB | 30 | Colombia | 245 k€ | – | 0 | 0 | 0/0 |  |
-| 77 | Neneco | CM,CB,CDM | 31 | Colombia | 124 k€ | – | 0 | 0 | 0/0 |  |
+| 23 | Samir Mayo | CM | 23 | Colombia | 470 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 29 | Lucas Ríos | CM,LM | 28 | Argentina | 250 k€ | – | 0 | 0 | 0/0 |  |
+| 33 | Sebastián Támara | RB | 30 | Colombia | 246 k€ | – | 0 | 0 | 0/0 |  |
+| 77 | Neneco | CM,CB,CDM | 31 | Colombia | 149 k€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 |  | Hassler Beltrán | Attacker | 20 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 9 | Jaime Peralta | ST | 21 | Colombia | – | – | 0 | 0 | 0/0 |  |
-| 11 | Gustavo Torres | ST,RW | 30 | Colombia | 259 k€ | – | 0 | 0 | 0/0 |  |
+| 11 | Gustavo Torres | ST,RW | 30 | Colombia | 273 k€ | – | 0 | 0 | 0/0 |  |
 | 20 | Dayan Pérez | LM | 18 | Colombia | – | – | 0 | 0 | 0/0 |  |
-| 31 | Jesús Díaz | RW | 27 | Colombia | 362 k€ | – | 0 | 0 | 0/0 |  |
-| 32 | Jhonathan Agudelo | ST | 33 | Colombia | 222 k€ | – | 0 | 0 | 0/0 |  |
+| 31 | Jesús Díaz | RW | 27 | Colombia | 394 k€ | – | 0 | 0 | 0/0 |  |
+| 32 | Jhonathan Agudelo | ST | 33 | Colombia | 257 k€ | – | 0 | 0 | 0/0 |  |
 
 Har lämnat truppen sedan vi började spara (1): Diego Ceballos (senast 2026-09-29).

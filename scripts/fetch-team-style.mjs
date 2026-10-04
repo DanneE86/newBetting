@@ -1,5 +1,6 @@
 // Spelstil per lag och sasong fran FotMobs lagstatistik (samma som fotmob.com/leagues/<id>/stats).
-//   data/stil/<liga>.json   sasong -> lag -> { poss, pass, longBalls, possWonAtt3rd, clearances, tackles, interceptions, m }
+//   data/stil/<liga>.json   sasong -> lag -> { poss, pass, longBalls, possWonAtt3rd, clearances, tackles, interceptions,
+//                           spFor, spXgFor, spAgainst, spXgAgainst, corners (fasta situationer och horn per match), m }
 // Lagnamn mappas till vara via data/matcher/<liga>.csv (scripts/lib/fotmob-names.mjs). Avslutade sasonger hamtas
 // en gang, innevarande sasong hamtas om varje korning. Anvands av scripts/analyze-style-matchups.mjs.
 // Kors: node scripts/fetch-team-style.mjs [PL CH ...] [--force]
@@ -8,19 +9,10 @@ import path from 'node:path';
 import { root } from './lib/learnings-data.mjs';
 import { mapTable } from './lib/fotmob-names.mjs';
 import { FOTMOB_LEAGUES } from './lib/fotmob-leagues.mjs';
+import { ALL_FIELDS, STATS, SUB, statFields } from './lib/team-style.mjs';
 
 const FM = 'https://www.fotmob.com/api/data';
 const DIR_OUT = path.join(root, 'data', 'stil');
-// FotMob-statistik -> vart falt
-const STATS = {
-  possession_percentage_team: 'poss',
-  accurate_pass_team: 'pass',
-  accurate_long_balls_team: 'longBalls',
-  poss_won_att_3rd_team: 'possWonAtt3rd',
-  effective_clearance_team: 'clearances',
-  total_tackle_team: 'tackles',
-  interception_team: 'interceptions',
-};
 const readJson = (p, d = null) => { try { return JSON.parse(fs.readFileSync(p, 'utf8')); } catch { return d; } };
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
@@ -77,19 +69,24 @@ for (const [code, spec] of Object.entries(FOTMOB_LEAGUES)) {
     const parts = available.has(fs_) ? [fs_] : [...available].filter((x) => x.startsWith(`${fs_} - `));
     if (!parts.length) continue;
     const isCurrent = parts.includes(current);
-    if (!FORCE && out.seasons[season] && !isCurrent && !ongoing.has(season)) continue;
+    // Sparade avslutade sasonger: hamta bara statistik som saknas (t.ex. nya falt), annars hoppa over
+    const saved = out.seasons[season];
+    const full = FORCE || !saved || isCurrent || ongoing.has(season);
+    const firstRow = saved ? Object.values(saved)[0] ?? {} : {};
+    const need = Object.fromEntries(Object.entries(STATS).filter(([, field]) => full || !(field in firstRow)));
+    if (!Object.keys(need).length) continue;
     const teams = new Map(); // FotMob-id -> { name, m, stats }
     for (const part of parts) {
       const doc = part === current ? lgNow : await getJson(`${FM}/leagues?id=${id}&season=${encodeURIComponent(part)}`);
       const urls = Object.fromEntries((doc?.stats?.teams ?? []).filter((t) => STATS[t.name]).map((t) => [t.name, t.fetchAllUrl]));
       if (!urls.possession_percentage_team) continue;
       const partTeams = new Map();
-      for (const [stat, field] of Object.entries(STATS)) {
+      for (const [stat, field] of Object.entries(need)) {
         if (!urls[stat]) continue;
         const d = await getJson(urls[stat]);
         for (const x of d?.TopLists?.[0]?.StatList ?? []) {
           if (!partTeams.has(x.TeamId)) partTeams.set(x.TeamId, { name: x.ParticipantName, m: x.MatchesPlayed ?? null });
-          partTeams.get(x.TeamId)[field] = x.StatValue;
+          Object.assign(partTeams.get(x.TeamId), statFields(field, x));
         }
         await sleep(120);
       }
@@ -97,21 +94,30 @@ for (const [code, spec] of Object.entries(FOTMOB_LEAGUES)) {
         const prevT = teams.get(tid);
         if (!prevT) { teams.set(tid, t); continue; }
         const w0 = prevT.m ?? 1, w1 = t.m ?? 1;
-        for (const field of Object.values(STATS)) {
+        for (const field of ALL_FIELDS) {
           if (t[field] == null) continue;
           prevT[field] = prevT[field] == null ? t[field] : Math.round(((prevT[field] * w0 + t[field] * w1) / (w0 + w1)) * 100) / 100;
         }
         prevT.m = w0 + w1;
       }
     }
-    if (!teams.size) continue;
+    if (!teams.size) {
+      // FotMob saknar de nya falten for sasongen: spara null sa sasongen inte hamtas om nasta korning
+      if (!full) {
+        const asked = Object.fromEntries(Object.values(need).flatMap((f) => [f, SUB[f]]).filter(Boolean).map((f) => [f, null]));
+        out.seasons[season] = Object.fromEntries(Object.entries(saved).map(([t, r]) => [t, { ...asked, ...r }]));
+      }
+      continue;
+    }
     const map = mapTable({ cur: [...names], all: allNames }, [...teams].map(([tid, t]) => ({ id: tid, name: t.name })));
     const rows = {};
     for (const [tid, t] of teams) {
       const ours = map.get(tid);
       if (!names.has(ours)) continue; // lag utan matcher i var data (t.ex. annan grupp i Ettan)
       const { name, ...rest } = t;
-      rows[ours] = { fotmobName: name, ...rest };
+      // falt som efterfragades men saknas hos FotMob sparas som null, sa de inte hamtas om varje korning
+      const asked = Object.fromEntries(Object.values(need).flatMap((f) => [f, SUB[f]]).filter(Boolean).map((f) => [f, null]));
+      rows[ours] = { ...(full ? {} : saved?.[ours]), ...asked, fotmobName: name, ...rest };
     }
     const missing = [...names].filter((n) => !rows[n]);
     if (missing.length) console.warn(`  ${code} ${season}: saknar stil for ${missing.join(', ')}`);
