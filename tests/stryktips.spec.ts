@@ -50,8 +50,8 @@ test('stryktipset: 13 matcher med avsparkstid, procent och Värde/Ej värde', ()
     expect(new Set(p.reduced.rowList).size).toBe(p.reduced.rows);
     expect(p.reduced.gamblingCabinUrl).toContain(`omg=${p.drawNumber}`);
     // Utdelning minst 30 000 kr (Europatipset 20 000); teckenregler fran SIGN_MIN, max alltid 13
-    // Minsta verkliga utdelning per spel (Stryktipset 30 000, Europatipset 20 000 enligt UTD_MIN_BY_PRODUCT)
-    expect(p.reduced.rules.payoutMinReal).toBeGreaterThanOrEqual(p.product === "stryktipset" ? 30000 : 20000);
+    // Minsta verkliga utdelning per spel (Stryktipset 15 000 sedan 2026-10-04, Europatipset 20 000 enligt UTD_MIN_BY_PRODUCT)
+    expect(p.reduced.rules.payoutMinReal).toBeGreaterThanOrEqual(p.product === "stryktipset" ? 15000 : 20000);
     expect(p.value?.level).toMatch(/^(low|normal|high)$/);
     // Teckenregeln får sänkas (aldrig under 2-1-1) för 30 000–50 000 kr eller så att 3 röda + högst 1 gul går in (2026-10-02)
     expect(p.reduced.rules.signMinRule ?? p.reduced.rules.signMin).toEqual(SIGN_MIN.A);

@@ -105,6 +105,68 @@ Favorit = högst stängningschans av 1 och 2. Utfall: vann favoriten mer sällan
 - Kandidat, inte bekräftad: favoriter som folket streckar ≥ 1,10 × vår procent vann 368 mot väntat 394 (z −1,1 / −0,6 / −1,6 per period, samlat ~−1,9). Följ upp på fler omgångar och på Europatipset. Överstreckade favoriter är där ett fall betalar mest, oavsett om de faller oftare.
 - Skript: `scripts/lardomar-favoritfall.mjs` (data, `--open` mot öppningsodds), `-test.mjs` (signal för signal), `-modell.mjs` (alla tillsammans).
 
+### Förkastat 2026-10-04, Stryktipset: finns det skrällar som vinner oftare än vår procent? (PL/CH/L1)
+
+Frågan från användaren: kan vi pricka in fler skrällar (folket ≤ 30 %) och få stora utdelningar oftare? Två datamängder:
+- **Stor historik** (PL/CH/L1 2017/18–2026/27, stängningsodds, `scripts/lardomar-skrallar-hist.mjs`). Skräll = 1 eller 2 med p ≤ 30 %. Träning till och med 2022/23 (validering 2021/22–2022/23), kontroll 2023/24–.
+- **Stryktipset** (107 omg, 1 294 matcher, `data/stryktips-backtest-*-motB.json`, `scripts/lardomar-skrallar-folk.mjs`). Väntat = vår slutprocent (`final`) och folkets streck. Folkdata finns bara från 2023/24, så här delas 2023/24–2024/25 mot 2025/26–.
+
+Hypoteserna (riktning bestämd i förväg: skrällen vinner oftare än väntat) och utfallet:
+
+| Signal | n (tr / ko) | Utfall / väntat träning | z träning | Utfall / väntat kontroll | z kontroll |
+|---|---|---|---|---|---|
+| Alla skrällar 1/2, p ≤ 30 % | 6 269 / 3 357 | 1 316 / 1 326 | −0,3 | 694 / 716 | −0,9 |
+| League One-skräll | 2 130 / 1 208 | 430 / 477 | **−2,4** | 260 / 271 | −0,8 |
+| Championship-skräll | 2 303 / 1 234 | 535 / 516 | +1,0 | 274 / 271 | +0,2 |
+| Hemmaskräll | 1 730 / 900 | 381 / 386 | −0,3 | 200 / 206 | −0,5 |
+| Bortaskräll | 4 539 / 2 457 | 935 / 940 | −0,2 | 494 / 510 | −0,8 |
+| Skräll, oddsen rörde sig ≥ 3 pe mot den (öppning → stängning) | 275 / 133 | 64 / 65 | −0,2 | 32 / 32 | −0,1 |
+| Samma mot öppningsodds | 275 / 133 | 64 / 54 | +1,5 | 32 / 27 | +1,1 |
+| Kryss i jämna matcher (\|p1 − p2\| < 0,15) | 3 318 / 1 699 | 904 / 968 | **−2,4** | 468 / 483 | −0,8 |
+| Sen säsong (apr–maj), skrällen i botten 6 | 416 / 240 | 86 / 79 | +0,9 | 55 / 45 | +1,6 |
+| Uppflyttat lag som skräll | 246 / 175 | 49 / 51 | −0,4 | 32 / 36 | −0,8 |
+
+Stryktipset med folket (väntat enligt `final` / enligt folket; utfall/folk = hur mycket mer skrällen vann än strecken sa):
+
+| Signal | n | Utfall | Väntat final | Väntat folk | Utfall/folk | z 23/24–24/25 | z 25/26– |
+|---|---|---|---|---|---|---|---|
+| 1/2-skräll folk ≤ 30 % | 1 100 | 280 | 255 | 199 | 1,41 | +0,7 | +2,1 |
+| Kryss folk ≤ 30 % | 1 220 | 306 | 311 | 282 | 1,09 | −0,3 | −0,2 |
+| Bortaskräll folk ≤ 30 % | 770 | 190 | 170 | 133 | 1,43 | +0,5 | +2,3 |
+| Hemmaskräll folk ≤ 30 % | 330 | 90 | 85 | 67 | 1,35 | +0,5 | +0,5 |
+| Skräll, folk/final ≤ 0,75 (kraftigt understreckad) | 514 | 117 | 105 | 69 | **1,70** | +0,8 | +1,2 |
+| Skräll, folk/final 0,75–0,9 | 403 | 116 | 105 | 86 | 1,34 | +0,3 | +1,6 |
+| Skräll, folk/final > 0,9 | 183 | 47 | 45 | 44 | 1,07 | −0,1 | +0,8 |
+| Kryss folk < 22 % | 364 | 84 | 77 | 61 | 1,37 | 0,0 | +1,6 |
+| Skrällspik-bandet (final 35–47 %, final − folk ≥ 3 pe) | 76 | 35 | 29 | 25 | 1,41 | +1,8 | +0,1 |
+
+- **Ingen signal håller.** Inget når |z| ≥ 2,5 i träning med skräll-riktning. De två som gör det (League One-skrällar z −2,4 och kryss i jämna matcher z −2,4) pekar åt **andra hållet**: skrällarna och krysset vinner *mer sällan* än oddsen säger, och i kontrollen är det bara −0,8. Det håller inte heller åt det hållet.
+- Att 1/2-skrällar vann fler än `final` i Stryktipset (z +1,8) kommer nästan bara från 2025/26– (z +2,1, före +0,7). I den stora historiken vann skrällar *färre* än stängningsoddsen i samma period (z −0,9). Det är samma brus som "röd 2:a z 1,8" 2026-10-03.
+- Oddsrörelse mot skrällen: slår öppningsoddsen (z +1,5 / +1,1) men inte stängningen. Marknaden prisar in det före avspark, och vår `final` bygger på sena odds. Ingen nytta för Stryktipset.
+- **Det enda som skiljer grupperna är folkets streck, och det vet vi redan före matchen.** Kraftigt understreckade skrällar (folk ≤ 0,75 × vår procent) vann ungefär som vår procent (117 mot 105, z +0,8/+1,2) men 1,70 gånger så ofta som folket trodde. Skrällar som folket streckar som vi (> 0,9) vann bara 1,07 × strecken. De ger alltså inte fler rätt, men varje rätt betalar mer. Det är redan inbyggt i utdelningsgränsen och i skrällspikens krav (final − folk ≥ 3 pe).
+- **Hur det kan användas (förslag, inte infört och inte bakkört):** när motorn ska välja *vilket* rött tecken som tas med i en halva eller blir skrällspik, välj det med lägst folk/final bland kandidater med ungefär samma chans. Samma chans till 13 rätt, högre utdelning när den sitter. Det ändrar inte hur ofta en skräll sitter. Det gör bara procenten. Ingen regel ger "fler skrällar rätt" utan att fler favoriter faller ur systemet (se X-tilt 2026-10-03).
+- Inte testat igen: favoritfall, domare, risklag, tränare, inbördes, X-tilt och överstreckade favoriter (se ovan).
+
+### Förkastat 2026-10-04, Stryktipset: kryss – kan vi få in fler X i grundraden?
+X är det tecken som oftast saknas i grundraden: A saknar 41 % av kryssen, mot 9 % av 1:orna och 29 % av 2:orna (107 omg).
+- **X går inte att förutsäga bättre än oddsen** (PL, CH, L1 och L2 2022/23–2026/27, 8 041 matcher, mot Pinnacles slutodds):
+  - Lagens kryssandel och kryss över marknaden (20 senaste), målsnitt, inbördes kryss, månad och liga ligger alla inom ±2 pe.
+  - En logistisk modell med allt testad på 2025/26–: logloss 0,58187 mot oddsens 0,58204, alltså noll i praktiken.
+  - Vår `final` är kalibrerad för X: matcher vi ger 28 % blir kryss 28 %. Högsta X är cirka 32 %.
+- **Blått X** (en blå halva har alltid X i A/B): infört på användarens önskan. Det gav fler omgångar med blått X (A 43 → 79), men chansen till 13 rätt sjönk något (A 25,0 → 23,9 %) och inga fler X kom med. Färgen är inte problemet.
+- **Fler X-halvor** (STRYK_X_HALF 0,05, 1X/X2 före 12): A −28k netto mot +24k, och rätt rad i grundraden 8 → 5. X kom med oftare, men 1 och 2 föll bort.
+- **B täcker A:s kryss-hål** (extra grundradskandidater för B med X där A saknar X, vikt 1,15–1,6): ingen skillnad (A+B 43,8 %, X täckt 288 av 353). B väljs redan efter A+B:s gemensamma chans.
+- **Färre tvingade spikar** (STRYK_MIN_SPIKES 1 eller 0): exakt samma kuponger. Motorn väljer i snitt 3 spikar självmant, och minst-2-regeln binder aldrig. Spikarna sitter 56 % (A), lika ofta som modellen säger.
+- **Det som faktiskt flyttar 13 rätt är utdelningsgränsen**, inte X (A, 107 omg, data `data/stryktips-backtest-*-{tB2,utd15,utd5}.json`):
+
+| A:s gräns | Summa chans 13 | 13 rätt | 12+ | 11+ | Netto | Netto 23/24, 24/25, 25/26+ |
+|---|---|---|---|---|---|---|
+| 30–50k (idag) | 27,5 % | 1 | 4 | 12 | +13 088 | −11 990, +36 423, −11 345 |
+| 15k | 39,9 % | 1 | 5 | 16 | +23 824 | −12 463, +47 070, −10 783 |
+| 5k | 57,1 % | 4 | 12 | 17 | +43 660 | +2 344, +7 379, +33 937 |
+
+  Modellens väntade återbetalning sjunker med lägre gräns (15 649 → 11 304 kr), eftersom favoritraderna betalar lite. Utfallet var ändå bättre, men 13-rättarna med 5k-gräns betalade 4–44k. Ett beslut för användaren (gränsen är användarens regel, 30–50k).
+
 ## Vad som håller
 
 **2026-10-03, Stryktipset: varför systemen missar 13 rätt, och spikarna (A, B och C, 107 omgångar 2023/24–2026/27, `data/stryktips-backtest-*-riskC.json`).**
@@ -175,6 +237,16 @@ Favorit = högst stängningschans av 1 och 2. Utfall: vann favoriten mer sällan
 - **Orsak:** grundraden väljs efter chansen att rätt rad finns i den, men gränsen stryker favoritraderna. Offline gav vikten p × folk^−0,5 grundrader med 38,2 % (inom-grundrad-tak), men nästan allt försvinner med röd max 2 (rader över gränsen har ofta 3 understreckade tecken).
 - **I motorn (extra grundradskandidater, valet efter kupongens chans):** β 0,5 27,20 %, **β 0,3 + 0,5 27,46 %** (bas 26,75; 8,41→8,68, 9,33→9,62, 9,00→9,16 per period), B 15,67 → 16,66 %. 12 rätt 6 → 4 och 11+ 14 → 12 (brus, 2 omgångar). Med A röd 1–3 26,53 %, röd 1–4 25,22 % – röd 1–2 kvar.
 - **Infört:** `GRUND_TILT` [0, 0,3, 0,5] i `scripts/fetch-stryktipset.mjs` och `gui/public/stryk-engine.js` (`tiltShare`), test i lib-units.
+- **2026-10-04, rätt rad i A:s grundrad men ingen 13:a** (`*-motB.json`, 107 omg): 9 omgångar hade rätt rad i grundraden, 13 rätt bara i 4876. Fyra betalade under 30 000 kr (gränsen, som tänkt). Fyra betalade mer: 4846 (97 744 kr), 4873 (254 901), 4915 (285 598), 4944 (1 181 818). Alla fyra stoppades av **färgreglerna, både röd 1–2 och grön 3–6**: rätt rad hade 3/4/7/7 röda och 2/2/1/0 gröna bland garderingarna (spikar och blå räknas inte). Teckenregeln 4-2-2 och utdelningsgränsen stoppade ingen. Röd 1–3 och grönregeln av är redan bakkörda och sämre totalt; A är byggt för små och mellanstora omgångar, och de stora omgångarna ligger utanför A med avsikt.
+- **2026-10-04, egen lutning för B (`GRUND_TILT_B`)** (användaren: "oftare pricka in skrällar så jag får in mycket pengar"). 107 omg, C av, A oförändrad, filer `data/stryktips-backtest-*-tB{1,2,3}.json`, bas `*-arvB.json`. Väntad återbetalning = summan av chans × verklig utdelning per kostnad (modellens).
+
+  | B-lutning (beta) | Chans 13 (summa) | Per period | Väntad återbet. kr/kr | 12/11 rätt | Netto |
+  |---|---|---|---|---|---|
+  | 0 / 0,3 / 0,5 (som A, förut) | 16,67 % | 5,57/5,50/5,61 | 0,48 | 3/5 | −25 658 |
+  | 0 / 0,3 / 0,5 / 0,8 / 1 | 16,73 % | 5,43/5,59/5,72 | 0,51 | 4/6 | −24 520 |
+  | **0,5 / 0,8 / 1** | **16,35 %** | 5,29/5,35/5,71 | **0,66** | 4/5 | −18 013 |
+  | 1 / 1,5 | 9,33 % | 3,00/3,37/2,96 | 0,85 | 0/8 + en 13:a (4921, 177 604 kr) | +152 828 |
+  - **Infört 0,5/0,8/1 för B** (båda motorerna, test i lib-units): nästan samma chans (−0,3 enheter) men en tredjedel högre utdelning när B sitter. 1/1,5 halverar chansen; dess 13:a är en enda omgång (brus). Grundraden träffar fortfarande nästan aldrig storomgångarna (1 av 76), så lutningen flyttar utdelningen uppåt, inte träffen.
 - **Noterat, inte ändrat:** verklig 13-rättsutdelning är i median 1,33 × GC-formelns (25 milj omsättning). 30 000 kr i länken motsvarar alltså ungefär 40 000 kr i verkligheten. I 6 av 107 omgångar betalade rätt rad ≥ 30 000 kr fast GC räknade under 30 000 (t.ex. 4951: GC 29 629, verkligt 63 157). Gränsen i länken är användarens regel och rördes inte.
 
 ## Beslut
@@ -190,7 +262,20 @@ Favorit = högst stängningschans av 1 och 2. Utfall: vann favoriten mer sällan
 
 ## Följ upp
 
-- **Hästar V85 (2026-10-04):** V85 Boden 2026-10-03 gav 4 av 8 med en analys gjord kl. 10:19. Med slutstrecket hade samma system gett 6 av 8, eftersom sena pengar gick till tre vinnare. Beslut: analysera nära spelstopp. Barfota ändrat (streck < 10 % vinner 1,56 × strecket) är redan inprisat av modellen (rest 1,19, z 1,9, inte bekräftat). Detaljer: [anteckningar/V85.md](anteckningar/V85.md).
+- **Stryktipset, A:s utdelningsgräns (2026-10-04): beslut 15k** (användaren: "kör 15k på A"). Alla gränser, A, 107 omg, C av:
+
+| Gräns | Chans 13 (summa) | 13 | 12+ | 11+ | 10+ | Netto | Modellens väntade |
+|---|---|---|---|---|---|---|---|
+| 30k (förr) | 27,5 % | 1 | 4 | 12 | 32 | +13 088 | 15 649 |
+| 20k | 34,9 % | 1 | 6 | 12 | 40 | +27 072 | 13 883 |
+| 15k | 39,8 % | 1 | 5 | 16 | 40 | +23 824 | 13 234 |
+| 10k | 47,2 % | 0 | 7 | 16 | 40 | −19 639 | 12 332 |
+| 5k | 57,1 % | 4 | 12 | 17 | 39 | +43 660 | 11 304 |
+
+  Chans och 10–11 rätt stiger jämnt när gränsen sänks. Nettot hoppar (10k minus, 5k stort plus), så det styrs av enstaka träffar. 15k är mellanläget. Följ upp: jämför 11+ och netto för A i skarpa omgångar efter cirka 30 omg.
+- **Europatipset A** behåller 20k. 55 omg (2025/26–): 20k chans 17,5 %, 11+ 9, netto −15 820; 15k 21,0 %, 11+ 6, −11 334; 10k 24,5 %, 11+ 9, 12+ 4, −9 011. Blandat och för litet urval. Kör om när fler omgångar finns (`data/europatips-backtest-utd*.json`).
+
+- **Hästar V85 (2026-10-04):** V85 Boden 2026-10-03 gav 4 av 8 med en analys gjord kl. 10:19. Med slutstrecket hade samma system gett 6 av 8, eftersom sena pengar gick till tre vinnare. Beslut: analysera nära spelstopp. Barfota ändrat (streck < 10 % vinner 1,56 × strecket) är redan inprisat av modellen (rest 1,19, z 1,9, inte bekräftat). Km-tider justerade för distans och startmetod: z −2,97 på 2025–2026, men z −0,58 på fem år (2021–2026, 21 100 lopp). Inte infört, testa igen i januari 2027. Hästhistoriken täcker nu 2021–2026. Detaljer: [anteckningar/V85.md](anteckningar/V85.md).
 
 - **Ligor helt utan oddshistorik** (Colombia, Brasilien B, Chile, J2, J3, K League, Superettan, Div 1, OBOS, Danmark 1. div, Tjeckien, Kroatien): där kan varken marknadstest eller kalibrering göras, och tipsen följer modellen. `data/matcher/<liga>.csv` sparar från och med nu oddsen vi ser före varje match (`pre_first_*`, `pre_last_*`). Efter cirka 150 matcher per liga kan marknadstestet köras där också. Modellen slår "alltid hemmavinst" i 10 av 13 sådana ligor, men inte i Chile (44,3 % mot 48,9 %, n 167; bortatipsen träffar 33 %, vilket tyder på underskattad hemmafördel), K League (32,5 % mot 36,5 %, n 166) och Danmark 1. div (35,7 % mot 38,2 %, n 42). Urvalen är för små för att ändra något nu. Granska hemmafördelen i Chile och K League med `npm run tune` när fler matcher finns.
 - **League One** (z −2,2 i år): ligger z fortfarande ≤ −2 efter 200 matcher, granska oddskällan (egen avläsning mot stängning). **Portugal** (z −1,8) och **Superettan** (z −1,8 förra säsongen): följ upp i ligafilerna.

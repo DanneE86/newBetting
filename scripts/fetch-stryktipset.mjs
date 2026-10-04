@@ -138,7 +138,10 @@ const COLOR_WIDTH = Number(process.env.STRYK_COLOR_WIDTH ?? 2);
 const PAYOUT_13 = 0.65 * 0.4; // 65 % aterbetalning, 40 % av potten till 13 ratt
 // Minsta utdelning for 13 ratt (kr) per spel, anvandarens regel. Europatipset 20 000: backtest 55 omg (minst 3 topp 4-matcher)
 // gav A +17 677 kr mot -14 134 vid 30 000 (bygger pa en enda 13-ratt, folj upp). STRYK_UTD_MIN overstyr i backtest.
-const UTD_MIN_BY_PRODUCT = { stryktipset: 30000, europatipset: 20000 };
+// Stryktipset A 15 000 kr (gransfonster 15 000-25 000) sedan 2026-10-04 (anvandaren: "kor 15k pa A"). Backtest
+// 107 omg (C av, data/stryktips-backtest-*-{tB2,utd15}.json): A chans 13 ratt 27,5 -> 39,9 % (summa), 11+ 12 -> 16, 10+ 32 -> 40,
+// netto +13 088 -> +23 824 kr. B och C har kvar 50 000-75 000 kr, D 30 000-50 000 kr.
+const UTD_MIN_BY_PRODUCT = { stryktipset: 15000, europatipset: 20000 };
 // Kupong B (risksystemet): 50 000-75 000 kr pa bada spelen (anvandaren 2026-10-02 kvall: "oka B till 50k-75k", tidigare 30-50k)
 const UTD_MIN_B = 50000, PAYOUT_BAND_B = 75 / 50;
 const utdMin = (productId) => Number(process.env.STRYK_UTD_MIN ?? UTD_MIN_BY_PRODUCT[productId] ?? 30000);
@@ -659,6 +662,11 @@ const spikMinFor = (productId) => Number(process.env.STRYK_SPIK_MIN ?? SPIK_MIN_
 // A chans 26,75 -> 27,46 % (hogre i alla tre perioderna), B 15,67 -> 16,66 %; '0,0.5' 27,20 %. Med A rod 1-3 eller
 // 1-4 samre (26,53 / 25,22 %), rod 1-2 kvar. Samma i gui/public/stryk-engine.js (GRUND_TILT).
 export const GRUND_TILT = (process.env.STRYK_GRUND_TILT ?? '0,0.3,0.5').split(',').map(Number).filter(Number.isFinite);
+// B (byggs mot A, setsA) har egen, starkare lutning (2026-10-04, 107 omg, C av, data/stryktips-backtest-*-tB{1,2,3}.json):
+// 0,0.3,0.5 (som A) chans 16,67 %, vantad aterbetalning 0,48 kr/kr; 0.5,0.8,1 16,35 % och 0,66 (12 ratt 3 -> 4);
+// 1,1.5 9,33 % och 0,85. Infort 0.5,0.8,1: nastan samma chans men en tredjedel hogre utdelning nar B sitter.
+// Samma i gui/public/stryk-engine.js (GRUND_TILT_B). STRYK_GRUND_TILT_B = egna beta-varden.
+export const GRUND_TILT_B = (process.env.STRYK_GRUND_TILT_B ?? '0.5,0.8,1').split(',').map(Number).filter(Number.isFinite);
 let grundTilt = 0;
 // Andel av matchens vikt som garderingen sub tacker, med vikten p x folk^-beta (beta 0 = vanlig chans)
 export function tiltShare(e, sub, beta) {
@@ -670,7 +678,8 @@ function grundCandidates(events, maxRows, spikMin = 0, setsA = null, loose = fal
   const seen = new Set(), out = [];
   const prev = grundTilt;
   try {
-    for (const t of GRUND_TILT.length ? GRUND_TILT : [0]) {
+    const tilts = setsA ? GRUND_TILT_B : GRUND_TILT;
+    for (const t of tilts.length ? tilts : [0]) {
       grundTilt = t;
       for (const c of grundCandidates1(events, maxRows, spikMin, setsA, loose)) {
         const k = c.sets.map((x) => x.join('')).join('|');
@@ -695,9 +704,9 @@ function grundCandidates1(events, maxRows, spikMin = 0, setsA = null, loose = fa
   const spikOk = (e, k) => spikOk0(e, k) && (!xTiltOn || k === 1 || e.final[1] < xSpikMax);
   const sameA = (x, i) => setsA?.[i]?.length === x.length && x.every((k, j) => k === setsA[i][j]);
   // B arver A:s spik (anvandaren 2026-10-03: "A och B far inte ha samma garderingar men max 1 spik skilja")
-  const inheritA = (x, i) => x.length === 1 && setsA?.[i]?.length === 1 && setsA[i][0] === x[0];
+  const inheritA = (x, i) => B_INHERIT && x.length === 1 && setsA?.[i]?.length === 1 && setsA[i][0] === x[0];
   // Matcher dar A och B skiljer sig pa spik: nagon av dem spikar och de har inte samma spik (hogst AB_SPIK_DIFF)
-  const spikDiff = (x, i) => (setsA && (x.length === 1 || setsA[i].length === 1) && !inheritA(x, i) ? 1 : 0);
+  const spikDiff = (x, i) => (B_INHERIT && setsA && (x.length === 1 || setsA[i].length === 1) && !inheritA(x, i) ? 1 : 0);
   // Ingen helgardering dar alla tecken ar gula (anvandaren 2026-10-02: "3 gula helor ar exakt samma sak som bla helor")
   // Kryss dar folket missar det (X_FOLK, A och B): ingen 1-2 - favorit + X i stallet (laggs till i options0)
   const xFolkHere = (e) => xFolkOn && e.final.indexOf(Math.max(...e.final)) !== 1 && xFolk(e);
@@ -751,7 +760,7 @@ function grundCandidates1(events, maxRows, spikMin = 0, setsA = null, loose = fa
   // helor att MIN_HELG inte gar i B blir det sa manga som gar (A/B-regeln gar fore, 2026-10-03). Samma som stryk-engine.js.
   // (inte pa matcher dar alla tecken ligger pa 26-44 % - dar blir det aldrig helgardering)
   const helgOk = (i) => !allYellowMatch(events[i]);
-  const minHelg = setsA ? Math.min(MIN_HELG, setsA.filter((x, i) => x.length === 2 && helgOk(i)).length + Math.min(AB_SPIK_DIFF, setsA.filter((x, i) => x.length === 1 && helgOk(i)).length)) : MIN_HELG;
+  const minHelg = setsA && B_INHERIT ? Math.min(MIN_HELG, setsA.filter((x, i) => x.length === 2 && helgOk(i)).length + Math.min(AB_SPIK_DIFF, setsA.filter((x, i) => x.length === 1 && helgOk(i)).length)) : MIN_HELG;
   const spikesOk = (st) => { const n = st.sets.filter((x) => x.length === 1).length; return n >= MIN_SPIKES && n <= MAX_SPIKES && (st.nl === 0 || n === MIN_SPIKES || loose === 'max') && st.sets.filter((x) => x.length === 3).length >= minHelg && st.sets.filter((x) => x.length === 2).length >= BLUE_HALVES && (st.ns || 0) >= skrallMin; };
   const okList = [...dp.values()].filter(spikesOk);
   // Gar det inte med hogst BLUE_HALVES helgula garderingar (for fa spikbara matcher) slapps den gransen
@@ -925,6 +934,11 @@ const SPIK_TOP = Number(process.env.STRYK_SPIK_TOP ?? 4); // A och C (0 = av)
 // A och B (anvandaren 2026-10-03): aldrig samma gardering pa samma match, men hogst 1 spik far skilja - B arver A:s spikar
 // utom pa hogst en match (B:s skrallspik, eller en av A:s spikar som B garderar). Ersatter "inte ens samma spik".
 export const AB_SPIK_DIFF = Number(process.env.STRYK_AB_SPIK_DIFF ?? 1);
+// B arver A:s spikar (B_INHERIT). Motsystem (aldrig samma tecken, inte ens spiken) provat 2026-10-04, 107 omg med samma
+// regler for ovrigt: B chans 13 ratt 16,7 -> 12,7 % (summa), A+B 43,8 -> 39,3 %, 12 ratt 3 -> 1, B gick inte att bygga i
+// 4 omg (A med 8-9 helor) och gransen holl 103/107. Arvet behalls (anvandaren 2026-10-04). B:s nettoras samma dag kom fran
+// ovriga regelandringar, inte arvet. data/stryktips-backtest-*-{arvB,motB}.json. STRYK_B_INHERIT=0 = motsystem.
+export const B_INHERIT = process.env.STRYK_B_INHERIT !== '0';
 // Skrallspik i A (35-47 %). Historiken 2023-2026: A:s spikar under 50 % holl bara ca 38 %, och i omgangar over 50 000 kr
 // sprack halften av A:s spikar. Men backtest 2026-10-03 (107 omg) utan skrallspik i A: samma chans (23,87 mot 23,98 %),
 // spikar sprack 45 mot 46 % och A:s enda 13:a forsvann - kvar som standard. STRYK_SKRALL_A=0 tar bort den ur A.
@@ -1881,7 +1895,7 @@ async function analyzeDraw(product, draw, ctx, result) {
     reducedB.gamblingCabinUrl = gamblingCabinUrl(product.id, draw.drawNumber, closeDate, out, system.sets, reducedB);
   } else if (system) {
     // B som i webben (risksystemet): 50 000-75 000 kr (aven Europatipset), 3-2-2, rod 1-4 eller 2-4, minst en skrallspik,
-    // aldrig samma gardering som A och hogst 1 spik som skiljer (AB_SPIK_DIFF)
+    // aldrig samma gardering som A och hogst 1 spik som skiljer (AB_SPIK_DIFF, B_INHERIT)
     const optsB = { rowPrice, turnover, realTurnover, jackpot, payoutMin: Math.max(UTD_MIN_B, utdMin(product.id)), signMin: SIGN_MIN.B, colorBands: bands, xTilt: X_TILT.for.includes('B'), blueX: BLUE_X };
     const bestB = withBlueX((blueX) => bestRisk(sysEv, spikMinFor(product.id), system.sets, { ...optsB, blueX }, B_JOINT ? new Set(reduced.rowList) : null));
     systemB = bestB?.system || null; reducedB = bestB?.reduced || null;
