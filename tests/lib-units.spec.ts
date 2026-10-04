@@ -67,6 +67,12 @@ test.describe('matchup: hjalpfunktioner', () => {
     expect(m.statSource({ season: { stats: cur }, prevSeason: { stats: prev } })).toMatchObject({ minutes: 500, label: null });
     const few = m.statSource({ season: { stats: { minutes_played: [120] } }, prevSeason: { stats: prev, tournament: 'Serie A', season: '2025/2026' } });
     expect(few).toMatchObject({ minutes: 2500, label: 'Serie A 2025/2026' });
+    // Årets statistik från en annan liga (Assadi: Primera División, nu i AIK) märks, även i nyckeltalstexten
+    const chile = { stats: { minutes_played: [801], dribbles_succeeded: [15, 1.685, 75.8] }, tournament: 'Primera División', season: '2026' };
+    const moved = m.statSource({ league: { name: 'Allsvenskan' }, season: chile });
+    expect(moved).toMatchObject({ minutes: 801, label: 'Primera División 2026' });
+    expect(m.statText(moved, 'dribbles_succeeded').text).toBe('15 lyckade dribblingar (76:e perc. i Primera División 2026)');
+    expect(m.statSource({ league: { name: 'Allsvenskan' }, season: { ...chile, tournament: 'Allsvenskan' } }).label).toBeNull();
     // Malvakt utan minutes_played: startade matcher x 90
     expect(m.statSource({ season: { stats: { player_started_matches: [6] } } }).minutes).toBe(540);
     // Inget alls -> tom statistik, ingen krasch
@@ -2677,5 +2683,100 @@ test.describe('next-round: bara kommande omgång per liga', () => {
     expect(nextRoundsFromFixtures(fixtures, now).get('PL')).toEqual({ type: 'date', value: '2026-10-10' });
     const tips = [fx('SE2', '2026-10-10', 'x'), fx('SE2', '2026-10-13', 'x'), fx('SE2', '2026-10-17', 'x')];
     expect(filterNextRoundOnly(tips, new Map()).map((t: any) => t.date)).toEqual(['2026-10-10', '2026-10-13']);
+  });
+});
+
+// ---------- transfer-study.mjs ----------
+
+test.describe('transfer-study: ligabyten och prognos', () => {
+  // [säsong, lagId, lag, övergång, [[ligaId, liga, matcher, mål, assist, betyg]]]
+  const assadi = [
+    ['2026', 8349, 'AIK', null, [[67, 'Allsvenskan', 4, 0, 0, 6.29]]],
+    ['2026', 6310, 'Universidad de Chile', null, [[273, 'Liga de Primera', 15, 0, 4, 6.92], [9091, 'Copa Chile', 1, 0, 0, null]]],
+    ['2025', 6310, 'Universidad de Chile', null, [[273, 'Liga de Primera', 16, 4, 6, 7.09], [299, 'Copa Sudamericana', 7, 5, 0, 7.74]]],
+  ];
+
+  test('careerSeasons och CUP_RE: cuper och Europaspel räknas inte som liga', async () => {
+    const { careerSeasons, isLeagueName } = await lib('transfer-study.mjs');
+    const rows = careerSeasons([{ seasonName: '2026', teamId: 1, team: 'AIK', transferType: { text: 'on loan' },
+      tournamentStats: [{ leagueId: 67, leagueName: 'Allsvenskan', appearances: '4', goals: '0', assists: '1', rating: { rating: '6.29' } },
+        { leagueId: 9, leagueName: 'Friendlies', isFriendly: true, appearances: '2' }] }]);
+    expect(rows).toEqual([['2026', 1, 'AIK', 'on loan', [[67, 'Allsvenskan', 4, 0, 1, 6.29]]]]);
+    for (const n of ['Allsvenskan', 'Liga de Primera', 'Premier League', 'Série A', 'Eliteserien', 'Championship', 'Serie A']) expect(isLeagueName(n)).toBe(true);
+    for (const n of ['Copa Chile', 'Copa Sudamericana', 'Europa League', 'Champions League Qualification', 'DFB Pokal', 'U19 League', 'Euro', 'Premier League 2',
+      'Paulista A1', 'Carioca Taca Guanabara', 'CONCACAF Champions Cup'])
+      expect(isLeagueName(n)).toBe(false);
+  });
+
+  test('leagueMoves: Liga de Primera -> Allsvenskan, samma klubb två säsonger är inget byte, lån tillbaka hoppas över', async () => {
+    const { leagueMoves, seasonEnd } = await lib('transfer-study.mjs');
+    const mv = leagueMoves(assadi);
+    expect(mv).toHaveLength(1);
+    expect(mv[0]).toMatchObject({ loan: false, latest: true, from: { league: 'Liga de Primera', apps: 15, rating: 6.92 }, to: { league: 'Allsvenskan', apps: 4 } });
+    const back = [['2025/2026', 2, 'B', 'back from loan', [[47, 'Premier League', 10, 0, 0, 6.8]]], ['2024/2025', 3, 'C', 'on loan', [[48, 'Championship', 30, 2, 2, 7.0]]]];
+    expect(leagueMoves(back)).toHaveLength(0);
+    expect(leagueMoves(assadi, { minEnd: 2027 })).toHaveLength(0);
+    expect([seasonEnd('2025/2026'), seasonEnd('2025/26'), seasonEnd('2026')]).toEqual([2026, 2026, 2026]);
+  });
+
+  test('isSuccess: ordinarie och betyg minst ligans median', async () => {
+    const { isSuccess } = await lib('transfer-study.mjs');
+    expect(isSuccess({ share: 0.7, rating: 6.9, median: 6.8 })).toBe(true);
+    expect(isSuccess({ share: 0.7, rating: 6.7, median: 6.8 })).toBe(false);
+    expect(isSuccess({ share: 0.3, rating: 7.5, median: 6.8 })).toBe(false);
+    expect(isSuccess({ share: 0.7, rating: 6.9, median: null })).toBeNull();
+  });
+
+  test('fitLeagueLevels: spelare tappar betyg i starkare liga -> högre nivå', async () => {
+    const { fitLeagueLevels } = await lib('transfer-study.mjs');
+    const moves = [];
+    for (let i = 0; i < 30; i++) moves.push({ a: 1, b: 2, d: -0.3 }, { a: 2, b: 1, d: 0.3 }, { a: 2, b: 3, d: -0.2 });
+    const lv = fitLeagueLevels(moves, { iters: 2000, ridge: 0.1 });
+    expect(lv.get(2) - lv.get(1)).toBeCloseTo(0.3, 1);
+    expect(lv.get(3) - lv.get(2)).toBeCloseTo(0.2, 1);
+  });
+
+  test('features: förväntat betyg i nya ligan = gammalt betyg minus nivåskillnad, mot nya ligans median', async () => {
+    const { features } = await lib('transfer-study.mjs');
+    const m = { born: '2004-01-08', pos: 'ytter', loan: false,
+      from: { leagueId: 273, rating: 6.92, median: 6.8, share: 0.5, apps: 15, goals: 0, assists: 4 },
+      to: { leagueId: 67, season: '2026', rating: 6.29, median: 6.85, share: 0.15, apps: 4 } };
+    const f = features(m, new Map([[273, -0.26], [67, -0.17]]));
+    expect(f.gap).toBeCloseTo(0.09, 5);
+    expect(f.expRel).toBeCloseTo(6.92 - 0.09 - 6.85, 5);
+    expect(f.age).toBeCloseTo(22.1, 1);
+    expect(f.success).toBe(false);
+    expect(f.x).toHaveLength(15);
+    // Utan lagstyrka och marknadsvärde: lag = ligasnitt (0), värde saknas-flagga
+    expect(f.x.slice(10)).toEqual([0, 0, f.relA, 6, 1]);
+    // Två säsonger viktas med matcher; marknadsvärde som log10
+    const two = features({ ...m, value: 2_000_000, prev: { rating: 7.09, median: 6.79, apps: 15 } }, new Map([[273, -0.26], [67, -0.17]]));
+    expect(two.rel2).toBeCloseTo(((6.92 - 6.8) * 15 + (7.09 - 6.79) * 15) / 30, 5);
+    expect(two.logValue).toBeCloseTo(Math.log10(2_000_000), 5);
+    expect(features({ ...m, from: { ...m.from, rating: null } }, new Map([[273, 0], [67, 0]])).x).toBeNull();
+  });
+
+  test('teamMedian och leagueSeasonStats: spelaren själv räknas inte, trupperna fyller på medianen utan dubbletter', async () => {
+    const { teamSeasonStats, teamMedian, leagueSeasonStats } = await lib('transfer-study.mjs');
+    const players = Array.from({ length: 7 }, (_, i) => ({ id: `p${i}`, seasons: [['2026', 8349, 'AIK', null, [[67, 'Allsvenskan', 20, 0, 0, 6.5 + i * 0.1]]]] }));
+    const ts = teamSeasonStats(players);
+    expect(teamMedian(ts, 8349, '2026', 'p6')).toBeCloseTo(6.75, 5); // 6,5–7,0 utan p6 (7,1)
+    expect(teamMedian(ts, 8349, '2026', 'p0')).toBeCloseTo(6.85, 5);
+    expect(teamMedian(ts, 9999, '2026', 'p0')).toBeNull();
+    const extra = [{ id: 'p0', leagueId: 67, season: '2026', apps: 20, rating: 9.9 }, { id: 'x', leagueId: 67, season: '2026', apps: 30, rating: 6.0 }];
+    const ls = leagueSeasonStats(players, extra).get('67|2026');
+    expect(ls.n).toBe(8); // p0 räknas en gång
+    expect(ls.rounds).toBe(30);
+  });
+
+  test('logistic och auc: hittar ett tydligt samband', async () => {
+    const { logistic, auc } = await lib('transfer-study.mjs');
+    const x = [], y = [];
+    for (let i = 0; i < 200; i++) { const v = (i % 20) / 20; x.push([v, (i * 7) % 13]); y.push(v > 0.5 ? 1 : 0); }
+    const m = logistic(x, y);
+    expect(m.predict([0.9, 3])).toBeGreaterThan(0.8);
+    expect(m.predict([0.1, 3])).toBeLessThan(0.2);
+    expect(auc(x.map((r) => m.predict(r)), y)).toBeGreaterThan(0.95);
+    expect(auc([0.1, 0.9], [0, 1])).toBe(1);
   });
 });

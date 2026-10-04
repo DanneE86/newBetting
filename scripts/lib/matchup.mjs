@@ -42,9 +42,12 @@ function statSource(p) {
     ?? (isCur && p.league?.season === p.season?.season ? p.league?.minutes_played : null)
     ?? (s?.player_started_matches?.[0] ?? s?.matches_uppercase?.[0] ?? 0) * 90;
   const curMin = mins(cur, true), prevMin = mins(prev, false);
-  if (cur && (curMin >= 450 || curMin >= prevMin)) return { stats: cur, minutes: curMin, label: null };
+  // Årets statistik från en annan liga (nyförvärv, t.ex. Primera División för en spelare som nu är i AIK) ska märkas
+  const curT = p.season?.tournament, league = p.league?.name;
+  const curLabel = curT && league && normName(curT) !== normName(league) ? `${curT} ${p.season.season ?? ''}`.trim() : null;
+  if (cur && (curMin >= 450 || curMin >= prevMin)) return { stats: cur, minutes: curMin, label: curLabel };
   if (prev && prevMin > 0) return { stats: prev, minutes: prevMin, label: `${p.prevSeason.tournament ?? ''} ${p.prevSeason.season ?? ''}`.trim() };
-  return { stats: cur || {}, minutes: curMin, label: null };
+  return { stats: cur || {}, minutes: curMin, label: curLabel };
 }
 
 /** Percentil krympt mot 50 vid lite speltid (900 min = full vikt). */
@@ -124,7 +127,7 @@ function statText(src, key) {
       : key === 'goals_prevented' ? `${val} förhindrade mål`
         : key === 'expected_goals_against_while_on_pitch' ? `${val} xG emot på planen`
           : `${val} ${label}`;
-  return { key, text: `${body} (${ordinal(v[2])} perc.)`, pct: v[2] };
+  return { key, text: `${body} (${ordinal(v[2])} perc.${src.label ? ` i ${src.label}` : ''})`, pct: v[2] };
 }
 
 /** De tydligaste styrkorna (perc >= 70) eller svagheterna (perc <= 30) bland nyckeltalen. */
@@ -692,4 +695,4 @@ function strip(d, rename = (s) => s) {
 // Används av scripts/lib/startelva.mjs (spelare mot spelare i startelvan)
 export { statSource, score, edgeText, statText, highlights, fmtVal, PERCENT_KEYS, SHORT_LABEL,
   ATTACK_WIDE, DEFEND_WIDE, ATTACK_CENTRAL, DEFEND_CENTRAL, MID_CONTROL, MID_CREATE, KEEPER };
-export const _internal = { statSource, pct, score, sideOf, lineupPosition, predictedXI, findPlayer, officialXI, shape, edgeText, verdictFor, fmtVal };
+export const _internal = { statSource, pct, score, sideOf, lineupPosition, predictedXI, findPlayer, officialXI, shape, edgeText, verdictFor, fmtVal, statText };

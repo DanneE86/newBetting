@@ -33,6 +33,7 @@
     "stil": "node scripts/analyze-style-matchups.mjs",
     "stil:hamta": "node scripts/fetch-team-style.mjs",
     "lardomar:modell": "node scripts/learnings-model.mjs && node scripts/analyze-learnings.mjs",
+    "lardomar:overgangar": "node scripts/fetch-player-careers-fotmob.mjs && node scripts/lardomar-overgangar.mjs",
     "matcher": "node scripts/export-league-matches.mjs",
     "domare": "node scripts/fetch-referees.mjs",
     "domare:fotmob": "node scripts/fetch-referees-fotmob.mjs",
