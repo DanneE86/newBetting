@@ -116,6 +116,16 @@ export function probOver(mu, line, r = null) {
 const shrink = (sum, w, prior, k) => (sum + k * prior) / (w + k);
 
 /**
+ * Båda lagen får kort: P(hemma >= 1) x P(borta >= 1) med P(0 kort) = e^(-k x lambda). Ett lag går mer sällan
+ * kortlöst än Poisson säger (k = 1 gav 73 % Ja mot verkliga 78 %). k anpassat på 2024/25 och testat på
+ * 2025/26-2026/10 (10 281 matcher): 77,4 % mot 77,9 %, log-loss 0,502 mot 0,508 (k = 1) och 0,517 (bara ligan).
+ */
+export const BOTH_K = 1.1;
+export function probBothCards(lamH, lamA, k = BOTH_K) {
+  return (1 - Math.exp(-k * lamH)) * (1 - Math.exp(-k * lamA));
+}
+
+/**
  * Förväntade kort för en match. Lagen måste finnas i ligan (namn som i domardatan, resolveName mappar).
  * Returnerar null om data saknas, annars lambda per lag, domarfaktor och P(över) för varje linje.
  */
@@ -143,9 +153,10 @@ export function predictCards(index, { league, home, away, referee = null }, { re
   }
   const exp = (lamH + lamA) * refFactor;
   const pOver = Object.fromEntries(lines.map((l) => [String(l), round(probOver(exp, l, ls.dispersion))]));
+  const pBoth = round(probBothCards(lamH * refFactor, lamA * refFactor));
   return {
     expCards: round(exp, 2), lambdaHome: round(lamH * refFactor, 2), lambdaAway: round(lamA * refFactor, 2),
-    leagueAvg: round(ls.total, 2), dataTo: ls.last, referee: ref, dispersion: ls.dispersion == null ? null : round(ls.dispersion, 2), pOver,
+    leagueAvg: round(ls.total, 2), dataTo: ls.last, referee: ref, dispersion: ls.dispersion == null ? null : round(ls.dispersion, 2), pOver, pBoth,
   };
 }
 

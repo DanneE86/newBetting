@@ -413,7 +413,7 @@ test('Oddset: tipskortet har raden Kort Ö/U med domare och spela från för 3.5
   await page.route('**/api/dashboard*', async (route) => {
     const res = await route.fetch();
     const body = await res.json();
-    for (const k of ['bestUpcoming', 'allCandidates']) for (const t of body[k] || []) t.tips = { ...t.tips, CARDS: cards };
+    for (const k of ['bestUpcoming', 'allCandidates']) for (const t of body[k] || []) t.tips = { ...t.tips, CARDS: cards, BOTH_CARDS: { pick: 'JA', pYes: 0.8, confidence: 0.8 } };
     await route.fulfill({ response: res, json: body });
   });
   await page.goto(base + '/tips');
@@ -431,4 +431,12 @@ test('Oddset: tipskortet har raden Kort Ö/U med domare och spela från för 3.5
   // Klick på U visar under-linjens värde: 1.08/0.44 = 2.45
   await row.locator('.odd-pill[data-key="under"]').click();
   await expect(row.locator('td.val')).toContainText('spela från 2.45');
+  // Båda lagen får kort: Ja 1.08/0.8 = 1.35, Nej 1.08/0.2 = 5.4
+  const both = page.locator('tr[data-mkt="BOTH_CARDS"]').first();
+  await expect(both.locator('td.mkt')).toHaveText('Båda kort');
+  await expect(both.locator('.odd-pill.is-tip')).toContainText('JA');
+  await expect(both).toContainText('Spela från – Ja 1.35 / Nej 5.4');
+  await expect(both.locator('td.val')).toContainText('spela från 1.35');
+  await both.locator('.odd-pill[data-key="bc-no"]').click();
+  await expect(both.locator('td.val')).toContainText('spela från 5.4');
 });

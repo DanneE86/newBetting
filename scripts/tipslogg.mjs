@@ -38,7 +38,7 @@ export async function logOddset(now = new Date()) {
   }
   const fotmobCards = (rec) => {
     const r = (cardDay.get(`${rec.league}|${rec.date}`) || []).find((x) => resolveTeam(rec.home, [x.h]) && resolveTeam(rec.away, [x.a]));
-    return r ? cardsOf(r, 'h') + cardsOf(r, 'a') : null;
+    return r ? { home: cardsOf(r, 'h'), away: cardsOf(r, 'a') } : null;
   };
   const settled = await settleTips('oddset', (rec) => oddsetResult(byKey.get(rec.id), fotmobCards(rec)), now);
   log(`Tipslogg Oddset: ${c.ny} nya, ${c.andrad} ändrade före start, ${settled} fick facit`);

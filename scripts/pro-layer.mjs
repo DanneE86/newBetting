@@ -217,6 +217,9 @@ function applyCards(list) {
     // tips-latest kan redan ha CARDS från en tidigare körning: utan prognos ska raden bort
     if (pick) t.tips.CARDS = { ...pick, ...pred };
     else delete t.tips.CARDS;
+    // Båda lagen får kort (Ja/Nej), samma prognos
+    if (pred) t.tips.BOTH_CARDS = { pick: pred.pBoth >= 0.5 ? 'JA' : 'NEJ', pYes: pred.pBoth, confidence: Math.round(Math.max(pred.pBoth, 1 - pred.pBoth) * 1000) / 1000 };
+    else delete t.tips.BOTH_CARDS;
   }
 }
 

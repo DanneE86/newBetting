@@ -152,6 +152,8 @@ export function oddsetRecord(t) {
   if (b?.pick) markets.BTTS = { pick: b.pick, p: r3(b.confidence) };
   const c = t.tips?.CARDS;
   if (c?.pick) markets.CARDS = { pick: c.pick, line: c.line, p: r3(c.confidence), expCards: c.expCards ?? null, referee: c.referee?.name ?? null };
+  const bc = t.tips?.BOTH_CARDS;
+  if (bc?.pick) markets.BOTH_CARDS = { pick: bc.pick, p: r3(bc.confidence) };
   return {
     id: `${t.date}|${t.league}|${t.home}|${t.away}`,
     product: 'oddset', date: t.date, kickoff: t.kickoffUtc || null, league: t.league, home: t.home, away: t.away,
@@ -165,14 +167,16 @@ export function oddsetRecord(t) {
   };
 }
 
-// Facit för Oddset ur betting-store.json (result H/D/A, btts, over25). cards = gula + röda: storens
-// football-data-kort, annars cardsFallback (FotMob-raden för matchen) när den finns.
+// Facit för Oddset ur betting-store.json (result H/D/A, btts, over25). Kort = gula + röda per lag: storens
+// football-data-kort, annars cardsFallback { home, away } (FotMob-raden för matchen) när den finns.
+// cards = totalt (Ö/U rättas mot tipsets linje), BOTH_CARDS = JA/NEJ.
 export function oddsetResult(m, cardsFallback = null) {
   if (!m || !m.result || m.hg == null) return null;
   const d = m.discipline || {};
-  const own = Number.isFinite(d.homeYellow) && Number.isFinite(d.awayYellow) ? d.homeYellow + d.awayYellow + (d.homeRed || 0) + (d.awayRed || 0) : null;
-  const cards = own ?? (Number.isFinite(cardsFallback) ? cardsFallback : null);
-  return { '1X2': m.result === 'H' ? '1' : m.result === 'D' ? 'X' : '2', BTTS: m.btts ? 'JA' : 'NEJ', OU25: m.over25 ? 'OVER 2.5' : 'UNDER 2.5', ...(cards == null ? {} : { cards }), score: `${m.hg}-${m.ag}` };
+  const own = Number.isFinite(d.homeYellow) && Number.isFinite(d.awayYellow) ? { home: d.homeYellow + (d.homeRed || 0), away: d.awayYellow + (d.awayRed || 0) } : null;
+  const k = own ?? (Number.isFinite(cardsFallback?.home) && Number.isFinite(cardsFallback?.away) ? cardsFallback : null);
+  const cardRes = k ? { cards: k.home + k.away, BOTH_CARDS: k.home > 0 && k.away > 0 ? 'JA' : 'NEJ' } : {};
+  return { '1X2': m.result === 'H' ? '1' : m.result === 'D' ? 'X' : '2', BTTS: m.btts ? 'JA' : 'NEJ', OU25: m.over25 ? 'OVER 2.5' : 'UNDER 2.5', ...cardRes, score: `${m.hg}-${m.ag}` };
 }
 
 // Stryktipset/Europatipset: en match ur analyzeDraw-resultatet (a.events) med kupongernas tecken
