@@ -55,8 +55,10 @@ export function gradeRecord(rec, which = 'first') {
   const out = [];
   if (rec.product === 'oddset') {
     for (const [market, t] of Object.entries(tip.markets || {})) {
-      if (!t?.pick || !res[market]) continue;
-      out.push({ market, pick: t.pick, p: t.p ?? null, odds: t.odds ?? null, value: t.value ?? null, hit: t.pick === res[market] });
+      // Kort: facit är antalet (gula + röda), linjen står i tipset
+      const actual = market === 'CARDS' && Number.isFinite(res.cards) ? `${res.cards > t.line ? 'OVER' : 'UNDER'} ${t.line}` : res[market];
+      if (!t?.pick || !actual || (market === 'CARDS' && !Number.isFinite(t.line))) continue;
+      out.push({ market, pick: t.pick, p: t.p ?? null, odds: t.odds ?? null, value: t.value ?? null, hit: t.pick === actual });
     }
   } else if (rec.product === 'stryktipset' || rec.product === 'europatipset') {
     const o = res.outcome;
@@ -148,6 +150,8 @@ export function oddsetRecord(t) {
   }
   const b = t.tips?.BTTS;
   if (b?.pick) markets.BTTS = { pick: b.pick, p: r3(b.confidence) };
+  const c = t.tips?.CARDS;
+  if (c?.pick) markets.CARDS = { pick: c.pick, line: c.line, p: r3(c.confidence), expCards: c.expCards ?? null, referee: c.referee?.name ?? null };
   return {
     id: `${t.date}|${t.league}|${t.home}|${t.away}`,
     product: 'oddset', date: t.date, kickoff: t.kickoffUtc || null, league: t.league, home: t.home, away: t.away,
@@ -161,10 +165,14 @@ export function oddsetRecord(t) {
   };
 }
 
-// Facit för Oddset ur betting-store.json (result H/D/A, btts, over25)
-export function oddsetResult(m) {
+// Facit för Oddset ur betting-store.json (result H/D/A, btts, over25). cards = gula + röda: storens
+// football-data-kort, annars cardsFallback (FotMob-raden för matchen) när den finns.
+export function oddsetResult(m, cardsFallback = null) {
   if (!m || !m.result || m.hg == null) return null;
-  return { '1X2': m.result === 'H' ? '1' : m.result === 'D' ? 'X' : '2', BTTS: m.btts ? 'JA' : 'NEJ', OU25: m.over25 ? 'OVER 2.5' : 'UNDER 2.5', score: `${m.hg}-${m.ag}` };
+  const d = m.discipline || {};
+  const own = Number.isFinite(d.homeYellow) && Number.isFinite(d.awayYellow) ? d.homeYellow + d.awayYellow + (d.homeRed || 0) + (d.awayRed || 0) : null;
+  const cards = own ?? (Number.isFinite(cardsFallback) ? cardsFallback : null);
+  return { '1X2': m.result === 'H' ? '1' : m.result === 'D' ? 'X' : '2', BTTS: m.btts ? 'JA' : 'NEJ', OU25: m.over25 ? 'OVER 2.5' : 'UNDER 2.5', ...(cards == null ? {} : { cards }), score: `${m.hg}-${m.ag}` };
 }
 
 // Stryktipset/Europatipset: en match ur analyzeDraw-resultatet (a.events) med kupongernas tecken

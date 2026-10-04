@@ -2,6 +2,8 @@
 //
 //   node scripts/hastar-sasong.mjs --hamta                      hämta alla avgjorda V-spel 2026 (återupptar, hoppar över sparade)
 //   node scripts/hastar-sasong.mjs --hamta --fran 2026-03-01 --till 2026-03-31 --spel V86,V85,V75,GS75,V64,V65
+//   node scripts/hastar-sasong.mjs --hamta --omhamta --spel V86,V85,V75,GS75,V64,V65   hämta om sparade omgångar som saknar skor/underlag per tidigare start
+//   node scripts/hastar-sasong.mjs --komplettera [--ar 2025]    fyll i fält som saknas i sparade omgångar (loppets förstapris), ett anrop per omgång
 //   node scripts/hastar-sasong.mjs --bakkor                     spela varje budgetknapp på varje sparad omgång
 //   node scripts/hastar-sasong.mjs --bakkor --ar 2026 --modell rullande   (gammal | inlard | rullande, se modelOpts)
 //   node scripts/hastar-sasong.mjs --bakkor --alpha 0                         välj hästar efter ren vinstchans (standard 0,5)
@@ -19,9 +21,9 @@ import path from "node:path";
 import zlib from "node:zlib";
 import { fileURLToPath } from "node:url";
 import { normalizeGame, analyzeGame } from "./lib/trav-model.mjs";
-import { listGames, fetchGame } from "./fetch-hastar.mjs";
-import { BUDGETS, ROW_PRICE, TOP_SHARE, MIN_TOP, buildSystem, reduceSystem } from "../gui/public/hast-engine.js";
-import { legWinners, isSettled, rowsByCorrect, rowsByCorrectList, settle, summarize } from "./lib/hast-sasong.mjs";
+import { listGames, fetchGame, fetchGameInfo } from "./fetch-hastar.mjs";
+import { BUDGETS, rowPrice, TOP_SHARE, MIN_TOP, buildSystem, reduceSystem } from "../gui/public/hast-engine.js";
+import { addPrizes, legWinners, isSettled, rowsByCorrect, rowsByCorrectList, settle, summarize } from "./lib/hast-sasong.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const DIR = path.join(ROOT, "data", "hastar");
@@ -67,6 +69,9 @@ function writeSeason(year, games) {
   }
 }
 
+/** Har omgången skor per tidigare start (sparas sedan 2026-10-03)? Avgör vad --omhamta hämtar om. */
+const hasRecordShoes = (g) => g.races.some((r) => r.starts.some((s) => s.records.some((x) => "shoes" in x)));
+
 async function fetchSeason() {
   const year = String(arg("ar") && arg("ar") !== true ? arg("ar") : today().slice(0, 4));
   const from = typeof arg("fran") === "string" ? arg("fran") : `${year}-01-01`;
@@ -80,10 +85,11 @@ async function fetchSeason() {
   for (let d = from; d <= to; d = addDays(d, 1)) {
     const list = await listGames(d).catch((e) => (log(`  ${d}: kalender saknas (${e.message})`), null));
     for (const g of list?.games || []) {
-      if (!types.includes(g.type) || g.status !== "results" || games.has(g.id)) continue;
+      if (!types.includes(g.type) || g.status !== "results") continue;
+      if (games.has(g.id) && !(arg("omhamta") && !hasRecordShoes(games.get(g.id)))) continue;
       try {
         const rawFile = path.join(DIR, "raw", `${g.id}.json`);
-        const raw = fs.existsSync(rawFile) ? JSON.parse(fs.readFileSync(rawFile, "utf8")).main : null;
+        const raw = fs.existsSync(rawFile) && !arg("omhamta") ? JSON.parse(fs.readFileSync(rawFile, "utf8")).main : null;
         const src = raw && raw.game?.status === "results" ? raw : await fetchGame(g.id);
         const norm = normalizeGame(src.game, src.details);
         if (!isSettled(norm)) {
@@ -107,13 +113,34 @@ async function fetchSeason() {
   log(`Klart: ${added} nya, ${games.size} omgångar i data/hastar/historik/${year}.jsonl.gz`);
 }
 
+async function completeSeason() {
+  const year = String(arg("ar") && arg("ar") !== true ? arg("ar") : today().slice(0, 4));
+  const games = readSeason(year);
+  const todo = [...games.values()].filter((g) => g.races.some((r) => r.firstPrize == null));
+  log(`Säsong ${year}: ${todo.length} av ${games.size} omgångar saknar förstapris …`);
+  let done = 0;
+  for (const g of todo) {
+    try {
+      addPrizes(g, await fetchGameInfo(g.id));
+      if (++done % 50 === 0) {
+        writeSeason(year, games);
+        log(`  ${done}/${todo.length}`);
+      }
+    } catch (e) {
+      log(`  ${g.id}: fel – ${e.message}`);
+    }
+  }
+  writeSeason(year, games);
+  log(`Klart: ${done} omgångar kompletterade i data/hastar/historik/${year}.jsonl.gz`);
+}
+
 /** Spelar varje budget på varje omgång. Varianter: rakt (som knapparna), reducerat (utgång 4×, inga villkor), streck (folkets system). */
 export function runBacktest(games, { budgets = BUDGETS, alpha = 0.5, minTop = MIN_TOP, optsFor = () => ({}) } = {}) {
   const variants = ["rakt", "reducerat", "streck"];
   const perGame = [];
   for (const game of games) {
     const a = analyzeGame(game, null, optsFor(game));
-    const price = ROW_PRICE[game.type] ?? 1;
+    const price = rowPrice(game.type, game.date);
     const legs = a.races.map((r) => ({ leg: r.leg, number: r.number, horses: r.horses }));
     const mktLegs = a.races.map((r) => ({ leg: r.leg, number: r.number, horses: r.horses.map((h) => ({ ...h, p: h.marketPct })) }));
     const winners = legWinners(game);
@@ -202,7 +229,7 @@ async function backtestSeason() {
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url))
-  (arg("hamta") ? fetchSeason() : arg("bakkor") ? backtestSeason() : Promise.reject(new Error("Ange --hamta eller --bakkor")))
+  (arg("hamta") ? fetchSeason() : arg("komplettera") ? completeSeason() : arg("bakkor") ? backtestSeason() : Promise.reject(new Error("Ange --hamta, --komplettera eller --bakkor")))
     .catch((e) => {
       console.error(e.message || e);
       process.exit(1);

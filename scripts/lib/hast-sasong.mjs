@@ -3,6 +3,15 @@
 //
 // Säsongsfilen data/hastar/historik/<år>.jsonl.gz: en rad per omgång = normalizeGame(...) (trav-model.mjs),
 // alltså alla lopp, alla starter med historik, slutstreck, slutodds, resultat och utdelning (payouts).
+import { parsePrize } from "./trav-model.mjs";
+
+/** Lägger loppets förstapris (race.firstPrize) på sparade lopp som saknar det (undefined/null). game: ATG:s spel-svar. */
+export function addPrizes(norm, game) {
+  const byId = new Map((game?.races || []).map((r) => [r.id, parsePrize(r.prize)]));
+  for (const r of norm.races) if (r.firstPrize == null && byId.has(r.id)) r.firstPrize = byId.get(r.id);
+  return norm;
+}
+
 
 /** Vinnande startnummer per avdelning (dött lopp ger flera). [[nr, ...], ...] i avdelningsordning. */
 export const legWinners = (game) =>

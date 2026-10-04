@@ -54,6 +54,19 @@ const median = (xs) => {
 };
 export const kmSeconds = (t) =>
   t && Number.isFinite(t.minutes) && Number.isFinite(t.seconds) ? t.minutes * 60 + t.seconds + (t.tenths || 0) / 10 : null;
+// Ungefärlig växelkurs till SEK för utländska lopp (bara för klassnivå, inte exakt)
+const PRIZE_FX = { NOK: 1, DKK: 1.5, EUR: 11.5 };
+/**
+ * Loppets förstapris i kr ur ATG:s pristext. Svenska: "Pris: 150.000-75.000-… kr" → 150000.
+ * Utländska saknar "Pris:" och anger valuta sist: "18.000-9.000-(3.000) NOK", "7500-5000 DKK".
+ */
+export const parsePrize = (text) => {
+  const t = String(text || "");
+  const m = /^(?:\s*Pris:)?\s*(\d[\d.]*)\s*-/.exec(t) || /Pris:\s*(\d[\d.]*)/.exec(t);
+  const cur = /\b(NOK|DKK|EUR)\b/.exec(t)?.[1];
+  const kr = m ? Number(m[1].replace(/\./g, "")) * (cur ? PRIZE_FX[cur] : 1) : NaN;
+  return Number.isFinite(kr) && kr > 0 ? Math.round(kr) : null;
+};
 const fullName = (p) => (p ? [p.firstName, p.lastName].filter(Boolean).join(" ") : null);
 const daysBetween = (a, b) => Math.round((Date.parse(b) - Date.parse(a)) / 86400000);
 export const START_METHOD = { auto: "Autostart", volte: "Voltstart" };
@@ -78,6 +91,10 @@ export function normRecord(r) {
     driverId: r.start?.driver?.id ?? null,
     driver: fullName(r.start?.driver),
     firstPrize: r.race?.firstPrize ? r.race.firstPrize / 100 : null,
+    // skor i den starten (true = sko), banans underlag ("light", "heavy" …) och loppform ("trot"/"monté")
+    shoes: r.start?.horse?.shoes ? { front: r.start.horse.shoes.front ?? null, back: r.start.horse.shoes.back ?? null } : null,
+    trackCondition: r.track?.condition || null,
+    sport: r.race?.sport || null,
   };
 }
 
@@ -143,6 +160,7 @@ export function normalizeGame(game, details = {}) {
       distance: race.distance,
       startMethod: race.startMethod,
       startTime: race.startTime || race.scheduledStartTime || null,
+      firstPrize: parsePrize(race.prize),
       winTurnover: race.pools?.vinnare?.turnover != null ? race.pools.vinnare.turnover / 100 : null,
       track: race.track?.name || null,
       status: race.status || null,

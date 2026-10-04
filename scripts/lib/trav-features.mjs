@@ -3,6 +3,8 @@
 // raceFeatures(race, ctx) ger för varje ej struken häst råvärden för alla kandidatfaktorer. Varje faktor
 // z-standardiseras inom loppet (snitt 0, std 1, saknat värde = 0 = fältets snitt). Marknaden kommer som
 // log-sannolikhet (lq: streck om det finns, annars vinnarodds) och lärs med en egen koefficient (= marknadsexponenten).
+// Klassbyte (dagens förstapris mot snittet i senaste loppen) testades 2026-10-03: rullande logloss 1,6707 mot 1,6705
+// utan, vikt −0,005 – borttaget (modellen har redan prisnivån i senaste loppen och pengar per start).
 // Vinnarodds mot streck testades (2026-10-03) men bygger på slutodds som inte syns när V-spelet stänger – borttaget.
 //
 // fitLogit(races, keys) skattar vikterna så att P(häst vinner) = exp(Σ β·x) / Σ_fältet exp(Σ β·x) passar

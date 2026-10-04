@@ -666,3 +666,8 @@ body.view-stryktips main { display: none !important; }
   .st-match, .st-analysis { animation: none; }
   .view-tab, .sb-sign, .st-history > summary h3::before { transition: none; }
 }
+
+/* "Kan falla": favorit som folket tror på (minst 50 %) men som har under 55 % chans hos oss (2026-10-03) */
+.fall-tag { display: inline-block; margin-left: 4px; padding: 0 6px; border-radius: 999px; font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); white-space: nowrap; vertical-align: middle; line-height: 1.6; color: var(--color-warning); background: var(--color-warning-bg); border: 1px solid var(--color-warning); cursor: help; }
+.sb-fall { display: inline-block; margin-left: 4px; padding: 0 5px; border-radius: 999px; border: 1px solid var(--color-warning); background: var(--color-warning-bg); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); color: var(--color-warning); white-space: nowrap; cursor: help; }
+.sb-fall-legend { margin: 0 0 8px; }

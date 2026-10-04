@@ -55,6 +55,12 @@ Mer om ligan (signaler, kalibrering, Stryktipset): [ligor/PL.md](../ligor/PL.md)
 
 ## Lärdomar och beslut (handskrivet, daterat – nyast överst)
 
+### 2026-10-03: missas något tecken (1/X/2) oftare än väntat i Stryktipset A/B? (107 omg)
+
+- Premier League (A/B): missade 1 24/240 (väntat 24), X 74/130 (71), 2 48/182 (43) i A; B 1 26 (24), X 54 (59), 2 41 (40). Alla |z| < 1. Inget tecken missas oftare än väntat i PL.
+- Samlat: nej. Kryss missas oftast men som modellen väntar. Se [slutsatser.md](../slutsatser.md) (Förkastat 2026-10-03).
+- Senare samma dag bakkördes "ta med X oftare" i A och B (1X/X2 före 12, inget favoritspik vid högt kryss, X-vikt). Färre X-missar men fler missade 1:or/2:or, lägre chans till 13 och sämre netto. Inget infört, tabellen finns i slutsatser.md.
+
 ### 2026-10-03: spikar på Stryktipset (bakkörning 107 omgångar, A/B/C)
 
 - Premier League: 469 favoritspikar (A+B+C) satt 56 % (väntat 56 %). Med kryss ≥ 27 % satt de 42 % (142 st), under 27 % 62 % (327 st). 105 av 207 missar blev kryss. Spikar i PL håller när krysset är lågt. Undvik spik i jämna PL-matcher med högt kryss.

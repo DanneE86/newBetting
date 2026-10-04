@@ -12,6 +12,8 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
+import { cardsOf, usableCardRows } from './lib/cards-model.mjs';
+import { loadRefereeMatches, resolveTeam } from './lib/referee-streaks.mjs';
 import { LOG_DIR, logTips, settleTips, oddsetRecord, oddsetResult, readAll, flatten, summarize, groupRows } from './lib/tipslogg.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -26,7 +28,19 @@ export async function logOddset(now = new Date()) {
   const c = logTips('oddset', recs, now);
   const store = readJson(path.join(root, 'data', 'betting-store.json'));
   const byKey = new Map(store.matches.map((m) => [`${m.date}|${m.league}|${m.home}|${m.away}`, m]));
-  const settled = await settleTips('oddset', (rec) => oddsetResult(byKey.get(rec.id)), now);
+  // Kort i ligor utan football-data: FotMob-raden (domardatan) för samma liga, dag och hemmalag
+  const rd = (rel) => { const f = path.join(root, rel); return fs.existsSync(f) ? readJson(f) : null; };
+  const cardDay = new Map();
+  for (const r of usableCardRows(loadRefereeMatches(rd, store.matches))) {
+    const k = `${r.lg}|${r.d}`;
+    if (!cardDay.has(k)) cardDay.set(k, []);
+    cardDay.get(k).push(r);
+  }
+  const fotmobCards = (rec) => {
+    const r = (cardDay.get(`${rec.league}|${rec.date}`) || []).find((x) => resolveTeam(rec.home, [x.h]) && resolveTeam(rec.away, [x.a]));
+    return r ? cardsOf(r, 'h') + cardsOf(r, 'a') : null;
+  };
+  const settled = await settleTips('oddset', (rec) => oddsetResult(byKey.get(rec.id), fotmobCards(rec)), now);
   log(`Tipslogg Oddset: ${c.ny} nya, ${c.andrad} ändrade före start, ${settled} fick facit`);
   return { ...c, settled };
 }

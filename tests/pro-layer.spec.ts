@@ -335,3 +335,20 @@ test('OddsPortal: ligasidans text tolkas till matcher med 1X2 och UTC-avspark', 
   // Utan ld+json: samma tidszonsforskjutning som Arsenal-matchen (+2 h)
   expect(rows[1].startDate).toBe('2026-10-10T14:00:00.000Z');
 });
+
+test('antal kort: tipsen har Ö/U på en Oddset-linje med rimlig prognos', async () => {
+  const tips = readJson(path.join(root, 'data', 'tips-latest.json'));
+  const withCards = (tips.allCandidates ?? []).filter((t: any) => t.tips?.CARDS);
+  expect(withCards.length).toBeGreaterThan((tips.allCandidates ?? []).length / 2);
+  const bad: string[] = [];
+  for (const t of withCards) {
+    const c = t.tips.CARDS;
+    const po = c.pOver?.[String(c.line)];
+    if (![3.5, 4.5, 5.5].includes(c.line)) bad.push(`${t.match} linje ${c.line}`);
+    if (c.pick !== `${po >= 0.5 ? 'OVER' : 'UNDER'} ${c.line}`) bad.push(`${t.match} pick ${c.pick}`);
+    // Nollor från trasig FotMob-data gav förut snitt under 1,5 kort; ingen riktig liga ligger där
+    if (!(c.expCards > 1.5 && c.expCards < 9) || !(c.leagueAvg > 2)) bad.push(`${t.match} ${c.expCards}/${c.leagueAvg}`);
+    if (!(c.pOver['3.5'] >= c.pOver['4.5'] && c.pOver['4.5'] >= c.pOver['5.5'])) bad.push(`${t.match} pOver ej fallande`);
+  }
+  expect(bad).toEqual([]);
+});

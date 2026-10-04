@@ -58,6 +58,53 @@ Skript: `scripts/lardomar-spelare-signaler.mjs`. Lagets matcher byggs ur spelarn
 
 Per liga (80–260 lag-matcher per liga, cirka 230 tester): inget |z| över 2,2, alltså vad slumpen ger. Enstaka: PL Europamatch före −0,44 p (n 9), LL hårt roterat +0,58 p (n 18), BL2 hårt roterat −0,67 p (n 10), MX hårt roterat +0,85 p (n 8). För små urval att använda. **Slutsats: rotation, frånvaro, vila, Europamatcher och landslagsresor är inprisade i stängningsoddsen.** Lagen spelar det oddsen säger. Samma mönster som för nyckelspelare 2026-09-28: tappet syns i rådata men inte mot oddsen. Europamatch före (+0,14 p, z 1,6) pekar åt samma håll som tidigare, att marknaden straffar trötthet lite för mycket. Följ upp.
 
+### Förkastat 2026-10-03, Stryktipset: missar A eller B något tecken (1, X, 2) oftare än väntat?
+
+Bakkörning med nuvarande regler, 107 omgångar 2023/24–2026/27, bara PL/Championship/League One (1 294 matcher, `data/stryktips-backtest-*-nya-regler.json`). Missat = utfallet låg utanför systemets tecken. Väntat = summan av våra slutprocent (`final`) för de tecken systemet lämnade ute. z = (missat − väntat) / sd.
+
+| System | Utfall | Utfall totalt | Missade | Väntat (modell) | Väntat (folket) | z |
+|---|---|---|---|---|---|---|
+| A | 1 | 557 | 50 (9,0 %) | 45,0 (8,0 %) | 39,6 | +0,9 |
+| A | X | 322 | 137 (42,5 %) | 135,0 (40,5 %) | 124,3 | +0,2 |
+| A | 2 | 415 | 120 (28,9 %) | 104,3 (26,2 %) | 82,9 | +1,7 |
+| B | 1 | 557 | 77 (13,8 %) | 62,6 (11,1 %) | 59,2 | +2,2 |
+| B | X | 322 | 145 (45,0 %) | 162,1 (48,6 %) | 152,9 | −1,6 |
+| B | 2 | 415 | 111 (26,7 %) | 106,8 (26,9 %) | 91,0 | +0,5 |
+
+- **Kryss missas oftast (42–45 % av alla kryss), men exakt så ofta som modellen väntar.** Det beror på att kryss nästan aldrig är favorit och därför lämnas ute på spikar (A missade 80 av 80 kryss i spikmatcher, väntat 75). Kryss kom totalt 322 gånger mot väntat 334, alltså inte underskattat.
+- Folket väntar sig färre missar på alla tecken (de streckar favoriten för högt), så mot folket ser alla tecken ut att "missas", mest 2:or. Det säger inget om modellen.
+- Uppdelat på spik/halv/hel och färg (cirka 40 celler för A och B) fanns 4 med |z| ≥ 2, vilket är vad slumpen ger. Starkast: A:s halvgarderingar som lämnar ute ett rött tecken (oftast 1X mot en röd 2:a): 111 utfall mot väntat 90 (z 2,5, n 421), plus i alla tre säsongerna (z 1,0 / 1,4 / 1,9). Men träning (2023/24–2024/25) z 1,7 och kontroll z 1,9, under kraven 2,5/2.
+- Motprov på stor historik (PL/CH/L1 2017/18–2025/26, 13 204 matcher, stängningsodds Pinnacle): bortalag på 20–25 % vann *färre* gånger än oddsen sa (träning 249 mot 273, kontroll 134 mot 148). Kryss på 20–25 % också färre (z −2,5 i träning). Ingen systematisk underskattning av röda 2:or eller kryss att rätta.
+- Samlat över alla 1 294 matcher: röd 2 148 mot väntat 130 (z 1,8, nästan bara 2025/26–: z 2,2, övriga säsonger z 0,6 och 0,1). B:s missade 1:or (z 2,2) kommer nästan bara från 2025/26– (z 2,5, övriga 0,2 och 1,0) och har motsatt tecken mot A. Brus.
+- Första beslutet var att inte ändra motorn. Användaren ville ändå ha kryss oftare i A och B (kryss = 44–45 % av alla missar), så varianter bakkördes, se nästa punkt.
+- **2026-10-03 (senare): "ta med X oftare" i A och B bakkört, 107 omgångar, samma omgångar som `*-nya-regler`, C av.** Reglage i `scripts/fetch-stryktipset.mjs` (`X_TILT`: `STRYK_X_HALF`, `STRYK_X_SPIK`, `STRYK_X_W`, `STRYK_X_FOR`, av som standard, samma neutrala `X_TILT` i `gui/public/stryk-engine.js`). Filer: `data/stryktips-backtest-{2324,2425,budget}-kryss-*.json` (`kryss-bas` = nuvarande regler, C av, samma som `nya-regler` för A och B). X-miss = kryss utanför systemet (PL/CH/L1, 322 kryss).
+
+  | Variant | A X-miss | A missar | A 10+/11+/12+/13 | A netto | A chans 13 | A 30–50k | B X-miss | B 12+ | B netto | B 50–75k |
+  |---|---|---|---|---|---|---|---|---|---|---|
+  | Nu (kryss-bas) | 137 | 307 | 29/11/4/1 | +24 234 | 0,234 % | 96 | 145 | 4 | +11 280 | 106 |
+  | (a) 1X/X2 före 12, bonus 3 p.e. | 104 | 312 | 32/10/4/0 | −20 650 | 0,223 % | 90 | 136 | 1 | −18 827 | 105 |
+  | (a) bonus 6 p.e. | 83 | 316 | 31/11/2/0 | −32 629 | 0,220 % | 89 | 119 | 0 | −28 756 | 103 |
+  | (b) ingen favoritspik vid X ≥ 27 % | 135 | 297 | 32/12/4/1 | +24 968 | 0,236 % | 96 | 144 | 1 | −19 699 | 105 |
+  | (b) X ≥ 30 % | 135 | 303 | 30/11/4/1 | +24 333 | 0,235 % | 96 | 147 | 4 | +11 362 | 106 |
+  | (c) X × 1,1 | 102 | 307 | 32/11/4/0 | −20 681 | 0,224 % | 90 | 139 | 1 | −18 853 | 105 |
+  | (c) X × 1,2 | 85 | 319 | 28/11/3/0 | −30 112 | 0,221 % | 89 | 117 | 2 | −22 959 | 102 |
+  | (a) 3 p.e. bara A | 104 | 312 | 32/10/4/0 | −20 650 | 0,223 % | 90 | 165 | 2 | −24 576 | 107 |
+  | (b) 27 % bara A | 135 | 297 | 32/12/4/1 | +24 968 | 0,236 % | 96 | 144 | 3 | +7 135 | 102 |
+
+  - (a) och (c) gör precis vad de ska: A missar 83–104 kryss i stället för 137. Men missarna flyttar till 1:or och 2:or (totalt 307 → 307–319), chansen till 13 rätt sjunker (0,234 → 0,220–0,224 %) och 30–50k håller i färre omgångar (96 → 89–90). A tappar sin enda 13:a (omg 4876, 47 432 kr i vinst), därav nettot. B tappar 12:or (4 → 0–2).
+  - (b) påverkar knappt krysset (137 → 135), eftersom spikarna redan sällan ligger på matcher med högt kryss efter toppregeln (`SPIK_TOP`). A blir marginellt bättre (missar 307 → 297, 10+ 29 → 32), men B tappar 12:or med 27 %. Med 30 % är allt inom ±2.
+  - Rättningen bekräftar analysen ovan: kryss missas oftast men inte oftare än sannolikheten säger. Tar man med fler kryss missas fler 1:or och 2:or.
+  - **Beslut: inget infört.** Ingen variant minskar X-missarna utan att förlora netto, 12+ eller 13 rätt. Reglagen ligger kvar, avstängda, för ny bakkörning (`STRYK_X_SPIK=0.27 STRYK_X_FOR=A` är närmast och kan följas upp när fler omgångar finns). Följ upp A:s halvgarderingar mot röd 2:a när 2026/27 har ~30 nya omgångar.
+
+### Förkastat 2026-10-03, varför faller favoriten? (PL/CH/L1 2017/18–2026/27, 13 431 favoritmatcher)
+
+Favorit = högst stängningschans av 1 och 2. Utfall: vann favoriten mer sällan än oddsen sa? Träning före 2023/24 (8 748), kontroll därefter (4 683). Krav |z| ≥ 2,5 i träning och ≥ 2 i kontroll, samma håll.
+- **~60 signaler, ingen bekräftad**, varken mot stängnings- eller öppningsodds: favoritens och motståndarens form (5), vinstsvit ≥ 4/≥ 6, motståndaren obesegrad ≥ 5 eller förlustsvit, storseger/storförlust senast, förlust/kryss senast, tabellplacering och poäng per match (även "tabellen säger jämnt men oddsen favorit"), kryssandel och lågmålsmatcher senaste 10, insläppta/gjorda mål, vila och vilodifferens, form mot oddsen, xG-tur, julhelgen, säsongsslut, bottenlag i nedflyttningsstrid, favorit utan något att spela för, uppflyttad motståndare, hemma/borta, oddsnivå, oddsrörelse, över/under 2,5. Närmast: favoritens vinstsvit ≥ 4 i kontrollen −6,3 pe (z −1,7) men +1,9 pe i träningen; motståndare med många lågmålsmatcher −3,8 pe (z −1,9) i kontrollen, 0 i träningen.
+- **Alla signaler i en modell** (logistisk med oddsen som grund, vikter valda på träningen): bättre i träning (z −3,1), **sämre i kontrollen** (logloss +0,0007 mot stängning, +0,0014 mot öppning). Delad i femtedelar efter modellens "kan falla" vann favoriterna i kontrollen som oddsen sa i alla femtedelar. Modellen lär sig brus.
+- **Vad som faktiskt förutsäger fall är procenten själv** (Stryktipset 107 omg, 1 294 matcher): favorit ≥ 65 % faller 24 % (väntat 26), 55–65 % 39 % (41), 45–55 % 54 % (50), < 45 % 62 % (60). p ≥ 55 % och kryss < 27 % faller 33 %, övriga 58 %.
+- Kandidat, inte bekräftad: favoriter som folket streckar ≥ 1,10 × vår procent vann 368 mot väntat 394 (z −1,1 / −0,6 / −1,6 per period, samlat ~−1,9). Följ upp på fler omgångar och på Europatipset. Överstreckade favoriter är där ett fall betalar mest, oavsett om de faller oftare.
+- Skript: `scripts/lardomar-favoritfall.mjs` (data, `--open` mot öppningsodds), `-test.mjs` (signal för signal), `-modell.mjs` (alla tillsammans).
+
 ## Vad som håller
 
 **2026-10-03, Stryktipset: varför systemen missar 13 rätt, och spikarna (A, B och C, 107 omgångar 2023/24–2026/27, `data/stryktips-backtest-*-riskC.json`).**
@@ -76,7 +123,17 @@ Per liga (80–260 lag-matcher per liga, cirka 230 tester): inget |z| över 2,2,
   - A röd 1–4: **förkastat**. Chans A 0,22 → 0,14 %, gränsen höll bara 49 av 107 gånger (idag 98), B blev också sämre.
   - Båda införda tillsammans: A netto −22 111 → +24 239 kr (en 13:a, omg 4876), B −1 807 → +11 273 kr, C +216 877 → −49 034 kr. C tappade 13 rätt i omg 4847 (280 850 kr) men fick högre chans (0,27 mot 0,21 %) och fler 11+ (15 mot 12). Nettot avgörs av enstaka omgångar – följ upp spikträffen live.
   - Nästa idé: när toppregeln inte går, vidga gradvis (5, 6 starkaste) i stället för att släppa den helt. Bakkörningen går nu på 15–20 min med `scripts/backtest-parallel.mjs`.
-- Analysen ska göras om när fler omgångar finns: spikar per kryssnivå och "fanns en bättre spik". Skript: per-match-fälten i bakkörningen (`pickA/pickB`, `C.picks`, `final`, `folk`, `outcome`).
+- Analysen ska göras om när fler omgångar finns: spikar per kryssnivå och "fanns en bättre spik".
+
+**2026-10-03 (eftermiddag), Stryktipset: varför inte 13 rätt i de stora omgångarna (82 av 107 omgångar med 13 rätt > 40 000 kr, `data/stryktips-backtest-*-nya-regler.json`).**
+- **Modellen väntar sig inte fler.** Summan av chansen till 13 rätt var 0,19 för A och 0,07 för B på de 82 omgångarna. Utfallet: A en 13:a (4876, 43 372 kr), B ingen. Det är ingen otur.
+- **Rätt rad låg i grundraden i 4 av 82 omgångar (A) och 2 (B).** I snitt 3,3 (A) och 3,5 (B) fel i grundraden. Stora omgångar har i median 4 röda och 3 kryss, och rätt rad ligger på plats ~200 000 av 1,6 miljoner enligt modellen. Vanligaste felen: A halv 1X → röd 2:a (65), spik 1 → rött kryss (44); B halv 1X → röd 2:a (35), spik 1 → röd 2:a (32).
+- Spikarna satt sämre än väntat i just de stora omgångarna (A 144/269 mot 156) och bättre i de små. Det är urvalet (omgången blir stor för att favoriter föll), inte en felkalibrering.
+- **B:s teckenregel 3-3-3 uteslöt rätt rad i 51 av 107 omgångar** (för få kryss 34, för få tvåor 19), 33 av de 82 stora. Bland dem 4847 (247 257 kr): rätt rad låg i B:s grundrad och klarade färg och gräns men hade 2 kryss. A:s 4-2-2 uteslöt 23 av 107, bland dem båda 10-miljonersomgångarna (4896, 4970: 3 ettor), men där hade A:s grundrad ändå 3 och 5 fel.
+- Bakkörning 107 omg (`data/stryktips-backtest-*-sign{A322,B322,B222,AB322}.json`):
+  - B 3-2-2: chans 13 rätt 0,087 → 0,099 % per omgång, högre i alla tre perioderna (0,084 → 0,097, 0,092 → 0,109, 0,087 → 0,093). Väntad återbetalning lika eller högre. 13 rätt i 4825 (92 431 kr), netto +11 273 → +85 902 kr (den enda 13:an, alltså brus i kronor). **Infört.**
+  - B 2-2-2: samma chans, lite sämre netto. A 3-2-2: ingen skillnad i A (0,234 → 0,232 %), C sämre (C ärver A:s regel). Inte infört.
+- **Ett system för 400 kr når inte en 10-miljonersrad.** De 400 rader som har störst chans bland raderna som betalar minst 5 miljoner ger träff en gång på ~18 000 omgångar (minst 1 miljon: en på ~2 400). Sådana rader har oftast 6–8 röda. Ingen regel ändrar det; det som går är att inte stänga ute raderna (som teckenregeln gjorde). Skript: per-match-fälten i bakkörningen (`pickA/pickB`, `C.picks`, `final`, `folk`, `outcome`).
 
 0. **2026-09-30, truppens marknadsvärde i ligor UTAN odds (kandidat, starkaste fyndet i spelardatan).** Skript: `scripts/lardomar-spelare-truppvarde.mjs`. x = ln(värde hemma / borta), där värdet är summan för de 14 med flest ligaminuter i år, med marknadsvärdet vid matchdatum (`marketValueHistory`). Mot tipsens sannolikheter (`data/reports/tips-backtest.json`):
    - Ligor utan odds (BR2, COL, CZ, HR, NO2, SE2, n 1 015): b 0,20 p per enhet, **z 3,3**. Per liga: COL z 2,2, NO2 z 2,2, HR z 2,0, BR2 z 1,4, CZ z 0,9, SE2 z −0,2.
@@ -94,6 +151,32 @@ Per liga (80–260 lag-matcher per liga, cirka 230 tester): inget |z| över 2,2,
    - Mest underspelade: Burnley ×0,66 (33 matcher), Sheffield Wednesday ×0,66, Parma och Lecce ×0,72, Oxford ×0,77.
    - Folket slår inte oddsen i PL (logloss 1,016 mot vår 0,995) eller Championship (1,119 mot 1,071), men väl i Bundesliga och Ligue 1 (få matcher, 55 st).
 
+**2026-10-03 (kväll), Stryktipset: storomgångarna med PL (13 rätt > 50 000 kr) och tre färger + ny A/B-regel.**
+- **Historiken utan modellen** (168 omgångar i `data/tips-archive/raw`, 107 med PL): 80 av 107 PL-omgångar gav över 50 000 kr eller ingen 13:a. De hade i snitt 6,4 tecken som folket streckat under 30 % (de små 3,4) och 3,6 kryss (2,4). Med 6 eller fler sådana blev det alltid över 50 000 kr. Folket överstreckar favoriter (80–89 % i folket vann 71 %, oddsen sa 75 %), oddsen är välkalibrerade. En tredjedel av de engelska 1/2-skrällarna vann med färre skott på mål. Rapport: artefakten "Stryktipsets storomgångar".
+- **Användarens beslut (2026-10-03):** bara tre färger i Gambling Cabin (blå, grön, röd – tecken på 26–44 % är blå utan regel, gult skär aldrig, kupong D:s 26–35 % är grönt) och "A och B får inte ha samma garderingar men max 1 spik skilja" (B ärver A:s spikar, `AB_SPIK_DIFF` 1). A är huvudsystemet. Grön- och rödregeln fick göras om.
+- **Varianter, 107 omg, C av** (`data/stryktips-backtest-{2324,2425,budget}-tre-*.json`, `tre-bas` = tre färger + A/B-regeln). Chans = summan av chansen till 13 rätt över omgångarna:
+  - `tre-bas`: A chans 23,98 %, 13/12/11 rätt 1/4/5, spikar sprack 46 %. B chans 14,22 % (förut 10,59 % i `bas`), spikar sprack 50 % (56 %).
+  - Ingen skrällspik i A (`STRYK_SKRALL_A=0`): chans 23,87 %, spikar 45 %, A:s 13:a försvann. **Förkastat.**
+  - Ingen spik på överstreckad favorit (`STRYK_OVER_SPIK=0.1`): A chans 21,22 %, spikar 48 %. **Förkastat** – marknaden prissätter redan favoriten rätt.
+  - Favorit + X i stället för 1-2 när folket ger X < 20 % och vi ≥ 22 % (`STRYK_X_FOLK`): A oförändrad, B chans 14,39 %, netto lite bättre. **Infört** (liten effekt, ca 0,7 matcher per omgång).
+  - A röd 1–4: chans 13,56 %. A röd 2–5: 16,28 %, 13:an försvann. Grönregeln av: A chans 21,66 %, 12 rätt 4 → 1. **Alla förkastade** – A har kvar röd 1–3 och grön 3–6, B röd 1–5/2–5.
+- **Slutkörning med C, nya standardregler** (`data/stryktips-backtest-*-tre-slut.json`): A chans 23,98 % (25,05 % i `bas` före blått X och tre färger), 13/12/11 rätt 1/4/5, netto +27 192 kr. B chans 14,39 % (10,59 %), spikar sprack 50 % (56 %), netto −33 899 kr mot +85 902 kr – skillnaden är B:s enda 13:a i `bas` (4825, 92 431 kr). C chans 28,93 % (28,44 % i `spiktop4`), 12 rätt 2 → 3, netto −40 197 kr (−49 034 kr). Öppen omgång 4973: A identisk med HEAD-motorn på samma streck, B 1 på 975 mot 1 på 1 450. Gambling Cabin-länken provad i verktyget: bara blå, röda och gröna celler, gul regel av.
+
+**2026-10-03 (natt), Stryktipset: 30 iterationer för högst chans till 13 rätt** (användaren: "kör 30 iterationer av ändringar tills du hittat den bästa"). Fast: tre färger, A/B-regeln, A huvudsystem, 350–400 kr och utdelningsgränserna. Mått: summan av kupongens chans till 13 rätt över 107 omgångar (C av), bas `tre-xfolk` A 23,98 % / B 14,39 %. Filer `data/stryktips-backtest-*-itNN-*.json`.
+- **Tak:** de 400 troligaste raderna med utdelning ≥ 30 000 kr ger 42,5 % (≥ 50 000 kr 31,7 %, utan gräns 179,6 %). Utdelningsgränsen är den största begränsningen; Gambling Cabins gräns tar bort de troligaste raderna, så regler som tar bort osannolika rader (färre röda) låter gränsen ligga lågt.
+- **Ingen effekt eller sämre (A chans):** min röda 3 (−0,16), 2 helor (−1,01), 4 helor (−0,33), 1 blå halva (−1,90), 3 blå halvor (−3,18), spikgräns 50 % (−0,15), spiktopp 0 (−1,99) och 3 (−0,29), större grundrad (±0), max 5 spikar (±0), grön 3–7 (±0), grön 4–6 (−1,55), röd 0–3 (±0), tecken 4-3-2 (−1,30), utan färgfönster (±0).
+- **Bättre:** röd 1–2 i A +1,51 (12 rätt 4 → 5, 11 rätt 5 → 8, gränsen höll 105 mot 89), gränsen på 90 % av budgeten +1,01, tecken 5-2-2 +0,33, utan favoritregeln +0,13.
+- **Kombinationer:** röd 1–2 + 90 % = **26,71 % (+2,73, +11 %)**. Med sikte 100 % 26,78, utan favoritregeln 26,95 (bryter användarens 10 %-regel), kryssvikt 1,1 26,80, spikgräns 60 % 26,72, min röda 3 26,68, 2 helor 26,27 (B 13,92). Röd 0–2, 5-2-2 och B röd 1–4/2–4 gav inget extra.
+- **Infört:** A röd 1–2 (`RED_RULE`), `CUT_AIM` 0,9 (ca 395 rader), B:s reserv röd 1–2 och sedan 1–3 innan fria färger (B chans 12,32 % mot 10,62 % med bara 1–3; med bara 1–2 fick Stryktipset 4973 fria färger), C:s reserv kvar 1–3. Fast färg går före fria färger i reservordningen. Skyddet "3 röda + resten gröna" gäller B och C, i A blir det "2 röda + resten gröna" (`redGreenTop`). Slutkörning med C (`*-iter-slut2.json`): A 26,71 %, B 14,39 → 12,32 % (B byggs mot A, som är huvudsystemet; gränsen höll 77 mot 89), C 28,93 → 31,02 %.
+
+**2026-10-04, Stryktipset: vad A (30–50k) missar och grundrad mot gränsen** (användaren: "spinn vidare på det som gett över 50k, bara 30–50k är viktigt"). 107 omg, C av, filer `data/stryktips-backtest-*-g-*.json`.
+- **Var A tappar 13 rätt:** i 80 omgångar betalade 13 rätt ≥ 50 000 kr, och rätt rad låg i A:s grundrad i bara 3 av dem. Spikarna sprack 123 av 258 gånger (67 på kryss, 52 på skräll), halvorna 114 av 385. Kalibreringen håller (spik favorit väntat 58 %, utfall 57 %; halva med X 80 mot 75 %), så det är inga felbedömda matcher utan att favoriter faller.
+- **Gapet till taket:** bästa 395 raderna ≥ 30 000 kr bland alla rader 42,1 %, bästa 395 inom A:s grundrad 33,2 %, A efter GC-reglerna 26,7 %. Grundraden kostar alltså 8,8 enheter, reduceringen 6,5.
+- **Orsak:** grundraden väljs efter chansen att rätt rad finns i den, men gränsen stryker favoritraderna. Offline gav vikten p × folk^−0,5 grundrader med 38,2 % (inom-grundrad-tak), men nästan allt försvinner med röd max 2 (rader över gränsen har ofta 3 understreckade tecken).
+- **I motorn (extra grundradskandidater, valet efter kupongens chans):** β 0,5 27,20 %, **β 0,3 + 0,5 27,46 %** (bas 26,75; 8,41→8,68, 9,33→9,62, 9,00→9,16 per period), B 15,67 → 16,66 %. 12 rätt 6 → 4 och 11+ 14 → 12 (brus, 2 omgångar). Med A röd 1–3 26,53 %, röd 1–4 25,22 % – röd 1–2 kvar.
+- **Infört:** `GRUND_TILT` [0, 0,3, 0,5] i `scripts/fetch-stryktipset.mjs` och `gui/public/stryk-engine.js` (`tiltShare`), test i lib-units.
+- **Noterat, inte ändrat:** verklig 13-rättsutdelning är i median 1,33 × GC-formelns (25 milj omsättning). 30 000 kr i länken motsvarar alltså ungefär 40 000 kr i verkligheten. I 6 av 107 omgångar betalade rätt rad ≥ 30 000 kr fast GC räknade under 30 000 (t.ex. 4951: GC 29 629, verkligt 63 157). Gränsen i länken är användarens regel och rördes inte.
+
 ## Beslut
 
 - **2026-09-28, felanalys av tipsen per liga (kväll):** webbens träffruta visade grundmodellens träff, men i ligor med odds styr oddsen tipsen. Grundmodellen tippar hemmalaget för ofta (flata procent, oavgjort går till hemma), och när den och oddsen var oense hade oddsen rätt oftare (till exempel Championship 10 mot 0 av 17, Brasilien 17 mot 8). Pro-lagret räknar nu tipsmotorns riktiga träff per liga och säsong (`evaluation.tipAccuracy`, per match i `data/reports/tips-backtest.json`), och webben visar den med "väntat". Championship 36,6 % → 45,3 %, PL 40,0 % → 46,0 %. Bara League One ligger klart under tipsens egna procent (34,5 % mot 46,1 %, z −2,2, 87 matcher). Datafel är uteslutet, förra säsongen låg ligan på z +1,3, så det bedöms som slump. Följ upp.
@@ -106,6 +189,8 @@ Per liga (80–260 lag-matcher per liga, cirka 230 tester): inget |z| över 2,2,
 - **2026-09-28, metodlärdom:** att välja ligor per liga på valideringsdata var skört. Med "dLL < 0" kom brusligor med (PL blev sämre), och med "z ≤ −1" åkte Serie A ut. Därför bestämdes slutregeln i förväg: kalibrera alla ligor med straff, utan signaler. Välj aldrig ligor på kontrollperioden.
 
 ## Följ upp
+
+- **Hästar V85 (2026-10-04):** V85 Boden 2026-10-03 gav 4 av 8 med en analys gjord kl. 10:19. Med slutstrecket hade samma system gett 6 av 8, eftersom sena pengar gick till tre vinnare. Beslut: analysera nära spelstopp. Barfota ändrat (streck < 10 % vinner 1,56 × strecket) är redan inprisat av modellen (rest 1,19, z 1,9, inte bekräftat). Detaljer: [anteckningar/V85.md](anteckningar/V85.md).
 
 - **Ligor helt utan oddshistorik** (Colombia, Brasilien B, Chile, J2, J3, K League, Superettan, Div 1, OBOS, Danmark 1. div, Tjeckien, Kroatien): där kan varken marknadstest eller kalibrering göras, och tipsen följer modellen. `data/matcher/<liga>.csv` sparar från och med nu oddsen vi ser före varje match (`pre_first_*`, `pre_last_*`). Efter cirka 150 matcher per liga kan marknadstestet köras där också. Modellen slår "alltid hemmavinst" i 10 av 13 sådana ligor, men inte i Chile (44,3 % mot 48,9 %, n 167; bortatipsen träffar 33 %, vilket tyder på underskattad hemmafördel), K League (32,5 % mot 36,5 %, n 166) och Danmark 1. div (35,7 % mot 38,2 %, n 42). Urvalen är för små för att ändra något nu. Granska hemmafördelen i Chile och K League med `npm run tune` när fler matcher finns.
 - **League One** (z −2,2 i år): ligger z fortfarande ≤ −2 efter 200 matcher, granska oddskällan (egen avläsning mot stängning). **Portugal** (z −1,8) och **Superettan** (z −1,8 förra säsongen): följ upp i ligafilerna.

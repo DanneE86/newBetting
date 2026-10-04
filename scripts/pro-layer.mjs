@@ -12,7 +12,8 @@ import { EARLY_ROUNDS, buildTiers, fitLeagueModel, loadLeagueModels, paramsFor }
 import { historicalMissing, findUsMatch, inCurrentSquad, loadPlayerModel, summarise as summariseMissing, teamShares } from './pro/players.mjs';
 import { TEAM_ALIASES } from './weather/teams.mjs';
 import { adjustProbs } from './lib/learned-adjust.mjs';
-import { buildRefIndex, loadRefereeMatches, refereeFlags, REF_LEAGUES } from './lib/referee-streaks.mjs';
+import { buildRefIndex, loadRefereeMatches, refereeFlags, refKey, REF_LEAGUES, resolveTeam } from './lib/referee-streaks.mjs';
+import { buildCardIndex, CARD_CFG, pickCardLine, predictCards } from './lib/cards-model.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const P = {
@@ -169,7 +170,11 @@ for (const t of marketOnly) {
   if (Object.values(t.pro.verdicts).some((v) => v.value)) tips.bestUpcoming.push(t);
 }
 // Domarsviter per lag (minst 5 raka segrar/forluster med matchens domare), engelska ligor - npm run domare
+const refRows = loadRefereeMatches((rel) => { const f = path.join(root, rel); return fs.existsSync(f) ? readJson(f) : null; }, store.matches);
+const refOf = upcomingReferees();
 applyRefereeStreaks([...(tips.bestUpcoming ?? []), ...(tips.allCandidates ?? [])]);
+// Antal kort Ö/U 3.5/4.5/5.5 (gula + roda): lagens kort + domarens niva, se scripts/lib/cards-model.mjs
+applyCards([...(tips.bestUpcoming ?? []), ...(tips.allCandidates ?? [])]);
 tips.proMeta = {
   updatedAt: new Date().toISOString(),
   config: CONFIG,
@@ -197,12 +202,27 @@ for (const [lg, s] of Object.entries(evaluation.summary)) {
 
 // ======================================================================
 
-function applyRefereeStreaks(list) {
+function upcomingReferees() {
   const upcoming = fs.existsSync(P.refUpcoming) ? readJson(P.refUpcoming).matches ?? [] : [];
-  const refOf = new Map(upcoming.filter((m) => m.referee).map((m) => [`${m.league}|${m.date}|${m.home}|${m.away}`, m.referee]));
+  return new Map(upcoming.filter((m) => m.referee).map((m) => [`${m.league}|${m.date}|${m.home}|${m.away}`, m.referee]));
+}
+
+function applyCards(list) {
+  const index = buildCardIndex(refRows, today, CARD_CFG, { refKey });
+  for (const t of list ?? []) {
+    if (!t.tips) continue;
+    const referee = refOf.get(`${t.league}|${t.date}|${t.home}|${t.away}`) ?? null;
+    const pred = predictCards(index, { league: t.league, home: t.home, away: t.away, referee }, { resolveName: resolveTeam });
+    const pick = pickCardLine(pred);
+    // tips-latest kan redan ha CARDS från en tidigare körning: utan prognos ska raden bort
+    if (pick) t.tips.CARDS = { ...pick, ...pred };
+    else delete t.tips.CARDS;
+  }
+}
+
+function applyRefereeStreaks(list) {
   if (!refOf.size) return;
-  const rd = (rel) => { const f = path.join(root, rel); return fs.existsSync(f) ? readJson(f) : null; };
-  const index = buildRefIndex(loadRefereeMatches(rd, store.matches));
+  const index = buildRefIndex(refRows);
   for (const t of list ?? []) {
     if (!REF_LEAGUES.has(t.league)) continue;
     const referee = refOf.get(`${t.league}|${t.date}|${t.home}|${t.away}`);
