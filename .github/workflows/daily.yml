@@ -70,6 +70,10 @@ jobs:
         shell: pwsh
         run: powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Update-TipsLedger.ps1
 
+      - name: Tipslogg (Oddset)
+        continue-on-error: true
+        run: node scripts/tipslogg.mjs
+
       - name: Daily Scanner
         run: |
           set -o pipefail

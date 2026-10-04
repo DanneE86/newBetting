@@ -1845,3 +1845,103 @@ test.describe('streck-flop: säsongslistan (panelen Risklag)', () => {
     expect(streckFlopFlags(hist, { home: 'Häcken', away: 'Z', date: '2026-10-02', country: 'Sverige' })).toBeNull();
   });
 });
+
+// ---------- tipslogg.mjs ----------
+
+test.describe('tipslogg: vad som tippats sparas och analyseras', () => {
+  const now = new Date('2026-10-04T10:00:00Z');
+  const later = new Date('2026-10-04T12:00:00Z');
+  const after = new Date('2026-10-04T20:00:00Z');
+  const rec = (pick: string, kickoff = '2026-10-04T15:00:00Z') => ({
+    id: 'x', product: 'oddset', date: '2026-10-04', kickoff, league: 'PL', home: 'Arsenal', away: 'Chelsea',
+    tip: { markets: { '1X2': { pick, p: 0.5, odds: 2.1, value: 'Värde' } } },
+  });
+
+  test('första tipset låses, senaste uppdateras fram till start, sedan ändras inget', async () => {
+    const { applyTip } = await lib('tipslogg.mjs');
+    const store = { items: {} as Record<string, any> };
+    expect(applyTip(store, rec('1'), now)).toBe('ny');
+    expect(applyTip(store, rec('1'), later)).toBe('samma');
+    expect(applyTip(store, rec('X'), later)).toBe('andrad');
+    expect(store.items.x.first.markets['1X2'].pick).toBe('1');
+    expect(store.items.x.latest.markets['1X2'].pick).toBe('X');
+    expect(applyTip(store, rec('2'), after)).toBe('last');
+    expect(store.items.x.latest.markets['1X2'].pick).toBe('X');
+  });
+
+  test('en match som redan startat när den först ses loggas inte (inget riktigt tips)', async () => {
+    const { applyTip } = await lib('tipslogg.mjs');
+    const store = { items: {} as Record<string, any> };
+    expect(applyTip(store, rec('1'), after)).toBe('sen');
+    expect(store.items.x).toBeUndefined();
+  });
+
+  test('facit sätts en gång och tipset efter facit är låst', async () => {
+    const { applyTip, applyResult } = await lib('tipslogg.mjs');
+    const store = { items: {} as Record<string, any> };
+    applyTip(store, rec('1'), now);
+    expect(applyResult(store, 'x', { '1X2': '1' }, after)).toBe(true);
+    expect(applyResult(store, 'x', { '1X2': '2' }, after)).toBe(false);
+    expect(store.items.x.result['1X2']).toBe('1');
+    expect(applyResult(store, 'saknas', { '1X2': '1' }, after)).toBe(false);
+  });
+
+  test('gradeRecord: Oddset, Stryktipset (enkelrad + kuponger) och Hästar', async () => {
+    const { gradeRecord } = await lib('tipslogg.mjs');
+    const o = gradeRecord({ product: 'oddset', first: rec('1').tip, result: { '1X2': '1' } });
+    expect(o).toEqual([{ market: '1X2', pick: '1', p: 0.5, odds: 2.1, value: 'Värde', hit: true }]);
+    const s = gradeRecord({
+      product: 'stryktipset', result: { outcome: 'X' },
+      first: { probs: [0.5, 0.3, 0.2], odds: [2, 3.4, 5], single: '1', coupons: { A: { signs: '1X', type: 'Halvgardering' }, B: { signs: '2' }, C: null } },
+    });
+    expect(s.map((g: any) => [g.market, g.hit, g.p])).toEqual([['enkelrad', false, 0.5], ['kupong A', true, 0.8], ['kupong B', false, 0.2]]);
+    const h = gradeRecord({ product: 'hastar', result: { winners: [7] }, first: { top: [{ nr: 3, p: 0.4 }, { nr: 7, p: 0.2 }, { nr: 1, p: 0.1 }], spik: 3 } });
+    expect(h.map((g: any) => [g.market, g.hit])).toEqual([['etta', false], ['topp 3', true], ['spik', false]]);
+    expect(gradeRecord({ product: 'oddset', first: rec('1').tip, result: null })).toEqual([]);
+  });
+
+  test('flatten filtrerar på lag, liga och produkt; summarize räknar träff och 500 kr flat', async () => {
+    const { flatten, summarize, groupRows } = await lib('tipslogg.mjs');
+    const recs = [
+      { ...rec('1'), id: 'a', first: rec('1').tip, result: { '1X2': '1' } },
+      { ...rec('2'), id: 'b', home: 'Leeds', away: 'Arsenal', first: rec('2').tip, result: { '1X2': '1' } },
+      { ...rec('1'), id: 'c', league: 'CH', home: 'Hull', away: 'Stoke', first: rec('1').tip, result: { '1X2': '1' } },
+    ];
+    const ars = flatten(recs, { team: 'arsenal' });
+    expect(ars.map((r: any) => r.id)).toEqual(['a', 'b']);
+    expect(flatten(recs, { league: 'CH' }).map((r: any) => r.id)).toEqual(['c']);
+    expect(flatten(recs, { product: 'stryktipset' })).toEqual([]);
+    const s = summarize(ars);
+    expect(s).toMatchObject({ n: 2, hits: 1, rate: 0.5, expected: 0.5, bets: 2, profit: 50, roi: 0.05 });
+    const byTeam = groupRows(flatten(recs), 'team');
+    expect(byTeam.find((g: any) => g.key === 'Arsenal')).toMatchObject({ n: 2, hits: 1 });
+  });
+
+  test('byggare: Oddset-kandidat, Stryktipset-match och travlopp blir poster med rätt id', async () => {
+    const { oddsetRecord, oddsetResult, strykRecords, hastRecords } = await lib('tipslogg.mjs');
+    const o = oddsetRecord({
+      date: '2026-10-04', kickoffUtc: '2026-10-04T15:00Z', league: 'PL', home: 'Arsenal', away: 'Chelsea', passEdgeFilter: true,
+      tips: { '1X2': { pick: '1', confidence: 0.52 }, OU25: { pick: 'UNDER 2.5', confidence: 0.6 }, BTTS: { pick: 'NEJ', confidence: 0.55 } },
+      pro: { odds: { home: 2.1, under25: 1.8 }, verdicts: { home: { value: true }, under25: { value: false } }, valueBets: [] },
+    });
+    expect(o.id).toBe('2026-10-04|PL|Arsenal|Chelsea');
+    expect(o.tip.markets['1X2']).toMatchObject({ pick: '1', odds: 2.1, value: 'Värde' });
+    expect(o.tip.markets.OU25).toMatchObject({ value: 'Ej värde' });
+    expect(o.tip.topTip).toBe(true);
+    expect(oddsetResult({ result: 'D', hg: 1, ag: 1, btts: true, over25: false })).toEqual({ '1X2': 'X', BTTS: 'JA', OU25: 'UNDER 2.5', score: '1-1' });
+    expect(oddsetResult({ result: null })).toBeNull();
+    const s = strykRecords({
+      product: 'stryktipset', drawNumber: 4974, regCloseTime: '2026-10-10T15:59:00+02:00', reducedC: { picks: ['X2'] },
+      events: [{ eventNumber: 1, home: 'Hull', away: 'Stoke', kickoff: '2026-10-10T16:00:00+02:00', final: [0.4, 0.3, 0.3], tip: '1', systemPick: { signs: '1X', type: 'Halvgardering' }, systemPickB: { signs: '1X2', type: 'Helgardering' } }],
+    });
+    expect(s[0].id).toBe('stryktipset-4974-1');
+    expect(s[0].tip.coupons).toEqual({ A: { signs: '1X', type: 'Halvgardering' }, B: { signs: '1X2', type: 'Helgardering' }, C: { signs: 'X2' } });
+    const h = hastRecords({
+      id: 'V85_2026-10-10_5_5', type: 'V85', date: '2026-10-10', track: 'Solvalla', spikes: { sakerhet: { raceNr: 5, nr: 2 }, varde: null },
+      races: [{ leg: 1, number: 5, startTime: '2026-10-10T15:00:00', horses: [{ nr: 1, p: 0.1 }, { nr: 2, p: 0.5 }, { nr: 3, p: 0.6, scratched: true }] }],
+    });
+    expect(h[0].id).toBe('V85_2026-10-10_5_5|5');
+    expect(h[0].tip.top.map((x: any) => x.nr)).toEqual([2, 1]);
+    expect(h[0].tip.spik).toBe(2);
+  });
+});
