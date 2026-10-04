@@ -1905,23 +1905,28 @@ test.describe('stryk-engine: kupong A, B och C', () => {
     }
   });
 
-  // Kupong D (användaren 2026-10-04): fritt system för vinster över 20 000 kr. Inga färg-, tecken- eller formregler,
-  // valfri grundrad, bara lägsta utdelning (GC-formeln) minst 20 000 kr och 350–400 kr.
-  test('kupong D: fritt system, gräns minst 20 000 kr, 350–400 rader och Gambling Cabin-länken utan regler', async () => {
+  // Kupong D (användaren 2026-10-04): fritt system för vinster över 20 000 kr, sedan samma dag "gör det reducerat också".
+  // Valfri grundrad på minst D_RULES.gmin rader, reducerad till 350–400 kr med regler som sökningen väljer fritt: antal
+  // 1/X/2, gröna och röda bland garderingarna och lägsta utdelning (GC-formeln) minst 20 000 kr.
+  test('kupong D: fritt reducerat system, grundrad minst gmin, gräns minst 20 000 kr, 350–400 rader och Gambling Cabin-länken med reglerna', async () => {
     test.skip(products.length === 0, 'data/stryktipset.json saknas');
     test.setTimeout(300_000);
     const { buildCouponD, D_RULES } = await engine();
     expect(D_RULES).toMatchObject({ payoutMin: 20000, budget: { min: 350, max: 400 } });
+    expect(D_RULES.gmin).toBeGreaterThanOrEqual(2000);
     for (const p of products) {
       const ev = p.events.map((e: any) => (e.spik?.used && e.spik.sysP ? { ...e, final: e.spik.sysP } : e));
       const r = p.reduced?.rules || {};
       // payoutMin 15 000 = A:s gräns i motorns gemensamma inställningar, D ska ändå ha minst 20 000
       const T = r.turnover, base = { rowPrice: 1, turnover: T, realTurnover: r.realTurnover || T, jackpot: r.jackpot || 0, payoutMin: 15000 };
-      const D = buildCouponD(p, ev, ev.map(() => null), base, { evals: 20000 });
+      const D = buildCouponD(p, ev, ev.map(() => null), base, { evals: 5000 });
       const at = `${p.product} ${p.drawNumber}`;
       expect(D, at).toBeTruthy();
-      expect(D.rules).toMatchObject({ free: true, colorRules: null, signMin: null });
+      expect(D.rules).toMatchObject({ free: true, signMin: null });
       expect(D.rules.payoutMin, `${at}: gränsen`).toBeGreaterThanOrEqual(20000);
+      // Reducerat: grundraden är minst gmin rader och minst fem gånger större än kupongen
+      expect(D.grundRows, `${at}: grundraden`).toBeGreaterThanOrEqual(D_RULES.gmin);
+      expect(D.grundRows).toBeGreaterThanOrEqual(5 * D.rows);
       if (D.rules.budget === 'ok') {
         expect(D.cost).toBeGreaterThanOrEqual(350);
         expect(D.cost).toBeLessThanOrEqual(400);
@@ -1929,24 +1934,38 @@ test.describe('stryk-engine: kupong A, B och C', () => {
       } else expect(D.relaxed.length).toBe(1);
       expect(D.rows).toBe(D.rowList.length);
       expect(new Set(D.rowList).size).toBe(D.rows);
-      // Alla rader i grundraden som klarar gränsen är med (GC reducerar bara på utdelning), inga andra
-      let inGrund = 0;
-      const walk = (i: number, f: number) => {
-        if (i === ev.length) { if ((0.65 * 0.4 * T + base.jackpot) / (1 + T * f) >= D.rules.payoutMin) inGrund++; return; }
-        for (const s of D.picks[i].signs) walk(i + 1, f * ev[i].folk['1X2'.indexOf(s)]);
-      };
-      walk(0, 1);
-      expect(inGrund, `${at}: raderna = grundraden över gränsen`).toBe(D.rows);
       for (const row of D.rowList) [...row].forEach((s: string, i: number) => expect(D.picks[i].signs).toContain(s));
       // Chansen i kupongen = summan av radernas chans
       expect(D.hitAll).toBeCloseTo(D.rowP.reduce((a: number, b: number) => a + b, 0), 10);
       const url = new URL(D.gamblingCabinUrl);
-      expect(url.searchParams.get('antT')).toBe('0,0,13,0,13,0,13');
-      for (const c of ['yellow', 'red', 'green', 'pink']) expect(url.searchParams.get(c), c).toBe('0,0,13');
+      const num = (k: string) => url.searchParams.get(k)!.split(',').map(Number);
+      for (const c of ['yellow', 'pink']) expect(url.searchParams.get(c), c).toBe('0,0,13');
       expect(url.searchParams.get('utd')).toBe(`1,${D.rules.payoutMin},100000000`);
-      // Alla valda tecken blå (1), övriga 0
-      const v = ['v1', 'vX', 'v2'].map((k) => url.searchParams.get(k)!.split(',').map(Number));
-      D.picks.forEach((x: any, i: number) => [0, 1, 2].forEach((k) => expect(v[k][i], `${at} match ${i + 1} ${'1X2'[k]}`).toBe(x.signs.includes('1X2'[k]) ? 1 : 0)));
+      const antT = num('antT');
+      expect(antT[0]).toBe(1);
+      // Färger: spikar och gula (26–44 %) blå (1), gröna (≥ 45 %) 4, röda (≤ 25 %) 3, ej valda 0
+      const color = (q: number) => (q >= 0.45 ? 4 : Math.round(q * 100) <= 25 ? 3 : 1);
+      const v = ['v1', 'vX', 'v2'].map(num);
+      D.picks.forEach((x: any, i: number) => [0, 1, 2].forEach((k) => expect(v[k][i], `${at} match ${i + 1} ${'1X2'[k]}`)
+        .toBe(!x.signs.includes('1X2'[k]) ? 0 : x.signs.length === 1 ? 1 : color(ev[i].folk[k]))));
+      // Gambling Cabin med länkens regler ger exakt kupongens rader: hela grundraden räknas om oberoende av motorn
+      const green = num('green'), red = num('red');
+      const ok = (rule: number[], n: number) => !rule[0] || (n >= rule[1] && n <= rule[2]);
+      const kept: string[] = [];
+      const row: string[] = [];
+      const walk = (i: number, f: number) => {
+        if (i === ev.length) {
+          const cnt = [0, 1, 2].map((k) => row.filter((s) => s === '1X2'[k]).length);
+          const cols = row.map((s, j) => v['1X2'.indexOf(s)][j]);
+          if ((0.65 * 0.4 * T + base.jackpot) / (1 + T * f) >= D.rules.payoutMin
+            && cnt.every((n, k) => n >= antT[1 + 2 * k] && n <= antT[2 + 2 * k])
+            && ok(green, cols.filter((c) => c === 4).length) && ok(red, cols.filter((c) => c === 3).length)) kept.push(row.join(''));
+          return;
+        }
+        for (const s of D.picks[i].signs) { row.push(s); walk(i + 1, f * ev[i].folk['1X2'.indexOf(s)]); row.pop(); }
+      };
+      walk(0, 1);
+      expect(kept.sort(), `${at}: länkens regler = kupongens rader`).toEqual([...D.rowList].sort());
     }
   });
 
@@ -1959,12 +1978,16 @@ test.describe('stryk-engine: kupong A, B och C', () => {
     const base = { rowPrice: 1, turnover: p.reduced.rules.turnover, realTurnover: p.reduced.rules.turnover, jackpot: 0 };
     const none = ev.map(() => null);
     const few = searchD(ev, none, base, { evals: 1 });
-    const many = searchD(ev, none, base, { evals: 20000 });
+    const many = searchD(ev, none, base, { evals: 5000 });
     expect(many.score).toBeGreaterThanOrEqual(few.score);
-    expect(searchD(ev, none, base, { evals: 20000 }).sets).toEqual(many.sets);
+    expect(searchD(ev, none, base, { evals: 5000 }).sets).toEqual(many.sets);
+    expect(many.G).toBeGreaterThanOrEqual(3000);
     // makeEvalD räknar samma chans som en fullständig uppräkning
     const e = makeEvalD(ev, base)(many.sets);
     expect(e.hit).toBeCloseTo(many.hit, 12);
+    const D0 = buildCouponD(p, ev, none, base, { evals: 5000 });
+    expect(D0.hitAll).toBeCloseTo(many.hit, 12);
+    expect(D0.rows).toBe(many.rows);
     const forced = ev.map(() => null);
     forced[4] = [0];      // spik 1
     forced[5] = [0, 1, 2]; // helgardering
