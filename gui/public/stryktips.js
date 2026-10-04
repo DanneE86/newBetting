@@ -800,6 +800,7 @@ function couponCard(c, label, p) {
       <div><dt>Utdelning 13 rätt</dt><dd>ca ${krFmt(c.expectedPayout || 0)} kr</dd></div>
       <div><dt>Regler</dt><dd class="sb-rule">${r.free ? dRules(r, c) : r.signMin.join("-")} · utdelning minst ${krFmt(r.payoutMinReal ?? r.payoutMin)} kr, inget tak</dd></div>
       <div><dt>Dina krav</dt><dd>${locked}</dd></div>
+      ${r.xShare != null ? `<div><dt>Kryss</dt><dd>X på ${c.picks.filter((x) => x.signs.includes("X")).length} matcher · täcker ${Math.round(r.xShare * 100)} % av väntade kryss</dd></div>` : ""}
     </dl>
     ${c.relaxed?.length ? `<p class="st-note ds-notice ds-notice--warning">Gick inte med alla regler: ${esc(c.relaxed.join(", "))}.</p>` : ""}
     ${p.open
@@ -1025,7 +1026,7 @@ function renderB(p, head, top = "", extras = "") {
             <li><b>A:</b> högst chans till 13 rätt, teckenregler 4-2-2, utdelning minst ${(UTD_MIN[p.product] || 30000).toLocaleString("sv-SE")} kr.</li>
             <li><b>B</b> är risksystemet: teckenregler 3-2-2, 50 000–75 000 kr, alltid en skrällspik (runt 40 %, annars den som är näst på tur), aldrig samma gardering som A, och högst en spik får skilja – B har A:s spikar utom på högst en match. Håller gränsen inte med röd 1–5/2–5 får B röd 1–3.</li>
             <li>Spikar: matcher som bedömts som spikbara spikas först. Behövs fler spikar (minst 2, eller för att hålla utdelningsgränsen) läggs de i A och C bara på omgångens 4 starkaste favoriter – svaga favoriter med högt kryss gick ofta fel (bakkörning 2026-10-03). Går det inte väljs bästa favorit som förut.</li>
-            <li><b>C</b> är skrällsystemet: ett eget system på 700–850 kr som inte har med A och B att göra (bara krav du lagt på C eller Alla gäller där). Högsta raden ska ge minst 1 miljon, 50 000–75 000 kr, alltid en skrällspik, teckenregler som A (Europatipset 3-2-2).</li>
+            <li><b>C</b> är skrällsystemet: ett eget system på 700–850 kr som inte har med A och B att göra (bara krav du lagt på C eller Alla gäller där). Högsta raden ska ge minst 1 miljon, 50 000–75 000 kr, alltid en skrällspik, teckenregler som A (Europatipset 3-2-2), och kryssen ska täcka minst hälften av omgångens väntade kryss.</li>
             <li><b>D</b> är ditt fasta system: alltid 4 spikar, 4 halvgarderingar och 5 helgarderingar. Röd = folket 25 % eller lägre, grön = 26–35 %, över 35 % och spikarna är blå (ingen regel). Varje rad har 1–3 röda och 1–3 gröna, minst 4 ettor, 3 kryss och 3 tvåor, och lägsta utdelning 30 000–50 000 kr (inget tak) så att det blir 350–400 kr. Motorn provar alla sätt att lägga 4/4/5 och väljer det med högst chans till 13 rätt. Eget system – bara krav på D eller Alla gäller.</li>
             <li>⚠ i tabellen = tecken som just den kupongen brukar ha fel på (minst 30 % missar i bakkörningen), röd = oftare än vår egen chans sa.</li>
             ${p.product === "stryktipset" ? "<li>På Stryktipset spikas bara favoriter med minst 65 % – spikar på 50–65 % sprack nästan varannan gång i baktestet.</li>" : ""}

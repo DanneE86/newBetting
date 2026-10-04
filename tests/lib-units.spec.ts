@@ -1754,7 +1754,12 @@ test.describe('stryk-engine: kupong A, B och C', () => {
         // Färgreglerna: aldrig exakt antal (2–2) och aldrig samma fönster för två färger (färger som inte finns är av)
         const on = ['green', 'yellow', 'red'].filter((k) => !c.rules.colorsOff.includes(k));
         // Röd 1–2 i A (sedan 2026-10-03 natt, förut 1–3), C 2–6; B är risksystemet med röd 1–5 eller 2–5 (användaren 2026-10-02 kväll, max 5 sedan 2026-10-03)
-        if (on.includes('red')) {
+        // Sista reserven (rules.colorsFree): inga grundrader klarar fasta färger, t.ex. B när A har 7 helgarderingar
+        // (Europatipset 2613 2026-10-04). Kupongen ska säga det och aldrig påstå en rödregel den inte har.
+        if (c.rules.colorsFree) {
+          expect(c.relaxed.some((t: string) => t.startsWith('grön 3–6') && t.includes('optimerades fritt')), `${p.product} ${name}: fria färger i texten`).toBe(true);
+          expect(c.relaxed.some((t: string) => t.includes(`${name} fick röd`)), `${p.product} ${name}: ingen falsk rödregel i texten`).toBe(false);
+        } else if (on.includes('red')) {
           if (['B', 'C'].includes(name) && c.rules.redFallback) {
             // 30 000–50 000 kr gick inte med röd max 5: röd 1–3 och gränsen hålls (står i kupongen)
             // Reserv: B 1–2, sedan 1–3; C 1–3
@@ -1765,8 +1770,9 @@ test.describe('stryk-engine: kupong A, B och C', () => {
           else if (name === 'C') expect(cr.red, `${p.product} C: röd 2–6`).toEqual([2, 6]);
           else expect(cr.red, `${p.product} ${name}: röd alltid 1–2`).toEqual([1, 2]);
         }
-        if (on.includes('green')) expect(cr.green, `${p.product} ${name}: grön alltid 3–6`).toEqual([3, 6]);
-        expect(c.relaxed.some((t: string) => t.includes('grön 3–6')), `${p.product} ${name}: fasta färger hölls`).toBe(false);
+        if (on.includes('green') && !c.rules.colorsFree) expect(cr.green, `${p.product} ${name}: grön alltid 3–6`).toEqual([3, 6]);
+        // Fasta färger håller alltid i A och C; B bara får släppa dem (A/B-regeln går före)
+        if (name !== 'B') expect(c.relaxed.some((t: string) => t.includes('grön 3–6')), `${p.product} ${name}: fasta färger hölls`).toBe(false);
         // Gult skär aldrig bort rader (2026-10-02) om inte 30 000–50 000 kr kräver det (rules.yellowFull false, står i kupongen)
         if (on.includes('yellow')) {
           const ys = triples.filter((t: number[]) => t[0] >= cr.green[0] && t[0] <= cr.green[1] && t[2] >= cr.red[0] && t[2] <= cr.red[1]).map((t: number[]) => t[1]);
@@ -1943,9 +1949,26 @@ test.describe('stryk-engine: kupong A, B och C', () => {
       expect(url.searchParams.get('utd')).toBe(`1,${D.rules.payoutMin},100000000`);
       const antT = num('antT');
       expect(antT[0]).toBe(1);
+      // Kryss (användaren 2026-10-04: "jag måste få in 50 % av kryssen"): C:s X täcker minst hälften av omgångens
+      // väntade kryss (summan av vår X-chans i hela procent)
+      const xu = ev.map((e: any) => Math.round(e.final[1] * 100));
+      const share = xu.reduce((s: number, u: number, i: number) => s + (C.picks[i].signs.includes('X') ? u : 0), 0) / xu.reduce((s: number, u: number) => s + u, 0);
+      expect(share, `${p.product}: C kryss ${C.picks.map((x: any) => x.signs).join(' ')}`).toBeGreaterThanOrEqual(0.5);
+      expect(C.rules.xShare).toBeCloseTo(share, 3);
+      expect(C.rules.xShareShort).toBeFalsy();
       // Färger: spikar och gula (26–44 %) blå (1), gröna (≥ 45 %) 4, röda (≤ 25 %) 3, ej valda 0
       const color = (q: number) => (q >= 0.45 ? 4 : Math.round(q * 100) <= 25 ? 3 : 1);
       const v = ['v1', 'vX', 'v2'].map(num);
+  test('kupong C: kryssregeln (X_SHARE_C 50 %) gäller bara C och är samma i båda motorerna', async () => {
+    const { X_SHARE_C, xShareOf } = await engine();
+    const srv = await import(pathToFileURL(path.join(ROOT, 'scripts', 'fetch-stryktipset.mjs')).href);
+    expect(X_SHARE_C).toBe(0.5);
+    expect(srv.X_SHARE_C).toBe(0.5);
+    const ev = [0.2, 0.3, 0.25, 0.25].map((x) => ({ final: [0.5, x, 0.5 - x] }));
+    expect(xShareOf(ev, [[0, 1], [0], [1, 2], [2]])).toBeCloseTo(45 / 100, 6);
+    expect(srv.xShareOf(ev, [[0, 1], [0], [1, 2], [2]])).toBeCloseTo(45 / 100, 6);
+  });
+
       D.picks.forEach((x: any, i: number) => [0, 1, 2].forEach((k) => expect(v[k][i], `${at} match ${i + 1} ${'1X2'[k]}`)
         .toBe(!x.signs.includes('1X2'[k]) ? 0 : x.signs.length === 1 ? 1 : color(ev[i].folk[k]))));
       // Gambling Cabin med länkens regler ger exakt kupongens rader: hela grundraden räknas om oberoende av motorn

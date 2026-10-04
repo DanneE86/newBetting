@@ -60,6 +60,25 @@ const UTD_MIN_C = Number(process.env.STRYK_C_UTD ?? 50000);
 // galler fortfarande forst. Stryktipset 4973: rott pa 8 matcher gav hogsta rad 1,4 milj (14 rader over 1 milj), gransen
 // 73 800 kr, chans 13 ratt 1 pa 599 (mot 1 pa 261 med rott pa 6). Gar 1 miljon inte: den med hogst hogsta rad.
 const RISK_C = { redRules: [[2, 6]], minReds: [6, 7, 8, 9, 10], maxRowMin: 1e6 };
+// Kryss i C (anvandaren 2026-10-04: "for fa kryss, jag maste fa in 50 % av kryssen"): C:s halvor blev favorit + skrall
+// (1-2), sa Europatipset 2613 hade X pa bara 4 matcher - omgangar med 5+ kryss (18 av 55) kunde aldrig ge 13 ratt.
+// Grundraden maste tacka minst X_SHARE_C av omgangens vantade kryss (summan av var X-chans, hela procent). Gar det inte
+// (dina krav) sa mycket som gar (rules.xShareShort). Samma som X_SHARE_C i gui/public/stryk-engine.js. STRYK_C_XSHARE=0 = av.
+export const X_SHARE_C = Number(process.env.STRYK_C_XSHARE ?? 0.5);
+// Lutning mot understreckade tecken i C (som GRUND_TILT_B). STRYK_C_TILT=b = B:s lutning.
+const C_TILT = process.env.STRYK_C_TILT === 'b';
+let cTiltOn = false;
+// Kryssen raknas inte som en egen nyckel i DP:n (det gav manga ganger fler tillstand - en bakkorning tog timmar):
+// i stallet far X en bonus xLam x X-chansen i valet av tecken, och bonusen hojs steg for steg (X_LAMS) tills grundraden
+// tacker X_SHARE_C. Valet bland kandidaterna gors anda pa kupongens chans efter reduceringen. Samma i stryk-engine.js.
+let xShareOn = false; // satts i bestWithSpikes (C)
+let xLam = 0;
+const X_LAMS = [0, 0.25, 0.5, 1, 1.5, 2.5, 4];
+const xUnits = (e) => Math.round(e.final[1] * 100);
+export function xShareOf(events, sets) {
+  const tot = events.reduce((s, e) => s + xUnits(e), 0);
+  return tot ? events.reduce((s, e, i) => s + (sets[i].includes(1) ? xUnits(e) : 0), 0) / tot : 1;
+}
 const C_COLOR = process.env.STRYK_C_COLOR || 'dyn';
 const COLOR = { green: 0.45, red: 0.25 }; // folkets streck: gron >= 45 %, rod 25 % eller lagre (anvandaren 2026-10-02, hela procent), annars gul
 // Skrall (rott tecken) i en gardering far finnas pa hogst 85 % av kupongens rader (anvandarens regel 2026-09-29).
@@ -676,14 +695,30 @@ export function tiltShare(e, sub, beta) {
   const w = [0, 1, 2].map((k) => e.final[k] * (e.folk?.[k] || e.final[k]) ** -beta);
   return sub.reduce((sum, k) => sum + w[k], 0) / (w[0] + w[1] + w[2]);
 }
+// Kryss i C: bonusen hojs tills nagon grundrad tacker X_SHARE_C; gar det inte de som tacker mest
+function xCands(events, run) {
+  if (!xShareOn) return run();
+  let best = [], top = -1;
+  for (const lam of X_LAMS) {
+    xLam = lam;
+    try {
+      const c = run().map((x) => ({ x, s: xShareOf(events, x.sets) }));
+      const ok = c.filter((y) => y.s >= X_SHARE_C - 1e-9);
+      if (ok.length) return ok.map((y) => y.x);
+      const m = Math.max(-1, ...c.map((y) => y.s));
+      if (m > top) { top = m; best = c.filter((y) => y.s === m).map((y) => y.x); }
+    } finally { xLam = 0; }
+  }
+  return best;
+}
 function grundCandidates(events, maxRows, spikMin = 0, setsA = null, loose = false) {
   const seen = new Set(), out = [];
   const prev = grundTilt;
   try {
-    const tilts = setsA ? GRUND_TILT_B : GRUND_TILT;
+    const tilts = setsA || cTiltOn ? GRUND_TILT_B : GRUND_TILT;
     for (const t of tilts.length ? tilts : [0]) {
       grundTilt = t;
-      for (const c of grundCandidates1(events, maxRows, spikMin, setsA, loose)) {
+      for (const c of xCands(events, () => grundCandidates1(events, maxRows, spikMin, setsA, loose))) {
         const k = c.sets.map((x) => x.join('')).join('|');
         if (!seen.has(k)) { seen.add(k); out.push(c); }
       }
@@ -744,7 +779,7 @@ function grundCandidates1(events, maxRows, spikMin = 0, setsA = null, loose = fa
         const skr = free && skrallCount > 0 && isSkrall(e, i, sub[0]);
         const ns = sk + (skr ? 1 : 0), nl = l + (free && !skr ? 1 : 0);
         if (ns > skrallCount || 2 ** nh * 3 ** nf > maxRows) continue;
-        const lp = st.lp + Math.log(xTiltOn ? xCover(e, sub) : tiltShare(e, sub, grundTilt));
+        const lp = st.lp + Math.log(xTiltOn ? xCover(e, sub) : tiltShare(e, sub, grundTilt)) + (xLam && sub.includes(1) ? xLam * e.final[1] : 0);
         // Räknas per match (två röda tecken på samma match kan aldrig båda gå in – användaren 2026-10-02)
         const nr = Math.min(minRed, rc + (sub.length > 1 && sub.some((x) => isRed(e, x)) ? 1 : 0));
         // Helgula garderingar bara som de bla halvorna (hogst BLUE_HALVES) - fler ger anda alltid en gul per rad (2026-10-02)
@@ -793,7 +828,10 @@ function grundCandidates1(events, maxRows, spikMin = 0, setsA = null, loose = fa
 const SIGN_STEPS = [[3, 2, 2], [3, 1, 1], [2, 1, 1]];
 // opts.redRules = rodreglerna for systemet (B: RED_RULES_B), annars RED_RULE
 function bestWithSpikes(events, spikMin, setsA, opts, exclude = null) {
-  const prev = [redRules, skrallMin, extraSkrall, minRed, spikTop, xTiltOn, xSpikMax, blueXOn, skrallCount, xFolkOn, overSpikOn];
+  const prev = [redRules, skrallMin, extraSkrall, minRed, spikTop, xTiltOn, xSpikMax, blueXOn, skrallCount, xFolkOn, overSpikOn, xShareOn, cTiltOn];
+  // Kryss i C (X_SHARE_C) och C:s lutning (C_TILT)
+  xShareOn = opts.sys === 'C' && X_SHARE_C > 0;
+  cTiltOn = opts.sys === 'C' && C_TILT;
   // A (opts.sys 'A') utan skrallspik om SKRALL_A ar av; kryss dar folket missar det (X_FOLK) i A och B;
   // ingen spik pa overstreckad favorit (OVER_SPIK) i A och C
   skrallCount = opts.sys === 'A' && !SKRALL_A ? 0 : SKRALL_SPIK.count;
@@ -816,7 +854,7 @@ function bestWithSpikes(events, spikMin, setsA, opts, exclude = null) {
       if (alt?.reduced?.rules?.payoutExact === true || !best) return alt;
     }
     return best;
-  } finally { [redRules, skrallMin, extraSkrall, minRed, spikTop, xTiltOn, xSpikMax, blueXOn, skrallCount, xFolkOn, overSpikOn] = prev; }
+  } finally { [redRules, skrallMin, extraSkrall, minRed, spikTop, xTiltOn, xSpikMax, blueXOn, skrallCount, xFolkOn, overSpikOn, xShareOn, cTiltOn] = prev; }
 }
 // Bla X far inte kosta andra regler (anvandaren 2026-10-03): kupongen byggs forst med en bla halva med X. Slapper den
 // nagon regel byggs den aven utan, och den som slapper farre regler vinner (lika: bla X). Samma som withBlueX i stryk-engine.js.
@@ -1916,9 +1954,12 @@ async function analyzeDraw(product, draw, ctx, result) {
   // oberoende av A och B, 700-850 kr
   let systemC = null, reducedC = null;
   if (out.length && process.env.STRYK_C !== '0') {
-    const bestC = bestRisk(sysEv, spikMinFor(product.id), null, { ...baseOpts, payoutMin: Math.max(UTD_MIN_C, utdMin(product.id)), signMin: SIGN_MIN_C[product.id] || SIGN_MIN.A, budget: BUDGET_C, colorTarget: C_COLOR !== 'free', xTilt: false, blueX: false }, null, RISK_C);
+    const bestC = bestRisk(sysEv, spikMinFor(product.id), null, { ...baseOpts, payoutMin: Math.max(UTD_MIN_C, utdMin(product.id)), signMin: SIGN_MIN_C[product.id] || SIGN_MIN.A, budget: BUDGET_C, colorTarget: C_COLOR !== 'free', xTilt: false, blueX: false, sys: 'C' }, null, RISK_C);
     systemC = bestC?.system || null; reducedC = bestC?.reduced || null;
     if (reducedC) {
+      // Andel av omgangens vantade kryss som C tacker (X_SHARE_C)
+      const xs = xShareOf(sysEv, systemC.sets);
+      reducedC.rules = { ...reducedC.rules, xShare: r3(xs), ...(X_SHARE_C > 0 && xs < X_SHARE_C ? { xShareShort: true } : {}) };
       reducedC.picks = systemC.picks.map((x) => x.signs);
       reducedC.gamblingCabinUrl = gamblingCabinUrl(product.id, draw.drawNumber, closeDate, out, systemC.sets, reducedC);
     }

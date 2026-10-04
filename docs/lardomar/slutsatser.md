@@ -377,3 +377,17 @@ Användaren: "allt i lärdomsfilen som kan ge något ska läggas in i alla motor
 | **Höghöjd, Colombia** (Bogotá, Tunja, Pasto, Manizales) | Inga odds. Hemmalag på höghöjd tog *färre* poäng (1,51 mot 1,71, 170 m) | Visas, inget i motorerna (ingen marknad att testa mot) |
 
 Ändrat i motorerna: `scripts/lib/extra-signals.mjs` (alt, sp), `scripts/lib/learned-adjust.mjs` (höghöjd per liga), `scripts/pro-layer.mjs` (Oddset), `scripts/fetch-stryktipset.mjs` (Stryktipset och Europatipset: lärdomsjustering med bas `close`; i dag bara höghöjd, eftersom inget annat slog kontrollen vid stängning). Webbmotorn (`gui/public/stryk-engine.js`) läser procenten från filen och får justeringen automatiskt. Hästar berörs inte (egen modell).
+
+## 2026-10-04: kryss i kupong C (Europatipset)
+
+Användaren: "för få kryss, jag måste få in 50 % av kryssen" (omgång 2613: C hade X på bara 4 matcher, nästan alla halvor var favorit + skräll). Infört: C:s grundrad ska täcka minst 50 % av omgångens väntade kryss (summan av vår X-chans), X_SHARE_C i båda motorerna. X får en bonus i valet av tecken som höjs stegvis tills regeln håller. En egen räknare i DP:n gjorde bakkörningen ~10 gånger långsammare och förkastades.
+
+Bakkörning 55 Europatipset-omgångar 2025-08 – 2026-09 (`data/europatips-backtest-cX-{bas,x50,x50t}.json`):
+
+| C | Chans 13 rätt (summa) | 12+ | 11+ | 10+ | X-matcher i snitt | X saknas i grundraden | Netto |
+|---|---|---|---|---|---|---|---|
+| Utan regel | 15,66 % | 2 | 7 | 17 | 6,6 | 46 omg | −37 018 kr |
+| Kryss 50 % | 16,17 % | 1 | 8 | 23 | 7,5 | 44 omg | −40 156 kr |
+| Kryss 50 % + B:s lutning | 15,63 % | 1 | 8 | 20 | 7,0 | 43 omg | −39 973 kr |
+
+Kryssregeln ger något högre chans och fler 10–11 rätt, men nettot sjunker med ungefär 3 000 kr eftersom en 12:a (3 327 kr) försvann. Skillnaderna ligger inom slumpen på 55 omgångar. Regeln behålls eftersom användaren kräver den. B:s lutning (STRYK_C_TILT=b) gav inget och infördes inte. Kryss på väldigt många matcher kan pressa C:s högsta rad under 1 miljon (2613: 659 000 kr).
