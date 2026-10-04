@@ -35,6 +35,7 @@ Oddsen är motståndaren. En signal är bara värd något om den förbättrar sa
 | **En lärdomsfil per liga** (35 st): tipsens träff mot väntat, vad som blev fel i år, testade situationer + handskrivna daterade lärdomar | `docs/lardomar/anteckningar/<liga>.md`, översikt i `README.md` där (`npm run felanalys`, dagligen i molnet). Skriv nya lärdomar under "Lärdomar och beslut", nyast överst, aldrig inne i AUTO-blocket |
 | Tipsmotorns träff per liga och säsong (samma motor som live, point-in-time) | `data/reports/pro-evaluation.json` → `tipAccuracy`, per match i `data/reports/tips-backtest.json` (skrivs av `scripts/pro-layer.mjs`) |
 | Stryktipsets/Europatipsets system-lärdomar | `docs/analys/stryktips-lardomar.md` |
+| **Tipslogg: vad som faktiskt tippades** (Oddset, Stryktipset, Europatipset, Hästar), första tipset låst + senaste före start + facit, från 2026-10-04 | `data/tipslogg/<produkt>/<ÅÅÅÅ-MM>.json`. Analys: `node scripts/tipslogg.mjs --analys [--produkt X] [--liga X] [--lag X] [--marknad X] [--per liga\|team\|market\|pband\|value] [--senaste]` → `data/tipslogg/analys.json`. Facit på verkliga tips går före backtest när de säger emot varandra |
 
 Kör allt:
 ```

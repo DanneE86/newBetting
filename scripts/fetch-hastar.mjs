@@ -14,6 +14,17 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { normalizeGame, analyzeGame, backtest, resultsOf } from "./lib/trav-model.mjs";
+import { logTips, settleTips, hastRecords } from "./lib/tipslogg.mjs";
+
+/** Tipslogg (data/tipslogg/hastar): loppen före start sparas, facit ur analysens resultat. */
+async function tipslogg(a) {
+  const c = logTips("hastar", hastRecords(a));
+  const n = a.results
+    ? await settleTips("hastar", (rec) => (rec.game === a.id && a.results[rec.race]?.length ? { winners: a.results[rec.race] } : null))
+    : 0;
+  if (c.ny || c.andrad || n) log(`Tipslogg: ${c.ny} nya lopp, ${c.andrad} ändrade, facit för ${n}`);
+}
+
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const DIR = path.join(ROOT, "data", "hastar");
@@ -105,7 +116,7 @@ async function fetchAll(id, calendarEntry) {
   return raw;
 }
 
-function analyzeRaw(raw) {
+async function analyzeRaw(raw) {
   const game = normalizeGame(raw.main.game, raw.main.details);
   const ddGame = raw.dd ? normalizeGame(raw.dd.game, raw.dd.details) : null;
   const analysis = { ...analyzeGame(game, ddGame), fetchedAt: raw.fetchedAt, analyzedAt: new Date().toISOString() };
@@ -114,6 +125,7 @@ function analyzeRaw(raw) {
   if (Object.keys(results).length) analysis.results = results;
   writeJson(path.join(DIR, "analys", `${raw.id}.json`), analysis);
   updateIndex(analysis);
+  await tipslogg(analysis);
   log(`Analys sparad: data/hastar/analys/${raw.id}.json (${analysis.races.length} lopp)`);
   return analysis;
 }
@@ -146,6 +158,7 @@ async function updateResults() {
       if (Object.keys(res).length) {
         a.results = res;
         writeJson(path.join(dir, f), a);
+        await tipslogg(a);
         log(`Resultat: ${a.id}`);
       }
     }
@@ -167,7 +180,7 @@ async function historicBacktest(weeks) {
     if (!g) continue;
     if (fs.existsSync(path.join(DIR, "analys", `${g.id}.json`))) continue;
     const raw = await fetchAll(g.id, list);
-    const a = analyzeRaw(raw);
+    const a = await analyzeRaw(raw);
     a.backtestOnly = true;
     writeJson(path.join(DIR, "analys", `${g.id}.json`), a);
   }
@@ -188,7 +201,7 @@ async function main() {
     id ||= readJson(path.join(DIR, "index.json"))?.latest;
     const raw = id && readJson(path.join(DIR, "raw", `${id}.json`));
     if (!raw) throw new Error(`Ingen sparad rådata för ${id || "senaste"} – tryck Hämta data först`);
-    analyzeRaw(raw);
+    await analyzeRaw(raw);
     return;
   }
   let list = null;
@@ -199,7 +212,7 @@ async function main() {
     if (!g) throw new Error(`Inget ${want ? arg("spel") : "V75/V85/V86/V64/V65/DD"}-spel ${date}`);
     id = g.id;
   }
-  analyzeRaw(await fetchAll(id, list));
+  await analyzeRaw(await fetchAll(id, list));
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url))

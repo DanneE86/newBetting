@@ -707,6 +707,8 @@ function startFetch(mode = "sync") {
       `& powershell -NoProfile -ExecutionPolicy Bypass -File '${store}' -SkipDownload`,
       `Write-Host '=== Ledger ==='`,
       `& powershell -NoProfile -ExecutionPolicy Bypass -File '${ledger}'`,
+      `Write-Host '=== Tipslogg ==='`,
+      `& '${process.execPath}' '${path.join(ROOT, "scripts", "tipslogg.mjs")}'`,
       `Write-Host '=== Daily Scanner ==='`,
       `& '${process.execPath}' '${path.join(ROOT, "scripts", "daily-scanner.mjs")}' | Where-Object { $_ -notlike '@@progress*' }`,
       `Write-Host '=== Klart ==='`,

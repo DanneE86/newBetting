@@ -20,6 +20,7 @@ import { calibrationTable, assessMatch, assessmentText } from './lib/stryk-calib
 import { buildRefIndex, loadRefereeMatches, refereeFlags, refereeNotes, buildRefHomeIndex, refereeHomeBias, applyRefereeAway, refereeAwayNotes, resolveTeam } from './lib/referee-streaks.mjs';
 import { coachMatches, buildCoachIndex, coachTenure, applyNewCoach, newCoachNotes } from './lib/coaches.mjs';
 import { streckFlopFlags, streckFlopNotes, streckFlopSeasonList } from './lib/streck-flop.mjs';
+import { logTips, settleTips, strykRecords } from './lib/tipslogg.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const RAW = path.join(root, 'data', 'raw');
@@ -1949,6 +1950,11 @@ async function main() {
       if (!a.open) a.note = `Ingen öppen ${p.name}-kupong just nu – visar senaste omgången (${a.closeDescription}) med facit. Nästa kupong dyker upp här när Svenska Spel öppnar den.`;
       products.push(a);
       saveSnapshot(a);
+      // Tipslogg (data/tipslogg): varje match med enkelrad och kupong A/B/C, forsta versionen last
+      if (a.open) {
+        const c = logTips(a.product, strykRecords(a));
+        log(`  tipslogg: ${c.ny} nya, ${c.andrad} ändrade`);
+      }
       // Arkiv for backtest (data/tips-archive): oppen kupong som den ser ut nu + alla nya avgjorda omgangar
       try {
         const { saveOpenDraw } = await import('./lib/tips-archive.mjs');
@@ -1973,6 +1979,21 @@ async function main() {
       log(`Fel ${p.name}: ${e.message}`);
     }
   }
+  // Facit till tipsloggen: aktuell omgang om den ar avgjord, annars arkivet (data/tips-archive/raw)
+  try {
+    const { readRaw } = await import('./lib/tips-archive.mjs');
+    const current = new Map(products.flatMap((a) => a.events.map((e) => [`${a.product}-${a.drawNumber}-${e.eventNumber}`, e.result])));
+    for (const p of PRODUCTS) {
+      const n = await settleTips(p.id, (rec) => {
+        const cur = current.get(rec.id);
+        if (cur?.outcome) return { outcome: cur.outcome, score: cur.score || null };
+        const ev = readRaw(p.id, rec.draw)?.result?.events?.find((x) => x.eventNumber === rec.event);
+        if (!ev?.outcome) return null;
+        return { outcome: ev.outcome, score: ev.outcomeScore ? `${ev.outcomeScore.home}-${ev.outcomeScore.away}` : null };
+      });
+      if (n) log(`  tipslogg ${p.name}: facit för ${n} matcher`);
+    }
+  } catch (e) { log(`  tipslogg facit: ${e.message}`); }
   log('=== Sparade system ===');
   const history = await updateHistory();
   log(`  ${history.length} sparade, ${history.filter((h) => h.evaluation).length} med facit`);
