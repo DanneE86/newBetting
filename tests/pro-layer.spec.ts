@@ -349,6 +349,9 @@ test('antal kort: tipsen har Ö/U på en Oddset-linje med rimlig prognos', async
     // Nollor från trasig FotMob-data gav förut snitt under 1,5 kort; ingen riktig liga ligger där
     if (!(c.expCards > 1.5 && c.expCards < 9) || !(c.leagueAvg > 2)) bad.push(`${t.match} ${c.expCards}/${c.leagueAvg}`);
     if (!(c.pOver['3.5'] >= c.pOver['4.5'] && c.pOver['4.5'] >= c.pOver['5.5'])) bad.push(`${t.match} pOver ej fallande`);
+    // Båda lagen får kort finns med samma prognos; Ja om chansen >= 50 %
+    const b = t.tips.BOTH_CARDS;
+    if (!b || b.pYes !== c.pBoth || b.pick !== (b.pYes >= 0.5 ? 'JA' : 'NEJ') || !(b.pYes > 0.2 && b.pYes < 0.99)) bad.push(`${t.match} båda kort ${JSON.stringify(b)}`);
   }
   expect(bad).toEqual([]);
 });

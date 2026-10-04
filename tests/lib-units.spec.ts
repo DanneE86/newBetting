@@ -2284,6 +2284,23 @@ test.describe('cards-model: antal kort över/under 3.5/4.5/5.5', () => {
     expect(s.total).toBeGreaterThan(2.5);
   });
 
+  test('båda lagen får kort: P(hemma >= 1) x P(borta >= 1) med kalibrerad nollchans', async () => {
+    const { probBothCards, BOTH_K, buildCardIndex, predictCards } = await lib('cards-model.mjs');
+    expect(BOTH_K).toBe(1.1);
+    // lambda 2 och 1.5, k = 1.1: (1 - e^-2.2)(1 - e^-1.65) = 0.8892 x 0.8080 = 0.7185
+    expect(probBothCards(2, 1.5)).toBeCloseTo(0.7185, 3);
+    expect(probBothCards(2, 1.5, 1)).toBeCloseTo((1 - Math.exp(-2)) * (1 - Math.exp(-1.5)), 6);
+    expect(probBothCards(2, 0)).toBe(0);
+    // Fler kort för ett lag eller hård domare -> högre chans att båda får kort
+    const idx = buildCardIndex(rows, asOf);
+    const base = predictCards(idx, { league: 'X', home: 'A', away: 'B' });
+    const hard = predictCards(idx, { league: 'X', home: 'A', away: 'B', referee: 'Hård' });
+    expect(base.pBoth).toBeGreaterThan(0);
+    expect(base.pBoth).toBeLessThan(1);
+    expect(hard.pBoth).toBeGreaterThan(base.pBoth);
+    expect(base.pBoth).toBeCloseTo(probBothCards(base.lambdaHome, base.lambdaAway), 2);
+  });
+
   test('pickCardLine väljer linjen närmast 50 % och cardsOutcome ger facit', async () => {
     const { pickCardLine, cardsOutcome } = await lib('cards-model.mjs');
     const pk = pickCardLine({ pOver: { '3.5': 0.78, '4.5': 0.58, '5.5': 0.36 } });
@@ -2299,19 +2316,26 @@ test.describe('cards-model: antal kort över/under 3.5/4.5/5.5', () => {
     const { oddsetRecord, oddsetResult, gradeRecord } = await lib('tipslogg.mjs');
     const t = {
       date: '2026-10-04', league: 'PL', home: 'Arsenal', away: 'Leeds',
-      tips: { CARDS: { pick: 'OVER 4.5', line: 4.5, confidence: 0.56, expCards: 4.9, referee: { name: 'A Taylor' } } },
+      tips: { CARDS: { pick: 'OVER 4.5', line: 4.5, confidence: 0.56, expCards: 4.9, referee: { name: 'A Taylor' } }, BOTH_CARDS: { pick: 'JA', pYes: 0.77, confidence: 0.77 } },
     };
     const r = oddsetRecord(t);
     expect(r.tip.markets.CARDS).toEqual({ pick: 'OVER 4.5', line: 4.5, p: 0.56, expCards: 4.9, referee: 'A Taylor' });
     const m = { result: 'H', hg: 2, ag: 0, btts: false, over25: false, discipline: { homeYellow: 2, awayYellow: 2, homeRed: 0, awayRed: 1 } };
     expect(oddsetResult(m).cards).toBe(5);
-    // Utan football-data-kort: FotMob-raden; utan någon kortkälla: ingen cards-nyckel
-    expect(oddsetResult({ ...m, discipline: {} }, 3).cards).toBe(3);
+    expect(oddsetResult(m).BOTH_CARDS).toBe('JA');
+    // Utan football-data-kort: FotMob-raden; utan någon kortkälla: inga kortnycklar
+    expect(oddsetResult({ ...m, discipline: {} }, { home: 3, away: 0 })).toMatchObject({ cards: 3, BOTH_CARDS: 'NEJ' });
     expect('cards' in oddsetResult({ ...m, discipline: {} })).toBe(false);
+    expect('BOTH_CARDS' in oddsetResult({ ...m, discipline: {} })).toBe(false);
     const g = gradeRecord({ product: 'oddset', first: r.tip, result: oddsetResult(m) });
     expect(g.find((x: any) => x.market === 'CARDS')).toMatchObject({ pick: 'OVER 4.5', hit: true, p: 0.56 });
     const miss = gradeRecord({ product: 'oddset', first: r.tip, result: { ...oddsetResult(m), cards: 4 } });
     expect(miss.find((x: any) => x.market === 'CARDS').hit).toBe(false);
     expect(gradeRecord({ product: 'oddset', first: r.tip, result: { '1X2': '1' } }).some((x: any) => x.market === 'CARDS')).toBe(false);
+    // Båda lagen får kort: loggas och rättas mot JA/NEJ
+    expect(r.tip.markets.BOTH_CARDS).toEqual({ pick: 'JA', p: 0.77 });
+    expect(g.find((x: any) => x.market === 'BOTH_CARDS')).toMatchObject({ pick: 'JA', hit: true });
+    const noAway = oddsetResult({ ...m, discipline: { homeYellow: 3, awayYellow: 0, homeRed: 0, awayRed: 0 } });
+    expect(gradeRecord({ product: 'oddset', first: r.tip, result: noAway }).find((x: any) => x.market === 'BOTH_CARDS').hit).toBe(false);
   });
 });

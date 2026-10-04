@@ -245,6 +245,10 @@ function valueFor(tip, mkt, key) {
     const p = cardsP(c, c?.line, key);
     return modelValueCell(p, `${key === "over" ? "Över" : "Under"} ${c?.line} kort`);
   }
+  if (mkt === "BOTH_CARDS") {
+    const pYes = t.BOTH_CARDS?.pYes;
+    return modelValueCell(pYes == null ? null : key === "bc-yes" ? pYes : 1 - pYes, `Båda lagen får kort ${key === "bc-yes" ? "Ja" : "Nej"}`);
+  }
   return `<td class="val"><span class="val-badge val-none">Inga odds</span></td>`;
 }
 
@@ -377,6 +381,8 @@ function detailsHtml(tip) {
     const k = /OVER/i.test(t.CARDS.pick) ? "over" : "under";
     model(`Kort ${k === "over" ? "Över" : "Under"} ${t.CARDS.line}`, cardsP(t.CARDS, t.CARDS.line, k));
   }
+  const bc = t.BOTH_CARDS;
+  if (bc?.pick && bc.pYes != null) model(`Båda lagen får kort ${bc.pick === "JA" ? "Ja" : "Nej"}`, bc.pick === "JA" ? bc.pYes : 1 - bc.pYes);
   if (ouK && !(v[ouK] && v[ouK].value != null)) model(PICK_LABEL[ouK], ouP(tip, ouK));
   if (!items.length) return "";
   return `<details class="tip-details"><summary>Detaljer</summary><ul>${items.join("")}</ul>
@@ -456,6 +462,23 @@ function tipCard(tip, i) {
             )}${c.expCorners != null ? `<div class="odds-src">Proj. ${escapeHtml(String(c.expCorners))} hörn</div>` : ""}</td>
             <td class="num">${fmtChance(confC)}</td>
             ${valueFor(tip, "CORNERS", cornerKey || "over")}
+          </tr>`
+    : "";
+  const bc = t.BOTH_CARDS;
+  const bcKey = bc?.pick === "JA" ? "bc-yes" : bc?.pick === "NEJ" ? "bc-no" : "";
+  const bothCardsRow = bc
+    ? `<tr data-mkt="BOTH_CARDS">
+            <td class="mkt">Båda kort</td>
+            <td>${oddsGroup(
+              [
+                { key: "bc-yes", label: "JA", odd: null },
+                { key: "bc-no", label: "NEJ", odd: null },
+              ],
+              bcKey,
+              "BOTH_CARDS"
+            )}${bc.pYes > 0 && bc.pYes < 1 ? `<div class="odds-src">Spela från – Ja ${modelMin(bc.pYes)} / Nej ${modelMin(1 - bc.pYes)}</div>` : ""}</td>
+            <td class="num">${fmtChance(bc.confidence)}</td>
+            ${valueFor(tip, "BOTH_CARDS", bcKey || "bc-yes")}
           </tr>`
     : "";
   const cardsRow = k
@@ -551,6 +574,7 @@ function tipCard(tip, i) {
           </tr>
           ${cornersRow}
           ${cardsRow}
+          ${bothCardsRow}
         </tbody>
       </table>
       ${od.book ? `<div class="odds-src">Odds: ${escapeHtml(od.book)}</div>` : ""}
