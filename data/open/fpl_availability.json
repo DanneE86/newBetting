@@ -1,10 +1,10 @@
 {
     "source":  "fantasy.premierleague.com/api/bootstrap-static/",
     "league":  "PL",
-    "updatedAt":  "2026-10-01T06:18:12.5560673+02:00",
+    "updatedAt":  "2026-10-04T11:19:47.1900406+02:00",
     "teamCount":  20,
     "playerCount":  667,
-    "missingOrDoubtful":  210,
+    "missingOrDoubtful":  215,
     "keyOuts":  [
                     {
                         "team":  "Bournemouth",
@@ -318,7 +318,7 @@
                                           "news":  "",
                                           "form":  "4.0",
                                           "points":  32,
-                                          "selectedBy":  "13.7"
+                                          "selectedBy":  "13.8"
                                       },
                                       {
                                           "id":  13,
@@ -474,7 +474,7 @@
                                           "news":  "",
                                           "form":  "0.7",
                                           "points":  2,
-                                          "selectedBy":  "3.1"
+                                          "selectedBy":  "3.2"
                                       },
                                       {
                                           "id":  26,
@@ -487,7 +487,7 @@
                                           "news":  "Hamstring injury - 75% chance of playing",
                                           "form":  "3.7",
                                           "points":  19,
-                                          "selectedBy":  "8.3"
+                                          "selectedBy":  "8.2"
                                       },
                                       {
                                           "id":  27,
@@ -534,12 +534,12 @@
                                           "fullName":  "Christos Tzolis",
                                           "position":  "MID",
                                           "team":  "Arsenal",
-                                          "status":  "a",
-                                          "chanceNext":  null,
-                                          "news":  "",
+                                          "status":  "d",
+                                          "chanceNext":  75,
+                                          "news":  "Hamstring injury - 75% chance of playing",
                                           "form":  "3.3",
                                           "points":  16,
-                                          "selectedBy":  "12.2"
+                                          "selectedBy":  "12.0"
                                       }
                                   ],
                       "missingCount":  6,
@@ -636,6 +636,16 @@
                                                     "news":  "Has joined FC Barcelona permanently",
                                                     "severity":  "out",
                                                     "isKey":  false
+                                                },
+                                                {
+                                                    "team":  "Arsenal",
+                                                    "player":  "Tzolis",
+                                                    "position":  "MID",
+                                                    "status":  "d",
+                                                    "chanceNext":  75,
+                                                    "news":  "Hamstring injury - 75% chance of playing",
+                                                    "severity":  "doubtful",
+                                                    "isKey":  true
                                                 }
                                             ]
                   },
@@ -1752,7 +1762,7 @@
                                           "news":  "Calf injury - Unknown return date",
                                           "form":  "0.3",
                                           "points":  10,
-                                          "selectedBy":  "1.0"
+                                          "selectedBy":  "0.9"
                                       },
                                       {
                                           "id":  85,
@@ -1869,7 +1879,7 @@
                                           "news":  "",
                                           "form":  "8.7",
                                           "points":  39,
-                                          "selectedBy":  "11.5"
+                                          "selectedBy":  "11.7"
                                       },
                                       {
                                           "id":  95,
@@ -1890,9 +1900,9 @@
                                           "fullName":  "Mikkel Damsgaard",
                                           "position":  "MID",
                                           "team":  "Brentford",
-                                          "status":  "a",
-                                          "chanceNext":  null,
-                                          "news":  "",
+                                          "status":  "d",
+                                          "chanceNext":  75,
+                                          "news":  "Unspecified injury - 75% chance of playing",
                                           "form":  "4.0",
                                           "points":  16,
                                           "selectedBy":  "0.4"
@@ -2121,6 +2131,16 @@
                                                 },
                                                 {
                                                     "team":  "Brentford",
+                                                    "player":  "Damsgaard",
+                                                    "position":  "MID",
+                                                    "status":  "d",
+                                                    "chanceNext":  75,
+                                                    "news":  "Unspecified injury - 75% chance of playing",
+                                                    "severity":  "doubtful",
+                                                    "isKey":  true
+                                                },
+                                                {
+                                                    "team":  "Brentford",
                                                     "player":  "Jensen",
                                                     "position":  "MID",
                                                     "status":  "i",
@@ -2229,7 +2249,7 @@
                                           "news":  "",
                                           "form":  "7.0",
                                           "points":  38,
-                                          "selectedBy":  "27.8"
+                                          "selectedBy":  "27.9"
                                       },
                                       {
                                           "id":  116,
@@ -2346,7 +2366,7 @@
                                           "news":  "",
                                           "form":  "10.7",
                                           "points":  47,
-                                          "selectedBy":  "28.9"
+                                          "selectedBy":  "29.2"
                                       },
                                       {
                                           "id":  125,
@@ -2385,7 +2405,7 @@
                                           "news":  "",
                                           "form":  "4.3",
                                           "points":  24,
-                                          "selectedBy":  "4.0"
+                                          "selectedBy":  "3.9"
                                       },
                                       {
                                           "id":  128,
@@ -2502,7 +2522,7 @@
                                           "news":  "",
                                           "form":  "7.3",
                                           "points":  28,
-                                          "selectedBy":  "4.1"
+                                          "selectedBy":  "4.3"
                                       },
                                       {
                                           "id":  139,
@@ -2834,7 +2854,7 @@
                                           "news":  "",
                                           "form":  "5.3",
                                           "points":  29,
-                                          "selectedBy":  "40.5"
+                                          "selectedBy":  "40.6"
                                       },
                                       {
                                           "id":  101,
@@ -2925,7 +2945,7 @@
                                           "news":  "",
                                           "form":  "0.7",
                                           "points":  4,
-                                          "selectedBy":  "1.0"
+                                          "selectedBy":  "0.9"
                                       },
                                       {
                                           "id":  145,
@@ -3029,7 +3049,7 @@
                                           "news":  "Muscular injury - 75% chance of playing",
                                           "form":  "2.7",
                                           "points":  28,
-                                          "selectedBy":  "25.7"
+                                          "selectedBy":  "25.5"
                                       },
                                       {
                                           "id":  156,
@@ -3133,7 +3153,7 @@
                                           "news":  "Knee injury - 75% chance of playing",
                                           "form":  "4.3",
                                           "points":  33,
-                                          "selectedBy":  "65.1"
+                                          "selectedBy":  "65.0"
                                       },
                                       {
                                           "id":  168,
@@ -4716,7 +4736,7 @@
                                           "news":  "",
                                           "form":  "8.3",
                                           "points":  43,
-                                          "selectedBy":  "16.5"
+                                          "selectedBy":  "16.7"
                                       },
                                       {
                                           "id":  230,
@@ -4763,9 +4783,9 @@
                                           "fullName":  "Vitalii Mykolenko",
                                           "position":  "DEF",
                                           "team":  "Everton",
-                                          "status":  "a",
-                                          "chanceNext":  null,
-                                          "news":  "",
+                                          "status":  "d",
+                                          "chanceNext":  75,
+                                          "news":  "Leg injury - 75% chance of playing",
                                           "form":  "5.7",
                                           "points":  27,
                                           "selectedBy":  "4.2"
@@ -4807,7 +4827,7 @@
                                           "news":  "",
                                           "form":  "2.3",
                                           "points":  20,
-                                          "selectedBy":  "6.0"
+                                          "selectedBy":  "5.9"
                                       },
                                       {
                                           "id":  238,
@@ -4983,6 +5003,16 @@
                                                 },
                                                 {
                                                     "team":  "Everton",
+                                                    "player":  "Mykolenko",
+                                                    "position":  "DEF",
+                                                    "status":  "d",
+                                                    "chanceNext":  75,
+                                                    "news":  "Leg injury - 75% chance of playing",
+                                                    "severity":  "doubtful",
+                                                    "isKey":  true
+                                                },
+                                                {
+                                                    "team":  "Everton",
                                                     "player":  "Patterson",
                                                     "position":  "DEF",
                                                     "status":  "u",
@@ -5143,7 +5173,7 @@
                                           "news":  "",
                                           "form":  "2.7",
                                           "points":  20,
-                                          "selectedBy":  "0.9"
+                                          "selectedBy":  "1.0"
                                       },
                                       {
                                           "id":  261,
@@ -5234,7 +5264,7 @@
                                           "news":  "",
                                           "form":  "5.0",
                                           "points":  24,
-                                          "selectedBy":  "2.6"
+                                          "selectedBy":  "2.7"
                                       },
                                       {
                                           "id":  269,
@@ -5537,7 +5567,7 @@
                                           "news":  "",
                                           "form":  "2.3",
                                           "points":  27,
-                                          "selectedBy":  "14.0"
+                                          "selectedBy":  "13.9"
                                       },
                                       {
                                           "id":  280,
@@ -5628,7 +5658,7 @@
                                           "news":  "",
                                           "form":  "7.3",
                                           "points":  31,
-                                          "selectedBy":  "5.1"
+                                          "selectedBy":  "5.2"
                                       },
                                       {
                                           "id":  287,
@@ -6279,7 +6309,7 @@
                                           "news":  "",
                                           "form":  "5.7",
                                           "points":  25,
-                                          "selectedBy":  "6.9"
+                                          "selectedBy":  "7.0"
                                       },
                                       {
                                           "id":  306,
@@ -6422,7 +6452,7 @@
                                           "news":  "",
                                           "form":  "5.3",
                                           "points":  26,
-                                          "selectedBy":  "3.5"
+                                          "selectedBy":  "3.6"
                                       },
                                       {
                                           "id":  317,
@@ -6821,7 +6851,7 @@
                                           "news":  "",
                                           "form":  "11.3",
                                           "points":  42,
-                                          "selectedBy":  "7.2"
+                                          "selectedBy":  "7.3"
                                       },
                                       {
                                           "id":  331,
@@ -7486,7 +7516,7 @@
                                           "news":  "Ankle injury - 75% chance of playing",
                                           "form":  "5.0",
                                           "points":  32,
-                                          "selectedBy":  "12.4"
+                                          "selectedBy":  "12.3"
                                       },
                                       {
                                           "id":  368,
@@ -7499,7 +7529,7 @@
                                           "news":  "",
                                           "form":  "2.7",
                                           "points":  20,
-                                          "selectedBy":  "32.8"
+                                          "selectedBy":  "32.7"
                                       },
                                       {
                                           "id":  369,
@@ -7642,7 +7672,7 @@
                                           "news":  "Thigh injury - 75% chance of playing",
                                           "form":  "7.7",
                                           "points":  33,
-                                          "selectedBy":  "22.4"
+                                          "selectedBy":  "22.2"
                                       },
                                       {
                                           "id":  380,
@@ -7913,12 +7943,12 @@
                                           "fullName":  "Nico O\u0027Reilly",
                                           "position":  "DEF",
                                           "team":  "Man City",
-                                          "status":  "a",
-                                          "chanceNext":  100,
-                                          "news":  "",
+                                          "status":  "d",
+                                          "chanceNext":  75,
+                                          "news":  "Unspecified injury - 75% chance of playing",
                                           "form":  "0.7",
                                           "points":  6,
-                                          "selectedBy":  "10.9"
+                                          "selectedBy":  "10.8"
                                       },
                                       {
                                           "id":  388,
@@ -7970,7 +8000,7 @@
                                           "news":  "",
                                           "form":  "7.7",
                                           "points":  37,
-                                          "selectedBy":  "26.8"
+                                          "selectedBy":  "26.9"
                                       },
                                       {
                                           "id":  392,
@@ -8048,7 +8078,7 @@
                                           "news":  "Ankle injury - 75% chance of playing",
                                           "form":  "8.7",
                                           "points":  33,
-                                          "selectedBy":  "15.3"
+                                          "selectedBy":  "15.2"
                                       },
                                       {
                                           "id":  398,
@@ -8191,7 +8221,7 @@
                                           "news":  "",
                                           "form":  "8.0",
                                           "points":  39,
-                                          "selectedBy":  "73.8"
+                                          "selectedBy":  "73.9"
                                       },
                                       {
                                           "id":  481,
@@ -8290,6 +8320,16 @@
                                          "Foden"
                                      ],
                       "availabilityFlags":  [
+                                                {
+                                                    "team":  "Man City",
+                                                    "player":  "O\u0027Reilly",
+                                                    "position":  "DEF",
+                                                    "status":  "d",
+                                                    "chanceNext":  75,
+                                                    "news":  "Unspecified injury - 75% chance of playing",
+                                                    "severity":  "doubtful",
+                                                    "isKey":  true
+                                                },
                                                 {
                                                     "team":  "Man City",
                                                     "player":  "Alleyne",
@@ -8645,7 +8685,7 @@
                                           "news":  "",
                                           "form":  "4.0",
                                           "points":  25,
-                                          "selectedBy":  "20.6"
+                                          "selectedBy":  "20.5"
                                       },
                                       {
                                           "id":  428,
@@ -8671,7 +8711,7 @@
                                           "news":  "Unspecified injury - 75% chance of playing",
                                           "form":  "2.3",
                                           "points":  10,
-                                          "selectedBy":  "1.5"
+                                          "selectedBy":  "1.4"
                                       },
                                       {
                                           "id":  430,
@@ -9087,7 +9127,7 @@
                                           "news":  "",
                                           "form":  "5.7",
                                           "points":  31,
-                                          "selectedBy":  "17.3"
+                                          "selectedBy":  "17.4"
                                       },
                                       {
                                           "id":  450,
@@ -9126,7 +9166,7 @@
                                           "news":  "",
                                           "form":  "7.7",
                                           "points":  28,
-                                          "selectedBy":  "5.7"
+                                          "selectedBy":  "5.8"
                                       },
                                       {
                                           "id":  454,
@@ -9186,9 +9226,9 @@
                                           "fullName":  "Lewis Miley",
                                           "position":  "MID",
                                           "team":  "Newcastle",
-                                          "status":  "a",
-                                          "chanceNext":  100,
-                                          "news":  "",
+                                          "status":  "d",
+                                          "chanceNext":  75,
+                                          "news":  "Unspecified injury - 75% chance of playing",
                                           "form":  "2.0",
                                           "points":  12,
                                           "selectedBy":  "0.1"
@@ -9491,6 +9531,16 @@
                                                     "news":  "Unspecified injury - Unknown return date",
                                                     "severity":  "out",
                                                     "isKey":  false
+                                                },
+                                                {
+                                                    "team":  "Newcastle",
+                                                    "player":  "L.Miley",
+                                                    "position":  "MID",
+                                                    "status":  "d",
+                                                    "chanceNext":  75,
+                                                    "news":  "Unspecified injury - 75% chance of playing",
+                                                    "severity":  "doubtful",
+                                                    "isKey":  true
                                                 },
                                                 {
                                                     "team":  "Newcastle",
@@ -10565,7 +10615,7 @@
                                           "news":  "",
                                           "form":  "2.7",
                                           "points":  8,
-                                          "selectedBy":  "0.7"
+                                          "selectedBy":  "0.6"
                                       },
                                       {
                                           "id":  455,
@@ -10617,7 +10667,7 @@
                                           "news":  "",
                                           "form":  "5.0",
                                           "points":  18,
-                                          "selectedBy":  "17.3"
+                                          "selectedBy":  "17.2"
                                       },
                                       {
                                           "id":  497,

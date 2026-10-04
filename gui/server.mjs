@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 import { spawn } from "node:child_process";
 import { handleStryktips } from "./stryktips-routes.mjs";
 import { handleHastar } from "./hastar-routes.mjs";
+import { nextRoundsFromFixtures, filterNextRoundOnly } from "../scripts/lib/next-round.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
@@ -235,63 +236,6 @@ function prepareTips(list, lineupMap, roundMap) {
     })
     .filter((t) => !isFinished(t, now))
     .sort((a, b) => kickSortValue(a) - kickSortValue(b) || (b.tipScore || 0) - (a.tipScore || 0));
-}
-
-/** Nastaa omgang per liga fran upcoming-fixtures (kalla till sanning). */
-function nextRoundsFromFixtures(fixtures, now = new Date()) {
-  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-  const byLeague = new Map(); // league -> { dateMs, round }
-  for (const fx of fixtures || []) {
-    if (!fx?.league || !fx?.date) continue;
-    const day = new Date(`${fx.date}T00:00:00`);
-    if (Number.isNaN(day.getTime()) || day < today) continue;
-    const ms = day.getTime();
-    const cur = byLeague.get(fx.league);
-    if (!cur || ms < cur.dateMs) {
-      byLeague.set(fx.league, { dateMs: ms, round: fx.round || null, date: fx.date });
-    } else if (cur && ms === cur.dateMs && !cur.round && fx.round) {
-      cur.round = fx.round;
-    }
-  }
-  const out = new Map();
-  for (const [lg, v] of byLeague) {
-    out.set(lg, v.round ? { type: "round", value: String(v.round) } : { type: "date", value: v.date });
-  }
-  return out;
-}
-
-/** Behall bara nasta omgang per liga (inte omgangen efter). */
-function filterNextRoundOnly(list, nextByLeague) {
-  if (!list?.length) return [];
-  // Om fixtures saknas: fall tillbaka till tidigaste tip per liga
-  const nextRound = nextByLeague?.size
-    ? nextByLeague
-    : (() => {
-        const m = new Map();
-        for (const t of list) {
-          if (!t.league || m.has(t.league)) continue;
-          if (t.round) m.set(t.league, { type: "round", value: String(t.round) });
-          else m.set(t.league, { type: "date", value: t.date });
-        }
-        return m;
-      })();
-
-  // Ligor utan spelschema (t.ex. Superettan, bara odds): tidigaste datum bland ligans tips
-  const earliest = new Map();
-  for (const t of list) {
-    if (t.league && t.date && (!earliest.has(t.league) || t.date < earliest.get(t.league))) earliest.set(t.league, t.date);
-  }
-  return list.filter((t) => {
-    const nr = nextRound.get(t.league) ?? (earliest.has(t.league) ? { type: "date", value: earliest.get(t.league) } : null);
-    if (!nr) return false;
-    if (nr.type === "round") return String(t.round || "") === nr.value;
-    if (!t.date || !nr.value) return false;
-    const first = new Date(`${nr.value}T00:00:00`).getTime();
-    const day = new Date(`${t.date}T00:00:00`).getTime();
-    if (Number.isNaN(first) || Number.isNaN(day)) return false;
-    const diffDays = (day - first) / (24 * 60 * 60 * 1000);
-    return diffDays >= 0 && diffDays <= 3;
-  });
 }
 
 function buildRoundMap(fixtures) {

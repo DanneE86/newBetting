@@ -1,6 +1,6 @@
 # Premier League (PL) – lärdomar
 
-Genererad 2026-09-29 av `node scripts/analyze-learnings.mjs`. Skriv inte för hand här: egna anteckningar läggs i `docs/lardomar/anteckningar/PL.md`.
+Genererad 2026-10-04 av `node scripts/analyze-learnings.mjs`. Skriv inte för hand här: egna anteckningar läggs i `docs/lardomar/anteckningar/PL.md`.
 
 Underlag: 3470 matcher, säsong 2017/18 – 2026/27. Marknad = stängningsodds utan marginal (Pinnacle, annars snitt av bolagen), öppningsodds finns för 3470 matcher. xG: Understat (100 % av matcherna).
 
@@ -87,7 +87,7 @@ Källa: backtesten i `data/stryktips-backtest-2526-steg3.json`, `data/stryktips-
 
 | Mått | Värde |
 |---|---|
-| Logloss slutprocent / marknad / folket / lagmodell | 0,995 / 0,994 / 1,016 / 1,022 |
+| Logloss slutprocent / marknad / folket / lagmodell | 0,995 / 0,994 / 1,016 / 1,021 |
 | Folket streckar favoriten | ×1,13 av vår sannolikhet |
 | Kryss: utfall / vår procent / folket | 26,6 % / 24,9 % / 22,3 % |
 | Favoriter ≥ 55 %: höll / väntat | 68,1 % / 64,4 % (n 113) |
@@ -101,7 +101,7 @@ Källa: backtesten i `data/stryktips-backtest-2526-steg3.json`, `data/stryktips-
 - Folket överstreckar favoriter (×1,13). Utdelningsgränsen fångar det redan, men garderingar mot favoriter i ligan ger mer i utdelning.
 - Folket streckar kryss 2,6 procentenheter under vår procent. Kryss ger streckvärde.
 
-## Tabell nu (FotMob, 2026-09-29)
+## Tabell nu (FotMob, 2026-10-04)
 
 | # | Lag | M | V | O | F | Mål | +/− | P |
 |---|---|---|---|---|---|---|---|---|

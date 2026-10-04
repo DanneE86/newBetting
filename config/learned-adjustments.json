@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-28T19:28:40.068Z",
+  "generatedAt": "2026-10-04T09:45:30.650Z",
   "note": "Genererad av scripts/learnings-model.mjs. Bara delar som valdes pa validering och forbattrade kontrollperioden (2023/24-) ar med. Refittad pa all data.",
   "open": {
     "rule": "ligakalibrering, alla ligor, inga signaler",
     "test": {
       "dLL": -0.0006,
-      "z": -2.04,
-      "n": 17078,
+      "z": -2.03,
+      "n": 17079,
       "bets": {
         "bets": 4248,
         "roi": 0.078,
@@ -119,10 +119,10 @@
           "z": -1.46
         },
         "LL2": {
-          "n": 1462,
+          "n": 1463,
           "dLL": 0.0001,
           "se": 0.001,
-          "z": 0.13
+          "z": 0.15
         },
         "PL": {
           "n": 1190,
@@ -229,9 +229,9 @@
         "d": 0.0725
       },
       "LL2": {
-        "g": 0.0685,
-        "h": 0.047,
-        "d": 0.046
+        "g": 0.0694,
+        "h": 0.046,
+        "d": 0.0454
       },
       "GR": {
         "g": 0.1332,
@@ -248,6 +248,28 @@
         "h": -0.0374,
         "d": 0.1178
       }
+    }
+  },
+  "altitude": {
+    "MX": {
+      "b": 0.26,
+      "test": {
+        "dLL": -0.0007,
+        "z": -0.48,
+        "n": 1101,
+        "nAlt": 221
+      },
+      "rule": "hemmalagets logit +b/2, bortalagets -b/2 när arenan ligger ≥ 1500 m och bortalaget kommer från minst 1000 m lägre"
+    },
+    "MLS": {
+      "b": 0.08,
+      "test": {
+        "dLL": 0,
+        "z": -0.44,
+        "n": 1708,
+        "nAlt": 52
+      },
+      "rule": "hemmalagets logit +b/2, bortalagets -b/2 när arenan ligger ≥ 1500 m och bortalaget kommer från minst 1000 m lägre"
     }
   }
 }

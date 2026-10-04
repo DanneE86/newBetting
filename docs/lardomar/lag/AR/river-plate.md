@@ -1,10 +1,13 @@
 # River Plate (Liga Profesional) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Stark historik mot Rosario Central (−0,51 p/match mot marknaden, 17 möten), Huracan (−0,52 p/match mot marknaden, 10 möten), San Lorenzo (−0,63 p/match mot marknaden, 10 möten), Defensa y Justicia (−0,64 p/match mot marknaden, 7 möten), Newells Old Boys (+0,77 p/match mot marknaden, 7 möten), Tigre (−0,83 p/match mot marknaden, 7 möten), Aldosivi (+0,70 p/match mot marknaden, 6 möten), Central Cordoba (+0,73 p/match mot marknaden, 6 möten), Instituto (+0,69 p/match mot marknaden, 6 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Spelstil 2026: Bollinnehav, Blandat, Medel på fasta, Medel mot fasta. Bäst mot Mellanpress (+0,18, svagt), Blandat (+0,14, samma håll i båda halvorna men svagt), Medel mot fasta (+0,10, svagt). Svårast mot Högpress (−0,14, samma håll i båda halvorna men svagt), Kortpass (−0,13, svagt), Bollinnehav (−0,12, svagt). Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2026: 0,13 mål för per match (xG 0,32), 0,23 emot (xG 0,16), 5,3 hörnor.
+- Svårt för: Tigre (2-1-4, 1,00 p/match, mot marknaden −0,83), Talleres Cordoba (4-2-5, 1,27 p/match, mot marknaden −0,49), Defensa y Justicia (2-3-2, 1,29 p/match, mot marknaden −0,64), San Lorenzo (3-5-2, 1,40 p/match, mot marknaden −0,63), Huracan (4-2-4, 1,40 p/match, mot marknaden −0,52), Rosario Central (6-6-5, 1,41 p/match, mot marknaden −0,51), Velez Sarsfield (4-5-3, 1,42 p/match, mot marknaden −0,33), Atl. Tucuman (5-6-2, 1,62 p/match, mot marknaden −0,38).
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -36,6 +39,52 @@ Form (äldst → senast): FFVOVVVF · senaste match 2026-09-19
 | 2024 | AR | 42 | 1,67 | −0,26 (−0,21 / −0,31) | 38 % (25 %) | 1,57–0,81 | – | – |
 | 2025 | AR | 35 | 1,63 | −0,18 (−0,24 / −0,11) | 34 % (27 %) | 1,34–0,80 | – | – |
 | 2026 | AR | 30 | 1,63 | −0,24 (−0,36 / −0,06) | 13 % (28 %) | 1,37–0,93 | – | – |
+
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/AR.md#river-plate) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2026: **Bollinnehav, Blandat, Medel på fasta, Medel mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026 | 30 | 0,13 | 0,32 | 0,23 | 0,16 | 5,3 |
+| 2025 | 35 | 0,80 | 0,15 | – | – | 4,9 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Backar hem | 60 | 1,57–0,82 | −0,13 | +0,01 (0,1) | +5 pe | – | svag |
+| Balanserat | 88 | 1,59–0,83 | −0,09 | +0,05 (0,4) | −6 pe | – | svag |
+| Bollinnehav | 41 | 1,66–1,02 | −0,27 | −0,12 (−0,6) | +3 pe | – | svag |
+| Kortpass | 46 | 1,46–0,87 | −0,27 | −0,13 (−0,7) | +6 pe | – | svag |
+| Blandat | 85 | 1,59–0,85 | −0,00 | +0,14 (1,0) | −0 pe | – | ✔ samma håll |
+| Direktspel | 58 | 1,72–0,90 | −0,25 | −0,10 (−0,6) | −6 pe | – | ✔ samma håll |
+| Lågpress | 64 | 1,30–0,83 | −0,18 | −0,04 (−0,3) | −3 pe | – | svag |
+| Mellanpress | 63 | 1,87–0,83 | +0,04 | +0,18 (1,1) | −7 pe | – | svag |
+| Högpress | 62 | 1,63–0,95 | −0,28 | −0,14 (−1,0) | +9 pe | – | ✔ samma håll |
+| Svag på fasta | 69 | 1,55–0,75 | −0,10 | +0,04 (0,3) | −3 pe | – | svag |
+| Medel på fasta | 53 | 1,53–0,87 | −0,24 | −0,10 (−0,6) | +16 pe | – | svag |
+| Farlig på fasta | 43 | 1,81–0,95 | −0,05 | +0,09 (0,5) | −9 pe | – | svag |
+| Stark mot fasta | 56 | 1,89–0,88 | −0,14 | −0,00 (−0,0) | +1 pe | – | svag |
+| Medel mot fasta | 66 | 1,64–0,89 | −0,04 | +0,10 (0,6) | +5 pe | – | svag |
+| Svag mot fasta | 38 | 1,29–0,74 | −0,25 | −0,11 (−0,5) | −0 pe | – | ✔ samma håll |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
+
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 2 | 1-0-1 | 1,50 | −0,66 |
+| Efter uppehåll sedan 2023 | 0 | – | – | – |
+| Övriga matcher | 487 | 244-129-114 | 1,77 | −0,09 |
+
+Hela ligan efter uppehåll: 0,00 mot marknaden (n 66). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2019-09-15 | Huracan - River Plate | 0-4 V | +0,61 |
+| 2012-10-21 | Quilmes - River Plate | 1-0 F | −1,94 |
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -72,37 +121,39 @@ Form (äldst → senast): FFVOVVVF · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): Tigre 1,00 p/match (−0,83), Talleres Cordoba 1,27 p/match (−0,49), Defensa y Justicia 1,29 p/match (−0,64), San Lorenzo 1,40 p/match (−0,63), Huracan 1,40 p/match (−0,52), Rosario Central 1,41 p/match (−0,51), Velez Sarsfield 1,42 p/match (−0,33), Atl. Tucuman 1,62 p/match (−0,38).
+
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Leonardo Ponzio. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Juan Carlos Portillo (skadad, åter Late October 2026), Aníbal Moreno (skadad, åter About 1-2 weeks), Thiago Almada (skadad, åter Mid October 2026), Agustín Ruberto (skadad, åter Late January 2027)
+**Skadade/borta nu:** Juan Carlos Portillo (skadad, åter Late October 2026), Aníbal Moreno (osäker), Thiago Almada (skadad, åter Mid October 2026), Agustín Ruberto (skadad, åter Late January 2027)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 33 | Ezequiel Centurión | GK | 29 | Argentina | 933 k€ | – | 0 | 0 | 0/0 |  |
-| 41 | Santiago Beltrán | GK | 21 | Argentina | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 33 | Ezequiel Centurión | GK | 29 | Argentina | 927 k€ | – | 0 | 0 | 0/0 |  |
+| 41 | Santiago Beltrán | GK | 22 | Argentina | 3,9 M€ | – | 0 | 0 | 0/0 |  |
 | 42 | Franco Jaroszewicz | Keeper | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Tobías Ramírez | CB | 19 | Argentina | 3,8 M€ | – | 0 | 0 | 0/0 |  |
-| 3 | Francisco Ortega | LB | 27 | Argentina | 3,6 M€ | – | 0 | 0 | 0/0 |  |
-| 13 | Lautaro Rivero | CB,LB | 22 | Argentina | 5,8 M€ | – | 0 | 0 | 0/0 |  |
+| 2 | Tobías Ramírez | CB | 19 | Argentina | 5,6 M€ | – | 0 | 0 | 0/0 |  |
+| 3 | Francisco Ortega | LB | 27 | Argentina | 6,5 M€ | – | 0 | 0 | 0/0 |  |
+| 13 | Lautaro Rivero | CB,LB | 22 | Argentina | 9,3 M€ | – | 0 | 0 | 0/0 |  |
 | 20 | Giovanni González | RB | 32 | Uruguay | 1,4 M€ | – | 0 | 0 | 0/0 |  |
-| 21 | Marcos Acuña | LB | 34 | Argentina | 910 k€ | – | 0 | 0 | 0/0 |  |
+| 21 | Marcos Acuña | LB | 34 | Argentina | 928 k€ | – | 0 | 0 | 0/0 |  |
 | 28 | Lucas Martínez Quarta | CB | 30 | Argentina | 2,7 M€ | – | 0 | 0 | 0/0 |  |
 | 29 | Gonzalo Montiel | RB | 29 | Argentina | 2,7 M€ | – | 0 | 0 | 0/0 |  |
 | 30 | Nicolás Otamendi | CB | 38 | Argentina | 1,2 M€ | – | 0 | 0 | 0/0 |  |
-| 31 | Facundo González | LB | 20 | Argentina | 691 k€ | – | 0 | 0 | 0/0 |  |
+| 31 | Facundo González | LB | 20 | Argentina | 675 k€ | – | 0 | 0 | 0/0 |  |
 | 40 | Agustín Obregón | Defender | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 53 | Thiago Salvatierra | Defender | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 5 | Juan Carlos Portillo | CM,CDM | 26 | Argentina | 2,4 M€ | – | 0 | 0 | 0/0 | skadad, åter Late October 2026 |
-| 6 | Aníbal Moreno | CDM,CM | 27 | Argentina | 5,6 M€ | – | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
-| 8 | Mauro Arambarri | CM,CDM | 30 | Uruguay | 7,2 M€ | – | 0 | 0 | 0/0 |  |
-| 10 | Ángel Correa | CAM,ST,RW,LW,LM | 31 | Argentina | 3,7 M€ | – | 0 | 0 | 0/0 |  |
+| 5 | Juan Carlos Portillo | CDM,CM | 26 | Argentina | 2,4 M€ | – | 0 | 0 | 0/0 | skadad, åter Late October 2026 |
+| 6 | Aníbal Moreno | CDM,CM | 27 | Argentina | 8,7 M€ | – | 0 | 0 | 0/0 | osäker |
+| 8 | Mauro Arambarri | CM,CDM | 31 | Uruguay | 6,1 M€ | – | 0 | 0 | 0/0 |  |
+| 10 | Ángel Correa | CAM,ST,RW,LW,LM | 31 | Argentina | 5,6 M€ | – | 0 | 0 | 0/0 |  |
 | 15 | Fausto Vera | CDM,CM,CAM | 26 | Argentina | 2,9 M€ | – | 0 | 0 | 0/0 |  |
-| 23 | Thiago Almada | LM,LW,CM,CAM,ST,CDM | 25 | Argentina | 16,2 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 23 | Thiago Almada | LM,LW,CM,CAM,ST,CDM | 25 | Argentina | 22,4 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 25 | Lautaro Pereyra | CAM | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 27 | Santiago Espíndola | Midfielder | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 37 | Thiago Acosta | CM | 21 | Argentina | 593 k€ | – | 0 | 0 | 0/0 |  |
@@ -112,11 +163,11 @@ Tränare: Leonardo Ponzio. Betyg, mål och assist gäller innevarande säsong en
 | | **Anfallare** | | | | | | | | | |
 |  | Alexis González | RW | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |
 |  | Tobias Goytia | Attacker | 17 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 9 | Sebastián Driussi | ST | 30 | Argentina | 2,6 M€ | – | 0 | 0 | 0/0 |  |
-| 18 | Lucas Beltrán | ST | 25 | Argentina | 11,3 M€ | – | 0 | 0 | 0/0 |  |
-| 19 | Rafael Borré | ST | 31 | Colombia | 2,3 M€ | – | 0 | 0 | 0/0 |  |
-| 24 | Juan Cruz Meza | RW,CM | 18 | Argentina | 1,7 M€ | – | 0 | 0 | 0/0 |  |
-| 26 | Tomás Galván | LW,CAM,RW,CDM,RM | 26 | Argentina | 2,6 M€ | – | 0 | 0 | 0/0 |  |
-| 32 | Agustín Ruberto | ST | 20 | Argentina | 1,8 M€ | – | 0 | 0 | 0/0 | skadad, åter Late January 2027 |
+| 9 | Sebastián Driussi | ST | 30 | Argentina | 2,7 M€ | – | 0 | 0 | 0/0 |  |
+| 18 | Lucas Beltrán | ST | 25 | Argentina | 10,2 M€ | – | 0 | 0 | 0/0 |  |
+| 19 | Rafael Borré | ST | 31 | Colombia | 2,4 M€ | – | 0 | 0 | 0/0 |  |
+| 24 | Juan Cruz Meza | RW,CM | 18 | Argentina | 4,5 M€ | – | 0 | 0 | 0/0 |  |
+| 26 | Tomás Galván | LW,CAM,RW,CDM,RM | 26 | Argentina | 2,7 M€ | – | 0 | 0 | 0/0 |  |
+| 32 | Agustín Ruberto | ST | 20 | Argentina | 1,7 M€ | – | 0 | 0 | 0/0 | skadad, åter Late January 2027 |
 | 47 | Felipe Esquivel | Attacker | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 50 | Tobías Andrada | RW,CDM | 19 | Argentina | 6,3 M€ | – | 0 | 0 | 0/0 |  |
+| 50 | Tobías Andrada | RW,CDM | 19 | Argentina | 12,6 M€ | – | 0 | 0 | 0/0 |  |

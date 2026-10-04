@@ -1,11 +1,14 @@
 # Crewe (League Two) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Senaste 8: xG-målskillnaden är −0,68 per match sämre än målskillnaden.
-- Stark historik mot Swindon (+0,58 p/match mot marknaden, 14 möten), Crawley Town (+1,04 p/match mot marknaden, 11 möten), Newport County (−0,56 p/match mot marknaden, 10 möten), Tranmere (+0,63 p/match mot marknaden, 10 möten), Shrewsbury (+0,70 p/match mot marknaden, 7 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Stark historik mot Crawley Town (+1,04 p/match mot marknaden, 11 möten), Newport County (−0,56 p/match mot marknaden, 10 möten), Tranmere (+0,63 p/match mot marknaden, 10 möten), Shrewsbury (+0,70 p/match mot marknaden, 7 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Spelstil 2025/26: Balanserat, Blandat, Lågpress, Farlig på fasta, Medel mot fasta. Bäst mot Stark mot fasta (+0,18, samma håll i båda halvorna men svagt), Mellanpress (+0,12, samma håll i båda halvorna men svagt), Balanserat (+0,11, samma håll i båda halvorna men svagt). Svårast mot Högpress (−0,16, samma håll i båda halvorna men svagt), Medel mot fasta (−0,13, samma håll i båda halvorna men svagt), Backar hem (−0,14, samma håll i båda halvorna men svagt). Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2025/26: 0,41 mål för per match (xG 0,41), 0,24 emot (xG 0,36), 4,9 hörnor.
+- Svårt för: Newport County (2-3-5, 0,90 p/match, mot marknaden −0,56), Accrington (3-2-5, 1,10 p/match, mot marknaden −0,39), Walsall (3-4-4, 1,18 p/match, mot marknaden −0,03). Där marknaden ligger nära noll är laget bara sämre i de mötena än annars, och oddsen vet redan om det.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -34,11 +37,58 @@ Form (äldst → senast): VVOOOOOO · senaste match 2026-09-26
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
 
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/EL2.md#crewe) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2025/26: **Balanserat, Blandat, Lågpress, Farlig på fasta, Medel mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026/27 | 9 | 0,11 | 0,34 | 0,11 | 0,30 | 5,2 |
+| 2025/26 | 46 | 0,41 | 0,41 | 0,24 | 0,36 | 4,9 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Backar hem | 86 | 1,20–1,37 | −0,11 | −0,14 (−1,0) | −3 pe | −2 pe | ✔ samma håll |
+| Balanserat | 117 | 1,15–1,20 | +0,13 | +0,11 (1,0) | +7 pe | −9 pe | ✔ samma håll |
+| Bollinnehav | 64 | 1,13–1,48 | +0,00 | −0,02 (−0,1) | +0 pe | −11 pe | svag |
+| Kortpass | 62 | 1,19–1,24 | +0,14 | +0,11 (0,8) | +4 pe | −12 pe | ✔ samma håll |
+| Blandat | 110 | 1,17–1,29 | +0,04 | +0,02 (0,1) | +3 pe | −5 pe | svag |
+| Direktspel | 95 | 1,12–1,41 | −0,07 | −0,09 (−0,8) | +1 pe | −6 pe | ✔ samma håll |
+| Lågpress | 78 | 1,21–1,37 | +0,03 | +0,00 (0,0) | +0 pe | −5 pe | svag |
+| Mellanpress | 105 | 1,18–1,27 | +0,15 | +0,12 (1,1) | +3 pe | −6 pe | ✔ samma håll |
+| Högpress | 84 | 1,08–1,35 | −0,13 | −0,16 (−1,2) | +3 pe | −10 pe | ✔ samma håll |
+| Svag på fasta | 96 | 1,17–1,33 | +0,12 | +0,09 (0,8) | +3 pe | −5 pe | ✔ samma håll |
+| Medel på fasta | 113 | 1,18–1,32 | +0,02 | +0,00 (0,0) | +1 pe | −6 pe | svag |
+| Farlig på fasta | 58 | 1,10–1,31 | −0,13 | −0,15 (−1,0) | +3 pe | −13 pe | ✔ samma håll |
+| Stark mot fasta | 84 | 1,21–1,30 | +0,20 | +0,18 (1,3) | +5 pe | −1 pe | ✔ samma håll |
+| Medel mot fasta | 114 | 1,12–1,40 | −0,11 | −0,13 (−1,1) | −2 pe | −7 pe | ✔ samma håll |
+| Svag mot fasta | 69 | 1,14–1,22 | +0,02 | +0,00 (0,0) | +5 pe | −15 pe | svag |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
+
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 3 | 0-0-3 | 0,00 | −1,30 |
+| Efter uppehåll sedan 2023 | 0 | – | – | – |
+| Övriga matcher | 410 | 150-105-155 | 1,35 | +0,09 |
+
+Hela ligan efter uppehåll: 0,00 mot marknaden (n 84). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2019-11-16 | Northampton - Crewe | 4-1 F | −1,70 |
+| 2017-12-09 | Cheltenham - Crewe | 1-0 F | −1,13 |
+| 2017-11-11 | Crewe - Lincoln | 1-4 F | −1,05 |
+
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
 | Motståndare | M | V-O-F | Mål | Mot marknaden | Kryss mot odds | Senast |
 |---|---|---|---|---|---|---|
-| Swindon | 14 | 8-3-3 | 21–17 | +0,58 | −5 pe | 2026-02-21 2-1 (b) |
+| Swindon | 13 | 7-3-3 | 20–17 | +0,49 | −4 pe | 2026-02-21 2-1 (b) |
 | Gillingham | 12 | 4-3-5 | 10–10 | −0,11 | −4 pe | 2026-02-14 1-0 (h) |
 | Colchester | 11 | 4-6-1 | 9–9 | +0,31 | +26 pe | 2026-09-12 1-1 (b) |
 | Crawley Town | 11 | 9-1-1 | 21–10 | +1,04 | −17 pe | 2026-08-15 1-0 (b) |
@@ -64,39 +114,41 @@ Form (äldst → senast): VVOOOOOO · senaste match 2026-09-26
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): Newport County 0,90 p/match (−0,56), Accrington 1,10 p/match (−0,39), Walsall 1,18 p/match (−0,03).
+
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Lee Bell. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Tom Booth | GK | 22 | England | – | 7,49 | 0 | 0 | 0/0 |  |
-| 13 | Ian Lawlor | GK | 31 | Ireland | 96 k€ | – | 0 | 0 | 0/0 |  |
+| 1 | Tom Booth | GK | 22 | England | – | 7,43 | 0 | 0 | 0/0 |  |
+| 13 | Ian Lawlor | GK | 31 | Ireland | 90 k€ | – | 0 | 0 | 0/0 |  |
 | 31 | Luke Unsworth | Keeper | 17 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Lewis Billington | RB,CB,RWB | 22 | England | 373 k€ | 6,92 | 0 | 1 | 1/0 |  |
-| 3 | Reece Hutchinson | LB,LWB | 26 | England | 202 k€ | 7,77 | 1 | 0 | 0/0 |  |
-| 5 | Mickey Demetriou | CB | 36 | England | 82 k€ | 6,95 | 0 | 0 | 2/1 |  |
-| 6 | Luke Offord | CB,RB,CDM | 26 | England | 262 k€ | 7,34 | 1 | 0 | 1/0 |  |
-| 12 | Josh Stephenson | CB | 20 | England | – | 7,35 | 1 | 0 | 1/0 |  |
+| 2 | Lewis Billington | RB,CB,RWB | 22 | England | 450 k€ | 7,01 | 0 | 1 | 1/0 |  |
+| 3 | Reece Hutchinson | LB,LWB | 26 | England | 273 k€ | 7,77 | 1 | 0 | 0/0 |  |
+| 5 | Mickey Demetriou | CB | 36 | England | 101 k€ | 6,95 | 0 | 0 | 2/1 |  |
+| 6 | Luke Offord | CB,RB,CDM | 26 | England | 382 k€ | 7,45 | 1 | 0 | 1/0 |  |
+| 12 | Josh Stephenson | CB | 20 | England | – | 7,31 | 1 | 0 | 2/0 |  |
 | 30 | Stan Dancey | RB | 19 | Wales | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 4 | Kyle Ure | CM,CDM,LB | 20 | Scotland | 232 k€ | 6,34 | 0 | 0 | 1/0 |  |
-| 7 | Jack Lankester | CAM,RW | 26 | England | 139 k€ | 6,60 | 0 | 0 | 0/0 |  |
-| 8 | Conor Thomas | CDM | 32 | England | 86 k€ | 6,02 | 0 | 0 | 0/0 |  |
-| 10 | Joe White | CDM,CM,CAM | 23 | England | 242 k€ | 6,63 | 0 | 0 | 2/0 |  |
-| 11 | Joel Tabiner | CAM,RW | 22 | England | 393 k€ | 6,98 | 0 | 3 | 0/0 |  |
-| 17 | Matús Holícek | CAM,CDM,CM,LW | 21 | Slovakia | 358 k€ | 7,02 | 0 | 0 | 0/0 |  |
-| 19 | Owen Lunt | CDM,CAM,CM | 22 | England | 250 k€ | 6,27 | 0 | 0 | 0/0 |  |
+| 4 | Kyle Ure | CM,CDM,LB | 20 | Scotland | 178 k€ | 6,46 | 0 | 0 | 1/0 |  |
+| 7 | Jack Lankester | CAM,RW | 26 | England | 134 k€ | 6,87 | 2 | 0 | 0/0 |  |
+| 8 | Conor Thomas | CDM | 32 | England | 86 k€ | 6,06 | 0 | 0 | 1/0 |  |
+| 10 | Joe White | CDM,CM,CAM | 24 | England | 245 k€ | 6,78 | 0 | 0 | 2/0 |  |
+| 11 | Joel Tabiner | CAM,RW | 22 | England | 240 k€ | 6,99 | 0 | 4 | 0/0 |  |
+| 17 | Matús Holícek | CAM,CDM,CM,LW | 21 | Slovakia | 314 k€ | 7,02 | 0 | 0 | 0/0 |  |
+| 19 | Owen Lunt | CDM,CAM,CM | 22 | England | 177 k€ | 6,51 | 0 | 0 | 1/0 |  |
 | 32 | Luca Moore | LM | 21 | England | – | – | 0 | 0 | 0/0 |  |
 | 33 | Owen Taylor | Midfielder | 0 | England | 132 k€ | – | 0 | 0 | 0/0 |  |
 | 36 | Joel Ewusi | Midfielder | 0 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 9 | Josh March | ST,LW | 29 | England | 203 k€ | 7,03 | 3 | 0 | 1/0 |  |
-| 14 | Jordan Gibson | LW,RW | 28 | England | 206 k€ | 6,89 | 1 | 0 | 1/0 |  |
-| 20 | Calum Agius | LW,CAM,RB,RW,CM,RM | 21 | Wales | 392 k€ | 6,58 | 0 | 1 | 2/0 |  |
-| 23 | Charlie McNeill | RW,CAM,ST,CM | 23 | England | 653 k€ | 6,12 | 0 | 0 | 0/0 |  |
+| 9 | Josh March | ST,LW | 29 | England | 334 k€ | 7,13 | 3 | 1 | 2/0 |  |
+| 14 | Jordan Gibson | LW,RW | 28 | England | 228 k€ | 6,93 | 2 | 0 | 1/0 |  |
+| 20 | Calum Agius | LW,CAM,RB,CM,RW,RM | 21 | Wales | 452 k€ | 6,58 | 0 | 1 | 2/0 |  |
+| 23 | Charlie McNeill | RW,CAM,ST,CM | 23 | England | 495 k€ | 6,12 | 0 | 0 | 0/0 |  |
 | 27 | Patrick Mlynarski | Attacker | 18 | Wales | – | – | 0 | 0 | 0/0 |  |
-| 29 | Adrien Thibaut | ST | 22 | Ireland | 312 k€ | 6,06 | 0 | 0 | 0/0 |  |
+| 29 | Adrien Thibaut | ST | 22 | Ireland | 221 k€ | 6,08 | 0 | 0 | 0/0 |  |
 | 35 | Noah Bell | Attacker | 0 | England | – | – | 0 | 0 | 0/0 |  |

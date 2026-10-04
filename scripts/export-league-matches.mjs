@@ -9,6 +9,7 @@ import path from 'node:path';
 import { buildSignals, h2hFeatures, pairKey, sideState, teamKey } from './lib/learnings-signals.mjs';
 import { root } from './lib/learnings-data.mjs';
 import { nameScore } from './lib/match-context.mjs';
+import { canonTeam } from './lib/team-aliases.mjs';
 
 const DIR = path.join(root, 'data', 'matcher');
 const readJson = (p, d = null) => { try { return JSON.parse(fs.readFileSync(p, 'utf8').replace(/^﻿/, '')); } catch { return d; } };
@@ -53,6 +54,8 @@ const signalCols = (f) => ({
 
 const { matches, teamState, h2hState, seasonTeams, seasonsByLeague } = buildSignals({ log: () => {} });
 const store = readJson(path.join(root, 'data', 'betting-store.json'), { matches: [] });
+// Samma lag med olika stavning -> ett namn (config/team-aliases.json)
+store.matches = store.matches.map((m) => ({ ...m, home: canonTeam(m.league, m.home), away: canonTeam(m.league, m.away) }));
 const storeByKey = new Map(store.matches.map((m) => [`${m.league}|${m.date}|${m.home}|${m.away}`, m]));
 // Domare, horn, frisparkar, kort, avspark fran store (football-data, 2023/24-)
 const extra = (m) => {
@@ -112,13 +115,13 @@ let totalUp = 0;
 const leagues = new Set([...byLeague.keys(), ...fixtures.map((f) => f.league)]);
 for (const lg of [...leagues].sort()) {
   const file = path.join(DIR, `${lg}.csv`);
-  const prev = parseCsv(file);
+  const prev = parseCsv(file).map((r) => ({ ...r, home: canonTeam(lg, r.home), away: canonTeam(lg, r.away) }));
   const prevPre = new Map(prev.filter((r) => r.pre_first_at).map((r) => [key(r), r]));
   const rows = byLeague.get(lg) ?? [];
   const played = new Set(rows.map(key));
   const up = [];
   for (const f of fixtures.filter((x) => x.league === lg && x.date >= today)) {
-    const home = mapName(lg, f.home), away = mapName(lg, f.away);
+    const home = canonTeam(lg, mapName(lg, canonTeam(lg, f.home))), away = canonTeam(lg, mapName(lg, canonTeam(lg, f.away)));
     const r = { status: 'kommande', league: lg, season: seasonsByLeague[lg]?.at(-1) ?? '', date: f.date, kickoff: f.kickoffUtc ?? '', home, away };
     if (played.has(key(r))) continue;
     const hk = teamKey(lg, home), ak = teamKey(lg, away);

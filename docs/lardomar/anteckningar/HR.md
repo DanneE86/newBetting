@@ -4,14 +4,14 @@ En fil per liga. Den automatiska delen visar hur tipsen gått och vad som blivit
 
 <!-- AUTO:START (skrivs om av scripts/tips-felanalys.mjs, ändra inte här) -->
 
-Uppdaterad 2026-09-28. Källor: `data/reports/pro-evaluation.json` (tipAccuracy), `data/reports/tips-backtest.json`, `data/matcher/HR.csv`.
+Uppdaterad 2026-10-04. Källor: `data/reports/pro-evaluation.json` (tipAccuracy), `data/reports/tips-backtest.json`, `data/matcher/HR.csv`.
 
 ### Tipsens träff (1X2, samma motor som live)
 
 | Säsong | Matcher | Träff | Väntat (tipsens procent) | Skillnad (z) | Alltid hemma | Missar: kryss / skräll | Styrs av |
 |---|---|---|---|---|---|---|---|
 | 2025/26 | 135 | 48,9 % | 48,1 % | +0,8 pe (0,2) | 43,7 % | 37 / 32 | modell (inga odds) |
-| 2026/27 | 39 | 53,8 % | 48,4 % | +5,5 pe (0,7) | 61,5 % | 8 / 10 | modell (inga odds) |
+| 2026/27 | 39 | 53,8 % | 48,5 % | +5,4 pe (0,7) | 61,5 % | 8 / 10 | modell (inga odds) |
 
 Bedömning 2026/27: inom slumpen (z 0,7). Tipsen träffar sämre än att alltid tippa hemma – granska.
 

@@ -1,12 +1,16 @@
 # Leganes (LaLiga 2) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [LL2](../../ligor/LL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [LL2](../../ligor/LL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Senaste 8: tur med +0,68 poäng per match mot xP. Marknaden prisar redan in det i ligan (ingen bekräftad effekt), så det är inget spel i sig.
 - Senaste 8: xG-målskillnaden är −0,53 per match sämre än målskillnaden.
 - Stark historik mot Granada (+0,52 p/match mot marknaden, 7 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Efter landslagsuppehåll: 0,81 poäng per match mot 1,31 annars (4-1-11 på 16 matcher), mot marknaden −0,29 mot +0,01. Sedan 2023: 0-0-3. Sämre än vanligt, men få matcher: i hela ligan är effekten 0,00 mot marknaden.
+- Spelstil 2025/26: Balanserat, Kortpass, Lågpress, Medel på fasta, Svag mot fasta. Bäst mot Stark mot fasta (+0,15, svagt), Blandat (+0,12, samma håll i båda halvorna men svagt), Lågpress (+0,10, samma håll i båda halvorna men svagt). Svårast mot Medel mot fasta (−0,18, samma håll i båda halvorna men svagt), Kortpass (−0,16, samma håll i båda halvorna men svagt), Högpress (−0,12, svagt). Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2025/26: 0,19 mål för per match (xG 0,28), 0,33 emot (xG 0,24), 4,7 hörnor.
+- Svårt för: Girona (1-4-4, 0,78 p/match, mot marknaden −0,42), Mallorca (1-2-3, 0,83 p/match, mot marknaden −0,50), Almeria (1-2-3, 0,83 p/match, mot marknaden −0,32), Burgos (2-2-4, 1,00 p/match, mot marknaden −0,50), Eibar (2-5-4, 1,00 p/match, mot marknaden −0,26), Tenerife (2-4-3, 1,11 p/match, mot marknaden −0,17), Sp Gijon (2-6-2, 1,20 p/match, mot marknaden −0,16). Där marknaden ligger nära noll är laget bara sämre i de mötena än annars, och oddsen vet redan om det.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -35,6 +39,66 @@ Form (äldst → senast): VOVVOFVF · senaste match 2026-09-28
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
 
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/LL2.md#leganes) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2025/26: **Balanserat, Kortpass, Lågpress, Medel på fasta, Svag mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026/27 | 8 | 0,13 | 0,11 | 0,25 | 0,17 | 3,0 |
+| 2025/26 | 42 | 0,19 | 0,28 | 0,33 | 0,24 | 4,7 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Backar hem | 78 | 0,87–0,95 | −0,06 | −0,03 (−0,3) | +10 pe | −6 pe | svag |
+| Balanserat | 133 | 1,08–1,24 | −0,00 | +0,02 (0,2) | −5 pe | +4 pe | svag |
+| Bollinnehav | 72 | 1,03–1,03 | −0,02 | −0,00 (−0,0) | +4 pe | −3 pe | svag |
+| Kortpass | 50 | 0,90–1,22 | −0,19 | −0,16 (−1,0) | −6 pe | −9 pe | ✔ samma håll |
+| Blandat | 129 | 1,12–1,07 | +0,09 | +0,12 (1,1) | +1 pe | +3 pe | ✔ samma håll |
+| Direktspel | 104 | 0,92–1,10 | −0,09 | −0,07 (−0,6) | +5 pe | −1 pe | svag |
+| Lågpress | 65 | 1,23–1,09 | +0,08 | +0,10 (0,7) | +6 pe | +3 pe | ✔ samma håll |
+| Mellanpress | 141 | 0,95–1,16 | −0,01 | +0,02 (0,2) | −1 pe | −2 pe | ✔ samma håll |
+| Högpress | 77 | 0,92–1,03 | −0,14 | −0,12 (−0,9) | +1 pe | −3 pe | svag |
+| Svag på fasta | 90 | 1,09–1,08 | +0,01 | +0,03 (0,3) | −7 pe | +5 pe | ✔ samma håll |
+| Medel på fasta | 106 | 1,00–1,09 | −0,00 | +0,02 (0,2) | +3 pe | −3 pe | ✔ samma håll |
+| Farlig på fasta | 87 | 0,93–1,15 | −0,08 | −0,06 (−0,5) | +7 pe | −4 pe | svag |
+| Stark mot fasta | 92 | 1,11–1,08 | +0,12 | +0,15 (1,2) | +5 pe | −2 pe | svag |
+| Medel mot fasta | 95 | 0,86–1,02 | −0,20 | −0,18 (−1,6) | −1 pe | −5 pe | ✔ samma håll |
+| Svag mot fasta | 96 | 1,05–1,22 | +0,02 | +0,04 (0,3) | −0 pe | +5 pe | ✔ samma håll |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
+
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 16 | 4-1-11 | 0,81 | −0,29 |
+| Efter uppehåll sedan 2023 | 3 | 0-0-3 | 0,00 | −0,74 |
+| Övriga matcher | 353 | 118-108-127 | 1,31 | +0,01 |
+
+Hela ligan efter uppehåll: 0,00 mot marknaden (n 40). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2024-11-24 | Leganes - Real Madrid | 0-3 F | −0,47 |
+| 2024-10-20 | Ath Madrid - Leganes | 3-1 F | −0,73 |
+| 2024-09-13 | Betis - Leganes | 2-0 F | −1,01 |
+| 2022-01-02 | Valladolid - Leganes | 1-0 F | −1,22 |
+| 2020-09-12 | Leganes - Las Palmas | 1-0 V | +1,17 |
+| 2019-11-23 | Leganes - Barcelona | 1-2 F | −0,77 |
+| 2019-10-19 | Getafe - Leganes | 2-0 F | −1,39 |
+| 2019-09-14 | Leganes - Villarreal | 0-3 F | −1,43 |
+| 2019-03-30 | Getafe - Leganes | 0-2 V | +1,79 |
+| 2018-11-23 | Leganes - Alaves | 1-0 V | +1,37 |
+| 2018-10-20 | Valencia - Leganes | 1-1 O | +1,06 |
+| 2018-09-16 | Leganes - Villarreal | 0-1 F | −1,28 |
+| 2018-04-01 | Leganes - Valencia | 0-1 F | −1,07 |
+| 2017-11-18 | Leganes - Barcelona | 0-3 F | −0,52 |
+| 2017-10-15 | Malaga - Leganes | 0-2 V | +1,48 |
+| 2017-09-08 | Leganes - Getafe | 1-2 F | −1,69 |
+
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
 | Motståndare | M | V-O-F | Mål | Mot marknaden | Kryss mot odds | Senast |
@@ -62,52 +126,54 @@ Form (äldst → senast): VOVVOFVF · senaste match 2026-09-28
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): Girona 0,78 p/match (−0,42), Mallorca 0,83 p/match (−0,50), Almeria 0,83 p/match (−0,32), Burgos 1,00 p/match (−0,50), Eibar 1,00 p/match (−0,26), Tenerife 1,11 p/match (−0,17), Sp Gijon 1,20 p/match (−0,16).
+
 ## Stryktipset / Europatipset
 
 | Datum | Spel | Match | Utfall | Folket på laget | Vår procent |
 |---|---|---|---|---|---|
 | 2026-04-30 | Europa 2570 | Deportivo A Coruña - Leganes | 1 | 12 % | 21 % |
 
-## Trupp (FotMob, hämtad 2026-09-29)
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Rubén Albés. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Enric Franquesa (skadad, åter Early November 2026), Marcos Leiva (skadad, åter Early February 2027)
+**Skadade/borta nu:** Rubén Pena (osäker), Marcos Leiva (skadad, åter Early February 2027)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
 | 1 | Raul Fernández | GK | 38 | Spain | 283 k€ | 6,07 | 0 | 0 | 0/1 |  |
-| 13 | Luca Zidane | GK | 28 | Algeria | 597 k€ | 7,08 | 0 | 0 | 0/0 |  |
+| 13 | Luca Zidane | GK | 28 | Algeria | 749 k€ | 7,03 | 0 | 0 | 0/0 |  |
 | 38 | Ale Gorrín | Keeper | 24 | Spain | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Marvel | CB,LB | 23 | Morocco | 968 k€ | 7,15 | 0 | 0 | 4/0 |  |
-| 3 | Francisco Montero | CB | 27 | Spain | 568 k€ | 6,14 | 0 | 0 | 0/0 |  |
-| 4 | Rubén Pulido | CB | 26 | Spain | 352 k€ | 6,19 | 0 | 0 | 2/0 |  |
-| 5 | Ignasi Miquel | CB | 34 | Spain | 194 k€ | 6,76 | 0 | 0 | 1/0 |  |
-| 6 | Lalo Aguilar | CB,RB | 24 | Spain | 975 k€ | 6,90 | 0 | 0 | 0/0 |  |
-| 7 | Rubén Pena | RB,RWB,RW,LW | 35 | Spain | 206 k€ | 6,64 | 0 | 0 | 0/0 |  |
-| 11 | Naim García | LB,LW,LM,LWB,RWB,RW | 24 | Spain | 503 k€ | 7,11 | 2 | 1 | 1/0 |  |
-| 15 | Enric Franquesa | LB | 29 | Spain | 501 k€ | – | 0 | 0 | 0/0 | skadad, åter Early November 2026 |
-| 23 | Álvaro Tejero | RB,LB,LM | 30 | Spain | 1,1 M€ | 6,76 | 0 | 0 | 0/0 |  |
+| 2 | Marvel | CB,LB | 23 | Morocco | 1,1 M€ | 7,08 | 0 | 0 | 4/0 |  |
+| 3 | Francisco Montero | CB | 27 | Spain | 566 k€ | 6,31 | 0 | 0 | 0/0 |  |
+| 4 | Rubén Pulido | CB | 26 | Spain | 350 k€ | 6,23 | 0 | 0 | 3/0 |  |
+| 5 | Ignasi Miquel | CB | 34 | Spain | 263 k€ | 6,76 | 0 | 0 | 1/0 |  |
+| 6 | Lalo Aguilar | CB,RB | 24 | Spain | 1,1 M€ | 6,73 | 0 | 0 | 0/0 |  |
+| 7 | Rubén Pena | RB,RWB,RW,LW | 35 | Spain | 194 k€ | 6,64 | 0 | 0 | 0/0 | osäker |
+| 15 | Enric Franquesa | LB | 29 | Spain | 503 k€ | – | 0 | 0 | 0/0 |  |
+| 23 | Álvaro Tejero | RB,LB,LM | 30 | Spain | 1,2 M€ | 6,47 | 0 | 0 | 0/0 |  |
 | 28 | Álex Fita | LWB | 19 | Spain | – | – | 0 | 0 | 0/0 |  |
-| 36 | Marcos Leiva | RB | 21 | Spain | 516 k€ | – | 0 | 0 | 0/0 | skadad, åter Early February 2027 |
+| 36 | Marcos Leiva | RB | 21 | Spain | 498 k€ | – | 0 | 0 | 0/0 | skadad, åter Early February 2027 |
 | 36 | Sulaiman Mulumba | Defender | 20 | Uganda | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 8 | Yassine Kechta | CDM,CAM,CM,LW,RM | 24 | Morocco | 2,2 M€ | 6,70 | 0 | 0 | 1/0 |  |
-| 10 | Zico Buurmeester | CDM,CM | 24 | Netherlands | 1,3 M€ | 6,75 | 0 | 0 | 1/0 |  |
-| 17 | Ismaël Gharbi | CAM,CM,ST,LW | 22 | Tunisia | 5,1 M€ | 7,62 | 2 | 1 | 1/0 |  |
-| 20 | Miguel Atienza | CM,CDM | 27 | Spain | 944 k€ | 6,95 | 1 | 0 | 0/0 |  |
-| 22 | Álex Sancris | LM,RW,ST | 29 | Spain | 1,1 M€ | 6,79 | 0 | 0 | 2/0 |  |
-| 24 | Amadou Diawara | CM,CDM | 29 | Guinea | 343 k€ | – | 0 | 0 | 0/0 |  |
+| 8 | Yassine Kechta | CM,CDM,CAM,LW,RM | 24 | Morocco | 4,1 M€ | 6,54 | 0 | 0 | 2/0 |  |
+| 10 | Zico Buurmeester | CDM,CM | 24 | Netherlands | 1,3 M€ | 6,69 | 0 | 0 | 1/0 |  |
+| 11 | Naim García | LW,LB,LM,RM,LWB,RWB,RW | 24 | Spain | 515 k€ | 6,93 | 2 | 1 | 2/0 |  |
+| 17 | Ismaël Gharbi | CAM,CM,ST,LW | 22 | Tunisia | 6,2 M€ | 7,48 | 2 | 1 | 1/0 |  |
+| 20 | Miguel Atienza | CM,CDM | 27 | Spain | 1,1 M€ | 6,90 | 1 | 0 | 0/0 |  |
+| 22 | Álex Sancris | LM,RW,ST | 29 | Spain | 1,1 M€ | 6,65 | 0 | 0 | 2/0 |  |
+| 24 | Amadou Diawara | CM,CDM | 29 | Guinea | 409 k€ | – | 0 | 0 | 0/0 |  |
 | 33 | Jorge Herrero | Midfielder | 21 | Spain | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 9 | Álex Millán | ST | 26 | Spain | – | 6,15 | 0 | 0 | 1/0 |  |
-| 14 | Dani Rodríguez | LW,CM,CAM | 38 | Spain | 164 k€ | 6,32 | 0 | 0 | 0/0 |  |
-| 16 | Unax del Cura | ST,CAM | 21 | Spain | 537 k€ | 6,61 | 0 | 0 | 1/0 |  |
+| 14 | Dani Rodríguez | LW,CM,CAM | 38 | Spain | 185 k€ | 6,24 | 0 | 0 | 0/0 |  |
+| 16 | Unax del Cura | ST,CAM | 21 | Spain | 644 k€ | 6,47 | 0 | 0 | 1/0 |  |
 | 18 | Andrés Campos | CDM | 24 | Spain | 259 k€ | – | 0 | 0 | 0/0 |  |
-| 19 | Patrick Soko | ST | 28 | Cameroon | 968 k€ | 6,54 | 1 | 0 | 0/0 |  |
-| 21 | Álvaro Morata | ST | 33 | Spain | 4,5 M€ | 6,01 | 0 | 0 | 1/0 |  |
-| 32 | Suleiman El Haddadi | ST | 20 | Morocco | – | 6,31 | 0 | 2 | 0/0 |  |
+| 19 | Patrick Soko | ST | 28 | Cameroon | 964 k€ | 6,46 | 1 | 0 | 0/0 |  |
+| 21 | Álvaro Morata | ST | 33 | Spain | 4,3 M€ | 6,14 | 0 | 0 | 1/0 |  |
+| 32 | Suleiman El Haddadi | ST | 20 | Morocco | – | 6,25 | 0 | 2 | 0/0 |  |
 
 Har lämnat truppen sedan vi började spara (1): Sulaiman Mulumba (senast 2026-09-28).

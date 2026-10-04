@@ -123,13 +123,18 @@ test('Stryktipset: en sida, egna krav genererar kupong A och B', async ({ page }
   await expect(page.locator('.sb-coupon').nth(2)).toContainText('minst 50 000 kr');
   // Krav på A+B låses inte i C
   await expect(table.nth(0).locator('td').nth(3)).not.toContainText('🔒');
-  // Kupong D: ditt fasta system 4 spikar, 4 halvor, 5 helor, krav på A+B låses inte där
+  // Kupong D: fritt system för vinster över 20 000 kr, krav på A+B låses inte där
   const dCard = page.locator('.sb-coupon').nth(3);
   await expect(dCard.locator('h3')).toContainText(/Kupong D \d+ rader/);
-  await expect(dCard).toContainText('4-3-3 · röd 1–3, grön 1–3');
+  await expect(dCard).toContainText('Fritt system, inga färg- eller teckenregler');
   await expect(table.nth(0).locator('td').nth(4)).not.toContainText('🔒');
   const dSigns = await table.evaluateAll((trs) => trs.map((tr) => tr.querySelectorAll('td')[4].textContent!.trim()));
-  expect(dSigns.map((t) => t.split('+').length).sort().join('')).toBe('1111222233333');
+  expect(dSigns).toHaveLength(13);
+  // Fritt system: 1–3 olika tecken per match (cellen kan också ha varningar som "⚠ kan falla")
+  for (const t of dSigns) {
+    const signs = t.match(/[1X2]/g) || [];
+    expect(signs.length >= 1 && signs.length <= 3 && new Set(signs).size === signs.length, t).toBe(true);
+  }
   // Eget krav på C: spik 2 på match 8 bara i C
   await rows.nth(7).locator('.sb-sign[data-sign="2"]').click();
   await rows.nth(7).locator('.sb-scope button[data-scope="C"]').click();
@@ -253,7 +258,8 @@ test('Oddset: knappen Domare bredvid Duellanalys visar domarstatistik för engel
     await route.fulfill({ response: res, json: body });
   });
   await page.goto(base + '/tips');
-  const card = page.locator('.tip:has(.btn-referee)').first();
+  // Bästa tipsen överst hämtas även ur alla kandidater: välj just den engelska matchens kort
+  const card = page.locator(`.tip[data-tip-id="${eng.league}|${eng.date}|${eng.home}|${eng.away}"]:has(.btn-referee)`).first();
   await expect(card).toBeVisible({ timeout: 30_000 });
   const order = await card.locator('.tip-actions button').evaluateAll((els) => els.map((e) => e.className));
   expect(order[order.indexOf('btn-matchup') + 1]).toBe('btn-referee');
@@ -439,4 +445,27 @@ test('Oddset: tipskortet har raden Kort Ö/U med domare och spela från för 3.5
   await expect(both.locator('td.val')).toContainText('spela från 1.35');
   await both.locator('.odd-pill[data-key="bc-no"]').click();
   await expect(both.locator('td.val')).toContainText('spela från 5.4');
+});
+
+test('Oddset: bästa tipsen överst kommer från kommande omgång, även utan värdetips', async ({ page }) => {
+  // Allsvenskan: inget värdetips i omgången 9–12 okt, ett värdetips 24 okt. Överst ska omgångens bästa kandidater stå.
+  const day = (n: number) => { const d = new Date(); d.setDate(d.getDate() + n); return d.toLocaleDateString('sv-SE'); };
+  await page.route('**/api/dashboard*', async (route) => {
+    const res = await route.fetch();
+    const body = await res.json();
+    const src = [...(body.allCandidates || []), ...(body.bestUpcoming || [])][0];
+    const mk = (home: string, away: string, date: string, tipScore: number) => ({
+      ...src, league: 'AS', home, away, match: `${home} vs ${away}`, date, kickoffUtc: `${date}T13:00:00Z`, tipScore,
+    });
+    body.allCandidates = [mk('Goteborg', 'Vasteras SK', day(5), 0.4), mk('Hammarby', 'Djurgarden', day(7), 0.9), mk('Malmo FF', 'Kalmar', day(8), 0.7)];
+    body.bestUpcoming = [mk('Sirius', 'AIK', day(20), 0.5)];
+    await route.fulfill({ response: res, json: body });
+  });
+  await page.goto(base + '/tips');
+  await page.evaluate(() => { localStorage.clear(); localStorage.setItem('betting.valueOnly', '0'); });
+  await page.goto(base + '/tips');
+  const head = page.locator('#tips .tip-group-head').first();
+  await expect(head).toContainText('Omgången', { timeout: 30_000 });
+  await expect(head).toContainText('3 matcher');
+  await expect(page.locator('#tips .tip').first()).toContainText('Hammarby');
 });

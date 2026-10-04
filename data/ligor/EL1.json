@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-09-29T20:15:35.901Z",
+ "updatedAt": "2026-10-04T09:27:34.347Z",
  "league": "EL1",
  "fotmobId": 108,
  "name": "League One",
@@ -7,20 +7,48 @@
  "table": [
   {
    "rank": 1,
+   "team": "Plymouth",
+   "fotmobName": "Plymouth Argyle",
+   "fotmobId": 8401,
+   "group": null,
+   "played": 9,
+   "won": 5,
+   "drawn": 1,
+   "lost": 3,
+   "goals": "16-11",
+   "gd": 5,
+   "pts": 16
+  },
+  {
+   "rank": 2,
    "team": "Bradford",
    "fotmobName": "Bradford City",
    "fotmobId": 8484,
    "group": null,
-   "played": 7,
+   "played": 8,
    "won": 5,
-   "drawn": 0,
+   "drawn": 1,
    "lost": 2,
-   "goals": "7-4",
+   "goals": "8-5",
    "gd": 3,
+   "pts": 16
+  },
+  {
+   "rank": 3,
+   "team": "Huddersfield",
+   "fotmobName": "Huddersfield Town",
+   "fotmobId": 9796,
+   "group": null,
+   "played": 8,
+   "won": 4,
+   "drawn": 3,
+   "lost": 1,
+   "goals": "14-7",
+   "gd": 7,
    "pts": 15
   },
   {
-   "rank": 2,
+   "rank": 4,
    "team": "Sheffield Weds",
    "fotmobName": "Sheffield Wednesday",
    "fotmobId": 10163,
@@ -34,7 +62,7 @@
    "pts": 14
   },
   {
-   "rank": 3,
+   "rank": 5,
    "team": "Stockport",
    "fotmobName": "Stockport County",
    "fotmobId": 10007,
@@ -48,21 +76,7 @@
    "pts": 13
   },
   {
-   "rank": 4,
-   "team": "Plymouth",
-   "fotmobName": "Plymouth Argyle",
-   "fotmobId": 8401,
-   "group": null,
-   "played": 8,
-   "won": 4,
-   "drawn": 1,
-   "lost": 3,
-   "goals": "14-11",
-   "gd": 3,
-   "pts": 13
-  },
-  {
-   "rank": 5,
+   "rank": 6,
    "team": "Cambridge",
    "fotmobName": "Cambridge United",
    "fotmobId": 9834,
@@ -76,35 +90,35 @@
    "pts": 13
   },
   {
-   "rank": 6,
-   "team": "Huddersfield",
-   "fotmobName": "Huddersfield Town",
-   "fotmobId": 9796,
-   "group": null,
-   "played": 7,
-   "won": 3,
-   "drawn": 3,
-   "lost": 1,
-   "goals": "11-6",
-   "gd": 5,
-   "pts": 12
-  },
-  {
    "rank": 7,
-   "team": "Burton",
-   "fotmobName": "Burton Albion",
-   "fotmobId": 9792,
+   "team": "Reading",
+   "fotmobName": "Reading",
+   "fotmobId": 9798,
    "group": null,
    "played": 8,
    "won": 3,
    "drawn": 3,
    "lost": 2,
-   "goals": "13-12",
-   "gd": 1,
+   "goals": "17-10",
+   "gd": 7,
    "pts": 12
   },
   {
    "rank": 8,
+   "team": "Burton",
+   "fotmobName": "Burton Albion",
+   "fotmobId": 9792,
+   "group": null,
+   "played": 9,
+   "won": 3,
+   "drawn": 3,
+   "lost": 3,
+   "goals": "14-15",
+   "gd": -1,
+   "pts": 12
+  },
+  {
+   "rank": 9,
    "team": "AFC Wimbledon",
    "fotmobName": "AFC Wimbledon",
    "fotmobId": 158319,
@@ -116,20 +130,6 @@
    "goals": "6-8",
    "gd": -2,
    "pts": 12
-  },
-  {
-   "rank": 9,
-   "team": "Reading",
-   "fotmobName": "Reading",
-   "fotmobId": 9798,
-   "group": null,
-   "played": 7,
-   "won": 3,
-   "drawn": 2,
-   "lost": 2,
-   "goals": "16-9",
-   "gd": 7,
-   "pts": 11
   },
   {
    "rank": 10,
@@ -151,12 +151,12 @@
    "fotmobName": "Leyton Orient",
    "fotmobId": 8351,
    "group": null,
-   "played": 7,
+   "played": 8,
    "won": 3,
    "drawn": 1,
-   "lost": 3,
-   "goals": "13-9",
-   "gd": 4,
+   "lost": 4,
+   "goals": "13-11",
+   "gd": 2,
    "pts": 10
   },
   {
@@ -590,6 +590,176 @@
     7,
     10,
     4
+   ],
+   [
+    "Wycombe",
+    12,
+    8,
+    10,
+    -3
+   ],
+   [
+    "Stevenage",
+    13,
+    7,
+    9,
+    3
+   ],
+   [
+    "Leicester",
+    14,
+    7,
+    9,
+    -2
+   ],
+   [
+    "Blackpool",
+    15,
+    7,
+    8,
+    0
+   ],
+   [
+    "Luton",
+    16,
+    7,
+    8,
+    -2
+   ],
+   [
+    "Mansfield",
+    17,
+    7,
+    8,
+    -3
+   ],
+   [
+    "Barnsley",
+    18,
+    7,
+    8,
+    -5
+   ],
+   [
+    "Bromley",
+    19,
+    7,
+    8,
+    -10
+   ],
+   [
+    "Notts County",
+    20,
+    7,
+    7,
+    -2
+   ],
+   [
+    "Doncaster",
+    21,
+    7,
+    6,
+    -1
+   ],
+   [
+    "Milton Keynes Dons",
+    22,
+    7,
+    6,
+    -2
+   ],
+   [
+    "Peterboro",
+    23,
+    8,
+    5,
+    -9
+   ],
+   [
+    "Wigan",
+    24,
+    7,
+    4,
+    -7
+   ]
+  ],
+  "2026-10-04": [
+   [
+    "Plymouth",
+    1,
+    9,
+    16,
+    5
+   ],
+   [
+    "Bradford",
+    2,
+    8,
+    16,
+    3
+   ],
+   [
+    "Huddersfield",
+    3,
+    8,
+    15,
+    7
+   ],
+   [
+    "Sheffield Weds",
+    4,
+    7,
+    14,
+    7
+   ],
+   [
+    "Stockport",
+    5,
+    8,
+    13,
+    7
+   ],
+   [
+    "Cambridge",
+    6,
+    8,
+    13,
+    2
+   ],
+   [
+    "Reading",
+    7,
+    8,
+    12,
+    7
+   ],
+   [
+    "Burton",
+    8,
+    9,
+    12,
+    -1
+   ],
+   [
+    "AFC Wimbledon",
+    9,
+    8,
+    12,
+    -2
+   ],
+   [
+    "Oxford",
+    10,
+    6,
+    11,
+    6
+   ],
+   [
+    "Leyton Orient",
+    11,
+    8,
+    10,
+    2
    ],
    [
     "Wycombe",

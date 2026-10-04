@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-09-29T20:15:35.901Z",
+ "updatedAt": "2026-10-04T09:27:34.347Z",
  "league": "CZ",
  "fotmobId": 122,
  "source": "FotMob",
@@ -19,7 +19,7 @@
      "born": "1994-10-17",
      "country": "Czechia",
      "height": 193,
-     "value": 74640,
+     "value": 59712,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -38,7 +38,7 @@
      "born": "2007-04-06",
      "country": "Ukraine",
      "height": 190,
-     "value": 1612981,
+     "value": 3818114,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -57,7 +57,7 @@
      "born": "2001-07-13",
      "country": "Czechia",
      "height": 188,
-     "value": 2236648,
+     "value": 2531209,
      "rating": 7.05,
      "goals": 0,
      "assists": 0,
@@ -76,7 +76,7 @@
      "born": "2005-11-21",
      "country": "Czechia",
      "height": null,
-     "value": 417285,
+     "value": 289061,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -95,7 +95,7 @@
      "born": "2004-12-18",
      "country": "Senegal",
      "height": null,
-     "value": 837450,
+     "value": 950956,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -108,13 +108,13 @@
      "id": 1288146,
      "name": "Stepán Chaloupek",
      "role": "defenders",
-     "position": "CB",
+     "position": "CB,RB",
      "number": 2,
      "age": 23,
      "born": "2003-03-08",
      "country": "Czechia",
      "height": 188,
-     "value": 3135252,
+     "value": 7774445,
      "rating": 7.33,
      "goals": 1,
      "assists": 1,
@@ -133,7 +133,7 @@
      "born": "1993-03-31",
      "country": "Czechia",
      "height": 180,
-     "value": 853206,
+     "value": 893779,
      "rating": 7.16,
      "goals": 1,
      "assists": 0,
@@ -152,7 +152,7 @@
      "born": "2000-11-08",
      "country": "Czechia",
      "height": 190,
-     "value": 4255596,
+     "value": 6686242,
      "rating": 7.23,
      "goals": 1,
      "assists": 0,
@@ -161,7 +161,7 @@
      "red": 0,
      "injury": {
       "typeId": "6",
-      "expectedReturn": "Early October 2026"
+      "expectedReturn": "Doubtful"
      }
     },
     {
@@ -174,7 +174,7 @@
      "born": "2000-02-08",
      "country": "Nigeria",
      "height": 187,
-     "value": 4807484,
+     "value": 6079118,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -196,7 +196,7 @@
      "born": "2003-09-01",
      "country": "France",
      "height": 187,
-     "value": 2098058,
+     "value": 3981810,
      "rating": 6.82,
      "goals": 0,
      "assists": 1,
@@ -218,7 +218,7 @@
      "born": "2001-02-28",
      "country": "Czechia",
      "height": 181,
-     "value": 2656981,
+     "value": 2642643,
      "rating": 7.08,
      "goals": 0,
      "assists": 0,
@@ -237,7 +237,7 @@
      "born": "2006-06-02",
      "country": "Czechia",
      "height": 189,
-     "value": 2476187,
+     "value": 2430157,
      "rating": 7.44,
      "goals": 0,
      "assists": 0,
@@ -275,7 +275,7 @@
      "born": "2006-09-25",
      "country": "Poland",
      "height": 183,
-     "value": 1045989,
+     "value": 1571551,
      "rating": 6.93,
      "goals": 0,
      "assists": 0,
@@ -288,13 +288,13 @@
      "id": 1791841,
      "name": "Adam Rajnoha",
      "role": "midfielders",
-     "position": "CDM,CM",
+     "position": "CM,CDM",
      "number": 9,
      "age": 18,
      "born": "2008-04-14",
      "country": "Slovakia",
      "height": null,
-     "value": 514384,
+     "value": 584152,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -313,7 +313,7 @@
      "born": "2004-07-13",
      "country": "Nigeria",
      "height": null,
-     "value": 1826220,
+     "value": 2191464,
      "rating": 7.28,
      "goals": 0,
      "assists": 2,
@@ -332,7 +332,7 @@
      "born": "2007-04-13",
      "country": "Nigeria",
      "height": null,
-     "value": 1547652,
+     "value": 1693140,
      "rating": 7.65,
      "goals": 1,
      "assists": 1,
@@ -354,7 +354,7 @@
      "born": "2004-01-20",
      "country": "Nigeria",
      "height": 171,
-     "value": 8210331,
+     "value": 11909064,
      "rating": 6.76,
      "goals": 0,
      "assists": 1,
@@ -373,7 +373,7 @@
      "born": "1996-10-23",
      "country": "Czechia",
      "height": 189,
-     "value": 3817828,
+     "value": 5950955,
      "rating": 6.96,
      "goals": 0,
      "assists": 0,
@@ -392,7 +392,7 @@
      "born": "2006-01-19",
      "country": "Ivory Coast",
      "height": null,
-     "value": 1323446,
+     "value": 1588135,
      "rating": 6.32,
      "goals": 0,
      "assists": 0,
@@ -405,13 +405,13 @@
      "id": 806551,
      "name": "Michal Sadílek",
      "role": "midfielders",
-     "position": "CDM,CM,CAM",
+     "position": "CDM,CM",
      "number": 23,
      "age": 27,
      "born": "1999-05-31",
      "country": "Czechia",
      "height": 169,
-     "value": 4614842,
+     "value": 7082023,
      "rating": 7.71,
      "goals": 1,
      "assists": 3,
@@ -449,7 +449,7 @@
      "born": "2004-09-20",
      "country": "Poland",
      "height": 187,
-     "value": 1520930,
+     "value": 1505599,
      "rating": 7.55,
      "goals": 5,
      "assists": 1,
@@ -468,14 +468,17 @@
      "born": "2006-09-12",
      "country": "Czechia",
      "height": 181,
-     "value": 1200916,
+     "value": 1441099,
      "rating": 6.31,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "79",
+      "expectedReturn": "Late October 2026"
+     }
     },
     {
      "id": 1247323,
@@ -487,7 +490,7 @@
      "born": "2000-08-07",
      "country": "Czechia",
      "height": 183,
-     "value": 1965700,
+     "value": 4780717,
      "rating": 7.27,
      "goals": 1,
      "assists": 0,
@@ -506,7 +509,7 @@
      "born": "2006-03-28",
      "country": "Czechia",
      "height": null,
-     "value": 612589,
+     "value": 535371,
      "rating": 6.87,
      "goals": 0,
      "assists": 0,
@@ -525,7 +528,7 @@
      "born": "2007-08-14",
      "country": "Czechia",
      "height": 187,
-     "value": 618993,
+     "value": 686054,
      "rating": 6.11,
      "goals": 0,
      "assists": 0,
@@ -544,7 +547,7 @@
      "born": "1999-01-04",
      "country": "Slovenia",
      "height": 184,
-     "value": 1279540,
+     "value": 1535448,
      "rating": 7.19,
      "goals": 1,
      "assists": 2,
@@ -563,7 +566,7 @@
      "born": "1999-04-29",
      "country": "Czechia",
      "height": 187,
-     "value": 2014627,
+     "value": 3641281,
      "rating": 7.06,
      "goals": 4,
      "assists": 0,
@@ -594,7 +597,7 @@
      "red": 0,
      "injury": {
       "typeId": "121",
-      "expectedReturn": "Late September 2026"
+      "expectedReturn": "Doubtful"
      }
     },
     {
@@ -607,7 +610,7 @@
      "born": "2004-10-28",
      "country": "Nigeria",
      "height": 172,
-     "value": 1096214,
+     "value": 1315456,
      "rating": 7.48,
      "goals": 3,
      "assists": 1,
@@ -626,7 +629,7 @@
      "born": "1995-01-26",
      "country": "Czechia",
      "height": 198,
-     "value": 1366871,
+     "value": 1481738,
      "rating": 7.3,
      "goals": 4,
      "assists": 0,
@@ -645,7 +648,7 @@
      "born": "2006-08-14",
      "country": "Czechia",
      "height": null,
-     "value": 261352,
+     "value": 211184,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -655,7 +658,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-09-29T20:15:35.901Z",
+   "fetchedAt": "2026-10-04T09:27:34.347Z",
    "coachHistory": [
     {
      "name": "Jindřich Trpišovský",
@@ -666,167 +669,167 @@
     "306168": {
      "name": "Tomás Holeš",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "308841": {
      "name": "Ivan Schranz",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "395426": {
      "name": "Ondřej Kolár",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "523217": {
      "name": "Tomás Chorý",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "791682": {
      "name": "Lukás Provod",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "806551": {
      "name": "Michal Sadílek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "928122": {
      "name": "Igoh Ogbu",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "979540": {
      "name": "Tomás Vlček",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "988769": {
      "name": "Mojmír Chytil",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1085401": {
      "name": "David Zima",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1085744": {
      "name": "Jakub Markovič",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1247323": {
      "name": "David Jurásek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1270718": {
      "name": "Danijel Šturm",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1288146": {
      "name": "Stepán Chaloupek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1327747": {
      "name": "Emmanuel Ayaosi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1395322": {
      "name": "Wiktor Nowak",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1405567": {
      "name": "Mikulás Konečný",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1421040": {
      "name": "Ange N'Guessan",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1509423": {
      "name": "David Moses",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1553486": {
      "name": "Eliás Piták",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1585595": {
      "name": "Pavel Kačor",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1647596": {
      "name": "Jakub Kolísek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1666193": {
      "name": "Nazar Domchak",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1744791": {
      "name": "Samuel Isife",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1760112": {
      "name": "Dan Kohout",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1781770": {
      "name": "Toumani Diakité",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1782189": {
      "name": "Oskar Kubiak",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1791316": {
      "name": "Hamidou Kante",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1791346": {
      "name": "Adam Rezek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1791841": {
      "name": "Adam Rajnoha",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1840592": {
      "name": "David Barčot",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1840847": {
      "name": "Mubarak Suleiman",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1893761": {
      "name": "Adonija Ouanda",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     }
    },
    "left": []
@@ -846,7 +849,7 @@
      "born": "2004-11-16",
      "country": "Slovakia",
      "height": null,
-     "value": 419277,
+     "value": 458587,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -884,7 +887,7 @@
      "born": "1992-08-26",
      "country": "Czechia",
      "height": 197,
-     "value": 131248,
+     "value": 160390,
      "rating": 7.3,
      "goals": 0,
      "assists": 0,
@@ -922,7 +925,7 @@
      "born": "2004-07-13",
      "country": "Czechia",
      "height": null,
-     "value": 146539,
+     "value": 138366,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -960,7 +963,7 @@
      "born": "1992-01-05",
      "country": "Czechia",
      "height": 179,
-     "value": 79969,
+     "value": 81214,
      "rating": 6.75,
      "goals": 0,
      "assists": 1,
@@ -973,7 +976,7 @@
      "id": 1507699,
      "name": "Aleko Basiladze",
      "role": "defenders",
-     "position": "LWB",
+     "position": "LWB,LW",
      "number": 6,
      "age": 20,
      "born": "2005-12-30",
@@ -998,7 +1001,7 @@
      "born": "2001-12-08",
      "country": "Togo",
      "height": 185,
-     "value": 535694,
+     "value": 642832,
      "rating": 7.29,
      "goals": 0,
      "assists": 0,
@@ -1017,7 +1020,7 @@
      "born": "2003-04-17",
      "country": "Czechia",
      "height": 185,
-     "value": 259307,
+     "value": 297058,
      "rating": 6.65,
      "goals": 0,
      "assists": 1,
@@ -1036,7 +1039,7 @@
      "born": "2002-02-15",
      "country": "Czechia",
      "height": 179,
-     "value": 485337,
+     "value": 460040,
      "rating": 7.07,
      "goals": 0,
      "assists": 0,
@@ -1096,7 +1099,7 @@
      "born": "1991-01-11",
      "country": "Czechia",
      "height": 175,
-     "value": 130472,
+     "value": 106147,
      "rating": 6.29,
      "goals": 0,
      "assists": 0,
@@ -1118,7 +1121,7 @@
      "born": "2002-10-06",
      "country": "Uganda",
      "height": 175,
-     "value": 950461,
+     "value": 989419,
      "rating": 7.66,
      "goals": 1,
      "assists": 0,
@@ -1137,7 +1140,7 @@
      "born": "1995-03-31",
      "country": "Czechia",
      "height": 182,
-     "value": 199099,
+     "value": 274824,
      "rating": 7.32,
      "goals": 0,
      "assists": 0,
@@ -1178,7 +1181,7 @@
      "born": "1993-02-12",
      "country": "Czechia",
      "height": 179,
-     "value": 200354,
+     "value": 203868,
      "rating": 7.12,
      "goals": 0,
      "assists": 0,
@@ -1216,7 +1219,7 @@
      "born": "2003-03-13",
      "country": "Czechia",
      "height": 181,
-     "value": 1445076,
+     "value": 1458222,
      "rating": 6.72,
      "goals": 1,
      "assists": 0,
@@ -1235,7 +1238,7 @@
      "born": "2004-08-02",
      "country": "Czechia",
      "height": 180,
-     "value": 1262886,
+     "value": 1140584,
      "rating": 6.63,
      "goals": 0,
      "assists": 0,
@@ -1248,13 +1251,13 @@
      "id": 951773,
      "name": "Vasil Kušej",
      "role": "midfielders",
-     "position": "CAM,LW,ST,RW",
+     "position": "CAM,LW,RW",
      "number": 19,
      "age": 26,
      "born": "2000-05-24",
      "country": "Czechia",
      "height": 168,
-     "value": 2224350,
+     "value": 2047305,
      "rating": 7.46,
      "goals": 2,
      "assists": 1,
@@ -1273,7 +1276,7 @@
      "born": "2005-11-29",
      "country": "Senegal",
      "height": 190,
-     "value": 530563,
+     "value": 630265,
      "rating": 6.95,
      "goals": 0,
      "assists": 0,
@@ -1292,7 +1295,7 @@
      "born": "2003-12-19",
      "country": "Czechia",
      "height": 176,
-     "value": 828745,
+     "value": 818166,
      "rating": 6.42,
      "goals": 0,
      "assists": 0,
@@ -1311,7 +1314,7 @@
      "born": "2004-05-08",
      "country": "Czechia",
      "height": 182,
-     "value": 1520355,
+     "value": 1515911,
      "rating": 6.79,
      "goals": 3,
      "assists": 0,
@@ -1324,13 +1327,13 @@
      "id": 1452723,
      "name": "Milan Lexa",
      "role": "attackers",
-     "position": "LW,CM,RW",
+     "position": "LW,RW",
      "number": 15,
      "age": 22,
      "born": "2004-08-21",
      "country": "Czechia",
      "height": 180,
-     "value": 365147,
+     "value": 379768,
      "rating": 6.8,
      "goals": 0,
      "assists": 0,
@@ -1349,7 +1352,7 @@
      "born": "2005-03-03",
      "country": "Slovakia",
      "height": 186,
-     "value": 493456,
+     "value": 420347,
      "rating": 7.12,
      "goals": 3,
      "assists": 1,
@@ -1368,7 +1371,7 @@
      "born": "2004-02-05",
      "country": "Czechia",
      "height": 179,
-     "value": 1033213,
+     "value": 961316,
      "rating": 6.03,
      "goals": 0,
      "assists": 0,
@@ -1387,7 +1390,7 @@
      "born": "2001-11-30",
      "country": "Czechia",
      "height": 177,
-     "value": 285369,
+     "value": 309850,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -1406,7 +1409,7 @@
      "born": "2006-02-02",
      "country": "Czechia",
      "height": null,
-     "value": 546928,
+     "value": 427127,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -1425,7 +1428,7 @@
      "born": "2004-12-04",
      "country": "Slovenia",
      "height": 187,
-     "value": 174397,
+     "value": 251131,
      "rating": 6.33,
      "goals": 0,
      "assists": 0,
@@ -1444,7 +1447,7 @@
      "born": "1998-08-23",
      "country": "Central African Rep.",
      "height": 180,
-     "value": 412088,
+     "value": 426165,
      "rating": 6.64,
      "goals": 1,
      "assists": 1,
@@ -1463,7 +1466,7 @@
      "born": "2001-10-28",
      "country": "Latvia",
      "height": 186,
-     "value": 1378507,
+     "value": 1432662,
      "rating": 6.72,
      "goals": 0,
      "assists": 0,
@@ -1476,7 +1479,7 @@
      }
     }
    ],
-   "fetchedAt": "2026-09-29T20:15:35.901Z",
+   "fetchedAt": "2026-10-04T09:27:34.347Z",
    "coachHistory": [
     {
      "name": "Branislav Fodrek",
@@ -1487,167 +1490,167 @@
     "188109": {
      "name": "Jan Bořil",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "199441": {
      "name": "Jan Mikula",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "211545": {
      "name": "Tomás Koubek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "350592": {
      "name": "Lukás Masopust",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "464299": {
      "name": "Lukás Hůlka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "946410": {
      "name": "Qëndrim Zyba",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "951773": {
      "name": "Vasil Kušej",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1022651": {
      "name": "Jan Knapík",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1048047": {
      "name": "Raimonds Krollis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1132549": {
      "name": "Šimon Gabriel",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1154341": {
      "name": "Vojtěch Stránsky",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1178643": {
      "name": "Vojtěch Sychra",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1183514": {
      "name": "Augustin Drakpe",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1202910": {
      "name": "Lukás Pešl",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1203923": {
      "name": "Lukás Mašek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1225993": {
      "name": "Josef Koželuh",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1247329": {
      "name": "Petr Juliš",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1293353": {
      "name": "Aziz Kayondo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1452723": {
      "name": "Milan Lexa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1453688": {
      "name": "Vénuste Baboula",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1477311": {
      "name": "Patrik Dulay",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1478093": {
      "name": "Alexandr Bužek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1485809": {
      "name": "Matěj Mikulenka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1507699": {
      "name": "Aleko Basiladze",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1531597": {
      "name": "Petr Hodouš",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1572670": {
      "name": "Daniel Rus",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1619616": {
      "name": "Enej Marsetic",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1664963": {
      "name": "Jindřich Musil",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1717353": {
      "name": "Fallou Faye",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1782632": {
      "name": "Haris Berbic",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1791306": {
      "name": "Dominik Kúdelcík",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1807303": {
      "name": "David Hamansenya",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "2141207": {
      "name": "Dominik Dobes",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     }
    },
    "left": []
@@ -1705,7 +1708,7 @@
      "born": "1997-01-03",
      "country": "Czechia",
      "height": 190,
-     "value": 101798,
+     "value": 154794,
      "rating": 7.2,
      "goals": 0,
      "assists": 0,
@@ -1724,7 +1727,7 @@
      "born": "1995-04-03",
      "country": "Slovakia",
      "height": 185,
-     "value": 101074,
+     "value": 157928,
      "rating": 7.19,
      "goals": 0,
      "assists": 1,
@@ -1743,7 +1746,7 @@
      "born": "2005-04-16",
      "country": "Czechia",
      "height": 190,
-     "value": 248845,
+     "value": 186201,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -1762,7 +1765,7 @@
      "born": "1993-01-03",
      "country": "Czechia",
      "height": 181,
-     "value": 103137,
+     "value": 126690,
      "rating": 6.86,
      "goals": 0,
      "assists": 0,
@@ -1781,7 +1784,7 @@
      "born": "2001-09-14",
      "country": "Czechia",
      "height": 189,
-     "value": 204642,
+     "value": 189197,
      "rating": 7.42,
      "goals": 0,
      "assists": 1,
@@ -1800,7 +1803,7 @@
      "born": "2003-02-03",
      "country": "Czechia",
      "height": 186,
-     "value": 189149,
+     "value": 173704,
      "rating": 6.11,
      "goals": 0,
      "assists": 0,
@@ -1838,7 +1841,7 @@
      "born": "2003-07-06",
      "country": "Czechia",
      "height": 196,
-     "value": 710224,
+     "value": 836461,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -1860,7 +1863,7 @@
      "born": "2001-07-12",
      "country": "Czechia",
      "height": 182,
-     "value": 208739,
+     "value": 178143,
      "rating": 6.21,
      "goals": 0,
      "assists": 1,
@@ -1898,7 +1901,7 @@
      "born": "1994-12-01",
      "country": "Czechia",
      "height": 182,
-     "value": 99101,
+     "value": 122654,
      "rating": 6.89,
      "goals": 0,
      "assists": 0,
@@ -1917,7 +1920,7 @@
      "born": "2004-08-09",
      "country": "Czechia",
      "height": 185,
-     "value": 383930,
+     "value": 269873,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -1936,7 +1939,7 @@
      "born": "2001-11-28",
      "country": "Czechia",
      "height": 179,
-     "value": 266280,
+     "value": 233670,
      "rating": 7.19,
      "goals": 1,
      "assists": 1,
@@ -1958,7 +1961,7 @@
      "born": "2003-03-20",
      "country": "Czechia",
      "height": 173,
-     "value": 387870,
+     "value": 356282,
      "rating": 7.32,
      "goals": 1,
      "assists": 1,
@@ -1977,7 +1980,7 @@
      "born": "2006-02-02",
      "country": "Czechia",
      "height": null,
-     "value": 600058,
+     "value": 504809,
      "rating": 6.95,
      "goals": 0,
      "assists": 0,
@@ -1996,7 +1999,7 @@
      "born": "2002-02-22",
      "country": "Czechia",
      "height": 177,
-     "value": 260300,
+     "value": 292538,
      "rating": 6.48,
      "goals": 0,
      "assists": 0,
@@ -2015,7 +2018,7 @@
      "born": "2004-05-05",
      "country": "Czechia",
      "height": null,
-     "value": 188850,
+     "value": 166964,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -2037,7 +2040,7 @@
      "born": "2001-04-19",
      "country": "Slovakia",
      "height": 190,
-     "value": 301314,
+     "value": 293408,
      "rating": 6.31,
      "goals": 1,
      "assists": 0,
@@ -2050,13 +2053,13 @@
      "id": 1664569,
      "name": "Filip Lehký",
      "role": "attackers",
-     "position": "RW,ST",
+     "position": "RW",
      "number": 10,
      "age": 24,
      "born": "2002-06-20",
      "country": "Czechia",
      "height": null,
-     "value": 224268,
+     "value": 198128,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -2078,7 +2081,7 @@
      "born": "2004-02-22",
      "country": "Czechia",
      "height": 184,
-     "value": 326025,
+     "value": 324998,
      "rating": 6.66,
      "goals": 0,
      "assists": 0,
@@ -2091,13 +2094,13 @@
      "id": 1738765,
      "name": "Marek Havran",
      "role": "attackers",
-     "position": "RW",
+     "position": "ST",
      "number": 18,
      "age": 19,
      "born": "2006-10-07",
      "country": "Czechia",
      "height": null,
-     "value": 1361234,
+     "value": 1278094,
      "rating": 6.06,
      "goals": 0,
      "assists": 0,
@@ -2116,7 +2119,7 @@
      "born": "2001-08-08",
      "country": "Nigeria",
      "height": 175,
-     "value": 303603,
+     "value": 285354,
      "rating": 7.61,
      "goals": 3,
      "assists": 3,
@@ -2135,7 +2138,7 @@
      "born": "2002-08-13",
      "country": "Czechia",
      "height": null,
-     "value": 231427,
+     "value": 217885,
      "rating": 7.59,
      "goals": 6,
      "assists": 1,
@@ -2154,7 +2157,7 @@
      "born": "1997-01-05",
      "country": "Czechia",
      "height": 189,
-     "value": 157817,
+     "value": 160283,
      "rating": 7.06,
      "goals": 4,
      "assists": 1,
@@ -2192,7 +2195,7 @@
      "born": "2007-01-16",
      "country": "Czechia",
      "height": null,
-     "value": 1360882,
+     "value": 1240007,
      "rating": 6.69,
      "goals": 1,
      "assists": 1,
@@ -2211,7 +2214,7 @@
      "born": "2005-10-11",
      "country": "Czechia",
      "height": 175,
-     "value": 527927,
+     "value": 458212,
      "rating": 6.19,
      "goals": 0,
      "assists": 0,
@@ -2243,7 +2246,7 @@
      }
     }
    ],
-   "fetchedAt": "2026-09-29T20:15:35.901Z",
+   "fetchedAt": "2026-10-04T09:27:34.347Z",
    "coachHistory": [
     {
      "name": "Aleš Majer",
@@ -2254,107 +2257,107 @@
     "306535": {
      "name": "Matěj Hybš",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "501363": {
      "name": "Martin Králik",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "557049": {
      "name": "Vojtěch Vorel",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "724948": {
      "name": "Ondřej Karafiát",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "724955": {
      "name": "Jirí Klíma",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "731284": {
      "name": "Jirí Floder",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "958404": {
      "name": "Lukás Letenay",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1002625": {
      "name": "David Pech",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1218993": {
      "name": "Daniel Langhamer",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1236318": {
      "name": "David Kozel",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1242202": {
      "name": "Denis Donát",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1252019": {
      "name": "Adam Kadlec",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1344647": {
      "name": "Solomon John",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1355531": {
      "name": "Dominik Mareš",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1395974": {
      "name": "Martin Šubert",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1405564": {
      "name": "Filip Matoušek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1405861": {
      "name": "Matěj Zachoval",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1413275": {
      "name": "Bolu Ogungbayi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1460456": {
      "name": "Vojtěch Hora",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1512617": {
      "name": "Samuel Grygar",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1515606": {
      "name": "Filip Špatenka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1553483": {
      "name": "Stefan Jovanoski",
@@ -2364,47 +2367,47 @@
     "1590141": {
      "name": "Jan Buryán",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1646384": {
      "name": "Josef Kolárík",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1664569": {
      "name": "Filip Lehký",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1738765": {
      "name": "Marek Havran",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1763343": {
      "name": "Jan Zíka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1784381": {
      "name": "Jan Harušťák",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "2022924": {
      "name": "Marek Obdrzalek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "2189528": {
      "name": "Jan Jinoch",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "2189530": {
      "name": "Filip Kolar",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     }
    },
    "left": [
@@ -2450,7 +2453,7 @@
      "born": "2004-10-14",
      "country": "Czechia",
      "height": null,
-     "value": 2178105,
+     "value": 4728552,
      "rating": 6.76,
      "goals": 0,
      "assists": 0,
@@ -2488,7 +2491,7 @@
      "born": "2004-07-04",
      "country": "Czechia",
      "height": 188,
-     "value": 538719,
+     "value": 461564,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -2507,7 +2510,7 @@
      "born": "2000-04-10",
      "country": "Guinea",
      "height": 191,
-     "value": 807634,
+     "value": 983962,
      "rating": 7.38,
      "goals": 0,
      "assists": 2,
@@ -2526,7 +2529,7 @@
      "born": "2002-01-24",
      "country": "Switzerland",
      "height": 187,
-     "value": 614728,
+     "value": 737673,
      "rating": 7.48,
      "goals": 2,
      "assists": 0,
@@ -2545,7 +2548,7 @@
      "born": "2001-01-03",
      "country": "Brazil",
      "height": 179,
-     "value": 650258,
+     "value": 618670,
      "rating": 7.29,
      "goals": 0,
      "assists": 1,
@@ -2564,7 +2567,7 @@
      "born": "1994-12-22",
      "country": "Slovakia",
      "height": 183,
-     "value": 82908,
+     "value": 79874,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -2586,7 +2589,7 @@
      "born": "2002-09-25",
      "country": "Czechia",
      "height": 185,
-     "value": 588785,
+     "value": 573139,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -2608,7 +2611,7 @@
      "born": "1999-04-05",
      "country": "Czechia",
      "height": 191,
-     "value": 544889,
+     "value": 534502,
      "rating": 6.52,
      "goals": 0,
      "assists": 0,
@@ -2630,7 +2633,7 @@
      "born": "2003-11-25",
      "country": "Czechia",
      "height": 183,
-     "value": 1045515,
+     "value": 1042565,
      "rating": 6.44,
      "goals": 0,
      "assists": 1,
@@ -2668,7 +2671,7 @@
      "born": "2001-07-11",
      "country": "Slovakia",
      "height": 189,
-     "value": 412902,
+     "value": 482927,
      "rating": 6.76,
      "goals": 0,
      "assists": 0,
@@ -2683,7 +2686,7 @@
      "role": "defenders",
      "position": "Defender",
      "number": 66,
-     "age": 18,
+     "age": 19,
      "born": "2007-10-04",
      "country": "Czechia",
      "height": null,
@@ -2706,7 +2709,7 @@
      "born": "2000-08-22",
      "country": "Czechia",
      "height": 167,
-     "value": 1746276,
+     "value": 1872070,
      "rating": 6.9,
      "goals": 0,
      "assists": 0,
@@ -2725,7 +2728,7 @@
      "born": "1999-02-11",
      "country": "Czechia",
      "height": 179,
-     "value": 170772,
+     "value": 220810,
      "rating": 6.38,
      "goals": 0,
      "assists": 0,
@@ -2744,7 +2747,7 @@
      "born": "2003-11-22",
      "country": "Croatia",
      "height": null,
-     "value": 1113817,
+     "value": 1092719,
      "rating": 6.44,
      "goals": 1,
      "assists": 0,
@@ -2801,7 +2804,7 @@
      "born": "2001-09-16",
      "country": "Sweden",
      "height": 181,
-     "value": 367721,
+     "value": 324749,
      "rating": 6.6,
      "goals": 0,
      "assists": 1,
@@ -2839,7 +2842,7 @@
      "born": "2002-02-21",
      "country": "Hungary",
      "height": 185,
-     "value": 1531918,
+     "value": 1603845,
      "rating": 7.45,
      "goals": 3,
      "assists": 1,
@@ -2861,7 +2864,7 @@
      "born": "2003-01-22",
      "country": "Czechia",
      "height": 176,
-     "value": 741487,
+     "value": 698523,
      "rating": 6.4,
      "goals": 0,
      "assists": 1,
@@ -2899,7 +2902,7 @@
      "born": "2002-05-18",
      "country": "Czechia",
      "height": 180,
-     "value": 1120167,
+     "value": 1153394,
      "rating": 6.98,
      "goals": 3,
      "assists": 2,
@@ -2918,7 +2921,7 @@
      "born": "2004-02-02",
      "country": "Iceland",
      "height": 194,
-     "value": 268692,
+     "value": 198857,
      "rating": 5.91,
      "goals": 0,
      "assists": 0,
@@ -2937,7 +2940,7 @@
      "born": "2005-07-03",
      "country": "Uganda",
      "height": 191,
-     "value": 576947,
+     "value": 466856,
      "rating": 5.98,
      "goals": 0,
      "assists": 0,
@@ -2956,7 +2959,7 @@
      "born": "2006-08-16",
      "country": "Czechia",
      "height": null,
-     "value": 403895,
+     "value": 276554,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -2975,7 +2978,7 @@
      "born": "2005-02-24",
      "country": "Croatia",
      "height": 182,
-     "value": 1932342,
+     "value": 1907763,
      "rating": 6.86,
      "goals": 1,
      "assists": 1,
@@ -2988,13 +2991,13 @@
      "id": 1255847,
      "name": "David Tkác",
      "role": "attackers",
-     "position": "LW,CAM",
+     "position": "LW",
      "number": 24,
      "age": 24,
      "born": "2002-07-06",
      "country": "Czechia",
      "height": 182,
-     "value": 308957,
+     "value": 292100,
      "rating": 6.6,
      "goals": 2,
      "assists": 0,
@@ -3032,7 +3035,7 @@
      "born": "2000-06-23",
      "country": "Nigeria",
      "height": 170,
-     "value": 947133,
+     "value": 1190210,
      "rating": 7.48,
      "goals": 3,
      "assists": 1,
@@ -3042,7 +3045,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-09-29T20:15:35.901Z",
+   "fetchedAt": "2026-10-04T09:27:34.347Z",
    "coachHistory": [
     {
      "name": "Pavel Hapal",
@@ -3053,162 +3056,162 @@
     "401289": {
      "name": "Jan Kliment",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "406294": {
      "name": "Tomás Huk",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "620144": {
      "name": "Matús Hruška",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "864067": {
      "name": "Dominik Janošek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "887748": {
      "name": "Jan Král",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "954940": {
      "name": "Jirí Spácil",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1049754": {
      "name": "Václav Sejk",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1068733": {
      "name": "Matús Malý",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1069822": {
      "name": "Michal Beran",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1107662": {
      "name": "Péter Baráth",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1133419": {
      "name": "Abubakar Ghali",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1151311": {
      "name": "Jáchym Síp",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1173383": {
      "name": "Louis Lurvink",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1179695": {
      "name": "Hilmir Mikaelsson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1188767": {
      "name": "Léo Borges",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1231591": {
      "name": "Anton Ekeroth",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1232037": {
      "name": "Abdoulaye Sylla",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1255847": {
      "name": "David Tkác",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1258108": {
      "name": "Filip Uriča",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1259696": {
      "name": "Matěj Hadaš",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1357693": {
      "name": "Filip Slavícek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1463177": {
      "name": "Anthony Pavlešić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1508344": {
      "name": "Marko Soldo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1513526": {
      "name": "John Paul Dembe",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1523820": {
      "name": "Fabijan Krivak",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1640976": {
      "name": "Adam Dohnálek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1662742": {
      "name": "Igor Brzyski",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1664964": {
      "name": "Jan Koutný",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1699364": {
      "name": "Patrik Siegl",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1786171": {
      "name": "Daniel Barát",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1821744": {
      "name": "Václav Zahradnícek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "2062052": {
      "name": "Stephane Noumbissie",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     }
    },
    "left": []
@@ -3228,7 +3231,7 @@
      "born": "1999-01-04",
      "country": "Czechia",
      "height": 197,
-     "value": 109045,
+     "value": 90500,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -3243,11 +3246,11 @@
      "role": "keepers",
      "position": "GK",
      "number": 29,
-     "age": 27,
+     "age": 28,
      "born": "1998-10-02",
      "country": "Czechia",
      "height": 196,
-     "value": 244016,
+     "value": 338726,
      "rating": 6.88,
      "goals": 0,
      "assists": 0,
@@ -3266,7 +3269,7 @@
      "born": "2002-11-30",
      "country": "Czechia",
      "height": null,
-     "value": 159988,
+     "value": 133324,
      "rating": 7.43,
      "goals": 0,
      "assists": 0,
@@ -3285,7 +3288,7 @@
      "born": "2002-10-08",
      "country": "Latvia",
      "height": 187,
-     "value": 193062,
+     "value": 171573,
      "rating": 6.54,
      "goals": 0,
      "assists": 2,
@@ -3304,7 +3307,7 @@
      "born": "2004-08-24",
      "country": "Slovakia",
      "height": 186,
-     "value": 671085,
+     "value": 575793,
      "rating": 6.35,
      "goals": 1,
      "assists": 0,
@@ -3323,7 +3326,7 @@
      "born": "2000-08-17",
      "country": "Ukraine",
      "height": 186,
-     "value": 173719,
+     "value": 142331,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -3342,7 +3345,7 @@
      "born": "2002-01-08",
      "country": "Czechia",
      "height": 186,
-     "value": 195637,
+     "value": 196543,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -3380,7 +3383,7 @@
      "born": "2004-06-04",
      "country": "Slovakia",
      "height": 187,
-     "value": 341775,
+     "value": 404992,
      "rating": 7.06,
      "goals": 0,
      "assists": 1,
@@ -3399,7 +3402,7 @@
      "born": "2005-08-01",
      "country": "Slovakia",
      "height": null,
-     "value": 390071,
+     "value": 333591,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -3421,7 +3424,7 @@
      "born": "2003-03-12",
      "country": "Czechia",
      "height": 185,
-     "value": 616007,
+     "value": 683649,
      "rating": 6.51,
      "goals": 0,
      "assists": 0,
@@ -3481,7 +3484,7 @@
      "born": "2001-12-03",
      "country": "Czechia",
      "height": 178,
-     "value": 205023,
+     "value": 168896,
      "rating": 6.73,
      "goals": 0,
      "assists": 1,
@@ -3500,7 +3503,7 @@
      "born": "1997-10-13",
      "country": "Czechia",
      "height": 175,
-     "value": 179524,
+     "value": 162424,
      "rating": 6.57,
      "goals": 0,
      "assists": 0,
@@ -3519,7 +3522,7 @@
      "born": "1999-01-19",
      "country": "Czechia",
      "height": 174,
-     "value": 103838,
+     "value": 119780,
      "rating": 6.98,
      "goals": 1,
      "assists": 1,
@@ -3538,7 +3541,7 @@
      "born": "1998-11-25",
      "country": "Czechia",
      "height": 177,
-     "value": 195744,
+     "value": 220991,
      "rating": 6.82,
      "goals": 1,
      "assists": 0,
@@ -3567,25 +3570,6 @@
      "injury": null
     },
     {
-     "id": 1093747,
-     "name": "Robert Jukl",
-     "role": "midfielders",
-     "position": "CDM,LW",
-     "number": 19,
-     "age": 27,
-     "born": "1998-10-28",
-     "country": "Czechia",
-     "height": 181,
-     "value": 110715,
-     "rating": 6.61,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
      "id": 1682323,
      "name": "Artem Garzha",
      "role": "midfielders",
@@ -3595,7 +3579,7 @@
      "born": "2007-06-03",
      "country": "Ukraine",
      "height": null,
-     "value": 355201,
+     "value": 515784,
      "rating": 5.81,
      "goals": 0,
      "assists": 0,
@@ -3614,7 +3598,7 @@
      "born": "1990-04-17",
      "country": "Czechia",
      "height": 182,
-     "value": 87901,
+     "value": 90138,
      "rating": 7.41,
      "goals": 3,
      "assists": 1,
@@ -3633,31 +3617,12 @@
      "born": "2003-07-27",
      "country": "Czechia",
      "height": 181,
-     "value": 189364,
+     "value": 173704,
      "rating": 6.08,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
      "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1020816,
-     "name": "Matěj Radosta",
-     "role": "midfielders",
-     "position": "RW,RWB,LWB,RM,LM,LW",
-     "number": 35,
-     "age": 25,
-     "born": "2001-05-10",
-     "country": "Czechia",
-     "height": 175,
-     "value": 477604,
-     "rating": 7.32,
-     "goals": 2,
-     "assists": 3,
-     "penalties": 0,
-     "yellow": 2,
      "red": 0,
      "injury": null
     },
@@ -3671,7 +3636,7 @@
      "born": "1998-05-30",
      "country": "Czechia",
      "height": 180,
-     "value": 95824,
+     "value": 107129,
      "rating": 6.37,
      "goals": 0,
      "assists": 0,
@@ -3709,7 +3674,7 @@
      "born": "1997-05-23",
      "country": "Czechia",
      "height": 185,
-     "value": 157817,
+     "value": 177500,
      "rating": 7.07,
      "goals": 4,
      "assists": 1,
@@ -3728,7 +3693,7 @@
      "born": "2001-05-04",
      "country": "Czechia",
      "height": 177,
-     "value": 207801,
+     "value": 181662,
      "rating": 6.34,
      "goals": 0,
      "assists": 0,
@@ -3747,7 +3712,7 @@
      "born": "1992-07-05",
      "country": "Czechia",
      "height": 180,
-     "value": 120720,
+     "value": 121964,
      "rating": 6.66,
      "goals": 0,
      "assists": 0,
@@ -3766,9 +3731,28 @@
      "born": "2006-04-28",
      "country": "Nigeria",
      "height": null,
-     "value": 779422,
+     "value": 696498,
      "rating": 6.75,
      "goals": 4,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1093747,
+     "name": "Robert Jukl",
+     "role": "attackers",
+     "position": "LW",
+     "number": 19,
+     "age": 27,
+     "born": "1998-10-28",
+     "country": "Czechia",
+     "height": 181,
+     "value": 101050,
+     "rating": 6.61,
+     "goals": 0,
      "assists": 0,
      "penalties": 0,
      "yellow": 0,
@@ -3804,7 +3788,7 @@
      "born": "2004-06-26",
      "country": "Czechia",
      "height": 190,
-     "value": 194753,
+     "value": 203228,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -3826,7 +3810,7 @@
      "born": "2000-05-22",
      "country": "Czechia",
      "height": 183,
-     "value": 206502,
+     "value": 244420,
      "rating": 6.37,
      "goals": 1,
      "assists": 0,
@@ -3834,9 +3818,28 @@
      "yellow": 2,
      "red": 0,
      "injury": null
+    },
+    {
+     "id": 1020816,
+     "name": "Matěj Radosta",
+     "role": "attackers",
+     "position": "RW,RWB,LWB,RM,LM,LW",
+     "number": 35,
+     "age": 25,
+     "born": "2001-05-10",
+     "country": "Czechia",
+     "height": 175,
+     "value": 667500,
+     "rating": 7.32,
+     "goals": 2,
+     "assists": 3,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 0,
+     "injury": null
     }
    ],
-   "fetchedAt": "2026-09-29T20:15:35.901Z",
+   "fetchedAt": "2026-10-04T09:27:34.347Z",
    "coachHistory": [
     {
      "name": "Zdenko Frt'ala",
@@ -3847,162 +3850,162 @@
     "114333": {
      "name": "Lukás Mareček",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "196163": {
      "name": "Ladislav Krejcí",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "522962": {
      "name": "Ladislav Takács",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "681100": {
      "name": "Petr Kodeš",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "724949": {
      "name": "Matěj Pulkrab",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "806438": {
      "name": "Jan Fortelný",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "890892": {
      "name": "Marcel Cermák",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "892414": {
      "name": "Matouš Trmal",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "929872": {
      "name": "Tomás Zlatohlávek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "949643": {
      "name": "Luděk Němeček",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "973864": {
      "name": "Daniel Mareček",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "988832": {
      "name": "Michal Bílek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1020816": {
      "name": "Matěj Radosta",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1025346": {
      "name": "Denis Taraduda",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1093747": {
      "name": "Robert Jukl",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1180546": {
      "name": "Dalibor Večerka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1213713": {
      "name": "Matyás Kozák",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1280577": {
      "name": "Josef Švanda",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1388271": {
      "name": "Oskars Vientiess",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1420937": {
      "name": "Jaroslav Harusták",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1451473": {
      "name": "Matej Náprstek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1515625": {
      "name": "Jakub Jakubko",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1549462": {
      "name": "Matej Riznič",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1562647": {
      "name": "Pavel Svatek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1632391": {
      "name": "Nojus Audinis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1681576": {
      "name": "Daniel Danihel",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1682323": {
      "name": "Artem Garzha",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1752384": {
      "name": "Abdourahman Badamosi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1759689": {
      "name": "John Auta",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1784481": {
      "name": "Kryštof Lichtenberg",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1916818": {
      "name": "Sebastian Pech",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1988578": {
      "name": "Idris Hopi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     }
    },
    "left": []
@@ -4022,7 +4025,7 @@
      "born": "2004-02-25",
      "country": "Czechia",
      "height": null,
-     "value": 229476,
+     "value": 221241,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -4041,7 +4044,7 @@
      "born": "2004-02-12",
      "country": "Slovakia",
      "height": 194,
-     "value": 382976,
+     "value": 321497,
      "rating": 6.98,
      "goals": 0,
      "assists": 0,
@@ -4098,7 +4101,7 @@
      "born": "1996-09-11",
      "country": "Czechia",
      "height": 187,
-     "value": 232689,
+     "value": 232521,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -4117,7 +4120,7 @@
      "born": "1993-03-02",
      "country": "Czechia",
      "height": 180,
-     "value": 103338,
+     "value": 99622,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -4158,7 +4161,7 @@
      "born": "2005-01-21",
      "country": "Czechia",
      "height": null,
-     "value": 450426,
+     "value": 374861,
      "rating": 6.07,
      "goals": 0,
      "assists": 0,
@@ -4177,7 +4180,7 @@
      "born": "1993-08-02",
      "country": "Czechia",
      "height": 189,
-     "value": 99260,
+     "value": 63526,
      "rating": 6.39,
      "goals": 0,
      "assists": 0,
@@ -4196,29 +4199,10 @@
      "born": "1998-09-07",
      "country": "Czechia",
      "height": 180,
-     "value": 81120,
+     "value": 85978,
      "rating": null,
      "goals": 0,
      "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1073939,
-     "name": "Bienvenue Kanakimana",
-     "role": "defenders",
-     "position": "RWB",
-     "number": 19,
-     "age": 26,
-     "born": "1999-12-28",
-     "country": "Burundi",
-     "height": 173,
-     "value": 265218,
-     "rating": 5.99,
-     "goals": 0,
-     "assists": 1,
      "penalties": 0,
      "yellow": 1,
      "red": 0,
@@ -4253,7 +4237,7 @@
      "born": "1997-04-26",
      "country": "Czechia",
      "height": 195,
-     "value": 101999,
+     "value": 101798,
      "rating": 7.27,
      "goals": 1,
      "assists": 1,
@@ -4272,7 +4256,7 @@
      "born": "1998-08-28",
      "country": "Czechia",
      "height": 183,
-     "value": 170093,
+     "value": 168384,
      "rating": 6.93,
      "goals": 0,
      "assists": 0,
@@ -4291,7 +4275,7 @@
      "born": "2000-10-07",
      "country": "Mali",
      "height": 178,
-     "value": 654806,
+     "value": 610508,
      "rating": 7.3,
      "goals": 0,
      "assists": 2,
@@ -4329,7 +4313,7 @@
      "born": "2004-06-06",
      "country": "Czechia",
      "height": null,
-     "value": 284028,
+     "value": 358164,
      "rating": 6.51,
      "goals": 1,
      "assists": 0,
@@ -4348,7 +4332,7 @@
      "born": "2000-08-16",
      "country": "Czechia",
      "height": null,
-     "value": 144769,
+     "value": 143525,
      "rating": 6.26,
      "goals": 0,
      "assists": 0,
@@ -4367,7 +4351,7 @@
      "born": "1995-01-07",
      "country": "Czechia",
      "height": 180,
-     "value": 93379,
+     "value": 77436,
      "rating": 6.9,
      "goals": 0,
      "assists": 0,
@@ -4424,7 +4408,7 @@
      "born": "1994-05-04",
      "country": "Czechia",
      "height": 172,
-     "value": 61265,
+     "value": 64214,
      "rating": 6.6,
      "goals": 0,
      "assists": 0,
@@ -4443,7 +4427,7 @@
      "born": "1999-01-21",
      "country": "Czechia",
      "height": 177,
-     "value": 117342,
+     "value": 101400,
      "rating": 6.31,
      "goals": 0,
      "assists": 0,
@@ -4462,7 +4446,7 @@
      "born": "1997-06-12",
      "country": "Czechia",
      "height": 181,
-     "value": 95817,
+     "value": 98082,
      "rating": 6.81,
      "goals": 0,
      "assists": 0,
@@ -4481,7 +4465,7 @@
      "born": "2005-08-08",
      "country": "Nigeria",
      "height": null,
-     "value": 1838722,
+     "value": 1749009,
      "rating": 6.5,
      "goals": 1,
      "assists": 0,
@@ -4500,7 +4484,7 @@
      "born": "2001-06-12",
      "country": "Czechia",
      "height": null,
-     "value": 235368,
+     "value": 209228,
      "rating": 5.89,
      "goals": 0,
      "assists": 0,
@@ -4519,7 +4503,7 @@
      "born": "1998-04-22",
      "country": "Czechia",
      "height": 177,
-     "value": 228423,
+     "value": 232127,
      "rating": 6.99,
      "goals": 3,
      "assists": 1,
@@ -4557,7 +4541,7 @@
      "born": "2004-01-11",
      "country": "Czechia",
      "height": null,
-     "value": 392836,
+     "value": 379660,
      "rating": 7.05,
      "goals": 1,
      "assists": 2,
@@ -4576,12 +4560,31 @@
      "born": "1998-06-11",
      "country": "Czechia",
      "height": null,
-     "value": 396224,
+     "value": 425498,
      "rating": 6.91,
      "goals": 4,
      "assists": 0,
      "penalties": 0,
      "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1073939,
+     "name": "Bienvenue Kanakimana",
+     "role": "attackers",
+     "position": "RWB",
+     "number": 19,
+     "age": 26,
+     "born": "1999-12-28",
+     "country": "Burundi",
+     "height": 173,
+     "value": 263974,
+     "rating": 5.99,
+     "goals": 0,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 1,
      "red": 0,
      "injury": null
     },
@@ -4595,7 +4598,7 @@
      "born": "2004-01-23",
      "country": "Nigeria",
      "height": null,
-     "value": 210725,
+     "value": 267287,
      "rating": 6.6,
      "goals": 1,
      "assists": 0,
@@ -4605,7 +4608,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-09-29T20:15:35.901Z",
+   "fetchedAt": "2026-10-04T09:27:34.347Z",
    "coachHistory": [
     {
      "name": "Martin Svedík",
@@ -4616,12 +4619,12 @@
     "351658": {
      "name": "Jaromír Zmrhal",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "450750": {
      "name": "Tomás Břečka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "468921": {
      "name": "Rigino Cicilia",
@@ -4631,107 +4634,107 @@
     "524436": {
      "name": "Jan Juroška",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "541828": {
      "name": "Petr Sevcík",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "688699": {
      "name": "Jakub Janetzký",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "724903": {
      "name": "Denis Granečný",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "734282": {
      "name": "Jirí Texl",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "736509": {
      "name": "Jakub Pokorný",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "741003": {
      "name": "Patrik Čavoš",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "784251": {
      "name": "Dominik Svácek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "824057": {
      "name": "Patrik Žitný",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "840955": {
      "name": "Antonín Vanícek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "892382": {
      "name": "Filip Vedral",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "895234": {
      "name": "Jakub Klíma",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "936175": {
      "name": "Martin Rymarenko",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "951024": {
      "name": "Daniel Vasulín",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1069063": {
      "name": "Oliver Velich",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1073939": {
      "name": "Bienvenue Kanakimana",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1098066": {
      "name": "Amadou Dante",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1243531": {
      "name": "Adam Hrdina",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1243587": {
      "name": "Tadeás Vachoušek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1362335": {
      "name": "Stepán Langer",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1413865": {
      "name": "Lucky Ezeh",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1439435": {
      "name": "Michal Hlozánek",
@@ -4741,42 +4744,42 @@
     "1452685": {
      "name": "Colin Andrew",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1509437": {
      "name": "Kaka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1553487": {
      "name": "Eric Hunál",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1572469": {
      "name": "Lukás Penxa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1684326": {
      "name": "Lukás Saal",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1684525": {
      "name": "Soliu Afolabi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1784478": {
      "name": "Oldřich Prágr",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1785168": {
      "name": "Ondřej Prodělal",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     }
    },
    "left": [
@@ -4809,7 +4812,7 @@
      "born": "2002-06-28",
      "country": "Slovakia",
      "height": 197,
-     "value": 759553,
+     "value": 911463,
      "rating": 6.69,
      "goals": 0,
      "assists": 0,
@@ -4828,7 +4831,7 @@
      "born": "2002-09-24",
      "country": "Hungary",
      "height": 196,
-     "value": 177324,
+     "value": 174723,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -4841,13 +4844,13 @@
      "id": 212156,
      "name": "Pavel Kaderábek",
      "role": "defenders",
-     "position": "RM,RB,CB,LB",
+     "position": "RB,RM,CB,LB",
      "number": 3,
      "age": 34,
      "born": "1992-04-25",
      "country": "Czechia",
      "height": 182,
-     "value": 530288,
+     "value": 475429,
      "rating": 6.45,
      "goals": 0,
      "assists": 0,
@@ -4866,7 +4869,7 @@
      "born": "1998-03-13",
      "country": "Czechia",
      "height": 185,
-     "value": 688534,
+     "value": 690079,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -4888,7 +4891,7 @@
      "born": "2002-07-25",
      "country": "Norway",
      "height": 201,
-     "value": 2325533,
+     "value": 2176654,
      "rating": 7.58,
      "goals": 1,
      "assists": 0,
@@ -4907,7 +4910,7 @@
      "born": "2007-07-18",
      "country": "Hungary",
      "height": 187,
-     "value": 1222302,
+     "value": 1300139,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -4948,7 +4951,7 @@
      "born": "2004-06-19",
      "country": "Czechia",
      "height": 187,
-     "value": 2534377,
+     "value": 2512387,
      "rating": 6.22,
      "goals": 0,
      "assists": 0,
@@ -4967,7 +4970,7 @@
      "born": "2001-06-13",
      "country": "France",
      "height": 187,
-     "value": 1162755,
+     "value": 1203009,
      "rating": 7.15,
      "goals": 0,
      "assists": 0,
@@ -4986,7 +4989,7 @@
      "born": "2002-01-18",
      "country": "Netherlands",
      "height": 180,
-     "value": 2603630,
+     "value": 2278397,
      "rating": 6.28,
      "goals": 0,
      "assists": 0,
@@ -5005,7 +5008,7 @@
      "born": "1992-08-20",
      "country": "Czechia",
      "height": 189,
-     "value": 176128,
+     "value": 188418,
      "rating": 6.65,
      "goals": 0,
      "assists": 1,
@@ -5024,7 +5027,7 @@
      "born": "1997-11-24",
      "country": "Belgium",
      "height": 188,
-     "value": 228745,
+     "value": 182996,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -5043,7 +5046,7 @@
      "born": "2002-09-11",
      "country": "Czechia",
      "height": 183,
-     "value": 653845,
+     "value": 618908,
      "rating": 6.97,
      "goals": 0,
      "assists": 1,
@@ -5056,13 +5059,13 @@
      "id": 962014,
      "name": "Santiago Eneme",
      "role": "midfielders",
-     "position": "CM,LW,CDM",
+     "position": "CM,LW,CDM,LM",
      "number": 5,
      "age": 26,
      "born": "2000-09-29",
      "country": "Equatorial Guinea",
      "height": 183,
-     "value": 1246438,
+     "value": 1213806,
      "rating": 6.47,
      "goals": 0,
      "assists": 0,
@@ -5103,7 +5106,7 @@
      "born": "2001-05-30",
      "country": "Czechia",
      "height": 186,
-     "value": 2219698,
+     "value": 2227455,
      "rating": 7.16,
      "goals": 1,
      "assists": 1,
@@ -5122,7 +5125,7 @@
      "born": "2000-05-13",
      "country": "Scotland",
      "height": 190,
-     "value": 2826570,
+     "value": 2773713,
      "rating": 7.23,
      "goals": 2,
      "assists": 1,
@@ -5141,7 +5144,7 @@
      "born": "2002-05-08",
      "country": "Norway",
      "height": 185,
-     "value": 2152320,
+     "value": 2136875,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -5163,7 +5166,7 @@
      "born": "2003-06-20",
      "country": "Czechia",
      "height": 190,
-     "value": 2716063,
+     "value": 5452388,
      "rating": 6.73,
      "goals": 0,
      "assists": 1,
@@ -5182,7 +5185,7 @@
      "born": "1997-04-18",
      "country": "Czechia",
      "height": 188,
-     "value": 137769,
+     "value": 181787,
      "rating": 7.16,
      "goals": 0,
      "assists": 0,
@@ -5220,7 +5223,7 @@
      "born": "2004-07-07",
      "country": "Costa Rica",
      "height": 185,
-     "value": 3498514,
+     "value": 3980840,
      "rating": 7.3,
      "goals": 4,
      "assists": 1,
@@ -5239,14 +5242,17 @@
      "born": "2003-07-02",
      "country": "Czechia",
      "height": 186,
-     "value": 5541318,
+     "value": 6299857,
      "rating": 7.81,
      "goals": 3,
      "assists": 2,
      "penalties": 2,
      "yellow": 1,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "130",
+      "expectedReturn": "Doubtful"
+     }
     },
     {
      "id": 737073,
@@ -5258,7 +5264,7 @@
      "born": "2000-08-07",
      "country": "Norway",
      "height": 188,
-     "value": 3106155,
+     "value": 5418030,
      "rating": 6.83,
      "goals": 1,
      "assists": 1,
@@ -5271,13 +5277,13 @@
      "id": 1109100,
      "name": "John Mercado",
      "role": "attackers",
-     "position": "RW,CAM,LW,LB,LM",
+     "position": "RW,LW,LB,LM,RM",
      "number": 17,
      "age": 24,
      "born": "2002-06-03",
      "country": "Ecuador",
      "height": 185,
-     "value": 2705536,
+     "value": 3615878,
      "rating": 7.43,
      "goals": 4,
      "assists": 1,
@@ -5290,13 +5296,13 @@
      "id": 1248991,
      "name": "Joao Grimaldo",
      "role": "attackers",
-     "position": "LW,RW",
+     "position": "RW,LW",
      "number": 21,
      "age": 23,
      "born": "2003-02-20",
      "country": "Peru",
      "height": 175,
-     "value": 587626,
+     "value": 638264,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -5315,7 +5321,7 @@
      "born": "2003-09-10",
      "country": "The Gambia",
      "height": 183,
-     "value": 983502,
+     "value": 968057,
      "rating": 6.73,
      "goals": 1,
      "assists": 0,
@@ -5334,7 +5340,7 @@
      "born": "2004-02-26",
      "country": "Czechia",
      "height": 189,
-     "value": 1991913,
+     "value": 2031618,
      "rating": 5.8,
      "goals": 0,
      "assists": 0,
@@ -5353,7 +5359,7 @@
      "born": "2003-08-30",
      "country": "Czechia",
      "height": 181,
-     "value": 4780979,
+     "value": 4639223,
      "rating": 6.38,
      "goals": 0,
      "assists": 0,
@@ -5372,7 +5378,7 @@
      "born": "2007-03-23",
      "country": "Czechia",
      "height": null,
-     "value": 681459,
+     "value": 672610,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -5385,7 +5391,7 @@
      }
     }
    ],
-   "fetchedAt": "2026-09-29T20:15:35.901Z",
+   "fetchedAt": "2026-10-04T09:27:34.347Z",
    "coachHistory": [
     {
      "name": "Brian Priske",
@@ -5396,77 +5402,77 @@
     "212156": {
      "name": "Pavel Kaderábek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "249063": {
      "name": "Jaroslav Zelený",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "722837": {
      "name": "Elias Cobbaut",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "737073": {
      "name": "Jonatan Braut Brunes",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "769342": {
      "name": "Roman Macek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "824624": {
      "name": "Magnus Kofod Andersen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "849404": {
      "name": "Sivert Heggheim Mannsverk",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "863359": {
      "name": "Andy Irving",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "949216": {
      "name": "Loïc Mbe Soh",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "962014": {
      "name": "Santiago Eneme",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1010733": {
      "name": "Ki-Jana Hoever",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1041207": {
      "name": "Jakub Martinec",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1089879": {
      "name": "Krisztián Hegyi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1109100": {
      "name": "John Mercado",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1135655": {
      "name": "Adam Karabec",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1192094": {
      "name": "Daniel Kerl",
@@ -5476,77 +5482,77 @@
     "1202883": {
      "name": "Matěj Jurásek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1215062": {
      "name": "Matěj Ryneš",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1248991": {
      "name": "Joao Grimaldo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1250673": {
      "name": "Tobias Guddal",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1296660": {
      "name": "Josimar Alcócer",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1310253": {
      "name": "Martin Suchomel",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1348062": {
      "name": "Ebrima Singhateh",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1358568": {
      "name": "Patrik Vydra",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1390258": {
      "name": "Jakub Surovcík",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1437308": {
      "name": "Matyás Vojta",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1559847": {
      "name": "Adam Sevínsky",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1585830": {
      "name": "Viktor Vitályos",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1646388": {
      "name": "Ondřej Penxa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1647524": {
      "name": "Emmanuel Uchenna",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1764021": {
      "name": "Hugo Sochůrek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     }
    },
    "left": [
@@ -5573,7 +5579,7 @@
      "born": "1988-04-28",
      "country": "Czechia",
      "height": 188,
-     "value": 74122,
+     "value": 77607,
      "rating": 6.62,
      "goals": 0,
      "assists": 0,
@@ -5611,7 +5617,7 @@
      "born": "2001-12-31",
      "country": "Slovenia",
      "height": 189,
-     "value": 248973,
+     "value": 217079,
      "rating": 6.72,
      "goals": 0,
      "assists": 0,
@@ -5649,7 +5655,7 @@
      "born": "1997-03-02",
      "country": "Serbia",
      "height": 186,
-     "value": 205419,
+     "value": 235455,
      "rating": 7.3,
      "goals": 0,
      "assists": 0,
@@ -5668,7 +5674,7 @@
      "born": "2004-05-19",
      "country": "Serbia",
      "height": 186,
-     "value": 1107819,
+     "value": 1213043,
      "rating": 6.89,
      "goals": 0,
      "assists": 0,
@@ -5681,13 +5687,13 @@
      "id": 997556,
      "name": "Martin Cedidla",
      "role": "defenders",
-     "position": "CB,RB,RWB",
+     "position": "CB,RB",
      "number": 18,
      "age": 24,
      "born": "2001-11-22",
      "country": "Czechia",
      "height": 184,
-     "value": 695821,
+     "value": 734755,
      "rating": 7.35,
      "goals": 3,
      "assists": 0,
@@ -5706,7 +5712,7 @@
      "born": "1999-01-08",
      "country": "Czechia",
      "height": 177,
-     "value": 205628,
+     "value": 164502,
      "rating": 6.68,
      "goals": 0,
      "assists": 0,
@@ -5725,7 +5731,7 @@
      "born": "1990-06-26",
      "country": "Czechia",
      "height": 184,
-     "value": 98220,
+     "value": 89942,
      "rating": 7.44,
      "goals": 1,
      "assists": 0,
@@ -5744,7 +5750,7 @@
      "born": "2002-03-25",
      "country": "Nigeria",
      "height": 184,
-     "value": 225826,
+     "value": 237781,
      "rating": 6.18,
      "goals": 0,
      "assists": 0,
@@ -5763,7 +5769,7 @@
      "born": "1993-08-05",
      "country": "Georgia",
      "height": 173,
-     "value": 168516,
+     "value": 134812,
      "rating": 7.12,
      "goals": 0,
      "assists": 0,
@@ -5782,7 +5788,7 @@
      "born": "1996-04-07",
      "country": "Czechia",
      "height": 171,
-     "value": 322974,
+     "value": 326488,
      "rating": 6.22,
      "goals": 0,
      "assists": 0,
@@ -5801,7 +5807,7 @@
      "born": "1999-03-22",
      "country": "Czechia",
      "height": 187,
-     "value": 236316,
+     "value": 134004,
      "rating": 6.52,
      "goals": 1,
      "assists": 0,
@@ -5839,7 +5845,7 @@
      "born": "1999-06-21",
      "country": "Czechia",
      "height": 169,
-     "value": 283705,
+     "value": 294400,
      "rating": 7.31,
      "goals": 0,
      "assists": 3,
@@ -5852,13 +5858,13 @@
      "id": 922813,
      "name": "Daniel Souček",
      "role": "midfielders",
-     "position": "RWB,RM,CB,CM",
+     "position": "RWB,RM,CM",
      "number": 14,
      "age": 28,
      "born": "1998-07-18",
      "country": "Czechia",
      "height": 180,
-     "value": 94518,
+     "value": 91796,
      "rating": 6.56,
      "goals": 0,
      "assists": 0,
@@ -5877,7 +5883,7 @@
      "born": "1999-12-20",
      "country": "Czechia",
      "height": 179,
-     "value": 189026,
+     "value": 190069,
      "rating": 6.77,
      "goals": 1,
      "assists": 1,
@@ -5896,7 +5902,7 @@
      "born": "2005-02-25",
      "country": "Czechia",
      "height": null,
-     "value": 322173,
+     "value": 257787,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -5915,7 +5921,7 @@
      "born": "1995-04-20",
      "country": "Ukraine",
      "height": 186,
-     "value": 165096,
+     "value": 132076,
      "rating": 6.03,
      "goals": 0,
      "assists": 0,
@@ -5934,7 +5940,7 @@
      "born": "2002-01-25",
      "country": "Slovakia",
      "height": 183,
-     "value": 1003801,
+     "value": 996064,
      "rating": 7.1,
      "goals": 0,
      "assists": 1,
@@ -5953,7 +5959,7 @@
      "born": "2002-02-19",
      "country": "Burkina Faso",
      "height": 187,
-     "value": 160481,
+     "value": 180903,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -5972,7 +5978,7 @@
      "born": "2003-12-25",
      "country": "Cameroon",
      "height": null,
-     "value": 593507,
+     "value": 511132,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -5991,7 +5997,7 @@
      "born": "1996-01-18",
      "country": "Czechia",
      "height": 179,
-     "value": 95817,
+     "value": 79674,
      "rating": 7.43,
      "goals": 1,
      "assists": 2,
@@ -6010,7 +6016,7 @@
      "born": "2001-10-16",
      "country": "Sweden",
      "height": 188,
-     "value": 227915,
+     "value": 206671,
      "rating": 6.44,
      "goals": 0,
      "assists": 0,
@@ -6029,7 +6035,7 @@
      "born": "2003-07-25",
      "country": "Cameroon",
      "height": 176,
-     "value": 803620,
+     "value": 611044,
      "rating": 6.83,
      "goals": 1,
      "assists": 0,
@@ -6048,7 +6054,7 @@
      "born": "1990-10-12",
      "country": "Czechia",
      "height": 180,
-     "value": 145294,
+     "value": 129515,
      "rating": 6.86,
      "goals": 1,
      "assists": 0,
@@ -6067,7 +6073,7 @@
      "born": "2003-11-11",
      "country": "Slovakia",
      "height": 181,
-     "value": 601408,
+     "value": 560832,
      "rating": 6.48,
      "goals": 0,
      "assists": 1,
@@ -6086,7 +6092,7 @@
      "born": "2003-02-15",
      "country": "Czechia",
      "height": 186,
-     "value": 427662,
+     "value": 315821,
      "rating": 6.06,
      "goals": 0,
      "assists": 0,
@@ -6105,7 +6111,7 @@
      "born": "2004-09-15",
      "country": "Australia",
      "height": 175,
-     "value": 939176,
+     "value": 853669,
      "rating": 7.3,
      "goals": 1,
      "assists": 0,
@@ -6124,7 +6130,7 @@
      "born": "1995-03-15",
      "country": "The Gambia",
      "height": 195,
-     "value": 165310,
+     "value": 240697,
      "rating": 6.18,
      "goals": 0,
      "assists": 0,
@@ -6134,7 +6140,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-09-29T20:15:35.901Z",
+   "fetchedAt": "2026-10-04T09:27:34.347Z",
    "coachHistory": [
     {
      "name": "Luboš Kozel",
@@ -6145,142 +6151,142 @@
     "169270": {
      "name": "Jan Chramosta",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "170411": {
      "name": "Filip Novák",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "178123": {
      "name": "Jan Hanuš",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "340940": {
      "name": "Eduard Sobol",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "464514": {
      "name": "Vakhtang Tchanturishvili",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "559451": {
      "name": "Jan Suchan",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "559503": {
      "name": "Filip Zorvan",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "776562": {
      "name": "Lamin Jawo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "805256": {
      "name": "Antonín Růsek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "922813": {
      "name": "Daniel Souček",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "923526": {
      "name": "Jirí Sláma",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "948213": {
      "name": "Nemanja Tekijaški",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "956673": {
      "name": "Richard Sedlácek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "963947": {
      "name": "Sebastian Nebyla",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "997555": {
      "name": "Matěj Polidar",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "997556": {
      "name": "Martin Cedidla",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1054770": {
      "name": "Filip Vecheta",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1100300": {
      "name": "Michal Kukučka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1185132": {
      "name": "Nassim Innocenti",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1255939": {
      "name": "Dominik Hollý",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1284070": {
      "name": "Nelson Okeke",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1284324": {
      "name": "Klemen Mihelak",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1324022": {
      "name": "Garang Kuol",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1334740": {
      "name": "David Nykrín",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1395204": {
      "name": "Saidou Alioum",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1527075": {
      "name": "Roman Horák",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1549080": {
      "name": "Hugo Ahl",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1585464": {
      "name": "Kevin-Prince Milla",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1611134": {
      "name": "Albert Kotlín",
@@ -6290,12 +6296,12 @@
     "1675512": {
      "name": "Dušan Pavlović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "2124832": {
      "name": "Salem Tubic",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     }
    },
    "left": [
@@ -6341,7 +6347,7 @@
      "born": "2000-08-06",
      "country": "Czechia",
      "height": 193,
-     "value": 1743011,
+     "value": 1802890,
      "rating": 7.29,
      "goals": 0,
      "assists": 0,
@@ -6379,7 +6385,7 @@
      "born": "2005-04-09",
      "country": "Slovakia",
      "height": null,
-     "value": 1430065,
+     "value": 954667,
      "rating": 6.56,
      "goals": 0,
      "assists": 0,
@@ -6398,7 +6404,7 @@
      "born": "1992-02-02",
      "country": "Czechia",
      "height": 199,
-     "value": 106790,
+     "value": 85432,
      "rating": 6.49,
      "goals": 0,
      "assists": 0,
@@ -6420,7 +6426,7 @@
      "born": "1999-07-10",
      "country": "Czechia",
      "height": 190,
-     "value": 212821,
+     "value": 206786,
      "rating": 7.17,
      "goals": 0,
      "assists": 0,
@@ -6439,7 +6445,7 @@
      "born": "2001-02-07",
      "country": "Slovakia",
      "height": null,
-     "value": 252238,
+     "value": 240487,
      "rating": 7.26,
      "goals": 0,
      "assists": 0,
@@ -6458,7 +6464,7 @@
      "born": "2003-06-13",
      "country": "Czechia",
      "height": 186,
-     "value": 187452,
+     "value": 149961,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -6480,7 +6486,7 @@
      "born": "1997-07-17",
      "country": "Czechia",
      "height": 176,
-     "value": 692859,
+     "value": 628062,
      "rating": 6.44,
      "goals": 0,
      "assists": 0,
@@ -6502,7 +6508,7 @@
      "born": "1998-06-04",
      "country": "Czechia",
      "height": 182,
-     "value": 118077,
+     "value": 164767,
      "rating": 7.22,
      "goals": 1,
      "assists": 0,
@@ -6540,7 +6546,7 @@
      "born": "2003-05-12",
      "country": "Spain",
      "height": 186,
-     "value": 271485,
+     "value": 240098,
      "rating": 6.08,
      "goals": 0,
      "assists": 0,
@@ -6578,7 +6584,7 @@
      "born": "2005-08-23",
      "country": "Angola",
      "height": 184,
-     "value": 266580,
+     "value": 201552,
      "rating": 6.5,
      "goals": 0,
      "assists": 0,
@@ -6597,7 +6603,7 @@
      "born": "2000-02-09",
      "country": "Czechia",
      "height": 181,
-     "value": 768611,
+     "value": 764145,
      "rating": 6.55,
      "goals": 0,
      "assists": 0,
@@ -6616,7 +6622,7 @@
      "born": "1992-08-24",
      "country": "Netherlands",
      "height": 184,
-     "value": 145878,
+     "value": 192426,
      "rating": 6.91,
      "goals": 2,
      "assists": 1,
@@ -6635,7 +6641,7 @@
      "born": "1998-03-06",
      "country": "Slovakia",
      "height": 183,
-     "value": 144779,
+     "value": 115823,
      "rating": 6.91,
      "goals": 0,
      "assists": 1,
@@ -6654,7 +6660,7 @@
      "born": "1990-08-08",
      "country": "Czechia",
      "height": 171,
-     "value": 194584,
+     "value": 265331,
      "rating": 7.46,
      "goals": 1,
      "assists": 0,
@@ -6673,7 +6679,7 @@
      "born": "2004-12-21",
      "country": "Czechia",
      "height": 185,
-     "value": 1312980,
+     "value": 1228894,
      "rating": 7.07,
      "goals": 3,
      "assists": 0,
@@ -6730,7 +6736,7 @@
      "born": "2000-05-10",
      "country": "Czechia",
      "height": 184,
-     "value": 677362,
+     "value": 744925,
      "rating": 7.04,
      "goals": 0,
      "assists": 2,
@@ -6752,7 +6758,7 @@
      "born": "1997-07-17",
      "country": "Czechia",
      "height": 175,
-     "value": 202617,
+     "value": 209595,
      "rating": 6.78,
      "goals": 0,
      "assists": 0,
@@ -6771,7 +6777,7 @@
      "born": "1997-01-28",
      "country": "Czechia",
      "height": 184,
-     "value": 106013,
+     "value": 84810,
      "rating": 6.12,
      "goals": 0,
      "assists": 0,
@@ -6793,7 +6799,7 @@
      "born": "1994-09-04",
      "country": "Czechia",
      "height": 169,
-     "value": 201598,
+     "value": 203868,
      "rating": 6.18,
      "goals": 0,
      "assists": 0,
@@ -6812,7 +6818,7 @@
      "born": "1997-04-02",
      "country": "Czechia",
      "height": 188,
-     "value": 287924,
+     "value": 368987,
      "rating": 6.22,
      "goals": 0,
      "assists": 0,
@@ -6834,7 +6840,7 @@
      "born": "2000-08-13",
      "country": "Czechia",
      "height": 190,
-     "value": 1704567,
+     "value": 1675766,
      "rating": 7.12,
      "goals": 1,
      "assists": 1,
@@ -6844,7 +6850,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-09-29T20:15:35.901Z",
+   "fetchedAt": "2026-10-04T09:27:34.347Z",
    "coachHistory": [
     {
      "name": "David Horejš",
@@ -6855,137 +6861,137 @@
     "196311": {
      "name": "Vladimír Darida",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "279110": {
      "name": "Mick van Buren",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "317273": {
      "name": "Tomás Petrásek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "524660": {
      "name": "Juraj Chvátal",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "559481": {
      "name": "Adam Vlkanova",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "559500": {
      "name": "Daniel Trubač",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "591775": {
      "name": "Ondřej Mihálik",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "690175": {
      "name": "Jakub Kučera",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "846315": {
      "name": "František Čech",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "865046": {
      "name": "Tomás Wiesner",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "928696": {
      "name": "Tomás Čvančara",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "933789": {
      "name": "Samuel Dancák",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "941552": {
      "name": "Filip Cihák",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "955194": {
      "name": "Matěj Valenta",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1132554": {
      "name": "Daniel Horák",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1164495": {
      "name": "Viktor Zentrich",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1202882": {
      "name": "Matyás Vágner",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1278516": {
      "name": "Patrik Vízek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1382975": {
      "name": "Jakub Uhrinčať",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1397849": {
      "name": "Filip Mielke",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1398355": {
      "name": "Adam Zadražil",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1403896": {
      "name": "Elione Fernandes Neto",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1435935": {
      "name": "Tom Sloncík",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1443858": {
      "name": "Ro Abajas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1467030": {
      "name": "David Ludvícek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1975766": {
      "name": "Stepan Ponikelsky",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1997557": {
      "name": "Abdullahi Umar",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     }
    },
    "left": []
@@ -7005,7 +7011,7 @@
      "born": "2004-05-10",
      "country": "Slovakia",
      "height": 193,
-     "value": 243168,
+     "value": 195319,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -7043,7 +7049,7 @@
      "born": "2005-01-16",
      "country": "Czechia",
      "height": 201,
-     "value": 907732,
+     "value": 878625,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -7062,7 +7068,7 @@
      "born": "2001-03-21",
      "country": "Austria",
      "height": 205,
-     "value": 1354053,
+     "value": 1624863,
      "rating": 6.55,
      "goals": 0,
      "assists": 0,
@@ -7081,7 +7087,7 @@
      "born": "2000-06-01",
      "country": "Czechia",
      "height": 189,
-     "value": 177150,
+     "value": 176677,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -7100,7 +7106,7 @@
      "born": "2007-10-25",
      "country": "Slovakia",
      "height": 187,
-     "value": 2195724,
+     "value": 2265690,
      "rating": 6.83,
      "goals": 0,
      "assists": 0,
@@ -7119,7 +7125,7 @@
      "born": "1996-04-10",
      "country": "Slovakia",
      "height": 190,
-     "value": 1966121,
+     "value": 1994808,
      "rating": 7.07,
      "goals": 0,
      "assists": 0,
@@ -7138,7 +7144,7 @@
      "born": "2003-05-18",
      "country": "Czechia",
      "height": 189,
-     "value": 2571762,
+     "value": 2848354,
      "rating": 6.33,
      "goals": 0,
      "assists": 0,
@@ -7151,13 +7157,13 @@
      "id": 1199113,
      "name": "Merchas Doski",
      "role": "defenders",
-     "position": "LB,CB,LM,LWB",
+     "position": "LB,CB,LM",
      "number": 14,
      "age": 26,
      "born": "1999-12-07",
      "country": "Iraq",
      "height": 173,
-     "value": 1098782,
+     "value": 1261164,
      "rating": 6.39,
      "goals": 0,
      "assists": 0,
@@ -7176,7 +7182,7 @@
      "born": "1995-06-23",
      "country": "Czechia",
      "height": 186,
-     "value": 746015,
+     "value": 749529,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -7192,13 +7198,13 @@
      "id": 1412131,
      "name": "Jan Paluska",
      "role": "defenders",
-     "position": "CB,RB",
+     "position": "RB,CB",
      "number": 22,
      "age": 21,
      "born": "2005-06-23",
      "country": "Czechia",
      "height": 193,
-     "value": 2357982,
+     "value": 4110741,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -7211,6 +7217,25 @@
      }
     },
     {
+     "id": 1198713,
+     "name": "Adam Gabriel",
+     "role": "defenders",
+     "position": "RB",
+     "number": 29,
+     "age": 25,
+     "born": "2001-05-28",
+     "country": "Czechia",
+     "height": 190,
+     "value": 426972,
+     "rating": 6.8,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
      "id": 1293671,
      "name": "Sampson Dweh",
      "role": "defenders",
@@ -7220,7 +7245,7 @@
      "born": "2001-10-10",
      "country": "Liberia",
      "height": 180,
-     "value": 3504768,
+     "value": 5617686,
      "rating": 7.26,
      "goals": 1,
      "assists": 0,
@@ -7239,7 +7264,7 @@
      "born": "2003-03-04",
      "country": "Czechia",
      "height": 188,
-     "value": 945328,
+     "value": 993684,
      "rating": 6.57,
      "goals": 0,
      "assists": 0,
@@ -7258,7 +7283,7 @@
      "born": "2001-04-10",
      "country": "Czechia",
      "height": 179,
-     "value": 3743902,
+     "value": 6444720,
      "rating": 6.91,
      "goals": 1,
      "assists": 0,
@@ -7277,7 +7302,7 @@
      "born": "2003-04-02",
      "country": "Czechia",
      "height": 188,
-     "value": 1288540,
+     "value": 1887867,
      "rating": 6.92,
      "goals": 0,
      "assists": 2,
@@ -7296,7 +7321,7 @@
      "born": "1992-04-22",
      "country": "Slovakia",
      "height": 172,
-     "value": 626887,
+     "value": 689128,
      "rating": 7.08,
      "goals": 1,
      "assists": 2,
@@ -7315,7 +7340,7 @@
      "born": "1997-04-24",
      "country": "Czechia",
      "height": 178,
-     "value": 801863,
+     "value": 841710,
      "rating": 6.48,
      "goals": 1,
      "assists": 0,
@@ -7328,13 +7353,13 @@
      "id": 1225210,
      "name": "Cheick Souaré",
      "role": "midfielders",
-     "position": "RW,CAM,CDM,LM,LWB,LB",
+     "position": "RW,CAM,LM,LWB,LB,CDM",
      "number": 19,
      "age": 24,
      "born": "2002-09-03",
      "country": "France",
      "height": 185,
-     "value": 2123360,
+     "value": 2252811,
      "rating": 6.97,
      "goals": 1,
      "assists": 2,
@@ -7353,31 +7378,12 @@
      "born": "2007-11-15",
      "country": "Czechia",
      "height": null,
-     "value": 2025763,
+     "value": 1949545,
      "rating": 6.15,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
      "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1198713,
-     "name": "Adam Gabriel",
-     "role": "midfielders",
-     "position": "RM,RB",
-     "number": 29,
-     "age": 25,
-     "born": "2001-05-28",
-     "country": "Czechia",
-     "height": 190,
-     "value": 663455,
-     "rating": 6.8,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
      "red": 0,
      "injury": null
     },
@@ -7391,7 +7397,7 @@
      "born": "2003-02-09",
      "country": "Serbia",
      "height": 182,
-     "value": 952947,
+     "value": 1457981,
      "rating": 6.12,
      "goals": 0,
      "assists": 0,
@@ -7404,13 +7410,13 @@
      "id": 1300385,
      "name": "Amar Memić",
      "role": "midfielders",
-     "position": "RW,RB,RWB,RM,LM,LW",
+     "position": "RB,RW,RWB,RM,LM,LW",
      "number": 99,
      "age": 25,
      "born": "2001-01-20",
      "country": "Bosnia and Herzegovina",
      "height": 176,
-     "value": 2366379,
+     "value": 2568315,
      "rating": 7.33,
      "goals": 2,
      "assists": 3,
@@ -7429,7 +7435,7 @@
      "born": "2003-01-15",
      "country": "Nigeria",
      "height": null,
-     "value": 1475100,
+     "value": 1520017,
      "rating": 5.92,
      "goals": 0,
      "assists": 0,
@@ -7442,13 +7448,13 @@
      "id": 1202885,
      "name": "Denis Višinský",
      "role": "attackers",
-     "position": "LW,CAM,RW,LWB,ST,RM",
+     "position": "LW,RW,LWB,ST,RM,CAM",
      "number": 9,
      "age": 23,
      "born": "2003-03-21",
      "country": "Czechia",
      "height": 177,
-     "value": 2389373,
+     "value": 2482060,
      "rating": 6.63,
      "goals": 1,
      "assists": 1,
@@ -7467,7 +7473,7 @@
      "born": "2005-11-03",
      "country": "Guinea",
      "height": null,
-     "value": 1490948,
+     "value": 2037487,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -7486,7 +7492,7 @@
      "born": "1992-05-01",
      "country": "Czechia",
      "height": 180,
-     "value": 281225,
+     "value": 262436,
      "rating": 6.65,
      "goals": 1,
      "assists": 0,
@@ -7508,7 +7514,7 @@
      "born": "2003-04-03",
      "country": "The Gambia",
      "height": 187,
-     "value": 1172732,
+     "value": 2110920,
      "rating": 6.62,
      "goals": 1,
      "assists": 0,
@@ -7527,7 +7533,7 @@
      "born": "2003-08-27",
      "country": "Czechia",
      "height": 188,
-     "value": 862903,
+     "value": 884352,
      "rating": 6.86,
      "goals": 3,
      "assists": 0,
@@ -7546,7 +7552,7 @@
      "born": "2003-09-23",
      "country": "Ghana",
      "height": 179,
-     "value": 1992259,
+     "value": 2126770,
      "rating": 6.44,
      "goals": 1,
      "assists": 0,
@@ -7556,7 +7562,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-09-29T20:15:35.901Z",
+   "fetchedAt": "2026-10-04T09:27:34.347Z",
    "coachHistory": [
     {
      "name": "Radoslav Kováč",
@@ -7567,147 +7573,147 @@
     "196308": {
      "name": "Matěj Vydra",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "351661": {
      "name": "Patrik Hrošovský",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "442602": {
      "name": "Denis Vavro",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "750473": {
      "name": "Václav Jemelka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "791677": {
      "name": "Tomás Ladra",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1039086": {
      "name": "Marián Tvrdoň",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1151313": {
      "name": "Lukás Červ",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1184444": {
      "name": "Christophe Kabongo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1198713": {
      "name": "Adam Gabriel",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1199113": {
      "name": "Merchas Doski",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1202885": {
      "name": "Denis Višinský",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1220633": {
      "name": "Prince Adu",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1225210": {
      "name": "Cheick Souaré",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1225994": {
      "name": "Václav Míka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1293671": {
      "name": "Sampson Dweh",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1300385": {
      "name": "Amar Memić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1357694": {
      "name": "Filip Prebsl",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1379393": {
      "name": "Dominik Ťapaj",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1412131": {
      "name": "Jan Paluska",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1478281": {
      "name": "Alexandr Sojka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1478703": {
      "name": "Salim Fago Lawal",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1482721": {
      "name": "Viktor Baier",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1514693": {
      "name": "Florian Wiegele",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1611068": {
      "name": "Karel Spácil",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1621131": {
      "name": "Stefan Pirgić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1662432": {
      "name": "Jirí Panoš",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1676861": {
      "name": "Tobiás Paliscák",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1722302": {
      "name": "Baboucarr Faal",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1734096": {
      "name": "Mohamed Toure",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     }
    },
    "left": []
@@ -7727,7 +7733,7 @@
      "born": "1993-05-09",
      "country": "Slovakia",
      "height": 186,
-     "value": 94184,
+     "value": 75347,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -7746,7 +7752,7 @@
      "born": "1998-01-24",
      "country": "Czechia",
      "height": 187,
-     "value": 1294185,
+     "value": 1417138,
      "rating": 6.67,
      "goals": 0,
      "assists": 0,
@@ -7765,7 +7771,7 @@
      "born": "2002-01-02",
      "country": "Czechia",
      "height": null,
-     "value": 240789,
+     "value": 288716,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -7784,7 +7790,7 @@
      "born": "2000-07-06",
      "country": "Czechia",
      "height": 190,
-     "value": 213620,
+     "value": 170896,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -7803,7 +7809,7 @@
      "born": "2006-09-09",
      "country": "Switzerland",
      "height": 185,
-     "value": 851184,
+     "value": 744450,
      "rating": 6.28,
      "goals": 0,
      "assists": 0,
@@ -7822,7 +7828,7 @@
      "born": "2003-07-21",
      "country": "Ukraine",
      "height": 185,
-     "value": 1002796,
+     "value": 956144,
      "rating": 6.59,
      "goals": 0,
      "assists": 0,
@@ -7841,7 +7847,7 @@
      "born": "1990-02-27",
      "country": "Czechia",
      "height": 186,
-     "value": 69492,
+     "value": 69292,
      "rating": 6.8,
      "goals": 1,
      "assists": 0,
@@ -7860,7 +7866,7 @@
      "born": "1998-02-02",
      "country": "Czechia",
      "height": 189,
-     "value": 150889,
+     "value": 120711,
      "rating": 6.26,
      "goals": 1,
      "assists": 0,
@@ -7879,7 +7885,7 @@
      "born": "2007-06-07",
      "country": "Czechia",
      "height": null,
-     "value": 776829,
+     "value": 631297,
      "rating": 6.66,
      "goals": 1,
      "assists": 0,
@@ -7901,7 +7907,7 @@
      "born": "2003-03-25",
      "country": "Ukraine",
      "height": 189,
-     "value": 300289,
+     "value": 439543,
      "rating": 6.42,
      "goals": 0,
      "assists": 0,
@@ -7920,7 +7926,7 @@
      "born": "2004-03-12",
      "country": "Cameroon",
      "height": 185,
-     "value": 317868,
+     "value": 328455,
      "rating": 6.68,
      "goals": 0,
      "assists": 1,
@@ -7939,7 +7945,7 @@
      "born": "1996-11-27",
      "country": "Estonia",
      "height": 181,
-     "value": 195622,
+     "value": 194221,
      "rating": 6.71,
      "goals": 0,
      "assists": 0,
@@ -7961,7 +7967,7 @@
      "born": "1999-04-08",
      "country": "Czechia",
      "height": 180,
-     "value": 636044,
+     "value": 721219,
      "rating": 7.03,
      "goals": 0,
      "assists": 1,
@@ -7980,7 +7986,7 @@
      "born": "2004-08-20",
      "country": "Ivory Coast",
      "height": 183,
-     "value": 555865,
+     "value": 524043,
      "rating": 6.7,
      "goals": 0,
      "assists": 0,
@@ -7999,7 +8005,7 @@
      "born": "2001-08-30",
      "country": "Czechia",
      "height": 185,
-     "value": 173449,
+     "value": 141162,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -8018,7 +8024,7 @@
      "born": "2005-07-28",
      "country": "Czechia",
      "height": 173,
-     "value": 1805873,
+     "value": 1768578,
      "rating": 6.26,
      "goals": 0,
      "assists": 0,
@@ -8059,7 +8065,7 @@
      "born": "2000-06-04",
      "country": "Czechia",
      "height": 183,
-     "value": 389994,
+     "value": 367179,
      "rating": 7.21,
      "goals": 1,
      "assists": 0,
@@ -8081,7 +8087,7 @@
      "born": "1999-09-02",
      "country": "Czechia",
      "height": 181,
-     "value": 175282,
+     "value": 163241,
      "rating": 6.67,
      "goals": 0,
      "assists": 1,
@@ -8119,7 +8125,7 @@
      "born": "2005-10-17",
      "country": "Hungary",
      "height": 182,
-     "value": 626107,
+     "value": 480610,
      "rating": 6.68,
      "goals": 0,
      "assists": 1,
@@ -8132,13 +8138,13 @@
      "id": 363911,
      "name": "Daniel Holzer",
      "role": "midfielders",
-     "position": "LWB,LB,LM",
+     "position": "LWB,LM,LB",
      "number": 95,
      "age": 31,
      "born": "1995-08-18",
      "country": "Czechia",
      "height": 177,
-     "value": 198434,
+     "value": 200703,
      "rating": 6.42,
      "goals": 0,
      "assists": 0,
@@ -8157,7 +8163,7 @@
      "born": "2004-12-03",
      "country": "Trinidad and Tobago",
      "height": 194,
-     "value": 401731,
+     "value": 393263,
      "rating": 6.6,
      "goals": 0,
      "assists": 0,
@@ -8176,7 +8182,7 @@
      "born": "1998-09-29",
      "country": "Senegal",
      "height": 184,
-     "value": 597478,
+     "value": 724553,
      "rating": 6.52,
      "goals": 0,
      "assists": 0,
@@ -8198,7 +8204,7 @@
      "born": "1994-06-26",
      "country": "Czechia",
      "height": 182,
-     "value": 306337,
+     "value": 339978,
      "rating": 6.25,
      "goals": 1,
      "assists": 0,
@@ -8217,7 +8223,7 @@
      "born": "2008-04-09",
      "country": "Czechia",
      "height": null,
-     "value": 970755,
+     "value": 1302318,
      "rating": 6.24,
      "goals": 1,
      "assists": 0,
@@ -8236,7 +8242,7 @@
      "born": "2000-06-27",
      "country": "Slovakia",
      "height": 173,
-     "value": 351256,
+     "value": 445747,
      "rating": 6.25,
      "goals": 0,
      "assists": 0,
@@ -8246,7 +8252,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-09-29T20:15:35.901Z",
+   "fetchedAt": "2026-10-04T09:27:34.347Z",
    "coachHistory": [
     {
      "name": "Roman Skuhravý",
@@ -8257,77 +8263,77 @@
     "201127": {
      "name": "Michal Frydrych",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "319888": {
      "name": "Viktor Budinský",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "363911": {
      "name": "Daniel Holzer",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "627499": {
      "name": "Václav Jurečka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "638091": {
      "name": "Martin Jedlička",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "670222": {
      "name": "Vlasiy Sinyavskiy",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "683344": {
      "name": "Filip Kubala",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "693151": {
      "name": "Matěj Chaluš",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "813779": {
      "name": "Matús Kmeť",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "952048": {
      "name": "Michal Kohút",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1180672": {
      "name": "Jirí Boula",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1279819": {
      "name": "Matouš Babka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1323621": {
      "name": "Petr Jaroň",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1355068": {
      "name": "Raymond Nogha",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1356592": {
      "name": "Abdallah Gning",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1366180": {
      "name": "David Látal",
@@ -8337,62 +8343,62 @@
     "1384117": {
      "name": "Maksym Dyachuk",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1405796": {
      "name": "David Planka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1417971": {
      "name": "Jakub Elbel",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1509432": {
      "name": "Aboubacar Traoré",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1520464": {
      "name": "Artúr Musák",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1552459": {
      "name": "Dantaye Gilbert",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1614715": {
      "name": "Yevgeniy Skyba",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1639614": {
      "name": "Filip Šancl",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1690071": {
      "name": "Rhodri Smith",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1724586": {
      "name": "Jirí Mícek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1785605": {
      "name": "Vít Škrkoň",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1791349": {
      "name": "Abdullahi Bewene",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     }
    },
    "left": [
@@ -8419,7 +8425,7 @@
      "born": "1992-09-14",
      "country": "Czechia",
      "height": 189,
-     "value": 107849,
+     "value": 86279,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -8438,7 +8444,7 @@
      "born": "2002-09-23",
      "country": "Slovakia",
      "height": 193,
-     "value": 387266,
+     "value": 487960,
      "rating": 6.54,
      "goals": 0,
      "assists": 0,
@@ -8476,7 +8482,7 @@
      "born": "2002-04-04",
      "country": "Czechia",
      "height": 194,
-     "value": 327638,
+     "value": 290706,
      "rating": 7.15,
      "goals": 0,
      "assists": 0,
@@ -8495,7 +8501,7 @@
      "born": "2000-06-24",
      "country": "Czechia",
      "height": 182,
-     "value": 156937,
+     "value": 111718,
      "rating": 6.7,
      "goals": 0,
      "assists": 1,
@@ -8533,7 +8539,7 @@
      "born": "2000-10-11",
      "country": "Czechia",
      "height": 184,
-     "value": 230391,
+     "value": 216489,
      "rating": 6.06,
      "goals": 0,
      "assists": 0,
@@ -8552,7 +8558,7 @@
      "born": "1995-09-13",
      "country": "Czechia",
      "height": 177,
-     "value": 160283,
+     "value": 201598,
      "rating": 5.4,
      "goals": 0,
      "assists": 0,
@@ -8571,7 +8577,7 @@
      "born": "1997-08-15",
      "country": "Czechia",
      "height": 188,
-     "value": 158275,
+     "value": 214828,
      "rating": 6.99,
      "goals": 0,
      "assists": 0,
@@ -8590,7 +8596,7 @@
      "born": "2005-08-28",
      "country": "Ukraine",
      "height": 184,
-     "value": 266580,
+     "value": 201552,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -8609,7 +8615,7 @@
      "born": "1996-09-12",
      "country": "Zambia",
      "height": 185,
-     "value": 79874,
+     "value": 79674,
      "rating": 6.88,
      "goals": 0,
      "assists": 0,
@@ -8631,7 +8637,7 @@
      "born": "1997-12-17",
      "country": "Czechia",
      "height": 190,
-     "value": 734899,
+     "value": 824138,
      "rating": 7.51,
      "goals": 2,
      "assists": 0,
@@ -8650,7 +8656,7 @@
      "born": "1994-08-07",
      "country": "Czechia",
      "height": 183,
-     "value": 187239,
+     "value": 249861,
      "rating": 6.87,
      "goals": 0,
      "assists": 2,
@@ -8669,7 +8675,7 @@
      "born": "2003-08-10",
      "country": "Nigeria",
      "height": null,
-     "value": 549181,
+     "value": 509382,
      "rating": 6.66,
      "goals": 0,
      "assists": 0,
@@ -8688,7 +8694,7 @@
      "born": "2002-10-16",
      "country": "Czechia",
      "height": 183,
-     "value": 283034,
+     "value": 284246,
      "rating": 6.63,
      "goals": 1,
      "assists": 0,
@@ -8707,7 +8713,7 @@
      "born": "2002-11-02",
      "country": "Slovakia",
      "height": 183,
-     "value": 272580,
+     "value": 294886,
      "rating": 6.9,
      "goals": 0,
      "assists": 0,
@@ -8726,7 +8732,7 @@
      "born": "1997-01-20",
      "country": "Czechia",
      "height": 187,
-     "value": 204064,
+     "value": 206334,
      "rating": 6.83,
      "goals": 0,
      "assists": 1,
@@ -8741,11 +8747,11 @@
      "role": "midfielders",
      "position": "CAM,CDM,CM",
      "number": 47,
-     "age": 31,
+     "age": 32,
      "born": "1994-10-01",
      "country": "Czechia",
      "height": 180,
-     "value": 201397,
+     "value": 272148,
      "rating": 7.18,
      "goals": 2,
      "assists": 1,
@@ -8783,7 +8789,7 @@
      "born": "2006-07-23",
      "country": "Czechia",
      "height": 179,
-     "value": 461668,
+     "value": 671176,
      "rating": 6.6,
      "goals": 1,
      "assists": 0,
@@ -8843,7 +8849,7 @@
      "born": "1999-08-09",
      "country": "Czechia",
      "height": 186,
-     "value": 121764,
+     "value": 115273,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -8865,7 +8871,7 @@
      "born": "2001-04-01",
      "country": "Czechia",
      "height": 181,
-     "value": 150705,
+     "value": 171104,
      "rating": 6.12,
      "goals": 0,
      "assists": 0,
@@ -8884,7 +8890,7 @@
      "born": "1998-05-09",
      "country": "Czechia",
      "height": 176,
-     "value": 101116,
+     "value": 90743,
      "rating": 6.41,
      "goals": 0,
      "assists": 0,
@@ -8903,7 +8909,7 @@
      "born": "1988-10-13",
      "country": "Czechia",
      "height": 169,
-     "value": 70298,
+     "value": 69492,
      "rating": 6.43,
      "goals": 0,
      "assists": 0,
@@ -8922,7 +8928,7 @@
      "born": "2000-09-13",
      "country": "Czechia",
      "height": 179,
-     "value": 169194,
+     "value": 165511,
      "rating": 5.95,
      "goals": 0,
      "assists": 0,
@@ -8960,7 +8966,7 @@
      "born": "1988-06-19",
      "country": "Czechia",
      "height": 185,
-     "value": 68248,
+     "value": 69492,
      "rating": 6.28,
      "goals": 0,
      "assists": 0,
@@ -8979,7 +8985,7 @@
      "born": "1999-03-06",
      "country": "Slovakia",
      "height": 190,
-     "value": 205872,
+     "value": 253504,
      "rating": 6.81,
      "goals": 3,
      "assists": 0,
@@ -8989,7 +8995,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-09-29T20:15:35.901Z",
+   "fetchedAt": "2026-10-04T09:27:34.347Z",
    "coachHistory": [
     {
      "name": "Jaroslav Veselý",
@@ -9000,152 +9006,152 @@
     "143364": {
      "name": "Jan Kovarík",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "207542": {
      "name": "Václav Pilař",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "429904": {
      "name": "Michal Reichl",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "439694": {
      "name": "Aleš Cermák",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "464020": {
      "name": "Milan Havel",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "686657": {
      "name": "Benson Sakala",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "728428": {
      "name": "Ladislav Almási",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "748916": {
      "name": "David Lischka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "769883": {
      "name": "Jakub Šiman",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "770953": {
      "name": "Vojtěch Smrž",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "802213": {
      "name": "Roman Květ",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "843212": {
      "name": "Dominik Pleštil",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "848329": {
      "name": "Jan Vondra",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "850016": {
      "name": "Jan Matoušek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "964549": {
      "name": "Denis Vala",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1070798": {
      "name": "David Heidenreich",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1155184": {
      "name": "Ladislav Krobot",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1176587": {
      "name": "Dominik Javorček",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1287528": {
      "name": "Tomás Frühwald",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1388538": {
      "name": "Mohamed Yasser",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1524292": {
      "name": "Vladimír Zeman",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1611067": {
      "name": "Matěj Kadlec",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1614826": {
      "name": "Samuel Obinaiia",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1622308": {
      "name": "Peter Kareem",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1698718": {
      "name": "Šimon Černý",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1784256": {
      "name": "Oliver Mikuda",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1785157": {
      "name": "Petr Mirvald",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1792316": {
      "name": "Mathews Banda",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1904624": {
      "name": "Jakub Tichý",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "2100436": {
      "name": "Matej Suryn",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     }
    },
    "left": []
@@ -9165,7 +9171,7 @@
      "born": "2003-01-11",
      "country": "Georgia",
      "height": null,
-     "value": 280750,
+     "value": 177147,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -9187,7 +9193,7 @@
      "born": "2001-02-14",
      "country": "Czechia",
      "height": 187,
-     "value": 205023,
+     "value": 173435,
      "rating": 6.33,
      "goals": 0,
      "assists": 0,
@@ -9244,7 +9250,7 @@
      "born": "1992-04-21",
      "country": "Czechia",
      "height": 188,
-     "value": 175005,
+     "value": 189894,
      "rating": 4.78,
      "goals": 0,
      "assists": 0,
@@ -9263,7 +9269,7 @@
      "born": "2000-02-10",
      "country": "Czechia",
      "height": 196,
-     "value": 162420,
+     "value": 156999,
      "rating": 6.51,
      "goals": 0,
      "assists": 0,
@@ -9282,7 +9288,7 @@
      "born": "2002-03-14",
      "country": "Czechia",
      "height": 187,
-     "value": 597817,
+     "value": 560304,
      "rating": 5.89,
      "goals": 0,
      "assists": 0,
@@ -9301,7 +9307,7 @@
      "born": "2004-07-06",
      "country": "Czechia",
      "height": 177,
-     "value": 228125,
+     "value": 202017,
      "rating": 6.02,
      "goals": 0,
      "assists": 1,
@@ -9320,7 +9326,7 @@
      "born": "2003-03-21",
      "country": "Ivory Coast",
      "height": 190,
-     "value": 318396,
+     "value": 276705,
      "rating": 6.63,
      "goals": 0,
      "assists": 0,
@@ -9339,7 +9345,7 @@
      "born": "2003-07-13",
      "country": "Czechia",
      "height": 185,
-     "value": 1898774,
+     "value": 1526540,
      "rating": 7.49,
      "goals": 0,
      "assists": 0,
@@ -9358,7 +9364,7 @@
      "born": "1999-06-28",
      "country": "Slovakia",
      "height": 189,
-     "value": 591136,
+     "value": 709363,
      "rating": 6.68,
      "goals": 2,
      "assists": 0,
@@ -9377,7 +9383,7 @@
      "born": "2000-02-09",
      "country": "Netherlands",
      "height": 190,
-     "value": 210908,
+     "value": 181007,
      "rating": 6.66,
      "goals": 0,
      "assists": 0,
@@ -9396,7 +9402,7 @@
      "born": "1998-05-16",
      "country": "Belgium",
      "height": 190,
-     "value": 109571,
+     "value": 157782,
      "rating": 6.38,
      "goals": 0,
      "assists": 0,
@@ -9407,25 +9413,6 @@
       "typeId": "121",
       "expectedReturn": "Mid October 2026"
      }
-    },
-    {
-     "id": 1343113,
-     "name": "Robi Saarma",
-     "role": "defenders",
-     "position": "RB,LM,RM,RW",
-     "number": 77,
-     "age": 25,
-     "born": "2001-05-20",
-     "country": "Estonia",
-     "height": 184,
-     "value": 178772,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
     },
     {
      "id": 1748917,
@@ -9456,7 +9443,7 @@
      "born": "2002-04-12",
      "country": "Czechia",
      "height": 180,
-     "value": 522499,
+     "value": 626998,
      "rating": 6.28,
      "goals": 0,
      "assists": 0,
@@ -9494,7 +9481,7 @@
      "born": "2005-06-12",
      "country": "Nigeria",
      "height": 186,
-     "value": 735878,
+     "value": 819757,
      "rating": 6.69,
      "goals": 0,
      "assists": 0,
@@ -9507,13 +9494,13 @@
      "id": 1553489,
      "name": "Tomás Jelínek",
      "role": "midfielders",
-     "position": "CDM,CM,RM,CB",
+     "position": "CM,CDM,RM,CB",
      "number": 16,
      "age": 20,
      "born": "2005-12-27",
      "country": "Czechia",
      "height": null,
-     "value": 641438,
+     "value": 769725,
      "rating": 6.99,
      "goals": 0,
      "assists": 0,
@@ -9532,7 +9519,7 @@
      "born": "1998-06-17",
      "country": "Czechia",
      "height": 170,
-     "value": 390532,
+     "value": 400565,
      "rating": 6.71,
      "goals": 0,
      "assists": 1,
@@ -9551,7 +9538,7 @@
      "born": "2000-02-01",
      "country": "Czechia",
      "height": 183,
-     "value": 144631,
+     "value": 130382,
      "rating": 7.08,
      "goals": 1,
      "assists": 0,
@@ -9573,7 +9560,7 @@
      "born": "2002-06-07",
      "country": "Finland",
      "height": null,
-     "value": 670878,
+     "value": 672303,
      "rating": 7.25,
      "goals": 1,
      "assists": 2,
@@ -9592,7 +9579,7 @@
      "born": "2006-06-29",
      "country": "Nigeria",
      "height": null,
-     "value": 393282,
+     "value": 472605,
      "rating": 6.32,
      "goals": 0,
      "assists": 0,
@@ -9611,10 +9598,29 @@
      "born": "2006-09-16",
      "country": "Czechia",
      "height": null,
-     "value": 919977,
+     "value": 1058111,
      "rating": 6.81,
      "goals": 2,
      "assists": 1,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1343113,
+     "name": "Robi Saarma",
+     "role": "midfielders",
+     "position": "RB,LM,RM,RW,RWB",
+     "number": 77,
+     "age": 25,
+     "born": "2001-05-20",
+     "country": "Estonia",
+     "height": 184,
+     "value": 166115,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
      "penalties": 0,
      "yellow": 0,
      "red": 0,
@@ -9630,7 +9636,7 @@
      "born": "2001-12-08",
      "country": "Czechia",
      "height": 193,
-     "value": 270750,
+     "value": 311740,
      "rating": 6.12,
      "goals": 0,
      "assists": 0,
@@ -9668,7 +9674,7 @@
      "born": "2000-03-18",
      "country": "Czechia",
      "height": 181,
-     "value": 369653,
+     "value": 353875,
      "rating": 6.87,
      "goals": 1,
      "assists": 0,
@@ -9690,7 +9696,7 @@
      "born": "1999-07-25",
      "country": "Czechia",
      "height": 186,
-     "value": 180889,
+     "value": 226226,
      "rating": 6.83,
      "goals": 2,
      "assists": 1,
@@ -9747,7 +9753,7 @@
      "born": "2004-08-06",
      "country": "Czechia",
      "height": null,
-     "value": 207196,
+     "value": 185739,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -9760,13 +9766,13 @@
      "id": 957556,
      "name": "Giannis-Fivos Botos",
      "role": "attackers",
-     "position": "RW,ST,CAM,CM",
+     "position": "RW,ST,CAM",
      "number": 90,
      "age": 25,
      "born": "2000-12-20",
      "country": "Greece",
      "height": 172,
-     "value": 359436,
+     "value": 346780,
      "rating": 6.29,
      "goals": 0,
      "assists": 0,
@@ -9795,7 +9801,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-09-29T20:15:35.901Z",
+   "fetchedAt": "2026-10-04T09:27:34.347Z",
    "coachHistory": [
     {
      "name": "Jan Trousil",
@@ -9806,97 +9812,97 @@
     "318059": {
      "name": "Aleš Mandous",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "740676": {
      "name": "Michal Hlavatý",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "823298": {
      "name": "Jan Stejskal",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "924667": {
      "name": "Václav Drchal",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "957556": {
      "name": "Giannis-Fivos Botos",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "960700": {
      "name": "Simon Bammens",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1031305": {
      "name": "Tomás Solil",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1079839": {
      "name": "Abdoullahi Tanko",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1100027": {
      "name": "Vladimír Neuman",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1163500": {
      "name": "Vojtěch Patrák",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1180771": {
      "name": "Samuel Šimek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1243503": {
      "name": "Ryan Mahuta",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1280245": {
      "name": "Dávid Krcík",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1291375": {
      "name": "Daniel Smékal",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1292111": {
      "name": "Jáchym Serák",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1326862": {
      "name": "Marek Icha",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1342781": {
      "name": "Denis Halinský",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1343113": {
      "name": "Robi Saarma",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1354447": {
      "name": "Jan Trédl",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1356595": {
      "name": "Dominique Simon",
@@ -9906,32 +9912,32 @@
     "1379398": {
      "name": "Jason Noslin",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1507653": {
      "name": "Luka Kharatishvili",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1509436": {
      "name": "Kahuan Vinícius",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1509967": {
      "name": "Emmanuel Godwin",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1553489": {
      "name": "Tomás Jelínek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1588646": {
      "name": "Filip Brdička",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1685487": {
      "name": "Daniel Pandula",
@@ -9941,42 +9947,42 @@
     "1748917": {
      "name": "Arouna Ouattara",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1764757": {
      "name": "Matěj Šimůnek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1791353": {
      "name": "Tobias Boledovič",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1809715": {
      "name": "Mouhamed Tidjane Traore",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1844313": {
      "name": "Victor Samuel",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1975569": {
      "name": "Jiri Zima",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "2130813": {
      "name": "Martin Reil",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "2156386": {
      "name": "Patrik Nedved",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     }
    },
    "left": [
@@ -10028,7 +10034,7 @@
      "born": "2002-09-23",
      "country": "Czechia",
      "height": null,
-     "value": 270198,
+     "value": 294886,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -10047,7 +10053,7 @@
      "born": "2003-12-30",
      "country": "Czechia",
      "height": null,
-     "value": 375524,
+     "value": 365030,
      "rating": 6.95,
      "goals": 0,
      "assists": 0,
@@ -10066,7 +10072,7 @@
      "born": "2002-07-27",
      "country": "Czechia",
      "height": null,
-     "value": 385485,
+     "value": 370039,
      "rating": 6.74,
      "goals": 0,
      "assists": 0,
@@ -10104,7 +10110,7 @@
      "born": "1999-04-18",
      "country": "Czechia",
      "height": 182,
-     "value": 233907,
+     "value": 288820,
      "rating": 6.6,
      "goals": 0,
      "assists": 0,
@@ -10123,7 +10129,7 @@
      "born": "2006-03-20",
      "country": "Liberia",
      "height": null,
-     "value": 733414,
+     "value": 616467,
      "rating": 6.59,
      "goals": 0,
      "assists": 0,
@@ -10142,7 +10148,7 @@
      "born": "2005-02-10",
      "country": "Serbia",
      "height": null,
-     "value": 894076,
+     "value": 816421,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -10161,7 +10167,7 @@
      "born": "2004-10-25",
      "country": "Czechia",
      "height": null,
-     "value": 389934,
+     "value": 382179,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -10183,7 +10189,7 @@
      "born": "1995-09-20",
      "country": "Czechia",
      "height": 186,
-     "value": 72000,
+     "value": 103680,
      "rating": 6.32,
      "goals": 0,
      "assists": 0,
@@ -10202,7 +10208,7 @@
      "born": "1998-02-15",
      "country": "Czechia",
      "height": 194,
-     "value": 80576,
+     "value": 82203,
      "rating": 6.27,
      "goals": 0,
      "assists": 0,
@@ -10224,7 +10230,7 @@
      "born": "2004-09-10",
      "country": "France",
      "height": null,
-     "value": 471680,
+     "value": 535328,
      "rating": 6.72,
      "goals": 0,
      "assists": 2,
@@ -10243,7 +10249,7 @@
      "born": "2001-09-23",
      "country": "Czechia",
      "height": null,
-     "value": 373546,
+     "value": 441507,
      "rating": 6.6,
      "goals": 0,
      "assists": 0,
@@ -10262,7 +10268,7 @@
      "born": "1996-07-07",
      "country": "Czechia",
      "height": null,
-     "value": 79483,
+     "value": 99353,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -10281,7 +10287,7 @@
      "born": "2005-08-31",
      "country": "Gambia",
      "height": null,
-     "value": 2167159,
+     "value": 1764290,
      "rating": 6.37,
      "goals": 0,
      "assists": 0,
@@ -10300,7 +10306,7 @@
      "born": "1995-02-07",
      "country": "Czechia",
      "height": null,
-     "value": 78776,
+     "value": 72674,
      "rating": 6.34,
      "goals": 0,
      "assists": 0,
@@ -10319,7 +10325,7 @@
      "born": "2003-05-10",
      "country": "Netherlands",
      "height": 178,
-     "value": 258690,
+     "value": 300320,
      "rating": 6.57,
      "goals": 1,
      "assists": 0,
@@ -10338,7 +10344,7 @@
      "born": "2004-05-13",
      "country": "Czechia",
      "height": 178,
-     "value": 846834,
+     "value": 774587,
      "rating": 6.5,
      "goals": 1,
      "assists": 0,
@@ -10357,7 +10363,7 @@
      "born": "2008-02-07",
      "country": "Côte d'Ivoire",
      "height": null,
-     "value": 440244,
+     "value": 437205,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -10376,7 +10382,7 @@
      "born": "1999-08-20",
      "country": "Czechia",
      "height": null,
-     "value": 149861,
+     "value": 94619,
      "rating": 6.31,
      "goals": 0,
      "assists": 0,
@@ -10389,13 +10395,13 @@
      "id": 1681656,
      "name": "Dominik Sarapata",
      "role": "midfielders",
-     "position": "CM,CDM",
+     "position": "CDM",
      "number": 20,
      "age": 18,
      "born": "2007-10-25",
      "country": "Poland",
      "height": null,
-     "value": 2551934,
+     "value": 4780142,
      "rating": 6.09,
      "goals": 0,
      "assists": 0,
@@ -10433,7 +10439,7 @@
      "born": "2000-06-27",
      "country": "Sweden",
      "height": 194,
-     "value": 306316,
+     "value": 245052,
      "rating": 6.11,
      "goals": 0,
      "assists": 0,
@@ -10452,7 +10458,7 @@
      "born": "1994-04-26",
      "country": "Czechia",
      "height": 172,
-     "value": 170650,
+     "value": 191816,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -10471,7 +10477,7 @@
      "born": "1991-06-26",
      "country": "Czechia",
      "height": 178,
-     "value": 88616,
+     "value": 88415,
      "rating": 6.46,
      "goals": 0,
      "assists": 0,
@@ -10490,7 +10496,7 @@
      "born": "1990-12-14",
      "country": "Serbia",
      "height": 181,
-     "value": 92988,
+     "value": 82791,
      "rating": 6.16,
      "goals": 0,
      "assists": 0,
@@ -10509,7 +10515,7 @@
      "born": "2000-10-10",
      "country": "Nigeria",
      "height": 175,
-     "value": 205445,
+     "value": 243363,
      "rating": 6.94,
      "goals": 2,
      "assists": 1,
@@ -10528,7 +10534,7 @@
      "born": "1996-12-23",
      "country": "Cameroon",
      "height": 175,
-     "value": 228560,
+     "value": 160561,
      "rating": 6.98,
      "goals": 1,
      "assists": 0,
@@ -10547,7 +10553,7 @@
      "born": "2001-05-24",
      "country": "Mali",
      "height": 176,
-     "value": 207748,
+     "value": 177893,
      "rating": 6.42,
      "goals": 1,
      "assists": 0,
@@ -10566,7 +10572,7 @@
      "born": "1999-08-12",
      "country": "Senegal",
      "height": null,
-     "value": 202426,
+     "value": 291493,
      "rating": 6.31,
      "goals": 1,
      "assists": 0,
@@ -10585,7 +10591,7 @@
      "born": "1998-05-16",
      "country": "Cabo Verde",
      "height": null,
-     "value": 245606,
+     "value": 254207,
      "rating": 6.71,
      "goals": 0,
      "assists": 2,
@@ -10604,7 +10610,7 @@
      "born": "2005-02-19",
      "country": "Czechia",
      "height": null,
-     "value": 641407,
+     "value": 708066,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -10623,7 +10629,7 @@
      "born": "1990-04-13",
      "country": "Czechia",
      "height": 170,
-     "value": 96740,
+     "value": 96172,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -10645,7 +10651,7 @@
      "born": "2004-08-26",
      "country": "Montenegro",
      "height": null,
-     "value": 325619,
+     "value": 273929,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -10655,7 +10661,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-09-29T20:15:35.901Z",
+   "fetchedAt": "2026-10-04T09:27:34.347Z",
    "coachHistory": [
     {
      "name": "Roman Nádvorník",
@@ -10666,17 +10672,17 @@
     "181416": {
      "name": "Jan Navrátil",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "257541": {
      "name": "Martin Pospísil",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "281000": {
      "name": "Vukadin Vukadinović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "357223": {
      "name": "Jean-David Beauguel",
@@ -10686,157 +10692,157 @@
     "490506": {
      "name": "Jan Sedlák",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "559289": {
      "name": "Dominik Preisler",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "559479": {
      "name": "Jakub Fulnek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "687572": {
      "name": "Alexis Alégué",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "941549": {
      "name": "David Šimek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "973738": {
      "name": "Pavel Sokol",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1020539": {
      "name": "Dominik Plechatý",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1076684": {
      "name": "Adam Carlén",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1087766": {
      "name": "Michal Jerábek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1095160": {
      "name": "Adam Petrák",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1119670": {
      "name": "Stepán Harazim",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1123697": {
      "name": "Papalélé",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1154896": {
      "name": "Karel Pojezný",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1184773": {
      "name": "Jirí Borek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1185334": {
      "name": "Issa Fomba",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1218798": {
      "name": "Tadeás Stoppen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1269100": {
      "name": "Vladimir Perišić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1285709": {
      "name": "Sacha Komljenović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1352640": {
      "name": "Ondřej Čoudek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1366347": {
      "name": "Sebastian Bohác",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1403349": {
      "name": "Albert Labík",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1410215": {
      "name": "Quadri Adediran",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1509846": {
      "name": "El Hadji Ndiaye",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1531085": {
      "name": "Daniel Toula",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1681656": {
      "name": "Dominik Sarapata",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1681812": {
      "name": "Youssoupha Sanyang",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1709475": {
      "name": "Neil Glossoa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1784261": {
      "name": "Emmanuel Fully",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1787638": {
      "name": "Danijel Kolarić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1791922": {
      "name": "Richard Kasík",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1994561": {
      "name": "Ismael Sylla",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     }
    },
    "left": [
@@ -10863,7 +10869,7 @@
      "born": "1991-03-23",
      "country": "Czechia",
      "height": 192,
-     "value": 186807,
+     "value": 195029,
      "rating": 6.9,
      "goals": 0,
      "assists": 0,
@@ -10882,7 +10888,7 @@
      "born": "2004-04-20",
      "country": "Czechia",
      "height": null,
-     "value": 203387,
+     "value": 181398,
      "rating": 4.55,
      "goals": 0,
      "assists": 0,
@@ -10920,7 +10926,7 @@
      "born": "1992-03-29",
      "country": "Serbia",
      "height": 188,
-     "value": 105080,
+     "value": 96983,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -10942,7 +10948,7 @@
      "born": "2003-05-26",
      "country": "North Macedonia",
      "height": 186,
-     "value": 521653,
+     "value": 556594,
      "rating": 6.72,
      "goals": 0,
      "assists": 0,
@@ -10961,7 +10967,7 @@
      "born": "1999-08-11",
      "country": "Slovakia",
      "height": 191,
-     "value": 153724,
+     "value": 122979,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -11002,7 +11008,7 @@
      "born": "2004-10-26",
      "country": "Czechia",
      "height": 180,
-     "value": 758092,
+     "value": 713714,
      "rating": 5.14,
      "goals": 0,
      "assists": 0,
@@ -11021,7 +11027,7 @@
      "born": "2007-05-15",
      "country": "Czechia",
      "height": 189,
-     "value": 689835,
+     "value": 629998,
      "rating": 7.06,
      "goals": 0,
      "assists": 0,
@@ -11040,7 +11046,7 @@
      "born": "2000-05-08",
      "country": "Ivory Coast",
      "height": null,
-     "value": 282957,
+     "value": 267714,
      "rating": 6.48,
      "goals": 0,
      "assists": 0,
@@ -11059,7 +11065,7 @@
      "born": "1997-03-30",
      "country": "Czechia",
      "height": 183,
-     "value": 95978,
+     "value": 138207,
      "rating": 5.33,
      "goals": 0,
      "assists": 0,
@@ -11097,7 +11103,7 @@
      "born": "1994-03-02",
      "country": "Angola",
      "height": 175,
-     "value": 191044,
+     "value": 268984,
      "rating": 6.93,
      "goals": 2,
      "assists": 0,
@@ -11112,7 +11118,7 @@
      "role": "midfielders",
      "position": "CM,CDM,LWB,LM",
      "number": 6,
-     "age": 23,
+     "age": 24,
      "born": "2002-10-04",
      "country": "Slovakia",
      "height": 180,
@@ -11135,7 +11141,7 @@
      "born": "1994-07-17",
      "country": "Czechia",
      "height": 181,
-     "value": 100108,
+     "value": 87277,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -11157,7 +11163,7 @@
      "born": "1994-05-17",
      "country": "Czechia",
      "height": 175,
-     "value": 203868,
+     "value": 253026,
      "rating": 7.18,
      "goals": 0,
      "assists": 1,
@@ -11176,7 +11182,7 @@
      "born": "1997-10-07",
      "country": "Slovakia",
      "height": 172,
-     "value": 223795,
+     "value": 296518,
      "rating": 6.4,
      "goals": 1,
      "assists": 0,
@@ -11195,7 +11201,7 @@
      "born": "2007-02-04",
      "country": "The Gambia",
      "height": null,
-     "value": 744926,
+     "value": 618202,
      "rating": 7.05,
      "goals": 0,
      "assists": 0,
@@ -11233,7 +11239,7 @@
      "born": "1995-07-08",
      "country": "Czechia",
      "height": 176,
-     "value": 203868,
+     "value": 272148,
      "rating": 6.77,
      "goals": 0,
      "assists": 2,
@@ -11252,7 +11258,7 @@
      "born": "2005-10-26",
      "country": "Nigeria",
      "height": null,
-     "value": 351896,
+     "value": 415529,
      "rating": 6.75,
      "goals": 2,
      "assists": 0,
@@ -11268,13 +11274,13 @@
      "id": 768016,
      "name": "Tihomir Kostadinov",
      "role": "midfielders",
-     "position": "CDM,CM,CAM",
+     "position": "CM,CDM,CAM",
      "number": 26,
      "age": 30,
      "born": "1996-03-04",
      "country": "North Macedonia",
      "height": 178,
-     "value": 99097,
+     "value": 214050,
      "rating": 6.84,
      "goals": 0,
      "assists": 0,
@@ -11293,7 +11299,7 @@
      "born": "2002-01-18",
      "country": "Czechia",
      "height": 186,
-     "value": 359670,
+     "value": 391281,
      "rating": 6.6,
      "goals": 0,
      "assists": 1,
@@ -11350,7 +11356,7 @@
      "born": "1999-04-07",
      "country": "Argentina",
      "height": 174,
-     "value": 116904,
+     "value": 93523,
      "rating": 6.23,
      "goals": 0,
      "assists": 0,
@@ -11369,7 +11375,7 @@
      "born": "2003-05-09",
      "country": "Czechia",
      "height": 185,
-     "value": 302747,
+     "value": 361891,
      "rating": 6.25,
      "goals": 0,
      "assists": 0,
@@ -11426,7 +11432,7 @@
      "born": "2000-06-06",
      "country": "Lithuania",
      "height": 176,
-     "value": 285266,
+     "value": 269821,
      "rating": 6.23,
      "goals": 0,
      "assists": 0,
@@ -11445,7 +11451,7 @@
      "born": "1993-05-14",
      "country": "Czechia",
      "height": 189,
-     "value": 186903,
+     "value": 229540,
      "rating": 6.37,
      "goals": 0,
      "assists": 1,
@@ -11455,7 +11461,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-09-29T20:15:35.901Z",
+   "fetchedAt": "2026-10-04T09:27:34.347Z",
    "coachHistory": [
     {
      "name": "Jan Jelínek",
@@ -11466,157 +11472,157 @@
     "207538": {
      "name": "Milan Heča",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "277681": {
      "name": "David Puskác",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "294438": {
      "name": "Michal Trávník",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "364773": {
      "name": "Gigli Ndefe",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "426815": {
      "name": "Milan Rundić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "450751": {
      "name": "Marek Havlík",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "617884": {
      "name": "Daniel Tetour",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "618259": {
      "name": "David Stepánek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "659066": {
      "name": "Pavel Halouska",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "768016": {
      "name": "Tihomir Kostadinov",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "850314": {
      "name": "Filip Vaško",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1042044": {
      "name": "Alan Marinelli",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1065982": {
      "name": "Artūr Dolžnikov",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1072451": {
      "name": "Patrik Blahút",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1190860": {
      "name": "Martin Šviderský",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1201588": {
      "name": "Ioannis Niarchos",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1217140": {
      "name": "Andrej Stojchevski",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1235097": {
      "name": "Jocelin Behiratche",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1255829": {
      "name": "Jan Fiala",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1305590": {
      "name": "Filip Horský",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1337020": {
      "name": "Pavel Juroška",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1420240": {
      "name": "Lukáš Vorlický",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1515119": {
      "name": "Tomás Král",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1612776": {
      "name": "Alexandr Urban",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1676961": {
      "name": "Ousman Ceesay",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1684766": {
      "name": "Šimon Sloncík",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1713381": {
      "name": "Gibril Sosseh",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1899916": {
      "name": "Paul Ndubuisi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1933333": {
      "name": "Leoš Prior",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1966044": {
      "name": "Adam Alabi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "2101707": {
      "name": "Filip Hruska",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     }
    },
    "left": []
@@ -11636,7 +11642,7 @@
      "born": "1991-06-20",
      "country": "Czechia",
      "height": 185,
-     "value": 137719,
+     "value": 148612,
      "rating": 6.37,
      "goals": 0,
      "assists": 0,
@@ -11693,7 +11699,7 @@
      "born": "2004-04-15",
      "country": "Croatia",
      "height": null,
-     "value": 319282,
+     "value": 303837,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -11712,7 +11718,7 @@
      "born": "2003-03-01",
      "country": "Slovakia",
      "height": 170,
-     "value": 222441,
+     "value": 294886,
      "rating": 6.35,
      "goals": 0,
      "assists": 0,
@@ -11731,7 +11737,7 @@
      "born": "2000-10-22",
      "country": "Czechia",
      "height": 180,
-     "value": 273189,
+     "value": 274295,
      "rating": 6.66,
      "goals": 1,
      "assists": 0,
@@ -11750,7 +11756,7 @@
      "born": "1993-12-26",
      "country": "Czechia",
      "height": 179,
-     "value": 136771,
+     "value": 144691,
      "rating": 6.43,
      "goals": 0,
      "assists": 0,
@@ -11769,7 +11775,7 @@
      "born": "1999-02-08",
      "country": "Czechia",
      "height": 199,
-     "value": 217267,
+     "value": 263134,
      "rating": 6.83,
      "goals": 2,
      "assists": 0,
@@ -11788,7 +11794,7 @@
      "born": "1992-05-05",
      "country": "Czechia",
      "height": 184,
-     "value": 127606,
+     "value": 194397,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -11810,7 +11816,7 @@
      "born": "2000-01-16",
      "country": "Czechia",
      "height": 188,
-     "value": 273721,
+     "value": 255620,
      "rating": 6.53,
      "goals": 0,
      "assists": 0,
@@ -11829,7 +11835,7 @@
      "born": "2004-03-23",
      "country": "Czechia",
      "height": 190,
-     "value": 198640,
+     "value": 185593,
      "rating": 6.43,
      "goals": 0,
      "assists": 0,
@@ -11848,7 +11854,7 @@
      "born": "1994-01-22",
      "country": "Czechia",
      "height": 183,
-     "value": 126589,
+     "value": 101271,
      "rating": 6.35,
      "goals": 0,
      "assists": 0,
@@ -11924,7 +11930,7 @@
      "born": "2003-01-28",
      "country": "Latvia",
      "height": null,
-     "value": 190372,
+     "value": 228446,
      "rating": 6.09,
      "goals": 0,
      "assists": 0,
@@ -11943,7 +11949,7 @@
      "born": "1997-11-07",
      "country": "Cameroon",
      "height": 185,
-     "value": 151922,
+     "value": 121537,
      "rating": null,
      "goals": 0,
      "assists": 0,
@@ -11962,7 +11968,7 @@
      "born": "2005-10-16",
      "country": "Czechia",
      "height": null,
-     "value": 530667,
+     "value": 444717,
      "rating": 6.33,
      "goals": 1,
      "assists": 0,
@@ -12000,7 +12006,7 @@
      "born": "2000-08-23",
      "country": "Ghana",
      "height": 190,
-     "value": 231859,
+     "value": 235749,
      "rating": 6.78,
      "goals": 0,
      "assists": 0,
@@ -12038,7 +12044,7 @@
      "born": "1998-09-26",
      "country": "Czechia",
      "height": null,
-     "value": 256424,
+     "value": 269666,
      "rating": 6.14,
      "goals": 0,
      "assists": 0,
@@ -12076,7 +12082,7 @@
      "born": "2007-08-31",
      "country": "Czechia",
      "height": null,
-     "value": 525901,
+     "value": 468078,
      "rating": 6.22,
      "goals": 0,
      "assists": 0,
@@ -12114,7 +12120,7 @@
      "born": "1996-06-21",
      "country": "Czechia",
      "height": null,
-     "value": 100108,
+     "value": 117320,
      "rating": 6.94,
      "goals": 1,
      "assists": 0,
@@ -12133,7 +12139,7 @@
      "born": "2004-01-02",
      "country": "Czechia",
      "height": 186,
-     "value": 329878,
+     "value": 460636,
      "rating": 6.34,
      "goals": 2,
      "assists": 0,
@@ -12167,7 +12173,7 @@
      "role": "attackers",
      "position": "Attacker",
      "number": 18,
-     "age": 18,
+     "age": 19,
      "born": "2007-10-04",
      "country": "Senegal",
      "height": null,
@@ -12190,7 +12196,7 @@
      "born": "2002-08-20",
      "country": "Ghana",
      "height": 166,
-     "value": 154538,
+     "value": 222534,
      "rating": 6.73,
      "goals": 1,
      "assists": 1,
@@ -12209,7 +12215,7 @@
      "born": "1990-07-03",
      "country": "Czechia",
      "height": 176,
-     "value": 90070,
+     "value": 98681,
      "rating": 6.24,
      "goals": 0,
      "assists": 0,
@@ -12228,7 +12234,7 @@
      "born": "2000-06-16",
      "country": "Slovakia",
      "height": 184,
-     "value": 307883,
+     "value": 364124,
      "rating": 6.67,
      "goals": 0,
      "assists": 3,
@@ -12247,7 +12253,7 @@
      "born": "1988-09-27",
      "country": "Czechia",
      "height": 194,
-     "value": 129558,
+     "value": 164167,
      "rating": 5.95,
      "goals": 0,
      "assists": 0,
@@ -12257,7 +12263,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-09-29T20:15:35.901Z",
+   "fetchedAt": "2026-10-04T09:27:34.347Z",
    "coachHistory": [
     {
      "name": "Pavel Hoftych",
@@ -12268,167 +12274,167 @@
     "143346": {
      "name": "Stanislav Dostál",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "156183": {
      "name": "Tomás Poznar",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "279385": {
      "name": "Jakub Jugas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "307834": {
      "name": "Lukás Bartosák",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "601207": {
      "name": "Antonín Křapka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "622166": {
      "name": "Miloš Kopečný",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "680845": {
      "name": "David Machalík",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "695056": {
      "name": "Joss Didiba",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "791918": {
      "name": "Milan Knobloch",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "934837": {
      "name": "Marián Pišoja",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "949633": {
      "name": "Michal Fukala",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "949636": {
      "name": "Tom Ulbrich",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1087620": {
      "name": "Jakub Cernín",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1107040": {
      "name": "Jakub Kolár",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1213419": {
      "name": "Adam Gaži",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1225873": {
      "name": "Ondřej Kukučka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1252102": {
      "name": "Daniel Šmiga",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1338063": {
      "name": "Cletus Nombil",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1384398": {
      "name": "Kristers Penkevics",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1428154": {
      "name": "Stanley Kanu",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1508333": {
      "name": "Frank Appiah",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1520537": {
      "name": "Michal Cupák",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1553393": {
      "name": "Stepán Bachůrek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1606862": {
      "name": "Zvonimir Katalinić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1782352": {
      "name": "Stanislav Petruța",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1791339": {
      "name": "Tomás Hellebrand",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1862733": {
      "name": "Jirí Štefan",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1899315": {
      "name": "Prince Mbatshi Mukuba",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1910044": {
      "name": "Tomas Fojtu",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1996662": {
      "name": "Filip Dornak",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "1996663": {
      "name": "David Grygera",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "2076684": {
      "name": "Prince Emmanuel",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     },
     "2100443": {
      "name": "Moustapha Toure",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
+     "lastSeen": "2026-10-04"
     }
    },
    "left": []

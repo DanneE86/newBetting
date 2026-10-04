@@ -1,16 +1,16 @@
 # Náutico (Brasileirão Série B) – lärdomar
 
-Genererad 2026-09-29. Ligans fil: [BR2](../../ligor/BR2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-10-04. Ligans fil: [BR2](../../ligor/BR2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
-Form senaste 8 (äldst → senast): VOVVFOFV · senaste match 2026-09-26
+Form senaste 8 (äldst → senast): OVVFOFVO · senaste match 2026-10-03
 
 ## Säsonger
 
 | Säsong | M | P/M | Hemma P/M | Borta P/M | Kryss | Mål för–emot | Över 2,5 |
 |---|---|---|---|---|---|---|---|
-| 2026/27 | 30 | 1,37 | 1,80 | 0,93 | 27 % | 1,27–1,23 | 43 % |
+| 2026/27 | 31 | 1,35 | 1,80 | 0,94 | 29 % | 1,26–1,23 | 42 % |
 
 ## Inbördes möten
 
@@ -23,6 +23,7 @@ Form senaste 8 (äldst → senast): VOVVFOFV · senaste match 2026-09-26
 | Ceará | 2 | 1-0-1 | 1–1 | 2026-08-19 1-0 (h) |
 | Criciúma | 2 | 0-1-1 | 0–1 | 2026-07-26 0-0 (b) |
 | Cuiabá | 2 | 1-0-1 | 1–3 | 2026-09-22 0-3 (b) |
+| Fortaleza | 2 | 0-1-1 | 1–2 | 2026-10-03 1-1 (b) |
 | Operário PR | 2 | 1-1-0 | 9–5 | 2026-09-15 3-3 (h) |
 | Ponte Preta | 2 | 1-1-0 | 2–1 | 2026-08-14 1-1 (b) |
 | Sport | 2 | 1-0-1 | 3–3 | 2026-09-26 3-1 (h) |
@@ -30,43 +31,43 @@ Form senaste 8 (äldst → senast): VOVVFOFV · senaste match 2026-09-26
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Bruno Pivetti. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Muriel | GK | 39 | Brazil | 80 k€ | – | 0 | 0 | 0/0 |  |
+| 1 | Muriel | GK | 39 | Brazil | 139 k€ | – | 0 | 0 | 0/0 |  |
 | 55 | Gastón Guruceaga | GK | 31 | Uruguay | 67 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Arnaldo | RB | 34 | Brazil | 55 k€ | – | 0 | 0 | 0/0 |  |
-| 3 | Betão | CB | 27 | Brazil | 154 k€ | – | 0 | 0 | 0/0 |  |
-| 6 | Ryan | LB | 24 | Brazil | 423 k€ | – | 0 | 0 | 0/0 |  |
+| 2 | Arnaldo | RB | 34 | Brazil | 79 k€ | – | 0 | 0 | 0/0 |  |
+| 3 | Betão | CB | 27 | Brazil | 156 k€ | – | 0 | 0 | 0/0 |  |
+| 6 | Ryan | LB | 24 | Brazil | 356 k€ | – | 0 | 0 | 0/0 |  |
 | 13 | Gabriel Índio | CB | 22 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 14 | Matheus Ribeiro | RB,LB | 33 | Brazil | 96 k€ | – | 0 | 0 | 0/0 |  |
 | 15 | Léo Índio | CB,CM | 30 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 23 | Igor Fernandes | LB,CB | 34 | Brazil | 112 k€ | – | 0 | 0 | 0/0 |  |
-| 25 | Mateus Silva | CB | 31 | Brazil | 96 k€ | – | 0 | 0 | 0/0 |  |
+| 23 | Igor Fernandes | LB,CB | 34 | Brazil | 157 k€ | – | 0 | 0 | 0/0 |  |
+| 25 | Mateus Silva | CB | 31 | Brazil | 93 k€ | – | 0 | 0 | 0/0 |  |
 | 43 | Wanderson | CB | 31 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 60 | Luiz Paulo | Defender | 33 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 93 | Reginaldo | RB,LB,RW | 33 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-|  | Jean Carlos | CAM,ST,RW | 34 | Brazil | 192 k€ | – | 0 | 0 | 0/0 |  |
-| 5 | Auremir | CDM | 35 | Brazil | 50 k€ | – | 0 | 0 | 0/0 |  |
-| 8 | Wenderson | CDM,CM | 28 | Brazil | 147 k€ | – | 0 | 0 | 0/0 |  |
+|  | Jean Carlos | CAM,ST,RW | 34 | Brazil | 219 k€ | – | 0 | 0 | 0/0 |  |
+| 5 | Auremir | CDM | 35 | Brazil | 59 k€ | – | 0 | 0 | 0/0 |  |
+| 8 | Wenderson | CDM,CM | 28 | Brazil | 168 k€ | – | 0 | 0 | 0/0 |  |
 | 21 | Felipe Redaelli | Midfielder | 23 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 22 | Patricio Núñez | RW | 27 | Argentina | 162 k€ | – | 0 | 0 | 0/0 |  |
-| 27 | Luiz Felipe | CDM,CM | 28 | Brazil | 107 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Patricio Núñez | RW | 27 | Argentina | 83 k€ | – | 0 | 0 | 0/0 |  |
+| 27 | Luiz Felipe | CDM,CM | 28 | Brazil | 110 k€ | – | 0 | 0 | 0/0 |  |
 | 41 | Samuel | CDM,CM | 22 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 7 | Vinícius | RW,ST,LW | 33 | Brazil | 183 k€ | – | 0 | 0 | 0/0 |  |
+| 7 | Vinícius | RW,ST,LW,CAM | 33 | Brazil | 204 k€ | – | 0 | 0 | 0/0 |  |
 | 9 | Paulo Sérgio | ST | 37 | Brazil | 82 k€ | – | 0 | 0 | 0/0 |  |
-| 11 | Victor Andrade | LW | 30 | Brazil | 97 k€ | – | 0 | 0 | 0/0 |  |
+| 11 | Victor Andrade | LW | 31 | Brazil | 111 k€ | – | 0 | 0 | 0/0 |  |
 | 19 | Maranhão | ST | 22 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 24 | Benjamín Borasi | LW,RM,RW,ST | 28 | Argentina | 127 k€ | – | 0 | 0 | 0/0 |  |
-| 29 | Júnior Todinho | RW,LW | 32 | Brazil | 109 k€ | – | 0 | 0 | 0/0 |  |
-| 72 | Derek | ST,RW,LW | 28 | Brazil | 180 k€ | – | 0 | 0 | 0/0 |  |
+| 24 | Benjamín Borasi | LW,RM,RW,ST | 28 | Argentina | 119 k€ | – | 0 | 0 | 0/0 |  |
+| 29 | Júnior Todinho | RW,LW | 32 | Brazil | 98 k€ | – | 0 | 0 | 0/0 |  |
+| 72 | Derek | ST,RW,LW | 28 | Brazil | 179 k€ | – | 0 | 0 | 0/0 |  |
 | 78 | Danielzinho | LW | 25 | Brazil | – | – | 0 | 0 | 0/0 |  |
 
 Har lämnat truppen sedan vi började spara (15): Gustavo Henrique (senast 2026-09-29), Caio (senast 2026-09-29), Isaque Ferreira (senast 2026-09-29), Luiz Claudio (senast 2026-09-29), Everson (senast 2026-09-29), Halan (senast 2026-09-29), Wendell (senast 2026-09-29), Vinicius Oliveira (senast 2026-09-28), Guilherme (senast 2026-09-29), Rosa (senast 2026-09-29), Gledson (senast 2026-09-28), Juan Rikelme (senast 2026-09-29), Emanuel Minervino (senast 2026-09-28), Matheus Uchôa (senast 2026-09-29), Hector Silva (senast 2026-09-29).

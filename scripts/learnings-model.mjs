@@ -10,6 +10,7 @@ import path from 'node:path';
 import { buildSignals } from './lib/learnings-signals.mjs';
 import { ADJ_FILE, DRAW_KEYS, SIGNAL_KEYS } from './lib/learned-adjust.mjs';
 import { root } from './lib/learnings-data.mjs';
+import { ALTITUDE, HIGH, MIN_DIFF, fitAltitude } from './lib/altitude.mjs';
 
 const SPLIT = '2023-07-01';
 const VALID = '2021-07-01';
@@ -253,6 +254,22 @@ for (const base of ['open', 'close']) {
   }
 }
 
+// Hoghojd per liga (scripts/lib/altitude.mjs): hemmalaget pa hoghojd mot lagland-lag. Egen parameter per liga, skattad
+// fore SPLIT och matt en gang efter. Behalls om kontrollen blev battre (dLL < 0), aven svagt (anvandaren 2026-10-04:
+// "allt som kan ge nagot ska in i alla motorer"). Bara stangningsodds finns i MX/MLS, sa samma b anvands for bada baserna.
+report.altitude = {};
+for (const lg of Object.keys(ALTITUDE)) {
+  const rows = matches.filter((m) => m.league === lg && m.hasClose && m.f.alt != null).map((m) => ({ date: m.date, y: RES[m.res], p: m.close, alt: m.f.alt === 1 }));
+  if (rows.filter((r) => r.alt).length < 100) continue;
+  const fa = fitAltitude(rows, SPLIT);
+  report.altitude[lg] = fa;
+  console.log(`\nHöghöjd ${lg}: b ${fa.bTrain} (före ${SPLIT}), kontroll dLL ${r4(fa.test.dLL)} (z ${r2(fa.test.z)}, ${fa.test.nAlt} höghöjdsmatcher av ${fa.test.n}), b på allt ${fa.bAll}`);
+  if (fa.test.dLL < 0 && fa.bAll > 0) {
+    final.altitude ??= {};
+    final.altitude[lg] = { b: fa.bAll, test: { dLL: r4(fa.test.dLL), z: r2(fa.test.z), n: fa.test.n, nAlt: fa.test.nAlt }, rule: `hemmalagets logit +b/2, bortalagets -b/2 när arenan ligger ≥ ${HIGH} m och bortalaget kommer från minst ${MIN_DIFF} m lägre` };
+  }
+}
+
 fs.writeFileSync(OUT, JSON.stringify(report, null, 1), 'utf8');
 fs.writeFileSync(ADJ_FILE, JSON.stringify(final, null, 2), 'utf8');
-console.log(`\nSkrev ${path.relative(root, OUT)} och ${path.relative(root, ADJ_FILE)} (${['open', 'close'].filter((b) => final[b]).join(', ') || 'ingen justering'})`);
+console.log(`\nSkrev ${path.relative(root, OUT)} och ${path.relative(root, ADJ_FILE)} (${[...['open', 'close'].filter((b) => final[b]), ...(final.altitude ? [`höghöjd ${Object.keys(final.altitude).join('/')}`] : [])].join(', ') || 'ingen justering'})`);

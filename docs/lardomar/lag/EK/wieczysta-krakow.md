@@ -1,6 +1,6 @@
 # Wieczysta Krakow (Ekstraklasa) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [EK](../../ligor/EK.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [EK](../../ligor/EK.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -37,7 +37,7 @@ Form (äldst → senast): FFVFFOFO · senaste match 2026-09-18
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Željko Kopić. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -46,35 +46,35 @@ Tränare: Željko Kopić. Betyg, mål och assist gäller innevarande säsong enl
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Antoni Mikułko | GK | 21 | Poland | 202 k€ | 6,30 | 0 | 0 | 0/0 |  |
-| 26 | Nikola Čavlina | GK | 24 | Croatia | 865 k€ | 7,06 | 0 | 0 | 0/0 |  |
+| 1 | Antoni Mikułko | GK | 21 | Poland | 242 k€ | 6,30 | 0 | 0 | 0/0 |  |
+| 26 | Nikola Čavlina | GK | 24 | Croatia | 664 k€ | 7,06 | 0 | 0 | 0/0 |  |
 | 28 | Patryk Stechnij | Keeper | 19 | USA | – | – | 0 | 0 | 0/0 |  |
 | 77 | Mateusz Kochalski | GK | 26 | Poland | 1,5 M€ | 6,92 | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 4 | Karol Fila | RB | 28 | Poland | 135 k€ | 6,97 | 0 | 1 | 0/0 |  |
+| 4 | Karol Fila | RB | 28 | Poland | 167 k€ | 6,97 | 0 | 1 | 0/0 |  |
 | 13 | Kacper Zagrodzki | Defender | 21 | Poland | – | – | 0 | 0 | 0/0 |  |
-| 15 | Aleksandar Đermanović | CB | 23 | Serbia | 664 k€ | 6,64 | 0 | 0 | 2/0 |  |
-| 16 | Antonio Milić | CB | 32 | Croatia | 371 k€ | 6,36 | 1 | 0 | 0/0 |  |
-| 17 | Kamil Dankowski | RB | 30 | Poland | 110 k€ | 6,79 | 0 | 1 | 0/0 |  |
-| 24 | Mateusz Wieteska | CB | 29 | Poland | 555 k€ | 6,58 | 1 | 0 | 1/0 |  |
-| 27 | Matús Vojtko | LB | 25 | Slovakia | 462 k€ | 6,53 | 0 | 0 | 1/0 |  |
-| 33 | Kamil Pestka | LB | 28 | Poland | 140 k€ | 6,65 | 0 | 0 | 1/0 |  |
-| 44 | Dawid Szymonowicz | CB | 31 | Poland | 115 k€ | – | 0 | 0 | 0/0 |  |
-| 55 | Duje Dujmović | CB | 22 | Croatia | 371 k€ | 6,67 | 1 | 0 | 2/0 |  |
+| 15 | Aleksandar Đermanović | CB | 24 | Serbia | 658 k€ | 6,64 | 0 | 0 | 2/0 |  |
+| 16 | Antonio Milić | CB | 32 | Croatia | 441 k€ | 6,36 | 1 | 0 | 0/0 |  |
+| 17 | Kamil Dankowski | RB | 30 | Poland | 140 k€ | 6,79 | 0 | 1 | 0/0 |  |
+| 24 | Mateusz Wieteska | CB | 29 | Poland | 547 k€ | 6,58 | 1 | 0 | 1/0 |  |
+| 27 | Matús Vojtko | LB | 25 | Slovakia | 524 k€ | 6,53 | 0 | 0 | 1/0 |  |
+| 33 | Kamil Pestka | LB | 28 | Poland | 166 k€ | 6,65 | 0 | 0 | 1/0 |  |
+| 44 | Dawid Szymonowicz | CB | 31 | Poland | 142 k€ | – | 0 | 0 | 0/0 |  |
+| 55 | Duje Dujmović | CB | 22 | Croatia | 530 k€ | 6,67 | 1 | 0 | 2/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 8 | Ben Lederman | CDM | 26 | Poland | 344 k€ | 6,25 | 0 | 0 | 1/0 |  |
+| 8 | Ben Lederman | CDM | 26 | Poland | 341 k€ | 6,25 | 0 | 0 | 1/0 |  |
 | 10 | Tobias Christensen | CM,CAM,CDM,ST | 26 | Norway | 1,6 M€ | 7,29 | 3 | 0 | 1/0 |  |
-| 11 | Nikola Knežević | LW | 23 | Serbia | 569 k€ | 6,08 | 0 | 0 | 0/0 |  |
-| 12 | Lucas Piazón | CM,CDM | 32 | Brazil | 149 k€ | 7,33 | 2 | 1 | 3/0 |  |
-| 19 | José Antonio de la Rosa | RM,RW | 22 | Spain | 1,0 M€ | 6,61 | 0 | 0 | 0/0 |  |
-| 20 | Mikkel Maigaard | CM,CDM,LW | 31 | Denmark | 187 k€ | 6,95 | 0 | 0 | 2/1 |  |
-| 23 | Miki Villar | RW | 30 | Spain | 151 k€ | 6,32 | 1 | 1 | 1/0 |  |
-| 70 | Petar Pušić | CM | 27 | Switzerland | 162 k€ | 6,56 | 0 | 1 | 0/0 |  |
+| 11 | Nikola Knežević | LW | 23 | Serbia | 561 k€ | 6,08 | 0 | 0 | 0/0 |  |
+| 12 | Lucas Piazón | CM,CDM | 32 | Brazil | 188 k€ | 7,33 | 2 | 1 | 3/0 |  |
+| 19 | José Antonio de la Rosa | RM,RW | 22 | Spain | 927 k€ | 6,61 | 0 | 0 | 0/0 |  |
+| 20 | Mikkel Maigaard | CM,CDM,LW | 31 | Denmark | 234 k€ | 6,95 | 0 | 0 | 2/1 |  |
+| 23 | Miki Villar | RW | 30 | Spain | 198 k€ | 6,32 | 1 | 1 | 1/0 |  |
+| 70 | Petar Pušić | CM | 27 | Switzerland | 170 k€ | 6,56 | 0 | 1 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 7 | Lisandro Semedo | RW | 30 | Cape Verde | 88 k€ | 6,82 | 1 | 0 | 0/0 |  |
-| 9 | Efthimios Koulouris | ST | 30 | Greece | 1,5 M€ | 6,54 | 0 | 0 | 0/0 |  |
-| 18 | Stefan Feiertag | ST | 24 | Austria | 194 k€ | 7,98 | 1 | 0 | 0/0 | skadad, åter Late December 2026 |
-| 21 | Bartosz Białek | ST | 24 | Poland | 407 k€ | 5,97 | 0 | 0 | 0/0 |  |
-| 30 | Jacky Donkor | LW | 27 | Belgium | 168 k€ | – | 0 | 0 | 0/0 |  |
+| 7 | Lisandro Semedo | RW | 30 | Cape Verde | 121 k€ | 6,82 | 1 | 0 | 0/0 |  |
+| 9 | Efthimios Koulouris | ST | 30 | Greece | 1,6 M€ | 6,54 | 0 | 0 | 0/0 |  |
+| 18 | Stefan Feiertag | ST | 24 | Austria | 279 k€ | 7,98 | 1 | 0 | 0/0 | skadad, åter Late December 2026 |
+| 21 | Bartosz Białek | ST | 24 | Poland | 404 k€ | 5,97 | 0 | 0 | 0/0 |  |
+| 30 | Jacky Donkor | LW | 27 | Belgium | 195 k€ | – | 0 | 0 | 0/0 |  |
 | 88 | Christopher Lungoyi | LW,LM,LWB | 26 | Switzerland | 1,0 M€ | 6,44 | 0 | 0 | 0/0 |  |
-| 97 | Tobiasz Mras | LW | 19 | Poland | 550 k€ | 6,48 | 0 | 0 | 0/0 |  |
+| 97 | Tobiasz Mras | LW | 19 | Poland | 534 k€ | 6,48 | 0 | 0 | 0/0 |  |

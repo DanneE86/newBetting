@@ -1,6 +1,6 @@
 # Allsvenskan (AS) – lärdomar
 
-Genererad 2026-09-29 av `node scripts/analyze-learnings.mjs`. Skriv inte för hand här: egna anteckningar läggs i `docs/lardomar/anteckningar/AS.md`.
+Genererad 2026-10-04 av `node scripts/analyze-learnings.mjs`. Skriv inte för hand här: egna anteckningar läggs i `docs/lardomar/anteckningar/AS.md`.
 
 Underlag: 3560 matcher, säsong 2012 – 2026. Marknad = stängningsodds utan marginal (Pinnacle, annars snitt av bolagen), öppningsodds saknas. xG: saknas (0 % av matcherna).
 
@@ -52,7 +52,7 @@ Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (
 
 | Signal | Hela perioden | Träning (< 2023/24) | Kontroll (2023/24–) | Mot öppningsodds | Oddsrörelse | Effekt p90–p10 | Bedömning |
 |---|---|---|---|---|---|---|---|
-| Form mot marknaden (poäng − förväntat, senaste 8) | −0,025 (z −0,7, n 3430) | −0,013 (z −0,3, n 2645) | −0,063 (z −0,8, n 785) | – | – | −0,039 p | ingen effekt |
+| Form mot marknaden (poäng − förväntat, senaste 8) | −0,022 (z −0,6, n 3435) | −0,010 (z −0,3, n 2647) | −0,061 (z −0,8, n 788) | – | – | −0,035 p | ingen effekt |
 | Inbördes möten mot marknaden (≥ 3 möten, 8 år) | +0,044 (z 0,9, n 2430) | +0,049 (z 0,9, n 1790) | +0,027 (z 0,3, n 640) | – | – | +0,055 p | ingen effekt |
 | Inbördes möten, poängskillnad | +0,016 (z 0,8, n 2430) | +0,018 (z 0,8, n 1790) | +0,011 (z 0,3, n 640) | – | – | +0,056 p | ingen effekt |
 | Inbördes möten, kryss mot förväntat | −0,002 (z −0,0, n 2430) | +0,008 (z 0,1, n 1790) | −0,059 (z −0,6, n 640) | – | – | −0,001 p | ingen effekt |
@@ -93,7 +93,7 @@ Källa: backtesten i `data/stryktips-backtest-2526-steg3.json`, `data/stryktips-
 
 - Folket streckar kryss 1,5 procentenheter under vår procent. Kryss ger streckvärde.
 
-## Tabell nu (FotMob, 2026-09-29)
+## Tabell nu (FotMob, 2026-10-04)
 
 | # | Lag | M | V | O | F | Mål | +/− | P |
 |---|---|---|---|---|---|---|---|---|

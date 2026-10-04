@@ -11,16 +11,10 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { root, LEAGUE_NAMES } from './lib/learnings-data.mjs';
+import { AXES, TEAM_AXES, spValue } from './lib/team-style.mjs';
 
 const DIR_DOC = path.join(root, 'docs', 'analys', 'stil');
 const MIN_HALF = 8; // minst sa manga matcher mot lagtypen i varje halva for stabilitetstestet
-const AXES = {
-  poss: { name: 'Bollinnehav (justerat för styrka)', labels: ['Backar hem', 'Balanserat', 'Bollinnehav'] },
-  direct: { name: 'Långbollar (justerat för styrka)', labels: ['Kortpass', 'Blandat', 'Direktspel'] },
-  press: { name: 'Bollvinster högt upp (justerat för styrka)', labels: ['Lågpress', 'Mellanpress', 'Högpress'] },
-  possRaw: { name: 'Bollinnehav (ojusterat)', labels: ['Lite boll', 'Mellan', 'Mycket boll'] },
-};
-const TEAM_AXES = ['poss', 'direct', 'press'];
 // Lag kan flytta mellan ligor i samma land, deras matcher slas ihop per land
 const COUNTRY = { PL: 'ENG', CH: 'ENG', EL1: 'ENG', EL2: 'ENG', BL: 'GER', BL2: 'GER', LL: 'ESP', LL2: 'ESP', SA: 'ITA', SB: 'ITA' };
 const readJson = (p, d = null) => { try { return JSON.parse(fs.readFileSync(p, 'utf8')); } catch { return d; } };
@@ -78,12 +72,13 @@ function styleClasses(code, matches) {
       rows.push({
         season, team, strength: v[0] / v[1], poss: s.poss,
         direct: s.longBalls != null && s.pass ? s.longBalls / s.pass : null, press: s.possWonAtt3rd ?? null,
+        spAtt: spValue(s.spFor, s.spXgFor), spDef: spValue(s.spAgainst, s.spXgAgainst), sp: s.spFor != null ? s : null, m: s.m ?? null,
       });
     }
   }
   if (rows.length < 20) return null;
   const z = {};
-  for (const [axis, field, adjust] of [['poss', 'poss', true], ['direct', 'direct', true], ['press', 'press', true], ['possRaw', 'poss', false]]) {
+  for (const [axis, field, adjust] of [['poss', 'poss', true], ['direct', 'direct', true], ['press', 'press', true], ['possRaw', 'poss', false], ['spAtt', 'spAtt', true], ['spDef', 'spDef', true]]) {
     const ok = rows.filter((r) => r[field] != null);
     if (ok.length < 20) continue;
     let res;
@@ -218,7 +213,7 @@ function teamProfile(list) {
 
 // Stabilitetstest: forutsager lagets effekt mot en lagtyp i forsta halvan av matcherna samma effekt i andra halvan?
 // Effekt = mot marknaden mot lagtypen minus lagets eget snitt mot marknaden i samma halva.
-const pairs = { poss: [], direct: [], press: [] };
+const pairs = Object.fromEntries(TEAM_AXES.map((a) => [a, []]));
 const profiles = new Map();
 for (const [k, list] of teamMatches) {
   const p = teamProfile(list);
@@ -254,6 +249,49 @@ const strongStability = Object.fromEntries(TEAM_AXES.map((axis) => {
   return [axis, { n: ps.length, same: ps.length ? ps.filter((p) => Math.sign(p.a) === Math.sign(p.b)).length / ps.length : null, meanB: ps.length ? ps.reduce((s, p) => s + Math.sign(p.a) * p.b, 0) / ps.length : null }];
 }));
 
+// Fasta-matchning: lagets fasta-anfall mot motstandarens fasta-forsvar, fran anfallande lagets perspektiv
+// (varje match raknas en gang per lag, sa z blir nagot for optimistiskt)
+function spGrid(ms) {
+  const g = Array.from({ length: 3 }, () => Array.from({ length: 3 }, acc));
+  for (const m of ms) {
+    for (const [own, opp, isH] of [[m.hs, m.as, true], [m.as, m.hs, false]]) {
+      const a = own.spAtt?.c, d = opp.spDef?.c;
+      if (a == null || d == null) continue;
+      const pts = m.res === 'D' ? 1 : (m.res === 'H') === isH ? 3 : 0;
+      add(g[a][d], pts, isH ? 3 * m.pH + m.pD : 3 * m.pA + m.pD, m.res === 'D', m.pD, m.hg + m.ag, m.pOver, isH ? m.hg : m.ag, isH ? m.ag : m.hg);
+    }
+  }
+  return g.map((r) => r.map(summ));
+}
+function spGridTable(g) {
+  const A = AXES.spAtt.labels, D = AXES.spDef.labels;
+  const lines = [`| Laget \\ Motståndaren | ${D.join(' | ')} |`, `|---|${D.map(() => '---|').join('')}`];
+  for (let a = 0; a < 3; a++) lines.push(`| **${A[a]}** | ${g[a].map((s) => (s ? `${s.n} m · mot marknaden ${fmt(s.vsMkt)} (z ${fmt(s.z, 1)}) · mål ${s.gf.toFixed(2).replace('.', ',')} · ö2,5 ${pct(s.over)}` : '–')).join(' | ')} |`);
+  return lines.join('\n');
+}
+
+// Lagets senaste sasong fore current med stil (null om ingen)
+function prevOwn(raw, current, team) {
+  return [...raw.keys()].filter((k) => k.endsWith(`|${team}`)).map((k) => k.split('|')[0]).filter((s) => s < current).sort().at(-1) ?? null;
+}
+// Lagets egna fasta-siffror: innevarande sasong och forra (innevarande ar ofta bara nagra matcher)
+function spNumbers(raw, current, team) {
+  const seasons = [...new Set([...raw.keys()].map((k) => k.split('|')[0]))].sort();
+  const prev = seasons[seasons.indexOf(current) - 1];
+  const pick = (season) => {
+    const s = raw.get(`${season}|${team}`)?.sp;
+    return s ? { season, m: s.m, spFor: s.spFor, spXgFor: s.spXgFor, spAgainst: s.spAgainst, spXgAgainst: s.spXgAgainst, corners: s.corners } : null;
+  };
+  const out = [pick(current), prev ? pick(prev) : null].filter(Boolean);
+  return out.length ? out : null;
+}
+function spLine(raw, current, team) {
+  const sp = spNumbers(raw, current, team);
+  if (!sp) return null;
+  const n = (x) => (x == null ? '–' : x.toFixed(2).replace('.', ','));
+  return `Fasta situationer per match: ${sp.map((s) => `${s.season} (${s.m} m): ${n(s.spFor)} mål för (xG ${n(s.spXgFor)}), ${n(s.spAgainst)} emot (xG ${n(s.spXgAgainst)}), ${n(s.corners)} hörnor`).join(' · ')}.`;
+}
+
 // --- Skriv rapporter ---
 fs.mkdirSync(DIR_DOC, { recursive: true });
 const today = new Date().toISOString().slice(0, 10);
@@ -287,16 +325,23 @@ for (const [code, info] of Object.entries(perLeague)) {
     lj.grid[axis] = g;
     out.push(`### ${AXES[axis].name}`, '', gridTable(g, axis), '');
   }
+  lj.spGrid = spGrid(ms);
+  out.push('### Fasta situationer: lagets anfall mot motståndarens försvar', '', 'Från det anfallande lagets perspektiv: hur går det mot oddsen när ett lag som är farligt på fasta möter ett lag som är svagt mot fasta?', '', spGridTable(lj.spGrid), '');
   out.push('## Lag (säsong ' + info.current + ')', '');
   for (const team of curTeams) {
     const p = profiles.get(`${ctry}|${team}`);
     if (!p?.overall) continue;
-    const own = info.st.cls.get(`${info.current}|${team}`), raw = info.st.raw.get(`${info.current}|${team}`);
+    // Egen stil: innevarande sasong nar den har minst 15 matcher, annars forra (som for motstandarna)
+    const curRaw = info.st.raw.get(`${info.current}|${team}`);
+    const ownSeason = curRaw?.m >= 15 ? info.current : (prevOwn(info.st.raw, info.current, team) ?? info.current);
+    const own = info.st.cls.get(`${ownSeason}|${team}`), raw = curRaw;
     const ownTxt = own ? TEAM_AXES.map((a) => own[a] ? AXES[a].labels[own[a].c] : null).filter(Boolean).join(', ') : 'okänd';
     out.push(`### ${team}`, '');
-    out.push(`Egen stil nu (jämfört med vad lagets styrka motiverar): **${ownTxt}**${raw ? ` (faktiskt bollinnehav ${raw.poss.toFixed(1).replace('.', ',')} %)` : ''}. ${p.overall.n} matcher med stil, mot marknaden totalt ${fmt(p.overall.vsMkt)} per match.`, '');
+    out.push(`Egen stil ${ownSeason} (jämfört med vad lagets styrka motiverar): **${ownTxt}**${raw ? ` (faktiskt bollinnehav ${raw.poss.toFixed(1).replace('.', ',')} %)` : ''}. ${p.overall.n} matcher med stil, mot marknaden totalt ${fmt(p.overall.vsMkt)} per match.`, '');
+    const spTxt = spLine(info.st.raw, info.current, team);
+    if (spTxt) out.push(spTxt, '');
     out.push('| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Halvor |', '|---|---|---|---|---|---|---|---|');
-    const tj = { overall: p.overall, own: own ?? null, vs: {} };
+    const tj = { overall: p.overall, own: own ?? null, ownSeason, vs: {}, sp: spNumbers(info.st.raw, info.current, team) };
     const flags = [];
     for (const axis of TEAM_AXES) {
       for (const c of [0, 1, 2]) {
@@ -331,7 +376,7 @@ const S = [
   '# Stilmatchning – sammanfattning', '',
   `Genererad ${today} av \`scripts/analyze-style-matchups.mjs\` (stil: \`scripts/fetch-team-style.mjs\`, FotMob). ${all.length} matcher i ${Object.keys(perLeague).length} ligor med stängningsodds och spelstil för båda lagen. Per liga och lag: [stil/](stil/).`, '',
   '## Metod', '',
-  '- Spelstil per lag och säsong från FotMobs lagstatistik: snittbollinnehav, andel långbollar av passningar, bollvinster på offensiv tredjedel.',
+  '- Spelstil per lag och säsong från FotMobs lagstatistik: snittbollinnehav, andel långbollar av passningar, bollvinster på offensiv tredjedel, fasta situationer (mål och xG för och emot).',
   '- Svaga lag har nästan alltid mindre boll. Därför justeras varje mått för lagets styrka (marknadens väntade poäng per match) – "Backar hem" betyder att laget har mindre boll än dess styrka motiverar. Tredjedelar: z < −0,5 / mellan / z > 0,5 inom ligan.',
   '- Allt mäts mot stängningsoddsen. Att ett lag vinner mot defensiva lag är inte intressant om oddsen redan väntade sig det; det intressanta är om resultaten avviker från oddsen.',
   SAME_SEASON ? '- Stilen är samma säsongs snitt (--samma-sasong). Lag som slår oddsen leder ofta och backar då hem, så resultaten läcker in i stilen – använd bara som jämförelse.' : '- Varje lag klassas efter sin stil **föregående säsong** (i någon liga i samma land). Samma säsongs stil går inte att använda: lag som slår oddsen leder ofta och backar då hem, så resultatet läcker in i stilen. Stil är stabil mellan säsonger (bollinnehav r ≈ 0,65–0,85), men nyuppflyttade lag från lägre serier och lag utan förra säsongen faller bort.', '',
@@ -346,6 +391,10 @@ for (const axis of ['possRaw', 'poss', 'direct', 'press']) {
 }
 S.push('', '## Alla ligor: hemmalagets stil mot bortalagets', '');
 for (const { axis, g } of pooled) S.push(`### ${AXES[axis].name}`, '', gridTable(g, axis), '');
+const spAll = spGrid(all);
+S.push('## Fasta situationer: lagets anfall mot motståndarens försvar (alla ligor)', '',
+  'Fasta = snitt av mål och xG från fasta situationer per match förra säsongen (FotMob; bara mål där xG saknas), justerat för lagets styrka. Från det anfallande lagets perspektiv, så varje match räknas en gång per lag. Mot marknaden nära noll = oddsen tar redan hänsyn till fasta situationer.', '',
+  spGridTable(spAll), '');
 S.push('## Håller lagmönstren? (stabilitetstest)', '',
   `Varje lags matcher delas i en tidig och en sen halva. För varje lag och motståndartyp med minst ${MIN_HALF} matcher i båda halvorna jämförs lagets resultat mot typen (relativt eget snitt, mot marknaden). Om lagspecifika mönster är verkliga ska den tidiga halvan förutsäga den sena: korrelation över 0 och mer än 50 % samma tecken.`, '',
   '| Axel | Par | Korrelation tidig→sen | Samma tecken | Starka mönster (|z| ≥ 2 tidigt) | – av dem samma tecken sen | – snitt sen halva i mönstrets riktning |', '|---|---|---|---|---|---|---|');
@@ -359,6 +408,13 @@ for (const x of summary.sort((a, b) => Math.abs(b.z) - Math.abs(a.z))) S.push(`|
 fs.writeFileSync(path.join(root, 'docs', 'analys', 'stilmatchning.md'), S.join('\n') + '\n', 'utf8');
 json.sameVsSame = Object.fromEntries(['possRaw', 'poss', 'direct', 'press'].map((a) => [a, [0, 2].map((c) => sameVsSame(all, a, c))]));
 json.flagged = summary;
+// z-poang per land och "sasong|lag" for lardomssignalerna (scripts/lib/extra-signals.mjs)
+const zOut = {};
+for (const [ctry, bc] of byCountry) {
+  zOut[ctry] = Object.fromEntries([...bc.cls].map(([k, v]) => [k, Object.fromEntries(Object.entries(v).map(([a, x]) => [a, Math.round(x.z * 1000) / 1000]))]));
+}
+fs.writeFileSync(path.join(root, 'data', 'stil-z.json'), JSON.stringify({ updatedAt: new Date().toISOString(), countries: zOut }), 'utf8');
+json.spGrid = spAll;
 fs.writeFileSync(path.join(root, 'data', 'stilmatchning.json'), JSON.stringify(json, null, 1), 'utf8');
 console.log('Stabilitet:', JSON.stringify(stability), JSON.stringify(strongStability));
 console.log(`Flaggade lagmönster: ${summary.length}`);

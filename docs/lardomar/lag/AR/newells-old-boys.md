@@ -1,10 +1,13 @@
 # Newells Old Boys (Liga Profesional) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Stark historik mot Rosario Central (−0,67 p/match mot marknaden, 14 möten), Racing Club (−0,57 p/match mot marknaden, 12 möten), Central Cordoba (+0,51 p/match mot marknaden, 11 möten), Lanus (+1,03 p/match mot marknaden, 11 möten), Gimnasia L.P. (−0,82 p/match mot marknaden, 8 möten), Independiente (+0,53 p/match mot marknaden, 8 möten), Sarmiento Junin (−0,65 p/match mot marknaden, 8 möten), Tigre (+0,74 p/match mot marknaden, 8 möten), River Plate (−0,66 p/match mot marknaden, 7 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Spelstil 2026: Balanserat, Blandat, Farlig på fasta, Svag mot fasta. Bäst mot Backar hem (+0,41, stabilt), Svag mot fasta (+0,24, svagt), Svag på fasta (+0,14, samma håll i båda halvorna men svagt). Svårast mot Medel på fasta (−0,26, svagt), Bollinnehav (−0,19, svagt), Balanserat (−0,14, svagt). Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2026: 0,33 mål för per match (xG 0,26), 0,30 emot (xG 0,30), 3,7 hörnor.
+- Svårt för: River Plate (0-1-6, 0,14 p/match, mot marknaden −0,66), Gimnasia L.P. (1-1-6, 0,50 p/match, mot marknaden −0,82), Racing Club (1-3-8, 0,50 p/match, mot marknaden −0,57), Rosario Central (1-5-8, 0,57 p/match, mot marknaden −0,67), Boca Juniors (2-4-9, 0,67 p/match, mot marknaden −0,28), Sarmiento Junin (1-4-3, 0,88 p/match, mot marknaden −0,65), Argentinos Jrs (2-2-5, 0,89 p/match, mot marknaden −0,25), Velez Sarsfield (2-2-5, 0,89 p/match, mot marknaden −0,24), Belgrano (1-3-2, 1,00 p/match, mot marknaden −0,37), Defensa y Justicia (4-2-8, 1,00 p/match, mot marknaden −0,36), Estudiantes L.P. (3-4-6, 1,00 p/match, mot marknaden −0,18). Där marknaden ligger nära noll är laget bara sämre i de mötena än annars, och oddsen vet redan om det.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -36,6 +39,52 @@ Form (äldst → senast): OFVVOOOV · senaste match 2026-09-20
 | 2024 | AR | 41 | 1,20 | −0,16 (−0,34 / +0,02) | 24 % (31 %) | 0,85–1,22 | – | – |
 | 2025 | AR | 32 | 1,03 | −0,15 (−0,33 / +0,02) | 28 % (31 %) | 0,78–1,19 | – | – |
 | 2026 | AR | 25 | 1,12 | +0,05 (−0,03 / +0,13) | 40 % (30 %) | 1,00–1,40 | – | – |
+
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/AR.md#newells-old-boys) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2026: **Balanserat, Blandat, Farlig på fasta, Svag mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026 | 27 | 0,33 | 0,26 | 0,30 | 0,30 | 3,7 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Backar hem | 51 | 1,25–0,82 | +0,41 | +0,41 (2,2) | −6 pe | – | ⚑ stabil |
+| Balanserat | 79 | 0,94–1,24 | −0,15 | −0,14 (−1,1) | −2 pe | – | svag |
+| Bollinnehav | 51 | 0,73–1,16 | −0,20 | −0,19 (−1,1) | −7 pe | – | svag |
+| Kortpass | 56 | 0,88–1,30 | −0,16 | −0,16 (−1,0) | −1 pe | – | svag |
+| Blandat | 76 | 1,01–1,08 | −0,00 | +0,00 (0,0) | −7 pe | – | svag |
+| Direktspel | 49 | 1,00–0,90 | +0,17 | +0,17 (0,9) | −4 pe | – | ✔ samma håll |
+| Lågpress | 59 | 0,92–1,36 | −0,11 | −0,11 (−0,7) | −4 pe | – | svag |
+| Mellanpress | 52 | 0,87–0,88 | +0,03 | +0,04 (0,2) | −0 pe | – | svag |
+| Högpress | 70 | 1,09–1,04 | +0,06 | +0,07 (0,4) | −8 pe | – | svag |
+| Svag på fasta | 69 | 1,13–0,97 | +0,14 | +0,14 (1,0) | −5 pe | – | ✔ samma håll |
+| Medel på fasta | 52 | 0,77–1,12 | −0,26 | −0,26 (−1,6) | +0 pe | – | svag |
+| Farlig på fasta | 40 | 0,85–1,10 | +0,06 | +0,06 (0,3) | −15 pe | – | svag |
+| Stark mot fasta | 64 | 0,88–0,94 | −0,15 | −0,15 (−1,0) | −0 pe | – | ✔ samma håll |
+| Medel mot fasta | 58 | 0,88–1,16 | +0,02 | +0,02 (0,1) | −10 pe | – | svag |
+| Svag mot fasta | 35 | 1,26–1,06 | +0,23 | +0,24 (1,0) | −13 pe | – | svag |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
+
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 3 | 0-2-1 | 0,67 | −0,21 |
+| Efter uppehåll sedan 2023 | 0 | – | – | – |
+| Övriga matcher | 474 | 164-141-169 | 1,34 | −0,04 |
+
+Hela ligan efter uppehåll: 0,00 mot marknaden (n 66). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2019-11-26 | Argentinos Jrs - Newells Old Boys | 1-0 F | −1,49 |
+| 2019-09-15 | Rosario Central - Newells Old Boys | 1-1 O | +0,41 |
+| 2012-10-21 | Racing Club - Newells Old Boys | 0-0 O | +0,44 |
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -72,50 +121,52 @@ Form (äldst → senast): OFVVOOOV · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): River Plate 0,14 p/match (−0,66), Gimnasia L.P. 0,50 p/match (−0,82), Racing Club 0,50 p/match (−0,57), Rosario Central 0,57 p/match (−0,67), Boca Juniors 0,67 p/match (−0,28), Sarmiento Junin 0,88 p/match (−0,65), Argentinos Jrs 0,89 p/match (−0,25), Velez Sarsfield 0,89 p/match (−0,24), Belgrano 1,00 p/match (−0,37), Defensa y Justicia 1,00 p/match (−0,36), Estudiantes L.P. 1,00 p/match (−0,18).
+
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Frank Kudelka. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Alejo Montero (skadad, åter Mid October 2026), Nicolás Goitea (skadad, åter Early October 2026), Franco Escobar (skadad, åter Mid October 2026), Mateo García (skadad, åter Out for season), Marcelo Esponda (skadad, åter About 1-2 weeks)
+**Skadade/borta nu:** Gabriel Arias (skadad, åter Late October 2026), Nicolás Goitea (skadad, åter Early October 2026), Mateo García (skadad, åter Out for season), Marcelo Esponda (skadad, åter About 1-2 weeks)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 21 | Gabriel Arias | GK | 39 | Chile | 127 k€ | – | 0 | 0 | 0/0 |  |
-| 30 | Josué Reinatti | GK | 23 | Argentina | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 21 | Gabriel Arias | GK | 39 | Chile | 189 k€ | – | 0 | 0 | 0/0 | skadad, åter Late October 2026 |
+| 30 | Josué Reinatti | GK | 23 | Argentina | 1,2 M€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 2 | Ian Glavinovich | CB | 24 | Argentina | 842 k€ | – | 0 | 0 | 0/0 |  |
-| 3 | Martín Luciano | LB,LWB | 23 | Argentina | 875 k€ | – | 0 | 0 | 0/0 |  |
-| 4 | Alejo Montero | RB,RWB | 28 | Argentina | 511 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
-| 6 | Martín Ortega | RB | 27 | Argentina | 616 k€ | – | 0 | 0 | 0/0 |  |
-| 16 | Lucas Carrizo | CB | 29 | Argentina | 928 k€ | – | 0 | 0 | 0/0 |  |
-| 17 | Lautaro Giannetti | CB | 32 | Argentina | 851 k€ | – | 0 | 0 | 0/0 |  |
+| 3 | Martín Luciano | LB,LWB | 23 | Argentina | 824 k€ | – | 0 | 0 | 0/0 |  |
+| 4 | Alejo Montero | RB,RWB | 28 | Argentina | 501 k€ | – | 0 | 0 | 0/0 |  |
+| 6 | Martín Ortega | RB | 27 | Argentina | 621 k€ | – | 0 | 0 | 0/0 |  |
+| 16 | Lucas Carrizo | CB | 29 | Argentina | 987 k€ | – | 0 | 0 | 0/0 |  |
+| 17 | Lautaro Giannetti | CB | 32 | Argentina | 865 k€ | – | 0 | 0 | 0/0 |  |
 | 22 | Oscar Salomón | CB | 27 | Argentina | 1,2 M€ | – | 0 | 0 | 0/0 |  |
 | 23 | Nicolás Goitea | CB | 29 | Argentina | – | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
-| 24 | Franco Escobar | RB,CB,LB,RWB | 31 | Argentina | 491 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
-| 25 | Bruno Cabrera | CB | 29 | Argentina | 555 k€ | – | 0 | 0 | 0/0 |  |
-| 28 | Jerónimo Russo | LB | 21 | Argentina | 986 k€ | – | 0 | 0 | 0/0 |  |
-| 97 | Saúl Salcedo | CB | 29 | Paraguay | 898 k€ | – | 0 | 0 | 0/0 |  |
+| 24 | Franco Escobar | RB,CB,LB,RWB | 31 | Argentina | 516 k€ | – | 0 | 0 | 0/0 |  |
+| 25 | Bruno Cabrera | CB | 29 | Argentina | 557 k€ | – | 0 | 0 | 0/0 |  |
+| 28 | Jerónimo Russo | LB | 21 | Argentina | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 97 | Saúl Salcedo | CB | 29 | Paraguay | 918 k€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-|  | Fabricio Tirado | CDM | 22 | Argentina | 574 k€ | – | 0 | 0 | 0/0 |  |
-|  | Mateo García | CAM,LM | 30 | Argentina | 841 k€ | – | 0 | 0 | 0/0 | skadad, åter Out for season |
-| 5 | Luca Regiardo | CDM,CM | 19 | Argentina | 2,1 M€ | – | 0 | 0 | 0/0 |  |
-| 8 | David Sotelo | CDM | 23 | Argentina | 584 k€ | – | 0 | 0 | 0/0 |  |
-| 10 | Valentino Acuña | CM,CAM,CDM | 20 | Argentina | 1,4 M€ | – | 0 | 0 | 0/0 |  |
+|  | Fabricio Tirado | CDM | 22 | Argentina | 561 k€ | – | 0 | 0 | 0/0 |  |
+|  | Mateo García | CAM,LM | 30 | Argentina | 844 k€ | – | 0 | 0 | 0/0 | skadad, åter Out for season |
+| 5 | Luca Regiardo | CDM,CM | 19 | Argentina | 2,5 M€ | – | 0 | 0 | 0/0 |  |
+| 8 | David Sotelo | CDM | 23 | Argentina | 596 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Valentino Acuña | CM,CAM,CDM | 20 | Argentina | 1,6 M€ | – | 0 | 0 | 0/0 |  |
 | 15 | Alan Soñora | CAM | 28 | USA | 245 k€ | – | 0 | 0 | 0/0 |  |
-| 19 | Jerónimo Gómez Mattar | CDM,CM | 18 | Argentina | 1,9 M€ | – | 0 | 0 | 0/0 |  |
-| 20 | Facundo Guch | CAM,RW,CM | 19 | Argentina | 1,8 M€ | – | 0 | 0 | 0/0 |  |
+| 19 | Jerónimo Gómez Mattar | CDM,CM | 18 | Argentina | 2,3 M€ | – | 0 | 0 | 0/0 |  |
+| 20 | Facundo Guch | CAM,RW,CM | 19 | Argentina | 3,3 M€ | – | 0 | 0 | 0/0 |  |
 | 26 | Rodrigo Herrera | CDM,CM | 26 | Argentina | 1,3 M€ | – | 0 | 0 | 0/0 |  |
-| 27 | Lucas Gómez | CM | 22 | Argentina | 883 k€ | – | 0 | 0 | 0/0 |  |
-| 29 | Marcelo Esponda | CDM | 23 | Argentina | 385 k€ | – | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
+| 27 | Lucas Gómez | CM | 22 | Argentina | 864 k€ | – | 0 | 0 | 0/0 |  |
+| 29 | Marcelo Esponda | CDM | 23 | Argentina | 399 k€ | – | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
 | 34 | Tomás Viola | Midfielder | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 35 | Blas Benedetto | Midfielder | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 37 | Mateo Villalba | Midfielder | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 7 | Walter Mazzantti | RW | 30 | Argentina | 1,5 M€ | – | 0 | 0 | 0/0 |  |
-| 9 | Matías Cóccaro | ST,CAM | 28 | Uruguay | 1,5 M€ | – | 0 | 0 | 0/0 |  |
-| 32 | Santiago Solari | RW,ST,LW,CAM | 28 | Argentina | 2,0 M€ | – | 0 | 0 | 0/0 |  |
-| 33 | Walter Núñez | LW,ST | 23 | Argentina | 938 k€ | – | 0 | 0 | 0/0 |  |
-| 36 | Francisco Scarpeccio | ST | 20 | Argentina | 546 k€ | – | 0 | 0 | 0/0 |  |
+| 7 | Walter Mazzantti | RW | 30 | Argentina | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| 9 | Matías Cóccaro | ST,CAM | 28 | Uruguay | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| 32 | Santiago Solari | RW,ST,LW,CAM | 28 | Argentina | 2,1 M€ | – | 0 | 0 | 0/0 |  |
+| 33 | Walter Núñez | LW,ST | 23 | Argentina | 961 k€ | – | 0 | 0 | 0/0 |  |
+| 36 | Francisco Scarpeccio | ST | 20 | Argentina | 626 k€ | – | 0 | 0 | 0/0 |  |
 | 39 | Thomas Ríos | LW | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 99 | Ignacio Ramírez | ST | 29 | Uruguay | 1,2 M€ | – | 0 | 0 | 0/0 |  |

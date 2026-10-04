@@ -21,6 +21,8 @@ import { buildRefIndex, loadRefereeMatches, refereeFlags, refereeNotes, buildRef
 import { coachMatches, buildCoachIndex, coachTenure, applyNewCoach, newCoachNotes } from './lib/coaches.mjs';
 import { streckFlopFlags, streckFlopNotes, streckFlopSeasonList } from './lib/streck-flop.mjs';
 import { logTips, settleTips, strykRecords } from './lib/tipslogg.mjs';
+import { adjustProbs } from './lib/learned-adjust.mjs';
+import { extraSignals, seasonOf } from './lib/extra-signals.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const RAW = path.join(root, 'data', 'raw');
@@ -1717,6 +1719,7 @@ async function analyzeDraw(product, draw, ctx, result) {
       const fh = matchTeam([hp?.name, hp?.mediumName], pool, prefer, g.model.leagueOf);
       const fa = matchTeam([ap?.name, ap?.mediumName], pool, prefer, g.model.leagueOf);
       a.matched = { home: fh, away: fa };
+      a.leagueCode = prefer || g.model.leagueOf?.get?.(fh) || null;
       a.lineup = oddsetAvailability(prefer || g.model.leagueOf?.get?.(fh), m.matchStart, fh, fa);
       const sharp = sharpMarket(g, prefer || g.model.leagueOf?.get?.(fh), m.matchStart, fh, fa);
       if (sharp?.p) { a.market = sharp.p; a.marketSource = sharp.source; a.sharpOdds = sharp.odds; }
@@ -1808,6 +1811,13 @@ async function analyzeDraw(product, draw, ctx, result) {
       const ht = tenure(home), at = tenure(away);
       a.newCoach = ht?.isNew || at?.isNew ? { home: ht?.isNew ? ht : null, away: at?.isNew ? at : null } : null;
       if (a.newCoach) a.final = applyNewCoach(a.final, a.newCoach.home, a.newCoach.away);
+    }
+    // Lardomar (config/learned-adjustments.json, bas 'close' = odds nara avspark, npm run lardomar:modell). Anvands bara
+    // nar modellen hittat nagot som slog kontrollperioden (2023/24-) vid stangningsodds; annars ingen andring.
+    if (a.leagueCode && a.matched?.home && a.matched?.away) {
+      const sig = extraSignals(a.leagueCode, seasonOf(a.leagueCode, matchDay), a.matched.home, a.matched.away);
+      const adj = adjustProbs(a.final, a.leagueCode, sig, 'close');
+      if (adj.applied.length) { a.learned = { applied: adj.applied, before: a.final.map(r3) }; a.final = adj.p; }
     }
     // Procenten fore domar- och tranarjusteringen (odds + modell)
     if (a.final !== finalBase) a.finalBase = finalBase.map(r3);

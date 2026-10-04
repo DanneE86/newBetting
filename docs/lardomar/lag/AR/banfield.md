@@ -1,10 +1,13 @@
 # Banfield (Liga Profesional) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Stark historik mot Argentinos Jrs (−0,74 p/match mot marknaden, 13 möten), Huracan (−0,95 p/match mot marknaden, 11 möten), Defensa y Justicia (−0,58 p/match mot marknaden, 9 möten), Belgrano (−0,79 p/match mot marknaden, 7 möten), Tigre (+0,68 p/match mot marknaden, 7 möten), Platense (−0,57 p/match mot marknaden, 6 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Spelstil 2026: Backar hem, Blandat, Svag på fasta, Medel mot fasta. Bäst mot Direktspel (+0,22, samma håll i båda halvorna men svagt), Svag mot fasta (+0,12, svagt), Lågpress (+0,07, samma håll i båda halvorna men svagt). Svårast mot Blandat (−0,12, samma håll i båda halvorna men svagt), Högpress (−0,08, samma håll i båda halvorna men svagt), Farlig på fasta (−0,09, svagt). Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2026: 0,08 mål för per match (xG 0,25), 0,27 emot (xG 0,23), 3,4 hörnor.
+- Svårt för: Huracan (0-3-8, 0,27 p/match, mot marknaden −0,95), Argentinos Jrs (1-2-10, 0,38 p/match, mot marknaden −0,74), Belgrano (0-3-4, 0,43 p/match, mot marknaden −0,79), Defensa y Justicia (1-3-5, 0,67 p/match, mot marknaden −0,58), River Plate (3-3-8, 0,86 p/match, mot marknaden +0,09), Boca Juniors (2-2-5, 0,89 p/match, mot marknaden −0,23), Talleres Cordoba (2-3-5, 0,90 p/match, mot marknaden −0,32), Platense (2-0-4, 1,00 p/match, mot marknaden −0,57), Union de Santa Fe (2-3-4, 1,00 p/match, mot marknaden −0,26), Estudiantes L.P. (2-3-4, 1,00 p/match, mot marknaden −0,17), Racing Club (3-4-5, 1,08 p/match, mot marknaden +0,02), Aldosivi (3-1-5, 1,11 p/match, mot marknaden −0,48), Barracas Central (2-4-3, 1,11 p/match, mot marknaden −0,42), San Lorenzo (2-4-3, 1,11 p/match, mot marknaden −0,38), Sarmiento Junin (1-5-1, 1,14 p/match, mot marknaden −0,37). Där marknaden ligger nära noll är laget bara sämre i de mötena än annars, och oddsen vet redan om det.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -34,6 +37,51 @@ Form (äldst → senast): OFVFFFOO · senaste match 2026-09-19
 | 2024 | AR | 41 | 1,00 | −0,19 (−0,36 / −0,02) | 34 % (32 %) | 0,88–1,24 | – | – |
 | 2025 | AR | 32 | 1,09 | −0,17 (−0,09 / −0,26) | 25 % (32 %) | 0,91–1,25 | – | – |
 | 2026 | AR | 26 | 1,04 | −0,18 (+0,11 / −0,44) | 23 % (30 %) | 1,08–1,35 | – | – |
+
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/AR.md#banfield) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2026: **Backar hem, Blandat, Svag på fasta, Medel mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026 | 26 | 0,08 | 0,25 | 0,27 | 0,23 | 3,4 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Backar hem | 55 | 0,96–1,09 | −0,10 | −0,00 (−0,0) | −2 pe | – | svag |
+| Balanserat | 80 | 0,96–1,18 | −0,13 | −0,03 (−0,3) | +6 pe | – | svag |
+| Bollinnehav | 46 | 0,93–1,22 | −0,03 | +0,06 (0,3) | −10 pe | – | svag |
+| Kortpass | 50 | 0,96–1,16 | −0,11 | −0,02 (−0,1) | −3 pe | – | svag |
+| Blandat | 82 | 0,95–1,18 | −0,21 | −0,12 (−0,9) | −2 pe | – | ✔ samma håll |
+| Direktspel | 49 | 0,96–1,12 | +0,12 | +0,22 (1,2) | +4 pe | – | ✔ samma håll |
+| Lågpress | 61 | 1,13–1,23 | −0,02 | +0,07 (0,4) | −5 pe | – | ✔ samma håll |
+| Mellanpress | 55 | 0,84–0,96 | −0,08 | +0,01 (0,1) | +5 pe | – | svag |
+| Högpress | 65 | 0,89–1,26 | −0,17 | −0,08 (−0,5) | −2 pe | – | ✔ samma håll |
+| Svag på fasta | 72 | 0,78–0,96 | −0,08 | +0,01 (0,1) | +8 pe | – | svag |
+| Medel på fasta | 52 | 1,02–1,25 | −0,04 | +0,06 (0,3) | −10 pe | – | svag |
+| Farlig på fasta | 37 | 1,16–1,38 | −0,18 | −0,09 (−0,5) | +2 pe | – | svag |
+| Stark mot fasta | 62 | 0,82–0,95 | −0,10 | −0,01 (−0,0) | +7 pe | – | svag |
+| Medel mot fasta | 58 | 0,90–1,33 | −0,12 | −0,03 (−0,2) | −2 pe | – | svag |
+| Svag mot fasta | 37 | 1,19–1,08 | +0,02 | +0,12 (0,5) | −6 pe | – | svag |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
+
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 2 | 1-0-1 | 1,50 | −0,01 |
+| Efter uppehåll sedan 2023 | 0 | – | – | – |
+| Övriga matcher | 403 | 127-129-147 | 1,27 | −0,05 |
+
+Hela ligan efter uppehåll: 0,00 mot marknaden (n 66). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2019-11-24 | Banfield - Velez Sarsfield | 1-0 V | +1,73 |
+| 2019-09-15 | Banfield - Talleres Cordoba | 0-1 F | −1,75 |
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -70,7 +118,9 @@ Form (äldst → senast): OFVFFFOO · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): Huracan 0,27 p/match (−0,95), Argentinos Jrs 0,38 p/match (−0,74), Belgrano 0,43 p/match (−0,79), Defensa y Justicia 0,67 p/match (−0,58), River Plate 0,86 p/match (+0,09), Boca Juniors 0,89 p/match (−0,23), Talleres Cordoba 0,90 p/match (−0,32), Platense 1,00 p/match (−0,57), Union de Santa Fe 1,00 p/match (−0,26), Estudiantes L.P. 1,00 p/match (−0,17), Racing Club 1,08 p/match (+0,02), Aldosivi 1,11 p/match (−0,48), Barracas Central 1,11 p/match (−0,42), San Lorenzo 1,11 p/match (−0,38), Sarmiento Junin 1,14 p/match (−0,37).
+
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Pedro Troglio. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -81,39 +131,39 @@ Tränare: Pedro Troglio. Betyg, mål och assist gäller innevarande säsong enli
 | | **Målvakter** | | | | | | | | | |
 | 25 | Gino Santilli | GK | 24 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 31 | Joaquín Molina | Keeper | 22 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 50 | Diego Rodríguez | GK | 37 | Argentina | 568 k€ | – | 0 | 0 | 0/0 |  |
+| 50 | Diego Rodríguez | GK | 37 | Argentina | 296 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-|  | Nehuén Paz | CB | 33 | Argentina | 441 k€ | – | 0 | 0 | 0/0 |  |
-| 6 | Nicolás Meriano | CB | 25 | Argentina | 483 k€ | – | 0 | 0 | 0/0 |  |
+|  | Nehuén Paz | CB | 33 | Argentina | 442 k€ | – | 0 | 0 | 0/0 |  |
+| 6 | Nicolás Meriano | CB | 25 | Argentina | 686 k€ | – | 0 | 0 | 0/0 |  |
 | 12 | Marcos López | RWB | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 13 | Brandon Oviedo | CB,CM | 21 | Argentina | 657 k€ | – | 0 | 0 | 0/0 |  |
-| 19 | Lautaro Cano | LB | 24 | Argentina | 244 k€ | – | 0 | 0 | 0/0 |  |
-| 24 | Santiago López García | RB,RWB,RM | 28 | Argentina | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 13 | Brandon Oviedo | CB,CM | 21 | Argentina | 786 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | Lautaro Cano | LB | 24 | Argentina | 422 k€ | – | 0 | 0 | 0/0 |  |
+| 24 | Santiago López García | RB,RWB,RM | 28 | Argentina | 1,3 M€ | – | 0 | 0 | 0/0 |  |
 | 26 | Mateo Mendizabal | Defender | 17 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 27 | Ignacio Abraham | LB,LWB,LM | 28 | Syria | 1,1 M€ | – | 0 | 0 | 0/0 |  |
-| 34 | Santiago Daniele | CB | 20 | Argentina | 586 k€ | – | 0 | 0 | 0/0 |  |
-| 37 | Renzo Malanca | CB,LB | 23 | Argentina | 405 k€ | – | 0 | 0 | 0/0 |  |
+| 27 | Ignacio Abraham | LB,LWB,LM | 28 | Syria | 1,3 M€ | – | 0 | 0 | 0/0 |  |
+| 34 | Santiago Daniele | CB | 20 | Argentina | 620 k€ | – | 0 | 0 | 0/0 |  |
+| 37 | Renzo Malanca | CB,LB | 23 | Argentina | 402 k€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 4 | Juan Luis Alfaro | CDM | 26 | Argentina | 343 k€ | – | 0 | 0 | 0/0 |  |
-| 7 | Lisandro Piñero | LM | 19 | Argentina | 1,3 M€ | – | 0 | 0 | 0/0 |  |
-| 8 | Lautaro Ríos | CM | 25 | Argentina | 395 k€ | – | 0 | 0 | 0/0 |  |
-| 10 | Lautaro Gómez | LM,CM,RM | 23 | Argentina | 532 k€ | – | 0 | 0 | 0/0 |  |
-| 11 | Favio Álvarez | CM | 33 | Argentina | 285 k€ | – | 0 | 0 | 0/0 |  |
-| 15 | Santiago Esquivel | CM,CDM | 22 | Argentina | 1,0 M€ | – | 0 | 0 | 0/0 |  |
-| 20 | Tomás Adoryán | RM,CAM,CM,CDM | 25 | Armenia | 620 k€ | – | 0 | 0 | 0/0 |  |
-| 21 | Lautaro Villegas | CM | 22 | Argentina | 653 k€ | – | 0 | 0 | 0/0 |  |
+| 4 | Juan Luis Alfaro | CDM | 26 | Argentina | 301 k€ | – | 0 | 0 | 0/0 |  |
+| 7 | Lisandro Piñero | LM | 19 | Argentina | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 8 | Lautaro Ríos | CM | 25 | Argentina | 381 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Lautaro Gómez | LM,CM,RM | 23 | Argentina | 581 k€ | – | 0 | 0 | 0/0 |  |
+| 11 | Favio Álvarez | CM | 33 | Argentina | 314 k€ | – | 0 | 0 | 0/0 |  |
+| 15 | Santiago Esquivel | CM,CDM | 22 | Argentina | 837 k€ | – | 0 | 0 | 0/0 |  |
+| 20 | Tomás Adoryán | RM,CAM,CM,CDM | 25 | Armenia | 605 k€ | – | 0 | 0 | 0/0 |  |
+| 21 | Lautaro Villegas | CM | 22 | Argentina | 738 k€ | – | 0 | 0 | 0/0 |  |
 | 23 | Lucas Palavecino | Midfielder | 22 | Argentina | 586 k€ | – | 0 | 0 | 0/0 |  |
 | 29 | Isaías Gutiérrez | Midfielder | 17 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 33 | Neyder Moreno | CAM,RW | 29 | Colombia | 282 k€ | – | 0 | 0 | 0/0 |  |
 | 35 | Nacho Pais | CM,RM,CDM | 26 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 40 | David Zalazar | RM,CM,CAM,RW | 24 | Argentina | 631 k€ | – | 0 | 0 | 0/0 |  |
+| 40 | David Zalazar | RM,CM,CAM,RW | 24 | Argentina | 628 k€ | – | 0 | 0 | 0/0 |  |
 | 70 | John Arteaga | CAM | 27 | Colombia | – | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
 | | **Anfallare** | | | | | | | | | |
-| 9 | Adrián Balboa | ST,CAM | 32 | Uruguay | 336 k€ | – | 0 | 0 | 0/0 |  |
+| 9 | Adrián Balboa | ST,CAM | 32 | Uruguay | 354 k€ | – | 0 | 0 | 0/0 |  |
 | 16 | Jeremías Acosta | Attacker | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 18 | Federico Medina | ST | 22 | Argentina | 352 k€ | – | 0 | 0 | 0/0 |  |
-| 22 | Alexander Machado | ST,LW | 24 | Uruguay | 507 k€ | – | 0 | 0 | 0/0 |  |
-| 28 | Matías Hernández | ST | 21 | Argentina | 575 k€ | – | 0 | 0 | 0/0 |  |
-| 30 | Federico Anselmo | ST | 32 | Argentina | 265 k€ | – | 0 | 0 | 0/0 |  |
+| 18 | Federico Medina | ST | 22 | Argentina | 388 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Alexander Machado | ST,LW | 24 | Uruguay | 681 k€ | – | 0 | 0 | 0/0 |  |
+| 28 | Matías Hernández | ST | 21 | Argentina | 630 k€ | – | 0 | 0 | 0/0 |  |
+| 30 | Federico Anselmo | ST | 32 | Argentina | 283 k€ | – | 0 | 0 | 0/0 |  |
 | 32 | Valentín González | Attacker | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 77 | Thomas Rodríguez | LW | 30 | Chile | 383 k€ | – | 0 | 0 | 0/0 |  |
+| 77 | Thomas Rodríguez | LW | 30 | Chile | 491 k€ | – | 0 | 0 | 0/0 |  |

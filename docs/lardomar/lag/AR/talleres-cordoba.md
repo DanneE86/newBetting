@@ -1,11 +1,14 @@
 # Talleres Cordoba (Liga Profesional) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - 2025: −0,40 poäng per match mot marknaden. Ligan visar ingen persistens, så räkna inte med att det fortsätter.
 - Stark historik mot Lanus (−1,20 p/match mot marknaden, 13 möten), River Plate (+0,58 p/match mot marknaden, 11 möten), Huracan (+0,70 p/match mot marknaden, 9 möten), Sarmiento Junin (+0,70 p/match mot marknaden, 8 möten), Central Cordoba (−0,61 p/match mot marknaden, 7 möten), Tigre (−0,55 p/match mot marknaden, 6 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Spelstil 2026: Bollinnehav, Kortpass, Medel på fasta, Svag mot fasta. Bäst mot Blandat (+0,20, svagt), Balanserat (+0,19, samma håll i båda halvorna men svagt), Svag på fasta (+0,14, svagt). Svårast mot Kortpass (−0,43, svagt), Bollinnehav (−0,27, samma håll i båda halvorna men svagt), Lågpress (−0,24, samma håll i båda halvorna men svagt). Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2026: 0,22 mål för per match (xG 0,26), 0,30 emot (xG 0,27), 4,7 hörnor.
+- Svårt för: Lanus (0-3-10, 0,23 p/match, mot marknaden −1,20), Velez Sarsfield (3-2-7, 0,92 p/match, mot marknaden −0,46), Tigre (1-3-2, 1,00 p/match, mot marknaden −0,55), Defensa y Justicia (2-3-4, 1,00 p/match, mot marknaden −0,43), Belgrano (1-7-1, 1,11 p/match, mot marknaden −0,44), Central Cordoba (2-2-3, 1,14 p/match, mot marknaden −0,61), Boca Juniors (3-3-4, 1,20 p/match, mot marknaden +0,18). Där marknaden ligger nära noll är laget bara sämre i de mötena än annars, och oddsen vet redan om det.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -32,6 +35,51 @@ Form (äldst → senast): VFFOOFVF · senaste match 2026-09-20
 | 2024 | AR | 41 | 1,76 | +0,19 (+0,10 / +0,28) | 37 % (29 %) | 1,41–1,05 | – | – |
 | 2025 | AR | 33 | 1,03 | −0,40 (−0,86 / +0,05) | 39 % (31 %) | 0,61–0,88 | – | – |
 | 2026 | AR | 26 | 1,31 | −0,10 (−0,27 / +0,07) | 27 % (32 %) | 1,08–1,15 | – | – |
+
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/AR.md#talleres-cordoba) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2026: **Bollinnehav, Kortpass, Medel på fasta, Svag mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026 | 27 | 0,22 | 0,26 | 0,30 | 0,27 | 4,7 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Backar hem | 57 | 1,12–1,09 | −0,13 | −0,05 (−0,3) | +5 pe | – | svag |
+| Balanserat | 78 | 1,14–0,91 | +0,11 | +0,19 (1,4) | +2 pe | – | ✔ samma håll |
+| Bollinnehav | 44 | 1,14–1,23 | −0,35 | −0,27 (−1,4) | −5 pe | – | ✔ samma håll |
+| Kortpass | 49 | 0,84–1,27 | −0,51 | −0,43 (−2,6) | −1 pe | – | svag |
+| Blandat | 76 | 1,38–1,07 | +0,12 | +0,20 (1,5) | +2 pe | – | svag |
+| Direktspel | 54 | 1,06–0,81 | +0,02 | +0,10 (0,5) | +2 pe | – | svag |
+| Lågpress | 50 | 0,86–0,96 | −0,32 | −0,24 (−1,3) | +3 pe | – | ✔ samma håll |
+| Mellanpress | 56 | 1,18–1,07 | −0,01 | +0,08 (0,5) | −10 pe | – | ✔ samma håll |
+| Högpress | 73 | 1,29–1,08 | +0,02 | +0,10 (0,7) | +8 pe | – | ✔ samma håll |
+| Svag på fasta | 63 | 1,25–1,02 | +0,06 | +0,14 (0,9) | −6 pe | – | svag |
+| Medel på fasta | 54 | 1,13–1,09 | −0,05 | +0,03 (0,2) | −2 pe | – | svag |
+| Farlig på fasta | 41 | 1,00–0,98 | −0,29 | −0,21 (−1,1) | +21 pe | – | svag |
+| Stark mot fasta | 60 | 1,38–0,95 | +0,03 | +0,11 (0,7) | −3 pe | – | ✔ samma håll |
+| Medel mot fasta | 65 | 1,03–1,09 | −0,09 | −0,01 (−0,1) | +2 pe | – | svag |
+| Svag mot fasta | 30 | 0,93–1,10 | −0,26 | −0,18 (−0,9) | +10 pe | – | svag |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
+
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 2 | 1-1-0 | 2,00 | +0,72 |
+| Efter uppehåll sedan 2023 | 0 | – | – | – |
+| Övriga matcher | 335 | 131-98-106 | 1,47 | −0,02 |
+
+Hela ligan efter uppehåll: 0,00 mot marknaden (n 66). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2019-11-25 | Talleres Cordoba - Racing Club | 3-3 O | −0,30 |
+| 2019-09-15 | Banfield - Talleres Cordoba | 0-1 V | +1,75 |
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -68,7 +116,9 @@ Form (äldst → senast): VFFOOFVF · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): Lanus 0,23 p/match (−1,20), Velez Sarsfield 0,92 p/match (−0,46), Tigre 1,00 p/match (−0,55), Defensa y Justicia 1,00 p/match (−0,43), Belgrano 1,11 p/match (−0,44), Central Cordoba 1,14 p/match (−0,61), Boca Juniors 1,20 p/match (+0,18).
+
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Omar De Felippe. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -82,22 +132,22 @@ Tränare: Omar De Felippe. Betyg, mål och assist gäller innevarande säsong en
 | 32 | Ezequiel Unsain | GK | 31 | Argentina | 1,4 M€ | – | 0 | 0 | 0/0 |  |
 | 40 | Franco Yennerich | Keeper | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 3 | Alexandro Maidana | LB,LWB,LM | 21 | Paraguay | 1,8 M€ | – | 0 | 0 | 0/0 |  |
-| 4 | Matías Catalán | CB | 34 | Chile | 344 k€ | – | 0 | 0 | 0/0 |  |
-| 6 | Román Riquelme | CB | 24 | Argentina | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 3 | Alexandro Maidana | LB,LWB,LM | 21 | Paraguay | 3,2 M€ | – | 0 | 0 | 0/0 |  |
+| 4 | Matías Catalán | CB | 34 | Chile | 391 k€ | – | 0 | 0 | 0/0 |  |
+| 6 | Román Riquelme | CB | 24 | Argentina | 1,4 M€ | – | 0 | 0 | 0/0 |  |
 | 10 | Thiago Baroni | Defender | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 13 | Valentín Fascendini | CB | 23 | Argentina | 1,4 M€ | – | 0 | 0 | 0/0 |  |
-| 19 | José Palomino | CB | 36 | Argentina | 210 k€ | – | 0 | 0 | 0/0 |  |
-| 20 | Augusto Schott | RB,CB,LB | 26 | Argentina | 769 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | José Palomino | CB | 36 | Argentina | 144 k€ | – | 0 | 0 | 0/0 |  |
+| 20 | Augusto Schott | RB,CB,LB | 26 | Argentina | 975 k€ | – | 0 | 0 | 0/0 |  |
 | 23 | Gabriel Báez | LB,LM,LWB | 31 | Argentina | 454 k€ | – | 0 | 0 | 0/0 |  |
 | 32 | Lucio Ferrari | Defender | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 35 | Gonzalo Nuccio | Defender | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 44 | Santiago Fernández | CB | 21 | Argentina | 1,8 M€ | – | 0 | 0 | 0/0 |  |
+| 44 | Santiago Fernández | CB | 21 | Argentina | 4,9 M€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 5 | Matías Galarza | CDM,CM | 24 | Argentina | 3,8 M€ | – | 0 | 0 | 0/0 |  |
-| 8 | Federico Fattori | CM,CDM,CB | 34 | Argentina | 807 k€ | – | 0 | 0 | 0/0 |  |
+| 5 | Matías Galarza | CDM,CM | 24 | Argentina | 5,8 M€ | – | 0 | 0 | 0/0 |  |
+| 8 | Federico Fattori | CM,CDM,CB | 34 | Argentina | 780 k€ | – | 0 | 0 | 0/0 |  |
 | 13 | Juan Sforza | CDM,CM | 24 | Argentina | 1,3 M€ | – | 0 | 0 | 0/0 |  |
-| 18 | Franco Cristaldo | CAM,RW | 30 | Argentina | 1,7 M€ | – | 0 | 0 | 0/0 |  |
+| 18 | Franco Cristaldo | CAM,RW | 30 | Argentina | 1,8 M€ | – | 0 | 0 | 0/0 |  |
 | 21 | Matías Gómez | CM | 20 | Argentina | – | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 26 | Mateo Cáceres | CDM,CM,RW,CAM,RM | 24 | Argentina | – | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 30 | Giovanni Baroni | CAM,RW,RM,CDM | 17 | Argentina | – | – | 0 | 0 | 0/0 |  |
@@ -107,8 +157,8 @@ Tränare: Omar De Felippe. Betyg, mål och assist gäller innevarande säsong en
 | | **Anfallare** | | | | | | | | | |
 | 7 | Diego Valoyes | RW | 30 | Colombia | 822 k€ | – | 0 | 0 | 0/0 |  |
 | 9 | Agustín Álvarez | ST | 25 | Uruguay | 1,7 M€ | – | 0 | 0 | 0/0 |  |
-| 11 | Valentín Depietri | ST,LW,RW | 25 | Argentina | 380 k€ | – | 0 | 0 | 0/0 |  |
+| 11 | Valentín Depietri | ST,LW,RW | 25 | Argentina | 367 k€ | – | 0 | 0 | 0/0 |  |
 | 24 | Ignacio Alastra | Attacker | 18 | Argentina | 835 k€ | – | 0 | 0 | 0/0 |  |
 | 36 | Emiliano Chiavassa | RW | 20 | Argentina | 645 k€ | – | 0 | 0 | 0/0 |  |
-| 37 | Rick | LW,RW,ST,LM,CAM | 27 | Brazil | 1,6 M€ | – | 0 | 0 | 0/0 |  |
-| 49 | Valentín Dávila | ST | 19 | Argentina | 1,8 M€ | – | 0 | 0 | 0/0 |  |
+| 37 | Rick | LW,RW,ST,LM,CAM | 27 | Brazil | 1,8 M€ | – | 0 | 0 | 0/0 |  |
+| 49 | Valentín Dávila | ST | 19 | Argentina | 2,1 M€ | – | 0 | 0 | 0/0 |  |

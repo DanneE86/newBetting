@@ -1,10 +1,13 @@
 # Stevenage (League One) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Stark historik mot Bradford (−0,79 p/match mot marknaden, 10 möten), Cambridge (+0,74 p/match mot marknaden, 9 möten), Barnsley (+0,82 p/match mot marknaden, 7 möten), Reading (−0,74 p/match mot marknaden, 6 möten), Stockport (+0,88 p/match mot marknaden, 6 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Spelstil 2025/26: Backar hem, Blandat, Mellanpress, Farlig på fasta, Medel mot fasta. Bäst mot Svag på fasta (+0,18, samma håll i båda halvorna men svagt), Balanserat (+0,15, samma håll i båda halvorna men svagt), Svag mot fasta (+0,14, samma håll i båda halvorna men svagt). Svårast mot Backar hem (−0,13, svagt), Bollinnehav (−0,13, svagt), Medel på fasta (−0,08, samma håll i båda halvorna men svagt). Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2025/26: 0,46 mål för per match (xG 0,46), 0,24 emot (xG 0,24), 4,4 hörnor.
+- Svårt för: Bradford (1-2-7, 0,50 p/match, mot marknaden −0,79), Reading (1-2-3, 0,83 p/match, mot marknaden −0,74), Mansfield (2-6-5, 0,92 p/match, mot marknaden −0,27), Leyton Orient (3-6-6, 1,00 p/match, mot marknaden −0,35), Burton (2-3-2, 1,29 p/match, mot marknaden −0,33). Där marknaden ligger nära noll är laget bara sämre i de mötena än annars, och oddsen vet redan om det.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -33,6 +36,53 @@ Form (äldst → senast): VOFOOVVF · senaste match 2026-09-19
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
 
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/EL1.md#stevenage) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2025/26: **Backar hem, Blandat, Mellanpress, Farlig på fasta, Medel mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026/27 | 7 | 0,86 | 0,41 | 0,57 | 0,20 | 4,1 |
+| 2025/26 | 46 | 0,46 | 0,46 | 0,24 | 0,24 | 4,4 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Backar hem | 81 | 0,94–1,09 | −0,14 | −0,13 (−1,0) | −3 pe | −3 pe | svag |
+| Balanserat | 127 | 1,20–1,08 | +0,14 | +0,15 (1,4) | +1 pe | +1 pe | ✔ samma håll |
+| Bollinnehav | 63 | 0,98–0,97 | −0,14 | −0,13 (−0,9) | +8 pe | −9 pe | svag |
+| Kortpass | 62 | 1,05–1,00 | −0,03 | −0,02 (−0,2) | +0 pe | −7 pe | svag |
+| Blandat | 143 | 1,13–1,16 | −0,01 | +0,00 (0,0) | −0 pe | +1 pe | svag |
+| Direktspel | 66 | 0,97–0,88 | +0,01 | +0,02 (0,2) | +4 pe | −7 pe | svag |
+| Lågpress | 69 | 1,04–0,96 | +0,06 | +0,07 (0,5) | +4 pe | −13 pe | ✔ samma håll |
+| Mellanpress | 100 | 0,99–1,09 | −0,03 | −0,02 (−0,1) | −3 pe | −1 pe | ✔ samma håll |
+| Högpress | 102 | 1,17–1,09 | −0,04 | −0,03 (−0,3) | +3 pe | +2 pe | ✔ samma håll |
+| Svag på fasta | 93 | 1,22–0,88 | +0,17 | +0,18 (1,4) | −5 pe | −6 pe | ✔ samma håll |
+| Medel på fasta | 124 | 1,01–1,08 | −0,09 | −0,08 (−0,8) | +10 pe | −5 pe | ✔ samma håll |
+| Farlig på fasta | 54 | 0,96–1,30 | −0,13 | −0,12 (−0,7) | −9 pe | +8 pe | svag |
+| Stark mot fasta | 94 | 1,04–1,06 | −0,11 | −0,10 (−0,8) | −5 pe | +1 pe | ✔ samma håll |
+| Medel mot fasta | 115 | 1,11–1,06 | −0,00 | +0,01 (0,1) | +7 pe | −4 pe | svag |
+| Svag mot fasta | 62 | 1,03–1,03 | +0,13 | +0,14 (0,9) | +0 pe | −6 pe | ✔ samma håll |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
+
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 3 | 0-2-1 | 0,67 | −0,58 |
+| Efter uppehåll sedan 2023 | 0 | – | – | – |
+| Övriga matcher | 408 | 143-120-145 | 1,35 | +0,01 |
+
+Hela ligan efter uppehåll: 0,00 mot marknaden (n 24). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2021-11-13 | Stevenage - Mansfield | 1-2 F | −1,41 |
+| 2017-12-09 | Stevenage - Wycombe | 0-0 O | −0,16 |
+| 2017-11-11 | Stevenage - Notts County | 1-1 O | −0,17 |
+
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
 | Motståndare | M | V-O-F | Mål | Mot marknaden | Kryss mot odds | Senast |
@@ -60,6 +110,8 @@ Form (äldst → senast): VOFOOVVF · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): Bradford 0,50 p/match (−0,79), Reading 0,83 p/match (−0,74), Mansfield 0,92 p/match (−0,27), Leyton Orient 1,00 p/match (−0,35), Burton 1,29 p/match (−0,33).
+
 ## Stryktipset / Europatipset
 
 | Datum | Spel | Match | Utfall | Folket på laget | Vår procent |
@@ -74,40 +126,40 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-10-04 | Stryk 4921 | Stevenage - Luton | 1 ✓ | 35 % | 35 % |
 | 2026-05-13 | Europa 2574 | Stockport - Stevenage | 1 | 20 % | 22 % |
 
-## Trupp (FotMob, hämtad 2026-09-29)
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Alex Revell. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Tommy Setford | GK | 20 | England | 132 k€ | 6,47 | 0 | 0 | 0/0 |  |
-| 12 | Daniel Barden | GK | 25 | Wales | 257 k€ | 6,68 | 0 | 0 | 0/0 |  |
+| 1 | Tommy Setford | GK | 20 | England | 190 k€ | 6,47 | 0 | 0 | 0/0 |  |
+| 12 | Daniel Barden | GK | 25 | Wales | 199 k€ | 6,68 | 0 | 0 | 0/0 |  |
 | 36 | Max Woodford | Keeper | 18 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Luther Wildin | RB,RWB,CB | 28 | Antigua and Barbuda | 204 k€ | 7,17 | 0 | 0 | 2/0 |  |
-| 5 | Carl Piergianni | CB | 34 | England | 154 k€ | 7,43 | 0 | 0 | 1/0 |  |
-| 6 | Lewis Freestone | LB,CB | 26 | England | 220 k€ | 7,20 | 0 | 0 | 3/0 |  |
-| 14 | Saxon Earley | LWB,LB,CB,LW | 23 | England | 256 k€ | 6,48 | 0 | 1 | 2/0 |  |
-| 15 | Terence Vancooten | CB | 28 | Guyana | 206 k€ | 7,41 | 1 | 0 | 1/0 |  |
-| 16 | Kaelan Casey | CB | 21 | England | 864 k€ | – | 0 | 0 | 0/0 |  |
-| 17 | Jasper Pattenden | RB,RWB | 24 | England | 271 k€ | 5,68 | 0 | 0 | 0/0 |  |
+| 2 | Luther Wildin | RB,RWB,CB | 28 | Antigua and Barbuda | 252 k€ | 7,17 | 0 | 0 | 2/0 |  |
+| 5 | Carl Piergianni | CB | 34 | England | 242 k€ | 7,43 | 0 | 0 | 1/0 |  |
+| 6 | Lewis Freestone | LB,CB | 26 | England | 301 k€ | 7,20 | 0 | 0 | 3/0 |  |
+| 14 | Saxon Earley | LWB,LB,CB,LW | 23 | England | 240 k€ | 6,48 | 0 | 1 | 2/0 |  |
+| 15 | Terence Vancooten | CB | 28 | Guyana | 357 k€ | 7,41 | 1 | 0 | 1/0 |  |
+| 16 | Kaelan Casey | CB | 21 | England | 818 k€ | – | 0 | 0 | 0/0 |  |
+| 17 | Jasper Pattenden | RB,RWB | 24 | England | 240 k€ | 5,68 | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 4 | Jordan Houghton | CDM | 30 | England | 279 k€ | 6,25 | 0 | 0 | 0/0 |  |
-| 7 | Terry Taylor | CM,CDM | 25 | Wales | 347 k€ | 6,33 | 0 | 0 | 0/0 |  |
-| 8 | Daniel Phillips | CDM,CM,CAM,RW | 25 | Trinidad and Tobago | 234 k€ | 6,87 | 0 | 0 | 2/0 |  |
-| 10 | Dan Kemp | CAM,RM,CM | 27 | England | 377 k€ | 7,08 | 3 | 1 | 1/0 |  |
-| 23 | Louis Thompson | CDM,CM,CAM | 31 | Wales | 151 k€ | 6,90 | 0 | 0 | 1/0 |  |
-| 24 | Matthew Smith | CDM,CM | 25 | England | 287 k€ | 6,94 | 0 | 0 | 0/0 |  |
+| 4 | Jordan Houghton | CDM | 30 | England | 327 k€ | 6,25 | 0 | 0 | 0/0 |  |
+| 7 | Terry Taylor | CM,CDM | 25 | Wales | 442 k€ | 6,33 | 0 | 0 | 0/0 |  |
+| 8 | Daniel Phillips | CDM,CM,CAM,RW | 25 | Trinidad and Tobago | 267 k€ | 6,87 | 0 | 0 | 2/0 |  |
+| 10 | Dan Kemp | CAM,RM,CM | 27 | England | 463 k€ | 7,08 | 3 | 1 | 1/0 |  |
+| 23 | Louis Thompson | CDM,CM,CAM | 31 | Wales | 158 k€ | 6,90 | 0 | 0 | 1/0 |  |
+| 24 | Matthew Smith | CDM,CM | 25 | England | 414 k€ | 6,94 | 0 | 0 | 0/0 |  |
 | 43 | Charlie Brown | Midfielder | 0 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-|  | Tuğra Turhan | Attacker | 19 | Switzerland | 644 k€ | – | 0 | 0 | 0/0 |  |
+|  | Tuğra Turhan | Attacker | 19 | Switzerland | 1,0 M€ | – | 0 | 0 | 0/0 |  |
 |  | Wanya Marçal | LW | 23 | England | 281 k€ | – | 0 | 0 | 0/0 |  |
-| 9 | Josh Magennis | ST | 36 | Northern Ireland | 186 k€ | 6,81 | 2 | 1 | 0/0 |  |
-| 11 | Jordan Roberts | RW,LWB,LM,ST,LW | 32 | England | 177 k€ | 7,06 | 1 | 1 | 0/0 |  |
-| 18 | Oliver Sanderson | ST,RM | 22 | England | 384 k€ | 7,11 | 3 | 0 | 0/0 |  |
+| 9 | Josh Magennis | ST | 36 | Northern Ireland | 231 k€ | 6,81 | 2 | 1 | 0/0 |  |
+| 11 | Jordan Roberts | RW,LWB,LM,ST,LW | 32 | England | 237 k€ | 7,06 | 1 | 1 | 0/0 |  |
+| 18 | Oliver Sanderson | ST,RM | 22 | England | 461 k€ | 7,11 | 3 | 0 | 0/0 |  |
 | 20 | Chem Campbell | LW,RW | 23 | Wales | 753 k€ | – | 0 | 0 | 0/0 |  |
-| 27 | Ben Broggio | LW,RW,CAM,ST | 19 | England | 601 k€ | 6,22 | 0 | 0 | 0/0 |  |
-| 28 | Michael Mellon | ST | 22 | Scotland | 282 k€ | 6,33 | 1 | 0 | 0/0 |  |
+| 27 | Ben Broggio | LW,RW,CAM,ST | 19 | England | 549 k€ | 6,22 | 0 | 0 | 0/0 |  |
+| 28 | Michael Mellon | ST | 22 | Scotland | 265 k€ | 6,33 | 1 | 0 | 0/0 |  |
 | 40 | Lenny Brown | Attacker | 18 | England | – | – | 0 | 0 | 0/0 |  |
-| 44 | Phoenix Patterson | LW,LM,CAM,RW | 26 | Scotland | 216 k€ | 6,85 | 0 | 2 | 0/0 |  |
+| 44 | Phoenix Patterson | LW,LM,CAM,RW | 26 | Scotland | 210 k€ | 6,85 | 0 | 2 | 0/0 |  |

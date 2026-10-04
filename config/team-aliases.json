@@ -1,0 +1,40 @@
+{
+  "note": "Samma lag med olika stavning i olika källor/säsonger. Nyckel = variant, värde = namnet som används (det nyaste, som de löpande hämtningarna ger). Används av Update-BettingStore.ps1, scripts/lib/learnings-data.mjs och export-league-matches.mjs via scripts/lib/team-aliases.mjs. Kontrollerat 2026-10-04: paren spelar aldrig mot varandra. OBS olika klubbar som INTE ska slås ihop: Osters/Ostersunds (AS), Zaglebie/Zaglebie Sosnowiec, Wisla/Wisla Plock, Rakow/Wieczysta Krakow (EK), Athletic/Athletico-PR (BR2), Yamaga/Montedio Yamagata (JP1), Lorca/Mallorca (LL2), Karlstad/FBK Karlstad (SE3N), Estudiantes L.P./Estudiantes Rio Cuarto (AR), GKS Belchatow/GKS Katowice (EK), Bury/Shrewsbury (EL2).",
+  "leagues": {
+    "AR": {
+      "Colon Santa FE": "Colon Santa Fe"
+    },
+    "AS": {
+      "Osters": "Oster"
+    },
+    "EK": {
+      "Gornik Z.": "Gornik Zabrze",
+      "Ruch": "Ruch Chorzow"
+    },
+    "EL": {
+      "ARARAT-ARMENIA": "Ararat-Armenia",
+      "OFI CRETE": "OFI Crete"
+    },
+    "HR": {
+      "NK Istra 1961": "Istra 1961",
+      "NK Varaždin": "Varaždin",
+      "NK Lokomotiva": "Lokomotiva Zagreb"
+    },
+    "LL2": {
+      "Leonesa": "Cultural Leonesa"
+    },
+    "NO": {
+      "Ham-Kam": "HamKam"
+    },
+    "SE3N": {
+      "Assyriska FF": "Assyriska",
+      "Vasalunds": "Vasalund"
+    },
+    "SE3S": {
+      "Angelholm": "Ängelholm",
+      "Hässleholms IF": "Hässleholm",
+      "Eskilsminne IF": "Eskilsminne",
+      "Lunds BK": "Lund"
+    }
+  }
+}

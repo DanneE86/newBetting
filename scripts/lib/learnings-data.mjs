@@ -5,6 +5,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { nameScore } from './match-context.mjs';
+import { canonTeam } from './team-aliases.mjs';
 
 export const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
 const RAW = path.join(root, 'data', 'raw');
@@ -96,6 +97,8 @@ export function loadMatches() {
   const seen = new Set();
   const add = (m) => {
     if (!m.date || !m.home || !m.away || !Number.isFinite(m.hg) || !Number.isFinite(m.ag)) return;
+    m.home = canonTeam(m.league, m.home);
+    m.away = canonTeam(m.league, m.away);
     const k = `${m.league}|${m.date}|${m.home}|${m.away}`;
     if (seen.has(k)) return;
     seen.add(k);

@@ -1,12 +1,13 @@
 # Ekstraklasa (EK) – lärdomar
 
-Genererad 2026-09-29 av `node scripts/analyze-learnings.mjs`. Skriv inte för hand här: egna anteckningar läggs i `docs/lardomar/anteckningar/EK.md`.
+Genererad 2026-10-04 av `node scripts/analyze-learnings.mjs`. Skriv inte för hand här: egna anteckningar läggs i `docs/lardomar/anteckningar/EK.md`.
 
 Underlag: 4160 matcher, säsong 2012/13 – 2026/27. Marknad = stängningsodds utan marginal (Pinnacle, annars snitt av bolagen), öppningsodds saknas. xG: saknas (0 % av matcherna).
 
 ## Lärdomar i korthet
 
 - Vilodagar (hemma − borta, ligamatcher): svag signal (z 2,5) som inte håller i både träning och kontroll. Använd inte.
+- Lag som slog marknaden en säsong gör det mindre nästa (lutning −0,20, z −2,6).
 
 ## Ligans profil
 
@@ -52,11 +53,11 @@ Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (
 
 | Signal | Hela perioden | Träning (< 2023/24) | Kontroll (2023/24–) | Mot öppningsodds | Oddsrörelse | Effekt p90–p10 | Bedömning |
 |---|---|---|---|---|---|---|---|
-| Form mot marknaden (poäng − förväntat, senaste 8) | −0,020 (z −0,6, n 4021) | −0,009 (z −0,2, n 3049) | −0,059 (z −0,9, n 972) | – | – | −0,032 p | ingen effekt |
-| Inbördes möten mot marknaden (≥ 3 möten, 8 år) | −0,044 (z −0,8, n 2852) | −0,082 (z −1,4, n 2144) | +0,072 (z 0,7, n 708) | – | – | −0,049 p | ingen effekt |
-| Inbördes möten, poängskillnad | −0,025 (z −1,1, n 2852) | −0,036 (z −1,4, n 2144) | +0,009 (z 0,2, n 708) | – | – | −0,065 p | ingen effekt |
-| Inbördes möten, kryss mot förväntat | +0,010 (z 0,2, n 2852) | −0,016 (z −0,3, n 2144) | +0,094 (z 0,9, n 708) | – | – | +0,005 p | ingen effekt |
-| Vilodagar (hemma − borta, ligamatcher) | +0,029 (z 2,5, n 3904) | +0,045 (z 3,2, n 2973) | +0,000 (z 0,0, n 931) | – | – | +0,115 p | svag signal (inte bekräftad) |
+| Form mot marknaden (poäng − förväntat, senaste 8) | −0,018 (z −0,6, n 4031) | −0,008 (z −0,2, n 3054) | −0,053 (z −0,8, n 977) | – | – | −0,029 p | ingen effekt |
+| Inbördes möten mot marknaden (≥ 3 möten, 8 år) | −0,049 (z −1,0, n 2923) | −0,080 (z −1,3, n 2152) | +0,042 (z 0,4, n 771) | – | – | −0,055 p | ingen effekt |
+| Inbördes möten, poängskillnad | −0,028 (z −1,3, n 2923) | −0,036 (z −1,4, n 2152) | −0,006 (z −0,1, n 771) | – | – | −0,072 p | ingen effekt |
+| Inbördes möten, kryss mot förväntat | −0,007 (z −0,1, n 2923) | −0,019 (z −0,3, n 2152) | +0,028 (z 0,3, n 771) | – | – | −0,003 p | ingen effekt |
+| Vilodagar (hemma − borta, ligamatcher) | +0,029 (z 2,5, n 3905) | +0,045 (z 3,1, n 2974) | +0,000 (z 0,0, n 931) | – | – | +0,114 p | svag signal (inte bekräftad) |
 | Bolagssnitt mot Pinnacle vid stängning | +0,754 (z 1,2, n 3887) | +0,849 (z 1,2, n 3163) | +0,287 (z 0,2, n 724) | – | – | +0,057 p | ingen effekt |
 
 ## Situationer
@@ -64,21 +65,21 @@ Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (
 | Situation | Snitt mot marknaden | Träning | Kontroll | Bedömning |
 |---|---|---|---|---|
 | Omgång 1–5 (hemmalagets poäng mot marknaden) | −0,030 (z −0,6, n 609) | −0,075 (z −1,2, n 440) | +0,087 (z 0,9, n 169) | ingen effekt |
-| Sista 4 omgångarna (hemmalagets poäng) | −0,042 (z −0,7, n 462) | −0,073 (z −1,1, n 354) | +0,061 (z 0,5, n 108) | ingen effekt |
-| Sista 4 omgångarna (kryss mot förväntat) | +0,004 (z 0,2, n 462) | +0,002 (z 0,1, n 354) | +0,010 (z 0,2, n 108) | ingen effekt |
-| Uppflyttat lag, omgång 1–10 (lagets poäng mot marknaden) | −0,055 (z −0,8, n 323) | −0,004 (z −0,1, n 223) | −0,166 (z −1,4, n 100) | ingen effekt |
+| Sista 4 omgångarna (hemmalagets poäng) | −0,038 (z −0,7, n 466) | −0,068 (z −1,0, n 358) | +0,061 (z 0,5, n 108) | ingen effekt |
+| Sista 4 omgångarna (kryss mot förväntat) | +0,004 (z 0,2, n 466) | +0,002 (z 0,1, n 358) | +0,010 (z 0,2, n 108) | ingen effekt |
+| Uppflyttat lag, omgång 1–10 (lagets poäng mot marknaden) | −0,078 (z −1,1, n 314) | −0,037 (z −0,4, n 214) | −0,166 (z −1,4, n 100) | ingen effekt |
 | Hemmalaget ≤ 3 dagars vila, bortalaget ≥ 6 | −0,054 (z −0,6, n 174) | −0,083 (z −0,8, n 113) | −0,001 (z −0,0, n 61) | ingen effekt |
 
 ## Lag som marknaden felvärderar?
 
-- Lagets poäng mot marknaden en säsong → nästa: lutning −0,19 (z −2,5, n 185). 
-- Lagets extra hemmafördel → nästa säsong: lutning −0,08 (z −1,1, n 185). Lagspecifik hemmafördel utöver marknaden är brus.
+- Lagets poäng mot marknaden en säsong → nästa: lutning −0,20 (z −2,6, n 186). 
+- Lagets extra hemmafördel → nästa säsong: lutning −0,08 (z −1,2, n 186). Lagspecifik hemmafördel utöver marknaden är brus.
 
 ## Stryktipset och Europatipset
 
 Inga matcher från ligan i de sparade backtesten ännu.
 
-## Tabell nu (FotMob, 2026-09-29)
+## Tabell nu (FotMob, 2026-10-04)
 
 | # | Lag | M | V | O | F | Mål | +/− | P |
 |---|---|---|---|---|---|---|---|---|

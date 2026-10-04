@@ -1,7 +1,7 @@
 // Flik "Stryktipset": kupong fran Svenska Spel + analys per match (data fran /api/stryktips).
 // En sida per spel: användaren låser krav (1, X, 2, 1X, X2, 12, 1X2) för kupong A, B eller båda, och resten av
 // kupongerna genereras i webbläsaren (stryk-engine.js).
-import { generateCoupons, kravSigns, VARIANT, canFall } from "/stryk-engine.js";
+import { generateCoupons, kravSigns, VARIANT, canFall, skrallTips } from "/stryk-engine.js";
 import { startelvaButton, startelvaPanel } from "/startelva.js";
 
 // Startelvan per match (gui/public/startelva.js), samma nyckel som scripts/lib/startelva.mjs svsKey
@@ -723,7 +723,7 @@ const SCOPE_TITLE = {
   A: "Kravet gäller bara kupong A",
   B: "Kravet gäller bara kupong B",
   C: "Kravet gäller bara kupong C (eget system)",
-  D: "Kravet gäller bara kupong D (ditt fasta system 4 spikar, 4 halvor, 5 helor)",
+  D: "Kravet gäller bara kupong D (fritt system för vinster över 20 000 kr)",
   all: "Kravet gäller alla fyra kupongerna",
 };
 const bStates = new Map();
@@ -782,7 +782,7 @@ function couponCard(c, label, p) {
   const extra = label === "C" || label === "D";
   const cls = extra ? "sb-coupon is-extra" : "sb-coupon is-main";
   const tag = extra ? `<span class="sb-coupon-tag extra">Extra · valfri</span>` : `<span class="sb-coupon-tag">Rekommenderad</span>`;
-  if (!c) return `<div class="${cls} ds-card">${tag}<h3>Kupong ${label}</h3><p class="st-note bad ds-notice ds-notice--danger">${label === "C" ? "Gick inte att bygga kupong C (risksystem: 700–850 kr, 50 000–75 000 kr för 13 rätt)" : label === "D" ? "Gick inte att bygga kupong D (4 spikar, 4 halvor, 5 helor) – dina krav på D passar inte formen" : `Gick inte att bygga en kupong med de här kraven${label === "B" ? " (B är risksystemet: 50 000–75 000 kr för 13 rätt och en annan grundrad än A)" : ""}`}.</p></div>`;
+  if (!c) return `<div class="${cls} ds-card">${tag}<h3>Kupong ${label}</h3><p class="st-note bad ds-notice ds-notice--danger">${label === "C" ? "Gick inte att bygga kupong C (risksystem: 700–850 kr, 50 000–75 000 kr för 13 rätt)" : label === "D" ? "Gick inte att bygga kupong D (fritt system, minst 20 000 kr för 13 rätt) med dina krav på D" : `Gick inte att bygga en kupong med de här kraven${label === "B" ? " (B är risksystemet: 50 000–75 000 kr för 13 rätt och en annan grundrad än A)" : ""}`}.</p></div>`;
   const krFmt = (x) => Math.round(x).toLocaleString("sv-SE");
   const r = c.rules;
   const locked = c.picks.filter((x) => x.locked).length;
@@ -791,7 +791,7 @@ function couponCard(c, label, p) {
     <h3>Kupong ${label} <small>${c.rows} rader · ${krFmt(c.cost)} kr</small></h3>
     <dl class="sb-facts">
       <div><dt>Utdelning 13 rätt</dt><dd>ca ${krFmt(c.expectedPayout || 0)} kr</dd></div>
-      <div><dt>Regler</dt><dd class="sb-rule">${r.signMin.join("-")}${label === "D" ? ` · röd ${r.colorRules.red.join("–")}, grön ${r.colorRules.green.join("–")}` : ""} · utdelning minst ${krFmt(r.payoutMinReal ?? r.payoutMin)} kr, inget tak</dd></div>
+      <div><dt>Regler</dt><dd class="sb-rule">${r.free ? "Fritt system, inga färg- eller teckenregler" : r.signMin.join("-")} · utdelning minst ${krFmt(r.payoutMinReal ?? r.payoutMin)} kr, inget tak</dd></div>
       <div><dt>Dina krav</dt><dd>${locked}</dd></div>
     </dl>
     ${c.relaxed?.length ? `<p class="st-note ds-notice ds-notice--warning">Gick inte med alla regler: ${esc(c.relaxed.join(", "))}.</p>` : ""}
@@ -940,6 +940,27 @@ function streckNote(p, st) {
   return `<details class="st-streck ds-notice${st.liveError ? " is-warn" : ""}"${keep("streck")}><summary>${head}</summary><p>${more}</p></details>`;
 }
 
+// Skrällspikar att läsa om (stryk-engine.js skrallTips): två att välja på, överst på sidan, ligger inte i kupongerna.
+// Säger om A–D ändå spikar dem.
+function skrallTipBox(p, res) {
+  const tips = skrallTips(p.events);
+  if (!tips.length) return `<div class="st-skrall ds-notice" role="note"><p class="st-skrall-h">💥 Skrällspikar att läsa om</p><p>Ingen skräll denna omgång: inget tecken utanför favoriten har minst 25 % hos oss och är understreckat av folket.</p></div>`;
+  const pick = (t, n) => {
+    const inC = ["A", "B", "C", "D"].filter((k) => res?.[k]?.picks?.[t.i]?.signs === t.sign);
+    const facit = t.hit == null ? "" : ` <span class="st-chip ${t.hit ? "good" : "bad"}">${t.hit ? "Gick in" : "Gick inte in"}${t.score ? ` · ${esc(t.score)}` : ""}</span>`;
+    const label = n === 0 ? "Förstaval" : t.weak ? "Reserv (svagare)" : "Andraval";
+    return `<div class="st-skrall-item">
+      <p class="st-skrall-pick"><small class="st-skrall-rank">${label}</small><br><span class="st-num">${t.eventNumber}</span> <b>${esc(t.home)} – ${esc(t.away)}</b>: spika <b class="st-skrall-sign">${esc(t.sign)}</b> (${esc(t.outcome)})${facit}<br><small>${esc(kickoff(t.kickoff))} · ${esc(t.league || "")} · vår chans ${pct(t.p)}, folket ${pct(t.folk)}</small></p>
+      <p>${t.weak ? "Klarar inte hela skrällkravet (minst 30 % och 3 procentenheter över folket) men är den bästa som finns kvar." : n === 0 ? "Omgångens bästa skräll." : "Näst bästa skrällen, på en annan match."}${inC.length ? ` Kupong ${inC.join(" och ")} spikar redan ${esc(t.sign)} här.` : " Kupongerna spikar den inte – lägg den som krav själv om du vill."}</p>
+      <details class="sb-howto"${keep(`skrall-why-${n}`)}><summary>Varför?</summary><ul>${t.reasons.map((r) => `<li>${esc(r)}</li>`).join("")}</ul></details>
+    </div>`;
+  };
+  return `<div class="st-skrall ds-notice" role="note">
+    <p class="st-skrall-h">💥 Skrällspikar att läsa om <small>ligger inte i kupongen</small></p>
+    <p><b>Kort sagt:</b> folket tror för lite på de här tecknen. Vill du chansa på en skräll – välj ${tips.length > 1 ? "en av de två" : "den här"}.</p>
+    ${tips.map(pick).join("")}
+  </div>`;
+}
 
 let backtestOpened = false;
 function renderB(p, head, top = "", extras = "") {
@@ -1029,7 +1050,7 @@ function renderB(p, head, top = "", extras = "") {
     <button type="button" class="btn-ghost ds-btn ds-btn--secondary" id="sb-clear"${n ? "" : " disabled"}>Rensa</button>
     <button type="button" class="btn-fetch sb-generate ds-btn ds-btn--primary" id="sb-generate"${st.busy ? " disabled" : ""}><span class="btn-label">${st.busy ? "Genererar…" : "Generera kupong"}</span></button>
   </div>`;
-  view.innerHTML = `${head}${data.error ? `<p class="st-note bad ds-notice ds-notice--danger">Kunde inte uppdatera: ${esc(data.error)}</p>` : ""}${top}${picker}${result}${miss.tur}${riskPanel(p)}${matches}${stats}${bar}`;
+  view.innerHTML = `${head}${data.error ? `<p class="st-note bad ds-notice ds-notice--danger">Kunde inte uppdatera: ${esc(data.error)}</p>` : ""}${skrallTipBox(p, res)}${top}${picker}${result}${miss.tur}${riskPanel(p)}${matches}${stats}${bar}`;
 }
 
 function handleB(ev) {

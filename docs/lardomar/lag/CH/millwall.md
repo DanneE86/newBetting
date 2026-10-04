@@ -1,11 +1,15 @@
 # Millwall (Championship) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - 2025/26: +0,42 poäng per match mot marknaden. Ligan visar ingen persistens, så räkna inte med att det fortsätter.
 - Stark historik mot Blackburn (−0,79 p/match mot marknaden, 16 möten), Stoke (+0,70 p/match mot marknaden, 16 möten), Watford (+0,78 p/match mot marknaden, 10 möten), Sheffield United (+0,83 p/match mot marknaden, 9 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Efter landslagsuppehåll: 0,94 poäng per match mot 1,47 annars (6-13-14 på 33 matcher), mot marknaden −0,26 mot +0,13. Sedan 2023: 2-5-5. Sämre än vanligt, men få matcher: i hela ligan är effekten +0,01 mot marknaden.
+- Spelstil 2025/26: Backar hem, Direktspel, Mellanpress, Farlig på fasta, Medel mot fasta. Bäst mot Medel på fasta (+0,13, svagt), Kortpass (+0,14, samma håll i båda halvorna men svagt), Medel mot fasta (+0,11, samma håll i båda halvorna men svagt). Svårast mot Stark mot fasta (−0,16, samma håll i båda halvorna men svagt), Svag på fasta (−0,12, svagt), Blandat (−0,10, samma håll i båda halvorna men svagt). Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2025/26: 0,54 mål för per match (xG 0,45), 0,20 emot (xG 0,27), 5,7 hörnor.
+- Svårt för: Blackburn (2-3-11, 0,56 p/match, mot marknaden −0,79), Norwich (4-2-7, 1,08 p/match, mot marknaden −0,09). Där marknaden ligger nära noll är laget bara sämre i de mötena än annars, och oddsen vet redan om det.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -33,6 +37,83 @@ Form (äldst → senast): VVFFVFOO · senaste match 2026-09-19
 | 2026/27 | CH | 8 | 1,38 | +0,17 (+0,41 / −0,07) | 25 % (26 %) | 1,88–1,88 | 1,55–1,50* | 1,40 |
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/CH.md#millwall) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2025/26: **Backar hem, Direktspel, Mellanpress, Farlig på fasta, Medel mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026/27 | 8 | 0,63 | 0,65 | 0,38 | 0,19 | 4,5 |
+| 2025/26 | 46 | 0,54 | 0,45 | 0,20 | 0,27 | 5,7 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Backar hem | 99 | 1,18–0,97 | +0,12 | +0,04 (0,4) | +6 pe | −6 pe | ✔ samma håll |
+| Balanserat | 164 | 1,16–1,23 | +0,04 | −0,04 (−0,4) | −2 pe | −2 pe | svag |
+| Bollinnehav | 101 | 1,15–1,21 | +0,09 | +0,02 (0,1) | −3 pe | −1 pe | svag |
+| Kortpass | 115 | 1,10–1,12 | +0,21 | +0,14 (1,1) | −6 pe | −4 pe | ✔ samma håll |
+| Blandat | 139 | 1,17–1,31 | −0,02 | −0,10 (−0,9) | +0 pe | +1 pe | ✔ samma håll |
+| Direktspel | 110 | 1,21–0,99 | +0,06 | −0,02 (−0,2) | +7 pe | −6 pe | svag |
+| Lågpress | 108 | 1,22–1,19 | +0,06 | −0,02 (−0,2) | −2 pe | +0 pe | svag |
+| Mellanpress | 140 | 1,19–1,21 | +0,02 | −0,05 (−0,5) | +3 pe | +1 pe | svag |
+| Högpress | 116 | 1,07–1,04 | +0,16 | +0,08 (0,7) | −1 pe | −11 pe | ✔ samma håll |
+| Svag på fasta | 130 | 1,12–1,30 | −0,04 | −0,12 (−1,1) | −2 pe | −0 pe | svag |
+| Medel på fasta | 150 | 1,27–1,05 | +0,21 | +0,13 (1,2) | −1 pe | −2 pe | svag |
+| Farlig på fasta | 84 | 1,04–1,12 | +0,03 | −0,05 (−0,4) | +5 pe | −9 pe | svag |
+| Stark mot fasta | 120 | 1,15–1,14 | −0,08 | −0,16 (−1,4) | +2 pe | −4 pe | ✔ samma håll |
+| Medel mot fasta | 168 | 1,15–1,13 | +0,18 | +0,11 (1,1) | −1 pe | −3 pe | ✔ samma håll |
+| Svag mot fasta | 76 | 1,21–1,24 | +0,09 | +0,02 (0,1) | −0 pe | −2 pe | svag |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
+
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 33 | 6-13-14 | 0,94 | −0,26 |
+| Efter uppehåll sedan 2023 | 12 | 2-5-5 | 0,92 | −0,30 |
+| Övriga matcher | 389 | 153-112-124 | 1,47 | +0,13 |
+
+Hela ligan efter uppehåll: +0,01 mot marknaden (n 766). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2026-04-03 | Middlesbrough - Millwall | 1-2 V | +1,89 |
+| 2025-11-22 | Portsmouth - Millwall | 3-1 F | −1,46 |
+| 2025-10-18 | QPR - Millwall | 1-2 V | +1,38 |
+| 2025-09-13 | Charlton - Millwall | 1-1 O | +0,48 |
+| 2025-03-29 | Sunderland - Millwall | 1-0 F | −1,01 |
+| 2024-11-23 | Millwall - Sunderland | 1-1 O | −0,61 |
+| 2024-10-19 | Millwall - Derby | 1-1 O | −0,75 |
+| 2024-09-14 | Millwall - Luton | 0-1 F | −1,44 |
+| 2024-03-29 | Millwall - West Brom | 1-1 O | −0,19 |
+| 2023-11-25 | Millwall - Coventry | 0-3 F | −1,37 |
+| 2023-10-21 | Preston - Millwall | 1-1 O | +0,49 |
+| 2023-09-17 | Millwall - Leeds | 0-3 F | −1,02 |
+| 2023-04-01 | West Brom - Millwall | 0-0 O | +0,68 |
+| 2022-12-03 | Sunderland - Millwall | 3-0 F | −1,61 |
+| 2022-10-01 | Blackburn - Millwall | 2-1 F | −1,39 |
+| 2022-04-02 | Luton - Millwall | 2-2 O | +0,59 |
+| 2021-11-20 | Middlesbrough - Millwall | 1-1 O | +0,61 |
+| 2021-10-16 | Millwall - Luton | 0-2 F | −1,43 |
+| 2021-09-11 | West Brom - Millwall | 1-1 O | +1,05 |
+| 2021-04-02 | Millwall - Rotherham | 1-0 V | +1,45 |
+| 2020-11-21 | Millwall - Cardiff | 1-1 O | −0,43 |
+| 2020-10-17 | Wycombe - Millwall | 1-2 V | +0,77 |
+| 2019-11-23 | Swansea - Millwall | 0-1 V | +1,78 |
+| 2019-10-19 | Brentford - Millwall | 3-2 F | −1,10 |
+| 2019-09-14 | Blackburn - Millwall | 2-0 F | −1,34 |
+| 2019-03-30 | Leeds - Millwall | 3-2 F | −0,90 |
+| 2018-11-24 | Millwall - Bolton | 1-1 O | −1,02 |
+| 2018-10-20 | Reading - Millwall | 3-1 F | −1,74 |
+| 2018-09-15 | Millwall - Leeds | 1-1 O | −0,36 |
+| 2018-03-30 | Millwall - Nott'm Forest | 2-0 V | +1,24 |
+| 2017-11-18 | Sunderland - Millwall | 2-2 O | +0,55 |
+| 2017-10-14 | Brentford - Millwall | 1-0 F | −1,16 |
+| 2017-09-09 | Wolves - Millwall | 1-0 F | −1,13 |
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -62,6 +143,8 @@ Form (äldst → senast): VVFFVFOO · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): Blackburn 0,56 p/match (−0,79), Norwich 1,08 p/match (−0,09).
+
 ## Stryktipset / Europatipset
 
 | Datum | Spel | Match | Utfall | Folket på laget | Vår procent |
@@ -83,52 +166,52 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-08-16 | Stryk 4914 | Millwall - Middlesbrough | 2 | 50 % | 43 % |
 | 2026-09-12 | Stryk 4970 | Blackburn - Millwall | 1 | 43 % | 34 % |
 | 2026-09-05 | Stryk 4969 | Millwall - Bolton | 1 ✓ | 56 % | 49 % |
-| 2026-08-29 | Stryk 4968 | Southampton - Millwall | 1 | 21 % | 28 % |
+| 2026-08-29 | Stryk 4968 | Southampton - Millwall | 1 | 21 % | 27 % |
 | 2026-05-07 | Europa 2572 | Hull - Millwall | X | 47 % | 42 % |
 | 2026-01-01 | Europa 2536 | Southampton - Millwall | X | 16 % | 24 % |
 
-## Trupp (FotMob, hämtad 2026-09-29)
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Alex Neil. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Lukas Bornhøft Jensen (skadad, åter Early October 2026), Tristan Crama (skadad, åter Early October 2026), Ryan Leonard (skadad, åter Early October 2026), Casper de Norre (skadad, åter Early October 2026), Mihailo Ivanović (skadad, åter Early October 2026), Josh Coburn (skadad, åter Early October 2026)
+**Skadade/borta nu:** Lukas Bornhøft Jensen (skadad, åter Mid October 2026), Tristan Crama (osäker), Ryan Leonard (skadad, åter Mid October 2026), Casper de Norre (osäker), Mihailo Ivanović (osäker), Josh Coburn (osäker)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Lukas Bornhøft Jensen | GK | 27 | Denmark | 505 k€ | 7,13 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
-| 15 | Max Crocombe | GK | 33 | New Zealand | 573 k€ | 6,09 | 0 | 0 | 0/0 |  |
-| 34 | Filip Marschall | GK | 23 | England | 847 k€ | 7,78 | 0 | 0 | 0/0 |  |
-| 41 | George Evans | GK | 21 | England | 435 k€ | – | 0 | 0 | 0/0 |  |
-| 43 | Joel Coleman | GK | 31 | England | 305 k€ | – | 0 | 0 | 0/0 |  |
+| 1 | Lukas Bornhøft Jensen | GK | 27 | Denmark | 445 k€ | 7,13 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 15 | Max Crocombe | GK | 33 | New Zealand | 650 k€ | 6,09 | 0 | 0 | 0/0 |  |
+| 34 | Filip Marschall | GK | 23 | England | 1,1 M€ | 7,78 | 0 | 0 | 0/0 |  |
+| 41 | George Evans | GK | 21 | England | 495 k€ | – | 0 | 0 | 0/0 |  |
+| 43 | Joel Coleman | GK | 31 | England | 303 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Jordi Osei-Tutu | RB,LW,LM,RM | 27 | England | 169 k€ | 6,56 | 0 | 0 | 0/0 |  |
-| 3 | Zak Sturge | LB | 22 | England | 1,6 M€ | 6,75 | 0 | 1 | 1/0 |  |
-| 4 | Tristan Crama | RB,CB | 24 | France | 1,5 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 2 | Jordi Osei-Tutu | RB,LW,LM,RM | 28 | England | 354 k€ | 6,56 | 0 | 0 | 0/0 |  |
+| 3 | Zak Sturge | LB | 22 | England | 3,3 M€ | 6,75 | 0 | 1 | 1/0 |  |
+| 4 | Tristan Crama | RB,CB | 24 | France | 4,1 M€ | – | 0 | 0 | 0/0 | osäker |
 | 5 | Jake Cooper | CB | 31 | England | 1,1 M€ | 6,73 | 0 | 1 | 0/0 |  |
-| 6 | Caleb Taylor | CB | 23 | England | 1,8 M€ | 6,99 | 2 | 1 | 0/0 |  |
-| 12 | Elkan Baggott | CB,LB | 23 | Indonesia | 404 k€ | 6,27 | 0 | 0 | 0/0 |  |
-| 18 | Ryan Leonard | RB | 34 | England | 308 k€ | 7,88 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
-| 23 | Danny Batth | CB | 36 | England | 239 k€ | – | 0 | 0 | 0/0 |  |
-| 45 | Alfie Doughty | LB,CDM | 26 | England | 2,2 M€ | – | 0 | 0 | 0/0 |  |
+| 6 | Caleb Taylor | CB | 23 | England | 4,2 M€ | 6,99 | 2 | 1 | 0/0 |  |
+| 12 | Elkan Baggott | CB,LB | 23 | Indonesia | 345 k€ | 6,27 | 0 | 0 | 0/0 |  |
+| 18 | Ryan Leonard | RB | 34 | England | 308 k€ | 7,88 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 23 | Danny Batth | CB | 36 | England | 274 k€ | – | 0 | 0 | 0/0 |  |
+| 45 | Alfie Doughty | LB,CDM | 26 | England | 2,1 M€ | – | 0 | 0 | 0/0 |  |
 | 55 | Tristan Parkes | Defender | 17 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 8 | Mathis Servais | LWB,CDM,LM,CM | 21 | Belgium | 2,0 M€ | – | 0 | 0 | 0/0 |  |
-| 10 | Camiel Neghli | CAM,LW,CDM,LM,CM | 24 | Netherlands | 2,0 M€ | 7,42 | 2 | 2 | 0/0 |  |
-| 14 | Jenson Metcalfe | CDM,CM,CAM | 22 | England | 617 k€ | 6,85 | 0 | 2 | 3/1 |  |
-| 16 | Daniel Kelly | CDM | 20 | Scotland | – | 6,16 | 0 | 0 | 0/0 |  |
+| 8 | Mathis Servais | LWB,CDM,LM,CM | 21 | Belgium | 4,9 M€ | – | 0 | 0 | 0/0 |  |
+| 10 | Camiel Neghli | CAM,LW,CDM,CM | 24 | Netherlands | 4,0 M€ | 7,42 | 2 | 2 | 0/0 |  |
+| 14 | Jenson Metcalfe | CDM,CM,CAM | 22 | England | 896 k€ | 6,85 | 0 | 2 | 3/1 |  |
+| 16 | Daniel Kelly | CDM | 21 | Scotland | – | 6,16 | 0 | 0 | 0/0 |  |
 | 17 | Mark Sykes | RWB,RW,RM,RB | 29 | Ireland | 1,2 M€ | 6,79 | 1 | 0 | 2/0 |  |
-| 24 | Casper de Norre | CDM,CM | 29 | Belgium | 1,2 M€ | 6,69 | 0 | 0 | 1/0 | skadad, åter Early October 2026 |
+| 24 | Casper de Norre | CDM,CM | 29 | Belgium | 1,3 M€ | 6,69 | 0 | 0 | 1/0 | osäker |
 | 25 | Luke Cundle | CAM | 24 | England | 2,0 M€ | 6,60 | 1 | 0 | 0/0 |  |
-| 49 | Derek Mazou-Sacko | CDM | 21 | France | 1,1 M€ | 6,75 | 0 | 0 | 1/0 |  |
+| 49 | Derek Mazou-Sacko | CDM | 21 | France | 995 k€ | 6,75 | 0 | 0 | 1/0 |  |
 | 51 | Sacha Tsugita Vieira | Midfielder | 18 | Japan | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 7 | Taïryk Arconte | ST,CAM,RW | 22 | Guadeloupe | 2,1 M€ | 7,13 | 3 | 0 | 0/0 |  |
-| 9 | Mihailo Ivanović | ST | 21 | Serbia | 6,0 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
-| 11 | Romain Esse | RW,LW | 21 | England | 11,5 M€ | 6,28 | 0 | 0 | 0/0 |  |
-| 13 | Lyndon Dykes | ST,CAM | 30 | Scotland | 531 k€ | 7,21 | 4 | 1 | 1/0 |  |
-| 19 | Josh Coburn | ST | 23 | England | 3,6 M€ | 7,22 | 2 | 0 | 1/0 | skadad, åter Early October 2026 |
-| 22 | Kyrell Lisbie | LW,RW | 22 | England | 667 k€ | 6,84 | 0 | 0 | 0/0 |  |
+| 7 | Taïryk Arconte | ST,CAM,RW | 22 | Guadeloupe | 2,2 M€ | 7,13 | 3 | 0 | 0/0 |  |
+| 9 | Mihailo Ivanović | ST | 21 | Serbia | 10,3 M€ | – | 0 | 0 | 0/0 | osäker |
+| 11 | Romain Esse | RW,LW | 21 | England | 15,4 M€ | 6,28 | 0 | 0 | 0/0 |  |
+| 13 | Lyndon Dykes | ST,CAM | 30 | Scotland | 594 k€ | 7,21 | 4 | 1 | 1/0 |  |
+| 19 | Josh Coburn | ST | 23 | England | 6,6 M€ | 7,22 | 2 | 0 | 1/0 | osäker |
+| 22 | Kyrell Lisbie | LW,RW | 22 | England | 693 k€ | 6,84 | 0 | 0 | 0/0 |  |
 | 26 | Benicio Baker-Boaitey | RW | 22 | England | 394 k€ | – | 0 | 0 | 0/0 |  |
-| 29 | Zak Lovelace | ST | 20 | England | 599 k€ | 6,26 | 0 | 1 | 0/0 |  |
+| 29 | Zak Lovelace | ST | 20 | England | 564 k€ | 6,26 | 0 | 1 | 0/0 |  |
 | 35 | Yanis Issoufou | LW | 19 | France | – | 6,41 | 0 | 0 | 0/0 |  |

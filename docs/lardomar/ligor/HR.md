@@ -1,6 +1,6 @@
 # HNL (HR) – lärdomar
 
-Genererad 2026-09-29 av `node scripts/analyze-learnings.mjs`. Ligan saknar oddshistorik (inga stängningsodds i våra källor), så signaler och kalibrering kan inte testas mot marknaden här. Alla matcher: `data/matcher/HR.csv`.
+Genererad 2026-10-04 av `node scripts/analyze-learnings.mjs`. Ligan saknar oddshistorik (inga stängningsodds i våra källor), så signaler och kalibrering kan inte testas mot marknaden här. Alla matcher: `data/matcher/HR.csv`.
 
 ## Lärdomar i korthet
 
@@ -16,7 +16,7 @@ Genererad 2026-09-29 av `node scripts/analyze-learnings.mjs`. Ligan saknar oddsh
 | 2025/26 | 188 | 44 % | 27 % | 29 % | 2,65 | 48 % | 53 % |
 | 2026/27 | 39 | 62 % | 21 % | 18 % | 3,15 | 64 % | 51 % |
 
-## Tabell nu (FotMob, 2026-09-29)
+## Tabell nu (FotMob, 2026-10-04)
 
 | # | Lag | M | V | O | F | Mål | +/− | P |
 |---|---|---|---|---|---|---|---|---|

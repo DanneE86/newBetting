@@ -128,3 +128,30 @@ test('FPL availability finns och ar mergad', async () => {
   expect(plAvail.length).toBeGreaterThanOrEqual(15);
   expect(store.meta.fplAvailability?.loaded).toBeTruthy();
 });
+
+test('inga dubbletter: oddshistorik, tips och lagnamn i data/matcher', async () => {
+  const { sameTeamName, loadAliases } = await import(require('url').pathToFileURL(path.join(root, 'scripts', 'lib', 'team-aliases.mjs')).href);
+  // Oddshistoriken: inga nycklar som bara skiljer i versaler (Update-TipsLedger.ps1 kraschar) och ingen match tva ganger
+  const oh = readJson(path.join(root, 'data', 'open', 'odds-history.json')).matches;
+  const keys = Object.keys(oh);
+  expect(new Set(keys.map((k) => k.toUpperCase())).size, 'versaldubbletter i odds-history').toBe(keys.length);
+  const day = new Map<string, string[][]>();
+  for (const k of keys) { const [d, lg, h, a] = k.split('|'); const g = `${d}|${lg}`; day.set(g, [...(day.get(g) ?? []), [h, a]]); }
+  const twins: string[] = [];
+  for (const [g, list] of day) for (let i = 0; i < list.length; i++) for (let j = i + 1; j < list.length; j++) {
+    if (sameTeamName(list[i][0], list[j][0]) && sameTeamName(list[i][1], list[j][1])) twins.push(`${g} ${list[i].join('-')} / ${list[j].join('-')}`);
+  }
+  expect(twins, 'samma match två gånger i odds-history').toEqual([]);
+  // Tipsen: varje match en gang
+  const tips = readJson(path.join(root, 'data', 'tips-latest.json')).allCandidates;
+  const tk = tips.map((t: any) => `${t.date}|${t.league}|${t.home}|${t.away}`);
+  expect(tk.filter((k: string, i: number) => tk.indexOf(k) !== i), 'samma match två gånger i tipsen').toEqual([]);
+  // data/matcher: inga kanda varianter kvar
+  const al = loadAliases();
+  for (const [lg, map] of Object.entries(al) as [string, Record<string, string>][]) {
+    const f = path.join(root, 'data', 'matcher', `${lg}.csv`);
+    if (!fs.existsSync(f)) continue;
+    const txt = fs.readFileSync(f, 'utf8');
+    for (const from of Object.keys(map)) expect(txt.includes(`,${from},`), `${lg}: "${from}" ska heta "${map[from]}"`).toBe(false);
+  }
+});

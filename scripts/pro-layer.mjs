@@ -11,7 +11,10 @@ import {
 import { EARLY_ROUNDS, buildTiers, fitLeagueModel, loadLeagueModels, paramsFor } from './pro/league-models.mjs';
 import { historicalMissing, findUsMatch, inCurrentSquad, loadPlayerModel, summarise as summariseMissing, teamShares } from './pro/players.mjs';
 import { TEAM_ALIASES } from './weather/teams.mjs';
-import { adjustProbs } from './lib/learned-adjust.mjs';
+import { adjustProbs, loadAdjustments } from './lib/learned-adjust.mjs';
+import { extraSignals } from './lib/extra-signals.mjs';
+import { mergeCaseDuplicates, mergeNameVariants } from './lib/odds-history.mjs';
+import { sameTeamName } from './lib/team-aliases.mjs';
 import { buildRefIndex, loadRefereeMatches, refereeFlags, refKey, REF_LEAGUES, resolveTeam } from './lib/referee-streaks.mjs';
 import { buildCardIndex, CARD_CFG, pickCardLine, predictCards } from './lib/cards-model.mjs';
 
@@ -424,7 +427,7 @@ function signalsFor(t) {
       for (const l of lines) {
         if (!l.startsWith('kommande')) continue;
         const c = l.split(',');
-        m.set(`${c[3]}|${c[5]}|${c[6]}`, { h2hPts: c[iH2h] === '' ? null : Number(c[iH2h]) });
+        m.set(`${c[3]}|${c[5]}|${c[6]}`, { h2hPts: c[iH2h] === '' ? null : Number(c[iH2h]), ...extraSignals(t.league, c[2], c[5], c[6]) });
       }
     }
     matchSignals.set(t.league, m);
@@ -435,8 +438,11 @@ function learnedAdjust(t, f1x2, ev) {
   if (!f1x2 || process.env.LEARNED_OFF) return null;
   const kick = ev?.commence ?? t.kickoffUtc;
   const hours = kick ? (Date.parse(kick) - Date.now()) / 36e5 : null;
-  if (hours == null || hours < CONFIG.learnedMinHours) return null;
-  const { p, applied } = adjustProbs(f1x2.p, t.league, signalsFor(t), 'open');
+  if (hours == null) return null;
+  // Nara avspark: bara hoghojd (skattad mot stangningsodds), inte ligakalibreringen (bara bekraftad mot oppningsodds)
+  const doc = loadAdjustments();
+  const late = hours < CONFIG.learnedMinHours;
+  const { p, applied } = adjustProbs(f1x2.p, t.league, signalsFor(t), 'open', late ? { altitude: doc?.altitude } : doc);
   if (!applied.length) return null;
   const before = f1x2.p.map((x) => round(x));
   f1x2.p = p;
@@ -589,8 +595,19 @@ function marketOnlyCandidates() {
       && nameSimilarity(f.home, e.homeRaw ?? e.home) + nameSimilarity(f.away, e.awayRaw ?? e.away) >= 1);
     const home = fx?.home ?? e.homeRaw ?? e.home;
     const away = fx?.away ?? e.awayRaw ?? e.away;
+    const date = fx?.date ?? e.commence.slice(0, 10);
+    // Matchen har redan ett modelltips under schemats namn (oddshandelsen matchades inte dar) -> inget dubblett-marknadstips
+    const sameTip = (t) => t.league === e.league && Math.abs(daysBetween(t.date, date)) <= 1 && sameTeamName(t.home, home) && sameTeamName(t.away, away);
+    if ((tips.allCandidates ?? []).some((t) => !t.marketOnly && sameTip(t))) continue;
+    // Tva oddskallor for samma match (olika stavning/datum): behall den vars avspark stammer med spelschemat
+    const twin = rows.findIndex((r) => sameTip(r));
+    if (twin >= 0) {
+      const fits = (ev) => (fx ? ev.commence.slice(0, 10) === fx.date : false);
+      if (fits(rows[twin]._ev) || !fits(e)) continue;
+      rows.splice(twin, 1);
+    }
     rows.push({
-      date: fx?.date ?? e.commence.slice(0, 10), kickoffUtc: e.commence, league: e.league, round: fx?.round ?? null,
+      date, kickoffUtc: e.commence, league: e.league, round: fx?.round ?? null,
       home, away, match: `${home} vs ${away}`,
       tips: {
         '1X2': { pick, confidence: round(conf, 3), probs: Object.fromEntries(Object.entries(probs).map(([k, v]) => [k, round(v, 3)])) },
@@ -929,6 +946,14 @@ function recordOddsHistory(proByKey) {
   // Matcher aldre an 400 dagar behovs inte for utvardering
   const cutoff = new Date(Date.now() - 400 * 86_400_000).toISOString().slice(0, 10);
   for (const [k, e] of Object.entries(doc.matches)) if (e.date < cutoff) delete doc.matches[k];
+  // Samma match med olika versaler (OddsPortal "ARARAT-ARMENIA" mot "Ararat-Armenia") -> en post
+  // och samma match under olika lagnamn ("Inter" mot "Internazionale")
+  // Tva namn som bada ar egna lag i ligans historik (Wisla / Wisla Plock) slas aldrig ihop
+  const histTeams = new Map();
+  for (const m of store.matches) (histTeams.get(m.league) ?? histTeams.set(m.league, new Set()).get(m.league)).add(m.home).add(m.away);
+  const distinct = (lg, a, b) => !!histTeams.get(lg)?.has(a) && !!histTeams.get(lg)?.has(b);
+  const merged = mergeCaseDuplicates(doc.matches) + mergeNameVariants(doc.matches, sameTeamName, distinct);
+  if (merged) console.log(`Oddshistorik: ${merged} dubbletter (versaler eller namnvarianter) sammanslagna`);
   doc.updatedAt = now;
   doc.note = 'first = forsta sedda odds, last = senaste fore avspark (proxy for stangning dar closing saknas). Nyckel: datum|liga|hemma|borta.';
   writeJson(P.oddsHistory, doc);

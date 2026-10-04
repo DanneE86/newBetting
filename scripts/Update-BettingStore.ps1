@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
   Hämtar PL/Championship-CSV, bygger data/betting-store.json (alltid lokal källa),
   och genererar tips för 1X2, BTTS och Over/Under 2.5.
@@ -280,6 +280,28 @@ foreach ($espnFile in (Get-ChildItem $RawDir -Filter "ESPN_*.json" -ErrorAction 
     Write-Host "$($doc.league): $n matcher ($(if ($doc.source) { $doc.source } else { 'ESPN' }))"
 }
 
+# Samma lag med olika stavning i olika kallor/sasonger -> ett namn (config/team-aliases.json, scripts/lib/team-aliases.mjs)
+$TeamAliases = $null
+$aliasPath = Join-Path $Root "config/team-aliases.json"
+if (Test-Path $aliasPath) { $TeamAliases = ([System.IO.File]::ReadAllText($aliasPath)).TrimStart([char]0xFEFF) | ConvertFrom-Json }
+function Get-CanonTeam([string]$league, [string]$name) {
+    if (-not $TeamAliases -or -not $name) { return $name }
+    $lg = $TeamAliases.leagues.PSObject.Properties[$league]
+    if (-not $lg) { return $name }
+    # Exakt (skiftlageskanslig) traff pa varianten
+    foreach ($p in $lg.Value.PSObject.Properties) { if ($p.Name -ceq $name) { return [string]$p.Value } }
+    return $name
+}
+$renamed = 0
+foreach ($m in $matches) {
+    $h = Get-CanonTeam $m.league $m.home; $a = Get-CanonTeam $m.league $m.away
+    if ($h -cne $m.home -or $a -cne $m.away) {
+        $m.home = $h; $m.away = $a
+        $m.id = "$($m.league)_$($m.date)_$($h)_$($a)"
+        $renamed++
+    }
+}
+if ($renamed) { Write-Host "Lagnamn: $renamed matcher fick enhetligt lagnamn (config/team-aliases.json)" }
 $sorted = $matches | Sort-Object { $_.dateSort }
 
 function New-TeamBag {
@@ -1658,6 +1680,7 @@ $horizon = $today.AddDays($horizonDays)
 if (Test-Path $upcomingPath) {
     $upcoming = Get-Content $upcomingPath -Raw -Encoding UTF8 | ConvertFrom-Json
     foreach ($u in @($upcoming)) {
+        $u.home = Get-CanonTeam $u.league $u.home; $u.away = Get-CanonTeam $u.league $u.away
         $dt = $null
         try { $dt = [datetime]::Parse($u.date).Date } catch { continue }
         if ($dt -lt $today) { continue }          # spelade matcher bort

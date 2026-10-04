@@ -1,10 +1,13 @@
 # Atletico-MG (Brasileirão Série A) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [BR](../../ligor/BR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [BR](../../ligor/BR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Stark historik mot Chapecoense-SC (−0,62 p/match mot marknaden, 7 möten), Vitoria (−0,79 p/match mot marknaden, 6 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Spelstil 2026: Balanserat, Kortpass, Farlig på fasta, Medel mot fasta. Bäst mot Svag mot fasta (+0,15, samma håll i båda halvorna men svagt), Svag på fasta (+0,10, svagt), Balanserat (+0,08, samma håll i båda halvorna men svagt). Svårast mot Backar hem (−0,15, samma håll i båda halvorna men svagt), Medel på fasta (−0,14, svagt), Medel mot fasta (−0,11, samma håll i båda halvorna men svagt). Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2026: 0,29 mål för per match (xG 0,29), 0,25 emot (xG 0,24), 5,0 hörnor.
+- Svårt för: Vitoria (1-2-3, 0,83 p/match, mot marknaden −0,79), Palmeiras (4-6-7, 1,06 p/match, mot marknaden −0,20), Chapecoense-SC (2-3-2, 1,29 p/match, mot marknaden −0,62), Santos (5-3-6, 1,29 p/match, mot marknaden −0,36), Bahia (5-4-5, 1,36 p/match, mot marknaden −0,32). Där marknaden ligger nära noll är laget bara sämre i de mötena än annars, och oddsen vet redan om det.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -36,6 +39,52 @@ Form (äldst → senast): VOVOVFVO · senaste match 2026-09-19
 | 2025 | BR | 38 | 1,26 | −0,23 (+0,08 / −0,54) | 32 % (29 %) | 1,13–1,16 | – | – |
 | 2026 | BR | 27 | 1,48 | +0,06 (+0,33 / −0,20) | 26 % (28 %) | 1,33–1,19 | – | – |
 
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/BR.md#atletico-mg) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2026: **Balanserat, Kortpass, Farlig på fasta, Medel mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026 | 28 | 0,29 | 0,29 | 0,25 | 0,24 | 5,0 |
+| 2025 | 38 | 0,50 | 0,26 | – | – | 5,9 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Backar hem | 85 | 1,44–1,29 | −0,17 | −0,15 (−1,1) | +2 pe | – | ✔ samma håll |
+| Balanserat | 103 | 1,34–0,98 | +0,06 | +0,08 (0,7) | −6 pe | – | ✔ samma håll |
+| Bollinnehav | 77 | 1,30–1,09 | +0,02 | +0,05 (0,3) | −2 pe | – | svag |
+| Kortpass | 69 | 1,43–1,19 | +0,04 | +0,06 (0,4) | −2 pe | – | ✔ samma håll |
+| Blandat | 100 | 1,27–1,06 | −0,07 | −0,05 (−0,4) | −2 pe | – | ✔ samma håll |
+| Direktspel | 96 | 1,40–1,11 | −0,02 | +0,00 (0,0) | −2 pe | – | svag |
+| Lågpress | 86 | 1,38–1,20 | −0,07 | −0,04 (−0,3) | −9 pe | – | ✔ samma håll |
+| Mellanpress | 102 | 1,37–1,22 | −0,05 | −0,02 (−0,2) | −5 pe | – | svag |
+| Högpress | 77 | 1,31–0,88 | +0,05 | +0,07 (0,5) | +10 pe | – | ✔ samma håll |
+| Svag på fasta | 102 | 1,47–1,00 | +0,08 | +0,10 (0,8) | −2 pe | – | svag |
+| Medel på fasta | 72 | 1,46–1,31 | −0,17 | −0,14 (−1,0) | +0 pe | – | svag |
+| Farlig på fasta | 77 | 1,22–1,08 | −0,02 | +0,01 (0,0) | −1 pe | – | svag |
+| Stark mot fasta | 84 | 1,43–0,98 | −0,04 | −0,01 (−0,1) | −2 pe | – | svag |
+| Medel mot fasta | 110 | 1,19–1,22 | −0,13 | −0,11 (−0,9) | −3 pe | – | ✔ samma håll |
+| Svag mot fasta | 50 | 1,70–1,12 | +0,12 | +0,15 (0,9) | +3 pe | – | ✔ samma håll |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
+
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 2 | 1-1-0 | 2,00 | +0,27 |
+| Efter uppehåll sedan 2023 | 2 | 1-1-0 | 2,00 | +0,27 |
+| Övriga matcher | 556 | 247-149-160 | 1,60 | −0,01 |
+
+Hela ligan efter uppehåll: −0,04 mot marknaden (n 58). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2026-03-11 | Atletico-MG - Internacional | 1-0 V | +1,35 |
+| 2025-09-14 | Atletico-MG - Santos | 1-1 O | −0,80 |
+
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
 | Motståndare | M | V-O-F | Mål | Mot marknaden | Kryss mot odds | Senast |
@@ -62,41 +111,43 @@ Form (äldst → senast): VOVOVFVO · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): Vitoria 0,83 p/match (−0,79), Palmeiras 1,06 p/match (−0,20), Chapecoense-SC 1,29 p/match (−0,62), Santos 1,29 p/match (−0,36), Bahia 1,36 p/match (−0,32).
+
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Eduardo Domínguez. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Everson (skadad, åter Mid October 2026), Ruan Tressoldi (skadad, åter Mid October 2026), Gustavo Scarpa (skadad, åter Mid October 2026), Victor Hugo (skadad, åter Early October 2026), Reinier (osäker)
+**Skadade/borta nu:** Everson (skadad, åter Mid October 2026), Ruan Tressoldi (skadad, åter Mid October 2026), Gustavo Scarpa (skadad, åter Mid October 2026)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Gabriel Delfim | GK | 24 | Brazil | 571 k€ | – | 0 | 0 | 0/0 |  |
+| 1 | Gabriel Delfim | GK | 24 | Brazil | 609 k€ | – | 0 | 0 | 0/0 |  |
 | 22 | Everson | GK | 36 | Brazil | 1,1 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | | **Backar** | | | | | | | | | |
-| 2 | Natanael | RB,RWB,CB | 24 | Brazil | 3,7 M€ | – | 0 | 0 | 0/0 |  |
+| 2 | Natanael | RB,RWB,CB | 24 | Brazil | 5,0 M€ | – | 0 | 0 | 0/0 |  |
 | 3 | Léo Duarte | CB | 30 | Brazil | 1,8 M€ | – | 0 | 0 | 0/0 |  |
-| 4 | Ruan Tressoldi | CB | 27 | Brazil | 1,9 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 4 | Ruan Tressoldi | CB | 27 | Brazil | 3,3 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 13 | Lyanco | CB | 29 | Brazil | 2,5 M€ | – | 0 | 0 | 0/0 |  |
-| 14 | Vitor Hugo | CB | 35 | Brazil | 608 k€ | – | 0 | 0 | 0/0 |  |
-| 16 | Renan Lodi | LB,LWB | 28 | Brazil | 9,5 M€ | – | 0 | 0 | 0/0 |  |
+| 14 | Vitor Hugo | CB | 35 | Brazil | 630 k€ | – | 0 | 0 | 0/0 |  |
+| 16 | Renan Lodi | LB,LWB | 28 | Brazil | 10,7 M€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 5 | Alexsander | CDM | 22 | Brazil | 4,8 M€ | – | 0 | 0 | 0/0 |  |
+| 5 | Alexsander | CDM | 22 | Brazil | 6,5 M€ | – | 0 | 0 | 0/0 |  |
 | 7 | Fred | CAM,CDM,CM | 33 | Brazil | 2,1 M€ | – | 0 | 0 | 0/0 |  |
-| 8 | Maycon | CDM,CM | 29 | Brazil | 1,5 M€ | – | 0 | 0 | 0/0 |  |
-| 10 | Gustavo Scarpa | CAM,RWB,CDM,RW | 32 | Brazil | 2,4 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
-| 11 | Bernard | CAM,LW,RW,ST,RM | 34 | Brazil | 682 k€ | – | 0 | 0 | 0/0 |  |
-| 15 | Kevin Castaño | CDM,CM | 26 | Colombia | 4,3 M€ | – | 0 | 0 | 0/0 |  |
-| 17 | Igor Gomes | CDM,CM,CAM | 27 | Brazil | 1,3 M€ | – | 0 | 0 | 0/0 |  |
-| 21 | Alan Franco | CDM,CM,RB,CB,RM,RWB | 28 | Ecuador | 2,7 M€ | – | 0 | 0 | 0/0 |  |
-| 23 | Ángelo Preciado | RB,RM,RWB | 28 | Ecuador | 2,2 M€ | – | 0 | 0 | 0/0 |  |
-| 27 | Alan Minda | CAM,LW,ST | 23 | Ecuador | 1,9 M€ | – | 0 | 0 | 0/0 |  |
-| 30 | Victor Hugo | CAM,CM,RW,CDM,RM,LW | 22 | Brazil | 4,4 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
-| 92 | Dudu | CAM,LW | 34 | Brazil | 726 k€ | – | 0 | 0 | 0/0 |  |
+| 8 | Maycon | CDM,CM | 29 | Brazil | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| 10 | Gustavo Scarpa | CAM,RWB,CDM,RW | 32 | Brazil | 2,5 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 11 | Bernard | CAM,LW,RW,ST,RM | 34 | Brazil | 683 k€ | – | 0 | 0 | 0/0 |  |
+| 15 | Kevin Castaño | CDM,CM | 26 | Colombia | 5,1 M€ | – | 0 | 0 | 0/0 |  |
+| 17 | Igor Gomes | CDM,CAM,CM | 27 | Brazil | 1,4 M€ | – | 0 | 0 | 0/0 |  |
+| 21 | Alan Franco | CDM,RB,CM,CB,RM,RWB | 28 | Ecuador | 2,7 M€ | – | 0 | 0 | 0/0 |  |
+| 23 | Ángelo Preciado | RB,RM,RWB | 28 | Ecuador | 2,3 M€ | – | 0 | 0 | 0/0 |  |
+| 27 | Alan Minda | CAM,LW,ST | 23 | Ecuador | 4,3 M€ | – | 0 | 0 | 0/0 |  |
+| 30 | Victor Hugo | CAM,CM,RW,CDM,RM,LW | 22 | Brazil | 9,3 M€ | – | 0 | 0 | 0/0 |  |
+| 92 | Dudu | CAM,LW | 34 | Brazil | 855 k€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 9 | Mateo Cassierra | ST | 29 | Colombia | 5,8 M€ | – | 0 | 0 | 0/0 |  |
-| 18 | Thiago Borbas | ST | 24 | Uruguay | 2,3 M€ | – | 0 | 0 | 0/0 |  |
-| 19 | Reinier | ST,CAM | 24 | Brazil | 1,8 M€ | – | 0 | 0 | 0/0 | osäker |
-| 28 | Tomás Cuello | RW,CAM,LM,RWB,LW | 26 | Argentina | 3,7 M€ | – | 0 | 0 | 0/0 |  |
+| 9 | Mateo Cassierra | ST | 29 | Colombia | 8,3 M€ | – | 0 | 0 | 0/0 |  |
+| 18 | Thiago Borbas | ST | 24 | Uruguay | 4,2 M€ | – | 0 | 0 | 0/0 |  |
+| 19 | Reinier | ST,CAM | 24 | Brazil | 1,9 M€ | – | 0 | 0 | 0/0 |  |
+| 28 | Tomás Cuello | RW,CAM,LM,RWB,LW | 26 | Argentina | 6,4 M€ | – | 0 | 0 | 0/0 |  |
 
 Har lämnat truppen sedan vi började spara (22): Tomás Pérez (senast 2026-09-29), Samuel Lima (senast 2026-09-29), Robert (senast 2026-09-29), Hendel Índio (senast 2026-09-29), Vitão (senast 2026-09-29), Pedro Cobra (senast 2026-09-29), Gabriel Veneno (senast 2026-09-29), Mosquito (senast 2026-09-29), Wanderson (senast 2026-09-29), Luís Gustavo (senast 2026-09-29), Pedro Fachineti (senast 2026-09-29), Kauã Pascini (senast 2026-09-29), Mamady Cissé (senast 2026-09-29), Murillo Fernandes (senast 2026-09-29), Cauã Soares (senast 2026-09-29), Kaio (senast 2026-09-29), Mateus Romero (senast 2026-09-29), Eric (senast 2026-09-29), João Teixeira (senast 2026-09-29), Riquelme Henrique (senast 2026-09-29), Gutte (senast 2026-09-29), Pedro Lemos (senast 2026-09-29).

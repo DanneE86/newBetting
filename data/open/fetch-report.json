@@ -1,5 +1,5 @@
 {
-    "updatedAt":  "2026-10-01T06:14:26.7282874+02:00",
+    "updatedAt":  "2026-10-04T11:01:20.7451448+02:00",
     "sources":  [
                     {
                         "name":  "csv:PL_2627.csv",
@@ -367,23 +367,13 @@
                     }
                 ],
     "upcomingCount":  2202,
-    "extraLeagues":  false,
+    "extraLeagues":  true,
+    "referees":  true,
     "bolldata":  false,
     "understatNeedsPlaywright":  false,
     "understatAjax":  true,
     "fpl":  true,
     "clubElo":  true,
     "espnLineups":  true,
-    "odds":  true,
-    "playerStats":  true,
-    "playerStatsCounts":  {
-                              "PL":  742,
-                              "LL":  461,
-                              "SA":  448,
-                              "BL":  367,
-                              "L1":  424,
-                              "ED":  441,
-                              "CH":  560
-                          },
-    "playerImpact":  false
+    "odds":  true
 }

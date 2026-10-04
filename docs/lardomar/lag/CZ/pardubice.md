@@ -1,6 +1,6 @@
 # Pardubice (Chance Liga) – lärdomar
 
-Genererad 2026-09-29. Ligans fil: [CZ](../../ligor/CZ.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-10-04. Ligans fil: [CZ](../../ligor/CZ.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -35,7 +35,7 @@ Form senaste 8 (äldst → senast): FFOFFOVV · senaste match 2026-09-19
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Jan Trousil. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -44,41 +44,41 @@ Tränare: Jan Trousil. Betyg, mål och assist gäller innevarande säsong enligt
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-|  | Luka Kharatishvili | GK | 23 | Georgia | 281 k€ | – | 0 | 0 | 0/0 | skadad, åter Unknown |
-| 1 | Jáchym Serák | GK | 25 | Czechia | 205 k€ | 6,33 | 0 | 0 | 0/0 |  |
+|  | Luka Kharatishvili | GK | 23 | Georgia | 177 k€ | – | 0 | 0 | 0/0 | skadad, åter Unknown |
+| 1 | Jáchym Serák | GK | 25 | Czechia | 173 k€ | 6,33 | 0 | 0 | 0/0 |  |
 | 13 | Jan Stejskal | GK | 29 | Czechia | 66 k€ | – | 0 | 0 | 0/0 |  |
 | 22 | Matěj Šimůnek | Keeper | 22 | Czechia | – | – | 0 | 0 | 0/0 |  |
-| 30 | Aleš Mandous | GK | 34 | Czechia | 175 k€ | 4,78 | 0 | 0 | 0/0 |  |
-| 46 | Vladimír Neuman | GK | 26 | Czechia | 162 k€ | 6,51 | 0 | 0 | 0/0 |  |
+| 30 | Aleš Mandous | GK | 34 | Czechia | 190 k€ | 4,78 | 0 | 0 | 0/0 |  |
+| 46 | Vladimír Neuman | GK | 26 | Czechia | 157 k€ | 6,51 | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 6 | Marek Icha | RB,CDM,RM,CB | 24 | Czechia | 598 k€ | 5,89 | 0 | 0 | 0/0 |  |
-| 12 | Jan Trédl | CB,LB | 22 | Czechia | 228 k€ | 6,02 | 0 | 1 | 1/1 |  |
-| 21 | Mouhamed Tidjane Traore | CB | 23 | Ivory Coast | 318 k€ | 6,63 | 0 | 0 | 3/1 |  |
-| 33 | Denis Halinský | CB | 23 | Czechia | 1,9 M€ | 7,49 | 0 | 0 | 1/0 |  |
-| 37 | Dávid Krcík | CB | 27 | Slovakia | 591 k€ | 6,68 | 2 | 0 | 0/1 |  |
-| 43 | Jason Noslin | CB,RB | 26 | Netherlands | 211 k€ | 6,66 | 0 | 0 | 1/0 |  |
-| 44 | Simon Bammens | CB | 28 | Belgium | 110 k€ | 6,38 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
-| 77 | Robi Saarma | RB,LM,RM,RW | 25 | Estonia | 179 k€ | – | 0 | 0 | 0/0 |  |
+| 6 | Marek Icha | RB,CDM,RM,CB | 24 | Czechia | 560 k€ | 5,89 | 0 | 0 | 0/0 |  |
+| 12 | Jan Trédl | CB,LB | 22 | Czechia | 202 k€ | 6,02 | 0 | 1 | 1/1 |  |
+| 21 | Mouhamed Tidjane Traore | CB | 23 | Ivory Coast | 277 k€ | 6,63 | 0 | 0 | 3/1 |  |
+| 33 | Denis Halinský | CB | 23 | Czechia | 1,5 M€ | 7,49 | 0 | 0 | 1/0 |  |
+| 37 | Dávid Krcík | CB | 27 | Slovakia | 709 k€ | 6,68 | 2 | 0 | 0/1 |  |
+| 43 | Jason Noslin | CB,RB | 26 | Netherlands | 181 k€ | 6,66 | 0 | 0 | 1/0 |  |
+| 44 | Simon Bammens | CB | 28 | Belgium | 158 k€ | 6,38 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | | **Mittfältare** | | | | | | | | | |
 |  | Arouna Ouattara | Midfielder | 19 | Burkina Faso | 313 k€ | – | 0 | 0 | 0/0 |  |
-| 8 | Samuel Šimek | CM,CDM | 24 | Czechia | 522 k€ | 6,28 | 0 | 0 | 1/0 |  |
+| 8 | Samuel Šimek | CM,CDM | 24 | Czechia | 627 k€ | 6,28 | 0 | 0 | 1/0 |  |
 | 11 | Jiri Zima | Midfielder | 18 | Czechia | – | 5,82 | 0 | 0 | 0/0 |  |
-| 15 | Emmanuel Godwin | RWB,RM,LB | 21 | Nigeria | 736 k€ | 6,69 | 0 | 0 | 3/0 |  |
-| 16 | Tomás Jelínek | CDM,CM,RM,CB | 20 | Czechia | 641 k€ | 6,99 | 0 | 0 | 2/0 |  |
-| 19 | Michal Hlavatý | CDM,CM,CAM | 28 | Czechia | 391 k€ | 6,71 | 0 | 1 | 2/0 |  |
-| 24 | Tomás Solil | CM,CB | 26 | Czechia | 145 k€ | 7,08 | 1 | 0 | 0/0 | skadad, åter Mid October 2026 |
-| 25 | Ryan Mahuta | LB,LWB,LM,RWB | 24 | Finland | 671 k€ | 7,25 | 1 | 2 | 0/0 |  |
-| 35 | Victor Samuel | CAM,ST | 20 | Nigeria | 393 k€ | 6,32 | 0 | 0 | 1/0 |  |
-| 40 | Tobias Boledovič | LWB,CB,RM | 20 | Czechia | 920 k€ | 6,81 | 2 | 1 | 0/0 |  |
+| 15 | Emmanuel Godwin | RWB,RM,LB | 21 | Nigeria | 820 k€ | 6,69 | 0 | 0 | 3/0 |  |
+| 16 | Tomás Jelínek | CM,CDM,RM,CB | 20 | Czechia | 770 k€ | 6,99 | 0 | 0 | 2/0 |  |
+| 19 | Michal Hlavatý | CDM,CM,CAM | 28 | Czechia | 401 k€ | 6,71 | 0 | 1 | 2/0 |  |
+| 24 | Tomás Solil | CM,CB | 26 | Czechia | 130 k€ | 7,08 | 1 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 25 | Ryan Mahuta | LB,LWB,LM,RWB | 24 | Finland | 672 k€ | 7,25 | 1 | 2 | 0/0 |  |
+| 35 | Victor Samuel | CAM,ST | 20 | Nigeria | 473 k€ | 6,32 | 0 | 0 | 1/0 |  |
+| 40 | Tobias Boledovič | LWB,CB,RM | 20 | Czechia | 1,1 M€ | 6,81 | 2 | 1 | 0/0 |  |
+| 77 | Robi Saarma | RB,LM,RM,RW,RWB | 25 | Estonia | 166 k€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 9 | Daniel Smékal | ST,LM,RW | 24 | Czechia | 271 k€ | 6,12 | 0 | 0 | 1/0 |  |
+| 9 | Daniel Smékal | ST,LM,RW | 24 | Czechia | 312 k€ | 6,12 | 0 | 0 | 1/0 |  |
 | 9 | Patrik Nedved | Attacker | 18 | Czechia | – | – | 0 | 0 | 0/0 |  |
-| 10 | Vojtěch Patrák | ST,LW,CM,CAM | 26 | Czechia | 370 k€ | 6,87 | 1 | 0 | 1/0 | skadad, åter Mid October 2026 |
-| 17 | Václav Drchal | ST,CAM | 27 | Czechia | 181 k€ | 6,83 | 2 | 1 | 1/0 |  |
+| 10 | Vojtěch Patrák | ST,LW,CM,CAM | 26 | Czechia | 354 k€ | 6,87 | 1 | 0 | 1/0 | skadad, åter Mid October 2026 |
+| 17 | Václav Drchal | ST,CAM | 27 | Czechia | 226 k€ | 6,83 | 2 | 1 | 1/0 |  |
 | 20 | Abdoullahi Tanko | LW,CAM,RW,RM,ST | 28 | Nigeria | – | 6,72 | 1 | 0 | 0/0 |  |
 | 27 | Martin Reil | Attacker | 20 | Czechia | – | – | 0 | 0 | 0/0 |  |
-| 29 | Filip Brdička | ST | 22 | Czechia | 207 k€ | – | 0 | 0 | 0/0 |  |
-| 90 | Giannis-Fivos Botos | RW,ST,CAM,CM | 25 | Greece | 359 k€ | 6,29 | 0 | 0 | 0/0 |  |
+| 29 | Filip Brdička | ST | 22 | Czechia | 186 k€ | – | 0 | 0 | 0/0 |  |
+| 90 | Giannis-Fivos Botos | RW,ST,CAM | 25 | Greece | 347 k€ | 6,29 | 0 | 0 | 0/0 |  |
 | 99 | Kahuan Vinícius | ST | 22 | Brazil | – | 6,12 | 0 | 0 | 2/0 |  |
 
 Har lämnat truppen sedan vi började spara (2): Dominique Simon (senast 2026-09-29), Daniel Pandula (senast 2026-09-29).

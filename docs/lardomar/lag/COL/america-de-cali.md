@@ -1,6 +1,6 @@
 # América de Cali (Primera A) – lärdomar
 
-Genererad 2026-09-29. Ligans fil: [COL](../../ligor/COL.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-10-04. Ligans fil: [COL](../../ligor/COL.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -40,44 +40,56 @@ Form senaste 8 (äldst → senast): VOVOVFOV · senaste match 2026-09-24
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+## Höghöjd
+
+Arenans höjd: ca 1000 m. Höghöjdsmatch = arena ≥ 1500 m och bortalaget från minst 1000 m lägre.
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Borta på höghöjd | 16 | 8-1-7 | 1,56 | – |
+| Borta övriga | 26 | 5-10-11 | 0,96 | – |
+
+Ligan: se [COL](../../ligor/COL.md#höghöjd).
+
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: David González. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Jean | GK | 30 | Brazil | 314 k€ | – | 0 | 0 | 0/0 |  |
-| 12 | Juan Montoya | GK | 27 | Colombia | 195 k€ | – | 0 | 0 | 0/0 |  |
+| 1 | Jean | GK | 30 | Brazil | 338 k€ | – | 0 | 0 | 0/0 |  |
+| 12 | Juan Montoya | GK | 27 | Colombia | 261 k€ | – | 0 | 0 | 0/0 |  |
 | 37 | Alejandro Benítez | Keeper | 18 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Marlon Torres | CB | 30 | Colombia | 323 k€ | – | 0 | 0 | 0/0 |  |
-| 3 | Dany Rosero | CB | 32 | Colombia | 256 k€ | – | 0 | 0 | 0/0 |  |
+| 2 | Marlon Torres | CB | 30 | Colombia | 377 k€ | – | 0 | 0 | 0/0 |  |
+| 3 | Dany Rosero | CB | 32 | Colombia | 261 k€ | – | 0 | 0 | 0/0 |  |
 | 13 | Mateo Castillo | RB | 23 | Colombia | 1,6 M€ | – | 0 | 0 | 0/0 |  |
 | 14 | Marcos Mina | LB | 27 | Colombia | 265 k€ | – | 0 | 0 | 0/0 |  |
 | 16 | Bryan Correa | RB | 22 | Colombia | – | – | 0 | 0 | 0/0 |  |
-| 22 | Nicolás Hernández | CB | 28 | Colombia | 391 k€ | – | 0 | 0 | 0/0 |  |
-| 24 | Cristian Tovar | CB,LB | 28 | Colombia | 290 k€ | – | 0 | 0 | 0/0 |  |
-| 26 | Yhormar Hurtado | RB | 29 | Colombia | 303 k€ | – | 0 | 0 | 0/0 |  |
-| 30 | Omar Bertel | LB | 30 | Colombia | 519 k€ | – | 0 | 0 | 0/0 |  |
-| 44 | Brayan Córdoba | CB | 27 | Colombia | 436 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Nicolás Hernández | CB | 28 | Colombia | 393 k€ | – | 0 | 0 | 0/0 |  |
+| 24 | Cristian Tovar | CB,LB | 28 | Colombia | 282 k€ | – | 0 | 0 | 0/0 |  |
+| 26 | Yhormar Hurtado | RB | 29 | Colombia | 319 k€ | – | 0 | 0 | 0/0 |  |
+| 30 | Omar Bertel | LB | 30 | Colombia | 527 k€ | – | 0 | 0 | 0/0 |  |
+| 44 | Brayan Córdoba | CB | 27 | Colombia | 423 k€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 5 | Josen Escobar | CDM,CM | 21 | Colombia | 2,2 M€ | – | 0 | 0 | 0/0 |  |
-| 6 | José Cavadía | CM | 21 | Colombia | 1,0 M€ | – | 0 | 0 | 0/0 |  |
-| 15 | Rafael Carrascal | CM,CDM,CAM | 33 | Colombia | 516 k€ | – | 0 | 0 | 0/0 |  |
-| 18 | Yani Quintero | CDM,RB,CM | 24 | Colombia | 476 k€ | – | 0 | 0 | 0/0 |  |
-| 23 | Luis Quiñones | RW,CAM,RM | 35 | Colombia | 279 k€ | – | 0 | 0 | 0/0 |  |
+| 5 | Josen Escobar | CDM,CM | 21 | Colombia | 2,5 M€ | – | 0 | 0 | 0/0 |  |
+| 6 | José Cavadía | CM | 21 | Colombia | 923 k€ | – | 0 | 0 | 0/0 |  |
+| 15 | Rafael Carrascal | CM,CDM,CAM | 33 | Colombia | 550 k€ | – | 0 | 0 | 0/0 |  |
+| 18 | Yani Quintero | CDM,RB,CM | 24 | Colombia | 478 k€ | – | 0 | 0 | 0/0 |  |
+| 23 | Luis Quiñones | RW,CAM,RM | 35 | Colombia | 298 k€ | – | 0 | 0 | 0/0 |  |
 | 25 | Juan Aponzá | Midfielder | 18 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 29 | Camilo Amu | CDM | 18 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | 32 | Johán Balanta | Midfielder | 18 | Colombia | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 7 | Jhon Murillo | LW,LM | 30 | Venezuela | 387 k€ | – | 0 | 0 | 0/0 |  |
-| 10 | Yeison Guzmán | ST,CAM | 28 | Colombia | 1,7 M€ | – | 0 | 0 | 0/0 |  |
-| 17 | Jan Lucumí | RW,ST,RM,LW,CAM,CM,LM | 22 | Colombia | 990 k€ | – | 0 | 0 | 0/0 |  |
+|  | Yojan Garcés | ST | 20 | Colombia | – | – | 0 | 0 | 0/0 |  |
+| 7 | Jhon Murillo | LW,LM | 30 | Venezuela | 318 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Yeison Guzmán | ST,CAM | 28 | Colombia | 1,9 M€ | – | 0 | 0 | 0/0 |  |
+| 17 | Jan Lucumí | RW,ST,RM,LW,CAM,CM,LM | 22 | Colombia | 1,0 M€ | – | 0 | 0 | 0/0 |  |
 | 19 | Tilman Palacios | LW,LM | 21 | Colombia | 1,5 M€ | – | 0 | 0 | 0/0 |  |
 | 20 | Adrián Ramos | ST | 40 | Colombia | 282 k€ | – | 0 | 0 | 0/0 |  |
-| 21 | Tomás Ángel | ST,RW,RM | 23 | Colombia | 930 k€ | – | 0 | 0 | 0/0 |  |
+| 21 | Tomás Ángel | ST,RW,RM | 23 | Colombia | 967 k€ | – | 0 | 0 | 0/0 |  |
 | 36 | Jhordy Camacho | Attacker | 20 | Colombia | – | – | 0 | 0 | 0/0 |  |
-| 77 | Edson Tortolero | LW,LM,CAM,ST,RW | 28 | Venezuela | 349 k€ | – | 0 | 0 | 0/0 |  |
+| 77 | Edson Tortolero | LW,LM,CAM,ST,RW | 28 | Venezuela | 528 k€ | – | 0 | 0 | 0/0 |  |
 
 Har lämnat truppen sedan vi började spara (2): Jorge Valencia (senast 2026-09-29), Kevin Angulo (senast 2026-09-29).

@@ -1,6 +1,6 @@
 # Slovan Liberec (Chance Liga) – lärdomar
 
-Genererad 2026-09-29. Ligans fil: [CZ](../../ligor/CZ.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-10-04. Ligans fil: [CZ](../../ligor/CZ.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -35,7 +35,7 @@ Form senaste 8 (äldst → senast): FVOVVVVO · senaste match 2026-09-19
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Branislav Fodrek. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -44,39 +44,39 @@ Tränare: Branislav Fodrek. Betyg, mål och assist gäller innevarande säsong e
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 31 | Dominik Kúdelcík | Keeper | 21 | Slovakia | 419 k€ | – | 0 | 0 | 0/0 |  |
+| 31 | Dominik Kúdelcík | Keeper | 21 | Slovakia | 459 k€ | – | 0 | 0 | 0/0 |  |
 | 33 | Lukás Pešl | Keeper | 24 | Czechia | 130 k€ | – | 0 | 0 | 0/0 |  |
-| 40 | Tomás Koubek | GK | 34 | Czechia | 131 k€ | 7,30 | 0 | 0 | 0/0 |  |
+| 40 | Tomás Koubek | GK | 34 | Czechia | 160 k€ | 7,30 | 0 | 0 | 0/0 |  |
 | 41 | Dominik Dobes | Keeper | 17 | Czechia | – | – | 0 | 0 | 0/0 |  |
-| 47 | Jindřich Musil | Keeper | 22 | Czechia | 147 k€ | – | 0 | 0 | 0/0 |  |
+| 47 | Jindřich Musil | Keeper | 22 | Czechia | 138 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 |  | David Hamansenya | LB | 19 | Zambia | – | – | 0 | 0 | 0/0 |  |
-| 3 | Jan Mikula | CB,RB | 34 | Czechia | 80 k€ | 6,75 | 0 | 1 | 1/0 |  |
-| 6 | Aleko Basiladze | LWB | 20 | Georgia | 260 k€ | – | 0 | 0 | 0/0 |  |
-| 14 | Augustin Drakpe | CB | 24 | Togo | 536 k€ | 7,29 | 0 | 0 | 1/0 |  |
-| 17 | Petr Juliš | RB | 23 | Czechia | 259 k€ | 6,65 | 0 | 1 | 0/0 |  |
-| 18 | Josef Koželuh | RB,LB,RM | 24 | Czechia | 485 k€ | 7,07 | 0 | 0 | 1/0 |  |
+| 3 | Jan Mikula | CB,RB | 34 | Czechia | 81 k€ | 6,75 | 0 | 1 | 1/0 |  |
+| 6 | Aleko Basiladze | LWB,LW | 20 | Georgia | 260 k€ | – | 0 | 0 | 0/0 |  |
+| 14 | Augustin Drakpe | CB | 24 | Togo | 643 k€ | 7,29 | 0 | 0 | 1/0 |  |
+| 17 | Petr Juliš | RB | 23 | Czechia | 297 k€ | 6,65 | 0 | 1 | 0/0 |  |
+| 18 | Josef Koželuh | RB,LB,RM | 24 | Czechia | 460 k€ | 7,07 | 0 | 0 | 1/0 |  |
 | 22 | Jan Knapík | CB | 25 | Czechia | 278 k€ | – | 0 | 0 | 0/0 | skadad, åter Unknown |
 | 23 | Haris Berbic | Defender | 20 | Bosnia and Herzegovina | – | – | 0 | 0 | 0/0 |  |
-| 26 | Jan Bořil | CB,LM | 35 | Czechia | 130 k€ | 6,29 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
-| 27 | Aziz Kayondo | LB,LM,LWB | 23 | Uganda | 950 k€ | 7,66 | 1 | 0 | 2/0 |  |
-| 29 | Lukás Hůlka | CB,CDM | 31 | Czechia | 199 k€ | 7,32 | 0 | 0 | 2/0 |  |
+| 26 | Jan Bořil | CB,LM | 35 | Czechia | 106 k€ | 6,29 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 27 | Aziz Kayondo | LB,LM,LWB | 23 | Uganda | 989 k€ | 7,66 | 1 | 0 | 2/0 |  |
+| 29 | Lukás Hůlka | CB,CDM | 31 | Czechia | 275 k€ | 7,32 | 0 | 0 | 2/0 |  |
 | 32 | Šimon Gabriel | CB | 25 | Czechia | 478 k€ | – | 0 | 0 | 0/0 | skadad, åter Unknown |
 | | **Mittfältare** | | | | | | | | | |
-| 8 | Lukás Masopust | CDM,CB,CM | 33 | Czechia | 200 k€ | 7,12 | 0 | 0 | 2/0 |  |
+| 8 | Lukás Masopust | CDM,CB,CM | 33 | Czechia | 204 k€ | 7,12 | 0 | 0 | 2/0 |  |
 | 10 | Qëndrim Zyba | RW | 25 | Kosovo | 196 k€ | – | 0 | 0 | 0/0 |  |
-| 12 | Vojtěch Stránsky | CDM,CM | 23 | Czechia | 1,4 M€ | 6,72 | 1 | 0 | 3/0 |  |
-| 16 | Alexandr Bužek | CDM,CM | 22 | Czechia | 1,3 M€ | 6,63 | 0 | 0 | 0/0 |  |
-| 19 | Vasil Kušej | CAM,LW,ST,RW | 26 | Czechia | 2,2 M€ | 7,46 | 2 | 1 | 0/1 |  |
-| 60 | Fallou Faye | CDM,CM | 20 | Senegal | 531 k€ | 6,95 | 0 | 0 | 3/0 |  |
+| 12 | Vojtěch Stránsky | CDM,CM | 23 | Czechia | 1,5 M€ | 6,72 | 1 | 0 | 3/0 |  |
+| 16 | Alexandr Bužek | CDM,CM | 22 | Czechia | 1,1 M€ | 6,63 | 0 | 0 | 0/0 |  |
+| 19 | Vasil Kušej | CAM,LW,RW | 26 | Czechia | 2,0 M€ | 7,46 | 2 | 1 | 0/1 |  |
+| 60 | Fallou Faye | CDM,CM | 20 | Senegal | 630 k€ | 6,95 | 0 | 0 | 3/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 5 | Petr Hodouš | RW,LW | 22 | Czechia | 829 k€ | 6,42 | 0 | 0 | 1/1 |  |
+| 5 | Petr Hodouš | RW,LW | 22 | Czechia | 818 k€ | 6,42 | 0 | 0 | 1/1 |  |
 | 9 | Lukás Mašek | ST,CAM,LW | 22 | Czechia | 1,5 M€ | 6,79 | 3 | 0 | 1/0 |  |
-| 15 | Milan Lexa | LW,CM,RW | 22 | Czechia | 365 k€ | 6,80 | 0 | 0 | 1/0 |  |
-| 24 | Patrik Dulay | RW | 21 | Slovakia | 493 k€ | 7,12 | 3 | 1 | 1/0 |  |
-| 25 | Matěj Mikulenka | ST,RW | 22 | Czechia | 1,0 M€ | 6,03 | 0 | 0 | 0/0 |  |
-| 28 | Vojtěch Sychra | RW | 24 | Czechia | 285 k€ | – | 0 | 0 | 0/0 |  |
-| 77 | Daniel Rus | Attacker | 20 | Czechia | 547 k€ | – | 0 | 0 | 0/0 |  |
-| 79 | Enej Marsetic | Attacker | 21 | Slovenia | 174 k€ | 6,33 | 0 | 0 | 0/0 |  |
-| 94 | Vénuste Baboula | LW | 28 | Central African Rep. | 412 k€ | 6,64 | 1 | 1 | 0/0 |  |
+| 15 | Milan Lexa | LW,RW | 22 | Czechia | 380 k€ | 6,80 | 0 | 0 | 1/0 |  |
+| 24 | Patrik Dulay | RW | 21 | Slovakia | 420 k€ | 7,12 | 3 | 1 | 1/0 |  |
+| 25 | Matěj Mikulenka | ST,RW | 22 | Czechia | 961 k€ | 6,03 | 0 | 0 | 0/0 |  |
+| 28 | Vojtěch Sychra | RW | 24 | Czechia | 310 k€ | – | 0 | 0 | 0/0 |  |
+| 77 | Daniel Rus | Attacker | 20 | Czechia | 427 k€ | – | 0 | 0 | 0/0 |  |
+| 79 | Enej Marsetic | Attacker | 21 | Slovenia | 251 k€ | 6,33 | 0 | 0 | 0/0 |  |
+| 94 | Vénuste Baboula | LW | 28 | Central African Rep. | 426 k€ | 6,64 | 1 | 1 | 0/0 |  |
 | 99 | Raimonds Krollis | ST | 24 | Latvia | 1,4 M€ | 6,72 | 0 | 0 | 2/0 | skadad, åter Early October 2026 |

@@ -1,11 +1,13 @@
 # Padova (Serie B) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [SB](../../ligor/SB.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [SB](../../ligor/SB.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Senaste 8: tur med +0,67 poäng per match mot xP. Marknaden prisar redan in det i ligan (ingen bekräftad effekt), så det är inget spel i sig.
 - Senaste 8: xG-målskillnaden är −0,75 per match sämre än målskillnaden.
+- Spelstil 2025/26: Balanserat, Kortpass, Mellanpress, Medel på fasta, Medel mot fasta. Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2025/26: 0,34 mål för per match (xG 0,23), 0,26 emot (xG 0,32), 4,0 hörnor.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -26,6 +28,53 @@ Form (äldst → senast): FVVVOFVF · senaste match 2026-09-19
 | 2026/27 | SB | 5 | 1,40 | +0,15 (+0,56 / −0,12) | 20 % (27 %) | 1,00–1,20 | 1,36–1,97* | 1,02 |
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/SB.md#padova) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2025/26: **Balanserat, Kortpass, Mellanpress, Medel på fasta, Medel mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026/27 | 5 | 0,20 | 0,40 | 0,20 | 0,26 | 5,2 |
+| 2025/26 | 38 | 0,34 | 0,23 | 0,26 | 0,32 | 4,0 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Backar hem | 3 | 1,00–1,00 | +0,38 | +0,35 (0,5) | +7 pe | −16 pe | svag |
+| Balanserat | 1 | 1,00–3,00 | −1,00 | −1,04 (−10,4) | −29 pe | +55 pe | svag |
+| Kortpass | 1 | 1,00–3,00 | −1,00 | −1,04 (−10,4) | −29 pe | +55 pe | svag |
+| Blandat | 2 | 1,00–1,50 | −0,50 | −0,53 (−3,6) | +24 pe | −1 pe | svag |
+| Direktspel | 1 | 1,00–0,00 | +2,13 | +2,10 (21,0) | −27 pe | −46 pe | svag |
+| Lågpress | 3 | 1,00–2,00 | −0,67 | −0,70 (−4,1) | +6 pe | +18 pe | svag |
+| Mellanpress | 1 | 1,00–0,00 | +2,13 | +2,10 (21,0) | −27 pe | −46 pe | svag |
+| Medel på fasta | 3 | 1,00–1,33 | +0,28 | +0,25 (0,3) | +5 pe | −12 pe | svag |
+| Farlig på fasta | 1 | 1,00–2,00 | −0,71 | −0,74 (−7,4) | −23 pe | +44 pe | svag |
+| Stark mot fasta | 1 | 1,00–3,00 | −1,00 | −1,04 (−10,4) | −29 pe | +55 pe | svag |
+| Medel mot fasta | 2 | 1,00–1,00 | +0,71 | +0,68 (0,7) | −25 pe | −1 pe | svag |
+| Svag mot fasta | 1 | 1,00–1,00 | −0,29 | −0,32 (−3,2) | +70 pe | −46 pe | svag |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
+
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 6 | 1-0-5 | 0,50 | −0,71 |
+| Efter uppehåll sedan 2023 | 4 | 1-0-3 | 0,75 | −0,41 |
+| Övriga matcher | 73 | 18-27-28 | 1,11 | −0,03 |
+
+Hela ligan efter uppehåll: +0,00 mot marknaden (n 535). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2026-04-05 | Frosinone - Padova | 2-0 F | −0,80 |
+| 2025-11-22 | Padova - Venezia | 0-2 F | −0,96 |
+| 2025-10-19 | Catanzaro - Padova | 0-1 V | +1,57 |
+| 2025-09-13 | Padova - Frosinone | 0-1 F | −1,47 |
+| 2018-10-20 | Crotone - Padova | 2-1 F | −1,09 |
+| 2018-09-16 | Salernitana - Padova | 3-0 F | −1,50 |
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -51,44 +100,44 @@ Form (äldst → senast): FVVVOFVF · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Antonio Nicola Calabro. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-|  | Simone Scaglia | Keeper | 22 | Italy | 372 k€ | – | 0 | 0 | 0/0 |  |
-| 1 | Louis Mouquet | Keeper | 22 | France | 322 k€ | – | 0 | 0 | 0/0 |  |
-| 22 | Alessandro Sorrentino | GK | 24 | Italy | 800 k€ | 7,32 | 0 | 0 | 0/0 |  |
+|  | Simone Scaglia | Keeper | 22 | Italy | 233 k€ | – | 0 | 0 | 0/0 |  |
+| 1 | Louis Mouquet | Keeper | 22 | France | 323 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Alessandro Sorrentino | GK | 24 | Italy | 1,2 M€ | 7,32 | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 5 | Matteo Lovato | CB | 26 | Italy | 1,3 M€ | 6,87 | 0 | 0 | 0/0 |  |
-| 18 | Enrico Silletti | Defender | 28 | Italy | 286 k€ | 6,11 | 0 | 0 | 0/0 |  |
+| 5 | Matteo Lovato | CB | 26 | Italy | 1,4 M€ | 6,87 | 0 | 0 | 0/0 |  |
+| 18 | Enrico Silletti | Defender | 28 | Italy | 300 k€ | 6,11 | 0 | 0 | 0/0 |  |
 | 27 | Alessandro Dellavalle | CB | 22 | Italy | 2,1 M€ | 7,10 | 0 | 0 | 2/0 |  |
-| 32 | Filippo Sgarbi | CB | 28 | Italy | 213 k€ | 6,94 | 0 | 0 | 0/0 |  |
-| 58 | Christian Pastina | CB | 25 | Italy | 379 k€ | 7,12 | 1 | 0 | 1/0 |  |
-| 72 | Carlo Faedo | CB,LB,RB | 27 | Italy | 387 k€ | – | 0 | 0 | 0/0 |  |
+| 32 | Filippo Sgarbi | CB | 28 | Italy | 254 k€ | 6,94 | 0 | 0 | 0/0 |  |
+| 58 | Christian Pastina | CB | 25 | Italy | 363 k€ | 7,12 | 1 | 0 | 1/0 |  |
+| 72 | Carlo Faedo | CB,LB,RB | 27 | Italy | 376 k€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 3 | Antonio Barreca | LM,LB | 31 | Italy | 187 k€ | – | 0 | 0 | 0/0 |  |
-| 6 | Giovanni Giunti | CM | 21 | Italy | 1,3 M€ | 6,70 | 0 | 0 | 2/0 |  |
-| 7 | Kevin Varas | CM,LM | 33 | Ecuador | 184 k€ | 6,70 | 0 | 0 | 0/0 |  |
-| 8 | Pietro Fusi | CM | 28 | Italy | 235 k€ | 6,93 | 1 | 0 | 2/0 |  |
+| 3 | Antonio Barreca | LM,LB | 31 | Italy | 186 k€ | – | 0 | 0 | 0/0 |  |
+| 6 | Giovanni Giunti | CM | 21 | Italy | 1,2 M€ | 6,70 | 0 | 0 | 2/0 |  |
+| 7 | Kevin Varas | CM,LM | 33 | Ecuador | 193 k€ | 6,70 | 0 | 0 | 0/0 |  |
+| 8 | Pietro Fusi | CM | 28 | Italy | 383 k€ | 6,93 | 1 | 0 | 2/0 |  |
 | 14 | Marco Pompetti | CM,CDM | 26 | Italy | 1,5 M€ | 6,59 | 1 | 0 | 0/0 |  |
-| 17 | Alessandro Capelli | RM,LM,ST | 29 | Italy | 408 k€ | 6,33 | 0 | 0 | 2/0 |  |
-| 21 | Emanuele Zuelli | CM,CAM,CDM | 24 | Italy | 1,3 M€ | 6,97 | 0 | 0 | 1/0 |  |
-| 23 | Francesco Di Mariano | LM,ST,CAM | 30 | Italy | 303 k€ | 6,21 | 0 | 0 | 0/0 |  |
-| 24 | Lorenzo Carissoni | RM | 29 | Italy | 412 k€ | 6,48 | 0 | 1 | 0/1 |  |
-| 34 | Matteo Cocchi | LM,LB | 19 | Italy | 2,0 M€ | 6,95 | 0 | 2 | 1/0 |  |
-| 74 | Diego Marcolini | Midfielder | 21 | Italy | 481 k€ | – | 0 | 0 | 0/0 |  |
+| 17 | Alessandro Capelli | RM,LM,ST | 29 | Italy | 449 k€ | 6,33 | 0 | 0 | 2/0 |  |
+| 21 | Emanuele Zuelli | CM,CAM,CDM | 24 | Italy | 1,5 M€ | 6,97 | 0 | 0 | 1/0 |  |
+| 23 | Francesco Di Mariano | LM,ST,CAM | 30 | Italy | 319 k€ | 6,21 | 0 | 0 | 0/0 |  |
+| 24 | Lorenzo Carissoni | RM | 29 | Italy | 443 k€ | 6,48 | 0 | 1 | 0/1 |  |
+| 34 | Matteo Cocchi | LM,LB | 19 | Italy | 2,7 M€ | 6,95 | 0 | 2 | 1/0 |  |
+| 74 | Diego Marcolini | Midfielder | 21 | Italy | 401 k€ | – | 0 | 0 | 0/0 |  |
 | 98 | Luca Zanimacchia | LM,RM | 28 | Italy | 1,1 M€ | 6,81 | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-|  | Gabriele Artistico | ST | 24 | Italy | 1,5 M€ | – | 0 | 0 | 0/0 |  |
-| 9 | Luca Moro | ST | 25 | Italy | 1,3 M€ | 6,43 | 0 | 0 | 0/0 |  |
-| 10 | Gianluca Caprari | ST,CAM | 33 | Italy | 276 k€ | 6,48 | 0 | 0 | 0/0 |  |
-| 11 | Alessandro Seghetti | ST | 22 | Italy | 480 k€ | 6,21 | 0 | 0 | 0/0 |  |
-| 15 | Kevin Lasagna | ST | 34 | Italy | 247 k€ | 6,37 | 0 | 0 | 0/0 |  |
-| 20 | Mattia Bortolussi | ST | 30 | Italy | 667 k€ | 6,28 | 0 | 0 | 0/0 |  |
-| 25 | Nicolas Galazzi | CAM | 25 | Italy | 789 k€ | 7,43 | 1 | 0 | 0/0 |  |
+|  | Gabriele Artistico | ST | 24 | Italy | 1,8 M€ | – | 0 | 0 | 0/0 |  |
+| 9 | Luca Moro | ST | 25 | Italy | 1,4 M€ | 6,43 | 0 | 0 | 0/0 |  |
+| 10 | Gianluca Caprari | ST | 33 | Italy | 226 k€ | 6,48 | 0 | 0 | 0/0 |  |
+| 11 | Alessandro Seghetti | ST | 22 | Italy | 456 k€ | 6,21 | 0 | 0 | 0/0 |  |
+| 15 | Kevin Lasagna | ST | 34 | Italy | 256 k€ | 6,37 | 0 | 0 | 0/0 |  |
+| 20 | Mattia Bortolussi | ST | 30 | Italy | 813 k€ | 6,28 | 0 | 0 | 0/0 |  |
+| 25 | Nicolas Galazzi | CAM | 25 | Italy | 774 k€ | 7,43 | 1 | 0 | 0/0 |  |
 | 92 | Cristian Buonaiuto | ST | 33 | Italy | 192 k€ | – | 0 | 0 | 0/0 |  |
 
 Har lämnat truppen sedan vi började spara (2): Papu Gómez (senast 2026-09-28), Edoardo Caporello (senast 2026-09-29).

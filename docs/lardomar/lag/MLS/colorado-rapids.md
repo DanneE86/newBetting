@@ -1,20 +1,23 @@
 # Colorado Rapids (MLS) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [MLS](../../ligor/MLS.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
-- Inget som avviker från marknaden. Följ oddsen.
+- Spelstil 2026: Bollinnehav, Kortpass, Högpress, Farlig på fasta, Stark mot fasta. Bäst mot Stark mot fasta (+0,23, samma håll i båda halvorna men svagt), Högpress (+0,22, samma håll i båda halvorna men svagt), Balanserat (+0,12, samma håll i båda halvorna men svagt). Svårast mot Mellanpress (−0,18, samma håll i båda halvorna men svagt), Svag mot fasta (−0,20, samma håll i båda halvorna men svagt), Bollinnehav (−0,19, samma håll i båda halvorna men svagt). Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2026: 0,33 mål för per match (xG 0,33), 0,26 emot (xG 0,20), 5,0 hörnor.
+- Höghöjd: hemma på 1610 m mot låglandslag 1,69 poäng per match mot 1,53 mot övriga (226 matcher, mot marknaden +0,03 mot −0,07).
+- Svårt för: Seattle Sounders (3-6-7, 0,94 p/match, mot marknaden −0,27), Real Salt Lake (6-2-12, 1,00 p/match, mot marknaden −0,33), Los Angeles FC (5-3-7, 1,20 p/match, mot marknaden +0,25). Där marknaden ligger nära noll är laget bara sämre i de mötena än annars, och oddsen vet redan om det.
 
 ## Nuläge (senaste 8 ligamatcher)
 
-Form (äldst → senast): VVFVFOVO · senaste match 2026-09-20
+Form (äldst → senast): VFVFOVOF · senaste match 2026-09-27
 
 | Mått | Värde |
 |---|---|
 | Tur (poäng − xP per match) | – |
 | xG-målskillnad − målskillnad | – |
-| Poäng mot marknaden per match | +0,18 |
+| Poäng mot marknaden per match | −0,07 |
 
 ## Säsonger
 
@@ -34,7 +37,54 @@ Form (äldst → senast): VVFVFOVO · senaste match 2026-09-20
 | 2023 | MLS | 34 | 0,79 | −0,40 (−0,59 / −0,22) | 35 % (25 %) | 0,76–1,59 | – | – |
 | 2024 | MLS | 36 | 1,39 | −0,03 (+0,06 / −0,11) | 14 % (24 %) | 1,72–1,92 | – | – |
 | 2025 | MLS | 34 | 1,21 | −0,04 (+0,09 / −0,16) | 24 % (25 %) | 1,29–1,65 | – | – |
-| 2026 | MLS | 26 | 1,38 | +0,04 (+0,47 / −0,40) | 12 % (24 %) | 1,38–1,35 | – | – |
+| 2026 | MLS | 27 | 1,33 | −0,02 (+0,47 / −0,47) | 11 % (24 %) | 1,41–1,41 | – | – |
+
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/MLS.md#colorado-rapids) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2026: **Bollinnehav, Kortpass, Högpress, Farlig på fasta, Stark mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026 | 27 | 0,33 | 0,33 | 0,26 | 0,20 | 5,0 |
+| 2025 | 34 | 0,15 | 0,29 | 0,21 | 0,25 | 5,1 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Backar hem | 104 | 1,26–1,49 | +0,03 | +0,06 (0,5) | +3 pe | – | svag |
+| Balanserat | 106 | 1,54–1,58 | +0,09 | +0,12 (1,0) | −6 pe | – | ✔ samma håll |
+| Bollinnehav | 97 | 1,20–1,80 | −0,21 | −0,19 (−1,6) | −4 pe | – | ✔ samma håll |
+| Kortpass | 55 | 1,55–1,75 | +0,03 | +0,06 (0,3) | −8 pe | – | ✔ samma håll |
+| Blandat | 135 | 1,32–1,47 | +0,03 | +0,06 (0,6) | −2 pe | – | svag |
+| Direktspel | 117 | 1,26–1,74 | −0,12 | −0,09 (−0,8) | +0 pe | – | ✔ samma håll |
+| Lågpress | 106 | 1,31–1,46 | +0,05 | +0,08 (0,6) | −4 pe | – | ✔ samma håll |
+| Mellanpress | 132 | 1,24–1,86 | −0,20 | −0,18 (−1,8) | −0 pe | – | ✔ samma håll |
+| Högpress | 69 | 1,55–1,42 | +0,19 | +0,22 (1,5) | −4 pe | – | ✔ samma håll |
+| Svag på fasta | 96 | 1,32–1,56 | +0,03 | +0,06 (0,5) | −3 pe | – | svag |
+| Medel på fasta | 126 | 1,45–1,64 | −0,02 | +0,01 (0,1) | +0 pe | – | svag |
+| Farlig på fasta | 85 | 1,18–1,66 | −0,10 | −0,07 (−0,5) | −6 pe | – | svag |
+| Stark mot fasta | 86 | 1,48–1,44 | +0,21 | +0,23 (1,7) | +1 pe | – | ✔ samma håll |
+| Medel mot fasta | 134 | 1,37–1,75 | −0,04 | −0,02 (−0,2) | −5 pe | – | svag |
+| Svag mot fasta | 87 | 1,15–1,61 | −0,23 | −0,20 (−1,7) | −1 pe | – | ✔ samma håll |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
+
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 3 | 0-0-3 | 0,00 | −1,37 |
+| Efter uppehåll sedan 2023 | 1 | 0-0-1 | 0,00 | −1,33 |
+| Övriga matcher | 493 | 165-115-213 | 1,24 | −0,06 |
+
+Hela ligan efter uppehåll: −0,00 mot marknaden (n 121). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2026-04-04 | Toronto FC - Colorado Rapids | 3-2 F | −1,33 |
+| 2020-11-23 | Minnesota United - Colorado Rapids | 3-0 F | −1,58 |
+| 2016-11-23 | Seattle Sounders - Colorado Rapids | 2-1 F | −1,20 |
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -44,8 +94,8 @@ Form (äldst → senast): VVFVFOVO · senaste match 2026-09-20
 | Minnesota United | 18 | 8-3-7 | 27–30 | +0,23 | −7 pe | 2026-05-14 1-0 (b) |
 | Sporting Kansas City | 18 | 6-5-7 | 25–29 | −0,06 | +4 pe | 2026-08-16 2-0 (h) |
 | Houston Dynamo | 17 | 6-6-5 | 27–27 | +0,08 | +10 pe | 2026-05-03 0-1 (b) |
+| Los Angeles Galaxy | 17 | 8-2-7 | 26–30 | +0,26 | −12 pe | 2026-09-27 2-3 (b) |
 | FC Dallas | 16 | 8-3-5 | 27–23 | +0,31 | −6 pe | 2026-05-24 1-2 (h) |
-| Los Angeles Galaxy | 16 | 8-2-6 | 24–27 | +0,35 | −11 pe | 2026-03-08 4-1 (h) |
 | Seattle Sounders | 16 | 3-6-7 | 18–27 | −0,27 | +12 pe | 2026-09-20 3-3 (h) |
 | Los Angeles FC | 15 | 5-3-7 | 16–27 | +0,25 | −2 pe | 2026-08-20 1-0 (h) |
 | Portland Timbers | 15 | 5-4-6 | 20–24 | −0,13 | +3 pe | 2026-02-28 2-0 (h) |
@@ -72,44 +122,57 @@ Form (äldst → senast): VVFVFOVO · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): Seattle Sounders 0,94 p/match (−0,27), Real Salt Lake 1,00 p/match (−0,33), Los Angeles FC 1,20 p/match (+0,25).
+
+## Höghöjd
+
+Arenans höjd: ca 1610 m. Höghöjdsmatch = arena ≥ 1500 m och bortalaget från minst 1000 m lägre.
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Hemma mot låglandslag | 226 | 107-61-58 | 1,69 | +0,03 |
+| Hemma mot övriga | 19 | 9-2-8 | 1,53 | −0,07 |
+
+Ligan: se [MLS](../../ligor/MLS.md#höghöjd).
+
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Matt Wells. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Zack Steffen (skadad, åter Early October 2026), Theodore Ku-DiPietro (skadad, åter Late September 2026), Mamadou Billo Diop (skadad, åter Early October 2026)
+**Skadade/borta nu:** Zack Steffen (skadad, åter Early October 2026), Theodore Ku-DiPietro (skadad, åter Mid October 2026), Mamadou Billo Diop (skadad, åter Early October 2026)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Zack Steffen | GK | 31 | USA | 658 k€ | 6,36 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
-| 41 | Nicholas Hansen | GK | 25 | USA | 268 k€ | 6,97 | 0 | 0 | 0/0 |  |
-| 61 | Bryan Dowd | GK | 24 | USA | 250 k€ | – | 0 | 0 | 0/0 |  |
+| 1 | Zack Steffen | GK | 31 | USA | 674 k€ | 6,36 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 41 | Nicholas Hansen | GK | 25 | USA | 255 k€ | 6,97 | 0 | 0 | 0/0 |  |
+| 61 | Bryan Dowd | GK | 24 | USA | 232 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 2 | Keegan Rosenberry | RB | 32 | USA | 275 k€ | 6,67 | 1 | 0 | 2/0 |  |
-| 4 | Reggie Cannon | RB,CB | 28 | USA | 954 k€ | 6,75 | 2 | 0 | 5/0 |  |
-| 5 | Loïc Williams | CB | 24 | Spain | 1,4 M€ | 6,92 | 1 | 0 | 1/0 |  |
+| 4 | Reggie Cannon | RB,CB | 28 | USA | 959 k€ | 6,75 | 2 | 0 | 5/0 |  |
+| 5 | Loïc Williams | CB | 24 | Spain | 2,3 M€ | 6,92 | 1 | 0 | 1/0 |  |
 | 6 | Rob Holding | CB | 31 | England | 1,4 M€ | 6,75 | 0 | 1 | 3/2 |  |
-| 24 | Noah Cobb | CB | 21 | USA | 1,1 M€ | 6,37 | 0 | 0 | 2/0 |  |
+| 24 | Noah Cobb | CB | 21 | USA | 1,0 M€ | 6,37 | 0 | 0 | 2/0 |  |
 | 29 | Miguel Navarro | LB | 27 | Venezuela | 1,3 M€ | 6,84 | 2 | 0 | 6/1 |  |
-| 33 | Kosi Thompson | RB,CB,LB | 23 | Canada | 531 k€ | 6,47 | 2 | 0 | 5/0 |  |
-| 99 | Jackson Travis | LB,RB,LW | 22 | USA | 514 k€ | 6,51 | 0 | 1 | 2/1 |  |
+| 33 | Kosi Thompson | RB,CB,LB | 23 | Canada | 502 k€ | 6,47 | 2 | 0 | 5/0 |  |
+| 99 | Jackson Travis | LB,RB,LW | 22 | USA | 506 k€ | 6,51 | 0 | 1 | 2/1 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 8 | Hamzat Ojediran | CDM,CM | 22 | Nigeria | 2,2 M€ | 6,71 | 1 | 0 | 8/0 |  |
-| 10 | Paxten Aaronson | CAM,CM,RW,LW | 23 | USA | 5,5 M€ | 7,36 | 7 | 7 | 1/0 |  |
+| 10 | Paxten Aaronson | CAM,CM,RW,LW | 23 | USA | 7,2 M€ | 7,36 | 7 | 7 | 1/0 |  |
 | 12 | Joshua Atencio | CDM,CM | 24 | USA | 1,5 M€ | 6,63 | 1 | 1 | 10/0 |  |
-| 13 | Wayne Frederick | CDM,CM,CAM | 22 | Trinidad and Tobago | 368 k€ | 6,74 | 2 | 2 | 2/1 |  |
-| 15 | Ali Fadal | CM,CDM | 22 | Ghana | 163 k€ | – | 0 | 0 | 0/0 |  |
-| 16 | Alex Harris | RM,ST | 21 | USA | 552 k€ | 6,58 | 0 | 0 | 1/0 |  |
-| 21 | Theodore Ku-DiPietro | LW | 24 | USA | 907 k€ | 6,45 | 0 | 0 | 0/0 | skadad, åter Late September 2026 |
-| 27 | Kimani Stewart | LW,LM,RM | 21 | Canada | 241 k€ | – | 0 | 0 | 0/0 |  |
-| 88 | Youssef Maziz | CAM,CM,LW | 28 | France | 463 k€ | 6,85 | 0 | 2 | 1/0 |  |
+| 13 | Wayne Frederick | CDM,CM,CAM | 22 | Trinidad and Tobago | 441 k€ | 6,74 | 2 | 2 | 2/1 |  |
+| 15 | Ali Fadal | CM,CDM | 22 | Ghana | 159 k€ | – | 0 | 0 | 0/0 |  |
+| 16 | Alex Harris | RM,ST | 21 | USA | 386 k€ | 6,58 | 0 | 0 | 1/0 |  |
+| 21 | Theodore Ku-DiPietro | LW | 24 | USA | 842 k€ | 6,45 | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 27 | Kimani Stewart | LW,LM,RM | 21 | Canada | 195 k€ | – | 0 | 0 | 0/0 |  |
+| 88 | Youssef Maziz | CAM,CM,LW | 28 | France | 521 k€ | 6,85 | 0 | 2 | 1/0 |  |
 | | **Anfallare** | | | | | | | | | |
-|  | Ibrahim Sadiq | RW,LW,ST | 26 | Ghana | 1,6 M€ | – | 0 | 0 | 0/0 |  |
-| 7 | Morgan Whittaker | RW,ST,CAM,RM | 25 | England | 12,0 M€ | 7,43 | 2 | 0 | 0/0 |  |
-| 9 | Sayed Abu Farkhi | ST,LW | 20 | Israel | 2,3 M€ | 6,22 | 0 | 0 | 0/0 |  |
-| 26 | Mamadou Billo Diop | ST | 20 | Senegal | 1,0 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
-| 32 | Donavan Phillip | ST,RW | 21 | Saint Lucia | – | 6,79 | 2 | 0 | 1/0 |  |
-| 77 | Darren Yapi | LW,ST,RW | 21 | USA | 1,7 M€ | 6,48 | 3 | 2 | 5/0 |  |
-| 93 | Georgi Minoungou | LW | 24 | Burkina Faso | 1,4 M€ | 6,70 | 0 | 2 | 1/0 |  |
+|  | Ibrahim Sadiq | LW,ST,RW | 26 | Ghana | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| 7 | Morgan Whittaker | RW,ST,CAM,RM | 25 | England | 19,6 M€ | 7,43 | 2 | 0 | 0/0 |  |
+| 9 | Sayed Abu Farkhi | ST,LW | 20 | Israel | 2,1 M€ | 6,22 | 0 | 0 | 0/0 |  |
+| 26 | Mamadou Billo Diop | ST | 20 | Senegal | 868 k€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 32 | Donavan Phillip | ST,RW | 21 | Saint Lucia | 317 k€ | 6,79 | 2 | 0 | 1/0 |  |
+| 77 | Darren Yapi | LW,ST,RW | 21 | USA | 3,3 M€ | 6,48 | 3 | 2 | 5/0 |  |
+| 93 | Georgi Minoungou | LW | 24 | Burkina Faso | 1,5 M€ | 6,70 | 0 | 2 | 1/0 |  |
 
 Har lämnat truppen sedan vi började spara (1): Zack Campagnolo (senast 2026-09-28).

@@ -1,6 +1,6 @@
 # Östersunds FK (Superettan) – lärdomar
 
-Genererad 2026-09-29. Ligans fil: [SE2](../../ligor/SE2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-10-04. Ligans fil: [SE2](../../ligor/SE2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -39,37 +39,37 @@ Form senaste 8 (äldst → senast): VOOOVOVO · senaste match 2026-09-18
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Nemanja Miljanović. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Melker Uppenberg | GK | 24 | Sweden | 77 k€ | – | 0 | 0 | 2/0 |  |
-| 12 | Rasmus Forsell | GK | 24 | Sweden | 183 k€ | – | 0 | 0 | 0/0 |  |
+| 1 | Melker Uppenberg | GK | 24 | Sweden | 58 k€ | – | 0 | 0 | 2/0 |  |
+| 12 | Rasmus Forsell | GK | 24 | Sweden | 165 k€ | – | 0 | 0 | 0/0 |  |
 | 30 | Arnold Origi Otieno | GK | 42 | Kenya | 50 k€ | – | 0 | 0 | 0/0 |  |
-| 30 | Tyree Griffiths | GK | 24 | Sweden | 157 k€ | – | 0 | 0 | 1/0 |  |
+| 30 | Tyree Griffiths | GK | 24 | Sweden | 142 k€ | – | 0 | 0 | 1/0 |  |
 | | **Backar** | | | | | | | | | |
-| 3 | Hugo Azzi | CB,LB | 22 | France | 194 k€ | – | 0 | 1 | 6/0 |  |
-| 4 | Jonathan Westerberg | RB | 24 | Sweden | 123 k€ | – | 1 | 0 | 0/0 |  |
+| 3 | Hugo Azzi | CB,LB | 22 | France | 180 k€ | – | 0 | 1 | 6/0 |  |
+| 4 | Jonathan Westerberg | RB | 24 | Sweden | 111 k€ | – | 1 | 0 | 0/0 |  |
 | 5 | Abdulla Qasem | CB | 20 | Sweden | – | – | 0 | 1 | 3/0 |  |
-| 14 | Sunday Anyanwu | CB | 26 | Nigeria | 108 k€ | – | 0 | 0 | 3/0 |  |
-| 19 | Dennis Widgren | CB | 32 | Sweden | 105 k€ | – | 1 | 0 | 0/0 |  |
-| 27 | Daniel Miljanović | RM,RWB,RB | 25 | Sweden | 155 k€ | – | 0 | 3 | 3/0 |  |
-| 28 | Yannick Adjoumani | LM,LWB,LB | 23 | Ivory Coast | 134 k€ | – | 2 | 3 | 1/0 |  |
+| 14 | Sunday Anyanwu | CB | 26 | Nigeria | 106 k€ | – | 0 | 0 | 3/0 |  |
+| 19 | Dennis Widgren | CB | 32 | Sweden | 110 k€ | – | 1 | 0 | 0/0 |  |
+| 27 | Daniel Miljanović | RM,RWB,RB | 25 | Sweden | 174 k€ | – | 0 | 3 | 3/0 |  |
+| 28 | Yannick Adjoumani | LM,LWB,LB | 23 | Ivory Coast | 135 k€ | – | 2 | 3 | 1/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 2 | Elliot Caarls | Midfielder | 19 | Sweden | – | – | 0 | 0 | 0/0 |  |
-| 6 | José Masllorens | CM | 25 | Spain | 235 k€ | – | 0 | 0 | 0/0 |  |
+| 6 | José Masllorens | CM | 25 | Spain | 234 k€ | – | 0 | 0 | 0/0 |  |
 | 7 | Gustav Odenlind | Midfielder | 22 | Sweden | – | – | 0 | 0 | 0/0 |  |
-| 8 | Emil Özkan | CM,LW,LM | 23 | Sweden | 166 k€ | – | 2 | 3 | 2/0 |  |
+| 8 | Emil Özkan | CM,LW,LM | 23 | Sweden | 141 k€ | – | 2 | 3 | 2/0 |  |
 | 15 | Donald Molls Ntchamda | CM | 28 | Cameroon | – | – | 0 | 0 | 1/0 |  |
-| 16 | Amar Begić | CM | 26 | Bosnia and Herzegovina | 168 k€ | – | 5 | 3 | 3/0 |  |
-| 17 | Curtis Edwards | CM,ST | 32 | England | 83 k€ | – | 5 | 1 | 5/0 |  |
+| 16 | Amar Begić | CM | 26 | Bosnia and Herzegovina | 182 k€ | – | 5 | 3 | 3/0 |  |
+| 17 | Curtis Edwards | CM,ST | 32 | England | 110 k€ | – | 5 | 1 | 5/0 |  |
 | 21 | Luka Božičković | CM | 23 | Germany | – | – | 0 | 1 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 9 | Abel William Stensrud | ST,LW | 24 | Norway | 161 k€ | – | 2 | 0 | 1/0 |  |
-| 10 | Simon Marklund | ST,RW,CM,CAM,RM | 27 | Sweden | 113 k€ | – | 6 | 5 | 1/0 |  |
+| 10 | Simon Marklund | ST,RW,CM,CAM,RM | 27 | Sweden | 112 k€ | – | 6 | 5 | 1/0 |  |
 | 18 | Mario Palomino | ST | 20 | Spain | – | – | 3 | 1 | 3/0 |  |
 | 22 | Jabir Abdihakim Ali | ST | 27 | Sweden | – | – | 2 | 1 | 1/0 |  |
 

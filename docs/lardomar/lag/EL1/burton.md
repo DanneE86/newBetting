@@ -1,10 +1,13 @@
 # Burton (League One) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Stark historik mot AFC Wimbledon (+0,68 p/match mot marknaden, 10 möten), Leyton Orient (+0,50 p/match mot marknaden, 6 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Spelstil 2025/26: Balanserat, Blandat, Högpress, Farlig på fasta, Medel mot fasta. Bäst mot Medel på fasta (+0,09, samma håll i båda halvorna men svagt), Mellanpress (+0,08, samma håll i båda halvorna men svagt), Blandat (+0,06, svagt). Svårast mot Högpress (−0,15, samma håll i båda halvorna men svagt), Kortpass (−0,17, samma håll i båda halvorna men svagt), Bollinnehav (−0,12, samma håll i båda halvorna men svagt). Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2025/26: 0,39 mål för per match (xG 0,43), 0,39 emot (xG 0,31), 5,2 hörnor.
+- Svårt för: Oxford (2-2-8, 0,67 p/match, mot marknaden −0,38), Wycombe (2-3-8, 0,69 p/match, mot marknaden −0,40), Peterboro (2-5-7, 0,79 p/match, mot marknaden −0,26), Barnsley (2-3-5, 0,90 p/match, mot marknaden −0,08), Plymouth (2-4-5, 0,91 p/match, mot marknaden −0,30), Wigan (2-4-4, 1,00 p/match, mot marknaden −0,12), Blackpool (3-3-5, 1,09 p/match, mot marknaden −0,10), Milton Keynes Dons (2-3-3, 1,13 p/match, mot marknaden −0,18), Doncaster (2-3-3, 1,13 p/match, mot marknaden −0,17), Reading (2-1-3, 1,17 p/match, mot marknaden −0,03). Där marknaden ligger nära noll är laget bara sämre i de mötena än annars, och oddsen vet redan om det.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -32,6 +35,55 @@ Form (äldst → senast): OVFVOFOV · senaste match 2026-09-26
 | 2026/27 | EL1 | 8 | 1,50 | +0,25 (+0,14 / +0,37) | 38 % (27 %) | 1,63–1,50 | 1,07–1,44* | 1,15 |
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/EL1.md#burton) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2025/26: **Balanserat, Blandat, Högpress, Farlig på fasta, Medel mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026/27 | 9 | 0,44 | 0,22 | 0,00 | 0,33 | 2,9 |
+| 2025/26 | 46 | 0,39 | 0,43 | 0,39 | 0,31 | 5,2 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Backar hem | 96 | 1,11–1,46 | +0,05 | +0,03 (0,2) | −3 pe | +4 pe | svag |
+| Balanserat | 113 | 1,22–1,58 | +0,08 | +0,06 (0,5) | +1 pe | +6 pe | svag |
+| Bollinnehav | 79 | 1,03–1,38 | −0,09 | −0,12 (−0,9) | +4 pe | −6 pe | ✔ samma håll |
+| Kortpass | 77 | 0,97–1,42 | −0,14 | −0,17 (−1,2) | +8 pe | −3 pe | ✔ samma håll |
+| Blandat | 123 | 1,20–1,61 | +0,09 | +0,06 (0,6) | −10 pe | +9 pe | svag |
+| Direktspel | 88 | 1,17–1,36 | +0,08 | +0,05 (0,4) | +8 pe | −5 pe | svag |
+| Lågpress | 71 | 1,01–1,35 | +0,09 | +0,07 (0,5) | +5 pe | −3 pe | svag |
+| Mellanpress | 120 | 1,31–1,56 | +0,11 | +0,08 (0,7) | −1 pe | +6 pe | ✔ samma håll |
+| Högpress | 97 | 1,00–1,48 | −0,13 | −0,15 (−1,2) | −1 pe | −1 pe | ✔ samma håll |
+| Svag på fasta | 104 | 1,09–1,57 | −0,04 | −0,06 (−0,5) | −6 pe | +4 pe | ✔ samma håll |
+| Medel på fasta | 132 | 1,23–1,50 | +0,11 | +0,09 (0,8) | +2 pe | +5 pe | ✔ samma håll |
+| Farlig på fasta | 52 | 0,96–1,27 | −0,07 | −0,10 (−0,6) | +10 pe | −10 pe | ✔ samma håll |
+| Stark mot fasta | 93 | 1,04–1,31 | −0,00 | −0,03 (−0,2) | +2 pe | −2 pe | svag |
+| Medel mot fasta | 135 | 1,19–1,50 | +0,06 | +0,03 (0,3) | +1 pe | +4 pe | svag |
+| Svag mot fasta | 60 | 1,13–1,70 | −0,00 | −0,03 (−0,2) | −2 pe | +3 pe | svag |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
+
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 5 | 0-2-3 | 0,40 | −0,17 |
+| Efter uppehåll sedan 2023 | 0 | – | – | – |
+| Övriga matcher | 406 | 122-109-175 | 1,17 | +0,01 |
+
+Hela ligan efter uppehåll: 0,00 mot marknaden (n 24). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2022-12-03 | Milton Keynes Dons - Burton | 1-1 O | +0,47 |
+| 2018-03-30 | Cardiff - Burton | 3-1 F | −0,75 |
+| 2017-11-17 | Burton - Sheffield United | 1-3 F | −0,88 |
+| 2017-10-13 | Bristol City - Burton | 0-0 O | +1,25 |
+| 2017-09-09 | Leeds - Burton | 5-0 F | −0,95 |
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -62,6 +114,8 @@ Form (äldst → senast): OVFVOFOV · senaste match 2026-09-26
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): Oxford 0,67 p/match (−0,38), Wycombe 0,69 p/match (−0,40), Peterboro 0,79 p/match (−0,26), Barnsley 0,90 p/match (−0,08), Plymouth 0,91 p/match (−0,30), Wigan 1,00 p/match (−0,12), Blackpool 1,09 p/match (−0,10), Milton Keynes Dons 1,13 p/match (−0,18), Doncaster 1,13 p/match (−0,17), Reading 1,17 p/match (−0,03).
+
 ## Stryktipset / Europatipset
 
 | Datum | Spel | Match | Utfall | Folket på laget | Vår procent |
@@ -69,7 +123,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2026-05-02 | Stryk 4951 | Leyton Orient - Burton | X | 17 % | 24 % |
 | 2026-04-25 | Stryk 4950 | Burton - Exeter | X | 53 % | 54 % |
 
-## Trupp (FotMob, hämtad 2026-09-29)
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Gary Bowyer. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -77,31 +131,31 @@ Tränare: Gary Bowyer. Betyg, mål och assist gäller innevarande säsong enligt
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
 | 27 | Kamil Dudek | GK | 20 | Poland | – | – | 0 | 0 | 0/0 |  |
-| 34 | Corey Addai | GK | 28 | Jamaica | 183 k€ | 6,76 | 0 | 0 | 0/0 |  |
+| 34 | Corey Addai | GK | 28 | Jamaica | 232 k€ | 6,67 | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 6 | Toby Sibbick | CB,LWB,RB | 27 | Uganda | 275 k€ | 6,91 | 0 | 0 | 0/0 |  |
-| 16 | Curtis Tilt | CB | 35 | Jamaica | 253 k€ | 6,92 | 1 | 0 | 3/1 |  |
-| 20 | Jason Sraha | CB | 23 | England | 253 k€ | 6,63 | 0 | 0 | 0/0 |  |
-| 24 | Harvey Araujo | CB | 22 | England | 594 k€ | 6,64 | 0 | 0 | 0/0 |  |
-| 26 | Finn Delap | CB | 21 | England | 369 k€ | 7,60 | 2 | 0 | 0/0 |  |
+| 6 | Toby Sibbick | CB,LWB,RB | 27 | Uganda | 400 k€ | 6,91 | 0 | 0 | 0/0 |  |
+| 16 | Curtis Tilt | CB | 35 | Jamaica | 321 k€ | 6,83 | 1 | 0 | 3/1 |  |
+| 20 | Jason Sraha | CB | 23 | England | 214 k€ | 6,63 | 0 | 0 | 0/0 |  |
+| 24 | Harvey Araujo | CB | 22 | England | 579 k€ | 6,64 | 0 | 0 | 0/0 |  |
+| 26 | Finn Delap | CB | 21 | England | 302 k€ | 7,37 | 3 | 0 | 1/0 |  |
 | 31 | Joe Lewis | CB | 27 | Wales | 193 k€ | 6,56 | 0 | 0 | 1/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 3 | Jack Armer | LWB,LM,CB,LB | 25 | Scotland | 346 k€ | 7,38 | 3 | 1 | 2/0 |  |
-| 4 | Kgaogelo Chauke | CDM,CM,CAM | 23 | England | 330 k€ | 7,04 | 1 | 0 | 0/0 |  |
-| 8 | Charlie Webster | CAM,CM,CDM | 22 | England | 695 k€ | 7,12 | 1 | 0 | 0/0 |  |
-| 12 | George Evans | CDM,CM,CB | 31 | England | 151 k€ | 7,14 | 1 | 0 | 1/0 |  |
-| 14 | William Collar | CM,CDM,CAM | 29 | England | 154 k€ | 6,40 | 0 | 0 | 1/0 |  |
-| 15 | Kyran Lofthouse | RWB,RM,CAM | 25 | England | 351 k€ | 7,02 | 0 | 3 | 1/0 |  |
-| 17 | Raphael Borges Rodrigues | RWB,LW,LWB,ST,CAM,RM | 23 | Australia | 887 k€ | 6,79 | 0 | 0 | 0/0 |  |
-| 18 | Caylan Vickers | CAM,ST,LW | 21 | England | 271 k€ | 6,93 | 1 | 1 | 0/0 |  |
-| 23 | Emeka Adiele | LW,LB,LWB,CAM,LM | 19 | England | 270 k€ | 6,43 | 0 | 0 | 0/0 |  |
-| 25 | Ciaran Gilligan | CDM | 24 | England | 192 k€ | – | 0 | 0 | 0/0 |  |
-| 41 | Sulyman Krubally | CDM,CAM | 18 | England | 740 k€ | 6,93 | 0 | 2 | 4/0 |  |
+| 3 | Jack Armer | LWB,LM,CB,LB | 25 | Scotland | 537 k€ | 7,33 | 3 | 1 | 2/0 |  |
+| 4 | Kgaogelo Chauke | CDM,CM,CAM | 23 | England | 479 k€ | 6,97 | 1 | 0 | 0/0 |  |
+| 8 | Charlie Webster | CAM,CM,CDM | 22 | England | 650 k€ | 7,05 | 1 | 0 | 0/0 |  |
+| 12 | George Evans | CDM,CM,CB | 31 | England | 210 k€ | 6,94 | 1 | 0 | 1/0 |  |
+| 14 | William Collar | CM,CDM,CAM | 29 | England | 154 k€ | 6,37 | 0 | 0 | 1/0 |  |
+| 15 | Kyran Lofthouse | RWB,RM,CAM | 25 | England | 536 k€ | 7,02 | 0 | 3 | 1/0 |  |
+| 17 | Raphael Borges Rodrigues | RWB,LW,LWB,ST,CAM,RM | 23 | Australia | 868 k€ | 6,69 | 0 | 0 | 0/0 |  |
+| 18 | Caylan Vickers | CAM,ST,LW | 21 | England | 322 k€ | 6,97 | 1 | 2 | 0/0 |  |
+| 23 | Emeka Adiele | LW,LB,LWB,LM,CAM | 19 | England | 323 k€ | 6,43 | 0 | 0 | 0/0 |  |
+| 25 | Ciaran Gilligan | CDM | 24 | England | 230 k€ | – | 0 | 0 | 0/0 |  |
+| 41 | Sulyman Krubally | CDM,CAM | 18 | England | 749 k€ | 6,93 | 0 | 2 | 4/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 9 | Gbemi Arubi | ST | 22 | Ireland | 206 k€ | – | 0 | 0 | 0/0 |  |
-| 10 | Mark O'Mahony | ST | 21 | Ireland | 495 k€ | – | 0 | 0 | 0/0 |  |
-| 19 | Matthew Dennis | ST,CAM | 24 | England | 346 k€ | 6,53 | 1 | 0 | 1/0 |  |
-| 29 | Kain Adom | ST,RW,LW | 25 | England | 237 k€ | 5,96 | 0 | 0 | 0/0 |  |
+| 9 | Gbemi Arubi | ST | 22 | Ireland | 247 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Mark O'Mahony | ST | 21 | Ireland | 490 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | Matthew Dennis | ST,CAM | 24 | England | 417 k€ | 6,44 | 1 | 0 | 1/0 |  |
+| 29 | Kain Adom | ST,RW,LW | 25 | England | 249 k€ | 5,95 | 0 | 0 | 0/0 |  |
 | 40 | Zac Scutt | ST | 18 | England | – | 6,09 | 0 | 0 | 0/0 |  |
 | 52 | Miles Henry | Attacker | 23 | England | – | – | 0 | 0 | 0/0 |  |
 

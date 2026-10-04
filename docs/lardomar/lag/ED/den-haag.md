@@ -1,11 +1,13 @@
 # Den Haag (Eredivisie) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [ED](../../ligor/ED.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [ED](../../ligor/ED.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Senaste 8: otur med −0,66 poäng per match mot xP. Marknaden prisar redan in det i ligan (ingen bekräftad effekt), så det är inget spel i sig.
 - Stark historik mot Feyenoord (+0,91 p/match mot marknaden, 6 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Efter landslagsuppehåll: 0,79 poäng per match mot 1,02 annars (3-2-9 på 14 matcher), mot marknaden −0,29 mot +0,08. Sämre än vanligt, men få matcher: i hela ligan är effekten +0,00 mot marknaden.
+- Svårt för: Ajax (0-0-6, 0,00 p/match, mot marknaden −0,20), AZ Alkmaar (1-1-5, 0,57 p/match, mot marknaden +0,00), Groningen (1-1-4, 0,67 p/match, mot marknaden −0,48), Utrecht (1-1-4, 0,67 p/match, mot marknaden −0,00). Där marknaden ligger nära noll är laget bara sämre i de mötena än annars, och oddsen vet redan om det.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -29,6 +31,35 @@ Form (äldst → senast): FFFFOFFO · senaste match 2026-09-19
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
 
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 14 | 3-2-9 | 0,79 | −0,29 |
+| Efter uppehåll sedan 2023 | 0 | – | – | – |
+| Övriga matcher | 121 | 30-34-57 | 1,02 | +0,08 |
+
+Hela ligan efter uppehåll: +0,00 mot marknaden (n 573). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2021-04-04 | Den Haag - Utrecht | 1-4 F | −0,44 |
+| 2020-11-22 | Sparta Rotterdam - Den Haag | 6-0 F | −0,97 |
+| 2020-10-18 | Den Haag - Vitesse | 0-2 F | −0,73 |
+| 2019-11-23 | Den Haag - Willem II | 3-3 O | −0,32 |
+| 2019-10-20 | Zwolle - Den Haag | 3-1 F | −1,43 |
+| 2019-09-15 | Feyenoord - Den Haag | 3-2 F | −0,61 |
+| 2019-03-30 | Den Haag - Vitesse | 3-3 O | −0,01 |
+| 2018-11-24 | Zwolle - Den Haag | 2-3 V | +1,83 |
+| 2018-10-21 | VVV Venlo - Den Haag | 2-0 F | −1,55 |
+| 2018-09-15 | Den Haag - PSV Eindhoven | 0-7 F | −0,65 |
+| 2018-03-31 | Den Haag - AZ Alkmaar | 0-3 F | −0,78 |
+| 2017-11-19 | Den Haag - Heracles | 4-1 V | +1,47 |
+| 2017-10-15 | Den Haag - Excelsior | 1-2 F | −1,49 |
+| 2017-09-09 | Willem II - Den Haag | 1-2 V | +1,64 |
+
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
 | Motståndare | M | V-O-F | Mål | Mot marknaden | Kryss mot odds | Senast |
@@ -51,46 +82,48 @@ Form (äldst → senast): FFFFOFFO · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): Ajax 0,00 p/match (−0,20), AZ Alkmaar 0,57 p/match (+0,00), Groningen 0,67 p/match (−0,48), Utrecht 0,67 p/match (−0,00).
+
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Robin Peter. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Cameron Peupion (skadad, åter Late September 2026)
+**Skadade/borta nu:** Cameron Peupion (skadad, åter Day to day)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Kilian Nikièma | GK | 23 | Burkina Faso | 942 k€ | 6,78 | 0 | 0 | 0/0 |  |
+| 1 | Kilian Nikièma | GK | 23 | Burkina Faso | 1,0 M€ | 6,78 | 0 | 0 | 0/0 |  |
 | 20 | Caleb Kramer | Keeper | 20 | Netherlands | – | – | 0 | 0 | 0/0 |  |
-| 23 | Niclas Thiede | GK | 27 | Germany | 237 k€ | – | 0 | 0 | 0/0 |  |
+| 23 | Niclas Thiede | GK | 27 | Germany | 412 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 |  | Sky Heesen | Defender | 20 | Netherlands | – | – | 0 | 0 | 0/0 |  |
-| 2 | Othniël Raterink | RB | 20 | Netherlands | 1,7 M€ | 6,44 | 0 | 0 | 0/0 |  |
-| 3 | Pascal Mulder | CB | 27 | Netherlands | 230 k€ | 6,57 | 0 | 0 | 1/0 |  |
-| 4 | Matteo Waem | CB | 26 | Belgium | 759 k€ | 6,52 | 0 | 0 | 1/0 |  |
-| 5 | Jonas Jensen-Abbew | CB | 24 | Denmark | 768 k€ | 6,36 | 0 | 0 | 0/0 |  |
-| 15 | Milan Hokke | CB,LB,RB | 22 | Netherlands | 450 k€ | 6,71 | 0 | 1 | 0/0 |  |
-| 18 | Sékou Sylla | LB,LW | 27 | Guinea | 369 k€ | 6,20 | 1 | 0 | 1/0 |  |
-| 22 | Lasse Wilhelm | CB | 23 | Germany | 665 k€ | 6,32 | 0 | 0 | 0/0 |  |
-| 35 | Sanyika Bergtop | LB | 19 | Suriname | 631 k€ | – | 0 | 0 | 0/0 |  |
+| 2 | Othniël Raterink | RB | 20 | Netherlands | 1,5 M€ | 6,44 | 0 | 0 | 0/0 |  |
+| 3 | Pascal Mulder | CB | 27 | Netherlands | 332 k€ | 6,57 | 0 | 0 | 1/0 |  |
+| 4 | Matteo Waem | CB | 26 | Belgium | 842 k€ | 6,52 | 0 | 0 | 1/0 |  |
+| 5 | Jonas Jensen-Abbew | CB | 24 | Denmark | 805 k€ | 6,36 | 0 | 0 | 0/0 |  |
+| 15 | Milan Hokke | CB,LB,RB | 22 | Netherlands | 515 k€ | 6,71 | 0 | 1 | 0/0 |  |
+| 18 | Sékou Sylla | LB,LW | 27 | Guinea | 521 k€ | 6,20 | 1 | 0 | 1/0 |  |
+| 22 | Lasse Wilhelm | CB | 23 | Germany | 585 k€ | 6,32 | 0 | 0 | 0/0 |  |
+| 35 | Sanyika Bergtop | LB | 19 | Suriname | 841 k€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 8 | Jan Žambůrek | CM,CDM | 25 | Czechia | 563 k€ | 6,32 | 0 | 0 | 0/0 |  |
-| 11 | Evan Rottier | CAM,ST,CM,LW | 24 | Netherlands | 436 k€ | 6,86 | 1 | 2 | 2/0 |  |
-| 14 | Mylian Jiménez | CDM,CM,CAM | 23 | Netherlands | 366 k€ | 6,70 | 0 | 0 | 1/0 |  |
-| 16 | Finn de Bruin | CM | 22 | Netherlands | 359 k€ | 6,54 | 0 | 1 | 1/0 |  |
-| 17 | Jalen Hawkings | RW,CM | 25 | USA | 375 k€ | 6,28 | 0 | 0 | 1/0 |  |
+| 8 | Jan Žambůrek | CM,CDM | 25 | Czechia | 565 k€ | 6,32 | 0 | 0 | 0/0 |  |
+| 11 | Evan Rottier | CAM,ST,CM,LW | 24 | Netherlands | 557 k€ | 6,86 | 1 | 2 | 2/0 |  |
+| 14 | Mylian Jiménez | CDM,CM,CAM | 23 | Netherlands | 527 k€ | 6,70 | 0 | 0 | 1/0 |  |
+| 16 | Finn de Bruin | CM | 22 | Netherlands | 361 k€ | 6,54 | 0 | 1 | 1/0 |  |
+| 17 | Jalen Hawkings | RW,CM | 25 | USA | 512 k€ | 6,28 | 0 | 0 | 1/0 |  |
 | 25 | Juho Kilo | CDM,CM | 24 | Finland | 1,1 M€ | 7,01 | 0 | 1 | 2/0 |  |
-| 33 | Matěj Sín | CM,CAM,RW | 22 | Czechia | 2,5 M€ | 6,87 | 0 | 0 | 0/0 |  |
+| 33 | Matěj Sín | CM,CAM,RW | 22 | Czechia | 3,8 M€ | 6,87 | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-|  | Alex Pozo | RW,RB | 27 | Spain | 914 k€ | – | 0 | 0 | 0/0 |  |
-| 7 | Daryl van Mieghem | RW,RM | 36 | Netherlands | 159 k€ | 6,21 | 0 | 0 | 0/0 |  |
-| 9 | Jesse Bal | ST | 19 | Netherlands | 919 k€ | 6,23 | 1 | 0 | 0/0 |  |
-| 10 | Illaijh de Ruijter | RW,LW | 20 | Netherlands | 1,0 M€ | 6,09 | 0 | 0 | 0/0 |  |
-| 19 | Luka Reischl | ST | 22 | Austria | 1,2 M€ | 6,23 | 0 | 0 | 0/0 |  |
-| 21 | Cameron Peupion | LW,RW | 24 | Australia | 549 k€ | – | 0 | 0 | 0/0 | skadad, åter Late September 2026 |
-| 27 | Nigel Thomas | LW,RW,LM | 25 | Netherlands | 303 k€ | 6,73 | 1 | 1 | 1/0 |  |
+|  | Alex Pozo | RW,RB | 27 | Spain | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 7 | Daryl van Mieghem | RW,RM | 36 | Netherlands | 229 k€ | 6,21 | 0 | 0 | 0/0 |  |
+| 9 | Jesse Bal | ST | 20 | Netherlands | 950 k€ | 6,23 | 1 | 0 | 0/0 |  |
+| 10 | Illaijh de Ruijter | LW,RW | 20 | Netherlands | 884 k€ | 6,09 | 0 | 0 | 0/0 |  |
+| 19 | Luka Reischl | ST | 22 | Austria | 1,1 M€ | 6,23 | 0 | 0 | 0/0 |  |
+| 21 | Cameron Peupion | LW,RW | 24 | Australia | 524 k€ | – | 0 | 0 | 0/0 | skadad, åter Day to day |
+| 27 | Nigel Thomas | LW,RW,LM | 25 | Netherlands | 353 k€ | 6,73 | 1 | 1 | 1/0 |  |
 | 32 | Dani van Leonen | Attacker | 19 | Netherlands | – | – | 0 | 0 | 0/0 |  |
-| 46 | Yannick Eduardo | ST | 20 | Czechia | 695 k€ | 6,69 | 2 | 1 | 0/0 |  |
-| 77 | Donat Barany | ST | 26 | Hungary | 805 k€ | 6,35 | 1 | 0 | 0/0 |  |
+| 46 | Yannick Eduardo | ST | 20 | Czechia | 1,3 M€ | 6,69 | 2 | 1 | 0/0 |  |
+| 77 | Donat Barany | ST | 26 | Hungary | 820 k€ | 6,35 | 1 | 0 | 0/0 |  |
 
 Har lämnat truppen sedan vi började spara (5): Mees Kreekels (senast 2026-09-29), Devyn Payne (senast 2026-09-29), Issac Dijkhuizen (senast 2026-09-29), Jaynilson Geoffery (senast 2026-09-29), Joey Brandt (senast 2026-09-29).

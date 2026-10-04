@@ -1,16 +1,16 @@
 # Åtvidaberg (Div 1 Södra) – lärdomar
 
-Genererad 2026-09-29. Ligans fil: [SE3S](../../ligor/SE3S.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-10-04. Ligans fil: [SE3S](../../ligor/SE3S.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
-Form senaste 8 (äldst → senast): VVFOVFVV · senaste match 2026-09-26
+Form senaste 8 (äldst → senast): VFOVFVVO · senaste match 2026-10-03
 
 ## Säsonger
 
 | Säsong | M | P/M | Hemma P/M | Borta P/M | Kryss | Mål för–emot | Över 2,5 |
 |---|---|---|---|---|---|---|---|
-| 2026/27 | 24 | 1,88 | 2,42 | 1,33 | 25 % | 2,00–1,42 | 75 % |
+| 2026/27 | 25 | 1,84 | 2,31 | 1,33 | 28 % | 1,96–1,40 | 72 % |
 
 ## Inbördes möten
 
@@ -23,12 +23,13 @@ Form senaste 8 (äldst → senast): VVFOVFVV · senaste match 2026-09-26
 | Laholm | 2 | 2-0-0 | 5–2 | 2026-09-26 2-1 (b) |
 | Lund | 2 | 1-0-1 | 1–2 | 2026-09-19 1-0 (h) |
 | Skövde AIK | 2 | 1-1-0 | 2–1 | 2026-08-16 2-1 (h) |
+| Trollhättan | 2 | 0-2-0 | 4–4 | 2026-10-03 1-1 (h) |
 | Tvååker | 2 | 1-1-0 | 4–3 | 2026-08-08 2-1 (b) |
 | Ängelholm | 2 | 1-1-0 | 6–3 | 2026-08-22 4-1 (h) |
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (Transfermarkt, hämtad 2026-09-29)
+## Trupp (Transfermarkt, hämtad 2026-10-04)
 
 Tränare: Dennis Bilanovic. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 

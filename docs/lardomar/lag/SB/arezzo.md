@@ -1,6 +1,6 @@
 # Arezzo (Serie B) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [SB](../../ligor/SB.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [SB](../../ligor/SB.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
@@ -36,7 +36,7 @@ Form (äldst → senast): VFFVF · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Cristian Bucchi. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -44,35 +44,35 @@ Tränare: Cristian Bucchi. Betyg, mål och assist gäller innevarande säsong en
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
 | 1 | Luca Trombini | Keeper | 25 | Italy | 270 k€ | – | 0 | 0 | 0/0 |  |
-| 14 | Alessandro Nunziante | GK | 19 | Italy | 2,2 M€ | 6,10 | 0 | 0 | 0/0 |  |
+| 14 | Alessandro Nunziante | GK | 19 | Italy | 2,0 M€ | 6,11 | 0 | 0 | 0/0 |  |
 | 22 | Francesco Serban | Keeper | 18 | Romania | – | – | 0 | 0 | 0/0 |  |
-| 90 | Andrea Seculin | GK | 36 | Italy | 142 k€ | – | 0 | 0 | 0/0 |  |
+| 90 | Andrea Seculin | GK | 36 | Italy | 156 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 |  | Gian Marco Ferrari | CB | 34 | Italy | 119 k€ | – | 0 | 0 | 0/0 |  |
 | 2 | Marlon Mena | Defender | 19 | Dominican Republic | – | – | 0 | 0 | 0/0 |  |
-| 4 | Mauro Coppolaro | CB | 29 | Italy | 168 k€ | 6,64 | 0 | 0 | 0/0 |  |
-| 5 | Julián Illanes | CB | 29 | Argentina | 732 k€ | 5,71 | 0 | 0 | 0/1 |  |
-| 6 | Alessandro Renzi | RB | 22 | Italy | 464 k€ | 6,49 | 0 | 0 | 0/0 |  |
-| 13 | Matteo Gilli | CB | 29 | Italy | 168 k€ | 6,16 | 0 | 0 | 1/0 |  |
-| 19 | Marco Chiosa | CB | 32 | Italy | 190 k€ | – | 0 | 0 | 0/0 |  |
+| 4 | Mauro Coppolaro | CB | 29 | Italy | 167 k€ | 6,64 | 0 | 0 | 0/0 |  |
+| 5 | Julián Illanes | CB | 29 | Argentina | 841 k€ | 5,71 | 0 | 0 | 0/1 |  |
+| 6 | Alessandro Renzi | RB | 22 | Italy | 456 k€ | 6,49 | 0 | 0 | 0/0 |  |
+| 13 | Matteo Gilli | CB | 29 | Italy | 195 k€ | 6,16 | 0 | 0 | 1/0 |  |
+| 19 | Marco Chiosa | CB | 32 | Italy | 174 k€ | – | 0 | 0 | 0/0 |  |
 | 26 | Filippo De Col | RWB | 32 | Italy | 168 k€ | – | 0 | 0 | 0/0 |  |
-| 32 | Andrea Cagnano | LB | 28 | Italy | 250 k€ | 5,92 | 0 | 0 | 0/0 |  |
-| 33 | Davide Mancini | CB | 21 | Italy | 227 k€ | – | 0 | 0 | 0/0 |  |
-| 37 | Samuele Righetti | LB | 24 | Italy | 524 k€ | 6,65 | 0 | 1 | 0/0 |  |
+| 32 | Andrea Cagnano | LB | 28 | Italy | 301 k€ | 5,92 | 0 | 0 | 0/0 |  |
+| 33 | Davide Mancini | CB | 21 | Italy | 195 k€ | – | 0 | 0 | 0/0 |  |
+| 37 | Samuele Righetti | LB | 24 | Italy | 644 k€ | 6,65 | 0 | 1 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 7 | Kevin Leone | Midfielder | 21 | Italy | 772 k€ | 6,50 | 0 | 0 | 0/0 |  |
+| 7 | Kevin Leone | Midfielder | 21 | Italy | 708 k€ | 6,50 | 0 | 0 | 0/0 |  |
 | 8 | Shaka Mawuli | CM | 28 | Ghana | – | 6,51 | 0 | 0 | 1/0 |  |
-| 16 | Mattia Sala | CM | 21 | Italy | 602 k€ | 6,83 | 0 | 0 | 1/0 |  |
-| 17 | Artur Ioniţă | CM | 36 | Moldova | 199 k€ | 6,68 | 1 | 0 | 2/0 |  |
-| 23 | Mattia Viviani | CM | 26 | Italy | 274 k€ | 6,47 | 0 | 0 | 1/0 |  |
-| 24 | Luca Chierico | CM | 25 | Italy | 345 k€ | 6,48 | 0 | 0 | 0/0 |  |
+| 16 | Mattia Sala | CM | 21 | Italy | 662 k€ | 6,83 | 0 | 0 | 1/0 |  |
+| 17 | Artur Ioniţă | CM | 36 | Moldova | 327 k€ | 6,68 | 1 | 0 | 2/0 |  |
+| 23 | Mattia Viviani | CM | 26 | Italy | 355 k€ | 6,47 | 0 | 0 | 1/0 |  |
+| 24 | Luca Chierico | CM | 25 | Italy | 527 k€ | 6,48 | 0 | 0 | 0/0 |  |
 | 47 | Aleandro Manes | Midfielder | 20 | Italy | – | – | 0 | 0 | 0/0 |  |
-| 78 | Gennaro Iaccarino | CM | 23 | Italy | 285 k€ | 7,07 | 0 | 0 | 1/0 |  |
+| 78 | Gennaro Iaccarino | CM | 23 | Italy | 389 k€ | 7,07 | 0 | 0 | 1/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 9 | Alberto Cerri | ST | 30 | Italy | 438 k€ | 6,09 | 0 | 0 | 0/0 |  |
-| 10 | Emiliano Pattarello | RW | 27 | Italy | 899 k€ | 6,49 | 0 | 0 | 0/0 |  |
-| 11 | Leonardo Mancuso | ST | 34 | Italy | 249 k€ | 6,78 | 1 | 0 | 0/0 |  |
-| 21 | Camillo Tavernelli | LW,LM | 27 | Italy | 509 k€ | 6,98 | 1 | 1 | 0/0 |  |
-| 30 | Alessandro Arena | RW,RM | 26 | Italy | 250 k€ | 6,90 | 0 | 1 | 0/0 |  |
-| 71 | Pietro Cianci | ST | 30 | Italy | 314 k€ | 6,86 | 2 | 1 | 0/0 |  |
-| 99 | Marco Olivieri | LW,ST | 27 | Italy | 369 k€ | 6,66 | 0 | 0 | 0/0 |  |
+| 9 | Alberto Cerri | ST | 30 | Italy | 433 k€ | 6,09 | 0 | 0 | 0/0 |  |
+| 10 | Emiliano Pattarello | RW | 27 | Italy | 900 k€ | 6,49 | 0 | 0 | 0/0 |  |
+| 11 | Leonardo Mancuso | ST | 34 | Italy | 270 k€ | 6,78 | 1 | 0 | 0/0 |  |
+| 21 | Camillo Tavernelli | LW,LM | 27 | Italy | 642 k€ | 6,98 | 1 | 1 | 0/0 |  |
+| 30 | Alessandro Arena | RW,RM | 26 | Italy | 233 k€ | 6,90 | 0 | 1 | 0/0 |  |
+| 71 | Pietro Cianci | ST | 30 | Italy | 488 k€ | 6,86 | 2 | 1 | 0/0 |  |
+| 99 | Marco Olivieri | LW,ST | 27 | Italy | 338 k€ | 6,66 | 0 | 0 | 0/0 |  |

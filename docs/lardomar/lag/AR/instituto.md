@@ -1,11 +1,14 @@
 # Instituto (Liga Profesional) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - 2025: −0,26 poäng per match mot marknaden. Ligan visar ingen persistens, så räkna inte med att det fortsätter.
 - Stark historik mot Gimnasia L.P. (+0,69 p/match mot marknaden, 6 möten), River Plate (−0,60 p/match mot marknaden, 6 möten), Rosario Central (−0,99 p/match mot marknaden, 6 möten), Union de Santa Fe (−0,56 p/match mot marknaden, 6 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Spelstil 2026: Backar hem, Direktspel, Farlig på fasta, Stark mot fasta. Bäst mot Backar hem (+0,22, samma håll i båda halvorna men svagt), Högpress (+0,18, svagt), Lågpress (+0,08, samma håll i båda halvorna men svagt). Svårast mot Mellanpress (−0,30, samma håll i båda halvorna men svagt), Farlig på fasta (−0,22, samma håll i båda halvorna men svagt), Balanserat (−0,17, samma håll i båda halvorna men svagt). Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2026: 0,30 mål för per match (xG 0,30), 0,07 emot (xG 0,12), 5,3 hörnor.
+- Svårt för: River Plate (0-1-5, 0,17 p/match, mot marknaden −0,60), Rosario Central (0-2-4, 0,33 p/match, mot marknaden −0,99), Union de Santa Fe (1-2-3, 0,83 p/match, mot marknaden −0,56), Velez Sarsfield (2-1-5, 0,88 p/match, mot marknaden −0,34), Platense (2-1-3, 1,17 p/match, mot marknaden −0,28), San Lorenzo (2-1-3, 1,17 p/match, mot marknaden −0,19). Där marknaden ligger nära noll är laget bara sämre i de mötena än annars, och oddsen vet redan om det.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -25,6 +28,34 @@ Form (äldst → senast): VVVOVFVV · senaste match 2026-09-20
 | 2024 | AR | 41 | 1,29 | −0,20 (−0,07 / −0,34) | 20 % (32 %) | 1,22–1,17 | – | – |
 | 2025 | AR | 33 | 1,03 | −0,26 (+0,02 / −0,53) | 30 % (32 %) | 0,79–1,21 | – | – |
 | 2026 | AR | 26 | 1,65 | +0,15 (+0,50 / −0,20) | 15 % (31 %) | 1,15–0,92 | – | – |
+
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/AR.md#instituto) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2026: **Backar hem, Direktspel, Farlig på fasta, Stark mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026 | 27 | 0,30 | 0,30 | 0,07 | 0,12 | 5,3 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Backar hem | 26 | 1,23–1,04 | +0,09 | +0,22 (1,0) | −2 pe | – | ✔ samma håll |
+| Balanserat | 37 | 1,03–1,27 | −0,29 | −0,17 (−0,9) | −8 pe | – | ✔ samma håll |
+| Bollinnehav | 27 | 0,93–1,26 | −0,10 | +0,02 (0,1) | −24 pe | – | svag |
+| Kortpass | 29 | 0,76–1,10 | −0,30 | −0,18 (−0,8) | −11 pe | – | ✔ samma håll |
+| Blandat | 36 | 1,19–1,25 | −0,05 | +0,07 (0,3) | −15 pe | – | ✔ samma håll |
+| Direktspel | 25 | 1,20–1,24 | −0,02 | +0,10 (0,4) | −5 pe | – | svag |
+| Lågpress | 44 | 0,93–1,14 | −0,04 | +0,08 (0,5) | −7 pe | – | ✔ samma håll |
+| Mellanpress | 25 | 0,88–1,24 | −0,43 | −0,30 (−1,4) | −4 pe | – | ✔ samma håll |
+| Högpress | 21 | 1,52–1,29 | +0,06 | +0,18 (0,6) | −27 pe | – | svag |
+| Svag på fasta | 13 | 1,00–1,23 | −0,12 | +0,00 (0,0) | −18 pe | – | svag |
+| Medel på fasta | 36 | 0,97–1,19 | −0,17 | −0,04 (−0,2) | −12 pe | – | svag |
+| Farlig på fasta | 22 | 1,09–1,32 | −0,34 | −0,22 (−0,9) | +0 pe | – | ✔ samma håll |
+| Stark mot fasta | 23 | 0,91–1,04 | −0,20 | −0,07 (−0,3) | −11 pe | – | svag |
+| Medel mot fasta | 37 | 1,05–1,41 | −0,27 | −0,15 (−0,7) | −10 pe | – | ✔ samma håll |
+| Svag mot fasta | 8 | 1,25–1,25 | −0,00 | +0,12 (0,3) | −7 pe | – | svag |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -61,48 +92,51 @@ Form (äldst → senast): VVVOVFVV · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): River Plate 0,17 p/match (−0,60), Rosario Central 0,33 p/match (−0,99), Union de Santa Fe 0,83 p/match (−0,56), Velez Sarsfield 0,88 p/match (−0,34), Platense 1,17 p/match (−0,28), San Lorenzo 1,17 p/match (−0,19).
+
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Diego Flores. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Luca Rafaelli (skadad, åter Mid October 2026)
+**Skadade/borta nu:** Jhon Córdoba (skadad, åter Late October 2026), Luca Rafaelli (skadad, åter Mid October 2026)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 29 | Marcos Ledesma | GK | 30 | Argentina | 926 k€ | – | 0 | 0 | 0/0 |  |
-| 35 | Emanuel Sittaro | GK | 26 | Argentina | 537 k€ | – | 0 | 0 | 0/0 |  |
+| 29 | Marcos Ledesma | GK | 30 | Argentina | 860 k€ | – | 0 | 0 | 0/0 |  |
+| 35 | Emanuel Sittaro | GK | 26 | Argentina | 527 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Hernán de la Fuente | RB | 29 | Argentina | 244 k€ | – | 0 | 0 | 0/0 |  |
-| 6 | Fernando Alarcón | CB | 32 | Argentina | 775 k€ | – | 0 | 0 | 0/0 |  |
-| 22 | Agustín Massaccesi | CB | 24 | Argentina | 383 k€ | – | 0 | 0 | 0/0 |  |
+| 2 | Hernán de la Fuente | RB | 29 | Argentina | 246 k€ | – | 0 | 0 | 0/0 |  |
+| 6 | Fernando Alarcón | CB | 32 | Argentina | 863 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Agustín Massaccesi | CB | 24 | Argentina | 347 k€ | – | 0 | 0 | 0/0 |  |
 | 23 | Andrés Meli | LM | 26 | Argentina | 553 k€ | – | 0 | 0 | 0/0 |  |
-| 26 | Leonel Mosevich | CB | 29 | Argentina | 704 k€ | – | 0 | 0 | 0/0 |  |
-| 30 | Jonathan Galván | CB | 34 | Argentina | 442 k€ | – | 0 | 0 | 0/0 |  |
-| 32 | Agustín Bravo | CB | 25 | Argentina | 398 k€ | – | 0 | 0 | 0/0 |  |
+| 26 | Leonel Mosevich | CB | 29 | Argentina | 817 k€ | – | 0 | 0 | 0/0 |  |
+| 30 | Jonathan Galván | CB | 34 | Argentina | 542 k€ | – | 0 | 0 | 0/0 |  |
+| 32 | Agustín Bravo | CB | 25 | Argentina | 420 k€ | – | 0 | 0 | 0/0 |  |
 | 70 | Genaro Ordóñez | Defender | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
+| 73 | Lucas Olivera | Defender | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 3 | Diego Sosa | LM,LWB,LB | 29 | Argentina | 406 k€ | – | 0 | 0 | 0/0 |  |
-| 5 | Franco Moyano | CDM | 29 | Argentina | 570 k€ | – | 0 | 0 | 0/0 |  |
-| 8 | Jonás Acevedo | CAM | 29 | Argentina | 246 k€ | – | 0 | 0 | 0/0 |  |
-| 13 | Juan Ignacio Méndez | CDM,CM | 29 | Argentina | 434 k€ | – | 0 | 0 | 0/0 |  |
-| 14 | Wílder Viera | CM | 24 | Paraguay | 946 k€ | – | 0 | 0 | 0/0 |  |
-| 15 | Matías Gallardo | CM,CDM | 22 | Argentina | 625 k€ | – | 0 | 0 | 0/0 |  |
-| 21 | Jeremías Lázaro | CAM | 22 | Argentina | 642 k€ | – | 0 | 0 | 0/0 |  |
+| 3 | Diego Sosa | LM,LWB,LB | 29 | Argentina | 560 k€ | – | 0 | 0 | 0/0 |  |
+| 5 | Franco Moyano | CDM | 29 | Argentina | 608 k€ | – | 0 | 0 | 0/0 |  |
+| 8 | Jonás Acevedo | CAM | 29 | Argentina | 282 k€ | – | 0 | 0 | 0/0 |  |
+| 13 | Juan Ignacio Méndez | CDM,CM | 29 | Argentina | 438 k€ | – | 0 | 0 | 0/0 |  |
+| 14 | Wílder Viera | CM | 24 | Paraguay | 934 k€ | – | 0 | 0 | 0/0 |  |
+| 15 | Matías Gallardo | CM,CDM | 22 | Argentina | 623 k€ | – | 0 | 0 | 0/0 |  |
 | 27 | Augusto Coronel | Midfielder | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 44 | Giuliano Cerato | RM,RWB,RB | 28 | Argentina | 1,0 M€ | – | 0 | 0 | 0/0 |  |
-| 55 | Gustavo Abregú | CM,CDM | 29 | Argentina | 330 k€ | – | 0 | 0 | 0/0 |  |
+| 44 | Giuliano Cerato | RM,RWB,RB | 28 | Argentina | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 55 | Gustavo Abregú | CM,CDM | 29 | Argentina | 395 k€ | – | 0 | 0 | 0/0 |  |
 | 61 | Joaquín Medina | Midfielder | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 90 | Pedro Baster | Midfielder | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 7 | Nicolás Guerra | ST,LW | 27 | Chile | 352 k€ | – | 0 | 0 | 0/0 |  |
-| 9 | Facundo Suárez | ST | 32 | Argentina | 284 k€ | – | 0 | 0 | 0/0 |  |
-| 10 | Alex Luna | LW,CAM,ST,LM | 22 | Argentina | 3,8 M€ | – | 0 | 0 | 0/0 |  |
-| 11 | Matías Fonseca | ST | 25 | Uruguay | 540 k€ | – | 0 | 0 | 0/0 |  |
-| 17 | Matías Tissera | ST | 30 | Argentina | 340 k€ | – | 0 | 0 | 0/0 |  |
-| 19 | Lucas Sanseviero | RW,ST | 26 | Uruguay | 747 k€ | – | 0 | 0 | 0/0 |  |
-| 20 | Jhon Córdoba | CAM,RW,ST | 26 | Colombia | 1,0 M€ | – | 0 | 0 | 0/0 |  |
-| 25 | Lorenzo Albarracín | Attacker | 19 | Argentina | 763 k€ | – | 0 | 0 | 0/0 |  |
+| 7 | Nicolás Guerra | ST,LW | 27 | Chile | 342 k€ | – | 0 | 0 | 0/0 |  |
+| 9 | Facundo Suárez | ST | 32 | Argentina | 273 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Alex Luna | LW,CAM,ST,LM | 22 | Argentina | 4,9 M€ | – | 0 | 0 | 0/0 |  |
+| 11 | Matías Fonseca | ST | 25 | Uruguay | 525 k€ | – | 0 | 0 | 0/0 |  |
+| 17 | Matías Tissera | ST | 30 | Argentina | 377 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | Lucas Sanseviero | RW,ST | 26 | Uruguay | 737 k€ | – | 0 | 0 | 0/0 |  |
+| 20 | Jhon Córdoba | CAM,RW,ST | 26 | Colombia | 1,1 M€ | – | 0 | 0 | 0/0 | skadad, åter Late October 2026 |
+| 21 | Jeremías Lázaro | CAM,RW | 22 | Argentina | 748 k€ | – | 0 | 0 | 0/0 |  |
+| 25 | Lorenzo Albarracín | Attacker | 19 | Argentina | 742 k€ | – | 0 | 0 | 0/0 |  |
 | 72 | Luca Rafaelli | CAM | 18 | Argentina | – | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 
 Har lämnat truppen sedan vi började spara (2): Iván Erquiaga (senast 2026-09-29), Ignacio Rossi (senast 2026-09-29).

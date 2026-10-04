@@ -1,6 +1,6 @@
 # Sogndal (OBOS-ligaen) – lärdomar
 
-Genererad 2026-09-29. Ligans fil: [NO2](../../ligor/NO2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-10-04. Ligans fil: [NO2](../../ligor/NO2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -40,38 +40,38 @@ Form senaste 8 (äldst → senast): FFVOFFOF · senaste match 2026-09-20
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Luís Pimenta. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Lars Jendal | GK | 27 | Norway | 86 k€ | – | 0 | 0 | 1/0 |  |
+| 1 | Lars Jendal | GK | 27 | Norway | 85 k€ | – | 0 | 0 | 1/0 |  |
 | 24 | Kacper Bieszczad | GK | 24 | Poland | 117 k€ | – | 0 | 0 | 0/0 |  |
 | 38 | Ard Ragnar Sundal | Keeper | 18 | Norway | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 3 | Fredrik Flo | CB | 29 | Norway | 50 k€ | – | 0 | 0 | 0/0 |  |
-| 4 | Even Hovland | CB | 37 | Norway | 152 k€ | – | 3 | 1 | 2/0 |  |
+| 4 | Even Hovland | CB | 37 | Norway | 156 k€ | – | 3 | 1 | 2/0 |  |
 | 5 | Kristoffer Harrison | CB,RM | 24 | Norway | 197 k€ | – | 0 | 0 | 1/0 |  |
-| 23 | Atli Barkarson | LB,LM | 25 | Iceland | 192 k€ | – | 2 | 4 | 3/0 |  |
-| 32 | Mathias Øren | RB,CB | 20 | Norway | 333 k€ | – | 0 | 0 | 2/0 |  |
+| 23 | Atli Barkarson | LB,LM | 25 | Iceland | 195 k€ | – | 2 | 4 | 3/0 |  |
+| 32 | Mathias Øren | RB,CB | 20 | Norway | 255 k€ | – | 0 | 0 | 2/0 |  |
 | 35 | Emil Lunde Hillestad | CB,LB | 17 | Norway | – | – | 0 | 0 | 0/0 |  |
+| 88 | Rooney Onyango | RM,RB | 25 | Kenya | 160 k€ | – | 0 | 0 | 0/1 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 6 | Martin Høyland | CM,CDM,RW | 31 | Norway | 62 k€ | – | 0 | 0 | 5/0 |  |
-| 7 | Harald Woxen | CM,CDM | 18 | Norway | 2,0 M€ | – | 0 | 0 | 0/0 |  |
-| 8 | Lukas Hjelleset Gausdal | CM | 19 | Norway | 972 k€ | – | 0 | 0 | 1/0 |  |
+| 7 | Harald Woxen | CM,CDM | 18 | Norway | 1,8 M€ | – | 0 | 0 | 0/0 |  |
+| 8 | Lukas Hjelleset Gausdal | CM | 19 | Norway | 504 k€ | – | 0 | 0 | 1/0 |  |
 | 10 | Kasper Skaanes | CAM,CM,LM,LW,RW | 31 | Norway | 158 k€ | – | 5 | 9 | 2/0 |  |
-| 16 | Lūkass Vapne | CM,LW,LM,CDM | 23 | Latvia | 560 k€ | – | 2 | 3 | 2/0 |  |
+| 16 | Lūkass Vapne | CM,LW,LM,CDM | 23 | Latvia | 340 k€ | – | 2 | 3 | 2/0 |  |
 | 17 | Fábio Sturgeon | CAM | 32 | Portugal | 50 k€ | – | 0 | 0 | 3/0 |  |
-| 18 | Vegard Haugerud Hagen | RM,RW | 24 | Norway | 126 k€ | – | 0 | 0 | 0/0 |  |
-| 39 | Elias Svedal Flo | RM | 18 | Norway | 425 k€ | – | 1 | 1 | 0/0 |  |
-| 88 | Rooney Onyango | RM,RB | 25 | Kenya | 168 k€ | – | 0 | 0 | 0/1 |  |
+| 18 | Vegard Haugerud Hagen | RM,RW | 24 | Norway | 110 k€ | – | 0 | 0 | 0/0 |  |
+| 39 | Elias Svedal Flo | RM | 18 | Norway | 371 k€ | – | 1 | 1 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 9 | Kparobo Arierhi | ST | 19 | Nigeria | 663 k€ | – | 2 | 0 | 1/0 |  |
+| 9 | Kparobo Arierhi | ST | 19 | Nigeria | 538 k€ | – | 2 | 0 | 1/0 |  |
 | 11 | Emmanuel Mensah | RW | 21 | Ghana | 279 k€ | – | 0 | 0 | 0/0 |  |
-| 15 | Onni Helen | ST | 20 | Finland | 300 k€ | – | 2 | 1 | 3/0 |  |
-| 19 | Tuomas Pippola | RW,ST,RM,CDM | 21 | Finland | 285 k€ | – | 7 | 0 | 2/1 |  |
-| 20 | Preben Asp | ST | 24 | Norway | 184 k€ | – | 1 | 0 | 0/0 |  |
+| 15 | Onni Helen | ST | 20 | Finland | 274 k€ | – | 2 | 1 | 3/0 |  |
+| 19 | Tuomas Pippola | RW,ST,RM,CDM | 21 | Finland | 347 k€ | – | 7 | 0 | 2/1 |  |
+| 20 | Preben Asp | ST | 24 | Norway | 172 k€ | – | 1 | 0 | 0/0 |  |
 
 Har lämnat truppen sedan vi började spara (1): Diogo Brás (senast 2026-09-29).

@@ -1,6 +1,6 @@
 # Chance Liga (CZ) – lärdomar
 
-Genererad 2026-09-29 av `node scripts/analyze-learnings.mjs`. Ligan saknar oddshistorik (inga stängningsodds i våra källor), så signaler och kalibrering kan inte testas mot marknaden här. Alla matcher: `data/matcher/CZ.csv`.
+Genererad 2026-10-04 av `node scripts/analyze-learnings.mjs`. Ligan saknar oddshistorik (inga stängningsodds i våra källor), så signaler och kalibrering kan inte testas mot marknaden här. Alla matcher: `data/matcher/CZ.csv`.
 
 ## Lärdomar i korthet
 
@@ -16,7 +16,7 @@ Genererad 2026-09-29 av `node scripts/analyze-learnings.mjs`. Ligan saknar oddsh
 | 2025/26 | 270 | 43 % | 25 % | 33 % | 2,60 | 48 % | 49 % |
 | 2026/27 | 71 | 45 % | 21 % | 34 % | 2,83 | 58 % | 54 % |
 
-## Tabell nu (FotMob, 2026-09-29)
+## Tabell nu (FotMob, 2026-10-04)
 
 | # | Lag | M | V | O | F | Mål | +/− | P |
 |---|---|---|---|---|---|---|---|---|

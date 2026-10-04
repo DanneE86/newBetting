@@ -1,12 +1,16 @@
 # Lecce (Serie A) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [SA](../../ligor/SA.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Senaste 8: tur med +0,74 poäng per match mot xP. Marknaden prisar redan in det i ligan (ingen bekräftad effekt), så det är inget spel i sig.
 - Senaste 8: xG-målskillnaden är −0,78 per match sämre än målskillnaden.
 - Stark historik mot Roma (−0,54 p/match mot marknaden, 11 möten), Bologna (−0,73 p/match mot marknaden, 10 möten), Lazio (+0,65 p/match mot marknaden, 10 möten), Como (−0,82 p/match mot marknaden, 6 möten), Frosinone (+0,51 p/match mot marknaden, 6 möten), Venezia (+0,65 p/match mot marknaden, 6 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Efter landslagsuppehåll: 0,96 poäng per match mot 1,28 annars (4-12-9 på 25 matcher), mot marknaden −0,04 mot +0,03. Sedan 2023: 1-6-5. Ingen skillnad värd att spela på.
+- Spelstil 2025/26: Backar hem, Direktspel, Mellanpress, Farlig på fasta, Medel mot fasta. Bäst mot Balanserat (+0,21, samma håll i båda halvorna men svagt), Medel mot fasta (+0,08, svagt), Kortpass (+0,11, samma håll i båda halvorna men svagt). Svårast mot Backar hem (−0,18, samma håll i båda halvorna men svagt), Bollinnehav (−0,12, samma håll i båda halvorna men svagt), Stark mot fasta (−0,12, svagt). Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2025/26: 0,29 mål för per match (xG 0,28), 0,34 emot (xG 0,32), 4,3 hörnor.
+- Svårt för: Inter (0-1-9, 0,10 p/match, mot marknaden −0,35), Roma (0-2-9, 0,18 p/match, mot marknaden −0,54), Milan (0-3-8, 0,27 p/match, mot marknaden −0,34), Bologna (0-3-7, 0,30 p/match, mot marknaden −0,73), Juventus (0-3-7, 0,30 p/match, mot marknaden −0,29), Como (0-2-4, 0,33 p/match, mot marknaden −0,82), Napoli (1-2-7, 0,50 p/match, mot marknaden −0,08), Atalanta (2-1-7, 0,70 p/match, mot marknaden +0,01), Udinese (3-2-5, 1,10 p/match, mot marknaden −0,09), Cagliari (2-4-3, 1,11 p/match, mot marknaden −0,11), Genoa (2-3-3, 1,13 p/match, mot marknaden −0,07), Sassuolo (2-3-3, 1,13 p/match, mot marknaden −0,06), Fiorentina (3-3-4, 1,20 p/match, mot marknaden +0,27). Där marknaden ligger nära noll är laget bara sämre i de mötena än annars, och oddsen vet redan om det.
 - På Stryktipset/Europatipset streckas lagets vinst ×0,72 av vår sannolikhet (12 matcher). Folket underspelar laget: dess vinst ger streckvärde.
 
 ## Nuläge (senaste 8 ligamatcher)
@@ -34,6 +38,75 @@ Form (äldst → senast): FVVVFFVF · senaste match 2026-09-20
 | 2026/27 | SA | 5 | 1,20 | +0,19 (+0,53 / −0,03) | 0 % (25 %) | 1,00–2,00 | 1,25–2,96 | 0,55 |
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/SA.md#lecce) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2025/26: **Backar hem, Direktspel, Mellanpress, Farlig på fasta, Medel mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026/27 | 5 | 0,80 | 0,54 | 0,40 | 0,28 | 3,4 |
+| 2025/26 | 38 | 0,29 | 0,28 | 0,34 | 0,32 | 4,3 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Backar hem | 71 | 0,97–1,55 | −0,20 | −0,18 (−1,5) | +5 pe | +0 pe | ✔ samma håll |
+| Balanserat | 104 | 1,15–1,25 | +0,19 | +0,21 (1,8) | −2 pe | −2 pe | ✔ samma håll |
+| Bollinnehav | 78 | 1,04–1,59 | −0,14 | −0,12 (−1,1) | +4 pe | +1 pe | ✔ samma håll |
+| Kortpass | 67 | 1,03–1,39 | +0,09 | +0,11 (0,8) | −2 pe | +0 pe | ✔ samma håll |
+| Blandat | 90 | 0,92–1,44 | −0,08 | −0,05 (−0,5) | +3 pe | −4 pe | svag |
+| Direktspel | 96 | 1,23–1,47 | −0,05 | −0,03 (−0,2) | +3 pe | +2 pe | svag |
+| Lågpress | 69 | 0,87–1,49 | −0,05 | −0,03 (−0,2) | −6 pe | −3 pe | svag |
+| Mellanpress | 104 | 1,10–1,25 | −0,02 | +0,00 (0,0) | +6 pe | −3 pe | svag |
+| Högpress | 80 | 1,20–1,64 | +0,00 | +0,02 (0,2) | +3 pe | +4 pe | svag |
+| Svag på fasta | 74 | 1,05–1,31 | +0,01 | +0,03 (0,2) | −2 pe | −1 pe | svag |
+| Medel på fasta | 131 | 1,12–1,46 | +0,01 | +0,03 (0,3) | +4 pe | −1 pe | svag |
+| Farlig på fasta | 48 | 0,94–1,58 | −0,14 | −0,12 (−0,8) | +1 pe | +3 pe | svag |
+| Stark mot fasta | 74 | 0,88–1,14 | −0,15 | −0,12 (−1,0) | +13 pe | −10 pe | svag |
+| Medel mot fasta | 144 | 1,14–1,46 | +0,06 | +0,08 (0,9) | −2 pe | +0 pe | svag |
+| Svag mot fasta | 35 | 1,17–2,00 | −0,10 | −0,08 (−0,4) | −8 pe | +16 pe | svag |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
+
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 25 | 4-12-9 | 0,96 | −0,04 |
+| Efter uppehåll sedan 2023 | 12 | 1-6-5 | 0,75 | −0,08 |
+| Övriga matcher | 282 | 95-77-110 | 1,28 | +0,03 |
+
+Hela ligan efter uppehåll: 0,00 mot marknaden (n 652). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2026-04-06 | Lecce - Atalanta | 0-3 F | −0,79 |
+| 2025-11-23 | Lazio - Lecce | 2-0 F | −1,12 |
+| 2025-10-18 | Lecce - Sassuolo | 0-0 O | −0,27 |
+| 2025-09-14 | Atalanta - Lecce | 4-1 F | −0,72 |
+| 2025-03-29 | Lecce - Roma | 0-1 F | −0,82 |
+| 2024-11-25 | Venezia - Lecce | 0-1 V | +1,65 |
+| 2024-10-20 | Lecce - Fiorentina | 0-6 F | −1,16 |
+| 2024-09-15 | Torino - Lecce | 0-0 O | +0,79 |
+| 2024-04-01 | Lecce - Roma | 0-0 O | −0,06 |
+| 2023-11-27 | Verona - Lecce | 2-2 O | +0,34 |
+| 2023-10-23 | Udinese - Lecce | 1-1 O | +0,65 |
+| 2023-09-17 | Monza - Lecce | 1-1 O | +0,48 |
+| 2023-04-03 | Empoli - Lecce | 1-0 F | −1,59 |
+| 2022-10-02 | Lecce - Cremonese | 1-1 O | −0,69 |
+| 2022-04-02 | Lecce - Frosinone | 1-0 V | +1,22 |
+| 2021-11-20 | Frosinone - Lecce | 0-0 O | +0,53 |
+| 2021-10-16 | Ascoli - Lecce | 1-1 O | +0,05 |
+| 2021-09-10 | Benevento - Lecce | 0-0 O | +0,54 |
+| 2021-04-02 | Lecce - Salernitana | 2-0 V | +1,03 |
+| 2020-10-16 | Brescia - Lecce | 3-0 F | −1,61 |
+| 2019-11-25 | Lecce - Cagliari | 2-2 O | −0,14 |
+| 2019-10-20 | Milan - Lecce | 2-2 O | +1,25 |
+| 2019-09-16 | Torino - Lecce | 1-2 V | +2,21 |
+| 2018-10-21 | Lecce - Palermo | 1-2 F | −1,32 |
+| 2018-09-15 | Ascoli - Lecce | 1-0 F | −1,55 |
 
 ## Nyckelspelare (Understat, 2024/25–)
 
@@ -76,6 +149,8 @@ Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: s
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): Inter 0,10 p/match (−0,35), Roma 0,18 p/match (−0,54), Milan 0,27 p/match (−0,34), Bologna 0,30 p/match (−0,73), Juventus 0,30 p/match (−0,29), Como 0,33 p/match (−0,82), Napoli 0,50 p/match (−0,08), Atalanta 0,70 p/match (+0,01), Udinese 1,10 p/match (−0,09), Cagliari 1,11 p/match (−0,11), Genoa 1,13 p/match (−0,07), Sassuolo 1,13 p/match (−0,06), Fiorentina 1,20 p/match (+0,27).
+
 ## Stryktipset / Europatipset
 
 | Datum | Spel | Match | Utfall | Folket på laget | Vår procent |
@@ -93,49 +168,49 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-11-02 | Europa 2519 | Fiorentina - Lecce | 2 ✓ | 13 % | 17 % |
 | 2025-09-28 | Europa 2509 | Lecce - Bologna | X | 15 % | 20 % |
 
-## Trupp (FotMob, hämtad 2026-09-29)
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Eusebio Di Francesco. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Tiago Gabriel (osäker), Medon Berisha (skadad, åter Early October 2026), Omri Gandelman (skadad, åter About 1-2 weeks), Willem Geubbels (skadad, åter Early October 2026)
+**Skadade/borta nu:** Tiago Gabriel (osäker), Medon Berisha (osäker), Willem Geubbels (osäker)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Marco Bleve | GK | 30 | Italy | 283 k€ | – | 0 | 0 | 0/0 |  |
-| 30 | Wladimiro Falcone | GK | 31 | Italy | 2,5 M€ | 7,07 | 0 | 0 | 1/0 |  |
-| 32 | Alexandru Borbei | Keeper | 23 | Romania | 311 k€ | – | 0 | 0 | 0/0 |  |
+| 1 | Marco Bleve | GK | 30 | Italy | 548 k€ | – | 0 | 0 | 0/0 |  |
+| 30 | Wladimiro Falcone | GK | 31 | Italy | 2,8 M€ | 7,07 | 0 | 0 | 1/0 |  |
+| 32 | Alexandru Borbei | Keeper | 23 | Romania | 559 k€ | – | 0 | 0 | 0/0 |  |
 | 33 | Plamen Penev | Keeper | 18 | Bulgaria | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-|  | Sebastian Esposito | CB | 21 | Australia | 941 k€ | – | 0 | 0 | 0/0 |  |
-|  | Vernon Addo | LB | 21 | Netherlands | 642 k€ | – | 0 | 0 | 0/0 |  |
-| 2 | Ali Dembélé | CB,RWB | 22 | France | 1,0 M€ | – | 0 | 0 | 0/0 |  |
-| 3 | Corrie Ndaba | LB,CB | 26 | Ireland | 883 k€ | 5,98 | 0 | 0 | 0/0 |  |
-| 4 | Kialonda Gaspar | CB | 29 | Angola | 1,9 M€ | 6,37 | 0 | 0 | 2/0 |  |
-| 5 | Jamil Siebert | CB | 24 | Germany | 3,1 M€ | 6,59 | 0 | 0 | 1/0 |  |
-| 17 | Danilo Veiga | RB,RM | 24 | Portugal | 2,0 M€ | 6,37 | 0 | 1 | 3/0 |  |
-| 18 | Gaby Jean | CB | 26 | France | 995 k€ | – | 0 | 0 | 0/0 |  |
+|  | Sebastian Esposito | CB | 21 | Australia | 670 k€ | – | 0 | 0 | 0/0 |  |
+|  | Vernon Addo | LB | 21 | Netherlands | 874 k€ | – | 0 | 0 | 0/0 |  |
+| 2 | Ali Dembélé | CB,RWB | 22 | France | 1,4 M€ | – | 0 | 0 | 0/0 |  |
+| 3 | Corrie Ndaba | LB,CB | 26 | Ireland | 876 k€ | 5,98 | 0 | 0 | 0/0 |  |
+| 4 | Kialonda Gaspar | CB | 29 | Angola | 2,0 M€ | 6,37 | 0 | 0 | 2/0 |  |
+| 5 | Jamil Siebert | CB | 24 | Germany | 4,2 M€ | 6,59 | 0 | 0 | 1/0 |  |
+| 17 | Danilo Veiga | RB,RM | 24 | Portugal | 3,3 M€ | 6,37 | 0 | 1 | 3/0 |  |
+| 18 | Gaby Jean | CB | 26 | France | 956 k€ | – | 0 | 0 | 0/0 |  |
 | 25 | Antonino Gallo | LB | 26 | Italy | 3,0 M€ | 6,61 | 0 | 0 | 0/0 |  |
-| 31 | Elijah Scott | Defender | 20 | Germany | 594 k€ | – | 0 | 0 | 0/0 |  |
-| 36 | Marlon Ubani | Defender | 21 | Germany | 402 k€ | – | 0 | 0 | 0/0 |  |
-| 44 | Tiago Gabriel | CB | 21 | Portugal | 10,7 M€ | 7,02 | 2 | 0 | 0/0 | osäker |
+| 31 | Elijah Scott | Defender | 20 | Germany | 580 k€ | – | 0 | 0 | 0/0 |  |
+| 36 | Marlon Ubani | Defender | 21 | Germany | 570 k€ | – | 0 | 0 | 0/0 |  |
+| 44 | Tiago Gabriel | CB | 21 | Portugal | 16,7 M€ | 7,02 | 2 | 0 | 0/0 | osäker |
 | | **Mittfältare** | | | | | | | | | |
-| 8 | Sadik Fofana | CDM,CM,LW | 23 | Togo | 477 k€ | – | 0 | 0 | 0/0 |  |
-| 10 | Medon Berisha | CAM,CM | 22 | Albania | 3,9 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
-| 14 | Youssef Maleh | CM,CDM | 28 | Morocco | 928 k€ | 6,38 | 0 | 0 | 0/0 |  |
-| 16 | Omri Gandelman | CAM,CM,RW | 26 | Israel | 2,3 M€ | – | 0 | 0 | 0/0 | skadad, åter About 1-2 weeks |
-| 20 | Ivan Ilić | CM,CAM | 25 | Serbia | 7,0 M€ | 6,78 | 0 | 2 | 1/0 |  |
-| 28 | Olaf Gorter | CM | 21 | Netherlands | 421 k€ | 6,28 | 1 | 0 | 0/0 |  |
-| 29 | Lassana Coulibaly | CM,CAM,CDM,RW | 30 | Mali | 1,4 M€ | 7,22 | 2 | 1 | 0/0 |  |
+| 8 | Sadik Fofana | CDM,CM,LW | 23 | Togo | 572 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Medon Berisha | CAM,CM | 22 | Albania | 5,6 M€ | – | 0 | 0 | 0/0 | osäker |
+| 14 | Youssef Maleh | CM,CDM | 28 | Morocco | 1,1 M€ | 6,38 | 0 | 0 | 0/0 |  |
+| 16 | Omri Gandelman | CAM,CM,RW | 26 | Israel | 2,3 M€ | – | 0 | 0 | 0/0 |  |
+| 20 | Ivan Ilić | CM,CAM | 25 | Serbia | 6,0 M€ | 6,78 | 0 | 2 | 1/0 |  |
+| 28 | Olaf Gorter | CM | 21 | Netherlands | 607 k€ | 6,28 | 1 | 0 | 0/0 |  |
+| 29 | Lassana Coulibaly | CAM,CM,CDM,RW | 30 | Mali | 1,5 M€ | 7,22 | 2 | 1 | 0/0 |  |
 | 77 | Mohamed Kaba | CM,CAM | 24 | France | 1,7 M€ | 5,98 | 0 | 0 | 0/0 |  |
-| 79 | Oumar Ngom | CDM,CM | 22 | Mauritania | 1,6 M€ | 6,75 | 0 | 0 | 1/0 |  |
-| 80 | Niko Kovač | CM | 21 | Bosnia and Herzegovina | 891 k€ | – | 0 | 0 | 0/0 |  |
+| 79 | Oumar Ngom | CDM,CM | 22 | Mauritania | 2,1 M€ | 6,75 | 0 | 0 | 1/0 |  |
+| 80 | Niko Kovač | CM | 21 | Bosnia and Herzegovina | 976 k€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Amar Fatah | LW,RW,CAM,ST | 22 | Sweden | – | 6,34 | 0 | 0 | 0/0 |  |
-| 9 | Nikola Štulić | ST | 25 | Serbia | 3,8 M€ | 6,09 | 0 | 0 | 0/0 |  |
-| 11 | Konan N’Dri | LW | 25 | Ivory Coast | 954 k€ | 6,43 | 0 | 0 | 1/0 |  |
+| 9 | Nikola Štulić | ST | 25 | Serbia | 4,9 M€ | 6,09 | 0 | 0 | 0/0 |  |
+| 11 | Konan N’Dri | LW | 25 | Ivory Coast | 942 k€ | 6,43 | 0 | 0 | 1/0 |  |
 | 22 | Paco Esteban | Attacker | 20 | Spain | – | 6,15 | 0 | 0 | 0/0 |  |
 | 34 | Hjalte Laerke | RW | 19 | Denmark | – | – | 0 | 0 | 0/0 |  |
-| 50 | Santiago Pierotti | RW | 25 | Argentina | 2,5 M€ | 6,62 | 0 | 0 | 0/0 |  |
-| 69 | Willem Geubbels | ST | 25 | France | 4,8 M€ | 5,90 | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
-| 99 | Joël Monteiro | LW,LM | 27 | Switzerland | 1,9 M€ | 6,65 | 0 | 0 | 0/0 |  |
+| 50 | Santiago Pierotti | RW | 25 | Argentina | 2,6 M€ | 6,62 | 0 | 0 | 0/0 |  |
+| 69 | Willem Geubbels | ST | 25 | France | 6,4 M€ | 5,90 | 0 | 0 | 0/0 | osäker |
+| 99 | Joël Monteiro | LW,LM | 27 | Switzerland | 3,7 M€ | 6,65 | 0 | 0 | 0/0 |  |

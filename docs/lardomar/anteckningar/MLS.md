@@ -4,16 +4,16 @@ En fil per liga. Den automatiska delen visar hur tipsen gått och vad som blivit
 
 <!-- AUTO:START (skrivs om av scripts/tips-felanalys.mjs, ändra inte här) -->
 
-Uppdaterad 2026-09-28. Källor: `data/reports/pro-evaluation.json` (tipAccuracy), `data/reports/tips-backtest.json`, `data/matcher/MLS.csv`.
+Uppdaterad 2026-10-04. Källor: `data/reports/pro-evaluation.json` (tipAccuracy), `data/reports/tips-backtest.json`, `data/matcher/MLS.csv`.
 
 ### Tipsens träff (1X2, samma motor som live)
 
 | Säsong | Matcher | Träff | Väntat (tipsens procent) | Skillnad (z) | Alltid hemma | Missar: kryss / skräll | Styrs av |
 |---|---|---|---|---|---|---|---|
 | 2025/26 | 540 | 49,8 % | 49,2 % | +0,6 pe (0,3) | 44,3 % | 135 / 136 | odds |
-| 2026/27 | 388 | 49,7 % | 50,4 % | −0,7 pe (−0,3) | 45,4 % | 100 / 95 | odds |
+| 2026/27 | 404 | 50,0 % | 50,4 % | −0,4 pe (−0,2) | 46,0 % | 103 / 99 | odds |
 
-Bedömning 2026/27: inom slumpen (z −0,3). Tipsen slår att alltid tippa hemma.
+Bedömning 2026/27: inom slumpen (z −0,2). Tipsen slår att alltid tippa hemma.
 
 ### Oddsfavoriten och kryssen per säsong
 
@@ -23,14 +23,14 @@ Bedömning 2026/27: inom slumpen (z −0,3). Tipsen slår att alltid tippa hemma
 | 2023 | 521 | 47,0 % | 49,3 % | −1,0 | 29,2 % | 25,5 % | 1,9 |
 | 2024 | 522 | 46,2 % | 50,3 % | −1,9 | 24,9 % | 24,6 % | 0,1 |
 | 2025 | 540 | 49,8 % | 49,2 % | 0,3 | 25,0 % | 24,8 % | 0,1 |
-| 2026 | 388 | 49,2 % | 49,9 % | −0,3 | 25,8 % | 23,9 % | 0,9 |
+| 2026 | 404 | 49,5 % | 50,0 % | −0,2 | 25,5 % | 23,8 % | 0,8 |
 
 ### 2026: vad gick fel
 
-- Kryss: 100 av 388 (25,8 %) mot väntat 92,6 (z 0,9).
-- Hemmafavoriter vann 154 av 307 (väntat 157,4), bortafavoriter 37 av 81 (väntat 36,4), favoriter ≥ 60 % 43 av 60 (väntat 39,9).
-- Lag sämst mot oddsen (poäng mot förväntat): Columbus Crew −15,0 (26 m), CF Montreal −8,7 (26 m), Minnesota United −7,1 (26 m), Real Salt Lake −6,8 (26 m).
-- Lag bäst mot oddsen: Nashville SC +15,1 (26 m), New England Revolution +11,8 (26 m), FC Dallas +9,5 (26 m), St. Louis City +8,7 (26 m). Beskrivande: lagens avvikelse mot oddsen håller inte i sig (se ligafilen), så den används inte i tipsen.
+- Kryss: 103 av 404 (25,5 %) mot väntat 96,3 (z 0,8).
+- Hemmafavoriter vann 162 av 319 (väntat 163,8), bortafavoriter 38 av 85 (väntat 38,2), favoriter ≥ 60 % 45 av 63 (väntat 42,0).
+- Lag sämst mot oddsen (poäng mot förväntat): Columbus Crew −13,1 (27 m), Minnesota United −8,2 (27 m), Los Angeles FC −7,6 (28 m), CF Montreal −7,0 (27 m).
+- Lag bäst mot oddsen: Nashville SC +15,8 (27 m), FC Dallas +11,0 (27 m), New England Revolution +10,7 (27 m), St. Louis City +9,9 (27 m). Beskrivande: lagens avvikelse mot oddsen håller inte i sig (se ligafilen), så den används inte i tipsen.
 
 ### Vad systemet kan missa: situationer mot öppningsoddsen
 
@@ -39,9 +39,9 @@ Favoritens vinst och kryss mot oddsens förväntan. Träning = före 2023/24, ko
 | Situation | n tr / ko | Favorit tr (z) | Favorit ko (z) | Kryss tr (z) | Kryss ko (z) | Bedömning |
 |---|---|---|---|---|---|---|
 | Omgång 1–5 | 654 / 304 | −2,0 pe (−1,0) | −2,2 pe (−0,8) | +1,0 pe (0,6) | −0,8 pe (−0,3) | ingen säker effekt |
-| Jämn match (favorit < 45 %) | 1433 / 723 | +0,4 pe (0,3) | −4,0 pe (−2,2) | −0,8 pe (−0,7) | +2,0 pe (1,2) | ingen säker effekt |
-| Bortafavorit | 549 / 288 | −2,9 pe (−1,4) | +1,9 pe (0,6) | −0,8 pe (−0,4) | +0,7 pe (0,3) | ingen säker effekt |
-| Storfavorit (≥ 70 %) | 122 / 38 | +2,8 pe (0,7) | +0,9 pe (0,1) | −2,6 pe (−0,8) | −5,6 pe (−0,9) | ingen säker effekt |
+| Jämn match (favorit < 45 %) | 1433 / 730 | +0,4 pe (0,3) | −4,0 pe (−2,2) | −0,8 pe (−0,7) | +2,0 pe (1,2) | ingen säker effekt |
+| Bortafavorit | 549 / 292 | −2,9 pe (−1,4) | +1,6 pe (0,5) | −0,8 pe (−0,4) | +0,8 pe (0,3) | ingen säker effekt |
+| Storfavorit (≥ 70 %) | 122 / 39 | +2,8 pe (0,7) | −1,1 pe (−0,2) | −2,6 pe (−0,8) | −3,3 pe (−0,6) | ingen säker effekt |
 
 Oddsrörelser mot favoriten är redan inräknade när tipset bygger på de senaste oddsen (motorn läser om oddsen vid varje körning). Storfavoriters underskattning ändrar inte vilket tecken som tippas.
 

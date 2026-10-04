@@ -1,11 +1,15 @@
 # Kifisia (Super League (Grekland)) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [GR](../../ligor/GR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [GR](../../ligor/GR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Senaste 8: xG-målskillnaden är +0,51 per match bättre än målskillnaden.
 - Stark historik mot Panetolikos (−0,64 p/match mot marknaden, 7 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Efter landslagsuppehåll: 1,00 poäng per match mot 0,97 annars (2-3-4 på 9 matcher), mot marknaden −0,19 mot −0,11. Sedan 2023: 2-3-4. Ingen skillnad värd att spela på.
+- Spelstil 2025/26: Balanserat, Blandat, Mellanpress, Medel på fasta, Stark mot fasta. Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2025/26: 0,17 mål för per match (xG 0,28), 0,17 emot (xG 0,25), 4,0 hörnor.
+- Svårt för: Panetolikos (1-3-3, 0,86 p/match, mot marknaden −0,64), Asteras Tripolis (1-5-1, 1,14 p/match, mot marknaden −0,06). Där marknaden ligger nära noll är laget bara sämre i de mötena än annars, och oddsen vet redan om det.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -27,6 +31,54 @@ Form (äldst → senast): FOVOFFOV · senaste match 2026-09-19
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
 
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/GR.md#kifisia) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2025/26: **Balanserat, Blandat, Mellanpress, Medel på fasta, Stark mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026/27 | 5 | 0,00 | 0,14 | 0,20 | 0,10 | 4,4 |
+| 2025/26 | 36 | 0,17 | 0,28 | 0,17 | 0,25 | 4,0 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Balanserat | 3 | 0,67–2,00 | −0,34 | −0,36 (−0,9) | +12 pe | −20 pe | svag |
+| Bollinnehav | 2 | 1,00–0,50 | +0,57 | +0,55 (0,6) | +21 pe | +6 pe | svag |
+| Kortpass | 5 | 0,80–1,40 | +0,03 | 0,00 (0,0) | +15 pe | −9 pe | svag |
+| Lågpress | 3 | 0,33–1,00 | −0,41 | −0,44 (−1,1) | +41 pe | −48 pe | svag |
+| Mellanpress | 2 | 1,50–2,00 | +0,69 | +0,66 (0,8) | −23 pe | +49 pe | svag |
+| Medel på fasta | 3 | 0,33–1,67 | −0,74 | −0,76 (−4,8) | +8 pe | −16 pe | svag |
+| Farlig på fasta | 2 | 1,50–1,00 | +1,17 | +1,14 (2,5) | +26 pe | +1 pe | svag |
+| Stark mot fasta | 2 | 1,00–1,50 | +0,36 | +0,33 (0,3) | −29 pe | +6 pe | svag |
+| Medel mot fasta | 2 | 1,00–2,00 | +0,05 | +0,02 (0,1) | +32 pe | −7 pe | svag |
+| Svag mot fasta | 1 | 0,00–0,00 | −0,67 | −0,69 (−6,9) | +71 pe | −45 pe | svag |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
+
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 9 | 2-3-4 | 1,00 | −0,19 |
+| Efter uppehåll sedan 2023 | 9 | 2-3-4 | 1,00 | −0,19 |
+| Övriga matcher | 65 | 13-24-28 | 0,97 | −0,11 |
+
+Hela ligan efter uppehåll: 0,00 mot marknaden (n 506). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2026-04-04 | Kifisia - Panserraikos | 1-2 F | −2,00 |
+| 2025-11-23 | PAOK - Kifisia | 3-0 F | −0,56 |
+| 2025-10-19 | Asteras Tripolis - Kifisia | 2-2 O | +0,54 |
+| 2025-09-14 | Kifisia - Panathinaikos | 3-2 V | +2,42 |
+| 2024-03-30 | Volos NFC - Kifisia | 4-1 F | −1,45 |
+| 2023-12-16 | Kifisia - Giannina | 4-2 V | +1,46 |
+| 2023-11-26 | Kifisia - Asteras Tripolis | 1-3 F | −1,29 |
+| 2023-10-22 | Kifisia - OFI Crete | 0-0 O | −0,22 |
+| 2023-09-17 | Kifisia - Panserraikos | 4-4 O | −0,60 |
+
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
 | Motståndare | M | V-O-F | Mål | Mot marknaden | Kryss mot odds | Senast |
@@ -45,7 +97,9 @@ Form (äldst → senast): FOVOFFOV · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): Panetolikos 0,86 p/match (−0,64), Asteras Tripolis 1,14 p/match (−0,06).
+
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Sebastián Leto. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -54,37 +108,37 @@ Tränare: Sebastián Leto. Betyg, mål och assist gäller innevarande säsong en
 | | **Målvakter** | | | | | | | | | |
 |  | Loukas Stamellos | Keeper | 18 | Greece | – | – | 0 | 0 | 0/0 |  |
 | 1 | Filippos Roberts | Keeper | 21 | Greece | – | – | 0 | 0 | 0/0 |  |
-| 15 | Alexandros Anagnostopoulos | GK | 32 | Greece | 72 k€ | – | 0 | 0 | 0/0 |  |
-| 99 | Moisés Ramirez | GK | 26 | Ecuador | 488 k€ | 7,05 | 0 | 0 | 2/0 |  |
+| 15 | Alexandros Anagnostopoulos | GK | 32 | Greece | 50 k€ | – | 0 | 0 | 0/0 |  |
+| 99 | Moisés Ramirez | GK | 26 | Ecuador | 667 k€ | 7,05 | 0 | 0 | 2/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Konstantinos Apostolakis | RB,RM,RWB | 27 | Greece | 97 k€ | 6,63 | 0 | 0 | 1/0 |  |
-| 3 | Jon De Luis | CB | 23 | Spain | 293 k€ | 7,22 | 0 | 0 | 0/0 |  |
-| 5 | Alex Petkov | CB | 27 | Bulgaria | 324 k€ | 7,80 | 0 | 0 | 1/0 |  |
+| 2 | Konstantinos Apostolakis | RB,RM,RWB | 27 | Greece | 66 k€ | 6,63 | 0 | 0 | 1/0 |  |
+| 3 | Jon De Luis | CB | 23 | Spain | 260 k€ | 7,22 | 0 | 0 | 0/0 |  |
+| 5 | Alex Petkov | CB | 27 | Bulgaria | 325 k€ | 7,80 | 0 | 0 | 1/0 |  |
 | 21 | Nektarios Kaloskamis | CB | 19 | Greece | – | – | 0 | 0 | 0/0 |  |
-| 23 | Leroy Abanda | LB,LWB,LM,RB | 26 | France | 149 k€ | 6,59 | 0 | 0 | 1/0 |  |
-| 24 | Roshon van Eijma | CB | 28 | Curacao | 188 k€ | 5,91 | 0 | 0 | 1/1 |  |
-| 26 | Konstantinos Polykratis | LB | 20 | Greece | – | 7,21 | 0 | 1 | 0/0 |  |
+| 23 | Leroy Abanda | LB,LWB,LM,RB | 26 | France | 117 k€ | 6,59 | 0 | 0 | 1/0 |  |
+| 24 | Roshon van Eijma | CB | 28 | Curacao | 61 k€ | 5,91 | 0 | 0 | 1/1 |  |
+| 26 | Konstantinos Polykratis | LB | 20 | Greece | 263 k€ | 7,21 | 0 | 1 | 0/0 |  |
 | 27 | Georgios Zygouras | Defender | 19 | Greece | – | – | 0 | 0 | 0/0 |  |
-| 33 | Hugo Sousa | CB,RB | 34 | Portugal | 65 k€ | 6,53 | 0 | 0 | 1/0 |  |
-| 34 | Clément Jolibois | CB | 29 | France | 223 k€ | 6,79 | 0 | 1 | 1/1 |  |
-| 48 | Tiago Manso | RB | 26 | Portugal | 411 k€ | 6,36 | 0 | 0 | 2/0 |  |
+| 33 | Hugo Sousa | CB,RB | 34 | Portugal | 85 k€ | 6,53 | 0 | 0 | 1/0 |  |
+| 34 | Clément Jolibois | CB | 29 | France | 178 k€ | 6,79 | 0 | 1 | 1/1 |  |
+| 48 | Tiago Manso | RB | 26 | Portugal | 378 k€ | 6,36 | 0 | 0 | 2/0 |  |
 | 74 | Konstantinos Lampsias | Defender | 24 | Greece | 137 k€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 |  | Pavlos Mavroudis | Midfielder | 25 | Greece | 159 k€ | – | 0 | 0 | 0/0 |  |
-| 4 | Giannis Doiranlis | CM | 24 | Greece | 254 k€ | – | 0 | 0 | 0/0 |  |
-| 6 | Jorge Pombo | CAM,ST | 32 | Spain | 167 k€ | 7,68 | 2 | 0 | 0/0 |  |
-| 8 | Bernardo Martins | CM,CAM | 28 | Portugal | 304 k€ | 6,89 | 1 | 0 | 1/0 |  |
-| 10 | Gerson Sousa | RM,LW,RW,LM | 24 | Portugal | 545 k€ | 6,20 | 0 | 0 | 2/0 |  |
+| 4 | Giannis Doiranlis | CM | 24 | Greece | 264 k€ | – | 0 | 0 | 0/0 |  |
+| 6 | Jorge Pombo | CAM,ST | 32 | Spain | 221 k€ | 7,68 | 2 | 0 | 0/0 |  |
+| 8 | Bernardo Martins | CM,CAM | 28 | Portugal | 282 k€ | 6,89 | 1 | 0 | 1/0 |  |
+| 10 | Gerson Sousa | RM,LW,RW,LM | 24 | Portugal | 494 k€ | 6,20 | 0 | 0 | 2/0 |  |
 | 16 | Alexandros Pothas | CM | 19 | Greece | 277 k€ | – | 0 | 0 | 0/0 |  |
-| 17 | Konstantinos Roukounakis | CM,CDM | 25 | Greece | 252 k€ | 6,67 | 0 | 0 | 1/0 |  |
-| 19 | Imam Jagne | CM | 22 | Sweden | 241 k€ | 6,29 | 0 | 0 | 3/0 |  |
-| 20 | Michalis Patiras | RM | 22 | Greece | 169 k€ | – | 0 | 0 | 0/0 |  |
-| 31 | Ioannis Kousoulos | CDM,CM | 30 | Cyprus | 162 k€ | 6,50 | 0 | 0 | 0/0 |  |
+| 17 | Konstantinos Roukounakis | CM,CDM | 25 | Greece | 257 k€ | 6,67 | 0 | 0 | 1/0 |  |
+| 19 | Imam Jagne | CM | 23 | Sweden | 289 k€ | 6,29 | 0 | 0 | 3/0 |  |
+| 20 | Michalis Patiras | RM | 22 | Greece | 172 k€ | – | 0 | 0 | 0/0 |  |
+| 31 | Ioannis Kousoulos | CDM,CM | 30 | Cyprus | 145 k€ | 6,50 | 0 | 0 | 0/0 |  |
 | 44 | Vangelis Manganas | ST | 22 | Greece | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 7 | Jeremy Antonisse | LW,LM | 24 | Curacao | 417 k€ | 6,36 | 0 | 1 | 2/0 |  |
-| 9 | Dimitrios Theodoridis | ST | 24 | Greece | 294 k€ | 6,35 | 1 | 0 | 0/0 |  |
-| 11 | Jordi Mboula | LW,LM | 27 | Congo | 211 k€ | 6,37 | 0 | 0 | 0/0 |  |
+| 7 | Jeremy Antonisse | LW,LM | 24 | Curacao | 481 k€ | 6,36 | 0 | 1 | 2/0 |  |
+| 9 | Dimitrios Theodoridis | ST | 24 | Greece | 287 k€ | 6,35 | 1 | 0 | 0/0 |  |
+| 11 | Jordi Mboula | LW,LM | 27 | Congo | 135 k€ | 6,37 | 0 | 0 | 0/0 |  |
 | 18 | Georgios Kyriopoulos | RW | 22 | Greece | – | – | 0 | 0 | 0/0 |  |
-| 28 | Ángelo Sagal | ST,RM,RW,CAM | 33 | Chile | 93 k€ | 6,36 | 0 | 0 | 0/0 |  |
-| 72 | Apostolos Christopoulos | ST | 23 | Greece | 320 k€ | 6,40 | 0 | 0 | 0/0 |  |
+| 28 | Ángelo Sagal | ST,RM,RW,CAM | 33 | Chile | 109 k€ | 6,36 | 0 | 0 | 0/0 |  |
+| 72 | Apostolos Christopoulos | ST | 23 | Greece | 301 k€ | 6,40 | 0 | 0 | 0/0 |  |

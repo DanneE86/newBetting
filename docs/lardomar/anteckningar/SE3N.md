@@ -4,14 +4,14 @@ En fil per liga. Den automatiska delen visar hur tipsen gått och vad som blivit
 
 <!-- AUTO:START (skrivs om av scripts/tips-felanalys.mjs, ändra inte här) -->
 
-Uppdaterad 2026-09-28. Källor: `data/reports/pro-evaluation.json` (tipAccuracy), `data/reports/tips-backtest.json`, `data/matcher/SE3N.csv`.
+Uppdaterad 2026-10-04. Källor: `data/reports/pro-evaluation.json` (tipAccuracy), `data/reports/tips-backtest.json`, `data/matcher/SE3N.csv`.
 
 ### Tipsens träff (1X2, samma motor som live)
 
 | Säsong | Matcher | Träff | Väntat (tipsens procent) | Skillnad (z) | Alltid hemma | Missar: kryss / skräll | Styrs av |
 |---|---|---|---|---|---|---|---|
 | 2025/26 | 184 | 53,8 % | 52,7 % | +1,1 pe (0,3) | 47,8 % | 38 / 47 | modell (inga odds) |
-| 2026/27 | 192 | 51,6 % | 47,8 % | +3,7 pe (1,1) | 40,1 % | 41 / 52 | modell (inga odds) |
+| 2026/27 | 198 | 51,5 % | 47,8 % | +3,7 pe (1,1) | 40,4 % | 44 / 52 | modell (inga odds) |
 
 Bedömning 2026/27: inom slumpen (z 1,1). Tipsen slår att alltid tippa hemma.
 
@@ -21,7 +21,7 @@ Inga odds i historiken för ligan (tipsen följer modellen).
 
 ### 2026/27: vad gick fel
 
-- 192 spelade matcher, inga odds. Tipsen följer modellen, se tabellen ovan.
+- 198 spelade matcher, inga odds. Tipsen följer modellen, se tabellen ovan.
 
 Mer om ligan (signaler, kalibrering, Stryktipset): [ligor/SE3N.md](../ligor/SE3N.md).
 

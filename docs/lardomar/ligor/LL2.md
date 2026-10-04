@@ -1,6 +1,6 @@
 # LaLiga 2 (LL2) – lärdomar
 
-Genererad 2026-09-29 av `node scripts/analyze-learnings.mjs`. Skriv inte för hand här: egna anteckningar läggs i `docs/lardomar/anteckningar/LL2.md`.
+Genererad 2026-10-04 av `node scripts/analyze-learnings.mjs`. Skriv inte för hand här: egna anteckningar läggs i `docs/lardomar/anteckningar/LL2.md`.
 
 Underlag: 4214 matcher, säsong 2017/18 – 2026/27. Marknad = stängningsodds utan marginal (Pinnacle, annars snitt av bolagen), öppningsodds finns för 4213 matcher. xG: skott-proxy (100 % av matcherna).
 
@@ -44,8 +44,8 @@ g > 0 = favoriter vinner oftare än oddsen säger (skrällar överprissatta), h 
 
 | Bas | g (favoriter) | h (hemma) | d (kryss) | Kontroll | Används live |
 |---|---|---|---|---|---|
-| öppningsodds (Oddset, långt före avspark) | +0,042 | +0,064 | +0,081 | +0,0001 (z 0,1, n 1462) | ja |
-| stängningsodds (sen körning, Stryktipset/Europatipset) | +0,062 | +0,052 | +0,063 | +0,0001 (z 0,1, n 1462) | nej |
+| öppningsodds (Oddset, långt före avspark) | +0,042 | +0,064 | +0,081 | +0,0001 (z 0,1, n 1463) | ja |
+| stängningsodds (sen körning, Stryktipset/Europatipset) | +0,062 | +0,052 | +0,063 | +0,0001 (z 0,1, n 1463) | nej |
 
 ## Signaler mot marknaden
 
@@ -53,9 +53,9 @@ Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (
 
 | Signal | Hela perioden | Träning (< 2023/24) | Kontroll (2023/24–) | Mot öppningsodds | Oddsrörelse | Effekt p90–p10 | Bedömning |
 |---|---|---|---|---|---|---|---|
-| xG-tur (poäng − xP, senaste 8) | −0,040 (z −1,3, n 4050) | −0,047 (z −1,2, n 2612) | −0,028 (z −0,5, n 1438) | −0,058 (z −1,8, n 4049) | −0,018 (z −6,7, n 4049) | −0,063 p | ingen effekt |
-| xG-form mot målform (xGD − GD, senaste 8) | +0,046 (z 1,7, n 4050) | +0,053 (z 1,5, n 2612) | +0,036 (z 0,8, n 1438) | +0,058 (z 2,1, n 4049) | +0,012 (z 5,1, n 4049) | +0,085 p | ingen effekt |
-| Form mot marknaden (poäng − förväntat, senaste 8) | −0,057 (z −1,7, n 4050) | −0,066 (z −1,6, n 2612) | −0,040 (z −0,7, n 1438) | −0,063 (z −1,9, n 4049) | −0,007 (z −2,4, n 4049) | −0,083 p | ingen effekt |
+| xG-tur (poäng − xP, senaste 8) | −0,042 (z −1,3, n 4055) | −0,047 (z −1,2, n 2612) | −0,031 (z −0,6, n 1443) | −0,059 (z −1,8, n 4054) | −0,018 (z −6,6, n 4054) | −0,064 p | ingen effekt |
+| xG-form mot målform (xGD − GD, senaste 8) | +0,047 (z 1,7, n 4055) | +0,053 (z 1,5, n 2612) | +0,036 (z 0,8, n 1443) | +0,058 (z 2,1, n 4054) | +0,012 (z 5,1, n 4054) | +0,085 p | ingen effekt |
+| Form mot marknaden (poäng − förväntat, senaste 8) | −0,058 (z −1,8, n 4055) | −0,066 (z −1,6, n 2612) | −0,044 (z −0,8, n 1443) | −0,064 (z −1,9, n 4054) | −0,007 (z −2,3, n 4054) | −0,085 p | ingen effekt |
 | Inbördes möten mot marknaden (≥ 3 möten, 8 år) | +0,001 (z 0,0, n 1888) | +0,073 (z 1,1, n 937) | −0,095 (z −1,2, n 951) | −0,006 (z −0,1, n 1888) | −0,006 (z −1,5, n 1888) | +0,001 p | ingen effekt |
 | Inbördes möten, poängskillnad | −0,001 (z −0,0, n 1888) | +0,037 (z 1,1, n 937) | −0,048 (z −1,3, n 951) | −0,005 (z −0,2, n 1888) | −0,004 (z −2,1, n 1888) | −0,002 p | ingen effekt |
 | Inbördes möten, kryss mot förväntat | +0,010 (z 0,2, n 1888) | +0,006 (z 0,1, n 937) | +0,013 (z 0,2, n 951) | – | – | +0,006 p | ingen effekt |
@@ -84,32 +84,32 @@ Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (
 
 Inga matcher från ligan i de sparade backtesten ännu.
 
-## Tabell nu (FotMob, 2026-09-29)
+## Tabell nu (FotMob, 2026-10-04)
 
 | # | Lag | M | V | O | F | Mål | +/− | P |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Castellon | 7 | 6 | 1 | 0 | 14-2 | 12 | 19 |
-| 2 | Eibar | 7 | 6 | 0 | 1 | 15-6 | 9 | 18 |
-| 3 | Almeria | 7 | 5 | 0 | 2 | 11-4 | 7 | 15 |
-| 4 | Burgos | 7 | 4 | 2 | 1 | 11-7 | 4 | 14 |
+| 1 | Eibar | 8 | 7 | 0 | 1 | 18-7 | 11 | 21 |
+| 2 | Castellon | 7 | 6 | 1 | 0 | 14-2 | 12 | 19 |
+| 3 | Almeria | 8 | 6 | 0 | 2 | 13-5 | 8 | 18 |
+| 4 | Burgos | 8 | 4 | 2 | 2 | 12-9 | 3 | 14 |
 | 5 | Girona | 7 | 4 | 1 | 2 | 14-8 | 6 | 13 |
 | 6 | Mallorca | 7 | 4 | 1 | 2 | 8-3 | 5 | 13 |
 | 7 | Sabadell | 7 | 3 | 3 | 1 | 8-6 | 2 | 12 |
-| 8 | Oviedo | 7 | 3 | 2 | 2 | 7-4 | 3 | 11 |
+| 8 | Oviedo | 8 | 3 | 2 | 3 | 8-8 | 0 | 11 |
 | 9 | Tenerife | 7 | 3 | 2 | 2 | 8-9 | -1 | 11 |
-| 10 | Leganes | 7 | 3 | 2 | 2 | 6-7 | -1 | 11 |
+| 10 | Leganes | 8 | 3 | 2 | 3 | 6-11 | -5 | 11 |
 | 11 | Las Palmas | 7 | 3 | 1 | 3 | 10-11 | -1 | 10 |
 | 12 | Sp Gijon | 7 | 3 | 1 | 3 | 5-6 | -1 | 10 |
 | 13 | Granada | 7 | 2 | 2 | 3 | 10-11 | -1 | 8 |
 | 14 | Sociedad B | 7 | 2 | 2 | 3 | 9-10 | -1 | 8 |
-| 15 | Celta B | 7 | 2 | 2 | 3 | 8-11 | -3 | 8 |
-| 16 | Valladolid | 7 | 2 | 2 | 3 | 6-9 | -3 | 8 |
-| 17 | Andorra | 7 | 2 | 0 | 5 | 12-15 | -3 | 6 |
-| 18 | Cordoba | 7 | 2 | 0 | 5 | 10-16 | -6 | 6 |
-| 19 | Eldense | 7 | 1 | 2 | 4 | 4-9 | -5 | 5 |
-| 20 | Cadiz | 7 | 0 | 4 | 3 | 7-10 | -3 | 4 |
+| 15 | Eldense | 8 | 2 | 2 | 4 | 8-10 | -2 | 8 |
+| 16 | Celta B | 7 | 2 | 2 | 3 | 8-11 | -3 | 8 |
+| 17 | Valladolid | 7 | 2 | 2 | 3 | 6-9 | -3 | 8 |
+| 18 | Cadiz | 8 | 1 | 4 | 3 | 11-10 | 1 | 7 |
+| 19 | Andorra | 7 | 2 | 0 | 5 | 12-15 | -3 | 6 |
+| 20 | Cordoba | 7 | 2 | 0 | 5 | 10-16 | -6 | 6 |
 | 21 | Ceuta | 7 | 1 | 1 | 5 | 6-17 | -11 | 4 |
-| 22 | Albacete | 7 | 0 | 1 | 6 | 4-12 | -8 | 1 |
+| 22 | Albacete | 8 | 0 | 1 | 7 | 5-15 | -10 | 1 |
 
 Tabellhistorik (en rad per lag och dag sedan 2026-09-28): `data/ligor/LL2.json`.
 

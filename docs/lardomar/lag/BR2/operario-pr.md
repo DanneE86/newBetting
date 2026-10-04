@@ -1,17 +1,17 @@
 # Operário PR (Brasileirão Série B) – lärdomar
 
-Genererad 2026-09-29. Ligans fil: [BR2](../../ligor/BR2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-10-04. Ligans fil: [BR2](../../ligor/BR2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
-Form senaste 8 (äldst → senast): FOOVVOVO · senaste match 2026-09-26
+Form senaste 8 (äldst → senast): OOVVOVOF · senaste match 2026-10-02
 
 ## Säsonger
 
 | Säsong | M | P/M | Hemma P/M | Borta P/M | Kryss | Mål för–emot | Över 2,5 |
 |---|---|---|---|---|---|---|---|
 | 2025/26 | 38 | 1,26 | 1,74 | 0,79 | 32 % | 1,05–1,16 | 47 % |
-| 2026/27 | 30 | 1,60 | 1,73 | 1,47 | 30 % | 1,43–1,27 | 63 % |
+| 2026/27 | 31 | 1,55 | 1,73 | 1,38 | 29 % | 1,39–1,32 | 65 % |
 
 ## Inbördes möten
 
@@ -35,6 +35,7 @@ Form senaste 8 (äldst → senast): FOOVVOVO · senaste match 2026-09-26
 | Coritiba | 2 | 1-0-1 | 1–2 | 2025-08-29 1-0 (h) |
 | Ferroviária | 2 | 1-1-0 | 2–1 | 2025-11-23 2-1 (h) |
 | Fortaleza | 2 | 0-2-0 | 1–1 | 2026-08-31 1-1 (b) |
+| Juventude | 2 | 1-0-1 | 2–4 | 2026-10-02 0-3 (b) |
 | Londrina | 2 | 2-0-0 | 5–1 | 2026-09-06 2-1 (b) |
 | Náutico | 2 | 0-1-1 | 5–9 | 2026-09-15 3-3 (b) |
 | Paysandu | 2 | 1-1-0 | 2–1 | 2025-08-24 2-1 (b) |
@@ -44,7 +45,7 @@ Form senaste 8 (äldst → senast): FOOVVOVO · senaste match 2026-09-26
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Luizinho Lopes. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -53,34 +54,34 @@ Tränare: Luizinho Lopes. Betyg, mål och assist gäller innevarande säsong enl
 | | **Målvakter** | | | | | | | | | |
 | 1 | Elias Curzel | GK | 31 | Brazil | 138 k€ | – | 0 | 0 | 0/0 |  |
 | 12 | Talles | GK | 29 | Brazil | 138 k€ | – | 0 | 0 | 0/0 |  |
-| 33 | Vágner | GK | 40 | Brazil | 209 k€ | – | 0 | 0 | 0/0 |  |
-| 41 | Diego Monteiro | GK | 26 | Brazil | 136 k€ | – | 0 | 0 | 0/0 |  |
+| 33 | Vágner | GK | 40 | Brazil | 259 k€ | – | 0 | 0 | 0/0 |  |
+| 41 | Diego Monteiro | GK | 26 | Brazil | 163 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 |  | André Dantas | CB | 27 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 2 | Doka | RB | 26 | Brazil | 394 k€ | – | 0 | 0 | 0/0 |  |
-| 6 | Moraes | LB,LW | 28 | Brazil | 213 k€ | – | 0 | 0 | 0/0 |  |
-| 16 | Miranda | CB | 26 | Brazil | 577 k€ | – | 0 | 0 | 0/0 |  |
-| 22 | José Cuenú | CB | 31 | Colombia | 171 k€ | – | 0 | 0 | 0/0 |  |
-| 26 | Maguinho | RB,RM | 34 | Brazil | 276 k€ | – | 0 | 0 | 0/0 |  |
-| 27 | Gabriel Feliciano | LB | 25 | Brazil | 352 k€ | – | 0 | 0 | 0/0 |  |
-| 43 | Joseph | CB | 31 | Brazil | 195 k€ | – | 0 | 0 | 0/0 |  |
-| 44 | Klaus | CB | 32 | Brazil | 321 k€ | – | 0 | 0 | 0/0 |  |
+| 2 | Doka | RB | 26 | Brazil | 632 k€ | – | 0 | 0 | 0/0 |  |
+| 6 | Moraes | LB,LW | 29 | Brazil | 265 k€ | – | 0 | 0 | 0/0 |  |
+| 16 | Miranda | CB | 26 | Brazil | 605 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | José Cuenú | CB | 31 | Colombia | 205 k€ | – | 0 | 0 | 0/0 |  |
+| 26 | Maguinho | RB,RM | 34 | Brazil | 321 k€ | – | 0 | 0 | 0/0 |  |
+| 27 | Gabriel Feliciano | LB | 25 | Brazil | 319 k€ | – | 0 | 0 | 0/0 |  |
+| 43 | Joseph | CB | 31 | Brazil | 209 k€ | – | 0 | 0 | 0/0 |  |
+| 44 | Klaus | CB | 32 | Brazil | 323 k€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 3 | Charles | CB | 31 | Brazil | 138 k€ | – | 0 | 0 | 0/0 |  |
-| 5 | Índio | CDM,CM,CB | 33 | Brazil | 194 k€ | – | 0 | 0 | 0/0 |  |
-| 8 | Juan Zuluaga | CM | 33 | Colombia | 327 k€ | – | 0 | 0 | 0/0 |  |
+| 5 | Índio | CDM,CM,CB | 33 | Brazil | 192 k€ | – | 0 | 0 | 0/0 |  |
+| 8 | Juan Zuluaga | CM | 33 | Colombia | 325 k€ | – | 0 | 0 | 0/0 |  |
 | 10 | Boschilia | CAM,CM,RW | 30 | Brazil | 1,1 M€ | – | 0 | 0 | 0/0 |  |
-| 20 | Vinícius Diniz | CDM,CM,CAM | 27 | Brazil | 472 k€ | – | 0 | 0 | 0/0 |  |
-| 39 | Matheus Trindade | CM,CDM,CB | 30 | Brazil | 194 k€ | – | 0 | 0 | 0/0 |  |
+| 20 | Vinícius Diniz | CDM,CM,CAM | 27 | Brazil | 566 k€ | – | 0 | 0 | 0/0 |  |
+| 39 | Matheus Trindade | CM,CDM,CB | 30 | Brazil | 265 k€ | – | 0 | 0 | 0/0 |  |
 | 88 | Neto Paraíba | CM,CDM | 34 | Brazil | 192 k€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 7 | Ángel Torres | RW | 26 | Colombia | 363 k€ | – | 0 | 0 | 0/0 |  |
-| 9 | Vinícius Mingotti | ST | 26 | Brazil | 208 k€ | – | 0 | 0 | 0/0 |  |
-| 11 | Aylon | LW,RW,LM | 34 | Brazil | 308 k€ | – | 0 | 0 | 0/0 |  |
-| 14 | Hildeberto | RW,LW,RM | 30 | Cabo Verde | 228 k€ | – | 0 | 0 | 0/0 |  |
-| 25 | Caio Dantas | ST | 33 | Brazil | 234 k€ | – | 0 | 0 | 0/0 |  |
-| 30 | Pedro Vilhena | LW | 24 | Brazil | 352 k€ | – | 0 | 0 | 0/0 |  |
-| 77 | Maxwell | LW,RW,LM,ST | 31 | Brazil | 182 k€ | – | 0 | 0 | 0/0 |  |
-| 92 | Pablo | ST | 34 | Brazil | 300 k€ | – | 0 | 0 | 0/0 |  |
+| 7 | Ángel Torres | RW | 26 | Colombia | 407 k€ | – | 0 | 0 | 0/0 |  |
+| 9 | Vinícius Mingotti | ST | 26 | Brazil | 354 k€ | – | 0 | 0 | 0/0 |  |
+| 11 | Aylon | LW,RW,LM | 34 | Brazil | 313 k€ | – | 0 | 0 | 0/0 |  |
+| 14 | Hildeberto | RW,LW,RM | 30 | Cabo Verde | 246 k€ | – | 0 | 0 | 0/0 |  |
+| 25 | Caio Dantas | ST | 33 | Brazil | 246 k€ | – | 0 | 0 | 0/0 |  |
+| 30 | Pedro Vilhena | LW | 24 | Brazil | 349 k€ | – | 0 | 0 | 0/0 |  |
+| 77 | Maxwell | LW,RW,LM,ST | 31 | Brazil | 246 k€ | – | 0 | 0 | 0/0 |  |
+| 92 | Pablo | ST | 34 | Brazil | 412 k€ | – | 0 | 0 | 0/0 |  |
 
 Har lämnat truppen sedan vi började spara (18): Nicolas (senast 2026-09-29), Dudu Mosconi (senast 2026-09-29), Kayo (senast 2026-09-28), João Gabriel (senast 2026-09-29), Brenno (senast 2026-09-29), Gabriel Cardozo (senast 2026-09-28), Renan Gustavo (senast 2026-09-29), Jhow Torres (senast 2026-09-28), Jaaziel (senast 2026-09-28), Germano (senast 2026-09-28), João Victor (senast 2026-09-29), Marcos Otávio (senast 2026-09-28), Kaua Lucas (senast 2026-09-28), Jonas (senast 2026-09-28), Paulo Guilherme (senast 2026-09-28), Leonardo Erig (senast 2026-09-28), Anthony (senast 2026-09-28), Bruno Iago (senast 2026-09-28).

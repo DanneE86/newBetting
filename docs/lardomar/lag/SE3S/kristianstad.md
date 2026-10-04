@@ -1,21 +1,22 @@
 # Kristianstad (Div 1 Södra) – lärdomar
 
-Genererad 2026-09-29. Ligans fil: [SE3S](../../ligor/SE3S.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-10-04. Ligans fil: [SE3S](../../ligor/SE3S.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
-Form senaste 8 (äldst → senast): FFVFOFVV · senaste match 2026-09-25
+Form senaste 8 (äldst → senast): FVFOFVVF · senaste match 2026-10-02
 
 ## Säsonger
 
 | Säsong | M | P/M | Hemma P/M | Borta P/M | Kryss | Mål för–emot | Över 2,5 |
 |---|---|---|---|---|---|---|---|
-| 2026/27 | 24 | 1,13 | 1,08 | 1,17 | 25 % | 1,21–1,50 | 58 % |
+| 2026/27 | 25 | 1,08 | 1,00 | 1,17 | 24 % | 1,16–1,48 | 56 % |
 
 ## Inbördes möten
 
 | Motståndare | M | V-O-F | Mål | Senast |
 |---|---|---|---|---|
+| AFC Malmö | 2 | 0-1-1 | 2–3 | 2026-10-02 0-1 (h) |
 | BK Olympic | 2 | 0-0-2 | 0–3 | 2026-09-17 0-1 (h) |
 | Hässleholm | 2 | 0-0-2 | 2–5 | 2026-09-05 1-2 (b) |
 | Jönköping Södra | 2 | 0-1-1 | 0–3 | 2026-09-13 0-0 (h) |
@@ -28,7 +29,7 @@ Form senaste 8 (äldst → senast): FFVFOFVV · senaste match 2026-09-25
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (Transfermarkt, hämtad 2026-09-29)
+## Trupp (Transfermarkt, hämtad 2026-10-04)
 
 Tränare: Adam Larsson. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -40,7 +41,7 @@ Tränare: Adam Larsson. Betyg, mål och assist gäller innevarande säsong enlig
 | | **Backar** | | | | | | | | | |
 | 2 | William Klevendal | Defender | 21 | Sweden | – | – | – | – | 0/0 |  |
 | 6 | Kasper Alsén | Defender | 24 | Sweden | – | – | – | – | 0/0 |  |
-| 7 | Samuel Wikström | Defender | 23 | Sweden | – | – | – | – | 0/0 |  |
+| 7 | Samuel Wikström | Defender | 24 | Sweden | – | – | – | – | 0/0 |  |
 | 11 | Paolo Lilja | Defender | 23 | Sweden | – | – | – | – | 0/0 |  |
 | 16 | Viggo Asterman Fridman | Defender | 19 | Sweden | – | – | – | – | 0/0 |  |
 | 3 | Linus Svensson | Centre-Back | 32 | Sweden | – | – | – | – | 0/0 |  |

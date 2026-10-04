@@ -1,10 +1,11 @@
 # Chapecoense-SC (Brasileirão Série A) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [BR](../../ligor/BR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [BR](../../ligor/BR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - 2021: −0,36 poäng per match mot marknaden. Ligan visar ingen persistens, så räkna inte med att det fortsätter.
+- Svårt för: Gremio (0-2-5, 0,29 p/match, mot marknaden −0,42), Bahia (0-3-4, 0,43 p/match, mot marknaden −0,46), Internacional (1-0-5, 0,50 p/match, mot marknaden −0,31), Corinthians (1-2-4, 0,71 p/match, mot marknaden −0,12), Santos (2-1-4, 1,00 p/match, mot marknaden +0,23), Sao Paulo (2-2-3, 1,14 p/match, mot marknaden +0,27). Där marknaden ligger nära noll är laget bara sämre i de mötena än annars, och oddsen vet redan om det.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -28,6 +29,22 @@ Form (äldst → senast): OFOVFVFO · senaste match 2026-09-19
 | 2019 | BR | 38 | 0,84 | −0,05 (−0,34 / +0,24) | 29 % (26 %) | 0,82–1,37 | – | – |
 | 2021 | BR | 38 | 0,39 | −0,36 (−0,66 / −0,05) | 32 % (25 %) | 0,71–1,76 | – | – |
 | 2026 | BR | 27 | 0,67 | −0,15 (−0,28 / −0,03) | 33 % (24 %) | 1,07–1,96 | – | – |
+
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 1 | 0-0-1 | 0,00 | −0,81 |
+| Efter uppehåll sedan 2023 | 1 | 0-0-1 | 0,00 | −0,81 |
+| Övriga matcher | 291 | 73-86-132 | 1,05 | −0,00 |
+
+Hela ligan efter uppehåll: −0,04 mot marknaden (n 58). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2026-03-12 | Sao Paulo - Chapecoense-SC | 2-0 F | −0,81 |
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -55,7 +72,9 @@ Form (äldst → senast): OFOVFVFO · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): Gremio 0,29 p/match (−0,42), Bahia 0,43 p/match (−0,46), Internacional 0,50 p/match (−0,31), Corinthians 0,71 p/match (−0,12), Santos 1,00 p/match (+0,23), Sao Paulo 1,14 p/match (+0,27).
+
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Lacerda. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -65,41 +84,41 @@ Tränare: Lacerda. Betyg, mål och assist gäller innevarande säsong enligt Fot
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
 |  | Gabriel Werner | GK | 23 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 1 | Rafael Santos | GK | 37 | Brazil | 325 k€ | – | 0 | 0 | 0/0 |  |
+| 1 | Rafael Santos | GK | 37 | Brazil | 327 k€ | – | 0 | 0 | 0/0 |  |
 | 30 | Matheus | GK | 27 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 98 | Anderson | GK | 28 | Brazil | 477 k€ | – | 0 | 0 | 0/0 |  |
+| 98 | Anderson | GK | 28 | Brazil | 518 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 |  | Da Silva | Defender | 26 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 3 | Doma | CB | 28 | Brazil | 1,0 M€ | – | 0 | 0 | 0/0 |  |
-| 4 | João Paulo | CB | 29 | Brazil | 320 k€ | – | 0 | 0 | 0/0 |  |
+| 3 | Doma | CB | 28 | Brazil | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 4 | João Paulo | CB | 29 | Brazil | 304 k€ | – | 0 | 0 | 0/0 |  |
 | 5 | Heitor | RB,RM | 25 | Brazil | – | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
 | 6 | Mancha | LB | 25 | Brazil | 388 k€ | – | 0 | 0 | 0/0 |  |
-| 12 | Fernando | LB,LM,LWB,CM | 27 | Brazil | 448 k€ | – | 0 | 0 | 0/0 |  |
-| 15 | Rafael Thyere | CB | 33 | Brazil | 216 k€ | – | 0 | 0 | 0/0 |  |
+| 12 | Fernando | LB,LM,LWB,CM | 27 | Brazil | 669 k€ | – | 0 | 0 | 0/0 |  |
+| 15 | Rafael Thyere | CB | 33 | Brazil | 307 k€ | – | 0 | 0 | 0/0 |  |
 | 20 | Bruno Tubarão | RB,RWB | 31 | Brazil | – | – | 0 | 0 | 0/0 | skadad, åter A few weeks |
-| 20 | Gustavo Talles | RB | 23 | Brazil | 420 k€ | – | 0 | 0 | 0/0 |  |
+| 20 | Gustavo Talles | RB | 23 | Brazil | 440 k€ | – | 0 | 0 | 0/0 |  |
 | 21 | Kauan Faria | CB | 23 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 23 | Dudu | RB | 29 | Brazil | 344 k€ | – | 0 | 0 | 0/0 |  |
-| 25 | Victor Caetano | CB | 28 | Brazil | 566 k€ | – | 0 | 0 | 0/0 |  |
-| 91 | Bruno Pacheco | LB,LM,LWB | 34 | Brazil | 314 k€ | – | 0 | 0 | 0/0 |  |
+| 23 | Dudu | RB | 29 | Brazil | 197 k€ | – | 0 | 0 | 0/0 |  |
+| 25 | Victor Caetano | CB | 28 | Brazil | 562 k€ | – | 0 | 0 | 0/0 |  |
+| 91 | Bruno Pacheco | LB,LM,LWB | 34 | Brazil | 366 k€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 8 | Robert | CAM,RW,CM | 23 | Brazil | 1,2 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
-| 10 | Giovanni Augusto | CAM,ST | 37 | Brazil | 482 k€ | – | 0 | 0 | 0/0 |  |
+| 8 | Robert | RW,CAM,CM | 23 | Brazil | 1,2 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 10 | Giovanni Augusto | CAM,ST | 37 | Brazil | 542 k€ | – | 0 | 0 | 0/0 |  |
 | 16 | Bruno Matias | CDM | 27 | Brazil | 336 k€ | – | 0 | 0 | 0/0 |  |
-| 17 | Vinícius Balieiro | CM | 27 | Brazil | 322 k€ | – | 0 | 0 | 0/0 |  |
-| 22 | Max | LM,CM,CB,LWB,CAM | 25 | Brazil | 727 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 17 | Vinícius Balieiro | CM | 27 | Brazil | 306 k€ | – | 0 | 0 | 0/0 |  |
+| 22 | Max | LM,CM,LWB,CAM | 25 | Brazil | 727 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 26 | Everton | RB,RM,RWB | 31 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 27 | Camilo | CDM,CM | 27 | Brazil | 1,0 M€ | – | 0 | 0 | 0/0 |  |
+| 27 | Camilo | CDM,CM | 27 | Brazil | 1,4 M€ | – | 0 | 0 | 0/0 |  |
 | 55 | Rosivan | Midfielder | 26 | Brazil | – | – | 0 | 0 | 0/0 |  |
 | 77 | Dylan Borrero | RM | 24 | Colombia | 1,1 M€ | – | 0 | 0 | 0/0 |  |
-| 88 | Yago Felipe | CAM,CM,CDM | 31 | Brazil | 615 k€ | – | 0 | 0 | 0/0 |  |
-| 99 | Rafael Carvalheira | CM,CDM,RWB,RW | 27 | Brazil | – | – | 0 | 0 | 0/0 | skadad, åter Out for season |
+| 88 | Yago Felipe | CAM,CM,CDM | 31 | Brazil | 641 k€ | – | 0 | 0 | 0/0 |  |
+| 99 | Rafael Carvalheira | CDM,CM,RWB,RW | 27 | Brazil | – | – | 0 | 0 | 0/0 | skadad, åter Out for season |
 | | **Anfallare** | | | | | | | | | |
-| 7 | Marcinho | LW,ST,CAM,RW,LM | 31 | Brazil | 416 k€ | – | 0 | 0 | 0/0 |  |
-| 11 | Yannick Bolasie | ST | 37 | Congo DR | 383 k€ | – | 0 | 0 | 0/0 |  |
-| 29 | Franco Rossi | ST | 24 | Uruguay | 934 k€ | – | 0 | 0 | 0/0 |  |
-| 31 | Maurício Garcez | LW,ST | 29 | Brazil | 756 k€ | – | 0 | 0 | 0/0 |  |
-| 70 | Rubens | RW | 23 | Brazil | 603 k€ | – | 0 | 0 | 0/0 |  |
-| 94 | Kevin Ramírez | ST,RW | 32 | Uruguay | 307 k€ | – | 0 | 0 | 0/0 |  |
+| 7 | Marcinho | LW,CAM,ST,RW,LM | 31 | Brazil | 464 k€ | – | 0 | 0 | 0/0 |  |
+| 11 | Yannick Bolasie | ST | 37 | Congo DR | 435 k€ | – | 0 | 0 | 0/0 |  |
+| 29 | Franco Rossi | ST | 24 | Uruguay | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 31 | Maurício Garcez | LW,ST | 29 | Brazil | 770 k€ | – | 0 | 0 | 0/0 |  |
+| 70 | Rubens | RW | 23 | Brazil | 587 k€ | – | 0 | 0 | 0/0 |  |
+| 94 | Kevin Ramírez | ST,RW | 32 | Uruguay | 320 k€ | – | 0 | 0 | 0/0 |  |
 
 Har lämnat truppen sedan vi började spara (24): Miguel Carvalho (senast 2026-09-29), Rodrigo Endrio (senast 2026-09-29), David (senast 2026-09-29), Kainã (senast 2026-09-29), Wellington (senast 2026-09-29), Vinicius (senast 2026-09-29), Luciano (senast 2026-09-29), Iago (senast 2026-09-28), Kauê Arno (senast 2026-09-28), Gleidson (senast 2026-09-28), Miguel (senast 2026-09-28), Kauan Godoy (senast 2026-09-28), Eduardo (senast 2026-09-28), Matheus Milani (senast 2026-09-28), Talison (senast 2026-09-28), Bernardo (senast 2026-09-28), Felipe (senast 2026-09-29), Túlio (senast 2026-09-29), Yago (senast 2026-09-28), Márcio Kalebe (senast 2026-09-28), Alberto (senast 2026-09-28), Igor (senast 2026-09-28), Kássio (senast 2026-09-29), Juan (senast 2026-09-29).

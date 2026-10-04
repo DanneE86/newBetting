@@ -1,10 +1,13 @@
 # Belgrano (Liga Profesional) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Stark historik mot Tigre (−0,50 p/match mot marknaden, 9 möten), Racing Club (−0,73 p/match mot marknaden, 8 möten), Union de Santa Fe (+0,71 p/match mot marknaden, 8 möten), Banfield (+0,68 p/match mot marknaden, 7 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Spelstil 2026: Balanserat, Kortpass, Medel på fasta, Medel mot fasta. Bäst mot Svag på fasta (+0,40, samma håll i båda halvorna men svagt), Blandat (+0,18, svagt), Balanserat (+0,11, svagt). Svårast mot Högpress (−0,35, svagt), Bollinnehav (−0,19, samma håll i båda halvorna men svagt), Stark mot fasta (−0,17, samma håll i båda halvorna men svagt). Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2026: 0,27 mål för per match (xG 0,23), 0,17 emot (xG 0,18), 4,0 hörnor.
+- Svårt för: Racing Club (0-2-6, 0,25 p/match, mot marknaden −0,73), Argentinos Jrs (1-4-3, 0,88 p/match, mot marknaden −0,18), Tigre (1-5-3, 0,89 p/match, mot marknaden −0,50), Defensa y Justicia (2-2-4, 1,00 p/match, mot marknaden −0,36), Talleres Cordoba (1-7-1, 1,11 p/match, mot marknaden −0,02). Där marknaden ligger nära noll är laget bara sämre i de mötena än annars, och oddsen vet redan om det.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -33,6 +36,50 @@ Form (äldst → senast): OVVFOOOV · senaste match 2026-09-20
 | 2025 | AR | 32 | 1,16 | −0,08 (−0,35 / +0,18) | 50 % (31 %) | 0,81–1,06 | – | – |
 | 2026 | AR | 30 | 1,73 | +0,35 (+0,07 / +0,62) | 33 % (31 %) | 1,17–0,77 | – | – |
 
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/AR.md#belgrano) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2026: **Balanserat, Kortpass, Medel på fasta, Medel mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026 | 30 | 0,27 | 0,23 | 0,17 | 0,18 | 4,0 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Backar hem | 21 | 1,14–0,90 | +0,08 | +0,07 (0,3) | +20 pe | – | svag |
+| Balanserat | 42 | 1,14–1,17 | +0,11 | +0,11 (0,6) | +3 pe | – | svag |
+| Bollinnehav | 32 | 1,03–1,09 | −0,19 | −0,19 (−1,0) | +16 pe | – | ✔ samma håll |
+| Kortpass | 34 | 1,09–1,26 | −0,06 | −0,06 (−0,3) | +13 pe | – | svag |
+| Blandat | 47 | 1,23–0,98 | +0,18 | +0,18 (1,1) | +8 pe | – | svag |
+| Direktspel | 14 | 0,71–1,00 | −0,43 | −0,44 (−1,8) | +19 pe | – | ✔ samma håll |
+| Lågpress | 55 | 1,16–1,16 | +0,09 | +0,09 (0,5) | +7 pe | – | svag |
+| Mellanpress | 23 | 1,00–0,74 | +0,04 | +0,04 (0,2) | +22 pe | – | svag |
+| Högpress | 17 | 1,06–1,29 | −0,35 | −0,35 (−1,5) | +11 pe | – | svag |
+| Svag på fasta | 15 | 1,47–0,87 | +0,40 | +0,40 (1,3) | +22 pe | – | ✔ samma håll |
+| Medel på fasta | 36 | 0,97–1,22 | −0,10 | −0,11 (−0,6) | +14 pe | – | ✔ samma håll |
+| Farlig på fasta | 22 | 1,18–1,45 | −0,10 | −0,10 (−0,4) | +1 pe | – | svag |
+| Stark mot fasta | 24 | 1,04–1,08 | −0,16 | −0,17 (−0,8) | +19 pe | – | ✔ samma håll |
+| Medel mot fasta | 31 | 0,94–1,13 | −0,09 | −0,09 (−0,4) | +15 pe | – | svag |
+| Svag mot fasta | 12 | 1,58–1,67 | +0,08 | +0,07 (0,2) | +2 pe | – | svag |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
+
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 1 | 0-0-1 | 0,00 | −1,57 |
+| Efter uppehåll sedan 2023 | 0 | – | – | – |
+| Övriga matcher | 370 | 117-138-115 | 1,32 | +0,04 |
+
+Hela ligan efter uppehåll: 0,00 mot marknaden (n 66). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2012-10-20 | All Boys - Belgrano | 1-0 F | −1,57 |
+
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
 | Motståndare | M | V-O-F | Mål | Mot marknaden | Kryss mot odds | Senast |
@@ -45,9 +92,9 @@ Form (äldst → senast): OVVFOOOV · senaste match 2026-09-20
 | Union de Santa Fe | 8 | 4-4-0 | 13–4 | +0,71 | +18 pe | 2026-05-12 2-0 (h) |
 | Banfield | 7 | 4-3-0 | 11–5 | +0,68 | +11 pe | 2026-08-10 2-0 (b) |
 | Boca Juniors | 7 | 3-1-3 | 12–13 | +0,44 | −15 pe | 2025-10-18 2-1 (b) |
-| Huracan | 7 | 2-2-3 | 8–7 | −0,20 | −3 pe | 2026-09-04 1-1 (h) |
 | Central Cordoba | 6 | 2-2-2 | 6–11 | −0,21 | +3 pe | 2025-08-25 0-3 (h) |
 | Estudiantes L.P. | 6 | 2-2-2 | 6–9 | +0,25 | +2 pe | 2025-10-12 1-1 (h) |
+| Huracan | 6 | 2-2-2 | 8–6 | +0,03 | +2 pe | 2026-09-04 1-1 (h) |
 | Newells Old Boys | 6 | 2-3-1 | 5–2 | +0,20 | +18 pe | 2025-09-23 3-0 (h) |
 | Sarmiento Junin | 6 | 2-4-0 | 9–2 | +0,09 | +34 pe | 2026-09-13 1-1 (b) |
 | Atl. Tucuman | 5 | 3-1-1 | 9–6 | +0,60 | −11 pe | 2026-08-30 0-0 (b) |
@@ -68,7 +115,9 @@ Form (äldst → senast): OVVFOOOV · senaste match 2026-09-20
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): Racing Club 0,25 p/match (−0,73), Argentinos Jrs 0,88 p/match (−0,18), Tigre 0,89 p/match (−0,50), Defensa y Justicia 1,00 p/match (−0,36), Talleres Cordoba 1,11 p/match (−0,02).
+
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Ricardo Zielinski. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -78,36 +127,36 @@ Tränare: Ricardo Zielinski. Betyg, mål och assist gäller innevarande säsong 
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
 | 23 | Manuel Vicentini | GK | 36 | Argentina | 275 k€ | – | 0 | 0 | 0/0 |  |
-| 25 | Thiago Cardozo | GK | 30 | Uruguay | 1,9 M€ | – | 0 | 0 | 0/0 |  |
+| 25 | Thiago Cardozo | GK | 30 | Uruguay | 2,1 M€ | – | 0 | 0 | 0/0 |  |
 | 28 | Matías Daniele | Keeper | 22 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 60 | Santiago Ferez | Keeper | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Alexis Maldonado | CB | 29 | Argentina | 1,0 M€ | – | 0 | 0 | 0/0 |  |
-| 3 | Adrián Spörle | LB,LWB | 31 | Argentina | 383 k€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
-| 13 | Álvaro Ocampo | CB | 22 | Argentina | 620 k€ | – | 0 | 0 | 0/0 |  |
-| 14 | Leonardo Morales | CB,RB | 35 | Argentina | 637 k€ | – | 0 | 0 | 0/0 |  |
-| 16 | Federico Ricca | LB,CB | 31 | Uruguay | 367 k€ | – | 0 | 0 | 0/0 |  |
-| 17 | Lisandro López | CB | 37 | Argentina | 449 k€ | – | 0 | 0 | 0/0 |  |
-| 26 | Alcides Benítez | RB,RW,RWB | 24 | Paraguay | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| 2 | Alexis Maldonado | CB | 29 | Argentina | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 3 | Adrián Spörle | LB,LWB | 31 | Argentina | 499 k€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 13 | Álvaro Ocampo | CB | 22 | Argentina | 598 k€ | – | 0 | 0 | 0/0 |  |
+| 14 | Leonardo Morales | CB,RB | 35 | Argentina | 764 k€ | – | 0 | 0 | 0/0 |  |
+| 16 | Federico Ricca | LB,CB | 31 | Uruguay | 354 k€ | – | 0 | 0 | 0/0 |  |
+| 17 | Lisandro López | CB | 37 | Argentina | 581 k€ | – | 0 | 0 | 0/0 |  |
+| 26 | Alcides Benítez | RB,RW,RWB | 24 | Paraguay | 1,8 M€ | – | 0 | 0 | 0/0 |  |
 | 45 | Agustín Falcón | RB | 21 | Argentina | 706 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
 | 59 | Joaquín Flandes | Defender | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 5 | Santiago Longo | CDM,CM | 28 | Argentina | 1,6 M€ | – | 0 | 0 | 0/0 |  |
-| 8 | Ramiro Hernandes | LW | 21 | Argentina | 1,0 M€ | – | 0 | 0 | 0/0 |  |
-| 10 | Lucas Zelarayán | CAM,ST,CM | 34 | Armenia | 1,7 M€ | – | 0 | 0 | 0/0 |  |
+| 8 | Ramiro Hernandes | LW | 21 | Argentina | 955 k€ | – | 0 | 0 | 0/0 |  |
+| 10 | Lucas Zelarayán | CAM,ST,CM | 34 | Armenia | 1,8 M€ | – | 0 | 0 | 0/0 |  |
 | 11 | Francisco González Metilli | CDM,CM,RW,ST,LW,CAM | 29 | Argentina | 1,1 M€ | – | 0 | 0 | 0/0 |  |
 | 19 | Santino Gatti | Midfielder | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 20 | Franco Vázquez | CDM,CM,CAM | 37 | Argentina | 609 k€ | – | 0 | 0 | 0/0 |  |
-| 21 | Adrián Sánchez | CDM,CM,RM | 27 | Argentina | 2,1 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
+| 20 | Franco Vázquez | CDM,CM,CAM | 37 | Argentina | 711 k€ | – | 0 | 0 | 0/0 |  |
+| 21 | Adrián Sánchez | CDM,CM,RM | 27 | Argentina | 2,2 M€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
 | 29 | Marcos Ortiz | Midfielder | 17 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 30 | Gonzalo Zelarayán | CAM | 22 | Argentina | 532 k€ | – | 0 | 0 | 0/0 |  |
+| 30 | Gonzalo Zelarayán | CAM | 22 | Argentina | 551 k€ | – | 0 | 0 | 0/0 |  |
 | 51 | Thiago Cortés | Midfielder | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 9 | Lucas Passerini | ST | 32 | Argentina | 1,2 M€ | – | 0 | 0 | 0/0 |  |
+| 9 | Lucas Passerini | ST | 32 | Argentina | 1,3 M€ | – | 0 | 0 | 0/0 |  |
 | 15 | Ramiro Tulián | LW | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
-| 22 | Nicolás Fernández | ST | 30 | Argentina | 2,0 M€ | – | 0 | 0 | 0/0 |  |
+| 22 | Nicolás Fernández | ST | 30 | Argentina | 2,1 M€ | – | 0 | 0 | 0/0 |  |
 | 24 | Emiliano Rigoni | RW,LW,RM,RWB | 33 | Argentina | 1,0 M€ | – | 0 | 0 | 0/0 |  |
-| 37 | Lautaro Gutierrez | ST | 20 | Argentina | 662 k€ | – | 0 | 0 | 0/0 |  |
-| 53 | Juan Velázquez | LW,LM | 21 | Argentina | 1,7 M€ | – | 0 | 0 | 0/0 |  |
+| 37 | Lautaro Gutierrez | ST | 20 | Argentina | 635 k€ | – | 0 | 0 | 0/0 |  |
+| 53 | Juan Velázquez | LW,LM | 21 | Argentina | 1,6 M€ | – | 0 | 0 | 0/0 |  |
 | 58 | Agustín Bono | Attacker | 18 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 63 | Agustin Melano | Attacker | 22 | Argentina | – | – | 0 | 0 | 0/0 |  |

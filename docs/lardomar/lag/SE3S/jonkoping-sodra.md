@@ -1,22 +1,23 @@
 # Jönköping Södra (Div 1 Södra) – lärdomar
 
-Genererad 2026-09-29. Ligans fil: [SE3S](../../ligor/SE3S.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-10-04. Ligans fil: [SE3S](../../ligor/SE3S.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
-Form senaste 8 (äldst → senast): OOVFOVVF · senaste match 2026-09-26
+Form senaste 8 (äldst → senast): OVFOVVFF · senaste match 2026-10-03
 
 ## Säsonger
 
 | Säsong | M | P/M | Hemma P/M | Borta P/M | Kryss | Mål för–emot | Över 2,5 |
 |---|---|---|---|---|---|---|---|
-| 2026/27 | 24 | 1,38 | 2,17 | 0,58 | 25 % | 1,21–1,04 | 46 % |
+| 2026/27 | 25 | 1,32 | 2,00 | 0,58 | 24 % | 1,16–1,04 | 44 % |
 
 ## Inbördes möten
 
 | Motståndare | M | V-O-F | Mål | Senast |
 |---|---|---|---|---|
 | BK Olympic | 2 | 1-0-1 | 3–3 | 2026-08-09 2-0 (h) |
+| Eskilsminne | 2 | 0-1-1 | 2–3 | 2026-10-03 0-1 (h) |
 | Kristianstad | 2 | 1-1-0 | 3–0 | 2026-09-13 0-0 (b) |
 | Laholm | 2 | 1-1-0 | 2–1 | 2026-08-15 0-0 (b) |
 | Rosengård | 2 | 0-1-1 | 2–4 | 2026-08-22 0-0 (h) |
@@ -28,7 +29,7 @@ Form senaste 8 (äldst → senast): OOVFOVVF · senaste match 2026-09-26
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (Transfermarkt, hämtad 2026-09-29)
+## Trupp (Transfermarkt, hämtad 2026-10-04)
 
 Tränare: Daniel Culha. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -36,7 +37,7 @@ Tränare: Daniel Culha. Betyg, mål och assist gäller innevarande säsong enlig
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
 | 1 | Alexander Eriksson | Goalkeeper | 21 | Sweden | – | – | – | – | 0/0 |  |
-| 30 | Simon Svensson | Goalkeeper | 27 | Sweden | – | – | – | – | 0/0 |  |
+| 30 | Simon Svensson | Goalkeeper | 28 | Sweden | – | – | – | – | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 | 4 | Andreas Karlsson | Defender | 22 | Sweden | – | – | – | – | 0/0 |  |
 | 6 | Sebastian Crona | Centre-Back | 35 | Sweden | – | – | – | – | 0/0 |  |

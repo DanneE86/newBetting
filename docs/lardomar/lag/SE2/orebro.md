@@ -1,6 +1,6 @@
 # Örebro (Superettan) – lärdomar
 
-Genererad 2026-09-29. Ligans fil: [SE2](../../ligor/SE2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
+Genererad 2026-10-04. Ligans fil: [SE2](../../ligor/SE2.md). Ligan saknar oddshistorik, så inget kan mätas mot marknaden: siffrorna är beskrivande.
 
 ## Nuläge
 
@@ -38,7 +38,7 @@ Form senaste 8 (äldst → senast): FOVOFVOF · senaste match 2026-09-19
 
 Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Rikard Norling. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -46,32 +46,32 @@ Tränare: Rikard Norling. Betyg, mål och assist gäller innevarande säsong enl
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
 | 30 | Buster Runheim | GK | 19 | Sweden | 155 k€ | – | 0 | 0 | 0/0 |  |
-| 75 | Jakub Ojrzyński | GK | 23 | Poland | 111 k€ | – | 0 | 0 | 2/0 |  |
+| 75 | Jakub Ojrzyński | GK | 23 | Poland | 83 k€ | – | 0 | 0 | 2/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Alai Ghasem | RB | 23 | Iraq | 154 k€ | – | 0 | 1 | 1/0 |  |
-| 3 | Victor Sandberg | CB | 19 | Sweden | 441 k€ | – | 0 | 0 | 1/0 |  |
-| 4 | Erik McCue | CB | 25 | USA | 145 k€ | – | 0 | 0 | 0/0 |  |
-| 11 | Christopher Redenstrand | LB | 27 | Sweden | 83 k€ | – | 0 | 5 | 0/0 |  |
+| 2 | Alai Ghasem | RB | 23 | Iraq | 141 k€ | – | 0 | 1 | 1/0 |  |
+| 3 | Victor Sandberg | CB | 19 | Sweden | 460 k€ | – | 0 | 0 | 1/0 |  |
+| 4 | Erik McCue | CB | 25 | USA | 132 k€ | – | 0 | 0 | 0/0 |  |
+| 11 | Christopher Redenstrand | LB | 27 | Sweden | 112 k€ | – | 0 | 5 | 0/0 |  |
 | 12 | Dino Salihović | RB,RWB | 23 | Sweden | 83 k€ | – | 0 | 0 | 0/0 |  |
-| 15 | Lowe Astvald | CB | 21 | Sweden | 163 k€ | – | 1 | 0 | 1/0 |  |
-| 19 | Jetmir Haliti | CB | 30 | Kosovo | 120 k€ | – | 0 | 1 | 1/0 |  |
-| 20 | Max Watson | CB | 30 | Sweden | 167 k€ | – | 0 | 0 | 0/1 |  |
-| 22 | Giuseppe Bovalina | RB | 21 | Australia | 142 k€ | – | 0 | 1 | 0/0 |  |
+| 15 | Lowe Astvald | CB | 21 | Sweden | 160 k€ | – | 1 | 0 | 1/0 |  |
+| 19 | Jetmir Haliti | CB | 30 | Kosovo | 145 k€ | – | 0 | 1 | 1/0 |  |
+| 20 | Max Watson | CB | 30 | Sweden | 151 k€ | – | 0 | 0 | 0/1 |  |
+| 22 | Giuseppe Bovalina | RB | 21 | Australia | 108 k€ | – | 0 | 1 | 0/0 |  |
 | 29 | Amer Zeljkovic | Defender | 17 | Sweden | – | – | 0 | 0 | 0/0 |  |
 | 32 | John Stenberg | CB | 33 | Sweden | 50 k€ | – | 1 | 0 | 5/1 |  |
 | 45 | Neo Almkvist | Defender | 18 | Sweden | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 | 5 | Jacob Ortmark | CM,CDM | 29 | Sweden | 50 k€ | – | 0 | 1 | 2/0 |  |
-| 6 | Edwin Ibrahimbegovic | CM,CDM | 18 | Sweden | 364 k€ | – | 0 | 0 | 4/0 |  |
-| 7 | Samuel Wikman | RM,LM,CM,RW,CAM | 24 | Sweden | 144 k€ | – | 2 | 0 | 2/0 |  |
+| 6 | Edwin Ibrahimbegovic | CM,CDM | 18 | Sweden | 370 k€ | – | 0 | 0 | 4/0 |  |
+| 7 | Samuel Wikman | RM,LM,CM,RW,CAM | 24 | Sweden | 171 k€ | – | 2 | 0 | 2/0 |  |
 | 8 | Manasse Kusu | CM | 24 | Sweden | 168 k€ | – | 0 | 0 | 1/0 |  |
-| 9 | Antonio Yakoub | RM,ST,CM,RW,LM,CAM | 24 | Syria | 161 k€ | – | 6 | 3 | 5/0 |  |
-| 14 | Hasan Dana | RM,CAM,LM | 19 | Sweden | 361 k€ | – | 0 | 0 | 2/0 |  |
-| 16 | Hampus Söderström | CM,RB | 25 | Sweden | 175 k€ | – | 0 | 0 | 3/0 |  |
+| 9 | Antonio Yakoub | RM,ST,RW,LM,CM,CAM | 24 | Syria | 182 k€ | – | 6 | 3 | 5/0 |  |
+| 14 | Hasan Dana | RM,CAM,LM | 19 | Sweden | 292 k€ | – | 0 | 0 | 2/0 |  |
+| 16 | Hampus Söderström | CM,RB | 25 | Sweden | 151 k€ | – | 0 | 0 | 3/0 |  |
 | 21 | Fabian Wahlstroem | LM | 18 | Sweden | 365 k€ | – | 0 | 0 | 1/0 |  |
-| 23 | Erdal Rakip | CM | 30 | North Macedonia | 152 k€ | – | 1 | 1 | 0/0 |  |
+| 23 | Erdal Rakip | CM | 30 | North Macedonia | 153 k€ | – | 1 | 1 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 10 | Rasmus Wiedesheim-Paul | ST,CAM,RW | 27 | Sweden | 143 k€ | – | 4 | 1 | 0/0 |  |
-| 17 | Kalle Holmberg | ST | 33 | Sweden | 57 k€ | – | 3 | 7 | 3/0 |  |
-| 25 | Chovanie Amatkarijo | RW,LW,ST | 27 | Sint Maarten | 127 k€ | – | 0 | 0 | 0/0 |  |
-| 99 | Ahmed Yasin | ST,LW,LM,RM,CAM,LWB | 35 | Iraq | 50 k€ | – | 9 | 4 | 2/0 |  |
+| 10 | Rasmus Wiedesheim-Paul | ST,CAM,RW | 27 | Sweden | 153 k€ | – | 4 | 1 | 0/0 |  |
+| 17 | Kalle Holmberg | ST | 33 | Sweden | 73 k€ | – | 3 | 7 | 3/0 |  |
+| 25 | Chovanie Amatkarijo | RW,LW,ST | 27 | Sint Maarten | 129 k€ | – | 0 | 0 | 0/0 |  |
+| 99 | Ahmed Yasin | ST,LW,LM,RM,CAM,LWB | 35 | Iraq | 85 k€ | – | 9 | 4 | 2/0 |  |

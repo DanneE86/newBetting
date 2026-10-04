@@ -1,12 +1,15 @@
 # Northampton (League Two) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [EL2](../../ligor/EL2.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Senaste 8: otur med −0,57 poäng per match mot xP. Marknaden prisar redan in det i ligan (ingen bekräftad effekt), så det är inget spel i sig.
 - 2025/26: −0,28 poäng per match mot marknaden. Ligan visar ingen persistens, så räkna inte med att det fortsätter.
 - Stark historik mot Exeter (+0,54 p/match mot marknaden, 12 möten), Newport County (+0,56 p/match mot marknaden, 8 möten), Colchester (+0,54 p/match mot marknaden, 6 möten), Rochdale (−0,53 p/match mot marknaden, 6 möten), Walsall (−0,67 p/match mot marknaden, 6 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Spelstil 2022/23: Balanserat, Blandat, Mellanpress, Farlig på fasta, Medel mot fasta. Bäst mot Stark mot fasta (+0,29, stabilt), Lågpress (+0,19, svagt), Svag på fasta (+0,08, svagt). Svårast mot Farlig på fasta (−0,34, stabilt), Medel mot fasta (−0,20, samma håll i båda halvorna men svagt), Mellanpress (−0,15, svagt). Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2026/27: 0,29 mål för per match (xG 0,23), 0,14 emot (xG 0,13), 5,1 hörnor.
+- Svårt för: Walsall (1-2-3, 0,83 p/match, mot marknaden −0,67), Bristol Rvs (2-1-5, 0,88 p/match, mot marknaden −0,45), Rochdale (1-3-2, 1,00 p/match, mot marknaden −0,53), Port Vale (2-3-4, 1,00 p/match, mot marknaden −0,34), Swindon (3-4-4, 1,18 p/match, mot marknaden −0,16). Där marknaden ligger nära noll är laget bara sämre i de mötena än annars, och oddsen vet redan om det.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -35,6 +38,51 @@ Form (äldst → senast): FOFOOVFF · senaste match 2026-09-19
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
 
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/EL2.md#northampton) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2022/23: **Balanserat, Blandat, Mellanpress, Farlig på fasta, Medel mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026/27 | 7 | 0,29 | 0,23 | 0,14 | 0,13 | 5,1 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Backar hem | 90 | 1,07–1,38 | +0,07 | −0,00 (−0,0) | −8 pe | +4 pe | svag |
+| Balanserat | 124 | 1,01–1,12 | +0,05 | −0,02 (−0,2) | +0 pe | −8 pe | svag |
+| Bollinnehav | 61 | 1,34–1,41 | +0,12 | +0,05 (0,3) | +1 pe | +8 pe | ✔ samma håll |
+| Kortpass | 62 | 1,31–1,52 | +0,11 | +0,04 (0,3) | +1 pe | +7 pe | ✔ samma håll |
+| Blandat | 139 | 1,00–1,17 | +0,08 | +0,01 (0,1) | −3 pe | −5 pe | svag |
+| Direktspel | 74 | 1,12–1,24 | +0,02 | −0,05 (−0,3) | −4 pe | +1 pe | svag |
+| Lågpress | 75 | 1,12–0,91 | +0,26 | +0,19 (1,4) | +5 pe | −11 pe | svag |
+| Mellanpress | 102 | 1,09–1,56 | −0,08 | −0,15 (−1,3) | −5 pe | +9 pe | svag |
+| Högpress | 98 | 1,10–1,24 | +0,08 | +0,01 (0,1) | −5 pe | −2 pe | svag |
+| Svag på fasta | 100 | 1,17–1,19 | +0,15 | +0,08 (0,7) | +5 pe | +2 pe | svag |
+| Medel på fasta | 130 | 1,17–1,34 | +0,13 | +0,06 (0,5) | −6 pe | +2 pe | ✔ samma håll |
+| Farlig på fasta | 45 | 0,76–1,24 | −0,27 | −0,34 (−2,0) | −5 pe | −14 pe | ⚑ stabil |
+| Stark mot fasta | 92 | 1,30–1,03 | +0,36 | +0,29 (2,3) | −0 pe | +2 pe | ⚑ stabil |
+| Medel mot fasta | 124 | 0,97–1,51 | −0,13 | −0,20 (−1,9) | −4 pe | +0 pe | ✔ samma håll |
+| Svag mot fasta | 59 | 1,07–1,14 | +0,03 | −0,04 (−0,2) | −2 pe | −6 pe | ✔ samma håll |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
+
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 2 | 1-0-1 | 1,50 | −0,03 |
+| Efter uppehåll sedan 2023 | 0 | – | – | – |
+| Övriga matcher | 410 | 138-109-163 | 1,28 | +0,04 |
+
+Hela ligan efter uppehåll: 0,00 mot marknaden (n 84). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2021-11-13 | Bristol Rvs - Northampton | 2-1 F | −1,77 |
+| 2019-11-16 | Northampton - Crewe | 4-1 V | +1,70 |
+
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
 | Motståndare | M | V-O-F | Mål | Mot marknaden | Kryss mot odds | Senast |
@@ -62,42 +110,44 @@ Form (äldst → senast): FOFOOVFF · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): Walsall 0,83 p/match (−0,67), Bristol Rvs 0,88 p/match (−0,45), Rochdale 1,00 p/match (−0,53), Port Vale 1,00 p/match (−0,34), Swindon 1,18 p/match (−0,16).
+
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Chris Hogg. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Zachary Jeacock | GK | 25 | England | 255 k€ | 6,83 | 0 | 0 | 0/0 |  |
+| 1 | Zachary Jeacock | GK | 25 | England | 240 k€ | 6,83 | 0 | 0 | 0/0 |  |
 | 31 | James Dadge | Keeper | 21 | England | 143 k€ | – | 0 | 0 | 0/0 |  |
-| 34 | Ross Fitzsimons | GK | 32 | England | 126 k€ | – | 0 | 0 | 0/0 |  |
+| 34 | Ross Fitzsimons | GK | 32 | England | 98 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 3 | James Maxwell | LB,CB | 24 | Scotland | 263 k€ | 7,07 | 0 | 0 | 1/0 |  |
-| 5 | John Guthrie | CB | 34 | England | 86 k€ | 7,09 | 0 | 0 | 0/0 |  |
-| 6 | Elliott Moore | CB | 29 | England | 114 k€ | 7,12 | 0 | 0 | 0/0 |  |
-| 15 | Conor McCarthy | CB | 28 | Ireland | 164 k€ | – | 0 | 0 | 0/0 |  |
-| 30 | Jack Burroughs | RB,RWB,RM,CB | 25 | Scotland | 177 k€ | – | 0 | 0 | 0/0 |  |
-| 35 | Max Dyche | CB | 23 | England | 182 k€ | 6,53 | 0 | 0 | 2/0 |  |
-| 44 | Janoi Donacien | RB,CB | 32 | Saint Lucia | 102 k€ | 7,18 | 0 | 0 | 0/0 |  |
+| 3 | James Maxwell | LB,CB | 24 | Scotland | 250 k€ | 7,07 | 0 | 0 | 1/0 |  |
+| 5 | John Guthrie | CB | 34 | England | 90 k€ | 7,09 | 0 | 0 | 0/0 |  |
+| 6 | Elliott Moore | CB | 29 | England | 94 k€ | 7,12 | 0 | 0 | 0/0 |  |
+| 15 | Conor McCarthy | CB | 28 | Ireland | 131 k€ | – | 0 | 0 | 0/0 |  |
+| 30 | Jack Burroughs | RB,RWB,RM,CB | 25 | Scotland | 155 k€ | – | 0 | 0 | 0/0 |  |
+| 35 | Max Dyche | CB | 23 | England | 155 k€ | 6,53 | 0 | 0 | 2/0 |  |
+| 44 | Janoi Donacien | RB,CB | 32 | Saint Lucia | 86 k€ | 7,18 | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 4 | Joe O'Brien Whitmarsh | CM,CAM,CDM,ST | 21 | Ireland | 292 k€ | 6,76 | 1 | 1 | 0/0 |  |
-| 7 | Sam Hoskins | RM,LW,ST,RW,RWB,CAM,LM | 33 | England | 184 k€ | 6,13 | 0 | 0 | 0/0 |  |
-| 8 | Lee Evans | CDM,CM | 32 | Wales | 121 k€ | 6,70 | 0 | 0 | 1/1 |  |
-| 11 | Kamarai Simon-Swyer | LW,RM,RWB,RW | 23 | England | 180 k€ | 6,08 | 0 | 0 | 0/0 |  |
-| 14 | Tyrese Fornah | CM,CDM,LW,CAM,RM,RW,ST | 27 | Sierra Leone | 227 k€ | 7,13 | 0 | 0 | 2/0 |  |
-| 16 | Joe Wormleighton | RM,RB | 22 | England | 266 k€ | 7,16 | 0 | 0 | 0/0 |  |
-| 19 | Owen Dale | LM,RW,RWB,LW,RM,LWB | 27 | England | 219 k€ | 6,25 | 0 | 0 | 0/0 |  |
+| 4 | Joe O'Brien Whitmarsh | CM,CAM,CDM,ST | 21 | Ireland | 265 k€ | 6,76 | 1 | 1 | 0/0 |  |
+| 7 | Sam Hoskins | RM,LW,ST,RW,RWB,CAM,LM | 33 | England | 118 k€ | 6,13 | 0 | 0 | 0/0 |  |
+| 8 | Lee Evans | CDM,CM | 32 | Wales | 91 k€ | 6,70 | 0 | 0 | 1/1 |  |
+| 11 | Kamarai Simon-Swyer | LW,RM,RWB,RW | 23 | England | 157 k€ | 6,08 | 0 | 0 | 0/0 |  |
+| 14 | Tyrese Fornah | CM,CDM,LW,CAM,RM,RW,ST | 27 | Sierra Leone | 247 k€ | 7,13 | 0 | 0 | 2/0 |  |
+| 16 | Joe Wormleighton | RM,RB | 22 | England | 213 k€ | 7,16 | 0 | 0 | 0/0 |  |
+| 19 | Owen Dale | LM,RW,RWB,LW,RM,LWB | 27 | England | 207 k€ | 6,25 | 0 | 0 | 0/0 |  |
 | 20 | Logan Briggs | LW,LM,CAM | 21 | England | – | 6,36 | 1 | 0 | 2/0 |  |
-| 21 | Jack Perkins | LM,LWB,CM,CB,CDM,LB | 22 | England | 188 k€ | 6,58 | 0 | 0 | 0/0 |  |
+| 21 | Jack Perkins | LM,LWB,CM,CB,CDM,LB | 22 | England | 167 k€ | 6,58 | 0 | 0 | 0/0 |  |
 | 29 | Liam Shaw | CDM | 25 | England | 174 k€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 9 | Matthew Warhurst | ST | 20 | England | – | 6,02 | 0 | 0 | 1/0 |  |
-| 10 | Elliott List | ST,RW,LW | 29 | England | 136 k€ | 6,83 | 0 | 0 | 0/0 |  |
-| 17 | Nathaniel Opoku | ST | 25 | Ghana | 241 k€ | 6,71 | 1 | 0 | 0/0 |  |
-| 22 | Josh Powell | LW,LB,LM,LWB | 21 | England | 437 k€ | 7,11 | 0 | 0 | 0/0 |  |
-| 24 | Connor Lemonheigh-Evans | ST | 29 | Wales | 131 k€ | 6,63 | 0 | 0 | 0/0 |  |
-| 26 | Sam Chambers | LW,ST | 19 | Scotland | 659 k€ | 6,45 | 0 | 0 | 1/0 |  |
-| 32 | Harvey Saunders | ST,LW,LM,RW,RM | 29 | England | 204 k€ | 6,32 | 0 | 0 | 0/0 |  |
+| 10 | Elliott List | ST,RW,LW | 29 | England | 113 k€ | 6,83 | 0 | 0 | 0/0 |  |
+| 17 | Nathaniel Opoku | ST | 25 | Ghana | 246 k€ | 6,71 | 1 | 0 | 0/0 |  |
+| 22 | Josh Powell | LW,LB,LM,LWB | 21 | England | 323 k€ | 7,11 | 0 | 0 | 0/0 |  |
+| 24 | Connor Lemonheigh-Evans | ST | 29 | Wales | 180 k€ | 6,63 | 0 | 0 | 0/0 |  |
+| 26 | Sam Chambers | LW,ST | 19 | Scotland | 444 k€ | 6,45 | 0 | 0 | 1/0 |  |
+| 32 | Harvey Saunders | ST,LW,LM,RW,RM | 29 | England | 268 k€ | 6,32 | 0 | 0 | 0/0 |  |
 
 Har lämnat truppen sedan vi började spara (1): Neo Dobson (senast 2026-09-29).

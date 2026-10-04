@@ -1,10 +1,14 @@
 # Norwich (Championship) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [CH](../../ligor/CH.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Stark historik mot Middlesbrough (−0,52 p/match mot marknaden, 12 möten), Cardiff (+0,62 p/match mot marknaden, 8 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Efter landslagsuppehåll: 1,72 poäng per match mot 1,35 annars (15-10-7 på 32 matcher), mot marknaden +0,47 mot −0,08. Sedan 2023: 4-4-4. Bättre än vanligt, men få matcher: i hela ligan är effekten +0,01 mot marknaden.
+- Spelstil 2025/26: Bollinnehav, Kortpass, Mellanpress, Medel på fasta, Medel mot fasta. Bäst mot Farlig på fasta (+0,22, samma håll i båda halvorna men svagt), Direktspel (+0,11, svagt), Högpress (+0,11, svagt). Svårast mot Svag på fasta (−0,17, samma håll i båda halvorna men svagt), Kortpass (−0,18, svagt), Mellanpress (−0,14, samma håll i båda halvorna men svagt). Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2025/26: 0,30 mål för per match (xG 0,27), 0,15 emot (xG 0,34), 5,3 hörnor.
+- Svårt för: Middlesbrough (2-3-7, 0,75 p/match, mot marknaden −0,52), Burnley (2-1-6, 0,78 p/match, mot marknaden −0,39), Watford (4-0-10, 0,86 p/match, mot marknaden −0,50), Sheffield United (2-4-4, 1,00 p/match, mot marknaden −0,20), Southampton (2-2-4, 1,00 p/match, mot marknaden −0,00), West Brom (3-3-4, 1,20 p/match, mot marknaden −0,04), Preston (3-5-3, 1,27 p/match, mot marknaden −0,39). Där marknaden ligger nära noll är laget bara sämre i de mötena än annars, och oddsen vet redan om det.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -33,6 +37,82 @@ Form (äldst → senast): FFVFVVFF · senaste match 2026-09-20
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
 
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/CH.md#norwich) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2025/26: **Bollinnehav, Kortpass, Mellanpress, Medel på fasta, Medel mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026/27 | 8 | 0,25 | 0,25 | 0,25 | 0,34 | 4,8 |
+| 2025/26 | 46 | 0,30 | 0,27 | 0,15 | 0,34 | 5,3 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Backar hem | 109 | 1,29–1,35 | −0,01 | +0,01 (0,1) | −8 pe | +1 pe | svag |
+| Balanserat | 165 | 1,42–1,44 | +0,03 | +0,05 (0,6) | −1 pe | +1 pe | ✔ samma håll |
+| Bollinnehav | 80 | 1,46–1,54 | −0,15 | −0,12 (−0,9) | −2 pe | +5 pe | svag |
+| Kortpass | 108 | 1,39–1,44 | −0,20 | −0,18 (−1,6) | +0 pe | +1 pe | svag |
+| Blandat | 127 | 1,35–1,58 | +0,02 | +0,05 (0,4) | −2 pe | +4 pe | svag |
+| Direktspel | 119 | 1,44–1,26 | +0,09 | +0,11 (1,0) | −7 pe | +0 pe | svag |
+| Lågpress | 101 | 1,32–1,55 | +0,04 | +0,07 (0,6) | −2 pe | +4 pe | ✔ samma håll |
+| Mellanpress | 139 | 1,40–1,55 | −0,16 | −0,14 (−1,3) | −4 pe | +4 pe | ✔ samma håll |
+| Högpress | 114 | 1,46–1,18 | +0,09 | +0,11 (1,0) | −2 pe | −2 pe | svag |
+| Svag på fasta | 121 | 1,31–1,65 | −0,19 | −0,17 (−1,6) | −1 pe | +5 pe | ✔ samma håll |
+| Medel på fasta | 144 | 1,41–1,38 | −0,02 | +0,01 (0,1) | −1 pe | +0 pe | svag |
+| Farlig på fasta | 89 | 1,47–1,22 | +0,19 | +0,22 (1,7) | −10 pe | +0 pe | ✔ samma håll |
+| Stark mot fasta | 122 | 1,36–1,34 | +0,07 | +0,09 (0,8) | −8 pe | +2 pe | ✔ samma håll |
+| Medel mot fasta | 162 | 1,48–1,42 | −0,01 | +0,01 (0,1) | +1 pe | +2 pe | svag |
+| Svag mot fasta | 70 | 1,26–1,61 | −0,21 | −0,18 (−1,3) | −5 pe | +2 pe | ✔ samma håll |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
+
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 32 | 15-10-7 | 1,72 | +0,47 |
+| Efter uppehåll sedan 2023 | 12 | 4-4-4 | 1,33 | +0,08 |
+| Övriga matcher | 374 | 140-85-149 | 1,35 | −0,08 |
+
+Hela ligan efter uppehåll: +0,01 mot marknaden (n 766). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2026-04-03 | Norwich - Portsmouth | 1-1 O | −0,67 |
+| 2025-11-22 | Birmingham - Norwich | 4-1 F | −1,07 |
+| 2025-10-18 | Norwich - Bristol City | 0-1 F | −1,40 |
+| 2025-09-13 | Coventry - Norwich | 1-1 O | +0,89 |
+| 2025-03-29 | Norwich - West Brom | 1-0 V | +1,36 |
+| 2024-11-23 | West Brom - Norwich | 2-2 O | +0,79 |
+| 2024-10-19 | Stoke - Norwich | 1-1 O | +0,42 |
+| 2024-09-14 | Swansea - Norwich | 1-0 F | −1,51 |
+| 2024-03-29 | Norwich - Plymouth | 2-1 V | +0,85 |
+| 2023-11-25 | Norwich - QPR | 1-0 V | +1,09 |
+| 2023-10-21 | Norwich - Leeds | 2-3 F | −1,05 |
+| 2023-09-16 | Norwich - Stoke | 1-0 V | +1,23 |
+| 2023-04-01 | Norwich - Sheffield United | 0-1 F | −1,43 |
+| 2022-10-01 | Blackpool - Norwich | 0-1 V | +0,96 |
+| 2022-04-02 | Brighton - Norwich | 0-0 O | +1,14 |
+| 2021-11-20 | Norwich - Southampton | 2-1 V | +1,89 |
+| 2021-10-16 | Norwich - Brighton | 0-0 O | +0,02 |
+| 2021-09-11 | Arsenal - Norwich | 1-0 F | −0,77 |
+| 2021-04-02 | Preston - Norwich | 1-1 O | −0,13 |
+| 2020-11-21 | Middlesbrough - Norwich | 0-1 V | +1,33 |
+| 2020-10-17 | Rotherham - Norwich | 1-2 V | +0,99 |
+| 2019-11-23 | Everton - Norwich | 0-2 V | +2,34 |
+| 2019-10-19 | Bournemouth - Norwich | 0-0 O | +0,87 |
+| 2019-09-14 | Norwich - Man City | 3-2 V | +2,82 |
+| 2019-03-30 | Middlesbrough - Norwich | 0-1 V | +1,25 |
+| 2018-11-24 | Swansea - Norwich | 1-4 V | +1,42 |
+| 2018-10-20 | Nott'm Forest - Norwich | 1-2 V | +1,46 |
+| 2018-09-15 | Norwich - Middlesbrough | 1-0 V | +1,75 |
+| 2018-03-30 | Norwich - Fulham | 0-2 F | −1,23 |
+| 2017-11-18 | Norwich - Barnsley | 1-1 O | −1,04 |
+| 2017-10-14 | Norwich - Hull | 1-1 O | −0,70 |
+| 2017-09-09 | Norwich - Birmingham | 1-0 V | +1,08 |
+
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
 | Motståndare | M | V-O-F | Mål | Mot marknaden | Kryss mot odds | Senast |
@@ -51,8 +131,8 @@ Form (äldst → senast): FFVFVVFF · senaste match 2026-09-20
 | West Brom | 10 | 3-3-4 | 14–10 | −0,04 | +3 pe | 2026-08-15 1-2 (h) |
 | Burnley | 9 | 2-1-6 | 8–13 | −0,39 | −16 pe | 2026-08-29 4-1 (h) |
 | Cardiff | 8 | 6-0-2 | 18–9 | +0,62 | −26 pe | 2025-05-03 4-2 (h) |
-| Derby | 8 | 3-2-3 | 11–11 | −0,23 | −1 pe | 2026-04-21 2-1 (h) |
 | Southampton | 8 | 2-2-4 | 10–15 | −0,00 | −0 pe | 2026-03-18 0-1 (b) |
+| Derby | 7 | 3-1-3 | 10–10 | −0,26 | −12 pe | 2026-04-21 2-1 (h) |
 | Portsmouth | 4 | 1-2-1 | 6–7 | −0,34 | +23 pe | 2026-04-03 1-1 (h) |
 | West Ham | 4 | 0-0-4 | 0–12 | −0,86 | −23 pe | 2022-05-08 0-4 (h) |
 | Wolves | 4 | 0-2-2 | 2–6 | −0,35 | +25 pe | 2022-05-15 1-1 (b) |
@@ -61,6 +141,8 @@ Form (äldst → senast): FFVFVVFF · senaste match 2026-09-20
 | Wrexham | 2 | 1-0-1 | 4–4 | +0,06 | −27 pe | 2026-01-17 2-1 (b) |
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
+
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): Middlesbrough 0,75 p/match (−0,52), Burnley 0,78 p/match (−0,39), Watford 0,86 p/match (−0,50), Sheffield United 1,00 p/match (−0,20), Southampton 1,00 p/match (−0,00), West Brom 1,20 p/match (−0,04), Preston 1,27 p/match (−0,39).
 
 ## Stryktipset / Europatipset
 
@@ -85,46 +167,46 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-08-23 | Stryk 4915 | Norwich - Middlesbrough | 2 | 40 % | 39 % |
 | 2026-09-12 | Stryk 4970 | Middlesbrough - Norwich | 1 | 18 % | 25 % |
 | 2026-09-05 | Stryk 4969 | Sheffield U - Norwich | 2 ✓ | 27 % | 36 % |
-| 2026-08-29 | Stryk 4968 | Norwich - Burnley | 1 ✓ | 51 % | 47 % |
+| 2026-08-29 | Stryk 4968 | Norwich - Burnley | 1 ✓ | 51 % | 48 % |
 | 2026-01-01 | Europa 2536 | Queens Park Rangers - Norwich | 2 ✓ | 22 % | 27 % |
 
-## Trupp (FotMob, hämtad 2026-09-29)
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Philippe Clement. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Lucien Mahovo (skadad, åter Early October 2026), Mirko Topić (skadad, åter Unknown), Ali Ahmed (skadad, åter Early November 2026), Mohamed Touré (osäker), Gabriel Forsyth (skadad, åter Early October 2026)
+**Skadade/borta nu:** Lucien Mahovo (osäker), Mirko Topić (skadad, åter Unknown), Ali Ahmed (skadad, åter Early November 2026), Mohamed Touré (osäker), Gabriel Forsyth (skadad, åter Mid October 2026)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Vladan Kovačević | GK | 28 | Bosnia and Herzegovina | 1,8 M€ | 6,12 | 0 | 0 | 0/0 |  |
+| 1 | Vladan Kovačević | GK | 28 | Bosnia and Herzegovina | 1,9 M€ | 6,12 | 0 | 0 | 0/0 |  |
 | 32 | Daniel Grimshaw | GK | 28 | England | 502 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 3 | Jack Stacey | RB | 30 | England | 886 k€ | 6,83 | 1 | 1 | 2/0 |  |
-| 6 | Harry Darling | CB | 27 | England | 2,4 M€ | 5,78 | 0 | 0 | 1/0 |  |
-| 12 | Lucien Mahovo | LB | 21 | England | 617 k€ | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
-| 13 | Darlin Yongwa | CB,LB,LWB,LM | 26 | Cameroon | 2,4 M€ | 6,45 | 0 | 0 | 0/0 |  |
+| 3 | Jack Stacey | RB | 30 | England | 954 k€ | 6,83 | 1 | 1 | 2/0 |  |
+| 6 | Harry Darling | CB | 27 | England | 2,5 M€ | 5,78 | 0 | 0 | 1/0 |  |
+| 12 | Lucien Mahovo | LB | 21 | England | 605 k€ | – | 0 | 0 | 0/0 | osäker |
+| 13 | Darlin Yongwa | CB,LB,LWB,LM | 26 | Cameroon | 5,0 M€ | 6,45 | 0 | 0 | 0/0 |  |
 | 14 | Benjamin Chrisene | LB | 22 | England | 2,0 M€ | 6,69 | 0 | 0 | 1/0 |  |
-| 15 | Ruairi McConville | CB | 21 | Northern Ireland | 2,5 M€ | 6,70 | 1 | 0 | 2/0 |  |
+| 15 | Ruairi McConville | CB | 21 | Northern Ireland | 6,0 M€ | 6,70 | 1 | 0 | 2/0 |  |
 | 28 | Bruno Alves | CB | 21 | Brazil | – | – | 0 | 0 | 0/0 |  |
-| 33 | José Córdoba | CB | 25 | Panama | 2,1 M€ | 6,55 | 0 | 1 | 4/1 |  |
-| 35 | Kellen Fisher | RB,LB,RM | 22 | England | 2,3 M€ | 6,52 | 0 | 0 | 1/0 |  |
+| 33 | José Córdoba | CB | 25 | Panama | 5,4 M€ | 6,55 | 0 | 1 | 4/1 |  |
+| 35 | Kellen Fisher | RB,LB,RM | 22 | England | 5,1 M€ | 6,52 | 0 | 0 | 1/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 7 | Pelle Mattsson | CDM,CM | 25 | Denmark | 2,7 M€ | 7,05 | 0 | 1 | 0/0 |  |
-| 16 | Jacob Wright | CDM,CAM | 21 | England | 1,8 M€ | 6,68 | 1 | 1 | 0/0 |  |
-| 20 | Anis Ben Slimane | CAM | 25 | Tunisia | 2,5 M€ | 6,56 | 0 | 1 | 1/0 |  |
-| 22 | Mirko Topić | CDM | 25 | Serbia | 3,5 M€ | – | 0 | 0 | 0/0 | skadad, åter Unknown |
-| 23 | Kenny McLean | CDM,CM,LB,RW | 34 | Scotland | 695 k€ | 7,08 | 0 | 0 | 1/0 |  |
-| 26 | Sam Field | CDM,LB | 28 | England | 1,6 M€ | 6,70 | 0 | 0 | 0/0 |  |
+| 7 | Pelle Mattsson | CDM,CM | 25 | Denmark | 3,4 M€ | 7,05 | 0 | 1 | 0/0 |  |
+| 16 | Jacob Wright | CDM,CAM | 21 | England | 4,4 M€ | 6,68 | 1 | 1 | 0/0 |  |
+| 20 | Anis Ben Slimane | CAM | 25 | Tunisia | 2,6 M€ | 6,56 | 0 | 1 | 1/0 |  |
+| 22 | Mirko Topić | CDM | 25 | Serbia | 2,9 M€ | – | 0 | 0 | 0/0 | skadad, åter Unknown |
+| 23 | Kenny McLean | CDM,CM,LB,RW | 34 | Scotland | 739 k€ | 7,08 | 0 | 0 | 1/0 |  |
+| 26 | Sam Field | CDM,LB | 28 | England | 1,7 M€ | 6,70 | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 11 | Andre Brooks | RW,RM,CAM | 23 | Jamaica | 2,9 M€ | 7,28 | 2 | 2 | 1/0 |  |
-| 17 | Ante Crnac | RW | 22 | Croatia | 5,1 M€ | 6,57 | 0 | 0 | 1/0 |  |
-| 19 | Papa Diallo | RW | 22 | Senegal | 4,7 M€ | 6,69 | 1 | 0 | 0/0 |  |
-| 21 | Ali Ahmed | LW,LM | 25 | Canada | 1,7 M€ | – | 0 | 0 | 0/0 | skadad, åter Early November 2026 |
-| 21 | Mohamed Touré | ST | 22 | Australia | 1,6 M€ | 6,97 | 5 | 0 | 1/0 | osäker |
-| 24 | Jovon Makama | RW,ST | 22 | England | 2,0 M€ | 6,51 | 1 | 0 | 1/0 |  |
-| 29 | Oscar Schwartau | LW,CAM,RW | 20 | Denmark | 5,9 M€ | 6,90 | 1 | 1 | 1/0 |  |
-| 30 | Mathias Kvistgaarden | ST,CAM | 24 | Denmark | 8,5 M€ | 6,70 | 2 | 1 | 0/0 |  |
-| 41 | Gabriel Forsyth | RW | 20 | Scotland | – | – | 0 | 0 | 0/0 | skadad, åter Early October 2026 |
-| 46 | Errol Mundle-Smith | LW | 20 | England | 72 k€ | – | 0 | 0 | 0/0 |  |
-| 49 | Anthony Musaba | LW,RW,RM | 25 | DR Congo | 3,0 M€ | 6,80 | 1 | 1 | 0/0 |  |
+| 11 | Andre Brooks | RW,RM,CAM | 23 | Jamaica | 7,7 M€ | 7,28 | 2 | 2 | 1/0 |  |
+| 17 | Ante Crnac | RW | 22 | Croatia | 4,2 M€ | 6,57 | 0 | 0 | 1/0 |  |
+| 19 | Papa Diallo | RW | 22 | Senegal | 4,6 M€ | 6,69 | 1 | 0 | 0/0 |  |
+| 21 | Ali Ahmed | LW,LM | 25 | Canada | 4,2 M€ | – | 0 | 0 | 0/0 | skadad, åter Early November 2026 |
+| 21 | Mohamed Touré | ST | 22 | Australia | 4,3 M€ | 6,97 | 5 | 0 | 1/0 | osäker |
+| 24 | Jovon Makama | RW,ST | 22 | England | 5,4 M€ | 6,51 | 1 | 0 | 1/0 |  |
+| 29 | Oscar Schwartau | LW,CAM,RW | 20 | Denmark | 9,8 M€ | 6,90 | 1 | 1 | 1/0 |  |
+| 30 | Mathias Kvistgaarden | ST,CAM | 24 | Denmark | 7,2 M€ | 6,70 | 2 | 1 | 0/0 |  |
+| 41 | Gabriel Forsyth | RW | 20 | Scotland | – | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 46 | Errol Mundle-Smith | LW | 20 | England | 104 k€ | – | 0 | 0 | 0/0 |  |
+| 49 | Anthony Musaba | LW,RW,RM | 25 | DR Congo | 6,8 M€ | 6,80 | 1 | 1 | 0/0 |  |

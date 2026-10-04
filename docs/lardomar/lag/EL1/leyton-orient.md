@@ -1,11 +1,14 @@
 # Leyton Orient (League One) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [EL1](../../ligor/EL1.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Senaste 8: xG-målskillnaden är −0,97 per match sämre än målskillnaden.
 - Stark historik mot Mansfield (+0,67 p/match mot marknaden, 12 möten), Cambridge (+0,79 p/match mot marknaden, 8 möten), Blackpool (+0,52 p/match mot marknaden, 6 möten), Burton (−0,74 p/match mot marknaden, 6 möten), Reading (+0,77 p/match mot marknaden, 6 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Spelstil 2025/26: Bollinnehav, Kortpass, Mellanpress, Svag på fasta, Svag mot fasta. Bäst mot Direktspel (+0,18, samma håll i båda halvorna men svagt), Stark mot fasta (+0,12, samma håll i båda halvorna men svagt), Högpress (+0,12, samma håll i båda halvorna men svagt). Svårast mot Svag mot fasta (−0,17, samma håll i båda halvorna men svagt), Lågpress (−0,16, samma håll i båda halvorna men svagt), Blandat (−0,06, samma håll i båda halvorna men svagt). Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2025/26: 0,20 mål för per match (xG 0,28), 0,52 emot (xG 0,41), 4,8 hörnor.
+- Svårt för: Burton (1-3-2, 1,00 p/match, mot marknaden −0,74), Barnsley (2-1-4, 1,00 p/match, mot marknaden −0,42), Peterboro (1-3-2, 1,00 p/match, mot marknaden −0,26), Wycombe (2-1-4, 1,00 p/match, mot marknaden −0,17). Där marknaden ligger nära noll är laget bara sämre i de mötena än annars, och oddsen vet redan om det.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -31,6 +34,52 @@ Form (äldst → senast): OFVFVOFV · senaste match 2026-09-19
 | 2026/27 | EL1 | 7 | 1,43 | +0,18 (−0,73 / +1,38) | 14 % (27 %) | 1,86–1,29 | 1,26–1,69* | 1,08 |
 
 \* xG uppskattat från skott och skott på mål (Understat saknas för ligan).
+
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/EL1.md#leyton-orient) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2025/26: **Bollinnehav, Kortpass, Mellanpress, Svag på fasta, Svag mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026/27 | 8 | 0,50 | 0,44 | 0,38 | 0,39 | 3,9 |
+| 2025/26 | 46 | 0,20 | 0,28 | 0,52 | 0,41 | 4,8 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Backar hem | 93 | 1,20–1,13 | +0,09 | +0,04 (0,3) | −7 pe | +1 pe | svag |
+| Balanserat | 124 | 1,29–1,16 | −0,01 | −0,05 (−0,4) | −1 pe | −3 pe | svag |
+| Bollinnehav | 54 | 1,44–1,09 | +0,09 | +0,04 (0,2) | −11 pe | +2 pe | svag |
+| Kortpass | 54 | 1,33–1,15 | −0,02 | −0,06 (−0,4) | −7 pe | −0 pe | ✔ samma håll |
+| Blandat | 148 | 1,35–1,24 | −0,02 | −0,06 (−0,6) | −2 pe | +5 pe | ✔ samma håll |
+| Direktspel | 69 | 1,13–0,91 | +0,23 | +0,18 (1,1) | −8 pe | −12 pe | ✔ samma håll |
+| Lågpress | 64 | 1,28–1,08 | −0,11 | −0,16 (−1,0) | +6 pe | −2 pe | ✔ samma håll |
+| Mellanpress | 102 | 1,32–1,25 | +0,02 | −0,02 (−0,2) | −7 pe | +0 pe | svag |
+| Högpress | 105 | 1,27–1,07 | +0,16 | +0,12 (0,9) | −9 pe | −0 pe | ✔ samma håll |
+| Svag på fasta | 92 | 1,21–0,95 | +0,13 | +0,08 (0,7) | −8 pe | −8 pe | ✔ samma håll |
+| Medel på fasta | 123 | 1,37–1,21 | +0,01 | −0,03 (−0,2) | −5 pe | +2 pe | svag |
+| Farlig på fasta | 56 | 1,25–1,29 | −0,03 | −0,07 (−0,4) | −1 pe | +5 pe | ✔ samma håll |
+| Stark mot fasta | 94 | 1,16–0,90 | +0,17 | +0,12 (1,0) | −3 pe | −8 pe | ✔ samma håll |
+| Medel mot fasta | 118 | 1,33–1,25 | +0,03 | −0,01 (−0,1) | −8 pe | +3 pe | ✔ samma håll |
+| Svag mot fasta | 59 | 1,42–1,29 | −0,13 | −0,17 (−1,0) | −2 pe | +4 pe | ✔ samma håll |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
+
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 2 | 0-1-1 | 0,50 | −0,54 |
+| Efter uppehåll sedan 2023 | 0 | – | – | – |
+| Övriga matcher | 317 | 126-78-113 | 1,44 | +0,02 |
+
+Hela ligan efter uppehåll: 0,00 mot marknaden (n 24). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2021-11-13 | Rochdale - Leyton Orient | 2-2 O | +0,36 |
+| 2019-11-16 | Leyton Orient - Scunthorpe | 0-2 F | −1,44 |
 
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
@@ -59,6 +108,8 @@ Form (äldst → senast): OFVFVOFV · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): Burton 1,00 p/match (−0,74), Barnsley 1,00 p/match (−0,42), Peterboro 1,00 p/match (−0,26), Wycombe 1,00 p/match (−0,17).
+
 ## Stryktipset / Europatipset
 
 | Datum | Spel | Match | Utfall | Folket på laget | Vår procent |
@@ -68,7 +119,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-12-13 | Stryk 4931 | Barnsley - Leyton Orient | 1 | 29 % | 29 % |
 | 2026-08-29 | Stryk 4968 | Leyton Orient - Barnsley | 2 | 48 % | 45 % |
 
-## Trupp (FotMob, hämtad 2026-09-29)
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Richie Wellens. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
@@ -77,37 +128,37 @@ Tränare: Richie Wellens. Betyg, mål och assist gäller innevarande säsong enl
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Nathan Baxter | GK | 27 | England | 453 k€ | 7,06 | 0 | 0 | 0/0 |  |
-| 23 | Oliver Nnonyelu Dovin | GK | 24 | Sweden | 2,2 M€ | – | 0 | 0 | 0/0 | skadad, åter Unknown |
+| 1 | Nathan Baxter | GK | 27 | England | 444 k€ | 6,85 | 0 | 0 | 0/0 |  |
+| 23 | Oliver Nnonyelu Dovin | GK | 24 | Sweden | 2,1 M€ | – | 0 | 0 | 0/0 | skadad, åter Unknown |
 | 33 | Killian Cahill | GK | 22 | Ireland | 407 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Fin Stevens | CB,RB | 23 | Wales | 482 k€ | 7,01 | 0 | 0 | 2/0 |  |
-| 3 | James Morris | LB,LWB | 24 | England | 455 k€ | 5,87 | 0 | 0 | 0/0 |  |
-| 5 | Joseph Olowu | CB | 26 | England | 332 k€ | 7,13 | 1 | 0 | 1/0 |  |
-| 6 | William Forrester | CB | 25 | England | 363 k€ | 7,54 | 0 | 1 | 0/0 |  |
-| 12 | Alfie Gilchrist | RB,CB | 22 | England | 4,0 M€ | 6,73 | 0 | 0 | 0/0 |  |
+| 2 | Fin Stevens | CB,RB | 23 | Wales | 469 k€ | 6,93 | 0 | 0 | 2/0 |  |
+| 3 | James Morris | LB,LWB | 24 | England | 474 k€ | 5,87 | 0 | 0 | 0/0 |  |
+| 5 | Joseph Olowu | CB | 26 | England | 488 k€ | 7,10 | 1 | 0 | 1/0 |  |
+| 6 | William Forrester | CB | 25 | England | 350 k€ | 7,61 | 0 | 1 | 0/0 |  |
+| 12 | Alfie Gilchrist | RB,CB | 22 | England | 4,1 M€ | 6,73 | 0 | 0 | 0/0 |  |
 | 18 | Rarmani Edmonds-Green | CB | 27 | England | 152 k€ | – | 0 | 0 | 0/0 |  |
 | 19 | Somto Boniface | LB | 20 | England | – | 6,03 | 0 | 0 | 0/0 |  |
-| 34 | Phillip Chinedu | CB,LWB | 19 | England | 441 k€ | 6,61 | 0 | 0 | 1/0 |  |
+| 34 | Phillip Chinedu | CB,LWB | 19 | England | 459 k€ | 6,57 | 0 | 0 | 1/0 |  |
 | | **Mittfältare** | | | | | | | | | |
 |  | Zak O'Keefe | Midfielder | 0 | England | – | – | 0 | 0 | 0/0 |  |
-| 8 | Idris El Mizouni | CDM,CAM,CM | 26 | Tunisia | 506 k€ | 7,21 | 0 | 1 | 1/0 |  |
+| 8 | Idris El Mizouni | CDM,CAM,CM | 26 | Tunisia | 507 k€ | 7,21 | 0 | 1 | 1/0 |  |
 | 11 | Demetri Mitchell | CAM,RW,RWB,LW | 29 | England | 167 k€ | 6,99 | 0 | 3 | 0/0 |  |
-| 14 | Isaac Hayden | CDM,CM | 31 | Jamaica | 258 k€ | 6,78 | 0 | 0 | 4/0 |  |
-| 20 | Alex Gilbert | CM,CDM,LW | 24 | Ireland | 776 k€ | 7,29 | 1 | 0 | 0/0 |  |
-| 25 | Charlie Wellens | CAM,RWB,RW | 23 | England | 287 k€ | 7,04 | 0 | 0 | 0/0 |  |
-| 28 | Sean Clare | CDM,RB,RWB,CM | 30 | England | 154 k€ | 6,29 | 0 | 0 | 0/0 |  |
+| 14 | Isaac Hayden | CDM,CM | 31 | Jamaica | 329 k€ | 6,75 | 0 | 0 | 4/0 |  |
+| 20 | Alex Gilbert | CM,CDM,LW | 24 | Ireland | 707 k€ | 7,16 | 1 | 0 | 2/0 |  |
+| 25 | Charlie Wellens | CAM,RWB,RW | 23 | England | 304 k€ | 6,81 | 0 | 0 | 0/0 |  |
+| 28 | Sean Clare | CDM,RB,RWB,CM | 30 | England | 174 k€ | 6,29 | 0 | 0 | 0/0 |  |
 | 36 | Dan Carter | Midfielder | 19 | England | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 7 | Oliver O'Neill | LW,CAM,RW | 23 | Ireland | 714 k€ | – | 0 | 0 | 0/0 |  |
-| 9 | Jaze Kabia | ST,LW,RW | 26 | Ireland | 294 k€ | 7,29 | 4 | 2 | 2/0 |  |
-| 10 | Aaron Connolly | LW,ST | 26 | Ireland | 1,0 M€ | – | 0 | 0 | 0/0 |  |
-| 17 | Armando Dobra | LW,CAM | 25 | Albania | 337 k€ | 6,43 | 1 | 0 | 0/0 |  |
-| 18 | Dane Scarlett | ST | 22 | England | 1,4 M€ | 5,30 | 0 | 0 | 0/0 |  |
-| 22 | Yusuf Akhamrich | RW,CAM,RWB,RM | 21 | Morocco | 190 k€ | 7,43 | 3 | 2 | 1/0 |  |
-| 27 | Tony Springett | RW,LW,LB | 24 | Ireland | 764 k€ | 6,82 | 1 | 1 | 1/0 |  |
+| 7 | Oliver O'Neill | LW,CAM,RW | 23 | Ireland | 728 k€ | – | 0 | 0 | 0/0 |  |
+| 9 | Jaze Kabia | ST,LW,RW | 26 | Ireland | 545 k€ | 7,17 | 4 | 2 | 2/0 |  |
+| 10 | Aaron Connolly | LW,ST | 26 | Ireland | 1,0 M€ | 6,16 | 0 | 0 | 0/0 |  |
+| 17 | Armando Dobra | LW,CAM | 25 | Albania | 359 k€ | 6,35 | 1 | 0 | 0/0 |  |
+| 18 | Dane Scarlett | ST | 22 | England | 1,2 M€ | 5,75 | 0 | 0 | 0/0 |  |
+| 22 | Yusuf Akhamrich | RW,CAM,RWB,RM | 21 | Morocco | 228 k€ | 7,17 | 3 | 2 | 1/0 |  |
+| 27 | Tony Springett | RW,LW,LB | 24 | Ireland | 793 k€ | 6,51 | 1 | 1 | 2/0 |  |
 | 42 | Lemar Gordon | LW | 20 | England | – | – | 0 | 0 | 0/0 |  |
-| 44 | Theo Archibald | RW,RWB,LWB,LW | 28 | Scotland | 161 k€ | 6,12 | 0 | 0 | 1/0 |  |
+| 44 | Theo Archibald | RW,RWB,LWB,LW | 28 | Scotland | 153 k€ | 6,12 | 0 | 0 | 1/0 |  |
 | 49 | Nicholas Oyekunle | ST | 19 | England | – | 6,15 | 1 | 0 | 0/0 |  |
 
 Har lämnat truppen sedan vi började spara (1): Tariq Al-Sadi (senast 2026-09-29).

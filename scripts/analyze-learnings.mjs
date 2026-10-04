@@ -12,8 +12,10 @@ import {
   LEAGUE_NAMES, MAIN, NEW, UNDERSTAT, attachXg, loadMatches, loadPoolMatches, root,
 } from './lib/learnings-data.mjs';
 import { nameScore } from './lib/match-context.mjs';
+import { ownStyleLabels, styleSummary } from './lib/team-style.mjs';
+import { ALTITUDE, HIGH, MIN_DIFF, altitudeOf, altitudeStats, hardestAtAltitude } from './lib/altitude.mjs';
 import { teamShares } from './pro/players.mjs';
-import { FORM_N, H2H_YEARS, avg, buildSignals, expPts, pairKey, pts, teamKey, xPts } from './lib/learnings-signals.mjs';
+import { FORM_N, H2H_YEARS, afterBreakKeys, avg, buildSignals, expPts, hardOpponents, pairKey, pts, teamKey, xPts } from './lib/learnings-signals.mjs';
 
 const SPLIT = '2023-07-01'; // trana fore, kontrollera efter
 const OUT_JSON = path.join(root, 'data', 'lardomar.json');
@@ -246,6 +248,7 @@ function poolTeam(code, name, teams) {
 // ---------------------------------------------------------------- per liga
 console.log('Analyserar ligor ...');
 const leagues = {};
+const breakKeys = {}; // liga -> Set("lag|datum") for forsta matchen efter landslagsuppehall
 const pooledRows = matches;
 const global = { signals: {}, situations: situations(pooledRows) };
 for (const [k, s] of Object.entries(SIGNALS)) global.signals[k] = { ...s, ...testSignal(pooledRows, k, s.target, s.split) };
@@ -262,6 +265,9 @@ for (const league of [...MAIN, ...NEW]) {
   }
   L.situations = situations(list);
   L.persistence = persistence(list);
+  breakKeys[league] = afterBreakKeys(list);
+  const brk = list.flatMap((m) => [[m.home, m.y], [m.away, -m.y]].filter(([t]) => breakKeys[league].has(`${t}|${m.date}`)).map(([, y]) => y));
+  L.afterBreak = { n: brk.length, res: avg(brk) };
   L.xg = { source: UNDERSTAT.includes(league) ? 'Understat' : list.some((m) => m.xgSrc === 'skott') ? 'skott-proxy' : 'saknas', stats: xgStats[league] ?? null, coverage: list.filter((m) => m.xg).length / list.length };
   const poolList = pool.filter((m) => m.code === league);
   L.pool = { all: poolStats(poolList), stryktipset: poolStats(poolList.filter((m) => m.product === 'stryktipset')), europatipset: poolStats(poolList.filter((m) => m.product === 'europatipset')) };
@@ -343,6 +349,20 @@ for (const league of Object.keys(leagues)) {
       T.h2h.push({ opp, n: meet.length, w, d, l, gf, ga, res: avg(res), drawRes: avg(dr), last: meet.at(-1).date, lastScore: `${meet.at(-1).hk === key ? `${meet.at(-1).hg}-${meet.at(-1).ag} (h)` : `${meet.at(-1).ag}-${meet.at(-1).hg} (b)`}` });
     }
     T.h2h.sort((a, b) => b.n - a.n || a.opp.localeCompare(b.opp));
+    T.hard = hardOpponents(T.h2h);
+    // Forsta ligamatchen efter landslagsuppehall mot ovriga matcher
+    {
+      const persp = (m) => {
+        const h = m.home === team;
+        const gf = h ? m.hg : m.ag, ga = h ? m.ag : m.hg;
+        return { date: m.date, opp: h ? m.away : m.home, h, gf, ga, p: pts(gf, ga), res: h ? m.y : -m.y };
+      };
+      const isBreak = (m) => breakKeys[m.league]?.has(`${team}|${m.date}`);
+      const sum = (xs) => (xs.length ? { n: xs.length, w: xs.filter((x) => x.p === 3).length, d: xs.filter((x) => x.p === 1).length, l: xs.filter((x) => x.p === 0).length, ppg: avg(xs.map((x) => x.p)), res: avg(xs.map((x) => x.res)) } : null);
+      const after = own.filter(isBreak).map(persp);
+      const recentFrom = `${Number(cur.slice(0, 4)) - 3}-07-01`; // senaste tre sasongerna + innevarande
+      T.afterBreak = after.length ? { all: sum(after), other: sum(own.filter((m) => !isBreak(m)).map(persp)), recent: sum(after.filter((x) => x.date >= recentFrom)), recentFrom, list: after } : null;
+    }
     // Nyckelspelare (Understat)
     if (playerModel && UNDERSTAT.includes(league) && T.current) {
       const shares = teamShares(playerModel, league, team, today).filter((p) => Date.parse(today) - Date.parse(p.lastApp) < 200 * 864e5).slice(0, 6);
@@ -463,6 +483,7 @@ function leagueMd(L) {
   lines.push('## Lag som marknaden felvärderar?', '',
     `- Lagets poäng mot marknaden en säsong → nästa: ${p.team ? `lutning ${fmt(p.team.slope, 2)} (z ${fmt(p.team.z, 1)}, n ${p.team.n})` : '–'}. ${p.team && Math.abs(p.team.z) < 2 ? 'Ingen persistens: ett lag som slagit oddsen är inte ett bättre spel nästa säsong.' : ''}`,
     `- Lagets extra hemmafördel → nästa säsong: ${p.homeEdge ? `lutning ${fmt(p.homeEdge.slope, 2)} (z ${fmt(p.homeEdge.z, 1)}, n ${p.homeEdge.n})` : '–'}. ${p.homeEdge && Math.abs(p.homeEdge.z) < 2 ? 'Lagspecifik hemmafördel utöver marknaden är brus.' : ''}`, '');
+  lines.push(...altitudeLeagueLines(L.code));
   lines.push(poolSection(L.pool));
   const cur = Object.values(teams).filter((T) => T.league === L.code && T.current).sort((a, b) => a.team.localeCompare(b.team));
   lines.push(...tableLines(L.code));
@@ -481,6 +502,23 @@ function teamMd(T, L) {
   if (prevS && prevS.n >= 20 && Math.abs(prevS.res) >= 0.25) notes.push(`${prevS.season}: ${signed(prevS.res, 2)} poäng per match mot marknaden. Ligan visar ${L.persistence.team && Math.abs(L.persistence.team.z) >= 2.5 ? 'viss' : 'ingen'} persistens, så räkna inte med att det fortsätter.`);
   const strongH2h = T.h2h.filter((h) => h.n >= 6 && Math.abs(h.res) >= 0.5);
   if (strongH2h.length) notes.push(`Stark historik mot ${strongH2h.map((h) => `${h.opp} (${signed(h.res, 2)} p/match mot marknaden, ${h.n} möten)`).join(', ')}. ${L.signals.h2hRes?.verdict?.startsWith('bekräftad') ? 'Inbördes möten är en bekräftad signal i ligan.' : 'Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.'}`);
+  const ab = T.afterBreak;
+  if (ab?.all.n >= 8) {
+    const diff = ab.all.res - ab.other.res;
+    notes.push(`Efter landslagsuppehåll: ${fmt(ab.all.ppg)} poäng per match mot ${fmt(ab.other.ppg)} annars (${ab.all.w}-${ab.all.d}-${ab.all.l} på ${ab.all.n} matcher), mot marknaden ${signed(ab.all.res)} mot ${signed(ab.other.res)}${ab.recent ? `. Sedan ${ab.recentFrom.slice(0, 4)}: ${ab.recent.w}-${ab.recent.d}-${ab.recent.l}` : ''}. ${Math.abs(diff) < 0.25 ? 'Ingen skillnad värd att spela på.' : `${diff > 0 ? 'Bättre' : 'Sämre'} än vanligt, men få matcher: ${L.afterBreak?.n ? `i hela ligan är effekten ${signed(L.afterBreak.res)} mot marknaden` : 'inte testat i ligan'}.`}`);
+  }
+  const sty = styleOf(T.league, T.team);
+  if (sty) {
+    const S = styleSummary(sty);
+    const st = (r) => `${r.type} (${signed(r.rel)}, ${r.stab === 'stabil' ? 'stabilt' : r.stab === 'samma håll' ? 'samma håll i båda halvorna men svagt' : 'svagt'})`;
+    const own = ownStyleLabels(sty.own);
+    if (own.length) notes.push(`Spelstil${sty.ownSeason ? ` ${sty.ownSeason}` : ''}: ${own.join(', ')}.${S.best.length ? ` Bäst mot ${S.best.map(st).join(', ')}.` : ''}${S.worst.length ? ` Svårast mot ${S.worst.map(st).join(', ')}.` : ''} Tal = poäng per match mot marknaden jämfört med lagets eget snitt.`);
+    const sp = sty.sp?.find((s) => s.m >= 10) ?? sty.sp?.[0];
+    if (sp) notes.push(`Fasta situationer ${sp.season}: ${fmt(sp.spFor)} mål för per match (xG ${fmt(sp.spXgFor)}), ${fmt(sp.spAgainst)} emot (xG ${fmt(sp.spXgAgainst)}), ${fmt(sp.corners, 1)} hörnor.`);
+  }
+  const altNote = altitudeNote(T.league, T.team);
+  if (altNote) notes.push(altNote);
+  if (T.hard?.length) notes.push(`Svårt för: ${T.hard.map((h) => `${h.opp} (${h.w}-${h.d}-${h.l}, ${fmt(h.ppg)} p/match, mot marknaden ${signed(h.res)})`).join(', ')}.${T.hard.some((h) => h.res > -0.3) ? ' Där marknaden ligger nära noll är laget bara sämre i de mötena än annars, och oddsen vet redan om det.' : ''}`);
   const kp = (T.keyPlayers ?? []).filter((p) => p.missed >= 3 && p.share >= 0.1);
   for (const p of kp) notes.push(`Utan ${p.name} (${pct(p.share, 0)} av anfallet): ${fmt(p.ppgMissed)} poäng per match mot ${fmt(p.ppgPlayed)} med (${p.missed} mot ${p.played} matcher), mot marknaden ${signed(p.resMissed)} mot ${signed(p.resPlayed)}.`);
   if (T.pool?.length >= 3) {
@@ -493,6 +531,28 @@ function teamMd(T, L) {
   lines.push('## Säsonger', '', '| Säsong | Liga | M | P/M | Mot marknaden (hemma / borta) | Kryss (odds) | Mål för–emot | xG för–emot | xP/M |', '|---|---|---|---|---|---|---|---|---|',
     ...T.seasons.map((s) => `| ${s.season} | ${s.league} | ${s.n} | ${fmt(s.ppg)} | ${signed(s.res)} (${signed(s.resHome)} / ${signed(s.resAway)}) | ${pct(s.draws, 0)} (${pct(s.impDraws, 0)}) | ${fmt(s.gf)}–${fmt(s.ga)} | ${s.xgf != null ? `${fmt(s.xgf)}–${fmt(s.xga)}${s.xgSrc === 'skott' ? '*' : ''}` : '–'} | ${fmt(s.xpts)} |`), '');
   if (T.seasons.some((s) => s.xgSrc === 'skott')) lines.push('\\* xG uppskattat från skott och skott på mål (Understat saknas för ligan).', '');
+  if (sty) {
+    const S = styleSummary(sty, { minN: 1 });
+    lines.push('## Spelstil och fasta situationer', '',
+      `Källa: [stilmatchningen](../../../analys/stil/${T.league}.md#${slug(T.team)}) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil${sty.ownSeason ? ` ${sty.ownSeason}` : ''}: **${ownStyleLabels(sty.own).join(', ') || 'okänd'}**.`, '');
+    if (sty.sp?.length) {
+      lines.push('| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |', '|---|---|---|---|---|---|---|',
+        ...sty.sp.map((s) => `| ${s.season} | ${s.m} | ${fmt(s.spFor)} | ${fmt(s.spXgFor)} | ${fmt(s.spAgainst)} | ${fmt(s.spXgAgainst)} | ${fmt(s.corners, 1)} |`), '');
+    }
+    lines.push('| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |', '|---|---|---|---|---|---|---|---|',
+      ...S.rows.map((r) => `| ${r.type} | ${r.n} | ${fmt(r.gf)}–${fmt(r.ga)} | ${signed(r.vsMkt)} | ${signed(r.rel)} (${fmt(r.zRel, 1)}) | ${signed(r.draw * 100, 0)} pe | ${r.over == null ? '–' : `${signed(r.over * 100, 0)} pe`} | ${r.stab === 'stabil' ? '⚑ stabil' : r.stab === 'samma håll' ? '✔ samma håll' : 'svag'} |`), '',
+      'Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.', '');
+  }
+  if (ab) {
+    const row = (lbl, s) => (s ? `| ${lbl} | ${s.n} | ${s.w}-${s.d}-${s.l} | ${fmt(s.ppg)} | ${signed(s.res)} |` : `| ${lbl} | 0 | – | – | – |`);
+    lines.push('## Efter landslagsuppehåll', '',
+      'Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).', '',
+      '| Matcher | M | V-O-F | P/M | Mot marknaden |', '|---|---|---|---|---|',
+      row('Efter uppehåll', ab.all), row(`Efter uppehåll sedan ${ab.recentFrom.slice(0, 4)}`, ab.recent), row('Övriga matcher', ab.other), '',
+      `Hela ligan efter uppehåll: ${signed(L.afterBreak?.res)} mot marknaden (n ${L.afterBreak?.n ?? 0}). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.`, '',
+      '| Datum | Match | Resultat | Mot marknaden |', '|---|---|---|---|',
+      ...ab.list.slice().reverse().map((x) => `| ${x.date} | ${x.h ? `${T.team} - ${x.opp}` : `${x.opp} - ${T.team}`} | ${x.h ? `${x.gf}-${x.ga}` : `${x.ga}-${x.gf}`} ${x.p === 3 ? 'V' : x.p === 1 ? 'O' : 'F'} | ${signed(x.res)} |`), '');
+  }
   if (T.keyPlayers?.length) {
     lines.push('## Nyckelspelare (Understat, 2024/25–)', '', 'Andel = spelarens del av lagets xG + xA senaste året. Borta = missade minst 2 ligamatcher i rad (skada/avstängning, inte rotation).', '',
       '| Spelare | Andel | Borta / med | P/M borta / med | Mot marknaden borta / med |', '|---|---|---|---|---|',
@@ -503,11 +563,13 @@ function teamMd(T, L) {
     lines.push(`## Inbördes möten (senaste ${H2H_YEARS} åren, lag i ligan nu)`, '', '| Motståndare | M | V-O-F | Mål | Mot marknaden | Kryss mot odds | Senast |', '|---|---|---|---|---|---|---|',
       ...T.h2h.map((h) => `| ${h.opp} | ${h.n} | ${h.w}-${h.d}-${h.l} | ${h.gf}–${h.ga} | ${signed(h.res)} | ${signed(h.drawRes * 100, 0)} pe | ${h.last} ${h.lastScore} |`), '',
       `Ligans test av inbördes möten mot marknaden: ${VERDICT_TXT[L.signals.h2hRes?.verdict ?? 'för lite data']}.`, '');
+    if (T.hard?.length) lines.push(`**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): ${T.hard.map((h) => `${h.opp} ${fmt(h.ppg)} p/match (${signed(h.res)})`).join(', ')}.`, '');
   }
   if (T.pool?.length) {
     lines.push('## Stryktipset / Europatipset', '', '| Datum | Spel | Match | Utfall | Folket på laget | Vår procent |', '|---|---|---|---|---|---|',
       ...T.pool.map((x) => `| ${x.date} | ${x.product === 'stryktipset' ? 'Stryk' : 'Europa'} ${x.draw} | ${x.match} | ${x.outcome}${x.won ? ' ✓' : ''} | ${pct(x.folk, 0)} | ${pct(x.final, 0)} |`), '');
   }
+  lines.push(...altitudeTeamLines(T.league, T.team));
   lines.push(...squadLines(T.league, T.team));
   return lines.join('\n');
 }
@@ -523,6 +585,76 @@ function leagueDoc(code) {
   const c = (leagueDoc.cache ??= new Map());
   if (!c.has(code)) c.set(code, readJsonOpt(path.join(root, 'data', 'ligor', `${code}.json`)));
   return c.get(code);
+}
+// Hoghojd (scripts/lib/altitude.mjs): ligor med arenor pa hoghojd, matcher ur data/matcher/<liga>.csv
+function altitudeDoc(code) {
+  const c = (altitudeDoc.cache ??= new Map());
+  if (c.has(code)) return c.get(code);
+  let doc = null;
+  const file = path.join(root, 'data', 'matcher', `${code}.csv`);
+  if (ALTITUDE[code] && fs.existsSync(file)) {
+    const lines = fs.readFileSync(file, 'utf8').split(/\r?\n/).filter(Boolean);
+    const head = lines[0].split(',');
+    const ms = lines.slice(1).map((l) => Object.fromEntries(l.split(',').map((x, i) => [head[i], x]))).filter((r) => r.status === 'spelad' && r.hg !== '').map((r) => {
+      const o = [+r.close_h, +r.close_d, +r.close_a], s = o[0] + o[1] + o[2];
+      return { date: r.date, home: r.home, away: r.away, hg: +r.hg, ag: +r.ag, ...(r.close_h && s > 0 ? { pH: o[0] / s, pD: o[1] / s, pA: o[2] / s } : {}) };
+    });
+    const split = '2019-07-01';
+    doc = { all: altitudeStats(code, ms), early: altitudeStats(code, ms.filter((m) => m.date < split)), late: altitudeStats(code, ms.filter((m) => m.date >= split)), split, n: ms.length };
+  }
+  c.set(code, doc);
+  return doc;
+}
+const altZ = (L) => (L.alt?.res != null && L.other?.res != null ? (L.alt.res - L.other.res) / (1.2 * Math.sqrt(1 / L.alt.nRes + 1 / L.other.nRes)) : null);
+function altitudeLeagueLines(code) {
+  const d = altitudeDoc(code);
+  if (!d?.all.league.alt) return [];
+  const L = d.all.league, odds = L.alt.res != null;
+  const row = (lbl, s) => (s ? `| ${lbl} | ${s.n} | ${s.w}-${s.d}-${s.l} | ${fmt(s.ppg)} | ${odds ? signed(s.res) : '–'} |` : `| ${lbl} | 0 | – | – | – |`);
+  const out = ['## Höghöjd', '',
+    `Hemmalag på arena ≥ ${HIGH} m mot bortalag från minst ${MIN_DIFF} m lägre (arenahöjder i \`scripts/lib/altitude.mjs\`).`, '',
+    '| Hemmamatcher | M | V-O-F | P/M | Mot marknaden |', '|---|---|---|---|---|', row('På höghöjd mot låglandslag', L.alt), row('Övriga', L.other), ''];
+  if (odds) {
+    const z = altZ(L), ze = altZ(d.early.league), zl = altZ(d.late.league);
+    const sure = ze != null && zl != null && Math.sign(ze) === Math.sign(zl) && Math.abs(ze) >= 2 && Math.abs(zl) >= 1.5;
+    out.push(`Skillnad mot marknaden: ${signed(L.alt.res - L.other.res)} poäng per match för hemmalaget (z ${fmt(z, 1)}). Före ${d.split.slice(0, 4)}: z ${fmt(ze, 1)}, efter: z ${fmt(zl, 1)}. ${sure ? '**Håller i båda perioderna: marknaden underskattar höghöjden.**' : Math.abs(z ?? 0) >= 2 ? 'Svag signal, håller inte säkert i båda perioderna.' : 'Ingen effekt mot marknaden: oddsen prisar redan in höjden.'}`, '');
+  } else out.push('Ligan saknar odds, så höjden kan bara jämföras i poäng (marknaden kan redan ta hänsyn till den).', '');
+  const hard = hardestAtAltitude(d.all);
+  if (hard.length) {
+    out.push('### Bortalag på höghöjd', '', '| Lag | M på höghöjd | P/M höghöjd | P/M övriga borta | Skillnad | Mot marknaden höghöjd / övriga |', '|---|---|---|---|---|---|',
+      ...hard.map((h) => `| ${h.team} | ${h.alt.n} | ${fmt(h.alt.ppg)} | ${fmt(h.other.ppg)} | ${signed(h.diff)} | ${odds ? `${signed(h.alt.res)} / ${signed(h.other.res)}` : '–'} |`), '');
+  }
+  return out;
+}
+function altitudeTeamLines(code, team) {
+  const d = altitudeDoc(code);
+  if (!d) return [];
+  const a = d.all.away[team], h = d.all.home[team];
+  const odds = d.all.league.alt?.res != null;
+  const out = [];
+  if (!a?.alt && !h?.alt) return out;
+  const row = (lbl, s) => (s ? `| ${lbl} | ${s.n} | ${s.w}-${s.d}-${s.l} | ${fmt(s.ppg)} | ${odds ? signed(s.res) : '–'} |` : `| ${lbl} | 0 | – | – | – |`);
+  out.push('## Höghöjd', '', `Arenans höjd: ca ${altitudeOf(code, team)} m. Höghöjdsmatch = arena ≥ ${HIGH} m och bortalaget från minst ${MIN_DIFF} m lägre.`, '',
+    '| Matcher | M | V-O-F | P/M | Mot marknaden |', '|---|---|---|---|---|');
+  if (h?.alt) out.push(row('Hemma mot låglandslag', h.alt), row('Hemma mot övriga', h.other));
+  if (a?.alt) out.push(row('Borta på höghöjd', a.alt), row('Borta övriga', a.other));
+  out.push('', `Ligan: se [${code}](../../ligor/${code}.md#höghöjd).`, '');
+  return out;
+}
+function altitudeNote(code, team) {
+  const d = altitudeDoc(code);
+  const a = d?.all.away[team], h = d?.all.home[team];
+  const odds = d?.all.league.alt?.res != null;
+  const parts = [];
+  if (a?.alt?.n >= 5) parts.push(`borta på höghöjd ${fmt(a.alt.ppg)} poäng per match mot ${fmt(a.other.ppg)} i övriga bortamatcher (${a.alt.n} matcher${odds ? `, mot marknaden ${signed(a.alt.res)} mot ${signed(a.other.res)}` : ''})${a.alt.ppg < a.other.ppg - 0.2 ? ': **svårare på höghöjd**' : ''}`);
+  if (h?.alt?.n >= 5) parts.push(`hemma på ${altitudeOf(code, team)} m mot låglandslag ${fmt(h.alt.ppg)} poäng per match mot ${fmt(h.other.ppg)} mot övriga (${h.alt.n} matcher${odds ? `, mot marknaden ${signed(h.alt.res)} mot ${signed(h.other.res)}` : ''})`);
+  return parts.length ? `Höghöjd: ${parts.join('; ')}.` : null;
+}
+
+// Lagets stil och fasta situationer ur data/stilmatchning.json (node scripts/analyze-style-matchups.mjs)
+function styleOf(code, team) {
+  styleOf.doc ??= readJsonOpt(path.join(root, 'data', 'stilmatchning.json')) ?? {};
+  return styleOf.doc.leagues?.[code]?.teams?.[team] ?? null;
 }
 function readJsonOpt(p) { try { return JSON.parse(fs.readFileSync(p, 'utf8')); } catch { return null; } }
 const ROLE_TXT = { keepers: 'Målvakter', defenders: 'Backar', midfielders: 'Mittfältare', attackers: 'Anfallare' };
@@ -693,6 +825,7 @@ function basicTeamMd(code, name, team, list, noOdds = true) {
         'Inbördes möten slår inte oddsen i någon av de 23 ligorna där det gick att testa (se [README](../../README.md)). Använd dem inte för att flytta procent.', '');
     }
   }
+  lines.push(...altitudeTeamLines(code, team));
   lines.push(...squadLines(code, team));
   return lines.join('\n');
 }
@@ -720,6 +853,7 @@ for (const code of Object.keys(leaguesCfg)) {
   }
   notes.push('Utan odds finns ingen marknad att lära av. Oddsen vi ser före varje match sparas nu (`pre_*` i matcherfilen), så marknadstestet kan köras här efter cirka 150 matcher.');
   lines.push(...notes.map((x) => `- ${x}`), '');
+  lines.push(...altitudeLeagueLines(code));
   if (list.length) {
     lines.push('## Säsonger', '', '| Säsong | M | Hemma | Kryss | Borta | Mål/M | Över 2,5 | Båda gör mål |', '|---|---|---|---|---|---|---|---|');
     for (const s of [...new Set(list.map((m) => m.season))].sort()) {

@@ -1,12 +1,16 @@
 # Villarreal (La Liga) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [LL](../../ligor/LL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [LL](../../ligor/LL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Senaste 8: otur med −0,52 poäng per match mot xP. Marknaden prisar redan in det i ligan (ingen bekräftad effekt), så det är inget spel i sig.
 - Senaste 8: xG-målskillnaden är +0,55 per match bättre än målskillnaden.
 - 2025/26: +0,33 poäng per match mot marknaden. Ligan visar ingen persistens, så räkna inte med att det fortsätter.
+- Efter landslagsuppehåll: 1,65 poäng per match mot 1,57 annars (14-9-8 på 31 matcher), mot marknaden +0,07 mot +0,03. Sedan 2023: 4-4-3. Ingen skillnad värd att spela på.
+- Spelstil 2025/26: Backar hem, Kortpass, Lågpress, Svag på fasta, Medel mot fasta. Bäst mot Balanserat (+0,09, svagt), Kortpass (+0,12, samma håll i båda halvorna men svagt), Svag på fasta (+0,07, svagt). Svårast mot Bollinnehav (−0,13, samma håll i båda halvorna men svagt), Medel på fasta (−0,08, svagt), Blandat (−0,06, svagt). Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2025/26: 0,18 mål för per match (xG 0,20), 0,16 emot (xG 0,18), 4,2 hörnor.
+- Svårt för: Barcelona (3-1-12, 0,63 p/match, mot marknaden −0,19), Real Madrid (2-6-8, 0,75 p/match, mot marknaden −0,11), Ath Madrid (2-9-6, 0,88 p/match, mot marknaden −0,10), Ath Bilbao (3-7-5, 1,07 p/match, mot marknaden −0,24), Alaves (6-3-6, 1,40 p/match, mot marknaden −0,38), Elche (4-2-2, 1,75 p/match, mot marknaden −0,34). Där marknaden ligger nära noll är laget bara sämre i de mötena än annars, och oddsen vet redan om det.
 - Utan Ayoze Pérez (10 % av anfallet): 1,82 poäng per match mot 1,80 med (17 mot 66 matcher), mot marknaden +0,28 mot +0,20.
 
 ## Nuläge (senaste 8 ligamatcher)
@@ -33,6 +37,81 @@ Form (äldst → senast): VOOFFFVV · senaste match 2026-09-20
 | 2024/25 | LL | 38 | 1,84 | +0,20 (−0,08 / +0,49) | 26 % (25 %) | 1,87–1,34 | 1,95–1,36 | 1,73 |
 | 2025/26 | LL | 38 | 1,89 | +0,33 (+0,62 / +0,04) | 16 % (25 %) | 1,89–1,21 | 1,81–1,41 | 1,63 |
 | 2026/27 | LL | 7 | 1,14 | −0,40 (−0,98 / +0,04) | 29 % (24 %) | 1,86–1,71 | 2,80–1,63 | 1,88 |
+
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/LL.md#villarreal) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2025/26: **Backar hem, Kortpass, Lågpress, Svag på fasta, Medel mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026/27 | 7 | 0,14 | 0,31 | 0,14 | 0,19 | 7,3 |
+| 2025/26 | 38 | 0,18 | 0,20 | 0,16 | 0,18 | 4,2 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Backar hem | 92 | 1,58–1,14 | +0,04 | −0,00 (−0,0) | +4 pe | +5 pe | svag |
+| Balanserat | 129 | 1,70–1,27 | +0,13 | +0,09 (0,8) | +1 pe | +8 pe | svag |
+| Bollinnehav | 84 | 1,70–1,43 | −0,09 | −0,13 (−0,9) | −8 pe | +6 pe | ✔ samma håll |
+| Kortpass | 70 | 1,77–1,36 | +0,16 | +0,12 (0,7) | −10 pe | +6 pe | ✔ samma håll |
+| Blandat | 131 | 1,68–1,40 | −0,02 | −0,06 (−0,6) | +0 pe | +8 pe | svag |
+| Direktspel | 104 | 1,57–1,07 | +0,04 | +0,00 (0,0) | +4 pe | +5 pe | svag |
+| Lågpress | 78 | 1,74–1,14 | +0,07 | +0,02 (0,2) | +2 pe | +2 pe | svag |
+| Mellanpress | 137 | 1,63–1,33 | −0,01 | −0,05 (−0,5) | −1 pe | +9 pe | svag |
+| Högpress | 90 | 1,64–1,31 | +0,10 | +0,06 (0,4) | −3 pe | +6 pe | svag |
+| Svag på fasta | 85 | 1,69–1,33 | +0,12 | +0,07 (0,6) | −1 pe | +9 pe | svag |
+| Medel på fasta | 131 | 1,57–1,27 | −0,04 | −0,08 (−0,8) | +2 pe | +3 pe | svag |
+| Farlig på fasta | 89 | 1,76–1,22 | +0,09 | +0,05 (0,4) | −4 pe | +10 pe | svag |
+| Stark mot fasta | 106 | 1,68–1,31 | +0,05 | +0,01 (0,0) | +5 pe | +5 pe | svag |
+| Medel mot fasta | 112 | 1,72–1,24 | +0,00 | −0,04 (−0,3) | −1 pe | +6 pe | svag |
+| Svag mot fasta | 87 | 1,56–1,28 | +0,08 | +0,04 (0,3) | −8 pe | +9 pe | svag |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
+
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 31 | 14-9-8 | 1,65 | +0,07 |
+| Efter uppehåll sedan 2023 | 11 | 4-4-3 | 1,45 | −0,12 |
+| Övriga matcher | 318 | 140-78-100 | 1,57 | +0,03 |
+
+Hela ligan efter uppehåll: 0,00 mot marknaden (n 630). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2026-04-06 | Girona - Villarreal | 1-0 F | −1,77 |
+| 2025-11-22 | Villarreal - Mallorca | 2-1 V | +0,75 |
+| 2025-10-18 | Villarreal - Betis | 2-2 O | −0,66 |
+| 2025-09-13 | Ath Madrid - Villarreal | 2-0 F | −1,12 |
+| 2024-11-24 | Osasuna - Villarreal | 2-2 O | +0,39 |
+| 2024-10-20 | Villarreal - Getafe | 1-1 O | −0,84 |
+| 2024-09-14 | Mallorca - Villarreal | 1-2 V | +1,51 |
+| 2024-04-01 | Villarreal - Ath Madrid | 1-2 F | −1,14 |
+| 2023-11-26 | Villarreal - Osasuna | 3-1 V | +1,39 |
+| 2023-10-22 | Villarreal - Alaves | 1-1 O | −0,69 |
+| 2023-09-17 | Villarreal - Almeria | 2-1 V | +0,90 |
+| 2023-04-02 | Villarreal - Sociedad | 2-0 V | +1,58 |
+| 2022-12-31 | Villarreal - Valencia | 2-1 V | +1,29 |
+| 2022-10-01 | Cadiz - Villarreal | 0-0 O | −0,17 |
+| 2022-04-02 | Levante - Villarreal | 2-0 F | −2,23 |
+| 2021-11-20 | Celta - Villarreal | 1-1 O | +0,48 |
+| 2021-10-17 | Villarreal - Osasuna | 1-2 F | −2,12 |
+| 2021-04-03 | Granada - Villarreal | 0-3 V | +0,92 |
+| 2020-11-21 | Villarreal - Real Madrid | 1-1 O | −0,33 |
+| 2020-10-18 | Villarreal - Valencia | 2-1 V | +1,02 |
+| 2019-11-24 | Villarreal - Celta | 1-3 F | −1,88 |
+| 2019-10-20 | Espanol - Villarreal | 0-1 V | +1,23 |
+| 2019-09-14 | Leganes - Villarreal | 0-3 V | +1,43 |
+| 2019-03-30 | Celta - Villarreal | 3-2 F | −1,52 |
+| 2018-11-25 | Villarreal - Betis | 2-1 V | +1,35 |
+| 2018-10-20 | Villarreal - Ath Madrid | 1-1 O | −0,03 |
+| 2018-09-16 | Leganes - Villarreal | 0-1 V | +1,28 |
+| 2018-04-01 | Malaga - Villarreal | 1-0 F | −2,05 |
+| 2017-11-19 | Ath Bilbao - Villarreal | 1-1 O | +0,61 |
+| 2017-10-15 | Girona - Villarreal | 1-2 V | +1,39 |
+| 2017-09-10 | Villarreal - Betis | 3-1 V | +1,23 |
 
 ## Nyckelspelare (Understat, 2024/25–)
 
@@ -75,6 +154,8 @@ Ligans test av frånvaro mot marknaden: ingen effekt. Få matcher per spelare: s
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): Barcelona 0,63 p/match (−0,19), Real Madrid 0,75 p/match (−0,11), Ath Madrid 0,88 p/match (−0,10), Ath Bilbao 1,07 p/match (−0,24), Alaves 1,40 p/match (−0,38), Elche 1,75 p/match (−0,34).
+
 ## Stryktipset / Europatipset
 
 | Datum | Spel | Match | Utfall | Folket på laget | Vår procent |
@@ -90,40 +171,40 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-12-21 | Europa 2533 | Villarreal - Barcelona | 2 | 16 % | 25 % |
 | 2025-08-31 | Europa 2501 | Celta de Vigo - Villarreal | X | 44 % | 39 % |
 
-## Trupp (FotMob, hämtad 2026-09-29)
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Inigo Pérez. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Juan Foyth (osäker), Santi Comesaña (skadad, åter Early October 2026)
+**Skadade/borta nu:** Santi Comesaña (skadad, åter Mid October 2026)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Luíz Júnior | GK | 25 | Brazil | 11,1 M€ | 5,77 | 0 | 0 | 0/0 |  |
-| 25 | Péter Gulácsi | GK | 36 | Hungary | 1,3 M€ | 7,37 | 0 | 0 | 0/0 |  |
+| 1 | Luíz Júnior | GK | 25 | Brazil | 14,0 M€ | 5,77 | 0 | 0 | 0/0 |  |
+| 25 | Péter Gulácsi | GK | 36 | Hungary | 1,1 M€ | 7,37 | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | Logan Costa | CB | 25 | Cape Verde | 15,7 M€ | 6,07 | 0 | 0 | 0/0 |  |
-| 3 | Alex Freeman | RB,CB | 22 | USA | 2,0 M€ | 7,14 | 0 | 0 | 0/0 |  |
-| 6 | Pau Navarro | CB,RB | 21 | Spain | 9,2 M€ | 7,00 | 0 | 0 | 0/0 |  |
-| 8 | Juan Foyth | CB | 28 | Argentina | 9,3 M€ | 7,43 | 0 | 0 | 2/0 | osäker |
-| 12 | Renato Veiga | CB | 23 | Portugal | 20,0 M€ | 6,93 | 0 | 1 | 2/0 |  |
-| 15 | Santiago Mouriño | RB | 24 | Uruguay | 9,9 M€ | 6,63 | 0 | 0 | 2/0 |  |
-| 20 | Carlos Romero | LB | 24 | Spain | 14,1 M€ | 6,96 | 0 | 0 | 1/0 |  |
-| 23 | Sergi Cardona | LB | 27 | Spain | 6,8 M€ | 6,91 | 0 | 0 | 0/0 |  |
+| 2 | Logan Costa | CB | 25 | Cape Verde | 16,8 M€ | 6,07 | 0 | 0 | 0/0 |  |
+| 3 | Alex Freeman | RB,CB | 22 | USA | 5,3 M€ | 7,14 | 0 | 0 | 0/0 |  |
+| 6 | Pau Navarro | CB,RB | 21 | Spain | 15,1 M€ | 7,00 | 0 | 0 | 0/0 |  |
+| 8 | Juan Foyth | CB | 28 | Argentina | 7,9 M€ | 7,43 | 0 | 0 | 2/0 |  |
+| 12 | Renato Veiga | CB | 23 | Portugal | 37,6 M€ | 6,93 | 0 | 1 | 2/0 |  |
+| 15 | Santiago Mouriño | RB | 24 | Uruguay | 19,9 M€ | 6,63 | 0 | 0 | 2/0 |  |
+| 20 | Carlos Romero | LB | 24 | Spain | 23,1 M€ | 6,96 | 0 | 0 | 1/0 |  |
+| 23 | Sergi Cardona | LB | 27 | Spain | 6,4 M€ | 6,91 | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 5 | Alassane Diatta | LM | 21 | Senegal | 898 k€ | – | 0 | 0 | 0/0 |  |
-| 10 | Alberto Moleiro | LM,ST | 22 | Spain | 23,2 M€ | 7,32 | 2 | 3 | 0/0 |  |
-| 14 | Santi Comesaña | CM,RM | 29 | Spain | 4,8 M€ | 6,75 | 0 | 0 | 1/0 | skadad, åter Early October 2026 |
-| 16 | Carlos Maciá | CM | 18 | Spain | 2,2 M€ | 6,50 | 0 | 0 | 0/0 |  |
-| 17 | Tajon Buchanan | RM,LM,LW | 27 | Canada | 9,3 M€ | 6,90 | 0 | 0 | 2/0 |  |
-| 18 | Pape Gueye | CM,CDM | 27 | Senegal | 21,8 M€ | 7,32 | 3 | 0 | 1/0 |  |
-| 19 | Nicolas Pépé | RM,ST,RW | 31 | Ivory Coast | 2,5 M€ | 7,20 | 2 | 0 | 1/0 |  |
-| 24 | Nathan Saliba | CDM,CM,CAM | 22 | Canada | 3,7 M€ | 7,08 | 0 | 0 | 0/0 |  |
-| 28 | Mahamoud Barry | Midfielder | 20 | Mali | 345 k€ | – | 0 | 0 | 0/0 |  |
+| 5 | Alassane Diatta | LM | 21 | Senegal | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 10 | Alberto Moleiro | LM,ST | 23 | Spain | 46,7 M€ | 7,32 | 2 | 3 | 0/0 |  |
+| 14 | Santi Comesaña | CM,RM | 29 | Spain | 6,2 M€ | 6,75 | 0 | 0 | 1/0 | skadad, åter Mid October 2026 |
+| 16 | Carlos Maciá | CM | 18 | Spain | 5,8 M€ | 6,50 | 0 | 0 | 0/0 |  |
+| 17 | Tajon Buchanan | RM,LM | 27 | Canada | 13,1 M€ | 6,90 | 0 | 0 | 2/0 |  |
+| 18 | Pape Gueye | CM,CDM | 27 | Senegal | 34,7 M€ | 7,32 | 3 | 0 | 1/0 |  |
+| 19 | Nicolas Pépé | RM,ST,RW | 31 | Ivory Coast | 4,8 M€ | 7,20 | 2 | 0 | 1/0 |  |
+| 24 | Nathan Saliba | CDM,CM,CAM | 22 | Canada | 8,9 M€ | 7,08 | 0 | 0 | 0/0 |  |
+| 28 | Mahamoud Barry | Midfielder | 20 | Mali | 276 k€ | – | 0 | 0 | 0/0 |  |
 | 30 | Cheikh Tidiane Thiam | Midfielder | 21 | Senegal | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Gerard Moreno | ST | 34 | Spain | 1,7 M€ | 7,05 | 2 | 0 | 0/0 |  |
-| 9 | Georges Mikautadze | ST | 25 | Georgia | 22,7 M€ | 7,07 | 2 | 1 | 0/0 |  |
-| 11 | Ilias Akhomach | RW,RM | 22 | Morocco | 11,0 M€ | 6,75 | 0 | 2 | 1/0 |  |
-| 21 | Tani Oluwaseyi | ST | 26 | Canada | 5,4 M€ | 6,20 | 0 | 0 | 0/0 |  |
-| 22 | Ayoze Pérez | ST | 33 | Spain | 2,8 M€ | 6,91 | 1 | 2 | 0/0 |  |
+| 9 | Georges Mikautadze | ST | 25 | Georgia | 33,2 M€ | 7,07 | 2 | 1 | 0/0 |  |
+| 11 | Ilias Akhomach | RW,RM | 22 | Morocco | 14,2 M€ | 6,75 | 0 | 2 | 1/0 |  |
+| 21 | Tani Oluwaseyi | ST | 26 | Canada | 8,4 M€ | 6,20 | 0 | 0 | 0/0 |  |
+| 22 | Ayoze Pérez | ST | 33 | Spain | 4,3 M€ | 6,91 | 1 | 2 | 0/0 |  |

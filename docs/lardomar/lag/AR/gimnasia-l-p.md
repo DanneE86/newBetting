@@ -1,10 +1,13 @@
 # Gimnasia L.P. (Liga Profesional) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [AR](../../ligor/AR.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Stark historik mot Racing Club (+0,51 p/match mot marknaden, 9 möten), Barracas Central (+0,51 p/match mot marknaden, 8 möten), Defensa y Justicia (−0,63 p/match mot marknaden, 8 möten), Newells Old Boys (+0,99 p/match mot marknaden, 8 möten), Aldosivi (+0,86 p/match mot marknaden, 6 möten), Instituto (−0,53 p/match mot marknaden, 6 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Spelstil 2026: Backar hem, Kortpass, Farlig på fasta, Svag mot fasta. Bäst mot Bollinnehav (+0,52, stabilt), Svag mot fasta (+0,35, samma håll i båda halvorna men svagt), Högpress (+0,17, samma håll i båda halvorna men svagt). Svårast mot Balanserat (−0,26, samma håll i båda halvorna men svagt), Svag på fasta (−0,19, samma håll i båda halvorna men svagt), Medel mot fasta (−0,17, samma håll i båda halvorna men svagt). Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2026: 0,38 mål för per match (xG 0,35), 0,45 emot (xG 0,29), 3,9 hörnor.
+- Svårt för: River Plate (2-2-10, 0,57 p/match, mot marknaden −0,13), Defensa y Justicia (1-2-5, 0,63 p/match, mot marknaden −0,63), Instituto (1-1-4, 0,67 p/match, mot marknaden −0,53), Estudiantes L.P. (1-8-6, 0,73 p/match, mot marknaden −0,35), Lanus (2-3-4, 1,00 p/match, mot marknaden −0,14), Boca Juniors (2-1-4, 1,00 p/match, mot marknaden +0,08), Banfield (3-3-5, 1,09 p/match, mot marknaden −0,20), Rosario Central (4-0-7, 1,09 p/match, mot marknaden −0,12), San Lorenzo (3-2-5, 1,10 p/match, mot marknaden −0,14), Talleres Cordoba (4-2-6, 1,17 p/match, mot marknaden +0,04). Där marknaden ligger nära noll är laget bara sämre i de mötena än annars, och oddsen vet redan om det.
 
 ## Nuläge (senaste 8 ligamatcher)
 
@@ -36,6 +39,51 @@ Form (äldst → senast): VVFFVVOO · senaste match 2026-09-19
 | 2025 | AR | 35 | 1,26 | +0,00 (−0,13 / +0,13) | 14 % (31 %) | 0,77–1,03 | – | – |
 | 2026 | AR | 28 | 1,64 | +0,34 (+0,32 / +0,35) | 14 % (31 %) | 1,25–1,29 | – | – |
 
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/AR.md#gimnasia-l-p) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2026: **Backar hem, Kortpass, Farlig på fasta, Svag mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026 | 29 | 0,38 | 0,35 | 0,45 | 0,29 | 3,9 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Backar hem | 56 | 1,07–0,95 | +0,18 | +0,03 (0,2) | −5 pe | – | svag |
+| Balanserat | 87 | 0,90–1,38 | −0,12 | −0,26 (−1,9) | −10 pe | – | ✔ samma håll |
+| Bollinnehav | 41 | 1,29–0,95 | +0,66 | +0,52 (2,7) | −6 pe | – | ⚑ stabil |
+| Kortpass | 43 | 1,09–1,19 | +0,21 | +0,06 (0,3) | −6 pe | – | svag |
+| Blandat | 82 | 1,05–1,11 | +0,18 | +0,03 (0,2) | −6 pe | – | svag |
+| Direktspel | 59 | 0,98–1,19 | +0,05 | −0,09 (−0,5) | −11 pe | – | svag |
+| Lågpress | 58 | 0,88–1,34 | +0,06 | −0,09 (−0,5) | −19 pe | – | svag |
+| Mellanpress | 58 | 1,16–1,24 | +0,03 | −0,11 (−0,6) | −6 pe | – | svag |
+| Högpress | 68 | 1,07–0,91 | +0,31 | +0,17 (1,2) | +1 pe | – | ✔ samma håll |
+| Svag på fasta | 71 | 0,90–1,24 | −0,04 | −0,19 (−1,3) | −2 pe | – | ✔ samma håll |
+| Medel på fasta | 53 | 1,17–0,94 | +0,31 | +0,16 (0,9) | −9 pe | – | ✔ samma håll |
+| Farlig på fasta | 43 | 0,88–1,23 | +0,04 | −0,10 (−0,5) | −12 pe | – | svag |
+| Stark mot fasta | 57 | 0,98–1,23 | +0,07 | −0,08 (−0,5) | −4 pe | – | ✔ samma håll |
+| Medel mot fasta | 75 | 0,91–1,23 | −0,02 | −0,17 (−1,2) | −6 pe | – | ✔ samma håll |
+| Svag mot fasta | 27 | 1,33–0,63 | +0,50 | +0,35 (1,4) | −12 pe | – | ✔ samma håll |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
+
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 2 | 0-0-2 | 0,00 | −1,37 |
+| Efter uppehåll sedan 2023 | 0 | – | – | – |
+| Övriga matcher | 445 | 160-113-172 | 1,33 | +0,03 |
+
+Hela ligan efter uppehåll: 0,00 mot marknaden (n 66). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2019-11-24 | Gimnasia L.P. - Arsenal Sarandi | 0-1 F | −1,61 |
+| 2019-09-15 | Gimnasia L.P. - Racing Club | 1-2 F | −1,14 |
+
 ## Inbördes möten (senaste 8 åren, lag i ligan nu)
 
 | Motståndare | M | V-O-F | Mål | Mot marknaden | Kryss mot odds | Senast |
@@ -49,9 +97,9 @@ Form (äldst → senast): VVFFVVOO · senaste match 2026-09-19
 | Banfield | 11 | 3-3-5 | 12–15 | −0,20 | −3 pe | 2026-09-19 2-2 (h) |
 | Independiente | 11 | 5-2-4 | 10–9 | +0,50 | −13 pe | 2025-07-27 1-0 (h) |
 | Rosario Central | 11 | 4-0-7 | 10–16 | −0,12 | −31 pe | 2026-08-29 2-1 (b) |
-| Union de Santa Fe | 11 | 4-1-6 | 10–13 | −0,00 | −22 pe | 2025-11-25 2-1 (b) |
 | Argentinos Jrs | 10 | 4-3-3 | 13–13 | +0,46 | +1 pe | 2026-09-13 1-1 (b) |
 | San Lorenzo | 10 | 3-2-5 | 5–11 | −0,14 | −12 pe | 2025-07-19 0-0 (b) |
+| Union de Santa Fe | 10 | 4-1-5 | 10–12 | +0,08 | −21 pe | 2025-11-25 2-1 (b) |
 | Lanus | 9 | 2-3-4 | 6–11 | −0,14 | +4 pe | 2025-08-17 1-2 (h) |
 | Racing Club | 9 | 4-2-3 | 11–10 | +0,51 | −8 pe | 2026-07-24 1-2 (b) |
 | Sarmiento Junin | 9 | 2-5-2 | 5–6 | −0,26 | +25 pe | 2026-04-13 2-1 (b) |
@@ -72,53 +120,55 @@ Form (äldst → senast): VVFFVVOO · senaste match 2026-09-19
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
-## Trupp (FotMob, hämtad 2026-09-29)
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): River Plate 0,57 p/match (−0,13), Defensa y Justicia 0,63 p/match (−0,63), Instituto 0,67 p/match (−0,53), Estudiantes L.P. 0,73 p/match (−0,35), Lanus 1,00 p/match (−0,14), Boca Juniors 1,00 p/match (+0,08), Banfield 1,09 p/match (−0,20), Rosario Central 1,09 p/match (−0,12), San Lorenzo 1,10 p/match (−0,14), Talleres Cordoba 1,17 p/match (+0,04).
+
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Ariel Pereyra. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Harlen Castillo (skadad, åter Mid October 2026), Gonzalo Errecalde (skadad, åter Mid October 2026), Juan Cortazzo (skadad, åter Mid October 2026), Jeremías Merlo (skadad, åter Mid October 2026)
+**Skadade/borta nu:** Germán Conti (skadad, åter A few weeks), Gonzalo Errecalde (skadad, åter Mid October 2026), Jeremías Merlo (skadad, åter Mid October 2026)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
 | 1 | Máximo Cabrera | GK | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 12 | Patricio Schroeder | Keeper | 19 | Republic of Ireland | – | – | 0 | 0 | 0/0 |  |
-| 15 | Harlen Castillo | GK | 33 | Colombia | 381 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
-| 23 | Nelson Insfrán | GK | 31 | Argentina | 1,4 M€ | – | 0 | 0 | 0/0 |  |
-| 27 | Julián Kadijevic | GK | 22 | Argentina | 264 k€ | – | 0 | 0 | 0/0 |  |
+| 15 | Harlen Castillo | GK | 33 | Colombia | 437 k€ | – | 0 | 0 | 0/0 |  |
+| 23 | Nelson Insfrán | GK | 31 | Argentina | 1,5 M€ | – | 0 | 0 | 0/0 |  |
+| 27 | Julián Kadijevic | GK | 22 | Argentina | 380 k€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
 |  | Mariano Ojeda | Defender | 19 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 4 | Renzo Giampaoli | CB | 26 | Argentina | 1,3 M€ | – | 0 | 0 | 0/0 |  |
-| 13 | Germán Conti | CB | 32 | Argentina | 275 k€ | – | 0 | 0 | 0/0 |  |
-| 14 | Gonzalo Errecalde | CB | 26 | Argentina | 326 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
-| 21 | Enzo Martínez | CB | 28 | Uruguay | 892 k€ | – | 0 | 0 | 0/0 |  |
-| 22 | Matías Melluso | LB | 28 | Argentina | 257 k€ | – | 0 | 0 | 0/0 |  |
-| 24 | Pedro Silva Torrejón | LB | 29 | Argentina | 715 k€ | – | 0 | 0 | 0/0 |  |
-| 25 | Alexis Steimbach | RB,RM | 24 | Argentina | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 13 | Germán Conti | CB | 32 | Argentina | 275 k€ | – | 0 | 0 | 0/0 | skadad, åter A few weeks |
+| 14 | Gonzalo Errecalde | CB | 26 | Argentina | 314 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 21 | Enzo Martínez | CB | 28 | Uruguay | 1,1 M€ | – | 0 | 0 | 0/0 |  |
+| 22 | Matías Melluso | LB | 28 | Argentina | 254 k€ | – | 0 | 0 | 0/0 |  |
+| 24 | Pedro Silva Torrejón | LB | 29 | Argentina | 783 k€ | – | 0 | 0 | 0/0 |  |
+| 25 | Alexis Steimbach | RB,RM | 24 | Argentina | 1,3 M€ | – | 0 | 0 | 0/0 |  |
 | 28 | Fabricio Corbalán | RB | 23 | Argentina | 430 k€ | – | 0 | 0 | 0/0 |  |
-| 31 | Bautista Barros Schelotto | RB,LB | 26 | Argentina | 316 k€ | – | 0 | 0 | 0/0 |  |
-| 35 | Juan Cortazzo | CB | 20 | Argentina | 722 k€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 31 | Bautista Barros Schelotto | RB,LB | 26 | Argentina | 311 k€ | – | 0 | 0 | 0/0 |  |
+| 35 | Juan Cortazzo | CB | 20 | Argentina | 803 k€ | – | 0 | 0 | 0/0 |  |
 | 36 | Lucas Lamella | Defender | 16 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 37 | Jeremías Langa | Defender | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | 46 | Alejo Gelsomino | Defender | 21 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 5 | Ignacio Miramón | CDM,CM | 23 | Argentina | 1,3 M€ | – | 0 | 0 | 0/0 |  |
-| 10 | Nicolás Barros Schelotto | CDM,CAM,CM,LM | 20 | Argentina | 1,4 M€ | – | 0 | 0 | 0/0 |  |
-| 16 | Augusto Max | CDM,CM,CB | 34 | Argentina | 283 k€ | – | 0 | 0 | 0/0 |  |
-| 18 | Mateo Seoane | CDM,RM | 22 | Argentina | 553 k€ | – | 0 | 0 | 0/0 |  |
-| 33 | Pablo Aguiar | CDM | 20 | Paraguay | 486 k€ | – | 0 | 0 | 0/0 |  |
+| 5 | Ignacio Miramón | CDM,CM | 23 | Argentina | 1,6 M€ | – | 0 | 0 | 0/0 |  |
+| 10 | Nicolás Barros Schelotto | CDM,CAM,CM,LM | 20 | Argentina | 3,7 M€ | – | 0 | 0 | 0/0 |  |
+| 16 | Augusto Max | CDM,CM,CB | 34 | Argentina | 350 k€ | – | 0 | 0 | 0/0 |  |
+| 18 | Mateo Seoane | CDM,RM | 22 | Argentina | 548 k€ | – | 0 | 0 | 0/0 |  |
+| 33 | Pablo Aguiar | CDM | 20 | Paraguay | 467 k€ | – | 0 | 0 | 0/0 |  |
 | 34 | Leandro Mamut | CM | 22 | Argentina | 481 k€ | – | 0 | 0 | 0/0 |  |
 | 39 | Facundo Di Biasi | CM | 21 | Argentina | 910 k€ | – | 0 | 0 | 0/0 |  |
 | 42 | Santiago Villarreal | Midfielder | 20 | Argentina | – | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Manuel Panaro | LW,RW | 23 | Argentina | 1,8 M€ | – | 0 | 0 | 0/0 |  |
-| 11 | Jeremías Merlo | LW,RW | 20 | Argentina | 1,4 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
-| 17 | Lucas Janson | LW,ST | 32 | Argentina | 381 k€ | – | 0 | 0 | 0/0 |  |
-| 19 | Agustín Colazo | ST | 25 | Argentina | 570 k€ | – | 0 | 0 | 0/0 |  |
-| 20 | Juan Pérez | RW | 22 | Colombia | 389 k€ | – | 0 | 0 | 0/0 |  |
+| 11 | Jeremías Merlo | LW,RW | 20 | Argentina | 1,2 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
+| 17 | Lucas Janson | LW,ST | 32 | Argentina | 443 k€ | – | 0 | 0 | 0/0 |  |
+| 19 | Agustín Colazo | ST | 25 | Argentina | 545 k€ | – | 0 | 0 | 0/0 |  |
+| 20 | Juan Pérez | RW | 22 | Colombia | 354 k€ | – | 0 | 0 | 0/0 |  |
 | 26 | Franco Torres | LW,RW | 27 | Argentina | 353 k€ | – | 0 | 0 | 0/0 |  |
-| 29 | Agustín Auzmendi | ST | 29 | Argentina | 705 k€ | – | 0 | 0 | 0/0 |  |
-| 32 | Marcelo Torres | ST | 28 | Argentina | 1,6 M€ | – | 0 | 0 | 0/0 |  |
-| 43 | Maximiliano Zalazar | RW | 25 | Argentina | 540 k€ | – | 0 | 0 | 0/0 |  |
+| 29 | Agustín Auzmendi | ST | 29 | Argentina | 892 k€ | – | 0 | 0 | 0/0 |  |
+| 32 | Marcelo Torres | ST | 28 | Argentina | 1,7 M€ | – | 0 | 0 | 0/0 |  |
+| 43 | Maximiliano Zalazar | RW | 25 | Argentina | 525 k€ | – | 0 | 0 | 0/0 |  |
 
 Har lämnat truppen sedan vi började spara (2): Ignacio Fernández (senast 2026-09-29), Ivo Mammini (senast 2026-09-29).

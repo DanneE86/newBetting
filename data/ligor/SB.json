@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-09-29T20:15:35.901Z",
+ "updatedAt": "2026-10-04T09:27:34.347Z",
  "league": "SB",
  "fotmobId": 86,
  "name": "Serie B",
@@ -245,20 +245,6 @@
   },
   {
    "rank": 18,
-   "team": "Juve Stabia",
-   "fotmobName": "Juve Stabia",
-   "fotmobId": 6106,
-   "group": null,
-   "played": 5,
-   "won": 1,
-   "drawn": 2,
-   "lost": 2,
-   "goals": "4-7",
-   "gd": -3,
-   "pts": 3
-  },
-  {
-   "rank": 19,
    "team": "Catanzaro",
    "fotmobName": "Catanzaro",
    "fotmobId": 10168,
@@ -270,6 +256,20 @@
    "goals": "5-9",
    "gd": -4,
    "pts": 3
+  },
+  {
+   "rank": 19,
+   "team": "Juve Stabia",
+   "fotmobName": "Juve Stabia",
+   "fotmobId": 6106,
+   "group": null,
+   "played": 5,
+   "won": 1,
+   "drawn": 2,
+   "lost": 2,
+   "goals": "4-7",
+   "gd": -3,
+   "pts": 1
   },
   {
    "rank": 20,
@@ -562,6 +562,148 @@
     5,
     3,
     -4
+   ],
+   [
+    "Carrarese",
+    20,
+    5,
+    1,
+    -4
+   ]
+  ],
+  "2026-10-04": [
+   [
+    "Palermo",
+    1,
+    5,
+    13,
+    5
+   ],
+   [
+    "Sudtirol",
+    2,
+    5,
+    11,
+    6
+   ],
+   [
+    "Mantova",
+    3,
+    5,
+    11,
+    5
+   ],
+   [
+    "Modena",
+    4,
+    5,
+    10,
+    4
+   ],
+   [
+    "Ascoli",
+    5,
+    5,
+    10,
+    3
+   ],
+   [
+    "Verona",
+    6,
+    5,
+    7,
+    3
+   ],
+   [
+    "Avellino",
+    7,
+    5,
+    7,
+    1
+   ],
+   [
+    "Cesena",
+    8,
+    5,
+    7,
+    1
+   ],
+   [
+    "Benevento",
+    9,
+    5,
+    7,
+    1
+   ],
+   [
+    "Pisa",
+    10,
+    5,
+    7,
+    0
+   ],
+   [
+    "Padova",
+    11,
+    5,
+    7,
+    -1
+   ],
+   [
+    "Empoli",
+    12,
+    5,
+    6,
+    -2
+   ],
+   [
+    "Arezzo",
+    13,
+    5,
+    6,
+    -7
+   ],
+   [
+    "Virtus Entella",
+    14,
+    5,
+    5,
+    1
+   ],
+   [
+    "Cremonese",
+    15,
+    5,
+    5,
+    -2
+   ],
+   [
+    "Vicenza",
+    16,
+    5,
+    5,
+    -3
+   ],
+   [
+    "Sampdoria",
+    17,
+    5,
+    4,
+    -4
+   ],
+   [
+    "Catanzaro",
+    18,
+    5,
+    3,
+    -4
+   ],
+   [
+    "Juve Stabia",
+    19,
+    5,
+    1,
+    -3
    ],
    [
     "Carrarese",

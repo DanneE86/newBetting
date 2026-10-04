@@ -1,12 +1,16 @@
 # Man City (Premier League) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Senaste 8: tur med +0,68 poäng per match mot xP. Marknaden prisar redan in det i ligan (ingen bekräftad effekt), så det är inget spel i sig.
 - Senaste 8: xG-målskillnaden är −0,76 per match sämre än målskillnaden.
 - Stark historik mot Tottenham (−0,83 p/match mot marknaden, 16 möten), Fulham (+0,59 p/match mot marknaden, 11 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Efter landslagsuppehåll: 2,53 poäng per match mot 2,29 annars (28-2-4 på 34 matcher), mot marknaden +0,18 mot +0,01. Sedan 2023: 8-2-2. Ingen skillnad värd att spela på.
+- Spelstil 2025/26: Balanserat, Kortpass, Mellanpress, Medel på fasta, Medel mot fasta. Bäst mot Farlig på fasta (+0,14, samma håll i båda halvorna men svagt), Medel mot fasta (+0,07, samma håll i båda halvorna men svagt), Direktspel (+0,06, samma håll i båda halvorna men svagt). Svårast mot Svag mot fasta (−0,19, samma håll i båda halvorna men svagt), Backar hem (−0,08, svagt), Svag på fasta (−0,07, svagt). Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2025/26: 0,29 mål för per match (xG 0,36), 0,32 emot (xG 0,21), 6,4 hörnor.
+- Svårt för: Tottenham (6-3-7, 1,31 p/match, mot marknaden −0,83), Man United (9-2-6, 1,71 p/match, mot marknaden −0,30).
 - Utan Erling Haaland (20 % av anfallet): 2,67 poäng per match mot 1,97 med (6 mot 75 matcher), mot marknaden +0,73 mot −0,04.
 - Utan Mathis Cherki (12 % av anfallet): 1,75 poäng per match mot 2,04 med (4 mot 77 matcher), mot marknaden +0,07 mot +0,01.
 - På Stryktipset/Europatipset streckas lagets vinst ×1,16 av vår sannolikhet (36 matcher). Folket överspelar laget: garderingar mot det ger mer i utdelning.
@@ -35,6 +39,84 @@ Form (äldst → senast): VOFVVVVV · senaste match 2026-09-20
 | 2024/25 | PL | 38 | 1,87 | −0,13 (+0,06 / −0,33) | 21 % (20 %) | 1,89–1,16 | 1,92–1,39 | 1,69 |
 | 2025/26 | PL | 38 | 2,05 | +0,06 (+0,15 / −0,04) | 24 % (21 %) | 2,03–0,92 | 2,09–1,22 | 1,88 |
 | 2026/27 | PL | 5 | 3,00 | +0,81 (+0,67 / +1,00) | 0 % (20 %) | 2,60–1,00 | 2,21–1,44 | 1,86 |
+
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/PL.md#man-city) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2025/26: **Balanserat, Kortpass, Mellanpress, Medel på fasta, Medel mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026/27 | 5 | 0,60 | 0,52 | 0,20 | 0,42 | 6,2 |
+| 2025/26 | 38 | 0,29 | 0,36 | 0,32 | 0,21 | 6,4 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Backar hem | 105 | 2,34–0,95 | −0,08 | −0,08 (−0,7) | −1 pe | +2 pe | svag |
+| Balanserat | 120 | 2,33–0,81 | +0,04 | +0,03 (0,4) | −2 pe | −5 pe | svag |
+| Bollinnehav | 84 | 2,45–0,83 | +0,06 | +0,05 (0,5) | −5 pe | +1 pe | ✔ samma håll |
+| Kortpass | 79 | 2,24–1,08 | −0,03 | −0,04 (−0,3) | +2 pe | −0 pe | svag |
+| Blandat | 130 | 2,33–0,83 | −0,02 | −0,02 (−0,2) | −4 pe | +2 pe | ✔ samma håll |
+| Direktspel | 100 | 2,51–0,74 | +0,06 | +0,06 (0,6) | −4 pe | −6 pe | ✔ samma håll |
+| Lågpress | 88 | 2,28–0,85 | −0,02 | −0,02 (−0,2) | −6 pe | −2 pe | svag |
+| Mellanpress | 112 | 2,52–0,81 | +0,02 | +0,02 (0,2) | −6 pe | +1 pe | ✔ samma håll |
+| Högpress | 109 | 2,28–0,93 | +0,00 | −0,00 (−0,0) | +3 pe | −2 pe | svag |
+| Svag på fasta | 96 | 2,29–0,94 | −0,07 | −0,07 (−0,6) | −1 pe | −2 pe | svag |
+| Medel på fasta | 137 | 2,42–0,84 | −0,02 | −0,03 (−0,3) | −4 pe | −1 pe | svag |
+| Farlig på fasta | 76 | 2,37–0,82 | +0,14 | +0,14 (1,2) | −2 pe | +0 pe | ✔ samma håll |
+| Stark mot fasta | 100 | 2,47–0,83 | +0,05 | +0,05 (0,5) | −3 pe | −0 pe | svag |
+| Medel mot fasta | 136 | 2,32–0,88 | +0,07 | +0,07 (0,7) | +1 pe | −2 pe | ✔ samma håll |
+| Svag mot fasta | 73 | 2,30–0,89 | −0,19 | −0,19 (−1,4) | −8 pe | −1 pe | ✔ samma håll |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
+
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 34 | 28-2-4 | 2,53 | +0,18 |
+| Efter uppehåll sedan 2023 | 12 | 8-2-2 | 2,17 | +0,01 |
+| Övriga matcher | 313 | 223-47-43 | 2,29 | +0,01 |
+
+Hela ligan efter uppehåll: 0,00 mot marknaden (n 690). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2026-04-12 | Chelsea - Man City | 0-3 V | +1,06 |
+| 2025-11-22 | Newcastle - Man City | 2-1 F | −2,02 |
+| 2025-10-18 | Man City - Everton | 2-0 V | +0,77 |
+| 2025-09-14 | Man City - Man United | 3-0 V | +1,12 |
+| 2025-04-02 | Man City - Leicester | 2-0 V | +0,46 |
+| 2024-11-23 | Man City - Tottenham | 0-4 F | −2,20 |
+| 2024-10-20 | Wolves - Man City | 1-2 V | +0,54 |
+| 2024-09-14 | Man City - Brentford | 2-1 V | +0,48 |
+| 2024-03-31 | Man City - Arsenal | 0-0 O | −0,67 |
+| 2023-11-25 | Man City - Liverpool | 1-1 O | −0,93 |
+| 2023-10-21 | Man City - Brighton | 2-1 V | +0,71 |
+| 2023-09-16 | West Ham - Man City | 1-3 V | +0,76 |
+| 2023-04-01 | Man City - Liverpool | 4-1 V | +1,01 |
+| 2022-12-28 | Leeds - Man City | 1-3 V | +0,44 |
+| 2022-10-02 | Man City - Man United | 6-3 V | +0,78 |
+| 2022-09-17 | Wolves - Man City | 0-3 V | +0,49 |
+| 2022-04-02 | Burnley - Man City | 0-2 V | +0,31 |
+| 2021-11-21 | Man City - Everton | 3-0 V | +0,44 |
+| 2021-10-16 | Man City - Burnley | 2-0 V | +0,35 |
+| 2021-09-11 | Leicester - Man City | 0-1 V | +0,76 |
+| 2021-04-03 | Leicester - Man City | 0-2 V | +0,82 |
+| 2020-11-21 | Tottenham - Man City | 2-0 F | −2,09 |
+| 2020-10-17 | Man City - Arsenal | 1-0 V | +0,91 |
+| 2019-11-23 | Man City - Chelsea | 2-1 V | +0,72 |
+| 2019-10-19 | Crystal Palace - Man City | 0-2 V | +0,36 |
+| 2019-09-14 | Norwich - Man City | 3-2 F | −2,82 |
+| 2019-03-30 | Fulham - Man City | 0-2 V | +0,24 |
+| 2018-11-24 | West Ham - Man City | 0-4 V | +0,38 |
+| 2018-10-20 | Man City - Burnley | 5-0 V | +0,22 |
+| 2018-09-15 | Man City - Fulham | 3-0 V | +0,27 |
+| 2018-03-31 | Everton - Man City | 1-3 V | +0,45 |
+| 2017-11-18 | Leicester - Man City | 0-2 V | +0,53 |
+| 2017-10-14 | Man City - Stoke | 7-2 V | +0,33 |
+| 2017-09-09 | Man City - Liverpool | 5-0 V | +1,20 |
 
 ## Nyckelspelare (Understat, 2024/25–)
 
@@ -76,6 +158,8 @@ Ligans test av frånvaro mot marknaden: svag signal (inte bekräftad). Få match
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): Tottenham 1,31 p/match (−0,83), Man United 1,71 p/match (−0,30).
+
 ## Stryktipset / Europatipset
 
 | Datum | Spel | Match | Utfall | Folket på laget | Vår procent |
@@ -94,7 +178,7 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-10-18 | Stryk 4923 | Manchester City - Everton | 1 ✓ | 82 % | 66 % |
 | 2025-09-27 | Stryk 4920 | Manchester City - Burnley | 1 ✓ | 91 % | 78 % |
 | 2025-08-16 | Stryk 4914 | Wolverhampton - Manchester City | 2 ✓ | 76 % | 62 % |
-| 2026-09-05 | Stryk 4969 | Manchester City - Coventry | 1 ✓ | 91 % | 78 % |
+| 2026-09-05 | Stryk 4969 | Manchester City - Coventry | 1 ✓ | 91 % | 77 % |
 | 2026-09-20 | Europa 2609 | Manchester City - Sunderland | 1 ✓ | 85 % | 70 % |
 | 2026-09-13 | Europa 2607 | Manchester United - Manchester City | 2 ✓ | 47 % | 43 % |
 | 2026-08-23 | Europa 2601 | Manchester City - Bournemouth | 1 ✓ | 69 % | 65 % |
@@ -117,40 +201,40 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-09-14 | Europa 2505 | Manchester City - Manchester United | 1 ✓ | 58 % | 55 % |
 | 2025-08-31 | Europa 2501 | Brighton - Manchester City | 1 | 59 % | 48 % |
 
-## Trupp (FotMob, hämtad 2026-09-29)
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Enzo Maresca. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** Nico O'Reilly (skadad, åter About a week)
+**Skadade/borta nu:** Nico O'Reilly (osäker), Antoine Semenyo (osäker)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | Gianluigi Donnarumma | GK | 27 | Italy | 34,4 M€ | 7,35 | 0 | 0 | 0/0 |  |
+| 1 | Gianluigi Donnarumma | GK | 27 | Italy | 50,2 M€ | 7,35 | 0 | 0 | 0/0 |  |
 | 13 | Marcus Bettinelli | GK | 34 | England | 644 k€ | – | 0 | 0 | 0/0 |  |
-| 28 | Gerónimo Rulli | GK | 34 | Argentina | 3,1 M€ | – | 0 | 0 | 0/0 |  |
+| 28 | Gerónimo Rulli | GK | 34 | Argentina | 6,2 M€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 3 | Rúben Dias | CB | 29 | Portugal | 37,8 M€ | 7,13 | 0 | 0 | 0/0 |  |
-| 6 | Marc Guéhi | CB | 26 | England | 51,1 M€ | 7,81 | 1 | 1 | 0/0 |  |
-| 21 | Rayan Aït-Nouri | LB,LW | 25 | Algeria | 34,9 M€ | – | 0 | 0 | 0/0 |  |
-| 22 | Vitor Reis | CB | 20 | Brazil | 31,1 M€ | – | 0 | 0 | 0/0 |  |
-| 24 | Joško Gvardiol | CB,LB | 24 | Croatia | 55,3 M€ | 7,78 | 1 | 2 | 1/0 |  |
-| 27 | Matheus Nunes | RB | 28 | Portugal | 38,3 M€ | 7,07 | 0 | 0 | 0/0 |  |
-| 33 | Nico O'Reilly | LB,CDM,LW,CAM | 21 | England | 41,9 M€ | 6,83 | 0 | 0 | 0/0 | skadad, åter About a week |
-| 45 | Abdukodir Khusanov | CB,RB | 22 | Uzbekistan | 34,3 M€ | 7,63 | 0 | 0 | 1/0 |  |
-| 82 | Rico Lewis | RB,LB,CM | 21 | England | 33,3 M€ | 6,09 | 0 | 0 | 0/0 |  |
+| 3 | Rúben Dias | CB | 29 | Portugal | 63,7 M€ | 7,13 | 0 | 0 | 0/0 |  |
+| 6 | Marc Guéhi | CB | 26 | England | 69,2 M€ | 7,81 | 1 | 1 | 0/0 |  |
+| 21 | Rayan Aït-Nouri | LB,LW | 25 | Algeria | 48,8 M€ | – | 0 | 0 | 0/0 |  |
+| 22 | Vitor Reis | CB | 20 | Brazil | 41,7 M€ | – | 0 | 0 | 0/0 |  |
+| 24 | Joško Gvardiol | CB,LB | 24 | Croatia | 74,7 M€ | 7,78 | 1 | 2 | 1/0 |  |
+| 27 | Matheus Nunes | RB | 28 | Portugal | 53,5 M€ | 7,07 | 0 | 0 | 0/0 |  |
+| 33 | Nico O'Reilly | LB,CDM,LW,CAM | 21 | England | 81,7 M€ | 6,83 | 0 | 0 | 0/0 | osäker |
+| 45 | Abdukodir Khusanov | CB,RB | 22 | Uzbekistan | 63,0 M€ | 7,63 | 0 | 0 | 1/0 |  |
+| 82 | Rico Lewis | RB,LB,CM | 21 | England | 41,2 M€ | 6,09 | 0 | 0 | 0/0 |  |
 | 97 | Josh Wilson-Esbrand | LB | 23 | England | 1,8 M€ | – | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 5 | Elliot Anderson | CDM,CM | 23 | England | 69,4 M€ | 7,62 | 0 | 0 | 1/0 |  |
-| 8 | Mateo Kovačić | CDM | 32 | Croatia | 8,3 M€ | 6,24 | 0 | 0 | 0/0 |  |
-| 10 | Rayan Cherki | CAM,RW,LW | 23 | France | 68,4 M€ | 7,92 | 3 | 2 | 1/0 |  |
-| 17 | Enzo Fernández | CAM,CDM,CM,LW | 25 | Argentina | 83,3 M€ | 7,28 | 1 | 0 | 1/0 |  |
-| 32 | Ayyoub Bouaddi | CDM,CM,RB | 18 | Morocco | 53,4 M€ | 6,52 | 0 | 0 | 0/0 |  |
-| 47 | Phil Foden | CAM,RW,LW,ST | 26 | England | 56,3 M€ | 6,78 | 0 | 2 | 1/1 |  |
+| 5 | Elliot Anderson | CDM,CM | 23 | England | 92,9 M€ | 7,62 | 0 | 0 | 1/0 |  |
+| 8 | Mateo Kovačić | CDM | 32 | Croatia | 7,0 M€ | 6,24 | 0 | 0 | 0/0 |  |
+| 10 | Rayan Cherki | CAM,RW,LW,CM | 23 | France | 103,5 M€ | 7,92 | 3 | 2 | 1/0 |  |
+| 17 | Enzo Fernández | CAM,CDM,CM,LW | 25 | Argentina | 119,5 M€ | 7,28 | 1 | 0 | 1/0 |  |
+| 32 | Ayyoub Bouaddi | CDM,CM,RB | 19 | Morocco | 70,3 M€ | 6,52 | 0 | 0 | 0/0 |  |
+| 47 | Phil Foden | CAM,RW,LW,ST | 26 | England | 70,9 M€ | 6,78 | 0 | 2 | 1/1 |  |
 | | **Anfallare** | | | | | | | | | |
 | 7 | Iliman Ndiaye | RW,LW,CAM | 26 | Senegal | 54,0 M€ | 7,34 | 0 | 1 | 0/0 |  |
 | 9 | Erling Haaland | ST | 26 | Norway | 159,3 M€ | 7,98 | 5 | 0 | 0/0 |  |
-| 11 | Jérémy Doku | LW,RW,CAM | 24 | Belgium | 56,9 M€ | 6,13 | 0 | 0 | 0/0 |  |
-| 37 | Allan | RW,RM,RWB | 22 | Brazil | 8,2 M€ | – | 0 | 0 | 0/0 |  |
-| 42 | Antoine Semenyo | LW,RW,ST,RM | 26 | Ghana | 51,8 M€ | 7,77 | 2 | 3 | 0/0 |  |
+| 11 | Jérémy Doku | LW,RW,CAM | 24 | Belgium | 72,9 M€ | 6,13 | 0 | 0 | 0/0 |  |
+| 37 | Allan | RW,RM,RWB | 22 | Brazil | 14,2 M€ | – | 0 | 0 | 0/0 |  |
+| 42 | Antoine Semenyo | LW,RW,ST | 26 | Ghana | 84,3 M€ | 7,77 | 2 | 3 | 0/0 | osäker |
 | 56 | Ryan McAidoo | RW | 18 | England | – | – | 0 | 0 | 0/0 |  |

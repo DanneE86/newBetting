@@ -622,18 +622,34 @@ function kickDay(tip) {
 
 const TOP_N = 5;
 
-/** Dagens (annars närmaste speldags) bästa tips, högst tipScore först. */
+const ROUND_DAYS = 3; // samma fönster som servern (scripts/lib/next-round.mjs)
+
+/** YYYY-MM-DD + n dagar. */
+function addDays(day, n) {
+  const d = new Date(`${day}T12:00:00`);
+  d.setDate(d.getDate() + n);
+  return d.toLocaleDateString("sv-SE");
+}
+
+/**
+ * Dagens bästa tips, högst tipScore först. Spelas inget idag: bästa tipsen i kommande omgång
+ * (första speldagen + 3 dagar, t.ex. 9–12 okt), så att omgången alltid har sina bästa tips överst.
+ */
 function topOfDay(list) {
   const today = new Date().toLocaleDateString("sv-SE");
   const days = [...new Set(list.map(kickDay).filter((d) => d && d >= today))].sort();
   const day = days[0];
-  if (!day) return { day: null, top: [] };
+  if (!day) return { day: null, lastDay: null, top: [] };
+  const lastDay = day === today ? day : days.filter((d) => d <= addDays(day, ROUND_DAYS)).at(-1);
   const top = list
-    .filter((t) => kickDay(t) === day)
+    .filter((t) => kickDay(t) >= day && kickDay(t) <= lastDay)
     .sort((a, b) => (b.tipScore ?? 0) - (a.tipScore ?? 0))
     .slice(0, TOP_N);
-  return { day, top };
+  return { day, lastDay, top };
 }
+
+const dayLabel = (day) =>
+  new Date(`${day}T12:00:00`).toLocaleDateString("sv-SE", { weekday: "long", day: "numeric", month: "short" }).replace(/\.$/, "");
 
 /** Grupperar per liga; ligorna i ordning efter tidigaste avspark, matcherna tidigaste först. */
 function groupByLeague(list) {
@@ -668,10 +684,11 @@ function candRow(tip) {
   </details>`;
 }
 
-function renderList(el, list, emptyMsg, { top = false, limit = Infinity, compact = false } = {}) {
+function renderList(el, list, emptyMsg, { top = false, topPool = null, limit = Infinity, compact = false } = {}) {
   const all = byLeague(list);
+  const pool = topPool ? byLeague(topPool) : null;
   const filtered = all.length > limit ? [...all].sort((a, b) => kickMs(a) - kickMs(b)).slice(0, limit) : all;
-  if (!filtered.length) {
+  if (!filtered.length && !pool?.length) {
     el.innerHTML = `<div class="empty">${escapeHtml(emptyMsg)}</div>`;
     return;
   }
@@ -680,13 +697,19 @@ function renderList(el, list, emptyMsg, { top = false, limit = Infinity, compact
   let html = "";
   let rest = filtered;
   if (top) {
-    const { day, top: best } = topOfDay(filtered);
+    const { day, lastDay, top: best } = topOfDay(pool || filtered);
     if (best.length) {
       const today = new Date().toLocaleDateString("sv-SE");
-      const d = new Date(`${day}T12:00:00`).toLocaleDateString("sv-SE", { weekday: "long", day: "numeric", month: "short" }).replace(/\.$/, "");
-      const dayTxt = day === today ? `Idag, ${d}` : d.charAt(0).toUpperCase() + d.slice(1);
-      html += groupHead(`${dayTxt} · dagens bästa`, best.length) + best.map(card).join("");
-      rest = filtered.filter((t) => !best.includes(t));
+      const d = dayLabel(day);
+      const title =
+        day === today
+          ? `Idag, ${d} · dagens bästa`
+          : day === lastDay
+            ? `${d.charAt(0).toUpperCase() + d.slice(1)} · dagens bästa`
+            : `Omgången ${d} – ${dayLabel(lastDay)} · bästa tips`;
+      html += groupHead(title, best.length) + best.map(card).join("");
+      const ids = new Set(best.map(tipId));
+      rest = filtered.filter((t) => !ids.has(tipId(t)));
     }
   }
   for (const [lg, tips] of groupByLeague(rest)) {
@@ -748,6 +771,11 @@ function renderTips() {
   const selName = leagueName(state.league);
   syncValueFilter();
   const best = valueOnly ? state.bestUpcoming.filter(hasValue) : state.bestUpcoming;
+  // Bästa tipsen överst väljs bland alla kandidater i kommande omgång, inte bara de som klarat edge-filtret
+  const seen = new Set();
+  const topPool = [...state.bestUpcoming, ...state.allCandidates]
+    .filter((t) => !seen.has(tipId(t)) && seen.add(tipId(t)))
+    .filter((t) => !valueOnly || hasValue(t));
   renderList(
     $("#tips"),
     best,
@@ -756,7 +784,7 @@ function renderTips() {
       : state.bestUpcoming.length
         ? `Inga tips i ${selName} just nu.`
         : "Inga kommande tips. Tryck på Hämta data.",
-    { top: true }
+    { top: true, topPool }
   );
   candLimit = CAND_STEP;
   renderCandidates();

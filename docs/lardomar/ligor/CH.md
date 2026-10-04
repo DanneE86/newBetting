@@ -1,6 +1,6 @@
 # Championship (CH) – lärdomar
 
-Genererad 2026-09-29 av `node scripts/analyze-learnings.mjs`. Skriv inte för hand här: egna anteckningar läggs i `docs/lardomar/anteckningar/CH.md`.
+Genererad 2026-10-04 av `node scripts/analyze-learnings.mjs`. Skriv inte för hand här: egna anteckningar läggs i `docs/lardomar/anteckningar/CH.md`.
 
 Underlag: 5063 matcher, säsong 2017/18 – 2026/27. Marknad = stängningsodds utan marginal (Pinnacle, annars snitt av bolagen), öppningsodds finns för 5063 matcher. xG: skott-proxy (100 % av matcherna).
 
@@ -86,7 +86,7 @@ Källa: backtesten i `data/stryktips-backtest-2526-steg3.json`, `data/stryktips-
 
 | Mått | Värde |
 |---|---|
-| Logloss slutprocent / marknad / folket / lagmodell | 1,071 / 1,071 / 1,119 / 1,082 |
+| Logloss slutprocent / marknad / folket / lagmodell | 1,070 / 1,071 / 1,119 / 1,079 |
 | Folket streckar favoriten | ×1,15 av vår sannolikhet |
 | Kryss: utfall / vår procent / folket | 23,2 % / 27,1 % / 24,6 % |
 | Favoriter ≥ 55 %: höll / väntat | 58,8 % / 60,5 % (n 34) |
@@ -100,7 +100,7 @@ Källa: backtesten i `data/stryktips-backtest-2526-steg3.json`, `data/stryktips-
 - Folket överstreckar favoriter (×1,15). Utdelningsgränsen fångar det redan, men garderingar mot favoriter i ligan ger mer i utdelning.
 - Folket streckar kryss 2,5 procentenheter under vår procent. Kryss ger streckvärde.
 
-## Tabell nu (FotMob, 2026-09-29)
+## Tabell nu (FotMob, 2026-10-04)
 
 | # | Lag | M | V | O | F | Mål | +/− | P |
 |---|---|---|---|---|---|---|---|---|

@@ -1,6 +1,6 @@
 # Serie B (SB) – lärdomar
 
-Genererad 2026-09-29 av `node scripts/analyze-learnings.mjs`. Skriv inte för hand här: egna anteckningar läggs i `docs/lardomar/anteckningar/SB.md`.
+Genererad 2026-10-04 av `node scripts/analyze-learnings.mjs`. Skriv inte för hand här: egna anteckningar läggs i `docs/lardomar/anteckningar/SB.md`.
 
 Underlag: 3511 matcher, säsong 2017/18 – 2026/27. Marknad = stängningsodds utan marginal (Pinnacle, annars snitt av bolagen), öppningsodds finns för 3503 matcher. xG: skott-proxy (100 % av matcherna).
 
@@ -84,7 +84,7 @@ Tal = extra poäng för hemmalaget per enhet signal (kryss: andel), z = styrka (
 
 Inga matcher från ligan i de sparade backtesten ännu.
 
-## Tabell nu (FotMob, 2026-09-29)
+## Tabell nu (FotMob, 2026-10-04)
 
 | # | Lag | M | V | O | F | Mål | +/− | P |
 |---|---|---|---|---|---|---|---|---|
@@ -105,8 +105,8 @@ Inga matcher från ligan i de sparade backtesten ännu.
 | 15 | Cremonese | 5 | 1 | 2 | 2 | 5-7 | -2 | 5 |
 | 16 | Vicenza | 5 | 1 | 2 | 2 | 7-10 | -3 | 5 |
 | 17 | Sampdoria | 5 | 1 | 1 | 3 | 5-9 | -4 | 4 |
-| 18 | Juve Stabia | 5 | 1 | 2 | 2 | 4-7 | -3 | 3 |
-| 19 | Catanzaro | 5 | 1 | 0 | 4 | 5-9 | -4 | 3 |
+| 18 | Catanzaro | 5 | 1 | 0 | 4 | 5-9 | -4 | 3 |
+| 19 | Juve Stabia | 5 | 1 | 2 | 2 | 4-7 | -3 | 1 |
 | 20 | Carrarese | 5 | 0 | 1 | 4 | 2-6 | -4 | 1 |
 
 Tabellhistorik (en rad per lag och dag sedan 2026-09-28): `data/ligor/SB.json`.

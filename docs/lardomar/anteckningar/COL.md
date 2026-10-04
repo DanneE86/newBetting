@@ -4,14 +4,14 @@ En fil per liga. Den automatiska delen visar hur tipsen gått och vad som blivit
 
 <!-- AUTO:START (skrivs om av scripts/tips-felanalys.mjs, ändra inte här) -->
 
-Uppdaterad 2026-09-28. Källor: `data/reports/pro-evaluation.json` (tipAccuracy), `data/reports/tips-backtest.json`, `data/matcher/COL.csv`.
+Uppdaterad 2026-10-04. Källor: `data/reports/pro-evaluation.json` (tipAccuracy), `data/reports/tips-backtest.json`, `data/matcher/COL.csv`.
 
 ### Tipsens träff (1X2, samma motor som live)
 
 | Säsong | Matcher | Träff | Väntat (tipsens procent) | Skillnad (z) | Alltid hemma | Missar: kryss / skräll | Styrs av |
 |---|---|---|---|---|---|---|---|
 | 2025/26 | 399 | 48,6 % | 47,3 % | +1,3 pe (0,5) | 46,4 % | 99 / 106 | modell (inga odds) |
-| 2026/27 | 306 | 46,7 % | 46,2 % | +0,5 pe (0,2) | 45,4 % | 94 / 69 | modell (inga odds) |
+| 2026/27 | 315 | 47,0 % | 46,5 % | +0,5 pe (0,2) | 45,4 % | 97 / 70 | modell (inga odds) |
 
 Bedömning 2026/27: inom slumpen (z 0,2). Tipsen slår att alltid tippa hemma.
 
@@ -21,7 +21,7 @@ Inga odds i historiken för ligan (tipsen följer modellen).
 
 ### 2026/27: vad gick fel
 
-- 306 spelade matcher, inga odds. Tipsen följer modellen, se tabellen ovan.
+- 315 spelade matcher, inga odds. Tipsen följer modellen, se tabellen ovan.
 
 Mer om ligan (signaler, kalibrering, Stryktipset): [ligor/COL.md](../ligor/COL.md).
 

@@ -249,6 +249,28 @@ X är det tecken som oftast saknas i grundraden: A saknar 41 % av kryssen, mot 9
   - **Infört 0,5/0,8/1 för B** (båda motorerna, test i lib-units): nästan samma chans (−0,3 enheter) men en tredjedel högre utdelning när B sitter. 1/1,5 halverar chansen; dess 13:a är en enda omgång (brus). Grundraden träffar fortfarande nästan aldrig storomgångarna (1 av 76), så lutningen flyttar utdelningen uppåt, inte träffen.
 - **Noterat, inte ändrat:** verklig 13-rättsutdelning är i median 1,33 × GC-formelns (25 milj omsättning). 30 000 kr i länken motsvarar alltså ungefär 40 000 kr i verkligheten. I 6 av 107 omgångar betalade rätt rad ≥ 30 000 kr fast GC räknade under 30 000 (t.ex. 4951: GC 29 629, verkligt 63 157). Gränsen i länken är användarens regel och rördes inte.
 
+**2026-10-04, Stryktipset: kupong D ombyggd till fritt system för vinster över 20 000 kr** (användaren: "bygg om D utifrån alla lärdomar, gräns 15k mer eller lite mindre", sedan "skippa alla regler … viktigt är att vinna större summor än massa små. Summor över 20k"). 107 omg (samma som A/B/C), bara D, 350–400 kr. Mått: summerad chans till 13 rätt (modellen) och chans till 13 rätt som betalar minst 20 000 kr (verklig omsättning). Bakkörningsskripten för D sparades inte i repot (engångskörning). Samma sökning finns i `searchD`.
+- **Gamla D** (4/4/5, röd 1–3, grön 1–3, 4-3-3, 30–50k): chans 25,2 %, budgeten höll i 76 av 107, netto −25 204 kr. Rätt rad låg i grundraden i 9 omgångar men stoppades av färg- eller teckenreglerna i 8.
+- **Regel-D med 15k:** 36,1 %. Teckenregeln 4-3-3 var största bromsen: 4-2-2 gav 38,4 % och med lutad grundrad och favorit+X-halvor 40,6 % (bättre i alla tre perioderna). Röd 1–2/1–4/2–4, grönt av, andra former (3/5/5, 4/3/6, 5/3/5, 4/5/4) och spikar bara på starka favoriter eller kryss < 27 % var sämre.
+- **Fritt D** (valfri spik/halv/hel på valfria tecken, ingen färg- eller teckenregel, bara lägsta utdelning i GC-formeln): chans till 13 rätt ≥ 20 000 kr per gräns i länken: 15k 34,3 %, 18k 38,2 %, **20k 40,3 %**, 22k 39,8 %, 25k 37,9 % (all utdelning: 50,0 / 45,4 / 43,2 / 40,6 / 38,2 %). Sökningen väljer i snitt 5,3 spikar, 4,5 halvor och 3,2 helor (4–7 spikar) och en liten grundrad (~800 rader) som gränsen halverar.
+- Utfall fritt D 20k: en 13:a (4815, bara 12 106 kr trots GC-gräns 20 000 – verklig utdelning kan bli lägre än GC-formeln), 12 rätt i 6 omg, 11+ i 20, netto +82 kr (kostnad 42 545 kr; per period +17 736 / −11 099 / −6 555). Gambling Cabin-länken provad (Europatipset 2613): rätt grundrad, 399 kr mot motorns 400.
+- **Infört:** D = fritt system, gräns 20 000 kr (`D_RULES`, `searchD`, `makeEvalD` i `gui/public/stryk-engine.js`, 100 000 provade grundrader ≈ 2–3 s, cache per omgång och krav). Test i lib-units ("kupong D").
+
+### Förkastat 2026-10-04, lagfilerna: har marknaden missat något per lag?
+Lagfilerna (`docs/lardomar/lag/`, 649 lag) beskriver mönster per lag (form mot marknaden, hemma/borta, kryss, efter uppehåll, svårt för, nyckelspelare). Att plocka ut enskilda lag som sticker ut vore att jaga brus, så varje mönster testades på alla lag i 34 ligor (182 628 lag-matcher med stängningsodds): förutsäger lagets avvikelse mot marknaden i en period avvikelsen i nästa? Krav |z| ≥ 2,5 i träning och ≥ 2 i kontroll (2023/24– eller 2024–).
+
+| Mönster | Träning z | Kontroll z | PL/CH/L1 kontroll z |
+|---|---|---|---|
+| Mot marknaden, säsong → nästa | −0,2 | −0,6 | −1,5 |
+| Mot marknaden, första halvan → andra | −0,8 | +1,0 | 0,0 |
+| Mot marknaden, 10 matcher → nästa 10 | −1,3 | −0,5 | +1,0 |
+| Hemma / borta mot marknaden, säsong → nästa | −0,5 / −0,4 | +1,5 / +0,8 | −0,4 / −0,8 |
+| Egen hemmafördel (hemma − borta), säsong → nästa | −0,6 | +3,0 | – |
+| Kryss mot oddsen, säsong → nästa / halva / 10 | +1,6 / −0,9 / −0,1 | +1,0 / −0,9 / −0,9 | +1,1 / −0,3 / −0,2 |
+| Som storfavorit (≥ 60 %) / skräll (≤ 25 %), säsong → nästa | +1,0 / +0,6 | +0,4 / −0,5 | +1,0 / −0,1 |
+
+- **Inget håller.** Lagets avvikelse mot oddsen (totalt, hemma, borta, kryss, som favorit eller skräll) bär inte över till nästa period. Egen hemmafördel z +3,0 i kontrollen men −0,6 i träningen: inte bekräftat, följ upp efter 2026/27. Efter uppehåll, inbördes ("svårt för") och nyckelspelare är redan förkastade på ligenivå (2026-09-28/30). Lagfilerna är beskrivande, inte spelbara. Inget fördes in i D eller tipsen. Skript: `scripts/lardomar-lagmonster.mjs`.
+
 ## Beslut
 
 - **2026-09-28, felanalys av tipsen per liga (kväll):** webbens träffruta visade grundmodellens träff, men i ligor med odds styr oddsen tipsen. Grundmodellen tippar hemmalaget för ofta (flata procent, oavgjort går till hemma), och när den och oddsen var oense hade oddsen rätt oftare (till exempel Championship 10 mot 0 av 17, Brasilien 17 mot 8). Pro-lagret räknar nu tipsmotorns riktiga träff per liga och säsong (`evaluation.tipAccuracy`, per match i `data/reports/tips-backtest.json`), och webben visar den med "väntat". Championship 36,6 % → 45,3 %, PL 40,0 % → 46,0 %. Bara League One ligger klart under tipsens egna procent (34,5 % mot 46,1 %, z −2,2, 87 matcher). Datafel är uteslutet, förra säsongen låg ligan på z +1,3, så det bedöms som slump. Följ upp.
@@ -338,3 +360,19 @@ Läs detta först nästa gång. Alla sökvägar är relativa till projektroten. 
 - xG utanför topp 5, till exempel Championship, där Stryktipset har många matcher. Idag finns bara skott-proxy.
 - Tränarbyten.
 - Slutodds och streck från fler säsonger av Stryktipset/Europatipset (idag bara 2025/26 och framåt).
+
+## 2026-10-04: landslagsuppehåll, svåra motståndare, fasta situationer och höghöjd
+
+Användaren: "allt i lärdomsfilen som kan ge något ska läggas in i alla motorer". Regeln blev: det som förbättrar kontrollperioden (2023/24–) mot oddsen förs in, även när det är svagt. Det som inte gör det visas i lagfilerna men flyttar inga procent.
+
+| Idé | Resultat | Beslut |
+|---|---|---|
+| **Första matchen efter landslagsuppehåll** (hela ligan vilat 12–50 dagar, sep–dec och mar–apr) | PL alla lag: 0,00 mot marknaden (690 lagmatcher). Arsenal +0,10 mot +0,05 annars (35 m), Leeds −0,11 mot −0,02 (34 m) | Inget. Visas per lag i lagfilerna ("Efter landslagsuppehåll") |
+| **"Svårt för"** (minst 6 möten, högst 1,2 p/match eller högst −0,30 mot marknaden) | Samma som inbördes möten: inprisat | Visas per lag, inget i motorerna |
+| **Fasta situationer** (FotMob: mål och xG från fasta för/emot per säsong, alla ligor från 2017/18 eller 2012) | Farlig på fasta mot svag mot fasta: −0,00 mot marknaden (6 722 lagmatcher). Lagmönster: korrelation tidig→sen −0,06 / +0,04. I justeringsmodellen: `sp` z −0,36 (öppning) och −0,26 (stängning) på valideringen | Inte vald av modellen. Visas per lag (egen stil, fasta per match, resultat mot varje typ) |
+| **Spelstil** (bollinnehav, långbollar, press, fasta) per lag | Som 2026-10-01: lagmönster håller inte (korrelation ≈ 0) | Visas i varje lagfil, även svaga mönster, märkta stabil / samma håll / svag (användaren vill se allt) |
+| **Höghöjd, Liga MX** (arena ≥ 1 500 m, bortalaget minst 1 000 m lägre) | Hemmalaget +0,13 mot marknaden mot −0,03 annars (991 matcher, z 3,7; före 2019 z 3,3, efter z 1,9). Logloss utanför urvalet: b 0,28, kontroll 2023/24– dLL −0,0007 (z −0,48, 221 höghöjdsmatcher) | **Infört** i `config/learned-adjustments.json` (`altitude.MX.b` 0,26 = hemma 50 % → cirka 53 %). Gäller Oddset (även nära avspark) och Stryktipset/Europatipset |
+| **Höghöjd, MLS** (Colorado 1 610 m) | Ingen effekt mot marknaden (dLL 0, z −0,44, 52 matcher) | Infört med b 0,08 (nästan ingen flytt). Skattas om varje `npm run lardomar:modell` |
+| **Höghöjd, Colombia** (Bogotá, Tunja, Pasto, Manizales) | Inga odds. Hemmalag på höghöjd tog *färre* poäng (1,51 mot 1,71, 170 m) | Visas, inget i motorerna (ingen marknad att testa mot) |
+
+Ändrat i motorerna: `scripts/lib/extra-signals.mjs` (alt, sp), `scripts/lib/learned-adjust.mjs` (höghöjd per liga), `scripts/pro-layer.mjs` (Oddset), `scripts/fetch-stryktipset.mjs` (Stryktipset och Europatipset: lärdomsjustering med bas `close`; i dag bara höghöjd, eftersom inget annat slog kontrollen vid stängning). Webbmotorn (`gui/public/stryk-engine.js`) läser procenten från filen och får justeringen automatiskt. Hästar berörs inte (egen modell).

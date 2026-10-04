@@ -1,11 +1,15 @@
 # Arsenal (Premier League) – lärdomar
 
-Genererad 2026-09-29. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
+Genererad 2026-10-04. Ligans lärdomar: [PL](../../ligor/PL.md). "Mot marknaden" = poäng per match minus stängningsoddsens förväntan.
 
 ## I korthet
 
 - Senaste 8: tur med +0,65 poäng per match mot xP. Marknaden prisar redan in det i ligan (ingen bekräftad effekt), så det är inget spel i sig.
 - Stark historik mot Chelsea (+0,69 p/match mot marknaden, 16 möten), Leeds (+0,70 p/match mot marknaden, 8 möten). Men inbördes möten slår inte marknaden i ligan, så det är troligen slump.
+- Efter landslagsuppehåll: 1,97 poäng per match mot 1,90 annars (21-6-8 på 35 matcher), mot marknaden +0,10 mot +0,05. Sedan 2023: 8-2-2. Ingen skillnad värd att spela på.
+- Spelstil 2025/26: Backar hem, Blandat, Mellanpress, Farlig på fasta, Stark mot fasta. Bäst mot Bollinnehav (+0,23, stabilt), Kortpass (+0,14, svagt), Medel på fasta (+0,10, samma håll i båda halvorna men svagt). Svårast mot Farlig på fasta (−0,26, samma håll i båda halvorna men svagt), Direktspel (−0,12, samma håll i båda halvorna men svagt), Backar hem (−0,13, samma håll i båda halvorna men svagt). Tal = poäng per match mot marknaden jämfört med lagets eget snitt.
+- Fasta situationer 2025/26: 0,60 mål för per match (xG 0,54), 0,18 emot (xG 0,10), 5,7 hörnor.
+- Svårt för: Man City (2-3-10, 0,60 p/match, mot marknaden −0,30), Liverpool (3-6-7, 0,94 p/match, mot marknaden −0,21), Brighton (7-5-5, 1,53 p/match, mot marknaden −0,45), Everton (7-3-5, 1,60 p/match, mot marknaden −0,32). Där marknaden ligger nära noll är laget bara sämre i de mötena än annars, och oddsen vet redan om det.
 - Utan Bukayo Saka (14 % av anfallet): 1,88 poäng per match mot 2,14 med (8 mot 73 matcher), mot marknaden −0,14 mot +0,11.
 - Utan Kai Havertz (10 % av anfallet): 2,33 poäng per match mot 2,10 med (3 mot 78 matcher), mot marknaden +0,46 mot +0,07.
 
@@ -33,6 +37,85 @@ Form (äldst → senast): VVVVVVVF · senaste match 2026-09-19
 | 2024/25 | PL | 38 | 1,95 | +0,00 (−0,15 / +0,16) | 37 % (22 %) | 1,82–0,89 | 1,94–1,05 | 1,87 |
 | 2025/26 | PL | 38 | 2,24 | +0,16 (+0,21 / +0,12) | 18 % (21 %) | 1,87–0,71 | 2,04–0,87 | 2,03 |
 | 2026/27 | PL | 5 | 2,40 | +0,16 (+0,79 / −0,26) | 0 % (22 %) | 1,60–0,80 | 1,88–1,09 | 1,90 |
+
+## Spelstil och fasta situationer
+
+Källa: [stilmatchningen](../../../analys/stil/PL.md#arsenal) (FotMob, motståndarens stil förra säsongen, justerad för styrka). Egen stil 2025/26: **Backar hem, Blandat, Mellanpress, Farlig på fasta, Stark mot fasta**.
+
+| Säsong | M | Fasta mål för | xG fasta för | Fasta mål emot | xG fasta emot | Hörnor |
+|---|---|---|---|---|---|---|
+| 2026/27 | 5 | 0,00 | 0,36 | 0,40 | 0,12 | 5,0 |
+| 2025/26 | 38 | 0,60 | 0,54 | 0,18 | 0,10 | 5,7 |
+
+| Motståndartyp | M | Mål för–emot | Mot marknaden | Rel. eget snitt (z) | Kryss | Ö2,5 | Stabilitet |
+|---|---|---|---|---|---|---|---|
+| Backar hem | 98 | 1,89–1,01 | −0,04 | −0,13 (−1,0) | −2 pe | +4 pe | ✔ samma håll |
+| Balanserat | 124 | 1,65–1,16 | +0,03 | −0,07 (−0,6) | +1 pe | −3 pe | svag |
+| Bollinnehav | 87 | 2,10–0,92 | +0,32 | +0,23 (2,1) | −7 pe | +2 pe | ⚑ stabil |
+| Kortpass | 76 | 2,05–0,82 | +0,23 | +0,14 (1,2) | −2 pe | −2 pe | svag |
+| Blandat | 127 | 1,97–1,07 | +0,11 | +0,02 (0,2) | −3 pe | +8 pe | svag |
+| Direktspel | 106 | 1,57–1,18 | −0,03 | −0,12 (−1,0) | −2 pe | −6 pe | ✔ samma håll |
+| Lågpress | 82 | 1,72–1,05 | +0,13 | +0,04 (0,3) | −2 pe | −5 pe | svag |
+| Mellanpress | 114 | 1,75–1,07 | +0,06 | −0,03 (−0,3) | −4 pe | +3 pe | ✔ samma håll |
+| Högpress | 113 | 2,04–1,02 | +0,10 | +0,01 (0,1) | −0 pe | +2 pe | ✔ samma håll |
+| Svag på fasta | 100 | 1,85–1,18 | +0,14 | +0,04 (0,4) | −1 pe | +6 pe | svag |
+| Medel på fasta | 139 | 1,91–0,92 | +0,19 | +0,10 (1,0) | −5 pe | −1 pe | ✔ samma håll |
+| Farlig på fasta | 70 | 1,73–1,10 | −0,17 | −0,26 (−1,8) | +2 pe | −3 pe | ✔ samma håll |
+| Stark mot fasta | 103 | 1,97–1,07 | +0,15 | +0,06 (0,5) | −9 pe | +4 pe | ✔ samma håll |
+| Medel mot fasta | 134 | 1,76–0,99 | +0,07 | −0,02 (−0,2) | −0 pe | −4 pe | svag |
+| Svag mot fasta | 72 | 1,85–1,13 | +0,04 | −0,05 (−0,3) | +4 pe | +4 pe | svag |
+
+Lagmönster mot spelstilar håller sällan över tid (se stabilitetstestet i [stilmatchningen](../../../analys/stilmatchning.md)). Visas även när de är svaga: använd som ledtråd, inte som regel.
+
+## Efter landslagsuppehåll
+
+Första ligamatchen efter ett uppehåll då hela ligan vilat 12–50 dagar (landslagsfönstren sep–nov och mars, VM-uppehållet 2022).
+
+| Matcher | M | V-O-F | P/M | Mot marknaden |
+|---|---|---|---|---|
+| Efter uppehåll | 35 | 21-6-8 | 1,97 | +0,10 |
+| Efter uppehåll sedan 2023 | 12 | 8-2-2 | 2,17 | +0,25 |
+| Övriga matcher | 312 | 177-63-72 | 1,90 | +0,05 |
+
+Hela ligan efter uppehåll: 0,00 mot marknaden (n 690). Nära noll betyder att oddsen redan tar hänsyn till uppehållet.
+
+| Datum | Match | Resultat | Mot marknaden |
+|---|---|---|---|
+| 2026-04-11 | Arsenal - Bournemouth | 1-2 F | −2,14 |
+| 2025-11-23 | Arsenal - Tottenham | 4-1 V | +0,81 |
+| 2025-10-18 | Fulham - Arsenal | 0-1 V | +0,64 |
+| 2025-09-13 | Arsenal - Nott'm Forest | 3-0 V | +0,72 |
+| 2025-04-01 | Arsenal - Fulham | 2-1 V | +0,84 |
+| 2024-11-23 | Arsenal - Nott'm Forest | 3-0 V | +0,73 |
+| 2024-10-19 | Bournemouth - Arsenal | 2-0 F | −2,18 |
+| 2024-09-15 | Tottenham - Arsenal | 0-1 V | +1,33 |
+| 2024-03-31 | Man City - Arsenal | 0-0 O | +0,67 |
+| 2023-11-25 | Brentford - Arsenal | 0-1 V | +0,75 |
+| 2023-10-21 | Chelsea - Arsenal | 2-2 O | +0,16 |
+| 2023-09-17 | Everton - Arsenal | 0-1 V | +0,71 |
+| 2023-04-01 | Arsenal - Leeds | 4-1 V | +0,56 |
+| 2022-12-26 | Arsenal - West Ham | 3-1 V | +0,91 |
+| 2022-10-01 | Arsenal - Tottenham | 3-1 V | +1,28 |
+| 2022-09-18 | Brentford - Arsenal | 0-3 V | +0,91 |
+| 2022-04-04 | Crystal Palace - Arsenal | 3-0 F | −2,00 |
+| 2021-11-20 | Liverpool - Arsenal | 4-0 F | −0,90 |
+| 2021-10-18 | Arsenal - Crystal Palace | 2-2 O | −1,04 |
+| 2021-09-11 | Arsenal - Norwich | 1-0 V | +0,77 |
+| 2021-04-03 | Arsenal - Liverpool | 0-3 F | −1,26 |
+| 2020-11-22 | Leeds - Arsenal | 0-0 O | +0,07 |
+| 2020-10-17 | Man City - Arsenal | 1-0 F | −0,91 |
+| 2020-09-12 | Fulham - Arsenal | 0-3 V | +0,78 |
+| 2019-11-23 | Arsenal - Southampton | 2-2 O | −1,16 |
+| 2019-10-21 | Sheffield United - Arsenal | 1-0 F | −1,94 |
+| 2019-09-15 | Watford - Arsenal | 2-2 O | −0,06 |
+| 2019-04-01 | Arsenal - Newcastle | 2-0 V | +0,78 |
+| 2018-11-25 | Bournemouth - Arsenal | 1-2 V | +1,14 |
+| 2018-10-22 | Arsenal - Leicester | 3-1 V | +0,96 |
+| 2018-09-15 | Newcastle - Arsenal | 1-2 V | +0,91 |
+| 2018-04-01 | Arsenal - Stoke | 3-0 V | +0,59 |
+| 2017-11-18 | Arsenal - Tottenham | 2-0 V | +1,54 |
+| 2017-10-14 | Watford - Arsenal | 2-1 F | −2,18 |
+| 2017-09-09 | Arsenal - Bournemouth | 3-0 V | +0,60 |
 
 ## Nyckelspelare (Understat, 2024/25–)
 
@@ -74,6 +157,8 @@ Ligans test av frånvaro mot marknaden: svag signal (inte bekräftad). Få match
 
 Ligans test av inbördes möten mot marknaden: ingen effekt.
 
+**Svårt för** (minst 6 möten och högst 1,2 poäng per match eller högst −0,30 mot marknaden): Man City 0,60 p/match (−0,30), Liverpool 0,94 p/match (−0,21), Brighton 1,53 p/match (−0,45), Everton 1,60 p/match (−0,32).
+
 ## Stryktipset / Europatipset
 
 | Datum | Spel | Match | Utfall | Folket på laget | Vår procent |
@@ -112,39 +197,39 @@ Ligans test av inbördes möten mot marknaden: ingen effekt.
 | 2025-08-31 | Europa 2501 | Liverpool - Arsenal | 1 | 27 % | 32 % |
 | 2025-08-17 | Europa 2497 | Manchester United - Arsenal | 2 ✓ | 54 % | 49 % |
 
-## Trupp (FotMob, hämtad 2026-09-29)
+## Trupp (FotMob, hämtad 2026-10-04)
 
 Tränare: Mikel Arteta. Betyg, mål och assist gäller innevarande säsong enligt FotMob.
 
-**Skadade/borta nu:** William Saliba (skadad, åter Mid October 2026), Cristhian Mosquera (osäker), Ben White (osäker), Ezri Konsa (osäker), Martin Ødegaard (osäker), Declan Rice (osäker), Kai Havertz (skadad, åter Late October 2026)
+**Skadade/borta nu:** William Saliba (skadad, åter Early November 2026), Cristhian Mosquera (osäker), Ben White (osäker), Piero Hincapié (osäker), Declan Rice (osäker), Christos Tzolis (skadad, åter Mid October 2026), Kai Havertz (osäker)
 
 | # | Spelare | Pos | Ålder | Land | Värde | Betyg | Mål | Ass | Gula/röda | Status |
 |---|---|---|---|---|---|---|---|---|---|---|
 | | **Målvakter** | | | | | | | | | |
-| 1 | David Raya | GK | 31 | Spain | 22,2 M€ | 7,31 | 0 | 0 | 0/0 |  |
-| 13 | Kepa Arrizabalaga | GK | 31 | Spain | 3,7 M€ | – | 0 | 0 | 0/0 |  |
-| 30 | Illan Meslier | GK | 26 | France | 7,1 M€ | – | 0 | 0 | 0/0 |  |
+| 1 | David Raya | GK | 31 | Spain | 24,5 M€ | 7,31 | 0 | 0 | 0/0 |  |
+| 13 | Kepa Arrizabalaga | GK | 32 | Spain | 4,3 M€ | – | 0 | 0 | 0/0 |  |
+| 30 | Illan Meslier | GK | 26 | France | 11,8 M€ | – | 0 | 0 | 0/0 |  |
 | | **Backar** | | | | | | | | | |
-| 2 | William Saliba | CB | 25 | France | 82,1 M€ | – | 0 | 0 | 0/0 | skadad, åter Mid October 2026 |
-| 3 | Cristhian Mosquera | CB,RB | 22 | Spain | 37,7 M€ | 6,94 | 0 | 0 | 0/0 | osäker |
-| 4 | Ben White | RB | 28 | England | 25,1 M€ | 7,45 | 0 | 1 | 0/0 | osäker |
-| 5 | Piero Hincapié | LB,CB | 24 | Ecuador | 46,0 M€ | 6,34 | 0 | 0 | 0/0 |  |
+| 2 | William Saliba | CB | 25 | France | 120,4 M€ | – | 0 | 0 | 0/0 | skadad, åter Early November 2026 |
+| 3 | Cristhian Mosquera | CB,RB | 22 | Spain | 56,2 M€ | 6,94 | 0 | 0 | 0/0 | osäker |
+| 4 | Ben White | RB | 28 | England | 30,8 M€ | 7,45 | 0 | 1 | 0/0 | osäker |
+| 5 | Piero Hincapié | LB,CB | 24 | Ecuador | 65,4 M€ | 6,34 | 0 | 0 | 0/0 | osäker |
 | 6 | Gabriel | CB | 28 | Brazil | 82,6 M€ | 7,18 | 0 | 0 | 2/0 |  |
-| 12 | Jurriën Timber | RB,CB,LB | 25 | Netherlands | 57,6 M€ | 6,24 | 0 | 0 | 0/0 |  |
-| 15 | Ezri Konsa | CB,RB | 28 | England | 32,1 M€ | 6,70 | 0 | 0 | 0/0 | osäker |
-| 33 | Riccardo Calafiori | LB,CB | 24 | Italy | 45,2 M€ | 6,98 | 0 | 2 | 0/0 |  |
-| 49 | Myles Lewis-Skelly | LB,CDM,CM | 20 | England | 37,7 M€ | 6,70 | 0 | 0 | 0/0 |  |
+| 12 | Jurriën Timber | RB,CB,LB | 25 | Netherlands | 71,7 M€ | 6,24 | 0 | 0 | 0/0 |  |
+| 15 | Ezri Konsa | CB,RB | 28 | England | 28,9 M€ | 6,70 | 0 | 0 | 0/0 |  |
+| 33 | Riccardo Calafiori | LB,CB | 24 | Italy | 63,3 M€ | 6,98 | 0 | 2 | 0/0 |  |
+| 49 | Myles Lewis-Skelly | LB,CDM,CM | 20 | England | 59,8 M€ | 6,70 | 0 | 0 | 0/0 |  |
 | | **Mittfältare** | | | | | | | | | |
-| 8 | Martin Ødegaard | CM,CAM | 27 | Norway | 59,3 M€ | 7,60 | 2 | 0 | 0/0 | osäker |
-| 10 | Eberechi Eze | CAM,CM,LW,CDM | 28 | England | 44,6 M€ | 6,32 | 0 | 0 | 0/0 |  |
-| 23 | Mikel Merino | CM,ST,CDM | 30 | Spain | 24,4 M€ | 6,37 | 0 | 0 | 1/0 |  |
-| 36 | Martín Zubimendi | CDM,CM,RB | 27 | Spain | 56,1 M€ | 6,13 | 0 | 0 | 0/0 |  |
-| 39 | Bruno Guimarães | CM,CDM,CAM | 28 | Brazil | 51,1 M€ | 6,61 | 1 | 0 | 0/0 |  |
-| 41 | Declan Rice | CDM,CM | 27 | England | 93,0 M€ | 7,55 | 0 | 2 | 1/0 | osäker |
-| 56 | Max Dowman | RW,CAM,CM | 16 | England | 7,5 M€ | – | 0 | 0 | 0/0 |  |
+| 8 | Martin Ødegaard | CM,CAM | 27 | Norway | 65,6 M€ | 7,60 | 2 | 0 | 0/0 |  |
+| 10 | Eberechi Eze | CAM,CM,LW,CDM | 28 | England | 74,2 M€ | 6,32 | 0 | 0 | 0/0 |  |
+| 23 | Mikel Merino | CM,ST,CDM | 30 | Spain | 21,9 M€ | 6,37 | 0 | 0 | 1/0 |  |
+| 36 | Martín Zubimendi | CDM,CM,RB | 27 | Spain | 79,0 M€ | 6,13 | 0 | 0 | 0/0 |  |
+| 39 | Bruno Guimarães | CM,CDM,CAM | 28 | Brazil | 71,3 M€ | 6,61 | 1 | 0 | 0/0 |  |
+| 41 | Declan Rice | CDM,CM | 27 | England | 101,2 M€ | 7,55 | 0 | 2 | 1/0 | osäker |
+| 56 | Max Dowman | RW,CAM,CM | 16 | England | 10,1 M€ | – | 0 | 0 | 0/0 |  |
 | | **Anfallare** | | | | | | | | | |
-| 7 | Bukayo Saka | RW,CAM | 25 | England | 84,8 M€ | 7,94 | 3 | 0 | 0/0 |  |
-| 14 | Viktor Gyökeres | ST | 28 | Sweden | 49,2 M€ | 6,04 | 0 | 0 | 0/0 |  |
-| 17 | Christos Tzolis | LW,CAM,RW,LM | 24 | Greece | 23,9 M€ | 7,13 | 0 | 1 | 2/0 |  |
-| 20 | Noni Madueke | RW | 24 | England | 49,7 M€ | 7,28 | 0 | 0 | 0/0 |  |
-| 29 | Kai Havertz | ST,CAM,CM | 27 | Germany | 44,3 M€ | 7,21 | 2 | 0 | 1/0 | skadad, åter Late October 2026 |
+| 7 | Bukayo Saka | RW,CAM | 25 | England | 112,7 M€ | 7,94 | 3 | 0 | 0/0 |  |
+| 14 | Viktor Gyökeres | ST | 28 | Sweden | 69,2 M€ | 6,04 | 0 | 0 | 0/0 |  |
+| 17 | Christos Tzolis | LW,CAM,LM,RW | 24 | Greece | 47,9 M€ | 7,13 | 0 | 1 | 2/0 | skadad, åter Mid October 2026 |
+| 20 | Noni Madueke | RW | 24 | England | 62,0 M€ | 7,28 | 0 | 0 | 0/0 |  |
+| 29 | Kai Havertz | ST,CAM,CM | 27 | Germany | 53,0 M€ | 7,21 | 2 | 0 | 1/0 | osäker |
