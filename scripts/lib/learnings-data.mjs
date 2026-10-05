@@ -88,6 +88,13 @@ function row(league, season, r, date, home, away, hg, ag) {
     avgOpenOdds: odds3(r.AvgH, r.AvgD, r.AvgA) ?? odds3(r.BbAvH, r.BbAvD, r.BbAvA),
     overOpen: ou(r['P>2.5'], r['P<2.5']) ?? ou(r['Avg>2.5'], r['Avg<2.5']) ?? ou(r['BbAv>2.5'], r['BbAv<2.5']),
     overClose: ou(r['PC>2.5'], r['PC<2.5']) ?? ou(r['AvgC>2.5'], r['AvgC<2.5']),
+    // football-data har riktig xG (HxG/AxG) fran 2026/27; Understat gar fore i topp 5 (samma kalla som historiken)
+    fdXg: Number.isFinite(num(r.HxG)) && Number.isFinite(num(r.AxG)) ? [num(r.HxG), num(r.AxG)] : null,
+    // Reserv nar betting-store saknar domare/avspark/disciplin (export-league-matches.mjs)
+    fd: {
+      kickoff: r.Time || null, referee: r.Referee?.trim() || null,
+      hc: num(r.HC), ac: num(r.AC), hf: num(r.HF), af: num(r.AF), hy: num(r.HY), ay: num(r.AY), hr: num(r.HR), ar: num(r.AR),
+    },
   };
 }
 

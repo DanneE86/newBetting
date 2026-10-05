@@ -268,7 +268,7 @@ for (const league of [...MAIN, ...NEW]) {
   breakKeys[league] = afterBreakKeys(list);
   const brk = list.flatMap((m) => [[m.home, m.y], [m.away, -m.y]].filter(([t]) => breakKeys[league].has(`${t}|${m.date}`)).map(([, y]) => y));
   L.afterBreak = { n: brk.length, res: avg(brk) };
-  L.xg = { source: UNDERSTAT.includes(league) ? 'Understat' : list.some((m) => m.xgSrc === 'skott') ? 'skott-proxy' : 'saknas', stats: xgStats[league] ?? null, coverage: list.filter((m) => m.xg).length / list.length };
+  L.xg = { source: UNDERSTAT.includes(league) ? 'Understat' : list.some((m) => m.xgSrc === 'football-data') ? 'football-data (äldre säsonger skott-proxy)' : list.some((m) => m.xgSrc === 'skott') ? 'skott-proxy' : 'saknas', stats: xgStats[league] ?? null, coverage: list.filter((m) => m.xg).length / list.length };
   const poolList = pool.filter((m) => m.code === league);
   L.pool = { all: poolStats(poolList), stryktipset: poolStats(poolList.filter((m) => m.product === 'stryktipset')), europatipset: poolStats(poolList.filter((m) => m.product === 'europatipset')) };
   leagues[league] = L;

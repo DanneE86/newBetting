@@ -97,7 +97,14 @@ jobs:
         continue-on-error: true
         run: node scripts/fetch-stryktipset.mjs
 
-      # En CSV per liga (spelade + kommande, odds fore matchen sparas) for traning, se data/matcher/README.md
+      # Trupper (skador, betyg, marknadsvarde) och tabeller for alla ligor fran FotMob, med historik.
+      # Fore matcherna sa att franvaron fore matchen (pre_inj_*) ar dagens; lagnamnen tas ur gardagens data/matcher.
+      - name: Trupper och tabeller
+        continue-on-error: true
+        timeout-minutes: 30
+        run: node scripts/fetch-squads.mjs
+
+      # En CSV per liga (spelade + kommande, odds och franvaro fore matchen sparas) for traning, se data/matcher/README.md
       - name: Matcher per liga
         continue-on-error: true
         run: node scripts/export-league-matches.mjs
@@ -106,12 +113,6 @@ jobs:
       - name: Felanalys per liga
         continue-on-error: true
         run: node scripts/tips-felanalys.mjs
-
-      # Trupper (skador, betyg, marknadsvarde) och tabeller for alla ligor fran FotMob, med historik
-      - name: Trupper och tabeller
-        continue-on-error: true
-        timeout-minutes: 30
-        run: node scripts/fetch-squads.mjs
 
       # Startelvor (FotMob) för Oddset-matcher och kupongerna: spelare mot spelare i GUI:t, data/startelvor.json
       - name: Startelvor

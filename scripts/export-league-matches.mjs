@@ -3,7 +3,8 @@
 // fran scripts/lib/learnings-signals.mjs (bara data fore matchen). Ligor utan oddshistorik tas fran betting-store.
 // Kommande: fran data/upcoming-fixtures.json med dagens signaler och odds (data/open/upcoming_odds.json).
 // Oddsen vi sag fore matchen sparas i pre_first_* / pre_last_* och foljer med nar matchen blir spelad,
-// sa att filen byggs pa over tid (kors varje dag i pipelinen). Kors: npm run matcher
+// sa att filen byggs pa over tid (kors varje dag i pipelinen). Spelade matcher utan resultat an ligger som 'väntar'.
+// Franvaron i lagen (data/trupper) fore matchen sparas i pre_inj_* pa samma satt. Kors: npm run matcher
 import fs from 'node:fs';
 import path from 'node:path';
 import { buildSignals, h2hFeatures, pairKey, sideState, teamKey } from './lib/learnings-signals.mjs';
@@ -11,6 +12,7 @@ import { root } from './lib/learnings-data.mjs';
 import { nameScore } from './lib/match-context.mjs';
 import { clashesWith, uniqueBest } from './lib/team-match.mjs';
 import { canonTeam } from './lib/team-aliases.mjs';
+import { INJ, carryPre, extraCols as extra, pendingRows, squadAbsence } from './lib/matcher-rows.mjs';
 
 const DIR = path.join(root, 'data', 'matcher');
 const readJson = (p, d = null) => { try { return JSON.parse(fs.readFileSync(p, 'utf8').replace(/^﻿/, '')); } catch { return d; } };
@@ -21,8 +23,8 @@ const COLS = [
   'best_close_h', 'best_close_d', 'best_close_a', 'over25_open', 'over25_close',
   'luck', 'gap', 'mres', 'rest', 'h2h_n', 'h2h_pts', 'h2h_res', 'h2h_draw', 'promo', 'releg', 'miss_h', 'miss_a', 'steam', 'book',
   'pre_first_at', 'pre_first_h', 'pre_first_d', 'pre_first_a', 'pre_last_at', 'pre_last_h', 'pre_last_d', 'pre_last_a', 'pre_best_h', 'pre_best_d', 'pre_best_a',
+  ...INJ,
 ];
-const PRE = COLS.filter((c) => c.startsWith('pre_'));
 const r4 = (x) => (x == null || !Number.isFinite(x) ? '' : String(Math.round(x * 1e4) / 1e4));
 const cell = (v) => {
   if (v == null) return '';
@@ -58,11 +60,7 @@ const store = readJson(path.join(root, 'data', 'betting-store.json'), { matches:
 // Samma lag med olika stavning -> ett namn (config/team-aliases.json)
 store.matches = store.matches.map((m) => ({ ...m, home: canonTeam(m.league, m.home), away: canonTeam(m.league, m.away) }));
 const storeByKey = new Map(store.matches.map((m) => [`${m.league}|${m.date}|${m.home}|${m.away}`, m]));
-// Domare, horn, frisparkar, kort, avspark fran store (football-data, 2023/24-)
-const extra = (m) => {
-  const d = m?.discipline ?? {};
-  return { kickoff: m?.kickoff ?? null, referee: m?.referee ?? null, hc: d.homeCorners, ac: d.awayCorners, hf: d.homeFouls, af: d.awayFouls, hy: d.homeYellow, ay: d.awayYellow, hr: d.homeRed, ar: d.awayRed };
-};
+// Domare, horn, frisparkar, kort, avspark: extra(store-match, fd-CSV-rad) i lib/matcher-rows.mjs
 const byLeague = new Map();
 for (const m of matches) {
   (byLeague.get(m.league) ?? byLeague.set(m.league, []).get(m.league)).push({
@@ -73,7 +71,7 @@ for (const m of matches) {
     pin_close: m.pinClose ? 1 : 0,
     best_open_h: m.bestOpen?.[0], best_open_d: m.bestOpen?.[1], best_open_a: m.bestOpen?.[2],
     best_close_h: m.bestClose?.[0], best_close_d: m.bestClose?.[1], best_close_a: m.bestClose?.[2],
-    over25_open: m.overOpen, over25_close: m.overClose, ...signalCols(m.f), ...extra(storeByKey.get(`${m.league}|${m.date}|${m.home}|${m.away}`)),
+    over25_open: m.overOpen, over25_close: m.overClose, ...signalCols(m.f), ...extra(storeByKey.get(`${m.league}|${m.date}|${m.home}|${m.away}`), m.fd),
   });
 }
 
@@ -115,7 +113,8 @@ const leagues = new Set([...byLeague.keys(), ...fixtures.map((f) => f.league)]);
 for (const lg of [...leagues].sort()) {
   const file = path.join(DIR, `${lg}.csv`);
   const prev = parseCsv(file).map((r) => ({ ...r, home: canonTeam(lg, r.home), away: canonTeam(lg, r.away) }));
-  const prevPre = new Map(prev.filter((r) => r.pre_first_at).map((r) => [key(r), r]));
+  const prevPre = new Map(prev.filter((r) => r.pre_first_at || r.pre_inj_at).map((r) => [key(r), r]));
+  const squads = readJson(path.join(root, 'data', 'trupper', `${lg}.json`), null);
   const rows = byLeague.get(lg) ?? [];
   const played = new Set(rows.map(key));
   const up = [];
@@ -132,6 +131,9 @@ for (const lg of [...leagues].sort()) {
     if (H.rest != null && A.rest != null && H.rest <= 30 && A.rest <= 30) sig.rest = Math.max(-7, Math.min(7, H.rest - A.rest));
     Object.assign(sig, h2hFeatures(h2hState.get(pairKey(hk, ak)), hk, f.date) ?? {});
     Object.assign(r, signalCols(sig));
+    // Franvaron nu (senaste korningen fore matchen ar den som blir kvar)
+    const ab = [home, away].map((t) => squadAbsence(squads?.teams?.[t]));
+    if (ab[0] && ab[1]) Object.assign(r, { pre_inj_at: squads.updatedAt, pre_inj_h: ab[0].n, pre_inj_a: ab[1].n, pre_injv_h: ab[0].share, pre_injv_a: ab[1].share });
     const o = liveOdds(f);
     if (o) {
       r.kickoff ||= o.kickoff;
@@ -140,21 +142,15 @@ for (const lg of [...leagues].sort()) {
     up.push(r);
   }
   // Oddsen fore matchen foljer med: forsta avlasningen behalls, senaste uppdateras
-  for (const r of [...rows, ...up]) {
-    const p = prevPre.get(key(r));
-    if (!p) {
-      if (r.pre_last_at) Object.assign(r, { pre_first_at: r.pre_last_at, pre_first_h: r.pre_last_h, pre_first_d: r.pre_last_d, pre_first_a: r.pre_last_a });
-      continue;
-    }
-    for (const c of ['pre_first_at', 'pre_first_h', 'pre_first_d', 'pre_first_a']) r[c] = p[c];
-    if (!r.pre_last_at) for (const c of PRE.filter((x) => !x.startsWith('pre_first'))) r[c] = p[c];
-  }
+  for (const r of [...rows, ...up]) carryPre(r, prevPre.get(key(r)));
   // Kommande rader fran forra korningen som varken spelats eller finns i schemat (flyttade matcher) behalls,
   // utom nar ett av lagen redan har en match i schemat inom 2 dagar (raden var da felmappad, t.ex. Boca i stallet for Argentinos)
   const upKeys = new Set(up.map(key));
   const kept = prev.filter((r) => r.status === 'kommande' && r.date >= today && !played.has(key(r)) && !upKeys.has(key(r))
     && !clashesWith(r, up));
-  const out = [...rows, ...kept, ...up].sort((a, b) => a.date.localeCompare(b.date) || a.home.localeCompare(b.home));
+  // Spelade men utan resultat an: behalls som 'väntar' sa pre_* inte forsvinner (lib/matcher-rows.mjs)
+  const pending = pendingRows(prev, today, (r) => played.has(key(r)) || upKeys.has(key(r)));
+  const out = [...rows, ...pending, ...kept, ...up].sort((a, b) => a.date.localeCompare(b.date) || a.home.localeCompare(b.home));
   if (!out.length) continue;
   fs.writeFileSync(file, `${COLS.join(',')}\n${out.map((r) => COLS.map((c) => cell(r[c])).join(',')).join('\n')}\n`, 'utf8');
   totalUp += up.length + kept.length;
@@ -162,14 +158,15 @@ for (const lg of [...leagues].sort()) {
 }
 fs.writeFileSync(path.join(DIR, 'README.md'), `# Matcher per liga
 
-En CSV per liga med alla matcher vi har: \`status\` = spelad eller kommande. Genereras av \`npm run matcher\` (körs dagligen). Rör inte för hand.
+En CSV per liga med alla matcher vi har: \`status\` = spelad, väntar (spelad men resultatet har inte kommit, högst 21 dagar) eller kommande. Genereras av \`npm run matcher\` (körs dagligen). Rör inte för hand.
 
 - Sannolikheter (\`open_*\`, \`close_*\`, \`pre_*\`) är utan bolagsmarginal. \`pin_close\` = 1 när stängningen är Pinnacle (annars bolagssnitt).
 - \`best_*\` = bästa odds bland bolagen. \`over25_*\` = sannolikhet för över 2,5 mål.
 - Signalerna (\`luck\`, \`gap\`, \`mres\`, \`rest\`, \`h2h_*\`, \`promo\`, \`releg\`, \`miss_*\`, \`steam\`, \`book\`) använder bara data före matchen, hemmalaget minus bortalaget. Se \`docs/lardomar/README.md\`.
 - \`pre_first_*\` / \`pre_last_*\` = oddsen vi såg innan matchen (första och senaste avläsning, bolagssnitt i Sverige). De följer med när matchen blir spelad, så filen byggs på över tid.
-- xG: \`xg_src\` = understat (topp 5) eller skott (uppskattat från skott och skott på mål).
-- \`referee\`, hörnor \`hc/ac\`, frisparkar \`hf/af\`, gula \`hy/ay\`, röda \`hr/ar\` (där källan har det, främst 2023/24 och senare).
+- \`pre_inj_*\` = frånvaron i lagen före matchen (senaste avläsning ur \`data/trupper\`, sparas från 2026-10-05): antal skadade/avstängda (\`pre_inj_h/a\`) och deras andel av truppens marknadsvärde (\`pre_injv_h/a\`). I engelska ligorna FotMob + Transfermarkts skadelista.
+- xG: \`xg_src\` = understat (topp 5), football-data (riktig xG, från 2026/27) eller skott (uppskattat från skott och skott på mål).
+- \`referee\`, hörnor \`hc/ac\`, frisparkar \`hf/af\`, gula \`hy/ay\`, röda \`hr/ar\` (där källan har det, främst 2023/24 och senare; direkt ur football-data-CSV:n när betting-store inte har dem än).
 
 Relaterat, också per liga och med historik: aktuella trupper (skador, betyg, mål, marknadsvärde, vilka som lämnat, tränarbyten) i \`data/trupper/<liga>.json\` och tabell med daglig tabellhistorik i \`data/ligor/<liga>.json\` (\`npm run trupper\`). Lärdomar per liga och lag: \`docs/lardomar/\`.
 `, 'utf8');

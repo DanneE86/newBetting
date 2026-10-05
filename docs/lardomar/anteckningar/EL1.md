@@ -55,6 +55,18 @@ Mer om ligan (signaler, kalibrering, Stryktipset): [ligor/EL1.md](../ligor/EL1.m
 
 ## Lärdomar och beslut (handskrivet, daterat – nyast överst)
 
+### 2026-10-05: genomgång av alla 90 spelade matcher 2026/27 – missade vi något?
+
+- Stängningsfavoriten vann 32 av 90 (väntat 41,0, z ≈ −1,9), kryss 30 av 90 (väntat ≈ 24). Fortfarande inom slumpen. Följ upp vid 200 matcher, som beslutades 2026-09-28.
+- Nya situationer testade mot öppningsoddsen (träning före 2023/24, kontroll 2023/24–2025/26, sedan i år): nedflyttad favorit (tr +9,2 pe z 1,8, ko −2,3 pe z −0,3, i år −3,3 pe), nedflyttad motståndare (krysset tr z +1,4, ko z −2,3, olika tecken), favorit med mindre vila (inget). Ingen är bekräftad, så inget förs in.
+- Stryktipset 4973 (3/10, landslagsuppehåll, bara 3 League One-matcher): bortafavoriterna Huddersfield (1-3) och Plymouth (0-2) var garderade i alla kuponger. Reading–Bradford 1-1 (kryss 26–27 %) föll i A (12) och i B:s senaste version (2).
+- Datahål som hittades:
+  - **xG:** football-data har riktig xG (HxG/AxG) för alla engelska ligor från 2026/27. Lärdomsdelen (`learnings-data.mjs` → `data/matcher`, lagfilerna) läser bara Understat och använder annars skott-proxy. Proxyn korrelerar 0,74 med riktig xG men skiljer upp till 0,35 mål/match per lag (Wigan, Barnsley, Cambridge). Stryktipsmotorn läser redan HxG.
+  - **Domare:** de 3 matcherna 3/10 saknar domare i matchfilen fast rådatan har dem. League Two saknar domare i alla 102 matcher i år.
+  - **Skador (`miss_*`):** tomma utanför topp 5. Så är det byggt (spelardata från Understat), men det betyder att "nyckelspelare borta" aldrig testas i League One.
+  - **Åtgärdat samma dag (gäller PL, CH, EL1, EL2):** riktig xG från football-data (`xg_src = football-data`), domare/avspark/kort direkt ur CSV:n när betting-store inte hunnit, spelade matcher utan resultat ligger kvar som `väntar` i upp till 21 dagar så att oddsen före matchen inte tappas (3/10-matcherna tappades så), frånvaron före matchen sparas i `pre_inj_*` för varje kommande match, och Transfermarkts skadelista fyller på FotMob (FotMob hade 2 skadade i hela League One, nu 23; CH +16, PL +6). Om ungefär en säsong går "frånvaro före matchen" att testa mot oddsen i League One.
+  - Kvar utan åtgärd: `book` (bolagssnitt mot Pinnacle) är tom för 2026/27 i alla ligor eftersom football-data slutat leverera Pinnacles odds.
+
 ### 2026-10-03: missas något tecken (1/X/2) oftare än väntat i Stryktipset A/B? (107 omg)
 
 - League One: för få matcher (25 hemmavinster, 23 kryss, 31 bortavinster). A missade 1 1 (väntat 2), X 12 (10), 2 8 (5); B 6 (5), 13 (13), 6 (7). Inget att läsa ut.

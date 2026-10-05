@@ -129,6 +129,7 @@ export function buildSignals({ players = true, log = console.log } = {}) {
   })();
   for (const m of matches) {
     if (m.hxg != null) { m.xg = [m.hxg, m.axg]; m.xgSrc = 'understat'; continue; }
+    if (m.fdXg) { m.xg = m.fdXg; m.xgSrc = 'football-data'; continue; }
     if (Number.isFinite(m.hst) && Number.isFinite(m.hs) && m.hs >= m.hst && m.as >= m.ast) {
       m.xg = [proxy.off * (m.hs - m.hst) + proxy.on * m.hst, proxy.off * (m.as - m.ast) + proxy.on * m.ast];
       m.xgSrc = 'skott';
