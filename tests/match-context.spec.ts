@@ -150,7 +150,7 @@ test('hittar match som i UTC ligger på dagen före (sen avspark nära midnatt)'
 });
 
 test('bekräftad elva: lineupConfirmed true, "predicted" räknas inte som bekräftad', async () => {
-  for (const [type, confirmed] of [['standard', true], ['predictedLineup', false], ['lastStarting11', false]] as const) {
+  for (const [type, confirmed] of [['standard', true], ['predictedLineup', false], ['lastStarting11', false], ['unavailable', false]] as const) {
     mockFetch({
       matches: { '20261001': dayWith('UEFA Nations League', [fmMatch(1, 'Bosnia and Herzegovina', 'Sweden', '2026-10-01T18:45:00Z')]) },
       details: { '1': details({ lineup: { ...details().content.lineup, lineupType: type } }) },
@@ -159,6 +159,18 @@ test('bekräftad elva: lineupConfirmed true, "predicted" räknas inte som bekrä
     const cx = await fetchMatchContext({ kickoff: KICKOFF, home: 'Bosnien & Hercegovina', away: 'Sverige' });
     expect(cx.lineupConfirmed, type).toBe(confirmed);
   }
+});
+
+test('bekräftad elva kräver startspelare: "standard" utan startelvor (dagar före matchen) är inte bekräftad', async () => {
+  const lu = details().content.lineup;
+  mockFetch({
+    matches: { '20261001': dayWith('UEFA Nations League', [fmMatch(1, 'Bosnia and Herzegovina', 'Sweden', '2026-10-01T18:45:00Z')]) },
+    details: { '1': details({ lineup: { ...lu, lineupType: 'standard', homeTeam: { ...lu.homeTeam, starters: [] }, awayTeam: { ...lu.awayTeam, starters: [] } } }) },
+  });
+  const { fetchMatchContext, contextNotes } = await load();
+  const cx = await fetchMatchContext({ kickoff: KICKOFF, home: 'Bosnien & Hercegovina', away: 'Sverige' });
+  expect(cx.lineupConfirmed).toBe(false);
+  expect(contextNotes(cx, 'Bosnien', 'Sverige')[0]).toMatch(/^Elvorna är inte bekräftade/);
 });
 
 test('matchdetaljer saknas: bara id och liga, ingen krasch', async () => {
