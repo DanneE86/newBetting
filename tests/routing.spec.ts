@@ -223,6 +223,38 @@ test('Oddset: domarsvit markeras på tipskorten', async ({ page }) => {
   }
 });
 
+// Uppskjuten match utan nytt datum (Sabadell–Andorra 3 okt 2026): ligger kvar märkt, aldrig bland bästa tipsen
+test('Oddset: uppskjuten match visas som "Uppskjuten – nytt datum saknas"', async ({ page }) => {
+  let pp: any = null;
+  await page.route('**/api/dashboard*', async (route) => {
+    const res = await route.fetch();
+    const body = await res.json();
+    const all = body.allCandidates || [];
+    if (all.length) {
+      pp = { ...all[0], home: 'Sabadell', away: 'Andorra', match: 'Sabadell vs Andorra', date: '2026-10-03', kickoffUtc: '2026-10-03T16:30:00Z', postponed: true, tipScore: 0.99 };
+      body.allCandidates = [pp, ...all];
+      body.bestUpcoming = [pp, ...(body.bestUpcoming || [])];
+    }
+    await route.fulfill({ response: res, json: body });
+  });
+  await page.goto(base + '/tips');
+  await expect(page.locator('.cand-row, .tip').first()).toBeVisible({ timeout: 30_000 });
+  test.skip(!pp, 'inga tips i listan just nu');
+  const id = `${pp.league}|${pp.date}|Sabadell|Andorra`;
+  const time = page.locator(`[data-tip-id="${id}"] time.postponed`).first();
+  await expect(time).toBeVisible();
+  await expect(time).toContainText('Uppskjuten – nytt datum saknas');
+  await expect(time).toContainText('var ');
+  // Hög tipScore men uppskjuten: aldrig i gruppen "dagens bästa"/"bästa tips" (får ligga märkt under sin liga)
+  const topIds = await page.locator('#tips').evaluate((root) => {
+    const head = [...root.querySelectorAll('h3.tip-group-head')].find((h) => /bästa/.test(h.textContent || ''));
+    const ids: string[] = [];
+    for (let el = head?.nextElementSibling; el && el.tagName !== 'H3'; el = el.nextElementSibling) ids.push(el.getAttribute('data-tip-id') || '');
+    return ids;
+  });
+  expect(topIds).not.toContain(id);
+});
+
 test('Stryktipset: domarsvit markeras på matcherna', async ({ page }) => {
   await page.route('**/api/stryktips', async (route) => {
     const res = await route.fetch();
@@ -454,10 +486,12 @@ test('Oddset: bästa tipsen överst kommer från kommande omgång, även utan v�
     const res = await route.fetch();
     const body = await res.json();
     const src = [...(body.allCandidates || []), ...(body.bestUpcoming || [])][0];
-    const mk = (home: string, away: string, date: string, tipScore: number) => ({
+    const mk = (home: string, away: string, date: string, tipScore: number, p1 = 0.65, odds = 1.6) => ({
       ...src, league: 'AS', home, away, match: `${home} vs ${away}`, date, kickoffUtc: `${date}T13:00:00Z`, tipScore,
+      tips: { ...src.tips, '1X2': { pick: '1', confidence: p1 } },
+      pro: { ...src.pro, verdicts: {}, odds: { home: odds, draw: 3.5, away: 5, over25: 1.9, under25: 1.9 } },
     });
-    body.allCandidates = [mk('Goteborg', 'Vasteras SK', day(5), 0.4), mk('Hammarby', 'Djurgarden', day(7), 0.9), mk('Malmo FF', 'Kalmar', day(8), 0.7)];
+    body.allCandidates = [mk('Goteborg', 'Vasteras SK', day(5), 0.4, 0.62), mk('Hammarby', 'Djurgarden', day(7), 0.9, 0.7), mk('Malmo FF', 'Kalmar', day(8), 0.7, 0.66)];
     body.bestUpcoming = [mk('Sirius', 'AIK', day(20), 0.5)];
     await route.fulfill({ response: res, json: body });
   });
@@ -467,5 +501,40 @@ test('Oddset: bästa tipsen överst kommer från kommande omgång, även utan v�
   const head = page.locator('#tips .tip-group-head').first();
   await expect(head).toContainText('Omgången', { timeout: 30_000 });
   await expect(head).toContainText('3 matcher');
+  // Högst 1X2-chans först
   await expect(page.locator('#tips .tip').first()).toContainText('Hammarby');
+});
+
+test('Oddset: bästa tips = 1X2 över 60 %, högst 3, i läget Alla bara odds över 1.4', async ({ page }) => {
+  const day = (n: number) => { const d = new Date(); d.setDate(d.getDate() + n); return d.toLocaleDateString('sv-SE'); };
+  await page.route('**/api/dashboard*', async (route) => {
+    const res = await route.fetch();
+    const body = await res.json();
+    const src = [...(body.allCandidates || []), ...(body.bestUpcoming || [])][0];
+    const mk = (home: string, p1: number, odds: number) => ({
+      ...src, league: 'AS', home, away: 'Borta', match: `${home} vs Borta`, date: day(5), kickoffUtc: `${day(5)}T13:00:00Z`, tipScore: 0.6,
+      tips: { ...src.tips, '1X2': { pick: '1', confidence: p1 } },
+      pro: { ...src.pro, verdicts: {}, odds: { home: odds, draw: 3.5, away: 5, over25: 1.9, under25: 1.9 } },
+    });
+    body.allCandidates = [
+      mk('Lag60', 0.6, 1.8), // exakt 60 % räcker inte
+      mk('Lag59', 0.59, 2.0),
+      mk('Lag75Lagodds', 0.75, 1.3), // odds under 1.4 i läget Alla
+      mk('Lag14', 0.72, 1.4), // exakt 1.4 räcker inte
+      mk('Lag61', 0.61, 1.9),
+      mk('Lag63', 0.63, 1.7),
+    ];
+    body.bestUpcoming = [];
+    await route.fulfill({ response: res, json: body });
+  });
+  await page.goto(base + '/tips');
+  await page.evaluate(() => { localStorage.clear(); localStorage.setItem('betting.valueOnly', '0'); });
+  await page.goto(base + '/tips');
+  const head = page.locator('#tips .tip-group-head').first();
+  await expect(head).toContainText('bästa', { timeout: 30_000 });
+  // Bara två klarar kraven: färre än 3 visas
+  await expect(head).toContainText('2 matcher');
+  const titles = await page.locator('#tips .tip h3.match').evaluateAll((els) => els.slice(0, 2).map((e) => e.textContent));
+  expect(titles[0]).toContain('Lag63');
+  expect(titles[1]).toContain('Lag61');
 });

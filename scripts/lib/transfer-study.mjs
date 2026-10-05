@@ -156,6 +156,9 @@ export function teamMedian(ts, teamId, season, playerId) {
   return list.length >= 5 ? median(list) : null;
 }
 
+/** Säsongen innan: "2026/2027" -> "2025/2026", "2026" -> "2025". */
+export const prevSeasonName = (s) => { const m = String(s ?? "").match(/^(\d{4})(?:\/(\d{4}))?$/); return m ? (m[2] ? `${m[1] - 1}/${m[2] - 1}` : String(m[1] - 1)) : null; };
+
 /** Alla ligabyten med andel speltid, ligans medianbetyg och lagets styrka (lagkamraternas median mot ligans). */
 export function buildMoves(players, ls, { minEnd = 2024, ts = null } = {}) {
   const out = [];
@@ -165,7 +168,9 @@ export function buildMoves(players, ls, { minEnd = 2024, ts = null } = {}) {
       if (!st) continue;
       const x = ls.get(`${st.leagueId}|${st.season}`) ?? {};
       st.roundsMax = x.rounds ?? null;
-      st.median = x.median ?? null;
+      // Pågående säsong utan median än (för få spelare med 10 matcher): förra säsongens median i samma liga
+      st.median = x.median ?? ls.get(`${st.leagueId}|${prevSeasonName(st.season)}`)?.median ?? null;
+      st.medianFromPrev = x.median == null && st.median != null;
       st.share = x.rounds ? Math.min(1, st.apps / x.rounds) : null;
       const tm = ts ? teamMedian(ts, st.teamId, st.season, p.id) : null;
       st.teamRel = tm != null && st.median != null ? tm - st.median : null;
@@ -201,7 +206,7 @@ export function features(m, levels) {
   const expRel = relA != null && gap != null && m.to.median != null && m.from.median != null
     ? (m.from.rating - gap) - m.to.median : null;
   const success = isSuccess(m.to);
-  const ok = relA != null && expRel != null && age != null && m.from.share != null && success != null;
+  const ok = relA != null && expRel != null && age != null && m.from.share != null;
   const ga = m.from.apps ? ((m.from.goals ?? 0) + (m.from.assists ?? 0)) / m.from.apps : 0;
   // Två säsonger i gamla ligan, viktat med matcher; lagets styrka 0 (ligasnitt) när den saknas
   const relPrev = m.prev?.rating && m.prev?.median ? m.prev.rating - m.prev.median : null;

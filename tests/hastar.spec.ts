@@ -115,6 +115,57 @@ function game(o: any = {}) {
   return { id: 'V85_2026-10-03_5_1', type: 'V85', races: [race(1, starts, o), race(2, starts.map((s) => ({ ...s })), o)] };
 }
 
+test.describe('hästpoäng 0–100', () => {
+  test('horseScore: fast log-skala, 0,5 % = 0, 60 % = 100, stigande med chansen', async () => {
+    const { horseScore } = await model();
+    expect(horseScore(0.005)).toBe(0);
+    expect(horseScore(0.001)).toBe(0);
+    expect(horseScore(0.6)).toBe(100);
+    expect(horseScore(0.9)).toBe(100);
+    expect(horseScore(0.04)).toBe(43);
+    expect(horseScore(0.25)).toBe(82);
+    expect(horseScore(null)).toBeNull();
+    const ps = [0.01, 0.03, 0.08, 0.15, 0.3, 0.5];
+    const xs = ps.map(horseScore);
+    for (let i = 1; i < xs.length; i++) expect(xs[i]).toBeGreaterThan(xs[i - 1]);
+  });
+
+  test('analyzeRace: total följer chansen, delpoäng 0–100 per område, strukna utan poäng', async () => {
+    const { normalizeGame, analyzeGame, horseScore } = await model();
+    const a = analyzeGame(normalizeGame(game()));
+    const r = a.races[0];
+    const live = r.horses.filter((h: any) => !h.scratched);
+    for (const h of live) {
+      expect(h.poang.total).toBe(horseScore(h.p));
+      for (const k of ['form', 'fart', 'klass', 'spar', 'kusk', 'tranare', 'utrustning', 'tempo', 'marknad']) {
+        expect(h.poang[k]).toBeGreaterThanOrEqual(0);
+        expect(h.poang[k]).toBeLessThanOrEqual(100);
+      }
+    }
+    // sorterat på chans → poängen faller eller står still nedåt i tabellen
+    for (let i = 1; i < live.length; i++) expect(live[i].poang.total).toBeLessThanOrEqual(live[i - 1].poang.total);
+    expect(r.horses.find((h: any) => h.scratched).poang).toBeUndefined();
+    // häst 4 vann sina tre senaste: bäst form i loppet. Häst 1 mest streckad: högst streckpoäng
+    const by = (nr: number) => live.find((h: any) => h.nr === nr);
+    expect(by(4).poang.form).toBe(Math.max(...live.map((h: any) => h.poang.form)));
+    expect(by(1).poang.marknad).toBe(Math.max(...live.map((h: any) => h.poang.marknad)));
+  });
+
+  test('groupScores: riktning efter vad som är bra för hästen, lika fält = 50', async () => {
+    const { groupScores } = await import(pathToFileURL(path.join(ROOT, 'scripts', 'lib', 'trav-features.mjs')).href);
+    const zero = [0, 0, 0];
+    const X: any = new Proxy({}, { get: () => zero });
+    const flat = groupScores({ n: 3, X, lq: [-1, -1, -1], hasMarket: true });
+    for (const g of Object.values(flat) as number[][]) expect(g).toEqual([50, 50, 50]);
+    // galopp är emot: flest galopper ger lägst formpoäng; skor på är emot i utrustning
+    const X2: any = new Proxy({ galopp: [2, 0, -2], skorPa: [1, 0, -1] }, { get: (t: any, k) => t[k] ?? zero });
+    const g2 = groupScores({ n: 3, X: X2, lq: [-1, -2, -3], hasMarket: true });
+    expect(g2.form[0]).toBeLessThan(g2.form[2]);
+    expect(g2.utrustning[0]).toBeLessThan(g2.utrustning[2]);
+    expect(g2.marknad[0]).toBeGreaterThan(g2.marknad[2]);
+  });
+});
+
 test.describe('trav-model: analyzeRace och analyzeGame', () => {
   test('chanserna summerar till 1, strukna utanför, A–D och spelvärde = chans / streck', async () => {
     const { normalizeGame, analyzeGame, VALUE_MIN, RANK_LIMITS } = await model();
@@ -393,11 +444,22 @@ test.describe('GUI: fliken Hästar', () => {
     const live = state.analysis.races[0].horses.filter((h: any) => !h.scratched).length;
     await expect(page.locator('.hs-race').first().locator('.hs-verdict')).toHaveCount(live);
     await expect(page.locator('.hs-race-head small').first()).toContainText('start');
+    // hästpoäng 0–100 för varje ej struken häst, högst för den med störst chans
+    const pts = (await page.locator('.hs-race').first().locator('.hs-score b').allInnerTexts()).map(Number);
+    expect(pts).toHaveLength(live);
+    for (const x of pts) expect(x).toBeGreaterThanOrEqual(0), expect(x).toBeLessThanOrEqual(100);
+    expect(pts[0]).toBe(Math.max(...pts));
+    // uppföljningen visas (tom eller med tabell)
+    await expect(page.locator('.hs-follow h3')).toContainText('Uppföljning på riktigt');
+    if (state.uppfoljning?.games) await expect(page.locator('.hs-follow tbody tr').first()).toBeVisible();
     for (const b of [100, 1000]) {
       await page.click(`[data-budget="${b}"]`);
-      const txt = await page.locator('.hs-sys-sum:not(.hs-sys-top)').innerText();
+      const txt = await page.locator('.hs-sys-sum:not(.hs-sys-top):not(.hs-sys-skrall)').innerText();
       const cost = Number(txt.match(/([\d\s]+)\s*kr/)![1].replace(/\s/g, ''));
       expect(cost).toBeLessThanOrEqual(b);
+      // skrällraden: antal avdelningar med häst under 10 % streck, högst antalet avdelningar
+      const sk = (await page.locator('.hs-sys-skrall').innerText()).match(/i (\d+) av (\d+) avdelningar/)!;
+      expect(Number(sk[1])).toBeLessThanOrEqual(Number(sk[2]));
       // högsta rad visas och klarar 50 000 kr-golvet (eller så visas varning om att budgeten inte räcker)
       const top = await page.locator('.hs-sys-top').innerText();
       const topKr = Number(top.match(/ca ([\d\s]+)\s*kr/)![1].replace(/\s/g, ''));
@@ -433,12 +495,19 @@ test.describe('GUI: fliken Hästar', () => {
     // reducerat: filen innehåller exakt de rader som spelas
     await page.click('[data-mode="reducerat"]');
     await expect(page.locator('.hs-conds')).toBeVisible();
-    await expect(page.locator('.hs-sys-sum:not(.hs-sys-top)')).toContainText('klarar villkoren');
+    await expect(page.locator('.hs-sys-sum:not(.hs-sys-top):not(.hs-sys-skrall)')).toContainText('klarar villkoren');
     await expect(page.locator('.hs-atg-steps')).toContainText('Välj fil');
-    const played = Number((await page.locator('.hs-sys-sum:not(.hs-sys-top) b').innerText()).match(/^([\d\s]+) rader/)![1].replace(/\s/g, ''));
+    const played = Number((await page.locator('.hs-sys-sum:not(.hs-sys-top):not(.hs-sys-skrall) b').innerText()).match(/^([\d\s]+) rader/)![1].replace(/\s/g, ''));
     const [dl2] = await Promise.all([page.waitForEvent('download'), page.click('[data-act="atg-file"]')]);
     expect(dl2.suggestedFilename()).toContain('-' + played + '-rader-');
     expect(dl2.suggestedFilename().slice(-8, -4)).toBe(crc16(fs.readFileSync((await dl2.path())!, 'utf8')));
+    // Skrällsystem-knappen: reducerat, utgång 16 ×, minst 3 skrällar; Reducerat system tar bort skrällkravet igen
+    await page.click('[data-mode="skrall3"]');
+    await expect(page.locator('[data-mode="skrall3"]')).toHaveAttribute('aria-pressed', 'true');
+    await expect(page.locator('#hs-expand')).toHaveValue('16');
+    await expect(page.locator('[data-cond="minSkrall"]')).toHaveValue('3');
+    await page.click('[data-mode="reducerat"]');
+    await expect(page.locator('[data-mode="skrall3"]')).toHaveAttribute('aria-pressed', 'false');
   });
 
   test('mobil: ingen sidscroll i sidled', async ({ page }) => {
@@ -541,6 +610,48 @@ test.describe('loppets förstapris', () => {
     const old = { races: [{ id: 'R1' }, { id: 'R2', firstPrize: 5 }, { id: 'R3' }] };
     addPrizes(old, { races: [{ id: 'R1', prize: 'Pris: 80.000-40.000 kr' }, { id: 'R2', prize: 'Pris: 1.000 kr' }, { id: 'R3', prize: 'okänd' }] });
     expect(old.races.map((r: any) => r.firstPrize)).toEqual([80000, 5, null]);
+  });
+
+  test('avel, hemmabanor, rekord per distans, banunderlag och resultat sparas; komplettering fyller i gamla omgångar', async () => {
+    const { normalizeGame } = await model();
+    const { addExtras, lacksExtras } = await sasong();
+    const st: any = start(1, { place: 1 });
+    st.horse.id = 77;
+    st.horse.pedigree = { father: { name: 'Far' }, mother: { name: 'Mor' }, grandfather: { name: 'Morfar' } };
+    st.horse.homeTrack = { name: 'Boden' };
+    st.horse.trainer.id = 9;
+    st.horse.trainer.homeTrack = { name: 'Umåker' };
+    st.driver.homeTrack = { name: 'Solvalla' };
+    st.horse.statistics.life.records = [{ startMethod: 'auto', distance: 'medium', time: { minutes: 1, seconds: 12, tenths: 5 }, year: '2026' }];
+    st.horse.statistics.lastFiveStarts = { averageOdds: 930 };
+    st.result = { place: 1, finishOrder: 1, kmTime: { minutes: 1, seconds: 13, tenths: 0 }, finalOdds: 2.25, prizeMoney: 125000 };
+    const r: any = race(1, [st]);
+    r.track.condition = 'light';
+    r.result = { victoryMargin: 'nos' };
+    r.terms = ['3-åriga ston', '2140 m'];
+    const g = normalizeGame({ id: 'V85_2026-10-03_5_1', type: 'V85', races: [r] });
+    const s = g.races[0].starts[0];
+    expect(s).toMatchObject({ horseId: 77, father: 'Far', grandfather: 'Morfar', horseHome: 'Boden', trainerId: 9, trainerHome: 'Umåker', driverHome: 'Solvalla', avgOdds5: 9.3 });
+    expect(s.lifeRecords).toEqual([{ method: 'auto', dist: 'medium', km: 72.5, year: 2026 }]);
+    expect(s.result).toMatchObject({ place: 1, km: 73, finalOdds: 2.25, prizeMoney: 125000 });
+    expect(g.races[0]).toMatchObject({ condition: 'light', margin: 'nos', terms: '3-åriga ston 2140 m' });
+    expect(lacksExtras(g)).toBe(false);
+    // gammal sparad omgång utan fälten: kompletteras från spel-svaret, placeringen behålls
+    const old: any = { races: [{ id: r.id, starts: [{ nr: 1, result: { place: 1 } }] }] };
+    expect(lacksExtras(old)).toBe(true);
+    addExtras(old, { races: [r] });
+    expect(old.races[0]).toMatchObject({ condition: 'light', margin: 'nos' });
+    expect(old.races[0].starts[0]).toMatchObject({ father: 'Far', horseHome: 'Boden', result: { place: 1, km: 73 } });
+    expect(lacksExtras(old)).toBe(false);
+  });
+
+  test('streckSnapshot: streck och vinnarodds per lopp och häst, strukna utanför', async () => {
+    const { streckSnapshot } = await model();
+    const g: any = { id: 'V85_2026-10-03_5_1', type: 'V85', pools: { V85: { turnover: 500000000 } }, races: [race(1, [start(1, { streck: 4520, odds: 250 }), start(2, { streck: 300 }), start(3, { scratched: true, streck: 0 })])] };
+    const snap = streckSnapshot(g, '2026-10-03T08:00:00Z');
+    expect(snap.at).toBe('2026-10-03T08:00:00Z');
+    expect(snap.turnover).toBe(5000000);
+    expect(snap.races['2026-10-03_5_1']).toEqual({ 1: [0.452, 2.5], 2: [0.03, null] });
   });
 
 });
@@ -678,16 +789,36 @@ const streckProd = (legs: any[], sysLegs: any[]) => sysLegs.reduce((a: number, l
   a * Math.min(...l.horses.map((nr: number) => legs[i].horses.find((h: any) => h.nr === nr).marketPct)), 1);
 
 test.describe('hast-engine: standard per spelform', () => {
-  test('V85 spelas med Normal (alpha 0,5), övriga med Träff (alpha 0)', async () => {
+  test('V85 och V75 spelas med Hög (alpha 1), övriga med Träff (alpha 0)', async () => {
     const { defaultAlpha, DEFAULT_ALPHA, buildSystem, TOP_SHARE } = await engine();
-    expect(DEFAULT_ALPHA).toEqual({ V85: 0.5 });
-    expect(defaultAlpha('V85')).toBe(0.5);
-    for (const t of ['V86', 'V75', 'GS75', 'V64', 'V65', 'dd', undefined]) expect(defaultAlpha(t)).toBe(0);
-    // standardvalet ger exakt samma system som Normal
+    expect(DEFAULT_ALPHA).toEqual({ V85: 1, V75: 1 });
+    expect(defaultAlpha('V85')).toBe(1);
+    expect(defaultAlpha('V75')).toBe(1);
+    for (const t of ['V86', 'GS75', 'V64', 'V65', 'dd', undefined]) expect(defaultAlpha(t)).toBe(0);
+    // standardvalet ger exakt samma system som Hög
     const legs = topLegs();
     const a = buildSystem(legs, { budget: 500, price: 0.5, alpha: defaultAlpha('V85'), minTop: 50000, topShare: TOP_SHARE.V85 });
-    const b = buildSystem(legs, { budget: 500, price: 0.5, alpha: 0.5, minTop: 50000, topShare: TOP_SHARE.V85 });
+    const b = buildSystem(legs, { budget: 500, price: 0.5, alpha: 1, minTop: 50000, topShare: TOP_SHARE.V85 });
     expect(a.legs).toEqual(b.legs);
+  });
+
+  test('skrallLegs = avdelningar med minst en häst under 10 % streck, i rakt och reducerat system', async () => {
+    const { buildSystem, reduceSystem, SKRALL_MAX } = await engine();
+    const legs = topLegs();
+    for (const alpha of [0, 1]) {
+      const s = buildSystem(legs, { budget: 500, price: 0.5, alpha, minTop: 50000, topShare: 0.195 });
+      const byLeg = legs.map((l) => Object.fromEntries(l.horses.map((h) => [h.nr, h])));
+      const expected = s.legs.filter((l, i) => l.horses.some((nr) => byLeg[i][nr].marketPct < SKRALL_MAX)).length;
+      expect(s.skrallLegs).toBe(expected);
+      expect(s.skrallLegs).toBeGreaterThanOrEqual(0);
+      expect(s.skrallLegs).toBeLessThanOrEqual(legs.length);
+    }
+    const r = reduceSystem(legs, {}, { budget: 200, price: 0.5, alpha: 1, minTop: 50000, topShare: 0.195 });
+    expect(typeof r.base.skrallLegs).toBe('number');
+    // Hög värdevikt tar minst lika många skrällavdelningar som ren vinstchans i testomgången
+    const lo = buildSystem(legs, { budget: 500, price: 0.5, alpha: 0, minTop: 50000, topShare: 0.195 });
+    const hi = buildSystem(legs, { budget: 500, price: 0.5, alpha: 1, minTop: 50000, topShare: 0.195 });
+    expect(hi.skrallLegs).toBeGreaterThanOrEqual(lo.skrallLegs);
   });
 });
 
@@ -747,5 +878,85 @@ test.describe('hast-engine: högsta rad minst X kr vid alla rätt', () => {
     expect(r.count).toBeLessThanOrEqual(200);
     const best = Math.max(...r.rows.map((row: number[]) => (0.195 * 0.5) / row.reduce((a, nr, i) => a * legs[i].horses.find((h: any) => h.nr === nr).marketPct, 1)));
     expect(best).toBeGreaterThanOrEqual(1000000);
+  });
+});
+
+// ---------- Förväntad utdelning och uppföljning ----------
+
+const uppf = () => import(pathToFileURL(path.join(ROOT, 'scripts', 'lib', 'hast-uppfoljning.mjs')).href);
+const fakeLegs = (n: number, ps: number[][], ss?: number[][]) =>
+  Array.from({ length: n }, (_, i) => ({ leg: i + 1, number: i + 1, horses: ps[i].map((p, j) => ({ nr: j + 1, p, marketPct: ss ? ss[i][j] : p, scratched: false })) }));
+
+test.describe('hast-engine: förväntad utdelning', () => {
+  test('högsta nivån räknas exakt: andel · radpris · Π Σ chans/streck', async () => {
+    const { simulateOutcomes, expectedReturn } = await engine();
+    // okänd spelform med 2 avdelningar: bara högsta nivån (andel 0,25)
+    const legs = fakeLegs(2, [[0.5, 0.3, 0.2], [0.6, 0.4]], [[0.25, 0.5, 0.25], [0.5, 0.5]]);
+    const o = simulateOutcomes(legs, { type: 'X', price: 1, sims: 50 });
+    const e = expectedReturn([[1, 3], [2]], o, 1);
+    expect(e.ev).toBeCloseTo(0.25 * 1 * (0.5 / 0.25 + 0.2 / 0.25) * (0.4 / 0.5), 6);
+    // chans = streck: varje system får tillbaka potandelen, oavsett hästar
+    const fair = fakeLegs(2, [[0.5, 0.3, 0.2], [0.6, 0.4]]);
+    const of = simulateOutcomes(fair, { type: 'X', price: 1, sims: 50 });
+    for (const sys of [[[1], [1]], [[1, 2, 3], [2]], [[3], [1, 2]]]) expect(expectedReturn(sys, of, 1).roi).toBeCloseTo(-0.75, 6);
+  });
+
+  test('V85 med chans = streck: återbetalning nära summan av nivåernas andelar (59 %), samma siffror vid samma frö', async () => {
+    const { simulateOutcomes, expectedReturn, TIER_SHARE } = await engine();
+    const ps = Array.from({ length: 8 }, () => [0.4, 0.25, 0.15, 0.1, 0.06, 0.04]);
+    const legs = fakeLegs(8, ps);
+    const o = simulateOutcomes(legs, { type: 'V85', price: 0.5, sims: 3000, seed: 7 });
+    const sys = Array.from({ length: 8 }, (_, i) => (i < 4 ? [1, 2] : [1]));
+    const e = expectedReturn(sys, o, 0.5);
+    const total = Object.values(TIER_SHARE.V85).reduce((a: number, b: any) => a + b, 0) as number;
+    expect(e.roi).toBeGreaterThan(total - 1 - 0.12);
+    expect(e.roi).toBeLessThanOrEqual(total - 1 + 0.05);
+    expect(expectedReturn(sys, simulateOutcomes(legs, { type: 'V85', price: 0.5, sims: 3000, seed: 7 }), 0.5).ev).toBe(e.ev);
+  });
+
+  test('buildValueSystem: väljer kandidaten med högst förväntad återbetalning, inom budget och högsta rad-spärren', async () => {
+    const { buildValueSystem, MIN_TOP } = await engine();
+    // avdelning 1: häst 3 är kraftigt understreckad
+    const ps = Array.from({ length: 8 }, () => [0.45, 0.3, 0.15, 0.1]);
+    const ss = Array.from({ length: 8 }, (_, i) => (i === 0 ? [0.55, 0.35, 0.03, 0.07] : [0.45, 0.3, 0.15, 0.1]));
+    const v = buildValueSystem(fakeLegs(8, ps, ss), { budget: 100, price: 0.5, minTop: MIN_TOP, topShare: 0.195, type: 'V85', sims: 500 });
+    expect(v.cost).toBeLessThanOrEqual(100);
+    expect(v.topOk).toBe(true);
+    expect(v.evRoi).toBe(Math.max(...v.candidates.map((c: any) => c.roi)));
+    expect(v.legs[0].horses).toContain(3);
+  });
+});
+
+test.describe('uppföljning: hämtningstider och frysta system', () => {
+  test('fetchSlots: kl. 10, 2 h, 45 och 15 min före start; dueSlots tar bara passerade och ogjorda före start', async () => {
+    const { fetchSlots, dueSlots } = await uppf();
+    const start = new Date(2026, 9, 3, 15, 0).getTime();
+    expect(fetchSlots(start).map((s: any) => [s.key, new Date(s.at).getHours(), new Date(s.at).getMinutes()])).toEqual([['kl10', 10, 0], ['t-120', 13, 0], ['t-45', 14, 15], ['t-15', 14, 45]]);
+    // tidig start: 2 h före ligger före kl. 10 och tas bort
+    expect(fetchSlots(new Date(2026, 9, 4, 11, 0).getTime()).map((s: any) => s.key)).toEqual(['kl10', 't-45', 't-15']);
+    const at = (h: number, m: number) => new Date(2026, 9, 3, h, m).getTime();
+    expect(dueSlots(start, at(9, 50))).toEqual([]);
+    expect(dueSlots(start, at(14, 20)).map((s: any) => s.key)).toEqual(['kl10', 't-120', 't-45']);
+    expect(dueSlots(start, at(14, 20), ['kl10', 't-120']).map((s: any) => s.key)).toEqual(['t-45']);
+    expect(dueSlots(start, at(15, 1))).toEqual([]);
+  });
+
+  test('freezeSystems → settleFrozen → summarizeFollow: tre system per budget, rättade mot utdelningen', async () => {
+    const { normalizeGame, analyzeGame } = await model();
+    const { freezeSystems, settleFrozen, summarizeFollow, FOLLOW_BUDGETS } = await uppf();
+    const a = { ...analyzeGame(normalizeGame(game())), fetchedAt: '2026-10-03T08:00:00Z' };
+    const fr = freezeSystems(a, { sims: 200 });
+    expect(Object.keys(fr.systems)).toEqual(['standard', 'utdelning', 'skrall3']);
+    for (const b of FOLLOW_BUDGETS) {
+      expect(fr.systems.standard[b].cost).toBeLessThanOrEqual(b);
+      expect(fr.systems.utdelning[b].cost).toBeLessThanOrEqual(b);
+    }
+    const s = settleFrozen(fr, [[1], [1]], { '2': { payout: 10000 } });
+    const std = s.systems.standard[200];
+    expect(std.result.win).toBe(std.legs[0].includes(1) && std.legs[1].includes(1) ? 100 : 0);
+    const sum = summarizeFollow([s, { ...s, id: 'X' }]);
+    expect(sum.standard[200].games).toBe(2);
+    expect(sum.standard[200].cost).toBeCloseTo(2 * std.result.cost, 2);
+    expect(Object.keys(summarizeFollow([fr]).standard)).toEqual([]); // orättade räknas inte
   });
 });

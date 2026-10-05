@@ -58,7 +58,9 @@
     "report:tips": "playwright test --project=e2e-screenshots -g \"screenshot: lokal tipsrapport\"",
     "trello:close-done": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Close-TrelloDone.ps1",
     "ralph": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/ralph-iterate.ps1",
-    "site:build": "node scripts/build-static-site.mjs"
+    "site:build": "node scripts/build-static-site.mjs",
+    "team-ids": "node scripts/build-team-ids.mjs",
+    "team-ids:sok": "node scripts/fetch-team-ids-fotmob.mjs && node scripts/build-team-ids.mjs"
   },
   "devDependencies": {
     "@playwright/test": "^1.51.0"

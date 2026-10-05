@@ -24,7 +24,8 @@ const log = (s) => process.stdout.write(`${s}\n`);
 
 export async function logOddset(now = new Date()) {
   const tips = readJson(path.join(root, 'data', 'tips-latest.json'));
-  const recs = (tips.allCandidates || []).filter((t) => t.date && t.home && t.away).map(oddsetRecord);
+  // Uppskjuten utan nytt datum loggas inte (loggas när den fått nytt datum)
+  const recs = (tips.allCandidates || []).filter((t) => t.date && t.home && t.away && !t.postponed).map(oddsetRecord);
   const c = logTips('oddset', recs, now);
   const store = readJson(path.join(root, 'data', 'betting-store.json'));
   const byKey = new Map(store.matches.map((m) => [`${m.date}|${m.league}|${m.home}|${m.away}`, m]));

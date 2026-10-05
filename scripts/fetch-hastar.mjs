@@ -13,7 +13,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { normalizeGame, analyzeGame, backtest, resultsOf } from "./lib/trav-model.mjs";
+import { normalizeGame, analyzeGame, backtest, resultsOf, streckSnapshot } from "./lib/trav-model.mjs";
 import { logTips, settleTips, hastRecords } from "./lib/tipslogg.mjs";
 
 /** Tipslogg (data/tipslogg/hastar): loppen före start sparas, facit ur analysens resultat. */
@@ -99,7 +99,7 @@ export async function fetchGame(id) {
 }
 
 /** Hämtar spelet (+ DD samma dag och bana) och sparar ALLT i en rådatafil. */
-async function fetchAll(id, calendarEntry) {
+export async function fetchAll(id, calendarEntry) {
   log(`Hämtar ${id} …`);
   const main = await fetchGame(id);
   let dd = null;
@@ -112,13 +112,17 @@ async function fetchAll(id, calendarEntry) {
       dd = await fetchGame(ddId);
     }
   }
-  const raw = { fetchedAt: new Date().toISOString(), source: API, id, main, dd };
+  const fetchedAt = new Date().toISOString();
+  // Strecket vid varje hämtning sparas i samma fil (snapshots), så att förmiddag kan jämföras mot spelstopp
+  const prev = readJson(path.join(DIR, "raw", `${id}.json`));
+  const snapshots = [...(prev?.snapshots || (prev?.main?.game ? [streckSnapshot(prev.main.game, prev.fetchedAt)] : [])), streckSnapshot(main.game, fetchedAt)];
+  const raw = { fetchedAt, source: API, id, main, dd, snapshots };
   writeJson(path.join(DIR, "raw", `${id}.json`), raw);
   log(`Rådata sparad: data/hastar/raw/${id}.json`);
   return raw;
 }
 
-async function analyzeRaw(raw) {
+export async function analyzeRaw(raw) {
   const game = normalizeGame(raw.main.game, raw.main.details);
   const ddGame = raw.dd ? normalizeGame(raw.dd.game, raw.dd.details) : null;
   const analysis = { ...analyzeGame(game, ddGame), fetchedAt: raw.fetchedAt, analyzedAt: new Date().toISOString() };
@@ -142,7 +146,7 @@ function updateIndex(a) {
 }
 
 /** Resultat för sparade analyser vars spel är avgjorda, sedan backtest över allt. */
-async function updateResults() {
+export async function updateResults() {
   const dir = path.join(DIR, "analys");
   const files = fs.existsSync(dir) ? fs.readdirSync(dir).filter((f) => f.endsWith(".json")) : [];
   const entries = [];

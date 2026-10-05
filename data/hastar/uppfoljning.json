@@ -1,0 +1,121 @@
+{
+ "updatedAt": "2026-10-04T18:46:04.726Z",
+ "games": 1,
+ "from": "2026-10-03",
+ "summary": {
+  "standard": {
+   "200": {
+    "games": 1,
+    "cost": 192,
+    "win": 120,
+    "hitGames": 1,
+    "allRight": 0,
+    "biggest": {
+     "id": "V85_2026-10-03_11_5",
+     "win": 120
+    },
+    "roi": -0.375
+   },
+   "500": {
+    "games": 1,
+    "cost": 480,
+    "win": 0,
+    "hitGames": 0,
+    "allRight": 0,
+    "biggest": {
+     "id": "V85_2026-10-03_11_5",
+     "win": 0
+    },
+    "roi": -1
+   },
+   "1000": {
+    "games": 1,
+    "cost": 972,
+    "win": 0,
+    "hitGames": 0,
+    "allRight": 0,
+    "biggest": {
+     "id": "V85_2026-10-03_11_5",
+     "win": 0
+    },
+    "roi": -1
+   }
+  },
+  "utdelning": {
+   "200": {
+    "games": 1,
+    "cost": 192,
+    "win": 60,
+    "hitGames": 1,
+    "allRight": 0,
+    "biggest": {
+     "id": "V85_2026-10-03_11_5",
+     "win": 60
+    },
+    "roi": -0.6875
+   },
+   "500": {
+    "games": 1,
+    "cost": 480,
+    "win": 60,
+    "hitGames": 1,
+    "allRight": 0,
+    "biggest": {
+     "id": "V85_2026-10-03_11_5",
+     "win": 60
+    },
+    "roi": -0.875
+   },
+   "1000": {
+    "games": 1,
+    "cost": 960,
+    "win": 1131,
+    "hitGames": 1,
+    "allRight": 0,
+    "biggest": {
+     "id": "V85_2026-10-03_11_5",
+     "win": 1131
+    },
+    "roi": 0.1781250000000001
+   }
+  },
+  "skrall3": {
+   "200": {
+    "games": 1,
+    "cost": 200,
+    "win": 377,
+    "hitGames": 1,
+    "allRight": 0,
+    "biggest": {
+     "id": "V85_2026-10-03_11_5",
+     "win": 377
+    },
+    "roi": 0.885
+   },
+   "500": {
+    "games": 1,
+    "cost": 500,
+    "win": 477,
+    "hitGames": 1,
+    "allRight": 0,
+    "biggest": {
+     "id": "V85_2026-10-03_11_5",
+     "win": 477
+    },
+    "roi": -0.04600000000000004
+   },
+   "1000": {
+    "games": 1,
+    "cost": 1000,
+    "win": 577,
+    "hitGames": 1,
+    "allRight": 0,
+    "biggest": {
+     "id": "V85_2026-10-03_11_5",
+     "win": 577
+    },
+    "roi": -0.42300000000000004
+   }
+  }
+ }
+}

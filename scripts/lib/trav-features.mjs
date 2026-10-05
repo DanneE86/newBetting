@@ -308,3 +308,32 @@ export function learnedProbs(race, ctx, learned) {
   const lin = Array.from({ length: row.n }, (_, i) => keys.reduce((a, k) => a + beta[k] * row.X[k][i], 0));
   return { nrs: row.nrs, p: probs(row, beta, keys), lin, X: row.X };
 }
+
+/**
+ * Delpoäng 0–100 per område för hästpoängen (fliken Hästar). Riktningen är satt efter vad som är bra för hästen
+ * (bra form, snabb km-tid, få galopper …), inte efter den inlärda vikten – vikten kan vara negativ för att folket
+ * redan överskattar faktorn (t.ex. form). Varje område = summan av faktorernas z-värden, z-standardiserad igen inom
+ * loppet: 50 = loppets snitt, 70 = klart bättre än fältet, 100 = bäst med mycket stor marginal.
+ */
+export const SCORE_GROUPS = {
+  form: { form: 1, seger5: 1, plats5: 1, senast: 1, galopp: -1 },
+  fart: { fart: 1, bastKm3: 1, rekord: 1, kmSenast: 1 },
+  klass: { klass: 1, motstand: 1, pengar: 1, livSeger: 1 },
+  spar: { spar: 1, tillagg: -1 },
+  kusk: { kusk: 1, kuskForm: 1 },
+  tranare: { tranare: 1 },
+  utrustning: { barfota: 1, skorAv: 1, skorPa: -1, jankare: 1 },
+};
+
+const toPoints = (z) => Math.round(clamp(50 + 20 * z, 0, 100));
+
+/** { område: [poäng per häst i row-ordning] } + marknad (strecket/oddsen) ur raceRow-raden. */
+export function groupScores(row) {
+  const out = {};
+  for (const [g, keys] of Object.entries(SCORE_GROUPS)) {
+    const sum = Array.from({ length: row.n }, (_, i) => Object.entries(keys).reduce((a, [k, s]) => a + s * (row.X[k]?.[i] ?? 0), 0));
+    out[g] = zScores(sum).map(toPoints);
+  }
+  out.marknad = row.hasMarket ? zScores(row.lq).map(toPoints) : row.lq.map(() => 50);
+  return out;
+}

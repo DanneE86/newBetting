@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-04T09:09:15.390Z",
+  "updatedAt": "2026-10-04T12:35:19.757Z",
   "leagues": {
     "PL": {
       "name": "Premier League",
@@ -21,7 +21,7 @@
     "LL2": {
       "name": "LaLiga 2",
       "history": "fd-main",
-      "upcoming": 38
+      "upcoming": 39
     },
     "SA": {
       "name": "Serie A",
@@ -64,16 +64,16 @@
     "SE3N": {
       "name": "Div 1 Norra",
       "history": "tsdb",
-      "historyMatches": 438,
+      "historyMatches": 439,
       "callsNow": 6,
-      "upcoming": 26
+      "upcoming": 25
     },
     "SE3S": {
       "name": "Div 1 Södra",
       "history": "tsdb",
-      "historyMatches": 439,
-      "callsNow": 6,
-      "upcoming": 25
+      "historyMatches": 440,
+      "callsNow": 5,
+      "upcoming": 24
     },
     "BR": {
       "name": "Brasileirão Série A",
@@ -112,9 +112,9 @@
     "NO2": {
       "name": "OBOS-ligaen",
       "history": "tsdb",
-      "historyMatches": 429,
+      "historyMatches": 430,
       "callsNow": 7,
-      "upcoming": 35
+      "upcoming": 34
     },
     "EK": {
       "name": "Ekstraklasa",
