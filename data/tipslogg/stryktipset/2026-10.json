@@ -1,7 +1,7 @@
 {
  "product": "stryktipset",
  "month": "2026-10",
- "updatedAt": "2026-10-05T15:45:11.567Z",
+ "updatedAt": "2026-10-05T18:31:58.641Z",
  "items": {
   "stryktipset-4974-1": {
    "id": "stryktipset-4974-1",
@@ -51,7 +51,7 @@
     },
     "lineupStatus": "pending"
    },
-   "latestAt": "2026-10-05T15:45:11.567Z",
+   "latestAt": "2026-10-05T18:31:58.641Z",
    "latest": {
     "probs": [
      0.563,
@@ -59,9 +59,9 @@
      0.214
     ],
     "folk": [
-     0.55,
+     0.56,
      0.21,
-     0.24
+     0.23
     ],
     "odds": [
      1.75,
@@ -84,7 +84,7 @@
       "type": "Helgardering"
      },
      "C": {
-      "signs": "1X"
+      "signs": "1X2"
      }
     },
     "lineupStatus": "pending"
@@ -139,22 +139,22 @@
     },
     "lineupStatus": "pending"
    },
-   "latestAt": "2026-10-05T15:45:11.567Z",
+   "latestAt": "2026-10-05T18:31:58.641Z",
    "latest": {
     "probs": [
-     0.54,
-     0.233,
-     0.227
+     0.52,
+     0.223,
+     0.257
     ],
     "folk": [
-     0.5,
-     0.25,
+     0.51,
+     0.24,
      0.25
     ],
     "odds": [
-     1.78,
-     4.3,
-     4.35
+     1.74,
+     4.35,
+     4.5
     ],
     "market": [
      0.555,
@@ -164,7 +164,7 @@
     "single": "1",
     "coupons": {
      "A": {
-      "signs": "1X",
+      "signs": "12",
       "type": "Halvgardering"
      },
      "B": {
@@ -172,7 +172,7 @@
       "type": "Helgardering"
      },
      "C": {
-      "signs": "1X"
+      "signs": "1X2"
      }
     },
     "lineupStatus": "pending"
@@ -227,7 +227,7 @@
     },
     "lineupStatus": "pending"
    },
-   "latestAt": "2026-10-05T15:45:11.567Z",
+   "latestAt": "2026-10-05T18:31:58.641Z",
    "latest": {
     "probs": [
      0.36,
@@ -235,9 +235,9 @@
      0.373
     ],
     "folk": [
-     0.45,
+     0.44,
      0.25,
-     0.3
+     0.31
     ],
     "odds": [
      2.65,
@@ -315,7 +315,7 @@
     },
     "lineupStatus": "pending"
    },
-   "latestAt": "2026-10-05T15:45:11.567Z",
+   "latestAt": "2026-10-05T18:31:58.641Z",
    "latest": {
     "probs": [
      0.326,
@@ -323,9 +323,9 @@
      0.405
     ],
     "folk": [
-     0.42,
+     0.41,
      0.24,
-     0.34
+     0.35
     ],
     "odds": [
      2.95,
@@ -348,7 +348,7 @@
       "type": "Helgardering"
      },
      "C": {
-      "signs": "2"
+      "signs": "1X2"
      }
     },
     "lineupStatus": "pending"
@@ -403,7 +403,7 @@
     },
     "lineupStatus": "pending"
    },
-   "latestAt": "2026-10-05T15:45:11.567Z",
+   "latestAt": "2026-10-05T18:31:58.641Z",
    "latest": {
     "probs": [
      0.364,
@@ -428,15 +428,15 @@
     "single": "2",
     "coupons": {
      "A": {
-      "signs": "1",
-      "type": "Spik"
+      "signs": "12",
+      "type": "Halvgardering"
      },
      "B": {
-      "signs": "2",
-      "type": "Spik"
+      "signs": "X2",
+      "type": "Halvgardering"
      },
      "C": {
-      "signs": "1"
+      "signs": "12"
      }
     },
     "lineupStatus": "pending"
@@ -491,7 +491,7 @@
     },
     "lineupStatus": null
    },
-   "latestAt": "2026-10-05T15:45:11.567Z",
+   "latestAt": "2026-10-05T18:31:58.641Z",
    "latest": {
     "probs": [
      0.352,
@@ -500,8 +500,8 @@
     ],
     "folk": [
      0.46,
-     0.25,
-     0.29
+     0.26,
+     0.28
     ],
     "odds": [
      2.7,
@@ -755,12 +755,12 @@
     },
     "lineupStatus": "pending"
    },
-   "latestAt": "2026-10-05T15:45:11.567Z",
+   "latestAt": "2026-10-05T18:31:58.641Z",
    "latest": {
     "probs": [
-     0.426,
-     0.259,
-     0.315
+     0.406,
+     0.249,
+     0.345
     ],
     "folk": [
      0.46,
@@ -780,12 +780,12 @@
     "single": "1",
     "coupons": {
      "A": {
-      "signs": "1X2",
-      "type": "Helgardering"
+      "signs": "12",
+      "type": "Halvgardering"
      },
      "B": {
-      "signs": "X2",
-      "type": "Halvgardering"
+      "signs": "1X2",
+      "type": "Helgardering"
      },
      "C": {
       "signs": "1X2"
@@ -843,7 +843,7 @@
     },
     "lineupStatus": "pending"
    },
-   "latestAt": "2026-10-05T15:45:11.567Z",
+   "latestAt": "2026-10-05T18:31:58.641Z",
    "latest": {
     "probs": [
      0.342,
@@ -851,9 +851,9 @@
      0.386
     ],
     "folk": [
-     0.42,
+     0.41,
      0.26,
-     0.32
+     0.33
     ],
     "odds": [
      2.7,
@@ -868,12 +868,12 @@
     "single": "2",
     "coupons": {
      "A": {
-      "signs": "12",
-      "type": "Halvgardering"
+      "signs": "1",
+      "type": "Spik"
      },
      "B": {
-      "signs": "X2",
-      "type": "Halvgardering"
+      "signs": "2",
+      "type": "Spik"
      },
      "C": {
       "signs": "12"
@@ -931,7 +931,7 @@
     },
     "lineupStatus": null
    },
-   "latestAt": "2026-10-05T15:45:11.567Z",
+   "latestAt": "2026-10-05T18:31:58.641Z",
    "latest": {
     "probs": [
      0.454,
@@ -940,8 +940,8 @@
     ],
     "folk": [
      0.47,
-     0.24,
-     0.29
+     0.25,
+     0.28
     ],
     "odds": [
      2.02,
@@ -956,12 +956,12 @@
     "single": "1",
     "coupons": {
      "A": {
-      "signs": "1X",
-      "type": "Halvgardering"
-     },
-     "B": {
       "signs": "1X2",
       "type": "Helgardering"
+     },
+     "B": {
+      "signs": "X2",
+      "type": "Halvgardering"
      },
      "C": {
       "signs": "1X2"
@@ -1019,7 +1019,7 @@
     },
     "lineupStatus": "pending"
    },
-   "latestAt": "2026-10-05T15:45:11.567Z",
+   "latestAt": "2026-10-05T18:31:58.641Z",
    "latest": {
     "probs": [
      0.327,
@@ -1044,15 +1044,15 @@
     "single": "2",
     "coupons": {
      "A": {
-      "signs": "2",
-      "type": "Spik"
+      "signs": "12",
+      "type": "Halvgardering"
      },
      "B": {
-      "signs": "2",
-      "type": "Spik"
+      "signs": "1X2",
+      "type": "Helgardering"
      },
      "C": {
-      "signs": "12"
+      "signs": "2"
      }
     },
     "lineupStatus": "pending"
@@ -1107,7 +1107,7 @@
     },
     "lineupStatus": "none"
    },
-   "latestAt": "2026-10-05T15:45:11.567Z",
+   "latestAt": "2026-10-05T18:31:58.641Z",
    "latest": {
     "probs": [
      0.533,
@@ -1115,8 +1115,8 @@
      0.229
     ],
     "folk": [
-     0.46,
-     0.28,
+     0.47,
+     0.27,
      0.26
     ],
     "odds": [
@@ -1132,15 +1132,15 @@
     "single": "1",
     "coupons": {
      "A": {
-      "signs": "1X",
-      "type": "Halvgardering"
+      "signs": "1",
+      "type": "Spik"
      },
      "B": {
-      "signs": "1X2",
-      "type": "Helgardering"
+      "signs": "1",
+      "type": "Spik"
      },
      "C": {
-      "signs": "1X"
+      "signs": "1"
      }
     },
     "lineupStatus": "none"

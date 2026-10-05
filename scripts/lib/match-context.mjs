@@ -171,9 +171,11 @@ export async function fetchMatchContext(ev) {
     fotmobMatchId: hit.id,
     league: md.general?.leagueName || hit.leagueName,
     round: md.general?.matchRound || null,
-    // lineupType: 'lastStarting11' = senaste elvan (ingen bekraftelse an), 'predicted', eller bekraftad elva (~1 h fore)
+    // lineupType: 'lastStarting11' = senaste elvan (ingen bekraftelse an), 'predicted', 'unavailable' (bara franvarolistan,
+    // dagar fore matchen) eller bekraftad elva (~1 h fore). Bekraftad kraver dessutom startspelare hos bada lagen.
     lineupType: lu.lineupType || null,
-    lineupConfirmed: !!lu.lineupType && !/last|predict/i.test(lu.lineupType),
+    lineupConfirmed: !!lu.lineupType && !/last|predict|unavail/i.test(lu.lineupType)
+      && !!lu.homeTeam?.starters?.length && !!lu.awayTeam?.starters?.length,
     home, away,
     referee: ib.Referee?.text || null,
     stadium: ib.Stadium ? { name: ib.Stadium.name, city: ib.Stadium.city, country: ib.Stadium.country, lat: ib.Stadium.lat, long: ib.Stadium.long, surface: ib.Stadium.surface } : null,
