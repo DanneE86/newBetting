@@ -3060,3 +3060,102 @@ test.describe('api-schemas: FotMob, Svenska Spel och ATG', () => {
     expect(A.game.safeParse({ id: 'V86_2026-10-05_40_1', races: [{ id: '2026-10-05_40_1', starts: [{ number: '1' }] }] }).success).toBe(false);
   });
 });
+
+// ---------- transfermarkt.mjs: skadelistan (2026-10-05) ----------
+
+test.describe('transfermarkt: skadelistan fyller på FotMob', () => {
+  const row = (cls: string, id: string, name: string, club: string, injury: string, until: string, value: string) =>
+    `<tr class="${cls}"> <td> <table class="inline-table"> <tr> <td rowspan="2"><img title="${name}" /></td> <td class="hauptlink"> <a title="${name}" href="/x/profil/spieler/${id}">${name}</a> </td> </tr> <tr> <td>Left-Back</td> </tr> </table> </td>`
+    + `<td class="zentriert no-border-rechts"><a title="${club}" href="/x/startseite/verein/1"><img title="${club}" /></a></td><td class="links">${injury}</td><td class="zentriert">${until}</td><td class="rechts">${value}</td></tr>`;
+  const html = `<table class="items"><thead><tr><th>x</th></tr></thead><tbody>${row('odd', '1', 'Rio Adebisi', 'Peterborough United', 'Knee injury', '', '€225k')}${row('even', '2', 'Frankie Kent', 'Oxford United', 'Hamstring injury', '23/10/2026', '€1.20m')}${row('odd', '3', 'Okand Spelare', 'Leicester City', 'Ankle injury', '', '€50k')}</tbody></table>`;
+
+  test('parseTmInjuries: namn, klubb, skada, åter och marknadsvärde', async () => {
+    const { parseTmInjuries } = await lib('transfermarkt.mjs');
+    const inj = parseTmInjuries(html);
+    expect(inj).toHaveLength(3);
+    expect(inj[0]).toEqual({ tmId: '1', name: 'Rio Adebisi', club: 'Peterborough United', injury: 'Knee injury', until: null, value: 225000 });
+    expect(inj[1].until).toBe('23/10/2026');
+    expect(inj[1].value).toBe(1200000);
+    expect(parseTmInjuries(null)).toEqual([]);
+  });
+
+  test('mergeTmInjuries: bästa klubbmatchning (Peterborough United hamnar inte i Oxford United), FotMob går före, gamla TM-skador rensas', async () => {
+    const { parseTmInjuries, mergeTmInjuries } = await lib('transfermarkt.mjs');
+    const teams: any = {
+      Oxford: { fotmobName: 'Oxford United', players: [{ name: 'Frankie Kent', injury: { typeId: '42', expectedReturn: 'Doubtful' } }, { name: 'Will Vaulks', injury: { typeId: null, expectedReturn: 'Unknown', source: 'Transfermarkt' } }] },
+      Peterboro: { fotmobName: 'Peterborough United', players: [{ name: 'Rio Adebisi', injury: null }] },
+      Leicester: { fotmobName: 'Leicester City', players: [{ name: 'Jordan Ayew', injury: null }] },
+    };
+    expect(mergeTmInjuries(teams, parseTmInjuries(html))).toBe(1);
+    expect(teams.Peterboro.players[0].injury).toEqual({ typeId: null, expectedReturn: 'Unknown', name: 'Knee injury', source: 'Transfermarkt' });
+    expect(teams.Oxford.players[0].injury.typeId).toBe('42'); // FotMobs markering ligger kvar
+    expect(teams.Oxford.players[1].injury).toBeNull(); // frisk enligt dagens lista
+    expect(teams.Leicester.players[0].injury).toBeNull(); // okand spelare: ingen gissning
+  });
+
+  test('TM_INJURY_LEAGUES: de engelska Stryktipsligorna', async () => {
+    const { TM_INJURY_LEAGUES, TM_LEAGUE } = await lib('transfermarkt.mjs');
+    expect(TM_INJURY_LEAGUES).toEqual(['PL', 'CH', 'EL1', 'EL2']);
+    for (const c of TM_INJURY_LEAGUES) expect(TM_LEAGUE[c]).toBeTruthy();
+  });
+});
+
+// ---------- matcher-rows.mjs: data/matcher (2026-10-05) ----------
+
+test.describe('matcher-rows: domare, väntande matcher och frånvaro före matchen', () => {
+  test('extraCols: store går före, football-data-CSV:n fyller det som saknas', async () => {
+    const { extraCols } = await lib('matcher-rows.mjs');
+    const fd = { kickoff: '15:00', referee: 'P Howard', hc: 9, ac: 5, hf: 10, af: 21, hy: 2, ay: 3, hr: 0, ar: 0 };
+    expect(extraCols(undefined, fd)).toEqual({ kickoff: '15:00', referee: 'P Howard', hc: 9, ac: 5, hf: 10, af: 21, hy: 2, ay: 3, hr: 0, ar: 0 });
+    const store = { kickoff: '14:00', referee: 'N Hair', discipline: { homeCorners: 4, awayCorners: 6, homeYellow: 1, awayYellow: 0, homeRed: 0, awayRed: 1 } };
+    const x = extraCols(store, fd);
+    expect([x.kickoff, x.referee, x.hc, x.ac, x.hy, x.ay, x.ar]).toEqual(['14:00', 'N Hair', 4, 6, 1, 0, 1]);
+    expect(x.hf).toBe(10); // store saknar frisparkar
+    expect(extraCols(undefined, { hc: NaN }).hc).toBeNull();
+  });
+
+  test('pendingRows: spelad match utan resultat behålls som väntar i högst 21 dagar och bara med pre-data', async () => {
+    const { pendingRows, PENDING_DAYS } = await lib('matcher-rows.mjs');
+    expect(PENDING_DAYS).toBe(21);
+    const prev = [
+      { status: 'kommande', date: '2026-10-03', home: 'Reading', away: 'Bradford', pre_first_at: '2026-09-28', pre_first_h: '0.4' },
+      { status: 'kommande', date: '2026-10-03', home: 'Burton', away: 'Huddersfield', pre_first_at: '2026-09-28' },
+      { status: 'kommande', date: '2026-10-03', home: 'Utan', away: 'Data' },
+      { status: 'väntar', date: '2026-09-01', home: 'Gammal', away: 'Match', pre_first_at: '2026-08-28' },
+      { status: 'kommande', date: '2026-10-10', home: 'Framtida', away: 'Match', pre_first_at: '2026-10-01' },
+      { status: 'spelad', date: '2026-10-03', home: 'Redan', away: 'Spelad', pre_first_at: '2026-09-28' },
+      { status: 'väntar', date: '2026-10-01', home: 'Bara', away: 'Skador', pre_inj_at: '2026-09-30' },
+    ];
+    const out = pendingRows(prev, '2026-10-05', (r: any) => r.home === 'Burton');
+    expect(out.map((r: any) => r.home)).toEqual(['Reading', 'Bara']);
+    expect(out.every((r: any) => r.status === 'väntar')).toBe(true);
+    expect(out[0].pre_first_h).toBe('0.4');
+    expect(prev[0].status).toBe('kommande'); // originalet andras inte
+  });
+
+  test('squadAbsence: antal skadade och andel av truppens värde', async () => {
+    const { squadAbsence } = await lib('matcher-rows.mjs');
+    const team = { players: [{ value: 300, injury: { expectedReturn: 'Doubtful' } }, { value: 100, injury: null }, { value: 600, injury: null }, { value: null, injury: { x: 1 } }] };
+    expect(squadAbsence(team)).toEqual({ n: 2, share: 0.3 });
+    expect(squadAbsence({ players: [{ value: null, injury: null }] })).toEqual({ n: 0, share: null });
+    expect(squadAbsence(undefined)).toBeNull();
+  });
+
+  test('carryPre: första oddsen behålls, senaste odds och frånvaro uppdateras, spelad rad ärver allt', async () => {
+    const { carryPre, INJ } = await lib('matcher-rows.mjs');
+    expect(INJ).toEqual(['pre_inj_at', 'pre_inj_h', 'pre_inj_a', 'pre_injv_h', 'pre_injv_a']);
+    const prev = { pre_first_at: 't1', pre_first_h: 0.5, pre_first_d: 0.3, pre_first_a: 0.2, pre_last_at: 't2', pre_last_h: 0.55, pre_last_d: 0.25, pre_last_a: 0.2, pre_best_h: 1.9, pre_best_d: 4, pre_best_a: 5, pre_inj_at: 't2', pre_inj_h: 3, pre_inj_a: 1, pre_injv_h: 0.2, pre_injv_a: 0.05 };
+    // Spelad rad (inga egna pre-varden): arver allt
+    const played: any = carryPre({ status: 'spelad' }, prev);
+    expect([played.pre_first_at, played.pre_last_h, played.pre_best_a, played.pre_inj_h, played.pre_injv_a]).toEqual(['t1', 0.55, 5, 3, 0.05]);
+    // Kommande med nya odds men utan ny franvaro: forsta fran prev, senaste odds nya, franvaro fran prev
+    const up: any = carryPre({ pre_last_at: 't3', pre_last_h: 0.6, pre_last_d: 0.2, pre_last_a: 0.2 }, prev);
+    expect([up.pre_first_at, up.pre_first_h, up.pre_last_h, up.pre_inj_h]).toEqual(['t1', 0.5, 0.6, 3]);
+    // Ny franvaro skrivs inte over
+    const inj: any = carryPre({ pre_inj_at: 't3', pre_inj_h: 0, pre_inj_a: 0, pre_injv_h: 0, pre_injv_a: 0 }, prev);
+    expect([inj.pre_inj_h, inj.pre_last_h]).toEqual([0, 0.55]);
+    // Ingen tidigare rad: forsta = senaste
+    const fresh: any = carryPre({ pre_last_at: 't9', pre_last_h: 0.4, pre_last_d: 0.3, pre_last_a: 0.3 }, undefined);
+    expect([fresh.pre_first_at, fresh.pre_first_h]).toEqual(['t9', 0.4]);
+  });
+});

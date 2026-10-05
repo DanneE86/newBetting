@@ -97,6 +97,55 @@ export async function tmSquad(clubId, { coach: withCoach = true } = {}) {
   return { coach: coach ? decode(coach) : null, players };
 }
 
+// Ligor dar Transfermarkts skadelista fyller pa FotMob (FotMob hade 2 skadade i hela League One 2026-10-05, TM 22)
+export const TM_INJURY_LEAGUES = ['PL', 'CH', 'EL1', 'EL2'];
+
+/** Skadelistan pa Transfermarkts ligasida (HTML): [{ tmId, name, club, injury, until, value }] */
+export function parseTmInjuries(html) {
+  const body = html?.slice(html.indexOf('<tbody>')) ?? '';
+  const out = [];
+  for (const row of body.split(/<tr class="(?:odd|even)">/).slice(1)) {
+    const link = row.match(/profil\/spieler\/(\d+)">\s*([^<]+?)\s*</);
+    const club = row.match(/<a title="([^"]+)" href="\/[^"]*\/startseite\/verein\/\d+/)?.[1];
+    if (!link || !club) continue;
+    const cells = [...row.matchAll(/<td class="(links|zentriert|rechts)">([^<]*)<\/td>/g)];
+    const cell = (cls) => decode(cells.find((c) => c[1] === cls)?.[2] ?? '') || null;
+    out.push({ tmId: link[1], name: decode(link[2]), club: decode(club), injury: cell('links'), until: cell('zentriert'), value: money(cell('rechts')) });
+  }
+  return out;
+}
+
+/** Alla skadade i ligan enligt Transfermarkt ([] om sidan inte gick att hamta) */
+export async function tmInjuries(code) {
+  const comp = TM_LEAGUE[code];
+  if (!comp) return [];
+  return parseTmInjuries(await getHtml(`${BASE}/x/verletztespieler/wettbewerb/${comp}`));
+}
+
+/**
+ * Lagger Transfermarkts skador pa trupperna (pa plats) dar FotMob inte markerat spelaren.
+ * teams = { vartLag: { fotmobName, players } }. Tidigare TM-markeringar rensas forst sa att friska spelare inte blir kvar.
+ * Returnerar antal spelare som fick en skada.
+ */
+export function mergeTmInjuries(teams, injuries) {
+  for (const t of Object.values(teams)) for (const p of t.players ?? []) if (p.injury?.source === 'Transfermarkt') p.injury = null;
+  let added = 0;
+  // Basta klubblikhet, inte forsta over gransen ("Peterborough United" liknar aven "Oxford United")
+  const teamOf = (club) => {
+    const best = Object.values(teams).map((t, i) => ({ t, s: Math.max(clubScore(club, Object.keys(teams)[i]), clubScore(club, t.fotmobName ?? '')) }))
+      .sort((a, b) => b.s - a.s)[0];
+    return best?.s >= 0.5 ? best.t : null;
+  };
+  for (const inj of injuries) {
+    const team = teamOf(inj.club);
+    const p = team?.players?.find((x) => sameName(x.name, inj.name));
+    if (!p || p.injury) continue;
+    p.injury = { typeId: null, expectedReturn: inj.until ?? 'Unknown', name: inj.injury, source: 'Transfermarkt' };
+    added++;
+  }
+  return added;
+}
+
 // ---- Namn- och klubbjamforelse FotMob <-> Transfermarkt (verify-squads-tm.mjs, fetch-player-stats-fotmob.mjs) ----
 export const fold = (x) => String(x).replace(/[øØ]/g, 'o').replace(/[łŁ]/g, 'l').replace(/[æÆ]/g, 'ae').replace(/ß/g, 'ss').replace(/[đĐ]/g, 'd')
   .normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z ]/g, ' ').replace(/\s+/g, ' ').trim();

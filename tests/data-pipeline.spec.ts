@@ -155,3 +155,36 @@ test('inga dubbletter: oddshistorik, tips och lagnamn i data/matcher', async () 
     for (const from of Object.keys(map)) expect(txt.includes(`,${from},`), `${lg}: "${from}" ska heta "${map[from]}"`).toBe(false);
   }
 });
+
+// 2026-10-05: League One/Championship hade skott-proxy fast football-data har riktig xG, och nyss spelade matcher saknade domare
+test('data/matcher: engelska ligorna har riktig xG, domare och frånvaro före matchen när källan har det', async () => {
+  const csv = (lg: string) => {
+    const [h, ...rows] = fs.readFileSync(path.join(root, 'data', 'matcher', `${lg}.csv`), 'utf8').trim().split(/\r?\n/);
+    const head = h.split(',');
+    return rows.map((l) => { const v = l.split(','); return Object.fromEntries(head.map((k, i) => [k, v[i] ?? ''])); });
+  };
+  const fdCsv = (lg: string, season: string) => {
+    const f = path.join(root, 'data', 'raw', `${lg}_${season}.csv`);
+    if (!fs.existsSync(f)) return [];
+    const [h, ...rows] = fs.readFileSync(f, 'utf8').replace(/^﻿/, '').trim().split(/\r?\n/);
+    const head = h.split(',');
+    return rows.map((l) => { const v = l.split(','); return Object.fromEntries(head.map((k, i) => [k, v[i] ?? ''])); });
+  };
+  for (const lg of ['PL', 'CH', 'EL1']) {
+    const rows = csv(lg);
+    const cur = rows.filter((r) => r.status === 'spelad').map((r) => r.season).sort().at(-1)!;
+    const played = rows.filter((r) => r.status === 'spelad' && r.season === cur);
+    const raw = fdCsv(lg, `${cur.slice(2, 4)}${cur.slice(5, 7)}`);
+    if (raw.some((r) => r.HxG !== '' && r.HxG != null)) {
+      expect(played.filter((r) => r.xg_src === 'skott').length, `${lg}: skott-proxy fast football-data har xG`).toBe(0);
+    }
+    if (raw.every((r) => r.Referee)) {
+      expect(played.filter((r) => !r.referee).map((r) => `${r.date} ${r.home}-${r.away}`), `${lg}: domare saknas`).toEqual([]);
+    }
+    const up = rows.filter((r) => r.status === 'kommande');
+    expect(up.filter((r) => r.pre_inj_at).length, `${lg}: frånvaro före matchen sparas inte`).toBeGreaterThan(up.length * 0.8);
+    // Väntande rader är aldrig äldre än 21 dagar
+    const old = new Date(Date.now() - 22 * 864e5).toISOString().slice(0, 10);
+    expect(rows.filter((r) => r.status === 'väntar' && r.date < old).length).toBe(0);
+  }
+});

@@ -3,6 +3,7 @@
 //                             FotMob-betyg, mal, assist, kort) + historik: nar spelaren forst/senast sags i laget
 //   data/ligor/<liga>.json    tabell nu + tabellhistorik per dag (en rad per lag och dag)
 // Saknar FotMob trupp (Ettan, vissa CL-lag) hamtas den fran Transfermarkt (scripts/lib/transfermarkt.mjs), source anges per lag.
+// Skador i PL/CH/EL1/EL2 kompletteras med Transfermarkts skadelista (injury.source = 'Transfermarkt').
 // Lagnamn mappas till vara (football-data/store) via data/matcher/<liga>.csv. Lag hamtade senaste 20 h ateranvands.
 // Befintlig fil skrivs aldrig over med tom data. Kors: npm run trupper [-- PL SA ...] [-- --force]
 import fs from 'node:fs';
@@ -11,7 +12,7 @@ import { root } from './lib/learnings-data.mjs';
 import { nameScore } from './lib/match-context.mjs';
 import { fold, mapTable } from './lib/fotmob-names.mjs';
 import { FOTMOB_LEAGUES as FOTMOB } from './lib/fotmob-leagues.mjs';
-import { TM_COMP, TM_TEAM_ID, tmClubs, tmSquad } from './lib/transfermarkt.mjs';
+import { TM_COMP, TM_INJURY_LEAGUES, TM_TEAM_ID, mergeTmInjuries, tmClubs, tmInjuries, tmSquad } from './lib/transfermarkt.mjs';
 import { fotmobGet as getJson } from './lib/api-schemas.mjs';
 
 const FM = 'https://www.fotmob.com/api/data';
@@ -174,6 +175,11 @@ for (const [code, spec] of Object.entries(FOTMOB)) {
     const coachHistory = [...(prev?.coachHistory ?? [])];
     if (squad.coach && coachHistory.at(-1)?.name !== squad.coach) coachHistory.push({ name: squad.coach, firstSeen: today });
     teams[t.team] = { fotmobName: t.fotmobName, fotmobId: t.fotmobId, ...squad, coachHistory, history, left };
+  }
+  // Skador: FotMob saknar manga i lagre engelska ligor, Transfermarkts skadelista fyller pa (spelaren markeras med source)
+  if (TM_INJURY_LEAGUES.includes(code) && Object.keys(teams).length) {
+    const inj = await tmInjuries(code);
+    if (inj.length) console.log(`  skador fran Transfermarkt: ${mergeTmInjuries(teams, inj)} av ${inj.length} tillagda (ovriga redan markerade av FotMob eller ej i truppen)`);
   }
   // Tabellen sparas alltid. Trupper saknas hos FotMob for vissa lagre ligor (J2, J3, Ettan): behall befintlig truppfil
   if (Object.keys(teams).length) fs.writeFileSync(sqFile, JSON.stringify({ updatedAt: now, league: code, fotmobId: id, source: 'FotMob', teams }, null, 1), 'utf8');
