@@ -23,6 +23,8 @@ import { streckFlopFlags, streckFlopNotes, streckFlopSeasonList } from './lib/st
 import { logTips, settleTips, strykRecords } from './lib/tipslogg.mjs';
 import { adjustProbs } from './lib/learned-adjust.mjs';
 import { extraSignals, seasonOf } from './lib/extra-signals.mjs';
+import { request } from './lib/http.mjs';
+import { svsSchemas } from './lib/api-schemas.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const RAW = path.join(root, 'data', 'raw');
@@ -180,11 +182,9 @@ const num = (s) => {
   return Number.isFinite(n) ? n : null;
 };
 
-async function get(url, type = 'json') {
-  const res = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0 (betting-ny lokal analys)' } });
-  if (!res.ok) throw new Error(`${res.status} ${url}`);
-  return type === 'json' ? res.json() : res.text();
-}
+// Svenska Spels kuponger far formatkontroll (fel loggas aven nar anroparen fangar dem)
+const svsSchema = (url) => (!url.startsWith(API) ? undefined : /\/draws$/.test(url) ? svsSchemas.draws : /\/draws\/\d+$/.test(url) ? svsSchemas.draw : undefined);
+const get = (url, type = 'json') => request(url, { as: type, headers: { 'User-Agent': 'Mozilla/5.0 (betting-ny lokal analys)' }, retries: 2, schema: svsSchema(url), label: 'Svenska Spel' });
 
 // ---------- football-data CSV ----------
 const FD = {
@@ -1295,16 +1295,28 @@ const COLOR_TRIM_EXACT = 3;
 const CUT_AIM = Number(process.env.STRYK_CUT_AIM ?? 0.9);
 const cutAim = (minRows, maxRows) => Math.round(minRows + CUT_AIM * (maxRows - minRows));
 // cap = hogsta grans i lanken: en regel duger nar raderna over cap ryms i budgeten och alla rader (over regeln) racker
-function exactColorOptions(all, minRows, maxRows, fixed = null, triples = null, cap = Infinity, redAtLeast = 0) {
+// Raderna grupperade per fargtriplett, en gang per radlista och grans (radlistorna ateranvands). Forut grupperades
+// de om vid varje anrop: 12 600 anrop och 115 miljoner rader pa Stryktipset 4974 (~40 s).
+const colorGroupCache = new WeakMap();
+function colorGroups(all, cap) {
+  let byCap = colorGroupCache.get(all);
+  if (!byCap) { byCap = new Map(); colorGroupCache.set(all, byCap); }
+  let gl = byCap.get(cap);
+  if (gl) return gl;
   const groups = new Map();
   for (const r of all) {
-    const k = r.c.join(',');
-    const g = groups.get(k) || { c: r.c, n: 0, p: 0, nHi: 0, pHi: 0 };
+    const k = r.c[0] * 196 + r.c[1] * 14 + r.c[2];
+    let g = groups.get(k);
+    if (!g) { g = { c: r.c, n: 0, p: 0, nHi: 0, pHi: 0 }; groups.set(k, g); }
     g.n++; g.p += r.p;
     if (r.payout >= cap) { g.nHi++; g.pHi += r.p; }
-    groups.set(k, g);
   }
-  const gl = [...groups.values()];
+  gl = [...groups.values()];
+  byCap.set(cap, gl);
+  return gl;
+}
+function exactColorOptions(all, minRows, maxRows, fixed = null, triples = null, cap = Infinity, redAtLeast = 0) {
+  const gl = colorGroups(all, cap);
   const lo = [13, 13, 13], hi = [0, 0, 0];
   for (const g of gl) for (let c = 0; c < 3; c++) { if (g.c[c] < lo[c]) lo[c] = g.c[c]; if (g.c[c] > hi[c]) hi[c] = g.c[c]; }
   const ranges = fixed || [0, 1, 2].map((c) => {

@@ -81,6 +81,27 @@ for (const [vy, namn] of [['stryktipset', 'Stryktipset'], ['europatipset', 'Euro
   });
 }
 
+// Kupongerna räknas i en bakgrundstråd (stryk-worker.js, 2026-10-05): sidan visas direkt och går att använda medan
+// motorn räknar, och räkningen görs en gång (förut två gånger på huvudtråden, ~80 s med låst sida).
+test('Stryktipset: matcherna syns direkt medan kupongerna räknas i bakgrunden, sedan kupong A–D', async ({ page }) => {
+  const workers: string[] = [];
+  page.on('worker', (w: any) => workers.push(w.url()));
+  const fel = await oppna(page, 'stryktipset');
+  const view = page.locator('#stryktips-view');
+  await expect(view.locator('.st-match')).toHaveCount(13, { timeout: 10_000 });
+  await expect(view.locator('.sb-result [role=status]')).toContainText('Räknar fram kupongerna', { timeout: 5_000 });
+  await expect(page.locator('#sb-generate')).toBeDisabled();
+  // Huvudtråden är fri: ett anrop i sidan svarar direkt fast motorn räknar
+  const t = Date.now();
+  await page.evaluate(() => 1);
+  expect(Date.now() - t).toBeLessThan(1_000);
+  await expect(view.locator('.sb-coupons .sb-coupon, .sb-coupons > *').first()).toBeVisible({ timeout: 120_000 });
+  await expect(view.locator('.sb-result [role=status]')).toHaveCount(0);
+  await expect(page.locator('#sb-generate')).toBeEnabled();
+  expect(workers.filter((u) => u.includes('/stryk-worker.js')), 'en räkning vid laddning').toHaveLength(1);
+  expect(fel, fel.join('\n')).toEqual([]);
+});
+
 test('Stryktipset: kupongtabellen markerar tecken som A, B och C brukar ha fel på (⚠), inga JS-fel', async ({ page }) => {
   const data = JSON.parse(fs.readFileSync(path.join(root, 'data', 'stryktipset.json'), 'utf8'));
   test.skip(!data.missProfileSystems, 'ingen missprofil per system i data/stryktipset.json');

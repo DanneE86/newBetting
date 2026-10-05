@@ -913,10 +913,30 @@ function variantNote() {
   return v.length ? `<p class="st-sub" role="note"><b>Testvariant:</b> ${esc(v.join(" · "))} – ta bort ?-delen i adressen för vanliga regler.</p>` : "";
 }
 
-function generateInto(p, st) {
+// Kupongerna räknas i en bakgrundstråd (stryk-worker.js), en per spel. En ny generering avbryter den som pågår.
+const workers = new Map();
+function runEngine(p, krav) {
+  if (typeof Worker === "undefined") return Promise.resolve().then(() => generateCoupons(p, krav));
+  workers.get(p.product)?.terminate();
+  const w = new Worker(`/stryk-worker.js${location.search}`, { type: "module" });
+  workers.set(p.product, w);
+  return new Promise((resolve, reject) => {
+    w.onmessage = ({ data: d }) => (d.error ? reject(new Error(d.error)) : resolve(d.result));
+    w.onerror = (e) => { e.preventDefault?.(); reject(new Error(e.message || "bakgrundstråden stannade")); };
+    w.postMessage({ p, krav });
+  }).finally(() => {
+    w.terminate();
+    if (workers.get(p.product) === w) workers.delete(p.product);
+  });
+}
+
+async function generateInto(p, st) {
+  const run = (st.run = (st.run || 0) + 1);
   try {
-    st.result = generateCoupons(p, st.krav);
+    const result = await runEngine(p, st.krav);
+    if (run === st.run) st.result = result;
   } catch (e) {
+    if (run !== st.run) return;
     st.result = null;
     data.error = `kupongen kunde inte genereras: ${e.message}`;
   }
@@ -932,7 +952,7 @@ async function liveGenerate(p, st) {
       st.liveError = e.message;
     }
   }
-  generateInto(p, st);
+  await generateInto(p, st);
 }
 
 function streckNote(p, st) {
@@ -986,15 +1006,13 @@ function renderB(p, head, top = "", extras = "") {
   const st = bState(p);
   if (!st.result && !st.tried) {
     st.tried = true;
-    generateInto(p, st);
-    // Byt direkt till live-streck i bakgrunden
-    if (p.open && !p.live) {
-      st.busy = true;
-      liveGenerate(p, st).finally(() => {
-        st.busy = false;
-        render();
-      });
-    }
+    // En enda räkning i bakgrunden: med live-streck när kupongen är öppen (annars, eller om live inte går, hämtningens
+    // streck). Förut räknades kupongerna först med hämtningens streck och sedan om med live – två gånger och sidan låst.
+    st.busy = true;
+    liveGenerate(p, st).finally(() => {
+      st.busy = false;
+      render();
+    });
   }
   // /stryktipset/backtest: öppna statistiken en gång (därefter styr användaren)
   if (showBacktest && !backtestOpened) {
@@ -1048,7 +1066,12 @@ function renderB(p, head, top = "", extras = "") {
         ${couponTable(p, res)}
         <div class="sb-coupons">${couponCard(res.A, "A", p)}${couponCard(res.B, "B", p)}${couponCard(res.C, "C", p)}${couponCard(res.D, "D", p)}</div>
       </section>`
-    : "";
+    : st.busy
+      ? `<section class="sb-panel sb-result ds-card">
+        <h3>2. Din kupong</h3>
+        <p class="st-sub" role="status" aria-live="polite">Räknar fram kupongerna A–D med ${p.open ? "live-streck" : "hämtningens streck"} – det tar en stund (upp till en halv minut). Du kan läsa matcherna under tiden.</p>
+      </section>`
+      : "";
   // Matchkorten visar den genererade kupongen (eller hämtningens kupong A innan något genererats)
   const blueA = res?.A?.rules?.blueHalves ?? p.reduced?.rules?.blueHalves ?? [];
   const events = p.events.map((e, i) => ({ ...e, systemPick: picksA[i], systemPickB: res?.B?.picks[i] || null, blueHalf: blueA.includes(i) }));
@@ -1116,7 +1139,7 @@ function handleB(ev) {
   if (ev.target.closest("#sb-generate")) {
     st.busy = true;
     render();
-    // Hämtar live-streck och genererar sedan (räkningen tar vanligtvis under en sekund)
+    // Hämtar live-streck och genererar sedan i bakgrunden (stryk-worker.js)
     liveGenerate(p, st).then(() => {
       st.busy = false;
       st.dirty = false;
