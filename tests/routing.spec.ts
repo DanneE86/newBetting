@@ -124,18 +124,10 @@ test('Stryktipset: en sida, egna krav genererar kupong A och B', async ({ page }
   await expect(page.locator('.sb-coupon').nth(2)).toContainText('minst 50 000 kr');
   // Krav på A+B låses inte i C
   await expect(table.nth(0).locator('td').nth(3)).not.toContainText('🔒');
-  // Kupong D: fritt reducerat system för vinster över 20 000 kr, krav på A+B låses inte där
-  const dCard = page.locator('.sb-coupon').nth(3);
-  await expect(dCard.locator('h3')).toContainText(/Kupong D \d+ rader/);
-  await expect(dCard).toContainText(/Fritt reducerat · [\d\s]+ → \d+ rader · 1 \d/);
-  await expect(table.nth(0).locator('td').nth(4)).not.toContainText('🔒');
-  const dSigns = await table.evaluateAll((trs) => trs.map((tr) => tr.querySelectorAll('td')[4].textContent!.trim()));
-  expect(dSigns).toHaveLength(13);
-  // Fritt system: 1–3 olika tecken per match (cellen kan också ha varningar som "⚠ kan falla")
-  for (const t of dSigns) {
-    const signs = t.match(/[1X2]/g) || [];
-    expect(signs.length >= 1 && signs.length <= 3 && new Set(signs).size === signs.length, t).toBe(true);
-  }
+  // Kupong D togs bort 2026-10-05: bara A, B och C, ingen D-kolumn och inget D-val för krav
+  await expect(page.locator('.sb-coupon')).toHaveCount(3);
+  await expect(page.locator('.sb-table thead th', { hasText: 'Kupong D' })).toHaveCount(0);
+  await expect(rows.nth(0).locator('.sb-scope button[data-scope="D"]')).toHaveCount(0);
   // Eget krav på C: spik 2 på match 8 bara i C
   await rows.nth(7).locator('.sb-sign[data-sign="2"]').click();
   await rows.nth(7).locator('.sb-scope button[data-scope="C"]').click();
@@ -143,7 +135,6 @@ test('Stryktipset: en sida, egna krav genererar kupong A och B', async ({ page }
   await expect(table.nth(7).locator('td').nth(3)).toHaveText(/^🔒 2(?: ⚠.*)?$/, { timeout: 240_000 });
   await expect(table.nth(7).locator('td').nth(1)).not.toContainText('🔒');
   await expect(table.nth(7).locator('td').nth(2)).not.toContainText('🔒');
-  await expect(table.nth(7).locator('td').nth(4)).not.toContainText('🔒');
   await rows.nth(7).locator('.sb-sign[data-sign="2"]').click();
   // Turmatcher och vanliga missar visas (historiken ligger i den hopfällda sektionen "Statistik & historik")
   await page.locator('.st-history > summary').click();
@@ -183,7 +174,7 @@ test('Europatipset har samma sida via /europatipset', async ({ page }) => {
   await expect(page).toHaveURL(base + '/europatipset');
   await expect(page.locator('#stryktips-view h2')).toContainText('Europatipset', { timeout: 30_000 });
   await expect(page.locator('.sb-row')).toHaveCount(13, { timeout: 300_000 });
-  await expect(page.locator('.sb-coupon')).toHaveCount(4, { timeout: 300_000 }); // A, B, C och D
+  await expect(page.locator('.sb-coupon')).toHaveCount(3, { timeout: 300_000 }); // A, B och C
   await expect(page.locator('.view-tab.active')).toHaveAttribute('data-view', 'europatipset');
   // Krav bara i A (1X på sista matchen): B väljer aldrig exakt samma tecken där
   await page.evaluate(() => localStorage.clear());

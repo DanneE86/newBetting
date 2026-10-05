@@ -13,7 +13,7 @@ export const SIGN_MIN_B = [3, 2, 2];
 const COLOR = { green: 0.45, red: 0.25 };
 // Stryktipset A 15 000 kr (gränsfönster 15 000-25 000) sedan 2026-10-04 (anvandaren: "kor 15k pa A"). Backtest
 // 107 omg (C av, data/stryktips-backtest-*-{tB2,utd15}.json): A chans 13 rätt 27,5 -> 39,9 % (summa), 11+ 12 -> 16, 10+ 32 -> 40,
-// netto +13 088 -> +23 824 kr. B och C har kvar 50 000-75 000 kr, D 30 000-50 000 kr.
+// netto +13 088 -> +23 824 kr. B och C har kvar 50 000-75 000 kr.
 const UTD_MIN_BY_PRODUCT = { stryktipset: 15000, europatipset: 20000 };
 // Kupong B (risksystemet): 50 000–75 000 kr för 13 rätt på båda spelen (användaren 2026-10-02 kväll: "öka B till 50k-75k",
 // tidigare 30 000–50 000)
@@ -127,7 +127,7 @@ export function skrallQueue(events, setsA = null, forced = []) {
 }
 // Så många kandidater i tur provas innan B får gå utan skrällspik
 const SKRALL_NEXT_TRIES = 5;
-// Kryss oftare i A och B (användaren 2026-10-03: "kryss missas mest"), aldrig i C eller D. Samma som X_TILT i
+// Kryss oftare i A och B (användaren 2026-10-03: "kryss missas mest"), aldrig i C. Samma som X_TILT i
 // fetch-stryktipset.mjs (STRYK_X_HALF/STRYK_X_SPIK/STRYK_X_W/STRYK_X_FOR): half = bonus för halvgardering med X när tecknen
 // väljs (1X/X2 före 12 när krysset ligger nära), spik = ingen favoritspik när krysset är minst så här stort, w = krysset
 // viktas upp när tecknen väljs. Påverkar bara valet av tecken, inte reduceringen eller utdelningen. Neutralt = { half: 0, spik: 1, w: 1 }.
@@ -462,7 +462,7 @@ const allYellowMatch = (e) => [0, 1, 2].every((k) => signColor(e.folk?.[k]) === 
 //    tecken så att skrällarna ligger kvar i de färgade. Fler helgula halvor blir gula (en gul per rad, styr ingenting).
 // Kryss i annan färg än rött (användaren 2026-10-03: "en av de två blå halvorna har alltid X"). Folket streckar X 17–30 %
 // (median 24 %, aldrig 45 %), så X är rött i 60 % av matcherna och delar A:s 1–3 röda platser med skrällarna. Backtest
-// 107 omg: X saknades i grundraden 43 % av gångerna (1: 9 %, 2: 29 %). Gäller A och B, aldrig C och D. Samma som fetch.
+// 107 omg: X saknades i grundraden 43 % av gångerna (1: 9 %, 2: 29 %). Gäller A och B, aldrig C. Samma som fetch.
 export const BLUE_X = true;
 let blueXOn = false; // sätts i buildWithLadder (base.blueX)
 // blueX = true tvingar regeln (tester), annars gäller systemet som byggs just nu
@@ -1140,9 +1140,8 @@ export function kravSigns(k) {
 
 /**
  * Genererar kupong A och B för en omgång.
- * krav: { [eventNumber]: { signs: "1" | "1X" | "X2" | "12" | "1X2" | ..., scope: "both" | "A" | "B" | "C" | "D" | "all" } }
- * "both" = A och B, "all" = alla fyra.
- * D = fritt system för stora vinster: valfri grundrad, inga färg- eller teckenregler, bara lägsta utdelning 20 000 kr och 350–400 kr. Fritt från A, B och C.
+ * krav: { [eventNumber]: { signs: "1" | "1X" | "X2" | "12" | "1X2" | ..., scope: "both" | "A" | "B" | "C" | "all" } }
+ * "both" = A och B, "all" = alla tre.
  * A = bästa systemet med A:s krav (350–400 kr, spelets utdelningsgräns).
  * C = skrällsystemet (700–850 kr, 50 000–75 000 kr, röd 2–6, högsta rad minst 1 miljon), fritt från A och B.
  * B = risksystemet med B:s krav: röd 1–5 eller 2–5, minst 30 000 kr för 13 rätt utan tak, teckenregler 3-2-2, aldrig samma gardering som A och högst 1 spik
@@ -1176,8 +1175,8 @@ export function generateCoupons(p, krav) {
     gamblingCabinUrl: gamblingCabinUrl(p, events, best.system.sets, best.reduced),
     system: sys,
   });
-  // Kryss-reglagen (X_TILT) gäller A och B, aldrig C och D
-  // Blått X (BLUE_X) gäller A och B, aldrig C och D
+  // Kryss-reglagen (X_TILT) gäller A och B, aldrig C
+  // Blått X (BLUE_X) gäller A och B, aldrig C
   const a = withBlueX("A", (blueX) => buildWithLadder(events, fA, { ...base, xTilt: X_TILT_FOR.includes("A"), blueX, sys: "A" }, BUDGET, null));
   const b = withBlueX("B", (blueX) => buildRisk("B", events, fB, { ...base, xTilt: X_TILT_FOR.includes("B"), blueX, payoutMin: Math.max(UTD_MIN_B, base.payoutMin) }, BUDGET, a ? new Set(a.reduced.rowList) : null,
     { avoid: a?.system.sets ?? null, payoutLadder: [1], signLadder: SIGN_LADDER_B }, a?.system.sets ?? null));
@@ -1201,294 +1200,5 @@ export function generateCoupons(p, krav) {
     if (xs < X_SHARE_C) c.relaxed.push(`kryssen täcker ${Math.round(xs * 100)} % av omgångens väntade kryss – ${Math.round(X_SHARE_C * 100)} % gick inte med dina krav`);
   }
   const C = c && finish(c, "C", fC);
-  // Kupong D: fritt system för vinster över 20 000 kr, fritt från A, B och C (bara D:s egna krav)
-  const D = buildCouponD(p, events, forcedFor("D"), base);
-  return { A, B, C, D, overlap, unionHit };
-}
-
-// ---------- Kupong D: fritt reducerat system för stora vinster (användaren 2026-10-04) ----------
-// "Om du får köra fritt skippa alla regler och bygg system D efter det. Viktigt är att vinna större summor än massa små.
-// Summor över 20k." Inga fasta färg-, tecken-, spik- eller formregler: grundraden väljs fritt (spik, halv eller hel på
-// valfria tecken). Första versionen reducerade bara på lägsta utdelning, och sökningen valde då en liten grundrad
-// (~800 rader) som gränsen nästan inte rörde – i praktiken ett oreducerat system. Användaren (samma dag): "System D är
-// inte något reducerat system, bygg vidare på det du gjort där men gör det reducerat också." Nu är grundraden minst
-// D_RULES.gmin rader och reduceras till 350–400 kr med regler som sökningen väljer fritt per omgång: antal 1, X och 2,
-// antal gröna och röda (bland garderingarna) och lägsta utdelning 20 000 kr i Gambling Cabins formel (kan höjas).
-// Sökningen maximerar chansen till 13 rätt bland raderna som klarar reglerna (lokal sökning med omstarter).
-// Bakkörning 107 omg (PL-omgångar 2023/24–2026/27), summerad chans till 13 rätt: bara utdelning (grundrad ~870) 35,5 %,
-// reducerat med gmin 1 500 45,5 %, 3 000 45,3 %, 6 000 44,9 % – bättre i alla tre perioderna. Se docs/lardomar/slutsatser.md.
-export const D_RULES = {
-  payoutMin: 20000, budget: { min: 350, max: 400 },
-  gmin: 3000, // minsta grundrad: D ska vara ett reducerat system
-  gmax: 30000, // största grundrad som provas (oreducerat)
-  evals: 8000, // antal provade grundrader (ca 2 s; 20 000 gav samma chans, 45,3 mot 45,2 %)
-};
-const D_OPTS = [[0], [1], [2], [0, 1], [0, 2], [1, 2], [0, 1, 2]];
-// Reglerna i D: [antal 1, antal X, antal 2, gröna, röda]. Färgerna räknas bara på garderingar (spikar är blå i GC),
-// gula tecken (26–44 %) är blå och har ingen regel (som A–C).
-const D_DIM = 5, D_B = 14;
-const dColor = (folkP) => { const c = signColor(folkP); return c === "green" ? 0 : c === "red" ? 1 : -1; };
-
-// Värderar en grundrad: raderna med utdelning >= gränsen (GC-formeln) grupperas på [1, X, 2, gröna, röda]. Reglerna
-// stramas åt en gräns i taget (den som tar bort minst chans per borttagen rad) tills raderna ryms i 350–400; varje
-// steg som landar i budgeten provas. Som alternativ höjs utdelningsgränsen (på hela grundraden och på sista steget
-// över budgeten). score = chansen till 13 rätt i kupongen.
-export function makeEvalD(events, { turnover: T, jackpot: J = 0, payoutMin = D_RULES.payoutMin, budget = D_RULES.budget, gmin = D_RULES.gmin, gmax = D_RULES.gmax }) {
-  const n = events.length;
-  const A = PAYOUT_13 * T + J;
-  const fmax = (A / payoutMin - 1) / T; // utdelning >= gränsen  <=>  folkets produkt <= fmax
-  const F = new Float64Array(gmax), P = new Float64Array(gmax), S = new Float64Array(gmax);
-  const K = new Int32Array(gmax);
-  const nb = D_B ** 4;
-  const bn = new Int32Array(nb), bp = new Float64Array(nb), inBox = new Uint8Array(nb);
-  const minRest = new Float64Array(n + 1);
-  const folk = events.map((e) => [0, 1, 2].map((k) => e.folk?.[k] ?? e.final[k]));
-  const col = events.map((e) => [0, 1, 2].map((k) => dColor(e.folk?.[k])));
-  const pay = (f) => A / (1 + T * f);
-  const aim = Math.round(budget.min + CUT_AIM * (budget.max - budget.min));
-  // Utdelningsgränsen: behåll de `aim` raderna i boxen med högst utdelning, gränsen i glappet (jämn hundralapp om det går)
-  const floorCut = (c, lo, hi) => {
-    let m = 0;
-    for (let i = 0; i < c; i++) if (inBox[K[i]]) S[m++] = F[i];
-    if (m <= budget.max) return null;
-    let l = 0, r = m - 1;
-    const k = aim;
-    while (l < r) {
-      const piv = S[(l + r) >> 1];
-      let i = l, j = r;
-      while (i <= j) { while (S[i] < piv) i++; while (S[j] > piv) j--; if (i <= j) { const t = S[i]; S[i] = S[j]; S[j] = t; i++; j--; } }
-      if (k <= j) r = j; else if (k >= i) l = i; else break;
-    }
-    const cut = S[k];
-    let rows = 0, p = 0, fKept = 0;
-    for (let i = 0; i < c; i++) if (inBox[K[i]] && F[i] < cut) { rows++; p += P[i]; if (F[i] > fKept) fKept = F[i]; }
-    if (rows < budget.min || rows > budget.max) return null;
-    const below = pay(cut), minKept = pay(fKept);
-    let floor = Math.max(payoutMin, Math.ceil((below + 1) / 100) * 100);
-    if (floor > minKept) floor = Math.max(payoutMin, Math.floor(below) + 1);
-    return { p, rows, floor, lo: lo.slice(), hi: hi.slice() };
-  };
-  const v = new Int32Array(D_DIM);
-  const dec = (key) => { v[4] = key % D_B; key = (key - v[4]) / D_B; v[3] = key % D_B; key = (key - v[3]) / D_B; v[1] = key % D_B; v[0] = (key - v[1]) / D_B; v[2] = n - v[0] - v[1]; };
-  return (sets) => {
-    let G = 1;
-    for (const s of sets) G *= s.length;
-    if (G < gmin || G > gmax) return null;
-    minRest[n] = 1;
-    for (let i = n - 1; i >= 0; i--) { let m = 1; for (const k of sets[i]) m = Math.min(m, folk[i][k]); minRest[i] = minRest[i + 1] * m; }
-    let c = 0;
-    const touched = [];
-    const walk = (i, p, f, n1, nX, g, r) => {
-      if (f * minRest[i] > fmax) return;
-      if (i === n) {
-        const key = ((n1 * D_B + nX) * D_B + g) * D_B + r;
-        F[c] = f; P[c] = p; K[c] = key; c++;
-        if (!bn[key]) touched.push(key);
-        bn[key]++; bp[key] += p;
-        return;
-      }
-      const s = sets[i], gard = s.length > 1;
-      for (let j = 0; j < s.length; j++) {
-        const k = s[j], cc = gard ? col[i][k] : -1;
-        walk(i + 1, p * events[i].final[k], f * folk[i][k], n1 + (k === 0), nX + (k === 1), g + (cc === 0), r + (cc === 1));
-      }
-    };
-    walk(0, 1, 1, 0, 0, 0, 0);
-    const m = touched.length;
-    const BV = new Int8Array(m * D_DIM), BN = new Int32Array(m), BP = new Float64Array(m);
-    const lo = [13, 13, 13, 13, 13], hi = [0, 0, 0, 0, 0];
-    let curN = c, curP = 0;
-    for (let b = 0; b < m; b++) {
-      const key = touched[b];
-      BN[b] = bn[key]; BP[b] = bp[key]; bn[key] = 0; bp[key] = 0; inBox[key] = 1;
-      curP += BP[b];
-      dec(key);
-      for (let d = 0; d < D_DIM; d++) { BV[b * D_DIM + d] = v[d]; if (v[d] < lo[d]) lo[d] = v[d]; if (v[d] > hi[d]) hi[d] = v[d]; }
-    }
-    const done = (res) => { for (const key of touched) inBox[key] = 0; return res; };
-    if (c < budget.min) return done({ hit: curP, rows: c, floor: payoutMin, G, lo, hi, budget: "under", score: curP / 2 });
-    let best = c <= budget.max ? { p: curP, rows: c, floor: payoutMin, lo: lo.slice(), hi: hi.slice() } : null;
-    const take = (x) => { if (x && (!best || x.p > best.p)) best = x; };
-    if (!best) take(floorCut(c, lo, hi));
-    const remN = new Float64Array(2 * D_DIM), remP = new Float64Array(2 * D_DIM);
-    while (curN > budget.max) {
-      remN.fill(0); remP.fill(0);
-      for (let b = 0; b < m; b++) {
-        if (!inBox[touched[b]]) continue;
-        for (let d = 0; d < D_DIM; d++) {
-          const x = BV[b * D_DIM + d];
-          if (x === lo[d]) { remN[2 * d] += BN[b]; remP[2 * d] += BP[b]; }
-          if (x === hi[d]) { remN[2 * d + 1] += BN[b]; remP[2 * d + 1] += BP[b]; }
-        }
-      }
-      let mv = -1, ratio = Infinity;
-      for (let j = 0; j < 2 * D_DIM; j++) {
-        const d = j >> 1;
-        if (!remN[j] || lo[d] === hi[d]) continue;
-        const after = curN - remN[j];
-        if (after < budget.min) continue;
-        if (after <= budget.max) {
-          const l2 = lo.slice(), h2 = hi.slice();
-          if (j & 1) h2[d]--; else l2[d]++;
-          take({ p: curP - remP[j], rows: after, floor: payoutMin, lo: l2, hi: h2 });
-        }
-        const q = remP[j] / remN[j];
-        if (q < ratio) { ratio = q; mv = j; }
-      }
-      if (mv < 0) break;
-      const d = mv >> 1, edge = mv & 1 ? hi[d] : lo[d];
-      for (let b = 0; b < m; b++) if (inBox[touched[b]] && BV[b * D_DIM + d] === edge) inBox[touched[b]] = 0;
-      if (mv & 1) hi[d]--; else lo[d]++;
-      curN -= remN[mv]; curP -= remP[mv];
-      if (curN <= budget.max) break;
-    }
-    // Sista läget över budgeten: utdelningsgränsen tar resten
-    if (curN > budget.max) take(floorCut(c, lo, hi));
-    if (!best) return done({ hit: 0, rows: 0, floor: payoutMin, G, lo, hi, budget: "under", score: 0 });
-    return done({ hit: best.p, rows: best.rows, floor: best.floor, lo: best.lo, hi: best.hi, G, budget: "ok", score: best.p });
-  };
-}
-
-// Lokal sökning (första förbättring i slumpad ordning) med omstarter från bästa grundraden (2–3 matcher ändras).
-// Låsta matcher (egna krav på D) är fasta. Start: favoritspik över 60 %, annars två troligaste, helgardering på de
-// jämnaste matcherna tills grundraden har minst gmin rader. Fast slumpfrö: samma omgång ger samma kupong.
-export function searchD(events, forced, base, { evals = D_RULES.evals, seed = 1, gmin = D_RULES.gmin, gmax = D_RULES.gmax } = {}) {
-  const options = events.map((e, i) => (forced[i] ? [[...forced[i]].sort((a, b) => a - b)] : D_OPTS));
-  // Går inte grundraden att få så stor (många låsta spikar) blir minsta grundraden den största som går
-  const gminEff = Math.min(gmin, options.reduce((g, o) => g * Math.max(...o.map((x) => x.length)), 1));
-  // D:s egen gräns och budget, aldrig spelets (base.payoutMin är A:s gräns)
-  const ev = makeEvalD(events, { ...base, payoutMin: D_RULES.payoutMin, budget: D_RULES.budget, gmin: gminEff, gmax });
-  let rnd = seed;
-  const rand = () => ((rnd = (rnd * 16807) % 2147483647) / 2147483647);
-  const start = events.map((e, i) => {
-    if (forced[i]) return options[i][0];
-    const o = [0, 1, 2].sort((a, b) => e.final[b] - e.final[a]);
-    return e.final[o[0]] > 0.6 ? [o[0]] : o.slice(0, 2).sort((a, b) => a - b);
-  });
-  let G = start.reduce((g, s) => g * s.length, 1);
-  for (const [i] of events.map((e, i) => [i, Math.max(...e.final)]).sort((a, b) => a[1] - b[1])) {
-    if (G >= gminEff) break;
-    if (forced[i] || start[i].length === 3) continue;
-    G = (G / start[i].length) * 3;
-    start[i] = [0, 1, 2];
-  }
-  // Spikar som behöver bli halvgarderingar för att nå gmin (alla matcher redan hel/halv)
-  for (const [i] of events.map((e, i) => [i, Math.max(...e.final)]).sort((a, b) => a[1] - b[1])) {
-    if (G >= gminEff) break;
-    if (forced[i] || start[i].length !== 1) continue;
-    const o = [0, 1, 2].sort((a, b) => events[i].final[b] - events[i].final[a]);
-    start[i] = o.slice(0, 2).sort((a, b) => a - b);
-    G *= 2;
-  }
-  while (G > gmax) {
-    const i = start.findIndex((s, j) => !forced[j] && s.length === 3);
-    if (i < 0) break;
-    const o = [0, 1, 2].sort((a, b) => events[i].final[b] - events[i].final[a]);
-    start[i] = o.slice(0, 2).sort((a, b) => a - b);
-    G = (G / 3) * 2;
-  }
-  let n = 0;
-  const E = (s) => { n++; return ev(s); };
-  const better = (a, b) => a && (!b || a.score > b.score + 1e-15);
-  let cur = start, curE = E(cur);
-  let best = cur, bestE = curE;
-  const moves = [];
-  events.forEach((_, i) => options[i].forEach((o) => moves.push([i, o])));
-  while (n < evals) {
-    let improved = true;
-    while (improved && n < evals) {
-      improved = false;
-      for (let m = moves.length - 1; m > 0; m--) { const j = Math.floor(rand() * (m + 1)); [moves[m], moves[j]] = [moves[j], moves[m]]; }
-      for (const [i, o] of moves) {
-        if (cur[i].join() === o.join()) continue;
-        const s = cur.slice();
-        s[i] = o;
-        const e = E(s);
-        if (better(e, curE)) { cur = s; curE = e; improved = true; }
-        if (n >= evals) break;
-      }
-    }
-    if (better(curE, bestE)) { best = cur; bestE = curE; }
-    cur = best.slice();
-    const k = 2 + Math.floor(rand() * 2);
-    for (let j = 0; j < k; j++) { const i = Math.floor(rand() * events.length); cur[i] = options[i][Math.floor(rand() * options[i].length)]; }
-    curE = E(cur);
-    if (!curE) { cur = best; curE = bestE; }
-  }
-  return bestE ? { sets: best, ...bestE } : null;
-}
-
-// Samma omgång, streck och krav ger samma D – sökningen körs inte om när bara A–C:s krav ändras
-const dCache = new Map();
-export function buildCouponD(p, events, forced, base, opts) {
-  const key = [p.product, p.drawNumber, events.map((e) => `${e.final}|${e.folk}`).join(";"), forced.map((x) => x?.join("") ?? "-").join(","), base.turnover, base.jackpot, opts?.evals, opts?.gmin].join("#");
-  if (dCache.has(key)) return dCache.get(key);
-  const out = buildCouponDOnce(p, events, forced, base, opts);
-  if (dCache.size > 20) dCache.clear();
-  dCache.set(key, out);
-  return out;
-}
-function buildCouponDOnce(p, events, forced, base, opts) {
-  const best = searchD(events, forced, base, opts);
-  if (!best) return null;
-  const { sets, floor, lo, hi } = best;
-  const T = base.turnover, RT = base.realTurnover || T, J = base.jackpot || 0;
-  const col = events.map((e) => [0, 1, 2].map((k) => dColor(e.folk?.[k])));
-  const rows = [], row = [], cnt = [0, 0, 0, 0, 0];
-  const walk = (i, pr, f) => {
-    if (i === events.length) {
-      const payout = (PAYOUT_13 * T + J) / (1 + T * f);
-      if (payout >= floor && cnt.every((x, d) => x >= lo[d] && x <= hi[d])) rows.push({ row: row.join(""), p: pr, payout, real: (PAYOUT_13 * RT + J) / (1 + RT * f) });
-      return;
-    }
-    for (const k of sets[i]) {
-      const cc = sets[i].length > 1 ? col[i][k] : -1;
-      row.push(SIGNS[k]); cnt[k]++; if (cc >= 0) cnt[3 + cc]++;
-      walk(i + 1, pr * events[i].final[k], f * (events[i].folk?.[k] ?? events[i].final[k]));
-      row.pop(); cnt[k]--; if (cc >= 0) cnt[3 + cc]--;
-    }
-  };
-  walk(0, 1, 1);
-  rows.sort((a, b) => b.p - a.p);
-  const hit = rows.reduce((s, r) => s + r.p, 0);
-  const ev = rows.reduce((s, r) => s + r.p * r.real, 0);
-  // Färger som inte finns bland garderingarna är av i länken
-  const has = [0, 1].map((c) => sets.some((set, i) => set.length > 1 && set.some((k) => col[i][k] === c)));
-  const reduced = {
-    rows: rows.length, cost: rows.length * (base.rowPrice || 1), rowPrice: base.rowPrice || 1,
-    hitAll: hit, grundHit: sets.reduce((a, set, i) => a * set.reduce((s, k) => s + events[i].final[k], 0), 1),
-    grundRows: sets.reduce((g, s) => g * s.length, 1),
-    expectedPayout: hit ? ev / hit : null, expectedReturn: ev,
-    rules: {
-      payoutMin: floor, signMin: null, free: true, turnover: T, realTurnover: RT, jackpot: J,
-      signRules: [0, 1, 2].map((k) => [lo[k], hi[k]]),
-      colorRules: { ...(has[0] ? { green: [lo[3], hi[3]] } : {}), ...(has[1] ? { red: [lo[4], hi[4]] } : {}) },
-      budget: best.budget, blueHalves: [],
-    },
-    rowList: rows.map((r) => r.row), rowP: rows.map((r) => r.p), rowReal: rows.map((r) => r.real), rowPayout: rows.map((r) => r.payout),
-  };
-  return {
-    ...reduced,
-    picks: sets.map((set, i) => ({ ...pickOf(set), locked: forced[i] != null })),
-    relaxed: best.budget === "under" ? [`bara ${rows.length} rader med ${floor.toLocaleString("sv-SE")} kr som gräns (under ${D_RULES.budget.min} kr)`] : [],
-    gamblingCabinUrl: gamblingCabinUrlD(p, events, sets, reduced),
-    system: "D",
-  };
-}
-
-// Gambling Cabin-länk för D: spikar och gula tecken blå (1), gröna garderingstecken gröna (4), röda röda (3).
-// Teckenregler (antal 1/X/2), färgregler och lägsta utdelning utan tak – allt som sökningen valde.
-export function gamblingCabinUrlD(p, events, sets, reduced) {
-  const id = { 0: 4, 1: 3, [-1]: 1 };
-  const col = (k) => events.map((e, i) => (!sets[i].includes(k) ? 0 : sets[i].length === 1 ? 1 : id[dColor(e.folk?.[k])])).join(",");
-  const r = reduced.rules;
-  const cr = (c) => (r.colorRules?.[c] ? `1,${r.colorRules[c][0]},${r.colorRules[c][1]}` : "0,0,13");
-  const q = [
-    `spel=${p.product}`, `omg=${p.drawNumber}`, `datum=${(p.regCloseTime || "").slice(0, 10)}`,
-    `v1=${col(0)}`, `vX=${col(1)}`, `v2=${col(2)}`,
-    `antT=1,${r.signRules.map((x) => x.join(",")).join(",")}`,
-    "yellow=0,0,13", `red=${cr("red")}`, `green=${cr("green")}`, "pink=0,0,13",
-    `utd=1,${r.payoutMin},100000000`,
-  ];
-  return `https://reducera.gamblingcabin.se/?${q.join("&")}`;
+  return { A, B, C, overlap, unionHit };
 }
