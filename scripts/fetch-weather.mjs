@@ -7,6 +7,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { canonicalTeam } from './weather/teams.mjs';
+import { getJson as httpGetJson } from './lib/http.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const P = {
@@ -26,17 +27,7 @@ const DEFAULT_KICKOFF_UTC = 14; // ~15:00 lokal tid om avsparkstid saknas
 const readJson = (p, fallback = null) => (fs.existsSync(p) ? JSON.parse(fs.readFileSync(p, 'utf8').replace(/^﻿/, '')) : fallback);
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-async function getJson(url) {
-  for (let attempt = 1; attempt <= 5; attempt++) {
-    const res = await fetch(url, { headers: { 'User-Agent': 'betting-ny/1.0' } });
-    if (res.ok) return res.json();
-    const body = await res.text();
-    if (attempt === 5 || (res.status !== 429 && res.status < 500)) throw new Error(`${res.status} ${body.slice(0, 200)}`);
-    const wait = res.status === 429 ? 65_000 : 3_000 * attempt;
-    console.log(`  ${res.status} - vantar ${wait / 1000}s`);
-    await sleep(wait);
-  }
-}
+const getJson = (url) => httpGetJson(url, { headers: { 'User-Agent': 'betting-ny/1.0' }, retries: 4, retryDelayMs: 3000, throttleMs: 65_000, maxThrottleMs: 65_000 });
 
 const venues = readJson(P.venues);
 if (!venues) throw new Error('Saknar data/open/venues.json - kor npm run venues forst');

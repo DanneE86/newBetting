@@ -14,6 +14,7 @@ import { root } from './lib/learnings-data.mjs';
 import { TM_COMP, tmClubs, tmSquad, pairClubs, sameName } from './lib/transfermarkt.mjs';
 import { GROUPS, KEY_STATS, positionGroup, tmGroup } from './lib/player-positions.mjs';
 import { day, r, statMap, form, matchRows } from './lib/fotmob-player.mjs';
+import { fotmobGet as getJson } from './lib/api-schemas.mjs';
 
 const FM = 'https://www.fotmob.com/api/data';
 const PLAYER_MAX_AGE_D = 3;
@@ -26,19 +27,6 @@ const TM_FILE = path.join(DIR_OUT, '_transfermarkt.json');
 const readJson = (p, d = null) => { try { return JSON.parse(fs.readFileSync(p, 'utf8')); } catch { return d; } };
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const ageDays = (iso) => (iso ? (Date.now() - Date.parse(iso)) / 864e5 : Infinity);
-
-async function getJson(url) {
-  for (let i = 0; i < 4; i++) {
-    try {
-      const res = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0' }, signal: AbortSignal.timeout(30000) });
-      if (res.ok) return await res.json();
-      if (res.status === 404) return null;
-      if (res.status === 429) await sleep(15000 * (i + 1)); // strypt
-    } catch { /* forsok igen */ }
-    await sleep(1000 * (i + 1));
-  }
-  return null;
-}
 
 // Skottkartan sammanfattad (hela kartan ar for stor att spara for alla spelare)
 function shotSummary(shots) {

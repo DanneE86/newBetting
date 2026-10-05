@@ -8,6 +8,8 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { getJson } from './lib/http.mjs';
+import { svsSchemas } from './lib/api-schemas.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const PRODUCT = process.argv[2] || 'stryktipset';
@@ -24,18 +26,7 @@ const num = (s) => {
 const r4 = (x) => (x == null ? null : Math.round(x * 1e4) / 1e4);
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-async function get(url, tries = 3) {
-  for (let i = 1; ; i++) {
-    try {
-      const res = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0 (betting-ny lokal analys)' } });
-      if (!res.ok) throw new Error(`${res.status} ${url}`);
-      return await res.json();
-    } catch (e) {
-      if (i >= tries) throw e;
-      await sleep(1000 * i);
-    }
-  }
-}
+const get = (url) => getJson(url, { headers: { 'User-Agent': 'Mozilla/5.0 (betting-ny lokal analys)' }, retries: 2, schema: /\/draws\/\d+$/.test(url) ? svsSchemas.draw : undefined, label: 'Svenska Spel' });
 
 // ---------- Vilka omgangar finns (samma datumvaljare som sidan) ----------
 async function listDraws() {

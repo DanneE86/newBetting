@@ -20,6 +20,7 @@ import {
 } from './matchup.mjs';
 import { statMap, form, matchRows } from './fotmob-player.mjs';
 import { STAT_LABELS } from './player-positions.mjs';
+import { fotmobGet } from './api-schemas.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
 export const STORE = path.join(ROOT, 'data', 'startelvor.json');
@@ -503,18 +504,7 @@ export function buildView(entry, { index = playerIndex(), extra = {} } = {}) {
 // ---------- Hämtning (nätverk) ----------
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
-export async function getJson(url) {
-  for (let i = 0; i < 3; i++) {
-    try {
-      const res = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0' }, signal: AbortSignal.timeout(30000) });
-      if (res.ok) return await res.json();
-      if (res.status === 404) return null;
-      if (res.status === 429) await sleep(10000 * (i + 1));
-    } catch { /* försök igen */ }
-    await sleep(800 * (i + 1));
-  }
-  return null;
-}
+export const getJson = (url) => fotmobGet(url, { retries: 2, throttleMs: 10_000 });
 
 /** Hämtar elvan för en match (FotMob-id) och returnerar ett lagringsbart objekt. */
 export async function fetchLineup(fotmobMatchId) {

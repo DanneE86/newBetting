@@ -1,7 +1,7 @@
 {
  "product": "europatipset",
  "month": "2026-10",
- "updatedAt": "2026-10-04T14:59:55.264Z",
+ "updatedAt": "2026-10-05T15:45:24.526Z",
  "items": {
   "europatipset-2613-1": {
    "id": "europatipset-2613-1",
@@ -1141,6 +1141,1150 @@
      },
      "C": {
       "signs": "1X2"
+     }
+    },
+    "lineupStatus": null
+   },
+   "result": null
+  },
+  "europatipset-2614-1": {
+   "id": "europatipset-2614-1",
+   "product": "europatipset",
+   "draw": 2614,
+   "event": 1,
+   "date": "2026-10-06",
+   "kickoff": "2026-10-06T20:45:00+02:00",
+   "league": "UEFA Nations League",
+   "home": "England",
+   "away": "Tjeckien",
+   "firstAt": "2026-10-05T15:45:24.526Z",
+   "first": {
+    "probs": [
+     0.856,
+     0.098,
+     0.046
+    ],
+    "folk": [
+     0.94,
+     0.04,
+     0.02
+    ],
+    "odds": [
+     1.15,
+     9.5,
+     21
+    ],
+    "market": [
+     0.851,
+     0.098,
+     0.051
+    ],
+    "single": "1",
+    "coupons": {
+     "A": {
+      "signs": "1",
+      "type": "Spik"
+     },
+     "B": {
+      "signs": "1",
+      "type": "Spik"
+     },
+     "C": {
+      "signs": "1X"
+     }
+    },
+    "lineupStatus": null
+   },
+   "latestAt": "2026-10-05T15:45:24.526Z",
+   "latest": {
+    "probs": [
+     0.856,
+     0.098,
+     0.046
+    ],
+    "folk": [
+     0.94,
+     0.04,
+     0.02
+    ],
+    "odds": [
+     1.15,
+     9.5,
+     21
+    ],
+    "market": [
+     0.851,
+     0.098,
+     0.051
+    ],
+    "single": "1",
+    "coupons": {
+     "A": {
+      "signs": "1",
+      "type": "Spik"
+     },
+     "B": {
+      "signs": "1",
+      "type": "Spik"
+     },
+     "C": {
+      "signs": "1X"
+     }
+    },
+    "lineupStatus": null
+   },
+   "result": null
+  },
+  "europatipset-2614-2": {
+   "id": "europatipset-2614-2",
+   "product": "europatipset",
+   "draw": 2614,
+   "event": 2,
+   "date": "2026-10-06",
+   "kickoff": "2026-10-06T20:45:00+02:00",
+   "league": "UEFA Nations League",
+   "home": "Kroatien",
+   "away": "Spanien",
+   "firstAt": "2026-10-05T15:45:24.526Z",
+   "first": {
+    "probs": [
+     0.093,
+     0.149,
+     0.758
+    ],
+    "folk": [
+     0.04,
+     0.11,
+     0.85
+    ],
+    "odds": [
+     11,
+     6.25,
+     1.29
+    ],
+    "market": [
+     0.098,
+     0.146,
+     0.756
+    ],
+    "single": "2",
+    "coupons": {
+     "A": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "B": {
+      "signs": "1X",
+      "type": "Halvgardering"
+     },
+     "C": {
+      "signs": "X2"
+     }
+    },
+    "lineupStatus": null
+   },
+   "latestAt": "2026-10-05T15:45:24.526Z",
+   "latest": {
+    "probs": [
+     0.093,
+     0.149,
+     0.758
+    ],
+    "folk": [
+     0.04,
+     0.11,
+     0.85
+    ],
+    "odds": [
+     11,
+     6.25,
+     1.29
+    ],
+    "market": [
+     0.098,
+     0.146,
+     0.756
+    ],
+    "single": "2",
+    "coupons": {
+     "A": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "B": {
+      "signs": "1X",
+      "type": "Halvgardering"
+     },
+     "C": {
+      "signs": "X2"
+     }
+    },
+    "lineupStatus": null
+   },
+   "result": null
+  },
+  "europatipset-2614-3": {
+   "id": "europatipset-2614-3",
+   "product": "europatipset",
+   "draw": 2614,
+   "event": 3,
+   "date": "2026-10-06",
+   "kickoff": "2026-10-06T20:45:00+02:00",
+   "league": "UEFA Nations League",
+   "home": "Schweiz",
+   "away": "Nordmakedonien",
+   "firstAt": "2026-10-05T15:45:24.526Z",
+   "first": {
+    "probs": [
+     0.882,
+     0.09,
+     0.028
+    ],
+    "folk": [
+     0.92,
+     0.06,
+     0.02
+    ],
+    "odds": [
+     1.13,
+     9.5,
+     23
+    ],
+    "market": [
+     0.88,
+     0.09,
+     0.031
+    ],
+    "single": "1",
+    "coupons": {
+     "A": {
+      "signs": "1",
+      "type": "Spik"
+     },
+     "B": {
+      "signs": "1",
+      "type": "Spik"
+     },
+     "C": {
+      "signs": "1"
+     }
+    },
+    "lineupStatus": null
+   },
+   "latestAt": "2026-10-05T15:45:24.526Z",
+   "latest": {
+    "probs": [
+     0.882,
+     0.09,
+     0.028
+    ],
+    "folk": [
+     0.92,
+     0.06,
+     0.02
+    ],
+    "odds": [
+     1.13,
+     9.5,
+     23
+    ],
+    "market": [
+     0.88,
+     0.09,
+     0.031
+    ],
+    "single": "1",
+    "coupons": {
+     "A": {
+      "signs": "1",
+      "type": "Spik"
+     },
+     "B": {
+      "signs": "1",
+      "type": "Spik"
+     },
+     "C": {
+      "signs": "1"
+     }
+    },
+    "lineupStatus": null
+   },
+   "result": null
+  },
+  "europatipset-2614-4": {
+   "id": "europatipset-2614-4",
+   "product": "europatipset",
+   "draw": 2614,
+   "event": 4,
+   "date": "2026-10-06",
+   "kickoff": "2026-10-06T20:45:00+02:00",
+   "league": "UEFA Nations League",
+   "home": "Skottland",
+   "away": "Slovenien",
+   "firstAt": "2026-10-05T15:45:24.526Z",
+   "first": {
+    "probs": [
+     0.552,
+     0.264,
+     0.185
+    ],
+    "folk": [
+     0.64,
+     0.28,
+     0.08
+    ],
+    "odds": [
+     1.79,
+     3.65,
+     4.9
+    ],
+    "market": [
+     0.548,
+     0.265,
+     0.187
+    ],
+    "single": "1",
+    "coupons": {
+     "A": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "B": {
+      "signs": "12",
+      "type": "Halvgardering"
+     },
+     "C": {
+      "signs": "1X2"
+     }
+    },
+    "lineupStatus": null
+   },
+   "latestAt": "2026-10-05T15:45:24.526Z",
+   "latest": {
+    "probs": [
+     0.552,
+     0.264,
+     0.185
+    ],
+    "folk": [
+     0.64,
+     0.28,
+     0.08
+    ],
+    "odds": [
+     1.79,
+     3.65,
+     4.9
+    ],
+    "market": [
+     0.548,
+     0.265,
+     0.187
+    ],
+    "single": "1",
+    "coupons": {
+     "A": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "B": {
+      "signs": "12",
+      "type": "Halvgardering"
+     },
+     "C": {
+      "signs": "1X2"
+     }
+    },
+    "lineupStatus": null
+   },
+   "result": null
+  },
+  "europatipset-2614-5": {
+   "id": "europatipset-2614-5",
+   "product": "europatipset",
+   "draw": 2614,
+   "event": 5,
+   "date": "2026-10-06",
+   "kickoff": "2026-10-06T20:45:00+02:00",
+   "league": "UEFA Nations League",
+   "home": "Estland",
+   "away": "Island",
+   "firstAt": "2026-10-05T15:45:24.526Z",
+   "first": {
+    "probs": [
+     0.171,
+     0.235,
+     0.595
+    ],
+    "folk": [
+     0.12,
+     0.33,
+     0.55
+    ],
+    "odds": [
+     5.6,
+     4,
+     1.58
+    ],
+    "market": [
+     0.165,
+     0.23,
+     0.604
+    ],
+    "single": "2",
+    "coupons": {
+     "A": {
+      "signs": "12",
+      "type": "Halvgardering"
+     },
+     "B": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "C": {
+      "signs": "X2"
+     }
+    },
+    "lineupStatus": null
+   },
+   "latestAt": "2026-10-05T15:45:24.526Z",
+   "latest": {
+    "probs": [
+     0.171,
+     0.235,
+     0.595
+    ],
+    "folk": [
+     0.12,
+     0.33,
+     0.55
+    ],
+    "odds": [
+     5.6,
+     4,
+     1.58
+    ],
+    "market": [
+     0.165,
+     0.23,
+     0.604
+    ],
+    "single": "2",
+    "coupons": {
+     "A": {
+      "signs": "12",
+      "type": "Halvgardering"
+     },
+     "B": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "C": {
+      "signs": "X2"
+     }
+    },
+    "lineupStatus": null
+   },
+   "result": null
+  },
+  "europatipset-2614-6": {
+   "id": "europatipset-2614-6",
+   "product": "europatipset",
+   "draw": 2614,
+   "event": 6,
+   "date": "2026-10-06",
+   "kickoff": "2026-10-06T20:45:00+02:00",
+   "league": "UEFA Nations League",
+   "home": "Luxemburg",
+   "away": "Bulgarien",
+   "firstAt": "2026-10-05T15:45:24.526Z",
+   "first": {
+    "probs": [
+     0.454,
+     0.286,
+     0.259
+    ],
+    "folk": [
+     0.43,
+     0.33,
+     0.24
+    ],
+    "odds": [
+     2.04,
+     3.4,
+     3.65
+    ],
+    "market": [
+     0.447,
+     0.288,
+     0.265
+    ],
+    "single": "1",
+    "coupons": {
+     "A": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "B": {
+      "signs": "12",
+      "type": "Halvgardering"
+     },
+     "C": {
+      "signs": "1X2"
+     }
+    },
+    "lineupStatus": null
+   },
+   "latestAt": "2026-10-05T15:45:24.526Z",
+   "latest": {
+    "probs": [
+     0.454,
+     0.286,
+     0.259
+    ],
+    "folk": [
+     0.43,
+     0.33,
+     0.24
+    ],
+    "odds": [
+     2.04,
+     3.4,
+     3.65
+    ],
+    "market": [
+     0.447,
+     0.288,
+     0.265
+    ],
+    "single": "1",
+    "coupons": {
+     "A": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "B": {
+      "signs": "12",
+      "type": "Halvgardering"
+     },
+     "C": {
+      "signs": "1X2"
+     }
+    },
+    "lineupStatus": null
+   },
+   "result": null
+  },
+  "europatipset-2614-7": {
+   "id": "europatipset-2614-7",
+   "product": "europatipset",
+   "draw": 2614,
+   "event": 7,
+   "date": "2026-10-06",
+   "kickoff": "2026-10-06T20:45:00+02:00",
+   "league": "UEFA Nations League",
+   "home": "Moldavien",
+   "away": "Slovakien",
+   "firstAt": "2026-10-05T15:45:24.526Z",
+   "first": {
+    "probs": [
+     0.102,
+     0.205,
+     0.693
+    ],
+    "folk": [
+     0.06,
+     0.17,
+     0.77
+    ],
+    "odds": [
+     8,
+     4.6,
+     1.41
+    ],
+    "market": [
+     0.105,
+     0.205,
+     0.69
+    ],
+    "single": "2",
+    "coupons": {
+     "A": {
+      "signs": "X2",
+      "type": "Halvgardering"
+     },
+     "B": {
+      "signs": "1X",
+      "type": "Halvgardering"
+     },
+     "C": {
+      "signs": "X2"
+     }
+    },
+    "lineupStatus": null
+   },
+   "latestAt": "2026-10-05T15:45:24.526Z",
+   "latest": {
+    "probs": [
+     0.102,
+     0.205,
+     0.693
+    ],
+    "folk": [
+     0.06,
+     0.17,
+     0.77
+    ],
+    "odds": [
+     8,
+     4.6,
+     1.41
+    ],
+    "market": [
+     0.105,
+     0.205,
+     0.69
+    ],
+    "single": "2",
+    "coupons": {
+     "A": {
+      "signs": "X2",
+      "type": "Halvgardering"
+     },
+     "B": {
+      "signs": "1X",
+      "type": "Halvgardering"
+     },
+     "C": {
+      "signs": "X2"
+     }
+    },
+    "lineupStatus": null
+   },
+   "result": null
+  },
+  "europatipset-2614-8": {
+   "id": "europatipset-2614-8",
+   "product": "europatipset",
+   "draw": 2614,
+   "event": 8,
+   "date": "2026-10-07",
+   "kickoff": "2026-10-07T02:30:00+02:00",
+   "league": "MLS",
+   "home": "Chicago Fire",
+   "away": "Vancouver Whitecaps",
+   "firstAt": "2026-10-05T15:45:24.526Z",
+   "first": {
+    "probs": [
+     0.336,
+     0.248,
+     0.416
+    ],
+    "folk": [
+     0.35,
+     0.25,
+     0.4
+    ],
+    "odds": [
+     2.88,
+     3.9,
+     2.33
+    ],
+    "market": [
+     0.336,
+     0.248,
+     0.416
+    ],
+    "single": "2",
+    "coupons": {
+     "A": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "B": {
+      "signs": "12",
+      "type": "Halvgardering"
+     },
+     "C": {
+      "signs": "1X2"
+     }
+    },
+    "lineupStatus": null
+   },
+   "latestAt": "2026-10-05T15:45:24.526Z",
+   "latest": {
+    "probs": [
+     0.336,
+     0.248,
+     0.416
+    ],
+    "folk": [
+     0.35,
+     0.25,
+     0.4
+    ],
+    "odds": [
+     2.88,
+     3.9,
+     2.33
+    ],
+    "market": [
+     0.336,
+     0.248,
+     0.416
+    ],
+    "single": "2",
+    "coupons": {
+     "A": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "B": {
+      "signs": "12",
+      "type": "Halvgardering"
+     },
+     "C": {
+      "signs": "1X2"
+     }
+    },
+    "lineupStatus": null
+   },
+   "result": null
+  },
+  "europatipset-2614-9": {
+   "id": "europatipset-2614-9",
+   "product": "europatipset",
+   "draw": 2614,
+   "event": 9,
+   "date": "2026-10-08",
+   "kickoff": "2026-10-08T00:30:00+02:00",
+   "league": "Brasileiro Serie A",
+   "home": "Internacional",
+   "away": "Corinthians",
+   "firstAt": "2026-10-05T15:45:24.526Z",
+   "first": {
+    "probs": [
+     0.45,
+     0.29,
+     0.259
+    ],
+    "folk": [
+     0.47,
+     0.35,
+     0.18
+    ],
+    "odds": [
+     2.16,
+     3.35,
+     3.75
+    ],
+    "market": [
+     0.45,
+     0.29,
+     0.259
+    ],
+    "single": "1",
+    "coupons": {
+     "A": {
+      "signs": "12",
+      "type": "Halvgardering"
+     },
+     "B": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "C": {
+      "signs": "12"
+     }
+    },
+    "lineupStatus": null
+   },
+   "latestAt": "2026-10-05T15:45:24.526Z",
+   "latest": {
+    "probs": [
+     0.45,
+     0.29,
+     0.259
+    ],
+    "folk": [
+     0.47,
+     0.35,
+     0.18
+    ],
+    "odds": [
+     2.16,
+     3.35,
+     3.75
+    ],
+    "market": [
+     0.45,
+     0.29,
+     0.259
+    ],
+    "single": "1",
+    "coupons": {
+     "A": {
+      "signs": "12",
+      "type": "Halvgardering"
+     },
+     "B": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "C": {
+      "signs": "12"
+     }
+    },
+    "lineupStatus": null
+   },
+   "result": null
+  },
+  "europatipset-2614-10": {
+   "id": "europatipset-2614-10",
+   "product": "europatipset",
+   "draw": 2614,
+   "event": 10,
+   "date": "2026-10-08",
+   "kickoff": "2026-10-08T00:30:00+02:00",
+   "league": "Brasileiro Serie A",
+   "home": "Bragantino",
+   "away": "Mirassol",
+   "firstAt": "2026-10-05T15:45:24.526Z",
+   "first": {
+    "probs": [
+     0.549,
+     0.249,
+     0.202
+    ],
+    "folk": [
+     0.64,
+     0.24,
+     0.12
+    ],
+    "odds": [
+     1.77,
+     3.9,
+     4.8
+    ],
+    "market": [
+     0.549,
+     0.249,
+     0.202
+    ],
+    "single": "1",
+    "coupons": {
+     "A": {
+      "signs": "12",
+      "type": "Halvgardering"
+     },
+     "B": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "C": {
+      "signs": "1X"
+     }
+    },
+    "lineupStatus": null
+   },
+   "latestAt": "2026-10-05T15:45:24.526Z",
+   "latest": {
+    "probs": [
+     0.549,
+     0.249,
+     0.202
+    ],
+    "folk": [
+     0.64,
+     0.24,
+     0.12
+    ],
+    "odds": [
+     1.77,
+     3.9,
+     4.8
+    ],
+    "market": [
+     0.549,
+     0.249,
+     0.202
+    ],
+    "single": "1",
+    "coupons": {
+     "A": {
+      "signs": "12",
+      "type": "Halvgardering"
+     },
+     "B": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "C": {
+      "signs": "1X"
+     }
+    },
+    "lineupStatus": null
+   },
+   "result": null
+  },
+  "europatipset-2614-11": {
+   "id": "europatipset-2614-11",
+   "product": "europatipset",
+   "draw": 2614,
+   "event": 11,
+   "date": "2026-10-08",
+   "kickoff": "2026-10-08T00:30:00+02:00",
+   "league": "Brasileiro Serie A",
+   "home": "Remo",
+   "away": "Gremio",
+   "firstAt": "2026-10-05T15:45:24.526Z",
+   "first": {
+    "probs": [
+     0.432,
+     0.27,
+     0.299
+    ],
+    "folk": [
+     0.4,
+     0.35,
+     0.25
+    ],
+    "odds": [
+     2.25,
+     3.6,
+     3.25
+    ],
+    "market": [
+     0.432,
+     0.27,
+     0.299
+    ],
+    "single": "1",
+    "coupons": {
+     "A": {
+      "signs": "12",
+      "type": "Halvgardering"
+     },
+     "B": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "C": {
+      "signs": "1"
+     }
+    },
+    "lineupStatus": null
+   },
+   "latestAt": "2026-10-05T15:45:24.526Z",
+   "latest": {
+    "probs": [
+     0.432,
+     0.27,
+     0.299
+    ],
+    "folk": [
+     0.4,
+     0.35,
+     0.25
+    ],
+    "odds": [
+     2.25,
+     3.6,
+     3.25
+    ],
+    "market": [
+     0.432,
+     0.27,
+     0.299
+    ],
+    "single": "1",
+    "coupons": {
+     "A": {
+      "signs": "12",
+      "type": "Halvgardering"
+     },
+     "B": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "C": {
+      "signs": "1"
+     }
+    },
+    "lineupStatus": null
+   },
+   "result": null
+  },
+  "europatipset-2614-12": {
+   "id": "europatipset-2614-12",
+   "product": "europatipset",
+   "draw": 2614,
+   "event": 12,
+   "date": "2026-10-08",
+   "kickoff": "2026-10-08T01:30:00+02:00",
+   "league": "Brasileiro Serie A",
+   "home": "Botafogo RJ",
+   "away": "Vasco da Gama",
+   "firstAt": "2026-10-05T15:45:24.526Z",
+   "first": {
+    "probs": [
+     0.348,
+     0.277,
+     0.375
+    ],
+    "folk": [
+     0.4,
+     0.28,
+     0.32
+    ],
+    "odds": [
+     2.75,
+     3.45,
+     2.55
+    ],
+    "market": [
+     0.348,
+     0.277,
+     0.375
+    ],
+    "single": "2",
+    "coupons": {
+     "A": {
+      "signs": "12",
+      "type": "Halvgardering"
+     },
+     "B": {
+      "signs": "2",
+      "type": "Spik"
+     },
+     "C": {
+      "signs": "12"
+     }
+    },
+    "lineupStatus": null
+   },
+   "latestAt": "2026-10-05T15:45:24.526Z",
+   "latest": {
+    "probs": [
+     0.348,
+     0.277,
+     0.375
+    ],
+    "folk": [
+     0.4,
+     0.28,
+     0.32
+    ],
+    "odds": [
+     2.75,
+     3.45,
+     2.55
+    ],
+    "market": [
+     0.348,
+     0.277,
+     0.375
+    ],
+    "single": "2",
+    "coupons": {
+     "A": {
+      "signs": "12",
+      "type": "Halvgardering"
+     },
+     "B": {
+      "signs": "2",
+      "type": "Spik"
+     },
+     "C": {
+      "signs": "12"
+     }
+    },
+    "lineupStatus": null
+   },
+   "result": null
+  },
+  "europatipset-2614-13": {
+   "id": "europatipset-2614-13",
+   "product": "europatipset",
+   "draw": 2614,
+   "event": 13,
+   "date": "2026-10-08",
+   "kickoff": "2026-10-08T02:30:00+02:00",
+   "league": "Brasileiro Serie A",
+   "home": "Cruzeiro",
+   "away": "Sao Paulo",
+   "firstAt": "2026-10-05T15:45:24.526Z",
+   "first": {
+    "probs": [
+     0.493,
+     0.27,
+     0.237
+    ],
+    "folk": [
+     0.6,
+     0.28,
+     0.12
+    ],
+    "odds": [
+     1.97,
+     3.6,
+     4.1
+    ],
+    "market": [
+     0.493,
+     0.27,
+     0.237
+    ],
+    "single": "1",
+    "coupons": {
+     "A": {
+      "signs": "12",
+      "type": "Halvgardering"
+     },
+     "B": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "C": {
+      "signs": "12"
+     }
+    },
+    "lineupStatus": null
+   },
+   "latestAt": "2026-10-05T15:45:24.526Z",
+   "latest": {
+    "probs": [
+     0.493,
+     0.27,
+     0.237
+    ],
+    "folk": [
+     0.6,
+     0.28,
+     0.12
+    ],
+    "odds": [
+     1.97,
+     3.6,
+     4.1
+    ],
+    "market": [
+     0.493,
+     0.27,
+     0.237
+    ],
+    "single": "1",
+    "coupons": {
+     "A": {
+      "signs": "12",
+      "type": "Halvgardering"
+     },
+     "B": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "C": {
+      "signs": "12"
      }
     },
     "lineupStatus": null

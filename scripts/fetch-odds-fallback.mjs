@@ -7,6 +7,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { getText } from './lib/http.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = process.env.ODDS_OUT ?? path.join(root, 'data', 'open', 'upcoming_odds.json');
@@ -34,9 +35,7 @@ function newLeagueMap() {
 const NEW_LEAGUES = newLeagueMap();
 
 async function csv(url) {
-  const res = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0 (betting-ny)' } });
-  if (!res.ok) throw new Error(`${res.status} ${url}`);
-  const text = (await res.text()).replace(/^﻿/, '').trim();
+  const text = (await getText(url, { headers: { 'User-Agent': 'Mozilla/5.0 (betting-ny)' }, retries: 2 })).replace(/^﻿/, '').trim();
   const lines = text.split(/\r?\n/);
   const sep = lines[0].includes('\t') ? '\t' : ',';
   const head = lines[0].split(sep).map((h) => h.trim());

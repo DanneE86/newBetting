@@ -6,6 +6,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { getJson as httpGetJson } from './lib/http.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const P = {
@@ -28,14 +29,7 @@ const HEADERS = {
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const readJson = (p, fb) => (fs.existsSync(p) ? JSON.parse(fs.readFileSync(p, 'utf8')) : fb);
 
-async function getJson(url) {
-  for (let attempt = 1; attempt <= 4; attempt++) {
-    const res = await fetch(url, { headers: HEADERS });
-    if (res.ok) return res.json();
-    if (attempt === 4 || (res.status !== 429 && res.status < 500)) throw new Error(`${res.status} ${url}`);
-    await sleep(attempt * 10_000);
-  }
-}
+const getJson = (url) => httpGetJson(url, { headers: HEADERS, retries: 3, retryDelayMs: 10_000, throttleMs: 10_000 });
 
 // ---------- Ligor ----------
 const leagueDoc = readJson(P.leagues, { seasons: {} });

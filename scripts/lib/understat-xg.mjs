@@ -6,6 +6,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { nameScore } from './match-context.mjs';
+import { getJson } from './http.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
 const UNDERSTAT = { PL: 'EPL', LL: 'La_liga', SA: 'Serie_A', BL: 'Bundesliga', L1: 'Ligue_1' };
@@ -15,11 +16,10 @@ export async function loadUnderstatXg(code, season) {
   try { return JSON.parse(fs.readFileSync(file, 'utf8')); } catch { /* hamta */ }
   const year = 2000 + Number(String(season).slice(0, 2));
   try {
-    const res = await fetch(`https://understat.com/getLeagueData/${UNDERSTAT[code]}/${year}`, {
-      headers: { 'X-Requested-With': 'XMLHttpRequest', 'User-Agent': 'Mozilla/5.0' },
+    const data = await getJson(`https://understat.com/getLeagueData/${UNDERSTAT[code]}/${year}`, {
+      headers: { 'X-Requested-With': 'XMLHttpRequest', 'User-Agent': 'Mozilla/5.0' }, orNull: true, retries: 2,
     });
-    if (!res.ok) return null;
-    const data = await res.json();
+    if (!data) return null;
     const rows = (data.dates || []).filter((d) => d.isResult).map((d) => ({
       date: String(d.datetime).slice(0, 10), home: d.h?.title, away: d.a?.title, hxg: Number(d.xG?.h), axg: Number(d.xG?.a),
     })).filter((r) => r.home && Number.isFinite(r.hxg));

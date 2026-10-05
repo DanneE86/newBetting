@@ -4,6 +4,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { getText } from './lib/http.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = path.join(root, 'data', 'raw', 'hist');
@@ -24,9 +25,7 @@ for (const [league, code] of Object.entries(CODES)) {
     if (fs.existsSync(file) && fs.readFileSync(file, 'utf8').split('\n', 1)[0] === KEEP.join(',')) continue;
     const url = `https://www.football-data.co.uk/mmz4281/${season}/${code}.csv`;
     try {
-      const res = await fetch(url, { signal: AbortSignal.timeout(30000) });
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const text = (await res.text()).replace(/^﻿/, '');
+      const text = (await getText(url, { retries: 2 })).replace(/^﻿/, '');
       const lines = text.split(/\r?\n/).filter((l) => l.trim());
       const head = lines[0].split(',');
       const idx = KEEP.map((k) => head.indexOf(k));

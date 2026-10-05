@@ -9,6 +9,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { getJson as httpGetJson } from './lib/http.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = path.join(root, 'data', 'open', 'referee_england.json');
@@ -20,19 +21,8 @@ const onlyCurrent = process.argv.includes('--current');
 const SEASONS = onlyCurrent ? 1 : 5;
 const CONCURRENCY = 4;
 const log = (s) => process.stdout.write(`${s}\n`);
-const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-async function getJson(url) {
-  for (let i = 0; i < 6; i++) {
-    try {
-      const res = await fetch(url, { headers: H });
-      if (res.ok) { const t = await res.text(); if (t) return JSON.parse(t); }
-      else if (res.status === 404) return null;
-    } catch { /* forsok igen (tomma svar vid strypning) */ }
-    await sleep(1500 * (i + 1));
-  }
-  return null;
-}
+const getJson = (url) => httpGetJson(url, { headers: H, orNull: true, retries: 5, retryDelayMs: 1500, throttleStatus: [429, 403] });
 
 async function pool(items, fn) {
   for (let i = 0; i < items.length; i += CONCURRENCY) await Promise.all(items.slice(i, i + CONCURRENCY).map(fn));

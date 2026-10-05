@@ -469,7 +469,7 @@ const ENG_TEAM = {
 };
 const engStem = (s) => { const p = plain(s).trim(); return (ENG_TEAM[p] || p).replace(/\b(fc|afc|the)\b/g, '').replace(/[^a-z]/g, ''); };
 const sameEngTeam = (a, b) => { const x = engStem(a), y = engStem(b); return x.length > 2 && y.length > 2 && (x.startsWith(y) || y.startsWith(x)); };
-const findEng = (list, m) => list?.find((x) => dayDiff(x.d, m.d) <= 1 && sameEngTeam(x.h, m.h) && sameEngTeam(x.a, m.a));
+const findEng = (list, m) => nearDays(list, m.d)?.find((x) => dayDiff(x.d, m.d) <= 1 && sameEngTeam(x.h, m.h) && sameEngTeam(x.a, m.a));
 export function applyEnglishOfficials(rows, official = [], fotmobRows = []) {
   if (!official?.length) return rows;
   const group = (list) => { const g = new Map(); for (const x of list || []) if (x?.r) { if (!g.has(x.lg)) g.set(x.lg, []); g.get(x.lg).push(x); } return g; };
@@ -491,7 +491,32 @@ export function applyEnglishOfficials(rows, official = [], fotmobRows = []) {
 // official = [{ d, lg, h, a, r }]; kopplas pa liga, datum (+-1 dag) och lagnamnen. Kort/straffar behalls fran FotMob.
 const teamStem = (s) => plain(s).replace(/\b(if|ff|aif|bk|fc|ik|ifk|is|sk|fk|ac|cf|cd|ud|sd|ec|sc|kf|nk|hnk|gnk|sv|afc|saf)\b/g, '').replace(/[^a-z]/g, '');
 const sameTeam = (a, b) => { const x = teamStem(a), y = teamStem(b); return !!x && !!y && (x.startsWith(y.slice(0, 5)) || y.startsWith(x.slice(0, 5))); };
-const dayDiff = (a, b) => Math.abs(Date.parse(a) - Date.parse(b)) / 864e5;
+// Datumen tolkas en gang var: dayDiff kors for varje radpar (findEng/findOfficial) och Date.parse tog ~5 s vid GUI-start
+const parsedDays = new Map();
+const dayMs = (s) => { let t = parsedDays.get(s); if (t === undefined) { t = Date.parse(s); parsedDays.set(s, t); } return t; };
+const dayDiff = (a, b) => Math.abs(dayMs(a) - dayMs(b)) / 864e5;
+// Raderna i listan inom +-2 dygn fran d, i listans ordning (index per dygn, byggs en gang per lista). Rader utan
+// tolkbart datum foljer alltid med och ogiltigt d ger hela listan, sa dayDiff-villkoren ger samma svar som forut.
+const dayIndexes = new WeakMap();
+function nearDays(list, d) {
+  const t = dayMs(d);
+  if (!list || !Number.isFinite(t)) return list;
+  let ix = dayIndexes.get(list);
+  if (!ix) {
+    ix = { byDay: new Map(), always: [] };
+    list.forEach((x, i) => {
+      const u = dayMs(x.d);
+      if (!Number.isFinite(u)) { ix.always.push(i); return; }
+      const k = Math.floor(u / 864e5);
+      if (!ix.byDay.has(k)) ix.byDay.set(k, []);
+      ix.byDay.get(k).push(i);
+    });
+    dayIndexes.set(list, ix);
+  }
+  const k = Math.floor(t / 864e5), idx = [...ix.always];
+  for (let j = k - 2; j <= k + 2; j++) for (const i of ix.byDay.get(j) || []) idx.push(i);
+  return idx.sort((a, b) => a - b).map((i) => list[i]);
+}
 
 // Officiell match for en FotMob-rad: samma liga, datum +-1 dag och bada lagen, annars ett av lagen (ett lag spelar
 // bara en ligamatch per dygn; lagnamnen skrivs olika mellan kallorna, t.ex. "Red Bull Bragantino"/"Bragantino")
@@ -500,7 +525,7 @@ const dayDiff = (a, b) => Math.abs(Date.parse(a) - Date.parse(b)) / 864e5;
 const strictTeam = (a, b) => { const x = teamStem(a), y = teamStem(b); return x.length > 2 && y.length > 2 && (x.startsWith(y) || y.startsWith(x)); };
 function findOfficial(list, m) {
   const one = [];
-  for (const x of list || []) {
+  for (const x of nearDays(list, m.d) || []) {
     if (dayDiff(x.d, m.d) > 1) continue;
     if (sameTeam(x.h, m.h) && sameTeam(x.a, m.a)) return x;
     if (strictTeam(x.h, m.h) || strictTeam(x.a, m.a)) one.push(x);

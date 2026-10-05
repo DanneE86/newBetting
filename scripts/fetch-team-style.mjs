@@ -10,24 +10,12 @@ import { root } from './lib/learnings-data.mjs';
 import { mapTable } from './lib/fotmob-names.mjs';
 import { FOTMOB_LEAGUES } from './lib/fotmob-leagues.mjs';
 import { ALL_FIELDS, STATS, SUB, statFields } from './lib/team-style.mjs';
+import { fotmobGet as getJson } from './lib/api-schemas.mjs';
 
 const FM = 'https://www.fotmob.com/api/data';
 const DIR_OUT = path.join(root, 'data', 'stil');
 const readJson = (p, d = null) => { try { return JSON.parse(fs.readFileSync(p, 'utf8')); } catch { return d; } };
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
-
-async function getJson(url) {
-  for (let i = 0; i < 4; i++) {
-    try {
-      const res = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0' }, signal: AbortSignal.timeout(30000) });
-      if (res.ok) return await res.json();
-      if (res.status === 404) return null;
-      if (res.status === 429) await sleep(15000 * (i + 1)); // strypt
-    } catch { /* forsok igen */ }
-    await sleep(1000 * (i + 1));
-  }
-  return null;
-}
 
 // Vara sasonger och lagnamn per sasong ur data/matcher/<liga>.csv
 function ourSeasons(code) {

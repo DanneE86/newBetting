@@ -1416,6 +1416,29 @@ test.describe('referee-streaks: FotMob, straffar och alla ligor', () => {
     expect(refereeLeagueReport(all, 'SE2', { today: '2026-10-02' }).referees[0]).toMatchObject({ referee: 'Farouk Nehdi', matches: 1 });
   });
 
+  test('Officiella källor: datumfönstret +-1 dag behålls och kopplingen är snabb (GUI-start)', async () => {
+    const { applyOfficialReferees } = await lib('referee-streaks.mjs');
+    const row = (d: string, h: string, a: string) => ({ d, lg: 'LL2', h, a, hg: 1, ag: 0, r: null as string | null });
+    const off = (d: string, h: string, a: string, r: string) => ({ d, lg: 'LL2', h, a, r });
+    // En dag ifrån räcker, två dagar gör det inte
+    expect(applyOfficialReferees([row('2026-08-14', 'Eibar', 'Huesca')], [off('2026-08-15', 'SD Eibar', 'SD Huesca', 'Ana Ett')])[0].r).toBe('Ana Ett');
+    expect(applyOfficialReferees([row('2026-08-14', 'Eibar', 'Huesca')], [off('2026-08-16', 'SD Eibar', 'SD Huesca', 'Ana Ett')])[0].r).toBeNull();
+    // Månadsskifte: 31 aug mot 1 sep är en dag
+    expect(applyOfficialReferees([row('2026-08-31', 'Eibar', 'Huesca')], [off('2026-09-01', 'SD Eibar', 'SD Huesca', 'Ana Ett')])[0].r).toBe('Ana Ett');
+    // Hela säsonger (som verkliga datat, ~54 000 rader) kopplas utan att jämföra alla mot alla: tog ~5 s vid GUI-start
+    const teams = Array.from({ length: 40 }, (_, i) => `Lag${String.fromCharCode(97 + (i % 26))}${String.fromCharCode(97 + Math.floor(i / 26))}x`);
+    const day = (i: number) => new Date(Date.UTC(2020, 0, 1) + i * 864e5).toISOString().slice(0, 10);
+    const rows: any[] = [], offs: any[] = [];
+    for (let i = 0; i < 6000; i++) {
+      const d = day(Math.floor(i / 5)), h = teams[(i * 2) % 40], a = teams[(i * 2 + 1) % 40];
+      rows.push(row(d, h, a)); offs.push(off(d, h, a, `Domare Nummer${i % 30}`));
+    }
+    const t = performance.now();
+    const out = applyOfficialReferees(rows, offs);
+    expect(performance.now() - t).toBeLessThan(2000);
+    expect(out.filter((m: any) => m.r?.startsWith('Domare')).length).toBe(6000);
+  });
+
   test('Allsvenskan: domare från allsvenskan.se fyller luckor och rättar FotMob, kort behålls', async () => {
     const { loadRefereeMatches, applyOfficialReferees, refereeLeagueReport } = await lib('referee-streaks.mjs');
     const fm = { leagues: { AS: { matches: {
@@ -2972,5 +2995,157 @@ test.describe('transfer-study: ligabyten och prognos', () => {
     expect(m.predict([0.1, 3])).toBeLessThan(0.2);
     expect(auc(x.map((r) => m.predict(r)), y)).toBeGreaterThan(0.95);
     expect(auc([0.1, 0.9], [0, 1])).toBe(1);
+  });
+});
+
+// ---------- http.mjs och api-schemas.mjs (lokal testserver, inget nät) ----------
+
+test.describe('http: gemensam hämtning med omförsök, strypning och formatkontroll', () => {
+  // Servern svarar enligt en lista per sökväg: [status, body, headers?, fördröjning?]. Sista svaret upprepas.
+  const http = require('http');
+  let server: any, base = '';
+  const plans: Record<string, any[][]> = {};
+  const hits: Record<string, number> = {};
+  test.beforeAll(async () => {
+    server = http.createServer((req: any, res: any) => {
+      const p = decodeURIComponent(req.url.split('?')[0]);
+      hits[p] = (hits[p] || 0) + 1;
+      const plan = plans[p] || [[404, '']];
+      const [status, body, headers, delayMs] = plan[Math.min(hits[p] - 1, plan.length - 1)];
+      setTimeout(() => { res.writeHead(status, { 'content-type': 'application/json', ...(headers || {}) }); res.end(body); }, delayMs || 0);
+    });
+    await new Promise<void>((r) => server.listen(0, '127.0.0.1', r));
+    base = `http://127.0.0.1:${server.address().port}`;
+  });
+  test.afterAll(() => server.close());
+  const fast = { retryDelayMs: 5, throttleMs: 5, log: () => {} };
+
+  test('5xx och tomt svar försöks igen, sedan lyckas det', async () => {
+    const { getJson, _resetHttpState } = await lib('http.mjs');
+    _resetHttpState();
+    plans['/a'] = [[500, 'fel'], [200, ''], [200, '{"ok":1}']];
+    expect(await getJson(`${base}/a`, fast)).toEqual({ ok: 1 });
+    expect(hits['/a']).toBe(3);
+  });
+
+  test('404: null med orNull, annars HttpError med status – och inget nytt försök', async () => {
+    const { getJson, HttpError } = await lib('http.mjs');
+    plans['/saknas'] = [[404, '']];
+    expect(await getJson(`${base}/saknas`, { ...fast, orNull: true })).toBeNull();
+    const err = await getJson(`${base}/saknas`, fast).catch((e: any) => e);
+    expect(err).toBeInstanceOf(HttpError);
+    expect(err.status).toBe(404);
+    expect(hits['/saknas']).toBe(2);
+  });
+
+  test('övriga 4xx försöks inte igen; ger upp efter retries och kastar senaste felet', async () => {
+    const { getJson } = await lib('http.mjs');
+    plans['/400'] = [[400, '']];
+    expect((await getJson(`${base}/400`, fast).catch((e: any) => e)).status).toBe(400);
+    expect(hits['/400']).toBe(1);
+    plans['/alltid500'] = [[503, '']];
+    expect((await getJson(`${base}/alltid500`, { ...fast, retries: 2 }).catch((e: any) => e)).status).toBe(503);
+    expect(hits['/alltid500']).toBe(3);
+  });
+
+  test('429 med Retry-After pausar värden; 403 räknas som strypning bara när det anges', async () => {
+    const { getJson, _resetHttpState } = await lib('http.mjs');
+    _resetHttpState();
+    plans['/strypt'] = [[429, '', { 'retry-after': '1' }], [200, '{"ok":2}']];
+    const t = Date.now();
+    expect(await getJson(`${base}/strypt`, fast)).toEqual({ ok: 2 });
+    expect(Date.now() - t).toBeGreaterThanOrEqual(900); // Retry-After 1 s respekteras
+    _resetHttpState();
+    plans['/f403'] = [[403, ''], [200, '{"ok":3}']];
+    expect((await getJson(`${base}/f403`, fast).catch((e: any) => e)).status).toBe(403);
+    expect(await getJson(`${base}/f403`, { ...fast, throttleStatus: [429, 403] })).toEqual({ ok: 3 });
+  });
+
+  test('tidsgräns: ett anrop som hänger avbryts och försöks igen', async () => {
+    const { getJson, _resetHttpState } = await lib('http.mjs');
+    _resetHttpState();
+    plans['/seg'] = [[200, '{"x":1}', {}, 1000], [200, '{"x":2}']];
+    expect(await getJson(`${base}/seg`, { ...fast, timeoutMs: 200 })).toEqual({ x: 2 });
+  });
+
+  test('formatfel: null med orNull, annars FormatError – loggas en gång per källa och räknas', async () => {
+    const { getJson, FormatError, formatErrors, _resetHttpState } = await lib('http.mjs');
+    const { z } = require('zod');
+    _resetHttpState();
+    plans['/form'] = [[200, '{"draws":"inte en lista"}']];
+    const schema = z.object({ draws: z.array(z.unknown()) });
+    const logged: string[] = [];
+    const o = { ...fast, schema, label: 'Test', log: (s: string) => logged.push(s) };
+    expect(await getJson(`${base}/form`, { ...o, orNull: true })).toBeNull();
+    const err = await getJson(`${base}/form`, o).catch((e: any) => e);
+    expect(err).toBeInstanceOf(FormatError);
+    expect(err.message).toContain('draws');
+    expect(logged.length).toBe(1);
+    expect(formatErrors.get('Test')).toBe(2);
+    expect(hits['/form']).toBe(2); // formatfel försöks inte igen
+    // Rätt format: originalet returneras med alla fält (schemat skalar inte bort något)
+    plans['/ratt'] = [[200, '{"draws":[1],"extra":"kvar"}']];
+    expect(await getJson(`${base}/ratt`, o)).toEqual({ draws: [1], extra: 'kvar' });
+  });
+
+  test('getText och pool: text utan tolkning, pool håller ordningen och högst n samtidiga', async () => {
+    const { getText, pool, sleep } = await lib('http.mjs');
+    plans['/csv'] = [[200, 'a,b\n1,2\n']];
+    expect(await getText(`${base}/csv`, fast)).toBe('a,b\n1,2\n');
+    let now = 0, max = 0;
+    const out = await pool([5, 1, 4, 2, 3], 2, async (x: number) => { now++; max = Math.max(max, now); await sleep(x * 3); now--; return x * 10; });
+    expect(out).toEqual([50, 10, 40, 20, 30]);
+    expect(max).toBe(2);
+  });
+
+  test('fotmobGet: andra värdar hämtas utan kontroll; schema finns för alla FotMob-anrop som görs', async () => {
+    const { fotmobGet, fotmobSchemas } = await lib('api-schemas.mjs');
+    plans['/ej-fotmob'] = [[200, '{"vad":"som helst"}']];
+    expect(await fotmobGet(`${base}/ej-fotmob`, fast)).toEqual({ vad: 'som helst' });
+    // Alla FotMob-sökvägar som skripten anropar ska ha ett schema (nya anrop utan schema fångas här)
+    const used = new Set<string>();
+    const walk = (d: string) => { for (const f of fs.readdirSync(d, { withFileTypes: true })) {
+      const p = path.join(d, f.name);
+      if (f.isDirectory()) walk(p);
+      else if (f.name.endsWith('.mjs')) for (const m of fs.readFileSync(p, 'utf8').matchAll(/(?:\$\{FM\}|fotmob\.com\/api\/data)\/([a-zA-Z/]+)\?/g)) used.add(m[1] === 'search/suggest' ? 'suggest' : m[1]);
+    } };
+    walk(path.join(ROOT, 'scripts'));
+    expect(used.size).toBeGreaterThan(4);
+    for (const k of used) expect(Object.keys(fotmobSchemas)).toContain(k);
+  });
+});
+
+test.describe('api-schemas: FotMob, Svenska Spel och ATG', () => {
+  const team = (id: any, name: string) => ({ id, name });
+  test('FotMob: verkliga former godkänns (id som text eller tal, trupp null), saknade nyckelfält underkänns', async () => {
+    const { fotmobSchemas: F } = await lib('api-schemas.mjs');
+    const lg = { details: { id: 47, name: 'Premier League', selectedSeason: '2026/2027' }, table: [{ data: {} }],
+      fixtures: { allMatches: [{ id: '5795363', home: team('9825', 'Arsenal'), away: team('8669', 'Coventry City'), status: { utcTime: '2026-08-21T19:00:00Z' } }] } };
+    expect(F.leagues.safeParse(lg).success).toBe(true);
+    expect(F.leagues.safeParse({ ...lg, details: { id: 47 } }).success).toBe(false);
+    expect(F.leagues.safeParse({ ...lg, fixtures: { allMatches: [{ id: 1, home: { id: 1 }, away: team(2, 'B') }] } }).success).toBe(false);
+    const md = { general: { matchId: '5795363', leagueName: 'Premier League' }, header: { teams: [team(9825, 'Arsenal'), team(8669, 'Coventry')] }, content: { lineup: {} } };
+    expect(F.matchDetails.safeParse(md).success).toBe(true);
+    expect(F.matchDetails.safeParse({ general: md.general }).success).toBe(false); // content saknas
+    expect(F.teams.safeParse({ details: { id: 169, name: 'Lag' }, squad: { squad: null } }).success).toBe(true);
+    expect(F.playerData.safeParse({ id: 737066, name: 'Erling Haaland', careerHistory: null }).success).toBe(true);
+    expect(F.playerData.safeParse({ id: '737066', name: 'Erling Haaland' }).success).toBe(false);
+    expect(F.matches.safeParse({ leagues: [{ id: 1, matches: [{ id: 5181831, home: team(6383, 'Greece'), away: team(8570, 'Germany') }] }] }).success).toBe(true);
+    expect(F.matches.safeParse({ date: '20261004' }).success).toBe(false);
+    expect(F.suggest.safeParse([{ suggestions: [{ type: 'team', id: '9825', name: 'Arsenal' }, { type: 'match', id: '1' }] }]).success).toBe(true);
+  });
+
+  test('Svenska Spel och ATG: drawEvents (inte events), öppen kupong utan resultat, kalender och spel', async () => {
+    const { svsSchemas: V, atgSchemas: A } = await lib('api-schemas.mjs');
+    const draw = { drawNumber: 4974, drawState: 'Open', regCloseTime: '2026-10-11T13:59:00+02:00', drawEvents: [{ eventNumber: 1, cancelled: false }] };
+    expect(V.draws.safeParse({ draws: [draw], error: null }).success).toBe(true);
+    expect(V.draws.safeParse({ error: { code: 500 } }).success).toBe(false);
+    expect(V.draw.safeParse({ draw }).success).toBe(true);
+    expect(V.draw.safeParse({ draw: { ...draw, drawNumber: '4974' } }).success).toBe(false);
+    expect(V.result.safeParse({ result: { drawNumber: 4973, events: [], distribution: [] } }).success).toBe(true);
+    expect(A.calendar.safeParse({ date: '2026-10-05', tracks: [{ id: 40, name: 'Solvalla' }], games: { V86: [{ id: 'V86_2026-10-05_40_1' }] } }).success).toBe(true);
+    expect(A.calendar.safeParse({ date: '2026-10-05', games: [] }).success).toBe(false);
+    expect(A.game.safeParse({ id: 'V86_2026-10-05_40_1', races: [{ id: '2026-10-05_40_1', starts: [{ number: 1 }] }] }).success).toBe(true);
+    expect(A.game.safeParse({ id: 'V86_2026-10-05_40_1', races: [{ id: '2026-10-05_40_1', starts: [{ number: '1' }] }] }).success).toBe(false);
   });
 });

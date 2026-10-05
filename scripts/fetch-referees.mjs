@@ -9,6 +9,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { REF_DIVISIONS, REF_LEAGUES, parseRefereeCsv } from './lib/referee-streaks.mjs';
 import { fetchReferee } from './lib/match-context.mjs';
+import { getText as httpGetText } from './lib/http.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const HIST = path.join(root, 'data', 'open', 'referee_history.json');
@@ -29,17 +30,7 @@ const now = new Date();
 const curStart = now.getUTCMonth() >= 6 ? now.getUTCFullYear() : now.getUTCFullYear() - 1;
 const code = (y) => `${String(y % 100).padStart(2, '0')}${String((y + 1) % 100).padStart(2, '0')}`;
 
-async function getText(url) {
-  for (let i = 0; i < 3; i++) {
-    try {
-      const res = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)' }, redirect: 'follow' });
-      if (res.ok) return await res.text();
-      if (res.status === 404) return null;
-    } catch { /* forsok igen */ }
-    await new Promise((r) => setTimeout(r, 1000 * (i + 1)));
-  }
-  return null;
-}
+const getText = (url) => httpGetText(url, { orNull: true, retries: 2 });
 
 async function updateHistory() {
   const doc = readJson(HIST, null) || {};

@@ -8,6 +8,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { root } from './lib/learnings-data.mjs';
 import { careerSeasons } from './lib/transfer-study.mjs';
+import { fotmobGet } from './lib/api-schemas.mjs';
 
 const FM = 'https://www.fotmob.com/api/data';
 const MAX_AGE_D = 30;
@@ -25,18 +26,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const readJson = (p, d = null) => { try { return JSON.parse(fs.readFileSync(p, 'utf8').replace(/^﻿/, '')); } catch { return d; } };
 const ageDays = (iso) => (iso ? (Date.now() - Date.parse(iso)) / 864e5 : Infinity);
 
-async function getJson(url) {
-  for (let i = 0; i < 4; i++) {
-    try {
-      const res = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0' }, signal: AbortSignal.timeout(30000) });
-      if (res.ok) return await res.json();
-      if (res.status === 404) return null;
-      if (res.status === 429) { throttled++; await sleep(15000 * (i + 1)); }
-    } catch { /* försök igen */ }
-    await sleep(1000 * (i + 1));
-  }
-  return null;
-}
+const getJson = (url) => fotmobGet(url, { onResponse: (r) => { if (r.status === 429) throttled++; } });
 
 // Spelare som bytt klubb sedan FROM (karriärens startdatum), en gång per id
 const want = new Map();

@@ -12,6 +12,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { fotmobGet } from "./lib/api-schemas.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
@@ -66,11 +67,7 @@ function dateShift(ymd, days) {
   return d.toISOString().slice(0, 10);
 }
 
-async function getJson(url, headers = UA) {
-  const r = await fetch(url, { headers });
-  if (!r.ok) throw new Error(`${r.status} ${url}`);
-  return r.json();
-}
+const getJson = (url, headers = UA) => fotmobGet(url, { headers, orNull: false, retries: 2 });
 
 function startersFromFotmob(side) {
   return (side?.starters || []).map((p) => ({

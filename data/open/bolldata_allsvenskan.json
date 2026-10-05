@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-04T09:17:58.435Z",
+  "fetchedAt": "2026-10-05T15:40:54.061Z",
   "source": "https://bolldata.se",
   "note": "Crawl-delay 100 s respekterad",
   "pages": {
@@ -5008,8 +5008,8 @@
             "team": "Brommapojkarna",
             "values": {
               "SM": 22,
-              "FP": 3449,
-              "LFP": 2555,
+              "FP": 3451,
+              "LFP": 2557,
               "LFP%": 74.1
             }
           },
@@ -5030,9 +5030,9 @@
             "team": "Kalmar",
             "values": {
               "SM": 22,
-              "FP": 3240,
-              "LFP": 2389,
-              "LFP%": 73.7
+              "FP": 3239,
+              "LFP": 2390,
+              "LFP%": 73.8
             }
           },
           {
@@ -5041,8 +5041,8 @@
             "team": "AIK",
             "values": {
               "SM": 22,
-              "FP": 3258,
-              "LFP": 2389,
+              "FP": 3259,
+              "LFP": 2390,
               "LFP%": 73.3
             }
           },
@@ -5108,7 +5108,7 @@
             "values": {
               "SM": 22,
               "FP": 3226,
-              "LFP": 2255,
+              "LFP": 2256,
               "LFP%": 69.9
             }
           },
@@ -5118,9 +5118,9 @@
             "team": "Degerfors",
             "values": {
               "SM": 22,
-              "FP": 3166,
+              "FP": 3167,
               "LFP": 2202,
-              "LFP%": 69.6
+              "LFP%": 69.5
             }
           },
           {
@@ -5129,7 +5129,7 @@
             "team": "Örgryte",
             "values": {
               "SM": 22,
-              "FP": 3094,
+              "FP": 3092,
               "LFP": 2110,
               "LFP%": 68.2
             }
@@ -6195,9 +6195,9 @@
             "values": {
               "SM": 22,
               "AMB": 54,
-              "PL": 352,
+              "PL": 353,
               "AMB/90": 2.45,
-              "PL/90": 16
+              "PL/90": 16.05
             }
           },
           {
@@ -6302,10 +6302,10 @@
             "team": "Örgryte",
             "values": {
               "SM": 22,
-              "AMB": 36,
-              "PL": 292,
-              "AMB/90": 1.64,
-              "PL/90": 13.27
+              "AMB": 35,
+              "PL": 291,
+              "AMB/90": 1.59,
+              "PL/90": 13.23
             }
           },
           {
@@ -6326,9 +6326,9 @@
             "team": "Brommapojkarna",
             "values": {
               "SM": 22,
-              "AMB": 41,
+              "AMB": 42,
               "PL": 268,
-              "AMB/90": 1.86,
+              "AMB/90": 1.91,
               "PL/90": 12.18
             }
           },
@@ -6697,9 +6697,9 @@
             "team": "AIK",
             "values": {
               "SM": 22,
-              "OD": 1382,
-              "VOD%": 48.9,
-              "DD": 1213,
+              "OD": 1385,
+              "VOD%": 48.8,
+              "DD": 1215,
               "VDD%": 20,
               "LD": 610,
               "VLD%": 45.9,
@@ -6712,13 +6712,28 @@
             "team": "Västerås SK",
             "values": {
               "SM": 22,
-              "OD": 1169,
-              "VOD%": 45.2,
-              "DD": 1316,
-              "VDD%": 21.7,
+              "OD": 1175,
+              "VOD%": 45.3,
+              "DD": 1321,
+              "VDD%": 21.6,
               "LD": 790,
               "VLD%": 49.9,
               "VD%": 37.7
+            }
+          },
+          {
+            "id": null,
+            "name": "Örgryte",
+            "team": "Örgryte",
+            "values": {
+              "SM": 22,
+              "OD": 1261,
+              "VOD%": 46.9,
+              "DD": 1345,
+              "VDD%": 20.4,
+              "LD": 620,
+              "VLD%": 52.3,
+              "VD%": 37.5
             }
           },
           {
@@ -6733,21 +6748,6 @@
               "VDD%": 19.5,
               "LD": 650,
               "VLD%": 48.3,
-              "VD%": 37.5
-            }
-          },
-          {
-            "id": null,
-            "name": "Örgryte",
-            "team": "Örgryte",
-            "values": {
-              "SM": 22,
-              "OD": 1249,
-              "VOD%": 46.8,
-              "DD": 1335,
-              "VDD%": 20.6,
-              "LD": 616,
-              "VLD%": 52.1,
               "VD%": 37.5
             }
           },
@@ -6798,31 +6798,31 @@
           },
           {
             "id": null,
-            "name": "Kalmar",
-            "team": "Kalmar",
+            "name": "IFK Göteborg",
+            "team": "IFK Göteborg",
             "values": {
               "SM": 22,
-              "OD": 1366,
-              "VOD%": 46.9,
-              "DD": 1277,
-              "VDD%": 19.3,
-              "LD": 581,
-              "VLD%": 49.2,
+              "OD": 1219,
+              "VOD%": 50.1,
+              "DD": 1467,
+              "VDD%": 19.8,
+              "LD": 661,
+              "VLD%": 45.2,
               "VD%": 37.2
             }
           },
           {
             "id": null,
-            "name": "IFK Göteborg",
-            "team": "IFK Göteborg",
+            "name": "Kalmar",
+            "team": "Kalmar",
             "values": {
               "SM": 22,
-              "OD": 1212,
-              "VOD%": 49.9,
-              "DD": 1457,
-              "VDD%": 19.7,
-              "LD": 657,
-              "VLD%": 45.4,
+              "OD": 1371,
+              "VOD%": 47,
+              "DD": 1283,
+              "VDD%": 19.3,
+              "LD": 581,
+              "VLD%": 49.2,
               "VD%": 37.2
             }
           },
@@ -6847,13 +6847,13 @@
             "team": "Brommapojkarna",
             "values": {
               "SM": 22,
-              "OD": 1221,
-              "VOD%": 48.3,
-              "DD": 1248,
-              "VDD%": 21,
+              "OD": 1234,
+              "VOD%": 48.5,
+              "DD": 1253,
+              "VDD%": 20.9,
               "LD": 585,
               "VLD%": 44.4,
-              "VD%": 36.8
+              "VD%": 36.9
             }
           },
           {
@@ -6862,13 +6862,13 @@
             "team": "Degerfors",
             "values": {
               "SM": 22,
-              "OD": 1322,
-              "VOD%": 47.7,
-              "DD": 1342,
-              "VDD%": 22.3,
+              "OD": 1327,
+              "VOD%": 47.9,
+              "DD": 1355,
+              "VDD%": 22.1,
               "LD": 718,
               "VLD%": 42.9,
-              "VD%": 36.6
+              "VD%": 36.5
             }
           },
           {
@@ -6931,8 +6931,8 @@
             "team": "Degerfors",
             "values": {
               "SM": 22,
-              "ÅE": 1934,
-              "ÅE/M": 87.91
+              "ÅE": 1933,
+              "ÅE/M": 87.86
             }
           },
           {
@@ -6951,8 +6951,8 @@
             "team": "IFK Göteborg",
             "values": {
               "SM": 22,
-              "ÅE": 1900,
-              "ÅE/M": 86.36
+              "ÅE": 1906,
+              "ÅE/M": 86.64
             }
           },
           {
@@ -6971,8 +6971,8 @@
             "team": "Västerås SK",
             "values": {
               "SM": 22,
-              "ÅE": 1874,
-              "ÅE/M": 85.18
+              "ÅE": 1876,
+              "ÅE/M": 85.27
             }
           },
           {
@@ -6981,8 +6981,8 @@
             "team": "Kalmar",
             "values": {
               "SM": 22,
-              "ÅE": 1852,
-              "ÅE/M": 84.18
+              "ÅE": 1855,
+              "ÅE/M": 84.32
             }
           },
           {
@@ -7011,8 +7011,8 @@
             "team": "Örgryte",
             "values": {
               "SM": 22,
-              "ÅE": 1777,
-              "ÅE/M": 80.77
+              "ÅE": 1782,
+              "ÅE/M": 81
             }
           },
           {
@@ -11344,7 +11344,7 @@
             "team": "Brommapojkarna",
             "values": {
               "SM": 19,
-              "MIN": 1071,
+              "MIN": 1072,
               "GSM": 3,
               "MC": 9,
               "KG%": 33.3
@@ -11611,7 +11611,7 @@
             "team": "Kalmar",
             "values": {
               "SM": 7,
-              "MIN": 376,
+              "MIN": 372,
               "P": 300,
               "LP": 277,
               "P%": 92.3
@@ -11758,7 +11758,7 @@
             "team": "Kalmar",
             "values": {
               "SM": 7,
-              "MIN": 376,
+              "MIN": 372,
               "FP": 117,
               "LFP": 103,
               "LFP%": 88
@@ -11866,7 +11866,7 @@
             "team": "Brommapojkarna",
             "values": {
               "SM": 13,
-              "MIN": 607,
+              "MIN": 606,
               "FP": 46,
               "LFP": 39,
               "LFP%": 84.8
@@ -11914,10 +11914,10 @@
             "team": "Kalmar",
             "values": {
               "SM": 22,
-              "MIN": 1402,
-              "FP": 218,
-              "LFP": 182,
-              "LFP%": 83.5
+              "MIN": 1400,
+              "FP": 217,
+              "LFP": 181,
+              "LFP%": 83.4
             }
           },
           {
@@ -12122,7 +12122,7 @@
             "values": {
               "SM": 10,
               "MIN": 781,
-              "P": 344,
+              "P": 343,
               "NP": 10,
               "NP/90": 1.15
             }
@@ -12229,10 +12229,10 @@
             "team": "Brommapojkarna",
             "values": {
               "SM": 7,
-              "MIN": 549,
+              "MIN": 547,
               "P": 277,
               "NP": 6,
-              "NP/90": 0.98
+              "NP/90": 0.99
             }
           }
         ]
@@ -12424,7 +12424,7 @@
             "team": "Västerås SK",
             "values": {
               "SM": 15,
-              "MIN": 761,
+              "MIN": 762,
               "SP": 2,
               "SP%": 100,
               "SP/90": 0.24
@@ -12436,7 +12436,7 @@
             "team": "Örgryte",
             "values": {
               "SM": 22,
-              "MIN": 1547,
+              "MIN": 1546,
               "SP": 4,
               "SP%": 75,
               "SP/90": 0.23
@@ -12560,9 +12560,9 @@
             "values": {
               "SM": 22,
               "MIN": 2115,
-              "PP": 296,
-              "PP%": 71.3,
-              "PP/90": 12.6
+              "PP": 297,
+              "PP%": 71.4,
+              "PP/90": 12.64
             }
           },
           {
@@ -12739,10 +12739,10 @@
             "team": "Kalmar",
             "values": {
               "SM": 16,
-              "MIN": 625,
+              "MIN": 624,
               "PP": 71,
               "PP%": 66.2,
-              "PP/90": 10.22
+              "PP/90": 10.24
             }
           },
           {
@@ -13082,11 +13082,11 @@
             "values": {
               "SM": 22,
               "MIN": 1997,
-              "OD": 384,
-              "VOD%": 52.9,
-              "DD": 104,
-              "VDD%": 24,
-              "D": 537,
+              "OD": 385,
+              "VOD%": 53,
+              "DD": 105,
+              "VDD%": 23.8,
+              "D": 539,
               "VD%": 44.5
             }
           },
@@ -13188,11 +13188,11 @@
               "SM": 22,
               "MIN": 1840,
               "OD": 132,
-              "VOD%": 59.1,
+              "VOD%": 59.8,
               "DD": 204,
               "VDD%": 22.5,
-              "D": 381,
-              "VD%": 37.8
+              "D": 382,
+              "VD%": 38
             }
           },
           {
@@ -13202,11 +13202,11 @@
             "values": {
               "SM": 22,
               "MIN": 1811,
-              "OD": 128,
-              "VOD%": 43,
+              "OD": 129,
+              "VOD%": 42.6,
               "DD": 129,
               "VDD%": 9.3,
-              "D": 375,
+              "D": 376,
               "VD%": 28.5
             }
           },
@@ -13231,7 +13231,7 @@
             "team": "Degerfors",
             "values": {
               "SM": 20,
-              "MIN": 1479,
+              "MIN": 1481,
               "OD": 89,
               "VOD%": 36,
               "DD": 80,
@@ -13253,6 +13253,21 @@
               "VDD%": 18.1,
               "D": 368,
               "VD%": 39.1
+            }
+          },
+          {
+            "id": "20593",
+            "name": "A. Taonsa",
+            "team": "Västerås SK",
+            "values": {
+              "SM": 20,
+              "MIN": 1594,
+              "OD": 170,
+              "VOD%": 49.4,
+              "DD": 77,
+              "VDD%": 20.8,
+              "D": 363,
+              "VD%": 38.8
             }
           },
           {
@@ -13283,21 +13298,6 @@
               "VDD%": 22.8,
               "D": 362,
               "VD%": 37
-            }
-          },
-          {
-            "id": "20593",
-            "name": "A. Taonsa",
-            "team": "Västerås SK",
-            "values": {
-              "SM": 20,
-              "MIN": 1594,
-              "OD": 170,
-              "VOD%": 49.4,
-              "DD": 76,
-              "VDD%": 21.1,
-              "D": 362,
-              "VD%": 39
             }
           },
           {
@@ -13478,8 +13478,8 @@
             "values": {
               "SM": 21,
               "MIN": 1970,
-              "LD": 25,
-              "LD%": 48,
+              "LD": 26,
+              "LD%": 50,
               "NP": 12,
               "NP%": 66.7
             }
@@ -13607,7 +13607,7 @@
             "team": "Brommapojkarna",
             "values": {
               "SM": 7,
-              "MIN": 549,
+              "MIN": 547,
               "LD": 11,
               "LD%": 18.2,
               "NP": 16,
@@ -13646,9 +13646,9 @@
             "team": "Örgryte",
             "values": {
               "SM": 22,
-              "MIN": 1547,
-              "LD": 19,
-              "LD%": 15.8,
+              "MIN": 1546,
+              "LD": 20,
+              "LD%": 20,
               "NP": 10,
               "NP%": 60
             }
@@ -13659,7 +13659,7 @@
             "team": "Kalmar",
             "values": {
               "SM": 22,
-              "MIN": 1298,
+              "MIN": 1299,
               "LD": 16,
               "LD%": 50,
               "NP": 15,
@@ -13800,6 +13800,17 @@
             }
           },
           {
+            "id": "20767",
+            "name": "A. Almqvist",
+            "team": "Kalmar",
+            "values": {
+              "SM": 7,
+              "MIN": 372,
+              "ÅE": 52,
+              "ÅE/90": 12.58
+            }
+          },
+          {
             "id": "20550",
             "name": "R. Frej",
             "team": "GAIS",
@@ -13833,17 +13844,6 @@
             }
           },
           {
-            "id": "20767",
-            "name": "A. Almqvist",
-            "team": "Kalmar",
-            "values": {
-              "SM": 7,
-              "MIN": 376,
-              "ÅE": 52,
-              "ÅE/90": 12.45
-            }
-          },
-          {
             "id": "20561",
             "name": "O. Ågren",
             "team": "GAIS",
@@ -13866,6 +13866,17 @@
             }
           },
           {
+            "id": "20579",
+            "name": "H. Magnusson",
+            "team": "Västerås SK",
+            "values": {
+              "SM": 21,
+              "MIN": 2047,
+              "ÅE": 273,
+              "ÅE/90": 12
+            }
+          },
+          {
             "id": "20566",
             "name": "A. Čardaklija",
             "team": "GAIS",
@@ -13874,17 +13885,6 @@
               "MIN": 968,
               "ÅE": 129,
               "ÅE/90": 11.99
-            }
-          },
-          {
-            "id": "20579",
-            "name": "H. Magnusson",
-            "team": "Västerås SK",
-            "values": {
-              "SM": 21,
-              "MIN": 2047,
-              "ÅE": 270,
-              "ÅE/90": 11.87
             }
           },
           {
@@ -14164,9 +14164,9 @@
             "team": "Kalmar",
             "values": {
               "SM": 22,
-              "MIN": 1402,
+              "MIN": 1400,
               "SH": 34,
-              "SH/90": 2.18,
+              "SH/90": 2.19,
               "HA": 0,
               "HA%": 0,
               "xHA": 0,
@@ -14373,7 +14373,7 @@
             "team": "Kalmar",
             "values": {
               "SM": 22,
-              "MIN": 1402,
+              "MIN": 1400,
               "FS": 18,
               "DAF": 7,
               "FSM": 0,
@@ -14555,7 +14555,7 @@
             "team": "Västerås SK",
             "values": {
               "SM": 17,
-              "MIN": 848,
+              "MIN": 847,
               "FS": 12,
               "DAF": 2,
               "FSM": 1,
@@ -14834,7 +14834,7 @@
             "team": "Kalmar",
             "values": {
               "SM": 22,
-              "MIN": 1298,
+              "MIN": 1299,
               "VF": 31,
               "VF/90": 2.15,
               "OF": 11,
@@ -15481,9 +15481,9 @@
             "team": "Västerås SK",
             "values": {
               "SM": 9,
-              "MIN": 505,
+              "MIN": 506,
               "OFF": 8,
-              "OFF/90": 1.43
+              "OFF/90": 1.42
             }
           },
           {
@@ -15525,7 +15525,7 @@
             "team": "Västerås SK",
             "values": {
               "SM": 15,
-              "MIN": 771,
+              "MIN": 770,
               "OFF": 7,
               "OFF/90": 0.82
             }
@@ -15569,7 +15569,7 @@
             "team": "Degerfors",
             "values": {
               "SM": 19,
-              "MIN": 1027,
+              "MIN": 1026,
               "OFF": 6,
               "OFF/90": 0.53
             }
@@ -15591,7 +15591,7 @@
             "team": "Kalmar",
             "values": {
               "SM": 22,
-              "MIN": 1298,
+              "MIN": 1299,
               "OFF": 5,
               "OFF/90": 0.35
             }
@@ -16141,7 +16141,7 @@
             "team": "Kalmar",
             "values": {
               "SM": 22,
-              "MIN": 1298,
+              "MIN": 1299,
               "AMB": 15,
               "PL": 46,
               "AMB/90": 1.04,
@@ -16154,11 +16154,11 @@
             "team": "Brommapojkarna",
             "values": {
               "SM": 13,
-              "MIN": 607,
+              "MIN": 606,
               "AMB": 3,
               "PL": 21,
-              "AMB/90": 0.44,
-              "PL/90": 3.11
+              "AMB/90": 0.45,
+              "PL/90": 3.12
             }
           },
           {
@@ -17357,7 +17357,7 @@
       "team": "Degerfors",
       "stats": {
         "Duellspel | SM": 20,
-        "Duellspel | MIN": 1479,
+        "Duellspel | MIN": 1481,
         "Duellspel | OD": 89,
         "Duellspel | VOD%": 36,
         "Duellspel | DD": 80,
@@ -17405,7 +17405,7 @@
       "team": "Degerfors",
       "stats": {
         "OFFSIDES | SM": 19,
-        "OFFSIDES | MIN": 1027,
+        "OFFSIDES | MIN": 1026,
         "OFFSIDES | OFF": 6,
         "OFFSIDES | OFF/90": 0.53
       }
@@ -18099,7 +18099,7 @@
       "team": "Västerås SK",
       "stats": {
         "OFFSIDES | SM": 15,
-        "OFFSIDES | MIN": 771,
+        "OFFSIDES | MIN": 770,
         "OFFSIDES | OFF": 7,
         "OFFSIDES | OFF/90": 0.82
       }
@@ -18130,8 +18130,8 @@
         "LÅNGA PASSNINGAR & GENOMSKÄRARE | L&G/90": 7.61,
         "ÅTERERÖVRINGAR | SM": 21,
         "ÅTERERÖVRINGAR | MIN": 2047,
-        "ÅTERERÖVRINGAR | ÅE": 270,
-        "ÅTERERÖVRINGAR | ÅE/90": 11.87,
+        "ÅTERERÖVRINGAR | ÅE": 273,
+        "ÅTERERÖVRINGAR | ÅE/90": 12,
         "DEFENSIV RANKING | SM": 21,
         "DEFENSIV RANKING | MIN": 2047,
         "DEFENSIV RANKING | DP": 1240,
@@ -18165,7 +18165,7 @@
       "team": "Västerås SK",
       "stats": {
         "SMARTA PASSNINGAR | SM": 15,
-        "SMARTA PASSNINGAR | MIN": 761,
+        "SMARTA PASSNINGAR | MIN": 762,
         "SMARTA PASSNINGAR | SP": 2,
         "SMARTA PASSNINGAR | SP%": 100,
         "SMARTA PASSNINGAR | SP/90": 0.24
@@ -18198,7 +18198,7 @@
       "team": "Västerås SK",
       "stats": {
         "Frisparkar | SM": 17,
-        "Frisparkar | MIN": 848,
+        "Frisparkar | MIN": 847,
         "Frisparkar | FS": 12,
         "Frisparkar | DAF": 2,
         "Frisparkar | FSM": 1,
@@ -18238,10 +18238,10 @@
         "Duellspel | MIN": 1594,
         "Duellspel | OD": 170,
         "Duellspel | VOD%": 49.4,
-        "Duellspel | DD": 76,
-        "Duellspel | VDD%": 21.1,
-        "Duellspel | D": 362,
-        "Duellspel | VD%": 39,
+        "Duellspel | DD": 77,
+        "Duellspel | VDD%": 20.8,
+        "Duellspel | D": 363,
+        "Duellspel | VD%": 38.8,
         "Fouls | SM": 20,
         "Fouls | MIN": 1594,
         "Fouls | VF": 39,
@@ -18274,9 +18274,9 @@
       "team": "Västerås SK",
       "stats": {
         "OFFSIDES | SM": 9,
-        "OFFSIDES | MIN": 505,
+        "OFFSIDES | MIN": 506,
         "OFFSIDES | OFF": 8,
-        "OFFSIDES | OFF/90": 1.43
+        "OFFSIDES | OFF/90": 1.42
       }
     },
     {
@@ -18403,9 +18403,9 @@
       "stats": {
         "PROGRESSIVA PASSNINGAR | SM": 22,
         "PROGRESSIVA PASSNINGAR | MIN": 2115,
-        "PROGRESSIVA PASSNINGAR | PP": 296,
-        "PROGRESSIVA PASSNINGAR | PP%": 71.3,
-        "PROGRESSIVA PASSNINGAR | PP/90": 12.6,
+        "PROGRESSIVA PASSNINGAR | PP": 297,
+        "PROGRESSIVA PASSNINGAR | PP%": 71.4,
+        "PROGRESSIVA PASSNINGAR | PP/90": 12.64,
         "LÅNGA PASSNINGAR & GENOMSKÄRARE | SM": 22,
         "LÅNGA PASSNINGAR & GENOMSKÄRARE | MIN": 2115,
         "LÅNGA PASSNINGAR & GENOMSKÄRARE | LåP": 155,
@@ -18423,12 +18423,12 @@
       "team": "Brommapojkarna",
       "stats": {
         "NYCKELPASSNINGAR | SM": 7,
-        "NYCKELPASSNINGAR | MIN": 549,
+        "NYCKELPASSNINGAR | MIN": 547,
         "NYCKELPASSNINGAR | P": 277,
         "NYCKELPASSNINGAR | NP": 6,
-        "NYCKELPASSNINGAR | NP/90": 0.98,
+        "NYCKELPASSNINGAR | NP/90": 0.99,
         "HUVUDSPEL & LUFTDUELLER | SM": 7,
-        "HUVUDSPEL & LUFTDUELLER | MIN": 549,
+        "HUVUDSPEL & LUFTDUELLER | MIN": 547,
         "HUVUDSPEL & LUFTDUELLER | LD": 11,
         "HUVUDSPEL & LUFTDUELLER | LD%": 18.2,
         "HUVUDSPEL & LUFTDUELLER | NP": 16,
@@ -18455,7 +18455,7 @@
       "team": "Brommapojkarna",
       "stats": {
         "KONVERTERINGSGRAD MÅLCHANSER | SM": 19,
-        "KONVERTERINGSGRAD MÅLCHANSER | MIN": 1071,
+        "KONVERTERINGSGRAD MÅLCHANSER | MIN": 1072,
         "KONVERTERINGSGRAD MÅLCHANSER | GSM": 3,
         "KONVERTERINGSGRAD MÅLCHANSER | MC": 9,
         "KONVERTERINGSGRAD MÅLCHANSER | KG%": 33.3
@@ -18467,16 +18467,16 @@
       "team": "Brommapojkarna",
       "stats": {
         "FRAMÅTPASSNINGAR | SM": 13,
-        "FRAMÅTPASSNINGAR | MIN": 607,
+        "FRAMÅTPASSNINGAR | MIN": 606,
         "FRAMÅTPASSNINGAR | FP": 46,
         "FRAMÅTPASSNINGAR | LFP": 39,
         "FRAMÅTPASSNINGAR | LFP%": 84.8,
         "ACC. & PROGRESSIVA LÖPNINGAR | SM": 13,
-        "ACC. & PROGRESSIVA LÖPNINGAR | MIN": 607,
+        "ACC. & PROGRESSIVA LÖPNINGAR | MIN": 606,
         "ACC. & PROGRESSIVA LÖPNINGAR | AMB": 3,
         "ACC. & PROGRESSIVA LÖPNINGAR | PL": 21,
-        "ACC. & PROGRESSIVA LÖPNINGAR | AMB/90": 0.44,
-        "ACC. & PROGRESSIVA LÖPNINGAR | PL/90": 3.11
+        "ACC. & PROGRESSIVA LÖPNINGAR | AMB/90": 0.45,
+        "ACC. & PROGRESSIVA LÖPNINGAR | PL/90": 3.12
       }
     },
     {
@@ -18905,8 +18905,8 @@
         "SKOTTASSIST | SA/90": 1.42,
         "HUVUDSPEL & LUFTDUELLER | SM": 21,
         "HUVUDSPEL & LUFTDUELLER | MIN": 1970,
-        "HUVUDSPEL & LUFTDUELLER | LD": 25,
-        "HUVUDSPEL & LUFTDUELLER | LD%": 48,
+        "HUVUDSPEL & LUFTDUELLER | LD": 26,
+        "HUVUDSPEL & LUFTDUELLER | LD%": 50,
         "HUVUDSPEL & LUFTDUELLER | NP": 12,
         "HUVUDSPEL & LUFTDUELLER | NP%": 66.7,
         "Frisparkar | SM": 21,
@@ -18974,14 +18974,14 @@
       "team": "Örgryte",
       "stats": {
         "SMARTA PASSNINGAR | SM": 22,
-        "SMARTA PASSNINGAR | MIN": 1547,
+        "SMARTA PASSNINGAR | MIN": 1546,
         "SMARTA PASSNINGAR | SP": 4,
         "SMARTA PASSNINGAR | SP%": 75,
         "SMARTA PASSNINGAR | SP/90": 0.23,
         "HUVUDSPEL & LUFTDUELLER | SM": 22,
-        "HUVUDSPEL & LUFTDUELLER | MIN": 1547,
-        "HUVUDSPEL & LUFTDUELLER | LD": 19,
-        "HUVUDSPEL & LUFTDUELLER | LD%": 15.8,
+        "HUVUDSPEL & LUFTDUELLER | MIN": 1546,
+        "HUVUDSPEL & LUFTDUELLER | LD": 20,
+        "HUVUDSPEL & LUFTDUELLER | LD%": 20,
         "HUVUDSPEL & LUFTDUELLER | NP": 10,
         "HUVUDSPEL & LUFTDUELLER | NP%": 60
       }
@@ -18994,11 +18994,11 @@
         "Duellspel | SM": 22,
         "Duellspel | MIN": 1840,
         "Duellspel | OD": 132,
-        "Duellspel | VOD%": 59.1,
+        "Duellspel | VOD%": 59.8,
         "Duellspel | DD": 204,
         "Duellspel | VDD%": 22.5,
-        "Duellspel | D": 381,
-        "Duellspel | VD%": 37.8,
+        "Duellspel | D": 382,
+        "Duellspel | VD%": 38,
         "Fouls | SM": 22,
         "Fouls | MIN": 1840,
         "Fouls | VF": 47,
@@ -19339,11 +19339,11 @@
         "MÅL & xG | xG/90": 0.23,
         "Duellspel | SM": 22,
         "Duellspel | MIN": 1811,
-        "Duellspel | OD": 128,
-        "Duellspel | VOD%": 43,
+        "Duellspel | OD": 129,
+        "Duellspel | VOD%": 42.6,
         "Duellspel | DD": 129,
         "Duellspel | VDD%": 9.3,
-        "Duellspel | D": 375,
+        "Duellspel | D": 376,
         "Duellspel | VD%": 28.5,
         "OFFSIDES | SM": 22,
         "OFFSIDES | MIN": 1811,
@@ -19395,7 +19395,7 @@
         "MÅL & xG | xG/90": 0.69,
         "NYCKELPASSNINGAR | SM": 10,
         "NYCKELPASSNINGAR | MIN": 781,
-        "NYCKELPASSNINGAR | P": 344,
+        "NYCKELPASSNINGAR | P": 343,
         "NYCKELPASSNINGAR | NP": 10,
         "NYCKELPASSNINGAR | NP/90": 1.15,
         "SMARTA PASSNINGAR | SM": 10,
@@ -19620,20 +19620,20 @@
       "team": "Kalmar",
       "stats": {
         "FRAMÅTPASSNINGAR | SM": 22,
-        "FRAMÅTPASSNINGAR | MIN": 1402,
-        "FRAMÅTPASSNINGAR | FP": 218,
-        "FRAMÅTPASSNINGAR | LFP": 182,
-        "FRAMÅTPASSNINGAR | LFP%": 83.5,
+        "FRAMÅTPASSNINGAR | MIN": 1400,
+        "FRAMÅTPASSNINGAR | FP": 217,
+        "FRAMÅTPASSNINGAR | LFP": 181,
+        "FRAMÅTPASSNINGAR | LFP%": 83.4,
         "Hörnor | SM": 22,
-        "Hörnor | MIN": 1402,
+        "Hörnor | MIN": 1400,
         "Hörnor | SH": 34,
-        "Hörnor | SH/90": 2.18,
+        "Hörnor | SH/90": 2.19,
         "Hörnor | HA": 0,
         "Hörnor | HA%": 0,
         "Hörnor | xHA": 0,
         "Hörnor | xHA%": 0,
         "Frisparkar | SM": 22,
-        "Frisparkar | MIN": 1402,
+        "Frisparkar | MIN": 1400,
         "Frisparkar | FS": 18,
         "Frisparkar | DAF": 7,
         "Frisparkar | FSM": 0,
@@ -19647,10 +19647,10 @@
       "team": "Kalmar",
       "stats": {
         "PROGRESSIVA PASSNINGAR | SM": 16,
-        "PROGRESSIVA PASSNINGAR | MIN": 625,
+        "PROGRESSIVA PASSNINGAR | MIN": 624,
         "PROGRESSIVA PASSNINGAR | PP": 71,
         "PROGRESSIVA PASSNINGAR | PP%": 66.2,
-        "PROGRESSIVA PASSNINGAR | PP/90": 10.22
+        "PROGRESSIVA PASSNINGAR | PP/90": 10.24
       }
     },
     {
@@ -19689,19 +19689,19 @@
       "team": "Kalmar",
       "stats": {
         "PASSNINGAR & PASSNINGSPROCENT | SM": 7,
-        "PASSNINGAR & PASSNINGSPROCENT | MIN": 376,
+        "PASSNINGAR & PASSNINGSPROCENT | MIN": 372,
         "PASSNINGAR & PASSNINGSPROCENT | P": 300,
         "PASSNINGAR & PASSNINGSPROCENT | LP": 277,
         "PASSNINGAR & PASSNINGSPROCENT | P%": 92.3,
         "FRAMÅTPASSNINGAR | SM": 7,
-        "FRAMÅTPASSNINGAR | MIN": 376,
+        "FRAMÅTPASSNINGAR | MIN": 372,
         "FRAMÅTPASSNINGAR | FP": 117,
         "FRAMÅTPASSNINGAR | LFP": 103,
         "FRAMÅTPASSNINGAR | LFP%": 88,
         "ÅTERERÖVRINGAR | SM": 7,
-        "ÅTERERÖVRINGAR | MIN": 376,
+        "ÅTERERÖVRINGAR | MIN": 372,
         "ÅTERERÖVRINGAR | ÅE": 52,
-        "ÅTERERÖVRINGAR | ÅE/90": 12.45
+        "ÅTERERÖVRINGAR | ÅE/90": 12.58
       }
     },
     {
@@ -19777,11 +19777,11 @@
         "NYCKELPASSNINGAR | NP/90": 1.26,
         "Duellspel | SM": 22,
         "Duellspel | MIN": 1997,
-        "Duellspel | OD": 384,
-        "Duellspel | VOD%": 52.9,
-        "Duellspel | DD": 104,
-        "Duellspel | VDD%": 24,
-        "Duellspel | D": 537,
+        "Duellspel | OD": 385,
+        "Duellspel | VOD%": 53,
+        "Duellspel | DD": 105,
+        "Duellspel | VDD%": 23.8,
+        "Duellspel | D": 539,
         "Duellspel | VD%": 44.5,
         "Fouls | SM": 22,
         "Fouls | MIN": 1997,
@@ -19807,23 +19807,23 @@
       "team": "Kalmar",
       "stats": {
         "HUVUDSPEL & LUFTDUELLER | SM": 22,
-        "HUVUDSPEL & LUFTDUELLER | MIN": 1298,
+        "HUVUDSPEL & LUFTDUELLER | MIN": 1299,
         "HUVUDSPEL & LUFTDUELLER | LD": 16,
         "HUVUDSPEL & LUFTDUELLER | LD%": 50,
         "HUVUDSPEL & LUFTDUELLER | NP": 15,
         "HUVUDSPEL & LUFTDUELLER | NP%": 60,
         "Fouls | SM": 22,
-        "Fouls | MIN": 1298,
+        "Fouls | MIN": 1299,
         "Fouls | VF": 31,
         "Fouls | VF/90": 2.15,
         "Fouls | OF": 11,
         "Fouls | OF/90": 0.76,
         "OFFSIDES | SM": 22,
-        "OFFSIDES | MIN": 1298,
+        "OFFSIDES | MIN": 1299,
         "OFFSIDES | OFF": 5,
         "OFFSIDES | OFF/90": 0.35,
         "ACC. & PROGRESSIVA LÖPNINGAR | SM": 22,
-        "ACC. & PROGRESSIVA LÖPNINGAR | MIN": 1298,
+        "ACC. & PROGRESSIVA LÖPNINGAR | MIN": 1299,
         "ACC. & PROGRESSIVA LÖPNINGAR | AMB": 15,
         "ACC. & PROGRESSIVA LÖPNINGAR | PL": 46,
         "ACC. & PROGRESSIVA LÖPNINGAR | AMB/90": 1.04,
@@ -22609,16 +22609,16 @@
         "DEFENSIV SOLIDITET | MCE": 212,
         "DEFENSIV SOLIDITET | MCE/M": 9.64,
         "Duellspel | SM": 22,
-        "Duellspel | OD": 1169,
-        "Duellspel | VOD%": 45.2,
-        "Duellspel | DD": 1316,
-        "Duellspel | VDD%": 21.7,
+        "Duellspel | OD": 1175,
+        "Duellspel | VOD%": 45.3,
+        "Duellspel | DD": 1321,
+        "Duellspel | VDD%": 21.6,
         "Duellspel | LD": 790,
         "Duellspel | VLD%": 49.9,
         "Duellspel | VD%": 37.7,
         "ÅTERERÖVRINGAR | SM": 22,
-        "ÅTERERÖVRINGAR | ÅE": 1874,
-        "ÅTERERÖVRINGAR | ÅE/M": 85.18,
+        "ÅTERERÖVRINGAR | ÅE": 1876,
+        "ÅTERERÖVRINGAR | ÅE/M": 85.27,
         "Hörnor | SM": 22,
         "Hörnor | HF": 92,
         "Hörnor | HE": 119,
@@ -23033,8 +23033,8 @@
         "PASSNINGAR & PASSNINGSPROCENT | LP": 8875,
         "PASSNINGAR & PASSNINGSPROCENT | P%": 84.8,
         "FRAMÅTPASSNINGAR | SM": 22,
-        "FRAMÅTPASSNINGAR | FP": 3258,
-        "FRAMÅTPASSNINGAR | LFP": 2389,
+        "FRAMÅTPASSNINGAR | FP": 3259,
+        "FRAMÅTPASSNINGAR | LFP": 2390,
         "FRAMÅTPASSNINGAR | LFP%": 73.3,
         "NYCKELPASSNINGAR | SM": 22,
         "NYCKELPASSNINGAR | P": 10467,
@@ -23069,9 +23069,9 @@
         "DEFENSIV SOLIDITET | MCE": 242,
         "DEFENSIV SOLIDITET | MCE/M": 11,
         "Duellspel | SM": 22,
-        "Duellspel | OD": 1382,
-        "Duellspel | VOD%": 48.9,
-        "Duellspel | DD": 1213,
+        "Duellspel | OD": 1385,
+        "Duellspel | VOD%": 48.8,
+        "Duellspel | DD": 1215,
         "Duellspel | VDD%": 20,
         "Duellspel | LD": 610,
         "Duellspel | VLD%": 45.9,
@@ -23264,7 +23264,7 @@
         "PASSNINGAR & PASSNINGSPROCENT | P%": 81.6,
         "FRAMÅTPASSNINGAR | SM": 22,
         "FRAMÅTPASSNINGAR | FP": 3226,
-        "FRAMÅTPASSNINGAR | LFP": 2255,
+        "FRAMÅTPASSNINGAR | LFP": 2256,
         "FRAMÅTPASSNINGAR | LFP%": 69.9,
         "NYCKELPASSNINGAR | SM": 22,
         "NYCKELPASSNINGAR | P": 9773,
@@ -23299,16 +23299,16 @@
         "DEFENSIV SOLIDITET | MCE": 183,
         "DEFENSIV SOLIDITET | MCE/M": 8.32,
         "Duellspel | SM": 22,
-        "Duellspel | OD": 1212,
-        "Duellspel | VOD%": 49.9,
-        "Duellspel | DD": 1457,
-        "Duellspel | VDD%": 19.7,
-        "Duellspel | LD": 657,
-        "Duellspel | VLD%": 45.4,
+        "Duellspel | OD": 1219,
+        "Duellspel | VOD%": 50.1,
+        "Duellspel | DD": 1467,
+        "Duellspel | VDD%": 19.8,
+        "Duellspel | LD": 661,
+        "Duellspel | VLD%": 45.2,
         "Duellspel | VD%": 37.2,
         "ÅTERERÖVRINGAR | SM": 22,
-        "ÅTERERÖVRINGAR | ÅE": 1900,
-        "ÅTERERÖVRINGAR | ÅE/M": 86.36,
+        "ÅTERERÖVRINGAR | ÅE": 1906,
+        "ÅTERERÖVRINGAR | ÅE/M": 86.64,
         "Hörnor | SM": 22,
         "Hörnor | HF": 158,
         "Hörnor | HE": 114,
@@ -23723,8 +23723,8 @@
         "PASSNINGAR & PASSNINGSPROCENT | LP": 8833,
         "PASSNINGAR & PASSNINGSPROCENT | P%": 85.1,
         "FRAMÅTPASSNINGAR | SM": 22,
-        "FRAMÅTPASSNINGAR | FP": 3449,
-        "FRAMÅTPASSNINGAR | LFP": 2555,
+        "FRAMÅTPASSNINGAR | FP": 3451,
+        "FRAMÅTPASSNINGAR | LFP": 2557,
         "FRAMÅTPASSNINGAR | LFP%": 74.1,
         "NYCKELPASSNINGAR | SM": 22,
         "NYCKELPASSNINGAR | P": 10381,
@@ -23748,9 +23748,9 @@
         "Bollinnehav | BI(t)": "26:11",
         "Bollinnehav | BI(%)": 46,
         "ACC. & PROGRESSIVA LÖPNINGAR | SM": 22,
-        "ACC. & PROGRESSIVA LÖPNINGAR | AMB": 41,
+        "ACC. & PROGRESSIVA LÖPNINGAR | AMB": 42,
         "ACC. & PROGRESSIVA LÖPNINGAR | PL": 268,
-        "ACC. & PROGRESSIVA LÖPNINGAR | AMB/90": 1.86,
+        "ACC. & PROGRESSIVA LÖPNINGAR | AMB/90": 1.91,
         "ACC. & PROGRESSIVA LÖPNINGAR | PL/90": 12.18,
         "DEFENSIV SOLIDITET | SM": 22,
         "DEFENSIV SOLIDITET | IM": 36,
@@ -23759,13 +23759,13 @@
         "DEFENSIV SOLIDITET | MCE": 229,
         "DEFENSIV SOLIDITET | MCE/M": 10.41,
         "Duellspel | SM": 22,
-        "Duellspel | OD": 1221,
-        "Duellspel | VOD%": 48.3,
-        "Duellspel | DD": 1248,
-        "Duellspel | VDD%": 21,
+        "Duellspel | OD": 1234,
+        "Duellspel | VOD%": 48.5,
+        "Duellspel | DD": 1253,
+        "Duellspel | VDD%": 20.9,
         "Duellspel | LD": 585,
         "Duellspel | VLD%": 44.4,
-        "Duellspel | VD%": 36.8,
+        "Duellspel | VD%": 36.9,
         "ÅTERERÖVRINGAR | SM": 22,
         "ÅTERERÖVRINGAR | ÅE": 1651,
         "ÅTERERÖVRINGAR | ÅE/M": 75.05,
@@ -24183,9 +24183,9 @@
         "PASSNINGAR & PASSNINGSPROCENT | LP": 8406,
         "PASSNINGAR & PASSNINGSPROCENT | P%": 83.8,
         "FRAMÅTPASSNINGAR | SM": 22,
-        "FRAMÅTPASSNINGAR | FP": 3240,
-        "FRAMÅTPASSNINGAR | LFP": 2389,
-        "FRAMÅTPASSNINGAR | LFP%": 73.7,
+        "FRAMÅTPASSNINGAR | FP": 3239,
+        "FRAMÅTPASSNINGAR | LFP": 2390,
+        "FRAMÅTPASSNINGAR | LFP%": 73.8,
         "NYCKELPASSNINGAR | SM": 22,
         "NYCKELPASSNINGAR | P": 10035,
         "NYCKELPASSNINGAR | NP": 103,
@@ -24209,9 +24209,9 @@
         "Bollinnehav | BI(%)": 48.8,
         "ACC. & PROGRESSIVA LÖPNINGAR | SM": 22,
         "ACC. & PROGRESSIVA LÖPNINGAR | AMB": 54,
-        "ACC. & PROGRESSIVA LÖPNINGAR | PL": 352,
+        "ACC. & PROGRESSIVA LÖPNINGAR | PL": 353,
         "ACC. & PROGRESSIVA LÖPNINGAR | AMB/90": 2.45,
-        "ACC. & PROGRESSIVA LÖPNINGAR | PL/90": 16,
+        "ACC. & PROGRESSIVA LÖPNINGAR | PL/90": 16.05,
         "DEFENSIV SOLIDITET | SM": 22,
         "DEFENSIV SOLIDITET | IM": 36,
         "DEFENSIV SOLIDITET | HN": 3,
@@ -24219,16 +24219,16 @@
         "DEFENSIV SOLIDITET | MCE": 184,
         "DEFENSIV SOLIDITET | MCE/M": 8.36,
         "Duellspel | SM": 22,
-        "Duellspel | OD": 1366,
-        "Duellspel | VOD%": 46.9,
-        "Duellspel | DD": 1277,
+        "Duellspel | OD": 1371,
+        "Duellspel | VOD%": 47,
+        "Duellspel | DD": 1283,
         "Duellspel | VDD%": 19.3,
         "Duellspel | LD": 581,
         "Duellspel | VLD%": 49.2,
         "Duellspel | VD%": 37.2,
         "ÅTERERÖVRINGAR | SM": 22,
-        "ÅTERERÖVRINGAR | ÅE": 1852,
-        "ÅTERERÖVRINGAR | ÅE/M": 84.18,
+        "ÅTERERÖVRINGAR | ÅE": 1855,
+        "ÅTERERÖVRINGAR | ÅE/M": 84.32,
         "Hörnor | SM": 22,
         "Hörnor | HF": 107,
         "Hörnor | HE": 120,
@@ -24413,9 +24413,9 @@
         "PASSNINGAR & PASSNINGSPROCENT | LP": 7488,
         "PASSNINGAR & PASSNINGSPROCENT | P%": 81.3,
         "FRAMÅTPASSNINGAR | SM": 22,
-        "FRAMÅTPASSNINGAR | FP": 3166,
+        "FRAMÅTPASSNINGAR | FP": 3167,
         "FRAMÅTPASSNINGAR | LFP": 2202,
-        "FRAMÅTPASSNINGAR | LFP%": 69.6,
+        "FRAMÅTPASSNINGAR | LFP%": 69.5,
         "NYCKELPASSNINGAR | SM": 22,
         "NYCKELPASSNINGAR | P": 9210,
         "NYCKELPASSNINGAR | NP": 78,
@@ -24449,16 +24449,16 @@
         "DEFENSIV SOLIDITET | MCE": 195,
         "DEFENSIV SOLIDITET | MCE/M": 8.86,
         "Duellspel | SM": 22,
-        "Duellspel | OD": 1322,
-        "Duellspel | VOD%": 47.7,
-        "Duellspel | DD": 1342,
-        "Duellspel | VDD%": 22.3,
+        "Duellspel | OD": 1327,
+        "Duellspel | VOD%": 47.9,
+        "Duellspel | DD": 1355,
+        "Duellspel | VDD%": 22.1,
         "Duellspel | LD": 718,
         "Duellspel | VLD%": 42.9,
-        "Duellspel | VD%": 36.6,
+        "Duellspel | VD%": 36.5,
         "ÅTERERÖVRINGAR | SM": 22,
-        "ÅTERERÖVRINGAR | ÅE": 1934,
-        "ÅTERERÖVRINGAR | ÅE/M": 87.91,
+        "ÅTERERÖVRINGAR | ÅE": 1933,
+        "ÅTERERÖVRINGAR | ÅE/M": 87.86,
         "Hörnor | SM": 22,
         "Hörnor | HF": 103,
         "Hörnor | HE": 117,
@@ -24643,7 +24643,7 @@
         "PASSNINGAR & PASSNINGSPROCENT | LP": 7159,
         "PASSNINGAR & PASSNINGSPROCENT | P%": 80.5,
         "FRAMÅTPASSNINGAR | SM": 22,
-        "FRAMÅTPASSNINGAR | FP": 3094,
+        "FRAMÅTPASSNINGAR | FP": 3092,
         "FRAMÅTPASSNINGAR | LFP": 2110,
         "FRAMÅTPASSNINGAR | LFP%": 68.2,
         "NYCKELPASSNINGAR | SM": 22,
@@ -24668,10 +24668,10 @@
         "Bollinnehav | BI(t)": "24:27",
         "Bollinnehav | BI(%)": 44.6,
         "ACC. & PROGRESSIVA LÖPNINGAR | SM": 22,
-        "ACC. & PROGRESSIVA LÖPNINGAR | AMB": 36,
-        "ACC. & PROGRESSIVA LÖPNINGAR | PL": 292,
-        "ACC. & PROGRESSIVA LÖPNINGAR | AMB/90": 1.64,
-        "ACC. & PROGRESSIVA LÖPNINGAR | PL/90": 13.27,
+        "ACC. & PROGRESSIVA LÖPNINGAR | AMB": 35,
+        "ACC. & PROGRESSIVA LÖPNINGAR | PL": 291,
+        "ACC. & PROGRESSIVA LÖPNINGAR | AMB/90": 1.59,
+        "ACC. & PROGRESSIVA LÖPNINGAR | PL/90": 13.23,
         "DEFENSIV SOLIDITET | SM": 22,
         "DEFENSIV SOLIDITET | IM": 49,
         "DEFENSIV SOLIDITET | HN": 3,
@@ -24679,16 +24679,16 @@
         "DEFENSIV SOLIDITET | MCE": 256,
         "DEFENSIV SOLIDITET | MCE/M": 11.64,
         "Duellspel | SM": 22,
-        "Duellspel | OD": 1249,
-        "Duellspel | VOD%": 46.8,
-        "Duellspel | DD": 1335,
-        "Duellspel | VDD%": 20.6,
-        "Duellspel | LD": 616,
-        "Duellspel | VLD%": 52.1,
+        "Duellspel | OD": 1261,
+        "Duellspel | VOD%": 46.9,
+        "Duellspel | DD": 1345,
+        "Duellspel | VDD%": 20.4,
+        "Duellspel | LD": 620,
+        "Duellspel | VLD%": 52.3,
         "Duellspel | VD%": 37.5,
         "ÅTERERÖVRINGAR | SM": 22,
-        "ÅTERERÖVRINGAR | ÅE": 1777,
-        "ÅTERERÖVRINGAR | ÅE/M": 80.77,
+        "ÅTERERÖVRINGAR | ÅE": 1782,
+        "ÅTERERÖVRINGAR | ÅE/M": 81,
         "Hörnor | SM": 22,
         "Hörnor | HF": 89,
         "Hörnor | HE": 135,

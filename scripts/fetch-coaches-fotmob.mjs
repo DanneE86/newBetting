@@ -11,36 +11,17 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { FOTMOB_LEAGUES } from './lib/fotmob-leagues.mjs';
 import { coachRowFromFotmob } from './lib/coaches.mjs';
+import { fotmobGet as getJson } from './lib/api-schemas.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = path.join(root, 'data', 'open', 'coach_fotmob.json');
 const FM = 'https://www.fotmob.com/api/data';
-const UA = {
-  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36',
-  Accept: 'application/json',
-};
 const arg = (name) => { const i = process.argv.indexOf(name); return i >= 0 ? process.argv[i + 1] : null; };
 const onlyCurrent = process.argv.includes('--current');
 const SEASONS = onlyCurrent ? 1 : Number(arg('--seasons') || 5);
 const CONCURRENCY = Number(arg('--concurrency') || 4);
 const LEAGUES = (arg('--leagues') || 'PL,CH,EL1,EL2').split(',').map((x) => x.trim().toUpperCase());
 const log = (s) => process.stdout.write(`${s}\n`);
-const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
-
-let backoff = 0;
-async function getJson(url) {
-  for (let i = 0; i < 5; i++) {
-    if (backoff) await sleep(backoff);
-    try {
-      const res = await fetch(url, { headers: UA });
-      if (res.ok) { backoff = Math.max(0, backoff - 250); return await res.json(); }
-      if (res.status === 404) return null;
-      if (res.status === 429 || res.status === 403) { backoff = Math.min(30000, (backoff || 2000) * 2); log(`  strypt (${res.status}), vantar ${backoff / 1000} s`); }
-    } catch { /* forsok igen */ }
-    await sleep(1000 * (i + 1));
-  }
-  return null;
-}
 
 const doc = (() => { try { return JSON.parse(fs.readFileSync(OUT, 'utf8')); } catch { return { leagues: {} }; } })();
 doc.leagues ??= {};
