@@ -239,8 +239,9 @@ function readCsvMatches(file, league, season) {
   const head = lines[0].split(',');
   const ix = (k) => head.indexOf(k);
   const I = { d: ix('Date'), h: ix('HomeTeam'), a: ix('AwayTeam'), hg: ix('FTHG'), ag: ix('FTAG'), hx: ix('HxG'), ax: ix('AxG') };
-  // Pinnacles slutodds (annars snitt av slutodds) - anvands bara for spelade matcher, dvs i backtest
-  const oddsCols = [['PSCH', 'PSCD', 'PSCA', 'Pinnacle slutodds'], ['AvgCH', 'AvgCD', 'AvgCA', 'snitt slutodds']].map(([h, d, a, src]) => ({ ix: [ix(h), ix(d), ix(a)], src }));
+  // Pinnacles slutodds (annars Betfair-borsen, annars snitt av slutodds) - anvands bara for spelade matcher, dvs i backtest.
+  // football-data slutade med Pinnacle 2026/27; Betfair traffade lika bra 2025/26 (logloss 0,9963 mot Pinnacle 0,9974).
+  const oddsCols = [['PSCH', 'PSCD', 'PSCA', 'Pinnacle slutodds'], ['BFECH', 'BFECD', 'BFECA', 'Betfair slutodds'], ['AvgCH', 'AvgCD', 'AvgCA', 'snitt slutodds']].map(([h, d, a, src]) => ({ ix: [ix(h), ix(d), ix(a)], src }));
   const out = [];
   for (const l of lines.slice(1)) {
     const c = l.split(',');

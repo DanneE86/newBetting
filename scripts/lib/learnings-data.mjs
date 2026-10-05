@@ -68,13 +68,26 @@ function normSeason(s) {
   return m ? `${m[1]}/${m[2].slice(2)}` : String(s);
 }
 
+/**
+ * Stangningsodds ur en fd-rad (sannolikheter utan marginal). Skarp = Pinnacle, annars Betfair-borsen
+ * (football-data slutade med Pinnacle 2026/27; 2025/26 traffade de lika bra: logloss 0,9974 mot 0,9963, samma som pro-layer).
+ */
+export function closeOdds(r) {
+  const pin = devig(r.PSCH, r.PSCD, r.PSCA);
+  const bfe = devig(r.BFECH, r.BFECD, r.BFECA);
+  const avg = devig(r.AvgCH, r.AvgCD, r.AvgCA);
+  const sharp = pin ?? bfe;
+  return { pin, bfe, avg, sharp, src: pin ? 'pinnacle' : bfe ? 'betfair' : avg ? 'snitt' : null };
+}
+
 function row(league, season, r, date, home, away, hg, ag) {
   const res = hg > ag ? 'H' : hg < ag ? 'A' : 'D';
-  // Oppning: Pinnacle, annars snitt, annars Bet365. Slut: Pinnacle closing, annars snitt closing.
+  // Oppning: Pinnacle, annars snitt, annars Bet365. Slut: Pinnacle, annars Betfair-borsen, annars snitt (closeOdds).
   const open = devig(r.PSH, r.PSD, r.PSA) ?? devig(r.AvgH, r.AvgD, r.AvgA) ?? devig(r.BbAvH, r.BbAvD, r.BbAvA) ?? devig(r.B365H, r.B365D, r.B365A);
-  const pinClose = devig(r.PSCH, r.PSCD, r.PSCA);
-  const avgClose = devig(r.AvgCH, r.AvgCD, r.AvgCA);
-  const closeTrue = pinClose ?? avgClose;
+  const co = closeOdds(r);
+  const pinClose = co.pin;
+  const avgClose = co.avg;
+  const closeTrue = co.sharp ?? avgClose;
   const odds3 = (h, d, a) => { const o = [num(h), num(d), num(a)]; return o.every((x) => Number.isFinite(x) && x > 1) ? o : null; };
   const ou = (o, u) => { const p = devig2(o, u); return p ? p[0] : null; };
   return {
@@ -82,7 +95,7 @@ function row(league, season, r, date, home, away, hg, ag) {
     hs: num(r.HS), as: num(r.AS), hst: num(r.HST), ast: num(r.AST),
     open, close: closeTrue ?? open, hasClose: !!closeTrue,
     // Pinnacle mot bolagssnitt vid stangning (oenighet), basta pris, over 2,5 mal (sannolikhet)
-    pinClose, avgClose,
+    pinClose, avgClose, sharpClose: co.sharp, closeSrc: co.src,
     bestOpen: odds3(r.MaxH, r.MaxD, r.MaxA) ?? odds3(r.BbMxH, r.BbMxD, r.BbMxA),
     bestClose: odds3(r.MaxCH, r.MaxCD, r.MaxCA),
     avgOpenOdds: odds3(r.AvgH, r.AvgD, r.AvgA) ?? odds3(r.BbAvH, r.BbAvD, r.BbAvA),
