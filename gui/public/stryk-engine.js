@@ -352,32 +352,47 @@ function grundCandidates1(events, maxRows, forced, avoid = null, spikMin = 0, lo
   };
   // Nyckel: halv, hel, reservspikar (spik på favorit som inte bedömts som spikbar, aldrig dina krav) och röda tecken i
   // garderingarna (högst MIN_RED räknas), skrällspikar (högst skrallCount) och, i B, matcher där spiken skiljer sig från A
-  let dp = new Map([["0,0,0,0,0,0,0", { lp: 0, sets: [] }]]);
+  // Nyckeln packas som heltal (bas 14 per fält) och garderingarna som en kedja bakåt (prev) – tecknen räknas ut en gång
+  // per match, inte per tillstånd (förut ~12 s på Stryktipset 4974)
+  const B = 14;
+  let dp = new Map([[0, { lp: 0, prev: null, sub: null, h: 0, f: 0, l: 0, rc: 0, sk: 0, ay: 0, sd: 0 }]]);
   events.forEach((e, i) => {
-    const next = new Map();
-    for (const [key, st] of dp) {
-      const [h, f, l, rc, sk, ay, sd] = key.split(",").map(Number);
-      for (const sub of options(e, i)) {
-        const nh = h + (sub.length === 2), nf = f + (sub.length === 3);
-        const nd = sd + spikDiff(sub, i);
-        if (nd > AB_SPIK_DIFF) continue;
-        // A:s spik i B räknas inte som reservspik (A har redan bedömt den)
-        const free = forced[i] == null && sub.length === 1 && !spikOk(e, sub[0], spikMin) && !inheritA(sub, i);
-        const skr = free && skrallCount > 0 && isSkrall(e, i, sub[0]);
-        const ns = sk + (skr ? 1 : 0), nl = l + (free && !skr ? 1 : 0);
-        if (ns > skrallCount || 2 ** nh * 3 ** nf > maxRows) continue;
-        const lp = st.lp + Math.log(Math.max(1e-9, xTiltOn ? xCover(e, sub) : tiltShare(e, sub, grundTilt))) + (xLam && sub.includes(1) ? xLam * e.final[1] : 0);
+    const subs = options(e, i).map((sub) => {
+      // A:s spik i B räknas inte som reservspik (A har redan bedömt den)
+      const free = forced[i] == null && sub.length === 1 && !spikOk(e, sub[0], spikMin) && !inheritA(sub, i);
+      const skr = free && skrallCount > 0 && isSkrall(e, i, sub[0]);
+      return {
+        sub, dh: sub.length === 2 ? 1 : 0, df: sub.length === 3 ? 1 : 0, dd: spikDiff(sub, i), ds: skr ? 1 : 0, dl: free && !skr ? 1 : 0,
+        dlp: Math.log(Math.max(1e-9, xTiltOn ? xCover(e, sub) : tiltShare(e, sub, grundTilt))), dx: xLam && sub.includes(1) ? xLam * e.final[1] : 0,
         // Räknas per match (två röda tecken på samma match kan aldrig båda gå in – användaren 2026-10-02)
-        const nr = Math.min(minRed, rc + (sub.length > 1 && sub.some((x) => isRed(e, x)) ? 1 : 0));
+        dr: sub.length > 1 && sub.some((x) => isRed(e, x)) ? 1 : 0,
         // Helgula garderingar bara som de blå halvorna (högst BLUE_HALVES) – fler ger ändå alltid en gul per rad (2026-10-02)
-        const nay = ay + (sub.length > 1 && !(forced?.[i] != null) && allYellowMatch(e) ? 1 : 0);
+        day: sub.length > 1 && !(forced?.[i] != null) && allYellowMatch(e) ? 1 : 0,
+      };
+    });
+    const next = new Map();
+    for (const st of dp.values()) {
+      for (const o of subs) {
+        const nd = st.sd + o.dd;
+        if (nd > AB_SPIK_DIFF) continue;
+        const nh = st.h + o.dh, nf = st.f + o.df, ns = st.sk + o.ds, nl = st.l + o.dl;
+        if (ns > skrallCount || 2 ** nh * 3 ** nf > maxRows) continue;
+        const nay = st.ay + o.day;
         if (nay > ayLimit) continue;
-        const k = `${nh},${nf},${nl},${nr},${ns},${nay},${nd}`;
-        if (!next.has(k) || next.get(k).lp < lp) next.set(k, { lp, sets: [...st.sets, sub], nl, nr, ns });
+        const lp = st.lp + o.dlp + o.dx;
+        const nr = Math.min(minRed, st.rc + o.dr);
+        const k = (((((nh * B + nf) * B + nl) * B + nr) * B + ns) * B + nay) * B + nd;
+        const old = next.get(k);
+        if (!old || old.lp < lp) next.set(k, { lp, prev: st, sub: o.sub, h: nh, f: nf, l: nl, rc: nr, sk: ns, ay: nay, sd: nd });
       }
     }
     dp = next;
   });
+  for (const st of dp.values()) {
+    const sets = [];
+    for (let x = st; x.prev; x = x.prev) sets.push(x.sub);
+    st.sets = sets.reverse(); st.nl = st.l; st.nr = st.rc; st.ns = st.sk;
+  }
   const maxSpikes = Math.max(MAX_SPIKES, forced.filter((f) => f?.length === 1).length);
   const minSpikes = Math.min(MIN_SPIKES, forced.filter((f) => !(f?.length > 1)).length);
   const spikes = (st) => st.sets.filter((x) => x.length === 1).length;
@@ -678,16 +693,28 @@ const COLOR_TRIM_EXACT = 3;
 export const CUT_AIM = 0.9; // sedan 2026-10-03 (natt), ca 395 av 350–400 rader
 const cutAim = (minRows, maxRows) => Math.round(minRows + CUT_AIM * (maxRows - minRows));
 // cap = högsta gräns i länken: en regel duger när raderna över cap ryms i budgeten och alla rader (över regeln) räcker
-function exactColorOptions(all, minRows, maxRows, fixed = null, triples = null, cap = Infinity, redAtLeast = 0) {
+// Raderna grupperade per färgtriplett, en gång per radlista och gräns (radlistorna återanvänds via walkCache).
+// Förut grupperades de om vid varje anrop: 12 600 anrop och 115 miljoner rader på Stryktipset 4974 (~40 s).
+const colorGroupCache = new WeakMap();
+function colorGroups(all, cap) {
+  let byCap = colorGroupCache.get(all);
+  if (!byCap) { byCap = new Map(); colorGroupCache.set(all, byCap); }
+  let gl = byCap.get(cap);
+  if (gl) return gl;
   const groups = new Map();
   for (const r of all) {
-    const k = r.c.join(",");
-    const g = groups.get(k) || { c: r.c, n: 0, p: 0, nHi: 0, pHi: 0 };
+    const k = r.c[0] * 196 + r.c[1] * 14 + r.c[2];
+    let g = groups.get(k);
+    if (!g) { g = { c: r.c, n: 0, p: 0, nHi: 0, pHi: 0 }; groups.set(k, g); }
     g.n++; g.p += r.p;
     if (r.payout >= cap) { g.nHi++; g.pHi += r.p; }
-    groups.set(k, g);
   }
-  const gl = [...groups.values()];
+  gl = [...groups.values()];
+  byCap.set(cap, gl);
+  return gl;
+}
+function exactColorOptions(all, minRows, maxRows, fixed = null, triples = null, cap = Infinity, redAtLeast = 0) {
+  const gl = colorGroups(all, cap);
   const lo = [13, 13, 13], hi = [0, 0, 0];
   for (const g of gl) for (let c = 0; c < 3; c++) { if (g.c[c] < lo[c]) lo[c] = g.c[c]; if (g.c[c] > hi[c]) hi[c] = g.c[c]; }
   const ranges = fixed || [0, 1, 2].map((c) => {

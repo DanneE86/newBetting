@@ -70,7 +70,8 @@ test('Stryktipset: en sida, egna krav genererar kupong A och B', async ({ page }
   // Kupongen genereras direkt, utan krav
   await expect(page.locator('.sb-table tbody tr')).toHaveCount(13, { timeout: 240_000 });
   // A och B (2026-10-03): aldrig samma halv- eller helgardering, B ärver A:s spikar – högst 1 match skiljer på spik
-  const pairs = await page.locator('.sb-table tbody tr').evaluateAll((trs) => trs.map((tr) => [tr.children[2].textContent!.trim(), tr.children[3].textContent!.trim()]));
+  // Bara tecknen: ⚠-markeringarna (missprofil per kupong, risklag) har olika procent i A och B
+  const pairs = await page.locator('.sb-table tbody tr').evaluateAll((trs) => trs.map((tr) => [2, 3].map((c) => tr.children[c].textContent!.replace(/⚠.*$/s, '').trim())));
   expect(pairs.filter(([a, b]) => (a.split('+').length === 1 || b.split('+').length === 1) && a !== b).length).toBeLessThanOrEqual(1);
   expect(pairs.filter(([a, b]) => a === b && a.split('+').length > 1).length).toBe(0);
   // Klick på turmatch fäller ut en förklaring i enkla ord
