@@ -5,23 +5,8 @@
 //   const ctx = await fetchMatchContext({ kickoff, home, away, homeCountry, awayCountry })
 // Matchning: FotMobs matchlista for avsparksdagen (UTC), avspark +-2 h och lagnamn (svenska landsnamn oversatta
 // till engelska via Intl.DisplayNames). Returnerar null om matchen inte hittas.
-const UA = {
-  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36',
-  Accept: 'application/json',
-};
+import { fotmobGet as getJson } from './api-schemas.mjs';
 const FM = 'https://www.fotmob.com/api/data';
-
-async function getJson(url) {
-  for (let i = 0; i < 3; i++) {
-    try {
-      const res = await fetch(url, { headers: UA });
-      if (res.ok) return await res.json();
-      if (res.status === 404) return null;
-    } catch { /* forsok igen */ }
-    await new Promise((r) => setTimeout(r, 800 * (i + 1)));
-  }
-  return null;
-}
 
 // Svenska landsnamn -> engelska (FotMob). Hemnationerna ar inte ISO-regioner.
 const COUNTRY_EN = new Map([

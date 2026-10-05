@@ -21,23 +21,24 @@ function mockFetch(r: Routes) {
     calls.push(String(url));
     const u = new URL(String(url));
     let body: any;
-    if (r.status && r.status !== 200) return { ok: false, status: r.status, json: async () => ({}) };
+    if (r.status && r.status !== 200) return new Response('{}', { status: r.status });
     if (u.pathname.endsWith('/matches')) body = r.matches?.[u.searchParams.get('date')!] ?? { leagues: [] };
     else if (u.pathname.endsWith('/matchDetails')) body = r.details?.[u.searchParams.get('matchId')!];
-    else if (u.pathname.endsWith('/teams')) body = r.teams?.[u.searchParams.get('id')!] ?? { fixtures: { allFixtures: { fixtures: [] } } };
-    if (body === undefined) return { ok: false, status: 404, json: async () => ({}) };
-    return { ok: true, status: 200, json: async () => body };
+    else if (u.pathname.endsWith('/teams')) body = r.teams?.[u.searchParams.get('id')!] ?? fixtures([]);
+    if (body === undefined) return new Response('{}', { status: 404 });
+    return new Response(JSON.stringify(body), { status: 200 });
   }) as any;
 }
 test.afterEach(() => { globalThis.fetch = realFetch; });
 
-const fmMatch = (id: number, home: string, away: string, iso: string) => ({ id, home: { name: home }, away: { name: away }, status: { utcTime: utc(iso) } });
+// Svaren har samma nyckelfält som FotMobs riktiga (lag-id, matchId, lagdetaljer) – formatkontrollen i api-schemas.mjs kräver dem
+const fmMatch = (id: number, home: string, away: string, iso: string) => ({ id, home: { id: id * 100 + 1, name: home }, away: { id: id * 100 + 2, name: away }, status: { utcTime: utc(iso) } });
 const dayWith = (league: string, matches: any[]) => ({ leagues: [{ name: league, matches }] });
 
 const player = (name: string, marketValue: number, extra: any = {}) => ({ name, marketValue, ...extra });
 function details(over: any = {}) {
   return {
-    general: { leagueName: 'UEFA Nations League', matchRound: '3' },
+    general: { matchId: 1, leagueName: 'UEFA Nations League', matchRound: '3' },
     content: {
       lineup: {
         lineupType: 'lastStarting11',
@@ -51,7 +52,7 @@ function details(over: any = {}) {
     },
   };
 }
-const fixtures = (list: any[]) => ({ fixtures: { allFixtures: { fixtures: list } } });
+const fixtures = (list: any[]) => ({ details: { id: 1, name: 'Lag' }, fixtures: { allFixtures: { fixtures: list } } });
 const fx = (iso: string, tournament: string, opponent = 'X', cancelled = false) => ({ status: { utcTime: utc(iso), cancelled }, tournament: { name: tournament }, opponent: { name: opponent } });
 
 // ---------- fetchMatchContext ----------

@@ -12,6 +12,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { disciplineFromEvents } from './lib/referee-streaks.mjs';
+import { getJson } from './lib/http.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = path.join(root, 'data', 'open', 'referee_allsvenskan.json');
@@ -24,14 +25,8 @@ const CONCURRENCY = 6;
 const log = (s) => process.stdout.write(`${s}\n`);
 
 async function gql(query, variables) {
-  for (let i = 0; i < 4; i++) {
-    try {
-      const res = await fetch(API, { method: 'POST', headers: { 'content-type': 'application/json', referer: 'https://allsvenskan.se/' }, body: JSON.stringify({ query, variables }) });
-      if (res.ok) { const j = await res.json(); if (j.data) return j.data; }
-    } catch { /* forsok igen */ }
-    await new Promise((r) => setTimeout(r, 1000 * (i + 1)));
-  }
-  return null;
+  const j = await getJson(API, { method: 'POST', headers: { 'content-type': 'application/json', referer: 'https://allsvenskan.se/' }, body: JSON.stringify({ query, variables }), orNull: true });
+  return j?.data ?? null;
 }
 
 const doc = (() => { try { return JSON.parse(fs.readFileSync(OUT, 'utf8')); } catch { return { matches: {} }; } })();

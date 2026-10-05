@@ -23,6 +23,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: npm
+
+      # GUI-servern laddar scripts/lib (zod via http.mjs/api-schemas.mjs) när webbversionen byggs
+      - name: Installera beroenden
+        run: npm ci --omit=dev
 
       - name: Bygg webbversion
         run: node scripts/build-static-site.mjs

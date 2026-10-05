@@ -3,13 +3,14 @@
 // nara spelstopp, oavsett sommar-/vintertid och forsenade GitHub-scheman. Skriver run=true/false till GITHUB_OUTPUT.
 //   node scripts/stryk-close-guard.mjs [--min 15 --max 75]
 import fs from 'node:fs';
+import { getJson } from './lib/http.mjs';
+import { svsSchemas } from './lib/api-schemas.mjs';
 
 const arg = (k, d) => { const i = process.argv.indexOf(`--${k}`); return i > 0 ? Number(process.argv[i + 1]) : d; };
 const MIN = arg('min', 15), MAX = arg('max', 75);
 let run = false, why = 'ingen öppen Stryktipset-kupong';
 try {
-  const res = await fetch('https://api.spela.svenskaspel.se/draw/1/stryktipset/draws', { headers: { 'User-Agent': 'Mozilla/5.0 (betting-ny)' } });
-  const draws = (await res.json()).draws || [];
+  const draws = (await getJson('https://api.spela.svenskaspel.se/draw/1/stryktipset/draws', { headers: { 'User-Agent': 'Mozilla/5.0 (betting-ny)' }, schema: svsSchemas.draws, label: 'Svenska Spel' })).draws;
   for (const d of draws.filter((x) => x.drawState === 'Open')) {
     const mins = (Date.parse(d.regCloseTime) - Date.now()) / 60000;
     why = `omgång ${d.drawNumber} stänger om ${Math.round(mins)} min (${d.regCloseTime})`;

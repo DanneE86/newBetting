@@ -5,6 +5,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { nameScore } from './match-context.mjs';
+import { getText } from './http.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
 const CACHE = path.join(root, 'data', 'open', 'clubelo_all.json');
@@ -24,12 +25,9 @@ function readCache() {
 }
 
 async function fetchCountry(code) {
-  const ctl = new AbortController();
-  const timer = setTimeout(() => ctl.abort(), 45000);
   try {
-    const res = await fetch(`https://clubelo.com/${code}`, { headers: { 'User-Agent': 'Mozilla/5.0' }, signal: ctl.signal, redirect: 'follow' });
-    if (!res.ok) return null;
-    const html = await res.text();
+    const html = await getText(`https://clubelo.com/${code}`, { orNull: true, timeoutMs: 45_000, retries: 1 });
+    if (!html) return null;
     const clubs = [];
     for (const obj of html.match(/\{[^{}]*"Federation":\s*"[^"]+"[^{}]*\}/g) || []) {
       const name = /"Name":\s*"([^"]+)"/.exec(obj)?.[1];
@@ -37,7 +35,7 @@ async function fetchCountry(code) {
       if (name && elo) clubs.push({ name: JSON.parse(`"${name}"`), elo: Math.round(elo * 10) / 10, level: Number(/"Level":\s*(\d+)/.exec(obj)?.[1]) || null });
     }
     return clubs.length ? clubs : null;
-  } catch { return null; } finally { clearTimeout(timer); }
+  } catch { return null; }
 }
 
 export async function clubEloFor(teams, log = () => {}) {

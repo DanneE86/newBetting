@@ -15,6 +15,8 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { normalizeGame, analyzeGame, backtest, resultsOf, streckSnapshot } from "./lib/trav-model.mjs";
 import { logTips, settleTips, hastRecords } from "./lib/tipslogg.mjs";
+import { request } from "./lib/http.mjs";
+import { atgSchemas } from "./lib/api-schemas.mjs";
 
 /** Tipslogg (data/tipslogg/hastar): loppen före start sparas, facit ur analysens resultat. */
 async function tipslogg(a) {
@@ -43,19 +45,10 @@ const writeJson = (f, o) => {
   fs.writeFileSync(f, JSON.stringify(o, null, 1));
 };
 
-async function get(url, tries = 3) {
-  for (let i = 1; ; i++) {
-    try {
-      const r = await fetch(url, { headers: { Accept: "application/json", "User-Agent": "Mozilla/5.0 betting-ny" } });
-      if (r.status === 404) return null;
-      if (!r.ok) throw new Error(`HTTP ${r.status}`);
-      return await r.json();
-    } catch (e) {
-      if (i >= tries) throw new Error(`${url}: ${e.message}`);
-      await new Promise((res) => setTimeout(res, 800 * i));
-    }
-  }
-}
+const atgSchema = (url) => (url.includes("/calendar/day/") ? atgSchemas.calendar : /\/games\/[^/]+$/.test(url) ? atgSchemas.game : undefined);
+const get = (url) =>
+  request(url, { headers: { Accept: "application/json", "User-Agent": "Mozilla/5.0 betting-ny" }, retries: 2, retryDelayMs: 800, schema: atgSchema(url), label: "ATG" })
+    .catch((e) => { if (e.status === 404) return null; throw e; });
 
 async function pool(items, n, fn) {
   const out = new Array(items.length);

@@ -1,6 +1,7 @@
 // Transfermarkt som reserv for trupper dar FotMob saknar data (Ettan Norra/Sodra, vissa CL-lag).
 // Vanlig HTML-hamtning (ingen inloggning). Sidor utan saison_id ger innevarande trupp.
 import { nameScore } from './match-context.mjs';
+import { getText } from './http.mjs';
 
 const BASE = 'https://www.transfermarkt.com';
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36';
@@ -25,17 +26,7 @@ export const TM_TEAM_ID = {
   'AR|Estudiantes Rio Cuarto': '14602', // AA Estudiantes (saknas i TM:s AR1N-lista)
 };
 
-async function getHtml(url) {
-  for (let i = 0; i < 3; i++) {
-    try {
-      const res = await fetch(url, { headers: { 'User-Agent': UA, 'Accept-Language': 'en' }, signal: AbortSignal.timeout(30000) });
-      if (res.ok) return await res.text();
-      if (res.status === 404) return null;
-    } catch { /* forsok igen */ }
-    await sleep(2000 * (i + 1));
-  }
-  return null;
-}
+const getHtml = (url) => getText(url, { headers: { 'User-Agent': UA, 'Accept-Language': 'en' }, orNull: true, retries: 2, retryDelayMs: 2000 });
 
 const decode = (s) => s.replace(/&amp;/g, '&').replace(/&#0?39;/g, "'").replace(/&quot;/g, '"').trim();
 

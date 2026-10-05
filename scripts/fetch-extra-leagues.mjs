@@ -12,6 +12,8 @@ import { TEAM_ALIASES } from './weather/teams.mjs';
 import { uniqueBest } from './lib/team-match.mjs';
 import { teamId } from './lib/team-ids.mjs';
 import { POSTPONE_LOOKBACK_DAYS, mergePostponed, postponedState, withinLookback } from './lib/postponed.mjs';
+import { getText } from './lib/http.mjs';
+import { fotmobGet } from './lib/api-schemas.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const REG = JSON.parse(fs.readFileSync(path.join(root, 'config', 'leagues.json'), 'utf8'));
@@ -56,18 +58,9 @@ const ALIASES = {
 };
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
-async function get(url, as = 'json') {
-  for (let i = 1; i <= 6; i++) {
-    const res = await fetch(url, { headers: UA });
-    if (res.ok) return as === 'json' ? res.json() : res.text();
-    if (i === 6 || (res.status !== 429 && res.status < 500)) throw new Error(`${res.status} ${url}`);
-    // 429 (t.ex. TheSportsDB gratisniva): vanta enligt Retry-After, annars en minut
-    const retry = Number(res.headers.get('retry-after'));
-    const wait = res.status === 429 ? (Number.isFinite(retry) && retry > 0 ? retry * 1000 : 60_000) : 1500 * i;
-    console.log(`  ${res.status} - vantar ${Math.round(wait / 1000)} s`);
-    await sleep(wait);
-  }
-}
+// 429 (t.ex. TheSportsDB gratisniva): vanta enligt Retry-After, annars en minut. FotMob far formatkontroll.
+const HTTP = { headers: UA, orNull: false, retries: 5, retryDelayMs: 1500, throttleMs: 60_000, maxThrottleMs: 60_000 };
+const get = (url, as = 'json') => (as === 'json' ? fotmobGet(url, HTTP) : getText(url, HTTP));
 const ymd = (d) => d.toISOString().slice(0, 10).replaceAll('-', '');
 // æ/ø/å/ß delas inte upp av NFD -> skriv om forst ("Nordsjælland" ~ "Nordsjaelland")
 const norm = (s) => String(s).replace(/æ/gi, 'ae').replace(/ø/gi, 'o').replace(/å/gi, 'a').replace(/ß/g, 'ss')

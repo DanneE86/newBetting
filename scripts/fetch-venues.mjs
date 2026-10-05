@@ -5,6 +5,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { TEAM_WIKI, TEAM_ALIASES, CITY_HINT } from './weather/teams.mjs';
+import { getJson as httpGetJson } from './lib/http.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = path.join(root, 'data', 'open', 'venues.json');
@@ -12,18 +13,8 @@ const OVERRIDES = path.join(root, 'data', 'open', 'venue-overrides.json');
 const UA = 'betting-ny/1.0 (local research script)';
 const FOOTBALL_CLUB = 'Q476028';
 
-async function getJson(url, init = {}) {
-  for (let attempt = 1; attempt <= 6; attempt++) {
-    const res = await fetch(url, { ...init, headers: { 'User-Agent': UA, Accept: 'application/json', ...(init.headers ?? {}) } });
-    if (res.ok) return res.json();
-    if (attempt === 6 || (res.status !== 429 && res.status < 500)) throw new Error(`${res.status} ${url.slice(0, 120)}`);
-    // 429: respektera Retry-After (Wikimedia), annars okande vantan
-    const retry = Number(res.headers.get('retry-after'));
-    const wait = Number.isFinite(retry) && retry > 0 ? retry * 1000 : 5000 * attempt;
-    console.log(`  ${res.status} - vantar ${Math.round(wait / 1000)} s`);
-    await new Promise((r) => setTimeout(r, wait));
-  }
-}
+// 429: Retry-After respekteras (Wikimedia), annars okande vantan
+const getJson = (url) => httpGetJson(url, { headers: { 'User-Agent': UA, Accept: 'application/json' }, retries: 5, retryDelayMs: 5000, throttleMs: 5000 });
 
 // 1) Wikipedia-titel -> Wikidata QID (foljer redirects)
 async function resolveQids(titles) {

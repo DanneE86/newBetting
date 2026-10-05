@@ -8,20 +8,13 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { FILE, isOwnId } from './lib/team-ids.mjs';
 import { sameTeamName } from './lib/team-aliases.mjs';
+import { fotmobGet as get } from './lib/api-schemas.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const CACHE = path.join(root, 'data', 'open', 'fotmob-team-search.json');
 const FM = 'https://www.fotmob.com/api/data';
-const UA = { 'User-Agent': 'Mozilla/5.0 (betting-ny)' };
 const readJson = (f, d) => { try { return JSON.parse(fs.readFileSync(f, 'utf8').replace(/^﻿/, '')); } catch { return d; } };
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
-async function get(url) {
-  for (let i = 1; i <= 3; i++) {
-    try { const res = await fetch(url, { headers: UA }); if (res.ok) return await res.json(); } catch { /* nytt forsok */ }
-    await sleep(1500 * i);
-  }
-  return null;
-}
 
 // FotMob-liga -> landskod (POR, ENG ...), men bara for herrligor som inte ar ungdom/reserv (damlag och
 // U19-lag heter ofta som klubben: Lillestrom har bade 8476 och 8477)

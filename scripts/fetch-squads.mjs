@@ -12,6 +12,7 @@ import { nameScore } from './lib/match-context.mjs';
 import { fold, mapTable } from './lib/fotmob-names.mjs';
 import { FOTMOB_LEAGUES as FOTMOB } from './lib/fotmob-leagues.mjs';
 import { TM_COMP, TM_TEAM_ID, tmClubs, tmSquad } from './lib/transfermarkt.mjs';
+import { fotmobGet as getJson } from './lib/api-schemas.mjs';
 
 const FM = 'https://www.fotmob.com/api/data';
 const TEAM_MAX_AGE_H = 20;
@@ -20,18 +21,6 @@ const DIR_SQ = path.join(root, 'data', 'trupper');
 const DIR_LG = path.join(root, 'data', 'ligor');
 const readJson = (p, d = null) => { try { return JSON.parse(fs.readFileSync(p, 'utf8')); } catch { return d; } };
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
-
-async function getJson(url) {
-  for (let i = 0; i < 3; i++) {
-    try {
-      const res = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0' }, signal: AbortSignal.timeout(30000) });
-      if (res.ok) return await res.json();
-      if (res.status === 404) return null;
-    } catch { /* forsok igen */ }
-    await sleep(1000 * (i + 1));
-  }
-  return null;
-}
 
 // Alla tabellrader (ligor med grupper/konferenser har flera tabeller)
 function tableRows(doc, group) {

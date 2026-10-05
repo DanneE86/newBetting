@@ -6,6 +6,8 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { request as httpRequest } from './http.mjs';
+import { svsSchemas } from './api-schemas.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
 export const ARCHIVE = path.join(root, 'data', 'tips-archive');
@@ -46,20 +48,16 @@ export function readRaw(product, n) {
   try { return JSON.parse(fs.readFileSync(rawFile(product, n), 'utf8')); } catch { return null; }
 }
 
-async function getJson(url) {
-  const res = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0 (betting-ny arkiv)' } });
-  if (res.status === 404) return null;
-  if (!res.ok) throw new Error(`${res.status} ${url}`);
-  return res.json();
-}
+const getJson = (url, schema) => httpRequest(url, { headers: { 'User-Agent': 'Mozilla/5.0 (betting-ny arkiv)' }, retries: 2, schema, label: 'Svenska Spel' })
+  .catch((e) => { if (e.status === 404) return null; throw e; });
 
 // Avgjord kupong med facit: fran arkivet om den finns, annars fran API:t (och sparas). null om den inte ar avgjord.
 export async function loadDraw(product, n, { refresh = false } = {}) {
   const cached = !refresh && readRaw(product, n);
   if (cached?.result?.distribution?.length) return cached;
-  const d = await getJson(`${API}/${product}/draws/${n}`).then((r) => r?.draw).catch(() => null);
+  const d = await getJson(`${API}/${product}/draws/${n}`, svsSchemas.draw).then((r) => r?.draw).catch(() => null);
   if (!d) return null;
-  const res = await getJson(`${API}/${product}/draws/${n}/result`).then((r) => r?.result || r).catch(() => null);
+  const res = await getJson(`${API}/${product}/draws/${n}/result`, svsSchemas.result).then((r) => r?.result || r).catch(() => null);
   const entry = { product, drawNumber: n, archivedAt: new Date().toISOString(), draw: slimDraw(d), result: res?.distribution?.length ? slimResult(res) : null };
   if (entry.result) write(rawFile(product, n), entry);
   return entry;
