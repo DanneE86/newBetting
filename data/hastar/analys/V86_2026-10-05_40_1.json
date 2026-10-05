@@ -4,7 +4,7 @@
  "date": "2026-10-05",
  "track": "Gävle",
  "status": "bettable",
- "turnover": 3979428,
+ "turnover": 6196165,
  "races": [
   {
    "leg": 1,
@@ -15,7 +15,7 @@
    "startMethod": "auto",
    "startTime": "2026-10-05T20:30:00",
    "firstPrize": 40000,
-   "winTurnover": 32532,
+   "winTurnover": 53968,
    "track": "Gävle",
    "status": "upcoming",
    "condition": "light",
@@ -58,8 +58,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 4.76,
-     "streck": 0.2011,
+     "odds": 4.09,
+     "streck": 0.2109,
      "result": null,
      "horseId": 791727,
      "father": "Who's Who",
@@ -97,18 +97,18 @@
      "trainerWin": 0.174,
      "klass": 10.494191070394644,
      "postIndex": 0.231,
-     "p": 0.276,
-     "marketP": 0.178,
-     "marketPct": 0.201,
+     "p": 0.284,
+     "marketP": 0.207,
+     "marketPct": 0.211,
      "marketSource": "streck",
-     "value": 1.371,
+     "value": 1.346,
      "isValue": true,
      "scores": {
       "form": 26,
       "fart": 72,
       "kusk": 60,
       "spar": 90,
-      "value": 69,
+      "value": 67,
       "total": 70,
       "tempo": 55
      },
@@ -280,8 +280,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 6.49,
-     "streck": 0.2165,
+     "odds": 7.27,
+     "streck": 0.1916,
      "result": null,
      "horseId": 793625,
      "father": "Explosive Matter",
@@ -331,11 +331,11 @@
      "trainerWin": 0.161,
      "klass": 10.212320974701912,
      "postIndex": 0.159,
-     "p": 0.198,
-     "marketP": 0.131,
-     "marketPct": 0.216,
+     "p": 0.176,
+     "marketP": 0.117,
+     "marketPct": 0.192,
      "marketSource": "streck",
-     "value": 0.914,
+     "value": 0.917,
      "isValue": false,
      "scores": {
       "form": 70,
@@ -349,7 +349,7 @@
      "position": "Bakom",
      "tempoScore": 36,
      "poang": {
-      "total": 77,
+      "total": 74,
       "tempo": 36,
       "form": 84,
       "fart": 60,
@@ -358,7 +358,7 @@
       "kusk": 22,
       "tranare": 72,
       "utrustning": 25,
-      "marknad": 71
+      "marknad": 69
      },
      "rank": "B",
      "comments": [
@@ -512,8 +512,8 @@
       "text": "Amerikansk",
       "changed": false
      },
-     "odds": 6.48,
-     "streck": 0.1135,
+     "odds": 7.08,
+     "streck": 0.1327,
      "result": null,
      "horseId": 790954,
      "father": "Don Fanucci Zet",
@@ -551,25 +551,25 @@
      "trainerWin": 0.103,
      "klass": 10.251829422656254,
      "postIndex": 0.169,
-     "p": 0.149,
-     "marketP": 0.131,
-     "marketPct": 0.113,
+     "p": 0.168,
+     "marketP": 0.12,
+     "marketPct": 0.133,
      "marketSource": "streck",
-     "value": 1.313,
+     "value": 1.269,
      "isValue": true,
      "scores": {
       "form": 50,
       "fart": 79,
       "kusk": 24,
       "spar": 55,
-      "value": 66,
+      "value": 63,
       "total": 65,
       "tempo": 50
      },
      "position": "I kön (inner)",
      "tempoScore": 50,
      "poang": {
-      "total": 71,
+      "total": 73,
       "tempo": 50,
       "form": 40,
       "fart": 72,
@@ -578,7 +578,7 @@
       "kusk": 49,
       "tranare": 38,
       "utrustning": 82,
-      "marknad": 60
+      "marknad": 63
      },
      "rank": "B",
      "comments": [
@@ -733,8 +733,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 5.18,
-     "streck": 0.1441,
+     "odds": 5.04,
+     "streck": 0.1465,
      "result": null,
      "horseId": 784545,
      "father": "Maharajah",
@@ -791,17 +791,17 @@
      "klass": 9.72933831121884,
      "postIndex": 0.144,
      "p": 0.097,
-     "marketP": 0.164,
-     "marketPct": 0.144,
+     "marketP": 0.168,
+     "marketPct": 0.147,
      "marketSource": "streck",
-     "value": 0.672,
+     "value": 0.661,
      "isValue": false,
      "scores": {
       "form": 74,
       "fart": 36,
       "kusk": 36,
       "spar": 40,
-      "value": 34,
+      "value": 33,
       "total": 36,
       "tempo": 80
      },
@@ -970,8 +970,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 5.1,
-     "streck": 0.1098,
+     "odds": 5.5,
+     "streck": 0.1212,
      "result": null,
      "horseId": 780843,
      "father": "Uncle Lasse",
@@ -1021,25 +1021,25 @@
      "trainerWin": 0.161,
      "klass": 9.984744906843062,
      "postIndex": 0.151,
-     "p": 0.086,
-     "marketP": 0.166,
-     "marketPct": 0.11,
+     "p": 0.093,
+     "marketP": 0.154,
+     "marketPct": 0.121,
      "marketSource": "streck",
-     "value": 0.784,
+     "value": 0.763,
      "isValue": false,
      "scores": {
       "form": 50,
       "fart": 41,
       "kusk": 91,
       "spar": 44,
-      "value": 39,
-      "total": 42,
+      "value": 38,
+      "total": 41,
       "tempo": 32
      },
      "position": "Bakom",
      "tempoScore": 32,
      "poang": {
-      "total": 59,
+      "total": 61,
       "tempo": 32,
       "form": 33,
       "fart": 32,
@@ -1048,9 +1048,9 @@
       "kusk": 83,
       "tranare": 72,
       "utrustning": 25,
-      "marknad": 60
+      "marknad": 61
      },
-     "rank": "C",
+     "rank": "B",
      "comments": [
       "Galopp senast",
       "Galopp i 2 av 5 senaste"
@@ -1200,8 +1200,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 10.23,
-     "streck": 0.0719,
+     "odds": 8.64,
+     "streck": 0.0786,
      "result": null,
      "horseId": 784079,
      "father": "Maharajah",
@@ -1245,25 +1245,25 @@
      "trainerWin": 0.153,
      "klass": 10.02979680316363,
      "postIndex": 0.223,
-     "p": 0.083,
-     "marketP": 0.083,
-     "marketPct": 0.072,
+     "p": 0.089,
+     "marketP": 0.098,
+     "marketPct": 0.079,
      "marketSource": "streck",
-     "value": 1.161,
-     "isValue": true,
+     "value": 1.13,
+     "isValue": false,
      "scores": {
       "form": 45,
       "fart": 52,
       "kusk": 42,
       "spar": 85,
-      "value": 58,
-      "total": 58,
+      "value": 57,
+      "total": 57,
       "tempo": 45
      },
      "position": "I kön (utvändigt)",
      "tempoScore": 45,
      "poang": {
-      "total": 59,
+      "total": 60,
       "tempo": 45,
       "form": 51,
       "fart": 43,
@@ -1272,7 +1272,7 @@
       "kusk": 59,
       "tranare": 67,
       "utrustning": 50,
-      "marknad": 53
+      "marknad": 54
      },
      "rank": "C",
      "comments": [
@@ -1427,8 +1427,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 20.56,
-     "streck": 0.1067,
+     "odds": 26.04,
+     "streck": 0.0847,
      "result": null,
      "horseId": 780760,
      "father": "Executive Caviar",
@@ -1484,11 +1484,11 @@
      "trainerWin": 0.112,
      "klass": 9.542659711530899,
      "postIndex": 0.137,
-     "p": 0.074,
-     "marketP": 0.041,
-     "marketPct": 0.107,
+     "p": 0.06,
+     "marketP": 0.033,
+     "marketPct": 0.085,
      "marketSource": "streck",
-     "value": 0.692,
+     "value": 0.704,
      "isValue": false,
      "scores": {
       "form": 86,
@@ -1502,7 +1502,7 @@
      "position": "Rygg ledaren",
      "tempoScore": 75,
      "poang": {
-      "total": 56,
+      "total": 52,
       "tempo": 75,
       "form": 78,
       "fart": 50,
@@ -1511,7 +1511,7 @@
       "kusk": 61,
       "tranare": 43,
       "utrustning": 50,
-      "marknad": 59
+      "marknad": 55
      },
      "rank": "C",
      "comments": [
@@ -1665,8 +1665,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 17.52,
-     "streck": 0.0194,
+     "odds": 23.78,
+     "streck": 0.0175,
      "result": null,
      "horseId": 778808,
      "father": "Panne de Moteur",
@@ -1716,9 +1716,9 @@
      "trainerWin": 0.102,
      "klass": 9.615642800186023,
      "postIndex": 0.127,
-     "p": 0.017,
-     "marketP": 0.048,
-     "marketPct": 0.019,
+     "p": 0.015,
+     "marketP": 0.036,
+     "marketPct": 0.018,
      "marketSource": "streck",
      "value": 0.884,
      "isValue": false,
@@ -1734,7 +1734,7 @@
      "position": "Bakom",
      "tempoScore": 40,
      "poang": {
-      "total": 26,
+      "total": 24,
       "tempo": 40,
       "form": 32,
       "fart": 18,
@@ -1743,7 +1743,7 @@
       "kusk": 33,
       "tranare": 38,
       "utrustning": 25,
-      "marknad": 31
+      "marknad": 30
      },
      "rank": "D",
      "comments": [
@@ -1897,8 +1897,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 20.5,
-     "streck": 0.0114,
+     "odds": 15.53,
+     "streck": 0.0113,
      "result": null,
      "horseId": 777733,
      "father": "Bold Eagle",
@@ -1943,24 +1943,24 @@
      "klass": 9.634505538991016,
      "postIndex": 0.144,
      "p": 0.011,
-     "marketP": 0.041,
+     "marketP": 0.055,
      "marketPct": 0.011,
      "marketSource": "streck",
-     "value": 0.973,
+     "value": 0.956,
      "isValue": false,
      "scores": {
       "form": 32,
       "fart": 62,
       "kusk": 50,
       "spar": 40,
-      "value": 49,
-      "total": 42,
+      "value": 48,
+      "total": 41,
       "tempo": 28
      },
      "position": "Bakom",
      "tempoScore": 28,
      "poang": {
-      "total": 17,
+      "total": 16,
       "tempo": 28,
       "form": 29,
       "fart": 72,
@@ -1969,7 +1969,7 @@
       "kusk": 32,
       "tranare": 17,
       "utrustning": 60,
-      "marknad": 22
+      "marknad": 23
      },
      "rank": "D",
      "comments": [
@@ -2126,8 +2126,8 @@
       "text": "Amerikansk",
       "changed": false
      },
-     "odds": 55.52,
-     "streck": 0.0056,
+     "odds": 68.43,
+     "streck": 0.005,
      "result": null,
      "horseId": 786409,
      "father": "Executive Caviar",
@@ -2171,11 +2171,11 @@
      "trainerWin": 0.088,
      "klass": 9.965198172678148,
      "postIndex": 0.125,
-     "p": 0.009,
-     "marketP": 0.015,
-     "marketPct": 0.006,
+     "p": 0.008,
+     "marketP": 0.012,
+     "marketPct": 0.005,
      "marketSource": "streck",
-     "value": 1.603,
+     "value": 1.601,
      "isValue": false,
      "scores": {
       "form": 42,
@@ -2189,7 +2189,7 @@
      "position": "Bakom",
      "tempoScore": 24,
      "poang": {
-      "total": 12,
+      "total": 10,
       "tempo": 24,
       "form": 37,
       "fart": 63,
@@ -2320,11 +2320,11 @@
     }
    ],
    "favorite": {
-    "nr": 8,
-    "horse": "Ecuador Broline",
+    "nr": 4,
+    "horse": "Time to Run",
     "status": "NORMAL FAVORIT",
     "why": [
-     "modellen 20 % mot folkets 22 %"
+     "riskerar dödens"
     ]
    },
    "tempo": {
@@ -2364,7 +2364,7 @@
     ]
    },
    "hasOdds": true,
-   "oddsWeight": 0.098
+   "oddsWeight": 0.152
   },
   {
    "leg": 2,
@@ -2375,7 +2375,7 @@
    "startMethod": "volte",
    "startTime": "2026-10-05T20:41:00",
    "firstPrize": 60000,
-   "winTurnover": 39226,
+   "winTurnover": 57456,
    "track": "Färjestad",
    "status": "upcoming",
    "condition": "light",
@@ -2418,8 +2418,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 1.92,
-     "streck": 0.5659,
+     "odds": 1.77,
+     "streck": 0.5595,
      "result": null,
      "horseId": 797796,
      "father": "Maharajah",
@@ -2451,11 +2451,11 @@
      "trainerWin": 0.219,
      "klass": 9.83097062169695,
      "postIndex": 0.178,
-     "p": 0.54,
-     "marketP": 0.442,
-     "marketPct": 0.566,
+     "p": 0.535,
+     "marketP": 0.478,
+     "marketPct": 0.56,
      "marketSource": "streck",
-     "value": 0.954,
+     "value": 0.956,
      "isValue": false,
      "scores": {
       "form": 82,
@@ -2478,7 +2478,7 @@
       "kusk": 56,
       "tranare": 92,
       "utrustning": 64,
-      "marknad": 88
+      "marknad": 87
      },
      "rank": "A",
      "comments": [
@@ -2634,8 +2634,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 6.31,
-     "streck": 0.2104,
+     "odds": 6.8,
+     "streck": 0.2113,
      "result": null,
      "horseId": 791897,
      "father": "Fourth Dimension",
@@ -2674,8 +2674,8 @@
      "klass": 10.150820565491253,
      "postIndex": 0.178,
      "p": 0.199,
-     "marketP": 0.134,
-     "marketPct": 0.21,
+     "marketP": 0.125,
+     "marketPct": 0.211,
      "marketSource": "streck",
      "value": 0.943,
      "isValue": false,
@@ -2858,8 +2858,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 6.74,
-     "streck": 0.0766,
+     "odds": 8.25,
+     "streck": 0.0801,
      "result": null,
      "horseId": 792252,
      "father": "Winter Harbor",
@@ -2891,25 +2891,25 @@
      "trainerWin": 0.154,
      "klass": 9.214874079176726,
      "postIndex": 0.107,
-     "p": 0.088,
-     "marketP": 0.126,
-     "marketPct": 0.077,
+     "p": 0.092,
+     "marketP": 0.103,
+     "marketPct": 0.08,
      "marketSource": "streck",
-     "value": 1.151,
-     "isValue": true,
+     "value": 1.144,
+     "isValue": false,
      "scores": {
       "form": 62,
       "fart": 48,
       "kusk": 70,
       "spar": 27,
-      "value": 58,
+      "value": 57,
       "total": 56,
       "tempo": 45
      },
      "position": "I kön (utvändigt)",
      "tempoScore": 45,
      "poang": {
-      "total": 60,
+      "total": 61,
       "tempo": 45,
       "form": 56,
       "fart": 58,
@@ -2920,7 +2920,7 @@
       "utrustning": 37,
       "marknad": 68
      },
-     "rank": "C",
+     "rank": "B",
      "comments": [
       "Byter till voltstart",
       "Tät start (8 dagar)"
@@ -3073,8 +3073,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 11.15,
-     "streck": 0.0701,
+     "odds": 10.16,
+     "streck": 0.0739,
      "result": null,
      "horseId": 799643,
      "father": "Andover Hall",
@@ -3106,25 +3106,25 @@
      "trainerWin": 0.063,
      "klass": 9.275753510524416,
      "postIndex": 0.223,
-     "p": 0.079,
-     "marketP": 0.076,
-     "marketPct": 0.07,
+     "p": 0.083,
+     "marketP": 0.083,
+     "marketPct": 0.074,
      "marketSource": "streck",
-     "value": 1.133,
+     "value": 1.125,
      "isValue": false,
      "scores": {
       "form": 68,
       "fart": 28,
       "kusk": 32,
       "spar": 88,
-      "value": 57,
+      "value": 56,
       "total": 55,
       "tempo": 32
      },
      "position": "Bakom",
      "tempoScore": 32,
      "poang": {
-      "total": 58,
+      "total": 59,
       "tempo": 32,
       "form": 59,
       "fart": 30,
@@ -3288,8 +3288,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 11.16,
-     "streck": 0.0357,
+     "odds": 11.6,
+     "streck": 0.0364,
      "result": null,
      "horseId": 799116,
      "father": "Maharajah",
@@ -3321,11 +3321,11 @@
      "trainerWin": 0.128,
      "klass": 9.115040192121858,
      "postIndex": 0.149,
-     "p": 0.046,
-     "marketP": 0.076,
+     "p": 0.047,
+     "marketP": 0.073,
      "marketPct": 0.036,
      "marketSource": "streck",
-     "value": 1.288,
+     "value": 1.282,
      "isValue": true,
      "scores": {
       "form": 41,
@@ -3339,7 +3339,7 @@
      "position": "Rygg ledaren",
      "tempoScore": 75,
      "poang": {
-      "total": 46,
+      "total": 47,
       "tempo": 75,
       "form": 36,
       "fart": 47,
@@ -3506,8 +3506,8 @@
       "text": "Vanlig",
       "changed": true
      },
-     "odds": 24.73,
-     "streck": 0.0133,
+     "odds": 28.93,
+     "streck": 0.0136,
      "result": null,
      "horseId": 789906,
      "father": "Propulsion",
@@ -3552,17 +3552,17 @@
      "klass": 9.589225337229003,
      "postIndex": 0.223,
      "p": 0.014,
-     "marketP": 0.034,
-     "marketPct": 0.013,
+     "marketP": 0.029,
+     "marketPct": 0.014,
      "marketSource": "streck",
-     "value": 1.071,
+     "value": 1.064,
      "isValue": false,
      "scores": {
       "form": 73,
       "fart": 79,
       "kusk": 45,
       "spar": 88,
-      "value": 54,
+      "value": 53,
       "total": 45,
       "tempo": 36
      },
@@ -3578,7 +3578,7 @@
       "kusk": 62,
       "tranare": 54,
       "utrustning": 61,
-      "marknad": 50
+      "marknad": 51
      },
      "rank": "D",
      "comments": [
@@ -3737,8 +3737,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 39.66,
-     "streck": 0.0082,
+     "odds": 37.78,
+     "streck": 0.0073,
      "result": null,
      "horseId": 777254,
      "father": "One too Many",
@@ -3776,11 +3776,11 @@
      "trainerWin": 0.133,
      "klass": 9.401436651374892,
      "postIndex": 0.107,
-     "p": 0.012,
-     "marketP": 0.021,
-     "marketPct": 0.008,
+     "p": 0.011,
+     "marketP": 0.022,
+     "marketPct": 0.007,
      "marketSource": "streck",
-     "value": 1.491,
+     "value": 1.508,
      "isValue": false,
      "scores": {
       "form": 58,
@@ -3794,7 +3794,7 @@
      "position": "Bakom",
      "tempoScore": 20,
      "poang": {
-      "total": 19,
+      "total": 16,
       "tempo": 20,
       "form": 61,
       "fart": 78,
@@ -3949,8 +3949,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 46.35,
-     "streck": 0.0104,
+     "odds": 48.29,
+     "streck": 0.0097,
      "result": null,
      "horseId": 777009,
      "father": "Broadway Hall",
@@ -3982,11 +3982,11 @@
      "trainerWin": null,
      "klass": 8.478094710792256,
      "postIndex": 0.144,
-     "p": 0.008,
+     "p": 0.007,
      "marketP": 0.018,
      "marketPct": 0.01,
      "marketSource": "streck",
-     "value": 0.744,
+     "value": 0.747,
      "isValue": false,
      "scores": {
       "form": 64,
@@ -4000,7 +4000,7 @@
      "position": "Bakom",
      "tempoScore": 28,
      "poang": {
-      "total": 9,
+      "total": 8,
       "tempo": 28,
       "form": 69,
       "fart": 46,
@@ -4009,7 +4009,7 @@
       "kusk": 56,
       "tranare": 50,
       "utrustning": 37,
-      "marknad": 48
+      "marknad": 47
      },
      "rank": "D",
      "comments": [
@@ -4157,8 +4157,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 51.61,
-     "streck": 0.0028,
+     "odds": 57.92,
+     "streck": 0.0023,
      "result": null,
      "horseId": 793104,
      "father": "Sliding Home",
@@ -4191,17 +4191,17 @@
      "klass": 8.524508370135457,
      "postIndex": 0.14,
      "p": 0.004,
-     "marketP": 0.016,
-     "marketPct": 0.003,
+     "marketP": 0.015,
+     "marketPct": 0.002,
      "marketSource": "streck",
-     "value": 1.528,
+     "value": 1.562,
      "isValue": false,
      "scores": {
       "form": 33,
       "fart": 39,
       "kusk": 52,
       "spar": 44,
-      "value": 76,
+      "value": 78,
       "total": 54,
       "tempo": 55
      },
@@ -4217,7 +4217,7 @@
       "kusk": 51,
       "tranare": 34,
       "utrustning": 61,
-      "marknad": 34
+      "marknad": 33
      },
      "rank": "D",
      "comments": [
@@ -4370,7 +4370,7 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 57.57,
+     "odds": 55.03,
      "streck": 0.0017,
      "result": null,
      "horseId": 791849,
@@ -4407,15 +4407,15 @@
      "marketP": 0.015,
      "marketPct": 0.002,
      "marketSource": "streck",
-     "value": 1.553,
+     "value": 1.54,
      "isValue": false,
      "scores": {
       "form": 52,
       "fart": 43,
       "kusk": 30,
       "spar": 30,
-      "value": 78,
-      "total": 53,
+      "value": 77,
+      "total": 52,
       "tempo": 50
      },
      "position": "I kön (inner)",
@@ -4430,7 +4430,7 @@
       "kusk": 28,
       "tranare": 34,
       "utrustning": 37,
-      "marknad": 29
+      "marknad": 30
      },
      "rank": "D",
      "comments": [],
@@ -4582,8 +4582,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 88.45,
-     "streck": 0.0021,
+     "odds": 99.99,
+     "streck": 0.0019,
      "result": null,
      "horseId": 751321,
      "father": "Up and Quick",
@@ -4639,11 +4639,11 @@
      "trainerWin": 0.022,
      "klass": 8.183101319477762,
      "postIndex": 0.14,
-     "p": 0.003,
-     "marketP": 0.01,
+     "p": 0.002,
+     "marketP": 0.008,
      "marketPct": 0.002,
      "marketSource": "streck",
-     "value": 1.276,
+     "value": 1.285,
      "isValue": false,
      "scores": {
       "form": 18,
@@ -4824,8 +4824,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 39.04,
-     "streck": 0.0014,
+     "odds": 57.62,
+     "streck": 0.0011,
      "result": null,
      "horseId": 773931,
      "father": "Classic Photo",
@@ -4870,17 +4870,17 @@
      "klass": 8.282627151155694,
      "postIndex": 0.149,
      "p": 0.002,
-     "marketP": 0.022,
+     "marketP": 0.015,
      "marketPct": 0.001,
      "marketSource": "streck",
-     "value": 1.558,
+     "value": 1.602,
      "isValue": false,
      "scores": {
       "form": 12,
       "fart": 18,
       "kusk": 41,
       "spar": 49,
-      "value": 78,
+      "value": 80,
       "total": 52,
       "tempo": 20
      },
@@ -4896,7 +4896,7 @@
       "kusk": 29,
       "tranare": 31,
       "utrustning": 61,
-      "marknad": 27
+      "marknad": 26
      },
      "rank": "D",
      "comments": [
@@ -5055,8 +5055,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 86.88,
-     "streck": 0.0011,
+     "odds": 53.45,
+     "streck": 0.001,
      "result": null,
      "horseId": 788865,
      "father": "Gift Kronos",
@@ -5107,10 +5107,10 @@
      "klass": 8.627571098885847,
      "postIndex": 0.113,
      "p": 0.001,
-     "marketP": 0.01,
+     "marketP": 0.016,
      "marketPct": 0.001,
      "marketSource": "streck",
-     "value": 1.362,
+     "value": 1.369,
      "isValue": false,
      "scores": {
       "form": 47,
@@ -5289,7 +5289,7 @@
       "changed": false
      },
      "odds": null,
-     "streck": 0.0004,
+     "streck": 0.0003,
      "result": null,
      "horseId": 779261,
      "father": "Daley Lovin",
@@ -5455,7 +5455,7 @@
     "horse": "Mireya Wibb",
     "status": "STARK FAVORIT",
     "why": [
-     "modellen 54 % mot folkets 57 %"
+     "modellen 53 % mot folkets 56 %"
     ]
    },
    "tempo": {
@@ -5485,7 +5485,7 @@
     ]
    },
    "hasOdds": true,
-   "oddsWeight": 0.116
+   "oddsWeight": 0.161
   },
   {
    "leg": 3,
@@ -5496,7 +5496,7 @@
    "startMethod": "auto",
    "startTime": "2026-10-05T20:52:00",
    "firstPrize": 40000,
-   "winTurnover": 31565,
+   "winTurnover": 45528,
    "track": "Gävle",
    "status": "upcoming",
    "condition": "light",
@@ -5539,8 +5539,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 1.92,
-     "streck": 0.4611,
+     "odds": 1.95,
+     "streck": 0.5024,
      "result": null,
      "horseId": 793861,
      "father": "Trixton",
@@ -5578,25 +5578,25 @@
      "trainerWin": 0.123,
      "klass": 9.989529459741753,
      "postIndex": 0.223,
-     "p": 0.458,
-     "marketP": 0.442,
-     "marketPct": 0.461,
+     "p": 0.494,
+     "marketP": 0.435,
+     "marketPct": 0.502,
      "marketSource": "streck",
-     "value": 0.993,
+     "value": 0.984,
      "isValue": false,
      "scores": {
       "form": 71,
       "fart": 90,
       "kusk": 64,
       "spar": 87,
-      "value": 50,
+      "value": 49,
       "total": 63,
       "tempo": 75
      },
      "position": "Rygg ledaren",
      "tempoScore": 75,
      "poang": {
-      "total": 94,
+      "total": 96,
       "tempo": 75,
       "form": 79,
       "fart": 90,
@@ -5759,8 +5759,8 @@
       "text": "Amerikansk",
       "changed": false
      },
-     "odds": 6.6,
-     "streck": 0.2752,
+     "odds": 5.71,
+     "streck": 0.2582,
      "result": null,
      "horseId": 794752,
      "father": "Booster Winner",
@@ -5792,25 +5792,25 @@
      "trainerWin": 0.138,
      "klass": 9.958956790521496,
      "postIndex": 0.127,
-     "p": 0.311,
-     "marketP": 0.128,
-     "marketPct": 0.275,
+     "p": 0.293,
+     "marketP": 0.149,
+     "marketPct": 0.258,
      "marketSource": "streck",
-     "value": 1.13,
+     "value": 1.136,
      "isValue": false,
      "scores": {
       "form": 55,
       "fart": 63,
       "kusk": 39,
       "spar": 37,
-      "value": 56,
+      "value": 57,
       "total": 67,
       "tempo": 80
      },
      "position": "Ledning",
      "tempoScore": 80,
      "poang": {
-      "total": 86,
+      "total": 85,
       "tempo": 80,
       "form": 54,
       "fart": 62,
@@ -5819,7 +5819,7 @@
       "kusk": 50,
       "tranare": 59,
       "utrustning": 80,
-      "marknad": 81
+      "marknad": 80
      },
      "rank": "A",
      "comments": [
@@ -5972,8 +5972,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 16.11,
-     "streck": 0.0939,
+     "odds": 15.31,
+     "streck": 0.0773,
      "result": null,
      "horseId": 792773,
      "father": "Bold Eagle",
@@ -6023,25 +6023,25 @@
      "trainerWin": 0.107,
      "klass": 9.74298599853204,
      "postIndex": 0.125,
-     "p": 0.07,
-     "marketP": 0.053,
-     "marketPct": 0.094,
+     "p": 0.059,
+     "marketP": 0.055,
+     "marketPct": 0.077,
      "marketSource": "streck",
-     "value": 0.741,
+     "value": 0.757,
      "isValue": false,
      "scores": {
       "form": 85,
       "fart": 79,
       "kusk": 28,
       "spar": 36,
-      "value": 37,
+      "value": 38,
       "total": 43,
       "tempo": 40
      },
      "position": "Bakom",
      "tempoScore": 40,
      "poang": {
-      "total": 55,
+      "total": 51,
       "tempo": 40,
       "form": 76,
       "fart": 80,
@@ -6050,7 +6050,7 @@
       "kusk": 31,
       "tranare": 41,
       "utrustning": 26,
-      "marknad": 67
+      "marknad": 65
      },
      "rank": "C",
      "comments": [
@@ -6204,8 +6204,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 7.94,
-     "streck": 0.051,
+     "odds": 9.65,
+     "streck": 0.0527,
      "result": null,
      "horseId": 787201,
      "father": "Brillantissime",
@@ -6249,18 +6249,18 @@
      "trainerWin": 0.115,
      "klass": 9.985093806464677,
      "postIndex": 0.144,
-     "p": 0.045,
-     "marketP": 0.107,
-     "marketPct": 0.051,
+     "p": 0.046,
+     "marketP": 0.088,
+     "marketPct": 0.053,
      "marketSource": "streck",
-     "value": 0.879,
+     "value": 0.87,
      "isValue": false,
      "scores": {
       "form": 46,
       "fart": 35,
       "kusk": 45,
       "spar": 46,
-      "value": 44,
+      "value": 43,
       "total": 48,
       "tempo": 20
      },
@@ -6276,7 +6276,7 @@
       "kusk": 84,
       "tranare": 45,
       "utrustning": 44,
-      "marknad": 59
+      "marknad": 60
      },
      "rank": "C",
      "comments": [
@@ -6431,8 +6431,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 14.8,
-     "streck": 0.0343,
+     "odds": 12.41,
+     "streck": 0.0331,
      "result": null,
      "horseId": 773023,
      "father": "Orlando Vici",
@@ -6476,11 +6476,11 @@
      "trainerWin": 0.11,
      "klass": 8.98140885264509,
      "postIndex": 0.137,
-     "p": 0.03,
-     "marketP": 0.057,
-     "marketPct": 0.034,
+     "p": 0.029,
+     "marketP": 0.068,
+     "marketPct": 0.033,
      "marketSource": "streck",
-     "value": 0.869,
+     "value": 0.866,
      "isValue": false,
      "scores": {
       "form": 47,
@@ -6494,7 +6494,7 @@
      "position": "I kön (inner)",
      "tempoScore": 50,
      "poang": {
-      "total": 37,
+      "total": 36,
       "tempo": 50,
       "form": 56,
       "fart": 25,
@@ -6503,7 +6503,7 @@
       "kusk": 46,
       "tranare": 43,
       "utrustning": 81,
-      "marknad": 53
+      "marknad": 54
      },
      "rank": "D",
      "comments": [
@@ -6655,7 +6655,7 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 13.68,
+     "odds": 14.2,
      "streck": 0.026,
      "result": null,
      "horseId": 791150,
@@ -6694,11 +6694,11 @@
      "trainerWin": 0.163,
      "klass": 9.920065869679517,
      "postIndex": 0.102,
-     "p": 0.03,
-     "marketP": 0.062,
+     "p": 0.029,
+     "marketP": 0.06,
      "marketPct": 0.026,
      "marketSource": "streck",
-     "value": 1.143,
+     "value": 1.131,
      "isValue": false,
      "scores": {
       "form": 60,
@@ -6721,7 +6721,7 @@
       "kusk": 32,
       "tranare": 73,
       "utrustning": 44,
-      "marknad": 49
+      "marknad": 51
      },
      "rank": "D",
      "comments": [
@@ -6842,6 +6842,247 @@
      ]
     },
     {
+     "nr": 8,
+     "post": 8,
+     "distance": 2140,
+     "scratched": false,
+     "horse": "Bohemian Maid",
+     "age": 4,
+     "sex": "mare",
+     "money": 351000,
+     "lifeStarts": 31,
+     "lifeWins": 2,
+     "earningsPerStart": 11322.58,
+     "record": 72.8,
+     "driver": "Oskar Kylin Blom",
+     "driverId": 568723,
+     "driverYear": {
+      "starts": 632,
+      "wins": 51,
+      "year": 2026
+     },
+     "trainer": "Oskar Kylin Blom",
+     "trainerYear": {
+      "starts": 583,
+      "wins": 60,
+      "year": 2026
+     },
+     "shoes": {
+      "front": false,
+      "back": false,
+      "changed": false
+     },
+     "sulky": {
+      "text": "Amerikansk",
+      "changed": true
+     },
+     "odds": 21.2,
+     "streck": 0.0128,
+     "result": null,
+     "horseId": 792956,
+     "father": "Perfect Spirit",
+     "grandfather": "Pearsall Hanover",
+     "horseHome": "Gävle",
+     "trainerId": 568723,
+     "trainerHome": "Gävle",
+     "driverHome": "Gävle",
+     "avgOdds5": 22.75,
+     "lifeRecords": [
+      {
+       "method": "auto",
+       "dist": "short",
+       "km": 72.8,
+       "year": 2026
+      },
+      {
+       "method": "auto",
+       "dist": "medium",
+       "km": 73.4,
+       "year": 2025
+      },
+      {
+       "method": "auto",
+       "dist": "long",
+       "km": 75,
+       "year": 2026
+      },
+      {
+       "method": "volte",
+       "dist": "short",
+       "km": 75.5,
+       "year": 2025
+      },
+      {
+       "method": "volte",
+       "dist": "medium",
+       "km": 73.7,
+       "year": 2026
+      },
+      {
+       "method": "volte",
+       "dist": "long",
+       "km": 75.5,
+       "year": 2026
+      }
+     ],
+     "handicap": 0,
+     "formScore": 39,
+     "gallopRisk": 0.167,
+     "speed": 74,
+     "driverWin": 0.081,
+     "trainerWin": 0.103,
+     "klass": 9.334642556176249,
+     "postIndex": 0.159,
+     "p": 0.016,
+     "marketP": 0.04,
+     "marketPct": 0.013,
+     "marketSource": "streck",
+     "value": 1.225,
+     "isValue": false,
+     "scores": {
+      "form": 55,
+      "fart": 49,
+      "kusk": 36,
+      "spar": 54,
+      "value": 61,
+      "total": 57,
+      "tempo": 36
+     },
+     "position": "Bakom",
+     "tempoScore": 36,
+     "poang": {
+      "total": 24,
+      "tempo": 36,
+      "form": 63,
+      "fart": 46,
+      "klass": 35,
+      "spar": 54,
+      "kusk": 46,
+      "tranare": 39,
+      "utrustning": 80,
+      "marknad": 42
+     },
+     "rank": "D",
+     "comments": [
+      "Vann senast",
+      "Kuskbyte: Oskar Kylin Blom (senast Hanne Einang)",
+      "Barfota runt om",
+      "Vagnbyte: Amerikansk"
+     ],
+     "last5": [
+      {
+       "date": "2026-09-17",
+       "place": 1,
+       "galloped": false,
+       "disqualified": false,
+       "scratched": false,
+       "km": 73.9,
+       "odds": 1.92,
+       "track": "Gävle",
+       "startMethod": "auto",
+       "distance": 2140,
+       "post": 4,
+       "driverId": 829910,
+       "driver": "Hanne Einang",
+       "firstPrize": 12000,
+       "shoes": {
+        "front": false,
+        "back": false
+       },
+       "trackCondition": "light",
+       "sport": "trot"
+      },
+      {
+       "date": "2026-09-12",
+       "place": 0,
+       "galloped": true,
+       "disqualified": false,
+       "scratched": false,
+       "km": 75.5,
+       "odds": 13.67,
+       "track": "Hagmyren",
+       "startMethod": "volte",
+       "distance": 2640,
+       "post": 5,
+       "driverId": 740606,
+       "driver": "Magnus A Djuse",
+       "firstPrize": 125000,
+       "shoes": {
+        "front": false,
+        "back": false
+       },
+       "trackCondition": "light",
+       "sport": "trot"
+      },
+      {
+       "date": "2026-09-04",
+       "place": 0,
+       "galloped": false,
+       "disqualified": false,
+       "scratched": false,
+       "km": 73.7,
+       "odds": 14.98,
+       "track": "Romme",
+       "startMethod": "volte",
+       "distance": 2160,
+       "post": 1,
+       "driverId": 568723,
+       "driver": "Oskar Kylin Blom",
+       "firstPrize": 40000,
+       "shoes": {
+        "front": true,
+        "back": false
+       },
+       "trackCondition": "light",
+       "sport": "trot"
+      },
+      {
+       "date": "2026-08-21",
+       "place": 2,
+       "galloped": false,
+       "disqualified": false,
+       "scratched": false,
+       "km": 75,
+       "odds": 23.85,
+       "track": "Romme",
+       "startMethod": "auto",
+       "distance": 2640,
+       "post": 7,
+       "driverId": 568723,
+       "driver": "Oskar Kylin Blom",
+       "firstPrize": 40000,
+       "shoes": {
+        "front": true,
+        "back": false
+       },
+       "trackCondition": "light",
+       "sport": "trot"
+      },
+      {
+       "date": "2026-06-22",
+       "place": 0,
+       "galloped": false,
+       "disqualified": false,
+       "scratched": false,
+       "km": 72.8,
+       "odds": 59.33,
+       "track": "Halmstad",
+       "startMethod": "auto",
+       "distance": 1609,
+       "post": 7,
+       "driverId": 67192,
+       "driver": "Örjan Kihlström",
+       "firstPrize": 100000,
+       "shoes": {
+        "front": true,
+        "back": false
+       },
+       "trackCondition": "light",
+       "sport": "trot"
+      }
+     ]
+    },
+    {
      "nr": 1,
      "post": 1,
      "distance": 2140,
@@ -6876,8 +7117,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 18.36,
-     "streck": 0.0204,
+     "odds": 22.06,
+     "streck": 0.0181,
      "result": null,
      "horseId": 793013,
      "father": "Traders",
@@ -6927,25 +7168,25 @@
      "trainerWin": 0.083,
      "klass": 9.796848442046416,
      "postIndex": 0.144,
-     "p": 0.016,
-     "marketP": 0.046,
-     "marketPct": 0.02,
+     "p": 0.014,
+     "marketP": 0.038,
+     "marketPct": 0.018,
      "marketSource": "streck",
-     "value": 0.769,
+     "value": 0.774,
      "isValue": false,
      "scores": {
       "form": 35,
       "fart": 47,
       "kusk": 37,
       "spar": 46,
-      "value": 38,
+      "value": 39,
       "total": 38,
       "tempo": 55
      },
      "position": "Utvändigt (dödens)",
      "tempoScore": 55,
      "poang": {
-      "total": 24,
+      "total": 22,
       "tempo": 55,
       "form": 30,
       "fart": 39,
@@ -7075,247 +7316,6 @@
      ]
     },
     {
-     "nr": 8,
-     "post": 8,
-     "distance": 2140,
-     "scratched": false,
-     "horse": "Bohemian Maid",
-     "age": 4,
-     "sex": "mare",
-     "money": 351000,
-     "lifeStarts": 31,
-     "lifeWins": 2,
-     "earningsPerStart": 11322.58,
-     "record": 72.8,
-     "driver": "Oskar Kylin Blom",
-     "driverId": 568723,
-     "driverYear": {
-      "starts": 632,
-      "wins": 51,
-      "year": 2026
-     },
-     "trainer": "Oskar Kylin Blom",
-     "trainerYear": {
-      "starts": 583,
-      "wins": 60,
-      "year": 2026
-     },
-     "shoes": {
-      "front": false,
-      "back": false,
-      "changed": false
-     },
-     "sulky": {
-      "text": "Amerikansk",
-      "changed": true
-     },
-     "odds": 19.38,
-     "streck": 0.0128,
-     "result": null,
-     "horseId": 792956,
-     "father": "Perfect Spirit",
-     "grandfather": "Pearsall Hanover",
-     "horseHome": "Gävle",
-     "trainerId": 568723,
-     "trainerHome": "Gävle",
-     "driverHome": "Gävle",
-     "avgOdds5": 22.75,
-     "lifeRecords": [
-      {
-       "method": "auto",
-       "dist": "short",
-       "km": 72.8,
-       "year": 2026
-      },
-      {
-       "method": "auto",
-       "dist": "medium",
-       "km": 73.4,
-       "year": 2025
-      },
-      {
-       "method": "auto",
-       "dist": "long",
-       "km": 75,
-       "year": 2026
-      },
-      {
-       "method": "volte",
-       "dist": "short",
-       "km": 75.5,
-       "year": 2025
-      },
-      {
-       "method": "volte",
-       "dist": "medium",
-       "km": 73.7,
-       "year": 2026
-      },
-      {
-       "method": "volte",
-       "dist": "long",
-       "km": 75.5,
-       "year": 2026
-      }
-     ],
-     "handicap": 0,
-     "formScore": 39,
-     "gallopRisk": 0.167,
-     "speed": 74,
-     "driverWin": 0.081,
-     "trainerWin": 0.103,
-     "klass": 9.334642556176249,
-     "postIndex": 0.159,
-     "p": 0.016,
-     "marketP": 0.044,
-     "marketPct": 0.013,
-     "marketSource": "streck",
-     "value": 1.242,
-     "isValue": false,
-     "scores": {
-      "form": 55,
-      "fart": 49,
-      "kusk": 36,
-      "spar": 54,
-      "value": 62,
-      "total": 58,
-      "tempo": 36
-     },
-     "position": "Bakom",
-     "tempoScore": 36,
-     "poang": {
-      "total": 24,
-      "tempo": 36,
-      "form": 63,
-      "fart": 46,
-      "klass": 35,
-      "spar": 54,
-      "kusk": 46,
-      "tranare": 39,
-      "utrustning": 80,
-      "marknad": 40
-     },
-     "rank": "D",
-     "comments": [
-      "Vann senast",
-      "Kuskbyte: Oskar Kylin Blom (senast Hanne Einang)",
-      "Barfota runt om",
-      "Vagnbyte: Amerikansk"
-     ],
-     "last5": [
-      {
-       "date": "2026-09-17",
-       "place": 1,
-       "galloped": false,
-       "disqualified": false,
-       "scratched": false,
-       "km": 73.9,
-       "odds": 1.92,
-       "track": "Gävle",
-       "startMethod": "auto",
-       "distance": 2140,
-       "post": 4,
-       "driverId": 829910,
-       "driver": "Hanne Einang",
-       "firstPrize": 12000,
-       "shoes": {
-        "front": false,
-        "back": false
-       },
-       "trackCondition": "light",
-       "sport": "trot"
-      },
-      {
-       "date": "2026-09-12",
-       "place": 0,
-       "galloped": true,
-       "disqualified": false,
-       "scratched": false,
-       "km": 75.5,
-       "odds": 13.67,
-       "track": "Hagmyren",
-       "startMethod": "volte",
-       "distance": 2640,
-       "post": 5,
-       "driverId": 740606,
-       "driver": "Magnus A Djuse",
-       "firstPrize": 125000,
-       "shoes": {
-        "front": false,
-        "back": false
-       },
-       "trackCondition": "light",
-       "sport": "trot"
-      },
-      {
-       "date": "2026-09-04",
-       "place": 0,
-       "galloped": false,
-       "disqualified": false,
-       "scratched": false,
-       "km": 73.7,
-       "odds": 14.98,
-       "track": "Romme",
-       "startMethod": "volte",
-       "distance": 2160,
-       "post": 1,
-       "driverId": 568723,
-       "driver": "Oskar Kylin Blom",
-       "firstPrize": 40000,
-       "shoes": {
-        "front": true,
-        "back": false
-       },
-       "trackCondition": "light",
-       "sport": "trot"
-      },
-      {
-       "date": "2026-08-21",
-       "place": 2,
-       "galloped": false,
-       "disqualified": false,
-       "scratched": false,
-       "km": 75,
-       "odds": 23.85,
-       "track": "Romme",
-       "startMethod": "auto",
-       "distance": 2640,
-       "post": 7,
-       "driverId": 568723,
-       "driver": "Oskar Kylin Blom",
-       "firstPrize": 40000,
-       "shoes": {
-        "front": true,
-        "back": false
-       },
-       "trackCondition": "light",
-       "sport": "trot"
-      },
-      {
-       "date": "2026-06-22",
-       "place": 0,
-       "galloped": false,
-       "disqualified": false,
-       "scratched": false,
-       "km": 72.8,
-       "odds": 59.33,
-       "track": "Halmstad",
-       "startMethod": "auto",
-       "distance": 1609,
-       "post": 7,
-       "driverId": 67192,
-       "driver": "Örjan Kihlström",
-       "firstPrize": 100000,
-       "shoes": {
-        "front": true,
-        "back": false
-       },
-       "trackCondition": "light",
-       "sport": "trot"
-      }
-     ]
-    },
-    {
      "nr": 4,
      "post": 4,
      "distance": 2140,
@@ -7346,8 +7346,8 @@
       "text": "Vanlig",
       "changed": true
      },
-     "odds": 45.3,
-     "streck": 0.0101,
+     "odds": 38.91,
+     "streck": 0.008,
      "result": null,
      "horseId": 784969,
      "father": "Who's Who",
@@ -7391,25 +7391,25 @@
      "trainerWin": null,
      "klass": 9.541654327511186,
      "postIndex": 0.231,
-     "p": 0.011,
-     "marketP": 0.019,
-     "marketPct": 0.01,
+     "p": 0.009,
+     "marketP": 0.022,
+     "marketPct": 0.008,
      "marketSource": "streck",
-     "value": 1.135,
+     "value": 1.159,
      "isValue": false,
      "scores": {
       "form": 11,
       "fart": 43,
       "kusk": 45,
       "spar": 91,
-      "value": 57,
+      "value": 58,
       "total": 53,
       "tempo": 45
      },
      "position": "I kön (utvändigt)",
      "tempoScore": 45,
      "poang": {
-      "total": 17,
+      "total": 13,
       "tempo": 45,
       "form": 19,
       "fart": 36,
@@ -7418,7 +7418,7 @@
       "kusk": 34,
       "tranare": 50,
       "utrustning": 26,
-      "marknad": 37
+      "marknad": 36
      },
      "rank": "D",
      "comments": [
@@ -7572,8 +7572,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 54.16,
-     "streck": 0.0078,
+     "odds": 72.7,
+     "streck": 0.0057,
      "result": null,
      "horseId": 778439,
      "father": "Trixton",
@@ -7611,25 +7611,25 @@
      "trainerWin": 0.176,
      "klass": 9.154047230738724,
      "postIndex": 0.105,
-     "p": 0.007,
-     "marketP": 0.016,
-     "marketPct": 0.008,
+     "p": 0.005,
+     "marketP": 0.012,
+     "marketPct": 0.006,
      "marketSource": "streck",
-     "value": 0.866,
+     "value": 0.895,
      "isValue": false,
      "scores": {
       "form": 65,
       "fart": 49,
       "kusk": 60,
       "spar": 26,
-      "value": 43,
-      "total": 39,
+      "value": 45,
+      "total": 40,
       "tempo": 24
      },
      "position": "Bakom",
      "tempoScore": 24,
      "poang": {
-      "total": 6,
+      "total": 0,
       "tempo": 24,
       "form": 72,
       "fart": 43,
@@ -7638,7 +7638,7 @@
       "kusk": 49,
       "tranare": 81,
       "utrustning": 44,
-      "marknad": 33
+      "marknad": 32
      },
      "rank": "D",
      "comments": [
@@ -7792,8 +7792,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 76.84,
-     "streck": 0.0037,
+     "odds": 79.86,
+     "streck": 0.0028,
      "result": null,
      "horseId": 785786,
      "father": "Andover Andover",
@@ -7837,18 +7837,18 @@
      "trainerWin": 0.055,
      "klass": 8.927036700323022,
      "postIndex": 0.169,
-     "p": 0.004,
+     "p": 0.003,
      "marketP": 0.011,
-     "marketPct": 0.004,
+     "marketPct": 0.003,
      "marketSource": "streck",
-     "value": 1.057,
+     "value": 1.083,
      "isValue": false,
      "scores": {
       "form": 18,
       "fart": 28,
       "kusk": 37,
       "spar": 59,
-      "value": 53,
+      "value": 54,
       "total": 45,
       "tempo": 32
      },
@@ -8018,8 +8018,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 52.58,
-     "streck": 0.0037,
+     "odds": 37.19,
+     "streck": 0.0028,
      "result": null,
      "horseId": 757609,
      "father": "Maharajah",
@@ -8063,18 +8063,18 @@
      "trainerWin": 0.176,
      "klass": 8.666359469727526,
      "postIndex": 0.151,
-     "p": 0.004,
-     "marketP": 0.016,
-     "marketPct": 0.004,
+     "p": 0.003,
+     "marketP": 0.023,
+     "marketPct": 0.003,
      "marketSource": "streck",
-     "value": 0.963,
+     "value": 0.986,
      "isValue": false,
      "scores": {
       "form": 52,
       "fart": 17,
       "kusk": 100,
       "spar": 50,
-      "value": 48,
+      "value": 49,
       "total": 41,
       "tempo": 20
      },
@@ -8213,7 +8213,7 @@
     "horse": "A View to a Kill",
     "status": "STARK FAVORIT",
     "why": [
-     "modellen 46 % mot folkets 46 %"
+     "modellen 49 % mot folkets 50 %"
     ]
    },
    "tempo": {
@@ -8244,7 +8244,7 @@
     ]
    },
    "hasOdds": true,
-   "oddsWeight": 0.095
+   "oddsWeight": 0.132
   },
   {
    "leg": 4,
@@ -8255,7 +8255,7 @@
    "startMethod": "volte",
    "startTime": "2026-10-05T21:03:00",
    "firstPrize": 60000,
-   "winTurnover": 27027,
+   "winTurnover": 45227,
    "track": "Färjestad",
    "status": "upcoming",
    "condition": "light",
@@ -8263,227 +8263,6 @@
    "terms": "3-åriga och äldre 170.001 - 1.250.000 kr. Körsvenskrav kat. 1. Körsvenner födda 081005 eller tidigare. Hederspris till segrande hästs ägare och uppfödare som är på plats. 2140 m. Tillägg 20 m vid vunna 500.001 kr ",
    "sport": "trot",
    "horses": [
-    {
-     "nr": 5,
-     "post": 5,
-     "distance": 2140,
-     "scratched": false,
-     "horse": "Otto Palema",
-     "age": 4,
-     "sex": "gelding",
-     "money": 410800,
-     "lifeStarts": 16,
-     "lifeWins": 4,
-     "earningsPerStart": 25675,
-     "record": 73,
-     "driver": "Hans Crebas",
-     "driverId": 583156,
-     "driverYear": {
-      "starts": 206,
-      "wins": 25,
-      "year": 2026
-     },
-     "trainer": "Hans Crebas",
-     "trainerYear": {
-      "starts": 248,
-      "wins": 39,
-      "year": 2026
-     },
-     "shoes": {
-      "front": false,
-      "back": false,
-      "changed": false
-     },
-     "sulky": {
-      "text": "Vanlig",
-      "changed": false
-     },
-     "odds": 8.08,
-     "streck": 0.312,
-     "result": null,
-     "horseId": 792412,
-     "father": "Readly Express",
-     "grandfather": "Muscle Hill",
-     "horseHome": "Axevalla",
-     "trainerId": 583156,
-     "trainerHome": "Axevalla",
-     "driverHome": "Axevalla",
-     "avgOdds5": 36.5,
-     "lifeRecords": [
-      {
-       "method": "auto",
-       "dist": "medium",
-       "km": 72,
-       "year": 2026
-      },
-      {
-       "method": "auto",
-       "dist": "long",
-       "km": 73.6,
-       "year": 2026
-      },
-      {
-       "method": "volte",
-       "dist": "medium",
-       "km": 73,
-       "year": 2026
-      }
-     ],
-     "handicap": 0,
-     "formScore": 56,
-     "gallopRisk": 0.033,
-     "speed": 73.4,
-     "driverWin": 0.119,
-     "trainerWin": 0.153,
-     "klass": 10.153311982431669,
-     "postIndex": 0.107,
-     "p": 0.366,
-     "marketP": 0.105,
-     "marketPct": 0.312,
-     "marketSource": "streck",
-     "value": 1.174,
-     "isValue": true,
-     "scores": {
-      "form": 71,
-      "fart": 56,
-      "kusk": 52,
-      "spar": 23,
-      "value": 59,
-      "total": 62,
-      "tempo": 75
-     },
-     "position": "Rygg ledaren",
-     "tempoScore": 75,
-     "poang": {
-      "total": 90,
-      "tempo": 75,
-      "form": 82,
-      "fart": 65,
-      "klass": 62,
-      "spar": 40,
-      "kusk": 59,
-      "tranare": 49,
-      "utrustning": 64,
-      "marknad": 74
-     },
-     "rank": "A",
-     "comments": [
-      "Vann senast",
-      "Barfota runt om"
-     ],
-     "last5": [
-      {
-       "date": "2026-09-22",
-       "place": 1,
-       "galloped": false,
-       "disqualified": false,
-       "scratched": false,
-       "km": 73,
-       "odds": 2.99,
-       "track": "Eskilstuna",
-       "startMethod": "volte",
-       "distance": 2140,
-       "post": 1,
-       "driverId": 583156,
-       "driver": "Hans Crebas",
-       "firstPrize": 35000,
-       "shoes": {
-        "front": false,
-        "back": false
-       },
-       "trackCondition": "light",
-       "sport": "trot"
-      },
-      {
-       "date": "2026-08-25",
-       "place": 0,
-       "galloped": false,
-       "disqualified": false,
-       "scratched": false,
-       "km": 73.6,
-       "odds": 98.96,
-       "track": "Jägersro",
-       "startMethod": "auto",
-       "distance": 2640,
-       "post": 11,
-       "driverId": 583156,
-       "driver": "Hans Crebas",
-       "firstPrize": 200000,
-       "shoes": {
-        "front": false,
-        "back": false
-       },
-       "trackCondition": "light",
-       "sport": "trot"
-      },
-      {
-       "date": "2026-08-05",
-       "place": 4,
-       "galloped": false,
-       "disqualified": false,
-       "scratched": false,
-       "km": 72,
-       "odds": 60.26,
-       "track": "Mantorp",
-       "startMethod": "auto",
-       "distance": 2140,
-       "post": 9,
-       "driverId": 583156,
-       "driver": "Hans Crebas",
-       "firstPrize": 125000,
-       "shoes": {
-        "front": false,
-        "back": false
-       },
-       "trackCondition": "light",
-       "sport": "trot"
-      },
-      {
-       "date": "2026-07-19",
-       "place": 1,
-       "galloped": false,
-       "disqualified": false,
-       "scratched": false,
-       "km": 73.7,
-       "odds": 2.73,
-       "track": "Axevalla",
-       "startMethod": "volte",
-       "distance": 2160,
-       "post": 3,
-       "driverId": 583156,
-       "driver": "Hans Crebas",
-       "firstPrize": 100000,
-       "shoes": {
-        "front": false,
-        "back": false
-       },
-       "trackCondition": "light",
-       "sport": "trot"
-      },
-      {
-       "date": "2026-06-24",
-       "place": 3,
-       "galloped": false,
-       "disqualified": false,
-       "scratched": false,
-       "km": 73.4,
-       "odds": 17.56,
-       "track": "Vaggeryd",
-       "startMethod": "volte",
-       "distance": 2148,
-       "post": 5,
-       "driverId": 583156,
-       "driver": "Hans Crebas",
-       "firstPrize": 125000,
-       "shoes": {
-        "front": false,
-        "back": false
-       },
-       "trackCondition": "light",
-       "sport": "trot"
-      }
-     ]
-    },
     {
      "nr": 3,
      "post": 3,
@@ -8519,8 +8298,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 2.4,
-     "streck": 0.3292,
+     "odds": 1.86,
+     "streck": 0.3658,
      "result": null,
      "horseId": 787314,
      "father": "Propulsion",
@@ -8570,11 +8349,11 @@
      "trainerWin": 0.236,
      "klass": 9.966732737675144,
      "postIndex": 0.149,
-     "p": 0.338,
-     "marketP": 0.353,
-     "marketPct": 0.329,
+     "p": 0.374,
+     "marketP": 0.456,
+     "marketPct": 0.366,
      "marketSource": "streck",
-     "value": 1.026,
+     "value": 1.023,
      "isValue": false,
      "scores": {
       "form": 50,
@@ -8588,7 +8367,7 @@
      "position": "Ledning",
      "tempoScore": 80,
      "poang": {
-      "total": 88,
+      "total": 90,
       "tempo": 80,
       "form": 38,
       "fart": 51,
@@ -8719,6 +8498,227 @@
      ]
     },
     {
+     "nr": 5,
+     "post": 5,
+     "distance": 2140,
+     "scratched": false,
+     "horse": "Otto Palema",
+     "age": 4,
+     "sex": "gelding",
+     "money": 410800,
+     "lifeStarts": 16,
+     "lifeWins": 4,
+     "earningsPerStart": 25675,
+     "record": 73,
+     "driver": "Hans Crebas",
+     "driverId": 583156,
+     "driverYear": {
+      "starts": 206,
+      "wins": 25,
+      "year": 2026
+     },
+     "trainer": "Hans Crebas",
+     "trainerYear": {
+      "starts": 248,
+      "wins": 39,
+      "year": 2026
+     },
+     "shoes": {
+      "front": false,
+      "back": false,
+      "changed": false
+     },
+     "sulky": {
+      "text": "Vanlig",
+      "changed": false
+     },
+     "odds": 11.93,
+     "streck": 0.2681,
+     "result": null,
+     "horseId": 792412,
+     "father": "Readly Express",
+     "grandfather": "Muscle Hill",
+     "horseHome": "Axevalla",
+     "trainerId": 583156,
+     "trainerHome": "Axevalla",
+     "driverHome": "Axevalla",
+     "avgOdds5": 36.5,
+     "lifeRecords": [
+      {
+       "method": "auto",
+       "dist": "medium",
+       "km": 72,
+       "year": 2026
+      },
+      {
+       "method": "auto",
+       "dist": "long",
+       "km": 73.6,
+       "year": 2026
+      },
+      {
+       "method": "volte",
+       "dist": "medium",
+       "km": 73,
+       "year": 2026
+      }
+     ],
+     "handicap": 0,
+     "formScore": 56,
+     "gallopRisk": 0.033,
+     "speed": 73.4,
+     "driverWin": 0.119,
+     "trainerWin": 0.153,
+     "klass": 10.153311982431669,
+     "postIndex": 0.107,
+     "p": 0.322,
+     "marketP": 0.071,
+     "marketPct": 0.268,
+     "marketSource": "streck",
+     "value": 1.202,
+     "isValue": true,
+     "scores": {
+      "form": 71,
+      "fart": 56,
+      "kusk": 52,
+      "spar": 23,
+      "value": 60,
+      "total": 63,
+      "tempo": 75
+     },
+     "position": "Rygg ledaren",
+     "tempoScore": 75,
+     "poang": {
+      "total": 87,
+      "tempo": 75,
+      "form": 82,
+      "fart": 65,
+      "klass": 62,
+      "spar": 40,
+      "kusk": 59,
+      "tranare": 49,
+      "utrustning": 64,
+      "marknad": 72
+     },
+     "rank": "A",
+     "comments": [
+      "Vann senast",
+      "Barfota runt om"
+     ],
+     "last5": [
+      {
+       "date": "2026-09-22",
+       "place": 1,
+       "galloped": false,
+       "disqualified": false,
+       "scratched": false,
+       "km": 73,
+       "odds": 2.99,
+       "track": "Eskilstuna",
+       "startMethod": "volte",
+       "distance": 2140,
+       "post": 1,
+       "driverId": 583156,
+       "driver": "Hans Crebas",
+       "firstPrize": 35000,
+       "shoes": {
+        "front": false,
+        "back": false
+       },
+       "trackCondition": "light",
+       "sport": "trot"
+      },
+      {
+       "date": "2026-08-25",
+       "place": 0,
+       "galloped": false,
+       "disqualified": false,
+       "scratched": false,
+       "km": 73.6,
+       "odds": 98.96,
+       "track": "Jägersro",
+       "startMethod": "auto",
+       "distance": 2640,
+       "post": 11,
+       "driverId": 583156,
+       "driver": "Hans Crebas",
+       "firstPrize": 200000,
+       "shoes": {
+        "front": false,
+        "back": false
+       },
+       "trackCondition": "light",
+       "sport": "trot"
+      },
+      {
+       "date": "2026-08-05",
+       "place": 4,
+       "galloped": false,
+       "disqualified": false,
+       "scratched": false,
+       "km": 72,
+       "odds": 60.26,
+       "track": "Mantorp",
+       "startMethod": "auto",
+       "distance": 2140,
+       "post": 9,
+       "driverId": 583156,
+       "driver": "Hans Crebas",
+       "firstPrize": 125000,
+       "shoes": {
+        "front": false,
+        "back": false
+       },
+       "trackCondition": "light",
+       "sport": "trot"
+      },
+      {
+       "date": "2026-07-19",
+       "place": 1,
+       "galloped": false,
+       "disqualified": false,
+       "scratched": false,
+       "km": 73.7,
+       "odds": 2.73,
+       "track": "Axevalla",
+       "startMethod": "volte",
+       "distance": 2160,
+       "post": 3,
+       "driverId": 583156,
+       "driver": "Hans Crebas",
+       "firstPrize": 100000,
+       "shoes": {
+        "front": false,
+        "back": false
+       },
+       "trackCondition": "light",
+       "sport": "trot"
+      },
+      {
+       "date": "2026-06-24",
+       "place": 3,
+       "galloped": false,
+       "disqualified": false,
+       "scratched": false,
+       "km": 73.4,
+       "odds": 17.56,
+       "track": "Vaggeryd",
+       "startMethod": "volte",
+       "distance": 2148,
+       "post": 5,
+       "driverId": 583156,
+       "driver": "Hans Crebas",
+       "firstPrize": 125000,
+       "shoes": {
+        "front": false,
+        "back": false
+       },
+       "trackCondition": "light",
+       "sport": "trot"
+      }
+     ]
+    },
+    {
      "nr": 8,
      "post": 2,
      "distance": 2160,
@@ -8753,8 +8753,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 3.57,
-     "streck": 0.19,
+     "odds": 3.61,
+     "streck": 0.1867,
      "result": null,
      "horseId": 786240,
      "father": "Love You",
@@ -8792,18 +8792,18 @@
      "trainerWin": 0.213,
      "klass": 10.656341286557868,
      "postIndex": 0.14,
-     "p": 0.146,
-     "marketP": 0.237,
-     "marketPct": 0.19,
+     "p": 0.144,
+     "marketP": 0.235,
+     "marketPct": 0.187,
      "marketSource": "streck",
-     "value": 0.766,
+     "value": 0.773,
      "isValue": false,
      "scores": {
       "form": 79,
       "fart": 77,
       "kusk": 44,
       "spar": 42,
-      "value": 38,
+      "value": 39,
       "total": 41,
       "tempo": 32
      },
@@ -8819,7 +8819,7 @@
       "kusk": 32,
       "tranare": 70,
       "utrustning": 64,
-      "marknad": 69
+      "marknad": 68
      },
      "rank": "B",
      "comments": [
@@ -8976,8 +8976,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 7.06,
-     "streck": 0.1075,
+     "odds": 9.16,
+     "streck": 0.1139,
      "result": null,
      "horseId": 773856,
      "father": "Bold Eagle",
@@ -9021,9 +9021,9 @@
      "trainerWin": 0.154,
      "klass": 10.261878872658171,
      "postIndex": 0.149,
-     "p": 0.074,
-     "marketP": 0.12,
-     "marketPct": 0.108,
+     "p": 0.079,
+     "marketP": 0.093,
+     "marketPct": 0.114,
      "marketSource": "streck",
      "value": 0.689,
      "isValue": false,
@@ -9039,7 +9039,7 @@
      "position": "Bakom",
      "tempoScore": 40,
      "poang": {
-      "total": 56,
+      "total": 58,
       "tempo": 40,
       "form": 41,
       "fart": 78,
@@ -9201,8 +9201,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 8.35,
-     "streck": 0.0383,
+     "odds": 10.42,
+     "streck": 0.0447,
      "result": null,
      "horseId": 785267,
      "father": "Who's Who",
@@ -9252,25 +9252,25 @@
      "trainerWin": 0.194,
      "klass": 9.56834343357608,
      "postIndex": 0.113,
-     "p": 0.045,
-     "marketP": 0.102,
-     "marketPct": 0.038,
+     "p": 0.052,
+     "marketP": 0.081,
+     "marketPct": 0.045,
      "marketSource": "streck",
-     "value": 1.18,
+     "value": 1.163,
      "isValue": true,
      "scores": {
       "form": 73,
       "fart": 45,
       "kusk": 36,
       "spar": 26,
-      "value": 59,
-      "total": 54,
+      "value": 58,
+      "total": 53,
       "tempo": 50
      },
      "position": "I kön (inner)",
      "tempoScore": 50,
      "poang": {
-      "total": 46,
+      "total": 49,
       "tempo": 50,
       "form": 66,
       "fart": 53,
@@ -9279,7 +9279,7 @@
       "kusk": 52,
       "tranare": 64,
       "utrustning": 22,
-      "marknad": 52
+      "marknad": 54
      },
      "rank": "C",
      "comments": [
@@ -9434,8 +9434,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 41.1,
-     "streck": 0.0125,
+     "odds": 57.06,
+     "streck": 0.0118,
      "result": null,
      "horseId": 771503,
      "father": "Muscle Hill",
@@ -9485,11 +9485,11 @@
      "trainerWin": 0.154,
      "klass": 10.201249402907989,
      "postIndex": 0.178,
-     "p": 0.017,
-     "marketP": 0.021,
-     "marketPct": 0.013,
+     "p": 0.016,
+     "marketP": 0.015,
+     "marketPct": 0.012,
      "marketSource": "streck",
-     "value": 1.375,
+     "value": 1.389,
      "isValue": false,
      "scores": {
       "form": 49,
@@ -9503,7 +9503,7 @@
      "position": "Bakom",
      "tempoScore": 28,
      "poang": {
-      "total": 26,
+      "total": 25,
       "tempo": 28,
       "form": 49,
       "fart": 61,
@@ -9634,214 +9634,6 @@
      ]
     },
     {
-     "nr": 6,
-     "post": 6,
-     "distance": 2140,
-     "scratched": false,
-     "horse": "Enjoythevictory SC",
-     "age": 10,
-     "sex": "gelding",
-     "money": 456947,
-     "lifeStarts": 97,
-     "lifeWins": 6,
-     "earningsPerStart": 4710.79,
-     "record": 74.9,
-     "driver": "Eirik Höitomt",
-     "driverId": 109763,
-     "driverYear": null,
-     "trainer": "Anders Langerud",
-     "trainerYear": null,
-     "shoes": {
-      "front": false,
-      "back": true,
-      "changed": false
-     },
-     "sulky": {
-      "text": "Vanlig",
-      "changed": true
-     },
-     "odds": 39.79,
-     "streck": 0.0044,
-     "result": null,
-     "horseId": 796775,
-     "father": "Rolling d'Heripre",
-     "grandfather": "Donato Hanover",
-     "horseHome": null,
-     "trainerId": 511645,
-     "trainerHome": null,
-     "driverHome": null,
-     "avgOdds5": 67.91,
-     "lifeRecords": [
-      {
-       "method": "auto",
-       "dist": "short",
-       "km": 71.3,
-       "year": 2024
-      },
-      {
-       "method": "volte",
-       "dist": "medium",
-       "km": 74.9,
-       "year": 2026
-      }
-     ],
-     "handicap": 0,
-     "formScore": 4,
-     "gallopRisk": 0.1,
-     "speed": 74.55,
-     "driverWin": null,
-     "trainerWin": null,
-     "klass": 8.457823157275463,
-     "postIndex": 0.223,
-     "p": 0.006,
-     "marketP": 0.021,
-     "marketPct": 0.004,
-     "marketSource": "streck",
-     "value": 1.307,
-     "isValue": false,
-     "scores": {
-      "form": 13,
-      "fart": 37,
-      "kusk": 50,
-      "spar": 92,
-      "value": 65,
-      "total": 49,
-      "tempo": 36
-     },
-     "position": "Bakom",
-     "tempoScore": 36,
-     "poang": {
-      "total": 3,
-      "tempo": 36,
-      "form": 21,
-      "fart": 17,
-      "klass": 25,
-      "spar": 91,
-      "kusk": 53,
-      "tranare": 50,
-      "utrustning": 22,
-      "marknad": 29
-     },
-     "rank": "D",
-     "comments": [
-      "Distansändring 1609 → 2140 m",
-      "Byter till voltstart",
-      "Vagnbyte: Vanlig"
-     ],
-     "last5": [
-      {
-       "date": "2026-09-21",
-       "place": 6,
-       "galloped": false,
-       "disqualified": false,
-       "scratched": false,
-       "km": 74.5,
-       "odds": 48.59,
-       "track": "Jarlsberg",
-       "startMethod": "auto",
-       "distance": 1609,
-       "post": 5,
-       "driverId": 0,
-       "driver": "Anders Langerud",
-       "firstPrize": 16500,
-       "shoes": {
-        "front": false,
-        "back": true
-       },
-       "trackCondition": "light",
-       "sport": "trot"
-      },
-      {
-       "date": "2026-08-29",
-       "place": 0,
-       "galloped": false,
-       "disqualified": false,
-       "scratched": false,
-       "km": 74.7,
-       "odds": 47.09,
-       "track": "Klosterskogen",
-       "startMethod": "auto",
-       "distance": 1700,
-       "post": 7,
-       "driverId": 0,
-       "driver": "Gunnar  Austevoll",
-       "firstPrize": 45835,
-       "shoes": {
-        "front": false,
-        "back": true
-       },
-       "trackCondition": "light",
-       "sport": "trot"
-      },
-      {
-       "date": "2026-08-18",
-       "place": 0,
-       "galloped": false,
-       "disqualified": false,
-       "scratched": false,
-       "km": 74.6,
-       "odds": 73.17,
-       "track": "Bjerke",
-       "startMethod": "auto",
-       "distance": 2100,
-       "post": 9,
-       "driverId": 0,
-       "driver": "Jarle Andre Smedtorp",
-       "firstPrize": 22000,
-       "shoes": {
-        "front": false,
-        "back": true
-       },
-       "trackCondition": "light",
-       "sport": "trot"
-      },
-      {
-       "date": "2026-08-08",
-       "place": 0,
-       "galloped": false,
-       "disqualified": false,
-       "scratched": false,
-       "km": 75.6,
-       "odds": 64.51,
-       "track": "Bergen",
-       "startMethod": "auto",
-       "distance": 2100,
-       "post": 6,
-       "driverId": 0,
-       "driver": "Per Vetle Kals",
-       "firstPrize": 45835,
-       "shoes": {
-        "front": false,
-        "back": true
-       },
-       "trackCondition": "light",
-       "sport": "trot"
-      },
-      {
-       "date": "2026-08-02",
-       "place": 8,
-       "galloped": false,
-       "disqualified": false,
-       "scratched": false,
-       "km": 73.2,
-       "odds": 106.19,
-       "track": "Arvika",
-       "startMethod": "auto",
-       "distance": 1700,
-       "post": 7,
-       "driverId": 559112,
-       "driver": "Roy Atle Ruud Nilsen",
-       "firstPrize": 25000,
-       "shoes": {
-        "front": false,
-        "back": true
-       },
-       "trackCondition": "light",
-       "sport": "trot"
-      }
-     ]
-    },
-    {
      "nr": 2,
      "post": 2,
      "distance": 2140,
@@ -9876,8 +9668,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 27.29,
-     "streck": 0.004,
+     "odds": 35.41,
+     "streck": 0.0035,
      "result": null,
      "horseId": 764908,
      "father": "One too Many",
@@ -9934,18 +9726,18 @@
      "klass": 8.691314551644853,
      "postIndex": 0.14,
      "p": 0.005,
-     "marketP": 0.031,
-     "marketPct": 0.004,
+     "marketP": 0.024,
+     "marketPct": 0.003,
      "marketSource": "streck",
-     "value": 1.278,
+     "value": 1.302,
      "isValue": false,
      "scores": {
       "form": 42,
       "fart": 21,
       "kusk": 59,
       "spar": 42,
-      "value": 64,
-      "total": 48,
+      "value": 65,
+      "total": 47,
       "tempo": 45
      },
      "position": "I kön (utvändigt)",
@@ -10083,6 +9875,214 @@
      ]
     },
     {
+     "nr": 6,
+     "post": 6,
+     "distance": 2140,
+     "scratched": false,
+     "horse": "Enjoythevictory SC",
+     "age": 10,
+     "sex": "gelding",
+     "money": 456947,
+     "lifeStarts": 97,
+     "lifeWins": 6,
+     "earningsPerStart": 4710.79,
+     "record": 74.9,
+     "driver": "Eirik Höitomt",
+     "driverId": 109763,
+     "driverYear": null,
+     "trainer": "Anders Langerud",
+     "trainerYear": null,
+     "shoes": {
+      "front": false,
+      "back": true,
+      "changed": false
+     },
+     "sulky": {
+      "text": "Vanlig",
+      "changed": true
+     },
+     "odds": 48.8,
+     "streck": 0.0039,
+     "result": null,
+     "horseId": 796775,
+     "father": "Rolling d'Heripre",
+     "grandfather": "Donato Hanover",
+     "horseHome": null,
+     "trainerId": 511645,
+     "trainerHome": null,
+     "driverHome": null,
+     "avgOdds5": 67.91,
+     "lifeRecords": [
+      {
+       "method": "auto",
+       "dist": "short",
+       "km": 71.3,
+       "year": 2024
+      },
+      {
+       "method": "volte",
+       "dist": "medium",
+       "km": 74.9,
+       "year": 2026
+      }
+     ],
+     "handicap": 0,
+     "formScore": 4,
+     "gallopRisk": 0.1,
+     "speed": 74.55,
+     "driverWin": null,
+     "trainerWin": null,
+     "klass": 8.457823157275463,
+     "postIndex": 0.223,
+     "p": 0.005,
+     "marketP": 0.017,
+     "marketPct": 0.004,
+     "marketSource": "streck",
+     "value": 1.329,
+     "isValue": false,
+     "scores": {
+      "form": 13,
+      "fart": 37,
+      "kusk": 50,
+      "spar": 92,
+      "value": 66,
+      "total": 49,
+      "tempo": 36
+     },
+     "position": "Bakom",
+     "tempoScore": 36,
+     "poang": {
+      "total": 1,
+      "tempo": 36,
+      "form": 21,
+      "fart": 17,
+      "klass": 25,
+      "spar": 91,
+      "kusk": 53,
+      "tranare": 50,
+      "utrustning": 22,
+      "marknad": 29
+     },
+     "rank": "D",
+     "comments": [
+      "Distansändring 1609 → 2140 m",
+      "Byter till voltstart",
+      "Vagnbyte: Vanlig"
+     ],
+     "last5": [
+      {
+       "date": "2026-09-21",
+       "place": 6,
+       "galloped": false,
+       "disqualified": false,
+       "scratched": false,
+       "km": 74.5,
+       "odds": 48.59,
+       "track": "Jarlsberg",
+       "startMethod": "auto",
+       "distance": 1609,
+       "post": 5,
+       "driverId": 0,
+       "driver": "Anders Langerud",
+       "firstPrize": 16500,
+       "shoes": {
+        "front": false,
+        "back": true
+       },
+       "trackCondition": "light",
+       "sport": "trot"
+      },
+      {
+       "date": "2026-08-29",
+       "place": 0,
+       "galloped": false,
+       "disqualified": false,
+       "scratched": false,
+       "km": 74.7,
+       "odds": 47.09,
+       "track": "Klosterskogen",
+       "startMethod": "auto",
+       "distance": 1700,
+       "post": 7,
+       "driverId": 0,
+       "driver": "Gunnar  Austevoll",
+       "firstPrize": 45835,
+       "shoes": {
+        "front": false,
+        "back": true
+       },
+       "trackCondition": "light",
+       "sport": "trot"
+      },
+      {
+       "date": "2026-08-18",
+       "place": 0,
+       "galloped": false,
+       "disqualified": false,
+       "scratched": false,
+       "km": 74.6,
+       "odds": 73.17,
+       "track": "Bjerke",
+       "startMethod": "auto",
+       "distance": 2100,
+       "post": 9,
+       "driverId": 0,
+       "driver": "Jarle Andre Smedtorp",
+       "firstPrize": 22000,
+       "shoes": {
+        "front": false,
+        "back": true
+       },
+       "trackCondition": "light",
+       "sport": "trot"
+      },
+      {
+       "date": "2026-08-08",
+       "place": 0,
+       "galloped": false,
+       "disqualified": false,
+       "scratched": false,
+       "km": 75.6,
+       "odds": 64.51,
+       "track": "Bergen",
+       "startMethod": "auto",
+       "distance": 2100,
+       "post": 6,
+       "driverId": 0,
+       "driver": "Per Vetle Kals",
+       "firstPrize": 45835,
+       "shoes": {
+        "front": false,
+        "back": true
+       },
+       "trackCondition": "light",
+       "sport": "trot"
+      },
+      {
+       "date": "2026-08-02",
+       "place": 8,
+       "galloped": false,
+       "disqualified": false,
+       "scratched": false,
+       "km": 73.2,
+       "odds": 106.19,
+       "track": "Arvika",
+       "startMethod": "auto",
+       "distance": 1700,
+       "post": 7,
+       "driverId": 559112,
+       "driver": "Roy Atle Ruud Nilsen",
+       "firstPrize": 25000,
+       "shoes": {
+        "front": false,
+        "back": true
+       },
+       "trackCondition": "light",
+       "sport": "trot"
+      }
+     ]
+    },
+    {
      "nr": 1,
      "post": 1,
      "distance": 2140,
@@ -10117,8 +10117,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 86.29,
-     "streck": 0.0021,
+     "odds": 97.62,
+     "streck": 0.0017,
      "result": null,
      "horseId": 766501,
      "father": "Yarrah Boko",
@@ -10175,17 +10175,17 @@
      "klass": 8.94657662869488,
      "postIndex": 0.178,
      "p": 0.003,
-     "marketP": 0.01,
+     "marketP": 0.009,
      "marketPct": 0.002,
      "marketSource": "streck",
-     "value": 1.456,
+     "value": 1.499,
      "isValue": false,
      "scores": {
       "form": 32,
       "fart": 29,
       "kusk": 22,
       "spar": 65,
-      "value": 73,
+      "value": 75,
       "total": 51,
       "tempo": 55
      },
@@ -10201,7 +10201,7 @@
       "kusk": 33,
       "tranare": 7,
       "utrustning": 64,
-      "marknad": 21
+      "marknad": 20
      },
      "rank": "D",
      "comments": [
@@ -10368,7 +10368,7 @@
     ]
    },
    "hasOdds": true,
-   "oddsWeight": 0.083
+   "oddsWeight": 0.131
   },
   {
    "leg": 5,
@@ -10379,7 +10379,7 @@
    "startMethod": "auto",
    "startTime": "2026-10-05T21:15:00",
    "firstPrize": 60000,
-   "winTurnover": 35714,
+   "winTurnover": 50739,
    "track": "Gävle",
    "status": "upcoming",
    "condition": "light",
@@ -10422,8 +10422,8 @@
       "text": "Vanlig",
       "changed": true
      },
-     "odds": 2.05,
-     "streck": 0.6937,
+     "odds": 1.99,
+     "streck": 0.6759,
      "result": null,
      "horseId": 786789,
      "father": "Brillantissime",
@@ -10479,11 +10479,11 @@
      "trainerWin": 0.115,
      "klass": 10.384353225611292,
      "postIndex": 0.144,
-     "p": 0.615,
-     "marketP": 0.414,
-     "marketPct": 0.694,
+     "p": 0.596,
+     "marketP": 0.426,
+     "marketPct": 0.676,
      "marketSource": "streck",
-     "value": 0.886,
+     "value": 0.882,
      "isValue": false,
      "scores": {
       "form": 76,
@@ -10506,7 +10506,7 @@
       "kusk": 79,
       "tranare": 50,
       "utrustning": 30,
-      "marknad": 95
+      "marknad": 93
      },
      "rank": "A",
      "comments": [
@@ -10659,8 +10659,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 6.47,
-     "streck": 0.1156,
+     "odds": 5.31,
+     "streck": 0.1113,
      "result": null,
      "horseId": 767235,
      "father": "Orlando Vici",
@@ -10710,25 +10710,25 @@
      "trainerWin": 0.214,
      "klass": 10.169728906753061,
      "postIndex": 0.127,
-     "p": 0.117,
-     "marketP": 0.131,
-     "marketPct": 0.116,
+     "p": 0.112,
+     "marketP": 0.16,
+     "marketPct": 0.111,
      "marketSource": "streck",
-     "value": 1.014,
+     "value": 1.01,
      "isValue": false,
      "scores": {
       "form": 72,
       "fart": 62,
       "kusk": 67,
       "spar": 37,
-      "value": 51,
+      "value": 50,
       "total": 45,
       "tempo": 55
      },
      "position": "Utvändigt (dödens)",
      "tempoScore": 55,
      "poang": {
-      "total": 66,
+      "total": 65,
       "tempo": 55,
       "form": 71,
       "fart": 52,
@@ -10737,7 +10737,7 @@
       "kusk": 74,
       "tranare": 90,
       "utrustning": 46,
-      "marknad": 73
+      "marknad": 72
      },
      "rank": "B",
      "comments": [
@@ -10892,8 +10892,8 @@
       "text": "Amerikansk",
       "changed": false
      },
-     "odds": 12.6,
-     "streck": 0.0704,
+     "odds": 13.32,
+     "streck": 0.079,
      "result": null,
      "horseId": 777532,
      "father": "Bold Eagle",
@@ -10937,25 +10937,25 @@
      "trainerWin": 0.138,
      "klass": 10.146052482009711,
      "postIndex": 0.144,
-     "p": 0.092,
-     "marketP": 0.067,
-     "marketPct": 0.07,
+     "p": 0.1,
+     "marketP": 0.064,
+     "marketPct": 0.079,
      "marketSource": "streck",
-     "value": 1.303,
+     "value": 1.272,
      "isValue": true,
      "scores": {
       "form": 76,
       "fart": 68,
       "kusk": 47,
       "spar": 46,
-      "value": 65,
+      "value": 64,
       "total": 54,
       "tempo": 28
      },
      "position": "Bakom",
      "tempoScore": 28,
      "poang": {
-      "total": 61,
+      "total": 63,
       "tempo": 28,
       "form": 74,
       "fart": 71,
@@ -11116,8 +11116,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 9.37,
-     "streck": 0.0423,
+     "odds": 9.64,
+     "streck": 0.0463,
      "result": null,
      "horseId": 771275,
      "father": "Maharajah",
@@ -11173,25 +11173,25 @@
      "trainerWin": 0.11,
      "klass": 9.885731339904394,
      "postIndex": 0.223,
-     "p": 0.07,
-     "marketP": 0.09,
-     "marketPct": 0.042,
+     "p": 0.075,
+     "marketP": 0.088,
+     "marketPct": 0.046,
      "marketSource": "streck",
-     "value": 1.654,
+     "value": 1.617,
      "isValue": true,
      "scores": {
       "form": 35,
       "fart": 75,
       "kusk": 41,
       "spar": 87,
-      "value": 83,
+      "value": 81,
       "total": 63,
       "tempo": 75
      },
      "position": "Rygg ledaren",
      "tempoScore": 75,
      "poang": {
-      "total": 55,
+      "total": 57,
       "tempo": 75,
       "form": 43,
       "fart": 80,
@@ -11200,7 +11200,7 @@
       "kusk": 43,
       "tranare": 48,
       "utrustning": 62,
-      "marknad": 60
+      "marknad": 61
      },
      "rank": "C",
      "comments": [
@@ -11355,8 +11355,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 8.32,
-     "streck": 0.0308,
+     "odds": 10.2,
+     "streck": 0.0378,
      "result": null,
      "horseId": 756379,
      "father": "Readly Express",
@@ -11406,25 +11406,25 @@
      "trainerWin": 0.122,
      "klass": 9.827497040284443,
      "postIndex": 0.102,
-     "p": 0.031,
-     "marketP": 0.102,
-     "marketPct": 0.031,
+     "p": 0.037,
+     "marketP": 0.083,
+     "marketPct": 0.038,
      "marketSource": "streck",
-     "value": 1.014,
+     "value": 0.975,
      "isValue": false,
      "scores": {
       "form": 72,
       "fart": 64,
       "kusk": 56,
       "spar": 25,
-      "value": 51,
+      "value": 49,
       "total": 39,
       "tempo": 24
      },
      "position": "Bakom",
      "tempoScore": 24,
      "poang": {
-      "total": 38,
+      "total": 42,
       "tempo": 24,
       "form": 67,
       "fart": 71,
@@ -11433,9 +11433,9 @@
       "kusk": 59,
       "tranare": 52,
       "utrustning": 30,
-      "marknad": 56
+      "marknad": 59
      },
-     "rank": "D",
+     "rank": "C",
      "comments": [
       "Galopp senast",
       "Distansändring 2660 → 1640 m",
@@ -11590,8 +11590,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 20.34,
-     "streck": 0.0135,
+     "odds": 22,
+     "streck": 0.0173,
      "result": null,
      "horseId": 768110,
      "father": "Going Kronos",
@@ -11641,25 +11641,25 @@
      "trainerWin": 0.13,
      "klass": 9.367336428448569,
      "postIndex": 0.151,
-     "p": 0.026,
-     "marketP": 0.042,
-     "marketPct": 0.013,
+     "p": 0.032,
+     "marketP": 0.039,
+     "marketPct": 0.017,
      "marketSource": "streck",
-     "value": 1.959,
-     "isValue": false,
+     "value": 1.863,
+     "isValue": true,
      "scores": {
       "form": 58,
       "fart": 50,
       "kusk": 42,
       "spar": 50,
-      "value": 98,
-      "total": 66,
+      "value": 93,
+      "total": 65,
       "tempo": 40
      },
      "position": "Bakom",
      "tempoScore": 40,
      "poang": {
-      "total": 35,
+      "total": 39,
       "tempo": 40,
       "form": 58,
       "fart": 50,
@@ -11668,7 +11668,7 @@
       "kusk": 57,
       "tranare": 56,
       "utrustning": 84,
-      "marknad": 46
+      "marknad": 49
      },
      "rank": "D",
      "comments": [
@@ -11823,8 +11823,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 32.13,
-     "streck": 0.012,
+     "odds": 28.56,
+     "streck": 0.013,
      "result": null,
      "horseId": 763967,
      "father": "Raja Mirchi",
@@ -11868,25 +11868,25 @@
      "trainerWin": 0.076,
      "klass": 9.88557049643274,
      "postIndex": 0.137,
-     "p": 0.018,
-     "marketP": 0.026,
-     "marketPct": 0.012,
+     "p": 0.02,
+     "marketP": 0.03,
+     "marketPct": 0.013,
      "marketSource": "streck",
-     "value": 1.541,
+     "value": 1.501,
      "isValue": false,
      "scores": {
       "form": 26,
       "fart": 41,
       "kusk": 22,
       "spar": 43,
-      "value": 77,
+      "value": 75,
       "total": 54,
       "tempo": 50
      },
      "position": "I kön (inner)",
      "tempoScore": 50,
      "poang": {
-      "total": 27,
+      "total": 28,
       "tempo": 50,
       "form": 27,
       "fart": 53,
@@ -11895,7 +11895,7 @@
       "kusk": 39,
       "tranare": 34,
       "utrustning": 62,
-      "marknad": 45
+      "marknad": 46
      },
      "rank": "D",
      "comments": [
@@ -12050,8 +12050,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 48.92,
-     "streck": 0.0054,
+     "odds": 50.77,
+     "streck": 0.0056,
      "result": null,
      "horseId": 772672,
      "father": "Maharajah",
@@ -12103,17 +12103,17 @@
      "postIndex": 0.105,
      "p": 0.008,
      "marketP": 0.017,
-     "marketPct": 0.005,
+     "marketPct": 0.006,
      "marketSource": "streck",
-     "value": 1.408,
+     "value": 1.376,
      "isValue": false,
      "scores": {
       "form": 55,
       "fart": 40,
       "kusk": 39,
       "spar": 26,
-      "value": 70,
-      "total": 47,
+      "value": 69,
+      "total": 46,
       "tempo": 20
      },
      "position": "Bakom",
@@ -12128,7 +12128,7 @@
       "kusk": 31,
       "tranare": 83,
       "utrustning": 30,
-      "marknad": 35
+      "marknad": 36
      },
      "rank": "D",
      "comments": [
@@ -12285,8 +12285,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 24.07,
-     "streck": 0.0037,
+     "odds": 31.93,
+     "streck": 0.0032,
      "result": null,
      "horseId": 771902,
      "father": "Pato",
@@ -12336,11 +12336,11 @@
      "trainerWin": 0.114,
      "klass": 9.942483721250424,
      "postIndex": 0.159,
-     "p": 0.007,
-     "marketP": 0.035,
-     "marketPct": 0.004,
+     "p": 0.006,
+     "marketP": 0.027,
+     "marketPct": 0.003,
      "marketSource": "streck",
-     "value": 1.979,
+     "value": 1.988,
      "isValue": false,
      "scores": {
       "form": 22,
@@ -12354,7 +12354,7 @@
      "position": "Bakom",
      "tempoScore": 32,
      "poang": {
-      "total": 8,
+      "total": 5,
       "tempo": 32,
       "form": 20,
       "fart": 17,
@@ -12363,7 +12363,7 @@
       "kusk": 20,
       "tranare": 49,
       "utrustning": 46,
-      "marknad": 30
+      "marknad": 29
      },
      "rank": "D",
      "comments": [
@@ -12518,8 +12518,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 38.58,
-     "streck": 0.0063,
+     "odds": 40.1,
+     "streck": 0.005,
      "result": null,
      "horseId": 752639,
      "father": "Lord Capar",
@@ -12569,25 +12569,25 @@
      "trainerWin": 0.061,
      "klass": 9.348752708390608,
      "postIndex": 0.231,
-     "p": 0.006,
-     "marketP": 0.022,
-     "marketPct": 0.006,
+     "p": 0.005,
+     "marketP": 0.021,
+     "marketPct": 0.005,
      "marketSource": "streck",
-     "value": 1.009,
+     "value": 1.029,
      "isValue": false,
      "scores": {
       "form": 25,
       "fart": 0,
       "kusk": 100,
       "spar": 91,
-      "value": 50,
-      "total": 32,
+      "value": 51,
+      "total": 33,
       "tempo": 36
      },
      "position": "Bakom",
      "tempoScore": 36,
      "poang": {
-      "total": 5,
+      "total": 1,
       "tempo": 36,
       "form": 26,
       "fart": 28,
@@ -12596,7 +12596,7 @@
       "kusk": 84,
       "tranare": 28,
       "utrustning": 30,
-      "marknad": 37
+      "marknad": 34
      },
      "rank": "D",
      "comments": [
@@ -12751,8 +12751,8 @@
       "text": "Amerikansk",
       "changed": false
      },
-     "odds": 28.12,
-     "streck": 0.0033,
+     "odds": 33.01,
+     "streck": 0.0029,
      "result": null,
      "horseId": 760811,
      "father": "Make it Happen",
@@ -12802,11 +12802,11 @@
      "trainerWin": 0.063,
      "klass": 9.709477955946982,
      "postIndex": 0.169,
-     "p": 0.006,
-     "marketP": 0.03,
+     "p": 0.005,
+     "marketP": 0.026,
      "marketPct": 0.003,
      "marketSource": "streck",
-     "value": 1.71,
+     "value": 1.713,
      "isValue": false,
      "scores": {
       "form": 43,
@@ -12814,13 +12814,13 @@
       "kusk": 62,
       "spar": 59,
       "value": 86,
-      "total": 53,
+      "total": 54,
       "tempo": 45
      },
      "position": "I kön (utvändigt)",
      "tempoScore": 45,
      "poang": {
-      "total": 3,
+      "total": 0,
       "tempo": 45,
       "form": 40,
       "fart": 18,
@@ -12829,7 +12829,7 @@
       "kusk": 30,
       "tranare": 28,
       "utrustning": 83,
-      "marknad": 29
+      "marknad": 28
      },
      "rank": "D",
      "comments": [
@@ -12986,8 +12986,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 36.75,
-     "streck": 0.0031,
+     "odds": 40.56,
+     "streck": 0.0028,
      "result": null,
      "horseId": 756963,
      "father": "Maharajah",
@@ -13031,11 +13031,11 @@
      "trainerWin": 0.048,
      "klass": 9.352831629857205,
      "postIndex": 0.125,
-     "p": 0.004,
-     "marketP": 0.023,
+     "p": 0.003,
+     "marketP": 0.021,
      "marketPct": 0.003,
      "marketSource": "streck",
-     "value": 1.158,
+     "value": 1.154,
      "isValue": false,
      "scores": {
       "form": 42,
@@ -13058,7 +13058,7 @@
       "kusk": 35,
       "tranare": 23,
       "utrustning": 30,
-      "marknad": 28
+      "marknad": 27
      },
      "rank": "D",
      "comments": [
@@ -13180,7 +13180,7 @@
     "horse": "Brilliant Kid",
     "status": "NORMAL FAVORIT",
     "why": [
-     "modellen 61 % mot folkets 69 %"
+     "modellen 60 % mot folkets 68 %"
     ]
    },
    "tempo": {
@@ -13210,7 +13210,7 @@
     ]
    },
    "hasOdds": true,
-   "oddsWeight": 0.106
+   "oddsWeight": 0.145
   },
   {
    "leg": 6,
@@ -13221,7 +13221,7 @@
    "startMethod": "auto",
    "startTime": "2026-10-05T21:26:00",
    "firstPrize": 35000,
-   "winTurnover": 21667,
+   "winTurnover": 31970,
    "track": "Färjestad",
    "status": "upcoming",
    "condition": "light",
@@ -13264,8 +13264,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 2.99,
-     "streck": 0.488,
+     "odds": 3.15,
+     "streck": 0.443,
      "result": null,
      "horseId": 771941,
      "father": "Tekno Odin",
@@ -13309,11 +13309,11 @@
      "trainerWin": 0.148,
      "klass": 10.01397873379061,
      "postIndex": 0.231,
-     "p": 0.48,
-     "marketP": 0.283,
-     "marketPct": 0.512,
+     "p": 0.428,
+     "marketP": 0.269,
+     "marketPct": 0.457,
      "marketSource": "streck",
-     "value": 0.938,
+     "value": 0.936,
      "isValue": false,
      "scores": {
       "form": 72,
@@ -13321,13 +13321,13 @@
       "kusk": 67,
       "spar": 49,
       "value": 47,
-      "total": 53,
+      "total": 54,
       "tempo": 75
      },
      "position": "Rygg ledaren",
      "tempoScore": 75,
      "poang": {
-      "total": 95,
+      "total": 93,
       "tempo": 75,
       "form": 75,
       "fart": 43,
@@ -13335,8 +13335,8 @@
       "spar": 49,
       "kusk": 82,
       "tranare": 91,
-      "utrustning": 43,
-      "marknad": 87
+      "utrustning": 46,
+      "marknad": 85
      },
      "rank": "A",
      "comments": [
@@ -13485,8 +13485,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 6.25,
-     "streck": 0.1176,
+     "odds": 7.04,
+     "streck": 0.143,
      "result": null,
      "horseId": 792013,
      "father": "Mjölner Herkules",
@@ -13518,25 +13518,25 @@
      "trainerWin": null,
      "klass": 9.265718312825497,
      "postIndex": 0.159,
-     "p": 0.161,
-     "marketP": 0.136,
-     "marketPct": 0.123,
+     "p": 0.186,
+     "marketP": 0.12,
+     "marketPct": 0.148,
      "marketSource": "streck",
-     "value": 1.302,
+     "value": 1.257,
      "isValue": true,
      "scores": {
       "form": 39,
       "fart": 66,
       "kusk": 50,
       "spar": 40,
-      "value": 65,
+      "value": 63,
       "total": 62,
       "tempo": 36
      },
      "position": "Bakom",
      "tempoScore": 36,
      "poang": {
-      "total": 72,
+      "total": 75,
       "tempo": 36,
       "form": 42,
       "fart": 62,
@@ -13544,8 +13544,8 @@
       "spar": 40,
       "kusk": 64,
       "tranare": 50,
-      "utrustning": 43,
-      "marknad": 71
+      "utrustning": 46,
+      "marknad": 72
      },
      "rank": "B",
      "comments": [
@@ -13700,8 +13700,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 7.94,
-     "streck": 0.1513,
+     "odds": 8.04,
+     "streck": 0.1447,
      "result": null,
      "horseId": 772703,
      "father": "Dotterud Teddy",
@@ -13745,25 +13745,25 @@
      "trainerWin": 0.133,
      "klass": 9.578884201204573,
      "postIndex": 0.137,
-     "p": 0.125,
-     "marketP": 0.107,
-     "marketPct": 0.159,
+     "p": 0.117,
+     "marketP": 0.105,
+     "marketPct": 0.149,
      "marketSource": "streck",
-     "value": 0.791,
+     "value": 0.785,
      "isValue": false,
      "scores": {
       "form": 77,
       "fart": 50,
       "kusk": 42,
       "spar": 37,
-      "value": 40,
-      "total": 40,
+      "value": 39,
+      "total": 41,
       "tempo": 55
      },
      "position": "Utvändigt (dödens)",
      "tempoScore": 55,
      "poang": {
-      "total": 67,
+      "total": 66,
       "tempo": 55,
       "form": 76,
       "fart": 37,
@@ -13772,7 +13772,7 @@
       "kusk": 63,
       "tranare": 80,
       "utrustning": 72,
-      "marknad": 74
+      "marknad": 72
      },
      "rank": "B",
      "comments": [
@@ -13919,8 +13919,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 7.68,
-     "streck": 0.0557,
+     "odds": 8.06,
+     "streck": 0.0732,
      "result": null,
      "horseId": 771471,
      "father": "Lome Brage",
@@ -13952,25 +13952,25 @@
      "trainerWin": null,
      "klass": 9.238794680994442,
      "postIndex": 0.518,
-     "p": 0.063,
-     "marketP": 0.11,
-     "marketPct": 0.058,
+     "p": 0.078,
+     "marketP": 0.105,
+     "marketPct": 0.076,
      "marketSource": "streck",
-     "value": 1.077,
+     "value": 1.028,
      "isValue": false,
      "scores": {
       "form": 81,
       "fart": 50,
       "kusk": 50,
       "spar": 83,
-      "value": 54,
+      "value": 51,
       "total": 50,
       "tempo": 24
      },
      "position": "Bakom",
      "tempoScore": 24,
      "poang": {
-      "total": 53,
+      "total": 57,
       "tempo": 24,
       "form": 82,
       "fart": 73,
@@ -13978,8 +13978,8 @@
       "spar": 83,
       "kusk": 34,
       "tranare": 50,
-      "utrustning": 43,
-      "marknad": 62
+      "utrustning": 46,
+      "marknad": 64
      },
      "rank": "C",
      "comments": [
@@ -14099,6 +14099,213 @@
      ]
     },
     {
+     "nr": 5,
+     "post": 5,
+     "distance": 2140,
+     "scratched": false,
+     "horse": "Mjölner Borken",
+     "age": 6,
+     "sex": "stallion",
+     "money": 602847,
+     "lifeStarts": 37,
+     "lifeWins": 10,
+     "earningsPerStart": 16293.16,
+     "record": 85,
+     "driver": "Jan Roar Mjölneröd",
+     "driverId": 109389,
+     "driverYear": null,
+     "trainer": "Jan Roar Mjölneröd",
+     "trainerYear": null,
+     "shoes": {
+      "front": false,
+      "back": true,
+      "changed": true
+     },
+     "sulky": {
+      "text": "Amerikansk",
+      "changed": false
+     },
+     "odds": 16.71,
+     "streck": 0.0336,
+     "result": null,
+     "horseId": 798985,
+     "father": "Tangen Trygg",
+     "grandfather": "Mjölner Troll",
+     "horseHome": null,
+     "trainerId": 109389,
+     "trainerHome": null,
+     "driverHome": null,
+     "avgOdds5": 12.9,
+     "lifeRecords": [
+      {
+       "method": "auto",
+       "dist": "medium",
+       "km": 85,
+       "year": 2026
+      },
+      {
+       "method": "volte",
+       "dist": "medium",
+       "km": 84.6,
+       "year": 2025
+      }
+     ],
+     "handicap": 0,
+     "formScore": 16,
+     "gallopRisk": 0.033,
+     "speed": 86.15,
+     "driverWin": null,
+     "trainerWin": null,
+     "klass": 9.69856204038786,
+     "postIndex": 0.223,
+     "p": 0.055,
+     "marketP": 0.051,
+     "marketPct": 0.035,
+     "marketSource": "streck",
+     "value": 1.575,
+     "isValue": true,
+     "scores": {
+      "form": 39,
+      "fart": 55,
+      "kusk": 50,
+      "spar": 48,
+      "value": 79,
+      "total": 66,
+      "tempo": 45
+     },
+     "position": "I kön (utvändigt)",
+     "tempoScore": 45,
+     "poang": {
+      "total": 50,
+      "tempo": 45,
+      "form": 48,
+      "fart": 46,
+      "klass": 56,
+      "spar": 48,
+      "kusk": 40,
+      "tranare": 50,
+      "utrustning": 98,
+      "marknad": 54
+     },
+     "rank": "C",
+     "comments": [
+      "Distansändring 1680 → 2140 m",
+      "Skor av (ändrat)"
+     ],
+     "last5": [
+      {
+       "date": "2026-09-13",
+       "place": 7,
+       "galloped": false,
+       "disqualified": false,
+       "scratched": false,
+       "km": 85.7,
+       "odds": 3.8,
+       "track": "Åmål",
+       "startMethod": "auto",
+       "distance": 1680,
+       "post": 3,
+       "driverId": 109389,
+       "driver": "Jan Roar Mjölneröd",
+       "firstPrize": 30000,
+       "shoes": {
+        "front": true,
+        "back": true
+       },
+       "trackCondition": "light",
+       "sport": "trot"
+      },
+      {
+       "date": "2026-08-18",
+       "place": 3,
+       "galloped": false,
+       "disqualified": false,
+       "scratched": false,
+       "km": 85,
+       "odds": 24.88,
+       "track": "Bjerke",
+       "startMethod": "auto",
+       "distance": 2100,
+       "post": 3,
+       "driverId": 0,
+       "driver": "Jan Roar Mjølnerød",
+       "firstPrize": 22000,
+       "shoes": {
+        "front": true,
+        "back": true
+       },
+       "trackCondition": "light",
+       "sport": "trot"
+      },
+      {
+       "date": "2026-08-09",
+       "place": 6,
+       "galloped": false,
+       "disqualified": false,
+       "scratched": false,
+       "km": 87.5,
+       "odds": 18.87,
+       "track": "Åmål",
+       "startMethod": "auto",
+       "distance": 2080,
+       "post": 5,
+       "driverId": 109389,
+       "driver": "Jan Roar Mjölneröd",
+       "firstPrize": 50000,
+       "shoes": {
+        "front": true,
+        "back": true
+       },
+       "trackCondition": "light",
+       "sport": "trot"
+      },
+      {
+       "date": "2026-07-31",
+       "place": 0,
+       "galloped": false,
+       "disqualified": false,
+       "scratched": false,
+       "km": 91.2,
+       "odds": 8.78,
+       "track": "Momarken",
+       "startMethod": "volte",
+       "distance": 2160,
+       "post": 1,
+       "driverId": 0,
+       "driver": "Julie Mari Eikås",
+       "firstPrize": 16500,
+       "shoes": {
+        "front": true,
+        "back": true
+       },
+       "trackCondition": "light",
+       "sport": "monté"
+      },
+      {
+       "date": "2026-07-24",
+       "place": 0,
+       "galloped": false,
+       "disqualified": false,
+       "scratched": false,
+       "km": 86.6,
+       "odds": 8.16,
+       "track": "Romme",
+       "startMethod": "auto",
+       "distance": 2640,
+       "post": 2,
+       "driverId": 109389,
+       "driver": "Jan Roar Mjölneröd",
+       "firstPrize": 50000,
+       "shoes": {
+        "front": true,
+        "back": true
+       },
+       "trackCondition": "light",
+       "sport": "trot"
+      }
+     ]
+    },
+    {
      "nr": 2,
      "post": 2,
      "distance": 2140,
@@ -14133,8 +14340,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 11.94,
-     "streck": 0.0665,
+     "odds": 8.58,
+     "streck": 0.0662,
      "result": null,
      "horseId": 771467,
      "father": "Tekno Odin",
@@ -14178,11 +14385,11 @@
      "trainerWin": 0.061,
      "klass": 9.175783088113757,
      "postIndex": 0.127,
-     "p": 0.056,
-     "marketP": 0.071,
-     "marketPct": 0.07,
+     "p": 0.054,
+     "marketP": 0.099,
+     "marketPct": 0.068,
      "marketSource": "streck",
-     "value": 0.801,
+     "value": 0.791,
      "isValue": false,
      "scores": {
       "form": 56,
@@ -14190,7 +14397,7 @@
       "kusk": 72,
       "spar": 36,
       "value": 40,
-      "total": 37,
+      "total": 38,
       "tempo": 80
      },
      "position": "Ledning",
@@ -14204,8 +14411,8 @@
       "spar": 36,
       "kusk": 58,
       "tranare": 23,
-      "utrustning": 43,
-      "marknad": 64
+      "utrustning": 46,
+      "marknad": 63
      },
      "rank": "C",
      "comments": [
@@ -14327,213 +14534,6 @@
      ]
     },
     {
-     "nr": 5,
-     "post": 5,
-     "distance": 2140,
-     "scratched": false,
-     "horse": "Mjölner Borken",
-     "age": 6,
-     "sex": "stallion",
-     "money": 602847,
-     "lifeStarts": 37,
-     "lifeWins": 10,
-     "earningsPerStart": 16293.16,
-     "record": 85,
-     "driver": "Jan Roar Mjölneröd",
-     "driverId": 109389,
-     "driverYear": null,
-     "trainer": "Jan Roar Mjölneröd",
-     "trainerYear": null,
-     "shoes": {
-      "front": false,
-      "back": true,
-      "changed": true
-     },
-     "sulky": {
-      "text": "Amerikansk",
-      "changed": false
-     },
-     "odds": 14.83,
-     "streck": 0.0254,
-     "result": null,
-     "horseId": 798985,
-     "father": "Tangen Trygg",
-     "grandfather": "Mjölner Troll",
-     "horseHome": null,
-     "trainerId": 109389,
-     "trainerHome": null,
-     "driverHome": null,
-     "avgOdds5": 12.9,
-     "lifeRecords": [
-      {
-       "method": "auto",
-       "dist": "medium",
-       "km": 85,
-       "year": 2026
-      },
-      {
-       "method": "volte",
-       "dist": "medium",
-       "km": 84.6,
-       "year": 2025
-      }
-     ],
-     "handicap": 0,
-     "formScore": 16,
-     "gallopRisk": 0.033,
-     "speed": 86.15,
-     "driverWin": null,
-     "trainerWin": null,
-     "klass": 9.69856204038786,
-     "postIndex": 0.223,
-     "p": 0.044,
-     "marketP": 0.057,
-     "marketPct": 0.027,
-     "marketSource": "streck",
-     "value": 1.655,
-     "isValue": true,
-     "scores": {
-      "form": 39,
-      "fart": 55,
-      "kusk": 50,
-      "spar": 48,
-      "value": 83,
-      "total": 66,
-      "tempo": 45
-     },
-     "position": "I kön (utvändigt)",
-     "tempoScore": 45,
-     "poang": {
-      "total": 45,
-      "tempo": 45,
-      "form": 48,
-      "fart": 46,
-      "klass": 56,
-      "spar": 48,
-      "kusk": 40,
-      "tranare": 50,
-      "utrustning": 100,
-      "marknad": 53
-     },
-     "rank": "C",
-     "comments": [
-      "Distansändring 1680 → 2140 m",
-      "Skor av (ändrat)"
-     ],
-     "last5": [
-      {
-       "date": "2026-09-13",
-       "place": 7,
-       "galloped": false,
-       "disqualified": false,
-       "scratched": false,
-       "km": 85.7,
-       "odds": 3.8,
-       "track": "Åmål",
-       "startMethod": "auto",
-       "distance": 1680,
-       "post": 3,
-       "driverId": 109389,
-       "driver": "Jan Roar Mjölneröd",
-       "firstPrize": 30000,
-       "shoes": {
-        "front": true,
-        "back": true
-       },
-       "trackCondition": "light",
-       "sport": "trot"
-      },
-      {
-       "date": "2026-08-18",
-       "place": 3,
-       "galloped": false,
-       "disqualified": false,
-       "scratched": false,
-       "km": 85,
-       "odds": 24.88,
-       "track": "Bjerke",
-       "startMethod": "auto",
-       "distance": 2100,
-       "post": 3,
-       "driverId": 0,
-       "driver": "Jan Roar Mjølnerød",
-       "firstPrize": 22000,
-       "shoes": {
-        "front": true,
-        "back": true
-       },
-       "trackCondition": "light",
-       "sport": "trot"
-      },
-      {
-       "date": "2026-08-09",
-       "place": 6,
-       "galloped": false,
-       "disqualified": false,
-       "scratched": false,
-       "km": 87.5,
-       "odds": 18.87,
-       "track": "Åmål",
-       "startMethod": "auto",
-       "distance": 2080,
-       "post": 5,
-       "driverId": 109389,
-       "driver": "Jan Roar Mjölneröd",
-       "firstPrize": 50000,
-       "shoes": {
-        "front": true,
-        "back": true
-       },
-       "trackCondition": "light",
-       "sport": "trot"
-      },
-      {
-       "date": "2026-07-31",
-       "place": 0,
-       "galloped": false,
-       "disqualified": false,
-       "scratched": false,
-       "km": 91.2,
-       "odds": 8.78,
-       "track": "Momarken",
-       "startMethod": "volte",
-       "distance": 2160,
-       "post": 1,
-       "driverId": 0,
-       "driver": "Julie Mari Eikås",
-       "firstPrize": 16500,
-       "shoes": {
-        "front": true,
-        "back": true
-       },
-       "trackCondition": "light",
-       "sport": "monté"
-      },
-      {
-       "date": "2026-07-24",
-       "place": 0,
-       "galloped": false,
-       "disqualified": false,
-       "scratched": false,
-       "km": 86.6,
-       "odds": 8.16,
-       "track": "Romme",
-       "startMethod": "auto",
-       "distance": 2640,
-       "post": 2,
-       "driverId": 109389,
-       "driver": "Jan Roar Mjölneröd",
-       "firstPrize": 50000,
-       "shoes": {
-        "front": true,
-        "back": true
-       },
-       "trackCondition": "light",
-       "sport": "trot"
-      }
-     ]
-    },
-    {
      "nr": 13,
      "post": 13,
      "distance": 2140,
@@ -14552,16 +14552,16 @@
      "trainer": "Geir Flåten",
      "trainerYear": null,
      "shoes": {
-      "front": false,
+      "front": true,
       "back": true,
-      "changed": false
+      "changed": true
      },
      "sulky": {
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 20.02,
-     "streck": 0.0144,
+     "odds": 19.66,
+     "streck": 0.0205,
      "result": null,
      "horseId": 800998,
      "father": "Galileo",
@@ -14593,25 +14593,25 @@
      "trainerWin": null,
      "klass": 9.580036668922869,
      "postIndex": 0.472,
-     "p": 0.027,
-     "marketP": 0.042,
-     "marketPct": 0.015,
+     "p": 0.03,
+     "marketP": 0.043,
+     "marketPct": 0.021,
      "marketSource": "streck",
-     "value": 1.766,
+     "value": 1.405,
      "isValue": false,
      "scores": {
       "form": 30,
       "fart": 56,
       "kusk": 50,
       "spar": 78,
-      "value": 88,
-      "total": 67,
+      "value": 70,
+      "total": 59,
       "tempo": 28
      },
      "position": "Bakom",
      "tempoScore": 28,
      "poang": {
-      "total": 35,
+      "total": 37,
       "tempo": 28,
       "form": 18,
       "fart": 40,
@@ -14619,14 +14619,15 @@
       "spar": 78,
       "kusk": 64,
       "tranare": 50,
-      "utrustning": 43,
-      "marknad": 46
+      "utrustning": 20,
+      "marknad": 49
      },
      "rank": "D",
      "comments": [
       "Distansändring 2640 → 2140 m",
       "Byter till autostart",
-      "Galopp i 2 av 5 senaste"
+      "Galopp i 2 av 5 senaste",
+      "Skor på (ändrat)"
      ],
      "last5": [
       {
@@ -14739,215 +14740,6 @@
      ]
     },
     {
-     "nr": 7,
-     "post": 7,
-     "distance": 2140,
-     "scratched": false,
-     "horse": "Tysvär Mikkel",
-     "age": 9,
-     "sex": "gelding",
-     "money": 661825,
-     "lifeStarts": 120,
-     "lifeWins": 11,
-     "earningsPerStart": 5515.2,
-     "record": 82.8,
-     "driver": "Odd Arne Sagholen",
-     "driverId": 99337,
-     "driverYear": null,
-     "trainer": "Odd Arne Sagholen",
-     "trainerYear": null,
-     "shoes": {
-      "front": false,
-      "back": false,
-      "changed": false
-     },
-     "sulky": {
-      "text": "Vanlig",
-      "changed": false
-     },
-     "odds": 28.74,
-     "streck": 0.009,
-     "result": null,
-     "horseId": 788910,
-     "father": "Norheim Svenn",
-     "grandfather": "Tangen Scott",
-     "horseHome": null,
-     "trainerId": 99337,
-     "trainerHome": null,
-     "driverHome": null,
-     "avgOdds5": 8.2,
-     "lifeRecords": [
-      {
-       "method": "auto",
-       "dist": "short",
-       "km": 82.8,
-       "year": 2026
-      },
-      {
-       "method": "volte",
-       "dist": "short",
-       "km": 84.9,
-       "year": 2025
-      }
-     ],
-     "handicap": 0,
-     "formScore": 33,
-     "gallopRisk": 0.1,
-     "speed": 84.5,
-     "driverWin": null,
-     "trainerWin": null,
-     "klass": 8.615444496413966,
-     "postIndex": 0.151,
-     "p": 0.012,
-     "marketP": 0.029,
-     "marketPct": 0.009,
-     "marketSource": "streck",
-     "value": 1.301,
-     "isValue": false,
-     "scores": {
-      "form": 65,
-      "fart": 78,
-      "kusk": 50,
-      "spar": 39,
-      "value": 65,
-      "total": 51,
-      "tempo": 40
-     },
-     "position": "Bakom",
-     "tempoScore": 40,
-     "poang": {
-      "total": 19,
-      "tempo": 40,
-      "form": 61,
-      "fart": 73,
-      "klass": 38,
-      "spar": 39,
-      "kusk": 43,
-      "tranare": 50,
-      "utrustning": 72,
-      "marknad": 41
-     },
-     "rank": "D",
-     "comments": [
-      "Galopp senast",
-      "Kuskbyte: Odd Arne Sagholen (senast Magnus Jakobsson)",
-      "Distansändring 1680 → 2140 m",
-      "Barfota runt om"
-     ],
-     "last5": [
-      {
-       "date": "2026-09-13",
-       "place": 0,
-       "galloped": true,
-       "disqualified": false,
-       "scratched": false,
-       "km": 86.1,
-       "odds": 3.88,
-       "track": "Åmål",
-       "startMethod": "auto",
-       "distance": 1680,
-       "post": 6,
-       "driverId": 103747,
-       "driver": "Magnus Jakobsson",
-       "firstPrize": 30000,
-       "shoes": {
-        "front": false,
-        "back": false
-       },
-       "trackCondition": "light",
-       "sport": "trot"
-      },
-      {
-       "date": "2026-08-02",
-       "place": 4,
-       "galloped": false,
-       "disqualified": false,
-       "scratched": false,
-       "km": 87.1,
-       "odds": 11.21,
-       "track": "Arvika",
-       "startMethod": "volte",
-       "distance": 2100,
-       "post": 2,
-       "driverId": 99337,
-       "driver": "Odd Arne Sagholen",
-       "firstPrize": 30000,
-       "shoes": {
-        "front": false,
-        "back": false
-       },
-       "trackCondition": "light",
-       "sport": "trot"
-      },
-      {
-       "date": "2026-07-05",
-       "place": 5,
-       "galloped": false,
-       "disqualified": false,
-       "scratched": false,
-       "km": 84.5,
-       "odds": 12.8,
-       "track": "Jarlsberg",
-       "startMethod": "auto",
-       "distance": 1609,
-       "post": 1,
-       "driverId": 0,
-       "driver": "Odd Arne Sagholen",
-       "firstPrize": 36668,
-       "shoes": {
-        "front": false,
-        "back": false
-       },
-       "trackCondition": "light",
-       "sport": "trot"
-      },
-      {
-       "date": "2026-06-19",
-       "place": 3,
-       "galloped": false,
-       "disqualified": false,
-       "scratched": false,
-       "km": 86.2,
-       "odds": 7.69,
-       "track": "Årjäng",
-       "startMethod": "volte",
-       "distance": 2140,
-       "post": 5,
-       "driverId": 99337,
-       "driver": "Odd Arne Sagholen",
-       "firstPrize": 25000,
-       "shoes": {
-        "front": false,
-        "back": false
-       },
-       "trackCondition": "light",
-       "sport": "trot"
-      },
-      {
-       "date": "2026-06-06",
-       "place": 1,
-       "galloped": false,
-       "disqualified": false,
-       "scratched": false,
-       "km": 83.9,
-       "odds": 5.4,
-       "track": "Klosterskogen",
-       "startMethod": "auto",
-       "distance": 1700,
-       "post": 2,
-       "driverId": 0,
-       "driver": "Tom Erik Solberg",
-       "firstPrize": 45835,
-       "shoes": {
-        "front": false,
-        "back": false
-       },
-       "trackCondition": "light",
-       "sport": "trot"
-      }
-     ]
-    },
-    {
      "nr": 9,
      "post": 9,
      "distance": 2140,
@@ -14978,8 +14770,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 19.21,
-     "streck": 0.0083,
+     "odds": 22.58,
+     "streck": 0.0123,
      "result": null,
      "horseId": 799283,
      "father": "Bork Odin",
@@ -15011,25 +14803,25 @@
      "trainerWin": null,
      "klass": 8.75708687275636,
      "postIndex": 0.125,
-     "p": 0.012,
-     "marketP": 0.044,
-     "marketPct": 0.009,
+     "p": 0.016,
+     "marketP": 0.037,
+     "marketPct": 0.013,
      "marketSource": "streck",
-     "value": 1.366,
+     "value": 1.274,
      "isValue": false,
      "scores": {
       "form": 62,
       "fart": 39,
       "kusk": 62,
       "spar": 36,
-      "value": 68,
-      "total": 53,
+      "value": 64,
+      "total": 52,
       "tempo": 20
      },
      "position": "Bakom",
      "tempoScore": 20,
      "poang": {
-      "total": 18,
+      "total": 25,
       "tempo": 20,
       "form": 57,
       "fart": 62,
@@ -15037,8 +14829,8 @@
       "spar": 36,
       "kusk": 79,
       "tranare": 50,
-      "utrustning": 43,
-      "marknad": 40
+      "utrustning": 46,
+      "marknad": 43
      },
      "rank": "D",
      "comments": [
@@ -15184,8 +14976,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 12.05,
-     "streck": 0.0116,
+     "odds": 8.84,
+     "streck": 0.0165,
      "result": null,
      "horseId": 788130,
      "father": "Wik Stjernen",
@@ -15217,25 +15009,25 @@
      "trainerWin": null,
      "klass": 8.774707251095416,
      "postIndex": 0.614,
-     "p": 0.012,
-     "marketP": 0.07,
-     "marketPct": 0.012,
+     "p": 0.016,
+     "marketP": 0.096,
+     "marketPct": 0.017,
      "marketSource": "streck",
-     "value": 1.012,
+     "value": 0.951,
      "isValue": false,
      "scores": {
       "form": 53,
       "fart": 72,
       "kusk": 50,
       "spar": 95,
-      "value": 51,
+      "value": 48,
       "total": 40,
       "tempo": 32
      },
      "position": "Bakom",
      "tempoScore": 32,
      "poang": {
-      "total": 19,
+      "total": 25,
       "tempo": 32,
       "form": 49,
       "fart": 75,
@@ -15243,8 +15035,8 @@
       "spar": 95,
       "kusk": 37,
       "tranare": 50,
-      "utrustning": 15,
-      "marknad": 44
+      "utrustning": 20,
+      "marknad": 46
      },
      "rank": "D",
      "comments": [
@@ -15364,6 +15156,215 @@
      ]
     },
     {
+     "nr": 7,
+     "post": 7,
+     "distance": 2140,
+     "scratched": false,
+     "horse": "Tysvär Mikkel",
+     "age": 9,
+     "sex": "gelding",
+     "money": 661825,
+     "lifeStarts": 120,
+     "lifeWins": 11,
+     "earningsPerStart": 5515.2,
+     "record": 82.8,
+     "driver": "Odd Arne Sagholen",
+     "driverId": 99337,
+     "driverYear": null,
+     "trainer": "Odd Arne Sagholen",
+     "trainerYear": null,
+     "shoes": {
+      "front": false,
+      "back": false,
+      "changed": false
+     },
+     "sulky": {
+      "text": "Vanlig",
+      "changed": false
+     },
+     "odds": 28.16,
+     "streck": 0.01,
+     "result": null,
+     "horseId": 788910,
+     "father": "Norheim Svenn",
+     "grandfather": "Tangen Scott",
+     "horseHome": null,
+     "trainerId": 99337,
+     "trainerHome": null,
+     "driverHome": null,
+     "avgOdds5": 8.2,
+     "lifeRecords": [
+      {
+       "method": "auto",
+       "dist": "short",
+       "km": 82.8,
+       "year": 2026
+      },
+      {
+       "method": "volte",
+       "dist": "short",
+       "km": 84.9,
+       "year": 2025
+      }
+     ],
+     "handicap": 0,
+     "formScore": 33,
+     "gallopRisk": 0.1,
+     "speed": 84.5,
+     "driverWin": null,
+     "trainerWin": null,
+     "klass": 8.615444496413966,
+     "postIndex": 0.151,
+     "p": 0.013,
+     "marketP": 0.03,
+     "marketPct": 0.01,
+     "marketSource": "streck",
+     "value": 1.264,
+     "isValue": false,
+     "scores": {
+      "form": 65,
+      "fart": 78,
+      "kusk": 50,
+      "spar": 39,
+      "value": 63,
+      "total": 51,
+      "tempo": 40
+     },
+     "position": "Bakom",
+     "tempoScore": 40,
+     "poang": {
+      "total": 20,
+      "tempo": 40,
+      "form": 61,
+      "fart": 73,
+      "klass": 38,
+      "spar": 39,
+      "kusk": 43,
+      "tranare": 50,
+      "utrustning": 72,
+      "marknad": 40
+     },
+     "rank": "D",
+     "comments": [
+      "Galopp senast",
+      "Kuskbyte: Odd Arne Sagholen (senast Magnus Jakobsson)",
+      "Distansändring 1680 → 2140 m",
+      "Barfota runt om"
+     ],
+     "last5": [
+      {
+       "date": "2026-09-13",
+       "place": 0,
+       "galloped": true,
+       "disqualified": false,
+       "scratched": false,
+       "km": 86.1,
+       "odds": 3.88,
+       "track": "Åmål",
+       "startMethod": "auto",
+       "distance": 1680,
+       "post": 6,
+       "driverId": 103747,
+       "driver": "Magnus Jakobsson",
+       "firstPrize": 30000,
+       "shoes": {
+        "front": false,
+        "back": false
+       },
+       "trackCondition": "light",
+       "sport": "trot"
+      },
+      {
+       "date": "2026-08-02",
+       "place": 4,
+       "galloped": false,
+       "disqualified": false,
+       "scratched": false,
+       "km": 87.1,
+       "odds": 11.21,
+       "track": "Arvika",
+       "startMethod": "volte",
+       "distance": 2100,
+       "post": 2,
+       "driverId": 99337,
+       "driver": "Odd Arne Sagholen",
+       "firstPrize": 30000,
+       "shoes": {
+        "front": false,
+        "back": false
+       },
+       "trackCondition": "light",
+       "sport": "trot"
+      },
+      {
+       "date": "2026-07-05",
+       "place": 5,
+       "galloped": false,
+       "disqualified": false,
+       "scratched": false,
+       "km": 84.5,
+       "odds": 12.8,
+       "track": "Jarlsberg",
+       "startMethod": "auto",
+       "distance": 1609,
+       "post": 1,
+       "driverId": 0,
+       "driver": "Odd Arne Sagholen",
+       "firstPrize": 36668,
+       "shoes": {
+        "front": false,
+        "back": false
+       },
+       "trackCondition": "light",
+       "sport": "trot"
+      },
+      {
+       "date": "2026-06-19",
+       "place": 3,
+       "galloped": false,
+       "disqualified": false,
+       "scratched": false,
+       "km": 86.2,
+       "odds": 7.69,
+       "track": "Årjäng",
+       "startMethod": "volte",
+       "distance": 2140,
+       "post": 5,
+       "driverId": 99337,
+       "driver": "Odd Arne Sagholen",
+       "firstPrize": 25000,
+       "shoes": {
+        "front": false,
+        "back": false
+       },
+       "trackCondition": "light",
+       "sport": "trot"
+      },
+      {
+       "date": "2026-06-06",
+       "place": 1,
+       "galloped": false,
+       "disqualified": false,
+       "scratched": false,
+       "km": 83.9,
+       "odds": 5.4,
+       "track": "Klosterskogen",
+       "startMethod": "auto",
+       "distance": 1700,
+       "post": 2,
+       "driverId": 0,
+       "driver": "Tom Erik Solberg",
+       "firstPrize": 45835,
+       "shoes": {
+        "front": false,
+        "back": false
+       },
+       "trackCondition": "light",
+       "sport": "trot"
+      }
+     ]
+    },
+    {
      "nr": 10,
      "post": 10,
      "distance": 2140,
@@ -15394,8 +15395,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 53.48,
-     "streck": 0.002,
+     "odds": 54.99,
+     "streck": 0.0022,
      "result": null,
      "horseId": 774654,
      "father": "Saras Tofte",
@@ -15428,18 +15429,18 @@
      "klass": 8.711089172051334,
      "postIndex": 0.144,
      "p": 0.003,
-     "marketP": 0.016,
+     "marketP": 0.015,
      "marketPct": 0.002,
      "marketSource": "streck",
-     "value": 1.461,
+     "value": 1.419,
      "isValue": false,
      "scores": {
       "form": 37,
       "fart": 44,
       "kusk": 44,
       "spar": 38,
-      "value": 73,
-      "total": 49,
+      "value": 71,
+      "total": 50,
       "tempo": 20
      },
      "position": "Bakom",
@@ -15453,8 +15454,8 @@
       "spar": 38,
       "kusk": 33,
       "tranare": 50,
-      "utrustning": 43,
-      "marknad": 23
+      "utrustning": 46,
+      "marknad": 22
      },
      "rank": "D",
      "comments": [
@@ -15638,14 +15639,14 @@
      "marketP": 0.008,
      "marketPct": 0.002,
      "marketSource": "streck",
-     "value": 1.565,
+     "value": 1.544,
      "isValue": false,
      "scores": {
       "form": 22,
       "fart": 14,
       "kusk": 50,
       "spar": 33,
-      "value": 78,
+      "value": 77,
       "total": 52,
       "tempo": 20
      },
@@ -15660,8 +15661,8 @@
       "spar": 33,
       "kusk": 46,
       "tranare": 50,
-      "utrustning": 43,
-      "marknad": 20
+      "utrustning": 46,
+      "marknad": 18
      },
      "rank": "D",
      "comments": [
@@ -15814,8 +15815,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 33,
-     "streck": 0.0025,
+     "odds": 40.14,
+     "streck": 0.0023,
      "result": null,
      "horseId": 732260,
      "father": "Tangen Scott",
@@ -15872,8 +15873,8 @@
      "klass": 7.823721958356952,
      "postIndex": 0.144,
      "p": 0.002,
-     "marketP": 0.026,
-     "marketPct": 0.003,
+     "marketP": 0.021,
+     "marketPct": 0.002,
      "marketSource": "streck",
      "value": 0.88,
      "isValue": false,
@@ -15883,7 +15884,7 @@
       "kusk": 13,
       "spar": 38,
       "value": 44,
-      "total": 27,
+      "total": 28,
       "tempo": 50
      },
      "position": "I kön (inner)",
@@ -15897,8 +15898,8 @@
       "spar": 38,
       "kusk": 7,
       "tranare": 7,
-      "utrustning": 43,
-      "marknad": 26
+      "utrustning": 46,
+      "marknad": 23
      },
      "rank": "D",
      "comments": [
@@ -16046,7 +16047,7 @@
       "changed": false
      },
      "odds": null,
-     "streck": 0.0428,
+     "streck": 0.0286,
      "result": null,
      "horseId": 773356,
      "father": "Norheim Faksen",
@@ -16230,7 +16231,7 @@
       "changed": true
      },
      "odds": null,
-     "streck": 0.0033,
+     "streck": 0.0022,
      "result": null,
      "horseId": 770550,
      "father": "Bork Odin",
@@ -16400,9 +16401,9 @@
    "favorite": {
     "nr": 4,
     "horse": "Remlov",
-    "status": "STARK FAVORIT",
+    "status": "NORMAL FAVORIT",
     "why": [
-     "modellen 48 % mot folkets 51 %"
+     "modellen 43 % mot folkets 46 %"
     ]
    },
    "tempo": {
@@ -16433,7 +16434,7 @@
     ]
    },
    "hasOdds": true,
-   "oddsWeight": 0.067
+   "oddsWeight": 0.096
   },
   {
    "leg": 7,
@@ -16444,7 +16445,7 @@
    "startMethod": "volte",
    "startTime": "2026-10-05T21:40:00",
    "firstPrize": 60000,
-   "winTurnover": 28635,
+   "winTurnover": 37238,
    "track": "Gävle",
    "status": "upcoming",
    "condition": "light",
@@ -16487,8 +16488,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 4.08,
-     "streck": 0.1891,
+     "odds": 4.13,
+     "streck": 0.2268,
      "result": null,
      "horseId": 798111,
      "father": "Golden Bridge",
@@ -16532,25 +16533,25 @@
      "trainerWin": 0.121,
      "klass": 9.480507957341207,
      "postIndex": 0.144,
-     "p": 0.214,
-     "marketP": 0.208,
-     "marketPct": 0.19,
+     "p": 0.249,
+     "marketP": 0.206,
+     "marketPct": 0.227,
      "marketSource": "streck",
-     "value": 1.125,
+     "value": 1.094,
      "isValue": false,
      "scores": {
       "form": 47,
       "fart": 53,
       "kusk": 62,
       "spar": 52,
-      "value": 56,
+      "value": 55,
       "total": 59,
       "tempo": 20
      },
      "position": "Bakom",
      "tempoScore": 20,
      "poang": {
-      "total": 78,
+      "total": 82,
       "tempo": 20,
       "form": 55,
       "fart": 84,
@@ -16559,7 +16560,7 @@
       "kusk": 40,
       "tranare": 69,
       "utrustning": 42,
-      "marknad": 74
+      "marknad": 75
      },
      "rank": "A",
      "comments": [
@@ -16707,8 +16708,8 @@
       "text": "Vanlig",
       "changed": true
      },
-     "odds": 6.19,
-     "streck": 0.2488,
+     "odds": 6.48,
+     "streck": 0.2324,
      "result": null,
      "horseId": 793529,
      "father": "Bold Eagle",
@@ -16746,11 +16747,11 @@
      "trainerWin": 0.103,
      "klass": 9.028585854385108,
      "postIndex": 0.149,
-     "p": 0.212,
-     "marketP": 0.137,
-     "marketPct": 0.25,
+     "p": 0.198,
+     "marketP": 0.131,
+     "marketPct": 0.233,
      "marketSource": "streck",
-     "value": 0.85,
+     "value": 0.848,
      "isValue": false,
      "scores": {
       "form": 73,
@@ -16764,7 +16765,7 @@
      "position": "Rygg ledaren",
      "tempoScore": 75,
      "poang": {
-      "total": 78,
+      "total": 77,
       "tempo": 75,
       "form": 52,
       "fart": 51,
@@ -16773,9 +16774,9 @@
       "kusk": 52,
       "tranare": 55,
       "utrustning": 68,
-      "marknad": 77
+      "marknad": 76
      },
-     "rank": "A",
+     "rank": "B",
      "comments": [
       "Kuskbyte: Oskar Kylin Blom (senast Fredrik Plassen)",
       "Byter till voltstart",
@@ -16930,8 +16931,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 7.31,
-     "streck": 0.1401,
+     "odds": 7.08,
+     "streck": 0.1417,
      "result": null,
      "horseId": 792297,
      "father": "Orlando Vici",
@@ -16970,17 +16971,17 @@
      "klass": 8.827028068509152,
      "postIndex": 0.107,
      "p": 0.154,
-     "marketP": 0.116,
-     "marketPct": 0.141,
+     "marketP": 0.12,
+     "marketPct": 0.142,
      "marketSource": "streck",
-     "value": 1.094,
+     "value": 1.083,
      "isValue": false,
      "scores": {
       "form": 55,
       "fart": 10,
       "kusk": 67,
       "spar": 29,
-      "value": 55,
+      "value": 54,
       "total": 57,
       "tempo": 32
      },
@@ -17150,8 +17151,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 9.49,
-     "streck": 0.1624,
+     "odds": 8.73,
+     "streck": 0.1486,
      "result": null,
      "horseId": 784751,
      "father": "Gotland",
@@ -17195,11 +17196,11 @@
      "trainerWin": 0.091,
      "klass": 9.247323005573717,
      "postIndex": 0.113,
-     "p": 0.153,
-     "marketP": 0.089,
-     "marketPct": 0.163,
+     "p": 0.14,
+     "marketP": 0.097,
+     "marketPct": 0.149,
      "marketSource": "streck",
-     "value": 0.94,
+     "value": 0.941,
      "isValue": false,
      "scores": {
       "form": 95,
@@ -17213,7 +17214,7 @@
      "position": "Bakom",
      "tempoScore": 40,
      "poang": {
-      "total": 72,
+      "total": 70,
       "tempo": 40,
       "form": 98,
       "fart": 76,
@@ -17222,7 +17223,7 @@
       "kusk": 81,
       "tranare": 47,
       "utrustning": 68,
-      "marknad": 72
+      "marknad": 71
      },
      "rank": "B",
      "comments": [
@@ -17376,8 +17377,8 @@
       "text": "Vanlig",
       "changed": true
      },
-     "odds": 8.55,
-     "streck": 0.1244,
+     "odds": 8.85,
+     "streck": 0.1153,
      "result": null,
      "horseId": 787807,
      "father": "Timoko",
@@ -17427,11 +17428,11 @@
      "trainerWin": 0.114,
      "klass": 9.294943434636819,
      "postIndex": 0.167,
-     "p": 0.128,
-     "marketP": 0.099,
-     "marketPct": 0.125,
+     "p": 0.118,
+     "marketP": 0.096,
+     "marketPct": 0.116,
      "marketSource": "streck",
-     "value": 1.023,
+     "value": 1.022,
      "isValue": false,
      "scores": {
       "form": 57,
@@ -17445,7 +17446,7 @@
      "position": "Bakom",
      "tempoScore": 36,
      "poang": {
-      "total": 68,
+      "total": 66,
       "tempo": 36,
       "form": 58,
       "fart": 77,
@@ -17454,7 +17455,7 @@
       "kusk": 81,
       "tranare": 63,
       "utrustning": 42,
-      "marknad": 69
+      "marknad": 68
      },
      "rank": "B",
      "comments": [
@@ -17612,8 +17613,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 8.04,
-     "streck": 0.0743,
+     "odds": 8.17,
+     "streck": 0.075,
      "result": null,
      "horseId": 789080,
      "father": "Super Photo Kosmos",
@@ -17646,17 +17647,17 @@
      "klass": 8.988986468286909,
      "postIndex": 0.178,
      "p": 0.065,
-     "marketP": 0.106,
+     "marketP": 0.104,
      "marketPct": 0.075,
      "marketSource": "streck",
-     "value": 0.877,
+     "value": 0.867,
      "isValue": false,
      "scores": {
       "form": 86,
       "fart": 48,
       "kusk": 56,
       "spar": 74,
-      "value": 44,
+      "value": 43,
       "total": 44,
       "tempo": 55
      },
@@ -17824,8 +17825,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 12.8,
-     "streck": 0.0162,
+     "odds": 10.79,
+     "streck": 0.0207,
      "result": null,
      "horseId": 784903,
      "father": "Flocki d'Aurcy",
@@ -17869,25 +17870,25 @@
      "trainerWin": 0.107,
      "klass": 8.888530515363529,
      "postIndex": 0.14,
-     "p": 0.029,
-     "marketP": 0.066,
-     "marketPct": 0.016,
+     "p": 0.035,
+     "marketP": 0.079,
+     "marketPct": 0.021,
      "marketSource": "streck",
-     "value": 1.768,
-     "isValue": false,
+     "value": 1.693,
+     "isValue": true,
      "scores": {
       "form": 40,
       "fart": 65,
       "kusk": 72,
       "spar": 50,
-      "value": 88,
+      "value": 85,
       "total": 69,
       "tempo": 80
      },
      "position": "Ledning",
      "tempoScore": 80,
      "poang": {
-      "total": 37,
+      "total": 41,
       "tempo": 80,
       "form": 49,
       "fart": 59,
@@ -17896,9 +17897,9 @@
       "kusk": 79,
       "tranare": 58,
       "utrustning": 99,
-      "marknad": 47
+      "marknad": 50
      },
-     "rank": "D",
+     "rank": "C",
      "comments": [
       "Galopp senast",
       "Kuskbyte: Claes Sjöström (senast Oskar J Andersson)",
@@ -18052,8 +18053,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 18.55,
-     "streck": 0.0121,
+     "odds": 19.11,
+     "streck": 0.0119,
      "result": null,
      "horseId": 784118,
      "father": "Face Time Bourbon",
@@ -18098,24 +18099,24 @@
      "klass": 9.506808731708581,
      "postIndex": 0.103,
      "p": 0.014,
-     "marketP": 0.046,
+     "marketP": 0.044,
      "marketPct": 0.012,
      "marketSource": "streck",
-     "value": 1.176,
+     "value": 1.165,
      "isValue": false,
      "scores": {
       "form": 29,
       "fart": 58,
       "kusk": 43,
       "spar": 27,
-      "value": 59,
+      "value": 58,
       "total": 49,
       "tempo": 28
      },
      "position": "Bakom",
      "tempoScore": 28,
      "poang": {
-      "total": 22,
+      "total": 21,
       "tempo": 28,
       "form": 31,
       "fart": 39,
@@ -18124,7 +18125,7 @@
       "kusk": 56,
       "tranare": 58,
       "utrustning": 42,
-      "marknad": 44
+      "marknad": 45
      },
      "rank": "D",
      "comments": [
@@ -18275,8 +18276,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 22.04,
-     "streck": 0.0088,
+     "odds": 24.1,
+     "streck": 0.0091,
      "result": null,
      "horseId": 793779,
      "father": "Hayden Hanover",
@@ -18321,17 +18322,17 @@
      "klass": 9.080613162832805,
      "postIndex": 0.107,
      "p": 0.009,
-     "marketP": 0.039,
+     "marketP": 0.035,
      "marketPct": 0.009,
      "marketSource": "streck",
-     "value": 1.054,
+     "value": 1.037,
      "isValue": false,
      "scores": {
       "form": 38,
       "fart": 88,
       "kusk": 29,
       "spar": 29,
-      "value": 53,
+      "value": 52,
       "total": 43,
       "tempo": 45
      },
@@ -18347,7 +18348,7 @@
       "kusk": 19,
       "tranare": 22,
       "utrustning": 42,
-      "marknad": 41
+      "marknad": 42
      },
      "rank": "D",
      "comments": [
@@ -18502,8 +18503,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 36.22,
-     "streck": 0.0066,
+     "odds": 40.68,
+     "streck": 0.0054,
      "result": null,
      "horseId": 772425,
      "father": "Cash and Go",
@@ -18535,25 +18536,25 @@
      "trainerWin": 0.065,
      "klass": 8.731731826401123,
      "postIndex": 0.113,
-     "p": 0.007,
-     "marketP": 0.023,
-     "marketPct": 0.007,
+     "p": 0.006,
+     "marketP": 0.021,
+     "marketPct": 0.005,
      "marketSource": "streck",
-     "value": 1.095,
+     "value": 1.113,
      "isValue": false,
      "scores": {
       "form": 36,
       "fart": 32,
       "kusk": 49,
       "spar": 33,
-      "value": 55,
-      "total": 43,
+      "value": 56,
+      "total": 44,
       "tempo": 50
      },
      "position": "I kön (inner)",
      "tempoScore": 50,
      "poang": {
-      "total": 8,
+      "total": 4,
       "tempo": 50,
       "form": 29,
       "fart": 27,
@@ -18562,7 +18563,7 @@
       "kusk": 40,
       "tranare": 28,
       "utrustning": 42,
-      "marknad": 38
+      "marknad": 36
      },
      "rank": "D",
      "comments": [
@@ -18716,8 +18717,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 29.87,
-     "streck": 0.0079,
+     "odds": 34.58,
+     "streck": 0.006,
      "result": null,
      "horseId": 771493,
      "father": "Uncle Lasse",
@@ -18773,25 +18774,25 @@
      "trainerWin": 0.081,
      "klass": 8.35634110725372,
      "postIndex": 0.14,
-     "p": 0.007,
-     "marketP": 0.028,
-     "marketPct": 0.008,
+     "p": 0.005,
+     "marketP": 0.025,
+     "marketPct": 0.006,
      "marketSource": "streck",
-     "value": 0.828,
+     "value": 0.85,
      "isValue": false,
      "scores": {
       "form": 41,
       "fart": 41,
       "kusk": 51,
       "spar": 50,
-      "value": 41,
-      "total": 31,
+      "value": 43,
+      "total": 32,
       "tempo": 20
      },
      "position": "Bakom",
      "tempoScore": 20,
      "poang": {
-      "total": 6,
+      "total": 0,
       "tempo": 20,
       "form": 35,
       "fart": 50,
@@ -18800,7 +18801,7 @@
       "kusk": 53,
       "tranare": 40,
       "utrustning": 12,
-      "marknad": 40
+      "marknad": 37
      },
      "rank": "D",
      "comments": [
@@ -18959,8 +18960,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 71.97,
-     "streck": 0.003,
+     "odds": 52.58,
+     "streck": 0.0023,
      "result": null,
      "horseId": 790834,
      "father": "Helgafell",
@@ -18998,19 +18999,19 @@
      "trainerWin": 0.078,
      "klass": 8.707059547827642,
      "postIndex": 0.149,
-     "p": 0.004,
-     "marketP": 0.012,
-     "marketPct": 0.003,
+     "p": 0.003,
+     "marketP": 0.016,
+     "marketPct": 0.002,
      "marketSource": "streck",
-     "value": 1.28,
+     "value": 1.313,
      "isValue": false,
      "scores": {
       "form": 33,
       "fart": 41,
       "kusk": 20,
       "spar": 55,
-      "value": 64,
-      "total": 47,
+      "value": 66,
+      "total": 48,
       "tempo": 20
      },
      "position": "Bakom",
@@ -19025,7 +19026,7 @@
       "kusk": 19,
       "tranare": 38,
       "utrustning": 42,
-      "marknad": 29
+      "marknad": 27
      },
      "rank": "D",
      "comments": [
@@ -19179,8 +19180,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 57.81,
-     "streck": 0.0011,
+     "odds": 67.06,
+     "streck": 0.001,
      "result": null,
      "horseId": 762968,
      "father": "From Above",
@@ -19237,10 +19238,10 @@
      "klass": 8.906428641564336,
      "postIndex": 0.133,
      "p": 0.002,
-     "marketP": 0.015,
+     "marketP": 0.013,
      "marketPct": 0.001,
      "marketSource": "streck",
-     "value": 2.044,
+     "value": 2.042,
      "isValue": false,
      "scores": {
       "form": 37,
@@ -19263,7 +19264,7 @@
       "kusk": 37,
       "tranare": 45,
       "utrustning": 73,
-      "marknad": 18
+      "marknad": 19
      },
      "rank": "D",
      "comments": [
@@ -19415,7 +19416,7 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 56.55,
+     "odds": 60.99,
      "streck": 0.001,
      "result": null,
      "horseId": 772368,
@@ -19461,17 +19462,17 @@
      "klass": 8.479676146196248,
      "postIndex": 0.223,
      "p": 0.001,
-     "marketP": 0.015,
+     "marketP": 0.014,
      "marketPct": 0.001,
      "marketSource": "streck",
-     "value": 1.324,
+     "value": 1.302,
      "isValue": false,
      "scores": {
       "form": 33,
       "fart": 29,
       "kusk": 35,
       "spar": 100,
-      "value": 66,
+      "value": 65,
       "total": 44,
       "tempo": 20
      },
@@ -19487,7 +19488,7 @@
       "kusk": 50,
       "tranare": 20,
       "utrustning": 42,
-      "marknad": 17
+      "marknad": 19
      },
      "rank": "D",
      "comments": [
@@ -19644,7 +19645,7 @@
       "changed": false
      },
      "odds": null,
-     "streck": 0.0042,
+     "streck": 0.0028,
      "result": null,
      "horseId": 785900,
      "father": "Bold Eagle",
@@ -19849,7 +19850,7 @@
     ]
    },
    "hasOdds": true,
-   "oddsWeight": 0.087
+   "oddsWeight": 0.11
   },
   {
    "leg": 8,
@@ -19860,7 +19861,7 @@
    "startMethod": "auto",
    "startTime": "2026-10-05T21:51:00",
    "firstPrize": 60000,
-   "winTurnover": 27480,
+   "winTurnover": 38518,
    "track": "Färjestad",
    "status": "upcoming",
    "condition": "light",
@@ -19903,8 +19904,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 3.45,
-     "streck": 0.3692,
+     "odds": 3.58,
+     "streck": 0.3415,
      "result": null,
      "horseId": 790759,
      "father": "Readly Express",
@@ -19948,11 +19949,11 @@
      "trainerWin": 0.177,
      "klass": 9.923784665397305,
      "postIndex": 0.144,
-     "p": 0.35,
-     "marketP": 0.246,
-     "marketPct": 0.369,
+     "p": 0.324,
+     "marketP": 0.237,
+     "marketPct": 0.342,
      "marketSource": "streck",
-     "value": 0.948,
+     "value": 0.95,
      "isValue": false,
      "scores": {
       "form": 58,
@@ -19966,7 +19967,7 @@
      "position": "Ledning",
      "tempoScore": 80,
      "poang": {
-      "total": 89,
+      "total": 87,
       "tempo": 80,
       "form": 52,
       "fart": 72,
@@ -19975,7 +19976,7 @@
       "kusk": 70,
       "tranare": 85,
       "utrustning": 33,
-      "marknad": 80
+      "marknad": 78
      },
      "rank": "A",
      "comments": [],
@@ -20127,8 +20128,8 @@
       "text": "Amerikansk",
       "changed": false
      },
-     "odds": 4.75,
-     "streck": 0.2413,
+     "odds": 4.79,
+     "streck": 0.2606,
      "result": null,
      "horseId": 794636,
      "father": "Googoo Gaagaa",
@@ -20166,25 +20167,25 @@
      "trainerWin": 0.093,
      "klass": 9.49354141961568,
      "postIndex": 0.144,
-     "p": 0.27,
-     "marketP": 0.179,
-     "marketPct": 0.241,
+     "p": 0.287,
+     "marketP": 0.177,
+     "marketPct": 0.261,
      "marketSource": "streck",
-     "value": 1.117,
+     "value": 1.1,
      "isValue": false,
      "scores": {
       "form": 36,
       "fart": 70,
       "kusk": 66,
       "spar": 46,
-      "value": 56,
+      "value": 55,
       "total": 59,
       "tempo": 40
      },
      "position": "Bakom",
      "tempoScore": 40,
      "poang": {
-      "total": 83,
+      "total": 85,
       "tempo": 40,
       "form": 36,
       "fart": 79,
@@ -20348,8 +20349,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 4.47,
-     "streck": 0.1234,
+     "odds": 3.86,
+     "streck": 0.1374,
      "result": null,
      "horseId": 794218,
      "father": "S.J.'s Caviar",
@@ -20387,25 +20388,25 @@
      "trainerWin": 0.133,
      "klass": 9.937937287265354,
      "postIndex": 0.169,
-     "p": 0.133,
-     "marketP": 0.19,
-     "marketPct": 0.123,
+     "p": 0.145,
+     "marketP": 0.22,
+     "marketPct": 0.137,
      "marketSource": "streck",
-     "value": 1.075,
+     "value": 1.053,
      "isValue": false,
      "scores": {
       "form": 45,
       "fart": 59,
       "kusk": 44,
       "spar": 58,
-      "value": 54,
+      "value": 53,
       "total": 55,
       "tempo": 50
      },
      "position": "I kön (inner)",
      "tempoScore": 50,
      "poang": {
-      "total": 68,
+      "total": 70,
       "tempo": 50,
       "form": 42,
       "fart": 34,
@@ -20414,7 +20415,7 @@
       "kusk": 52,
       "tranare": 64,
       "utrustning": 33,
-      "marknad": 67
+      "marknad": 68
      },
      "rank": "B",
      "comments": [
@@ -20569,8 +20570,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 9.24,
-     "streck": 0.1433,
+     "odds": 8.39,
+     "streck": 0.1295,
      "result": null,
      "horseId": 792276,
      "father": "Hayden Hanover",
@@ -20614,11 +20615,11 @@
      "trainerWin": 0.129,
      "klass": 9.454789733965626,
      "postIndex": 0.231,
-     "p": 0.108,
-     "marketP": 0.092,
-     "marketPct": 0.143,
+     "p": 0.098,
+     "marketP": 0.101,
+     "marketPct": 0.13,
      "marketSource": "streck",
-     "value": 0.755,
+     "value": 0.758,
      "isValue": false,
      "scores": {
       "form": 74,
@@ -20632,7 +20633,7 @@
      "position": "Rygg ledaren",
      "tempoScore": 75,
      "poang": {
-      "total": 64,
+      "total": 62,
       "tempo": 75,
       "form": 63,
       "fart": 85,
@@ -20641,7 +20642,7 @@
       "kusk": 32,
       "tranare": 62,
       "utrustning": 33,
-      "marknad": 68
+      "marknad": 67
      },
      "rank": "B",
      "comments": [
@@ -20792,8 +20793,8 @@
       "text": "Amerikansk",
       "changed": false
      },
-     "odds": 10.97,
-     "streck": 0.0338,
+     "odds": 11.16,
+     "streck": 0.04,
      "result": null,
      "horseId": 800855,
      "father": "Fabulous Wood",
@@ -20831,25 +20832,25 @@
      "trainerWin": 0.105,
      "klass": 8.865711157482641,
      "postIndex": 0.105,
-     "p": 0.043,
-     "marketP": 0.077,
-     "marketPct": 0.034,
+     "p": 0.049,
+     "marketP": 0.076,
+     "marketPct": 0.04,
      "marketSource": "streck",
-     "value": 1.259,
+     "value": 1.219,
      "isValue": true,
      "scores": {
       "form": 52,
       "fart": 43,
       "kusk": 86,
       "spar": 26,
-      "value": 63,
+      "value": 61,
       "total": 56,
       "tempo": 24
      },
      "position": "Bakom",
      "tempoScore": 24,
      "poang": {
-      "total": 45,
+      "total": 48,
       "tempo": 24,
       "form": 48,
       "fart": 32,
@@ -20858,7 +20859,7 @@
       "kusk": 89,
       "tranare": 50,
       "utrustning": 89,
-      "marknad": 51
+      "marknad": 53
      },
      "rank": "C",
      "comments": [
@@ -21013,8 +21014,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 12.85,
-     "streck": 0.0443,
+     "odds": 13.26,
+     "streck": 0.0479,
      "result": null,
      "horseId": 794835,
      "father": "Face Time Bourbon",
@@ -21058,25 +21059,25 @@
      "trainerWin": 0.148,
      "klass": 9.796196285287557,
      "postIndex": 0.127,
-     "p": 0.042,
-     "marketP": 0.066,
-     "marketPct": 0.044,
+     "p": 0.045,
+     "marketP": 0.064,
+     "marketPct": 0.048,
      "marketSource": "streck",
-     "value": 0.957,
+     "value": 0.938,
      "isValue": false,
      "scores": {
       "form": 90,
       "fart": 59,
       "kusk": 59,
       "spar": 37,
-      "value": 48,
+      "value": 47,
       "total": 45,
       "tempo": 55
      },
      "position": "Utvändigt (dödens)",
      "tempoScore": 55,
      "poang": {
-      "total": 45,
+      "total": 46,
       "tempo": 55,
       "form": 96,
       "fart": 51,
@@ -21085,7 +21086,7 @@
       "kusk": 62,
       "tranare": 71,
       "utrustning": 33,
-      "marknad": 54
+      "marknad": 55
      },
      "rank": "C",
      "comments": [
@@ -21239,8 +21240,8 @@
       "text": "Amerikansk",
       "changed": false
      },
-     "odds": 15.41,
-     "streck": 0.0248,
+     "odds": 20.27,
+     "streck": 0.0249,
      "result": null,
      "horseId": 812012,
      "father": "Mister J.P.",
@@ -21272,18 +21273,18 @@
      "trainerWin": 0.101,
      "klass": 9.934118110339533,
      "postIndex": 0.102,
-     "p": 0.03,
-     "marketP": 0.055,
+     "p": 0.029,
+     "marketP": 0.042,
      "marketPct": 0.025,
      "marketSource": "streck",
-     "value": 1.192,
+     "value": 1.178,
      "isValue": false,
      "scores": {
       "form": 56,
       "fart": 35,
       "kusk": 38,
       "spar": 25,
-      "value": 60,
+      "value": 59,
       "total": 52,
       "tempo": 20
      },
@@ -21299,7 +21300,7 @@
       "kusk": 54,
       "tranare": 48,
       "utrustning": 70,
-      "marknad": 47
+      "marknad": 48
      },
      "rank": "D",
      "comments": [
@@ -21447,8 +21448,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 39.49,
-     "streck": 0.0064,
+     "odds": 33.26,
+     "streck": 0.0067,
      "result": null,
      "horseId": 785292,
      "father": "Walner",
@@ -21481,24 +21482,24 @@
      "klass": 9.023205650466672,
      "postIndex": 0.125,
      "p": 0.008,
-     "marketP": 0.021,
-     "marketPct": 0.006,
+     "marketP": 0.025,
+     "marketPct": 0.007,
      "marketSource": "streck",
-     "value": 1.266,
+     "value": 1.238,
      "isValue": false,
      "scores": {
       "form": 58,
       "fart": 60,
       "kusk": 50,
       "spar": 36,
-      "value": 63,
+      "value": 62,
       "total": 49,
       "tempo": 32
      },
      "position": "Bakom",
      "tempoScore": 32,
      "poang": {
-      "total": 10,
+      "total": 11,
       "tempo": 32,
       "form": 68,
       "fart": 45,
@@ -21507,7 +21508,7 @@
       "kusk": 52,
       "tranare": 50,
       "utrustning": 33,
-      "marknad": 31
+      "marknad": 33
      },
      "rank": "D",
      "comments": [
@@ -21661,8 +21662,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 24.42,
-     "streck": 0.0061,
+     "odds": 28.22,
+     "streck": 0.0055,
      "result": null,
      "horseId": 786487,
      "father": "Readly Express",
@@ -21707,10 +21708,10 @@
      "klass": 8.932617871258966,
      "postIndex": 0.223,
      "p": 0.007,
-     "marketP": 0.035,
+     "marketP": 0.03,
      "marketPct": 0.006,
      "marketSource": "streck",
-     "value": 1.219,
+     "value": 1.22,
      "isValue": false,
      "scores": {
       "form": 34,
@@ -21724,7 +21725,7 @@
      "position": "Bakom",
      "tempoScore": 36,
      "poang": {
-      "total": 8,
+      "total": 6,
       "tempo": 36,
       "form": 38,
       "fart": 26,
@@ -21733,7 +21734,7 @@
       "kusk": 8,
       "tranare": 8,
       "utrustning": 70,
-      "marknad": 31
+      "marknad": 30
      },
      "rank": "D",
      "comments": [
@@ -21888,8 +21889,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 35.26,
-     "streck": 0.0046,
+     "odds": 48.52,
+     "streck": 0.0038,
      "result": null,
      "horseId": 780542,
      "father": "Super Photo Kosmos",
@@ -21939,25 +21940,25 @@
      "trainerWin": 0.061,
      "klass": 8.86966531586905,
      "postIndex": 0.159,
-     "p": 0.007,
-     "marketP": 0.024,
-     "marketPct": 0.005,
+     "p": 0.006,
+     "marketP": 0.017,
+     "marketPct": 0.004,
      "marketSource": "streck",
-     "value": 1.482,
+     "value": 1.502,
      "isValue": false,
      "scores": {
       "form": 19,
       "fart": 56,
       "kusk": 46,
       "spar": 53,
-      "value": 74,
+      "value": 75,
       "total": 55,
       "tempo": 45
      },
      "position": "I kön (utvändigt)",
      "tempoScore": 45,
      "poang": {
-      "total": 6,
+      "total": 3,
       "tempo": 45,
       "form": 28,
       "fart": 52,
@@ -21966,7 +21967,7 @@
       "kusk": 48,
       "tranare": 28,
       "utrustning": 70,
-      "marknad": 27
+      "marknad": 26
      },
      "rank": "D",
      "comments": [
@@ -22119,8 +22120,8 @@
       "text": "Vanlig",
       "changed": false
      },
-     "odds": 57.38,
-     "streck": 0.0022,
+     "odds": 78.96,
+     "streck": 0.0018,
      "result": null,
      "horseId": 765538,
      "father": "The Bank",
@@ -22177,17 +22178,17 @@
      "klass": 8.645160633938202,
      "postIndex": 0.151,
      "p": 0.002,
-     "marketP": 0.015,
+     "marketP": 0.011,
      "marketPct": 0.002,
      "marketSource": "streck",
-     "value": 1.11,
+     "value": 1.125,
      "isValue": false,
      "scores": {
       "form": 25,
       "fart": 19,
       "kusk": 37,
       "spar": 49,
-      "value": 55,
+      "value": 56,
       "total": 39,
       "tempo": 28
      },
@@ -22203,7 +22204,7 @@
       "kusk": 35,
       "tranare": 41,
       "utrustning": 33,
-      "marknad": 18
+      "marknad": 17
      },
      "rank": "D",
      "comments": [
@@ -22358,7 +22359,7 @@
       "changed": false
      },
      "odds": null,
-     "streck": 0.0006,
+     "streck": 0.0004,
      "result": null,
      "horseId": 779952,
      "father": "Prodigious",
@@ -22521,7 +22522,7 @@
     "horse": "Haute Couture",
     "status": "NORMAL FAVORIT",
     "why": [
-     "modellen 35 % mot folkets 37 %"
+     "modellen 32 % mot folkets 34 %"
     ]
    },
    "tempo": {
@@ -22550,7 +22551,7 @@
     ]
    },
    "hasOdds": true,
-   "oddsWeight": 0.084
+   "oddsWeight": 0.114
   }
  ],
  "spikes": {
@@ -22559,9 +22560,9 @@
    "raceNr": 8,
    "nr": 1,
    "horse": "Brilliant Kid",
-   "p": 0.615,
-   "marketPct": 0.694,
-   "value": 0.886,
+   "p": 0.596,
+   "marketPct": 0.676,
+   "value": 0.882,
    "why": "Högst vinstchans i omgången"
   },
   "varde": {
@@ -22569,9 +22570,9 @@
    "raceNr": 8,
    "nr": 5,
    "horse": "Otto Palema",
-   "p": 0.366,
-   "marketPct": 0.312,
-   "value": 1.174,
+   "p": 0.322,
+   "marketPct": 0.268,
+   "value": 1.202,
    "why": "Mindre spelad än chansen motiverar"
   },
   "chans": null
@@ -22582,13 +22583,27 @@
    "raceNr": 8,
    "nr": 5,
    "horse": "Ajlexes Hans",
-   "p": 0.07,
-   "marketPct": 0.042,
-   "value": 1.654,
+   "p": 0.075,
+   "marketPct": 0.046,
+   "value": 1.617,
    "why": [
     "topp 3 fart i loppet",
     "trolig position: rygg ledaren",
-    "vinnaroddsen ger 9 % mot streck 4 %"
+    "vinnaroddsen ger 9 % mot streck 5 %"
+   ]
+  },
+  {
+   "leg": 7,
+   "raceNr": 9,
+   "nr": 2,
+   "horse": "Hagaz Fleur d'Nuit",
+   "p": 0.035,
+   "marketPct": 0.021,
+   "value": 1.693,
+   "why": [
+    "stark kusk (Claes Sjöström)",
+    "trolig position: ledning",
+    "vinnaroddsen ger 8 % mot streck 2 %"
    ]
   }
  ],
@@ -22614,181 +22629,181 @@
     "combo": "8-10",
     "h1": "Aske Faks",
     "h2": "Job Girl",
-    "p": 0.043,
-    "fair": 23.004,
-    "odds": 666.91,
-    "ev": 27.991
-   },
-   {
-    "combo": "4-1",
-    "h1": "Remlov",
-    "h2": "Haute Couture",
-    "p": 0.168,
-    "fair": 5.952,
-    "odds": 152.14,
-    "ev": 24.56
+    "p": 0.053,
+    "fair": 18.733,
+    "odds": 659.44,
+    "ev": 34.202
    },
    {
     "combo": "4-10",
     "h1": "Remlov",
     "h2": "Job Girl",
-    "p": 0.13,
-    "fair": 7.716,
-    "odds": 189.54,
-    "ev": 23.564
+    "p": 0.123,
+    "fair": 8.141,
+    "odds": 189.97,
+    "ev": 22.335
    },
    {
     "combo": "8-1",
     "h1": "Aske Faks",
     "h2": "Haute Couture",
-    "p": 0.056,
-    "fair": 17.746,
-    "odds": 376.81,
-    "ev": 20.233
+    "p": 0.06,
+    "fair": 16.594,
+    "odds": 386.35,
+    "ev": 22.283
    },
    {
     "combo": "8-6",
     "h1": "Aske Faks",
     "h2": "Lilla Greta",
-    "p": 0.021,
-    "fair": 46.701,
-    "odds": 766.67,
-    "ev": 15.417
+    "p": 0.027,
+    "fair": 37.078,
+    "odds": 841.51,
+    "ev": 21.696
    },
    {
-    "combo": "4-6",
+    "combo": "4-1",
     "h1": "Remlov",
-    "h2": "Lilla Greta",
-    "p": 0.064,
-    "fair": 15.664,
-    "odds": 231.19,
-    "ev": 13.759
+    "h2": "Haute Couture",
+    "p": 0.139,
+    "fair": 7.211,
+    "odds": 154.63,
+    "ev": 20.443
    },
    {
     "combo": "14-10",
     "h1": "Gran Eld",
     "h2": "Job Girl",
-    "p": 0.017,
-    "fair": 58.789,
-    "odds": 739.05,
-    "ev": 11.571
-   },
-   {
-    "combo": "4-11",
-    "h1": "Remlov",
-    "h2": "GlaziersWondergirl",
-    "p": 0.014,
-    "fair": 69.444,
-    "odds": 784.09,
-    "ev": 10.291
-   },
-   {
-    "combo": "14-1",
-    "h1": "Gran Eld",
-    "h2": "Haute Couture",
     "p": 0.022,
-    "fair": 45.351,
-    "odds": 469.05,
-    "ev": 9.343
+    "fair": 44.671,
+    "odds": 819.64,
+    "ev": 17.348
+   },
+   {
+    "combo": "4-6",
+    "h1": "Remlov",
+    "h2": "Lilla Greta",
+    "p": 0.062,
+    "fair": 16.113,
+    "odds": 241.05,
+    "ev": 13.96
+   },
+   {
+    "combo": "14-6",
+    "h1": "Gran Eld",
+    "h2": "Lilla Greta",
+    "p": 0.011,
+    "fair": 88.417,
+    "odds": 1290.34,
+    "ev": 13.594
    },
    {
     "combo": "8-4",
     "h1": "Aske Faks",
     "h2": "Wise Emotions",
-    "p": 0.017,
-    "fair": 57.511,
-    "odds": 588.51,
-    "ev": 9.233
+    "p": 0.018,
+    "fair": 54.861,
+    "odds": 690.38,
+    "ev": 11.584
+   },
+   {
+    "combo": "14-1",
+    "h1": "Gran Eld",
+    "h2": "Haute Couture",
+    "p": 0.025,
+    "fair": 39.569,
+    "odds": 458.05,
+    "ev": 10.576
+   },
+   {
+    "combo": "4-11",
+    "h1": "Remlov",
+    "h2": "GlaziersWondergirl",
+    "p": 0.012,
+    "fair": 80.567,
+    "odds": 899.64,
+    "ev": 10.166
    },
    {
     "combo": "4-12",
     "h1": "Remlov",
     "h2": "Ile de France",
     "p": 0.021,
-    "fair": 48.45,
-    "odds": 459.49,
-    "ev": 8.484
+    "fair": 47.683,
+    "odds": 499.42,
+    "ev": 9.474
    },
    {
     "combo": "4-2",
     "h1": "Remlov",
     "h2": "Lucille",
-    "p": 0.02,
-    "fair": 49.603,
-    "odds": 452.92,
-    "ev": 8.131
+    "p": 0.019,
+    "fair": 51.921,
+    "odds": 434.6,
+    "ev": 7.37
    },
    {
     "combo": "4-4",
     "h1": "Remlov",
     "h2": "Wise Emotions",
-    "p": 0.052,
-    "fair": 19.29,
-    "odds": 173.61,
-    "ev": 8
+    "p": 0.042,
+    "fair": 23.841,
+    "odds": 186.72,
+    "ev": 6.832
    },
    {
     "combo": "2-10",
     "h1": "Järvsö Karin",
     "h2": "Job Girl",
     "p": 0.015,
-    "fair": 66.138,
-    "odds": 121.06,
-    "ev": 0.83
+    "fair": 64.524,
+    "odds": 117.45,
+    "ev": 0.82
    },
    {
     "combo": "2-1",
     "h1": "Järvsö Karin",
     "h2": "Haute Couture",
-    "p": 0.02,
-    "fair": 51.02,
-    "odds": 83.42,
-    "ev": 0.635
+    "p": 0.017,
+    "fair": 57.156,
+    "odds": 84.08,
+    "ev": 0.471
+   },
+   {
+    "combo": "13-1",
+    "h1": "Låhne Goliat",
+    "h2": "Haute Couture",
+    "p": 0.01,
+    "fair": 102.881,
+    "odds": 121.34,
+    "ev": 0.179
    },
    {
     "combo": "3-10",
     "h1": "Maj Mollyn",
     "h2": "Job Girl",
     "p": 0.034,
-    "fair": 29.63,
-    "odds": 23.6,
-    "ev": -0.203
-   },
-   {
-    "combo": "3-1",
-    "h1": "Maj Mollyn",
-    "h2": "Haute Couture",
-    "p": 0.044,
-    "fair": 22.857,
-    "odds": 15.68,
-    "ev": -0.314
+    "fair": 29.781,
+    "odds": 22.1,
+    "ev": -0.258
    },
    {
     "combo": "3-6",
     "h1": "Maj Mollyn",
     "h2": "Lilla Greta",
     "p": 0.017,
-    "fair": 60.15,
-    "odds": 38.42,
-    "ev": -0.361
+    "fair": 58.945,
+    "odds": 37.36,
+    "ev": -0.366
    },
    {
-    "combo": "3-4",
+    "combo": "3-1",
     "h1": "Maj Mollyn",
-    "h2": "Wise Emotions",
-    "p": 0.014,
-    "fair": 74.074,
-    "odds": 36.33,
-    "ev": -0.51
-   },
-   {
-    "combo": "5-10",
-    "h1": "Mjölner Borken",
-    "h2": "Job Girl",
-    "p": 0.012,
-    "fair": 84.175,
-    "odds": 13.95,
-    "ev": -0.834
+    "h2": "Haute Couture",
+    "p": 0.038,
+    "fair": 26.38,
+    "odds": 15.8,
+    "ev": -0.401
    }
   ],
   "byP": [
@@ -22796,181 +22811,181 @@
     "combo": "4-1",
     "h1": "Remlov",
     "h2": "Haute Couture",
-    "p": 0.168,
-    "fair": 5.952,
-    "odds": 152.14,
-    "ev": 24.56
+    "p": 0.139,
+    "fair": 7.211,
+    "odds": 154.63,
+    "ev": 20.443
    },
    {
     "combo": "4-10",
     "h1": "Remlov",
     "h2": "Job Girl",
-    "p": 0.13,
-    "fair": 7.716,
-    "odds": 189.54,
-    "ev": 23.564
+    "p": 0.123,
+    "fair": 8.141,
+    "odds": 189.97,
+    "ev": 22.335
    },
    {
     "combo": "4-6",
     "h1": "Remlov",
     "h2": "Lilla Greta",
-    "p": 0.064,
-    "fair": 15.664,
-    "odds": 231.19,
-    "ev": 13.759
+    "p": 0.062,
+    "fair": 16.113,
+    "odds": 241.05,
+    "ev": 13.96
    },
    {
     "combo": "8-1",
     "h1": "Aske Faks",
     "h2": "Haute Couture",
-    "p": 0.056,
-    "fair": 17.746,
-    "odds": 376.81,
-    "ev": 20.233
-   },
-   {
-    "combo": "4-4",
-    "h1": "Remlov",
-    "h2": "Wise Emotions",
-    "p": 0.052,
-    "fair": 19.29,
-    "odds": 173.61,
-    "ev": 8
-   },
-   {
-    "combo": "3-1",
-    "h1": "Maj Mollyn",
-    "h2": "Haute Couture",
-    "p": 0.044,
-    "fair": 22.857,
-    "odds": 15.68,
-    "ev": -0.314
+    "p": 0.06,
+    "fair": 16.594,
+    "odds": 386.35,
+    "ev": 22.283
    },
    {
     "combo": "8-10",
     "h1": "Aske Faks",
     "h2": "Job Girl",
-    "p": 0.043,
-    "fair": 23.004,
-    "odds": 666.91,
-    "ev": 27.991
+    "p": 0.053,
+    "fair": 18.733,
+    "odds": 659.44,
+    "ev": 34.202
+   },
+   {
+    "combo": "4-4",
+    "h1": "Remlov",
+    "h2": "Wise Emotions",
+    "p": 0.042,
+    "fair": 23.841,
+    "odds": 186.72,
+    "ev": 6.832
+   },
+   {
+    "combo": "3-1",
+    "h1": "Maj Mollyn",
+    "h2": "Haute Couture",
+    "p": 0.038,
+    "fair": 26.38,
+    "odds": 15.8,
+    "ev": -0.401
    },
    {
     "combo": "3-10",
     "h1": "Maj Mollyn",
     "h2": "Job Girl",
     "p": 0.034,
-    "fair": 29.63,
-    "odds": 23.6,
-    "ev": -0.203
+    "fair": 29.781,
+    "odds": 22.1,
+    "ev": -0.258
+   },
+   {
+    "combo": "8-6",
+    "h1": "Aske Faks",
+    "h2": "Lilla Greta",
+    "p": 0.027,
+    "fair": 37.078,
+    "odds": 841.51,
+    "ev": 21.696
    },
    {
     "combo": "14-1",
     "h1": "Gran Eld",
     "h2": "Haute Couture",
+    "p": 0.025,
+    "fair": 39.569,
+    "odds": 458.05,
+    "ev": 10.576
+   },
+   {
+    "combo": "14-10",
+    "h1": "Gran Eld",
+    "h2": "Job Girl",
     "p": 0.022,
-    "fair": 45.351,
-    "odds": 469.05,
-    "ev": 9.343
+    "fair": 44.671,
+    "odds": 819.64,
+    "ev": 17.348
    },
    {
     "combo": "4-12",
     "h1": "Remlov",
     "h2": "Ile de France",
     "p": 0.021,
-    "fair": 48.45,
-    "odds": 459.49,
-    "ev": 8.484
-   },
-   {
-    "combo": "8-6",
-    "h1": "Aske Faks",
-    "h2": "Lilla Greta",
-    "p": 0.021,
-    "fair": 46.701,
-    "odds": 766.67,
-    "ev": 15.417
+    "fair": 47.683,
+    "odds": 499.42,
+    "ev": 9.474
    },
    {
     "combo": "4-2",
     "h1": "Remlov",
     "h2": "Lucille",
-    "p": 0.02,
-    "fair": 49.603,
-    "odds": 452.92,
-    "ev": 8.131
-   },
-   {
-    "combo": "2-1",
-    "h1": "Järvsö Karin",
-    "h2": "Haute Couture",
-    "p": 0.02,
-    "fair": 51.02,
-    "odds": 83.42,
-    "ev": 0.635
+    "p": 0.019,
+    "fair": 51.921,
+    "odds": 434.6,
+    "ev": 7.37
    },
    {
     "combo": "8-4",
     "h1": "Aske Faks",
     "h2": "Wise Emotions",
-    "p": 0.017,
-    "fair": 57.511,
-    "odds": 588.51,
-    "ev": 9.233
+    "p": 0.018,
+    "fair": 54.861,
+    "odds": 690.38,
+    "ev": 11.584
+   },
+   {
+    "combo": "5-1",
+    "h1": "Mjölner Borken",
+    "h2": "Haute Couture",
+    "p": 0.018,
+    "fair": 56.117,
+    "odds": 10.72,
+    "ev": -0.809
    },
    {
     "combo": "3-6",
     "h1": "Maj Mollyn",
     "h2": "Lilla Greta",
     "p": 0.017,
-    "fair": 60.15,
-    "odds": 38.42,
-    "ev": -0.361
+    "fair": 58.945,
+    "odds": 37.36,
+    "ev": -0.366
    },
    {
-    "combo": "14-10",
-    "h1": "Gran Eld",
-    "h2": "Job Girl",
+    "combo": "2-1",
+    "h1": "Järvsö Karin",
+    "h2": "Haute Couture",
     "p": 0.017,
-    "fair": 58.789,
-    "odds": 739.05,
-    "ev": 11.571
+    "fair": 57.156,
+    "odds": 84.08,
+    "ev": 0.471
+   },
+   {
+    "combo": "5-10",
+    "h1": "Mjölner Borken",
+    "h2": "Job Girl",
+    "p": 0.016,
+    "fair": 63.351,
+    "odds": 14.52,
+    "ev": -0.771
    },
    {
     "combo": "2-10",
     "h1": "Järvsö Karin",
     "h2": "Job Girl",
     "p": 0.015,
-    "fair": 66.138,
-    "odds": 121.06,
-    "ev": 0.83
-   },
-   {
-    "combo": "5-1",
-    "h1": "Mjölner Borken",
-    "h2": "Haute Couture",
-    "p": 0.015,
-    "fair": 64.935,
-    "odds": 10.32,
-    "ev": -0.841
+    "fair": 64.524,
+    "odds": 117.45,
+    "ev": 0.82
    },
    {
     "combo": "4-11",
     "h1": "Remlov",
     "h2": "GlaziersWondergirl",
-    "p": 0.014,
-    "fair": 69.444,
-    "odds": 784.09,
-    "ev": 10.291
-   },
-   {
-    "combo": "3-4",
-    "h1": "Maj Mollyn",
-    "h2": "Wise Emotions",
-    "p": 0.014,
-    "fair": 74.074,
-    "odds": 36.33,
-    "ev": -0.51
+    "p": 0.012,
+    "fair": 80.567,
+    "odds": 899.64,
+    "ev": 10.166
    }
   ],
   "hasOdds": true,
@@ -23213,6 +23228,6 @@
    }
   }
  },
- "fetchedAt": "2026-10-05T16:30:02.390Z",
- "analyzedAt": "2026-10-05T16:30:02.489Z"
+ "fetchedAt": "2026-10-05T17:50:02.769Z",
+ "analyzedAt": "2026-10-05T17:50:02.828Z"
 }
