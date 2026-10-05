@@ -23,7 +23,7 @@ const COLS = [
   'best_close_h', 'best_close_d', 'best_close_a', 'over25_open', 'over25_close',
   'luck', 'gap', 'mres', 'rest', 'h2h_n', 'h2h_pts', 'h2h_res', 'h2h_draw', 'promo', 'releg', 'miss_h', 'miss_a', 'steam', 'book',
   'pre_first_at', 'pre_first_h', 'pre_first_d', 'pre_first_a', 'pre_last_at', 'pre_last_h', 'pre_last_d', 'pre_last_a', 'pre_best_h', 'pre_best_d', 'pre_best_a',
-  ...INJ,
+  ...INJ, 'close_src',
 ];
 const r4 = (x) => (x == null || !Number.isFinite(x) ? '' : String(Math.round(x * 1e4) / 1e4));
 const cell = (v) => {
@@ -68,7 +68,7 @@ for (const m of matches) {
     hs: m.hs, as: m.as, hst: m.hst, ast: m.ast, xg_h: m.xg?.[0], xg_a: m.xg?.[1], xg_src: m.xgSrc,
     open_h: m.open?.[0], open_d: m.open?.[1], open_a: m.open?.[2],
     close_h: m.hasClose ? m.close[0] : null, close_d: m.hasClose ? m.close[1] : null, close_a: m.hasClose ? m.close[2] : null,
-    pin_close: m.pinClose ? 1 : 0,
+    pin_close: m.pinClose ? 1 : 0, close_src: m.hasClose ? m.closeSrc : null,
     best_open_h: m.bestOpen?.[0], best_open_d: m.bestOpen?.[1], best_open_a: m.bestOpen?.[2],
     best_close_h: m.bestClose?.[0], best_close_d: m.bestClose?.[1], best_close_a: m.bestClose?.[2],
     over25_open: m.overOpen, over25_close: m.overClose, ...signalCols(m.f), ...extra(storeByKey.get(`${m.league}|${m.date}|${m.home}|${m.away}`), m.fd),
@@ -160,7 +160,7 @@ fs.writeFileSync(path.join(DIR, 'README.md'), `# Matcher per liga
 
 En CSV per liga med alla matcher vi har: \`status\` = spelad, väntar (spelad men resultatet har inte kommit, högst 21 dagar) eller kommande. Genereras av \`npm run matcher\` (körs dagligen). Rör inte för hand.
 
-- Sannolikheter (\`open_*\`, \`close_*\`, \`pre_*\`) är utan bolagsmarginal. \`pin_close\` = 1 när stängningen är Pinnacle (annars bolagssnitt).
+- Sannolikheter (\`open_*\`, \`close_*\`, \`pre_*\`) är utan bolagsmarginal. \`pin_close\` = 1 när stängningen är Pinnacle. \`close_src\` = pinnacle, betfair (Betfair-börsen, sedan football-data slutade med Pinnacle 2026/27) eller snitt.
 - \`best_*\` = bästa odds bland bolagen. \`over25_*\` = sannolikhet för över 2,5 mål.
 - Signalerna (\`luck\`, \`gap\`, \`mres\`, \`rest\`, \`h2h_*\`, \`promo\`, \`releg\`, \`miss_*\`, \`steam\`, \`book\`) använder bara data före matchen, hemmalaget minus bortalaget. Se \`docs/lardomar/README.md\`.
 - \`pre_first_*\` / \`pre_last_*\` = oddsen vi såg innan matchen (första och senaste avläsning, bolagssnitt i Sverige). De följer med när matchen blir spelad, så filen byggs på över tid.

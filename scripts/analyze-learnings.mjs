@@ -75,7 +75,7 @@ const SIGNALS = {
   rest: { name: 'Vilodagar (hemma − borta, ligamatcher)', target: 'y', expect: 'Positiv = vila undervärderas' },
   miss: { name: 'Nyckelspelare borta (andel av xG+xA, hemma − borta; träning 2024/25, kontroll 2025/26–)', target: 'y', expect: 'Negativ = frånvaro inte fullt inprisad', split: '2025-07-01' },
   steam: { name: 'Oddsrörelse öppning → stängning (förväntade poäng)', target: 'y', expect: 'Positiv = marknaden underreagerar på rörelser' },
-  book: { name: 'Bolagssnitt mot Pinnacle vid stängning', target: 'y', expect: 'Positiv = de mjuka bolagen vet något' },
+  book: { name: 'Bolagssnitt mot Pinnacle (annars Betfair-börsen) vid stängning', target: 'y', expect: 'Positiv = de mjuka bolagen vet något' },
   under: { name: 'Under 2,5 mål (O/U-marknaden) mot kryss', target: 'yD', expect: 'Positiv = kryss underprisat i lågmålsmatcher' },
 };
 

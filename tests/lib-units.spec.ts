@@ -3100,6 +3100,27 @@ test.describe('transfermarkt: skadelistan fyller på FotMob', () => {
   });
 });
 
+// ---------- learnings-data.mjs: stangningsodds utan Pinnacle (2026-10-05) ----------
+
+test.describe('learnings-data: stängningsodds Pinnacle, annars Betfair-börsen, annars snitt', () => {
+  test('closeOdds: källordning och marginalfria sannolikheter', async () => {
+    const { closeOdds } = await lib('learnings-data.mjs');
+    const all = { PSCH: '2', PSCD: '3.5', PSCA: '4', BFECH: '2.1', BFECD: '3.6', BFECA: '4.1', AvgCH: '1.95', AvgCD: '3.4', AvgCA: '3.8' };
+    const a = closeOdds(all);
+    expect(a.src).toBe('pinnacle');
+    expect(a.sharp).toEqual(a.pin);
+    expect(a.sharp.reduce((s: number, x: number) => s + x, 0)).toBeCloseTo(1, 10);
+    const b = closeOdds({ ...all, PSCH: '', PSCD: '', PSCA: '' }); // 2026/27: football-data utan Pinnacle
+    expect(b.src).toBe('betfair');
+    expect(b.pin).toBeNull();
+    expect(b.sharp).toEqual(b.bfe);
+    const c = closeOdds({ AvgCH: '1.95', AvgCD: '3.4', AvgCA: '3.8' });
+    expect([c.src, c.sharp]).toEqual(['snitt', null]);
+    expect(c.avg).not.toBeNull();
+    expect(closeOdds({}).src).toBeNull();
+  });
+});
+
 // ---------- matcher-rows.mjs: data/matcher (2026-10-05) ----------
 
 test.describe('matcher-rows: domare, väntande matcher och frånvaro före matchen', () => {

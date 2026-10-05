@@ -195,7 +195,7 @@ export function buildSignals({ players = true, log = console.log } = {}) {
     f.releg = (f.newH === 'ned' ? 1 : 0) - (f.newA === 'ned' ? 1 : 0);
     // Marknadssignaler (kanda vid stangning): oddsrorelse, bolagssnitt mot Pinnacle, over/under-marknaden
     if (m.open && m.hasClose) f.steam = expPts(m.close) - expPts(m.open);
-    if (m.pinClose && m.avgClose) f.book = expPts(m.avgClose) - expPts(m.pinClose);
+    if (m.sharpClose && m.avgClose) f.book = expPts(m.avgClose) - expPts(m.sharpClose); // Pinnacle, annars Betfair-borsen
     if (m.overClose != null) f.under = 1 - m.overClose;
     if (m.overOpen != null) f.underOpen = 1 - m.overOpen;
     Object.assign(f, extraSignals(m.league, m.season, m.home, m.away));

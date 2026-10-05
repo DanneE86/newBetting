@@ -178,6 +178,11 @@ test('data/matcher: engelska ligorna har riktig xG, domare och frånvaro före m
     if (raw.some((r) => r.HxG !== '' && r.HxG != null)) {
       expect(played.filter((r) => r.xg_src === 'skott').length, `${lg}: skott-proxy fast football-data har xG`).toBe(0);
     }
+    // Utan Pinnacle (2026/27) ska book och close_src fyllas via Betfair-borsen
+    if (raw.length && raw.every((r) => !r.PSCH) && raw.some((r) => r.BFECH)) {
+      expect(played.filter((r) => r.book !== '').length, `${lg}: book tom fast Betfair finns`).toBeGreaterThan(played.length * 0.9);
+      expect(played.filter((r) => r.close_src === 'betfair').length, `${lg}: close_src betfair`).toBeGreaterThan(played.length * 0.9);
+    }
     if (raw.every((r) => r.Referee)) {
       expect(played.filter((r) => !r.referee).map((r) => `${r.date} ${r.home}-${r.away}`), `${lg}: domare saknas`).toEqual([]);
     }
