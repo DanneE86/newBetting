@@ -1,13 +1,13 @@
 # Övergångar: lyckas spelaren i sin nya liga?
 
 Uppdaterad 2026-10-04 av `scripts/lardomar-overgangar.mjs` (rådata: `scripts/fetch-player-careers-fotmob.mjs`).
-13263 spelare som bytt klubb sedan januari 2024, 16492 ligabyten, varav 7149 går att utvärdera
+13263 spelare som bytt klubb sedan januari 2024, 16492 ligabyten, varav 7208 går att utvärdera
 (betyg i gamla ligan finns och nya ligans säsong har spelats klart eller nästan klart).
 
 ## Kort sagt
 
 - **Bara 24 % av alla ligabyten blir en klar succé** (ordinarie och betyg minst i nivå med ligans median).
-  45 % blir ordinarie, och av dem som får minst 10 matcher presterar 48 % minst som ligans median.
+  44 % blir ordinarie, och av dem som får minst 10 matcher presterar 48 % minst som ligans median.
 - **Det bästa enskilda måttet är "förväntat betyg i nya ligan"**: betyget i gamla ligan minus hur mycket svårare nya ligan är.
   Ligger det över nya ligans median lyckas 39 %, ligger det klart under lyckas bara 14 %.
 - **Bara 14 % av försprånget följer med.** En spelare som var 0,30 bättre än medianen i gamla ligan är i snitt
@@ -27,11 +27,11 @@ Uppdaterad 2026-10-04 av `scripts/lardomar-overgangar.mjs` (rådata: `scripts/fe
 
 | Förväntat betyg mot median | Byten | Lyckades |
 |---|---|---|
-| under -0,3 | 2014 | 14 % |
-| -0,3 till -0,1 | 1498 | 19 % |
-| -0,1 till 0,1 | 1486 | 26 % |
-| 0,1 till 0,3 | 1100 | 30 % |
-| över 0,3 | 1051 | 39 % |
+| under -0,3 | 2034 | 14 % |
+| -0,3 till -0,1 | 1508 | 19 % |
+| -0,1 till 0,1 | 1495 | 26 % |
+| 0,1 till 0,3 | 1103 | 30 % |
+| över 0,3 | 1068 | 39 % |
 
 ## Vad påverkar, en sak i taget
 
@@ -39,92 +39,92 @@ Uppdaterad 2026-10-04 av `scripts/lardomar-overgangar.mjs` (rådata: `scripts/fe
 
 |  | Byten | Lyckades |
 |---|---|---|
-| under 21 | 1070 | 15 % |
-| 21–23 | 2053 | 21 % |
-| 24–27 | 2359 | 27 % |
-| 28–30 | 999 | 27 % |
-| 31+ | 668 | 31 % |
+| under 21 | 1085 | 15 % |
+| 21–23 | 2065 | 21 % |
+| 24–27 | 2379 | 26 % |
+| 28–30 | 1007 | 27 % |
+| 31+ | 672 | 31 % |
 
 **Speltid i gamla ligan**
 
 |  | Byten | Lyckades |
 |---|---|---|
-| under 33 % | 2807 | 20 % |
-| 33–60 % | 1962 | 21 % |
-| 60 %+ | 2380 | 31 % |
+| under 33 % | 2831 | 20 % |
+| 33–60 % | 1977 | 21 % |
+| 60 %+ | 2400 | 30 % |
 
 **Nivåskillnad (ny minus gammal)**
 
 |  | Byten | Lyckades |
 |---|---|---|
-| klart svagare liga (< -0,25) | 1555 | 27 % |
-| lite svagare | 1366 | 27 % |
-| ungefär samma | 1148 | 26 % |
-| lite starkare | 1360 | 23 % |
-| klart starkare (> 0,25) | 1720 | 18 % |
+| klart svagare liga (< -0,25) | 1562 | 26 % |
+| lite svagare | 1371 | 27 % |
+| ungefär samma | 1161 | 26 % |
+| lite starkare | 1379 | 23 % |
+| klart starkare (> 0,25) | 1735 | 18 % |
 
 **Lån eller köp**
 
 |  | Byten | Lyckades |
 |---|---|---|
-| köp/fri | 4850 | 26 % |
-| lån | 2299 | 19 % |
+| köp/fri | 4899 | 26 % |
+| lån | 2309 | 19 % |
 
 **Position**
 
 |  | Byten | Lyckades |
 |---|---|---|
-| målvakt | 485 | 24 % |
-| mittback | 1211 | 26 % |
-| ytterback | 958 | 28 % |
-| mittfält | 2022 | 27 % |
-| ytter | 1207 | 22 % |
-| anfallare | 1266 | 16 % |
+| målvakt | 486 | 24 % |
+| mittback | 1219 | 25 % |
+| ytterback | 964 | 28 % |
+| mittfält | 2041 | 27 % |
+| ytter | 1217 | 21 % |
+| anfallare | 1281 | 16 % |
 
 ## Modellen
 
-Logistisk regression, tränad på 3599 byten (nya ligans säsong 2024 och 2024/2025) och testad på 3550 senare byten.
+Logistisk regression, tränad på 3603 byten (nya ligans säsong 2024 och 2024/2025) och testad på 3605 senare byten.
 AUC träning 0,68, test 0,67. Bara förväntat betyg ger 0,63, så resten av faktorerna tillför lite.
 
 Träffsäkerhet i testet (sa modellen X %, hur ofta lyckades de?):
 
 | Modellens chans | Byten | Lyckades |
 |---|---|---|
-| 0–20 % | 1369 | 13 % |
-| 20–35 % | 1552 | 25 % |
-| 35–50 % | 508 | 39 % |
-| 50–65 % | 113 | 47 % |
+| 0–20 % | 1396 | 13 % |
+| 20–35 % | 1572 | 25 % |
+| 35–50 % | 518 | 39 % |
+| 50–65 % | 111 | 46 % |
 | 65–100 % | 8 | 50 % |
 
 Vikter (standardiserade, slutmodellen på alla byten; positivt = ökar chansen):
 
 | Faktor | Vikt |
 |---|---|
-| förväntat betyg i nya ligan mot median | 0,26 |
-| marknadsvärde (log) | 0,25 |
+| marknadsvärde (log) | 0,26 |
+| förväntat betyg i nya ligan mot median | 0,24 |
 | nivåskillnad | -0,19 |
 | anfallare/ytter | -0,17 |
 | speltid i gamla ligan | 0,16 |
 | marknadsvärde saknas | -0,15 |
 | lån | -0,15 |
-| ålder | 0,14 |
-| ålder² | -0,13 |
-| två säsonger: betyg mot median | 0,10 |
+| ålder | 0,15 |
+| ålder² | -0,14 |
+| två säsonger: betyg mot median | 0,09 |
 | nya lagets styrka | 0,09 |
 | mål+assist per match | -0,07 |
 | betyg mot median i gamla ligan | -0,05 |
-| gamla lagets styrka | 0,05 |
+| gamla lagets styrka | 0,04 |
 | målvakt | 0,00 |
 
 När spelaren väl spelar (minst 10 matcher) är sambandet med betyget mot medianen i nya ligan: förväntat betyg r = 0,32,
-gamla betyget r = 0,19, två säsonger r = 0,20 (0 = inget samband, 1 = perfekt).
+gamla betyget r = 0,18, två säsonger r = 0,20 (0 = inget samband, 1 = perfekt).
 
 ## Andra säsongen
 
 | Första året | Byten | Kvar i ligan år 2 | Ordinarie år 2 |
 |---|---|---|---|
-| lyckades | 1042 | 68 % | 51 % |
-| lyckades inte | 3286 | 54 % | 31 % |
+| lyckades | 1043 | 68 % | 51 % |
+| lyckades inte | 3289 | 54 % | 31 % |
 
 ## Ligornas nivå (ur bytena, minst 15 byten)
 
@@ -191,16 +191,16 @@ gamla betyget r = 0,19, två säsonger r = 0,20 (0 = inget samband, 1 = perfekt)
 | League One → League Two | 151 | 24 % | 0,22 |
 | MLS → MLS Next Pro | 137 | 11 % | 0,61 |
 | League Two → League One | 115 | 26 % | -0,17 |
+| Eerste Divisie → Eredivisie | 93 | 17 % | -0,31 |
 | Serie B → Série A | 91 | 12 % | -0,17 |
-| Eerste Divisie → Eredivisie | 91 | 18 % | -0,31 |
 | League One → Championship | 88 | 22 % | -0,21 |
-| Serie A → Serie B | 86 | 26 % | 0,41 |
+| Serie A → Serie B | 87 | 25 % | 0,41 |
 | Premier League → Championship | 77 | 22 % | 0,40 |
 | LaLiga → LaLiga2 | 71 | 24 % | 0,42 |
 | Bundesliga → 2. Bundesliga | 56 | 21 % | 0,26 |
-| Eredivisie → Eerste Divisie | 53 | 11 % | 0,64 |
+| Eredivisie → Eerste Divisie | 55 | 11 % | 0,64 |
+| LaLiga2 → LaLiga | 53 | 11 % | -0,38 |
 | 3. Liga → 2. Bundesliga | 52 | 35 % | -0,17 |
-| LaLiga2 → LaLiga | 50 | 12 % | -0,38 |
 | Championship → Premier League | 48 | 19 % | -0,47 |
 | 2. Bundesliga → Bundesliga | 46 | 17 % | -0,41 |
 | Ligue 1 → Premier League | 43 | 30 % | -0,23 |
@@ -232,63 +232,63 @@ Byten där nya ligans säsong är 2026 eller 2026/2027 (spelaren är kvar i klub
 
 | Spelare | Från | Till | Ålder | Förväntat mot median | Chans | Hittills |
 |---|---|---|---|---|---|---|
-| Casemiro | Manchester United (Premier League) | Inter Miami CF (MLS) | 34 | 1,06 | 66 % | 11 m, 7,07 |
+| Rodri | Manchester City (Premier League) | Barcelona (LaLiga) | 30 | 0,86 | 73 % | 6 m, 7,52 |
+| Azzedine Ounahi | Girona (LaLiga) | Panathinaikos (Super League 1) | 26 | 0,89 | 70 % | 4 m, 7,35 |
+| João Palhinha | Tottenham Hotspur (Premier League) | Benfica (Liga Portugal) | 31 | 0,64 | 69 % | 5 m, 7,30 |
+| Trevoh Chalobah | Chelsea (Premier League) | Como (Serie A) | 27 | 0,40 | 68 % | 4 m, 7,16 |
+| Imrân Louza | Watford (Championship) | Panathinaikos (Super League 1) | 27 | 0,82 | 67 % | 5 m, 6,88 |
+| Bernardo Silva | Manchester City (Premier League) | Real Madrid (LaLiga) | 32 | 0,50 | 65 % | 6 m, 6,84 |
+| Casemiro | Manchester United (Premier League) | Inter Miami CF (MLS) | 34 | 1,06 | 65 % | 11 m, 7,07 |
+| Alexander Nübel | VfB Stuttgart (Bundesliga) | Beşiktaş (Super Lig) | 29 | 0,62 | 64 % | 6 m, 6,36 |
+| Aleksey Batrakov | Lokomotiv Moscow (Premier League) | Galatasaray (Super Lig) | 21 | 0,85 | 64 % | 4 m, 6,75 |
+| Ibrahima Konaté | Liverpool (Premier League) | Real Madrid (LaLiga) | 27 | 0,46 | 63 % | 6 m, 6,95 |
+| Alejandro Grimaldo | Bayer Leverkusen (Bundesliga) | Atlético Madrid (LaLiga) | 30 | 0,82 | 63 % | 6 m, 7,62 |
 | Mauro Arambarri | Getafe (LaLiga) | River Plate (Liga Profesional) | 30 | 0,51 | 63 % | 6 m, 6,32 |
-| Fallou Fall | St. Louis City (MLS) | St. Louis City 2 (MLS Next Pro) | 21 | 0,84 | 63 % | 2 m, 6,94 |
-| Tomas Totland | St. Louis City (MLS) | St. Louis City 2 (MLS Next Pro) | 26 | 0,80 | 60 % | 1 m, 6,88 |
+| Julian Brandt | Borussia Dortmund (Bundesliga) | Ajax (Eredivisie) | 30 | 0,62 | 63 % | 7 m, 7,58 |
+| Fallou Fall | St. Louis City (MLS) | St. Louis City 2 (MLS Next Pro) | 21 | 0,84 | 62 % | 2 m, 6,94 |
+| Jakub Kamiński | 1. FC Köln (Bundesliga) | Benfica (Liga Portugal) | 24 | 0,59 | 62 % | 1 m, 6,38 |
+| Iñaki Peña | Elche (LaLiga) | Panathinaikos (Super League 1) | 27 | 0,53 | 62 % | 5 m, 7,42 |
+| Kings Kangwa | Hapoel Beer Sheva (Ligat ha'Al) | Panathinaikos (Super League 1) | 27 | 1,08 | 61 % | 5 m, 7,54 |
+| Sergi Altimira | Real Betis (LaLiga) | Sporting CP (Liga Portugal) | 25 | 0,42 | 61 % | 7 m, 7,99 |
+| Cristian Romero | Tottenham Hotspur (Premier League) | Atlético Madrid (LaLiga) | 28 | 0,41 | 61 % | 4 m, 7,35 |
+| Victor Nelsson | Hellas Verona (Serie A) | Nordsjælland (Superligaen) | 27 | 0,39 | 60 % | 3 m, 7,03 |
+| Morten Hjulmand | Sporting CP (Liga Portugal) | Atlético Madrid (LaLiga) | 27 | 0,52 | 60 % | 7 m, 7,23 |
+| Stefan de Vrij | Inter (Serie A) | Panathinaikos (Super League 1) | 34 | 0,76 | 60 % | 5 m, 7,56 |
 | Thiago Almada | Atlético Madrid (LaLiga) | River Plate (Liga Profesional) | 24 | 0,32 | 60 % | 6 m, 8,03 |
-| Nicolás Otamendi | Benfica (Liga Portugal) | River Plate (Liga Profesional) | 38 | 0,70 | 56 % | 10 m, 7,21 |
-| Lucas Paquetá | West Ham United (Premier League) | Flamengo (Série A) | 28 | 0,46 | 55 % | 19 m, 7,34 |
-| Ángel Correa | Tigres (Liga MX) | River Plate (Liga Profesional) | 30 | 0,70 | 55 % | 9 m, 7,55 |
+| Marc Cucurella | Chelsea (Premier League) | Real Madrid (LaLiga) | 28 | 0,31 | 60 % | 7 m, 6,79 |
+| Tomas Totland | St. Louis City (MLS) | St. Louis City 2 (MLS Next Pro) | 26 | 0,80 | 60 % | 1 m, 6,88 |
+| Ayyoub Bouaddi | Lille (Ligue 1) | Manchester City (Premier League) | 18 | -0,04 | 60 % | 2 m, 6,52 |
+| Nathan Aké | Manchester City (Premier League) | Fenerbahçe (Super Lig) | 31 | 0,27 | 59 % | 6 m, 6,64 |
+| Lutsharel Geertruida | Sunderland (Premier League) | PSV Eindhoven (Eredivisie) | 26 | 0,37 | 59 % | 4 m, 7,65 |
+| Romano Schmid | Werder Bremen (Bundesliga) | Frosinone (Serie A) | 26 | 0,42 | 59 % | 5 m, 7,07 |
+| Alessandro Circati | Parma (Serie A) | Benfica (Liga Portugal) | 22 | 0,37 | 59 % | 2 m, 6,42 |
+| Mohamed Salah | Liverpool (Premier League) | Trabzonspor (Super Lig) | 34 | 0,58 | 59 % | 6 m, 8,16 |
+| Rasmus Kristensen | Eintracht Frankfurt (Bundesliga) | FC Midtjylland (Superligaen) | 29 | 0,63 | 58 % | 9 m, 7,41 |
+| Issa Doumbia | Venezia (Serie B) | Sporting CP (Liga Portugal) | 22 | 0,53 | 58 % | 7 m, 7,27 |
+| Karim Adeyemi | Borussia Dortmund (Bundesliga) | Barcelona (LaLiga) | 24 | 0,09 | 58 % | 7 m, 7,23 |
+| Mason Greenwood | Marseille (Ligue 1) | Fenerbahçe (Super Lig) | 24 | 0,82 | 58 % | 6 m, 7,68 |
+| Sofyan Amrabat | Real Betis (LaLiga) | Ajax (Eredivisie) | 30 | 0,46 | 58 % | 4 m, 6,96 |
+| Rick van Drongelen | Samsunspor (Super Lig) | Panathinaikos (Super League 1) | 27 | 0,44 | 58 % | 5 m, 7,12 |
+| Curtis Jones | Liverpool (Premier League) | Inter (Serie A) | 25 | 0,35 | 57 % | 4 m, 6,76 |
+| Freddie Potts | West Ham United (Premier League) | Club Brugge (First Division A) | 22 | 0,20 | 57 % | 7 m, 7,32 |
+| Luis Milla | Getafe (LaLiga) | Como (Serie A) | 31 | 0,59 | 57 % | 5 m, 6,95 |
+| Luka Vušković | Hamburger SV (Bundesliga) | Brighton & Hove Albion (Premier League) | 19 | 0,37 | 57 % | 5 m, 7,22 |
+| Yann Sommer | Inter (Serie A) | Club Brugge (First Division A) | 37 | 0,28 | 56 % | 7 m, 7,52 |
+| Lucas Paquetá | West Ham United (Premier League) | Flamengo (Série A) | 28 | 0,46 | 56 % | 19 m, 7,34 |
+| Nicolás Otamendi | Benfica (Liga Portugal) | River Plate (Liga Profesional) | 38 | 0,70 | 55 % | 10 m, 7,21 |
 | Aníbal Moreno | Palmeiras (Série A) | River Plate (Liga Profesional) | 26 | 0,25 | 55 % | 24 m, 7,31 |
-| Lukas MacNaughton | St. Louis City (MLS) | St. Louis City 2 (MLS Next Pro) | 30 | 0,50 | 55 % | 1 m, 6,79 |
-| Brais Méndez | Real Sociedad (LaLiga) | Columbus Crew (MLS) | 29 | 0,55 | 55 % | 10 m, 7,28 |
+| Ángel Correa | Tigres (Liga MX) | River Plate (Liga Profesional) | 30 | 0,70 | 55 % | 9 m, 7,55 |
+| Kaan Kairinen | Sparta Prague (1. Liga) | AEK Athens (Super League 1) | 27 | 0,31 | 55 % | 2 m, 6,31 |
+| Mika Mármol | Las Palmas (LaLiga2) | Feyenoord (Eredivisie) | 25 | 0,33 | 55 % | 7 m, 7,48 |
+| Lukas MacNaughton | St. Louis City (MLS) | St. Louis City 2 (MLS Next Pro) | 30 | 0,50 | 54 % | 1 m, 6,79 |
+| Brais Méndez | Real Sociedad (LaLiga) | Columbus Crew (MLS) | 29 | 0,55 | 54 % | 10 m, 7,28 |
+| Viktor Tsigankov | Girona (LaLiga) | Ajax (Eredivisie) | 28 | 0,69 | 54 % | 4 m, 6,63 |
+| Mika Baur | Paderborn (2. Bundesliga) | Celtic (Premiership) | 22 | 0,47 | 54 % | 5 m, 7,48 |
 | Sang-Bin Jeong | St. Louis City (MLS) | St. Louis City 2 (MLS Next Pro) | 23 | 0,36 | 54 % | 1 m, 6,76 |
-| Robert Lewandowski | Barcelona (LaLiga) | Chicago Fire FC (MLS) | 37 | 0,55 | 53 % | 11 m, 7,20 |
-| Reed Baker-Whiting | Nashville SC (MLS) | Huntsville City FC (MLS Next Pro) | 20 | 0,48 | 52 % | 1 m, 7,29 |
-| Joshua Kitolano | Sparta Rotterdam (Eredivisie) | Bodø/Glimt (Eliteserien) | 24 | 0,45 | 51 % | 6 m, 6,74 |
-| Giovanni González | FC Krasnodar (Premier League) | River Plate (Liga Profesional) | 31 | 0,53 | 50 % | 3 m, 6,87 |
-| Francisco Ortega | Olympiacos (Super League 1) | River Plate (Liga Profesional) | 26 | 0,41 | 49 % | 6 m, 6,52 |
-| Mathias Fjørtoft Løvik | Trabzonspor (Super Lig) | Molde (Eliteserien) | 22 | 0,31 | 48 % | 7 m, 6,24 |
-| Carlo Holse | Samsunspor (Super Lig) | St. Louis City (MLS) | 26 | 0,50 | 48 % | 9 m, 7,07 |
-| Gustavo Cuéllar | Grêmio (Série A) | Deportivo Cali (Primera A) | 33 | 0,47 | 46 % | 16 m, 7,16 |
-| Renan Lodi | Al Hilal (Saudi Pro League) | Atlético-MG (Série A) | 27 | 0,51 | 46 % | 24 m, 7,05 |
-| Niklas Dorsch | FC Heidenheim (Bundesliga) | Toronto FC (MLS) | 28 | 0,31 | 45 % | 7 m, 6,80 |
-| Josh Cohen | Chicago Fire FC (MLS) | Chicago Fire FC II (MLS Next Pro) | 33 | 1,38 | 45 % | 1 m, 6,38 |
-| Antoine Griezmann | Atlético Madrid (LaLiga) | Orlando City (MLS) | 34 | 0,50 | 45 % | 11 m, 8,19 |
-| Gerson | Zenit St. Petersburg (Premier League) | Cruzeiro (Série A) | 28 | 0,17 | 45 % | 24 m, 7,13 |
-| Fred | Fenerbahçe (Super Lig) | Atlético-MG (Série A) | 32 | 0,24 | 45 % | 5 m, 6,91 |
-| Jonas Svensson | Beşiktaş (Super Lig) | Rosenborg (Eliteserien) | 32 | 0,81 | 45 % | 13 m, 7,20 |
-| Kai Wagner | Birmingham City (Championship) | Philadelphia Union (MLS) | 29 | 0,69 | 45 % | 12 m, 7,49 |
-| Henry Kessler | Charlotte FC (MLS) | Crown Legacy FC (MLS Next Pro) | 27 | 0,47 | 44 % | 1 m, 8,07 |
-| Juan Cuadrado | Pisa (Serie A) | Millonarios (Primera A) | 37 | 0,38 | 44 % | 1 m, 6,71 |
-| Alcides Benítez | Guaraní (Division Profesional) | Belgrano (Liga Profesional) | 23 | 0,51 | 44 % | 22 m, 6,89 |
-| Lubomír Belko | Žilina (1. liga) | Viking (Eliteserien) | 24 | 0,30 | 43 % | 11 m, 6,89 |
-| Facundo Torres | Palmeiras (Série A) | Austin FC (MLS) | 25 | 0,51 | 43 % | 27 m, 7,23 |
-| Joel Mvuka | Lorient (Ligue 1) | Bodø/Glimt (Eliteserien) | 23 | 0,37 | 42 % | 3 m, 6,54 |
-| Neraysho Kasanwirjo | Fortuna Sittard (Eredivisie) | Brann (Eliteserien) | 24 | 0,41 | 42 % | 3 m, 6,81 |
-| Julián Bazán | Red Bull New York (MLS) | Red Bull New York  II (MLS Next Pro) | 20 | 0,62 | 42 % | 3 m, 8,18 |
-| Pacha Espino | Rayo Vallecano (LaLiga) | Racing Club (Liga Profesional) | 34 | 0,42 | 42 % | 3 m, 6,27 |
-| Giovanny Sequera | Philadelphia Union (MLS) | Philadelphia Union II (MLS Next Pro) | 20 | 0,98 | 42 % | 23 m, 6,79 |
-| Elías Báez | San Lorenzo (Liga Profesional) | Atlanta United (MLS) | 21 | 0,23 | 42 % | 24 m, 6,85 |
-| James Rodríguez | Minnesota United (MLS) | Atlético Nacional (Primera A) | 34 | 0,63 | 42 % | 4 m, 6,82 |
-| Morten Bjørlo | Konyaspor (Super Lig) | Tromsø (Eliteserien) | 30 | 0,15 | 41 % | 3 m, 6,84 |
-| Stiven Barreiro | León (Liga MX) | Millonarios (Primera A) | 31 | 0,22 | 41 % | 11 m, 6,99 |
-| Patrick de Paula | Remo (Série A) | Sport Recife (Serie B) | 26 | 0,57 | 41 % | 5 m, 6,81 |
-| Felipe Andrade | Houston Dynamo FC (MLS) | Houston Dynamo 2 (MLS Next Pro) | 23 | 0,23 | 41 % | 2 m, 6,53 |
-| Sergio Reguilón | Tottenham Hotspur (Premier League) | Inter Miami CF (MLS) | 29 | 0,40 | 41 % | 13 m, 6,62 |
-| Alexander Jensen | Aberdeen (Premiership) | Elfsborg (Allsvenskan) | 24 | 0,19 | 41 % | 9 m, 7,38 |
-| Breel Embolo | Rennes (Ligue 1) | Atlanta United (MLS) | 29 | 0,26 | 41 % | 5 m, 6,99 |
-| Miguel Perez | St. Louis City (MLS) | St. Louis City 2 (MLS Next Pro) | 20 | -0,14 | 41 % | 4 m, 7,30 |
-| Paulo Díaz | River Plate (Liga Profesional) | Atlanta United (MLS) | 31 | 0,82 | 40 % | 6 m, 6,70 |
-| Tommi Jyry | Petrolul Ploiești (Liga I) | KuPS (Veikkausliiga) | 26 | 0,19 | 40 % | 9 m, 6,99 |
-| Orbelín Pineda | AEK Athens (Super League 1) | Monterrey (Liga MX) | 30 | 0,31 | 40 % | 7 m, 7,40 |
-| Vicente Pizarro | Colo Colo (Liga de Primera) | Rosario Central (Liga Profesional) | 23 | 0,48 | 40 % | 28 m, 7,16 |
-| Santiago Sosa | Racing Club (Liga Profesional) | Vasco da Gama (Série A) | 26 | 0,28 | 40 % | 6 m, 7,31 |
-| Bryan Ramírez | LDU de Quito (Serie A) | FC Cincinnati (MLS) | 25 | 0,53 | 39 % | 24 m, 7,26 |
-| Juan Fernando Quintero | River Plate (Liga Profesional) | Independiente Medellín (Primera A) | 33 | 0,48 | 39 % | 5 m, 7,86 |
-| Jack Harrison | Fiorentina (Serie A) | New England Revolution (MLS) | 29 | 0,32 | 39 % | 7 m, 7,57 |
-| Alan Lescano | Argentinos Juniors (Liga Profesional) | Vasco da Gama (Série A) | 24 | 0,16 | 39 % | 2 m, 7,74 |
-| Mohamed Soumah | Gent U23 (First Division B) | Sirius (Allsvenskan) | 22 | 0,57 | 39 % | 18 m, 7,23 |
-| Allan Saint-Maximin | Lens (Ligue 1) | Charlotte FC (MLS) | 28 | 0,55 | 39 % | 9 m, 7,36 |
-| Lucas Halter | Vitória (Série A) | Houston Dynamo FC (MLS) | 25 | 0,22 | 39 % | 15 m, 7,10 |
+| Kervin Arriaga | Levante (LaLiga) | AEK Athens (Super League 1) | 28 | 0,40 | 54 % | 3 m, 6,14 |
+| Oleksandr Zubkov | Trabzonspor (Super Lig) | AEK Athens (Super League 1) | 30 | 0,61 | 53 % | 4 m, 6,56 |
+| Anthony Gordon | Newcastle United (Premier League) | Barcelona (LaLiga) | 25 | 0,31 | 53 % | 6 m, 7,50 |
+| Caio Henrique | Monaco (Ligue 1) | Ajax (Eredivisie) | 29 | -0,01 | 53 % | 7 m, 6,94 |
+| Darius Olaru | FCSB (Liga I) | Union St.Gilloise (First Division A) | 28 | 0,56 | 53 % | 3 m, 6,78 |
+| Danilho Doekhi | Union Berlin (Bundesliga) | Lazio (Serie A) | 28 | 0,11 | 53 % | 3 m, 7,41 |
+| Lovro Majer | Wolfsburg (Bundesliga) | AEK Athens (Super League 1) | 28 | 0,22 | 52 % | 5 m, 7,51 |

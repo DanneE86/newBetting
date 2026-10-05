@@ -55,7 +55,7 @@ for (const m of fitSet) { leagueN.set(m.a, (leagueN.get(m.a) ?? 0) + 1); leagueN
 for (const m of moves) Object.assign(m, features(m, levels));
 
 // Utvärderingsbara: betyg i gamla ligan finns, nya ligans säsong har minst 1 omgång kvar att mäta på (inte 2026/2027)
-const evalSet = moves.filter((m) => m.x && m.to.season !== '2026/2027' && m.to.roundsMax >= 10);
+const evalSet = moves.filter((m) => m.x && m.success != null && !m.to.medianFromPrev && m.to.season !== '2026/2027' && m.to.roundsMax >= 10);
 const train = evalSet.filter((m) => m.to.end <= 2025 && m.to.season !== '2025');
 const test = evalSet.filter((m) => !train.includes(m));
 const model = logistic(train.map((m) => m.x), train.map((m) => (m.success ? 1 : 0)));
@@ -134,6 +134,8 @@ const levelRows = [...levels.entries()].filter(([id]) => (leagueN.get(id) ?? 0) 
 const weights = FEATURE_NAMES.map((n, j) => ({ name: n, w: full.w[j + 1] })).sort((a, b) => Math.abs(b.w) - Math.abs(a.w));
 
 // Sommarens byten (säsong 2026 och 2026/2027) till våra ligor med prognos
+const slimMove = (m) => ({ id: m.id, name: m.name, from: m.from.team, fromLeague: m.from.league, fromLeagueId: m.from.leagueId, to: m.to.team, toLeague: m.to.league, toLeagueId: m.to.leagueId,
+  season: m.to.season, age: m.age, expRel: m.expRel, p: m.p, apps: m.to.apps, rating: m.to.rating, value: m.value });
 const recent = moves.filter((m) => m.x && m.latest && (m.to.season === '2026/2027' || m.to.season === '2026'))
   .sort((a, b) => b.p - a.p);
 
@@ -145,7 +147,9 @@ for (const l of levelRows) if (nameCount.get(l.league) > 1) l.label = `${l.leagu
 const out = { updatedAt: new Date().toISOString(), players: players.length, moves: moves.length, evaluated: evalSet.length,
   successRate: pct(evalSet.filter((m) => m.success).length, evalSet.length), regularRate, goodWhenPlaying, perf, second,
   aucTrain, aucTest, aucSimple, train: train.length, test: test.length, buckets, expBuckets, factors, pairRows, levelRows, weights,
-  recent: recent.map((m) => ({ id: m.id, name: m.name, from: m.from.team, fromLeague: m.from.league, to: m.to.team, toLeague: m.to.league, season: m.to.season, age: m.age, expRel: m.expRel, p: m.p, apps: m.to.apps, rating: m.to.rating })) };
+  recent: recent.map(slimMove),
+  // Förra årets byten med facit (för att se hur prognosen höll)
+  lastYear: moves.filter((m) => m.x && (m.to.season === '2025/2026' || m.to.season === '2025')).map((m) => ({ ...slimMove(m), success: m.success, share: m.to.share, median: m.to.median })) };
 fs.mkdirSync(path.join(root, 'data', 'lardomar'), { recursive: true });
 fs.writeFileSync(path.join(root, 'data', 'lardomar', 'overgangar.json'), JSON.stringify(out, null, 1), 'utf8');
 console.log(`Utvärderade ${evalSet.length} (träning ${train.length}, test ${test.length}), lyckade ${out.successRate} %`);

@@ -3,7 +3,7 @@
 //
 // Säsongsfilen data/hastar/historik/<år>.jsonl.gz: en rad per omgång = normalizeGame(...) (trav-model.mjs),
 // alltså alla lopp, alla starter med historik, slutstreck, slutodds, resultat och utdelning (payouts).
-import { parsePrize } from "./trav-model.mjs";
+import { parsePrize, startExtras, raceExtras, resultOf } from "./trav-model.mjs";
 
 /** Lägger loppets förstapris (race.firstPrize) på sparade lopp som saknar det (undefined/null). game: ATG:s spel-svar. */
 export function addPrizes(norm, game) {
@@ -12,6 +12,27 @@ export function addPrizes(norm, game) {
   return norm;
 }
 
+
+/** Saknar omgången avel/hemmabana/rekord per distans (sparas sedan 2026-10-04)? */
+export const lacksExtras = (norm) => norm.races.some((r) => !("condition" in r) || r.starts.some((s) => !("avgOdds5" in s)));
+
+/** Lägger avel, hemmabanor, id:n och rekord per distans (startExtras) på sparade starter. game: ATG:s spel-svar. */
+export function addExtras(norm, game) {
+  const races = new Map((game?.races || []).map((r) => [r.id, r]));
+  for (const r of norm.races) {
+    const race = races.get(r.id);
+    if (!race) continue;
+    Object.assign(r, raceExtras(race));
+    const starts = new Map((race.starts || []).map((s) => [s.number, s]));
+    for (const s of r.starts) {
+      const src = starts.get(s.nr);
+      if (!src) continue;
+      Object.assign(s, startExtras(src));
+      if (src.result) s.result = { ...s.result, ...resultOf(src.result) };
+    }
+  }
+  return norm;
+}
 
 /** Vinnande startnummer per avdelning (dött lopp ger flera). [[nr, ...], ...] i avdelningsordning. */
 export const legWinners = (game) =>

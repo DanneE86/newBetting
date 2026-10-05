@@ -20,7 +20,7 @@ const sys = { budget: 500, mode: "rakt", expand: 4, focus: "standard", minTop: M
 let lastRows = null;
 let lastLegs = null; // utgångs-/raka systemets hästar per avdelning, för kupongmallen
 const FOCUS_TEXT = {
-  standard: "Standard: V85 spelas med Normal, övriga spel med Träff. Bakkört V85 2026 (56 omgångar): Normal gav mer tillbaka än Träff på alla budgetar 200–2000 kr – Träff tar nästan bara favoriter och träffar mest billiga omgångar.",
+  standard: "Standard: V85 och V75 spelas med Hög, övriga spel med Träff. Bakkört V75 2021–2025 och V85 (444 omgångar): Hög gav mer tillbaka än Normal på 500–2000 kr, lika många alla rätt och fler skrällvinnare i systemet. Alla favoriter vinner nästan aldrig (0 av 74 V85-omgångar) – det vanliga är 2–4.",
   traff: "Träff: bara vinstchansen räknas – flest rätt. Bakkört 2026 (469 omgångar): alla rätt oftare än ett system efter strecket på varje budget.",
   lag: "Låg: nästan bara vinstchansen räknas – systemet tar mest favoriter.",
   normal: "Normal: chansen styr, men underspelade hästar går före överspelade när chansen är ungefär lika.",
@@ -134,7 +134,8 @@ const help = () => `<details class="hs-help"><summary>Så läser du det här</su
     <li><b>Värde</b> betyder att chansen är minst 15 % högre än strecket. Då betalar systemet mer än det borde när hästen vinner. <b>Ej värde</b> = folket har redan spelat hästen fullt ut eller mer.</li>
     <li><b>A–D</b>: A stark vinstkandidat (≥ 20 %), B realistisk utmanare (≥ 9 %), C skräll/gardering (≥ 3,5 %), D låg chans.</li>
     <li>Staplarna: <span class="hs-key is-p">modellens chans</span> mot <span class="hs-key is-m">folkets streck</span>. Längre mörk stapel än ljus = underspelad.</li>
-    <li><b>Form, Kusk, Spår, Tempo, Total</b>: 0–100 där 50 är loppets snitt. <b>Trolig position</b> är en uppskattning – ATG:s öppna data har inga positioner från tidigare lopp.</li>
+    <li><b>Poäng 0–100</b> (100 bäst) = hästens vinstchans på en fast skala, samma i alla lopp. Prövat på 2024 (43 000 hästar modellen aldrig sett): 90+ vann ungefär varannan gång, 80–89 var tredje, 70–79 var sjätte, 50–59 var fjortonde, under 30 nästan aldrig.</li>
+    <li><b>Delpoäng</b> jämför hästen med de andra i loppet (50 = loppets snitt, 70+ = klart bättre): ${Object.entries(PART_TEXT).map(([k, t]) => `${PART_SHORT[k]} ${t.toLowerCase()}`).join(", ")}. Hög formpoäng är inget fynd i sig – folket spelar redan formen. Utrustning (barfota, skor av) är oftare underspelad. <b>Trolig position</b> är en uppskattning – ATG:s öppna data har inga positioner från tidigare lopp.</li>
     <li>Modellen är prövad på ${state?.backtest?.races || "—"} avgjorda lopp: den är lika träffsäker som slutoddsen, inte bättre. Se Backtest längst ned.</li>
   </ul></details>`;
 
@@ -183,6 +184,12 @@ const topLine = (s, a) => {
     <small>(uppskattat: potten för alla rätt är ${lvl}, delat med hur många som har raden enligt strecket – jackpott tillkommer)</small></p>
     ${s.topOk === false ? `<p class="hs-msg is-error">Budgeten räcker inte för att högsta raden ska ge ${kr(sys.minTop)}. Höj budgeten eller sänk spärren.</p>` : ""}`;
 };
+/** Rad om skrällhästar i systemet. V75 2021–2025 + V85: var fjärde avdelning vinns av en häst under 10 % streck. */
+const skrallLine = (s, legCount) =>
+  s?.skrallLegs == null
+    ? ""
+    : `<p class="hs-sys-sum hs-sys-skrall">Skrällhästar (under ${SKRALL_MAX * 100} % streck) i <b>${s.skrallLegs} av ${legCount}</b> avdelningar
+    <small>(historiskt vinns ungefär var fjärde avdelning av en sådan häst, oftast 2 per omgång – men de är många per lopp, så systemet tar bara dem modellen tror mest på)</small></p>`;
 function systemBuilder(a) {
   if (a.type === "dd" || !a.races.length) return "";
   const price = rowPrice(a.type, a.date);
@@ -198,7 +205,7 @@ function systemBuilder(a) {
       lastLegs = s.legs;
       body = systemTable(s.legs, byLeg) + `<p class="hs-sys-sum"><b>${s.rows.toLocaleString("sv-SE")} rader · ${kr(s.cost)}</b> ·
         alla rätt: ${pct(s.hit, 2)} enligt modellen, ${pct(s.marketHit, 2)} enligt strecket ·
-        <span title="Modellens träffchans delat med folkets. Över 1 = systemet träffar oftare än folket tror, alltså högre utdelning när det sitter.">värdeindex <b>${dec(s.valueIndex)}</b></span></p>` + topLine(s, a);
+        <span title="Modellens träffchans delat med folkets. Över 1 = systemet träffar oftare än folket tror, alltså högre utdelning när det sitter.">värdeindex <b>${dec(s.valueIndex)}</b></span></p>` + topLine(s, a) + skrallLine(s, legs.length);
     } else {
       const r = reduceSystem(legs, sys.conds, { budget: sys.budget, price, expand: sys.expand, alpha: alphaFor(a.type), minTop: sys.minTop, topShare });
       lastRows = r.rows;
@@ -206,7 +213,7 @@ function systemBuilder(a) {
       body = systemTable(r.base.legs, byLeg) + `<p class="hs-sys-sum">Utgångssystem ${r.total.toLocaleString("sv-SE")} rader (${kr(r.total * price)}) ·
         ${r.passed.toLocaleString("sv-SE")} klarar villkoren · <b>${r.count.toLocaleString("sv-SE")} rader spelas · ${kr(r.cost)}</b> ·
         alla rätt: ${pct(r.hit, 2)} enligt modellen</p>
-        ${r.count ? "" : `<p class="hs-msg is-error">Inga rader klarar villkoren – lätta på dem.</p>`}` + topLine(r, a);
+        ${r.count ? "" : `<p class="hs-msg is-error">Inga rader klarar villkoren – lätta på dem.</p>`}` + topLine(r, a) + skrallLine(r.base, legs.length);
     }
     body += atgBlock(a);
   } catch (e) {
@@ -228,7 +235,8 @@ function systemBuilder(a) {
     </div>
     <div class="hs-mode" role="group" aria-label="Systemtyp">
       <button type="button" class="ds-toggle" data-mode="rakt" aria-pressed="${sys.mode === "rakt"}">Rakt system</button>
-      <button type="button" class="ds-toggle" data-mode="reducerat" aria-pressed="${sys.mode === "reducerat"}">Reducerat system</button>
+      <button type="button" class="ds-toggle" data-mode="reducerat" aria-pressed="${sys.mode === "reducerat" && !isSkrall3()}">Reducerat system</button>
+      <button type="button" class="ds-toggle" data-mode="skrall3" aria-pressed="${isSkrall3()}" title="Reducerat system, utgång 16 × budget, minst 3 hästar under 10 % streck på varje rad. Bakkört 2023–2026: +56 % på 1 000 kr men det bygger på ett fåtal storvinster – spela 1 000 kr eller mer, under 500 kr blir det för få rader">Skrällsystem</button>
       <label title="Hur mycket spelvärdet väger mot ren vinstchans när hästar väljs">Värdefokus <select class="ds-select" id="hs-focus">${[["standard", "Standard"], ["traff", "Träff"], ["lag", "Låg"], ["normal", "Normal"], ["hog", "Hög"]].map(([k, t]) => `<option value="${k}" ${sys.focus === k ? "selected" : ""}>${t}</option>`).join("")}</select></label>
     </div>
     <div class="hs-mode" role="group" aria-label="Högsta rad">
@@ -292,6 +300,9 @@ function atgBlock(a) {
   </div>`;
 }
 
+/** Är skrällsystemets förval inställt (reducerat, utgång 16 ×, minst 3 skrällar)? */
+const isSkrall3 = () => sys.mode === "reducerat" && sys.expand === 16 && String(sys.conds.minSkrall) === "3";
+
 function systemTable(legs, byLeg) {
   return `<div class="hs-sys-legs">${legs
     .map((l) => {
@@ -314,6 +325,25 @@ function bars(h) {
   return `<span class="hs-bars" aria-hidden="true"><span class="is-p" style="width:${w(h.p)}"></span><span class="is-m" style="width:${w(h.marketPct)}"></span></span>`;
 }
 
+// Hästpoäng (scripts/lib/trav-model.mjs horseScore): chansen på log-skala, 0,5 % = 0 och 60 % = 100
+const PART_TEXT = { form: "Form", fart: "Fart", klass: "Klass", spar: "Spår", kusk: "Kusk", tranare: "Tränare", utrustning: "Utrustning", tempo: "Tempo", marknad: "Streck" };
+const PART_SHORT = { form: "Fo", fart: "Fa", klass: "Kl", spar: "Sp", kusk: "Ku", tranare: "Tr", utrustning: "Ut", tempo: "Te", marknad: "St" };
+const scoreOf = (h) => h.poang?.total ?? (h.p == null ? null : Math.round(Math.max(0, Math.min(100, (100 * Math.log(Math.max(h.p, 1e-9) / 0.005)) / Math.log(0.6 / 0.005)))));
+const scoreLevel = (x) => (x >= 80 ? "is-top" : x >= 60 ? "is-good" : x >= 40 ? "is-mid" : "is-low");
+function scoreCell(h) {
+  const t = scoreOf(h);
+  if (t == null) return "—";
+  return `<span class="hs-score ${scoreLevel(t)}" title="Hästpoäng ${t} av 100 (chans ${pct(h.p, 1)})"><b>${t}</b><span class="hs-score-bar" aria-hidden="true"><span style="width:${t}%"></span></span></span>`;
+}
+function partsCell(h) {
+  const pg = h.poang;
+  if (!pg) return "—";
+  return `<span class="hs-parts">${Object.keys(PART_TEXT)
+    .filter((k) => pg[k] != null)
+    .map((k) => `<span class="hs-part${pg[k] >= 70 ? " is-hi" : pg[k] <= 30 ? " is-lo" : ""}" title="${PART_TEXT[k]} ${pg[k]} (50 = loppets snitt)">${PART_SHORT[k]} <b>${pg[k]}</b></span>`)
+    .join("")}</span>`;
+}
+
 function race(r, a) {
   const live = r.horses.filter((h) => !h.scratched);
   const fav = r.favorite;
@@ -326,11 +356,11 @@ function race(r, a) {
     </header>
     <div class="hs-table-wrap"><table class="hs-table">
       <thead><tr><th scope="col">Rank</th><th scope="col">Nr</th><th scope="col">Häst / kusk</th><th scope="col">Chans mot ${srcLabel.toLowerCase()}</th><th scope="col">Chans</th><th scope="col">${srcLabel}</th><th scope="col">Spelvärde</th>
-        <th scope="col" title="0–100, 50 = loppets snitt">Form</th><th scope="col">Kusk</th><th scope="col">Spår</th><th scope="col">Tempo</th><th scope="col">Total</th><th scope="col">Trolig position</th><th scope="col">Kommentar</th></tr></thead>
+        <th scope="col" title="0–100, 100 = bäst. Vinstchansen på fast skala, samma i alla lopp">Poäng</th><th scope="col" title="0–100 jämfört med loppet, 50 = snitt">Delpoäng</th><th scope="col">Trolig position</th><th scope="col">Kommentar</th></tr></thead>
       <tbody>${r.horses
         .map((h) =>
           h.scratched
-            ? `<tr class="is-scratched"><td>—</td><td>${h.nr}</td><td colspan="12">${esc(h.horse)} · struken</td></tr>`
+            ? `<tr class="is-scratched"><td>—</td><td>${h.nr}</td><td colspan="9">${esc(h.horse)} · struken</td></tr>`
             : `<tr>
           <td><span class="hs-rank rank-${h.rank}" title="${esc(RANK_TEXT[h.rank])}">${h.rank}</span></td>
           <td>${h.nr}<small class="hs-post">spår ${h.post}</small></td>
@@ -339,7 +369,7 @@ function race(r, a) {
           <td class="num"><b>${pct(h.p)}</b></td>
           <td class="num">${pct(h.marketPct)}</td>
           <td>${verdict(h)}</td>
-          <td class="num">${h.scores.form}</td><td class="num">${h.scores.kusk}</td><td class="num">${h.scores.spar}</td><td class="num">${h.scores.tempo ?? "—"}</td><td class="num"><b>${h.scores.total}</b></td>
+          <td>${scoreCell(h)}</td><td>${partsCell(h)}</td>
           <td>${esc(h.position || "—")}</td>
           <td class="hs-comment">${esc((h.comments || []).join(" · "))}${h.last5?.length ? `<small>Senaste: ${h.last5.map((x) => (x.galloped ? "g" : x.place ?? "–")).join(" ")}</small>` : ""}</td>
         </tr>`,
@@ -372,6 +402,28 @@ function ddBlock(a) {
     <div class="hs-dd-grid"><div><h4>Bäst EV</h4>${dd.byEv.length ? table(dd.byEv.slice(0, 12)) : "<p>Inga odds att jämföra mot.</p>"}</div>
     <div><h4>Mest sannolika</h4>${table(dd.byP.slice(0, 12))}</div></div>
     ${dd.extraRaces?.length ? dd.extraRaces.map((r) => race({ ...r, leg: `DD ${r.number}` }, { type: "dd" })).join("") : ""}
+  </section>`;
+}
+
+// ---------- Uppföljning (scripts/hastar-auto.mjs) ----------
+const FOLLOW_NAMES = { standard: "Standard", utdelning: "Utdelning", skrall3: "Skrällsystem (≥ 3 skrällar/rad)" };
+function followBlock(u) {
+  const games = u?.games || 0;
+  const head = `<h3>Uppföljning på riktigt <small>${games} omgångar${u?.from ? ` sedan ${esc(u.from)}` : ""}</small></h3>`;
+  if (!games)
+    return `<section class="hs-bt hs-follow" aria-label="Uppföljning">${head}<p class="hs-lead">Inga rättade omgångar än. Datorn hämtar dagens V-spel automatiskt kl. 10 och 2 h, 45 min och 15 min före start, och rättar efteråt.</p></section>`;
+  const budgets = [...new Set(Object.values(u.summary).flatMap((x) => Object.keys(x)))].sort((a, b) => a - b);
+  const row = (name, b) => {
+    const t = u.summary[name]?.[b];
+    if (!t) return "";
+    return `<tr><td>${esc(FOLLOW_NAMES[name] || name)}</td><td class="num">${b} kr</td><td class="num">${t.games}</td><td class="num">${kr(t.cost)}</td><td class="num">${kr(t.win)}</td>
+      <td class="num ${t.roi > 0 ? "is-plus" : ""}">${t.roi == null ? "—" : `${t.roi > 0 ? "+" : ""}${pct(t.roi)}`}</td><td class="num">${t.hitGames}</td><td class="num">${t.allRight}</td><td class="num">${t.biggest ? kr(t.biggest.win) : "—"}</td></tr>`;
+  };
+  const best = Object.keys(FOLLOW_NAMES).map((n) => [n, u.summary[n]?.[500]]).filter(([, t]) => t).sort((x, y) => (y[1].roi ?? -9) - (x[1].roi ?? -9))[0];
+  return `<section class="hs-bt hs-follow" aria-label="Uppföljning">${head}
+    <p class="hs-kort-inline"><b>Kort sagt:</b> systemen byggs automatiskt på strecket från sista hämtningen före start och rättas mot ATG:s utdelning – alltså som om du hade spelat dem. ${best ? `Bäst hittills på 500 kr: <b>${esc(FOLLOW_NAMES[best[0]])}</b> (${best[1].roi > 0 ? "+" : ""}${pct(best[1].roi)}).` : ""} ${games < 20 ? "För få omgångar för att dra slutsatser – en enda storvinst avgör." : ""}</p>
+    <div class="hs-table-wrap"><table class="hs-table hs-bt-table"><thead><tr><th scope="col">System</th><th scope="col">Budget</th><th scope="col">Omg</th><th scope="col">Insats</th><th scope="col">Vinst</th><th scope="col">ROI</th><th scope="col">Omg m vinst</th><th scope="col">Alla rätt</th><th scope="col">Största</th></tr></thead>
+    <tbody>${budgets.flatMap((b) => Object.keys(FOLLOW_NAMES).map((n) => row(n, b))).join("")}</tbody></table></div>
   </section>`;
 }
 
@@ -470,7 +522,7 @@ function render() {
   view.innerHTML = `${head}${kortSagt(a)}${help()}${a.type === "dd" ? "" : highlights(a)}${systemBuilder(a)}
     <nav class="hs-jump" aria-label="Avdelningar">${a.races.map((r) => `<a href="#hs-avd-${r.leg}">Avd ${r.leg}</a>`).join("")}${a.dd ? `<a href="#hs-dd">DD</a>` : ""}</nav>
     <section class="hs-races">${a.races.map((r) => race(r, a)).join("")}</section>
-    <div id="hs-dd">${ddBlock(a)}</div>${backtestBlock(state.backtest)}${methodBlock(a)}`;
+    <div id="hs-dd">${ddBlock(a)}</div>${followBlock(state.uppfoljning)}${backtestBlock(state.backtest)}${methodBlock(a)}`;
 }
 
 // ---------- Händelser ----------
@@ -511,7 +563,15 @@ view.addEventListener("click", (ev) => {
     return render();
   }
   if (t.dataset.mode) {
-    sys.mode = t.dataset.mode;
+    if (t.dataset.mode === "skrall3") {
+      // Förval: reducerat, utgång 16 ×, minst 3 skrällar per rad (se docs/lardomar/anteckningar/V85.md 2026-10-04)
+      sys.mode = "reducerat";
+      sys.expand = 16;
+      sys.conds = { ...sys.conds, minSkrall: "3" };
+    } else {
+      sys.mode = t.dataset.mode;
+      if (t.dataset.mode === "reducerat" && isSkrall3()) sys.conds = { ...sys.conds, minSkrall: "" };
+    }
     return render();
   }
 });

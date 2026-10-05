@@ -26,9 +26,12 @@
 //    säsongsfilerna (node scripts/hastar-lar.mjs). Marknaden är strecket när det finns – slutodds syns inte när
 //    V-spelet stänger. Rullande test (tränat före varje månad) avgör om vikterna skrivs. Formeln ovan är reserv.
 // 4. Spelvärde = modellens chans / streck. Värde om kvoten ≥ 1,15 och chansen ≥ 3 %.
+// 5. Hästpoäng 0–100 (horseScore): modellens chans på log-skala, 0,5 % = 0 och 60 % = 100. Samma skala i alla lopp.
+//    Kontroll 2024 (43 124 hästar, utanför inlärningen): 90+ vann 49 %, 80–89 29 %, 70–79 17 %, 60–69 11 %, 50–59 7 %,
+//    40–49 5 %, 30–39 3 %, under 10 0,4 % – i nivå med chansen. Delpoängen (groupScores) är jämförelser inom loppet.
 // Vikterna är startvärden och ska bara ändras efter backtest (data/hastar/backtest.json), aldrig efter enstaka omgångar.
 
-import { learnedProbs, driverIndex, shoeChange } from "./trav-features.mjs";
+import { learnedProbs, driverIndex, shoeChange, raceRow, groupScores } from "./trav-features.mjs";
 import { LEARNED } from "./trav-weights.mjs";
 
 export const BASE_WEIGHTS = { form: 0.18, fart: 0.15, kusk: 0.12, tranare: 0.06, klass: 0.1, spar: 0.12, galopp: -0.1, tillagg: -0.08 };
@@ -98,6 +101,67 @@ export function normRecord(r) {
   };
 }
 
+/**
+ * Strecket och vinnaroddsen just nu (ATG:s spel-svar), för att kunna jämföra förmiddag mot spelstopp (sena pengar).
+ * { at, turnover, races: { <lopp-id>: { <nr>: [streck 0–1, vinnarodds] } } }. Strukna hästar tas inte med.
+ */
+export function streckSnapshot(game, at = new Date().toISOString()) {
+  const type = game?.type || String(game?.id || "").split("_")[0];
+  const races = {};
+  for (const r of game?.races || []) {
+    const row = {};
+    for (const st of r.starts || []) {
+      if (st.scratched) continue;
+      const d = st.pools?.[type]?.betDistribution;
+      const o = st.pools?.vinnare?.odds;
+      row[st.number] = [d != null ? d / 10000 : null, o ? o / 100 : null];
+    }
+    races[r.id] = row;
+  }
+  return { at, turnover: game?.pools?.[type]?.turnover != null ? game.pools[type].turnover / 100 : null, races };
+}
+
+/** Loppets resultat för en start: placering, km-tid, slutodds, prispengar (galopp/diskning om ATG anger det). */
+export function resultOf(res) {
+  if (!res) return null;
+  return {
+    place: res.place ?? null,
+    finishOrder: res.finishOrder ?? null,
+    km: kmSeconds(res.kmTime),
+    finalOdds: res.finalOdds ?? null,
+    prizeMoney: res.prizeMoney ?? null,
+    ...(res.galloped != null ? { galloped: !!res.galloped } : {}),
+    ...(res.disqualified != null ? { disqualified: !!res.disqualified } : {}),
+  };
+}
+
+/** Loppfält som inte fanns i säsongsfilerna före 2026-10-04: banunderlag, segermarginal, propositionstext, loppform. */
+export const raceExtras = (race) => ({
+  condition: race?.track?.condition || null,
+  margin: race?.result?.victoryMargin || null,
+  terms: Array.isArray(race?.terms) ? race.terms.join(" ") : race?.terms || null,
+  sport: race?.sport || null,
+});
+
+/** Avel, hemmabanor, id:n och rekord per startmetod/distans ur ATG:s start (spel-svaret räcker, sedan 2026-10-04). */
+export function startExtras(s) {
+  const h = s?.horse || {};
+  const ped = h.pedigree || {};
+  return {
+    horseId: h.id ?? null,
+    father: ped.father?.name || null,
+    grandfather: ped.grandfather?.name || null, // morfar (ATG:s "grandfather" = moderns far)
+    horseHome: h.homeTrack?.name || null,
+    trainerId: h.trainer?.id ?? null,
+    trainerHome: h.trainer?.homeTrack?.name || null,
+    driverHome: s?.driver?.homeTrack?.name || null,
+    avgOdds5: h.statistics?.lastFiveStarts?.averageOdds ? h.statistics.lastFiveStarts.averageOdds / 100 : null,
+    lifeRecords: (h.statistics?.life?.records || [])
+      .map((r) => ({ method: r.startMethod || null, dist: r.distance || null, km: kmSeconds(r.time), year: r.year ? Number(r.year) : null }))
+      .filter((r) => r.km != null),
+  };
+}
+
 const yearStats = (stats, year) => {
   const y = stats?.years?.[year] || stats?.years?.[year - 1];
   if (!y) return null;
@@ -148,7 +212,8 @@ export function normalizeGame(game, details = {}) {
         sulky: s.horse?.sulky?.reported ? { text: s.horse.sulky.type?.text || null, changed: !!s.horse.sulky.type?.changed } : null,
         odds: s.pools?.vinnare?.odds ? s.pools.vinnare.odds / 100 : res?.finalOdds ?? null,
         streck: dist != null ? dist / 10000 : null,
-        result: res ? { place: res.place ?? null, finishOrder: res.finishOrder ?? null } : null,
+        result: resultOf(res),
+        ...startExtras(s),
         records,
       };
     });
@@ -164,6 +229,7 @@ export function normalizeGame(game, details = {}) {
       winTurnover: race.pools?.vinnare?.turnover != null ? race.pools.vinnare.turnover / 100 : null,
       track: race.track?.name || null,
       status: race.status || null,
+      ...raceExtras(race),
       starts,
     };
   });
@@ -249,6 +315,12 @@ const zScores = (vals) => {
   return vals.map((v) => (v == null || !sd ? 0 : clamp((v - m) / sd, -2.5, 2.5)));
 };
 const toScore = (z) => Math.round(clamp(50 + 20 * z, 0, 100));
+
+export const SCORE_P0 = 0.005;
+export const SCORE_P1 = 0.6;
+/** Hästpoäng 0–100 av vinstchansen (log-skala, 100 = bäst): 0,5 % → 0, 4 % → 43, 25 % → 82, 60 % → 100. */
+export const horseScore = (p) =>
+  p == null || !Number.isFinite(p) ? null : Math.round(clamp((100 * Math.log(Math.max(p, 1e-9) / SCORE_P0)) / Math.log(SCORE_P1 / SCORE_P0), 0, 100));
 
 // ---------- Tempo / position (uppskattning, ATG:s öppna data har inga positioner i loppet) ----------
 
@@ -414,6 +486,15 @@ export function analyzeRace(race, posts = {}, opts = {}) {
   });
   const tp = tempo(race, horses);
   for (const h of live) h.scores.tempo = h.tempoScore;
+  // Hästpoäng: total av chansen, delpoäng per område (jämfört med fältet)
+  const row = raceRow(race, { posts, driverForm: opts.driverForm });
+  const gs = row ? groupScores(row) : null;
+  const at = row ? Object.fromEntries(row.nrs.map((nr, i) => [nr, i])) : {};
+  for (const h of live) {
+    const i = at[h.nr];
+    h.poang = { total: horseScore(h.p), tempo: h.tempoScore };
+    if (gs && i != null) for (const g of Object.keys(gs)) h.poang[g] = gs[g][i];
+  }
   const top = Math.max(...live.map((h) => h.p));
   for (const h of live) {
     h.rank = rankOf(h.p, h.p === top);

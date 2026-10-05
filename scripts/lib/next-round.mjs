@@ -57,9 +57,11 @@ export function filterNextRoundOnly(list, nextByLeague) {
   // Ligor utan spelschema (t.ex. Superettan, bara odds): tidigaste datum bland ligans tips
   const earliest = new Map();
   for (const t of list) {
-    if (t.league && t.date && (!earliest.has(t.league) || t.date < earliest.get(t.league))) earliest.set(t.league, t.date);
+    if (!t.postponed && t.league && t.date && (!earliest.has(t.league) || t.date < earliest.get(t.league))) earliest.set(t.league, t.date);
   }
   return list.filter((t) => {
+    // Uppskjuten utan nytt datum: visas alltid (märkt), annars försvinner den tyst (lib/postponed.mjs)
+    if (t.postponed) return true;
     const nr = nextRound.get(t.league) ?? (earliest.has(t.league) ? { type: "date", value: earliest.get(t.league) } : null);
     if (!nr) return false;
     if (nr.type === "round") return String(t.round || "") === nr.value;

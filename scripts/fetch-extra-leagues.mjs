@@ -2,12 +2,16 @@
 //  - history "fd-new": football-data.co.uk/new/<fdNew>.csv -> data/raw/<LIGA>_all.csv  (BR, AS)
 //  - history "espn":   ESPN-resultat innevarande + foregaende sasong -> data/raw/ESPN_<LIGA>.json (BR2, cachad)
 //  - alla med "espn":  kommande matcher 21 dagar -> mergas in i data/upcoming-fixtures.json
+//  - uppskjutna matcher (ESPN/FotMob, senaste 7 dagarna) utan nytt datum behalls med postponed: true (lib/postponed.mjs)
 // Lagnamn oversatts till historikens namn (football-data) sa att modellen kanner igen lagen.
 // Kors av Fetch-OpenSources.ps1 efter att openfootball skrivit upcoming-fixtures.json. Manuellt: npm run leagues
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { TEAM_ALIASES } from './weather/teams.mjs';
+import { uniqueBest } from './lib/team-match.mjs';
+import { teamId } from './lib/team-ids.mjs';
+import { POSTPONE_LOOKBACK_DAYS, mergePostponed, postponedState, withinLookback } from './lib/postponed.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const REG = JSON.parse(fs.readFileSync(path.join(root, 'config', 'leagues.json'), 'utf8'));
@@ -27,9 +31,14 @@ const ALIASES = {
     'Vasco da Gama': 'Vasco', 'Sport': 'Sport Recife', 'Ceará': 'Ceara', 'Criciúma': 'Criciuma', 'Cuiabá': 'Cuiaba',
     'Vitória': 'Vitoria', 'Chapecoense': 'Chapecoense-SC',
   },
+  AR: {
+    'Argentinos Juniors': 'Argentinos Jrs', 'Estudiantes de La Plata': 'Estudiantes L.P.', 'Gimnasia La Plata': 'Gimnasia L.P.',
+    'Independiente Rivadavia': 'Ind. Rivadavia',
+  },
   NO: { 'Hamarkameratene': 'HamKam' },
-  DK: { 'AGF': 'Aarhus' },
-  MLS: { 'LAFC': 'Los Angeles FC', 'LA Galaxy': 'Los Angeles Galaxy' },
+  DK: { 'AGF': 'Aarhus', 'F.C. København': 'FC Copenhagen' },
+  PT: { 'Sporting CP': 'Sp Lisbon', 'C.D. Nacional': 'Nacional', 'SC Braga': 'Sp Braga' },
+  MLS: { 'LAFC': 'Los Angeles FC', 'LA Galaxy': 'Los Angeles Galaxy', 'Atlanta United FC': 'Atlanta Utd', 'D.C. United': 'DC United' },
   GR: { 'Olympiacos': 'Olympiakos', 'Levadiakos': 'Levadeiakos' },
   EK: {
     'Legia Warszawa': 'Legia', 'Raków Częstochowa': 'Rakow', 'Rakow Czestochowa': 'Rakow',
@@ -64,21 +73,20 @@ const ymd = (d) => d.toISOString().slice(0, 10).replaceAll('-', '');
 const norm = (s) => String(s).replace(/æ/gi, 'ae').replace(/ø/gi, 'o').replace(/å/gi, 'a').replace(/ß/g, 'ss')
   .normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
 
-/** Historikens lagnamn: liga-alias, globala alias (TEAM_ALIASES), exakt, annars bast ordlikhet (>= 0.5). */
+// Ordtraff: lika, eller prefix nar det kortare ordet har minst 3 tecken ("la" ~ "Lanus" och "c" ~ "Columbus" raknas inte)
+const wordHit = (w, v) => w === v || (Math.min(w.length, v.length) >= 3 && (v.startsWith(w) || w.startsWith(v)));
+
+/** Historikens lagnamn: liga-alias, globala alias (TEAM_ALIASES), exakt, annars bast ordlikhet (>= 0.5, ej delad etta). */
 function mapName(league, espnName, known) {
   if (!known.size) return espnName;
   const alias = ALIASES[league]?.[espnName] ?? TEAM_ALIASES[espnName];
   if (alias && known.has(alias)) return alias;
   if (known.has(espnName)) return espnName;
   const b = norm(espnName).split(' ');
-  let best = null;
-  let bestScore = 0;
-  for (const t of known) {
+  return uniqueBest(espnName, known, (_, t) => {
     const a = norm(t).split(' ');
-    const score = a.filter((w) => b.some((v) => v.startsWith(w) || w.startsWith(v))).length / a.length;
-    if (score > bestScore) { bestScore = score; best = t; }
-  }
-  return bestScore >= 0.5 ? best : null;
+    return a.filter((w) => b.some((v) => wordHit(w, v))).length / a.length;
+  });
 }
 
 /** ESPN:s fas-slug -> svensk etikett ("league-phase" -> "Ligaspel"). */
@@ -100,6 +108,7 @@ function parseEvent(ev) {
   const stat = (c, name) => Number(c?.statistics?.find((s) => s.name === name)?.displayValue) || null;
   return {
     id: ev.id, date: ev.date.slice(0, 10), kickoffUtc: ev.date, completed: !!ev.status?.type?.completed,
+    statusName: ev.status?.type?.name || null, started: ev.status?.type?.state === 'in',
     home: h?.team?.displayName, away: a?.team?.displayName, hg: Number(h?.score), ag: Number(a?.score),
     shotsHome: stat(h, 'totalShots'), shotsAway: stat(a, 'totalShots'), sotHome: stat(h, 'shotsOnTarget'), sotAway: stat(a, 'shotsOnTarget'),
     round: ev.week?.number ? `Omg ${ev.week.number}` : roundLabel(ev.season?.slug),
@@ -292,6 +301,7 @@ async function tsdbLeague(code, lg, r) {
 
 // ---------- Kommande matcher (ESPN, dag for dag) ----------
 const newFixtures = [...tsdbFixtures];
+const postponedFixtures = []; // uppskjutna utan nytt datum, mergas in sist (mergePostponed)
 for (const f of tsdbFixtures) report.leagues[f.league].upcoming = (report.leagues[f.league].upcoming ?? 0) + 1;
 for (const code of new Set(tsdbFixtures.map((f) => f.league))) console.log(`  ${code} ${REG.leagues[code].name}: ${report.leagues[code].upcoming} kommande, historik ${report.leagues[code].historyMatches}`);
 
@@ -304,21 +314,31 @@ async function fotmobUpcoming(code, lg, r) {
   const unmapped = new Set();
   let n = 0;
   for (const m of d.fixtures?.allMatches ?? []) {
-    if (m.status?.finished || m.status?.cancelled) continue;
+    if (m.status?.finished) continue;
     const date = (m.status?.utcTime || '').slice(0, 10);
-    if (!date || date < today || date > horizon) continue;
+    const pp = postponedState({ started: m.status?.started, cancelled: m.status?.cancelled, reason: m.status?.reason?.long || m.status?.reason?.short, kickoffUtc: m.status?.utcTime });
+    if (pp === 'cancelled') continue;
+    const isPp = pp === 'postponed' && withinLookback(m.status?.utcTime);
+    if (!date || date > horizon || (date < today && !isPp)) continue;
     const home = mapName(code, m.home?.name, known) ?? (known.size ? null : m.home?.name);
     const away = mapName(code, m.away?.name, known) ?? (known.size ? null : m.away?.name);
     if (!home) unmapped.add(m.home?.name);
     if (!away) unmapped.add(m.away?.name);
     if (!home || !away) continue;
-    newFixtures.push({
-      date, league: code, home, away, source: 'fotmob',
+    if (home === away) { unmapped.add(`${home} (båda lagen)`); continue; }
+    // FotMob anger lagets ID: avviker det fran registret ar namnmatchningen fel
+    const homeId = teamId(code, home), awayId = teamId(code, away);
+    const idFel = (id, fm) => id != null && fm != null && Number(fm) !== id;
+    if (idFel(homeId, m.home?.id)) { unmapped.add(`${m.home?.name} (blev ${home}, fel ID)`); continue; }
+    if (idFel(awayId, m.away?.id)) { unmapped.add(`${m.away?.name} (blev ${away}, fel ID)`); continue; }
+    const fx = {
+      date, league: code, home, away, homeId, awayId, source: 'fotmob',
       kickoffUtc: m.status?.utcTime || null,
       round: m.round ? `Omg ${m.round}` : null,
       fotmobMatchId: m.id ? String(m.id) : null,
-    });
-    n++;
+    };
+    if (isPp) postponedFixtures.push(fx);
+    else { newFixtures.push(fx); n++; }
   }
   r.upcoming = n;
   if (unmapped.size) r.unmapped = [...unmapped];
@@ -335,7 +355,8 @@ for (const [code, lg] of Object.entries(REG.leagues)) {
   }
 }
 
-const days = Array.from({ length: HORIZON_DAYS + 1 }, (_, i) => ymd(new Date(Date.now() + i * 86_400_000)));
+// Bakåt POSTPONE_LOOKBACK_DAYS dagar: uppskjutna matcher som ännu saknar nytt datum
+const days = Array.from({ length: HORIZON_DAYS + POSTPONE_LOOKBACK_DAYS + 1 }, (_, i) => ymd(new Date(Date.now() + (i - POSTPONE_LOOKBACK_DAYS) * 86_400_000)));
 for (const [code, lg] of Object.entries(REG.leagues)) {
   if (!lg.espn) continue;
   const r = report.leagues[code];
@@ -345,15 +366,23 @@ for (const [code, lg] of Object.entries(REG.leagues)) {
     let d;
     try { d = await get(`${ESPN}/${lg.espn}/scoreboard?dates=${day}`); } catch { continue; }
     for (const ev of (d.events ?? []).map(parseEvent)) {
-      if (ev.completed || ev.date < new Date().toISOString().slice(0, 10)) continue;
+      if (ev.completed) continue;
+      const pp = postponedState(ev);
+      if (pp === 'cancelled') continue;
+      const isPp = pp === 'postponed' && withinLookback(ev.kickoffUtc);
+      if (ev.date < new Date().toISOString().slice(0, 10) && !isPp) continue;
       const known = teamNames[code] ?? new Set();
       const home = mapName(code, ev.home, known);
       const away = mapName(code, ev.away, known);
       if (!home) unmapped.add(ev.home);
       if (!away) unmapped.add(ev.away);
       if (!home || !away) continue;
-      newFixtures.push({ date: ev.date, league: code, home, away, source: 'espn', kickoffUtc: ev.kickoffUtc, round: ev.round, espnEventId: ev.id });
-      n++;
+      if (home === away) { unmapped.add(`${home} (båda lagen)`); continue; }
+      const homeId = teamId(code, home), awayId = teamId(code, away);
+      if (homeId != null && homeId === awayId) { unmapped.add(`${home} (samma ID)`); continue; }
+      const fx = { date: ev.date, league: code, home, away, homeId, awayId, source: 'espn', kickoffUtc: ev.kickoffUtc, round: ev.round, espnEventId: ev.id };
+      if (isPp) postponedFixtures.push(fx);
+      else { newFixtures.push(fx); n++; }
     }
     await sleep(120);
   }
@@ -378,7 +407,7 @@ const kept = all.filter((f) => !codes.has(f.league)).map((f) => {
 });
 if (renamed) console.log(`  Oversatte lagnamn i ${renamed} openfootball-matcher till historikens namn`);
 const seen = new Set();
-const merged = [...kept, ...newFixtures].filter((f) => {
+const merged = mergePostponed([...kept, ...newFixtures], postponedFixtures).filter((f) => {
   const k = `${f.league}|${f.date}|${f.home}|${f.away}`;
   if (seen.has(k)) return false;
   seen.add(k);
@@ -386,4 +415,5 @@ const merged = [...kept, ...newFixtures].filter((f) => {
 });
 fs.writeFileSync(FIXTURES, JSON.stringify(merged, null, 2), 'utf8');
 fs.writeFileSync(REPORT, JSON.stringify(report, null, 2), 'utf8');
-console.log(`Extra ligor: ${newFixtures.length} kommande matcher -> upcoming-fixtures.json`);
+const ppKept = merged.filter((f) => f.postponed);
+console.log(`Extra ligor: ${newFixtures.length} kommande matcher -> upcoming-fixtures.json${ppKept.length ? ` (uppskjutna utan nytt datum: ${ppKept.map((f) => `${f.league} ${f.home}-${f.away} ${f.date}`).join(', ')})` : ''}`);

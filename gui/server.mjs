@@ -174,6 +174,8 @@ function serveStatic(req, res) {
 function isFinished(tip, now = new Date()) {
   const status = String(tip.matchStatus || "");
   if (/FULL_TIME|FINAL|STATUS_FINAL|STATUS_FULL_TIME/i.test(status)) return true;
+  // Uppskjuten utan nytt datum: ligger kvar (märkt) tills nytt datum finns (scripts/lib/postponed.mjs)
+  if (tip.postponed) return false;
 
   if (tip.kickoffUtc) {
     const kick = new Date(tip.kickoffUtc);

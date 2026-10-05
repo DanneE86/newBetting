@@ -1,9 +1,9 @@
 {
-    "updatedAt":  "2026-10-04T11:45:05.8921712+02:00",
-    "addedThisRun":  0,
+    "updatedAt":  "2026-10-04T14:44:39.7483658+02:00",
+    "addedThisRun":  4,
     "settledThisRun":  0,
-    "entryCount":  316,
-    "openCount":  298,
+    "entryCount":  320,
+    "openCount":  302,
     "settledCount":  18,
     "liveHitRates":  {
                          "1X2":  {
@@ -17326,6 +17326,247 @@
                                          ],
                         "availabilityNotes":  null,
                         "createdAt":  "2026-10-04T11:30:13.0277715+02:00",
+                        "settled":  false,
+                        "actual":  null,
+                        "hit":  null
+                    },
+                    {
+                        "id":  "2026-10-10|MLS|Inter Miami vs DC United",
+                        "date":  "2026-10-10",
+                        "league":  "MLS",
+                        "match":  "Inter Miami vs DC United",
+                        "home":  "Inter Miami",
+                        "away":  "DC United",
+                        "tipScore":  0.598,
+                        "tips":  {
+                                     "OU25":  {
+                                                  "confidence":  0.602,
+                                                  "usedPlayerAttack":  false,
+                                                  "expGoals":  3.33,
+                                                  "pOver":  0.602,
+                                                  "usedXg":  false,
+                                                  "pick":  "OVER 2.5"
+                                              },
+                                     "1X2":  {
+                                                 "pick":  "1",
+                                                 "confidence":  0.709,
+                                                 "probs":  {
+                                                               "home":  0.709,
+                                                               "draw":  0.159,
+                                                               "away":  0.132
+                                                           }
+                                             },
+                                     "BTTS":  {
+                                                  "pick":  "JA",
+                                                  "confidence":  0.664,
+                                                  "pYes":  0.664
+                                              },
+                                     "CARDS":  {
+                                                   "line":  4.5,
+                                                   "pick":  "UNDER 4.5",
+                                                   "pOver":  {
+                                                                 "3.5":  0.614,
+                                                                 "4.5":  0.42,
+                                                                 "5.5":  0.255
+                                                             },
+                                                   "confidence":  0.58,
+                                                   "expCards":  4.25,
+                                                   "lambdaHome":  2.11,
+                                                   "lambdaAway":  2.14,
+                                                   "leagueAvg":  3.95,
+                                                   "dataTo":  "2026-10-02",
+                                                   "referee":  null,
+                                                   "dispersion":  null,
+                                                   "pBoth":  0.816
+                                               },
+                                     "BOTH_CARDS":  {
+                                                        "pick":  "JA",
+                                                        "pYes":  0.816,
+                                                        "confidence":  0.816
+                                                    }
+                                 },
+                        "value":  null,
+                        "edge":  null,
+                        "oddsTaken":  {
+                                          "home":  1.41,
+                                          "draw":  5.8,
+                                          "away":  8.3,
+                                          "over25":  1.29,
+                                          "under25":  3.45
+                                      },
+                        "bookmaker":  {
+                                          "home":  "LeoVegas (SE)",
+                                          "draw":  "LeoVegas (SE)",
+                                          "away":  "Betsson",
+                                          "over25":  "Betsson",
+                                          "under25":  "Betsson"
+                                      },
+                        "proValueBets":  [
+
+                                         ],
+                        "availabilityNotes":  [
+
+                                              ],
+                        "createdAt":  "2026-10-04T14:44:39.2720485+02:00",
+                        "settled":  false,
+                        "actual":  null,
+                        "hit":  null
+                    },
+                    {
+                        "id":  "2026-10-10|SE3S|Trelleborg vs Kristianstad",
+                        "date":  "2026-10-10",
+                        "league":  "SE3S",
+                        "match":  "Trelleborg vs Kristianstad",
+                        "home":  "Trelleborg",
+                        "away":  "Kristianstad",
+                        "tipScore":  0.597,
+                        "tips":  {
+                                     "OU25":  {
+                                                  "confidence":  0.609,
+                                                  "usedPlayerAttack":  false,
+                                                  "expGoals":  2.98,
+                                                  "pOver":  0.609,
+                                                  "usedXg":  false,
+                                                  "pick":  "OVER 2.5"
+                                              },
+                                     "1X2":  {
+                                                 "pick":  "1",
+                                                 "confidence":  0.524,
+                                                 "probs":  {
+                                                               "away":  0.239,
+                                                               "draw":  0.237,
+                                                               "home":  0.524
+                                                           }
+                                             },
+                                     "BTTS":  {
+                                                  "pick":  "JA",
+                                                  "confidence":  0.658,
+                                                  "pYes":  0.658
+                                              }
+                                 },
+                        "value":  null,
+                        "edge":  null,
+                        "oddsTaken":  null,
+                        "bookmaker":  {
+                                          "home":  null,
+                                          "draw":  null,
+                                          "away":  null,
+                                          "over25":  null,
+                                          "under25":  null
+                                      },
+                        "proValueBets":  [
+
+                                         ],
+                        "availabilityNotes":  [
+
+                                              ],
+                        "createdAt":  "2026-10-04T14:44:39.2720485+02:00",
+                        "settled":  false,
+                        "actual":  null,
+                        "hit":  null
+                    },
+                    {
+                        "id":  "2026-10-10|SE3S|AFC Malmö vs Skövde AIK",
+                        "date":  "2026-10-10",
+                        "league":  "SE3S",
+                        "match":  "AFC Malmö vs Skövde AIK",
+                        "home":  "AFC Malmö",
+                        "away":  "Skövde AIK",
+                        "tipScore":  0.586,
+                        "tips":  {
+                                     "OU25":  {
+                                                  "confidence":  0.614,
+                                                  "usedPlayerAttack":  false,
+                                                  "expGoals":  3.05,
+                                                  "pOver":  0.614,
+                                                  "usedXg":  false,
+                                                  "pick":  "OVER 2.5"
+                                              },
+                                     "1X2":  {
+                                                 "pick":  "1",
+                                                 "confidence":  0.485,
+                                                 "probs":  {
+                                                               "away":  0.274,
+                                                               "draw":  0.241,
+                                                               "home":  0.485
+                                                           }
+                                             },
+                                     "BTTS":  {
+                                                  "pick":  "JA",
+                                                  "confidence":  0.658,
+                                                  "pYes":  0.658
+                                              }
+                                 },
+                        "value":  null,
+                        "edge":  null,
+                        "oddsTaken":  null,
+                        "bookmaker":  {
+                                          "home":  null,
+                                          "draw":  null,
+                                          "away":  null,
+                                          "over25":  null,
+                                          "under25":  null
+                                      },
+                        "proValueBets":  [
+
+                                         ],
+                        "availabilityNotes":  [
+
+                                              ],
+                        "createdAt":  "2026-10-04T14:44:39.2720485+02:00",
+                        "settled":  false,
+                        "actual":  null,
+                        "hit":  null
+                    },
+                    {
+                        "id":  "2026-10-18|AR|Estudiantes L.P. vs San Lorenzo",
+                        "date":  "2026-10-18",
+                        "league":  "AR",
+                        "match":  "Estudiantes L.P. vs San Lorenzo",
+                        "home":  "Estudiantes L.P.",
+                        "away":  "San Lorenzo",
+                        "tipScore":  0.593,
+                        "tips":  {
+                                     "OU25":  {
+                                                  "confidence":  0.675,
+                                                  "usedPlayerAttack":  false,
+                                                  "expGoals":  1.97,
+                                                  "pOver":  0.325,
+                                                  "usedXg":  false,
+                                                  "pick":  "UNDER 2.5"
+                                              },
+                                     "1X2":  {
+                                                 "pick":  "1",
+                                                 "confidence":  0.547,
+                                                 "probs":  {
+                                                               "home":  0.547,
+                                                               "draw":  0.279,
+                                                               "away":  0.175
+                                                           }
+                                             },
+                                     "BTTS":  {
+                                                  "pick":  "NEJ",
+                                                  "confidence":  0.644,
+                                                  "pYes":  0.356
+                                              }
+                                 },
+                        "value":  null,
+                        "edge":  null,
+                        "oddsTaken":  null,
+                        "bookmaker":  {
+                                          "home":  null,
+                                          "draw":  null,
+                                          "away":  null,
+                                          "over25":  null,
+                                          "under25":  null
+                                      },
+                        "proValueBets":  [
+
+                                         ],
+                        "availabilityNotes":  [
+
+                                              ],
+                        "createdAt":  "2026-10-04T14:44:39.2720485+02:00",
                         "settled":  false,
                         "actual":  null,
                         "hit":  null

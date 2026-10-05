@@ -9,6 +9,7 @@ import path from 'node:path';
 import { buildSignals, h2hFeatures, pairKey, sideState, teamKey } from './lib/learnings-signals.mjs';
 import { root } from './lib/learnings-data.mjs';
 import { nameScore } from './lib/match-context.mjs';
+import { clashesWith, uniqueBest } from './lib/team-match.mjs';
 import { canonTeam } from './lib/team-aliases.mjs';
 
 const DIR = path.join(root, 'data', 'matcher');
@@ -96,9 +97,7 @@ for (const [lg, list] of byLeague) known.set(lg, [...new Set(list.slice(-800).fl
 const mapName = (lg, name) => {
   const names = known.get(lg) ?? [];
   if (names.includes(name)) return name;
-  let best = null;
-  for (const t of names) { const s = nameScore(name, null, t); if (s >= 0.5 && (!best || s > best.s)) best = { s, t }; }
-  return best?.t ?? name;
+  return uniqueBest(name, names, (n, t) => nameScore(n, null, t)) ?? name;
 };
 function liveOdds(f) {
   const e = oddsEvents.find((x) => x.league === f.league && x.commence && Math.abs(Date.parse(x.commence.slice(0, 10)) - Date.parse(f.date)) <= 864e5
@@ -150,9 +149,11 @@ for (const lg of [...leagues].sort()) {
     for (const c of ['pre_first_at', 'pre_first_h', 'pre_first_d', 'pre_first_a']) r[c] = p[c];
     if (!r.pre_last_at) for (const c of PRE.filter((x) => !x.startsWith('pre_first'))) r[c] = p[c];
   }
-  // Kommande rader fran forra korningen som varken spelats eller finns i schemat (flyttade matcher) behalls
+  // Kommande rader fran forra korningen som varken spelats eller finns i schemat (flyttade matcher) behalls,
+  // utom nar ett av lagen redan har en match i schemat inom 2 dagar (raden var da felmappad, t.ex. Boca i stallet for Argentinos)
   const upKeys = new Set(up.map(key));
-  const kept = prev.filter((r) => r.status === 'kommande' && r.date >= today && !played.has(key(r)) && !upKeys.has(key(r)));
+  const kept = prev.filter((r) => r.status === 'kommande' && r.date >= today && !played.has(key(r)) && !upKeys.has(key(r))
+    && !clashesWith(r, up));
   const out = [...rows, ...kept, ...up].sort((a, b) => a.date.localeCompare(b.date) || a.home.localeCompare(b.home));
   if (!out.length) continue;
   fs.writeFileSync(file, `${COLS.join(',')}\n${out.map((r) => COLS.map((c) => cell(r[c])).join(',')).join('\n')}\n`, 'utf8');

@@ -1,7 +1,7 @@
 // Flik "Stryktipset": kupong fran Svenska Spel + analys per match (data fran /api/stryktips).
 // En sida per spel: användaren låser krav (1, X, 2, 1X, X2, 12, 1X2) för kupong A, B eller båda, och resten av
 // kupongerna genereras i webbläsaren (stryk-engine.js).
-import { generateCoupons, kravSigns, VARIANT, canFall, skrallTips } from "/stryk-engine.js";
+import { generateCoupons, kravSigns, VARIANT, canFall, skrallTips, skrallKryss } from "/stryk-engine.js";
 import { startelvaButton, startelvaPanel } from "/startelva.js";
 
 // Startelvan per match (gui/public/startelva.js), samma nyckel som scripts/lib/startelva.mjs svsKey
@@ -948,25 +948,36 @@ function streckNote(p, st) {
   return `<details class="st-streck ds-notice${st.liveError ? " is-warn" : ""}"${keep("streck")}><summary>${head}</summary><p>${more}</p></details>`;
 }
 
-// Skrällspikar att läsa om (stryk-engine.js skrallTips): två att välja på, överst på sidan, ligger inte i kupongerna.
-// Säger om A–D ändå spikar dem.
+// Skrällspikar och skrällkryss att läsa om (stryk-engine.js skrallTips/skrallKryss): två av varje att välja på, överst
+// på sidan, ligger inte i kupongerna. Kryssen är på andra matcher än spikarna. Säger om A–D ändå spikar dem.
 function skrallTipBox(p, res) {
   const tips = skrallTips(p.events);
-  if (!tips.length) return `<div class="st-skrall ds-notice" role="note"><p class="st-skrall-h">💥 Skrällspikar att läsa om</p><p>Ingen skräll denna omgång: inget tecken utanför favoriten har minst 25 % hos oss och är understreckat av folket.</p></div>`;
-  const pick = (t, n) => {
+  const kryss = skrallKryss(p.events);
+  const pick = (kind) => (t, n) => {
     const inC = ["A", "B", "C", "D"].filter((k) => res?.[k]?.picks?.[t.i]?.signs === t.sign);
     const facit = t.hit == null ? "" : ` <span class="st-chip ${t.hit ? "good" : "bad"}">${t.hit ? "Gick in" : "Gick inte in"}${t.score ? ` · ${esc(t.score)}` : ""}</span>`;
     const label = n === 0 ? "Förstaval" : t.weak ? "Reserv (svagare)" : "Andraval";
+    const weakTxt = kind === "x" ? "Klarar inte hela kravet (minst 26 % och 2 procentenheter över folket) men är det bästa krysset som finns kvar." : "Klarar inte hela skrällkravet (minst 30 % och 3 procentenheter över folket) men är den bästa som finns kvar.";
+    const what = kind === "x" ? ["Omgångens bästa skrällkryss.", "Näst bästa krysset, på en annan match."] : ["Omgångens bästa skräll.", "Näst bästa skrällen, på en annan match."];
     return `<div class="st-skrall-item">
       <p class="st-skrall-pick"><small class="st-skrall-rank">${label}</small><br><span class="st-num">${t.eventNumber}</span> <b>${esc(t.home)} – ${esc(t.away)}</b>: spika <b class="st-skrall-sign">${esc(t.sign)}</b> (${esc(t.outcome)})${facit}<br><small>${esc(kickoff(t.kickoff))} · ${esc(t.league || "")} · vår chans ${pct(t.p)}, folket ${pct(t.folk)}</small></p>
-      <p>${t.weak ? "Klarar inte hela skrällkravet (minst 30 % och 3 procentenheter över folket) men är den bästa som finns kvar." : n === 0 ? "Omgångens bästa skräll." : "Näst bästa skrällen, på en annan match."}${inC.length ? ` Kupong ${inC.join(" och ")} spikar redan ${esc(t.sign)} här.` : " Kupongerna spikar den inte – lägg den som krav själv om du vill."}</p>
-      <details class="sb-howto"${keep(`skrall-why-${n}`)}><summary>Varför?</summary><ul>${t.reasons.map((r) => `<li>${esc(r)}</li>`).join("")}</ul></details>
+      <p>${t.weak ? weakTxt : what[n === 0 ? 0 : 1]}${inC.length ? ` Kupong ${inC.join(" och ")} spikar redan ${esc(t.sign)} här.` : " Kupongerna spikar den inte – lägg den som krav själv om du vill."}</p>
+      <details class="sb-howto"${keep(`skrall-${kind}-why-${n}`)}><summary>Varför?</summary><ul>${t.reasons.map((r) => `<li>${esc(r)}</li>`).join("")}</ul></details>
     </div>`;
   };
-  return `<div class="st-skrall ds-notice" role="note">
-    <p class="st-skrall-h">💥 Skrällspikar att läsa om <small>ligger inte i kupongen</small></p>
+  const spikPart = tips.length
+    ? `<p class="st-skrall-h">💥 Skrällspikar att läsa om <small>ligger inte i kupongen</small></p>
     <p><b>Kort sagt:</b> folket tror för lite på de här tecknen. Vill du chansa på en skräll – välj ${tips.length > 1 ? "en av de två" : "den här"}.</p>
-    ${tips.map(pick).join("")}
+    ${tips.map(pick("spik")).join("")}`
+    : `<p class="st-skrall-h">💥 Skrällspikar att läsa om</p><p>Ingen skräll denna omgång: inget tecken utanför favoriten har minst 25 % hos oss och är understreckat av folket.</p>`;
+  const xPart = kryss.length
+    ? `<p class="st-skrall-h">✖️ Skrällkryss att läsa om <small>ligger inte i kupongen</small></p>
+    <p><b>Kort sagt:</b> folket tror för lite på oavgjort i de här matcherna. Vill du chansa på ett kryss – välj ${kryss.length > 1 ? "ett av de två" : "det här"}.</p>
+    ${kryss.map(pick("x")).join("")}`
+    : `<p class="st-skrall-h">✖️ Skrällkryss att läsa om</p><p>Inget skrällkryss denna omgång: inget kryss har minst 22 % hos oss och är understreckat av folket.</p>`;
+  return `<div class="st-skrall ds-notice" role="note">
+    ${spikPart}
+    ${xPart}
   </div>`;
 }
 

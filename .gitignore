@@ -21,3 +21,5 @@ site/
 # Hästar: rådata från ATG (6+ MB per omgång) stannar lokalt, analyser och backtest versioneras
 data/hastar/raw/
 data/hastar/historik/
+data/hastar/auto.lock
+data/hastar/auto-konsol.txt

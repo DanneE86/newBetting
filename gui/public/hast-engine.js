@@ -30,12 +30,16 @@ export const TOP_SHARE = { V85: 0.195, V86: 0.26, V75: 0.26, GS75: 0.285, V64: 0
 export const MIN_TOP = 50000;
 export const TOP_LEVELS = [50000, 250000, 1000000];
 export const SKRALL_MAX = 0.1; // häst med streck under 10 % räknas som skräll i systemvillkoren
-// Standard per spelform (bakkörning V85 2026, 56 omgångar, rullande vikter, 2026-10-03):
-// Värdefokus Normal (alpha 0,5) slog Träff (alpha 0) på alla budgetar 200–2000 kr, även med största vinsten borträknad.
-export const DEFAULT_ALPHA = { V85: 0.5 };
-// Bekräftat på V85 2025 (18 omgångar, inte med i valet): Normal bättre på alla 5 budgetar. V75 2025 (59 omg), V86 och
-// GS75: alpha 0,5 gav inget säkert lyft – där gäller Träff. Testat och avvisat: spikspärr (spik bara vid
-// streck ≥ 50/60 %) – färre spikar föll, men de extra hästarna kostade mer än de gav på 4 av 5 budgetar.
+// Standard per spelform (bakkörning 2026-10-04: V75 2021–2025 370 omg + V85 74 omg, riktig utdelning, spärr 50 000 kr):
+// Värdefokus Hög (alpha 1) slog Normal (0,5) i 3 av 4 perioder på 1000 och 2000 kr och 2 av 4 på 200 och 500 kr,
+// ROI utan största vinsten 500/1000/2000 kr −26/−12/−12 % mot −30/−25/−37 %, lika många alla rätt. Den fångar fler
+// vinnare under 10 % streck (17–28 % mot 14–26 %). V75 följer med eftersom V75 ersätter V85 från 2026-11-28.
+// Avvisat samma dag: tvinga in en häst under 10 % i 1–4 avdelningar (grundsystemet har redan oftast 2; 3–4 gav
+// färre alla rätt och sämre ROI), skrällkalibrering (chans × 1,1–1,4 under 10 % streck: modellen tar redan det
+// mesta, ojämnt mellan perioderna). Kvar från tidigare: V85 Normal slog Träff 2026; V86 och GS75 Träff (ej testat nu).
+export const DEFAULT_ALPHA = { V85: 1, V75: 1 };
+// Testat och avvisat 2026-10-03: spikspärr (spik bara vid streck ≥ 50/60 %) – färre spikar föll, men de extra
+// hästarna kostade mer än de gav på 4 av 5 budgetar.
 export const defaultAlpha = (type) => DEFAULT_ALPHA[type] ?? 0;
 
 const clamp = (x, a, b) => Math.max(a, Math.min(b, x));
@@ -69,6 +73,8 @@ const summarize = (legs, sel, price, share) => {
     valueIndex: mkt > 0 ? hit / mkt : null,
     topRow,
     topPayout: rowPayout(topP, price, share),
+    // Avdelningar med minst en häst under SKRALL_MAX streck (en fjärdedel av alla avdelningar vinns av en sådan)
+    skrallLegs: sel.filter((s) => s.some((h) => (h.marketPct ?? 1) < SKRALL_MAX)).length,
   };
 };
 
@@ -363,3 +369,160 @@ export function crc16(text) {
 
 /** Filnamn med checksumma: "V85_2026-10-03_11_5-960-rader-1a2b.xml" */
 export const atgFileName = (base, xml) => `${base}-${crc16(xml)}.xml`;
+
+// ---------- Förväntad utdelning (läget "Utdelning") ----------
+// Varje vinstnivås andel av omsättningen utan jackpott (ATG-data 2023–2026: utdelning × vinnande rader / omsättning,
+// 10:e percentilen = utan inslag av jackpott). Utdelning per rad för k rätt ≈ andel_k · radpris / P_folket(k rätt),
+// där P_folket(k) räknas ur strecken på avdelningarnas vinnare (en rad "har" varje häst med sannolikheten strecket).
+// Under ATG:s lägsta utdelning (TIER_MIN, lägsta som setts) blir nivån jackpott = 0 kr.
+export const TIER_SHARE = {
+  V85: { 8: 0.194, 7: 0.097, 6: 0.094, 5: 0.204 },
+  V86: { 8: 0.256, 7: 0.128, 6: 0.253 },
+  V75: { 7: 0.257, 6: 0.128, 5: 0.252 },
+  GS75: { 7: 0.276, 6: 0.116, 5: 0.234 },
+  V64: { 6: 0.335, 5: 0.078, 4: 0.156 },
+  V65: { 6: 0.351, 5: 0.228 },
+};
+export const TIER_MIN = { V85: 5, V86: 15, V75: 15, GS75: 15, V64: 7, V65: 3 };
+
+/** Enkel deterministisk slump (mulberry32), så att samma omgång alltid ger samma siffror. */
+function rng(seed) {
+  let a = seed >>> 0;
+  return () => {
+    a = (a + 0x6d2b79f5) >>> 0;
+    let t = a;
+    t = Math.imul(t ^ (t >>> 15), t | 1);
+    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+/**
+ * Simulerade utfall: sims × avdelningar, vinnarens nr och streck, samt utdelning per rad för varje vinstnivå.
+ * legs som i buildSystem. Vinnare dras ur modellens chans p. Högsta nivån (alla rätt) räknas exakt i expectedReturn
+ * (outcomes.exact), eftersom simuleringen där domineras av ett fåtal miljonrader: E = andel · radpris · Π Σ chans/streck.
+ */
+export function simulateOutcomes(legs, { type = "V85", price = 0.5, sims = 2000, seed = 1 } = {}) {
+  const shares = TIER_SHARE[type] || { [legs.length]: TOP_SHARE[type] ?? 0.25 };
+  const minPay = TIER_MIN[type] ?? 0;
+  const pools = legs.map((l) => {
+    const hs = playable(l);
+    const tot = hs.reduce((a, h) => a + h.p, 0) || 1;
+    let c = 0;
+    return hs.map((h) => ({ nr: h.nr, s: Math.max(1e-4, h.marketPct || 1e-4), cum: (c += h.p / tot) }));
+  });
+  const rand = rng(seed);
+  const out = [];
+  for (let k = 0; k < sims; k++) {
+    const win = [];
+    let pop = [1];
+    for (const pl of pools) {
+      const u = rand();
+      const h = pl.find((x) => u <= x.cum) || pl[pl.length - 1];
+      win.push(h.nr);
+      const next = new Array(pop.length + 1).fill(0);
+      pop.forEach((c, j) => {
+        next[j] += c * (1 - h.s);
+        next[j + 1] += c * h.s;
+      });
+      pop = next;
+    }
+    const pay = {};
+    for (const [t, sh] of Object.entries(shares)) {
+      const kr = pop[Number(t)] > 0 ? (sh * price) / pop[Number(t)] : 0;
+      pay[t] = kr >= minPay ? kr : 0;
+    }
+    out.push({ win, pay });
+  }
+  const top = String(legs.length);
+  if (shares[top] != null)
+    out.exact = {
+      tier: top,
+      share: shares[top],
+      ratio: pools.map((pl, i) => {
+        const tot = playable(legs[i]).reduce((a, h) => a + h.p, 0) || 1;
+        return new Map(playable(legs[i]).map((h) => [h.nr, h.p / tot / Math.max(1e-4, h.marketPct || 1e-4)]));
+      }),
+    };
+  return out;
+}
+
+/**
+ * Förväntad utdelning för ett rakt system (sysLegs: [[nr, ...] per avdelning]) över simulerade utfall.
+ * Returnerar { ev (kr), roi (ev / insats − 1), hit (andel utfall med vinst), byTier: { k: kr } }.
+ */
+export function expectedReturn(sysLegs, outcomes, price = 0.5) {
+  const rows = sysLegs.reduce((a, s) => a * s.length, 1);
+  const sets = sysLegs.map((s) => new Set(s));
+  let ev = 0;
+  let hits = 0;
+  const byTier = {};
+  for (const o of outcomes) {
+    let poly = [1];
+    o.win.forEach((nr, i) => {
+      const right = sets[i].has(nr) ? 1 : 0;
+      const wrong = sets[i].size - right;
+      const next = new Array(poly.length + 1).fill(0);
+      poly.forEach((c, k) => {
+        next[k] += c * wrong;
+        next[k + 1] += c * right;
+      });
+      poly = next;
+    });
+    let w = 0;
+    for (const [t, kr] of Object.entries(o.pay)) {
+      if (outcomes.exact && t === outcomes.exact.tier) continue;
+      const v = (poly[Number(t)] || 0) * kr;
+      w += v;
+      byTier[t] = (byTier[t] || 0) + v / outcomes.length;
+    }
+    ev += w;
+    if (w > 0) hits++;
+  }
+  ev /= outcomes.length;
+  if (outcomes.exact) {
+    const x = outcomes.exact;
+    const top = x.share * price * sysLegs.reduce((a, s, i) => a * s.reduce((b, nr) => b + (x.ratio[i].get(nr) || 0), 0), 1);
+    byTier[x.tier] = top;
+    ev += top;
+  }
+  const cost = rows * price;
+  return { ev, roi: cost > 0 ? ev / cost - 1 : null, hit: hits / outcomes.length, byTier };
+}
+
+// Kandidater i läget "Utdelning": värdefokus × högsta rad-nivå
+export const EV_ALPHAS = [0, 0.5, 1, 1.5, 2, 3];
+
+/**
+ * Läget "Utdelning": bygger raka system med olika värdefokus och högsta rad-nivåer (alla minst minTop) och väljer
+ * det med högst förväntad utdelning enligt modellen. Returnerar buildSystem-svaret + { ev, evRoi, evHit, alpha, candidates }.
+ */
+export function buildValueSystem(legs, { budget, price = 0.5, minTop = MIN_TOP, topShare = 0.25, type = "V85", sims = 2000, seed = 1, locked = {} } = {}) {
+  const outcomes = simulateOutcomes(legs, { type, price, sims, seed });
+  const tops = [...new Set([minTop, ...TOP_LEVELS.filter((t) => t > minTop)])];
+  const candidates = [];
+  const seen = new Set();
+  for (const alpha of EV_ALPHAS)
+    for (const top of tops) {
+      const s = buildSystem(legs, { budget, price, alpha, minTop: top, topShare, locked });
+      if (minTop && !s.topOk) continue;
+      const key = s.legs.map((l) => [...l.horses].sort((a, b) => a - b).join(",")).join("|");
+      if (seen.has(key)) continue;
+      seen.add(key);
+      const e = expectedReturn(s.legs.map((l) => l.horses), outcomes, price);
+      candidates.push({ alpha, minTop: top, sys: s, ...e });
+    }
+  if (!candidates.length) return { ...buildSystem(legs, { budget, price, alpha: 0, minTop, topShare, locked }), ev: null };
+  // Högst förväntad återbetalning per insatt krona (systemen kostar olika när budgeten inte går jämnt ut)
+  const best = candidates.reduce((m, c) => (c.roi > m.roi ? c : m));
+  return {
+    ...best.sys,
+    ev: best.ev,
+    evRoi: best.roi,
+    evHit: best.hit,
+    evByTier: best.byTier,
+    alpha: best.alpha,
+    chosenTop: best.minTop,
+    candidates: candidates.map((c) => ({ alpha: c.alpha, minTop: c.minTop, rows: c.sys.rows, ev: c.ev, roi: c.roi, hit: c.hit })),
+  };
+}

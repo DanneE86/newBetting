@@ -179,6 +179,28 @@ export function skrallTips(events, n = SKRALL_TIP.count) {
   const used = new Set();
   return cands.filter((c) => !used.has(c.i) && used.add(c.i)).slice(0, n).map((c) => describeSkrall(events[c.i], c));
 }
+// Skrällkryss att läsa om (användaren 2026-10-04: "rekommendera också 2 st skrällkryss, skriv om dem på samma sätt"):
+// X där krysset inte är favorit, minst SKRALL_X.min hos oss och minst SKRALL_X.edge över folket. Andra matcher än
+// skrällspikarna (skrallTips), högst en per match. Störst värde mot folket först, sedan jämnast match (1 och 2 närmast
+// varandra). Räcker de inte: reserver (weak: true) med minst SKRALL_X.weakMin och understreckat. Påverkar inte kupongerna.
+export const SKRALL_X = { min: 0.26, edge: 0.02, count: 2, weakMin: 0.22 };
+export function skrallKryss(events, n = SKRALL_X.count) {
+  const taken = new Set(skrallTips(events).map((t) => t.i));
+  const cands = [];
+  (events || []).forEach((e, i) => {
+    if (!e?.final || !e.folk || e.folk[1] == null || taken.has(i)) return;
+    const p = e.final[1], folk = e.folk[1];
+    if (e.final.indexOf(Math.max(...e.final)) === 1 || p < SKRALL_X.weakMin || p <= folk) return;
+    const weak = p < SKRALL_X.min || p - folk < SKRALL_X.edge;
+    cands.push({ i, k: 1, p, folk, edge: p - folk, weak, gap: Math.abs(e.final[0] - e.final[2]) });
+  });
+  cands.sort((a, b) => a.weak - b.weak || b.edge - a.edge || a.gap - b.gap || b.p - a.p);
+  return cands.slice(0, n).map((c) => {
+    const t = describeSkrall(events[c.i], c);
+    if (c.gap <= 0.15) t.reasons.splice(1, 0, `Jämn match: vi ger 1 ${Math.round(events[c.i].final[0] * 100)} % och 2 ${Math.round(events[c.i].final[2] * 100)} % – ju jämnare, desto oftare blir det kryss.`);
+    return t;
+  });
+}
 function describeSkrall(e, c) {
   const names = [`${e.home} vinner`, "oavgjort", `${e.away} vinner`];
   const fav = e.final.indexOf(Math.max(...e.final));
@@ -256,6 +278,22 @@ export function tiltShare(e, sub, beta) {
   const w = [0, 1, 2].map((k) => e.final[k] * (e.folk?.[k] || e.final[k]) ** -beta);
   return sub.reduce((sum, k) => sum + w[k], 0) / (w[0] + w[1] + w[2]);
 }
+// Kryss i C: bonusen höjs tills någon grundrad täcker X_SHARE_C; går det inte (dina krav) de som täcker mest
+function xCands(events, run) {
+  if (!xShareOn) return run();
+  let best = [], top = -1;
+  for (const lam of X_LAMS) {
+    xLam = lam;
+    try {
+      const c = run().map((x) => ({ x, s: xShareOf(events, x.sets) }));
+      const ok = c.filter((y) => y.s >= X_SHARE_C - 1e-9);
+      if (ok.length) return ok.map((y) => y.x);
+      const m = Math.max(-1, ...c.map((y) => y.s));
+      if (m > top) { top = m; best = c.filter((y) => y.s === m).map((y) => y.x); }
+    } finally { xLam = 0; }
+  }
+  return best;
+}
 function grundCandidates(events, maxRows, forced, avoid = null, spikMin = 0, loose = false) {
   const seen = new Set(), out = [];
   const prev = grundTilt;
@@ -278,22 +316,6 @@ function grundCandidates1(events, maxRows, forced, avoid = null, spikMin = 0, lo
   const top = spikTopOn && !avoid ? events.map((e) => Math.max(...e.final)).sort((x, y) => y - x)[SPIK_TOP - 1] ?? 0 : 0;
   const canSpik0 = (e, k) => spikOk(e, k, spikMin) || (loose && k === fav(e) && e.final[1] < spikXMax && e.final[k] >= top);
   // Kryss-tak för favoritspik i A och B (X_TILT.spik): spik på 1/2 bara när krysset är under xSpikMax
-// Kryss i C: bonusen höjs tills någon grundrad täcker X_SHARE_C; går det inte (dina krav) de som täcker mest
-function xCands(events, run) {
-  if (!xShareOn) return run();
-  let best = [], top = -1;
-  for (const lam of X_LAMS) {
-    xLam = lam;
-    try {
-      const c = run().map((x) => ({ x, s: xShareOf(events, x.sets) }));
-      const ok = c.filter((y) => y.s >= X_SHARE_C - 1e-9);
-      if (ok.length) return ok.map((y) => y.x);
-      const m = Math.max(-1, ...c.map((y) => y.s));
-      if (m > top) { top = m; best = c.filter((y) => y.s === m).map((y) => y.x); }
-    } finally { xLam = 0; }
-  }
-  return best;
-}
   const canSpik1 = (e, k) => canSpik0(e, k) && (!xTiltOn || k === 1 || e.final[1] < xSpikMax);
   // Ingen spik på överstreckad favorit (OVER_SPIK) i A och C
   const canSpik = (e, k) => canSpik1(e, k) && !(!avoid && overStreck(e, k));
@@ -1145,6 +1167,12 @@ export function generateCoupons(p, krav) {
   const signC = SIGN_MIN_C_BY_PRODUCT[p.product] || SIGN_MIN;
   const c = buildRisk("C", events, fC, { ...base, sys: "C", payoutMin: Math.max(UTD_MIN_C, base.payoutMin) }, BUDGET_C, null,
     { payoutLadder: [1], signLadder: [signC, ...SIGN_LADDER.filter((x) => x.join() !== signC.join() && x.every((v, k) => v <= signC[k]))] }, null, RISK_C);
+  // Andel av omgångens väntade kryss som C täcker (X_SHARE_C)
+  if (c) {
+    const xs = xShareOf(events, c.system.sets);
+    c.reduced = { ...c.reduced, rules: { ...c.reduced.rules, xShare: Math.round(xs * 1000) / 1000, ...(xs < X_SHARE_C ? { xShareShort: true } : {}) } };
+    if (xs < X_SHARE_C) c.relaxed.push(`kryssen täcker ${Math.round(xs * 100)} % av omgångens väntade kryss – ${Math.round(X_SHARE_C * 100)} % gick inte med dina krav`);
+  }
   const C = c && finish(c, "C", fC);
   // Kupong D: fritt system för vinster över 20 000 kr, fritt från A, B och C (bara D:s egna krav)
   const D = buildCouponD(p, events, forcedFor("D"), base);
@@ -1167,12 +1195,6 @@ export const D_RULES = {
   gmin: 3000, // minsta grundrad: D ska vara ett reducerat system
   gmax: 30000, // största grundrad som provas (oreducerat)
   evals: 8000, // antal provade grundrader (ca 2 s; 20 000 gav samma chans, 45,3 mot 45,2 %)
-  // Andel av omgångens väntade kryss som C täcker (X_SHARE_C)
-  if (c) {
-    const xs = xShareOf(events, c.system.sets);
-    c.reduced = { ...c.reduced, rules: { ...c.reduced.rules, xShare: Math.round(xs * 1000) / 1000, ...(xs < X_SHARE_C ? { xShareShort: true } : {}) } };
-    if (xs < X_SHARE_C) c.relaxed.push(`kryssen täcker ${Math.round(xs * 100)} % av omgångens väntade kryss – ${Math.round(X_SHARE_C * 100)} % gick inte med dina krav`);
-  }
 };
 const D_OPTS = [[0], [1], [2], [0, 1], [0, 2], [1, 2], [0, 1, 2]];
 // Reglerna i D: [antal 1, antal X, antal 2, gröna, röda]. Färgerna räknas bara på garderingar (spikar är blå i GC),

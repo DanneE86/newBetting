@@ -1683,7 +1683,8 @@ if (Test-Path $upcomingPath) {
         $u.home = Get-CanonTeam $u.league $u.home; $u.away = Get-CanonTeam $u.league $u.away
         $dt = $null
         try { $dt = [datetime]::Parse($u.date).Date } catch { continue }
-        if ($dt -lt $today) { continue }          # spelade matcher bort
+        $isPostponed = [bool]$u.postponed         # uppskjuten utan nytt datum (scripts/lib/postponed.mjs): visas kvar
+        if ($dt -lt $today -and -not $isPostponed) { continue }          # spelade matcher bort
         if ($dt -gt $horizon) { continue }
         $hk = "$($u.league)|$($u.home)"
         $ak = "$($u.league)|$($u.away)"
@@ -1741,11 +1742,12 @@ if (Test-Path $upcomingPath) {
             }
         }
 
-        $pass = Test-EdgeFilter $sc $bestEdge
+        $pass = (Test-EdgeFilter $sc $bestEdge) -and -not $isPostponed   # uppskjuten: går inte att spela, aldrig bästa tips
         $row = [ordered]@{
             date = $u.date
             kickoffUtc = $kickoffUtc
             matchStatus = $matchStatus
+            postponed = $isPostponed
             league = $u.league
             round = $(if ($u.round) { [string]$u.round } else { $null })
             home = $u.home

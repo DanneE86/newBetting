@@ -1283,6 +1283,8 @@ nav.view-tabs {
 .cand-row > summary:hover { background: var(--color-surface-muted); border-radius: var(--radius-lg); }
 .cand-row > summary:focus-visible { outline: 2px solid var(--focus-ring-color); outline-offset: -2px; border-radius: var(--radius-lg); }
 .cr-time { color: var(--color-text-muted); font-size: var(--font-size-xs); white-space: nowrap; }
+.tip .date.postponed,
+.cr-time.postponed { color: var(--color-warning); font-weight: var(--font-weight-bold); white-space: normal; }
 .cr-match { font-weight: var(--font-weight-bold); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .cr-league { font-size: var(--font-size-xs); color: var(--color-success-strong); letter-spacing: 0.06em; }
 .cr-tip { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }

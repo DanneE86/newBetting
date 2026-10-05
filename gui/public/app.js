@@ -56,6 +56,7 @@ function fmtWhen(iso) {
 
 /** Avspark i svensk tid. Utan känd tid: datum + "tid ej känd" (aldrig bara datum). */
 function fmtKick(tip) {
+  if (tip.postponed) return `Uppskjuten – nytt datum saknas (var ${fmtKick({ ...tip, postponed: false })})`;
   if (tip.kickoffUtc) {
     const d = new Date(tip.kickoffUtc);
     if (!Number.isNaN(d.getTime())) {
@@ -501,7 +502,7 @@ function tipCard(tip, i) {
     <article class="tip${pr?.verdict === "yes" ? " has-value" : ""}${tip.referee?.flagged ? " ref-flagged" : ""}" style="${style}" data-tip-id="${escapeHtml(tipId(tip))}">
       <header class="tip-head">
         <div class="tip-meta">
-          <time class="date">${escapeHtml(fmtKick(tip))}</time>
+          <time class="date${tip.postponed ? " postponed" : ""}">${escapeHtml(fmtKick(tip))}</time>
           <div class="tip-tags">
             <span class="league" title="${escapeHtml(leagueFull)}">${escapeHtml(leagueShort)}</span>
             ${roundShort ? `<span class="round">${escapeHtml(roundShort)}</span>` : ""}
@@ -620,9 +621,26 @@ function kickDay(tip) {
   return d.toLocaleDateString("sv-SE");
 }
 
-const TOP_N = 5;
+const TOP_N = 3;
+const TOP_MIN_P = 0.6; // 1X2-chans över 60 %
+const TOP_MIN_ODDS = 1.4; // läget Alla: bara 1X2-odds över 1.4
 
 const ROUND_DAYS = 3; // samma fönster som servern (scripts/lib/next-round.mjs)
+
+/** Tippade 1X2-utfallets chans och odds. */
+function pick1x2(tip) {
+  const t = tip.tips?.["1X2"];
+  const od = oddsCells(tip);
+  const odds = { 1: od.one, X: od.x, 2: od.two }[t?.pick] ?? null;
+  return { p: t?.confidence ?? null, odds };
+}
+
+/** Får vara med bland bästa tipsen: 1X2 över 60 %, i läget Alla även odds över 1.4. */
+function topEligible(tip, needOdds) {
+  if (tip.postponed) return false; // uppskjuten: går inte att spela
+  const { p, odds } = pick1x2(tip);
+  return p > TOP_MIN_P && (!needOdds || odds > TOP_MIN_ODDS);
+}
 
 /** YYYY-MM-DD + n dagar. */
 function addDays(day, n) {
@@ -635,15 +653,17 @@ function addDays(day, n) {
  * Dagens bästa tips, högst tipScore först. Spelas inget idag: bästa tipsen i kommande omgång
  * (första speldagen + 3 dagar, t.ex. 9–12 okt), så att omgången alltid har sina bästa tips överst.
  */
-function topOfDay(list) {
+function topOfDay(all, { needOdds = false } = {}) {
   const today = new Date().toLocaleDateString("sv-SE");
+  // Bara 1X2 över 60 % (och i läget Alla odds över 1.4); högst 3, färre om inte fler klarar det
+  const list = all.filter((t) => topEligible(t, needOdds));
   const days = [...new Set(list.map(kickDay).filter((d) => d && d >= today))].sort();
   const day = days[0];
   if (!day) return { day: null, lastDay: null, top: [] };
   const lastDay = day === today ? day : days.filter((d) => d <= addDays(day, ROUND_DAYS)).at(-1);
   const top = list
-    .filter((t) => kickDay(t) >= day && kickDay(t) <= lastDay)
-    .sort((a, b) => (b.tipScore ?? 0) - (a.tipScore ?? 0))
+    .filter((t) => !t.postponed && kickDay(t) >= day && kickDay(t) <= lastDay)
+    .sort((a, b) => (pick1x2(b).p ?? 0) - (pick1x2(a).p ?? 0) || (b.tipScore ?? 0) - (a.tipScore ?? 0))
     .slice(0, TOP_N);
   return { day, lastDay, top };
 }
@@ -673,7 +693,7 @@ function candRow(tip) {
   const odds = pr?.odds ? `<span class="cr-odds">@ ${escapeHtml(fmtOdd(pr.odds))}</span>` : "";
   return `<details class="cand-row" data-tip-id="${escapeHtml(tipId(tip))}">
     <summary>
-      <time class="cr-time" data-league="${escapeHtml(tip.league || "")}">${escapeHtml(fmtKick(tip))}</time>
+      <time class="cr-time${tip.postponed ? " postponed" : ""}" data-league="${escapeHtml(tip.league || "")}">${escapeHtml(fmtKick(tip))}</time>
       <span class="cr-match">${escapeHtml(tip.home && tip.away ? `${tip.home} – ${tip.away}` : tip.match || "")}${refereeBadge(tip.referee)}</span>
       <span class="cr-league" title="${escapeHtml(leagueName(tip.league))}">${escapeHtml(tip.league || "")}</span>
       <span class="cr-tip">${escapeHtml(pr?.label || "—")} ${odds}</span>
@@ -697,7 +717,7 @@ function renderList(el, list, emptyMsg, { top = false, topPool = null, limit = I
   let html = "";
   let rest = filtered;
   if (top) {
-    const { day, lastDay, top: best } = topOfDay(pool || filtered);
+    const { day, lastDay, top: best } = topOfDay(pool || filtered, { needOdds: !valueOnly });
     if (best.length) {
       const today = new Date().toLocaleDateString("sv-SE");
       const d = dayLabel(day);

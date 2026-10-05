@@ -41,7 +41,7 @@ export function hastarState(root, id) {
   const want = safeId(id) || index.latest;
   const analysis = want ? read(path.join(dir, "analys", `${want}.json`)) : null;
   const raw = want ? path.join(dir, "raw", `${want}.json`) : null;
-  return { analysis, index, backtest: read(path.join(dir, "backtest.json")), hasRaw: !!(raw && fs.existsSync(raw)) };
+  return { analysis, index, backtest: read(path.join(dir, "backtest.json")), uppfoljning: read(path.join(dir, "uppfoljning.json")), hasRaw: !!(raw && fs.existsSync(raw)) };
 }
 
 /** Returnerar true om requesten hanterades. */
