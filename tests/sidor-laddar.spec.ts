@@ -83,7 +83,7 @@ for (const [vy, namn] of [['stryktipset', 'Stryktipset'], ['europatipset', 'Euro
 
 // Kupongerna räknas i en bakgrundstråd (stryk-worker.js, 2026-10-05): sidan visas direkt och går att använda medan
 // motorn räknar, och räkningen görs en gång (förut två gånger på huvudtråden, ~80 s med låst sida).
-test('Stryktipset: matcherna syns direkt medan kupongerna räknas i bakgrunden, sedan kupong A–D', async ({ page }) => {
+test('Stryktipset: matcherna syns direkt medan kupongerna räknas i bakgrunden, sedan kupong A–C', async ({ page }) => {
   const workers: string[] = [];
   page.on('worker', (w: any) => workers.push(w.url()));
   const fel = await oppna(page, 'stryktipset');

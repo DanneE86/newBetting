@@ -714,17 +714,16 @@ view.addEventListener("toggle", (ev) => {
 }, true);
 
 // ---------- Stryktipset B: egna krav ----------
-// Krav sparas per spel och omgång i webbläsaren: { signs: "1X", scope }. scope: "both" = A och B, "A"/"B"/"C"/"D" = bara den
-// kupongen, "all" = alla fyra. Kupong C och D är egna system och påverkas bara av sin egen bokstav och "all".
+// Krav sparas per spel och omgång i webbläsaren: { signs: "1X", scope }. scope: "both" = A och B, "A"/"B"/"C" = bara den
+// kupongen, "all" = alla tre. Kupong C är ett eget system och påverkas bara av "C" och "all".
 // Äldre sparade spikar ({ sign: "1" }) läses som krav med ett tecken.
-const SCOPES = [["both", "A+B"], ["A", "A"], ["B", "B"], ["C", "C"], ["D", "D"], ["all", "Alla"]];
+const SCOPES = [["both", "A+B"], ["A", "A"], ["B", "B"], ["C", "C"], ["all", "Alla"]];
 const SCOPE_TITLE = {
   both: "Kravet gäller kupong A och B (rekommenderat)",
   A: "Kravet gäller bara kupong A",
   B: "Kravet gäller bara kupong B",
   C: "Kravet gäller bara kupong C (eget system)",
-  D: "Kravet gäller bara kupong D (fritt reducerat system för vinster över 20 000 kr)",
-  all: "Kravet gäller alla fyra kupongerna",
+  all: "Kravet gäller alla tre kupongerna",
 };
 const bStates = new Map();
 const bKey = (p) => `betting.spikes.${p.product}.${p.drawNumber}`;
@@ -777,19 +776,12 @@ function kravRow(e, krav, pick) {
   </div>`;
 }
 
-// Kupong D: reglerna som sökningen valde (antal 1/X/2, gröna och röda bland garderingarna) och hur mycket de reducerar
-function dRules(r, c) {
-  const span = ([a, b]) => (a === b ? `${a}` : `${a}–${b}`);
-  const parts = r.signRules ? ["1", "X", "2"].map((s, k) => `${s} ${span(r.signRules[k])}`) : [];
-  for (const [key, name] of [["green", "grön"], ["red", "röd"]]) if (r.colorRules?.[key]) parts.push(`${name} ${span(r.colorRules[key])}`);
-  return `Fritt reducerat · ${c.grundRows.toLocaleString("sv-SE")} → ${c.rows} rader${parts.length ? ` · ${parts.join(", ")}` : ""}`;
-}
 function couponCard(c, label, p) {
-  // A och B är rekommendationen och framhävs; C och D är valfria extra system och visas dämpade
-  const extra = label === "C" || label === "D";
+  // A och B är rekommendationen och framhävs; C är ett valfritt extra system och visas dämpat
+  const extra = label === "C";
   const cls = extra ? "sb-coupon is-extra" : "sb-coupon is-main";
   const tag = extra ? `<span class="sb-coupon-tag extra">Extra · valfri</span>` : `<span class="sb-coupon-tag">Rekommenderad</span>`;
-  if (!c) return `<div class="${cls} ds-card">${tag}<h3>Kupong ${label}</h3><p class="st-note bad ds-notice ds-notice--danger">${label === "C" ? "Gick inte att bygga kupong C (risksystem: 700–850 kr, 50 000–75 000 kr för 13 rätt)" : label === "D" ? "Gick inte att bygga kupong D (fritt reducerat system, minst 20 000 kr för 13 rätt) med dina krav på D" : `Gick inte att bygga en kupong med de här kraven${label === "B" ? " (B är risksystemet: 50 000–75 000 kr för 13 rätt och en annan grundrad än A)" : ""}`}.</p></div>`;
+  if (!c) return `<div class="${cls} ds-card">${tag}<h3>Kupong ${label}</h3><p class="st-note bad ds-notice ds-notice--danger">${label === "C" ? "Gick inte att bygga kupong C (risksystem: 700–850 kr, 50 000–75 000 kr för 13 rätt)" : `Gick inte att bygga en kupong med de här kraven${label === "B" ? " (B är risksystemet: 50 000–75 000 kr för 13 rätt och en annan grundrad än A)" : ""}`}.</p></div>`;
   const krFmt = (x) => Math.round(x).toLocaleString("sv-SE");
   const r = c.rules;
   const locked = c.picks.filter((x) => x.locked).length;
@@ -798,7 +790,7 @@ function couponCard(c, label, p) {
     <h3>Kupong ${label} <small>${c.rows} rader · ${krFmt(c.cost)} kr</small></h3>
     <dl class="sb-facts">
       <div><dt>Utdelning 13 rätt</dt><dd>ca ${krFmt(c.expectedPayout || 0)} kr</dd></div>
-      <div><dt>Regler</dt><dd class="sb-rule">${r.free ? dRules(r, c) : r.signMin.join("-")} · utdelning minst ${krFmt(r.payoutMinReal ?? r.payoutMin)} kr, inget tak</dd></div>
+      <div><dt>Regler</dt><dd class="sb-rule">${r.signMin.join("-")} · utdelning minst ${krFmt(r.payoutMinReal ?? r.payoutMin)} kr, inget tak</dd></div>
       <div><dt>Dina krav</dt><dd>${locked}</dd></div>
       ${r.xShare != null ? `<div><dt>Kryss</dt><dd>X på ${c.picks.filter((x) => x.signs.includes("X")).length} matcher · täcker ${Math.round(r.xShare * 100)} % av väntade kryss</dd></div>` : ""}
     </dl>
@@ -876,14 +868,14 @@ function couponTable(p, res) {
     ? `<p class="st-sub sb-risk-legend"><span class="sb-risk">⚠ risklag</span> = B eller C har tippat att ett risklag vinner (${risks} st) – laget streckas ofta som favorit men vinner sällan denna säsong. Fundera på att gardera.</p>`
     : "";
   const falls = p.events.filter((e) => fallOf(e)).length;
-  const fallSpikes = ["A", "B", "C", "D"].reduce((n, s) => n + p.events.filter((e, i) => fallMark(e, res[s]?.picks[i]?.signs, s)).length, 0);
+  const fallSpikes = ["A", "B", "C"].reduce((n, s) => n + p.events.filter((e, i) => fallMark(e, res[s]?.picks[i]?.signs, s)).length, 0);
   const fallLegend = falls
     ? `<p class="st-sub sb-fall-legend"><b>Kort sagt:</b> <span class="fall-tag">⚠ kan falla</span> = favoriter som folket tror på men som vinner mer sällan än strecken säger – ${falls} st i omgången${fallSpikes ? `, ${fallSpikes} spikade i kupongerna (<span class="sb-fall">⚠ kan falla</span>)` : ""}.
        <b>Så läser du det här:</b> folket streckar favoriten minst 50 %, men vår chans är under 55 %. Sådana favoriter föll 57 % av gångerna (107 omgångar), och när kupong A spikade dem föll 27 av 34. Gardera hellre än spika dem.</p>`
     : "";
   return `${legend}${riskLegend}${fallLegend}<div class="st-bt-wrap"><table class="sb-table ds-table">
-    <thead><tr><th>#</th><th>Match</th><th>Kupong A</th><th>Kupong B</th><th>Kupong C</th><th>Kupong D</th><th>Tur (A)</th></tr></thead>
-    <tbody>${p.events.map((e, i) => `<tr><td>${e.eventNumber}</td><th>${esc(e.home)} – ${esc(e.away)}</th>${cell(res.A, i, "A")}${cell(res.B, i, "B")}${cell(res.C, i, "C")}${cell(res.D, i, "D")}${turCell(e, i)}</tr>`).join("")}</tbody>
+    <thead><tr><th>#</th><th>Match</th><th>Kupong A</th><th>Kupong B</th><th>Kupong C</th><th>Tur (A)</th></tr></thead>
+    <tbody>${p.events.map((e, i) => `<tr><td>${e.eventNumber}</td><th>${esc(e.home)} – ${esc(e.away)}</th>${cell(res.A, i, "A")}${cell(res.B, i, "B")}${cell(res.C, i, "C")}${turCell(e, i)}</tr>`).join("")}</tbody>
   </table></div>`;
 }
 
@@ -969,12 +961,12 @@ function streckNote(p, st) {
 }
 
 // Skrällspikar och skrällkryss att läsa om (stryk-engine.js skrallTips/skrallKryss): två av varje att välja på, överst
-// på sidan, ligger inte i kupongerna. Kryssen är på andra matcher än spikarna. Säger om A–D ändå spikar dem.
+// på sidan, ligger inte i kupongerna. Kryssen är på andra matcher än spikarna. Säger om A–C ändå spikar dem.
 function skrallTipBox(p, res) {
   const tips = skrallTips(p.events);
   const kryss = skrallKryss(p.events);
   const pick = (kind) => (t, n) => {
-    const inC = ["A", "B", "C", "D"].filter((k) => res?.[k]?.picks?.[t.i]?.signs === t.sign);
+    const inC = ["A", "B", "C"].filter((k) => res?.[k]?.picks?.[t.i]?.signs === t.sign);
     const facit = t.hit == null ? "" : ` <span class="st-chip ${t.hit ? "good" : "bad"}">${t.hit ? "Gick in" : "Gick inte in"}${t.score ? ` · ${esc(t.score)}` : ""}</span>`;
     const label = n === 0 ? "Förstaval" : t.weak ? "Reserv (svagare)" : "Andraval";
     const weakTxt = kind === "x" ? "Klarar inte hela kravet (minst 26 % och 2 procentenheter över folket) men är det bästa krysset som finns kvar." : "Klarar inte hela skrällkravet (minst 30 % och 3 procentenheter över folket) men är den bästa som finns kvar.";
@@ -1031,7 +1023,7 @@ function renderB(p, head, top = "", extras = "") {
         <details class="sb-howto"${keep("howto-krav")}><summary>Hur funkar det?</summary>
           <ul>
             <li>Ett tecken (1, X eller 2) är en <b>spik</b>, två tecken (1X, X2, 12) en <b>halvgardering</b> och alla tre en <b>helgardering</b>. Klicka igen för att ta bort ett tecken.</li>
-            <li><b>Gäller</b>: A+B (båda rekommenderade kupongerna), bara A, bara B, bara C, bara D eller Alla fyra.</li>
+            <li><b>Gäller</b>: A+B (båda rekommenderade kupongerna), bara A, bara B, bara C eller Alla tre.</li>
             <li>C är ett eget system och påverkas bara av krav på C eller Alla.</li>
             <li>Matcher utan krav väljer kupongen själv. Tryck <b>Generera kupong</b> i raden längst ner när du är klar.</li>
           </ul>
@@ -1044,7 +1036,7 @@ function renderB(p, head, top = "", extras = "") {
     ? `<section class="sb-panel sb-result ds-card">
         <h3>2. Din kupong</h3>
         ${st.dirty ? `<p class="st-note ds-notice ds-notice--warning">Du har ändrat kraven – tryck Generera kupong igen för att uppdatera.</p>` : ""}
-        <p class="st-sub">A och B är två olika system à 350–400 kr som täcker varandra.${res.A && res.B ? ` ${res.overlap} gemensamma rader.` : ""} C och D är valfria extra system.</p>
+        <p class="st-sub">A och B är två olika system à 350–400 kr som täcker varandra.${res.A && res.B ? ` ${res.overlap} gemensamma rader.` : ""} C är ett valfritt extra system.</p>
         <details class="sb-howto"${keep("howto-kupong")}><summary>Hur funkar det?</summary>
           <ul>
             <li>Minst 2 och högst 4 spikar och minst 3 helgarderingar per kupong. Spikarna och exakt två halvgarderingar är <b>blå</b> (helgula först, annars de säkraste). Helgarderingar är aldrig blå och läggs aldrig på matcher där alla tecken ligger på 26–44 %. Blått räknas inte i färgreglerna, precis som spikarna.</li>
@@ -1056,7 +1048,6 @@ function renderB(p, head, top = "", extras = "") {
             <li><b>B</b> är risksystemet: teckenregler 3-2-2, 50 000–75 000 kr, alltid en skrällspik (runt 40 %, annars den som är näst på tur), aldrig samma gardering som A, och högst en spik får skilja – B har A:s spikar utom på högst en match. Håller gränsen inte med röd 1–5/2–5 får B röd 1–3.</li>
             <li>Spikar: matcher som bedömts som spikbara spikas först. Behövs fler spikar (minst 2, eller för att hålla utdelningsgränsen) läggs de i A och C bara på omgångens 4 starkaste favoriter – svaga favoriter med högt kryss gick ofta fel (bakkörning 2026-10-03). Går det inte väljs bästa favorit som förut.</li>
             <li><b>C</b> är skrällsystemet: ett eget system på 700–850 kr som inte har med A och B att göra (bara krav du lagt på C eller Alla gäller där). Högsta raden ska ge minst 1 miljon, 50 000–75 000 kr, alltid en skrällspik, teckenregler som A (Europatipset 3-2-2), och kryssen ska täcka minst hälften av omgångens väntade kryss.</li>
-            <li><b>D</b> är ditt fasta system: alltid 4 spikar, 4 halvgarderingar och 5 helgarderingar. Röd = folket 25 % eller lägre, grön = 26–35 %, över 35 % och spikarna är blå (ingen regel). Varje rad har 1–3 röda och 1–3 gröna, minst 4 ettor, 3 kryss och 3 tvåor, och lägsta utdelning 30 000–50 000 kr (inget tak) så att det blir 350–400 kr. Motorn provar alla sätt att lägga 4/4/5 och väljer det med högst chans till 13 rätt. Eget system – bara krav på D eller Alla gäller.</li>
             <li>⚠ i tabellen = tecken som just den kupongen brukar ha fel på (minst 30 % missar i bakkörningen), röd = oftare än vår egen chans sa.</li>
             ${p.product === "stryktipset" ? "<li>På Stryktipset spikas bara favoriter med minst 65 % – spikar på 50–65 % sprack nästan varannan gång i baktestet.</li>" : ""}
           </ul>
@@ -1064,12 +1055,12 @@ function renderB(p, head, top = "", extras = "") {
         ${streckNote(p, st)}
         <p class="st-note ds-notice"><b>Rekommendation:</b> spela kupong A och B. I baktestet gav A+B ${p.product === "stryktipset" ? "ca 78 % tillbaka per krona, C ca 69 % (38 omgångar)" : "ca 52 % tillbaka per krona, C ca 42 % (55 omgångar)"}. Svenska Spel betalar tillbaka 65 %, så alla varianter förlorar över tid – spela för en summa du klarar att förlora.</p>
         ${couponTable(p, res)}
-        <div class="sb-coupons">${couponCard(res.A, "A", p)}${couponCard(res.B, "B", p)}${couponCard(res.C, "C", p)}${couponCard(res.D, "D", p)}</div>
+        <div class="sb-coupons">${couponCard(res.A, "A", p)}${couponCard(res.B, "B", p)}${couponCard(res.C, "C", p)}</div>
       </section>`
     : st.busy
       ? `<section class="sb-panel sb-result ds-card">
         <h3>2. Din kupong</h3>
-        <p class="st-sub" role="status" aria-live="polite">Räknar fram kupongerna A–D med ${p.open ? "live-streck" : "hämtningens streck"} – det tar en stund (upp till en halv minut). Du kan läsa matcherna under tiden.</p>
+        <p class="st-sub" role="status" aria-live="polite">Räknar fram kupongerna A–C med ${p.open ? "live-streck" : "hämtningens streck"} – det tar en stund (upp till en halv minut). Du kan läsa matcherna under tiden.</p>
       </section>`
       : "";
   // Matchkorten visar den genererade kupongen (eller hämtningens kupong A innan något genererats)
