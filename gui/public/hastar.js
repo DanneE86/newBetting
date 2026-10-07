@@ -1,6 +1,6 @@
 // Flik "Hästar": V75/V85/V86/V64/V65/GS75 + Dagens Dubbel från ATG (data från /api/hastar, se gui/hastar-routes.mjs).
 // Modellen räknas i scripts/lib/trav-model.mjs när data hämtas; systembyggaren (hast-engine.js) körs här i webbläsaren.
-import { BUDGETS, rowPrice, TOP_SHARE, TOP_LEVELS, MIN_TOP, SKRALL_MAX, ATG_FILE_TYPES, atgFileName, atgFileXml, atgGameUrl, buildSystem, compressRows, couponRows, couponText, defaultAlpha, reduceSystem } from "/hast-engine.js";
+import { BUDGETS, rowPrice, TOP_SHARE, TOP_LEVELS, MIN_TOP, SKRALL_MAX, SKRALL_MIN_BUDGET, ATG_FILE_TYPES, atgFileName, atgFileXml, atgGameUrl, buildSystem, compressRows, couponRows, couponText, defaultAlpha, reduceSystem } from "/hast-engine.js";
 
 const view = document.getElementById("hastar-view");
 const GAME_NAME = { dd: "Dagens Dubbel" };
@@ -242,6 +242,7 @@ function systemBuilder(a) {
     <div class="hs-mode" role="group" aria-label="Högsta rad">
       <label title="Systemets mest ospelade rad ska kunna ge minst så här mycket vid alla rätt. 50 000 kr gäller alltid.">Högsta rad minst <select class="ds-select" id="hs-top">${TOP_LEVELS.map((x) => `<option value="${x}" ${sys.minTop === x ? "selected" : ""}>${x.toLocaleString("sv-SE")} kr${x === MIN_TOP ? " (alltid)" : ""}</option>`).join("")}</select></label>
     </div>
+    ${isSkrall3() && sys.budget < SKRALL_MIN_BUDGET ? `<p class="hs-msg is-error hs-skrall-budget" role="status">Skrällsystemet under ${kr(SKRALL_MIN_BUDGET)} har gått minus alla bakkörda år (200 kr: −28 %, −50 %, −81 % 2024–2026). Spela ${kr(SKRALL_MIN_BUDGET)} eller mer.</p>` : ""}
     <p class="hs-lead hs-focus-text">${FOCUS_TEXT[sys.focus]}</p>
     ${
       sys.mode === "reducerat"
@@ -568,6 +569,7 @@ view.addEventListener("click", (ev) => {
       sys.mode = "reducerat";
       sys.expand = 16;
       sys.conds = { ...sys.conds, minSkrall: "3" };
+      if (sys.budget < SKRALL_MIN_BUDGET) sys.budget = SKRALL_MIN_BUDGET;
     } else {
       sys.mode = t.dataset.mode;
       if (t.dataset.mode === "reducerat" && isSkrall3()) sys.conds = { ...sys.conds, minSkrall: "" };

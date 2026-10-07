@@ -47,6 +47,28 @@ test('kelly, rps och clv', async () => {
   expect(lib.clv(null, 0.5)).toBeNull();
 });
 
+test('vardesparr: oddstak och misstankt EV, samma live och i utvarderingen', async () => {
+  const lib = await import(libUrl);
+  const cap = { maxOdds: 5, maxEv: 0.25 };
+  expect(lib.betBlock(4.8, 0.1, cap)).toBeNull();
+  expect(lib.betBlock(5, 0.1, cap)).toBeNull();
+  expect(lib.betBlock(5.2, 0.1, cap)).toBe('tooLong');
+  expect(lib.betBlock(2.1, 0.3, cap)).toBe('suspect');
+  // Snitt-facit: tak 3.5
+  expect(lib.betBlock(4, 0.06, { maxOdds: 3.5, maxEv: 0.25 })).toBe('tooLong');
+  expect(lib.betBlock(3.5, 0.06, { maxOdds: 3.5, maxEv: 0.25 })).toBeNull();
+});
+
+test('utvarderingen raknar bara spel som klarar livesparren', async () => {
+  const evaluation = readJson(path.join(root, 'data', 'reports', 'pro-evaluation.json'));
+  const tips = readJson(path.join(root, 'data', 'tips-latest.json'));
+  expect(tips.proMeta.config.maxOddsAverage).toBeLessThan(tips.proMeta.config.maxOdds);
+  // Utan sparren gav konsensus over 390 spel (2026-10-07); med sparren farre an halften
+  const n = Object.values<any>(evaluation.summary).reduce((s, x) => s + (x.strategies?.consensusAtBestPrice?.n ?? 0), 0);
+  expect(n).toBeGreaterThan(50);
+  expect(n).toBeLessThan(300);
+});
+
 test('Dixon-Coles hittar starkare lag pa syntetisk data', async () => {
   const lib = await import(libUrl);
   const teams = ['A', 'B', 'C', 'D'];
@@ -137,6 +159,9 @@ test('tips har pro-lager, utvardering och domarfil', async () => {
       }
       expect(x.value).toBe(!x.reason && x.odds >= x.minOdds - 0.005);
       if (x.value) expect(x.odds).toBeLessThanOrEqual(tips.proMeta.config.maxOdds);
+      // Snitt av bolagen som facit (inte Pinnacle/Betfair): lagre oddstak
+      const sharp = /pinnacle|betfair/i.test(x.fairSource ?? '');
+      if (x.value && !sharp) expect(x.odds).toBeLessThanOrEqual(tips.proMeta.config.maxOddsAverage);
     }
   }
 
@@ -292,6 +317,24 @@ test('skarpt facit: illikvid Betfair-marknad avvisas', async () => {
   expect(findSharpBook(books)).toBeNull();
   const ok = { key: 'pinnacle', home: 3.45, draw: 3.95, away: 1.9 };
   expect(findSharpBook([...books, ok])).toBe(ok);
+  // Valladolid-Cordoba 2026-09-27: borsen langt over bolagen -> avvisas. 10 pp (1.12) gick forut igenom (max 12 pp),
+  // nu max 8 pp for Betfair. Pinnacle med samma priser godtas (12 pp).
+  const bf10 = { key: 'betfair_ex_eu', home: 1.12, draw: 12, away: 25 };
+  const fav = [
+    { key: 'a', home: 1.2, draw: 6.5, away: 13 },
+    { key: 'b', home: 1.22, draw: 6.2, away: 12 },
+    { key: 'c', home: 1.21, draw: 6.4, away: 12.5 },
+  ];
+  expect(findSharpBook([{ key: 'betfair_ex_eu', home: 1.06, draw: 21, away: 40 }, ...fav])).toBeNull();
+  expect(findSharpBook([bf10, ...fav])).toBeNull();
+  const pin10 = { ...bf10, key: 'pinnacle' };
+  expect(findSharpBook([pin10, ...fav])).toBe(pin10);
+  const bfOk = { key: 'betfair_ex_eu', home: 1.22, draw: 6.6, away: 13.5 };
+  expect(findSharpBook([bfOk, ...fav])).toBe(bfOk);
+  // Betfair utan minst 3 bolag att jamfora med: inget skarpt facit. Pinnacle godtas anda.
+  expect(findSharpBook([bfOk, fav[0]])).toBeNull();
+  const pin = { key: 'pinnacle', home: 1.22, draw: 6.6, away: 13.5 };
+  expect(findSharpBook([pin, fav[0]])).toBe(pin);
 });
 
 test('varje visat odds har ett vardeomdome och varje tips har avsparkstid', async () => {

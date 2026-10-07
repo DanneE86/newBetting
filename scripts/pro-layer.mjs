@@ -5,7 +5,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import {
-  brier, clv, daysBetween, devigMultiplicative, findSharpBook,
+  betBlock, brier, clv, daysBetween, devigMultiplicative, findSharpBook,
   overround, predictDixonColes, riskReward, round, rps1x2, toDate,
 } from './pro/lib.mjs';
 import { EARLY_ROUNDS, buildTiers, fitLeagueModel, loadLeagueModels, paramsFor } from './pro/league-models.mjs';
@@ -48,8 +48,12 @@ export const CONFIG = {
   minEvConsensus: 0.05, // hogre troskel nar facit ar snittet av bolagen (svagare facit, backtest)
   minEvThin: 0.08,      // facit fran bara 1-3 bolag: svagast, hogst troskel (ger anda alltid ett omdome)
   consensusMinBooks: 4, // minst sa manga bolag for att snittet ska raknas som facit
-  // Tak for odds: utan tak -19 % ROI (skrallar overskattas), med tak 5: +13 % ROI, 83 % slog closing (backtest 95 spel)
+  // Tak for odds: utan tak -19 % ROI (skrallar overskattas), med tak 5: +13 % ROI, 83 % slog closing (backtest 95 spel).
+  // Bakkorning 2026-10-07 (Pinnacle-facit, 173 spel): +1.4 % ROI, CLV +3.8 %.
   maxOdds: 5,
+  // Facit = snitt av bolagen (inget Pinnacle/Betfair): odds 3.5-5 gav CLV +0.4 % och -14 % ROI (148 spel, 2026-10-07),
+  // sa lagre tak dar
+  maxOddsAverage: 3.5,
   // EV over 25 % mot ett skarpt facit ar i praktiken alltid datafel (fel match, illikvid bors) - aldrig varde
   maxEv: 0.25,
   stakeSek: 500,        // fast insats per spel (valt av anvandaren i st f Kelly)
@@ -72,13 +76,14 @@ export const CONFIG = {
 // Strategier: sannolikhet [H,D,A,Over] + vilken bok vi "tar" priset hos (oppningsodds).
 // consensus = Kaunitz m.fl.: skarp marknad (Pinnacle devig) som sannolikhet, basta pris (Max) som odds.
 export const STRATEGIES = {
-  dcAtPinnacle: { book: 'pinnacle_', probs: (r) => dcProbs(r.dc) },
-  dcAtBestPrice: { book: 'max_', probs: (r) => dcProbs(r.dc) },
-  consensusAtBestPrice: { book: 'max_', probs: (r) => pinOpen(r.m) },
+  dcAtPinnacle: { book: 'pinnacle_', maxOdds: CONFIG.maxOdds, probs: (r) => dcProbs(r.dc) },
+  dcAtBestPrice: { book: 'max_', maxOdds: CONFIG.maxOdds, probs: (r) => dcProbs(r.dc) },
+  consensusAtBestPrice: { book: 'max_', maxOdds: CONFIG.maxOdds, probs: (r) => pinOpen(r.m) },
   // Som live nar Pinnacle saknas (fran 2025/26): facit = snitt av bolagens oppningsodds utan marginal
-  averageConsensusAtBestPrice: { book: 'max_', probs: (r) => avgOpen(r.m) },
+  averageConsensusAtBestPrice: { book: 'max_', maxOdds: CONFIG.maxOddsAverage, probs: (r) => avgOpen(r.m) },
   marketAnchoredAtBestPrice: {
     book: 'max_',
+    maxOdds: CONFIG.maxOdds,
     probs: (r) => {
       const mk = pinOpen(r.m);
       if (!mk) return null;
@@ -303,7 +308,7 @@ function buildPro(t) {
   const fairFrom = (keys) => {
     if (sharp) {
       const f = devigMultiplicative(keys.map((k) => sharp[k]));
-      if (f) return { p: f, source: sharpName, minEv: CONFIG.minEv };
+      if (f) return { p: f, source: sharpName, minEv: CONFIG.minEv, maxOdds: CONFIG.maxOdds };
     }
     let ps = books.map((b) => devigMultiplicative(keys.map((k) => b[k]))).filter(Boolean);
     if (!ps.length) {
@@ -318,6 +323,7 @@ function buildPro(t) {
       p: avg,
       source: ps.length === 1 ? (books[0]?.key === 'oddsportal' ? 'OddsPortal-snitt' : 'ett bolag') : `snitt av ${ps.length} bolag`,
       minEv: strong ? CONFIG.minEvConsensus : CONFIG.minEvThin,
+      maxOdds: CONFIG.maxOddsAverage,
     };
   };
   const useSharp = !!sharp;
@@ -375,16 +381,18 @@ function buildPro(t) {
       continue;
     }
     const evVal = p * price - 1;
-    // Skrallar over maxOdds: devig overskattar deras chans (favorit-longshot-bias) -> aldrig varde
-    const tooLong = price > CONFIG.maxOdds;
-    const suspect = evVal > CONFIG.maxEv;
+    // Skrallar over taket (5 med skarpt facit, 3.5 med snitt av bolagen): devig overskattar deras chans
+    // (favorit-longshot-bias) -> aldrig varde
+    const block = betBlock(price, evVal, { maxOdds: g.maxOdds, maxEv: CONFIG.maxEv });
+    const tooLong = block === 'tooLong';
+    const suspect = block === 'suspect';
     // Omdome: vart att spela till dagens basta odds? minOdds = lagsta odds med EV >= troskeln
     // (avrundas uppat: 3.7036 -> 3.71, annars visas "minsta odds 3.70" pa ett odds 3.70 som ar Ej varde)
     verdicts[k] = {
       market: mkt, pick, odds: price, bookmaker, p: round(p), ev: round(evVal), fairSource: g.source,
       minOdds: Math.ceil(((1 + g.minEv) / p) * 100 - 1e-9) / 100, value: !tooLong && !suspect && evVal >= g.minEv,
       riskReward: riskReward(price, p, CONFIG.stakeSek),
-      ...(tooLong ? { reason: `odds över ${CONFIG.maxOdds} (skräll)` } : suspect ? { reason: `misstänkt EV ${Math.round(evVal * 100)} % – kontrollera oddsen` } : {}),
+      ...(tooLong ? { reason: `odds över ${String(g.maxOdds).replace('.', ',')} (skräll)` } : suspect ? { reason: `misstänkt EV ${Math.round(evVal * 100)} % – kontrollera oddsen` } : {}),
     };
     if (tooLong || suspect || evVal < g.minEv) continue;
     valueBets.push({
@@ -1132,7 +1140,8 @@ function simulateBets(rows, threshold, strategy) {
       [1 - p[3], o[`${px}under25`], !m.over25, pinCloseOu?.[1]],
     ];
     for (const [p, odds, won, closeP] of cands) {
-      if (!(odds > 1) || p * odds - 1 < threshold) continue;
+      // Samma sparr som live (oddstak per facit, maxEv), annars visar utvarderingen spel som aldrig tipsas
+      if (!(odds > 1) || p * odds - 1 < threshold || betBlock(odds, p * odds - 1, { maxOdds: strategy.maxOdds, maxEv: CONFIG.maxEv })) continue;
       n++;
       profit += won ? odds - 1 : -1;
       const c = clv(odds, closeP);

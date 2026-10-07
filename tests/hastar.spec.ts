@@ -506,6 +506,13 @@ test.describe('GUI: fliken Hästar', () => {
     await expect(page.locator('[data-mode="skrall3"]')).toHaveAttribute('aria-pressed', 'true');
     await expect(page.locator('#hs-expand')).toHaveValue('16');
     await expect(page.locator('[data-cond="minSkrall"]')).toHaveValue('3');
+    // Skrällsystemet väljer minst 1 000 kr (200 kr gick minus alla bakkörda år) och varnar om man sänker
+    await expect(page.locator('[data-budget="1000"]')).toHaveAttribute('aria-pressed', 'true');
+    await expect(page.locator('.hs-skrall-budget')).toHaveCount(0);
+    await page.click('[data-budget="200"]');
+    await expect(page.locator('.hs-skrall-budget')).toContainText('gått minus');
+    await page.click('[data-budget="1000"]');
+    await expect(page.locator('.hs-skrall-budget')).toHaveCount(0);
     await page.click('[data-mode="reducerat"]');
     await expect(page.locator('[data-mode="skrall3"]')).toHaveAttribute('aria-pressed', 'false');
   });

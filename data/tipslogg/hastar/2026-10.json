@@ -1,7 +1,7 @@
 {
  "product": "hastar",
  "month": "2026-10",
- "updatedAt": "2026-10-06T20:10:02.191Z",
+ "updatedAt": "2026-10-07T16:30:04.906Z",
  "items": {
   "V86_2026-10-05_40_1|6": {
    "id": "V86_2026-10-05_40_1|6",
@@ -1015,6 +1015,501 @@
     ],
     "spik": null,
     "favorite": 9
+   },
+   "result": null
+  },
+  "V86_2026-10-07_40_1|6": {
+   "id": "V86_2026-10-07_40_1|6",
+   "product": "hastar",
+   "game": "V86_2026-10-07_40_1",
+   "type": "V86",
+   "leg": 1,
+   "race": 6,
+   "date": "2026-10-07",
+   "kickoff": "2026-10-07T18:30:00.000Z",
+   "league": "V86",
+   "track": "Axevalla",
+   "home": null,
+   "away": null,
+   "firstAt": "2026-10-07T15:08:34.578Z",
+   "first": {
+    "top": [
+     {
+      "nr": 4,
+      "horse": "Speed Change",
+      "p": 0.4,
+      "marketP": 0.21,
+      "rank": "A"
+     },
+     {
+      "nr": 1,
+      "horse": "Ideal Stone",
+      "p": 0.224,
+      "marketP": 0.229,
+      "rank": "A"
+     },
+     {
+      "nr": 2,
+      "horse": "Jeriko Brick",
+      "p": 0.198,
+      "marketP": 0.369,
+      "rank": "B"
+     },
+     {
+      "nr": 3,
+      "horse": "Kyrie Eleison",
+      "p": 0.086,
+      "marketP": 0.063,
+      "rank": "C"
+     },
+     {
+      "nr": 5,
+      "horse": "Limoncello Boko",
+      "p": 0.056,
+      "marketP": 0.07,
+      "rank": "C"
+     }
+    ],
+    "spik": 4,
+    "favorite": 4
+   },
+   "latestAt": "2026-10-07T16:30:04.906Z",
+   "latest": {
+    "top": [
+     {
+      "nr": 4,
+      "horse": "Speed Change",
+      "p": 0.386,
+      "marketP": 0.195,
+      "rank": "A"
+     },
+     {
+      "nr": 1,
+      "horse": "Ideal Stone",
+      "p": 0.237,
+      "marketP": 0.208,
+      "rank": "A"
+     },
+     {
+      "nr": 2,
+      "horse": "Jeriko Brick",
+      "p": 0.198,
+      "marketP": 0.326,
+      "rank": "B"
+     },
+     {
+      "nr": 3,
+      "horse": "Kyrie Eleison",
+      "p": 0.085,
+      "marketP": 0.134,
+      "rank": "C"
+     },
+     {
+      "nr": 5,
+      "horse": "Limoncello Boko",
+      "p": 0.058,
+      "marketP": 0.069,
+      "rank": "C"
+     }
+    ],
+    "spik": 4,
+    "favorite": 4
+   },
+   "result": null
+  },
+  "V86_2026-10-07_40_1|7": {
+   "id": "V86_2026-10-07_40_1|7",
+   "product": "hastar",
+   "game": "V86_2026-10-07_40_1",
+   "type": "V86",
+   "leg": 3,
+   "race": 7,
+   "date": "2026-10-07",
+   "kickoff": "2026-10-07T18:52:00.000Z",
+   "league": "V86",
+   "track": "Axevalla",
+   "home": null,
+   "away": null,
+   "firstAt": "2026-10-07T15:08:34.578Z",
+   "first": {
+    "top": [
+     {
+      "nr": 6,
+      "horse": "Pamela Boko",
+      "p": 0.43,
+      "marketP": 0.336,
+      "rank": "A"
+     },
+     {
+      "nr": 4,
+      "horse": "Västerbo Redless",
+      "p": 0.268,
+      "marketP": 0.191,
+      "rank": "A"
+     },
+     {
+      "nr": 7,
+      "horse": "True Identity",
+      "p": 0.129,
+      "marketP": 0.201,
+      "rank": "B"
+     },
+     {
+      "nr": 1,
+      "horse": "Pure Glamour",
+      "p": 0.091,
+      "marketP": 0.088,
+      "rank": "B"
+     },
+     {
+      "nr": 3,
+      "horse": "Global Girlpower",
+      "p": 0.03,
+      "marketP": 0.074,
+      "rank": "D"
+     }
+    ],
+    "spik": null,
+    "favorite": 6
+   },
+   "latestAt": "2026-10-07T16:30:04.906Z",
+   "latest": {
+    "top": [
+     {
+      "nr": 10,
+      "horse": "Fantasy Sensation",
+      "p": 0.26,
+      "marketP": 0.157,
+      "rank": "A"
+     },
+     {
+      "nr": 2,
+      "horse": "Pure Color",
+      "p": 0.203,
+      "marketP": 0.154,
+      "rank": "A"
+     },
+     {
+      "nr": 4,
+      "horse": "Orazi Cesare",
+      "p": 0.202,
+      "marketP": 0.219,
+      "rank": "A"
+     },
+     {
+      "nr": 8,
+      "horse": "Dats Milian",
+      "p": 0.098,
+      "marketP": 0.091,
+      "rank": "B"
+     },
+     {
+      "nr": 11,
+      "horse": "Conquistador",
+      "p": 0.092,
+      "marketP": 0.144,
+      "rank": "B"
+     }
+    ],
+    "spik": null,
+    "favorite": 10
+   },
+   "result": null
+  },
+  "V86_2026-10-07_40_1|8": {
+   "id": "V86_2026-10-07_40_1|8",
+   "product": "hastar",
+   "game": "V86_2026-10-07_40_1",
+   "type": "V86",
+   "leg": 5,
+   "race": 8,
+   "date": "2026-10-07",
+   "kickoff": "2026-10-07T19:15:00.000Z",
+   "league": "V86",
+   "track": "Axevalla",
+   "home": null,
+   "away": null,
+   "firstAt": "2026-10-07T15:08:34.578Z",
+   "first": {
+    "top": [
+     {
+      "nr": 3,
+      "horse": "Mister Never Die",
+      "p": 0.544,
+      "marketP": 0.344,
+      "rank": "A"
+     },
+     {
+      "nr": 1,
+      "horse": "Global History",
+      "p": 0.108,
+      "marketP": 0.055,
+      "rank": "B"
+     },
+     {
+      "nr": 11,
+      "horse": "Com Best",
+      "p": 0.107,
+      "marketP": 0.133,
+      "rank": "B"
+     },
+     {
+      "nr": 7,
+      "horse": "Buzz Lane",
+      "p": 0.099,
+      "marketP": 0.082,
+      "rank": "B"
+     },
+     {
+      "nr": 9,
+      "horse": "In Fine Fettle",
+      "p": 0.055,
+      "marketP": 0.064,
+      "rank": "C"
+     }
+    ],
+    "spik": 3,
+    "favorite": 3
+   },
+   "latestAt": "2026-10-07T16:30:04.906Z",
+   "latest": {
+    "top": [
+     {
+      "nr": 9,
+      "horse": "Juan Les Pins",
+      "p": 0.398,
+      "marketP": 0.305,
+      "rank": "A"
+     },
+     {
+      "nr": 3,
+      "horse": "Isaia Degato",
+      "p": 0.22,
+      "marketP": 0.179,
+      "rank": "A"
+     },
+     {
+      "nr": 7,
+      "horse": "Hafa Go Go",
+      "p": 0.217,
+      "marketP": 0.216,
+      "rank": "A"
+     },
+     {
+      "nr": 1,
+      "horse": "Go Steed",
+      "p": 0.079,
+      "marketP": 0.095,
+      "rank": "C"
+     },
+     {
+      "nr": 4,
+      "horse": "Pure Bliss",
+      "p": 0.042,
+      "marketP": 0.057,
+      "rank": "C"
+     }
+    ],
+    "spik": 3,
+    "favorite": 9
+   },
+   "result": null
+  },
+  "V86_2026-10-07_40_1|9": {
+   "id": "V86_2026-10-07_40_1|9",
+   "product": "hastar",
+   "game": "V86_2026-10-07_40_1",
+   "type": "V86",
+   "leg": 7,
+   "race": 9,
+   "date": "2026-10-07",
+   "kickoff": "2026-10-07T19:40:00.000Z",
+   "league": "V86",
+   "track": "Axevalla",
+   "home": null,
+   "away": null,
+   "firstAt": "2026-10-07T15:08:34.578Z",
+   "first": {
+    "top": [
+     {
+      "nr": 9,
+      "horse": "Ivanisevic",
+      "p": 0.372,
+      "marketP": 0.257,
+      "rank": "A"
+     },
+     {
+      "nr": 2,
+      "horse": "Zigzag Zagazoo",
+      "p": 0.207,
+      "marketP": 0.257,
+      "rank": "A"
+     },
+     {
+      "nr": 3,
+      "horse": "Thai Face Time",
+      "p": 0.171,
+      "marketP": 0.109,
+      "rank": "B"
+     },
+     {
+      "nr": 8,
+      "horse": "Julius Cortina",
+      "p": 0.07,
+      "marketP": 0.074,
+      "rank": "C"
+     },
+     {
+      "nr": 10,
+      "horse": "Global Deadline",
+      "p": 0.065,
+      "marketP": 0.075,
+      "rank": "C"
+     }
+    ],
+    "spik": 12,
+    "favorite": 9
+   },
+   "latestAt": "2026-10-07T16:30:04.906Z",
+   "latest": {
+    "top": [
+     {
+      "nr": 4,
+      "horse": "Global Federation",
+      "p": 0.47,
+      "marketP": 0.371,
+      "rank": "A"
+     },
+     {
+      "nr": 12,
+      "horse": "Fly Express",
+      "p": 0.24,
+      "marketP": 0.152,
+      "rank": "A"
+     },
+     {
+      "nr": 2,
+      "horse": "Osvaldo A.Boko",
+      "p": 0.097,
+      "marketP": 0.124,
+      "rank": "B"
+     },
+     {
+      "nr": 5,
+      "horse": "Mix the Booze",
+      "p": 0.075,
+      "marketP": 0.117,
+      "rank": "C"
+     },
+     {
+      "nr": 11,
+      "horse": "Esteban Bar",
+      "p": 0.056,
+      "marketP": 0.053,
+      "rank": "C"
+     }
+    ],
+    "spik": 12,
+    "favorite": 4
+   },
+   "result": null
+  },
+  "V86_2026-10-07_40_1|10": {
+   "id": "V86_2026-10-07_40_1|10",
+   "product": "hastar",
+   "game": "V86_2026-10-07_40_1",
+   "type": "V86",
+   "leg": 8,
+   "race": 10,
+   "date": "2026-10-07",
+   "kickoff": "2026-10-07T19:51:00.000Z",
+   "league": "V86",
+   "track": "Solvalla",
+   "home": null,
+   "away": null,
+   "firstAt": "2026-10-07T15:08:34.578Z",
+   "first": {
+    "top": [
+     {
+      "nr": 1,
+      "horse": "Magnification",
+      "p": 0.315,
+      "marketP": 0.266,
+      "rank": "A"
+     },
+     {
+      "nr": 12,
+      "horse": "Cruiser",
+      "p": 0.188,
+      "marketP": 0.147,
+      "rank": "B"
+     },
+     {
+      "nr": 10,
+      "horse": "Fusion Blaze",
+      "p": 0.108,
+      "marketP": 0.08,
+      "rank": "B"
+     },
+     {
+      "nr": 11,
+      "horse": "Mellby Orkide",
+      "p": 0.09,
+      "marketP": 0.142,
+      "rank": "C"
+     },
+     {
+      "nr": 4,
+      "horse": "Abundance",
+      "p": 0.063,
+      "marketP": 0.054,
+      "rank": "C"
+     }
+    ],
+    "spik": null,
+    "favorite": 1
+   },
+   "latestAt": "2026-10-07T16:30:04.906Z",
+   "latest": {
+    "top": [
+     {
+      "nr": 1,
+      "horse": "Magnification",
+      "p": 0.297,
+      "marketP": 0.27,
+      "rank": "A"
+     },
+     {
+      "nr": 12,
+      "horse": "Cruiser",
+      "p": 0.185,
+      "marketP": 0.139,
+      "rank": "B"
+     },
+     {
+      "nr": 10,
+      "horse": "Fusion Blaze",
+      "p": 0.11,
+      "marketP": 0.087,
+      "rank": "B"
+     },
+     {
+      "nr": 11,
+      "horse": "Mellby Orkide",
+      "p": 0.098,
+      "marketP": 0.132,
+      "rank": "B"
+     },
+     {
+      "nr": 3,
+      "horse": "Västerbo Sparkly",
+      "p": 0.065,
+      "marketP": 0.058,
+      "rank": "C"
+     }
+    ],
+    "spik": null,
+    "favorite": 1
    },
    "result": null
   }

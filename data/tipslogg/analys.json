@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-04T05:25:02.691Z",
+ "updatedAt": "2026-10-07T04:07:32.039Z",
  "version": "first",
  "filter": {
   "produkt": null,
@@ -10,17 +10,200 @@
   "till": null
  },
  "total": {
-  "n": 0,
-  "hits": 0,
-  "rate": null,
-  "expected": null,
+  "n": 64,
+  "hits": 45,
+  "rate": 0.703,
+  "expected": 0.716,
   "bets": 0,
   "profit": 0,
   "roi": null
  },
  "per": "product",
- "groups": [],
- "perMarket": [],
- "perBand": [],
+ "groups": [
+  {
+   "key": "europatipset",
+   "n": 52,
+   "hits": 43,
+   "rate": 0.827,
+   "expected": 0.75,
+   "bets": 0,
+   "profit": 0,
+   "roi": null
+  },
+  {
+   "key": "hastar",
+   "n": 12,
+   "hits": 2,
+   "rate": 0.167,
+   "expected": 0.569,
+   "bets": 0,
+   "profit": 0,
+   "roi": null
+  }
+ ],
+ "perMarket": [
+  {
+   "key": "enkelrad",
+   "n": 13,
+   "hits": 7,
+   "rate": 0.538,
+   "expected": 0.537,
+   "bets": 0,
+   "profit": 0,
+   "roi": null
+  },
+  {
+   "key": "kupong A",
+   "n": 13,
+   "hits": 12,
+   "rate": 0.923,
+   "expected": 0.868,
+   "bets": 0,
+   "profit": 0,
+   "roi": null
+  },
+  {
+   "key": "kupong B",
+   "n": 13,
+   "hits": 11,
+   "rate": 0.846,
+   "expected": 0.774,
+   "bets": 0,
+   "profit": 0,
+   "roi": null
+  },
+  {
+   "key": "kupong C",
+   "n": 13,
+   "hits": 13,
+   "rate": 1,
+   "expected": 0.82,
+   "bets": 0,
+   "profit": 0,
+   "roi": null
+  },
+  {
+   "key": "etta",
+   "n": 5,
+   "hits": 1,
+   "rate": 0.2,
+   "expected": 0.448,
+   "bets": 0,
+   "profit": 0,
+   "roi": null
+  },
+  {
+   "key": "topp 3",
+   "n": 5,
+   "hits": 1,
+   "rate": 0.2,
+   "expected": 0.772,
+   "bets": 0,
+   "profit": 0,
+   "roi": null
+  },
+  {
+   "key": "spik",
+   "n": 2,
+   "hits": 0,
+   "rate": 0,
+   "expected": 0.364,
+   "bets": 0,
+   "profit": 0,
+   "roi": null
+  }
+ ],
+ "perBand": [
+  {
+   "key": "100-110 %",
+   "n": 14,
+   "hits": 14,
+   "rate": 1,
+   "expected": 1,
+   "bets": 0,
+   "profit": 0,
+   "roi": null
+  },
+  {
+   "key": "60-70 %",
+   "n": 11,
+   "hits": 9,
+   "rate": 0.818,
+   "expected": 0.631,
+   "bets": 0,
+   "profit": 0,
+   "roi": null
+  },
+  {
+   "key": "70-80 %",
+   "n": 11,
+   "hits": 9,
+   "rate": 0.818,
+   "expected": 0.738,
+   "bets": 0,
+   "profit": 0,
+   "roi": null
+  },
+  {
+   "key": "80-90 %",
+   "n": 8,
+   "hits": 5,
+   "rate": 0.625,
+   "expected": 0.837,
+   "bets": 0,
+   "profit": 0,
+   "roi": null
+  },
+  {
+   "key": "40-50 %",
+   "n": 7,
+   "hits": 1,
+   "rate": 0.143,
+   "expected": 0.457,
+   "bets": 0,
+   "profit": 0,
+   "roi": null
+  },
+  {
+   "key": "50-60 %",
+   "n": 6,
+   "hits": 3,
+   "rate": 0.5,
+   "expected": 0.551,
+   "bets": 0,
+   "profit": 0,
+   "roi": null
+  },
+  {
+   "key": "30-40 %",
+   "n": 3,
+   "hits": 2,
+   "rate": 0.667,
+   "expected": 0.36,
+   "bets": 0,
+   "profit": 0,
+   "roi": null
+  },
+  {
+   "key": "20-30 %",
+   "n": 2,
+   "hits": 0,
+   "rate": 0,
+   "expected": 0.242,
+   "bets": 0,
+   "profit": 0,
+   "roi": null
+  },
+  {
+   "key": "90-100 %",
+   "n": 2,
+   "hits": 2,
+   "rate": 1,
+   "expected": 0.999,
+   "bets": 0,
+   "profit": 0,
+   "roi": null
+  }
+ ],
  "perValue": []
 }
