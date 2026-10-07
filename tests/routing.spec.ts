@@ -443,7 +443,14 @@ test('Oddset: tipskortet har raden Kort Ö/U med domare och spela från för 3.5
   await page.route('**/api/dashboard*', async (route) => {
     const res = await route.fetch();
     const body = await res.json();
-    for (const k of ['bestUpcoming', 'allCandidates']) for (const t of body[k] || []) t.tips = { ...t.tips, CARDS: cards, BOTH_CARDS: { pick: 'JA', pYes: 0.8, confidence: 0.8 } };
+    for (const k of ['bestUpcoming', 'allCandidates']) for (const t of body[k] || []) t.tips = {
+      ...t.tips,
+      '1X2': { pick: '2', confidence: 0.421, probs: { home: 0.325, draw: 0.254, away: 0.421 } },
+      BTTS: { pick: 'JA', confidence: 0.538, pYes: 0.538 },
+      OU25: { ...(t.tips?.OU25 || {}), pick: 'OVER 2.5', confidence: 0.527, pOver: 0.527 },
+      CARDS: cards,
+      BOTH_CARDS: { pick: 'JA', pYes: 0.8, confidence: 0.8 },
+    };
     await route.fulfill({ response: res, json: body });
   });
   await page.goto(base + '/tips');
@@ -458,17 +465,38 @@ test('Oddset: tipskortet har raden Kort Ö/U med domare och spela från för 3.5
   await expect(row).toContainText('3.5: Ö 1.44 / U 4.32');
   await expect(row).toContainText('5.5: Ö 3 /');
   await expect(row.locator('td.val')).toContainText('spela från 1.93');
-  // Klick på U visar under-linjens värde: 1.08/0.44 = 2.45
+  await expect(row.locator('td.num')).toHaveText('56%');
+  // Klick på U visar under-linjens värde och chans: 1 - 0.56 = 44 %, spela från 1.08/0.44 = 2.45
   await row.locator('.odd-pill[data-key="under"]').click();
   await expect(row.locator('td.val')).toContainText('spela från 2.45');
+  await expect(row.locator('td.num')).toHaveText('44%');
+  await row.locator('.odd-pill[data-key="over"]').click();
+  await expect(row.locator('td.num')).toHaveText('56%');
   // Båda lagen får kort: Ja 1.08/0.8 = 1.35, Nej 1.08/0.2 = 5.4
   const both = page.locator('tr[data-mkt="BOTH_CARDS"]').first();
   await expect(both.locator('td.mkt')).toHaveText('Båda kort');
   await expect(both.locator('.odd-pill.is-tip')).toContainText('JA');
   await expect(both).toContainText('Spela från – Ja 1.35 / Nej 5.4');
   await expect(both.locator('td.val')).toContainText('spela från 1.35');
+  await expect(both.locator('td.num')).toHaveText('80%');
   await both.locator('.odd-pill[data-key="bc-no"]').click();
   await expect(both.locator('td.val')).toContainText('spela från 5.4');
+  await expect(both.locator('td.num')).toHaveText('20%');
+  // 1X2 och BTTS: varje utfall har sin egen chans
+  const x12 = page.locator('#tips tr[data-mkt="1X2"]').first();
+  await expect(x12.locator('td.num')).toHaveText('42%');
+  await x12.locator('.odd-pill[data-key="home"]').click();
+  await expect(x12.locator('td.num')).toHaveText('33%');
+  await x12.locator('.odd-pill[data-key="draw"]').click();
+  await expect(x12.locator('td.num')).toHaveText('25%');
+  const btts = page.locator('#tips tr[data-mkt="BTTS"]').first();
+  await expect(btts.locator('td.num')).toHaveText('54%');
+  await btts.locator('.odd-pill[data-key="btts-no"]').click();
+  await expect(btts.locator('td.num')).toHaveText('46%');
+  const ou = page.locator('#tips tr[data-mkt="OU25"]').first();
+  await expect(ou.locator('td.num')).toHaveText('53%');
+  await ou.locator('.odd-pill[data-key="under"]').click();
+  await expect(ou.locator('td.num')).toHaveText('47%');
 });
 
 test('Oddset: bästa tipsen överst kommer från kommande omgång, även utan värdetips', async ({ page }) => {
