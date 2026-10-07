@@ -475,6 +475,20 @@ test.describe('stryk-calibration', () => {
     expect(assessMatch([0.5, 0.3, 0.2], 'x', null, 0.5)).toBeNull();
   });
 
+  test('assessMatch: favoriten byter aldrig sida (samma tecken som Oddset)', async () => {
+    const { assessMatch } = await lib('stryk-calibration.mjs');
+    // Aston Villa–Brentford 2026-10-10: modellen 2 (37 %), historiken sanker bortafavoriter kraftigt
+    const weak = { bs: { 'borta|0.35': { n: 200, w: 40, e: 74 } }, lg: {} };
+    const a = assessMatch([0.36, 0.268, 0.372], 'Premier League', weak, 0);
+    expect(a.fav).toBe('2');
+    expect(a.sysP.indexOf(Math.max(...a.sysP))).toBe(2);
+    expect(a.sysP[2]).toBeGreaterThan(a.sysP[0]);
+    expect(a.sysP.reduce((s: number, x: number) => s + x, 0)).toBeCloseTo(1, 3);
+    // Hemmafavorit som sanks: 1 forblir storst
+    const h = assessMatch([0.4, 0.25, 0.35], '', { bs: { 'hemma|0.40': { n: 200, w: 40, e: 80 } }, lg: {} }, 0);
+    expect(h.sysP.indexOf(Math.max(...h.sysP))).toBe(0);
+  });
+
   test('assessmentText: lag, spikbar/inte spikbar, ligarad bara fran 40 matcher', async () => {
     const { assessMatch, assessmentText } = await lib('stryk-calibration.mjs');
     expect(assessmentText(null, 'A', 'B')).toBeNull();
@@ -1496,7 +1510,7 @@ test.describe('stryk-engine: kupong A, B och C', () => {
   test('2-4 spikar per kupong, B har aldrig samma gardering som A och högst 1 spik skiljer', async () => {
     test.skip(products.length === 0, 'data/stryktipset.json saknas');
     test.setTimeout(300_000);
-    const { generateCoupons, skrallOk } = await engine();
+    const { generateCoupons, skrallOk, sysFinal } = await engine();
     for (const p of products.slice(0, 2)) {
       const out = generateCoupons(p, {});
       const { A, B, C } = out;
@@ -1511,14 +1525,20 @@ test.describe('stryk-engine: kupong A, B och C', () => {
         // Minst 3 helgarderingar (användarens regel 2026-10-02)
         // B helgarderar bara där A inte gör det (A:s halvor utan helgula matcher + högst 1 spikskillnad) – A/B-regeln går före
         const allY = (i: number) => [0, 1, 2].every((k) => { const f = p.events[i].folk?.[k]; return f != null && f < 0.45 && Math.round(f * 100) > 25; });
-        const helgCap = name === 'B' ? A.picks.filter((x: any, i: number) => x.signs.length === 2 && !allY(i)).length + Math.min(1, A.picks.filter((x: any, i: number) => x.signs.length === 1 && !allY(i)).length) : 13;
+        // A:s spikade 1:or som behövs för regeln om minst 2 spikade 1:or (2026-10-06) kan inte bli helgardering i B
+        const isOne = (x: any, i: number) => x.signs === '1' && p.events[i].tip === '1';
+        const onesMin = Math.min(2, p.events.filter((e: any) => e.tip === '1').length);
+        const aOnes = A.picks.filter(isOne).length;
+        const spare = A.picks.filter((x: any, i: number) => x.signs.length === 1 && !allY(i) && !isOne(x, i)).length + Math.min(Math.max(0, aOnes - onesMin), A.picks.filter((x: any, i: number) => isOne(x, i) && !allY(i)).length);
+        const helgCap = name === 'B' ? A.picks.filter((x: any, i: number) => x.signs.length === 2 && !allY(i)).length + Math.min(1, spare) : 13;
         expect(c.picks.filter((x: any) => x.signs.length === 3).length, `${at} ${name}: minst 3 helgarderingar`).toBeGreaterThanOrEqual(Math.min(3, helgCap));
         // Spik på en match som inte bedömts som spikbar (reserv) bara för att nå 2 spikar, aldrig fler
         // Skrällspik (högst en, runt 40 % med värde mot folket) räknas inte som reserv
-        const sysE = (e: any) => ({ final: e.spik?.used ? e.spik.sysP : e.final, folk: e.folk });
+        const sysE = (e: any) => ({ final: sysFinal(e), folk: e.folk, tip: e.tip });
         // B ärver A:s spikar (2026-10-03) – en ärvd spik är A:s bedömning och räknas inte som B:s reservspik
         const inherited = (x: any, i: number) => name === 'B' && A.picks[i].signs.length === 1 && A.picks[i].signs === x.signs;
-        const notSpikbar = c.picks.map((x: any, i: number) => x.signs.length === 1 && !inherited(x, i) && p.events[i].spik?.used && !(p.events[i].spik.spikbar && p.events[i].spik.fav === x.signs));
+        // Spik på 1 där Oddset tippar 1 (minst 2 per kupong, 2026-10-06) är ingen reservspik
+        const notSpikbar = c.picks.map((x: any, i: number) => x.signs.length === 1 && !inherited(x, i) && !(x.signs === '1' && p.events[i].tip === '1') && p.events[i].spik?.used && !(p.events[i].spik.spikbar && p.events[i].spik.fav === x.signs));
         // B: skrällspik "näst på tur" (rules.skrallNext) räknas också som skrällspik
         const isNext = (x: any, i: number) => ['B', 'C'].includes(name) && c.rules.skrallNext?.match === i + 1 && c.rules.skrallNext.sign === x.signs;
         const skrall = c.picks.filter((x: any, i: number) => (notSpikbar[i] || isNext(x, i)) && (skrallOk(sysE(p.events[i]), '1X2'.indexOf(x.signs)) || isNext(x, i))).length;
@@ -1793,7 +1813,7 @@ test.describe('stryk-engine: kupong A, B och C', () => {
   test('kuponger: färgreglernas min och max går alltid att nå i grundraden', async () => {
     test.skip(products.length === 0, 'data/stryktipset.json saknas');
     test.setTimeout(300_000);
-    const { generateCoupons, colorTriples, redGreenColors, redGreenRows, skrallOk } = await engine();
+    const { generateCoupons, colorTriples, redGreenColors, redGreenRows, skrallOk, sysFinal } = await engine();
     const col = (f: number | null | undefined) => (f == null ? 1 : f >= 0.45 ? 0 : Math.round(f * 100) <= 25 ? 2 : 1);
     for (const p of products.slice(0, 2)) {
       const out = generateCoupons(p, {});
@@ -1863,7 +1883,7 @@ test.describe('stryk-engine: kupong A, B och C', () => {
         if (c.rules.payoutExact === true) expect(c.rules.payoutMin, `${p.product} ${name}`).toBeLessThanOrEqual(c.rules.payoutMinReal * (['B', 'C'].includes(name) ? 75 / 50 : 50 / 30) + 1);
         // B: minst en skrällspik (35–47 %, minst 3 procentenheter över folket) om den inte fick släppas (står i kupongen)
         if (['B', 'C'].includes(name)) {
-          const ev = p.events.map((e: any) => (e.spik?.used && e.spik.sysP ? { ...e, final: e.spik.sysP } : e));
+          const ev = p.events.map((e: any) => ({ ...e, final: sysFinal(e) }));
           const nx = c.rules.skrallNext;
           const sk = c.picks.filter((x: any, i: number) => x.signs.length === 1 && (skrallOk(ev[i], '1X2'.indexOf(x.signs)) || (nx?.match === i + 1 && nx.sign === x.signs))).length;
           if (c.rules.skrallMissing) expect(c.relaxed.some((t: string) => t.includes('ingen skrällspik')), `${p.product} B`).toBe(true);
@@ -1914,9 +1934,9 @@ test.describe('stryk-engine: kupong A, B och C', () => {
   test('kupong B (risksystemet): alltid en skrällspik – på 35–47 % eller näst på tur, gräns 50 000–75 000 kr', async () => {
     test.skip(products.length === 0, 'data/stryktipset.json saknas');
     test.setTimeout(300_000);
-    const { generateCoupons, skrallOk, skrallQueue } = await engine();
+    const { generateCoupons, skrallOk, skrallQueue, sysFinal } = await engine();
     for (const p of products.slice(0, 2)) {
-      const ev = p.events.map((e: any) => (e.spik?.used && e.spik.sysP ? { ...e, final: e.spik.sysP } : e));
+      const ev = p.events.map((e: any) => ({ ...e, final: sysFinal(e) }));
       const { A, B } = generateCoupons(p, {});
       // "Saknas aldrig, ta en som är näst på tur" (användaren 2026-10-02 kväll)
       // Saknas skrällspiken (A/B-regeln: spikskillnaden gick åt) ska det stå i kupongen
@@ -1929,7 +1949,7 @@ test.describe('stryk-engine: kupong A, B och C', () => {
       if (!B.rules.skrallMissing) expect(sk + inheritedSkrall, `${p.product}: B skrällspik`).toBeGreaterThanOrEqual(1);
       expect(sk, `${p.product}: högst en egen skrällspik i B`).toBeLessThanOrEqual(1);
       if (nx) {
-        // Kandidaten i tur: inte favoriten, inte A:s spik, och en av de första i kön
+        // Kandidaten i tur: Oddsets tecken, inte A:s spik, och en av de första i kön
         const setsA = A.picks.map((x: any) => [...x.signs].map((s: string) => '1X2'.indexOf(s)));
         const q = skrallQueue(ev, setsA).slice(0, 5).map((c: any) => `${c.i + 1}:${'1X2'[c.k]}`);
         expect(q, `${p.product}: ${JSON.stringify(nx)}`).toContain(`${nx.match}:${nx.sign}`);
@@ -1948,9 +1968,9 @@ test.describe('stryk-engine: kupong A, B och C', () => {
   test('kupong C (skrällsystemet): skrällspik, röd 2–6, högsta rad minst 1 miljon, gräns 50 000–75 000 kr, 700–850 kr', async () => {
     test.skip(products.length === 0, 'data/stryktipset.json saknas');
     test.setTimeout(300_000);
-    const { generateCoupons, skrallOk, skrallQueue } = await engine();
+    const { generateCoupons, skrallOk, skrallQueue, sysFinal } = await engine();
     for (const p of products.slice(0, 2)) {
-      const ev = p.events.map((e: any) => (e.spik?.used && e.spik.sysP ? { ...e, final: e.spik.sysP } : e));
+      const ev = p.events.map((e: any) => ({ ...e, final: sysFinal(e) }));
       const { C } = generateCoupons(p, {});
       expect(C.rules.skrallMissing, `${p.product}: C saknar skrällspik – ${C.relaxed.join('; ')}`).toBeFalsy();
       const nx = C.rules.skrallNext;
@@ -1958,7 +1978,9 @@ test.describe('stryk-engine: kupong A, B och C', () => {
       expect(sk, `${p.product}: C skrällspik`).toBe(1);
       // C är fri från A: kön har ingen A-spärr
       if (nx) expect(skrallQueue(ev).slice(0, 5).map((c: any) => `${c.i + 1}:${'1X2'[c.k]}`)).toContain(`${nx.match}:${nx.sign}`);
-      if (C.rules.redFallback) expect(C.rules.colorRules.red).toEqual([1, 3]);
+      // Fria färger (sista reserven, flaggat) när regel ett – Oddsets tecken och 2 spikade 1:or – inte lämnar fasta färger
+      if (C.rules.colorsFree) expect(C.relaxed.some((t: string) => t.includes('optimerades fritt')), p.product).toBe(true);
+      else if (C.rules.redFallback) expect(C.rules.colorRules.red).toEqual([1, 3]);
       else if (!C.rules.colorsOff?.includes('red')) expect(C.rules.colorRules.red).toEqual([2, 6]);
       // Skrällsystemet: högsta raden minst 1 miljon (verklig utdelning), annars flaggat och i texten
       const maxRow = Math.max(...C.rowReal);
@@ -1979,9 +2001,10 @@ test.describe('stryk-engine: kupong A, B och C', () => {
       // väntade kryss (summan av vår X-chans i hela procent)
       const xu = ev.map((e: any) => Math.round(e.final[1] * 100));
       const share = xu.reduce((s: number, u: number, i: number) => s + (C.picks[i].signs.includes('X') ? u : 0), 0) / xu.reduce((s: number, u: number) => s + u, 0);
-      expect(share, `${p.product}: C kryss ${C.picks.map((x: any) => x.signs).join(' ')}`).toBeGreaterThanOrEqual(0.5);
+      // Regel ett (Oddsets tecken på varje match, 2026-10-06) går före: räcker kryssen inte är det flaggat och står i kupongen
+      if (C.rules.xShareShort) expect(C.relaxed.some((t: string) => t.includes('väntade kryss')), p.product).toBe(true);
+      else expect(share, `${p.product}: C kryss ${C.picks.map((x: any) => x.signs).join(' ')}`).toBeGreaterThanOrEqual(0.5);
       expect(C.rules.xShare).toBeCloseTo(share, 3);
-      expect(C.rules.xShareShort).toBeFalsy();
     }
   });
 
@@ -1995,20 +2018,61 @@ test.describe('stryk-engine: kupong A, B och C', () => {
     expect(srv.xShareOf(ev, [[0, 1], [0], [1, 2], [2]])).toBeCloseTo(45 / 100, 6);
   });
 
-  test('skrallQueue: närmast 35–47 % med värde mot folket, aldrig favoriten eller A:s spik', async () => {
-    const { skrallQueue } = await engine();
-    const e = (final: number[], folk: number[]) => ({ final, folk });
+  // 2026-10-06 (användaren: "aldrig säga emot Oddset"): skrällspiken ligger bara på Oddsets tecken – en understreckad favorit
+  test('skrallQueue: Oddsets tecken närmast 35–47 % med värde mot folket, aldrig andra tecken eller A:s spik', async () => {
+    const { skrallQueue, skrallOk } = await engine();
+    const e = (final: number[], folk: number[], tip?: string) => ({ final, folk, tip });
     const events = [
-      e([0.50, 0.27, 0.23], [0.60, 0.22, 0.18]), // X 27 %: 8 p.e. under fönstret
-      e([0.30, 0.25, 0.45], [0.25, 0.25, 0.50]), // 1 30 %: 5 p.e. under (värde +5), 2 är favorit
-      e([0.55, 0.12, 0.33], [0.50, 0.15, 0.35]), // 2 33 %: 2 under men 2 p.e. under folket -> 2 + 5
+      e([0.50, 0.27, 0.23], [0.60, 0.22, 0.18]), // 1 50 %: 3 p.e. över fönstret och 10 under folket
+      e([0.30, 0.25, 0.45], [0.25, 0.25, 0.50]), // 2 45 % i fönstret men 5 under folket; 1 30 % är inte Oddsets
+      e([0.33, 0.15, 0.52], [0.35, 0.15, 0.50], '2'), // 2 52 %: 5 över fönstret, +2 mot folket (1 saknas till 3)
+      e([0.38, 0.27, 0.35], [0.30, 0.30, 0.40]), // 1 38 % och +8: skrallOk – inte i kön
     ];
     const q = skrallQueue(events).map((c: any) => `${c.i}:${'1X2'[c.k]}`);
-    expect(q[0]).toBe('1:1');
-    expect(q).not.toContain('1:2'); // favoriten
-    expect(q.indexOf('1:1')).toBeLessThan(q.indexOf('2:2'));
+    expect(q).toEqual(['2:2', '1:2', '0:1']);
+    expect(skrallOk(events[3], 0)).toBe(true);
+    expect(skrallOk(events[1], 0)).toBe(false); // inte Oddsets tecken
     // A:s spik på samma tecken tas aldrig
-    expect(skrallQueue(events, [[0], [0], [0]]).map((c: any) => `${c.i}:${'1X2'[c.k]}`)).not.toContain('1:1');
+    expect(skrallQueue(events, [[0], [2], [0], [0]]).map((c: any) => `${c.i}:${'1X2'[c.k]}`)).toEqual(['2:2']);
+  });
+
+  test('regel ett: alla kuponger har Oddsets tecken på varje match, aldrig bara röda, minst 2 spikade 1:or', async () => {
+    test.skip(products.length === 0, 'data/stryktipset.json saknas');
+    test.setTimeout(300_000);
+    const { generateCoupons, ONES_MIN, followsOddset, oddsetSign } = await engine();
+    expect(ONES_MIN).toBe(2);
+    const red = (f: number | undefined) => f != null && Math.round(f * 100) <= 25;
+    for (const p of products.slice(0, 2)) {
+      const out = generateCoupons(p, {});
+      const ones = Math.min(2, p.events.filter((e: any) => e.tip === '1').length);
+      for (const name of ['A', 'B', 'C']) {
+        const c = out[name];
+        if (!c) continue;
+        const at = `${p.product} ${name}`;
+        c.picks.forEach((x: any, i: number) => {
+          const e = p.events[i];
+          expect(x.signs, `${at} match ${i + 1}: Oddset ${e.tip}`).toContain(e.tip);
+          if (x.signs.length > 1) expect([...x.signs].every((s: string) => red(e.folk?.['1X2'.indexOf(s)])), `${at} match ${i + 1}: bara röda`).toBe(false);
+        });
+        expect(c.picks.filter((x: any, i: number) => x.signs === '1' && p.events[i].tip === '1').length, `${at}: spikade 1:or`).toBeGreaterThanOrEqual(ones);
+      }
+    }
+    // Hjälparna: Oddsets tecken = matchens tips, annars troligaste
+    const e = { tip: '2', final: [0.4, 0.25, 0.35], folk: [0.5, 0.2, 0.2] };
+    expect(oddsetSign(e)).toBe(2);
+    expect(oddsetSign({ final: [0.4, 0.25, 0.35] })).toBe(0);
+    expect(followsOddset(e, [0, 1])).toBe(false); // saknar 2
+    expect(followsOddset(e, [1, 2])).toBe(false); // X och 2 båda röda (20 %)
+    expect(followsOddset(e, [0, 2])).toBe(true);
+    expect(followsOddset(e, [2])).toBe(true); // spik på Oddsets tecken
+  });
+
+  test('sysFinal: spikbedömningens procent bara när favoriten är densamma', async () => {
+    const { sysFinal } = await engine();
+    const final = [0.36, 0.268, 0.372];
+    expect(sysFinal({ final, spik: { used: true, sysP: [0.3827, 0.2849, 0.3335] } })).toEqual(final); // vänd: Villa–Brentford
+    expect(sysFinal({ final, spik: { used: true, sysP: [0.34, 0.27, 0.39] } })).toEqual([0.34, 0.27, 0.39]);
+    expect(sysFinal({ final, spik: { used: false, sysP: [0.34, 0.27, 0.39] } })).toEqual(final);
   });
 
   test('skrallTip: skrällspik att läsa om – aldrig favoriten, minst 30 % och understreckad, 35–47 % först, med varför', async () => {

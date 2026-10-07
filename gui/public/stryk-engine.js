@@ -109,15 +109,15 @@ let skrallMin = 0; // för systemet som byggs just nu (sätts i buildWithLadder)
 // den, eller ingen finns) räknas nästa kandidat ur skrallQueue också som skrällspik ("i:k", sätts i buildWithLadder)
 let extraSkrall = new Set();
 const isSkrall = (e, i, k) => skrallOk(e, k) || extraSkrall.has(`${i}:${k}`);
-// Kandidaterna när ingen skrallOk går: tecken som inte är matchens favorit, inte A:s spik, inte låsta och inte redan
+// Kandidaterna när ingen skrallOk går: Oddsets tecken (aldrig emot Oddset, 2026-10-06), inte A:s spik, inte låsta och inte redan
 // skrallOk, närmast 35–47 % och med mest värde mot folket (avstånd till fönstret + det som saknas till 3 procentenheter)
 export function skrallQueue(events, setsA = null, forced = []) {
   const out = [];
   events.forEach((e, i) => {
     if (forced[i] != null) return;
-    const fav = e.final.indexOf(Math.max(...e.final));
+    const fav = oddsetSign(e);
     for (const k of [0, 1, 2]) {
-      if (k === fav || e.folk?.[k] == null || skrallOk(e, k) || (setsA?.[i]?.length === 1 && setsA[i][0] === k)) continue;
+      if (k !== fav || e.folk?.[k] == null || skrallOk(e, k) || (setsA?.[i]?.length === 1 && setsA[i][0] === k)) continue;
       const p = e.final[k];
       const dist = p < SKRALL_SPIK.min ? SKRALL_SPIK.min - p : p > SKRALL_SPIK.max ? p - SKRALL_SPIK.max : 0;
       out.push({ i, k, p, folk: e.folk[k], score: dist + Math.max(0, SKRALL_SPIK.edge - (p - e.folk[k])) });
@@ -172,7 +172,7 @@ export function skrallTips(events, n = SKRALL_TIP.count) {
       const folk = e.folk[k];
       if (k === fav || folk == null || p < SKRALL_TIP.weakMin || p <= folk) continue;
       const weak = p < SKRALL_TIP.min || p - folk < SKRALL_SPIK.edge;
-      cands.push({ i, k, p, folk, edge: p - folk, weak, window: !weak && skrallOk(e, k) });
+      cands.push({ i, k, p, folk, edge: p - folk, weak, window: !weak && skrallWindow(e, k) });
     }
   });
   cands.sort((a, b) => a.weak - b.weak || b.window - a.window || b.edge - a.edge || b.p - a.p);
@@ -222,7 +222,17 @@ function describeSkrall(e, c) {
   reasons.push(`Få har den på sin kupong, så går den in blir utdelningen hög. Men den går bara in ungefär ${Math.max(1, Math.round(c.p * 10))} av 10 gånger – en chansning.`);
   return { ...c, eventNumber: e.eventNumber, sign: SIGNS[c.k], home: e.home, away: e.away, league: e.league, kickoff: e.kickoff, outcome: names[c.k], hit: e.result?.outcome ? e.result.outcome === SIGNS[c.k] : null, score: e.result?.score || null, reasons };
 }
-export const skrallOk = (e, k) => e.folk?.[k] != null && e.final[k] >= SKRALL_SPIK.min && e.final[k] <= SKRALL_SPIK.max && e.final[k] - e.folk[k] >= SKRALL_SPIK.edge;
+const skrallWindow = (e, k) => e.folk?.[k] != null && e.final[k] >= SKRALL_SPIK.min && e.final[k] <= SKRALL_SPIK.max && e.final[k] - e.folk[k] >= SKRALL_SPIK.edge;
+// Skrällspik bara på Oddsets tecken (understreckad favorit) – kupongen säger aldrig emot Oddset (användaren 2026-10-06)
+export const skrallOk = (e, k) => k === oddsetSign(e) && skrallWindow(e, k);
+// Regel ett (användaren 2026-10-06: "tippa det troligaste resultatet, det Oddset säger, aldrig säga emot Oddset"):
+// varje gardering i A, B och C innehåller Oddsets tecken (matchens tips), och en gardering är aldrig bara röda tecken.
+// Gäller inte dina egna krav. Samma som fetch-stryktipset.mjs.
+export const oddsetSign = (e) => (SIGNS.includes(e.tip) ? SIGNS.indexOf(e.tip) : e.final.indexOf(Math.max(...e.final)));
+export const followsOddset = (e, sub) => sub.includes(oddsetSign(e)) && !(sub.length > 1 && sub.every((k) => isRed(e, k)));
+// Minst ONES_MIN spikade 1:or per kupong (användaren 2026-10-06), på matcher där Oddset tippar 1. Finns färre: så många som finns.
+export const ONES_MIN = 2;
+const isOne = (e, sub) => sub.length === 1 && sub[0] === 0 && oddsetSign(e) === 0;
 // Färgregler (antal gröna/gula/röda tecken per rad, alla 13 matcher) är aldrig 0–13 (användarens regel 2026-09-30).
 // Stryktipset: p.colorBands (rätt rad senaste året, scripts/lib/stryk-color-bands.mjs) är yttre gräns – min/max aldrig
 // utanför det som hänt – och röda har max 4 (användaren: snittet är 1,9 men 3–4 röda ger stora vinster; backtest
@@ -325,6 +335,12 @@ function grundCandidates1(events, maxRows, forced, avoid = null, spikMin = 0, lo
   const spikDiff = (x, i) => (B_INHERIT && avoid && forced[i] == null && (x.length === 1 || avoid[i].length === 1) && !inheritA(x, i) ? 1 : 0);
   const options = (e, i) => {
     if (forced[i] != null) return [forced[i]];
+    const opts = options1(e, i).filter((x) => followsOddset(e, x));
+    // Spik på 1 (ONES_MIN) finns alltid som alternativ där Oddset tippar 1
+    if (oddsetSign(e) === 0 && !opts.some((x) => x.length === 1 && x[0] === 0)) opts.push([0]);
+    return opts;
+  };
+  const options1 = (e, i) => {
     // Ingen helgardering där alla tecken är gula (användaren 2026-10-02: "3 gula helor är exakt samma sak som blå helor")
     // Kryss där folket missar det (X_FOLK, A och B): ingen 1-2 – favorit + X i stället (läggs till i options0)
     const noX12 = (x) => !(xFolkHere(e) && x.length === 2 && !x.includes(1));
@@ -355,17 +371,18 @@ function grundCandidates1(events, maxRows, forced, avoid = null, spikMin = 0, lo
   // Nyckeln packas som heltal (bas 14 per fält) och garderingarna som en kedja bakåt (prev) – tecknen räknas ut en gång
   // per match, inte per tillstånd (förut ~12 s på Stryktipset 4974)
   const B = 14;
-  let dp = new Map([[0, { lp: 0, prev: null, sub: null, h: 0, f: 0, l: 0, rc: 0, sk: 0, ay: 0, sd: 0 }]]);
+  let dp = new Map([[0, { lp: 0, prev: null, sub: null, h: 0, f: 0, l: 0, rc: 0, sk: 0, ay: 0, sd: 0, o: 0 }]]);
   events.forEach((e, i) => {
     const subs = options(e, i).map((sub) => {
       // A:s spik i B räknas inte som reservspik (A har redan bedömt den)
       const free = forced[i] == null && sub.length === 1 && !spikOk(e, sub[0], spikMin) && !inheritA(sub, i);
       const skr = free && skrallCount > 0 && isSkrall(e, i, sub[0]);
       return {
-        sub, dh: sub.length === 2 ? 1 : 0, df: sub.length === 3 ? 1 : 0, dd: spikDiff(sub, i), ds: skr ? 1 : 0, dl: free && !skr ? 1 : 0,
+        sub, dh: sub.length === 2 ? 1 : 0, df: sub.length === 3 ? 1 : 0, dd: spikDiff(sub, i), ds: skr ? 1 : 0, dl: free && !skr && !isOne(e, sub) ? 1 : 0,
         dlp: Math.log(Math.max(1e-9, xTiltOn ? xCover(e, sub) : tiltShare(e, sub, grundTilt))), dx: xLam && sub.includes(1) ? xLam * e.final[1] : 0,
         // Räknas per match (två röda tecken på samma match kan aldrig båda gå in – användaren 2026-10-02)
         dr: sub.length > 1 && sub.some((x) => isRed(e, x)) ? 1 : 0,
+        d1: isOne(e, sub) ? 1 : 0,
         // Helgula garderingar bara som de blå halvorna (högst BLUE_HALVES) – fler ger ändå alltid en gul per rad (2026-10-02)
         day: sub.length > 1 && !(forced?.[i] != null) && allYellowMatch(e) ? 1 : 0,
       };
@@ -381,9 +398,10 @@ function grundCandidates1(events, maxRows, forced, avoid = null, spikMin = 0, lo
         if (nay > ayLimit) continue;
         const lp = st.lp + o.dlp + o.dx;
         const nr = Math.min(minRed, st.rc + o.dr);
-        const k = (((((nh * B + nf) * B + nl) * B + nr) * B + ns) * B + nay) * B + nd;
+        const no = Math.min(ONES_MIN, st.o + o.d1);
+        const k = ((((((nh * B + nf) * B + nl) * B + nr) * B + ns) * B + nay) * B + nd) * B + no;
         const old = next.get(k);
-        if (!old || old.lp < lp) next.set(k, { lp, prev: st, sub: o.sub, h: nh, f: nf, l: nl, rc: nr, sk: ns, ay: nay, sd: nd });
+        if (!old || old.lp < lp) next.set(k, { lp, prev: st, sub: o.sub, h: nh, f: nf, l: nl, rc: nr, sk: ns, ay: nay, sd: nd, o: no });
       }
     }
     dp = next;
@@ -401,11 +419,18 @@ function grundCandidates1(events, maxRows, forced, avoid = null, spikMin = 0, lo
   // (AB_SPIK_DIFF). Har A så många helor att 3 inte går i B blir det så många som går (A/B-regeln går före, 2026-10-03)
   // Inte på matcher där alla tecken ligger på 26–44 % (där blir det aldrig helgardering)
   const helgOk = (i) => forced[i]?.length === 3 || (forced[i] == null && !allYellowMatch(events[i]));
-  const bHelgMax = avoid && B_INHERIT ? avoid.filter((x, i) => x.length === 2 && helgOk(i)).length + Math.min(AB_SPIK_DIFF, avoid.filter((x, i) => x.length === 1 && helgOk(i)).length) : 13;
+  // Minst ONES_MIN spikade 1:or där Oddset tippar 1 (så många som finns; dina krav räknas om de låser en 1:a). Dina egna
+  // låsta spikar på andra tecken går före och räknas av från de 1:or som krävs (annars håller utdelningsgränsen inte)
+  const lockedOther = forced.filter((f, i) => f?.length === 1 && !isOne(events[i], f)).length;
+  const onesMin = Math.min(ONES_MIN - lockedOther, events.filter((e, i) => oddsetSign(e) === 0 && (forced[i] == null || isOne(e, forced[i]))).length);
+  // B: av A:s spikar kan bara de som inte behövs för 1:orna bli helgardering (1:orna och Oddset går före, 2026-10-06)
+  const aOnes = avoid ? avoid.filter((x, i) => isOne(events[i], x)).length : 0;
+  const aSpare = avoid ? avoid.filter((x, i) => x.length === 1 && helgOk(i) && !isOne(events[i], x)).length + Math.min(Math.max(0, aOnes - onesMin), avoid.filter((x, i) => isOne(events[i], x) && helgOk(i)).length) : 0;
+  const bHelgMax = avoid && B_INHERIT ? avoid.filter((x, i) => x.length === 2 && helgOk(i)).length + Math.min(AB_SPIK_DIFF, aSpare) : 13;
   const minHelg = Math.min(MIN_HELG, bHelgMax, forced.filter((f) => f == null || f.length === 3).length);
   // Minst BLUE_HALVES halvgarderingar (de blir blå); låser användaren så mycket att det inte går gäller deras krav
   const minHalf = Math.min(BLUE_HALVES, forced.filter((f) => f == null || f.length === 2).length);
-  const ok = (st) => spikes(st) >= minSpikes && spikes(st) <= maxSpikes && (st.nl === 0 || spikes(st) === minSpikes || loose === "max") && st.sets.filter((x) => x.length === 3).length >= minHelg && st.sets.filter((x) => x.length === 2).length >= minHalf && (st.ns || 0) >= skrallMin;
+  const ok = (st) => st.o >= onesMin && spikes(st) >= minSpikes && spikes(st) <= maxSpikes && (st.nl === 0 || spikes(st) === minSpikes || loose === "max") && st.sets.filter((x) => x.length === 3).length >= minHelg && st.sets.filter((x) => x.length === 2).length >= minHalf && (st.ns || 0) >= skrallMin;
   const okList = [...dp.values()].filter(ok);
   // Kryss-taket för favoritspik släpps först om ingen kupong går (för få matcher med lågt kryss)
   if (!okList.length && loose && xTiltOn && xSpikMax < 1) {
@@ -1147,9 +1172,13 @@ export function kravSigns(k) {
  * B = risksystemet med B:s krav: röd 1–5 eller 2–5, minst 30 000 kr för 13 rätt utan tak, teckenregler 3-2-2, aldrig samma gardering som A och högst 1 spik
  *     som skiljer (B ärver A:s spikar), valt så att det täcker så mycket som möjligt av det A saknar. Alla kuponger har 2–4 spikar.
  */
+// Procenten systemet byggs på: spikbedömningens (sysP) när den används, men aldrig om justeringen byter favorit – samma
+// tecken som Oddset (användaren 2026-10-06; äldre sparad data kan ha en vänd sysP)
+const topOf = (x) => x.indexOf(Math.max(...x));
+export const sysFinal = (e) => (e.spik?.used && e.spik.sysP && topOf(e.spik.sysP) === topOf(e.final) ? e.spik.sysP : e.final);
 export function generateCoupons(p, krav) {
   // Systemen byggs på matchens justerade procent (spikbedömningen) när den används, annars på modellens
-  const events = p.events.map((e) => (e.spik?.used && e.spik.sysP ? { ...e, final: e.spik.sysP } : e));
+  const events = p.events.map((e) => ({ ...e, final: sysFinal(e) }));
   const forcedFor = (sys) => events.map((e) => {
     const k = krav[e.eventNumber];
     const on = k && (k.scope === sys || k.scope === "all" || (k.scope === "both" && (sys === "A" || sys === "B")));
