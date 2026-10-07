@@ -163,7 +163,7 @@ function oddsGroup(items, activeKey, mkt = null, valueKeys = []) {
     // Utfall med Värde markeras på själva chipet, även när det inte är det tippade utfallet
     const val = valueKeys.includes(key);
     const active = (key === activeKey ? " is-tip is-selected" : "") + (val ? " is-value" : "");
-    const click = mkt ? ` role="button" tabindex="0" data-mkt="${mkt}" data-key="${key}" title="Klicka: spelvärde för ${escapeHtml(label)}"` : "";
+    const click = mkt ? ` role="button" tabindex="0" data-mkt="${mkt}" data-key="${key}" title="Klicka: chans och spelvärde för ${escapeHtml(label)}"` : "";
     return `<span class="odd-pill odd-${key}${active}${mkt ? " is-clickable" : ""}"${click}><em>${escapeHtml(label)}</em><b>${escapeHtml(fmtOdd(odd))}</b>${val ? `<i class="pill-val">Värde</i>` : ""}</span>`;
   });
   return `<div class="odds-group">${parts.join("")}</div>`;
@@ -310,6 +310,77 @@ const pickName = (p) => String(p ?? "").replace(/^OVER/i, "Över").replace(/^UN
 const PICK_LABEL = { home: "1", draw: "X", away: "2", over25: "Över 2.5", under25: "Under 2.5" };
 const KEY_1X2 = { 1: "home", X: "draw", 2: "away" };
 const mktLabel = (k) => (k.length > 4 ? PICK_LABEL[k] : `1X2 · ${PICK_LABEL[k]}`);
+
+/** Namn på ett klickat utfall, till chanscellens titel. */
+function outcomeLabel(tip, mkt, key) {
+  const t = tip.tips || {};
+  if (mkt === "1X2") return { home: "1", draw: "X", away: "2" }[key] || "";
+  if (mkt === "BTTS") return key === "btts-yes" ? "BTTS JA" : "BTTS NEJ";
+  if (mkt === "OU25") return key === "over" ? "Över 2.5" : "Under 2.5";
+  if (mkt === "CORNERS") return `${key === "over" ? "Över" : "Under"} ${t.CORNERS?.line ?? 9.5} hörn`;
+  if (mkt === "CARDS") return `${key === "over" ? "Över" : "Under"} ${t.CARDS?.line ?? ""} kort`;
+  if (mkt === "BOTH_CARDS") return key === "bc-yes" ? "Båda kort JA" : "Båda kort NEJ";
+  return "";
+}
+
+/**
+ * Chans (0–1) att just det utfallet går in.
+ * Binära marknader: tippets confidence, och 1 minus den för motsatsen,
+ * så siffran inte hoppar när man klickar tillbaka till tipset.
+ * 1X2: varje teckens egen sannolikhet.
+ */
+function chanceFor(tip, mkt, key) {
+  const t = tip.tips || {};
+  const binary = (rawYes, confidence, pickIsYes, wantYes) => {
+    if (confidence != null && pickIsYes != null) return wantYes === pickIsYes ? confidence : 1 - confidence;
+    if (rawYes == null) return null;
+    return wantYes ? rawYes : 1 - rawYes;
+  };
+  if (mkt === "1X2") {
+    const k = { home: "home", draw: "draw", away: "away" }[key];
+    const x = t["1X2"];
+    if (x?.probs?.[k] != null) return x.probs[k];
+    const vp = tip.pro?.verdicts?.[k]?.p;
+    if (vp != null) return vp;
+    const pickKey = { 1: "home", X: "draw", 2: "away" }[x?.pick];
+    if (x?.confidence != null && pickKey === k) return x.confidence;
+    return null;
+  }
+  if (mkt === "BTTS") {
+    const b = t.BTTS;
+    const pickIsYes = b?.pick === "JA" ? true : b?.pick === "NEJ" ? false : null;
+    return binary(b?.pYes ?? tip.pro?.blended?.btts, b?.confidence, pickIsYes, key === "btts-yes");
+  }
+  if (mkt === "OU25") {
+    const o = t.OU25;
+    const pickIsOver = /OVER/i.test(o?.pick || "") ? true : /UNDER/i.test(o?.pick || "") ? false : null;
+    return binary(o?.pOver ?? tip.pro?.blended?.over25, o?.confidence, pickIsOver, key === "over");
+  }
+  if (mkt === "CORNERS") {
+    const c = t.CORNERS;
+    const pickIsOver = /OVER/i.test(c?.pick || "") ? true : /UNDER/i.test(c?.pick || "") ? false : null;
+    return binary(c?.pOver, c?.confidence, pickIsOver, key === "over");
+  }
+  if (mkt === "CARDS") {
+    const c = t.CARDS;
+    const pickIsOver = /OVER/i.test(c?.pick || "") ? true : /UNDER/i.test(c?.pick || "") ? false : null;
+    return binary(cardsP(c, c?.line, "over"), c?.confidence, pickIsOver, key === "over");
+  }
+  if (mkt === "BOTH_CARDS") {
+    const b = t.BOTH_CARDS;
+    const pickIsYes = b?.pick === "JA" ? true : b?.pick === "NEJ" ? false : null;
+    return binary(b?.pYes, b?.confidence, pickIsYes, key === "bc-yes");
+  }
+  return null;
+}
+
+/** Chanscell: procenten för det valda utfallet. Utan valt utfall visas tippets confidence. */
+function chanceHtml(tip, mkt, key, fallback = null) {
+  const p = key ? chanceFor(tip, mkt, key) : fallback;
+  const label = key ? outcomeLabel(tip, mkt, key) : "";
+  const title = label ? `Chans för ${label}` : "Chans";
+  return `<td class="num" title="${escapeHtml(title)}">${fmtChance(p ?? fallback)}</td>`;
+}
 
 /** BTTS-chans för JA/NEJ (samma som BTTS-raden). */
 function bttsP(tip, pick) {
@@ -461,7 +532,7 @@ function tipCard(tip, i) {
               cornerKey,
               "CORNERS"
             )}${c.expCorners != null ? `<div class="odds-src">Proj. ${escapeHtml(String(c.expCorners))} hörn</div>` : ""}</td>
-            <td class="num">${fmtChance(confC)}</td>
+            ${chanceHtml(tip, "CORNERS", cornerKey, confC)}
             ${valueFor(tip, "CORNERS", cornerKey || "over")}
           </tr>`
     : "";
@@ -478,7 +549,7 @@ function tipCard(tip, i) {
               bcKey,
               "BOTH_CARDS"
             )}${bc.pYes > 0 && bc.pYes < 1 ? `<div class="odds-src">Spela från – Ja ${modelMin(bc.pYes)} / Nej ${modelMin(1 - bc.pYes)}</div>` : ""}</td>
-            <td class="num">${fmtChance(bc.confidence)}</td>
+            ${chanceHtml(tip, "BOTH_CARDS", bcKey, bc.confidence)}
             ${valueFor(tip, "BOTH_CARDS", bcKey || "bc-yes")}
           </tr>`
     : "";
@@ -493,7 +564,7 @@ function tipCard(tip, i) {
               cardKey,
               "CARDS"
             )}${cardsInfo(k)}</td>
-            <td class="num">${fmtChance(k.confidence)}</td>
+            ${chanceHtml(tip, "CARDS", cardKey, k.confidence)}
             ${valueFor(tip, "CARDS", cardKey || "over")}
           </tr>`
     : "";
@@ -543,7 +614,7 @@ function tipCard(tip, i) {
               "1X2",
               ["home", "draw", "away"].filter((k) => tip.pro?.verdicts?.[k]?.value)
             )}</td>
-            <td class="num">${fmtChance(conf1)}</td>
+            ${chanceHtml(tip, "1X2", pick1 === "1" ? "home" : pick1 === "X" ? "draw" : pick1 === "2" ? "away" : "", conf1)}
             ${valueCell(tip, pick1 === "1" ? "home" : pick1 === "X" ? "draw" : "away", ["home", "draw", "away"])}
           </tr>
           <tr data-mkt="BTTS">
@@ -556,7 +627,7 @@ function tipCard(tip, i) {
               bttsKey,
               "BTTS"
             )}</td>
-            <td class="num">${fmtChance(confB)}</td>
+            ${chanceHtml(tip, "BTTS", bttsKey, confB)}
             ${valueFor(tip, "BTTS", bttsKey || "btts-yes")}
           </tr>
           <tr data-mkt="OU25">
@@ -570,7 +641,7 @@ function tipCard(tip, i) {
               "OU25",
               [["over", "over25"], ["under", "under25"]].filter(([, k]) => tip.pro?.verdicts?.[k]?.value).map(([key]) => key)
             )}</td>
-            <td class="num">${fmtChance(confO)}</td>
+            ${chanceHtml(tip, "OU25", ouKey, confO)}
             ${ouCell(tip, ouKey === "over" ? "over25" : "under25")}
           </tr>
           ${cornersRow}
@@ -2230,7 +2301,7 @@ async function toggleTeamPanel(btn) {
   }
 }
 
-/** Klick på ett utfall (1 / X / 2, BTTS, Ö/U, hörn, kort): visa spelvärdet för just det utfallet i raden. */
+/** Klick på ett utfall (1 / X / 2, BTTS, Ö/U, hörn, kort): visa chans och spelvärde för just det utfallet. */
 function selectOutcome(pill) {
   const card = pill.closest(".tip");
   const row = pill.closest("tr");
@@ -2238,6 +2309,8 @@ function selectOutcome(pill) {
   if (!tip || !row) return;
   row.querySelectorAll(".odd-pill.is-selected").forEach((p) => p.classList.remove("is-selected"));
   pill.classList.add("is-selected");
+  const num = row.querySelector("td.num");
+  if (num) num.outerHTML = chanceHtml(tip, pill.dataset.mkt, pill.dataset.key);
   const cell = row.querySelector("td.val");
   const html = valueFor(tip, pill.dataset.mkt, pill.dataset.key);
   if (cell) cell.outerHTML = html;
