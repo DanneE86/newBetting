@@ -21,6 +21,8 @@ export function overround(odds) {
  * Skarpt facit (Pinnacle, annars Betfair Exchange) - men bara om 1X2-priserna ar rimliga.
  * Illikvida borsmarknader ger t.ex. 1.13/1.18/1.15 (summa 260 %) -> devig 33/33/33 och falska vardespel.
  * Krav: marginal mellan -2 % och +12 %, och ingen utfallschans mer an 12 pp fran bolagssnittet.
+ * Betfair Exchange stramare (2026-10-07): hogst 8 pp och bara nar minst 3 bolag finns att jamfora med.
+ * Valladolid-Cordoba 2026-09-27 slank igenom med borsens 93 % mot bolagens ~81 % (odds 1.23, CLV -52 %).
  */
 export function findSharpBook(books) {
   const others = books.filter((b) => !/pinnacle|^betfair_ex/i.test(b.key));
@@ -28,16 +30,17 @@ export function findSharpBook(books) {
     const ps = others.map((b) => devigMultiplicative([b.home, b.draw, b.away])).filter(Boolean);
     return ps.length >= 3 ? [0, 1, 2].map((i) => ps.reduce((s, p) => s + p[i], 0) / ps.length) : null;
   })();
-  const ok = (b) => {
+  const ok = (b, maxDiff = 0.12, needAvg = false) => {
     const odds = [b.home, b.draw, b.away];
     if (!validOdds(odds)) return false;
     const or = overround(odds);
     if (or < -0.02 || or > 0.12) return false;
+    if (!avg) return !needAvg;
     const f = devigMultiplicative(odds);
-    return !avg || f.every((p, i) => Math.abs(p - avg[i]) <= 0.12);
+    return f.every((p, i) => Math.abs(p - avg[i]) <= maxDiff);
   };
   return books.find((b) => /pinnacle/i.test(`${b.key} ${b.bookmaker}`) && ok(b))
-    ?? books.find((b) => /^betfair_ex/.test(b.key) && ok(b))
+    ?? books.find((b) => /^betfair_ex/.test(b.key) && ok(b, 0.08, true))
     ?? null;
 }
 
@@ -280,4 +283,12 @@ export function round(x, d = 4) {
   if (x === null || x === undefined || Number.isNaN(x)) return null;
   const f = 10 ** d;
   return Math.round(x * f) / f;
+}
+
+// Spärr för värdespel, samma live och i utvärderingen: odds över taket (skrällar, devig överskattar dem) eller
+// EV över maxEv (datafel) blir aldrig värde. Ger 'tooLong', 'suspect' eller null.
+export function betBlock(odds, ev, { maxOdds, maxEv }) {
+  if (odds > maxOdds) return 'tooLong';
+  if (ev > maxEv) return 'suspect';
+  return null;
 }

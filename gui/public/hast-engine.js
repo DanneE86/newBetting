@@ -24,6 +24,9 @@ export function rowPrice(type, date = new Date().toISOString().slice(0, 10)) {
   return price;
 }
 export const BUDGETS = [100, 200, 500, 1000, 2000, 5000];
+// Skrällsystemet (≥ 3 skrällar/rad) bakkört 2024–2026 (2026-10-07): 200 kr minus alla tre år (−28/−50/−81 %),
+// 500 kr ojämnt, 1 000 kr plus alla tre. Knappen väljer därför minst 1 000 kr och varnar under det.
+export const SKRALL_MIN_BUDGET = 1000;
 // Högsta vinstnivåns andel av omsättningen utan jackpott (ATG-data 2025–2026, 10:e percentilen/vanligaste värdet)
 export const TOP_SHARE = { V85: 0.195, V86: 0.26, V75: 0.26, GS75: 0.285, V64: 0.34, V65: 0.355 };
 // Alla system ska alltid kunna ge minst MIN_TOP kr vid alla rätt (användarens krav 2026-10-03); högre spärr kan väljas

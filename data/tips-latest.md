@@ -347,7 +347,7 @@ Masterdata: data/betting-store.json. Uppdatera: .\scripts\Update-BettingStore.ps
 |---|---|---|---|---|---|---|---|---|
 | 2026-10-04 Girona vs Mallorca (LL2) | 1X2 | 1 | 2.45 | Ej varde | 2.78 | 500 kr -> +725 kr (1:1.45, EV -46 kr) | 37.1% / 40.8% | - |
 | 2026-10-04 Girona vs Mallorca (LL2) | O/U 2.5 | UNDER 2.5 | 1.82 | Ej varde | 1.97 | 500 kr -> +410 kr (1:0.82, EV -23 kr) | 52.4% / 54.9% | - |
-| 2026-10-04 Umeå vs Hammarby Talang (SE3N) | 1X2 | 2 | 1.76 | Ej varde | 2.12 | 500 kr -> +380 kr (1:0.76, EV -50 kr) | 51.2% / 56.8% | - |
+| 2026-10-04 Umeå vs Hammarby Talang (SE3N) | 1X2 | 2 | - | Inga odds | - | - | - | - |
 | 2026-10-04 Umeå vs Hammarby Talang (SE3N) | O/U 2.5 | OVER 2.5 | - | Inga odds | - | - | - | - |
 | 2026-10-04 Talleres Cordoba vs Belgrano (AR) | 1X2 | 1 | 2.62 | Ej varde | 2.89 | 500 kr -> +810 kr (1:1.62, EV -32 kr) | 35.7% / 38.2% | - |
 | 2026-10-04 Talleres Cordoba vs Belgrano (AR) | O/U 2.5 | UNDER 2.5 | 1.51 | Ej varde | 1.68 | 500 kr -> +255 kr (1:0.51, EV -26 kr) | 62.8% / 66.2% | - |
@@ -363,13 +363,13 @@ Masterdata: data/betting-store.json. Uppdatera: .\scripts\Update-BettingStore.ps
 | 2026-10-04 Las Palmas vs Valladolid (LL2) | O/U 2.5 | UNDER 2.5 | 1.78 | Ej varde | 1.98 | 500 kr -> +390 kr (1:0.78, EV -26 kr) | 53.2% / 56.2% | - |
 | 2026-10-04 Castellon vs Ceuta (LL2) | 1X2 | 1 | 1.26 | Ej varde | 1.36 | 500 kr -> +130 kr (1:0.26, EV -21 kr) | 76.1% / 79.4% | - |
 | 2026-10-04 Castellon vs Ceuta (LL2) | O/U 2.5 | OVER 2.5 | 1.39 | Ej varde | 1.61 | 500 kr -> +195 kr (1:0.39, EV -32 kr) | 67.3% / 71.9% | - |
-| 2026-10-04 Deportivo Pasto vs Fortaleza CEIF (COL) | 1X2 | 1 | 2.14 | Ej varde | 2.52 | 500 kr -> +570 kr (1:1.14, EV -41 kr) | 42.9% / 46.7% | - |
+| 2026-10-04 Deportivo Pasto vs Fortaleza CEIF (COL) | 1X2 | 1 | - | Inga odds | - | - | - | - |
 | 2026-10-04 Deportivo Pasto vs Fortaleza CEIF (COL) | O/U 2.5 | UNDER 2.5 | - | Inga odds | - | - | - | - |
-| 2026-10-04 Atlético Bucaramanga vs Atlético Junior (COL) | 1X2 | 1 | 1.92 | Ej varde | 2.26 | 500 kr -> +460 kr (1:0.92, EV -40 kr) | 47.9% / 52.1% | - |
+| 2026-10-04 Atlético Bucaramanga vs Atlético Junior (COL) | 1X2 | 1 | - | Inga odds | - | - | - | - |
 | 2026-10-04 Atlético Bucaramanga vs Atlético Junior (COL) | O/U 2.5 | OVER 2.5 | - | Inga odds | - | - | - | - |
-| 2026-10-04 Internacional de Bogotá vs Once Caldas (COL) | 1X2 | 1 | 2.66 | Ej varde | 3.12 | 500 kr -> +830 kr (1:1.66, EV -39 kr) | 34.7% / 37.6% | - |
+| 2026-10-04 Internacional de Bogotá vs Once Caldas (COL) | 1X2 | 1 | - | Inga odds | - | - | - | - |
 | 2026-10-04 Internacional de Bogotá vs Once Caldas (COL) | O/U 2.5 | UNDER 2.5 | - | Inga odds | - | - | - | - |
-| 2026-10-04 Cúcuta Deportivo vs Deportivo Pereira (COL) | 1X2 | 1 | 1.72 | Ej varde | 2.02 | 500 kr -> +360 kr (1:0.72, EV -38 kr) | 53.7% / 58.1% | - |
+| 2026-10-04 Cúcuta Deportivo vs Deportivo Pereira (COL) | 1X2 | 1 | - | Inga odds | - | - | - | - |
 | 2026-10-04 Cúcuta Deportivo vs Deportivo Pereira (COL) | O/U 2.5 | UNDER 2.5 | - | Inga odds | - | - | - | - |
 | 2026-10-04 Argentinos Jrs vs Tigre (AR) | 1X2 | 1 | 1.8 | Ej varde | 1.96 | 500 kr -> +400 kr (1:0.8, EV -25 kr) | 52.8% / 55.6% | - |
 | 2026-10-04 Argentinos Jrs vs Tigre (AR) | O/U 2.5 | UNDER 2.5 | 1.49 | Ej varde | 1.73 | 500 kr -> +245 kr (1:0.49, EV -32 kr) | 62.7% / 67.1% | - |
@@ -381,11 +381,11 @@ Masterdata: data/betting-store.json. Uppdatera: .\scripts\Update-BettingStore.ps
 | 2026-10-05 Dep. Riestra vs Central Cordoba (AR) | O/U 2.5 | UNDER 2.5 | - | Inga odds | - | - | - | - |
 | 2026-10-05 Velez Sarsfield vs Platense (AR) | 1X2 | 1 | 1.92 | Ej varde | 2.06 | 500 kr -> +460 kr (1:0.92, EV -20 kr) | 50.0% / 52.1% | - |
 | 2026-10-05 Velez Sarsfield vs Platense (AR) | O/U 2.5 | UNDER 2.5 | 1.39 | Ej varde | 1.6 | 500 kr -> +195 kr (1:0.39, EV -29 kr) | 67.8% / 71.9% | - |
-| 2026-10-05 Cordoba vs Tenerife (LL2) | 1X2 | 1 | 2.02 | Ej varde | 2.03 | 500 kr -> +510 kr (1:1.02, EV +14 kr) | 50.8% / 49.5% | - |
+| 2026-10-05 Cordoba vs Tenerife (LL2) | 1X2 | 1 | 2.02 | Ej varde | 2.1 | 500 kr -> +510 kr (1:1.02, EV -3 kr) | 49.2% / 49.5% | - |
 | 2026-10-05 Cordoba vs Tenerife (LL2) | O/U 2.5 | OVER 2.5 | 1.85 | Ej varde | 2.05 | 500 kr -> +425 kr (1:0.85, EV -34 kr) | 50.4% / 54.0% | - |
-| 2026-10-05 Moss vs Kongsvinger (NO2) | 1X2 | 2 | 1.7 | Ej varde | 2.02 | 500 kr -> +350 kr (1:0.7, EV -44 kr) | 53.6% / 58.8% | - |
+| 2026-10-05 Moss vs Kongsvinger (NO2) | 1X2 | 2 | - | Inga odds | - | - | - | - |
 | 2026-10-05 Moss vs Kongsvinger (NO2) | O/U 2.5 | OVER 2.5 | - | Inga odds | - | - | - | - |
-| 2026-10-05 Llaneros FC vs América de Cali (COL) | 1X2 | 2 | 2.12 | Ej varde | 2.48 | 500 kr -> +560 kr (1:1.12, EV -38 kr) | 43.6% / 47.2% | - |
+| 2026-10-05 Llaneros FC vs América de Cali (COL) | 1X2 | 2 | - | Inga odds | - | - | - | - |
 | 2026-10-05 Llaneros FC vs América de Cali (COL) | O/U 2.5 | UNDER 2.5 | - | Inga odds | - | - | - | - |
 | 2026-10-06 Sport vs São Bernardo (BR2) | 1X2 | 1 | 1.88 | Ej varde | 2.02 | 500 kr -> +440 kr (1:0.88, EV -21 kr) | 51.0% / 53.2% | - |
 | 2026-10-06 Sport vs São Bernardo (BR2) | O/U 2.5 | UNDER 2.5 | 1.87 | Ej varde | 2.06 | 500 kr -> +435 kr (1:0.87, EV -32 kr) | 50.0% / 53.5% | - |
@@ -393,7 +393,7 @@ Masterdata: data/betting-store.json. Uppdatera: .\scripts\Update-BettingStore.ps
 | 2026-10-06 Banfield vs Rosario Central (AR) | O/U 2.5 | UNDER 2.5 | 1.68 | Ej varde | 1.86 | 500 kr -> +340 kr (1:0.68, EV -25 kr) | 56.5% / 59.5% | - |
 | 2026-10-06 Goiás vs Athletic (BR2) | 1X2 | 1 | 1.77 | Ej varde | 1.89 | 500 kr -> +385 kr (1:0.77, EV -17 kr) | 54.6% / 56.5% | - |
 | 2026-10-06 Goiás vs Athletic (BR2) | O/U 2.5 | UNDER 2.5 | 1.64 | Ej varde | 1.81 | 500 kr -> +320 kr (1:0.64, EV -24 kr) | 58.0% / 61.0% | - |
-| 2026-10-06 Independiente Medellín vs Independiente Santa Fe (COL) | 1X2 | 1 | 1.86 | Ej varde | 2.19 | 500 kr -> +430 kr (1:0.86, EV -40 kr) | 49.4% / 53.8% | - |
+| 2026-10-06 Independiente Medellín vs Independiente Santa Fe (COL) | 1X2 | 1 | - | Inga odds | - | - | - | - |
 | 2026-10-06 Independiente Medellín vs Independiente Santa Fe (COL) | O/U 2.5 | OVER 2.5 | - | Inga odds | - | - | - | - |
 | 2026-10-07 Remo vs Gremio (BR) | 1X2 | 1 | 2.22 | Ej varde | 2.44 | 500 kr -> +610 kr (1:1.22, EV -30 kr) | 42.3% / 45.1% | - |
 | 2026-10-07 Remo vs Gremio (BR) | O/U 2.5 | UNDER 2.5 | 1.92 | Ej varde | 2.08 | 500 kr -> +460 kr (1:0.92, EV -24 kr) | 49.6% / 52.1% | - |
@@ -1888,8 +1888,8 @@ Facit = Pinnacles odds utan marginal. Pris = basta odds hos unibet_se, leovegas_
 
 | Liga | Matcher | RPS DC | RPS skarp close | Brier O/U DC | Brier O/U Pinnacle | CLV DC-spel | CLV konsensus-spel (n) |
 |---|---|---|---|---|---|---|---|
-| CH | 647 | 0.2223 | 0.2165 | 0.2532 | 0.248 | -4.5% | 4.0% (43) |
-| PL | 430 | 0.207 | 0.2067 | 0.2421 | 0.2426 | -2.7% | 5.1% (53) |
+| CH | 647 | 0.2223 | 0.2165 | 0.2532 | 0.248 | -4.4% | 3.2% (29) |
+| PL | 430 | 0.207 | 0.2067 | 0.2421 | 0.2426 | -2.9% | 4.6% (11) |
 | AR | 914 | 0.216 | 0.2118 | - | - | - | - (0) |
 | MLS | 944 | 0.2204 | 0.2127 | - | - | - | - (0) |
 | JP1 | 460 | 0.2163 | 0.2124 | - | - | - | - (0) |
@@ -1900,16 +1900,16 @@ Facit = Pinnacles odds utan marginal. Pris = basta odds hos unibet_se, leovegas_
 | DK | 246 | 0.2219 | 0.2136 | - | - | - | - (0) |
 | EK | 384 | 0.226 | 0.2208 | - | - | - | - (0) |
 | BL2 | 360 | 0.225 | 0.2193 | 0.2648 | 0.2504 | -3.1% | 0.1% (16) |
-| ED | 369 | 0.1982 | 0.1946 | 0.2369 | 0.2271 | -5.9% | 10.3% (37) |
-| EL1 | 639 | 0.2224 | 0.2132 | 0.2559 | 0.2459 | -4.5% | 4.6% (25) |
-| PT | 368 | 0.1761 | 0.1709 | 0.2443 | 0.2395 | -3.8% | -0.9% (26) |
-| LL | 449 | 0.2025 | 0.1944 | 0.244 | 0.2349 | -3.9% | 3.5% (47) |
-| LL2 | 539 | 0.2238 | 0.2149 | 0.2538 | 0.2435 | -4.4% | 1.8% (28) |
-| SB | 430 | 0.2058 | 0.198 | 0.264 | 0.259 | -3.2% | 3.2% (9) |
-| L1 | 351 | 0.2107 | 0.2032 | 0.2606 | 0.2413 | -4.1% | 7.0% (25) |
-| SA | 430 | 0.2012 | 0.1962 | 0.2618 | 0.2502 | -3.1% | 6.8% (40) |
-| GR | 271 | 0.1857 | 0.1753 | 0.2517 | 0.2625 | -4.3% | 2.1% (17) |
-| BL | 342 | 0.1984 | 0.1908 | 0.2513 | 0.2397 | -3.9% | 11.3% (28) |
+| ED | 369 | 0.1982 | 0.1946 | 0.2369 | 0.2271 | -5.4% | 7.7% (8) |
+| EL1 | 639 | 0.2224 | 0.2132 | 0.2559 | 0.2459 | -4.3% | 4.1% (17) |
+| PT | 368 | 0.1761 | 0.1709 | 0.2443 | 0.2395 | -3.6% | 0.9% (4) |
+| LL | 449 | 0.2025 | 0.1944 | 0.244 | 0.2349 | -3.8% | 4.6% (10) |
+| LL2 | 539 | 0.2238 | 0.2149 | 0.2538 | 0.2435 | -3.7% | 1.8% (28) |
+| SB | 430 | 0.2058 | 0.198 | 0.264 | 0.259 | -2.8% | 3.3% (7) |
+| L1 | 351 | 0.2107 | 0.2032 | 0.2606 | 0.2413 | -4.6% | 7.7% (8) |
+| SA | 430 | 0.2012 | 0.1962 | 0.2618 | 0.2502 | -2.6% | 5.5% (12) |
+| GR | 271 | 0.1857 | 0.1753 | 0.2517 | 0.2625 | -4.7% | -2.1% (8) |
+| BL | 342 | 0.1984 | 0.1908 | 0.2513 | 0.2397 | -4.3% | 9.6% (15) |
 | COL | 714 | 0.2051 | - | - | - | - | - (0) |
 | SE3N | 383 | 0.2202 | - | - | - | - | - (0) |
 | SE3S | 384 | 0.2258 | - | - | - | - | - (0) |

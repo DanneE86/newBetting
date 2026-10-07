@@ -158,7 +158,10 @@ const skrallOk = (e, k) => k === oddsetSign(e) && e.folk?.[k] != null && e.final
 const oddsetSign = (e) => (['1', 'X', '2'].includes(e.tip) ? ['1', 'X', '2'].indexOf(e.tip) : e.final.indexOf(Math.max(...e.final)));
 const followsOddset = (e, sub) => sub.includes(oddsetSign(e)) && !(sub.length > 1 && sub.every((k) => isRed(e, k)));
 const ONES_MIN = 2;
-const isOne = (e, sub) => sub.length === 1 && sub[0] === 0 && oddsetSign(e) === 0;
+// Bara for bakkorning: spikade 1:or kravs bara dar ettans chans ar minst STRYK_ONES_P (0 = alla Oddset-1:or, live)
+const ONES_P = Number(process.env.STRYK_ONES_P ?? 0);
+const oneOk = (e) => oddsetSign(e) === 0 && e.final[0] >= ONES_P;
+const isOne = (e, sub) => sub.length === 1 && sub[0] === 0 && oneOk(e);
 // Fargregler (antal grona/gula/roda tecken per rad i garderingarna, spikar ar bla) ar aldrig 0-13 (anvandarens regel
 // 2026-09-30): min/max provas upp till COLOR_TRIM steg in fran radernas spann och den kombination som ger hogst chans
 // till 13 ratt inom budgeten valjs. Samma som i gui/public/stryk-engine.js.
@@ -754,7 +757,7 @@ function grundCandidates1(events, maxRows, spikMin = 0, setsA = null, loose = fa
   const options = (e, i) => {
     const opts = options0(e, i).filter((x) => (x.length < 3 || !allYellowMatch(e)) && !(xFolkHere(e) && x.length === 2 && !x.includes(1)) && followsOddset(e, x));
     // Spik pa 1 (ONES_MIN) finns alltid som alternativ dar Oddset tippar 1
-    if (oddsetSign(e) === 0 && !opts.some((x) => x.length === 1 && x[0] === 0)) opts.push([0]);
+    if (oneOk(e) && !opts.some((x) => x.length === 1 && x[0] === 0)) opts.push([0]);
     return opts;
   };
   const options0 = (e, i) => {
@@ -808,7 +811,7 @@ function grundCandidates1(events, maxRows, spikMin = 0, setsA = null, loose = fa
   // helor att MIN_HELG inte gar i B blir det sa manga som gar (A/B-regeln gar fore, 2026-10-03). Samma som stryk-engine.js.
   // (inte pa matcher dar alla tecken ligger pa 26-44 % - dar blir det aldrig helgardering)
   const helgOk = (i) => !allYellowMatch(events[i]);
-  const onesMin = Math.min(ONES_MIN, events.filter((e) => oddsetSign(e) === 0).length);
+  const onesMin = Math.min(ONES_MIN, events.filter((e) => oneOk(e)).length);
   // B: av A:s spikar kan bara de som inte behovs for 1:orna bli helgardering (1:orna och Oddset gar fore, 2026-10-06)
   const aOnes = setsA ? setsA.filter((x, i) => isOne(events[i], x)).length : 0;
   const aSpare = setsA ? setsA.filter((x, i) => x.length === 1 && helgOk(i) && !isOne(events[i], x)).length + Math.min(Math.max(0, aOnes - onesMin), setsA.filter((x, i) => isOne(events[i], x) && helgOk(i)).length) : 0;
