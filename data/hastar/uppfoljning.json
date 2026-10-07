@@ -1,50 +1,50 @@
 {
- "updatedAt": "2026-10-04T18:46:04.726Z",
- "games": 1,
+ "updatedAt": "2026-10-06T20:10:02.199Z",
+ "games": 3,
  "from": "2026-10-03",
  "summary": {
   "standard": {
    "200": {
-    "games": 1,
-    "cost": 192,
-    "win": 120,
-    "hitGames": 1,
+    "games": 3,
+    "cost": 572,
+    "win": 186,
+    "hitGames": 2,
     "allRight": 0,
     "biggest": {
      "id": "V85_2026-10-03_11_5",
      "win": 120
     },
-    "roi": -0.375
+    "roi": -0.6748251748251748
    },
    "500": {
-    "games": 1,
-    "cost": 480,
-    "win": 0,
-    "hitGames": 0,
+    "games": 3,
+    "cost": 1440,
+    "win": 66,
+    "hitGames": 1,
     "allRight": 0,
     "biggest": {
-     "id": "V85_2026-10-03_11_5",
-     "win": 0
+     "id": "V86_2026-10-06_40_1",
+     "win": 66
     },
-    "roi": -1
+    "roi": -0.9541666666666667
    },
    "1000": {
-    "games": 1,
-    "cost": 972,
-    "win": 0,
-    "hitGames": 0,
+    "games": 3,
+    "cost": 2944,
+    "win": 543,
+    "hitGames": 2,
     "allRight": 0,
     "biggest": {
-     "id": "V85_2026-10-03_11_5",
-     "win": 0
+     "id": "V86_2026-10-05_40_1",
+     "win": 477
     },
-    "roi": -1
+    "roi": -0.8155570652173914
    }
   },
   "utdelning": {
    "200": {
-    "games": 1,
-    "cost": 192,
+    "games": 3,
+    "cost": 576,
     "win": 60,
     "hitGames": 1,
     "allRight": 0,
@@ -52,23 +52,23 @@
      "id": "V85_2026-10-03_11_5",
      "win": 60
     },
-    "roi": -0.6875
+    "roi": -0.8958333333333334
    },
    "500": {
-    "games": 1,
-    "cost": 480,
-    "win": 60,
-    "hitGames": 1,
+    "games": 3,
+    "cost": 1392,
+    "win": 192,
+    "hitGames": 2,
     "allRight": 0,
     "biggest": {
-     "id": "V85_2026-10-03_11_5",
-     "win": 60
+     "id": "V86_2026-10-06_40_1",
+     "win": 132
     },
-    "roi": -0.875
+    "roi": -0.8620689655172413
    },
    "1000": {
-    "games": 1,
-    "cost": 960,
+    "games": 3,
+    "cost": 2892,
     "win": 1131,
     "hitGames": 1,
     "allRight": 0,
@@ -76,45 +76,45 @@
      "id": "V85_2026-10-03_11_5",
      "win": 1131
     },
-    "roi": 0.1781250000000001
+    "roi": -0.6089211618257262
    }
   },
   "skrall3": {
    "200": {
-    "games": 1,
-    "cost": 200,
-    "win": 377,
-    "hitGames": 1,
+    "games": 3,
+    "cost": 400,
+    "win": 695,
+    "hitGames": 2,
     "allRight": 0,
     "biggest": {
      "id": "V85_2026-10-03_11_5",
      "win": 377
     },
-    "roi": 0.885
+    "roi": 0.7375
    },
    "500": {
-    "games": 1,
-    "cost": 500,
-    "win": 477,
-    "hitGames": 1,
+    "games": 3,
+    "cost": 1500,
+    "win": 795,
+    "hitGames": 2,
     "allRight": 0,
     "biggest": {
      "id": "V85_2026-10-03_11_5",
      "win": 477
     },
-    "roi": -0.04600000000000004
+    "roi": -0.47
    },
    "1000": {
-    "games": 1,
-    "cost": 1000,
-    "win": 577,
-    "hitGames": 1,
+    "games": 3,
+    "cost": 3000,
+    "win": 2803,
+    "hitGames": 2,
     "allRight": 0,
     "biggest": {
-     "id": "V85_2026-10-03_11_5",
-     "win": 577
+     "id": "V86_2026-10-05_40_1",
+     "win": 2226
     },
-    "roi": -0.42300000000000004
+    "roi": -0.06566666666666665
    }
   }
  }
