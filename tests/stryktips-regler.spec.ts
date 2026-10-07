@@ -224,8 +224,9 @@ test('reducerade system: budget, teckenregler, rader inom grundraden', () => {
       // Röd 1–3 i A och C (användaren 2026-10-02: "rött ska alltid vara 1-3, 25 % eller lägre är röda"). B är risksystemet
       // (2026-10-02 kväll: "kör 1-4 eller 2-4 röda ... inte mer än 2 röda som minst", "behåll A som det är")
       // B får fria färger som sista reserv när A/B-regeln (samma spikar, aldrig samma gardering) och A:s form inte lämnar
-      // någon B med fasta färger (Europatipset 2613, 2026-10-04) – flaggat i kupongen. A och C har alltid fasta färger.
-      const freeB = name === 'B' && red.rules.colorsFree;
+      // någon B med fasta färger (Europatipset 2613, 2026-10-04) – flaggat i kupongen. Sedan 2026-10-06 går regel ett
+      // (Oddsets tecken på varje match, minst 2 spikade 1:or) före färgerna, så A och C kan också få fria färger (flaggat).
+      const freeB = Boolean(red.rules.colorsFree);
       if (on.includes('red') && !freeB) {
         // ... utom när 30 000–50 000 kr inte gick med röd max 5: då röd 1–3 och gränsen hålls (rules.redFallback)
         if (['B', 'C'].includes(name) && red.rules.redFallback) {
@@ -442,6 +443,23 @@ test('Gambling Cabin-länk: samma grundrad, färger och regler som systemet', ()
         expect(q.get(c), `${at} ${c}`).toBe(`1,${lo},${hi}`);
         expect(lo > 0 || hi < 13, `${at} ${c}: inte 0-13`).toBe(true);
       }
+    }
+  }
+});
+
+// Användaren 2026-10-06: "tippa det troligaste resultatet, det Oddset säger – aldrig säga emot Oddset", "minst 2 ettor
+// spikade", "två röda får aldrig vara ensamma". Gäller A, B och C på Stryktipset och Europatipset.
+test('regel ett: Oddsets tecken på varje match, aldrig bara röda, minst 2 spikade 1:or', () => {
+  for (const p of products) {
+    const ones = Math.min(2, p.events.filter((e: any) => e.tip === '1').length);
+    for (const s of systems(p)) {
+      const at = `${p.product} ${p.drawNumber} ${s.name}`;
+      s.picks.forEach((x: string, i: number) => {
+        const e = p.events[i];
+        expect(x, `${at} match ${i + 1}: Oddset ${e.tip}`).toContain(e.tip);
+        if (x.length > 1) expect(x.split('').every((c) => signColor(e.folk?.[idx(c)]) === 'red'), `${at} match ${i + 1}: bara röda`).toBe(false);
+      });
+      expect(s.picks.filter((x: string, i: number) => x === '1' && p.events[i].tip === '1').length, `${at}: spikade 1:or`).toBeGreaterThanOrEqual(ones);
     }
   }
 });

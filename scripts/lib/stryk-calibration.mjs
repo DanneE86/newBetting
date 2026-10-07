@@ -64,8 +64,12 @@ export function assessMatch(final, league, table, spikMin) {
   const k = final.indexOf(Math.max(...final));
   const p = final[k];
   const g = table.bs[`${favKind(k)}|${band(p)}`], l = table.lg[league || ''];
-  const cal = Math.min(0.95, Math.max(0.05, p * factor(g) * factor(l)));
   const rest = 1 - p;
+  // Favoriten far aldrig byta sida (anvandaren 2026-10-06: "tippa alltid samma som pa Oddset"). Justeringen sanker
+  // favoriten hogst till strax over tvaan efter omfordelningen: cal >= m / (rest + m), m = tvaans modellchans.
+  const m = Math.max(...final.filter((_, i) => i !== k));
+  const floor = rest > 0 ? m / (rest + m) + 0.001 : 0.05;
+  const cal = Math.min(0.95, Math.max(0.05, floor, p * factor(g) * factor(l)));
   const sysP = final.map((x, i) => (i === k ? cal : rest > 0 ? (x * (1 - cal)) / rest : (1 - cal) / 2));
   return {
     fav: SIGNS[k], model: Math.round(p * 1000) / 1000, calibrated: Math.round(cal * 1000) / 1000,
