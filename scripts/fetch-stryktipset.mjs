@@ -24,6 +24,7 @@ import { logTips, settleTips, strykRecords } from './lib/tipslogg.mjs';
 import { adjustProbs } from './lib/learned-adjust.mjs';
 import { extraSignals, seasonOf } from './lib/extra-signals.mjs';
 import { request } from './lib/http.mjs';
+import { xpTable, xpNotes } from './lib/xp-table.mjs';
 import { svsSchemas } from './lib/api-schemas.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -495,20 +496,13 @@ function teamProfile(team, model, all, cutoff) {
       l: a.filter((x) => x.r === 'F').length, gf: sum(a, (x) => x.gf), ga: sum(a, (x) => x.ga) };
   };
   const withXg = rs.filter((x) => x.xgf != null);
-  // Tabellplacering i aktuell liga/sasong
-  const table = new Map();
-  for (const m of all.filter((x) => x.date < cutoff && x.league === league && x.season === season)) {
-    for (const [t, gf, ga] of [[m.home, m.hg, m.ag], [m.away, m.ag, m.hg]]) {
-      const e = table.get(t) || { t, p: 0, pts: 0, gd: 0, gf: 0 };
-      e.p++; e.gf += gf; e.gd += gf - ga; e.pts += gf > ga ? 3 : gf === ga ? 1 : 0;
-      table.set(t, e);
-    }
-  }
-  const sorted = [...table.values()].sort((a, b) => b.pts - a.pts || b.gd - a.gd || b.gf - a.gf);
-  const pos = sorted.findIndex((e) => e.t === team) + 1;
+  // Tabellplacering, xP och forvantad tabellplats i aktuell liga/sasong
+  const tbl = xpTable(all.filter((x) => x.date < cutoff && x.league === league && x.season === season));
+  const me = tbl.byTeam.get(team);
   return {
     team, league, leagueName: LEAGUE_NAME[league] || league, season,
-    position: pos || null, of: sorted.length || null,
+    position: me?.pos || null, of: tbl.rows.length || null,
+    xp: me?.xp ?? null, xpGames: me?.xgGames ?? 0, xpPosition: me?.xpPos ?? null,
     played: rs.length, points: sum(rs, (x) => (x.r === 'V' ? 3 : x.r === 'O' ? 1 : 0)),
     ppg: rs.length ? r2(sum(rs, (x) => (x.r === 'V' ? 3 : x.r === 'O' ? 1 : 0)) / rs.length) : null,
     gf: sum(rs, (x) => x.gf), ga: sum(rs, (x) => x.ga),
@@ -638,6 +632,7 @@ function narrative(a) {
     if (hp.xgfPg != null && ap.xgfPg != null) {
       out.push(`xG per match: ${H} ${decTxt(hp.xgfPg)} skapat / ${decTxt(hp.xgaPg)} insläppt · ${A} ${decTxt(ap.xgfPg)} / ${decTxt(ap.xgaPg)}.`);
     }
+    if (hp.league === ap.league) out.push(...xpNotes(hp, ap, H, A));
   }
   if (a.elo) {
     out.push(`Landslags-Elo: ${H} ${a.elo.home} (#${a.elo.homeRank}) mot ${A} ${a.elo.away} (#${a.elo.awayRank}).`);

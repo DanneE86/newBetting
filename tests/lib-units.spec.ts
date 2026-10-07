@@ -3244,3 +3244,44 @@ test.describe('matcher-rows: domare, väntande matcher och frånvaro före match
     expect([fresh.pre_first_at, fresh.pre_first_h]).toEqual(['t9', 0.4]);
   });
 });
+
+test.describe('xp-table: förväntade poäng (xP) och förväntad tabellplats', () => {
+  const m = (home: string, away: string, hg: number, ag: number, hxg: number | null, axg: number | null) => ({ home, away, hg, ag, hxg, axg });
+
+  test('tabellplats efter poäng, xP ur xG och förväntad plats efter xP', async () => {
+    const { xpTable } = await lib('xp-table.mjs');
+    // A vinner två matcher på tur (lågt xG), B förlorar trots klart bäst xG
+    const t = xpTable([m('A', 'B', 1, 0, 0.3, 2.5), m('C', 'A', 0, 1, 2.2, 0.4), m('B', 'C', 0, 0, 2.0, 0.5)]);
+    const a = t.byTeam.get('A'), b = t.byTeam.get('B'), c = t.byTeam.get('C');
+    expect(t.complete).toBe(true);
+    expect([a.pos, a.pts, a.played]).toEqual([1, 6, 2]);
+    expect(a.xp).toBeLessThan(1);
+    expect(b.xp).toBeGreaterThan(a.xp + 2);
+    expect(b.xpPos).toBe(1);
+    expect(a.xpPos).toBe(3);
+    expect([b.pts, c.pts]).toEqual([1, 1]);
+    expect([b.pos, c.pos].sort()).toEqual([2, 3]);
+  });
+
+  test('saknar någon match xG: xP bara ur matcher med xG och ingen förväntad plats', async () => {
+    const { xpTable } = await lib('xp-table.mjs');
+    const t = xpTable([m('A', 'B', 2, 0, 1.8, 0.6), m('B', 'A', 1, 1, null, null)]);
+    expect(t.complete).toBe(false);
+    expect(t.byTeam.get('A').xgGames).toBe(1);
+    expect(t.byTeam.get('A').xpPos).toBeNull();
+    expect(t.byTeam.get('A').pts).toBe(4);
+    expect(xpTable([]).rows).toEqual([]);
+  });
+
+  test('xpNotes: rad med xP och förväntad plats, otur/tur nämns först från 2 poängs skillnad', async () => {
+    const { xpNotes } = await lib('xp-table.mjs');
+    const p = (points: number, xp: number | null, position = 10, xpPosition: number | null = 5) => ({ points, xp, position, xpPosition });
+    const out = xpNotes(p(9, 10.4, 18, 15), p(11, 14.2, 13, 1), 'Sheffield U', 'Lincoln');
+    expect(out[0]).toBe('Förväntade poäng (xP, ur xG): Sheffield U 10,4 mot 9 verkliga (förväntad plats 15, verklig 18) · Lincoln 14,2 mot 11 verkliga (förväntad plats 1, verklig 13).');
+    expect(out).toHaveLength(2); // Sheffield U -1,4 nämns inte, Lincoln -3,2 gör det
+    expect(out[1]).toBe('Lincoln har fått 3,2 poäng mindre än spelet motiverar (otur – kan vända).');
+    expect(xpNotes(p(12, 9.5), p(5, 5), 'A', 'B')[1]).toBe('A har fått 2,5 poäng mer än spelet motiverar (tur – kan vända).');
+    expect(xpNotes(p(5, 5, 3, null), p(5, 5), 'A', 'B')[0]).toContain('A 5,0 mot 5 verkliga ·');
+    expect(xpNotes(p(5, null), p(5, 5), 'A', 'B')).toEqual([]);
+  });
+});

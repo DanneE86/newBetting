@@ -1,7 +1,7 @@
 {
  "product": "europatipset",
  "month": "2026-10",
- "updatedAt": "2026-10-05T18:32:52.052Z",
+ "updatedAt": "2026-10-06T19:18:13.723Z",
  "items": {
   "europatipset-2613-1": {
    "id": "europatipset-2613-1",
@@ -89,7 +89,11 @@
     },
     "lineupStatus": null
    },
-   "result": null
+   "result": {
+    "outcome": "1",
+    "score": "2-1"
+   },
+   "settledAt": "2026-10-06T19:18:13.723Z"
   },
   "europatipset-2613-2": {
    "id": "europatipset-2613-2",
@@ -177,7 +181,11 @@
     },
     "lineupStatus": null
    },
-   "result": null
+   "result": {
+    "outcome": "2",
+    "score": "0-1"
+   },
+   "settledAt": "2026-10-06T19:18:13.723Z"
   },
   "europatipset-2613-3": {
    "id": "europatipset-2613-3",
@@ -265,7 +273,11 @@
     },
     "lineupStatus": null
    },
-   "result": null
+   "result": {
+    "outcome": "X",
+    "score": "0-0"
+   },
+   "settledAt": "2026-10-06T19:18:13.723Z"
   },
   "europatipset-2613-4": {
    "id": "europatipset-2613-4",
@@ -353,7 +365,11 @@
     },
     "lineupStatus": null
    },
-   "result": null
+   "result": {
+    "outcome": "1",
+    "score": "2-1"
+   },
+   "settledAt": "2026-10-06T19:18:13.723Z"
   },
   "europatipset-2613-5": {
    "id": "europatipset-2613-5",
@@ -441,7 +457,11 @@
     },
     "lineupStatus": null
    },
-   "result": null
+   "result": {
+    "outcome": "X",
+    "score": "1-1"
+   },
+   "settledAt": "2026-10-06T19:18:13.723Z"
   },
   "europatipset-2613-6": {
    "id": "europatipset-2613-6",
@@ -529,7 +549,11 @@
     },
     "lineupStatus": null
    },
-   "result": null
+   "result": {
+    "outcome": "X",
+    "score": "1-1"
+   },
+   "settledAt": "2026-10-06T19:18:13.723Z"
   },
   "europatipset-2613-7": {
    "id": "europatipset-2613-7",
@@ -617,7 +641,11 @@
     },
     "lineupStatus": null
    },
-   "result": null
+   "result": {
+    "outcome": "1",
+    "score": "1-0"
+   },
+   "settledAt": "2026-10-06T19:18:13.723Z"
   },
   "europatipset-2613-8": {
    "id": "europatipset-2613-8",
@@ -705,7 +733,11 @@
     },
     "lineupStatus": null
    },
-   "result": null
+   "result": {
+    "outcome": "2",
+    "score": "0-1"
+   },
+   "settledAt": "2026-10-06T19:18:13.723Z"
   },
   "europatipset-2613-9": {
    "id": "europatipset-2613-9",
@@ -793,7 +825,11 @@
     },
     "lineupStatus": null
    },
-   "result": null
+   "result": {
+    "outcome": "1",
+    "score": "1-0"
+   },
+   "settledAt": "2026-10-06T19:18:13.723Z"
   },
   "europatipset-2613-10": {
    "id": "europatipset-2613-10",
@@ -881,7 +917,11 @@
     },
     "lineupStatus": null
    },
-   "result": null
+   "result": {
+    "outcome": "1",
+    "score": "4-1"
+   },
+   "settledAt": "2026-10-06T19:18:13.723Z"
   },
   "europatipset-2613-11": {
    "id": "europatipset-2613-11",
@@ -969,7 +1009,11 @@
     },
     "lineupStatus": null
    },
-   "result": null
+   "result": {
+    "outcome": "1",
+    "score": "3-1"
+   },
+   "settledAt": "2026-10-06T19:18:13.723Z"
   },
   "europatipset-2613-12": {
    "id": "europatipset-2613-12",
@@ -1057,7 +1101,11 @@
     },
     "lineupStatus": null
    },
-   "result": null
+   "result": {
+    "outcome": "2",
+    "score": "1-2"
+   },
+   "settledAt": "2026-10-06T19:18:13.723Z"
   },
   "europatipset-2613-13": {
    "id": "europatipset-2613-13",
@@ -1145,7 +1193,11 @@
     },
     "lineupStatus": null
    },
-   "result": null
+   "result": {
+    "outcome": "X",
+    "score": "0-0"
+   },
+   "settledAt": "2026-10-06T19:18:13.723Z"
   },
   "europatipset-2614-1": {
    "id": "europatipset-2614-1",
@@ -1195,12 +1247,12 @@
     },
     "lineupStatus": null
    },
-   "latestAt": "2026-10-05T18:32:52.052Z",
+   "latestAt": "2026-10-05T18:50:23.906Z",
    "latest": {
     "probs": [
-     0.856,
-     0.098,
-     0.046
+     0.854,
+     0.099,
+     0.047
     ],
     "folk": [
      0.93,
@@ -1213,9 +1265,9 @@
      23
     ],
     "market": [
-     0.851,
-     0.098,
-     0.051
+     0.849,
+     0.099,
+     0.052
     ],
     "single": "1",
     "coupons": {
@@ -1283,11 +1335,11 @@
     },
     "lineupStatus": null
    },
-   "latestAt": "2026-10-05T15:45:24.526Z",
+   "latestAt": "2026-10-05T18:50:23.906Z",
    "latest": {
     "probs": [
-     0.093,
-     0.149,
+     0.094,
+     0.148,
      0.758
     ],
     "folk": [
@@ -1301,7 +1353,7 @@
      1.29
     ],
     "market": [
-     0.098,
+     0.099,
      0.146,
      0.756
     ],
@@ -1371,12 +1423,12 @@
     },
     "lineupStatus": null
    },
-   "latestAt": "2026-10-05T18:32:52.052Z",
+   "latestAt": "2026-10-05T18:50:23.906Z",
    "latest": {
     "probs": [
-     0.882,
-     0.09,
-     0.028
+     0.888,
+     0.087,
+     0.025
     ],
     "folk": [
      0.91,
@@ -1389,9 +1441,9 @@
      23
     ],
     "market": [
-     0.88,
-     0.09,
-     0.031
+     0.886,
+     0.086,
+     0.028
     ],
     "single": "1",
     "coupons": {
@@ -1459,12 +1511,12 @@
     },
     "lineupStatus": null
    },
-   "latestAt": "2026-10-05T18:32:52.052Z",
+   "latestAt": "2026-10-05T18:50:23.906Z",
    "latest": {
     "probs": [
-     0.552,
-     0.264,
-     0.185
+     0.553,
+     0.26,
+     0.187
     ],
     "folk": [
      0.64,
@@ -1477,9 +1529,9 @@
      4.9
     ],
     "market": [
-     0.548,
-     0.265,
-     0.187
+     0.549,
+     0.26,
+     0.19
     ],
     "single": "1",
     "coupons": {
@@ -1488,7 +1540,7 @@
       "type": "Helgardering"
      },
      "B": {
-      "signs": "12",
+      "signs": "X2",
       "type": "Halvgardering"
      },
      "C": {
@@ -1547,12 +1599,12 @@
     },
     "lineupStatus": null
    },
-   "latestAt": "2026-10-05T18:32:52.052Z",
+   "latestAt": "2026-10-05T18:50:23.906Z",
    "latest": {
     "probs": [
-     0.171,
+     0.166,
      0.235,
-     0.595
+     0.599
     ],
     "folk": [
      0.11,
@@ -1565,9 +1617,9 @@
      1.58
     ],
     "market": [
-     0.165,
-     0.23,
-     0.604
+     0.16,
+     0.231,
+     0.609
     ],
     "single": "2",
     "coupons": {
@@ -1580,7 +1632,7 @@
       "type": "Helgardering"
      },
      "C": {
-      "signs": "12"
+      "signs": "X2"
      }
     },
     "lineupStatus": null
@@ -1635,12 +1687,12 @@
     },
     "lineupStatus": null
    },
-   "latestAt": "2026-10-05T18:32:52.052Z",
+   "latestAt": "2026-10-05T18:50:23.906Z",
    "latest": {
     "probs": [
-     0.454,
-     0.286,
-     0.259
+     0.46,
+     0.285,
+     0.255
     ],
     "folk": [
      0.44,
@@ -1653,9 +1705,9 @@
      3.65
     ],
     "market": [
-     0.447,
-     0.288,
-     0.265
+     0.453,
+     0.286,
+     0.26
     ],
     "single": "1",
     "coupons": {
@@ -1723,17 +1775,17 @@
     },
     "lineupStatus": null
    },
-   "latestAt": "2026-10-05T15:45:24.526Z",
+   "latestAt": "2026-10-05T18:50:23.906Z",
    "latest": {
     "probs": [
-     0.102,
+     0.106,
      0.205,
-     0.693
+     0.688
     ],
     "folk": [
-     0.06,
+     0.07,
      0.17,
-     0.77
+     0.76
     ],
     "odds": [
      8,
@@ -1741,9 +1793,9 @@
      1.41
     ],
     "market": [
-     0.105,
+     0.11,
      0.205,
-     0.69
+     0.685
     ],
     "single": "2",
     "coupons": {
@@ -1752,8 +1804,8 @@
       "type": "Halvgardering"
      },
      "B": {
-      "signs": "1X",
-      "type": "Halvgardering"
+      "signs": "1X2",
+      "type": "Helgardering"
      },
      "C": {
       "signs": "X2"
@@ -1811,7 +1863,7 @@
     },
     "lineupStatus": null
    },
-   "latestAt": "2026-10-05T15:45:24.526Z",
+   "latestAt": "2026-10-05T18:50:23.906Z",
    "latest": {
     "probs": [
      0.336,
@@ -1840,7 +1892,7 @@
       "type": "Helgardering"
      },
      "B": {
-      "signs": "12",
+      "signs": "X2",
       "type": "Halvgardering"
      },
      "C": {

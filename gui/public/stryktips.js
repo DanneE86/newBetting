@@ -352,6 +352,7 @@ function teamCard(p, side) {
       <div><dt>Mål</dt><dd>${p.gf}–${p.ga}</dd></div>
       <div><dt>${recLbl}</dt><dd>${rec.w}V ${rec.d}O ${rec.l}F · ${rec.gf}–${rec.ga}</dd></div>
       ${p.xgfPg != null ? `<div><dt>xG/match</dt><dd>${dec(p.xgfPg)} skapat · ${dec(p.xgaPg)} insläppt</dd></div>` : ""}
+      ${p.xp != null ? `<div><dt>xP</dt><dd>${String(p.xp.toFixed(1)).replace(".", ",")} förväntade poäng mot ${p.points} verkliga${p.xpPosition ? ` · förväntad plats ${p.xpPosition}` : ""} <small>(poäng om matcherna avgjorts av xG)</small></dd></div>` : ""}
       <div><dt>Styrka</dt><dd>anfall ${dec(p.attack)} · försvar ${dec(p.defence)} <small>(1,00 = snitt, lägre försvar = bättre)</small></dd></div>
     </dl>
     <div class="st-form">${(p.last || []).map((m) => `<span class="f-${m.r}" title="${esc(m.date)} ${m.venue === "H" ? "hemma" : "borta"} mot ${esc(m.opp)}">${m.r}</span>`).join("")}</div>
