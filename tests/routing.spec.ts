@@ -124,10 +124,20 @@ test('Stryktipset: en sida, egna krav genererar kupong A och B', async ({ page }
   await expect(page.locator('.sb-coupon').nth(2)).toContainText('minst 50 000 kr');
   // Krav på A+B låses inte i C
   await expect(table.nth(0).locator('td').nth(3)).not.toContainText('🔒');
-  // Kupong D togs bort 2026-10-05: bara A, B och C, ingen D-kolumn och inget D-val för krav
-  await expect(page.locator('.sb-coupon')).toHaveCount(3);
-  await expect(page.locator('.sb-table thead th', { hasText: 'Kupong D' })).toHaveCount(0);
+  // Kupong D/E (2026-10-07): 500 egna rader vardera med minst 30 000 kr, krav på A+B låses inte där
+  await expect(page.locator('.sb-coupon')).toHaveCount(5);
+  const dCard = page.locator('.sb-coupon').nth(3);
+  await expect(dCard.locator('h3')).toContainText(/Kupong D \d+ rader/);
+  await expect(dCard).toContainText('minst 30 000 kr för 13 rätt');
+  const eCard = page.locator('.sb-coupon').nth(4);
+  await expect(eCard.locator('h3')).toContainText(/Kupong E \d+ rader/);
+  await expect(eCard).toContainText('kompletterar D');
+  await expect(table.nth(0).locator('td').nth(4)).not.toContainText('🔒');
+  await expect(table.nth(0).locator('td').nth(5)).not.toContainText('🔒');
+  // D/E styrs via D/E %-raden, inte via Gäller
   await expect(rows.nth(0).locator('.sb-scope button[data-scope="D"]')).toHaveCount(0);
+  await expect(rows.nth(0).locator('.sb-scope button[data-scope="E"]')).toHaveCount(0);
+  await expect(rows.nth(0).locator('.sb-defall')).toHaveCount(1);
   // Eget krav på C: spik 2 på match 8 bara i C
   await rows.nth(7).locator('.sb-sign[data-sign="2"]').click();
   await rows.nth(7).locator('.sb-scope button[data-scope="C"]').click();
@@ -136,13 +146,14 @@ test('Stryktipset: en sida, egna krav genererar kupong A och B', async ({ page }
   await expect(table.nth(7).locator('td').nth(1)).not.toContainText('🔒');
   await expect(table.nth(7).locator('td').nth(2)).not.toContainText('🔒');
   await rows.nth(7).locator('.sb-sign[data-sign="2"]').click();
-  // Turmatcher och vanliga missar visas (historiken ligger i den hopfällda sektionen "Statistik & historik")
+  // Turmatcher, matcher och vanliga missar är hopfällda – fäll ut vid behov
   await page.locator('.st-history > summary').click();
   await expect(page.locator('.st-miss')).toContainText('Vanliga missar');
   await expect(page.locator('.st-miss-table tbody tr').first()).toBeVisible();
-  // Matchkorten visar B-kupongens tecken (även när hämtningens system är delat)
+  await page.locator('.st-matches > summary').click();
   await expect(page.locator('.st-match .st-tip.sysb').first()).toBeVisible();
   // Turknapparna skriver aldrig över ett krav som gäller A
+  await page.locator('.st-tur > summary').click();
   const turAdd = page.locator('.sb-tur-add');
   // En turmatch utan eget krav (testet har redan lagt krav på några matcher)
   const freeNrs: string[] = [];
@@ -174,7 +185,7 @@ test('Europatipset har samma sida via /europatipset', async ({ page }) => {
   await expect(page).toHaveURL(base + '/europatipset');
   await expect(page.locator('#stryktips-view h2')).toContainText('Europatipset', { timeout: 30_000 });
   await expect(page.locator('.sb-row')).toHaveCount(13, { timeout: 300_000 });
-  await expect(page.locator('.sb-coupon')).toHaveCount(3, { timeout: 300_000 }); // A, B och C
+  await expect(page.locator('.sb-coupon')).toHaveCount(5, { timeout: 300_000 }); // A, B, C, D och E
   await expect(page.locator('.view-tab.active')).toHaveAttribute('data-view', 'europatipset');
   // Krav bara i A (1X på sista matchen): B väljer aldrig exakt samma tecken där
   await page.evaluate(() => localStorage.clear());

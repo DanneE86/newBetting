@@ -1501,6 +1501,130 @@ test.describe('referee-streaks: FotMob, straffar och alla ligor', () => {
 
 // ---------- gui/public/stryk-engine.js (webbens kupongmotor) ----------
 
+test.describe('stryk-engine: kupong D (500 egna rader, minst 30 000 kr)', () => {
+  const engine = () => import(pathToFileURL(path.join(ROOT, 'gui', 'public', 'stryk-engine.js')).href);
+  // Fast omgång: 13 matcher med olika favoriter och folk som överstreckar favoriten
+  const events = Array.from({ length: 13 }, (_, i) => {
+    const fav = 0.42 + 0.03 * (i % 7), x = 0.27, rest = 1 - fav - x;
+    const final = i % 3 === 2 ? [rest, x, fav] : [fav, x, rest];
+    const f = final.map((v, k) => (k === final.indexOf(fav) ? v * 1.15 : v));
+    const s = f.reduce((a, b) => a + b, 0);
+    return { final, folk: f.map((v) => v / s) };
+  });
+  const base = { realTurnover: 20e6, turnover: 25e6, jackpot: 0 };
+  const SIGNS = ['1', 'X', '2'];
+  const all = (forced: (number[] | null)[]) => {
+    const out: { row: string; p: number; pay: number }[] = [];
+    const walk = (i: number, row: string, p: number, f: number) => {
+      if (i === 13) { out.push({ row, p, pay: (0.26 * base.realTurnover) / (1 + base.realTurnover * f) }); return; }
+      for (const k of forced[i] || [0, 1, 2]) walk(i + 1, row + SIGNS[k], p * events[i].final[k], f * events[i].folk[k]);
+    };
+    walk(0, '', 1, 1);
+    return out.filter((r) => r.pay >= 30000).sort((a, b) => b.p - a.p);
+  };
+
+  test('exakt de 500 troligaste raderna med minst 30 000 kr, i chansordning', async () => {
+    const { buildCouponD } = await engine();
+    const forced = events.map(() => null);
+    const D = buildCouponD({ product: 'stryktipset' }, events, forced, base);
+    const ref = all(forced).slice(0, 500);
+    expect(D.rows).toBe(500);
+    expect(D.cost).toBe(500);
+    expect(new Set(D.rowList)).toEqual(new Set(ref.map((r) => r.row)));
+    expect(D.rowP.every((p: number, i: number) => i === 0 || D.rowP[i - 1] >= p)).toBe(true);
+    expect(D.minPayout).toBeGreaterThanOrEqual(30000);
+    expect(D.hitAll).toBeCloseTo(ref.reduce((s, r) => s + r.p, 0), 12);
+  });
+
+  test('D i Gambling Cabin: länken ger exakt kupongens rader (450–500), aldrig tak 0', async () => {
+    const { buildCouponDGC } = await engine();
+    const gcBase = { ...base, turnover: 25e6 };
+    const sets = events.map((e) => [0, 1, 2].filter((k) => e.final[k] >= 0.2));
+    const g = buildCouponDGC({ product: 'stryktipset', drawNumber: 1, regCloseTime: '2026-10-10T15:59' }, events, sets, gcBase);
+    expect(g).toBeTruthy();
+    expect(g.rows).toBeGreaterThanOrEqual(450);
+    expect(g.rows).toBeLessThanOrEqual(500);
+    // Läs länken som Gambling Cabin: färg per tecken (0 = inte med, 1 = blå), färgtak och lägsta utdelning i GC:s formel
+    const q = new URL(g.gamblingCabinUrl).searchParams;
+    const cells = ['v1', 'vX', 'v2'].map((k) => q.get(k)!.split(',').map(Number));
+    const caps: Record<number, number> = {};
+    for (const [name, id] of [['yellow', 2], ['red', 3], ['green', 4], ['pink', 5]] as const) {
+      const [on, lo, hi] = q.get(name)!.split(',').map(Number);
+      if (on) { expect(lo).toBe(0); expect(hi, `${name}: tak 0 läses som ingen regel i GC`).toBeGreaterThan(0); caps[id] = hi; }
+    }
+    const utd = Number(q.get('utd')!.split(',')[1]);
+    const rows: string[] = [];
+    const walk = (i: number, row: string, f: number, cnt: Record<number, number>) => {
+      if (i === 13) {
+        if ((0.26 * gcBase.turnover) / (1 + gcBase.turnover * f) >= utd && Object.entries(caps).every(([id, c]) => (cnt[+id] || 0) <= c)) rows.push(row);
+        return;
+      }
+      for (let k = 0; k < 3; k++) {
+        const c = cells[k][i];
+        if (!c) continue;
+        walk(i + 1, row + SIGNS[k], f * events[i].folk[k], c > 1 ? { ...cnt, [c]: (cnt[c] || 0) + 1 } : cnt);
+      }
+    };
+    walk(0, '', 1, {});
+    expect(new Set(rows)).toEqual(new Set(g.rowList));
+    expect(g.minPayout).toBeGreaterThanOrEqual(30000);
+  });
+
+  test('krav på D följs och filen har Svenska Spels format för Egna rader', async () => {
+    const { buildCouponD } = await engine();
+    const forced: (number[] | null)[] = events.map(() => null);
+    forced[0] = [1];
+    forced[4] = [0, 2];
+    const D = buildCouponD({ product: 'europatipset' }, events, forced, base);
+    expect(D.rowList.every((r: string) => r[0] === 'X' && r[4] !== 'X')).toBe(true);
+    expect(D.picks[0]).toMatchObject({ signs: 'X', locked: true });
+    expect(D.picks[1].locked).toBe(false);
+    const lines = D.egnaRader.trim().split('\n');
+    expect(lines[0]).toBe('Europatipset');
+    expect(lines).toHaveLength(D.rows + 1);
+    expect(lines[1]).toBe(`E,${D.rowList[0].split('').join(',')}`);
+    expect(lines.slice(1).every((l: string) => /^E(,[1X2]){13}$/.test(l))).toBe(true);
+  });
+
+  test('kan falla på D: fördelar raderna jämnt (≈33/33/33) i stället för att spika favoriten', async () => {
+    const { buildCouponD, canFall, fallShareTargets } = await engine();
+    // Favorit 1 kan falla: folk 60 %, vår chans 50 %
+    const ev = events.map((e, i) => (i === 0
+      ? { eventNumber: 1, final: [0.50, 0.27, 0.23], folk: [0.60, 0.22, 0.18] }
+      : { ...e, eventNumber: i + 1 }));
+    expect(canFall(ev[0])?.sign).toBe('1');
+    const D = buildCouponD({ product: 'stryktipset', deFallShares: { 1: [33, 33, 34] } }, ev, ev.map(() => null), base);
+    const cnt = { 1: 0, X: 0, 2: 0 };
+    for (const r of D.rowList) cnt[r[0]]++;
+    const t = fallShareTargets(500, [33, 33, 34]);
+    expect(cnt['1']).toBe(t[0]);
+    expect(cnt.X).toBe(t[1]);
+    expect(cnt['2']).toBe(t[2]);
+    expect(D.rules.fallShares).toBe(true);
+    expect(cnt['1']).toBeLessThan(200);
+  });
+
+  test('kupong E kompletterar D: 500 andra rader, ingen överlapp, samma utdelningsgolv', async () => {
+    const { buildCouponD, buildCouponE } = await engine();
+    const forced = events.map(() => null);
+    const D = buildCouponD({ product: 'stryktipset' }, events, forced, base);
+    const E = buildCouponE({ product: 'stryktipset' }, events, forced, base, D);
+    expect(E.rows).toBe(500);
+    expect(E.cost).toBe(500);
+    expect(E.system).toBe('E');
+    expect(E.minPayout).toBeGreaterThanOrEqual(30000);
+    const setD = new Set(D.rowList);
+    expect(E.rowList.every((r: string) => !setD.has(r))).toBe(true);
+    expect(E.rules.complements).toBe('D');
+    const ref = all(forced);
+    const afterD = ref.filter((r) => !setD.has(r.row));
+    // E tar 500 rader ur dem som inte finns i D (med luckbonus kan ordningen skilja från ren chansordning)
+    expect(new Set(E.rowList).size).toBe(500);
+    expect(E.rowList.every((r: string) => afterD.some((x) => x.row === r))).toBe(true);
+    expect(E.egnaRader.trim().split('\n')[0]).toBe('Stryktipset');
+  });
+});
+
 test.describe('stryk-engine: kupong A, B och C', () => {
   const dataFile = path.join(ROOT, 'data', 'stryktipset.json');
   const products: any[] = fs.existsSync(dataFile) ? JSON.parse(fs.readFileSync(dataFile, 'utf8')).products ?? [] : [];
@@ -1516,8 +1640,8 @@ test.describe('stryk-engine: kupong A, B och C', () => {
       const { A, B, C } = out;
       const at = `${p.product} ${p.drawNumber}`;
       expect(A && B, at).toBeTruthy();
-      // Kupong D togs bort 2026-10-05 (användaren: "känns helt onödig") – bara A, B och C
-      expect(Object.keys(out).filter((k) => /^[A-Z]$/.test(k)).sort(), `${at}: bara kupong A–C`).toEqual(["A", "B", "C"]);
+      // Kupong D/E (2026-10-07): 500 egna rader vardera (egna tester)
+      expect(Object.keys(out).filter((k) => /^[A-Z]$/.test(k)).sort(), `${at}: kupong A–E`).toEqual(["A", "B", "C", "D", "E"]);
       for (const [name, c] of [['A', A], ['B', B], ['C', C]] as const) {
         if (!c) continue;
         expect(spikes(c), `${at} ${name}: minst 2 spikar`).toBeGreaterThanOrEqual(2);
@@ -1608,6 +1732,24 @@ test.describe('stryk-engine: kupong A, B och C', () => {
     }
     expect(canFall({ final: [0.5, 0.27, 0.23], folk: [0.62, 0.2, 0.18] })?.side).toBe('home');
     expect(canFall({ final: [0.5, 0.27, 0.23] })).toBeNull(); // utan streck ingen varning
+  });
+
+  // Icke-spikbara: tipset baseras på Oddsets marknadsstyrda blandning (tips-latest) när matchen finns där
+  test('applyOddsetTipBasis: sätter tip/final från Oddset blended', async () => {
+    const { applyOddsetTipBasis, findOddsetRow } = await import(pathToFileURL(path.join(ROOT, 'scripts', 'fetch-stryktipset.mjs')).href);
+    const row = findOddsetRow('E0', '2026-10-10', ['Man United', 'Tottenham'], ['Manchester United', 'Tottenham']);
+    expect(row?.pro?.blended?.home).toBeGreaterThan(0);
+    const a = {
+      home: 'Manchester United', away: 'Tottenham', kickoff: '2026-10-10T16:30:00Z', leagueCode: 'E0',
+      matched: { home: 'Man United', away: 'Tottenham' }, folk: [0.5, 0.25, 0.25], odds: [1.8, 4, 4.5],
+      final: [0.4, 0.3, 0.3], tip: 'X', tipP: 0.3,
+    };
+    expect(applyOddsetTipBasis(a)).toBe(true);
+    expect(a.basis).toBe('oddset');
+    expect(a.tipBasis).toBe('oddset');
+    expect(['1', 'X', '2']).toContain(a.tip);
+    expect(a.final[0] + a.final[1] + a.final[2]).toBeCloseTo(1, 2);
+    expect(applyOddsetTipBasis({ home: 'Okänt FC', away: 'Påhittad United', kickoff: '2099-01-01', leagueCode: 'E0' })).toBe(false);
   });
 
   // 30 iterationer 2026-10-03 (natt): A röd 1–2 och gränsen på 90 % av budgeten (ca 395 rader) gav högst chans till 13 rätt

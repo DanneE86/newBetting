@@ -135,8 +135,8 @@ test('matcher: avsparkstid, tips = troligaste tecknet, Värde/Ej värde räknat 
       const top = e.final.indexOf(Math.max(...e.final));
       expect(e.tip, at).toBe(SIGNS[top]);
       expect(e.tipP, at).toBeCloseTo(e.final[top], 3);
-      // Procentens kalla: odds + modell, eller utan odds modell 50 % + folk 50 % (basis '<modell>+folk')
-      expect(e.basis, at).toMatch(/^(club|elo|clubelo)(\+folk)?$|^(folk|none)$/);
+      // Procentens kalla: odds + modell, eller utan odds modell 50 % + folk 50 % (basis '<modell>+folk'); utan lagmodell bara oddsen ('market')
+      expect(e.basis, at).toMatch(/^(club|elo|clubelo)(\+folk)?$|^(market|folk|none)$/);
       if (e.market && e.model) {
         // Domare med låg hemmavinst och ny tränare flyttar procenten efteråt (finalBase = före)
         (e.finalBase || e.final).forEach((x: number, i: number) => expect(x, `${at} odds+modell`).toBeCloseTo((1 - e.modelWeight) * e.market[i] + e.modelWeight * e.model[i], 2));
@@ -310,6 +310,8 @@ test('reducerade system: budget, teckenregler, rader inom grundraden', () => {
           skrall++;
           return;
         }
+        // Spik på 1 där Oddset tippar 1 (regel ett, 2026-10-06) behöver inte vara spikbar och är ingen reservspik
+        if (pk === '1' && p.events[i].tip === '1') return;
         // Reserv (rules.spikLoose): för få spikbara matcher för minst 2 spikar – då spik på favoriten i systemets procent
         if (red.rules.spikLoose && !(sp?.used && sp.spikbar && pk === sp.fav)) {
           reserve++;
@@ -333,7 +335,12 @@ test('reducerade system: budget, teckenregler, rader inom grundraden', () => {
       // B helgarderar bara där A inte gör det (A:s halvor utan helgula matcher + högst 1 spikskillnad) – A/B-regeln går före
       const allY = (i: number) => [0, 1, 2].every((k) => { const f = p.events[i].folk?.[k]; return f != null && f < 0.45 && Math.round(f * 100) > 25; });
       const pa = p.events.map((e: any) => e.systemPick?.signs || '');
-      const helgCap = name === 'B' ? pa.filter((x: string, i: number) => x.length === 2 && !allY(i)).length + Math.min(1, pa.filter((x: string, i: number) => x.length === 1 && !allY(i)).length) : 13;
+      // A:s spikade 1:or som behövs för "minst 2 spikade 1:or" (regel ett, 2026-10-06) kan inte bli helgardering i B
+      const isOneA = (x: string, i: number) => x === '1' && p.events[i].tip === '1';
+      const onesMin = Math.min(2, p.events.filter((e: any) => e.tip === '1').length);
+      const aOnes = pa.filter(isOneA).length;
+      const aSpare = pa.filter((x: string, i: number) => x.length === 1 && !allY(i) && !isOneA(x, i)).length + Math.min(Math.max(0, aOnes - onesMin), pa.filter((x: string, i: number) => isOneA(x, i) && !allY(i)).length);
+      const helgCap = name === 'B' ? pa.filter((x: string, i: number) => x.length === 2 && !allY(i)).length + Math.min(1, aSpare) : 13;
       expect(picks.filter((pk: string) => pk.length === 3).length, `${at}: minst ${MIN_HELG} helgarderingar`).toBeGreaterThanOrEqual(Math.min(MIN_HELG, helgCap));
       // Rörliga färgfönster (hela raden = regeln + spikarnas färger): minst 3 breda och runt väntat antal
       expect(red.rules.colorRules.pink, at).toBeUndefined();
@@ -592,6 +599,8 @@ test('matchkontext (FotMob): bara för öppna omgångar, raderna ligger sist i a
 test('sparade kuponger: senaste versionen följer reglerna och öppen omgång stämmer med sidan', () => {
   const files = fs.existsSync(histDir) ? fs.readdirSync(histDir).filter((f) => f.endsWith('.json')) : [];
   test.skip(files.length === 0, 'inga sparade kuponger');
+  // Läses om här: stryktips.spec.ts kan hämta om sidan och historiken parallellt efter att filen lästes in överst
+  const current: any[] = JSON.parse(fs.readFileSync(file, 'utf8')).products ?? [];
   for (const f of files) {
     const h = JSON.parse(fs.readFileSync(path.join(histDir, f), 'utf8'));
     expect(f, 'filnamn = spel-omgang').toBe(`${h.product}-${h.drawNumber}.json`);
@@ -609,7 +618,7 @@ test('sparade kuponger: senaste versionen följer reglerna och öppen omgång st
     }
     if (h.saved && h.latest) expect(Date.parse(h.latest.at), f).toBeGreaterThanOrEqual(Date.parse(h.saved.at));
     // Senaste versionen for en oppen omgang ska vara exakt det som visas pa sidan
-    const p = products.find((x) => x.product === h.product && x.drawNumber === h.drawNumber && x.open);
+    const p = current.find((x) => x.product === h.product && x.drawNumber === h.drawNumber && x.open);
     if (p) {
       expect(h.latest.rowList, `${f}: latest = sidans system A`).toEqual(p.reduced.rowList);
       expect(h.latest.picks, f).toEqual(p.events.map((e: any) => e.systemPick.signs));

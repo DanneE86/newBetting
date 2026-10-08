@@ -1164,9 +1164,12 @@ export function kravSigns(k) {
 }
 
 /**
- * Genererar kupong A och B för en omgång.
- * krav: { [eventNumber]: { signs: "1" | "1X" | "X2" | "12" | "1X2" | ..., scope: "both" | "A" | "B" | "C" | "all" } }
- * "both" = A och B, "all" = alla tre.
+ * Genererar kupong A–E för en omgång.
+ * krav: { [eventNumber]: { signs: "1" | "1X" | ..., scope: "both" | "A" | "B" | "C" | "D" | "E" | "all" } }
+ * "both" = A och B, "all" = alla fem.
+ * D = de 500 troligaste raderna med minst 30 000 kr för 13 rätt (egna rader, buildCouponD).
+ * E = komplement till D (2026-10-07): de 500 nästa raderna (≥ 30 000 kr) som inte finns i D, med extra vikt på
+ *     tecken D saknar i någon match – samma filformat (Egna rader).
  * A = bästa systemet med A:s krav (350–400 kr, spelets utdelningsgräns).
  * C = skrällsystemet (700–850 kr, 50 000–75 000 kr, röd 2–6, högsta rad minst 1 miljon), fritt från A och B.
  * B = risksystemet med B:s krav: röd 1–5 eller 2–5, minst 30 000 kr för 13 rätt utan tak, teckenregler 3-2-2, aldrig samma gardering som A och högst 1 spik
@@ -1176,7 +1179,11 @@ export function kravSigns(k) {
 // tecken som Oddset (användaren 2026-10-06; äldre sparad data kan ha en vänd sysP)
 const topOf = (x) => x.indexOf(Math.max(...x));
 export const sysFinal = (e) => (e.spik?.used && e.spik.sysP && topOf(e.spik.sysP) === topOf(e.final) ? e.spik.sysP : e.final);
-export function generateCoupons(p, krav) {
+/**
+ * Genererar kupong A–E.
+ * opts.onlyDE = true → bara D/E (+ DGC); UI behåller A/B/C när kraven är oförändrade (mycket snabbare vid D/E %).
+ */
+export function generateCoupons(p, krav, opts = {}) {
   // Systemen byggs på matchens justerade procent (spikbedömningen) när den används, annars på modellens
   const events = p.events.map((e) => ({ ...e, final: sysFinal(e) }));
   const forcedFor = (sys) => events.map((e) => {
@@ -1184,7 +1191,6 @@ export function generateCoupons(p, krav) {
     const on = k && (k.scope === sys || k.scope === "all" || (k.scope === "both" && (sys === "A" || sys === "B")));
     return on ? kravSigns(k) : null;
   });
-  const fA = forcedFor("A"), fB = forcedFor("B");
   const rules = p.reduced?.rules || {};
   const base = {
     rowPrice: p.reduced?.rowPrice || 1,
@@ -1196,6 +1202,17 @@ export function generateCoupons(p, krav) {
     colorBands: p.colorBands || null,
     spikMin: SPIK_MIN_BY_PRODUCT[p.product] ?? 0,
   };
+  const buildDE = () => {
+    const D = buildCouponD(p, events, forcedFor("D"), base);
+    if (D) D.gc = buildCouponDGC(p, events, D.picks.map((x) => [...x.signs].map((s) => SIGNS.indexOf(s))), base);
+    const E = buildCouponE(p, events, forcedFor("E"), base, D);
+    let unionDE = D ? D.hitAll : 0;
+    if (E) unionDE += E.hitAll;
+    return { D, E, unionDE };
+  };
+  if (opts.onlyDE) return buildDE();
+
+  const fA = forcedFor("A"), fB = forcedFor("B");
   const finish = (best, sys, forced) => ({
     ...best.reduced,
     rules: { ...best.reduced.rules, ...(best.system.ayMax > BLUE_HALVES ? { allYellowMax: best.system.ayMax } : {}) },
@@ -1210,24 +1227,498 @@ export function generateCoupons(p, krav) {
   const b = withBlueX("B", (blueX) => buildRisk("B", events, fB, { ...base, xTilt: X_TILT_FOR.includes("B"), blueX, payoutMin: Math.max(UTD_MIN_B, base.payoutMin) }, BUDGET, a ? new Set(a.reduced.rowList) : null,
     { avoid: a?.system.sets ?? null, payoutLadder: [1], signLadder: SIGN_LADDER_B }, a?.system.sets ?? null));
   const A = a && finish(a, "A", fA), B = b && finish(b, "B", fB);
-  // A+B tillsammans: gemensamma rader och chansen att någon av kupongerna tar 13 rätt
   let overlap = 0, unionHit = A ? A.hitAll : 0;
   if (B) {
     const setA = new Set(A?.rowList || []);
     B.rowList.forEach((row, i) => { if (setA.has(row)) overlap++; else unionHit += B.rowP[i]; });
   }
-  // Kupong C: skrällsystemet (röd 2–6, rött på 6–10 matcher tills högsta rad >= 1 milj, 50 000–75 000 kr, skrällspik),
-  // fri från A och B, bara C:s egna krav
   const fC = forcedFor("C");
   const signC = SIGN_MIN_C_BY_PRODUCT[p.product] || SIGN_MIN;
   const c = buildRisk("C", events, fC, { ...base, sys: "C", payoutMin: Math.max(UTD_MIN_C, base.payoutMin) }, BUDGET_C, null,
     { payoutLadder: [1], signLadder: [signC, ...SIGN_LADDER.filter((x) => x.join() !== signC.join() && x.every((v, k) => v <= signC[k]))] }, null, RISK_C);
-  // Andel av omgångens väntade kryss som C täcker (X_SHARE_C)
   if (c) {
     const xs = xShareOf(events, c.system.sets);
     c.reduced = { ...c.reduced, rules: { ...c.reduced.rules, xShare: Math.round(xs * 1000) / 1000, ...(xs < X_SHARE_C ? { xShareShort: true } : {}) } };
     if (xs < X_SHARE_C) c.relaxed.push(`kryssen täcker ${Math.round(xs * 100)} % av omgångens väntade kryss – ${Math.round(X_SHARE_C * 100)} % gick inte med dina krav`);
   }
   const C = c && finish(c, "C", fC);
-  return { A, B, C, overlap, unionHit };
+  const { D, E, unionDE } = buildDE();
+  return { A, B, C, D, E, overlap, unionHit, unionDE };
+}
+
+// ---------- Kupong D / E: egna rader med 13 rätt över 30 000 kr (användaren 2026-10-07) ----------
+// D: de D_RULES.rows troligaste raderna. E: komplement – nästa E_RULES.rows som inte finns i D, med bonus för tecken
+// D saknar. Spelas som fil i Svenska Spels "Egna rader". Bara krav på D/E eller Alla gäller.
+export const D_RULES = { rows: 500, payoutMin: 30000 };
+export const E_RULES = { rows: 500, payoutMin: 30000, gapBonus: 2.5 }; // gapBonus: varje tecken D saknar multiplicerar radens sorteringsvikt
+// "Kan falla" på D/E (användaren 2026-10-07): spika inte favoriten – fördela raderna t.ex. 33/33/33 (eller egna andelar).
+export const DE_FALL = { defaultShares: [1 / 3, 1 / 3, 1 / 3], poolFactor: 8, poolMin: 1500 };
+
+/** Andelar → antal rader per tecken som summerar till N (bara allowed-tecken får > 0). */
+export function fallShareTargets(N, shares, allowed = [0, 1, 2]) {
+  const w = [0, 1, 2].map((k) => (allowed.includes(k) ? Math.max(0, Number(shares?.[k]) || 0) : 0));
+  const sum = w.reduce((a, b) => a + b, 0);
+  if (!sum || !N) return [0, 0, 0];
+  const raw = w.map((x) => (x / sum) * N);
+  const out = raw.map((x) => Math.floor(x));
+  let left = N - out.reduce((a, b) => a + b, 0);
+  const order = [0, 1, 2].filter((k) => w[k] > 0).sort((a, b) => (raw[b] - out[b]) - (raw[a] - out[a]));
+  for (let i = 0; left > 0 && order.length; i++, left--) out[order[i % order.length]]++;
+  return out;
+}
+
+/**
+ * Plan per match: null = fri, annars [andel 1, X, 2] (vikter).
+ * p.deFallShares = { D: { nr: [a,b,c] }, E: { … } } (nytt) eller { nr: [a,b,c] } (äldre, samma för D och E).
+ */
+export function buildFallSharePlan(p, events, forced, system = "D") {
+  const bag = p?.deFallShares || {};
+  const custom = (bag.D || bag.E) ? (bag[system] || {}) : bag;
+  return events.map((e, i) => {
+    const allowed = forced[i] || [0, 1, 2];
+    if (allowed.length <= 1) return null; // spikat krav: rör inte
+    const nr = e.eventNumber;
+    const own = custom[nr] ?? custom[String(nr)];
+    if (own && own.length === 3 && own.some((x) => Number(x) > 0)) {
+      return [0, 1, 2].map((k) => (allowed.includes(k) ? Number(own[k]) || 0 : 0));
+    }
+    return null;
+  });
+}
+const decodeRow = (code, n) => {
+  const s = new Array(n);
+  for (let i = n - 1; i >= 0; i--) { s[i] = SIGNS[code % 3]; code = Math.floor(code / 3); }
+  return s.join("");
+};
+const encodeRow = (row) => {
+  let c = 0;
+  for (let i = 0; i < row.length; i++) c = c * 3 + SIGNS.indexOf(row[i]);
+  return c;
+};
+
+/**
+ * Topp-N rader med utdelning ≥ payoutMin.
+ * exclude = Set av radkoder att hoppa över.
+ * score(pr, code) = sorteringsvikt (högre = bättre); scoreMaxFactor ≥ max score(pr,code)/pr (för grenkapning).
+ */
+function selectTopRows(events, forced, base, { rows: N, payoutMin, exclude = null, score = (pr) => pr, scoreMaxFactor = 1 } = {}) {
+  const n = events.length;
+  const RT = base.realTurnover || base.turnover, J = base.jackpot || 0;
+  const pot = PAYOUT_13 * RT + J;
+  const fMax = (pot / payoutMin - 1) / RT;
+  const P = events.map((e) => e.final);
+  const F = events.map((e) => [0, 1, 2].map((k) => e.folk?.[k] ?? e.final[k]));
+  // Högst chans först → snabbare heap-kapning
+  const opts = events.map((e, i) => {
+    const o = forced[i] || [0, 1, 2];
+    return o.length <= 1 ? o : o.slice().sort((a, b) => P[i][b] - P[i][a]);
+  });
+  const pRest = new Float64Array(n + 1), fRest = new Float64Array(n + 1);
+  pRest[n] = 1; fRest[n] = 1;
+  for (let i = n - 1; i >= 0; i--) {
+    let pM = 0, fM = 1;
+    for (const k of opts[i]) { if (P[i][k] > pM) pM = P[i][k]; if (F[i][k] < fM) fM = F[i][k]; }
+    pRest[i] = pRest[i + 1] * pM;
+    fRest[i] = fRest[i + 1] * fM;
+  }
+  const hs = new Float64Array(N), hp = new Float64Array(N), hf = new Float64Array(N), hr = new Int32Array(N);
+  let size = 0;
+  const swap = (a, b) => {
+    [hs[a], hs[b]] = [hs[b], hs[a]]; [hp[a], hp[b]] = [hp[b], hp[a]];
+    [hf[a], hf[b]] = [hf[b], hf[a]]; [hr[a], hr[b]] = [hr[b], hr[a]];
+  };
+  const push = (s0, p0, f0, r0) => {
+    if (size < N) {
+      let i = size++;
+      hs[i] = s0; hp[i] = p0; hf[i] = f0; hr[i] = r0;
+      while (i && hs[(i - 1) >> 1] > hs[i]) { swap(i, (i - 1) >> 1); i = (i - 1) >> 1; }
+      return;
+    }
+    hs[0] = s0; hp[0] = p0; hf[0] = f0; hr[0] = r0;
+    for (let i = 0; ;) {
+      const l = 2 * i + 1, r = l + 1;
+      let m = i;
+      if (l < N && hs[l] < hs[m]) m = l;
+      if (r < N && hs[r] < hs[m]) m = r;
+      if (m === i) break;
+      swap(i, m); i = m;
+    }
+  };
+  const hasEx = exclude && exclude.size > 0;
+  const walk = (i, pr, f, code) => {
+    if (f * fRest[i] > fMax) return;
+    if (size === N && pr * pRest[i] * scoreMaxFactor <= hs[0]) return;
+    if (i === n) {
+      if (hasEx && exclude.has(code)) return;
+      push(score(pr, code), pr, f, code);
+      return;
+    }
+    for (const k of opts[i]) walk(i + 1, pr * P[i][k], f * F[i][k], code * 3 + k);
+  };
+  walk(0, 1, 1, 0);
+  if (!size) return null;
+  const idx = [...Array(size).keys()].sort((a, b) => hs[b] - hs[a] || hp[b] - hp[a]);
+  return {
+    pot, RT, J, size, N, payoutMin,
+    rowList: idx.map((j) => decodeRow(hr[j], n)),
+    rowP: idx.map((j) => hp[j]),
+    rowReal: idx.map((j) => pot / (1 + RT * hf[j])),
+    codes: idx.map((j) => hr[j]),
+  };
+}
+
+function finishEgnaRader(p, events, forced, base, picked, system, rulesExtra = {}) {
+  const { size, N, payoutMin, RT, J, rowList, rowP, rowReal } = picked;
+  const hit = rowP.reduce((s, x) => s + x, 0);
+  const ev = rowP.reduce((s, x, j) => s + x * rowReal[j], 0);
+  // Ett pass över raderna i stället för some() per tecken
+  const used = events.map(() => []);
+  const seen = events.map(() => [false, false, false]);
+  for (const row of rowList) {
+    for (let i = 0; i < events.length; i++) {
+      const k = SIGNS.indexOf(row[i]);
+      if (k >= 0 && !seen[i][k]) { seen[i][k] = true; used[i].push(k); }
+    }
+  }
+  for (const s of used) s.sort((a, b) => a - b);
+  const rowPrice = base.rowPrice || 1;
+  // DGC byggs av generateCoupons / backtest – inte här (undvik dubbel, dyr sökning)
+  return {
+    gc: null,
+    rows: size, cost: size * rowPrice, rowPrice,
+    hitAll: hit, expectedPayout: hit ? ev / hit : null, expectedReturn: ev,
+    minPayout: Math.min(...rowReal),
+    grundRows: used.reduce((g, s) => g * s.length, 1),
+    rules: { free: true, rowsTarget: N, payoutMin, payoutMinReal: payoutMin, realTurnover: RT, jackpot: J, blueHalves: [], ...rulesExtra },
+    rowList, rowP, rowReal,
+    picks: used.map((s, i) => ({ ...pickOf(s), locked: forced[i] != null })),
+    relaxed: size < N ? [`bara ${size} rader ger minst ${payoutMin.toLocaleString("sv-SE")} kr med dina krav`] : [],
+    egnaRader: egnaRaderFile(rowList, p.product === "europatipset" ? "Europatipset" : "Stryktipset"),
+    system,
+  };
+}
+
+/** Exakt N rader med given andel på match mi (tvingar tecknet per delmängd). */
+function selectStratifiedOnMatch(events, forced, base, { N, payoutMin, exclude, score, scoreMaxFactor, mi, shares }) {
+  const allowed = forced[mi] || [0, 1, 2];
+  const targets = fallShareTargets(N, shares, allowed);
+  const used = new Set(exclude || []);
+  const parts = [];
+  let pot, RT, J;
+  for (const k of [0, 1, 2]) {
+    const need = targets[k];
+    if (need <= 0) continue;
+    const f2 = events.map((_, i) => (i === mi ? [k] : (forced[i] || [0, 1, 2])));
+    const sel = selectTopRows(events, f2, base, { rows: need, payoutMin, exclude: used, score, scoreMaxFactor });
+    if (!sel?.size) continue;
+    pot = sel.pot; RT = sel.RT; J = sel.J;
+    for (let j = 0; j < sel.size; j++) {
+      used.add(sel.codes[j]);
+      parts.push({ code: sel.codes[j], p: sel.rowP[j], real: sel.rowReal[j], row: sel.rowList[j] });
+    }
+  }
+  // Fyll om något tecken saknade rader (utdelningsgolvet) – utan att förstöra kvoterna mer än nödvändigt
+  if (parts.length < N) {
+    const fill = selectTopRows(events, forced, base, { rows: N - parts.length, payoutMin, exclude: used, score, scoreMaxFactor });
+    if (fill) {
+      pot = pot ?? fill.pot; RT = RT ?? fill.RT; J = J ?? fill.J;
+      for (let j = 0; j < fill.size; j++) {
+        used.add(fill.codes[j]);
+        parts.push({ code: fill.codes[j], p: fill.rowP[j], real: fill.rowReal[j], row: fill.rowList[j] });
+      }
+    }
+  }
+  if (!parts.length) return null;
+  parts.sort((a, b) => b.p - a.p);
+  return {
+    pot, RT, J, size: parts.length, N, payoutMin,
+    rowList: parts.map((r) => r.row),
+    rowP: parts.map((r) => r.p),
+    rowReal: parts.map((r) => r.real),
+    codes: parts.map((r) => r.code),
+    fallApplied: true,
+  };
+}
+
+/**
+ * Byt ut rader så match mi närmar sig shares – kandidater tas från en färdig pool
+ * (en DFS) i stället för en ny topp-1-sökning per byte.
+ */
+function rebalanceFromPool(picked, poolRows, { mi, shares, forced, payoutMin }) {
+  if (!picked) return null;
+  const N = picked.size;
+  const allowed = forced[mi] || [0, 1, 2];
+  const targets = fallShareTargets(N, shares, allowed);
+  const inPick = new Set(picked.codes);
+  const rows = picked.rowList.map((row, j) => ({
+    code: picked.codes[j], p: picked.rowP[j], real: picked.rowReal[j], row,
+  }));
+  const bySign = [[], [], []];
+  for (const c of poolRows) {
+    if (inPick.has(c.code)) continue;
+    const k = SIGNS.indexOf(c.row[mi]);
+    if (k >= 0 && allowed.includes(k)) bySign[k].push(c);
+  }
+  const ptr = [0, 0, 0];
+  const count = () => {
+    const c = [0, 0, 0];
+    for (const r of rows) c[SIGNS.indexOf(r.row[mi])]++;
+    return c;
+  };
+  const maxIter = N;
+  for (let iter = 0; iter < maxIter; iter++) {
+    const c = count();
+    let over = -1, under = -1;
+    for (const k of allowed) {
+      if (c[k] > targets[k] && (over < 0 || c[k] - targets[k] > c[over] - targets[over])) over = k;
+      if (c[k] < targets[k] && (under < 0 || targets[k] - c[k] > targets[under] - c[under])) under = k;
+    }
+    if (over < 0 || under < 0) break;
+    let worst = -1;
+    for (let j = 0; j < rows.length; j++) {
+      if (SIGNS.indexOf(rows[j].row[mi]) !== over) continue;
+      if (worst < 0 || rows[j].p < rows[worst].p) worst = j;
+    }
+    if (worst < 0) break;
+    let repl = null;
+    while (ptr[under] < bySign[under].length) {
+      const cand = bySign[under][ptr[under]++];
+      if (!inPick.has(cand.code)) { repl = cand; break; }
+    }
+    if (!repl) break;
+    inPick.delete(rows[worst].code);
+    inPick.add(repl.code);
+    rows[worst] = repl;
+  }
+  rows.sort((a, b) => b.p - a.p);
+  return {
+    pot: picked.pot, RT: picked.RT, J: picked.J, size: rows.length, N: picked.N, payoutMin,
+    rowList: rows.map((r) => r.row),
+    rowP: rows.map((r) => r.p),
+    rowReal: rows.map((r) => r.real),
+    codes: rows.map((r) => r.code),
+    fallApplied: true,
+  };
+}
+
+/**
+ * Välj N rader. När fallPlan[i] finns fördelas raderna efter andelarna på den matchen.
+ * Första matchen stratifieras exakt (3 sökningar); övriga justeras från en gemensam pool (1 sökning)
+ * i stället för en sökning per radbyte.
+ */
+function selectEgnaRows(events, forced, base, { rows: N, payoutMin, exclude = null, score = (pr) => pr, scoreMaxFactor = 1, fallPlan = null } = {}) {
+  const fallIdx = (fallPlan || []).map((s, i) => (s ? i : -1)).filter((i) => i >= 0);
+  if (!fallIdx.length) return selectTopRows(events, forced, base, { rows: N, payoutMin, exclude, score, scoreMaxFactor });
+  const primary = fallIdx[0];
+  let picked = selectStratifiedOnMatch(events, forced, base, {
+    N, payoutMin, exclude, score, scoreMaxFactor, mi: primary, shares: fallPlan[primary],
+  });
+  if (!picked) return selectTopRows(events, forced, base, { rows: N, payoutMin, exclude, score, scoreMaxFactor });
+  if (fallIdx.length === 1) return picked;
+  const poolN = Math.max(DE_FALL.poolMin, N * DE_FALL.poolFactor);
+  const excl = new Set(exclude || []);
+  for (const c of picked.codes) excl.add(c);
+  const pool = selectTopRows(events, forced, base, { rows: poolN, payoutMin, exclude: excl, score, scoreMaxFactor });
+  const poolRows = pool
+    ? pool.codes.map((code, j) => ({ code, p: pool.rowP[j], real: pool.rowReal[j], row: pool.rowList[j] }))
+    : [];
+  for (const mi of fallIdx.slice(1)) {
+    picked = rebalanceFromPool(picked, poolRows, {
+      mi, shares: fallPlan[mi], forced, payoutMin,
+    }) || picked;
+  }
+  return picked;
+}
+
+export function buildCouponD(p, events, forced, base, { rows: N = D_RULES.rows, payoutMin = D_RULES.payoutMin } = {}) {
+  const fallPlan = buildFallSharePlan(p, events, forced, "D");
+  const picked = selectEgnaRows(events, forced, base, { rows: N, payoutMin, fallPlan });
+  if (!picked) return null;
+  const out = finishEgnaRader(p, events, forced, base, picked, "D", { fallShares: fallPlan.some(Boolean) });
+  const nFall = fallPlan.filter(Boolean).length;
+  if (nFall) out.relaxed = [...(out.relaxed || []), `kan falla: ${nFall} matcher fördelade (egna D-%) i stället för spik`];
+  return out;
+}
+
+// Kupong E (användaren 2026-10-07): 500 kr som kompletterar D – nästa rader utanför D, bonus för tecken D saknar
+// (de missade matcherna i bakkörningen: skräll-X/2 som aldrig kom in i D, plus kombinationer D inte hade).
+export function buildCouponE(p, events, forced, base, D, { rows: N = E_RULES.rows, payoutMin = E_RULES.payoutMin, gapBonus = E_RULES.gapBonus } = {}) {
+  const d = D || buildCouponD(p, events, forced, base, { rows: D_RULES.rows, payoutMin });
+  if (!d) return null;
+  const exclude = new Set(d.rowList.map(encodeRow));
+  // Tecken per match som ingen D-rad använder (= luckor E ska fylla)
+  const gaps = events.map((_, i) => {
+    const used = new Set(d.rowList.map((r) => SIGNS.indexOf(r[i])));
+    return [0, 1, 2].filter((k) => !used.has(k));
+  });
+  const gapN = gaps.reduce((s, g) => s + g.length, 0);
+  const score = (pr, code) => {
+    if (!gapN) return pr;
+    let c = code, hits = 0;
+    for (let i = events.length - 1; i >= 0; i--) {
+      const k = c % 3;
+      c = Math.floor(c / 3);
+      if (gaps[i].includes(k)) hits++;
+    }
+    return pr * gapBonus ** hits;
+  };
+  const fallPlan = buildFallSharePlan(p, events, forced, "E");
+  const picked = selectEgnaRows(events, forced, base, {
+    rows: N, payoutMin, exclude, score, fallPlan,
+    scoreMaxFactor: gapN ? gapBonus ** gapN : 1,
+  });
+  if (!picked) return null;
+  const coveredGaps = gaps.map((g, i) => g.filter((k) => picked.rowList.some((r) => SIGNS.indexOf(r[i]) === k)));
+  const gapFilled = coveredGaps.reduce((s, g) => s + g.length, 0);
+  const out = finishEgnaRader(p, events, forced, base, picked, "E", {
+    complements: "D", gapSigns: gapN, gapFilled, fallShares: fallPlan.some(Boolean),
+  });
+  if (gapN && gapFilled < gapN) {
+    out.relaxed = [...(out.relaxed || []), `fyllde ${gapFilled} av ${gapN} tecken som saknades i D`];
+  } else if (gapN) {
+    out.relaxed = [...(out.relaxed || []), `kompletterar D: alla ${gapN} saknade tecken finns i E`];
+  } else {
+    out.relaxed = [...(out.relaxed || []), "kompletterar D: nästa 500 rader (D hade redan alla tecken)"];
+  }
+  const nFall = fallPlan.filter(Boolean).length;
+  if (nFall) out.relaxed = [...(out.relaxed || []), `kan falla: ${nFall} matcher fördelade (egna E-%) i stället för spik`];
+  return out;
+}
+
+// ---------- Kupong D i Gambling Cabin (användaren 2026-10-07: "så kupong D också kan öppnas i Gambling Cabin") ----------
+// GC kan inte ta emot enskilda rader, bara grundrad, färg per tecken, färgregler (min–max per rad), teckenregler och
+// utdelning. D:s 500 rader är de med högst chans, alltså rader med få osannolika tecken. Det beskrivs med färgerna:
+// grundraden är tecknen som D:s rader använder, matchens troligaste tecken är blått (ingen regel) och övriga tecken färgas
+// efter hur mycket osannolikare de är än det (kostnad ln(p_max / p)): grön < gul < röd < rosa. Varje färg får ett tak per
+// rad, och lägsta utdelningen kan höjas från 30 000 kr. Motorn provar alla tak och några fördelningar av färgerna och väljer
+// den kombination med högst chans till 13 rätt som ger D_GC.rows rader. Raderna räknas med GC:s formel, så länken ger samma rader.
+// splits = kvantiler bland de färgade tecknens kostnad där grön/gul, gul/röd och röd/rosa skiljs. De 14 som valdes oftast
+// av 53 på varannan Stryktipsomgång; på andra halvan (84 omg) gav de 79,9 % av den exakta D:ns chans mot 75,0 % med 7 jämna.
+export const D_GC = {
+  rows: { min: 450, max: 500 },
+  levels: [30000, 35000, 40000, 45000, 50000, 60000, 75000, 100000],
+  splits: [[0.25, 0.45, 0.75], [0.15, 0.45, 0.88], [0.05, 0.3, 0.75], [0.15, 0.45, 0.75], [0.15, 0.3, 0.6], [0.15, 0.3, 0.75], [0.25, 0.75, 0.88],
+    [0.15, 0.3, 0.88], [0.05, 0.3, 0.6], [0.05, 0.45, 0.6], [0.05, 0.45, 0.95], [0.25, 0.45, 0.88], [0.05, 0.6, 0.88], [0.35, 0.6, 0.88]],
+};
+const GC_COLOR_ID = [4, 2, 3, 5]; // grön, gul, röd, rosa i GC:s länk
+export function buildCouponDGC(p, events, sets, base, { rows = D_GC.rows, levels = D_GC.levels, splits = D_GC.splits } = {}) {
+  const n = events.length;
+  const T = base.turnover, RT = base.realTurnover || T, J = base.jackpot || 0;
+  const potGC = PAYOUT_13 * T + J, potReal = PAYOUT_13 * RT + J;
+  // Lägsta utdelning per nivå i GC:s formel (hela kronor uppåt) och motsvarande tak för folkets produkt
+  const lv = levels.map((real) => {
+    const fReal = (potReal / real - 1) / RT;
+    const gc = Math.ceil(potGC / (1 + T * fReal));
+    return { real, gc, fMax: (potGC / gc - 1) / T };
+  });
+  const P = events.map((e) => e.final);
+  const F = events.map((e) => [0, 1, 2].map((k) => e.folk?.[k] ?? e.final[k]));
+  const cost = sets.map((s, i) => { const top = Math.max(...s.map((k) => P[i][k])); return [0, 1, 2].map((k) => Math.log(top / P[i][k])); });
+  const top = sets.map((s, i) => s.reduce((b, k) => (P[i][k] > P[i][b] ? k : b), s[0]));
+  const colored = [];
+  sets.forEach((s, i) => s.forEach((k) => { if (k !== top[i]) colored.push(cost[i][k]); }));
+  colored.sort((a, b) => a - b);
+  const fRest = new Float64Array(n + 1);
+  fRest[n] = 1;
+  for (let i = n - 1; i >= 0; i--) fRest[i] = fRest[i + 1] * Math.min(...sets[i].map((k) => F[i][k]));
+  const D = 14, L = lv.length, cells = D ** 4 * L;
+  const idx = (g, y, r, q, l) => (((g * D + y) * D + r) * D + q) * L + l;
+  let best = null;
+  const tried = new Set();
+  for (const sp of colored.length ? splits : [[1, 1, 1]]) {
+    const th = sp.map((q) => colored[Math.min(colored.length - 1, Math.floor(q * colored.length))] ?? 0);
+    const key = th.join();
+    if (tried.has(key)) continue;
+    tried.add(key);
+    // Färg per tecken: -1 blå, annars 0 grön, 1 gul, 2 röd, 3 rosa
+    const col = sets.map((s, i) => [0, 1, 2].map((k) => (k === top[i] || !s.includes(k) ? -1 : cost[i][k] <= th[0] ? 0 : cost[i][k] <= th[1] ? 1 : cost[i][k] <= th[2] ? 2 : 3)));
+    const N = new Float64Array(cells), S = new Float64Array(cells);
+    const cnt = [0, 0, 0, 0];
+    const walk = (i, pr, f) => {
+      if (f * fRest[i] > lv[0].fMax) return;
+      if (i === n) {
+        let l = 0;
+        while (l + 1 < L && f <= lv[l + 1].fMax) l++;
+        const c = idx(cnt[0], cnt[1], cnt[2], cnt[3], l);
+        N[c]++; S[c] += pr;
+        return;
+      }
+      for (const k of sets[i]) {
+        const c = col[i][k];
+        if (c >= 0) cnt[c]++;
+        walk(i + 1, pr * P[i][k], f * F[i][k]);
+        if (c >= 0) cnt[c]--;
+      }
+    };
+    walk(0, 1, 1);
+    // Summor: tak per färg (antal <= tak) och utdelning minst nivån (nivå >= l)
+    const strides = [D ** 3 * L, D ** 2 * L, D * L, L];
+    for (const st of strides) for (let c = 0; c < cells; c++) if (Math.floor(c / st) % D) { N[c] += N[c - st]; S[c] += S[c - st]; }
+    for (let c = cells - 1; c >= 0; c--) if (c % L < L - 1) { N[c] += N[c + 1]; S[c] += S[c + 1]; }
+    for (let c = 0; c < cells; c++) {
+      if (N[c] < rows.min || N[c] > rows.max || (best && S[c] <= best.hit)) continue;
+      const l = c % L;
+      let x = (c - l) / L;
+      const caps = [0, 0, 0, 0];
+      for (let d = 3; d >= 0; d--) { caps[d] = x % D; x = (x - caps[d]) / D; }
+      best = { hit: S[c], rows: N[c], caps, level: lv[l], col, th, sp };
+    }
+  }
+  if (!best) return null;
+  // GC läser "högst 0" som ingen regel (max blir det största som går), så en färg med tak 0 tas bort ur grundraden i stället
+  sets = sets.map((s, i) => s.filter((k) => best.col[i][k] < 0 || best.caps[best.col[i][k]] > 0));
+  // Raderna exakt som GC ger dem: grundraden, färgtaken och GC-utdelningen >= gränsen i länken
+  const rowList = [], rowP = [], rowReal = [];
+  const cnt = [0, 0, 0, 0], row = [];
+  const walk = (i, pr, f) => {
+    if (f * fRest[i] > best.level.fMax) return;
+    if (i === n) {
+      if (potGC / (1 + T * f) >= best.level.gc && cnt.every((x, d) => x <= best.caps[d])) {
+        rowList.push(row.join("")); rowP.push(pr); rowReal.push(potReal / (1 + RT * f));
+      }
+      return;
+    }
+    for (const k of sets[i]) {
+      const c = best.col[i][k];
+      if (c >= 0) cnt[c]++;
+      row.push(SIGNS[k]);
+      walk(i + 1, pr * P[i][k], f * F[i][k]);
+      row.pop();
+      if (c >= 0) cnt[c]--;
+    }
+  };
+  walk(0, 1, 1);
+  const order = rowP.map((_, j) => j).sort((a, b) => rowP[b] - rowP[a]);
+  const hit = rowP.reduce((s, x) => s + x, 0);
+  const ev = rowP.reduce((s, x, j) => s + x * rowReal[j], 0);
+  const has = [0, 1, 2, 3].map((d) => sets.some((s, i) => s.some((k) => best.col[i][k] === d)));
+  const caps = best.caps.map((c, d) => (has[d] ? c : null));
+  const rowPrice = base.rowPrice || 1;
+  const reduced = {
+    rows: rowList.length, cost: rowList.length * rowPrice, rowPrice,
+    hitAll: hit, expectedPayout: hit ? ev / hit : null, expectedReturn: ev, minPayout: Math.min(...rowReal),
+    grundRows: sets.reduce((g, s) => g * s.length, 1),
+    rules: { payoutMin: best.level.gc, payoutMinReal: best.level.real, colorCaps: { green: caps[0], yellow: caps[1], red: caps[2], pink: caps[3] }, costSplit: best.th, split: best.sp },
+    rowList: order.map((j) => rowList[j]), rowP: order.map((j) => rowP[j]), rowReal: order.map((j) => rowReal[j]),
+  };
+  return { ...reduced, gamblingCabinUrl: gamblingCabinUrlDGC(p, sets, best.col, reduced) };
+}
+
+export function gamblingCabinUrlDGC(p, sets, col, reduced) {
+  const cell = (k) => sets.map((s, i) => (!s.includes(k) ? 0 : col[i][k] < 0 ? 1 : GC_COLOR_ID[col[i][k]])).join(",");
+  const cap = (c) => (c == null ? "0,0,13" : `1,0,${c}`);
+  const r = reduced.rules, c = r.colorCaps;
+  const q = [
+    `spel=${p.product}`, `omg=${p.drawNumber}`, `datum=${(p.regCloseTime || "").slice(0, 10)}`,
+    `v1=${cell(0)}`, `vX=${cell(1)}`, `v2=${cell(2)}`,
+    "antT=0,0,13,0,13,0,13",
+    `yellow=${cap(c.yellow)}`, `red=${cap(c.red)}`, `green=${cap(c.green)}`, `pink=${cap(c.pink)}`,
+    `utd=1,${r.payoutMin},100000000`,
+  ];
+  return `https://reducera.gamblingcabin.se/?${q.join("&")}`;
+}
+
+// Svenska Spels "Egna rader": första raden spelet, sedan en rad per spelrad (E följt av 13 tecken)
+export function egnaRaderFile(rowList, product = "Stryktipset") {
+  return [product, ...rowList.map((r) => `E,${r.split("").join(",")}`)].join("\n") + "\n";
 }
