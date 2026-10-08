@@ -138,10 +138,11 @@ test('Stryktipset: en sida, egna krav genererar kupong A och B', async ({ page }
   await expect(table.nth(0).locator('td').nth(4)).not.toContainText('🔒');
   await expect(table.nth(0).locator('td').nth(5)).not.toContainText('🔒');
   await expect(table.nth(0).locator('td').nth(6)).not.toContainText('🔒');
-  // D/E styrs via D/E %-raden, inte via Gäller
+  // D/E/F styrs via D/E/F %-raden, inte via Gäller
   await expect(rows.nth(0).locator('.sb-scope button[data-scope="D"]')).toHaveCount(0);
   await expect(rows.nth(0).locator('.sb-scope button[data-scope="E"]')).toHaveCount(0);
   await expect(rows.nth(0).locator('.sb-defall')).toHaveCount(1);
+  await expect(rows.nth(0).locator('.sb-defall-k')).toContainText('D/E/F %');
   // Eget krav på C: spik 2 på match 8 bara i C
   await rows.nth(7).locator('.sb-sign[data-sign="2"]').click();
   await rows.nth(7).locator('.sb-scope button[data-scope="C"]').click();

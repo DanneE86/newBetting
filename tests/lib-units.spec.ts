@@ -1679,6 +1679,26 @@ test.describe('stryk-engine: kupong F (1050 rader 40/30/30, fristående)', () =>
     expect(F.rowList.every((r: string) => r[0] === 'X' && r[2] !== 'X')).toBe(true);
     expect(F.egnaRader.trim().split('\n')[0]).toBe('Europatipset');
   });
+
+  test('egna F-% under matchen ersätter 40/30/30 på den matchen', async () => {
+    const { buildCouponF } = await engine();
+    const forced = events.map(() => null);
+    const F = buildCouponF({
+      product: 'stryktipset',
+      drawNumber: 4974,
+      deFallShares: { F: { 1: [10, 20, 70] } },
+    }, events, forced, base);
+    expect(F.rules.fallShares).toBe(true);
+    expect(F.weights[0]).toEqual([0.1, 0.2, 0.7]);
+    // Övriga matcher behåller 40/30/30
+    expect(F.weights[1].filter((x: number) => x === 0.4)).toHaveLength(1);
+    const cnt = { 1: 0, X: 0, 2: 0 };
+    for (const r of F.rowList) cnt[r[0] as '1' | 'X' | '2']++;
+    // Sampling ≈ andelar: 2 ska dominera kraftigt
+    expect(cnt['2']).toBeGreaterThan(cnt['1']);
+    expect(cnt['2']).toBeGreaterThan(cnt.X);
+    expect(cnt['2']).toBeGreaterThan(500);
+  });
 });
 
 test.describe('stryk-engine: kupong A, B och C', () => {

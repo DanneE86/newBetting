@@ -591,7 +591,7 @@ const fallMark = (e, signs, sys) => {
   if (!f) return "";
   const spiked = signs === f.sign;
   return spiked
-    ? ` <span class="sb-fall" title="Kupong ${sys} spikar ${f.sign} på en favorit som kan falla: folket ${pct(f.folk)}, vår chans ${pct(f.p)}. På D/E: sätt D- och E-% (t.ex. 33/33/34) så spikas den inte.">⚠ kan falla</span>`
+    ? ` <span class="sb-fall" title="Kupong ${sys} spikar ${f.sign} på en favorit som kan falla: folket ${pct(f.folk)}, vår chans ${pct(f.p)}. På D/E/F: sätt D-, E- och F-% (t.ex. 33/33/34) så spikas den inte.">⚠ kan falla</span>`
     : "";
 };
 
@@ -719,9 +719,9 @@ view.addEventListener("toggle", (ev) => {
 
 // ---------- Stryktipset B: egna krav ----------
 // Krav sparas per spel och omgång i webbläsaren: { signs: "1X", scope }. scope: "both" = A och B, "A"/"B"/"C" = bara den
-// kupongen, "all" = A–F. D/E styrs inte via Gäller (teckenkrav) utan via fördelning På/Av under matchen.
+// kupongen, "all" = A–F. D/E/F styrs inte via Gäller (teckenkrav) utan via fördelning På/Av under matchen.
 // Äldre sparade spikar ({ sign: "1" }) läses som krav med ett tecken. Sparad scope D/E visas som "all".
-// deFall: { [eventNumber]: { D: [a,b,c], E: [a,b,c] } } – D och E styr radandelar var för sig (äldre: bara [a,b,c]).
+// deFall: { [eventNumber]: { D: [a,b,c], E: [a,b,c], F: [a,b,c] } } – D, E och F styr radandelar var för sig (äldre: bara [a,b,c] eller utan F).
 const SCOPES = [["both", "A+B"], ["A", "A"], ["B", "B"], ["C", "C"], ["all", "Alla"]];
 const SCOPE_TITLE = {
   both: "Kravet gäller kupong A och B (rekommenderat)",
@@ -731,7 +731,7 @@ const SCOPE_TITLE = {
   all: "Kravet gäller alla kupongerna (A–F)",
 };
 const DE_FALL_DEFAULT = [33, 33, 34]; // 33+33+34 = 100 (egna siffror går att ändra)
-const DE_SYS = ["D", "E"];
+const DE_SYS = ["D", "E", "F"];
 const bStates = new Map();
 const bKey = (p) => `betting.spikes.${p.product}.${p.drawNumber}`;
 const deFallKey = (p) => `betting.deFall.v2.${p.product}.${p.drawNumber}`; // v2: Av default (ingen auto-På)
@@ -751,33 +751,36 @@ function sharesFromProbs(probs) {
   for (let i = 0; left > 0; i++, left--) pct[order[i % 3]]++;
   return pct.map(clampShare);
 }
-/** Normalisera sparad/äldre form till { D, E }. */
+/** Normalisera sparad/äldre form till { D, E, F }. */
 function normalizeDeFallPair(s) {
   if (!s) return null;
   if (Array.isArray(s) && s.length === 3) {
     const D = s.map(clampShare);
-    return { D: [...D], E: [...D] };
+    return { D: [...D], E: [...D], F: [...D] };
   }
-  if (s.D || s.E) {
+  if (s.D || s.E || s.F) {
     const D = (Array.isArray(s.D) ? s.D : DE_FALL_DEFAULT).map(clampShare);
     const E = Array.isArray(s.E) ? s.E.map(clampShare) : [...D];
-    return { D, E };
+    const F = Array.isArray(s.F) ? s.F.map(clampShare) : [...D];
+    return { D, E, F };
   }
   return null;
 }
-/** D och E ≈ modellens 1/X/2 (samma startvärden, summerar till 100 %). */
+/** D, E och F ≈ modellens 1/X/2 (samma startvärden, summerar till 100 %). */
 function defaultDeFallPair(event) {
   const D = sharesFromProbs(event?.final);
-  return { D: [...D], E: [...D] };
+  return { D: [...D], E: [...D], F: [...D] };
 }
-/** D/E-% som visas under Av (hur kupongerna faktiskt spelat) – startvärden när man slår På. */
+/** D/E/F-% som visas under Av (hur kupongerna faktiskt spelat) – startvärden när man slår På. */
 function deFallPairFromResult(res, matchIndex) {
   const dDist = egnaDistForMatch(res?.D, matchIndex);
   const eDist = egnaDistForMatch(res?.E, matchIndex);
-  if (!dDist && !eDist) return null;
+  const fDist = egnaDistForMatch(res?.F, matchIndex);
+  if (!dDist && !eDist && !fDist) return null;
   const D = dDist ? dDist.pct.map(clampShare) : [...DE_FALL_DEFAULT];
   const E = eDist ? eDist.pct.map(clampShare) : [...D];
-  return { D, E };
+  const F = fDist ? fDist.pct.map(clampShare) : [...D];
+  return { D, E, F };
 }
 function loadDeFallMap(p, keyFn) {
   let saved = {};
@@ -825,9 +828,9 @@ function saveKrav(p, st) {
     /* privat lage */
   }
 }
-/** Andelar till motorn: { D: { nr: […] }, E: { nr: […] } }. Bara rader som summerar till 100 %. */
+/** Andelar till motorn: { D: { nr: […] }, E: { … }, F: { … } }. Bara rader som summerar till 100 %. */
 function deFallForEngine(st) {
-  const out = { D: {}, E: {} };
+  const out = { D: {}, E: {}, F: {} };
   for (const [nr, raw] of Object.entries(st.deFall || {})) {
     const pair = normalizeDeFallPair(raw);
     if (!pair) continue;
@@ -890,27 +893,26 @@ function deFallRow(e, shares, matchIndex, res, busy) {
   const f = fallOf(e);
   const dDist = egnaDistForMatch(res?.D, matchIndex);
   const eDist = egnaDistForMatch(res?.E, matchIndex);
+  const fDist = egnaDistForMatch(res?.F, matchIndex);
   const on = !!shares;
-  // På = egna siffror per kupong (D och E var för sig). Av = visa hur D/E spelat.
+  // På = egna siffror per kupong (D, E och F var för sig). Av = visa hur D/E/F spelat.
   const pair = normalizeDeFallPair(shares) || defaultDeFallPair(e);
-  const chkD = deFallSumMsg(pair.D);
-  const chkE = deFallSumMsg(pair.E);
-  const bothOk = chkD.ok && chkE.ok;
+  const allOk = DE_SYS.every((sys) => deFallSumMsg(pair[sys]).ok);
   const status = busy
-    ? `<span class="sb-defall-status" role="status"><span class="sb-spin" aria-hidden="true"></span>${dDist || eDist ? "uppdaterar…" : "räknar…"}</span>`
+    ? `<span class="sb-defall-status" role="status"><span class="sb-spin" aria-hidden="true"></span>${dDist || eDist || fDist ? "uppdaterar…" : "räknar…"}</span>`
     : "";
   return `<div class="sb-defall${busy ? " is-busy" : ""}${on ? " is-on" : ""}" data-ev="${e.eventNumber}">
     <div class="sb-defall-head">
-      <span class="sb-defall-k" title="Av (default): så D och E spelat. På: samma % som startvärden, sedan redigerar du D och E var för sig. Modell: D och E ≈ vår chans.">${f ? fallTag(f) + " · " : ""}D/E %${status}</span>
+      <span class="sb-defall-k" title="Av (default): så D, E och F spelat. På: samma % som startvärden, sedan redigerar du D, E och F var för sig. Modell: D/E/F ≈ vår chans.">${f ? fallTag(f) + " · " : ""}D/E/F %${status}</span>
       <span class="sb-defall-actions">
-        ${on ? `<button type="button" class="ds-toggle" data-defall-model title="Sätt D och E från vår modell (samma andelar 1/X/2)">Modell</button>` : ""}
-        <button type="button" class="ds-toggle sb-defall-on${on ? " active" : ""}" data-defall-toggle aria-pressed="${on}" title="${on ? "Stäng av – D/E väljer fritt igen" : "Slå på med samma % som visas nu (hur D/E spelat)"}">${on ? "På" : "Av"}</button>
+        ${on ? `<button type="button" class="ds-toggle" data-defall-model title="Sätt D, E och F från vår modell (samma andelar 1/X/2)">Modell</button>` : ""}
+        <button type="button" class="ds-toggle sb-defall-on${on ? " active" : ""}" data-defall-toggle aria-pressed="${on}" title="${on ? "Stäng av – D/E/F väljer fritt igen" : "Slå på med samma % som visas nu (hur D/E/F spelat)"}">${on ? "På" : "Av"}</button>
       </span>
     </div>
     ${on
-      ? `${deFallEditLine("D", pair.D)}${deFallEditLine("E", pair.E)}
-    <small class="sb-defall-hint${bothOk ? "" : " is-bad"}">${bothOk ? "Generera om för att tillämpa" : "Rätta varje rad (D och E) till 100 % innan du genererar"}</small>`
-      : `${deFallCouponLine("D", dDist, busy)}${deFallCouponLine("E", eDist, busy)}
+      ? `${deFallEditLine("D", pair.D)}${deFallEditLine("E", pair.E)}${deFallEditLine("F", pair.F)}
+    <small class="sb-defall-hint${allOk ? "" : " is-bad"}">${allOk ? "Generera om för att tillämpa" : "Rätta varje rad (D, E och F) till 100 % innan du genererar"}</small>`
+      : `${deFallCouponLine("D", dDist, busy)}${deFallCouponLine("E", eDist, busy)}${deFallCouponLine("F", fDist, busy)}
     <small class="sb-defall-hint">Slå På för att redigera – startar med % som visas ovan</small>`}
   </div>`;
 }
@@ -1128,7 +1130,7 @@ function couponTable(p, res) {
   const fallSpikes = ["A", "B", "C", "D", "E", "F"].reduce((n, s) => n + p.events.filter((e, i) => fallMark(e, res[s]?.picks[i]?.signs, s)).length, 0);
   const fallLegend = falls
     ? `<p class="st-sub sb-fall-legend"><b>Kort sagt:</b> <span class="fall-tag">⚠ kan falla</span> = favoriter som folket tror på men som vinner mer sällan än strecken säger – ${falls} st i omgången${fallSpikes ? `, ${fallSpikes} spikade i kupongerna (<span class="sb-fall">⚠ kan falla</span>)` : ""}.
-       <b>A–C:</b> gardera hellre än spika. <b>D/E:</b> raderna fördelas automatiskt 33/33/33 (eller dina D- respektive E-% under matchen) så favoriten inte spikas.</p>`
+       <b>A–C:</b> gardera hellre än spika. <b>D/E/F:</b> raderna fördelas automatiskt 33/33/33 (eller dina D-, E- respektive F-% under matchen) så favoriten inte spikas.</p>`
     : "";
   return `${legend}${riskLegend}${fallLegend}<div class="st-bt-wrap"><table class="sb-table ds-table">
     <thead><tr><th>#</th><th>Match</th><th>Kupong A</th><th>Kupong B</th><th>Kupong C</th><th>Kupong D</th><th>Kupong E</th><th>Kupong F</th><th>Tur (A)</th></tr></thead>
@@ -1305,7 +1307,7 @@ function renderB(p, head, top = "", extras = "") {
         <details class="sb-howto"${keep("howto-krav")}><summary>Hur funkar det?</summary>
           <ul>
             <li>Ett tecken (1, X eller 2) är en <b>spik</b>, två tecken (1X, X2, 12) en <b>halvgardering</b> och alla tre en <b>helgardering</b>. Klicka igen för att ta bort ett tecken.</li>
-            <li><b>Gäller</b>: A+B, bara A, bara B, bara C eller Alla (A–F). D och E styrs med <b>D/E %</b> under matchen, inte här.</li>
+            <li><b>Gäller</b>: A+B, bara A, bara B, bara C eller Alla (A–F). D, E och F styrs med <b>D/E/F %</b> under matchen, inte här.</li>
             <li>C är eget system och påverkas bara av krav på C eller Alla.</li>
             <li>Matcher utan krav väljer kupongen själv. Tryck <b>Generera kupong</b> i raden längst ner när du är klar.</li>
           </ul>
@@ -1333,7 +1335,7 @@ function renderB(p, head, top = "", extras = "") {
             <li><b>D</b> är 13-rättssystemet: 500 kr, de 500 troligaste raderna av alla 1,6 miljoner där 13 rätt ger minst 30 000 kr (verklig omsättning och jackpot). Inga spikar, färger eller teckenregler – raderna väljs en och en, så chansen till 13 rätt över 30 000 kr blir den högsta som går för 500 kr. Gambling Cabin kan inte ge exakt de raderna, så D laddas ner som fil och spelas via Svenska Spels <b>Egna rader</b>. Kupongens tecken i tabellen är de tecken som någon av raderna använder. Bakkörning 168 omgångar: chans 1 på 167 per omgång (A+B: 1 på 208 för 800 kr).</li>
             <li><b>E</b> kompletterar D: också 500 kr / Egna rader. Den tar de 500 nästa raderna (≥ 30 000 kr) som <em>inte</em> finns i D, och ger extra vikt åt tecken D saknar i någon match (de skrällar D brukar falla på). Spela D och E tillsammans om du vill täcka mer av det D missar.</li>
             <li><b>F</b> är fristående från D och E: 1050 kr / Egna rader. Andelar 40/30/30 – det högst streckade tecknet får 40 %, de andra 30/30. 1050 rader samplas efter andelarna (samma rad kan förekomma flera gånger = mer insats). Inga spikar, inget utdelningsgolv.</li>
-            <li><b>D/E %:</b> <b>Av</b> är default på alla matcher och visar hur D och E spelat. <b>På</b> startar med samma % och låter dig redigera D och E var för sig (varje rad 100 %). <b>Modell</b>: sätt D och E ≈ vår chans. A–C och F påverkas inte.</li>
+            <li><b>D/E/F %:</b> <b>Av</b> är default på alla matcher och visar hur D, E och F spelat. <b>På</b> startar med samma % och låter dig redigera D, E och F var för sig (varje rad 100 %). <b>Modell</b>: sätt D/E/F ≈ vår chans. A–C påverkas inte.</li>
             <li>⚠ i tabellen = tecken som just den kupongen brukar ha fel på (minst 30 % missar i bakkörningen), röd = oftare än vår egen chans sa.</li>
             ${p.product === "stryktipset" ? "<li>På Stryktipset spikas bara favoriter med minst 65 % – spikar på 50–65 % sprack nästan varannan gång i baktestet.</li>" : ""}
           </ul>
@@ -1395,8 +1397,8 @@ function handleB(ev) {
     render();
     return true;
   }
-  // D/E-fördelning: På = egna siffror per kupong. Av = kupongen fritt.
-  // På tar samma % som Av visade (hur D/E spelat); annars senaste På-värden; annars modell.
+  // D/E/F-fördelning: På = egna siffror per kupong. Av = kupongen fritt.
+  // På tar samma % som Av visade (hur D/E/F spelat); annars senaste På-värden; annars modell.
   const fallToggle = ev.target.closest("[data-defall-toggle]");
   const fallModel = ev.target.closest("[data-defall-model]");
   if (row && (fallToggle || fallModel)) {
@@ -1479,7 +1481,7 @@ view.addEventListener("click", (ev) => {
   }
 });
 
-// Egna andelar för D/E: live-summa per rad (rött om ≠ 100 %), spara vid change
+// Egna andelar för D/E/F: live-summa per rad (rött om ≠ 100 %), spara vid change
 function applyDeFallInput(inp, { save }) {
   const p = data?.products?.find((x) => x.product === product);
   if (!p) return;
@@ -1489,7 +1491,7 @@ function applyDeFallInput(inp, { save }) {
   if (!nr && nr !== 0) return;
   const sys = inp.dataset.defallSys || inp.closest("[data-defall-sys]")?.dataset.defallSys || "D";
   if (!DE_SYS.includes(sys)) return;
-  const pair = normalizeDeFallPair(st.deFall[nr]) || { D: [...DE_FALL_DEFAULT], E: [...DE_FALL_DEFAULT] };
+  const pair = normalizeDeFallPair(st.deFall[nr]) || { D: [...DE_FALL_DEFAULT], E: [...DE_FALL_DEFAULT], F: [...DE_FALL_DEFAULT] };
   const i = Number(inp.dataset.defall);
   const cur = [...pair[sys]];
   cur[i] = clampShare(inp.value);
@@ -1506,10 +1508,10 @@ function applyDeFallInput(inp, { save }) {
     sumEl.textContent = chk.text;
     sumEl.classList.toggle("is-bad", !chk.ok);
   }
-  const bothOk = DE_SYS.every((s) => deFallSumMsg(pair[s]).ok);
+  const allOk = DE_SYS.every((s) => deFallSumMsg(pair[s]).ok);
   if (hint) {
-    hint.textContent = bothOk ? "Generera om för att tillämpa" : "Rätta varje rad (D och E) till 100 % innan du genererar";
-    hint.classList.toggle("is-bad", !bothOk);
+    hint.textContent = allOk ? "Generera om för att tillämpa" : "Rätta varje rad (D, E och F) till 100 % innan du genererar";
+    hint.classList.toggle("is-bad", !allOk);
   }
   const bar = view.querySelector(".sb-actionbar");
   bar?.classList.add("is-dirty");
