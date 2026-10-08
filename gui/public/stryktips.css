@@ -327,6 +327,50 @@ body.view-stryktips main { display: none !important; }
 .st-steps li + li { margin-top: var(--space-1); }
 .st-reduced p { margin: var(--space-2) 0 var(--space-2); }
 .st-rows { max-height: 18rem; overflow: auto; margin: var(--space-2) 0 0; padding: var(--space-2) var(--space-3); border: 1px solid var(--color-border-strong); border-radius: var(--radius-md); background: var(--color-surface-muted); color: var(--color-text); font-size: var(--font-size-xs); line-height: var(--line-height-body); letter-spacing: 0.08em; }
+.sb-sign-dist { margin-top: var(--space-3); }
+.sb-sign-dist > summary { cursor: pointer; font-weight: var(--font-weight-bold); font-size: var(--font-size-sm); }
+.sb-sign-table { font-size: var(--font-size-xs); margin-top: var(--space-2); }
+.sb-sign-table th { font-weight: var(--font-weight-medium); text-align: left; }
+.sb-sign-table td.sb-sign-n { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.sb-sign-table td.sb-sign-n b { display: block; font-size: var(--font-size-sm); }
+.sb-sign-table td.sb-sign-n small { color: var(--color-text-muted); }
+.sb-sign-table td.sb-sign-n.is-zero { color: var(--color-text-muted); }
+.sb-defall { display: flex; flex-direction: column; gap: var(--space-1); grid-column: 1 / -1; margin-top: var(--space-1); padding: var(--space-2); border-radius: var(--radius-md); background: var(--color-surface-muted); font-size: var(--font-size-xs); }
+.sb-defall.is-busy { outline: 1px dashed var(--color-info); }
+.sb-defall-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-2); }
+.sb-defall-actions { display: inline-flex; flex-wrap: wrap; align-items: center; gap: var(--space-1); }
+.sb-defall-k { display: inline-flex; flex-wrap: wrap; align-items: center; gap: var(--space-2); color: var(--color-text-muted); font-weight: var(--font-weight-bold); }
+.sb-defall-status { display: inline-flex; align-items: center; gap: 6px; color: var(--color-info); font-weight: var(--font-weight-bold); }
+.sb-spin { width: 12px; height: 12px; border-radius: 50%; border: 2px solid currentColor; border-right-color: transparent; animation: sb-spin 0.75s linear infinite; flex: 0 0 auto; }
+@keyframes sb-spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .sb-spin { animation: none; border-right-color: currentColor; opacity: 0.55; } }
+.sb-defall-line { display: grid; grid-template-columns: 1.5rem repeat(3, minmax(0, 1fr)); gap: var(--space-2); align-items: center; padding: 4px 6px; border-radius: var(--radius-sm); background: var(--color-surface); border: 1px solid var(--color-border); }
+.sb-defall-line.is-empty { opacity: 0.85; }
+.sb-defall-lab { font-weight: var(--font-weight-bold); font-variant-numeric: tabular-nums; }
+.sb-defall-miss { grid-column: 2 / -1; display: inline-flex; align-items: center; gap: 6px; color: var(--color-text-muted); }
+.sb-defall-cell { display: grid; grid-template-columns: 1rem minmax(0, 1fr) auto; gap: 4px; align-items: center; min-width: 0; }
+.sb-defall-sign { font-weight: var(--font-weight-bold); }
+.sb-defall-bar { display: block; height: 6px; border-radius: 99px; background: var(--color-surface-sunken); overflow: hidden; }
+.sb-defall-bar i { display: block; height: 100%; background: var(--color-success-solid); border-radius: inherit; }
+.sb-defall-num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.sb-defall-num b { font-size: var(--font-size-sm); }
+.sb-defall-num small { color: var(--color-text-muted); }
+.sb-defall-edit { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2); padding: 4px 6px; border-radius: var(--radius-sm); border: 1px dashed var(--color-border-strong); }
+.sb-defall-edit.is-on { border-style: solid; border-color: var(--color-success); background: var(--color-success-bg); }
+.sb-defall-edit.is-bad { border-color: var(--color-danger); background: var(--color-danger-bg); }
+.sb-defall-i { display: inline-flex; align-items: center; gap: 4px; font-weight: var(--font-weight-bold); }
+.sb-defall-i input { width: 3.2rem; padding: 2px 4px; border: 1px solid var(--color-border-strong); border-radius: var(--radius-sm); font-variant-numeric: tabular-nums; }
+.sb-defall-edit.is-bad .sb-defall-i input { border-color: var(--color-danger); }
+.sb-defall-sum { font-variant-numeric: tabular-nums; font-weight: var(--font-weight-bold); color: var(--color-success); }
+.sb-defall-sum.is-bad { color: var(--color-danger); }
+.sb-defall-hint { color: var(--color-text-muted); }
+.sb-defall-hint.is-bad,
+.sb-defall-edit.is-bad .sb-defall-hint { color: var(--color-danger); }
+.sb-defall-on.active { background: var(--color-success-solid); color: var(--color-text-on-brand); }
+@media (max-width: 40rem) {
+  .sb-defall-line { grid-template-columns: 1.5rem 1fr; }
+  .sb-defall-cell { grid-column: 2; }
+}
 
 /* Färgkodning (Gambling Cabin): hela rutan i tecknets färg. Siffran står i textfärg för kontrastens skull. */
 .st-prob.c-green { border-color: var(--gc-green); background: color-mix(in srgb, var(--gc-green) var(--st-tint), var(--color-surface)); box-shadow: inset 4px 0 0 var(--gc-green); }
@@ -532,27 +576,35 @@ body.view-stryktips main { display: none !important; }
 .st-gc-wrap .st-gc { margin-top: 0; white-space: nowrap; }
 .st-gc-help { color: var(--color-text-muted); font-size: var(--font-size-xs); }
 
-/* Turmatcher (synliga, hör till kupongen) */
+/* Turmatcher / risklag / matcher / historik: hopfällda som standard */
 .st-tur { border-color: var(--color-success); }
 .st-tur .st-sub { margin: var(--space-1) 0 var(--space-2); }
-
-/* Matcherna */
-.st-matches { margin-top: var(--space-5); }
+.st-matches, .st-history, .st-tur, .rk-panel.st-fold { margin-top: var(--space-5); }
+.st-fold > summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-1) var(--space-3);
+}
+.st-fold > summary::-webkit-details-marker { display: none; }
+.st-fold > summary h3 { display: inline; margin: 0; }
+.st-fold > summary h3::before {
+  content: "▸";
+  display: inline-block;
+  margin-right: var(--space-2);
+  color: var(--color-brand);
+  transition: transform var(--duration-fast) var(--easing);
+}
+.st-fold[open] > summary h3::before { transform: rotate(90deg); }
+.st-fold > summary small { color: var(--color-text-muted); font-size: var(--font-size-sm); }
+.st-fold > summary:hover h3 { color: var(--color-brand-text); }
 .st-section-h { margin: 0 0 var(--space-2); font-size: var(--font-size-lg); line-height: var(--line-height-tight); color: var(--color-text); }
 .st-section-h small { color: var(--color-text-muted); font-weight: var(--font-weight-medium); font-size: var(--font-size-sm); margin-left: var(--space-1); }
-.st-legend { margin: 0 0 var(--space-3); }
+.st-legend { margin: var(--space-3) 0; }
 .st-legend .st-in, .st-legend .st-b { cursor: help; }
 .st-b { cursor: help; }
-
-/* Statistik & historik: hopfälld, full bredd */
-.st-history { margin-top: var(--space-5); }
-.st-history > summary { cursor: pointer; list-style: none; display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--space-1) var(--space-3); }
-.st-history > summary::-webkit-details-marker { display: none; }
-.st-history > summary h3 { display: inline; }
-.st-history > summary h3::before { content: "▸"; display: inline-block; margin-right: var(--space-2); color: var(--color-brand); transition: transform var(--duration-fast) var(--easing); }
-.st-history[open] > summary h3::before { transform: rotate(90deg); }
-.st-history > summary small { color: var(--color-text-muted); font-size: var(--font-size-sm); }
-.st-history > summary:hover h3 { color: var(--color-brand-text); }
 .st-history-body { display: flex; flex-direction: column; gap: var(--space-3); margin-top: var(--space-4); }
 .st-history-body .st-miss h3 { margin: 0 0 var(--space-1); font-size: var(--font-size-md); }
 .st-history-body .st-miss h3 + p, .st-history-body .st-miss .st-sub { margin: var(--space-1) 0 var(--space-2); }
@@ -664,7 +716,7 @@ body.view-stryktips main { display: none !important; }
 /* Reducerad rörelse */
 @media (prefers-reduced-motion: reduce) {
   .st-match, .st-analysis { animation: none; }
-  .view-tab, .sb-sign, .st-history > summary h3::before { transition: none; }
+  .view-tab, .sb-sign, .st-history > summary h3::before, .st-skrall-title::before { transition: none; }
 }
 
 /* "Kan falla": favorit som folket tror på (minst 50 %) men som har under 55 % chans hos oss (2026-10-03) */
@@ -672,8 +724,16 @@ body.view-stryktips main { display: none !important; }
 .sb-fall { display: inline-block; margin-left: 4px; padding: 0 5px; border-radius: 999px; border: 1px solid var(--color-warning); background: var(--color-warning-bg); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); color: var(--color-warning); white-space: nowrap; cursor: help; }
 .sb-fall-legend { margin: 0 0 8px; }
 
-/* Skrällspik att läsa om (överst, ligger inte i kupongen) */
+/* Skrälltips: uppfälld som standard, klick visar spikar och kryss (ligger inte i kupongen) */
 .st-skrall { margin-bottom: var(--space-4); border-left: 4px solid var(--color-danger); background: var(--color-danger-bg); color: var(--color-text); font-size: var(--font-size-sm); }
+.st-skrall > summary { cursor: pointer; list-style: none; display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--space-1) var(--space-2); }
+.st-skrall > summary::-webkit-details-marker { display: none; }
+.st-skrall-title { font-weight: 700; }
+.st-skrall-title::before { content: "▸"; display: inline-block; margin-right: var(--space-2); color: var(--color-danger); transition: transform var(--duration-fast) var(--easing); }
+.st-skrall[open] > summary .st-skrall-title::before { transform: rotate(90deg); }
+.st-skrall > summary small { color: var(--color-text-muted); font-weight: 400; }
+.st-skrall > summary:hover .st-skrall-title { color: var(--color-danger); }
+.st-skrall-body { margin-top: var(--space-3); }
 .st-skrall p { margin: 0 0 var(--space-2); }
 .st-skrall-h { font-weight: 700; }
 .st-skrall-h small { font-weight: 400; color: var(--color-text-muted); margin-left: var(--space-2); }
