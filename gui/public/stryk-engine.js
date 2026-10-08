@@ -1183,7 +1183,7 @@ const topOf = (x) => x.indexOf(Math.max(...x));
 export const sysFinal = (e) => (e.spik?.used && e.spik.sysP && topOf(e.spik.sysP) === topOf(e.final) ? e.spik.sysP : e.final);
 /**
  * Genererar kupong A–F.
- * opts.onlyDE = true → bara D/E/F (+ DGC); UI behåller A/B/C när kraven är oförändrade (mycket snabbare vid D/E %).
+ * opts.onlyDE = true → bara D/E/F (+ DGC); UI behåller A/B/C när kraven är oförändrade (mycket snabbare vid D/E/F %).
  */
 export function generateCoupons(p, krav, opts = {}) {
   // Systemen byggs på matchens justerade procent (spikbedömningen) när den används, annars på modellens
@@ -1273,11 +1273,11 @@ export function fallShareTargets(N, shares, allowed = [0, 1, 2]) {
 
 /**
  * Plan per match: null = fri, annars [andel 1, X, 2] (vikter).
- * p.deFallShares = { D: { nr: [a,b,c] }, E: { … } } (nytt) eller { nr: [a,b,c] } (äldre, samma för D och E).
+ * p.deFallShares = { D: { nr: [a,b,c] }, E: { … }, F: { … } } (nytt) eller { nr: [a,b,c] } (äldre, samma för D/E/F).
  */
 export function buildFallSharePlan(p, events, forced, system = "D") {
   const bag = p?.deFallShares || {};
-  const custom = (bag.D || bag.E) ? (bag[system] || {}) : bag;
+  const custom = (bag.D || bag.E || bag.F) ? (bag[system] || {}) : bag;
   return events.map((e, i) => {
     const allowed = forced[i] || [0, 1, 2];
     if (allowed.length <= 1) return null; // spikat krav: rör inte
@@ -1667,6 +1667,17 @@ export function buildCouponF(p, events, forced, base, {
   model = F_RULES.model,
 } = {}) {
   const W = fWeights(events, forced, { model, beta });
+  // Egna F-% under matchen (D/E/F % På): ersätter 40/30/30 / value på just den matchen
+  const fallPlan = buildFallSharePlan(p, events, forced, "F");
+  let nFall = 0;
+  for (let i = 0; i < W.length; i++) {
+    const shares = fallPlan[i];
+    if (!shares) continue;
+    const sum = shares.reduce((a, b) => a + b, 0);
+    if (sum <= 0) continue;
+    W[i] = shares.map((x) => x / sum);
+    nFall++;
+  }
   const seed = ((Number(p.drawNumber) || 1) * 1009 + (p.product === "europatipset" ? 17 : 3) + (model === "value" ? 0 : 91)) >>> 0;
   const rowList = sampleAndelRows(W, N, seed);
   const P = events.map((e) => e.final);
@@ -1701,6 +1712,7 @@ export function buildCouponF(p, events, forced, base, {
     valueModel: model === "value",
     streck4030: model === "streck4030",
     model, beta, uniqueRows: seen.size, sampleSeed: seed,
+    fallShares: nFall > 0,
   });
   // Överskriv hitAll med unik täckning (finish summerar alla rader inkl. dubbletter)
   out.hitAll = hitUnique;
@@ -1711,6 +1723,7 @@ export function buildCouponF(p, events, forced, base, {
   out.relaxed = [
     `${label}, ${seen.size} unika av ${N} rader (dubbletter = mer insats)`,
   ];
+  if (nFall) out.relaxed = [...out.relaxed, `egna F-% på ${nFall} matcher`];
   return out;
 }
 
