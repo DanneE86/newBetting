@@ -1625,6 +1625,62 @@ test.describe('stryk-engine: kupong D (500 egna rader, minst 30 000 kr)', () => 
   });
 });
 
+test.describe('stryk-engine: kupong F (1050 rader 40/30/30, fristående)', () => {
+  const engine = () => import(pathToFileURL(path.join(ROOT, 'gui', 'public', 'stryk-engine.js')).href);
+  const events = Array.from({ length: 13 }, (_, i) => {
+    const fav = 0.42 + 0.03 * (i % 7), x = 0.27, rest = 1 - fav - x;
+    const final = i % 3 === 2 ? [rest, x, fav] : [fav, x, rest];
+    const f = final.map((v, k) => (k === final.indexOf(Math.max(...final)) ? v * 1.2 : v * 0.9));
+    const s = f.reduce((a, b) => a + b, 0);
+    return {
+      eventNumber: i + 1,
+      final,
+      market: [...final],
+      folk: f.map((v) => v / s),
+    };
+  });
+  const base = { realTurnover: 20e6, turnover: 25e6, jackpot: 0, rowPrice: 1 };
+
+  test('exakt 1050 rader, 40/30/30-andelar, deterministiskt frö, Egna rader-fil', async () => {
+    const { buildCouponF, streck4030Weights, buildCouponD } = await engine();
+    const forced = events.map(() => null);
+    const F = buildCouponF({ product: 'stryktipset', drawNumber: 4974 }, events, forced, base);
+    expect(F.rows).toBe(1050);
+    expect(F.cost).toBe(1050);
+    expect(F.system).toBe('F');
+    expect(F.rules.streck4030).toBe(true);
+    expect(F.rules.uniqueRows).toBeGreaterThan(100);
+    expect(F.rules.uniqueRows).toBeLessThanOrEqual(1050);
+    expect(F.weights).toHaveLength(13);
+    // Fristående: F byggs utan D och delar inte D:s radlista
+    const D = buildCouponD({ product: 'stryktipset' }, events, forced, base);
+    expect(F.rowList).not.toEqual(D.rowList);
+    const W = streck4030Weights(events, forced);
+    expect(F.weights[0]).toEqual(W[0].map((x: number) => Math.round(x * 1000) / 1000));
+    expect(W[0].filter((x: number) => x === 0.4)).toHaveLength(1);
+    expect(W[0].filter((x: number) => x === 0.3)).toHaveLength(2);
+    const F2 = buildCouponF({ product: 'stryktipset', drawNumber: 4974 }, events, forced, base);
+    expect(F2.rowList).toEqual(F.rowList);
+    // 1050 = samma 1000 + 50
+    const F1000 = buildCouponF({ product: 'stryktipset', drawNumber: 4974 }, events, forced, base, { rows: 1000 });
+    expect(F.rowList.slice(0, 1000)).toEqual(F1000.rowList);
+    const lines = F.egnaRader.trim().split('\n');
+    expect(lines[0]).toBe('Stryktipset');
+    expect(lines).toHaveLength(1051);
+    expect(lines.slice(1).every((l: string) => /^E(,[1X2]){13}$/.test(l))).toBe(true);
+  });
+
+  test('krav på F följs', async () => {
+    const { buildCouponF } = await engine();
+    const forced: (number[] | null)[] = events.map(() => null);
+    forced[0] = [1];
+    forced[2] = [0, 2];
+    const F = buildCouponF({ product: 'europatipset', drawNumber: 2615 }, events, forced, base);
+    expect(F.rowList.every((r: string) => r[0] === 'X' && r[2] !== 'X')).toBe(true);
+    expect(F.egnaRader.trim().split('\n')[0]).toBe('Europatipset');
+  });
+});
+
 test.describe('stryk-engine: kupong A, B och C', () => {
   const dataFile = path.join(ROOT, 'data', 'stryktipset.json');
   const products: any[] = fs.existsSync(dataFile) ? JSON.parse(fs.readFileSync(dataFile, 'utf8')).products ?? [] : [];
@@ -1640,8 +1696,8 @@ test.describe('stryk-engine: kupong A, B och C', () => {
       const { A, B, C } = out;
       const at = `${p.product} ${p.drawNumber}`;
       expect(A && B, at).toBeTruthy();
-      // Kupong D/E (2026-10-07): 500 egna rader vardera (egna tester)
-      expect(Object.keys(out).filter((k) => /^[A-Z]$/.test(k)).sort(), `${at}: kupong A–E`).toEqual(["A", "B", "C", "D", "E"]);
+      // Kupong D/E (2026-10-07): 500 egna rader; F (2026-10-08): 1000 value-rader
+      expect(Object.keys(out).filter((k) => /^[A-Z]$/.test(k)).sort(), `${at}: kupong A–F`).toEqual(["A", "B", "C", "D", "E", "F"]);
       for (const [name, c] of [['A', A], ['B', B], ['C', C]] as const) {
         if (!c) continue;
         expect(spikes(c), `${at} ${name}: minst 2 spikar`).toBeGreaterThanOrEqual(2);

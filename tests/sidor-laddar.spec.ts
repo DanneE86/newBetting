@@ -83,7 +83,7 @@ for (const [vy, namn] of [['stryktipset', 'Stryktipset'], ['europatipset', 'Euro
 
 // Kupongerna räknas i en bakgrundstråd (stryk-worker.js, 2026-10-05): sidan visas direkt och går att använda medan
 // motorn räknar, och räkningen görs en gång (förut två gånger på huvudtråden, ~80 s med låst sida).
-test('Stryktipset: matcherna syns direkt medan kupongerna räknas i bakgrunden, sedan kupong A–C', async ({ page }) => {
+test('Stryktipset: matcherna syns direkt medan kupongerna räknas i bakgrunden, sedan kupong A–F', async ({ page }) => {
   const workers: string[] = [];
   page.on('worker', (w: any) => workers.push(w.url()));
   const fel = await oppna(page, 'stryktipset');
@@ -165,18 +165,21 @@ test('Stryktipset: panelen Risklag denna säsong och etiketten risklag på flagg
   test.skip(!p || !lista.length, 'ingen kupong eller säsongslista i data/stryktipset.json');
   const fel = await oppna(page, 'stryktipset');
   const view = page.locator('#stryktips-view');
-  await expect(view.locator('.st-match')).toHaveCount(13, { timeout: 30_000 });
+  await expect(view.locator('.st-matches')).toBeVisible({ timeout: 30_000 });
   const panel = view.locator('.rk-panel');
   await expect(panel).toBeVisible();
+  await expect(panel).not.toHaveAttribute('open');
+  await panel.locator('> summary').click();
   await expect(panel).toHaveAttribute('open', '');
   await expect(panel).toContainText('Kort sagt');
   // En rad per risklag, med en ruta per match som streckfavorit
   const risk = lista.filter((r: any) => r.risk);
   await expect(panel.locator('.rk-list').first().locator('.rk-row.is-risk')).toHaveCount(risk.length);
   if (risk.length) await expect(panel.locator('.rk-row.is-risk').first().locator('.rk-dot')).toHaveCount(risk[0].season.last.length);
-  // Flaggade lag i kupongen får etiketten i både kravlistan och matchkortet
+  // Flaggade lag i kupongen får etiketten i kravlistan; i matchkorten när sektionen är utfälld
   const flaggade = p.events.reduce((n: number, e: any) => n + (e.streckFlop?.home ? 1 : 0) + (e.streckFlop?.away ? 1 : 0), 0);
   await expect(view.locator('.sb-row .risk-tag')).toHaveCount(flaggade);
+  await view.locator('.st-matches > summary').click();
   await expect(view.locator('.st-match h3 .risk-tag')).toHaveCount(flaggade);
   expect(fel, fel.join('\n')).toEqual([]);
 });
