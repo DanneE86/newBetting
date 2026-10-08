@@ -420,6 +420,46 @@ Kalibreringen i arkivet: favoriterna vinner nästan så ofta som modellen säger
 - **Europatipset:** A+B+C −44 457 kr mot −34 974 utan bedömning. Bedömningen gör det sämre här, men den gäller ändå (användarens regel). Följ upp efter 12+ omgångar.
 - A+B ger nu mer än C på båda spelen, och sidans rekommendation är ändrad.
 
+## Varför vi nästan aldrig får 13 rätt (2026-10-07, 168 ST-omgångar i arkivet, 4806–4973)
+
+Användarens fråga: "varför får vi aldrig 13 rätt, jag vill få in en 13-rättare när utdelningen är över 30 000 kr". Mätt på kupongerna i `data/tips-archive/systems/` (A+B, nuvarande regler).
+
+- **Det följer förväntan.** A+B:s modellchans är 1 på 208 per omgång, alltså väntat 0,8 tretton-rättare på 168 omgångar. Utfallet blev 1 (4917).
+- **Rätt rad är extremt osannolik:** median 1 på 510 000 enligt våra procent.
+- **Grundraden är flaskhalsen, inte utdelningsgränsen.** I 137 omgångar med 13 rätt ≥ 30 000 kr (eller ingen vinnare) låg rätt rad i grundraden bara 2 gånger. 81 % av missarna var spikar (304 av 668 sprack, 45 %). A+B:s lägsta utdelning låg i median på 33 765 kr (p90 42 033), så gränsen stängde bara ute 1 av 130 storomgångar.
+- **Tak (de troligaste raderna med verklig utdelning ≥ 30 000 kr, utan tecken- och färgregler):**
+
+  | Rader | Chans per omgång | Väntat på 168 omg | Hade tagit 13 rätt i |
+  |---|---|---|---|
+  | 400 | 1 på 204 | 0,83 | 4973 |
+  | 800 | 1 på 111 | 1,52 | 4885, 4973 |
+  | 1 600 | 1 på 61 | 2,76 | 3 omg |
+  | 3 200 | 1 på 34 | 4,95 | 5 omg |
+  | 6 400 | 1 på 19 | 8,72 | 8 omg |
+
+- **Kupong D infördes samma dag** (användaren: "skapa en D, budget 500 kr, jobba fritt"): de 500 troligaste raderna med verklig utdelning ≥ 30 000 kr, inga andra regler, spelas som fil i Svenska Spels Egna rader (`buildCouponD` i `gui/public/stryk-engine.js`). Bakkörning (`node scripts/backtest-stryk-d.mjs [produkt] [--rows] [--utd]`), samma procent och streck som arkivets kuponger:
+
+  | | Omg | Chans 13 rätt | 13 / 12 / 11 rätt (rader) | Netto | Tillbaka |
+  |---|---|---|---|---|---|
+  | Stryktipset D (500 kr) | 168 | 1 på 167 | 1 / 17 / 177 (4973, 59 266 kr) | +16 845 | 120 % |
+  | Stryktipset A+B (arkivet, ~800 kr) | 168 | 1 på 208 | – | −28 723 | 78 % |
+  | Europatipset D (500 kr) | 182 | 1 på 159 | 1 / 29 / 226 (2590, 55 109 kr) | +17 612 | 119 % |
+  | Europatipset A+B (arkivet) | 182 | 1 på 162 | – | +1 738 | 101 % |
+
+  Gränsen för D, Stryktipset: 20 000 kr gav chansen 1 på 134 men 13 rätt som betalade 12 106 kr (−39 112), 25 000 1 på 151 (−14 845), 40 000 1 på 196 (−37 956), 50 000 1 på 223 (+28 032, en träff). 30 000 behålls (användarens mål). Nettot styrs av en enda 13-rättare, så plusset är brus; chansen är måttet.
+- **D i Gambling Cabin (2026-10-07, användaren: "D ska också kunna öppnas i Gambling Cabin"):** Gambling Cabin kan inte importera rader, så `buildCouponDGC` efterliknar D med regler: grundrad = D:s tecken, mest troliga tecknet per match blått, övriga färgas grönt < gult < rött < rosa efter kostnad ln(pmax/p) (kvantiler i `D_GC.splits`), färgtak plus lägsta utdelning (GC:s formel med 25 M/10 M i omsättning, avrundad uppåt) väljs så att 450–500 rader får högst chans. Fälla: **max 0 läses som ingen regel** i Gambling Cabin; färger med tak 0 tas därför bort ur grundraden. Verifierat för 4974: länken gav exakt 460 kr i Gambling Cabin, samma som motorn. Bakkörning (`backtest-stryk-d.mjs`): Stryktipset 1 på 209 (D-fil 1 på 167), snitt 484 rader, 13 rätt i 4820 och 4885, netto +49 164; Europatipset 1 på 207 (D-fil 1 på 159), 13 rätt i 2448, netto +86 168. Alltså ungefär 80 % av filens chans; plusset är brus (få träffar). Filen är fortfarande bäst, länken är för den som vill spela via Gambling Cabin.
+
+- **Kupong E infördes 2026-10-07** (användaren: komplettera D i de missade matcherna, budget 500 kr): `buildCouponE` tar de 500 nästa raderna (≥ 30 000 kr) som inte finns i D och ger bonus (`gapBonus` 2,5) åt tecken D saknar. Fil till Egna rader, samma som D. Bakkörning (`node scripts/backtest-stryk-e.mjs`), 168 Stryktipset-omgångar:
+
+  | | Chans 13 rätt | 13 rätt (omg) | Netto | Tillbaka |
+  |---|---|---|---|---|
+  | D (500 kr) | 1 på 167 | 4973 | +16 845 | 120 % |
+  | E (500 kr) | 1 på 277 | 4885 | −14 083 | 83 % |
+  | D+E (1 000 kr) | 1 på 104 | 4885 + 4973 | +2 762 | 102 % |
+
+  E räddade 1 omgång där D missade (4885). Chansen D+E (1 på 104) är bättre än A+B (1 på 208 för ~800 kr). Nettot är brus (få 13-rättare); chansen är måttet.
+- **Slutsats:** dagens 800 rader (A+B) ger samma chans som de 400 bästa raderna. Gambling Cabin kan inte välja rader efter chans, bara via grundrad, tecken-, färg- och utdelningsregler, och det kostar ungefär halva chansen. Med 800 kr i veckan är taket ändå en 13-rättare ungefär vartannat år. Vill man ha det oftare krävs större insats eller egna rader (filuppladdning), som bryter regeln om bara Gambling Cabin-länk.
+
 ## Robusta lärdomar (stöds av hela urvalet)
 
 1. **Oddsen slår vår lagmodell.** Logloss över 216 matcher, där lägre är bättre:
@@ -445,6 +485,9 @@ Kalibreringen i arkivet: favoriterna vinner nästan så ofta som modellen säger
 | A och B missar något tecken (1/X/2) oftare än modellen väntar, korrigera sannolikhet eller halvgarderingstecken | Användaren (2026-10-03) | 107 omg, 1 294 PL/CH/L1-matcher: A missade 1 50 (väntat 45), X 137 (135), 2 120 (104). B: 1 77 (63), X 145 (162), 2 111 (107). Kryss missas oftast (42–45 %) men som väntat. Starkaste cellen (A:s halvor utan röd 2:a, z 2,5) klarar inte träning/kontroll, och stängningsodds 2017–2026 underskattar inte röda bortalag. Detaljer i `docs/lardomar/slutsatser.md` (Förkastat 2026-10-03). | Förkastad, ingen ändring. Följ upp A:s halvor mot röd 2:a efter ~30 nya omgångar. |
 | Ta med X oftare i A och B: (a) 1X/X2 före 12 (bonus 3/6 p.e.), (b) ingen favoritspik vid X ≥ 27/30 %, (c) X × 1,1/1,2 | Användaren (2026-10-03) | 107 omg (`data/stryktips-backtest-*-kryss-*.json`). (a)/(c): A:s X-missar 137 → 83–104 men missar totalt 307 → 307–319, chans 0,234 → 0,220–0,224 %, A tappar sin 13:a, netto A +24 234 → −20 650 till −32 629, B 12+ 4 → 0–2. (b): X-missar 137 → 135, A marginellt bättre, B sämre med 27 %, ±0 med 30 %. Tabell i `docs/lardomar/slutsatser.md`. | Förkastad. Reglagen `STRYK_X_*` finns kvar, avstängda. |
 | B:s teckenregel 3-3-3 → 3-2-2 (A 4-2-2 → 3-2-2 testat samtidigt) | Egen (2026-10-03, analys av omgångar > 40 000 kr) | 3-3-3 uteslöt rätt rad i 51 av 107 omgångar (bl.a. 4847, 247 257 kr, som låg i B:s grundrad). 107 omg: B 3-2-2 chans 0,087 → 0,099 %, högre i alla tre perioderna, 13 rätt i 4825. B 2-2-2 lika chans, sämre netto. A 3-2-2 ingen skillnad i A, sämre C. | **B 3-2-2 infört.** A kvar 4-2-2. |
+| Helgardering med andelar 40/30/30 (högst streck = 40), 1000 kr/omg | Användaren (2026-10-08) | ST 169 omg (2023-07–2026-10): −14 826 kr (−8,8 % ROI), 47 plusomg. ET 183 omg: −68 559 kr (−37 % ROI). Snitt ~6,4 streckfavoriter rätt/13. ~60 % av ST-vinsten från 13-rätt (jackpottar) trots ~0,001 kr snittinsats på rätt rad. `scripts/backtest-streck-403030.mjs`. | Förkastad som spelstrategi (förlust, särskilt ET). |
+| 1–3 hårda spikar + 40/30/30 på resten (streck- eller oddsfavorit) | Användaren (2026-10-08) | ST 169 omg, 1000 kr: spik1 −28k (−16 %), spik2 −52k (−31 %), spik3 −82k (−48 %). Spikfel 48/87/123 omg. Fler spikar = sämre. ET samma mönster. `scripts/backtest-andel-modeller.mjs`. | Förkastad. Hårda spikar i andelsystem dödar kupongen oftare än de hjälper. |
+| Andelar = p_odds / √folk (value), ev. market×X1,15 | Egen (2026-10-08) | ST kontinuerligt: +4 761 kr (+2,8 %). ST som kupong F (1000 egna rader): −70 247 kr (−42 %), 0×13 rätt i listan på 169 omg – samma förväntan men hög jackpot-varians. ET kontinuerligt −28 %. | **Kupong F införd** (`buildCouponF`). Följ upp verkligt spel; jämför med D/E. |
 
 **Metodlärdom:** 5 omgångar (65 matcher) räcker inte för att ändra regler. Hösten 2026 hade 37 % kryss, men våren låg på normala 26 %. Testa alltid mot minst 12–17 omgångar och på flera mått innan en regel ändras.
 
@@ -487,6 +530,8 @@ Nettot styrs av enstaka träffar: A:s plus kommer från en enda rad med 12 rätt
 
 ## Ändringslogg
 
+- **2026-10-08:** Baktest av helgardering 40/30/30, spik+40/30/30 och andelsmodeller – se förkastade hypoteser. **Kupong F** (1050 kr, fristående, default **40/30/30** streck, Egna rader). Diskret baktest 169 omg: 1000 −41 %, 1050 −43 %, 1500 +8 % (en stor 12-rätt), 2000−10k sämre. Skript: `scripts/backtest-stryk-f.mjs --model streck4030 --budget …`.
+
 - **2026-09-30 (natt, match för match):** Fast 65 %-spikregel borttagen. Alla matcher bedöms match för match på båda spelen (användarens regel), spik från justerad chans 55 %. Se avsnittet om spikbedömning.
 
 - **2026-09-30 (sent, rekommendation):** Användaren följde rekommendationen. Utdelningsregeln är en LÄGSTA gräns igen, som får höjas (exakt gräns kvar bakom STRYK_EXACT=1). Spikgränsen på Stryktipset och kupong C behålls. Servern bygger A och B var för sig som webben. Backtest med det (38 ST / 55 ET omg), återbetalning per insatt krona: ST C 70 % (−8 928 kr, 11+ 48), ET C 76 % (−10 024, 11+ 105), ST A+B 29 % (−20 384, 11+ 15; det delade systemet gav 64 % men används inte i webben), ET A+B 39 % (−24 950). Sidan rekommenderar att i första hand spela C. **Reglerna fryses** tills minst 12 nya omgångar utvärderats mot facit.
@@ -498,6 +543,8 @@ Nettot styrs av enstaka träffar: A:s plus kommer från en enda rad med 12 rätt
 - **2026-09-30 (natt, C):** Kupong C på sidan: ett eget system på 700–850 kr, oberoende av A och B och utan krav, samma regler som A och minst 30 000 kr för 13 rätt (användarens beslut). Europatipset 2612: 728 rader, chans 1 på 213; Stryktipset 4972: 774 rader, 1 på 184. Inte backtestad än (byggs bara i webbläsaren).
 
 - **2026-09-30 (natt, sist):** Färgmålen är inte fasta längre (användaren: inte fasta, inte snäva). Per omgång räknas väntat antal gröna/gula/röda i rätt rad (summan av våra procent), och fönstret för hela raden är 3–4 brett runt det väntade antalet. Spikarna är rosa och deras färger dras av i länken. Backtest (ST 38 / ET 55 omg): fönster 3–4 ST −22 557 kr (11+ 23), ET −24 797 kr (11+ 71, väntad 13 rätt 0,265); bredd 3: −23 380 / −29 847; bredd 4: −23 468 / −24 811; bredd 5 ungefär som 4. Jämfört med fasta mål (−16 154 / −30 389) och fri optimering med bredd 2 (−8 373 / +8 596). Chansen till 13 rätt är lika hög som med bredd 2, men utfallet (några stora vinster) var sämre. Följ upp.
+
+- **2026-10-07:** Icke-spikbara matcher baserar tipset på samma marknadsstyrda Oddset-blandning som tips-sidan (`tips-latest.json` → `pro.blended` / marketLed), när matchen finns där. Spikbara matcher behåller kalibrerad spikbedömning (`sysP`). Infört i `scripts/fetch-stryktipset.mjs` (`applyOddsetTipBasis`). Kräver omhämtning av kupongen. Inte backtestat ännu – utvärdera efter 12+ omgångar.
 
 - **2026-09-30 (natt):** Fasta färgmål för hela raden, användarens beslut: grön 3–7, gul 4–8, röd 1–3 (båda spelen). Spikarna är rosa igen och deras färger dras av från målen i Gambling Cabin-länken (rosa = antal spikar). Går målen inte att hålla optimeras färgerna fritt, och skräll- och favoritregeln släpps sist. Backtest mot bredd 2 utan mål: Stryktipset −16 154 kr mot −8 373 (11+ 29 mot 29, väntad 13 rätt 0,119 mot 0,139); Europatipset −30 389 kr mot +8 596 (11+ 48 mot 84). Målen är alltså sämre i båda spelen, men användaren valde dem. Utvärdera efter 12+ nya omgångar.
 

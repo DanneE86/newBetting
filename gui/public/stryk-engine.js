@@ -1164,12 +1164,14 @@ export function kravSigns(k) {
 }
 
 /**
- * Genererar kupong A–E för en omgång.
- * krav: { [eventNumber]: { signs: "1" | "1X" | ..., scope: "both" | "A" | "B" | "C" | "D" | "E" | "all" } }
- * "both" = A och B, "all" = alla fem.
+ * Genererar kupong A–F för en omgång.
+ * krav: { [eventNumber]: { signs: "1" | "1X" | ..., scope: "both" | "A" | "B" | "C" | "D" | "E" | "F" | "all" } }
+ * "both" = A och B, "all" = alla sex.
  * D = de 500 troligaste raderna med minst 30 000 kr för 13 rätt (egna rader, buildCouponD).
  * E = komplement till D (2026-10-07): de 500 nästa raderna (≥ 30 000 kr) som inte finns i D, med extra vikt på
  *     tecken D saknar i någon match – samma filformat (Egna rader).
+ * F = värdemodell 1050 kr (2026-10-08): andelar p_odds/√folk, 1050 egna rader samplade efter andelarna (Egna rader).
+ *     Fristående från D och E (ingen overlap-logik, inget utdelningsgolv).
  * A = bästa systemet med A:s krav (350–400 kr, spelets utdelningsgräns).
  * C = skrällsystemet (700–850 kr, 50 000–75 000 kr, röd 2–6, högsta rad minst 1 miljon), fritt från A och B.
  * B = risksystemet med B:s krav: röd 1–5 eller 2–5, minst 30 000 kr för 13 rätt utan tak, teckenregler 3-2-2, aldrig samma gardering som A och högst 1 spik
@@ -1180,8 +1182,8 @@ export function kravSigns(k) {
 const topOf = (x) => x.indexOf(Math.max(...x));
 export const sysFinal = (e) => (e.spik?.used && e.spik.sysP && topOf(e.spik.sysP) === topOf(e.final) ? e.spik.sysP : e.final);
 /**
- * Genererar kupong A–E.
- * opts.onlyDE = true → bara D/E (+ DGC); UI behåller A/B/C när kraven är oförändrade (mycket snabbare vid D/E %).
+ * Genererar kupong A–F.
+ * opts.onlyDE = true → bara D/E/F (+ DGC); UI behåller A/B/C när kraven är oförändrade (mycket snabbare vid D/E %).
  */
 export function generateCoupons(p, krav, opts = {}) {
   // Systemen byggs på matchens justerade procent (spikbedömningen) när den används, annars på modellens
@@ -1202,15 +1204,17 @@ export function generateCoupons(p, krav, opts = {}) {
     colorBands: p.colorBands || null,
     spikMin: SPIK_MIN_BY_PRODUCT[p.product] ?? 0,
   };
-  const buildDE = () => {
+  // D/E hör ihop; F byggs alltid separat (fristående värdemodell, påverkar inte D/E)
+  const buildDEF = () => {
     const D = buildCouponD(p, events, forcedFor("D"), base);
     if (D) D.gc = buildCouponDGC(p, events, D.picks.map((x) => [...x.signs].map((s) => SIGNS.indexOf(s))), base);
     const E = buildCouponE(p, events, forcedFor("E"), base, D);
+    const F = buildCouponF(p, events, forcedFor("F"), base);
     let unionDE = D ? D.hitAll : 0;
     if (E) unionDE += E.hitAll;
-    return { D, E, unionDE };
+    return { D, E, F, unionDE };
   };
-  if (opts.onlyDE) return buildDE();
+  if (opts.onlyDE) return buildDEF();
 
   const fA = forcedFor("A"), fB = forcedFor("B");
   const finish = (best, sys, forced) => ({
@@ -1242,8 +1246,8 @@ export function generateCoupons(p, krav, opts = {}) {
     if (xs < X_SHARE_C) c.relaxed.push(`kryssen täcker ${Math.round(xs * 100)} % av omgångens väntade kryss – ${Math.round(X_SHARE_C * 100)} % gick inte med dina krav`);
   }
   const C = c && finish(c, "C", fC);
-  const { D, E, unionDE } = buildDE();
-  return { A, B, C, D, E, overlap, unionHit, unionDE };
+  const { D, E, F, unionDE } = buildDEF();
+  return { A, B, C, D, E, F, overlap, unionHit, unionDE };
 }
 
 // ---------- Kupong D / E: egna rader med 13 rätt över 30 000 kr (användaren 2026-10-07) ----------
@@ -1582,6 +1586,131 @@ export function buildCouponE(p, events, forced, base, D, { rows: N = E_RULES.row
   }
   const nFall = fallPlan.filter(Boolean).length;
   if (nFall) out.relaxed = [...(out.relaxed || []), `kan falla: ${nFall} matcher fördelade (egna E-%) i stället för spik`];
+  return out;
+}
+
+// ---------- Kupong F: 1050 kr, fristående från D/E (användaren 2026-10-08) ----------
+// Default: 40/30/30 – högst streckade tecknet 40 %, övriga 30/30. Alternativ: value = p_odds/√folk.
+// Egna rader samplas efter andelarna (dubbletter = mer insats). Inga hårda spikar, ingen utdelningsgräns.
+export const F_RULES = { rows: 1050, beta: 0.5, model: "streck4030" };
+
+/** Andelar p / folk^beta per match (0–1), med hänsyn till låsta tecken. */
+export function valueWeights(events, forced, { beta = F_RULES.beta } = {}) {
+  return events.map((e, i) => {
+    const allowed = forced[i] || [0, 1, 2];
+    const p = e.market?.length === 3 ? e.market : e.final;
+    const f = e.folk?.length === 3 ? e.folk : p;
+    const raw = [0, 1, 2].map((k) => {
+      if (!allowed.includes(k)) return 0;
+      return Math.max(p[k], 1e-9) / Math.pow(Math.max(f[k], 0.01), beta);
+    });
+    const s = raw.reduce((a, b) => a + b, 0);
+    return s > 0 ? raw.map((x) => x / s) : [1 / 3, 1 / 3, 1 / 3];
+  });
+}
+
+/** 40/30/30: högst streckade tecknet (bland tillåtna) får 40 %, övriga tillåtna delar på 30/30 (eller 60 om bara två). */
+export function streck4030Weights(events, forced) {
+  return events.map((e, i) => {
+    const allowed = forced[i] || [0, 1, 2];
+    const f = e.folk?.length === 3 ? e.folk : (e.market?.length === 3 ? e.market : e.final);
+    let best = allowed[0];
+    for (const k of allowed) if ((f[k] ?? 0) > (f[best] ?? 0)) best = k;
+    if (allowed.length === 1) return [0, 1, 2].map((k) => (k === best ? 1 : 0));
+    if (allowed.length === 2) {
+      return [0, 1, 2].map((k) => {
+        if (!allowed.includes(k)) return 0;
+        return k === best ? 0.4 : 0.6;
+      });
+    }
+    return [0, 1, 2].map((k) => (k === best ? 0.4 : 0.3));
+  });
+}
+
+export function fWeights(events, forced, { model = F_RULES.model, beta = F_RULES.beta } = {}) {
+  return model === "value" ? valueWeights(events, forced, { beta }) : streck4030Weights(events, forced);
+}
+
+function mulberry32(seed) {
+  let a = seed >>> 0;
+  return () => {
+    a |= 0; a = (a + 0x6D2B79F5) | 0;
+    let t = Math.imul(a ^ (a >>> 15), 1 | a);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+/** N rader samplade ur andelsproduktfördelningen (deterministiskt frö). */
+export function sampleAndelRows(weights, N, seed) {
+  const rng = mulberry32(seed);
+  const cdf = weights.map((w) => {
+    let s = 0;
+    return w.map((x) => (s += x));
+  });
+  const rows = new Array(N);
+  for (let t = 0; t < N; t++) {
+    let row = "";
+    for (let i = 0; i < cdf.length; i++) {
+      const u = rng();
+      const c = cdf[i];
+      row += u < c[0] ? "1" : u < c[1] ? "X" : "2";
+    }
+    rows[t] = row;
+  }
+  return rows;
+}
+
+export function buildCouponF(p, events, forced, base, {
+  rows: N = F_RULES.rows,
+  beta = F_RULES.beta,
+  model = F_RULES.model,
+} = {}) {
+  const W = fWeights(events, forced, { model, beta });
+  const seed = ((Number(p.drawNumber) || 1) * 1009 + (p.product === "europatipset" ? 17 : 3) + (model === "value" ? 0 : 91)) >>> 0;
+  const rowList = sampleAndelRows(W, N, seed);
+  const P = events.map((e) => e.final);
+  const Folk = events.map((e) => [0, 1, 2].map((k) => e.folk?.[k] ?? e.final[k]));
+  const RT = base.realTurnover || base.turnover || 1e7;
+  const J = base.jackpot || 0;
+  const pot = PAYOUT_13 * RT + J;
+  const rowP = rowList.map((row) => {
+    let pr = 1;
+    for (let i = 0; i < row.length; i++) pr *= P[i][SIGNS.indexOf(row[i])];
+    return pr;
+  });
+  const rowReal = rowList.map((row) => {
+    let f = 1;
+    for (let i = 0; i < row.length; i++) f *= Folk[i][SIGNS.indexOf(row[i])];
+    return pot / (1 + RT * f);
+  });
+  // Unika rader för "täckt modellchans" (samma mått som D/E); dubbletter syns i cost/rowList
+  const seen = new Set();
+  let hitUnique = 0;
+  for (let j = 0; j < rowList.length; j++) {
+    if (seen.has(rowList[j])) continue;
+    seen.add(rowList[j]);
+    hitUnique += rowP[j];
+  }
+  const picked = {
+    pot, RT, J, size: N, N, payoutMin: 0,
+    rowList, rowP, rowReal, codes: rowList.map(encodeRow),
+  };
+  const label = model === "value" ? "värdemodell odds/√streck" : "40/30/30 (högst streck = 40)";
+  const out = finishEgnaRader(p, events, forced, base, picked, "F", {
+    valueModel: model === "value",
+    streck4030: model === "streck4030",
+    model, beta, uniqueRows: seen.size, sampleSeed: seed,
+  });
+  // Överskriv hitAll med unik täckning (finish summerar alla rader inkl. dubbletter)
+  out.hitAll = hitUnique;
+  out.expectedReturn = rowP.reduce((s, pr, j) => s + pr * rowReal[j], 0);
+  out.expectedPayout = hitUnique ? out.expectedReturn / hitUnique : null;
+  out.minPayout = Math.min(...rowReal);
+  out.weights = W.map((w) => w.map((x) => Math.round(x * 1000) / 1000));
+  out.relaxed = [
+    `${label}, ${seen.size} unika av ${N} rader (dubbletter = mer insats)`,
+  ];
   return out;
 }
 

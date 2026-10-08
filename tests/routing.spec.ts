@@ -124,16 +124,20 @@ test('Stryktipset: en sida, egna krav genererar kupong A och B', async ({ page }
   await expect(page.locator('.sb-coupon').nth(2)).toContainText('minst 50 000 kr');
   // Krav på A+B låses inte i C
   await expect(table.nth(0).locator('td').nth(3)).not.toContainText('🔒');
-  // Kupong D/E (2026-10-07): 500 egna rader vardera med minst 30 000 kr, krav på A+B låses inte där
-  await expect(page.locator('.sb-coupon')).toHaveCount(5);
+  // Kupong D/E (2026-10-07): 500 egna rader; F (2026-10-08): 1000 value-rader
+  await expect(page.locator('.sb-coupon')).toHaveCount(6);
   const dCard = page.locator('.sb-coupon').nth(3);
   await expect(dCard.locator('h3')).toContainText(/Kupong D \d+ rader/);
   await expect(dCard).toContainText('minst 30 000 kr för 13 rätt');
   const eCard = page.locator('.sb-coupon').nth(4);
   await expect(eCard.locator('h3')).toContainText(/Kupong E \d+ rader/);
   await expect(eCard).toContainText('kompletterar D');
+  const fCard = page.locator('.sb-coupon').nth(5);
+  await expect(fCard.locator('h3')).toContainText(/Kupong F 1[\s]?050 rader/);
+  await expect(fCard).toContainText('40/30/30');
   await expect(table.nth(0).locator('td').nth(4)).not.toContainText('🔒');
   await expect(table.nth(0).locator('td').nth(5)).not.toContainText('🔒');
+  await expect(table.nth(0).locator('td').nth(6)).not.toContainText('🔒');
   // D/E styrs via D/E %-raden, inte via Gäller
   await expect(rows.nth(0).locator('.sb-scope button[data-scope="D"]')).toHaveCount(0);
   await expect(rows.nth(0).locator('.sb-scope button[data-scope="E"]')).toHaveCount(0);
