@@ -142,6 +142,10 @@ test.describe('startelva', () => {
     const key = svsWithXi.keys.find((k: string) => k.startsWith('svs|'));
     const [, product, , nr] = key.split('|');
     await page.goto(`${base}/${product}`);
+    const matches = page.locator('.st-matches');
+    await expect(matches).toBeVisible({ timeout: 30_000 });
+    if (!(await matches.evaluate((d) => (d as HTMLDetailsElement).open))) await matches.locator('> summary').click();
+    await expect(matches).toHaveAttribute('open', '');
     const card = page.locator('.st-match').nth(Number(nr) - 1);
     await card.locator('.btn-startelva').click();
     await expect(card.locator('.se-pitch .se-p')).toHaveCount(22);
@@ -219,6 +223,10 @@ test.describe('spelarkort', () => {
     const key = svsWithXi.keys.find((k: string) => k.startsWith('svs|'));
     const [, product, , nr] = key.split('|');
     await page.goto(`${base}/${product}`);
+    const matches = page.locator('.st-matches');
+    await expect(matches).toBeVisible({ timeout: 30_000 });
+    if (!(await matches.evaluate((d) => (d as HTMLDetailsElement).open))) await matches.locator('> summary').click();
+    await expect(matches).toHaveAttribute('open', '');
     const card = page.locator('.st-match').nth(Number(nr) - 1);
     await card.locator('.btn-startelva').click();
     await card.locator('.se-card-btn').first().click();

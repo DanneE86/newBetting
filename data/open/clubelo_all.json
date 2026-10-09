@@ -1,7 +1,7 @@
 {
  "countries": {
   "SWE": {
-   "fetchedAt": "2026-09-28T18:44:15.633Z",
+   "fetchedAt": "2026-10-07T17:17:30.624Z",
    "clubs": [
     {
      "name": "Hammarby",
@@ -20,12 +20,12 @@
     },
     {
      "name": "Elfsborg",
-     "elo": 1555.7,
+     "elo": 1555.6,
      "level": 1
     },
     {
      "name": "Malmö",
-     "elo": 1555.6,
+     "elo": 1555.5,
      "level": 1
     },
     {
@@ -40,17 +40,17 @@
     },
     {
      "name": "AIK",
-     "elo": 1526.7,
+     "elo": 1526.6,
      "level": 1
     },
     {
      "name": "Mjällby",
-     "elo": 1525.1,
+     "elo": 1525,
      "level": 1
     },
     {
      "name": "Västerås",
-     "elo": 1501.6,
+     "elo": 1501.5,
      "level": 1
     },
     {
@@ -75,17 +75,17 @@
     },
     {
      "name": "Öster",
-     "elo": 1413.7,
+     "elo": 1413.6,
      "level": 2
     },
     {
      "name": "Degerfors",
-     "elo": 1402.5,
+     "elo": 1402.4,
      "level": 1
     },
     {
      "name": "Örgryte",
-     "elo": 1382.1,
+     "elo": 1382,
      "level": 1
     },
     {
@@ -227,6 +227,86 @@
      "name": "Las Palmas",
      "elo": 1667.9,
      "level": 2
+    }
+   ]
+  },
+  "DEN": {
+   "fetchedAt": "2026-10-07T17:17:30.437Z",
+   "clubs": [
+    {
+     "name": "Midtjylland",
+     "elo": 1716.3,
+     "level": 1
+    },
+    {
+     "name": "FC Kobenhavn",
+     "elo": 1693.6,
+     "level": 1
+    },
+    {
+     "name": "Nordsjaelland",
+     "elo": 1643.2,
+     "level": 1
+    },
+    {
+     "name": "Aarhus",
+     "elo": 1599.7,
+     "level": 1
+    },
+    {
+     "name": "Viborg",
+     "elo": 1583,
+     "level": 1
+    },
+    {
+     "name": "Brondby",
+     "elo": 1577.1,
+     "level": 1
+    },
+    {
+     "name": "Silkeborg",
+     "elo": 1515.5,
+     "level": 1
+    },
+    {
+     "name": "Randers",
+     "elo": 1510.4,
+     "level": 1
+    },
+    {
+     "name": "Odense",
+     "elo": 1496.5,
+     "level": 1
+    },
+    {
+     "name": "SonderjyskE",
+     "elo": 1486.6,
+     "level": 1
+    },
+    {
+     "name": "FC Fredericia",
+     "elo": 1477.9,
+     "level": 2
+    },
+    {
+     "name": "Vejle",
+     "elo": 1440.7,
+     "level": 2
+    },
+    {
+     "name": "Lyngby",
+     "elo": 1430.8,
+     "level": 1
+    },
+    {
+     "name": "Aalborg",
+     "elo": 1413,
+     "level": 2
+    },
+    {
+     "name": "Horsens",
+     "elo": 1408.5,
+     "level": 1
     }
    ]
   }
