@@ -530,6 +530,8 @@ Nettot styrs av enstaka träffar: A:s plus kommer från en enda rad med 12 rätt
 
 ## Ändringslogg
 
+- **2026-10-09:** D:s standard höjd från 500 till 1 050 kr (användaren: samma insats som F, raderna ska betala minst 30 000 kr). Urvalet är oförändrat: de troligaste raderna med utdelning ≥ 30 000 kr, bara fler av dem. Bakkörning 168 Stryktipsomgångar (`node scripts/backtest-stryk-d.mjs stryktipset --rows 1050`): chans 1 på 87 (500 kr var 1 på 167), 13 rätt i 4820 (45 825 kr), 4885 (42 207 kr) och 4973 (59 266 kr), netto +54 482 kr. E är kvar på 500 kr.
+
 - **2026-10-08:** Baktest av helgardering 40/30/30, spik+40/30/30 och andelsmodeller – se förkastade hypoteser. **Kupong F** (1050 kr, fristående, default **40/30/30** streck, Egna rader). Diskret baktest 169 omg: 1000 −41 %, 1050 −43 %, 1500 +8 % (en stor 12-rätt), 2000−10k sämre. Skript: `scripts/backtest-stryk-f.mjs --model streck4030 --budget …`.
 
 - **2026-09-30 (natt, match för match):** Fast 65 %-spikregel borttagen. Alla matcher bedöms match för match på båda spelen (användarens regel), spik från justerad chans 55 %. Se avsnittet om spikbedömning.

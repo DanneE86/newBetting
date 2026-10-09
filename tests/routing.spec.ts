@@ -114,43 +114,31 @@ test('Stryktipset: en sida, egna krav genererar kupong A och B', async ({ page }
   await expect(table.nth(5).locator('td').nth(2)).not.toContainText('🔒');
   await expect(page.locator('.sb-coupon h3').first()).toContainText(/Kupong A \d+ rader/);
   await expect(page.locator('.sb-coupon h3').nth(1)).toContainText(/Kupong B \d+ rader/);
-  // B och C: 50 000–75 000 kr sedan 2026-10-02
+  // B: 50 000–75 000 kr sedan 2026-10-02
   await expect(page.locator('.sb-coupon').nth(1)).toContainText('minst 50 000 kr, inget tak');
-  // Kupong C: eget system 700-850 kr, kraven gäller inte där (inga lås i C-kolumnen)
-  const cHead = await page.locator('.sb-coupon h3').nth(2).textContent();
-  const cCost = Number(cHead!.match(/(\d[\d\s]*) kr/)![1].replace(/\s/g, ''));
-  expect(cCost).toBeGreaterThanOrEqual(700);
-  expect(cCost).toBeLessThanOrEqual(850);
-  await expect(page.locator('.sb-coupon').nth(2)).toContainText('minst 50 000 kr');
-  // Krav på A+B låses inte i C
-  await expect(table.nth(0).locator('td').nth(3)).not.toContainText('🔒');
-  // Kupong D/E (2026-10-07): 500 egna rader; F (2026-10-08): 1000 value-rader
-  await expect(page.locator('.sb-coupon')).toHaveCount(6);
-  const dCard = page.locator('.sb-coupon').nth(3);
+  // Kupong C är dold i gränssnittet (2026-10-09)
+  await expect(page.locator('.sb-coupon h3', { hasText: 'Kupong C' })).toHaveCount(0);
+  await expect(page.locator('.sb-table th', { hasText: 'Kupong C' })).toHaveCount(0);
+  await expect(rows.nth(0).locator('.sb-scope button[data-scope="C"]')).toHaveCount(0);
+  // Kupong D/E (2026-10-07): 500 egna rader; F (2026-10-08): 1050 rader
+  await expect(page.locator('.sb-coupon')).toHaveCount(5);
+  const dCard = page.locator('.sb-coupon').nth(2);
   await expect(dCard.locator('h3')).toContainText(/Kupong D \d+ rader/);
   await expect(dCard).toContainText('minst 30 000 kr för 13 rätt');
-  const eCard = page.locator('.sb-coupon').nth(4);
+  const eCard = page.locator('.sb-coupon').nth(3);
   await expect(eCard.locator('h3')).toContainText(/Kupong E \d+ rader/);
   await expect(eCard).toContainText('kompletterar D');
-  const fCard = page.locator('.sb-coupon').nth(5);
+  const fCard = page.locator('.sb-coupon').nth(4);
   await expect(fCard.locator('h3')).toContainText(/Kupong F 1[\s]?050 rader/);
   await expect(fCard).toContainText('40/30/30');
+  await expect(table.nth(0).locator('td').nth(3)).not.toContainText('🔒');
   await expect(table.nth(0).locator('td').nth(4)).not.toContainText('🔒');
   await expect(table.nth(0).locator('td').nth(5)).not.toContainText('🔒');
-  await expect(table.nth(0).locator('td').nth(6)).not.toContainText('🔒');
   // D/E/F styrs via D/E/F %-raden, inte via Gäller
   await expect(rows.nth(0).locator('.sb-scope button[data-scope="D"]')).toHaveCount(0);
   await expect(rows.nth(0).locator('.sb-scope button[data-scope="E"]')).toHaveCount(0);
   await expect(rows.nth(0).locator('.sb-defall')).toHaveCount(1);
   await expect(rows.nth(0).locator('.sb-defall-k')).toContainText('D/E/F %');
-  // Eget krav på C: spik 2 på match 8 bara i C
-  await rows.nth(7).locator('.sb-sign[data-sign="2"]').click();
-  await rows.nth(7).locator('.sb-scope button[data-scope="C"]').click();
-  await page.click('#sb-generate');
-  await expect(table.nth(7).locator('td').nth(3)).toHaveText(/^🔒 2(?: ⚠.*)?$/, { timeout: 240_000 });
-  await expect(table.nth(7).locator('td').nth(1)).not.toContainText('🔒');
-  await expect(table.nth(7).locator('td').nth(2)).not.toContainText('🔒');
-  await rows.nth(7).locator('.sb-sign[data-sign="2"]').click();
   // Turmatcher, matcher och vanliga missar är hopfällda – fäll ut vid behov
   await page.locator('.st-history > summary').click();
   await expect(page.locator('.st-miss')).toContainText('Vanliga missar');
@@ -162,10 +150,8 @@ test('Stryktipset: en sida, egna krav genererar kupong A och B', async ({ page }
   const turAdd = page.locator('.sb-tur-add');
   // En turmatch utan eget krav (testet har redan lagt krav på några matcher)
   const freeNrs: string[] = [];
-  // Match 8 (rad 7) har nyss haft ett krav bara i C – dess omfattning ligger kvar, så den räknas inte som fri
-  const used = await rows.nth(7).getAttribute('data-ev');
   for (const nr of await turAdd.evaluateAll((els) => els.map((x) => x.getAttribute('data-ev') || ''))) {
-    if (nr !== used && !(await page.locator(`.sb-row[data-ev="${nr}"] .sb-sign.on`).count())) freeNrs.push(nr);
+    if (!(await page.locator(`.sb-row[data-ev="${nr}"] .sb-sign.on`).count())) freeNrs.push(nr);
   }
   if (freeNrs.length) {
     const nr = freeNrs[0];
@@ -190,7 +176,7 @@ test('Europatipset har samma sida via /europatipset', async ({ page }) => {
   await expect(page).toHaveURL(base + '/europatipset');
   await expect(page.locator('#stryktips-view h2')).toContainText('Europatipset', { timeout: 30_000 });
   await expect(page.locator('.sb-row')).toHaveCount(13, { timeout: 300_000 });
-  await expect(page.locator('.sb-coupon')).toHaveCount(5, { timeout: 300_000 }); // A, B, C, D och E
+  await expect(page.locator('.sb-coupon')).toHaveCount(5, { timeout: 300_000 }); // A, B, D, E och F (C är dold)
   await expect(page.locator('.view-tab.active')).toHaveAttribute('data-view', 'europatipset');
   // Krav bara i A (1X på sista matchen): B väljer aldrig exakt samma tecken där
   await page.evaluate(() => localStorage.clear());
