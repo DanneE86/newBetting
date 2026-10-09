@@ -1167,8 +1167,8 @@ export function kravSigns(k) {
  * Genererar kupong A–F för en omgång.
  * krav: { [eventNumber]: { signs: "1" | "1X" | ..., scope: "both" | "A" | "B" | "C" | "D" | "E" | "F" | "all" } }
  * "both" = A och B, "all" = alla sex.
- * D = de 500 troligaste raderna med minst 30 000 kr för 13 rätt (egna rader, buildCouponD).
- * E = komplement till D (2026-10-07): de 500 nästa raderna (≥ 30 000 kr) som inte finns i D, med extra vikt på
+ * D = de opts.rowsD (standard 1050) troligaste raderna med minst 30 000 kr för 13 rätt (egna rader, buildCouponD).
+ * E = komplement till D (2026-10-07): de opts.rowsE (standard 500) nästa raderna (≥ 30 000 kr) som inte finns i D, med extra vikt på
  *     tecken D saknar i någon match – samma filformat (Egna rader).
  * F = värdemodell 1050 kr (2026-10-08): andelar p_odds/√folk, 1050 egna rader samplade efter andelarna (Egna rader).
  *     Fristående från D och E (ingen overlap-logik, inget utdelningsgolv).
@@ -1206,9 +1206,11 @@ export function generateCoupons(p, krav, opts = {}) {
   };
   // D/E hör ihop; F byggs alltid separat (fristående värdemodell, påverkar inte D/E)
   const buildDEF = () => {
-    const D = buildCouponD(p, events, forcedFor("D"), base);
-    if (D) D.gc = buildCouponDGC(p, events, D.picks.map((x) => [...x.signs].map((s) => SIGNS.indexOf(s))), base);
-    const E = buildCouponE(p, events, forcedFor("E"), base, D);
+    const rowsD = clampDeRows(opts.rowsD, D_RULES.rows);
+    const rowsE = clampDeRows(opts.rowsE, E_RULES.rows);
+    const D = buildCouponD(p, events, forcedFor("D"), base, { rows: rowsD });
+    if (D) D.gc = buildCouponDGC(p, events, D.picks.map((x) => [...x.signs].map((s) => SIGNS.indexOf(s))), base, { rows: dgcRowWindow(rowsD) });
+    const E = buildCouponE(p, events, forcedFor("E"), base, D, { rows: rowsE });
     const F = buildCouponF(p, events, forcedFor("F"), base);
     let unionDE = D ? D.hitAll : 0;
     if (E) unionDE += E.hitAll;
@@ -1253,8 +1255,15 @@ export function generateCoupons(p, krav, opts = {}) {
 // ---------- Kupong D / E: egna rader med 13 rätt över 30 000 kr (användaren 2026-10-07) ----------
 // D: de D_RULES.rows troligaste raderna. E: komplement – nästa E_RULES.rows som inte finns i D, med bonus för tecken
 // D saknar. Spelas som fil i Svenska Spels "Egna rader". Bara krav på D/E eller Alla gäller.
-export const D_RULES = { rows: 500, payoutMin: 30000 };
+export const D_RULES = { rows: 1050, payoutMin: 30000 };
 export const E_RULES = { rows: 500, payoutMin: 30000, gapBonus: 2.5 }; // gapBonus: varje tecken D saknar multiplicerar radens sorteringsvikt
+/** Egen summa i webben (1 kr/rad). Standard är D_RULES.rows / E_RULES.rows. */
+export const DE_BUDGET = { min: 1, max: 10000 };
+export function clampDeRows(n, fallback = D_RULES.rows) {
+  const x = Math.round(Number(n));
+  if (!Number.isFinite(x)) return fallback;
+  return Math.max(DE_BUDGET.min, Math.min(DE_BUDGET.max, x));
+}
 // "Kan falla" på D/E (användaren 2026-10-07): spika inte favoriten – fördela raderna t.ex. 33/33/33 (eller egna andelar).
 export const DE_FALL = { defaultShares: [1 / 3, 1 / 3, 1 / 3], poolFactor: 8, poolMin: 1500 };
 
@@ -1582,7 +1591,7 @@ export function buildCouponE(p, events, forced, base, D, { rows: N = E_RULES.row
   } else if (gapN) {
     out.relaxed = [...(out.relaxed || []), `kompletterar D: alla ${gapN} saknade tecken finns i E`];
   } else {
-    out.relaxed = [...(out.relaxed || []), "kompletterar D: nästa 500 rader (D hade redan alla tecken)"];
+    out.relaxed = [...(out.relaxed || []), `kompletterar D: nästa ${N} rader (D hade redan alla tecken)`];
   }
   const nFall = fallPlan.filter(Boolean).length;
   if (nFall) out.relaxed = [...(out.relaxed || []), `kan falla: ${nFall} matcher fördelade (egna E-%) i stället för spik`];
@@ -1736,6 +1745,13 @@ export function buildCouponF(p, events, forced, base, {
 // den kombination med högst chans till 13 rätt som ger D_GC.rows rader. Raderna räknas med GC:s formel, så länken ger samma rader.
 // splits = kvantiler bland de färgade tecknens kostnad där grön/gul, gul/röd och röd/rosa skiljs. De 14 som valdes oftast
 // av 53 på varannan Stryktipsomgång; på andra halvan (84 omg) gav de 79,9 % av den exakta D:ns chans mot 75,0 % med 7 jämna.
+/** Gambling Cabin-fönster för D: 90–100 % av filens rader (450–500 när D är 500 kr). */
+export function dgcRowWindow(n) {
+  const max = clampDeRows(n, D_RULES.rows);
+  if (max === D_GC.rows.max && D_GC.rows.min === 450) return D_GC.rows;
+  const min = Math.max(DE_BUDGET.min, Math.round(max * 0.9));
+  return { min: Math.min(min, max), max };
+}
 export const D_GC = {
   rows: { min: 450, max: 500 },
   levels: [30000, 35000, 40000, 45000, 50000, 60000, 75000, 100000],

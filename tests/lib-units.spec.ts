@@ -1501,7 +1501,7 @@ test.describe('referee-streaks: FotMob, straffar och alla ligor', () => {
 
 // ---------- gui/public/stryk-engine.js (webbens kupongmotor) ----------
 
-test.describe('stryk-engine: kupong D (500 egna rader, minst 30 000 kr)', () => {
+test.describe('stryk-engine: kupong D (1050 egna rader, minst 30 000 kr)', () => {
   const engine = () => import(pathToFileURL(path.join(ROOT, 'gui', 'public', 'stryk-engine.js')).href);
   // Fast omgång: 13 matcher med olika favoriter och folk som överstreckar favoriten
   const events = Array.from({ length: 13 }, (_, i) => {
@@ -1523,17 +1523,38 @@ test.describe('stryk-engine: kupong D (500 egna rader, minst 30 000 kr)', () => 
     return out.filter((r) => r.pay >= 30000).sort((a, b) => b.p - a.p);
   };
 
-  test('exakt de 500 troligaste raderna med minst 30 000 kr, i chansordning', async () => {
+  test('exakt de 1050 troligaste raderna med minst 30 000 kr, i chansordning', async () => {
     const { buildCouponD } = await engine();
     const forced = events.map(() => null);
     const D = buildCouponD({ product: 'stryktipset' }, events, forced, base);
-    const ref = all(forced).slice(0, 500);
-    expect(D.rows).toBe(500);
-    expect(D.cost).toBe(500);
+    const ref = all(forced).slice(0, 1050);
+    expect(D.rows).toBe(1050);
+    expect(D.cost).toBe(1050);
     expect(new Set(D.rowList)).toEqual(new Set(ref.map((r) => r.row)));
     expect(D.rowP.every((p: number, i: number) => i === 0 || D.rowP[i - 1] >= p)).toBe(true);
     expect(D.minPayout).toBeGreaterThanOrEqual(30000);
     expect(D.hitAll).toBeCloseTo(ref.reduce((s, r) => s + r.p, 0), 12);
+  });
+
+  test('egen summa: rowsD och rowsE styr antal rader, E överlappar inte D', async () => {
+    const { generateCoupons, dgcRowWindow } = await engine();
+    expect(dgcRowWindow(500)).toEqual({ min: 450, max: 500 });
+    expect(dgcRowWindow(200)).toEqual({ min: 180, max: 200 });
+    const p = {
+      product: 'stryktipset',
+      drawNumber: 1,
+      events: events.map((e, i) => ({ ...e, eventNumber: i + 1 })),
+      reduced: { rowPrice: 1, rules: { turnover: 25e6, realTurnover: 20e6, jackpot: 0 } },
+    };
+    const r = generateCoupons(p, {}, { onlyDE: true, rowsD: 40, rowsE: 60 });
+    expect(r.D.rows).toBe(40);
+    expect(r.D.cost).toBe(40);
+    expect(r.E.rows).toBe(60);
+    expect(r.E.cost).toBe(60);
+    const dSet = new Set(r.D.rowList);
+    expect(r.E.rowList.every((row: string) => !dSet.has(row))).toBe(true);
+    expect(r.D.minPayout).toBeGreaterThanOrEqual(30000);
+    expect(r.E.minPayout).toBeGreaterThanOrEqual(30000);
   });
 
   test('D i Gambling Cabin: länken ger exakt kupongens rader (450–500), aldrig tak 0', async () => {
