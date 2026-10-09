@@ -652,15 +652,56 @@ test.describe('loppets förstapris', () => {
     expect(lacksExtras(old)).toBe(false);
   });
 
-  test('streckSnapshot: streck och vinnarodds per lopp och häst, strukna utanför', async () => {
+  test('streckSnapshot: streck, vinnarodds och platsodds per lopp och häst, strukna utanför', async () => {
     const { streckSnapshot } = await model();
     const g: any = { id: 'V85_2026-10-03_5_1', type: 'V85', pools: { V85: { turnover: 500000000 } }, races: [race(1, [start(1, { streck: 4520, odds: 250 }), start(2, { streck: 300 }), start(3, { scratched: true, streck: 0 })])] };
+    g.races[0].starts[0].pools.plats = { minOdds: 120, maxOdds: 140 };
     const snap = streckSnapshot(g, '2026-10-03T08:00:00Z');
     expect(snap.at).toBe('2026-10-03T08:00:00Z');
     expect(snap.turnover).toBe(5000000);
-    expect(snap.races['2026-10-03_5_1']).toEqual({ 1: [0.452, 2.5], 2: [0.03, null] });
+    expect(snap.races['2026-10-03_5_1']).toEqual({ 1: [0.452, 2.5, 1.2], 2: [0.03, null, null] });
   });
 
+});
+
+test.describe('hast-lopp: fältets resultat i tidigare lopp', () => {
+  const lopp = () => import(pathToFileURL(path.join(ROOT, 'scripts', 'lib', 'hast-lopp.mjs')).href);
+  const km = (s: number, t = 0) => ({ minutes: 1, seconds: s, tenths: t });
+  const atgRace: any = {
+    id: '2026-09-16_7_7', date: '2026-09-16', distance: 1640, startMethod: 'auto', track: { name: 'Jägersro' },
+    starts: [
+      { number: 1, horse: { id: 11, name: 'Etta' }, result: { place: 1, finishOrder: 1, kmTime: km(10, 9), finalOdds: 5.29 } },
+      { number: 2, horse: { id: 12, name: 'Tvåa' }, result: { place: 2, finishOrder: 2, kmTime: km(11, 0), finalOdds: 3.09 } },
+      { number: 3, horse: { id: 13, name: 'Galopp' }, result: { place: 0, finishOrder: 6, kmTime: km(14, 0), galloped: true, finalOdds: 9 } },
+      { number: 4, horse: { id: 14, name: 'Diskad' }, result: { finishOrder: 41, kmTime: { code: 'u' }, galloped: true, disqualified: true, finalOdds: 20 } },
+      { number: 5, horse: { id: 15, name: 'Struken' }, result: { finishOrder: 55, finalOdds: 0 } },
+    ],
+  };
+
+  test('compactRace + fieldInfo: meter efter vinnaren, vinnaren minus avståndet till tvåan, strukna utanför', async () => {
+    const { compactRace, fieldInfo } = await lopp();
+    const c = compactRace(atgRace);
+    expect(c.starts.length).toBe(4);
+    // 0,1 s/km × 1 640 m / 70,9 s/km ≈ 2,3 m
+    expect(fieldInfo(c, 12, null)).toMatchObject({ efter: 2.3, falt: 4, galopp: 0 });
+    expect(fieldInfo(c, 11, null)!.efter).toBe(-2.3);
+    expect(fieldInfo(c, 13, null)!.galopp).toBe(1);
+    expect(fieldInfo(c, 14, null)).toMatchObject({ efter: null, motFalt: null, galopp: 1 });
+    expect(fieldInfo(c, null, 'Tvåa (SE)')!.efter).toBe(2.3);
+    expect(fieldInfo(c, 99, 'Okänd')).toBeNull();
+  });
+
+  test('attachFieldInfo: datum + bana hittar loppet utan lopp-id, lopp-id går före', async () => {
+    const { compactRace, indexRaces, attachFieldInfo } = await lopp();
+    const c = compactRace(atgRace);
+    const game: any = { races: [{ starts: [{ horseId: 12, horse: 'Tvåa', records: [{ date: '2026-09-16', track: 'Jägersro' }, { date: '2026-08-01', track: 'Åby' }] }] }] };
+    expect(attachFieldInfo([game], indexRaces([c]))).toBe(1);
+    expect(game.races[0].starts[0].records[0]).toMatchObject({ efter: 2.3, falt: 4 });
+    expect(game.races[0].starts[0].records[1].efter).toBeUndefined();
+    const live: any = { races: [{ starts: [{ horseId: 11, horse: 'Etta', records: [{ date: '2026-09-16', track: 'Annan', raceId: c.id }] }] }] };
+    expect(attachFieldInfo([live], new Map(), { byId: new Map([[c.id, c]]) })).toBe(1);
+    expect(live.races[0].starts[0].records[0].efter).toBe(-2.3);
+  });
 });
 
 test.describe('trav-features: inlärning', () => {
