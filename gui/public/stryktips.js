@@ -742,6 +742,7 @@ const SCOPE_TITLE = {
 };
 const DE_FALL_DEFAULT = [33, 33, 34]; // 33+33+34 = 100 (egna siffror går att ändra)
 const DE_SYS = ["D", "E", "F"];
+let deFileNote = "";
 const DE_BUDGET_KEY = "betting.deBudget";
 /** Summa för D och E (1 kr/rad). Sparas i webbläsaren och gäller båda spelen. */
 let deBudget = { D: 1050, E: 500 };
@@ -819,9 +820,66 @@ function loadDeFallMap(p, keyFn) {
   }
   return out;
 }
+// Denna omgång, från bilderna 2026-10-09. D tvingas till bildens rad. Sparad E/F behålls.
+const PICTURE_D = {
+  "stryktipset:4974": {
+    1: [35, 50, 15],
+    2: [50, 25, 25],
+    3: [40, 4, 56],
+    4: [0, 0, 100],
+    5: [45, 15, 40],
+    6: [28, 5, 67],
+    7: [46, 11, 43],
+    8: [0, 0, 100],
+    9: [31, 4, 65],
+    10: [0, 40, 60],
+    11: [70, 15, 15],
+    12: [20, 0, 80],
+    13: [40, 30, 30],
+  },
+};
+const PICTURE_EF = {
+  "stryktipset:4974": {
+    1: { E: [38, 47, 15], F: [38, 30, 32] },
+    2: { E: [0, 100, 0], F: [41, 31, 28] },
+    3: { E: [49, 0, 51], F: [42, 30, 28] },
+    4: { E: [0, 0, 100], F: [30, 29, 41] },
+    5: { E: [48, 0, 52], F: [42, 28, 30] },
+    6: { E: [47, 0, 53], F: [38, 31, 31] },
+    7: { E: [43, 16, 41], F: [30, 29, 41] },
+    8: { E: [0, 0, 100], F: [0, 0, 100] },
+    9: { E: [41, 0, 59], F: [38, 31, 31] },
+    10: { E: [54, 0, 46], F: [30, 30, 40] },
+    11: { E: [100, 0, 0], F: [38, 32, 30] },
+    12: { E: [7, 0, 93], F: [38, 31, 31] },
+    13: { E: [0, 61, 39], F: [41, 30, 29] },
+  },
+};
+function applyPictureD(p, deFall) {
+  const key = `${p.product}:${p.drawNumber}`;
+  const dMap = PICTURE_D[key];
+  if (!dMap) return deFall;
+  const ef = PICTURE_EF[key] || {};
+  for (const [nr, D] of Object.entries(dMap)) {
+    const n = Number(nr);
+    const prev = normalizeDeFallPair(deFall[n] || deFall[nr]);
+    const extra = ef[n] || ef[nr] || {};
+    deFall[n] = {
+      D: D.map(clampShare),
+      E: prev?.E || (extra.E || D).map(clampShare),
+      F: prev?.F || (extra.F || D).map(clampShare),
+    };
+  }
+  return deFall;
+}
 function loadDeFall(p) {
   // Av är default på alla matcher – bara sparade På-val räknas (ingen auto-På för "kan falla").
-  return loadDeFallMap(p, deFallKey);
+  // Denna omgång: D-raden är bildernas procent.
+  const deFall = applyPictureD(p, loadDeFallMap(p, deFallKey));
+  if (PICTURE_D[`${p.product}:${p.drawNumber}`]) {
+    try { localStorage.setItem(deFallKey(p), JSON.stringify(deFall)); } catch { /* privat */ }
+  }
+  return deFall;
 }
 function loadDeFallPrev(p) {
   return loadDeFallMap(p, deFallPrevKey);
@@ -937,7 +995,7 @@ function deFallRow(e, shares, matchIndex, res, busy) {
     </div>
     ${on
       ? `${deFallEditLine("D", pair.D)}${deFallEditLine("E", pair.E)}${deFallEditLine("F", pair.F)}
-    <small class="sb-defall-hint${allOk ? "" : " is-bad"}">${allOk ? "Generera om för att tillämpa" : "Rätta varje rad (D, E och F) till 100 % innan du genererar"}</small>`
+    <small class="sb-defall-hint${allOk ? "" : " is-bad"}">${allOk ? esc(deFileNote || "Ändra D så skapas en ny fil") : "Rätta varje rad (D, E och F) till 100 % innan du genererar"}</small>`
       : `${deFallCouponLine("D", dDist, busy)}${deFallCouponLine("E", eDist, busy)}${deFallCouponLine("F", fDist, busy)}
     <small class="sb-defall-hint">Slå På för att redigera – startar med % som visas ovan</small>`}
   </div>`;
@@ -1136,6 +1194,14 @@ function couponTable(p, res) {
     const cls = (x.signs.length === 1 ? "spik" : x.signs.length === 2 ? "halv" : "hel") + (blue ? " blue" : "");
     return `<td><span class="st-tip ${cls}${x.locked ? " mine" : ""}" title="${x.locked ? "Ditt krav" : blue ? `${esc(x.type)} · blå, räknas inte i färgreglerna` : esc(x.type)}">${x.locked ? "🔒 " : ""}${esc(x.signs.split("").join(" + "))}</span>${sysMissMark(sysMiss(p.events[i], x.signs, sys), sys)}${sys === "A" ? "" : riskMark(riskTipped(p.events[i], x.signs), sys)}${fallMark(p.events[i], x.signs, sys)}</td>`;
   };
+  // D/E/F: visa radfördelningen (1/X/2 %), inte bara vilka tecken som förekommer.
+  const distCell = (c, i) => {
+    const dist = egnaDistForMatch(c, i);
+    if (!dist) return "<td>—</td>";
+    const txt = SIGNS.map((s, k) => `${s} ${dist.pct[k]}%`).join(" · ");
+    const title = SIGNS.map((s, k) => `${dist.cnt[k]} av ${dist.n} rader på ${s}`).join(", ");
+    return `<td><span class="st-tip hel" title="${esc(title)}">${esc(txt)}</span></td>`;
+  };
   const turCell = (e, i) => {
     const t = turInfo(e, res.A?.picks[i]?.signs);
     return t?.tur ? `<td><button type="button" class="st-chip tur tur-btn" data-ev="${e.eventNumber}" data-scroll="1">🍀 ${pct(t.rate)} · varför?</button></td>` : "<td></td>";
@@ -1160,7 +1226,7 @@ function couponTable(p, res) {
     : "";
   return `${legend}${riskLegend}${fallLegend}<div class="st-bt-wrap"><table class="sb-table ds-table">
     <thead><tr><th>#</th><th>Match</th><th>Kupong A</th><th>Kupong B</th><th>Kupong D</th><th>Kupong E</th><th>Kupong F</th><th>Tur (A)</th></tr></thead>
-    <tbody>${p.events.map((e, i) => `<tr><td>${e.eventNumber}</td><th>${esc(e.home)} – ${esc(e.away)}</th>${cell(res.A, i, "A")}${cell(res.B, i, "B")}${cell(res.D, i, "D")}${cell(res.E, i, "E")}${cell(res.F, i, "F")}${turCell(e, i)}</tr>`).join("")}</tbody>
+    <tbody>${p.events.map((e, i) => `<tr><td>${e.eventNumber}</td><th>${esc(e.home)} – ${esc(e.away)}</th>${cell(res.A, i, "A")}${cell(res.B, i, "B")}${distCell(res.D, i)}${distCell(res.E, i)}${distCell(res.F, i)}${turCell(e, i)}</tr>`).join("")}</tbody>
   </table></div>`;
 }
 
@@ -1192,19 +1258,26 @@ function variantNote() {
 
 // Kupongerna räknas i en bakgrundstråd (stryk-worker.js), en per spel. En ny generering avbryter den som pågår.
 const workers = new Map();
+const engineJob = new Map();
 const kravCacheKey = (krav) => JSON.stringify(krav || {});
-function runEngine(p, krav, { onlyDE = false, rowsD, rowsE } = {}) {
+function runEngine(p, krav, { onlyDE = false, onlyD = false, rowsD, rowsE } = {}) {
   if (typeof Worker === "undefined") {
-    return Promise.resolve().then(() => generateCoupons(p, krav, { onlyDE, rowsD, rowsE }));
+    return Promise.resolve().then(() => generateCoupons(p, krav, { onlyDE, onlyD, rowsD, rowsE }));
   }
+  engineJob.get(p.product)?.(new Error("avbruten"));
   workers.get(p.product)?.terminate();
   const w = new Worker(`/stryk-worker.js${location.search}`, { type: "module" });
   workers.set(p.product, w);
-  return new Promise((resolve, reject) => {
+  let rejectJob;
+  const done = new Promise((resolve, reject) => {
+    rejectJob = reject;
+    engineJob.set(p.product, reject);
     w.onmessage = ({ data: d }) => (d.error ? reject(new Error(d.error)) : resolve(d.result));
     w.onerror = (e) => { e.preventDefault?.(); reject(new Error(e.message || "bakgrundstråden stannade")); };
-    w.postMessage({ p, krav, onlyDE, rowsD, rowsE });
-  }).finally(() => {
+    w.postMessage({ p, krav, onlyDE, onlyD, rowsD, rowsE });
+  });
+  return done.finally(() => {
+    if (engineJob.get(p.product) === rejectJob) engineJob.delete(p.product);
     w.terminate();
     if (workers.get(p.product) === w) workers.delete(p.product);
   });
@@ -1319,6 +1392,7 @@ function renderB(p, head, top = "", extras = "") {
     liveGenerate(p, st).finally(() => {
       st.busy = false;
       render();
+      flushPendingFile(p, st);
     });
   }
   // /stryktipset/backtest: öppna statistiken en gång (därefter styr användaren)
@@ -1480,6 +1554,7 @@ function handleB(ev) {
       st.busy = false;
       st.dirty = deBudget.D !== st.genRowsD || deBudget.E !== st.genRowsE;
       render();
+      flushPendingFile(p, st);
       view.querySelector(".sb-result")?.scrollIntoView({ block: "start", behavior: "smooth" });
     });
     return true;
@@ -1530,6 +1605,7 @@ function applyDeFallInput(inp, { save }) {
   pair[sys] = cur;
   st.deFall[nr] = pair;
   st.dirty = true;
+  if (sys === "D") deFileNote = "";
   const chk = deFallSumMsg(cur);
   const edit = box?.querySelector(`.sb-defall-edit[data-defall-sys="${sys}"]`);
   const sumEl = edit?.querySelector("[data-defall-sum]");
@@ -1541,12 +1617,73 @@ function applyDeFallInput(inp, { save }) {
   }
   const allOk = DE_SYS.every((s) => deFallSumMsg(pair[s]).ok);
   if (hint) {
-    hint.textContent = allOk ? "Generera om för att tillämpa" : "Rätta varje rad (D, E och F) till 100 % innan du genererar";
+    hint.textContent = allOk ? "Ändra D så skapas en ny fil" : "Rätta varje rad (D, E och F) till 100 % innan du genererar";
     hint.classList.toggle("is-bad", !allOk);
   }
   const bar = view.querySelector(".sb-actionbar");
   bar?.classList.add("is-dirty");
-  if (save) saveKrav(p, st);
+  if (save) {
+    saveKrav(p, st);
+    if (sys === "D" && deFallSumMsg(pair.D).ok && dRowsOk(st)) scheduleDeFile(p, st);
+  }
+}
+function dRowsOk(st) {
+  return Object.values(st.deFall || {}).every((raw) => {
+    const pair = normalizeDeFallPair(raw);
+    return !pair || deFallSumMsg(pair.D).ok;
+  });
+}
+function deFileHints() {
+  return [...view.querySelectorAll(".sb-defall.is-on .sb-defall-hint")];
+}
+function patchCouponFile(label, c) {
+  if (!c?.egnaRader) return;
+  const card = [...view.querySelectorAll(".sb-coupon")].find((el) => new RegExp(`Kupong ${label}\\b`).test(el.querySelector("h3")?.textContent || ""));
+  const link = card?.querySelector("a[download]");
+  if (link) link.href = `data:text/plain;charset=utf-8,${encodeURIComponent(c.egnaRader)}`;
+}
+/** Ny D-fil när D-% ändras. Bygger bara D, så A–C och sidan inte ritas om. */
+function scheduleDeFile(p, st) {
+  clearTimeout(st.fileTimer);
+  st.fileTimer = setTimeout(() => {
+    if (st.busy || !st.result?.D) { st.pendingFile = true; return; }
+    refreshDeFile(p, st);
+  }, 400);
+}
+async function refreshDeFile(p, st) {
+  const run = (st.fileRun = (st.fileRun || 0) + 1);
+  for (const h of deFileHints()) h.textContent = "Skapar ny D-fil…";
+  try {
+    p.deFallShares = deFallForEngine(st);
+    const result = await runEngine(p, st.krav, { onlyD: true, rowsD: deBudget.D, rowsE: deBudget.E });
+    if (run !== st.fileRun) return;
+    if (result?.D && st.result) {
+      const prevGc = st.result.D?.gc;
+      st.result.D = result.D;
+      if (!st.result.D.gc && prevGc) st.result.D.gc = prevGc;
+      st.dirty = false;
+      deFileNote = "Ny D-fil är klar – ladda ner den under Kupong D";
+      const y = window.scrollY;
+      render();
+      window.scrollTo(0, y);
+      return;
+    }
+    for (const h of deFileHints()) {
+      h.textContent = "D-filen kunde inte skapas";
+      h.classList.add("is-bad");
+    }
+  } catch (e) {
+    if (run !== st.fileRun || e?.message === "avbruten") return;
+    for (const h of deFileHints()) {
+      h.textContent = "D-filen kunde inte skapas";
+      h.classList.add("is-bad");
+    }
+  }
+}
+function flushPendingFile(p, st) {
+  if (!st.pendingFile) return;
+  st.pendingFile = false;
+  scheduleDeFile(p, st);
 }
 function syncDeBudgetFromDom() {
   for (const sys of ["D", "E"]) {
