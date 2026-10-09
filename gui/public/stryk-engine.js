@@ -1205,6 +1205,9 @@ export function generateCoupons(p, krav, opts = {}) {
     spikMin: SPIK_MIN_BY_PRODUCT[p.product] ?? 0,
   };
   // D/E hör ihop; F byggs alltid separat (fristående värdemodell, påverkar inte D/E)
+  const buildD = () => buildCouponD(p, events, forcedFor("D"), base, { rows: clampDeRows(opts.rowsD, D_RULES.rows) });
+  // Bara D-filen (när användaren ändrat D-%). E/F och Gambling Cabin rörs inte.
+  if (opts.onlyD) return { D: buildD() };
   const buildDEF = () => {
     const rowsD = clampDeRows(opts.rowsD, D_RULES.rows);
     const rowsE = clampDeRows(opts.rowsE, E_RULES.rows);
@@ -1515,32 +1518,192 @@ function rebalanceFromPool(picked, poolRows, { mi, shares, forced, payoutMin }) 
 }
 
 /**
- * Välj N rader. När fallPlan[i] finns fördelas raderna efter andelarna på den matchen.
- * Första matchen stratifieras exakt (3 sökningar); övriga justeras från en gemensam pool (1 sökning)
- * i stället för en sökning per radbyte.
+ * N rader där varje match med fallPlan får exakt de andelarna (byte mellan två rader behåller kvoterna).
+ * En gemensam pool räckte inte: senare matcher kom aldrig ner i filen.
+ */
+function selectByQuotas(events, forced, base, { rows: N, payoutMin, exclude = null, score = (pr) => pr, fallPlan }) {
+  const n = events.length;
+  const P = events.map((e) => e.final);
+  const Folk = events.map((e) => [0, 1, 2].map((k) => e.folk?.[k] ?? e.final[k]));
+  const RT = base.realTurnover || base.turnover || 1e7;
+  const J = base.jackpot || 0;
+  const pot = PAYOUT_13 * RT + J;
+  const fMax = payoutMin > 0 ? (pot / payoutMin - 1) / RT : Infinity;
+  const allowed = events.map((_, i) => {
+    const baseA = forced[i]?.length ? forced[i] : [0, 1, 2];
+    const sh = fallPlan?.[i];
+    if (!sh) return baseA.slice();
+    const pos = baseA.filter((k) => Number(sh[k]) > 0);
+    return pos.length ? pos : baseA.slice();
+  });
+  const quota = events.map((_, i) => (fallPlan?.[i] ? fallShareTargets(N, fallPlan[i], allowed[i]) : null));
+  const sign = Array.from({ length: N }, () => new Array(n));
+  const rnd0 = mulberry32((N * 17 + n * 13) >>> 0);
+  const freeIdx = [];
+  for (let i = 0; i < n; i++) {
+    if (!quota[i]) { freeIdx.push(i); continue; }
+    const col = [];
+    for (let k = 0; k < 3; k++) for (let t = 0; t < quota[i][k]; t++) col.push(k);
+    for (let j = col.length - 1; j > 0; j--) {
+      const s = Math.floor(rnd0() * (j + 1));
+      [col[j], col[s]] = [col[s], col[j]];
+    }
+    for (let j = 0; j < N; j++) sign[j][i] = col[j];
+  }
+  const fAt = (j) => {
+    let f = 1;
+    for (let i = 0; i < n; i++) f *= Folk[i][sign[j][i]];
+    return f;
+  };
+  const codeAt = (j) => {
+    let c = 0;
+    for (let i = 0; i < n; i++) c = c * 3 + sign[j][i];
+    return c;
+  };
+  const pAt = (j) => {
+    let pr = 1;
+    for (let i = 0; i < n; i++) pr *= P[i][sign[j][i]];
+    return pr;
+  };
+  for (let j = 0; j < N; j++) {
+    let f = 1;
+    for (let i = 0; i < n; i++) if (quota[i]) f *= Folk[i][sign[j][i]];
+    for (let t = 0; t < freeIdx.length; t++) {
+      const i = freeIdx[t];
+      const last = t === freeIdx.length - 1;
+      let best = allowed[i][0], bestS = -Infinity;
+      for (const k of allowed[i]) {
+        const nf = f * Folk[i][k];
+        const fits = !last || nf <= fMax;
+        const s = (fits ? 1e6 : 0) + P[i][k] * 100 - Folk[i][k];
+        if (s > bestS) { bestS = s; best = k; }
+      }
+      sign[j][i] = best;
+      f *= Folk[i][best];
+    }
+  }
+  const used = new Set(exclude || []);
+  for (let j = 0; j < N; j++) {
+    let guard = 0;
+    while (guard < 40 && used.has(codeAt(j))) {
+      guard++;
+      if (freeIdx.length) {
+        const i = freeIdx[guard % freeIdx.length];
+        const opts = allowed[i];
+        sign[j][i] = opts[(opts.indexOf(sign[j][i]) + guard) % opts.length];
+      } else if (N > 1) {
+        const i = guard % n;
+        const o = (j + guard) % N;
+        if (o !== j) { const tmp = sign[j][i]; sign[j][i] = sign[o][i]; sign[o][i] = tmp; }
+      } else break;
+    }
+    used.add(codeAt(j));
+  }
+  const swapOk = (j, o) => {
+    const cj = codeAt(j), co = codeAt(o);
+    if (cj === co || used.has(cj) || used.has(co)) return false;
+    return fAt(j) <= fMax && fAt(o) <= fMax;
+  };
+  for (let pass = 0; pass < 3; pass++) {
+    let progress = false;
+    for (let j = 0; j < N; j++) {
+      if (fAt(j) <= fMax) continue;
+      let fixed = false;
+      for (const i of freeIdx) {
+        for (const k of allowed[i].slice().sort((a, b) => Folk[i][a] - Folk[i][b])) {
+          if (k === sign[j][i]) continue;
+          const prev = sign[j][i], old = codeAt(j);
+          used.delete(old);
+          sign[j][i] = k;
+          if (fAt(j) <= fMax && !used.has(codeAt(j))) { used.add(codeAt(j)); fixed = true; progress = true; break; }
+          sign[j][i] = prev;
+          used.add(old);
+        }
+        if (fixed) break;
+      }
+      if (fixed) continue;
+      const step = Math.max(1, Math.floor(N / 20));
+      for (let i = 0; i < n && !fixed; i++) {
+        for (let t = 0, o = (j + step) % N; t < 20 && !fixed; t++, o = (o + step) % N) {
+          if (o === j || sign[o][i] === sign[j][i]) continue;
+          if (Folk[i][sign[o][i]] >= Folk[i][sign[j][i]]) continue;
+          const a = sign[j][i], b = sign[o][i];
+          const cj0 = codeAt(j), co0 = codeAt(o);
+          used.delete(cj0); used.delete(co0);
+          sign[j][i] = b; sign[o][i] = a;
+          if (swapOk(j, o)) { used.add(codeAt(j)); used.add(codeAt(o)); fixed = true; progress = true; }
+          else { sign[j][i] = a; sign[o][i] = b; used.add(cj0); used.add(co0); }
+        }
+      }
+    }
+    if (!progress) break;
+  }
+  const rnd = mulberry32((N * 91 + 7) >>> 0);
+  for (let t = 0; t < 2000; t++) {
+    const j = Math.floor(rnd() * N), o = Math.floor(rnd() * N);
+    if (j === o) continue;
+    const i = Math.floor(rnd() * n);
+    if (sign[j][i] === sign[o][i]) continue;
+    const before = score(pAt(j), codeAt(j)) + score(pAt(o), codeAt(o));
+    const fj = fAt(j), fo = fAt(o);
+    const a = sign[j][i], b = sign[o][i];
+    const cj0 = codeAt(j), co0 = codeAt(o);
+    used.delete(cj0); used.delete(co0);
+    sign[j][i] = b; sign[o][i] = a;
+    const after = score(pAt(j), codeAt(j)) + score(pAt(o), codeAt(o));
+    const payOk = fAt(j) <= fMax && fAt(o) <= fMax;
+    const wasBad = fj > fMax || fo > fMax;
+    if (payOk && !used.has(codeAt(j)) && !used.has(codeAt(o)) && (after > before || wasBad)) {
+      used.add(codeAt(j)); used.add(codeAt(o));
+    } else {
+      sign[j][i] = a; sign[o][i] = b;
+      used.add(cj0); used.add(co0);
+    }
+  }
+  {
+    // Fria matcher som alla får samma tecken ger dubbletter. Byt dem till en unik kombination.
+    const seen = new Set(exclude || []);
+    const vary = freeIdx.filter((i) => allowed[i].length > 1);
+    for (let j = 0; j < N; j++) {
+      let guard = 0;
+      while (seen.has(codeAt(j)) && vary.length && guard++ < 64) {
+        let x = (j + 1) * 997 + guard * 131;
+        for (const i of vary) {
+          const opts = allowed[i];
+          sign[j][i] = opts[x % opts.length];
+          x = Math.floor(x / opts.length);
+        }
+      }
+      seen.add(codeAt(j));
+    }
+  }
+  const order = [...Array(N).keys()].sort((a, b) => pAt(b) - pAt(a) || codeAt(a) - codeAt(b));
+  const rowReal = order.map((j) => pot / (1 + RT * fAt(j)));
+  return {
+    pot, RT, J, size: N, N, payoutMin,
+    rowList: order.map((j) => sign[j].map((k) => SIGNS[k]).join("")),
+    rowP: order.map((j) => pAt(j)),
+    rowReal,
+    codes: order.map((j) => codeAt(j)),
+    fallApplied: true,
+    payoutShort: rowReal.some((x) => x + 1e-6 < payoutMin),
+  };
+}
+
+/**
+ * Välj N rader. Utan egna andelar: de troligaste med utdelningsgolv.
+ * En match med andelar: exakt stratifiering. Flera matcher: kvoter så varje matchs procent finns i filen.
  */
 function selectEgnaRows(events, forced, base, { rows: N, payoutMin, exclude = null, score = (pr) => pr, scoreMaxFactor = 1, fallPlan = null } = {}) {
   const fallIdx = (fallPlan || []).map((s, i) => (s ? i : -1)).filter((i) => i >= 0);
   if (!fallIdx.length) return selectTopRows(events, forced, base, { rows: N, payoutMin, exclude, score, scoreMaxFactor });
-  const primary = fallIdx[0];
-  let picked = selectStratifiedOnMatch(events, forced, base, {
-    N, payoutMin, exclude, score, scoreMaxFactor, mi: primary, shares: fallPlan[primary],
-  });
-  if (!picked) return selectTopRows(events, forced, base, { rows: N, payoutMin, exclude, score, scoreMaxFactor });
-  if (fallIdx.length === 1) return picked;
-  const poolN = Math.max(DE_FALL.poolMin, N * DE_FALL.poolFactor);
-  const excl = new Set(exclude || []);
-  for (const c of picked.codes) excl.add(c);
-  const pool = selectTopRows(events, forced, base, { rows: poolN, payoutMin, exclude: excl, score, scoreMaxFactor });
-  const poolRows = pool
-    ? pool.codes.map((code, j) => ({ code, p: pool.rowP[j], real: pool.rowReal[j], row: pool.rowList[j] }))
-    : [];
-  for (const mi of fallIdx.slice(1)) {
-    picked = rebalanceFromPool(picked, poolRows, {
-      mi, shares: fallPlan[mi], forced, payoutMin,
-    }) || picked;
+  if (fallIdx.length === 1) {
+    const primary = fallIdx[0];
+    return selectStratifiedOnMatch(events, forced, base, {
+      N, payoutMin, exclude, score, scoreMaxFactor, mi: primary, shares: fallPlan[primary],
+    }) || selectTopRows(events, forced, base, { rows: N, payoutMin, exclude, score, scoreMaxFactor });
   }
-  return picked;
+  return selectByQuotas(events, forced, base, { rows: N, payoutMin, exclude, score, fallPlan });
 }
 
 export function buildCouponD(p, events, forced, base, { rows: N = D_RULES.rows, payoutMin = D_RULES.payoutMin } = {}) {
@@ -1550,6 +1713,7 @@ export function buildCouponD(p, events, forced, base, { rows: N = D_RULES.rows, 
   const out = finishEgnaRader(p, events, forced, base, picked, "D", { fallShares: fallPlan.some(Boolean) });
   const nFall = fallPlan.filter(Boolean).length;
   if (nFall) out.relaxed = [...(out.relaxed || []), `kan falla: ${nFall} matcher fördelade (egna D-%) i stället för spik`];
+  if (picked.payoutShort) out.relaxed = [...(out.relaxed || []), `några rader ger under ${payoutMin.toLocaleString("sv-SE")} kr – dina D-% gick före utdelningsgolvet`];
   return out;
 }
 

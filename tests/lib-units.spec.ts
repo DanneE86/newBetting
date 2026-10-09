@@ -1617,12 +1617,31 @@ test.describe('stryk-engine: kupong D (1050 egna rader, minst 30 000 kr)', () =>
     const D = buildCouponD({ product: 'stryktipset', deFallShares: { 1: [33, 33, 34] } }, ev, ev.map(() => null), base);
     const cnt = { 1: 0, X: 0, 2: 0 };
     for (const r of D.rowList) cnt[r[0]]++;
-    const t = fallShareTargets(500, [33, 33, 34]);
+    const t = fallShareTargets(D.rows, [33, 33, 34]);
     expect(cnt['1']).toBe(t[0]);
     expect(cnt.X).toBe(t[1]);
     expect(cnt['2']).toBe(t[2]);
     expect(D.rules.fallShares).toBe(true);
-    expect(cnt['1']).toBeLessThan(200);
+    expect(cnt['1']).toBeLessThan(D.rows * 0.4);
+  });
+
+  test('egna D-% på flera matcher slår igenom i filen', async () => {
+    const { buildCouponD, fallShareTargets } = await engine();
+    const ev = events.map((e, i) => ({ ...e, eventNumber: i + 1 }));
+    const D = buildCouponD({
+      product: 'stryktipset',
+      deFallShares: { D: { 1: [0, 0, 100], 2: [50, 25, 25], 4: [10, 20, 70] } },
+    }, ev, ev.map(() => null), base);
+    const count = (mi: number) => {
+      const c = [0, 0, 0];
+      for (const r of D.rowList) c[SIGNS.indexOf(r[mi])]++;
+      return c;
+    };
+    expect(count(0)).toEqual(fallShareTargets(D.rows, [0, 0, 100]));
+    expect(count(1)).toEqual(fallShareTargets(D.rows, [50, 25, 25]));
+    expect(count(3)).toEqual(fallShareTargets(D.rows, [10, 20, 70]));
+    expect(new Set(D.rowList).size).toBe(D.rowList.length);
+    expect(D.egnaRader.trim().split('\n')[0]).toBe('Stryktipset');
   });
 
   test('kupong E kompletterar D: 500 andra rader, ingen överlapp, samma utdelningsgolv', async () => {
