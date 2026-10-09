@@ -385,6 +385,7 @@ const ALIAS = {
   brightonhovealbion: 'Brighton', westhamunited: 'West Ham', leedsunited: 'Leeds', newcastleunited: 'Newcastle',
   atleticomadrid: 'Ath Madrid', athleticbilbao: 'Ath Bilbao', realsociedad: 'Sociedad', celtavigo: 'Celta',
   realbetis: 'Betis', rayovallecano: 'Vallecano', espanyol: 'Espanol',
+  deportivoacoruna: 'La Coruna', deportivolacoruna: 'La Coruna', deportivo: 'La Coruna',
   intermilan: 'Inter', internazionale: 'Inter', milan: 'Milan', acmilan: 'Milan', asroma: 'Roma',
   bayernmunchen: 'Bayern Munich', bayerleverkusen: 'Leverkusen', borussiadortmund: 'Dortmund',
   borussiamonchengladbach: "M'gladbach", monchengladbach: "M'gladbach", eintrachtfrankfurt: 'Ein Frankfurt',
@@ -1667,27 +1668,52 @@ function gamblingCabinUrl(productId, drawNumber, closeDate, events, sets, reduce
   return `https://reducera.gamblingcabin.se/?${q.join('&')}`;
 }
 
-// ---------- Startelvor/franvaro: samma data och logik som Oddset ----------
+// ---------- Startelvor/franvaro + tip-bas: samma data som Oddset ----------
 // Oddset (scripts/pro-layer.mjs) raknar per match: bekraftad ESPN-elva (PL/Championship, ~1 h fore avspark) eller
 // FPL-skador (PL), saknad andel av lagets anfall (xG+xA) och en anfallsfaktor med vikten alpha som Oddsets backtest
 // valjer (data/reports/pro-evaluation.json). Stryktipset laser samma rader ur data/tips-latest.json och anvander
 // samma faktor pa lagmodellens mal - alpha 0 betyder att elvan visas men inte flyttar procenten (oddsen gor det).
+// Icke-spikbara matcher: tipset (final/tip) baseras pa Oddsets marknadsstyrda blandning nar matchen finns i tips-latest.
 const TIPS_FILE = path.join(root, 'data', 'tips-latest.json');
-let oddsetRows = null;
+let oddsetAll = null;
+let oddsetLineupRows = null;
+const oddsetNorm = (x) => String(x || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]/g, '');
+const oddsetSame = (a, b) => { const x = oddsetNorm(a), y = oddsetNorm(b); return x.length > 2 && y.length > 2 && (x === y || x.includes(y) || y.includes(x)); };
+const oddsetDay = (d) => Date.parse(String(d || '').slice(0, 10));
+function loadOddsetAll() {
+  if (oddsetAll !== null) return oddsetAll;
+  try {
+    const t = JSON.parse(fs.readFileSync(TIPS_FILE, 'utf8'));
+    oddsetAll = [...(t.allCandidates || []), ...(t.bestUpcoming || [])];
+  } catch { oddsetAll = []; }
+  return oddsetAll;
+}
+/** Hitta Oddset-rad (tips-latest) for samma lag/datum/liga. */
+function findOddsetRow(leagueCode, date, ...namePairs) {
+  const rows = loadOddsetAll();
+  if (!date || !rows.length) return null;
+  const t0 = oddsetDay(date);
+  if (!Number.isFinite(t0)) return null;
+  const pairs = namePairs.filter((p) => p?.[0] && p?.[1]);
+  if (!pairs.length) return null;
+  const hit = (x) => pairs.some(([h, a]) => oddsetSame(x.home, h) && oddsetSame(x.away, a));
+  const near = rows.filter((x) => Math.abs(oddsetDay(x.date) - t0) <= 86400e3 && hit(x));
+  if (!near.length) return null;
+  if (leagueCode) {
+    const exact = near.find((x) => x.league === leagueCode);
+    if (exact) return exact;
+  }
+  return near[0];
+}
 function oddsetAvailability(leagueCode, date, homeFd, awayFd) {
-  if (oddsetRows === null) {
-    try {
-      const t = JSON.parse(fs.readFileSync(TIPS_FILE, 'utf8'));
-      oddsetRows = [...(t.allCandidates || []), ...(t.bestUpcoming || [])].filter((x) => x.pro?.availability || x.lineupStatus);
-    } catch { oddsetRows = []; }
+  if (oddsetLineupRows === null) {
+    oddsetLineupRows = loadOddsetAll().filter((x) => x.pro?.availability || x.lineupStatus);
   }
   if (!leagueCode || !date || !homeFd || !awayFd) return null;
-  const norm = (x) => String(x || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]/g, '');
-  const same = (a, b) => { const x = norm(a), y = norm(b); return x && y && (x === y || x.includes(y) || y.includes(x)); };
-  const day = (d) => Date.parse(String(d).slice(0, 10));
-  const row = oddsetRows.find((x) => x.league === leagueCode && Math.abs(day(x.date) - day(date)) <= 86400e3
-    && same(x.home, homeFd) && same(x.away, awayFd));
-  if (!row) return null;
+  const row = oddsetLineupRows.find((x) => x.league === leagueCode && Math.abs(oddsetDay(x.date) - oddsetDay(date)) <= 86400e3
+    && oddsetSame(x.home, homeFd) && oddsetSame(x.away, awayFd))
+    || findOddsetRow(leagueCode, date, [homeFd, awayFd]);
+  if (!row || !(row.pro?.availability || row.lineupStatus)) return null;
   const av = row.pro?.availability;
   const side = (x) => x && {
     source: x.source, missingShare: x.missingShare ?? 0, typicalMissing: x.typicalMissing ?? null, attackFactor: x.attackFactor ?? 1,
@@ -1698,6 +1724,38 @@ function oddsetAvailability(leagueCode, date, homeFd, awayFd) {
     status: row.lineupStatus || null, alpha: av?.alpha ?? 0, home: side(av?.home), away: side(av?.away),
     notes: [...(row.lineupNotes || []), ...(row.availabilityNotes || [])],
   };
+}
+/** Icke-spikbar match: byt tip/final till Oddsets marknadsstyrda 1X2 (samma som tips-sidan). */
+function applyOddsetTipBasis(a) {
+  const row = findOddsetRow(
+    a.leagueCode,
+    a.kickoff,
+    a.matched?.home && a.matched?.away ? [a.matched.home, a.matched.away] : null,
+    [a.home, a.away],
+  );
+  const b = row?.pro?.blended;
+  if (!b || !(b.home > 0) || !(b.draw > 0) || !(b.away > 0)) return false;
+  const raw = [b.home, b.draw, b.away];
+  const s = raw[0] + raw[1] + raw[2];
+  a.final = raw.map((x) => r3(x / s));
+  const order = [0, 1, 2].sort((x, y) => a.final[y] - a.final[x]);
+  a.tip = SIGNS[order[0]];
+  a.tipP = a.final[order[0]];
+  a.basis = 'oddset';
+  a.tipBasis = 'oddset';
+  const ml = row.pro?.marketLed || row.marketLed || null;
+  a.modelWeight = ml?.modelW ?? a.modelWeight ?? 0;
+  a.oddsetTip = {
+    pick: row.tips?.['1X2']?.pick || a.tip,
+    source: ml?.source || row.pro?.market?.fairSource || 'oddset',
+    modelW: ml?.modelW ?? null,
+    kind: ml?.kind || null,
+  };
+  const minOdds = 1.03 / a.tipP;
+  const book = a.odds ? a.odds[order[0]] : null;
+  a.verdict = { sign: a.tip, minOdds: r2(minOdds), odds: book, value: book != null ? book >= minOdds : false };
+  a.streckvarde = a.folk ? SIGNS.map((_, i) => r2(a.final[i] / Math.max(a.folk[i], 0.01))) : a.streckvarde;
+  return true;
 }
 
 // ---------- Skarpa odds (samma kalla och kontroll som Oddset) ----------
@@ -1949,8 +2007,19 @@ async function analyzeDraw(product, draw, ctx, result) {
       // Forst i analysen: FotMob-kontexten ska ligga sist
       a.analysis = [assessmentText(a.spik, a.home, a.away), ...(a.analysis || [])];
     }
+    // Icke-spikbara (eller ET dar spik bara visas): tipsa som Oddset nar matchen finns i tips-latest
+    const spiked = a.spik?.used && a.spik.spikbar;
+    if (!spiked && applyOddsetTipBasis(a)) {
+      const src = a.oddsetTip?.source ? String(a.oddsetTip.source) : 'marknad';
+      a.analysis = [`Tips som Oddset (${src}${a.oddsetTip?.modelW ? `, modell ${Math.round(a.oddsetTip.modelW * 100)} %` : ''}).`, ...(a.analysis || [])];
+    }
   });
-  const sysEv = out.map((a) => (a.spik?.used ? { ...a, final: a.spik.sysP } : { ...a, spik: undefined }));
+  // Spikbara: kalibrerad sysP. Ovriga med Oddset-bas: Oddsets final. Ovriga: sysP om kalibrering anvands.
+  const sysEv = out.map((a) => {
+    if (a.tipBasis === 'oddset') return a.spik?.used ? { ...a } : { ...a, spik: undefined };
+    if (a.spik?.used) return { ...a, final: a.spik.sysP };
+    return { ...a, spik: undefined };
+  });
   // xTilt: kryss-reglagen (X_TILT) galler A och B, aldrig C
   const baseOpts = { rowPrice, turnover, realTurnover, jackpot, payoutMin: utdMin(product.id), signMin: SIGN_MIN.A, colorBands: bands, xTilt: X_TILT.for.includes('A'), blueX: BLUE_X };
   let bestA = null, splitPair = null;
@@ -2290,7 +2359,7 @@ function currentRules(productId) {
   return { signMin: SIGN_MIN.A, signMinB: SIGN_MIN.B, bMode: B_MODE, payoutMin: utdMin(productId), budget: BUDGET, modelW: MODEL_W, modelWThin: MODEL_W_THIN, market: MARKET_MODE, grundMax: GRUND_MAX_ROWS };
 }
 
-export { colorTriples, fitColorRule, colorRuleOk, colorsPresent, analyzeDraw, oddsetAvailability, evaluateSnapshot, loadBacktests, loadNationalElo, loadGroup, fitModel, get, API, SIGN_MIN, SIGN_MIN_C, SPIK_MIN_BY_PRODUCT, MIN_SPIKES, MAX_SPIKES, MIN_HELG, SKRALL_SPIK, RED_RULES_B, SPIK_TOP, SPIK_TOP_B, currentRules, PRODUCTS, FALL, canFall };
+export { colorTriples, fitColorRule, colorRuleOk, colorsPresent, analyzeDraw, oddsetAvailability, findOddsetRow, applyOddsetTipBasis, evaluateSnapshot, loadBacktests, loadNationalElo, loadGroup, fitModel, get, API, SIGN_MIN, SIGN_MIN_C, SPIK_MIN_BY_PRODUCT, MIN_SPIKES, MAX_SPIKES, MIN_HELG, SKRALL_SPIK, RED_RULES_B, SPIK_TOP, SPIK_TOP_B, currentRules, PRODUCTS, FALL, canFall };
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   main().catch((e) => {
