@@ -1,7 +1,7 @@
 {
  "product": "hastar",
  "month": "2026-10",
- "updatedAt": "2026-10-07T20:10:02.207Z",
+ "updatedAt": "2026-10-09T12:33:13.952Z",
  "items": {
   "V86_2026-10-05_40_1|6": {
    "id": "V86_2026-10-05_40_1|6",
@@ -1140,7 +1140,12 @@
     "spik": 4,
     "favorite": 4
    },
-   "result": null
+   "result": {
+    "winners": [
+     1
+    ]
+   },
+   "settledAt": "2026-10-09T12:33:10.630Z"
   },
   "V86_2026-10-07_40_1|7": {
    "id": "V86_2026-10-07_40_1|7",
@@ -1239,7 +1244,12 @@
     "spik": null,
     "favorite": 10
    },
-   "result": null
+   "result": {
+    "winners": [
+     4
+    ]
+   },
+   "settledAt": "2026-10-09T12:33:10.630Z"
   },
   "V86_2026-10-07_40_1|8": {
    "id": "V86_2026-10-07_40_1|8",
@@ -1338,7 +1348,12 @@
     "spik": 3,
     "favorite": 9
    },
-   "result": null
+   "result": {
+    "winners": [
+     3
+    ]
+   },
+   "settledAt": "2026-10-09T12:33:10.630Z"
   },
   "V86_2026-10-07_40_1|9": {
    "id": "V86_2026-10-07_40_1|9",
@@ -1437,7 +1452,12 @@
     "spik": null,
     "favorite": 4
    },
-   "result": null
+   "result": {
+    "winners": [
+     4
+    ]
+   },
+   "settledAt": "2026-10-09T12:33:10.630Z"
   },
   "V86_2026-10-07_40_1|10": {
    "id": "V86_2026-10-07_40_1|10",
@@ -1535,6 +1555,1298 @@
     ],
     "spik": null,
     "favorite": 1
+   },
+   "result": {
+    "winners": [
+     12
+    ]
+   },
+   "settledAt": "2026-10-09T12:33:10.630Z"
+  },
+  "V86_2026-10-14_40_1|6": {
+   "id": "V86_2026-10-14_40_1|6",
+   "product": "hastar",
+   "game": "V86_2026-10-14_40_1",
+   "type": "V86",
+   "leg": 1,
+   "race": 6,
+   "date": "2026-10-14",
+   "kickoff": "2026-10-14T18:30:00.000Z",
+   "league": "V86",
+   "track": "Bergsåker",
+   "home": null,
+   "away": null,
+   "firstAt": "2026-10-09T12:33:12.053Z",
+   "first": {
+    "top": [
+     {
+      "nr": 3,
+      "horse": "City Slicker",
+      "p": 0.541,
+      "marketP": 0.083,
+      "rank": "A"
+     },
+     {
+      "nr": 2,
+      "horse": "Conrads Emil",
+      "p": 0.131,
+      "marketP": 0.083,
+      "rank": "B"
+     },
+     {
+      "nr": 1,
+      "horse": "Pepper Creation",
+      "p": 0.084,
+      "marketP": 0.083,
+      "rank": "C"
+     },
+     {
+      "nr": 7,
+      "horse": "Zarajevo Games",
+      "p": 0.046,
+      "marketP": 0.083,
+      "rank": "C"
+     },
+     {
+      "nr": 10,
+      "horse": "Maximus Express",
+      "p": 0.041,
+      "marketP": 0.083,
+      "rank": "C"
+     }
+    ],
+    "spik": null,
+    "favorite": 3
+   },
+   "latestAt": "2026-10-09T12:33:12.053Z",
+   "latest": {
+    "top": [
+     {
+      "nr": 3,
+      "horse": "City Slicker",
+      "p": 0.541,
+      "marketP": 0.083,
+      "rank": "A"
+     },
+     {
+      "nr": 2,
+      "horse": "Conrads Emil",
+      "p": 0.131,
+      "marketP": 0.083,
+      "rank": "B"
+     },
+     {
+      "nr": 1,
+      "horse": "Pepper Creation",
+      "p": 0.084,
+      "marketP": 0.083,
+      "rank": "C"
+     },
+     {
+      "nr": 7,
+      "horse": "Zarajevo Games",
+      "p": 0.046,
+      "marketP": 0.083,
+      "rank": "C"
+     },
+     {
+      "nr": 10,
+      "horse": "Maximus Express",
+      "p": 0.041,
+      "marketP": 0.083,
+      "rank": "C"
+     }
+    ],
+    "spik": null,
+    "favorite": 3
+   },
+   "result": null
+  },
+  "V86_2026-10-14_40_1|7": {
+   "id": "V86_2026-10-14_40_1|7",
+   "product": "hastar",
+   "game": "V86_2026-10-14_40_1",
+   "type": "V86",
+   "leg": 3,
+   "race": 7,
+   "date": "2026-10-14",
+   "kickoff": "2026-10-14T18:52:00.000Z",
+   "league": "V86",
+   "track": "Bergsåker",
+   "home": null,
+   "away": null,
+   "firstAt": "2026-10-09T12:33:12.053Z",
+   "first": {
+    "top": [
+     {
+      "nr": 3,
+      "horse": "Meditate",
+      "p": 0.602,
+      "marketP": 0.008,
+      "rank": "A"
+     },
+     {
+      "nr": 10,
+      "horse": "PrincessoftheDawn",
+      "p": 0.144,
+      "marketP": 0.008,
+      "rank": "B"
+     },
+     {
+      "nr": 2,
+      "horse": "Nyharajah",
+      "p": 0.118,
+      "marketP": 0.008,
+      "rank": "B"
+     },
+     {
+      "nr": 7,
+      "horse": "Showtime Zon",
+      "p": 0.037,
+      "marketP": 0.008,
+      "rank": "C"
+     },
+     {
+      "nr": 8,
+      "horse": "Ursula",
+      "p": 0.017,
+      "marketP": 0.008,
+      "rank": "D"
+     }
+    ],
+    "spik": 3,
+    "favorite": 3
+   },
+   "latestAt": "2026-10-09T12:33:12.053Z",
+   "latest": {
+    "top": [
+     {
+      "nr": 5,
+      "horse": "Grace in Heaven",
+      "p": 0.251,
+      "marketP": 0.083,
+      "rank": "A"
+     },
+     {
+      "nr": 1,
+      "horse": "Five Cabosse",
+      "p": 0.247,
+      "marketP": 0.083,
+      "rank": "A"
+     },
+     {
+      "nr": 3,
+      "horse": "Icannoliwearchanel",
+      "p": 0.181,
+      "marketP": 0.083,
+      "rank": "B"
+     },
+     {
+      "nr": 12,
+      "horse": "Samira M.B.S.",
+      "p": 0.067,
+      "marketP": 0.083,
+      "rank": "C"
+     },
+     {
+      "nr": 2,
+      "horse": "Royal Steel",
+      "p": 0.046,
+      "marketP": 0.083,
+      "rank": "C"
+     }
+    ],
+    "spik": 3,
+    "favorite": 5
+   },
+   "result": null
+  },
+  "V86_2026-10-14_40_1|8": {
+   "id": "V86_2026-10-14_40_1|8",
+   "product": "hastar",
+   "game": "V86_2026-10-14_40_1",
+   "type": "V86",
+   "leg": 5,
+   "race": 8,
+   "date": "2026-10-14",
+   "kickoff": "2026-10-14T19:15:00.000Z",
+   "league": "V86",
+   "track": "Bergsåker",
+   "home": null,
+   "away": null,
+   "firstAt": "2026-10-09T12:33:12.053Z",
+   "first": {
+    "top": [
+     {
+      "nr": 11,
+      "horse": "Wendy",
+      "p": 0.309,
+      "marketP": 0.083,
+      "rank": "A"
+     },
+     {
+      "nr": 2,
+      "horse": "Guilia Barosso",
+      "p": 0.104,
+      "marketP": 0.083,
+      "rank": "B"
+     },
+     {
+      "nr": 10,
+      "horse": "Nutella",
+      "p": 0.1,
+      "marketP": 0.083,
+      "rank": "B"
+     },
+     {
+      "nr": 1,
+      "horse": "Erica Palema",
+      "p": 0.08,
+      "marketP": 0.083,
+      "rank": "C"
+     },
+     {
+      "nr": 3,
+      "horse": "Egerie",
+      "p": 0.06,
+      "marketP": 0.083,
+      "rank": "C"
+     }
+    ],
+    "spik": null,
+    "favorite": 11
+   },
+   "latestAt": "2026-10-09T12:33:12.053Z",
+   "latest": {
+    "top": [
+     {
+      "nr": 5,
+      "horse": "Chamberi",
+      "p": 0.279,
+      "marketP": 0.083,
+      "rank": "A"
+     },
+     {
+      "nr": 7,
+      "horse": "Jiovanha Falkone",
+      "p": 0.244,
+      "marketP": 0.083,
+      "rank": "A"
+     },
+     {
+      "nr": 3,
+      "horse": "Hankypanky Leonie",
+      "p": 0.172,
+      "marketP": 0.083,
+      "rank": "B"
+     },
+     {
+      "nr": 9,
+      "horse": "Sparkling Power",
+      "p": 0.04,
+      "marketP": 0.083,
+      "rank": "C"
+     },
+     {
+      "nr": 12,
+      "horse": "Housekeeper",
+      "p": 0.04,
+      "marketP": 0.083,
+      "rank": "C"
+     }
+    ],
+    "spik": null,
+    "favorite": 5
+   },
+   "result": null
+  },
+  "V86_2026-10-14_40_1|9": {
+   "id": "V86_2026-10-14_40_1|9",
+   "product": "hastar",
+   "game": "V86_2026-10-14_40_1",
+   "type": "V86",
+   "leg": 7,
+   "race": 9,
+   "date": "2026-10-14",
+   "kickoff": "2026-10-14T19:40:00.000Z",
+   "league": "V86",
+   "track": "Bergsåker",
+   "home": null,
+   "away": null,
+   "firstAt": "2026-10-09T12:33:12.053Z",
+   "first": {
+    "top": [
+     {
+      "nr": 4,
+      "horse": "Seaside Fun",
+      "p": 0.237,
+      "marketP": 0.008,
+      "rank": "A"
+     },
+     {
+      "nr": 8,
+      "horse": "Willy Rapid",
+      "p": 0.209,
+      "marketP": 0.008,
+      "rank": "A"
+     },
+     {
+      "nr": 6,
+      "horse": "Nordic Dancer",
+      "p": 0.073,
+      "marketP": 0.008,
+      "rank": "C"
+     },
+     {
+      "nr": 7,
+      "horse": "Rock'n Rolf R.P.",
+      "p": 0.069,
+      "marketP": 0.357,
+      "rank": "C"
+     },
+     {
+      "nr": 2,
+      "horse": "Money Today",
+      "p": 0.067,
+      "marketP": 0.008,
+      "rank": "C"
+     }
+    ],
+    "spik": null,
+    "favorite": 4
+   },
+   "latestAt": "2026-10-09T12:33:12.053Z",
+   "latest": {
+    "top": [
+     {
+      "nr": 4,
+      "horse": "Omega River",
+      "p": 0.425,
+      "marketP": 0.083,
+      "rank": "A"
+     },
+     {
+      "nr": 8,
+      "horse": "Golden Kronos",
+      "p": 0.242,
+      "marketP": 0.083,
+      "rank": "A"
+     },
+     {
+      "nr": 3,
+      "horse": "Zarex",
+      "p": 0.123,
+      "marketP": 0.083,
+      "rank": "B"
+     },
+     {
+      "nr": 1,
+      "horse": "Jonte Godiva",
+      "p": 0.087,
+      "marketP": 0.083,
+      "rank": "C"
+     },
+     {
+      "nr": 12,
+      "horse": "Readly Brodde",
+      "p": 0.043,
+      "marketP": 0.083,
+      "rank": "C"
+     }
+    ],
+    "spik": null,
+    "favorite": 4
+   },
+   "result": null
+  },
+  "V86_2026-10-14_40_1|10": {
+   "id": "V86_2026-10-14_40_1|10",
+   "product": "hastar",
+   "game": "V86_2026-10-14_40_1",
+   "type": "V86",
+   "leg": 8,
+   "race": 10,
+   "date": "2026-10-14",
+   "kickoff": "2026-10-14T19:51:00.000Z",
+   "league": "V86",
+   "track": "Åby",
+   "home": null,
+   "away": null,
+   "firstAt": "2026-10-09T12:33:12.053Z",
+   "first": {
+    "top": [
+     {
+      "nr": 8,
+      "horse": "Nightlife In",
+      "p": 0.413,
+      "marketP": 0.091,
+      "rank": "A"
+     },
+     {
+      "nr": 1,
+      "horse": "Lazy Dust",
+      "p": 0.408,
+      "marketP": 0.091,
+      "rank": "A"
+     },
+     {
+      "nr": 12,
+      "horse": "Chribo Hill",
+      "p": 0.049,
+      "marketP": 0.091,
+      "rank": "C"
+     },
+     {
+      "nr": 2,
+      "horse": "Lugano Cortina",
+      "p": 0.038,
+      "marketP": 0.091,
+      "rank": "C"
+     },
+     {
+      "nr": 4,
+      "horse": "Kosing",
+      "p": 0.026,
+      "marketP": 0.045,
+      "rank": "D"
+     }
+    ],
+    "spik": null,
+    "favorite": 1
+   },
+   "latestAt": "2026-10-09T12:33:12.053Z",
+   "latest": {
+    "top": [
+     {
+      "nr": 8,
+      "horse": "Nightlife In",
+      "p": 0.413,
+      "marketP": 0.091,
+      "rank": "A"
+     },
+     {
+      "nr": 1,
+      "horse": "Lazy Dust",
+      "p": 0.408,
+      "marketP": 0.091,
+      "rank": "A"
+     },
+     {
+      "nr": 12,
+      "horse": "Chribo Hill",
+      "p": 0.049,
+      "marketP": 0.091,
+      "rank": "C"
+     },
+     {
+      "nr": 2,
+      "horse": "Lugano Cortina",
+      "p": 0.038,
+      "marketP": 0.091,
+      "rank": "C"
+     },
+     {
+      "nr": 4,
+      "horse": "Kosing",
+      "p": 0.026,
+      "marketP": 0.045,
+      "rank": "D"
+     }
+    ],
+    "spik": null,
+    "favorite": 1
+   },
+   "result": null
+  },
+  "V85_2026-10-10_5_6|6": {
+   "id": "V85_2026-10-10_5_6|6",
+   "product": "hastar",
+   "game": "V85_2026-10-10_5_6",
+   "type": "V85",
+   "leg": 1,
+   "race": 6,
+   "date": "2026-10-10",
+   "kickoff": "2026-10-10T13:00:00.000Z",
+   "league": "V85",
+   "track": "Solvalla",
+   "home": null,
+   "away": null,
+   "firstAt": "2026-10-09T12:33:13.952Z",
+   "first": {
+    "top": [
+     {
+      "nr": 1,
+      "horse": "Gumshoe Sox",
+      "p": 0.444,
+      "marketP": 0.355,
+      "rank": "A"
+     },
+     {
+      "nr": 2,
+      "horse": "Cold Blaze",
+      "p": 0.318,
+      "marketP": 0.195,
+      "rank": "A"
+     },
+     {
+      "nr": 3,
+      "horse": "Chaplin",
+      "p": 0.063,
+      "marketP": 0.068,
+      "rank": "C"
+     },
+     {
+      "nr": 5,
+      "horse": "Digital Brodde",
+      "p": 0.055,
+      "marketP": 0.052,
+      "rank": "C"
+     },
+     {
+      "nr": 4,
+      "horse": "Herkules A'lir",
+      "p": 0.033,
+      "marketP": 0.035,
+      "rank": "D"
+     }
+    ],
+    "spik": null,
+    "favorite": 1
+   },
+   "latestAt": "2026-10-09T12:33:13.952Z",
+   "latest": {
+    "top": [
+     {
+      "nr": 1,
+      "horse": "Gumshoe Sox",
+      "p": 0.444,
+      "marketP": 0.355,
+      "rank": "A"
+     },
+     {
+      "nr": 2,
+      "horse": "Cold Blaze",
+      "p": 0.318,
+      "marketP": 0.195,
+      "rank": "A"
+     },
+     {
+      "nr": 3,
+      "horse": "Chaplin",
+      "p": 0.063,
+      "marketP": 0.068,
+      "rank": "C"
+     },
+     {
+      "nr": 5,
+      "horse": "Digital Brodde",
+      "p": 0.055,
+      "marketP": 0.052,
+      "rank": "C"
+     },
+     {
+      "nr": 4,
+      "horse": "Herkules A'lir",
+      "p": 0.033,
+      "marketP": 0.035,
+      "rank": "D"
+     }
+    ],
+    "spik": null,
+    "favorite": 1
+   },
+   "result": null
+  },
+  "V85_2026-10-10_5_6|7": {
+   "id": "V85_2026-10-10_5_6|7",
+   "product": "hastar",
+   "game": "V85_2026-10-10_5_6",
+   "type": "V85",
+   "leg": 2,
+   "race": 7,
+   "date": "2026-10-10",
+   "kickoff": "2026-10-10T13:22:00.000Z",
+   "league": "V85",
+   "track": "Solvalla",
+   "home": null,
+   "away": null,
+   "firstAt": "2026-10-09T12:33:13.952Z",
+   "first": {
+    "top": [
+     {
+      "nr": 5,
+      "horse": "Ready Star",
+      "p": 0.268,
+      "marketP": 0.33,
+      "rank": "A"
+     },
+     {
+      "nr": 1,
+      "horse": "Charron",
+      "p": 0.236,
+      "marketP": 0.1,
+      "rank": "A"
+     },
+     {
+      "nr": 10,
+      "horse": "Barack Face",
+      "p": 0.19,
+      "marketP": 0.078,
+      "rank": "B"
+     },
+     {
+      "nr": 3,
+      "horse": "Izod Zet",
+      "p": 0.086,
+      "marketP": 0.122,
+      "rank": "C"
+     },
+     {
+      "nr": 6,
+      "horse": "Boscha Diablo",
+      "p": 0.053,
+      "marketP": 0.079,
+      "rank": "C"
+     }
+    ],
+    "spik": null,
+    "favorite": 5
+   },
+   "latestAt": "2026-10-09T12:33:13.952Z",
+   "latest": {
+    "top": [
+     {
+      "nr": 5,
+      "horse": "Ready Star",
+      "p": 0.268,
+      "marketP": 0.33,
+      "rank": "A"
+     },
+     {
+      "nr": 1,
+      "horse": "Charron",
+      "p": 0.236,
+      "marketP": 0.1,
+      "rank": "A"
+     },
+     {
+      "nr": 10,
+      "horse": "Barack Face",
+      "p": 0.19,
+      "marketP": 0.078,
+      "rank": "B"
+     },
+     {
+      "nr": 3,
+      "horse": "Izod Zet",
+      "p": 0.086,
+      "marketP": 0.122,
+      "rank": "C"
+     },
+     {
+      "nr": 6,
+      "horse": "Boscha Diablo",
+      "p": 0.053,
+      "marketP": 0.079,
+      "rank": "C"
+     }
+    ],
+    "spik": null,
+    "favorite": 5
+   },
+   "result": null
+  },
+  "V85_2026-10-10_5_6|8": {
+   "id": "V85_2026-10-10_5_6|8",
+   "product": "hastar",
+   "game": "V85_2026-10-10_5_6",
+   "type": "V85",
+   "leg": 3,
+   "race": 8,
+   "date": "2026-10-10",
+   "kickoff": "2026-10-10T13:44:00.000Z",
+   "league": "V85",
+   "track": "Solvalla",
+   "home": null,
+   "away": null,
+   "firstAt": "2026-10-09T12:33:13.952Z",
+   "first": {
+    "top": [
+     {
+      "nr": 12,
+      "horse": "La Yuca",
+      "p": 0.33,
+      "marketP": 0.117,
+      "rank": "A"
+     },
+     {
+      "nr": 8,
+      "horse": "Clarissa",
+      "p": 0.3,
+      "marketP": 0.096,
+      "rank": "A"
+     },
+     {
+      "nr": 11,
+      "horse": "Betting Pacer",
+      "p": 0.138,
+      "marketP": 0.277,
+      "rank": "B"
+     },
+     {
+      "nr": 7,
+      "horse": "Nilla Lane",
+      "p": 0.09,
+      "marketP": 0.207,
+      "rank": "C"
+     },
+     {
+      "nr": 2,
+      "horse": "Gosa Gosing",
+      "p": 0.045,
+      "marketP": 0.115,
+      "rank": "C"
+     }
+    ],
+    "spik": 12,
+    "favorite": 8
+   },
+   "latestAt": "2026-10-09T12:33:13.952Z",
+   "latest": {
+    "top": [
+     {
+      "nr": 12,
+      "horse": "La Yuca",
+      "p": 0.33,
+      "marketP": 0.117,
+      "rank": "A"
+     },
+     {
+      "nr": 8,
+      "horse": "Clarissa",
+      "p": 0.3,
+      "marketP": 0.096,
+      "rank": "A"
+     },
+     {
+      "nr": 11,
+      "horse": "Betting Pacer",
+      "p": 0.138,
+      "marketP": 0.277,
+      "rank": "B"
+     },
+     {
+      "nr": 7,
+      "horse": "Nilla Lane",
+      "p": 0.09,
+      "marketP": 0.207,
+      "rank": "C"
+     },
+     {
+      "nr": 2,
+      "horse": "Gosa Gosing",
+      "p": 0.045,
+      "marketP": 0.115,
+      "rank": "C"
+     }
+    ],
+    "spik": 12,
+    "favorite": 8
+   },
+   "result": null
+  },
+  "V85_2026-10-10_5_6|9": {
+   "id": "V85_2026-10-10_5_6|9",
+   "product": "hastar",
+   "game": "V85_2026-10-10_5_6",
+   "type": "V85",
+   "leg": 4,
+   "race": 9,
+   "date": "2026-10-10",
+   "kickoff": "2026-10-10T14:06:00.000Z",
+   "league": "V85",
+   "track": "Solvalla",
+   "home": null,
+   "away": null,
+   "firstAt": "2026-10-09T12:33:13.952Z",
+   "first": {
+    "top": [
+     {
+      "nr": 1,
+      "horse": "Mister Malabar",
+      "p": 0.654,
+      "marketP": 0.416,
+      "rank": "A"
+     },
+     {
+      "nr": 11,
+      "horse": "Eagle Rock",
+      "p": 0.115,
+      "marketP": 0.114,
+      "rank": "B"
+     },
+     {
+      "nr": 15,
+      "horse": "Monsieur Chocolat",
+      "p": 0.055,
+      "marketP": 0.082,
+      "rank": "C"
+     },
+     {
+      "nr": 3,
+      "horse": "Isaac Wynn",
+      "p": 0.052,
+      "marketP": 0.045,
+      "rank": "C"
+     },
+     {
+      "nr": 4,
+      "horse": "Quattro Håleryd",
+      "p": 0.031,
+      "marketP": 0.062,
+      "rank": "D"
+     }
+    ],
+    "spik": 1,
+    "favorite": 1
+   },
+   "latestAt": "2026-10-09T12:33:13.952Z",
+   "latest": {
+    "top": [
+     {
+      "nr": 1,
+      "horse": "Mister Malabar",
+      "p": 0.654,
+      "marketP": 0.416,
+      "rank": "A"
+     },
+     {
+      "nr": 11,
+      "horse": "Eagle Rock",
+      "p": 0.115,
+      "marketP": 0.114,
+      "rank": "B"
+     },
+     {
+      "nr": 15,
+      "horse": "Monsieur Chocolat",
+      "p": 0.055,
+      "marketP": 0.082,
+      "rank": "C"
+     },
+     {
+      "nr": 3,
+      "horse": "Isaac Wynn",
+      "p": 0.052,
+      "marketP": 0.045,
+      "rank": "C"
+     },
+     {
+      "nr": 4,
+      "horse": "Quattro Håleryd",
+      "p": 0.031,
+      "marketP": 0.062,
+      "rank": "D"
+     }
+    ],
+    "spik": 1,
+    "favorite": 1
+   },
+   "result": null
+  },
+  "V85_2026-10-10_5_6|10": {
+   "id": "V85_2026-10-10_5_6|10",
+   "product": "hastar",
+   "game": "V85_2026-10-10_5_6",
+   "type": "V85",
+   "leg": 5,
+   "race": 10,
+   "date": "2026-10-10",
+   "kickoff": "2026-10-10T14:28:00.000Z",
+   "league": "V85",
+   "track": "Solvalla",
+   "home": null,
+   "away": null,
+   "firstAt": "2026-10-09T12:33:13.952Z",
+   "first": {
+    "top": [
+     {
+      "nr": 5,
+      "horse": "Nightbird",
+      "p": 0.377,
+      "marketP": 0.075,
+      "rank": "A"
+     },
+     {
+      "nr": 9,
+      "horse": "Thai Medina",
+      "p": 0.148,
+      "marketP": 0.087,
+      "rank": "B"
+     },
+     {
+      "nr": 3,
+      "horse": "Global Halo",
+      "p": 0.147,
+      "marketP": 0.119,
+      "rank": "B"
+     },
+     {
+      "nr": 11,
+      "horse": "Morning Rain",
+      "p": 0.117,
+      "marketP": 0.231,
+      "rank": "B"
+     },
+     {
+      "nr": 2,
+      "horse": "Kagli Zet",
+      "p": 0.089,
+      "marketP": 0.16,
+      "rank": "C"
+     }
+    ],
+    "spik": null,
+    "favorite": 5
+   },
+   "latestAt": "2026-10-09T12:33:13.952Z",
+   "latest": {
+    "top": [
+     {
+      "nr": 5,
+      "horse": "Nightbird",
+      "p": 0.377,
+      "marketP": 0.075,
+      "rank": "A"
+     },
+     {
+      "nr": 9,
+      "horse": "Thai Medina",
+      "p": 0.148,
+      "marketP": 0.087,
+      "rank": "B"
+     },
+     {
+      "nr": 3,
+      "horse": "Global Halo",
+      "p": 0.147,
+      "marketP": 0.119,
+      "rank": "B"
+     },
+     {
+      "nr": 11,
+      "horse": "Morning Rain",
+      "p": 0.117,
+      "marketP": 0.231,
+      "rank": "B"
+     },
+     {
+      "nr": 2,
+      "horse": "Kagli Zet",
+      "p": 0.089,
+      "marketP": 0.16,
+      "rank": "C"
+     }
+    ],
+    "spik": null,
+    "favorite": 5
+   },
+   "result": null
+  },
+  "V85_2026-10-10_5_6|11": {
+   "id": "V85_2026-10-10_5_6|11",
+   "product": "hastar",
+   "game": "V85_2026-10-10_5_6",
+   "type": "V85",
+   "leg": 6,
+   "race": 11,
+   "date": "2026-10-10",
+   "kickoff": "2026-10-10T14:54:00.000Z",
+   "league": "V85",
+   "track": "Solvalla",
+   "home": null,
+   "away": null,
+   "firstAt": "2026-10-09T12:33:13.952Z",
+   "first": {
+    "top": [
+     {
+      "nr": 5,
+      "horse": "Iaintnoquitter",
+      "p": 0.469,
+      "marketP": 0.368,
+      "rank": "A"
+     },
+     {
+      "nr": 7,
+      "horse": "Mr Carnation",
+      "p": 0.169,
+      "marketP": 0.062,
+      "rank": "B"
+     },
+     {
+      "nr": 12,
+      "horse": "Gaudi Laksmy",
+      "p": 0.121,
+      "marketP": 0.125,
+      "rank": "B"
+     },
+     {
+      "nr": 10,
+      "horse": "Nickel Occagnes",
+      "p": 0.069,
+      "marketP": 0.057,
+      "rank": "C"
+     },
+     {
+      "nr": 4,
+      "horse": "Flight Sequence",
+      "p": 0.046,
+      "marketP": 0.055,
+      "rank": "C"
+     }
+    ],
+    "spik": null,
+    "favorite": 5
+   },
+   "latestAt": "2026-10-09T12:33:13.952Z",
+   "latest": {
+    "top": [
+     {
+      "nr": 5,
+      "horse": "Iaintnoquitter",
+      "p": 0.469,
+      "marketP": 0.368,
+      "rank": "A"
+     },
+     {
+      "nr": 7,
+      "horse": "Mr Carnation",
+      "p": 0.169,
+      "marketP": 0.062,
+      "rank": "B"
+     },
+     {
+      "nr": 12,
+      "horse": "Gaudi Laksmy",
+      "p": 0.121,
+      "marketP": 0.125,
+      "rank": "B"
+     },
+     {
+      "nr": 10,
+      "horse": "Nickel Occagnes",
+      "p": 0.069,
+      "marketP": 0.057,
+      "rank": "C"
+     },
+     {
+      "nr": 4,
+      "horse": "Flight Sequence",
+      "p": 0.046,
+      "marketP": 0.055,
+      "rank": "C"
+     }
+    ],
+    "spik": null,
+    "favorite": 5
+   },
+   "result": null
+  },
+  "V85_2026-10-10_5_6|12": {
+   "id": "V85_2026-10-10_5_6|12",
+   "product": "hastar",
+   "game": "V85_2026-10-10_5_6",
+   "type": "V85",
+   "leg": 7,
+   "race": 12,
+   "date": "2026-10-10",
+   "kickoff": "2026-10-10T15:16:00.000Z",
+   "league": "V85",
+   "track": "Solvalla",
+   "home": null,
+   "away": null,
+   "firstAt": "2026-10-09T12:33:13.952Z",
+   "first": {
+    "top": [
+     {
+      "nr": 4,
+      "horse": "Kodiak Zet",
+      "p": 0.43,
+      "marketP": 0.224,
+      "rank": "A"
+     },
+     {
+      "nr": 5,
+      "horse": "Steady Spender",
+      "p": 0.172,
+      "marketP": 0.134,
+      "rank": "B"
+     },
+     {
+      "nr": 3,
+      "horse": "Nanda Devi Cut",
+      "p": 0.125,
+      "marketP": 0.068,
+      "rank": "B"
+     },
+     {
+      "nr": 8,
+      "horse": "Intro",
+      "p": 0.103,
+      "marketP": 0.307,
+      "rank": "B"
+     },
+     {
+      "nr": 1,
+      "horse": "Po Tay Toes",
+      "p": 0.054,
+      "marketP": 0.054,
+      "rank": "C"
+     }
+    ],
+    "spik": null,
+    "favorite": 4
+   },
+   "latestAt": "2026-10-09T12:33:13.952Z",
+   "latest": {
+    "top": [
+     {
+      "nr": 4,
+      "horse": "Kodiak Zet",
+      "p": 0.43,
+      "marketP": 0.224,
+      "rank": "A"
+     },
+     {
+      "nr": 5,
+      "horse": "Steady Spender",
+      "p": 0.172,
+      "marketP": 0.134,
+      "rank": "B"
+     },
+     {
+      "nr": 3,
+      "horse": "Nanda Devi Cut",
+      "p": 0.125,
+      "marketP": 0.068,
+      "rank": "B"
+     },
+     {
+      "nr": 8,
+      "horse": "Intro",
+      "p": 0.103,
+      "marketP": 0.307,
+      "rank": "B"
+     },
+     {
+      "nr": 1,
+      "horse": "Po Tay Toes",
+      "p": 0.054,
+      "marketP": 0.054,
+      "rank": "C"
+     }
+    ],
+    "spik": null,
+    "favorite": 4
+   },
+   "result": null
+  },
+  "V85_2026-10-10_5_6|13": {
+   "id": "V85_2026-10-10_5_6|13",
+   "product": "hastar",
+   "game": "V85_2026-10-10_5_6",
+   "type": "V85",
+   "leg": 8,
+   "race": 13,
+   "date": "2026-10-10",
+   "kickoff": "2026-10-10T15:42:00.000Z",
+   "league": "V85",
+   "track": "Solvalla",
+   "home": null,
+   "away": null,
+   "firstAt": "2026-10-09T12:33:13.952Z",
+   "first": {
+    "top": [
+     {
+      "nr": 2,
+      "horse": "X.O.Kemp",
+      "p": 0.368,
+      "marketP": 0.36,
+      "rank": "A"
+     },
+     {
+      "nr": 9,
+      "horse": "Killer Rain",
+      "p": 0.272,
+      "marketP": 0.141,
+      "rank": "A"
+     },
+     {
+      "nr": 6,
+      "horse": "Frank S.H.",
+      "p": 0.142,
+      "marketP": 0.048,
+      "rank": "B"
+     },
+     {
+      "nr": 1,
+      "horse": "King Okay",
+      "p": 0.055,
+      "marketP": 0.043,
+      "rank": "C"
+     },
+     {
+      "nr": 3,
+      "horse": "Crowe Motion",
+      "p": 0.047,
+      "marketP": 0.17,
+      "rank": "C"
+     }
+    ],
+    "spik": null,
+    "favorite": 2
+   },
+   "latestAt": "2026-10-09T12:33:13.952Z",
+   "latest": {
+    "top": [
+     {
+      "nr": 2,
+      "horse": "X.O.Kemp",
+      "p": 0.368,
+      "marketP": 0.36,
+      "rank": "A"
+     },
+     {
+      "nr": 9,
+      "horse": "Killer Rain",
+      "p": 0.272,
+      "marketP": 0.141,
+      "rank": "A"
+     },
+     {
+      "nr": 6,
+      "horse": "Frank S.H.",
+      "p": 0.142,
+      "marketP": 0.048,
+      "rank": "B"
+     },
+     {
+      "nr": 1,
+      "horse": "King Okay",
+      "p": 0.055,
+      "marketP": 0.043,
+      "rank": "C"
+     },
+     {
+      "nr": 3,
+      "horse": "Crowe Motion",
+      "p": 0.047,
+      "marketP": 0.17,
+      "rank": "C"
+     }
+    ],
+    "spik": null,
+    "favorite": 2
    },
    "result": null
   }
