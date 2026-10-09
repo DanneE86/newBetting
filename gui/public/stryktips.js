@@ -744,14 +744,15 @@ const DE_FALL_DEFAULT = [33, 33, 34]; // 33+33+34 = 100 (egna siffror går att �
 const DE_SYS = ["D", "E", "F"];
 let deFileNote = "";
 const DE_BUDGET_KEY = "betting.deBudget";
-/** Summa för D och E (1 kr/rad). Sparas i webbläsaren och gäller båda spelen. */
-let deBudget = { D: 1050, E: 500 };
+/** Summa för D, E och F (1 kr/rad). Sparas i webbläsaren och gäller båda spelen. */
+const BUDGET_SYS = ["D", "E", "F"];
+let deBudget = { D: 1050, E: 500, F: 1050 };
 function loadDeBudget() {
   try {
     const s = JSON.parse(localStorage.getItem(DE_BUDGET_KEY) || "{}");
     // v2: D:s standard är 1050. Ett sparat 500 från den gamla standarden höjs en gång.
     const savedD = s.D == null || (Number(s.D) === 500 && s.v !== 2) ? 1050 : s.D;
-    deBudget = { D: clampDeRows(savedD, 1050), E: clampDeRows(s.E, 500) };
+    deBudget = { D: clampDeRows(savedD, 1050), E: clampDeRows(s.E, 500), F: clampDeRows(s.F, 1050) };
     if (s.v !== 2) saveDeBudget();
   } catch { /* privat läge */ }
 }
@@ -1098,25 +1099,7 @@ function egnaSignTable(c, p) {
   </details>`;
 }
 
-// Kupong D i Gambling Cabin (stryk-engine.js buildCouponDGC): GC kan inte ta D:s exakta rader, så länken ger ett eget
-// system på D:s grundrad där färgreglerna efterliknar urvalet – andra rader och något lägre chans än filen
-function couponDGc(g, p) {
-  const krFmt = (x) => Math.round(x).toLocaleString("sv-SE");
-  if (!g) return `<p class="st-gc-off">Gick inte att göra D till ett Gambling Cabin-system i samma storlek som filen – spela D som fil.</p>`;
-  const caps = Object.entries({ grön: g.rules.colorCaps.green, gul: g.rules.colorCaps.yellow, röd: g.rules.colorCaps.red, rosa: g.rules.colorCaps.pink })
-    .filter(([, v]) => v != null).map(([k, v]) => `${k} högst ${v}`).join(", ");
-  return `<div class="sb-dgc">
-    <p class="st-sub"><b>Eller i Gambling Cabin:</b> ${g.rows} rader · ${krFmt(g.cost)} kr · chans 1 på ${krFmt(1 / g.hitAll)} · minst ${krFmt(g.minPayout)} kr för 13 rätt.
-      Samma grundrad som D, matchens troligaste tecken blått och övriga tecken färgade efter hur osannolika de är (${esc(caps)} per rad). Inte exakt D:s rader – filen ger högre chans.</p>
-    ${p.open
-      ? `<div class="st-gc-wrap"><a class="st-gc ds-btn" href="${esc(g.gamblingCabinUrl)}" target="_blank" rel="noopener" title="Kupong D förifylld i Gambling Cabin">Öppna i Gambling Cabin</a>
-        <small class="st-gc-help">Förifylld kupong D · tryck Reducera → ${krFmt(g.cost)} kr</small></div>`
-      : `<p class="st-gc-off">Länken till Gambling Cabin fungerar när kupongen är öppen – den här omgången är avgjord.</p>`}
-    <details class="sb-rows"><summary>Visa Gambling Cabin-radernas ${g.rows} rader</summary><pre class="st-rows">${g.rowList.map((row, i) => `${String(i + 1).padStart(3, " ")}  ${row}`).join("\n")}</pre></details>
-  </div>`;
-}
-
-// Kupong D/E/F: egna rader, laddas ner som fil till Svenska Spels "Egna rader" (D även som Gambling Cabin-system, couponDGc)
+// Kupong D/E/F: egna rader, laddas ner som fil till Svenska Spels "Egna rader"
 function couponCardEgna(c, label, p, res) {
   const krFmt = (x) => Math.round(x).toLocaleString("sv-SE");
   const tag = `<span class="sb-coupon-tag extra">Extra · egna rader</span>`;
@@ -1157,7 +1140,6 @@ function couponCardEgna(c, label, p, res) {
       ? `<div class="st-gc-wrap"><a class="st-gc ds-btn" href="data:text/plain;charset=utf-8,${encodeURIComponent(c.egnaRader)}" download="${esc(file)}" title="Kupong ${label} som fil för Svenska Spels Egna rader">Ladda ner rader (.txt)</a>
         <small class="st-gc-help">Svenska Spel → ${p.product === "europatipset" ? "Europatipset" : "Stryktipset"} → Egna rader → ladda upp filen → ${krFmt(c.cost)} kr</small></div>`
       : `<p class="st-gc-off">Filen går att ladda ner när kupongen är öppen – den här omgången är avgjord.</p>`}
-    ${label === "D" ? couponDGc(c.gc, p) : ""}
     ${egnaSignTable(c, p)}
     <details class="sb-rows"><summary>Visa alla ${c.rows} rader</summary><pre class="st-rows">${c.rowList.map((row, i) => `${String(i + 1).padStart(3, " ")}  ${row}`).join("\n")}</pre></details>
   </div>`;
@@ -1305,9 +1287,9 @@ function variantNote() {
 const workers = new Map();
 const engineJob = new Map();
 const kravCacheKey = (krav) => JSON.stringify(krav || {});
-function runEngine(p, krav, { onlyDE = false, onlyD = false, rowsD, rowsE } = {}) {
+function runEngine(p, krav, { onlyDE = false, onlyD = false, rowsD, rowsE, rowsF } = {}) {
   if (typeof Worker === "undefined") {
-    return Promise.resolve().then(() => generateCoupons(p, krav, { onlyDE, onlyD, rowsD, rowsE }));
+    return Promise.resolve().then(() => generateCoupons(p, krav, { onlyDE, onlyD, rowsD, rowsE, rowsF }));
   }
   engineJob.get(p.product)?.(new Error("avbruten"));
   workers.get(p.product)?.terminate();
@@ -1319,7 +1301,7 @@ function runEngine(p, krav, { onlyDE = false, onlyD = false, rowsD, rowsE } = {}
     engineJob.set(p.product, reject);
     w.onmessage = ({ data: d }) => (d.error ? reject(new Error(d.error)) : resolve(d.result));
     w.onerror = (e) => { e.preventDefault?.(); reject(new Error(e.message || "bakgrundstråden stannade")); };
-    w.postMessage({ p, krav, onlyDE, onlyD, rowsD, rowsE });
+    w.postMessage({ p, krav, onlyDE, onlyD, rowsD, rowsE, rowsF });
   });
   return done.finally(() => {
     if (engineJob.get(p.product) === rejectJob) engineJob.delete(p.product);
@@ -1333,15 +1315,17 @@ async function generateInto(p, st, { forceFull = false } = {}) {
   const run = (st.run = (st.run || 0) + 1);
   const rowsD = deBudget.D;
   const rowsE = deBudget.E;
+  const rowsF = deBudget.F;
   st.genRowsD = rowsD;
   st.genRowsE = rowsE;
+  st.genRowsF = rowsF;
   try {
     p.deFallShares = deFallForEngine(st);
     const key = kravCacheKey(st.krav);
     const onlyDE = !forceFull && !!st.result && st.cacheKravKey === key;
-    const result = await runEngine(p, st.krav, { onlyDE, rowsD, rowsE });
+    const result = await runEngine(p, st.krav, { onlyDE, rowsD, rowsE, rowsF });
     if (run !== st.run) return;
-    if (deBudget.D !== rowsD || deBudget.E !== rowsE) st.dirty = true;
+    if (deBudget.D !== rowsD || deBudget.E !== rowsE || deBudget.F !== rowsF) st.dirty = true;
     if (onlyDE) {
       st.result = {
         A: st.result.A, B: st.result.B, C: st.result.C,
@@ -1489,7 +1473,7 @@ function renderB(p, head, top = "", extras = "") {
             <li>Spikar: matcher som bedömts som spikbara spikas först. Behövs fler spikar (minst 2, eller för att hålla utdelningsgränsen) läggs de i A bara på omgångens 4 starkaste favoriter – svaga favoriter med högt kryss gick ofta fel (bakkörning 2026-10-03). Går det inte väljs bästa favorit som förut.</li>
             <li><b>D</b> är 13-rättssystemet: ${deBudget.D.toLocaleString("sv-SE")} kr (summan sätter du längst ner, 1 kr per rad). De ${deBudget.D.toLocaleString("sv-SE")} troligaste raderna där 13 rätt ger minst 30 000 kr (verklig omsättning och jackpot). Inga spikar, färger eller teckenregler – raderna väljs en och en, så chansen till 13 rätt över 30 000 kr blir den högsta som går för den summan. Gambling Cabin kan inte ge exakt de raderna, så D laddas ner som fil och spelas via Svenska Spels <b>Egna rader</b>. Kupongens tecken i tabellen är de tecken som någon av raderna använder. Bakkörning på 1 050 kr, 168 omgångar: chans 1 på 87 per omgång, tre 13:or och alla betalade över 30 000 kr (500 kr var 1 på 167).</li>
             <li><b>E</b> kompletterar D: ${deBudget.E.toLocaleString("sv-SE")} kr / Egna rader (egen summa, oberoende av D). Den tar de ${deBudget.E.toLocaleString("sv-SE")} nästa raderna (≥ 30 000 kr) som <em>inte</em> finns i D, och ger extra vikt åt tecken D saknar i någon match (de skrällar D brukar falla på). Spela D och E tillsammans om du vill täcka mer av det D missar.</li>
-            <li><b>F</b> är fristående från D och E: 1050 kr / Egna rader. Andelar 40/30/30 – det högst streckade tecknet får 40 %, de andra 30/30. 1050 rader samplas efter andelarna (samma rad kan förekomma flera gånger = mer insats). Inga spikar, inget utdelningsgolv.</li>
+            <li><b>F</b> är fristående från D och E: ${deBudget.F.toLocaleString("sv-SE")} kr / Egna rader (egen summa längst ner). Andelar 40/30/30 – det högst streckade tecknet får 40 %, de andra 30/30. ${deBudget.F.toLocaleString("sv-SE")} rader samplas efter andelarna (samma rad kan förekomma flera gånger = mer insats). Inga spikar, inget utdelningsgolv.</li>
             <li><b>D/E/F %:</b> <b>Av</b> är default på alla matcher och visar hur D, E och F spelat. <b>På</b> startar med samma % och låter dig redigera D, E och F var för sig (varje rad 100 %). <b>Modell</b>: sätt D/E/F ≈ vår chans. A och B påverkas inte.</li>
             <li>⚠ i tabellen = tecken som just den kupongen brukar ha fel på (minst 30 % missar i bakkörningen), röd = oftare än vår egen chans sa.</li>
             ${p.product === "stryktipset" ? "<li>På Stryktipset spikas bara favoriter med minst 65 % – spikar på 50–65 % sprack nästan varannan gång i baktestet.</li>" : ""}
@@ -1498,7 +1482,7 @@ function renderB(p, head, top = "", extras = "") {
         ${streckNote(p, st)}
         <p class="st-note ds-notice"><b>Rekommendation:</b> spela kupong A och B. I baktestet gav A+B ${p.product === "stryktipset" ? "ca 78 % tillbaka per krona (38 omgångar)" : "ca 52 % tillbaka per krona (55 omgångar)"}. Svenska Spel betalar tillbaka 65 %, så alla varianter förlorar över tid – spela för en summa du klarar att förlora.</p>
         ${couponTable(p, res)}
-        <div class="sb-coupons">${couponCard(res.A, "A", p, res)}${couponCard(res.B, "B", p, res)}${couponCard(res.D, "D", p, res)}${couponCard(res.E, "E", p, res)}${couponCard(res.F, "F", p, res)}</div>
+        <div class="sb-coupons">${couponCard(res.D, "D", p, res)}${couponCard(res.E, "E", p, res)}${couponCard(res.F, "F", p, res)}</div>
       </section>`
     : st.busy
       ? `<section class="sb-panel sb-result ds-card">
@@ -1522,7 +1506,7 @@ function renderB(p, head, top = "", extras = "") {
   </details>`;
   // Sticky åtgärdsrad: alltid nåbar, oavsett var på sidan man är
   const bar = `<div class="sb-actionbar${st.dirty ? " is-dirty" : ""}" role="region" aria-label="Kupongåtgärder">
-    <span class="sb-budgets">${["D", "E"].map((sys) => `<label class="sb-budget" title="Summa för kupong ${sys}. 1 kr per rad, ${DE_BUDGET.min}–${DE_BUDGET.max.toLocaleString("sv-SE")} kr. Tryck Generera kupong efteråt.">${sys}<input type="number" min="${DE_BUDGET.min}" max="${DE_BUDGET.max}" step="1" inputmode="numeric" data-de-budget="${sys}" value="${deBudget[sys]}" aria-label="Summa kupong ${sys} i kronor"${st.busy ? " disabled" : ""}><span>kr</span></label>`).join("")}</span>
+    <span class="sb-budgets">${BUDGET_SYS.map((sys) => `<label class="sb-budget" title="Summa för kupong ${sys}. 1 kr per rad, ${DE_BUDGET.min}–${DE_BUDGET.max.toLocaleString("sv-SE")} kr. Tryck Generera kupong efteråt.">${sys}<input type="number" min="${DE_BUDGET.min}" max="${DE_BUDGET.max}" step="1" inputmode="numeric" data-de-budget="${sys}" value="${deBudget[sys]}" aria-label="Summa kupong ${sys} i kronor"${st.busy ? " disabled" : ""}><span>kr</span></label>`).join("")}</span>
     <span class="sb-actionbar-txt">${n ? `<b>${n}</b> krav ${n === 1 ? "valt" : "valda"}` : "Inga krav valda"}${seal ? ` · <span class="sb-seal-count${nSealed === p.events.length ? " is-done" : ""}">🔒 <b>${nSealed}</b>/${p.events.length} låsta</span>` : ""}${st.dirty ? `<span class="sb-dirty"> · ändrat<span class="sb-dirty-long"> – generera igen</span></span>` : ""}${seal && st.genError ? `<span class="sb-gen-err" role="alert">${esc(st.genError.text)}</span>` : ""}</span>
     <button type="button" class="btn-ghost ds-btn ds-btn--secondary" id="sb-clear"${nClear ? "" : " disabled"} title="${seal ? "Tar bort kraven på olåsta matcher" : "Tar bort alla krav"}">Rensa</button>
     <button type="button" class="btn-fetch sb-generate ds-btn ds-btn--primary" id="sb-generate"${st.busy ? " disabled" : ""}><span class="btn-label">${st.busy ? "Genererar…" : "Generera kupong"}</span></button>
@@ -1643,7 +1627,7 @@ function handleB(ev) {
     // Hämtar live-streck och genererar sedan i bakgrunden (stryk-worker.js)
     liveGenerate(p, st).then(() => {
       st.busy = false;
-      st.dirty = deBudget.D !== st.genRowsD || deBudget.E !== st.genRowsE;
+      st.dirty = deBudget.D !== st.genRowsD || deBudget.E !== st.genRowsE || deBudget.F !== st.genRowsF;
       render();
       flushPendingFile(p, st);
       view.querySelector(".sb-result")?.scrollIntoView({ block: "start", behavior: "smooth" });
@@ -1785,7 +1769,7 @@ function flushPendingFile(p, st) {
   scheduleDeFile(p, st);
 }
 function syncDeBudgetFromDom() {
-  for (const sys of ["D", "E"]) {
+  for (const sys of BUDGET_SYS) {
     const inp = view.querySelector(`input[data-de-budget="${sys}"]`);
     if (!inp) continue;
     deBudget[sys] = clampDeRows(inp.value, deBudget[sys]);
@@ -1794,7 +1778,7 @@ function syncDeBudgetFromDom() {
 }
 function applyDeBudgetInput(inp, { save }) {
   const sys = inp.dataset.deBudget;
-  if (sys !== "D" && sys !== "E") return;
+  if (!BUDGET_SYS.includes(sys)) return;
   const p = data?.products?.find((x) => x.product === product);
   const st = p ? bState(p) : null;
   const mark = () => {

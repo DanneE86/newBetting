@@ -1170,7 +1170,7 @@ export function kravSigns(k) {
  * D = de opts.rowsD (standard 1050) troligaste raderna med minst 30 000 kr för 13 rätt (egna rader, buildCouponD).
  * E = komplement till D (2026-10-07): de opts.rowsE (standard 500) nästa raderna (≥ 30 000 kr) som inte finns i D, med extra vikt på
  *     tecken D saknar i någon match – samma filformat (Egna rader).
- * F = värdemodell 1050 kr (2026-10-08): andelar p_odds/√folk, 1050 egna rader samplade efter andelarna (Egna rader).
+ * F = värdemodell (2026-10-08): andelar p_odds/√folk, opts.rowsF (standard 1050) egna rader samplade efter andelarna (Egna rader).
  *     Fristående från D och E (ingen overlap-logik, inget utdelningsgolv).
  * A = bästa systemet med A:s krav (350–400 kr, spelets utdelningsgräns).
  * C = skrällsystemet (700–850 kr, 50 000–75 000 kr, röd 2–6, högsta rad minst 1 miljon), fritt från A och B.
@@ -1214,7 +1214,7 @@ export function generateCoupons(p, krav, opts = {}) {
     const D = buildCouponD(p, events, forcedFor("D"), base, { rows: rowsD });
     if (D) D.gc = buildCouponDGC(p, events, D.picks.map((x) => [...x.signs].map((s) => SIGNS.indexOf(s))), base, { rows: dgcRowWindow(rowsD) });
     const E = buildCouponE(p, events, forcedFor("E"), base, D, { rows: rowsE });
-    const F = buildCouponF(p, events, forcedFor("F"), base);
+    const F = buildCouponF(p, events, forcedFor("F"), base, { rows: clampDeRows(opts.rowsF, F_RULES.rows) });
     let unionDE = D ? D.hitAll : 0;
     if (E) unionDE += E.hitAll;
     return { D, E, F, unionDE };
