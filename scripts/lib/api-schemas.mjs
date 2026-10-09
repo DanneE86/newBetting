@@ -70,6 +70,6 @@ export const svsSchemas = {
 
 // ---------- ATG ----------
 export const atgSchemas = {
-  calendar: z.object({ date: z.string(), tracks: z.array(z.object({ id: z.number(), name: z.string() })).optional(), games: z.record(z.string(), z.array(z.object({ id: z.string() }))) }),
+  calendar: z.object({ date: z.string(), tracks: z.array(z.object({ id: z.number(), name: z.string() })).optional(), games: z.record(z.string(), z.array(z.object({ id: z.string().optional(), status: z.string().optional() }))) }),
   game: z.object({ id: z.string(), races: z.array(z.object({ id: z.string(), starts: z.array(z.object({ number: z.number() })) })) }),
 };

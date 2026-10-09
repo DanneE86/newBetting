@@ -71,6 +71,7 @@ export async function listGames(date) {
   const out = [];
   for (const type of GAME_TYPES)
     for (const g of cal?.games?.[type] || []) {
+      if (!g.id) continue; // planerade spel utan id ännu
       const trackId = Number(String(g.id).split("_")[2]);
       out.push({ id: g.id, type, track: tracks[trackId] || null, status: g.status, startTime: g.startTime || null });
     }

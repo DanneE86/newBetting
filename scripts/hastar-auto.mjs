@@ -2,7 +2,7 @@
 // uppgiften "Betting hastar auto"), eller för hand:
 //
 //   node scripts/hastar-auto.mjs                 gör det som ska göras just nu (hämta, frysa system, rätta)
-//   node scripts/hastar-auto.mjs --spel V85,V86  vilka spelformer som hämtas (standard V85,V75,V86,GS75)
+//   node scripts/hastar-auto.mjs --spel V85,V86  vilka spelformer som hämtas (standard V85,V86)
 //   node scripts/hastar-auto.mjs --status        visa dagens plan och uppföljningen
 //   node scripts/hastar-auto.mjs --sparade       lägg in sparade analyser som gjordes FÖRE start i uppföljningen
 //
@@ -28,7 +28,7 @@ const arg = (k) => {
   const i = args.indexOf(`--${k}`);
   return i < 0 ? null : args[i + 1] && !args[i + 1].startsWith("--") ? args[i + 1] : true;
 };
-const TYPES = (typeof arg("spel") === "string" ? arg("spel") : "V85,V75,V86,GS75").split(",").map((s) => s.trim().toUpperCase());
+const TYPES = (typeof arg("spel") === "string" ? arg("spel") : "V85,V86").split(",").map((s) => s.trim().toUpperCase());
 const today = () => new Date().toLocaleDateString("sv-SE", { timeZone: "Europe/Stockholm" });
 const readJson = (f) => (fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf8")) : null);
 const writeJson = (f, o) => {
