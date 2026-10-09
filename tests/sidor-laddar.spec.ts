@@ -46,6 +46,13 @@ async function oppna(page: any, vy: string) {
   return fel;
 }
 
+/** Stryktipset: Generera kräver att alla 13 matcher är låsta med hänglåset. */
+async function lasAlla(page: any) {
+  const seals = page.locator('#stryktips-view .sb-seal');
+  const n = await seals.count();
+  for (let i = 0; i < n; i++) if (!/\bon\b/.test((await seals.nth(i).getAttribute('class')) || '')) await seals.nth(i).click();
+}
+
 test('Tips: tipskort med avsparkstid, inga JS-fel', async ({ page }) => {
   const fel = await oppna(page, 'tips');
   const tips = page.locator('#tips .tip');
@@ -108,6 +115,7 @@ test('Stryktipset: kupongtabellen markerar tecken som A, B och C brukar ha fel p
   const fel = await oppna(page, 'stryktipset');
   const view = page.locator('#stryktips-view');
   await expect(view.locator('.sb-row')).toHaveCount(13, { timeout: 30_000 });
+  await lasAlla(page);
   await page.locator('#sb-generate').click();
   const table = view.locator('table.sb-table');
   await expect(table).toBeVisible({ timeout: 60_000 });
@@ -146,6 +154,7 @@ test('Stryktipset: krav på risklagets seger i B ger markeringen ⚠ risklag i B
   await expect(row).toBeVisible({ timeout: 30_000 });
   await row.locator(`.sb-sign[data-sign="${sign}"]`).click();
   await row.locator('.sb-scope [data-scope="B"]').click();
+  await lasAlla(page);
   await page.locator('#sb-generate').click();
   const tr = view.locator('table.sb-table tbody tr').nth(p.events.indexOf(e));
   await expect(tr.locator('td').nth(2).locator('.st-tip'), 'B har kravet').toContainText(sign, { timeout: 60_000 });
@@ -156,6 +165,73 @@ test('Stryktipset: krav på risklagets seger i B ger markeringen ⚠ risklag i B
   await expect(view.locator('.sb-risk-legend')).toContainText('risklag');
   await view.locator('table.sb-table').screenshot({ path: path.join(root, 'test-results', 'stryktips-risk.png') });
   expect(fel, fel.join('\n')).toEqual([]);
+});
+
+test('Stryktipset: hänglås per match – låses bara vid 100 %, låst går inte att ändra, Generera kräver alla låsta', async ({ page }) => {
+  test.setTimeout(300_000);
+  const fel = await oppna(page, 'stryktipset');
+  const view = page.locator('#stryktips-view');
+  const rows = view.locator('.sb-row');
+  await expect(rows).toHaveCount(13, { timeout: 30_000 });
+  await expect(view.locator('.sb-seal')).toHaveCount(13);
+  await expect(page.locator('#sb-generate')).toBeEnabled({ timeout: 120_000 });
+  const inViewport = (el: any) => el.evaluate((n: Element) => { const r = n.getBoundingClientRect(); return r.top >= 0 && r.bottom <= innerHeight; });
+
+  // Inget låst: Generera ger fel och scrollar till match 1
+  await page.locator('#sb-generate').click();
+  await expect(view.locator('.sb-gen-err')).toContainText('Match 1 är inte låst');
+  await expect(rows.nth(0)).toHaveClass(/is-error/);
+  await expect.poll(() => inViewport(rows.nth(0))).toBe(true);
+
+  // D/E/F % som inte blir 100: låset vägrar
+  const r3 = rows.nth(2);
+  if (!(await r3.locator('.sb-defall.is-on').count())) await r3.locator('[data-defall-toggle]').click();
+  const d = r3.locator('.sb-defall-edit[data-defall-sys="D"] input');
+  for (let i = 0; i < 3; i++) { await d.nth(i).fill('50'); await d.nth(i).dispatchEvent('change'); }
+  await r3.locator('.sb-seal').click();
+  await expect(r3.locator('.sb-row-err')).toContainText('Kan inte låsa');
+  await expect(r3.locator('.sb-seal')).not.toHaveClass(/\bon\b/);
+
+  // Alla utom match 3 låsta: Generera säger att match 3 stämmer inte och scrollar dit
+  await lasAlla(page);
+  for (let i = 0; i < 13; i++) if (i !== 2) await expect(rows.nth(i).locator('.sb-seal')).toHaveClass(/\bon\b/);
+  await page.evaluate(() => scrollTo(0, 0));
+  await page.locator('#sb-generate').click();
+  await expect(view.locator('.sb-gen-err')).toContainText('Match 3 stämmer inte');
+  await expect.poll(() => inViewport(r3)).toBe(true);
+
+  // Rätta till 100 % och lås: allt i raden spärras
+  const vals = ['40', '30', '30'];
+  for (let i = 0; i < 3; i++) { await d.nth(i).fill(vals[i]); await d.nth(i).dispatchEvent('change'); }
+  for (const sys of ['E', 'F']) {
+    const inp = r3.locator(`.sb-defall-edit[data-defall-sys="${sys}"] input`);
+    for (let i = 0; i < 3; i++) { await inp.nth(i).fill(vals[i]); await inp.nth(i).dispatchEvent('change'); }
+  }
+  await r3.locator('.sb-seal').click();
+  await expect(r3).toHaveClass(/is-sealed/);
+  for (const s of ['1', 'X', '2']) await expect(r3.locator(`.sb-sign[data-sign="${s}"]`)).toBeDisabled();
+  await expect(r3.locator('.sb-defall input').first()).toBeDisabled();
+  await expect(r3.locator('[data-defall-toggle]')).toBeDisabled();
+  await expect(view.locator('.sb-seal-count')).toContainText('13/13');
+
+  // Låsa upp: går att ändra igen
+  await r3.locator('.sb-seal').click();
+  await expect(r3).not.toHaveClass(/is-sealed/);
+  await expect(r3.locator('.sb-sign[data-sign="1"]')).toBeEnabled();
+  await r3.locator('.sb-seal').click();
+
+  // Allt låst: Generera kör
+  await page.locator('#sb-generate').click();
+  await expect(view.locator('.sb-gen-err')).toHaveCount(0);
+  await expect(page.locator('#sb-generate')).toBeDisabled();
+  expect(fel, fel.join('\n')).toEqual([]);
+});
+
+test('Europatipset har inget hänglås', async ({ page }) => {
+  await oppna(page, 'europatipset');
+  const view = page.locator('#stryktips-view');
+  await expect(view.locator('.sb-row')).toHaveCount(13, { timeout: 30_000 });
+  await expect(view.locator('.sb-seal')).toHaveCount(0);
 });
 
 test('Stryktipset: panelen Risklag denna säsong och etiketten risklag på flaggade lag', async ({ page }) => {

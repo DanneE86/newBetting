@@ -494,6 +494,24 @@ body.view-stryktips main { display: none !important; }
 .sb-krav { display: flex; align-items: center; gap: var(--space-2); }
 .sb-krav-lbl { min-width: 3.2rem; color: var(--color-text-muted); font-size: var(--font-size-xs); text-align: center; }
 .sb-krav-lbl .st-tip { font-size: var(--font-size-xs); }
+/* Hänglås per match (Stryktipset): låst = går inte att ändra, krävs för Generera */
+.sb-seal { flex: none; display: inline-flex; align-items: center; justify-content: center; gap: 4px; min-width: 4.6rem; min-height: var(--target-min); padding: 0 var(--space-2); border: 1px solid var(--color-text-muted); border-radius: var(--radius-md); background: var(--color-surface); color: var(--color-text); font: inherit; font-size: var(--font-size-sm); font-weight: var(--font-weight-bold); line-height: 1; cursor: pointer; }
+.sb-seal > span[aria-hidden] { font-size: 1.1rem; }
+.sb-seal:hover { border-color: var(--color-text); }
+.sb-seal:focus-visible { outline: 2px solid var(--focus-ring-color); outline-offset: 2px; }
+.sb-seal.on { border-color: var(--color-success); background: var(--color-success); color: #fff; }
+.sb-seal.on:hover { filter: brightness(1.1); }
+/* Låst match: tjock grön kant till vänster, grön ram och bakgrund, etikett vid lagnamnen */
+.sb-row.is-sealed { border: 2px solid var(--color-success); background: var(--color-success-bg); box-shadow: inset 6px 0 0 var(--color-success); padding-left: calc(var(--space-3) + 6px); }
+.sb-row.is-sealed .st-num { background: var(--color-success); color: #fff; border-color: var(--color-success); }
+.sb-sealed-tag { align-self: flex-start; margin-bottom: 2px; padding: 1px 8px; border-radius: var(--radius-pill); background: var(--color-success); color: #fff; font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); letter-spacing: 0.06em; text-transform: uppercase; }
+.sb-row.is-sealed .sb-sign:disabled, .sb-row.is-sealed .sb-scope button:disabled, .sb-row.is-sealed .sb-defall button:disabled, .sb-row.is-sealed .sb-defall input:disabled { cursor: not-allowed; opacity: 0.55; }
+.sb-row.is-sealed .sb-sign.on:disabled { opacity: 1; border-color: var(--color-success); box-shadow: inset 0 0 0 1px var(--color-success); }
+.sb-row.is-error { border-width: 2px; border-color: var(--color-danger); box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-danger) 25%, transparent); }
+.sb-row-err { grid-column: 1 / -1; margin: 0; color: var(--color-danger); font-size: var(--font-size-sm); font-weight: var(--font-weight-bold); }
+.sb-seal-count { white-space: nowrap; }
+.sb-seal-count.is-done { color: var(--color-success); }
+.sb-gen-err { display: block; color: var(--color-danger); font-weight: var(--font-weight-bold); }
 .sb-tur { padding: 0; border: 0; background: none; color: var(--color-text); font: inherit; font-weight: var(--font-weight-bold); cursor: pointer; text-decoration: underline dotted; text-underline-offset: 3px; }
 .tur-btn { cursor: pointer; font: inherit; }
 .st-chip.tur-btn { font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); }

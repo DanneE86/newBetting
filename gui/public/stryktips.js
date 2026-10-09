@@ -763,6 +763,9 @@ const bStates = new Map();
 const bKey = (p) => `betting.spikes.${p.product}.${p.drawNumber}`;
 const deFallKey = (p) => `betting.deFall.v2.${p.product}.${p.drawNumber}`; // v2: Av default (ingen auto-På)
 const deFallPrevKey = (p) => `betting.deFallPrev.v2.${p.product}.${p.drawNumber}`; // senaste På-värden (återställs vid På igen)
+const sealKey = (p) => `betting.sealed.${p.product}.${p.drawNumber}`;
+// Hänglås per match: bara Stryktipset. Låst match går inte att ändra, och Generera kräver att alla 13 är låsta.
+const usesSeal = (p) => p?.product === "stryktipset";
 const kravTxt = (k) => (kravSigns(k) || []).map((i) => SIGNS[i]).join("");
 function clampShare(x) { return Math.max(0, Math.min(100, Number(x) || 0)); }
 /** Avrunda sannolikheter till heltal % som summerar till 100. */
@@ -898,9 +901,43 @@ function bState(p) {
       if (signs && x.scope !== "C") krav[nr] = { signs, scope: x.scope || "both" };
       else delete krav[nr];
     }
-    bStates.set(k, { krav, deFall: loadDeFall(p), deFallPrev: loadDeFallPrev(p), result: null, dirty: false, busy: false });
+    let sealed = [];
+    try {
+      sealed = JSON.parse(localStorage.getItem(sealKey(p)) || "[]") || [];
+    } catch {
+      /* privat lage */
+    }
+    bStates.set(k, {
+      krav, deFall: loadDeFall(p), deFallPrev: loadDeFallPrev(p), result: null, dirty: false, busy: false,
+      sealed: new Set(Array.isArray(sealed) ? sealed.map(Number) : []), rowError: {}, genError: null,
+    });
   }
   return bStates.get(k);
+}
+function saveSealed(p, st) {
+  try {
+    localStorage.setItem(sealKey(p), JSON.stringify([...st.sealed]));
+  } catch {
+    /* privat lage */
+  }
+}
+/** Varför matchen inte går att låsa (D/E/F % som inte blir 100 %), annars null. */
+function rowProblem(st, nr) {
+  const pair = normalizeDeFallPair(st.deFall?.[nr]);
+  if (!pair) return null;
+  const bad = DE_SYS.find((sys) => !deFallSumMsg(pair[sys]).ok);
+  return bad ? `${bad}-raden: ${deFallSumMsg(pair[bad]).text}` : null;
+}
+/** Första matchen som stoppar Generera: fel i D/E/F % eller inte låst. */
+function firstSealProblem(p, st) {
+  const open = p.events.filter((e) => !st.sealed.has(e.eventNumber)).length;
+  for (const e of p.events) {
+    const nr = e.eventNumber;
+    const why = rowProblem(st, nr);
+    if (why) return { nr, text: `Match ${nr} stämmer inte (${why}). Rätta till 100 % och lås matchen.` };
+    if (!st.sealed.has(nr)) return { nr, text: `Match ${nr} är inte låst${open > 1 ? ` (${open} matcher olåsta)` : ""}. Klicka på hänglåset när du är klar med matchen.` };
+  }
+  return null;
 }
 function saveKrav(p, st) {
   st.dirty = !!st.result;
@@ -965,15 +1002,15 @@ function deFallSumMsg(s) {
   if (sum < 100) return { sum, over, ok: false, text: `${100 - sum} % saknas (summa ${sum} %)` };
   return { sum, over: 0, ok: true, text: "100 %" };
 }
-function deFallEditLine(label, shares) {
+function deFallEditLine(label, shares, sealed = false) {
   const chk = deFallSumMsg(shares);
   return `<div class="sb-defall-edit is-on${chk.ok ? "" : " is-bad"}" data-defall-sys="${label}">
     <span class="sb-defall-lab" title="Kupong ${label}: din andel 1/X/2 (ska bli 100 %)">${label}</span>
-    ${SIGNS.map((sign, i) => `<label class="sb-defall-i">${sign}<input type="number" min="0" max="100" step="1" inputmode="numeric" data-defall="${i}" data-defall-sys="${label}" value="${shares[i]}" aria-label="${label} ${sign} %"></label>`).join("")}
+    ${SIGNS.map((sign, i) => `<label class="sb-defall-i">${sign}<input type="number" min="0" max="100" step="1" inputmode="numeric" data-defall="${i}" data-defall-sys="${label}" value="${shares[i]}" aria-label="${label} ${sign} %"${sealed ? " disabled" : ""}></label>`).join("")}
     <span class="sb-defall-sum${chk.ok ? "" : " is-bad"}" data-defall-sum role="status">${esc(chk.text)}</span>
   </div>`;
 }
-function deFallRow(e, shares, matchIndex, res, busy) {
+function deFallRow(e, shares, matchIndex, res, busy, sealed = false) {
   const f = fallOf(e);
   const dDist = egnaDistForMatch(res?.D, matchIndex);
   const eDist = egnaDistForMatch(res?.E, matchIndex);
@@ -989,18 +1026,23 @@ function deFallRow(e, shares, matchIndex, res, busy) {
     <div class="sb-defall-head">
       <span class="sb-defall-k" title="Av (default): så D, E och F spelat. På: samma % som startvärden, sedan redigerar du D, E och F var för sig. Modell: D/E/F ≈ vår chans.">${f ? fallTag(f) + " · " : ""}D/E/F %${status}</span>
       <span class="sb-defall-actions">
-        ${on ? `<button type="button" class="ds-toggle" data-defall-model title="Sätt D, E och F från vår modell (samma andelar 1/X/2)">Modell</button>` : ""}
-        <button type="button" class="ds-toggle sb-defall-on${on ? " active" : ""}" data-defall-toggle aria-pressed="${on}" title="${on ? "Stäng av – D/E/F väljer fritt igen" : "Slå på med samma % som visas nu (hur D/E/F spelat)"}">${on ? "På" : "Av"}</button>
+        ${on ? `<button type="button" class="ds-toggle" data-defall-model title="Sätt D, E och F från vår modell (samma andelar 1/X/2)"${sealed ? " disabled" : ""}>Modell</button>` : ""}
+        <button type="button" class="ds-toggle sb-defall-on${on ? " active" : ""}" data-defall-toggle aria-pressed="${on}" title="${on ? "Stäng av – D/E/F väljer fritt igen" : "Slå på med samma % som visas nu (hur D/E/F spelat)"}"${sealed ? " disabled" : ""}>${on ? "På" : "Av"}</button>
       </span>
     </div>
     ${on
-      ? `${deFallEditLine("D", pair.D)}${deFallEditLine("E", pair.E)}${deFallEditLine("F", pair.F)}
+      ? `${deFallEditLine("D", pair.D, sealed)}${deFallEditLine("E", pair.E, sealed)}${deFallEditLine("F", pair.F, sealed)}
     <small class="sb-defall-hint${allOk ? "" : " is-bad"}">${allOk ? esc(deFileNote || "Ändra D så skapas en ny fil") : "Rätta varje rad (D, E och F) till 100 % innan du genererar"}</small>`
       : `${deFallCouponLine("D", dDist, busy)}${deFallCouponLine("E", eDist, busy)}${deFallCouponLine("F", fDist, busy)}
     <small class="sb-defall-hint">Slå På för att redigera – startar med % som visas ovan</small>`}
   </div>`;
 }
-function kravRow(e, krav, pick, deFall, matchIndex, res, busy) {
+function sealButton(e, sealed) {
+  const nr = e.eventNumber;
+  return `<button type="button" class="sb-seal${sealed ? " on" : ""}" data-seal="${nr}" aria-pressed="${sealed}" aria-label="${sealed ? `Lås upp match ${nr}` : `Lås match ${nr}`}" title="${sealed ? "Låst – klicka för att låsa upp och ändra" : "Lås matchen när du är klar (D/E/F % måste bli 100 %)"}"><span aria-hidden="true">${sealed ? "🔒" : "🔓"}</span><span class="sb-seal-txt">${sealed ? "Låst" : "Lås"}</span></button>`;
+}
+function kravRow(e, krav, pick, deFall, matchIndex, res, busy, seal = null) {
+  const sealed = !!seal?.sealed;
   // Äldre sparade D/E-scope → Alla (D/E styrs via fördelning i stället)
   const scope = (krav?.scope === "D" || krav?.scope === "E") ? "all" : (krav?.scope || "both");
   const signs = krav?.signs || "";
@@ -1008,18 +1050,21 @@ function kravRow(e, krav, pick, deFall, matchIndex, res, busy) {
   // Modellens mest sannolika tecken markeras så man ser förslaget innan man sätter krav
   const best = e.final ? e.final.indexOf(Math.max(...e.final)) : -1;
   const shares = deFall?.[e.eventNumber];
-  return `<div class="sb-row${krav ? " locked" : ""}${shares ? " has-defall" : ""}" data-ev="${e.eventNumber}">
+  const dis = sealed ? " disabled" : "";
+  return `<div class="sb-row${krav ? " locked" : ""}${shares ? " has-defall" : ""}${sealed ? " is-sealed" : ""}${seal?.error ? " is-error" : ""}" data-ev="${e.eventNumber}">
     <span class="st-num">${e.eventNumber}</span>
-    <div class="sb-match"><b>${teamName(e, "home")} – ${teamName(e, "away")}</b><small><span class="st-kick">${esc(kickoff(e.kickoff))}</span> · ${esc(e.league || "")}${refereeBadge(e)}${tur?.tur ? ` · <button type="button" class="sb-tur tur-btn" data-ev="${e.eventNumber}" aria-expanded="${turOpen.has(turKey(e))}">🍀 turmatch (${esc(pick.signs)} missar ${pct(tur.rate)}) ${turOpen.has(turKey(e)) ? "▲" : "– varför? ▼"}</button>` : ""}</small></div>
+    <div class="sb-match">${sealed ? `<span class="sb-sealed-tag">🔒 Låst</span>` : ""}<b>${teamName(e, "home")} – ${teamName(e, "away")}</b><small><span class="st-kick">${esc(kickoff(e.kickoff))}</span> · ${esc(e.league || "")}${refereeBadge(e)}${tur?.tur ? ` · <button type="button" class="sb-tur tur-btn" data-ev="${e.eventNumber}" aria-expanded="${turOpen.has(turKey(e))}">🍀 turmatch (${esc(pick.signs)} missar ${pct(tur.rate)}) ${turOpen.has(turKey(e)) ? "▲" : "– varför? ▼"}</button>` : ""}</small></div>
     <div class="sb-krav">
-      <div class="sb-signs${signs.length === 1 ? " spik" : ""}" role="group" aria-label="Krav match ${e.eventNumber}">${SIGNS.map((s, i) => `<button type="button" class="sb-sign${signs.includes(s) ? " on" : ""}${i === best ? " best" : ""}" data-sign="${s}" aria-pressed="${signs.includes(s)}" title="${i === best ? "Modellens mest sannolika tecken · " : ""}Folket ${pct(e.folk?.[i])}">${s}<small>${pct(e.final[i])}</small>${oddsUnder(e, i)}</button>`).join("")}</div>
+      <div class="sb-signs${signs.length === 1 ? " spik" : ""}" role="group" aria-label="Krav match ${e.eventNumber}">${SIGNS.map((s, i) => `<button type="button" class="sb-sign${signs.includes(s) ? " on" : ""}${i === best ? " best" : ""}" data-sign="${s}" aria-pressed="${signs.includes(s)}" title="${i === best ? "Modellens mest sannolika tecken · " : ""}Folket ${pct(e.folk?.[i])}"${dis}>${s}<small>${pct(e.final[i])}</small>${oddsUnder(e, i)}</button>`).join("")}</div>
       <span class="sb-krav-lbl" title="${krav ? "Ditt krav på matchen" : "Inget krav – kupongen väljer själv"}">${krav ? `<span class="st-tip ${kravType(signs)}">${esc(signs)}</span>` : "inget krav"}</span>
+      ${seal ? sealButton(e, sealed) : ""}
     </div>
     ${krav
-      ? `<div class="sb-scope" role="group" aria-label="Kravet gäller"><span class="sb-scope-k">Gäller</span>${SCOPES.map(([k, lbl]) => `<button type="button" class="ds-toggle" data-scope="${k}" aria-pressed="${scope === k}" title="${esc(SCOPE_TITLE[k])}">${lbl}</button>`).join("")}</div>`
+      ? `<div class="sb-scope" role="group" aria-label="Kravet gäller"><span class="sb-scope-k">Gäller</span>${SCOPES.map(([k, lbl]) => `<button type="button" class="ds-toggle" data-scope="${k}" aria-pressed="${scope === k}" title="${esc(SCOPE_TITLE[k])}"${dis}>${lbl}</button>`).join("")}</div>`
       : `<div class="sb-scope is-empty" aria-hidden="true"></div>`}
-    ${deFallRow(e, shares, matchIndex, res, busy)}
-    ${tur?.tur && turOpen.has(turKey(e)) ? turExplain(e, tur, { actions: true, krav }) : ""}
+    ${deFallRow(e, shares, matchIndex, res, busy, sealed)}
+    ${seal?.error ? `<p class="sb-row-err" role="alert">${esc(seal.error)}</p>` : ""}
+    ${tur?.tur && turOpen.has(turKey(e)) ? turExplain(e, tur, { actions: !sealed, krav }) : ""}
   </div>`;
 }
 
@@ -1401,6 +1446,9 @@ function renderB(p, head, top = "", extras = "") {
     keepOpen.add("stats");
   }
   const n = Object.keys(st.krav).length;
+  const seal = usesSeal(p);
+  const nSealed = seal ? p.events.filter((e) => st.sealed.has(e.eventNumber)).length : 0;
+  const nClear = Object.keys(st.krav).filter((nr) => !(seal && st.sealed.has(Number(nr)))).length;
   const res = st.result;
   // Turmatcher utgår från kupong A: den genererade om den finns, annars hämtningens kupong A
   const picksA = p.events.map((e, i) => res?.A?.picks[i] || e.systemPick || null);
@@ -1414,11 +1462,15 @@ function renderB(p, head, top = "", extras = "") {
             <li>Ett tecken (1, X eller 2) är en <b>spik</b>, två tecken (1X, X2, 12) en <b>halvgardering</b> och alla tre en <b>helgardering</b>. Klicka igen för att ta bort ett tecken.</li>
             <li><b>Gäller</b>: A+B, bara A, bara B eller Alla. D, E och F styrs med <b>D/E/F %</b> under matchen, inte här.</li>
             <li>Matcher utan krav väljer kupongen själv. Tryck <b>Generera kupong</b> i raden längst ner när du är klar.</li>
+            ${seal ? "<li>Klicka på <b>hänglåset</b> när du är klar med en match. En låst match går inte att ändra – klicka på låset igen för att låsa upp. Matchen går bara att låsa om D/E/F % blir 100 %, och <b>Generera kupong</b> kräver att alla 13 matcher är låsta.</li>" : ""}
           </ul>
         </details>
       </div>
     </div>
-    <div class="sb-list">${p.events.map((e, i) => kravRow(e, st.krav[e.eventNumber], picksA[i], st.deFall, i, res, st.busy)).join("")}</div>
+    <div class="sb-list">${p.events.map((e, i) => kravRow(e, st.krav[e.eventNumber], picksA[i], st.deFall, i, res, st.busy, seal ? {
+      sealed: st.sealed.has(e.eventNumber),
+      error: st.rowError[e.eventNumber] || (st.genError?.nr === e.eventNumber ? st.genError.text : ""),
+    } : null)).join("")}</div>
   </section>`;
   const result = res
     ? `<section class="sb-panel sb-result ds-card">
@@ -1471,8 +1523,8 @@ function renderB(p, head, top = "", extras = "") {
   // Sticky åtgärdsrad: alltid nåbar, oavsett var på sidan man är
   const bar = `<div class="sb-actionbar${st.dirty ? " is-dirty" : ""}" role="region" aria-label="Kupongåtgärder">
     <span class="sb-budgets">${["D", "E"].map((sys) => `<label class="sb-budget" title="Summa för kupong ${sys}. 1 kr per rad, ${DE_BUDGET.min}–${DE_BUDGET.max.toLocaleString("sv-SE")} kr. Tryck Generera kupong efteråt.">${sys}<input type="number" min="${DE_BUDGET.min}" max="${DE_BUDGET.max}" step="1" inputmode="numeric" data-de-budget="${sys}" value="${deBudget[sys]}" aria-label="Summa kupong ${sys} i kronor"${st.busy ? " disabled" : ""}><span>kr</span></label>`).join("")}</span>
-    <span class="sb-actionbar-txt">${n ? `<b>${n}</b> krav ${n === 1 ? "valt" : "valda"}` : "Inga krav valda"}${st.dirty ? `<span class="sb-dirty"> · ändrat<span class="sb-dirty-long"> – generera igen</span></span>` : ""}</span>
-    <button type="button" class="btn-ghost ds-btn ds-btn--secondary" id="sb-clear"${n ? "" : " disabled"}>Rensa</button>
+    <span class="sb-actionbar-txt">${n ? `<b>${n}</b> krav ${n === 1 ? "valt" : "valda"}` : "Inga krav valda"}${seal ? ` · <span class="sb-seal-count${nSealed === p.events.length ? " is-done" : ""}">🔒 <b>${nSealed}</b>/${p.events.length} låsta</span>` : ""}${st.dirty ? `<span class="sb-dirty"> · ändrat<span class="sb-dirty-long"> – generera igen</span></span>` : ""}${seal && st.genError ? `<span class="sb-gen-err" role="alert">${esc(st.genError.text)}</span>` : ""}</span>
+    <button type="button" class="btn-ghost ds-btn ds-btn--secondary" id="sb-clear"${nClear ? "" : " disabled"} title="${seal ? "Tar bort kraven på olåsta matcher" : "Tar bort alla krav"}">Rensa</button>
     <button type="button" class="btn-fetch sb-generate ds-btn ds-btn--primary" id="sb-generate"${st.busy ? " disabled" : ""}><span class="btn-label">${st.busy ? "Genererar…" : "Generera kupong"}</span></button>
   </div>`;
   view.innerHTML = `${head}${data.error ? `<p class="st-note bad ds-notice ds-notice--danger">Kunde inte uppdatera: ${esc(data.error)}</p>` : ""}${skrallTipBox(p, res)}${top}${picker}${result}${miss.tur}${riskPanel(p)}${matches}${stats}${bar}`;
@@ -1485,6 +1537,32 @@ function handleB(ev) {
   const row = ev.target.closest(".sb-row");
   const signBtn = ev.target.closest(".sb-sign");
   const scopeBtn = ev.target.closest(".sb-scope button");
+  const seal = usesSeal(p);
+  const sealBtn = ev.target.closest("[data-seal]");
+  if (seal && sealBtn) {
+    const nr = Number(sealBtn.dataset.seal);
+    if (st.sealed.has(nr)) {
+      st.sealed.delete(nr);
+      delete st.rowError[nr];
+    } else {
+      const why = rowProblem(st, nr);
+      if (why) {
+        st.rowError[nr] = `Kan inte låsa: ${why}. Rätta till 100 % först.`;
+      } else {
+        st.sealed.add(nr);
+        delete st.rowError[nr];
+        if (st.genError?.nr === nr) st.genError = null;
+      }
+    }
+    saveSealed(p, st);
+    const y = window.scrollY;
+    render();
+    window.scrollTo(0, y);
+    return true;
+  }
+  // Låst match: inget i raden går att ändra (bara låset och turförklaringen)
+  if (seal && row && st.sealed.has(Number(row.dataset.ev)) && ev.target.closest(".sb-sign, .sb-scope button, [data-defall-toggle], [data-defall-model], .sb-tur-add")) return true;
+  if (row) delete st.rowError[row.dataset.ev];
   if (row && signBtn) {
     const nr = row.dataset.ev, s = signBtn.dataset.sign;
     const cur = st.krav[nr]?.signs || "";
@@ -1533,6 +1611,7 @@ function handleB(ev) {
     const btns = turBtn ? [turBtn] : [...view.querySelectorAll(".sb-tur-add")];
     for (const b of btns) {
       if (["both", "A", "all"].includes(st.krav[b.dataset.ev]?.scope)) continue; // kupong A:s krav ligger kvar
+      if (seal && st.sealed.has(Number(b.dataset.ev))) continue;
       st.krav[b.dataset.ev] = { signs: b.dataset.signs, scope: "B" };
     }
     saveKrav(p, st);
@@ -1540,12 +1619,24 @@ function handleB(ev) {
     return true;
   }
   if (ev.target.closest("#sb-clear")) {
-    st.krav = {};
+    if (seal) {
+      for (const nr of Object.keys(st.krav)) if (!st.sealed.has(Number(nr))) delete st.krav[nr];
+    } else st.krav = {};
     saveKrav(p, st);
     render();
     return true;
   }
   if (ev.target.closest("#sb-generate")) {
+    if (seal) {
+      st.genError = firstSealProblem(p, st);
+      if (st.genError) {
+        render();
+        const bad = view.querySelector(`.sb-row[data-ev="${st.genError.nr}"]`);
+        bad?.scrollIntoView({ block: "center", behavior: "smooth" });
+        bad?.querySelector(".sb-defall-edit.is-bad input, [data-seal]")?.focus({ preventScroll: true });
+        return true;
+      }
+    }
     syncDeBudgetFromDom();
     st.busy = true;
     render();
@@ -1597,6 +1688,14 @@ function applyDeFallInput(inp, { save }) {
   if (!nr && nr !== 0) return;
   const sys = inp.dataset.defallSys || inp.closest("[data-defall-sys]")?.dataset.defallSys || "D";
   if (!DE_SYS.includes(sys)) return;
+  if (usesSeal(p) && st.sealed.has(nr)) return;
+  if (st.rowError[nr] || st.genError?.nr === nr) {
+    delete st.rowError[nr];
+    if (st.genError?.nr === nr) st.genError = null;
+    box?.closest(".sb-row")?.classList.remove("is-error");
+    box?.closest(".sb-row")?.querySelector(".sb-row-err")?.remove();
+    view.querySelector(".sb-gen-err")?.remove();
+  }
   const pair = normalizeDeFallPair(st.deFall[nr]) || { D: [...DE_FALL_DEFAULT], E: [...DE_FALL_DEFAULT], F: [...DE_FALL_DEFAULT] };
   const i = Number(inp.dataset.defall);
   const cur = [...pair[sys]];
