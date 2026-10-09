@@ -94,6 +94,9 @@ test('Stryktipset: en sida, egna krav genererar kupong A och B', async ({ page }
   for (const s of ['1', 'X', '2']) await rows.nth(5).locator(`.sb-sign[data-sign="${s}"]`).click();
   await rows.nth(5).locator('.sb-scope button[data-scope="A"]').click();
   await expect(rows.nth(1).locator('.sb-krav-lbl')).toHaveText('1X');
+  // Generera kräver att alla 13 matcher är låsta med hänglåset
+  for (let i = 0; i < 13; i++) await rows.nth(i).locator('.sb-seal').click();
+  await expect(page.locator('.sb-seal.on')).toHaveCount(13);
   await page.click('#sb-generate');
   const table = page.locator('.sb-table tbody tr');
   await expect(table).toHaveCount(13);
@@ -156,6 +159,7 @@ test('Stryktipset: en sida, egna krav genererar kupong A och B', async ({ page }
   if (freeNrs.length) {
     const nr = freeNrs[0];
     const row = page.locator(`.sb-row[data-ev="${nr}"]`);
+    await row.locator('.sb-seal').click(); // lås upp för att kunna ändra
     await row.locator('.sb-sign[data-sign="X"]').click();
     await expect(page.locator(`.sb-tur-add[data-ev="${nr}"]`)).toHaveCount(0);
     await page.locator('.sb-tur-all').click().catch(() => {});
