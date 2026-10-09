@@ -81,6 +81,7 @@ export function normRecord(r) {
   const place = r.place == null || r.place === "" ? null : Number(r.place);
   return {
     date: r.date,
+    raceId: r.race?.id || null,
     place: Number.isFinite(place) ? place : null,
     galloped: !!r.galloped,
     disqualified: !!r.disqualified,
@@ -103,7 +104,8 @@ export function normRecord(r) {
 
 /**
  * Strecket och vinnaroddsen just nu (ATG:s spel-svar), för att kunna jämföra förmiddag mot spelstopp (sena pengar).
- * { at, turnover, races: { <lopp-id>: { <nr>: [streck 0–1, vinnarodds] } } }. Strukna hästar tas inte med.
+ * { at, turnover, races: { <lopp-id>: { <nr>: [streck 0–1, vinnarodds, lägsta platsodds] } } }. Strukna hästar tas
+ * inte med. Platsodds sparas sedan 2026-10-09 (äldre bilder har två värden).
  */
 export function streckSnapshot(game, at = new Date().toISOString()) {
   const type = game?.type || String(game?.id || "").split("_")[0];
@@ -114,7 +116,8 @@ export function streckSnapshot(game, at = new Date().toISOString()) {
       if (st.scratched) continue;
       const d = st.pools?.[type]?.betDistribution;
       const o = st.pools?.vinnare?.odds;
-      row[st.number] = [d != null ? d / 10000 : null, o ? o / 100 : null];
+      const pl = st.pools?.plats?.minOdds;
+      row[st.number] = [d != null ? d / 10000 : null, o ? o / 100 : null, pl ? pl / 100 : null];
     }
     races[r.id] = row;
   }
@@ -386,6 +389,8 @@ function comments(h, race) {
   if (last) {
     if (last.place === 1 && !last.galloped) out.push("Vann senast");
     if (last.galloped) out.push("Galopp senast");
+    else if (last.efter != null && !last.galopp && last.efter <= 15 && !(last.place >= 1 && last.place <= 3))
+      out.push(`${last.place > 3 ? `${last.place}:a` : "Oplacerad"} senast, bara ${Math.max(0, Math.round(last.efter))} m efter vinnaren`);
     if (h.driverId && last.driverId && h.driverId !== last.driverId) out.push(`Kuskbyte: ${h.driver} (senast ${last.driver || "annan"})`);
     if (last.distance && Math.abs(last.distance - h.distance) >= 400) out.push(`Distansändring ${last.distance} → ${h.distance} m`);
     if (last.startMethod && last.startMethod !== race.startMethod) out.push(`Byter till ${START_METHOD[race.startMethod]?.toLowerCase() || race.startMethod}`);

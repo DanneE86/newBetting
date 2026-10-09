@@ -140,8 +140,8 @@ async function completeSeason() {
 
 /**
  * Spelar varje budget på varje omgång. Varianter: rakt (som knapparna), reducerat (utgång 4×, inga villkor), streck
- * (folkets system), utdelning (buildValueSystem: högst förväntad utdelning), skrall3 (reducerat, utgång 16×, minst 3
- * hästar under 10 % streck per rad). alpha "standard" = defaultAlpha(spelform), som i webben.
+ * (folkets system), utdelning (buildValueSystem: högst förväntad utdelning), skrallN (reducerat, utgång 16×, minst N
+ * hästar under 10 % streck per rad, t.ex. skrall2/skrall3/skrall4). alpha "standard" = defaultAlpha(spelform), som i webben.
  */
 export function runBacktest(games, { budgets = BUDGETS, alpha = 0.5, minTop = MIN_TOP, optsFor = () => ({}), variants = ["rakt", "reducerat", "streck"], sims = 2000 } = {}) {
   const has = (v) => variants.includes(v);
@@ -175,9 +175,9 @@ export function runBacktest(games, { budgets = BUDGETS, alpha = 0.5, minTop = MI
         const sysLegs = v.legs.map((l) => l.horses);
         by.utdelning = { ...settle(rowsByCorrect(sysLegs, winners), game.payouts, price), system: sysLegs, evRoi: v.evRoi, alpha: v.alpha, top: v.chosenTop };
       }
-      if (has("skrall3")) {
-        const r = reduceSystem(legs, { minSkrall: 3 }, { budget, price, alpha: al, expand: 16, minTop, topShare });
-        by.skrall3 = settle(rowsByCorrectList(r.rows, winners), game.payouts, price);
+      for (const v of variants.filter((x) => /^skrall\d$/.test(x))) {
+        const r = reduceSystem(legs, { minSkrall: Number(v.slice(6)) }, { budget, price, alpha: al, expand: 16, minTop, topShare });
+        by[v] = settle(rowsByCorrectList(r.rows, winners), game.payouts, price);
       }
       row.by[budget] = by;
     }
@@ -207,7 +207,8 @@ async function modelOpts(kind, year) {
   const { postTable } = await import("./lib/trav-model.mjs");
   const rap = path.join(HIST, "lararapport.json");
   const lambda = fs.existsSync(rap) ? JSON.parse(fs.readFileSync(rap, "utf8")).lambda : 128;
-  const rows = buildRows(loadSeasons(), { postTable });
+  const { withLopp } = await import("./hastar-lopp.mjs");
+  const rows = buildRows(withLopp(loadSeasons()), { postTable });
   const cache = new Map();
   // --traning kvartal: vikterna tränas om per kvartal i stället för per månad (3 × snabbare, samma princip)
   const quarter = arg("traning") === "kvartal";
@@ -239,6 +240,8 @@ async function backtestSeason() {
   const minTop = Math.max(MIN_TOP, typeof arg("topp") === "string" ? Number(arg("topp")) : MIN_TOP);
   const games = [...readSeason(year).values()].filter((g) => isSettled(g) && types.includes(g.type));
   if (!games.length) throw new Error(`Ingen säsongsdata för ${year} – kör --hamta först`);
+  const { withLopp } = await import("./hastar-lopp.mjs");
+  withLopp(games);
   log(`Bakkör ${games.length} omgångar (${year}, ${types.join("/")}) × ${budgets.length} budgetar, modell: ${kind} …`);
   const optsFor = await modelOpts(kind, year);
   const out = { updatedAt: new Date().toISOString(), year: Number(year), model: kind, note: "Slutstreck och slutodds används – något för snällt mot systemet.", alpha, minTop, ...runBacktest(games, { optsFor, alpha, minTop, variants, budgets }) };

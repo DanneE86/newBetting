@@ -125,7 +125,8 @@ export const LEARNED = ${JSON.stringify(learned, null, 1)};
 }
 
 async function main() {
-  const games = loadSeasons();
+  const { withLopp } = await import("./hastar-lopp.mjs");
+  const games = withLopp(loadSeasons());
   if (!games.length) throw new Error("Inga säsongsfiler – kör node scripts/hastar-sasong.mjs --hamta först");
   const rows = buildRows(games, { postTable });
   log(`${games.length} omgångar, ${rows.length} lopp (${rows[0].date} – ${rows.at(-1).date}), ${FEATURE_KEYS.length} faktorer`);

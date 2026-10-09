@@ -17,6 +17,8 @@ import { normalizeGame, analyzeGame, backtest, resultsOf, streckSnapshot } from 
 import { logTips, settleTips, hastRecords } from "./lib/tipslogg.mjs";
 import { request } from "./lib/http.mjs";
 import { atgSchemas } from "./lib/api-schemas.mjs";
+import { attachFieldInfo } from "./lib/hast-lopp.mjs";
+import { fetchRace } from "./hastar-lopp.mjs";
 
 /** Tipslogg (data/tipslogg/hastar): loppen före start sparas, facit ur analysens resultat. */
 async function tipslogg(a) {
@@ -92,6 +94,23 @@ export async function fetchGame(id) {
   return { game, details };
 }
 
+/** Hela fältets resultat i de PAST_RACES senaste loppen per häst (compactRace), återanvänder redan hämtade. */
+const PAST_RACES = 3;
+async function fetchPastRaces(fetched, have) {
+  const byId = new Map(have.map((r) => [r.id, r]));
+  const want = new Map();
+  for (const f of fetched)
+    for (const det of Object.values(f.details || {}))
+      for (const r of (det?.horse?.results?.records || []).filter((x) => !x.scratched).slice(0, PAST_RACES))
+        if (r.race?.id && !byId.has(r.race.id)) want.set(r.race.id, r.track?.name || null);
+  await pool([...want], 4, async ([rid, track]) => {
+    const c = await fetchRace(rid, track).catch(() => null);
+    if (c) byId.set(rid, c);
+  });
+  if (want.size) log(`Tidigare lopp: ${want.size} hämtade (${byId.size} totalt)`);
+  return [...byId.values()];
+}
+
 /** Hämtar spelet (+ DD samma dag och bana) och sparar ALLT i en rådatafil. */
 export async function fetchAll(id, calendarEntry) {
   log(`Hämtar ${id} …`);
@@ -110,7 +129,8 @@ export async function fetchAll(id, calendarEntry) {
   // Strecket vid varje hämtning sparas i samma fil (snapshots), så att förmiddag kan jämföras mot spelstopp
   const prev = readJson(path.join(DIR, "raw", `${id}.json`));
   const snapshots = [...(prev?.snapshots || (prev?.main?.game ? [streckSnapshot(prev.main.game, prev.fetchedAt)] : [])), streckSnapshot(main.game, fetchedAt)];
-  const raw = { fetchedAt, source: API, id, main, dd, snapshots };
+  const lopp = await fetchPastRaces([main, dd].filter(Boolean), prev?.lopp || []);
+  const raw = { fetchedAt, source: API, id, main, dd, snapshots, lopp };
   writeJson(path.join(DIR, "raw", `${id}.json`), raw);
   log(`Rådata sparad: data/hastar/raw/${id}.json`);
   return raw;
@@ -119,6 +139,7 @@ export async function fetchAll(id, calendarEntry) {
 export async function analyzeRaw(raw) {
   const game = normalizeGame(raw.main.game, raw.main.details);
   const ddGame = raw.dd ? normalizeGame(raw.dd.game, raw.dd.details) : null;
+  if (raw.lopp?.length) attachFieldInfo([game, ddGame].filter(Boolean), new Map(), { byId: new Map(raw.lopp.map((r) => [r.id, r])) });
   const analysis = { ...analyzeGame(game, ddGame), fetchedAt: raw.fetchedAt, analyzedAt: new Date().toISOString() };
   const results = resultsOf(raw.main.game);
   if (raw.dd) Object.assign(results, resultsOf(raw.dd.game));

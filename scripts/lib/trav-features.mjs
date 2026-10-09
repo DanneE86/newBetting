@@ -129,6 +129,11 @@ export function rawFeatures(race, h, ctx = {}) {
   const sc = sh ? shoeChange(sh, last?.shoes) : null;
   const df = ctx.driverForm && h.driverId ? ctx.driverForm(h.driverId, date) : null;
   const oddsHist = last5.filter((r) => r.odds > 1).map((r) => Math.log(r.odds));
+  // Fältets resultat i tidigare lopp (hast-lopp.mjs): meter efter vinnaren och km-tid mot fältets median
+  const efterM = (r) => (r && r.efter != null && !r.galopp ? clamp(r.efter, -30, 150) : null);
+  const ef3 = rec.slice(0, 3).map(efterM).filter((x) => x != null);
+  const mf3 = rec.slice(0, 3).filter((r) => r.motFalt != null && !r.galopp).map((r) => clamp(r.motFalt, -5, 8));
+  const placed = (r) => r.place >= 1 && r.place <= 3 && !r.disqualified;
   const prize = last5.filter((r) => r.firstPrize > 0).map((r) => Math.log(r.firstPrize));
   return {
     form,
@@ -165,6 +170,10 @@ export function rawFeatures(race, h, ctx = {}) {
     motstand: prize.length ? mean(prize) : null,
     pengar: h.money != null ? Math.log(1 + h.money) : null,
     sparNr: h.post ?? null,
+    efterSenast: efterM(last) != null ? -efterM(last) : null,
+    efterSnitt3: ef3.length ? -mean(ef3) : null,
+    naraUtanPlats: last && last.efter !== undefined ? (efterM(last) != null && efterM(last) <= 15 && !placed(last) ? 1 : 0) : null,
+    motFalt3: mf3.length ? -mean(mf3) : null,
   };
 }
 
