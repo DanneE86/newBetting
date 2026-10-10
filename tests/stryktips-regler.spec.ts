@@ -136,8 +136,14 @@ test('matcher: avsparkstid, tips = troligaste tecknet, Värde/Ej värde räknat 
       expect(e.tip, at).toBe(SIGNS[top]);
       expect(e.tipP, at).toBeCloseTo(e.final[top], 3);
       // Procentens kalla: odds + modell, eller utan odds modell 50 % + folk 50 % (basis '<modell>+folk'); utan lagmodell bara oddsen ('market')
-      expect(e.basis, at).toMatch(/^(club|elo|clubelo)(\+folk)?$|^(market|folk|none)$/);
-      if (e.market && e.model) {
+      expect(e.basis, at).toMatch(/^(club|elo|clubelo)(\+folk)?$|^(market|folk|none|oddset)$/);
+      if (e.basis === 'oddset') {
+        // Icke-spikbar match tipsad som Oddset: Oddsets 1X2 (normerad), inte vår odds+modell-blandning
+        expect(e.tipBasis, at).toBe('oddset');
+        expect(e.oddsetTip, at).toBeTruthy();
+        expect(e.spik?.used && e.spik.spikbar, `${at}: spikbar match tipsas aldrig som Oddset`).toBeFalsy();
+        expect(e.final.reduce((s: number, x: number) => s + x, 0), at).toBeCloseTo(1, 2);
+      } else if (e.market && e.model) {
         // Domare med låg hemmavinst och ny tränare flyttar procenten efteråt (finalBase = före)
         (e.finalBase || e.final).forEach((x: number, i: number) => expect(x, `${at} odds+modell`).toBeCloseTo((1 - e.modelWeight) * e.market[i] + e.modelWeight * e.model[i], 2));
       } else if (/\+folk$/.test(e.basis)) {
@@ -387,7 +393,8 @@ test('reducerade system: budget, teckenregler, rader inom grundraden', () => {
       expect(red.hitAll, at).toBeLessThanOrEqual(red.grundHit + 1e-9);
       expect(red.grundHit, at).toBeLessThanOrEqual(1);
       // Systemen byggs på matchens justerade procent (spikbedömningen) när den används
-      const sysP = (e: any) => (e.spik?.used ? e.spik.sysP : e.final);
+      // Tips som Oddset (tipBasis 'oddset'): Oddsets procent, inte spikbedömningens
+      const sysP = (e: any) => (e.tipBasis !== 'oddset' && e.spik?.used ? e.spik.sysP : e.final);
       const grundHit = p.events.reduce((h: number, e: any, i: number) => h * picks[i].split('').reduce((s, c) => s + sysP(e)[idx(c)], 0), 1);
       expect(red.grundHit / grundHit, at).toBeCloseTo(1, 1);
       const hit = red.rowList.reduce((s: number, row: string) => s + row.split('').reduce((q, c, i) => q * sysP(p.events[i])[idx(c)], 1), 0);

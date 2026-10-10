@@ -32,6 +32,12 @@ export const TOP_SHARE = { V85: 0.195, V86: 0.26, V75: 0.26, GS75: 0.285, V64: 0
 // Alla system ska alltid kunna ge minst MIN_TOP kr vid alla rätt (användarens krav 2026-10-03); högre spärr kan väljas
 export const MIN_TOP = 50000;
 export const TOP_LEVELS = [50000, 250000, 1000000];
+// 50 000-systemet: reducerat, utgång 16 ×, varje rad ska kunna ge minst RAD_TOP kr vid alla rätt. Bakkört 2026-10-10
+// (365 omg V85/V75 2022–2026, rullande modell), spärrar 30k/50k/75k/100k/200k per rad provade: 50 000 på 2000 kr bäst –
+// +129 % (utan största +87 %, utan 3 största +39 %, 8 vinster ≥ 50 000 kr, plus 4 av 5 år, 2024 −81 %). 200 000 gav
+// +740 % men utan 3 största −64 %. 1000 kr +91 % (utan 3 −44 %), 500 kr +127 % (utan 3 −54 %). Därför minst RAD_TOP_MIN_BUDGET.
+export const RAD_TOP = 50000;
+export const RAD_TOP_MIN_BUDGET = 2000;
 export const SKRALL_MAX = 0.1; // häst med streck under 10 % räknas som skräll i systemvillkoren
 // Standard per spelform (bakkörning 2026-10-04: V75 2021–2025 370 omg + V85 74 omg, riktig utdelning, spärr 50 000 kr):
 // Värdefokus Hög (alpha 1) slog Normal (0,5) i 3 av 4 perioder på 1000 och 2000 kr och 2 av 4 på 200 och 500 kr,
@@ -187,7 +193,8 @@ function optimizeWithTop(pools, legs, locked, maxRows, targetLogS) {
 export const rowCount = (sys) => sys.legs.reduce((a, l) => a * l.horses.length, 1);
 
 /**
- * Reducerat system. conds: { minA, maxA, minSkrall, maxSkrall, minStreck, maxStreck } (streck i procent, summa över raden).
+ * Reducerat system. conds: { minA, maxA, minSkrall, maxSkrall, minStreck, maxStreck, minRowTop } (streck i procent, summa över raden;
+ * minRowTop = varje rad ska kunna ge minst så många kr vid alla rätt).
  * expand: utgångssystemet får kosta budget × expand. Returnerar raderna (startnummer per avdelning).
  */
 export function reduceSystem(legs, conds = {}, { budget, price = 0.5, alpha = 0.5, expand = 4, maxEnum = 300000, locked = {}, minTop = 0, topShare = 0.25 } = {}) {
@@ -227,7 +234,8 @@ export function reduceSystem(legs, conds = {}, { budget, price = 0.5, alpha = 0.
       (!has("maxSkrall") || sk <= +conds.maxSkrall) &&
       (!has("minStreck") || st >= +conds.minStreck) &&
       (!has("maxStreck") || st <= +conds.maxStreck);
-    if (ok) kept.push({ nrs: idx.map((j, i) => choice[i][j].nr), p, w, top: rowPayout(sp, price, topShare) });
+    const top = rowPayout(sp, price, topShare);
+    if (ok && (!has("minRowTop") || top >= +conds.minRowTop)) kept.push({ nrs: idx.map((j, i) => choice[i][j].nr), p, w, top });
     let k = n - 1;
     while (k >= 0 && ++idx[k] >= choice[k].length) idx[k--] = 0;
     if (k < 0) break;

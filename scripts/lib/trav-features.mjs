@@ -68,6 +68,43 @@ export function driverIndex(games) {
   };
 }
 
+/**
+ * Tränarhistorik per häst ur V-spelsstarterna: { häst-id: [[datum, tränar-id], …] } sorterat på datum.
+ * ATG:s tidigare starter saknar tränare, så bytet ses bara mellan hästens V-spelsstarter.
+ */
+export function trainerTimeline(games) {
+  const tl = {};
+  for (const g of games)
+    for (const race of g.races) {
+      const d = String(race.startTime || g.date || "").slice(0, 10);
+      for (const s of race.starts) {
+        if (s.horseId == null || s.trainerId == null || !d) continue;
+        (tl[s.horseId] ||= []).push([d, s.trainerId]);
+      }
+    }
+  for (const k of Object.keys(tl)) {
+    const seen = new Set();
+    tl[k] = tl[k].sort((a, b) => a[0].localeCompare(b[0])).filter(([d]) => (seen.has(d) ? false : seen.add(d)));
+  }
+  return tl;
+}
+
+/**
+ * index(häst-id, dagens tränar-id, datum) → dagar sedan hästen bytte till dagens tränare (0 = byte nu), Infinity om
+ * samma tränare i hela historiken, null om ingen V-spelsstart inom ett år före datumet. Bara starter före datumet.
+ */
+export function trainerIndex(tl) {
+  return (horseId, trainerId, date) => {
+    const xs = tl?.[horseId];
+    if (!xs || trainerId == null) return null;
+    let n = 0;
+    while (n < xs.length && xs[n][0] < date) n++;
+    if (!n || daysBetween(xs[n - 1][0], date) > 365) return null;
+    for (let i = n - 1; i >= 0; i--) if (xs[i][1] !== trainerId) return i < n - 1 ? daysBetween(xs[i + 1][0], date) : 0;
+    return Infinity;
+  };
+}
+
 /** Marknadssannolikheter i loppet: odds (utan marginal), streck och blandningen q (samma som trav-model). */
 export function marketOf(race, live) {
   const inv = live.map((h) => (h.odds > 1 ? 1 / h.odds : null));
@@ -135,6 +172,21 @@ export function rawFeatures(race, h, ctx = {}) {
   const mf3 = rec.slice(0, 3).filter((r) => r.motFalt != null && !r.galopp).map((r) => clamp(r.motFalt, -5, 8));
   const placed = (r) => r.place >= 1 && r.place <= 3 && !r.disqualified;
   const prize = last5.filter((r) => r.firstPrize > 0).map((r) => Math.log(r.firstPrize));
+  // Rekord på lång distans (ATG: 2600 m+) med dagens startmetod, bara i långa lopp. Testat 2026-10-10 på 2 411 långa
+  // lopp 2021–26 ovanpå modellen: stabilt positiv vikt varje år (rekordtid +0,04, rekord satt i år/förra året +0,07),
+  // men logloss nästan oförändrad (1,6643 mot 1,6644) – strecket tar redan det mesta. Infört på användarens begäran.
+  const longRace = (race.distance || 0) >= 2600 && Array.isArray(h.lifeRecords);
+  const langRek = longRace ? h.lifeRecords.find((x) => x.dist === "long" && x.method === race.startMethod) : null;
+  const year = Number(date.slice(0, 4));
+  // Favoritleverans: hur ofta hästen vinner när den är favorit (odds ≤ 2,5), krympt mot 0,45.
+  // Testat 2026-10-10 mot historiken 2022–2026 ovanpå basmodellen: z +2,62, +0,225 logloss-vinst/1000 lopp,
+  // positiv och stabil 2024–2026 (enda signalen av 13 Beting-checklistepunkter som slår |z| 2,5). Täckning 87 %.
+  const favRec = rec.filter((r) => r.odds && r.odds <= 2.5);
+  const favLev = favRec.length ? (favRec.filter((r) => r.place === 1).length + 0.45 * 3) / (favRec.length + 3) : null;
+  // Tränarbyte senaste 90 dagarna (hästen bytte till dagens tränare för ≤ 90 dagar sedan). Testat 2026-10-10 ovanpå
+  // basmodellen 2023–2026: z +1,72, +0,32 logloss-vinst/1000 lopp, positiv vinst och vikt alla fyra år, täckning 45 %.
+  // Når inte |z| 2,5 men förbättrar kontrollen varje år – infört enligt regeln att allt som slår kontrollen ska in.
+  const sedanByte = ctx.trainerHist && h.horseId != null ? ctx.trainerHist(h.horseId, h.trainerId, date) : null;
   return {
     form,
     fart: speed != null ? -speed : null,
@@ -174,6 +226,10 @@ export function rawFeatures(race, h, ctx = {}) {
     efterSnitt3: ef3.length ? -mean(ef3) : null,
     naraUtanPlats: last && last.efter !== undefined ? (efterM(last) != null && efterM(last) <= 15 && !placed(last) ? 1 : 0) : null,
     motFalt3: mf3.length ? -mean(mf3) : null,
+    langRekord: langRek ? -langRek.km : null,
+    langRekordNy: langRek ? (langRek.year >= year - 1 ? 1 : 0) : null,
+    favLev,
+    tranareByte90: sedanByte == null ? null : sedanByte <= 90 ? 1 : 0,
   };
 }
 
@@ -290,11 +346,11 @@ export function evaluate(rows, beta, keys, market = "lq") {
  * där modellen bara ser den aktuella omgångens historik. Samma lopp i flera spel (V86 + V64) tas bara en gång.
  * postTable skickas in (bor i trav-model.mjs) för att undvika cirkulär import.
  */
-export function buildRows(games, { postTable, withMarketOnly = true } = {}) {
+export function buildRows(games, { postTable, withMarketOnly = true, trainerHist = trainerIndex(trainerTimeline(games)) } = {}) {
   const seen = new Set();
   const rows = [];
   for (const g of games) {
-    const ctx = { posts: postTable ? postTable([g]) : {}, driverForm: driverIndex([g]) };
+    const ctx = { posts: postTable ? postTable([g]) : {}, driverForm: driverIndex([g]), trainerHist };
     for (const r of g.races) {
       if (seen.has(r.id)) continue;
       seen.add(r.id);
@@ -326,7 +382,7 @@ export function learnedProbs(race, ctx, learned) {
  */
 export const SCORE_GROUPS = {
   form: { form: 1, seger5: 1, plats5: 1, senast: 1, galopp: -1 },
-  fart: { fart: 1, bastKm3: 1, rekord: 1, kmSenast: 1 },
+  fart: { fart: 1, bastKm3: 1, rekord: 1, kmSenast: 1, langRekord: 1 },
   klass: { klass: 1, motstand: 1, pengar: 1, livSeger: 1 },
   spar: { spar: 1, tillagg: -1 },
   kusk: { kusk: 1, kuskForm: 1 },

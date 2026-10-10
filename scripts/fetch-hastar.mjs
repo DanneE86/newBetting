@@ -18,6 +18,7 @@ import { logTips, settleTips, hastRecords } from "./lib/tipslogg.mjs";
 import { request } from "./lib/http.mjs";
 import { atgSchemas } from "./lib/api-schemas.mjs";
 import { attachFieldInfo } from "./lib/hast-lopp.mjs";
+import { trainerIndex, trainerTimeline } from "./lib/trav-features.mjs";
 import { fetchRace } from "./hastar-lopp.mjs";
 
 /** Tipslogg (data/tipslogg/hastar): loppen före start sparas, facit ur analysens resultat. */
@@ -136,11 +137,27 @@ export async function fetchAll(id, calendarEntry) {
   return raw;
 }
 
+/**
+ * Tränarhistorik för faktorn tranareByte90: data/hastar/historik/tranare.json (skrivs av hastar-lar.mjs ur alla
+ * säsongsfiler) plus omgångarna som analyseras. null om filen saknas – då blir faktorn neutral (fältets snitt).
+ */
+export function loadTrainerHist(games = [], file = path.join(DIR, "historik", "tranare.json")) {
+  const tl = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, "utf8")) : null;
+  if (!tl) return null;
+  for (const [id, xs] of Object.entries(trainerTimeline(games))) {
+    const have = new Set((tl[id] ||= []).map(([d]) => d));
+    for (const x of xs) if (!have.has(x[0])) tl[id].push(x);
+    tl[id].sort((a, b) => a[0].localeCompare(b[0]));
+  }
+  return trainerIndex(tl);
+}
+
 export async function analyzeRaw(raw) {
   const game = normalizeGame(raw.main.game, raw.main.details);
   const ddGame = raw.dd ? normalizeGame(raw.dd.game, raw.dd.details) : null;
   if (raw.lopp?.length) attachFieldInfo([game, ddGame].filter(Boolean), new Map(), { byId: new Map(raw.lopp.map((r) => [r.id, r])) });
-  const analysis = { ...analyzeGame(game, ddGame), fetchedAt: raw.fetchedAt, analyzedAt: new Date().toISOString() };
+  const trainerHist = loadTrainerHist([game, ddGame].filter(Boolean));
+  const analysis = { ...analyzeGame(game, ddGame, trainerHist ? { trainerHist } : {}), fetchedAt: raw.fetchedAt, analyzedAt: new Date().toISOString() };
   const results = resultsOf(raw.main.game);
   if (raw.dd) Object.assign(results, resultsOf(raw.dd.game));
   if (Object.keys(results).length) analysis.results = results;

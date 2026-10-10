@@ -122,12 +122,21 @@ test.describe('favoritligor', () => {
 const store = (() => {
   try { return JSON.parse(fs.readFileSync(path.join(root, 'data', 'startelvor.json'), 'utf8')); } catch { return null; }
 })();
-const svsWithXi = (store?.matches || []).find((m: any) => m.lineup && m.keys.some((k: string) => k.startsWith('svs|')));
+// Bara omgångar som sidan visar (data/stryktipset.json) – elvor från äldre omgångar finns inte på kupongkortet
+const shownDraws = (() => {
+  try { return new Set(JSON.parse(fs.readFileSync(path.join(root, 'data', 'stryktipset.json'), 'utf8')).products.map((p: any) => `svs|${p.product}|${p.drawNumber}|`)); } catch { return new Set<string>(); }
+})();
+const shownKey = (k: string) => [...shownDraws].some((d) => k.startsWith(d));
+const svsAnyXi = (store?.matches || []).find((m: any) => m.lineup && m.keys.some((k: string) => k.startsWith('svs|')));
+const svsWithXi = (() => {
+  const m = (store?.matches || []).find((x: any) => x.lineup && x.keys.some(shownKey));
+  return m && { ...m, keys: m.keys.filter(shownKey) };
+})();
 
 test.describe('startelva', () => {
   test('API: vy med 22 spelare, motståndare och jämförelser; okänd nyckel ger 404', async () => {
-    test.skip(!svsWithXi, 'inga hämtade elvor');
-    const key = svsWithXi.keys.find((k: string) => k.startsWith('svs|'));
+    test.skip(!svsAnyXi, 'inga hämtade elvor');
+    const key = svsAnyXi.keys.find((k: string) => k.startsWith('svs|'));
     const v = await (await fetch(`${base}/api/startelva?${new URLSearchParams({ key })}`)).json();
     expect(v.ok).toBe(true);
     expect(Object.keys(v.players)).toHaveLength(22);
@@ -138,7 +147,7 @@ test.describe('startelva', () => {
   });
 
   test('kupongkortet: plan, klick på spelare ger jämförelse med klartext och spindel, två valfria spelare', async ({ page }) => {
-    test.skip(!svsWithXi, 'inga hämtade elvor');
+    test.skip(!svsWithXi, 'inga hämtade elvor för omgångarna som visas');
     const key = svsWithXi.keys.find((k: string) => k.startsWith('svs|'));
     const [, product, , nr] = key.split('|');
     await page.goto(`${base}/${product}`);
@@ -219,7 +228,7 @@ test.describe('spelarkort', () => {
   });
 
   test('Startelva: knappen öppnar spelarkortet med alla stats', async ({ page }) => {
-    test.skip(!svsWithXi, 'inga hämtade elvor');
+    test.skip(!svsWithXi, 'inga hämtade elvor för omgångarna som visas');
     const key = svsWithXi.keys.find((k: string) => k.startsWith('svs|'));
     const [, product, , nr] = key.split('|');
     await page.goto(`${base}/${product}`);

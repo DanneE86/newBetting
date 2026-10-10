@@ -1178,9 +1178,10 @@ export function kravSigns(k) {
  *     som skiljer (B ärver A:s spikar), valt så att det täcker så mycket som möjligt av det A saknar. Alla kuponger har 2–4 spikar.
  */
 // Procenten systemet byggs på: spikbedömningens (sysP) när den används, men aldrig om justeringen byter favorit – samma
-// tecken som Oddset (användaren 2026-10-06; äldre sparad data kan ha en vänd sysP)
+// tecken som Oddset (användaren 2026-10-06; äldre sparad data kan ha en vänd sysP). Tips som Oddset (tipBasis "oddset"):
+// alltid Oddsets procent, samma som servern (fetch-stryktipset.mjs sysEv)
 const topOf = (x) => x.indexOf(Math.max(...x));
-export const sysFinal = (e) => (e.spik?.used && e.spik.sysP && topOf(e.spik.sysP) === topOf(e.final) ? e.spik.sysP : e.final);
+export const sysFinal = (e) => (e.tipBasis !== "oddset" && e.spik?.used && e.spik.sysP && topOf(e.spik.sysP) === topOf(e.final) ? e.spik.sysP : e.final);
 /**
  * Genererar kupong A–F.
  * opts.onlyDE = true → bara D/E/F (+ DGC); UI behåller A/B/C när kraven är oförändrade (mycket snabbare vid D/E/F %).

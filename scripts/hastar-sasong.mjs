@@ -201,14 +201,17 @@ export function runBacktest(games, { budgets = BUDGETS, alpha = 0.5, minTop = MI
  */
 async function modelOpts(kind, year) {
   if (kind === "gammal") return () => ({ learned: false });
-  if (kind !== "rullande") return () => ({});
   const { loadSeasons } = await import("./hastar-lar.mjs");
-  const { buildRows, fitLogit, FEATURE_KEYS } = await import("./lib/trav-features.mjs");
+  const { buildRows, fitLogit, FEATURE_KEYS, trainerIndex, trainerTimeline } = await import("./lib/trav-features.mjs");
+  const { withLopp } = await import("./hastar-lopp.mjs");
+  const games = withLopp(loadSeasons());
+  // Tränarhistorik ur alla säsonger (bara starter före loppets datum används, inget facit)
+  const trainerHist = trainerIndex(trainerTimeline(games));
+  if (kind !== "rullande") return () => ({ trainerHist });
   const { postTable } = await import("./lib/trav-model.mjs");
   const rap = path.join(HIST, "lararapport.json");
   const lambda = fs.existsSync(rap) ? JSON.parse(fs.readFileSync(rap, "utf8")).lambda : 128;
-  const { withLopp } = await import("./hastar-lopp.mjs");
-  const rows = buildRows(withLopp(loadSeasons()), { postTable });
+  const rows = buildRows(games, { postTable, trainerHist });
   const cache = new Map();
   // --traning kvartal: vikterna tränas om per kvartal i stället för per månad (3 × snabbare, samma princip)
   const quarter = arg("traning") === "kvartal";
@@ -217,10 +220,10 @@ async function modelOpts(kind, year) {
     const m = quarter ? `${mo.slice(0, 5)}${String(Math.floor((Number(mo.slice(5)) - 1) / 3) * 3 + 1).padStart(2, "0")}` : mo;
     if (!cache.has(m)) {
       const train = rows.filter((r) => r.date < m);
-      if (train.length < 1500) cache.set(m, { learned: false });
+      if (train.length < 1500) cache.set(m, { learned: false, trainerHist });
       else {
         const b = fitLogit(train, FEATURE_KEYS, { lambda, iters: 300 });
-        cache.set(m, { learned: { market: b.market, weights: Object.fromEntries(FEATURE_KEYS.map((k) => [k, b[k]])) } });
+        cache.set(m, { learned: { market: b.market, weights: Object.fromEntries(FEATURE_KEYS.map((k) => [k, b[k]])) }, trainerHist });
         log(`  vikter för ${m}: tränade på ${train.length} lopp före månaden`);
       }
     }

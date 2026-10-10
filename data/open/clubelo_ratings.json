@@ -1,5 +1,5 @@
 {
-    "updatedAt":  "2026-10-04T11:19:49.2126538+02:00",
+    "updatedAt":  "2026-10-10T11:29:21.2113789+02:00",
     "source":  "http://clubelo.com/ENG",
     "teamCount":  45,
     "teams":  [
@@ -41,7 +41,7 @@
                   {
                       "name":  "Chelsea",
                       "clubEloName":  "Chelsea",
-                      "elo":  1881,
+                      "elo":  1881.1,
                       "level":  1,
                       "source":  "clubelo-json"
                   },
@@ -55,7 +55,7 @@
                   {
                       "name":  "Man United",
                       "clubEloName":  "Man United",
-                      "elo":  1879,
+                      "elo":  1879.1,
                       "level":  1,
                       "source":  "clubelo-json"
                   },
@@ -83,7 +83,7 @@
                   {
                       "name":  "Crystal Palace",
                       "clubEloName":  "Crystal Palace",
-                      "elo":  1824.4,
+                      "elo":  1824.5,
                       "level":  1,
                       "source":  "clubelo-json"
                   },
@@ -216,7 +216,7 @@
                   {
                       "name":  "Sheffield United",
                       "clubEloName":  "Sheffield United",
-                      "elo":  1608,
+                      "elo":  1609,
                       "level":  null,
                       "source":  "clubelo-html"
                   },

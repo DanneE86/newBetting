@@ -80,13 +80,18 @@ test('stryktipset: engelska klubblag (PL–League Two) matchas mot lagmodellen',
   const data = JSON.parse(fs.readFileSync(file, 'utf8'));
   const english = data.products.flatMap((p: any) => p.events).filter((e: any) => e.country === 'England' && /League|Championship/.test(e.league));
   for (const e of english) {
-    expect(e.basis, `${e.home} - ${e.away}`).toBe('club');
+    // Lagmodellen används, men icke-spikbara matcher tipsas som Oddset (tipBasis 'oddset', 2026-10-09)
+    expect(['club', 'oddset'], `${e.home} - ${e.away}`).toContain(e.basis);
     expect(e.homeProfile.played).toBeGreaterThan(0);
   }
 });
 
 test('kupongkortet visar inte chansen till 13 rätt (användaren 2026-10-02: ointressant)', () => {
   const src = fs.readFileSync(path.join(root, 'gui', 'public', 'stryktips.js'), 'utf8');
-  expect(src).not.toContain('<dt>Chans 13 rätt</dt>');
+  // Gäller kupongkortet för A/B/C (couponCard); D/E/F (couponCardEgna, 2026-10-08) är troligaste-rader-kuponger där chansen är måttet
+  const start = src.indexOf('function couponCard(');
+  const card = src.slice(start, start + src.slice(start).search(/\r?\n\}\r?\n/));
+  expect(card).toContain('function couponCard(');
+  expect(card).not.toContain('Chans 13 rätt');
   expect(src).not.toMatch(/A\+B tillsammans: chans till 13 rätt/);
 });

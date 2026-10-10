@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-07T18:51:37.334Z",
+  "updatedAt": "2026-10-10T09:49:00.866Z",
   "source": "football-data.co.uk Referee/HY/AY/HR/AR/HF/AF",
   "count": 124,
   "referees": [
@@ -851,6 +851,17 @@
       "homeWinRate": 0.583
     },
     {
+      "league": "EL1",
+      "referee": "S Oldham",
+      "matches": 37,
+      "yellowPg": 3.57,
+      "redPg": 0.081,
+      "bookingPointsPg": 37.7,
+      "foulsPg": 21.5,
+      "goalsPg": 2.62,
+      "homeWinRate": 0.486
+    },
+    {
       "league": "PL",
       "referee": "T Harrington",
       "matches": 32,
@@ -860,17 +871,6 @@
       "foulsPg": 21.3,
       "goalsPg": 2.63,
       "homeWinRate": 0.344
-    },
-    {
-      "league": "EL1",
-      "referee": "S Oldham",
-      "matches": 36,
-      "yellowPg": 3.56,
-      "redPg": 0.083,
-      "bookingPointsPg": 37.6,
-      "foulsPg": 21.4,
-      "goalsPg": 2.64,
-      "homeWinRate": 0.5
     },
     {
       "league": "EL1",
@@ -972,6 +972,17 @@
       "homeWinRate": 0.267
     },
     {
+      "league": "EL1",
+      "referee": "P Howard",
+      "matches": 24,
+      "yellowPg": 3.46,
+      "redPg": 0.083,
+      "bookingPointsPg": 36.7,
+      "foulsPg": 22.6,
+      "goalsPg": 2.5,
+      "homeWinRate": 0.292
+    },
+    {
       "league": "PL",
       "referee": "A Taylor",
       "matches": 61,
@@ -1014,17 +1025,6 @@
       "foulsPg": 20.4,
       "goalsPg": 2.2,
       "homeWinRate": 0.2
-    },
-    {
-      "league": "EL1",
-      "referee": "P Howard",
-      "matches": 23,
-      "yellowPg": 3.39,
-      "redPg": 0.087,
-      "bookingPointsPg": 36.1,
-      "foulsPg": 22.3,
-      "goalsPg": 2.52,
-      "homeWinRate": 0.304
     },
     {
       "league": "EL1",
@@ -1105,17 +1105,6 @@
     },
     {
       "league": "EL1",
-      "referee": "N Hair",
-      "matches": 17,
-      "yellowPg": 3.29,
-      "redPg": 0.118,
-      "bookingPointsPg": 35.9,
-      "foulsPg": 24.6,
-      "goalsPg": 2.47,
-      "homeWinRate": 0.471
-    },
-    {
-      "league": "EL1",
       "referee": "B Speedie",
       "matches": 38,
       "yellowPg": 3.29,
@@ -1146,6 +1135,17 @@
       "foulsPg": 22.1,
       "goalsPg": 1.95,
       "homeWinRate": 0.263
+    },
+    {
+      "league": "EL1",
+      "referee": "N Hair",
+      "matches": 18,
+      "yellowPg": 3.22,
+      "redPg": 0.111,
+      "bookingPointsPg": 35,
+      "foulsPg": 24.3,
+      "goalsPg": 2.56,
+      "homeWinRate": 0.444
     },
     {
       "league": "CH",

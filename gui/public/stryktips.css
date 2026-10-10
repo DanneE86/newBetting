@@ -499,12 +499,12 @@ body.view-stryktips main { display: none !important; }
 .sb-seal > span[aria-hidden] { font-size: 1.1rem; }
 .sb-seal:hover { border-color: var(--color-text); }
 .sb-seal:focus-visible { outline: 2px solid var(--focus-ring-color); outline-offset: 2px; }
-.sb-seal.on { border-color: var(--color-success); background: var(--color-success); color: #fff; }
+.sb-seal.on { border-color: var(--color-success-solid); background: var(--color-success-solid); color: var(--color-text-on-brand); }
 .sb-seal.on:hover { filter: brightness(1.1); }
 /* Låst match: tjock grön kant till vänster, grön ram och bakgrund, etikett vid lagnamnen */
 .sb-row.is-sealed { border: 2px solid var(--color-success); background: var(--color-success-bg); box-shadow: inset 6px 0 0 var(--color-success); padding-left: calc(var(--space-3) + 6px); }
-.sb-row.is-sealed .st-num { background: var(--color-success); color: #fff; border-color: var(--color-success); }
-.sb-sealed-tag { align-self: flex-start; margin-bottom: 2px; padding: 1px 8px; border-radius: var(--radius-pill); background: var(--color-success); color: #fff; font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); letter-spacing: 0.06em; text-transform: uppercase; }
+.sb-row.is-sealed .st-num { background: var(--color-success-solid); color: var(--color-text-on-brand); border-color: var(--color-success-solid); }
+.sb-sealed-tag { align-self: flex-start; margin-bottom: 2px; padding: 1px 8px; border-radius: var(--radius-pill); background: var(--color-success-solid); color: var(--color-text-on-brand); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); letter-spacing: 0.06em; text-transform: uppercase; }
 .sb-row.is-sealed .sb-sign:disabled, .sb-row.is-sealed .sb-scope button:disabled, .sb-row.is-sealed .sb-defall button:disabled, .sb-row.is-sealed .sb-defall input:disabled { cursor: not-allowed; opacity: 0.55; }
 .sb-row.is-sealed .sb-sign.on:disabled { opacity: 1; border-color: var(--color-success); box-shadow: inset 0 0 0 1px var(--color-success); }
 .sb-row.is-error { border-width: 2px; border-color: var(--color-danger); box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-danger) 25%, transparent); }

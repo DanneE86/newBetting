@@ -455,7 +455,7 @@ export function analyzeRace(race, posts = {}, opts = {}) {
   const wMul = hasMarket ? 1 : 2.5;
   // Inlärd modell (trav-weights.mjs, se scripts/hastar-lar.mjs) om den finns, annars handsatta startvikter
   const learned = opts.learned === false ? null : opts.learned || LEARNED;
-  const lp = learned ? learnedProbs(race, { posts, driverForm: opts.driverForm }, learned) : null;
+  const lp = learned ? learnedProbs(race, { posts, driverForm: opts.driverForm, trainerHist: opts.trainerHist }, learned) : null;
   let lin;
   let pOf;
   let linScale;
@@ -492,7 +492,7 @@ export function analyzeRace(race, posts = {}, opts = {}) {
   const tp = tempo(race, horses);
   for (const h of live) h.scores.tempo = h.tempoScore;
   // Hästpoäng: total av chansen, delpoäng per område (jämfört med fältet)
-  const row = raceRow(race, { posts, driverForm: opts.driverForm });
+  const row = raceRow(race, { posts, driverForm: opts.driverForm, trainerHist: opts.trainerHist });
   const gs = row ? groupScores(row) : null;
   const at = row ? Object.fromEntries(row.nrs.map((nr, i) => [nr, i])) : {};
   for (const h of live) {

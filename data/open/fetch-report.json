@@ -1,5 +1,5 @@
 {
-    "updatedAt":  "2026-10-04T11:01:20.7451448+02:00",
+    "updatedAt":  "2026-10-10T11:19:14.4267261+02:00",
     "sources":  [
                     {
                         "name":  "csv:PL_2627.csv",
@@ -62,7 +62,7 @@
                         "url":  "https://www.football-data.co.uk/mmz4281/2627/E2.csv",
                         "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\EL1_2627.csv",
                         "ok":  true,
-                        "bytes":  43166
+                        "bytes":  44612
                     },
                     {
                         "name":  "csv:EL1_2526.csv",
@@ -209,7 +209,7 @@
                         "url":  "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
                         "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\LL2_2627.csv",
                         "ok":  true,
-                        "bytes":  36824
+                        "bytes":  42003
                     },
                     {
                         "name":  "csv:LL2_2526.csv",
@@ -366,14 +366,25 @@
                         "bytes":  165132
                     }
                 ],
-    "upcomingCount":  2202,
+    "upcomingCount":  2197,
     "extraLeagues":  true,
     "referees":  true,
-    "bolldata":  false,
+    "bolldata":  true,
     "understatNeedsPlaywright":  false,
     "understatAjax":  true,
     "fpl":  true,
     "clubElo":  true,
     "espnLineups":  true,
-    "odds":  true
+    "odds":  true,
+    "playerStats":  true,
+    "playerStatsCounts":  {
+                              "PL":  742,
+                              "LL":  464,
+                              "SA":  448,
+                              "BL":  367,
+                              "L1":  425,
+                              "ED":  413,
+                              "CH":  499
+                          },
+    "playerImpact":  true
 }
