@@ -16,7 +16,7 @@ let date = today();
 const ALPHA = { traff: 0, lag: 0.25, normal: 0.5, hog: 1 };
 // "standard" = spelformens bakkörda standard (defaultAlpha i hast-engine.js): V85 Normal, övriga Träff
 const alphaFor = (type) => (sys.focus === "standard" ? defaultAlpha(type) : ALPHA[sys.focus]);
-const sys = { budget: 500, mode: "rakt", expand: 4, focus: "standard", minTop: MIN_TOP, conds: { minA: "", maxA: "", minSkrall: "", maxSkrall: "", minStreck: "", maxStreck: "", minRowTop: "" } };
+const sys = { budget: 500, mode: "rakt", expand: 4, focus: "standard", minTop: MIN_TOP, ibWeight: 0, conds: { minA: "", maxA: "", minSkrall: "", maxSkrall: "", minStreck: "", maxStreck: "", minRowTop: "" } };
 let lastRows = null;
 let lastLegs = null; // utgångs-/raka systemets hästar per avdelning, för kupongmallen
 const FOCUS_TEXT = {
@@ -27,6 +27,19 @@ const FOCUS_TEXT = {
   hog: "Hög: underspelade hästar prioriteras tydligt – färre träffar, men högre utdelning när det sitter.",
 };
 const isValueHorse = (h) => h.isValue ?? (h.value != null && h.value >= 1.15 && h.p >= 0.03);
+
+/** Geometrisk blandning av modell-p och ibP (w=0→ren modell, w=1→ren Interbet), normaliserat per lopp. */
+function blendLegs(legs, w) {
+  if (!w) return legs;
+  return legs.map((r) => {
+    const raw = r.horses.map((h) => ({
+      ...h,
+      _b: h.scratched ? 0 : Math.pow(Math.max(h.p, 1e-6), 1 - w) * Math.pow(Math.max(h.ibP ?? h.p, 1e-6), w),
+    }));
+    const s = raw.reduce((a, h) => a + h._b, 0) || 1;
+    return { ...r, horses: raw.map((h) => ({ ...h, p: h.scratched ? h.p : h._b / s, value: h.scratched ? h.value : (h._b / s) / Math.max(h.marketPct, 0.001) })) };
+  });
+}
 
 const esc = (s) =>
   String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
@@ -155,6 +168,21 @@ function verdict(h) {
   return `<span class="hs-verdict ${ok ? "is-value" : "is-none"}" title="Chans delat med streck: ${dec(h.value)}">${ok ? "Värde" : "Ej värde"}${why}</span>`;
 }
 
+/** Hästar som Interbet-modellen sätter minst 50 % högre chans på än marknaden (ibP/streck ≥ 1,5) och streck ≤ 12 %. */
+function ibSkrallCard(a) {
+  const hasIb = a.races.some((r) => r.horses.some((h) => h.ibP != null));
+  if (!hasIb) return "";
+  const cands = a.races
+    .flatMap((r) => r.horses.filter((h) => !h.scratched && h.ibP != null && h.marketPct > 0 && h.marketPct <= 0.12 && h.ibP / h.marketPct >= 1.5).map((h) => ({ ...h, leg: r.leg, ibRatio: h.ibP / h.marketPct })))
+    .sort((x, y) => y.ibRatio - x.ibRatio)
+    .slice(0, 5);
+  return `<article class="hs-card hs-card-list hs-card-wide"><h4>Interbet-skrällar <small>streck ≤ 12 %, Interbet-chans ≥ 1,5 × strecket</small></h4>${
+    cands.length
+      ? `<ul>${cands.map((h) => `<li><span class="hs-leg">Avd ${h.leg}</span> ${h.nr} ${esc(h.horse)} · Interbet ${pct(h.ibP)} · modell ${pct(h.p)} · streck ${pct(h.marketPct)} · <b>${dec(h.ibRatio)}×</b> <small>ibScore ${h.ibScore ?? "—"}</small></li>`).join("")}</ul>`
+      : "<p>Inga hästar med lågt streck som Interbet-modellen lyfter extra.</p>"
+  }</article>`;
+}
+
 function highlights(a) {
   const ups = a.upsets || [];
   const vul = a.vulnerable || [];
@@ -172,6 +200,7 @@ function highlights(a) {
         ? `<ul>${ups.map((u) => `<li><span class="hs-leg">Avd ${u.leg}</span> ${u.nr} ${esc(u.horse)} · chans ${pct(u.p)} mot streck ${pct(u.marketPct)} <small>${esc(u.why.join(" · "))}</small></li>`).join("")}</ul>`
         : "<p>Inga lågt streckade hästar har konkreta skäl som talar för dem.</p>"
     }</article>
+    ${ibSkrallCard(a)}
   </section>`;
 }
 
@@ -193,7 +222,9 @@ const skrallLine = (s, legCount) =>
 function systemBuilder(a) {
   if (a.type === "dd" || !a.races.length) return "";
   const price = rowPrice(a.type, a.date);
-  const legs = a.races.map((r) => ({ leg: r.leg, number: r.number, horses: r.horses }));
+  const hasIb = a.races.some((r) => r.horses.some((h) => h.ibP != null));
+  const ibW = hasIb ? sys.ibWeight / 100 : 0;
+  const legs = blendLegs(a.races.map((r) => ({ leg: r.leg, number: r.number, horses: r.horses })), ibW);
   const topShare = TOP_SHARE[a.type] ?? 0.25;
   const byLeg = Object.fromEntries(a.races.map((r) => [r.leg, Object.fromEntries(r.horses.map((h) => [h.nr, h]))]));
   let body;
@@ -239,6 +270,7 @@ function systemBuilder(a) {
       <button type="button" class="ds-toggle" data-mode="skrall3" aria-pressed="${isSkrall3()}" title="Reducerat system, utgång 16 × budget, minst 3 hästar under 10 % streck på varje rad. Bakkört 2023–2026: +56 % på 1 000 kr men det bygger på ett fåtal storvinster – spela 1 000 kr eller mer, under 500 kr blir det för få rader">Skrällsystem</button>
       <button type="button" class="ds-toggle" data-mode="rad50k" aria-pressed="${isRadTop()}" title="Reducerat system, utgång 16 × budget, varje rad ska kunna ge minst ${kr(RAD_TOP)} vid alla rätt. Bakkört 365 omgångar V85/V75 2022–2026: 2 000 kr +129 %, 8 vinster över 50 000 kr, plus även utan de 3 största (+39 %), men 2024 −81 %. Spela ${kr(RAD_TOP_MIN_BUDGET)} eller mer">50 000-system</button>
       <label title="Hur mycket spelvärdet väger mot ren vinstchans när hästar väljs">Värdefokus <select class="ds-select" id="hs-focus">${[["standard", "Standard"], ["traff", "Träff"], ["lag", "Låg"], ["normal", "Normal"], ["hog", "Hög"]].map(([k, t]) => `<option value="${k}" ${sys.focus === k ? "selected" : ""}>${t}</option>`).join("")}</select></label>
+      ${hasIb ? `<label title="Blanda in Interbet-modellens 9-faktorsanalys i sannolikheterna. 0 % = bara din modell, 100 % = bara Interbet.">Interbet-vikt <select class="ds-select" id="hs-ibweight">${[0,25,50,75,100].map((v) => `<option value="${v}" ${sys.ibWeight === v ? "selected" : ""}>${v} %${v === 0 ? " (din modell)" : v === 100 ? " (Interbet)" : ""}</option>`).join("")}</select></label>` : ""}
     </div>
     <div class="hs-mode" role="group" aria-label="Högsta rad">
       <label title="Systemets mest ospelade rad ska kunna ge minst så här mycket vid alla rätt. 50 000 kr gäller alltid.">Högsta rad minst <select class="ds-select" id="hs-top">${TOP_LEVELS.map((x) => `<option value="${x}" ${sys.minTop === x ? "selected" : ""}>${x.toLocaleString("sv-SE")} kr${x === MIN_TOP ? " (alltid)" : ""}</option>`).join("")}</select></label>
@@ -607,6 +639,9 @@ view.addEventListener("change", (ev) => {
     render();
   } else if (t.id === "hs-top") {
     sys.minTop = Math.max(MIN_TOP, Number(t.value) || MIN_TOP);
+    render();
+  } else if (t.id === "hs-ibweight") {
+    sys.ibWeight = Number(t.value) || 0;
     render();
   } else if (t.id === "hs-expand") {
     sys.expand = Number(t.value);
