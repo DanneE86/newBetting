@@ -1,6 +1,6 @@
 // Flik "Hästar": V75/V85/V86/V64/V65/GS75 + Dagens Dubbel från ATG (data från /api/hastar, se gui/hastar-routes.mjs).
 // Modellen räknas i scripts/lib/trav-model.mjs när data hämtas; systembyggaren (hast-engine.js) körs här i webbläsaren.
-import { BUDGETS, rowPrice, TOP_SHARE, TOP_LEVELS, MIN_TOP, SKRALL_MAX, SKRALL_MIN_BUDGET, ATG_FILE_TYPES, atgFileName, atgFileXml, atgGameUrl, buildSystem, compressRows, couponRows, couponText, defaultAlpha, reduceSystem } from "/hast-engine.js";
+import { BUDGETS, rowPrice, TOP_SHARE, TOP_LEVELS, MIN_TOP, RAD_TOP, RAD_TOP_MIN_BUDGET, SKRALL_MAX, SKRALL_MIN_BUDGET, ATG_FILE_TYPES, atgFileName, atgFileXml, atgGameUrl, buildSystem, compressRows, couponRows, couponText, defaultAlpha, reduceSystem } from "/hast-engine.js";
 
 const view = document.getElementById("hastar-view");
 const GAME_NAME = { dd: "Dagens Dubbel" };
@@ -16,7 +16,7 @@ let date = today();
 const ALPHA = { traff: 0, lag: 0.25, normal: 0.5, hog: 1 };
 // "standard" = spelformens bakkörda standard (defaultAlpha i hast-engine.js): V85 Normal, övriga Träff
 const alphaFor = (type) => (sys.focus === "standard" ? defaultAlpha(type) : ALPHA[sys.focus]);
-const sys = { budget: 500, mode: "rakt", expand: 4, focus: "standard", minTop: MIN_TOP, conds: { minA: "", maxA: "", minSkrall: "", maxSkrall: "", minStreck: "", maxStreck: "" } };
+const sys = { budget: 500, mode: "rakt", expand: 4, focus: "standard", minTop: MIN_TOP, conds: { minA: "", maxA: "", minSkrall: "", maxSkrall: "", minStreck: "", maxStreck: "", minRowTop: "" } };
 let lastRows = null;
 let lastLegs = null; // utgångs-/raka systemets hästar per avdelning, för kupongmallen
 const FOCUS_TEXT = {
@@ -235,14 +235,17 @@ function systemBuilder(a) {
     </div>
     <div class="hs-mode" role="group" aria-label="Systemtyp">
       <button type="button" class="ds-toggle" data-mode="rakt" aria-pressed="${sys.mode === "rakt"}">Rakt system</button>
-      <button type="button" class="ds-toggle" data-mode="reducerat" aria-pressed="${sys.mode === "reducerat" && !isSkrall3()}">Reducerat system</button>
+      <button type="button" class="ds-toggle" data-mode="reducerat" aria-pressed="${sys.mode === "reducerat" && !isSkrall3() && !isRadTop()}">Reducerat system</button>
       <button type="button" class="ds-toggle" data-mode="skrall3" aria-pressed="${isSkrall3()}" title="Reducerat system, utgång 16 × budget, minst 3 hästar under 10 % streck på varje rad. Bakkört 2023–2026: +56 % på 1 000 kr men det bygger på ett fåtal storvinster – spela 1 000 kr eller mer, under 500 kr blir det för få rader">Skrällsystem</button>
+      <button type="button" class="ds-toggle" data-mode="rad50k" aria-pressed="${isRadTop()}" title="Reducerat system, utgång 16 × budget, varje rad ska kunna ge minst ${kr(RAD_TOP)} vid alla rätt. Bakkört 365 omgångar V85/V75 2022–2026: 2 000 kr +129 %, 8 vinster över 50 000 kr, plus även utan de 3 största (+39 %), men 2024 −81 %. Spela ${kr(RAD_TOP_MIN_BUDGET)} eller mer">50 000-system</button>
       <label title="Hur mycket spelvärdet väger mot ren vinstchans när hästar väljs">Värdefokus <select class="ds-select" id="hs-focus">${[["standard", "Standard"], ["traff", "Träff"], ["lag", "Låg"], ["normal", "Normal"], ["hog", "Hög"]].map(([k, t]) => `<option value="${k}" ${sys.focus === k ? "selected" : ""}>${t}</option>`).join("")}</select></label>
     </div>
     <div class="hs-mode" role="group" aria-label="Högsta rad">
       <label title="Systemets mest ospelade rad ska kunna ge minst så här mycket vid alla rätt. 50 000 kr gäller alltid.">Högsta rad minst <select class="ds-select" id="hs-top">${TOP_LEVELS.map((x) => `<option value="${x}" ${sys.minTop === x ? "selected" : ""}>${x.toLocaleString("sv-SE")} kr${x === MIN_TOP ? " (alltid)" : ""}</option>`).join("")}</select></label>
     </div>
     ${isSkrall3() && sys.budget < SKRALL_MIN_BUDGET ? `<p class="hs-msg is-error hs-skrall-budget" role="status">Skrällsystemet under ${kr(SKRALL_MIN_BUDGET)} har gått minus alla bakkörda år (200 kr: −28 %, −50 %, −81 % 2024–2026). Spela ${kr(SKRALL_MIN_BUDGET)} eller mer.</p>` : ""}
+    ${isRadTop() && sys.budget < RAD_TOP_MIN_BUDGET ? `<p class="hs-msg is-error hs-radtop-budget" role="status">50 000-systemet under ${kr(RAD_TOP_MIN_BUDGET)} gick minus i bakkörningen utan de 3 största vinsterna (500 kr −54 %, 1 000 kr −44 %). Spela ${kr(RAD_TOP_MIN_BUDGET)} eller mer.</p>` : ""}
+    ${isRadTop() ? `<p class="hs-kort-inline hs-radtop-text"><b>Kort sagt:</b> varje rad betalar minst ${kr(RAD_TOP)} om den sitter, men systemet träffar sällan – på 2 000 kr 8 gånger på 365 omgångar (ungefär var 45:e omgång). Räkna med många omgångar med små eller inga vinster.</p>` : ""}
     <p class="hs-lead hs-focus-text">${FOCUS_TEXT[sys.focus]}</p>
     ${
       sys.mode === "reducerat"
@@ -251,6 +254,7 @@ function systemBuilder(a) {
         ${num("minA", "Min A", "Minst så många A-hästar per rad")}${num("maxA", "Max A", "Högst så många A-hästar per rad")}
         ${num("minSkrall", "Min skrällar", `Minst så många hästar med streck under ${SKRALL_MAX * 100} % per rad`)}${num("maxSkrall", "Max skrällar", `Högst så många hästar med streck under ${SKRALL_MAX * 100} % per rad`)}
         ${num("minStreck", "Min streck-summa %", "Summan av strecken på raden, minst")}${num("maxStreck", "Max streck-summa %", "Summan av strecken på raden, högst")}
+        ${num("minRowTop", "Min kr per rad", "Varje rad ska kunna ge minst så många kr vid alla rätt (uppskattat från strecken)")}
       </div>
       <p class="hs-lead">Rader som klarar villkoren sorteras efter värdeviktad sannolikhet, de bästa behålls tills budgeten är slut.</p>`
         : ""
@@ -302,7 +306,9 @@ function atgBlock(a) {
 }
 
 /** Är skrällsystemets förval inställt (reducerat, utgång 16 ×, minst 3 skrällar)? */
-const isSkrall3 = () => sys.mode === "reducerat" && sys.expand === 16 && String(sys.conds.minSkrall) === "3";
+const isSkrall3 = () => sys.mode === "reducerat" && sys.expand === 16 && String(sys.conds.minSkrall) === "3" && !sys.conds.minRowTop;
+/** Är 50 000-systemets förval inställt (reducerat, utgång 16 ×, varje rad minst RAD_TOP kr)? */
+const isRadTop = () => sys.mode === "reducerat" && sys.expand === 16 && String(sys.conds.minRowTop) === String(RAD_TOP) && !sys.conds.minSkrall;
 
 function systemTable(legs, byLeg) {
   return `<div class="hs-sys-legs">${legs
@@ -407,7 +413,7 @@ function ddBlock(a) {
 }
 
 // ---------- Uppföljning (scripts/hastar-auto.mjs) ----------
-const FOLLOW_NAMES = { standard: "Standard", utdelning: "Utdelning", skrall3: "Skrällsystem (≥ 3 skrällar/rad)" };
+const FOLLOW_NAMES = { standard: "Standard", utdelning: "Utdelning", skrall3: "Skrällsystem (≥ 3 skrällar/rad)", rad50k: "50 000-system" };
 function followBlock(u) {
   const games = u?.games || 0;
   const head = `<h3>Uppföljning på riktigt <small>${games} omgångar${u?.from ? ` sedan ${esc(u.from)}` : ""}</small></h3>`;
@@ -475,7 +481,7 @@ const FACTOR_TEXT = {
   alder: "ålder", sto: "sto", rekord: "rekordtid", bastKm3: "bästa km-tid senaste 3", banvana: "starter på banan", starter60: "starter senaste 60 dagarna",
   kuskForm: "kuskens form senaste året", senast: "placering senast", distByte: "längre distans än senast", metodByte: "byte av startmetod",
   kmSenast: "km-tid senast", motstand: "prisnivå i tidigare lopp", pengar: "intjänat totalt", sparNr: "spårnummer",
-  mktKvadrat: "favorit/långskott-justering",
+  mktKvadrat: "favorit/långskott-justering", langRekord: "rekord på lång distans (2600 m+)", langRekordNy: "långrekord satt i år eller förra året",
 };
 const methodBlock = (a) => {
   const m = a.method || {};
@@ -568,11 +574,18 @@ view.addEventListener("click", (ev) => {
       // Förval: reducerat, utgång 16 ×, minst 3 skrällar per rad (se docs/lardomar/anteckningar/V85.md 2026-10-04)
       sys.mode = "reducerat";
       sys.expand = 16;
-      sys.conds = { ...sys.conds, minSkrall: "3" };
+      sys.conds = { ...sys.conds, minSkrall: "3", minRowTop: "" };
       if (sys.budget < SKRALL_MIN_BUDGET) sys.budget = SKRALL_MIN_BUDGET;
+    } else if (t.dataset.mode === "rad50k") {
+      // Förval: reducerat, utgång 16 ×, varje rad minst 50 000 kr (docs/lardomar/anteckningar/V85.md 2026-10-10)
+      sys.mode = "reducerat";
+      sys.expand = 16;
+      sys.conds = { ...sys.conds, minSkrall: "", minRowTop: String(RAD_TOP) };
+      if (sys.budget < RAD_TOP_MIN_BUDGET) sys.budget = RAD_TOP_MIN_BUDGET;
     } else {
       sys.mode = t.dataset.mode;
       if (t.dataset.mode === "reducerat" && isSkrall3()) sys.conds = { ...sys.conds, minSkrall: "" };
+      if (t.dataset.mode === "reducerat" && isRadTop()) sys.conds = { ...sys.conds, minRowTop: "" };
     }
     return render();
   }

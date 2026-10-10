@@ -270,7 +270,7 @@ test('Stryktipset: domarsvit markeras på matcherna', async ({ page }) => {
 test('Oddset: knappen Domare bredvid Duellanalys visar domarstatistik för engelska matcher', async ({ page }) => {
   // API: ligasnitt och alla ligans domare för en riktig engelsk match
   const dash = await (await fetch(base + '/api/dashboard')).json();
-  const eng = [...(dash.allCandidates || [])].find((t: any) => ['PL', 'CH', 'EL1'].includes(t.league));
+  const eng = [...(dash.allCandidates || [])].find((t: any) => ['PL', 'CH', 'EL1'].includes(t.league) && !t.postponed && t.date >= new Date().toLocaleDateString('sv-SE')); // kommande, inte uppskjuten
   test.skip(!eng, 'inga engelska matcher i tipsen just nu');
   const qs = new URLSearchParams({ league: eng.league, date: eng.date, home: eng.home, away: eng.away });
   const api = await (await fetch(`${base}/api/referees?${qs}`)).json();
@@ -305,7 +305,7 @@ test('Oddset: knappen Domare bredvid Duellanalys visar domarstatistik för engel
 
 test('Matchens domarpanel: domarens alla matcher med vardera laget, inbördes möten markeras', async ({ page }) => {
   const dash = await (await fetch(base + '/api/dashboard')).json();
-  const eng = [...(dash.allCandidates || [])].find((t: any) => ['PL', 'CH', 'EL1'].includes(t.league));
+  const eng = [...(dash.allCandidates || [])].find((t: any) => ['PL', 'CH', 'EL1'].includes(t.league) && !t.postponed && t.date >= new Date().toLocaleDateString('sv-SE')); // kommande, inte uppskjuten
   test.skip(!eng, 'inga engelska matcher i tipsen just nu');
   const games = (opp: string) => [
     { date: '2026-09-01', league: eng.league, opp, home: true, score: '2-1', res: 'W', yc: 2 },
@@ -349,39 +349,41 @@ test('Ligaraden: Domare sist i raden visar ligans domare, sortering och filter p
   await expect(sub.last()).toHaveAttribute('data-refleague', '');
   await sub.last().click();
   const view = page.locator('#ref-league');
-  await expect(view.locator('.rf-table')).toBeVisible({ timeout: 30_000 });
+  // Domartabellen (kommande matcher med domare ligger i en egen tabell .rf-appt ovanför)
+  const table = view.locator('.rf-table:not(.rf-appt)');
+  await expect(table).toBeVisible({ timeout: 30_000 });
   await expect(view).toContainText('Ligasnitt');
   await expect(view.locator('.rf-stats')).toContainText('Straffar per match');
   // 1 / X / 2 ska stå på en rad (ingen radbrytning i värdet)
   const x12 = view.locator('.rf-stat-1x2 .rf-v');
   const lh = await x12.evaluate((el) => parseFloat(getComputedStyle(el).lineHeight) || 24);
   expect((await x12.boundingBox())!.height).toBeLessThan(lh * 1.5);
-  await expect(view.locator('thead')).toContainText('Straffar');
+  await expect(table.locator('thead')).toContainText('Straffar');
   // Röda/m och Straffar/m är borttagna (ointressanta)
-  await expect(view.locator('thead')).not.toContainText('Röda/m');
-  await expect(view.locator('thead')).not.toContainText('Straffar/m');
+  await expect(table.locator('thead')).not.toContainText('Röda/m');
+  await expect(table.locator('thead')).not.toContainText('Straffar/m');
   // Sortera på straffar: fallande, sedan stigande vid nytt klick
   await view.locator('.rf-chip[data-rf-sort="pen"]').click();
   await expect(view.locator('.rf-chip[data-rf-sort="pen"]')).toContainText('▼');
   await view.locator('.rf-chip[data-rf-sort="pen"]').click();
   await expect(view.locator('.rf-chip[data-rf-sort="pen"]')).toContainText('▲');
   // Filter: bara domare med fler gula än snittet
-  const before = await view.locator('tbody tr').count();
+  const before = await table.locator('tbody tr').count();
   await view.locator('.rf-chip[data-rf-filter="yellow"]').click();
   await expect(view.locator('.rf-chip[data-rf-filter="yellow"]')).toHaveAttribute('aria-pressed', 'true');
-  expect(await view.locator('tbody tr').count()).toBeLessThanOrEqual(before);
-  for (const txt of await view.locator('tbody tr td:nth-child(4) .rf-diff').allTextContents()) expect(txt.startsWith('+')).toBeTruthy();
+  expect(await table.locator('tbody tr').count()).toBeLessThanOrEqual(before);
+  for (const txt of await table.locator('tbody tr td:nth-child(4) .rf-diff').allTextContents()) expect(txt.startsWith('+')).toBeTruthy();
   await view.locator('.rf-chip[data-rf-filter="yellow"]').click();
 
   // Säsong: årets som standard, äldre valbara – rubrik, ligasnitt och tabell följer valet
   const season = view.locator('[data-rf-season]');
   await expect(season.locator('option:checked')).toContainText('(i år)');
   await expect(view.locator('.rf-league-sub')).toContainText('säsongen');
-  const nowAvg = await view.locator('tfoot td').nth(1).textContent();
+  const nowAvg = await table.locator('tfoot td').nth(1).textContent();
   const prevId = await season.locator('option').nth(1).getAttribute('value');
   await season.selectOption(prevId!);
   await expect(view.locator('.rf-league-sub')).toContainText(await season.locator('option:checked').textContent() as string);
-  expect(Number(await view.locator('tfoot td').nth(1).textContent())).toBeGreaterThan(Number(nowAvg));
+  expect(Number(await table.locator('tfoot td').nth(1).textContent())).toBeGreaterThan(Number(nowAvg));
   // Sorteringen ligger kvar när säsongen byts
   await expect(view.locator('.rf-chip[data-rf-sort="pen"]')).toContainText('▲');
   await season.selectOption('all');
@@ -389,8 +391,8 @@ test('Ligaraden: Domare sist i raden visar ligans domare, sortering och filter p
   await season.selectOption(prevId!);
 
   // Klick på domaren: alla matcher hen dömt den säsongen, med resultat
-  const ref = view.locator('.rf-ref').first();
-  const n = Number(await view.locator('tbody tr:has(.rf-ref) td:nth-child(2)').first().textContent());
+  const ref = table.locator('.rf-ref').first();
+  const n = Number(await table.locator('tbody tr:has(.rf-ref) td:nth-child(2)').first().textContent());
   await ref.click();
   await expect(ref).toHaveAttribute('aria-expanded', 'true');
   const games = view.locator('.rf-games-row .rf-games-table tbody tr');
@@ -422,7 +424,9 @@ test('Ligans domarvy kraschar inte om servern skickar gamla svaret (seasons som 
   await page.click('.filter-pill[data-group="england"]');
   await page.locator('#league-sub .filter-pill').last().click();
   const view = page.locator('#ref-league');
-  await expect(view.locator('.rf-table')).toBeVisible({ timeout: 30_000 });
+  // Domartabellen (kommande matcher med domare ligger i en egen tabell .rf-appt ovanför)
+  const table = view.locator('.rf-table:not(.rf-appt)');
+  await expect(table).toBeVisible({ timeout: 30_000 });
   await expect(view).not.toContainText('is not a function');
   await expect(view.locator('[data-rf-season]')).toHaveCount(0);
 });
@@ -513,7 +517,7 @@ test('Oddset: bästa tipsen överst kommer från kommande omgång, även utan v�
     const body = await res.json();
     const src = [...(body.allCandidates || []), ...(body.bestUpcoming || [])][0];
     const mk = (home: string, away: string, date: string, tipScore: number, p1 = 0.65, odds = 1.6) => ({
-      ...src, league: 'AS', home, away, match: `${home} vs ${away}`, date, kickoffUtc: `${date}T13:00:00Z`, tipScore,
+      ...src, postponed: false, matchStatus: null, league: 'AS', home, away, match: `${home} vs ${away}`, date, kickoffUtc: `${date}T13:00:00Z`, tipScore,
       tips: { ...src.tips, '1X2': { pick: '1', confidence: p1 } },
       pro: { ...src.pro, verdicts: {}, odds: { home: odds, draw: 3.5, away: 5, over25: 1.9, under25: 1.9 } },
     });
@@ -538,7 +542,7 @@ test('Oddset: bästa tips = 1X2 över 60 %, högst 3, i läget Alla bara odds ö
     const body = await res.json();
     const src = [...(body.allCandidates || []), ...(body.bestUpcoming || [])][0];
     const mk = (home: string, p1: number, odds: number) => ({
-      ...src, league: 'AS', home, away: 'Borta', match: `${home} vs Borta`, date: day(5), kickoffUtc: `${day(5)}T13:00:00Z`, tipScore: 0.6,
+      ...src, postponed: false, matchStatus: null, league: 'AS', home, away: 'Borta', match: `${home} vs Borta`, date: day(5), kickoffUtc: `${day(5)}T13:00:00Z`, tipScore: 0.6,
       tips: { ...src.tips, '1X2': { pick: '1', confidence: p1 } },
       pro: { ...src.pro, verdicts: {}, odds: { home: odds, draw: 3.5, away: 5, over25: 1.9, under25: 1.9 } },
     });

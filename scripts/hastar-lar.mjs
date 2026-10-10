@@ -12,7 +12,7 @@ import path from "node:path";
 import zlib from "node:zlib";
 import { fileURLToPath } from "node:url";
 import { postTable, analyzeRace } from "./lib/trav-model.mjs";
-import { buildRows, driverIndex, fitLogit, evaluate, FEATURE_KEYS } from "./lib/trav-features.mjs";
+import { buildRows, driverIndex, fitLogit, evaluate, FEATURE_KEYS, trainerTimeline } from "./lib/trav-features.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const HIST = path.join(ROOT, "data", "hastar", "historik");
@@ -128,6 +128,9 @@ async function main() {
   const { withLopp } = await import("./hastar-lopp.mjs");
   const games = withLopp(loadSeasons());
   if (!games.length) throw new Error("Inga säsongsfiler – kör node scripts/hastar-sasong.mjs --hamta först");
+  // Tränarhistorik för skarpt läge (faktorn tranareByte90 i fetch-hastar.mjs)
+  fs.mkdirSync(HIST, { recursive: true });
+  fs.writeFileSync(path.join(HIST, "tranare.json"), JSON.stringify(trainerTimeline(games)));
   const rows = buildRows(games, { postTable });
   log(`${games.length} omgångar, ${rows.length} lopp (${rows[0].date} – ${rows.at(-1).date}), ${FEATURE_KEYS.length} faktorer`);
   const oldP = oldModelProbs(games);

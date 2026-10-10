@@ -18,12 +18,13 @@ test.describe('E2E data fetch + screenshots', () => {
   });
 
   test('hämtar data (sync) och bygger tipsrapport', async () => {
-    // Full sync kan ta tid; timeout redan 120s i config
+    // Full sync (fetch + store + tipslogg) hämtar alla ligor: ca 35 min (uppmätt 2026-10-10), långt över configens 180 s
+    test.setTimeout(55 * 60_000);
     execFileSync('npm', ['run', 'sync'], {
       cwd: root,
       stdio: 'inherit',
       shell: true,
-      timeout: 180_000,
+      timeout: 50 * 60_000,
     });
 
     expect(fs.existsSync(path.join(root, 'data', 'betting-store.json'))).toBeTruthy();

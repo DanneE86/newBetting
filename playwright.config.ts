@@ -71,6 +71,8 @@ export default defineConfig({
     {
       name: 'e2e-screenshots',
       testMatch: /e2e-fetch-screenshots\.spec\.ts/,
+      // Kör sist: npm run sync skriver om data/ (t.ex. upcoming-fixtures.json) som de andra projekten läser
+      dependencies: ['unit-data', 'pro-layer', 'bolldata', 'stryktips', 'stryktips-regler', 'match-context', 'routing', 'lardomar', 'player-stats', 'lib-units', 'hastar', 'gui', 'sidor-laddar', 'design'],
     },
   ],
 });

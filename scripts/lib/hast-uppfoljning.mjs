@@ -6,11 +6,12 @@
 //   standard   rakt system som webbens förval (defaultAlpha per spelform, högsta rad ≥ 50 000 kr)
 //   utdelning  rakt system med högst förväntad utdelning (buildValueSystem)
 //   skrall3    reducerat system, utgång 16 × budget, minst 3 hästar under 10 % streck per rad
-import { MIN_TOP, TOP_SHARE, rowPrice, defaultAlpha, buildSystem, buildValueSystem, reduceSystem } from "../../gui/public/hast-engine.js";
+//   rad50k     reducerat system, utgång 16 × budget, varje rad kan ge minst 50 000 kr – bara på RAD_TOP_MIN_BUDGET (2000 kr)
+import { MIN_TOP, RAD_TOP, RAD_TOP_MIN_BUDGET, TOP_SHARE, rowPrice, defaultAlpha, buildSystem, buildValueSystem, reduceSystem } from "../../gui/public/hast-engine.js";
 import { rowsByCorrect, rowsByCorrectList, settle } from "./hast-sasong.mjs";
 
 export const FOLLOW_BUDGETS = [200, 500, 1000];
-export const FOLLOW_SYSTEMS = { standard: "Standard (webbens förval)", utdelning: "Utdelning", skrall3: "Skrällsystem ≥ 3 skrällar/rad" };
+export const FOLLOW_SYSTEMS = { standard: "Standard (webbens förval)", utdelning: "Utdelning", skrall3: "Skrällsystem ≥ 3 skrällar/rad", rad50k: "50 000-system" };
 
 const legsOf = (a) => a.races.map((r) => ({ leg: r.leg, number: r.number, horses: r.horses }));
 
@@ -20,7 +21,7 @@ export function freezeSystems(a, { budgets = FOLLOW_BUDGETS, frozenAt = a.fetche
   const price = rowPrice(a.type, a.date);
   const topShare = TOP_SHARE[a.type] ?? 0.25;
   const alpha = defaultAlpha(a.type);
-  const systems = { standard: {}, utdelning: {}, skrall3: {} };
+  const systems = { standard: {}, utdelning: {}, skrall3: {}, rad50k: {} };
   for (const budget of budgets) {
     const s = buildSystem(legs, { budget, price, alpha, minTop: MIN_TOP, topShare });
     systems.standard[budget] = { kind: "rakt", legs: s.legs.map((l) => l.horses), rows: s.rows, cost: s.cost, hit: s.hit };
@@ -29,6 +30,8 @@ export function freezeSystems(a, { budgets = FOLLOW_BUDGETS, frozenAt = a.fetche
     const r = reduceSystem(legs, { minSkrall: 3 }, { budget, price, alpha, expand: 16, minTop: MIN_TOP, topShare });
     systems.skrall3[budget] = { kind: "rader", rows: r.rows, count: r.count, cost: r.cost, hit: r.hit };
   }
+  const t = reduceSystem(legs, { minRowTop: RAD_TOP }, { budget: RAD_TOP_MIN_BUDGET, price, alpha, expand: 16, minTop: MIN_TOP, topShare });
+  systems.rad50k[RAD_TOP_MIN_BUDGET] = { kind: "rader", rows: t.rows, count: t.count, cost: t.cost, hit: t.hit };
   return { id: a.id, type: a.type, date: a.date, track: a.track, frozenAt, price, systems };
 }
 

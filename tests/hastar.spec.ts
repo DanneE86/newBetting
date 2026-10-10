@@ -346,6 +346,21 @@ test.describe('hast-engine: systembyggaren', () => {
     expect(couponText([{ leg: 1, horses: [12, 8, 7] }, { leg: 2, horses: [6] }])).toBe('Avd 1: 7 8 12\nAvd 2: 6 (spik)');
   });
 
+  test('reduceSystem minRowTop: varje rad kan ge minst så många kr vid alla rätt', async () => {
+    const { reduceSystem, rowPayout } = await engine();
+    const legs = legsFixture();
+    const free = reduceSystem(legs, {}, { budget: 50, price: 0.5, expand: 8, topShare: 0.2 });
+    const top = (r: number[]) => rowPayout(r.reduce((p, nr, i) => p * Math.max(1e-4, legs[i].horses.find((h: any) => h.nr === nr).marketPct), 1), 0.5, 0.2)!;
+    const tops = free.rows.map(top).sort((a, b) => a - b);
+    const limit = tops[Math.floor(tops.length / 2)];
+    const r = reduceSystem(legs, { minRowTop: limit }, { budget: 50, price: 0.5, expand: 8, topShare: 0.2 });
+    expect(r.count).toBeGreaterThan(0);
+    expect(r.passed).toBeLessThan(free.passed);
+    for (const row of r.rows) expect(top(row)).toBeGreaterThanOrEqual(limit);
+    // tomt fält = inget villkor
+    expect(reduceSystem(legs, { minRowTop: '' }, { budget: 50, price: 0.5, expand: 8, topShare: 0.2 }).passed).toBe(free.passed);
+  });
+
   test('ATG-fil: rader slås ihop till färre kuponger utan att raderna ändras', async () => {
     const { compressRows, couponRows, reduceSystem } = await engine();
     const expand = (cs: number[][][]) => cs.flatMap((c) => c.reduce<number[][]>((acc, s) => acc.flatMap((r) => s.map((nr) => [...r, nr])), [[]]));
@@ -515,6 +530,25 @@ test.describe('GUI: fliken Hästar', () => {
     await expect(page.locator('.hs-skrall-budget')).toHaveCount(0);
     await page.click('[data-mode="reducerat"]');
     await expect(page.locator('[data-mode="skrall3"]')).toHaveAttribute('aria-pressed', 'false');
+    // 50 000-systemet: utgång 16 ×, varje rad minst 50 000 kr, minst 2 000 kr, varnar om man sänker
+    await page.click('[data-mode="rad50k"]');
+    await expect(page.locator('[data-mode="rad50k"]')).toHaveAttribute('aria-pressed', 'true');
+    await expect(page.locator('[data-mode="skrall3"]')).toHaveAttribute('aria-pressed', 'false');
+    await expect(page.locator('[data-mode="reducerat"]')).toHaveAttribute('aria-pressed', 'false');
+    await expect(page.locator('#hs-expand')).toHaveValue('16');
+    await expect(page.locator('[data-cond="minRowTop"]')).toHaveValue('50000');
+    await expect(page.locator('[data-cond="minSkrall"]')).toHaveValue('');
+    await expect(page.locator('[data-budget="2000"]')).toHaveAttribute('aria-pressed', 'true');
+    await expect(page.locator('.hs-radtop-text')).toContainText('Kort sagt');
+    await expect(page.locator('.hs-radtop-budget')).toHaveCount(0);
+    await page.click('[data-budget="500"]');
+    await expect(page.locator('.hs-radtop-budget')).toContainText('gick minus');
+    await page.click('[data-mode="skrall3"]');
+    await expect(page.locator('[data-cond="minRowTop"]')).toHaveValue('');
+    await expect(page.locator('[data-mode="rad50k"]')).toHaveAttribute('aria-pressed', 'false');
+    await page.click('[data-mode="rad50k"]');
+    await page.click('[data-mode="reducerat"]');
+    await expect(page.locator('[data-cond="minRowTop"]')).toHaveValue('');
   });
 
   test('mobil: ingen sidscroll i sidled', async ({ page }) => {
@@ -828,6 +862,91 @@ test('inlärd modell: marknaden = streck när det finns, inga faktorer från slu
   if (LEARNED) for (const k of Object.keys(LEARNED.weights)) expect(FEATURE_KEYS).toContain(k);
 });
 
+test('långdistansrekord (2600 m+): bara i långa lopp, samma startmetod, nytt rekord = i år eller förra året', async () => {
+  const { rawFeatures, raceRow, FEATURE_KEYS } = await features();
+  expect(FEATURE_KEYS).toEqual(expect.arrayContaining(['langRekord', 'langRekordNy']));
+  const recs = [
+    [{ method: 'volte', dist: 'long', km: 74.0, year: 2026 }, { method: 'auto', dist: 'long', km: 72.0, year: 2025 }],
+    [{ method: 'volte', dist: 'long', km: 76.5, year: 2022 }],
+    [{ method: 'auto', dist: 'medium', km: 71.0, year: 2026 }],
+  ];
+  const race = normRace('L', '2026-05-01', 3, 1);
+  race.distance = 2640;
+  race.startMethod = 'volte';
+  race.starts.forEach((s: any, i: number) => { s.distance = 2640; s.lifeRecords = recs[i]; });
+  const f = race.starts.map((s: any) => rawFeatures(race, s, {}));
+  expect(f[0].langRekord).toBe(-74.0); // voltrekordet, inte autostartsrekordet
+  expect(f[0].langRekordNy).toBe(1);
+  expect(f[1].langRekordNy).toBe(0); // satt 2022
+  expect(f[2].langRekord).toBeNull(); // bara medeldistansrekord
+  const row = raceRow(race, {});
+  expect(row.X.langRekord[0]).toBeGreaterThan(row.X.langRekord[1]);
+  // Medeldistans: faktorn påverkar inte
+  const kort = normRace('K', '2026-05-01', 3, 1);
+  kort.starts.forEach((s: any, i: number) => { s.lifeRecords = recs[i]; });
+  expect(rawFeatures(kort, kort.starts[0], {}).langRekord).toBeNull();
+  expect(raceRow(kort, {}).X.langRekord).toEqual([0, 0, 0]);
+});
+
+test('favoritleverans: segrar som favorit (odds ≤ 2,5) krympt mot 0,45, null utan favoritstarter', async () => {
+  const { rawFeatures, FEATURE_KEYS } = await features();
+  expect(FEATURE_KEYS).toContain('favLev');
+  const race = normRace('F', '2026-05-01', 3, 1);
+  const rec = (odds: number, place: number) => ({ date: '2026-04-01', place, km: 75, odds, track: 'Solvalla', startMethod: 'auto', distance: 2140 });
+  race.starts[0].records = [rec(1.5, 1), rec(2.0, 1), rec(2.5, 1)]; // 3 av 3 som favorit
+  race.starts[1].records = [rec(1.8, 4), rec(2.2, 5), rec(9.0, 1)]; // 0 av 2 (odds 9 räknas inte)
+  race.starts[2].records = [rec(12, 1)];
+  const f = race.starts.map((s: any) => rawFeatures(race, s, {}));
+  expect(f[0].favLev).toBeCloseTo((3 + 0.45 * 3) / 6, 6);
+  expect(f[1].favLev).toBeCloseTo((0 + 0.45 * 3) / 5, 6);
+  expect(f[2].favLev).toBeNull();
+});
+
+test('tränarbyte: historik ur V-spelsstarter, bara starter före datumet, ≤ 90 dagar = 1, null utan start inom ett år', async () => {
+  const { trainerTimeline, trainerIndex, rawFeatures, buildRows, FEATURE_KEYS } = await features();
+  expect(FEATURE_KEYS).toContain('tranareByte90');
+  const g = (date: string, trainers: number[]) => {
+    const r = normRace(`T${date}`, date, trainers.length, 1);
+    r.starts.forEach((s: any, i: number) => { s.horseId = i + 1; s.trainerId = trainers[i]; });
+    return { id: `V85_${date}`, type: 'V85', date, races: [r] };
+  };
+  const games = [g('2025-01-10', [7, 8, 9]), g('2026-03-01', [7, 5, 9]), g('2026-05-01', [6, 5, 9])];
+  const tl = trainerTimeline(games);
+  expect(tl[1]).toEqual([['2025-01-10', 7], ['2026-03-01', 7], ['2026-05-01', 6]]);
+  const idx = trainerIndex(tl);
+  expect(idx(1, 6, '2026-05-01')).toBe(0); // byter nu (inte facit: dagens start räknas inte)
+  expect(idx(2, 5, '2026-05-01')).toBe(61); // bytte 2026-03-01
+  expect(idx(3, 9, '2026-05-01')).toBe(Infinity); // samma tränare hela tiden
+  expect(idx(2, 5, '2026-03-01')).toBeNull(); // förra starten 2025-01-10 är över ett år gammal
+  expect(idx(99, 1, '2026-05-01')).toBeNull();
+  // Faktorn: ≤ 90 dagar = 1, annars 0, saknas = null
+  const race = games[2].races[0];
+  const f = race.starts.map((s: any) => rawFeatures(race, s, { trainerHist: idx }));
+  expect(f.map((x: any) => x.tranareByte90)).toEqual([1, 1, 0]);
+  expect(rawFeatures(race, race.starts[0], {}).tranareByte90).toBeNull();
+  // buildRows bygger historiken själv ur omgångarna
+  const rows = buildRows(games, { withMarketOnly: false });
+  const last = rows.find((r: any) => r.date === '2026-05-01');
+  expect(last.X.tranareByte90[0]).toBeGreaterThan(last.X.tranareByte90[2]);
+});
+
+test('skarpt läge: tränarhistorik ur fil plus dagens omgång, null utan fil', async () => {
+  const { loadTrainerHist } = await import(pathToFileURL(path.join(ROOT, 'scripts', 'fetch-hastar.mjs')).href);
+  const tmp = path.join((await import('os')).tmpdir(), `tranare-${process.pid}.json`);
+  fs.writeFileSync(tmp, JSON.stringify({ 1: [['2026-04-01', 7]] }));
+  try {
+    const r = normRace('S', '2026-05-01', 1, 1);
+    r.starts[0].horseId = 1;
+    r.starts[0].trainerId = 6;
+    const idx = loadTrainerHist([{ id: 'x', date: '2026-05-01', races: [r] }], tmp);
+    expect(idx(1, 6, '2026-05-01')).toBe(0);
+    expect(idx(1, 6, '2026-05-02')).toBe(1); // dagens omgång läggs till historiken
+    expect(loadTrainerHist([], tmp + '.saknas')).toBeNull();
+  } finally {
+    fs.rmSync(tmp, { force: true });
+  }
+});
+
 // ---------- Högsta rad-spärr (hast-engine) ----------
 const topLegs = () => Array.from({ length: 8 }, (_, i) => ({
   leg: i + 1, number: i + 1,
@@ -994,7 +1113,11 @@ test.describe('uppföljning: hämtningstider och frysta system', () => {
     const { freezeSystems, settleFrozen, summarizeFollow, FOLLOW_BUDGETS } = await uppf();
     const a = { ...analyzeGame(normalizeGame(game())), fetchedAt: '2026-10-03T08:00:00Z' };
     const fr = freezeSystems(a, { sims: 200 });
-    expect(Object.keys(fr.systems)).toEqual(['standard', 'utdelning', 'skrall3']);
+    expect(Object.keys(fr.systems)).toEqual(['standard', 'utdelning', 'skrall3', 'rad50k']);
+    // 50 000-systemet fryses bara på 2 000 kr och håller budgeten
+    const { RAD_TOP_MIN_BUDGET } = await engine();
+    expect(Object.keys(fr.systems.rad50k)).toEqual([String(RAD_TOP_MIN_BUDGET)]);
+    expect(fr.systems.rad50k[RAD_TOP_MIN_BUDGET].cost).toBeLessThanOrEqual(RAD_TOP_MIN_BUDGET);
     for (const b of FOLLOW_BUDGETS) {
       expect(fr.systems.standard[b].cost).toBeLessThanOrEqual(b);
       expect(fr.systems.utdelning[b].cost).toBeLessThanOrEqual(b);
