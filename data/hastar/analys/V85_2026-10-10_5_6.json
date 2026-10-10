@@ -103,11 +103,11 @@
      "trainerWin": 0.26,
      "klass": 10.938349098576568,
      "postIndex": 0.277,
-     "p": 0.329,
+     "p": 0.33,
      "marketP": 0.306,
      "marketPct": 0.35,
      "marketSource": "streck",
-     "value": 0.939,
+     "value": 0.942,
      "isValue": false,
      "scores": {
       "form": 84,
@@ -161,6 +161,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -3,
        "falt": 7,
        "motFalt": -0.3,
@@ -188,6 +189,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -17.8,
        "falt": 12,
        "motFalt": -0.8,
@@ -215,6 +217,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 3,
        "falt": 11,
        "motFalt": -1,
@@ -241,7 +244,8 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-07-08",
@@ -264,9 +268,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.485,
+     "streckLast": 0.35,
+     "streckDrift": 0.72,
+     "poolTrend": -0.037
     },
     {
      "nr": 2,
@@ -354,11 +363,11 @@
      "trainerWin": 0.16,
      "klass": 10.669425749157964,
      "postIndex": 0.353,
-     "p": 0.27,
+     "p": 0.271,
      "marketP": 0.276,
      "marketPct": 0.333,
      "marketSource": "streck",
-     "value": 0.813,
+     "value": 0.814,
      "isValue": false,
      "scores": {
       "form": 37,
@@ -413,6 +422,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -7.3,
        "falt": 12,
        "motFalt": -0.5,
@@ -440,6 +450,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 29.1,
        "falt": 12,
        "motFalt": 0.6,
@@ -467,6 +478,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": null,
        "falt": 11,
        "motFalt": null,
@@ -493,7 +505,8 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-06-27",
@@ -516,9 +529,14 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.304,
+     "streckLast": 0.333,
+     "streckDrift": 1.09,
+     "poolTrend": -0.0166
     },
     {
      "nr": 5,
@@ -610,7 +628,7 @@
      "marketP": 0.053,
      "marketPct": 0.052,
      "marketSource": "streck",
-     "value": 2.552,
+     "value": 2.543,
      "isValue": true,
      "scores": {
       "form": 33,
@@ -665,6 +683,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 14,
        "motFalt": -0.2,
@@ -692,6 +711,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 4.5,
        "falt": 11,
        "motFalt": -0.1,
@@ -719,6 +739,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 14.4,
        "falt": 12,
        "motFalt": 0.1,
@@ -746,6 +767,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 11,
        "motFalt": -0.4,
@@ -769,9 +791,14 @@
        "firstPrize": 135000,
        "shoes": null,
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.031,
+     "streckLast": 0.052,
+     "streckDrift": 1.66,
+     "poolTrend": 0.016
     },
     {
      "nr": 3,
@@ -853,11 +880,11 @@
      "trainerWin": 0.215,
      "klass": 9.508422921474882,
      "postIndex": 0.231,
-     "p": 0.086,
+     "p": 0.085,
      "marketP": 0.105,
      "marketPct": 0.14,
      "marketSource": "streck",
-     "value": 0.615,
+     "value": 0.612,
      "isValue": false,
      "scores": {
       "form": 60,
@@ -909,6 +936,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 10,
        "motFalt": -0.4,
@@ -936,6 +964,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 11,
        "motFalt": -0.4,
@@ -963,6 +992,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 2.9,
        "falt": 10,
        "motFalt": -0.2,
@@ -990,6 +1020,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 20.7,
        "falt": 12,
        "motFalt": -0.5,
@@ -1016,9 +1047,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.069,
+     "streckLast": 0.14,
+     "streckDrift": 2.01,
+     "poolTrend": 0.0129
     },
     {
      "nr": 4,
@@ -1110,7 +1146,7 @@
      "marketP": 0.051,
      "marketPct": 0.042,
      "marketSource": "streck",
-     "value": 1.554,
+     "value": 1.551,
      "isValue": true,
      "scores": {
       "form": 45,
@@ -1118,7 +1154,7 @@
       "kusk": 28,
       "spar": 84,
       "value": 78,
-      "total": 56,
+      "total": 57,
       "tempo": 75
      },
      "position": "Rygg ledaren",
@@ -1163,6 +1199,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 11.9,
        "falt": 11,
        "motFalt": -0.1,
@@ -1190,6 +1227,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 9.2,
        "falt": 12,
        "motFalt": -0.3,
@@ -1217,6 +1255,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -2.9,
        "falt": 8,
        "motFalt": -0.6,
@@ -1243,7 +1282,8 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-07-16",
@@ -1266,9 +1306,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.032,
+     "streckLast": 0.042,
+     "streckDrift": 1.34,
+     "poolTrend": 0.0089
     },
     {
      "nr": 9,
@@ -1366,7 +1411,7 @@
      "marketP": 0.039,
      "marketPct": 0.024,
      "marketSource": "streck",
-     "value": 1.285,
+     "value": 1.281,
      "isValue": true,
      "scores": {
       "form": 59,
@@ -1419,6 +1464,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 56.4,
        "falt": 12,
        "motFalt": 0,
@@ -1446,6 +1492,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -8.8,
        "falt": 10,
        "motFalt": -0.5,
@@ -1473,6 +1520,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 3,
        "falt": 11,
        "motFalt": -0.4,
@@ -1499,7 +1547,8 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-08-01",
@@ -1522,9 +1571,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.01,
+     "streckLast": 0.024,
+     "streckDrift": 2.48,
+     "poolTrend": 0.0111
     },
     {
      "nr": 7,
@@ -1610,7 +1664,7 @@
      "marketP": 0.028,
      "marketPct": 0.015,
      "marketSource": "streck",
-     "value": 1.568,
+     "value": 1.563,
      "isValue": false,
      "scores": {
       "form": 47,
@@ -1663,6 +1717,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 18.1,
        "falt": 12,
        "motFalt": 0,
@@ -1690,6 +1745,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 11,
        "motFalt": -0.3,
@@ -1717,6 +1773,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 17.8,
        "falt": 12,
        "motFalt": 0.1,
@@ -1743,7 +1800,8 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-07-20",
@@ -1766,9 +1824,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.011,
+     "streckLast": 0.015,
+     "streckDrift": 1.45,
+     "poolTrend": 0.0046
     },
     {
      "nr": 8,
@@ -1854,7 +1917,7 @@
      "marketP": 0.035,
      "marketPct": 0.012,
      "marketSource": "streck",
-     "value": 1.321,
+     "value": 1.315,
      "isValue": false,
      "scores": {
       "form": 37,
@@ -1908,6 +1971,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 6.9,
        "falt": 8,
        "motFalt": -0.2,
@@ -1935,6 +1999,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 7.3,
        "falt": 12,
        "motFalt": -0.3,
@@ -1962,6 +2027,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 6.8,
        "falt": 11,
        "motFalt": 0,
@@ -1989,6 +2055,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 20.8,
        "falt": 12,
        "motFalt": 0.3,
@@ -2015,9 +2082,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.009,
+     "streckLast": 0.012,
+     "streckDrift": 1.35,
+     "poolTrend": 0.0017
     },
     {
      "nr": 10,
@@ -2097,14 +2169,14 @@
      "marketP": 0.021,
      "marketPct": 0.009,
      "marketSource": "streck",
-     "value": 1.891,
+     "value": 1.879,
      "isValue": false,
      "scores": {
       "form": 10,
       "fart": 70,
       "kusk": 34,
       "spar": 17,
-      "value": 95,
+      "value": 94,
       "total": 57,
       "tempo": 32
      },
@@ -2151,6 +2223,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": null,
        "falt": 11,
        "motFalt": null,
@@ -2178,6 +2251,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 26.9,
        "falt": 12,
        "motFalt": 0.3,
@@ -2205,6 +2279,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 11.7,
        "falt": 11,
        "motFalt": -0.5,
@@ -2231,7 +2306,8 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-06-24",
@@ -2254,9 +2330,14 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.006,
+     "streckLast": 0.009,
+     "streckDrift": 1.37,
+     "poolTrend": 0.0006
     },
     {
      "nr": 11,
@@ -2342,14 +2423,14 @@
      "marketP": 0.035,
      "marketPct": 0.01,
      "marketSource": "streck",
-     "value": 1.594,
+     "value": 1.59,
      "isValue": false,
      "scores": {
       "form": 66,
       "fart": 59,
       "kusk": 40,
       "spar": 54,
-      "value": 80,
+      "value": 79,
       "total": 52,
       "tempo": 28
      },
@@ -2391,7 +2472,8 @@
        "firstPrize": 40000,
        "shoes": null,
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-09-05",
@@ -2415,6 +2497,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 11,
        "motFalt": -0.3,
@@ -2442,6 +2525,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 6,
        "falt": 11,
        "motFalt": -0.3,
@@ -2469,6 +2553,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 12,
        "motFalt": -1.2,
@@ -2495,9 +2580,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.013,
+     "streckLast": 0.01,
+     "streckDrift": 0.75,
+     "poolTrend": -0.0013
     },
     {
      "nr": 12,
@@ -2585,21 +2675,21 @@
      "marketP": 0.051,
      "marketPct": 0.013,
      "marketSource": "streck",
-     "value": 0.971,
+     "value": 0.969,
      "isValue": false,
      "scores": {
       "form": 74,
       "fart": 5,
       "kusk": 50,
       "spar": 27,
-      "value": 49,
+      "value": 48,
       "total": 38,
       "tempo": 20
      },
      "position": "Bakom",
      "tempoScore": 20,
      "poang": {
-      "total": 19,
+      "total": 18,
       "tempo": 20,
       "form": 64,
       "fart": 36,
@@ -2638,6 +2728,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -6,
        "falt": 11,
        "motFalt": -0.5,
@@ -2665,6 +2756,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 38.1,
        "falt": 10,
        "motFalt": 0.1,
@@ -2692,6 +2784,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 3.6,
        "falt": 15,
        "motFalt": -0.6,
@@ -2718,7 +2811,8 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-07-14",
@@ -2741,9 +2835,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.025,
+     "streckLast": 0.013,
+     "streckDrift": 0.51,
+     "poolTrend": -0.0005
     },
     {
      "nr": 6,
@@ -2851,6 +2950,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 23.2,
        "falt": 11,
        "motFalt": 0.1,
@@ -2878,6 +2978,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -10.6,
        "falt": 13,
        "motFalt": -0.8,
@@ -2905,6 +3006,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": null,
        "falt": 12,
        "motFalt": null,
@@ -2932,6 +3034,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 20.7,
        "falt": 11,
        "motFalt": -0.4,
@@ -2958,7 +3061,8 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
      ]
     }
@@ -3102,7 +3206,7 @@
      "trainerWin": 0.138,
      "klass": 10.953493810081275,
      "postIndex": 0.362,
-     "p": 0.316,
+     "p": 0.315,
      "marketP": 0.353,
      "marketPct": 0.427,
      "marketSource": "streck",
@@ -3159,6 +3263,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 14.8,
        "falt": 11,
        "motFalt": -0.1,
@@ -3186,6 +3291,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -3,
        "falt": 10,
        "motFalt": -0.4,
@@ -3213,6 +3319,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 3,
        "falt": 12,
        "motFalt": -0.2,
@@ -3239,7 +3346,8 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-07-18",
@@ -3262,9 +3370,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.344,
+     "streckLast": 0.427,
+     "streckDrift": 1.24,
+     "poolTrend": 0.0372
     },
     {
      "nr": 1,
@@ -3330,7 +3443,7 @@
      "marketP": 0.104,
      "marketPct": 0.16,
      "marketSource": "streck",
-     "value": 1.396,
+     "value": 1.397,
      "isValue": true,
      "scores": {
       "form": 58,
@@ -3384,6 +3497,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -8.9,
        "falt": 10,
        "motFalt": -0.8,
@@ -3411,6 +3525,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 30.7,
        "falt": 12,
        "motFalt": 0.1,
@@ -3438,6 +3553,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -7.2,
        "falt": 11,
        "motFalt": -1.2,
@@ -3464,7 +3580,8 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-06-20",
@@ -3484,9 +3601,14 @@
        "firstPrize": null,
        "shoes": null,
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.269,
+     "streckLast": 0.16,
+     "streckDrift": 0.6,
+     "poolTrend": -0.0273
     },
     {
      "nr": 10,
@@ -3578,7 +3700,7 @@
      "marketP": 0.144,
      "marketPct": 0.131,
      "marketSource": "streck",
-     "value": 1.225,
+     "value": 1.226,
      "isValue": true,
      "scores": {
       "form": 40,
@@ -3632,6 +3754,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 18.5,
        "falt": 11,
        "motFalt": 0,
@@ -3659,6 +3782,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 10,
        "motFalt": -0.7,
@@ -3686,6 +3810,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 14.1,
        "falt": 9,
        "motFalt": 0.1,
@@ -3709,7 +3834,8 @@
        "firstPrize": 600000,
        "shoes": null,
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-07-28",
@@ -3732,9 +3858,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.123,
+     "streckLast": 0.131,
+     "streckDrift": 1.07,
+     "poolTrend": -0.0108
     },
     {
      "nr": 3,
@@ -3872,6 +4003,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 5,
        "motFalt": -0.2,
@@ -3899,6 +4031,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -3,
        "falt": 8,
        "motFalt": -1.2,
@@ -3926,6 +4059,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 14.9,
        "falt": 8,
        "motFalt": 0.1,
@@ -3952,7 +4086,8 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-07-06",
@@ -3975,9 +4110,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.086,
+     "streckLast": 0.08,
+     "streckDrift": 0.92,
+     "poolTrend": -0.0084
     },
     {
      "nr": 6,
@@ -4121,6 +4261,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 22.2,
        "falt": 11,
        "motFalt": 0.1,
@@ -4148,6 +4289,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 9,
        "motFalt": -0.5,
@@ -4175,6 +4317,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 16.5,
        "falt": 10,
        "motFalt": 0.1,
@@ -4201,7 +4344,8 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-07-04",
@@ -4224,9 +4368,14 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.046,
+     "streckLast": 0.071,
+     "streckDrift": 1.56,
+     "poolTrend": 0.0051
     },
     {
      "nr": 7,
@@ -4372,6 +4521,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 14.1,
        "falt": 9,
        "motFalt": 0.1,
@@ -4399,6 +4549,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": null,
        "falt": 9,
        "motFalt": null,
@@ -4426,6 +4577,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 11,
        "motFalt": -0.2,
@@ -4452,7 +4604,8 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-04-25",
@@ -4475,9 +4628,14 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.046,
+     "streckLast": 0.048,
+     "streckDrift": 1.05,
+     "poolTrend": 0.0002
     },
     {
      "nr": 9,
@@ -4622,6 +4780,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 9,
        "motFalt": -0.5,
@@ -4649,6 +4808,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 7.1,
        "falt": 7,
        "motFalt": 0,
@@ -4676,6 +4836,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 2.4,
        "falt": 10,
        "motFalt": -0.5,
@@ -4702,7 +4863,8 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-07-18",
@@ -4725,9 +4887,14 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.037,
+     "streckLast": 0.048,
+     "streckDrift": 1.3,
+     "poolTrend": 0.0044
     },
     {
      "nr": 11,
@@ -4873,6 +5040,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 22.2,
        "falt": 11,
        "motFalt": 0.1,
@@ -4900,6 +5068,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": null,
        "falt": 9,
        "motFalt": null,
@@ -4927,6 +5096,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 9.1,
        "falt": 8,
        "motFalt": 0,
@@ -4953,7 +5123,8 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-07-08",
@@ -4976,9 +5147,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.015,
+     "streckLast": 0.014,
+     "streckDrift": 0.95,
+     "poolTrend": 0.0019
     },
     {
      "nr": 8,
@@ -5070,7 +5246,7 @@
      "marketP": 0.033,
      "marketPct": 0.01,
      "marketSource": "streck",
-     "value": 1.635,
+     "value": 1.636,
      "isValue": false,
      "scores": {
       "form": 58,
@@ -5123,6 +5299,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 18.5,
        "falt": 11,
        "motFalt": 0,
@@ -5150,6 +5327,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 6,
        "falt": 10,
        "motFalt": -0.2,
@@ -5177,6 +5355,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -9,
        "falt": 8,
        "motFalt": -0.4,
@@ -5204,6 +5383,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 7.1,
        "falt": 10,
        "motFalt": -0.3,
@@ -5230,9 +5410,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.011,
+     "streckLast": 0.01,
+     "streckDrift": 0.88,
+     "poolTrend": -0.0001
     },
     {
      "nr": 12,
@@ -5371,6 +5556,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 7,
        "falt": 7,
        "motFalt": 0,
@@ -5398,6 +5584,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 4.7,
        "falt": 7,
        "motFalt": -0.1,
@@ -5425,6 +5612,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 12.3,
        "falt": 9,
        "motFalt": 0,
@@ -5451,7 +5639,8 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-07-05",
@@ -5474,9 +5663,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.01,
+     "streckLast": 0.006,
+     "streckDrift": 0.62,
+     "poolTrend": -0.0006
     },
     {
      "nr": 4,
@@ -5562,7 +5756,7 @@
      "marketP": 0.018,
      "marketPct": 0.003,
      "marketSource": "streck",
-     "value": 1.407,
+     "value": 1.409,
      "isValue": false,
      "scores": {
       "form": 30,
@@ -5615,6 +5809,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 9.4,
        "falt": 9,
        "motFalt": -0.1,
@@ -5642,6 +5837,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 14.2,
        "falt": 7,
        "motFalt": 0.3,
@@ -5669,6 +5865,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 12,
        "falt": 10,
        "motFalt": -0.1,
@@ -5696,6 +5893,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": null,
        "falt": 7,
        "motFalt": null,
@@ -5722,9 +5920,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.007,
+     "streckLast": 0.003,
+     "streckDrift": 0.4,
+     "poolTrend": -0.0006
     },
     {
      "nr": 2,
@@ -5822,7 +6025,7 @@
      "marketP": 0.013,
      "marketPct": 0.002,
      "marketSource": "streck",
-     "value": 1.208,
+     "value": 1.207,
      "isValue": false,
      "scores": {
       "form": 27,
@@ -5876,6 +6079,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 18.3,
        "falt": 7,
        "motFalt": -0.1,
@@ -5903,6 +6107,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 7.2,
        "falt": 7,
        "motFalt": -0.2,
@@ -5930,6 +6135,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 32.9,
        "falt": 8,
        "motFalt": 0,
@@ -5957,6 +6163,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 44.7,
        "falt": 12,
        "motFalt": 0.9,
@@ -5983,9 +6190,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.006,
+     "streckLast": 0.002,
+     "streckDrift": 0.35,
+     "poolTrend": -0.001
     }
    ],
    "favorite": {
@@ -6184,6 +6396,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -6,
        "falt": 12,
        "motFalt": -0.3,
@@ -6211,6 +6424,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 8,
        "motFalt": -0.3,
@@ -6238,6 +6452,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 3,
        "falt": 11,
        "motFalt": -0.2,
@@ -6264,7 +6479,8 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-06-27",
@@ -6287,9 +6503,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.24,
+     "streckLast": 0.276,
+     "streckDrift": 1.15,
+     "poolTrend": 0.0094
     },
     {
      "nr": 8,
@@ -6418,7 +6639,8 @@
        "firstPrize": 1000000,
        "shoes": null,
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-08-19",
@@ -6442,6 +6664,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 11,
        "motFalt": -0.3,
@@ -6469,6 +6692,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 3,
        "falt": 7,
        "motFalt": -0.5,
@@ -6496,6 +6720,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 16.4,
        "falt": 10,
        "motFalt": 0,
@@ -6522,9 +6747,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.396,
+     "streckLast": 0.313,
+     "streckDrift": 0.79,
+     "poolTrend": -0.0191
     },
     {
      "nr": 11,
@@ -6675,6 +6905,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 9.1,
        "falt": 12,
        "motFalt": 0,
@@ -6699,6 +6930,7 @@
        "shoes": null,
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": null,
        "falt": 10,
        "motFalt": null,
@@ -6726,6 +6958,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 11,
        "motFalt": -0.3,
@@ -6752,7 +6985,8 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-07-05",
@@ -6775,9 +7009,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.144,
+     "streckLast": 0.181,
+     "streckDrift": 1.26,
+     "poolTrend": 0.016
     },
     {
      "nr": 2,
@@ -6917,6 +7156,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 9.1,
        "falt": 12,
        "motFalt": 0,
@@ -6944,6 +7184,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 11.9,
        "falt": 12,
        "motFalt": 0,
@@ -6971,6 +7212,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -6,
        "falt": 10,
        "motFalt": -0.7,
@@ -6997,7 +7239,8 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-07-18",
@@ -7020,9 +7263,14 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.05,
+     "streckLast": 0.101,
+     "streckDrift": 2.02,
+     "poolTrend": -0.0002
     },
     {
      "nr": 7,
@@ -7160,6 +7408,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 12,
        "motFalt": -0.3,
@@ -7187,6 +7436,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 18,
        "falt": 12,
        "motFalt": 0,
@@ -7214,6 +7464,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 9,
        "motFalt": -0.3,
@@ -7240,7 +7491,8 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-06-06",
@@ -7263,9 +7515,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.093,
+     "streckLast": 0.091,
+     "streckDrift": 0.98,
+     "poolTrend": 0.0032
     },
     {
      "nr": 6,
@@ -7351,7 +7608,7 @@
      "marketP": 0.027,
      "marketPct": 0.007,
      "marketSource": "streck",
-     "value": 1.786,
+     "value": 1.785,
      "isValue": false,
      "scores": {
       "form": 60,
@@ -7405,6 +7662,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 5.9,
        "falt": 12,
        "motFalt": -0.1,
@@ -7432,6 +7690,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 167.1,
        "falt": 15,
        "motFalt": 4.3,
@@ -7459,6 +7718,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -26.5,
        "falt": 9,
        "motFalt": -1,
@@ -7485,7 +7745,8 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-07-19",
@@ -7505,9 +7766,14 @@
        "firstPrize": null,
        "shoes": null,
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.012,
+     "streckLast": 0.007,
+     "streckDrift": 0.59,
+     "poolTrend": -0.0016
     },
     {
      "nr": 5,
@@ -7653,6 +7919,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 10,
        "motFalt": -0.5,
@@ -7680,6 +7947,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": null,
        "falt": 12,
        "motFalt": null,
@@ -7707,6 +7975,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -41.4,
        "falt": 8,
        "motFalt": -2.2,
@@ -7734,6 +8003,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 42,
        "falt": 12,
        "motFalt": 0.8,
@@ -7761,12 +8031,17 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 2.2,
        "falt": 11,
        "motFalt": -0.5,
        "galopp": 0
       }
-     ]
+     ],
+     "streckFirst": 0.008,
+     "streckLast": 0.005,
+     "streckDrift": 0.58,
+     "poolTrend": -0.0012
     },
     {
      "nr": 4,
@@ -7899,6 +8174,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 23.7,
        "falt": 11,
        "motFalt": -0.1,
@@ -7926,6 +8202,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 2.3,
        "falt": 12,
        "motFalt": -0.4,
@@ -7953,6 +8230,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -2.2,
        "falt": 11,
        "motFalt": -0.7,
@@ -7979,7 +8257,8 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-07-04",
@@ -8002,9 +8281,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.016,
+     "streckLast": 0.008,
+     "streckDrift": 0.49,
+     "poolTrend": -0.0018
     },
     {
      "nr": 3,
@@ -8110,7 +8394,7 @@
      "position": "Utvändigt (dödens)",
      "tempoScore": 55,
      "poang": {
-      "total": 10,
+      "total": 9,
       "tempo": 55,
       "form": 56,
       "fart": 59,
@@ -8149,6 +8433,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 4.6,
        "falt": 10,
        "motFalt": -0.2,
@@ -8176,6 +8461,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -2.3,
        "falt": 12,
        "motFalt": -0.5,
@@ -8203,6 +8489,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 37.4,
        "falt": 11,
        "motFalt": 0.4,
@@ -8230,6 +8517,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": null,
        "falt": 10,
        "motFalt": null,
@@ -8256,9 +8544,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.021,
+     "streckLast": 0.011,
+     "streckDrift": 0.52,
+     "poolTrend": -0.0018
     },
     {
      "nr": 9,
@@ -8404,6 +8697,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 14.9,
        "falt": 12,
        "motFalt": 0.2,
@@ -8431,6 +8725,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": null,
        "falt": 12,
        "motFalt": null,
@@ -8458,6 +8753,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 18,
        "falt": 10,
        "motFalt": -0.1,
@@ -8484,7 +8780,8 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-06-17",
@@ -8508,12 +8805,17 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 16.4,
        "falt": 11,
        "motFalt": -0.5,
        "galopp": 0
       }
-     ]
+     ],
+     "streckFirst": 0.009,
+     "streckLast": 0.005,
+     "streckDrift": 0.62,
+     "poolTrend": -0.0012
     },
     {
      "nr": 1,
@@ -8599,14 +8901,14 @@
      "marketP": 0.022,
      "marketPct": 0.002,
      "marketSource": "streck",
-     "value": 1.228,
+     "value": 1.231,
      "isValue": false,
      "scores": {
       "form": 30,
       "fart": 19,
       "kusk": 29,
       "spar": 43,
-      "value": 61,
+      "value": 62,
       "total": 45,
       "tempo": 75
      },
@@ -8654,6 +8956,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 6.9,
        "falt": 10,
        "motFalt": -0.1,
@@ -8681,6 +8984,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 29.3,
        "falt": 15,
        "motFalt": -0.4,
@@ -8705,6 +9009,7 @@
        "shoes": null,
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": null,
        "falt": 12,
        "motFalt": null,
@@ -8728,7 +9033,8 @@
        "firstPrize": null,
        "shoes": null,
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-08-01",
@@ -8748,9 +9054,14 @@
        "firstPrize": null,
        "shoes": null,
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.008,
+     "streckLast": 0.002,
+     "streckDrift": 0.29,
+     "poolTrend": -0.0013
     },
     {
      "nr": 10,
@@ -8839,6 +9150,7 @@
        "shoes": null,
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": null,
        "falt": 7,
        "motFalt": null,
@@ -8866,6 +9178,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 93.6,
        "falt": 12,
        "motFalt": 2.8,
@@ -8893,6 +9206,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -29.3,
        "falt": 15,
        "motFalt": -1.4,
@@ -8920,6 +9234,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 12,
        "falt": 12,
        "motFalt": -0.2,
@@ -8947,6 +9262,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 2.3,
        "falt": 9,
        "motFalt": -0.2,
@@ -9099,11 +9415,11 @@
      "trainerWin": 0.236,
      "klass": 10.096213132628804,
      "postIndex": 0.545,
-     "p": 0.624,
+     "p": 0.623,
      "marketP": 0.394,
      "marketPct": 0.638,
      "marketSource": "streck",
-     "value": 0.979,
+     "value": 0.976,
      "isValue": false,
      "scores": {
       "form": 95,
@@ -9157,6 +9473,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 10,
        "motFalt": 0.3,
@@ -9184,6 +9501,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": null,
        "falt": 11,
        "motFalt": null,
@@ -9211,6 +9529,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 14.5,
        "falt": 12,
        "motFalt": -0.2,
@@ -9237,7 +9556,8 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-07-17",
@@ -9260,9 +9580,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.628,
+     "streckLast": 0.638,
+     "streckDrift": 1.02,
+     "poolTrend": -0.0208
     },
     {
      "nr": 11,
@@ -9371,7 +9696,7 @@
       "total": 64,
       "tempo": 36,
       "form": 72,
-      "fart": 88,
+      "fart": 87,
       "klass": 68,
       "spar": 32,
       "kusk": 63,
@@ -9409,6 +9734,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 7,
        "motFalt": -0.4,
@@ -9436,6 +9762,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 10.7,
        "falt": 5,
        "motFalt": 0.2,
@@ -9463,6 +9790,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 18.7,
        "falt": 8,
        "motFalt": 0,
@@ -9489,7 +9817,8 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-05-15",
@@ -9512,9 +9841,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.155,
+     "streckLast": 0.127,
+     "streckDrift": 0.82,
+     "poolTrend": -0.0021
     },
     {
      "nr": 15,
@@ -9600,7 +9934,7 @@
      "marketP": 0.123,
      "marketPct": 0.113,
      "marketSource": "streck",
-     "value": 0.838,
+     "value": 0.839,
      "isValue": false,
      "scores": {
       "form": 61,
@@ -9655,6 +9989,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 14.5,
        "falt": 14,
        "motFalt": -0.2,
@@ -9682,6 +10017,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -38.1,
        "falt": 10,
        "motFalt": -0.8,
@@ -9709,6 +10045,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 4.2,
        "falt": 13,
        "motFalt": -0.4,
@@ -9735,7 +10072,8 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-06-24",
@@ -9758,9 +10096,14 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.073,
+     "streckLast": 0.113,
+     "streckDrift": 1.55,
+     "poolTrend": 0.0108
     },
     {
      "nr": 3,
@@ -9852,7 +10195,7 @@
      "marketP": 0.075,
      "marketPct": 0.037,
      "marketSource": "streck",
-     "value": 1.761,
+     "value": 1.758,
      "isValue": true,
      "scores": {
       "form": 72,
@@ -9907,6 +10250,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 29,
        "falt": 12,
        "motFalt": -0.3,
@@ -9934,6 +10278,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -17.9,
        "falt": 10,
        "motFalt": -0.9,
@@ -9961,6 +10306,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 18,
        "falt": 12,
        "motFalt": 0,
@@ -9987,7 +10333,8 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-08-10",
@@ -10010,9 +10357,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.041,
+     "streckLast": 0.037,
+     "streckDrift": 0.92,
+     "poolTrend": 0.0037
     },
     {
      "nr": 4,
@@ -10098,7 +10450,7 @@
      "marketP": 0.058,
      "marketPct": 0.044,
      "marketSource": "streck",
-     "value": 1.167,
+     "value": 1.163,
      "isValue": true,
      "scores": {
       "form": 70,
@@ -10115,7 +10467,7 @@
       "total": 48,
       "tempo": 20,
       "form": 75,
-      "fart": 51,
+      "fart": 50,
       "klass": 53,
       "spar": 75,
       "kusk": 42,
@@ -10155,6 +10507,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -5.9,
        "falt": 12,
        "motFalt": -1.5,
@@ -10178,7 +10531,8 @@
        "firstPrize": 135000,
        "shoes": null,
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-06-09",
@@ -10202,6 +10556,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 10,
        "motFalt": -0.9,
@@ -10229,6 +10584,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 13.5,
        "falt": 12,
        "motFalt": -0.1,
@@ -10255,9 +10611,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.032,
+     "streckLast": 0.044,
+     "streckDrift": 1.35,
+     "poolTrend": 0.0078
     },
     {
      "nr": 14,
@@ -10339,28 +10700,28 @@
      "trainerWin": 0.215,
      "klass": 10.395553814615075,
      "postIndex": 0.585,
-     "p": 0.02,
+     "p": 0.022,
      "marketP": 0.053,
      "marketPct": 0.015,
      "marketSource": "streck",
-     "value": 1.378,
+     "value": 1.478,
      "isValue": false,
      "scores": {
       "form": 42,
       "fart": 93,
       "kusk": 85,
       "spar": 87,
-      "value": 69,
-      "total": 53,
+      "value": 74,
+      "total": 55,
       "tempo": 50
      },
      "position": "I kön (inner)",
      "tempoScore": 50,
      "poang": {
-      "total": 29,
+      "total": 31,
       "tempo": 50,
       "form": 31,
-      "fart": 59,
+      "fart": 66,
       "klass": 74,
       "spar": 64,
       "kusk": 85,
@@ -10400,6 +10761,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 14.8,
        "falt": 12,
        "motFalt": 0,
@@ -10427,6 +10789,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 4.7,
        "falt": 9,
        "motFalt": -0.2,
@@ -10454,6 +10817,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 6,
        "falt": 10,
        "motFalt": 0,
@@ -10480,7 +10844,8 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-07-09",
@@ -10503,9 +10868,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.02,
+     "streckLast": 0.015,
+     "streckDrift": 0.74,
+     "poolTrend": 0.0026
     },
     {
      "nr": 9,
@@ -10591,7 +10961,7 @@
      "marketP": 0.028,
      "marketPct": 0.006,
      "marketSource": "streck",
-     "value": 1.625,
+     "value": 1.622,
      "isValue": false,
      "scores": {
       "form": 57,
@@ -10608,7 +10978,7 @@
       "total": 14,
       "tempo": 32,
       "form": 46,
-      "fart": 50,
+      "fart": 49,
       "klass": 53,
       "spar": 55,
       "kusk": 70,
@@ -10648,6 +11018,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 11.8,
        "falt": 12,
        "motFalt": -0.1,
@@ -10675,6 +11046,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -11.4,
        "falt": 7,
        "motFalt": -0.9,
@@ -10702,6 +11074,7 @@
        },
        "trackCondition": "dead",
        "sport": "trot",
+       "raceType": "regular",
        "efter": null,
        "falt": 9,
        "motFalt": null,
@@ -10729,6 +11102,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 22,
        "falt": 12,
        "motFalt": 0.2,
@@ -10755,9 +11129,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.01,
+     "streckLast": 0.006,
+     "streckDrift": 0.63,
+     "poolTrend": 0.0001
     },
     {
      "nr": 10,
@@ -10849,7 +11228,7 @@
      "marketP": 0.017,
      "marketPct": 0.005,
      "marketSource": "streck",
-     "value": 1.419,
+     "value": 1.427,
      "isValue": false,
      "scores": {
       "form": 24,
@@ -10903,6 +11282,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 27.2,
        "falt": 7,
        "motFalt": 0.4,
@@ -10930,6 +11310,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 44.2,
        "falt": 12,
        "motFalt": 0.4,
@@ -10957,6 +11338,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 10.9,
        "falt": 12,
        "motFalt": -0.3,
@@ -10983,7 +11365,8 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-07-23",
@@ -11006,9 +11389,14 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.007,
+     "streckLast": 0.005,
+     "streckDrift": 0.68,
+     "poolTrend": 0.0002
     },
     {
      "nr": 13,
@@ -11100,7 +11488,7 @@
      "marketP": 0.029,
      "marketPct": 0.005,
      "marketSource": "streck",
-     "value": 1.343,
+     "value": 1.342,
      "isValue": false,
      "scores": {
       "form": 24,
@@ -11153,6 +11541,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 17,
        "falt": 15,
        "motFalt": 0.1,
@@ -11180,6 +11569,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 15.1,
        "falt": 12,
        "motFalt": 0.2,
@@ -11207,6 +11597,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 3,
        "falt": 12,
        "motFalt": -0.2,
@@ -11233,7 +11624,8 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-07-11",
@@ -11256,9 +11648,14 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.008,
+     "streckLast": 0.005,
+     "streckDrift": 0.69,
+     "poolTrend": -0.0004
     },
     {
      "nr": 7,
@@ -11350,14 +11747,14 @@
      "marketP": 0.017,
      "marketPct": 0.002,
      "marketSource": "streck",
-     "value": 1.89,
+     "value": 1.889,
      "isValue": false,
      "scores": {
       "form": 39,
       "fart": 26,
       "kusk": 20,
       "spar": 41,
-      "value": 95,
+      "value": 94,
       "total": 55,
       "tempo": 20
      },
@@ -11405,6 +11802,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 14,
        "motFalt": 0,
@@ -11432,6 +11830,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 14.6,
        "falt": 13,
        "motFalt": 0,
@@ -11459,6 +11858,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 14.9,
        "falt": 11,
        "motFalt": 0,
@@ -11485,7 +11885,8 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-07-25",
@@ -11508,9 +11909,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.005,
+     "streckLast": 0.002,
+     "streckDrift": 0.36,
+     "poolTrend": -0.0003
     },
     {
      "nr": 12,
@@ -11602,14 +12008,14 @@
      "marketP": 0.023,
      "marketPct": 0.002,
      "marketSource": "streck",
-     "value": 1.069,
+     "value": 1.071,
      "isValue": false,
      "scores": {
       "form": 30,
       "fart": 76,
       "kusk": 25,
       "spar": 41,
-      "value": 53,
+      "value": 54,
       "total": 39,
       "tempo": 40
      },
@@ -11619,7 +12025,7 @@
       "total": 0,
       "tempo": 40,
       "form": 36,
-      "fart": 85,
+      "fart": 84,
       "klass": 51,
       "spar": 29,
       "kusk": 24,
@@ -11657,6 +12063,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 17.9,
        "falt": 12,
        "motFalt": 0,
@@ -11684,6 +12091,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 11.9,
        "falt": 11,
        "motFalt": 0,
@@ -11711,6 +12119,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 14.6,
        "falt": 12,
        "motFalt": 0,
@@ -11734,7 +12143,8 @@
        "firstPrize": 100000,
        "shoes": null,
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-07-23",
@@ -11757,9 +12167,14 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.005,
+     "streckLast": 0.002,
+     "streckDrift": 0.49,
+     "poolTrend": -0.0004
     },
     {
      "nr": 2,
@@ -11851,7 +12266,7 @@
      "marketP": 0.017,
      "marketPct": 0.002,
      "marketSource": "streck",
-     "value": 1.401,
+     "value": 1.394,
      "isValue": false,
      "scores": {
       "form": 42,
@@ -11904,6 +12319,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 23.2,
        "falt": 11,
        "motFalt": 0.1,
@@ -11931,6 +12347,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 12.5,
        "falt": 10,
        "motFalt": 0,
@@ -11958,6 +12375,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 26.6,
        "falt": 13,
        "motFalt": 0,
@@ -11984,7 +12402,8 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-07-25",
@@ -12007,9 +12426,14 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.005,
+     "streckLast": 0.002,
+     "streckDrift": 0.35,
+     "poolTrend": -0.0002
     },
     {
      "nr": 5,
@@ -12101,7 +12525,7 @@
      "marketP": 0.013,
      "marketPct": 0.001,
      "marketSource": "streck",
-     "value": 1.104,
+     "value": 1.098,
      "isValue": false,
      "scores": {
       "form": 52,
@@ -12109,7 +12533,7 @@
       "kusk": 43,
       "spar": 22,
       "value": 55,
-      "total": 39,
+      "total": 38,
       "tempo": 28
      },
      "position": "Bakom",
@@ -12118,7 +12542,7 @@
       "total": 0,
       "tempo": 28,
       "form": 52,
-      "fart": 44,
+      "fart": 43,
       "klass": 28,
       "spar": 34,
       "kusk": 45,
@@ -12158,6 +12582,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 14.8,
        "falt": 9,
        "motFalt": 0.2,
@@ -12185,6 +12610,7 @@
        },
        "trackCondition": "light",
        "sport": "monté",
+       "raceType": "regular",
        "efter": null,
        "falt": 9,
        "motFalt": null,
@@ -12212,6 +12638,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 26.5,
        "falt": 9,
        "motFalt": -0.1,
@@ -12238,7 +12665,8 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "monté"
+       "sport": "monté",
+       "raceType": "regular"
       },
       {
        "date": "2026-07-14",
@@ -12261,9 +12689,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.006,
+     "streckLast": 0.001,
+     "streckDrift": 0.24,
+     "poolTrend": -0.0005
     },
     {
      "nr": 6,
@@ -12355,14 +12788,14 @@
      "marketP": 0.021,
      "marketPct": 0.002,
      "marketSource": "streck",
-     "value": 1.439,
+     "value": 1.466,
      "isValue": false,
      "scores": {
       "form": 49,
       "fart": 30,
       "kusk": 29,
       "spar": 45,
-      "value": 72,
+      "value": 73,
       "total": 47,
       "tempo": 20
      },
@@ -12372,7 +12805,7 @@
       "total": 0,
       "tempo": 20,
       "form": 49,
-      "fart": 34,
+      "fart": 36,
       "klass": 41,
       "spar": 52,
       "kusk": 26,
@@ -12411,6 +12844,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 27.1,
        "falt": 11,
        "motFalt": 0.3,
@@ -12438,6 +12872,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 7,
        "motFalt": -0.7,
@@ -12465,6 +12900,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 14.8,
        "falt": 11,
        "motFalt": 0,
@@ -12491,7 +12927,8 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-06-24",
@@ -12514,9 +12951,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.004,
+     "streckLast": 0.002,
+     "streckDrift": 0.39,
+     "poolTrend": -0.0002
     },
     {
      "nr": 8,
@@ -12614,7 +13056,7 @@
      "marketP": 0.01,
      "marketPct": 0.001,
      "marketSource": "streck",
-     "value": 1.918,
+     "value": 1.916,
      "isValue": false,
      "scores": {
       "form": 24,
@@ -12631,7 +13073,7 @@
       "total": 0,
       "tempo": 20,
       "form": 32,
-      "fart": 31,
+      "fart": 30,
       "klass": 27,
       "spar": 51,
       "kusk": 34,
@@ -12671,6 +13113,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 3.5,
        "falt": 10,
        "motFalt": 0,
@@ -12698,6 +13141,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 10,
        "motFalt": -0.4,
@@ -12725,6 +13169,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 26.3,
        "falt": 10,
        "motFalt": 0.1,
@@ -12752,6 +13197,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 29.7,
        "falt": 13,
        "motFalt": 0.3,
@@ -12778,9 +13224,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.003,
+     "streckLast": 0.001,
+     "streckDrift": 0.39,
+     "poolTrend": -0.0003
     }
    ],
    "favorite": {
@@ -12910,11 +13361,11 @@
      "trainerWin": 0.26,
      "klass": 12.400820837540556,
      "postIndex": 0.295,
-     "p": 0.227,
+     "p": 0.226,
      "marketP": 0.161,
      "marketPct": 0.159,
      "marketSource": "streck",
-     "value": 1.429,
+     "value": 1.424,
      "isValue": true,
      "scores": {
       "form": 42,
@@ -12966,6 +13417,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 12,
        "motFalt": -1,
@@ -12993,6 +13445,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 11.6,
        "falt": 12,
        "motFalt": -0.1,
@@ -13020,6 +13473,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 2.3,
        "falt": 10,
        "motFalt": -0.4,
@@ -13046,7 +13500,8 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-06-27",
@@ -13069,9 +13524,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.078,
+     "streckLast": 0.159,
+     "streckDrift": 2.04,
+     "poolTrend": 0.0232
     },
     {
      "nr": 5,
@@ -13141,11 +13601,11 @@
      "trainerWin": 0.236,
      "klass": 11.341979480316132,
      "postIndex": 0.362,
-     "p": 0.211,
+     "p": 0.21,
      "marketP": 0.126,
      "marketPct": 0.235,
      "marketSource": "streck",
-     "value": 0.898,
+     "value": 0.896,
      "isValue": false,
      "scores": {
       "form": 80,
@@ -13198,6 +13658,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 12,
        "motFalt": -0.3,
@@ -13225,6 +13686,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -2.9,
        "falt": 9,
        "motFalt": -0.3,
@@ -13252,6 +13714,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 7,
        "motFalt": -0.7,
@@ -13278,7 +13741,8 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-07-07",
@@ -13301,9 +13765,14 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.4,
+     "streckLast": 0.235,
+     "streckDrift": 0.59,
+     "poolTrend": -0.0378
     },
     {
      "nr": 3,
@@ -13379,11 +13848,11 @@
      "trainerWin": 0.172,
      "klass": 11.729388028101642,
      "postIndex": 0.231,
-     "p": 0.178,
+     "p": 0.177,
      "marketP": 0.203,
      "marketPct": 0.236,
      "marketSource": "streck",
-     "value": 0.753,
+     "value": 0.751,
      "isValue": false,
      "scores": {
       "form": 35,
@@ -13435,6 +13904,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -5.9,
        "falt": 12,
        "motFalt": -0.6,
@@ -13462,6 +13932,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 4.6,
        "falt": 10,
        "motFalt": -0.3,
@@ -13489,6 +13960,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 2.9,
        "falt": 11,
        "motFalt": -0.1,
@@ -13515,7 +13987,8 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-06-28",
@@ -13538,9 +14011,14 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.172,
+     "streckLast": 0.236,
+     "streckDrift": 1.37,
+     "poolTrend": 0.0131
     },
     {
      "nr": 9,
@@ -13620,7 +14098,7 @@
      "marketP": 0.138,
      "marketPct": 0.141,
      "marketSource": "streck",
-     "value": 0.901,
+     "value": 0.9,
      "isValue": false,
      "scores": {
       "form": 68,
@@ -13636,7 +14114,7 @@
      "poang": {
       "total": 68,
       "tempo": 28,
-      "form": 75,
+      "form": 74,
       "fart": 72,
       "klass": 94,
       "spar": 47,
@@ -13673,6 +14151,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -2.9,
        "falt": 12,
        "motFalt": -0.4,
@@ -13700,6 +14179,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -2.3,
        "falt": 10,
        "motFalt": -0.5,
@@ -13727,6 +14207,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 2.9,
        "falt": 7,
        "motFalt": -0.2,
@@ -13753,7 +14234,8 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-06-15",
@@ -13776,9 +14258,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.151,
+     "streckLast": 0.141,
+     "streckDrift": 0.93,
+     "poolTrend": -0.0164
     },
     {
      "nr": 2,
@@ -13854,19 +14341,19 @@
      "trainerWin": 0.236,
      "klass": 10.579323250321185,
      "postIndex": 0.353,
-     "p": 0.107,
+     "p": 0.109,
      "marketP": 0.113,
      "marketPct": 0.103,
      "marketSource": "streck",
-     "value": 1.033,
+     "value": 1.058,
      "isValue": false,
      "scores": {
       "form": 55,
       "fart": 39,
       "kusk": 63,
       "spar": 72,
-      "value": 52,
-      "total": 53,
+      "value": 53,
+      "total": 54,
       "tempo": 55
      },
      "position": "Utvändigt (dödens)",
@@ -13911,6 +14398,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 12,
        "motFalt": -1,
@@ -13938,6 +14426,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 11,
        "motFalt": -0.2,
@@ -13965,6 +14454,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -11.6,
        "falt": 11,
        "motFalt": -0.8,
@@ -13992,6 +14482,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 20.2,
        "falt": 10,
        "motFalt": 0,
@@ -14018,9 +14509,14 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.097,
+     "streckLast": 0.103,
+     "streckDrift": 1.06,
+     "poolTrend": 0.0012
     },
     {
      "nr": 7,
@@ -14090,25 +14586,25 @@
      "trainerWin": 0.26,
      "klass": 11.121131430426457,
      "postIndex": 0.277,
-     "p": 0.054,
+     "p": 0.053,
      "marketP": 0.038,
      "marketPct": 0.035,
      "marketSource": "streck",
-     "value": 1.534,
+     "value": 1.528,
      "isValue": true,
      "scores": {
       "form": 64,
       "fart": 67,
       "kusk": 52,
       "spar": 47,
-      "value": 77,
+      "value": 76,
       "total": 61,
       "tempo": 40
      },
      "position": "Bakom",
      "tempoScore": 40,
      "poang": {
-      "total": 50,
+      "total": 49,
       "tempo": 40,
       "form": 59,
       "fart": 48,
@@ -14147,6 +14643,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 12,
        "motFalt": -0.4,
@@ -14174,6 +14671,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -8.7,
        "falt": 12,
        "motFalt": -0.5,
@@ -14201,6 +14699,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 5.9,
        "falt": 7,
        "motFalt": -0.3,
@@ -14227,7 +14726,8 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-07-15",
@@ -14247,9 +14747,14 @@
        "firstPrize": 50000,
        "shoes": null,
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.025,
+     "streckLast": 0.035,
+     "streckDrift": 1.4,
+     "poolTrend": 0.0087
     },
     {
      "nr": 8,
@@ -14323,7 +14828,7 @@
      "marketP": 0.057,
      "marketPct": 0.034,
      "marketSource": "streck",
-     "value": 1.183,
+     "value": 1.177,
      "isValue": true,
      "scores": {
       "form": 71,
@@ -14377,6 +14882,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 3,
        "falt": 11,
        "motFalt": -0.5,
@@ -14404,6 +14910,7 @@
        },
        "trackCondition": "dead",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -5.7,
        "falt": 10,
        "motFalt": -1.2,
@@ -14431,6 +14938,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -5.6,
        "falt": 8,
        "motFalt": -0.4,
@@ -14457,7 +14965,8 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-05-17",
@@ -14480,9 +14989,14 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.025,
+     "streckLast": 0.034,
+     "streckDrift": 1.36,
+     "poolTrend": 0.0041
     },
     {
      "nr": 4,
@@ -14562,7 +15076,7 @@
      "marketP": 0.044,
      "marketPct": 0.025,
      "marketSource": "streck",
-     "value": 0.873,
+     "value": 0.87,
      "isValue": false,
      "scores": {
       "form": 68,
@@ -14615,6 +15129,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 12,
        "motFalt": -0.4,
@@ -14642,6 +15157,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -9.3,
        "falt": 10,
        "motFalt": -0.6,
@@ -14669,6 +15185,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 11,
        "motFalt": -0.2,
@@ -14695,7 +15212,8 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-06-22",
@@ -14718,9 +15236,14 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.018,
+     "streckLast": 0.025,
+     "streckDrift": 1.43,
+     "poolTrend": 0.0035
     },
     {
      "nr": 6,
@@ -14794,7 +15317,7 @@
      "marketP": 0.034,
      "marketPct": 0.014,
      "marketSource": "streck",
-     "value": 1.159,
+     "value": 1.157,
      "isValue": false,
      "scores": {
       "form": 48,
@@ -14846,6 +15369,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 12,
        "motFalt": -0.3,
@@ -14873,6 +15397,7 @@
        },
        "trackCondition": "dead",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 7,
        "motFalt": -0.6,
@@ -14900,6 +15425,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -5.8,
        "falt": 8,
        "motFalt": -0.6,
@@ -14926,7 +15452,8 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-06-07",
@@ -14949,9 +15476,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.011,
+     "streckLast": 0.014,
+     "streckDrift": 1.26,
+     "poolTrend": 0.0016
     },
     {
      "nr": 10,
@@ -15025,7 +15557,7 @@
      "marketP": 0.02,
      "marketPct": 0.011,
      "marketSource": "streck",
-     "value": 1.036,
+     "value": 1.033,
      "isValue": false,
      "scores": {
       "form": 29,
@@ -15077,6 +15609,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 2.9,
        "falt": 12,
        "motFalt": -0.3,
@@ -15104,6 +15637,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 23.7,
        "falt": 12,
        "motFalt": 0,
@@ -15131,6 +15665,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 5.7,
        "falt": 11,
        "motFalt": 0,
@@ -15157,7 +15692,8 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2025-12-20",
@@ -15180,9 +15716,14 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.009,
+     "streckLast": 0.011,
+     "streckDrift": 1.12,
+     "poolTrend": -0.0004
     },
     {
      "nr": 1,
@@ -15262,7 +15803,7 @@
      "marketP": 0.053,
      "marketPct": 0.007,
      "marketSource": "streck",
-     "value": 1.02,
+     "value": 1.021,
      "isValue": false,
      "scores": {
       "form": 27,
@@ -15278,7 +15819,7 @@
      "poang": {
       "total": 6,
       "tempo": 75,
-      "form": 43,
+      "form": 44,
       "fart": 41,
       "klass": 27,
       "spar": 47,
@@ -15315,6 +15856,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -3,
        "falt": 11,
        "motFalt": -0.6,
@@ -15342,6 +15884,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 23.2,
        "falt": 12,
        "motFalt": 0.3,
@@ -15369,6 +15912,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 14.4,
        "falt": 9,
        "motFalt": -0.3,
@@ -15395,7 +15939,8 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-05-15",
@@ -15418,9 +15963,14 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.011,
+     "streckLast": 0.007,
+     "streckDrift": 0.59,
+     "poolTrend": -0.0006
     },
     {
      "nr": 12,
@@ -15494,7 +16044,7 @@
      "marketP": 0.014,
      "marketPct": 0.002,
      "marketSource": "streck",
-     "value": 1.032,
+     "value": 1.031,
      "isValue": false,
      "scores": {
       "form": 13,
@@ -15546,6 +16096,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 5.9,
        "falt": 12,
        "motFalt": -0.4,
@@ -15573,6 +16124,7 @@
        },
        "trackCondition": "dead",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 8.5,
        "falt": 8,
        "motFalt": -0.1,
@@ -15600,6 +16152,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 8.8,
        "falt": 10,
        "motFalt": -0.1,
@@ -15626,7 +16179,8 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-06-20",
@@ -15649,9 +16203,14 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.002,
+     "streckLast": 0.002,
+     "streckDrift": 0.63,
+     "poolTrend": -0.0001
     }
    ],
    "favorite": {
@@ -15804,7 +16363,7 @@
      "trainerWin": 0.138,
      "klass": 10.343849938642162,
      "postIndex": 0.362,
-     "p": 0.554,
+     "p": 0.555,
      "marketP": 0.377,
      "marketPct": 0.553,
      "marketSource": "streck",
@@ -15861,6 +16420,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -3,
        "falt": 11,
        "motFalt": -0.8,
@@ -15888,6 +16448,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -7.2,
        "falt": 12,
        "motFalt": -0.3,
@@ -15915,6 +16476,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": null,
        "falt": 10,
        "motFalt": null,
@@ -15941,7 +16503,8 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-05-09",
@@ -15961,9 +16524,14 @@
        "firstPrize": 135000,
        "shoes": null,
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.572,
+     "streckLast": 0.553,
+     "streckDrift": 0.97,
+     "poolTrend": -0.0166
     },
     {
      "nr": 12,
@@ -16083,6 +16651,7 @@
        },
        "trackCondition": "dead",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -8.9,
        "falt": 9,
        "motFalt": -0.6,
@@ -16110,6 +16679,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -20.6,
        "falt": 15,
        "motFalt": -1,
@@ -16137,6 +16707,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 8.9,
        "falt": 11,
        "motFalt": 0,
@@ -16163,7 +16734,8 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-06-21",
@@ -16186,9 +16758,14 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.09,
+     "streckLast": 0.138,
+     "streckDrift": 1.54,
+     "poolTrend": 0.0164
     },
     {
      "nr": 7,
@@ -16329,6 +16906,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -8.5,
        "falt": 9,
        "motFalt": -0.9,
@@ -16356,6 +16934,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 8.5,
        "falt": 15,
        "motFalt": -0.1,
@@ -16383,6 +16962,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 7.2,
        "falt": 12,
        "motFalt": -0.1,
@@ -16410,6 +16990,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 13,
        "motFalt": -0.5,
@@ -16436,9 +17017,14 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.139,
+     "streckLast": 0.105,
+     "streckDrift": 0.75,
+     "poolTrend": -0.0124
     },
     {
      "nr": 10,
@@ -16582,6 +17168,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -5.9,
        "falt": 12,
        "motFalt": -0.7,
@@ -16609,6 +17196,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -9.2,
        "falt": 12,
        "motFalt": -0.7,
@@ -16636,6 +17224,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 3,
        "falt": 8,
        "motFalt": -0.5,
@@ -16662,7 +17251,8 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-04-28",
@@ -16685,9 +17275,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.087,
+     "streckLast": 0.117,
+     "streckDrift": 1.35,
+     "poolTrend": 0.0092
     },
     {
      "nr": 4,
@@ -16827,6 +17422,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 9,
        "motFalt": -0.2,
@@ -16854,6 +17450,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 3,
        "falt": 11,
        "motFalt": -0.7,
@@ -16881,6 +17478,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 7.2,
        "falt": 12,
        "motFalt": -0.1,
@@ -16908,6 +17506,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 9.3,
        "falt": 11,
        "motFalt": -0.3,
@@ -16931,9 +17530,14 @@
        "firstPrize": 270000,
        "shoes": null,
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.026,
+     "streckLast": 0.033,
+     "streckDrift": 1.28,
+     "poolTrend": 0.0068
     },
     {
      "nr": 1,
@@ -17025,7 +17629,7 @@
      "marketP": 0.03,
      "marketPct": 0.015,
      "marketSource": "streck",
-     "value": 1.54,
+     "value": 1.538,
      "isValue": false,
      "scores": {
       "form": 46,
@@ -17078,6 +17682,7 @@
        },
        "trackCondition": "dead",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 31.8,
        "falt": 8,
        "motFalt": 0.6,
@@ -17105,6 +17710,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 9,
        "falt": 11,
        "motFalt": -0.1,
@@ -17132,6 +17738,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 6,
        "falt": 12,
        "motFalt": -0.4,
@@ -17158,7 +17765,8 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-07-16",
@@ -17181,9 +17789,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.024,
+     "streckLast": 0.015,
+     "streckDrift": 0.64,
+     "poolTrend": 0.0012
     },
     {
      "nr": 9,
@@ -17281,7 +17894,7 @@
      "marketP": 0.042,
      "marketPct": 0.012,
      "marketSource": "streck",
-     "value": 1.33,
+     "value": 1.331,
      "isValue": false,
      "scores": {
       "form": 45,
@@ -17334,6 +17947,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -3,
        "falt": 12,
        "motFalt": -0.4,
@@ -17361,6 +17975,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 3,
        "falt": 8,
        "motFalt": 0,
@@ -17388,6 +18003,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 18,
        "falt": 12,
        "motFalt": 0,
@@ -17415,6 +18031,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 7,
        "falt": 11,
        "motFalt": -0.4,
@@ -17441,9 +18058,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.011,
+     "streckLast": 0.012,
+     "streckDrift": 1.13,
+     "poolTrend": 0.0014
     },
     {
      "nr": 3,
@@ -17535,7 +18157,7 @@
      "marketP": 0.033,
      "marketPct": 0.008,
      "marketSource": "streck",
-     "value": 1.625,
+     "value": 1.624,
      "isValue": false,
      "scores": {
       "form": 40,
@@ -17588,6 +18210,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 7,
        "motFalt": -0.2,
@@ -17615,6 +18238,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 17.8,
        "falt": 12,
        "motFalt": 0.2,
@@ -17642,6 +18266,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 7,
        "falt": 11,
        "motFalt": 0,
@@ -17668,7 +18293,8 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-07-27",
@@ -17691,9 +18317,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.017,
+     "streckLast": 0.008,
+     "streckDrift": 0.5,
+     "poolTrend": -0.0018
     },
     {
      "nr": 6,
@@ -17779,7 +18410,7 @@
      "marketP": 0.061,
      "marketPct": 0.008,
      "marketSource": "streck",
-     "value": 1.259,
+     "value": 1.261,
      "isValue": false,
      "scores": {
       "form": 47,
@@ -17832,6 +18463,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 7,
        "motFalt": 0,
@@ -17859,6 +18491,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -2.3,
        "falt": 11,
        "motFalt": -0.2,
@@ -17886,6 +18519,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 16.3,
        "falt": 11,
        "motFalt": 0,
@@ -17912,7 +18546,8 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-04-29",
@@ -17935,9 +18570,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.02,
+     "streckLast": 0.008,
+     "streckDrift": 0.41,
+     "poolTrend": -0.0025
     },
     {
      "nr": 2,
@@ -18023,7 +18663,7 @@
      "marketP": 0.032,
      "marketPct": 0.007,
      "marketSource": "streck",
-     "value": 1.301,
+     "value": 1.299,
      "isValue": false,
      "scores": {
       "form": 34,
@@ -18076,6 +18716,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 14.8,
        "falt": 12,
        "motFalt": -0.2,
@@ -18103,6 +18744,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 2.9,
        "falt": 6,
        "motFalt": 0,
@@ -18130,6 +18772,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 20.6,
        "falt": 15,
        "motFalt": -0.3,
@@ -18157,6 +18800,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 8.9,
        "falt": 11,
        "motFalt": 0,
@@ -18183,9 +18827,14 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.009,
+     "streckLast": 0.007,
+     "streckDrift": 0.83,
+     "poolTrend": -0.0006
     },
     {
      "nr": 11,
@@ -18265,7 +18914,7 @@
      "marketP": 0.021,
      "marketPct": 0.003,
      "marketSource": "streck",
-     "value": 2.424,
+     "value": 2.422,
      "isValue": false,
      "scores": {
       "form": 27,
@@ -18318,6 +18967,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 11.9,
        "falt": 12,
        "motFalt": 0,
@@ -18345,6 +18995,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 11.5,
        "falt": 12,
        "motFalt": -0.2,
@@ -18372,6 +19023,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 11.7,
        "falt": 10,
        "motFalt": -0.7,
@@ -18398,7 +19050,8 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-07-01",
@@ -18421,9 +19074,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.004,
+     "streckLast": 0.003,
+     "streckDrift": 0.59,
+     "poolTrend": -0.0006
     },
     {
      "nr": 8,
@@ -18509,7 +19167,7 @@
      "marketP": 0.012,
      "marketPct": 0.001,
      "marketSource": "streck",
-     "value": 1.328,
+     "value": 1.327,
      "isValue": false,
      "scores": {
       "form": 20,
@@ -18564,6 +19222,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 34,
        "falt": 15,
        "motFalt": 0.5,
@@ -18591,6 +19250,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 66.4,
        "falt": 7,
        "motFalt": 2.9,
@@ -18618,6 +19278,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 2.3,
        "falt": 11,
        "motFalt": -0.2,
@@ -18644,7 +19305,8 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-07-13",
@@ -18667,9 +19329,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.004,
+     "streckLast": 0.001,
+     "streckDrift": 0.33,
+     "poolTrend": -0.0006
     }
    ],
    "favorite": {
@@ -18821,7 +19488,7 @@
      "poang": {
       "total": 90,
       "tempo": 40,
-      "form": 79,
+      "form": 78,
       "fart": 12,
       "klass": 58,
       "spar": 83,
@@ -18859,6 +19526,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 12,
        "motFalt": -0.1,
@@ -18886,6 +19554,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 8.7,
        "falt": 8,
        "motFalt": -0.3,
@@ -18913,6 +19582,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -2.9,
        "falt": 11,
        "motFalt": -0.3,
@@ -18939,7 +19609,8 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-06-17",
@@ -18962,9 +19633,14 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.469,
+     "streckLast": 0.443,
+     "streckDrift": 0.94,
+     "poolTrend": -0.0005
     },
     {
      "nr": 8,
@@ -19096,6 +19772,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 3.7,
        "falt": 12,
        "motFalt": -1.1,
@@ -19123,6 +19800,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 8,
        "motFalt": -0.4,
@@ -19150,6 +19828,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -5.9,
        "falt": 10,
        "motFalt": -0.5,
@@ -19176,7 +19855,8 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-06-15",
@@ -19199,9 +19879,14 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.081,
+     "streckLast": 0.139,
+     "streckDrift": 1.72,
+     "poolTrend": 0.0011
     },
     {
      "nr": 5,
@@ -19341,6 +20026,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -7.2,
        "falt": 12,
        "motFalt": -0.7,
@@ -19368,6 +20054,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -4.7,
        "falt": 9,
        "motFalt": -0.5,
@@ -19395,6 +20082,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -2.9,
        "falt": 11,
        "motFalt": -0.3,
@@ -19421,7 +20109,8 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-06-15",
@@ -19444,9 +20133,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.171,
+     "streckLast": 0.126,
+     "streckDrift": 0.73,
+     "poolTrend": -0.0104
     },
     {
      "nr": 3,
@@ -19532,7 +20226,7 @@
      "marketP": 0.098,
      "marketPct": 0.119,
      "marketSource": "streck",
-     "value": 0.933,
+     "value": 0.931,
      "isValue": false,
      "scores": {
       "form": 47,
@@ -19585,6 +20279,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -3.7,
        "falt": 12,
        "motFalt": -1.2,
@@ -19612,6 +20307,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 12,
        "motFalt": -0.2,
@@ -19639,6 +20335,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 6.7,
        "falt": 7,
        "motFalt": 0,
@@ -19666,6 +20363,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 14.6,
        "falt": 11,
        "motFalt": 0.2,
@@ -19692,9 +20390,14 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.136,
+     "streckLast": 0.119,
+     "streckDrift": 0.87,
+     "poolTrend": -0.0018
     },
     {
      "nr": 11,
@@ -19780,7 +20483,7 @@
      "marketP": 0.063,
      "marketPct": 0.064,
      "marketSource": "streck",
-     "value": 1.177,
+     "value": 1.178,
      "isValue": true,
      "scores": {
       "form": 43,
@@ -19796,7 +20499,7 @@
      "poang": {
       "total": 57,
       "tempo": 28,
-      "form": 40,
+      "form": 41,
       "fart": 49,
       "klass": 54,
       "spar": 53,
@@ -19833,6 +20536,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 7.2,
        "falt": 12,
        "motFalt": -0.6,
@@ -19860,6 +20564,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 8,
        "motFalt": -0.4,
@@ -19887,6 +20592,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 14.8,
        "falt": 10,
        "motFalt": 0,
@@ -19913,7 +20619,8 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-06-15",
@@ -19936,9 +20643,14 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.032,
+     "streckLast": 0.064,
+     "streckDrift": 2.02,
+     "poolTrend": 0.0089
     },
     {
      "nr": 1,
@@ -20018,7 +20730,7 @@
      "marketP": 0.062,
      "marketPct": 0.046,
      "marketSource": "streck",
-     "value": 1.142,
+     "value": 1.143,
      "isValue": false,
      "scores": {
       "form": 80,
@@ -20071,6 +20783,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 12,
        "motFalt": -0.1,
@@ -20098,6 +20811,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -8.7,
        "falt": 8,
        "motFalt": -0.6,
@@ -20125,6 +20839,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 5.9,
        "falt": 11,
        "motFalt": -0.1,
@@ -20151,7 +20866,8 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-06-18",
@@ -20174,9 +20890,14 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.045,
+     "streckLast": 0.046,
+     "streckDrift": 1.02,
+     "poolTrend": -0.0005
     },
     {
      "nr": 2,
@@ -20270,11 +20991,11 @@
      "trainerWin": 0.151,
      "klass": 10.605697293760251,
      "postIndex": 0.353,
-     "p": 0.027,
+     "p": 0.028,
      "marketP": 0.076,
      "marketPct": 0.026,
      "marketSource": "streck",
-     "value": 1.058,
+     "value": 1.064,
      "isValue": false,
      "scores": {
       "form": 68,
@@ -20327,6 +21048,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -7.3,
        "falt": 12,
        "motFalt": -0.5,
@@ -20354,6 +21076,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 11.6,
        "falt": 9,
        "motFalt": 0,
@@ -20381,6 +21104,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 2.9,
        "falt": 11,
        "motFalt": -0.2,
@@ -20407,7 +21131,8 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-06-30",
@@ -20430,9 +21155,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.026,
+     "streckLast": 0.026,
+     "streckDrift": 1.01,
+     "poolTrend": -0.0004
     },
     {
      "nr": 9,
@@ -20512,7 +21242,7 @@
      "marketP": 0.036,
      "marketPct": 0.013,
      "marketSource": "streck",
-     "value": 0.993,
+     "value": 0.994,
      "isValue": false,
      "scores": {
       "form": 19,
@@ -20528,7 +21258,7 @@
      "poang": {
       "total": 20,
       "tempo": 24,
-      "form": 34,
+      "form": 33,
       "fart": 52,
       "klass": 21,
       "spar": 47,
@@ -20566,6 +21296,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 7.3,
        "falt": 12,
        "motFalt": -0.3,
@@ -20593,6 +21324,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 23.6,
        "falt": 11,
        "motFalt": 0.1,
@@ -20620,6 +21352,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 8.6,
        "falt": 10,
        "motFalt": -0.4,
@@ -20646,7 +21379,8 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-06-12",
@@ -20669,9 +21403,14 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.01,
+     "streckLast": 0.013,
+     "streckDrift": 1.41,
+     "poolTrend": 0.0029
     },
     {
      "nr": 10,
@@ -20757,7 +21496,7 @@
      "marketP": 0.039,
      "marketPct": 0.007,
      "marketSource": "streck",
-     "value": 1.459,
+     "value": 1.467,
      "isValue": false,
      "scores": {
       "form": 21,
@@ -20811,6 +21550,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 12,
        "motFalt": -0.1,
@@ -20838,6 +21578,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 12,
        "motFalt": -0.2,
@@ -20865,6 +21606,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -2.3,
        "falt": 9,
        "motFalt": -0.2,
@@ -20891,7 +21633,8 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-06-27",
@@ -20914,9 +21657,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.007,
+     "streckLast": 0.007,
+     "streckDrift": 1.01,
+     "poolTrend": 0.0008
     },
     {
      "nr": 6,
@@ -20998,14 +21746,14 @@
      "marketP": 0.03,
      "marketPct": 0.01,
      "marketSource": "streck",
-     "value": 0.808,
+     "value": 0.815,
      "isValue": false,
      "scores": {
       "form": 34,
       "fart": 30,
       "kusk": 50,
       "spar": 65,
-      "value": 40,
+      "value": 41,
       "total": 37,
       "tempo": 36
      },
@@ -21014,7 +21762,7 @@
      "poang": {
       "total": 9,
       "tempo": 36,
-      "form": 26,
+      "form": 27,
       "fart": 43,
       "klass": 44,
       "spar": 65,
@@ -21051,6 +21799,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 12,
        "motFalt": -0.1,
@@ -21078,6 +21827,7 @@
        },
        "trackCondition": "dead",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 8.6,
        "falt": 7,
        "motFalt": 0,
@@ -21101,7 +21851,8 @@
        "firstPrize": 200000,
        "shoes": null,
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-08-22",
@@ -21125,6 +21876,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 2.3,
        "falt": 9,
        "motFalt": -0.1,
@@ -21151,9 +21903,14 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.008,
+     "streckLast": 0.01,
+     "streckDrift": 1.14,
+     "poolTrend": 0.0009
     },
     {
      "nr": 7,
@@ -21233,7 +21990,7 @@
      "marketP": 0.021,
      "marketPct": 0.004,
      "marketSource": "streck",
-     "value": 0.99,
+     "value": 0.988,
      "isValue": false,
      "scores": {
       "form": 45,
@@ -21249,7 +22006,7 @@
      "poang": {
       "total": 0,
       "tempo": 32,
-      "form": 41,
+      "form": 40,
       "fart": 13,
       "klass": 31,
       "spar": 47,
@@ -21285,6 +22042,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 12,
        "motFalt": -0.1,
@@ -21312,6 +22070,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -5.8,
        "falt": 11,
        "motFalt": -0.6,
@@ -21339,6 +22098,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 5.8,
        "falt": 8,
        "motFalt": -0.1,
@@ -21365,7 +22125,8 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-06-15",
@@ -21388,9 +22149,14 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.007,
+     "streckLast": 0.004,
+     "streckDrift": 0.62,
+     "poolTrend": -0.0005
     },
     {
      "nr": 12,
@@ -21476,7 +22242,7 @@
      "marketP": 0.022,
      "marketPct": 0.003,
      "marketSource": "streck",
-     "value": 1.31,
+     "value": 1.309,
      "isValue": false,
      "scores": {
       "form": 40,
@@ -21528,6 +22294,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 12,
        "motFalt": -0.1,
@@ -21555,6 +22322,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 14.5,
        "falt": 10,
        "motFalt": 0.3,
@@ -21582,6 +22350,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 11.6,
        "falt": 8,
        "motFalt": -0.2,
@@ -21608,7 +22377,8 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-08-12",
@@ -21631,9 +22401,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.008,
+     "streckLast": 0.003,
+     "streckDrift": 0.38,
+     "poolTrend": -0.0005
     }
    ],
    "favorite": {
@@ -21833,6 +22608,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -9,
        "falt": 12,
        "motFalt": -0.6,
@@ -21860,6 +22636,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 9.2,
        "falt": 9,
        "motFalt": -0.1,
@@ -21887,6 +22664,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 7,
        "motFalt": -0.1,
@@ -21913,7 +22691,8 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-06-27",
@@ -21936,9 +22715,14 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.237,
+     "streckLast": 0.334,
+     "streckDrift": 1.41,
+     "poolTrend": 0.0187
     },
     {
      "nr": 2,
@@ -22038,7 +22822,7 @@
       "kusk": 87,
       "spar": 72,
       "value": 48,
-      "total": 57,
+      "total": 56,
       "tempo": 80
      },
      "position": "Ledning",
@@ -22083,6 +22867,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 9,
        "falt": 12,
        "motFalt": -0.3,
@@ -22110,6 +22895,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -3,
        "falt": 11,
        "motFalt": -0.4,
@@ -22137,6 +22923,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 9,
        "falt": 12,
        "motFalt": 0,
@@ -22164,6 +22951,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -9.4,
        "falt": 8,
        "motFalt": -0.8,
@@ -22190,9 +22978,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.403,
+     "streckLast": 0.353,
+     "streckDrift": 0.87,
+     "poolTrend": -0.0071
     },
     {
      "nr": 6,
@@ -22290,7 +23083,7 @@
      "marketP": 0.108,
      "marketPct": 0.117,
      "marketSource": "streck",
-     "value": 0.943,
+     "value": 0.942,
      "isValue": false,
      "scores": {
       "form": 95,
@@ -22345,6 +23138,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 11,
        "motFalt": -1.1,
@@ -22372,6 +23166,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 7,
        "motFalt": -0.4,
@@ -22399,6 +23194,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -3,
        "falt": 12,
        "motFalt": -0.3,
@@ -22425,7 +23221,8 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-08-11",
@@ -22448,9 +23245,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.159,
+     "streckLast": 0.117,
+     "streckDrift": 0.74,
+     "poolTrend": -0.0174
     },
     {
      "nr": 1,
@@ -22577,6 +23379,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 12.7,
        "falt": 15,
        "motFalt": 0,
@@ -22604,6 +23407,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 6,
        "falt": 12,
        "motFalt": -0.1,
@@ -22631,6 +23435,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 3.7,
        "falt": 12,
        "motFalt": -0.3,
@@ -22657,7 +23462,8 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-07-25",
@@ -22681,12 +23487,17 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 57.3,
        "falt": 11,
        "motFalt": 0.4,
        "galopp": 0
       }
-     ]
+     ],
+     "streckFirst": 0.056,
+     "streckLast": 0.066,
+     "streckDrift": 1.17,
+     "poolTrend": 0.0114
     },
     {
      "nr": 3,
@@ -22824,6 +23635,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 12,
        "falt": 12,
        "motFalt": -0.2,
@@ -22851,6 +23663,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 3,
        "falt": 11,
        "motFalt": -0.3,
@@ -22878,6 +23691,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 21.1,
        "falt": 8,
        "motFalt": 0.1,
@@ -22904,7 +23718,8 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-07-08",
@@ -22927,9 +23742,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.039,
+     "streckLast": 0.031,
+     "streckDrift": 0.8,
+     "poolTrend": -0.0029
     },
     {
      "nr": 8,
@@ -23075,6 +23895,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 4.2,
        "falt": 15,
        "motFalt": -0.2,
@@ -23102,6 +23923,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 6,
        "falt": 12,
        "motFalt": -0.1,
@@ -23129,6 +23951,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -6,
        "falt": 12,
        "motFalt": -0.5,
@@ -23155,7 +23978,8 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-06-16",
@@ -23178,9 +24002,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.026,
+     "streckLast": 0.028,
+     "streckDrift": 1.08,
+     "poolTrend": 0.0002
     },
     {
      "nr": 4,
@@ -23324,6 +24153,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 3,
        "falt": 12,
        "motFalt": -0.4,
@@ -23351,6 +24181,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 3,
        "falt": 12,
        "motFalt": -0.2,
@@ -23378,6 +24209,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 56.9,
        "falt": 12,
        "motFalt": 1.6,
@@ -23404,7 +24236,8 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-06-21",
@@ -23427,9 +24260,14 @@
         "back": true
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.02,
+     "streckLast": 0.025,
+     "streckDrift": 1.27,
+     "poolTrend": 0.0032
     },
     {
      "nr": 11,
@@ -23515,7 +24353,7 @@
      "marketP": 0.044,
      "marketPct": 0.017,
      "marketSource": "streck",
-     "value": 0.936,
+     "value": 0.935,
      "isValue": false,
      "scores": {
       "form": 65,
@@ -23569,6 +24407,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": -3.7,
        "falt": 12,
        "motFalt": -0.4,
@@ -23596,6 +24435,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 9,
        "motFalt": -1.3,
@@ -23623,6 +24463,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 14,
        "motFalt": -1.6,
@@ -23649,7 +24490,8 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-04-25",
@@ -23672,9 +24514,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.016,
+     "streckLast": 0.017,
+     "streckDrift": 1.09,
+     "poolTrend": 0.0003
     },
     {
      "nr": 5,
@@ -23814,6 +24661,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 0,
        "falt": 6,
        "motFalt": 0,
@@ -23841,6 +24689,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 6,
        "falt": 11,
        "motFalt": -0.2,
@@ -23868,6 +24717,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 6,
        "falt": 12,
        "motFalt": -0.5,
@@ -23894,7 +24744,8 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-07-18",
@@ -23917,9 +24768,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.027,
+     "streckLast": 0.018,
+     "streckDrift": 0.68,
+     "poolTrend": -0.0036
     },
     {
      "nr": 10,
@@ -24053,6 +24909,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 14.9,
        "falt": 12,
        "motFalt": -0.1,
@@ -24080,6 +24937,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 14.9,
        "falt": 11,
        "motFalt": 0.1,
@@ -24107,6 +24965,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 9.4,
        "falt": 8,
        "motFalt": -0.4,
@@ -24133,7 +24992,8 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       },
       {
        "date": "2026-07-06",
@@ -24156,9 +25016,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.007,
+     "streckLast": 0.006,
+     "streckDrift": 0.81,
+     "poolTrend": -0.002
     },
     {
      "nr": 7,
@@ -24256,14 +25121,14 @@
      "marketP": 0.027,
      "marketPct": 0.004,
      "marketSource": "streck",
-     "value": 1.124,
+     "value": 1.132,
      "isValue": false,
      "scores": {
       "form": 33,
       "fart": 28,
       "kusk": 40,
       "spar": 47,
-      "value": 56,
+      "value": 57,
       "total": 46,
       "tempo": 28
      },
@@ -24310,6 +25175,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 8.8,
        "falt": 10,
        "motFalt": 0,
@@ -24337,6 +25203,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 8.9,
        "falt": 7,
        "motFalt": -0.1,
@@ -24364,6 +25231,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 11.7,
        "falt": 9,
        "motFalt": 0,
@@ -24391,6 +25259,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 11,
        "falt": 12,
        "motFalt": -0.1,
@@ -24418,12 +25287,17 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 14.9,
        "falt": 12,
        "motFalt": -0.1,
        "galopp": 0
       }
-     ]
+     ],
+     "streckFirst": 0.008,
+     "streckLast": 0.004,
+     "streckDrift": 0.44,
+     "poolTrend": -0.0008
     },
     {
      "nr": 12,
@@ -24515,7 +25389,7 @@
      "marketP": 0.018,
      "marketPct": 0.002,
      "marketSource": "streck",
-     "value": 1.155,
+     "value": 1.154,
      "isValue": false,
      "scores": {
       "form": 17,
@@ -24565,6 +25439,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 17.9,
        "falt": 12,
        "motFalt": 0,
@@ -24592,6 +25467,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 11.9,
        "falt": 11,
        "motFalt": 0,
@@ -24619,6 +25495,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 15,
        "falt": 12,
        "motFalt": 0.2,
@@ -24646,6 +25523,7 @@
        },
        "trackCondition": "light",
        "sport": "trot",
+       "raceType": "regular",
        "efter": 18.7,
        "falt": 8,
        "motFalt": 0,
@@ -24672,9 +25550,14 @@
         "back": false
        },
        "trackCondition": "light",
-       "sport": "trot"
+       "sport": "trot",
+       "raceType": "regular"
       }
-     ]
+     ],
+     "streckFirst": 0.004,
+     "streckLast": 0.002,
+     "streckDrift": 0.53,
+     "poolTrend": 0
     }
    ],
    "favorite": {
@@ -24731,9 +25614,9 @@
    "raceNr": 9,
    "nr": 1,
    "horse": "Mister Malabar",
-   "p": 0.624,
+   "p": 0.623,
    "marketPct": 0.638,
-   "value": 0.979,
+   "value": 0.976,
    "why": "Högst vinstchans i omgången"
   },
   "varde": {
@@ -24751,9 +25634,9 @@
    "raceNr": 10,
    "nr": 11,
    "horse": "Morning Rain",
-   "p": 0.227,
+   "p": 0.226,
    "marketPct": 0.159,
-   "value": 1.429,
+   "value": 1.424,
    "why": "Lågt streckad men realistisk vinnare – stor systemeffekt om den går in"
   }
  },
@@ -24765,7 +25648,7 @@
    "horse": "Isaac Wynn",
    "p": 0.066,
    "marketPct": 0.037,
-   "value": 1.761,
+   "value": 1.758,
    "why": [
     "topp 3 form i loppet (72)",
     "trolig position: rygg ledaren",
@@ -24779,7 +25662,7 @@
    "horse": "Digital Brodde",
    "p": 0.133,
    "marketPct": 0.052,
-   "value": 2.552,
+   "value": 2.543,
    "why": [
     "topp 3 fart i loppet",
     "stark kusk (Johan Untersteiner)"
@@ -24792,7 +25675,7 @@
    "horse": "Herkules A'lir",
    "p": 0.066,
    "marketPct": 0.042,
-   "value": 1.554,
+   "value": 1.551,
    "why": [
     "trolig position: rygg ledaren"
    ]
@@ -24922,9 +25805,9 @@
     "h1": "Toto Tooma",
     "h2": "Killer Rain",
     "p": 0.01,
-    "fair": 102.881,
+    "fair": 99.206,
     "odds": 104.16,
-    "ev": 0.012
+    "ev": 0.05
    },
    {
     "combo": "4-2",
@@ -25194,9 +26077,9 @@
     "h1": "Toto Tooma",
     "h2": "Killer Rain",
     "p": 0.01,
-    "fair": 102.881,
+    "fair": 99.206,
     "odds": 104.16,
-    "ev": 0.012
+    "ev": 0.05
    }
   ],
   "hasOdds": true,
@@ -25337,6 +26220,2783 @@
    "starts": 4,
    "wins": 1,
    "index": 0.792
+  },
+  "byTrack": {
+   "Boden|auto|1": {
+    "starts": 2,
+    "wins": 1,
+    "index": 0.938
+   },
+   "Solvalla|auto|3": {
+    "starts": 64,
+    "wins": 11,
+    "index": 0.268
+   },
+   "Östersund|auto|10": {
+    "starts": 5,
+    "wins": 1,
+    "index": 0.786
+   },
+   "Bergsåker|auto|7": {
+    "starts": 19,
+    "wins": 8,
+    "index": 0.646
+   },
+   "Solänget|auto|8": {
+    "starts": 1,
+    "wins": 1,
+    "index": 1
+   },
+   "Boden|auto|9": {
+    "starts": 5,
+    "wins": 2,
+    "index": 0.844
+   },
+   "Bergsåker|volte|2": {
+    "starts": 6,
+    "wins": 2,
+    "index": 0.787
+   },
+   "Dannero|auto|11": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.93
+   },
+   "Umåker|volte|4": {
+    "starts": 3,
+    "wins": 1,
+    "index": 0.878
+   },
+   "Bergsåker|auto|2": {
+    "starts": 20,
+    "wins": 7,
+    "index": 0.594
+   },
+   "Gävle|volte|4": {
+    "starts": 4,
+    "wins": 0,
+    "index": 0.698
+   },
+   "Gävle|auto|2": {
+    "starts": 9,
+    "wins": 5,
+    "index": 0.822
+   },
+   "Gävle|volte|6": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.902
+   },
+   "Romme|auto|1": {
+    "starts": 17,
+    "wins": 8,
+    "index": 0.7
+   },
+   "Romme|volte|6": {
+    "starts": 6,
+    "wins": 1,
+    "index": 0.713
+   },
+   "Färjestad|auto|4": {
+    "starts": 13,
+    "wins": 5,
+    "index": 0.641
+   },
+   "Jägersro|auto|3": {
+    "starts": 13,
+    "wins": 3,
+    "index": 0.566
+   },
+   "Eskilstuna|auto|2": {
+    "starts": 7,
+    "wins": 2,
+    "index": 0.688
+   },
+   "Bergsåker|auto|9": {
+    "starts": 11,
+    "wins": 2,
+    "index": 0.61
+   },
+   "Solvalla|auto|10": {
+    "starts": 39,
+    "wins": 4,
+    "index": 0.262
+   },
+   "Gävle|volte|2": {
+    "starts": 4,
+    "wins": 1,
+    "index": 0.773
+   },
+   "Solvalla|auto|4": {
+    "starts": 63,
+    "wins": 15,
+    "index": 0.328
+   },
+   "Solvalla|auto|6": {
+    "starts": 67,
+    "wins": 10,
+    "index": 0.244
+   },
+   "Gävle|auto|4": {
+    "starts": 8,
+    "wins": 3,
+    "index": 0.768
+   },
+   "Solvalla|auto|5": {
+    "starts": 56,
+    "wins": 17,
+    "index": 0.395
+   },
+   "Eskilstuna|volte|4": {
+    "starts": 4,
+    "wins": 1,
+    "index": 0.858
+   },
+   "Årjäng|auto|12": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.923
+   },
+   "Åby|volte|10": {
+    "starts": 2,
+    "wins": 1,
+    "index": 0.931
+   },
+   "Mantorp|auto|10": {
+    "starts": 7,
+    "wins": 1,
+    "index": 0.699
+   },
+   "Axevalla|auto|6": {
+    "starts": 9,
+    "wins": 3,
+    "index": 0.691
+   },
+   "Åby|auto|3": {
+    "starts": 22,
+    "wins": 2,
+    "index": 0.366
+   },
+   "Jägersro|volte|6": {
+    "starts": 7,
+    "wins": 6,
+    "index": 0.957
+   },
+   "Axevalla|auto|1": {
+    "starts": 12,
+    "wins": 1,
+    "index": 0.51
+   },
+   "Halmstad|auto|10": {
+    "starts": 7,
+    "wins": 3,
+    "index": 0.807
+   },
+   "Mantorp|auto|5": {
+    "starts": 8,
+    "wins": 3,
+    "index": 0.761
+   },
+   "Örebro|auto|5": {
+    "starts": 9,
+    "wins": 4,
+    "index": 0.761
+   },
+   "Eskilstuna|auto|1": {
+    "starts": 19,
+    "wins": 2,
+    "index": 0.393
+   },
+   "Romme|auto|3": {
+    "starts": 10,
+    "wins": 2,
+    "index": 0.653
+   },
+   "Örebro|auto|7": {
+    "starts": 8,
+    "wins": 3,
+    "index": 0.749
+   },
+   "Örebro|auto|9": {
+    "starts": 7,
+    "wins": 0,
+    "index": 0.63
+   },
+   "Mantorp|volte|4": {
+    "starts": 2,
+    "wins": 1,
+    "index": 0.935
+   },
+   "Axevalla|auto|11": {
+    "starts": 8,
+    "wins": 1,
+    "index": 0.62
+   },
+   "Solvalla|auto|2": {
+    "starts": 60,
+    "wins": 19,
+    "index": 0.401
+   },
+   "Färjestad|auto|2": {
+    "starts": 13,
+    "wins": 2,
+    "index": 0.507
+   },
+   "Jägersro|auto|5": {
+    "starts": 16,
+    "wins": 5,
+    "index": 0.578
+   },
+   "Åby|auto|2": {
+    "starts": 22,
+    "wins": 5,
+    "index": 0.461
+   },
+   "Jägersro|auto|9": {
+    "starts": 10,
+    "wins": 1,
+    "index": 0.551
+   },
+   "Jägersro|auto|10": {
+    "starts": 19,
+    "wins": 3,
+    "index": 0.45
+   },
+   "Jägersro|auto|6": {
+    "starts": 9,
+    "wins": 6,
+    "index": 0.843
+   },
+   "Åby|auto|5": {
+    "starts": 18,
+    "wins": 4,
+    "index": 0.492
+   },
+   "Jägersro|volte|5": {
+    "starts": 4,
+    "wins": 0,
+    "index": 0.804
+   },
+   "Halmstad|auto|3": {
+    "starts": 10,
+    "wins": 0,
+    "index": 0.579
+   },
+   "Halmstad|auto|9": {
+    "starts": 4,
+    "wins": 2,
+    "index": 0.887
+   },
+   "Jägersro|auto|1": {
+    "starts": 15,
+    "wins": 3,
+    "index": 0.521
+   },
+   "Hagmyren|auto|8": {
+    "starts": 3,
+    "wins": 2,
+    "index": 0.928
+   },
+   "Bergsåker|auto|5": {
+    "starts": 15,
+    "wins": 7,
+    "index": 0.704
+   },
+   "Bergsåker|auto|6": {
+    "starts": 16,
+    "wins": 4,
+    "index": 0.572
+   },
+   "Bergsåker|volte|3": {
+    "starts": 11,
+    "wins": 5,
+    "index": 0.748
+   },
+   "Solvalla|auto|1": {
+    "starts": 64,
+    "wins": 19,
+    "index": 0.379
+   },
+   "Solvalla|auto|9": {
+    "starts": 52,
+    "wins": 9,
+    "index": 0.288
+   },
+   "Solvalla|auto|11": {
+    "starts": 37,
+    "wins": 8,
+    "index": 0.362
+   },
+   "Solvalla|auto|12": {
+    "starts": 32,
+    "wins": 3,
+    "index": 0.283
+   },
+   "Örebro|auto|4": {
+    "starts": 10,
+    "wins": 6,
+    "index": 0.817
+   },
+   "Lindesberg|auto|5": {
+    "starts": 2,
+    "wins": 0,
+    "index": 0.8
+   },
+   "Dannero|auto|10": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.93
+   },
+   "Hagmyren|volte|2": {
+    "starts": 4,
+    "wins": 1,
+    "index": 0.792
+   },
+   "Gävle|auto|3": {
+    "starts": 7,
+    "wins": 3,
+    "index": 0.805
+   },
+   "Hagmyren|volte|3": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.913
+   },
+   "Hagmyren|volte|7": {
+    "starts": 2,
+    "wins": 1,
+    "index": 0.92
+   },
+   "Åby|volte|4": {
+    "starts": 15,
+    "wins": 4,
+    "index": 0.599
+   },
+   "Åby|volte|1": {
+    "starts": 12,
+    "wins": 2,
+    "index": 0.591
+   },
+   "Halmstad|auto|7": {
+    "starts": 18,
+    "wins": 6,
+    "index": 0.622
+   },
+   "Vaggeryd|auto|12": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.936
+   },
+   "Tingsryd|auto|10": {
+    "starts": 7,
+    "wins": 1,
+    "index": 0.667
+   },
+   "Kalmar|auto|9": {
+    "starts": 4,
+    "wins": 1,
+    "index": 0.79
+   },
+   "Jägersro|auto|2": {
+    "starts": 18,
+    "wins": 8,
+    "index": 0.644
+   },
+   "Åby|auto|6": {
+    "starts": 29,
+    "wins": 9,
+    "index": 0.481
+   },
+   "Åby|auto|12": {
+    "starts": 3,
+    "wins": 1,
+    "index": 0.841
+   },
+   "Solvalla|auto|7": {
+    "starts": 55,
+    "wins": 12,
+    "index": 0.322
+   },
+   "Kalmar|volte|2": {
+    "starts": 6,
+    "wins": 2,
+    "index": 0.81
+   },
+   "Jägersro|volte|2": {
+    "starts": 4,
+    "wins": 2,
+    "index": 0.902
+   },
+   "Halmstad|volte|4": {
+    "starts": 7,
+    "wins": 2,
+    "index": 0.746
+   },
+   "Åby|volte|2": {
+    "starts": 14,
+    "wins": 4,
+    "index": 0.622
+   },
+   "Hagmyren|volte|1": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.913
+   },
+   "Östersund|auto|1": {
+    "starts": 4,
+    "wins": 2,
+    "index": 0.887
+   },
+   "Bollnäs|auto|2": {
+    "starts": 8,
+    "wins": 1,
+    "index": 0.57
+   },
+   "Solänget|auto|3": {
+    "starts": 3,
+    "wins": 0,
+    "index": 0.792
+   },
+   "Hagmyren|auto|9": {
+    "starts": 5,
+    "wins": 0,
+    "index": 0.686
+   },
+   "Bollnäs|auto|4": {
+    "starts": 7,
+    "wins": 1,
+    "index": 0.607
+   },
+   "Bollnäs|volte|6": {
+    "starts": 2,
+    "wins": 1,
+    "index": 0.95
+   },
+   "Bergsåker|auto|12": {
+    "starts": 5,
+    "wins": 0,
+    "index": 0.707
+   },
+   "Bollnäs|volte|1": {
+    "starts": 7,
+    "wins": 5,
+    "index": 0.921
+   },
+   "Rättvik|auto|4": {
+    "starts": 6,
+    "wins": 1,
+    "index": 0.617
+   },
+   "Bergsåker|volte|1": {
+    "starts": 13,
+    "wins": 6,
+    "index": 0.728
+   },
+   "Umåker|auto|1": {
+    "starts": 2,
+    "wins": 0,
+    "index": 0.698
+   },
+   "Bollnäs|volte|4": {
+    "starts": 2,
+    "wins": 0,
+    "index": 0.901
+   },
+   "Bollnäs|auto|5": {
+    "starts": 12,
+    "wins": 3,
+    "index": 0.556
+   },
+   "Bollnäs|auto|1": {
+    "starts": 12,
+    "wins": 3,
+    "index": 0.556
+   },
+   "Vaggeryd|auto|11": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.936
+   },
+   "Vaggeryd|volte|7": {
+    "starts": 2,
+    "wins": 0,
+    "index": 0.896
+   },
+   "Solvalla|volte|7": {
+    "starts": 6,
+    "wins": 3,
+    "index": 0.86
+   },
+   "Gävle|volte|9": {
+    "starts": 3,
+    "wins": 1,
+    "index": 0.836
+   },
+   "Mantorp|volte|3": {
+    "starts": 2,
+    "wins": 1,
+    "index": 0.935
+   },
+   "Vaggeryd|auto|5": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.936
+   },
+   "Kalmar|auto|1": {
+    "starts": 3,
+    "wins": 0,
+    "index": 0.774
+   },
+   "Åby|auto|9": {
+    "starts": 17,
+    "wins": 6,
+    "index": 0.586
+   },
+   "Axevalla|volte|6": {
+    "starts": 5,
+    "wins": 4,
+    "index": 0.958
+   },
+   "Åby|auto|1": {
+    "starts": 29,
+    "wins": 5,
+    "index": 0.377
+   },
+   "Halmstad|volte|8": {
+    "starts": 4,
+    "wins": 0,
+    "index": 0.76
+   },
+   "Halmstad|volte|2": {
+    "starts": 7,
+    "wins": 2,
+    "index": 0.746
+   },
+   "Åby|volte|7": {
+    "starts": 2,
+    "wins": 1,
+    "index": 0.931
+   },
+   "Kalmar|auto|5": {
+    "starts": 6,
+    "wins": 1,
+    "index": 0.693
+   },
+   "Färjestad|auto|11": {
+    "starts": 2,
+    "wins": 0,
+    "index": 0.823
+   },
+   "Jägersro|auto|11": {
+    "starts": 7,
+    "wins": 2,
+    "index": 0.707
+   },
+   "Axevalla|auto|4": {
+    "starts": 17,
+    "wins": 6,
+    "index": 0.599
+   },
+   "Halmstad|auto|2": {
+    "starts": 8,
+    "wins": 3,
+    "index": 0.77
+   },
+   "Örebro|auto|3": {
+    "starts": 13,
+    "wins": 2,
+    "index": 0.558
+   },
+   "Axevalla|volte|3": {
+    "starts": 8,
+    "wins": 4,
+    "index": 0.852
+   },
+   "Örebro|auto|1": {
+    "starts": 14,
+    "wins": 0,
+    "index": 0.459
+   },
+   "Axevalla|auto|8": {
+    "starts": 10,
+    "wins": 1,
+    "index": 0.56
+   },
+   "Eskilstuna|auto|6": {
+    "starts": 15,
+    "wins": 5,
+    "index": 0.583
+   },
+   "Arvika|auto|6": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.952
+   },
+   "Åmål|auto|7": {
+    "starts": 2,
+    "wins": 0,
+    "index": 0.822
+   },
+   "Visby|auto|3": {
+    "starts": 2,
+    "wins": 0,
+    "index": 0.845
+   },
+   "Axevalla|auto|3": {
+    "starts": 8,
+    "wins": 3,
+    "index": 0.729
+   },
+   "Örebro|auto|6": {
+    "starts": 14,
+    "wins": 5,
+    "index": 0.653
+   },
+   "Färjestad|auto|9": {
+    "starts": 5,
+    "wins": 2,
+    "index": 0.79
+   },
+   "Örebro|auto|2": {
+    "starts": 18,
+    "wins": 8,
+    "index": 0.666
+   },
+   "Axevalla|auto|2": {
+    "starts": 12,
+    "wins": 5,
+    "index": 0.688
+   },
+   "Örebro|auto|12": {
+    "starts": 5,
+    "wins": 1,
+    "index": 0.763
+   },
+   "Färjestad|volte|11": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.938
+   },
+   "Åmål|volte|1": {
+    "starts": 2,
+    "wins": 2,
+    "index": 1
+   },
+   "Färjestad|volte|8": {
+    "starts": 3,
+    "wins": 1,
+    "index": 0.889
+   },
+   "Mantorp|volte|7": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.93
+   },
+   "Romme|volte|2": {
+    "starts": 9,
+    "wins": 2,
+    "index": 0.657
+   },
+   "Bollnäs|volte|7": {
+    "starts": 1,
+    "wins": 1,
+    "index": 1
+   },
+   "Romme|auto|4": {
+    "starts": 15,
+    "wins": 7,
+    "index": 0.715
+   },
+   "Romme|volte|3": {
+    "starts": 4,
+    "wins": 1,
+    "index": 0.806
+   },
+   "Oviken|volte|7": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.964
+   },
+   "Bro Park Trav|volte|7": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.8
+   },
+   "Romme|auto|9": {
+    "starts": 7,
+    "wins": 0,
+    "index": 0.651
+   },
+   "Gävle|auto|6": {
+    "starts": 6,
+    "wins": 4,
+    "index": 0.898
+   },
+   "Bollnäs|auto|6": {
+    "starts": 9,
+    "wins": 5,
+    "index": 0.768
+   },
+   "Gävle|auto|7": {
+    "starts": 11,
+    "wins": 4,
+    "index": 0.715
+   },
+   "Gävle|auto|12": {
+    "starts": 2,
+    "wins": 0,
+    "index": 0.871
+   },
+   "Romme|auto|8": {
+    "starts": 16,
+    "wins": 1,
+    "index": 0.483
+   },
+   "Umåker|volte|6": {
+    "starts": 1,
+    "wins": 1,
+    "index": 1
+   },
+   "Rättvik|auto|3": {
+    "starts": 4,
+    "wins": 0,
+    "index": 0.638
+   },
+   "Rättvik|auto|5": {
+    "starts": 7,
+    "wins": 3,
+    "index": 0.715
+   },
+   "Rättvik|volte|1": {
+    "starts": 6,
+    "wins": 1,
+    "index": 0.734
+   },
+   "Rättvik|volte|4": {
+    "starts": 4,
+    "wins": 1,
+    "index": 0.821
+   },
+   "Romme|volte|4": {
+    "starts": 7,
+    "wins": 5,
+    "index": 0.891
+   },
+   "Romme|auto|10": {
+    "starts": 9,
+    "wins": 1,
+    "index": 0.637
+   },
+   "Bollnäs|auto|3": {
+    "starts": 8,
+    "wins": 0,
+    "index": 0.508
+   },
+   "Eskilstuna|auto|7": {
+    "starts": 11,
+    "wins": 2,
+    "index": 0.55
+   },
+   "Eskilstuna|auto|9": {
+    "starts": 9,
+    "wins": 2,
+    "index": 0.611
+   },
+   "Rättvik|auto|1": {
+    "starts": 5,
+    "wins": 1,
+    "index": 0.668
+   },
+   "Visby|volte|8": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.93
+   },
+   "Oviken|volte|1": {
+    "starts": 2,
+    "wins": 2,
+    "index": 1
+   },
+   "Visby|auto|1": {
+    "starts": 2,
+    "wins": 0,
+    "index": 0.845
+   },
+   "Eskilstuna|auto|3": {
+    "starts": 9,
+    "wins": 3,
+    "index": 0.667
+   },
+   "Vaggeryd|auto|8": {
+    "starts": 2,
+    "wins": 1,
+    "index": 0.94
+   },
+   "Kalmar|volte|1": {
+    "starts": 10,
+    "wins": 5,
+    "index": 0.8
+   },
+   "Åby|auto|8": {
+    "starts": 14,
+    "wins": 4,
+    "index": 0.575
+   },
+   "Charlottenlund|auto|10": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.957
+   },
+   "Halmstad|auto|5": {
+    "starts": 7,
+    "wins": 1,
+    "index": 0.711
+   },
+   "Jägersro|volte|3": {
+    "starts": 10,
+    "wins": 4,
+    "index": 0.773
+   },
+   "Romme|auto|11": {
+    "starts": 12,
+    "wins": 6,
+    "index": 0.76
+   },
+   "Halmstad|auto|6": {
+    "starts": 9,
+    "wins": 7,
+    "index": 0.912
+   },
+   "Färjestad|volte|5": {
+    "starts": 3,
+    "wins": 2,
+    "index": 0.944
+   },
+   "Axevalla|auto|9": {
+    "starts": 4,
+    "wins": 1,
+    "index": 0.792
+   },
+   "Halmstad|auto|1": {
+    "starts": 11,
+    "wins": 5,
+    "index": 0.758
+   },
+   "Färjestad|volte|3": {
+    "starts": 5,
+    "wins": 3,
+    "index": 0.9
+   },
+   "Hagmyren|auto|1": {
+    "starts": 4,
+    "wins": 2,
+    "index": 0.866
+   },
+   "Östersund|auto|15": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.932
+   },
+   "Hagmyren|volte|9": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.913
+   },
+   "Östersund|auto|11": {
+    "starts": 2,
+    "wins": 2,
+    "index": 1
+   },
+   "Bergsåker|volte|7": {
+    "starts": 4,
+    "wins": 0,
+    "index": 0.761
+   },
+   "Bollnäs|volte|12": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.948
+   },
+   "Dannero|auto|4": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.93
+   },
+   "Skellefteå|auto|2": {
+    "starts": 2,
+    "wins": 0,
+    "index": 0.87
+   },
+   "Rättvik|volte|6": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.928
+   },
+   "Romme|auto|2": {
+    "starts": 11,
+    "wins": 6,
+    "index": 0.792
+   },
+   "Rättvik|auto|11": {
+    "starts": 5,
+    "wins": 0,
+    "index": 0.585
+   },
+   "Gävle|auto|8": {
+    "starts": 3,
+    "wins": 0,
+    "index": 0.819
+   },
+   "Gävle|auto|11": {
+    "starts": 6,
+    "wins": 1,
+    "index": 0.744
+   },
+   "Hagmyren|volte|6": {
+    "starts": 4,
+    "wins": 0,
+    "index": 0.723
+   },
+   "Gävle|auto|5": {
+    "starts": 6,
+    "wins": 1,
+    "index": 0.744
+   },
+   "Bollnäs|auto|11": {
+    "starts": 8,
+    "wins": 1,
+    "index": 0.57
+   },
+   "Bollnäs|volte|2": {
+    "starts": 2,
+    "wins": 0,
+    "index": 0.901
+   },
+   "Bjerke|auto|6": {
+    "starts": 10,
+    "wins": 3,
+    "index": 0.724
+   },
+   "Åby|auto|10": {
+    "starts": 14,
+    "wins": 0,
+    "index": 0.406
+   },
+   "Biri|auto|9": {
+    "starts": 1,
+    "wins": 1,
+    "index": 1
+   },
+   "Jarlsberg|auto|6": {
+    "starts": 5,
+    "wins": 0,
+    "index": 0.348
+   },
+   "Klosterskogen|auto|4": {
+    "starts": 2,
+    "wins": 1,
+    "index": 0.949
+   },
+   "Bjerke|auto|2": {
+    "starts": 12,
+    "wins": 5,
+    "index": 0.744
+   },
+   "Biri|auto|5": {
+    "starts": 2,
+    "wins": 1,
+    "index": 0.926
+   },
+   "Jarlsberg|auto|1": {
+    "starts": 3,
+    "wins": 1,
+    "index": 0.647
+   },
+   "Klosterskogen|auto|2": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.947
+   },
+   "Bjerke|auto|8": {
+    "starts": 2,
+    "wins": 1,
+    "index": 0.942
+   },
+   "Bjerke|auto|9": {
+    "starts": 8,
+    "wins": 4,
+    "index": 0.829
+   },
+   "Bjerke|auto|1": {
+    "starts": 4,
+    "wins": 3,
+    "index": 0.948
+   },
+   "Klosterskogen|auto|3": {
+    "starts": 1,
+    "wins": 1,
+    "index": 1
+   },
+   "Bjerke|auto|3": {
+    "starts": 7,
+    "wins": 0,
+    "index": 0.687
+   },
+   "Solvalla|volte|1": {
+    "starts": 7,
+    "wins": 5,
+    "index": 0.911
+   },
+   "Örebro|auto|11": {
+    "starts": 5,
+    "wins": 1,
+    "index": 0.763
+   },
+   "Bollnäs|auto|7": {
+    "starts": 10,
+    "wins": 2,
+    "index": 0.562
+   },
+   "Lindesberg|auto|4": {
+    "starts": 5,
+    "wins": 1,
+    "index": 0.692
+   },
+   "Mantorp|auto|2": {
+    "starts": 6,
+    "wins": 0,
+    "index": 0.683
+   },
+   "Romme|auto|6": {
+    "starts": 6,
+    "wins": 3,
+    "index": 0.842
+   },
+   "Mantorp|auto|1": {
+    "starts": 6,
+    "wins": 2,
+    "index": 0.789
+   },
+   "Eskilstuna|auto|5": {
+    "starts": 6,
+    "wins": 1,
+    "index": 0.667
+   },
+   "Eskilstuna|auto|12": {
+    "starts": 9,
+    "wins": 1,
+    "index": 0.556
+   },
+   "Mantorp|auto|7": {
+    "starts": 6,
+    "wins": 1,
+    "index": 0.736
+   },
+   "Eskilstuna|auto|10": {
+    "starts": 5,
+    "wins": 0,
+    "index": 0.643
+   },
+   "Hagmyren|auto|3": {
+    "starts": 3,
+    "wins": 1,
+    "index": 0.856
+   },
+   "Lindesberg|auto|6": {
+    "starts": 2,
+    "wins": 0,
+    "index": 0.8
+   },
+   "Rättvik|auto|9": {
+    "starts": 2,
+    "wins": 0,
+    "index": 0.779
+   },
+   "Romme|volte|1": {
+    "starts": 7,
+    "wins": 3,
+    "index": 0.783
+   },
+   "Romme|auto|5": {
+    "starts": 15,
+    "wins": 6,
+    "index": 0.679
+   },
+   "Halmstad|auto|4": {
+    "starts": 9,
+    "wins": 4,
+    "index": 0.78
+   },
+   "Mantorp|auto|12": {
+    "starts": 2,
+    "wins": 1,
+    "index": 0.933
+   },
+   "Örebro|auto|10": {
+    "starts": 9,
+    "wins": 2,
+    "index": 0.665
+   },
+   "Färjestad|auto|6": {
+    "starts": 4,
+    "wins": 1,
+    "index": 0.775
+   },
+   "Rättvik|volte|2": {
+    "starts": 5,
+    "wins": 2,
+    "index": 0.831
+   },
+   "Axevalla|volte|1": {
+    "starts": 6,
+    "wins": 3,
+    "index": 0.88
+   },
+   "Färjestad|auto|7": {
+    "starts": 10,
+    "wins": 1,
+    "index": 0.534
+   },
+   "Rättvik|auto|6": {
+    "starts": 6,
+    "wins": 2,
+    "index": 0.694
+   },
+   "Halmstad|volte|5": {
+    "starts": 3,
+    "wins": 1,
+    "index": 0.872
+   },
+   "Halmstad|volte|3": {
+    "starts": 6,
+    "wins": 2,
+    "index": 0.786
+   },
+   "Jägersro|volte|4": {
+    "starts": 3,
+    "wins": 0,
+    "index": 0.845
+   },
+   "Bollnäs|auto|10": {
+    "starts": 4,
+    "wins": 0,
+    "index": 0.674
+   },
+   "Visby|auto|10": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.916
+   },
+   "Årjäng|auto|9": {
+    "starts": 3,
+    "wins": 2,
+    "index": 0.933
+   },
+   "Solvalla|volte|2": {
+    "starts": 6,
+    "wins": 1,
+    "index": 0.767
+   },
+   "Gävle|auto|9": {
+    "starts": 3,
+    "wins": 1,
+    "index": 0.879
+   },
+   "Solvalla|volte|4": {
+    "starts": 9,
+    "wins": 3,
+    "index": 0.754
+   },
+   "Mantorp|volte|6": {
+    "starts": 2,
+    "wins": 2,
+    "index": 1
+   },
+   "Solvalla|auto|8": {
+    "starts": 31,
+    "wins": 3,
+    "index": 0.29
+   },
+   "Eskilstuna|auto|4": {
+    "starts": 11,
+    "wins": 5,
+    "index": 0.7
+   },
+   "Tingsryd|auto|6": {
+    "starts": 2,
+    "wins": 0,
+    "index": 0.846
+   },
+   "Solvalla|volte|3": {
+    "starts": 7,
+    "wins": 1,
+    "index": 0.733
+   },
+   "Åmål|auto|8": {
+    "starts": 2,
+    "wins": 0,
+    "index": 0.822
+   },
+   "Åby|auto|4": {
+    "starts": 21,
+    "wins": 6,
+    "index": 0.509
+   },
+   "Tingsryd|auto|5": {
+    "starts": 3,
+    "wins": 1,
+    "index": 0.857
+   },
+   "Bergsåker|auto|4": {
+    "starts": 13,
+    "wins": 6,
+    "index": 0.721
+   },
+   "Bergsåker|auto|10": {
+    "starts": 5,
+    "wins": 0,
+    "index": 0.707
+   },
+   "Axevalla|auto|5": {
+    "starts": 7,
+    "wins": 5,
+    "index": 0.885
+   },
+   "Örebro|volte|3": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.946
+   },
+   "Lindesberg|auto|7": {
+    "starts": 1,
+    "wins": 1,
+    "index": 1
+   },
+   "Mantorp|volte|11": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.93
+   },
+   "Mantorp|auto|3": {
+    "starts": 4,
+    "wins": 1,
+    "index": 0.823
+   },
+   "Gävle|volte|8": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.902
+   },
+   "Eskilstuna|volte|1": {
+    "starts": 8,
+    "wins": 5,
+    "index": 0.881
+   },
+   "Eskilstuna|volte|6": {
+    "starts": 5,
+    "wins": 3,
+    "index": 0.91
+   },
+   "Bollnäs|volte|5": {
+    "starts": 2,
+    "wins": 2,
+    "index": 1
+   },
+   "Axevalla|volte|2": {
+    "starts": 7,
+    "wins": 2,
+    "index": 0.808
+   },
+   "Jägersro|auto|4": {
+    "starts": 17,
+    "wins": 4,
+    "index": 0.52
+   },
+   "Jägersro|auto|8": {
+    "starts": 12,
+    "wins": 4,
+    "index": 0.637
+   },
+   "Tingsryd|auto|13": {
+    "starts": 1,
+    "wins": 1,
+    "index": 1
+   },
+   "Jägersro|auto|7": {
+    "starts": 12,
+    "wins": 0,
+    "index": 0.456
+   },
+   "Åmål|auto|4": {
+    "starts": 5,
+    "wins": 2,
+    "index": 0.789
+   },
+   "Charlottenlund|auto|5": {
+    "starts": 1,
+    "wins": 1,
+    "index": 1
+   },
+   "Åby|volte|5": {
+    "starts": 6,
+    "wins": 2,
+    "index": 0.783
+   },
+   "Axevalla|volte|7": {
+    "starts": 7,
+    "wins": 3,
+    "index": 0.846
+   },
+   "Bollnäs|auto|8": {
+    "starts": 5,
+    "wins": 0,
+    "index": 0.623
+   },
+   "Mantorp|auto|4": {
+    "starts": 9,
+    "wins": 7,
+    "index": 0.909
+   },
+   "Solvalla|volte|8": {
+    "starts": 3,
+    "wins": 0,
+    "index": 0.837
+   },
+   "Örebro|volte|2": {
+    "starts": 2,
+    "wins": 1,
+    "index": 0.949
+   },
+   "Mantorp|auto|8": {
+    "starts": 6,
+    "wins": 2,
+    "index": 0.789
+   },
+   "Eskilstuna|volte|7": {
+    "starts": 3,
+    "wins": 2,
+    "index": 0.95
+   },
+   "Eskilstuna|volte|8": {
+    "starts": 2,
+    "wins": 0,
+    "index": 0.896
+   },
+   "Gävle|volte|11": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.902
+   },
+   "Åby|auto|7": {
+    "starts": 21,
+    "wins": 7,
+    "index": 0.542
+   },
+   "Visby|volte|2": {
+    "starts": 3,
+    "wins": 1,
+    "index": 0.878
+   },
+   "Solänget|auto|4": {
+    "starts": 3,
+    "wins": 2,
+    "index": 0.931
+   },
+   "Vaggeryd|volte|4": {
+    "starts": 5,
+    "wins": 3,
+    "index": 0.91
+   },
+   "Solvalla|volte|5": {
+    "starts": 5,
+    "wins": 1,
+    "index": 0.804
+   },
+   "Jägersro|auto|12": {
+    "starts": 6,
+    "wins": 0,
+    "index": 0.627
+   },
+   "Kalmar|auto|10": {
+    "starts": 4,
+    "wins": 0,
+    "index": 0.72
+   },
+   "Kalmar|auto|2": {
+    "starts": 5,
+    "wins": 2,
+    "index": 0.804
+   },
+   "Mantorp|auto|6": {
+    "starts": 3,
+    "wins": 1,
+    "index": 0.874
+   },
+   "Kalmar|volte|4": {
+    "starts": 4,
+    "wins": 4,
+    "index": 1
+   },
+   "Halmstad|volte|11": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.927
+   },
+   "Hagmyren|auto|7": {
+    "starts": 4,
+    "wins": 2,
+    "index": 0.866
+   },
+   "Visby|auto|4": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.916
+   },
+   "Visby|auto|7": {
+    "starts": 2,
+    "wins": 1,
+    "index": 0.923
+   },
+   "Gävle|auto|10": {
+    "starts": 3,
+    "wins": 1,
+    "index": 0.879
+   },
+   "Visby|auto|9": {
+    "starts": 1,
+    "wins": 1,
+    "index": 1
+   },
+   "Visby|volte|1": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.93
+   },
+   "Umåker|auto|3": {
+    "starts": 5,
+    "wins": 0,
+    "index": 0.48
+   },
+   "Axevalla|auto|7": {
+    "starts": 10,
+    "wins": 1,
+    "index": 0.56
+   },
+   "Hagmyren|auto|2": {
+    "starts": 3,
+    "wins": 1,
+    "index": 0.856
+   },
+   "Åby|auto|11": {
+    "starts": 12,
+    "wins": 4,
+    "index": 0.629
+   },
+   "Gävle|volte|5": {
+    "starts": 4,
+    "wins": 2,
+    "index": 0.849
+   },
+   "Lindesberg|volte|5": {
+    "starts": 2,
+    "wins": 0,
+    "index": 0.845
+   },
+   "Gävle|auto|1": {
+    "starts": 4,
+    "wins": 0,
+    "index": 0.772
+   },
+   "Mantorp|auto|11": {
+    "starts": 5,
+    "wins": 0,
+    "index": 0.721
+   },
+   "Färjestad|auto|3": {
+    "starts": 8,
+    "wins": 3,
+    "index": 0.711
+   },
+   "Årjäng|auto|1": {
+    "starts": 2,
+    "wins": 1,
+    "index": 0.929
+   },
+   "Kalmar|auto|6": {
+    "starts": 2,
+    "wins": 1,
+    "index": 0.919
+   },
+   "Tingsryd|auto|3": {
+    "starts": 5,
+    "wins": 2,
+    "index": 0.813
+   },
+   "Charlottenlund|auto|4": {
+    "starts": 4,
+    "wins": 3,
+    "index": 0.962
+   },
+   "Jarlsberg|auto|10": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.727
+   },
+   "Halmstad|volte|1": {
+    "starts": 5,
+    "wins": 3,
+    "index": 0.887
+   },
+   "Östersund|auto|2": {
+    "starts": 6,
+    "wins": 1,
+    "index": 0.746
+   },
+   "Skellefteå|auto|11": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.93
+   },
+   "Solänget|auto|6": {
+    "starts": 2,
+    "wins": 0,
+    "index": 0.851
+   },
+   "Bollnäs|auto|9": {
+    "starts": 3,
+    "wins": 1,
+    "index": 0.822
+   },
+   "Östersund|auto|5": {
+    "starts": 5,
+    "wins": 3,
+    "index": 0.893
+   },
+   "Skellefteå|auto|7": {
+    "starts": 1,
+    "wins": 1,
+    "index": 1
+   },
+   "Boden|auto|2": {
+    "starts": 3,
+    "wins": 0,
+    "index": 0.826
+   },
+   "Rättvik|auto|2": {
+    "starts": 4,
+    "wins": 0,
+    "index": 0.638
+   },
+   "Årjäng|volte|7": {
+    "starts": 2,
+    "wins": 1,
+    "index": 0.935
+   },
+   "Färjestad|auto|5": {
+    "starts": 8,
+    "wins": 2,
+    "index": 0.653
+   },
+   "Boden|auto|3": {
+    "starts": 9,
+    "wins": 5,
+    "index": 0.828
+   },
+   "Östersund|volte|1": {
+    "starts": 1,
+    "wins": 1,
+    "index": 1
+   },
+   "Eskilstuna|auto|8": {
+    "starts": 10,
+    "wins": 1,
+    "index": 0.526
+   },
+   "Boden|auto|10": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.934
+   },
+   "Rättvik|volte|9": {
+    "starts": 1,
+    "wins": 1,
+    "index": 1
+   },
+   "Hagmyren|auto|11": {
+    "starts": 3,
+    "wins": 0,
+    "index": 0.784
+   },
+   "Bergsåker|auto|1": {
+    "starts": 11,
+    "wins": 1,
+    "index": 0.566
+   },
+   "Rättvik|auto|10": {
+    "starts": 1,
+    "wins": 1,
+    "index": 1
+   },
+   "Solänget|volte|5": {
+    "starts": 1,
+    "wins": 1,
+    "index": 1
+   },
+   "Östersund|volte|4": {
+    "starts": 4,
+    "wins": 1,
+    "index": 0.858
+   },
+   "Skellefteå|auto|10": {
+    "starts": 2,
+    "wins": 1,
+    "index": 0.935
+   },
+   "Jarlsberg|auto|9": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.727
+   },
+   "Umåker|auto|5": {
+    "starts": 5,
+    "wins": 1,
+    "index": 0.584
+   },
+   "Visby|auto|2": {
+    "starts": 1,
+    "wins": 1,
+    "index": 1
+   },
+   "Romme|auto|12": {
+    "starts": 4,
+    "wins": 1,
+    "index": 0.824
+   },
+   "Gävle|volte|7": {
+    "starts": 4,
+    "wins": 0,
+    "index": 0.698
+   },
+   "Solänget|volte|4": {
+    "starts": 3,
+    "wins": 2,
+    "index": 0.971
+   },
+   "Boden|auto|4": {
+    "starts": 1,
+    "wins": 1,
+    "index": 1
+   },
+   "Boden|auto|5": {
+    "starts": 4,
+    "wins": 0,
+    "index": 0.78
+   },
+   "Bergsåker|auto|3": {
+    "starts": 17,
+    "wins": 3,
+    "index": 0.518
+   },
+   "Romme|volte|8": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.92
+   },
+   "Umåker|volte|2": {
+    "starts": 2,
+    "wins": 0,
+    "index": 0.87
+   },
+   "Boden|auto|6": {
+    "starts": 2,
+    "wins": 1,
+    "index": 0.938
+   },
+   "Boden|volte|3": {
+    "starts": 2,
+    "wins": 0,
+    "index": 0.667
+   },
+   "Boden|auto|11": {
+    "starts": 2,
+    "wins": 1,
+    "index": 0.938
+   },
+   "Skellefteå|auto|6": {
+    "starts": 2,
+    "wins": 1,
+    "index": 0.935
+   },
+   "Mantorp|volte|1": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.93
+   },
+   "Bergsåker|volte|4": {
+    "starts": 5,
+    "wins": 0,
+    "index": 0.719
+   },
+   "Örebro|volte|6": {
+    "starts": 2,
+    "wins": 1,
+    "index": 0.949
+   },
+   "Solvalla|volte|11": {
+    "starts": 2,
+    "wins": 1,
+    "index": 0.943
+   },
+   "Lindesberg|volte|1": {
+    "starts": 5,
+    "wins": 3,
+    "index": 0.874
+   },
+   "Romme|volte|7": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.92
+   },
+   "Hagmyren|auto|10": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.916
+   },
+   "Bergsåker|auto|11": {
+    "starts": 3,
+    "wins": 1,
+    "index": 0.867
+   },
+   "Romme|volte|5": {
+    "starts": 5,
+    "wins": 0,
+    "index": 0.696
+   },
+   "Mantorp|volte|5": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.93
+   },
+   "Tingsryd|auto|2": {
+    "starts": 3,
+    "wins": 1,
+    "index": 0.857
+   },
+   "Vincennes|auto|3": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.816
+   },
+   "Romme|auto|7": {
+    "starts": 8,
+    "wins": 2,
+    "index": 0.715
+   },
+   "Axevalla|auto|12": {
+    "starts": 9,
+    "wins": 3,
+    "index": 0.691
+   },
+   "Vaggeryd|auto|6": {
+    "starts": 2,
+    "wins": 1,
+    "index": 0.94
+   },
+   "Solvalla|auto|15": {
+    "starts": 5,
+    "wins": 2,
+    "index": 0.777
+   },
+   "Halmstad|auto|11": {
+    "starts": 3,
+    "wins": 0,
+    "index": 0.821
+   },
+   "Jägersro|volte|10": {
+    "starts": 1,
+    "wins": 1,
+    "index": 1
+   },
+   "Kalmar|volte|3": {
+    "starts": 3,
+    "wins": 1,
+    "index": 0.889
+   },
+   "Färjestad|auto|10": {
+    "starts": 4,
+    "wins": 0,
+    "index": 0.7
+   },
+   "Kalmar|volte|6": {
+    "starts": 3,
+    "wins": 0,
+    "index": 0.833
+   },
+   "Åby|volte|6": {
+    "starts": 6,
+    "wins": 3,
+    "index": 0.837
+   },
+   "Axevalla|volte|5": {
+    "starts": 3,
+    "wins": 1,
+    "index": 0.909
+   },
+   "Kalmar|volte|8": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.938
+   },
+   "Jägersro|volte|8": {
+    "starts": 3,
+    "wins": 0,
+    "index": 0.845
+   },
+   "Åby|volte|9": {
+    "starts": 7,
+    "wins": 2,
+    "index": 0.743
+   },
+   "Färjestad|auto|1": {
+    "starts": 5,
+    "wins": 1,
+    "index": 0.721
+   },
+   "Axevalla|auto|10": {
+    "starts": 7,
+    "wins": 0,
+    "index": 0.599
+   },
+   "Färjestad|volte|6": {
+    "starts": 2,
+    "wins": 1,
+    "index": 0.941
+   },
+   "Mantorp|volte|2": {
+    "starts": 3,
+    "wins": 0,
+    "index": 0.816
+   },
+   "Axevalla|volte|4": {
+    "starts": 6,
+    "wins": 3,
+    "index": 0.88
+   },
+   "Bergsåker|auto|8": {
+    "starts": 11,
+    "wins": 5,
+    "index": 0.74
+   },
+   "Charlottenlund|auto|8": {
+    "starts": 1,
+    "wins": 1,
+    "index": 1
+   },
+   "Tingsryd|auto|1": {
+    "starts": 5,
+    "wins": 3,
+    "index": 0.875
+   },
+   "Jägersro|volte|7": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.943
+   },
+   "Kalmar|auto|11": {
+    "starts": 3,
+    "wins": 2,
+    "index": 0.925
+   },
+   "Vincennes|auto|8": {
+    "starts": 2,
+    "wins": 0,
+    "index": 0.69
+   },
+   "Bjerke|auto|7": {
+    "starts": 3,
+    "wins": 2,
+    "index": 0.946
+   },
+   "Vincennes|auto|4": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.816
+   },
+   "Romme|volte|11": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.92
+   },
+   "Visby|auto|8": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.916
+   },
+   "Rättvik|auto|12": {
+    "starts": 3,
+    "wins": 0,
+    "index": 0.702
+   },
+   "Bjerke|auto|5": {
+    "starts": 10,
+    "wins": 6,
+    "index": 0.842
+   },
+   "Åmål|volte|6": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.952
+   },
+   "Bjerke|auto|4": {
+    "starts": 10,
+    "wins": 1,
+    "index": 0.645
+   },
+   "Klosterskogen|auto|9": {
+    "starts": 1,
+    "wins": 1,
+    "index": 1
+   },
+   "Jarlsberg|auto|5": {
+    "starts": 2,
+    "wins": 0,
+    "index": 0.571
+   },
+   "Solvalla|auto|14": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.894
+   },
+   "Klosterskogen|auto|7": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.947
+   },
+   "Bjerke|auto|15": {
+    "starts": 1,
+    "wins": 1,
+    "index": 1
+   },
+   "Bjerke|volte|5": {
+    "starts": 3,
+    "wins": 0,
+    "index": 0.571
+   },
+   "Orkla|auto|4": {
+    "starts": 1,
+    "wins": 1,
+    "index": 1
+   },
+   "Bjerke|volte|6": {
+    "starts": 3,
+    "wins": 1,
+    "index": 0.714
+   },
+   "Årjäng|auto|7": {
+    "starts": 3,
+    "wins": 0,
+    "index": 0.8
+   },
+   "Momarken|auto|7": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.909
+   },
+   "Bjerke|auto|12": {
+    "starts": 5,
+    "wins": 0,
+    "index": 0.755
+   },
+   "Jarlsberg|auto|2": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.727
+   },
+   "Klosterskogen|volte|11": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.8
+   },
+   "Bjerke|volte|8": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.8
+   },
+   "Örebro|auto|8": {
+    "starts": 6,
+    "wins": 1,
+    "index": 0.721
+   },
+   "Klosterskogen|auto|1": {
+    "starts": 2,
+    "wins": 0,
+    "index": 0.899
+   },
+   "Klosterskogen|auto|8": {
+    "starts": 1,
+    "wins": 1,
+    "index": 1
+   },
+   "Kalmar|auto|4": {
+    "starts": 3,
+    "wins": 1,
+    "index": 0.849
+   },
+   "Färjestad|volte|2": {
+    "starts": 6,
+    "wins": 2,
+    "index": 0.81
+   },
+   "Kalmar|volte|5": {
+    "starts": 3,
+    "wins": 0,
+    "index": 0.833
+   },
+   "Visby|volte|3": {
+    "starts": 2,
+    "wins": 0,
+    "index": 0.87
+   },
+   "Kalmar|volte|10": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.938
+   },
+   "Vincennes|auto|5": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.816
+   },
+   "Mantorp|auto|9": {
+    "starts": 3,
+    "wins": 2,
+    "index": 0.937
+   },
+   "Halmstad|auto|8": {
+    "starts": 6,
+    "wins": 1,
+    "index": 0.747
+   },
+   "Lindesberg|volte|3": {
+    "starts": 2,
+    "wins": 0,
+    "index": 0.845
+   },
+   "Bollnäs|volte|3": {
+    "starts": 4,
+    "wins": 1,
+    "index": 0.865
+   },
+   "Bergsåker|volte|5": {
+    "starts": 2,
+    "wins": 0,
+    "index": 0.865
+   },
+   "Rättvik|volte|11": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.928
+   },
+   "Romme|auto|13": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.929
+   },
+   "Östersund|auto|6": {
+    "starts": 1,
+    "wins": 1,
+    "index": 1
+   },
+   "Rättvik|volte|3": {
+    "starts": 5,
+    "wins": 2,
+    "index": 0.831
+   },
+   "Östersund|auto|4": {
+    "starts": 2,
+    "wins": 1,
+    "index": 0.936
+   },
+   "Östersund|auto|9": {
+    "starts": 2,
+    "wins": 0,
+    "index": 0.872
+   },
+   "Åby|volte|3": {
+    "starts": 5,
+    "wins": 2,
+    "index": 0.828
+   },
+   "Åby|volte|8": {
+    "starts": 4,
+    "wins": 2,
+    "index": 0.878
+   },
+   "Färjestad|volte|4": {
+    "starts": 4,
+    "wins": 0,
+    "index": 0.789
+   },
+   "Jägersro|volte|1": {
+    "starts": 6,
+    "wins": 3,
+    "index": 0.866
+   },
+   "Vaggeryd|auto|10": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.936
+   },
+   "Hagmyren|auto|4": {
+    "starts": 1,
+    "wins": 1,
+    "index": 1
+   },
+   "Hagmyren|volte|5": {
+    "starts": 3,
+    "wins": 2,
+    "index": 0.926
+   },
+   "Bergsåker|volte|6": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.927
+   },
+   "Bollnäs|volte|10": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.948
+   },
+   "Örebro|volte|7": {
+    "starts": 3,
+    "wins": 2,
+    "index": 0.951
+   },
+   "Vaggeryd|volte|2": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.945
+   },
+   "Rättvik|auto|7": {
+    "starts": 8,
+    "wins": 1,
+    "index": 0.535
+   },
+   "Rättvik|volte|5": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.928
+   },
+   "Axevalla|auto|13": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.913
+   },
+   "Årjäng|auto|6": {
+    "starts": 2,
+    "wins": 0,
+    "index": 0.857
+   },
+   "Kalmar|volte|7": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.938
+   },
+   "Mantorp|volte|9": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.93
+   },
+   "Årjäng|auto|2": {
+    "starts": 3,
+    "wins": 2,
+    "index": 0.933
+   },
+   "Jarlsberg|volte|1": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.8
+   },
+   "Vaggeryd|auto|9": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.936
+   },
+   "Eskilstuna|volte|3": {
+    "starts": 2,
+    "wins": 1,
+    "index": 0.948
+   },
+   "Bjerke|auto|10": {
+    "starts": 4,
+    "wins": 2,
+    "index": 0.897
+   },
+   "Färjestad|volte|1": {
+    "starts": 3,
+    "wins": 0,
+    "index": 0.833
+   },
+   "Halmstad|auto|12": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.932
+   },
+   "Vaggeryd|volte|1": {
+    "starts": 3,
+    "wins": 1,
+    "index": 0.901
+   },
+   "Vaggeryd|volte|3": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.945
+   },
+   "Årjäng|auto|11": {
+    "starts": 2,
+    "wins": 1,
+    "index": 0.929
+   },
+   "Eskilstuna|volte|2": {
+    "starts": 6,
+    "wins": 2,
+    "index": 0.827
+   },
+   "Örebro|volte|4": {
+    "starts": 5,
+    "wins": 2,
+    "index": 0.867
+   },
+   "Vaggeryd|volte|5": {
+    "starts": 2,
+    "wins": 2,
+    "index": 1
+   },
+   "Åmål|auto|2": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.902
+   },
+   "Halmstad|volte|7": {
+    "starts": 3,
+    "wins": 1,
+    "index": 0.872
+   },
+   "Halmstad|volte|6": {
+    "starts": 3,
+    "wins": 2,
+    "index": 0.936
+   },
+   "Hagmyren|auto|6": {
+    "starts": 4,
+    "wins": 0,
+    "index": 0.732
+   },
+   "Vincennes|auto|12": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.816
+   },
+   "Vincennes|auto|14": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.816
+   },
+   "Bollnäs|auto|12": {
+    "starts": 6,
+    "wins": 2,
+    "index": 0.72
+   },
+   "Umåker|auto|4": {
+    "starts": 2,
+    "wins": 2,
+    "index": 1
+   },
+   "Eskilstuna|auto|13": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.9
+   },
+   "Örebro|auto|15": {
+    "starts": 2,
+    "wins": 2,
+    "index": 1
+   },
+   "Romme|auto|15": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.929
+   },
+   "Solvalla|volte|10": {
+    "starts": 3,
+    "wins": 2,
+    "index": 0.946
+   },
+   "Solvalla|volte|12": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.939
+   },
+   "Bro Park Trav|auto|1": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.8
+   },
+   "Åmål|auto|12": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.902
+   },
+   "Färjestad|auto|8": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.903
+   },
+   "Färjestad|volte|12": {
+    "starts": 1,
+    "wins": 1,
+    "index": 1
+   },
+   "Axevalla|auto|14": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.913
+   },
+   "Kalmar|auto|3": {
+    "starts": 1,
+    "wins": 1,
+    "index": 1
+   },
+   "Arvika|auto|4": {
+    "starts": 1,
+    "wins": 1,
+    "index": 1
+   },
+   "Charlottenlund|auto|2": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.957
+   },
+   "Åmål|auto|1": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.902
+   },
+   "Åby|volte|11": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.926
+   },
+   "Dannero|auto|9": {
+    "starts": 1,
+    "wins": 1,
+    "index": 1
+   },
+   "Gävle|volte|3": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.902
+   },
+   "Boden|auto|12": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.934
+   },
+   "Skellefteå|volte|3": {
+    "starts": 1,
+    "wins": 1,
+    "index": 1
+   },
+   "Boden|volte|4": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.8
+   },
+   "Eskilstuna|volte|10": {
+    "starts": 2,
+    "wins": 0,
+    "index": 0.896
+   },
+   "Mantorp|volte|8": {
+    "starts": 1,
+    "wins": 1,
+    "index": 1
+   },
+   "Solänget|volte|1": {
+    "starts": 1,
+    "wins": 1,
+    "index": 1
+   },
+   "Gävle|volte|12": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.902
+   },
+   "Boden|auto|8": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.934
+   },
+   "Rättvik|volte|7": {
+    "starts": 1,
+    "wins": 1,
+    "index": 1
+   },
+   "Solänget|auto|1": {
+    "starts": 2,
+    "wins": 1,
+    "index": 0.926
+   },
+   "Umåker|auto|2": {
+    "starts": 4,
+    "wins": 0,
+    "index": 0.536
+   },
+   "Skellefteå|auto|9": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.93
+   },
+   "Kalmar|auto|7": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.911
+   },
+   "Örebro|auto|14": {
+    "starts": 1,
+    "wins": 1,
+    "index": 1
+   },
+   "Eskilstuna|auto|11": {
+    "starts": 7,
+    "wins": 3,
+    "index": 0.75
+   },
+   "Eskilstuna|auto|15": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.9
+   },
+   "Eskilstuna|volte|5": {
+    "starts": 2,
+    "wins": 1,
+    "index": 0.948
+   },
+   "Hagmyren|volte|4": {
+    "starts": 5,
+    "wins": 2,
+    "index": 0.806
+   },
+   "Solänget|auto|10": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.92
+   },
+   "Umåker|auto|9": {
+    "starts": 3,
+    "wins": 0,
+    "index": 0.606
+   },
+   "Östersund|volte|2": {
+    "starts": 2,
+    "wins": 1,
+    "index": 0.948
+   },
+   "Dannero|volte|2": {
+    "starts": 1,
+    "wins": 1,
+    "index": 1
+   },
+   "Charlottenlund|auto|6": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.957
+   },
+   "Skellefteå|auto|4": {
+    "starts": 1,
+    "wins": 1,
+    "index": 1
+   },
+   "Umåker|auto|7": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.822
+   },
+   "Bergsåker|volte|8": {
+    "starts": 3,
+    "wins": 0,
+    "index": 0.81
+   },
+   "Momarken|auto|1": {
+    "starts": 1,
+    "wins": 1,
+    "index": 1
+   },
+   "Bjerke|volte|4": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.8
+   },
+   "Biri|auto|1": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.92
+   },
+   "Biri|auto|2": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.92
+   },
+   "Umåker|auto|11": {
+    "starts": 4,
+    "wins": 0,
+    "index": 0.536
+   },
+   "Lindesberg|auto|1": {
+    "starts": 2,
+    "wins": 0,
+    "index": 0.8
+   },
+   "Årjäng|volte|5": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.93
+   },
+   "Jägersro|auto|15": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.91
+   },
+   "Visby|volte|6": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.93
+   },
+   "Visby|volte|4": {
+    "starts": 1,
+    "wins": 1,
+    "index": 1
+   },
+   "Visby|volte|11": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.93
+   },
+   "Bro Park Trav|volte|3": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.8
+   },
+   "Örebro|volte|1": {
+    "starts": 1,
+    "wins": 1,
+    "index": 1
+   },
+   "Romme|volte|10": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.92
+   },
+   "Eskilstuna|volte|9": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.945
+   },
+   "Hagmyren|volte|12": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.913
+   },
+   "Solvalla|volte|9": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.939
+   },
+   "Åmål|volte|5": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.952
+   },
+   "Hagmyren|volte|10": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.913
+   },
+   "Vincennes|auto|9": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.816
+   },
+   "Solvalla|volte|6": {
+    "starts": 7,
+    "wins": 5,
+    "index": 0.911
+   },
+   "Kalmar|auto|8": {
+    "starts": 3,
+    "wins": 0,
+    "index": 0.774
+   },
+   "Åmål|auto|3": {
+    "starts": 1,
+    "wins": 1,
+    "index": 1
+   },
+   "Lindesberg|auto|2": {
+    "starts": 1,
+    "wins": 1,
+    "index": 1
+   },
+   "Dannero|auto|2": {
+    "starts": 1,
+    "wins": 0,
+    "index": 0.93
+   },
+   "Vincennes|auto|2": {
+    "starts": 1,
+    "wins": 1,
+    "index": 1
+   },
+   "Färjestad|volte|7": {
+    "starts": 4,
+    "wins": 2,
+    "index": 0.895
+   },
+   "Halmstad|volte|9": {
+    "starts": 2,
+    "wins": 0,
+    "index": 0.864
+   },
+   "Momarken|auto|10": {
+    "starts": 2,
+    "wins": 0,
+    "index": 0.833
+   },
+   "Biri|auto|10": {
+    "starts": 2,
+    "wins": 0,
+    "index": 0.851
+   },
+   "Jarlsberg|auto|4": {
+    "starts": 2,
+    "wins": 0,
+    "index": 0.571
+   },
+   "Orkla|volte|2": {
+    "starts": 2,
+    "wins": 0,
+    "index": 0.667
+   },
+   "Bjerke|auto|11": {
+    "starts": 2,
+    "wins": 2,
+    "index": 1
+   },
+   "Bjerke|volte|2": {
+    "starts": 2,
+    "wins": 0,
+    "index": 0.667
+   },
+   "Hagmyren|auto|12": {
+    "starts": 2,
+    "wins": 0,
+    "index": 0.845
+   },
+   "Östersund|auto|8": {
+    "starts": 4,
+    "wins": 0,
+    "index": 0.774
+   },
+   "Skellefteå|auto|12": {
+    "starts": 2,
+    "wins": 0,
+    "index": 0.87
+   },
+   "Östersund|auto|3": {
+    "starts": 4,
+    "wins": 2,
+    "index": 0.887
+   },
+   "Solänget|auto|7": {
+    "starts": 2,
+    "wins": 0,
+    "index": 0.851
+   },
+   "Tingsryd|auto|11": {
+    "starts": 6,
+    "wins": 0,
+    "index": 0.647
+   },
+   "Tingsryd|auto|4": {
+    "starts": 2,
+    "wins": 2,
+    "index": 1
+   },
+   "Tingsryd|auto|9": {
+    "starts": 4,
+    "wins": 0,
+    "index": 0.733
+   },
+   "Bergsåker|volte|11": {
+    "starts": 2,
+    "wins": 2,
+    "index": 1
+   },
+   "Vaggeryd|auto|2": {
+    "starts": 2,
+    "wins": 2,
+    "index": 1
+   },
+   "Årjäng|auto|3": {
+    "starts": 4,
+    "wins": 0,
+    "index": 0.75
+   },
+   "Lindesberg|auto|3": {
+    "starts": 2,
+    "wins": 0,
+    "index": 0.8
+   },
+   "Visby|volte|9": {
+    "starts": 2,
+    "wins": 2,
+    "index": 1
+   },
+   "Gävle|volte|1": {
+    "starts": 2,
+    "wins": 2,
+    "index": 1
+   },
+   "Dannero|auto|5": {
+    "starts": 2,
+    "wins": 2,
+    "index": 1
+   },
+   "Lindesberg|volte|2": {
+    "starts": 2,
+    "wins": 0,
+    "index": 0.845
+   },
+   "Östersund|auto|7": {
+    "starts": 2,
+    "wins": 0,
+    "index": 0.872
+   },
+   "Dannero|auto|3": {
+    "starts": 2,
+    "wins": 0,
+    "index": 0.87
+   },
+   "Tingsryd|auto|7": {
+    "starts": 2,
+    "wins": 0,
+    "index": 0.846
+   },
+   "Örebro|volte|10": {
+    "starts": 2,
+    "wins": 0,
+    "index": 0.897
+   }
   }
  },
  "method": {
@@ -25492,5 +29152,5 @@
   }
  },
  "fetchedAt": "2026-10-10T12:50:03.711Z",
- "analyzedAt": "2026-10-10T16:11:25.472Z"
+ "analyzedAt": "2026-10-10T19:47:59.167Z"
 }
