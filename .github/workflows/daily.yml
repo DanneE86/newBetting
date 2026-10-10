@@ -97,12 +97,24 @@ jobs:
         continue-on-error: true
         run: node scripts/fetch-stryktipset.mjs
 
+      # Klubbens egna trupputtagningar och truppstatus (AIK), fylls i trupperna i nasta steg (data/klubbtrupper/)
+      - name: Klubbtrupper
+        continue-on-error: true
+        timeout-minutes: 10
+        run: node scripts/fetch-klubbtrupper.mjs
+
       # Trupper (skador, betyg, marknadsvarde) och tabeller for alla ligor fran FotMob, med historik.
       # Fore matcherna sa att franvaron fore matchen (pre_inj_*) ar dagens; lagnamnen tas ur gardagens data/matcher.
       - name: Trupper och tabeller
         continue-on-error: true
         timeout-minutes: 30
         run: node scripts/fetch-squads.mjs
+
+      # Matchstatistik per match (lag + spelare) fran ESPN och 365scores, bara nya matcher (data/matchstats/)
+      - name: Matchstatistik
+        continue-on-error: true
+        timeout-minutes: 30
+        run: node scripts/fetch-matchstats.mjs --recent
 
       # En CSV per liga (spelade + kommande, odds och franvaro fore matchen sparas) for traning, se data/matcher/README.md
       - name: Matcher per liga

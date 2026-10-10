@@ -12,7 +12,8 @@ import { root } from './lib/learnings-data.mjs';
 import { nameScore } from './lib/match-context.mjs';
 import { fold, mapTable } from './lib/fotmob-names.mjs';
 import { FOTMOB_LEAGUES as FOTMOB } from './lib/fotmob-leagues.mjs';
-import { TM_COMP, TM_INJURY_LEAGUES, TM_TEAM_ID, mergeTmInjuries, tmClubs, tmInjuries, tmSquad } from './lib/transfermarkt.mjs';
+import { TM_COMP, TM_INJURY_LEAGUES, TM_TEAM_ID, mergeTmInjuries, sameName, tmClubs, tmInjuries, tmSquad } from './lib/transfermarkt.mjs';
+import { mergeClubInjuries } from './lib/klubbtrupper.mjs';
 import { fotmobGet as getJson } from './lib/api-schemas.mjs';
 
 const FM = 'https://www.fotmob.com/api/data';
@@ -180,6 +181,13 @@ for (const [code, spec] of Object.entries(FOTMOB)) {
   if (TM_INJURY_LEAGUES.includes(code) && Object.keys(teams).length) {
     const inj = await tmInjuries(code);
     if (inj.length) console.log(`  skador fran Transfermarkt: ${mergeTmInjuries(teams, inj)} av ${inj.length} tillagda (ovriga redan markerade av FotMob eller ej i truppen)`);
+  }
+  // Klubbens egen frånvarolista (data/klubbtrupper/<LAG>.json, npm run klubbtrupper): truppstatus och ej uttagna
+  for (const [name, team] of Object.entries(teams)) {
+    const cf = path.join(root, 'data', 'klubbtrupper', `${name}.json`);
+    if (!fs.existsSync(cf)) continue;
+    const n = mergeClubInjuries(team, JSON.parse(fs.readFileSync(cf, 'utf8')), today, sameName);
+    if (n) console.log(`  ${name}: ${n} frånvarande enligt klubben`);
   }
   // Tabellen sparas alltid. Trupper saknas hos FotMob for vissa lagre ligor (J2, J3, Ettan): behall befintlig truppfil
   if (Object.keys(teams).length) fs.writeFileSync(sqFile, JSON.stringify({ updatedAt: now, league: code, fotmobId: id, source: 'FotMob', teams }, null, 1), 'utf8');

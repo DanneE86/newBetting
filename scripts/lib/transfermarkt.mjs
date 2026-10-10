@@ -17,6 +17,7 @@ export const TM_LEAGUE = {
   PL: 'GB1', CH: 'GB2', EL1: 'GB3', EL2: 'GB4', BL: 'L1', BL2: 'L2', LL: 'ES1', LL2: 'ES2', SA: 'IT1', SB: 'IT2', L1: 'FR1',
   ED: 'NL1', PT: 'PO1', GR: 'GR1', AS: 'SE1', SE2: 'SE2', NO: 'NO1', NO2: 'NO2', DK: 'DK1', EK: 'PL1', JP1: 'JAP1',
   MLS: 'MLS1', MX: 'MEXA', BR: 'BRA1', BR2: 'BRA2', AR: 'AR1N', COL: 'COLP', CZ: 'TS1', HR: 'KR1',
+  BE: 'BE1', SC: 'SC1', SAU: 'SA1', AUS: 'AUS1', KR: 'RSK1', CAN: 'CDN1',
 };
 for (const [code, comp] of Object.entries(TM_LEAGUE)) TM_COMP[code] ??= { comp };
 // Lag vars namn inte liknar Transfermarkts ("liga|vart lagnamn" -> klubb-id)
