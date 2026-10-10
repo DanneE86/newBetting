@@ -2129,9 +2129,12 @@ test.describe('stryk-engine: kupong A, B och C', () => {
         // 3 röda + resten gröna stoppas aldrig av färgreglerna (användaren 2026-10-02, även B), annars mindre system
         // Skyddet: 3 röda, aldrig över systemets röd max (A röd 1–2: 2 röda + resten gröna)
         const cIdx = p.events.map((e: any) => [0, 1, 2].map((k) => col(e.folk?.[k])));
-        const rgc = redGreenColors(sets, cIdx, new Set(c.rules.blueHalves), redGreenRows(sets, cIdx, new Set(c.rules.blueHalves), Math.min(3, cr.red[1])));
+        // Sista reserven (motorn: "Släpps bara om ingen kupong alls går att bygga"): C får släppa skyddet när omgångens
+        // streck gör det omöjligt (Stryktipset 4974: bara 6 matcher med grönt tecken, 2 av dem spikade) – och ska då säga det
+        const rgUnavoidable = name === 'C' && c.relaxed.some((t: string) => t.includes('3 röda + resten gröna – det gick inte att undvika'));
+        const rgc = rgUnavoidable ? [] : redGreenColors(sets, cIdx, new Set(c.rules.blueHalves), redGreenRows(sets, cIdx, new Set(c.rules.blueHalves), Math.min(3, cr.red[1])));
         rgc.forEach((t: number[]) => expect([0, 1, 2].every((o) => t[o] >= [cr.green, cr.yellow, cr.red][o][0] && t[o] <= [cr.green, cr.yellow, cr.red][o][1]), `${p.product} ${name}: 3 röda + gröna ${t} mot ${JSON.stringify(cr)}`).toBe(true));
-        expect(c.relaxed.some((t: string) => t.includes('3 röda + resten gröna')), `${p.product} ${name}`).toBe(false);
+        if (!rgUnavoidable) expect(c.relaxed.some((t: string) => t.includes('3 röda + resten gröna')), `${p.product} ${name}`).toBe(false);
         on.forEach((k, j) => {
           expect(cr[k][1], `${p.product} ${name} ${k}: inte exakt ${cr[k].join('–')}`).toBeGreaterThan(cr[k][0]);
           on.slice(j + 1).forEach((o) => expect(cr[o].join(), `${p.product} ${name}: ${k} och ${o} samma fönster`).not.toBe(cr[k].join()));
@@ -2331,6 +2334,8 @@ test.describe('stryk-engine: kupong A, B och C', () => {
     expect(sysFinal({ final, spik: { used: true, sysP: [0.3827, 0.2849, 0.3335] } })).toEqual(final); // vänd: Villa–Brentford
     expect(sysFinal({ final, spik: { used: true, sysP: [0.34, 0.27, 0.39] } })).toEqual([0.34, 0.27, 0.39]);
     expect(sysFinal({ final, spik: { used: false, sysP: [0.34, 0.27, 0.39] } })).toEqual(final);
+    // Tips som Oddset: alltid Oddsets procent (samma som servern), även när spikbedömningen har samma favorit
+    expect(sysFinal({ final, tipBasis: 'oddset', spik: { used: true, sysP: [0.34, 0.27, 0.39] } })).toEqual(final);
   });
 
   test('skrallTip: skrällspik att läsa om – aldrig favoriten, minst 30 % och understreckad, 35–47 % först, med varför', async () => {
@@ -3542,4 +3547,273 @@ test.describe('xp-table: förväntade poäng (xP) och förväntad tabellplats', 
     expect(xpNotes(p(5, 5, 3, null), p(5, 5), 'A', 'B')[0]).toContain('A 5,0 mot 5 verkliga ·');
     expect(xpNotes(p(5, null), p(5, 5), 'A', 'B')).toEqual([]);
   });
+});
+
+// ---------- matchstats.mjs (ESPN/365scores -> data/matchstats -> data/matcher) ----------
+
+const espnSummary = (o: any = {}) => ({
+  header: {
+    id: '401', competitions: [{
+      date: '2026-09-20T12:00Z', status: { type: { completed: o.completed ?? true } },
+      competitors: [
+        { homeAway: 'home', id: '10', score: '1', team: { id: '10', displayName: 'Djurgården' }, linescores: [{ displayValue: '0' }, { displayValue: '1' }] },
+        { homeAway: 'away', id: '20', score: '2', team: { id: '20', displayName: 'IF Elfsborg' }, linescores: [{ displayValue: '1' }, { displayValue: '1' }] },
+      ],
+    }],
+  },
+  gameInfo: { venue: { fullName: 'Tele2 Arena' }, attendance: 0, officials: [{ displayName: 'Oscar Johnson', position: { name: 'Referee' } }] },
+  boxscore: {
+    teams: o.noStats ? [{ team: { id: '10' }, statistics: [] }, { team: { id: '20' }, statistics: [{ name: 'totalShots', displayValue: '0' }] }] : [
+      { team: { id: '10' }, statistics: [
+        { name: 'possessionPct', displayValue: '55.6' }, { name: 'totalShots', displayValue: '9' }, { name: 'shotsOnTarget', displayValue: '2' },
+        { name: 'wonCorners', displayValue: '4' }, { name: 'foulsCommitted', displayValue: '8' }, { name: 'yellowCards', displayValue: '1' },
+        { name: 'redCards', displayValue: '0' }, { name: 'totalPasses', displayValue: '543' }, { name: 'accuratePasses', displayValue: '458' },
+        { name: 'offsides', displayValue: '2' },
+      ] },
+      { team: { id: '20' }, statistics: [
+        { name: 'possessionPct', displayValue: '44.4' }, { name: 'totalShots', displayValue: '15' }, { name: 'shotsOnTarget', displayValue: '3' },
+        { name: 'wonCorners', displayValue: '7' }, { name: 'foulsCommitted', displayValue: '7' }, { name: 'yellowCards', displayValue: '0' },
+        { name: 'redCards', displayValue: '0' }, { name: 'totalPasses', displayValue: '432' },
+      ] },
+    ],
+  },
+  keyEvents: [
+    { type: { type: 'yellow-card' }, team: { id: '10' }, period: { number: 1 } },
+    { type: { type: 'goal' }, team: { id: '20' }, period: { number: 1 }, scoringPlay: true },
+    { type: { type: 'red-card' }, team: { id: '20' }, period: { number: 2 } },
+  ],
+  rosters: [
+    { homeAway: 'home', formation: '4-2-3-1', roster: [
+      { starter: true, athlete: { id: '1', displayName: 'Jacob Rinne' }, position: { abbreviation: 'G' }, stats: [{ name: 'saves', value: 1 }, { name: 'goalsConceded', value: 2 }] },
+      { starter: true, subbedOut: true, athlete: { id: '2', displayName: 'Piotr Johansson' }, position: { abbreviation: 'LB' },
+        plays: [{ substitution: true, clock: { displayValue: "60'" } }], stats: [{ name: 'totalShots', value: 1 }] },
+      { starter: false, subbedIn: true, athlete: { id: '3', displayName: 'Max Larsson' }, position: { abbreviation: 'SUB' },
+        plays: [{ substitution: true, clock: { displayValue: "90'+7'" } }], stats: [] },
+      { starter: false, subbedIn: false, athlete: { id: '4', displayName: 'Bänkad' }, stats: [{ name: 'appearances', value: 0 }] },
+    ] },
+    { homeAway: 'away', formation: '3-5-2', roster: [] },
+  ],
+});
+const playerMap = (m: any, cols: string[]) => Object.fromEntries(m.p.map((r: any[]) => [r[1], Object.fromEntries(cols.map((c, i) => [c, r[i]]))]));
+
+test.describe('matchstats: ESPN-sammanfattning', () => {
+  test('lagstatistik, halvtid, domare, formation och spelare med minuter', async () => {
+    const { parseEspnSummary, PLAYER_COLS } = await lib('matchstats.mjs');
+    const m = parseEspnSummary(espnSummary());
+    expect(m).toMatchObject({ src: 'espn', id: '401', d: '2026-09-20', h: 'Djurgården', a: 'IF Elfsborg', hg: 1, ag: 2, ht: [0, 1], ref: 'Oscar Johnson', form: ['4-2-3-1', '3-5-2'] });
+    expect(m.t.h).toMatchObject({ poss: 55.6, sh: 9, sot: 2, cor: 4, fou: 8, yc: 1, pas: 543, pasok: 458, off: 2 });
+    expect(m.t.a.sh).toBe(15);
+    expect(m.ev).toEqual({ yc: [1, 0], rc: [0, 1], g1: [0, 1] });
+    const p = playerMap(m, PLAYER_COLS);
+    expect(Object.keys(p)).toEqual(['Jacob Rinne', 'Piotr Johansson', 'Max Larsson']); // oanvänd avbytare utelämnas
+    expect(p['Jacob Rinne']).toMatchObject({ side: 'h', start: 1, min: 90, sav: 1, gc: 2 });
+    expect(p['Piotr Johansson']).toMatchObject({ out: 1, min: 60, sh: 1 });
+    expect(p['Max Larsson']).toMatchObject({ in: 1, min: 1 }); // inhopp i tilläggstid = minst 1 minut
+  });
+
+  test('ej färdigspelad -> null; bara nollor = saknad lagstatistik (äldre säsonger), händelserna finns kvar', async () => {
+    const { parseEspnSummary } = await lib('matchstats.mjs');
+    expect(parseEspnSummary(espnSummary({ completed: false }))).toBeNull();
+    expect(parseEspnSummary({})).toBeNull();
+    const m = parseEspnSummary(espnSummary({ noStats: true }));
+    expect(m.t).toEqual({ h: null, a: null });
+    expect(m.ev.yc).toEqual([1, 0]);
+  });
+});
+
+test.describe('matchstats: 365scores', () => {
+  const game = (o: any = {}) => ({
+    id: 77, statusGroup: o.statusGroup ?? 4, startTime: '2026-10-10T07:30:00+00:00', officials: [{ name: 'Byung-Jin Park' }],
+    venue: { name: 'Gimcheon Stadium', attendance: 2363 },
+    stages: [{ id: 7, shortName: 'HT', homeCompetitorScore: 0, awayCompetitorScore: 1 }],
+    homeCompetitor: { id: 1, name: 'Gimcheon', score: 0, lineups: { formation: '4-4-2', members: [
+      { id: 11, status: 1, position: { name: 'Goalkeeper' }, stats: [{ type: 30, value: "90'" }, { type: 23, value: '6' }, { type: 35, value: '1' }] },
+      { id: 12, status: 1, position: { name: 'Defender' }, stats: [{ type: 30, value: "76'" }] },
+      { id: 13, status: 2, substitution: { time: 77 }, position: { name: 'Defender' }, stats: [{ type: 30, value: "14'" }] },
+      { id: 14, status: 2, position: { name: 'Forward' }, stats: [] },
+    ] } },
+    awayCompetitor: { id: 2, name: 'FC Anyang', score: 1, lineups: { formation: '4-3-3', members: [] } },
+    members: [{ id: 11, athleteId: 501, name: 'Man-ho Park' }, { id: 12, athleteId: 502, name: 'Park Min-Seo' }, { id: 13, athleteId: -1, name: 'Park Jin-Seong' }, { id: 14, name: 'Bänkad' }],
+    events: [
+      { competitorId: 1, eventType: { id: 2, name: 'Yellow Card' }, playerId: 12, gameTime: 25 },
+      { competitorId: 2, eventType: { id: 1, name: 'Goal' }, playerId: 99, extraPlayers: [98], gameTime: 37 },
+      { competitorId: 1, eventType: { id: 1000, name: 'Substitution' }, playerId: 13, extraPlayers: [12], gameTime: 76 },
+    ],
+  });
+  const stats = { statistics: [
+    { name: 'Possession', competitorId: 1, value: '60%' }, { name: 'Total Shots', competitorId: 1, value: '11' },
+    { name: 'Corners', competitorId: 1, value: '9' }, { name: 'Fouls', competitorId: 1, value: '15' },
+    { name: 'Possession', competitorId: 2, value: '40%' }, { name: 'Total Shots', competitorId: 2, value: '12' },
+    { name: 'Corners', competitorId: 2, value: '1' }, { name: 'Attacks', competitorId: 2, value: '77' },
+  ] };
+
+  test('lag, halvtid, kort ur händelser och spelare (inhoppare, utbytt)', async () => {
+    const { parse365, PLAYER_COLS } = await lib('matchstats.mjs');
+    const m = parse365(game(), stats);
+    expect(m).toMatchObject({ src: '365', id: '77', d: '2026-10-10', hg: 0, ag: 1, ht: [0, 1], ref: 'Byung-Jin Park', att: 2363, form: ['4-4-2', '4-3-3'] });
+    expect(m.t.h).toMatchObject({ poss: 60, sh: 11, cor: 9, fou: 15 });
+    expect(m.t.a).toMatchObject({ poss: 40, att: 77 });
+    expect(m.ev).toEqual({ yc: [1, 0], rc: [0, 0], g1: [0, 1] });
+    const p = playerMap(m, PLAYER_COLS);
+    expect(Object.keys(p)).toEqual(['Man-ho Park', 'Park Min-Seo', 'Park Jin-Seong']);
+    expect(p['Man-ho Park']).toMatchObject({ id: '501', start: 1, min: 90, sav: 6, gc: 1 });
+    expect(p['Park Min-Seo']).toMatchObject({ out: 1, min: 76, yc: 1 });
+    expect(p['Park Jin-Seong']).toMatchObject({ id: '13', in: 1, min: 14 }); // athleteId -1 -> lineup-id
+  });
+
+  test('inte slutspelad -> null, utan statistik -> bara händelser', async () => {
+    const { parse365 } = await lib('matchstats.mjs');
+    expect(parse365(game({ statusGroup: 2 }), stats)).toBeNull();
+    const m = parse365(game(), null);
+    expect(m.t).toEqual({ h: null, a: null });
+    expect(m.ev.yc).toEqual([1, 0]);
+  });
+});
+
+test.describe('matchstats: koppling till data/matcher-raderna', () => {
+  const score = (a: string, b: string) => (a === b ? 1 : a.split(' ')[0] === b.split(' ')[0] ? 0.6 : 0);
+  const c = (o: any) => ({ d: '2026-09-20', h: 'Djurgarden', a: 'Elfsborg', hg: 1, ag: 2, ...o });
+
+  test('findStatMatch: datum ±1 dag, samma resultat, båda lagen; tvetydigt -> null', async () => {
+    const { findStatMatch } = await lib('matchstats.mjs');
+    const row = { date: '2026-09-20', home: 'Djurgarden', away: 'Elfsborg', hg: 1, ag: 2 };
+    expect(findStatMatch(row, [c({ d: '2026-09-21' })], score)).toMatchObject({ d: '2026-09-21' });
+    expect(findStatMatch(row, [c({ d: '2026-09-22' })], score)).toBeNull();
+    expect(findStatMatch(row, [c({ hg: 2 })], score)).toBeNull(); // annat resultat
+    expect(findStatMatch(row, [c({ a: 'Hammarby' })], score)).toBeNull(); // bortalaget liknar inte
+    expect(findStatMatch(row, [c({ id: 1 }), c({ id: 2 })], score)).toBeNull(); // två lika bra
+    expect(findStatMatch(row, [c({ id: 1, d: '2026-09-21' }), c({ id: 2 })], score)).toMatchObject({ id: 2 }); // samma dag vinner
+    expect(findStatMatch({ ...row, hg: '', ag: '' }, [c({})], score)).toBeTruthy(); // rad utan resultat: namn + datum räcker
+  });
+
+  test('applyStats: fyller bara tomma (även NaN), nya kolumner sätts, kort ur händelser utan lagstatistik', async () => {
+    const { applyStats, parseEspnSummary } = await lib('matchstats.mjs');
+    const r: any = applyStats({ hs: 20, as: NaN, hc: '', ac: null, referee: 'Fd-domare' }, parseEspnSummary(espnSummary()));
+    expect(r).toMatchObject({
+      hs: 20, as: 15, hc: 4, ac: 7, hf: 8, af: 7, referee: 'Fd-domare', poss_h: 55.6, poss_a: 44.4, pas_h: 543, pasok_h: 458, pasok_a: null,
+      off_h: 2, htg_h: 0, htg_a: 1, form_h: '4-2-3-1', stats_src: 'espn',
+    });
+    const old = applyStats({}, parseEspnSummary(espnSummary({ noStats: true })));
+    expect(old).toMatchObject({ hy: 1, ay: 0, hr: 0, ar: 1, poss_h: null, referee: 'Oscar Johnson' });
+    expect(applyStats({ hs: 1 }, null)).toEqual({ hs: 1 });
+  });
+
+  test('seasonPlayers: summa per spelare och lag, sorterad på minuter', async () => {
+    const { seasonPlayers, parseEspnSummary } = await lib('matchstats.mjs');
+    const m = parseEspnSummary(espnSummary());
+    const s = seasonPlayers([m, m]);
+    expect(s[0]).toMatchObject({ name: 'Jacob Rinne', team: 'Djurgården', apps: 2, starts: 2, min: 180, sav: 2, gc: 4 });
+    expect(s.find((x: any) => x.name === 'Max Larsson')).toMatchObject({ subIns: 2, min: 2 });
+  });
+
+  test('exporten skriver STAT_COLS och Opta används bara som reserv', async () => {
+    const { STAT_COLS } = await lib('matchstats.mjs');
+    const src = fs.readFileSync(path.join(ROOT, 'scripts', 'export-league-matches.mjs'), 'utf8');
+    expect(src).toContain('...STAT_COLS');
+    expect(src).toContain("if (src === 'opta' && r.stats_src) continue;");
+    expect(STAT_COLS).toEqual(expect.arrayContaining(['poss_h', 'pas_h', 'off_h', 'htg_h', 'form_h', 'stats_src']));
+  });
+});
+
+// ---------- klubbtrupper.mjs (AIK:s uttagningar och truppstatus) ----------
+
+test.describe('klubbtrupper: AIK', () => {
+  const picked = Array.from({ length: 11 }, (_, i) => `<strong>${i + 2} </strong>Spelare ${i + 2}<br/>`).join('');
+  const squadHtml = '<main><h1>Truppen mot BP</h1>'
+    + '<p class="Preamble_preamble__text__uiJvl">Följande spelare till dagens allsvenska hemmamatch mot IF Brommapojkarna. Avspark sker kl 15:00 på Strawberry Arena.</p>'
+    + `<h3>Den uttagna truppen:</h3><p>${picked}<strong>15</strong> Kristoffer Nordfeldt (mv)<br/><strong>30 </strong>Kalle Joelsson (mv)</p>`
+    + '<h3 id="Ej-uttagna">Ej uttagna:</h3><ul><li><p>Dino Beširović (skadad)</p></li><li><p>Norton de Carvalho (ej uttagen)</p></li>'
+    + '<li><p>Någon Avstängd (avstängd)</p></li></ul><p>Se truppstatus</p></main>';
+  const statusHtml = '<main><h1>Truppstatus: Herrlaget v.41 (2026)</h1><h3 id="a">Taha Ayari</h3><p>Åter i full träning.</p>'
+    + '<h3 id="b">Dino Beširović</h3><p>Befinner sig i rehabilitering för en skada i baksida lår.</p></main>';
+
+  test('sitemapArticles: uttagningar och truppstatus, datum ur adressen, utan dubbletter', async () => {
+    const { sitemapArticles } = await lib('klubbtrupper.mjs');
+    const xml = 'artiklar-och-nyheter/261010-truppen-mot-bp artiklar-och-nyheter/261010-truppen-mot-bp artiklar-och-nyheter/261007-truppstatus-herrlaget-v41-2026 artiklar-och-nyheter/261009-ny-vd';
+    const a = sitemapArticles(xml);
+    expect(a.map((x: any) => [x.date, x.kind])).toEqual([['2026-10-07', 'status'], ['2026-10-10', 'trupp']]);
+    expect(a[1].url).toBe('https://www.aikfotboll.se/artiklar-och-nyheter/261010-truppen-mot-bp');
+  });
+
+  test('parseSquadArticle: uttagna, målvakter, ej uttagna med orsak, hemma och avspark', async () => {
+    const { parseSquadArticle } = await lib('klubbtrupper.mjs');
+    const s = parseSquadArticle(squadHtml);
+    expect(s).toMatchObject({ opponent: 'BP', team: 'herr', home: true, kickoff: '15:00' });
+    expect(s.players).toHaveLength(13);
+    expect(s.players.filter((p: any) => p.gk).map((p: any) => p.name)).toEqual(['Kristoffer Nordfeldt', 'Kalle Joelsson']);
+    expect(s.out).toEqual([{ name: 'Dino Beširović', reason: 'skadad' }, { name: 'Norton de Carvalho', reason: 'ej uttagen' }, { name: 'Någon Avstängd', reason: 'avstängd' }]);
+  });
+
+  test('parseStatusArticle: vecka, status per spelare, åter i träning', async () => {
+    const { parseStatusArticle } = await lib('klubbtrupper.mjs');
+    const s = parseStatusArticle(statusHtml);
+    expect(s).toMatchObject({ week: 41, team: 'herr' });
+    expect(s.players.map((p: any) => [p.name, p.back])).toEqual([['Taha Ayari', true], ['Dino Beširović', false]]);
+  });
+
+  test('mergeClubInjuries: rehab och skadad/avstängd markeras; ej uttagen, gamla artiklar och FotMob-markeringar lämnas', async () => {
+    const { mergeClubInjuries, parseSquadArticle, parseStatusArticle } = await lib('klubbtrupper.mjs');
+    const { sameName } = await lib('transfermarkt.mjs');
+    const doc = {
+      squads: [{ date: '2026-10-10', url: 'u1', ...parseSquadArticle(squadHtml) }],
+      status: [{ date: '2026-10-07', url: 'u2', ...parseStatusArticle(statusHtml) }],
+    };
+    const team: any = { players: [
+      { name: 'Dino Besirovic', injury: null }, { name: 'Norton de Carvalho', injury: null }, { name: 'Taha Ayari', injury: null },
+      { name: 'Någon Avstängd', injury: { source: 'FotMob' } }, { name: 'Gammal', injury: { source: 'Klubben' } },
+    ] };
+    expect(mergeClubInjuries(team, doc, '2026-10-10', sameName)).toBe(1);
+    expect(team.players[0].injury).toMatchObject({ source: 'Klubben', url: 'u2' });
+    expect(team.players[1].injury).toBeNull(); // ej uttagen = inte frånvaro
+    expect(team.players[2].injury).toBeNull(); // åter i träning
+    expect(team.players[3].injury).toEqual({ source: 'FotMob' });
+    expect(team.players[4].injury).toBeNull(); // förra körningens klubbmarkering rensas
+    const t2: any = { players: [{ name: 'Dino Besirovic', injury: null }] };
+    expect(mergeClubInjuries(t2, doc, '2026-10-25', sameName)).toBe(0); // för gamla artiklar
+  });
+});
+
+// ---------- opta.mjs ----------
+
+test.describe('opta: livescore', () => {
+  const m = (o: any = {}) => ({
+    id: 'x1', status: 'played', date: 1791585000, comp: { name: 'Liga Profesional Argentina', country: { name: 'argentina' } },
+    home: { id: 'h', name: 'Instituto' }, away: { id: 'a', name: 'Boca Juniors' },
+    score: { ht: { home: 1, away: 1 }, ft: { home: 2, away: 2 } },
+    events: [
+      { teamId: 'h', entity_type: 'card', type: 'YC', min: 22, reason: 'Foul', playerName: 'G. Abregú' },
+      { teamId: 'a', entity_type: 'card', type: 'Y2C', min: 80, reason: 'Dissent' },
+      { teamId: 'a', entity_type: 'goal', type: 'G', min: 23 },
+    ],
+    ...o,
+  });
+
+  test('parseOpta: halvtid, slutresultat, kort med orsak; andra gula = utvisning; ligakod', async () => {
+    const { parseOpta, optaLeague } = await lib('opta.mjs');
+    const x = parseOpta(m());
+    expect(x).toMatchObject({ src: 'opta', h: 'Instituto', a: 'Boca Juniors', hg: 2, ag: 2, ht: [1, 1], ev: { yc: [1, 0], rc: [0, 1] } });
+    expect(x.cards[0]).toEqual(['h', 22, 'YC', 'Foul', 'G. Abregú']);
+    expect(optaLeague(m())).toBe('AR');
+    expect(optaLeague(m({ comp: { name: 'Okänd', country: { name: 'x' } } }))).toBeNull();
+    expect(parseOpta(m({ status: 'fixture' }))).toBeNull();
+  });
+});
+
+// ---------- nya ligor (BE, SC, SAU, AUS, KR, CAN) och matchstatistikens källor ----------
+
+test('ligaregister: nya ligor har FotMob-id, statistikkälla och historik', async () => {
+  const reg = JSON.parse(fs.readFileSync(path.join(ROOT, 'config', 'leagues.json'), 'utf8'));
+  const { FOTMOB_LEAGUES } = await lib('fotmob-leagues.mjs');
+  for (const code of ['BE', 'SC', 'SAU', 'AUS', 'KR', 'CAN']) {
+    const lg = reg.leagues[code];
+    expect(lg, code).toBeTruthy();
+    expect(FOTMOB_LEAGUES[code], code).toBe(lg.fotmobId);
+    expect(lg.espn || lg.s365, `${code} saknar statistikkälla`).toBeTruthy();
+  }
+  for (const [code, lg] of Object.entries<any>(reg.leagues)) {
+    if (lg.espnStats) expect(lg.espn, `${code}: espnStats bara när espn saknas`).toBeFalsy();
+    if (lg.s365) expect(Number.isInteger(lg.s365), code).toBe(true);
+  }
+  const { MAIN } = await lib('learnings-data.mjs');
+  expect(MAIN).toEqual(expect.arrayContaining(['BE', 'SC']));
 });

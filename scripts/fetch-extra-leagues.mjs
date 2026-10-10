@@ -38,6 +38,7 @@ const ALIASES = {
     'Independiente Rivadavia': 'Ind. Rivadavia',
   },
   NO: { 'Hamarkameratene': 'HamKam' },
+  BE: { 'OH Leuven': 'Oud-Heverlee Leuven' },
   DK: { 'AGF': 'Aarhus', 'F.C. København': 'FC Copenhagen' },
   PT: { 'Sporting CP': 'Sp Lisbon', 'C.D. Nacional': 'Nacional', 'SC Braga': 'Sp Braga' },
   MLS: { 'LAFC': 'Los Angeles FC', 'LA Galaxy': 'Los Angeles Galaxy', 'Atlanta United FC': 'Atlanta Utd', 'D.C. United': 'DC United' },

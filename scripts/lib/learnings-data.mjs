@@ -10,14 +10,14 @@ import { canonTeam } from './team-aliases.mjs';
 export const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
 const RAW = path.join(root, 'data', 'raw');
 const OPEN = path.join(root, 'data', 'open');
-export const MAIN = ['PL', 'CH', 'EL1', 'EL2', 'BL', 'BL2', 'LL', 'LL2', 'SA', 'SB', 'L1', 'ED', 'PT', 'GR'];
+export const MAIN = ['PL', 'CH', 'EL1', 'EL2', 'BL', 'BL2', 'LL', 'LL2', 'SA', 'SB', 'L1', 'ED', 'PT', 'GR', 'BE', 'SC'];
 export const NEW = ['AS', 'NO', 'DK', 'EK', 'JP1', 'MLS', 'MX', 'BR', 'AR'];
 export const UNDERSTAT = ['PL', 'LL', 'SA', 'BL', 'L1'];
 export const LEAGUE_NAMES = {
   PL: 'Premier League', CH: 'Championship', EL1: 'League One', EL2: 'League Two', BL: 'Bundesliga', BL2: '2. Bundesliga',
   LL: 'La Liga', LL2: 'LaLiga 2', SA: 'Serie A', SB: 'Serie B', L1: 'Ligue 1', ED: 'Eredivisie', PT: 'Primeira Liga',
   GR: 'Super League (Grekland)', AS: 'Allsvenskan', NO: 'Eliteserien', DK: 'Superligaen', EK: 'Ekstraklasa', JP1: 'J1 League',
-  MLS: 'MLS', MX: 'Liga MX', BR: 'Brasileirão Série A', AR: 'Liga Profesional',
+  MLS: 'MLS', MX: 'Liga MX', BR: 'Brasileirão Série A', AR: 'Liga Profesional', BE: 'Pro League (Belgien)', SC: 'Premiership (Skottland)',
 };
 // Svenska Spels liganamn -> vara koder (klubbligor med historik)
 export const POOL_LEAGUES = {

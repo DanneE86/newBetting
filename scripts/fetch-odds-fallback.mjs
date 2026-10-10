@@ -15,7 +15,7 @@ const RAW = path.join(root, 'data', 'raw');
 const REG = JSON.parse(fs.readFileSync(path.join(root, 'config', 'leagues.json'), 'utf8'));
 const DIV = {
   E0: 'PL', E1: 'CH', E2: 'EL1', SP1: 'LL', SP2: 'LL2', I1: 'SA', I2: 'SB',
-  D1: 'BL', D2: 'BL2', F1: 'L1', N1: 'ED', P1: 'PT', G1: 'GR',
+  D1: 'BL', D2: 'BL2', F1: 'L1', N1: 'ED', P1: 'PT', G1: 'GR', B1: 'BE', SC0: 'SC',
 };
 
 /** "Land|Liga" -> ligakod, las fran historik-CSV:erna (fd-new) sa att nya ligor i registret kommer med automatiskt. */

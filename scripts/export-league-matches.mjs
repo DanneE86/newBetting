@@ -13,6 +13,7 @@ import { nameScore } from './lib/match-context.mjs';
 import { clashesWith, uniqueBest } from './lib/team-match.mjs';
 import { canonTeam } from './lib/team-aliases.mjs';
 import { INJ, carryPre, extraCols as extra, pendingRows, squadAbsence } from './lib/matcher-rows.mjs';
+import { STAT_COLS, applyStats, findStatMatch } from './lib/matchstats.mjs';
 
 const DIR = path.join(root, 'data', 'matcher');
 const readJson = (p, d = null) => { try { return JSON.parse(fs.readFileSync(p, 'utf8').replace(/^﻿/, '')); } catch { return d; } };
@@ -23,7 +24,7 @@ const COLS = [
   'best_close_h', 'best_close_d', 'best_close_a', 'over25_open', 'over25_close',
   'luck', 'gap', 'mres', 'rest', 'h2h_n', 'h2h_pts', 'h2h_res', 'h2h_draw', 'promo', 'releg', 'miss_h', 'miss_a', 'steam', 'book',
   'pre_first_at', 'pre_first_h', 'pre_first_d', 'pre_first_a', 'pre_last_at', 'pre_last_h', 'pre_last_d', 'pre_last_a', 'pre_best_h', 'pre_best_d', 'pre_best_a',
-  ...INJ, 'close_src',
+  ...INJ, 'close_src', ...STAT_COLS,
 ];
 const r4 = (x) => (x == null || !Number.isFinite(x) ? '' : String(Math.round(x * 1e4) / 1e4));
 const cell = (v) => {
@@ -107,6 +108,19 @@ function liveOdds(f) {
   return { p: avg, best: [0, 1, 2].map((i) => Math.max(...books.map((b) => [b.home, b.draw, b.away][i]))), kickoff: e.commence };
 }
 
+// Alla år för ligan ur data/matchstats/<LIGA>/<år>.json (scripts/fetch-matchstats.mjs)
+function loadStats(lg) {
+  const dir = path.join(root, 'data', 'matchstats', lg);
+  if (!fs.existsSync(dir)) return [];
+  return fs.readdirSync(dir).filter((f) => /^\d{4}\.json$/.test(f))
+    .flatMap((f) => Object.values(readJson(path.join(dir, f), { matches: {} }).matches));
+}
+function loadOpta(lg) {
+  const doc = readJson(path.join(root, 'data', 'opta', `${lg}.json`), null);
+  return doc ? Object.values(doc.matches) : [];
+}
+const statHits = [];
+
 fs.mkdirSync(DIR, { recursive: true });
 let totalUp = 0;
 const leagues = new Set([...byLeague.keys(), ...fixtures.map((f) => f.league)]);
@@ -150,6 +164,23 @@ for (const lg of [...leagues].sort()) {
     && !clashesWith(r, up));
   // Spelade men utan resultat an: behalls som 'väntar' sa pre_* inte forsvinner (lib/matcher-rows.mjs)
   const pending = pendingRows(prev, today, (r) => played.has(key(r)) || upKeys.has(key(r)));
+  // Matchstatistik (ESPN/365scores, data/matchstats): fyller tomma skott/hörnor/kort/domare och nya kolumner
+  // Opta (data/opta, npm run opta) bara som reserv när ESPN/365scores saknar matchen: halvtid och kort
+  let hit = 0;
+  for (const [src, list] of [['huvud', loadStats(lg)], ['opta', loadOpta(lg)]]) {
+    if (!list.length) continue;
+    const byDay = new Map();
+    for (const m of list) for (const d of [-1, 0, 1]) {
+      const k = new Date(Date.parse(m.d) + d * 864e5).toISOString().slice(0, 10);
+      (byDay.get(k) ?? byDay.set(k, []).get(k)).push(m);
+    }
+    for (const r of rows) {
+      if (src === 'opta' && r.stats_src) continue;
+      const m = findStatMatch(r, byDay.get(r.date) ?? [], (a, b) => nameScore(a, null, b));
+      if (m) { applyStats(r, m); hit++; }
+    }
+  }
+  if (hit) statHits.push(`${lg} ${hit}/${rows.length}`);
   const out = [...rows, ...pending, ...kept, ...up].sort((a, b) => a.date.localeCompare(b.date) || a.home.localeCompare(b.home));
   if (!out.length) continue;
   fs.writeFileSync(file, `${COLS.join(',')}\n${out.map((r) => COLS.map((c) => cell(r[c])).join(',')).join('\n')}\n`, 'utf8');
@@ -167,7 +198,9 @@ En CSV per liga med alla matcher vi har: \`status\` = spelad, väntar (spelad me
 - \`pre_inj_*\` = frånvaron i lagen före matchen (senaste avläsning ur \`data/trupper\`, sparas från 2026-10-05): antal skadade/avstängda (\`pre_inj_h/a\`) och deras andel av truppens marknadsvärde (\`pre_injv_h/a\`). I engelska ligorna FotMob + Transfermarkts skadelista.
 - xG: \`xg_src\` = understat (topp 5), football-data (riktig xG, från 2026/27) eller skott (uppskattat från skott och skott på mål).
 - \`referee\`, hörnor \`hc/ac\`, frisparkar \`hf/af\`, gula \`hy/ay\`, röda \`hr/ar\` (där källan har det, främst 2023/24 och senare; direkt ur football-data-CSV:n när betting-store inte har dem än).
+- Matchstatistik från ESPN/365scores (\`data/matchstats\`, \`npm run matchstats\`), \`stats_src\` = espn, 365 eller opta: fyller tomma skott, hörnor, frisparkar, kort och domare (football-data går före) och ger bollinnehav \`poss_*\` (%), passningar \`pas_*\` / lyckade \`pasok_*\`, offside \`off_*\`, räddningar \`sav_*\`, blockerade skott \`blk_*\`, tacklingar \`tkl_*\`, brytningar \`int_*\`, inlägg \`cro_*\`, anfall \`att_*\` och stora chanser \`bigch_*\` (bara 365scores), halvtid \`htg_*\`, formation \`form_*\`, arena \`venue\` och publik \`att\`. Lagstatistik finns från ungefär 2024 i Norden och Japan, längre bak i de flesta andra ligor; äldre matcher har bara halvtid och kort. Opta (\`npm run opta\`) används bara när ESPN/365scores saknar matchen.
 
 Relaterat, också per liga och med historik: aktuella trupper (skador, betyg, mål, marknadsvärde, vilka som lämnat, tränarbyten) i \`data/trupper/<liga>.json\` och tabell med daglig tabellhistorik i \`data/ligor/<liga>.json\` (\`npm run trupper\`). Lärdomar per liga och lag: \`docs/lardomar/\`.
 `, 'utf8');
+if (statHits.length) console.log(`Matchstatistik kopplad: ${statHits.join(', ')}`);
 console.log(`Skrev ${path.relative(root, DIR)} (${leagues.size} ligor, ${totalUp} kommande matcher)`);

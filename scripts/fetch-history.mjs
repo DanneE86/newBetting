@@ -8,7 +8,7 @@ import { getText } from './lib/http.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = path.join(root, 'data', 'raw', 'hist');
-const CODES = { PL: 'E0', CH: 'E1', EL1: 'E2', EL2: 'E3', BL: 'D1', BL2: 'D2', LL: 'SP1', LL2: 'SP2', SA: 'I1', SB: 'I2', L1: 'F1', ED: 'N1', PT: 'P1', GR: 'G1' };
+const CODES = { PL: 'E0', CH: 'E1', EL1: 'E2', EL2: 'E3', BL: 'D1', BL2: 'D2', LL: 'SP1', LL2: 'SP2', SA: 'I1', SB: 'I2', L1: 'F1', ED: 'N1', PT: 'P1', GR: 'G1', BE: 'B1', SC: 'SC0' };
 const SEASONS = ['1718', '1819', '1920', '2021', '2122', '2223', '2324'];
 const KEEP = ['Date', 'HomeTeam', 'AwayTeam', 'FTHG', 'FTAG', 'FTR', 'HS', 'AS', 'HST', 'AST',
   'PSH', 'PSD', 'PSA', 'PSCH', 'PSCD', 'PSCA', 'AvgH', 'AvgD', 'AvgA', 'AvgCH', 'AvgCD', 'AvgCA',
@@ -22,7 +22,7 @@ let fail = 0;
 for (const [league, code] of Object.entries(CODES)) {
   for (const season of SEASONS) {
     const file = path.join(OUT, `${league}_${season}.csv`);
-    if (fs.existsSync(file) && fs.readFileSync(file, 'utf8').split('\n', 1)[0] === KEEP.join(',')) continue;
+    if (fs.existsSync(file) && fs.readFileSync(file, 'utf8').split(/\r?\n/, 1)[0] === KEEP.join(',')) continue; // CRLF efter Windows-utcheckning
     const url = `https://www.football-data.co.uk/mmz4281/${season}/${code}.csv`;
     try {
       const text = (await getText(url, { retries: 2 })).replace(/^﻿/, '');

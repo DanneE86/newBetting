@@ -78,7 +78,13 @@ if (-not $SkipCsv) {
     @{ f = "PT_2425.csv"; u = "https://www.football-data.co.uk/mmz4281/2425/P1.csv" },
     @{ f = "GR_2627.csv"; u = "https://www.football-data.co.uk/mmz4281/2627/G1.csv" },
     @{ f = "GR_2526.csv"; u = "https://www.football-data.co.uk/mmz4281/2526/G1.csv" },
-    @{ f = "GR_2425.csv"; u = "https://www.football-data.co.uk/mmz4281/2425/G1.csv" }
+    @{ f = "GR_2425.csv"; u = "https://www.football-data.co.uk/mmz4281/2425/G1.csv" },
+        @{ f = "BE_2627.csv"; u = "https://www.football-data.co.uk/mmz4281/2627/B1.csv" },
+        @{ f = "BE_2526.csv"; u = "https://www.football-data.co.uk/mmz4281/2526/B1.csv" },
+        @{ f = "BE_2425.csv"; u = "https://www.football-data.co.uk/mmz4281/2425/B1.csv" },
+        @{ f = "SC_2627.csv"; u = "https://www.football-data.co.uk/mmz4281/2627/SC0.csv" },
+        @{ f = "SC_2526.csv"; u = "https://www.football-data.co.uk/mmz4281/2526/SC0.csv" },
+        @{ f = "SC_2425.csv"; u = "https://www.football-data.co.uk/mmz4281/2425/SC0.csv" }
     )
     foreach ($c in $csv) {
         Save-Url $c.u (Join-Path $RawDir $c.f) "csv:$($c.f)" | Out-Null

@@ -83,7 +83,14 @@ $Sources = @(
     # Grekland
     @{ Key = "GR_2627"; League = "GR"; Season = "2026/27"; Url = "https://www.football-data.co.uk/mmz4281/2627/G1.csv"; File = "GR_2627.csv" },
     @{ Key = "GR_2526"; League = "GR"; Season = "2025/26"; Url = "https://www.football-data.co.uk/mmz4281/2526/G1.csv"; File = "GR_2526.csv" },
-    @{ Key = "GR_2425"; League = "GR"; Season = "2024/25"; Url = "https://www.football-data.co.uk/mmz4281/2425/G1.csv"; File = "GR_2425.csv" }
+    @{ Key = "GR_2425"; League = "GR"; Season = "2024/25"; Url = "https://www.football-data.co.uk/mmz4281/2425/G1.csv"; File = "GR_2425.csv" },
+    # Belgien (Pro League) och Skottland (Premiership)
+    @{ Key = "BE_2627"; League = "BE"; Season = "2026/27"; Url = "https://www.football-data.co.uk/mmz4281/2627/B1.csv"; File = "BE_2627.csv" },
+    @{ Key = "BE_2526"; League = "BE"; Season = "2025/26"; Url = "https://www.football-data.co.uk/mmz4281/2526/B1.csv"; File = "BE_2526.csv" },
+    @{ Key = "BE_2425"; League = "BE"; Season = "2024/25"; Url = "https://www.football-data.co.uk/mmz4281/2425/B1.csv"; File = "BE_2425.csv" },
+    @{ Key = "SC_2627"; League = "SC"; Season = "2026/27"; Url = "https://www.football-data.co.uk/mmz4281/2627/SC0.csv"; File = "SC_2627.csv" },
+    @{ Key = "SC_2526"; League = "SC"; Season = "2025/26"; Url = "https://www.football-data.co.uk/mmz4281/2526/SC0.csv"; File = "SC_2526.csv" },
+    @{ Key = "SC_2425"; League = "SC"; Season = "2024/25"; Url = "https://www.football-data.co.uk/mmz4281/2425/SC0.csv"; File = "SC_2425.csv" }
 )
 
 function Get-Num($v) {
