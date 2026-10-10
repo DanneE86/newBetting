@@ -10,6 +10,8 @@
 // fitLogit(races, keys) skattar vikterna så att P(häst vinner) = exp(Σ β·x) / Σ_fältet exp(Σ β·x) passar
 // vinnarna bäst (maximal likelihood, L2-regularisering). Utvärdering: logloss och träffprocent (modellens etta vinner).
 
+import { ibFactors, IB_WEIGHTS, ibZStd } from "./interbet-model.mjs";
+
 const clamp = (x, a, b) => Math.max(a, Math.min(b, x));
 const mean = (xs) => (xs.length ? xs.reduce((a, b) => a + b, 0) / xs.length : null);
 const median = (xs) => {
@@ -233,7 +235,7 @@ export function rawFeatures(race, h, ctx = {}) {
   };
 }
 
-export const FEATURE_KEYS = [...Object.keys(rawFeatures({ startTime: "2026-01-01", distance: 2140 }, { records: [] })), "mktKvadrat"];
+export const FEATURE_KEYS = [...Object.keys(rawFeatures({ startTime: "2026-01-01", distance: 2140 }, { records: [] })), "mktKvadrat", "ibScore"];
 
 /**
  * Ett lopp som inlärningsrad: { id, date, n, winner (index), lq, lqOdds, lqStreck, X: { key: [z per häst] } }.
@@ -253,6 +255,12 @@ export function raceRow(race, ctx = {}) {
   const lq = (hasStreck ? m.qStreck : m.q).map((x) => Math.log(Math.max(x, 1e-4)));
   // Favorit/långskott-snedvridning
   X.mktKvadrat = zScores(lq.map((x) => x * x));
+  // Interbets 9-faktorspoäng (z-standardiserat inom loppet, precis som övriga faktorer)
+  const ibFacsAll = live.map((h) => ibFactors(h));
+  const ibKeys = Object.keys(IB_WEIGHTS);
+  const ibZV = {};
+  for (const k of ibKeys) ibZV[k] = ibZStd(ibFacsAll.map((f) => f[k]));
+  X.ibScore = zScores(live.map((_, i) => ibKeys.reduce((sum, k) => sum + IB_WEIGHTS[k] * ibZV[k][i], 0)));
   return {
     id: race.id,
     date: String(race.startTime || "").slice(0, 10),

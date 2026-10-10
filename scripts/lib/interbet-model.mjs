@@ -13,14 +13,14 @@
 // addInterbetScores(game, analysis): lägger på .ibP och .ibScore på varje häst i analysis.races[].horses[].
 // game = normalizeGame-utdatan (med fullständiga records), analysis = analyzeGame-utdatan.
 
-const IB_WEIGHTS = { nyTid: 60, plats: 30, ntft: 30, vinst: 60, total: 60, alltime: 20, kusk: 6, ll: 20, forbattring: 8 };
+export const IB_WEIGHTS = { nyTid: 60, plats: 30, ntft: 30, vinst: 60, total: 60, alltime: 20, kusk: 6, ll: 20, forbattring: 8 };
 const IB_W_TOTAL = Object.values(IB_WEIGHTS).reduce((a, b) => a + b, 0);
 const IB_SCALE = 0.15 / IB_W_TOTAL;
 const IB_N = 10;
 const PLACE_PTS = { 1: 1.0, 2: 0.7, 3: 0.5, 4: 0.3, 5: 0.2 };
 const MARKET_EXP = 0.85;
 
-function ibFactors(start) {
+export function ibFactors(start) {
   const recs   = (start.records || []).filter(r => !r.scratched).slice(0, IB_N);
   const noGall = recs.filter(r => !r.galloped && r.km != null);
 
@@ -53,7 +53,7 @@ function ibFactors(start) {
   };
 }
 
-function zStd(vals) {
+export function ibZStd(vals) {
   const def = vals.filter(v => v != null);
   if (!def.length) return vals.map(() => 0);
   const mu = def.reduce((a, b) => a + b, 0) / def.length;
@@ -82,7 +82,7 @@ export function addInterbetScores(game, analysis) {
     const keys = Object.keys(IB_WEIGHTS);
 
     const zV = {};
-    for (const k of keys) zV[k] = zStd(facs.map(f => f[k]));
+    for (const k of keys) zV[k] = ibZStd(facs.map(f => f[k]));
 
     // Linjär poäng (råvärde, högre = bättre)
     const linScores = live.map((_, i) =>
