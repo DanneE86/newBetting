@@ -20,6 +20,7 @@ import { atgSchemas } from "./lib/api-schemas.mjs";
 import { attachFieldInfo } from "./lib/hast-lopp.mjs";
 import { trainerIndex, trainerTimeline } from "./lib/trav-features.mjs";
 import { fetchRace } from "./hastar-lopp.mjs";
+import { addInterbetScores } from "./lib/interbet-model.mjs";
 
 /** Tipslogg (data/tipslogg/hastar): loppen före start sparas, facit ur analysens resultat. */
 async function tipslogg(a) {
@@ -157,7 +158,7 @@ export async function analyzeRaw(raw) {
   const ddGame = raw.dd ? normalizeGame(raw.dd.game, raw.dd.details) : null;
   if (raw.lopp?.length) attachFieldInfo([game, ddGame].filter(Boolean), new Map(), { byId: new Map(raw.lopp.map((r) => [r.id, r])) });
   const trainerHist = loadTrainerHist([game, ddGame].filter(Boolean));
-  const analysis = { ...analyzeGame(game, ddGame, trainerHist ? { trainerHist } : {}), fetchedAt: raw.fetchedAt, analyzedAt: new Date().toISOString() };
+  const analysis = addInterbetScores(game, { ...analyzeGame(game, ddGame, trainerHist ? { trainerHist } : {}), fetchedAt: raw.fetchedAt, analyzedAt: new Date().toISOString() });
   const results = resultsOf(raw.main.game);
   if (raw.dd) Object.assign(results, resultsOf(raw.dd.game));
   if (Object.keys(results).length) analysis.results = results;
