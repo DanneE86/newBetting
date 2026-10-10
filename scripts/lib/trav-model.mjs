@@ -99,6 +99,7 @@ export function normRecord(r) {
     shoes: r.start?.horse?.shoes ? { front: r.start.horse.shoes.front ?? null, back: r.start.horse.shoes.back ?? null } : null,
     trackCondition: r.track?.condition || null,
     sport: r.race?.sport || null,
+    raceType: r.race?.type || null,
   };
 }
 
@@ -117,7 +118,8 @@ export function streckSnapshot(game, at = new Date().toISOString()) {
       const d = st.pools?.[type]?.betDistribution;
       const o = st.pools?.vinnare?.odds;
       const pl = st.pools?.plats?.minOdds;
-      row[st.number] = [d != null ? d / 10000 : null, o ? o / 100 : null, pl ? pl / 100 : null];
+      const tr = st.pools?.[type]?.trend;
+      row[st.number] = [d != null ? d / 10000 : null, o ? o / 100 : null, pl ? pl / 100 : null, tr ?? null];
     }
     races[r.id] = row;
   }
@@ -282,18 +284,24 @@ export function speedSeconds(records, method) {
 /** Krympt segerprocent: (vinster + 0,1·k) / (starter + k). */
 export const shrunkWin = (st, k = SHRINK_DRIVER, prior = 0.1) => (st ? (st.wins + prior * k) / (st.starts + k) : null);
 
-/** Spårtabell: segerindex per startmetod och spår av alla historiska starter i spelet. 1,0 = snittet. */
+/** Spårtabell: segerindex per startmetod och spår av alla historiska starter i spelet. 1,0 = snittet.
+ *  table.byTrack = banspecifik tabell keyed "bana|metod|spår" för faktorn sparBana. */
 export function postTable(games) {
   const agg = {};
+  const aggTrack = {};
   for (const g of games)
     for (const race of g.races)
       for (const s of race.starts)
         for (const r of s.records) {
           if (r.scratched || !r.post || !r.startMethod || r.place == null) continue;
           const k = `${r.startMethod}|${r.post}`;
-          const a = (agg[k] ??= { starts: 0, wins: 0 });
-          a.starts++;
-          if (r.place === 1) a.wins++;
+          (agg[k] ??= { starts: 0, wins: 0 }).starts++;
+          if (r.place === 1) agg[k].wins++;
+          if (r.track) {
+            const kt = `${r.track}|${r.startMethod}|${r.post}`;
+            (aggTrack[kt] ??= { starts: 0, wins: 0 }).starts++;
+            if (r.place === 1) aggTrack[kt].wins++;
+          }
         }
   const byMethod = {};
   for (const [k, a] of Object.entries(agg)) {
@@ -308,6 +316,21 @@ export function postTable(games) {
     const base = m.wins / m.starts || 0.1;
     table[k] = { starts: a.starts, wins: a.wins, index: r3((a.wins + base * SHRINK_POST) / (a.starts + base * SHRINK_POST)) };
   }
+  const byMethodTrack = {};
+  for (const [kt, a] of Object.entries(aggTrack)) {
+    const [track, method] = kt.split("|");
+    const tmk = `${track}|${method}`;
+    (byMethodTrack[tmk] ??= { starts: 0, wins: 0 }).starts += a.starts;
+    byMethodTrack[tmk].wins += a.wins;
+  }
+  const byTrack = {};
+  for (const [kt, a] of Object.entries(aggTrack)) {
+    const [track, method] = kt.split("|");
+    const tm = byMethodTrack[`${track}|${method}`];
+    const base = tm ? tm.wins / tm.starts || 0.1 : 0.1;
+    byTrack[kt] = { starts: a.starts, wins: a.wins, index: r3((a.wins + base * SHRINK_POST) / (a.starts + base * SHRINK_POST)) };
+  }
+  table.byTrack = byTrack;
   return table;
 }
 

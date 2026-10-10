@@ -144,7 +144,8 @@ export function shoeChange(cur, prev) {
  */
 export function rawFeatures(race, h, ctx = {}) {
   const date = String(race.startTime || "").slice(0, 10);
-  const rec = runs(h.records || []);
+  // Filtrera ut kvalificeringslopp (race.type = "qualifier") – hästar springer dem utan att tävla på allvar.
+  const rec = runs(h.records || []).filter((r) => r.raceType !== "qualifier");
   const last = rec[0];
   const last5 = rec.slice(0, 5);
   const ok = rec.filter((r) => !r.galloped && r.km != null);
@@ -189,6 +190,15 @@ export function rawFeatures(race, h, ctx = {}) {
   // basmodellen 2023–2026: z +1,72, +0,32 logloss-vinst/1000 lopp, positiv vinst och vikt alla fyra år, täckning 45 %.
   // Når inte |z| 2,5 men förbättrar kontrollen varje år – infört enligt regeln att allt som slår kontrollen ska in.
   const sedanByte = ctx.trainerHist && h.horseId != null ? ctx.trainerHist(h.horseId, h.trainerId, date) : null;
+  // Klassdifferens: dagens lopp jämfört med hästens normala klass. Negativt = hästen springer upp i klass, positivt = ned.
+  const klassDiff = race.firstPrize > 0 && prize.length >= 2 ? Math.log(race.firstPrize) - mean(prize) : null;
+  // Spårunderlag: 1 = tungt/långsamt (good/dead/heavy/winter), 0 = normalt (light).
+  const konditionTung = race.condition != null ? (race.condition === "light" ? 0 : 1) : null;
+  // Hur ofta hästen har kört på samma underlag (täckning av konditionsmatch i senaste 5 starten).
+  const sameKond = rec.slice(0, 5).filter((r) => r.trackCondition != null);
+  const konditionMatch = sameKond.length >= 2 ? sameKond.filter((r) => r.trackCondition === race.condition).length / sameKond.length : null;
+  // Borta: hästen springer på annan bana än sin hembana (kan vara sämre, kan vara selektivt bättre).
+  const borta = h.horseHome != null && race.track != null ? (h.horseHome !== race.track ? 1 : 0) : null;
   return {
     form,
     fart: speed != null ? -speed : null,
@@ -196,6 +206,11 @@ export function rawFeatures(race, h, ctx = {}) {
     tranare: shrunk(h.trainerYear),
     klass: h.earningsPerStart != null ? Math.log(1 + h.earningsPerStart) : null,
     spar: ctx.posts?.[`${race.startMethod}|${h.post}`]?.index ?? null,
+    sparBana: ctx.posts?.byTrack?.[`${race.track}|${race.startMethod}|${h.post}`]?.index ?? null,
+    klassDiff,
+    konditionTung,
+    konditionMatch,
+    borta,
     galopp: (g10.filter((r) => r.galloped).length + 0.5) / (g10.length + 5),
     tillagg: handicap,
     vila: days != null ? Math.log(1 + days) : null,
@@ -235,7 +250,7 @@ export function rawFeatures(race, h, ctx = {}) {
   };
 }
 
-export const FEATURE_KEYS = [...Object.keys(rawFeatures({ startTime: "2026-01-01", distance: 2140 }, { records: [] })), "mktKvadrat", "ibScore"];
+export const FEATURE_KEYS = [...Object.keys(rawFeatures({ startTime: "2026-01-01", distance: 2140 }, { records: [] })), "mktKvadrat", "ibScore", "kuskEdge"];
 
 /**
  * Ett lopp som inlärningsrad: { id, date, n, winner (index), lq, lqOdds, lqStreck, X: { key: [z per häst] } }.
@@ -261,6 +276,10 @@ export function raceRow(race, ctx = {}) {
   const ibZV = {};
   for (const k of ibKeys) ibZV[k] = ibZStd(ibFacsAll.map((f) => f[k]));
   X.ibScore = zScores(live.map((_, i) => ibKeys.reduce((sum, k) => sum + IB_WEIGHTS[k] * ibZV[k][i], 0)));
+  // kuskEdge: hästens kuskvalitet minus den BÄSTA kusken i loppet (0 = har bästa kusken, negativt = sämre).
+  const kuskVals = raw.map((r) => r.kusk);
+  const maxKusk = Math.max(...kuskVals.filter((v) => v != null));
+  X.kuskEdge = zScores(kuskVals.map((v) => (v == null ? null : v - maxKusk)));
   return {
     id: race.id,
     date: String(race.startTime || "").slice(0, 10),

@@ -184,5 +184,11 @@ body.view-hastar main { display: none !important; }
 .hs-part.is-lo { background: var(--color-danger-bg); }
 .hs-part.is-lo b { color: var(--color-danger); }
 
+/* Streckdrift */
+.hs-drift { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.hs-drift.is-drift-up { color: var(--color-success); font-weight: var(--font-weight-bold); }
+.hs-drift.is-drift-dn { color: var(--color-danger); }
+.hs-drift.is-drift-flat { color: var(--color-text-muted); }
+
 /* Uppföljning */
 .hs-follow td.is-plus { color: var(--color-success); font-weight: var(--font-weight-bold); }

@@ -21,6 +21,7 @@ import { attachFieldInfo } from "./lib/hast-lopp.mjs";
 import { trainerIndex, trainerTimeline } from "./lib/trav-features.mjs";
 import { fetchRace } from "./hastar-lopp.mjs";
 import { addInterbetScores } from "./lib/interbet-model.mjs";
+import { addStreckDrift } from "./lib/streck-drift.mjs";
 
 /** Tipslogg (data/tipslogg/hastar): loppen före start sparas, facit ur analysens resultat. */
 async function tipslogg(a) {
@@ -158,7 +159,19 @@ export async function analyzeRaw(raw) {
   const ddGame = raw.dd ? normalizeGame(raw.dd.game, raw.dd.details) : null;
   if (raw.lopp?.length) attachFieldInfo([game, ddGame].filter(Boolean), new Map(), { byId: new Map(raw.lopp.map((r) => [r.id, r])) });
   const trainerHist = loadTrainerHist([game, ddGame].filter(Boolean));
-  const analysis = addInterbetScores(game, { ...analyzeGame(game, ddGame, trainerHist ? { trainerHist } : {}), fetchedAt: raw.fetchedAt, analyzedAt: new Date().toISOString() });
+  const analysis = addStreckDrift(raw.snapshots, addInterbetScores(game, { ...analyzeGame(game, ddGame, trainerHist ? { trainerHist } : {}), fetchedAt: raw.fetchedAt, analyzedAt: new Date().toISOString() }));
+  // Fallback: fyll poolTrend direkt från senaste speldata när snapshot-serien är för gammal (ej index 3).
+  const gameType = raw.main.game?.type || String(raw.id).split("_")[0];
+  for (const aRace of analysis.races) {
+    const gRace = raw.main.game?.races?.find((r) => r.id === aRace.id);
+    if (!gRace) continue;
+    for (const h of aRace.horses) {
+      if (h.poolTrend != null || h.scratched) continue;
+      const st = gRace.starts?.find((s) => s.number === h.nr);
+      const tr = st?.pools?.[gameType]?.trend;
+      if (tr != null) h.poolTrend = Math.round(tr * 10000) / 10000;
+    }
+  }
   const results = resultsOf(raw.main.game);
   if (raw.dd) Object.assign(results, resultsOf(raw.dd.game));
   if (Object.keys(results).length) analysis.results = results;

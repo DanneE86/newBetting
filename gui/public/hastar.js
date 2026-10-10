@@ -168,6 +168,44 @@ function verdict(h) {
   return `<span class="hs-verdict ${ok ? "is-value" : "is-none"}" title="Chans delat med streck: ${dec(h.value)}">${ok ? "Värde" : "Ej värde"}${why}</span>`;
 }
 
+/** Hästar med kraftigt stigande streck – "sena pengar" indikerar att informerade spelare sett något. */
+function poolTrendCard(a) {
+  const hasTrend = a.races.some((r) => r.horses.some((h) => h.poolTrend != null));
+  if (!hasTrend) return "";
+  const cands = a.races
+    .flatMap((r) => r.horses.filter((h) => !h.scratched && h.poolTrend != null && Math.abs(h.poolTrend) >= 0.01).map((h) => ({ ...h, leg: r.leg })))
+    .sort((x, y) => Math.abs(y.poolTrend) - Math.abs(x.poolTrend))
+    .slice(0, 8);
+  return `<article class="hs-card hs-card-list hs-card-wide"><h4>Pool-trend <small>ATG:s live-flöde i V-spelet – vart går pengarna just nu?</small></h4>${
+    cands.length
+      ? `<ul>${cands.map((h) => {
+          const t = h.poolTrend;
+          const dir = t >= 0.02 ? "↑↑ in" : t >= 0.005 ? "↑ in" : t <= -0.02 ? "↓↓ ut" : "↓ ut";
+          const cls = t >= 0 ? "is-drift-up" : "is-drift-dn";
+          return `<li><span class="hs-leg">Avd ${h.leg}</span> ${h.nr} ${esc(h.horse)} · <span class="hs-drift ${cls}"><b>${dir}</b> ${(Math.abs(t) * 100).toFixed(1)} %/enhet</span> · streck ${pct(h.marketPct)} · modell ${pct(h.p)}</li>`;
+        }).join("")}</ul>`
+      : "<p>Inga starka pool-rörelser just nu.</p>"
+  }</article>`;
+}
+
+function senaPengarCard(a) {
+  const hasDrift = a.races.some((r) => r.horses.some((h) => h.streckDrift != null));
+  if (!hasDrift) return "";
+  const cands = a.races
+    .flatMap((r) => r.horses.filter((h) => !h.scratched && h.streckDrift != null && h.streckDrift >= 1.4 && (h.streckLast ?? h.marketPct) <= 0.35).map((h) => ({ ...h, leg: r.leg })))
+    .sort((x, y) => y.streckDrift - x.streckDrift)
+    .slice(0, 6);
+  return `<article class="hs-card hs-card-list hs-card-wide"><h4>Sena pengar <small>streck stigit ≥ 40 % sedan förmiddag – kan indikera informerade spelare</small></h4>${
+    cands.length
+      ? `<ul>${cands.map((h) => {
+          const rel = h.streckDrift >= 2 ? "↑↑" : h.streckDrift >= 1.5 ? "↑↑" : "↑";
+          const pctChg = `+${Math.round((h.streckDrift - 1) * 100)} %`;
+          return `<li><span class="hs-leg">Avd ${h.leg}</span> ${h.nr} ${esc(h.horse)} · <b>${rel} ${pctChg}</b> (${pct(h.streckFirst)} → ${pct(h.streckLast ?? h.marketPct)}) · modell ${pct(h.p)} · ibP ${pct(h.ibP)}</li>`;
+        }).join("")}</ul>`
+      : "<p>Inga hästar med kraftigt stigande streck just nu.</p>"
+  }</article>`;
+}
+
 /** Hästar som Interbet-modellen sätter minst 50 % högre chans på än marknaden (ibP/streck ≥ 1,5) och streck ≤ 12 %. */
 function ibSkrallCard(a) {
   const hasIb = a.races.some((r) => r.horses.some((h) => h.ibP != null));
@@ -201,6 +239,8 @@ function highlights(a) {
         : "<p>Inga lågt streckade hästar har konkreta skäl som talar för dem.</p>"
     }</article>
     ${ibSkrallCard(a)}
+    ${senaPengarCard(a)}
+    ${poolTrendCard(a)}
   </section>`;
 }
 
@@ -383,6 +423,23 @@ function partsCell(h) {
     .join("")}</span>`;
 }
 
+function driftCell(h) {
+  if (h.streckDrift != null) {
+    const chg = Math.round((h.streckDrift - 1) * 100);
+    const arrow = h.streckDrift >= 2 ? "↑↑" : h.streckDrift >= 1.3 ? "↑" : h.streckDrift <= 0.5 ? "↓↓" : h.streckDrift <= 0.8 ? "↓" : "→";
+    const cls = h.streckDrift >= 1.3 ? "is-drift-up" : h.streckDrift <= 0.8 ? "is-drift-dn" : "is-drift-flat";
+    const title = `Förmiddag ${pct(h.streckFirst)} → nu ${pct(h.streckLast ?? h.marketPct)}`;
+    return `<span class="hs-drift ${cls}" title="${esc(title)}">${arrow} ${chg > 0 ? "+" : ""}${chg} %</span>`;
+  }
+  if (h.poolTrend != null) {
+    const t = h.poolTrend;
+    const arrow = t >= 0.02 ? "↑↑" : t >= 0.005 ? "↑" : t <= -0.02 ? "↓↓" : t <= -0.005 ? "↓" : "→";
+    const cls = t >= 0.005 ? "is-drift-up" : t <= -0.005 ? "is-drift-dn" : "is-drift-flat";
+    return `<span class="hs-drift ${cls}" title="ATG pooltrend (live): ${t > 0 ? "+" : ""}${(t * 100).toFixed(1)} %/min">${arrow}</span>`;
+  }
+  return "—";
+}
+
 function race(r, a) {
   const live = r.horses.filter((h) => !h.scratched);
   const fav = r.favorite;
@@ -395,7 +452,7 @@ function race(r, a) {
     </header>
     <div class="hs-table-wrap"><table class="hs-table">
       <thead><tr><th scope="col">Rank</th><th scope="col">Nr</th><th scope="col">Häst / kusk</th><th scope="col">Chans mot ${srcLabel.toLowerCase()}</th><th scope="col">Chans</th><th scope="col">${srcLabel}</th><th scope="col">Spelvärde</th>
-        <th scope="col" title="0–100, 100 = bäst. Vinstchansen på fast skala, samma i alla lopp">Poäng</th><th scope="col" title="0–100 jämfört med loppet, 50 = snitt">Delpoäng</th><th scope="col">Trolig position</th><th scope="col">Kommentar</th></tr></thead>
+        <th scope="col" title="0–100, 100 = bäst. Vinstchansen på fast skala, samma i alla lopp">Poäng</th><th scope="col" title="0–100 jämfört med loppet, 50 = snitt">Delpoäng</th>${live.some((h) => h.streckDrift != null || h.poolTrend != null) ? `<th scope="col" title="Strecket nu / strecket förmiddag (↑↑ = fördubblat) eller ATG:s pool-rörelseriktning live">Drift / trend</th>` : ""}<th scope="col">Trolig position</th><th scope="col">Kommentar</th></tr></thead>
       <tbody>${r.horses
         .map((h) =>
           h.scratched
@@ -403,12 +460,13 @@ function race(r, a) {
             : `<tr>
           <td><span class="hs-rank rank-${h.rank}" title="${esc(RANK_TEXT[h.rank])}">${h.rank}</span></td>
           <td>${h.nr}<small class="hs-post">spår ${h.post}</small></td>
-          <td class="hs-name"><b>${esc(h.horse)}</b><small>${esc(h.driver || "")}${h.trainer ? ` · tr ${esc(h.trainer)}` : ""}</small></td>
+          <td class="hs-name"><b>${esc(h.horse)}</b><small>${esc(h.driver || "")}${h.trainer ? ` · tr ${esc(h.trainer)}` : ""}${h.horseHome && h.horseHome !== a.track ? ` · borta fr ${esc(h.horseHome)}` : ""}</small></td>
           <td>${bars(h)}</td>
           <td class="num"><b>${pct(h.p)}</b></td>
           <td class="num">${pct(h.marketPct)}</td>
           <td>${verdict(h)}</td>
           <td>${scoreCell(h)}</td><td>${partsCell(h)}</td>
+          ${live.some((x) => x.streckDrift != null || x.poolTrend != null) ? `<td>${driftCell(h)}</td>` : ""}
           <td>${esc(h.position || "—")}</td>
           <td class="hs-comment">${esc((h.comments || []).join(" · "))}${h.last5?.length ? `<small>Senaste: ${h.last5.map((x) => (x.galloped ? "g" : x.place ?? "–")).join(" ")}</small>` : ""}</td>
         </tr>`,
