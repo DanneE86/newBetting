@@ -50,8 +50,14 @@ function readSeason(year) {
 //   kusk       (Kusk,      w= 6)  Kuskens segerandel i år
 //   ll         (LL,        w=20)  Personbästa km-tid (livstaksklass), negerad
 //   forbattring(Förbättring,w=8)  Tidstrend: äldre snittid − nyare snittid (pos = förbättring)
+//
+// Formel: p ∝ q^0.85 × exp(Σ w_k·z_k), precis som er modell men med Interbets faktorer.
+// q = marknadens streck-sannolikhet. Vikter skalade till samma totalpåverkan som er modell (0.15).
+// Jämförelsen mäter alltså: "är Interbets 9 faktorer bättre justeringar av marknaden än er modells 8?"
 
 const IB_W = { nyTid: 60, plats: 30, ntft: 30, vinst: 60, total: 60, alltime: 20, kusk: 6, ll: 20, forbattring: 8 };
+const IB_W_TOTAL = Object.values(IB_W).reduce((a,b) => a+b, 0);
+const IB_SCALE = 0.15 / IB_W_TOTAL; // samma totalpåverkan som er modells 0.15
 const IB_N = 10;
 const PLACE_PTS = { 1: 1.0, 2: 0.7, 3: 0.5, 4: 0.3, 5: 0.2 };
 
@@ -97,24 +103,27 @@ function zStd(vals) {
   return vals.map(v => v != null ? (v-mu)/sd : 0);
 }
 
-function softmax(scores) {
-  const m = Math.max(...scores);
-  const e = scores.map(s => Math.exp(s - m));
-  const s = e.reduce((a,b) => a+b, 0);
-  return e.map(v => v/s);
-}
-
 function interbetLegs(game) {
   return game.races.map(r => {
     const live = r.starts.filter(s => !s.scratched);
     const streckSum = r.starts.reduce((a,s) => a+(s.streck||0), 0);
+    // Marknadssannolikhet q (samma som trav-model)
+    const q = live.map(s => streckSum > 0 ? (s.streck||0.002)/streckSum : 1/Math.max(1, live.length));
+
+    // z-standardisera varje Interbet-faktor
     const facs = live.map(s => ibFactors(s));
     const keys = Object.keys(IB_W);
     const zV = {};
     for (const k of keys) zV[k] = zStd(facs.map(f => f[k]));
-    const scores = live.map((_,i) => keys.reduce((sum,k) => sum + IB_W[k] * zV[k][i], 0));
-    const probs  = softmax(scores);
-    const ibP    = new Map(live.map((s,i) => [s.nr, probs[i]]));
+
+    // p ∝ q^0.85 × exp(Σ w_k · z_k) — samma formel som er modell
+    const raw = live.map((s, i) =>
+      Math.pow(Math.max(q[i], 1e-6), 0.85) *
+      Math.exp(keys.reduce((sum, k) => sum + IB_W[k] * IB_SCALE * zV[k][i], 0))
+    );
+    const rawSum = raw.reduce((a,b) => a+b, 0);
+    const ibP = new Map(live.map((s,i) => [s.nr, raw[i] / rawSum]));
+
     return {
       leg: r.leg,
       number: r.number,
@@ -125,6 +134,23 @@ function interbetLegs(game) {
         marketPct: streckSum > 0 ? (s.streck||0)/streckSum : 1/Math.max(1, live.length),
       })),
     };
+  });
+}
+
+// ── Blandning av modell och Interbet ─────────────────────────────────────────
+
+function blendLegs(modelLegs, ibLegs, w) {
+  if (w === 0) return modelLegs;
+  if (w >= 1) return ibLegs;
+  const ibMap = new Map(ibLegs.map(l => [l.leg, new Map(l.horses.map(h => [h.nr, h.p]))]));
+  return modelLegs.map(mLeg => {
+    const ib = ibMap.get(mLeg.leg);
+    const raw = mLeg.horses.map(h => ({
+      ...h,
+      _b: h.scratched ? 0 : Math.pow(Math.max(h.p, 1e-6), 1 - w) * Math.pow(Math.max(ib?.get(h.nr) ?? h.p, 1e-6), w),
+    }));
+    const s = raw.reduce((a, h) => a + h._b, 0) || 1;
+    return { ...mLeg, horses: raw.map(h => ({ ...h, p: h.scratched ? h.p : h._b / s })) };
   });
 }
 
@@ -209,14 +235,48 @@ for (const t of types) {
   }
 }
 
+// ── Blandningssweep 0–100 % ──────────────────────────────────────────────────
+
+console.log("\n── BLANDNING (Er modell^(1-w) × Interbet^w), alpha=defaultAlpha ────────────");
+console.log(`${"Vikt".padEnd(8)} | ${"Insats".padStart(10)} | ${"Vinst".padStart(10)} | ${"Netto".padStart(11)} | ${"ROI".padStart(7)} | ${"Träff".padStart(9)} | ${"Alla rätt".padStart(9)} | Största`);
+
+const BLEND_WEIGHTS = [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0];
+const blendTotals = {};
+
+for (const w of BLEND_WEIGHTS) {
+  const blendResults = [];
+  for (const game of allGames) {
+    try {
+      const price    = rowPrice(game.type, game.date);
+      const topShare = TOP_SHARE[game.type] ?? 0.25;
+      const winners  = legWinners(game);
+      const al       = defaultAlpha(game.type);
+      const a    = analyzeGame(game, null, {});
+      const legs = a.races.map(r => ({ leg: r.leg, number: r.number, horses: r.horses }));
+      const ibL  = interbetLegs(game);
+      const bL   = blendLegs(legs, ibL, w);
+      const s    = buildSystem(bL, { budget: BUDGET, price, alpha: al, minTop: MIN_TOP, topShare });
+      const res  = settle(rowsByCorrect(s.legs.map(l => l.horses), winners), game.payouts, price);
+      blendResults.push({ id: game.id, legs: winners.length, ...res });
+    } catch {}
+  }
+  const s = summarize(blendResults);
+  blendTotals[w] = s;
+  const label = `w=${Math.round(w*100)} %`;
+  console.log(
+    `${label.padEnd(8)} | ${kr(s.cost).padStart(10)} | ${kr(s.win).padStart(10)} | ${kr(s.net).padStart(11)} | ${pct(s.roi)} | ${String(s.hitGames).padStart(4)}/${s.games} | ${String(s.allRight).padStart(9)} | ${s.biggest ? kr(s.biggest.win) : "—"}`
+  );
+}
+
 // ── Spara ────────────────────────────────────────────────────────────────────
 
 const out = {
   updatedAt: new Date().toISOString(),
   year: Number(YEAR), budget: BUDGET,
   types: [...TYPES],
-  note: "Slutstreck och slutodds – gynnar båda modellerna lika. Interbet alpha=0, er modell alpha=defaultAlpha.",
+  note: "Slutstreck och slutodds – gynnar båda modellerna lika. Interbet alpha=0, er modell alpha=defaultAlpha. Blandning: geometriskt medel normaliserat per lopp.",
   totals: Object.fromEntries(models.map(([k]) => [k, totals[k]])),
+  blendSweep: Object.fromEntries(BLEND_WEIGHTS.map(w => [String(Math.round(w*100)), blendTotals[w]])),
   byType: Object.fromEntries(types.map(t => {
     const pg = perGame.filter(g => g.type === t);
     return [t, Object.fromEntries(models.map(([k]) => [k, summarize(pg.map(g => ({ id: g.id, legs: g.legs, ...g[k] })))]))];
