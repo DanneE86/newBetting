@@ -24,3 +24,10 @@ data/hastar/historik/
 data/hastar/auto.lock
 data/hastar/auto-konsol.txt
 data/hastar/travsport/
+
+# Interbet (ur app-debug.apk): logik och data används bara lokalt, aldrig i git eller på webbsidan
+*.apk
+scripts/lib/interbet-model.mjs
+scripts/hastar-compare.mjs
+data/hastar/interbet/
+data/hastar/compare-interbet-*.json

@@ -7,6 +7,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { spawn } from "node:child_process";
+import { splitPrivate, mergePrivate } from "../scripts/lib/hast-privat.mjs";
 
 let job = null;
 
@@ -35,11 +36,13 @@ const safeId = (id) => (id && /^[A-Za-z0-9]+_\d{4}-\d{2}-\d{2}_\d+_\d+$/.test(id
 const safeDate = (d) => (d && /^\d{4}-\d{2}-\d{2}$/.test(d) ? d : null);
 
 /** Sparad analys + lista över sparade omgångar + backtest. */
-export function hastarState(root, id) {
+export function hastarState(root, id, { publik = false } = {}) {
   const dir = path.join(root, "data", "hastar");
   const index = read(path.join(dir, "index.json")) || { latest: null, analyses: [] };
   const want = safeId(id) || index.latest;
-  const analysis = want ? read(path.join(dir, "analys", `${want}.json`)) : null;
+  const saved = want ? read(path.join(dir, "analys", `${want}.json`)) : null;
+  // Interbet-fälten är lokala (gitignorerade) och följer aldrig med till webbsidan
+  const analysis = publik ? saved && splitPrivate(saved).analysis : mergePrivate(saved, want ? read(path.join(dir, "interbet", `${want}.json`)) : null);
   const raw = want ? path.join(dir, "raw", `${want}.json`) : null;
   return { analysis, index, backtest: read(path.join(dir, "backtest.json")), uppfoljning: read(path.join(dir, "uppfoljning.json")), hasRaw: !!(raw && fs.existsSync(raw)) };
 }
@@ -51,7 +54,7 @@ export function handleHastar(req, res, url, root) {
 
   if (req.method === "GET" && url.pathname === "/api/hastar") {
     try {
-      send(res, 200, hastarState(root, id));
+      send(res, 200, hastarState(root, id, { publik: url.searchParams.get("publik") === "1" }));
     } catch (e) {
       send(res, 500, { error: String(e.message || e) });
     }

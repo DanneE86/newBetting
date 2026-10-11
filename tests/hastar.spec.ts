@@ -449,6 +449,15 @@ test.describe('GUI: fliken Hästar', () => {
     expect(errors).toEqual([]);
   });
 
+  test('webbygget (?publik=1) får aldrig Interbet-fält, lokalt läggs de tillbaka ur data/hastar/interbet', async ({ request }) => {
+    const publik = await (await request.get(base + '/api/hastar?publik=1')).json();
+    test.skip(!publik.analysis, 'Ingen sparad analys');
+    const ibFalt = (a: any) => a.races.flatMap((r: any) => r.horses).filter((h: any) => 'ibP' in h || 'ibScore' in h).length;
+    expect(ibFalt(publik.analysis)).toBe(0);
+    const priv = path.join(ROOT, 'data', 'hastar', 'interbet', `${publik.analysis.id}.json`);
+    if (fs.existsSync(priv)) expect(ibFalt((await (await request.get(base + '/api/hastar')).json()).analysis)).toBeGreaterThan(0);
+  });
+
   test('sparad analys: lopptabeller, värdebedömning, starttid och systembyggare inom budget', async ({ page }) => {
     const state = await (await page.request.get(base + '/api/hastar')).json();
     test.skip(!state.analysis || state.analysis.type === 'dd', 'Ingen sparad V-spelsanalys i data/hastar');
@@ -493,6 +502,11 @@ test.describe('GUI: fliken Hästar', () => {
     await expect(page.locator('.hs-focus-text')).toContainText('Hög:');
     const valuePicks = await page.locator('.hs-sys-legs .hs-pick.is-value').count();
     expect(valuePicks).toBe(await page.locator('.hs-sys-legs .hs-pick-value').count());
+    // spikar visar hur streckade de är, garderingar gör det inte
+    const spikLegs = page.locator('.hs-sys-leg:has(.hs-spik)');
+    await expect(spikLegs.locator('.hs-pick-streck')).toHaveCount(await spikLegs.count());
+    for (const t of await spikLegs.locator('.hs-pick-streck').allTextContents()) expect(t).toMatch(/^\d+ % streckad$/);
+    await expect(page.locator('.hs-sys-leg:not(:has(.hs-spik)) .hs-pick-streck')).toHaveCount(0);
     // ATG: länken går till omgången, kupongmallen har en rad per avdelning
     await expect(page.locator('.hs-atg-actions a')).toHaveAttribute('href', 'https://www.atg.se/spel/' + state.analysis.id);
     const coupon = ((await page.locator('.hs-coupon').textContent()) || '').trim().split('\n');
@@ -690,10 +704,11 @@ test.describe('loppets förstapris', () => {
     const { streckSnapshot } = await model();
     const g: any = { id: 'V85_2026-10-03_5_1', type: 'V85', pools: { V85: { turnover: 500000000 } }, races: [race(1, [start(1, { streck: 4520, odds: 250 }), start(2, { streck: 300 }), start(3, { scratched: true, streck: 0 })])] };
     g.races[0].starts[0].pools.plats = { minOdds: 120, maxOdds: 140 };
+    g.races[0].starts[0].pools.V85.trend = 0.0125;
     const snap = streckSnapshot(g, '2026-10-03T08:00:00Z');
     expect(snap.at).toBe('2026-10-03T08:00:00Z');
     expect(snap.turnover).toBe(5000000);
-    expect(snap.races['2026-10-03_5_1']).toEqual({ 1: [0.452, 2.5, 1.2], 2: [0.03, null, null] });
+    expect(snap.races['2026-10-03_5_1']).toEqual({ 1: [0.452, 2.5, 1.2, 0.0125], 2: [0.03, null, null, null] });
   });
 
 });
@@ -1129,5 +1144,28 @@ test.describe('uppföljning: hämtningstider och frysta system', () => {
     expect(sum.standard[200].games).toBe(2);
     expect(sum.standard[200].cost).toBeCloseTo(2 * std.result.cost, 2);
     expect(Object.keys(summarizeFollow([fr]).standard)).toEqual([]); // orättade räknas inte
+  });
+});
+
+test.describe('Interbet stannar lokalt (logiken kommer ur en app)', () => {
+  const privat = () => import(pathToFileURL(path.join(ROOT, 'scripts', 'lib', 'hast-privat.mjs')).href);
+
+  test('splitPrivate tar bort ibP/ibScore, mergePrivate lägger tillbaka dem', async () => {
+    const { splitPrivate, mergePrivate } = await privat();
+    const a = { id: 'x', races: [{ leg: 1, horses: [{ nr: 1, p: 0.4, ibP: 0.3, ibScore: 12.5 }, { nr: 2, p: 0.6 }] }] };
+    const { analysis, priv } = splitPrivate(a);
+    expect(JSON.stringify(analysis)).not.toMatch(/ib(P|Score)/);
+    expect(priv).toEqual({ 1: { 1: { ibP: 0.3, ibScore: 12.5 } } });
+    expect(mergePrivate(analysis, priv)).toEqual(a);
+    expect(splitPrivate({ races: [{ leg: 1, horses: [{ nr: 1, p: 1 }] }] }).priv).toBeNull();
+    expect(a.races[0].horses[0].ibP).toBe(0.3); // originalet orört
+  });
+
+  test('git innehåller ingen apk, Interbet-logik eller Interbet-data', async () => {
+    const { execFileSync } = await import('child_process');
+    const files = execFileSync('git', ['ls-files'], { cwd: ROOT, encoding: 'utf8' }).split('\n');
+    expect(files.filter((f) => /\.apk$|interbet-model|hastar-compare|compare-interbet|data\/hastar\/interbet\//i.test(f))).toEqual([]);
+    const analyser = files.filter((f) => /^data\/hastar\/(analys\/.*|index|backtest|uppfoljning)\.?json$|^data\/hastar\/analys\//.test(f));
+    for (const f of analyser) expect(fs.readFileSync(path.join(ROOT, f), 'utf8'), f).not.toMatch(/"ibP"/);
   });
 });

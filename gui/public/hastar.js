@@ -389,7 +389,8 @@ function systemTable(legs, byLeg) {
       return `<div class="hs-sys-leg"><span class="hs-leg">Avd ${l.leg}</span>${hs.length === 1 ? `<span class="hs-spik">Spik</span>` : ""}
         ${hs.map((h) => {
           const v = isValueHorse(h);
-          return `<span class="hs-pick rank-${h.rank}${v ? " is-value" : ""}" title="${esc(`${h.horse} · rank ${h.rank} · chans ${pct(h.p)} · streck ${pct(h.marketPct)}${v ? " · värde" : ""}`)}">${h.nr} ${esc(h.horse)}${v ? `<span class="hs-pick-value">värde</span>` : ""}</span>`;
+          const streck = hs.length === 1 && h.marketPct != null ? `<span class="hs-pick-streck">${pct(h.marketPct)} streckad</span>` : "";
+          return `<span class="hs-pick rank-${h.rank}${v ? " is-value" : ""}" title="${esc(`${h.horse} · rank ${h.rank} · chans ${pct(h.p)} · streck ${pct(h.marketPct)}${v ? " · värde" : ""}`)}">${h.nr} ${esc(h.horse)}${streck}${v ? `<span class="hs-pick-value">värde</span>` : ""}</span>`;
         }).join("")}</div>`;
     })
     .join("")}</div>

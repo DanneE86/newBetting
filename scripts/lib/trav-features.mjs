@@ -10,7 +10,8 @@
 // fitLogit(races, keys) skattar vikterna så att P(häst vinner) = exp(Σ β·x) / Σ_fältet exp(Σ β·x) passar
 // vinnarna bäst (maximal likelihood, L2-regularisering). Utvärdering: logloss och träffprocent (modellens etta vinner).
 
-import { ibFactors, IB_WEIGHTS, ibZStd } from "./interbet-model.mjs";
+// Interbet-modellen kommer ur en app och är gitignorerad: finns den inte (molnet) blir ibScore 0 för alla
+const ib = await import("./interbet-model.mjs").catch(() => null);
 
 const clamp = (x, a, b) => Math.max(a, Math.min(b, x));
 const mean = (xs) => (xs.length ? xs.reduce((a, b) => a + b, 0) / xs.length : null);
@@ -271,11 +272,13 @@ export function raceRow(race, ctx = {}) {
   // Favorit/långskott-snedvridning
   X.mktKvadrat = zScores(lq.map((x) => x * x));
   // Interbets 9-faktorspoäng (z-standardiserat inom loppet, precis som övriga faktorer)
-  const ibFacsAll = live.map((h) => ibFactors(h));
-  const ibKeys = Object.keys(IB_WEIGHTS);
-  const ibZV = {};
-  for (const k of ibKeys) ibZV[k] = ibZStd(ibFacsAll.map((f) => f[k]));
-  X.ibScore = zScores(live.map((_, i) => ibKeys.reduce((sum, k) => sum + IB_WEIGHTS[k] * ibZV[k][i], 0)));
+  if (ib) {
+    const ibFacsAll = live.map((h) => ib.ibFactors(h));
+    const ibKeys = Object.keys(ib.IB_WEIGHTS);
+    const ibZV = {};
+    for (const k of ibKeys) ibZV[k] = ib.ibZStd(ibFacsAll.map((f) => f[k]));
+    X.ibScore = zScores(live.map((_, i) => ibKeys.reduce((sum, k) => sum + ib.IB_WEIGHTS[k] * ibZV[k][i], 0)));
+  } else X.ibScore = zScores(live.map(() => null));
   // kuskEdge: hästens kuskvalitet minus den BÄSTA kusken i loppet (0 = har bästa kusken, negativt = sämre).
   const kuskVals = raw.map((r) => r.kusk);
   const maxKusk = Math.max(...kuskVals.filter((v) => v != null));
