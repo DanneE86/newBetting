@@ -20,7 +20,11 @@ import { atgSchemas } from "./lib/api-schemas.mjs";
 import { attachFieldInfo } from "./lib/hast-lopp.mjs";
 import { trainerIndex, trainerTimeline } from "./lib/trav-features.mjs";
 import { fetchRace } from "./hastar-lopp.mjs";
-import { addInterbetScores } from "./lib/interbet-model.mjs";
+import { splitPrivate } from "./lib/hast-privat.mjs";
+
+// Gitignorerad (kommer ur en app): finns den inte blir det ingen Interbet-poäng
+const ib = await import("./lib/interbet-model.mjs").catch(() => null);
+const addInterbetScores = ib ? ib.addInterbetScores : (_game, analysis) => analysis;
 import { addStreckDrift } from "./lib/streck-drift.mjs";
 
 /** Tipslogg (data/tipslogg/hastar): loppen före start sparas, facit ur analysens resultat. */
@@ -175,7 +179,9 @@ export async function analyzeRaw(raw) {
   const results = resultsOf(raw.main.game);
   if (raw.dd) Object.assign(results, resultsOf(raw.dd.game));
   if (Object.keys(results).length) analysis.results = results;
-  writeJson(path.join(DIR, "analys", `${raw.id}.json`), analysis);
+  const { analysis: publik, priv } = splitPrivate(analysis);
+  writeJson(path.join(DIR, "analys", `${raw.id}.json`), publik);
+  if (priv) writeJson(path.join(DIR, "interbet", `${raw.id}.json`), priv);
   updateIndex(analysis);
   await tipslogg(analysis);
   log(`Analys sparad: data/hastar/analys/${raw.id}.json (${analysis.races.length} lopp)`);

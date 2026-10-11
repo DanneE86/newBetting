@@ -46,7 +46,8 @@ try {
   }
 
   fs.rmSync(out, { recursive: true, force: true });
-  fs.cpSync(path.join(root, "gui", "public"), out, { recursive: true });
+  // package.json i gui/public talar bara om för Node att filerna är ES-moduler; den ska inte ut på sidan
+  fs.cpSync(path.join(root, "gui", "public"), out, { recursive: true, filter: (src) => path.basename(src) !== "package.json" });
   fs.copyFileSync(path.join(root, "gui", "static-mode.js"), path.join(out, "static-mode.js"));
   const indexPath = path.join(out, "index.html");
   const html = fs.readFileSync(indexPath, "utf8");
@@ -67,7 +68,7 @@ try {
   }
   // Hästar: senast sparade analys + backtest (hämtas aldrig i bygget)
   try {
-    write("api/hastar.json", await get("/api/hastar"));
+    write("api/hastar.json", await get("/api/hastar?publik=1"));
   } catch (e) {
     log("hästar hoppades över:", e.message);
   }
