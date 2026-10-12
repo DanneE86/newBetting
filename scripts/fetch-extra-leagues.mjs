@@ -8,7 +8,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { TEAM_ALIASES } from './weather/teams.mjs';
+import { TEAM_ALIASES } from './lib/team-aliases.mjs';
 import { uniqueBest } from './lib/team-match.mjs';
 import { teamId } from './lib/team-ids.mjs';
 import { POSTPONE_LOOKBACK_DAYS, mergePostponed, postponedState, withinLookback } from './lib/postponed.mjs';

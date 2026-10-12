@@ -77,6 +77,31 @@ test('heltäckande färgytor använder *-solid (vit text håller kontrast i båd
   }
 });
 
+test('Tips och Startelva: knappar och tabeller använder komponentbiblioteket (ds-*)', () => {
+  // Undantag som inte ser ut som knappar/tabeller: lagnamn och spelarnamn som länkar, marknadsrader,
+  // spelartröjor på planen (${cls}), duellraderna och duelltabellens layout
+  const PLAIN_BUTTONS = new Set(['team-link', 'acc', 'mx-name', 'rf-ref', 'se-duel', '${cls}']);
+  const LAYOUT_TABLES = new Set(['mx-table-duels']);
+  const bad: string[] = [];
+  for (const f of ['app.js', 'startelva.js']) {
+    const src = read(f);
+    for (const m of src.matchAll(/<button\b[^>]*?class="([^"]*)"/g)) {
+      const first = m[1].split(/\s+/)[0].replace(/\$\{.*$/, '') || m[1];
+      if (!m[1].includes('ds-') && !PLAIN_BUTTONS.has(first) && !PLAIN_BUTTONS.has(m[1])) bad.push(`${f}: <button class="${m[1]}">`);
+    }
+    for (const m of src.matchAll(/<table\b([^>]*)>/g)) {
+      const cls = m[1].match(/class="([^"]*)"/)?.[1] ?? '';
+      if (!cls.includes('ds-table') && !LAYOUT_TABLES.has(cls)) bad.push(`${f}: <table${m[1]}>`);
+    }
+  }
+  expect(bad, 'använd ds-btn / ds-toggle / ds-table i stället för egna stilar').toEqual([]);
+  // Gamla kopior av komponenterna får inte komma tillbaka i CSS:en
+  const css = read('styles.css') + read('startelva.css');
+  for (const sel of [':where(.btn-ghost)', '.btn-analyze,', '.btn-startelva {', '.rf-chip {', '.se-mode {', '.se-alt {', '.rf-table {', '.kp-table {']) {
+    expect(css.split(/\r?\n/).some((l) => l.startsWith(sel)), `CSS kopierar en ds-komponent: ${sel}`).toBe(false);
+  }
+});
+
 test('theme.js laddas i <head> före sidans skript och temaväljaren har tre lägen', () => {
   const html = read('index.html');
   const head = html.split('</head>')[0];

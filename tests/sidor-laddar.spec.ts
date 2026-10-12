@@ -10,6 +10,11 @@ const root = path.resolve(__dirname, '..');
 const pub = path.join(root, 'gui', 'public');
 const port = 4200 + Math.floor(Math.random() * 80);
 const base = `http://127.0.0.1:${port}`;
+
+// Sidan startar i läget Skrällar: testerna här gäller läget Alla (om testet inte själv valt annat)
+test.beforeEach(async ({ page }) => {
+  await page.addInitScript(() => { if (localStorage.getItem('betting.upsetOnly') == null) localStorage.setItem('betting.upsetOnly', '0'); });
+});
 let server: ChildProcess;
 
 test.beforeAll(async () => {
@@ -90,14 +95,13 @@ for (const [vy, namn] of [['stryktipset', 'Stryktipset'], ['europatipset', 'Euro
 
 // Kupongerna räknas i en bakgrundstråd (stryk-worker.js, 2026-10-05): sidan visas direkt och går att använda medan
 // motorn räknar, och räkningen görs en gång (förut två gånger på huvudtråden, ~80 s med låst sida).
-test('Stryktipset: matcherna syns direkt medan kupongerna räknas i bakgrunden, sedan kupong A–F', async ({ page }) => {
+test('Stryktipset: matcherna syns direkt, kupongerna räknas i bakgrunden, sedan kupong A–C', async ({ page }) => {
   const workers: string[] = [];
   page.on('worker', (w: any) => workers.push(w.url()));
   const fel = await oppna(page, 'stryktipset');
   const view = page.locator('#stryktips-view');
   await expect(view.locator('.st-match')).toHaveCount(13, { timeout: 10_000 });
-  await expect(view.locator('.sb-result [role=status]')).toContainText('Räknar fram kupongerna', { timeout: 5_000 });
-  await expect(page.locator('#sb-generate')).toBeDisabled();
+  // Filkupongerna (2026-10-11) räknas på under en sekund – statusraden "Räknar fram kupongerna" hinner ofta försvinna
   // Huvudtråden är fri: ett anrop i sidan svarar direkt fast motorn räknar
   const t = Date.now();
   await page.evaluate(() => 1);
@@ -167,7 +171,7 @@ test('Stryktipset: krav på risklagets seger i B ger markeringen ⚠ risklag i B
   expect(fel, fel.join('\n')).toEqual([]);
 });
 
-test('Stryktipset: hänglås per match – låses bara vid 100 %, låst går inte att ändra, Generera kräver alla låsta', async ({ page }) => {
+test('Stryktipset: hänglås per match – låst går inte att ändra, Generera kräver alla låsta', async ({ page }) => {
   test.setTimeout(300_000);
   const fel = await oppna(page, 'stryktipset');
   const view = page.locator('#stryktips-view');
@@ -183,36 +187,13 @@ test('Stryktipset: hänglås per match – låses bara vid 100 %, låst går int
   await expect(rows.nth(0)).toHaveClass(/is-error/);
   await expect.poll(() => inViewport(rows.nth(0))).toBe(true);
 
-  // D/E/F % som inte blir 100: låset vägrar
+  // Allt låst: raden spärras
   const r3 = rows.nth(2);
-  if (!(await r3.locator('.sb-defall.is-on').count())) await r3.locator('[data-defall-toggle]').click();
-  const d = r3.locator('.sb-defall-edit[data-defall-sys="D"] input');
-  for (let i = 0; i < 3; i++) { await d.nth(i).fill('50'); await d.nth(i).dispatchEvent('change'); }
-  await r3.locator('.sb-seal').click();
-  await expect(r3.locator('.sb-row-err')).toContainText('Kan inte låsa');
-  await expect(r3.locator('.sb-seal')).not.toHaveClass(/\bon\b/);
-
-  // Alla utom match 3 låsta: Generera säger att match 3 stämmer inte och scrollar dit
   await lasAlla(page);
-  for (let i = 0; i < 13; i++) if (i !== 2) await expect(rows.nth(i).locator('.sb-seal')).toHaveClass(/\bon\b/);
-  await page.evaluate(() => scrollTo(0, 0));
-  await page.locator('#sb-generate').click();
-  await expect(view.locator('.sb-gen-err')).toContainText('Match 3 stämmer inte');
-  await expect.poll(() => inViewport(r3)).toBe(true);
-
-  // Rätta till 100 % och lås: allt i raden spärras
-  const vals = ['40', '30', '30'];
-  for (let i = 0; i < 3; i++) { await d.nth(i).fill(vals[i]); await d.nth(i).dispatchEvent('change'); }
-  for (const sys of ['E', 'F']) {
-    const inp = r3.locator(`.sb-defall-edit[data-defall-sys="${sys}"] input`);
-    for (let i = 0; i < 3; i++) { await inp.nth(i).fill(vals[i]); await inp.nth(i).dispatchEvent('change'); }
-  }
-  await r3.locator('.sb-seal').click();
   await expect(r3).toHaveClass(/is-sealed/);
   for (const s of ['1', 'X', '2']) await expect(r3.locator(`.sb-sign[data-sign="${s}"]`)).toBeDisabled();
-  await expect(r3.locator('.sb-defall input').first()).toBeDisabled();
-  await expect(r3.locator('[data-defall-toggle]')).toBeDisabled();
   await expect(view.locator('.sb-seal-count')).toContainText('13/13');
+  await expect(r3.locator('.sb-defall')).toHaveCount(0);
 
   // Låsa upp: går att ändra igen
   await r3.locator('.sb-seal').click();
@@ -258,4 +239,38 @@ test('Stryktipset: panelen Risklag denna säsong och etiketten risklag på flagg
   await view.locator('.st-matches > summary').click();
   await expect(view.locator('.st-match h3 .risk-tag')).toHaveCount(flaggade);
   expect(fel, fel.join('\n')).toEqual([]);
+});
+
+test('Tips: startar i läget Skrällar, Alla sparas som eget val', async ({ page }) => {
+  // Utan sparat val (beforeEach sätter Alla – ta bort det igen)
+  await page.addInitScript(() => { localStorage.removeItem('betting.upsetOnly'); localStorage.removeItem('betting.valueOnly'); });
+  const fel = await oppna(page, 'tips');
+  await expect(page.locator('#value-filter [data-vf="upset"]')).toHaveAttribute('aria-pressed', 'true', { timeout: 30_000 });
+  await expect(page.locator('#upset-help')).toBeVisible();
+  await page.locator('#value-filter [data-vf="all"]').click();
+  await expect(page.locator('#upset-help')).toBeHidden();
+  expect(await page.evaluate(() => localStorage.getItem('betting.upsetOnly'))).toBe('0');
+  expect(fel).toEqual([]);
+});
+
+test('Tips: dagens bästa och skrällar är hopfällbara rader, öppna från start', async ({ page }) => {
+  const fel = await oppna(page, 'tips');
+  await expect(page.locator('#tips .tip-group-head').first()).toBeAttached({ timeout: 30_000 });
+  const rows = page.locator('#tips details.fold-row');
+  test.skip((await rows.count()) === 0, 'inga bästa tips eller skrällar just nu');
+  const first = rows.first();
+  await expect(first).toHaveAttribute('open', '');
+  await expect(first.locator('.cand-body .tip')).toBeVisible();
+  await first.locator(':scope > summary').click();
+  await expect(first.locator('.cand-body .tip')).toBeHidden();
+  // Skrällraden visar skrälltecknet (★ 1/2), inte favoriten
+  const ups = page.locator('#tips details.upset-row');
+  if (await ups.count()) {
+    const row = ups.first();
+    await expect(row.locator('.cr-tip')).toContainText(/★ [12]/);
+    // Kortet markerar skrälltecknet som 1X2-tips, inte favoriten
+    const sign = ((await row.locator('.cr-tip').innerText()).match(/★ ([12])/) || [])[1];
+    await expect(row.locator('tr[data-mkt="1X2"] .odd-pill.is-tip em')).toHaveText(sign!);
+  }
+  expect(fel).toEqual([]);
 });

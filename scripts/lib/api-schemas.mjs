@@ -68,6 +68,15 @@ export const svsSchemas = {
   result: z.object({ result: z.object({ drawNumber: z.number().optional(), events: z.array(z.unknown()).optional(), distribution: z.array(z.unknown()).optional() }).nullish() }),
 };
 
+// ---------- The Odds API (v4, /sports/<key>/odds) ----------
+const oddsOutcome = z.object({ name: z.string(), price: z.number() });
+export const oddsApiSchemas = {
+  odds: z.array(z.object({
+    commence_time: z.string(), home_team: z.string(), away_team: z.string(),
+    bookmakers: z.array(z.object({ key: z.string(), title: z.string(), markets: z.array(z.object({ key: z.string(), outcomes: z.array(oddsOutcome) })).optional() })).optional(),
+  })),
+};
+
 // ---------- ATG ----------
 export const atgSchemas = {
   calendar: z.object({ date: z.string(), tracks: z.array(z.object({ id: z.number(), name: z.string() })).optional(), games: z.record(z.string(), z.array(z.object({ id: z.string().optional(), status: z.string().optional() }))) }),

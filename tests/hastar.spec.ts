@@ -312,6 +312,37 @@ test.describe('hast-engine: systembyggaren', () => {
     expect(s.legs[0].horses.sort()).toEqual([2, 3]);
   });
 
+  test('storvinstsystem: budget, rader = produkten, strukna aldrig, högsta rad-spärren eller träffsystemet', async () => {
+    const { buildBigSystem, rowCount, MIN_TOP } = await engine();
+    for (const budget of [10, 50, 100, 200]) {
+      const s = buildBigSystem(legsFixture(), { budget, price: 0.5, minTop: 0, target: 50 });
+      expect(s.cost).toBeLessThanOrEqual(budget);
+      expect(s.rows).toBe(rowCount(s));
+      expect(s.legs.flatMap((l: any) => l.horses)).not.toContain(6);
+      expect(s.big).toBe(true);
+      expect(s.bigShare).toBeGreaterThan(0);
+      expect(s.bigShare).toBeLessThanOrEqual(1);
+    }
+    // spärren: når systemet inte minTop byggs träffsystemet i stället (big = false)
+    const f = buildBigSystem(legsFixture(), { budget: 10, price: 0.5, minTop: MIN_TOP });
+    if (!f.big) expect(f.bigShare).toBeNull();
+    else expect(f.topPayout).toBeGreaterThanOrEqual(MIN_TOP);
+    // låst spik respekteras
+    expect(buildBigSystem(legsFixture(), { budget: 100, price: 0.5, minTop: 0, locked: { 2: [3] } }).legs[1].horses).toEqual([3]);
+  });
+
+  test('storvinstsystem väljer raden som når målet före en trolig men lågt betalande häst', async () => {
+    const { buildBigSystem, buildSystem } = await engine();
+    // en avdelning, 2 rader: favorit + häst 3 (streck 10 %, rad ger 1,25 kr ≥ målet 1 kr) slår häst 2 (streck 40 %, 0,31 kr)
+    const legs = [{ leg: 1, number: 1, horses: [{ nr: 1, p: 0.5, marketPct: 0.5 }, { nr: 2, p: 0.3, marketPct: 0.4 }, { nr: 3, p: 0.2, marketPct: 0.1 }] }];
+    const big = buildBigSystem(legs, { budget: 1, price: 0.5, minTop: 0, topShare: 0.25, target: 1 });
+    expect(big.legs[0].horses.sort()).toEqual([1, 3]);
+    // väntad andel av målet: 0,5 · 0,25/1 + 0,2 · 1 = 0,325
+    expect(big.bigShare).toBeCloseTo(0.325, 2);
+    // träffsystemet (bara chansen) tar häst 2 i stället
+    expect(buildSystem(legs, { budget: 1, price: 0.5, alpha: 0 }).legs[0].horses.sort()).toEqual([1, 2]);
+  });
+
   test('låst spik respekteras', async () => {
     const { buildSystem } = await engine();
     const s = buildSystem(legsFixture(), { budget: 100, price: 0.5, locked: { 2: [3] } });
@@ -476,6 +507,10 @@ test.describe('GUI: fliken Hästar', () => {
     // uppföljningen visas (tom eller med tabell)
     await expect(page.locator('.hs-follow h3')).toContainText('Uppföljning på riktigt');
     if (state.uppfoljning?.games) await expect(page.locator('.hs-follow tbody tr').first()).toBeVisible();
+    // standard = storvinstsystemet (2026-10-11): förklaras i klartext, värdefokus gäller inte där
+    await expect(page.locator('[data-mode="stor"]')).toHaveAttribute('aria-pressed', 'true');
+    await expect(page.locator('.hs-stor-text')).toContainText('Kort sagt:');
+    await expect(page.locator('#hs-focus')).toHaveCount(0);
     for (const b of [100, 1000]) {
       await page.click(`[data-budget="${b}"]`);
       const txt = await page.locator('.hs-sys-sum:not(.hs-sys-top):not(.hs-sys-skrall)').innerText();
@@ -495,7 +530,9 @@ test.describe('GUI: fliken Hästar', () => {
     await expect(page.locator('.hs-sys-top')).toBeVisible();
     // värde förklaras i klartext, värdefokus beskrivs och värdehästar märks
     await expect(page.locator('.hs-value-explain')).toContainText('vinner oftare än folket tror');
-    // värdefokus: Standard (spelformens bakkörda val) är förvalt och förklaras
+    // träffsystemet: värdefokus Standard (spelformens bakkörda val) är förvalt och förklaras
+    await page.click('[data-mode="rakt"]');
+    await expect(page.locator('[data-mode="stor"]')).toHaveAttribute('aria-pressed', 'false');
     await expect(page.locator('#hs-focus')).toHaveValue('standard');
     await expect(page.locator('.hs-focus-text')).toContainText('Standard:');
     await page.selectOption('#hs-focus', 'hog');
@@ -644,6 +681,24 @@ function normRace(id: string, date: string, n: number, winner: number, o: any = 
     })),
   };
 }
+
+test.describe('säsongsbakkörning: fältet per avdelning', () => {
+  test('runBacktest sparar [nr, chans, streck, rank] per ej struken häst och avdelning', async () => {
+    const { runBacktest } = await import(pathToFileURL(path.join(ROOT, 'scripts', 'hastar-sasong.mjs')).href);
+    const r1 = { ...normRace('2026-01-03_1_1', '2026-01-03', 6, 2, { streck: [0.4, 0.2, 0.15, 0.1, 0.1, 0.05] }), leg: 1 };
+    const r2 = { ...normRace('2026-01-03_1_2', '2026-01-03', 5, 5), leg: 2, number: 2 };
+    r2.starts[0].scratched = true;
+    const game = { id: 'V85_2026-01-03_1_5', type: 'V85', date: '2026-01-03', track: 'Solvalla', payouts: {}, races: [r1, r2] };
+    const out = runBacktest([game], { budgets: [100], variants: ['rakt'], alpha: 0 });
+    const field = out.games[0].field;
+    expect(field.map((f: any[]) => f.map((h) => h[0]))).toEqual([[1, 2, 3, 4, 5, 6], [2, 3, 4, 5]]);
+    for (const f of field) {
+      expect(sum(f.map((h: any[]) => h[1]))).toBeCloseTo(1, 2);
+      for (const h of f) expect(['A', 'B', 'C', 'D']).toContain(h[3]);
+    }
+    expect(field[0][0][2]).toBeCloseTo(0.4, 2);
+  });
+});
 
 test.describe('loppets förstapris', () => {
   test('parsePrize läser förstapriset ur ATG:s pristext', async () => {
@@ -945,6 +1000,26 @@ test('tränarbyte: historik ur V-spelsstarter, bara starter före datumet, ≤ 9
   expect(last.X.tranareByte90[0]).toBeGreaterThan(last.X.tranareByte90[2]);
 });
 
+test('förändringar: barfota nu, jänkare nu, toppkusk nu och ned i klass räknas ihop (0–4)', async () => {
+  const { rawFeatures, FEATURE_KEYS } = await features();
+  expect(FEATURE_KEYS).toContain('forandringar');
+  const race: any = normRace('Ä', '2026-05-01', 4, 1);
+  race.firstPrize = 30000;
+  const last = { date: '2026-04-01', place: 4, km: 75, odds: 9, track: 'Solvalla', startMethod: 'auto', distance: 2140, driverId: 1, firstPrize: 60000 };
+  race.starts.forEach((s: any) => { s.records = [{ ...last }]; s.driverId = 1; });
+  // Häst 0: alla fyra – barfota runt om (ändrat), jänkare, ny kusk som vinner 20 %, halverat förstapris
+  Object.assign(race.starts[0], { shoes: { front: false, back: false, changed: true }, sulky: { text: 'Amerikansk', changed: true }, driverId: 2, driverYear: { starts: 100, wins: 20 } });
+  // Häst 1: ny kusk men bara 10 % segrar, skor bara bak av (inte barfota runt om), vanlig vagn bytt
+  Object.assign(race.starts[1], { shoes: { front: true, back: false, changed: true }, sulky: { text: 'Vanlig', changed: true }, driverId: 3, driverYear: { starts: 100, wins: 10 } });
+  // Häst 2: toppkusk med för få starter räknas inte; samma klass
+  Object.assign(race.starts[2], { driverId: 4, driverYear: { starts: 10, wins: 5 } });
+  race.starts[2].records[0].firstPrize = 30000;
+  // Häst 3: ingen tidigare start – bara utrustningen kan räknas
+  Object.assign(race.starts[3], { records: [], shoes: { front: false, back: false, changed: true } });
+  const f = race.starts.map((s: any) => rawFeatures(race, s, {}));
+  expect(f.map((x: any) => x.forandringar)).toEqual([4, 1, 0, 1]); // häst 1: bara ned i klass
+});
+
 test('skarpt läge: tränarhistorik ur fil plus dagens omgång, null utan fil', async () => {
   const { loadTrainerHist } = await import(pathToFileURL(path.join(ROOT, 'scripts', 'fetch-hastar.mjs')).href);
   const tmp = path.join((await import('os')).tmpdir(), `tranare-${process.pid}.json`);
@@ -1128,13 +1203,15 @@ test.describe('uppföljning: hämtningstider och frysta system', () => {
     const { freezeSystems, settleFrozen, summarizeFollow, FOLLOW_BUDGETS } = await uppf();
     const a = { ...analyzeGame(normalizeGame(game())), fetchedAt: '2026-10-03T08:00:00Z' };
     const fr = freezeSystems(a, { sims: 200 });
-    expect(Object.keys(fr.systems)).toEqual(['standard', 'utdelning', 'skrall3', 'rad50k']);
+    expect(Object.keys(fr.systems)).toEqual(['storvinst', 'standard', 'utdelning', 'skrall3', 'rad50k']);
     // 50 000-systemet fryses bara på 2 000 kr och håller budgeten
     const { RAD_TOP_MIN_BUDGET } = await engine();
     expect(Object.keys(fr.systems.rad50k)).toEqual([String(RAD_TOP_MIN_BUDGET)]);
     expect(fr.systems.rad50k[RAD_TOP_MIN_BUDGET].cost).toBeLessThanOrEqual(RAD_TOP_MIN_BUDGET);
     for (const b of FOLLOW_BUDGETS) {
       expect(fr.systems.standard[b].cost).toBeLessThanOrEqual(b);
+      expect(fr.systems.storvinst[b].cost).toBeLessThanOrEqual(b);
+      expect(fr.systems.storvinst[b].kind).toBe('rakt');
       expect(fr.systems.utdelning[b].cost).toBeLessThanOrEqual(b);
     }
     const s = settleFrozen(fr, [[1], [1]], { '2': { payout: 10000 } });

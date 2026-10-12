@@ -1,6 +1,6 @@
 // Flik "Hästar": V75/V85/V86/V64/V65/GS75 + Dagens Dubbel från ATG (data från /api/hastar, se gui/hastar-routes.mjs).
 // Modellen räknas i scripts/lib/trav-model.mjs när data hämtas; systembyggaren (hast-engine.js) körs här i webbläsaren.
-import { BUDGETS, rowPrice, TOP_SHARE, TOP_LEVELS, MIN_TOP, RAD_TOP, RAD_TOP_MIN_BUDGET, SKRALL_MAX, SKRALL_MIN_BUDGET, ATG_FILE_TYPES, atgFileName, atgFileXml, atgGameUrl, buildSystem, compressRows, couponRows, couponText, defaultAlpha, reduceSystem } from "/hast-engine.js";
+import { BUDGETS, rowPrice, TOP_SHARE, TOP_LEVELS, MIN_TOP, BIG_TARGET, RAD_TOP, RAD_TOP_MIN_BUDGET, SKRALL_MAX, SKRALL_MIN_BUDGET, ATG_FILE_TYPES, atgFileName, atgFileXml, atgGameUrl, buildBigSystem, buildSystem, compressRows, couponRows, couponText, defaultAlpha, reduceSystem } from "/hast-engine.js";
 
 const view = document.getElementById("hastar-view");
 const GAME_NAME = { dd: "Dagens Dubbel" };
@@ -16,7 +16,7 @@ let date = today();
 const ALPHA = { traff: 0, lag: 0.25, normal: 0.5, hog: 1 };
 // "standard" = spelformens bakkörda standard (defaultAlpha i hast-engine.js): V85 Normal, övriga Träff
 const alphaFor = (type) => (sys.focus === "standard" ? defaultAlpha(type) : ALPHA[sys.focus]);
-const sys = { budget: 500, mode: "rakt", expand: 4, focus: "standard", minTop: MIN_TOP, ibWeight: 0, conds: { minA: "", maxA: "", minSkrall: "", maxSkrall: "", minStreck: "", maxStreck: "", minRowTop: "" } };
+const sys = { budget: 500, mode: "stor", expand: 4, focus: "standard", minTop: MIN_TOP, ibWeight: 0, conds: { minA: "", maxA: "", minSkrall: "", maxSkrall: "", minStreck: "", maxStreck: "", minRowTop: "" } };
 let lastRows = null;
 let lastLegs = null; // utgångs-/raka systemets hästar per avdelning, för kupongmallen
 const FOCUS_TEXT = {
@@ -271,7 +271,14 @@ function systemBuilder(a) {
   lastRows = null;
   lastLegs = null;
   try {
-    if (sys.mode === "rakt") {
+    if (sys.mode === "stor") {
+      const s = buildBigSystem(legs, { budget: sys.budget, price, minTop: sys.minTop, topShare, target: Math.max(BIG_TARGET, sys.minTop) });
+      lastLegs = s.legs;
+      body = systemTable(s.legs, byLeg) + `<p class="hs-sys-sum"><b>${s.rows.toLocaleString("sv-SE")} rader · ${kr(s.cost)}</b> ·
+        alla rätt: ${pct(s.hit, 2)} enligt modellen, ${pct(s.marketHit, 2)} enligt strecket${s.big ? ` ·
+        <span title="Hur stor del av målet systemet väntas ge vid alla rätt, enligt modellen och strecket. Rader under målet räknas med sin andel, rader över målet som 1.">mål ${kr(s.target)}: <b>${pct(s.bigShare, 2)}</b></span>` : ""}</p>`
+        + (s.big ? "" : `<p class="hs-msg">Budgeten räcker inte för ett storvinstsystem som klarar högsta rad-spärren – det här är träffsystemet.</p>`) + topLine(s, a) + skrallLine(s, legs.length);
+    } else if (sys.mode === "rakt") {
       const s = buildSystem(legs, { budget: sys.budget, price, alpha: alphaFor(a.type), minTop: sys.minTop, topShare });
       lastLegs = s.legs;
       body = systemTable(s.legs, byLeg) + `<p class="hs-sys-sum"><b>${s.rows.toLocaleString("sv-SE")} rader · ${kr(s.cost)}</b> ·
@@ -305,11 +312,12 @@ function systemBuilder(a) {
       <label>Egen <input type="number" min="10" step="10" id="hs-budget" class="ds-input" value="${sys.budget}" /></label>
     </div>
     <div class="hs-mode" role="group" aria-label="Systemtyp">
-      <button type="button" class="ds-toggle" data-mode="rakt" aria-pressed="${sys.mode === "rakt"}">Rakt system</button>
+      <button type="button" class="ds-toggle" data-mode="stor" aria-pressed="${sys.mode === "stor"}" title="Standard: rakt system byggt för att kunna vinna de stora utdelningarna (mål ${kr(BIG_TARGET)} vid alla rätt)">Storvinstsystem</button>
+      <button type="button" class="ds-toggle" data-mode="rakt" aria-pressed="${sys.mode === "rakt"}" title="Rakt system byggt för att träffa ofta (förvalet till 2026-10-11)">Träffsystem</button>
       <button type="button" class="ds-toggle" data-mode="reducerat" aria-pressed="${sys.mode === "reducerat" && !isSkrall3() && !isRadTop()}">Reducerat system</button>
       <button type="button" class="ds-toggle" data-mode="skrall3" aria-pressed="${isSkrall3()}" title="Reducerat system, utgång 16 × budget, minst 3 hästar under 10 % streck på varje rad. Bakkört 2023–2026: +56 % på 1 000 kr men det bygger på ett fåtal storvinster – spela 1 000 kr eller mer, under 500 kr blir det för få rader">Skrällsystem</button>
       <button type="button" class="ds-toggle" data-mode="rad50k" aria-pressed="${isRadTop()}" title="Reducerat system, utgång 16 × budget, varje rad ska kunna ge minst ${kr(RAD_TOP)} vid alla rätt. Bakkört 365 omgångar V85/V75 2022–2026: 2 000 kr +129 %, 8 vinster över 50 000 kr, plus även utan de 3 största (+39 %), men 2024 −81 %. Spela ${kr(RAD_TOP_MIN_BUDGET)} eller mer">50 000-system</button>
-      <label title="Hur mycket spelvärdet väger mot ren vinstchans när hästar väljs">Värdefokus <select class="ds-select" id="hs-focus">${[["standard", "Standard"], ["traff", "Träff"], ["lag", "Låg"], ["normal", "Normal"], ["hog", "Hög"]].map(([k, t]) => `<option value="${k}" ${sys.focus === k ? "selected" : ""}>${t}</option>`).join("")}</select></label>
+      ${sys.mode === "stor" ? "" : `<label title="Hur mycket spelvärdet väger mot ren vinstchans när hästar väljs">Värdefokus <select class="ds-select" id="hs-focus">${[["standard", "Standard"], ["traff", "Träff"], ["lag", "Låg"], ["normal", "Normal"], ["hog", "Hög"]].map(([k, t]) => `<option value="${k}" ${sys.focus === k ? "selected" : ""}>${t}</option>`).join("")}</select></label>`}
       ${hasIb ? `<label title="Blanda in Interbet-modellens 9-faktorsanalys i sannolikheterna. 0 % = bara din modell, 100 % = bara Interbet.">Interbet-vikt <select class="ds-select" id="hs-ibweight">${[0,25,50,75,100].map((v) => `<option value="${v}" ${sys.ibWeight === v ? "selected" : ""}>${v} %${v === 0 ? " (din modell)" : v === 100 ? " (Interbet)" : ""}</option>`).join("")}</select></label>` : ""}
     </div>
     <div class="hs-mode" role="group" aria-label="Högsta rad">
@@ -318,7 +326,9 @@ function systemBuilder(a) {
     ${isSkrall3() && sys.budget < SKRALL_MIN_BUDGET ? `<p class="hs-msg is-error hs-skrall-budget" role="status">Skrällsystemet under ${kr(SKRALL_MIN_BUDGET)} har gått minus alla bakkörda år (200 kr: −28 %, −50 %, −81 % 2024–2026). Spela ${kr(SKRALL_MIN_BUDGET)} eller mer.</p>` : ""}
     ${isRadTop() && sys.budget < RAD_TOP_MIN_BUDGET ? `<p class="hs-msg is-error hs-radtop-budget" role="status">50 000-systemet under ${kr(RAD_TOP_MIN_BUDGET)} gick minus i bakkörningen utan de 3 största vinsterna (500 kr −54 %, 1 000 kr −44 %). Spela ${kr(RAD_TOP_MIN_BUDGET)} eller mer.</p>` : ""}
     ${isRadTop() ? `<p class="hs-kort-inline hs-radtop-text"><b>Kort sagt:</b> varje rad betalar minst ${kr(RAD_TOP)} om den sitter, men systemet träffar sällan – på 2 000 kr 8 gånger på 365 omgångar (ungefär var 45:e omgång). Räkna med många omgångar med små eller inga vinster.</p>` : ""}
-    <p class="hs-lead hs-focus-text">${FOCUS_TEXT[sys.focus]}</p>
+    ${sys.mode === "stor" ? `<p class="hs-kort-inline hs-stor-text"><b>Kort sagt:</b> systemet väljer hästar så att raderna kan ge stora vinster (mål ${kr(BIG_TARGET)} vid alla rätt), inte så att det träffar ofta.
+      Bakkört 488 omgångar 2024–2026 på 1 000 kr: +27 % mot träffsystemets −3 % och dubbelt så många vinster över 50 000 kr (2 mot 1),
+      men vinst i bara ungefär varannan omgång och −47 % om de tre största vinsterna räknas bort. Räkna med många omgångar utan vinst.</p>` : `<p class="hs-lead hs-focus-text">${FOCUS_TEXT[sys.focus]}</p>`}
     ${
       sys.mode === "reducerat"
         ? `<div class="hs-conds">
@@ -504,7 +514,7 @@ function ddBlock(a) {
 }
 
 // ---------- Uppföljning (scripts/hastar-auto.mjs) ----------
-const FOLLOW_NAMES = { standard: "Standard", utdelning: "Utdelning", skrall3: "Skrällsystem (≥ 3 skrällar/rad)", rad50k: "50 000-system" };
+const FOLLOW_NAMES = { storvinst: "Storvinst (förval)", standard: "Träffsystem", utdelning: "Utdelning", skrall3: "Skrällsystem (≥ 3 skrällar/rad)", rad50k: "50 000-system" };
 function followBlock(u) {
   const games = u?.games || 0;
   const head = `<h3>Uppföljning på riktigt <small>${games} omgångar${u?.from ? ` sedan ${esc(u.from)}` : ""}</small></h3>`;

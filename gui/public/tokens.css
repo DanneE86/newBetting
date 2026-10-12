@@ -224,6 +224,8 @@
 .ds-btn--tertiary { background: transparent; color: var(--color-text); border-color: transparent; text-decoration: underline; text-underline-offset: 3px; }
 .ds-btn--tertiary:hover:not(:disabled) { background: var(--color-surface-muted); }
 .ds-btn--sm { min-height: 32px; padding: var(--space-1) var(--space-3); font-size: var(--font-size-xs); }
+/* Knapp som fäller ut en panel (aria-expanded): samma utfällda läge överallt */
+.ds-btn--secondary[aria-expanded="true"] { background: var(--color-surface-sunken); }
 
 .ds-input, .ds-select {
   min-height: var(--target-min);
@@ -307,6 +309,10 @@
 .ds-table { width: 100%; border-collapse: collapse; font-size: var(--font-size-sm); }
 .ds-table th { text-align: left; font-weight: var(--font-weight-bold); color: var(--color-text-muted); border-bottom: 2px solid var(--color-border-strong); padding: var(--space-2) var(--space-3); }
 .ds-table td { border-bottom: 1px solid var(--color-border); padding: var(--space-2) var(--space-3); }
+/* Tät tabell i paneler (domare, nyckelspelare, kryssfacit): mindre text och luft */
+.ds-table--compact { font-size: var(--font-size-xs); }
+.ds-table--compact th { padding: var(--space-1) var(--space-2); border-bottom-width: 1px; }
+.ds-table--compact td { padding: var(--space-1) var(--space-2); }
 
 .ds-dialog {
   background: var(--color-surface);

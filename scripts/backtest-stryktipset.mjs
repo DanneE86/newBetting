@@ -74,24 +74,6 @@ for (let n = START_DRAW; n > START_DRAW - 200 && draws.length < COUNT; n--) {
   const evalA = a.reduced ? evaluateSnapshot(snap(a.reduced, 'systemPick'), outcomes, result.distribution) : null;
   const evalC = a.reducedC ? evaluateSnapshot({ rowList: a.reducedC.rowList, cost: a.reducedC.cost, picks: a.reducedC.picks }, outcomes, result.distribution) : null;
   const evalB = a.reducedB ? evaluateSnapshot(snap(a.reducedB, 'systemPickB'), outcomes, result.distribution) : null;
-  // Klarade ratt rad fargreglerna? Raknas som Gambling Cabin: bara de fargade garderingarna (inte spikar och bla halvor).
-  // Tidigare raknades alla 13 matcher, och da gick det inte att se vilken regel som stoppade ratt rad (2026-10-03).
-  // count13 = over alla 13 (jamforelse), stop = reglerna ratt rad bryter mot, ok null = ratt rad utanfor grundraden.
-  // picks = teckenstrangar (C har dem direkt i reducedC.picks)
-  const colorCheck = (red, picks) => {
-    const cr = red?.rules?.colorRules;
-    if (!cr) return null;
-    const blue = new Set(red.rules.blueHalves || []);
-    const n = { green: 0, yellow: 0, red: 0 }, n13 = { green: 0, yellow: 0, red: 0 };
-    outcomes.forEach((o, i) => {
-      const c = a.events[i].colors[SIGNS.indexOf(o)];
-      n13[c]++;
-      if (picks[i].length > 1 && !blue.has(i)) n[c]++;
-    });
-    const stop = ['green', 'yellow', 'red'].filter((c) => !(red.rules.colorsOff || []).includes(c) && (n[c] < cr[c][0] || n[c] > cr[c][1]));
-    return { rules: cr, blue: [...blue], count: n, count13: n13, fits: !stop.length, stop, ok: outcomes.some((o, i) => !picks[i].includes(o)) ? null : !stop.length };
-  };
-  const picksOf = (key) => a.events.map((e) => e[key]?.signs || '');
   const matches = a.events.map((e) => {
     const k = SIGNS.indexOf(e.result.outcome);
     return {
@@ -110,7 +92,6 @@ for (let n = START_DRAW; n > START_DRAW - 200 && draws.length < COUNT; n--) {
     A: a.reduced && { rows: a.reduced.rows, cost: a.reduced.cost, grund: a.reduced.grundRows, payoutMin: a.reduced.rules.payoutMin, exact: a.reduced.rules.payoutExact, hit: a.reduced.hitAll, er: a.reduced.expectedReturn, ...evalA },
     B: a.reducedB && { rows: a.reducedB.rows, cost: a.reducedB.cost, grund: a.reducedB.grundRows, payoutMin: a.reducedB.rules.payoutMin, exact: a.reducedB.rules.payoutExact, hit: a.reducedB.hitAll, er: a.reducedB.expectedReturn, union: a.reducedB.unionHit, overlap: a.reducedB.overlapRows, ...evalB },
     C: a.reducedC && { rows: a.reducedC.rows, cost: a.reducedC.cost, grund: a.reducedC.grundRows, payoutMin: a.reducedC.rules.payoutMin, exact: a.reducedC.rules.payoutExact, hit: a.reducedC.hitAll, er: a.reducedC.expectedReturn, spikes: a.reducedC.picks.filter((x) => x.length === 1).length, halves: a.reducedC.picks.filter((x) => x.length === 2).length, inGrund: outcomes.every((o, i) => a.reducedC.picks[i].includes(o)), outside: outcomes.filter((o, i) => !a.reducedC.picks[i].includes(o)).length, colorRules: a.reducedC.rules.colorRules, colorTarget: a.reducedC.rules.colorTarget, picks: a.reducedC.picks, ...evalC },
-    colorA: colorCheck(a.reduced, picksOf('systemPick')), colorB: colorCheck(a.reducedB, picksOf('systemPickB')), colorC: a.reducedC ? colorCheck(a.reducedC, a.reducedC.picks) : null,
     pairBest: Math.max(evalA?.best ?? 0, evalB?.best ?? 0),
     grundA: evalA?.groundCorrect, grundB: evalB?.groundCorrect,
     matches,

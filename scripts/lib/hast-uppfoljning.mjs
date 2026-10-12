@@ -2,16 +2,17 @@
 // slutstrecket som bakkörningen använder) och rättas mot ATG:s utdelning när omgången är avgjord. Ren logik –
 // hämtning och filer i scripts/hastar-auto.mjs.
 //
-// Tre system per budget:
-//   standard   rakt system som webbens förval (defaultAlpha per spelform, högsta rad ≥ 50 000 kr)
+// System per budget:
+//   storvinst  rakt storvinstsystem, webbens förval sedan 2026-10-11 (buildBigSystem, mål BIG_TARGET)
+//   standard   rakt träffsystem, webbens förval till 2026-10-11 (defaultAlpha per spelform, högsta rad ≥ 50 000 kr)
 //   utdelning  rakt system med högst förväntad utdelning (buildValueSystem)
 //   skrall3    reducerat system, utgång 16 × budget, minst 3 hästar under 10 % streck per rad
 //   rad50k     reducerat system, utgång 16 × budget, varje rad kan ge minst 50 000 kr – bara på RAD_TOP_MIN_BUDGET (2000 kr)
-import { MIN_TOP, RAD_TOP, RAD_TOP_MIN_BUDGET, TOP_SHARE, rowPrice, defaultAlpha, buildSystem, buildValueSystem, reduceSystem } from "../../gui/public/hast-engine.js";
+import { MIN_TOP, BIG_TARGET, buildBigSystem, RAD_TOP, RAD_TOP_MIN_BUDGET, TOP_SHARE, rowPrice, defaultAlpha, buildSystem, buildValueSystem, reduceSystem } from "../../gui/public/hast-engine.js";
 import { rowsByCorrect, rowsByCorrectList, settle } from "./hast-sasong.mjs";
 
 export const FOLLOW_BUDGETS = [200, 500, 1000];
-export const FOLLOW_SYSTEMS = { standard: "Standard (webbens förval)", utdelning: "Utdelning", skrall3: "Skrällsystem ≥ 3 skrällar/rad", rad50k: "50 000-system" };
+export const FOLLOW_SYSTEMS = { storvinst: "Storvinst (webbens förval sedan 2026-10-11)", standard: "Träffsystem (förval till 2026-10-11)", utdelning: "Utdelning", skrall3: "Skrällsystem ≥ 3 skrällar/rad", rad50k: "50 000-system" };
 
 const legsOf = (a) => a.races.map((r) => ({ leg: r.leg, number: r.number, horses: r.horses }));
 
@@ -21,8 +22,10 @@ export function freezeSystems(a, { budgets = FOLLOW_BUDGETS, frozenAt = a.fetche
   const price = rowPrice(a.type, a.date);
   const topShare = TOP_SHARE[a.type] ?? 0.25;
   const alpha = defaultAlpha(a.type);
-  const systems = { standard: {}, utdelning: {}, skrall3: {}, rad50k: {} };
+  const systems = { storvinst: {}, standard: {}, utdelning: {}, skrall3: {}, rad50k: {} };
   for (const budget of budgets) {
+    const g = buildBigSystem(legs, { budget, price, minTop: MIN_TOP, topShare, target: BIG_TARGET });
+    systems.storvinst[budget] = { kind: "rakt", legs: g.legs.map((l) => l.horses), rows: g.rows, cost: g.cost, hit: g.hit, bigShare: g.bigShare };
     const s = buildSystem(legs, { budget, price, alpha, minTop: MIN_TOP, topShare });
     systems.standard[budget] = { kind: "rakt", legs: s.legs.map((l) => l.horses), rows: s.rows, cost: s.cost, hit: s.hit };
     const v = buildValueSystem(legs, { budget, price, minTop: MIN_TOP, topShare, type: a.type, sims });

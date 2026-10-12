@@ -83,11 +83,9 @@ const MID_CONTROL = [['successful_passes_accuracy', 1], ['successful_passes', 1]
 const MID_CREATE = [['chances_created', 1.5], ['expected_assists', 1.5], ['big_chance_created_team_title', 1], ['expected_goals', 1]];
 const KEEPER = [['goals_prevented', 2], ['save_percentage', 2], ['error_led_to_goal', 0.5]];
 
-// Tal som visas som "x %" och tal där percentilen är bra trots högt värde ska läsas omvänt i texten
+// Tal som visas som "x %" (FotMobs percentiler är redan vända: hög percentil = bra, även för t.ex. dribblad förbi)
 const PERCENT_KEYS = new Set(['won_contest_subtitle', 'duel_won_percent', 'aerials_won_percent', 'successful_passes_accuracy',
   'save_percentage', 'crosses_succeeeded_accuracy', 'long_ball_succeeeded_accuracy']);
-const NEGATIVE_KEYS = new Set(['dribbled_past', 'goals_conceded_while_on_pitch', 'expected_goals_against_while_on_pitch',
-  'error_led_to_goal', 'fouls', 'dispossessed']);
 const SHORT_LABEL = {
   dribbles_succeeded: 'lyckade dribblingar', won_contest_subtitle: 'vunna dribblingar', chances_created: 'skapade chanser',
   expected_assists: 'xA', expected_goals: 'xG', non_penalty_xg: 'xG utan straff', goals: 'mål', shots: 'skott',

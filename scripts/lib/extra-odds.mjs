@@ -8,6 +8,8 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { findSharpBook, devigMultiplicative } from '../pro/lib.mjs';
 import { nameScore } from './match-context.mjs';
+import { getJson, HttpError } from './http.mjs';
+import { oddsApiSchemas } from './api-schemas.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
 const CACHE = path.join(root, 'data', 'open', 'stryk_extra_odds.json');
@@ -62,11 +64,17 @@ export async function extraOdds(leagueNames, log = () => {}) {
   for (const k of key ? stale : []) {
     if (cache.creditsRemaining != null && cache.creditsRemaining < MIN_CREDITS) { log(`  Extra odds: bara ${cache.creditsRemaining} krediter kvar – hoppar över ${k}`); continue; }
     try {
-      const res = await fetch(`https://api.the-odds-api.com/v4/sports/${k}/odds/?apiKey=${key}&regions=eu&markets=h2h&oddsFormat=decimal&dateFormat=iso`);
-      const left = Number(res.headers.get('x-requests-remaining'));
-      if (Number.isFinite(left)) cache.creditsRemaining = left;
-      if (!res.ok) { log(`  Extra odds ${k}: HTTP ${res.status}`); if (res.status === 404 || res.status === 422) cache.sports[k] = { fetchedAt: new Date().toISOString(), events: [] }; continue; }
-      const data = await res.json();
+      // Ett omförsök (bara vid nätverks-/serverfel): varje lyckat anrop kostar krediter
+      const data = await getJson(`https://api.the-odds-api.com/v4/sports/${k}/odds/?apiKey=${key}&regions=eu&markets=h2h&oddsFormat=decimal&dateFormat=iso`, {
+        retries: 1, schema: oddsApiSchemas.odds, label: 'The Odds API', log,
+        onResponse: (res) => { const left = Number(res.headers.get('x-requests-remaining')); if (Number.isFinite(left)) cache.creditsRemaining = left; },
+      }).catch((e) => {
+        if (!(e instanceof HttpError)) throw e;
+        log(`  Extra odds ${k}: HTTP ${e.status}`);
+        if (e.status === 404 || e.status === 422) cache.sports[k] = { fetchedAt: new Date().toISOString(), events: [] };
+        return null;
+      });
+      if (!data) continue;
       // outcomes ar sorterade alfabetiskt -> matcha pa lagnamn, inte position
       const events = data.map((e) => ({
         commence: e.commence_time, home: e.home_team, away: e.away_team,

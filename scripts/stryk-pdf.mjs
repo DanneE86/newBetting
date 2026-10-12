@@ -30,12 +30,13 @@ function shares(rowList) {
 }
 
 const coupons = [
-  { key: 'A', name: 'Kupong A', sys: p.reduced, color: '#1d6b3a', desc: 'Högst utdelning' },
-  { key: 'B', name: 'Kupong B', sys: p.reducedB, color: '#1f4e8c', desc: 'Motsystem' },
-  { key: 'C', name: 'Kupong C', sys: p.reducedC, color: '#8a4b0f', desc: 'Eget större system (rekommenderas)' },
+  { key: 'A', name: 'Kupong A', sys: p.reduced, color: '#1d6b3a', desc: 'De troligaste raderna (fil)' },
+  { key: 'B', name: 'Kupong B', sys: p.reducedB, color: '#1f4e8c', desc: 'Nästa rader utanför A (fil)' },
+  { key: 'C', name: 'Kupong C', sys: p.reducedC, color: '#8a4b0f', desc: 'Underspelade tecken uppviktade (fil)' },
 ].filter((c) => c.sys?.rowList?.length);
 for (const c of coupons) {
-  c.signs = signsFromUrl(c.sys.gamblingCabinUrl);
+  // Filkuponger (2026-10-11): tecknen per match är de som raderna använder
+  c.signs = c.sys.gamblingCabinUrl ? signsFromUrl(c.sys.gamblingCabinUrl) : c.key === 'A' ? p.events.map((e) => e.systemPick?.signs || '') : c.key === 'B' ? p.events.map((e) => e.systemPickB?.signs || '') : c.sys.picks;
   c.shares = shares(c.sys.rowList);
   c.spikar = c.signs.filter((s) => s.length === 1).length;
   c.halv = c.signs.filter((s) => s.length === 2).length;
@@ -110,11 +111,11 @@ const cardsHtml = coupons.map((c) => `
       <tr><td>Grundrad</td><td>${kr(c.sys.grundRows)} rader → ${c.sys.rows}</td></tr>
       <tr><td>Spik / halv / hel</td><td>${c.spikar} / ${c.halv} / ${c.hel}</td></tr>
       <tr><td>Utdelning 13 rätt</td><td>≥ ${kr(c.sys.rules.payoutMin)} kr</td></tr>
-      <tr><td>Teckenkrav</td><td>minst ${c.sys.rules.signMin.join('-')} (1-X-2)</td></tr>
+      ${c.sys.rules.signMin ? `<tr><td>Teckenkrav</td><td>minst ${c.sys.rules.signMin.join('-')} (1-X-2)</td></tr>` : ''}
       <tr><td>Chans 13 rätt</td><td>${oneIn(c.sys.hitAll)}</td></tr>
       <tr><td>Snittutdelning vid 13</td><td>${kr(c.sys.expectedPayout)} kr</td></tr>
     </table>
-    <a class="gc" style="background:${c.color}" href="${esc(c.sys.gamblingCabinUrl)}">Öppna i Gambling Cabin</a>
+    ${c.sys.gamblingCabinUrl ? `<a class="gc" style="background:${c.color}" href="${esc(c.sys.gamblingCabinUrl)}">Öppna i Gambling Cabin</a>` : `<p>Spelas som fil: Svenska Spel → Egna rader → ladda upp ${esc(p.product)}-${p.drawNumber}-${c.key}.txt</p>`}
   </div>`).join('');
 
 const svList = p.events.flatMap((e) => (e.streckvarde || []).map((v, s) => ({ e, s, v })))

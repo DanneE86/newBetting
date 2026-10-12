@@ -6,6 +6,11 @@ import path from 'path';
 const root = path.resolve(__dirname, '..');
 const port = 4100 + Math.floor(Math.random() * 80);
 const base = `http://127.0.0.1:${port}`;
+
+// Sidan startar i läget Skrällar: testerna här gäller läget Alla (om testet inte själv valt annat)
+test.beforeEach(async ({ page }) => {
+  await page.addInitScript(() => { if (localStorage.getItem('betting.upsetOnly') == null) localStorage.setItem('betting.upsetOnly', '0'); });
+});
 let server: ChildProcess;
 
 test.beforeAll(async () => {
@@ -69,11 +74,9 @@ test('Stryktipset: en sida, egna krav genererar kupong A och B', async ({ page }
   await expect(rows).toHaveCount(13, { timeout: 240_000 });
   // Kupongen genereras direkt, utan krav
   await expect(page.locator('.sb-table tbody tr')).toHaveCount(13, { timeout: 240_000 });
-  // A och B (2026-10-03): aldrig samma halv- eller helgardering, B ärver A:s spikar – högst 1 match skiljer på spik
-  // Bara tecknen: ⚠-markeringarna (missprofil per kupong, risklag) har olika procent i A och B
+  // Filkuponger (2026-10-11): A och B har samma 2 starka spikar (B är A:s nästa rader)
   const pairs = await page.locator('.sb-table tbody tr').evaluateAll((trs) => trs.map((tr) => [2, 3].map((c) => tr.children[c].textContent!.replace(/⚠.*$/s, '').trim())));
-  expect(pairs.filter(([a, b]) => (a.split('+').length === 1 || b.split('+').length === 1) && a !== b).length).toBeLessThanOrEqual(1);
-  expect(pairs.filter(([a, b]) => a === b && a.split('+').length > 1).length).toBe(0);
+  expect(pairs.filter(([a, b]) => a.split('+').length === 1 && a === b).length).toBeGreaterThanOrEqual(2);
   // Klick på turmatch fäller ut en förklaring i enkla ord
   const turBtn = page.locator('.sb-list .tur-btn').first();
   if (await turBtn.count()) {
@@ -83,7 +86,8 @@ test('Stryktipset: en sida, egna krav genererar kupong A och B', async ({ page }
     await page.locator('.sb-list .tur-btn').first().click();
     await expect(page.locator('.sb-list .tur-explain')).toHaveCount(0);
   }
-  await expect(page.locator('.st-backtest').first()).toBeAttached();
+  // De gamla backtestrutorna (Gambling Cabin-systemen) togs bort 2026-10-11; färgrutan finns kvar
+  await expect(page.locator('.st-colors').first()).toBeAttached();
   // Spik X på match 1 (båda), spik 1 på match 4 bara i kupong B
   await rows.nth(0).locator('.sb-sign[data-sign="X"]').click();
   await rows.nth(3).locator('.sb-sign[data-sign="1"]').click();
@@ -101,7 +105,7 @@ test('Stryktipset: en sida, egna krav genererar kupong A och B', async ({ page }
   const table = page.locator('.sb-table tbody tr');
   await expect(table).toHaveCount(13);
   await expect(table.nth(0).locator('td').nth(1)).toHaveText(/^🔒 X(?: ⚠.*)?$/, { timeout: 240_000 });
-  // Tabellen ligger först, kupongkorten (med Gambling Cabin-länkarna) under den
+  // Tabellen ligger först, kupongkorten (filerna) under den
   const order = await page.locator('.sb-result').evaluate((el) => {
     const t = el.querySelector('.sb-table')!, c = el.querySelector('.sb-coupons')!;
     return !!(t.compareDocumentPosition(c) & Node.DOCUMENT_POSITION_FOLLOWING);
@@ -115,33 +119,23 @@ test('Stryktipset: en sida, egna krav genererar kupong A och B', async ({ page }
   await expect(table.nth(1).locator('td').nth(2)).toHaveText(/^🔒 1 \+ X(?: ⚠.*)?$/);
   await expect(table.nth(5).locator('td').nth(1)).toHaveText(/^🔒 1 \+ X \+ 2(?: ⚠.*)?$/);
   await expect(table.nth(5).locator('td').nth(2)).not.toContainText('🔒');
-  // Korten för A och B är dolda (2026-10-09), A/B finns kvar i tabellen
-  await expect(page.locator('.sb-coupon h3', { hasText: /Kupong [AB] / })).toHaveCount(0);
-  // Kupong C är dold i gränssnittet (2026-10-09)
-  await expect(page.locator('.sb-coupon h3', { hasText: 'Kupong C' })).toHaveCount(0);
-  await expect(page.locator('.sb-table th', { hasText: 'Kupong C' })).toHaveCount(0);
-  await expect(rows.nth(0).locator('.sb-scope button[data-scope="C"]')).toHaveCount(0);
-  // Kupong D/E (2026-10-07): 500 egna rader; F (2026-10-08): 1050 rader
+  // Filkuponger (2026-10-11): korten A, B och C med nedladdning till Egna rader, ingen Gambling Cabin, inga D/E/F
   await expect(page.locator('.sb-coupon')).toHaveCount(3);
-  const dCard = page.locator('.sb-coupon').nth(0);
-  await expect(dCard.locator('h3')).toContainText(/Kupong D \d+ rader/);
-  await expect(dCard).toContainText('minst 30 000 kr för 13 rätt');
-  await expect(dCard).not.toContainText('Gambling Cabin');
-  const eCard = page.locator('.sb-coupon').nth(1);
-  await expect(eCard.locator('h3')).toContainText(/Kupong E \d+ rader/);
-  await expect(eCard).toContainText('kompletterar D');
-  await expect(page.locator('input[data-de-budget]')).toHaveCount(3);
-  const fCard = page.locator('.sb-coupon').nth(2);
-  await expect(fCard.locator('h3')).toContainText(/Kupong F 1[\s]?050 rader/);
-  await expect(fCard).toContainText('40/30/30');
+  for (const [i, sys] of ['A', 'B', 'C'].entries()) {
+    const card = page.locator('.sb-coupon').nth(i);
+    await expect(card.locator('h3')).toContainText(new RegExp(`Kupong ${sys} 500 rader`));
+    await expect(card).toContainText(/(minst|≥) 30\s000 kr/);
+    await expect(card).not.toContainText('Gambling Cabin');
+    await expect(card).not.toContainText('Chans 13 rätt');
+    // Öppen omgång: nedladdning av filen; avgjord omgång: texten om att filen går att ladda ner när kupongen är öppen
+    if (await card.locator('a[download]').count()) await expect(card.locator('a[download]')).toHaveAttribute('download', new RegExp(`-${sys}\\.txt$`));
+    else await expect(card).toContainText('Filen går att ladda ner när kupongen är öppen');
+  }
+  await expect(page.locator('.sb-table th', { hasText: 'Kupong C' })).toHaveCount(1);
   await expect(table.nth(0).locator('td').nth(3)).not.toContainText('🔒');
-  await expect(table.nth(0).locator('td').nth(4)).not.toContainText('🔒');
-  await expect(table.nth(0).locator('td').nth(5)).not.toContainText('🔒');
-  // D/E/F styrs via D/E/F %-raden, inte via Gäller
-  await expect(rows.nth(0).locator('.sb-scope button[data-scope="D"]')).toHaveCount(0);
-  await expect(rows.nth(0).locator('.sb-scope button[data-scope="E"]')).toHaveCount(0);
-  await expect(rows.nth(0).locator('.sb-defall')).toHaveCount(1);
-  await expect(rows.nth(0).locator('.sb-defall-k')).toContainText('D/E/F %');
+  await expect(rows.nth(0).locator('.sb-scope button[data-scope="C"]')).toHaveCount(1);
+  await expect(page.locator('input[data-de-budget]')).toHaveCount(0);
+  await expect(rows.nth(0).locator('.sb-defall')).toHaveCount(0);
   // Turmatcher, matcher och vanliga missar är hopfällda – fäll ut vid behov
   await page.locator('.st-history > summary').click();
   await expect(page.locator('.st-miss')).toContainText('Vanliga missar');
@@ -149,7 +143,8 @@ test('Stryktipset: en sida, egna krav genererar kupong A och B', async ({ page }
   await page.locator('.st-matches > summary').click();
   await expect(page.locator('.st-match .st-tip.sysb').first()).toBeVisible();
   // Turknapparna skriver aldrig över ett krav som gäller A
-  await page.locator('.st-tur > summary').click();
+  // Öppna turpanelen bara om den är stängd (klick på rubriken stänger en öppen panel)
+  if (!(await page.locator('.st-tur').evaluate((el) => (el as HTMLDetailsElement).open))) await page.locator('.st-tur > summary').click();
   const turAdd = page.locator('.sb-tur-add');
   // En turmatch utan eget krav (testet har redan lagt krav på några matcher)
   const freeNrs: string[] = [];
@@ -159,10 +154,11 @@ test('Stryktipset: en sida, egna krav genererar kupong A och B', async ({ page }
   if (freeNrs.length) {
     const nr = freeNrs[0];
     const row = page.locator(`.sb-row[data-ev="${nr}"]`);
-    await row.locator('.sb-seal').click(); // lås upp för att kunna ändra
+    // Lås upp för att kunna ändra (bara om raden är låst – annars skulle klicket låsa den)
+    if (/\bon\b/.test((await row.locator('.sb-seal').getAttribute('class')) || '')) await row.locator('.sb-seal').click();
     await row.locator('.sb-sign[data-sign="X"]').click();
     await expect(page.locator(`.sb-tur-add[data-ev="${nr}"]`)).toHaveCount(0);
-    await page.locator('.sb-tur-all').click().catch(() => {});
+    await page.locator('.sb-tur-all').click({ timeout: 5_000 }).catch(() => {});
     await expect(row.locator('.sb-scope button[data-scope="both"]')).toHaveAttribute('aria-pressed', 'true');
     await row.locator('.sb-sign[data-sign="X"]').click();
   }
@@ -180,9 +176,10 @@ test('Europatipset har samma sida via /europatipset', async ({ page }) => {
   await expect(page).toHaveURL(base + '/europatipset');
   await expect(page.locator('#stryktips-view h2')).toContainText('Europatipset', { timeout: 30_000 });
   await expect(page.locator('.sb-row')).toHaveCount(13, { timeout: 300_000 });
-  await expect(page.locator('.sb-coupon')).toHaveCount(3, { timeout: 300_000 }); // D, E och F (A, B och C är dolda)
+  await expect(page.locator('.sb-coupon')).toHaveCount(3, { timeout: 300_000 }); // A, B och C (filer)
+  await expect(page.locator('.sb-coupon a[download]')).toHaveCount(3, { timeout: 300_000 });
   await expect(page.locator('.view-tab.active')).toHaveAttribute('data-view', 'europatipset');
-  // Krav bara i A (1X på sista matchen): B väljer aldrig exakt samma tecken där
+  // Krav bara i A (1X på sista matchen): bara A låses
   await page.evaluate(() => localStorage.clear());
   const last = page.locator('.sb-row').nth(12);
   await last.locator('.sb-sign[data-sign="1"]').click();
@@ -191,7 +188,7 @@ test('Europatipset har samma sida via /europatipset', async ({ page }) => {
   await page.click('#sb-generate');
   const row = page.locator('.sb-table tbody tr').nth(12);
   await expect(row.locator('td').nth(1)).toHaveText(/^🔒 1 \+ X(?: ⚠.*)?$/, { timeout: 300_000 });
-  await expect(row.locator('td').nth(2)).not.toHaveText('1 + X');
+  await expect(row.locator('td').nth(2)).not.toContainText('🔒');
   await page.evaluate(() => localStorage.clear());
 });
 
@@ -212,7 +209,7 @@ test('Oddset: domarsvit markeras på tipskorten', async ({ page }) => {
   await page.goto(base + '/tips');
   const alert = page.locator('.ref-alert').first();
   const badge = page.locator('.ref-badge').first();
-  await expect(alert.or(badge)).toBeVisible({ timeout: 30_000 });
+  await expect(alert.or(badge).first()).toBeVisible({ timeout: 30_000 });
   if (await alert.count()) {
     await expect(alert).toContainText('Anthony Taylor');
     await expect(alert).toContainText('6 raka segrar');
@@ -291,7 +288,8 @@ test('Oddset: knappen Domare bredvid Duellanalys visar domarstatistik för engel
   // Bästa tipsen överst hämtas även ur alla kandidater: välj just den engelska matchens kort
   const card = page.locator(`.tip[data-tip-id="${eng.league}|${eng.date}|${eng.home}|${eng.away}"]:has(.btn-referee)`).first();
   await expect(card).toBeVisible({ timeout: 30_000 });
-  const order = await card.locator('.tip-actions button').evaluateAll((els) => els.map((e) => e.className));
+  // Första klassen är knappens krok (resten är ds-btn-klasser)
+  const order = await card.locator('.tip-actions button').evaluateAll((els) => els.map((e) => e.classList[0]));
   expect(order[order.indexOf('btn-matchup') + 1]).toBe('btn-referee');
   await card.locator('.btn-referee').click();
   await expect(card.locator('.rf-wrap')).toBeVisible({ timeout: 30_000 });

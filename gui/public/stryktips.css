@@ -1,16 +1,14 @@
 /* Flikar + Stryktipset-vyn (gui/public/stryktips.js). Bygger på tokens i tokens.css (svenskaspel.design). */
 
 /*
- * Lokala färger som speglar Gambling Cabins cellfärger (grön/gul/röd).
+ * Lokala färger som speglar Gambling Cabins cellfärger (grön/röd; gult används inte, gula tecken visas blå).
  * De MÅSTE ha samma värden som i Gambling Cabin – mappa dem inte till varumärkestokens.
  * Blått (spik) och Gambling Cabin-knappen finns redan som --color-spik / --color-gc-button i tokens.css.
  */
 :root {
   --gc-green: #4cc873;
-  --gc-yellow: #f0c541;
   --gc-red: #ef6b5b;
   --gc-green-text: #0b1a10;  /* 9:1 mot --gc-green */
-  --gc-yellow-text: #1d1604; /* 11:1 mot --gc-yellow */
   --gc-red-text: var(--ss-black); /* 5,2:1 mot --gc-red (vit text gav bara 3:1) */
   --st-tint: 12%;            /* andel färg i tonade ytor */
 }
@@ -103,26 +101,6 @@ body.view-stryktips main { display: none !important; }
   font-size: var(--font-size-sm);
   line-height: var(--line-height-body);
 }
-
-.st-stats {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-  gap: var(--space-2);
-}
-
-.st-stats > div {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  padding: var(--space-3) var(--space-4);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  background: var(--color-surface);
-}
-
-.st-stats .k { font-size: var(--font-size-xs); letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-text-muted); font-weight: var(--font-weight-bold); }
-.st-stats strong { font-size: var(--font-size-lg); letter-spacing: 0.04em; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
-.st-stats small { color: var(--color-text-muted); font-size: var(--font-size-xs); }
 
 .st-method {
   padding: var(--space-3) var(--space-4);
@@ -318,14 +296,6 @@ body.view-stryktips main { display: none !important; }
   .st-actions { width: 100%; }
 }
 
-.st-dot { display: inline-block; width: 0.6rem; height: 0.6rem; border-radius: 50%; flex: none; vertical-align: middle; }
-.st-dot.green { background: var(--gc-green); }
-.st-dot.yellow { background: var(--gc-yellow); }
-.st-dot.red { background: var(--gc-red); }
-.st-prob-top .st-dot { align-self: center; }
-.st-steps { margin: var(--space-2) 0; padding-left: var(--space-5); line-height: var(--line-height-body); }
-.st-steps li + li { margin-top: var(--space-1); }
-.st-reduced p { margin: var(--space-2) 0 var(--space-2); }
 .st-rows { max-height: 18rem; overflow: auto; margin: var(--space-2) 0 0; padding: var(--space-2) var(--space-3); border: 1px solid var(--color-border-strong); border-radius: var(--radius-md); background: var(--color-surface-muted); color: var(--color-text); font-size: var(--font-size-xs); line-height: var(--line-height-body); letter-spacing: 0.08em; }
 .sb-sign-dist { margin-top: var(--space-3); }
 .sb-sign-dist > summary { cursor: pointer; font-weight: var(--font-weight-bold); font-size: var(--font-size-sm); }
@@ -335,58 +305,20 @@ body.view-stryktips main { display: none !important; }
 .sb-sign-table td.sb-sign-n b { display: block; font-size: var(--font-size-sm); }
 .sb-sign-table td.sb-sign-n small { color: var(--color-text-muted); }
 .sb-sign-table td.sb-sign-n.is-zero { color: var(--color-text-muted); }
-.sb-defall { display: flex; flex-direction: column; gap: var(--space-1); grid-column: 1 / -1; margin-top: var(--space-1); padding: var(--space-2); border-radius: var(--radius-md); background: var(--color-surface-muted); font-size: var(--font-size-xs); }
-.sb-defall.is-busy { outline: 1px dashed var(--color-info); }
-.sb-defall-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-2); }
-.sb-defall-actions { display: inline-flex; flex-wrap: wrap; align-items: center; gap: var(--space-1); }
-.sb-defall-k { display: inline-flex; flex-wrap: wrap; align-items: center; gap: var(--space-2); color: var(--color-text-muted); font-weight: var(--font-weight-bold); }
-.sb-defall-status { display: inline-flex; align-items: center; gap: 6px; color: var(--color-info); font-weight: var(--font-weight-bold); }
-.sb-spin { width: 12px; height: 12px; border-radius: 50%; border: 2px solid currentColor; border-right-color: transparent; animation: sb-spin 0.75s linear infinite; flex: 0 0 auto; }
+
 @keyframes sb-spin { to { transform: rotate(360deg); } }
-@media (prefers-reduced-motion: reduce) { .sb-spin { animation: none; border-right-color: currentColor; opacity: 0.55; } }
-.sb-defall-line { display: grid; grid-template-columns: 1.5rem repeat(3, minmax(0, 1fr)); gap: var(--space-2); align-items: center; padding: 4px 6px; border-radius: var(--radius-sm); background: var(--color-surface); border: 1px solid var(--color-border); }
-.sb-defall-line.is-empty { opacity: 0.85; }
-.sb-defall-lab { font-weight: var(--font-weight-bold); font-variant-numeric: tabular-nums; }
-.sb-defall-miss { grid-column: 2 / -1; display: inline-flex; align-items: center; gap: 6px; color: var(--color-text-muted); }
-.sb-defall-cell { display: grid; grid-template-columns: 1rem minmax(0, 1fr) auto; gap: 4px; align-items: center; min-width: 0; }
-.sb-defall-sign { font-weight: var(--font-weight-bold); }
-.sb-defall-bar { display: block; height: 6px; border-radius: 99px; background: var(--color-surface-sunken); overflow: hidden; }
-.sb-defall-bar i { display: block; height: 100%; background: var(--color-success-solid); border-radius: inherit; }
-.sb-defall-num { font-variant-numeric: tabular-nums; white-space: nowrap; }
-.sb-defall-num b { font-size: var(--font-size-sm); }
-.sb-defall-num small { color: var(--color-text-muted); }
-.sb-defall-edit { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2); padding: 4px 6px; border-radius: var(--radius-sm); border: 1px dashed var(--color-border-strong); }
-.sb-defall-edit.is-on { border-style: solid; border-color: var(--color-success); background: var(--color-success-bg); }
-.sb-defall-edit.is-bad { border-color: var(--color-danger); background: var(--color-danger-bg); }
-.sb-defall-i { display: inline-flex; align-items: center; gap: 4px; font-weight: var(--font-weight-bold); }
-.sb-defall-i input { width: 3.2rem; padding: 2px 4px; border: 1px solid var(--color-border-strong); border-radius: var(--radius-sm); font-variant-numeric: tabular-nums; }
-.sb-defall-edit.is-bad .sb-defall-i input { border-color: var(--color-danger); }
-.sb-defall-sum { font-variant-numeric: tabular-nums; font-weight: var(--font-weight-bold); color: var(--color-success); }
-.sb-defall-sum.is-bad { color: var(--color-danger); }
-.sb-defall-hint { color: var(--color-text-muted); }
-.sb-defall-hint.is-bad,
-.sb-defall-edit.is-bad .sb-defall-hint { color: var(--color-danger); }
-.sb-defall-on.active { background: var(--color-success-solid); color: var(--color-text-on-brand); }
-@media (max-width: 40rem) {
-  .sb-defall-line { grid-template-columns: 1.5rem 1fr; }
-  .sb-defall-cell { grid-column: 2; }
-}
+
 
 /* Färgkodning (Gambling Cabin): hela rutan i tecknets färg. Siffran står i textfärg för kontrastens skull. */
 .st-prob.c-green { border-color: var(--gc-green); background: color-mix(in srgb, var(--gc-green) var(--st-tint), var(--color-surface)); box-shadow: inset 4px 0 0 var(--gc-green); }
-.st-prob.c-yellow { border-color: var(--gc-yellow); background: color-mix(in srgb, var(--gc-yellow) var(--st-tint), var(--color-surface)); box-shadow: inset 4px 0 0 var(--gc-yellow); }
 .st-prob.c-red { border-color: var(--gc-red); background: color-mix(in srgb, var(--gc-red) var(--st-tint), var(--color-surface)); box-shadow: inset 4px 0 0 var(--gc-red); }
 .st-prob.c-green .st-bar span { background: var(--gc-green); }
-.st-prob.c-yellow .st-bar span { background: var(--gc-yellow); }
 .st-prob.c-red .st-bar span { background: var(--gc-red); }
 .st-prob.c-green .st-prob-top strong,
-.st-prob.c-yellow .st-prob-top strong,
 .st-prob.c-red .st-prob-top strong { color: var(--color-text); }
 .st-prob.hit.c-green { box-shadow: inset 4px 0 0 var(--gc-green), inset 0 0 0 2px var(--color-text); }
-.st-prob.hit.c-yellow { box-shadow: inset 4px 0 0 var(--gc-yellow), inset 0 0 0 2px var(--color-text); }
 .st-prob.hit.c-red { box-shadow: inset 4px 0 0 var(--gc-red), inset 0 0 0 2px var(--color-text); }
 .st-in.c-green { background: var(--gc-green); color: var(--gc-green-text); }
-.st-in.c-yellow { background: var(--gc-yellow); color: var(--gc-yellow-text); }
 .st-in.c-red { background: var(--gc-red); color: var(--gc-red-text); }
 /* Spikar alltid blå (Gambling Cabins grundfärg, id 1) */
 .st-prob.c-blue { border-color: var(--color-spik); background: color-mix(in srgb, var(--color-spik) var(--st-tint), var(--color-surface)); box-shadow: inset 4px 0 0 var(--color-spik); }
@@ -405,15 +337,10 @@ body.view-stryktips main { display: none !important; }
 .st-gc.small { align-self: flex-start; min-height: 32px; padding: var(--space-1) var(--space-3); font-size: var(--font-size-xs); }
 .st-gc-off { color: var(--color-text-muted); font-size: var(--font-size-sm); }
 
-.st-wait { color: var(--color-warning); font-size: var(--font-size-xs); }
-
 /* System B (går emot A) */
 .st-tip.sysb { background: var(--color-surface); color: var(--color-info); box-shadow: inset 0 0 0 2px var(--color-info); }
 .st-b { padding: 1px var(--space-1); border-radius: var(--radius-pill); background: var(--color-info-solid); color: var(--color-text-on-brand); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); }
-.st-stats > div.sysb { border-color: var(--color-info); }
 
-/* Backtest */
-.st-backtest p { margin: var(--space-2) 0; line-height: var(--line-height-body); font-size: var(--font-size-sm); }
 .st-bt { width: 100%; border-collapse: collapse; margin: var(--space-2) 0; font-size: var(--font-size-sm); font-variant-numeric: tabular-nums; }
 .st-bt th, .st-bt td { padding: var(--space-1) var(--space-2); border-bottom: 1px solid var(--color-border); text-align: right; color: var(--color-text); }
 .st-bt th:first-child { text-align: left; font-weight: var(--font-weight-bold); }
@@ -421,12 +348,7 @@ body.view-stryktips main { display: none !important; }
 .st-bt tbody th { color: var(--color-text); }
 .st-bt td.up { color: var(--color-success); font-weight: var(--font-weight-bold); }
 .st-bt td.down { color: var(--color-danger); }
-.st-backtest .pos { color: var(--color-success); }
-.st-backtest .neg { color: var(--color-danger); }
-.st-bt-draws { margin-top: var(--space-2); }
-.st-bt tr.st-bt-sum th, .st-bt tr.st-bt-sum td { border-top: 2px solid var(--color-border-strong); font-weight: var(--font-weight-bold); }
-.st-bt-draws summary { cursor: pointer; font-weight: var(--font-weight-bold); color: var(--color-text); }
-.st-note-small { color: var(--color-text-muted); font-size: var(--font-size-xs) !important; }
+
 @media (max-width: 640px) { .st-bt { font-size: var(--font-size-xs); } .st-bt th, .st-bt td { padding: var(--space-1); } }
 
 /* Startelvor (samma data som Oddset) */
@@ -505,7 +427,7 @@ body.view-stryktips main { display: none !important; }
 .sb-row.is-sealed { border: 2px solid var(--color-success); background: var(--color-success-bg); box-shadow: inset 6px 0 0 var(--color-success); padding-left: calc(var(--space-3) + 6px); }
 .sb-row.is-sealed .st-num { background: var(--color-success-solid); color: var(--color-text-on-brand); border-color: var(--color-success-solid); }
 .sb-sealed-tag { align-self: flex-start; margin-bottom: 2px; padding: 1px 8px; border-radius: var(--radius-pill); background: var(--color-success-solid); color: var(--color-text-on-brand); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); letter-spacing: 0.06em; text-transform: uppercase; }
-.sb-row.is-sealed .sb-sign:disabled, .sb-row.is-sealed .sb-scope button:disabled, .sb-row.is-sealed .sb-defall button:disabled, .sb-row.is-sealed .sb-defall input:disabled { cursor: not-allowed; opacity: 0.55; }
+.sb-row.is-sealed .sb-sign:disabled, .sb-row.is-sealed .sb-scope button:disabled { cursor: not-allowed; opacity: 0.55; }
 .sb-row.is-sealed .sb-sign.on:disabled { opacity: 1; border-color: var(--color-success); box-shadow: inset 0 0 0 1px var(--color-success); }
 .sb-row.is-error { border-width: 2px; border-color: var(--color-danger); box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-danger) 25%, transparent); }
 .sb-row-err { grid-column: 1 / -1; margin: 0; color: var(--color-danger); font-size: var(--font-size-sm); font-weight: var(--font-weight-bold); }
@@ -539,10 +461,7 @@ body.view-stryktips main { display: none !important; }
 
 /* Turmatcher och vanliga missar */
 .st-chip.tur { color: var(--color-success); border-color: var(--color-success); background: var(--color-surface); }
-.st-tur-note { margin: var(--space-2) 0 0; padding: var(--space-2) var(--space-3); border-left: 3px solid var(--color-success); border-radius: var(--radius-md); background: var(--color-success-bg); font-size: var(--font-size-sm); }
 .st-miss { border-color: var(--color-border); }
-.st-miss-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); gap: var(--space-5); }
-.st-miss-grid > div { min-width: 0; }
 .st-miss .st-sub { margin: var(--space-1) 0 var(--space-2); }
 .st-tur-list { list-style: none; margin: var(--space-2) 0 0; padding: 0; display: grid; gap: var(--space-2); }
 .st-tur-list li { padding: var(--space-2) var(--space-3); border: 1px solid var(--color-border); border-radius: var(--radius-lg); background: var(--color-surface-muted); }
@@ -552,7 +471,6 @@ body.view-stryktips main { display: none !important; }
 .st-tur-head .btn-ghost, .sb-tur-all, .tur-explain .btn-ghost { min-height: 32px; padding: var(--space-1) var(--space-3); font-size: var(--font-size-xs); }
 .st-miss-table th small { color: var(--color-danger); font-weight: var(--font-weight-medium); }
 .st-miss-table td:last-child { white-space: nowrap; }
-
 
 /* Spikar (ett tecken) alltid blå (samma som Gambling Cabins blå grundfärg) – i kupong A, B, egna krav och kupongtabellen */
 .st-tip.spik, .st-tip.blue { background: var(--color-spik); color: var(--color-spik-text); box-shadow: none; }
@@ -621,8 +539,6 @@ body.view-stryktips main { display: none !important; }
 .st-fold[open] > summary h3::before { transform: rotate(90deg); }
 .st-fold > summary small { color: var(--color-text-muted); font-size: var(--font-size-sm); }
 .st-fold > summary:hover h3 { color: var(--color-brand-text); }
-.st-section-h { margin: 0 0 var(--space-2); font-size: var(--font-size-lg); line-height: var(--line-height-tight); color: var(--color-text); }
-.st-section-h small { color: var(--color-text-muted); font-weight: var(--font-weight-medium); font-size: var(--font-size-sm); margin-left: var(--space-1); }
 .st-legend { margin: var(--space-3) 0; }
 .st-legend .st-in, .st-legend .st-b { cursor: help; }
 .st-b { cursor: help; }
@@ -647,10 +563,7 @@ body.view-stryktips main { display: none !important; }
   backdrop-filter: blur(10px);
   box-shadow: var(--shadow-lg);
 }
-.sb-budgets { display: flex; align-items: center; gap: var(--space-2); flex: none; }
-.sb-budget { display: inline-flex; align-items: center; gap: 4px; font-size: var(--font-size-sm); font-weight: var(--font-weight-bold); color: var(--color-text); }
-.sb-budget input { width: 4.6rem; padding: 2px 6px; border: 1px solid var(--color-border-strong); border-radius: var(--radius-sm); font-variant-numeric: tabular-nums; background: var(--color-surface); color: inherit; }
-.sb-budget input:disabled { opacity: 0.6; }
+
 .sb-actionbar-txt { flex: 1; min-width: 0; color: var(--color-text-muted); font-size: var(--font-size-sm); }
 .sb-actionbar-txt b { color: var(--color-text); }
 .sb-dirty { color: var(--color-warning); }
@@ -663,7 +576,7 @@ body.view-stryktips main { display: none !important; }
 }
 @media (max-width: 560px) {
   .sb-actionbar { bottom: var(--space-2); gap: var(--space-2); padding: var(--space-2) var(--space-2) var(--space-2) var(--space-3); border-radius: var(--radius-lg); flex-wrap: wrap; }
-  .sb-budgets { width: 100%; }
+
   .sb-actionbar-txt { font-size: var(--font-size-xs); }
   .sb-actionbar .btn-ghost { width: auto; padding: var(--space-2) var(--space-3); font-size: var(--font-size-xs); }
   .sb-actionbar .sb-generate { width: auto; padding: var(--space-2) var(--space-4); font-size: var(--font-size-xs); }
