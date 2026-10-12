@@ -307,6 +307,42 @@ body.view-stryktips main { display: none !important; }
 .sb-sign-table td.sb-sign-n.is-zero { color: var(--color-text-muted); }
 
 @keyframes sb-spin { to { transform: rotate(360deg); } }
+/* A/B/C % per match: egen fördelning (2026-10-12, samma som gamla D/E/F %) */
+.sb-defall { display: flex; flex-direction: column; gap: var(--space-1); grid-column: 1 / -1; margin-top: var(--space-1); padding: var(--space-2); border-radius: var(--radius-md); background: var(--color-surface-muted); font-size: var(--font-size-xs); }
+.sb-defall.is-busy { outline: 1px dashed var(--color-info); }
+.sb-defall-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-2); }
+.sb-defall-actions { display: inline-flex; flex-wrap: wrap; align-items: center; gap: var(--space-1); }
+.sb-defall-k { display: inline-flex; flex-wrap: wrap; align-items: center; gap: var(--space-2); color: var(--color-text-muted); font-weight: var(--font-weight-bold); }
+.sb-defall-status { display: inline-flex; align-items: center; gap: 6px; color: var(--color-info); font-weight: var(--font-weight-bold); }
+.sb-spin { width: 12px; height: 12px; border-radius: 50%; border: 2px solid currentColor; border-right-color: transparent; animation: sb-spin 0.75s linear infinite; flex: 0 0 auto; }
+@media (prefers-reduced-motion: reduce) { .sb-spin { animation: none; border-right-color: currentColor; opacity: 0.55; } }
+.sb-defall-line { display: grid; grid-template-columns: 1.5rem repeat(3, minmax(0, 1fr)); gap: var(--space-2); align-items: center; padding: 4px 6px; border-radius: var(--radius-sm); background: var(--color-surface); border: 1px solid var(--color-border); }
+.sb-defall-line.is-empty { opacity: 0.85; }
+.sb-defall-lab { font-weight: var(--font-weight-bold); font-variant-numeric: tabular-nums; }
+.sb-defall-miss { grid-column: 2 / -1; display: inline-flex; align-items: center; gap: 6px; color: var(--color-text-muted); }
+.sb-defall-cell { display: grid; grid-template-columns: 1rem minmax(0, 1fr) auto; gap: 4px; align-items: center; min-width: 0; }
+.sb-defall-sign { font-weight: var(--font-weight-bold); }
+.sb-defall-bar { display: block; height: 6px; border-radius: 99px; background: var(--color-surface-sunken); overflow: hidden; }
+.sb-defall-bar i { display: block; height: 100%; background: var(--color-success-solid); border-radius: inherit; }
+.sb-defall-num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.sb-defall-num b { font-size: var(--font-size-sm); }
+.sb-defall-num small { color: var(--color-text-muted); }
+.sb-defall-edit { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2); padding: 4px 6px; border-radius: var(--radius-sm); border: 1px dashed var(--color-border-strong); }
+.sb-defall-edit.is-on { border-style: solid; border-color: var(--color-success); background: var(--color-success-bg); }
+.sb-defall-edit.is-bad { border-color: var(--color-danger); background: var(--color-danger-bg); }
+.sb-defall-i { display: inline-flex; align-items: center; gap: 4px; font-weight: var(--font-weight-bold); }
+.sb-defall-i input { width: 3.2rem; padding: 2px 4px; border: 1px solid var(--color-border-strong); border-radius: var(--radius-sm); font-variant-numeric: tabular-nums; }
+.sb-defall-edit.is-bad .sb-defall-i input { border-color: var(--color-danger); }
+.sb-defall-sum { font-variant-numeric: tabular-nums; font-weight: var(--font-weight-bold); color: var(--color-success); }
+.sb-defall-sum.is-bad { color: var(--color-danger); }
+.sb-defall-hint { color: var(--color-text-muted); }
+.sb-defall-hint.is-bad,
+.sb-defall-edit.is-bad .sb-defall-hint { color: var(--color-danger); }
+.sb-defall-on.active { background: var(--color-success-solid); color: var(--color-text-on-brand); }
+@media (max-width: 40rem) {
+  .sb-defall-line { grid-template-columns: 1.5rem 1fr; }
+  .sb-defall-cell { grid-column: 2; }
+}
 
 
 /* Färgkodning (Gambling Cabin): hela rutan i tecknets färg. Siffran står i textfärg för kontrastens skull. */
@@ -427,7 +463,7 @@ body.view-stryktips main { display: none !important; }
 .sb-row.is-sealed { border: 2px solid var(--color-success); background: var(--color-success-bg); box-shadow: inset 6px 0 0 var(--color-success); padding-left: calc(var(--space-3) + 6px); }
 .sb-row.is-sealed .st-num { background: var(--color-success-solid); color: var(--color-text-on-brand); border-color: var(--color-success-solid); }
 .sb-sealed-tag { align-self: flex-start; margin-bottom: 2px; padding: 1px 8px; border-radius: var(--radius-pill); background: var(--color-success-solid); color: var(--color-text-on-brand); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); letter-spacing: 0.06em; text-transform: uppercase; }
-.sb-row.is-sealed .sb-sign:disabled, .sb-row.is-sealed .sb-scope button:disabled { cursor: not-allowed; opacity: 0.55; }
+.sb-row.is-sealed .sb-sign:disabled, .sb-row.is-sealed .sb-scope button:disabled, .sb-row.is-sealed .sb-defall button:disabled, .sb-row.is-sealed .sb-defall input:disabled { cursor: not-allowed; opacity: 0.55; }
 .sb-row.is-sealed .sb-sign.on:disabled { opacity: 1; border-color: var(--color-success); box-shadow: inset 0 0 0 1px var(--color-success); }
 .sb-row.is-error { border-width: 2px; border-color: var(--color-danger); box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-danger) 25%, transparent); }
 .sb-row-err { grid-column: 1 / -1; margin: 0; color: var(--color-danger); font-size: var(--font-size-sm); font-weight: var(--font-weight-bold); }
@@ -564,6 +600,10 @@ body.view-stryktips main { display: none !important; }
   box-shadow: var(--shadow-lg);
 }
 
+.sb-budgets { display: flex; align-items: center; gap: var(--space-2); flex: none; }
+.sb-budget { display: inline-flex; align-items: center; gap: 4px; font-size: var(--font-size-sm); font-weight: var(--font-weight-bold); color: var(--color-text); }
+.sb-budget input { width: 4.6rem; padding: 2px 6px; border: 1px solid var(--color-border-strong); border-radius: var(--radius-sm); font-variant-numeric: tabular-nums; background: var(--color-surface); color: inherit; }
+.sb-budget input:disabled { opacity: 0.6; }
 .sb-actionbar-txt { flex: 1; min-width: 0; color: var(--color-text-muted); font-size: var(--font-size-sm); }
 .sb-actionbar-txt b { color: var(--color-text); }
 .sb-dirty { color: var(--color-warning); }
@@ -577,6 +617,7 @@ body.view-stryktips main { display: none !important; }
 @media (max-width: 560px) {
   .sb-actionbar { bottom: var(--space-2); gap: var(--space-2); padding: var(--space-2) var(--space-2) var(--space-2) var(--space-3); border-radius: var(--radius-lg); flex-wrap: wrap; }
 
+  .sb-budgets { width: 100%; }
   .sb-actionbar-txt { font-size: var(--font-size-xs); }
   .sb-actionbar .btn-ghost { width: auto; padding: var(--space-2) var(--space-3); font-size: var(--font-size-xs); }
   .sb-actionbar .sb-generate { width: auto; padding: var(--space-2) var(--space-4); font-size: var(--font-size-xs); }

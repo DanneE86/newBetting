@@ -1626,6 +1626,58 @@ test.describe('stryk-engine: kupong A, B och C', () => {
     }
   });
 
+  // Egen summa per kupong (2026-10-12: "jag ska kunna bestämma summa fortfarande"), 1 kr per rad, 1–10 000 kr
+  test('filkuponger: egen summa per kupong A/B/C', async () => {
+    test.skip(products.length === 0, 'data/stryktipset.json saknas');
+    const { generateCoupons, clampFileRows, FILE_BUDGET } = await engine();
+    expect(FILE_BUDGET).toEqual({ min: 1, max: 10000 });
+    expect(clampFileRows('')).toBe(500);
+    expect(clampFileRows(undefined, 300)).toBe(300);
+    expect(clampFileRows('abc', 300)).toBe(300);
+    expect(clampFileRows(0)).toBe(1);
+    expect(clampFileRows(99999)).toBe(10000);
+    expect(clampFileRows('250.4')).toBe(250);
+    const p = products[0];
+    const out = generateCoupons(p, {}, { rows: { A: 200, B: 300, C: 100 } });
+    expect([out.A.rows, out.B.rows, out.C.rows]).toEqual([200, 300, 100]);
+    expect(out.A.cost).toBe(200);
+    expect(out.A.egnaRader.trim().split('\n')).toHaveLength(201);
+    expect(Math.min(...out.B.rowReal)).toBeGreaterThanOrEqual(30000);
+    const setA = new Set(out.A.rowList);
+    expect(out.B.rowList.some((r: string) => setA.has(r))).toBe(false);
+    // Saknas en kupong i rows gäller standarden 500
+    expect(generateCoupons(p, {}, { rows: { A: 100 } }).B.rows).toBe(500);
+  });
+
+  // Egen fördelning per match (2026-10-12: "jag ska kunna bestämma fördelningen själv som förut"), som gamla D/E/F %
+  test('filkuponger: egen fördelning A/B/C % per match', async () => {
+    test.skip(products.length === 0, 'data/stryktipset.json saknas');
+    const { generateCoupons, fallShareTargets, sysFinal } = await engine();
+    expect(fallShareTargets(500, [40, 30, 30])).toEqual([200, 150, 150]);
+    expect(fallShareTargets(100, [33, 33, 34])).toEqual([33, 33, 34]);
+    expect(fallShareTargets(10, [50, 50, 0], [0, 1])).toEqual([5, 5, 0]);
+    const p = products[0];
+    const ev = p.events.map((e: any) => ({ ...e, final: sysFinal(e) }));
+    const strongest = ev.map((e: any, i: number) => ({ i, v: Math.max(...e.final) })).sort((a: any, b: any) => b.v - a.v)[0].i;
+    const nr = (i: number) => p.events[i].eventNumber;
+    const other = (strongest + 3) % 13;
+    const dist = (c: any, i: number) => ['1', 'X', '2'].map((s) => c.rowList.filter((r: string) => r[i] === s).length);
+    const out = generateCoupons({ ...p, fileShares: { A: { [nr(strongest)]: [40, 30, 30], [nr(other)]: [20, 50, 30] }, B: { [nr(other)]: [0, 50, 50] } } }, {}, { rows: { A: 500, B: 400, C: 500 } });
+    // Starkaste matchen spikas inte när den har egen fördelning
+    expect(dist(out.A, strongest)).toEqual([200, 150, 150]);
+    expect(dist(out.A, other)).toEqual([100, 250, 150]);
+    expect(dist(out.B, other)).toEqual([0, 200, 200]);
+    expect(out.A.rows).toBe(500);
+    expect(new Set(out.A.rowList).size).toBe(500);
+    expect(out.B.rowList.some((r: string) => out.A.rowList.includes(r))).toBe(false);
+    expect(out.A.relaxed.join(' ')).toContain('2 matcher med din egen fördelning');
+    // C utan egna andelar: spikar fortfarande starkaste matchen
+    expect(out.C.picks[strongest].signs).toHaveLength(1);
+    // Ett spikat krav går före fördelningen
+    const k = generateCoupons({ ...p, fileShares: { A: { [nr(other)]: [20, 50, 30] } } }, { [nr(other)]: { signs: 'X', scope: 'A' } });
+    expect(dist(k.A, other)).toEqual([0, 500, 0]);
+  });
+
   test('filkuponger: dina krav gäller bara sina kuponger, låsta spikar räknas in bland de 2', async () => {
     test.skip(products.length === 0, 'data/stryktipset.json saknas');
     const { generateCoupons, strongSpikeForced, sysFinal } = await engine();
@@ -3231,5 +3283,64 @@ test.describe('upset-pick: skräll med värde', () => {
     const f = { home: 0.25, draw: 0.27, away: 0.48 };
     expect(findUpset(f, { home: v('1', 0.07), away: v('2', 0.2) })?.pick).toBe('1');
     expect(findUpset({ home: 0.2, draw: 0.5, away: 0.3 }, { home: v('1', 0.07), away: v('2', 0.09) })?.pick).toBe('2');
+  });
+});
+
+// ---------- elo-1x2.mjs ----------
+
+test.describe('elo-1x2: 1X2 ur Klubb-Elo utan odds', () => {
+  test('eloProbs summerar till 1, hemmafordel och starkare lag ger hogre chans', async () => {
+    const { eloProbs } = await lib('elo-1x2.mjs');
+    const even = eloProbs(1700, 1700);
+    expect(even.home + even.draw + even.away).toBeCloseTo(1, 6);
+    expect(even.home).toBeGreaterThan(even.away);
+    const strong = eloProbs(1900, 1600);
+    expect(strong.home).toBeGreaterThan(0.6);
+    expect(eloProbs(1600, 1900).away).toBeGreaterThan(eloProbs(1600, 1900).home);
+  });
+
+  test('findClubElo: exakt namn gar fore prefix, engelska stadsnamn oversatts', async () => {
+    const { findClubElo } = await lib('elo-1x2.mjs');
+    const cache = { countries: {
+      FRA: { clubs: [{ name: 'Lille', elo: 1780 }, { name: 'Red Star', elo: 1580 }] },
+      NOR: { clubs: [{ name: 'Lillestrøm', elo: 1515 }] },
+      NED: { clubs: [{ name: 'Sparta', elo: 1497 }] },
+      CZE: { clubs: [{ name: 'Sparta Praha', elo: 1653 }] },
+      SRB: { clubs: [{ name: 'Crvena Zvezda', elo: 1668 }] },
+    } };
+    expect(findClubElo('Lillestrom', cache)?.clubEloName).toBe('Lillestrøm');
+    expect(findClubElo('Lille', cache)?.clubEloName).toBe('Lille');
+    expect(findClubElo('Sparta Prague', cache)?.clubEloName).toBe('Sparta Praha');
+    expect(findClubElo('Red Star Belgrade', cache)?.clubEloName).toBe('Crvena Zvezda');
+    expect(findClubElo('Okänt FC', cache)).toBeNull();
+  });
+});
+
+// ---------- team-elo.mjs ----------
+
+test.describe('team-elo: eget lag-Elo ur ligaresultat', () => {
+  test('startvarde per division, vinnaren tar poang av forloraren, inget efter cutoff', async () => {
+    const { teamElo, TEAM_ELO_START } = await lib('team-elo.mjs');
+    const ms = [
+      { league: 'PL', date: '2026-08-01', home: 'A', away: 'B', hg: 2, ag: 1 },
+      { league: 'CH', date: '2026-08-02', home: 'C', away: 'D', hg: 0, ag: 0 },
+      { league: 'PL', date: '2026-08-09', home: 'B', away: 'A', hg: 5, ag: 0 },
+    ];
+    const r = teamElo(ms, '2026-08-05');
+    expect(r.get('A')! + r.get('B')!).toBeCloseTo(2 * TEAM_ELO_START.PL, 6); // nollsumma
+    expect(r.get('A')!).toBeGreaterThan(TEAM_ELO_START.PL);
+    expect(r.get('C')! + r.get('D')!).toBeCloseTo(2 * TEAM_ELO_START.CH, 6);
+    expect(r.get('C')!).toBeLessThan(TEAM_ELO_START.CH); // oavgjort hemma = under forvantan
+    const later = teamElo(ms, '2026-08-10');
+    expect(later.get('B')!).toBeGreaterThan(later.get('A')!); // 5-0 efter cutoff raknas forst nu
+  });
+
+  test('malskillnad vager som hos clubelo', async () => {
+    const { goalDiffMult } = await lib('team-elo.mjs');
+    expect(goalDiffMult(0)).toBe(1);
+    expect(goalDiffMult(-1)).toBe(1);
+    expect(goalDiffMult(2)).toBe(1.5);
+    expect(goalDiffMult(3)).toBe(14 / 8);
+    expect(goalDiffMult(-5)).toBe(2);
   });
 });

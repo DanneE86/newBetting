@@ -134,8 +134,33 @@ test('Stryktipset: en sida, egna krav genererar kupong A och B', async ({ page }
   await expect(page.locator('.sb-table th', { hasText: 'Kupong C' })).toHaveCount(1);
   await expect(table.nth(0).locator('td').nth(3)).not.toContainText('🔒');
   await expect(rows.nth(0).locator('.sb-scope button[data-scope="C"]')).toHaveCount(1);
-  await expect(page.locator('input[data-de-budget]')).toHaveCount(0);
-  await expect(rows.nth(0).locator('.sb-defall')).toHaveCount(0);
+  // Egen summa per kupong (2026-10-12): A, B och C i åtgärdsraden, 500 kr som standard
+  const budgets = page.locator('input[data-file-budget]');
+  await expect(budgets).toHaveCount(3);
+  for (let i = 0; i < 3; i++) await expect(budgets.nth(i)).toHaveValue('500');
+  await budgets.nth(1).fill('300');
+  await expect(page.locator('.sb-actionbar')).toHaveClass(/is-dirty/);
+  await budgets.nth(1).fill('500');
+  await budgets.nth(1).dispatchEvent('change');
+  // Egen fördelning A/B/C % (2026-10-12): Av visar hur kupongerna spelat, På ger redigerbara rader som ska bli 100 %
+  const share = rows.nth(6).locator('.sb-defall');
+  await expect(share).toHaveCount(1);
+  await expect(share.locator('.sb-defall-line')).toHaveCount(3);
+  // Låst match går inte att ändra – lås upp match 7 först
+  await expect(share.locator('[data-defall-toggle]')).toBeDisabled();
+  await rows.nth(6).locator('.sb-seal').click();
+  await rows.nth(6).locator('[data-defall-toggle]').click();
+  const shareOn = rows.nth(6).locator('.sb-defall');
+  await expect(shareOn.locator('.sb-defall-edit')).toHaveCount(3);
+  await shareOn.locator('input[data-defall-sys="A"][data-defall="0"]').fill('99');
+  await expect(shareOn.locator('.sb-defall-edit[data-defall-sys="A"]')).toHaveClass(/is-bad/);
+  await shareOn.locator('[data-defall-model]').click();
+  await expect(rows.nth(6).locator('.sb-defall-edit.is-bad')).toHaveCount(0);
+  await expect(rows.nth(6).locator('.sb-defall-sum').first()).toHaveText('100 %');
+  await rows.nth(6).locator('[data-defall-toggle]').click();
+  await expect(rows.nth(6).locator('.sb-defall-edit')).toHaveCount(0);
+  await rows.nth(6).locator('.sb-seal').click();
+  await expect(page.locator('.sb-seal.on')).toHaveCount(13);
   // Turmatcher, matcher och vanliga missar är hopfällda – fäll ut vid behov
   await page.locator('.st-history > summary').click();
   await expect(page.locator('.st-miss')).toContainText('Vanliga missar');
@@ -490,13 +515,14 @@ test('Oddset: tipskortet har raden Kort Ö/U med domare och spela från för 3.5
   await both.locator('.odd-pill[data-key="bc-no"]').click();
   await expect(both.locator('td.val')).toContainText('spela från 5.4');
   await expect(both.locator('td.num')).toHaveText('20%');
-  // 1X2 och BTTS: varje utfall har sin egen chans
+  // 1X2: chansen för alla tre tecknen (bara data), valt tecken i fetstil; BTTS: varje utfall har sin egen chans
   const x12 = page.locator('#tips tr[data-mkt="1X2"]').first();
-  await expect(x12.locator('td.num')).toHaveText('42%');
+  await expect(x12.locator('td.num .ch3')).toHaveText(['1 33%', 'X 25%', '2 42%']);
+  await expect(x12.locator('td.num .ch3.is-sel')).toHaveText('2 42%');
   await x12.locator('.odd-pill[data-key="home"]').click();
-  await expect(x12.locator('td.num')).toHaveText('33%');
+  await expect(x12.locator('td.num .ch3.is-sel')).toHaveText('1 33%');
   await x12.locator('.odd-pill[data-key="draw"]').click();
-  await expect(x12.locator('td.num')).toHaveText('25%');
+  await expect(x12.locator('td.num .ch3.is-sel')).toHaveText('X 25%');
   const btts = page.locator('#tips tr[data-mkt="BTTS"]').first();
   await expect(btts.locator('td.num')).toHaveText('54%');
   await btts.locator('.odd-pill[data-key="btts-no"]').click();

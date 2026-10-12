@@ -13,6 +13,8 @@ import { findSharpBook, devigMultiplicative } from './pro/lib.mjs';
 import { fetchMatchContext, contextNotes } from './lib/match-context.mjs';
 import { extraOdds, matchExtraOdds } from './lib/extra-odds.mjs';
 import { clubEloFor } from './lib/club-elo.mjs';
+import { eloToLambdas, eloProbs } from './lib/elo-1x2.mjs';
+import { teamElo, TEAM_ELO_HOME_ADV } from './lib/team-elo.mjs';
 import { fillXg } from './lib/understat-xg.mjs';
 import { buildMissProfile, buildSystemMissProfiles, STRYK_LEAGUES } from './lib/stryk-miss-profile.mjs';
 import { calibrationTable, assessMatch, assessmentText } from './lib/stryk-calibration.mjs';
@@ -42,6 +44,10 @@ const PRODUCTS = [
 const SEED_DRAW = { stryktipset: 4972, europatipset: 2611 };
 // Hur mycket modellen vager mot Svenska Spels odds (marknaden ar skarpast; modellen fangar form/xG)
 const MODEL_W = Number(process.env.STRYK_MODEL_W ?? 0.1); // backtest 17 omg (221 matcher): odds ensamma logloss 1,062 vs 1,065 med 35 % modell -> 10 %
+// Andel av modelldelen som ar eget lag-Elo (scripts/lib/team-elo.mjs) i stallet for klubbmodellen. 0 = av.
+// Elo raknas pa langre historik (ELO_SEASONS) an klubbmodellen, sa att uppflyttade lag hunnit fa ratt niva.
+const ELO_W = Number(process.env.STRYK_ELO_W ?? 0);
+const ELO_SEASONS = ['2627', '2526', '2425', '2324', '2223'];
 const MODEL_W_THIN = Number(process.env.STRYK_MODEL_W_THIN ?? process.env.STRYK_MODEL_W ?? 0.1); // lite data (fa viktade matcher) eller landslag
 const PAYOUT_13 = 0.65 * 0.4; // 65 % aterbetalning, 40 % av potten till 13 ratt
 // Typisk omsattning per spel (minsta omsattning som utdelningen raknas med)
@@ -134,16 +140,28 @@ function readCsvMatches(file, league, season) {
   return out;
 }
 
-async function loadGroup(group) {
+async function loadGroup(group, seasons = SEASONS) {
   const all = [];
   for (const [code, fdCode] of Object.entries(FD[group])) {
-    for (const season of SEASONS) {
+    for (const season of seasons) {
       const f = await ensureCsv(code, fdCode, season);
       if (f) all.push(...readCsvMatches(f, code, season));
     }
   }
   await fillXg(all, log); // xG fran Understat dar CSV:n saknar det (2025/26 och aldre, topp 5)
   return all.sort((a, b) => a.date.localeCompare(b.date));
+}
+
+// Lag-Elo per land och cutoff (historiken laddas en gang)
+const eloHist = new Map();
+const eloAt = new Map();
+async function groupElo(group, cutoff) {
+  const key = `${group}|${cutoff}`;
+  if (!eloAt.has(key)) {
+    if (!eloHist.has(group)) eloHist.set(group, await loadGroup(group, [...new Set([...ELO_SEASONS, ...SEASONS])]));
+    eloAt.set(key, teamElo(eloHist.get(group), cutoff));
+  }
+  return eloAt.get(key);
 }
 
 // ---------- Viktad Poisson-modell (Maher) ----------
@@ -326,20 +344,6 @@ async function loadNationalElo() {
     log(`  Elo for landslag kunde inte hamtas: ${e.message}`);
     return new Map();
   }
-}
-
-// Elo-skillnad -> forvantat resultat -> malskillnad (Poisson med ~2,5 mal/match)
-function eloToLambdas(eloH, eloA, homeAdv = 100) {
-  const we = 1 / (10 ** (-(eloH + homeAdv - eloA) / 400) + 1);
-  const T = 2.5;
-  let lo = -2.4, hi = 2.4;
-  for (let i = 0; i < 40; i++) {
-    const s = (lo + hi) / 2;
-    const m = scoreMatrix((T + s) / 2, (T - s) / 2);
-    if (m.home + 0.5 * m.draw < we) lo = s; else hi = s;
-  }
-  const s = (lo + hi) / 2;
-  return { lh: (T + s) / 2, la: (T - s) / 2, we };
 }
 
 // ---------- Lagprofil for analysknappen ----------
@@ -758,6 +762,16 @@ async function analyzeDraw(product, draw, ctx, result) {
         a.h2h = h2h(fh, fa, g.all, cutoff);
         a.thin = Math.min(g.model.wSum.get(fh), g.model.wSum.get(fa)) < 8;
         a.basis = 'club';
+        if (ELO_W > 0) {
+          const el = await groupElo(group, cutoff);
+          const eh = el.get(fh), ea = el.get(fa);
+          if (eh != null && ea != null) {
+            const e = eloProbs(eh, ea, TEAM_ELO_HOME_ADV);
+            const ep = [e.home, e.draw, e.away];
+            a.teamElo = { home: Math.round(eh), away: Math.round(ea), probs: ep.map(r3), clubModel: a.model.map(r3) };
+            a.model = a.model.map((p, i) => (1 - ELO_W) * p + ELO_W * ep[i]);
+          }
+        }
       }
     } else if (hp?.isoCode && ap?.isoCode && ctx.elo.size) {
       const eh = ctx.elo.get(ISO_TO_ELO[hp.isoCode] || hp.isoCode.slice(0, 2));

@@ -77,13 +77,13 @@ function fmtKick(tip) {
   return `${dayTxt} · tid ej känd`;
 }
 
-/** Skrällens chans som kortet visar den (1X2-raden), annars Pinnacles. */
+/** Skrällens chans enligt datan (1X2-raden), annars Pinnacles. */
 const upsetChance = (tip) => tip.tips?.["1X2"]?.probs?.[{ 1: "home", 2: "away" }[tip.upset.pick]] ?? tip.upset.p;
 
 function noteLines(tip) {
   const parts = [];
-  if (tip.marketOnly) parts.push(`<span class="market-only">Marknadstips – chansen är ${escapeHtml(tip.marketSource || "marknaden")} utan marginal (ingen modell för denna liga)</span>`);
-  if (tip.marketLed) parts.push(`<span class="market-only">${escapeHtml((tip.marketLedNote || "Tidig säsong – marknadens chans styr tipset").replace(/\b(pinnacle|betfair)\b/g, capFirst))}</span>`);
+  if (tip.marketOnly) parts.push(`<span class="market-only">1X2-chansen ur ${tip.dataSource === "clubelo" ? "Klubb-Elo (clubelo.com)" : "lagmodellen"} – inget eget modelltips för matchen</span>`);
+  if (tip.marketLed) parts.push(`<span class="market-only">${escapeHtml((tip.marketLedNote || "Ö/U: marknadens chans styr – 1X2 är bara data").replace(/\b(pinnacle|betfair)\b/g, capFirst))}</span>`);
   if (tip.upset) {
     const u = tip.upset;
     const own = Math.round(upsetChance(tip) * 100);
@@ -386,6 +386,12 @@ function chanceFor(tip, mkt, key) {
 
 /** Chanscell: procenten för det valda utfallet. Utan valt utfall visas tippets confidence. */
 function chanceHtml(tip, mkt, key, fallback = null) {
+  // 1X2: chansen för alla tre tecknen (bara data, inga odds), valt tecken i fetstil
+  const pr = mkt === "1X2" ? tip.tips?.["1X2"]?.probs : null;
+  if (pr?.home != null) {
+    const one = (k, sign) => `<span class="ch3${k === key ? " is-sel" : ""}">${sign} ${fmtChance(pr[k])}</span>`;
+    return `<td class="num chance-1x2" title="Chans 1 / X / 2 – bedömd på data, inte på oddsen">${one("home", "1")}${one("draw", "X")}${one("away", "2")}</td>`;
+  }
   const p = key ? chanceFor(tip, mkt, key) : fallback;
   const label = key ? outcomeLabel(tip, mkt, key) : "";
   const title = label ? `Chans för ${label}` : "Chans";
@@ -495,7 +501,7 @@ function refereeBadge(r) {
   return `<span class="ref-badge ${kind}" title="Domarsvit: ${escapeHtml(r.referee)}">⚑ domare</span>`;
 }
 
-function tipCard(tip, i) {
+function tipCard(tip, i, { upset = false } = {}) {
   const t = tip.tips || {};
   const od = oddsCells(tip);
   const style = `animation-delay:${Math.min(i * 0.04, 0.4)}s`;
@@ -510,7 +516,8 @@ function tipCard(tip, i) {
       : roundRaw.replace(/^Matchday\s+/i, "Omg ");
 
   // Skräll med värde: skrälltecknet är kortets 1X2-tips (markerat, chans och värde för det tecknet)
-  const pick1 = tip.upset?.pick ?? t["1X2"]?.pick ?? "";
+  // 1X2-tipset är datans tecken – utom i Skrällar-raden, där skrälltecknet (oddsvärde) markeras. Chansen är alltid datans.
+  const pick1 = (upset && tip.upset?.pick) || (t["1X2"]?.pick ?? "");
   const pickB = t.BTTS?.pick ?? "";
   const pickO = String(t.OU25?.pick || "").toUpperCase();
   const ouKey = pickO.includes("OVER") ? "over" : pickO.includes("UNDER") ? "under" : "";
@@ -525,7 +532,7 @@ function tipCard(tip, i) {
   const cardKey = pickK.includes("OVER") ? "over" : pickK.includes("UNDER") ? "under" : "";
 
   // Chans att respektive tips går in (confidence), inte rå pYes/pOver
-  const conf1 = tip.upset ? tip.upset.p : t["1X2"]?.confidence;
+  const conf1 = t["1X2"]?.confidence;
   const confB = t.BTTS?.confidence;
   const confO = t.OU25?.confidence;
   const confC = c?.confidence;
@@ -778,7 +785,7 @@ function candRow(tip, { fold = false, upset = false, i = 0 } = {}) {
   const u = upset ? tip.upset : null;
   const pr = u ? { label: `★ ${u.pick}`, odds: u.odds, p: upsetChance(tip), verdict: "yes" } : primaryOf(tip);
   const odds = pr?.odds ? `<span class="cr-odds">@ ${escapeHtml(fmtOdd(pr.odds))}</span>` : "";
-  const body = fold ? `<div class="cand-body" data-loaded="1">${tipCard(tip, i)}</div>` : `<div class="cand-body"></div>`;
+  const body = fold ? `<div class="cand-body" data-loaded="1">${tipCard(tip, i, { upset: !!u })}</div>` : `<div class="cand-body"></div>`;
   return `<details class="cand-row${fold ? " fold-row" : ""}${u ? " upset-row" : ""}" data-tip-id="${escapeHtml(tipId(tip))}"${fold ? " open" : ""}>
     <summary>
       <time class="cr-time${tip.postponed ? " postponed" : ""}" data-league="${escapeHtml(tip.league || "")}">${escapeHtml(fmtKick(tip))}</time>
@@ -1122,6 +1129,7 @@ function renderAccuracy(acc) {
         <div class="sub">${a?.source === "tipsmotor"
           ? `${a.correct}/${a.tested} spelade ${a.season} · väntat ${fmtPct(a.expectedRate)} · ${scope}`
           : `${a?.correct ?? 0}/${a?.tested ?? 0} i backtest · ${scope}`}</div>
+        ${key === "1X2" && a?.market?.tested ? `<div class="sub">Bedömt utan odds · oddsfavoriten hade träffat ${fmtPct(a.market.rate)} (${a.market.correct}/${a.market.tested})</div>` : ""}
         ${key === "1X2" ? `<div class="acc-outcomes-label">Tipsens träff</div>${picksHtml(a?.byPick)}${outcomesHtml}` : ""}
         <div class="hint">Klicka för chansband</div>
       </button>`

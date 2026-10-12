@@ -193,13 +193,22 @@ test('Stryktipset: hänglås per match – låst går inte att ändra, Generera 
   await expect(r3).toHaveClass(/is-sealed/);
   for (const s of ['1', 'X', '2']) await expect(r3.locator(`.sb-sign[data-sign="${s}"]`)).toBeDisabled();
   await expect(view.locator('.sb-seal-count')).toContainText('13/13');
-  await expect(r3.locator('.sb-defall')).toHaveCount(0);
+  await expect(r3.locator('[data-defall-toggle]')).toBeDisabled();
 
   // Låsa upp: går att ändra igen
   await r3.locator('.sb-seal').click();
   await expect(r3).not.toHaveClass(/is-sealed/);
   await expect(r3.locator('.sb-sign[data-sign="1"]')).toBeEnabled();
+  // A/B/C % som inte blir 100 % stoppar låset (2026-10-12)
+  await r3.locator('[data-defall-toggle]').click();
+  await r3.locator('input[data-defall-sys="B"][data-defall="1"]').fill('90');
+  await r3.locator('input[data-defall-sys="B"][data-defall="1"]').dispatchEvent('change');
   await r3.locator('.sb-seal').click();
+  await expect(r3.locator('.sb-row-err')).toContainText('Kan inte låsa: B-raden');
+  await expect(r3).not.toHaveClass(/is-sealed/);
+  await r3.locator('[data-defall-model]').click();
+  await r3.locator('.sb-seal').click();
+  await expect(r3).toHaveClass(/is-sealed/);
 
   // Allt låst: Generera kör
   await page.locator('#sb-generate').click();

@@ -18,6 +18,7 @@ import { buildRefIndex, loadRefereeMatches, refereeFlags, refKey, REF_LEAGUES, r
 import { buildCardIndex, CARD_CFG, pickCardLine, predictCards } from './lib/cards-model.mjs';
 import { DRAW_LEAGUES, DRAW_MARGIN, pick1x2 } from './lib/pick-1x2.mjs';
 import { findUpset } from './lib/upset-pick.mjs';
+import { eloProbs, findClubElo } from './lib/elo-1x2.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const P = {
@@ -27,6 +28,7 @@ const P = {
   fixtures: path.join(root, 'data', 'upcoming-fixtures.json'),
   odds: path.join(root, 'data', 'open', 'upcoming_odds.json'),
   oddsportal: path.join(root, 'data', 'open', 'oddsportal_odds.json'),
+  clubEloAll: path.join(root, 'data', 'open', 'clubelo_all.json'),
   weatherHistory: path.join(root, 'data', 'open', 'weather_history.json'),
   referees: path.join(root, 'data', 'open', 'referees.json'),
   refHistory: path.join(root, 'data', 'open', 'referee_history.json'),
@@ -131,7 +133,7 @@ const weatherHistory = fs.existsSync(P.weatherHistory) ? readJson(P.weatherHisto
 const evaluation = evaluate();
 evaluation.drawCalibrationBlend = drawCalibrationBlend(evaluation.rowsByLeague);
 evaluation.marketTest = marketTest(evaluation.rowsByLeague);
-evaluation.tipAccuracy = tipAccuracy(evaluation.rowsByLeague, evaluation.marketTest);
+evaluation.tipAccuracy = tipAccuracy(evaluation.rowsByLeague);
 evaluation.weatherEffect = weatherEffect();
 evaluation.playerEffect = playerEffect(evaluation.rowsByLeague);
 delete evaluation.rowsByLeague;
@@ -268,6 +270,10 @@ function buildPro(t) {
   const blended = { home: blend('home'), draw: blend('draw'), away: blend('away'), over25: blend('over25'), btts: blend('btts') };
   const s = blended.home + blended.draw + blended.away;
   blended.home /= s; blended.draw /= s; blended.away /= s;
+  // 1X2 utan odds (anvandaren 2026-10-12: "skit i vad oddset sager, basera allt pa data"): Dixon-Coles + grundmodell,
+  // franvaro och vila - innan marknaden vags in nedan. Oddset-tipsets 1X2 tas harifran; blended (marknadsstyrd)
+  // lever kvar for Ö/U och for Stryktipset/Europatipset som ar bakkorda mot den.
+  const data = blended.home > 0 ? { home: blended.home, draw: blended.draw, away: blended.away, source: t.dataSource ?? (dc ? 'dc' : 'grund') } : null;
 
   const ev = findLiveOdds(t);
   if (ev) usedEvents.add(ev);
@@ -416,6 +422,7 @@ function buildPro(t) {
       knownTeams: dc.knownTeams,
     },
     blended: Object.fromEntries(Object.entries(blended).map(([k, v]) => [k, round(v)])),
+    data: data && { home: round(data.home), draw: round(data.draw), away: round(data.away), source: data.source },
     marketLed,
     market,
     valueBets,
@@ -486,30 +493,29 @@ function applyDrawRule(t) {
   t.tips['1X2'] = { ...rest, pick, confidence: round(confidence, 3), ...(drawRule ? { drawRule, drawNote: drawNote(drawRule, t.league) } : {}) };
 }
 
-// Marknadsstyrt tips: 1X2 (och O/U om facit finns) fran marknaden, modellens tips sparas i modelTips
+// Tipset pa kortet: 1X2 alltid ur pro.data (bara data, inga odds). Ö/U fran marknaden nar marketLed har facit for den.
+// Modellens ursprungliga tips sparas i modelTips (idempotent: varje korning utgar fran dem).
 function applyMarketLed(t) {
+  if (t.modelTips) t.tips = t.modelTips;
+  delete t.modelTips;
+  delete t.marketLed;
+  delete t.marketLedNote;
+  const d = t.pro?.data;
   const ml = t.pro?.marketLed;
-  if (!ml) {
-    // Lagen har passerat de tidiga omgangarna (eller ligan tunats om): tillbaka till modellens tips
-    if (t.modelTips) t.tips = t.modelTips;
-    delete t.modelTips;
-    delete t.marketLed;
-    delete t.marketLedNote;
-    applyDrawRule(t);
-    return;
+  if (d || ml?.sourceOu) t.modelTips = structuredClone(t.tips);
+  if (d) {
+    const probs = { home: d.home, draw: d.draw, away: d.away };
+    t.tips['1X2'] = { ...t.tips['1X2'], probs: Object.fromEntries(Object.entries(probs).map(([k, v]) => [k, round(v, 3)])), source: d.source };
   }
-  t.modelTips ??= structuredClone(t.tips);
-  const b = t.pro.blended;
-  const probs = { home: b.home, draw: b.draw, away: b.away };
-  t.tips['1X2'] = { ...t.tips['1X2'], probs: Object.fromEntries(Object.entries(probs).map(([k, v]) => [k, round(v, 3)])) };
   applyDrawRule(t);
-  if (ml.sourceOu) {
+  if (ml?.sourceOu) {
+    const b = t.pro.blended;
     t.tips.OU25 = { ...t.tips.OU25, pick: b.over25 >= 0.5 ? 'OVER 2.5' : 'UNDER 2.5', confidence: round(Math.max(b.over25, 1 - b.over25), 3), pOver: round(b.over25, 3) };
+    t.marketLed = true;
+    t.marketLedNote = ml.kind === 'backtest'
+      ? `Ö/U: oddsen (${ml.sourceOu}) styr – de var bättre än modellen i backtest. 1X2 är bara data.`
+      : `Ö/U: tidig säsong – marknadens chans (${ml.sourceOu}) styr tills lagen spelat ${ml.rounds} ligamatcher. 1X2 är bara data.`;
   }
-  t.marketLed = true;
-  t.marketLedNote = ml.kind === 'backtest'
-    ? `Oddsen (${String(ml.source).replace(/^./, (c) => c.toUpperCase())}) styr tipset – de var bättre än modellen i backtest (${ml.n} matcher)${ml.modelW ? `, modellen väger ${Math.round(ml.modelW * 100)} %` : ''}`
-    : `Tidig säsong – marknadens chans (${ml.source}) styr tipset tills lagen spelat ${ml.rounds} ligamatcher`;
 }
 
 // ---------- Franvaro live: FPL (PL) + bekraftade elvor (ESPN) ----------
@@ -591,8 +597,9 @@ function availabilityInfo(t) {
 }
 
 /**
- * Tipsrader for oddsmatcher som saknar modelltips (cuper, Superettan, lag utan historik).
- * Sannolikheten ar Pinnacles/Betfairs marginalfria odds - samma facit som vardeomdomet.
+ * Tipsrader for oddsmatcher som saknar modelltips (cuper, Superettan, lag utan historik, matcher bortom omgangen).
+ * 1X2-chansen ar bara data (anvandaren 2026-10-12): ligans Dixon-Coles om den kanner bada lagen, annars Klubb-Elo
+ * (clubelo.com, cache data/open/clubelo_all.json). Utan nagon av dem blir det inget tips. Oddsen ar bara vardefacit.
  */
 function marketOnlyCandidates() {
   const limit = new Date(Date.now() + 21 * 86_400_000).toISOString(); // samma horisont som modelltipsen
@@ -613,11 +620,7 @@ function marketOnlyCandidates() {
       const ps = books.map((b) => devigMultiplicative(keys.map((k) => b[k]))).filter(Boolean);
       return ps.length ? keys.map((_, i) => ps.reduce((s, p) => s + p[i], 0) / ps.length) : null;
     };
-    const f1 = sharp ? devigMultiplicative([sharp.home, sharp.draw, sharp.away]) : avgOf(['home', 'draw', 'away']);
-    if (!f1) continue;
     const fOu = sharp ? devigMultiplicative([sharp.over25, sharp.under25]) : avgOf(['over25', 'under25']);
-    const probs = { home: f1[0], draw: f1[1], away: f1[2] };
-    const { pick, confidence: conf, drawRule } = pick1x2(probs, e.league);
     const pOver = fOu?.[0] ?? null;
     const ouConf = pOver == null ? null : Math.max(pOver, 1 - pOver);
     // Samma match i spelschemat -> omgang + schemats lagnamn (GUI visar bara nasta omgang per liga)
@@ -626,6 +629,10 @@ function marketOnlyCandidates() {
     const home = fx?.home ?? e.homeRaw ?? e.home;
     const away = fx?.away ?? e.awayRaw ?? e.away;
     const date = fx?.date ?? e.commence.slice(0, 10);
+    const est = dataProbs(e.league, home, away);
+    if (!est) continue;
+    const probs = { home: est.home, draw: est.draw, away: est.away };
+    const { pick, confidence: conf, drawRule } = pick1x2(probs, e.league);
     // Matchen har redan ett modelltips under schemats namn (oddshandelsen matchades inte dar) -> inget dubblett-marknadstips
     const sameTip = (t) => t.league === e.league && Math.abs(daysBetween(t.date, date)) <= 1 && sameTeamName(t.home, home) && sameTeamName(t.away, away);
     if ((tips.allCandidates ?? []).some((t) => !t.marketOnly && sameTip(t))) continue;
@@ -646,13 +653,28 @@ function marketOnlyCandidates() {
       },
       tipScore: round(ouConf == null ? conf : (conf + ouConf) / 2, 3),
       marketOnly: true,
+      dataSource: est.source,
+      ...(est.clubElo ? { clubElo: est.clubElo } : {}),
       marketSource: sharp ? (/pinnacle/i.test(sharp.key) ? 'Pinnacle' : 'Betfair Exchange') : `snitt av ${books.length} bolag`,
-      note: `Marknadstips (${sharp ? (/pinnacle/i.test(sharp.key) ? 'Pinnacle' : 'Betfair Exchange') : `snitt av ${books.length} bolag`} utan marginal) - ingen modell for denna liga/match`,
+      note: `1X2 ur ${est.source === 'dc' ? 'lagmodellen (Dixon-Coles)' : 'Klubb-Elo'} - inget eget modelltips for matchen, oddsen bara vardefacit`,
       _ev: e,
     });
   }
   for (const r of rows) delete r._ev;
   return rows;
+}
+
+// Oddsfri 1X2 for en match utan modelltips: ligans Dixon-Coles om den kanner bada lagen, annars Klubb-Elo
+var clubEloCache; // eslint-disable-line no-var
+function dataProbs(league, home, away) {
+  const model = models[league];
+  const dc = model ? predictDixonColes(model, home, away, 10, { home: 1, away: 1 }) : null;
+  if (dc?.knownTeams) return { home: dc.home, draw: dc.draw, away: dc.away, source: 'dc' };
+  const elo = (clubEloCache ??= fs.existsSync(P.clubEloAll) ? readJson(P.clubEloAll) : { countries: {} });
+  const [h, a] = [findClubElo(home, elo), findClubElo(away, elo)];
+  if (!h || !a) return null;
+  const p = eloProbs(h.elo, a.elo);
+  return { home: p.home, draw: p.draw, away: p.away, source: 'clubelo', clubElo: { home: h.elo, away: a.elo } };
 }
 
 /**
@@ -1258,7 +1280,7 @@ function pct(x) {
  * med testad DC-vikt. Ovriga: DC 50 % + grundmodellen (base-backtest.json, bara 2026/27), annars DC ensam.
  * Webben visade tidigare bara grundmodellens traff, som inte ar det som tippas. Per match: data/reports/tips-backtest.json.
  */
-function tipAccuracy(rowsByLeague, mTest) {
+function tipAccuracy(rowsByLeague) {
   const hist = fs.existsSync(P.oddsHistory) ? readJson(P.oddsHistory).matches ?? {} : {};
   const baseFile = path.join(root, 'data', 'reports', 'base-backtest.json');
   const base = new Map((fs.existsSync(baseFile) ? readJson(baseFile).rows ?? [] : [])
@@ -1267,16 +1289,13 @@ function tipAccuracy(rowsByLeague, mTest) {
   const picks = ['1', 'X', '2'];
   const hf = (s) => (s?.fair?.home != null ? [s.fair.home, s.fair.draw, s.fair.away] : null);
   const newAgg = () => ({
-    n: 0, correct: 0, expected: 0, variance: 0, homeWins: 0, draws: 0, missDraw: 0, missUpset: 0,
+    n: 0, correct: 0, expected: 0, variance: 0, marketN: 0, marketCorrect: 0, homeWins: 0, draws: 0, missDraw: 0, missUpset: 0,
     byPick: { 1: [0, 0], X: [0, 0], 2: [0, 0] }, bySource: { odds: [0, 0], modell: [0, 0] },
     bands: { ge70: [0, 0], b60_69: [0, 0], b50_59: [0, 0], under50: [0, 0] },
   });
   const perMatch = [];
   const out = {};
   for (const [league, rows] of Object.entries(rowsByLeague)) {
-    const mt = mTest[league];
-    const test = mt?.vsOpening?.n >= 60 ? mt.vsOpening : mt?.vsClosing?.n >= 60 ? mt.vsClosing : null;
-    const modelW = test?.modelAddsInfo ? test.bestW : 0;
     const bySeason = {};
     for (const { m, dc, sharpClose } of rows) {
       if (!idx.hasOwnProperty(m.result)) continue;
@@ -1287,9 +1306,10 @@ function tipAccuracy(rowsByLeague, mTest) {
         ?? devigMultiplicative([m.odds?.pinnacle_home, m.odds?.pinnacle_draw, m.odds?.pinnacle_away])
         ?? devigMultiplicative([m.odds?.home, m.odds?.draw, m.odds?.away]) ?? hf(hist[key]?.first);
       const st = base.get(key) ?? null;
-      const src = test && market ? 'odds' : 'modell';
-      const p = src === 'odds' ? market.map((x, i) => (1 - modelW) * x + modelW * d[i])
-        : st ? d.map((x, i) => CONFIG.dcWeight * x + (1 - CONFIG.dcWeight) * st[i]) : d;
+      // Live-tipset bedoms utan odds sedan 2026-10-12 -> traffrutan raknar samma sak: Dixon-Coles + grundmodell.
+      // Oddsens tecken raknas bredvid (marketCorrect) sa man ser vad det kostar/ger att strunta i dem.
+      const src = 'modell';
+      const p = st ? d.map((x, i) => CONFIG.dcWeight * x + (1 - CONFIG.dcWeight) * st[i]) : d;
       const pick = p.indexOf(Math.max(...p));
       const act = idx[m.result];
       const hit = pick === act;
@@ -1297,6 +1317,7 @@ function tipAccuracy(rowsByLeague, mTest) {
       a.n++; a.expected += p[pick]; a.variance += p[pick] * (1 - p[pick]);
       if (hit) a.correct++; else if (act === 1) a.missDraw++; else a.missUpset++;
       if (act === 0) a.homeWins++;
+      if (market) { a.marketN++; if (market.indexOf(Math.max(...market)) === act) a.marketCorrect++; }
       if (act === 1) a.draws++;
       a.byPick[picks[pick]][0]++; if (hit) a.byPick[picks[pick]][1]++;
       a.bySource[src][0]++; if (hit) a.bySource[src][1]++;
@@ -1313,7 +1334,8 @@ function tipAccuracy(rowsByLeague, mTest) {
       // z < -2: samre an tipsens egna procent lovade (systematiskt), annars inom slumpen
       zVsExpected: round((a.correct - a.expected) / Math.sqrt(Math.max(1e-9, a.variance)), 2),
       homeRate: round(a.homeWins / a.n, 4), drawRate: round(a.draws / a.n, 4),
-      missDraw: a.missDraw, missUpset: a.missUpset, modelW,
+      missDraw: a.missDraw, missUpset: a.missUpset, modelW: 0,
+      market: a.marketN ? { tested: a.marketN, correct: a.marketCorrect, rate: round(a.marketCorrect / a.marketN, 4) } : null,
       byPick: Object.fromEntries(Object.entries(a.byPick).map(([k, [n, c]]) => [k, { tested: n, correct: c, rate: n ? round(c / n, 4) : 0 }])),
       bySource: Object.fromEntries(Object.entries(a.bySource).map(([k, [n, c]]) => [k, { tested: n, correct: c, rate: n ? round(c / n, 4) : null }])),
       bands: Object.fromEntries(Object.entries(a.bands).map(([k, [n, c]]) => [k, { tested: n, correct: c, rate: n ? round(c / n, 4) : 0 }])),
@@ -1321,7 +1343,7 @@ function tipAccuracy(rowsByLeague, mTest) {
   }
   writeJson(path.join(root, 'data', 'reports', 'tips-backtest.json'), {
     updatedAt: new Date().toISOString(),
-    note: 'Tipsmotorns 1X2 per spelad match (point-in-time). source = odds (oddsstyrd liga) eller modell. p = motorns chans, dc = Dixon-Coles, base = grundmodellen, market = oddsen utan marginal.',
+    note: 'Tipsmotorns 1X2 per spelad match (point-in-time), bedomd utan odds sedan 2026-10-12. source = modell. p = motorns chans, dc = Dixon-Coles, base = grundmodellen, market = oddsen utan marginal.',
     matches: perMatch,
   });
   return out;
@@ -1332,10 +1354,10 @@ function applyTipAccuracy(tips, acc) {
   const season = Object.values(acc).flatMap((s) => Object.keys(s)).sort().at(-1);
   if (!season) return;
   const labels = { ge70: '70%+', b60_69: '60-69.9%', b50_59: '50-59.9%', under50: 'Under 50%' };
-  const total = { tested: 0, correct: 0, expected: 0, byPick: { 1: [0, 0], X: [0, 0], 2: [0, 0] }, bands: {} };
+  const total = { tested: 0, correct: 0, expected: 0, mN: 0, mC: 0, byPick: { 1: [0, 0], X: [0, 0], 2: [0, 0] }, bands: {} };
   const toOut = (a) => ({
     tested: a.n, correct: a.correct, rate: a.rate, expectedRate: a.expectedRate, zVsExpected: a.zVsExpected,
-    byPick: a.byPick, source: 'tipsmotor', season,
+    byPick: a.byPick, source: 'tipsmotor', season, market: a.market,
   });
   const bandsOut = (b) => {
     const o = Object.fromEntries(Object.entries(b).map(([k, v]) => [k, { label: labels[k], ...v }]));
@@ -1353,6 +1375,7 @@ function applyTipAccuracy(tips, acc) {
     tips.accuracyByLeague[lg]['1X2'] = { ...toOut(a), modelOnly: prev?.source === 'tipsmotor' ? prev.modelOnly : prev ?? null };
     (tips.accuracyByConfidenceByLeague[lg] ??= {})['1X2'] = bandsOut(a.bands);
     total.tested += a.n; total.correct += a.correct; total.expected += a.expectedRate * a.n;
+    total.mN += a.market?.tested ?? 0; total.mC += a.market?.correct ?? 0;
     for (const k of ['1', 'X', '2']) { total.byPick[k][0] += a.byPick[k].tested; total.byPick[k][1] += a.byPick[k].correct; }
     for (const [k, v] of Object.entries(a.bands)) {
       const t = (total.bands[k] ??= { tested: 0, correct: 0 });
@@ -1367,6 +1390,7 @@ function applyTipAccuracy(tips, acc) {
     expectedRate: round(total.expected / total.tested, 4),
     byPick: Object.fromEntries(Object.entries(total.byPick).map(([k, [n, c]]) => [k, { tested: n, correct: c, rate: n ? round(c / n, 4) : 0 }])),
     source: 'tipsmotor', season, modelOnly: prev?.source === 'tipsmotor' ? prev.modelOnly : prev ?? null,
+    market: total.mN ? { tested: total.mN, correct: total.mC, rate: round(total.mC / total.mN, 4) } : null,
   };
   tips.accuracyByConfidence ??= {};
   tips.accuracyByConfidence['1X2'] = bandsOut(Object.fromEntries(Object.entries(total.bands)
