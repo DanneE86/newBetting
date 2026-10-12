@@ -283,7 +283,6 @@ const poolAll = { all: poolStats(pool), stryktipset: poolStats(pool.filter((m) =
 
 // ---------------------------------------------------------------- per lag
 console.log('Analyserar lag ...');
-const currentSeasonOf = (league) => seasonsByLeague[league].at(-1);
 const teams = {};
 for (const league of Object.keys(leagues)) {
   const seasons = seasonsByLeague[league];

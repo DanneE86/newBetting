@@ -26,7 +26,7 @@ const sel = (key) => `[data-se-key="${CSS.escape(key)}"]`;
 /** Knappen "Startelva" (lägg i matchkortets knapprad). */
 export function startelvaButton(key, { cls = "" } = {}) {
   const s = st(key);
-  return `<button type="button" class="btn-startelva ${cls}" data-se-toggle data-se-key="${esc(key)}" aria-expanded="${s.open}"
+  return `<button type="button" class="btn-startelva ds-btn ds-btn--secondary ds-btn--sm ${cls}" data-se-toggle data-se-key="${esc(key)}" aria-expanded="${s.open}"
     title="Startelvan på planen – klicka på en spelare för att jämföra mot motståndaren">${s.open ? "Dölj startelva" : "Startelva"}</button>`;
 }
 
@@ -91,7 +91,7 @@ function panelBody(key, s) {
   if (s.error) return `<p class="se-empty">${esc(s.error)}</p>`;
   const v = s.data;
   if (!v) return "";
-  const refresh = `<button type="button" class="btn-ghost se-refresh" data-se-refresh data-se-key="${esc(key)}" ${s.loading ? "disabled" : ""}
+  const refresh = `<button type="button" class="btn-ghost se-refresh ds-btn ds-btn--secondary ds-btn--sm" data-se-refresh data-se-key="${esc(key)}" ${s.loading ? "disabled" : ""}
     title="Hämta elvan från FotMob nu (den officiella släpps ungefär en timme före avspark)">${s.loading ? "Hämtar…" : v.ok ? "Hämta om elvan" : "Hämta startelva"}</button>`;
   if (!v.ok) return `<div class="se-head"><span class="se-chip">Ingen elva</span>${refresh}</div><p class="se-empty">${esc(v.reason || v.error || "Ingen startelva")}</p>`;
 
@@ -102,9 +102,9 @@ function panelBody(key, s) {
   const pair = free ? s.pick : s.sel ? s.sel.split("-") : [];
   const focus = free ? null : s.focus ?? null;
   const marked = new Set(pair.map(String));
-  const modeBtn = `<button type="button" class="se-mode${free ? " is-on" : ""}" data-se-mode data-se-key="${esc(key)}" aria-pressed="${free}">${free ? "Tillbaka till dueller" : "Jämför två valfria spelare"}</button>`;
+  const modeBtn = `<button type="button" class="se-mode ds-toggle" data-se-mode data-se-key="${esc(key)}" aria-pressed="${free}">${free ? "Tillbaka till dueller" : "Jämför två valfria spelare"}</button>`;
   const freeHint = free
-    ? `<div class="se-pickbar">${s.pick.length === 2 ? "Jämför" : "Klicka på två spelare på planen (vilket lag som helst)"}${s.pick.map((id) => ` <b>${esc(P[id]?.short)}</b>`).join(" och")}${s.pick.length ? ` <button type="button" class="se-alt" data-se-clear data-se-key="${esc(key)}">Rensa val</button>` : ""}</div>`
+    ? `<div class="se-pickbar">${s.pick.length === 2 ? "Jämför" : "Klicka på två spelare på planen (vilket lag som helst)"}${s.pick.map((id) => ` <b>${esc(P[id]?.short)}</b>`).join(" och")}${s.pick.length ? ` <button type="button" class="se-clear ds-btn ds-btn--tertiary ds-btn--sm" data-se-clear data-se-key="${esc(key)}">Rensa val</button>` : ""}</div>`
     : "";
 
   const out = (t) => (t.unavailable?.length ? `<div class="se-note"><b>${esc(t.name)}</b> saknar: ${t.unavailable.map((u) => `${esc(u.name)}${u.type ? ` (${u.type === "injury" ? "skada" : u.type === "suspension" ? "avstängd" : esc(u.type)})` : ""}`).join(", ")}</div>` : "");
@@ -192,7 +192,7 @@ function playerHead(p, team) {
     <div class="se-ph-n"><span class="se-dot se-${p.team}"></span><b>${esc(p.name)}</b> <span class="se-sub">${esc(team)}</span></div>
     <div class="se-sub">${esc(bits)}</div>
     <div class="se-sub">${esc(basis)}${p.injury ? ` · <span class="se-warn">skadad: ${esc(p.injury)}</span>` : ""}</div>
-    ${p.noData ? "" : `<button type="button" class="se-alt se-card-btn" data-pc-open="${esc(p.id)}">Spindel mot ligan och alla stats</button>`}
+    ${p.noData ? "" : `<button type="button" class="se-card-btn ds-btn ds-btn--secondary ds-btn--sm" data-pc-open="${esc(p.id)}">Spindel mot ligan och alla stats</button>`}
   </div>`;
 }
 
@@ -231,7 +231,7 @@ function compareHtml(v, s) {
   // Andra motståndare för spelaren man klickade på
   const f = s.focus != null ? v.players[s.focus] : null;
   const alts = f ? (v.opponents[f.id] || []).filter((o) => String(o) !== String(f.id === a.id ? b.id : a.id)) : [];
-  const altHtml = f && alts.length ? `<div class="se-alts">Jämför ${esc(f.short)} med: ${alts.map((o) => `<button type="button" class="se-alt" data-se-vs="${esc(f.id)}-${esc(o)}">${esc(v.players[o].short)} <small>${esc(v.players[o].roleLabel.toLowerCase())}</small></button>`).join("")}</div>` : "";
+  const altHtml = f && alts.length ? `<div class="se-alts">Jämför ${esc(f.short)} med: ${alts.map((o) => `<button type="button" class="se-alt ds-toggle" data-se-vs="${esc(f.id)}-${esc(o)}">${esc(v.players[o].short)} <small>${esc(v.players[o].roleLabel.toLowerCase())}</small></button>`).join("")}</div>` : "";
 
   const aspects = c.aspects.map((x) => `<div class="se-aspect">
       <div class="se-aspect-h"><span>${esc(x.title)}</span>${whoBadge(v, pk, x.who, x.level)}</div>

@@ -24,7 +24,7 @@ import zlib from "node:zlib";
 import { fileURLToPath } from "node:url";
 import { normalizeGame, analyzeGame } from "./lib/trav-model.mjs";
 import { listGames, fetchGame, fetchGameInfo } from "./fetch-hastar.mjs";
-import { BUDGETS, rowPrice, TOP_SHARE, MIN_TOP, buildSystem, reduceSystem, buildValueSystem, defaultAlpha } from "../gui/public/hast-engine.js";
+import { BUDGETS, rowPrice, TOP_SHARE, MIN_TOP, RAD_TOP, buildSystem, buildBigSystem, reduceSystem, buildValueSystem, defaultAlpha } from "../gui/public/hast-engine.js";
 import { addPrizes, addExtras, lacksExtras, legWinners, isSettled, rowsByCorrect, rowsByCorrectList, settle, summarize } from "./lib/hast-sasong.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -140,8 +140,9 @@ async function completeSeason() {
 
 /**
  * Spelar varje budget på varje omgång. Varianter: rakt (som knapparna), reducerat (utgång 4×, inga villkor), streck
- * (folkets system), utdelning (buildValueSystem: högst förväntad utdelning), skrallN (reducerat, utgång 16×, minst N
- * hästar under 10 % streck per rad, t.ex. skrall2/skrall3/skrall4). alpha "standard" = defaultAlpha(spelform), som i webben.
+ * (folkets system), storvinst (buildBigSystem, standard sedan 2026-10-11), utdelning (buildValueSystem: högst förväntad utdelning), skrallN (reducerat, utgång 16×, minst N
+ * hästar under 10 % streck per rad, t.ex. skrall2/skrall3/skrall4), rad50k (50 000-systemet: reducerat, utgång 16×, varje rad
+ * minst RAD_TOP kr; sparar utgångssystemet så att man ser om vinnarraden föll i reduceringen). alpha "standard" = defaultAlpha(spelform), som i webben.
  */
 export function runBacktest(games, { budgets = BUDGETS, alpha = 0.5, minTop = MIN_TOP, optsFor = () => ({}), variants = ["rakt", "reducerat", "streck"], sims = 2000 } = {}) {
   const has = (v) => variants.includes(v);
@@ -153,6 +154,8 @@ export function runBacktest(games, { budgets = BUDGETS, alpha = 0.5, minTop = MI
     const mktLegs = a.races.map((r) => ({ leg: r.leg, number: r.number, horses: r.horses.map((h) => ({ ...h, p: h.marketPct })) }));
     const winners = legWinners(game);
     const row = { id: game.id, type: game.type, date: game.date, track: game.track, turnover: game.turnover, legs: winners.length, winners, payouts: game.payouts, by: {} };
+    // Per avdelning: [nr, modellchans, streck, rank] för varje häst – underlag för att se vilka vinnare systemet missar
+    row.field = a.races.map((r) => r.horses.filter((h) => !h.scratched).map((h) => [h.nr, Math.round(h.p * 10000) / 10000, h.marketPct == null ? null : Math.round(h.marketPct * 10000) / 10000, h.rank]));
     const al = alpha === "standard" ? defaultAlpha(game.type) : alpha;
     for (const budget of budgets) {
       const topShare = TOP_SHARE[game.type] ?? 0.25;
@@ -161,6 +164,11 @@ export function runBacktest(games, { budgets = BUDGETS, alpha = 0.5, minTop = MI
         const s = buildSystem(legs, { budget, price, alpha: al, minTop, topShare });
         const sysLegs = s.legs.map((l) => l.horses);
         by.rakt = { ...settle(rowsByCorrect(sysLegs, winners), game.payouts, price), system: sysLegs };
+      }
+      if (has("storvinst")) {
+        const s = buildBigSystem(legs, { budget, price, minTop, topShare });
+        const sysLegs = s.legs.map((l) => l.horses);
+        by.storvinst = { ...settle(rowsByCorrect(sysLegs, winners), game.payouts, price), system: sysLegs };
       }
       if (has("reducerat")) {
         const r = reduceSystem(legs, {}, { budget, price, alpha: al, expand: 4, minTop, topShare });
@@ -178,6 +186,10 @@ export function runBacktest(games, { budgets = BUDGETS, alpha = 0.5, minTop = MI
       for (const v of variants.filter((x) => /^skrall\d$/.test(x))) {
         const r = reduceSystem(legs, { minSkrall: Number(v.slice(6)) }, { budget, price, alpha: al, expand: 16, minTop, topShare });
         by[v] = settle(rowsByCorrectList(r.rows, winners), game.payouts, price);
+      }
+      if (has("rad50k")) {
+        const r = reduceSystem(legs, { minRowTop: RAD_TOP }, { budget, price, alpha: al, expand: 16, minTop, topShare });
+        by.rad50k = { ...settle(rowsByCorrectList(r.rows, winners), game.payouts, price), base: r.base.legs.map((l) => l.horses), rows: r.rows.length, passed: r.passed };
       }
       row.by[budget] = by;
     }

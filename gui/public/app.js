@@ -77,10 +77,19 @@ function fmtKick(tip) {
   return `${dayTxt} · tid ej känd`;
 }
 
+/** Skrällens chans som kortet visar den (1X2-raden), annars Pinnacles. */
+const upsetChance = (tip) => tip.tips?.["1X2"]?.probs?.[{ 1: "home", 2: "away" }[tip.upset.pick]] ?? tip.upset.p;
+
 function noteLines(tip) {
   const parts = [];
   if (tip.marketOnly) parts.push(`<span class="market-only">Marknadstips – chansen är ${escapeHtml(tip.marketSource || "marknaden")} utan marginal (ingen modell för denna liga)</span>`);
   if (tip.marketLed) parts.push(`<span class="market-only">${escapeHtml((tip.marketLedNote || "Tidig säsong – marknadens chans styr tipset").replace(/\b(pinnacle|betfair)\b/g, capFirst))}</span>`);
+  if (tip.upset) {
+    const u = tip.upset;
+    const own = Math.round(upsetChance(tip) * 100);
+    const sharp = Math.round(u.p * 100);
+    parts.push(`<span class="upset-note">★ Skräll med värde: ${escapeHtml(u.pick)} till ${escapeHtml(fmtOdd(u.odds))}${u.bookmaker ? ` hos ${escapeHtml(u.bookmaker)}` : ""} – chans ${own} %${own !== sharp ? ` (Pinnacle ${sharp} %, värdet räknas mot den)` : ""}, betalar ${Math.round(u.ev * 100)} % över rätt pris</span>`);
+  }
   if (tip.tips?.["1X2"]?.drawRule) parts.push(`<span class="market-only">${escapeHtml(tip.tips["1X2"].drawNote || "Kryss: X ligger nära favoriten")}</span>`);
   if (tip.lineupStatus && tip.lineupStatus !== "none") {
     const cls = tip.lineupStatus === "confirmed" ? "xi-confirmed" : "xi-pending";
@@ -500,7 +509,8 @@ function tipCard(tip, i) {
       ? roundRaw.split("-").map(capFirst).join(" ") // "torneo-clausura" -> "Torneo Clausura"
       : roundRaw.replace(/^Matchday\s+/i, "Omg ");
 
-  const pick1 = t["1X2"]?.pick ?? "";
+  // Skräll med värde: skrälltecknet är kortets 1X2-tips (markerat, chans och värde för det tecknet)
+  const pick1 = tip.upset?.pick ?? t["1X2"]?.pick ?? "";
   const pickB = t.BTTS?.pick ?? "";
   const pickO = String(t.OU25?.pick || "").toUpperCase();
   const ouKey = pickO.includes("OVER") ? "over" : pickO.includes("UNDER") ? "under" : "";
@@ -515,7 +525,7 @@ function tipCard(tip, i) {
   const cardKey = pickK.includes("OVER") ? "over" : pickK.includes("UNDER") ? "under" : "";
 
   // Chans att respektive tips går in (confidence), inte rå pYes/pOver
-  const conf1 = t["1X2"]?.confidence;
+  const conf1 = tip.upset ? tip.upset.p : t["1X2"]?.confidence;
   const confB = t.BTTS?.confidence;
   const confO = t.OU25?.confidence;
   const confC = c?.confidence;
@@ -592,7 +602,7 @@ function tipCard(tip, i) {
       ${refereeBox(tip.referee, tip.home, tip.away)}
       <div class="team-panel" hidden></div>
 
-      <table class="tip-table">
+      <table class="tip-table ds-table">
         <colgroup><col class="c-mkt" /><col class="c-odds" /><col class="c-num" /><col class="c-val" /></colgroup>
         <thead>
           <tr>
@@ -655,18 +665,18 @@ function tipCard(tip, i) {
       ${detailsHtml(tip)}
       <div class="tip-analyze">
         <div class="tip-actions">
-          <button type="button" class="btn-analyze" aria-expanded="false"
+          <button type="button" class="btn-analyze ds-btn ds-btn--secondary ds-btn--sm" aria-expanded="false"
             data-league="${escapeHtml(tip.league || "")}" data-date="${escapeHtml(tip.date || "")}"
             data-home="${escapeHtml(tip.home || "")}" data-away="${escapeHtml(tip.away || "")}">Analys</button>
-          <button type="button" class="btn-lineup"
+          <button type="button" class="btn-lineup ds-btn ds-btn--secondary ds-btn--sm"
             data-league="${escapeHtml(tip.league || "")}" data-date="${escapeHtml(tip.date || "")}"
             data-home="${escapeHtml(tip.home || "")}" data-away="${escapeHtml(tip.away || "")}"
             title="Hämta startelva för just den här matchen (Fotmob/ESPN)">Hämta elva</button>
-          <button type="button" class="btn-matchup" aria-expanded="false"
+          <button type="button" class="btn-matchup ds-btn ds-btn--secondary ds-btn--sm" aria-expanded="false"
             data-league="${escapeHtml(tip.league || "")}" data-date="${escapeHtml(tip.date || "")}"
             data-home="${escapeHtml(tip.home || "")}" data-away="${escapeHtml(tip.away || "")}"
             title="Spelare mot spelare: ytter mot ytterback, anfall mot försvar, mittfält och målvakt">Duellanalys</button>
-          ${hasRefData(tip.league) ? `<button type="button" class="btn-referee" aria-expanded="false"
+          ${hasRefData(tip.league) ? `<button type="button" class="btn-referee ds-btn ds-btn--secondary ds-btn--sm" aria-expanded="false"
             data-league="${escapeHtml(tip.league || "")}" data-date="${escapeHtml(tip.date || "")}"
             data-home="${escapeHtml(tip.home || "")}" data-away="${escapeHtml(tip.away || "")}"
             title="Domaren: gula och frisparkar mot ligasnittet, lagens facit mot domaren och alla ligans domare">Domare</button>` : ""}
@@ -759,11 +769,17 @@ function groupHead(title, count) {
 }
 
 /** En rad per match i Alla kandidater: tid, match, liga, främsta tips, odds, chans, omdöme. Klick fäller ut hela kortet. */
-function candRow(tip) {
+/**
+ * Hopfällbar matchrad. Utan opts: kandidatlistan (kortet renderas först när raden fälls ut).
+ * fold: dagens bästa/skrällar – kortet renderas direkt och raden är öppen. upset: raden visar skrälltecknet.
+ */
+function candRow(tip, { fold = false, upset = false, i = 0 } = {}) {
   tipIndex.set(tipId(tip), tip);
-  const pr = primaryOf(tip);
+  const u = upset ? tip.upset : null;
+  const pr = u ? { label: `★ ${u.pick}`, odds: u.odds, p: upsetChance(tip), verdict: "yes" } : primaryOf(tip);
   const odds = pr?.odds ? `<span class="cr-odds">@ ${escapeHtml(fmtOdd(pr.odds))}</span>` : "";
-  return `<details class="cand-row" data-tip-id="${escapeHtml(tipId(tip))}">
+  const body = fold ? `<div class="cand-body" data-loaded="1">${tipCard(tip, i)}</div>` : `<div class="cand-body"></div>`;
+  return `<details class="cand-row${fold ? " fold-row" : ""}${u ? " upset-row" : ""}" data-tip-id="${escapeHtml(tipId(tip))}"${fold ? " open" : ""}>
     <summary>
       <time class="cr-time${tip.postponed ? " postponed" : ""}" data-league="${escapeHtml(tip.league || "")}">${escapeHtml(fmtKick(tip))}</time>
       <span class="cr-match">${escapeHtml(tip.home && tip.away ? `${tip.home} – ${tip.away}` : tip.match || "")}${refereeBadge(tip.referee)}</span>
@@ -772,11 +788,11 @@ function candRow(tip) {
       <span class="cr-chance">${pr ? fmtChance(pr.p) : "—"}</span>
       <span class="cr-verdict">${verdictBadge(pr)}</span>
     </summary>
-    <div class="cand-body"></div>
+    ${body}
   </details>`;
 }
 
-function renderList(el, list, emptyMsg, { top = false, topPool = null, limit = Infinity, compact = false } = {}) {
+function renderList(el, list, emptyMsg, { top = false, topPool = null, limit = Infinity, compact = false, fold = false, upsets = null } = {}) {
   const all = byLeague(list);
   const pool = topPool ? byLeague(topPool) : null;
   const filtered = all.length > limit ? [...all].sort((a, b) => kickMs(a) - kickMs(b)).slice(0, limit) : all;
@@ -785,7 +801,8 @@ function renderList(el, list, emptyMsg, { top = false, topPool = null, limit = I
     return;
   }
   let i = 0;
-  const card = compact ? (t) => candRow(t) : (t) => tipCard(t, i++);
+  const foldCard = (t, upset = false) => candRow(t, { fold: true, upset, i: i++ });
+  const card = compact ? (t) => candRow(t) : fold ? (t) => foldCard(t, !!t.upset) : (t) => tipCard(t, i++);
   let html = "";
   let rest = filtered;
   if (top) {
@@ -799,10 +816,17 @@ function renderList(el, list, emptyMsg, { top = false, topPool = null, limit = I
           : day === lastDay
             ? `${d.charAt(0).toUpperCase() + d.slice(1)} · dagens bästa`
             : `Omgången ${d} – ${dayLabel(lastDay)} · bästa tips`;
-      html += groupHead(title, best.length) + best.map(card).join("");
+      html += groupHead(title, best.length) + best.map((t) => foldCard(t)).join("");
       const ids = new Set(best.map(tipId));
       rest = filtered.filter((t) => !ids.has(tipId(t)));
     }
+  }
+  // Skrällar med värde direkt under dagens bästa, samma hopfällbara rader
+  const ups = upsets ? byLeague(upsets).sort((a, b) => kickMs(a) - kickMs(b)) : [];
+  if (ups.length) {
+    html += groupHead("★ Skrällar med värde", ups.length) + ups.map((t) => foldCard(t, true)).join("");
+    const ids = new Set(ups.map(tipId));
+    rest = rest.filter((t) => !ids.has(tipId(t)));
   }
   for (const [lg, tips] of groupByLeague(rest)) {
     html += groupHead(leagueName(lg), tips.length) + tips.map(card).join("");
@@ -834,25 +858,39 @@ function renderCandidates() {
 }
 
 let valueOnly = false;
+// Skrällar: 1/2 som inte är favorit men där ett bolag betalar minst 6 % över rätt pris (t.upset, scripts/lib/upset-pick.mjs).
+// Förvalt läge – Alla/Bara Värde bara när användaren valt det
+let upsetOnly = true;
 try {
   valueOnly = localStorage.getItem("betting.valueOnly") === "1";
+  upsetOnly = !valueOnly && localStorage.getItem("betting.upsetOnly") !== "0";
 } catch {
   /* privat läge */
+}
+const hasUpset = (tip) => !!tip.upset && !tip.postponed;
+/** Alla kommande matcher (bästa + kandidater) utan dubbletter. */
+function allUpcoming() {
+  const seen = new Set();
+  return [...state.bestUpcoming, ...state.allCandidates].filter((t) => !seen.has(tipId(t)) && seen.add(tipId(t)));
 }
 
 function syncValueFilter() {
   const inLeague = byLeague(state.bestUpcoming);
   $("#vf-all").textContent = inLeague.length;
   $("#vf-value").textContent = inLeague.filter(hasValue).length;
-  document.querySelectorAll("#value-filter .vf-btn").forEach((b) => b.setAttribute("aria-pressed", String((b.dataset.vf === "value") === valueOnly)));
+  $("#vf-upset").textContent = byLeague(allUpcoming()).filter(hasUpset).length;
+  const mode = upsetOnly ? "upset" : valueOnly ? "value" : "all";
+  document.querySelectorAll("#value-filter .vf-btn").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.vf === mode)));
 }
 
 $("#value-filter").addEventListener("click", (e) => {
   const b = e.target.closest(".vf-btn");
   if (!b) return;
   valueOnly = b.dataset.vf === "value";
+  upsetOnly = b.dataset.vf === "upset";
   try {
     localStorage.setItem("betting.valueOnly", valueOnly ? "1" : "0");
+    localStorage.setItem("betting.upsetOnly", upsetOnly ? "1" : "0");
   } catch {
     /* privat läge */
   }
@@ -862,6 +900,13 @@ $("#value-filter").addEventListener("click", (e) => {
 function renderTips() {
   const selName = leagueName(state.league);
   syncValueFilter();
+  $("#upset-help").hidden = !upsetOnly;
+  if (upsetOnly) {
+    renderList($("#tips"), allUpcoming().filter(hasUpset), `Inga skrällar med värde i ${selName} just nu – de dyker upp när ett bolag betalar minst 6 % över rätt pris.`, { fold: true });
+    candLimit = CAND_STEP;
+    renderCandidates();
+    return;
+  }
   const best = valueOnly ? state.bestUpcoming.filter(hasValue) : state.bestUpcoming;
   // Bästa tipsen överst väljs bland alla kandidater i kommande omgång, inte bara de som klarat edge-filtret
   const seen = new Set();
@@ -876,7 +921,7 @@ function renderTips() {
       : state.bestUpcoming.length
         ? `Inga tips i ${selName} just nu.`
         : "Inga kommande tips. Tryck på Hämta data.",
-    { top: true, topPool }
+    { top: true, topPool, upsets: allUpcoming().filter(hasUpset) }
   );
   candLimit = CAND_STEP;
   renderCandidates();
@@ -914,12 +959,6 @@ function activeConfidenceBands(marketKey) {
   if (global && (global.ge70 || global.b60_69 || global.under70)) return global;
   return null;
 }
-
-const MARKET_KEYS = {
-  "1X2": "1X2",
-  BTTS: "BTTS",
-  "Ö/U 2.5": "OU25",
-};
 
 const BAND_ORDER = ["ge70", "b60_69", "b50_59", "under50", "under70"];
 
@@ -990,7 +1029,7 @@ function renderDrawCal(marketKey) {
   host.innerHTML = `
     <h4>Kryss: modellens chans mot utfall</h4>
     <p class="scan-empty">${status} X tippas aldrig – det är sällan mest troligt, men kan ha värde (se Agent 3).</p>
-    <table class="draw-cal-table">
+    <table class="draw-cal-table ds-table ds-table--compact">
       <thead><tr><th>Grupp</th><th class="num">Matcher</th><th class="num">Tidigare</th><th class="num">Nu</th><th class="num">Faktiskt kryss</th></tr></thead>
       <tbody>${rows.join("")}</tbody>
     </table>`;
@@ -1844,7 +1883,7 @@ function refTeamBox(name, s, other = null, league = null) {
   const games = s.games || [];
   const list = games.length
     ? `<details class="rf-teamgames"${games.length <= 12 ? " open" : ""}><summary>Alla ${games.length} matcher med domaren</summary>
-      <table class="rf-table rf-games-table"><thead><tr><th>Datum</th><th></th><th>Mot</th><th class="num">Res.</th><th></th><th class="num" title="Gula kort för laget">Gula</th></tr></thead><tbody>
+      <table class="rf-table rf-games-table ds-table ds-table--compact"><thead><tr><th>Datum</th><th></th><th>Mot</th><th class="num">Res.</th><th></th><th class="num" title="Gula kort för laget">Gula</th></tr></thead><tbody>
       ${games.map((m) => `<tr class="${other && m.opp === other ? "rf-involved" : ""}"><td>${escapeHtml(fmtDateShort(m.date))}</td><td class="mx-sub">${m.home ? "H" : "B"}</td><td>${escapeHtml(m.opp)}${m.league && m.league !== league ? ` <small class="mx-sub">${escapeHtml(leagueName(m.league) || m.league)}</small>` : ""}</td><td class="num"><b>${escapeHtml(m.score)}</b></td><td>${badge(m.res)}</td><td class="num">${m.yc ?? "—"}</td></tr>`).join("")}
       </tbody></table></details>`
     : (s.last || []).length ? `<div class="rf-last"><span class="tp-k">Senaste, nyast först</span> ${s.last.slice(0, 8).map((m) => badge(m.res)).join("")}</div>` : "";
@@ -1947,7 +1986,7 @@ function refGamesHtml(t, key) {
   }).join("");
   return `<div class="rf-games">
     <p class="rf-games-sum"><b>${list.length} matcher</b> · <span class="rf-homewin-key">hemmaseger ${res.h}</span> · oavgjort ${res.d} · bortaseger ${res.a}${names.length ? ` · <span class="rf-involved-key">markerat</span> = matchens lag` : ""}</p>
-    <table class="rf-table rf-games-table"><thead><tr><th>Datum</th><th>Match</th><th class="num">Resultat</th><th class="num">Gula H–B</th><th class="num">Röda H–B</th><th class="num">Straffar H–B</th></tr></thead>
+    <table class="rf-table rf-games-table ds-table ds-table--compact"><thead><tr><th>Datum</th><th>Match</th><th class="num">Resultat</th><th class="num">Gula H–B</th><th class="num">Röda H–B</th><th class="num">Straffar H–B</th></tr></thead>
     <tbody>${rows}</tbody></table></div>`;
 }
 
@@ -1983,11 +2022,11 @@ function refTableInner(id) {
   const seasonSel = Array.isArray(t.pack?.seasons) ? `<label class="rf-min rf-season">Säsong <select class="ds-select" data-rf-season>${t.pack.seasons.map((s) => `<option value="${escapeHtml(s.id)}"${t.season === s.id ? " selected" : ""}>${escapeHtml(s.id === t.pack.season ? `${s.label} (i år)` : s.label)}</option>`).join("")}</select></label>` : "";
   return `<div class="rf-controls">
       ${seasonSel}
-      <span class="tp-k">Sortera</span>${Object.entries(RF_SORT).map(([k, s]) => `<button type="button" class="rf-chip${t.sort === k ? " on" : ""}" data-rf-sort="${k}">${s.label}${t.sort === k ? (t.dir < 0 ? " ▼" : " ▲") : ""}</button>`).join("")}
-      <span class="tp-k">Filter</span>${Object.entries(RF_FILTER).map(([k, f]) => `<button type="button" class="rf-chip${t.filters.has(k) ? " on" : ""}" data-rf-filter="${k}" aria-pressed="${t.filters.has(k)}">${f.label}</button>`).join("")}
+      <span class="tp-k">Sortera</span>${Object.entries(RF_SORT).map(([k, s]) => `<button type="button" class="rf-chip ds-toggle" data-rf-sort="${k}" aria-pressed="${t.sort === k}">${s.label}${t.sort === k ? (t.dir < 0 ? " ▼" : " ▲") : ""}</button>`).join("")}
+      <span class="tp-k">Filter</span>${Object.entries(RF_FILTER).map(([k, f]) => `<button type="button" class="rf-chip ds-toggle" data-rf-filter="${k}" aria-pressed="${t.filters.has(k)}">${f.label}</button>`).join("")}
       <label class="rf-min">Minst <select class="ds-select" data-rf-min>${[1, 5, 10, 20].map((n) => `<option value="${n}"${t.min === n ? " selected" : ""}>${n}</option>`).join("")}</select> matcher</label>
     </div>
-    <div class="rf-table-wrap"><table class="rf-table">
+    <div class="rf-table-wrap"><table class="rf-table ds-table ds-table--compact">
       <thead><tr><th>Domare</th>${th("matches", "Matcher")}<th class="num">Gula</th>${th("yellow", "Gula/m")}<th class="num">Röda</th><th class="num">Straffar</th>${th("fouls", "Frisp./m")}${th("home", "Hemmaseger")}${teamTh}</tr></thead>
       <tbody>${rows || `<tr><td colspan="${cols}" class="mx-sub">Inga domare matchar filtret</td></tr>`}</tbody>
       <tfoot><tr><td>Ligasnitt</td><td class="num">${avg.matches ?? "—"}</td><td class="num">${avg.yellowTotal ?? ""}</td><td class="num">${numSv(avg.yellowPg, 2)}</td><td class="num">${avg.redTotal ?? ""}</td><td class="num">${avg.penaltyTotal ?? ""}</td><td class="num">${numSv(avg.foulsPg, 1)}</td><td class="num">${pctShort(avg.homeWinRate)}</td>${t.teams ? "<td></td><td></td>" : ""}</tr></tfoot>
@@ -2120,7 +2159,7 @@ async function renderRefLeague() {
   host.hidden = false;
   if (!league) { host.innerHTML = `<p class="scan-empty">Ingen domardata för den här ligan.</p>`; return; }
   state.refView.league = league;
-  const tabs = ls.length > 1 ? `<div class="rf-tabs">${ls.map((l) => `<button type="button" class="rf-chip${l === league ? " on" : ""}" data-ref-tab="${escapeHtml(l)}">${escapeHtml(leagueName(l))}</button>`).join("")}</div>` : "";
+  const tabs = ls.length > 1 ? `<div class="rf-tabs">${ls.map((l) => `<button type="button" class="rf-chip ds-toggle" data-ref-tab="${escapeHtml(l)}" aria-pressed="${l === league}">${escapeHtml(leagueName(l))}</button>`).join("")}</div>` : "";
   host.innerHTML = `${tabs}<p class="scan-empty">Hämtar domare i ${escapeHtml(leagueName(league))}…</p>`;
   try {
     const d = await getRefLeague(league);
@@ -2152,7 +2191,6 @@ async function renderRefLeague() {
   }
 }
 
-
 // Tillsatta domare för kommande matcher: domarens facit mot båda lagen (5 raka = flagga) och domarens snitt
 function refAppointments(d) {
   const list = d.appointments || [];
@@ -2171,7 +2209,7 @@ function refAppointments(d) {
       <td>${rec(m.homeRec)}</td><td>${rec(m.awayRec)}</td>
       <td class="num">${m.profile ? `${numSv(m.profile.yellowPg, 2)}${dc(m.profile.yellowVsAvg)}` : "—"}</td></tr>`).join("");
   return `<h4 class="rf-h">Kommande matcher med tillsatt domare (${list.length})</h4>
-    <div class="rf-table-wrap"><table class="rf-table rf-appt">
+    <div class="rf-table-wrap"><table class="rf-table rf-appt ds-table ds-table--compact">
       <thead><tr><th>Avspark</th><th>Match</th><th>Domare</th><th>Hemmalaget mot domaren</th><th>Bortalaget mot domaren</th><th class="num">Gula/m</th></tr></thead>
       <tbody>${rows}</tbody></table></div>
     <p class="mx-note">V-O-F = lagets vinster, oavgjorda och förluster i ligamatcher med domaren. ⚑ = minst 5 raka segrar eller förluster med domaren. Gula/m: domarens snitt gula kort per match de senaste tre säsongerna.</p>`;
@@ -2271,7 +2309,7 @@ function keyPlayersHtml(k) {
     ? `<div class="kp-note">Borttagna efter kontroll mot Transfermarkt: ${k.removed.map((r) => `${escapeHtml(r.name)} (${escapeHtml(r.club)})`).join(", ")}</div>` : "";
   return `<div class="tp-row kp"><span class="tp-k">Nyckelspelare</span>
       <span class="tp-v">${escapeHtml(k.source)}</span></div>
-    ${rows ? `<div class="kp-wrap"><table class="kp-table"><thead><tr><th>#</th><th>Spelare</th><th>Pos</th><th>Ålder</th>${hasShare ? "<th>Andel</th>" : ""}<th>Säsong</th><th>Status</th></tr></thead><tbody>${rows}</tbody></table></div>` : `<p class="scan-empty">Ingen spelardata för laget.</p>`}
+    ${rows ? `<div class="kp-wrap"><table class="kp-table ds-table ds-table--compact"><thead><tr><th>#</th><th>Spelare</th><th>Pos</th><th>Ålder</th>${hasShare ? "<th>Andel</th>" : ""}<th>Säsong</th><th>Status</th></tr></thead><tbody>${rows}</tbody></table></div>` : `<p class="scan-empty">Ingen spelardata för laget.</p>`}
     ${sq ? `<div class="kp-note">Trupp: ${sq.count} spelare från ${escapeHtml(sq.source)} (hämtad ${escapeHtml(sq.fetchedAt || "–")})${sq.coach ? ` · tränare ${escapeHtml(sq.coach)}` : ""}${sq.injured ? ` · ${sq.injured} skadade/osäkra` : ""}</div>` : `<div class="kp-note">Ingen trupp sparad för laget.</div>`}
     ${removed}`;
 }
@@ -2541,7 +2579,7 @@ function agentBody(m, { withVerdict = false } = {}) {
           <h4>Agent 3 · Market${m.market.fairSource ? ` (facit ${escapeHtml(m.market.fairSource)})` : ""}</h4>
           ${
             m.market.available
-              ? `<table><thead><tr><th>Utfall</th><th>Modell</th><th>Marknad</th><th>Bästa odds</th><th>EV</th><th></th></tr></thead><tbody>${marketRows}</tbody></table>`
+              ? `<table class="ds-table ds-table--compact"><thead><tr><th>Utfall</th><th>Modell</th><th>Marknad</th><th>Bästa odds</th><th>EV</th><th></th></tr></thead><tbody>${marketRows}</tbody></table>`
               : `<p class="scan-empty">NO MARKET DATA</p>`
           }
         </div>

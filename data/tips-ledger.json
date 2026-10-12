@@ -1,25 +1,25 @@
 {
-    "updatedAt":  "2026-10-10T11:49:20.2497239+02:00",
+    "updatedAt":  "2026-10-10T15:19:52.0059478+02:00",
     "addedThisRun":  2,
-    "settledThisRun":  0,
-    "entryCount":  349,
-    "openCount":  312,
-    "settledCount":  37,
+    "settledThisRun":  1,
+    "entryCount":  351,
+    "openCount":  313,
+    "settledCount":  38,
     "liveHitRates":  {
                          "1X2":  {
-                                     "hits":  24,
-                                     "rate":  0.6486,
-                                     "n":  37
+                                     "hits":  25,
+                                     "rate":  0.6579,
+                                     "n":  38
                                  },
                          "BTTS":  {
                                       "hits":  19,
-                                      "rate":  0.5135,
-                                      "n":  37
+                                      "rate":  0.5,
+                                      "n":  38
                                   },
                          "OU25":  {
                                       "hits":  18,
-                                      "rate":  0.4865,
-                                      "n":  37
+                                      "rate":  0.4737,
+                                      "n":  38
                                   }
                      },
     "liveClv":  {
@@ -18259,9 +18259,40 @@
 
                                               ],
                         "createdAt":  "2026-10-04T14:44:39.2720485+02:00",
-                        "settled":  false,
-                        "actual":  null,
-                        "hit":  null
+                        "settled":  true,
+                        "actual":  {
+                                       "OU25":  "UNDER 2.5",
+                                       "score":  "2-0",
+                                       "1X2":  "1",
+                                       "BTTS":  "NEJ"
+                                   },
+                        "hit":  {
+                                    "OU25":  false,
+                                    "1X2":  true,
+                                    "BTTS":  false
+                                },
+                        "settledAt":  "2026-10-10T15:19:51.8726208+02:00",
+                        "clv":  {
+                                    "closingSource":  "avg",
+                                    "proxy":  false,
+                                    "1X2":  {
+                                                "pick":  "1",
+                                                "oddsTaken":  null,
+                                                "fairCloseProb":  null,
+                                                "fairCloseOdds":  null,
+                                                "clv":  null
+                                            },
+                                    "OU25":  {
+                                                 "pick":  "OVER 2.5",
+                                                 "oddsTaken":  null,
+                                                 "fairCloseProb":  null,
+                                                 "fairCloseOdds":  null,
+                                                 "clv":  null
+                                             },
+                                    "valueBets":  [
+
+                                                  ]
+                                }
                     },
                     {
                         "id":  "2026-10-10|SE3S|AFC Malmö vs Skövde AIK",
@@ -20739,6 +20770,130 @@
 
                                               ],
                         "createdAt":  "2026-10-10T11:49:18.8727706+02:00",
+                        "settled":  false,
+                        "actual":  null,
+                        "hit":  null
+                    },
+                    {
+                        "id":  "2026-10-10|SC|Rangers vs Kilmarnock",
+                        "date":  "2026-10-10",
+                        "league":  "SC",
+                        "match":  "Rangers vs Kilmarnock",
+                        "home":  "Rangers",
+                        "away":  "Kilmarnock",
+                        "tipScore":  0.592,
+                        "tips":  {
+                                     "CORNERS":  {
+                                                     "confidence":  0.693,
+                                                     "lambdaHome":  8.83,
+                                                     "pOver":  0.693,
+                                                     "lambdaAway":  4.33,
+                                                     "line":  10.5,
+                                                     "expCorners":  12.23,
+                                                     "pick":  "OVER 10.5"
+                                                 },
+                                     "OU25":  {
+                                                  "confidence":  0.57,
+                                                  "usedPlayerAttack":  false,
+                                                  "expGoals":  2.18,
+                                                  "pOver":  0.43,
+                                                  "usedXg":  true,
+                                                  "pick":  "UNDER 2.5"
+                                              },
+                                     "1X2":  {
+                                                 "pick":  "1",
+                                                 "confidence":  0.546,
+                                                 "probs":  {
+                                                               "away":  0.206,
+                                                               "draw":  0.248,
+                                                               "home":  0.546
+                                                           }
+                                             },
+                                     "BTTS":  {
+                                                  "pick":  "NEJ",
+                                                  "confidence":  0.56,
+                                                  "pYes":  0.44
+                                              }
+                                 },
+                        "value":  null,
+                        "edge":  null,
+                        "oddsTaken":  null,
+                        "bookmaker":  {
+                                          "home":  null,
+                                          "draw":  null,
+                                          "away":  null,
+                                          "over25":  null,
+                                          "under25":  null
+                                      },
+                        "proValueBets":  [
+
+                                         ],
+                        "availabilityNotes":  [
+
+                                              ],
+                        "createdAt":  "2026-10-10T15:19:51.3822784+02:00",
+                        "settled":  false,
+                        "actual":  null,
+                        "hit":  null
+                    },
+                    {
+                        "id":  "2026-10-25|SC|Hibernian vs Celtic",
+                        "date":  "2026-10-25",
+                        "league":  "SC",
+                        "match":  "Hibernian vs Celtic",
+                        "home":  "Hibernian",
+                        "away":  "Celtic",
+                        "tipScore":  0.593,
+                        "tips":  {
+                                     "CORNERS":  {
+                                                     "confidence":  0.782,
+                                                     "lambdaHome":  6.79,
+                                                     "pOver":  0.782,
+                                                     "lambdaAway":  7.92,
+                                                     "line":  10.5,
+                                                     "expCorners":  13.38,
+                                                     "pick":  "OVER 10.5"
+                                                 },
+                                     "OU25":  {
+                                                  "confidence":  0.523,
+                                                  "usedPlayerAttack":  false,
+                                                  "expGoals":  2.77,
+                                                  "pOver":  0.523,
+                                                  "usedXg":  true,
+                                                  "pick":  "OVER 2.5"
+                                              },
+                                     "1X2":  {
+                                                 "pick":  "2",
+                                                 "confidence":  0.478,
+                                                 "probs":  {
+                                                               "away":  0.478,
+                                                               "draw":  0.246,
+                                                               "home":  0.277
+                                                           }
+                                             },
+                                     "BTTS":  {
+                                                  "pick":  "JA",
+                                                  "confidence":  0.588,
+                                                  "pYes":  0.588
+                                              }
+                                 },
+                        "value":  null,
+                        "edge":  null,
+                        "oddsTaken":  null,
+                        "bookmaker":  {
+                                          "home":  null,
+                                          "draw":  null,
+                                          "away":  null,
+                                          "over25":  null,
+                                          "under25":  null
+                                      },
+                        "proValueBets":  [
+
+                                         ],
+                        "availabilityNotes":  [
+
+                                              ],
+                        "createdAt":  "2026-10-10T15:19:51.3822784+02:00",
                         "settled":  false,
                         "actual":  null,
                         "hit":  null

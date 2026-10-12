@@ -200,6 +200,17 @@ export function rawFeatures(race, h, ctx = {}) {
   const konditionMatch = sameKond.length >= 2 ? sameKond.filter((r) => r.trackCondition === race.condition).length / sameKond.length : null;
   // Borta: hästen springer på annan bana än sin hembana (kan vara sämre, kan vara selektivt bättre).
   const borta = h.horseHome != null && race.track != null ? (h.horseHome !== race.track ? 1 : 0) : null;
+  // Förändringar inför loppet (0–4): barfota runt om nu (ändrat), byte till jänkare, kuskbyte till kusk med ≥ 18 %
+  // segrar i år (minst 30 starter), ned i klass (förstapris < 74 % av förra startens). Testat 2026-10-11 ovanpå
+  // basmodellen per testår 2023–2026 (tränat på åren före): vinst alla fyra år, z +2,23, +0,35 logloss-vinst/1000 lopp,
+  // samma vikt varje år. Bland streck < 20 %: 2+ förändringar vann 111–115 % av oddsens väntade.
+  const dRate = h.driverYear?.starts >= 30 ? h.driverYear.wins / h.driverYear.starts : 0;
+  const forandringar = [
+    sh?.changed && sh.front === false && sh.back === false,
+    h.sulky?.changed && /amerik/i.test(h.sulky.text || ""),
+    last?.driverId && h.driverId && last.driverId !== h.driverId && dRate >= 0.18,
+    last?.firstPrize > 0 && race.firstPrize > 0 && Math.log(race.firstPrize / last.firstPrize) < -0.3,
+  ].filter(Boolean).length;
   return {
     form,
     fart: speed != null ? -speed : null,
@@ -248,6 +259,7 @@ export function rawFeatures(race, h, ctx = {}) {
     langRekordNy: langRek ? (langRek.year >= year - 1 ? 1 : 0) : null,
     favLev,
     tranareByte90: sedanByte == null ? null : sedanByte <= 90 ? 1 : 0,
+    forandringar,
   };
 }
 

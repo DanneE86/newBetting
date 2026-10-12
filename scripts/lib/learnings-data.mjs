@@ -198,33 +198,6 @@ export function attachXg(matches) {
   return stats;
 }
 
-/** Skott-proxy for xG dar Understat saknas: mal ~ a*(skott utanfor mal) + b*(skott pa mal), anpassat per liga. */
-export function attachShotXg(matches) {
-  const coef = {};
-  const byLeague = new Map();
-  for (const m of matches) if (Number.isFinite(m.hst) && Number.isFinite(m.hs) && m.hs >= m.hst) (byLeague.get(m.league) ?? byLeague.set(m.league, []).get(m.league)).push(m);
-  for (const [league, list] of byLeague) {
-    if (list.length < 500) continue;
-    // Minsta kvadrat utan intercept pa bada lagens rader
-    let sxx = 0, sxy = 0, syy = 0, sx1 = 0, sy1 = 0;
-    for (const m of list) {
-      for (const [sh, sot, g] of [[m.hs, m.hst, m.hg], [m.as, m.ast, m.ag]]) {
-        const x = sh - sot;
-        sxx += x * x; sxy += x * sot; syy += sot * sot; sx1 += x * g; sy1 += sot * g;
-      }
-    }
-    const det = sxx * syy - sxy * sxy;
-    const a = (sx1 * syy - sy1 * sxy) / det;
-    const b = (sy1 * sxx - sx1 * sxy) / det;
-    coef[league] = { off: a, on: b, n: list.length };
-    for (const m of list) {
-      if (m.hxg != null) continue;
-      m.sxg = [a * (m.hs - m.hst) + b * m.hst, a * (m.as - m.ast) + b * m.ast];
-    }
-  }
-  return coef;
-}
-
 /** Stryktipsets och Europatipsets backtestmatcher (unika per datum och match). */
 export function loadPoolMatches() {
   const files = [

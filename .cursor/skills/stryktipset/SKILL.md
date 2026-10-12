@@ -15,14 +15,14 @@ Mål: bygga en **genomtänkt kupong** — inte 13 isolerade favorittips.
 
 ## Fasta regler (användaren – ändra aldrig utan att fråga)
 
-- Budget **350–400 kr per system** (1 kr/rad). Ersätter alla äldre standardbelopp.
-- **Kupong C (2026-09-30):** ett eget system på 700–850 kr, oberoende av A och B; bara krav med knappen C eller Alla gäller där (A+B gäller inte C). Minst 30 000 kr för 13 rätt, samma regler som A, men Europatipset 3-2-2. **Spikbedömning match för match (regel, båda spelen):** varje matchs favoritchans justeras efter arkivet (chansnivå, hemma/borta, liga; `scripts/lib/stryk-calibration.mjs`), systemet byggs på de justerade procenten och spik bara om justerad chans ≥ 55 %. Bedömningen står i matchanalysen. Ingen fast 65 %-regel. Byggs i webben och i fetch-stryktipset.mjs (reducedC), backtestas.
-- **Två kuponger per omgång (från 2026-09-28):** ett system på 700–800 rader delas efter utdelning i **A** (högst utdelning) och **B** (resten, utdelningsintervall), vardera 350–400 kr med egen Gambling Cabin-länk. Det gamla motsystemet B (högst 1 gemensam spik) finns kvar med `STRYK_B_MODE=counter`.
-- **Utdelningsgräns = lägsta gräns (2026-09-30, efter backtest):** regeln (A 30 000 / ET 20 000, B och C 30 000) är en lägsta gräns som får höjas för att rymmas i budgeten. Exakt gräns testades och var sämre (bakom STRYK_EXACT=1). A och B byggs var för sig (B_MODE counter), som i webben. **Reglerna är frysta** tills minst 12 nya omgångar har utvärderats; rekommendera kupong C (bäst återbetalning i backtest).
-- Reducering (Gambling Cabin-logik): utdelning för 13 rätt **≥ 30 000 kr** (Europatipset **≥ 20 000 kr**), beräknad från folkets streck, teckenminimum **4-2-2** (1-X-2, användarens beslut 2026-09-28 efter backtest; minst 3 kryss gäller inte längre). Max alltid fullt.
-- **Högst 4 spikar per kupong** och **färgregler aldrig 0–13** (användarens regler 2026-09-30): min/max för gröna, gula och röda tecken per rad (i garderingarna) optimeras mot högst chans till 13 rätt med minsta bredd 2 (t.ex. 1–3; användaren 2026-09-30: bredd 1 för snäv. Backtest: ST lika, ET +8 596 mot +24 712 kr); rosa = antal spikar. Står i Gambling Cabin-länken (`green=1,min,max` osv.). Favoriten i en gardering på **minst 10 %** av raderna i varje kupong (även varje halva av det delade systemet). **Färgfönster (2026-09-30, användarens beslut, båda spelen):** per omgång ett fönster 3–4 brett för hela raden runt väntat antal gröna/gula/röda (summan av våra procent); spikar rosa och deras färger dras av i länken (rosa = antal spikar). Går fönstren inte att hålla optimeras färgerna fritt (minsta bredd 2). Favoritregeln släpps aldrig före färgerna.
-- Grundrad + utdelningsgräns väljs för högst chans till 13 rätt inom budget.
-- Varje system får en **förifylld länk till Gambling Cabin** (reducera.gamblingcabin.se) – ingen filuppladdning. Undantag: **kupong D**, **kupong E** och **kupong F** som fil till Svenska Spels Egna rader. D/E (2026-10-07, D-standard höjd 2026-10-09): D standard 1 050 kr, E standard 500 kr; i webben väljer användaren själv summan för D och E (1–10 000 kr, 1 kr/rad, sparas i webbläsaren). D = de 1 050 troligaste raderna med verklig utdelning ≥ 30 000 kr (`buildCouponD`). E = komplement till D: de 500 nästa raderna (≥ 30 000 kr) som inte finns i D, med vikt på tecken D saknar (`buildCouponE`). **Kupong F (2026-10-08, användarens beslut):** 1050 kr, fristående från D/E, andelar **40/30/30** (högst streck = 40), 1050 rader samplade efter andelarna (`buildCouponF`). Backtest: `node scripts/backtest-stryk-f.mjs --model streck4030 --budget 1050,1500,…`. D har även en Gambling Cabin-länk (`buildCouponDGC`, 450–500 rader via färgtak och utdelning, ungefär 80 % av filens chans). Gambling Cabin läser max 0 som ingen regel, så skriv aldrig tak 0.
+- **Bara fil, inga Gambling Cabin-regler (användaren 2026-10-11):** "skippa helt allt som har med Gambling Cabin att göra, ta bort alla regler, vill bara köra på fil". Inga färg- eller teckenregler, inga utdelningsband, inga GC-länkar, inga kuponger D/E/F. Föreslå dem aldrig igen.
+- **Tre filkuponger à 500 kr (500 rader, 1 kr/rad)**, spelas via Svenska Spels **Egna rader** (`buildFileCoupons` i `gui/public/stryk-engine.js`; servern anropar samma funktion, så raderna blir identiska):
+  - **Spikar:** omgångens **2 starkaste favoriter** (vår procent), i alla tre kupongerna. Folkets streck spelar ingen roll för spikvalet. Låsta egna spikar räknas in.
+  - **A:** de 500 troligaste raderna där 13 rätt ger **minst 30 000 kr** (verklig omsättning och jackpot).
+  - **B:** de 500 nästa raderna som inte finns i A, med vikt på tecken A saknar.
+  - **C:** 500 rader där underspelade tecken (vår chans minst 20 % och minst 1,3 × folkets streck, inte favoriten) väger 1,3 per tecken.
+- Bakkört (kupongarkivet, ST 169 / ET 183 omg, `node scripts/backtest-stryk-fil.mjs`): A chans 1 på 170 / 162; A+B 1 på 96 / 92. Med 4 tvingade spikar var A sämre (1 på 181 / 174).
+- **Folket är bara intressant när ett tecken är underspelat** (användaren 2026-10-11). Skrällfickan: PL/Championship-skrällar där oddsen ger 20–30 % och minst 1,3 × folket höjs 12 % i vår procent och visas som "★ Skräll folket missar". Skrällspikar och skrällkryss visas som förslag överst på sidan, inte i kupongerna.
 - Öppna kuponger sparas i `data/stryktips-history/` och **följs upp mot facit** automatiskt.
 - **Startelvor:** samma data och logik som Oddset (ESPN-elva för PL/Championship, annars FPL-skador), visas per match. Kör arbetsflödet "Stryktipset – sen körning (startelvor)" strax före spelstopp för att få med elvor och sena odds. Vikten (alpha) följer Oddsets backtest; just nu 0, så effekten kommer via oddsen.
 - **Icke-spikbara matcher (2026-10-07):** tipset (procent + tecken) baseras på samma marknadsstyrda Oddset-blandning som tips-sidan när matchen finns i `data/tips-latest.json`. Spikbara matcher behåller kalibrerad spikbedömning.
@@ -33,7 +33,7 @@ Mål: bygga en **genomtänkt kupong** — inte 13 isolerade favorittips.
 Innan du ändrar regler eller påstår något om vad som "fungerar": läs [docs/analys/stryktips-lardomar.md](../../../docs/analys/stryktips-lardomar.md). Kortversion:
 
 - **Oddsen slår lagmodellen** → modellvikt 10 %. Marknaden = skarpa odds (Pinnacle/Betfair, annars bolagssnitt), inte Svenska Spels egna. Jackpot räknas in i utdelningen.
-- **Teckenregeln 4-2-2 släpper igenom rätt rad i ca 71–82 % av omgångarna** (5-3-2 gjorde det i 34 %). Nämn det när användaren frågar varför systemet inte tar 13 rätt.
+- **Varför 13 rätt uteblir:** spikarna. Med fil och 2 starka spikar satt båda i ungefär varannan omgång; fler tvingade spikar sänkte chansen.
 - **Bara 12–13 rätt betalar**; 10 rätt ger ofta 0 kr. Mät system på chans till 13 rätt och rader med 11+ rätt, inte netto eller snittrått.
 - **Ändra aldrig regler på < 12 omgångar.** Spikregler (P ≥ 55 %, folk/P ≤ 1,3) såg bra ut på 5 omgångar men var brus på 17 och gjorde systemen sämre.
 - Folket underspelar X (≈ 23 % streck mot ≈ 26–29 % utfall) → X ger ofta streckvärde.
@@ -59,7 +59,7 @@ Progress:
    - lista "1. Hem–Bort"
    - länk/text från Svenska Spel
 3. Om matcher saknas: be användaren klistra in kupongen innan du tipsar.
-4. Budget: **350–400 kr per system**, två system (A och B) – se Fasta regler. Fråga bara om användaren uttryckligen vill något annat.
+4. Budget: **500 kr per kupong**, tre filkuponger (A, B, C) – se Fasta regler. Fråga bara om användaren uttryckligen vill något annat.
 
 Läs detaljer i [reference.md](reference.md) vid behov (streck, systemmatte, vanliga fallgropar).
 
@@ -111,7 +111,7 @@ Tilldela **exakt ett** läge per match:
 
 Tumregler:
 
-- Vid manuell kupong utan reducering: max **2–3 helgarderingar**. I de automatiska systemen (grundrad upp till 30 000 rader som reduceras till 350–400) styr optimeringen i stället.
+- Vid manuell kupong utan reducering: max **2–3 helgarderingar**. I filkupongerna väljs raderna en och en efter chans, så antalet garderingar styrs inte av en regel.
 - Spikregler baserade på folk/P har testats och **förkastats** (se lärdomsfilen) – välj spik på sannolikhet.
 - Favorit under ~50 % sannolikhet → sällan "Säker".
 - Derbyn, ny tränare, massrotation, cup/europeiskt bakslag → uppgradera till Halv/Hel.
@@ -122,11 +122,9 @@ Tumregler:
 Räkna rader: varje Halv ×2, varje Hel ×3 (övriga ×1).  
 Kostnad ≈ antal rader × 1 kr (bekräfta aktuellt radpris om användaren nämner annat).
 
-Ge alltid **kupong A och kupong B** enligt Fasta regler (vardera 350–400 kr, delat system) med respektive Gambling Cabin-länk. Hämta dem från `data/stryktipset.json` (`reduced`, `reducedB`, `gamblingCabinUrl`) om de finns.
+Ge alltid **kupong A, B och C** enligt Fasta regler (filer à 500 kr). Hämta dem från `data/stryktipset.json` (`reduced`, `reducedB`, `reducedC`; raderna i `rowList`, filen i `egnaRader`) om de finns.
 
-För varje alternativ: antal rader, ungefärlig kostnad, vilka matcher som är halv/hel, och kort motivering.
-
-Reducering: alltid enligt Fasta regler (utdelning ≥ 30 000 kr, Europatipset ≥ 20 000 kr, minst 4-2-2, delat system A/B). Se [reference.md](reference.md).
+För varje kupong: antal rader, kostnad, spikarna och kort motivering. Inga Gambling Cabin-länkar.
 
 ## Steg 6 — Slutkupong (användarvy)
 
@@ -136,8 +134,9 @@ Svara **på svenska** med denna struktur:
 # Stryktipset omgång <datum eller nr om känt>
 
 ## Dom
-- Kupong A: X rader ≈ Y kr · minst 4-2-2 · utdelning ≥ Z kr · [Öppna i Gambling Cabin](länk)
-- Kupong B: X rader ≈ Y kr · minst 4-2-2 · utdelning Z2–Z kr · [Öppna i Gambling Cabin](länk)
+- Kupong A: 500 rader · 500 kr · 13 rätt ≥ 30 000 kr · spikar: … · fil: Egna rader
+- Kupong B: 500 rader · 500 kr · nästa rader utanför A
+- Kupong C: 500 rader · 500 kr · underspelade tecken uppviktade
 - Antaganden: …
 
 ## Kupong (grundrad A / B)

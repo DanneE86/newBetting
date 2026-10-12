@@ -460,6 +460,55 @@ Användarens fråga: "varför får vi aldrig 13 rätt, jag vill få in en 13-rä
   E räddade 1 omgång där D missade (4885). Chansen D+E (1 på 104) är bättre än A+B (1 på 208 för ~800 kr). Nettot är brus (få 13-rättare); chansen är måttet.
 - **Slutsats:** dagens 800 rader (A+B) ger samma chans som de 400 bästa raderna. Gambling Cabin kan inte välja rader efter chans, bara via grundrad, tecken-, färg- och utdelningsregler, och det kostar ungefär halva chansen. Med 800 kr i veckan är taket ändå en 13-rättare ungefär vartannat år. Vill man ha det oftare krävs större insats eller egna rader (filuppladdning), som bryter regeln om bara Gambling Cabin-länk.
 
+## 500 kr och 4 spikar på alla system (2026-10-11, 38 ST-omgångar aug 2025 – sep 2026)
+
+Användaren: "gör så default på alla system är 500 kr och 4 spikar" och "varför missar vi 13 rätt så ofta". Bakkört med `backtest-parallel.mjs --from 2025-08-01` (filer `data/stryktips-backtest-1011-{gammal,ny2,ones55}.json`).
+
+| | Kostnad | Väntade 13:or (A / B / C) | Summa | 12 rätt (rader) | Netto |
+|---|---|---|---|---|---|
+| Gamla (A/B 350–400, C 700–850, 2–4 spikar) | 60 283 | 0,128 / 0,058 / 0,094 | 0,280 | 1 | −54 289 |
+| **Nya (450–500 kr, 4 spikar) – infört** | 55 491 | 0,153 / 0,063 / 0,068 | 0,284 | 8 | +1 706 |
+| Nya + tvingade 1:or bara vid ≥ 55 % (`STRYK_ONES_P=0.55`) | 55 425 | 0,162 / 0,075 / 0,093 | **0,330** | 11 | −36 936 |
+
+- A vinner mest på bytet (+20 % chans). C tappar (500 i stället för ~800 kr). Nettot avgörs av en enda 13-rättare (A i 4925, 41 436 kr), så det är brus. Chansen är måttet.
+- **B klarar sällan 4 spikar:** med 450–500 rader finns för få rader över 50 000 kr när fyra favoriter spikas. Utan reserv gick B inte att bygga i 23 av 38 omgångar. Nu släpps kravet till 3, sedan 2 (`withSpikeFallback`, `rules.spikesMin`, text i kupongen). Europatipset 2615 behövde det också.
+- **Varför 13 rätt uteblir:** spikarna. Med 4 spikar håller alla bara när 4 tecken på ~56 % sitter samtidigt (≈ 10 %). Utfallet blev 2 av 38 omgångar i A och 3 av 38 i C. Spikarna är rätt kalibrerade (A 54,6 % höll mot 56,1 % väntat). De är alltså inte felbedömda, bara svaga. **36 % av A:s och 62 % av C:s spikar ligger på tecken under 50 %.** Det kommer av reglerna, inte av modellen: minst 2 spikade 1:or enligt Oddset (regel ett), skrällspiken på 35–47 % och reservspikar för att nå 4. Missat utfall är oftast X (A 58 av 109).
+- **xG, xP (xG-tur), poäng per match, tabell, form, H2H, vila och frånvaro** är redan testade mot stängningsodds (se `docs/lardomar/slutsatser.md`). Inget slår marknaden, eftersom oddsen redan har prisat in dem. Det finns ingen modellsignal att hämta där.
+- **Störst hävstång:** tvingade 1:or bara där ettan har minst 55 % (+16 % chans på alla tre systemen, 12 rätt 8 → 11). Det kräver användarens beslut (regel ett). Därefter kommer färre tvingade spikar och egna rader (kupong D: de troligaste raderna utan Gambling Cabin-regler, ungefär dubbla chansen per krona).
+- Varianten utan skrällspik (`STRYK_SKRALL_SPIK=0`) gick inte att bakköra: B:s reservsteg tog över 45 minuter per omgång. Den avbröts.
+
+## Starka spikar (2026-10-11, 38 ST-omgångar aug 2025 – sep 2026)
+
+Användaren: "Skit i hur folket spelar, bara om något är underspelat är det intressant. Viktiga är att spikarna sitter och man ser skrällspikar." Infört som standard (`SPIK_STRONG`, av med `STRYK_SPIK_STRONG=0`):
+
+- Spikarna läggs på omgångens 4 starkaste favoriter enligt systemets procent.
+- Inga tvingade 1:or och inga spärrar som bygger på folket i spikvalet.
+- Ingen skrällspik i kupongerna. Skrällspikarna visas som förslag överst på sidan.
+
+| | Spikar sprack (A / B / C) | Alla spikar satt (A / B / C) | Väntade 13:or | 12 / 11 rätt | Netto |
+|---|---|---|---|---|---|
+| Före (500 kr, 4 spikar, ficka) | 47 / 49 / 50 % | 2 / 2 / 3 | 0,290 | 8 / 55 | −232 |
+| **Starka spikar** | **43 / 44 / 43 %** | **4 / 7 / 4** | **0,333** | 4 / 61 | −31 813 |
+
+- A förlorade 13-rättaren i 4925 (41 436 kr). Den kom från en svag spikad etta på 38 % som råkade gå in. Det var tur, inte metod. Rader med 12 rätt halverades (8 → 4), medan rader med 11 rätt ökade.
+- På 107 omgångar satt de 4 starkaste favoriterna alla samtidigt i 20 omgångar (väntat 16,8), de 3 starkaste i 32 och de 2 starkaste i 52.
+- **Skrällspikförslagen** (`skrallTips`, kupongarkivet, odds som procent): förstavalet på Stryktipset gick in 59 av 154 gånger (38 %) mot oddsens 33 % och folkets 25 %. Det är 1,5 gånger så ofta som folket trodde. Andravalet gick in 30 % (som oddsen). Reserverna gick bara in 13 %. På Europatipset gick förstavalet in 31 % (oddsen 33 %).
+
+## Filkuponger i stället för Gambling Cabin (2026-10-11, kupongarkivet ST 169 / ET 183 omg)
+
+Användaren: "Skippa helt allt som har med Gambling Cabin att göra, ta bort alla regler, vill bara köra på fil." Valda: troligaste rader med 30 000 kr som golv, och kupongerna A, B och C som filer. Bakkört med `node scripts/backtest-stryk-fil.mjs [produkt] [--spikes n] [--bonus b]`.
+
+| Tvingade spikar | Chans A (ST / ET) | A+B (ST / ET) | Spikarna satt (ST / ET) | Båda/alla spikar satt |
+|---|---|---|---|---|
+| 0 (uppstår själva, 0,5 per omg) | 1 på 168 / 159 | 1 på 105 / 97 | – | – |
+| **2 (infört)** | **1 på 170 / 162** | **1 på 96 / 92** | 68 / 71 % | 80 / 90 omg |
+| 3 | 1 på 174 / 167 | 1 på 97 / 93 | 64 / 71 % | 52 / 70 omg |
+| 4 | 1 på 181 / 174 | 1 på 101 / 97 | 62 / 69 % | 32 / 46 omg |
+
+- Arkivets A+B med Gambling Cabin: ST 1 på 208 (77 % tillbaka), ET 1 på 162 (101 %). Filens A ensam (500 kr) har ungefär samma chans som A+B hade för ~800 kr.
+- C (underspelade tecken uppviktade): vikt 2 gav ST 1 på 220 / ET 1 på 195, vikt 1,3 gav 1 på 177 / 167. 1,3 infört. C ligger fortfarande under A på Stryktipset (50 % tillbaka mot A:s 120 %), men det bygger på få 13:or.
+- Nettot styrs av enstaka 13-rättare (A: 4973 59 266 kr ST, 2590 55 109 kr ET). Chansen är måttet.
+
 ## Robusta lärdomar (stöds av hela urvalet)
 
 1. **Oddsen slår vår lagmodell.** Logloss över 216 matcher, där lägre är bättre:

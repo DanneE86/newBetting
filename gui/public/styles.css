@@ -89,28 +89,6 @@ html, body {
 /* Den gamla glöden är borttagen; elementet ligger kvar i HTML (aria-hidden) */
 .btn-glow { display: none; }
 
-/* Sekundärknapp (samma värden som ds-btn--secondary; används även utan ds-btn i andra vyer).
-   :where() ger noll specificitet så att ds-btn/ds-btn--sm vinner när de sitter på samma element. */
-:where(.btn-ghost) {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 32px;
-  border: 2px solid var(--color-text);
-  background: var(--color-surface);
-  color: var(--color-text);
-  padding: var(--space-2) var(--space-4);
-  border-radius: var(--radius-pill);
-  font-family: var(--font-body);
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-sm);
-  line-height: var(--line-height-tight);
-  cursor: pointer;
-  transition: background-color var(--duration-fast) var(--easing), border-color var(--duration-fast) var(--easing);
-}
-
-:where(.btn-ghost):hover { background: var(--color-surface-muted); }
-:where(.btn-ghost):disabled { opacity: 0.5; cursor: not-allowed; }
 
 .status-bar {
   display: grid;
@@ -171,10 +149,8 @@ html, body {
 .acc .hint { color: var(--color-text-muted); font-size: var(--font-size-xs); margin-top: var(--space-2); }
 .draw-cal { margin-top: var(--space-4); }
 .draw-cal h4 { margin: 0 0 var(--space-1); font-size: var(--font-size-sm); }
-.draw-cal-table { width: 100%; border-collapse: collapse; font-size: var(--font-size-xs); margin-top: var(--space-2); }
-.draw-cal-table th, .draw-cal-table td { padding: var(--space-1) var(--space-2); border-bottom: 1px solid var(--color-border); text-align: left; }
+.draw-cal-table { margin-top: var(--space-2); }
 .draw-cal-table .num { text-align: right; }
-.draw-cal-table th { color: var(--color-text-muted); font-weight: var(--font-weight-bold); }
 .acc-outcomes-label { font-size: var(--font-size-xs); color: var(--color-text-muted); margin-top: var(--space-2); text-transform: uppercase; letter-spacing: 0.04em; }
 .acc-outcomes .acc-picks { margin-top: var(--space-1); }
 .acc-pick.is-outcome { background: var(--color-info-bg); border-color: var(--color-info-bg); }
@@ -490,21 +466,13 @@ html, body {
   min-width: 0;
 }
 
-.tip-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: var(--font-size-sm);
-}
-
+/* ds-table, med tipskortets versala rubriker och utan vänsterluft */
 .tip-table th {
-  text-align: left;
   font-size: var(--font-size-xs);
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--color-text-muted);
-  font-weight: var(--font-weight-bold);
   padding: 0 var(--space-2) var(--space-2) 0;
-  border-bottom: 1px solid var(--color-border-strong);
+  border-bottom-width: 1px;
 }
 
 .tip-table th:nth-child(3),
@@ -514,7 +482,6 @@ html, body {
 
 .tip-table td {
   padding: var(--space-2) var(--space-2) var(--space-2) 0;
-  border-bottom: 1px solid var(--color-border);
   vertical-align: middle;
 }
 
@@ -768,21 +735,6 @@ html, body {
   color: var(--color-text-muted);
   margin-bottom: 2px;
 }
-.val-rr {
-  font-size: var(--font-size-xs);
-  color: var(--color-text-muted);
-  margin-top: 2px;
-}
-.val-rr .rr-pos {
-  color: var(--color-success);
-}
-.val-rr .rr-neg {
-  color: var(--color-text-muted);
-}
-/* Plus i EV men under säkerhetsmarginalen: inte grönt, det är inget spel */
-.val-rr .rr-near {
-  color: var(--color-warning);
-}
 .odd-pill.is-clickable { user-select: none; -webkit-user-select: none; }
 
 /* Grupperade ligafilter: grupp (England, Europa ...) fäller ut turneringarna */
@@ -818,6 +770,10 @@ html, body {
 }
 .notes .market-only {
   color: var(--color-warning);
+}
+.notes .upset-note {
+  color: var(--color-warning);
+  font-weight: var(--font-weight-bold);
 }
 
 /* ---------- Daily Scanner ---------- */
@@ -959,9 +915,7 @@ html, body {
 }
 .agent-box ul { margin: 0; padding-left: var(--space-4); color: var(--color-text); }
 .agent-box li { margin: 2px 0; }
-.agent-box table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
-.agent-box th, .agent-box td { text-align: left; padding: var(--space-1) var(--space-1) var(--space-1) 0; font-size: var(--font-size-xs); }
-.agent-box th { color: var(--color-text-muted); font-weight: var(--font-weight-medium); }
+.agent-box table { font-variant-numeric: tabular-nums; }
 .agent-box .dead { color: var(--color-danger); }
 .agent-box .weak { color: var(--color-warning); }
 .agent-box .ok { color: var(--color-success); }
@@ -974,38 +928,10 @@ html, body {
   .btn-scan { width: 100%; justify-content: center; }
 }
 
-/* Analys-knapparna på varje tipskort: små sekundärknappar (ds-btn--secondary + --sm i CSS,
-   klassnamnen på knapparna får inte ändras) */
+/* Analys-knapparna på varje tipskort: ds-btn ds-btn--secondary ds-btn--sm (utfällt läge i tokens.css) */
 .tip-analyze { margin-top: var(--space-3); }
 .tip-actions { display: flex; flex-wrap: wrap; gap: var(--space-2); align-items: center; }
-.btn-analyze,
-.btn-lineup,
-.btn-matchup,
-.btn-referee {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 32px;
-  border: 2px solid var(--color-text);
-  background: var(--color-surface);
-  color: var(--color-text);
-  padding: var(--space-1) var(--space-3);
-  border-radius: var(--radius-pill);
-  font-family: var(--font-body);
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-xs);
-  line-height: var(--line-height-tight);
-  cursor: pointer;
-  transition: background-color var(--duration-fast) var(--easing);
-}
-.btn-analyze:hover,
-.btn-lineup:hover,
-.btn-matchup:hover,
-.btn-referee:hover { background: var(--color-surface-muted); }
-.btn-analyze[aria-expanded="true"],
-.btn-matchup[aria-expanded="true"],
-.btn-referee[aria-expanded="true"] { background: var(--color-surface-sunken); }
-.btn-lineup:disabled { opacity: 0.5; cursor: wait; }
+.btn-lineup:disabled { cursor: wait; }
 .tip-analyze .analysis { margin-top: var(--space-2); }
 .tip-analyze .scan-body { padding: 0; }
 .agent-box h4 .verdict { margin-left: var(--space-1); vertical-align: middle; }
@@ -1036,9 +962,7 @@ html, body {
 
 /* Lagklick: nyckelspelare */
 .kp-wrap { overflow-x: auto; margin: var(--space-1) 0; }
-.kp-table { width: 100%; border-collapse: collapse; font-size: var(--font-size-xs); }
-.kp-table th { color: var(--color-text-muted); font-weight: var(--font-weight-bold); text-align: left; padding: var(--space-1) var(--space-2); border-bottom: 1px solid var(--color-border-strong); }
-.kp-table td { padding: var(--space-1) var(--space-2); border-bottom: 1px solid var(--color-border); white-space: nowrap; }
+.kp-table td { white-space: nowrap; }
 .kp-table .kp-status { color: var(--color-warning); }
 .kp-table tr.kp-warn td { color: var(--color-danger); }
 .kp-note { color: var(--color-text-muted); font-size: var(--font-size-xs); margin-top: var(--space-1); }
@@ -1117,7 +1041,6 @@ html, body {
 .val-line { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-1) var(--space-2); }
 .val-from { font-size: var(--font-size-xs); color: var(--color-text-muted); }
 .val-from b { color: var(--color-text); font-variant-numeric: tabular-nums; }
-.val-rr b { font-variant-numeric: tabular-nums; }
 
 /* Alla kandidater: hopfälld tills den öppnas */
 .cand-wrap > summary { list-style: none; cursor: pointer; }
@@ -1225,6 +1148,8 @@ nav.view-tabs {
 .vf-btn[aria-pressed="true"] .count { color: var(--color-surface-sunken); }
 .vf-btn[data-vf="value"][aria-pressed="true"] { background: var(--color-success-solid); color: var(--color-text-on-brand); }
 .vf-btn[data-vf="value"][aria-pressed="true"] .count { color: var(--color-text-on-brand); }
+.vf-btn[data-vf="upset"][aria-pressed="true"] { background: var(--color-warning-solid); color: var(--color-text-on-brand); }
+.vf-btn[data-vf="upset"][aria-pressed="true"] .count { color: var(--color-text-on-brand); }
 
 /* Kortets huvud: främsta tipset + omdöme */
 .score-box { display: flex; flex-direction: column; align-items: flex-end; gap: var(--space-1); min-width: 6rem; }
@@ -1293,6 +1218,12 @@ nav.view-tabs {
 .cr-verdict { text-align: right; white-space: nowrap; }
 .cand-body .tip { margin: 0 var(--space-2) var(--space-2); background: var(--color-surface); animation: none; }
 .tips.muted-list { gap: var(--space-2); }
+/* Dagens bästa och skrällar: hopfällbara rader, öppna från start */
+.fold-row + .fold-row { margin-top: var(--space-2); }
+.fold-row[open] > summary { border-bottom: 1px solid var(--color-border); border-radius: var(--radius-lg) var(--radius-lg) 0 0; }
+.fold-row .cand-body .tip { margin-top: var(--space-2); }
+.upset-row, .upset-row[open] { border-color: var(--color-warning-fill); }
+.upset-row .cr-tip { color: var(--color-warning); font-weight: var(--font-weight-bold); }
 
 /* Mobilhuvudet: ingen tagline, scannerknappen på en rad */
 .lbl-short { display: none; }
@@ -1524,9 +1455,7 @@ main > .section-head:first-child { margin-top: var(--space-4); }
 .rf-last .tp-k { margin-right: var(--space-1); }
 .rf-all summary { cursor: pointer; font-size: var(--font-size-sm); font-weight: var(--font-weight-bold); padding: var(--space-1) 0; }
 .rf-table-wrap { overflow-x: auto; }
-.rf-table { width: 100%; border-collapse: collapse; font-size: var(--font-size-xs); }
-.rf-table th { color: var(--color-text-muted); font-weight: var(--font-weight-bold); text-align: left; padding: var(--space-1) var(--space-2); border-bottom: 1px solid var(--color-border-strong); white-space: nowrap; }
-.rf-table td { padding: var(--space-1) var(--space-2); border-bottom: 1px solid var(--color-border); white-space: nowrap; }
+.rf-table th, .rf-table td { white-space: nowrap; }
 .rf-table .num { text-align: right; font-variant-numeric: tabular-nums; }
 .rf-table tr.rf-current td { background: var(--color-warning-bg); font-weight: var(--font-weight-bold); }
 .rf-table tfoot td { color: var(--color-text-muted); font-weight: var(--font-weight-bold); border-bottom: 0; }
@@ -1578,20 +1507,13 @@ main > .section-head:first-child { margin-top: var(--space-4); }
 .rf-controls { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-1) var(--space-2); margin: var(--space-1) 0 var(--space-2); }
 .rf-controls .tp-k { margin-left: var(--space-1); }
 .rf-controls .tp-k:first-child { margin-left: 0; }
-.rf-chip {
-  min-height: 32px;
-  border: 1px solid var(--color-border-strong); background: var(--color-surface); color: var(--color-text); border-radius: var(--radius-pill);
-  padding: var(--space-1) var(--space-3); font-family: var(--font-body); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); line-height: var(--line-height-tight); cursor: pointer;
-}
-.rf-chip:hover { border-color: var(--color-text); }
-.rf-chip.on { background: var(--color-warning-bg); border-color: var(--color-warning); color: var(--color-warning); }
 .rf-min { font-size: var(--font-size-xs); color: var(--color-text-muted); margin-left: var(--space-1); }
-.rf-min select { min-height: 32px; background-color: var(--color-surface); color: var(--color-text); border: 1px solid var(--color-border-strong); border-radius: var(--radius-sm); padding: 0 var(--space-2); font-family: var(--font-body); font-size: var(--font-size-xs); }
+/* ds-select, i radens storlek */
+.rf-min select { min-height: 32px; padding: 0 var(--space-2); border-radius: var(--radius-sm); font-size: var(--font-size-xs); }
 .rf-table th.rf-sortable { cursor: pointer; user-select: none; }
 .rf-table th.rf-sortable:hover, .rf-table th.rf-sortable.on { color: var(--color-warning); }
 @media (max-width: 640px) {
   .rf-controls { gap: var(--space-1); }
-  .rf-chip { padding: var(--space-1) var(--space-2); }
 }
 .ref-line { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--space-1) var(--space-2); padding: var(--space-2) var(--space-3); border: 1px solid var(--color-border); border-radius: var(--radius-md); }
 .ref-line-k { font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); text-transform: uppercase; letter-spacing: 0.04em; color: var(--color-danger); }

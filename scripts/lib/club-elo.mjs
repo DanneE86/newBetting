@@ -10,14 +10,15 @@ import { getText } from './http.mjs';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
 const CACHE = path.join(root, 'data', 'open', 'clubelo_all.json');
 const MAX_AGE_H = 24;
-// Svenska Spels isoCode (ISO 3166 alpha-3, ibland FIFA) -> clubelo:s landskod
-const ISO_TO_CLUBELO = {
+// Svenska Spels isoCode (ISO 3166 alpha-3, ibland FIFA) -> clubelo:s landskod (Rumänien ROU, Lettland LVA - ROM/LAT ger
+// clubelo:s allmänna topplista i stället för landet, rättat 2026-10-12)
+export const ISO_TO_CLUBELO = {
   GBR: 'ENG', ENG: 'ENG', SCO: 'SCO', WAL: 'WAL', NIR: 'NIR', IRL: 'IRL', ESP: 'ESP', ITA: 'ITA', DEU: 'GER', GER: 'GER',
   FRA: 'FRA', NLD: 'NED', NED: 'NED', PRT: 'POR', POR: 'POR', BEL: 'BEL', TUR: 'TUR', AUT: 'AUT', CHE: 'SUI', SUI: 'SUI',
   GRC: 'GRE', GRE: 'GRE', DNK: 'DEN', DEN: 'DEN', NOR: 'NOR', SWE: 'SWE', FIN: 'FIN', CZE: 'CZE', POL: 'POL', UKR: 'UKR',
-  HRV: 'CRO', CRO: 'CRO', SRB: 'SRB', HUN: 'HUN', ROU: 'ROM', BGR: 'BUL', SVK: 'SVK', SVN: 'SVN', CYP: 'CYP', ISR: 'ISR',
+  HRV: 'CRO', CRO: 'CRO', SRB: 'SRB', HUN: 'HUN', ROU: 'ROU', ROM: 'ROU', BGR: 'BUL', SVK: 'SVK', SVN: 'SVN', CYP: 'CYP', ISR: 'ISR',
   RUS: 'RUS', AZE: 'AZE', KAZ: 'KAZ', ISL: 'ISL', BIH: 'BIH', ALB: 'ALB', MKD: 'MKD', MDA: 'MDA', GEO: 'GEO', ARM: 'ARM',
-  BLR: 'BLR', LVA: 'LAT', LTU: 'LTU', EST: 'EST', LUX: 'LUX', MLT: 'MLT', MNE: 'MNE', XKX: 'KOS', KOS: 'KOS', FRO: 'FAR',
+  BLR: 'BLR', LVA: 'LVA', LAT: 'LVA', LTU: 'LTU', EST: 'EST', LUX: 'LUX', MLT: 'MLT', MNE: 'MNE', XKX: 'KOS', KOS: 'KOS', FRO: 'FAR', AND: 'AND',
 };
 
 function readCache() {

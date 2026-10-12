@@ -189,6 +189,80 @@ function optimizeWithTop(pools, legs, locked, maxRows, targetLogS) {
   return best ? best.pick : null;
 }
 
+// Storvinstsystemet (standard sedan 2026-10-11, användaren vill kunna vinna de stora utdelningarna, bara raka system):
+// rakt system som maximerar E[min(utdelning, mål)] / mål vid alla rätt i stället för träffchansen. En rad som ger
+// 10 000 kr räknas som 0,2 av målet 50 000, allt över målet som 1 – systemet jagar storvinstrader men inte lotterirader.
+// Bakkört 488 omg V86/V85/V75/GS75 2024–2026 (rullande modell, mål 100 000): 1 000 kr +27 % mot träffsystemets −3 %,
+// 2 vinster ≥ 50 000 mot 1, men utan 3 största −47 % mot −25 % och vinst i 249 mot 351 omgångar. Plusset bygger på
+// enstaka storvinster. Mål 50 000/250 000 och chans krympt mot strecket gav inget bättre.
+export const BIG_TARGET = 100000;
+const BIG_STEP = 0.1; // hink i log(streckprodukt)
+const BIG_CANDS = 10; // hästar per avdelning som prövas (högst chans först)
+
+/** Andel av målet systemet väntas ge vid alla rätt. sel: [[{ p, lb }]], lb = hink för −log(streck), logT = log(andel·radpris/mål). */
+function bigScore(sel, logT) {
+  const nb = Math.ceil(-logT / BIG_STEP) + 1;
+  let d = new Float64Array(nb);
+  d[0] = 1;
+  for (const hs of sel) {
+    const nd = new Float64Array(nb);
+    for (let b = 0; b < nb; b++) {
+      if (!d[b]) continue;
+      for (const h of hs) nd[Math.min(nb - 1, b + h.lb)] += d[b] * h.p;
+    }
+    d = nd;
+  }
+  let f = 0;
+  for (let b = 0; b < nb; b++) f += d[b] * Math.min(1, Math.exp(logT + b * BIG_STEP));
+  return f;
+}
+
+/**
+ * Rakt storvinstsystem inom budget. Girig utbyggnad: varje avdelning startar med högst chans, sedan läggs den häst
+ * till (bland avdelningens BIG_CANDS mest troliga) som höjer bigScore mest per ökad kostnad (Δlog f / Δlog rader).
+ * target: målet i kr vid alla rätt (minst minTop). Klarar systemet inte högsta rad-spärren byggs träffsystemet
+ * (buildSystem, alpha 1) i stället. bigShare = väntad andel av målet.
+ */
+export function buildBigSystem(legs, { budget, price = 0.5, locked = {}, minTop = MIN_TOP, topShare = 0.25, target = BIG_TARGET } = {}) {
+  const goal = Math.max(target, minTop);
+  const logT = Math.log((topShare * price) / goal);
+  const maxRows = Math.floor(budget / price + 1e-9);
+  const pools = legs.map((l) => {
+    const pl = playable(l)
+      .filter((h) => h.p > 0)
+      .map((h) => ({ ...h, lb: Math.round(-Math.log(Math.max(1e-4, h.marketPct || 1e-4)) / BIG_STEP) }))
+      .sort((a, b) => b.p - a.p);
+    const lock = locked[l.leg];
+    return lock?.length ? pl.filter((h) => lock.includes(h.nr)) : pl.slice(0, BIG_CANDS);
+  });
+  const sel = pools.map((pl, i) => (locked[legs[i].leg]?.length ? [...pl] : pl.slice(0, 1)));
+  let rows = sel.reduce((a, s) => a * s.length, 1);
+  let cur = bigScore(sel, logT);
+  for (;;) {
+    let best = null;
+    pools.forEach((pl, i) => {
+      if (locked[legs[i].leg]?.length) return;
+      const n = sel[i].length;
+      if ((rows / n) * (n + 1) > maxRows) return;
+      for (const h of pl) {
+        if (sel[i].includes(h)) continue;
+        sel[i].push(h);
+        const f = bigScore(sel, logT);
+        sel[i].pop();
+        const gain = cur > 0 ? Math.log(f / cur) / Math.log((n + 1) / n) : f;
+        if (!best || gain > best.gain) best = { i, h, f, gain };
+      }
+    });
+    if (!best || best.gain <= 0) break;
+    rows = (rows / sel[best.i].length) * (sel[best.i].length + 1);
+    sel[best.i].push(best.h);
+    cur = best.f;
+  }
+  const out = summarize(legs, sel, price, topShare);
+  if (minTop > 0 && (out.topPayout ?? 0) < minTop) return { ...buildSystem(legs, { budget, price, alpha: 1, locked, minTop, topShare }), big: false, bigShare: null };
+  return { ...out, topOk: true, big: true, bigShare: cur, target: goal };
+}
+
 /** Antal rader i ett system (produkten av antal hästar per avdelning). */
 export const rowCount = (sys) => sys.legs.reduce((a, l) => a * l.horses.length, 1);
 

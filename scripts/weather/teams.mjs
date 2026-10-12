@@ -66,19 +66,9 @@ export const TEAM_WIKI = {
   'Sao Paulo': 'São Paulo FC', 'Sport Recife': 'Sport Club do Recife', 'Vasco': 'CR Vasco da Gama', 'Vitoria': 'Esporte Clube Vitória',
 };
 
-// Namn som forekommer i openfootball-fixtures -> football-data-namn
-export const TEAM_ALIASES = {
-  "FC Twente '65": 'Twente', 'SC Cambuur-Leeuwarden': 'Cambuur', 'NEC': 'Nijmegen', 'PSV': 'PSV Eindhoven',
-  'AZ': 'AZ Alkmaar', 'Telstar 1963': 'Telstar', 'Club Atlético de Madrid': 'Ath Madrid', 'Málaga': 'Malaga',
-  'Real Betis Balompié': 'Betis', 'Real Sociedad de Fútbol': 'Sociedad', 'Lille OSC': 'Lille', '1. FC Köln': 'FC Koln',
-  'Borussia Mönchengladbach': "M'gladbach", 'FC Bayern München': 'Bayern Munich', 'SV 07 Elversberg': 'Elversberg',
-  'Bolton Wanderers': 'Bolton',
-  // Odds API / OddsPortal -> historikens namn
-  'Atlético Madrid': 'Ath Madrid', 'Atletico Madrid': 'Ath Madrid', 'Espanyol': 'Espanol',
-  'Leicester City': 'Leicester', 'Levadiakos': 'Levadeiakos', 'Volos FC': 'Volos NFC',
-  'Atletico Paranaense': 'Athletico-PR', 'Athletico Paranaense': 'Athletico-PR', 'Atletico Mineiro': 'Atletico-MG',
-  'Aldosivi Mar del Plata': 'Aldosivi', 'Sarmiento de Junin': 'Sarmiento Junin',
-};
+// Globala lagalias (openfootball/Odds API/OddsPortal -> football-data) ligger i config/team-aliases.json
+import { TEAM_ALIASES } from '../lib/team-aliases.mjs';
+export { TEAM_ALIASES };
 
 // Stad for lag som inte hittas via Wikipedia/Wikidata -> geokodas (vader pa stadsniva racker)
 export const CITY_HINT = {

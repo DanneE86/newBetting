@@ -79,7 +79,7 @@ export function saveSystems(product, analysis, rules, evaluate) {
     const snap = { rowList: red.rowList, cost: red.cost, picks: a.events.map((e) => e[key]?.signs || '') };
     return {
       rows: red.rows, cost: red.cost, grundRows: red.grundRows, hitAll: red.hitAll, rules: red.rules, split: Boolean(red.split),
-      gamblingCabinUrl: red.gamblingCabinUrl, picks: snap.picks, rowList: red.rowList,
+      picks: snap.picks, rowList: red.rowList,
       evaluation: complete && dist ? evaluate(snap, outcomes, dist) : null,
     };
   };

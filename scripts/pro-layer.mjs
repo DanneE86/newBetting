@@ -13,11 +13,11 @@ import { historicalMissing, findUsMatch, inCurrentSquad, loadPlayerModel, summar
 import { adjustProbs, loadAdjustments } from './lib/learned-adjust.mjs';
 import { extraSignals } from './lib/extra-signals.mjs';
 import { mergeCaseDuplicates, mergeNameVariants } from './lib/odds-history.mjs';
-import { TEAM_ALIASES } from './weather/teams.mjs';
-import { sameTeamName } from './lib/team-aliases.mjs';
+import { sameTeamName, TEAM_ALIASES } from './lib/team-aliases.mjs';
 import { buildRefIndex, loadRefereeMatches, refereeFlags, refKey, REF_LEAGUES, resolveTeam } from './lib/referee-streaks.mjs';
 import { buildCardIndex, CARD_CFG, pickCardLine, predictCards } from './lib/cards-model.mjs';
 import { DRAW_LEAGUES, DRAW_MARGIN, pick1x2 } from './lib/pick-1x2.mjs';
+import { findUpset } from './lib/upset-pick.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const P = {
@@ -177,6 +177,11 @@ for (const t of marketOnly) {
   enriched.set(key, (t.pro = buildPro(t)));
   tips.allCandidates.push(t);
   if (Object.values(t.pro.verdicts).some((v) => v.value)) tips.bestUpcoming.push(t);
+}
+// Skräll med värde (scripts/lib/upset-pick.mjs): 1/2 som inte är favorit, minst 6 % över skarpt rätt pris
+for (const t of [...(tips.bestUpcoming ?? []), ...(tips.allCandidates ?? [])]) {
+  const upset = findUpset(t.pro?.market?.fair, t.pro?.verdicts);
+  if (upset) t.upset = upset; else delete t.upset;
 }
 // Domarsviter per lag (minst 5 raka segrar/forluster med matchens domare), engelska ligor - npm run domare
 const refRows = loadRefereeMatches((rel) => { const f = path.join(root, rel); return fs.existsSync(f) ? readJson(f) : null; }, store.matches);

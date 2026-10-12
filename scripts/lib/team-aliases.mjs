@@ -7,13 +7,16 @@ import { fileURLToPath } from 'node:url';
 
 const FILE = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..', 'config', 'team-aliases.json');
 let doc;
+const readDoc = (file) => { try { return JSON.parse(fs.readFileSync(file, 'utf8').replace(/^﻿/, '')); } catch { return {}; } };
 export function loadAliases(file = FILE) {
   if (doc !== undefined && file === FILE) return doc;
-  let d = {};
-  try { d = JSON.parse(fs.readFileSync(file, 'utf8').replace(/^﻿/, '')).leagues ?? {}; } catch { d = {}; }
+  const d = readDoc(file).leagues ?? {};
   if (file === FILE) doc = d;
   return d;
 }
+
+/** Globala alias (alla ligor): namn i externa källor (openfootball, Odds API, OddsPortal) -> historikens namn. */
+export const TEAM_ALIASES = readDoc(FILE).global ?? {};
 
 /** Namnet som anvands for laget i ligan (oforandrat om det inte ar en kand variant). */
 export function canonTeam(league, name, aliases = loadAliases()) {

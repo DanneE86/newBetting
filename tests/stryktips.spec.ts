@@ -7,12 +7,8 @@ import { pathToFileURL } from 'url';
 const root = path.resolve(__dirname, '..');
 const file = path.join(root, 'data', 'stryktipset.json');
 
-// Teckenregler (anvandarens beslut) lases fran skriptet: A 4-2-2; B samma i delat lage, annars SIGN_MIN.B
-let SIGN_MIN: { A: number[]; B: number[] };
-const antT = (m: number[]) => `antT=1,${m[0]},13,${m[1]},13,${m[2]},13`;
 
 test.beforeAll(async () => {
-  ({ SIGN_MIN } = await import(pathToFileURL(path.join(root, 'scripts', 'fetch-stryktipset.mjs')).href));
   // Hamta om filen saknas eller ar aldre an 6 h (kraver natverk)
   if (!fs.existsSync(file) || Date.now() - fs.statSync(file).mtimeMs > 6 * 3600e3) {
     execFileSync(process.execPath, [path.join(root, 'scripts', 'fetch-stryktipset.mjs')], { cwd: root, stdio: 'inherit' });
@@ -38,41 +34,24 @@ test('stryktipset: 13 matcher med avsparkstid, procent och Värde/Ej värde', ()
       const sysP = e.spik?.used ? e.spik.sysP : e.final;
       const reserveSpik = e.systemPick.signs.length === 1 && sysP['1X2'.indexOf(e.systemPick.signs)] === Math.max(...sysP);
       if (!reserveSpik) expect(e.systemPick.signs).toContain(e.tip);
-      expect(e.colors).toHaveLength(3);
       // Svenska Spels expertanalyser (kan vara tomma innan de publicerats)
       expect(Array.isArray(e.experts)).toBe(true);
       for (const x of e.experts) expect(x.signs).toMatch(/^[1X2]+$/);
     }
-    expect(p.system.rows).toBeLessThanOrEqual(p.system.maxRows);
-    // Reducerat system inom budget 350–400 kr, unika rader
-    expect(p.reduced.cost).toBeGreaterThanOrEqual(350);
-    expect(p.reduced.cost).toBeLessThanOrEqual(400);
-    expect(new Set(p.reduced.rowList).size).toBe(p.reduced.rows);
-    expect(p.reduced.gamblingCabinUrl).toContain(`omg=${p.drawNumber}`);
-    // Utdelning minst 30 000 kr (Europatipset 20 000); teckenregler fran SIGN_MIN, max alltid 13
-    // Minsta verkliga utdelning per spel (Stryktipset 15 000 sedan 2026-10-04, Europatipset 20 000 enligt UTD_MIN_BY_PRODUCT)
-    expect(p.reduced.rules.payoutMinReal).toBeGreaterThanOrEqual(p.product === "stryktipset" ? 15000 : 20000);
-    expect(p.value?.level).toMatch(/^(low|normal|high)$/);
-    // Teckenregeln får sänkas (aldrig under 2-1-1) för 30 000–50 000 kr eller så att 3 röda + högst 1 gul går in (2026-10-02)
-    expect(p.reduced.rules.signMinRule ?? p.reduced.rules.signMin).toEqual(SIGN_MIN.A);
-    p.reduced.rules.signMin.forEach((v: number, k: number) => expect(v).toBeGreaterThanOrEqual([2, 1, 1][k]));
-    expect(p.reduced.gamblingCabinUrl).toContain(antT(p.reduced.rules.signMin));
-    if (p.reducedB) {
-      // Teckenregeln får sänkas bara för att hålla gränsen 30 000–50 000 kr (rules.signMinRule = spelets regel, 2026-10-02)
-      expect(p.reducedB.rules.signMinRule ?? p.reducedB.rules.signMin).toEqual(p.reducedB.split ? SIGN_MIN.A : SIGN_MIN.B);
-      expect(p.reducedB.gamblingCabinUrl).toContain(antT(p.reducedB.rules.signMin));
-      expect(p.reducedB.cost).toBeGreaterThanOrEqual(350);
-      expect(p.reducedB.cost).toBeLessThanOrEqual(400);
-      // Motsystemet: aldrig samma gardering som A, högst 1 spik skiljer (B ärver A:s spikar, 2026-10-03);
-      // delat system har samma grundrad men inga gemensamma rader
-      if (p.reducedB.split) expect(p.reducedB.overlapRows).toBe(0);
-      else {
-        const ev = p.events;
-        ev.forEach((e: any) => { if (e.systemPick.signs.length > 1) expect(e.systemPickB.signs).not.toBe(e.systemPick.signs); });
-        expect(ev.filter((e: any) => (e.systemPick.signs.length === 1 || e.systemPickB.signs.length === 1) && e.systemPickB.signs !== e.systemPick.signs).length).toBeLessThanOrEqual(1);
-        expect(p.reducedB.sameSingles).toBe(ev.filter((e: any) => e.systemPick.signs.length === 1 && e.systemPickB.signs === e.systemPick.signs).length);
-      }
+    // Filkuponger (2026-10-11): ingen grundradsgräns – raderna väljs en och en
+    // Filkuponger (2026-10-11): A, B och C à 500 rader som Egna rader-fil, ingen Gambling Cabin-länk
+    for (const red of [p.reduced, p.reducedB, p.reducedC]) {
+      expect(red.cost).toBe(500 * (red.rowPrice || 1));
+      expect(new Set(red.rowList).size).toBe(red.rows);
+      expect(red.gamblingCabinUrl).toBeUndefined();
+      expect(red.rules.payoutMin).toBe(30000);
+      // Typisk omsättning sparas så att sidans live-streck inte räknar med veckans omsättning hittills
+      expect(red.rules.turnover).toBeGreaterThanOrEqual(red.rules.realTurnover > 0 ? 1e6 : 0);
+      expect(red.egnaRader.trim().split('\n')).toHaveLength(red.rows + 1);
     }
+    expect(p.value?.level).toMatch(/^(low|normal|high)$/);
+    const setA = new Set(p.reduced.rowList);
+    expect(p.reducedB.rowList.some((r: string) => setA.has(r))).toBe(false);
   }
 });
 

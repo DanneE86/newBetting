@@ -147,6 +147,40 @@ Stryktipset med folket (väntat enligt `final` / enligt folket; utfall/folk = hu
 - **Hur det kan användas (förslag, inte infört och inte bakkört):** när motorn ska välja *vilket* rött tecken som tas med i en halva eller blir skrällspik, välj det med lägst folk/final bland kandidater med ungefär samma chans. Samma chans till 13 rätt, högre utdelning när den sitter. Det ändrar inte hur ofta en skräll sitter. Det gör bara procenten. Ingen regel ger "fler skrällar rätt" utan att fler favoriter faller ur systemet (se X-tilt 2026-10-03).
 - Inte testat igen: favoritfall, domare, risklag, tränare, inbördes, X-tilt och överstreckade favoriter (se ovan).
 
+### 2026-10-11: skrällar folket missar – kupongarkivet 4 582 matcher (ST + ET, jul 2023 – okt 2026)
+
+Användarens mål: hitta skrällar som folket missar och där datan stöder det. Skräll = inte oddsfavorit och folket ≤ 30 %. Väntat beräknas från Svenska Spels odds (oftast startodds) och folkets streck. Tidig period är före 2025-07-01, kontroll efter.
+
+| Grupp | n | Rätt | Oddsen | Folket | Rätt/folket | z tidig / kontroll (mot odds) |
+|---|---|---|---|---|---|---|
+| Odds/folk 1,3–1,6 (alla) | 1 533 | 343 | 346 | 243 | 1,41 | +0,4 / −0,6 |
+| Odds/folk 1,6–2 (alla) | 641 | 87 | 117 | 67 | 1,29 | −1,4 / **−3,0** |
+| Europatipset, odds/folk ≥ 1,3 | 1 250 | 205 | 246 | 160 | 1,28 | −1,2 / −2,7 |
+| **PL + Championship, odds/folk 1,3–1,6** | 569 | 149 | 130 | 91 | **1,63** | +1,1 / +1,7 |
+| PL + CH, ≥ 1,3, oddsens chans 20–30 % | 392 | 109 | 96 | 65 | **1,68** | +0,7 / +1,6 |
+| PL + CH, ≥ 1,3, kryss | 168 | 40 | 33 | 23 | 1,76 | +0,4 / +1,4 |
+| Vår modell ≥ 5 pe över oddsen (162 bakkörda omg) | 628 | 137 | 131 | 107 | 1,28 | +1,0 / −0,1 |
+| Tio tidningar ≥ 3 tippar skrällen | 202 | 68 | 59 | 54 | 1,26 | +1,3 / +0,7 |
+| Skräll mot lag folket överstreckar mest | 828 | 183 | 197 | 162 | 1,13 | −1,1 / −0,5 |
+
+- **Oddsen pekar ut skrällarna folket missar, och de går in som oddsen säger.** Det är där värdet ligger: samma träff som oddsen, men 1,4–1,7 gånger så ofta som strecken. Det ger högre utdelning när de sitter.
+- **Bästa fickan är PL och Championship**, odds/folk 1,3–1,6 och oddsens chans 20–30 %. Där gick skrällarna in 1,6–1,7 gånger så ofta som folket trodde, och något oftare än oddsen i båda perioderna. z når inte 2,5, så det är ingen bekräftad överträff mot oddsen.
+- **Akta extremerna:** odds/folk ≥ 1,6 och Europatipset går in *färre* gånger än startoddsen säger (kontroll z −3,0 / −2,7).
+- Vår modell (xG/form), tio tidningar och "hajpade" favoritlag tillför inget utöver oddsen.
+- Kupongerna tar redan med fickan (ST 38 omg, `stryktips-backtest-1011-ny2.json`): 2,8 sådana tecken per omgång, med i A 65 %, B 78 %, C 68 %. Av de 34 som gick in fanns 32 i någon kupong. 13 rätt faller på spikarna, inte på att skrällarna saknas.
+- **Infört samma dag (användaren: "bakkör, kolla vad data säger, fixa"):**
+  - Logloss-test: höjningen skattades på den tidiga perioden (2023-07 – 2025-06, 211 matcher med fickan; bästa höjning +12 %). Mätt en gång på kontrollperioden (149 matcher): −0,83, z −1,3. Svagt men bättre än oddsen. Enligt regeln förs det in i motorn: `POCKET.lift` 0,12 i `gui/public/stryk-rules.js`, tillämpas i `fetch-stryktipset.mjs` (`applyPocket`, `a.pocket`). Sidan visar "★ Skräll folket missar" på matchen.
+  - Bakkörning, 38 ST-omgångar (`data/stryktips-backtest-1011-{ny2,lift12,ficka03,ficka1}.json`):
+
+    | | Fickans tecken med (A / B / C av 105) | Av 34 som gick in, med i A / B / C | 12 / 11 rätt (A+B+C) | Netto |
+    |---|---|---|---|---|
+    | Utan ficka | 68 / 82 / 71 | 21 / 26 / 24 | 8 / 52 | +1 706 |
+    | **Höjning 12 % (infört)** | 82 / 91 / 82 | 28 / 28 / 30 | 8 / 55 | −232 |
+    | Extra vikt vid grundraden 0,3 | 97 / 97 / 96 | 32 / 31 / 31 | 8 / 53 | −1 890 |
+    | Extra vikt 1,0 | 98 / 97 / 98 | 32 / 31 / 32 | 8 / 53 | −3 931 |
+
+  - Med höjningen tas fler av skrällarna med, och fler av dem som gick in. Rader med 11 rätt ökade från 52 till 55, rader med 12 rätt är oförändrade, och nettoskillnaden (−1 900 kr) är brus. Den extra vikten vid valet av grundrad tvingade in nästan alla, men sänkte chansen till 13 rätt något (0,284 → 0,279) utan att ge fler rader med 11 eller 12 rätt. Den är därför avstängd (`STRYK_POCKET` = 0). Höjningen stängs av med `STRYK_POCKET_LIFT=0`.
+
 ### Förkastat 2026-10-04, Stryktipset: kryss – kan vi få in fler X i grundraden?
 X är det tecken som oftast saknas i grundraden: A saknar 41 % av kryssen, mot 9 % av 1:orna och 29 % av 2:orna (107 omg).
 - **X går inte att förutsäga bättre än oddsen** (PL, CH, L1 och L2 2022/23–2026/27, 8 041 matcher, mot Pinnacles slutodds):

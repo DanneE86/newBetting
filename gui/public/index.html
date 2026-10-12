@@ -129,6 +129,7 @@
       <div class="value-filter" id="value-filter" role="group" aria-label="Visa">
         <button type="button" class="vf-btn ds-toggle" data-vf="all" aria-pressed="true">Alla <span class="count" id="vf-all"></span></button>
         <button type="button" class="vf-btn ds-toggle" data-vf="value" aria-pressed="false">Bara Värde <span class="count" id="vf-value"></span></button>
+        <button type="button" class="vf-btn ds-toggle" data-vf="upset" aria-pressed="false">Skrällar <span class="count" id="vf-upset"></span></button>
       </div>
     </div>
     <div class="help-score" id="help-chans" hidden>
@@ -139,6 +140,16 @@
         Uppe till höger på kortet står kortets främsta tips med sin chans: marknaden med Värde om någon har det, annars marknaden med högst chans.
         Överst visas högst 3 bästa tips i omgången: bara matcher där 1X2-tipset har över 60&nbsp;% chans
         (i läget Alla dessutom 1X2-odds över 1.4). Klarar färre det visas bara de.
+      </p>
+    </div>
+    <div class="help-score" id="upset-help" hidden>
+      <p>
+        <strong>Kort sagt:</strong> skrällar där ett svenskt bolag betalar minst 6&nbsp;% mer än vad lagets chans är värd.
+        Skrällen vinner inte oftare än oddsen säger – men när den vinner får du mer än du borde.
+      </p>
+      <p>
+        <strong>Så läser du det här:</strong> 1 eller 2 som inte är favorit, odds högst 5, rätt pris från Pinnacle/Betfair.
+        Bakåt 2017–2026: 507 sådana skrällar vann 26&nbsp;%, gav +5&nbsp;% och slog slutoddsen varje år. Räkna med många förluster i rad.
       </p>
     </div>
     <div id="tips" class="tips" aria-busy="true">
