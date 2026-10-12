@@ -3314,6 +3314,51 @@ test.describe('elo-1x2: 1X2 ur Klubb-Elo utan odds', () => {
     expect(findClubElo('Red Star Belgrade', cache)?.clubEloName).toBe('Crvena Zvezda');
     expect(findClubElo('Okänt FC', cache)).toBeNull();
   });
+
+  test('clubEloLookup: Elo + plats i landet, bara ligans land, en klubb till ett lag', async () => {
+    const { clubEloLookup } = await lib('elo-1x2.mjs');
+    const cache = { countries: {
+      SWE: { clubs: [{ name: 'AIK', elo: 1526.3, level: 1 }, { name: 'Hammarby', elo: 1621.9, level: 1 }, { name: 'Öster', elo: 1413.7, level: 2 }] },
+      ITA: { clubs: [{ name: 'Juventus', elo: 1841.7, level: 1 }] },
+      POR: { clubs: [{ name: 'Nacional', elo: 1450, level: 1 }] },
+    } };
+    const domestic = [
+      { name: 'AIK', country: 'Sweden', tier: 1 }, { name: 'Skövde AIK', country: 'Sweden', tier: 3 },
+      { name: 'Hammarby', country: 'Sweden', tier: 1 }, { name: 'Hammarby Talang', country: 'Sweden', tier: 3 },
+      { name: 'Östers IF', country: 'Sweden', tier: 2 }, { name: 'Östersunds FK', country: 'Sweden', tier: 2 },
+      { name: 'Juventus', country: 'Italy', tier: 1 }, { name: 'Juve Stabia', country: 'Italy', tier: 2 },
+    ];
+    const eloOf = clubEloLookup(cache, domestic);
+    expect(eloOf('Hammarby', 'Sweden')).toEqual({ elo: 1622, rank: 1, country: 'SWE' });
+    expect(eloOf('AIK', 'Sweden')).toEqual({ elo: 1526, rank: 2, country: 'SWE' });
+    expect(eloOf('Skövde AIK', 'Sweden')).toBeNull();
+    expect(eloOf('Hammarby Talang', 'Sweden')).toBeNull();
+    expect(eloOf('Juve Stabia', 'Italy')).toBeNull();
+    expect(eloOf('Östersunds FK', 'Sweden')).toBeNull(); // lika poang och samma niva -> ingen far Oster
+    expect(eloOf('Nacional', 'Colombia')).toBeNull(); // land utan clubelo-sida
+    expect(eloOf('Juventus', null)?.country).toBe('ITA'); // europacup: alla lander
+  });
+});
+
+// ---------- squad-value.mjs ----------
+
+test.describe('squad-value: truppvärde per lag', () => {
+  const pl = (...v: (number | null)[]) => ({ players: v.map((x) => ({ info: { marketValue: x } })) });
+  test('summerar marknadsvärden, hoppar över saknade, null utan värden', async () => {
+    const { squadValue } = await lib('squad-value.mjs');
+    expect(squadValue(pl(100, 50, null, 0))).toEqual({ value: 150, players: 2 });
+    expect(squadValue(pl(null))).toBeNull();
+    expect(squadValue(undefined)).toBeNull();
+  });
+  test('ligans egen fil först, Europacuptrupp bara när ligan saknar fil', async () => {
+    const { squadValueLookup } = await lib('squad-value.mjs');
+    const valueOf = squadValueLookup({ PL: { Arsenal: pl(10) }, CL: { Arsenal: pl(30), Rangers: pl(5) }, PT: { Nacional: pl(7) } });
+    expect(valueOf('Arsenal', 'PL')?.value).toBe(10);
+    expect(valueOf('Arsenal', 'CL')?.value).toBe(30);
+    expect(valueOf('Rangers', 'SC')?.value).toBe(5); // SC saknar fil -> CL-truppen
+    expect(valueOf('Rangers', 'PL')).toBeNull(); // PL har fil men inte laget -> aldrig från annan liga
+    expect(valueOf('Nacional', 'URU')).toBeNull(); // samma namn i en annan liga (PT) är en annan klubb
+  });
 });
 
 // ---------- team-elo.mjs ----------

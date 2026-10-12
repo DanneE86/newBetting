@@ -2044,19 +2044,19 @@ Masterdata: data/betting-store.json. Uppdatera: .\scripts\Update-BettingStore.ps
 | 2026-10-31 Okayama vs FC Tokyo (JP1) | O/U 2.5 | UNDER 2.5 | - | Inga odds | - | - | - | - |
 | 2026-10-31 Kifisia vs Olympiakos (GR) | 1X2 | 2 | - | Inga odds | - | - | - | - |
 | 2026-10-31 Kifisia vs Olympiakos (GR) | O/U 2.5 | UNDER 2.5 | - | Inga odds | - | - | - | - |
-| 2026-10-13 Bristol City vs Watford (CH) | 1X2 | 1 | 1.82 | Ej varde | 1.99 | 500 kr -> +410 kr (1:0.82, EV -20 kr) | 52.8% / 54.9% | - |
+| 2026-10-13 Bristol City vs Watford (CH) | 1X2 | 1 | 1.82 | Ej varde | 2.01 | 500 kr -> +410 kr (1:0.82, EV -23 kr) | 52.4% / 54.9% | - |
 | 2026-10-13 Bristol City vs Watford (CH) | O/U 2.5 | OVER 2.5 | - | Inga odds | - | - | - | - |
-| 2026-10-13 Wolves vs Bolton (CH) | 1X2 | 1 | 1.38 | Ej varde | 1.55 | 500 kr -> +190 kr (1:0.38, EV -32 kr) | 67.8% / 72.5% | - |
+| 2026-10-13 Wolves vs Bolton (CH) | 1X2 | 1 | 1.38 | Ej varde | 1.56 | 500 kr -> +190 kr (1:0.38, EV -34 kr) | 67.5% / 72.5% | - |
 | 2026-10-13 Wolves vs Bolton (CH) | O/U 2.5 | - | - | Inga odds | - | - | - | - |
-| 2026-10-13 Burnley vs Charlton (CH) | 1X2 | 1 | 1.75 | Ej varde | 1.91 | 500 kr -> +375 kr (1:0.75, EV -18 kr) | 55.1% / 57.1% | - |
+| 2026-10-13 Burnley vs Charlton (CH) | 1X2 | 1 | 1.75 | Ej varde | 1.93 | 500 kr -> +375 kr (1:0.75, EV -22 kr) | 54.7% / 57.1% | - |
 | 2026-10-13 Burnley vs Charlton (CH) | O/U 2.5 | OVER 2.5 | 1.78 | Ej varde | 2.08 | 500 kr -> +390 kr (1:0.78, EV -36 kr) | 52.1% / 56.2% | - |
-| 2026-10-13 Millwall vs Swansea (CH) | 1X2 | 1 | 2.5 | Ej varde | 2.65 | 500 kr -> +750 kr (1:1.5, EV -4 kr) | 39.6% / 40.0% | - |
+| 2026-10-13 Millwall vs Swansea (CH) | 1X2 | 1 | 2.5 | Ej varde | 2.67 | 500 kr -> +750 kr (1:1.5, EV -8 kr) | 39.3% / 40.0% | - |
 | 2026-10-13 Millwall vs Swansea (CH) | O/U 2.5 | OVER 2.5 | 1.85 | Ej varde | 2.16 | 500 kr -> +425 kr (1:0.85, EV -37 kr) | 50.0% / 54.0% | - |
-| 2026-10-13 Wrexham vs West Brom (CH) | 1X2 | 1 | 2.4 | Ej varde | 2.63 | 500 kr -> +700 kr (1:1.4, EV -19 kr) | 40.1% / 41.7% | - |
+| 2026-10-13 Wrexham vs West Brom (CH) | 1X2 | 1 | 2.4 | Ej varde | 2.65 | 500 kr -> +700 kr (1:1.4, EV -23 kr) | 39.8% / 41.7% | - |
 | 2026-10-13 Wrexham vs West Brom (CH) | O/U 2.5 | UNDER 2.5 | 1.83 | Ej varde | 2.14 | 500 kr -> +415 kr (1:0.83, EV -36 kr) | 50.7% / 54.6% | - |
-| 2026-10-13 Birmingham vs Preston (CH) | 1X2 | 1 | 1.67 | Ej varde | 1.84 | 500 kr -> +335 kr (1:0.67, EV -23 kr) | 57.2% / 59.9% | - |
+| 2026-10-13 Birmingham vs Preston (CH) | 1X2 | 1 | 1.67 | Ej varde | 1.85 | 500 kr -> +335 kr (1:0.67, EV -26 kr) | 56.8% / 59.9% | - |
 | 2026-10-13 Birmingham vs Preston (CH) | O/U 2.5 | OVER 2.5 | 1.72 | Ej varde | 2 | 500 kr -> +360 kr (1:0.72, EV -36 kr) | 54.0% / 58.1% | - |
-| 2026-10-13 Stoke vs Middlesbrough (CH) | 1X2 | 2 | 1.97 | Ej varde | 2.16 | 500 kr -> +485 kr (1:0.97, EV -21 kr) | 48.7% / 50.8% | - |
+| 2026-10-13 Stoke vs Middlesbrough (CH) | 1X2 | 2 | 1.97 | Ej varde | 2.18 | 500 kr -> +485 kr (1:0.97, EV -25 kr) | 48.3% / 50.8% | - |
 | 2026-10-13 Stoke vs Middlesbrough (CH) | O/U 2.5 | OVER 2.5 | 1.67 | Ej varde | 1.94 | 500 kr -> +335 kr (1:0.67, EV -35 kr) | 55.7% / 59.9% | - |
 | 2026-10-14 QPR vs Derby (CH) | 1X2 | 1 | 1.82 | Ej varde | 2.04 | 500 kr -> +410 kr (1:0.82, EV -31 kr) | 51.5% / 54.9% | - |
 | 2026-10-14 QPR vs Derby (CH) | O/U 2.5 | OVER 2.5 | 1.79 | Ej varde | 2.09 | 500 kr -> +395 kr (1:0.79, EV -36 kr) | 51.9% / 55.9% | - |
@@ -2212,8 +2212,6 @@ Masterdata: data/betting-store.json. Uppdatera: .\scripts\Update-BettingStore.ps
 | 2026-10-18 Leverkusen vs Freiburg (BL) | O/U 2.5 | - | 2.67 | Ej varde | 3.03 | 500 kr -> +835 kr (1:1.67, EV -23 kr) | 35.7% / 37.5% | - |
 | 2026-10-18 M'gladbach vs Hoffenheim (BL) | 1X2 | 2 | 2 | Ej varde | 2.16 | 500 kr -> +500 kr (1:1, EV -22 kr) | 47.8% / 50.0% | - |
 | 2026-10-18 M'gladbach vs Hoffenheim (BL) | O/U 2.5 | - | 3 | Ej varde | 3.34 | 500 kr -> +1000 kr (1:2, EV -14 kr) | 32.4% / 33.3% | - |
-| 2026-10-12 GKS Katowice vs Wieczysta Krakow (EK) | 1X2 | 1 | 2.15 | Ej varde | 2.24 | 500 kr -> +575 kr (1:1.15, EV -4 kr) | 46.1% / 46.5% | - |
-| 2026-10-12 GKS Katowice vs Wieczysta Krakow (EK) | O/U 2.5 | - | 2.45 | Ej varde | 2.86 | 500 kr -> +725 kr (1:1.45, EV -37 kr) | 37.8% / 40.8% | - |
 | 2026-10-16 Wieczysta Krakow vs Rakow (EK) | 1X2 | 2 | 2.7 | Ej varde | 2.99 | 500 kr -> +850 kr (1:1.7, EV -26 kr) | 35.1% / 37.0% | - |
 | 2026-10-16 Wieczysta Krakow vs Rakow (EK) | O/U 2.5 | OVER 2.5 | 1.53 | Ej varde | 1.75 | 500 kr -> +265 kr (1:0.53, EV -40 kr) | 60.1% / 65.4% | - |
 | 2026-10-16 Widzew Lodz vs Wisla (EK) | 1X2 | 1 | 2.3 | Ej varde | 2.47 | 500 kr -> +650 kr (1:1.3, EV -10 kr) | 42.6% / 43.5% | - |

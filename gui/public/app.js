@@ -599,13 +599,14 @@ function tipCard(tip, i, { upset = false } = {}) {
         </div>
         <h3 class="match">${
           tip.home && tip.away
-            ? `<button type="button" class="team-link" data-venue="home" title="Form, modellens träff och inbördes möten">${escapeHtml(tip.home)}</button> – <button type="button" class="team-link" data-venue="away" title="Form, modellens träff och inbördes möten">${escapeHtml(tip.away)}</button>`
+            ? `<button type="button" class="team-link" data-venue="home" title="Form, modellens träff och inbördes möten">${escapeHtml(tip.home)}</button>${eloTag(tip.teamElo?.home, tip.teamElo?.away)} – <button type="button" class="team-link" data-venue="away" title="Form, modellens träff och inbördes möten">${escapeHtml(tip.away)}</button>${eloTag(tip.teamElo?.away, tip.teamElo?.home)}`
             : escapeHtml(tip.match || "")
         }</h3>
         <div class="score-box" title="Kortets främsta tips: marknaden med Värde om någon har det, annars den med högst chans. Snitt över marknaderna: ${fmtChance(tip.tipScore)}">
           ${pr ? `<div class="n">${fmtChance(pr.p)}</div><div class="l">${escapeHtml(pr.label)}</div>${verdictBadge(pr)}` : `<div class="n">${fmtChance(tip.tipScore)}</div><div class="l">snitt chans</div>`}
         </div>
       </header>
+      ${squadBar(tip)}
       ${refereeBox(tip.referee, tip.home, tip.away)}
       <div class="team-panel" hidden></div>
 
@@ -1143,6 +1144,53 @@ function renderAccuracy(acc) {
     else closeAccDetail();
   }
 }
+
+const ELO_LAND = {
+  ENG: "England", ESP: "Spanien", ITA: "Italien", GER: "Tyskland", FRA: "Frankrike", NED: "Nederländerna", SWE: "Sverige",
+  NOR: "Norge", POL: "Polen", DEN: "Danmark", POR: "Portugal", GRE: "Grekland", CRO: "Kroatien", CZE: "Tjeckien",
+  BEL: "Belgien", SCO: "Skottland",
+};
+
+/** Klubb-Elo bredvid lagnamnet (clubelo.com), förklaras under ⓘ Vad är Elo? Starkaste laget grönt med +skillnad. */
+function eloTag(e, other) {
+  if (!e?.elo) return "";
+  const land = ELO_LAND[e.country] || e.country;
+  const diff = other?.elo ? Math.round(e.elo - other.elo) : 0;
+  const stronger = diff > 0;
+  const vs = other?.elo ? (stronger ? ` – ${diff} starkare än motståndaren` : diff < 0 ? ` – ${-diff} svagare än motståndaren` : " – lika starka") : "";
+  return ` <span class="team-elo${stronger ? " is-stronger" : ""}" title="Klubb-Elo ${e.elo} – plats ${e.rank} i ${escapeHtml(land)} (clubelo.com)${vs}. Högre = starkare lag."><span class="elo-k">Elo</span> <span class="elo-n">${e.elo}</span>${stronger ? ` <span class="elo-diff">+${diff}</span>` : ""}</span>`;
+}
+
+/** Truppvärde i klartext: 846 milj. € / 1,07 mdr € */
+function fmtSquadValue(v) {
+  if (v >= 1e9) return `${(v / 1e9).toLocaleString("sv-SE", { maximumFractionDigits: 2 })} mdr €`;
+  return `${(v / 1e6).toLocaleString("sv-SE", { maximumFractionDigits: v < 1e7 ? 1 : 0 })} milj. €`;
+}
+
+/** Truppvärde under lagnamnen: båda lagens värde och en delad stapel, dyrare trupp grön (som starkare Elo). */
+function squadBar(tip) {
+  const h = tip.squadValue?.home?.value, a = tip.squadValue?.away?.value;
+  if (!h || !a) return "";
+  const share = Math.round((100 * h) / (h + a));
+  const ratio = Math.max(h, a) / Math.min(h, a);
+  const rich = h >= a ? tip.home : tip.away;
+  const say = ratio < 1.15 ? "ungefär lika dyra trupper"
+    : `${escapeHtml(rich)}s trupp är värd ${ratio < 10 ? ratio.toLocaleString("sv-SE", { maximumFractionDigits: 1 }) : Math.round(ratio)} gånger så mycket`;
+  const side = (v, o) => (ratio >= 1.15 && v > o ? " is-rich" : "");
+  return `<div class="squad-bar" title="Truppvärde = summan av spelarnas marknadsvärde (FotMob/Transfermarkt). Säger hur dyra spelarna är, inte hur bra laget spelar ihop.">
+        <span class="sq-k">Truppvärde</span>
+        <span class="sq-v sq-home${side(h, a)}">${fmtSquadValue(h)}</span>
+        <span class="sq-track" aria-hidden="true"><span class="sq-fill${side(h, a)}" style="width:${share}%"></span><span class="sq-fill sq-away${side(a, h)}" style="width:${100 - share}%"></span></span>
+        <span class="sq-v sq-away${side(a, h)}">${fmtSquadValue(a)}</span>
+        <span class="sq-say">${say}</span>
+      </div>`;
+}
+
+$("#help-elo-btn").addEventListener("click", () => {
+  const box = $("#help-elo");
+  box.hidden = !box.hidden;
+  $("#help-elo-btn").setAttribute("aria-expanded", String(!box.hidden));
+});
 
 $("#help-chans-btn").addEventListener("click", () => {
   const box = $("#help-chans");
