@@ -87,20 +87,59 @@ const summarize = (legs, sel, price, share) => {
   };
 };
 
+// Spikar (användarens krav 2026-10-12: "ha alltid två spikar"): varje system har exakt SPIKES avdelningar med en häst.
+// Spiken är avdelningens häst med högst chans; alla par av avdelningar provas och det par som ger systemets bästa
+// mått (träff: chans för alla rätt, storvinst: väntad andel av målet) väljs. Övriga avdelningar får minst två hästar.
+// Egna låsta enhästavdelningar räknas som spikar. spikes: null = fritt som förut.
+export const SPIKES = 2;
+
+const topHorse = (l) => playable(l).filter((h) => h.p > 0).sort((a, b) => b.p - a.p)[0];
+
+function* combos(arr, k, start = 0, acc = []) {
+  if (acc.length === k) yield acc;
+  else for (let i = start; i < arr.length; i++) yield* combos(arr, k, i + 1, [...acc, arr[i]]);
+}
+
+/** Bygger systemet med exakt `spikes` spikar. build(locked, wide) → system, score(system) → tal (högst bäst). */
+function withSpikes(legs, { locked = {}, spikes, budget, price }, build, score) {
+  if (spikes == null) return build(locked, null);
+  const free = legs.filter((l) => !locked[l.leg]?.length && playable(l).filter((h) => h.p > 0).length >= 2);
+  const need = Math.max(0, spikes - legs.filter((l) => locked[l.leg]?.length === 1).length);
+  if (need > free.length) return build(locked, null);
+  const maxRows = Math.floor(budget / price + 1e-9);
+  const lockedRows = legs.reduce((a, l) => a * (locked[l.leg]?.length || 1), 1);
+  let best = null;
+  for (const combo of combos(free, need)) {
+    const lk = { ...locked };
+    for (const l of combo) lk[l.leg] = [topHorse(l).nr];
+    const wideLegs = free.filter((l) => !combo.includes(l)).map((l) => l.leg);
+    // Räcker budgeten inte till två hästar i övriga avdelningar läggs bara spikarna fast
+    const wide = lockedRows * 2 ** wideLegs.length <= maxRows ? new Set(wideLegs) : null;
+    const s = build(lk, wide);
+    if (!best || (s.topOk && !best.topOk) || (s.topOk === best.topOk && score(s) > score(best))) best = s;
+  }
+  return best;
+}
+
 /**
  * Rakt system inom budget. legs: [{ leg, number, horses: [{ nr, p, marketPct, scratched }] }].
- * locked: { [leg]: [nr, ...] } tvingar in hästar (t.ex. egen spik).
+ * locked: { [leg]: [nr, ...] } tvingar in hästar (t.ex. egen spik). spikes: antal spikar (SPIKES), null = fritt.
  */
-export function buildSystem(legs, { budget, price = 0.5, alpha = 0.5, locked = {}, minTop = 0, topShare = 0.25 } = {}) {
+export function buildSystem(legs, opts = {}) {
+  const { budget, price = 0.5, locked = {}, spikes = SPIKES } = opts;
+  return withSpikes(legs, { locked, spikes, budget, price }, (lk, wide) => buildSystemCore(legs, { ...opts, locked: lk, wide }), (s) => s.hit);
+}
+
+function buildSystemCore(legs, { budget, price = 0.5, alpha = 0.5, locked = {}, minTop = 0, topShare = 0.25, wide = null } = {}) {
   const pools = legs.map((l) => playable(l).map((h) => ({ ...h, w: weight(h, alpha) })).sort((a, b) => b.w - a.w));
   const sel = pools.map((pl, i) => {
     const lock = locked[legs[i].leg];
-    return lock?.length ? pl.filter((h) => lock.includes(h.nr)) : pl.slice(0, 1);
+    return lock?.length ? pl.filter((h) => lock.includes(h.nr)) : pl.slice(0, wide?.has(legs[i].leg) ? 2 : 1);
   });
   const maxRows = Math.floor(budget / price + 1e-9);
   let rows = sel.reduce((a, s) => a * s.length, 1);
   if (minTop > 0) {
-    const opt = optimizeWithTop(pools, legs, locked, maxRows, Math.log((topShare * price) / minTop));
+    const opt = optimizeWithTop(pools, legs, locked, maxRows, Math.log((topShare * price) / minTop), wide);
     if (opt) {
       const out = summarize(legs, opt, price, topShare);
       out.topOk = true;
@@ -132,13 +171,13 @@ export function buildSystem(legs, { budget, price = 0.5, alpha = 0.5, locked = {
  * Bästa system med högsta rad-spärr. pools: hästar per avdelning sorterade efter vikt w. targetLogS: log av största
  * tillåtna produkt av strecken på högsta raden. Returnerar valda hästar per avdelning eller null om omöjligt.
  */
-function optimizeWithTop(pools, legs, locked, maxRows, targetLogS) {
+function optimizeWithTop(pools, legs, locked, maxRows, targetLogS, wide = null) {
   const options = pools.map((pl, i) => {
     const lock = locked[legs[i].leg];
     const sets = [];
     if (lock?.length) sets.push(pl.filter((h) => lock.includes(h.nr)));
     else
-      for (let k = 1; k <= Math.min(8, pl.length); k++) {
+      for (let k = wide?.has(legs[i].leg) ? 2 : 1; k <= Math.min(8, pl.length); k++) {
         const base = pl.slice(0, k);
         sets.push(base);
         const low = minStreck(base);
@@ -221,9 +260,14 @@ function bigScore(sel, logT) {
  * Rakt storvinstsystem inom budget. Girig utbyggnad: varje avdelning startar med högst chans, sedan läggs den häst
  * till (bland avdelningens BIG_CANDS mest troliga) som höjer bigScore mest per ökad kostnad (Δlog f / Δlog rader).
  * target: målet i kr vid alla rätt (minst minTop). Klarar systemet inte högsta rad-spärren byggs träffsystemet
- * (buildSystem, alpha 1) i stället. bigShare = väntad andel av målet.
+ * (buildSystem, alpha 1) i stället. bigShare = väntad andel av målet. spikes: som i buildSystem.
  */
-export function buildBigSystem(legs, { budget, price = 0.5, locked = {}, minTop = MIN_TOP, topShare = 0.25, target = BIG_TARGET } = {}) {
+export function buildBigSystem(legs, opts = {}) {
+  const { budget, price = 0.5, locked = {}, spikes = SPIKES } = opts;
+  return withSpikes(legs, { locked, spikes, budget, price }, (lk, wide) => buildBigCore(legs, { ...opts, locked: lk, wide }), (s) => (s.big ? s.bigShare : -1) + s.hit * 1e-9);
+}
+
+function buildBigCore(legs, { budget, price = 0.5, locked = {}, minTop = MIN_TOP, topShare = 0.25, target = BIG_TARGET, wide = null } = {}) {
   const goal = Math.max(target, minTop);
   const logT = Math.log((topShare * price) / goal);
   const maxRows = Math.floor(budget / price + 1e-9);
@@ -235,7 +279,7 @@ export function buildBigSystem(legs, { budget, price = 0.5, locked = {}, minTop 
     const lock = locked[l.leg];
     return lock?.length ? pl.filter((h) => lock.includes(h.nr)) : pl.slice(0, BIG_CANDS);
   });
-  const sel = pools.map((pl, i) => (locked[legs[i].leg]?.length ? [...pl] : pl.slice(0, 1)));
+  const sel = pools.map((pl, i) => (locked[legs[i].leg]?.length ? [...pl] : pl.slice(0, wide?.has(legs[i].leg) ? 2 : 1)));
   let rows = sel.reduce((a, s) => a * s.length, 1);
   let cur = bigScore(sel, logT);
   for (;;) {
@@ -259,7 +303,7 @@ export function buildBigSystem(legs, { budget, price = 0.5, locked = {}, minTop 
     cur = best.f;
   }
   const out = summarize(legs, sel, price, topShare);
-  if (minTop > 0 && (out.topPayout ?? 0) < minTop) return { ...buildSystem(legs, { budget, price, alpha: 1, locked, minTop, topShare }), big: false, bigShare: null };
+  if (minTop > 0 && (out.topPayout ?? 0) < minTop) return { ...buildSystemCore(legs, { budget, price, alpha: 1, locked, minTop, topShare, wide }), big: false, bigShare: null };
   return { ...out, topOk: true, big: true, bigShare: cur, target: goal };
 }
 

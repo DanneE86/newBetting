@@ -168,6 +168,10 @@ function verdict(h) {
   return `<span class="hs-verdict ${ok ? "is-value" : "is-none"}" title="Chans delat med streck: ${dec(h.value)}">${ok ? "Värde" : "Ej värde"}${why}</span>`;
 }
 
+/** Hopfällbart listkort (stängt från start), rubriken visar antalet träffar. */
+const foldCard = (title, sub, n, body) =>
+  `<details class="hs-card hs-card-list hs-card-wide hs-fold"><summary><h4>${title} <span class="hs-fold-n">${n}</span> <small>${sub}</small></h4></summary>${body}</details>`;
+
 /** Hästar med kraftigt stigande streck – "sena pengar" indikerar att informerade spelare sett något. */
 function poolTrendCard(a) {
   const hasTrend = a.races.some((r) => r.horses.some((h) => h.poolTrend != null));
@@ -176,16 +180,14 @@ function poolTrendCard(a) {
     .flatMap((r) => r.horses.filter((h) => !h.scratched && h.poolTrend != null && Math.abs(h.poolTrend) >= 0.01).map((h) => ({ ...h, leg: r.leg })))
     .sort((x, y) => Math.abs(y.poolTrend) - Math.abs(x.poolTrend))
     .slice(0, 8);
-  return `<article class="hs-card hs-card-list hs-card-wide"><h4>Pool-trend <small>ATG:s live-flöde i V-spelet – vart går pengarna just nu?</small></h4>${
-    cands.length
+  return foldCard("Pool-trend", "ATG:s live-flöde i V-spelet – vart går pengarna just nu?", cands.length, cands.length
       ? `<ul>${cands.map((h) => {
           const t = h.poolTrend;
           const dir = t >= 0.02 ? "↑↑ in" : t >= 0.005 ? "↑ in" : t <= -0.02 ? "↓↓ ut" : "↓ ut";
           const cls = t >= 0 ? "is-drift-up" : "is-drift-dn";
           return `<li><span class="hs-leg">Avd ${h.leg}</span> ${h.nr} ${esc(h.horse)} · <span class="hs-drift ${cls}"><b>${dir}</b> ${(Math.abs(t) * 100).toFixed(1)} %/enhet</span> · streck ${pct(h.marketPct)} · modell ${pct(h.p)}</li>`;
         }).join("")}</ul>`
-      : "<p>Inga starka pool-rörelser just nu.</p>"
-  }</article>`;
+      : "<p>Inga starka pool-rörelser just nu.</p>");
 }
 
 function senaPengarCard(a) {
@@ -195,15 +197,13 @@ function senaPengarCard(a) {
     .flatMap((r) => r.horses.filter((h) => !h.scratched && h.streckDrift != null && h.streckDrift >= 1.4 && (h.streckLast ?? h.marketPct) <= 0.35).map((h) => ({ ...h, leg: r.leg })))
     .sort((x, y) => y.streckDrift - x.streckDrift)
     .slice(0, 6);
-  return `<article class="hs-card hs-card-list hs-card-wide"><h4>Sena pengar <small>streck stigit ≥ 40 % sedan förmiddag – kan indikera informerade spelare</small></h4>${
-    cands.length
+  return foldCard("Sena pengar", "streck stigit ≥ 40 % sedan förmiddag – kan indikera informerade spelare", cands.length, cands.length
       ? `<ul>${cands.map((h) => {
           const rel = h.streckDrift >= 2 ? "↑↑" : h.streckDrift >= 1.5 ? "↑↑" : "↑";
           const pctChg = `+${Math.round((h.streckDrift - 1) * 100)} %`;
           return `<li><span class="hs-leg">Avd ${h.leg}</span> ${h.nr} ${esc(h.horse)} · <b>${rel} ${pctChg}</b> (${pct(h.streckFirst)} → ${pct(h.streckLast ?? h.marketPct)}) · modell ${pct(h.p)} · ibP ${pct(h.ibP)}</li>`;
         }).join("")}</ul>`
-      : "<p>Inga hästar med kraftigt stigande streck just nu.</p>"
-  }</article>`;
+      : "<p>Inga hästar med kraftigt stigande streck just nu.</p>");
 }
 
 /** Hästar som Interbet-modellen sätter minst 50 % högre chans på än marknaden (ibP/streck ≥ 1,5) och streck ≤ 12 %. */
@@ -214,11 +214,9 @@ function ibSkrallCard(a) {
     .flatMap((r) => r.horses.filter((h) => !h.scratched && h.ibP != null && h.marketPct > 0 && h.marketPct <= 0.12 && h.ibP / h.marketPct >= 1.5).map((h) => ({ ...h, leg: r.leg, ibRatio: h.ibP / h.marketPct })))
     .sort((x, y) => y.ibRatio - x.ibRatio)
     .slice(0, 5);
-  return `<article class="hs-card hs-card-list hs-card-wide"><h4>Interbet-skrällar <small>streck ≤ 12 %, Interbet-chans ≥ 1,5 × strecket</small></h4>${
-    cands.length
+  return foldCard("Interbet-skrällar", "streck ≤ 12 %, Interbet-chans ≥ 1,5 × strecket", cands.length, cands.length
       ? `<ul>${cands.map((h) => `<li><span class="hs-leg">Avd ${h.leg}</span> ${h.nr} ${esc(h.horse)} · Interbet ${pct(h.ibP)} · modell ${pct(h.p)} · streck ${pct(h.marketPct)} · <b>${dec(h.ibRatio)}×</b> <small>ibScore ${h.ibScore ?? "—"}</small></li>`).join("")}</ul>`
-      : "<p>Inga hästar med lågt streck som Interbet-modellen lyfter extra.</p>"
-  }</article>`;
+      : "<p>Inga hästar med lågt streck som Interbet-modellen lyfter extra.</p>");
 }
 
 function highlights(a) {
@@ -233,11 +231,9 @@ function highlights(a) {
         ? `<ul>${vul.map((f) => `<li><span class="hs-leg">Avd ${f.leg}</span> ${f.nr} ${esc(f.horse)} <small>${esc(f.why.join(" · "))}</small></li>`).join("")}</ul>`
         : "<p>Inga favoriter ser sårbara ut.</p>"
     }</article>
-    <article class="hs-card hs-card-list hs-card-wide"><h4>Skrällar <small>streck ≤ 8 %, chans minst 1,4 × strecket och minst ett belagt skäl</small></h4>${
-      ups.length
+    ${foldCard("Skrällar", "streck ≤ 8 %, chans minst 1,4 × strecket och minst ett belagt skäl", ups.length, ups.length
         ? `<ul>${ups.map((u) => `<li><span class="hs-leg">Avd ${u.leg}</span> ${u.nr} ${esc(u.horse)} · chans ${pct(u.p)} mot streck ${pct(u.marketPct)} <small>${esc(u.why.join(" · "))}</small></li>`).join("")}</ul>`
-        : "<p>Inga lågt streckade hästar har konkreta skäl som talar för dem.</p>"
-    }</article>
+        : "<p>Inga lågt streckade hästar har konkreta skäl som talar för dem.</p>")}
     ${ibSkrallCard(a)}
     ${senaPengarCard(a)}
     ${poolTrendCard(a)}
