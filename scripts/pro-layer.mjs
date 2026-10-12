@@ -10,13 +10,14 @@ import {
 } from './pro/lib.mjs';
 import { EARLY_ROUNDS, buildTiers, fitLeagueModel, loadLeagueModels, paramsFor } from './pro/league-models.mjs';
 import { historicalMissing, findUsMatch, inCurrentSquad, loadPlayerModel, summarise as summariseMissing, teamShares } from './pro/players.mjs';
-import { TEAM_ALIASES } from './weather/teams.mjs';
 import { adjustProbs, loadAdjustments } from './lib/learned-adjust.mjs';
 import { extraSignals } from './lib/extra-signals.mjs';
 import { mergeCaseDuplicates, mergeNameVariants } from './lib/odds-history.mjs';
+import { TEAM_ALIASES } from './weather/teams.mjs';
 import { sameTeamName } from './lib/team-aliases.mjs';
 import { buildRefIndex, loadRefereeMatches, refereeFlags, refKey, REF_LEAGUES, resolveTeam } from './lib/referee-streaks.mjs';
 import { buildCardIndex, CARD_CFG, pickCardLine, predictCards } from './lib/cards-model.mjs';
+import { DRAW_LEAGUES, DRAW_MARGIN, pick1x2 } from './lib/pick-1x2.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const P = {
@@ -465,6 +466,21 @@ function seasonMatchesSoFar(league, team, date) {
   return list.filter((m) => m.season === last.season && m.date < date && (m.home === team || m.away === team)).length;
 }
 
+// Kryssregeln (scripts/lib/pick-1x2.mjs): X ar tipset nar krysset ligger inom DRAW_MARGIN fran favoriten,
+// eller i ligor som kryssar mer an oddsen (DRAW_LEAGUES, Serie B).
+// Galler alla tips med 1X2-chans, aven modelltips - raknas om fran probs varje korning (idempotent).
+function drawNote(rule, league) {
+  if (rule === 'liga') return `Kryss: ${league === 'SB' ? 'Serie B' : league} kryssar oftare än oddsen säger – X när krysset är minst ${Math.round(DRAW_LEAGUES[league] * 100)} % (backtest)`;
+  return `Kryss: X ligger inom ${Math.round(DRAW_MARGIN * 100)} %-enheter från favoriten – där slår X lika ofta och betalar bättre (backtest)`;
+}
+function applyDrawRule(t) {
+  const x = t.tips?.['1X2'];
+  if (!x?.probs || x.probs.home == null) return;
+  const { pick, confidence, drawRule } = pick1x2(x.probs, t.league);
+  const { drawRule: _r, drawNote: _n, ...rest } = x;
+  t.tips['1X2'] = { ...rest, pick, confidence: round(confidence, 3), ...(drawRule ? { drawRule, drawNote: drawNote(drawRule, t.league) } : {}) };
+}
+
 // Marknadsstyrt tips: 1X2 (och O/U om facit finns) fran marknaden, modellens tips sparas i modelTips
 function applyMarketLed(t) {
   const ml = t.pro?.marketLed;
@@ -474,13 +490,14 @@ function applyMarketLed(t) {
     delete t.modelTips;
     delete t.marketLed;
     delete t.marketLedNote;
+    applyDrawRule(t);
     return;
   }
   t.modelTips ??= structuredClone(t.tips);
   const b = t.pro.blended;
   const probs = { home: b.home, draw: b.draw, away: b.away };
-  const [pick, conf] = [['1', probs.home], ['X', probs.draw], ['2', probs.away]].sort((x, y) => y[1] - x[1])[0];
-  t.tips['1X2'] = { ...t.tips['1X2'], pick, confidence: round(conf, 3), probs: Object.fromEntries(Object.entries(probs).map(([k, v]) => [k, round(v, 3)])) };
+  t.tips['1X2'] = { ...t.tips['1X2'], probs: Object.fromEntries(Object.entries(probs).map(([k, v]) => [k, round(v, 3)])) };
+  applyDrawRule(t);
   if (ml.sourceOu) {
     t.tips.OU25 = { ...t.tips.OU25, pick: b.over25 >= 0.5 ? 'OVER 2.5' : 'UNDER 2.5', confidence: round(Math.max(b.over25, 1 - b.over25), 3), pOver: round(b.over25, 3) };
   }
@@ -595,7 +612,7 @@ function marketOnlyCandidates() {
     if (!f1) continue;
     const fOu = sharp ? devigMultiplicative([sharp.over25, sharp.under25]) : avgOf(['over25', 'under25']);
     const probs = { home: f1[0], draw: f1[1], away: f1[2] };
-    const [pick, conf] = [['1', probs.home], ['X', probs.draw], ['2', probs.away]].sort((a, b) => b[1] - a[1])[0];
+    const { pick, confidence: conf, drawRule } = pick1x2(probs, e.league);
     const pOver = fOu?.[0] ?? null;
     const ouConf = pOver == null ? null : Math.max(pOver, 1 - pOver);
     // Samma match i spelschemat -> omgang + schemats lagnamn (GUI visar bara nasta omgang per liga)
@@ -618,7 +635,7 @@ function marketOnlyCandidates() {
       date, kickoffUtc: e.commence, league: e.league, round: fx?.round ?? null,
       home, away, match: `${home} vs ${away}`,
       tips: {
-        '1X2': { pick, confidence: round(conf, 3), probs: Object.fromEntries(Object.entries(probs).map(([k, v]) => [k, round(v, 3)])) },
+        '1X2': { pick, confidence: round(conf, 3), probs: Object.fromEntries(Object.entries(probs).map(([k, v]) => [k, round(v, 3)])), ...(drawRule ? { drawRule, drawNote: drawNote(drawRule, e.league) } : {}) },
         BTTS: { pick: null, confidence: null, pYes: null },
         OU25: { pick: pOver == null ? null : pOver >= 0.5 ? 'OVER 2.5' : 'UNDER 2.5', confidence: ouConf == null ? null : round(ouConf, 3), pOver: pOver == null ? null : round(pOver, 3) },
       },
