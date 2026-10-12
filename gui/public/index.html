@@ -125,7 +125,7 @@
 
   <main>
     <div class="section-head section-head-row">
-      <h2>Bästa tips <button type="button" class="help-i" id="help-chans-btn" aria-expanded="false" aria-controls="help-chans" title="Vad betyder chans?">ⓘ<span class="help-i-txt"> Vad betyder chans?</span></button></h2>
+      <h2>Bästa tips <button type="button" class="help-i" id="help-chans-btn" aria-expanded="false" aria-controls="help-chans" title="Vad betyder chans?">ⓘ<span class="help-i-txt"> Vad betyder chans?</span></button> <button type="button" class="help-i" id="help-elo-btn" aria-expanded="false" aria-controls="help-elo" title="Vad är Elo?">ⓘ<span class="help-i-txt"> Vad är Elo?</span></button></h2>
       <div class="value-filter" id="value-filter" role="group" aria-label="Visa">
         <button type="button" class="vf-btn ds-toggle" data-vf="all" aria-pressed="true">Alla <span class="count" id="vf-all"></span></button>
         <button type="button" class="vf-btn ds-toggle" data-vf="value" aria-pressed="false">Bara Värde <span class="count" id="vf-value"></span></button>
@@ -140,6 +140,24 @@
         Uppe till höger på kortet står kortets främsta tips med sin chans: marknaden med Värde om någon har det, annars marknaden med högst chans.
         Överst visas högst 3 bästa tips i omgången: bara matcher där 1X2-tipset har över 60&nbsp;% chans
         (i läget Alla dessutom 1X2-odds över 1.4). Klarar färre det visas bara de.
+      </p>
+    </div>
+    <div class="help-score" id="help-elo" hidden>
+      <p>
+        <strong>Kort sagt:</strong> siffran bredvid laget är lagets <em>Elo</em> – ett styrketal. Högre siffra = starkare lag.
+      </p>
+      <p>
+        <strong>Som om du vore 5:</strong> tänk dig att varje lag har en hög med poängkulor.
+        När två lag möts och ett lag vinner, får vinnaren ta några kulor från förloraren.
+        Slår ett litet lag ett stort lag får det ta <em>många</em> kulor – det var ju svårt!
+        Slår ett stort lag ett litet lag får det bara ta <em>några få</em> – det var väntat.
+        Efter många matcher har de bästa lagen störst högar. Så när två lag ska mötas kan man titta vem som har flest kulor
+        – det laget brukar vinna oftare, men inte alltid.
+      </p>
+      <p>
+        <strong>Så läser du det här:</strong> ett vanligt lag ligger runt 1500. Topplag i Europa ligger runt 1900–2050.
+        100 poängs skillnad betyder ungefär att det starkare laget vinner 2 av 3 avgjorda matcher på neutral plan.
+        Håll musen över siffran så ser du lagets plats i sitt land. Siffrorna kommer från clubelo.com och finns bara för europeiska ligor.
       </p>
     </div>
     <div class="help-score" id="upset-help" hidden>

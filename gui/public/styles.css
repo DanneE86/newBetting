@@ -711,6 +711,29 @@ html, body {
   border-bottom: 1px dashed var(--color-text-muted);
 }
 .team-link:hover { color: var(--color-link); border-bottom-color: var(--color-link); }
+.team-elo {
+  display: inline-block; margin: 0 4px 0 6px; padding: 1px 8px; border-radius: 999px; vertical-align: middle;
+  font-size: var(--font-size-sm); font-weight: var(--font-weight-bold); font-variant-numeric: tabular-nums; line-height: 1.5;
+  color: var(--color-info-strong); background: var(--color-info-bg); border: 1px solid var(--color-info); cursor: help;
+}
+.team-elo .elo-k { font-weight: var(--font-weight-regular, 400); font-size: var(--font-size-xs); opacity: 0.85; }
+.team-elo.is-stronger { color: var(--color-success-strong); background: var(--color-success-bg); border-color: var(--color-success-strong); }
+.team-elo .elo-diff { font-size: var(--font-size-xs); }
+.squad-bar {
+  display: grid; grid-template-columns: auto auto minmax(80px, 220px) auto 1fr; align-items: center; gap: var(--space-2);
+  margin: var(--space-1) 0 var(--space-2); font-size: var(--font-size-sm); font-variant-numeric: tabular-nums; cursor: help;
+}
+.squad-bar .sq-k { color: var(--color-text-muted); font-size: var(--font-size-xs); text-transform: uppercase; letter-spacing: 0.03em; }
+.squad-bar .sq-v { font-weight: var(--font-weight-bold); color: var(--color-info-strong); }
+.squad-bar .sq-v.is-rich { color: var(--color-success-strong); }
+.squad-bar .sq-track { display: flex; gap: 2px; height: 8px; border-radius: 999px; overflow: hidden; background: var(--color-surface-muted); }
+.squad-bar .sq-fill { display: block; height: 100%; background: var(--color-info); }
+.squad-bar .sq-fill.is-rich { background: var(--color-success-strong); }
+.squad-bar .sq-say { color: var(--color-text-muted); font-size: var(--font-size-xs); }
+@media (max-width: 640px) {
+  .squad-bar { grid-template-columns: auto 1fr auto; }
+  .squad-bar .sq-k, .squad-bar .sq-say { grid-column: 1 / -1; }
+}
 .team-panel {
   margin: var(--space-2) 0 var(--space-2); padding: var(--space-2) var(--space-3); border-radius: var(--radius-md);
   background: var(--color-surface-muted); border: 1px solid var(--color-border); font-size: var(--font-size-sm);

@@ -60,5 +60,57 @@ export function findClubElo(name, cache, min = 0.75) {
       if (s >= min && (!best || s > best.s)) best = { s, club };
     }
   }
-  return best ? { elo: best.club.elo, clubEloName: best.club.name } : null;
+  return best ? { elo: best.club.elo, clubEloName: best.club.name, score: best.s } : null;
+}
+
+// Ligans land (config/leagues.json "country") -> clubelo:s landskod. Ligor utanfor Europa finns inte pa clubelo.
+export const COUNTRY_TO_CLUBELO = {
+  England: 'ENG', Spain: 'ESP', Italy: 'ITA', Germany: 'GER', France: 'FRA', Netherlands: 'NED', Sweden: 'SWE',
+  Norway: 'NOR', Poland: 'POL', Denmark: 'DEN', Portugal: 'POR', Greece: 'GRE', Croatia: 'CRO', Czechia: 'CZE',
+  Belgium: 'BEL', Scotland: 'SCO',
+};
+
+/**
+ * Klubb-Elo att visa bredvid lagnamnen: lookup(namn, land) -> { elo, rank, country } eller null.
+ * land = ligans land (bara det landet soks, sa "Nacional" i Colombia aldrig blir ett portugisiskt lag),
+ * null = europacup (alla lander). Land utan clubelo-sida -> null. rank = plats i landet pa clubelo.
+ * domestic = alla lagnamn i landets ligor [{ name, country, tier }] (tier 1 = hogsta). En klubb gar bara till ett av dem:
+ * hogst likhet, vid lika det vars liganiva = klubbens niva, annars inget (Skovde AIK blir aldrig AIK, Juve Stabia aldrig Juventus).
+ */
+export function clubEloLookup(cache, domestic = []) {
+  const hitIn = (name, code) => {
+    const countries = code ? { [code]: cache?.countries?.[code] } : cache?.countries ?? {};
+    const hit = findClubElo(name, { countries });
+    if (!hit) return null;
+    const cc = Object.keys(countries).find((k) => countries[k]?.clubs?.some((c) => c.name === hit.clubEloName));
+    const club = countries[cc].clubs.find((c) => c.name === hit.clubEloName);
+    return { ...hit, cc, level: club.level ?? null };
+  };
+  const owner = new Map(); // `${land}|${klubb}` -> vinnande lagnamn (eller null vid oavgjort)
+  const byClub = new Map();
+  for (const t of domestic) {
+    const code = COUNTRY_TO_CLUBELO[t.country];
+    const h = code && hitIn(t.name, code);
+    if (!h) continue;
+    const k = `${h.cc}|${h.clubEloName}`;
+    const list = byClub.get(k) ?? [];
+    if (!list.some((x) => x.name === t.name)) list.push({ name: t.name, score: h.score, fits: h.level != null && h.level === t.tier });
+    byClub.set(k, list);
+  }
+  for (const [k, list] of byClub) {
+    const top = Math.max(...list.map((x) => x.score));
+    let best = list.filter((x) => x.score === top);
+    if (best.length > 1) best = best.filter((x) => x.fits);
+    owner.set(k, best.length === 1 ? best[0].name : null);
+  }
+  return (name, country) => {
+    const code = country == null ? null : COUNTRY_TO_CLUBELO[country];
+    if (country != null && !code) return null;
+    const h = hitIn(name, code);
+    if (!h) return null;
+    const k = `${h.cc}|${h.clubEloName}`;
+    if (code && owner.has(k) && owner.get(k) !== name) return null;
+    const rank = [...cache.countries[h.cc].clubs].sort((a, b) => b.elo - a.elo).findIndex((c) => c.name === h.clubEloName) + 1;
+    return { elo: Math.round(h.elo), rank, country: h.cc };
+  };
 }

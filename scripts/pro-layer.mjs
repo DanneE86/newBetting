@@ -18,7 +18,8 @@ import { buildRefIndex, loadRefereeMatches, refereeFlags, refKey, REF_LEAGUES, r
 import { buildCardIndex, CARD_CFG, pickCardLine, predictCards } from './lib/cards-model.mjs';
 import { DRAW_LEAGUES, DRAW_MARGIN, pick1x2 } from './lib/pick-1x2.mjs';
 import { findUpset } from './lib/upset-pick.mjs';
-import { eloProbs, findClubElo } from './lib/elo-1x2.mjs';
+import { clubEloLookup, eloProbs, findClubElo } from './lib/elo-1x2.mjs';
+import { squadValueLookup } from './lib/squad-value.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const P = {
@@ -191,6 +192,28 @@ const refOf = upcomingReferees();
 applyRefereeStreaks([...(tips.bestUpcoming ?? []), ...(tips.allCandidates ?? [])]);
 // Antal kort Ö/U 3.5/4.5/5.5 (gula + roda): lagens kort + domarens niva, se scripts/lib/cards-model.mjs
 applyCards([...(tips.bestUpcoming ?? []), ...(tips.allCandidates ?? [])]);
+// Klubb-Elo bredvid lagnamnen pa /tips (bara visning, paverkar inga tips)
+const leaguesCfg = readJson(P.leaguesCfg);
+const leagueCountry = (lg) => (lg === 'CL' || lg === 'EL' || lg === 'ECL' ? null : leaguesCfg.leagues?.[lg]?.country ?? '');
+const allTips = [...(tips.bestUpcoming ?? []), ...(tips.allCandidates ?? [])];
+const recentSince = `${new Date().getFullYear() - 1}-07-01`;
+const domestic = [...new Map([...store.matches.filter((m) => m.date >= recentSince), ...allTips]
+  .flatMap((m) => [m.home, m.away].map((name) => ({ name, country: leagueCountry(m.league), tier: (tiers[m.league]?.level ?? 0) + 1 })))
+  .filter((t) => t.name && t.country)
+  .map((t) => [`${t.country}|${t.name}`, t])).values()];
+const eloOf = clubEloLookup(clubEloAll(), domestic);
+for (const t of allTips) {
+  const elo = { home: eloOf(t.home, leagueCountry(t.league)), away: eloOf(t.away, leagueCountry(t.league)) };
+  if (elo.home || elo.away) t.teamElo = elo; else delete t.teamElo;
+}
+// Truppvärde bredvid lagnamnen (data/spelare, FotMob/Transfermarkt) - bara visning, paverkar inga tips
+const spelareDir = path.join(root, 'data', 'spelare');
+const valueOf = squadValueLookup(Object.fromEntries(fs.readdirSync(spelareDir).filter((f) => f.endsWith('.json') && !f.startsWith('_'))
+  .map((f) => [f.slice(0, -5), readJson(path.join(spelareDir, f)).teams ?? {}])));
+for (const t of allTips) {
+  const sv = { home: valueOf(t.home, t.league), away: valueOf(t.away, t.league) };
+  if (sv.home || sv.away) t.squadValue = sv; else delete t.squadValue;
+}
 tips.proMeta = {
   updatedAt: new Date().toISOString(),
   config: CONFIG,
@@ -666,11 +689,14 @@ function marketOnlyCandidates() {
 
 // Oddsfri 1X2 for en match utan modelltips: ligans Dixon-Coles om den kanner bada lagen, annars Klubb-Elo
 var clubEloCache; // eslint-disable-line no-var
+function clubEloAll() {
+  return (clubEloCache ??= fs.existsSync(P.clubEloAll) ? readJson(P.clubEloAll) : { countries: {} });
+}
 function dataProbs(league, home, away) {
   const model = models[league];
   const dc = model ? predictDixonColes(model, home, away, 10, { home: 1, away: 1 }) : null;
   if (dc?.knownTeams) return { home: dc.home, draw: dc.draw, away: dc.away, source: 'dc' };
-  const elo = (clubEloCache ??= fs.existsSync(P.clubEloAll) ? readJson(P.clubEloAll) : { countries: {} });
+  const elo = clubEloAll();
   const [h, a] = [findClubElo(home, elo), findClubElo(away, elo)];
   if (!h || !a) return null;
   const p = eloProbs(h.elo, a.elo);

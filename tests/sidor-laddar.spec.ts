@@ -262,6 +262,54 @@ test('Tips: startar i läget Skrällar, Alla sparas som eget val', async ({ page
   expect(fel).toEqual([]);
 });
 
+test('Tips: Klubb-Elo bredvid lagen och ⓘ Vad är Elo? förklarar enkelt', async ({ page }) => {
+  const fel = await oppna(page, 'tips');
+  await page.locator('#value-filter [data-vf="all"]').click();
+  const data = JSON.parse(fs.readFileSync(path.join(root, 'data', 'tips-latest.json'), 'utf8'));
+  const medElo = (data.allCandidates ?? []).filter((t: any) => t.teamElo?.home || t.teamElo?.away);
+  expect(medElo.length).toBeGreaterThan(0);
+  for (const t of medElo) for (const e of [t.teamElo.home, t.teamElo.away].filter(Boolean)) {
+    expect(e.elo).toBeGreaterThan(1000);
+    expect(e.rank).toBeGreaterThan(0);
+  }
+  await page.locator('#cand-wrap > summary').click();
+  const tag = page.locator('.tip .match .team-elo').first();
+  await expect(tag).toBeVisible({ timeout: 30_000 });
+  await expect(tag).toHaveText(/^Elo \d{4}( \+\d+)?$/);
+  await expect(tag).toHaveAttribute('title', /plats \d+ i /);
+  // båda lagen med Elo: precis ett är grönt (starkare) med +skillnad, om de inte är exakt lika
+  const parKort = page.locator('.tip .match').filter({ has: page.locator('.team-elo + .team-link + .team-elo') });
+  if (await parKort.count()) {
+    const [h, a] = (await parKort.first().locator('.elo-n').allTextContents()).map(Number);
+    if (h !== a) {
+      await expect(parKort.first().locator('.team-elo.is-stronger')).toHaveCount(1);
+      await expect(parKort.first().locator('.team-elo.is-stronger .elo-diff')).toHaveText(`+${Math.abs(h - a)}`);
+      await expect(parKort.first().locator('.team-elo').nth(h > a ? 0 : 1)).toHaveClass(/is-stronger/);
+    }
+  }
+  // truppvärde under lagnamnen: båda värdena, stapeln delas 100 %, dyrare trupp grön och nämns i klartext
+  const medVarde = (data.allCandidates ?? []).filter((t: any) => t.squadValue?.home?.value && t.squadValue?.away?.value);
+  expect(medVarde.length).toBeGreaterThan(0);
+  const bar = page.locator('.tip .squad-bar').first();
+  await expect(bar).toBeVisible();
+  await expect(bar.locator('.sq-v')).toHaveCount(2);
+  for (const v of await bar.locator('.sq-v').allTextContents()) expect(v).toMatch(/^[\d ,]+ (milj\.|mdr) €$/);
+  const bredd = await bar.locator('.sq-fill').evaluateAll((els) => els.map((e) => parseFloat((e as HTMLElement).style.width)));
+  expect(bredd[0] + bredd[1]).toBe(100);
+  await expect(bar.locator('.sq-say')).toHaveText(/ungefär lika dyra trupper|s trupp är värd [\d,]+ gånger så mycket/);
+  if (bredd[0] !== bredd[1] && !(await bar.locator('.sq-say').innerText()).includes('lika')) {
+    await expect(bar.locator('.sq-v.is-rich')).toHaveCount(1);
+    await expect(bar.locator('.sq-v').nth(bredd[0] > bredd[1] ? 0 : 1)).toHaveClass(/is-rich/);
+  }
+  await expect(page.locator('#help-elo')).toBeHidden();
+  await page.locator('#help-elo-btn').click();
+  await expect(page.locator('#help-elo')).toBeVisible();
+  await expect(page.locator('#help-elo')).toContainText('Som om du vore 5');
+  await page.locator('#help-elo-btn').click();
+  await expect(page.locator('#help-elo')).toBeHidden();
+  expect(fel).toEqual([]);
+});
+
 test('Tips: dagens bästa och skrällar är hopfällbara rader, öppna från start', async ({ page }) => {
   const fel = await oppna(page, 'tips');
   await expect(page.locator('#tips .tip-group-head').first()).toBeAttached({ timeout: 30_000 });
