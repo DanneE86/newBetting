@@ -1,7 +1,7 @@
 // Flik "Stryktipset": kupong fran Svenska Spel + analys per match (data fran /api/stryktips).
 // En sida per spel: användaren låser krav (1, X, 2, 1X, X2, 12, 1X2) för kupong A, B eller båda, och resten av
 // kupongerna genereras i webbläsaren (stryk-engine.js).
-import { generateCoupons, kravSigns, canFall, skrallTips, skrallKryss } from "/stryk-engine.js";
+import { generateCoupons, kravSigns, canFall, skrallTips, skrallKryss, clampFileRows, FILE_BUDGET, FILE_RULES } from "/stryk-engine.js";
 import { startelvaButton, startelvaPanel } from "/startelva.js";
 
 // Startelvan per match (gui/public/startelva.js), samma nyckel som scripts/lib/startelva.mjs svsKey
@@ -657,9 +657,27 @@ const SCOPE_TITLE = {
   C: "Kravet gäller bara kupong C",
   all: "Kravet gäller alla kupongerna",
 };
+// Summa per filkupong (användaren 2026-10-12: "jag ska kunna bestämma summa fortfarande"). 1 kr per rad, sparas i
+// webbläsaren och gäller båda spelen.
+const FILE_BUDGET_KEY = "betting.fileBudget";
+const BUDGET_SYS = ["A", "B", "C"];
+let fileBudget = { A: FILE_RULES.rows, B: FILE_RULES.rows, C: FILE_RULES.rows };
+try {
+  const s = JSON.parse(localStorage.getItem(FILE_BUDGET_KEY) || "{}");
+  for (const sys of BUDGET_SYS) fileBudget[sys] = clampFileRows(s[sys], FILE_RULES.rows);
+} catch { /* privat läge */ }
+function saveFileBudget() {
+  try { localStorage.setItem(FILE_BUDGET_KEY, JSON.stringify(fileBudget)); } catch { /* privat läge */ }
+}
+const budgetChanged = (st) => !!st.genRows && BUDGET_SYS.some((sys) => fileBudget[sys] !== st.genRows[sys]);
 const bStates = new Map();
 const bKey = (p) => `betting.spikes.${p.product}.${p.drawNumber}`;
- // senaste På-värden (återställs vid På igen)
+// Egen fördelning per match (användaren 2026-10-12: "jag ska kunna bestämma fördelningen själv som förut"), som gamla
+// D/E/F %: { [eventNumber]: { A: [a,b,c], B: […], C: […] } } – andel rader per tecken i varje kupong. Av = kupongen väljer fritt.
+const SHARE_SYS = ["A", "B", "C"];
+const SHARE_DEFAULT = [33, 33, 34];
+const sharesKey = (p) => `betting.fileShares.${p.product}.${p.drawNumber}`;
+const sharesPrevKey = (p) => `betting.fileSharesPrev.${p.product}.${p.drawNumber}`; // senaste På-värden (återställs vid På igen)
 const sealKey = (p) => `betting.sealed.${p.product}.${p.drawNumber}`;
 // Hänglås per match: bara Stryktipset. Låst match går inte att ändra, och Generera kräver att alla 13 är låsta.
 const usesSeal = (p) => p?.product === "stryktipset";
@@ -675,7 +693,7 @@ function bState(p) {
     }
     for (const [nr, x] of Object.entries(krav)) {
       const signs = kravTxt(x);
-      if (signs && x.scope !== "C") krav[nr] = { signs, scope: x.scope || "both" };
+      if (signs) krav[nr] = { signs, scope: x.scope || "both" };
       else delete krav[nr];
     }
     let sealed = [];
@@ -685,7 +703,7 @@ function bState(p) {
       /* privat lage */
     }
     bStates.set(k, {
-      krav, result: null, dirty: false, busy: false,
+      krav, shares: loadShareMap(p, sharesKey), sharesPrev: loadShareMap(p, sharesPrevKey), result: null, dirty: false, busy: false,
       sealed: new Set(Array.isArray(sealed) ? sealed.map(Number) : []), rowError: {}, genError: null,
     });
   }
@@ -698,11 +716,20 @@ function saveSealed(p, st) {
     /* privat lage */
   }
 }
-/** Första matchen som stoppar Generera: inte låst. */
+/** Varför matchen inte går att låsa (A/B/C % som inte blir 100 %), annars null. */
+function rowProblem(st, nr) {
+  const pair = normalizeSharePair(st.shares?.[nr]);
+  if (!pair) return null;
+  const bad = SHARE_SYS.find((sys) => !shareSumMsg(pair[sys]).ok);
+  return bad ? `${bad}-raden: ${shareSumMsg(pair[bad]).text}` : null;
+}
+/** Första matchen som stoppar Generera: fel i A/B/C % eller inte låst. */
 function firstSealProblem(p, st) {
   const open = p.events.filter((e) => !st.sealed.has(e.eventNumber)).length;
   for (const e of p.events) {
     const nr = e.eventNumber;
+    const why = rowProblem(st, nr);
+    if (why) return { nr, text: `Match ${nr} stämmer inte (${why}). Rätta till 100 % och lås matchen.` };
     if (!st.sealed.has(nr)) return { nr, text: `Match ${nr} är inte låst${open > 1 ? ` (${open} matcher olåsta)` : ""}. Klicka på hänglåset när du är klar med matchen.` };
   }
   return null;
@@ -711,9 +738,118 @@ function saveKrav(p, st) {
   st.dirty = !!st.result;
   try {
     localStorage.setItem(bKey(p), JSON.stringify(st.krav));
+    localStorage.setItem(sharesKey(p), JSON.stringify(st.shares || {}));
+    localStorage.setItem(sharesPrevKey(p), JSON.stringify(st.sharesPrev || {}));
   } catch {
     /* privat lage */
   }
+}
+
+// ---------- Egen fördelning A/B/C % per match ----------
+const clampShare = (x) => Math.max(0, Math.min(100, Math.round(Number(x) || 0)));
+/** Heltal % som summerar till 100 (största rest får det som fattas). */
+function roundTo100(raw) {
+  const sum = raw.reduce((a, b) => a + b, 0);
+  if (sum <= 0) return [...SHARE_DEFAULT];
+  const scaled = raw.map((x) => (x / sum) * 100);
+  const out = scaled.map((x) => Math.floor(x));
+  let left = 100 - out.reduce((a, b) => a + b, 0);
+  const order = [0, 1, 2].sort((a, b) => (scaled[b] - out[b]) - (scaled[a] - out[a]));
+  for (let i = 0; left > 0; i++, left--) out[order[i % 3]]++;
+  return out;
+}
+const sharesFromProbs = (probs) => (probs?.length ? roundTo100([0, 1, 2].map((i) => Math.max(0, Number(probs[i]) || 0))) : [...SHARE_DEFAULT]);
+function normalizeSharePair(s) {
+  if (!s || typeof s !== "object") return null;
+  const A = (Array.isArray(s.A) ? s.A : SHARE_DEFAULT).map(clampShare);
+  return { A, B: Array.isArray(s.B) ? s.B.map(clampShare) : [...A], C: Array.isArray(s.C) ? s.C.map(clampShare) : [...A] };
+}
+/** A, B och C ≈ modellens 1/X/2. */
+function modelSharePair(e) {
+  const s = sharesFromProbs(e?.final);
+  return { A: [...s], B: [...s], C: [...s] };
+}
+function loadShareMap(p, keyFn) {
+  let saved = {};
+  try { saved = JSON.parse(localStorage.getItem(keyFn(p)) || "{}") || {}; } catch { /* privat */ }
+  const out = {};
+  for (const e of p.events || []) {
+    const pair = normalizeSharePair(saved[e.eventNumber]);
+    if (pair) out[e.eventNumber] = pair;
+  }
+  return out;
+}
+/** Antal + andel 1/X/2 för en match i en kupong. */
+function egnaDistForMatch(c, i) {
+  const rows = c?.rowList;
+  if (!rows?.length) return null;
+  const cnt = [0, 0, 0];
+  for (const row of rows) cnt[SIGNS.indexOf(row[i])]++;
+  return { cnt, pct: roundTo100(cnt), n: rows.length };
+}
+/** Startvärden när man slår På: så kupongerna spelat matchen just nu. */
+function sharePairFromResult(res, i) {
+  const d = SHARE_SYS.map((sys) => egnaDistForMatch(res?.[sys], i));
+  if (!d.some(Boolean)) return null;
+  const A = d[0]?.pct || [...SHARE_DEFAULT];
+  return { A, B: d[1]?.pct || [...A], C: d[2]?.pct || [...A] };
+}
+function shareSumMsg(s) {
+  const sum = (s || []).reduce((a, b) => a + (Number(b) || 0), 0);
+  if (sum > 100) return { ok: false, text: `${sum - 100} % för mycket (summa ${sum} %)` };
+  if (sum < 100) return { ok: false, text: `${100 - sum} % saknas (summa ${sum} %)` };
+  return { ok: true, text: "100 %" };
+}
+/** Andelar till motorn: { A: { nr: […] }, B: {…}, C: {…} }. Bara rader som summerar till 100 %. */
+function sharesForEngine(st) {
+  const out = { A: {}, B: {}, C: {} };
+  for (const [nr, raw] of Object.entries(st.shares || {})) {
+    const pair = normalizeSharePair(raw);
+    if (!pair) continue;
+    for (const sys of SHARE_SYS) if (shareSumMsg(pair[sys]).ok) out[sys][nr] = pair[sys];
+  }
+  return out;
+}
+function shareCouponLine(sys, dist, busy) {
+  if (!dist) {
+    const wait = busy ? `<span class="sb-defall-miss" role="status"><span class="sb-spin" aria-hidden="true"></span>räknar…</span>` : `<span class="sb-defall-miss">–</span>`;
+    return `<div class="sb-defall-line is-empty"><span class="sb-defall-lab">${sys}</span>${wait}</div>`;
+  }
+  const cells = SIGNS.map((sign, i) => `<div class="sb-defall-cell" title="${dist.cnt[i]} av ${dist.n} rader (${dist.pct[i]} %)">
+      <span class="sb-defall-sign">${sign}</span>
+      <span class="sb-defall-bar" aria-hidden="true"><i style="width:${dist.pct[i]}%"></i></span>
+      <span class="sb-defall-num"><b>${dist.pct[i]}%</b> <small>${dist.cnt[i]}</small></span>
+    </div>`).join("");
+  return `<div class="sb-defall-line"><span class="sb-defall-lab" title="Kupong ${sys}: så den spelat matchen">${sys}</span>${cells}</div>`;
+}
+function shareEditLine(sys, shares, sealed) {
+  const chk = shareSumMsg(shares);
+  return `<div class="sb-defall-edit is-on${chk.ok ? "" : " is-bad"}" data-defall-sys="${sys}">
+    <span class="sb-defall-lab" title="Kupong ${sys}: din andel rader på 1/X/2 (ska bli 100 %)">${sys}</span>
+    ${SIGNS.map((sign, i) => `<label class="sb-defall-i">${sign}<input type="number" min="0" max="100" step="1" inputmode="numeric" data-defall="${i}" data-defall-sys="${sys}" value="${shares[i]}" aria-label="${sys} ${sign} %"${sealed ? " disabled" : ""}></label>`).join("")}
+    <span class="sb-defall-sum${chk.ok ? "" : " is-bad"}" data-defall-sum role="status">${esc(chk.text)}</span>
+  </div>`;
+}
+function shareRow(e, raw, i, res, busy, sealed) {
+  const on = !!raw;
+  const pair = normalizeSharePair(raw) || modelSharePair(e);
+  const allOk = SHARE_SYS.every((sys) => shareSumMsg(pair[sys]).ok);
+  const dists = SHARE_SYS.map((sys) => egnaDistForMatch(res?.[sys], i));
+  const status = busy ? `<span class="sb-defall-status" role="status"><span class="sb-spin" aria-hidden="true"></span>${dists.some(Boolean) ? "uppdaterar…" : "räknar…"}</span>` : "";
+  return `<div class="sb-defall${busy ? " is-busy" : ""}${on ? " is-on" : ""}" data-ev="${e.eventNumber}">
+    <div class="sb-defall-head">
+      <span class="sb-defall-k" title="Av: så A, B och C spelat matchen. På: du bestämmer andelen rader på 1, X och 2 i varje kupong. Modell: ≈ vår chans.">A/B/C %${status}</span>
+      <span class="sb-defall-actions">
+        ${on ? `<button type="button" class="ds-toggle" data-defall-model title="Sätt A, B och C från vår chans"${sealed ? " disabled" : ""}>Modell</button>` : ""}
+        <button type="button" class="ds-toggle sb-defall-on${on ? " active" : ""}" data-defall-toggle aria-pressed="${on}" title="${on ? "Stäng av – kupongerna väljer fritt igen" : "Slå på med samma % som visas nu"}"${sealed ? " disabled" : ""}>${on ? "På" : "Av"}</button>
+      </span>
+    </div>
+    ${on
+      ? `${SHARE_SYS.map((sys) => shareEditLine(sys, pair[sys], sealed)).join("")}
+    <small class="sb-defall-hint${allOk ? "" : " is-bad"}">${allOk ? "Tryck Generera kupong så byggs filerna med din fördelning" : "Rätta varje rad (A, B och C) till 100 % innan du genererar"}</small>`
+      : `${SHARE_SYS.map((sys, k) => shareCouponLine(sys, dists[k], busy)).join("")}
+    <small class="sb-defall-hint">Slå På för att bestämma fördelningen själv – startar med % som visas ovan</small>`}
+  </div>`;
 }
 
 const kravType = (signs) => (signs.length === 1 ? "spik" : signs.length === 2 ? "halv" : "hel");
@@ -721,7 +857,7 @@ function sealButton(e, sealed) {
   const nr = e.eventNumber;
   return `<button type="button" class="sb-seal${sealed ? " on" : ""}" data-seal="${nr}" aria-pressed="${sealed}" aria-label="${sealed ? `Lås upp match ${nr}` : `Lås match ${nr}`}" title="${sealed ? "Låst – klicka för att låsa upp och ändra" : "Lås matchen när du är klar"}"><span aria-hidden="true">${sealed ? "🔒" : "🔓"}</span><span class="sb-seal-txt">${sealed ? "Låst" : "Lås"}</span></button>`;
 }
-function kravRow(e, krav, pick, seal = null) {
+function kravRow(e, krav, pick, seal = null, share = null) {
   const sealed = !!seal?.sealed;
   // Äldre sparade D/E-scope → Alla (D/E styrs via fördelning i stället)
   const scope = (krav?.scope === "D" || krav?.scope === "E") ? "all" : (krav?.scope || "both");
@@ -730,7 +866,7 @@ function kravRow(e, krav, pick, seal = null) {
   // Modellens mest sannolika tecken markeras så man ser förslaget innan man sätter krav
   const best = e.final ? e.final.indexOf(Math.max(...e.final)) : -1;
   const dis = sealed ? " disabled" : "";
-  return `<div class="sb-row${krav ? " locked" : ""}${sealed ? " is-sealed" : ""}${seal?.error ? " is-error" : ""}" data-ev="${e.eventNumber}">
+  return `<div class="sb-row${krav ? " locked" : ""}${share?.raw ? " has-defall" : ""}${sealed ? " is-sealed" : ""}${seal?.error ? " is-error" : ""}" data-ev="${e.eventNumber}">
     <span class="st-num">${e.eventNumber}</span>
     <div class="sb-match">${sealed ? `<span class="sb-sealed-tag">🔒 Låst</span>` : ""}<b>${teamName(e, "home")} – ${teamName(e, "away")}</b><small><span class="st-kick">${esc(kickoff(e.kickoff))}</span> · ${esc(e.league || "")}${refereeBadge(e)}${tur?.tur ? ` · <button type="button" class="sb-tur tur-btn" data-ev="${e.eventNumber}" aria-expanded="${turOpen.has(turKey(e))}">🍀 turmatch (${esc(pick.signs)} missar ${pct(tur.rate)}) ${turOpen.has(turKey(e)) ? "▲" : "– varför? ▼"}</button>` : ""}</small></div>
     <div class="sb-krav">
@@ -741,6 +877,7 @@ function kravRow(e, krav, pick, seal = null) {
     ${krav
       ? `<div class="sb-scope" role="group" aria-label="Kravet gäller"><span class="sb-scope-k">Gäller</span>${SCOPES.map(([k, lbl]) => `<button type="button" class="ds-toggle" data-scope="${k}" aria-pressed="${scope === k}" title="${esc(SCOPE_TITLE[k])}"${dis}>${lbl}</button>`).join("")}</div>`
       : `<div class="sb-scope is-empty" aria-hidden="true"></div>`}
+    ${share ? shareRow(e, share.raw, share.i, share.res, share.busy, sealed) : ""}
     ${seal?.error ? `<p class="sb-row-err" role="alert">${esc(seal.error)}</p>` : ""}
     ${tur?.tur && turOpen.has(turKey(e)) ? turExplain(e, tur, { actions: !sealed, krav }) : ""}
   </div>`;
@@ -905,9 +1042,9 @@ async function refreshLive(p) {
 const workers = new Map();
 const engineJob = new Map();
 const kravCacheKey = (krav) => JSON.stringify(krav || {});
-function runEngine(p, krav) {
+function runEngine(p, krav, rows) {
   if (typeof Worker === "undefined") {
-    return Promise.resolve().then(() => generateCoupons(p, krav));
+    return Promise.resolve().then(() => generateCoupons(p, krav, { rows }));
   }
   engineJob.get(p.product)?.(new Error("avbruten"));
   workers.get(p.product)?.terminate();
@@ -919,7 +1056,7 @@ function runEngine(p, krav) {
     engineJob.set(p.product, reject);
     w.onmessage = ({ data: d }) => (d.error ? reject(new Error(d.error)) : resolve(d.result));
     w.onerror = (e) => { e.preventDefault?.(); reject(new Error(e.message || "bakgrundstråden stannade")); };
-    w.postMessage({ p, krav });
+    w.postMessage({ p, krav, rows });
   });
   return done.finally(() => {
     if (engineJob.get(p.product) === rejectJob) engineJob.delete(p.product);
@@ -933,7 +1070,10 @@ async function generateInto(p, st) {
   const run = (st.run = (st.run || 0) + 1);
   try {
     const key = kravCacheKey(st.krav);
-    const result = await runEngine(p, st.krav);
+    const rows = { ...fileBudget };
+    st.genRows = rows;
+    p.fileShares = sharesForEngine(st);
+    const result = await runEngine(p, st.krav, rows);
     if (run !== st.run) return;
     st.result = result;
     st.cacheKravKey = key;
@@ -1045,6 +1185,7 @@ function renderB(p, head, top = "", extras = "") {
           <ul>
             <li>Ett tecken (1, X eller 2) är en <b>spik</b>, två tecken (1X, X2, 12) en <b>halvgardering</b> och alla tre en <b>helgardering</b>. Klicka igen för att ta bort ett tecken.</li>
             <li><b>Gäller</b>: A+B, bara A, bara B, bara C eller Alla.</li>
+            <li><b>A/B/C %</b> under varje match: <b>Av</b> visar hur kupongerna spelat matchen. Slå <b>På</b> och skriv själv hur stor andel av raderna som ska ha 1, X och 2 i A, B och C (varje rad 100 %). <b>Modell</b> = vår chans. En match med egen fördelning spikas aldrig automatiskt.</li>
             <li>Matcher utan krav väljer kupongen själv. Tryck <b>Generera kupong</b> i raden längst ner när du är klar.</li>
             ${seal ? "<li>Klicka på <b>hänglåset</b> när du är klar med en match. En låst match går inte att ändra – klicka på låset igen för att låsa upp. <b>Generera kupong</b> kräver att alla 13 matcher är låsta.</li>" : ""}
           </ul>
@@ -1054,20 +1195,21 @@ function renderB(p, head, top = "", extras = "") {
     <div class="sb-list">${p.events.map((e, i) => kravRow(e, st.krav[e.eventNumber], picksA[i], seal ? {
       sealed: st.sealed.has(e.eventNumber),
       error: st.rowError[e.eventNumber] || (st.genError?.nr === e.eventNumber ? st.genError.text : ""),
-    } : null)).join("")}</div>
+    } : null, { raw: st.shares[e.eventNumber], i, res, busy: st.busy })).join("")}</div>
   </section>`;
+  const kr = (c) => (c?.rows ?? 0).toLocaleString("sv-SE");
   const result = res
     ? `<section class="sb-panel sb-result ds-card">
         <h3>2. Din kupong</h3>
         ${st.dirty ? `<p class="st-note ds-notice ds-notice--warning">Du har ändrat kraven – tryck Generera kupong igen för att uppdatera.</p>` : ""}
-        <p class="st-sub"><b>Kort sagt:</b> tre filer à 500 kr som du laddar upp under Egna rader hos Svenska Spel. A är de troligaste raderna, B de nästa (inga rader gemensamt med A), C väger upp skrällarna folket missar.</p>
+        <p class="st-sub"><b>Kort sagt:</b> tre filer (A ${kr(res.A)}, B ${kr(res.B)}, C ${kr(res.C)} kr – summan sätter du längst ner) som du laddar upp under Egna rader hos Svenska Spel. A är de troligaste raderna, B de nästa (inga rader gemensamt med A), C väger upp skrällarna folket missar.</p>
         <details class="sb-howto"${keep("howto-kupong")}><summary>Hur funkar det?</summary>
           <ul>
-            <li>Inga Gambling Cabin-regler (färger, teckenregler, utdelningsband). Varje kupong är en <b>fil</b> med 500 rader (1 kr/rad) som du laddar upp under <b>Egna rader</b> hos Svenska Spel.</li>
+            <li>Inga Gambling Cabin-regler (färger, teckenregler, utdelningsband). Varje kupong är en <b>fil</b> med 1 rad per krona – summan för A, B och C sätter du längst ner (500 kr som standard) som du laddar upp under <b>Egna rader</b> hos Svenska Spel.</li>
             <li><b>Spikar:</b> omgångens 2 starkaste favoriter (vår procent) spikas i alla tre kupongerna. Folkets streck spelar ingen roll för spikarna. I bakkörningen satt båda spikarna i ungefär varannan omgång. Dina egna låsta spikar räknas in.</li>
-            <li><b>A:</b> de 500 troligaste raderna där 13 rätt ger minst 30 000 kr. Golvet finns för att en 13:a ska vara värd något – utan det blev 13-rättarna 500–5 000 kr i bakkörningen.</li>
-            <li><b>B:</b> de 500 nästa raderna som inte finns i A, med extra vikt på tecken A saknar. A och B har inga rader gemensamt, så A+B är ett system på 1 000 rader.</li>
-            <li><b>C:</b> 500 rader där underspelade tecken – vår chans minst 20 % och minst 1,3 gånger folkets streck – väger mer. Det är skrällarna folket missar. C är fristående från A och B.</li>
+            <li><b>A:</b> de troligaste raderna där 13 rätt ger minst 30 000 kr. Golvet finns för att en 13:a ska vara värd något – utan det blev 13-rättarna 500–5 000 kr i bakkörningen.</li>
+            <li><b>B:</b> de nästa raderna som inte finns i A, med extra vikt på tecken A saknar. A och B har inga rader gemensamt, så A+B är ett system på ${kr(res.A)} + ${kr(res.B)} rader.</li>
+            <li><b>C:</b> rader där underspelade tecken – vår chans minst 20 % och minst 1,3 gånger folkets streck – väger mer. Det är skrällarna folket missar. C är fristående från A och B.</li>
             <li>Skrällspikarna överst på sidan ligger inte i kupongerna – lägg en som krav om du vill chansa.</li>
             <li>⚠ i tabellen = tecken som just den kupongen brukar ha fel på (minst 30 % missar i bakkörningen), röd = oftare än vår egen chans sa.</li>
           </ul>
@@ -1098,7 +1240,8 @@ function renderB(p, head, top = "", extras = "") {
   </details>`;
   // Sticky åtgärdsrad: alltid nåbar, oavsett var på sidan man är
   const bar = `<div class="sb-actionbar${st.dirty ? " is-dirty" : ""}" role="region" aria-label="Kupongåtgärder">
-    <span class="sb-actionbar-txt">${n ? `<b>${n}</b> krav ${n === 1 ? "valt" : "valda"}` : "Inga krav valda"}${seal ? ` · <span class="sb-seal-count${nSealed === p.events.length ? " is-done" : ""}">🔒 <b>${nSealed}</b>/${p.events.length} låsta</span>` : ""}${st.dirty ? `<span class="sb-dirty"> · ändrat<span class="sb-dirty-long"> – generera igen</span></span>` : ""}${seal && st.genError ? `<span class="sb-gen-err" role="alert">${esc(st.genError.text)}</span>` : ""}</span>
+    <span class="sb-budgets">${BUDGET_SYS.map((sys) => `<label class="sb-budget" title="Summa för kupong ${sys}. 1 kr per rad, ${FILE_BUDGET.min}–${FILE_BUDGET.max.toLocaleString("sv-SE")} kr. Tryck Generera kupong efteråt.">${sys}<input type="number" min="${FILE_BUDGET.min}" max="${FILE_BUDGET.max}" step="1" inputmode="numeric" data-file-budget="${sys}" value="${fileBudget[sys]}" aria-label="Summa kupong ${sys} i kronor"${st.busy ? " disabled" : ""}><span>kr</span></label>`).join("")}</span>
+    <span class="sb-actionbar-txt">${n ? `<b>${n}</b> krav ${n === 1 ? "valt" : "valda"}` : "Inga krav valda"}${seal ? ` · <span class="sb-seal-count${nSealed === p.events.length ? " is-done" : ""}">🔒 <b>${nSealed}</b>/${p.events.length} låsta</span>` : ""}${st.dirty ? `<span class="sb-dirty"> · ändrat<span class="sb-dirty-long"> – generera igen</span></span>` : ""}${st.genError ? `<span class="sb-gen-err" role="alert">${esc(st.genError.text)}</span>` : ""}</span>
     <button type="button" class="btn-ghost ds-btn ds-btn--secondary" id="sb-clear"${nClear ? "" : " disabled"} title="${seal ? "Tar bort kraven på olåsta matcher" : "Tar bort alla krav"}">Rensa</button>
     <button type="button" class="btn-fetch sb-generate ds-btn ds-btn--primary" id="sb-generate"${st.busy ? " disabled" : ""}><span class="btn-label">${st.busy ? "Genererar…" : "Generera kupong"}</span></button>
   </div>`;
@@ -1120,9 +1263,14 @@ function handleB(ev) {
       st.sealed.delete(nr);
       delete st.rowError[nr];
     } else {
-      st.sealed.add(nr);
-      delete st.rowError[nr];
-      if (st.genError?.nr === nr) st.genError = null;
+      const why = rowProblem(st, nr);
+      if (why) {
+        st.rowError[nr] = `Kan inte låsa: ${why}. Rätta till 100 % först.`;
+      } else {
+        st.sealed.add(nr);
+        delete st.rowError[nr];
+        if (st.genError?.nr === nr) st.genError = null;
+      }
     }
     saveSealed(p, st);
     const y = window.scrollY;
@@ -1131,7 +1279,7 @@ function handleB(ev) {
     return true;
   }
   // Låst match: inget i raden går att ändra (bara låset och turförklaringen)
-  if (seal && row && st.sealed.has(Number(row.dataset.ev)) && ev.target.closest(".sb-sign, .sb-scope button, .sb-tur-add")) return true;
+  if (seal && row && st.sealed.has(Number(row.dataset.ev)) && ev.target.closest(".sb-sign, .sb-scope button, [data-defall-toggle], [data-defall-model], .sb-tur-add")) return true;
   if (row) delete st.rowError[row.dataset.ev];
   if (row && signBtn) {
     const nr = row.dataset.ev, s = signBtn.dataset.sign;
@@ -1147,6 +1295,24 @@ function handleB(ev) {
     st.krav[row.dataset.ev].scope = scopeBtn.dataset.scope;
     saveKrav(p, st);
     render();
+    return true;
+  }
+  // A/B/C %: På = egna andelar per kupong, Av = kupongen väljer fritt. På tar samma % som Av visade (så kupongerna
+  // spelat), annars senaste På-värden, annars modellen.
+  const shareToggle = ev.target.closest("[data-defall-toggle]");
+  const shareModel = ev.target.closest("[data-defall-model]");
+  if (row && (shareToggle || shareModel)) {
+    const nr = Number(row.dataset.ev);
+    const i = p.events.findIndex((e) => e.eventNumber === nr);
+    if (shareModel) st.shares[nr] = modelSharePair(p.events[i]);
+    else if (st.shares[nr]) {
+      st.sharesPrev[nr] = st.shares[nr];
+      delete st.shares[nr];
+    } else st.shares[nr] = sharePairFromResult(st.result, i) || normalizeSharePair(st.sharesPrev[nr]) || modelSharePair(p.events[i]);
+    saveKrav(p, st);
+    const y = window.scrollY;
+    render();
+    window.scrollTo(0, y);
     return true;
   }
   // Turmatcher: lägg tecknet som oftast kom i stället som krav i kupong B
@@ -1171,22 +1337,32 @@ function handleB(ev) {
     return true;
   }
   if (ev.target.closest("#sb-generate")) {
+    if (!seal) {
+      const bad = p.events.find((e) => rowProblem(st, e.eventNumber));
+      st.genError = bad ? { nr: bad.eventNumber, text: `Match ${bad.eventNumber}: ${rowProblem(st, bad.eventNumber)}. Rätta till 100 % först.` } : null;
+      if (st.genError) {
+        render();
+        view.querySelector(`.sb-row[data-ev="${bad.eventNumber}"]`)?.scrollIntoView({ block: "center", behavior: "smooth" });
+        return true;
+      }
+    }
     if (seal) {
       st.genError = firstSealProblem(p, st);
       if (st.genError) {
         render();
         const bad = view.querySelector(`.sb-row[data-ev="${st.genError.nr}"]`);
         bad?.scrollIntoView({ block: "center", behavior: "smooth" });
-        bad?.querySelector("[data-seal]")?.focus({ preventScroll: true });
+        bad?.querySelector(".sb-defall-edit.is-bad input, [data-seal]")?.focus({ preventScroll: true });
         return true;
       }
     }
+    syncFileBudgetFromDom();
     st.busy = true;
     render();
     // Hämtar live-streck och genererar sedan i bakgrunden (stryk-worker.js)
     liveGenerate(p, st).then(() => {
       st.busy = false;
-      st.dirty = false;
+      st.dirty = budgetChanged(st);
       render();
       view.querySelector(".sb-result")?.scrollIntoView({ block: "start", behavior: "smooth" });
     });
@@ -1194,6 +1370,89 @@ function handleB(ev) {
   }
   return false;
 }
+
+function syncFileBudgetFromDom() {
+  for (const sys of BUDGET_SYS) {
+    const inp = view.querySelector(`input[data-file-budget="${sys}"]`);
+    if (inp) fileBudget[sys] = clampFileRows(inp.value, fileBudget[sys]);
+  }
+  saveFileBudget();
+}
+// Ändrad summa: markera "ändrat – generera igen" utan att rita om (fokus i fältet behålls); vid change sparas den
+function applyFileBudgetInput(inp, { save }) {
+  const sys = inp.dataset.fileBudget;
+  if (!BUDGET_SYS.includes(sys)) return;
+  const v = clampFileRows(inp.value, fileBudget[sys]);
+  fileBudget[sys] = v;
+  if (save) {
+    inp.value = v;
+    saveFileBudget();
+  }
+  const p = data?.products?.find((x) => x.product === product);
+  const st = p ? bState(p) : null;
+  if (!st?.result || st.dirty || !budgetChanged(st)) return;
+  st.dirty = true;
+  view.querySelector(".sb-actionbar")?.classList.add("is-dirty");
+  const txt = view.querySelector(".sb-actionbar-txt");
+  if (txt && !txt.querySelector(".sb-dirty")) txt.insertAdjacentHTML("beforeend", `<span class="sb-dirty"> · ändrat<span class="sb-dirty-long"> – generera igen</span></span>`);
+}
+// A/B/C %: live-summa per rad (rött om inte 100 %) utan att rita om, spara vid change
+function applyShareInput(inp, { save }) {
+  const p = data?.products?.find((x) => x.product === product);
+  if (!p) return;
+  const st = bState(p);
+  const box = inp.closest(".sb-defall");
+  const nr = Number(box?.dataset.ev);
+  const sys = inp.dataset.defallSys;
+  if (!nr || !SHARE_SYS.includes(sys) || (usesSeal(p) && st.sealed.has(nr))) return;
+  if (st.rowError[nr] || st.genError?.nr === nr) {
+    delete st.rowError[nr];
+    if (st.genError?.nr === nr) st.genError = null;
+    box.closest(".sb-row")?.classList.remove("is-error");
+    box.closest(".sb-row")?.querySelector(".sb-row-err")?.remove();
+    view.querySelector(".sb-gen-err")?.remove();
+  }
+  const pair = normalizeSharePair(st.shares[nr]) || modelSharePair(p.events.find((e) => e.eventNumber === nr));
+  const cur = [...pair[sys]];
+  const i = Number(inp.dataset.defall);
+  cur[i] = clampShare(inp.value);
+  if (save && Number(inp.value) !== cur[i]) inp.value = String(cur[i]);
+  pair[sys] = cur;
+  st.shares[nr] = pair;
+  const chk = shareSumMsg(cur);
+  const edit = box.querySelector(`.sb-defall-edit[data-defall-sys="${sys}"]`);
+  edit?.classList.toggle("is-bad", !chk.ok);
+  const sumEl = edit?.querySelector("[data-defall-sum]");
+  if (sumEl) {
+    sumEl.textContent = chk.text;
+    sumEl.classList.toggle("is-bad", !chk.ok);
+  }
+  const allOk = SHARE_SYS.every((s) => shareSumMsg(pair[s]).ok);
+  const hint = box.querySelector(".sb-defall-hint");
+  if (hint) {
+    hint.textContent = allOk ? "Tryck Generera kupong så byggs filerna med din fördelning" : "Rätta varje rad (A, B och C) till 100 % innan du genererar";
+    hint.classList.toggle("is-bad", !allOk);
+  }
+  if (st.result && !st.dirty) {
+    st.dirty = true;
+    view.querySelector(".sb-actionbar")?.classList.add("is-dirty");
+    const txt = view.querySelector(".sb-actionbar-txt");
+    if (txt && !txt.querySelector(".sb-dirty")) txt.insertAdjacentHTML("beforeend", `<span class="sb-dirty"> · ändrat<span class="sb-dirty-long"> – generera igen</span></span>`);
+  }
+  if (save) saveKrav(p, st);
+}
+view.addEventListener("input", (ev) => {
+  const bud = ev.target.closest("input[data-file-budget]");
+  if (bud) applyFileBudgetInput(bud, { save: false });
+  const sh = ev.target.closest("input[data-defall]");
+  if (sh) applyShareInput(sh, { save: false });
+});
+view.addEventListener("change", (ev) => {
+  const bud = ev.target.closest("input[data-file-budget]");
+  if (bud) applyFileBudgetInput(bud, { save: true });
+  const sh = ev.target.closest("input[data-defall]");
+  if (sh) applyShareInput(sh, { save: true });
+});
 
 view.addEventListener("click", (ev) => {
   if (ev.target.closest("#st-fetch")) {

@@ -78,7 +78,7 @@ for (let n = START_DRAW; n > START_DRAW - 200 && draws.length < COUNT; n--) {
     const k = SIGNS.indexOf(e.result.outcome);
     return {
       n: e.eventNumber, match: `${e.home} - ${e.away}`, league: e.league, basis: e.basis, outcome: e.result.outcome, score: e.result.score,
-      final: e.final, market: e.market, model: e.model, folk: e.folk,
+      final: e.final, market: e.market, model: e.model, folk: e.folk, teamElo: e.teamElo,
       pOutcome: r3(e.final[k]), folkOutcome: r3(e.folk?.[k]),
       pickA: e.systemPick?.signs, pickB: e.systemPickB?.signs,
       inA: e.systemPick?.signs.includes(e.result.outcome) ?? null, inB: e.systemPickB?.signs.includes(e.result.outcome) ?? null,
@@ -119,7 +119,7 @@ const rowQuality = (sys) => {
 };
 const summary = {
   product: PRODUCT.id, from: draws.at(-1)?.date, to: draws[0]?.date, draws: draws.length, matches: all.length,
-  modelWeight: Number(process.env.STRYK_MODEL_W ?? 0.1), seasons: process.env.STRYK_SEASONS || '2627,2526',
+  modelWeight: Number(process.env.STRYK_MODEL_W ?? 0.1), eloWeight: Number(process.env.STRYK_ELO_W ?? 0), seasons: process.env.STRYK_SEASONS || '2627,2526',
   A: { cost: draws.reduce((s, d) => s + (d.A?.cost || 0), 0), winnings: draws.reduce((s, d) => s + (d.A?.winnings || 0), 0), best: draws.map((d) => d.A?.best), spik: spik('A') },
   B: { cost: draws.reduce((s, d) => s + (d.B?.cost || 0), 0), winnings: draws.reduce((s, d) => s + (d.B?.winnings || 0), 0), best: draws.map((d) => d.B?.best), spik: spik('B') },
   drawRate: { actual: r3(all.filter((m) => m.outcome === 'X').length / all.length), predicted: r3(mean(all.map((m) => m.final[1]))), folk: r3(mean(all.map((m) => m.folk?.[1]))) },

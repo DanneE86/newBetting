@@ -573,6 +573,10 @@ html, body {
   color: var(--color-text);
 }
 
+/* 1X2: chans för alla tre tecknen, valt tecken i fetstil */
+.tip-table .chance-1x2 .ch3 { display: block; white-space: nowrap; color: var(--color-text-muted); line-height: 1.35; }
+.tip-table .chance-1x2 .ch3.is-sel { color: var(--color-text); font-weight: var(--font-weight-bold); }
+
 .odds-src {
   margin-top: var(--space-2);
   font-size: var(--font-size-xs);
@@ -1105,6 +1109,7 @@ html, body {
   .tip-table td:nth-child(2) { grid-area: odds; }
   .tip-table td.num { grid-area: num; }
   .tip-table td.num::after { content: " chans"; color: var(--color-text-muted); font-size: var(--font-size-xs); }
+  .tip-table td.chance-1x2::after { content: none; }
   .tip-table td.val { grid-area: val; padding-left: 0; }
 }
 

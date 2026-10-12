@@ -173,7 +173,7 @@ test('tips har pro-lager, utvardering och domarfil', async () => {
   expect(refs.count).toBeGreaterThan(5);
 });
 
-test('traffrutan visar tipsmotorns traff (odds dar de styr), inte grundmodellens', async () => {
+test('traffrutan visar tipsmotorns traff (bedomd utan odds), oddsfavoriten bredvid', async () => {
   const evaluation = readJson(path.join(root, 'data', 'reports', 'pro-evaluation.json'));
   const tips = readJson(path.join(root, 'data', 'tips-latest.json'));
   const acc = evaluation.tipAccuracy;
@@ -183,12 +183,11 @@ test('traffrutan visar tipsmotorns traff (odds dar de styr), inte grundmodellens
       expect(a.correct).toBeLessThanOrEqual(a.n);
       expect(a.missDraw + a.missUpset + a.correct).toBe(a.n);
       expect(a.expectedRate).toBeGreaterThan(0.3);
-      expect(a.bySource.odds.tested + a.bySource.modell.tested).toBe(a.n);
+      // 1X2 bedoms utan odds (2026-10-12): inga oddsstyrda tips i backtesten, oddsfavoriten bara som jamforelse
+      expect(a.bySource.odds.tested).toBe(0);
+      expect(a.bySource.modell.tested).toBe(a.n);
+      if (a.market) expect(a.market.correct).toBeLessThanOrEqual(a.market.tested);
     }
-    // Ligor med marknadstest styrs av oddsen i backtesten (som live)
-    const mt = evaluation.marketTest?.[lg];
-    const cur = Object.values<any>(bySeason).at(-1);
-    if ((mt?.vsOpening?.n ?? 0) >= 60 || (mt?.vsClosing?.n ?? 0) >= 60) expect(cur.bySource.odds.tested).toBeGreaterThan(0);
   }
   const pl = tips.accuracyByLeague?.PL?.['1X2'];
   expect(pl.source).toBe('tipsmotor');
@@ -397,4 +396,27 @@ test('antal kort: tipsen har Ö/U på en Oddset-linje med rimlig prognos', async
     if (!b || b.pYes !== c.pBoth || b.pick !== (b.pYes >= 0.5 ? 'JA' : 'NEJ') || !(b.pYes > 0.2 && b.pYes < 0.99)) bad.push(`${t.match} båda kort ${JSON.stringify(b)}`);
   }
   expect(bad).toEqual([]);
+});
+
+test('1X2-tipset bedoms utan odds: chansen ar datans (Dixon-Coles + grundmodell, annars Klubb-Elo)', async () => {
+  const tips = readJson(path.join(root, 'data', 'tips-latest.json'));
+  const all = (tips.allCandidates ?? []).filter((t: any) => t.tips?.['1X2']?.probs?.home != null);
+  test.skip(all.length === 0, 'Inga kommande matcher');
+  for (const t of all) {
+    const p = t.tips['1X2'].probs;
+    expect(p.home + p.draw + p.away, t.match).toBeCloseTo(1, 2);
+    if (t.marketOnly) {
+      // Inget eget modelltips: lagmodellen eller Klubb-Elo, aldrig oddsen
+      expect(['dc', 'clubelo'], t.match).toContain(t.dataSource);
+      expect(t.note, t.match).not.toMatch(/Marknadstips/);
+      continue;
+    }
+    const d = t.pro?.data;
+    if (!d) continue;
+    expect(p.home, t.match).toBeCloseTo(d.home, 2);
+    expect(p.draw, t.match).toBeCloseTo(d.draw, 2);
+    expect(p.away, t.match).toBeCloseTo(d.away, 2);
+    // Om oddsen styr nagot ar det bara Ö/U
+    if (t.marketLed) expect(t.marketLedNote, t.match).toMatch(/^Ö\/U/);
+  }
 });

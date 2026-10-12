@@ -111,8 +111,9 @@ export function kravSigns(k) {
 // alltid Oddsets procent, samma som servern (fetch-stryktipset.mjs sysEv)
 const topOf = (x) => x.indexOf(Math.max(...x));
 export const sysFinal = (e) => (e.tipBasis !== "oddset" && e.spik?.used && e.spik.sysP && topOf(e.spik.sysP) === topOf(e.final) ? e.spik.sysP : e.final);
-/** Genererar filkupongerna A, B och C med dina krav. krav: { [eventNumber]: { signs, scope: "both" | "A" | "B" | "C" | "all" } } */
-export function generateCoupons(p, krav) {
+/** Genererar filkupongerna A, B och C med dina krav. krav: { [eventNumber]: { signs, scope: "both" | "A" | "B" | "C" | "all" } }.
+ *  rows: summa per kupong i kr (1 kr/rad), t.ex. { A: 500, B: 300, C: 500 } – saknas den gäller FILE_RULES.rows. */
+export function generateCoupons(p, krav, { rows = null } = {}) {
   // Systemen byggs på matchens justerade procent (spikbedömningen) när den används, annars på modellens
   const events = p.events.map((e) => ({ ...e, final: sysFinal(e) }));
   const forcedFor = (sys) => events.map((e) => {
@@ -129,7 +130,7 @@ export function generateCoupons(p, krav) {
   };
   // Filkuponger (användaren 2026-10-11: "skippa helt allt som har med Gambling Cabin att göra, ta bort alla regler, vill
   // bara köra på fil"): A, B och C som Egna rader-filer. B har inga rader från A, så A+B = summan.
-  const { A, B, C } = buildFileCoupons(p, events, forcedFor, base);
+  const { A, B, C } = buildFileCoupons(p, events, forcedFor, base, rows ? { ...FILE_RULES, rowsBy: rows } : FILE_RULES);
   return { A, B, C, overlap: 0, unionHit: (A?.hitAll || 0) + (B?.hitAll || 0) };
 }
 
@@ -144,6 +145,13 @@ export function generateCoupons(p, krav) {
 // (0 spikar 1 på 168 / 159, 4 spikar 1 på 181 / 174); A+B bäst med 2 (1 på 96 / 92). Båda spikarna satt i 80 / 90 omg.
 // C: bonus 1,3 gav 1 på 177 / 167 (2: 1 på 220 / 195).
 export const FILE_RULES = { rows: 500, payoutMin: 30000, spikes: 2, underRatio: 1.3, underMin: 0.2, underBonus: 1.3, gapBonus: 2.5 };
+// Egen summa per kupong (användaren 2026-10-12: "jag ska kunna bestämma summa fortfarande"), 1 kr per rad
+export const FILE_BUDGET = { min: 1, max: 10000 };
+export function clampFileRows(n, fallback = FILE_RULES.rows) {
+  const x = Math.round(Number(n));
+  if (n == null || String(n).trim() === "" || !Number.isFinite(x)) return fallback;
+  return Math.max(FILE_BUDGET.min, Math.min(FILE_BUDGET.max, x));
+}
 /** Spikar för filkupongerna: dina krav, plus favoriten på de starkaste matcherna tills det finns FILE_RULES.spikes spikar. */
 export function strongSpikeForced(events, forced, n = FILE_RULES.spikes) {
   const locked = forced.filter((f) => f?.length === 1).length;
@@ -156,15 +164,19 @@ export function strongSpikeForced(events, forced, n = FILE_RULES.spikes) {
 export const underplayed = (e, k, r = FILE_RULES) => k !== favIdx(e) && e.folk?.[k] > 0 && e.final[k] >= r.underMin && e.final[k] / e.folk[k] >= r.underRatio;
 const rowSigns = (code, n) => { const out = new Array(n); for (let i = n - 1; i >= 0; i--) { out[i] = code % 3; code = Math.floor(code / 3); } return out; };
 export function buildFileCoupons(p, events, forcedFor, base, r = FILE_RULES) {
-  const opt = { rows: r.rows, payoutMin: r.payoutMin };
   const make = (sys, extra = {}) => {
-    const forced = strongSpikeForced(events, forcedFor(sys), r.spikes);
-    const picked = selectTopRows(events, forced, base, { ...opt, ...extra });
+    // Egen fördelning på en match: den spikas aldrig automatiskt, raderna fördelas efter dina andelar
+    const plan = buildFallSharePlan(p, events, forcedFor(sys), sys);
+    const forced = strongSpikeForced(events, forcedFor(sys).map((f, i) => f ?? (plan[i] ? [0, 1, 2] : null)), r.spikes);
+    const picked = selectEgnaRows(events, forced, base, { rows: clampFileRows(r.rowsBy?.[sys], r.rows), payoutMin: r.payoutMin, fallPlan: plan, ...extra });
     if (!picked) return null;
     // turnover = typisk omsättning: sidan räknar live med max(live-omsättning, typisk), annars blir omsättningen tidigt i veckan
     // så låg att inga rader når 30 000 kr (Europatipset 2026-10-11)
     const c = finishEgnaRader(p, events, forcedFor(sys), base, picked, sys, { file: true, spikes: forced.filter((f) => f?.length === 1).length, turnover: base.turnover || base.realTurnover });
-    c.picks = c.picks.map((x, i) => ({ ...x, spikStrong: forced[i]?.length === 1 && forcedFor(sys)[i] == null }));
+    c.picks = c.picks.map((x, i) => ({ ...x, spikStrong: forced[i]?.length === 1 && forcedFor(sys)[i] == null, shares: plan[i] || null }));
+    const nPlan = plan.filter(Boolean).length;
+    if (nPlan) c.relaxed = [...c.relaxed, `${nPlan} ${nPlan === 1 ? "match" : "matcher"} med din egen fördelning (${sys} %)`];
+    if (picked.payoutShort) c.relaxed = [...c.relaxed, `några rader ger under ${r.payoutMin.toLocaleString("sv-SE")} kr – din fördelning gick före utdelningsgolvet`];
     return c;
   };
   const A = make("A");
@@ -307,4 +319,274 @@ function finishEgnaRader(p, events, forced, base, picked, system, rulesExtra = {
 // Svenska Spels "Egna rader": första raden spelet, sedan en rad per spelrad (E följt av 13 tecken)
 export function egnaRaderFile(rowList, product = "Stryktipset") {
   return [product, ...rowList.map((r) => `E,${r.split("").join(",")}`)].join("\n") + "\n";
+}
+
+// ---------- Egen fördelning per match (användaren 2026-10-12: "jag ska kunna bestämma fördelningen själv som förut").
+// Samma metod som gamla D/E/F %: p.fileShares = { A: { nr: [a,b,c] }, B: { … }, C: { … } } – andel rader per tecken.
+/** Andelar → antal rader per tecken som summerar till N (bara allowed-tecken får > 0). */
+export function fallShareTargets(N, shares, allowed = [0, 1, 2]) {
+  const w = [0, 1, 2].map((k) => (allowed.includes(k) ? Math.max(0, Number(shares?.[k]) || 0) : 0));
+  const sum = w.reduce((a, b) => a + b, 0);
+  if (!sum || !N) return [0, 0, 0];
+  const raw = w.map((x) => (x / sum) * N);
+  const out = raw.map((x) => Math.floor(x));
+  let left = N - out.reduce((a, b) => a + b, 0);
+  const order = [0, 1, 2].filter((k) => w[k] > 0).sort((a, b) => (raw[b] - out[b]) - (raw[a] - out[a]));
+  for (let i = 0; left > 0 && order.length; i++, left--) out[order[i % order.length]]++;
+  return out;
+}
+
+
+/** Plan per match för kupong sys: null = fri, annars [andel 1, X, 2]. forced = dina teckenkrav (spik = rör inte). */
+export function buildFallSharePlan(p, events, forced, sys = "A") {
+  const custom = p?.fileShares?.[sys] || {};
+  return events.map((e, i) => {
+    const allowed = forced[i] || [0, 1, 2];
+    if (allowed.length <= 1) return null;
+    const own = custom[e.eventNumber] ?? custom[String(e.eventNumber)];
+    if (own?.length === 3 && own.some((x) => Number(x) > 0)) return [0, 1, 2].map((k) => (allowed.includes(k) ? Number(own[k]) || 0 : 0));
+    return null;
+  });
+}
+
+/** Exakt N rader med given andel på match mi (tvingar tecknet per delmängd). */
+function selectStratifiedOnMatch(events, forced, base, { N, payoutMin, exclude, score, scoreMaxFactor, mi, shares }) {
+  const allowed = forced[mi] || [0, 1, 2];
+  const targets = fallShareTargets(N, shares, allowed);
+  const used = new Set(exclude || []);
+  const parts = [];
+  let pot, RT, J;
+  for (const k of [0, 1, 2]) {
+    const need = targets[k];
+    if (need <= 0) continue;
+    const f2 = events.map((_, i) => (i === mi ? [k] : (forced[i] || [0, 1, 2])));
+    const sel = selectTopRows(events, f2, base, { rows: need, payoutMin, exclude: used, score, scoreMaxFactor });
+    if (!sel?.size) continue;
+    pot = sel.pot; RT = sel.RT; J = sel.J;
+    for (let j = 0; j < sel.size; j++) {
+      used.add(sel.codes[j]);
+      parts.push({ code: sel.codes[j], p: sel.rowP[j], real: sel.rowReal[j], row: sel.rowList[j] });
+    }
+  }
+  // Fyll om något tecken saknade rader (utdelningsgolvet) – utan att förstöra kvoterna mer än nödvändigt
+  if (parts.length < N) {
+    const fill = selectTopRows(events, forced, base, { rows: N - parts.length, payoutMin, exclude: used, score, scoreMaxFactor });
+    if (fill) {
+      pot = pot ?? fill.pot; RT = RT ?? fill.RT; J = J ?? fill.J;
+      for (let j = 0; j < fill.size; j++) {
+        used.add(fill.codes[j]);
+        parts.push({ code: fill.codes[j], p: fill.rowP[j], real: fill.rowReal[j], row: fill.rowList[j] });
+      }
+    }
+  }
+  if (!parts.length) return null;
+  parts.sort((a, b) => b.p - a.p);
+  return {
+    pot, RT, J, size: parts.length, N, payoutMin,
+    rowList: parts.map((r) => r.row),
+    rowP: parts.map((r) => r.p),
+    rowReal: parts.map((r) => r.real),
+    codes: parts.map((r) => r.code),
+    fallApplied: true,
+  };
+}
+
+
+/**
+ * N rader där varje match med fallPlan får exakt de andelarna (byte mellan två rader behåller kvoterna).
+ * En gemensam pool räckte inte: senare matcher kom aldrig ner i filen.
+ */
+function selectByQuotas(events, forced, base, { rows: N, payoutMin, exclude = null, score = (pr) => pr, fallPlan }) {
+  const n = events.length;
+  const P = events.map((e) => e.final);
+  const Folk = events.map((e) => [0, 1, 2].map((k) => e.folk?.[k] ?? e.final[k]));
+  const RT = base.realTurnover || base.turnover || 1e7;
+  const J = base.jackpot || 0;
+  const pot = PAYOUT_13 * RT + J;
+  const fMax = payoutMin > 0 ? (pot / payoutMin - 1) / RT : Infinity;
+  const allowed = events.map((_, i) => {
+    const baseA = forced[i]?.length ? forced[i] : [0, 1, 2];
+    const sh = fallPlan?.[i];
+    if (!sh) return baseA.slice();
+    const pos = baseA.filter((k) => Number(sh[k]) > 0);
+    return pos.length ? pos : baseA.slice();
+  });
+  const quota = events.map((_, i) => (fallPlan?.[i] ? fallShareTargets(N, fallPlan[i], allowed[i]) : null));
+  const sign = Array.from({ length: N }, () => new Array(n));
+  const rnd0 = mulberry32((N * 17 + n * 13) >>> 0);
+  const freeIdx = [];
+  for (let i = 0; i < n; i++) {
+    if (!quota[i]) { freeIdx.push(i); continue; }
+    const col = [];
+    for (let k = 0; k < 3; k++) for (let t = 0; t < quota[i][k]; t++) col.push(k);
+    for (let j = col.length - 1; j > 0; j--) {
+      const s = Math.floor(rnd0() * (j + 1));
+      [col[j], col[s]] = [col[s], col[j]];
+    }
+    for (let j = 0; j < N; j++) sign[j][i] = col[j];
+  }
+  const fAt = (j) => {
+    let f = 1;
+    for (let i = 0; i < n; i++) f *= Folk[i][sign[j][i]];
+    return f;
+  };
+  const codeAt = (j) => {
+    let c = 0;
+    for (let i = 0; i < n; i++) c = c * 3 + sign[j][i];
+    return c;
+  };
+  const pAt = (j) => {
+    let pr = 1;
+    for (let i = 0; i < n; i++) pr *= P[i][sign[j][i]];
+    return pr;
+  };
+  for (let j = 0; j < N; j++) {
+    let f = 1;
+    for (let i = 0; i < n; i++) if (quota[i]) f *= Folk[i][sign[j][i]];
+    for (let t = 0; t < freeIdx.length; t++) {
+      const i = freeIdx[t];
+      const last = t === freeIdx.length - 1;
+      let best = allowed[i][0], bestS = -Infinity;
+      for (const k of allowed[i]) {
+        const nf = f * Folk[i][k];
+        const fits = !last || nf <= fMax;
+        const s = (fits ? 1e6 : 0) + P[i][k] * 100 - Folk[i][k];
+        if (s > bestS) { bestS = s; best = k; }
+      }
+      sign[j][i] = best;
+      f *= Folk[i][best];
+    }
+  }
+  const used = new Set(exclude || []);
+  for (let j = 0; j < N; j++) {
+    let guard = 0;
+    while (guard < 40 && used.has(codeAt(j))) {
+      guard++;
+      if (freeIdx.length) {
+        const i = freeIdx[guard % freeIdx.length];
+        const opts = allowed[i];
+        sign[j][i] = opts[(opts.indexOf(sign[j][i]) + guard) % opts.length];
+      } else if (N > 1) {
+        const i = guard % n;
+        const o = (j + guard) % N;
+        if (o !== j) { const tmp = sign[j][i]; sign[j][i] = sign[o][i]; sign[o][i] = tmp; }
+      } else break;
+    }
+    used.add(codeAt(j));
+  }
+  const swapOk = (j, o) => {
+    const cj = codeAt(j), co = codeAt(o);
+    if (cj === co || used.has(cj) || used.has(co)) return false;
+    return fAt(j) <= fMax && fAt(o) <= fMax;
+  };
+  for (let pass = 0; pass < 3; pass++) {
+    let progress = false;
+    for (let j = 0; j < N; j++) {
+      if (fAt(j) <= fMax) continue;
+      let fixed = false;
+      for (const i of freeIdx) {
+        for (const k of allowed[i].slice().sort((a, b) => Folk[i][a] - Folk[i][b])) {
+          if (k === sign[j][i]) continue;
+          const prev = sign[j][i], old = codeAt(j);
+          used.delete(old);
+          sign[j][i] = k;
+          if (fAt(j) <= fMax && !used.has(codeAt(j))) { used.add(codeAt(j)); fixed = true; progress = true; break; }
+          sign[j][i] = prev;
+          used.add(old);
+        }
+        if (fixed) break;
+      }
+      if (fixed) continue;
+      const step = Math.max(1, Math.floor(N / 20));
+      for (let i = 0; i < n && !fixed; i++) {
+        for (let t = 0, o = (j + step) % N; t < 20 && !fixed; t++, o = (o + step) % N) {
+          if (o === j || sign[o][i] === sign[j][i]) continue;
+          if (Folk[i][sign[o][i]] >= Folk[i][sign[j][i]]) continue;
+          const a = sign[j][i], b = sign[o][i];
+          const cj0 = codeAt(j), co0 = codeAt(o);
+          used.delete(cj0); used.delete(co0);
+          sign[j][i] = b; sign[o][i] = a;
+          if (swapOk(j, o)) { used.add(codeAt(j)); used.add(codeAt(o)); fixed = true; progress = true; }
+          else { sign[j][i] = a; sign[o][i] = b; used.add(cj0); used.add(co0); }
+        }
+      }
+    }
+    if (!progress) break;
+  }
+  const rnd = mulberry32((N * 91 + 7) >>> 0);
+  for (let t = 0; t < 2000; t++) {
+    const j = Math.floor(rnd() * N), o = Math.floor(rnd() * N);
+    if (j === o) continue;
+    const i = Math.floor(rnd() * n);
+    if (sign[j][i] === sign[o][i]) continue;
+    const before = score(pAt(j), codeAt(j)) + score(pAt(o), codeAt(o));
+    const fj = fAt(j), fo = fAt(o);
+    const a = sign[j][i], b = sign[o][i];
+    const cj0 = codeAt(j), co0 = codeAt(o);
+    used.delete(cj0); used.delete(co0);
+    sign[j][i] = b; sign[o][i] = a;
+    const after = score(pAt(j), codeAt(j)) + score(pAt(o), codeAt(o));
+    const payOk = fAt(j) <= fMax && fAt(o) <= fMax;
+    const wasBad = fj > fMax || fo > fMax;
+    if (payOk && !used.has(codeAt(j)) && !used.has(codeAt(o)) && (after > before || wasBad)) {
+      used.add(codeAt(j)); used.add(codeAt(o));
+    } else {
+      sign[j][i] = a; sign[o][i] = b;
+      used.add(cj0); used.add(co0);
+    }
+  }
+  {
+    // Fria matcher som alla får samma tecken ger dubbletter. Byt dem till en unik kombination.
+    const seen = new Set(exclude || []);
+    const vary = freeIdx.filter((i) => allowed[i].length > 1);
+    for (let j = 0; j < N; j++) {
+      let guard = 0;
+      while (seen.has(codeAt(j)) && vary.length && guard++ < 64) {
+        let x = (j + 1) * 997 + guard * 131;
+        for (const i of vary) {
+          const opts = allowed[i];
+          sign[j][i] = opts[x % opts.length];
+          x = Math.floor(x / opts.length);
+        }
+      }
+      seen.add(codeAt(j));
+    }
+  }
+  const order = [...Array(N).keys()].sort((a, b) => pAt(b) - pAt(a) || codeAt(a) - codeAt(b));
+  const rowReal = order.map((j) => pot / (1 + RT * fAt(j)));
+  return {
+    pot, RT, J, size: N, N, payoutMin,
+    rowList: order.map((j) => sign[j].map((k) => SIGNS[k]).join("")),
+    rowP: order.map((j) => pAt(j)),
+    rowReal,
+    codes: order.map((j) => codeAt(j)),
+    fallApplied: true,
+    payoutShort: rowReal.some((x) => x + 1e-6 < payoutMin),
+  };
+}
+
+/**
+ * Välj N rader. Utan egna andelar: de troligaste med utdelningsgolv.
+ * En match med andelar: exakt stratifiering. Flera matcher: kvoter så varje matchs procent finns i filen.
+ */
+function selectEgnaRows(events, forced, base, { rows: N, payoutMin, exclude = null, score = (pr) => pr, scoreMaxFactor = 1, fallPlan = null } = {}) {
+  const fallIdx = (fallPlan || []).map((s, i) => (s ? i : -1)).filter((i) => i >= 0);
+  if (!fallIdx.length) return selectTopRows(events, forced, base, { rows: N, payoutMin, exclude, score, scoreMaxFactor });
+  if (fallIdx.length === 1) {
+    const primary = fallIdx[0];
+    return selectStratifiedOnMatch(events, forced, base, {
+      N, payoutMin, exclude, score, scoreMaxFactor, mi: primary, shares: fallPlan[primary],
+    }) || selectTopRows(events, forced, base, { rows: N, payoutMin, exclude, score, scoreMaxFactor });
+  }
+  return selectByQuotas(events, forced, base, { rows: N, payoutMin, exclude, score, fallPlan });
+}
+
+function mulberry32(seed) {
+  let a = seed >>> 0;
+  return () => {
+    a |= 0; a = (a + 0x6D2B79F5) | 0;
+    let t = Math.imul(a ^ (a >>> 15), 1 | a);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
 }
