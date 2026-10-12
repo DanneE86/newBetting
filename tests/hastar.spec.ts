@@ -349,6 +349,35 @@ test.describe('hast-engine: systembyggaren', () => {
     expect(s.legs[1].horses).toEqual([3]);
   });
 
+  test('alltid exakt två spikar (högst chans), övriga avdelningar minst två hästar', async () => {
+    const { buildSystem, buildBigSystem, reduceSystem, SPIKES } = await engine();
+    expect(SPIKES).toBe(2);
+    // 8 avdelningar, olika starka favoriter
+    const legs = [0.62, 0.3, 0.55, 0.33, 0.4, 0.35, 0.31, 0.45].map((fav, i) => ({
+      leg: i + 1, number: i + 1,
+      horses: [fav, (1 - fav) * 0.4, (1 - fav) * 0.3, (1 - fav) * 0.2, (1 - fav) * 0.1].map((p, j) => ({ nr: j + 1, p, marketPct: j === 0 ? Math.min(0.8, fav * 1.1) : p * 0.95 })),
+    }));
+    const check = (s: any) => {
+      const spikes = s.legs.filter((l: any) => l.horses.length === 1);
+      expect(spikes).toHaveLength(2);
+      for (const l of spikes) expect(l.horses).toEqual([1]); // nr 1 har högst chans i varje avdelning
+      for (const l of s.legs.filter((l: any) => l.horses.length !== 1)) expect(l.horses.length).toBeGreaterThanOrEqual(2);
+    };
+    for (const budget of [100, 500, 2000]) {
+      check(buildSystem(legs, { budget, price: 0.25, alpha: 0, minTop: 50000, topShare: 0.26 }));
+      check(buildBigSystem(legs, { budget, price: 0.25, minTop: 50000, topShare: 0.26 }));
+      check(reduceSystem(legs, {}, { budget, price: 0.25, minTop: 50000, topShare: 0.26 }).base);
+    }
+    // Träffsystemet spikar de två starkaste favoriterna
+    expect(buildSystem(legs, { budget: 500, price: 0.25, alpha: 0 }).legs.filter((l: any) => l.horses.length === 1).map((l: any) => l.leg).sort()).toEqual([1, 3]);
+    // Egen låst enhästavdelning räknas som en av spikarna
+    const lk = buildSystem(legs, { budget: 500, price: 0.25, alpha: 0, locked: { 4: [2] } });
+    expect(lk.legs[3].horses).toEqual([2]);
+    expect(lk.legs.filter((l: any) => l.horses.length === 1)).toHaveLength(2);
+    // spikes: null = fritt som förut (stor budget ger inga spikar)
+    expect(buildSystem(legs, { budget: 5000, price: 0.25, alpha: 0, spikes: null }).legs.filter((l: any) => l.horses.length === 1).length).toBeLessThan(2);
+  });
+
   test('reducerat system: villkoren håller på varje rad och budgeten håller', async () => {
     const { reduceSystem, rowsToText, SKRALL_MAX } = await engine();
     const legs = legsFixture();
@@ -473,6 +502,16 @@ test.describe('GUI: fliken Hästar', () => {
     await expect(page.locator('#hastar-view')).toBeVisible();
     await expect(page.locator('#hastar-view h2')).toContainText('Hästar');
     await expect(page.locator('.hs-kort h3')).toHaveText('Kort sagt');
+    // Skrällar, Interbet-skrällar, Sena pengar och Pool-trend är hopfällda från start
+    const folds = page.locator('details.hs-fold');
+    if (await folds.count()) {
+      await expect(page.locator('details.hs-fold[open]')).toHaveCount(0);
+      await expect(folds.first().locator('summary h4')).toContainText('Skrällar');
+      await expect(folds.first().locator('ul, p').first()).toBeHidden();
+      await folds.first().locator('summary').click();
+      await expect(folds.first()).toHaveAttribute('open', '');
+      await expect(folds.first().locator('ul, p').first()).toBeVisible();
+    }
     await expect(page.locator('main')).toBeHidden();
     await expect(page.locator('#stryktips-view')).toBeHidden();
     await page.click('.view-tab[data-view="tips"]');
