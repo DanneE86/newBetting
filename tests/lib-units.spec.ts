@@ -3817,3 +3817,31 @@ test('ligaregister: nya ligor har FotMob-id, statistikkälla och historik', asyn
   const { MAIN } = await lib('learnings-data.mjs');
   expect(MAIN).toEqual(expect.arrayContaining(['BE', 'SC']));
 });
+
+// ---------- pick-1x2.mjs (kryssregeln) ----------
+
+test.describe('pick-1x2: kryssregeln', () => {
+  test('X blir tipset nar krysset ligger inom 6 %-enheter fran favoriten', async () => {
+    const { pick1x2, DRAW_MARGIN } = await lib('pick-1x2.mjs');
+    expect(DRAW_MARGIN).toBe(0.06);
+    expect(pick1x2({ home: 0.35, draw: 0.31, away: 0.34 })).toEqual({ pick: 'X', confidence: 0.31, drawRule: 'nara' });
+    expect(pick1x2({ home: 0.31, draw: 0.32, away: 0.37 }).pick).toBe('X'); // bortafavorit 5 enheter fore
+    // Como-Roma 2026-10-11: X 10,7 enheter efter -> hemmafavoriten kvar
+    expect(pick1x2({ home: 0.374, draw: 0.267, away: 0.358 }, 'SA').pick).toBe('1');
+  });
+  test('klar favorit och 7 enheter ger favoriten, X hogst ger X utan regel', async () => {
+    const { pick1x2 } = await lib('pick-1x2.mjs');
+    expect(pick1x2({ home: 0.62, draw: 0.22, away: 0.16 }).pick).toBe('1');
+    expect(pick1x2({ home: 0.37, draw: 0.30, away: 0.33 }).pick).toBe('1');
+    expect(pick1x2({ home: 0.30, draw: 0.40, away: 0.30 })).toEqual({ pick: 'X', confidence: 0.4, drawRule: null });
+    expect(pick1x2({ home: 0.2, draw: 0.32, away: 0.48 }, null, 0.2).pick).toBe('X'); // egen marginal
+  });
+  test('Serie B: X nar krysset ar minst 29 %, andra ligor och lagre kryss far favoriten', async () => {
+    const { pick1x2, DRAW_LEAGUES } = await lib('pick-1x2.mjs');
+    expect(DRAW_LEAGUES).toEqual({ SB: 0.29 });
+    expect(pick1x2({ home: 0.42, draw: 0.30, away: 0.28 }, 'SB')).toEqual({ pick: 'X', confidence: 0.3, drawRule: 'liga' });
+    expect(pick1x2({ home: 0.42, draw: 0.30, away: 0.28 }, 'SA').pick).toBe('1');
+    expect(pick1x2({ home: 0.47, draw: 0.28, away: 0.25 }, 'SB').pick).toBe('1');
+    expect(pick1x2({ home: 0.36, draw: 0.32, away: 0.32 }, 'SB').drawRule).toBe('nara'); // nara-regeln gar forst
+  });
+});

@@ -397,3 +397,14 @@ Bakkörning 55 Europatipset-omgångar 2025-08 – 2026-09 (`data/europatips-back
 | Kryss 50 % + B:s lutning | 15,63 % | 1 | 8 | 20 | 7,0 | 43 omg | −39 973 kr |
 
 Kryssregeln ger något högre chans och fler 10–11 rätt, men nettot sjunker med ungefär 3 000 kr eftersom en 12:a (3 327 kr) försvann. Skillnaderna ligger inom slumpen på 55 omgångar. Regeln behålls eftersom användaren kräver den. B:s lutning (STRYK_C_TILT=b) gav inget och infördes inte. Kryss på väldigt många matcher kan pressa C:s högsta rad under 1 miljon (2613: 659 000 kr).
+
+## Kryss på Oddset – alla kryssmatcher genomgångna (2026-10-11)
+
+95 864 ligamatcher (25 297 kryss) i data/matcher, stängningsodds. Kryss minus oddsens förväntan per signal, träning före 2023, kontroll 2023 och senare.
+
+- **Oddsen prissätter kryss nästan exakt.** Jämna matcher (|1−2| < 5 %) slutar kryss 29,5 % mot väntat 29,6 %.
+- **Kryssregeln (införd):** tipset blir X när krysset ligger inom 6 %-enheter från favoriten. I de matcherna har X och favoriten ungefär samma träff (33 %), men X ger ROI +5,2 % / +1,9 % och favoriten −5,0 % / −8,8 %. Total träff är oförändrad (50 %). Koden finns i `scripts/lib/pick-1x2.mjs`.
+- **Serie B (införd):** kryssar mer än oddsen (+2,5 enheter i träning, +2,3 i kontroll). När krysset är minst 29 % blir tipset X: ROI +7 % / +15 % mot favoritens −2 % / +3 %.
+- **Färre kryss än oddsen, i båda perioderna:** stora favoriter, låg kryss-chans enligt oddsen, J-League, League One och lag som kryssade mindre än oddsen förra säsongen. Det påverkar inte X-tipset, eftersom ett X inom 6 enheter ändå var bättre än favoriten i de fallen.
+- **Förkastat (vänder eller saknas i kontrollen):** säsongsfas, sista omgångarna, "inget att spela för", tabellavstånd, inbördes kryssandel, lagens kryssandel och målsnitt, xG-snitt, domarens kryssandel, oddsrörelse, över/under-marknaden, vila och tur. En samlad justering med alla signaler var bättre i 53 av 100 liga-säsonger, alltså brus.
+- **Data som saknas:** frånvaro före matchen finns för 4 % av matcherna (sparas från 2026-10-05) och domare för 22 %. Testa om frånvaro och domare när mer data finns.

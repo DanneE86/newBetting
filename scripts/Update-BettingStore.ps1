@@ -1130,6 +1130,9 @@ function Score-Fixture($homeStats, $awayStats, $lineup = $null, $drawRate = $nul
     $pick1x2 = "1"; $conf1x2 = $pHome
     if ($pDraw -ge $pHome -and $pDraw -ge $pAway) { $pick1x2 = "X"; $conf1x2 = $pDraw }
     elseif ($pAway -ge $pHome -and $pAway -ge $pDraw) { $pick1x2 = "2"; $conf1x2 = $pAway }
+    # Kryssregeln (samma som scripts/lib/pick-1x2.mjs): X inom 6 %-enheter fran favoriten -> X,
+    # Serie B kryssar mer an oddsen -> X nar krysset ar minst 29 %
+    if ($pick1x2 -ne "X" -and (($conf1x2 - $pDraw) -lt 0.06 -or ($lg -eq "SB" -and $pDraw -ge 0.29))) { $pick1x2 = "X"; $conf1x2 = $pDraw }
     $pickBtts = if ($pBtts -ge 0.5) { "JA" } else { "NEJ" }
     $pickOu = if ($pOver -ge 0.5) { "OVER 2.5" } else { "UNDER 2.5" }
 
