@@ -10,6 +10,7 @@ param(
 )
 
 $ErrorActionPreference = "Continue"
+. (Join-Path $PSScriptRoot "lib\Seasons.ps1")
 $Root = Split-Path -Parent $PSScriptRoot
 $RawDir = Join-Path $Root "data/raw"
 $OpenDir = Join-Path $Root "data/open"
@@ -37,76 +38,29 @@ function Save-Url($Url, $Path, $Name) {
 # --- football-data.co.uk CSV (results + odds) ---
 if (-not $SkipCsv) {
     Write-Host "`n=== football-data.co.uk CSV ==="
-    $csv = @(
-        @{ f = "PL_2627.csv"; u = "https://www.football-data.co.uk/mmz4281/2627/E0.csv" },
-        @{ f = "CH_2627.csv"; u = "https://www.football-data.co.uk/mmz4281/2627/E1.csv" },
-        @{ f = "PL_2526.csv"; u = "https://www.football-data.co.uk/mmz4281/2526/E0.csv" },
-        @{ f = "CH_2526.csv"; u = "https://www.football-data.co.uk/mmz4281/2526/E1.csv" },
-        @{ f = "PL_2425.csv"; u = "https://www.football-data.co.uk/mmz4281/2425/E0.csv" },
-        @{ f = "CH_2425.csv"; u = "https://www.football-data.co.uk/mmz4281/2425/E1.csv" },
-        @{ f = "PL_2324.csv"; u = "https://www.football-data.co.uk/mmz4281/2324/E0.csv" },
-        @{ f = "CH_2324.csv"; u = "https://www.football-data.co.uk/mmz4281/2324/E1.csv" },
-        @{ f = "EL1_2627.csv"; u = "https://www.football-data.co.uk/mmz4281/2627/E2.csv" },
-        @{ f = "EL1_2526.csv"; u = "https://www.football-data.co.uk/mmz4281/2526/E2.csv" },
-        @{ f = "EL1_2425.csv"; u = "https://www.football-data.co.uk/mmz4281/2425/E2.csv" },
-        @{ f = "LL_2627.csv"; u = "https://www.football-data.co.uk/mmz4281/2627/SP1.csv" },
-        @{ f = "LL_2526.csv"; u = "https://www.football-data.co.uk/mmz4281/2526/SP1.csv" },
-        @{ f = "LL_2425.csv"; u = "https://www.football-data.co.uk/mmz4281/2425/SP1.csv" },
-        @{ f = "SA_2627.csv"; u = "https://www.football-data.co.uk/mmz4281/2627/I1.csv" },
-        @{ f = "SA_2526.csv"; u = "https://www.football-data.co.uk/mmz4281/2526/I1.csv" },
-        @{ f = "SA_2425.csv"; u = "https://www.football-data.co.uk/mmz4281/2425/I1.csv" },
-        @{ f = "BL_2627.csv"; u = "https://www.football-data.co.uk/mmz4281/2627/D1.csv" },
-        @{ f = "BL_2526.csv"; u = "https://www.football-data.co.uk/mmz4281/2526/D1.csv" },
-        @{ f = "BL_2425.csv"; u = "https://www.football-data.co.uk/mmz4281/2425/D1.csv" },
-        @{ f = "L1_2627.csv"; u = "https://www.football-data.co.uk/mmz4281/2627/F1.csv" },
-        @{ f = "L1_2526.csv"; u = "https://www.football-data.co.uk/mmz4281/2526/F1.csv" },
-        @{ f = "L1_2425.csv"; u = "https://www.football-data.co.uk/mmz4281/2425/F1.csv" },
-        @{ f = "ED_2627.csv"; u = "https://www.football-data.co.uk/mmz4281/2627/N1.csv" },
-        @{ f = "ED_2526.csv"; u = "https://www.football-data.co.uk/mmz4281/2526/N1.csv" },
-        @{ f = "ED_2425.csv"; u = "https://www.football-data.co.uk/mmz4281/2425/N1.csv" },
-    @{ f = "BL2_2627.csv"; u = "https://www.football-data.co.uk/mmz4281/2627/D2.csv" },
-    @{ f = "BL2_2526.csv"; u = "https://www.football-data.co.uk/mmz4281/2526/D2.csv" },
-    @{ f = "BL2_2425.csv"; u = "https://www.football-data.co.uk/mmz4281/2425/D2.csv" },
-    @{ f = "LL2_2627.csv"; u = "https://www.football-data.co.uk/mmz4281/2627/SP2.csv" },
-    @{ f = "LL2_2526.csv"; u = "https://www.football-data.co.uk/mmz4281/2526/SP2.csv" },
-    @{ f = "LL2_2425.csv"; u = "https://www.football-data.co.uk/mmz4281/2425/SP2.csv" },
-    @{ f = "SB_2627.csv"; u = "https://www.football-data.co.uk/mmz4281/2627/I2.csv" },
-    @{ f = "SB_2526.csv"; u = "https://www.football-data.co.uk/mmz4281/2526/I2.csv" },
-    @{ f = "SB_2425.csv"; u = "https://www.football-data.co.uk/mmz4281/2425/I2.csv" },
-    @{ f = "PT_2627.csv"; u = "https://www.football-data.co.uk/mmz4281/2627/P1.csv" },
-    @{ f = "PT_2526.csv"; u = "https://www.football-data.co.uk/mmz4281/2526/P1.csv" },
-    @{ f = "PT_2425.csv"; u = "https://www.football-data.co.uk/mmz4281/2425/P1.csv" },
-    @{ f = "GR_2627.csv"; u = "https://www.football-data.co.uk/mmz4281/2627/G1.csv" },
-    @{ f = "GR_2526.csv"; u = "https://www.football-data.co.uk/mmz4281/2526/G1.csv" },
-    @{ f = "GR_2425.csv"; u = "https://www.football-data.co.uk/mmz4281/2425/G1.csv" },
-        @{ f = "BE_2627.csv"; u = "https://www.football-data.co.uk/mmz4281/2627/B1.csv" },
-        @{ f = "BE_2526.csv"; u = "https://www.football-data.co.uk/mmz4281/2526/B1.csv" },
-        @{ f = "BE_2425.csv"; u = "https://www.football-data.co.uk/mmz4281/2425/B1.csv" },
-        @{ f = "SC_2627.csv"; u = "https://www.football-data.co.uk/mmz4281/2627/SC0.csv" },
-        @{ f = "SC_2526.csv"; u = "https://www.football-data.co.uk/mmz4281/2526/SC0.csv" },
-        @{ f = "SC_2425.csv"; u = "https://www.football-data.co.uk/mmz4281/2425/SC0.csv" }
-    )
+    # Samma filer som Update-BettingStore.ps1 laser: fd-main-ligorna i config/leagues.json, senaste sasongerna
+    $registry = ([System.IO.File]::ReadAllText((Join-Path $Root "config/leagues.json"))) | ConvertFrom-Json
+    $csv = @(Get-FootballDataSources $registry | ForEach-Object { @{ f = $_.File; u = $_.Url } })
     foreach ($c in $csv) {
         Save-Url $c.u (Join-Path $RawDir $c.f) "csv:$($c.f)" | Out-Null
     }
 }
 
 # --- openfootball JSON (fixtures + scores) ---
+# Liga -> openfootball-fil; sasongen ("2026-27") raknas fran dagens datum, ny sasong 1 juli
+$OpenFootball = [ordered]@{ PL = "en.1"; CH = "en.2"; LL = "es.1"; SA = "it.1"; BL = "de.1"; L1 = "fr.1"; ED = "nl.1" }
+$OfSeasonStart = Get-SeasonStartYear
+function Get-OpenFootballSeason([int]$y) { return "$y-$((($y + 1) % 100).ToString('00'))" }
 if (-not $SkipOpenFootball) {
     Write-Host "`n=== openfootball/football.json ==="
-    $of = @(
-        @{ f = "pl_2026-27.json"; u = "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/en.1.json"; league = "PL" },
-        @{ f = "ch_2026-27.json"; u = "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/en.2.json"; league = "CH" },
-        @{ f = "ll_2026-27.json"; u = "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/es.1.json"; league = "LL" },
-        @{ f = "sa_2026-27.json"; u = "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/it.1.json"; league = "SA" },
-        @{ f = "bl_2026-27.json"; u = "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/de.1.json"; league = "BL" },
-        @{ f = "l1_2026-27.json"; u = "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/fr.1.json"; league = "L1" },
-        @{ f = "ed_2026-27.json"; u = "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/nl.1.json"; league = "ED" },
-        @{ f = "pl_2025-26.json"; u = "https://raw.githubusercontent.com/openfootball/football.json/master/2025-26/en.1.json"; league = "PL" },
-        @{ f = "ch_2025-26.json"; u = "https://raw.githubusercontent.com/openfootball/football.json/master/2025-26/en.2.json"; league = "CH" },
-        @{ f = "pl_2024-25.json"; u = "https://raw.githubusercontent.com/openfootball/football.json/master/2024-25/en.1.json"; league = "PL" },
-        @{ f = "ch_2024-25.json"; u = "https://raw.githubusercontent.com/openfootball/football.json/master/2024-25/en.2.json"; league = "CH" }
-    )
+    # Innevarande sasong for alla ligor, PL och CH aven tva sasonger bakat
+    $of = @(foreach ($lg in $OpenFootball.Keys) {
+        $years = if ($lg -in @("PL", "CH")) { 0..2 } else { 0 }
+        foreach ($back in $years) {
+            $sl = Get-OpenFootballSeason ($OfSeasonStart - $back)
+            @{ f = "$($lg.ToLower())_$sl.json"; u = "https://raw.githubusercontent.com/openfootball/football.json/master/$sl/$($OpenFootball[$lg]).json"; league = $lg }
+        }
+    })
     foreach ($o in $of) {
         Save-Url $o.u (Join-Path $OpenDir $o.f) "openfootball:$($o.f)" | Out-Null
     }
@@ -238,15 +192,8 @@ if (-not $SkipOpenFootball) {
 
     $upcoming = @()
     $today = Get-Date
-    foreach ($pair in @(
-        @{ file = "pl_2026-27.json"; league = "PL" },
-        @{ file = "ch_2026-27.json"; league = "CH" },
-        @{ file = "ll_2026-27.json"; league = "LL" },
-        @{ file = "sa_2026-27.json"; league = "SA" },
-        @{ file = "bl_2026-27.json"; league = "BL" },
-        @{ file = "l1_2026-27.json"; league = "L1" },
-        @{ file = "ed_2026-27.json"; league = "ED" }
-    )) {
+    $curOf = Get-OpenFootballSeason $OfSeasonStart
+    foreach ($pair in @($OpenFootball.Keys | ForEach-Object { @{ file = "$($_.ToLower())_$curOf.json"; league = $_ } })) {
         $path = Join-Path $OpenDir $pair.file
         if (-not (Test-Path $path)) { continue }
         $json = Get-Content $path -Raw -Encoding UTF8 | ConvertFrom-Json

@@ -7,6 +7,8 @@ import { writeTipsReport } from '../scripts/build-tips-report';
 
 const root = path.resolve(__dirname, '..');
 const shotDir = path.join(root, 'test-results', 'screenshots');
+// Innevarande sasongs startar (ny sasong 1 juli), som scripts/lib/seasons.mjs
+const SEASON = (() => { const d = new Date(); return d.getMonth() >= 6 ? d.getFullYear() : d.getFullYear() - 1; })();
 
 function ensureShotDir() {
   fs.mkdirSync(shotDir, { recursive: true });
@@ -57,7 +59,7 @@ test.describe('E2E data fetch + screenshots', () => {
 
   test('screenshot: Understat EPL (datakälla xG)', async ({ page }) => {
     await page.setViewportSize({ width: 1440, height: 900 });
-    await page.goto('https://understat.com/league/EPL/2026', {
+    await page.goto(`https://understat.com/league/EPL/${SEASON}`, {
       waitUntil: 'domcontentloaded',
       timeout: 60_000,
     });
@@ -68,7 +70,7 @@ test.describe('E2E data fetch + screenshots', () => {
   });
 
   test('screenshot: openfootball PL fixtures raw exists + tip meta', async ({ page }) => {
-    const ofPath = path.join(root, 'data', 'open', 'pl_2026-27.json');
+    const ofPath = path.join(root, 'data', 'open', `pl_${SEASON}-${String((SEASON + 1) % 100).padStart(2, '0')}.json`);
     expect(fs.existsSync(ofPath)).toBeTruthy();
 
     // Mini HTML som visar att openfootball-filen finns (för screenshot-bevis)
@@ -77,7 +79,7 @@ test.describe('E2E data fetch + screenshots', () => {
       fs.readFileSync(path.join(root, 'data', 'betting-store.json'), 'utf8').replace(/^\uFEFF/, '')
     );
     const fplOk = fs.existsSync(path.join(root, 'data', 'open', 'fpl_availability.json'));
-    const xgOk = fs.existsSync(path.join(root, 'data', 'open', 'understat_EPL_2026_xg.json'));
+    const xgOk = fs.existsSync(path.join(root, 'data', 'open', `understat_EPL_${SEASON}_xg.json`));
     fs.mkdirSync(path.dirname(metaHtml), { recursive: true });
     fs.writeFileSync(
       metaHtml,

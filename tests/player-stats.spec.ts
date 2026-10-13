@@ -80,7 +80,7 @@ test.describe('spelarstatistik — öppna källor vs Opta', () => {
   });
 
   test('Understat getLeagueData ger alla EPL-spelare med key_passes', async ({ request }) => {
-    const season = '2026';
+    const season = String(new Date().getMonth() >= 6 ? new Date().getFullYear() : new Date().getFullYear() - 1); // innevarande Understat-sasong
     await request.get(`https://understat.com/league/EPL/${season}`, {
       headers: { 'User-Agent': 'Mozilla/5.0' },
       timeout: 45_000,

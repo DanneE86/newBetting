@@ -4,10 +4,15 @@
   Championship saknas pa Understat - endast EPL.
 #>
 param(
-    [string[]]$Seasons = @("2026", "2025")
+    # Understat-sasong = startaret; standard innevarande + forra (ny sasong 1 juli)
+    [string[]]$Seasons = @()
 )
 
 $ErrorActionPreference = "Stop"
+if (-not $Seasons.Count) {
+    $cur = [int]"$(if ((Get-Date).Month -ge 7) { (Get-Date).Year } else { (Get-Date).Year - 1 })"
+    $Seasons = @("$cur", "$($cur - 1)")
+}
 $Root = Split-Path -Parent $PSScriptRoot
 $OpenDir = Join-Path $Root "data/open"
 New-Item -ItemType Directory -Force -Path $OpenDir | Out-Null
@@ -121,7 +126,7 @@ foreach ($season in $Seasons) {
             league = "PL"
             understatLeague = "EPL"
             seasonCode = $season
-            seasonLabel = if ($season -eq "2026") { "2026/27" } elseif ($season -eq "2025") { "2025/26" } else { $season }
+            seasonLabel = if ($season -match '^\d{4}$') { "$season/$((([int]$season + 1) % 100).ToString('00'))" } else { $season }
             updatedAt = (Get-Date).ToString("o")
             teamCount = $teams.Count
             teams = $teams
@@ -140,7 +145,7 @@ $indexPath = Join-Path $OpenDir "understat_xg_index.json"
 $index = [ordered]@{
     updatedAt = (Get-Date).ToString("o")
     seasons = @($allSeasons | ForEach-Object { @{ seasonCode = $_.seasonCode; seasonLabel = $_.seasonLabel; teamCount = $_.teamCount } })
-    primary = "2026"
+    primary = $Seasons[0]
     championshipSupported = $false
 }
 $utf8 = New-Object System.Text.UTF8Encoding $false

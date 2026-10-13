@@ -2324,7 +2324,25 @@ test.describe('extra-signals och hoghojdsjustering', () => {
     expect(seasonOf('PL', '2027-03-01')).toBe('2026/27');
     expect(seasonOf('MX', '2026-07-20')).toBe('2026/27');
     expect(seasonOf('MLS', '2026-10-04')).toBe('2026');
-    expect(seasonOf('AR', '2026-02-10')).toBe('2025/26'); // AR ar markt host-var i vara filer
+    expect(seasonOf('AR', '2026-02-10')).toBe('2026'); // AR spelar kalenderar sedan 2021
+    expect(seasonOf('JP1', '2026-10-04')).toBe('2026/27'); // J1 host-var sedan 2026/27
+    expect(seasonOf('SE2', '2026-10-04')).toBe('2026/27'); // ESPN/FotMob-ligor markas host-var av storen
+  });
+
+  test('seasonOf: samma etikett som senaste matchen i varje data/matcher-fil', async () => {
+    const { seasonOf } = await lib('extra-signals.mjs');
+    const dir = path.join(ROOT, 'data', 'matcher');
+    let checked = 0;
+    for (const f of fs.readdirSync(dir).filter((x) => x.endsWith('.csv'))) {
+      const [head, ...rows] = fs.readFileSync(path.join(dir, f), 'utf8').replace(/^﻿/, '').split(/\r?\n/).filter(Boolean);
+      const cols = head.split(',');
+      const [iS, iD, iSt] = ['season', 'date', 'status'].map((c) => cols.indexOf(c));
+      const last = rows.map((r) => r.split(',')).filter((r) => r[iSt] === 'spelad' && r[iS]).at(-1);
+      if (!last) continue;
+      expect(seasonOf(f.slice(0, -4), last[iD]), f).toBe(last[iS]);
+      checked++;
+    }
+    expect(checked).toBeGreaterThan(20);
   });
 
   test('extraSignals: alt bara i hoghojdsligor, sp ur forra sasongens z', async () => {
@@ -3449,6 +3467,82 @@ test.describe('arbetsfloden: npm ci fore node-skript', () => {
       if (node < 0) continue;
       expect(ci, `${f}: npm ci saknas`).toBeGreaterThanOrEqual(0);
       expect(ci, `${f}: node scripts/ på rad ${node + 1} före npm ci på rad ${ci + 1}`).toBeLessThan(node);
+    }
+  });
+});
+
+// ---------- seasons.mjs: sasonger fran datum och config/leagues.json i stallet for hardkodade ar ----------
+
+test.describe('seasons: sasonger raknas fram, inga hardkodade ar', () => {
+  test('seasonStartYear, etiketter och football-data-koder byter 1 juli', async () => {
+    const { seasonStartYear, splitSeasonLabel, seasonCode } = await lib('seasons.mjs');
+    expect(seasonStartYear('2026-06-30')).toBe(2025);
+    expect(seasonStartYear('2026-07-01')).toBe(2026);
+    expect(seasonStartYear('2027-03-01')).toBe(2026);
+    expect(splitSeasonLabel(2026)).toBe('2026/27');
+    expect(splitSeasonLabel(2099)).toBe('2099/00');
+    expect(seasonCode(2026)).toBe('2627');
+    expect(seasonCode(2009)).toBe('0910');
+  });
+
+  test('latestSeasons: ligans senaste etiketter i datan, flyttas fram av sig sjalv', async () => {
+    const { latestSeasons } = await lib('seasons.mjs');
+    const m = (season: string) => ({ season });
+    expect([...latestSeasons([m('2024/25'), m('2026/27'), m('2025/26'), m('2026/27')], 2)]).toEqual(['2025/26', '2026/27']);
+    expect([...latestSeasons([m('2027/28'), m('2026/27'), m('2025/26')], 2)]).toEqual(['2026/27', '2027/28']);
+    expect(latestSeasons([], 2).size).toBe(0);
+  });
+
+  test('calendarLeagues: kalenderarsligor ur leagues.json, J1 inte langre med', async () => {
+    const { calendarLeagues } = await lib('seasons.mjs');
+    const cal = calendarLeagues();
+    for (const c of ['AS', 'SE2', 'SE3N', 'SE3S', 'NO', 'NO2', 'BR', 'BR2', 'MLS', 'AR', 'COL', 'KR', 'CAN']) expect(cal.has(c), c).toBe(true);
+    for (const c of ['PL', 'JP1', 'DK', 'AUS', 'SAU']) expect(cal.has(c), c).toBe(false);
+    const { CALENDAR_LEAGUES } = await lib('referee-streaks.mjs');
+    expect(CALENDAR_LEAGUES.has('SE3')).toBe(true); // Ettan Norra/Sodra delar domarnyckel
+    expect(CALENDAR_LEAGUES.has('JP1')).toBe(false);
+  });
+
+  test('fd-main-ligor har football-data-divisionskod (Update-BettingStore.ps1 bygger hamtlistan)', async () => {
+    const reg = JSON.parse(fs.readFileSync(path.join(ROOT, 'config', 'leagues.json'), 'utf8').replace(/^\uFEFF/, ''));
+    const fdMain = Object.entries(reg.leagues).filter(([, l]: any) => l.history === 'fd-main');
+    expect(fdMain.length).toBeGreaterThan(10);
+    for (const [code, l] of fdMain as [string, any][]) expect(l.fd, code).toMatch(/^[A-Z]+\d$/);
+    expect(reg.leagues.PL.fd).toBe('E0');
+    expect(reg.leagues.SC.fd).toBe('SC0');
+  });
+
+  test('Seasons.ps1: football-data-listan byter sasong av sig sjalv 1 juli', async () => {
+    test.skip(process.platform !== 'win32', 'PowerShell 5.1 finns bara pa Windows');
+    const { execFileSync } = await import('child_process');
+    const ps = `. '${path.join(ROOT, 'scripts', 'lib', 'Seasons.ps1')}'
+      $r = ([System.IO.File]::ReadAllText('${path.join(ROOT, 'config', 'leagues.json')}')) | ConvertFrom-Json
+      foreach ($d in '2026-10-13', '2027-06-30', '2027-08-01') {
+        $y = Get-SeasonStartYear ([datetime]$d)
+        $s = @(Get-FootballDataSources $r $y)
+        "$d|$y|$(Get-SplitSeasonLabel $y)|$($s.Count)|$(($s | Where-Object League -eq 'PL' | ForEach-Object File) -join ',')|$(($s | Where-Object League -eq 'SA' | ForEach-Object Url) -join ',')"
+      }`;
+    const out = execFileSync('powershell', ['-NoProfile', '-Command', ps], { encoding: 'utf8' }).trim().split(/\r?\n/).map((l) => l.split('|'));
+    const fdMain = Object.values(JSON.parse(fs.readFileSync(path.join(ROOT, 'config', 'leagues.json'), 'utf8')).leagues).filter((l: any) => l.history === 'fd-main').length;
+    expect(out[0].slice(0, 3)).toEqual(['2026-10-13', '2026', '2026/27']);
+    expect(Number(out[0][3])).toBe(fdMain * 3 + 2); // tre sasonger, PL och CH fyra
+    expect(out[0][4]).toBe('PL_2627.csv,PL_2526.csv,PL_2425.csv,PL_2324.csv');
+    expect(out[1].slice(1, 3)).toEqual(['2026', '2026/27']);
+    expect(out[2].slice(1, 3)).toEqual(['2027', '2027/28']);
+    expect(out[2][4]).toBe('PL_2728.csv,PL_2627.csv,PL_2526.csv,PL_2425.csv');
+    expect(out[2][5].split(',')[0]).toBe('https://www.football-data.co.uk/mmz4281/2728/I1.csv');
+  });
+
+  test('inga hardkodade sasongsar kvar i hamtskripten', async () => {
+    const files = ['scripts/Update-BettingStore.ps1', 'scripts/Fetch-OpenSources.ps1', 'scripts/Fetch-UnderstatXg.ps1', 'scripts/lib/Seasons.ps1',
+      'scripts/Fetch-PlayerStats.ps1', 'scripts/fetch-player-impact.mjs', 'scripts/tune-league-models.mjs', 'scripts/pro-layer.mjs'];
+    for (const f of files) {
+      // Kod, inte kommentarer (dar far exempel som "2026/27" sta)
+      const src = fs.readFileSync(path.join(ROOT, f), 'utf8').split(/\r?\n/).filter((l) => !/^\s*(#|\/\/|\*)/.test(l)).join('\n');
+      expect(src, f).not.toMatch(/mmz4281\/\d{4}\//);
+      expect(src, f).not.toMatch(/football\.json\/master\/\d{4}-\d{2}\//);
+      expect(src, f).not.toMatch(/['"]20\d\d\/\d\d['"]\s*[\],)]/); // t.ex. new Set(['2025/26', '2026/27'])
+      expect(src, f).not.toMatch(/(SEASONS?|Season)\s*=\s*[@[(]*\s*['"]?20\d\d/);
     }
   });
 });

@@ -3,6 +3,8 @@ import fs from 'fs';
 import path from 'path';
 
 const root = path.resolve(__dirname, '..');
+// Innevarande sasongs startar (ny sasong 1 juli), som scripts/lib/seasons.mjs
+const SEASON = (() => { const d = new Date(); return d.getMonth() >= 6 ? d.getFullYear() : d.getFullYear() - 1; })();
 
 function readJson(filePath: string) {
   const raw = fs.readFileSync(filePath, 'utf8').replace(/^\uFEFF/, '');
@@ -43,7 +45,7 @@ test('Understat xG via getLeagueData (AJAX) + PW fallback', async ({ page, reque
   fs.mkdirSync(outDir, { recursive: true });
 
   // Preferred path: AJAX endpoint used by Understat after 2025 redesign
-  const season = '2026';
+  const season = String(SEASON);
   await page.goto(`https://understat.com/league/EPL/${season}`, {
     waitUntil: 'domcontentloaded',
     timeout: 60_000,
@@ -101,7 +103,7 @@ test('Understat xG via getLeagueData (AJAX) + PW fallback', async ({ page, reque
 });
 
 test('store har Understat xG pa PL-lag', async () => {
-  const xgPath = path.join(root, 'data', 'open', 'understat_EPL_2026_xg.json');
+  const xgPath = path.join(root, 'data', 'open', `understat_EPL_${SEASON}_xg.json`);
   test.skip(!fs.existsSync(xgPath), 'Kör Fetch-UnderstatXg.ps1 först');
   const xg = readJson(xgPath);
   expect(xg.teamCount).toBeGreaterThanOrEqual(18);

@@ -6,6 +6,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { root } from './learnings-data.mjs';
 import { ALTITUDE, isAltitudeGame } from './altitude.mjs';
+import { leagueRegistry } from './seasons.mjs';
 
 const COUNTRY = { PL: 'ENG', CH: 'ENG', EL1: 'ENG', EL2: 'ENG', BL: 'GER', BL2: 'GER', LL: 'ESP', LL2: 'ESP', SA: 'ITA', SB: 'ITA' };
 
@@ -16,9 +17,11 @@ export function prevSeason(season) {
   return /^\d{4}\/\d{2}$/.test(season) ? `${y - 1}/${String(y).slice(2)}` : String(y - 1);
 }
 
-// Ligor vars sasong heter som kalenderaret i data/matcher (t.ex. "2026"), ovriga "2026/27" med ny sasong fran juli
-// (aven AR, COL, BR2, SE2, NO2 m.fl. ar markta 2025/26 i vara filer)
-const CALENDAR = new Set(['AS', 'NO', 'JP1', 'MLS', 'BR']);
+// Ligor vars sasong heter som kalenderaret i data/matcher (t.ex. "2026"), ovriga "2026/27" med ny sasong fran juli.
+// Kalenderarsligor (leagues.json calendarYear) med football-data "new" behaller arets namn; ovriga (COL, BR2, SE2,
+// NO2 m.fl. fran ESPN/FotMob) markas "2025/26" av Update-BettingStore.ps1. J1 spelar host-var sedan 2026/27.
+const CALENDAR = new Set(Object.entries(leagueRegistry().leagues ?? {})
+  .filter(([, l]) => l.calendarYear && l.history === 'fd-new').map(([code]) => code));
 /** Sasongsetikett for en liga och ett datum (YYYY-MM-DD), som i data/matcher/<liga>.csv. */
 export function seasonOf(league, date) {
   const y = Number(String(date).slice(0, 4)), mo = Number(String(date).slice(5, 7));
