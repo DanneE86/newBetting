@@ -1,0 +1,685 @@
+{
+ "updatedAt": "2026-10-13T18:52:59.423Z",
+ "league": "SUD",
+ "fotmobId": 299,
+ "name": "Copa Sudamericana",
+ "country": "INT",
+ "table": [
+  {
+   "rank": 1,
+   "team": "CSD Macará",
+   "fotmobName": "CSD Macará",
+   "fotmobId": 6609,
+   "group": "Group A",
+   "played": 6,
+   "won": 2,
+   "drawn": 4,
+   "lost": 0,
+   "goals": "6-3",
+   "gd": 3,
+   "pts": 10
+  },
+  {
+   "rank": 2,
+   "team": "Tigre",
+   "fotmobName": "Tigre",
+   "fotmobId": 89396,
+   "group": "Group A",
+   "played": 6,
+   "won": 2,
+   "drawn": 3,
+   "lost": 1,
+   "goals": "8-5",
+   "gd": 3,
+   "pts": 9
+  },
+  {
+   "rank": 3,
+   "team": "América de Cali",
+   "fotmobName": "América de Cali",
+   "fotmobId": 10280,
+   "group": "Group A",
+   "played": 6,
+   "won": 2,
+   "drawn": 3,
+   "lost": 1,
+   "goals": "6-5",
+   "gd": 1,
+   "pts": 9
+  },
+  {
+   "rank": 4,
+   "team": "Alianza Atlético",
+   "fotmobName": "Alianza Atlético",
+   "fotmobId": 4410,
+   "group": "Group A",
+   "played": 6,
+   "won": 0,
+   "drawn": 2,
+   "lost": 4,
+   "goals": "2-9",
+   "gd": -7,
+   "pts": 2
+  },
+  {
+   "rank": 1,
+   "team": "Atlético-MG",
+   "fotmobName": "Atlético-MG",
+   "fotmobId": 10272,
+   "group": "Group B",
+   "played": 6,
+   "won": 3,
+   "drawn": 1,
+   "lost": 2,
+   "goals": "8-6",
+   "gd": 2,
+   "pts": 10
+  },
+  {
+   "rank": 2,
+   "team": "Cienciano",
+   "fotmobName": "Cienciano",
+   "fotmobId": 1845,
+   "group": "Group B",
+   "played": 6,
+   "won": 2,
+   "drawn": 2,
+   "lost": 2,
+   "goals": "5-7",
+   "gd": -2,
+   "pts": 8
+  },
+  {
+   "rank": 3,
+   "team": "Juventud de las Piedras",
+   "fotmobName": "Juventud de las Piedras",
+   "fotmobId": 9883,
+   "group": "Group B",
+   "played": 6,
+   "won": 1,
+   "drawn": 4,
+   "lost": 1,
+   "goals": "10-7",
+   "gd": 3,
+   "pts": 7
+  },
+  {
+   "rank": 4,
+   "team": "Academia Puerto Cabello",
+   "fotmobName": "Academia Puerto Cabello",
+   "fotmobId": 657277,
+   "group": "Group B",
+   "played": 6,
+   "won": 2,
+   "drawn": 1,
+   "lost": 3,
+   "goals": "6-9",
+   "gd": -3,
+   "pts": 7
+  },
+  {
+   "rank": 1,
+   "team": "São Paulo",
+   "fotmobName": "São Paulo",
+   "fotmobId": 10277,
+   "group": "Group C",
+   "played": 6,
+   "won": 3,
+   "drawn": 3,
+   "lost": 0,
+   "goals": "6-1",
+   "gd": 5,
+   "pts": 12
+  },
+  {
+   "rank": 2,
+   "team": "O'Higgins",
+   "fotmobName": "O'Higgins",
+   "fotmobId": 6296,
+   "group": "Group C",
+   "played": 6,
+   "won": 3,
+   "drawn": 1,
+   "lost": 2,
+   "goals": "8-6",
+   "gd": 2,
+   "pts": 10
+  },
+  {
+   "rank": 3,
+   "team": "Millonarios",
+   "fotmobName": "Millonarios",
+   "fotmobId": 4403,
+   "group": "Group C",
+   "played": 6,
+   "won": 2,
+   "drawn": 2,
+   "lost": 2,
+   "goals": "7-7",
+   "gd": 0,
+   "pts": 8
+  },
+  {
+   "rank": 4,
+   "team": "Boston River",
+   "fotmobName": "Boston River",
+   "fotmobId": 188313,
+   "group": "Group C",
+   "played": 6,
+   "won": 1,
+   "drawn": 0,
+   "lost": 5,
+   "goals": "5-12",
+   "gd": -7,
+   "pts": 3
+  },
+  {
+   "rank": 1,
+   "team": "Recoleta",
+   "fotmobName": "Recoleta",
+   "fotmobId": 1427854,
+   "group": "Group D",
+   "played": 6,
+   "won": 1,
+   "drawn": 5,
+   "lost": 0,
+   "goals": "6-5",
+   "gd": 1,
+   "pts": 8
+  },
+  {
+   "rank": 2,
+   "team": "Santos",
+   "fotmobName": "Santos",
+   "fotmobId": 8514,
+   "group": "Group D",
+   "played": 6,
+   "won": 1,
+   "drawn": 4,
+   "lost": 1,
+   "goals": "8-6",
+   "gd": 2,
+   "pts": 7
+  },
+  {
+   "rank": 3,
+   "team": "San Lorenzo",
+   "fotmobName": "San Lorenzo",
+   "fotmobId": 10083,
+   "group": "Group D",
+   "played": 6,
+   "won": 1,
+   "drawn": 4,
+   "lost": 1,
+   "goals": "6-5",
+   "gd": 1,
+   "pts": 7
+  },
+  {
+   "rank": 4,
+   "team": "Deportivo Cuenca",
+   "fotmobName": "Deportivo Cuenca",
+   "fotmobId": 4144,
+   "group": "Group D",
+   "played": 6,
+   "won": 1,
+   "drawn": 3,
+   "lost": 2,
+   "goals": "3-7",
+   "gd": -4,
+   "pts": 6
+  },
+  {
+   "rank": 1,
+   "team": "Botafogo",
+   "fotmobName": "Botafogo",
+   "fotmobId": 8517,
+   "group": "Group E",
+   "played": 6,
+   "won": 5,
+   "drawn": 1,
+   "lost": 0,
+   "goals": "15-5",
+   "gd": 10,
+   "pts": 16
+  },
+  {
+   "rank": 2,
+   "team": "Caracas",
+   "fotmobName": "Caracas",
+   "fotmobId": 7850,
+   "group": "Group E",
+   "played": 6,
+   "won": 2,
+   "drawn": 3,
+   "lost": 1,
+   "goals": "9-9",
+   "gd": 0,
+   "pts": 9
+  },
+  {
+   "rank": 3,
+   "team": "Racing Club",
+   "fotmobName": "Racing Club",
+   "fotmobId": 10080,
+   "group": "Group E",
+   "played": 6,
+   "won": 2,
+   "drawn": 2,
+   "lost": 2,
+   "goals": "11-9",
+   "gd": 2,
+   "pts": 8
+  },
+  {
+   "rank": 4,
+   "team": "Independiente Petrolero",
+   "fotmobName": "Independiente Petrolero",
+   "fotmobId": 958325,
+   "group": "Group E",
+   "played": 6,
+   "won": 0,
+   "drawn": 0,
+   "lost": 6,
+   "goals": "3-15",
+   "gd": -12,
+   "pts": 0
+  },
+  {
+   "rank": 1,
+   "team": "Montevideo City Torque",
+   "fotmobName": "Montevideo City Torque",
+   "fotmobId": 395613,
+   "group": "Group F",
+   "played": 6,
+   "won": 4,
+   "drawn": 1,
+   "lost": 1,
+   "goals": "11-5",
+   "gd": 6,
+   "pts": 13
+  },
+  {
+   "rank": 2,
+   "team": "Grêmio",
+   "fotmobName": "Grêmio",
+   "fotmobId": 9769,
+   "group": "Group F",
+   "played": 6,
+   "won": 3,
+   "drawn": 2,
+   "lost": 1,
+   "goals": "8-3",
+   "gd": 5,
+   "pts": 11
+  },
+  {
+   "rank": 3,
+   "team": "Deportivo Riestra",
+   "fotmobName": "Deportivo Riestra",
+   "fotmobId": 298629,
+   "group": "Group F",
+   "played": 6,
+   "won": 1,
+   "drawn": 2,
+   "lost": 3,
+   "goals": "4-10",
+   "gd": -6,
+   "pts": 5
+  },
+  {
+   "rank": 4,
+   "team": "Palestino",
+   "fotmobName": "Palestino",
+   "fotmobId": 6455,
+   "group": "Group F",
+   "played": 6,
+   "won": 0,
+   "drawn": 3,
+   "lost": 3,
+   "goals": "1-6",
+   "gd": -5,
+   "pts": 3
+  },
+  {
+   "rank": 1,
+   "team": "Olimpia",
+   "fotmobName": "Olimpia",
+   "fotmobId": 6619,
+   "group": "Group G",
+   "played": 6,
+   "won": 4,
+   "drawn": 1,
+   "lost": 1,
+   "goals": "10-6",
+   "gd": 4,
+   "pts": 13
+  },
+  {
+   "rank": 2,
+   "team": "Vasco da Gama",
+   "fotmobName": "Vasco da Gama",
+   "fotmobId": 10276,
+   "group": "Group G",
+   "played": 6,
+   "won": 3,
+   "drawn": 1,
+   "lost": 2,
+   "goals": "10-6",
+   "gd": 4,
+   "pts": 10
+  },
+  {
+   "rank": 3,
+   "team": "Audax Italiano",
+   "fotmobName": "Audax Italiano",
+   "fotmobId": 4058,
+   "group": "Group G",
+   "played": 6,
+   "won": 2,
+   "drawn": 1,
+   "lost": 3,
+   "goals": "7-9",
+   "gd": -2,
+   "pts": 7
+  },
+  {
+   "rank": 4,
+   "team": "Barracas Central",
+   "fotmobName": "Barracas Central",
+   "fotmobId": 213534,
+   "group": "Group G",
+   "played": 6,
+   "won": 0,
+   "drawn": 3,
+   "lost": 3,
+   "goals": "2-8",
+   "gd": -6,
+   "pts": 3
+  },
+  {
+   "rank": 1,
+   "team": "River Plate",
+   "fotmobName": "River Plate",
+   "fotmobId": 10076,
+   "group": "Group H",
+   "played": 6,
+   "won": 4,
+   "drawn": 2,
+   "lost": 0,
+   "goals": "9-3",
+   "gd": 6,
+   "pts": 14
+  },
+  {
+   "rank": 2,
+   "team": "RB Bragantino",
+   "fotmobName": "RB Bragantino",
+   "fotmobId": 109705,
+   "group": "Group H",
+   "played": 6,
+   "won": 3,
+   "drawn": 1,
+   "lost": 2,
+   "goals": "12-5",
+   "gd": 7,
+   "pts": 10
+  },
+  {
+   "rank": 3,
+   "team": "Carabobo FC",
+   "fotmobName": "Carabobo FC",
+   "fotmobId": 49681,
+   "group": "Group H",
+   "played": 6,
+   "won": 3,
+   "drawn": 0,
+   "lost": 3,
+   "goals": "6-5",
+   "gd": 1,
+   "pts": 9
+  },
+  {
+   "rank": 4,
+   "team": "Blooming",
+   "fotmobName": "Blooming",
+   "fotmobId": 49678,
+   "group": "Group H",
+   "played": 6,
+   "won": 0,
+   "drawn": 1,
+   "lost": 5,
+   "goals": "3-17",
+   "gd": -14,
+   "pts": 1
+  }
+ ],
+ "tableHistory": {
+  "2026-10-13": [
+   [
+    "CSD Macará",
+    1,
+    6,
+    10,
+    3
+   ],
+   [
+    "Tigre",
+    2,
+    6,
+    9,
+    3
+   ],
+   [
+    "América de Cali",
+    3,
+    6,
+    9,
+    1
+   ],
+   [
+    "Alianza Atlético",
+    4,
+    6,
+    2,
+    -7
+   ],
+   [
+    "Atlético-MG",
+    1,
+    6,
+    10,
+    2
+   ],
+   [
+    "Cienciano",
+    2,
+    6,
+    8,
+    -2
+   ],
+   [
+    "Juventud de las Piedras",
+    3,
+    6,
+    7,
+    3
+   ],
+   [
+    "Academia Puerto Cabello",
+    4,
+    6,
+    7,
+    -3
+   ],
+   [
+    "São Paulo",
+    1,
+    6,
+    12,
+    5
+   ],
+   [
+    "O'Higgins",
+    2,
+    6,
+    10,
+    2
+   ],
+   [
+    "Millonarios",
+    3,
+    6,
+    8,
+    0
+   ],
+   [
+    "Boston River",
+    4,
+    6,
+    3,
+    -7
+   ],
+   [
+    "Recoleta",
+    1,
+    6,
+    8,
+    1
+   ],
+   [
+    "Santos",
+    2,
+    6,
+    7,
+    2
+   ],
+   [
+    "San Lorenzo",
+    3,
+    6,
+    7,
+    1
+   ],
+   [
+    "Deportivo Cuenca",
+    4,
+    6,
+    6,
+    -4
+   ],
+   [
+    "Botafogo",
+    1,
+    6,
+    16,
+    10
+   ],
+   [
+    "Caracas",
+    2,
+    6,
+    9,
+    0
+   ],
+   [
+    "Racing Club",
+    3,
+    6,
+    8,
+    2
+   ],
+   [
+    "Independiente Petrolero",
+    4,
+    6,
+    0,
+    -12
+   ],
+   [
+    "Montevideo City Torque",
+    1,
+    6,
+    13,
+    6
+   ],
+   [
+    "Grêmio",
+    2,
+    6,
+    11,
+    5
+   ],
+   [
+    "Deportivo Riestra",
+    3,
+    6,
+    5,
+    -6
+   ],
+   [
+    "Palestino",
+    4,
+    6,
+    3,
+    -5
+   ],
+   [
+    "Olimpia",
+    1,
+    6,
+    13,
+    4
+   ],
+   [
+    "Vasco da Gama",
+    2,
+    6,
+    10,
+    4
+   ],
+   [
+    "Audax Italiano",
+    3,
+    6,
+    7,
+    -2
+   ],
+   [
+    "Barracas Central",
+    4,
+    6,
+    3,
+    -6
+   ],
+   [
+    "River Plate",
+    1,
+    6,
+    14,
+    6
+   ],
+   [
+    "RB Bragantino",
+    2,
+    6,
+    10,
+    7
+   ],
+   [
+    "Carabobo FC",
+    3,
+    6,
+    9,
+    1
+   ],
+   [
+    "Blooming",
+    4,
+    6,
+    1,
+    -14
+   ]
+  ]
+ }
+}

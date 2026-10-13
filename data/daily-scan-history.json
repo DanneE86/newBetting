@@ -24,7 +24,9 @@
       "pick": "1",
       "odds": 1.77,
       "ev": 0.0675,
-      "scannedAt": "2026-09-29T19:09:53.130Z"
+      "scannedAt": "2026-09-29T19:09:53.130Z",
+      "result": "won",
+      "score": "2-1"
     },
     {
       "id": "BR2|2026-10-02|Londrina|Criciúma|home",
@@ -64,7 +66,21 @@
       "pick": "X",
       "odds": 3.5,
       "ev": 0.0318,
-      "scannedAt": "2026-09-29T19:09:53.130Z"
+      "scannedAt": "2026-09-29T19:09:53.130Z",
+      "result": "won",
+      "score": "2-2"
+    },
+    {
+      "id": "BR2|2026-10-13|Athletic|Londrina|away",
+      "league": "BR2",
+      "date": "2026-10-13",
+      "home": "Athletic",
+      "away": "Londrina",
+      "key": "away",
+      "pick": "2",
+      "odds": 3.95,
+      "ev": 0.0882,
+      "scannedAt": "2026-10-13T19:11:18.711Z"
     }
   ]
 }

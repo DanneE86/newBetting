@@ -3547,12 +3547,12 @@ test.describe('seasons: sasonger raknas fram, inga hardkodade ar', () => {
   });
 });
 
-// ---------- cups.mjs / cup-elo.mjs / uefa-referees.mjs (AFC Champions League Elite och Two) ----------
+// ---------- cups.mjs / cup-elo.mjs / uefa-referees.mjs (AFC Champions League Elite och Two, Copa Libertadores/Sudamericana) ----------
 
-test.describe('cuper: CL/EL/ECL och asiatiska CL (ACL, ACL2)', () => {
+test.describe('cuper: CL/EL/ECL, asiatiska CL (ACL, ACL2) och Copa (LIB, SUD)', () => {
   test('cuplistan läses ur config/leagues.json', async () => {
     const { CUPS, isCup, cupsOf } = await lib('cups.mjs');
-    expect(CUPS).toEqual(['CL', 'EL', 'ECL', 'ACL', 'ACL2']);
+    expect(CUPS).toEqual(['CL', 'EL', 'ECL', 'ACL', 'ACL2', 'LIB', 'SUD']);
     expect(isCup('ACL2')).toBe(true);
     expect(isCup('JP1')).toBe(false);
     expect(cupsOf({ leagues: { X: { cup: true }, Y: {} } })).toEqual(['X']);
@@ -3567,6 +3567,20 @@ test.describe('cuper: CL/EL/ECL och asiatiska CL (ACL, ACL2)', () => {
     expect(TM_COMP.ACL2).toEqual({ comp: 'ACL2', cup: true });
     for (const lg of ['CL', 'EL', 'ECL', 'ACL', 'ACL2', 'SAU', 'KR']) expect(REF_LEAGUES.has(lg), lg).toBe(true);
   });
+  test('Copa-cuperna har FotMob, Transfermarkt, domardata, odds och grupp Sydamerika', async () => {
+    const { FOTMOB_LEAGUES } = await lib('fotmob-leagues.mjs');
+    const { TM_COMP } = await lib('transfermarkt.mjs');
+    const { REF_LEAGUES } = await lib('referee-streaks.mjs');
+    expect(FOTMOB_LEAGUES.LIB).toBe(45);
+    expect(FOTMOB_LEAGUES.SUD).toBe(299);
+    expect(TM_COMP.LIB).toEqual({ comp: 'CLI', cup: true });
+    expect(TM_COMP.SUD).toEqual({ comp: 'CS', cup: true });
+    for (const lg of ['LIB', 'SUD']) expect(REF_LEAGUES.has(lg), lg).toBe(true);
+    const reg = JSON.parse(fs.readFileSync(path.join(ROOT, 'config', 'leagues.json'), 'utf8'));
+    expect(reg.groups.find((g: any) => g.id === 'sydamerika').leagues).toEqual(['LIB', 'SUD']);
+    expect(reg.leagues.LIB).toMatchObject({ cup: true, espn: 'conmebol.libertadores', odds: 'soccer_conmebol_copa_libertadores' });
+    expect(reg.leagues.SUD).toMatchObject({ cup: true, espn: 'conmebol.sudamericana', odds: 'soccer_conmebol_copa_sudamericana' });
+  });
   test('AFC-cuptrupp är reserv för truppvärdet', async () => {
     const { squadValueLookup } = await lib('squad-value.mjs');
     const pl = (v: number) => ({ players: [{ info: { marketValue: v } }] });
@@ -3574,6 +3588,11 @@ test.describe('cuper: CL/EL/ECL och asiatiska CL (ACL, ACL2)', () => {
     expect(valueOf('Al Hilal', 'ACL')?.value).toBe(200);
     expect(valueOf('Al Hilal', 'SAU')?.value).toBe(200); // SAU saknar fil -> cuptruppen
     expect(valueOf('Al Hilal', 'JP1')).toBeNull(); // JP1 har fil men inte laget
+    const cups = squadValueLookup({ LIB: { 'Boca Juniors': pl(300) }, SUD: { 'Vasco da Gama': pl(130) } });
+    expect(cups('Boca Juniors', 'SUD')?.value).toBe(300); // från Libertadores till Sudamericana
+    const lib2 = squadValueLookup({ LIB: { Estudiantes: pl(40) }, AR: { 'Estudiantes L.P.': pl(41) } });
+    expect(lib2('Estudiantes de La Plata', 'LIB')?.value).toBe(40); // ESPN-namn mot FotMob-namn, bara i cuper
+    expect(lib2('Estudiantes de La Plata', 'AR')).toBeNull();
   });
 });
 
@@ -3594,6 +3613,23 @@ test.describe('cup-elo: eget Elo för AFC-cuperna', () => {
     expect(eloOf('Al Ahli', 'QAT')).toBeNull(); // Qatars Al Ahli: liga utan data
     expect(eloOf('Shabab Al-Ahli', undefined)).toBeNull(); // okänd hemmaliga -> aldrig gissning över länder
   });
+  test('Sydamerika: Libertadores/Sudamericana rankas i BR/BR2/AR/COL, Uruguay saknas', async () => {
+    const { cupEloLookup, CUP_ELO, CUP_ELO_REGIONS, SA_ELO_START, ASIA_CUPS } = await lib('cup-elo.mjs');
+    expect(CUP_ELO).toMatchObject({ ACL: 'asia', ACL2: 'asia', LIB: 'sydamerika', SUD: 'sydamerika' });
+    expect([...ASIA_CUPS]).toEqual(['ACL', 'ACL2']);
+    expect(CUP_ELO_REGIONS.sydamerika.source).toBe('saelo');
+    const sa = [
+      { league: 'BR', date: '2026-08-01', home: 'Palmeiras', away: 'Fluminense', hg: 2, ag: 0 },
+      { league: 'AR', date: '2026-08-01', home: 'Boca Juniors', away: 'Estudiantes L.P.', hg: 1, ag: 1 },
+      { league: 'SAU', date: '2026-08-01', home: 'Al Hilal', away: 'Al Ahli', hg: 3, ag: 0 }, // annan region
+    ];
+    const eloOf = cupEloLookup(sa, '2026-10-13', SA_ELO_START);
+    expect(eloOf('Palmeiras', 'BR')).toMatchObject({ rank: 1, league: 'BR', source: 'own' });
+    expect(eloOf('Palmeiras', 'BR').elo).toBeGreaterThan(SA_ELO_START.BR);
+    expect(eloOf('Boca Juniors', 'AR').elo).toBeLessThan(eloOf('Fluminense', 'BR').elo); // Brasilien startar högre
+    expect(eloOf('Al Hilal', 'SAU')).toBeNull();
+    expect(eloOf('Montevideo City Torque', 'URU')).toBeNull();
+  });
   test('hemmaligan ur trupperna (FotMob primaryLeagueId)', async () => {
     const { cupHomeLeagues } = await lib('cup-elo.mjs');
     const home = cupHomeLeagues({
@@ -3603,6 +3639,15 @@ test.describe('cup-elo: eget Elo för AFC-cuperna', () => {
     expect(home.get('ACL|Al Ahli')).toBe('SAU');
     expect(home.get('ACL|Shabab Al-Ahli')).toBeUndefined(); // UAE-ligan finns inte hos oss
     expect(home.get('ACL2|FC Seoul')).toBe('KR');
+  });
+  test('hemmaligan för cupmatch: annan cup i regionen och ESPN-namn mot FotMob-namn', async () => {
+    const { homeLeagueOf } = await lib('cup-elo.mjs');
+    const home = new Map([['LIB|Estudiantes', 'AR'], ['LIB|Boca Juniors', 'AR'], ['SUD|Vasco da Gama', 'BR'], ['ACL|Al Ahli', 'SAU']]);
+    expect(homeLeagueOf(home, 'SUD', 'Boca Juniors')).toBe('AR'); // gick från Libertadores till Sudamericana
+    expect(homeLeagueOf(home, 'LIB', 'Estudiantes de La Plata')).toBe('AR');
+    expect(homeLeagueOf(home, 'SUD', 'Vasco da Gama')).toBe('BR');
+    expect(homeLeagueOf(home, 'LIB', 'Al Ahli')).toBeUndefined(); // aldrig över regioner
+    expect(homeLeagueOf(home, 'SUD', 'Montevideo City Torque')).toBeUndefined();
   });
 });
 
@@ -3618,5 +3663,163 @@ test.describe('uefa-referees: tillsatta domare från UEFA', () => {
     expect(uefaRefereeFor(list, { league: 'CL', date: '2026-10-13', home: 'Internazionale', away: 'Club Brugge' })).toBe('Rohit Saggi');
     expect(uefaRefereeFor(list, { league: 'ECL', date: '2026-10-14', home: 'AS Roma', away: 'Real Madrid' })).toBeNull();
     expect(uefaRefereeFor(list, { league: 'CL', date: '2026-10-20', home: 'AS Roma', away: 'Real Madrid' })).toBeNull();
+  });
+});
+
+// ---------- tm-cup-history.mjs / oddsportal-results.mjs / cup-value-model.mjs (truppvärde i cuperna) ----------
+
+test.describe('cuphistorik: truppvärde mot utfall i CL/EL/ECL/Libertadores/Sudamericana', () => {
+  const club = (id: string, name: string, y = 2023) => `<a title="${name}" href="/x/startseite/verein/${id}/saison_id/${y}">${name}</a>`;
+  const row = (h: string, a: string, score: string) =>
+    `<tr><td>${h}</td><td class="zentriert hauptlink"><a title="Match report" class="ergebnis-link" id="1" href="/spielbericht/index/spielbericht/1">${score}</a></td><td>${a}</td></tr>`;
+  test('TM-spelschema: rubrik, datum, resultat, straffar och dubbletter', async () => {
+    const { parseTmFixtures, CUP_HISTORY_COMPS } = await lib('tm-cup-history.mjs');
+    expect(Object.keys(CUP_HISTORY_COMPS)).toEqual(['CL', 'EL', 'ECL', 'LIB', 'SUD']);
+    const html = `<h2 class="content-box-headline">\n Group A </h2>
+      <a href="/aktuell/waspassiertheute/aktuell/new/datum/2024-04-04">x</a>
+      ${row(club('2433', 'CSD Colo-Colo'), club('1214', 'Club Cerro Porteño'), '1:0')}
+      ${row(club('2433', 'CSD Colo-Colo'), club('1214', 'Club Cerro Porteño'), '1:0')}
+      <h2 class="content-box-headline">Knockout stage</h2>
+      <a href="/aktuell/waspassiertheute/aktuell/new/datum/2024-03-15">x</a>
+      ${row(club('866', 'Club Nacional'), club('42208', 'Club Always Ready'), '7:5<span class="ergebnis_zusatz">on pens</span>')}
+      ${row(club('1', 'A &amp; B'), club('2', 'C'), '-:-')}`;
+    const m = parseTmFixtures(html);
+    expect(m).toHaveLength(2);
+    expect(m[0]).toMatchObject({ date: '2024-04-04', stage: 'Group A', homeId: '2433', home: 'CSD Colo-Colo', awayId: '1214', hg: 1, ag: 0, extra: null, season: 2023 });
+    expect(m[1]).toMatchObject({ stage: 'Knockout stage', date: '2024-03-15', extra: 'pens' });
+  });
+  test('TM-trupp: truppvärdet är summan av säsongens spelarvärden', async () => {
+    const { parseTmSquadValue } = await lib('tm-cup-history.mjs');
+    const p = (v: string) => `<tr class="odd"><td><a href="/x/profil/spieler/1">X</a></td><td class="rechts hauptlink"><a href="/x/marktwertverlauf/spieler/1">${v}</a></td></tr>`;
+    expect(parseTmSquadValue(`<tbody>${p('€1.50bn')}${p('€25.00m')}${p('€400k')}${p('-')}`)).toEqual({ value: 1_525_400_000, players: 3 });
+    expect(parseTmSquadValue('<tbody></tbody>')).toBeNull();
+  });
+  test('OddsPortal-arkiv: sökvägar per säsong och resultatlistans text', async () => {
+    const { cupResultsSlugs, parseResultsText } = await lib('oddsportal-results.mjs');
+    expect(cupResultsSlugs('LIB', 2023, 2026)).toEqual(['south-america/copa-libertadores-2024']);
+    expect(cupResultsSlugs('LIB', 2025, 2026)).toEqual(['south-america/copa-libertadores-2026', 'south-america/copa-libertadores']);
+    expect(cupResultsSlugs('CL', 2023, 2026)).toEqual(['europe/champions-league-2023-2024']);
+    expect(cupResultsSlugs('CL', 2026, 2026)).toEqual(['europe/champions-league']);
+    expect(cupResultsSlugs('ECL', 2022, 2026)).toEqual(['europe/conference-league-2022-2023', 'europe/europa-conference-league-2022-2023']);
+    const text = ['30 Nov 2024 - Play Offs', '1', 'X', '2', 'Finished', '1', 'Atletico-MG (Bra)', '-', 'Botafogo RJ (Bra)', '3', '4.45', '3.25', '2.02',
+      '26 Sep 2024 - Play Offs', 'After Pen.', '1', 'Sao Paulo (Bra)', '-', 'Botafogo RJ (Bra)', '2', '3.00', '2.88', '2.75',
+      'Finished', '2', 'Dortmund', '-', 'Real Madrid', '0', '-'].join('\n');
+    const r = parseResultsText(text);
+    expect(r).toHaveLength(3);
+    expect(r[0]).toEqual({ date: '2024-11-30', status: 'Finished', home: 'Atletico-MG', away: 'Botafogo RJ', country: { home: 'Bra', away: 'Bra' }, hg: 1, ag: 3, odds: [4.45, 3.25, 2.02] });
+    expect(r[1]).toMatchObject({ date: '2024-09-26', status: 'After Pen.' });
+    expect(r[2]).toMatchObject({ home: 'Dortmund', country: { home: null }, odds: null });
+  });
+  test('truppvärdesmodell: rader, ordnad logit, koppling till oddsen och justering', async () => {
+    const { cupValueRows, fitValueModel, valueModelProbs, joinMarket, blendMarket } = await lib('cup-value-model.mjs');
+    const doc = {
+      seasons: { 'LIB|2023': { league: 'LIB', season: 2023, matches: [
+        { date: '2024-04-04', homeId: '1', home: 'Palmeiras', awayId: '2', away: 'Always Ready', hg: 0, ag: 1, extra: null },
+        { date: '2024-04-05', homeId: '2', home: 'Always Ready', awayId: '1', away: 'Palmeiras', hg: 1, ag: 1, extra: 'pens' }, // straffar räknas inte
+        { date: '2024-04-06', homeId: '3', home: 'Okänd', awayId: '1', away: 'Palmeiras', hg: 0, ag: 2, extra: null }, // saknar värde
+      ] } },
+      clubs: { '1|2023': { value: 200e6 }, '2|2023': { value: 5e6 }, '3|2023': null },
+    };
+    const rows = cupValueRows(doc);
+    expect(rows).toHaveLength(1);
+    expect(rows[0]).toMatchObject({ res: 'A', richHome: true, richRes: 'L' });
+    expect(rows[0].ratio).toBeCloseTo(40, 6);
+    // Syntetiskt: dyrare laget vinner oftare -> b > 0, sannolikheterna summerar till 1
+    const syn: any[] = [];
+    for (let i = 0; i < 300; i++) {
+      const x = ((i % 7) - 3) / 2;
+      syn.push({ x, res: x > 0.4 ? (i % 4 ? 'H' : 'D') : x < -0.4 ? (i % 4 ? 'A' : 'D') : 'HDA'[i % 3] });
+    }
+    const m = fitValueModel(syn);
+    expect(m.b).toBeGreaterThan(0.5);
+    const p = valueModelProbs(m, Math.log(5));
+    expect(p[0] + p[1] + p[2]).toBeCloseTo(1, 9);
+    expect(p[0]).toBeGreaterThan(p[2]);
+    expect(fitValueModel(syn, { useValue: false }).b).toBe(0);
+    // Koppling: samma resultat, datum ±1, bäst namnlikhet
+    const odds = { seasons: { 'LIB|2023': { league: 'LIB', season: 2023, matches: [
+      { date: '2024-04-05', home: 'Palmeiras', away: 'Always Ready', hg: 0, ag: 1, odds: [1.25, 6, 11] },
+      { date: '2024-04-04', home: 'Bolivar', away: 'Flamengo', hg: 0, ag: 1, odds: [3, 3, 2.5] },
+    ] } } };
+    const score = (a: string, b: string) => (a === b ? 1 : 0);
+    expect(joinMarket(rows, odds, score)).toBe(1);
+    expect(rows[0].market[0]).toBeGreaterThan(0.7);
+    expect(rows[0].market.reduce((s: number, v: number) => s + v, 0)).toBeCloseTo(1, 9);
+    expect(blendMarket([0.5, 0.25, 0.25], 0, 0.3)).toEqual([0.5, 0.25, 0.25]);
+    expect(blendMarket([0.5, 0.25, 0.25], Math.log(4), 0.2)[0]).toBeGreaterThan(0.5);
+  });
+});
+
+// ---------- databas.mjs: filerna → lokala databasen (npm run databas) ----------
+
+test.describe('databas: översättning från filerna', () => {
+  test('CSV och matchrad: svenska kolumner, tal som tal, H/D/A blir 1/X/2', async () => {
+    const { parseCsvText, matchRad, MATCH_KOLUMNER } = await lib('databas.mjs');
+    const rader = parseCsvText('status,league,date,home,away,hg,ag,res,close_h,referee,nytt\nspelad,PL,2026-09-20,"Brighton, FC",Leeds,2,0,H,0.55,,x\nkommande,PL,2026-10-20,A,B,,,,,,\n');
+    expect(rader).toHaveLength(2);
+    expect(rader[0].home).toBe('Brighton, FC');
+    const m = matchRad(rader[0]);
+    expect(m).toMatchObject({ status: 'spelad', liga: 'PL', hemmalag: 'Brighton, FC', bortalag: 'Leeds', hemmamal: 2, bortamal: 0, resultat: '1', stang_chans_1: 0.55, domare: null, nytt: 'x' });
+    expect(matchRad({ res: 'D' }).resultat).toBe('X');
+    expect(matchRad({ res: 'A' }).resultat).toBe('2');
+    expect(matchRad(rader[1])).toMatchObject({ hemmamal: null, resultat: null });
+    // Varje kolumn har ett unikt svenskt namn och en förklaring
+    const namn = MATCH_KOLUMNER.map((k: string[]) => k[1]);
+    expect(new Set(namn).size).toBe(namn.length);
+    for (const k of MATCH_KOLUMNER) { expect(k[3].length).toBeGreaterThan(3); expect(k[1]).toMatch(/^[a-z0-9_]+$/); }
+    // Alla kolumner i riktiga matchfilen är förklarade
+    const head = fs.readFileSync(path.join(ROOT, 'data', 'matcher', 'PL.csv'), 'utf8').split(/\r?\n/)[0].split(',');
+    expect(head.filter((h) => !MATCH_KOLUMNER.some((k: string[]) => k[0] === h))).toEqual([]);
+  });
+
+  test('tabeller, spelare och trupper', async () => {
+    const { tabellRader, aktuellTabellRader, spelarRad, truppRader, sqlVarde } = await lib('databas.mjs');
+    const lg = { league: 'AS', updatedAt: 'u', table: [{ rank: 1, team: 'Sirius', played: 22, won: 16, drawn: 3, lost: 3, goals: '40-15', gd: 25, pts: 51 }], tableHistory: { '2026-10-01': [['Sirius', 1, 22, 51, 25]] } };
+    expect(tabellRader(lg)).toEqual([{ liga: 'AS', datum: '2026-10-01', placering: 1, lag: 'Sirius', spelade: 22, poang: 51, malskillnad: 25 }]);
+    expect(aktuellTabellRader(lg)[0]).toMatchObject({ gjorda_mal: 40, inslappta_mal: 15, poang: 51, vunna: 16 });
+    // FotMob: [totalt, per 90, percentil] – totalen ska med
+    const p = spelarRad({ id: 1, name: 'Erling Haaland', team: 'Man City', info: { age: 26, marketValue: 1e8 }, season: { season: '2026/2027', stats: { goals: [5, 1, 100], assists: [0, 0, 0], rating: [7.99, 7.99, 90] } }, form: { last5: { goals: 4 } } }, 'PL');
+    expect(p).toMatchObject({ spelar_id: 1, liga: 'PL', mal: 5, assist: 0, betyg: 7.99, alder: 26, senaste5_mal: 4, forra_mal: null });
+    const t = truppRader({ league: 'BL', teams: { Dortmund: { coach: 'B', coachHistory: [{ name: 'A', firstSeen: 'd1' }, { name: 'B', firstSeen: 'd2' }], left: [{ id: '7', name: 'X', firstSeen: 'd1', lastSeen: 'd2' }] } } });
+    expect(t.tranare.map((x: any) => [x.tranare, x.nuvarande])).toEqual([['A', 0], ['B', 1]]);
+    expect(t.lamnat[0]).toMatchObject({ spelar_id: 7, namn: 'X' });
+    expect([sqlVarde(true), sqlVarde(''), sqlVarde(undefined), sqlVarde(NaN), sqlVarde({ a: 1 }), sqlVarde('x')]).toEqual([1, null, null, null, '{"a":1}', 'x']);
+  });
+
+  test('matchstatistik och tipsloggar', async () => {
+    const { matchstatRader, oddsetTipsRader, stryktipsRad } = await lib('databas.mjs');
+    const ms = matchstatRader({ league: 'BL', playerCols: ['id', 'name', 'side', 'min', 'g'], matches: { 9: { src: 'espn', id: '9', d: '2025-01-01', h: 'H', a: 'A', hg: 2, ag: 1, ht: [1, 0], form: ['4-4-2', '4-3-3'], p: [['5', 'Kalle', 'a', 90, 1]] } } });
+    expect(ms.matcher[0]).toMatchObject({ match_id: 'espn:9', hemma_mal_halvtid: 1, borta_formation: '4-3-3' });
+    expect(ms.spelare[0]).toMatchObject({ match_id: 'espn:9', spelar_id: '5', namn: 'Kalle', sida: 'borta', lag: 'A', minuter: 90, mal: 1 });
+    const o = oddsetTipsRader({ id: 'i', date: 'd', league: 'COL', home: 'H', away: 'A', latest: { topTip: true, markets: { '1X2': { pick: '1', p: 0.4, odds: 1.9, value: 'Ej värde', probs: { home: 0.4, draw: 0.3, away: 0.3 } }, BTTS: { pick: 'JA', p: 0.5 } } }, result: { '1X2': '1', BTTS: 'NEJ', score: '1-0' } });
+    expect(o.map((r: any) => [r.marknad, r.ratt])).toEqual([['1X2', 1], ['BTTS', 0]]);
+    expect(o[0]).toMatchObject({ chans_x: 0.3, basta_tips: true, slutresultat: '1-0' });
+    expect(oddsetTipsRader({ id: 'i', latest: { markets: { OU25: { pick: 'OVER 2.5' } } } })[0].ratt).toBeNull();
+    const s = stryktipsRad({ id: 's', product: 'stryktipset', draw: 4974, event: 1, latest: { probs: [0.5, 0.3, 0.2], folk: [0.6, 0.2, 0.2], single: '1', coupons: { A: { signs: '1X' }, B: { signs: '1' }, C: { signs: '2' } } }, result: { outcome: 'X' } });
+    expect(s).toMatchObject({ omgang: 4974, chans_1: 0.5, folket_1: 0.6, kupong_a: '1X', ratt_enkeltips: 0, ratt_a: 1, ratt_b: 0, ratt_c: 0 });
+  });
+
+  test('hästar: omgång, kompakta lopp och tips', async () => {
+    const { omgangRader, kompaktLoppRader, hastTipsRader } = await lib('databas.mjs');
+    const g = { id: 'V86_2026-10-05_40_1', type: 'V86', date: '2026-10-05', track: 'Gävle', turnover: 100, payouts: { 8: { systems: 3, payout: 5000 } }, races: [{ leg: 1, number: 6, id: '2026-10-05_40_6', distance: 2140, startMethod: 'auto', starts: [{ nr: 5, post: 5, horse: 'Häst', horseId: 9, sex: 'mare', father: 'F', grandfather: 'M', shoes: { front: false, back: true }, streck: 0.4, result: { place: 1, finishOrder: 1, km: 12.5, finalOdds: 2.1 }, records: [{ date: '2026-09-01', track: 'Solvalla', place: 2, km: 13 }] }] }] };
+    const r = omgangRader(g);
+    expect(r.omgang).toMatchObject({ spel_id: g.id, spelform: 'V86', omsattning_kr: 100 });
+    expect(r.utdelning).toEqual([{ spel_id: g.id, antal_ratt: 8, vinnande_system: 3, utdelning_kr: 5000 }]);
+    expect(r.avdelningar[0]).toEqual({ spel_id: g.id, avdelning: 1, lopp_id: '2026-10-05_40_6' });
+    expect(r.lopp[0]).toMatchObject({ datum: '2026-10-05', bana: 'Gävle', distans_m: 2140, kalla: 'omgang' });
+    expect(r.starter[0]).toMatchObject({ startnummer: 5, hast_id: 9, kon: 'sto', skor_fram: false, placering: 1, km_tid: 12.5, slutodds: 2.1, streck: 0.4 });
+    expect(r.hastar[0]).toMatchObject({ far: 'F', morfar: 'M' });
+    expect(r.tidigare[0]).toMatchObject({ hast_id: 9, datum: '2026-09-01', bana: 'Solvalla', placering: 2 });
+    const k = kompaktLoppRader({ id: '2026-09-26_6_1', date: '2026-09-26', track: 'Åby', dist: 2140, method: 'auto', starts: [[1, 'A', 1, 1, 12.1, 0, 0, 2.02]] });
+    expect(k.lopp).toMatchObject({ loppnummer: 1, kalla: 'alla lopp' });
+    expect(k.starter[0]).toMatchObject({ hast: 'A', placering: 1, galopp: 0, slutodds: 2.02 });
+    const t = hastTipsRader({ id: 't', game: 'g', type: 'V86', leg: 3, race: 7, latest: { top: [{ nr: 5, horse: 'X', p: 0.5, rank: 'A' }, { nr: 2, horse: 'Y', p: 0.2, rank: 'B' }], spik: 5, favorite: 2 }, result: { winners: [5] } });
+    expect(t.map((x: any) => [x.startnummer, x.spik, x.favorit, x.vann])).toEqual([[5, 1, 0, 1], [2, 0, 1, 0]]);
+  });
+
+  test('SQL: tabell och typ', async () => {
+    const { skapaTabellSql, gissaTyp } = await lib('databas.mjs');
+    expect(skapaTabellSql('t', [['a', 'TEXT'], ['b', 'INTEGER']], { nyckel: ['a'] })).toBe('CREATE TABLE "t" (\n  "a" TEXT,\n  "b" INTEGER,\n  PRIMARY KEY ("a")\n)');
+    expect([gissaTyp([1, 2]), gissaTyp([1, 2.5]), gissaTyp([null, 'x']), gissaTyp([]), gissaTyp([true])]).toEqual(['INTEGER', 'REAL', 'TEXT', 'TEXT', 'INTEGER']);
   });
 });

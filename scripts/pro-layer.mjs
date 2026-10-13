@@ -21,8 +21,10 @@ import { DRAW_LEAGUES, DRAW_MARGIN, pick1x2 } from './lib/pick-1x2.mjs';
 import { findUpset } from './lib/upset-pick.mjs';
 import { clubEloLookup, eloProbs, findClubElo } from './lib/elo-1x2.mjs';
 import { squadValueLookup } from './lib/squad-value.mjs';
+import { CUP_HISTORY_COMPS } from './lib/tm-cup-history.mjs';
+import { valueModelProbs } from './lib/cup-value-model.mjs';
 import { isCup } from './lib/cups.mjs';
-import { ASIA_CUPS, asiaEloLookup, cupHomeLeagues } from './lib/cup-elo.mjs';
+import { CUP_ELO, CUP_ELO_REGIONS, cupEloLookup, cupHomeLeagues, homeLeagueOf } from './lib/cup-elo.mjs';
 import { TEAM_ELO_HOME_ADV } from './lib/team-elo.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -207,7 +209,7 @@ const domestic = [...new Map([...store.matches.filter((m) => m.date >= recentSin
   .map((t) => [`${t.country}|${t.name}`, t])).values()];
 const eloOf = clubEloLookup(clubEloAll(), domestic);
 for (const t of allTips) {
-  const lookup = ASIA_CUPS.has(t.league) ? (name) => asiaElo(t.league, name) : (name) => eloOf(name, leagueCountry(t.league));
+  const lookup = CUP_ELO[t.league] ? (name) => cupElo(t.league, name) : (name) => eloOf(name, leagueCountry(t.league));
   const elo = { home: lookup(t.home), away: lookup(t.away) };
   if (elo.home || elo.away) t.teamElo = elo; else delete t.teamElo;
 }
@@ -215,8 +217,16 @@ for (const t of allTips) {
 const spelareDir = path.join(root, 'data', 'spelare');
 const valueOf = squadValueLookup(Object.fromEntries(fs.readdirSync(spelareDir).filter((f) => f.endsWith('.json') && !f.startsWith('_'))
   .map((f) => [f.slice(0, -5), readJson(path.join(spelareDir, f)).teams ?? {}])));
+// Cupmatcher: 1X2 ur bara truppvärdet (cuphistorik sedan 2016, scripts/lardomar-cup-truppvarde.mjs)
+const cupValueFile = path.join(root, 'data', 'reports', 'cup-truppvarde.json');
+const cupValueModels = fs.existsSync(cupValueFile) ? readJson(cupValueFile).model ?? {} : {};
 for (const t of allTips) {
   const sv = { home: valueOf(t.home, t.league), away: valueOf(t.away, t.league) };
+  const vm = cupValueModels[CUP_HISTORY_COMPS[t.league]?.region];
+  if (vm && sv.home?.value && sv.away?.value) {
+    const [home, draw, away] = valueModelProbs(vm, Math.log(sv.home.value / sv.away.value));
+    sv.model = { home, draw, away, region: CUP_HISTORY_COMPS[t.league].region, n: vm.n };
+  }
   if (sv.home || sv.away) t.squadValue = sv; else delete t.squadValue;
 }
 tips.proMeta = {
@@ -697,28 +707,30 @@ var clubEloCache; // eslint-disable-line no-var
 function clubEloAll() {
   return (clubEloCache ??= fs.existsSync(P.clubEloAll) ? readJson(P.clubEloAll) : { countries: {} });
 }
-// AFC-cuperna: eget Elo ur de asiatiska ligorna (clubelo.com har bara Europa), lagets hemmaliga ur trupperna (scripts/lib/cup-elo.mjs)
-// (cachen på funktionen: anropas från marknadstipsen innan modulens let-rader har körts)
-function asiaElo(league, name) {
-  const c = (asiaElo.cache ??= {
-    eloOf: asiaEloLookup(store.matches, today),
-    home: cupHomeLeagues(Object.fromEntries([...ASIA_CUPS].map((cup) => {
+// AFC- och Copa-cuperna: eget Elo ur regionens ligor (clubelo.com har bara Europa), lagets hemmaliga ur trupperna
+// (scripts/lib/cup-elo.mjs). Cachen på funktionen: anropas från marknadstipsen innan modulens let-rader har körts.
+function cupElo(league, name) {
+  const region = CUP_ELO[league];
+  if (!region) return null;
+  const c = (cupElo.cache ??= {
+    eloOf: Object.fromEntries(Object.entries(CUP_ELO_REGIONS).map(([r, cfg]) => [r, cupEloLookup(store.matches, today, cfg.start)])),
+    home: cupHomeLeagues(Object.fromEntries(Object.keys(CUP_ELO).map((cup) => {
       const f = path.join(root, 'data', 'trupper', `${cup}.json`);
       return [cup, fs.existsSync(f) ? readJson(f) : null];
     }))),
   });
-  return c.eloOf(name, c.home.get(`${league}|${name}`));
+  return c.eloOf[region](name, homeLeagueOf(c.home, league, name));
 }
 
 function dataProbs(league, home, away) {
   const model = models[league];
   const dc = model ? predictDixonColes(model, home, away, 10, { home: 1, away: 1 }) : null;
   if (dc?.knownTeams) return { home: dc.home, draw: dc.draw, away: dc.away, source: 'dc' };
-  if (ASIA_CUPS.has(league)) {
-    const [h, a] = [asiaElo(league, home), asiaElo(league, away)];
+  if (CUP_ELO[league]) {
+    const [h, a] = [cupElo(league, home), cupElo(league, away)];
     if (!h || !a) return null;
     const p = eloProbs(h.elo, a.elo, TEAM_ELO_HOME_ADV);
-    return { home: p.home, draw: p.draw, away: p.away, source: 'asiaelo', asiaElo: { home: h.elo, away: a.elo } };
+    return { home: p.home, draw: p.draw, away: p.away, source: CUP_ELO_REGIONS[CUP_ELO[league]].source, cupElo: { home: h.elo, away: a.elo } };
   }
   const elo = clubEloAll();
   const [h, a] = [findClubElo(home, elo), findClubElo(away, elo)];

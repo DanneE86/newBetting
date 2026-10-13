@@ -288,6 +288,7 @@ test('ligaregister: alla ligor har grupp, namn och kalla', async () => {
   const europa = reg.groups.find((g: any) => g.id === 'europa');
   expect(europa.leagues).toEqual(['CL', 'EL', 'ECL']);
   expect(reg.groups.find((g: any) => g.id === 'asien').leagues).toEqual(['ACL', 'ACL2']);
+  expect(reg.groups.find((g: any) => g.id === 'sydamerika').leagues).toEqual(['LIB', 'SUD']);
   expect(reg.groups.find((g: any) => g.id === 'england').leagues).toEqual(['PL', 'CH', 'EL1']);
 });
 
@@ -297,7 +298,7 @@ test('nya ligor finns i store och kommande matcher', async () => {
   for (const lg of ['BL2', 'SB', 'PT', 'GR', 'AS', 'NO', 'DK', 'HR', 'BR', 'BR2']) expect(leagues, lg).toContain(lg);
   const fixtures = readJson(path.join(root, 'data', 'upcoming-fixtures.json'));
   const fxLeagues = new Set(fixtures.map((f: any) => f.league));
-  for (const lg of ['CL', 'EL', 'ECL', 'ACL', 'ACL2', 'AS', 'BR']) expect(fxLeagues, lg).toContain(lg);
+  for (const lg of ['CL', 'EL', 'ECL', 'ACL', 'ACL2', 'LIB', 'SUD', 'AS', 'BR']) expect(fxLeagues, lg).toContain(lg);
 });
 
 test('ledger har CLV-sammanfattning', async () => {
@@ -399,7 +400,7 @@ test('antal kort: tipsen har Ö/U på en Oddset-linje med rimlig prognos', async
   expect(bad).toEqual([]);
 });
 
-test('1X2-tipset bedoms utan odds: chansen ar datans (Dixon-Coles + grundmodell, annars Klubb-Elo / eget Elo i AFC-cuperna)', async () => {
+test('1X2-tipset bedoms utan odds: chansen ar datans (Dixon-Coles + grundmodell, annars Klubb-Elo / eget Elo i AFC- och Copa-cuperna)', async () => {
   const tips = readJson(path.join(root, 'data', 'tips-latest.json'));
   const all = (tips.allCandidates ?? []).filter((t: any) => t.tips?.['1X2']?.probs?.home != null);
   test.skip(all.length === 0, 'Inga kommande matcher');
@@ -407,9 +408,10 @@ test('1X2-tipset bedoms utan odds: chansen ar datans (Dixon-Coles + grundmodell,
     const p = t.tips['1X2'].probs;
     expect(p.home + p.draw + p.away, t.match).toBeCloseTo(1, 2);
     if (t.marketOnly) {
-      // Inget eget modelltips: lagmodellen, Klubb-Elo eller (bara ACL/ACL2) eget asiatiskt Elo, aldrig oddsen
-      expect(['dc', 'clubelo', 'asiaelo'], t.match).toContain(t.dataSource);
+      // Inget eget modelltips: lagmodellen, Klubb-Elo eller eget Elo (ACL/ACL2 asiatiskt, LIB/SUD sydamerikanskt), aldrig oddsen
+      expect(['dc', 'clubelo', 'asiaelo', 'saelo'], t.match).toContain(t.dataSource);
       if (t.dataSource === 'asiaelo') expect(['ACL', 'ACL2'], t.match).toContain(t.league);
+      if (t.dataSource === 'saelo') expect(['LIB', 'SUD'], t.match).toContain(t.league);
       expect(t.note, t.match).not.toMatch(/Marknadstips/);
       continue;
     }

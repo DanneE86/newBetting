@@ -442,3 +442,27 @@ Kryssregeln ger något högre chans och fler 10–11 rätt, men nettot sjunker m
 - **Färre kryss än oddsen, i båda perioderna:** stora favoriter, låg kryss-chans enligt oddsen, J-League, League One och lag som kryssade mindre än oddsen förra säsongen. Det påverkar inte X-tipset, eftersom ett X inom 6 enheter ändå var bättre än favoriten i de fallen.
 - **Förkastat (vänder eller saknas i kontrollen):** säsongsfas, sista omgångarna, "inget att spela för", tabellavstånd, inbördes kryssandel, lagens kryssandel och målsnitt, xG-snitt, domarens kryssandel, oddsrörelse, över/under-marknaden, vila och tur. En samlad justering med alla signaler var bättre i 53 av 100 liga-säsonger, alltså brus.
 - **Data som saknas:** frånvaro före matchen finns för 4 % av matcherna (sparas från 2026-10-05) och domare för 22 %. Testa om frånvaro och domare när mer data finns.
+
+## Truppvärde i internationella cuper – hur ofta vinner det billigare laget? (2026-10-13)
+
+**Kort sagt:** ju större skillnad i truppvärde, desto mer sällan vinner det billigare laget – men oddsen vet redan om det. Truppvärdet tillför ingenting ovanpå oddsen, så det flyttar inga procent. Det visas på matchkortet i cuperna.
+
+**Data:** 6 645 matcher i CL, EL, ECL (sedan 2016/17, ECL sedan 2021/22), Copa Libertadores och Copa Sudamericana (sedan 2017), truppvärdet vid matchtillfället ur Transfermarkts trupp samma säsong. Straff- och förlängningsmatcher räknas inte. 5 385 matcher kopplade till OddsPortals snittodds. Kör: `npm run lardomar:cuptrupp` (`data/open/cup-history-tm.json`, `data/open/cup-odds-history.json`, rapport `data/reports/cup-truppvarde.json`).
+
+**Så läser du det här:** "kvot" = hur många gånger dyrare den dyra truppen är. Procenten är hur ofta det billiga laget vann på 90 minuter.
+
+| kvot | Europa: billiga vinner | (billiga hemma) | Sydamerika: billiga vinner | (billiga hemma) |
+|---|---|---|---|---|
+| 1–1,5 | 35 % | 44 % | 31 % | 42 % |
+| 1,5–2 | 26 % | 30 % | 27 % | 35 % |
+| 2–3 | 26 % | 33 % | 28 % | 38 % |
+| 3–5 | 22 % | 28 % | 23 % | 32 % |
+| 5–10 | 14 % | 20 % | 17 % | 23 % |
+| 10+ | 12 % | 19 % | 13 % | 23 % |
+
+- CL är mest förutsägbar (10+ gånger dyrare: 80 % vinst, billiga 9 %). Sudamericana minst (billiga vinner 28 % även vid 3–5 gånger).
+- Sydamerika: hemmaplan väger tyngre än i Europa (det billiga laget hemma vinner nästan en av fyra även vid 10+ gånger) – höjd och resor.
+- **Mot oddsen:** oddsens chans för det billiga laget ligger inom ±4 enheter av utfallet i varje grupp, utan riktning. Spel på det billiga laget till snittodds: −51 % till +10 % per grupp, inget stabilt. Justering av oddsen med truppvärdet (vikt vald på äldre säsonger, prövad på de två senaste): Europa logloss 0,9114 → 0,9121, Sydamerika 0,9405 → 0,9406 – ingen förbättring. Ingen skrällsignal.
+- **Utan odds** (bara truppvärde + hemmaplan) är modellen klart bättre än bara hemmafördel (kontroll: Europa logloss 1,021 → 0,946, träff 51 → 60 %; Sydamerika 1,060 → 1,006), men sämre än oddsen (0,91/0,94).
+
+**Beslut:** inget förs in i motorerna (slår inte oddsen). Truppvärdesmodellens 1X2 visas under truppvärdesstapeln för cupmatcher ("Bara truppvärdet, ur cuphistoriken"). Kan användas som datakälla där Elo saknas (t.ex. uruguayanska/chilenska lag i Copa-cuperna, Qatar/UAE i ACL) om användaren vill – då blir det värdebedömningar mot oddsen med en modell som är sämre än oddsen.

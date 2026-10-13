@@ -1,0 +1,685 @@
+{
+ "updatedAt": "2026-10-13T18:52:59.423Z",
+ "league": "LIB",
+ "fotmobId": 45,
+ "name": "Copa Libertadores",
+ "country": "INT",
+ "table": [
+  {
+   "rank": 1,
+   "team": "Flamengo",
+   "fotmobName": "Flamengo",
+   "fotmobId": 9770,
+   "group": "Group A",
+   "played": 6,
+   "won": 5,
+   "drawn": 1,
+   "lost": 0,
+   "goals": "14-2",
+   "gd": 12,
+   "pts": 16
+  },
+  {
+   "rank": 2,
+   "team": "Estudiantes",
+   "fotmobName": "Estudiantes",
+   "fotmobId": 10094,
+   "group": "Group A",
+   "played": 6,
+   "won": 2,
+   "drawn": 3,
+   "lost": 1,
+   "goals": "6-5",
+   "gd": 1,
+   "pts": 9
+  },
+  {
+   "rank": 3,
+   "team": "Independiente Medellín",
+   "fotmobName": "Independiente Medellín",
+   "fotmobId": 2528,
+   "group": "Group A",
+   "played": 6,
+   "won": 2,
+   "drawn": 1,
+   "lost": 3,
+   "goals": "6-11",
+   "gd": -5,
+   "pts": 7
+  },
+  {
+   "rank": 4,
+   "team": "Cusco FC",
+   "fotmobName": "Cusco FC",
+   "fotmobId": 305171,
+   "group": "Group A",
+   "played": 6,
+   "won": 0,
+   "drawn": 1,
+   "lost": 5,
+   "goals": "4-12",
+   "gd": -8,
+   "pts": 1
+  },
+  {
+   "rank": 1,
+   "team": "Coquimbo Unido",
+   "fotmobName": "Coquimbo Unido",
+   "fotmobId": 4062,
+   "group": "Group B",
+   "played": 6,
+   "won": 3,
+   "drawn": 1,
+   "lost": 2,
+   "goals": "8-6",
+   "gd": 2,
+   "pts": 10
+  },
+  {
+   "rank": 2,
+   "team": "Tolima",
+   "fotmobName": "Tolima",
+   "fotmobId": 1894,
+   "group": "Group B",
+   "played": 6,
+   "won": 2,
+   "drawn": 2,
+   "lost": 2,
+   "goals": "7-6",
+   "gd": 1,
+   "pts": 8
+  },
+  {
+   "rank": 3,
+   "team": "Nacional",
+   "fotmobName": "Nacional",
+   "fotmobId": 8304,
+   "group": "Group B",
+   "played": 6,
+   "won": 2,
+   "drawn": 2,
+   "lost": 2,
+   "goals": "7-9",
+   "gd": -2,
+   "pts": 8
+  },
+  {
+   "rank": 4,
+   "team": "Universitario de Deportes",
+   "fotmobName": "Universitario de Deportes",
+   "fotmobId": 4409,
+   "group": "Group B",
+   "played": 6,
+   "won": 1,
+   "drawn": 3,
+   "lost": 2,
+   "goals": "5-6",
+   "gd": -1,
+   "pts": 6
+  },
+  {
+   "rank": 1,
+   "team": "Independiente Rivadavia",
+   "fotmobName": "Independiente Rivadavia",
+   "fotmobId": 161729,
+   "group": "Group C",
+   "played": 6,
+   "won": 5,
+   "drawn": 1,
+   "lost": 0,
+   "goals": "15-6",
+   "gd": 9,
+   "pts": 16
+  },
+  {
+   "rank": 2,
+   "team": "Fluminense",
+   "fotmobName": "Fluminense",
+   "fotmobId": 9863,
+   "group": "Group C",
+   "played": 6,
+   "won": 2,
+   "drawn": 2,
+   "lost": 2,
+   "goals": "7-7",
+   "gd": 0,
+   "pts": 8
+  },
+  {
+   "rank": 3,
+   "team": "Bolívar",
+   "fotmobName": "Bolívar",
+   "fotmobId": 5983,
+   "group": "Group C",
+   "played": 6,
+   "won": 1,
+   "drawn": 2,
+   "lost": 3,
+   "goals": "6-8",
+   "gd": -2,
+   "pts": 5
+  },
+  {
+   "rank": 4,
+   "team": "Deportivo La Guaira",
+   "fotmobName": "Deportivo La Guaira",
+   "fotmobId": 176496,
+   "group": "Group C",
+   "played": 6,
+   "won": 0,
+   "drawn": 3,
+   "lost": 3,
+   "goals": "6-13",
+   "gd": -7,
+   "pts": 3
+  },
+  {
+   "rank": 1,
+   "team": "Universidad Católica",
+   "fotmobName": "Universidad Católica",
+   "fotmobId": 6458,
+   "group": "Group D",
+   "played": 6,
+   "won": 4,
+   "drawn": 1,
+   "lost": 1,
+   "goals": "8-4",
+   "gd": 4,
+   "pts": 13
+  },
+  {
+   "rank": 2,
+   "team": "Cruzeiro",
+   "fotmobName": "Cruzeiro",
+   "fotmobId": 9781,
+   "group": "Group D",
+   "played": 6,
+   "won": 3,
+   "drawn": 2,
+   "lost": 1,
+   "goals": "8-3",
+   "gd": 5,
+   "pts": 11
+  },
+  {
+   "rank": 3,
+   "team": "Boca Juniors",
+   "fotmobName": "Boca Juniors",
+   "fotmobId": 10077,
+   "group": "Group D",
+   "played": 6,
+   "won": 2,
+   "drawn": 1,
+   "lost": 3,
+   "goals": "6-5",
+   "gd": 1,
+   "pts": 7
+  },
+  {
+   "rank": 4,
+   "team": "Barcelona SC",
+   "fotmobName": "Barcelona SC",
+   "fotmobId": 6453,
+   "group": "Group D",
+   "played": 6,
+   "won": 1,
+   "drawn": 0,
+   "lost": 5,
+   "goals": "2-12",
+   "gd": -10,
+   "pts": 3
+  },
+  {
+   "rank": 1,
+   "team": "Corinthians",
+   "fotmobName": "Corinthians",
+   "fotmobId": 9808,
+   "group": "Group E",
+   "played": 6,
+   "won": 3,
+   "drawn": 2,
+   "lost": 1,
+   "goals": "8-4",
+   "gd": 4,
+   "pts": 11
+  },
+  {
+   "rank": 2,
+   "team": "Club Atlético Platense",
+   "fotmobName": "Club Atlético Platense",
+   "fotmobId": 10089,
+   "group": "Group E",
+   "played": 6,
+   "won": 3,
+   "drawn": 1,
+   "lost": 2,
+   "goals": "8-7",
+   "gd": 1,
+   "pts": 10
+  },
+  {
+   "rank": 3,
+   "team": "Santa Fe",
+   "fotmobName": "Santa Fe",
+   "fotmobId": 7818,
+   "group": "Group E",
+   "played": 6,
+   "won": 2,
+   "drawn": 2,
+   "lost": 2,
+   "goals": "6-7",
+   "gd": -1,
+   "pts": 8
+  },
+  {
+   "rank": 4,
+   "team": "Club Atletico Peñarol",
+   "fotmobName": "Club Atletico Peñarol",
+   "fotmobId": 8450,
+   "group": "Group E",
+   "played": 6,
+   "won": 0,
+   "drawn": 3,
+   "lost": 3,
+   "goals": "4-8",
+   "gd": -4,
+   "pts": 3
+  },
+  {
+   "rank": 1,
+   "team": "Cerro Porteño",
+   "fotmobName": "Cerro Porteño",
+   "fotmobId": 6295,
+   "group": "Group F",
+   "played": 6,
+   "won": 4,
+   "drawn": 1,
+   "lost": 1,
+   "goals": "6-2",
+   "gd": 4,
+   "pts": 13
+  },
+  {
+   "rank": 2,
+   "team": "Palmeiras",
+   "fotmobName": "Palmeiras",
+   "fotmobId": 10283,
+   "group": "Group F",
+   "played": 6,
+   "won": 3,
+   "drawn": 2,
+   "lost": 1,
+   "goals": "10-5",
+   "gd": 5,
+   "pts": 11
+  },
+  {
+   "rank": 3,
+   "team": "Sporting Cristal",
+   "fotmobName": "Sporting Cristal",
+   "fotmobId": 1848,
+   "group": "Group F",
+   "played": 6,
+   "won": 2,
+   "drawn": 0,
+   "lost": 4,
+   "goals": "6-9",
+   "gd": -3,
+   "pts": 6
+  },
+  {
+   "rank": 4,
+   "team": "Junior FC",
+   "fotmobName": "Junior FC",
+   "fotmobId": 2254,
+   "group": "Group F",
+   "played": 6,
+   "won": 1,
+   "drawn": 1,
+   "lost": 4,
+   "goals": "5-11",
+   "gd": -6,
+   "pts": 4
+  },
+  {
+   "rank": 1,
+   "team": "LDU de Quito",
+   "fotmobName": "LDU de Quito",
+   "fotmobId": 6721,
+   "group": "Group G",
+   "played": 6,
+   "won": 4,
+   "drawn": 0,
+   "lost": 2,
+   "goals": "8-5",
+   "gd": 3,
+   "pts": 12
+  },
+  {
+   "rank": 2,
+   "team": "Mirassol",
+   "fotmobName": "Mirassol",
+   "fotmobId": 163782,
+   "group": "Group G",
+   "played": 6,
+   "won": 4,
+   "drawn": 0,
+   "lost": 2,
+   "goals": "7-4",
+   "gd": 3,
+   "pts": 12
+  },
+  {
+   "rank": 3,
+   "team": "Lanús",
+   "fotmobName": "Lanús",
+   "fotmobId": 10082,
+   "group": "Group G",
+   "played": 6,
+   "won": 3,
+   "drawn": 0,
+   "lost": 3,
+   "goals": "3-7",
+   "gd": -4,
+   "pts": 9
+  },
+  {
+   "rank": 4,
+   "team": "Always Ready",
+   "fotmobName": "Always Ready",
+   "fotmobId": 805913,
+   "group": "Group G",
+   "played": 6,
+   "won": 1,
+   "drawn": 0,
+   "lost": 5,
+   "goals": "7-9",
+   "gd": -2,
+   "pts": 3
+  },
+  {
+   "rank": 1,
+   "team": "Independiente del Valle",
+   "fotmobName": "Independiente del Valle",
+   "fotmobId": 192875,
+   "group": "Group H",
+   "played": 6,
+   "won": 4,
+   "drawn": 1,
+   "lost": 1,
+   "goals": "11-6",
+   "gd": 5,
+   "pts": 13
+  },
+  {
+   "rank": 2,
+   "team": "Rosario Central",
+   "fotmobName": "Rosario Central",
+   "fotmobId": 10084,
+   "group": "Group H",
+   "played": 6,
+   "won": 4,
+   "drawn": 1,
+   "lost": 1,
+   "goals": "9-1",
+   "gd": 8,
+   "pts": 13
+  },
+  {
+   "rank": 3,
+   "team": "Universidad Central",
+   "fotmobName": "Universidad Central",
+   "fotmobId": 188213,
+   "group": "Group H",
+   "played": 6,
+   "won": 3,
+   "drawn": 0,
+   "lost": 3,
+   "goals": "7-11",
+   "gd": -4,
+   "pts": 9
+  },
+  {
+   "rank": 4,
+   "team": "Libertad",
+   "fotmobName": "Libertad",
+   "fotmobId": 6620,
+   "group": "Group H",
+   "played": 6,
+   "won": 0,
+   "drawn": 0,
+   "lost": 6,
+   "goals": "4-13",
+   "gd": -9,
+   "pts": 0
+  }
+ ],
+ "tableHistory": {
+  "2026-10-13": [
+   [
+    "Flamengo",
+    1,
+    6,
+    16,
+    12
+   ],
+   [
+    "Estudiantes",
+    2,
+    6,
+    9,
+    1
+   ],
+   [
+    "Independiente Medellín",
+    3,
+    6,
+    7,
+    -5
+   ],
+   [
+    "Cusco FC",
+    4,
+    6,
+    1,
+    -8
+   ],
+   [
+    "Coquimbo Unido",
+    1,
+    6,
+    10,
+    2
+   ],
+   [
+    "Tolima",
+    2,
+    6,
+    8,
+    1
+   ],
+   [
+    "Nacional",
+    3,
+    6,
+    8,
+    -2
+   ],
+   [
+    "Universitario de Deportes",
+    4,
+    6,
+    6,
+    -1
+   ],
+   [
+    "Independiente Rivadavia",
+    1,
+    6,
+    16,
+    9
+   ],
+   [
+    "Fluminense",
+    2,
+    6,
+    8,
+    0
+   ],
+   [
+    "Bolívar",
+    3,
+    6,
+    5,
+    -2
+   ],
+   [
+    "Deportivo La Guaira",
+    4,
+    6,
+    3,
+    -7
+   ],
+   [
+    "Universidad Católica",
+    1,
+    6,
+    13,
+    4
+   ],
+   [
+    "Cruzeiro",
+    2,
+    6,
+    11,
+    5
+   ],
+   [
+    "Boca Juniors",
+    3,
+    6,
+    7,
+    1
+   ],
+   [
+    "Barcelona SC",
+    4,
+    6,
+    3,
+    -10
+   ],
+   [
+    "Corinthians",
+    1,
+    6,
+    11,
+    4
+   ],
+   [
+    "Club Atlético Platense",
+    2,
+    6,
+    10,
+    1
+   ],
+   [
+    "Santa Fe",
+    3,
+    6,
+    8,
+    -1
+   ],
+   [
+    "Club Atletico Peñarol",
+    4,
+    6,
+    3,
+    -4
+   ],
+   [
+    "Cerro Porteño",
+    1,
+    6,
+    13,
+    4
+   ],
+   [
+    "Palmeiras",
+    2,
+    6,
+    11,
+    5
+   ],
+   [
+    "Sporting Cristal",
+    3,
+    6,
+    6,
+    -3
+   ],
+   [
+    "Junior FC",
+    4,
+    6,
+    4,
+    -6
+   ],
+   [
+    "LDU de Quito",
+    1,
+    6,
+    12,
+    3
+   ],
+   [
+    "Mirassol",
+    2,
+    6,
+    12,
+    3
+   ],
+   [
+    "Lanús",
+    3,
+    6,
+    9,
+    -4
+   ],
+   [
+    "Always Ready",
+    4,
+    6,
+    3,
+    -2
+   ],
+   [
+    "Independiente del Valle",
+    1,
+    6,
+    13,
+    5
+   ],
+   [
+    "Rosario Central",
+    2,
+    6,
+    13,
+    8
+   ],
+   [
+    "Universidad Central",
+    3,
+    6,
+    9,
+    -4
+   ],
+   [
+    "Libertad",
+    4,
+    6,
+    0,
+    -9
+   ]
+  ]
+ }
+}

@@ -82,7 +82,7 @@ const upsetChance = (tip) => tip.tips?.["1X2"]?.probs?.[{ 1: "home", 2: "away" }
 
 function noteLines(tip) {
   const parts = [];
-  if (tip.marketOnly) parts.push(`<span class="market-only">1X2-chansen ur ${tip.dataSource === "clubelo" ? "Klubb-Elo (clubelo.com)" : tip.dataSource === "asiaelo" ? "eget Elo ur J1, K League, Saudi och A-League" : "lagmodellen"} – inget eget modelltips för matchen</span>`);
+  if (tip.marketOnly) parts.push(`<span class="market-only">1X2-chansen ur ${tip.dataSource === "clubelo" ? "Klubb-Elo (clubelo.com)" : tip.dataSource === "asiaelo" ? "eget Elo ur J1, K League, Saudi och A-League" : tip.dataSource === "saelo" ? "eget Elo ur Brasileirão, Argentina och Colombia" : "lagmodellen"} – inget eget modelltips för matchen</span>`);
   if (tip.marketLed) parts.push(`<span class="market-only">${escapeHtml((tip.marketLedNote || "Ö/U: marknadens chans styr – 1X2 är bara data").replace(/\b(pinnacle|betfair)\b/g, capFirst))}</span>`);
   if (tip.upset) {
     const u = tip.upset;
@@ -1150,10 +1150,11 @@ const ELO_LAND = {
   NOR: "Norge", POL: "Polen", DEN: "Danmark", POR: "Portugal", GRE: "Grekland", CRO: "Kroatien", CZE: "Tjeckien",
   BEL: "Belgien", SCO: "Skottland",
 };
-// Eget Elo (AFC-cuperna): ligan laget rankas i
-const ELO_LEAGUE = { JP1: "J1 League", KR: "K League 1", SAU: "Saudi Pro League", AUS: "A-League" };
+// Eget Elo (AFC- och Copa-cuperna): ligan laget rankas i
+const ELO_LEAGUE = { JP1: "J1 League", KR: "K League 1", SAU: "Saudi Pro League", AUS: "A-League",
+  BR: "Brasileirão Série A", BR2: "Brasileirão Série B", AR: "Liga Profesional", COL: "Primera A" };
 
-/** Klubb-Elo bredvid lagnamnet (clubelo.com, eget Elo i AFC-cuperna), förklaras under ⓘ Vad är Elo? Starkaste laget grönt med +skillnad. */
+/** Klubb-Elo bredvid lagnamnet (clubelo.com, eget Elo i AFC- och Copa-cuperna), förklaras under ⓘ Vad är Elo? Starkaste laget grönt med +skillnad. */
 function eloTag(e, other) {
   if (!e?.elo) return "";
   const land = ELO_LAND[e.country] || e.country;
@@ -1182,12 +1183,17 @@ function squadBar(tip) {
   const say = ratio < 1.15 ? "ungefär lika dyra trupper"
     : `${escapeHtml(rich)}s trupp är värd ${ratio < 10 ? ratio.toLocaleString("sv-SE", { maximumFractionDigits: 1 }) : Math.round(ratio)} gånger så mycket`;
   const side = (v, o) => (ratio >= 1.15 && v > o ? " is-rich" : "");
+  // Cupmatcher: vad truppvärdet ensamt har gett i cuphistoriken (scripts/lardomar-cup-truppvarde.mjs)
+  const m = tip.squadValue.model;
+  const pc = (p) => `${Math.round(100 * p)} %`;
+  const hist = m ? `<span class="sq-say sq-hist" title="Ur ${m.n.toLocaleString("sv-SE")} cupmatcher i ${m.region === "Europa" ? "CL, EL och ECL" : "Libertadores och Sudamericana"} sedan 2016, med truppvärdet vid matchtillfället (Transfermarkt). Bara truppvärde och hemmaplan – inte form, skador eller odds.">Bara truppvärdet, ur cuphistoriken: 1 ${pc(m.home)} · X ${pc(m.draw)} · 2 ${pc(m.away)}</span>` : "";
   return `<div class="squad-bar" title="Truppvärde = summan av spelarnas marknadsvärde (FotMob/Transfermarkt). Säger hur dyra spelarna är, inte hur bra laget spelar ihop.">
         <span class="sq-k">Truppvärde</span>
         <span class="sq-v sq-home${side(h, a)}">${fmtSquadValue(h)}</span>
         <span class="sq-track" aria-hidden="true"><span class="sq-fill${side(h, a)}" style="width:${share}%"></span><span class="sq-fill sq-away${side(a, h)}" style="width:${100 - share}%"></span></span>
         <span class="sq-v sq-away${side(a, h)}">${fmtSquadValue(a)}</span>
         <span class="sq-say">${say}</span>
+        ${hist}
       </div>`;
 }
 
@@ -1895,7 +1901,7 @@ async function toggleMatchup(btn, { reload = false } = {}) {
 // Ligor som kan ha domardata; vilka som faktiskt har det hämtas från /api/refleagues (refAvailable)
 const REF_LEAGUES = new Set(["PL", "CH", "EL1", "EL2", "BL", "BL2", "LL", "LL2", "SA", "SB", "L1", "ED", "PT", "GR", "AS", "SE2",
   "NO", "NO2", "DK", "EK", "JP1", "MLS", "MX", "BR", "BR2", "AR", "COL", "CZ", "HR", "CL", "EL", "ECL",
-  "BE", "SC", "SAU", "AUS", "KR", "CAN", "ACL", "ACL2"]);
+  "BE", "SC", "SAU", "AUS", "KR", "CAN", "ACL", "ACL2", "LIB", "SUD"]);
 let refAvailable = null;
 const hasRefData = (l) => (refAvailable ? refAvailable.has(l) : REF_LEAGUES.has(l));
 async function loadRefAvailable() {

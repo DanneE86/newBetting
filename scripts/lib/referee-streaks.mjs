@@ -13,7 +13,7 @@ export const ENGLISH_LEAGUES = new Set(Object.values(REF_DIVISIONS));
 // Superettan: FotMob har ingen domare dar -> superettan.se (scripts/fetch-referees-allsvenskan.mjs). Div 1 saknas.
 export const REF_LEAGUES = new Set([...ENGLISH_LEAGUES, 'BL', 'BL2', 'LL', 'LL2', 'SA', 'SB', 'L1', 'ED', 'PT', 'GR', 'AS', 'SE2',
   'NO', 'NO2', 'DK', 'EK', 'JP1', 'MLS', 'MX', 'BR', 'BR2', 'AR', 'COL', 'CZ', 'HR', 'CL', 'EL', 'ECL',
-  'BE', 'SC', 'SAU', 'AUS', 'KR', 'CAN', 'ACL', 'ACL2']);
+  'BE', 'SC', 'SAU', 'AUS', 'KR', 'CAN', 'ACL', 'ACL2', 'LIB', 'SUD']);
 // Officiella domarkallor (se applyOfficialReferees)
 const OFFICIAL_FILES = ['data/open/referee_allsvenskan.json', 'data/open/referee_official.json'];
 // Ettan Norra och Sodra ar samma FotMob-liga och delar domare -> en nyckel
