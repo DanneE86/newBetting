@@ -8211,7 +8211,7 @@
           "country": "NOR"
         },
         "away": {
-          "elo": 1417,
+          "elo": 1418,
           "rank": 14,
           "country": "NOR"
         }
@@ -9868,7 +9868,7 @@
       "teamElo": {
         "home": {
           "elo": 1617,
-          "rank": 23,
+          "rank": 24,
           "country": "GER"
         },
         "away": {
@@ -10262,12 +10262,12 @@
       },
       "teamElo": {
         "home": {
-          "elo": 1707,
+          "elo": 1708,
           "rank": 2,
           "country": "GRE"
         },
         "away": {
-          "elo": 1483,
+          "elo": 1484,
           "rank": 7,
           "country": "GRE"
         }
@@ -10930,7 +10930,7 @@
       },
       "teamElo": {
         "home": {
-          "elo": 1417,
+          "elo": 1416,
           "rank": 15,
           "country": "NOR"
         },
@@ -11675,12 +11675,12 @@
       },
       "teamElo": {
         "home": {
-          "elo": 1697,
+          "elo": 1699,
           "rank": 11,
           "country": "ITA"
         },
         "away": {
-          "elo": 1823,
+          "elo": 1822,
           "rank": 5,
           "country": "ITA"
         }
@@ -12651,12 +12651,12 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1545,
+          "elo": 1570,
           "rank": 5,
           "country": "GRE"
         },
         "away": {
-          "elo": 1457,
+          "elo": 1452,
           "rank": 9,
           "country": "GRE"
         }
@@ -13111,12 +13111,12 @@
       },
       "teamElo": {
         "home": {
-          "elo": 1854,
+          "elo": 1856,
           "rank": 2,
           "country": "POR"
         },
         "away": {
-          "elo": 1570,
+          "elo": 1568,
           "rank": 9,
           "country": "POR"
         }
@@ -13642,13 +13642,13 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1653,
-          "rank": 19,
+          "elo": 1659,
+          "rank": 17,
           "country": "GER"
         },
         "away": {
-          "elo": 1672,
-          "rank": 15,
+          "elo": 1667,
+          "rank": 16,
           "country": "GER"
         }
       },
@@ -15609,7 +15609,7 @@
           "country": "NOR"
         },
         "away": {
-          "elo": 1500,
+          "elo": 1501,
           "rank": 8,
           "country": "NOR"
         }
@@ -16187,12 +16187,12 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1457,
+          "elo": 1452,
           "rank": 9,
           "country": "GRE"
         },
         "away": {
-          "elo": 1371,
+          "elo": 1369,
           "rank": 15,
           "country": "GRE"
         }
@@ -17314,12 +17314,12 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1557,
+          "elo": 1558,
           "rank": 6,
           "country": "NOR"
         },
         "away": {
-          "elo": 1385,
+          "elo": 1375,
           "rank": 18,
           "country": "NOR"
         }
@@ -18399,8 +18399,8 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1655,
-          "rank": 18,
+          "elo": 1658,
+          "rank": 19,
           "country": "GER"
         },
         "away": null
@@ -21659,11 +21659,11 @@
       "tips": {
         "1X2": {
           "pick": "1",
-          "confidence": 0.452,
+          "confidence": 0.427,
           "probs": {
-            "home": 0.452,
-            "draw": 0.284,
-            "away": 0.264
+            "home": 0.427,
+            "draw": 0.287,
+            "away": 0.286
           }
         },
         "BTTS": {
@@ -21700,7 +21700,7 @@
           "confidence": 0.578
         }
       },
-      "tipScore": 0.452,
+      "tipScore": 0.427,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
@@ -21716,16 +21716,16 @@
         "kickoffUtc": "2026-10-15T19:00:00Z",
         "dc": null,
         "blended": {
-          "home": 0.452,
-          "draw": 0.284,
-          "away": 0.264,
+          "home": 0.427,
+          "draw": 0.287,
+          "away": 0.286,
           "over25": null,
           "btts": null
         },
         "data": {
-          "home": 0.452,
-          "draw": 0.284,
-          "away": 0.264,
+          "home": 0.427,
+          "draw": 0.287,
+          "away": 0.286,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -21760,7 +21760,7 @@
             "strategy": "consensusAtBestPrice",
             "fairSource": "pinnacle",
             "p": 0.2627,
-            "modelP": 0.264,
+            "modelP": 0.286,
             "ev": 0.0508,
             "stakeSek": 500
           }
@@ -21943,11 +21943,11 @@
       "tips": {
         "1X2": {
           "pick": "1",
-          "confidence": 0.387,
+          "confidence": 0.379,
           "probs": {
-            "home": 0.387,
+            "home": 0.379,
             "draw": 0.29,
-            "away": 0.323
+            "away": 0.331
           }
         },
         "BTTS": {
@@ -21984,12 +21984,12 @@
           "confidence": 0.752
         }
       },
-      "tipScore": 0.387,
+      "tipScore": 0.379,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
-        "home": 1796.2,
-        "away": 1838.7
+        "home": 1796.4,
+        "away": 1838.9
       },
       "marketSource": "Pinnacle",
       "note": "1X2 ur Klubb-Elo - inget eget modelltips for matchen, oddsen bara vardefacit",
@@ -22000,16 +22000,16 @@
         "kickoffUtc": "2026-10-13T19:00:00Z",
         "dc": null,
         "blended": {
-          "home": 0.387,
+          "home": 0.379,
           "draw": 0.29,
-          "away": 0.323,
+          "away": 0.331,
           "over25": null,
           "btts": null
         },
         "data": {
-          "home": 0.387,
+          "home": 0.379,
           "draw": 0.29,
-          "away": 0.323,
+          "away": 0.331,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -22044,7 +22044,7 @@
             "strategy": "consensusAtBestPrice",
             "fairSource": "pinnacle",
             "p": 0.3083,
-            "modelP": 0.323,
+            "modelP": 0.331,
             "ev": 0.0482,
             "stakeSek": 500
           }
@@ -22227,11 +22227,11 @@
       "tips": {
         "1X2": {
           "pick": "1",
-          "confidence": 0.508,
+          "confidence": 0.47,
           "probs": {
-            "home": 0.508,
-            "draw": 0.274,
-            "away": 0.218
+            "home": 0.47,
+            "draw": 0.281,
+            "away": 0.249
           }
         },
         "BTTS": {
@@ -22268,11 +22268,11 @@
           "confidence": 0.803
         }
       },
-      "tipScore": 0.508,
+      "tipScore": 0.47,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
-        "home": 1825.4,
+        "home": 1825.5,
         "away": 1786.7
       },
       "marketSource": "Pinnacle",
@@ -22284,16 +22284,16 @@
         "kickoffUtc": "2026-10-13T19:00:00Z",
         "dc": null,
         "blended": {
-          "home": 0.508,
-          "draw": 0.274,
-          "away": 0.218,
+          "home": 0.47,
+          "draw": 0.281,
+          "away": 0.249,
           "over25": null,
           "btts": null
         },
         "data": {
-          "home": 0.508,
-          "draw": 0.274,
-          "away": 0.218,
+          "home": 0.47,
+          "draw": 0.281,
+          "away": 0.249,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -22328,7 +22328,7 @@
             "strategy": "consensusAtBestPrice",
             "fairSource": "pinnacle",
             "p": 0.2762,
-            "modelP": 0.218,
+            "modelP": 0.249,
             "ev": 0.0497,
             "stakeSek": 500
           }
@@ -22479,7 +22479,7 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1825,
+          "elo": 1826,
           "rank": 4,
           "country": "GER"
         },
@@ -22511,11 +22511,11 @@
       "tips": {
         "1X2": {
           "pick": "2",
-          "confidence": 0.38,
+          "confidence": 0.374,
           "probs": {
-            "home": 0.33,
+            "home": 0.336,
             "draw": 0.29,
-            "away": 0.38
+            "away": 0.374
           }
         },
         "BTTS": {
@@ -22529,7 +22529,7 @@
           "pOver": null
         }
       },
-      "tipScore": 0.38,
+      "tipScore": 0.374,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
@@ -22545,16 +22545,16 @@
         "kickoffUtc": "2026-10-14T16:45:00Z",
         "dc": null,
         "blended": {
-          "home": 0.33,
+          "home": 0.336,
           "draw": 0.29,
-          "away": 0.38,
+          "away": 0.374,
           "over25": null,
           "btts": null
         },
         "data": {
-          "home": 0.33,
+          "home": 0.336,
           "draw": 0.29,
-          "away": 0.38,
+          "away": 0.374,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -22589,7 +22589,7 @@
             "strategy": "consensusAtBestPrice",
             "fairSource": "pinnacle",
             "p": 0.2722,
-            "modelP": 0.33,
+            "modelP": 0.336,
             "ev": 0.0479,
             "stakeSek": 500
           }
@@ -22772,11 +22772,11 @@
       "tips": {
         "1X2": {
           "pick": "2",
-          "confidence": 0.431,
+          "confidence": 0.412,
           "probs": {
-            "home": 0.283,
-            "draw": 0.286,
-            "away": 0.431
+            "home": 0.3,
+            "draw": 0.288,
+            "away": 0.412
           }
         },
         "BTTS": {
@@ -22790,12 +22790,12 @@
           "pOver": null
         }
       },
-      "tipScore": 0.431,
+      "tipScore": 0.412,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
         "home": 1857.1,
-        "away": 1974.1
+        "away": 1974.5
       },
       "marketSource": "Pinnacle",
       "note": "1X2 ur Klubb-Elo - inget eget modelltips for matchen, oddsen bara vardefacit",
@@ -22806,16 +22806,16 @@
         "kickoffUtc": "2026-10-14T19:00:00Z",
         "dc": null,
         "blended": {
-          "home": 0.283,
-          "draw": 0.286,
-          "away": 0.431,
+          "home": 0.3,
+          "draw": 0.288,
+          "away": 0.412,
           "over25": null,
           "btts": null
         },
         "data": {
-          "home": 0.283,
-          "draw": 0.286,
-          "away": 0.431,
+          "home": 0.3,
+          "draw": 0.288,
+          "away": 0.412,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -22850,7 +22850,7 @@
             "strategy": "consensusAtBestPrice",
             "fairSource": "pinnacle",
             "p": 0.2599,
-            "modelP": 0.283,
+            "modelP": 0.3,
             "ev": 0.0657,
             "stakeSek": 500
           }
@@ -23013,7 +23013,7 @@
           "country": "ITA"
         },
         "away": {
-          "elo": 1974,
+          "elo": 1975,
           "rank": 2,
           "country": "ESP"
         }
@@ -23040,11 +23040,11 @@
       "tips": {
         "1X2": {
           "pick": "1",
-          "confidence": 0.405,
+          "confidence": 0.392,
           "probs": {
-            "home": 0.405,
-            "draw": 0.289,
-            "away": 0.306
+            "home": 0.392,
+            "draw": 0.29,
+            "away": 0.318
           }
         },
         "BTTS": {
@@ -23058,12 +23058,12 @@
           "pOver": 0.5
         }
       },
-      "tipScore": 0.453,
+      "tipScore": 0.446,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
         "home": 1694.2,
-        "away": 1724.7
+        "away": 1725
       },
       "marketSource": "Pinnacle",
       "note": "1X2 ur Klubb-Elo - inget eget modelltips for matchen, oddsen bara vardefacit",
@@ -23074,16 +23074,16 @@
         "kickoffUtc": "2026-10-15T19:00:00Z",
         "dc": null,
         "blended": {
-          "home": 0.405,
-          "draw": 0.289,
-          "away": 0.306,
+          "home": 0.392,
+          "draw": 0.29,
+          "away": 0.318,
           "over25": 0.5,
           "btts": null
         },
         "data": {
-          "home": 0.405,
-          "draw": 0.289,
-          "away": 0.306,
+          "home": 0.392,
+          "draw": 0.29,
+          "away": 0.318,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -23117,7 +23117,7 @@
             "strategy": "consensusAtBestPrice",
             "fairSource": "pinnacle",
             "p": 0.2997,
-            "modelP": 0.289,
+            "modelP": 0.29,
             "ev": 0.079,
             "stakeSek": 500
           }
@@ -23605,7 +23605,7 @@
           "country": "ITA"
         },
         "away": {
-          "elo": 1697,
+          "elo": 1699,
           "rank": 11,
           "country": "ITA"
         }
@@ -24265,7 +24265,7 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1753,
+          "elo": 1757,
           "rank": 9,
           "country": "ITA"
         },
@@ -24593,7 +24593,7 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1823,
+          "elo": 1822,
           "rank": 5,
           "country": "ITA"
         },
@@ -24925,12 +24925,12 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1642,
+          "elo": 1638,
           "rank": 20,
           "country": "ITA"
         },
         "away": {
-          "elo": 1678,
+          "elo": 1681,
           "rank": 15,
           "country": "ITA"
         }
@@ -25589,8 +25589,8 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1670,
-          "rank": 16,
+          "elo": 1669,
+          "rank": 15,
           "country": "GER"
         },
         "away": {
@@ -26254,7 +26254,7 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1649,
+          "elo": 1646,
           "rank": 20,
           "country": "GER"
         },
@@ -26923,7 +26923,7 @@
           "country": "FRA"
         },
         "away": {
-          "elo": 1754,
+          "elo": 1760,
           "rank": 7,
           "country": "FRA"
         }
@@ -28908,11 +28908,11 @@
       "teamElo": {
         "home": {
           "elo": 1493,
-          "rank": 17,
+          "rank": 16,
           "country": "POR"
         },
         "away": {
-          "elo": 1841,
+          "elo": 1842,
           "rank": 3,
           "country": "POR"
         }
@@ -29370,7 +29370,7 @@
           "country": "POR"
         },
         "away": {
-          "elo": 1578,
+          "elo": 1579,
           "rank": 6,
           "country": "POR"
         }
@@ -30999,12 +30999,12 @@
       },
       "teamElo": {
         "home": {
-          "elo": 1408,
-          "rank": 12,
+          "elo": 1409,
+          "rank": 11,
           "country": "GRE"
         },
         "away": {
-          "elo": 1433,
+          "elo": 1434,
           "rank": 10,
           "country": "GRE"
         }
@@ -32118,7 +32118,7 @@
           "country": "FRA"
         },
         "away": {
-          "elo": 1612,
+          "elo": 1611,
           "rank": 18,
           "country": "FRA"
         }
@@ -32956,12 +32956,12 @@
       },
       "teamElo": {
         "home": {
-          "elo": 1707,
+          "elo": 1708,
           "rank": 2,
           "country": "GRE"
         },
         "away": {
-          "elo": 1483,
+          "elo": 1484,
           "rank": 7,
           "country": "GRE"
         }
@@ -36866,7 +36866,7 @@
           "country": "NOR"
         },
         "away": {
-          "elo": 1417,
+          "elo": 1418,
           "rank": 14,
           "country": "NOR"
         }
@@ -37313,8 +37313,8 @@
           "country": "NOR"
         },
         "away": {
-          "elo": 1490,
-          "rank": 9,
+          "elo": 1491,
+          "rank": 10,
           "country": "NOR"
         }
       },
@@ -39255,7 +39255,7 @@
       },
       "teamElo": {
         "home": {
-          "elo": 1974,
+          "elo": 1975,
           "rank": 2,
           "country": "ESP"
         },
@@ -43258,7 +43258,7 @@
         },
         "away": {
           "elo": 1698,
-          "rank": 18,
+          "rank": 19,
           "country": "ESP"
         }
       },
@@ -44752,7 +44752,7 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1825,
+          "elo": 1826,
           "rank": 4,
           "country": "GER"
         },
@@ -46089,8 +46089,8 @@
           "country": "GER"
         },
         "away": {
-          "elo": 1670,
-          "rank": 16,
+          "elo": 1669,
+          "rank": 15,
           "country": "GER"
         }
       },
@@ -47864,8 +47864,8 @@
       },
       "teamElo": {
         "home": {
-          "elo": 1659,
-          "rank": 17,
+          "elo": 1658,
+          "rank": 18,
           "country": "GER"
         },
         "away": {
@@ -58616,7 +58616,7 @@
       "teamElo": {
         "home": {
           "elo": 1617,
-          "rank": 23,
+          "rank": 24,
           "country": "GER"
         },
         "away": {
@@ -59345,7 +59345,7 @@
       "teamElo": {
         "home": null,
         "away": {
-          "elo": 1621,
+          "elo": 1620,
           "rank": 22,
           "country": "GER"
         }
@@ -63425,14 +63425,6 @@
           "last": []
         },
         "flagged": false
-      },
-      "teamElo": {
-        "home": {
-          "elo": 1560,
-          "rank": 25,
-          "country": "ITA"
-        },
-        "away": null
       },
       "squadValue": {
         "home": {
@@ -70500,12 +70492,12 @@
       "teamElo": {
         "home": {
           "elo": 1702,
-          "rank": 20,
+          "rank": 21,
           "country": "ENG"
         },
         "away": {
           "elo": 1799,
-          "rank": 16,
+          "rank": 15,
           "country": "ENG"
         }
       },
@@ -73410,7 +73402,7 @@
         },
         "away": {
           "elo": 1800,
-          "rank": 15,
+          "rank": 14,
           "country": "ENG"
         }
       },
@@ -74641,13 +74633,13 @@
       },
       "teamElo": {
         "home": {
-          "elo": 1397,
+          "elo": 1389,
           "rank": 17,
           "country": "NOR"
         },
         "away": {
-          "elo": 1489,
-          "rank": 10,
+          "elo": 1497,
+          "rank": 9,
           "country": "NOR"
         }
       },
@@ -74946,12 +74938,12 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1385,
+          "elo": 1375,
           "rank": 18,
           "country": "NOR"
         },
         "away": {
-          "elo": 1448,
+          "elo": 1456,
           "rank": 13,
           "country": "NOR"
         }
@@ -75575,7 +75567,7 @@
       },
       "teamElo": {
         "home": {
-          "elo": 1500,
+          "elo": 1501,
           "rank": 8,
           "country": "NOR"
         },
@@ -76695,12 +76687,12 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1516,
+          "elo": 1515,
           "rank": 7,
           "country": "NOR"
         },
         "away": {
-          "elo": 1557,
+          "elo": 1558,
           "rank": 6,
           "country": "NOR"
         }
@@ -77317,13 +77309,13 @@
       },
       "teamElo": {
         "home": {
-          "elo": 1498,
+          "elo": 1503,
           "rank": 15,
           "country": "POR"
         },
         "away": {
-          "elo": 1482,
-          "rank": 19,
+          "elo": 1476,
+          "rank": 20,
           "country": "POR"
         }
       },
@@ -78225,12 +78217,12 @@
       },
       "teamElo": {
         "home": {
-          "elo": 1524,
+          "elo": 1528,
           "rank": 6,
           "country": "GRE"
         },
         "away": {
-          "elo": 1371,
+          "elo": 1369,
           "rank": 15,
           "country": "GRE"
         }
@@ -78548,12 +78540,12 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1720,
+          "elo": 1724,
           "rank": 1,
           "country": "GRE"
         },
         "away": {
-          "elo": 1651,
+          "elo": 1648,
           "rank": 4,
           "country": "GRE"
         }
@@ -80237,13 +80229,13 @@
       },
       "teamElo": {
         "home": {
-          "elo": 1387,
+          "elo": 1396,
           "rank": 13,
           "country": "GRE"
         },
         "away": {
-          "elo": 1415,
-          "rank": 11,
+          "elo": 1407,
+          "rank": 12,
           "country": "GRE"
         }
       },
@@ -80831,12 +80823,12 @@
       "espnEventId": null,
       "teamElo": {
         "home": {
-          "elo": 1754,
+          "elo": 1760,
           "rank": 7,
           "country": "FRA"
         },
         "away": {
-          "elo": 1651,
+          "elo": 1645,
           "rank": 15,
           "country": "FRA"
         }
@@ -81340,12 +81332,12 @@
       },
       "teamElo": {
         "home": {
-          "elo": 1668,
+          "elo": 1674,
           "rank": 14,
           "country": "FRA"
         },
         "away": {
-          "elo": 1742,
+          "elo": 1736,
           "rank": 8,
           "country": "FRA"
         }
@@ -81802,12 +81794,12 @@
       },
       "teamElo": {
         "home": {
-          "elo": 1854,
+          "elo": 1856,
           "rank": 2,
           "country": "POR"
         },
         "away": {
-          "elo": 1570,
+          "elo": 1568,
           "rank": 9,
           "country": "POR"
         }
@@ -82195,13 +82187,13 @@
       },
       "teamElo": {
         "home": {
-          "elo": 1572,
+          "elo": 1577,
           "rank": 7,
           "country": "POR"
         },
         "away": {
-          "elo": 1496,
-          "rank": 16,
+          "elo": 1492,
+          "rank": 17,
           "country": "POR"
         }
       },
@@ -82556,8 +82548,8 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1713,
-          "rank": 15,
+          "elo": 1718,
+          "rank": 14,
           "country": "ESP"
         },
         "away": null
@@ -82877,12 +82869,12 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1545,
+          "elo": 1570,
           "rank": 5,
           "country": "GRE"
         },
         "away": {
-          "elo": 1457,
+          "elo": 1452,
           "rank": 9,
           "country": "GRE"
         }
@@ -83279,8 +83271,8 @@
       },
       "teamElo": {
         "home": {
-          "elo": 1655,
-          "rank": 18,
+          "elo": 1658,
+          "rank": 19,
           "country": "GER"
         },
         "away": null
@@ -86883,9 +86875,13 @@
         "flagged": false
       },
       "teamElo": {
-        "home": null,
+        "home": {
+          "elo": 1563,
+          "rank": 25,
+          "country": "ITA"
+        },
         "away": {
-          "elo": 1580,
+          "elo": 1574,
           "rank": 23,
           "country": "ITA"
         }
@@ -87280,8 +87276,8 @@
       },
       "teamElo": {
         "home": {
-          "elo": 1611,
-          "rank": 24,
+          "elo": 1617,
+          "rank": 23,
           "country": "GER"
         },
         "away": null
@@ -89153,7 +89149,7 @@
       },
       "teamElo": {
         "home": {
-          "elo": 1574,
+          "elo": 1564,
           "rank": 24,
           "country": "ITA"
         },
@@ -92854,7 +92850,7 @@
       "teamElo": {
         "home": null,
         "away": {
-          "elo": 1360,
+          "elo": 1359,
           "rank": 19,
           "country": "NOR"
         }
@@ -93297,7 +93293,7 @@
       },
       "teamElo": {
         "home": {
-          "elo": 1417,
+          "elo": 1416,
           "rank": 15,
           "country": "NOR"
         },
@@ -99296,12 +99292,12 @@
       },
       "teamElo": {
         "home": {
-          "elo": 1678,
+          "elo": 1681,
           "rank": 15,
           "country": "ITA"
         },
         "away": {
-          "elo": 1842,
+          "elo": 1840,
           "rank": 3,
           "country": "ITA"
         }
@@ -99679,7 +99675,7 @@
       "teamElo": {
         "home": {
           "elo": 1685,
-          "rank": 24,
+          "rank": 23,
           "country": "ESP"
         },
         "away": {
@@ -100061,13 +100057,13 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1818,
+          "elo": 1823,
           "rank": 4,
           "country": "ESP"
         },
         "away": {
-          "elo": 1717,
-          "rank": 14,
+          "elo": 1712,
+          "rank": 15,
           "country": "ESP"
         }
       },
@@ -101699,12 +101695,12 @@
       },
       "teamElo": {
         "home": {
-          "elo": 1778,
+          "elo": 1782,
           "rank": 8,
           "country": "ITA"
         },
         "away": {
-          "elo": 1642,
+          "elo": 1638,
           "rank": 20,
           "country": "ITA"
         }
@@ -102204,12 +102200,12 @@
       },
       "teamElo": {
         "home": {
-          "elo": 1616,
+          "elo": 1611,
           "rank": 21,
           "country": "ITA"
         },
         "away": {
-          "elo": 1753,
+          "elo": 1757,
           "rank": 9,
           "country": "ITA"
         }
@@ -103044,7 +103040,7 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1769,
+          "elo": 1772,
           "rank": 6,
           "country": "ESP"
         },
@@ -103888,12 +103884,12 @@
       },
       "teamElo": {
         "home": {
-          "elo": 1697,
+          "elo": 1699,
           "rank": 11,
           "country": "ITA"
         },
         "away": {
-          "elo": 1823,
+          "elo": 1822,
           "rank": 5,
           "country": "ITA"
         }
@@ -106335,12 +106331,12 @@
       },
       "teamElo": {
         "home": {
-          "elo": 1603,
+          "elo": 1597,
           "rank": 20,
           "country": "FRA"
         },
         "away": {
-          "elo": 1762,
+          "elo": 1767,
           "rank": 6,
           "country": "FRA"
         }
@@ -106697,8 +106693,8 @@
       "teamElo": {
         "home": null,
         "away": {
-          "elo": 1690,
-          "rank": 23,
+          "elo": 1684,
+          "rank": 24,
           "country": "ESP"
         }
       },
@@ -107040,8 +107036,8 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1696,
-          "rank": 20,
+          "elo": 1701,
+          "rank": 18,
           "country": "ESP"
         },
         "away": null
@@ -109470,13 +109466,13 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1653,
-          "rank": 19,
+          "elo": 1659,
+          "rank": 17,
           "country": "GER"
         },
         "away": {
-          "elo": 1672,
-          "rank": 15,
+          "elo": 1667,
+          "rank": 16,
           "country": "GER"
         }
       },
@@ -110513,12 +110509,12 @@
       },
       "teamElo": {
         "home": {
-          "elo": 1790,
+          "elo": 1792,
           "rank": 6,
           "country": "GER"
         },
         "away": {
-          "elo": 1649,
+          "elo": 1646,
           "rank": 20,
           "country": "GER"
         }
@@ -110960,8 +110956,8 @@
       },
       "teamElo": {
         "home": {
-          "elo": 1700,
-          "rank": 21,
+          "elo": 1703,
+          "rank": 20,
           "country": "ENG"
         },
         "away": null
@@ -111432,8 +111428,8 @@
       "teamElo": {
         "home": null,
         "away": {
-          "elo": 1827,
-          "rank": 11,
+          "elo": 1824,
+          "rank": 12,
           "country": "ENG"
         }
       },
@@ -111956,13 +111952,13 @@
       },
       "teamElo": {
         "home": {
-          "elo": 1824,
-          "rank": 12,
+          "elo": 1830,
+          "rank": 11,
           "country": "ENG"
         },
         "away": {
-          "elo": 1805,
-          "rank": 14,
+          "elo": 1799,
+          "rank": 16,
           "country": "ENG"
         }
       },
@@ -112491,12 +112487,12 @@
       },
       "teamElo": {
         "home": {
-          "elo": 1937,
+          "elo": 1930,
           "rank": 3,
           "country": "ENG"
         },
         "away": {
-          "elo": 2028,
+          "elo": 2035,
           "rank": 2,
           "country": "ENG"
         }
@@ -119994,7 +119990,7 @@
           "country": "GRE"
         },
         "away": {
-          "elo": 1475,
+          "elo": 1476,
           "rank": 8,
           "country": "GRE"
         }
@@ -123448,7 +123444,7 @@
       },
       "teamElo": {
         "home": {
-          "elo": 1690,
+          "elo": 1691,
           "rank": 22,
           "country": "ENG"
         },
@@ -133960,12 +133956,12 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1580,
+          "elo": 1574,
           "rank": 23,
           "country": "ITA"
         },
         "away": {
-          "elo": 1574,
+          "elo": 1564,
           "rank": 24,
           "country": "ITA"
         }
@@ -134323,8 +134319,8 @@
       "teamElo": {
         "home": null,
         "away": {
-          "elo": 1655,
-          "rank": 18,
+          "elo": 1658,
+          "rank": 19,
           "country": "GER"
         }
       },
@@ -134644,7 +134640,7 @@
         "home": null,
         "away": {
           "elo": 1617,
-          "rank": 23,
+          "rank": 24,
           "country": "GER"
         }
       },
@@ -139384,12 +139380,12 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1433,
+          "elo": 1434,
           "rank": 10,
           "country": "GRE"
         },
         "away": {
-          "elo": 1707,
+          "elo": 1708,
           "rank": 2,
           "country": "GRE"
         }
@@ -140519,7 +140515,7 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1448,
+          "elo": 1456,
           "rank": 13,
           "country": "NOR"
         },
@@ -140724,12 +140720,12 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1417,
+          "elo": 1418,
           "rank": 14,
           "country": "NOR"
         },
         "away": {
-          "elo": 1397,
+          "elo": 1389,
           "rank": 17,
           "country": "NOR"
         }
@@ -140957,7 +140953,7 @@
           "country": "NOR"
         },
         "away": {
-          "elo": 1500,
+          "elo": 1501,
           "rank": 8,
           "country": "NOR"
         }
@@ -142112,8 +142108,8 @@
       "teamElo": {
         "home": null,
         "away": {
-          "elo": 1690,
-          "rank": 23,
+          "elo": 1684,
+          "rank": 24,
           "country": "ESP"
         }
       },
@@ -142592,8 +142588,8 @@
           "country": "ESP"
         },
         "away": {
-          "elo": 1713,
-          "rank": 15,
+          "elo": 1718,
+          "rank": 14,
           "country": "ESP"
         }
       },
@@ -144446,6 +144442,14 @@
           "pYes": 0.797,
           "confidence": 0.797
         }
+      },
+      "teamElo": {
+        "home": null,
+        "away": {
+          "elo": 1563,
+          "rank": 25,
+          "country": "ITA"
+        }
       }
     },
     {
@@ -144592,14 +144596,6 @@
         }
       },
       "referee": null,
-      "teamElo": {
-        "home": {
-          "elo": 1560,
-          "rank": 25,
-          "country": "ITA"
-        },
-        "away": null
-      },
       "squadValue": {
         "home": {
           "value": 14284514,
@@ -145531,13 +145527,13 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1621,
+          "elo": 1620,
           "rank": 22,
           "country": "GER"
         },
         "away": {
-          "elo": 1611,
-          "rank": 24,
+          "elo": 1617,
+          "rank": 23,
           "country": "GER"
         }
       },
@@ -150445,12 +150441,12 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1457,
+          "elo": 1452,
           "rank": 9,
           "country": "GRE"
         },
         "away": {
-          "elo": 1371,
+          "elo": 1369,
           "rank": 15,
           "country": "GRE"
         }
@@ -150835,8 +150831,8 @@
       "teamElo": {
         "home": null,
         "away": {
-          "elo": 1696,
-          "rank": 20,
+          "elo": 1701,
+          "rank": 18,
           "country": "ESP"
         }
       },
@@ -157695,12 +157691,12 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1387,
+          "elo": 1396,
           "rank": 13,
           "country": "GRE"
         },
         "away": {
-          "elo": 1524,
+          "elo": 1528,
           "rank": 6,
           "country": "GRE"
         }
@@ -159484,13 +159480,13 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1651,
+          "elo": 1648,
           "rank": 4,
           "country": "GRE"
         },
         "away": {
-          "elo": 1408,
-          "rank": 12,
+          "elo": 1409,
+          "rank": 11,
           "country": "GRE"
         }
       },
@@ -159998,12 +159994,12 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1415,
-          "rank": 11,
+          "elo": 1407,
+          "rank": 12,
           "country": "GRE"
         },
         "away": {
-          "elo": 1720,
+          "elo": 1724,
           "rank": 1,
           "country": "GRE"
         }
@@ -160563,12 +160559,12 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1475,
+          "elo": 1476,
           "rank": 8,
           "country": "GRE"
         },
         "away": {
-          "elo": 1483,
+          "elo": 1484,
           "rank": 7,
           "country": "GRE"
         }
@@ -161631,8 +161627,8 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1489,
-          "rank": 10,
+          "elo": 1497,
+          "rank": 9,
           "country": "NOR"
         },
         "away": {
@@ -161836,12 +161832,12 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1490,
-          "rank": 9,
+          "elo": 1491,
+          "rank": 10,
           "country": "NOR"
         },
         "away": {
-          "elo": 1516,
+          "elo": 1515,
           "rank": 7,
           "country": "NOR"
         }
@@ -162041,12 +162037,12 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1557,
+          "elo": 1558,
           "rank": 6,
           "country": "NOR"
         },
         "away": {
-          "elo": 1385,
+          "elo": 1375,
           "rank": 18,
           "country": "NOR"
         }
@@ -163826,7 +163822,7 @@
           "country": "GRE"
         },
         "away": {
-          "elo": 1545,
+          "elo": 1570,
           "rank": 5,
           "country": "GRE"
         }
@@ -164268,7 +164264,7 @@
           "country": "NOR"
         },
         "away": {
-          "elo": 1582,
+          "elo": 1583,
           "rank": 3,
           "country": "NOR"
         }
@@ -181695,13 +181691,13 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1570,
+          "elo": 1568,
           "rank": 9,
           "country": "POR"
         },
         "away": {
           "elo": 1493,
-          "rank": 17,
+          "rank": 16,
           "country": "POR"
         }
       },
@@ -183868,8 +183864,8 @@
       "teamElo": {
         "home": null,
         "away": {
-          "elo": 1611,
-          "rank": 24,
+          "elo": 1617,
+          "rank": 23,
           "country": "GER"
         }
       },
@@ -186369,7 +186365,7 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1448,
+          "elo": 1456,
           "rank": 13,
           "country": "NOR"
         },
@@ -190638,12 +190634,12 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1545,
+          "elo": 1570,
           "rank": 5,
           "country": "GRE"
         },
         "away": {
-          "elo": 1387,
+          "elo": 1396,
           "rank": 13,
           "country": "GRE"
         }
@@ -191077,12 +191073,12 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1408,
-          "rank": 12,
+          "elo": 1409,
+          "rank": 11,
           "country": "GRE"
         },
         "away": {
-          "elo": 1457,
+          "elo": 1452,
           "rank": 9,
           "country": "GRE"
         }
@@ -191300,13 +191296,13 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1707,
+          "elo": 1708,
           "rank": 2,
           "country": "GRE"
         },
         "away": {
-          "elo": 1415,
-          "rank": 11,
+          "elo": 1407,
+          "rank": 12,
           "country": "GRE"
         }
       },
@@ -191740,7 +191736,7 @@
           "country": "POR"
         },
         "away": {
-          "elo": 1841,
+          "elo": 1842,
           "rank": 3,
           "country": "POR"
         }
@@ -192575,8 +192571,8 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1496,
-          "rank": 16,
+          "elo": 1492,
+          "rank": 17,
           "country": "POR"
         },
         "away": {
@@ -193231,7 +193227,7 @@
           "country": "POR"
         },
         "away": {
-          "elo": 1572,
+          "elo": 1577,
           "rank": 7,
           "country": "POR"
         }
@@ -197667,14 +197663,6 @@
         }
       },
       "referee": null,
-      "teamElo": {
-        "home": null,
-        "away": {
-          "elo": 1560,
-          "rank": 25,
-          "country": "ITA"
-        }
-      },
       "squadValue": {
         "home": {
           "value": 11170369,
@@ -197911,7 +197899,7 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1574,
+          "elo": 1564,
           "rank": 24,
           "country": "ITA"
         },
@@ -199164,6 +199152,14 @@
           "pYes": 0.735,
           "confidence": 0.735
         }
+      },
+      "teamElo": {
+        "home": {
+          "elo": 1563,
+          "rank": 25,
+          "country": "ITA"
+        },
+        "away": null
       }
     },
     {
@@ -199578,8 +199574,8 @@
       "teamElo": {
         "home": null,
         "away": {
-          "elo": 1713,
-          "rank": 15,
+          "elo": 1718,
+          "rank": 14,
           "country": "ESP"
         }
       },
@@ -200015,8 +200011,8 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1655,
-          "rank": 18,
+          "elo": 1658,
+          "rank": 19,
           "country": "GER"
         },
         "away": null
@@ -200921,8 +200917,8 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1696,
-          "rank": 20,
+          "elo": 1701,
+          "rank": 18,
           "country": "ESP"
         },
         "away": null
@@ -201164,7 +201160,7 @@
       "teamElo": {
         "home": {
           "elo": 1617,
-          "rank": 23,
+          "rank": 24,
           "country": "GER"
         },
         "away": null
@@ -204159,8 +204155,8 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1690,
-          "rank": 23,
+          "elo": 1684,
+          "rank": 24,
           "country": "ESP"
         },
         "away": null
@@ -209112,7 +209108,7 @@
       "teamElo": {
         "home": null,
         "away": {
-          "elo": 1621,
+          "elo": 1620,
           "rank": 22,
           "country": "GER"
         }
@@ -209761,13 +209757,13 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1385,
+          "elo": 1375,
           "rank": 18,
           "country": "NOR"
         },
         "away": {
-          "elo": 1490,
-          "rank": 9,
+          "elo": 1491,
+          "rank": 10,
           "country": "NOR"
         }
       },
@@ -210199,7 +210195,7 @@
           "country": "POR"
         },
         "away": {
-          "elo": 1541,
+          "elo": 1542,
           "rank": 11,
           "country": "POR"
         }
@@ -210645,12 +210641,12 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1720,
+          "elo": 1724,
           "rank": 1,
           "country": "GRE"
         },
         "away": {
-          "elo": 1475,
+          "elo": 1476,
           "rank": 8,
           "country": "GRE"
         }
@@ -210868,12 +210864,12 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1371,
+          "elo": 1369,
           "rank": 15,
           "country": "GRE"
         },
         "away": {
-          "elo": 1651,
+          "elo": 1648,
           "rank": 4,
           "country": "GRE"
         }
@@ -211538,12 +211534,12 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1524,
+          "elo": 1528,
           "rank": 6,
           "country": "GRE"
         },
         "away": {
-          "elo": 1433,
+          "elo": 1434,
           "rank": 10,
           "country": "GRE"
         }
@@ -211784,7 +211780,7 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1498,
+          "elo": 1503,
           "rank": 15,
           "country": "POR"
         },
@@ -212030,8 +212026,8 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1482,
-          "rank": 19,
+          "elo": 1476,
+          "rank": 20,
           "country": "POR"
         },
         "away": {
@@ -212449,12 +212445,12 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1557,
+          "elo": 1558,
           "rank": 6,
           "country": "NOR"
         },
         "away": {
-          "elo": 1500,
+          "elo": 1501,
           "rank": 8,
           "country": "NOR"
         }
@@ -212686,7 +212682,7 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1580,
+          "elo": 1574,
           "rank": 23,
           "country": "ITA"
         },
@@ -213730,12 +213726,12 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1516,
+          "elo": 1515,
           "rank": 7,
           "country": "NOR"
         },
         "away": {
-          "elo": 1582,
+          "elo": 1583,
           "rank": 3,
           "country": "NOR"
         }
@@ -213935,12 +213931,12 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1489,
-          "rank": 10,
+          "elo": 1497,
+          "rank": 9,
           "country": "NOR"
         },
         "away": {
-          "elo": 1397,
+          "elo": 1389,
           "rank": 17,
           "country": "NOR"
         }
@@ -214388,7 +214384,7 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1483,
+          "elo": 1484,
           "rank": 7,
           "country": "GRE"
         },
@@ -214625,7 +214621,7 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1417,
+          "elo": 1418,
           "rank": 14,
           "country": "NOR"
         },
@@ -215852,12 +215848,12 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1578,
+          "elo": 1579,
           "rank": 6,
           "country": "POR"
         },
         "away": {
-          "elo": 1854,
+          "elo": 1856,
           "rank": 2,
           "country": "POR"
         }
@@ -218889,6 +218885,14 @@
           "confidence": 0.583,
           "pYes": 0.583
         }
+      },
+      "teamElo": {
+        "home": null,
+        "away": {
+          "elo": 1563,
+          "rank": 25,
+          "country": "ITA"
+        }
       }
     },
     {
@@ -219537,13 +219541,9 @@
       },
       "referee": null,
       "teamElo": {
-        "home": {
-          "elo": 1560,
-          "rank": 25,
-          "country": "ITA"
-        },
+        "home": null,
         "away": {
-          "elo": 1574,
+          "elo": 1564,
           "rank": 24,
           "country": "ITA"
         }
@@ -225638,7 +225638,7 @@
       "teamElo": {
         "home": null,
         "away": {
-          "elo": 1580,
+          "elo": 1574,
           "rank": 23,
           "country": "ITA"
         }
@@ -238313,6 +238313,14 @@
           "pYes": 0.821,
           "confidence": 0.821
         }
+      },
+      "teamElo": {
+        "home": {
+          "elo": 1563,
+          "rank": 25,
+          "country": "ITA"
+        },
+        "away": null
       }
     },
     {
@@ -238488,11 +238496,7 @@
           "rank": 22,
           "country": "ITA"
         },
-        "away": {
-          "elo": 1560,
-          "rank": 25,
-          "country": "ITA"
-        }
+        "away": null
       },
       "squadValue": {
         "home": {
@@ -239821,8 +239825,8 @@
           "country": "ESP"
         },
         "away": {
-          "elo": 1696,
-          "rank": 20,
+          "elo": 1701,
+          "rank": 18,
           "country": "ESP"
         }
       },
@@ -240782,7 +240786,7 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1574,
+          "elo": 1564,
           "rank": 24,
           "country": "ITA"
         },
@@ -241259,8 +241263,8 @@
       "teamElo": {
         "home": null,
         "away": {
-          "elo": 1655,
-          "rank": 18,
+          "elo": 1658,
+          "rank": 19,
           "country": "GER"
         }
       },
@@ -246800,13 +246804,13 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1541,
+          "elo": 1542,
           "rank": 11,
           "country": "POR"
         },
         "away": {
-          "elo": 1496,
-          "rank": 16,
+          "elo": 1492,
+          "rank": 17,
           "country": "POR"
         }
       },
@@ -247037,13 +247041,13 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1397,
+          "elo": 1389,
           "rank": 17,
           "country": "NOR"
         },
         "away": {
-          "elo": 1490,
-          "rank": 9,
+          "elo": 1491,
+          "rank": 10,
           "country": "NOR"
         }
       },
@@ -247274,7 +247278,7 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1841,
+          "elo": 1842,
           "rank": 3,
           "country": "POR"
         },
@@ -247511,7 +247515,7 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1500,
+          "elo": 1501,
           "rank": 8,
           "country": "NOR"
         },
@@ -249317,12 +249321,12 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1387,
+          "elo": 1396,
           "rank": 13,
           "country": "GRE"
         },
         "away": {
-          "elo": 1720,
+          "elo": 1724,
           "rank": 1,
           "country": "GRE"
         }
@@ -252314,8 +252318,8 @@
       "teamElo": {
         "home": null,
         "away": {
-          "elo": 1700,
-          "rank": 21,
+          "elo": 1703,
+          "rank": 20,
           "country": "ENG"
         }
       },
@@ -253301,11 +253305,11 @@
       "tips": {
         "1X2": {
           "pick": "2",
-          "confidence": 0.508,
+          "confidence": 0.467,
           "probs": {
-            "home": 0.218,
-            "draw": 0.274,
-            "away": 0.508
+            "home": 0.251,
+            "draw": 0.281,
+            "away": 0.467
           }
         },
         "BTTS": {
@@ -253319,12 +253323,12 @@
           "pOver": null
         }
       },
-      "tipScore": 0.508,
+      "tipScore": 0.467,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
         "home": 1654.8,
-        "away": 1823.2
+        "away": 1821.6
       },
       "marketSource": "Pinnacle",
       "note": "1X2 ur Klubb-Elo - inget eget modelltips for matchen, oddsen bara vardefacit",
@@ -253335,16 +253339,16 @@
         "kickoffUtc": "2026-10-15T16:45:00Z",
         "dc": null,
         "blended": {
-          "home": 0.218,
-          "draw": 0.274,
-          "away": 0.508,
+          "home": 0.2513,
+          "draw": 0.2813,
+          "away": 0.4675,
           "over25": null,
           "btts": null
         },
         "data": {
-          "home": 0.218,
-          "draw": 0.274,
-          "away": 0.508,
+          "home": 0.2513,
+          "draw": 0.2813,
+          "away": 0.4675,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -253522,7 +253526,7 @@
           "country": "AUT"
         },
         "away": {
-          "elo": 1823,
+          "elo": 1822,
           "rank": 5,
           "country": "ITA"
         }
@@ -253549,11 +253553,11 @@
       "tips": {
         "1X2": {
           "pick": "2",
-          "confidence": 0.547,
+          "confidence": 0.5,
           "probs": {
-            "home": 0.188,
-            "draw": 0.265,
-            "away": 0.547
+            "home": 0.225,
+            "draw": 0.275,
+            "away": 0.5
           }
         },
         "BTTS": {
@@ -253567,12 +253571,12 @@
           "pOver": null
         }
       },
-      "tipScore": 0.547,
+      "tipScore": 0.5,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
         "home": 1679.4,
-        "away": 1875.1
+        "away": 1875.4
       },
       "marketSource": "Pinnacle",
       "note": "1X2 ur Klubb-Elo - inget eget modelltips for matchen, oddsen bara vardefacit",
@@ -253583,16 +253587,16 @@
         "kickoffUtc": "2026-10-15T16:45:00Z",
         "dc": null,
         "blended": {
-          "home": 0.188,
-          "draw": 0.265,
-          "away": 0.547,
+          "home": 0.225,
+          "draw": 0.275,
+          "away": 0.5,
           "over25": null,
           "btts": null
         },
         "data": {
-          "home": 0.188,
-          "draw": 0.265,
-          "away": 0.547,
+          "home": 0.225,
+          "draw": 0.275,
+          "away": 0.5,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -253797,11 +253801,11 @@
       "tips": {
         "1X2": {
           "pick": "1",
-          "confidence": 0.409,
+          "confidence": 0.389,
           "probs": {
-            "home": 0.409,
-            "draw": 0.288,
-            "away": 0.303
+            "home": 0.389,
+            "draw": 0.29,
+            "away": 0.322
           }
         },
         "BTTS": {
@@ -253815,12 +253819,12 @@
           "pOver": null
         }
       },
-      "tipScore": 0.409,
+      "tipScore": 0.389,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
-        "home": 1796.2,
-        "away": 1824.4
+        "home": 1796.4,
+        "away": 1830.4
       },
       "marketSource": "Pinnacle",
       "note": "1X2 ur Klubb-Elo - inget eget modelltips for matchen, oddsen bara vardefacit",
@@ -253831,16 +253835,16 @@
         "kickoffUtc": "2026-10-15T16:45:00Z",
         "dc": null,
         "blended": {
-          "home": 0.409,
-          "draw": 0.288,
-          "away": 0.303,
+          "home": 0.3886,
+          "draw": 0.2897,
+          "away": 0.3217,
           "over25": null,
           "btts": null
         },
         "data": {
-          "home": 0.409,
-          "draw": 0.288,
-          "away": 0.303,
+          "home": 0.3886,
+          "draw": 0.2897,
+          "away": 0.3217,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -254018,8 +254022,8 @@
           "country": "FRA"
         },
         "away": {
-          "elo": 1824,
-          "rank": 12,
+          "elo": 1830,
+          "rank": 11,
           "country": "ENG"
         }
       },
@@ -254045,11 +254049,11 @@
       "tips": {
         "1X2": {
           "pick": "1",
-          "confidence": 0.646,
+          "confidence": 0.578,
           "probs": {
-            "home": 0.646,
-            "draw": 0.233,
-            "away": 0.121
+            "home": 0.578,
+            "draw": 0.256,
+            "away": 0.166
           }
         },
         "BTTS": {
@@ -254063,12 +254067,12 @@
           "pOver": null
         }
       },
-      "tipScore": 0.646,
+      "tipScore": 0.578,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
         "home": 1653.3,
-        "away": 1515.6
+        "away": 1515
       },
       "marketSource": "Pinnacle",
       "note": "1X2 ur Klubb-Elo - inget eget modelltips for matchen, oddsen bara vardefacit",
@@ -254079,16 +254083,16 @@
         "kickoffUtc": "2026-10-15T16:45:00Z",
         "dc": null,
         "blended": {
-          "home": 0.646,
-          "draw": 0.233,
-          "away": 0.121,
+          "home": 0.578,
+          "draw": 0.256,
+          "away": 0.166,
           "over25": null,
           "btts": null
         },
         "data": {
-          "home": 0.646,
-          "draw": 0.233,
-          "away": 0.121,
+          "home": 0.578,
+          "draw": 0.256,
+          "away": 0.166,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -254268,7 +254272,7 @@
           "country": "CZE"
         },
         "away": {
-          "elo": 1516,
+          "elo": 1515,
           "rank": 7,
           "country": "NOR"
         }
@@ -254295,11 +254299,11 @@
       "tips": {
         "1X2": {
           "pick": "2",
-          "confidence": 0.448,
+          "confidence": 0.425,
           "probs": {
-            "home": 0.268,
-            "draw": 0.284,
-            "away": 0.448
+            "home": 0.289,
+            "draw": 0.287,
+            "away": 0.425
           }
         },
         "BTTS": {
@@ -254313,7 +254317,7 @@
           "pOver": 0.527
         }
       },
-      "tipScore": 0.488,
+      "tipScore": 0.476,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
@@ -254329,16 +254333,16 @@
         "kickoffUtc": "2026-10-15T16:45:00Z",
         "dc": null,
         "blended": {
-          "home": 0.268,
-          "draw": 0.284,
-          "away": 0.448,
+          "home": 0.2887,
+          "draw": 0.2867,
+          "away": 0.4246,
           "over25": 0.527,
           "btts": null
         },
         "data": {
-          "home": 0.268,
-          "draw": 0.284,
-          "away": 0.448,
+          "home": 0.2887,
+          "draw": 0.2867,
+          "away": 0.4246,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -254543,11 +254547,11 @@
       "tips": {
         "1X2": {
           "pick": "2",
-          "confidence": 0.656,
+          "confidence": 0.586,
           "probs": {
-            "home": 0.114,
-            "draw": 0.23,
-            "away": 0.656
+            "home": 0.16,
+            "draw": 0.254,
+            "away": 0.586
           }
         },
         "BTTS": {
@@ -254561,12 +254565,12 @@
           "pOver": null
         }
       },
-      "tipScore": 0.656,
+      "tipScore": 0.586,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
-        "home": 1456.4,
-        "away": 1732.2
+        "home": 1456.2,
+        "away": 1732.3
       },
       "marketSource": "Pinnacle",
       "note": "1X2 ur Klubb-Elo - inget eget modelltips for matchen, oddsen bara vardefacit",
@@ -254577,16 +254581,16 @@
         "kickoffUtc": "2026-10-15T16:45:00Z",
         "dc": null,
         "blended": {
-          "home": 0.114,
-          "draw": 0.23,
-          "away": 0.656,
+          "home": 0.16,
+          "draw": 0.254,
+          "away": 0.586,
           "over25": null,
           "btts": null
         },
         "data": {
-          "home": 0.114,
-          "draw": 0.23,
-          "away": 0.656,
+          "home": 0.16,
+          "draw": 0.254,
+          "away": 0.586,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -254793,11 +254797,11 @@
       "tips": {
         "1X2": {
           "pick": "1",
-          "confidence": 0.452,
+          "confidence": 0.427,
           "probs": {
-            "home": 0.452,
-            "draw": 0.284,
-            "away": 0.264
+            "home": 0.427,
+            "draw": 0.287,
+            "away": 0.286
           }
         },
         "BTTS": {
@@ -254834,7 +254838,7 @@
           "confidence": 0.578
         }
       },
-      "tipScore": 0.452,
+      "tipScore": 0.427,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
@@ -254850,16 +254854,16 @@
         "kickoffUtc": "2026-10-15T19:00:00Z",
         "dc": null,
         "blended": {
-          "home": 0.452,
-          "draw": 0.284,
-          "away": 0.264,
+          "home": 0.427,
+          "draw": 0.287,
+          "away": 0.286,
           "over25": null,
           "btts": null
         },
         "data": {
-          "home": 0.452,
-          "draw": 0.284,
-          "away": 0.264,
+          "home": 0.427,
+          "draw": 0.287,
+          "away": 0.286,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -254894,7 +254898,7 @@
             "strategy": "consensusAtBestPrice",
             "fairSource": "pinnacle",
             "p": 0.2627,
-            "modelP": 0.264,
+            "modelP": 0.286,
             "ev": 0.0508,
             "stakeSek": 500
           }
@@ -255077,11 +255081,11 @@
       "tips": {
         "1X2": {
           "pick": "1",
-          "confidence": 0.699,
+          "confidence": 0.625,
           "probs": {
-            "home": 0.699,
-            "draw": 0.212,
-            "away": 0.089
+            "home": 0.625,
+            "draw": 0.241,
+            "away": 0.134
           }
         },
         "BTTS": {
@@ -255095,11 +255099,11 @@
           "pOver": null
         }
       },
-      "tipScore": 0.699,
+      "tipScore": 0.625,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
-        "home": 1854.2,
+        "home": 1856.3,
         "away": 1672.6
       },
       "marketSource": "Pinnacle",
@@ -255111,16 +255115,16 @@
         "kickoffUtc": "2026-10-15T19:00:00Z",
         "dc": null,
         "blended": {
-          "home": 0.699,
-          "draw": 0.212,
-          "away": 0.089,
+          "home": 0.625,
+          "draw": 0.241,
+          "away": 0.134,
           "over25": null,
           "btts": null
         },
         "data": {
-          "home": 0.699,
-          "draw": 0.212,
-          "away": 0.089,
+          "home": 0.625,
+          "draw": 0.241,
+          "away": 0.134,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -255295,7 +255299,7 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1854,
+          "elo": 1856,
           "rank": 2,
           "country": "POR"
         },
@@ -255327,11 +255331,11 @@
       "tips": {
         "1X2": {
           "pick": "1",
-          "confidence": 0.484,
+          "confidence": 0.448,
           "probs": {
-            "home": 0.484,
-            "draw": 0.278,
-            "away": 0.237
+            "home": 0.448,
+            "draw": 0.284,
+            "away": 0.268
           }
         },
         "BTTS": {
@@ -255368,12 +255372,12 @@
           "confidence": 0.663
         }
       },
-      "tipScore": 0.484,
+      "tipScore": 0.448,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
-        "home": 1720.5,
-        "away": 1697.9
+        "home": 1720.7,
+        "away": 1701.4
       },
       "marketSource": "Pinnacle",
       "note": "1X2 ur Klubb-Elo - inget eget modelltips for matchen, oddsen bara vardefacit",
@@ -255384,16 +255388,16 @@
         "kickoffUtc": "2026-10-15T19:00:00Z",
         "dc": null,
         "blended": {
-          "home": 0.4845,
-          "draw": 0.2783,
-          "away": 0.2372,
+          "home": 0.448,
+          "draw": 0.284,
+          "away": 0.268,
           "over25": null,
           "btts": null
         },
         "data": {
-          "home": 0.4845,
-          "draw": 0.2783,
-          "away": 0.2372,
+          "home": 0.448,
+          "draw": 0.284,
+          "away": 0.268,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -255571,7 +255575,7 @@
           "country": "GER"
         },
         "away": {
-          "elo": 1698,
+          "elo": 1701,
           "rank": 4,
           "country": "TUR"
         }
@@ -255598,11 +255602,11 @@
       "tips": {
         "1X2": {
           "pick": "1",
-          "confidence": 0.736,
+          "confidence": 0.655,
           "probs": {
-            "home": 0.736,
-            "draw": 0.195,
-            "away": 0.069
+            "home": 0.655,
+            "draw": 0.23,
+            "away": 0.115
           }
         },
         "BTTS": {
@@ -255616,7 +255620,7 @@
           "pOver": null
         }
       },
-      "tipScore": 0.736,
+      "tipScore": 0.655,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
@@ -255632,16 +255636,16 @@
         "kickoffUtc": "2026-10-15T19:00:00Z",
         "dc": null,
         "blended": {
-          "home": 0.736,
-          "draw": 0.195,
-          "away": 0.069,
+          "home": 0.655,
+          "draw": 0.23,
+          "away": 0.115,
           "over25": null,
           "btts": null
         },
         "data": {
-          "home": 0.736,
-          "draw": 0.195,
-          "away": 0.069,
+          "home": 0.655,
+          "draw": 0.23,
+          "away": 0.115,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -255848,11 +255852,11 @@
       "tips": {
         "1X2": {
           "pick": "2",
-          "confidence": 0.394,
+          "confidence": 0.381,
           "probs": {
-            "home": 0.317,
-            "draw": 0.289,
-            "away": 0.394
+            "home": 0.329,
+            "draw": 0.29,
+            "away": 0.381
           }
         },
         "BTTS": {
@@ -255866,12 +255870,12 @@
           "pOver": 0.477
         }
       },
-      "tipScore": 0.459,
+      "tipScore": 0.452,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
-        "home": 1749.8,
-        "away": 1841.7
+        "home": 1750.3,
+        "away": 1839.5
       },
       "marketSource": "Pinnacle",
       "note": "1X2 ur Klubb-Elo - inget eget modelltips for matchen, oddsen bara vardefacit",
@@ -255882,16 +255886,16 @@
         "kickoffUtc": "2026-10-15T19:00:00Z",
         "dc": null,
         "blended": {
-          "home": 0.317,
-          "draw": 0.289,
-          "away": 0.394,
+          "home": 0.329,
+          "draw": 0.29,
+          "away": 0.381,
           "over25": 0.477,
           "btts": null
         },
         "data": {
-          "home": 0.317,
-          "draw": 0.289,
-          "away": 0.394,
+          "home": 0.329,
+          "draw": 0.29,
+          "away": 0.381,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -256069,7 +256073,7 @@
           "country": "ESP"
         },
         "away": {
-          "elo": 1842,
+          "elo": 1840,
           "rank": 3,
           "country": "ITA"
         }
@@ -256096,11 +256100,11 @@
       "tips": {
         "1X2": {
           "pick": "1",
-          "confidence": 0.661,
+          "confidence": 0.59,
           "probs": {
-            "home": 0.661,
-            "draw": 0.228,
-            "away": 0.112
+            "home": 0.59,
+            "draw": 0.253,
+            "away": 0.158
           }
         },
         "BTTS": {
@@ -256114,7 +256118,7 @@
           "pOver": null
         }
       },
-      "tipScore": 0.661,
+      "tipScore": 0.59,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
@@ -256130,16 +256134,16 @@
         "kickoffUtc": "2026-10-15T19:00:00Z",
         "dc": null,
         "blended": {
-          "home": 0.6603,
-          "draw": 0.2278,
-          "away": 0.1119,
+          "home": 0.5894,
+          "draw": 0.2527,
+          "away": 0.1578,
           "over25": null,
           "btts": null
         },
         "data": {
-          "home": 0.6603,
-          "draw": 0.2278,
-          "away": 0.1119,
+          "home": 0.5894,
+          "draw": 0.2527,
+          "away": 0.1578,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -256342,11 +256346,11 @@
       "tips": {
         "1X2": {
           "pick": "1",
-          "confidence": 0.492,
+          "confidence": 0.457,
           "probs": {
-            "home": 0.492,
-            "draw": 0.277,
-            "away": 0.231
+            "home": 0.457,
+            "draw": 0.283,
+            "away": 0.26
           }
         },
         "BTTS": {
@@ -256383,7 +256387,7 @@
           "confidence": 0.753
         }
       },
-      "tipScore": 0.492,
+      "tipScore": 0.457,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
@@ -256399,16 +256403,16 @@
         "kickoffUtc": "2026-10-15T19:00:00Z",
         "dc": null,
         "blended": {
-          "home": 0.492,
-          "draw": 0.277,
-          "away": 0.231,
+          "home": 0.457,
+          "draw": 0.283,
+          "away": 0.26,
           "over25": null,
           "btts": null
         },
         "data": {
-          "home": 0.492,
-          "draw": 0.277,
-          "away": 0.231,
+          "home": 0.457,
+          "draw": 0.283,
+          "away": 0.26,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -256613,11 +256617,11 @@
       "tips": {
         "1X2": {
           "pick": "1",
-          "confidence": 0.467,
+          "confidence": 0.439,
           "probs": {
-            "home": 0.467,
-            "draw": 0.281,
-            "away": 0.252
+            "home": 0.439,
+            "draw": 0.285,
+            "away": 0.276
           }
         },
         "BTTS": {
@@ -256631,7 +256635,7 @@
           "pOver": null
         }
       },
-      "tipScore": 0.467,
+      "tipScore": 0.439,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
@@ -256647,16 +256651,16 @@
         "kickoffUtc": "2026-10-15T19:00:00Z",
         "dc": null,
         "blended": {
-          "home": 0.467,
-          "draw": 0.281,
-          "away": 0.252,
+          "home": 0.439,
+          "draw": 0.285,
+          "away": 0.276,
           "over25": null,
           "btts": null
         },
         "data": {
-          "home": 0.467,
-          "draw": 0.281,
-          "away": 0.252,
+          "home": 0.439,
+          "draw": 0.285,
+          "away": 0.276,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -256861,11 +256865,11 @@
       "tips": {
         "1X2": {
           "pick": "1",
-          "confidence": 0.364,
+          "confidence": 0.361,
           "probs": {
-            "home": 0.364,
+            "home": 0.361,
             "draw": 0.291,
-            "away": 0.346
+            "away": 0.348
           }
         },
         "BTTS": {
@@ -256879,12 +256883,12 @@
           "pOver": null
         }
       },
-      "tipScore": 0.364,
+      "tipScore": 0.361,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
-        "home": 1817.6,
-        "away": 1876.5
+        "home": 1817.5,
+        "away": 1876.6
       },
       "marketSource": "Pinnacle",
       "note": "1X2 ur Klubb-Elo - inget eget modelltips for matchen, oddsen bara vardefacit",
@@ -256895,16 +256899,16 @@
         "kickoffUtc": "2026-10-13T16:45:00Z",
         "dc": null,
         "blended": {
-          "home": 0.3636,
-          "draw": 0.2907,
-          "away": 0.3457,
+          "home": 0.361,
+          "draw": 0.291,
+          "away": 0.348,
           "over25": null,
           "btts": null
         },
         "data": {
-          "home": 0.3636,
-          "draw": 0.2907,
-          "away": 0.3457,
+          "home": 0.361,
+          "draw": 0.291,
+          "away": 0.348,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -257109,11 +257113,11 @@
       "tips": {
         "1X2": {
           "pick": "2",
-          "confidence": 0.557,
+          "confidence": 0.507,
           "probs": {
-            "home": 0.181,
-            "draw": 0.262,
-            "away": 0.557
+            "home": 0.219,
+            "draw": 0.274,
+            "away": 0.507
           }
         },
         "BTTS": {
@@ -257127,7 +257131,7 @@
           "pOver": null
         }
       },
-      "tipScore": 0.557,
+      "tipScore": 0.507,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
@@ -257143,16 +257147,16 @@
         "kickoffUtc": "2026-10-13T16:45:00Z",
         "dc": null,
         "blended": {
-          "home": 0.181,
-          "draw": 0.262,
-          "away": 0.557,
+          "home": 0.219,
+          "draw": 0.274,
+          "away": 0.507,
           "over25": null,
           "btts": null
         },
         "data": {
-          "home": 0.181,
-          "draw": 0.262,
-          "away": 0.557,
+          "home": 0.219,
+          "draw": 0.274,
+          "away": 0.507,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -257357,11 +257361,11 @@
       "tips": {
         "1X2": {
           "pick": "1",
-          "confidence": 0.781,
+          "confidence": 0.696,
           "probs": {
-            "home": 0.781,
-            "draw": 0.172,
-            "away": 0.047
+            "home": 0.696,
+            "draw": 0.213,
+            "away": 0.091
           }
         },
         "BTTS": {
@@ -257398,12 +257402,12 @@
           "confidence": 0.745
         }
       },
-      "tipScore": 0.781,
+      "tipScore": 0.696,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
-        "home": 2042.7,
-        "away": 1782.5
+        "home": 2042.9,
+        "away": 1782.7
       },
       "marketSource": "Pinnacle",
       "note": "1X2 ur Klubb-Elo - inget eget modelltips for matchen, oddsen bara vardefacit",
@@ -257414,16 +257418,16 @@
         "kickoffUtc": "2026-10-13T19:00:00Z",
         "dc": null,
         "blended": {
-          "home": 0.781,
-          "draw": 0.172,
-          "away": 0.047,
+          "home": 0.696,
+          "draw": 0.213,
+          "away": 0.091,
           "over25": null,
           "btts": null
         },
         "data": {
-          "home": 0.781,
-          "draw": 0.172,
-          "away": 0.047,
+          "home": 0.696,
+          "draw": 0.213,
+          "away": 0.091,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -257630,11 +257634,11 @@
       "tips": {
         "1X2": {
           "pick": "1",
-          "confidence": 0.495,
+          "confidence": 0.46,
           "probs": {
-            "home": 0.495,
-            "draw": 0.276,
-            "away": 0.228
+            "home": 0.46,
+            "draw": 0.282,
+            "away": 0.257
           }
         },
         "BTTS": {
@@ -257648,11 +257652,11 @@
           "pOver": null
         }
       },
-      "tipScore": 0.495,
+      "tipScore": 0.46,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
-        "home": 1906.5,
+        "home": 1906.6,
         "away": 1876.4
       },
       "marketSource": "Pinnacle",
@@ -257664,16 +257668,16 @@
         "kickoffUtc": "2026-10-13T19:00:00Z",
         "dc": null,
         "blended": {
-          "home": 0.4955,
-          "draw": 0.2763,
-          "away": 0.2282,
+          "home": 0.4605,
+          "draw": 0.2823,
+          "away": 0.2573,
           "over25": null,
           "btts": null
         },
         "data": {
-          "home": 0.4955,
-          "draw": 0.2763,
-          "away": 0.2282,
+          "home": 0.4605,
+          "draw": 0.2823,
+          "away": 0.2573,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -257878,11 +257882,11 @@
       "tips": {
         "1X2": {
           "pick": "2",
-          "confidence": 0.594,
+          "confidence": 0.536,
           "probs": {
-            "home": 0.155,
-            "draw": 0.251,
-            "away": 0.594
+            "home": 0.197,
+            "draw": 0.268,
+            "away": 0.536
           }
         },
         "BTTS": {
@@ -257919,12 +257923,12 @@
           "confidence": 0.771
         }
       },
-      "tipScore": 0.594,
+      "tipScore": 0.536,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
-        "home": 1797.7,
-        "away": 2026.2
+        "home": 1797.8,
+        "away": 2026.3
       },
       "marketSource": "Pinnacle",
       "note": "1X2 ur Klubb-Elo - inget eget modelltips for matchen, oddsen bara vardefacit",
@@ -257935,16 +257939,16 @@
         "kickoffUtc": "2026-10-13T19:00:00Z",
         "dc": null,
         "blended": {
-          "home": 0.155,
-          "draw": 0.251,
-          "away": 0.594,
+          "home": 0.1968,
+          "draw": 0.2677,
+          "away": 0.5355,
           "over25": null,
           "btts": null
         },
         "data": {
-          "home": 0.155,
-          "draw": 0.251,
-          "away": 0.594,
+          "home": 0.1968,
+          "draw": 0.2677,
+          "away": 0.5355,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -258152,11 +258156,11 @@
       "tips": {
         "1X2": {
           "pick": "1",
-          "confidence": 0.644,
+          "confidence": 0.576,
           "probs": {
-            "home": 0.644,
-            "draw": 0.234,
-            "away": 0.122
+            "home": 0.576,
+            "draw": 0.257,
+            "away": 0.167
           }
         },
         "BTTS": {
@@ -258170,7 +258174,7 @@
           "pOver": null
         }
       },
-      "tipScore": 0.644,
+      "tipScore": 0.576,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
@@ -258186,16 +258190,16 @@
         "kickoffUtc": "2026-10-13T19:00:00Z",
         "dc": null,
         "blended": {
-          "home": 0.644,
-          "draw": 0.234,
-          "away": 0.122,
+          "home": 0.576,
+          "draw": 0.257,
+          "away": 0.167,
           "over25": null,
           "btts": null
         },
         "data": {
-          "home": 0.644,
-          "draw": 0.234,
-          "away": 0.122,
+          "home": 0.576,
+          "draw": 0.257,
+          "away": 0.167,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -258402,11 +258406,11 @@
       "tips": {
         "1X2": {
           "pick": "1",
-          "confidence": 0.387,
+          "confidence": 0.379,
           "probs": {
-            "home": 0.387,
+            "home": 0.379,
             "draw": 0.29,
-            "away": 0.323
+            "away": 0.331
           }
         },
         "BTTS": {
@@ -258443,12 +258447,12 @@
           "confidence": 0.752
         }
       },
-      "tipScore": 0.387,
+      "tipScore": 0.379,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
-        "home": 1796.2,
-        "away": 1838.7
+        "home": 1796.4,
+        "away": 1838.9
       },
       "marketSource": "Pinnacle",
       "note": "1X2 ur Klubb-Elo - inget eget modelltips for matchen, oddsen bara vardefacit",
@@ -258459,16 +258463,16 @@
         "kickoffUtc": "2026-10-13T19:00:00Z",
         "dc": null,
         "blended": {
-          "home": 0.387,
+          "home": 0.379,
           "draw": 0.29,
-          "away": 0.323,
+          "away": 0.331,
           "over25": null,
           "btts": null
         },
         "data": {
-          "home": 0.387,
+          "home": 0.379,
           "draw": 0.29,
-          "away": 0.323,
+          "away": 0.331,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -258503,7 +258507,7 @@
             "strategy": "consensusAtBestPrice",
             "fairSource": "pinnacle",
             "p": 0.3083,
-            "modelP": 0.323,
+            "modelP": 0.331,
             "ev": 0.0482,
             "stakeSek": 500
           }
@@ -258686,11 +258690,11 @@
       "tips": {
         "1X2": {
           "pick": "1",
-          "confidence": 0.508,
+          "confidence": 0.47,
           "probs": {
-            "home": 0.508,
-            "draw": 0.274,
-            "away": 0.218
+            "home": 0.47,
+            "draw": 0.281,
+            "away": 0.249
           }
         },
         "BTTS": {
@@ -258727,11 +258731,11 @@
           "confidence": 0.803
         }
       },
-      "tipScore": 0.508,
+      "tipScore": 0.47,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
-        "home": 1825.4,
+        "home": 1825.5,
         "away": 1786.7
       },
       "marketSource": "Pinnacle",
@@ -258743,16 +258747,16 @@
         "kickoffUtc": "2026-10-13T19:00:00Z",
         "dc": null,
         "blended": {
-          "home": 0.508,
-          "draw": 0.274,
-          "away": 0.218,
+          "home": 0.47,
+          "draw": 0.281,
+          "away": 0.249,
           "over25": null,
           "btts": null
         },
         "data": {
-          "home": 0.508,
-          "draw": 0.274,
-          "away": 0.218,
+          "home": 0.47,
+          "draw": 0.281,
+          "away": 0.249,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -258787,7 +258791,7 @@
             "strategy": "consensusAtBestPrice",
             "fairSource": "pinnacle",
             "p": 0.2762,
-            "modelP": 0.218,
+            "modelP": 0.249,
             "ev": 0.0497,
             "stakeSek": 500
           }
@@ -258938,7 +258942,7 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1825,
+          "elo": 1826,
           "rank": 4,
           "country": "GER"
         },
@@ -258970,11 +258974,11 @@
       "tips": {
         "1X2": {
           "pick": "2",
-          "confidence": 0.38,
+          "confidence": 0.374,
           "probs": {
-            "home": 0.33,
+            "home": 0.336,
             "draw": 0.29,
-            "away": 0.38
+            "away": 0.374
           }
         },
         "BTTS": {
@@ -258988,7 +258992,7 @@
           "pOver": null
         }
       },
-      "tipScore": 0.38,
+      "tipScore": 0.374,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
@@ -259004,16 +259008,16 @@
         "kickoffUtc": "2026-10-14T16:45:00Z",
         "dc": null,
         "blended": {
-          "home": 0.33,
+          "home": 0.336,
           "draw": 0.29,
-          "away": 0.38,
+          "away": 0.374,
           "over25": null,
           "btts": null
         },
         "data": {
-          "home": 0.33,
+          "home": 0.336,
           "draw": 0.29,
-          "away": 0.38,
+          "away": 0.374,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -259048,7 +259052,7 @@
             "strategy": "consensusAtBestPrice",
             "fairSource": "pinnacle",
             "p": 0.2722,
-            "modelP": 0.33,
+            "modelP": 0.336,
             "ev": 0.0479,
             "stakeSek": 500
           }
@@ -259231,11 +259235,11 @@
       "tips": {
         "1X2": {
           "pick": "2",
-          "confidence": 0.685,
+          "confidence": 0.603,
           "probs": {
-            "home": 0.097,
-            "draw": 0.218,
-            "away": 0.685
+            "home": 0.149,
+            "draw": 0.248,
+            "away": 0.603
           }
         },
         "BTTS": {
@@ -259249,12 +259253,12 @@
           "pOver": null
         }
       },
-      "tipScore": 0.685,
+      "tipScore": 0.603,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
         "home": 1637.5,
-        "away": 1936.9
+        "away": 1929.7
       },
       "marketSource": "Pinnacle",
       "note": "1X2 ur Klubb-Elo - inget eget modelltips for matchen, oddsen bara vardefacit",
@@ -259265,16 +259269,16 @@
         "kickoffUtc": "2026-10-14T16:45:00Z",
         "dc": null,
         "blended": {
-          "home": 0.097,
-          "draw": 0.218,
-          "away": 0.685,
+          "home": 0.149,
+          "draw": 0.248,
+          "away": 0.603,
           "over25": null,
           "btts": null
         },
         "data": {
-          "home": 0.097,
-          "draw": 0.218,
-          "away": 0.685,
+          "home": 0.149,
+          "draw": 0.248,
+          "away": 0.603,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -259454,7 +259458,7 @@
           "country": "AUT"
         },
         "away": {
-          "elo": 1937,
+          "elo": 1930,
           "rank": 3,
           "country": "ENG"
         }
@@ -259481,11 +259485,11 @@
       "tips": {
         "1X2": {
           "pick": "1",
-          "confidence": 0.429,
+          "confidence": 0.409,
           "probs": {
-            "home": 0.429,
-            "draw": 0.286,
-            "away": 0.284
+            "home": 0.409,
+            "draw": 0.288,
+            "away": 0.303
           }
         },
         "BTTS": {
@@ -259499,12 +259503,12 @@
           "pOver": 0.507
         }
       },
-      "tipScore": 0.468,
+      "tipScore": 0.458,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
-        "home": 1692.3,
-        "away": 1706.6
+        "home": 1692,
+        "away": 1707.7
       },
       "marketSource": "Pinnacle",
       "note": "1X2 ur Klubb-Elo - inget eget modelltips for matchen, oddsen bara vardefacit",
@@ -259515,16 +259519,16 @@
         "kickoffUtc": "2026-10-14T19:00:00Z",
         "dc": null,
         "blended": {
-          "home": 0.4294,
-          "draw": 0.2863,
-          "away": 0.2843,
+          "home": 0.409,
+          "draw": 0.288,
+          "away": 0.303,
           "over25": 0.507,
           "btts": null
         },
         "data": {
-          "home": 0.4294,
-          "draw": 0.2863,
-          "away": 0.2843,
+          "home": 0.409,
+          "draw": 0.288,
+          "away": 0.303,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -259702,7 +259706,7 @@
           "country": "UKR"
         },
         "away": {
-          "elo": 1707,
+          "elo": 1708,
           "rank": 2,
           "country": "GRE"
         }
@@ -259729,11 +259733,11 @@
       "tips": {
         "1X2": {
           "pick": "2",
-          "confidence": 0.431,
+          "confidence": 0.412,
           "probs": {
-            "home": 0.283,
-            "draw": 0.286,
-            "away": 0.431
+            "home": 0.3,
+            "draw": 0.288,
+            "away": 0.412
           }
         },
         "BTTS": {
@@ -259747,12 +259751,12 @@
           "pOver": null
         }
       },
-      "tipScore": 0.431,
+      "tipScore": 0.412,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
         "home": 1857.1,
-        "away": 1974.1
+        "away": 1974.5
       },
       "marketSource": "Pinnacle",
       "note": "1X2 ur Klubb-Elo - inget eget modelltips for matchen, oddsen bara vardefacit",
@@ -259763,16 +259767,16 @@
         "kickoffUtc": "2026-10-14T19:00:00Z",
         "dc": null,
         "blended": {
-          "home": 0.283,
-          "draw": 0.286,
-          "away": 0.431,
+          "home": 0.3,
+          "draw": 0.288,
+          "away": 0.412,
           "over25": null,
           "btts": null
         },
         "data": {
-          "home": 0.283,
-          "draw": 0.286,
-          "away": 0.431,
+          "home": 0.3,
+          "draw": 0.288,
+          "away": 0.412,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -259807,7 +259811,7 @@
             "strategy": "consensusAtBestPrice",
             "fairSource": "pinnacle",
             "p": 0.2599,
-            "modelP": 0.283,
+            "modelP": 0.3,
             "ev": 0.0657,
             "stakeSek": 500
           }
@@ -259970,7 +259974,7 @@
           "country": "ITA"
         },
         "away": {
-          "elo": 1974,
+          "elo": 1975,
           "rank": 2,
           "country": "ESP"
         }
@@ -259997,11 +260001,11 @@
       "tips": {
         "1X2": {
           "pick": "2",
-          "confidence": 0.428,
+          "confidence": 0.41,
           "probs": {
-            "home": 0.285,
-            "draw": 0.287,
-            "away": 0.428
+            "home": 0.302,
+            "draw": 0.288,
+            "away": 0.41
           }
         },
         "BTTS": {
@@ -260015,12 +260019,12 @@
           "pOver": null
         }
       },
-      "tipScore": 0.428,
+      "tipScore": 0.41,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
         "home": 1780.2,
-        "away": 1895.2
+        "away": 1895.4
       },
       "marketSource": "Pinnacle",
       "note": "1X2 ur Klubb-Elo - inget eget modelltips for matchen, oddsen bara vardefacit",
@@ -260031,16 +260035,16 @@
         "kickoffUtc": "2026-10-14T19:00:00Z",
         "dc": null,
         "blended": {
-          "home": 0.285,
-          "draw": 0.287,
-          "away": 0.428,
+          "home": 0.302,
+          "draw": 0.288,
+          "away": 0.41,
           "over25": null,
           "btts": null
         },
         "data": {
-          "home": 0.285,
-          "draw": 0.287,
-          "away": 0.428,
+          "home": 0.302,
+          "draw": 0.288,
+          "away": 0.41,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -260245,11 +260249,11 @@
       "tips": {
         "1X2": {
           "pick": "1",
-          "confidence": 0.554,
+          "confidence": 0.512,
           "probs": {
-            "home": 0.554,
-            "draw": 0.263,
-            "away": 0.183
+            "home": 0.512,
+            "draw": 0.273,
+            "away": 0.215
           }
         },
         "BTTS": {
@@ -260286,12 +260290,12 @@
           "confidence": 0.658
         }
       },
-      "tipScore": 0.554,
+      "tipScore": 0.512,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
-        "home": 2028.1,
-        "away": 1958.1
+        "home": 2035.1,
+        "away": 1958.4
       },
       "marketSource": "Pinnacle",
       "note": "1X2 ur Klubb-Elo - inget eget modelltips for matchen, oddsen bara vardefacit",
@@ -260302,16 +260306,16 @@
         "kickoffUtc": "2026-10-14T19:00:00Z",
         "dc": null,
         "blended": {
-          "home": 0.554,
-          "draw": 0.263,
-          "away": 0.183,
+          "home": 0.512,
+          "draw": 0.273,
+          "away": 0.215,
           "over25": null,
           "btts": null
         },
         "data": {
-          "home": 0.554,
-          "draw": 0.263,
-          "away": 0.183,
+          "home": 0.512,
+          "draw": 0.273,
+          "away": 0.215,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -260484,7 +260488,7 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 2028,
+          "elo": 2035,
           "rank": 2,
           "country": "ENG"
         },
@@ -260516,11 +260520,11 @@
       "tips": {
         "1X2": {
           "pick": "1",
-          "confidence": 0.416,
+          "confidence": 0.405,
           "probs": {
-            "home": 0.416,
-            "draw": 0.288,
-            "away": 0.297
+            "home": 0.405,
+            "draw": 0.289,
+            "away": 0.306
           }
         },
         "BTTS": {
@@ -260534,12 +260538,12 @@
           "pOver": null
         }
       },
-      "tipScore": 0.416,
+      "tipScore": 0.405,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
-        "home": 1817.8,
-        "away": 1841.3
+        "home": 1822.7,
+        "away": 1841.7
       },
       "marketSource": "Pinnacle",
       "note": "1X2 ur Klubb-Elo - inget eget modelltips for matchen, oddsen bara vardefacit",
@@ -260550,16 +260554,16 @@
         "kickoffUtc": "2026-10-14T19:00:00Z",
         "dc": null,
         "blended": {
-          "home": 0.4156,
-          "draw": 0.2877,
-          "away": 0.2967,
+          "home": 0.405,
+          "draw": 0.289,
+          "away": 0.306,
           "over25": null,
           "btts": null
         },
         "data": {
-          "home": 0.4156,
-          "draw": 0.2877,
-          "away": 0.2967,
+          "home": 0.405,
+          "draw": 0.289,
+          "away": 0.306,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -260732,12 +260736,12 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1818,
+          "elo": 1823,
           "rank": 4,
           "country": "ESP"
         },
         "away": {
-          "elo": 1841,
+          "elo": 1842,
           "rank": 3,
           "country": "POR"
         }
@@ -260764,11 +260768,11 @@
       "tips": {
         "1X2": {
           "pick": "2",
-          "confidence": 0.652,
+          "confidence": 0.583,
           "probs": {
-            "home": 0.117,
-            "draw": 0.231,
-            "away": 0.652
+            "home": 0.162,
+            "draw": 0.255,
+            "away": 0.583
           }
         },
         "BTTS": {
@@ -260805,12 +260809,12 @@
           "confidence": 0.723
         }
       },
-      "tipScore": 0.652,
+      "tipScore": 0.583,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
-        "home": 1550.7,
-        "away": 1823.6
+        "home": 1550.6,
+        "away": 1823.8
       },
       "marketSource": "Pinnacle",
       "note": "1X2 ur Klubb-Elo - inget eget modelltips for matchen, oddsen bara vardefacit",
@@ -260821,16 +260825,16 @@
         "kickoffUtc": "2026-10-14T19:00:00Z",
         "dc": null,
         "blended": {
-          "home": 0.117,
-          "draw": 0.231,
-          "away": 0.652,
+          "home": 0.162,
+          "draw": 0.255,
+          "away": 0.583,
           "over25": null,
           "btts": null
         },
         "data": {
-          "home": 0.117,
-          "draw": 0.231,
-          "away": 0.652,
+          "home": 0.162,
+          "draw": 0.255,
+          "away": 0.583,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -261037,11 +261041,11 @@
       "tips": {
         "1X2": {
           "pick": "2",
-          "confidence": 0.682,
+          "confidence": 0.608,
           "probs": {
-            "home": 0.099,
-            "draw": 0.219,
-            "away": 0.682
+            "home": 0.145,
+            "draw": 0.247,
+            "away": 0.608
           }
         },
         "BTTS": {
@@ -261055,12 +261059,12 @@
           "pOver": null
         }
       },
-      "tipScore": 0.682,
+      "tipScore": 0.608,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
         "home": 1502.5,
-        "away": 1799.7
+        "away": 1799.8
       },
       "marketSource": "Pinnacle",
       "note": "1X2 ur Klubb-Elo - inget eget modelltips for matchen, oddsen bara vardefacit",
@@ -261071,16 +261075,16 @@
         "kickoffUtc": "2026-10-15T16:45:00Z",
         "dc": null,
         "blended": {
-          "home": 0.099,
-          "draw": 0.219,
-          "away": 0.682,
+          "home": 0.145,
+          "draw": 0.247,
+          "away": 0.608,
           "over25": null,
           "btts": null
         },
         "data": {
-          "home": 0.099,
-          "draw": 0.219,
-          "away": 0.682,
+          "home": 0.145,
+          "draw": 0.247,
+          "away": 0.608,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -261285,11 +261289,11 @@
       "tips": {
         "1X2": {
           "pick": "2",
-          "confidence": 0.404,
+          "confidence": 0.392,
           "probs": {
-            "home": 0.307,
-            "draw": 0.289,
-            "away": 0.404
+            "home": 0.319,
+            "draw": 0.29,
+            "away": 0.392
           }
         },
         "BTTS": {
@@ -261303,7 +261307,7 @@
           "pOver": null
         }
       },
-      "tipScore": 0.404,
+      "tipScore": 0.392,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
@@ -261319,16 +261323,16 @@
         "kickoffUtc": "2026-10-15T16:45:00Z",
         "dc": null,
         "blended": {
-          "home": 0.307,
-          "draw": 0.289,
-          "away": 0.404,
+          "home": 0.3187,
+          "draw": 0.2897,
+          "away": 0.3916,
           "over25": null,
           "btts": null
         },
         "data": {
-          "home": 0.307,
-          "draw": 0.289,
-          "away": 0.404,
+          "home": 0.3187,
+          "draw": 0.2897,
+          "away": 0.3916,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -261533,11 +261537,11 @@
       "tips": {
         "1X2": {
           "pick": "1",
-          "confidence": 0.523,
+          "confidence": 0.481,
           "probs": {
-            "home": 0.523,
-            "draw": 0.271,
-            "away": 0.207
+            "home": 0.481,
+            "draw": 0.279,
+            "away": 0.24
           }
         },
         "BTTS": {
@@ -261551,7 +261555,7 @@
           "pOver": 0.471
         }
       },
-      "tipScore": 0.526,
+      "tipScore": 0.505,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
@@ -261567,16 +261571,16 @@
         "kickoffUtc": "2026-10-15T16:45:00Z",
         "dc": null,
         "blended": {
-          "home": 0.5225,
-          "draw": 0.2707,
-          "away": 0.2068,
+          "home": 0.481,
+          "draw": 0.279,
+          "away": 0.24,
           "over25": 0.471,
           "btts": null
         },
         "data": {
-          "home": 0.5225,
-          "draw": 0.2707,
-          "away": 0.2068,
+          "home": 0.481,
+          "draw": 0.279,
+          "away": 0.24,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -261780,11 +261784,11 @@
       "tips": {
         "1X2": {
           "pick": "1",
-          "confidence": 0.42,
+          "confidence": 0.404,
           "probs": {
-            "home": 0.42,
-            "draw": 0.287,
-            "away": 0.292
+            "home": 0.404,
+            "draw": 0.289,
+            "away": 0.308
           }
         },
         "BTTS": {
@@ -261798,7 +261802,7 @@
           "pOver": null
         }
       },
-      "tipScore": 0.42,
+      "tipScore": 0.404,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
@@ -261814,16 +261818,16 @@
         "kickoffUtc": "2026-10-15T16:45:00Z",
         "dc": null,
         "blended": {
-          "home": 0.4204,
-          "draw": 0.2873,
-          "away": 0.2923,
+          "home": 0.4036,
+          "draw": 0.2887,
+          "away": 0.3077,
           "over25": null,
           "btts": null
         },
         "data": {
-          "home": 0.4204,
-          "draw": 0.2873,
-          "away": 0.2923,
+          "home": 0.4036,
+          "draw": 0.2887,
+          "away": 0.3077,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -262027,11 +262031,11 @@
       "tips": {
         "1X2": {
           "pick": "2",
-          "confidence": 0.685,
+          "confidence": 0.61,
           "probs": {
-            "home": 0.097,
-            "draw": 0.218,
-            "away": 0.685
+            "home": 0.144,
+            "draw": 0.246,
+            "away": 0.61
           }
         },
         "BTTS": {
@@ -262045,7 +262049,7 @@
           "pOver": null
         }
       },
-      "tipScore": 0.685,
+      "tipScore": 0.61,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
@@ -262061,16 +262065,16 @@
         "kickoffUtc": "2026-10-15T16:45:00Z",
         "dc": null,
         "blended": {
-          "home": 0.097,
-          "draw": 0.218,
-          "away": 0.685,
+          "home": 0.144,
+          "draw": 0.246,
+          "away": 0.61,
           "over25": null,
           "btts": null
         },
         "data": {
-          "home": 0.097,
-          "draw": 0.218,
-          "away": 0.685,
+          "home": 0.144,
+          "draw": 0.246,
+          "away": 0.61,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -262275,11 +262279,11 @@
       "tips": {
         "1X2": {
           "pick": "1",
-          "confidence": 0.682,
+          "confidence": 0.604,
           "probs": {
-            "home": 0.682,
-            "draw": 0.219,
-            "away": 0.099
+            "home": 0.604,
+            "draw": 0.248,
+            "away": 0.148
           }
         },
         "BTTS": {
@@ -262316,11 +262320,11 @@
           "confidence": 0.893
         }
       },
-      "tipScore": 0.682,
+      "tipScore": 0.604,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
-        "home": 1651.3,
+        "home": 1647.6,
         "away": 1484.8
       },
       "marketSource": "Pinnacle",
@@ -262332,16 +262336,16 @@
         "kickoffUtc": "2026-10-15T16:45:00Z",
         "dc": null,
         "blended": {
-          "home": 0.682,
-          "draw": 0.219,
-          "away": 0.099,
+          "home": 0.604,
+          "draw": 0.248,
+          "away": 0.148,
           "over25": null,
           "btts": null
         },
         "data": {
-          "home": 0.682,
-          "draw": 0.219,
-          "away": 0.099,
+          "home": 0.604,
+          "draw": 0.248,
+          "away": 0.148,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -262515,7 +262519,7 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1651,
+          "elo": 1648,
           "rank": 4,
           "country": "GRE"
         },
@@ -262547,11 +262551,11 @@
       "tips": {
         "1X2": {
           "pick": "2",
-          "confidence": 0.43,
+          "confidence": 0.411,
           "probs": {
-            "home": 0.284,
-            "draw": 0.286,
-            "away": 0.43
+            "home": 0.301,
+            "draw": 0.288,
+            "away": 0.411
           }
         },
         "BTTS": {
@@ -262565,12 +262569,12 @@
           "pOver": null
         }
       },
-      "tipScore": 0.43,
+      "tipScore": 0.411,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
         "home": 1581.6,
-        "away": 1697.7
+        "away": 1697.9
       },
       "marketSource": "Pinnacle",
       "note": "1X2 ur Klubb-Elo - inget eget modelltips for matchen, oddsen bara vardefacit",
@@ -262581,16 +262585,16 @@
         "kickoffUtc": "2026-10-15T16:45:00Z",
         "dc": null,
         "blended": {
-          "home": 0.284,
-          "draw": 0.286,
-          "away": 0.43,
+          "home": 0.301,
+          "draw": 0.288,
+          "away": 0.411,
           "over25": null,
           "btts": null
         },
         "data": {
-          "home": 0.284,
-          "draw": 0.286,
-          "away": 0.43,
+          "home": 0.301,
+          "draw": 0.288,
+          "away": 0.411,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -262768,7 +262772,7 @@
         },
         "away": {
           "elo": 1698,
-          "rank": 18,
+          "rank": 19,
           "country": "ESP"
         }
       },
@@ -262794,11 +262798,11 @@
       "tips": {
         "1X2": {
           "pick": "2",
-          "confidence": 0.536,
+          "confidence": 0.491,
           "probs": {
-            "home": 0.196,
-            "draw": 0.267,
-            "away": 0.536
+            "home": 0.232,
+            "draw": 0.277,
+            "away": 0.491
           }
         },
         "BTTS": {
@@ -262812,12 +262816,12 @@
           "pOver": null
         }
       },
-      "tipScore": 0.536,
+      "tipScore": 0.491,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
         "home": 1485.6,
-        "away": 1673.6
+        "away": 1673.4
       },
       "marketSource": "Pinnacle",
       "note": "1X2 ur Klubb-Elo - inget eget modelltips for matchen, oddsen bara vardefacit",
@@ -262828,16 +262832,16 @@
         "kickoffUtc": "2026-10-15T16:45:00Z",
         "dc": null,
         "blended": {
-          "home": 0.1962,
-          "draw": 0.2673,
-          "away": 0.5365,
+          "home": 0.232,
+          "draw": 0.277,
+          "away": 0.491,
           "over25": null,
           "btts": null
         },
         "data": {
-          "home": 0.1962,
-          "draw": 0.2673,
-          "away": 0.5365,
+          "home": 0.232,
+          "draw": 0.277,
+          "away": 0.491,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -263015,7 +263019,7 @@
           "country": "FIN"
         },
         "away": {
-          "elo": 1674,
+          "elo": 1673,
           "rank": 5,
           "country": "TUR"
         }
@@ -263042,11 +263046,11 @@
       "tips": {
         "1X2": {
           "pick": "1",
-          "confidence": 0.902,
+          "confidence": 0.86,
           "probs": {
-            "home": 0.902,
-            "draw": 0.094,
-            "away": 0.004
+            "home": 0.86,
+            "draw": 0.124,
+            "away": 0.016
           }
         },
         "BTTS": {
@@ -263060,11 +263064,11 @@
           "pOver": null
         }
       },
-      "tipScore": 0.902,
+      "tipScore": 0.86,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
-        "home": 1896,
+        "home": 1895.9,
         "away": 1389.8
       },
       "marketSource": "Pinnacle",
@@ -263076,16 +263080,16 @@
         "kickoffUtc": "2026-10-15T19:00:00Z",
         "dc": null,
         "blended": {
-          "home": 0.902,
-          "draw": 0.094,
-          "away": 0.004,
+          "home": 0.86,
+          "draw": 0.124,
+          "away": 0.016,
           "over25": null,
           "btts": null
         },
         "data": {
-          "home": 0.902,
-          "draw": 0.094,
-          "away": 0.004,
+          "home": 0.86,
+          "draw": 0.124,
+          "away": 0.016,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -263291,11 +263295,11 @@
       "tips": {
         "1X2": {
           "pick": "1",
-          "confidence": 0.405,
+          "confidence": 0.392,
           "probs": {
-            "home": 0.405,
-            "draw": 0.289,
-            "away": 0.306
+            "home": 0.392,
+            "draw": 0.29,
+            "away": 0.318
           }
         },
         "BTTS": {
@@ -263309,12 +263313,12 @@
           "pOver": 0.5
         }
       },
-      "tipScore": 0.453,
+      "tipScore": 0.446,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
         "home": 1694.2,
-        "away": 1724.7
+        "away": 1725
       },
       "marketSource": "Pinnacle",
       "note": "1X2 ur Klubb-Elo - inget eget modelltips for matchen, oddsen bara vardefacit",
@@ -263325,16 +263329,16 @@
         "kickoffUtc": "2026-10-15T19:00:00Z",
         "dc": null,
         "blended": {
-          "home": 0.405,
-          "draw": 0.289,
-          "away": 0.306,
+          "home": 0.392,
+          "draw": 0.29,
+          "away": 0.318,
           "over25": 0.5,
           "btts": null
         },
         "data": {
-          "home": 0.405,
-          "draw": 0.289,
-          "away": 0.306,
+          "home": 0.392,
+          "draw": 0.29,
+          "away": 0.318,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -263368,7 +263372,7 @@
             "strategy": "consensusAtBestPrice",
             "fairSource": "pinnacle",
             "p": 0.2997,
-            "modelP": 0.289,
+            "modelP": 0.29,
             "ev": 0.079,
             "stakeSek": 500
           }
@@ -263551,11 +263555,11 @@
       "tips": {
         "1X2": {
           "pick": "1",
-          "confidence": 0.761,
+          "confidence": 0.678,
           "probs": {
-            "home": 0.761,
-            "draw": 0.182,
-            "away": 0.057
+            "home": 0.678,
+            "draw": 0.221,
+            "away": 0.101
           }
         },
         "BTTS": {
@@ -263569,7 +263573,7 @@
           "pOver": null
         }
       },
-      "tipScore": 0.761,
+      "tipScore": 0.678,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
@@ -263585,16 +263589,16 @@
         "kickoffUtc": "2026-10-15T19:00:00Z",
         "dc": null,
         "blended": {
-          "home": 0.761,
-          "draw": 0.182,
-          "away": 0.057,
+          "home": 0.678,
+          "draw": 0.221,
+          "away": 0.101,
           "over25": null,
           "btts": null
         },
         "data": {
-          "home": 0.761,
-          "draw": 0.182,
-          "away": 0.057,
+          "home": 0.678,
+          "draw": 0.221,
+          "away": 0.101,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -263800,11 +263804,11 @@
       "tips": {
         "1X2": {
           "pick": "1",
-          "confidence": 0.597,
+          "confidence": 0.539,
           "probs": {
-            "home": 0.597,
-            "draw": 0.25,
-            "away": 0.152
+            "home": 0.539,
+            "draw": 0.267,
+            "away": 0.195
           }
         },
         "BTTS": {
@@ -263818,7 +263822,7 @@
           "pOver": null
         }
       },
-      "tipScore": 0.597,
+      "tipScore": 0.539,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
@@ -263834,16 +263838,16 @@
         "kickoffUtc": "2026-10-15T19:00:00Z",
         "dc": null,
         "blended": {
-          "home": 0.5976,
-          "draw": 0.2503,
-          "away": 0.1522,
+          "home": 0.5385,
+          "draw": 0.2667,
+          "away": 0.1948,
           "over25": null,
           "btts": null
         },
         "data": {
-          "home": 0.5976,
-          "draw": 0.2503,
-          "away": 0.1522,
+          "home": 0.5385,
+          "draw": 0.2667,
+          "away": 0.1948,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -264049,11 +264053,11 @@
       "tips": {
         "1X2": {
           "pick": "1",
-          "confidence": 0.763,
+          "confidence": 0.682,
           "probs": {
-            "home": 0.763,
-            "draw": 0.181,
-            "away": 0.056
+            "home": 0.682,
+            "draw": 0.219,
+            "away": 0.099
           }
         },
         "BTTS": {
@@ -264067,11 +264071,11 @@
           "pOver": null
         }
       },
-      "tipScore": 0.763,
+      "tipScore": 0.682,
       "marketOnly": true,
       "dataSource": "clubelo",
       "clubElo": {
-        "home": 1790,
+        "home": 1792.4,
         "away": 1548.6
       },
       "marketSource": "Pinnacle",
@@ -264083,16 +264087,16 @@
         "kickoffUtc": "2026-10-15T19:00:00Z",
         "dc": null,
         "blended": {
-          "home": 0.763,
-          "draw": 0.181,
-          "away": 0.056,
+          "home": 0.682,
+          "draw": 0.219,
+          "away": 0.099,
           "over25": null,
           "btts": null
         },
         "data": {
-          "home": 0.763,
-          "draw": 0.181,
-          "away": 0.056,
+          "home": 0.682,
+          "draw": 0.219,
+          "away": 0.099,
           "source": "clubelo"
         },
         "marketLed": null,
@@ -264266,7 +264270,7 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1790,
+          "elo": 1792,
           "rank": 6,
           "country": "GER"
         },
@@ -264587,8 +264591,8 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1827,
-          "rank": 11,
+          "elo": 1824,
+          "rank": 12,
           "country": "ENG"
         },
         "away": {
@@ -264943,7 +264947,7 @@
           "country": "ENG"
         },
         "away": {
-          "elo": 1937,
+          "elo": 1930,
           "rank": 3,
           "country": "ENG"
         }
@@ -265268,7 +265272,7 @@
       "teamElo": {
         "home": {
           "elo": 1799,
-          "rank": 16,
+          "rank": 15,
           "country": "ENG"
         },
         "away": null
@@ -265604,13 +265608,13 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 2028,
+          "elo": 2035,
           "rank": 2,
           "country": "ENG"
         },
         "away": {
           "elo": 1702,
-          "rank": 20,
+          "rank": 21,
           "country": "ENG"
         }
       },
@@ -266633,8 +266637,8 @@
           "country": "ENG"
         },
         "away": {
-          "elo": 1824,
-          "rank": 12,
+          "elo": 1830,
+          "rank": 11,
           "country": "ENG"
         }
       },
@@ -267318,8 +267322,8 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1805,
-          "rank": 14,
+          "elo": 1799,
+          "rank": 16,
           "country": "ENG"
         },
         "away": {
@@ -267653,11 +267657,11 @@
       "teamElo": {
         "home": {
           "elo": 1800,
-          "rank": 15,
+          "rank": 14,
           "country": "ENG"
         },
         "away": {
-          "elo": 1690,
+          "elo": 1691,
           "rank": 22,
           "country": "ENG"
         }
@@ -267989,7 +267993,7 @@
           "country": "ITA"
         },
         "away": {
-          "elo": 1697,
+          "elo": 1699,
           "rank": 11,
           "country": "ITA"
         }
@@ -268649,7 +268653,7 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1753,
+          "elo": 1757,
           "rank": 9,
           "country": "ITA"
         },
@@ -269290,7 +269294,7 @@
           "country": "ITA"
         },
         "away": {
-          "elo": 1616,
+          "elo": 1611,
           "rank": 21,
           "country": "ITA"
         }
@@ -269936,7 +269940,7 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1823,
+          "elo": 1822,
           "rank": 5,
           "country": "ITA"
         },
@@ -270256,12 +270260,12 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1842,
+          "elo": 1840,
           "rank": 3,
           "country": "ITA"
         },
         "away": {
-          "elo": 1778,
+          "elo": 1782,
           "rank": 8,
           "country": "ITA"
         }
@@ -270588,12 +270592,12 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1642,
+          "elo": 1638,
           "rank": 20,
           "country": "ITA"
         },
         "away": {
-          "elo": 1678,
+          "elo": 1681,
           "rank": 15,
           "country": "ITA"
         }
@@ -271221,8 +271225,8 @@
           "country": "GER"
         },
         "away": {
-          "elo": 1653,
-          "rank": 19,
+          "elo": 1659,
+          "rank": 17,
           "country": "GER"
         }
       },
@@ -271548,8 +271552,8 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1670,
-          "rank": 16,
+          "elo": 1669,
+          "rank": 15,
           "country": "GER"
         },
         "away": {
@@ -272213,7 +272217,7 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1649,
+          "elo": 1646,
           "rank": 20,
           "country": "GER"
         },
@@ -272869,8 +272873,8 @@
           "country": "GER"
         },
         "away": {
-          "elo": 1659,
-          "rank": 17,
+          "elo": 1658,
+          "rank": 18,
           "country": "GER"
         }
       },
@@ -273164,7 +273168,7 @@
       "teamElo": {
         "home": null,
         "away": {
-          "elo": 1825,
+          "elo": 1826,
           "rank": 4,
           "country": "GER"
         }
@@ -273483,7 +273487,7 @@
           "country": "GER"
         },
         "away": {
-          "elo": 1790,
+          "elo": 1792,
           "rank": 6,
           "country": "GER"
         }
@@ -273774,8 +273778,8 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1672,
-          "rank": 15,
+          "elo": 1667,
+          "rank": 16,
           "country": "GER"
         },
         "away": {
@@ -277518,7 +277522,7 @@
       "teamElo": {
         "home": {
           "elo": 1698,
-          "rank": 19,
+          "rank": 20,
           "country": "ESP"
         },
         "away": {
@@ -278159,7 +278163,7 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1818,
+          "elo": 1823,
           "rank": 4,
           "country": "ESP"
         },
@@ -278797,13 +278801,13 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1717,
-          "rank": 14,
+          "elo": 1712,
+          "rank": 15,
           "country": "ESP"
         },
         "away": {
           "elo": 1685,
-          "rank": 24,
+          "rank": 23,
           "country": "ESP"
         }
       },
@@ -279440,7 +279444,7 @@
           "country": "ESP"
         },
         "away": {
-          "elo": 1769,
+          "elo": 1772,
           "rank": 6,
           "country": "ESP"
         }
@@ -279756,7 +279760,7 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1974,
+          "elo": 1975,
           "rank": 2,
           "country": "ESP"
         },
@@ -280078,7 +280082,7 @@
       "teamElo": {
         "home": {
           "elo": 1698,
-          "rank": 18,
+          "rank": 19,
           "country": "ESP"
         },
         "away": {
@@ -280717,7 +280721,7 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1742,
+          "elo": 1736,
           "rank": 8,
           "country": "FRA"
         },
@@ -281356,7 +281360,7 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1603,
+          "elo": 1597,
           "rank": 20,
           "country": "FRA"
         },
@@ -281675,12 +281679,12 @@
       "referee": null,
       "teamElo": {
         "home": {
-          "elo": 1612,
+          "elo": 1611,
           "rank": 18,
           "country": "FRA"
         },
         "away": {
-          "elo": 1762,
+          "elo": 1767,
           "rank": 6,
           "country": "FRA"
         }
@@ -282320,7 +282324,7 @@
           "country": "FRA"
         },
         "away": {
-          "elo": 1651,
+          "elo": 1645,
           "rank": 15,
           "country": "FRA"
         }
@@ -282652,7 +282656,7 @@
           "country": "FRA"
         },
         "away": {
-          "elo": 1754,
+          "elo": 1760,
           "rank": 7,
           "country": "FRA"
         }
@@ -282972,7 +282976,7 @@
           "country": "FRA"
         },
         "away": {
-          "elo": 1668,
+          "elo": 1674,
           "rank": 14,
           "country": "FRA"
         }
@@ -283731,7 +283735,7 @@
     "source": "the-odds-api.com v4"
   },
   "proMeta": {
-    "updatedAt": "2026-10-12T19:17:45.859Z",
+    "updatedAt": "2026-10-12T19:35:47.964Z",
     "config": {
       "dcWeight": 0.5,
       "minEv": 0.03,
@@ -287361,7 +287365,7 @@
       "strategy": "consensusAtBestPrice",
       "fairSource": "pinnacle",
       "p": 0.2997,
-      "modelP": 0.289,
+      "modelP": 0.29,
       "ev": 0.079,
       "stakeSek": 500
     },
@@ -287421,7 +287425,7 @@
       "strategy": "consensusAtBestPrice",
       "fairSource": "pinnacle",
       "p": 0.2599,
-      "modelP": 0.283,
+      "modelP": 0.3,
       "ev": 0.0657,
       "stakeSek": 500
     },
@@ -287496,7 +287500,7 @@
       "strategy": "consensusAtBestPrice",
       "fairSource": "pinnacle",
       "p": 0.2627,
-      "modelP": 0.264,
+      "modelP": 0.286,
       "ev": 0.0508,
       "stakeSek": 500
     },
@@ -287541,7 +287545,7 @@
       "strategy": "consensusAtBestPrice",
       "fairSource": "pinnacle",
       "p": 0.2762,
-      "modelP": 0.218,
+      "modelP": 0.249,
       "ev": 0.0497,
       "stakeSek": 500
     },
@@ -287571,7 +287575,7 @@
       "strategy": "consensusAtBestPrice",
       "fairSource": "pinnacle",
       "p": 0.3083,
-      "modelP": 0.323,
+      "modelP": 0.331,
       "ev": 0.0482,
       "stakeSek": 500
     },
@@ -287586,7 +287590,7 @@
       "strategy": "consensusAtBestPrice",
       "fairSource": "pinnacle",
       "p": 0.2722,
-      "modelP": 0.33,
+      "modelP": 0.336,
       "ev": 0.0479,
       "stakeSek": 500
     },

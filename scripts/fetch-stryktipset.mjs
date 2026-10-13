@@ -13,7 +13,7 @@ import { findSharpBook, devigMultiplicative } from './pro/lib.mjs';
 import { fetchMatchContext, contextNotes } from './lib/match-context.mjs';
 import { extraOdds, matchExtraOdds } from './lib/extra-odds.mjs';
 import { clubEloFor } from './lib/club-elo.mjs';
-import { eloToLambdas, eloProbs } from './lib/elo-1x2.mjs';
+import { eloToLambdas, eloProbs, CLUB_ELO_SCALE } from './lib/elo-1x2.mjs';
 import { teamElo, TEAM_ELO_HOME_ADV } from './lib/team-elo.mjs';
 import { fillXg } from './lib/understat-xg.mjs';
 import { buildMissProfile, buildSystemMissProfiles, STRYK_LEAGUES } from './lib/stryk-miss-profile.mjs';
@@ -162,6 +162,34 @@ async function groupElo(group, cutoff) {
     eloAt.set(key, teamElo(eloHist.get(group), cutoff));
   }
   return eloAt.get(key);
+}
+
+// Lag-Elo for ligor utanfor klubbmodellen med football-data-historik (data/raw/<KOD>_all.csv), bara visning.
+// Svenska Spels liganamn -> kod. Allsvenskan/Eliteserien/Superligan har Klubb-Elo (clubelo.com) som gar fore.
+const EXTRA_ELO_LEAGUE = { MLS: 'MLS', 'Brasileiro Serie A': 'BR', 'Liga MX': 'MX', 'J1 League': 'JP1', Ekstraklasa: 'EK', 'Liga Profesional': 'AR' };
+const extraHist = new Map();
+function extraLeagueElo(code, cutoff) {
+  const key = `${code}|${cutoff}`;
+  if (eloAt.has(key)) return eloAt.get(key);
+  if (!extraHist.has(code)) {
+    const file = path.join(RAW, `${code}_all.csv`);
+    const ms = [];
+    if (fs.existsSync(file)) {
+      const lines = fs.readFileSync(file, 'utf8').replace(/^﻿/, '').trim().split(/\r?\n/);
+      const head = lines[0].split(',');
+      const I = { d: head.indexOf('Date'), h: head.indexOf('Home'), a: head.indexOf('Away'), hg: head.indexOf('HG'), ag: head.indexOf('AG') };
+      for (const l of lines.slice(1)) {
+        const c = l.split(',');
+        const date = parseDate(c[I.d]), hg = num(c[I.hg]), ag = num(c[I.ag]);
+        if (date && hg != null && ag != null && c[I.h]) ms.push({ league: code, date, home: c[I.h].trim(), away: c[I.a].trim(), hg, ag });
+      }
+    }
+    extraHist.set(code, ms.sort((a, b) => a.date.localeCompare(b.date)));
+  }
+  const ms = extraHist.get(code);
+  const out = { elo: teamElo(ms, cutoff), leagueOf: new Map(ms.flatMap((m) => [[m.home, code], [m.away, code]])) };
+  eloAt.set(key, out);
+  return out;
 }
 
 // ---------- Viktad Poisson-modell (Maher) ----------
@@ -762,15 +790,14 @@ async function analyzeDraw(product, draw, ctx, result) {
         a.h2h = h2h(fh, fa, g.all, cutoff);
         a.thin = Math.min(g.model.wSum.get(fh), g.model.wSum.get(fa)) < 8;
         a.basis = 'club';
-        if (ELO_W > 0) {
-          const el = await groupElo(group, cutoff);
-          const eh = el.get(fh), ea = el.get(fa);
-          if (eh != null && ea != null) {
-            const e = eloProbs(eh, ea, TEAM_ELO_HOME_ADV);
-            const ep = [e.home, e.draw, e.away];
-            a.teamElo = { home: Math.round(eh), away: Math.round(ea), probs: ep.map(r3), clubModel: a.model.map(r3) };
-            a.model = a.model.map((p, i) => (1 - ELO_W) * p + ELO_W * ep[i]);
-          }
+        // Eget lag-Elo (ligaresultaten fram till omgangen): visas bredvid lagnamnen, blandas in bara med STRYK_ELO_W > 0
+        const el = await groupElo(group, cutoff);
+        const eh = el.get(fh), ea = el.get(fa);
+        if (eh != null && ea != null) {
+          const e = eloProbs(eh, ea, TEAM_ELO_HOME_ADV);
+          const ep = [e.home, e.draw, e.away];
+          a.teamElo = { home: Math.round(eh), away: Math.round(ea), probs: ep.map(r3), clubModel: a.model.map(r3) };
+          if (ELO_W > 0) a.model = a.model.map((p, i) => (1 - ELO_W) * p + ELO_W * ep[i]);
         }
       }
     } else if (hp?.isoCode && ap?.isoCode && ctx.elo.size) {
@@ -800,16 +827,28 @@ async function analyzeDraw(product, draw, ctx, result) {
     // Klubb-Elo nar lagmodell saknas (hemmafordel 65 Elo, clubelo:s ungefarliga niva)
     if (!a.model && clubElo.has(home) && clubElo.has(away)) {
       const ch = clubElo.get(home), ca = clubElo.get(away);
-      const { lh, la } = eloToLambdas(ch.elo, ca.elo, 65);
+      const { lh, la } = eloToLambdas(ch.elo, ca.elo, 65, CLUB_ELO_SCALE);
       const sm = scoreMatrix(lh, la);
       a.model = [sm.home, sm.draw, sm.away];
       a.lambdas = { home: r2(lh), away: r2(la) };
       a.topScores = sm.topScores;
       a.over25 = r3(sm.over25);
       a.btts = r3(sm.btts);
-      a.clubElo = { home: ch.elo, away: ca.elo, homeName: ch.clubEloName, awayName: ca.clubEloName };
+      a.clubElo = { home: ch.elo, away: ca.elo, homeName: ch.clubEloName, awayName: ca.clubEloName, probs: a.model.map(r3) };
       a.thin = true;
       a.basis = 'clubelo';
+    }
+    // Lag-Elo ur football-data for ligor utan klubbmodell och utan Klubb-Elo (MLS, Brasilien m.fl.) - bara visning
+    if (!a.clubElo && !a.teamElo && EXTRA_ELO_LEAGUE[m.league?.name]) {
+      const code = EXTRA_ELO_LEAGUE[m.league.name];
+      const x = extraLeagueElo(code, cutoff);
+      const fh = matchTeam([hp?.name, hp?.mediumName], new Set(x.elo.keys()), code, x.leagueOf);
+      const fa = matchTeam([ap?.name, ap?.mediumName], new Set(x.elo.keys()), code, x.leagueOf);
+      if (fh && fa && fh !== fa) {
+        const eh = x.elo.get(fh), ea = x.elo.get(fa);
+        const e = eloProbs(eh, ea, TEAM_ELO_HOME_ADV);
+        a.teamElo = { home: Math.round(eh), away: Math.round(ea), probs: [e.home, e.draw, e.away].map(r3) };
+      }
     }
     // Skarpa odds utanfor klubbmodellen (landskamp, Europacup, nordiska ligor)
     // Nara spelstopp (STRYK_FRESH_ODDS=1) gar de nyss hamtade oddsen fore aldre skarpa odds fran den dagliga hamtningen
@@ -1156,6 +1195,7 @@ async function main() {
       blend: `Slutprocent = ${Math.round((1 - MODEL_W) * 100)} % Svenska Spels odds (utan marginal) + ${Math.round(MODEL_W * 100)} % egen modell (${Math.round(MODEL_W_THIN * 100)} % vid tunt underlag/landslag).`,
       club: 'Klubblag: viktad Poisson (anfall/försvar, hemmafördel, halveringstid 150 dagar, xG inblandat) per land; England skattas gemensamt över PL, Championship, League One och League Two.',
       national: 'Landslag: World Football Elo (eloratings.net) omräknat till förväntade mål.',
+      elo: 'Elo bredvid lagnamnen: eget lag-Elo ur ligaresultaten (England, Spanien, Italien m.fl., MLS, Brasilien) eller Klubb-Elo (clubelo.com, Europacup och nordiska ligor). Elo-skillnaden krymps till 75 % eftersom Elo annars är för säker på favoriten. Lag-Elo är bara visning; Klubb-Elo används som egen modell när lagmodell saknas.',
       value: 'Värde = Svenska Spels odds på tipset ≥ 1,03 / vår sannolikhet. Streckvärde = vår sannolikhet / Svenska folkets andel.',
     },
     lastDrawNumber,

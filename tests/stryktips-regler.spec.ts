@@ -29,6 +29,27 @@ function systems(p: any) {
 
 test.skip(!data, 'data/stryktipset.json saknas - kor npm run stryktips');
 
+// Elo bredvid lagnamnen (2026-10-12): eget lag-Elo för ligor med football-data-historik (England m.fl., MLS), annars
+// Klubb-Elo. Chansen är kalibrerad (Elo-skillnaden krymps till 75 %) och summerar till 1.
+test('Elo: varje engelsk ligamatch i öppen omgång har lag-Elo, chansen summerar till 1 och följer Elo-skillnaden', () => {
+  for (const p of products.filter((x) => x.open)) {
+    for (const e of p.events) {
+      const at = `${p.product} ${p.drawNumber} #${e.eventNumber} ${e.home} - ${e.away}`;
+      if (e.country === 'England' && /League|Championship/.test(e.league || '')) expect(e.teamElo, at).toBeTruthy();
+      const x = e.teamElo || e.clubElo;
+      if (!x) continue;
+      expect(x.home > 1000 && x.away > 1000, at).toBe(true);
+      expect(x.probs, at).toHaveLength(3);
+      expect(x.probs.reduce((s: number, v: number) => s + v, 0), at).toBeCloseTo(1, 2);
+      // Med hemmafördel: klart starkare hemmalag ska ha högre chans på 1 än på 2
+      if (x.home - x.away > 50) expect(x.probs[0], at).toBeGreaterThan(x.probs[2]);
+      if (x.away - x.home > 150) expect(x.probs[2], at).toBeGreaterThan(x.probs[0]);
+      // Kalibrerat: ingen Elo-chans över 85 % (okrympt gav Elo 77 % där 73 % vann)
+      expect(Math.max(...x.probs), at).toBeLessThan(0.85);
+    }
+  }
+});
+
 test('matcher: avsparkstid, tips = troligaste tecknet, Värde/Ej värde räknat rätt', () => {
   expect(products.length).toBeGreaterThan(0);
   for (const p of products) {

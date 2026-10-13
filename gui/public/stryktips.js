@@ -500,11 +500,26 @@ function pocketAlert(e) {
   }).join("");
   return `<div class="ref-alert win pocket-alert" role="note"><span class="ref-alert-k">★ Skräll folket missar</span> Kort sagt: oddsen tror mer på tecknet än folket. Sådana skrällar i PL och Championship gick in 1,7 gånger så ofta som folket trodde (4 582 matcher 2023–2026), och betalar bra när de sitter. Vår procent är höjd 12 % för dem.<ul>${rows}</ul></div>`;
 }
+// Elo bredvid lagnamnet (som på /tips): eget lag-Elo ur ligaresultaten, annars Klubb-Elo (clubelo.com).
+// Starkare laget grönt med +skillnad. Chansen i rutan är kalibrerad (Elo-skillnaden krymps till 75 %, bakkörning 2026-10-12).
+function eloTag(e, side) {
+  const x = e.teamElo || e.clubElo;
+  if (!x?.home || !x?.away) return "";
+  const me = Math.round(x[side]), other = Math.round(x[side === "home" ? "away" : "home"]);
+  const diff = me - other;
+  const stronger = diff > 0;
+  const src = e.teamElo ? "eget lag-Elo ur ligaresultaten, bara visning" : "Klubb-Elo från clubelo.com";
+  const vs = stronger ? ` – ${diff} starkare än motståndaren` : diff < 0 ? ` – ${-diff} svagare än motståndaren` : " – lika starka";
+  const chans = x.probs ? ` Elo ger 1 ${pct(x.probs[0])} · X ${pct(x.probs[1])} · 2 ${pct(x.probs[2])}.` : "";
+  return ` <span class="team-elo${stronger ? " is-stronger" : ""}" title="Elo ${me} (${src})${vs}.${chans} Högre = starkare lag. Oddsen slår Elo när de inte är överens.">`
+    + `<span class="elo-k">Elo</span> <span class="elo-n">${me}</span>${stronger ? ` <span class="elo-diff">+${diff}</span>` : ""}</span>`;
+}
+
 // Etikett vid lagnamnet: laget är ett risklag (streckfavorit som sällan vinner denna säsong)
 function teamName(e, side) {
   const t = e.streckFlop?.[side];
   const f = fallOf(e);
-  const name = esc(e[side]) + (f?.side === side ? fallTag(f) : "");
+  const name = esc(e[side]) + eloTag(e, side) + (f?.side === side ? fallTag(f) : "");
   if (!t) return name;
   const s = t.season;
   return `${name}<span class="risk-tag" title="Risklag: ingen seger i ${s.noWin} av ${s.games} matcher som streckfavorit denna säsong (${Math.round(s.rate * 100)} %)">⚠ risklag</span>`;
@@ -679,7 +694,8 @@ const SHARE_DEFAULT = [33, 33, 34];
 const sharesKey = (p) => `betting.fileShares.${p.product}.${p.drawNumber}`;
 const sharesPrevKey = (p) => `betting.fileSharesPrev.${p.product}.${p.drawNumber}`; // senaste På-värden (återställs vid På igen)
 const sealKey = (p) => `betting.sealed.${p.product}.${p.drawNumber}`;
-// Hänglås per match: bara Stryktipset. Låst match går inte att ändra, och Generera kräver att alla 13 är låsta.
+// Hänglås per match: bara Stryktipset. Låst match går inte att ändra. Generera kräver inte att alla är låsta (användaren
+// 2026-10-12: "jag ska inte behöva låsa alla matcher för att gå vidare") – olåsta matcher utan krav väljer kupongen själv.
 const usesSeal = (p) => p?.product === "stryktipset";
 const kravTxt = (k) => (kravSigns(k) || []).map((i) => SIGNS[i]).join("");
 function bState(p) {
@@ -722,17 +738,6 @@ function rowProblem(st, nr) {
   if (!pair) return null;
   const bad = SHARE_SYS.find((sys) => !shareSumMsg(pair[sys]).ok);
   return bad ? `${bad}-raden: ${shareSumMsg(pair[bad]).text}` : null;
-}
-/** Första matchen som stoppar Generera: fel i A/B/C % eller inte låst. */
-function firstSealProblem(p, st) {
-  const open = p.events.filter((e) => !st.sealed.has(e.eventNumber)).length;
-  for (const e of p.events) {
-    const nr = e.eventNumber;
-    const why = rowProblem(st, nr);
-    if (why) return { nr, text: `Match ${nr} stämmer inte (${why}). Rätta till 100 % och lås matchen.` };
-    if (!st.sealed.has(nr)) return { nr, text: `Match ${nr} är inte låst${open > 1 ? ` (${open} matcher olåsta)` : ""}. Klicka på hänglåset när du är klar med matchen.` };
-  }
-  return null;
 }
 function saveKrav(p, st) {
   st.dirty = !!st.result;
@@ -920,10 +925,12 @@ function couponCard(c, label, p) {
   const tag = label === "C" ? `<span class="sb-coupon-tag extra">Skräll · egna rader</span>` : `<span class="sb-coupon-tag">Egna rader</span>`;
   if (!c) return `<div class="sb-coupon is-extra ds-card">${tag}<h3>Kupong ${label}</h3><p class="st-note bad ds-notice ds-notice--danger">Gick inte att bygga kupong ${label}: inga rader ger minst 30 000 kr med dina krav.</p></div>`;
   const file = `${p.product}-${p.drawNumber}-${label}.txt`;
+  // Egna spikar: kupongen spikar inga andra matcher
+  const own = c.picks.some((x) => x.locked && x.signs.length === 1);
   const rules = {
-    A: `2 spikar på omgångens starkaste favoriter, sedan de ${c.rules.rowsTarget} troligaste raderna med minst ${krFmt(c.rules.payoutMin)} kr för 13 rätt`,
-    B: `samma 2 spikar, de ${c.rules.rowsTarget} nästa raderna (≥ ${krFmt(c.rules.payoutMin)} kr) som inte finns i A, med vikt på tecken A saknar`,
-    C: `samma 2 spikar, ${c.rules.rowsTarget} rader (≥ ${krFmt(c.rules.payoutMin)} kr) där underspelade tecken – vår chans minst 1,3 × folkets streck – väger mer`,
+    A: `${own ? "dina spikar, inga andra matcher spikas" : "2 spikar på omgångens starkaste favoriter"}, sedan de ${c.rules.rowsTarget} troligaste raderna med minst ${krFmt(c.rules.payoutMin)} kr för 13 rätt`,
+    B: `${own ? "dina spikar" : "samma 2 spikar"}, de ${c.rules.rowsTarget} nästa raderna (≥ ${krFmt(c.rules.payoutMin)} kr) som inte finns i A, med vikt på tecken A saknar`,
+    C: `${own ? "dina spikar" : "samma 2 spikar"}, ${c.rules.rowsTarget} rader (≥ ${krFmt(c.rules.payoutMin)} kr) där underspelade tecken – vår chans minst 1,3 × folkets streck – väger mer`,
   }[label];
   return `<div class="sb-coupon ${label === "C" ? "is-extra" : "is-main"} ds-card">
     ${tag}
@@ -1187,7 +1194,7 @@ function renderB(p, head, top = "", extras = "") {
             <li><b>Gäller</b>: A+B, bara A, bara B, bara C eller Alla.</li>
             <li><b>A/B/C %</b> under varje match: <b>Av</b> visar hur kupongerna spelat matchen. Slå <b>På</b> och skriv själv hur stor andel av raderna som ska ha 1, X och 2 i A, B och C (varje rad 100 %). <b>Modell</b> = vår chans. En match med egen fördelning spikas aldrig automatiskt.</li>
             <li>Matcher utan krav väljer kupongen själv. Tryck <b>Generera kupong</b> i raden längst ner när du är klar.</li>
-            ${seal ? "<li>Klicka på <b>hänglåset</b> när du är klar med en match. En låst match går inte att ändra – klicka på låset igen för att låsa upp. <b>Generera kupong</b> kräver att alla 13 matcher är låsta.</li>" : ""}
+            ${seal ? "<li>Klicka på <b>hänglåset</b> när du är klar med en match. En låst match går inte att ändra – klicka på låset igen för att låsa upp. Du behöver inte låsa alla matcher för att generera.</li>" : ""}
           </ul>
         </details>
       </div>
@@ -1206,7 +1213,7 @@ function renderB(p, head, top = "", extras = "") {
         <details class="sb-howto"${keep("howto-kupong")}><summary>Hur funkar det?</summary>
           <ul>
             <li>Inga Gambling Cabin-regler (färger, teckenregler, utdelningsband). Varje kupong är en <b>fil</b> med 1 rad per krona – summan för A, B och C sätter du längst ner (500 kr som standard) som du laddar upp under <b>Egna rader</b> hos Svenska Spel.</li>
-            <li><b>Spikar:</b> omgångens 2 starkaste favoriter (vår procent) spikas i alla tre kupongerna. Folkets streck spelar ingen roll för spikarna. I bakkörningen satt båda spikarna i ungefär varannan omgång. Dina egna låsta spikar räknas in.</li>
+            <li><b>Spikar:</b> omgångens 2 starkaste favoriter (vår procent) spikas i alla tre kupongerna. Folkets streck spelar ingen roll för spikarna. I bakkörningen satt båda spikarna i ungefär varannan omgång. <b>Har du egna spikar</b> spikas inga andra matcher – kupongen gör om dem till garderingar.</li>
             <li><b>A:</b> de troligaste raderna där 13 rätt ger minst 30 000 kr. Golvet finns för att en 13:a ska vara värd något – utan det blev 13-rättarna 500–5 000 kr i bakkörningen.</li>
             <li><b>B:</b> de nästa raderna som inte finns i A, med extra vikt på tecken A saknar. A och B har inga rader gemensamt, så A+B är ett system på ${kr(res.A)} + ${kr(res.B)} rader.</li>
             <li><b>C:</b> rader där underspelade tecken – vår chans minst 20 % och minst 1,3 gånger folkets streck – väger mer. Det är skrällarna folket missar. C är fristående från A och B.</li>
@@ -1337,24 +1344,15 @@ function handleB(ev) {
     return true;
   }
   if (ev.target.closest("#sb-generate")) {
-    if (!seal) {
-      const bad = p.events.find((e) => rowProblem(st, e.eventNumber));
-      st.genError = bad ? { nr: bad.eventNumber, text: `Match ${bad.eventNumber}: ${rowProblem(st, bad.eventNumber)}. Rätta till 100 % först.` } : null;
-      if (st.genError) {
-        render();
-        view.querySelector(`.sb-row[data-ev="${bad.eventNumber}"]`)?.scrollIntoView({ block: "center", behavior: "smooth" });
-        return true;
-      }
-    }
-    if (seal) {
-      st.genError = firstSealProblem(p, st);
-      if (st.genError) {
-        render();
-        const bad = view.querySelector(`.sb-row[data-ev="${st.genError.nr}"]`);
-        bad?.scrollIntoView({ block: "center", behavior: "smooth" });
-        bad?.querySelector(".sb-defall-edit.is-bad input, [data-seal]")?.focus({ preventScroll: true });
-        return true;
-      }
+    // Bara A/B/C % som inte blir 100 % stoppar – olåsta matcher går bra
+    const bad = p.events.find((e) => rowProblem(st, e.eventNumber));
+    st.genError = bad ? { nr: bad.eventNumber, text: `Match ${bad.eventNumber}: ${rowProblem(st, bad.eventNumber)}. Rätta till 100 % först.` } : null;
+    if (st.genError) {
+      render();
+      const row = view.querySelector(`.sb-row[data-ev="${bad.eventNumber}"]`);
+      row?.scrollIntoView({ block: "center", behavior: "smooth" });
+      row?.querySelector(".sb-defall-edit.is-bad input")?.focus({ preventScroll: true });
+      return true;
     }
     syncFileBudgetFromDom();
     st.busy = true;

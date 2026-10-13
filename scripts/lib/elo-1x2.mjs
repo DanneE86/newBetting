@@ -1,11 +1,17 @@
 // Elo -> 1X2 utan odds: Elo-skillnad -> forvantat resultat -> malskillnad (Poisson med ~2,5 mal/match, Dixon-Coles-korrektion).
 // Anvands av Stryktipset/Europatipset (landslag + Klubb-Elo) och av Oddset-tipsen for matcher utan egen lagmodell (cuper).
-//   eloProbs(1850, 1700, 65) -> { home, draw, away, over25, btts, lh, la }
+//   eloProbs(1850, 1700, 65) -> { home, draw, away, over25, btts, lh, la }   (klubb-Elo, kalibrerad med CLUB_ELO_SCALE)
 //   findClubElo('Malmö FF', cache) -> { elo, clubEloName } | null   (cache = data/open/clubelo_all.json)
 import { nameScore } from './match-context.mjs';
 
 export const RHO = -0.08; // Dixon-Coles-korrektion for 0-0/1-1/1-0/0-1
 export const CLUB_HOME_ADV = 65; // clubelo:s ungefarliga hemmafordel
+// Klubb-Elo ar for saker pa favoriten (bakkorning 2026-10-12, 87 319 ligamatcher 2013-2026: Elo-favoriten fick 51,8 %,
+// vann 48,6 %; Elo-favorit med 70 %+ fick 77 %, vann 73 %). Elo-skillnaden krymps darfor till 75 % fore omrakningen.
+// Anpassad pa matcher fore 2023-07 (0,6-1,0 provat), kontroll 2023-07- : logloss 1,0284 -> 1,0218, favoriten 48,5 % mot 48,8 %.
+// Snitt i kontrollen: 1 42,9 % (verkligt 43,8), X 27,2 % (26,3), 2 29,9 % (30,0). Ojamna matcher far mer kryss och underdog.
+// Landslags-Elo (eloratings.net) ror vi inte.
+export const CLUB_ELO_SCALE = 0.75;
 
 const poisson = (k, l) => { let f = 1; for (let i = 2; i <= k; i++) f *= i; return (Math.exp(-l) * l ** k) / f; };
 
@@ -25,8 +31,8 @@ export function goalProbs(lh, la, N = 9) {
   return { home: home / tot, draw: draw / tot, away: away / tot, over25: over25 / tot, btts: btts / tot };
 }
 
-export function eloToLambdas(eloH, eloA, homeAdv = 100) {
-  const we = 1 / (10 ** (-(eloH + homeAdv - eloA) / 400) + 1);
+export function eloToLambdas(eloH, eloA, homeAdv = 100, scale = 1) {
+  const we = 1 / (10 ** (-(scale * (eloH + homeAdv - eloA)) / 400) + 1);
   const T = 2.5;
   let lo = -2.4, hi = 2.4;
   for (let i = 0; i < 40; i++) {
@@ -38,8 +44,8 @@ export function eloToLambdas(eloH, eloA, homeAdv = 100) {
   return { lh: (T + s) / 2, la: (T - s) / 2, we };
 }
 
-export function eloProbs(eloH, eloA, homeAdv = CLUB_HOME_ADV) {
-  const { lh, la } = eloToLambdas(eloH, eloA, homeAdv);
+export function eloProbs(eloH, eloA, homeAdv = CLUB_HOME_ADV, scale = CLUB_ELO_SCALE) {
+  const { lh, la } = eloToLambdas(eloH, eloA, homeAdv, scale);
   return { ...goalProbs(lh, la), lh, la };
 }
 
