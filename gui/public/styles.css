@@ -730,6 +730,7 @@ html, body {
 .squad-bar .sq-fill { display: block; height: 100%; background: var(--color-info); }
 .squad-bar .sq-fill.is-rich { background: var(--color-success-strong); }
 .squad-bar .sq-say { color: var(--color-text-muted); font-size: var(--font-size-xs); }
+.squad-bar .sq-hist { grid-column: 2 / -1; }
 @media (max-width: 640px) {
   .squad-bar { grid-template-columns: auto 1fr auto; }
   .squad-bar .sq-k, .squad-bar .sq-say { grid-column: 1 / -1; }

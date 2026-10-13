@@ -1,5 +1,5 @@
-// Cuper (config/leagues.json "cup": true): CL, EL, ECL, ACL, ACL2. Lagen hor till sina ligor; cupfilerna ar reserv.
-//   CUPS -> ['CL', 'EL', 'ECL', 'ACL', 'ACL2'], isCup('ACL') -> true
+// Cuper (config/leagues.json "cup": true): CL, EL, ECL, ACL, ACL2, LIB, SUD. Lagen hor till sina ligor; cupfilerna ar reserv.
+//   CUPS -> ['CL', 'EL', 'ECL', 'ACL', 'ACL2', 'LIB', 'SUD'], isCup('ACL') -> true
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';

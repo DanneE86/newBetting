@@ -21,6 +21,8 @@ const MIN_CREDITS = 40;
 const SPORT_KEYS = [
   [/nations league/i, 'soccer_uefa_nations_league'],
   [/^afc /i, null], // AFC Champions League Elite/Two: The Odds API saknar dem (OddsPortal ar reserv)
+  [/libertadores/i, 'soccer_conmebol_copa_libertadores'],
+  [/sudamericana/i, 'soccer_conmebol_copa_sudamericana'],
   [/champions league/i, 'soccer_uefa_champs_league'],
   [/europa league/i, 'soccer_uefa_europa_league'],
   [/conference league/i, 'soccer_uefa_europa_conference_league'],

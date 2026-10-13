@@ -2,6 +2,7 @@
   "note": "Samma lag med olika stavning i olika källor/säsonger. Nyckel = variant, värde = namnet som används (det nyaste, som de löpande hämtningarna ger). Används av Update-BettingStore.ps1, scripts/lib/learnings-data.mjs och export-league-matches.mjs via scripts/lib/team-aliases.mjs. Kontrollerat 2026-10-04: paren spelar aldrig mot varandra. OBS olika klubbar som INTE ska slås ihop: Osters/Ostersunds (AS), Zaglebie/Zaglebie Sosnowiec, Wisla/Wisla Plock, Rakow/Wieczysta Krakow (EK), Athletic/Athletico-PR (BR2), Yamaga/Montedio Yamagata (JP1), Lorca/Mallorca (LL2), Karlstad/FBK Karlstad (SE3N), Estudiantes L.P./Estudiantes Rio Cuarto (AR), GKS Belchatow/GKS Katowice (EK), Bury/Shrewsbury (EL2).",
   "global_note": "Globala alias (alla ligor): namn i externa källor (openfootball-fixtures, Odds API, OddsPortal) -> historikens namn (football-data). Används av pro-layer, fetch-extra-leagues och fetch-venues via scripts/lib/team-aliases.mjs (TEAM_ALIASES).",
   "global": {
+    "Estudiantes de La Plata": "Estudiantes L.P.",
     "FC Twente '65": "Twente",
     "SC Cambuur-Leeuwarden": "Cambuur",
     "NEC": "Nijmegen",
