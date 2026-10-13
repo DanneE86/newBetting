@@ -7,6 +7,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { getJson as httpGetJson } from './lib/http.mjs';
+import { seasonStartYear } from './lib/seasons.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const P = {
@@ -14,8 +15,9 @@ const P = {
   players: path.join(root, 'data', 'open', 'understat_player_matches.json'),
 };
 export const US_LEAGUES = { EPL: 'PL', La_liga: 'LL', Serie_A: 'SA', Bundesliga: 'BL', Ligue_1: 'L1' };
-const SEASONS = [2024, 2025, 2026];
-const CURRENT_SEASON = 2026;
+// Understat-sasong = startaret: innevarande (ny sasong 1 juli) och tva bakat
+const CURRENT_SEASON = seasonStartYear();
+const SEASONS = [CURRENT_SEASON - 2, CURRENT_SEASON - 1, CURRENT_SEASON];
 const MIN_SHARE = 0.03;          // (xG+xA) / (2 * lagets xG) under sasongen
 const REFRESH_DAYS = 3;          // spelare i aktuell sasong hamtas om efter sa har manga dagar
 const DELAY_MS = 800;            // snallt tempo mot Understat

@@ -3,6 +3,7 @@
 // Historik: football-data.co.uk (PL, Championship, League One, League Two, kolumnen Referee, ligamatcher).
 // Domarnamn: football-data skriver "A Taylor", FotMob "Anthony Taylor" -> nyckel = initial + efternamn.
 import { nameScore } from './match-context.mjs';
+import { calendarLeagues, seasonStartYear } from './seasons.mjs';
 
 export const MIN_STREAK = 5;
 // football-data-divisioner med domare (E3 = League Two: lag som flyttats upp har sin historik dar)
@@ -17,8 +18,9 @@ const OFFICIAL_FILES = ['data/open/referee_allsvenskan.json', 'data/open/referee
 // Ettan Norra och Sodra ar samma FotMob-liga och delar domare -> en nyckel
 const LEAGUE_KEY = { SE3N: 'SE3', SE3S: 'SE3' };
 export const refLeagueKey = (code) => LEAGUE_KEY[code] || code;
-// Ligor som spelar over kalenderaret (sasong = ar i st f juli-juni)
-export const CALENDAR_LEAGUES = new Set(['AS', 'SE2', 'SE3', 'NO', 'NO2', 'JP1', 'MLS', 'BR', 'BR2', 'AR', 'COL']);
+// Ligor som spelar over kalenderaret (sasong = ar i st f juli-juni): config/leagues.json calendarYear.
+// J1 spelar host-var sedan 2026/27 och ar darfor inte med.
+export const CALENDAR_LEAGUES = new Set([...calendarLeagues()].map(refLeagueKey));
 
 // Bokstaver som NFD inte delar upp (ł, ø ...) -> latinska motsvarigheter
 const SPECIAL = { 'ł': 'l', 'ø': 'o', 'æ': 'ae', 'œ': 'oe', 'ß': 'ss', 'đ': 'd', 'ı': 'i', 'þ': 'th' };
@@ -264,7 +266,6 @@ export function refereeNotes(rf, homeName, awayName) {
 // denna eller forra sasongen
 export const REPORT_SEASONS = 3;
 const round = (x, d) => Math.round(x * 10 ** d) / 10 ** d;
-const seasonStartYear = (ymd) => { const [y, m] = ymd.split('-').map(Number); return m >= 7 ? y : y - 1; };
 
 // Snitt per match: gula, roda, frisparkar, mal och utfall (kort/frisparkar bara over matcher som har dem)
 export function disciplineStats(list) {

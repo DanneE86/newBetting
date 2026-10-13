@@ -1,5 +1,5 @@
 // Valjer Dixon-Coles-parametrar per liga (glomska xi, shrink, prior for nya lag) i point-in-time-backtest.
-// Samma upplagg som pro-layer: veckovis refit, sasong 2025/26 + 2026/27, matt i RPS 1X2.
+// Samma upplagg som pro-layer: veckovis refit, ligans tva senaste sasonger, matt i RPS 1X2.
 // Standardparametrarna behalls om ingen kandidat ar minst MIN_GAIN battre (skydd mot brus).
 // Kors: npm run tune  -> config/league-models.json (lases av pro-layer.mjs)
 import fs from 'node:fs';
@@ -7,13 +7,14 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { devigMultiplicative, predictDixonColes, rps1x2, round } from './pro/lib.mjs';
 import { DEFAULT_PARAMS, EARLY_ROUNDS, buildTiers, fitLeagueModel } from './pro/league-models.mjs';
+import { latestSeasons } from './lib/seasons.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const readJson = (p) => JSON.parse(fs.readFileSync(p, 'utf8').replace(/^﻿/, ''));
 const store = readJson(path.join(root, 'data', 'betting-store.json'));
 const tiers = buildTiers(readJson(path.join(root, 'config', 'leagues.json')));
 const OUT = path.join(root, 'config', 'league-models.json');
-const SEASONS = new Set(['2025/26', '2026/27']);
+const EVAL_SEASONS = 2; // ligans senaste sasonger i datan (flyttas fram av sig sjalv)
 const MIN_GAIN = 0.0005;
 const MIN_EVAL = 150;
 const DRAW_KS = [1, 1.05, 1.1];
@@ -43,7 +44,8 @@ function weekStart(date) {
 function score(league, params) {
   const list = byLeague[league];
   const byWeek = new Map();
-  for (const m of list) if (SEASONS.has(m.season)) byWeek.set(weekStart(m.date), [...(byWeek.get(weekStart(m.date)) ?? []), m]);
+  const seasons = latestSeasons(list, EVAL_SEASONS);
+  for (const m of list) if (seasons.has(m.season)) byWeek.set(weekStart(m.date), [...(byWeek.get(weekStart(m.date)) ?? []), m]);
   const played = new Map(); // lag|sasong -> ligamatcher hittills
   const sums = DRAW_KS.map(() => 0);
   const early = { model: DRAW_KS.map(() => 0), market: 0, n: 0 };
@@ -106,7 +108,7 @@ for (const league of Object.keys(byLeague).sort()) {
 
 fs.writeFileSync(OUT, JSON.stringify({
   updatedAt: new Date().toISOString(),
-  method: `Point-in-time veckorefit, sasong ${[...SEASONS].join(' + ')}, RPS 1X2. Grid xi x shrink x prior x drawK; byter fran standard bara vid >= ${MIN_GAIN} battre RPS. earlyMarket nar marknaden (snitt oppningsodds) ar >= ${EARLY_MARKET_GAP} battre i omgang 1-${EARLY_ROUNDS} (minst ${EARLY_MIN_N} matcher).`,
+  method: `Point-in-time veckorefit, ligans ${EVAL_SEASONS} senaste sasonger, RPS 1X2. Grid xi x shrink x prior x drawK; byter fran standard bara vid >= ${MIN_GAIN} battre RPS. earlyMarket nar marknaden (snitt oppningsodds) ar >= ${EARLY_MARKET_GAP} battre i omgang 1-${EARLY_ROUNDS} (minst ${EARLY_MIN_N} matcher).`,
   defaults: DEFAULT_PARAMS,
   leagues,
 }, null, 2), 'utf8');

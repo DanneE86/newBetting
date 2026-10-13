@@ -11,7 +11,7 @@
   Behaller aven Championship (eng.2) via ESPN som extra.
 #>
 param(
-    [string]$Season = "2026",
+    [string]$Season = "",   # Understat-sasong (startaret); tom = innevarande, ny sasong 1 juli
     [int]$EspnLookbackDays = 28,
     [int]$MatchHistoryLimit = 5,
     [switch]$SkipFplHistory,
@@ -21,6 +21,7 @@ param(
 )
 
 $ErrorActionPreference = "Continue"
+if (-not $Season) { $Season = "$(if ((Get-Date).Month -ge 7) { (Get-Date).Year } else { (Get-Date).Year - 1 })" }
 . (Join-Path $PSScriptRoot "lib\Http.ps1")
 $Root = Split-Path -Parent $PSScriptRoot
 $OpenDir = Join-Path $Root "data/open"

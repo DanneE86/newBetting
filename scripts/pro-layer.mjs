@@ -12,6 +12,7 @@ import { EARLY_ROUNDS, buildTiers, fitLeagueModel, loadLeagueModels, paramsFor }
 import { historicalMissing, findUsMatch, inCurrentSquad, loadPlayerModel, summarise as summariseMissing, teamShares } from './pro/players.mjs';
 import { adjustProbs, loadAdjustments } from './lib/learned-adjust.mjs';
 import { extraSignals } from './lib/extra-signals.mjs';
+import { latestSeasons } from './lib/seasons.mjs';
 import { mergeCaseDuplicates, mergeNameVariants } from './lib/odds-history.mjs';
 import { sameTeamName, TEAM_ALIASES } from './lib/team-aliases.mjs';
 import { buildRefIndex, loadRefereeMatches, refereeFlags, refKey, REF_LEAGUES, resolveTeam } from './lib/referee-streaks.mjs';
@@ -949,8 +950,8 @@ function playerEffect(rowsByLeague) {
 function evaluate() {
   const perLeague = {};
   const rowsByLeague = {};
-  const seasons = new Set(['2026/27', '2025/26']);
   for (const [league, list] of Object.entries(byLeague)) {
+    const seasons = latestSeasons(list, 2); // ligans tva senaste sasonger i datan
     const evalMatches = list.filter((m) => seasons.has(m.season));
     const byWeek = groupBy(evalMatches, (m) => weekStart(m.date));
     const rows = [];

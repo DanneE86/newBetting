@@ -31,67 +31,12 @@ $Registry = ([System.IO.File]::ReadAllText((Join-Path $Root "config/leagues.json
 $AllLeagues = @($Registry.leagues.PSObject.Properties | ForEach-Object { $_.Name })
 $FdNewLeagues = @($Registry.leagues.PSObject.Properties | Where-Object { $_.Value.history -eq "fd-new" } | ForEach-Object { $_.Name })
 
-$Sources = @(
-    # Premier League + Championship
-    @{ Key = "PL_2627"; League = "PL"; Season = "2026/27"; Url = "https://www.football-data.co.uk/mmz4281/2627/E0.csv"; File = "PL_2627.csv" },
-    @{ Key = "CH_2627"; League = "CH"; Season = "2026/27"; Url = "https://www.football-data.co.uk/mmz4281/2627/E1.csv"; File = "CH_2627.csv" },
-    @{ Key = "PL_2526"; League = "PL"; Season = "2025/26"; Url = "https://www.football-data.co.uk/mmz4281/2526/E0.csv"; File = "PL_2526.csv" },
-    @{ Key = "CH_2526"; League = "CH"; Season = "2025/26"; Url = "https://www.football-data.co.uk/mmz4281/2526/E1.csv"; File = "CH_2526.csv" },
-    @{ Key = "PL_2425"; League = "PL"; Season = "2024/25"; Url = "https://www.football-data.co.uk/mmz4281/2425/E0.csv"; File = "PL_2425.csv" },
-    @{ Key = "CH_2425"; League = "CH"; Season = "2024/25"; Url = "https://www.football-data.co.uk/mmz4281/2425/E1.csv"; File = "CH_2425.csv" },
-    @{ Key = "PL_2324"; League = "PL"; Season = "2023/24"; Url = "https://www.football-data.co.uk/mmz4281/2324/E0.csv"; File = "PL_2324.csv" },
-    @{ Key = "CH_2324"; League = "CH"; Season = "2023/24"; Url = "https://www.football-data.co.uk/mmz4281/2324/E1.csv"; File = "CH_2324.csv" },
-    # League One (EL1; L1 = Ligue 1)
-    @{ Key = "EL1_2627"; League = "EL1"; Season = "2026/27"; Url = "https://www.football-data.co.uk/mmz4281/2627/E2.csv"; File = "EL1_2627.csv" },
-    @{ Key = "EL1_2526"; League = "EL1"; Season = "2025/26"; Url = "https://www.football-data.co.uk/mmz4281/2526/E2.csv"; File = "EL1_2526.csv" },
-    @{ Key = "EL1_2425"; League = "EL1"; Season = "2024/25"; Url = "https://www.football-data.co.uk/mmz4281/2425/E2.csv"; File = "EL1_2425.csv" },
-    # La Liga
-    @{ Key = "LL_2627"; League = "LL"; Season = "2026/27"; Url = "https://www.football-data.co.uk/mmz4281/2627/SP1.csv"; File = "LL_2627.csv" },
-    @{ Key = "LL_2526"; League = "LL"; Season = "2025/26"; Url = "https://www.football-data.co.uk/mmz4281/2526/SP1.csv"; File = "LL_2526.csv" },
-    @{ Key = "LL_2425"; League = "LL"; Season = "2024/25"; Url = "https://www.football-data.co.uk/mmz4281/2425/SP1.csv"; File = "LL_2425.csv" },
-    # Serie A
-    @{ Key = "SA_2627"; League = "SA"; Season = "2026/27"; Url = "https://www.football-data.co.uk/mmz4281/2627/I1.csv"; File = "SA_2627.csv" },
-    @{ Key = "SA_2526"; League = "SA"; Season = "2025/26"; Url = "https://www.football-data.co.uk/mmz4281/2526/I1.csv"; File = "SA_2526.csv" },
-    @{ Key = "SA_2425"; League = "SA"; Season = "2024/25"; Url = "https://www.football-data.co.uk/mmz4281/2425/I1.csv"; File = "SA_2425.csv" },
-    # Bundesliga
-    @{ Key = "BL_2627"; League = "BL"; Season = "2026/27"; Url = "https://www.football-data.co.uk/mmz4281/2627/D1.csv"; File = "BL_2627.csv" },
-    @{ Key = "BL_2526"; League = "BL"; Season = "2025/26"; Url = "https://www.football-data.co.uk/mmz4281/2526/D1.csv"; File = "BL_2526.csv" },
-    @{ Key = "BL_2425"; League = "BL"; Season = "2024/25"; Url = "https://www.football-data.co.uk/mmz4281/2425/D1.csv"; File = "BL_2425.csv" },
-    # Ligue 1
-    @{ Key = "L1_2627"; League = "L1"; Season = "2026/27"; Url = "https://www.football-data.co.uk/mmz4281/2627/F1.csv"; File = "L1_2627.csv" },
-    @{ Key = "L1_2526"; League = "L1"; Season = "2025/26"; Url = "https://www.football-data.co.uk/mmz4281/2526/F1.csv"; File = "L1_2526.csv" },
-    @{ Key = "L1_2425"; League = "L1"; Season = "2024/25"; Url = "https://www.football-data.co.uk/mmz4281/2425/F1.csv"; File = "L1_2425.csv" },
-    # Eredivisie
-    @{ Key = "ED_2627"; League = "ED"; Season = "2026/27"; Url = "https://www.football-data.co.uk/mmz4281/2627/N1.csv"; File = "ED_2627.csv" },
-    @{ Key = "ED_2526"; League = "ED"; Season = "2025/26"; Url = "https://www.football-data.co.uk/mmz4281/2526/N1.csv"; File = "ED_2526.csv" },
-    @{ Key = "ED_2425"; League = "ED"; Season = "2024/25"; Url = "https://www.football-data.co.uk/mmz4281/2425/N1.csv"; File = "ED_2425.csv" },
-    # 2. Bundesliga
-    @{ Key = "BL2_2627"; League = "BL2"; Season = "2026/27"; Url = "https://www.football-data.co.uk/mmz4281/2627/D2.csv"; File = "BL2_2627.csv" },
-    @{ Key = "BL2_2526"; League = "BL2"; Season = "2025/26"; Url = "https://www.football-data.co.uk/mmz4281/2526/D2.csv"; File = "BL2_2526.csv" },
-    @{ Key = "BL2_2425"; League = "BL2"; Season = "2024/25"; Url = "https://www.football-data.co.uk/mmz4281/2425/D2.csv"; File = "BL2_2425.csv" },
-    # Serie B
-    @{ Key = "LL2_2627"; League = "LL2"; Season = "2026/27"; Url = "https://www.football-data.co.uk/mmz4281/2627/SP2.csv"; File = "LL2_2627.csv" },
-    @{ Key = "LL2_2526"; League = "LL2"; Season = "2025/26"; Url = "https://www.football-data.co.uk/mmz4281/2526/SP2.csv"; File = "LL2_2526.csv" },
-    @{ Key = "LL2_2425"; League = "LL2"; Season = "2024/25"; Url = "https://www.football-data.co.uk/mmz4281/2425/SP2.csv"; File = "LL2_2425.csv" },
-    @{ Key = "SB_2627"; League = "SB"; Season = "2026/27"; Url = "https://www.football-data.co.uk/mmz4281/2627/I2.csv"; File = "SB_2627.csv" },
-    @{ Key = "SB_2526"; League = "SB"; Season = "2025/26"; Url = "https://www.football-data.co.uk/mmz4281/2526/I2.csv"; File = "SB_2526.csv" },
-    @{ Key = "SB_2425"; League = "SB"; Season = "2024/25"; Url = "https://www.football-data.co.uk/mmz4281/2425/I2.csv"; File = "SB_2425.csv" },
-    # Portugal
-    @{ Key = "PT_2627"; League = "PT"; Season = "2026/27"; Url = "https://www.football-data.co.uk/mmz4281/2627/P1.csv"; File = "PT_2627.csv" },
-    @{ Key = "PT_2526"; League = "PT"; Season = "2025/26"; Url = "https://www.football-data.co.uk/mmz4281/2526/P1.csv"; File = "PT_2526.csv" },
-    @{ Key = "PT_2425"; League = "PT"; Season = "2024/25"; Url = "https://www.football-data.co.uk/mmz4281/2425/P1.csv"; File = "PT_2425.csv" },
-    # Grekland
-    @{ Key = "GR_2627"; League = "GR"; Season = "2026/27"; Url = "https://www.football-data.co.uk/mmz4281/2627/G1.csv"; File = "GR_2627.csv" },
-    @{ Key = "GR_2526"; League = "GR"; Season = "2025/26"; Url = "https://www.football-data.co.uk/mmz4281/2526/G1.csv"; File = "GR_2526.csv" },
-    @{ Key = "GR_2425"; League = "GR"; Season = "2024/25"; Url = "https://www.football-data.co.uk/mmz4281/2425/G1.csv"; File = "GR_2425.csv" },
-    # Belgien (Pro League) och Skottland (Premiership)
-    @{ Key = "BE_2627"; League = "BE"; Season = "2026/27"; Url = "https://www.football-data.co.uk/mmz4281/2627/B1.csv"; File = "BE_2627.csv" },
-    @{ Key = "BE_2526"; League = "BE"; Season = "2025/26"; Url = "https://www.football-data.co.uk/mmz4281/2526/B1.csv"; File = "BE_2526.csv" },
-    @{ Key = "BE_2425"; League = "BE"; Season = "2024/25"; Url = "https://www.football-data.co.uk/mmz4281/2425/B1.csv"; File = "BE_2425.csv" },
-    @{ Key = "SC_2627"; League = "SC"; Season = "2026/27"; Url = "https://www.football-data.co.uk/mmz4281/2627/SC0.csv"; File = "SC_2627.csv" },
-    @{ Key = "SC_2526"; League = "SC"; Season = "2025/26"; Url = "https://www.football-data.co.uk/mmz4281/2526/SC0.csv"; File = "SC_2526.csv" },
-    @{ Key = "SC_2425"; League = "SC"; Season = "2024/25"; Url = "https://www.football-data.co.uk/mmz4281/2425/SC0.csv"; File = "SC_2425.csv" }
-)
+# Sasonger fran dagens datum (ny sasong 1 juli) + football-data-filerna for fd-main-ligorna (scripts/lib/Seasons.ps1)
+. (Join-Path $PSScriptRoot "lib\Seasons.ps1")
+$SeasonClock = Get-Date
+$CurSeasonStart = Get-SeasonStartYear $SeasonClock
+$CurrentSeasonLabel = Get-SplitSeasonLabel $CurSeasonStart
+$Sources = @(Get-FootballDataSources $Registry $CurSeasonStart)
 
 function Get-Num($v) {
     if ($null -eq $v -or $v -eq "") { return $null }
@@ -212,12 +157,12 @@ foreach ($s in $Sources) {
 
 # --- football-data "new"-format (BR, AS, NO, DK): scripts/fetch-extra-leagues.mjs -> data/raw/<LIGA>_all.csv ---
 # Sasong "2026" (kalenderar) eller "2026/2027" -> "2026/27", sa att samma innevarande-sasongslogik som i Europa galler.
-# Bara 2024 och senare lases in.
+# Bara de tva senaste sasongerna fore den innevarande och framat lases in (2026/27 -> fran 2024).
 function Get-SeasonLabel([string]$s) {
     if ($s -match '^(\d{4})[/-](\d{4})$') { $y = [int]$Matches[1] }
     elseif ($s -match '^(\d{4})$') { $y = [int]$Matches[1] }
     else { return $null }
-    if ($y -lt 2024) { return $null }
+    if ($y -lt $CurSeasonStart - 2) { return $null }
     return "$y/$((($y + 1) % 100).ToString('00'))"
 }
 foreach ($newLeague in $FdNewLeagues) {
@@ -310,6 +255,14 @@ foreach ($m in $matches) {
 }
 if ($renamed) { Write-Host "Lagnamn: $renamed matcher fick enhetligt lagnamn (config/team-aliases.json)" }
 $sorted = $matches | Sort-Object { $_.dateSort }
+# Innevarande sasong per liga i storens format: kalenderarsligor (leagues.json calendarYear) "2026" -> "2026/27"
+# och byter i januari, ovriga i juli. Plus ligans sasonger i datan, nyast forst.
+$CurrentSeasonByLeague = @{}
+foreach ($p in $Registry.leagues.PSObject.Properties) {
+    $CurrentSeasonByLeague[$p.Name] = if ($p.Value.calendarYear) { Get-SplitSeasonLabel $SeasonClock.Year } else { $CurrentSeasonLabel }
+}
+$SeasonsByLeague = @{}
+foreach ($g in ($matches | Group-Object league)) { $SeasonsByLeague[$g.Name] = @($g.Group | ForEach-Object { $_.season } | Sort-Object -Unique -Descending) }
 
 function New-TeamBag {
     return [ordered]@{
@@ -363,7 +316,8 @@ foreach ($m in $sorted) {
     while ($homeT.last10.Count -gt 10) { $homeT.last10.RemoveAt(0) }
     while ($awayT.last10.Count -gt 10) { $awayT.last10.RemoveAt(0) }
 
-    if ($m.season -ne "2026/27") { continue }
+    $curLabel = if ($CurrentSeasonByLeague.ContainsKey($m.league)) { $CurrentSeasonByLeague[$m.league] } else { $CurrentSeasonLabel }
+    if ($m.season -ne $curLabel) { continue }   # bara ligans innevarande sasong
 
     foreach ($side in @("home", "away")) {
         $t = if ($side -eq "home") { $homeT.season2627 } else { $awayT.season2627 }
@@ -564,8 +518,8 @@ $teamsOut = $teamsOut.ToArray()
 # --- Understat xG merge (EPL only) ---
 $xgByName = @{}
 $xgMeta = [ordered]@{ loaded = $false; season = $null; teams = 0; source = "understat getLeagueData" }
-$xgPath = Join-Path $Root "data/open/understat_EPL_2026_xg.json"
-if (-not (Test-Path $xgPath)) { $xgPath = Join-Path $Root "data/open/understat_EPL_2025_xg.json" }
+$xgPath = Join-Path $Root "data/open/understat_EPL_$($CurSeasonStart)_xg.json"
+if (-not (Test-Path $xgPath)) { $xgPath = Join-Path $Root "data/open/understat_EPL_$($CurSeasonStart - 1)_xg.json" }
 if (Test-Path $xgPath) {
     try {
         $xgDoc = ([System.IO.File]::ReadAllText($xgPath)).TrimStart([char]0xFEFF) | ConvertFrom-Json
@@ -638,7 +592,7 @@ if (Test-Path $bdPath) {
                         xGpg = [math]::Round($hit.xGpg, 3); xGApg = [math]::Round($hit.xGApg, 3)
                         homeXGpg = [math]::Round($hit.xGpg * 1.08, 3); homeXGApg = [math]::Round($hit.xGApg * 0.95, 3)
                         awayXGpg = [math]::Round($hit.xGpg * 0.92, 3); awayXGApg = [math]::Round($hit.xGApg * 1.05, 3)
-                        source = "bolldata"; season = "2026/27"
+                        source = "bolldata"; season = $CurrentSeasonLabel
                     }
                     $bolldataMeta.teams++
                 }
@@ -857,7 +811,7 @@ foreach ($t in $teamsOut) {
                 awayXGpg = [math]::Round($xGpg * 0.92, 3)
                 awayXGApg = [math]::Round($xGApg * 1.05, 3)
                 source = "shots-proxy"
-                season = "2026/27"
+                season = $CurrentSeasonLabel
             }
         } else {
             $copy["shotXgProxy"] = [ordered]@{ xGpg = [math]::Round($xGpg, 3); xGApg = [math]::Round($xGApg, 3) }
@@ -885,7 +839,7 @@ function Test-NameInXi([string]$playerName, $starters) {
 # Ligasnitt (senaste tva sasongerna) - prior som sma lagsamples krymps mot.
 # Utan detta gav 2/2 BTTS-matcher bttsRate 1.0 -> "90 % chans" (backtest: 70%+-bandet traffade bara 54 %).
 $leaguePrior = @{}
-foreach ($g in ($sorted | Where-Object { $_.season -in @("2025/26", "2026/27") } | Group-Object league)) {
+foreach ($g in ($sorted | Where-Object { $_.season -in @($SeasonsByLeague[$_.league] | Select-Object -First 2) } | Group-Object league)) {
     $n = [double]$g.Count
     if ($n -lt 20) { continue }
     $c = @{ btts = 0; over25 = 0; homeWin = 0; awayWin = 0; goals = 0 }

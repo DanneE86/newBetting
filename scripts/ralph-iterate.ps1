@@ -38,7 +38,7 @@ for ($i = 1; $i -le $MaxIterations; $i++) {
             $rep = Read-JsonFile ./data/open/fetch-report.json
             $reportOk = (@($rep.sources | Where-Object { $_.ok }).Count -ge 4)
         }
-        $xgOk = Test-Path ./data/open/understat_EPL_2026_xg.json
+        $xgOk = @(Get-ChildItem ./data/open -Filter "understat_EPL_*_xg.json" -ErrorAction SilentlyContinue).Count -gt 0
         $fplOk = Test-Path ./data/open/fpl_availability.json
         $plXg = @($store.teams | Where-Object { $_.league -eq "PL" -and $_.xg }).Count
         $plAvail = @($store.teams | Where-Object { $_.league -eq "PL" -and $_.availability }).Count
