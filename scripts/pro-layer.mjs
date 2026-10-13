@@ -21,6 +21,9 @@ import { DRAW_LEAGUES, DRAW_MARGIN, pick1x2 } from './lib/pick-1x2.mjs';
 import { findUpset } from './lib/upset-pick.mjs';
 import { clubEloLookup, eloProbs, findClubElo } from './lib/elo-1x2.mjs';
 import { squadValueLookup } from './lib/squad-value.mjs';
+import { isCup } from './lib/cups.mjs';
+import { ASIA_CUPS, asiaEloLookup, cupHomeLeagues } from './lib/cup-elo.mjs';
+import { TEAM_ELO_HOME_ADV } from './lib/team-elo.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const P = {
@@ -195,7 +198,7 @@ applyRefereeStreaks([...(tips.bestUpcoming ?? []), ...(tips.allCandidates ?? [])
 applyCards([...(tips.bestUpcoming ?? []), ...(tips.allCandidates ?? [])]);
 // Klubb-Elo bredvid lagnamnen pa /tips (bara visning, paverkar inga tips)
 const leaguesCfg = readJson(P.leaguesCfg);
-const leagueCountry = (lg) => (lg === 'CL' || lg === 'EL' || lg === 'ECL' ? null : leaguesCfg.leagues?.[lg]?.country ?? '');
+const leagueCountry = (lg) => (isCup(lg) ? null : leaguesCfg.leagues?.[lg]?.country ?? '');
 const allTips = [...(tips.bestUpcoming ?? []), ...(tips.allCandidates ?? [])];
 const recentSince = `${new Date().getFullYear() - 1}-07-01`;
 const domestic = [...new Map([...store.matches.filter((m) => m.date >= recentSince), ...allTips]
@@ -204,7 +207,8 @@ const domestic = [...new Map([...store.matches.filter((m) => m.date >= recentSin
   .map((t) => [`${t.country}|${t.name}`, t])).values()];
 const eloOf = clubEloLookup(clubEloAll(), domestic);
 for (const t of allTips) {
-  const elo = { home: eloOf(t.home, leagueCountry(t.league)), away: eloOf(t.away, leagueCountry(t.league)) };
+  const lookup = ASIA_CUPS.has(t.league) ? (name) => asiaElo(t.league, name) : (name) => eloOf(name, leagueCountry(t.league));
+  const elo = { home: lookup(t.home), away: lookup(t.away) };
   if (elo.home || elo.away) t.teamElo = elo; else delete t.teamElo;
 }
 // Truppvärde bredvid lagnamnen (data/spelare, FotMob/Transfermarkt) - bara visning, paverkar inga tips
@@ -693,10 +697,29 @@ var clubEloCache; // eslint-disable-line no-var
 function clubEloAll() {
   return (clubEloCache ??= fs.existsSync(P.clubEloAll) ? readJson(P.clubEloAll) : { countries: {} });
 }
+// AFC-cuperna: eget Elo ur de asiatiska ligorna (clubelo.com har bara Europa), lagets hemmaliga ur trupperna (scripts/lib/cup-elo.mjs)
+// (cachen på funktionen: anropas från marknadstipsen innan modulens let-rader har körts)
+function asiaElo(league, name) {
+  const c = (asiaElo.cache ??= {
+    eloOf: asiaEloLookup(store.matches, today),
+    home: cupHomeLeagues(Object.fromEntries([...ASIA_CUPS].map((cup) => {
+      const f = path.join(root, 'data', 'trupper', `${cup}.json`);
+      return [cup, fs.existsSync(f) ? readJson(f) : null];
+    }))),
+  });
+  return c.eloOf(name, c.home.get(`${league}|${name}`));
+}
+
 function dataProbs(league, home, away) {
   const model = models[league];
   const dc = model ? predictDixonColes(model, home, away, 10, { home: 1, away: 1 }) : null;
   if (dc?.knownTeams) return { home: dc.home, draw: dc.draw, away: dc.away, source: 'dc' };
+  if (ASIA_CUPS.has(league)) {
+    const [h, a] = [asiaElo(league, home), asiaElo(league, away)];
+    if (!h || !a) return null;
+    const p = eloProbs(h.elo, a.elo, TEAM_ELO_HOME_ADV);
+    return { home: p.home, draw: p.draw, away: p.away, source: 'asiaelo', asiaElo: { home: h.elo, away: a.elo } };
+  }
   const elo = clubEloAll();
   const [h, a] = [findClubElo(home, elo), findClubElo(away, elo)];
   if (!h || !a) return null;

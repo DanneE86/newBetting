@@ -20,6 +20,7 @@ const MIN_CREDITS = 40;
 // Svenska Spels liganamn -> The Odds API sport key
 const SPORT_KEYS = [
   [/nations league/i, 'soccer_uefa_nations_league'],
+  [/^afc /i, null], // AFC Champions League Elite/Two: The Odds API saknar dem (OddsPortal ar reserv)
   [/champions league/i, 'soccer_uefa_champs_league'],
   [/europa league/i, 'soccer_uefa_europa_league'],
   [/conference league/i, 'soccer_uefa_europa_conference_league'],

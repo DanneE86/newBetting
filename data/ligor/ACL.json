@@ -1,0 +1,685 @@
+{
+ "updatedAt": "2026-10-13T04:20:37.019Z",
+ "league": "ACL",
+ "fotmobId": 525,
+ "name": "AFC Champions League Elite",
+ "country": "INT",
+ "table": [
+  {
+   "rank": 1,
+   "team": "Al Ain",
+   "fotmobName": "Al-Ain",
+   "fotmobId": 102117,
+   "group": "West",
+   "played": 2,
+   "won": 2,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "8-1",
+   "gd": 7,
+   "pts": 6
+  },
+  {
+   "rank": 2,
+   "team": "Esteghlal",
+   "fotmobName": "Esteghlal",
+   "fotmobId": 101614,
+   "group": "West",
+   "played": 2,
+   "won": 2,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "5-1",
+   "gd": 4,
+   "pts": 6
+  },
+  {
+   "rank": 3,
+   "team": "Al Ahli",
+   "fotmobName": "Al Ahli",
+   "fotmobId": 2530,
+   "group": "West",
+   "played": 2,
+   "won": 1,
+   "drawn": 1,
+   "lost": 0,
+   "goals": "4-2",
+   "gd": 2,
+   "pts": 4
+  },
+  {
+   "rank": 4,
+   "team": "Al Qadsiah",
+   "fotmobName": "Al Qadsiah",
+   "fotmobId": 101919,
+   "group": "West",
+   "played": 2,
+   "won": 1,
+   "drawn": 1,
+   "lost": 0,
+   "goals": "3-2",
+   "gd": 1,
+   "pts": 4
+  },
+  {
+   "rank": 5,
+   "team": "Al Hilal",
+   "fotmobName": "Al Hilal",
+   "fotmobId": 2529,
+   "group": "West",
+   "played": 1,
+   "won": 1,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "2-1",
+   "gd": 1,
+   "pts": 3
+  },
+  {
+   "rank": 6,
+   "team": "Shabab Al-Ahli",
+   "fotmobName": "Shabab Al-Ahli Dubai FC",
+   "fotmobId": 102119,
+   "group": "West",
+   "played": 1,
+   "won": 1,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "1-0",
+   "gd": 1,
+   "pts": 3
+  },
+  {
+   "rank": 7,
+   "team": "Neftchi Fergana",
+   "fotmobName": "Neftchi Fargona",
+   "fotmobId": 102145,
+   "group": "West",
+   "played": 2,
+   "won": 1,
+   "drawn": 0,
+   "lost": 1,
+   "goals": "2-3",
+   "gd": -1,
+   "pts": 3
+  },
+  {
+   "rank": 8,
+   "team": "Al Nassr",
+   "fotmobName": "Al Nassr FC",
+   "fotmobId": 101918,
+   "group": "West",
+   "played": 2,
+   "won": 1,
+   "drawn": 0,
+   "lost": 1,
+   "goals": "3-5",
+   "gd": -2,
+   "pts": 3
+  },
+  {
+   "rank": 9,
+   "team": "Pakhtakor Tashkent",
+   "fotmobName": "Pakhtakor Tashkent",
+   "fotmobId": 102141,
+   "group": "West",
+   "played": 2,
+   "won": 0,
+   "drawn": 2,
+   "lost": 0,
+   "goals": "2-2",
+   "gd": 0,
+   "pts": 2
+  },
+  {
+   "rank": 10,
+   "team": "Al-Shamal",
+   "fotmobName": "Al-Shamal",
+   "fotmobId": 101904,
+   "group": "West",
+   "played": 2,
+   "won": 0,
+   "drawn": 2,
+   "lost": 0,
+   "goals": "1-1",
+   "gd": 0,
+   "pts": 2
+  },
+  {
+   "rank": 11,
+   "team": "Al Ittihad",
+   "fotmobName": "Al Ittihad",
+   "fotmobId": 8577,
+   "group": "West",
+   "played": 1,
+   "won": 0,
+   "drawn": 1,
+   "lost": 0,
+   "goals": "1-1",
+   "gd": 0,
+   "pts": 1
+  },
+  {
+   "rank": 12,
+   "team": "Traktor Sazi FC",
+   "fotmobName": "Tractor",
+   "fotmobId": 176352,
+   "group": "West",
+   "played": 2,
+   "won": 0,
+   "drawn": 1,
+   "lost": 1,
+   "goals": "0-1",
+   "gd": -1,
+   "pts": 1
+  },
+  {
+   "rank": 13,
+   "team": "Al-Gharafa",
+   "fotmobName": "Al-Gharafa",
+   "fotmobId": 101897,
+   "group": "West",
+   "played": 2,
+   "won": 0,
+   "drawn": 0,
+   "lost": 2,
+   "goals": "2-4",
+   "gd": -2,
+   "pts": 0
+  },
+  {
+   "rank": 14,
+   "team": "Al Wasl",
+   "fotmobName": "Al-Wasl",
+   "fotmobId": 102111,
+   "group": "West",
+   "played": 2,
+   "won": 0,
+   "drawn": 0,
+   "lost": 2,
+   "goals": "2-5",
+   "gd": -3,
+   "pts": 0
+  },
+  {
+   "rank": 15,
+   "team": "Al Sadd",
+   "fotmobName": "Al-Sadd",
+   "fotmobId": 101895,
+   "group": "West",
+   "played": 1,
+   "won": 0,
+   "drawn": 0,
+   "lost": 1,
+   "goals": "0-3",
+   "gd": -3,
+   "pts": 0
+  },
+  {
+   "rank": 16,
+   "team": "Al-Quwa Al-Jawiya",
+   "fotmobName": "Al Quwa Al Jawiya",
+   "fotmobId": 101656,
+   "group": "West",
+   "played": 2,
+   "won": 0,
+   "drawn": 0,
+   "lost": 2,
+   "goals": "1-5",
+   "gd": -4,
+   "pts": 0
+  },
+  {
+   "rank": 1,
+   "team": "Kashima Antlers",
+   "fotmobName": "Kashima Antlers",
+   "fotmobId": 4397,
+   "group": "East",
+   "played": 1,
+   "won": 1,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "7-1",
+   "gd": 6,
+   "pts": 3
+  },
+  {
+   "rank": 2,
+   "team": "Gamba Osaka",
+   "fotmobName": "Gamba Osaka",
+   "fotmobId": 6582,
+   "group": "East",
+   "played": 1,
+   "won": 1,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "4-1",
+   "gd": 3,
+   "pts": 3
+  },
+  {
+   "rank": 3,
+   "team": "Shanghai Port",
+   "fotmobName": "Shanghai Port",
+   "fotmobId": 198616,
+   "group": "East",
+   "played": 1,
+   "won": 1,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "6-4",
+   "gd": 2,
+   "pts": 3
+  },
+  {
+   "rank": 4,
+   "team": "Beijing Guoan",
+   "fotmobName": "Beijing Guoan",
+   "fotmobId": 4177,
+   "group": "East",
+   "played": 1,
+   "won": 1,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "3-1",
+   "gd": 2,
+   "pts": 3
+  },
+  {
+   "rank": 5,
+   "team": "Jeonbuk Motors",
+   "fotmobName": "Jeonbuk Hyundai Motors FC",
+   "fotmobId": 46038,
+   "group": "East",
+   "played": 1,
+   "won": 1,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "2-1",
+   "gd": 1,
+   "pts": 3
+  },
+  {
+   "rank": 6,
+   "team": "Vissel Kobe",
+   "fotmobName": "Vissel Kobe",
+   "fotmobId": 4688,
+   "group": "East",
+   "played": 1,
+   "won": 1,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "2-1",
+   "gd": 1,
+   "pts": 3
+  },
+  {
+   "rank": 7,
+   "team": "Daejeon Hana Citizen",
+   "fotmobName": "Daejeon Hana Citizen",
+   "fotmobId": 133900,
+   "group": "East",
+   "played": 1,
+   "won": 1,
+   "drawn": 0,
+   "lost": 0,
+   "goals": "1-0",
+   "gd": 1,
+   "pts": 3
+  },
+  {
+   "rank": 8,
+   "team": "Buriram United",
+   "fotmobName": "Buriram United",
+   "fotmobId": 165243,
+   "group": "East",
+   "played": 1,
+   "won": 0,
+   "drawn": 1,
+   "lost": 0,
+   "goals": "1-1",
+   "gd": 0,
+   "pts": 1
+  },
+  {
+   "rank": 9,
+   "team": "Johor Darul Ta'zim",
+   "fotmobName": "Johor Darul Ta'zim",
+   "fotmobId": 165228,
+   "group": "East",
+   "played": 1,
+   "won": 0,
+   "drawn": 1,
+   "lost": 0,
+   "goals": "1-1",
+   "gd": 0,
+   "pts": 1
+  },
+  {
+   "rank": 10,
+   "team": "Kashiwa Reysol",
+   "fotmobName": "Kashiwa Reysol",
+   "fotmobId": 8699,
+   "group": "East",
+   "played": 1,
+   "won": 0,
+   "drawn": 0,
+   "lost": 1,
+   "goals": "1-2",
+   "gd": -1,
+   "pts": 0
+  },
+  {
+   "rank": 11,
+   "team": "Port FC",
+   "fotmobName": "Port FC",
+   "fotmobId": 165255,
+   "group": "East",
+   "played": 1,
+   "won": 0,
+   "drawn": 0,
+   "lost": 1,
+   "goals": "1-2",
+   "gd": -1,
+   "pts": 0
+  },
+  {
+   "rank": 12,
+   "team": "Kyoto Sanga",
+   "fotmobName": "Kyoto Sanga FC",
+   "fotmobId": 8542,
+   "group": "East",
+   "played": 1,
+   "won": 0,
+   "drawn": 0,
+   "lost": 1,
+   "goals": "0-1",
+   "gd": -1,
+   "pts": 0
+  },
+  {
+   "rank": 13,
+   "team": "Ratchaburi FC",
+   "fotmobName": "Ratchaburi FC",
+   "fotmobId": 421346,
+   "group": "East",
+   "played": 1,
+   "won": 0,
+   "drawn": 0,
+   "lost": 1,
+   "goals": "4-6",
+   "gd": -2,
+   "pts": 0
+  },
+  {
+   "rank": 14,
+   "team": "Pohang Steelers",
+   "fotmobName": "Pohang Steelers",
+   "fotmobId": 109373,
+   "group": "East",
+   "played": 1,
+   "won": 0,
+   "drawn": 0,
+   "lost": 1,
+   "goals": "1-3",
+   "gd": -2,
+   "pts": 0
+  },
+  {
+   "rank": 15,
+   "team": "Cong An Hanoi",
+   "fotmobName": "Công An Hà Nội",
+   "fotmobId": 614354,
+   "group": "East",
+   "played": 1,
+   "won": 0,
+   "drawn": 0,
+   "lost": 1,
+   "goals": "1-4",
+   "gd": -3,
+   "pts": 0
+  },
+  {
+   "rank": 16,
+   "team": "Newcastle Jets",
+   "fotmobName": "Newcastle Jets",
+   "fotmobId": 6454,
+   "group": "East",
+   "played": 1,
+   "won": 0,
+   "drawn": 0,
+   "lost": 1,
+   "goals": "1-7",
+   "gd": -6,
+   "pts": 0
+  }
+ ],
+ "tableHistory": {
+  "2026-10-13": [
+   [
+    "Al Ain",
+    1,
+    2,
+    6,
+    7
+   ],
+   [
+    "Esteghlal",
+    2,
+    2,
+    6,
+    4
+   ],
+   [
+    "Al Ahli",
+    3,
+    2,
+    4,
+    2
+   ],
+   [
+    "Al Qadsiah",
+    4,
+    2,
+    4,
+    1
+   ],
+   [
+    "Al Hilal",
+    5,
+    1,
+    3,
+    1
+   ],
+   [
+    "Shabab Al-Ahli",
+    6,
+    1,
+    3,
+    1
+   ],
+   [
+    "Neftchi Fergana",
+    7,
+    2,
+    3,
+    -1
+   ],
+   [
+    "Al Nassr",
+    8,
+    2,
+    3,
+    -2
+   ],
+   [
+    "Pakhtakor Tashkent",
+    9,
+    2,
+    2,
+    0
+   ],
+   [
+    "Al-Shamal",
+    10,
+    2,
+    2,
+    0
+   ],
+   [
+    "Al Ittihad",
+    11,
+    1,
+    1,
+    0
+   ],
+   [
+    "Traktor Sazi FC",
+    12,
+    2,
+    1,
+    -1
+   ],
+   [
+    "Al-Gharafa",
+    13,
+    2,
+    0,
+    -2
+   ],
+   [
+    "Al Wasl",
+    14,
+    2,
+    0,
+    -3
+   ],
+   [
+    "Al Sadd",
+    15,
+    1,
+    0,
+    -3
+   ],
+   [
+    "Al-Quwa Al-Jawiya",
+    16,
+    2,
+    0,
+    -4
+   ],
+   [
+    "Kashima Antlers",
+    1,
+    1,
+    3,
+    6
+   ],
+   [
+    "Gamba Osaka",
+    2,
+    1,
+    3,
+    3
+   ],
+   [
+    "Shanghai Port",
+    3,
+    1,
+    3,
+    2
+   ],
+   [
+    "Beijing Guoan",
+    4,
+    1,
+    3,
+    2
+   ],
+   [
+    "Jeonbuk Motors",
+    5,
+    1,
+    3,
+    1
+   ],
+   [
+    "Vissel Kobe",
+    6,
+    1,
+    3,
+    1
+   ],
+   [
+    "Daejeon Hana Citizen",
+    7,
+    1,
+    3,
+    1
+   ],
+   [
+    "Buriram United",
+    8,
+    1,
+    1,
+    0
+   ],
+   [
+    "Johor Darul Ta'zim",
+    9,
+    1,
+    1,
+    0
+   ],
+   [
+    "Kashiwa Reysol",
+    10,
+    1,
+    0,
+    -1
+   ],
+   [
+    "Port FC",
+    11,
+    1,
+    0,
+    -1
+   ],
+   [
+    "Kyoto Sanga",
+    12,
+    1,
+    0,
+    -1
+   ],
+   [
+    "Ratchaburi FC",
+    13,
+    1,
+    0,
+    -2
+   ],
+   [
+    "Pohang Steelers",
+    14,
+    1,
+    0,
+    -2
+   ],
+   [
+    "Cong An Hanoi",
+    15,
+    1,
+    0,
+    -3
+   ],
+   [
+    "Newcastle Jets",
+    16,
+    1,
+    0,
+    -6
+   ]
+  ]
+ }
+}

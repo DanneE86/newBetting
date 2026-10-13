@@ -4,6 +4,7 @@
 // Kör: node scripts/lardomar-spelare-truppvarde.mjs
 import fs from 'node:fs';
 import { root as ROOT } from './lib/learnings-data.mjs';
+import { isCup } from './lib/cups.mjs';
 const rd = (p) => JSON.parse(fs.readFileSync(`${ROOT}/${p}`, 'utf8'));
 const tb = rd('data/reports/tips-backtest.json').matches;
 const csv = (c) => { const L = fs.readFileSync(`${ROOT}/data/matcher/${c}.csv`, 'utf8').trim().split('\n'); const h = L[0].split(','); return L.slice(1).map((l) => { const v = l.split(','); return Object.fromEntries(h.map((k, i) => [k, v[i]])); }); };
@@ -12,7 +13,7 @@ function reg1(xs, ys) { const n = xs.length; if (n < 20) return null; const mx =
   for (let i = 0; i < n; i++) { sxx += (xs[i] - mx) ** 2; sxy += (xs[i] - mx) * (ys[i] - my); } const b = sxy / sxx; let sse = 0;
   for (let i = 0; i < n; i++) sse += (ys[i] - my - b * (xs[i] - mx)) ** 2; return { n, b, z: b / Math.sqrt(sse / (n - 2) / sxx) }; }
 const valAt = (p, d) => { let v = null; for (const [dt, x] of p.marketValueHistory ?? []) if (dt <= d) v = x; return v ?? p.info?.marketValue ?? 0; };
-const codes = fs.readdirSync(`${ROOT}/data/spelare`).filter((f) => !f.startsWith('_')).map((f) => f.slice(0, -5)).filter((c) => !['CL', 'EL', 'ECL'].includes(c));
+const codes = fs.readdirSync(`${ROOT}/data/spelare`).filter((f) => !f.startsWith('_')).map((f) => f.slice(0, -5)).filter((c) => !isCup(c));
 const all = [];
 for (const c of codes) {
   const sp = rd(`data/spelare/${c}.json`);

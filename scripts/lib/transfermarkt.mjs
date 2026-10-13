@@ -11,6 +11,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 export const TM_COMP = {
   SE3N: { comp: 'SE3N' }, SE3S: { comp: 'SE3S' },
   CL: { comp: 'CL', cup: true }, EL: { comp: 'EL', cup: true }, ECL: { comp: 'UCOL', cup: true },
+  ACL: { comp: 'ACLE', cup: true }, ACL2: { comp: 'ACL2', cup: true },
 };
 // Ovriga ligor: bara for kontroll av FotMob-trupperna (scripts/verify-squads-tm.mjs)
 export const TM_LEAGUE = {

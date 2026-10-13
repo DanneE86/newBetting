@@ -1,14 +1,15 @@
 // Domare: historik och kommande matcher, for domarsviter per lag (scripts/lib/referee-streaks.mjs).
 //  - data/open/referee_history.json: football-data.co.uk E0-E3 (PL, Championship, League One, League Two) fran
 //    2012/13, en post per sasong och division. Aldre sasonger hamtas en gang, aktuell och forra sasongen varje korning.
-//  - data/open/referees_upcoming.json: tillsatt domare fran FotMob for engelska ligamatcher kommande 8 dagar
-//    (data/upcoming-fixtures.json + tips-latest.json). Domare tillsatts normalt nagra dagar fore matchen.
+//  - data/open/referees_upcoming.json: tillsatt domare fran FotMob for alla ligor med domardata (REF_LEAGUES) kommande 8 dagar
+//    (data/upcoming-fixtures.json + tips-latest.json), CL/EL/ECL aven fran UEFA. Domare tillsatts normalt nagra dagar fore matchen.
 // Kors av Fetch-OpenSources.ps1 fore pro-layer (som satter tip.referee). Manuellt: npm run domare (--full = allt om).
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { REF_DIVISIONS, REF_LEAGUES, parseRefereeCsv } from './lib/referee-streaks.mjs';
 import { fetchReferee } from './lib/match-context.mjs';
+import { UEFA_COMP, uefaRefereeFor, uefaUpcoming } from './lib/uefa-referees.mjs';
 import { getText as httpGetText } from './lib/http.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -73,9 +74,22 @@ async function updateUpcoming() {
       out.set(key(f), { league: f.league, date: f.date, home: f.home, away: f.away, kickoffUtc: f.kickoffUtc || null, fotmobMatchId: hit.fotmobMatchId, referee: hit.referee || prev?.referee || null });
     }));
   }
+  // Europacupen: UEFA:s egen tillsättning när FotMob inte har domaren än
+  const cups = fixtures.filter((f) => UEFA_COMP[f.league] && !out.get(key(f))?.referee);
+  if (cups.length) {
+    const uefa = await uefaUpcoming(today, until);
+    let n = 0;
+    for (const f of cups) {
+      const referee = uefaRefereeFor(uefa, f);
+      if (!referee) continue;
+      out.set(key(f), { ...(out.get(key(f)) ?? { league: f.league, date: f.date, home: f.home, away: f.away, kickoffUtc: f.kickoffUtc || null }), referee, refereeSource: 'UEFA' });
+      n++;
+    }
+    log(`UEFA: ${n} av ${cups.length} Europacupmatcher utan domare hos FotMob fick domare`);
+  }
   const matches = [...out.values()].sort((a, b) => a.date.localeCompare(b.date));
   const withRef = matches.filter((m) => m.referee).length;
-  writeJson(UPCOMING, { updatedAt: new Date().toISOString(), source: 'FotMob matchDetails infoBox.Referee', matches });
+  writeJson(UPCOMING, { updatedAt: new Date().toISOString(), source: 'FotMob matchDetails infoBox.Referee (+ UEFA match.uefa.com for CL/EL/ECL)', matches });
   log(`Kommande domare: ${withRef}/${fixtures.length} matcher har tillsatt domare`);
 }
 
