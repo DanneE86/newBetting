@@ -51,7 +51,7 @@ async function oppna(page: any, vy: string) {
   return fel;
 }
 
-/** Stryktipset: Generera kräver att alla 13 matcher är låsta med hänglåset. */
+/** Stryktipset: lås alla 13 matcher med hänglåset. */
 async function lasAlla(page: any) {
   const seals = page.locator('#stryktips-view .sb-seal');
   const n = await seals.count();
@@ -89,6 +89,34 @@ for (const [vy, namn] of [['stryktipset', 'Stryktipset'], ['europatipset', 'Euro
     await expect(view.locator('.sb-row')).toHaveCount(13);
     await expect(page.locator('#sb-generate')).toBeVisible();
     await expect(view).not.toContainText('Hämtar');
+    expect(fel, fel.join('\n')).toEqual([]);
+  });
+}
+
+for (const vy of ['stryktipset', 'europatipset'] as const) {
+  test(`${vy}: Elo bredvid lagnamnen, starkare laget grönt med +skillnad`, async ({ page }) => {
+    const data = JSON.parse(fs.readFileSync(path.join(root, 'data', 'stryktipset.json'), 'utf8'));
+    const p = data.products.find((x: any) => x.product === vy);
+    const medElo = (p?.events ?? []).filter((e: any) => (e.teamElo || e.clubElo)?.home);
+    test.skip(!medElo.length, 'ingen match med Elo i omgången');
+    const fel = await oppna(page, vy);
+    const view = page.locator('#stryktips-view');
+    await expect(view.locator('.st-match')).toHaveCount(13, { timeout: 30_000 });
+    const e = medElo[0];
+    const x = e.teamElo || e.clubElo;
+    const kort = view.locator(`.st-match .st-num:text-is("${e.eventNumber}")`).locator('xpath=ancestor::article');
+    const taggar = kort.locator('.st-title h3 .team-elo');
+    await expect(taggar).toHaveCount(2);
+    await expect(taggar.nth(0)).toHaveText(new RegExp(`^Elo ${Math.round(x.home)}( \\+\\d+)?$`));
+    await expect(taggar.nth(1)).toHaveText(new RegExp(`^Elo ${Math.round(x.away)}( \\+\\d+)?$`));
+    await expect(taggar.nth(0)).toHaveAttribute('title', /Elo ger 1 \d+ % · X \d+ % · 2 \d+ %/);
+    const diff = Math.round(x.home) - Math.round(x.away);
+    if (diff !== 0) {
+      await expect(kort.locator('.st-title .team-elo.is-stronger')).toHaveCount(1);
+      await expect(taggar.nth(diff > 0 ? 0 : 1)).toHaveClass(/is-stronger/);
+      await expect(kort.locator('.st-title .team-elo.is-stronger .elo-diff')).toHaveText(`+${Math.abs(diff)}`);
+    }
+    expect(await view.locator('.st-match .team-elo').count()).toBe(2 * medElo.length);
     expect(fel, fel.join('\n')).toEqual([]);
   });
 }
@@ -171,7 +199,7 @@ test('Stryktipset: krav på risklagets seger i B ger markeringen ⚠ risklag i B
   expect(fel, fel.join('\n')).toEqual([]);
 });
 
-test('Stryktipset: hänglås per match – låst går inte att ändra, Generera kräver alla låsta', async ({ page }) => {
+test('Stryktipset: hänglås per match – låst går inte att ändra, Generera kräver inte alla låsta', async ({ page }) => {
   test.setTimeout(300_000);
   const fel = await oppna(page, 'stryktipset');
   const view = page.locator('#stryktips-view');
@@ -179,13 +207,6 @@ test('Stryktipset: hänglås per match – låst går inte att ändra, Generera 
   await expect(rows).toHaveCount(13, { timeout: 30_000 });
   await expect(view.locator('.sb-seal')).toHaveCount(13);
   await expect(page.locator('#sb-generate')).toBeEnabled({ timeout: 120_000 });
-  const inViewport = (el: any) => el.evaluate((n: Element) => { const r = n.getBoundingClientRect(); return r.top >= 0 && r.bottom <= innerHeight; });
-
-  // Inget låst: Generera ger fel och scrollar till match 1
-  await page.locator('#sb-generate').click();
-  await expect(view.locator('.sb-gen-err')).toContainText('Match 1 är inte låst');
-  await expect(rows.nth(0)).toHaveClass(/is-error/);
-  await expect.poll(() => inViewport(rows.nth(0))).toBe(true);
 
   // Allt låst: raden spärras
   const r3 = rows.nth(2);
@@ -210,7 +231,9 @@ test('Stryktipset: hänglås per match – låst går inte att ändra, Generera 
   await r3.locator('.sb-seal').click();
   await expect(r3).toHaveClass(/is-sealed/);
 
-  // Allt låst: Generera kör
+  // Bara några låsta: Generera kör ändå (2026-10-12: "jag ska inte behöva låsa alla matcher")
+  await rows.nth(0).locator('.sb-seal').click();
+  await expect(view.locator('.sb-seal-count')).toContainText('12/13');
   await page.locator('#sb-generate').click();
   await expect(view.locator('.sb-gen-err')).toHaveCount(0);
   await expect(page.locator('#sb-generate')).toBeDisabled();

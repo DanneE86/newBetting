@@ -4,7 +4,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { nameScore } from './match-context.mjs';
+import { findClubElo } from './elo-1x2.mjs';
 import { getText } from './http.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
@@ -53,13 +53,10 @@ export async function clubEloFor(teams, log = () => {}) {
   if (changed) { fs.mkdirSync(path.dirname(CACHE), { recursive: true }); fs.writeFileSync(CACHE, JSON.stringify(cache, null, 1), 'utf8'); }
   const out = new Map();
   for (const t of teams) {
-    const clubs = cache.countries[ISO_TO_CLUBELO[t.isoCode]]?.clubs || [];
-    let best = null;
-    for (const c of clubs) {
-      const s = nameScore(t.name, null, c.name);
-      if (s >= 0.6 && (!best || s > best.s)) best = { s, c };
-    }
-    if (best) out.set(t.name, { elo: best.c.elo, clubEloName: best.c.name });
+    // Samma matchning som findClubElo men bara lagets land: exakt namn utan accenter forst ("Bodö/Glimt" = "Bodø/Glimt")
+    const code = ISO_TO_CLUBELO[t.isoCode];
+    const hit = code && cache.countries[code] ? findClubElo(t.name, { countries: { [code]: cache.countries[code] } }, 0.6) : null;
+    if (hit) out.set(t.name, { elo: hit.elo, clubEloName: hit.clubEloName });
   }
   return out;
 }

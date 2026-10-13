@@ -98,9 +98,8 @@ test('Stryktipset: en sida, egna krav genererar kupong A och B', async ({ page }
   for (const s of ['1', 'X', '2']) await rows.nth(5).locator(`.sb-sign[data-sign="${s}"]`).click();
   await rows.nth(5).locator('.sb-scope button[data-scope="A"]').click();
   await expect(rows.nth(1).locator('.sb-krav-lbl')).toHaveText('1X');
-  // Generera kräver att alla 13 matcher är låsta med hänglåset
-  for (let i = 0; i < 13; i++) await rows.nth(i).locator('.sb-seal').click();
-  await expect(page.locator('.sb-seal.on')).toHaveCount(13);
+  // Generera kräver inte att matcherna är låsta (2026-10-12)
+  await expect(page.locator('.sb-seal.on')).toHaveCount(0);
   await page.click('#sb-generate');
   const table = page.locator('.sb-table tbody tr');
   await expect(table).toHaveCount(13);
@@ -146,9 +145,8 @@ test('Stryktipset: en sida, egna krav genererar kupong A och B', async ({ page }
   const share = rows.nth(6).locator('.sb-defall');
   await expect(share).toHaveCount(1);
   await expect(share.locator('.sb-defall-line')).toHaveCount(3);
-  // Låst match går inte att ändra – lås upp match 7 först
-  await expect(share.locator('[data-defall-toggle]')).toBeDisabled();
-  await rows.nth(6).locator('.sb-seal').click();
+  // Olåst match (Generera kräver inga lås sedan 2026-10-12) går att ändra direkt
+  await expect(share.locator('[data-defall-toggle]')).toBeEnabled();
   await rows.nth(6).locator('[data-defall-toggle]').click();
   const shareOn = rows.nth(6).locator('.sb-defall');
   await expect(shareOn.locator('.sb-defall-edit')).toHaveCount(3);
@@ -160,7 +158,7 @@ test('Stryktipset: en sida, egna krav genererar kupong A och B', async ({ page }
   await rows.nth(6).locator('[data-defall-toggle]').click();
   await expect(rows.nth(6).locator('.sb-defall-edit')).toHaveCount(0);
   await rows.nth(6).locator('.sb-seal').click();
-  await expect(page.locator('.sb-seal.on')).toHaveCount(13);
+  await expect(page.locator('.sb-seal.on')).toHaveCount(1);
   // Turmatcher, matcher och vanliga missar är hopfällda – fäll ut vid behov
   await page.locator('.st-history > summary').click();
   await expect(page.locator('.st-miss')).toContainText('Vanliga missar');

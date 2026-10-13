@@ -136,7 +136,7 @@ export function generateCoupons(p, krav, { rows = null } = {}) {
 
 // ---------- Filkuponger A, B och C (användaren 2026-10-11: "skippa helt allt som har med Gambling Cabin att göra, ta bort
 // alla regler, vill bara köra på fil"). Spelas som Egna rader-fil hos Svenska Spel. Inga färg-, tecken- eller GC-regler:
-//   spikar: omgångens 2 starkaste favoriter (vår procent), dina låsta spikar räknas in
+//   spikar: omgångens 2 starkaste favoriter (vår procent) – har du egna spikar spikas inga andra matcher
 //   A: de 500 troligaste raderna med minst 30 000 kr för 13 rätt
 //   B: de 500 nästa raderna som inte finns i A, med bonus för tecken A saknar (fyller A:s hål)
 //   C: 500 rader där underspelade tecken (vår chans minst 20 % och minst 1,3 × folkets streck, inte favoriten) väger
@@ -152,12 +152,15 @@ export function clampFileRows(n, fallback = FILE_RULES.rows) {
   if (n == null || String(n).trim() === "" || !Number.isFinite(x)) return fallback;
   return Math.max(FILE_BUDGET.min, Math.min(FILE_BUDGET.max, x));
 }
-/** Spikar för filkupongerna: dina krav, plus favoriten på de starkaste matcherna tills det finns FILE_RULES.spikes spikar. */
+/** Spikar för filkupongerna: favoriten på de FILE_RULES.spikes starkaste matcherna – men har du egna spikar spikas inga
+ *  andra matcher (användaren 2026-10-12: "har jag hittat egna spikar så ska du göra om de icke låsta matcherna om det är
+ *  spik i någon av dom"). */
 export function strongSpikeForced(events, forced, n = FILE_RULES.spikes) {
-  const locked = forced.filter((f) => f?.length === 1).length;
+  const own = forced.filter((f) => f?.length === 1).length;
+  if (own) return forced.slice();
   const free = events.map((e, i) => ({ i, p: Math.max(...e.final) })).filter((x) => forced[x.i] == null).sort((a, b) => b.p - a.p);
   const out = forced.slice();
-  for (const { i } of free.slice(0, Math.max(0, n - locked))) out[i] = [favIdx(events[i])];
+  for (const { i } of free.slice(0, n)) out[i] = [favIdx(events[i])];
   return out;
 }
 /** Underspelat tecken: inte favoriten, vår chans minst underMin och minst underRatio × folkets streck. */
@@ -167,16 +170,31 @@ export function buildFileCoupons(p, events, forcedFor, base, r = FILE_RULES) {
   const make = (sys, extra = {}) => {
     // Egen fördelning på en match: den spikas aldrig automatiskt, raderna fördelas efter dina andelar
     const plan = buildFallSharePlan(p, events, forcedFor(sys), sys);
+    const nPlan = plan.filter(Boolean).length;
     const forced = strongSpikeForced(events, forcedFor(sys).map((f, i) => f ?? (plan[i] ? [0, 1, 2] : null)), r.spikes);
-    const picked = selectEgnaRows(events, forced, base, { rows: clampFileRows(r.rowsBy?.[sys], r.rows), payoutMin: r.payoutMin, fallPlan: plan, ...extra });
+    const select = () => selectEgnaRows(events, forced, base, { rows: clampFileRows(r.rowsBy?.[sys], r.rows), payoutMin: r.payoutMin, fallPlan: plan, ...extra });
+    let picked = select();
     if (!picked) return null;
+    // Egna spikar: en fri match där alla rader ändå fick samma tecken (stark favorit) görs om med vår chans som fördelning,
+    // så att bara dina matcher är spikar (användaren 2026-10-12)
+    // (upprepas: en omgjord match kan flytta spiken till en annan)
+    const redo = [];
+    for (let guard = 0; forced.some((f) => f?.length === 1) && guard < events.length; guard++) {
+      const spiked = events.map((_, i) => i).filter((i) => forced[i] == null && !plan[i] && new Set(picked.rowList.map((row) => row[i])).size === 1);
+      if (!spiked.length) break;
+      for (const i of spiked) plan[i] = events[i].final.map((x) => x * 100);
+      redo.push(...spiked);
+      picked = select();
+      if (!picked) return null;
+    }
+    redo.sort((a, b) => a - b);
     // turnover = typisk omsättning: sidan räknar live med max(live-omsättning, typisk), annars blir omsättningen tidigt i veckan
     // så låg att inga rader når 30 000 kr (Europatipset 2026-10-11)
     const c = finishEgnaRader(p, events, forcedFor(sys), base, picked, sys, { file: true, spikes: forced.filter((f) => f?.length === 1).length, turnover: base.turnover || base.realTurnover });
     c.picks = c.picks.map((x, i) => ({ ...x, spikStrong: forced[i]?.length === 1 && forcedFor(sys)[i] == null, shares: plan[i] || null }));
-    const nPlan = plan.filter(Boolean).length;
+    if (redo.length) c.relaxed = [...c.relaxed, `match ${redo.map((i) => events[i].eventNumber).join(", ")} blev spik av sig själv och är omgjord efter vår chans – bara dina spikar är spikar`];
     if (nPlan) c.relaxed = [...c.relaxed, `${nPlan} ${nPlan === 1 ? "match" : "matcher"} med din egen fördelning (${sys} %)`];
-    if (picked.payoutShort) c.relaxed = [...c.relaxed, `några rader ger under ${r.payoutMin.toLocaleString("sv-SE")} kr – din fördelning gick före utdelningsgolvet`];
+    if (picked.payoutShort) c.relaxed = [...c.relaxed, `några rader ger under ${r.payoutMin.toLocaleString("sv-SE")} kr – fördelningen gick före utdelningsgolvet`];
     return c;
   };
   const A = make("A");

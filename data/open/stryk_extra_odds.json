@@ -3446,7 +3446,7 @@
    ]
   },
   "soccer_uefa_champs_league": {
-   "fetchedAt": "2026-10-12T15:37:25.026Z",
+   "fetchedAt": "2026-10-12T19:35:04.749Z",
    "events": [
     {
      "commence": "2026-10-13T16:45:00Z",
@@ -3463,9 +3463,9 @@
       {
        "key": "betfair_ex_eu",
        "bookmaker": "Betfair",
-       "home": 2.62,
+       "home": 2.64,
        "draw": 3.85,
-       "away": 2.74
+       "away": 2.72
       },
       {
        "key": "onexbet",
@@ -3590,8 +3590,8 @@
        "key": "matchbook",
        "bookmaker": "Matchbook",
        "home": 2.64,
-       "draw": 3.85,
-       "away": 2.74
+       "draw": 3.9,
+       "away": 2.72
       },
       {
        "key": "betonlineag",
@@ -3617,14 +3617,14 @@
       {
        "key": "betclic_fr",
        "bookmaker": "Betclic (FR)",
-       "home": 3.35,
+       "home": 3.33,
        "draw": 3.75,
-       "away": 1.94
+       "away": 1.95
       },
       {
        "key": "unibet_fr",
        "bookmaker": "Unibet (FR)",
-       "home": 3.3,
+       "home": 3.4,
        "draw": 3.7,
        "away": 1.9
       },
@@ -3645,7 +3645,7 @@
       {
        "key": "betfair_ex_eu",
        "bookmaker": "Betfair",
-       "home": 3.7,
+       "home": 3.65,
        "draw": 3.85,
        "away": 2.12
       },
@@ -3673,37 +3673,37 @@
       {
        "key": "pinnacle",
        "bookmaker": "Pinnacle",
-       "home": 3.52,
-       "draw": 3.8,
+       "home": 3.53,
+       "draw": 3.81,
        "away": 2.05
       },
       {
        "key": "leovegas_se",
        "bookmaker": "LeoVegas (SE)",
-       "home": 3.25,
-       "draw": 3.6,
-       "away": 2.08
+       "home": 3.4,
+       "draw": 3.65,
+       "away": 2
       },
       {
        "key": "unibet_se",
        "bookmaker": "Unibet (SE)",
-       "home": 3.4,
-       "draw": 3.75,
-       "away": 2.15
+       "home": 3.55,
+       "draw": 3.8,
+       "away": 2.07
       },
       {
        "key": "unibet_nl",
        "bookmaker": "Unibet (NL)",
-       "home": 3.4,
-       "draw": 3.75,
-       "away": 2.15
+       "home": 3.55,
+       "draw": 3.8,
+       "away": 2.07
       },
       {
        "key": "pmu_fr",
        "bookmaker": "PMU (FR)",
-       "home": 3.1,
-       "draw": 3.45,
-       "away": 2.02
+       "home": 3.25,
+       "draw": 3.5,
+       "away": 1.94
       },
       {
        "key": "williamhill",
@@ -3750,7 +3750,7 @@
       {
        "key": "matchbook",
        "bookmaker": "Matchbook",
-       "home": 3.7,
+       "home": 3.65,
        "draw": 3.85,
        "away": 2.12
       },
@@ -3792,22 +3792,22 @@
       {
        "key": "betfair_ex_eu",
        "bookmaker": "Betfair",
-       "home": 1.25,
+       "home": 1.24,
        "draw": 7.2,
-       "away": 15.5
+       "away": 16
       },
       {
        "key": "pinnacle",
        "bookmaker": "Pinnacle",
-       "home": 1.22,
-       "draw": 6.9,
-       "away": 13.01
+       "home": 1.21,
+       "draw": 6.99,
+       "away": 13.41
       },
       {
        "key": "unibet_fr",
        "bookmaker": "Unibet (FR)",
        "home": 1.18,
-       "draw": 6.2,
+       "draw": 7,
        "away": 12
       },
       {
@@ -3841,44 +3841,44 @@
       {
        "key": "pmu_fr",
        "bookmaker": "PMU (FR)",
-       "home": 1.18,
-       "draw": 5.8,
-       "away": 12.5
+       "home": 1.17,
+       "draw": 6,
+       "away": 13
       },
       {
        "key": "leovegas_se",
        "bookmaker": "LeoVegas (SE)",
-       "home": 1.21,
-       "draw": 6.1,
-       "away": 14
+       "home": 1.19,
+       "draw": 6.4,
+       "away": 15
       },
       {
        "key": "unibet_se",
        "bookmaker": "Unibet (SE)",
-       "home": 1.23,
-       "draw": 6.75,
-       "away": 16
+       "home": 1.22,
+       "draw": 7,
+       "away": 17
       },
       {
        "key": "unibet_nl",
        "bookmaker": "Unibet (NL)",
-       "home": 1.23,
-       "draw": 6.75,
-       "away": 16
+       "home": 1.22,
+       "draw": 7,
+       "away": 17
       },
       {
        "key": "betsson",
        "bookmaker": "Betsson",
-       "home": 1.23,
-       "draw": 5.85,
-       "away": 15
+       "home": 1.22,
+       "draw": 6,
+       "away": 14.5
       },
       {
        "key": "nordicbet",
        "bookmaker": "Nordic Bet",
        "home": 1.23,
-       "draw": 5.95,
-       "away": 15.5
+       "draw": 6.1,
+       "away": 14.5
       },
       {
        "key": "sport888",
@@ -3911,7 +3911,7 @@
       {
        "key": "matchbook",
        "bookmaker": "Matchbook",
-       "home": 1.25,
+       "home": 1.24,
        "draw": 7.2,
        "away": 16
       },
@@ -3953,30 +3953,30 @@
       {
        "key": "betfair_ex_eu",
        "bookmaker": "Betfair",
-       "home": 1.99,
+       "home": 2,
        "draw": 4,
        "away": 3.9
       },
       {
        "key": "pinnacle",
        "bookmaker": "Pinnacle",
-       "home": 1.99,
-       "draw": 3.93,
-       "away": 3.59
+       "home": 1.92,
+       "draw": 4.02,
+       "away": 3.76
       },
       {
        "key": "betclic_fr",
        "bookmaker": "Betclic (FR)",
-       "home": 1.9,
-       "draw": 3.8,
-       "away": 3.45
+       "home": 1.92,
+       "draw": 3.85,
+       "away": 3.35
       },
       {
        "key": "unibet_fr",
        "bookmaker": "Unibet (FR)",
        "home": 1.86,
-       "draw": 3.7,
-       "away": 3.4
+       "draw": 3.8,
+       "away": 3.5
       },
       {
        "key": "winamax_de",
@@ -4003,43 +4003,43 @@
        "key": "pmu_fr",
        "bookmaker": "PMU (FR)",
        "home": 1.85,
-       "draw": 3.75,
-       "away": 3.45
+       "draw": 3.7,
+       "away": 3.35
       },
       {
        "key": "leovegas_se",
        "bookmaker": "LeoVegas (SE)",
-       "home": 1.89,
-       "draw": 3.9,
-       "away": 3.55
+       "home": 1.91,
+       "draw": 3.85,
+       "away": 3.5
       },
       {
        "key": "unibet_se",
        "bookmaker": "Unibet (SE)",
-       "home": 1.95,
+       "home": 1.96,
        "draw": 4.1,
-       "away": 3.75
+       "away": 3.7
       },
       {
        "key": "unibet_nl",
        "bookmaker": "Unibet (NL)",
-       "home": 1.95,
+       "home": 1.96,
        "draw": 4.1,
-       "away": 3.75
+       "away": 3.7
       },
       {
        "key": "betsson",
        "bookmaker": "Betsson",
-       "home": 1.95,
+       "home": 1.9,
        "draw": 3.85,
-       "away": 3.55
+       "away": 3.75
       },
       {
        "key": "nordicbet",
        "bookmaker": "Nordic Bet",
-       "home": 1.98,
+       "home": 1.92,
        "draw": 3.9,
-       "away": 3.6
+       "away": 3.8
       },
       {
        "key": "williamhill",
@@ -4108,7 +4108,7 @@
        "key": "betfair_ex_eu",
        "bookmaker": "Betfair",
        "home": 9.8,
-       "draw": 7.6,
+       "draw": 7.4,
        "away": 1.3
       },
       {
@@ -4121,44 +4121,44 @@
       {
        "key": "pinnacle",
        "bookmaker": "Pinnacle",
-       "home": 8.37,
-       "draw": 7.27,
+       "home": 8.28,
+       "draw": 7.24,
        "away": 1.27
       },
       {
        "key": "unibet_fr",
        "bookmaker": "Unibet (FR)",
        "home": 8.5,
-       "draw": 7,
-       "away": 1.21
+       "draw": 7.25,
+       "away": 1.22
       },
       {
        "key": "winamax_fr",
        "bookmaker": "Winamax (FR)",
-       "home": 7.25,
-       "draw": 7,
-       "away": 1.24
+       "home": 7,
+       "draw": 6.75,
+       "away": 1.25
       },
       {
        "key": "betclic_fr",
        "bookmaker": "Betclic (FR)",
-       "home": 8,
-       "draw": 6.75,
-       "away": 1.24
+       "home": 7,
+       "draw": 6.9,
+       "away": 1.26
       },
       {
        "key": "winamax_de",
        "bookmaker": "Winamax (DE)",
-       "home": 7.5,
-       "draw": 7.25,
-       "away": 1.26
+       "home": 7.25,
+       "draw": 7,
+       "away": 1.27
       },
       {
        "key": "codere_it",
        "bookmaker": "Codere (IT)",
-       "home": 8.2,
+       "home": 7.8,
        "draw": 6.8,
-       "away": 1.28
+       "away": 1.29
       },
       {
        "key": "unibet_nl",
@@ -4234,7 +4234,7 @@
        "key": "matchbook",
        "bookmaker": "Matchbook",
        "home": 9.8,
-       "draw": 7.6,
+       "draw": 7.4,
        "away": 1.3
       },
       {
@@ -4268,8 +4268,8 @@
       {
        "key": "betfair_ex_eu",
        "bookmaker": "Betfair",
-       "home": 25,
-       "draw": 14.5,
+       "home": 23,
+       "draw": 14,
        "away": 1.12
       },
       {
@@ -4282,35 +4282,35 @@
       {
        "key": "pinnacle",
        "bookmaker": "Pinnacle",
-       "home": 18.25,
-       "draw": 14.1,
-       "away": 1.09
+       "home": 17.38,
+       "draw": 13.69,
+       "away": 1.1
       },
       {
        "key": "unibet_fr",
        "bookmaker": "Unibet (FR)",
        "home": 15,
        "draw": 10,
-       "away": 1.06
+       "away": 1.09
       },
       {
        "key": "betclic_fr",
        "bookmaker": "Betclic (FR)",
-       "home": 15.25,
+       "home": 14.75,
        "draw": 12.5,
        "away": 1.07
       },
       {
        "key": "codere_it",
        "bookmaker": "Codere (IT)",
-       "home": 18,
+       "home": 17,
        "draw": 11,
        "away": 1.11
       },
       {
        "key": "winamax_fr",
        "bookmaker": "Winamax (FR)",
-       "home": 14.5,
+       "home": 14,
        "draw": 12.5,
        "away": 1.07
       },
@@ -4332,36 +4332,36 @@
        "key": "leovegas_se",
        "bookmaker": "LeoVegas (SE)",
        "home": 21,
-       "draw": 11.5,
+       "draw": 12,
        "away": 1.08
       },
       {
        "key": "unibet_se",
        "bookmaker": "Unibet (SE)",
-       "home": 25,
+       "home": 26,
        "draw": 13,
        "away": 1.1
       },
       {
        "key": "unibet_nl",
        "bookmaker": "Unibet (NL)",
-       "home": 25,
+       "home": 26,
        "draw": 13,
        "away": 1.1
       },
       {
        "key": "betsson",
        "bookmaker": "Betsson",
-       "home": 25,
+       "home": 24,
        "draw": 11,
        "away": 1.09
       },
       {
        "key": "nordicbet",
        "bookmaker": "Nordic Bet",
-       "home": 26,
+       "home": 25,
        "draw": 11,
-       "away": 1.09
+       "away": 1.1
       },
       {
        "key": "sport888",
@@ -4387,16 +4387,16 @@
       {
        "key": "gtbets",
        "bookmaker": "GTbets",
-       "home": 18.73,
-       "draw": 12.47,
+       "home": 17.73,
+       "draw": 11.64,
        "away": 1.11
       },
       {
        "key": "matchbook",
        "bookmaker": "Matchbook",
-       "home": 26,
-       "draw": 14.5,
-       "away": 1.12
+       "home": 24,
+       "draw": 13.5,
+       "away": 1.13
       },
       {
        "key": "betonlineag",
@@ -4437,22 +4437,22 @@
        "key": "betfair_ex_eu",
        "bookmaker": "Betfair",
        "home": 1.28,
-       "draw": 7,
-       "away": 12
+       "draw": 6.8,
+       "away": 12.5
       },
       {
        "key": "pinnacle",
        "bookmaker": "Pinnacle",
        "home": 1.24,
-       "draw": 6.72,
-       "away": 11.18
+       "draw": 6.65,
+       "away": 11.13
       },
       {
        "key": "unibet_fr",
        "bookmaker": "Unibet (FR)",
        "home": 1.21,
-       "draw": 6,
-       "away": 9.5
+       "draw": 6.1,
+       "away": 10
       },
       {
        "key": "betclic_fr",
@@ -4471,16 +4471,16 @@
       {
        "key": "winamax_fr",
        "bookmaker": "Winamax (FR)",
-       "home": 1.22,
+       "home": 1.21,
        "draw": 6.5,
-       "away": 9
+       "away": 9.5
       },
       {
        "key": "winamax_de",
        "bookmaker": "Winamax (DE)",
-       "home": 1.23,
+       "home": 1.22,
        "draw": 6.75,
-       "away": 9.5
+       "away": 10
       },
       {
        "key": "leovegas_se",
@@ -4556,7 +4556,7 @@
        "key": "matchbook",
        "bookmaker": "Matchbook",
        "home": 1.28,
-       "draw": 7,
+       "draw": 6.8,
        "away": 12.5
       },
       {
@@ -4583,37 +4583,37 @@
       {
        "key": "betfair_ex_eu",
        "bookmaker": "Betfair",
-       "home": 2.22,
-       "draw": 3.8,
+       "home": 2.2,
+       "draw": 3.85,
        "away": 3.4
       },
       {
        "key": "onexbet",
        "bookmaker": "1xBet",
-       "home": 2.29,
-       "draw": 3.72,
-       "away": 3.23
+       "home": 2.19,
+       "draw": 3.8,
+       "away": 3.37
       },
       {
        "key": "marathonbet",
        "bookmaker": "Marathon Bet",
-       "home": 2.25,
-       "draw": 3.66,
-       "away": 3.18
+       "home": 2.16,
+       "draw": 3.74,
+       "away": 3.32
       },
       {
        "key": "pinnacle",
        "bookmaker": "Pinnacle",
-       "home": 2.16,
-       "draw": 3.84,
-       "away": 3.23
+       "home": 2.13,
+       "draw": 3.85,
+       "away": 3.29
       },
       {
        "key": "unibet_fr",
        "bookmaker": "Unibet (FR)",
        "home": 2,
        "draw": 3.8,
-       "away": 2.95
+       "away": 3.1
       },
       {
        "key": "betclic_fr",
@@ -4647,7 +4647,7 @@
        "key": "leovegas_se",
        "bookmaker": "LeoVegas (SE)",
        "home": 2.12,
-       "draw": 3.45,
+       "draw": 3.5,
        "away": 3.25
       },
       {
@@ -4667,23 +4667,23 @@
       {
        "key": "pmu_fr",
        "bookmaker": "PMU (FR)",
-       "home": 2.06,
-       "draw": 3.3,
+       "home": 2.05,
+       "draw": 3.35,
        "away": 3.15
       },
       {
        "key": "betsson",
        "bookmaker": "Betsson",
-       "home": 2.15,
-       "draw": 3.7,
-       "away": 3.15
+       "home": 2.1,
+       "draw": 3.65,
+       "away": 3.3
       },
       {
        "key": "nordicbet",
        "bookmaker": "Nordic Bet",
-       "home": 2.18,
-       "draw": 3.75,
-       "away": 3.2
+       "home": 2.12,
+       "draw": 3.7,
+       "away": 3.3
       },
       {
        "key": "sport888",
@@ -4716,8 +4716,8 @@
       {
        "key": "matchbook",
        "bookmaker": "Matchbook",
-       "home": 2.22,
-       "draw": 3.8,
+       "home": 2.2,
+       "draw": 3.85,
        "away": 3.4
       },
       {
@@ -4758,9 +4758,9 @@
       {
        "key": "betfair_ex_eu",
        "bookmaker": "Betfair",
-       "home": 1.75,
-       "draw": 5,
-       "away": 4.3
+       "home": 1.79,
+       "draw": 4.8,
+       "away": 4.1
       },
       {
        "key": "pinnacle",
@@ -4773,29 +4773,29 @@
        "key": "unibet_fr",
        "bookmaker": "Unibet (FR)",
        "home": 1.65,
-       "draw": 4.3,
-       "away": 3.8
+       "draw": 4.4,
+       "away": 3.9
       },
       {
        "key": "betclic_fr",
        "bookmaker": "Betclic (FR)",
        "home": 1.68,
-       "draw": 4.4,
-       "away": 3.88
+       "draw": 4.35,
+       "away": 3.9
       },
       {
        "key": "winamax_fr",
        "bookmaker": "Winamax (FR)",
-       "home": 1.68,
-       "draw": 4.4,
-       "away": 3.75
+       "home": 1.66,
+       "draw": 4.8,
+       "away": 3.55
       },
       {
        "key": "winamax_de",
        "bookmaker": "Winamax (DE)",
-       "home": 1.7,
-       "draw": 4.5,
-       "away": 3.85
+       "home": 1.68,
+       "draw": 4.9,
+       "away": 3.6
       },
       {
        "key": "pmu_fr",
@@ -4856,9 +4856,9 @@
       {
        "key": "coolbet",
        "bookmaker": "Coolbet",
-       "home": 1.74,
-       "draw": 4.85,
-       "away": 4.15
+       "home": 1.77,
+       "draw": 4.8,
+       "away": 4
       },
       {
        "key": "gtbets",
@@ -4877,9 +4877,9 @@
       {
        "key": "matchbook",
        "bookmaker": "Matchbook",
-       "home": 1.75,
-       "draw": 5,
-       "away": 4.3
+       "home": 1.79,
+       "draw": 4.8,
+       "away": 4.1
       },
       {
        "key": "betonlineag",
@@ -4919,7 +4919,7 @@
       {
        "key": "betfair_ex_eu",
        "bookmaker": "Betfair",
-       "home": 3.65,
+       "home": 3.7,
        "draw": 4.3,
        "away": 2
       },
@@ -4982,14 +4982,14 @@
       {
        "key": "sport888",
        "bookmaker": "888sport",
-       "home": 3.4,
+       "home": 3.3,
        "draw": 3.9,
        "away": 1.91
       },
       {
        "key": "williamhill",
        "bookmaker": "William Hill",
-       "home": 3.4,
+       "home": 3.3,
        "draw": 3.9,
        "away": 1.91
       },
@@ -5080,8 +5080,8 @@
       {
        "key": "betfair_ex_eu",
        "bookmaker": "Betfair",
-       "home": 11,
-       "draw": 6.4,
+       "home": 10.5,
+       "draw": 6.6,
        "away": 1.32
       },
       {
@@ -5138,20 +5138,20 @@
        "bookmaker": "LeoVegas (SE)",
        "home": 9.5,
        "draw": 5.75,
-       "away": 1.28
+       "away": 1.27
       },
       {
        "key": "unibet_se",
        "bookmaker": "Unibet (SE)",
        "home": 10.5,
-       "draw": 6.1,
+       "draw": 6.25,
        "away": 1.3
       },
       {
        "key": "unibet_nl",
        "bookmaker": "Unibet (NL)",
        "home": 10.5,
-       "draw": 6.1,
+       "draw": 6.25,
        "away": 1.3
       },
       {
@@ -5199,8 +5199,8 @@
       {
        "key": "matchbook",
        "bookmaker": "Matchbook",
-       "home": 11,
-       "draw": 6.4,
+       "home": 10.5,
+       "draw": 6.6,
        "away": 1.32
       },
       {
@@ -5227,23 +5227,23 @@
       {
        "key": "marathonbet",
        "bookmaker": "Marathon Bet",
-       "home": 2.74,
-       "draw": 3.48,
-       "away": 2.56
+       "home": 2.66,
+       "draw": 3.38,
+       "away": 2.69
       },
       {
        "key": "betfair_ex_eu",
        "bookmaker": "Betfair",
-       "home": 2.72,
+       "home": 2.68,
        "draw": 3.55,
-       "away": 2.78
+       "away": 2.8
       },
       {
        "key": "onexbet",
        "bookmaker": "1xBet",
-       "home": 2.81,
-       "draw": 3.58,
-       "away": 2.63
+       "home": 2.73,
+       "draw": 3.47,
+       "away": 2.77
       },
       {
        "key": "pinnacle",
@@ -5306,28 +5306,28 @@
        "bookmaker": "Unibet (SE)",
        "home": 2.7,
        "draw": 3.55,
-       "away": 2.7
+       "away": 2.65
       },
       {
        "key": "unibet_nl",
        "bookmaker": "Unibet (NL)",
        "home": 2.7,
        "draw": 3.55,
-       "away": 2.7
+       "away": 2.65
       },
       {
        "key": "pmu_fr",
        "bookmaker": "PMU (FR)",
-       "home": 2.5,
-       "draw": 3.3,
+       "home": 2.55,
+       "draw": 3.25,
        "away": 2.5
       },
       {
        "key": "leovegas_se",
        "bookmaker": "LeoVegas (SE)",
-       "home": 2.6,
-       "draw": 3.4,
-       "away": 2.6
+       "home": 2.63,
+       "draw": 3.35,
+       "away": 2.55
       },
       {
        "key": "sport888",
@@ -5360,9 +5360,9 @@
       {
        "key": "matchbook",
        "bookmaker": "Matchbook",
-       "home": 2.7,
+       "home": 2.68,
        "draw": 3.55,
-       "away": 2.78
+       "away": 2.8
       },
       {
        "key": "betonlineag",
@@ -5396,7 +5396,7 @@
        "key": "betfair_ex_eu",
        "bookmaker": "Betfair",
        "home": 3.85,
-       "draw": 4.1,
+       "draw": 4.2,
        "away": 1.97
       },
       {
@@ -5409,8 +5409,8 @@
       {
        "key": "pinnacle",
        "bookmaker": "Pinnacle",
-       "home": 3.71,
-       "draw": 4.05,
+       "home": 3.72,
+       "draw": 4.06,
        "away": 1.93
       },
       {
@@ -5522,7 +5522,7 @@
        "key": "matchbook",
        "bookmaker": "Matchbook",
        "home": 3.85,
-       "draw": 4.1,
+       "draw": 4.2,
        "away": 1.97
       },
       {
@@ -5549,9 +5549,9 @@
       {
        "key": "marathonbet",
        "bookmaker": "Marathon Bet",
-       "home": 1.69,
-       "draw": 3.95,
-       "away": 5.05
+       "home": 1.64,
+       "draw": 4.15,
+       "away": 5.2
       },
       {
        "key": "onexbet",
@@ -5565,14 +5565,14 @@
        "bookmaker": "Betfair",
        "home": 1.68,
        "draw": 4.3,
-       "away": 5.6
+       "away": 5.5
       },
       {
        "key": "pinnacle",
        "bookmaker": "Pinnacle",
-       "home": 1.65,
-       "draw": 4.28,
-       "away": 5.04
+       "home": 1.66,
+       "draw": 4.26,
+       "away": 5.05
       },
       {
        "key": "betclic_fr",
@@ -5612,30 +5612,30 @@
       {
        "key": "unibet_nl",
        "bookmaker": "Unibet (NL)",
-       "home": 1.67,
-       "draw": 4.2,
-       "away": 5.25
+       "home": 1.66,
+       "draw": 4.1,
+       "away": 5.5
       },
       {
        "key": "pmu_fr",
        "bookmaker": "PMU (FR)",
-       "home": 1.6,
-       "draw": 3.8,
-       "away": 4.7
+       "home": 1.57,
+       "draw": 3.75,
+       "away": 4.8
       },
       {
        "key": "leovegas_se",
        "bookmaker": "LeoVegas (SE)",
-       "home": 1.63,
-       "draw": 4,
-       "away": 4.9
+       "home": 1.62,
+       "draw": 3.95,
+       "away": 5.1
       },
       {
        "key": "unibet_se",
        "bookmaker": "Unibet (SE)",
-       "home": 1.67,
-       "draw": 4.2,
-       "away": 5.25
+       "home": 1.66,
+       "draw": 4.1,
+       "away": 5.5
       },
       {
        "key": "betsson",
@@ -5717,16 +5717,16 @@
       {
        "key": "betfair_ex_eu",
        "bookmaker": "Betfair",
-       "home": 3.35,
-       "draw": 4.2,
-       "away": 2.1
+       "home": 3.3,
+       "draw": 4.3,
+       "away": 2.12
       },
       {
        "key": "pinnacle",
        "bookmaker": "Pinnacle",
-       "home": 3.23,
-       "draw": 4.19,
-       "away": 2.06
+       "home": 3.24,
+       "draw": 4.21,
+       "away": 2.05
       },
       {
        "key": "unibet_fr",
@@ -5767,29 +5767,29 @@
        "key": "pmu_fr",
        "bookmaker": "PMU (FR)",
        "home": 3,
-       "draw": 3.8,
-       "away": 1.95
+       "draw": 3.85,
+       "away": 1.94
       },
       {
        "key": "leovegas_se",
        "bookmaker": "LeoVegas (SE)",
        "home": 3.15,
        "draw": 4,
-       "away": 2.02
+       "away": 2
       },
       {
        "key": "unibet_se",
        "bookmaker": "Unibet (SE)",
        "home": 3.25,
-       "draw": 4.2,
-       "away": 2.08
+       "draw": 4.25,
+       "away": 2.07
       },
       {
        "key": "unibet_nl",
        "bookmaker": "Unibet (NL)",
        "home": 3.25,
-       "draw": 4.2,
-       "away": 2.08
+       "draw": 4.25,
+       "away": 2.07
       },
       {
        "key": "betsson",
@@ -5836,9 +5836,9 @@
       {
        "key": "matchbook",
        "bookmaker": "Matchbook",
-       "home": 3.35,
-       "draw": 4.2,
-       "away": 2.1
+       "home": 3.3,
+       "draw": 4.3,
+       "away": 2.12
       },
       {
        "key": "betonlineag",
@@ -5885,9 +5885,9 @@
       {
        "key": "pinnacle",
        "bookmaker": "Pinnacle",
-       "home": 2.17,
+       "home": 2.2,
        "draw": 4.07,
-       "away": 3.05
+       "away": 3
       },
       {
        "key": "unibet_fr",
@@ -5955,16 +5955,16 @@
       {
        "key": "betsson",
        "bookmaker": "Betsson",
-       "home": 2.12,
+       "home": 2.18,
        "draw": 3.9,
-       "away": 3.05
+       "away": 3
       },
       {
        "key": "nordicbet",
        "bookmaker": "Nordic Bet",
-       "home": 2.15,
+       "home": 2.18,
        "draw": 3.95,
-       "away": 3.1
+       "away": 3.05
       },
       {
        "key": "sport888",
@@ -6032,9 +6032,9 @@
       {
        "key": "betfair_ex_eu",
        "bookmaker": "Betfair",
-       "home": 2.14,
+       "home": 2.12,
        "draw": 3.9,
-       "away": 3.55
+       "away": 3.6
       },
       {
        "key": "onexbet",
@@ -6046,9 +6046,9 @@
       {
        "key": "pinnacle",
        "bookmaker": "Pinnacle",
-       "home": 2.08,
+       "home": 2.04,
        "draw": 3.85,
-       "away": 3.41
+       "away": 3.5
       },
       {
        "key": "betclic_fr",
@@ -6095,30 +6095,30 @@
       {
        "key": "leovegas_se",
        "bookmaker": "LeoVegas (SE)",
-       "home": 2.1,
-       "draw": 3.55,
-       "away": 3.25
+       "home": 2.02,
+       "draw": 3.6,
+       "away": 3.4
       },
       {
        "key": "unibet_nl",
        "bookmaker": "Unibet (NL)",
-       "home": 2.16,
-       "draw": 3.75,
-       "away": 3.4
+       "home": 2.08,
+       "draw": 3.8,
+       "away": 3.55
       },
       {
        "key": "unibet_se",
        "bookmaker": "Unibet (SE)",
-       "home": 2.16,
-       "draw": 3.75,
-       "away": 3.4
+       "home": 2.08,
+       "draw": 3.8,
+       "away": 3.55
       },
       {
        "key": "pmu_fr",
        "bookmaker": "PMU (FR)",
-       "home": 2.04,
-       "draw": 3.4,
-       "away": 3.1
+       "home": 1.95,
+       "draw": 3.45,
+       "away": 3.25
       },
       {
        "key": "nordicbet",
@@ -6158,9 +6158,9 @@
       {
        "key": "matchbook",
        "bookmaker": "Matchbook",
-       "home": 2.14,
+       "home": 2.12,
        "draw": 3.9,
-       "away": 3.55
+       "away": 3.6
       },
       {
        "key": "betonlineag",
@@ -6249,30 +6249,30 @@
       {
        "key": "pmu_fr",
        "bookmaker": "PMU (FR)",
-       "home": 8,
-       "draw": 5.4,
-       "away": 1.27
+       "home": 8.5,
+       "draw": 5.6,
+       "away": 1.24
       },
       {
        "key": "leovegas_se",
        "bookmaker": "LeoVegas (SE)",
-       "home": 8.5,
-       "draw": 5.75,
-       "away": 1.29
+       "home": 9,
+       "draw": 6,
+       "away": 1.27
       },
       {
        "key": "unibet_se",
        "bookmaker": "Unibet (SE)",
-       "home": 9.5,
-       "draw": 6.25,
-       "away": 1.32
+       "home": 10,
+       "draw": 6.5,
+       "away": 1.3
       },
       {
        "key": "unibet_nl",
        "bookmaker": "Unibet (NL)",
-       "home": 9.5,
-       "draw": 6.25,
-       "away": 1.32
+       "home": 10,
+       "draw": 6.5,
+       "away": 1.3
       },
       {
        "key": "betsson",
@@ -6319,7 +6319,7 @@
       {
        "key": "matchbook",
        "bookmaker": "Matchbook",
-       "home": 10.5,
+       "home": 10,
        "draw": 6.8,
        "away": 1.3
       },
@@ -6342,5 +6342,5 @@
    ]
   }
  },
- "creditsRemaining": 228
+ "creditsRemaining": 227
 }

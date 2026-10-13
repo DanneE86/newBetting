@@ -1678,7 +1678,7 @@ test.describe('stryk-engine: kupong A, B och C', () => {
     expect(dist(k.A, other)).toEqual([0, 500, 0]);
   });
 
-  test('filkuponger: dina krav gäller bara sina kuponger, låsta spikar räknas in bland de 2', async () => {
+  test('filkuponger: dina krav gäller bara sina kuponger, egna spikar stänger av de starka spikarna', async () => {
     test.skip(products.length === 0, 'data/stryktipset.json saknas');
     const { generateCoupons, strongSpikeForced, sysFinal } = await engine();
     const p = products[0];
@@ -1696,9 +1696,28 @@ test.describe('stryk-engine: kupong A, B och C', () => {
     const f2 = strongSpikeForced(ev, forced, 2);
     expect(f2.filter((x: any) => x?.length === 1)).toHaveLength(2);
     expect(f2).toEqual(forced);
-    // En egen spik: en stark spik läggs till
+    // En egen spik: ingen annan match spikas (användaren 2026-10-12)
     forced[(weakest + 1) % 13] = null;
+    expect(strongSpikeForced(ev, forced, 2)).toEqual(forced);
+    // Egen halvgardering är ingen spik: de 2 starka spikarna läggs till
+    forced[weakest] = [0, 1];
     expect(strongSpikeForced(ev, forced, 2).filter((x: any) => x?.length === 1)).toHaveLength(2);
+    // Hela kupongen: egen spik i A -> inga starka spikar i A, men B/C (kravet gäller inte där) får sina 2
+    const own = generateCoupons(p, { [p.events[weakest].eventNumber]: { signs: 'X', scope: 'A' } });
+    expect(own.A.picks.filter((x: any) => x.spikStrong)).toHaveLength(0);
+    expect(own.B.picks.filter((x: any) => x.spikStrong)).toHaveLength(2);
+    // Egna spikar: ingen annan match blir spik ens av sig själv (alla rader samma tecken) – den görs om
+    const strongest = ev.map((e: any, i: number) => ({ i, v: Math.max(...e.final) })).sort((a: any, b: any) => b.v - a.v)[0].i;
+    const k2 = { [p.events[weakest].eventNumber]: { signs: 'X', scope: 'all' }, [p.events[(strongest + 1) % 13].eventNumber]: { signs: '1', scope: 'all' } };
+    const two = generateCoupons(p, k2);
+    for (const s of ['A', 'B', 'C']) {
+      const c = two[s];
+      expect(c.rows).toBeGreaterThan(0);
+      c.picks.forEach((x: any, i: number) => {
+        if (k2[p.events[i].eventNumber]) expect(x.signs).toBe(k2[p.events[i].eventNumber].signs);
+        else expect(x.signs.length, `kupong ${s} match ${i + 1}`).toBeGreaterThan(1);
+      });
+    }
   });
 
 
@@ -3297,6 +3316,33 @@ test.describe('elo-1x2: 1X2 ur Klubb-Elo utan odds', () => {
     const strong = eloProbs(1900, 1600);
     expect(strong.home).toBeGreaterThan(0.6);
     expect(eloProbs(1600, 1900).away).toBeGreaterThan(eloProbs(1600, 1900).home);
+  });
+
+  test('eloProbs kalibrerad: Elo-skillnaden krymps till 75 %, favoriten far lagre chans, kryss och underdog mer', async () => {
+    const { eloProbs, eloToLambdas, CLUB_ELO_SCALE, CLUB_HOME_ADV } = await lib('elo-1x2.mjs');
+    expect(CLUB_ELO_SCALE).toBe(0.75);
+    const kal = eloProbs(1900, 1600);
+    const ra = eloProbs(1900, 1600, CLUB_HOME_ADV, 1);
+    // Bakkorning 2026-10-12: Elo-favoriten fick ~3-4 enh. for mycket, 70 %+ fick 77 % men vann 73 %
+    expect(ra.home - kal.home).toBeGreaterThan(0.03);
+    expect(kal.away).toBeGreaterThan(ra.away);
+    expect(kal.draw).toBeGreaterThan(ra.draw); // jamnare match -> lite mer kryss
+    expect(kal.draw - ra.draw).toBeLessThan(ra.home - kal.home);
+    expect(kal.home + kal.draw + kal.away).toBeCloseTo(1, 6);
+    // Samma sak som att krympa skillnaden for hand; landslags-Elo (eloToLambdas utan skala) ar orort
+    const hand = eloToLambdas(1600 + 0.75 * (1900 + CLUB_HOME_ADV - 1600), 1600, 0);
+    expect(kal.lh).toBeCloseTo(hand.lh, 6);
+    expect(eloToLambdas(1900, 1600, 100).we).toBeCloseTo(1 / (10 ** (-400 / 400) + 1), 9);
+    // Lika lag utan hemmafordel: skalan andrar ingenting
+    const jamn = eloProbs(1700, 1700, 0);
+    expect(jamn.home).toBeCloseTo(jamn.away, 6);
+  });
+
+  test('findClubElo inom ett land: "Bodö/Glimt" (svenskt ö) hittar "Bodø/Glimt"', async () => {
+    const { findClubElo } = await lib('elo-1x2.mjs');
+    const nor = { countries: { NOR: { clubs: [{ name: 'Bodø/Glimt', elo: 1790 }, { name: 'Brann', elo: 1600 }] } } };
+    expect(findClubElo('Bodö/Glimt', nor, 0.6)?.clubEloName).toBe('Bodø/Glimt');
+    expect(findClubElo('Bodö/Glimt', nor, 0.6)?.elo).toBe(1790);
   });
 
   test('findClubElo: exakt namn gar fore prefix, engelska stadsnamn oversatts', async () => {
