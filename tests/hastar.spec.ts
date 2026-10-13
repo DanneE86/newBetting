@@ -578,11 +578,17 @@ test.describe('GUI: fliken Hästar', () => {
     await expect(page.locator('.hs-focus-text')).toContainText('Hög:');
     const valuePicks = await page.locator('.hs-sys-legs .hs-pick.is-value').count();
     expect(valuePicks).toBe(await page.locator('.hs-sys-legs .hs-pick-value').count());
-    // spikar visar hur streckade de är, garderingar gör det inte
-    const spikLegs = page.locator('.hs-sys-leg:has(.hs-spik)');
-    await expect(spikLegs.locator('.hs-pick-streck')).toHaveCount(await spikLegs.count());
-    for (const t of await spikLegs.locator('.hs-pick-streck').allTextContents()) expect(t).toMatch(/^\d+ % streckad$/);
-    await expect(page.locator('.hs-sys-leg:not(:has(.hs-spik)) .hs-pick-streck')).toHaveCount(0);
+    // alla tippade hästar visar hur streckade de är, spikar och garderingar
+    const picks = page.locator('.hs-sys-legs .hs-pick');
+    await expect(page.locator('.hs-sys-legs .hs-pick-streck')).toHaveCount(await picks.count());
+    for (const t of await page.locator('.hs-sys-legs .hs-pick-streck').allTextContents()) expect(t).toMatch(/^\d+ %$/);
+    // varje avdelning: spik märks, annars antal hästar
+    for (const leg of await page.locator('.hs-sys-leg').all()) {
+      const n = await leg.locator('.hs-pick').count();
+      if (n === 1) await expect(leg.locator('.hs-spik')).toHaveCount(1);
+      else await expect(leg.locator('.hs-sys-count')).toHaveText(`${n} hästar`);
+    }
+    await expect(page.locator('.hs-sys-key')).toContainText('andel av folket som streckat hästen');
     // ATG: länken går till omgången, kupongmallen har en rad per avdelning
     await expect(page.locator('.hs-atg-actions a')).toHaveAttribute('href', 'https://www.atg.se/spel/' + state.analysis.id);
     const coupon = ((await page.locator('.hs-coupon').textContent()) || '').trim().split('\n');
