@@ -3435,3 +3435,20 @@ test.describe('team-elo: eget lag-Elo ur ligaresultat', () => {
     expect(goalDiffMult(-5)).toBe(2);
   });
 });
+
+// ---------- .github/workflows ----------
+
+test.describe('arbetsfloden: npm ci fore node-skript', () => {
+  // Stryktipsvakten kraschade (zod saknades) nar npm ci lag efter den, 10-11 okt 2026
+  test('inget steg kor node scripts/... innan beroendena ar installerade', () => {
+    const dir = path.join(ROOT, '.github', 'workflows');
+    for (const f of fs.readdirSync(dir).filter((x) => x.endsWith('.yml'))) {
+      const lines = fs.readFileSync(path.join(dir, f), 'utf8').split('\n');
+      const ci = lines.findIndex((l) => /\bnpm ci\b/.test(l));
+      const node = lines.findIndex((l) => /\bnode scripts\//.test(l));
+      if (node < 0) continue;
+      expect(ci, `${f}: npm ci saknas`).toBeGreaterThanOrEqual(0);
+      expect(ci, `${f}: node scripts/ på rad ${node + 1} före npm ci på rad ${ci + 1}`).toBeLessThan(node);
+    }
+  });
+});

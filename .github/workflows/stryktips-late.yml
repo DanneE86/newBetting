@@ -37,6 +37,10 @@ jobs:
           node-version: 22
           cache: npm
 
+      # Fore vakten: den hamtar kupongen via scripts/lib/http.mjs, som kraver zod
+      - name: Installera beroenden
+        run: npm ci
+
       - name: Nära spelstopp?
         id: guard
         run: |
@@ -45,10 +49,6 @@ jobs:
       - name: powershell -> pwsh
         if: steps.guard.outputs.run == 'true'
         run: sudo ln -sf "$(command -v pwsh)" /usr/local/bin/powershell
-
-      - name: Installera beroenden
-        if: steps.guard.outputs.run == 'true'
-        run: npm ci
 
       - name: Startelvor (ESPN)
         if: steps.guard.outputs.run == 'true'
