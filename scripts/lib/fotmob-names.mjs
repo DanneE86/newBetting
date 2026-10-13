@@ -11,7 +11,7 @@ export const ALIASES = {
   Estudiantes: 'Estudiantes L.P.', 'Athletic Club MG': 'Athletic', 'NK Lokomotiva': 'Lokomotiva Zagreb', 'Lunds BK': 'Lund',
   'Paris Saint-Germain': 'Paris SG', Inter: 'Internazionale', 'FK Crvena Zvezda': 'Red Star Belgrade', Rennes: 'Stade Rennais',
   'Sheffield Wednesday': 'Sheffield Weds', 'Odds Ballklubb': 'Odd', AaB: 'Aalborg', Hamarkameratene: ['HamKam', 'Ham-Kam'],
-  'Atletico MG': 'Atletico-MG',
+  'Atletico MG': 'Atletico-MG', Tractor: 'Traktor Sazi FC', 'Al Khalidiyah': 'Khaldiya',
 };
 export const fold = (x) => String(x).replace(/ø/g, 'o').replace(/Ø/g, 'O').replace(/æ/g, 'ae').replace(/Æ/g, 'Ae').replace(/ł/g, 'l').replace(/Ł/g, 'L')
   .replace(/ß/g, 'ss').normalize('NFD').replace(/[̀-ͯ]/g, '');

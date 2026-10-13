@@ -1,13 +1,13 @@
 // Truppvärde per lag (summa marknadsvärde i €, FotMob/Transfermarkt) ur data/spelare/{liga}.json - bara visning på /tips.
-// Ligans fil om den finns, annars Europacuptrupperna (ligor utan egen fil, t.ex. SC/BE, för lag som spelar CL/EL/ECL).
+// Ligans fil om den finns, annars Europacuptrupperna (ligor utan egen fil, t.ex. SC/BE, för lag som spelar CL/EL/ECL/ACL/ACL2).
 //   const valueOf = squadValueLookup({ PL: { Arsenal: { players: [...] } }, CL: {...} })
 //   valueOf('Arsenal', 'PL') -> { value: 1067000000, players: 24 } | null
+import { CUPS } from './cups.mjs';
+
 export function squadValue(team) {
   const vals = (team?.players ?? []).map((p) => Number(p.info?.marketValue) || 0).filter((v) => v > 0);
   return vals.length ? { value: vals.reduce((s, v) => s + v, 0), players: vals.length } : null;
 }
-
-const CUPS = ['CL', 'EL', 'ECL'];
 
 export function squadValueLookup(teamsByLeague) {
   const cache = new Map();

@@ -5,13 +5,14 @@
 // Kör: node scripts/lardomar-spelare-signaler.mjs  (kör npm run spelare först; fönstret är ca 10 matcher per lag)
 import fs from 'node:fs';
 import { root as ROOT } from './lib/learnings-data.mjs';
+import { isCup } from './lib/cups.mjs';
 const rd = (p) => JSON.parse(fs.readFileSync(`${ROOT}/${p}`, 'utf8'));
 const csv = (c) => { const L = fs.readFileSync(`${ROOT}/data/matcher/${c}.csv`, 'utf8').trim().split('\n'); const h = L[0].split(','); return L.slice(1).map((l) => { const v = l.split(','); return Object.fromEntries(h.map((k, i) => [k, v[i]])); }); };
 const dd = (a, b) => (Date.parse(a) - Date.parse(b)) / 864e5;
 const NAT = /Nations League|World Cup|Qualif.*(UEFA|CONMEBOL|CONCACAF|AFC|CAF)|International Friendl|Friendlies$|U21|U-21|Euro(pean)? Championship|Copa Am|Gold Cup|Asian Cup|Africa Cup/i;
 
 const EURO = /Champions League|Europa League|Conference League|Libertadores|Sudamericana|Concacaf Champions|AFC Champions/i;
-const leagues = fs.readdirSync(`${ROOT}/data/spelare`).filter((f) => !f.startsWith('_')).map((f) => f.slice(0, -5)).filter((c) => !['CL', 'EL', 'ECL'].includes(c));
+const leagues = fs.readdirSync(`${ROOT}/data/spelare`).filter((f) => !f.startsWith('_')).map((f) => f.slice(0, -5)).filter((c) => !isCup(c));
 const out = [];      // rad per lag och match
 const teamRows = []; // rad per lag och säsong
 for (const code of leagues) {

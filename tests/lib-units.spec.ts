@@ -3546,3 +3546,77 @@ test.describe('seasons: sasonger raknas fram, inga hardkodade ar', () => {
     }
   });
 });
+
+// ---------- cups.mjs / cup-elo.mjs / uefa-referees.mjs (AFC Champions League Elite och Two) ----------
+
+test.describe('cuper: CL/EL/ECL och asiatiska CL (ACL, ACL2)', () => {
+  test('cuplistan läses ur config/leagues.json', async () => {
+    const { CUPS, isCup, cupsOf } = await lib('cups.mjs');
+    expect(CUPS).toEqual(['CL', 'EL', 'ECL', 'ACL', 'ACL2']);
+    expect(isCup('ACL2')).toBe(true);
+    expect(isCup('JP1')).toBe(false);
+    expect(cupsOf({ leagues: { X: { cup: true }, Y: {} } })).toEqual(['X']);
+  });
+  test('AFC-cuperna har FotMob, Transfermarkt och domardata', async () => {
+    const { FOTMOB_LEAGUES } = await lib('fotmob-leagues.mjs');
+    const { TM_COMP } = await lib('transfermarkt.mjs');
+    const { REF_LEAGUES } = await lib('referee-streaks.mjs');
+    expect(FOTMOB_LEAGUES.ACL).toBe(525);
+    expect(FOTMOB_LEAGUES.ACL2).toBe(9469);
+    expect(TM_COMP.ACL).toEqual({ comp: 'ACLE', cup: true });
+    expect(TM_COMP.ACL2).toEqual({ comp: 'ACL2', cup: true });
+    for (const lg of ['CL', 'EL', 'ECL', 'ACL', 'ACL2', 'SAU', 'KR']) expect(REF_LEAGUES.has(lg), lg).toBe(true);
+  });
+  test('AFC-cuptrupp är reserv för truppvärdet', async () => {
+    const { squadValueLookup } = await lib('squad-value.mjs');
+    const pl = (v: number) => ({ players: [{ info: { marketValue: v } }] });
+    const valueOf = squadValueLookup({ ACL: { 'Al Hilal': pl(200) }, JP1: { 'Vissel Kobe': pl(12) } });
+    expect(valueOf('Al Hilal', 'ACL')?.value).toBe(200);
+    expect(valueOf('Al Hilal', 'SAU')?.value).toBe(200); // SAU saknar fil -> cuptruppen
+    expect(valueOf('Al Hilal', 'JP1')).toBeNull(); // JP1 har fil men inte laget
+  });
+});
+
+test.describe('cup-elo: eget Elo för AFC-cuperna', () => {
+  const ms = [
+    { league: 'SAU', date: '2026-08-01', home: 'Al Hilal', away: 'Al Ahli', hg: 3, ag: 0 },
+    { league: 'SAU', date: '2026-08-08', home: 'Al Ahli', away: 'Al Fateh', hg: 2, ag: 0 },
+    { league: 'JP1', date: '2026-08-01', home: 'Kyoto', away: 'Vissel Kobe', hg: 0, ag: 1 },
+    { league: 'SAU', date: '2026-12-01', home: 'Al Fateh', away: 'Al Hilal', hg: 5, ag: 0 }, // efter cutoff
+  ];
+  test('rankas i sin liga, namnlikhet bara inom hemmaligan', async () => {
+    const { asiaEloLookup, ASIA_ELO_START } = await lib('cup-elo.mjs');
+    const eloOf = asiaEloLookup(ms, '2026-10-13');
+    const hilal = eloOf('Al Hilal', 'SAU');
+    expect(hilal).toMatchObject({ rank: 1, league: 'SAU', source: 'own' });
+    expect(hilal.elo).toBeGreaterThan(ASIA_ELO_START.SAU);
+    expect(eloOf('Kyoto Sanga', 'JP1')).toMatchObject({ league: 'JP1', rank: 2 }); // FotMob/ESPN-namn mot vårt
+    expect(eloOf('Al Ahli', 'QAT')).toBeNull(); // Qatars Al Ahli: liga utan data
+    expect(eloOf('Shabab Al-Ahli', undefined)).toBeNull(); // okänd hemmaliga -> aldrig gissning över länder
+  });
+  test('hemmaligan ur trupperna (FotMob primaryLeagueId)', async () => {
+    const { cupHomeLeagues } = await lib('cup-elo.mjs');
+    const home = cupHomeLeagues({
+      ACL: { teams: { 'Al Ahli': { primaryLeagueId: 536 }, 'Shabab Al-Ahli': { primaryLeagueId: 538 } } },
+      ACL2: { teams: { 'FC Seoul': { primaryLeagueId: 9080 } } },
+    });
+    expect(home.get('ACL|Al Ahli')).toBe('SAU');
+    expect(home.get('ACL|Shabab Al-Ahli')).toBeUndefined(); // UAE-ligan finns inte hos oss
+    expect(home.get('ACL2|FC Seoul')).toBe('KR');
+  });
+});
+
+test.describe('uefa-referees: tillsatta domare från UEFA', () => {
+  const list = [
+    { league: 'CL', date: '2026-10-13', home: 'Inter', away: 'Club Brugge', referee: 'Rohit Saggi' },
+    { league: 'CL', date: '2026-10-14', home: 'Roma', away: 'Real Madrid', referee: 'François Letexier' },
+    { league: 'EL', date: '2026-10-14', home: 'Roma', away: 'Real Madrid', referee: 'Fel tävling' },
+  ];
+  test('samma tävling och datum, båda lagen eller ett säkert lag', async () => {
+    const { uefaRefereeFor } = await lib('uefa-referees.mjs');
+    expect(uefaRefereeFor(list, { league: 'CL', date: '2026-10-14', home: 'AS Roma', away: 'Real Madrid' })).toBe('François Letexier');
+    expect(uefaRefereeFor(list, { league: 'CL', date: '2026-10-13', home: 'Internazionale', away: 'Club Brugge' })).toBe('Rohit Saggi');
+    expect(uefaRefereeFor(list, { league: 'ECL', date: '2026-10-14', home: 'AS Roma', away: 'Real Madrid' })).toBeNull();
+    expect(uefaRefereeFor(list, { league: 'CL', date: '2026-10-20', home: 'AS Roma', away: 'Real Madrid' })).toBeNull();
+  });
+});

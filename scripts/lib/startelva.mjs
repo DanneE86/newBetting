@@ -21,6 +21,7 @@ import {
 import { statMap, form, matchRows } from './fotmob-player.mjs';
 import { STAT_LABELS } from './player-positions.mjs';
 import { fotmobGet } from './api-schemas.mjs';
+import { CUPS as CUP_LIST } from './cups.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
 export const STORE = path.join(ROOT, 'data', 'startelvor.json');
@@ -327,10 +328,10 @@ export function recordFromPlayerData(d) {
 
 const readJson = (p, d = null) => { try { return JSON.parse(fs.readFileSync(p, 'utf8').replace(/^﻿/, '')); } catch { return d; } };
 
-// Alla spelare i data/spelare som id -> bantad post. Byggs om när någon fil ändras. Cupfilerna (CL, EL, ECL) sist,
+// Alla spelare i data/spelare som id -> bantad post. Byggs om när någon fil ändras. Cupfilerna (CL, EL, ECL, ACL, ACL2) sist,
 // så att ligafilen vinner när samma spelare finns i båda.
 let INDEX = null;
-const CUPS = new Set(['CL', 'EL', 'ECL']);
+const CUPS = new Set(CUP_LIST);
 export function playerIndex() {
   let files = [];
   try {

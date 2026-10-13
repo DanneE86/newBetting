@@ -82,7 +82,7 @@ const upsetChance = (tip) => tip.tips?.["1X2"]?.probs?.[{ 1: "home", 2: "away" }
 
 function noteLines(tip) {
   const parts = [];
-  if (tip.marketOnly) parts.push(`<span class="market-only">1X2-chansen ur ${tip.dataSource === "clubelo" ? "Klubb-Elo (clubelo.com)" : "lagmodellen"} – inget eget modelltips för matchen</span>`);
+  if (tip.marketOnly) parts.push(`<span class="market-only">1X2-chansen ur ${tip.dataSource === "clubelo" ? "Klubb-Elo (clubelo.com)" : tip.dataSource === "asiaelo" ? "eget Elo ur J1, K League, Saudi och A-League" : "lagmodellen"} – inget eget modelltips för matchen</span>`);
   if (tip.marketLed) parts.push(`<span class="market-only">${escapeHtml((tip.marketLedNote || "Ö/U: marknadens chans styr – 1X2 är bara data").replace(/\b(pinnacle|betfair)\b/g, capFirst))}</span>`);
   if (tip.upset) {
     const u = tip.upset;
@@ -1150,15 +1150,20 @@ const ELO_LAND = {
   NOR: "Norge", POL: "Polen", DEN: "Danmark", POR: "Portugal", GRE: "Grekland", CRO: "Kroatien", CZE: "Tjeckien",
   BEL: "Belgien", SCO: "Skottland",
 };
+// Eget Elo (AFC-cuperna): ligan laget rankas i
+const ELO_LEAGUE = { JP1: "J1 League", KR: "K League 1", SAU: "Saudi Pro League", AUS: "A-League" };
 
-/** Klubb-Elo bredvid lagnamnet (clubelo.com), förklaras under ⓘ Vad är Elo? Starkaste laget grönt med +skillnad. */
+/** Klubb-Elo bredvid lagnamnet (clubelo.com, eget Elo i AFC-cuperna), förklaras under ⓘ Vad är Elo? Starkaste laget grönt med +skillnad. */
 function eloTag(e, other) {
   if (!e?.elo) return "";
   const land = ELO_LAND[e.country] || e.country;
   const diff = other?.elo ? Math.round(e.elo - other.elo) : 0;
   const stronger = diff > 0;
   const vs = other?.elo ? (stronger ? ` – ${diff} starkare än motståndaren` : diff < 0 ? ` – ${-diff} svagare än motståndaren` : " – lika starka") : "";
-  return ` <span class="team-elo${stronger ? " is-stronger" : ""}" title="Klubb-Elo ${e.elo} – plats ${e.rank} i ${escapeHtml(land)} (clubelo.com)${vs}. Högre = starkare lag."><span class="elo-k">Elo</span> <span class="elo-n">${e.elo}</span>${stronger ? ` <span class="elo-diff">+${diff}</span>` : ""}</span>`;
+  const src = e.source === "own"
+    ? `Eget Elo ${e.elo} – plats ${e.rank} i ${escapeHtml(ELO_LEAGUE[e.league] || e.league)} (räknat ur ligaresultaten)`
+    : `Klubb-Elo ${e.elo} – plats ${e.rank} i ${escapeHtml(land)} (clubelo.com)`;
+  return ` <span class="team-elo${stronger ? " is-stronger" : ""}" title="${src}${vs}. Högre = starkare lag."><span class="elo-k">Elo</span> <span class="elo-n">${e.elo}</span>${stronger ? ` <span class="elo-diff">+${diff}</span>` : ""}</span>`;
 }
 
 /** Truppvärde i klartext: 846 milj. € / 1,07 mdr € */
@@ -1889,7 +1894,8 @@ async function toggleMatchup(btn, { reload = false } = {}) {
 // Och ligans domarvy (knappen Domare sist i ligaraden). Tabellen kan sorteras och filtreras på gula, röda, straffar.
 // Ligor som kan ha domardata; vilka som faktiskt har det hämtas från /api/refleagues (refAvailable)
 const REF_LEAGUES = new Set(["PL", "CH", "EL1", "EL2", "BL", "BL2", "LL", "LL2", "SA", "SB", "L1", "ED", "PT", "GR", "AS", "SE2",
-  "NO", "NO2", "DK", "EK", "JP1", "MLS", "MX", "BR", "BR2", "AR", "COL", "CZ", "HR", "CL", "EL", "ECL"]);
+  "NO", "NO2", "DK", "EK", "JP1", "MLS", "MX", "BR", "BR2", "AR", "COL", "CZ", "HR", "CL", "EL", "ECL",
+  "BE", "SC", "SAU", "AUS", "KR", "CAN", "ACL", "ACL2"]);
 let refAvailable = null;
 const hasRefData = (l) => (refAvailable ? refAvailable.has(l) : REF_LEAGUES.has(l));
 async function loadRefAvailable() {

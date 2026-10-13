@@ -15,6 +15,7 @@ import { FOTMOB_LEAGUES as FOTMOB } from './lib/fotmob-leagues.mjs';
 import { TM_COMP, TM_INJURY_LEAGUES, TM_TEAM_ID, mergeTmInjuries, sameName, tmClubs, tmInjuries, tmSquad } from './lib/transfermarkt.mjs';
 import { mergeClubInjuries } from './lib/klubbtrupper.mjs';
 import { fotmobGet as getJson } from './lib/api-schemas.mjs';
+import { isCup } from './lib/cups.mjs';
 
 const FM = 'https://www.fotmob.com/api/data';
 const TEAM_MAX_AGE_H = 20;
@@ -175,7 +176,11 @@ for (const [code, spec] of Object.entries(FOTMOB)) {
     const left = Object.entries(history).filter(([pid]) => !current.has(String(pid))).map(([pid, h]) => ({ id: pid, ...h }));
     const coachHistory = [...(prev?.coachHistory ?? [])];
     if (squad.coach && coachHistory.at(-1)?.name !== squad.coach) coachHistory.push({ name: squad.coach, firstSeen: today });
-    teams[t.team] = { fotmobName: t.fotmobName, fotmobId: t.fotmobId, ...squad, coachHistory, history, left };
+    // Cuplag: klubbens land och hemmaliga (FotMob primaryLeagueId), sa att cupen kan kopplas till ratt liga (scripts/lib/cup-elo.mjs)
+    const det = docs.get(t.fotmobId)?.details;
+    const home = !isCup(code) ? {} : det ? { country: det.country ?? null, primaryLeagueId: det.primaryLeagueId ?? null }
+      : { country: prev?.country ?? null, primaryLeagueId: prev?.primaryLeagueId ?? null };
+    teams[t.team] = { fotmobName: t.fotmobName, fotmobId: t.fotmobId, ...home, ...squad, coachHistory, history, left };
   }
   // Skador: FotMob saknar manga i lagre engelska ligor, Transfermarkts skadelista fyller pa (spelaren markeras med source)
   if (TM_INJURY_LEAGUES.includes(code) && Object.keys(teams).length) {
