@@ -88,11 +88,22 @@ body.view-hastar main { display: none !important; }
 .hs-conds input { width: 7ch; }
 .hs-budget input { width: 9ch; }
 .hs-sys-legs { display: grid; gap: var(--space-2); margin-top: var(--space-4); }
-.hs-sys-leg { display: flex; flex-wrap: wrap; gap: var(--space-1); align-items: center; }
-.hs-pick { font-size: var(--font-size-sm); padding: 2px var(--space-2); border-radius: var(--radius-sm); border: 1px solid var(--color-border); background: var(--color-surface-muted); }
-.hs-pick.rank-A { border-color: var(--color-success-solid); }
-.hs-pick.rank-B { border-color: var(--color-info-solid); }
-.hs-pick.rank-C { border-color: var(--color-warning-solid); }
+.hs-sys-leg { display: grid; grid-template-columns: 4.5rem 1fr; gap: var(--space-2); align-items: start; padding: var(--space-2); border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-surface-muted); }
+.hs-sys-leg-head { display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-1); padding-top: 2px; }
+.hs-sys-leg-head .hs-leg { margin-right: 0; }
+.hs-sys-count { font-size: var(--font-size-xs); color: var(--color-text-muted); white-space: nowrap; }
+.hs-sys-picks { display: grid; grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr)); gap: var(--space-1); min-width: 0; }
+.hs-pick { display: flex; align-items: center; gap: var(--space-2); min-width: 0; font-size: var(--font-size-sm); padding: var(--space-1) var(--space-2); border-radius: var(--radius-sm); border: 1px solid var(--color-border); border-left-width: 3px; background: var(--color-surface); }
+.hs-pick.rank-A { border-left-color: var(--color-success-solid); }
+.hs-pick.rank-B { border-left-color: var(--color-info-solid); }
+.hs-pick.rank-C { border-left-color: var(--color-warning-solid); }
+.hs-pick-nr { flex: none; min-width: 1.6em; text-align: center; font-weight: var(--font-weight-bold); font-variant-numeric: tabular-nums; padding: 0 2px; border-radius: var(--radius-sm); background: var(--color-surface-sunken); }
+.hs-pick-name { flex: 1 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.hs-key { display: inline-flex; align-items: center; gap: var(--space-1); }
+.hs-key-dot { width: 3px; height: 1em; border-radius: 2px; background: var(--color-border); }
+.hs-key-dot.rank-A { background: var(--color-success-solid); }
+.hs-key-dot.rank-B { background: var(--color-info-solid); }
+.hs-key-dot.rank-C { background: var(--color-warning-solid); }
 .hs-spik { font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); padding: 2px var(--space-2); border-radius: var(--radius-pill); background: var(--color-spik); color: var(--color-spik-text); }
 .hs-sys-sum { margin: var(--space-3) 0; font-size: var(--font-size-sm); }
 
@@ -161,9 +172,8 @@ body.view-hastar main { display: none !important; }
 .hs-value-explain p { margin: 0 0 var(--space-2); }
 .hs-value-explain p:last-child { margin-bottom: 0; }
 .hs-focus-text { margin-top: 0; }
-.hs-pick.is-value { box-shadow: inset 0 0 0 1px var(--color-success-solid); }
-.hs-pick-value { margin-left: var(--space-1); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); color: var(--color-success); text-transform: uppercase; letter-spacing: .03em; }
-.hs-pick-streck { margin-left: var(--space-1); font-size: var(--font-size-xs); color: var(--color-text-muted); font-variant-numeric: tabular-nums; }
+.hs-pick-value { flex: none; font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); color: var(--color-success); text-transform: uppercase; letter-spacing: .03em; }
+.hs-pick-streck { flex: none; font-size: var(--font-size-xs); color: var(--color-text-muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
 .hs-sys-key { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-1) var(--space-2); font-size: var(--font-size-xs); color: var(--color-text-muted); }
 .hs-atg { margin-top: var(--space-4); padding-top: var(--space-3); border-top: 1px solid var(--color-border); }
 .hs-atg h4 { margin: 0 0 var(--space-2); }

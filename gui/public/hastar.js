@@ -392,16 +392,20 @@ function systemTable(legs, byLeg) {
   return `<div class="hs-sys-legs">${legs
     .map((l) => {
       const hs = l.horses.map((nr) => byLeg[l.leg][nr]);
-      return `<div class="hs-sys-leg"><span class="hs-leg">Avd ${l.leg}</span>${hs.length === 1 ? `<span class="hs-spik">Spik</span>` : ""}
-        ${hs.map((h) => {
+      return `<div class="hs-sys-leg${hs.length === 1 ? " is-spik" : ""}">
+        <div class="hs-sys-leg-head"><span class="hs-leg">Avd ${l.leg}</span>${hs.length === 1 ? `<span class="hs-spik">Spik</span>` : `<span class="hs-sys-count">${hs.length} hästar</span>`}</div>
+        <div class="hs-sys-picks">${hs.map((h) => {
           const v = isValueHorse(h);
-          const streck = hs.length === 1 && h.marketPct != null ? `<span class="hs-pick-streck">${pct(h.marketPct)} streckad</span>` : "";
-          return `<span class="hs-pick rank-${h.rank}${v ? " is-value" : ""}" title="${esc(`${h.horse} · rank ${h.rank} · chans ${pct(h.p)} · streck ${pct(h.marketPct)}${v ? " · värde" : ""}`)}">${h.nr} ${esc(h.horse)}${streck}${v ? `<span class="hs-pick-value">värde</span>` : ""}</span>`;
-        }).join("")}</div>`;
+          const streck = h.marketPct != null ? `<span class="hs-pick-streck">${pct(h.marketPct)}</span>` : "";
+          return `<span class="hs-pick rank-${h.rank}${v ? " is-value" : ""}" title="${esc(`${h.horse} · rank ${h.rank} · chans ${pct(h.p)} · streck ${pct(h.marketPct)}${v ? " · värde" : ""}`)}"><span class="hs-pick-nr">${h.nr}</span><span class="hs-pick-name">${esc(h.horse)}</span>${streck}${v ? `<span class="hs-pick-value">värde</span>` : ""}</span>`;
+        }).join("")}</div></div>`;
     })
     .join("")}</div>
-    <p class="hs-sys-key"><span class="hs-pick rank-A">A</span> stark vinstkandidat <span class="hs-pick rank-B">B</span> utmanare <span class="hs-pick rank-C">C</span> skräll/gardering
-      <span class="hs-pick"><span class="hs-pick-value">värde</span></span> vinner oftare än strecket säger</p>`;
+    <p class="hs-sys-key"><span class="hs-key"><span class="hs-key-dot rank-A"></span>stark vinstkandidat</span>
+      <span class="hs-key"><span class="hs-key-dot rank-B"></span>utmanare</span>
+      <span class="hs-key"><span class="hs-key-dot rank-C"></span>skräll/gardering</span>
+      <span class="hs-key"><span class="hs-pick-streck">40 %</span>andel av folket som streckat hästen</span>
+      <span class="hs-key"><span class="hs-pick-value">värde</span>vinner oftare än strecket säger</span></p>`;
 }
 
 // ---------- Lopp ----------
