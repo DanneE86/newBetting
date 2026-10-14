@@ -76,7 +76,8 @@ body.view-hastar main { display: none !important; }
 .hs-folket h5 small { display: block; font-weight: var(--font-weight-regular); }
 .hs-fold > summary { cursor: pointer; list-style: none; }
 .hs-fold > summary::-webkit-details-marker { display: none; }
-.hs-fold > summary h4 { display: inline; }
+.hs-fold > summary h3, .hs-fold > summary h4 { display: inline; }
+.hs-fold[open] > summary { margin-bottom: var(--space-2); }
 .hs-fold > summary::before { content: "▸"; display: inline-block; width: 1em; color: var(--color-text-muted); transition: transform 0.15s; }
 .hs-fold[open] > summary::before { transform: rotate(90deg); }
 .hs-fold-n { display: inline-block; font-size: var(--font-size-xs); padding: 0 var(--space-2); border-radius: var(--radius-pill); background: var(--color-surface-sunken); }

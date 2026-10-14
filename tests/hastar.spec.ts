@@ -527,22 +527,30 @@ test.describe('GUI: fliken Hästar', () => {
     await expect(page).toHaveURL(base + '/hastar');
     await expect(page.locator('#hastar-view')).toBeVisible();
     await expect(page.locator('#hastar-view h2')).toContainText('Hästar');
-    await expect(page.locator('.hs-kort h3')).toHaveText('Kort sagt');
-    // Skrällar, Interbet-skrällar, Sena pengar och Pool-trend är hopfällda från start
-    // Vad folket missar visas öppet med båda listorna och klartext
-    if ((await (await page.request.get(base + '/api/hastar')).json()).analysis?.folketMissar) {
-      await expect(page.locator('.hs-folket h4')).toHaveText('Vad folket missar');
-      await expect(page.locator('.hs-folket .hs-lead')).toContainText('Kort sagt');
-      await expect(page.locator('.hs-folket h5')).toHaveCount(2);
+    // Alla kort (Kort sagt, Vad folket missar, spikarna, Sårbara favoriter, Skrällar …) är hopfällda från start
+    const kort = page.locator('details.hs-kort.hs-fold');
+    await expect(kort.locator('summary h3')).toHaveText('Kort sagt');
+    await expect(page.locator('details.hs-fold[open]')).toHaveCount(0);
+    await expect(kort.locator('p')).toBeHidden();
+    await kort.locator('summary').click();
+    await expect(kort).toHaveAttribute('open', '');
+    await expect(kort.locator('p')).toBeVisible();
+    await kort.locator('summary').click();
+    await expect(kort.locator('p')).toBeHidden();
+    const analysis = (await (await page.request.get(base + '/api/hastar')).json()).analysis;
+    if (analysis && analysis.type !== 'dd') {
+      await expect(page.locator('.hs-cards > :not(details.hs-fold)')).toHaveCount(0);
+      for (const t of ['Bästa spiken', 'Sårbara favoriter', 'Skrällar']) {
+        await expect(page.locator('.hs-cards details.hs-fold > summary h4', { hasText: t }).first()).toBeVisible();
+      }
     }
-    const folds = page.locator('details.hs-fold');
-    if (await folds.count()) {
-      await expect(page.locator('details.hs-fold[open]')).toHaveCount(0);
-      await expect(folds.first().locator('summary h4')).toContainText('Skrällar');
-      await expect(folds.first().locator('ul, p').first()).toBeHidden();
-      await folds.first().locator('summary').click();
-      await expect(folds.first()).toHaveAttribute('open', '');
-      await expect(folds.first().locator('ul, p').first()).toBeVisible();
+    if (analysis?.folketMissar) {
+      const fm = page.locator('details.hs-folket');
+      await expect(fm.locator('summary h4')).toContainText('Vad folket missar');
+      await expect(fm.locator('.hs-lead')).toBeHidden();
+      await fm.locator('summary').click();
+      await expect(fm.locator('.hs-lead')).toContainText('Kort sagt');
+      await expect(fm.locator('h5')).toHaveCount(2);
     }
     await expect(page.locator('main')).toBeHidden();
     await expect(page.locator('#stryktips-view')).toBeHidden();

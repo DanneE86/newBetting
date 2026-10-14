@@ -138,7 +138,7 @@ function kortSagt(a) {
       ? `Vinnarpotten är fortfarande liten, så modellen lutar sig mest på strecket. Hämta igen närmare start för skarpare värden.`
       : "",
   ].filter(Boolean);
-  return `<section class="hs-kort" aria-label="Kort sagt"><h3>Kort sagt</h3><p>${lines.join(" ")}</p></section>`;
+  return `<details class="hs-kort hs-fold" aria-label="Kort sagt"><summary><h3>Kort sagt</h3></summary><p>${lines.join(" ")}</p></details>`;
 }
 
 const help = () => `<details class="hs-help"><summary>Så läser du det här</summary>
@@ -153,11 +153,11 @@ const help = () => `<details class="hs-help"><summary>Så läser du det här</su
   </ul></details>`;
 
 function highlight(title, h, extra = "") {
-  if (!h) return `<article class="hs-card is-empty"><h4>${title}</h4><p>Ingen häst uppfyller kraven i den här omgången.</p></article>`;
-  return `<article class="hs-card"><h4>${title}</h4>
+  if (!h) return `<details class="hs-card hs-fold is-empty"><summary><h4>${title}</h4></summary><p>Ingen häst uppfyller kraven i den här omgången.</p></details>`;
+  return `<details class="hs-card hs-fold"><summary><h4>${title}</h4></summary>
     <p class="hs-card-horse"><span class="hs-leg">Avd ${h.leg}</span> ${h.nr} ${esc(h.horse)}</p>
     <p class="hs-card-nums"><span>Chans <b>${pct(h.p)}</b></span><span>Streck <b>${pct(h.marketPct)}</b></span>${verdict(h)}</p>
-    <p class="hs-card-why">${esc(Array.isArray(h.why) ? h.why.join(" · ") : h.why || "")}${extra}</p></article>`;
+    <p class="hs-card-why">${esc(Array.isArray(h.why) ? h.why.join(" · ") : h.why || "")}${extra}</p></details>`;
 }
 
 // Värde = chans minst 1,15 × strecket och chans minst 3 % (samma som isValue i trav-model.mjs)
@@ -169,8 +169,8 @@ function verdict(h) {
 }
 
 /** Hopfällbart listkort (stängt från start), rubriken visar antalet träffar. */
-const foldCard = (title, sub, n, body) =>
-  `<details class="hs-card hs-card-list hs-card-wide hs-fold"><summary><h4>${title} <span class="hs-fold-n">${n}</span> <small>${sub}</small></h4></summary>${body}</details>`;
+const foldCard = (title, sub, n, body, cls = "hs-card-wide") =>
+  `<details class="hs-card hs-card-list ${cls} hs-fold"><summary><h4>${title} <span class="hs-fold-n">${n}</span>${sub ? ` <small>${sub}</small>` : ""}</h4></summary>${body}</details>`;
 
 /** Hästar med kraftigt stigande streck – "sena pengar" indikerar att informerade spelare sett något. */
 function poolTrendCard(a) {
@@ -228,8 +228,8 @@ function folketMissarCard(a) {
   const fm = a.folketMissar;
   if (!fm) return "";
   const { missade = [], overspelade = [] } = fm;
-  return `<article class="hs-card hs-card-list hs-card-wide hs-folket" aria-label="Vad folket missar">
-    <h4>Vad folket missar</h4>
+  return `<details class="hs-card hs-card-list hs-card-wide hs-folket hs-fold" aria-label="Vad folket missar">
+    <summary><h4>Vad folket missar <span class="hs-fold-n">${missade.length + overspelade.length}</span></h4></summary>
     <p class="hs-lead">Kort sagt: här tycker modellen något annat än folket. Bakkört på 658 omgångar 2023–2026 (modellen tränad bara på åren före):
       de underspelade vann <b>42 % oftare</b> än strecket sa, de överspelade favoriterna <b>19 % mer sällan</b>. Det höll alla fyra åren.</p>
     <div class="hs-folket-cols">
@@ -237,7 +237,7 @@ function folketMissarCard(a) {
         ${missade.length ? `<ul>${missade.map(fmRow).join("")}</ul>` : "<p>Ingen häst i den här omgången.</p>"}</section>
       <section><h5>Överspelade favoriter <small>streck ≥ 20 %, modellen under 0,8 × strecket · ${overspelade.length} st</small></h5>
         ${overspelade.length ? `<ul>${overspelade.map(fmRow).join("")}</ul><p class="hs-note">De vinner ändå ungefär var fjärde gång – gardera hellre än spika.</p>` : "<p>Ingen favorit i den här omgången.</p>"}</section>
-    </div></article>`;
+    </div></details>`;
 }
 
 function highlights(a) {
@@ -248,11 +248,9 @@ function highlights(a) {
     ${highlight("Bästa spiken", a.spikes?.sakerhet)}
     ${highlight("Bästa värdespiken", a.spikes?.varde)}
     ${highlight("Chansspik", a.spikes?.chans)}
-    <article class="hs-card hs-card-list"><h4>Sårbara favoriter</h4>${
-      vul.length
+    ${foldCard("Sårbara favoriter", "", vul.length, vul.length
         ? `<ul>${vul.map((f) => `<li><span class="hs-leg">Avd ${f.leg}</span> ${f.nr} ${esc(f.horse)} <small>${esc(f.why.join(" · "))}</small></li>`).join("")}</ul>`
-        : "<p>Inga favoriter ser sårbara ut.</p>"
-    }</article>
+        : "<p>Inga favoriter ser sårbara ut.</p>", "")}
     ${foldCard("Skrällar", "streck ≤ 8 %, chans minst 1,4 × strecket och minst ett belagt skäl", ups.length, ups.length
         ? `<ul>${ups.map((u) => `<li><span class="hs-leg">Avd ${u.leg}</span> ${u.nr} ${esc(u.horse)} · chans ${pct(u.p)} mot streck ${pct(u.marketPct)} <small>${esc(u.why.join(" · "))}</small></li>`).join("")}</ul>`
         : "<p>Inga lågt streckade hästar har konkreta skäl som talar för dem.</p>")}
@@ -644,9 +642,9 @@ function render() {
   const a = state?.analysis;
   const head = `<header class="hs-head"><h2>Hästar${a ? ` <small>${esc(gameName(a.type))} · ${esc(a.track)} · ${esc(a.date)}</small>` : ""}</h2>${controls()}</header>`;
   if (!a) {
-    view.innerHTML = `${head}<section class="hs-kort"><h3>Kort sagt</h3><p>${
+    view.innerHTML = `${head}<details class="hs-kort hs-fold"><summary><h3>Kort sagt</h3></summary><p>${
       state ? "Ingen omgång är hämtad än. Välj datum och spel och tryck <b>Hämta data</b>." : "Läser sparad analys …"
-    }</p></section>${help()}`;
+    }</p></details>${help()}`;
     return;
   }
   view.innerHTML = `${head}${kortSagt(a)}${help()}${a.type === "dd" ? "" : highlights(a)}${systemBuilder(a)}
