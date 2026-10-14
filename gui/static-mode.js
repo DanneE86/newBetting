@@ -77,6 +77,16 @@
       const hit = (await loadTeams())[[p.get("league"), p.get("team"), p.get("opp"), p.get("venue")].join("|")];
       return hit ? json(200, hit) : json(404, { error: "Ingen förberäknad lagdata för matchen" });
     }
+    // Hästar: ATG:s kalender nås inte härifrån, så dagens spel = de sparade omgångarna det datumet
+    if (url.pathname === "/api/hastar/spel") {
+      const date = url.searchParams.get("datum") || "";
+      const res = await realFetch("/api/hastar.json", { cache: "no-store" });
+      const state = res.ok ? await res.json().catch(() => ({})) : {};
+      const games = (state.index?.analyses || [])
+        .filter((x) => x.date === date && !x.backtestOnly)
+        .map((x) => ({ id: x.id, type: x.type, track: x.track || null, status: null, startTime: null }));
+      return json(200, { date, games, saved: true });
+    }
     return realFetch(`${url.pathname}.json`, { cache: "no-store" });
   };
 
