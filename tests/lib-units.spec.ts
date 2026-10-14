@@ -3908,3 +3908,42 @@ test.describe('skrällmissar: rang och missklassning', () => {
     expect(classifyLeg([1, 2], [2, 9], rank)).toMatchObject({ med: true, wRank: 2 });
   });
 });
+
+// ---------- gui/static-mode.js: webbversionens spellista för Hästar ----------
+
+test.describe('static-mode: Hästars spellista på webbsidan', () => {
+  const run = async (datum: string) => {
+    const vm = await import('vm');
+    const state = { index: { analyses: [
+      { id: 'V86_2026-10-14_40_1', type: 'V86', date: '2026-10-14', track: 'Bergsåker' },
+      { id: 'V85_2026-10-10_5_6', type: 'V85', date: '2026-10-10', track: 'Solvalla' },
+      { id: 'V75_2026-10-14_1_1', type: 'V75', date: '2026-10-14', track: 'X', backtestOnly: true },
+    ] } };
+    const asked: string[] = [];
+    const realFetch = async (u: string) => { asked.push(u); return new Response(JSON.stringify(state), { status: 200 }); };
+    const window: any = { fetch: realFetch };
+    const document = { createElement: () => ({}), head: { appendChild: () => {} } };
+    vm.runInNewContext(fs.readFileSync(path.join(ROOT, 'gui', 'static-mode.js'), 'utf8'),
+      { window, document, location: { href: 'https://newbetting.pages.dev/hastar', origin: 'https://newbetting.pages.dev' }, Response, URL, JSON, setTimeout });
+    const body = await (await window.fetch(`/api/hastar/spel?datum=${datum}`)).json();
+    return { body, asked };
+  };
+
+  test('dagens sparade omgång visas som spel (inte "Inga V-spel"), backtest-omgångar hoppas över', async () => {
+    const { body, asked } = await run('2026-10-14');
+    expect(asked).toEqual(['/api/hastar.json']);
+    expect(body).toMatchObject({ date: '2026-10-14', saved: true });
+    expect(body.games.map((g: any) => g.id)).toEqual(['V86_2026-10-14_40_1']);
+  });
+
+  test('datum utan sparad omgång ger tom lista med saved-flagga', async () => {
+    const { body } = await run('2026-10-15');
+    expect(body).toMatchObject({ games: [], saved: true });
+  });
+
+  test('hastar.js: saved-listan ger egen text och laddar omgången vid val', () => {
+    const src = fs.readFileSync(path.join(ROOT, 'gui', 'public', 'hastar.js'), 'utf8');
+    expect(src).toContain('games.saved ? "Ingen sparad omgång denna dag"');
+    expect(src).toMatch(/t\.id === "hs-game" && games\?\.saved && t\.value\) load\(t\.value\)/);
+  });
+});

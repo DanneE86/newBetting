@@ -107,7 +107,7 @@ function controls() {
   const sel = a && list.some((g) => g.id === a.id) ? a.id : list[0]?.id;
   const opts = vgames.length
     ? vgames.map((g) => `<option value="${esc(g.id)}" ${g.id === sel ? "selected" : ""}>${esc(gameName(g.type))} – ${esc(g.track || "")}${g.status === "results" ? " (avgjord)" : ""}</option>`).join("")
-    : `<option value="">${games ? (games.error ? "Kunde inte läsa ATG:s kalender" : "Inga V-spel denna dag") : "Läser dagens spel …"}</option>`;
+    : `<option value="">${games ? (games.error ? "Kunde inte läsa ATG:s kalender" : games.saved ? "Ingen sparad omgång denna dag" : "Inga V-spel denna dag") : "Läser dagens spel …"}</option>`;
   const saved = (state?.index?.analyses || []).filter((x) => !x.backtestOnly).slice(0, 30);
   return `<div class="hs-controls" role="group" aria-label="Välj omgång">
     <label>Datum <input type="date" id="hs-date" class="ds-input" value="${esc(date)}" /></label>
@@ -722,6 +722,7 @@ view.addEventListener("change", (ev) => {
     render();
     loadGames();
   } else if (t.id === "hs-saved") load(t.value);
+  else if (t.id === "hs-game" && games?.saved && t.value) load(t.value); // webbversionen: listan är sparade omgångar
   else if (t.id === "hs-budget") {
     sys.budget = Math.max(10, Number(t.value) || 500);
     render();
