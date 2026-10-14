@@ -37,6 +37,7 @@
     "lardomar:cuptrupp": "node scripts/fetch-cup-history-tm.mjs && node scripts/fetch-cup-odds-history.mjs && node scripts/lardomar-cup-truppvarde.mjs --json data/reports/cup-truppvarde.json",
     "matcher": "node scripts/export-league-matches.mjs",
     "databas": "node --disable-warning=ExperimentalWarning scripts/bygg-databas.mjs",
+    "databas:auto": "node scripts/databas-auto.mjs",
     "matchstats": "node scripts/fetch-matchstats.mjs",
     "klubbtrupper": "node scripts/fetch-klubbtrupper.mjs",
     "opta": "node scripts/fetch-opta.mjs",

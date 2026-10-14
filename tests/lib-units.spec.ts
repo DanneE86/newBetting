@@ -3870,6 +3870,15 @@ test.describe('databas: översättning från filerna', () => {
     expect(u[0]).toMatchObject({ spel_id: 'V86_y', variant: 'standard', budget_kr: 500, kostnad_kr: 480, bast_ratt: 4, netto_kr: -480 });
   });
 
+  test('automatisk ombyggnad: bara databaser som saknas eller är minst 3 dygn gamla', async () => {
+    const { databaserAttBygga } = await lib('databas.mjs');
+    const nu = Date.parse('2026-10-14T12:00:00Z'), dygn = 864e5;
+    expect(databaserAttBygga({ fotboll: nu - dygn, stryktips: nu - 2.9 * dygn, hastar: nu - 0.1 * dygn }, nu)).toEqual([]);
+    expect(databaserAttBygga({ fotboll: nu - 3 * dygn, stryktips: nu - 2 * dygn, hastar: null }, nu)).toEqual(['fotboll', 'hastar']);
+    expect(databaserAttBygga({}, nu)).toEqual(['fotboll', 'stryktips', 'hastar']);
+    expect(databaserAttBygga({ fotboll: nu - 1.5 * dygn, stryktips: nu, hastar: nu }, nu, 1)).toEqual(['fotboll']);
+  });
+
   test('hästar: skrällmissar och fynd (filerna från scripts/hastar-skrallmissar.mjs)', async () => {
     const { skrallmissRader, fyndRader, sqlVarde } = await lib('databas.mjs');
     const avd = { spel_id: 'V85_x', avdelning: 3, system: 'storvinst', budget_kr: 500, vinnare_streck: 0.04, med_i_systemet: 0, miss_typ: 'långt ner', overflodiga_hastar: 2 };

@@ -559,6 +559,48 @@ test.describe('GUI: fliken Hästar', () => {
     expect(errors).toEqual([]);
   });
 
+  test('avdelningarna: hopfällda med din rad, mobil har Till raden och Nästa avdelning, öppna står kvar vid omritning', async ({ page }) => {
+    const state = await (await page.request.get(base + '/api/hastar')).json();
+    test.skip(!state.analysis || state.analysis.type === 'dd' || state.analysis.races.length < 2, 'Ingen sparad V-spelsanalys i data/hastar');
+    const errors: string[] = [];
+    page.on('pageerror', (e) => errors.push(e.message));
+    await page.setViewportSize({ width: 390, height: 844 });
+    await page.goto(base + '/hastar');
+    const avd1 = page.locator('#hs-avd-1');
+    await expect(avd1).toBeVisible({ timeout: 20_000 });
+    await expect(page.locator('details.hs-race[open]')).toHaveCount(0);
+    await expect(page.locator('details.hs-race > summary .hs-race-picks')).toHaveCount(state.analysis.races.length);
+    await expect(avd1.locator('.hs-table')).toBeHidden();
+    // avdelningschipet i raden öppnar avdelningen
+    await page.click('#hs-rad-1 .hs-leg-link');
+    await expect(avd1).toHaveAttribute('open', '');
+    await expect(avd1.locator('.hs-table')).toBeVisible();
+    await expect(avd1.locator('.hs-race-nav [data-act="to-row"]')).toBeVisible();
+    // Nästa: stänger avd 1 och öppnar avd 2
+    const leg2 = state.analysis.races[1].leg;
+    await avd1.locator('[data-act="next-avd"]').click();
+    await expect(avd1).not.toHaveAttribute('open', '');
+    await expect(page.locator('#hs-avd-' + leg2)).toHaveAttribute('open', '');
+    // Till raden: systemraden för avdelningen hamnar i bild och markeras
+    await page.locator('#hs-avd-' + leg2 + ' [data-act="to-row"]').click();
+    await expect(page.locator('#hs-rad-' + leg2)).toHaveClass(/is-flash/);
+    await expect(page.locator('#hs-rad-' + leg2)).toBeInViewport();
+    // omritning (byt budget) stänger inte den öppna avdelningen
+    await page.click('[data-budget="1000"]');
+    await expect(page.locator('#hs-avd-' + leg2)).toHaveAttribute('open', '');
+    // sista avdelningen har Stäng i stället för Nästa
+    const last = page.locator('details.hs-race').nth(state.analysis.races.length - 1);
+    await last.locator('> summary').click();
+    await expect(last.locator('[data-act="next-avd"]')).toHaveCount(0);
+    await last.locator('[data-act="close-avd"]').click();
+    await expect(last).not.toHaveAttribute('open', '');
+    // på dator syns inte mobilknapparna
+    await page.setViewportSize({ width: 1280, height: 900 });
+    await page.locator('#hs-avd-' + leg2 + ' > summary').scrollIntoViewIfNeeded();
+    await expect(page.locator('#hs-avd-' + leg2 + ' .hs-race-nav')).toBeHidden();
+    expect(errors).toEqual([]);
+  });
+
   test('webbygget (?publik=1) får aldrig Interbet-fält, lokalt läggs de tillbaka ur data/hastar/interbet', async ({ request }) => {
     const publik = await (await request.get(base + '/api/hastar?publik=1')).json();
     test.skip(!publik.analysis, 'Ingen sparad analys');
@@ -583,6 +625,21 @@ test.describe('GUI: fliken Hästar', () => {
     expect(pts).toHaveLength(live);
     for (const x of pts) expect(x).toBeGreaterThanOrEqual(0), expect(x).toBeLessThanOrEqual(100);
     expect(pts[0]).toBe(Math.max(...pts));
+    // galopp senaste 10 för varje ej struken häst: rutor nyast först, senaste markerad, "Galopp senast" när den galopperade
+    const first = page.locator('.hs-race').first();
+    await expect(first.locator('.hs-gal')).toHaveCount(live);
+    const horses = state.analysis.races[0].horses.filter((h: any) => !h.scratched);
+    for (let i = 0; i < horses.length; i++) {
+      const list = horses[i].galopp10 ?? horses[i].last5 ?? [];
+      const cell = first.locator('.hs-gal').nth(i);
+      if (!list.length) continue;
+      await expect(cell.locator('.hs-gal-box')).toHaveCount(Math.min(10, list.length));
+      await expect(cell.locator('.hs-gal-box').first()).toHaveClass(/is-latest/);
+      await expect(cell.locator('.hs-gal-box.is-latest')).toHaveCount(1);
+      const g = list.filter((x: any) => x.g ?? x.galloped).length;
+      await expect(cell.locator('.hs-gal-head b')).toHaveText(`${g} av ${list.length}`);
+      await expect(cell.locator('.hs-gal-flag')).toHaveCount((list[0].g ?? list[0].galloped) ? 1 : 0);
+    }
     // uppföljningen visas (tom eller med tabell)
     await expect(page.locator('.hs-follow h3')).toContainText('Uppföljning på riktigt');
     if (state.uppfoljning?.games) await expect(page.locator('.hs-follow tbody tr').first()).toBeVisible();
@@ -1057,9 +1114,26 @@ test('långdistansrekord (2600 m+): bara i långa lopp, samma startmetod, nytt r
   expect(raceRow(kort, {}).X.langRekord).toEqual([0, 0, 0]);
 });
 
+test('galopp10: de 10 senaste ej strukna starterna nyast först, galopp och disk markerade', async () => {
+  const { galopp10, analyzeRace } = await model();
+  const recs = Array.from({ length: 13 }, (_, i) => ({ date: `2026-09-${String(28 - i).padStart(2, '0')}`, track: 'Solvalla', distance: 2140, startMethod: 'auto', place: i % 4 === 0 ? 0 : 2, galloped: i % 4 === 0, disqualified: i === 4, scratched: i === 1 }));
+  const g = galopp10(recs);
+  expect(g).toHaveLength(10);
+  expect(g[0]).toEqual({ date: '2026-09-28', track: 'Solvalla', dist: 2140, method: 'auto', place: 0, g: true, d: false });
+  expect(g.map((x: any) => x.date)).not.toContain('2026-09-27'); // struken räknas inte
+  expect(g.find((x: any) => x.date === '2026-09-24')).toMatchObject({ g: true, d: true });
+  expect(galopp10([])).toEqual([]);
+  // analyzeRace skickar med galopp10 per häst
+  const race = normRace('G', '2026-10-10', 3, 1);
+  race.starts[0].records = recs;
+  const h = analyzeRace(race, {}).horses.find((x: any) => x.nr === 1);
+  expect(h.galopp10).toHaveLength(10);
+  expect(h.galopp10[0].g).toBe(true);
+});
+
 test('distans, galopp och kusk+häst: samma distansklass, hela karriären, bara starter med dagens kusk', async () => {
   const { rawFeatures, FEATURE_KEYS } = await features();
-  expect(FEATURE_KEYS).toEqual(expect.arrayContaining(['distVana', 'distSeger', 'distGalopp', 'galoppLiv', 'kuskHast']));
+  expect(FEATURE_KEYS).toEqual(expect.arrayContaining(['distVana', 'distSeger', 'distGalopp', 'galoppLiv', 'kuskHast', 'kuskHastStark', 'distKm']));
   const race = normRace('D', '2026-10-10', 3, 1);
   race.distance = 3140;
   race.startMethod = 'volte';
@@ -1083,6 +1157,30 @@ test('distans, galopp och kusk+häst: samma distansklass, hela karriären, bara 
   expect(f[0].kuskHast).toBeCloseTo((1 + 0.3) / 4, 6);
   expect(f[1].kuskHast).toBeCloseTo((1 + 0.3) / 4, 6);
   expect(f[2].kuskHast).toBeNull();
+  // Stark kusk+häst: minst 3 starter och minst hälften vunna
+  expect(f[0].kuskHastStark).toBe(0); // 1 start med kusken
+  expect(f[1].kuskHastStark).toBe(0); // 1 av 1 räcker inte
+  expect(f[2].kuskHastStark).toBeNull();
+  const stark = normRace('S', '2026-10-10', 3, 1);
+  stark.starts[0].driverId = 9;
+  stark.starts[0].records = [rec(2140, 1, 9), rec(2140, 1, 9), rec(2140, 5, 9), rec(2140, 1, 2)];
+  stark.starts[1].driverId = 9;
+  stark.starts[1].records = [rec(2140, 1, 9), rec(2140, 4, 9), rec(2140, 5, 9)];
+  expect(rawFeatures(stark, stark.starts[0], {}).kuskHastStark).toBe(1); // 2 av 3
+  expect(rawFeatures(stark, stark.starts[1], {}).kuskHastStark).toBe(0); // 1 av 3
+  // Bästa km på distansen: samma distansklass och startmetod, utan galopp, 3 senaste
+  expect(f[1].distKm).toBe(-74); // voltstarter 3000 m+
+  expect(f[0].distKm).toBeNull(); // aldrig gått distansen
+  const km = normRace('K', '2026-10-10', 3, 1);
+  km.distance = 2640;
+  km.startMethod = 'auto';
+  km.starts[0].records = [
+    { ...rec(2640, 1, 1), km: 71.9, startMethod: 'auto' },
+    { ...rec(2640, 0, 1, true), km: 70.0, startMethod: 'auto' }, // galopp räknas inte
+    { ...rec(2640, 2, 1), km: 70.5, startMethod: 'volte' }, // annan startmetod
+    { ...rec(2140, 1, 1), km: 70.1, startMethod: 'auto' }, // annan distansklass
+  ];
+  expect(rawFeatures(km, km.starts[0], {}).distKm).toBe(-71.9);
   // Distansklasser: 2640 (lång) och 3140 (extra lång) är inte samma klass
   const mellan = normRace('M', '2026-10-10', 3, 1);
   mellan.distance = 2640;
