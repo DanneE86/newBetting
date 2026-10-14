@@ -211,6 +211,12 @@ export function rawFeatures(race, h, ctx = {}) {
     last?.driverId && h.driverId && last.driverId !== h.driverId && dRate >= 0.18,
     last?.firstPrize > 0 && race.firstPrize > 0 && Math.log(race.firstPrize / last.firstPrize) < -0.3,
   ].filter(Boolean).length;
+  // Distans, galopp och kusk+häst (2026-10-14, efter V85 Solvalla 10/10 avd 4: favoriten hade aldrig gått 3000 m+ och
+  // galopperade var tredje start, vinnaren hade 4 segrar på 7 starter på distansen och kusken som vann med den senast).
+  // Distansklass: kort < 1800, mellan < 2600, lång < 3000, extra lång 3000+.
+  const dKlass = (d) => (d < 1800 ? 0 : d < 2600 ? 1 : d < 3000 ? 2 : 3);
+  const sameDist = race.distance ? rec.filter((r) => r.distance > 0 && dKlass(r.distance) === dKlass(race.distance)) : null;
+  const withDriver = h.driverId ? rec.filter((r) => r.driverId === h.driverId) : null;
   return {
     form,
     fart: speed != null ? -speed : null,
@@ -260,10 +266,18 @@ export function rawFeatures(race, h, ctx = {}) {
     favLev,
     tranareByte90: sedanByte == null ? null : sedanByte <= 90 ? 1 : 0,
     forandringar,
+    distVana: sameDist ? Math.log(1 + sameDist.length) : null,
+    distSeger: sameDist ? (sameDist.filter((r) => r.place === 1).length + 0.1 * 5) / (sameDist.length + 5) : null,
+    distGalopp: sameDist ? (sameDist.filter((r) => r.galloped).length + 0.5) / (sameDist.length + 5) : null,
+    galoppLiv: (rec.filter((r) => r.galloped).length + 0.5) / (rec.length + 5),
+    kuskHast: withDriver ? (withDriver.filter((r) => r.place === 1).length + 0.1 * 3) / (withDriver.length + 3) : null,
   };
 }
 
 export const FEATURE_KEYS = [...Object.keys(rawFeatures({ startTime: "2026-01-01", distance: 2140 }, { records: [] })), "mktKvadrat", "ibScore", "kuskEdge"];
+// Faktorer byggda på streck eller odds (även gamla odds) och Interbet. Ren datamodell (bara forskning, hastar-lar.mjs --rendata) använder dem inte.
+export const MARKET_KEYS = ["mktKvadrat", "ibScore", "oddsHist", "favLev"];
+export const DATA_KEYS = FEATURE_KEYS.filter((k) => !MARKET_KEYS.includes(k));
 
 /**
  * Ett lopp som inlärningsrad: { id, date, n, winner (index), lq, lqOdds, lqStreck, X: { key: [z per häst] } }.

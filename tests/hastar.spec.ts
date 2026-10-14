@@ -232,6 +232,32 @@ test.describe('trav-model: analyzeRace och analyzeGame', () => {
     expect(none.length).toBe(1); // ensam häst är topp 3 i allt -> har skäl
   });
 
+  test('vad folket missar: underspelade (streck 3–20 %, modellen ≥ 1,5×) och överspelade favoriter (streck ≥ 20 %, modellen < 0,8×)', async () => {
+    const { pickFolketMissar, FOLKET_MISSAR, normalizeGame, analyzeGame } = await model();
+    expect(FOLKET_MISSAR).toMatchObject({ missad: { streckMin: 0.03, streckMax: 0.2, kvot: 1.5 }, overspelad: { streckMin: 0.2, kvot: 0.8 } });
+    const h = (nr: number, p: number, s: number, o: any = {}) => ({ nr, horse: `H${nr}`, scratched: false, p, marketPct: s, marketSource: 'streck', ...o });
+    const races = [{ leg: 1, number: 1, horses: [
+      h(1, 0.2, 0.5), // 0,4×: överspelad
+      h(2, 0.18, 0.25), // 0,72×: överspelad
+      h(10, 0.17, 0.2), // 0,85×: inte överspelad
+      h(3, 0.2, 0.08), // 2,5×: underspelad
+      h(4, 0.16, 0.1), // 1,6×: underspelad
+      h(5, 0.05, 0.02), // streck under 3 %: aldrig
+      h(6, 0.4, 0.19), // 2,1× och streck 19 %: underspelad
+      h(11, 0.4, 0.2), // streck 20 %: inte underspelad
+      h(7, 0.3, 0.1, { scratched: true }),
+      h(8, 0.3, 0.1, { marketSource: 'odds' }), // DD-odds räknas inte
+      h(9, 0.1, 0.08), // 1,25×: neutral
+    ] }];
+    const fm = pickFolketMissar(races);
+    expect(fm.missade.map((x: any) => x.nr)).toEqual([6, 3, 4]); // sorterat på chansen
+    expect(fm.overspelade.map((x: any) => x.nr)).toEqual([1, 2]);
+    expect(fm.missade[0]).toMatchObject({ leg: 1, raceNr: 1, kvot: 2.105 });
+    const a = analyzeGame(normalizeGame(game()));
+    expect(a.folketMissar).toHaveProperty('missade');
+    expect(a.folketMissar).toHaveProperty('overspelade');
+  });
+
   test('Dagens Dubbel: sannolikhet = p1 × p2, fair = 1/p, EV = p × odds − 1', async () => {
     const { analyzeDD } = await model();
     const r1 = { number: 7, horses: [{ nr: 1, horse: 'A', p: 0.5 }, { nr: 2, horse: 'B', p: 0.5 }] };
@@ -308,7 +334,7 @@ test.describe('hast-engine: systembyggaren', () => {
     const { buildSystem, weight } = await engine();
     const legs = [{ leg: 1, number: 1, horses: [{ nr: 1, p: 0.3, marketPct: 0.6 }, { nr: 2, p: 0.3, marketPct: 0.15 }, { nr: 3, p: 0.4, marketPct: 0.25 }] }];
     expect(weight(legs[0].horses[1])).toBeGreaterThan(weight(legs[0].horses[0]));
-    const s = buildSystem(legs, { budget: 1, price: 0.5 }); // 2 rader
+    const s = buildSystem(legs, { budget: 1, price: 0.5, spikes: null }); // 2 rader
     expect(s.legs[0].horses.sort()).toEqual([2, 3]);
   });
 
@@ -503,6 +529,12 @@ test.describe('GUI: fliken Hästar', () => {
     await expect(page.locator('#hastar-view h2')).toContainText('Hästar');
     await expect(page.locator('.hs-kort h3')).toHaveText('Kort sagt');
     // Skrällar, Interbet-skrällar, Sena pengar och Pool-trend är hopfällda från start
+    // Vad folket missar visas öppet med båda listorna och klartext
+    if ((await (await page.request.get(base + '/api/hastar')).json()).analysis?.folketMissar) {
+      await expect(page.locator('.hs-folket h4')).toHaveText('Vad folket missar');
+      await expect(page.locator('.hs-folket .hs-lead')).toContainText('Kort sagt');
+      await expect(page.locator('.hs-folket h5')).toHaveCount(2);
+    }
     const folds = page.locator('details.hs-fold');
     if (await folds.count()) {
       await expect(page.locator('details.hs-fold[open]')).toHaveCount(0);
@@ -977,6 +1009,20 @@ test('inlärd modell: marknaden = streck när det finns, inga faktorer från slu
   if (LEARNED) for (const k of Object.keys(LEARNED.weights)) expect(FEATURE_KEYS).toContain(k);
 });
 
+test('ren data borttagen 2026-10-14: sparade vikter har marknaden, chansen följer strecket', async () => {
+  const { LEARNED } = await import(pathToFileURL(path.join(ROOT, 'scripts', 'lib', 'trav-weights.mjs')).href);
+  const { MARKET_KEYS, DATA_KEYS } = await import(pathToFileURL(path.join(ROOT, 'scripts', 'lib', 'trav-features.mjs')).href);
+  for (const k of MARKET_KEYS) expect(DATA_KEYS).not.toContain(k);
+  expect(LEARNED.mode ?? 'marknad').toBe('marknad');
+  expect(LEARNED.market).toBeGreaterThan(0);
+  // Samma lopp med omvända streck och odds: hästen som blir storfavorit får högre chans
+  const { analyzeRace } = await model();
+  const a = normRace('S', '2026-05-01', 4, 1, { odds: [16, 8, 4, 1.5], streck: [0.05, 0.1, 0.15, 0.7] });
+  const b = normRace('S', '2026-05-01', 4, 1, { odds: [1.5, 4, 8, 16], streck: [0.7, 0.15, 0.1, 0.05] });
+  const pa = analyzeRace(a, {}).horses, pb = analyzeRace(b, {}).horses;
+  expect(pa.find((x: any) => x.nr === 4).p).toBeGreaterThan(pb.find((x: any) => x.nr === 4).p);
+});
+
 test('långdistansrekord (2600 m+): bara i långa lopp, samma startmetod, nytt rekord = i år eller förra året', async () => {
   const { rawFeatures, raceRow, FEATURE_KEYS } = await features();
   expect(FEATURE_KEYS).toEqual(expect.arrayContaining(['langRekord', 'langRekordNy']));
@@ -1001,6 +1047,39 @@ test('långdistansrekord (2600 m+): bara i långa lopp, samma startmetod, nytt r
   kort.starts.forEach((s: any, i: number) => { s.lifeRecords = recs[i]; });
   expect(rawFeatures(kort, kort.starts[0], {}).langRekord).toBeNull();
   expect(raceRow(kort, {}).X.langRekord).toEqual([0, 0, 0]);
+});
+
+test('distans, galopp och kusk+häst: samma distansklass, hela karriären, bara starter med dagens kusk', async () => {
+  const { rawFeatures, FEATURE_KEYS } = await features();
+  expect(FEATURE_KEYS).toEqual(expect.arrayContaining(['distVana', 'distSeger', 'distGalopp', 'galoppLiv', 'kuskHast']));
+  const race = normRace('D', '2026-10-10', 3, 1);
+  race.distance = 3140;
+  race.startMethod = 'volte';
+  const rec = (distance: number, place: number, driverId: number, galloped = false) => ({ date: '2026-09-01', place, km: 74, galloped, track: 'Solvalla', startMethod: 'volte', distance, driverId });
+  // Aldrig gått 3000 m+ och galopperar ofta (som Mister Malabar)
+  race.starts[0].driverId = 1;
+  race.starts[0].records = [rec(2640, 1, 1), rec(2140, 0, 2, true), rec(2140, 1, 3), rec(2140, 0, 3, true)];
+  // Långdistansspecialist, vann med dagens kusk (som Monsieur Chocolat)
+  race.starts[1].driverId = 5;
+  race.starts[1].records = [rec(3180, 1, 4), rec(3160, 5, 6), rec(3674, 1, 5), rec(2660, 6, 6), { ...rec(3180, 1, 4), scratched: true }];
+  race.starts[2].driverId = null;
+  race.starts[2].records = [];
+  const f = race.starts.map((s: any) => rawFeatures(race, s, {}));
+  expect(f[0].distVana).toBe(0);
+  expect(f[0].distSeger).toBeCloseTo(0.5 / 5, 6);
+  expect(f[1].distVana).toBeCloseTo(Math.log(4), 6); // 3 starter 3000 m+, strukna räknas inte
+  expect(f[1].distSeger).toBeCloseTo((2 + 0.5) / 8, 6);
+  expect(f[1].distGalopp).toBeCloseTo(0.5 / 8, 6);
+  expect(f[0].galoppLiv).toBeCloseTo(2.5 / 9, 6);
+  expect(f[0].galoppLiv).toBeGreaterThan(f[1].galoppLiv);
+  expect(f[0].kuskHast).toBeCloseTo((1 + 0.3) / 4, 6);
+  expect(f[1].kuskHast).toBeCloseTo((1 + 0.3) / 4, 6);
+  expect(f[2].kuskHast).toBeNull();
+  // Distansklasser: 2640 (lång) och 3140 (extra lång) är inte samma klass
+  const mellan = normRace('M', '2026-10-10', 3, 1);
+  mellan.distance = 2640;
+  mellan.starts[0].records = [rec(2640, 1, 1), rec(2660, 1, 1), rec(3140, 1, 1)];
+  expect(rawFeatures(mellan, mellan.starts[0], {}).distVana).toBeCloseTo(Math.log(3), 6);
 });
 
 test('favoritleverans: segrar som favorit (odds ≤ 2,5) krympt mot 0,45, null utan favoritstarter', async () => {
@@ -1092,8 +1171,10 @@ const streckProd = (legs: any[], sysLegs: any[]) => sysLegs.reduce((a: number, l
 
 test.describe('hast-engine: standard per spelform', () => {
   test('V85 och V75 spelas med Hög (alpha 1), övriga med Träff (alpha 0)', async () => {
-    const { defaultAlpha, DEFAULT_ALPHA, buildSystem, TOP_SHARE } = await engine();
+    const { defaultAlpha, DEFAULT_ALPHA, buildSystem, TOP_SHARE, EV_ALPHAS } = await engine();
     expect(DEFAULT_ALPHA).toEqual({ V85: 1, V75: 1 });
+    // ren data borttagen 2026-10-14: utdelningsläget provar värdefokus igen
+    expect(EV_ALPHAS).toEqual([0, 0.5, 1, 1.5, 2, 3]);
     expect(defaultAlpha('V85')).toBe(1);
     expect(defaultAlpha('V75')).toBe(1);
     for (const t of ['V86', 'GS75', 'V64', 'V65', 'dd', undefined]) expect(defaultAlpha(t)).toBe(0);

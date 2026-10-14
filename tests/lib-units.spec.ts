@@ -3822,4 +3822,89 @@ test.describe('databas: översättning från filerna', () => {
     expect(skapaTabellSql('t', [['a', 'TEXT'], ['b', 'INTEGER']], { nyckel: ['a'] })).toBe('CREATE TABLE "t" (\n  "a" TEXT,\n  "b" INTEGER,\n  PRIMARY KEY ("a")\n)');
     expect([gissaTyp([1, 2]), gissaTyp([1, 2.5]), gissaTyp([null, 'x']), gissaTyp([]), gissaTyp([true])]).toEqual(['INTEGER', 'REAL', 'TEXT', 'TEXT', 'INTEGER']);
   });
+
+  test('Stryktipset/Europatipset: omgång, folket, utdelning och facit', async () => {
+    const { kupongOmgangRader, kronor, ratt } = await lib('databas.mjs');
+    expect([kronor('1119407,00'), kronor('2,50'), kronor(''), kronor(null)]).toEqual([1119407, 2.5, null, null]);
+    expect([ratt('1X2', '1XX'), ratt(null, '1'), ratt('1', null)]).toEqual([2, null, null]);
+    const ev = (n: number, ut: string) => ({ eventNumber: n, odds: { one: '2,10', x: '3,40', two: '3,60' }, svenskaFolket: { one: '35', x: '24', two: '41', refOne: '36' }, tioTidningarsTips: { one: 5, x: 1, two: 4 }, match: { matchStart: 's', participants: [{ type: 'home', name: 'H' + n }, { type: 'away', name: 'B' + n }], league: { name: 'Premier League', country: { name: 'England' } } }, _ut: ut });
+    const events = Array.from({ length: 13 }, (_, i) => ev(i + 1, i % 3 === 0 ? 'X' : '1'));
+    const r = kupongOmgangRader({ product: 'stryktipset', drawNumber: 4900, draw: { drawEvents: events, rowPrice: '1,00', regCloseTime: 't' }, result: { currentNetSale: '21527062,00', events: events.map((e) => ({ eventNumber: e.eventNumber, outcome: e._ut, outcomeScore: { home: 1, away: 1 } })), distribution: [{ name: '13 rätt', winners: 5, amount: '1119407,00' }, { name: '10 rätt', winners: 25703, amount: '136,00' }] } });
+    expect(r.omgang).toMatchObject({ produkt: 'stryktipset', omgang: 4900, omsattning_kr: 21527062, radpris_kr: 1, facit: 'X11X11X11X11X', antal_kryss: 5 });
+    expect(r.matcher[0]).toMatchObject({ matchnr: 1, hemmalag: 'H1', bortalag: 'B1', liga: 'Premier League', land: 'England', odds_1: 2.1, folket_1: 0.35, folket_2: 0.41, folket_tidigare_1: 0.36, tio_tidningar_1: 5, utfall: 'X', hemmamal: 1, struken: 0 });
+    expect(r.utdelning).toEqual([{ produkt: 'stryktipset', omgang: 4900, antal_ratt: 13, vinnare: 5, utdelning_kr: 1119407 }, { produkt: 'stryktipset', omgang: 4900, antal_ratt: 10, vinnare: 25703, utdelning_kr: 136 }]);
+    // Ofullständigt facit → inget facit
+    expect(kupongOmgangRader({ product: 'europatipset', drawNumber: 1, draw: { drawEvents: events.slice(0, 2) }, result: {} }).omgang.facit).toBeNull();
+  });
+
+  test('Stryktipset/Europatipset: våra kuponger och bakkörningar', async () => {
+    const { kupongSystemRader, stryktipsBakkorningRader } = await lib('databas.mjs');
+    const facit = '1111111111111';
+    const arkiv = kupongSystemRader({ product: 'stryktipset', drawNumber: 4900, outcomes: facit, matches: [{ match: 'A - B', final: [0.5, 0.3, 0.2], folk: [0.6, 0.2, 0.2], outcome: '1' }], A: { rows: 2, cost: 2, hitAll: 0.01, picks: ['1X', '2'], rowList: ['1111111111111', '2222222222222'], evaluation: { best: 13, winnings: 900, net: 898, groundCorrect: 12 } } });
+    expect(arkiv.system[0]).toMatchObject({ kupong: 'A', kalla: 'arkiv', rader: 2, bast_ratt: 13, vinst_kr: 900, netto_kr: 898, chans_13: 0.01 });
+    expect(arkiv.rader.map((x: any) => x.antal_ratt)).toEqual([13, 0]);
+    expect(arkiv.tecken.map((x: any) => [x.matchnr, x.tecken, x.satt])).toEqual([[1, '1X', 1], [2, '2', 0]]);
+    expect(arkiv.tecken[0]).toMatchObject({ match: 'A - B', var_chans_1: 0.5, folket_1: 0.6 });
+    // Historikfilen: sparad/senaste för A och B, bästa antal rätt räknas ur facit när utvärdering saknas
+    const hist = kupongSystemRader({ product: 'europatipset', drawNumber: 2615, result: { outcomes: facit }, saved: { at: 'a', rowList: ['1111111111112'], picks: [] }, latestB: { rowList: ['1111111112222'] } });
+    expect(hist.system.map((x: any) => [x.kupong, x.kalla, x.bast_ratt])).toEqual([['A', 'sparad', 12], ['B', 'senaste', 9]]);
+    const b = stryktipsBakkorningRader('stryktips-backtest-x.json', { generatedAt: 'g', summary: { from: 'f', to: 't', draws: 1, A: { cost: 10, winnings: 30, net: 20 } }, draws: [{ drawNumber: 4971, date: 'd', outcomes: facit, prize13: { amount: '0,00', winners: 0 }, A: { rows: 10, cost: 10, best: 11, winnings: 30, net: 20, perClass: { 11: 1, 10: 4 } }, B: null, matches: [{ n: 1, match: 'A - B', league: 'PL', outcome: '1', final: [0.5, 0.3, 0.2], model: [0.4, 0.3, 0.3], pickA: '1', pickB: '1X2' }] }] });
+    expect(b.korning).toMatchObject({ fil: 'stryktips-backtest-x.json', produkt: 'stryktipset', netto_a: 20, vinst_a: 30, netto_b: null, omgangar: 1 });
+    expect(b.omgangar).toHaveLength(1);
+    expect(b.omgangar[0]).toMatchObject({ omgang: 4971, kupong: 'A', rader_11: 1, rader_10: 4, rader_13: 0, utdelning_13_kr: 0 });
+    expect(b.matcher[0]).toMatchObject({ omgang: 4971, matchnr: 1, modell_1: 0.4, tecken_a: '1', tecken_b: '1X2', tecken_c: null });
+    expect(stryktipsBakkorningRader('europatips-backtest-y.json', { draws: [] }).korning.produkt).toBe('europatipset');
+  });
+
+  test('hästar: bakkörningar, analyser och uppföljning', async () => {
+    const { hastBakkorningRader, hastAnalysRader, hastUppfoljningRader } = await lib('databas.mjs');
+    const b = hastBakkorningRader('bakkorning-2025.json', { year: 2025, model: 'rullande', alpha: 'standard', variants: ['rakt'], budgets: [500], summary: { rakt: { 500: { all: { games: 2, cost: 960, win: 1000, net: 40, roi: 0.04, biggest: { id: 'g', win: 1000 } }, V86: { games: 1, cost: 480, win: 0, net: -480 } } } }, games: [{ id: 'V86_x', type: 'V86', date: 'd', winners: [[10], [7]], by: { 500: { rakt: { cost: 480, win: 0, net: -480, best: 1, system: [[10, 5], [3]] } } }, field: [[[10, 0.33, 0.3, 'A'], [5, 0.28, 0.3, 'A']], [[7, 0.1, 0.2, 'C']]] }] });
+    expect(b.korning).toMatchObject({ ar: 2025, modell: 'rullande', varianter: 'rakt', budgetar: '500' });
+    expect(b.resultat.map((x: any) => [x.spelform, x.netto_kr])).toEqual([['alla', 40], ['V86', -480]]);
+    expect(b.resultat[0]).toMatchObject({ budget_kr: 500, storsta_vinst_kr: 1000, storsta_vinst_omgang: 'g' });
+    expect(b.omgangar[0]).toMatchObject({ spel_id: 'V86_x', budget_kr: 500, variant: 'rakt', bast_ratt: 1, system: [[10, 5], [3]] });
+    expect(b.chanser.map((x: any) => [x.avdelning, x.startnummer, x.vann])).toEqual([[1, 10, 1], [1, 5, 0], [2, 7, 1]]);
+    const a = hastAnalysRader({ id: 'V85_x', type: 'V85', date: 'd', races: [{ leg: 1, id: 'l', horses: [{ nr: 10, horse: 'H', p: 0.376, marketP: 0.37, rank: 'A', comments: ['Barfota', 'Tillägg'], scores: { form: 95 }, result: { place: 1 } }] }] });
+    expect(a[0]).toMatchObject({ spel_id: 'V85_x', avdelning: 1, startnummer: 10, chans: 0.376, klass: 'A', kommentarer: 'Barfota · Tillägg', placering: 1, poang: { form: 95 } });
+    const u = hastUppfoljningRader({ id: 'V86_y', type: 'V86', systems: { standard: { 500: { rows: 1920, cost: 480, hit: 0.08, legs: [[1]], result: { win: 0, net: -480, best: 4 } } } } });
+    expect(u[0]).toMatchObject({ spel_id: 'V86_y', variant: 'standard', budget_kr: 500, kostnad_kr: 480, bast_ratt: 4, netto_kr: -480 });
+  });
+
+  test('hästar: skrällmissar och fynd (filerna från scripts/hastar-skrallmissar.mjs)', async () => {
+    const { skrallmissRader, fyndRader, sqlVarde } = await lib('databas.mjs');
+    const avd = { spel_id: 'V85_x', avdelning: 3, system: 'storvinst', budget_kr: 500, vinnare_streck: 0.04, med_i_systemet: 0, miss_typ: 'långt ner', overflodiga_hastar: 2 };
+    const h = { spel_id: 'V85_x', avdelning: 3, startnummer: 8, hast: 'H', borde_rank: 6, skal: 'barfota första gången' };
+    expect(skrallmissRader({ avdelningar: [avd], missade_hastar: [h] })).toEqual({ avdelningar: [avd], hastar: [h] });
+    expect(skrallmissRader(null)).toEqual({ avdelningar: [], hastar: [] });
+    const f = fyndRader({ fynd: [{ id: 'f1', datum: '2026-10-13', session: '5f', rubrik: 'R', storlek: 'stor', status: 'fakta', siffror: { n: 12 } }, { id: 'f2' }] });
+    expect(f[0]).toMatchObject({ id: 'f1', storlek: 'stor', status: 'fakta', spelform: null, siffror: { n: 12 } });
+    expect(sqlVarde(f[0].siffror)).toBe('{"n":12}');
+    expect(f[1]).toMatchObject({ id: 'f2', rubrik: null, siffror: null });
+    expect(fyndRader(null)).toEqual([]);
+  });
+});
+
+// ---------- hastar-skrallmissar.mjs ----------
+
+test.describe('skrällmissar: rang och missklassning', () => {
+  const skript = () => import(pathToFileURL(path.join(ROOT, 'scripts', 'hastar-skrallmissar.mjs')).href);
+
+  test('ranks: högst chans = 1, saknad chans sist', async () => {
+    const { ranks } = await skript();
+    const r = ranks([{ nr: 1, p: 0.2 }, { nr: 2, p: 0.5 }, { nr: 3, p: null }, { nr: 4, p: 0.3 }], 'p');
+    expect([1, 2, 3, 4].map((nr) => r.get(nr))).toEqual([3, 1, 4, 2]);
+  });
+
+  test('classifyLeg: träff, spik föll, precis utanför, mittfält, långt ner', async () => {
+    const { classifyLeg } = await skript();
+    const rank = new Map([[1, 1], [2, 2], [3, 3], [4, 4], [5, 5], [6, 6], [7, 7], [8, 8], [9, 9]]);
+    // Träff: vinnaren (2) med, hästarna 3 och 4 är rankade under vinnaren och behövdes inte
+    expect(classifyLeg([1, 2, 3, 4], [2], rank)).toMatchObject({ med: true, wRank: 2, last: 4, overflodiga: 2, typ: null });
+    expect(classifyLeg([1], [3], rank)).toMatchObject({ med: false, typ: 'spik föll', overflodiga: null });
+    expect(classifyLeg([1, 2], [4], rank).typ).toBe('precis utanför');
+    expect(classifyLeg([1, 2], [6], rank).typ).toBe('mittfält');
+    expect(classifyLeg([1, 2], [9], rank).typ).toBe('långt ner');
+    // Dött lopp: någon av vinnarna med räcker
+    expect(classifyLeg([1, 2], [2, 9], rank)).toMatchObject({ med: true, wRank: 2 });
+  });
 });
