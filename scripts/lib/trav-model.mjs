@@ -274,6 +274,16 @@ export function gallopRisk(records) {
   return (g + 0.1 * 5) / (last.length + 5);
 }
 
+/**
+ * De 10 senaste ej strukna starterna i kort form för galoppvisningen på sidan (nyast först):
+ * { date, track, dist, method ("auto"|"volte"), place, g (galopp), d (diskad) }.
+ */
+export const galopp10 = (records) =>
+  records
+    .filter((r) => !r.scratched)
+    .slice(0, 10)
+    .map((r) => ({ date: r.date, track: r.track ?? null, dist: r.distance ?? null, method: r.startMethod ?? null, place: r.place ?? null, g: !!r.galloped, d: !!r.disqualified }));
+
 /** Median km-tid (sekunder) senaste 6 utan galopp, helst samma startmetod (minst 2 sådana). */
 export function speedSeconds(records, method) {
   const ok = records.filter((r) => !r.scratched && !r.galloped && r.km != null).slice(0, 6);
@@ -545,7 +555,7 @@ export function analyzeRace(race, posts = {}, opts = {}) {
   }
   const out = horses.map((h) => {
     const { records, _lead, ...rest } = h;
-    return { ...rest, p: r3(h.p), value: r3(h.value), marketPct: r3(h.marketPct), last5: records.slice(0, 5) };
+    return { ...rest, p: r3(h.p), value: r3(h.value), marketPct: r3(h.marketPct), last5: records.slice(0, 5), galopp10: galopp10(records) };
   });
   out.sort((a, b) => (a.scratched - b.scratched) || (b.p ?? 0) - (a.p ?? 0));
   return { ...race, starts: undefined, horses: out, favorite, tempo: tp, hasOdds, oddsWeight: r3(wOdds) };

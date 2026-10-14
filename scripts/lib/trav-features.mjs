@@ -217,6 +217,9 @@ export function rawFeatures(race, h, ctx = {}) {
   const dKlass = (d) => (d < 1800 ? 0 : d < 2600 ? 1 : d < 3000 ? 2 : 3);
   const sameDist = race.distance ? rec.filter((r) => r.distance > 0 && dKlass(r.distance) === dKlass(race.distance)) : null;
   const withDriver = h.driverId ? rec.filter((r) => r.driverId === h.driverId) : null;
+  // Bästa km-tid utan galopp i de 3 senaste starterna på samma distansklass och startmetod (Nanda Devi Cut 10/10:
+  // vann senast på 71,9 över distansen men rankades efter en häst den slagit). fart tar medianen oavsett distans.
+  const distOk = sameDist ? sameDist.filter((r) => !r.galloped && r.km != null && r.startMethod === race.startMethod).slice(0, 3) : null;
   return {
     form,
     fart: speed != null ? -speed : null,
@@ -271,6 +274,9 @@ export function rawFeatures(race, h, ctx = {}) {
     distGalopp: sameDist ? (sameDist.filter((r) => r.galloped).length + 0.5) / (sameDist.length + 5) : null,
     galoppLiv: (rec.filter((r) => r.galloped).length + 0.5) / (rec.length + 5),
     kuskHast: withDriver ? (withDriver.filter((r) => r.place === 1).length + 0.1 * 3) / (withDriver.length + 3) : null,
+    // Kusken har vunnit minst hälften av minst 3 starter med hästen (Nilla Lane 19/30, Zeebreeze 3/4, Andiamo 4/6)
+    kuskHastStark: withDriver ? (withDriver.length >= 3 && withDriver.filter((r) => r.place === 1).length / withDriver.length >= 0.5 ? 1 : 0) : null,
+    distKm: distOk?.length ? -Math.min(...distOk.map((r) => r.km)) : null,
   };
 }
 

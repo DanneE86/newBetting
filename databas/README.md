@@ -15,7 +15,7 @@ npm run databas -- stryktips   bara Stryktipset och Europatipset
 npm run databas -- hastar      bara hästar
 ```
 
-Kör det när filerna har uppdaterats. Databasen ändrar aldrig filerna. Stäng DB Browser innan du bygger om, annars går filen inte att byta ut.
+Den byggs också om **automatiskt**: Windows-uppgiften "Betting databas auto" kollar varje timme och bygger om de databaser som är 3 dygn eller äldre (logg: `databas/auto-logg.txt`). Installera eller ta bort den med `powershell -ExecutionPolicy Bypass -File scripts\databas-auto-installera.ps1` (lägg till `-TaBort` för att ta bort). Datorn måste vara på och du inloggad; missade körningar tas igen när den startar. Vill du ha färsk data direkt kör du kommandot ovan. Databasen ändrar aldrig filerna. Stäng DB Browser innan du bygger om, annars går filen inte att byta ut.
 
 ## Titta i den
 

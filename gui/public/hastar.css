@@ -118,7 +118,18 @@ body.view-hastar main { display: none !important; }
 .hs-jump a:hover { border-color: var(--color-brand); }
 .hs-races { display: grid; gap: var(--space-4); }
 .hs-race { scroll-margin-top: var(--space-4); }
-.hs-race-head { display: grid; gap: var(--space-2); margin-bottom: var(--space-3); }
+.hs-race-head { margin-bottom: 0; }
+.hs-race[open] > .hs-race-head { margin-bottom: var(--space-3); }
+.hs-race-picks { display: block; margin: var(--space-1) 0 0 1em; font-size: var(--font-size-sm); color: var(--color-text-muted); }
+.hs-race-picks b { color: var(--color-text); }
+.hs-race > .hs-fav { margin-bottom: var(--space-3); }
+/* Till raden / Nästa avdelning: bara på mobil, ligger kvar i nederkant medan avdelningen är öppen */
+.hs-race-nav { display: none; }
+.hs-leg-link { text-decoration: none; color: var(--color-link); }
+.hs-sys-leg { scroll-margin-top: var(--space-6); }
+.hs-sys-leg.is-flash { animation: hs-flash 1.6s ease-out; }
+@keyframes hs-flash { from { box-shadow: 0 0 0 3px var(--color-brand); } to { box-shadow: 0 0 0 3px transparent; } }
+@media (prefers-reduced-motion: reduce) { .hs-sys-leg.is-flash { animation: none; outline: 2px solid var(--color-brand); } }
 .hs-fav { margin: 0; font-size: var(--font-size-sm); padding: var(--space-2) var(--space-3); border-radius: var(--radius-md); background: var(--color-surface-muted); }
 .hs-fav.is-strong { background: var(--color-success-bg); color: var(--color-success); }
 .hs-fav.is-weak { background: var(--color-warning-bg); color: var(--color-warning); }
@@ -172,6 +183,15 @@ body.view-hastar main { display: none !important; }
   .hs-view { width: calc(100% - 32px); }
   .hs-controls > * { flex: 1 1 100%; }
   .hs-dd-grid { grid-template-columns: 1fr; }
+  .hs-race-nav {
+    display: flex; gap: var(--space-2); justify-content: space-between;
+    position: sticky; bottom: 0; z-index: 2;
+    margin: var(--space-3) calc(-1 * var(--space-4)) calc(-1 * var(--space-4));
+    padding: var(--space-2) var(--space-4) calc(var(--space-2) + env(safe-area-inset-bottom, 0px));
+    background: var(--color-surface); border-top: 1px solid var(--color-border);
+    border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+  }
+  .hs-race-nav .ds-btn { flex: 1 1 0; min-height: 44px; }
 }
 .hs-value-explain { margin: var(--space-2) 0 var(--space-3); padding: var(--space-3); border-radius: var(--radius-md); border-left: 3px solid var(--color-success-solid); background: var(--color-surface-muted); font-size: var(--font-size-sm); }
 .hs-value-explain p { margin: 0 0 var(--space-2); }
@@ -215,3 +235,20 @@ body.view-hastar main { display: none !important; }
 
 /* Uppföljning */
 .hs-follow td.is-plus { color: var(--color-success); font-weight: var(--font-weight-bold); }
+
+/* Galopp senaste 10 starterna (nyast till vänster, senaste inringad) */
+.hs-gal { display: grid; gap: 2px; min-width: 190px; font-size: var(--font-size-xs); }
+.hs-gal-head { white-space: nowrap; }
+.hs-gal-lvl { font-weight: var(--font-weight-bold); padding: 0 var(--space-1); border-radius: var(--radius-pill); }
+.hs-gal.is-hog .hs-gal-lvl { background: var(--color-danger-bg); color: var(--color-danger); }
+.hs-gal.is-medel .hs-gal-lvl { background: var(--color-warning-bg); color: var(--color-warning); }
+.hs-gal.is-lag .hs-gal-lvl { background: var(--color-success-bg); color: var(--color-success); }
+.hs-gal-row { display: flex; gap: 2px; align-items: center; }
+.hs-gal-row small { margin-right: 2px; }
+.hs-gal-box { width: 16px; height: 18px; display: inline-grid; place-items: center; border-radius: 3px; background: var(--color-surface-sunken); color: var(--color-text-muted); font-weight: var(--font-weight-bold); font-variant-numeric: tabular-nums; }
+.hs-gal-box.is-top { color: var(--color-text); }
+.hs-gal-box.is-g { background: var(--color-danger-solid); color: #fff; }
+.hs-gal-box.is-d { background: var(--color-warning-bg); color: var(--color-warning); }
+.hs-gal-box.is-latest { outline: 2px solid var(--color-text); outline-offset: 1px; }
+.hs-gal-flag { justify-self: start; background: var(--color-danger-solid); color: #fff; font-weight: var(--font-weight-bold); padding: 1px var(--space-2); border-radius: var(--radius-pill); white-space: nowrap; }
+.hs-gal.is-none { color: var(--color-text-muted); }

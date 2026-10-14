@@ -487,3 +487,10 @@ export function hastUppfoljningRader(u) {
   }
   return ut;
 }
+
+export const DATABASER = ['fotboll', 'stryktips', 'hastar'];
+
+/** Vilka databaser som ska byggas om automatiskt: de som saknas eller inte byggts på `dagar` dygn. andrad: { namn: mtimeMs | null }. */
+export function databaserAttBygga(andrad, nu = Date.now(), dagar = 3) {
+  return DATABASER.filter((n) => andrad?.[n] == null || nu - andrad[n] >= dagar * 864e5);
+}

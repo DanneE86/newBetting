@@ -19,6 +19,7 @@ const alphaFor = (type) => (sys.focus === "standard" ? defaultAlpha(type) : ALPH
 const sys = { budget: 500, mode: "stor", expand: 4, focus: "standard", minTop: MIN_TOP, ibWeight: 0, conds: { minA: "", maxA: "", minSkrall: "", maxSkrall: "", minStreck: "", maxStreck: "", minRowTop: "" } };
 let lastRows = null;
 let lastLegs = null; // utgångs-/raka systemets hästar per avdelning, för kupongmallen
+const openRaces = new Set(); // öppna avdelningar (id), så att de står kvar öppna när sidan ritas om
 const FOCUS_TEXT = {
   standard: "Standard: V85 och V75 spelas med Hög, övriga spel med Träff. Bakkört V75 2021–2025 och V85 (444 omgångar): Hög gav mer tillbaka än Normal på 500–2000 kr, lika många alla rätt och fler skrällvinnare i systemet. Alla favoriter vinner nästan aldrig (0 av 74 V85-omgångar) – det vanliga är 2–4.",
   traff: "Träff: bara vinstchansen räknas – flest rätt. Bakkört 2026 (469 omgångar): alla rätt oftare än ett system efter strecket på varje budget.",
@@ -147,6 +148,7 @@ const help = () => `<details class="hs-help"><summary>Så läser du det här</su
     <li><b>Värde</b> betyder att chansen är minst 15 % högre än strecket. Då betalar systemet mer än det borde när hästen vinner. <b>Ej värde</b> = folket har redan spelat hästen fullt ut eller mer.</li>
     <li><b>A–D</b>: A stark vinstkandidat (≥ 20 %), B realistisk utmanare (≥ 9 %), C skräll/gardering (≥ 3,5 %), D låg chans.</li>
     <li>Staplarna: <span class="hs-key is-p">modellens chans</span> mot <span class="hs-key is-m">folkets streck</span>. Längre mörk stapel än ljus = underspelad.</li>
+    <li><b>Galopp</b>: de 10 senaste starterna, nyast till vänster och inringad. <b>G</b> (röd) = galopp, <b>D</b> = diskad, siffra = placering. Risk: låg under 15 %, medel 15–24 %, hög från 25 % (andelen galopp senaste 10, dragen mot 10 % när hästen har få starter). <b>Galopp senast</b> visas när hästen galopperade i senaste starten.</li>
     <li><b>Poäng 0–100</b> (100 bäst) = hästens vinstchans på en fast skala, samma i alla lopp. Prövat på 2024 (43 000 hästar modellen aldrig sett): 90+ vann ungefär varannan gång, 80–89 var tredje, 70–79 var sjätte, 50–59 var fjortonde, under 30 nästan aldrig.</li>
     <li><b>Delpoäng</b> jämför hästen med de andra i loppet (50 = loppets snitt, 70+ = klart bättre): ${Object.entries(PART_TEXT).map(([k, t]) => `${PART_SHORT[k]} ${t.toLowerCase()}`).join(", ")}. Hög formpoäng är inget fynd i sig – folket spelar redan formen. Utrustning (barfota, skor av) är oftare underspelad. <b>Trolig position</b> är en uppskattning – ATG:s öppna data har inga positioner från tidigare lopp.</li>
     <li>Modellen är prövad på ${state?.backtest?.races || "—"} avgjorda lopp: den är lika träffsäker som slutoddsen, inte bättre. Se Backtest längst ned.</li>
@@ -412,8 +414,8 @@ function systemTable(legs, byLeg) {
   return `<div class="hs-sys-legs">${legs
     .map((l) => {
       const hs = l.horses.map((nr) => byLeg[l.leg][nr]);
-      return `<div class="hs-sys-leg${hs.length === 1 ? " is-spik" : ""}">
-        <div class="hs-sys-leg-head"><span class="hs-leg">Avd ${l.leg}</span>${hs.length === 1 ? `<span class="hs-spik">Spik</span>` : `<span class="hs-sys-count">${hs.length} hästar</span>`}</div>
+      return `<div class="hs-sys-leg${hs.length === 1 ? " is-spik" : ""}" id="hs-rad-${l.leg}">
+        <div class="hs-sys-leg-head"><a class="hs-leg hs-leg-link" href="#hs-avd-${l.leg}" title="Visa avdelning ${l.leg}">Avd ${l.leg} ›</a>${hs.length === 1 ? `<span class="hs-spik">Spik</span>` : `<span class="hs-sys-count">${hs.length} hästar</span>`}</div>
         <div class="hs-sys-picks">${hs.map((h) => {
           const v = isValueHorse(h);
           const streck = h.marketPct != null ? `<span class="hs-pick-streck">${pct(h.marketPct)}</span>` : "";
@@ -454,6 +456,33 @@ function partsCell(h) {
     .join("")}</span>`;
 }
 
+// Galopp de 10 senaste starterna (nyast till vänster). Risknivå ur gallopRisk (andel galopp senaste 10, krympt mot 10 %).
+const galoppList = (h) =>
+  h.galopp10 ??
+  (h.last5 || []).filter((x) => !x.scratched).map((x) => ({ date: x.date, track: x.track, dist: x.distance, method: x.startMethod, place: x.place, g: !!x.galloped, d: !!x.disqualified }));
+const galoppLevel = (risk) => (risk == null ? null : risk >= 0.25 ? "hog" : risk >= 0.15 ? "medel" : "lag");
+const GALOPP_LEVEL_TEXT = { hog: "Hög risk", medel: "Medelrisk", lag: "Låg risk" };
+function galoppCell(h) {
+  const list = galoppList(h);
+  if (!list.length) return `<span class="hs-gal is-none">Inga starter</span>`;
+  const n = list.filter((x) => x.g).length;
+  const lvl = galoppLevel(h.gallopRisk) ?? (n / list.length >= 0.25 ? "hog" : n / list.length >= 0.15 ? "medel" : "lag");
+  const last = list[0];
+  const res = (x) => (x.g ? "galopp" : x.d ? "diskad" : x.place ? `${x.place}:a` : "oplacerad");
+  const boxes = list
+    .map((x, i) => {
+      const cls = x.g ? "is-g" : x.d ? "is-d" : x.place >= 1 && x.place <= 3 ? "is-top" : "";
+      const tip = `${i === 0 ? "Senaste starten: " : ""}${x.date || ""} ${x.track || ""}${x.dist ? ` ${x.dist} m` : ""}${x.method ? ` ${x.method === "volte" ? "volte" : "auto"}` : ""} – ${res(x)}`;
+      return `<span class="hs-gal-box ${cls}${i === 0 ? " is-latest" : ""}" title="${esc(tip)}">${x.g ? "G" : x.d ? "D" : x.place || "–"}</span>`;
+    })
+    .join("");
+  return `<span class="hs-gal is-${lvl}">
+    <span class="hs-gal-head"><b>${n} av ${list.length}</b> galopp · <span class="hs-gal-lvl">${GALOPP_LEVEL_TEXT[lvl]}</span></span>
+    <span class="hs-gal-row" aria-label="Senaste ${list.length} starterna, nyast först"><small>senast</small>${boxes}</span>
+    ${last.g ? `<span class="hs-gal-flag">Galopp senast (${esc(last.date || "")})</span>` : ""}
+  </span>`;
+}
+
 function driftCell(h) {
   if (h.streckDrift != null) {
     const chg = Math.round((h.streckDrift - 1) * 100);
@@ -471,27 +500,44 @@ function driftCell(h) {
   return "—";
 }
 
-function race(r, a) {
+/** Systemets hästar i avdelningen, för sammanfattningen i den hopfällda avdelningen. */
+function racePicks(leg) {
+  const l = lastLegs?.find((x) => x.leg === leg);
+  if (!l) return "";
+  const nrs = [...l.horses].sort((x, y) => x - y);
+  return `<span class="hs-race-picks">${nrs.length === 1 ? `<span class="hs-spik">Spik</span> ${nrs[0]}` : `Din rad: <b>${nrs.join(", ")}</b>`}</span>`;
+}
+
+/** Knappar under avdelningen (mobil): tillbaka till raden i systemet och vidare till nästa avdelning. */
+const raceNav = (leg, next) =>
+  `<nav class="hs-race-nav" aria-label="Avdelning ${leg}">
+    <button type="button" class="ds-btn ds-btn--secondary ds-btn--sm" data-act="to-row" data-leg="${leg}">↑ Till raden</button>
+    ${next != null ? `<button type="button" class="ds-btn ds-btn--primary ds-btn--sm" data-act="next-avd" data-leg="${leg}" data-next="${next}">Nästa: avd ${next} ↓</button>` : `<button type="button" class="ds-btn ds-btn--secondary ds-btn--sm" data-act="close-avd" data-leg="${leg}">Stäng</button>`}
+  </nav>`;
+
+function race(r, a, nav = null) {
   const live = r.horses.filter((h) => !h.scratched);
   const fav = r.favorite;
   const favCls = fav ? { "STARK FAVORIT": "is-strong", "NORMAL FAVORIT": "is-normal", "SÅRBAR FAVORIT": "is-weak" }[fav.status] : "";
   const srcLabel = live[0]?.marketSource === "odds" ? "Odds %" : "Streck";
-  return `<article class="hs-race" id="hs-avd-${r.leg}">
-    <header class="hs-race-head">
-      <h4>${a.type === "dd" ? `DD-lopp ${r.leg}` : `Avd ${r.leg}`} <small>lopp ${r.number} · ${r.distance} m ${r.startMethod === "auto" ? "autostart" : "voltstart"} · start ${esc(startTime(r.startTime))}</small></h4>
+  const id = `hs-avd-${r.leg}`;
+  return `<details class="hs-race hs-fold" id="${id}"${openRaces.has(id) ? " open" : ""}>
+    <summary class="hs-race-head">
+      <h4>${a.type === "dd" ? `DD-lopp ${r.leg}` : `Avd ${r.leg}`} <small>lopp ${r.number} · ${r.distance} m ${r.startMethod === "auto" ? "autostart" : "voltstart"} · start ${esc(startTime(r.startTime))}</small></h4>${nav ? racePicks(r.leg) : ""}
+    </summary>
       ${fav ? `<p class="hs-fav ${favCls}"><b>${esc(fav.status.toLowerCase().replace(/^./, (c) => c.toUpperCase()))}:</b> ${fav.nr} ${esc(fav.horse)} – ${esc(fav.why.join(" · "))}</p>` : ""}
-    </header>
     <div class="hs-table-wrap"><table class="hs-table">
-      <thead><tr><th scope="col">Rank</th><th scope="col">Nr</th><th scope="col">Häst / kusk</th><th scope="col">Chans mot ${srcLabel.toLowerCase()}</th><th scope="col">Chans</th><th scope="col">${srcLabel}</th><th scope="col">Spelvärde</th>
+      <thead><tr><th scope="col">Rank</th><th scope="col">Nr</th><th scope="col">Häst / kusk</th><th scope="col" title="De 10 senaste starterna, nyast till vänster. G = galopp, D = diskad, siffra = placering">Galopp</th><th scope="col">Chans mot ${srcLabel.toLowerCase()}</th><th scope="col">Chans</th><th scope="col">${srcLabel}</th><th scope="col">Spelvärde</th>
         <th scope="col" title="0–100, 100 = bäst. Vinstchansen på fast skala, samma i alla lopp">Poäng</th><th scope="col" title="0–100 jämfört med loppet, 50 = snitt">Delpoäng</th>${live.some((h) => h.streckDrift != null || h.poolTrend != null) ? `<th scope="col" title="Strecket nu / strecket förmiddag (↑↑ = fördubblat) eller ATG:s pool-rörelseriktning live">Drift / trend</th>` : ""}<th scope="col">Trolig position</th><th scope="col">Kommentar</th></tr></thead>
       <tbody>${r.horses
         .map((h) =>
           h.scratched
-            ? `<tr class="is-scratched"><td>—</td><td>${h.nr}</td><td colspan="9">${esc(h.horse)} · struken</td></tr>`
+            ? `<tr class="is-scratched"><td>—</td><td>${h.nr}</td><td colspan="10">${esc(h.horse)} · struken</td></tr>`
             : `<tr>
           <td><span class="hs-rank rank-${h.rank}" title="${esc(RANK_TEXT[h.rank])}">${h.rank}</span></td>
           <td>${h.nr}<small class="hs-post">spår ${h.post}</small></td>
           <td class="hs-name"><b>${esc(h.horse)}</b><small>${esc(h.driver || "")}${h.trainer ? ` · tr ${esc(h.trainer)}` : ""}${h.horseHome && h.horseHome !== a.track ? ` · borta fr ${esc(h.horseHome)}` : ""}</small></td>
+          <td>${galoppCell(h)}</td>
           <td>${bars(h)}</td>
           <td class="num"><b>${pct(h.p)}</b></td>
           <td class="num">${pct(h.marketPct)}</td>
@@ -505,7 +551,8 @@ function race(r, a) {
         .join("")}</tbody>
     </table></div>
     ${tempoBlock(r.tempo)}
-  </article>`;
+    ${nav ? raceNav(r.leg, nav.next) : ""}
+  </details>`;
 }
 
 const tempoBlock = (t) =>
@@ -649,7 +696,7 @@ function render() {
   }
   view.innerHTML = `${head}${kortSagt(a)}${help()}${a.type === "dd" ? "" : highlights(a)}${systemBuilder(a)}
     <nav class="hs-jump" aria-label="Avdelningar">${a.races.map((r) => `<a href="#hs-avd-${r.leg}">Avd ${r.leg}</a>`).join("")}${a.dd ? `<a href="#hs-dd">DD</a>` : ""}</nav>
-    <section class="hs-races">${a.races.map((r) => race(r, a)).join("")}</section>
+    <section class="hs-races">${a.races.map((r, i) => race(r, a, { next: a.races[i + 1]?.leg ?? null })).join("")}</section>
     <div id="hs-dd">${ddBlock(a)}</div>${followBlock(state.uppfoljning)}${backtestBlock(state.backtest)}${methodBlock(a)}`;
 }
 
@@ -657,9 +704,27 @@ function render() {
 view.addEventListener("click", (ev) => {
   const t = ev.target.closest("button, a");
   if (!t) return;
-  if (t.matches(".hs-jump a")) {
+  if (t.matches(".hs-jump a, .hs-leg-link")) {
     ev.preventDefault();
-    view.querySelector(t.getAttribute("href"))?.scrollIntoView({ behavior: "smooth", block: "start" });
+    const el = view.querySelector(t.getAttribute("href"));
+    if (el?.matches("details")) el.open = true;
+    el?.scrollIntoView({ behavior: "smooth", block: "start" });
+    return;
+  }
+  if (t.dataset.act === "to-row") {
+    const row = view.querySelector(`#hs-rad-${t.dataset.leg}`) || view.querySelector(".hs-system");
+    row?.scrollIntoView({ behavior: "smooth", block: "center" });
+    row?.classList.remove("is-flash");
+    void row?.offsetWidth; // starta om markeringen
+    row?.classList.add("is-flash");
+    return;
+  }
+  if (t.dataset.act === "next-avd" || t.dataset.act === "close-avd") {
+    const cur = view.querySelector(`#hs-avd-${t.dataset.leg}`);
+    if (cur) cur.open = false;
+    const next = t.dataset.next != null ? view.querySelector(`#hs-avd-${t.dataset.next}`) : cur;
+    if (next && t.dataset.act === "next-avd") next.open = true;
+    next?.scrollIntoView({ behavior: "smooth", block: "start" });
     return;
   }
   if (t.dataset.act === "fetch") return action("fetch", view.querySelector("#hs-game")?.value || null);
@@ -711,6 +776,18 @@ view.addEventListener("click", (ev) => {
     return render();
   }
 });
+
+// toggle bubblar inte – fånga den för att komma ihåg öppna avdelningar mellan omritningar
+view.addEventListener(
+  "toggle",
+  (ev) => {
+    const d = ev.target;
+    if (!d.matches?.("details.hs-race[id]")) return;
+    if (d.open) openRaces.add(d.id);
+    else openRaces.delete(d.id);
+  },
+  true,
+);
 
 view.addEventListener("change", (ev) => {
   const t = ev.target;
