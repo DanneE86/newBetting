@@ -219,10 +219,32 @@ function ibSkrallCard(a) {
       : "<p>Inga hästar med lågt streck som Interbet-modellen lyfter extra.</p>");
 }
 
+/** En rad i Vad folket missar: avdelning, häst, modellens chans mot strecket och kvoten. */
+const fmRow = (h) =>
+  `<li><span class="hs-leg">Avd ${h.leg}</span> ${h.nr} ${esc(h.horse)} · modell <b>${pct(h.p)}</b> · folket ${pct(h.marketPct)} · <b>${dec(h.kvot)}×</b></li>`;
+
+/** Vad folket missar (FOLKET_MISSAR i trav-model.mjs), bakkört ärligt 658 omgångar 2023–2026, plus alla fyra år. */
+function folketMissarCard(a) {
+  const fm = a.folketMissar;
+  if (!fm) return "";
+  const { missade = [], overspelade = [] } = fm;
+  return `<article class="hs-card hs-card-list hs-card-wide hs-folket" aria-label="Vad folket missar">
+    <h4>Vad folket missar</h4>
+    <p class="hs-lead">Kort sagt: här tycker modellen något annat än folket. Bakkört på 658 omgångar 2023–2026 (modellen tränad bara på åren före):
+      de underspelade vann <b>42 % oftare</b> än strecket sa, de överspelade favoriterna <b>19 % mer sällan</b>. Det höll alla fyra åren.</p>
+    <div class="hs-folket-cols">
+      <section><h5>Underspelade <small>streck 3–20 %, modellen ≥ 1,5 × strecket · ${missade.length} st</small></h5>
+        ${missade.length ? `<ul>${missade.map(fmRow).join("")}</ul>` : "<p>Ingen häst i den här omgången.</p>"}</section>
+      <section><h5>Överspelade favoriter <small>streck ≥ 20 %, modellen under 0,8 × strecket · ${overspelade.length} st</small></h5>
+        ${overspelade.length ? `<ul>${overspelade.map(fmRow).join("")}</ul><p class="hs-note">De vinner ändå ungefär var fjärde gång – gardera hellre än spika.</p>` : "<p>Ingen favorit i den här omgången.</p>"}</section>
+    </div></article>`;
+}
+
 function highlights(a) {
   const ups = a.upsets || [];
   const vul = a.vulnerable || [];
   return `<section class="hs-cards" aria-label="Spikar och skrällar">
+    ${folketMissarCard(a)}
     ${highlight("Bästa spiken", a.spikes?.sakerhet)}
     ${highlight("Bästa värdespiken", a.spikes?.varde)}
     ${highlight("Chansspik", a.spikes?.chans)}

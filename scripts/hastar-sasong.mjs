@@ -11,6 +11,8 @@
 //   node scripts/hastar-sasong.mjs --bakkor --modell rullande --alpha standard --varianter rakt,utdelning,skrall3 --budgetar 200,500,1000
 //   node scripts/hastar-sasong.mjs --bakkor --topp 1000000                    högsta rad minst 1 milj (alltid minst 50 000)
 //   node scripts/hastar-sasong.mjs --bakkor --spel V86,V85,V75,GS75        spelformer som bakkörs (standard)
+//   node scripts/hastar-sasong.mjs --bakkor --modell rullande --utan ntft,forbattring   rullande vikter utan de faktorerna
+//                                                                (testa en ny faktor i kronor: kör med och utan)
 //
 // Alla lopp sparas i EN fil: data/hastar/historik/<år>.jsonl.gz – en rad per omgång (normalizeGame: alla starter,
 // historik före loppdagen, slutstreck, slutodds, resultat och ATG:s utdelning per antal rätt).
@@ -214,7 +216,9 @@ export function runBacktest(games, { budgets = BUDGETS, alpha = 0.5, minTop = MI
 async function modelOpts(kind, year) {
   if (kind === "gammal") return () => ({ learned: false });
   const { loadSeasons } = await import("./hastar-lar.mjs");
-  const { buildRows, fitLogit, FEATURE_KEYS, trainerIndex, trainerTimeline } = await import("./lib/trav-features.mjs");
+  const { buildRows, fitLogit, FEATURE_KEYS: ALL_KEYS, trainerIndex, trainerTimeline } = await import("./lib/trav-features.mjs");
+  const utan = typeof arg("utan") === "string" ? arg("utan").split(",") : [];
+  const FEATURE_KEYS = ALL_KEYS.filter((k) => !utan.includes(k));
   const { withLopp } = await import("./hastar-lopp.mjs");
   const games = withLopp(loadSeasons());
   // Tränarhistorik ur alla säsonger (bara starter före loppets datum används, inget facit)
@@ -260,7 +264,7 @@ async function backtestSeason() {
   log(`Bakkör ${games.length} omgångar (${year}, ${types.join("/")}) × ${budgets.length} budgetar, modell: ${kind} …`);
   const optsFor = await modelOpts(kind, year);
   const out = { updatedAt: new Date().toISOString(), year: Number(year), model: kind, note: "Slutstreck och slutodds används – något för snällt mot systemet.", alpha, minTop, ...runBacktest(games, { optsFor, alpha, minTop, variants, budgets }) };
-  const f = path.join(HIST, `bakkorning-${year}${kind === "inlard" ? "" : `-${kind}`}${alpha === 0.5 ? "" : `-alpha${alpha}`}${variants ? `-${variants.join("+")}` : ""}${minTop === MIN_TOP ? "" : `-topp${minTop}`}.json`);
+  const f = path.join(HIST, `bakkorning-${year}${kind === "inlard" ? "" : `-${kind}`}${alpha === 0.5 ? "" : `-alpha${alpha}`}${variants ? `-${variants.join("+")}` : ""}${minTop === MIN_TOP ? "" : `-topp${minTop}`}${typeof arg("utan") === "string" ? `-utan-${arg("utan").replace(/,/g, "+")}` : ""}.json`);
   fs.writeFileSync(f, JSON.stringify(out, null, 1));
   const kr = (x) => `${Math.round(x).toLocaleString("sv-SE")} kr`;
   for (const v of out.variants) {

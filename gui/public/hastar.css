@@ -70,6 +70,10 @@ body.view-hastar main { display: none !important; }
 .hs-card.is-empty p { color: var(--color-text-muted); font-size: var(--font-size-sm); }
 .hs-card-list ul { list-style: none; margin: var(--space-2) 0 0; padding: 0; display: grid; gap: var(--space-2); font-size: var(--font-size-sm); }
 .hs-card-list small { display: block; }
+/* Vad folket missar: två kolumner (en på mobil) */
+.hs-folket-cols { display: grid; gap: var(--space-3); grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.hs-folket h5 { margin: var(--space-2) 0 0; font-size: var(--font-size-sm); }
+.hs-folket h5 small { display: block; font-weight: var(--font-weight-regular); }
 .hs-fold > summary { cursor: pointer; list-style: none; }
 .hs-fold > summary::-webkit-details-marker { display: none; }
 .hs-fold > summary h4 { display: inline; }

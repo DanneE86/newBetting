@@ -593,6 +593,34 @@ export function pickUpsets(races, limit = 8) {
   return out.sort((a, b) => b.why.length - a.why.length || b.value * b.p - a.value * a.p).slice(0, limit);
 }
 
+// Vad folket missar (2026-10-14): modellens ärliga chans (marknadsmodellen, tränad bara på åren före) mot slutstrecket,
+// 54 391 hästar i 658 omgångar V85/V75/V86/GS75 2023–2026 (scripts/hastar-skrallmissar.mjs --cache, pMkt).
+//   underspelad: streck 3–20 % och chans ≥ 1,5 × strecket → vann 1,42 × folket (1,17/1,58/1,64/1,22), ~2 per omgång
+//   överspelad:  streck ≥ 20 % och chans < 0,8 × strecket → vann 0,81 × folket (0,85/0,78/0,83/0,77), ~2 per omgång
+// Modellens egen nivå stämmer ungefär här (A/E 0,85 resp. 1,14). Strängare gränser (≥ 2× / < 0,6×) gav för få hästar.
+export const FOLKET_MISSAR = {
+  missad: { streckMin: 0.03, streckMax: 0.2, kvot: 1.5, ae: 1.42 },
+  overspelad: { streckMin: 0.2, kvot: 0.8, ae: 0.81 },
+};
+
+/** Hästar där modellen och folket är oense. Bara V-spelens streck (inte DD-oddsen). Båda listorna sorteras på chansen. */
+export function pickFolketMissar(races) {
+  const M = FOLKET_MISSAR.missad;
+  const O = FOLKET_MISSAR.overspelad;
+  const missade = [];
+  const overspelade = [];
+  for (const r of races)
+    for (const h of r.horses) {
+      if (h.scratched || h.marketSource !== "streck" || !(h.marketPct > 0) || h.p == null) continue;
+      const kvot = h.p / h.marketPct;
+      const brief = { leg: r.leg, raceNr: r.number, nr: h.nr, horse: h.horse, p: h.p, marketPct: h.marketPct, kvot: r3(kvot) };
+      if (h.marketPct >= M.streckMin && h.marketPct < M.streckMax && kvot >= M.kvot) missade.push(brief);
+      if (h.marketPct >= O.streckMin && kvot < O.kvot) overspelade.push(brief);
+    }
+  const byP = (a, b) => b.p - a.p;
+  return { missade: missade.sort(byP), overspelade: overspelade.sort(byP) };
+}
+
 /** Dagens Dubbel: kombinationer med sannolikhet (oberoende lopp), ATG-odds, fair odds och EV per krona. */
 export function analyzeDD(race1, race2, comboOdds, { minP = 0.01, limit = 20 } = {}) {
   if (!race1 || !race2) return null;
@@ -631,6 +659,7 @@ export function analyzeGame(game, ddGame = null, opts = {}) {
   }
   const spikes = pickSpikes(races);
   const upsets = pickUpsets(races);
+  const folketMissar = pickFolketMissar(races);
   const vulnerable = races.filter((r) => r.favorite?.status === "SÅRBAR FAVORIT").map((r) => ({ leg: r.leg, raceNr: r.number, ...r.favorite }));
   return {
     id: game.id,
@@ -642,6 +671,7 @@ export function analyzeGame(game, ddGame = null, opts = {}) {
     races,
     spikes,
     upsets,
+    folketMissar,
     vulnerable,
     dd,
     postTable: posts,

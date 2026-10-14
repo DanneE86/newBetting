@@ -46,6 +46,8 @@ export const SKRALL_MAX = 0.1; // häst med streck under 10 % räknas som skräl
 // Avvisat samma dag: tvinga in en häst under 10 % i 1–4 avdelningar (grundsystemet har redan oftast 2; 3–4 gav
 // färre alla rätt och sämre ROI), skrällkalibrering (chans × 1,1–1,4 under 10 % streck: modellen tar redan det
 // mesta, ojämnt mellan perioderna). Kvar från tidigare: V85 Normal slog Träff 2026; V86 och GS75 Träff (ej testat nu).
+// Ren data (2026-10-13/14: chans utan streck/odds, alpha 0 överallt) togs bort 2026-10-14 efter skrällmissanalysen
+// (658 omg: ren data huvudorsak till missarna). Marknadsmodellen och värdefokus är tillbaka.
 export const DEFAULT_ALPHA = { V85: 1, V75: 1 };
 // Testat och avvisat 2026-10-03: spikspärr (spik bara vid streck ≥ 50/60 %) – färre spikar föll, men de extra
 // hästarna kostade mer än de gav på 4 av 5 budgetar.
@@ -177,7 +179,8 @@ function optimizeWithTop(pools, legs, locked, maxRows, targetLogS, wide = null) 
     const sets = [];
     if (lock?.length) sets.push(pl.filter((h) => lock.includes(h.nr)));
     else
-      for (let k = wide?.has(legs[i].leg) ? 2 : 1; k <= Math.min(8, pl.length); k++) {
+      // Avdelningar som ska ha minst två hästar (wide) får också favorit + skräll (k = 1 plus en häst med lägre streck)
+      for (let k = 1; k <= Math.min(8, pl.length); k++) {
         const base = pl.slice(0, k);
         sets.push(base);
         const low = minStreck(base);
@@ -187,8 +190,9 @@ function optimizeWithTop(pools, legs, locked, maxRows, targetLogS, wide = null) 
           .slice(0, 5)
           .forEach((h) => sets.push([...base, h]));
       }
+    const minLen = !lock?.length && wide?.has(legs[i].leg) ? 2 : 1;
     return sets
-      .filter((set) => set.length <= maxRows)
+      .filter((set) => set.length >= minLen && set.length <= maxRows)
       .map((set) => ({ set, n: set.length, logS: Math.log(minStreck(set)), logW: Math.log(set.reduce((a, h) => a + h.w, 0) || 1e-9) }));
   });
   // Pareto-tillstånd: nyckel rader|streckhink → bästa täckning
