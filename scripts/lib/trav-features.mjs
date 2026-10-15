@@ -426,6 +426,29 @@ export function buildRows(games, { postTable, withMarketOnly = true, trainerHist
   return rows.sort((a, b) => a.date.localeCompare(b.date) || a.id.localeCompare(b.id));
 }
 
+// Öppna lopp (2026-10-15): 13+ hästar med voltstart eller tillägg. Folkets favorit där vann 30 % mot modellens 33 %
+// (A/E 0,91, 612 lopp V85/V75/V86/GS75 2023–2026, ärlig marknadsmodell; 0,67/0,95/1,14/0,86 per år), mot 0,99 i övriga
+// lopp. Favoriten med 35–60 % streck vann 35 % mot strecket 44 %. Favoritens chans gångras med mul, resten fördelas om.
+// mul är muterbar så att bakkörningen kan prova andra värden (hastar-sasong.mjs --oppenfav).
+export const OPEN_FAV = { minField: 13, mul: 0.9 };
+
+/** Öppet lopp: minst OPEN_FAV.minField startande och voltstart eller tillägg. */
+export const isOpenRace = (race, live = race.starts.filter((s) => !s.scratched)) =>
+  live.length >= OPEN_FAV.minField && (race.startMethod === "volte" || new Set(live.map((s) => s.distance || race.distance)).size > 1);
+
+/** Sänker marknadsfavoritens chans (högst lq) i öppna lopp och normerar om. p ändras på plats. */
+export function adjustOpenFav(race, row, p) {
+  if (OPEN_FAV.mul === 1 || !row.hasMarket || !isOpenRace(race)) return p;
+  let f = 0;
+  for (let i = 1; i < row.n; i++) if (row.lq[i] > row.lq[f]) f = i;
+  const rest = 1 - p[f];
+  const nf = p[f] * OPEN_FAV.mul;
+  if (rest <= 0) return p;
+  const k = (1 - nf) / rest;
+  for (let i = 0; i < row.n; i++) p[i] = i === f ? nf : p[i] * k;
+  return p;
+}
+
 /** Vinnande sannolikheter för ett lopps ej strukna hästar med inlärda vikter: { nrs, p, lin }. */
 export function learnedProbs(race, ctx, learned) {
   const row = raceRow(race, ctx);
@@ -433,7 +456,7 @@ export function learnedProbs(race, ctx, learned) {
   const keys = Object.keys(learned.weights);
   const beta = { market: row.hasMarket ? learned.market : 0, ...learned.weights };
   const lin = Array.from({ length: row.n }, (_, i) => keys.reduce((a, k) => a + beta[k] * row.X[k][i], 0));
-  return { nrs: row.nrs, p: probs(row, beta, keys), lin, X: row.X };
+  return { nrs: row.nrs, p: adjustOpenFav(race, row, probs(row, beta, keys)), lin, X: row.X };
 }
 
 /**

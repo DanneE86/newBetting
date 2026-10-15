@@ -42,6 +42,24 @@ export const BANOR = {
   År: "Årjäng",
   Ö: "Örebro",
   Ös: "Östersund",
+  // Kontrollerade mot ATG:s historik för samma häst, dag och lopp (2026-10-15).
+  Kr: "Kalmar",
+  Bj: "Bjerke",
+  Br: "Biri",
+  Ja: "Jarlsberg",
+  Kl: "Klosterskogen",
+  V: "Vincennes",
+  En: "Enghien",
+  Fr: "Vire Normandie",
+  Bl: "Bologna",
+  Fl: "Florens",
+  Mi: "Milano",
+  I: "Italien",
+  Bn: "Berlin",
+  Öe: "Baden",
+  Ee: "Estland",
+  Lt: "Litauen",
+  Lx: "Lexington",
 };
 
 /** true när sidan fortfarande är robotkontrollen, inte hästens resultat. */
@@ -69,15 +87,20 @@ export function parseIntSv(s) {
   return Number.isFinite(n) ? n : null;
 }
 
-/** "12,0a" → km-tid 1.12,0, autostart. Bara "a" är en kommande autostart utan tid. */
+/** "12,0a" → km-tid 1.12,0, autostart. Bara "a" är en kommande autostart utan tid.
+ *  Utan komma ("9ag", "uag", "nf3a") finns ingen km-tid – ATG har samma kod utan tid. Bokstäverna sist gäller ändå. */
 export function parseTid(s) {
   const raw = String(s || "").trim();
   if (!raw) return { km_tid: null, autostart: null, galopp: null };
   if (/^a$/i.test(raw)) return { km_tid: null, autostart: true, galopp: false };
   const m = raw.match(/^(\d+),(\d)([a-z]*)$/i);
-  if (!m) return { km_tid: null, autostart: null, galopp: null };
-  const flags = m[3].toLowerCase();
-  return { km_tid: `1.${m[1]},${m[2]}`, autostart: flags.includes("a"), galopp: flags.includes("g") };
+  if (m) {
+    const flags = m[3].toLowerCase();
+    return { km_tid: `1.${m[1]},${m[2]}`, autostart: flags.includes("a"), galopp: flags.includes("g") };
+  }
+  const flags = (raw.match(/\d([ag]+)$/i)?.[1] ?? raw.match(/^u([ag]+)$/i)?.[1] ?? "").toLowerCase();
+  if (!flags) return { km_tid: null, autostart: null, galopp: null };
+  return { km_tid: null, autostart: flags.includes("a"), galopp: flags.includes("g") };
 }
 
 /** "261008-10" → 2026-10-08, lopp 10. */
@@ -288,5 +311,57 @@ export function normalizeHorse(raw, { id, hamtad } = {}) {
     },
     sasong: (raw?.statRows || []).filter((r) => r.ar).map(season),
     starter,
+  };
+}
+
+/** Omgångens hästar ur vår analysfil (data/hastar/analys/<id>.json). ATG:s horseId är samma nummer som Sportinfos ts-id.
+ *  Strukna och hästar utan id hoppas över. */
+export function omgangHastar(analys) {
+  const ut = [];
+  for (const r of analys?.races || []) {
+    for (const h of r.horses || []) {
+      if (h.scratched || h.horseId == null) continue;
+      ut.push({ avdelning: r.leg, startnummer: h.nr, namn: h.horse || null, id: `ts${h.horseId}` });
+    }
+  }
+  return ut;
+}
+
+/** Samlingsfil för en omgång: varje hästs Sportinfo-fil med avdelning och startnummer. filer: { "ts…": doc }. */
+export function omgangFil(analys, filer, { hamtad } = {}) {
+  const lista = omgangHastar(analys);
+  const hastar = [];
+  const saknas = [];
+  for (const h of lista) {
+    const doc = filer?.[h.id];
+    if (doc) hastar.push({ avdelning: h.avdelning, startnummer: h.startnummer, ...doc });
+    else saknas.push(h);
+  }
+  return {
+    spel_id: analys?.id || null,
+    spelform: analys?.type || null,
+    datum: analys?.date || null,
+    bana: analys?.track || null,
+    hamtad: hamtad || null,
+    antal: lista.length,
+    hamtade: hastar.length,
+    saknas,
+    hastar,
+  };
+}
+
+/** ATG:s spel (racinginfo /games/<id>) → samma form som analysfilen, för omgångar utan analys eller utan horseId. */
+export function atgOmgang(game) {
+  if (!game?.id) return null;
+  const [type, date] = String(game.id).split("_");
+  return {
+    id: game.id,
+    type,
+    date,
+    track: game.races?.[0]?.track?.name || null,
+    races: (game.races || []).map((r, i) => ({
+      leg: i + 1,
+      horses: (r.starts || []).map((st) => ({ nr: st.number, horse: st.horse?.name || null, horseId: st.horse?.id ?? null, scratched: !!st.scratched })),
+    })),
   };
 }

@@ -7,8 +7,9 @@
 //   standard   rakt träffsystem, webbens förval till 2026-10-11 (defaultAlpha per spelform, högsta rad ≥ 50 000 kr)
 //   utdelning  rakt system med högst förväntad utdelning (buildValueSystem)
 //   skrall3    reducerat system, utgång 16 × budget, minst 3 hästar under 10 % streck per rad
-//   rad50k     reducerat system, utgång 16 × budget, varje rad kan ge minst 50 000 kr – bara på RAD_TOP_MIN_BUDGET (2000 kr)
-import { MIN_TOP, BIG_TARGET, buildBigSystem, RAD_TOP, RAD_TOP_MIN_BUDGET, TOP_SHARE, rowPrice, defaultAlpha, buildSystem, buildValueSystem, reduceSystem } from "../../gui/public/hast-engine.js";
+//   rad50k     reducerat system, utgång 16 × budget, varje rad kan ge minst 50 000 kr – bara på RAD_TOP_MIN_BUDGET (2000 kr),
+//              raderna med högst chans behålls (RAD_TOP_SORT, sedan 2026-10-15)
+import { MIN_TOP, BIG_TARGET, buildBigSystem, RAD_TOP, RAD_TOP_MIN_BUDGET, RAD_TOP_SORT, TOP_SHARE, rowPrice, defaultAlpha, buildSystem, buildValueSystem, reduceSystem } from "../../gui/public/hast-engine.js";
 import { rowsByCorrect, rowsByCorrectList, settle } from "./hast-sasong.mjs";
 
 export const FOLLOW_BUDGETS = [200, 500, 1000];
@@ -33,7 +34,7 @@ export function freezeSystems(a, { budgets = FOLLOW_BUDGETS, frozenAt = a.fetche
     const r = reduceSystem(legs, { minSkrall: 3 }, { budget, price, alpha, expand: 16, minTop: MIN_TOP, topShare });
     systems.skrall3[budget] = { kind: "rader", rows: r.rows, count: r.count, cost: r.cost, hit: r.hit };
   }
-  const t = reduceSystem(legs, { minRowTop: RAD_TOP }, { budget: RAD_TOP_MIN_BUDGET, price, alpha, expand: 16, minTop: MIN_TOP, topShare });
+  const t = reduceSystem(legs, { minRowTop: RAD_TOP }, { budget: RAD_TOP_MIN_BUDGET, price, alpha, expand: 16, minTop: MIN_TOP, topShare, sortBy: RAD_TOP_SORT });
   systems.rad50k[RAD_TOP_MIN_BUDGET] = { kind: "rader", rows: t.rows, count: t.count, cost: t.cost, hit: t.hit };
   return { id: a.id, type: a.type, date: a.date, track: a.track, frozenAt, price, systems };
 }

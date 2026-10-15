@@ -92,11 +92,17 @@ const summarize = (legs, sel, price, share) => {
   };
 };
 
-// Spikar (användarens krav 2026-10-12: "ha alltid två spikar"): varje system har exakt SPIKES avdelningar med en häst.
-// Spiken är avdelningens häst med högst chans; alla par av avdelningar provas och det par som ger systemets bästa
-// mått (träff: chans för alla rätt, storvinst: väntad andel av målet) väljs. Övriga avdelningar får minst två hästar.
-// Egna låsta enhästavdelningar räknas som spikar. spikes: null = fritt som förut.
-export const SPIKES = 2;
+// Spikar: varje system har exakt SPIKES avdelningar med en häst. Spiken är avdelningens häst med högst chans; alla
+// kombinationer av avdelningar provas och den som ger systemets bästa mått (träff: chans för alla rätt, storvinst: väntad
+// andel av målet) väljs. Övriga avdelningar får minst två hästar. Egna låsta enhästavdelningar räknas som spikar.
+// spikes: null = fritt som förut.
+// 2 spikar 2026-10-12 (användarens krav), 1 spik sedan 2026-10-15 (skrällmissanalysen: marknad + 1 spik bäst).
+// Bakkört 2026-10-15 (hastar-sasong.mjs, rullande kvartal, 661 omg V86/V85/V75/GS75 2023–2026), allt nytt (1 spik,
+// 50 000-rader efter chans, OPEN_FAV 0,9) mot gammalt, ROI utan de 3 största vinsterna / alla rätt:
+//   storvinst 500 −6 %/39 mot −2 %/32, 1000 −14 %/54 mot −29 %/44, 2000 −28 %/59 mot −37 %/62
+//   rakt 500 −9 %/61 mot −35 %/55, 1000 −24 %/82 mot −33 %/79, 2000 −25 %/110 mot −46 %/88
+//   50 000-system 500 −27 % mot −61 %, 1000 −26 % mot −34 %, 2000 −8 % mot −24 %
+export const SPIKES = 1;
 
 const topHorse = (l) => playable(l).filter((h) => h.p > 0).sort((a, b) => b.p - a.p)[0];
 

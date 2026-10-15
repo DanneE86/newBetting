@@ -1,6 +1,6 @@
 // Flik "Hästar": V75/V85/V86/V64/V65/GS75 + Dagens Dubbel från ATG (data från /api/hastar, se gui/hastar-routes.mjs).
 // Modellen räknas i scripts/lib/trav-model.mjs när data hämtas; systembyggaren (hast-engine.js) körs här i webbläsaren.
-import { BUDGETS, rowPrice, TOP_SHARE, TOP_LEVELS, MIN_TOP, BIG_TARGET, RAD_TOP, RAD_TOP_MIN_BUDGET, RAD_TOP_SORT, SKRALL_MAX, SKRALL_MIN_BUDGET, ATG_FILE_TYPES, atgFileName, atgFileXml, atgGameUrl, buildBigSystem, buildSystem, compressRows, SPIKES, couponRows, couponText, defaultAlpha, reduceSystem } from "/hast-engine.js";
+import { rowPrice, TOP_SHARE, TOP_LEVELS, MIN_TOP, BIG_TARGET, RAD_TOP, RAD_TOP_MIN_BUDGET, RAD_TOP_SORT, SKRALL_MAX, SKRALL_MIN_BUDGET, ATG_FILE_TYPES, atgFileName, atgFileXml, atgGameUrl, buildBigSystem, buildSystem, compressRows, SPIKES, couponRows, couponText, defaultAlpha, reduceSystem } from "/hast-engine.js";
 
 const view = document.getElementById("hastar-view");
 const GAME_NAME = { dd: "Dagens Dubbel" };
@@ -22,6 +22,8 @@ let lastLegs = null; // utgångs-/raka systemets hästar per avdelning, för kup
 // Egna val per omgång (id): { [avd]: [nr, ...] }. En häst = egen spik, flera = exakt de hästarna, inget = systemet väljer.
 const own = {};
 let ownOpen = false; // Bygg eget system öppen mellan omritningar
+const ownBuilt = new Set(); // omgångar (id) där Skapa system tryckts
+let ownLegs = null; // det skapade egna systemets hästar per avdelning, för ATG-filen
 let ignoreToggleUntil = 0; // omritning får inte stänga panelen via toggle på det borttagna elementet
 const openRaces = new Set(); // öppna avdelningar (id), så att de står kvar öppna när sidan ritas om
 const FOCUS_TEXT = {
@@ -346,25 +348,86 @@ function ownLocked(a) {
   return out;
 }
 
-/** Bygg eget system: klicka i egna spikar/hästar per avdelning, resten väljer systemet. */
-function ownPanel(a, locked) {
+/** Budgetval: 500 kr eller egen summa. id skiljer panelerna åt, båda styr sys.budget. */
+const budgetPicker = (id, label) => `<button type="button" class="ds-toggle" data-budget="500" aria-pressed="${sys.budget === 500}">500 kr</button>
+      <label>${label} <input type="number" min="10" step="10" id="${id}" class="ds-input hs-budget-input" value="${sys.budget}" inputmode="numeric" /></label>`;
+
+/** Bygg eget system: klicka i egna spikar/hästar per avdelning, resten väljer systemet. sysLegs = det byggda systemets hästar. */
+function ownPanel(a, locked, sysLegs, cost, built, recLegs) {
   const n = Object.keys(locked).length;
   const spikar = Object.values(locked).filter((x) => x.length === 1).length;
+  const auto = Object.fromEntries((sysLegs || []).map((l) => [l.leg, new Set(l.horses)]));
+  // systemets förslag utan dina val – visas kvar i avdelningar där du valt själv
+  const rec = Object.fromEntries((recLegs || sysLegs || []).map((l) => [l.leg, new Set(l.horses)]));
+  const status = built && !built.error ? ["is-done", `Klart · ${built.rows.toLocaleString("sv-SE")} rader · ${kr(built.cost)}`]
+    : n ? ["is-picked", `Du har valt i ${n} av ${a.races.length} avdelningar – tryck Skapa system`]
+    : ["is-empty", "Inga egna val än"];
   return `<details class="hs-egna hs-fold"${ownOpen ? " open" : ""}>
-    <summary><h4>Bygg eget system <span class="hs-fold-n">${n ? `${n} egna` : "auto"}</span></h4></summary>
-    <p class="hs-kort-inline"><b>Kort sagt:</b> klicka på en häst för att göra den till din spik. Klickar du på flera i samma avdelning spelas exakt de hästarna.
-      Avdelningar du inte rör fyller systemet i själv med modellen, inom budgeten.
-      Systemet har alltid minst ${SPIKES} spikar – väljer du färre lägger det till de som fattas${spikar ? ` (du har ${spikar})` : ""}.</p>
-    <p class="hs-lead">Siffran under numret är modellens chans. Grön kant = stark vinstkandidat, blå = utmanare, gul = skräll.</p>
+    <summary class="hs-egna-head">
+      <span class="hs-egna-title"><h4>Bygg eget system</h4>
+        <span class="hs-egna-sub">Välj själv i de lopp du vill – systemet fyller resten inom din summa och ger dig en fil att lämna in på ATG.</span>
+        <span class="hs-egna-status ${status[0]}" role="status">${status[1]}</span></span>
+      <span class="hs-egna-cta" aria-hidden="true"><span class="when-closed">Öppna</span><span class="when-open">Stäng</span></span>
+    </summary>
+    <p class="hs-kort-inline"><b>Kort sagt:</b> välj hur mycket du vill spela, klicka sedan på hästar i de avdelningar du vill bestämma själv – resten fyller systemet i, inom summan.
+      ${SPIKES === 1 ? "Systemet har alltid minst en spik – väljer du ingen lägger det till en" : `Systemet har alltid minst ${SPIKES} spikar – väljer du färre lägger det till de som fattas`}${spikar ? ` (du har ${spikar})` : ""}.</p>
+    <ol class="hs-egna-steps">
+      <li><b>Summa att spela</b><div class="hs-budget hs-egna-budget" role="group" aria-label="Summa att spela">${budgetPicker("hs-own-budget", "Egen summa (kr)")}</div></li>
+      <li><b>Klicka i dina hästar</b> – en häst = din spik, flera i samma avdelning = exakt de hästarna. Klicka igen för att ta bort.</li>
+      <li><b>Systemet fyller resten</b> – streckad ram = systemets förslag. Den står kvar även där du valt själv, så du ser vad modellen rekommenderar.</li>
+    </ol>
+    <div class="hs-egna-key" aria-hidden="true">
+      <span><i class="hs-egna-swatch is-mine"></i>Ditt val</span>
+      <span><i class="hs-egna-swatch is-auto"></i>Systemets förslag</span>
+      <span><i class="hs-egna-swatch"></i>Inte med</span>
+      <span>Siffran under numret = modellens chans · kant nedtill: <b class="k-a">grön</b> stark, <b class="k-b">blå</b> utmanare, <b class="k-c">gul</b> skräll</span>
+    </div>
     <div class="hs-egna-legs">${a.races.map((r) => {
       const mine = locked[r.leg] || [];
+      const sysSet = (mine.length ? rec[r.leg] : auto[r.leg]) || new Set();
+      const recTxt = mine.length && sysSet.size ? `<small class="hs-egna-rec">Förslag: ${[...sysSet].sort((x, y) => x - y).join(", ")}</small>` : "";
       const hs = r.horses.filter((h) => !h.scratched && h.p != null).sort((x, y) => x.nr - y.nr);
-      return `<div class="hs-egna-leg" data-own-row="${r.leg}"><span class="hs-leg">Avd ${r.leg}</span>
-        <span class="hs-egna-state">${mine.length === 1 ? "Din spik" : mine.length ? `${mine.length} egna` : "Auto"}</span>
-        <div class="hs-egna-picks">${hs.map((h) => `<button type="button" class="hs-egna-pick rank-${h.rank}" data-own-leg="${r.leg}" data-own-nr="${h.nr}" aria-pressed="${mine.includes(h.nr)}" title="${esc(`${h.nr} ${h.horse} · chans ${pct(h.p)} · streck ${pct(h.marketPct)}`)}"><b>${h.nr}</b><small>${pct(h.p, 0)}</small></button>`).join("")}</div></div>`;
+      const state = mine.length === 1 ? "Din spik" : mine.length ? `Dina ${mine.length}` : sysSet.size === 1 ? "Auto · spik" : sysSet.size ? `Auto · ${sysSet.size} hästar` : "Auto";
+      return `<div class="hs-egna-leg${mine.length ? " is-mine" : ""}" data-own-row="${r.leg}"><span class="hs-leg">Avd ${r.leg}</span>
+        <span class="hs-egna-state">${state}${recTxt}</span>
+        <div class="hs-egna-picks">${hs.map((h) => {
+          const isMine = mine.includes(h.nr);
+          const isAuto = sysSet.has(h.nr);
+          return `<button type="button" class="hs-egna-pick rank-${h.rank}${isAuto ? " is-auto" : ""}" data-own-leg="${r.leg}" data-own-nr="${h.nr}" aria-pressed="${isMine}" title="${esc(`${h.nr} ${h.horse} · chans ${pct(h.p)} · streck ${pct(h.marketPct)}${isAuto ? (mine.length ? " · systemets förslag" : " · systemets val") : ""}`)}"><b>${h.nr}</b><small>${pct(h.p, 0)}</small></button>`;
+        }).join("")}</div></div>`;
     }).join("")}</div>
-    ${n ? `<button type="button" class="ds-btn ds-btn--secondary ds-btn--sm" data-act="own-clear">Rensa egna val</button>` : ""}
+    <div class="hs-egna-foot">
+      ${cost ? `<p class="hs-egna-sum" role="status">Ditt system: <b>${cost.rows.toLocaleString("sv-SE")} rader · ${kr(cost.kr)}</b> av ${kr(sys.budget)}</p>` : ""}
+      <span class="hs-egna-actions">
+        ${n ? `<button type="button" class="ds-btn ds-btn--primary" data-act="own-build">${built ? "Skapa om systemet" : "Skapa system"}</button>` : `<small class="hs-lead">Välj minst en avdelning för att skapa systemet.</small>`}
+        ${n ? `<button type="button" class="ds-btn ds-btn--secondary ds-btn--sm" data-act="own-clear">Rensa egna val</button>` : ""}
+      </span>
+    </div>
+    ${built ? ownResult(a, built) : ""}
   </details>`;
+}
+
+/** Det skapade egna systemet: alltid rakt (en kupong), med ATG-fil och länkar. */
+function ownResult(a, b) {
+  if (b.error) return `<div class="hs-egna-result"><p class="hs-msg is-error">${esc(b.error)}</p></div>`;
+  const ft = ATG_FILE_TYPES[a.type];
+  return `<div class="hs-egna-result" role="region" aria-label="Ditt system">
+    <h4>Ditt system är klart</h4>
+    <p class="hs-sys-sum"><b>${b.rows.toLocaleString("sv-SE")} rader · ${kr(b.cost)}</b> · ${b.kind} (rakt system, en kupong) · alla rätt: ${pct(b.hit, 2)} enligt modellen${b.topPayout != null ? ` · högsta rad ca ${kr(b.topPayout)}` : ""}</p>
+    <pre class="hs-coupon hs-egna-coupon">${esc(couponText(b.legs))}</pre>
+    ${ft ? `<ol class="hs-atg-steps">
+      <li>Ladda ner ATG-filen (1 kupong, ${b.rows.toLocaleString("sv-SE")} rader).</li>
+      <li>Öppna <a href="${FILE_PAGE}" target="_blank" rel="noopener">ATG filinlämning</a>, logga in och scrolla till <b>Filinlämning från externt verktyg</b>.</li>
+      <li>Klicka <b>Välj fil</b> och välj filen.</li>
+      <li>Kontrollera att ATG visar <b>${kr(b.cost)}</b> och 1 kupong – tryck sedan Spela.</li>
+    </ol>` : `<p class="hs-lead">ATG tar inte emot fil för ${esc(gameName(a.type))} – fyll i raden för hand på omgången.</p>`}
+    <div class="hs-atg-actions">
+      ${ft ? `<button type="button" class="ds-btn ds-btn--primary ds-btn--sm" data-act="own-atg-file">Ladda ner ATG-fil (.xml)</button>
+      <a class="ds-btn ds-btn--secondary ds-btn--sm" href="${FILE_PAGE}" target="_blank" rel="noopener">Öppna ATG filinlämning</a>` : ""}
+      <a class="ds-btn ds-btn--secondary ds-btn--sm" href="${esc(atgGameUrl(a.id))}" target="_blank" rel="noopener">Öppna omgången på ATG</a>
+      <button type="button" class="ds-btn ds-btn--secondary ds-btn--sm" data-act="own-copy">Kopiera kupongen</button>
+    </div>
+  </div>`;
 }
 
 function systemBuilder(a) {
@@ -377,12 +440,37 @@ function systemBuilder(a) {
   const byLeg = Object.fromEntries(a.races.map((r) => [r.leg, Object.fromEntries(r.horses.map((h) => [h.nr, h]))]));
   const locked = ownLocked(a);
   let body;
+  let cost = null; // { rows, kr } för Bygg eget system
+  // Skapat eget system: alltid rakt – Träffsystem om det är valt, annars storvinstsystemet (även när reducerat är valt)
+  let built = null;
+  ownLegs = null;
+  // förslaget utan egna val, så det kan visas kvar i avdelningar du valt själv
+  let recLegs = null;
+  if (Object.keys(locked).length) {
+    try {
+      recLegs = (sys.mode === "rakt"
+        ? buildSystem(legs, { budget: sys.budget, price, alpha: alphaFor(a.type), minTop: sys.minTop, topShare })
+        : buildBigSystem(legs, { budget: sys.budget, price, minTop: sys.minTop, topShare, target: Math.max(BIG_TARGET, sys.minTop) })).legs;
+    } catch { recLegs = null; }
+  }
+  if (ownBuilt.has(a.id) && Object.keys(locked).length) {
+    try {
+      const s = sys.mode === "rakt"
+        ? buildSystem(legs, { budget: sys.budget, price, alpha: alphaFor(a.type), minTop: sys.minTop, topShare, locked })
+        : buildBigSystem(legs, { budget: sys.budget, price, minTop: sys.minTop, topShare, target: Math.max(BIG_TARGET, sys.minTop), locked });
+      built = { ...s, kind: sys.mode === "rakt" ? "Träffsystem" : s.big === false ? "Träffsystem (budgeten räcker inte för storvinst)" : "Storvinstsystem" };
+      ownLegs = s.legs;
+    } catch (e) {
+      built = { error: e.message };
+    }
+  }
   lastRows = null;
   lastLegs = null;
   try {
     if (sys.mode === "stor") {
       const s = buildBigSystem(legs, { budget: sys.budget, price, minTop: sys.minTop, topShare, target: Math.max(BIG_TARGET, sys.minTop), locked });
       lastLegs = s.legs;
+      cost = { rows: s.rows, kr: s.cost };
       body = systemTable(s.legs, byLeg, locked) + `<p class="hs-sys-sum"><b>${s.rows.toLocaleString("sv-SE")} rader · ${kr(s.cost)}</b> ·
         alla rätt: ${pct(s.hit, 2)} enligt modellen, ${pct(s.marketHit, 2)} enligt strecket${s.big ? ` ·
         <span title="Hur stor del av målet systemet väntas ge vid alla rätt, enligt modellen och strecket. Rader under målet räknas med sin andel, rader över målet som 1.">mål ${kr(s.target)}: <b>${pct(s.bigShare, 2)}</b></span>` : ""}</p>`
@@ -390,6 +478,7 @@ function systemBuilder(a) {
     } else if (sys.mode === "rakt") {
       const s = buildSystem(legs, { budget: sys.budget, price, alpha: alphaFor(a.type), minTop: sys.minTop, topShare, locked });
       lastLegs = s.legs;
+      cost = { rows: s.rows, kr: s.cost };
       body = systemTable(s.legs, byLeg, locked) + `<p class="hs-sys-sum"><b>${s.rows.toLocaleString("sv-SE")} rader · ${kr(s.cost)}</b> ·
         alla rätt: ${pct(s.hit, 2)} enligt modellen, ${pct(s.marketHit, 2)} enligt strecket ·
         <span title="Modellens träffchans delat med folkets. Över 1 = systemet träffar oftare än folket tror, alltså högre utdelning när det sitter.">värdeindex <b>${dec(s.valueIndex)}</b></span></p>` + topLine(s, a) + skrallLine(s, legs.length);
@@ -397,6 +486,7 @@ function systemBuilder(a) {
       const r = reduceSystem(legs, sys.conds, { budget: sys.budget, price, expand: sys.expand, alpha: alphaFor(a.type), minTop: sys.minTop, topShare, sortBy: isRadTop() ? RAD_TOP_SORT : "w", locked });
       lastRows = r.rows;
       lastLegs = r.base.legs;
+      cost = { rows: r.count, kr: r.cost };
       body = systemTable(r.base.legs, byLeg, locked) + `<p class="hs-sys-sum">Utgångssystem ${r.total.toLocaleString("sv-SE")} rader (${kr(r.total * price)}) ·
         ${r.passed.toLocaleString("sv-SE")} klarar villkoren · <b>${r.count.toLocaleString("sv-SE")} rader spelas · ${kr(r.cost)}</b> ·
         alla rätt: ${pct(r.hit, 2)} enligt modellen</p>
@@ -412,7 +502,7 @@ function systemBuilder(a) {
   const num = (k, label, title) => `<label title="${esc(title)}">${label} <input type="number" min="0" class="ds-input" data-cond="${k}" value="${esc(c[k])}" /></label>`;
   return `<section class="hs-system" aria-label="Systembyggare">
     <h3>Systembyggare <small>${esc(gameName(a.type))} · ${dec(price)} kr/rad</small></h3>
-    ${ownPanel(a, locked)}
+    ${ownPanel(a, locked, lastLegs, cost, built, recLegs)}
     <div class="hs-value-explain">
       <p><b>Vad betyder värde?</b> En häst har <b>värde</b> när den vinner oftare än folket tror – modellens chans är minst 15 % högre än strecket.
       Exempel: chans 20 %, streck 10 %. Vinner hästen delar du potten med färre, så utdelningen blir högre än risken motiverar.
@@ -420,8 +510,7 @@ function systemBuilder(a) {
       <p>Systemet väger ihop chansen och värdet. Hur mycket värdet får väga styr du med <b>Värdefokus</b>.</p>
     </div>
     <div class="hs-budget" role="group" aria-label="Budget">
-      ${BUDGETS.map((b) => `<button type="button" class="ds-toggle" data-budget="${b}" aria-pressed="${sys.budget === b}">${b.toLocaleString("sv-SE")} kr</button>`).join("")}
-      <label>Egen <input type="number" min="10" step="10" id="hs-budget" class="ds-input" value="${sys.budget}" /></label>
+      ${budgetPicker("hs-budget", "Egen summa (kr)")}
     </div>
     <div class="hs-mode" role="group" aria-label="Systemtyp">
       <button type="button" class="ds-toggle" data-mode="stor" aria-pressed="${sys.mode === "stor"}" title="Standard: rakt system byggt för att kunna vinna de stora utdelningarna (mål ${kr(BIG_TARGET)} vid alla rätt)">Storvinstsystem</button>
@@ -829,10 +918,22 @@ view.addEventListener("click", (ev) => {
   if (t.dataset.act === "fetch") return action("fetch", view.querySelector("#hs-game")?.value || null);
   if (t.dataset.act === "analyze") return action("analyze", state?.analysis?.id);
   if (t.dataset.act === "resultat") return action("resultat");
-  if (t.dataset.act === "atg-file") {
+  if (t.dataset.act === "own-build" && state?.analysis) {
+    ownBuilt.add(state.analysis.id);
+    ownOpen = true;
+    render();
+    view.querySelector(".hs-egna-result")?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    return;
+  }
+  if (t.dataset.act === "own-copy" && ownLegs) {
+    const done = () => { t.textContent = "Kopierat!"; setTimeout(() => (t.textContent = "Kopiera kupongen"), 1500); };
+    navigator.clipboard?.writeText(couponText(ownLegs)).then(done, () => {});
+    return;
+  }
+  if (t.dataset.act === "atg-file" || (t.dataset.act === "own-atg-file" && ownLegs)) {
     const a = state.analysis;
     try {
-      const coupons = atgCoupons();
+      const coupons = t.dataset.act === "own-atg-file" ? [ownLegs.map((l) => [...l.horses].sort((x, y) => x - y))] : atgCoupons();
       const xml = atgFileXml({ type: a.type, gameId: a.id, coupons });
       const blob = new Blob([xml], { type: "application/xml" });
       const link = Object.assign(document.createElement("a"), { href: URL.createObjectURL(blob), download: atgFileName(`${a.id}-${couponRows(coupons)}-rader`, xml) });
@@ -865,6 +966,7 @@ view.addEventListener("click", (ev) => {
   }
   if (t.dataset.act === "own-clear") {
     delete own[state.analysis.id];
+    ownBuilt.delete(state.analysis.id);
     return render();
   }
   if (t.dataset.budget) {
@@ -916,7 +1018,7 @@ view.addEventListener("change", (ev) => {
     loadGames(true);
   } else if (t.id === "hs-saved") load(t.value);
   else if (t.id === "hs-game" && games?.saved && t.value) load(t.value); // webbversionen: listan är sparade omgångar
-  else if (t.id === "hs-budget") {
+  else if (t.id === "hs-budget" || t.id === "hs-own-budget") {
     sys.budget = Math.max(10, Number(t.value) || 500);
     render();
   } else if (t.id === "hs-focus") {

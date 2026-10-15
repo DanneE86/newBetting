@@ -13,6 +13,8 @@
 //   node scripts/hastar-sasong.mjs --bakkor --spel V86,V85,V75,GS75        spelformer som bakkörs (standard)
 //   node scripts/hastar-sasong.mjs --bakkor --modell rullande --utan ntft,forbattring   rullande vikter utan de faktorerna
 //                                                                (testa en ny faktor i kronor: kör med och utan)
+//   node scripts/hastar-sasong.mjs --bakkor --spikar 2 --oppenfav 1 --radsort w   jämför mot äldre lägen (spikar: antal,
+//                                                                "fritt" = inga krav; oppenfav: OPEN_FAV.mul; radsort: p | w)
 //
 // Alla lopp sparas i EN fil: data/hastar/historik/<år>.jsonl.gz – en rad per omgång (normalizeGame: alla starter,
 // historik före loppdagen, slutstreck, slutodds, resultat och ATG:s utdelning per antal rätt).
@@ -26,7 +28,7 @@ import zlib from "node:zlib";
 import { fileURLToPath } from "node:url";
 import { normalizeGame, analyzeGame } from "./lib/trav-model.mjs";
 import { listGames, fetchGame, fetchGameInfo } from "./fetch-hastar.mjs";
-import { BUDGETS, rowPrice, TOP_SHARE, MIN_TOP, RAD_TOP, buildSystem, buildBigSystem, reduceSystem, buildValueSystem, defaultAlpha } from "../gui/public/hast-engine.js";
+import { BUDGETS, rowPrice, TOP_SHARE, MIN_TOP, RAD_TOP, RAD_TOP_SORT, SPIKES, buildSystem, buildBigSystem, reduceSystem, buildValueSystem, defaultAlpha } from "../gui/public/hast-engine.js";
 import { addPrizes, addExtras, lacksExtras, legWinners, isSettled, rowsByCorrect, rowsByCorrectList, settle, summarize } from "./lib/hast-sasong.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -146,7 +148,7 @@ async function completeSeason() {
  * hästar under 10 % streck per rad, t.ex. skrall2/skrall3/skrall4), rad50k (50 000-systemet: reducerat, utgång 16×, varje rad
  * minst RAD_TOP kr; sparar utgångssystemet så att man ser om vinnarraden föll i reduceringen). alpha "standard" = defaultAlpha(spelform), som i webben.
  */
-export function runBacktest(games, { budgets = BUDGETS, alpha = 0.5, minTop = MIN_TOP, optsFor = () => ({}), variants = ["rakt", "reducerat", "streck"], sims = 2000 } = {}) {
+export function runBacktest(games, { budgets = BUDGETS, alpha = 0.5, minTop = MIN_TOP, optsFor = () => ({}), variants = ["rakt", "reducerat", "streck"], sims = 2000, spikes = SPIKES, radSort = RAD_TOP_SORT } = {}) {
   const has = (v) => variants.includes(v);
   const perGame = [];
   for (const game of games) {
@@ -163,17 +165,17 @@ export function runBacktest(games, { budgets = BUDGETS, alpha = 0.5, minTop = MI
       const topShare = TOP_SHARE[game.type] ?? 0.25;
       const by = {};
       if (has("rakt")) {
-        const s = buildSystem(legs, { budget, price, alpha: al, minTop, topShare });
+        const s = buildSystem(legs, { budget, price, alpha: al, minTop, topShare, spikes });
         const sysLegs = s.legs.map((l) => l.horses);
         by.rakt = { ...settle(rowsByCorrect(sysLegs, winners), game.payouts, price), system: sysLegs };
       }
       if (has("storvinst")) {
-        const s = buildBigSystem(legs, { budget, price, minTop, topShare });
+        const s = buildBigSystem(legs, { budget, price, minTop, topShare, spikes });
         const sysLegs = s.legs.map((l) => l.horses);
         by.storvinst = { ...settle(rowsByCorrect(sysLegs, winners), game.payouts, price), system: sysLegs };
       }
       if (has("reducerat")) {
-        const r = reduceSystem(legs, {}, { budget, price, alpha: al, expand: 4, minTop, topShare });
+        const r = reduceSystem(legs, {}, { budget, price, alpha: al, expand: 4, minTop, topShare, spikes });
         by.reducerat = settle(rowsByCorrectList(r.rows, winners), game.payouts, price);
       }
       if (has("streck")) {
@@ -186,11 +188,11 @@ export function runBacktest(games, { budgets = BUDGETS, alpha = 0.5, minTop = MI
         by.utdelning = { ...settle(rowsByCorrect(sysLegs, winners), game.payouts, price), system: sysLegs, evRoi: v.evRoi, alpha: v.alpha, top: v.chosenTop };
       }
       for (const v of variants.filter((x) => /^skrall\d$/.test(x))) {
-        const r = reduceSystem(legs, { minSkrall: Number(v.slice(6)) }, { budget, price, alpha: al, expand: 16, minTop, topShare });
+        const r = reduceSystem(legs, { minSkrall: Number(v.slice(6)) }, { budget, price, alpha: al, expand: 16, minTop, topShare, spikes });
         by[v] = settle(rowsByCorrectList(r.rows, winners), game.payouts, price);
       }
       if (has("rad50k")) {
-        const r = reduceSystem(legs, { minRowTop: RAD_TOP }, { budget, price, alpha: al, expand: 16, minTop, topShare });
+        const r = reduceSystem(legs, { minRowTop: RAD_TOP }, { budget, price, alpha: al, expand: 16, minTop, topShare, spikes, sortBy: radSort });
         by.rad50k = { ...settle(rowsByCorrectList(r.rows, winners), game.payouts, price), base: r.base.legs.map((l) => l.horses), rows: r.rows.length, passed: r.passed };
       }
       row.by[budget] = by;
@@ -257,14 +259,18 @@ async function backtestSeason() {
   const budgets = typeof arg("budgetar") === "string" ? arg("budgetar").split(",").map(Number) : BUDGETS;
   // Högsta rad-spärr (kr vid alla rätt), aldrig under MIN_TOP
   const minTop = Math.max(MIN_TOP, typeof arg("topp") === "string" ? Number(arg("topp")) : MIN_TOP);
+  const spikes = typeof arg("spikar") === "string" ? (arg("spikar") === "fritt" ? null : Number(arg("spikar"))) : SPIKES;
+  const radSort = typeof arg("radsort") === "string" ? arg("radsort") : RAD_TOP_SORT;
+  if (typeof arg("oppenfav") === "string") (await import("./lib/trav-features.mjs")).OPEN_FAV.mul = Number(arg("oppenfav"));
+  const tag = typeof arg("tagg") === "string" ? `-${arg("tagg")}` : "";
   const games = [...readSeason(year).values()].filter((g) => isSettled(g) && types.includes(g.type));
   if (!games.length) throw new Error(`Ingen säsongsdata för ${year} – kör --hamta först`);
   const { withLopp } = await import("./hastar-lopp.mjs");
   withLopp(games);
   log(`Bakkör ${games.length} omgångar (${year}, ${types.join("/")}) × ${budgets.length} budgetar, modell: ${kind} …`);
   const optsFor = await modelOpts(kind, year);
-  const out = { updatedAt: new Date().toISOString(), year: Number(year), model: kind, note: "Slutstreck och slutodds används – något för snällt mot systemet.", alpha, minTop, ...runBacktest(games, { optsFor, alpha, minTop, variants, budgets }) };
-  const f = path.join(HIST, `bakkorning-${year}${kind === "inlard" ? "" : `-${kind}`}${alpha === 0.5 ? "" : `-alpha${alpha}`}${variants ? `-${variants.join("+")}` : ""}${minTop === MIN_TOP ? "" : `-topp${minTop}`}${typeof arg("utan") === "string" ? `-utan-${arg("utan").replace(/,/g, "+")}` : ""}.json`);
+  const out = { updatedAt: new Date().toISOString(), year: Number(year), model: kind, note: "Slutstreck och slutodds används – något för snällt mot systemet.", alpha, minTop, spikes, radSort, ...runBacktest(games, { optsFor, alpha, minTop, variants, budgets, spikes, radSort }) };
+  const f = path.join(HIST, `bakkorning-${year}${kind === "inlard" ? "" : `-${kind}`}${alpha === 0.5 ? "" : `-alpha${alpha}`}${variants ? `-${variants.join("+")}` : ""}${minTop === MIN_TOP ? "" : `-topp${minTop}`}${typeof arg("utan") === "string" ? `-utan-${arg("utan").replace(/,/g, "+")}` : ""}${tag}.json`);
   fs.writeFileSync(f, JSON.stringify(out, null, 1));
   const kr = (x) => `${Math.round(x).toLocaleString("sv-SE")} kr`;
   for (const v of out.variants) {
