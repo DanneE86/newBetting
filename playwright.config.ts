@@ -54,7 +54,7 @@ export default defineConfig({
     },
     {
       name: 'hastar',
-      testMatch: /hastar\.spec\.ts/,
+      testMatch: /(hastar|travsport-hast)\.spec\.ts/,
     },
     {
       name: 'gui',
