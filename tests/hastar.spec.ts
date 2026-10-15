@@ -589,6 +589,30 @@ test.describe('hast-engine: systembyggaren', () => {
   });
 });
 
+test('kommande omgång: närmaste stora V-spelet, inte dagens V64', async () => {
+  const { pickUpcoming } = await import(pathToFileURL(path.join(ROOT, 'scripts', 'fetch-hastar.mjs')).href);
+  const days = [
+    { date: '2026-10-15', games: [
+      { id: 'V65_2026-10-15_79_1', type: 'V65', status: 'bettable' },
+      { id: 'V64_2026-10-15_11_5', type: 'V64', status: 'bettable' },
+      { id: 'dd_2026-10-15_11_9', type: 'dd', status: 'bettable' },
+    ] },
+    { date: '2026-10-16', games: [{ id: 'V64_2026-10-16_18_4', type: 'V64', status: 'bettable' }] },
+    { date: '2026-10-17', games: [
+      { id: 'V85_2026-10-17_16_5', type: 'V85', status: 'bettable' },
+      { id: 'V65_2026-10-17_80_5', type: 'V65', status: 'bettable' },
+      { id: 'dd_2026-10-17_16_11', type: 'dd', status: 'bettable' },
+      { id: 'V85_gammal', type: 'V85', status: 'results' },
+    ] },
+  ];
+  const hit = pickUpcoming(days);
+  expect(hit.date).toBe('2026-10-17');
+  expect(hit.upcomingId).toBe('V85_2026-10-17_16_5');
+  expect(hit.games.map((g: { id: string }) => g.id)).toEqual(['V85_2026-10-17_16_5', 'V65_2026-10-17_80_5', 'dd_2026-10-17_16_11']);
+  expect(pickUpcoming([{ date: '2026-10-15', games: days[0].games }]).upcomingId).toBe('V65_2026-10-15_79_1');
+  expect(pickUpcoming([])).toBeNull();
+});
+
 // ---------- GUI ----------
 
 test.describe('GUI: fliken Hästar', () => {

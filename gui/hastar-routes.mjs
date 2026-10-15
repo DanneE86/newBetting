@@ -63,9 +63,11 @@ export function handleHastar(req, res, url, root) {
 
   if (req.method === "GET" && url.pathname === "/api/hastar/spel") {
     const date = safeDate(url.searchParams.get("datum")) || new Date().toLocaleDateString("sv-SE", { timeZone: "Europe/Stockholm" });
+    const kommande = url.searchParams.get("kommande") === "1";
+    const from = safeDate(url.searchParams.get("fran")) || date;
     import("../scripts/fetch-hastar.mjs")
-      .then((m) => m.listGames(date))
-      .then(({ games }) => send(res, 200, { date, games }))
+      .then((m) => (kommande ? m.upcomingGames(from) : m.listGames(date).then(({ games }) => ({ date, games }))))
+      .then((body) => send(res, 200, body))
       .catch((e) => send(res, 502, { error: String(e.message || e) }));
     return true;
   }
