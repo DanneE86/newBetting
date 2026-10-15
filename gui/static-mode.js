@@ -77,14 +77,26 @@
       const hit = (await loadTeams())[[p.get("league"), p.get("team"), p.get("opp"), p.get("venue")].join("|")];
       return hit ? json(200, hit) : json(404, { error: "Ingen förberäknad lagdata för matchen" });
     }
-    // Hästar: ATG:s kalender nås inte härifrån, så dagens spel = de sparade omgångarna det datumet
+    // Hästar: ATG:s kalender nås inte härifrån, så dagens spel = de sparade omgångarna.
+    // kommande=1: närmaste sparade omgång från och med fran/datum (stort V-spel före V64/V65).
     if (url.pathname === "/api/hastar/spel") {
-      const date = url.searchParams.get("datum") || "";
       const res = await realFetch("/api/hastar.json", { cache: "no-store" });
       const state = res.ok ? await res.json().catch(() => ({})) : {};
-      const games = (state.index?.analyses || [])
-        .filter((x) => x.date === date && !x.backtestOnly)
-        .map((x) => ({ id: x.id, type: x.type, track: x.track || null, status: null, startTime: null }));
+      const analyses = (state.index?.analyses || []).filter((x) => !x.backtestOnly);
+      const asGame = (x) => ({ id: x.id, type: x.type, track: x.track || null, status: null, startTime: null });
+      const BIG = ["V86", "V85", "V75", "GS75"];
+      if (url.searchParams.get("kommande") === "1") {
+        const from = url.searchParams.get("fran") || url.searchParams.get("datum") || new Date().toLocaleDateString("sv-SE", { timeZone: "Europe/Stockholm" });
+        const rows = analyses.filter((x) => x.date >= from).sort((a, b) => a.date.localeCompare(b.date));
+        const hit = rows.find((x) => BIG.includes(x.type)) || rows[0];
+        const date = hit?.date || from;
+        const games = analyses.filter((x) => x.date === date).map(asGame);
+        const rank = (t) => (BIG.indexOf(t) < 0 ? 99 : BIG.indexOf(t));
+        games.sort((a, b) => rank(a.type) - rank(b.type));
+        return json(200, { date, games, upcomingId: hit?.id || null, saved: true });
+      }
+      const date = url.searchParams.get("datum") || "";
+      const games = analyses.filter((x) => x.date === date).map(asGame);
       return json(200, { date, games, saved: true });
     }
     return realFetch(`${url.pathname}.json`, { cache: "no-store" });

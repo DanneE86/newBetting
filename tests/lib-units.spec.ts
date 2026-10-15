@@ -3950,6 +3950,27 @@ test.describe('static-mode: Hästars spellista på webbsidan', () => {
     expect(body).toMatchObject({ games: [], saved: true });
   });
 
+  test('kommande=1 tar närmaste stora sparade spelet från och med fran', async () => {
+    const vm = await import('vm');
+    const state = { index: { analyses: [
+      { id: 'V86_2026-10-14_40_1', type: 'V86', date: '2026-10-14', track: 'Bergsåker' },
+      { id: 'V85_2026-10-10_5_6', type: 'V85', date: '2026-10-10', track: 'Solvalla' },
+      { id: 'V75_2026-10-14_1_1', type: 'V75', date: '2026-10-14', track: 'X', backtestOnly: true },
+    ] } };
+    const realFetch = async () => new Response(JSON.stringify(state), { status: 200 });
+    const window: any = { fetch: realFetch };
+    const document = { createElement: () => ({}), head: { appendChild: () => {} } };
+    vm.runInNewContext(fs.readFileSync(path.join(ROOT, 'gui', 'static-mode.js'), 'utf8'),
+      { window, document, location: { href: 'https://newbetting.pages.dev/hastar', origin: 'https://newbetting.pages.dev' }, Response, URL, JSON, setTimeout });
+    const fromOct = await (await window.fetch('/api/hastar/spel?kommande=1&fran=2026-10-01')).json();
+    expect(fromOct).toMatchObject({ date: '2026-10-10', upcomingId: 'V85_2026-10-10_5_6', saved: true });
+    const from14 = await (await window.fetch('/api/hastar/spel?kommande=1&fran=2026-10-14')).json();
+    expect(from14.upcomingId).toBe('V86_2026-10-14_40_1');
+    expect(from14.games.map((g: any) => g.id)).toEqual(['V86_2026-10-14_40_1']);
+    const none = await (await window.fetch('/api/hastar/spel?kommande=1&fran=2026-10-15')).json();
+    expect(none).toMatchObject({ games: [], upcomingId: null, saved: true });
+  });
+
   test('hastar.js: saved-listan ger egen text och laddar omgången vid val', () => {
     const src = fs.readFileSync(path.join(ROOT, 'gui', 'public', 'hastar.js'), 'utf8');
     expect(src).toContain('games.saved ? "Ingen sparad omgång denna dag"');

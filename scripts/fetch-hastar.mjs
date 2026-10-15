@@ -73,6 +73,48 @@ async function pool(items, n, fn) {
   return out;
 }
 
+const BIG_TYPES = ["V86", "V85", "V75", "GS75"];
+
+/** Första dagen med ett stort V-spel (V86/V85/V75/GS75) som inte är avgjort, annars första dagen med något V-spel.
+ *  days: [{ date, games }]. Avgjorde spel och spel utan id hoppas över. */
+export function pickUpcoming(days) {
+  const open = (day) => (day.games || []).filter((g) => g.id && g.status !== "results");
+  for (const day of days) {
+    const all = open(day);
+    const live = all.filter((g) => g.type !== "dd");
+    const big = BIG_TYPES.map((t) => live.find((g) => g.type === t)).filter(Boolean);
+    if (!big.length) continue;
+    const rest = live.filter((g) => !big.includes(g));
+    return { date: day.date, games: [...big, ...rest, ...all.filter((g) => g.type === "dd")], upcomingId: big[0].id };
+  }
+  for (const day of days) {
+    const all = open(day);
+    const live = all.filter((g) => g.type !== "dd");
+    if (!live.length) continue;
+    return { date: day.date, games: [...live, ...all.filter((g) => g.type === "dd")], upcomingId: live[0].id };
+  }
+  return null;
+}
+
+function addDays(iso, n) {
+  const [y, m, d] = iso.split("-").map(Number);
+  const dt = new Date(Date.UTC(y, m - 1, d + n));
+  return dt.toISOString().slice(0, 10);
+}
+
+/** Närmaste kommande omgång från och med `from` (som mest `days` dagar fram). */
+export async function upcomingGames(from = today(), days = 14) {
+  const scanned = [];
+  for (let i = 0; i < days; i++) {
+    const date = addDays(from, i);
+    const { games } = await listGames(date).catch(() => ({ games: [] }));
+    scanned.push({ date, games });
+    const hit = pickUpcoming(scanned);
+    if (hit && BIG_TYPES.includes(String(hit.upcomingId).split("_")[0])) return hit;
+  }
+  return pickUpcoming(scanned) || { date: from, games: [], upcomingId: null };
+}
+
 /** Dagens spel: [{ id, type, track, status, startTime }]. */
 export async function listGames(date) {
   const cal = await get(`${API}/calendar/day/${date}`);

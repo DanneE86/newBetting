@@ -22,6 +22,7 @@ let lastLegs = null; // utgångs-/raka systemets hästar per avdelning, för kup
 // Egna val per omgång (id): { [avd]: [nr, ...] }. En häst = egen spik, flera = exakt de hästarna, inget = systemet väljer.
 const own = {};
 let ownOpen = false; // Bygg eget system öppen mellan omritningar
+let ignoreToggleUntil = 0; // omritning får inte stänga panelen via toggle på det borttagna elementet
 const openRaces = new Set(); // öppna avdelningar (id), så att de står kvar öppna när sidan ritas om
 const FOCUS_TEXT = {
   standard: "Standard: V85 och V75 spelas med Hög, övriga spel med Träff. Bakkört V75 2021–2025 och V85 (444 omgångar): Hög gav mer tillbaka än Normal på 500–2000 kr, lika många alla rätt och fler skrällvinnare i systemet. Alla favoriter vinner nästan aldrig (0 av 74 V85-omgångar) – det vanliga är 2–4.",
@@ -69,17 +70,63 @@ async function api(path, method = "GET") {
 async function load(id) {
   try {
     state = await api(`/api/hastar${id ? `?id=${encodeURIComponent(id)}` : ""}`);
-    if (state.analysis?.date && !games) date = state.analysis.date;
+    if (id && state.analysis?.date) {
+      date = state.analysis.date;
+      games = null;
+    } else if (state.analysis?.date && !games) date = state.analysis.date;
   } catch (e) {
     msg = { kind: "error", text: `Kunde inte läsa sparad analys: ${e.message}` };
   }
   render();
-  loadGames();
+  if (!games) loadGames(false);
 }
 
-async function loadGames() {
+/** Byt till den kommande omgångens analys om den redan är hämtad. */
+async function alignAnalysis() {
+  const id = games?.upcomingId || games?.games?.[0]?.id;
+  if (!id || state?.analysis?.id === id) return;
+  if (!state?.index?.analyses?.some((x) => x.id === id)) return;
+  const st = await api(`/api/hastar?id=${encodeURIComponent(id)}`);
+  if (st?.analysis?.id === id) state = st;
+}
+
+/** Första visningen: spellistan och datumet är den kommande omgången, inte den senaste sparade. */
+async function boot() {
+  render();
   try {
-    games = await api(`/api/hastar/spel?datum=${date}`);
+    state = await api("/api/hastar");
+  } catch (e) {
+    msg = { kind: "error", text: `Kunde inte läsa sparad analys: ${e.message}` };
+  }
+  try {
+    const next = await api("/api/hastar/spel?kommande=1");
+    if (next?.games?.length) {
+      date = next.date;
+      games = next;
+      await alignAnalysis();
+      render();
+      return;
+    }
+  } catch { /* kalendern får vara nere – visa sparad omgång */ }
+  if (state?.analysis?.date) date = state.analysis.date;
+  await loadGames(true);
+}
+
+async function loadGames(snap) {
+  try {
+    const got = await api(`/api/hastar/spel?datum=${date}`);
+    if (snap && !got.error && !(got.games || []).length) {
+      const next = await api(`/api/hastar/spel?kommande=1&fran=${encodeURIComponent(date)}`);
+      if (next?.games?.length) {
+        date = next.date;
+        games = next;
+        await alignAnalysis();
+        render();
+        return;
+      }
+    }
+    games = got;
+    if (snap) await alignAnalysis();
   } catch {
     games = { date, games: [], error: true };
   }
@@ -113,6 +160,7 @@ function controls() {
     ? vgames.map((g) => `<option value="${esc(g.id)}" ${g.id === sel ? "selected" : ""}>${esc(gameName(g.type))} – ${esc(g.track || "")}${g.status === "results" ? " (avgjord)" : ""}</option>`).join("")
     : `<option value="">${games ? (games.error ? "Kunde inte läsa ATG:s kalender" : games.saved ? "Ingen sparad omgång denna dag" : "Inga V-spel denna dag") : "Läser dagens spel …"}</option>`;
   const saved = (state?.index?.analyses || []).filter((x) => !x.backtestOnly).slice(0, 30);
+  const pending = sel && a?.id && sel !== a.id;
   return `<div class="hs-controls" role="group" aria-label="Välj omgång">
     <label>Datum <input type="date" id="hs-date" class="ds-input" value="${esc(date)}" /></label>
     <label>Spel <select id="hs-game" class="ds-select">${opts}</select></label>
@@ -121,6 +169,7 @@ function controls() {
     <button type="button" class="ds-btn ds-btn--secondary" data-act="resultat" ${busy ? "disabled" : ""} title="Hämtar resultat för sparade omgångar och uppdaterar backtesten">Uppdatera resultat</button>
     ${saved.length > 1 ? `<label>Sparade <select id="hs-saved" class="ds-select">${saved.map((x) => `<option value="${esc(x.id)}" ${x.id === a?.id ? "selected" : ""}>${esc(x.date)} ${esc(gameName(x.type))} ${esc(x.track || "")}</option>`).join("")}</select></label>` : ""}
   </div>
+  ${pending ? `<p class="hs-msg">Den valda omgången är inte hämtad än. Tryck Hämta data för att bygga system på den.</p>` : ""}
   ${busy ? `<p class="hs-msg is-busy" role="status"><span class="hs-spin" aria-hidden="true"></span>${esc(busy)}</p>` : ""}
   ${msg ? `<p class="hs-msg is-${msg.kind}" role="${msg.kind === "error" ? "alert" : "status"}">${esc(msg.text)}</p>` : ""}`;
 }
@@ -363,6 +412,7 @@ function systemBuilder(a) {
   const num = (k, label, title) => `<label title="${esc(title)}">${label} <input type="number" min="0" class="ds-input" data-cond="${k}" value="${esc(c[k])}" /></label>`;
   return `<section class="hs-system" aria-label="Systembyggare">
     <h3>Systembyggare <small>${esc(gameName(a.type))} · ${dec(price)} kr/rad</small></h3>
+    ${ownPanel(a, locked)}
     <div class="hs-value-explain">
       <p><b>Vad betyder värde?</b> En häst har <b>värde</b> när den vinner oftare än folket tror – modellens chans är minst 15 % högre än strecket.
       Exempel: chans 20 %, streck 10 %. Vinner hästen delar du potten med färre, så utdelningen blir högre än risken motiverar.
@@ -403,7 +453,6 @@ function systemBuilder(a) {
       <p class="hs-lead">Rader som klarar villkoren sorteras efter värdeviktad sannolikhet, de bästa behålls tills budgeten är slut.</p>`
         : ""
     }
-    ${ownPanel(a, locked)}
     ${body}
   </section>`;
 }
@@ -731,18 +780,23 @@ const methodBlock = (a) => {
 // ---------- Rendering ----------
 function render() {
   if (view.hidden) return;
+  const y = window.scrollY;
+  ignoreToggleUntil = Date.now() + 80;
   const a = state?.analysis;
   const head = `<header class="hs-head"><h2>Hästar${a ? ` <small>${esc(gameName(a.type))} · ${esc(a.track)} · ${esc(a.date)}</small>` : ""}</h2>${controls()}</header>`;
   if (!a) {
     view.innerHTML = `${head}<details class="hs-kort hs-fold"><summary><h3>Kort sagt</h3></summary><p>${
       state ? "Ingen omgång är hämtad än. Välj datum och spel och tryck <b>Hämta data</b>." : "Läser sparad analys …"
     }</p></details>${help()}`;
-    return;
-  }
-  view.innerHTML = `${head}${kortSagt(a)}${help()}${a.type === "dd" ? "" : highlights(a)}${systemBuilder(a)}
+  } else {
+    view.innerHTML = `${head}${kortSagt(a)}${help()}${a.type === "dd" ? "" : highlights(a)}${systemBuilder(a)}
     <nav class="hs-jump" aria-label="Avdelningar">${a.races.map((r) => `<a href="#hs-avd-${r.leg}">Avd ${r.leg}</a>`).join("")}${a.dd ? `<a href="#hs-dd">DD</a>` : ""}</nav>
     <section class="hs-races">${a.races.map((r, i) => race(r, a, { next: a.races[i + 1]?.leg ?? null })).join("")}</section>
     <div id="hs-dd">${ddBlock(a)}</div>${followBlock(state.uppfoljning)}${backtestBlock(state.backtest)}${methodBlock(a)}`;
+  }
+  const keep = () => window.scrollTo(0, y);
+  keep();
+  requestAnimationFrame(keep);
 }
 
 // ---------- Händelser ----------
@@ -797,7 +851,10 @@ view.addEventListener("click", (ev) => {
     return;
   }
   if (t.dataset.ownLeg) {
-    const id = state.analysis.id;
+    ev.preventDefault();
+    ownOpen = true;
+    const id = state?.analysis?.id;
+    if (!id) return;
     const leg = Number(t.dataset.ownLeg);
     const nr = Number(t.dataset.ownNr);
     const mine = (own[id] ||= {});
@@ -840,6 +897,7 @@ view.addEventListener("click", (ev) => {
 view.addEventListener(
   "toggle",
   (ev) => {
+    if (Date.now() < ignoreToggleUntil) return;
     const d = ev.target;
     if (d.matches?.("details.hs-egna")) ownOpen = d.open;
     if (!d.matches?.("details.hs-race[id]")) return;
@@ -855,7 +913,7 @@ view.addEventListener("change", (ev) => {
     date = t.value || today();
     games = null;
     render();
-    loadGames();
+    loadGames(true);
   } else if (t.id === "hs-saved") load(t.value);
   else if (t.id === "hs-game" && games?.saved && t.value) load(t.value); // webbversionen: listan är sparade omgångar
   else if (t.id === "hs-budget") {
@@ -884,8 +942,7 @@ function onView(v) {
   if (v !== "hastar") return;
   if (!loaded) {
     loaded = true;
-    render();
-    load();
+    boot();
   } else render();
 }
 window.addEventListener("betting:view", (e) => onView(e.detail));
