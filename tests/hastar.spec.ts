@@ -256,6 +256,44 @@ test.describe('trav-model: analyzeRace och analyzeGame', () => {
     const a = analyzeGame(normalizeGame(game()));
     expect(a.folketMissar).toHaveProperty('missade');
     expect(a.folketMissar).toHaveProperty('overspelade');
+    expect(a.folketMissar).toHaveProperty('odds');
+  });
+
+  test('vad folket missar: vinnaroddsen ≥ 1,6 × strecket och streck under 15 % markeras', async () => {
+    const { pickFolketMissar, FOLKET_MISSAR } = await model();
+    expect(FOLKET_MISSAR.odds).toMatchObject({ streckMax: 0.15, kvot: 1.6 });
+    const h = (nr: number, p: number, s: number, oddsP: number | null) => ({ nr, horse: `H${nr}`, scratched: false, p, marketPct: s, marketP: oddsP, marketSource: 'streck' });
+    const fm = pickFolketMissar([{ leg: 2, number: 3, horses: [
+      h(1, 0.05, 0.05, 0.09), // 1,8×: med
+      h(2, 0.08, 0.1, 0.17), // 1,7×: med
+      h(3, 0.05, 0.05, 0.07), // 1,4×: inte
+      h(4, 0.2, 0.16, 0.4), // streck 16 %: inte
+      h(5, 0.05, 0.05, null), // utan odds: inte
+    ] }]);
+    expect(fm.odds.map((x: any) => x.nr)).toEqual([2, 1]); // sorterat på chansen
+    expect(fm.odds[1]).toMatchObject({ leg: 2, raceNr: 3, oddsP: 0.09, oddsKvot: 1.8 });
+  });
+
+  test('öppet lopp (13+ hästar och volte eller tillägg): favoritens chans × OPEN_FAV.mul, summan 1', async () => {
+    const F = await import(pathToFileURL(path.join(ROOT, 'scripts', 'lib', 'trav-features.mjs')).href);
+    expect(F.OPEN_FAV).toEqual({ minField: 13, mul: 0.9 });
+    const field = (n: number, method: string, tillagg = false) => ({ startMethod: method, distance: 2140,
+      starts: Array.from({ length: n }, (_, i) => ({ nr: i + 1, scratched: false, distance: tillagg && i >= n - 3 ? 2160 : 2140 })) });
+    expect(F.isOpenRace(field(13, 'volte'))).toBe(true);
+    expect(F.isOpenRace(field(13, 'auto', true))).toBe(true);
+    expect(F.isOpenRace(field(13, 'auto'))).toBe(false); // auto utan tillägg
+    expect(F.isOpenRace(field(12, 'volte'))).toBe(false); // för litet fält
+    const r = field(13, 'volte');
+    const lq = Array.from({ length: 13 }, (_, i) => (i === 4 ? -0.7 : -3)); // nr 5 är folkets favorit
+    const p0 = Array.from({ length: 13 }, (_, i) => (i === 4 ? 0.4 : 0.05));
+    const p = F.adjustOpenFav(r, { n: 13, lq, hasMarket: true }, [...p0]);
+    expect(p[4]).toBeCloseTo(0.36, 6);
+    expect(sum(p)).toBeCloseTo(1, 9);
+    expect(p[0] / p[1]).toBeCloseTo(1, 9); // övriga behåller sin inbördes ordning
+    expect(p[0]).toBeGreaterThan(0.05);
+    // Inte öppet lopp eller ingen marknad: oförändrat
+    expect(F.adjustOpenFav(field(10, 'volte'), { n: 13, lq, hasMarket: true }, [...p0])).toEqual(p0);
+    expect(F.adjustOpenFav(r, { n: 13, lq, hasMarket: false }, [...p0])).toEqual(p0);
   });
 
   test('Dagens Dubbel: sannolikhet = p1 × p2, fair = 1/p, EV = p × odds − 1', async () => {
@@ -404,6 +442,34 @@ test.describe('hast-engine: systembyggaren', () => {
     expect(buildSystem(legs, { budget: 5000, price: 0.25, alpha: 0, spikes: null }).legs.filter((l: any) => l.horses.length === 1).length).toBeLessThan(2);
   });
 
+  test('bygg eget system: egna spikar och egna hästar hålls, systemet fyller i resten och lägger till spikar som fattas', async () => {
+    const { buildSystem, buildBigSystem, reduceSystem } = await engine();
+    const legs = [0.62, 0.3, 0.55, 0.33, 0.4, 0.35, 0.31, 0.45].map((fav, i) => ({
+      leg: i + 1, number: i + 1,
+      horses: [fav, (1 - fav) * 0.4, (1 - fav) * 0.3, (1 - fav) * 0.2, (1 - fav) * 0.1].map((p, j) => ({ nr: j + 1, p, marketPct: j === 0 ? Math.min(0.8, fav * 1.1) : p * 0.95 })),
+    }));
+    const spikes = (s: any) => s.legs.filter((l: any) => l.horses.length === 1).map((l: any) => l.leg).sort();
+    // tre egna spikar (även skrällar) + en avdelning med exakt tre egna hästar: inga fler spikar läggs till
+    const locked = { 2: [4], 4: [5], 6: [3], 7: [2, 3, 5] };
+    for (const s of [
+      buildSystem(legs, { budget: 500, price: 0.25, alpha: 0, minTop: 50000, topShare: 0.26, locked }),
+      buildBigSystem(legs, { budget: 500, price: 0.25, minTop: 50000, topShare: 0.26, locked }),
+      reduceSystem(legs, {}, { budget: 500, price: 0.25, minTop: 50000, topShare: 0.26, locked }).base,
+    ]) {
+      expect(s.legs[1].horses).toEqual([4]);
+      expect(s.legs[3].horses).toEqual([5]);
+      expect(s.legs[5].horses).toEqual([3]);
+      expect([...s.legs[6].horses].sort()).toEqual([2, 3, 5]);
+      expect(spikes(s)).toEqual([2, 4, 6]);
+      for (const l of s.legs) if (![2, 4, 6].includes(l.leg)) expect(l.horses.length).toBeGreaterThanOrEqual(2);
+    }
+    // en egen spik: systemet lägger till en till, totalt två
+    const one = buildSystem(legs, { budget: 500, price: 0.25, alpha: 0, locked: { 5: [2] } });
+    expect(one.legs[4].horses).toEqual([2]);
+    expect(spikes(one)).toHaveLength(2);
+    expect(one.cost).toBeLessThanOrEqual(500);
+  });
+
   test('reducerat system: villkoren håller på varje rad och budgeten håller', async () => {
     const { reduceSystem, rowsToText, SKRALL_MAX } = await engine();
     const legs = legsFixture();
@@ -445,6 +511,25 @@ test.describe('hast-engine: systembyggaren', () => {
     for (const row of r.rows) expect(top(row)).toBeGreaterThanOrEqual(limit);
     // tomt fält = inget villkor
     expect(reduceSystem(legs, { minRowTop: '' }, { budget: 50, price: 0.5, expand: 8, topShare: 0.2 }).passed).toBe(free.passed);
+  });
+
+  test('50 000-systemet behåller raderna med högst chans (RAD_TOP_SORT = p), annars värdevikten', async () => {
+    const { reduceSystem, RAD_TOP_SORT } = await engine();
+    expect(RAD_TOP_SORT).toBe('p');
+    const legs = legsFixture();
+    const opts = { budget: 5, price: 0.5, expand: 8, topShare: 0.2, alpha: 2 };
+    const pRow = (r: number[]) => r.reduce((p, nr, i) => p * legs[i].horses.find((h: any) => h.nr === nr).p, 1);
+    const byP = reduceSystem(legs, {}, { ...opts, sortBy: 'p' });
+    const byW = reduceSystem(legs, {}, opts);
+    expect(byP.count).toBe(10);
+    expect(byP.total).toBeGreaterThan(10);
+    // Alla rader i utgångssystemet: varje behållen rad har minst lika hög chans som varje bortvald
+    const all = byP.base.legs.reduce((acc: number[][], l: any) => acc.flatMap((r) => l.horses.map((nr: number) => [...r, nr])), [[]]);
+    const keep = new Set(byP.rows.map(String));
+    const minKept = Math.min(...byP.rows.map(pRow));
+    const maxDropped = Math.max(...all.filter((r: number[]) => !keep.has(String(r))).map(pRow));
+    expect(minKept).toBeGreaterThanOrEqual(maxDropped - 1e-12);
+    expect(byP.hit).toBeGreaterThanOrEqual(byW.hit - 1e-12);
   });
 
   test('ATG-fil: rader slås ihop till färre kuponger utan att raderna ändras', async () => {
@@ -550,7 +635,8 @@ test.describe('GUI: fliken Hästar', () => {
       await expect(fm.locator('.hs-lead')).toBeHidden();
       await fm.locator('summary').click();
       await expect(fm.locator('.hs-lead')).toContainText('Kort sagt');
-      await expect(fm.locator('h5')).toHaveCount(2);
+      // underspelade, överspelade favoriter och vinnaroddsen tror mer
+      await expect(fm.locator('h5')).toHaveCount(3);
     }
     await expect(page.locator('main')).toBeHidden();
     await expect(page.locator('#stryktips-view')).toBeHidden();
@@ -742,6 +828,39 @@ test.describe('GUI: fliken Hästar', () => {
     await page.click('[data-mode="rad50k"]');
     await page.click('[data-mode="reducerat"]');
     await expect(page.locator('[data-cond="minRowTop"]')).toHaveValue('');
+  });
+
+  test('bygg eget system: klickad häst blir din spik, flera hästar spelas exakt, Rensa tar bort', async ({ page }) => {
+    const state = await (await page.request.get(base + '/api/hastar')).json();
+    test.skip(!state.analysis || state.analysis.type === 'dd', 'Ingen sparad V-spelsanalys i data/hastar');
+    await page.goto(base + '/hastar');
+    await expect(page.locator('.hs-egna')).toBeVisible({ timeout: 20_000 });
+    await page.locator('.hs-egna > summary').click();
+    await expect(page.locator('.hs-egna .hs-kort-inline')).toContainText('Kort sagt:');
+    const [r1, r2] = state.analysis.races;
+    const live = (r: any) => r.horses.filter((h: any) => !h.scratched && h.p != null).sort((x: any, y: any) => x.p - y.p);
+    // lägst chans i avdelning 1 som egen spik – det skulle systemet aldrig välja själv
+    const spik = live(r1)[0].nr;
+    await page.click(`[data-own-leg="${r1.leg}"][data-own-nr="${spik}"]`);
+    await expect(page.locator('.hs-egna')).toHaveAttribute('open', '');
+    const rad1 = page.locator(`#hs-rad-${r1.leg}`);
+    await expect(rad1.locator('.hs-spik')).toHaveText('Din spik');
+    await expect(rad1.locator('.hs-pick-nr')).toHaveText([String(spik)]);
+    // två egna hästar i avdelning 2 spelas exakt
+    const two = live(r2).slice(0, 2).map((h: any) => h.nr);
+    for (const nr of two) await page.click(`[data-own-leg="${r2.leg}"][data-own-nr="${nr}"]`);
+    const nrs = (await page.locator(`#hs-rad-${r2.leg} .hs-pick-nr`).allInnerTexts()).map(Number).sort((x, y) => x - y);
+    expect(nrs).toEqual([...two].sort((x: number, y: number) => x - y));
+    await expect(page.locator(`#hs-rad-${r2.leg} .hs-own-tag`)).toBeVisible();
+    // systemet har fortfarande minst två spikar och håller budgeten (500 kr förval)
+    expect(await page.locator('.hs-sys-leg.is-spik').count()).toBeGreaterThanOrEqual(2);
+    const txt = await page.locator('.hs-sys-sum:not(.hs-sys-top):not(.hs-sys-skrall)').innerText();
+    expect(Number(txt.match(/([\d\s]+)\s*kr/)![1].replace(/\s/g, ''))).toBeLessThanOrEqual(500);
+    // klick igen tar bort valet, Rensa tar bort allt
+    await page.click(`[data-own-leg="${r1.leg}"][data-own-nr="${spik}"]`);
+    await expect(rad1).not.toHaveClass(/is-own/);
+    await page.click('[data-act="own-clear"]');
+    await expect(page.locator('.hs-sys-leg.is-own')).toHaveCount(0);
   });
 
   test('mobil: ingen sidscroll i sidled', async ({ page }) => {

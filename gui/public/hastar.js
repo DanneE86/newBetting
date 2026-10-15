@@ -1,6 +1,6 @@
 // Flik "Hästar": V75/V85/V86/V64/V65/GS75 + Dagens Dubbel från ATG (data från /api/hastar, se gui/hastar-routes.mjs).
 // Modellen räknas i scripts/lib/trav-model.mjs när data hämtas; systembyggaren (hast-engine.js) körs här i webbläsaren.
-import { BUDGETS, rowPrice, TOP_SHARE, TOP_LEVELS, MIN_TOP, BIG_TARGET, RAD_TOP, RAD_TOP_MIN_BUDGET, SKRALL_MAX, SKRALL_MIN_BUDGET, ATG_FILE_TYPES, atgFileName, atgFileXml, atgGameUrl, buildBigSystem, buildSystem, compressRows, couponRows, couponText, defaultAlpha, reduceSystem } from "/hast-engine.js";
+import { BUDGETS, rowPrice, TOP_SHARE, TOP_LEVELS, MIN_TOP, BIG_TARGET, RAD_TOP, RAD_TOP_MIN_BUDGET, RAD_TOP_SORT, SKRALL_MAX, SKRALL_MIN_BUDGET, ATG_FILE_TYPES, atgFileName, atgFileXml, atgGameUrl, buildBigSystem, buildSystem, compressRows, SPIKES, couponRows, couponText, defaultAlpha, reduceSystem } from "/hast-engine.js";
 
 const view = document.getElementById("hastar-view");
 const GAME_NAME = { dd: "Dagens Dubbel" };
@@ -19,6 +19,9 @@ const alphaFor = (type) => (sys.focus === "standard" ? defaultAlpha(type) : ALPH
 const sys = { budget: 500, mode: "stor", expand: 4, focus: "standard", minTop: MIN_TOP, ibWeight: 0, conds: { minA: "", maxA: "", minSkrall: "", maxSkrall: "", minStreck: "", maxStreck: "", minRowTop: "" } };
 let lastRows = null;
 let lastLegs = null; // utgångs-/raka systemets hästar per avdelning, för kupongmallen
+// Egna val per omgång (id): { [avd]: [nr, ...] }. En häst = egen spik, flera = exakt de hästarna, inget = systemet väljer.
+const own = {};
+let ownOpen = false; // Bygg eget system öppen mellan omritningar
 const openRaces = new Set(); // öppna avdelningar (id), så att de står kvar öppna när sidan ritas om
 const FOCUS_TEXT = {
   standard: "Standard: V85 och V75 spelas med Hög, övriga spel med Träff. Bakkört V75 2021–2025 och V85 (444 omgångar): Hög gav mer tillbaka än Normal på 500–2000 kr, lika många alla rätt och fler skrällvinnare i systemet. Alla favoriter vinner nästan aldrig (0 av 74 V85-omgångar) – det vanliga är 2–4.",
@@ -225,13 +228,16 @@ function ibSkrallCard(a) {
 const fmRow = (h) =>
   `<li><span class="hs-leg">Avd ${h.leg}</span> ${h.nr} ${esc(h.horse)} · modell <b>${pct(h.p)}</b> · folket ${pct(h.marketPct)} · <b>${dec(h.kvot)}×</b></li>`;
 
+const oddsRow = (h) =>
+  `<li><span class="hs-leg">Avd ${h.leg}</span> ${h.nr} ${esc(h.horse)} · vinnarodds <b>${pct(h.oddsP)}</b> · folket ${pct(h.marketPct)} · <b>${dec(h.oddsKvot)}×</b> · modell ${pct(h.p)}</li>`;
+
 /** Vad folket missar (FOLKET_MISSAR i trav-model.mjs), bakkört ärligt 658 omgångar 2023–2026, plus alla fyra år. */
 function folketMissarCard(a) {
   const fm = a.folketMissar;
   if (!fm) return "";
-  const { missade = [], overspelade = [] } = fm;
+  const { missade = [], overspelade = [], odds = [] } = fm;
   return `<details class="hs-card hs-card-list hs-card-wide hs-folket hs-fold" aria-label="Vad folket missar">
-    <summary><h4>Vad folket missar <span class="hs-fold-n">${missade.length + overspelade.length}</span></h4></summary>
+    <summary><h4>Vad folket missar <span class="hs-fold-n">${missade.length + overspelade.length + odds.length}</span></h4></summary>
     <p class="hs-lead">Kort sagt: här tycker modellen något annat än folket. Bakkört på 658 omgångar 2023–2026 (modellen tränad bara på åren före):
       de underspelade vann <b>42 % oftare</b> än strecket sa, de överspelade favoriterna <b>19 % mer sällan</b>. Det höll alla fyra åren.</p>
     <div class="hs-folket-cols">
@@ -239,6 +245,8 @@ function folketMissarCard(a) {
         ${missade.length ? `<ul>${missade.map(fmRow).join("")}</ul>` : "<p>Ingen häst i den här omgången.</p>"}</section>
       <section><h5>Överspelade favoriter <small>streck ≥ 20 %, modellen under 0,8 × strecket · ${overspelade.length} st</small></h5>
         ${overspelade.length ? `<ul>${overspelade.map(fmRow).join("")}</ul><p class="hs-note">De vinner ändå ungefär var fjärde gång – gardera hellre än spika.</p>` : "<p>Ingen favorit i den här omgången.</p>"}</section>
+      <section class="hs-folket-odds"><h5>Vinnaroddsen tror mer <small>streck under 15 %, vinnaroddsen ger ≥ 1,6 × strecket · ${odds.length} st</small></h5>
+        ${odds.length ? `<ul>${odds.map(oddsRow).join("")}</ul><p class="hs-note">Historiskt vann de 1,5 × oftare än strecket sa. Bara markering – kolla igen nära start, oddsen rör sig.</p>` : "<p>Ingen häst i den här omgången.</p>"}</section>
     </div></details>`;
 }
 
@@ -277,6 +285,39 @@ const skrallLine = (s, legCount) =>
     ? ""
     : `<p class="hs-sys-sum hs-sys-skrall">Skrällhästar (under ${SKRALL_MAX * 100} % streck) i <b>${s.skrallLegs} av ${legCount}</b> avdelningar
     <small>(historiskt vinns ungefär var fjärde avdelning av en sådan häst, oftast 2 per omgång – men de är många per lopp, så systemet tar bara dem modellen tror mest på)</small></p>`;
+/** Egna val som motorns locked, strukna hästar bortplockade. */
+function ownLocked(a) {
+  const mine = own[a.id] || {};
+  const out = {};
+  for (const r of a.races) {
+    const ok = new Set(r.horses.filter((h) => !h.scratched && h.p != null).map((h) => h.nr));
+    const nrs = (mine[r.leg] || []).filter((nr) => ok.has(nr));
+    if (nrs.length) out[r.leg] = nrs;
+  }
+  return out;
+}
+
+/** Bygg eget system: klicka i egna spikar/hästar per avdelning, resten väljer systemet. */
+function ownPanel(a, locked) {
+  const n = Object.keys(locked).length;
+  const spikar = Object.values(locked).filter((x) => x.length === 1).length;
+  return `<details class="hs-egna hs-fold"${ownOpen ? " open" : ""}>
+    <summary><h4>Bygg eget system <span class="hs-fold-n">${n ? `${n} egna` : "auto"}</span></h4></summary>
+    <p class="hs-kort-inline"><b>Kort sagt:</b> klicka på en häst för att göra den till din spik. Klickar du på flera i samma avdelning spelas exakt de hästarna.
+      Avdelningar du inte rör fyller systemet i själv med modellen, inom budgeten.
+      Systemet har alltid minst ${SPIKES} spikar – väljer du färre lägger det till de som fattas${spikar ? ` (du har ${spikar})` : ""}.</p>
+    <p class="hs-lead">Siffran under numret är modellens chans. Grön kant = stark vinstkandidat, blå = utmanare, gul = skräll.</p>
+    <div class="hs-egna-legs">${a.races.map((r) => {
+      const mine = locked[r.leg] || [];
+      const hs = r.horses.filter((h) => !h.scratched && h.p != null).sort((x, y) => x.nr - y.nr);
+      return `<div class="hs-egna-leg" data-own-row="${r.leg}"><span class="hs-leg">Avd ${r.leg}</span>
+        <span class="hs-egna-state">${mine.length === 1 ? "Din spik" : mine.length ? `${mine.length} egna` : "Auto"}</span>
+        <div class="hs-egna-picks">${hs.map((h) => `<button type="button" class="hs-egna-pick rank-${h.rank}" data-own-leg="${r.leg}" data-own-nr="${h.nr}" aria-pressed="${mine.includes(h.nr)}" title="${esc(`${h.nr} ${h.horse} · chans ${pct(h.p)} · streck ${pct(h.marketPct)}`)}"><b>${h.nr}</b><small>${pct(h.p, 0)}</small></button>`).join("")}</div></div>`;
+    }).join("")}</div>
+    ${n ? `<button type="button" class="ds-btn ds-btn--secondary ds-btn--sm" data-act="own-clear">Rensa egna val</button>` : ""}
+  </details>`;
+}
+
 function systemBuilder(a) {
   if (a.type === "dd" || !a.races.length) return "";
   const price = rowPrice(a.type, a.date);
@@ -285,32 +326,35 @@ function systemBuilder(a) {
   const legs = blendLegs(a.races.map((r) => ({ leg: r.leg, number: r.number, horses: r.horses })), ibW);
   const topShare = TOP_SHARE[a.type] ?? 0.25;
   const byLeg = Object.fromEntries(a.races.map((r) => [r.leg, Object.fromEntries(r.horses.map((h) => [h.nr, h]))]));
+  const locked = ownLocked(a);
   let body;
   lastRows = null;
   lastLegs = null;
   try {
     if (sys.mode === "stor") {
-      const s = buildBigSystem(legs, { budget: sys.budget, price, minTop: sys.minTop, topShare, target: Math.max(BIG_TARGET, sys.minTop) });
+      const s = buildBigSystem(legs, { budget: sys.budget, price, minTop: sys.minTop, topShare, target: Math.max(BIG_TARGET, sys.minTop), locked });
       lastLegs = s.legs;
-      body = systemTable(s.legs, byLeg) + `<p class="hs-sys-sum"><b>${s.rows.toLocaleString("sv-SE")} rader · ${kr(s.cost)}</b> ·
+      body = systemTable(s.legs, byLeg, locked) + `<p class="hs-sys-sum"><b>${s.rows.toLocaleString("sv-SE")} rader · ${kr(s.cost)}</b> ·
         alla rätt: ${pct(s.hit, 2)} enligt modellen, ${pct(s.marketHit, 2)} enligt strecket${s.big ? ` ·
         <span title="Hur stor del av målet systemet väntas ge vid alla rätt, enligt modellen och strecket. Rader under målet räknas med sin andel, rader över målet som 1.">mål ${kr(s.target)}: <b>${pct(s.bigShare, 2)}</b></span>` : ""}</p>`
         + (s.big ? "" : `<p class="hs-msg">Budgeten räcker inte för ett storvinstsystem som klarar högsta rad-spärren – det här är träffsystemet.</p>`) + topLine(s, a) + skrallLine(s, legs.length);
     } else if (sys.mode === "rakt") {
-      const s = buildSystem(legs, { budget: sys.budget, price, alpha: alphaFor(a.type), minTop: sys.minTop, topShare });
+      const s = buildSystem(legs, { budget: sys.budget, price, alpha: alphaFor(a.type), minTop: sys.minTop, topShare, locked });
       lastLegs = s.legs;
-      body = systemTable(s.legs, byLeg) + `<p class="hs-sys-sum"><b>${s.rows.toLocaleString("sv-SE")} rader · ${kr(s.cost)}</b> ·
+      body = systemTable(s.legs, byLeg, locked) + `<p class="hs-sys-sum"><b>${s.rows.toLocaleString("sv-SE")} rader · ${kr(s.cost)}</b> ·
         alla rätt: ${pct(s.hit, 2)} enligt modellen, ${pct(s.marketHit, 2)} enligt strecket ·
         <span title="Modellens träffchans delat med folkets. Över 1 = systemet träffar oftare än folket tror, alltså högre utdelning när det sitter.">värdeindex <b>${dec(s.valueIndex)}</b></span></p>` + topLine(s, a) + skrallLine(s, legs.length);
     } else {
-      const r = reduceSystem(legs, sys.conds, { budget: sys.budget, price, expand: sys.expand, alpha: alphaFor(a.type), minTop: sys.minTop, topShare });
+      const r = reduceSystem(legs, sys.conds, { budget: sys.budget, price, expand: sys.expand, alpha: alphaFor(a.type), minTop: sys.minTop, topShare, sortBy: isRadTop() ? RAD_TOP_SORT : "w", locked });
       lastRows = r.rows;
       lastLegs = r.base.legs;
-      body = systemTable(r.base.legs, byLeg) + `<p class="hs-sys-sum">Utgångssystem ${r.total.toLocaleString("sv-SE")} rader (${kr(r.total * price)}) ·
+      body = systemTable(r.base.legs, byLeg, locked) + `<p class="hs-sys-sum">Utgångssystem ${r.total.toLocaleString("sv-SE")} rader (${kr(r.total * price)}) ·
         ${r.passed.toLocaleString("sv-SE")} klarar villkoren · <b>${r.count.toLocaleString("sv-SE")} rader spelas · ${kr(r.cost)}</b> ·
         alla rätt: ${pct(r.hit, 2)} enligt modellen</p>
         ${r.count ? "" : `<p class="hs-msg is-error">Inga rader klarar villkoren – lätta på dem.</p>`}` + topLine(r, a) + skrallLine(r.base, legs.length);
     }
+    const lockedRows = Object.values(locked).reduce((x, l) => x * l.length, 1);
+    if (lockedRows * price > sys.budget) body = `<p class="hs-msg is-error hs-egna-over" role="status">Dina egna val ger ${lockedRows.toLocaleString("sv-SE")} rader (${kr(lockedRows * price)}) redan innan systemet fyller i resten – mer än budgeten. Ta bort hästar eller höj budgeten.</p>` + body;
     body += atgBlock(a);
   } catch (e) {
     body = `<p class="hs-msg is-error">${esc(e.message)}</p>`;
@@ -359,6 +403,7 @@ function systemBuilder(a) {
       <p class="hs-lead">Rader som klarar villkoren sorteras efter värdeviktad sannolikhet, de bästa behålls tills budgeten är slut.</p>`
         : ""
     }
+    ${ownPanel(a, locked)}
     ${body}
   </section>`;
 }
@@ -410,12 +455,12 @@ const isSkrall3 = () => sys.mode === "reducerat" && sys.expand === 16 && String(
 /** Är 50 000-systemets förval inställt (reducerat, utgång 16 ×, varje rad minst RAD_TOP kr)? */
 const isRadTop = () => sys.mode === "reducerat" && sys.expand === 16 && String(sys.conds.minRowTop) === String(RAD_TOP) && !sys.conds.minSkrall;
 
-function systemTable(legs, byLeg) {
+function systemTable(legs, byLeg, locked = {}) {
   return `<div class="hs-sys-legs">${legs
     .map((l) => {
       const hs = l.horses.map((nr) => byLeg[l.leg][nr]);
-      return `<div class="hs-sys-leg${hs.length === 1 ? " is-spik" : ""}" id="hs-rad-${l.leg}">
-        <div class="hs-sys-leg-head"><a class="hs-leg hs-leg-link" href="#hs-avd-${l.leg}" title="Visa avdelning ${l.leg}">Avd ${l.leg} ›</a>${hs.length === 1 ? `<span class="hs-spik">Spik</span>` : `<span class="hs-sys-count">${hs.length} hästar</span>`}</div>
+      return `<div class="hs-sys-leg${hs.length === 1 ? " is-spik" : ""}${locked[l.leg] ? " is-own" : ""}" id="hs-rad-${l.leg}">
+        <div class="hs-sys-leg-head"><a class="hs-leg hs-leg-link" href="#hs-avd-${l.leg}" title="Visa avdelning ${l.leg}">Avd ${l.leg} ›</a>${hs.length === 1 ? `<span class="hs-spik">${locked[l.leg] ? "Din spik" : "Spik"}</span>` : `<span class="hs-sys-count">${hs.length} hästar</span>`}${locked[l.leg] && hs.length > 1 ? `<span class="hs-own-tag">dina val</span>` : ""}</div>
         <div class="hs-sys-picks">${hs.map((h) => {
           const v = isValueHorse(h);
           const streck = h.marketPct != null ? `<span class="hs-pick-streck">${pct(h.marketPct)}</span>` : "";
@@ -751,6 +796,20 @@ view.addEventListener("click", (ev) => {
     navigator.clipboard?.writeText(txt).then(done, () => {});
     return;
   }
+  if (t.dataset.ownLeg) {
+    const id = state.analysis.id;
+    const leg = Number(t.dataset.ownLeg);
+    const nr = Number(t.dataset.ownNr);
+    const mine = (own[id] ||= {});
+    const cur = mine[leg] || [];
+    mine[leg] = cur.includes(nr) ? cur.filter((x) => x !== nr) : [...cur, nr];
+    if (!mine[leg].length) delete mine[leg];
+    return render();
+  }
+  if (t.dataset.act === "own-clear") {
+    delete own[state.analysis.id];
+    return render();
+  }
   if (t.dataset.budget) {
     sys.budget = Number(t.dataset.budget);
     return render();
@@ -782,6 +841,7 @@ view.addEventListener(
   "toggle",
   (ev) => {
     const d = ev.target;
+    if (d.matches?.("details.hs-egna")) ownOpen = d.open;
     if (!d.matches?.("details.hs-race[id]")) return;
     if (d.open) openRaces.add(d.id);
     else openRaces.delete(d.id);
