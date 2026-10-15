@@ -3870,6 +3870,27 @@ test.describe('databas: översättning från filerna', () => {
     expect(u[0]).toMatchObject({ spel_id: 'V86_y', variant: 'standard', budget_kr: 500, kostnad_kr: 480, bast_ratt: 4, netto_kr: -480 });
   });
 
+  test('hästar: Sportinfo-filer blir häst, säsonger, starter och omgång', async () => {
+    const { travsportRader, travsportOmgangRader } = await lib('databas.mjs');
+    const r = travsportRader({ kalla: 'k', hamtad: '2026-10-15', hast: { namn: 'S.G.Empress', id: 'ts787053', segerprocent: 53 }, sasong: [{ ar: '2026', starter: 9 }], starter: [{ datum: '2026-10-17', datum_kod: '261017-5', bana_kod: 'G', distans: '1640' }, { datum_kod: '260101-1', bana_kod: 'S', distans: '2140 tl' }] });
+    expect(r.hast).toEqual({ hast_id: 787053, ts_id: 'ts787053', namn: 'S.G.Empress', segerprocent: 53, kalla: 'k', hamtad: '2026-10-15' });
+    expect(r.sasonger).toEqual([{ hast_id: 787053, ar: '2026', starter: 9 }]);
+    expect(r.starter.map((x: any) => [x.hast_id, x.datum_kod, x.distans])).toEqual([[787053, '261017-5', 1640], [787053, '260101-1', '2140 tl']]);
+    expect(travsportRader({ hast: {} })).toEqual({ hast: null, sasonger: [], starter: [] });
+    const o = travsportOmgangRader({ spel_id: 'V85_x', spelform: 'V85', datum: 'd', bana: 'Gävle', hastar: [{ avdelning: 2, startnummer: 7, hast: { id: 'ts772022', namn: 'Zätamustangen' } }], saknas: [{ avdelning: 1, startnummer: 2, id: 'ts787053', namn: 'S.G.Empress' }] });
+    expect(o.map((x: any) => [x.avdelning, x.startnummer, x.hast_id, x.hast, x.hamtad])).toEqual([[2, 7, 772022, 'Zätamustangen', 1], [1, 2, 787053, 'S.G.Empress', 0]]);
+    expect(o[0]).toMatchObject({ spel_id: 'V85_x', spelform: 'V85', bana: 'Gävle' });
+  });
+
+  test('hästar: Sportinfos tävlingsdag blir lopp, tempo och målordning', async () => {
+    const { sportinfoLoppRader } = await lib('databas.mjs');
+    const r = sportinfoLoppRader({ raceday_id: 'ts1', datum: '2026-09-26', bana: 'TESTBANAN', hamtad: 'h', lopp: [{ lopp: 5, distans: 2140, sista500_sek: 70.3, domartexter: ['Nr 8 döms ej.', 'Annat.'], namnda_nr: [8], tempo: [{ meter: 500, km_sek: 69.1, ledare_nr: 1 }], malordning: [{ placering: '1', startnummer: 6, kusk: 'K' }] }] });
+    expect(r.lopp[0]).toEqual({ raceday_id: 'ts1', datum: '2026-09-26', bana: 'TESTBANAN', lopp: 5, distans: 2140, sista500_sek: 70.3, domartexter: 'Nr 8 döms ej.\nAnnat.', namnda_nr: '8', hamtad: 'h' });
+    expect(r.tempo).toEqual([{ raceday_id: 'ts1', lopp: 5, meter: 500, km_sek: 69.1, ledare_nr: 1 }]);
+    expect(r.malordning).toEqual([{ raceday_id: 'ts1', datum: '2026-09-26', lopp: 5, placering: '1', startnummer: 6, kusk: 'K' }]);
+    expect(sportinfoLoppRader({})).toEqual({ lopp: [], tempo: [], malordning: [] });
+  });
+
   test('automatisk ombyggnad: bara databaser som saknas eller är minst 3 dygn gamla', async () => {
     const { databaserAttBygga } = await lib('databas.mjs');
     const nu = Date.parse('2026-10-14T12:00:00Z'), dygn = 864e5;

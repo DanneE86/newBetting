@@ -16,17 +16,25 @@
 //   node scripts/fetch-travsport-hast.mjs ts772022
 //   node scripts/fetch-travsport-hast.mjs --fil data/hastar/travsport/ids.txt
 //   node scripts/fetch-travsport-hast.mjs --dold ts772022
+//   node scripts/fetch-travsport-hast.mjs --omgang V85_2026-10-17_16_5
 //
 // Sparar data/hastar/travsport/<id>.json (gitignorerad). Hoppar över redan sparade
 // om inte --igen anges. Utan id skrivs bara användningen, och inget hämtas.
+// --omgang tar hästarna ur data/hastar/analys/<omgång>.json (ATG:s horseId = ts-id), eller ur
+// ATG:s startlista när analysfilen saknas eller saknar horseId. Flera omgångar skiljs med komma.
+// Varje omgång skrivs dessutom i en fil, data/hastar/travsport/omgang/<omgång>.json, även när
+// körningen avbryts (de som saknas står i "saknas"). En häst som inte går att läsa hoppas över;
+// bara robotkontrollen avbryter körningen.
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { sleep } from "./lib/http.mjs";
-import { extractSportinfo, horseIdFrom, isRobotText, normalizeHorse, scrollStarts } from "./lib/travsport-hast.mjs";
+import { getJson, sleep } from "./lib/http.mjs";
+import { atgOmgang, extractSportinfo, horseIdFrom, isRobotText, normalizeHorse, omgangFil, omgangHastar, scrollStarts } from "./lib/travsport-hast.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const DIR = path.join(ROOT, "data", "hastar", "travsport");
+const ANALYS = path.join(ROOT, "data", "hastar", "analys");
+const ATG = "https://www.atg.se/services/racinginfo/v1/api";
 const args = process.argv.slice(2);
 const arg = (k) => {
   const i = args.indexOf(`--${k}`);
@@ -63,7 +71,7 @@ function idsFromArgs() {
       hoppa = false;
       continue;
     }
-    if (a === "--fil") {
+    if (a === "--fil" || a === "--omgang") {
       hoppa = true;
       continue;
     }
@@ -77,6 +85,7 @@ function usage() {
   log(`Användning:
   node scripts/fetch-travsport-hast.mjs <ts-id eller url> [fler id]
   node scripts/fetch-travsport-hast.mjs --fil <en id eller url per rad>
+  node scripts/fetch-travsport-hast.mjs --omgang <omgång[,omgång …], t.ex. V85_2026-10-17_16_5>
 Flaggor: --igen (hämta om), --dold (inget fönster)
 Utan id hämtas ingenting.`);
 }
@@ -112,7 +121,7 @@ async function oppna(page, id) {
     vis = await sidtext(page);
   }
   if (isRobotText(vis.title, vis.body)) {
-    throw new Error("Sportinfo visar fortfarande robotkontroll. Öppna sidan själv i webbläsaren och kör skriptet senare. Körningen avbryts.");
+    throw Object.assign(new Error("Sportinfo visar fortfarande robotkontroll. Öppna sidan själv i webbläsaren och kör skriptet senare. Körningen avbryts."), { robot: true });
   }
   await page.waitForSelector("h1", { timeout: 20000 });
   await paus(3000, 7000, "Läser sidan innan tabellen tas");
@@ -147,18 +156,59 @@ async function hamtaEn(page, id, { igen }) {
     log(`${id} finns redan, hoppar över (${path.relative(ROOT, fil)})`);
     return;
   }
-  await oppna(page, id);
+  try {
+    await oppna(page, id);
+  } catch (e) {
+    if (e.robot) throw e;
+    log(`${id}: sidan gick inte att läsa (${e.message}), hoppar över`);
+    return;
+  }
   const raw = await lasHast(page);
-  if (!raw.namn) throw new Error(`${id}: sidan saknar hästnamn`);
+  if (!raw.namn) {
+    log(`${id}: sidan saknar hästnamn, hoppar över`);
+    return;
+  }
   const out = normalizeHorse(raw, { id, hamtad: today() });
   fs.mkdirSync(DIR, { recursive: true });
   fs.writeFileSync(fil, JSON.stringify(out, null, 2) + "\n");
   log(`Sparade ${path.relative(ROOT, fil)} (${out.starter.length} starter, ${out.hast.namn})`);
 }
 
+/** Omgångens hästar: vår analysfil om alla hästar har horseId, annars ATG:s startlista (öppna API:t). */
+async function lasAnalys(id) {
+  const fil = path.join(ANALYS, `${id}.json`);
+  const a = fs.existsSync(fil) ? JSON.parse(fs.readFileSync(fil, "utf8")) : null;
+  const utanId = (a?.races || []).some((r) => (r.horses || []).some((h) => !h.scratched && h.horseId == null));
+  if (a && !utanId) return a;
+  log(`${id}: ${a ? "analysfilen saknar horseId" : "ingen analysfil"}, läser startlistan från ATG`);
+  const g = atgOmgang(await getJson(`${ATG}/games/${id}`, { label: "ATG spel" }));
+  if (!g) throw new Error(`ATG har inget spel ${id}`);
+  return g;
+}
+
+/** Alla omgångens sparade hästar i en fil. */
+function sparaOmgang(analys) {
+  const filer = {};
+  for (const h of omgangHastar(analys)) {
+    const f = path.join(DIR, `${h.id}.json`);
+    if (fs.existsSync(f)) filer[h.id] = JSON.parse(fs.readFileSync(f, "utf8"));
+  }
+  const doc = omgangFil(analys, filer, { hamtad: today() });
+  const ut = path.join(DIR, "omgang", `${analys.id}.json`);
+  fs.mkdirSync(path.dirname(ut), { recursive: true });
+  fs.writeFileSync(ut, JSON.stringify(doc, null, 2) + "\n");
+  log(`Sparade ${path.relative(ROOT, ut)} (${doc.hamtade} av ${doc.antal} hästar${doc.saknas.length ? `, ${doc.saknas.length} saknas` : ""})`);
+}
+
 async function main() {
   const filArg = arg("fil");
+  const omgArg = arg("omgang");
+  if (omgArg === true) throw new Error("Ange en omgång efter --omgang");
+  const omgangar = [];
+  for (const id of typeof omgArg === "string" ? omgArg.split(",").map((x) => x.trim()).filter(Boolean) : []) omgangar.push(await lasAnalys(id));
   const ids = idsFromArgs();
+  for (const a of omgangar) for (const h of omgangHastar(a)) if (!ids.includes(h.id)) ids.push(h.id);
+  if (omgangar.length) log(`${omgangar.length} omgångar, ${ids.length} hästar`);
   if (typeof filArg === "string" && !ids.length) {
     console.error("Filen innehåller inga häst-id.");
     process.exit(1);
@@ -174,12 +224,16 @@ async function main() {
     viewport: { width: 1360, height: 900 },
   });
   try {
+    let hamtade = 0;
     for (let i = 0; i < ids.length; i++) {
-      if (i > 0) await paus(20000, 45000, "Väntar innan nästa häst");
+      const finns = fs.existsSync(path.join(DIR, `${ids[i]}.json`)) && !arg("igen");
+      if (hamtade > 0 && !finns) await paus(20000, 45000, "Väntar innan nästa häst");
       await hamtaEn(page, ids[i], { igen: !!arg("igen") });
+      if (!finns) hamtade++;
     }
   } finally {
     await browser.close();
+    for (const a of omgangar) sparaOmgang(a);
   }
 }
 

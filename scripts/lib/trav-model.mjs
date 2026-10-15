@@ -611,14 +611,20 @@ export function pickUpsets(races, limit = 8) {
 export const FOLKET_MISSAR = {
   missad: { streckMin: 0.03, streckMax: 0.2, kvot: 1.5, ae: 1.42 },
   overspelad: { streckMin: 0.2, kvot: 0.8, ae: 0.81 },
+  // Vinnaroddsen mot strecket (2026-10-13, 200 685 hästar 2022–2026): lågt streckad häst där vinnaroddsens chans är
+  // ≥ 1,6 × strecket vann 1,32 × modellen och 1,54 × folket (z 13), även i avd 1. Bara markering (2026-10-15) – modellen
+  // använder strecket, och oddsen vid inlämning är för få sparade för en ärlig bakkörning i kronor.
+  odds: { streckMax: 0.15, kvot: 1.6, ae: 1.32 },
 };
 
 /** Hästar där modellen och folket är oense. Bara V-spelens streck (inte DD-oddsen). Båda listorna sorteras på chansen. */
 export function pickFolketMissar(races) {
   const M = FOLKET_MISSAR.missad;
   const O = FOLKET_MISSAR.overspelad;
+  const D = FOLKET_MISSAR.odds;
   const missade = [];
   const overspelade = [];
+  const odds = [];
   for (const r of races)
     for (const h of r.horses) {
       if (h.scratched || h.marketSource !== "streck" || !(h.marketPct > 0) || h.p == null) continue;
@@ -626,9 +632,10 @@ export function pickFolketMissar(races) {
       const brief = { leg: r.leg, raceNr: r.number, nr: h.nr, horse: h.horse, p: h.p, marketPct: h.marketPct, kvot: r3(kvot) };
       if (h.marketPct >= M.streckMin && h.marketPct < M.streckMax && kvot >= M.kvot) missade.push(brief);
       if (h.marketPct >= O.streckMin && kvot < O.kvot) overspelade.push(brief);
+      if (h.marketP > 0 && h.marketPct < D.streckMax && h.marketP >= D.kvot * h.marketPct) odds.push({ ...brief, oddsP: h.marketP, oddsKvot: r3(h.marketP / h.marketPct) });
     }
   const byP = (a, b) => b.p - a.p;
-  return { missade: missade.sort(byP), overspelade: overspelade.sort(byP) };
+  return { missade: missade.sort(byP), overspelade: overspelade.sort(byP), odds: odds.sort(byP) };
 }
 
 /** Dagens Dubbel: kombinationer med sannolikhet (oberoende lopp), ATG-odds, fair odds och EV per krona. */

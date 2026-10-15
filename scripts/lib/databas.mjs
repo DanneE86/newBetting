@@ -488,6 +488,39 @@ export function hastUppfoljningRader(u) {
   return ut;
 }
 
+/** En hästs Sportinfo-fil (data/hastar/travsport/<ts-id>.json) → häst, säsonger och starter. hast_id = ATG:s horseId. */
+export function travsportRader(doc) {
+  const ts = doc?.hast?.id ?? null;
+  const hast_id = tal(String(ts ?? '').replace(/^ts/i, ''));
+  if (hast_id == null) return { hast: null, sasonger: [], starter: [] };
+  const { id: _id, ...hast } = doc.hast;
+  return {
+    hast: { hast_id, ts_id: ts, ...hast, kalla: doc.kalla ?? null, hamtad: doc.hamtad ?? null },
+    sasonger: (doc.sasong ?? []).map((r) => ({ hast_id, ...r })),
+    starter: (doc.starter ?? []).map((r) => ({ hast_id, ...r, distans: tal(r.distans) ?? r.distans ?? null })),
+  };
+}
+
+/** Omgångens samlingsfil (data/hastar/travsport/omgang/<id>.json) → en rad per häst med avdelning och startnummer. */
+export function travsportOmgangRader(doc) {
+  const rad = (h, hamtad) => ({ spel_id: doc.spel_id, spelform: doc.spelform ?? null, datum: doc.datum ?? null, bana: doc.bana ?? null, avdelning: h.avdelning, startnummer: h.startnummer, hast_id: tal(String(h.id ?? h.hast?.id ?? '').replace(/^ts/i, '')), hast: h.namn ?? h.hast?.namn ?? null, hamtad });
+  return [...(doc?.hastar ?? []).map((h) => rad(h, 1)), ...(doc?.saknas ?? []).map((h) => rad(h, 0))];
+}
+
+/** Sportinfos tävlingsdag (data/hastar/sportinfo/<ts-id>.json) → lopp, tempodelar och målordning. */
+export function sportinfoLoppRader(doc) {
+  const dag = { raceday_id: doc?.raceday_id ?? null, datum: doc?.datum ?? null, bana: doc?.bana ?? null };
+  if (!dag.raceday_id) return { lopp: [], tempo: [], malordning: [] };
+  const lopp = [], tempo = [], malordning = [];
+  for (const l of doc.lopp ?? []) {
+    const { tempo: delar, malordning: ordning, domartexter, namnda_nr, ...rest } = l;
+    lopp.push({ ...dag, ...rest, domartexter: (domartexter ?? []).join('\n') || null, namnda_nr: (namnda_nr ?? []).join(',') || null, hamtad: doc.hamtad ?? null });
+    for (const t of delar ?? []) tempo.push({ raceday_id: dag.raceday_id, lopp: l.lopp, ...t });
+    for (const h of ordning ?? []) malordning.push({ raceday_id: dag.raceday_id, datum: dag.datum, lopp: l.lopp, ...h });
+  }
+  return { lopp, tempo, malordning };
+}
+
 export const DATABASER = ['fotboll', 'stryktips', 'hastar'];
 
 /** Vilka databaser som ska byggas om automatiskt: de som saknas eller inte byggts på `dagar` dygn. andrad: { namn: mtimeMs | null }. */

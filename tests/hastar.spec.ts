@@ -10,6 +10,12 @@ const ROOT = path.resolve(__dirname, '..');
 const model = () => import(pathToFileURL(path.join(ROOT, 'scripts', 'lib', 'trav-model.mjs')).href);
 const engine = () => import(pathToFileURL(path.join(ROOT, 'gui', 'public', 'hast-engine.js')).href);
 const sum = (xs: number[]) => xs.reduce((a, b) => a + b, 0);
+/** Egen summa i systembyggarens budgetrad (bara 500 kr finns som knapp). */
+async function setBudget(page: any, kr: number) {
+  await page.fill('#hs-budget', String(kr));
+  await page.press('#hs-budget', 'Tab');
+  await expect(page.locator('#hs-budget')).toHaveValue(String(kr));
+}
 
 // ---------- Påhittade ATG-svar ----------
 const rec = (date: string, place: string, o: any = {}) => ({
@@ -399,12 +405,12 @@ test.describe('hast-engine: systembyggaren', () => {
     const { buildBigSystem, buildSystem } = await engine();
     // en avdelning, 2 rader: favorit + häst 3 (streck 10 %, rad ger 1,25 kr ≥ målet 1 kr) slår häst 2 (streck 40 %, 0,31 kr)
     const legs = [{ leg: 1, number: 1, horses: [{ nr: 1, p: 0.5, marketPct: 0.5 }, { nr: 2, p: 0.3, marketPct: 0.4 }, { nr: 3, p: 0.2, marketPct: 0.1 }] }];
-    const big = buildBigSystem(legs, { budget: 1, price: 0.5, minTop: 0, topShare: 0.25, target: 1 });
+    const big = buildBigSystem(legs, { budget: 1, price: 0.5, minTop: 0, topShare: 0.25, target: 1, spikes: null });
     expect(big.legs[0].horses.sort()).toEqual([1, 3]);
     // väntad andel av målet: 0,5 · 0,25/1 + 0,2 · 1 = 0,325
     expect(big.bigShare).toBeCloseTo(0.325, 2);
     // träffsystemet (bara chansen) tar häst 2 i stället
-    expect(buildSystem(legs, { budget: 1, price: 0.5, alpha: 0 }).legs[0].horses.sort()).toEqual([1, 2]);
+    expect(buildSystem(legs, { budget: 1, price: 0.5, alpha: 0, spikes: null }).legs[0].horses.sort()).toEqual([1, 2]);
   });
 
   test('låst spik respekteras', async () => {
@@ -413,17 +419,17 @@ test.describe('hast-engine: systembyggaren', () => {
     expect(s.legs[1].horses).toEqual([3]);
   });
 
-  test('alltid exakt två spikar (högst chans), övriga avdelningar minst två hästar', async () => {
+  test('alltid exakt en spik (högst chans), övriga avdelningar minst två hästar; spikes 2 ger två', async () => {
     const { buildSystem, buildBigSystem, reduceSystem, SPIKES } = await engine();
-    expect(SPIKES).toBe(2);
+    expect(SPIKES).toBe(1);
     // 8 avdelningar, olika starka favoriter
     const legs = [0.62, 0.3, 0.55, 0.33, 0.4, 0.35, 0.31, 0.45].map((fav, i) => ({
       leg: i + 1, number: i + 1,
       horses: [fav, (1 - fav) * 0.4, (1 - fav) * 0.3, (1 - fav) * 0.2, (1 - fav) * 0.1].map((p, j) => ({ nr: j + 1, p, marketPct: j === 0 ? Math.min(0.8, fav * 1.1) : p * 0.95 })),
     }));
-    const check = (s: any) => {
+    const check = (s: any, n = 1) => {
       const spikes = s.legs.filter((l: any) => l.horses.length === 1);
-      expect(spikes).toHaveLength(2);
+      expect(spikes).toHaveLength(n);
       for (const l of spikes) expect(l.horses).toEqual([1]); // nr 1 har högst chans i varje avdelning
       for (const l of s.legs.filter((l: any) => l.horses.length !== 1)) expect(l.horses.length).toBeGreaterThanOrEqual(2);
     };
@@ -431,13 +437,17 @@ test.describe('hast-engine: systembyggaren', () => {
       check(buildSystem(legs, { budget, price: 0.25, alpha: 0, minTop: 50000, topShare: 0.26 }));
       check(buildBigSystem(legs, { budget, price: 0.25, minTop: 50000, topShare: 0.26 }));
       check(reduceSystem(legs, {}, { budget, price: 0.25, minTop: 50000, topShare: 0.26 }).base);
+      check(buildSystem(legs, { budget, price: 0.25, alpha: 0, minTop: 50000, topShare: 0.26, spikes: 2 }), 2);
+      check(reduceSystem(legs, {}, { budget, price: 0.25, minTop: 50000, topShare: 0.26, spikes: 2 }).base, 2);
     }
-    // Träffsystemet spikar de två starkaste favoriterna
-    expect(buildSystem(legs, { budget: 500, price: 0.25, alpha: 0 }).legs.filter((l: any) => l.horses.length === 1).map((l: any) => l.leg).sort()).toEqual([1, 3]);
-    // Egen låst enhästavdelning räknas som en av spikarna
+    // Träffsystemet spikar den starkaste favoriten (med två spikar de två starkaste)
+    const spikLegs = (s: any) => s.legs.filter((l: any) => l.horses.length === 1).map((l: any) => l.leg).sort();
+    expect(spikLegs(buildSystem(legs, { budget: 500, price: 0.25, alpha: 0 }))).toEqual([1]);
+    expect(spikLegs(buildSystem(legs, { budget: 500, price: 0.25, alpha: 0, spikes: 2 }))).toEqual([1, 3]);
+    // Egen låst enhästavdelning räknas som spiken: ingen spik till läggs
     const lk = buildSystem(legs, { budget: 500, price: 0.25, alpha: 0, locked: { 4: [2] } });
     expect(lk.legs[3].horses).toEqual([2]);
-    expect(lk.legs.filter((l: any) => l.horses.length === 1)).toHaveLength(2);
+    expect(lk.legs.filter((l: any) => l.horses.length === 1)).toHaveLength(1);
     // spikes: null = fritt som förut (stor budget ger inga spikar)
     expect(buildSystem(legs, { budget: 5000, price: 0.25, alpha: 0, spikes: null }).legs.filter((l: any) => l.horses.length === 1).length).toBeLessThan(2);
   });
@@ -463,10 +473,11 @@ test.describe('hast-engine: systembyggaren', () => {
       expect(spikes(s)).toEqual([2, 4, 6]);
       for (const l of s.legs) if (![2, 4, 6].includes(l.leg)) expect(l.horses.length).toBeGreaterThanOrEqual(2);
     }
-    // en egen spik: systemet lägger till en till, totalt två
+    // en egen spik räcker (SPIKES = 1); med spikes 2 lägger systemet till en till
     const one = buildSystem(legs, { budget: 500, price: 0.25, alpha: 0, locked: { 5: [2] } });
     expect(one.legs[4].horses).toEqual([2]);
-    expect(spikes(one)).toHaveLength(2);
+    expect(spikes(one)).toEqual([5]);
+    expect(spikes(buildSystem(legs, { budget: 500, price: 0.25, alpha: 0, locked: { 5: [2] }, spikes: 2 }))).toHaveLength(2);
     expect(one.cost).toBeLessThanOrEqual(500);
   });
 
@@ -696,7 +707,7 @@ test.describe('GUI: fliken Hästar', () => {
     await expect(page.locator('#hs-rad-' + leg2)).toHaveClass(/is-flash/);
     await expect(page.locator('#hs-rad-' + leg2)).toBeInViewport();
     // omritning (byt budget) stänger inte den öppna avdelningen
-    await page.click('[data-budget="1000"]');
+    await setBudget(page, 1000);
     await expect(page.locator('#hs-avd-' + leg2)).toHaveAttribute('open', '');
     // sista avdelningen har Stäng i stället för Nästa
     const last = page.locator('details.hs-race').nth(state.analysis.races.length - 1);
@@ -757,8 +768,11 @@ test.describe('GUI: fliken Hästar', () => {
     await expect(page.locator('[data-mode="stor"]')).toHaveAttribute('aria-pressed', 'true');
     await expect(page.locator('.hs-stor-text')).toContainText('Kort sagt:');
     await expect(page.locator('#hs-focus')).toHaveCount(0);
+    // budgetraden: bara 500 kr som knapp, annars egen summa
+    await expect(page.locator('.hs-system > .hs-budget [data-budget]')).toHaveCount(1);
+    await expect(page.locator('.hs-system > .hs-budget [data-budget="500"]')).toHaveAttribute('aria-pressed', 'true');
     for (const b of [100, 1000]) {
-      await page.click(`[data-budget="${b}"]`);
+      await setBudget(page, b);
       const txt = await page.locator('.hs-sys-sum:not(.hs-sys-top):not(.hs-sys-skrall)').innerText();
       const cost = Number(txt.match(/([\d\s]+)\s*kr/)![1].replace(/\s/g, ''));
       expect(cost).toBeLessThanOrEqual(b);
@@ -825,11 +839,11 @@ test.describe('GUI: fliken Hästar', () => {
     await expect(page.locator('#hs-expand')).toHaveValue('16');
     await expect(page.locator('[data-cond="minSkrall"]')).toHaveValue('3');
     // Skrällsystemet väljer minst 1 000 kr (200 kr gick minus alla bakkörda år) och varnar om man sänker
-    await expect(page.locator('[data-budget="1000"]')).toHaveAttribute('aria-pressed', 'true');
+    await expect(page.locator('#hs-budget')).toHaveValue('1000');
     await expect(page.locator('.hs-skrall-budget')).toHaveCount(0);
-    await page.click('[data-budget="200"]');
+    await setBudget(page, 200);
     await expect(page.locator('.hs-skrall-budget')).toContainText('gått minus');
-    await page.click('[data-budget="1000"]');
+    await setBudget(page, 1000);
     await expect(page.locator('.hs-skrall-budget')).toHaveCount(0);
     await page.click('[data-mode="reducerat"]');
     await expect(page.locator('[data-mode="skrall3"]')).toHaveAttribute('aria-pressed', 'false');
@@ -841,10 +855,10 @@ test.describe('GUI: fliken Hästar', () => {
     await expect(page.locator('#hs-expand')).toHaveValue('16');
     await expect(page.locator('[data-cond="minRowTop"]')).toHaveValue('50000');
     await expect(page.locator('[data-cond="minSkrall"]')).toHaveValue('');
-    await expect(page.locator('[data-budget="2000"]')).toHaveAttribute('aria-pressed', 'true');
+    await expect(page.locator('#hs-budget')).toHaveValue('2000');
     await expect(page.locator('.hs-radtop-text')).toContainText('Kort sagt');
     await expect(page.locator('.hs-radtop-budget')).toHaveCount(0);
-    await page.click('[data-budget="500"]');
+    await page.locator('.hs-system > .hs-budget [data-budget="500"]').click();
     await expect(page.locator('.hs-radtop-budget')).toContainText('gick minus');
     await page.click('[data-mode="skrall3"]');
     await expect(page.locator('[data-cond="minRowTop"]')).toHaveValue('');
@@ -876,15 +890,86 @@ test.describe('GUI: fliken Hästar', () => {
     const nrs = (await page.locator(`#hs-rad-${r2.leg} .hs-pick-nr`).allInnerTexts()).map(Number).sort((x, y) => x - y);
     expect(nrs).toEqual([...two].sort((x: number, y: number) => x - y));
     await expect(page.locator(`#hs-rad-${r2.leg} .hs-own-tag`)).toBeVisible();
-    // systemet har fortfarande minst två spikar och håller budgeten (500 kr förval)
-    expect(await page.locator('.hs-sys-leg.is-spik').count()).toBeGreaterThanOrEqual(2);
+    // systemet har fortfarande minst en spik och håller budgeten (500 kr förval)
+    expect(await page.locator('.hs-sys-leg.is-spik').count()).toBeGreaterThanOrEqual(1);
     const txt = await page.locator('.hs-sys-sum:not(.hs-sys-top):not(.hs-sys-skrall)').innerText();
     expect(Number(txt.match(/([\d\s]+)\s*kr/)![1].replace(/\s/g, ''))).toBeLessThanOrEqual(500);
+    // orörda avdelningar: systemets hästar är markerade i panelen och stämmer med systemraden
+    const r3 = state.analysis.races[2];
+    if (r3) {
+      const auto = (await page.locator(`[data-own-row="${r3.leg}"] .hs-egna-pick.is-auto b`).allInnerTexts()).map(Number).sort((x, y) => x - y);
+      const sysNrs = (await page.locator(`#hs-rad-${r3.leg} .hs-pick-nr`).allInnerTexts()).map(Number).sort((x, y) => x - y);
+      expect(auto).toEqual(sysNrs);
+      await expect(page.locator(`[data-own-row="${r3.leg}"] .hs-egna-state`)).toContainText('Auto');
+    }
+    // egna valda avdelningar behåller systemets förslag (streckad ram) och skriver ut det
+    const recNrs = (await page.locator(`[data-own-row="${r2.leg}"] .hs-egna-pick.is-auto b`).allInnerTexts()).map(Number);
+    expect(recNrs.length).toBeGreaterThanOrEqual(1);
+    await expect(page.locator(`[data-own-row="${r2.leg}"] .hs-egna-rec`)).toHaveText(`Förslag: ${[...recNrs].sort((x, y) => x - y).join(', ')}`);
+    await expect(page.locator(`[data-own-row="${r1.leg}"] .hs-egna-pick.is-auto`).first()).toBeVisible();
+    await expect(page.locator(`[data-own-row="${r2.leg}"] .hs-egna-state`)).toContainText('Dina 2');
+    // egen summa i panelen styr systemet och budgetraden
+    await expect(page.locator('.hs-egna-sum')).toContainText('av 500 kr');
+    await page.fill('#hs-own-budget', '1500');
+    await page.press('#hs-own-budget', 'Tab');
+    await expect(page.locator('.hs-egna-sum')).toContainText('av 1 500 kr');
+    await expect(page.locator('#hs-budget')).toHaveValue('1500');
+    await expect(page.locator('.hs-egna')).toHaveAttribute('open', '');
+    const sumTxt = await page.locator('.hs-egna-sum b').innerText();
+    expect(Number(sumTxt.match(/([\d\s]+)\s*kr/)![1].replace(/\s/g, ''))).toBeLessThanOrEqual(1500);
+    await page.locator('.hs-egna [data-budget="500"]').click();
+    await expect(page.locator('#hs-own-budget')).toHaveValue('500');
     // klick igen tar bort valet, Rensa tar bort allt
     await page.click(`[data-own-leg="${r1.leg}"][data-own-nr="${spik}"]`);
     await expect(rad1).not.toHaveClass(/is-own/);
     await page.click('[data-act="own-clear"]');
     await expect(page.locator('.hs-sys-leg.is-own')).toHaveCount(0);
+  });
+
+  test('bygg eget system: Skapa system efter minst ett val ger rakt system med ATG-fil och länkar, även när reducerat är valt', async ({ page }) => {
+    const state = await (await page.request.get(base + '/api/hastar')).json();
+    test.skip(!state.analysis || state.analysis.type === 'dd', 'Ingen sparad V-spelsanalys i data/hastar');
+    await page.goto(base + '/hastar');
+    await expect(page.locator('.hs-egna')).toBeVisible({ timeout: 20_000 });
+    await page.click('[data-mode="reducerat"]');
+    await page.locator('.hs-egna > summary').click();
+    // ingen knapp innan något är valt
+    await expect(page.locator('[data-act="own-build"]')).toHaveCount(0);
+    // rubriken säger i klartext vad läget är
+    await expect(page.locator('.hs-egna-status')).toHaveText('Inga egna val än');
+    await expect(page.locator('.hs-egna-sub')).toContainText('systemet fyller resten');
+    const r1 = state.analysis.races[0];
+    const nr = r1.horses.filter((h: any) => !h.scratched && h.p != null)[0].nr;
+    await page.click(`[data-own-leg="${r1.leg}"][data-own-nr="${nr}"]`);
+    await expect(page.locator('.hs-egna-result')).toHaveCount(0);
+    await expect(page.locator('.hs-egna-status')).toContainText(`Du har valt i 1 av ${state.analysis.races.length} avdelningar`);
+    await page.click('[data-act="own-build"]');
+    await expect(page.locator('.hs-egna-status')).toContainText('Klart ·');
+    const res = page.locator('.hs-egna-result');
+    await expect(res).toBeVisible();
+    await expect(res).toContainText('rakt system, en kupong');
+    // kupongen: en rad per avdelning, din spik i avdelning 1
+    const lines = ((await res.locator('.hs-egna-coupon').textContent()) || '').trim().split('\n');
+    expect(lines).toHaveLength(state.analysis.races.length);
+    expect(lines[0]).toBe(`Avd ${r1.leg}: ${nr} (spik)`);
+    const cost = Number((await res.locator('.hs-sys-sum b').innerText()).match(/([\d\s]+)\s*kr/)![1].replace(/\s/g, ''));
+    expect(cost).toBeLessThanOrEqual(500);
+    // länkar till ATG: omgången och filinlämningen
+    await expect(res.locator(`a[href="https://www.atg.se/spel/${state.analysis.id}"]`)).toBeVisible();
+    await expect(res.locator('a[href="https://www.atg.se/spel/reducerat"]').first()).toBeVisible();
+    // filen: en kupong, samma rader som kupongen
+    const [dl] = await Promise.all([page.waitForEvent('download'), res.locator('[data-act="own-atg-file"]').click()]);
+    const xml = fs.readFileSync((await dl.path())!, 'utf8');
+    expect(xml.match(/Coupon couponid=/g)).toHaveLength(1);
+    expect(xml.match(/<leg /g)).toHaveLength(state.analysis.races.length);
+    const rows = lines.reduce((a, l) => a * l.split(':')[1].replace('(spik)', '').trim().split(/\s+/).length, 1);
+    expect(dl.suggestedFilename()).toContain('-' + rows + '-rader-');
+    const { crc16 } = await engine();
+    expect(dl.suggestedFilename().slice(-8, -4)).toBe(crc16(xml));
+    // Rensa tar bort systemet och knappen
+    await page.click('[data-act="own-clear"]');
+    await expect(page.locator('.hs-egna-result')).toHaveCount(0);
+    await expect(page.locator('[data-act="own-build"]')).toHaveCount(0);
   });
 
   test('mobil: ingen sidscroll i sidled', async ({ page }) => {

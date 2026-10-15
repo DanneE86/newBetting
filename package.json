@@ -24,6 +24,7 @@
     "store": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Update-BettingStore.ps1 -SkipDownload",
     "venues": "node scripts/fetch-venues.mjs",
     "travsport:hast": "node scripts/fetch-travsport-hast.mjs",
+    "sportinfo:lopp": "node scripts/fetch-sportinfo-lopp.mjs",
     "weather": "node scripts/fetch-weather.mjs",
     "weather:history": "node scripts/fetch-weather.mjs --history",
     "players:impact": "node scripts/fetch-player-impact.mjs",

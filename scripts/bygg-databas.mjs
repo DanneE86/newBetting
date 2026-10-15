@@ -16,6 +16,7 @@ import {
   sqlVarde, gissaTyp, skapaTabellSql, parseCsvText, MATCH_KOLUMNER, matchRad, tabellRader, aktuellTabellRader, spelarRad, truppRader,
   matchstatRader, oddsetTipsRader, stryktipsRad, omgangRader, kompaktLoppRader, hastTipsRader,
   kupongOmgangRader, kupongSystemRader, stryktipsBakkorningRader, hastBakkorningRader, hastAnalysRader, hastUppfoljningRader, skrallmissRader, fyndRader,
+  travsportRader, travsportOmgangRader, sportinfoLoppRader,
 } from './lib/databas.mjs';
 import { normalizeGame } from './lib/trav-model.mjs';
 import { addPrizes, addExtras } from './lib/hast-sasong.mjs';
@@ -342,6 +343,46 @@ async function byggHastar(db) {
     db.infoga('skrallmissar_avdelningar', sm.avdelningar);
     db.infoga('skrallmissar_hastar', sm.hastar);
     db.infoga('fynd', fyndRader(lasJson(path.join(HIST, 'fynd-hastar.json'))));
+  });
+
+  // Sportinfo (sportapp.travsport.se, scripts/fetch-travsport-hast.mjs): en fil per häst och en samlingsfil per omgång
+  const TS = path.join(DATA, 'hastar', 'travsport');
+  db.tabell('travsport_hastar', 'Hästar hämtade från Sportinfo: registrering, avel, uppfödare, tränare och seger-/platsprocent.', 'data/hastar/travsport/<ts-id>.json', { kolumner: [['hast_id', I], ['ts_id', T], ['namn', T]], nyckel: ['hast_id'], ersatt: true });
+  db.tabell('travsport_sasonger', 'Sportinfos säsongsrader per häst: starter, placeringar, prispengar och rekord per år (och Livs).', 'samma', { kolumner: [['hast_id', I], ['ar', T]], nyckel: ['hast_id', 'ar'], ersatt: true });
+  db.tabell('travsport_starter', 'Varje start enligt Sportinfo: datum, bana, spår, distans, resultat, km-tid, galopp, skor, vagn, kusk och prispengar.', 'samma', { kolumner: [['hast_id', I], ['datum', T], ['lopp', I], ['datum_kod', T], ['bana_kod', T], ['bana', T], ['distans', I]], nyckel: ['hast_id', 'datum_kod', 'bana_kod'], ersatt: true });
+  db.tabell('travsport_omgangar', 'Vilka hästar som hämtats från Sportinfo för en omgång (hamtad = 0 betyder att hästen saknas).', 'data/hastar/travsport/omgang/<omgång>.json', { kolumner: [['spel_id', T], ['avdelning', I], ['startnummer', I], ['hast_id', I]], nyckel: ['spel_id', 'avdelning', 'startnummer'], ersatt: true });
+  db.kolumnText.push(
+    ['travsport_hastar', 'hast_id', 'samma nummer som ATG:s horseId (hast_id i starter och hastar)'],
+    ['travsport_starter', 'datum_kod', 'Sportinfos datum ÅÅMMDD-lopp'],
+    ['travsport_starter', 'tid', 'tiden som Sportinfo skriver den, t.ex. 12,0a = 1.12,0 autostart, g = galopp'],
+  );
+  db.i(() => {
+    for (const f of jsonFiler(TS)) {
+      const r = travsportRader(lasJson(f));
+      if (!r.hast) continue;
+      db.infoga('travsport_hastar', [r.hast]);
+      db.infoga('travsport_sasonger', r.sasonger);
+      db.infoga('travsport_starter', r.starter);
+    }
+    for (const f of jsonFiler(path.join(TS, 'omgang'))) db.infoga('travsport_omgangar', travsportOmgangRader(lasJson(f, {})));
+  });
+  // Sportinfos tävlingsdagar (scripts/fetch-sportinfo-lopp.mjs): tempo, domartexter, strukna och bestraffningar per lopp
+  const SI = path.join(DATA, 'hastar', 'sportinfo');
+  db.tabell('sportinfo_lopp', 'Varje lopp på Sportinfos resultatsida: villkor, tempo, sista 500, segermarginal, bana, strukna, startförbud, bestraffningar och domarnas texter.', 'data/hastar/sportinfo/<tävlingsdag>.json', { kolumner: [['raceday_id', T], ['datum', T], ['bana', T], ['lopp', I]], nyckel: ['raceday_id', 'lopp'], ersatt: true });
+  db.tabell('sportinfo_tempo', 'Tempot i loppet: km-tid vid 500, 1000 (och 2000) m och vem som ledde där.', 'samma', { kolumner: [['raceday_id', T], ['lopp', I], ['meter', I], ['km_tid', T], ['km_sek', R], ['ledare_nr', I], ['ledare', T]], nyckel: ['raceday_id', 'lopp', 'meter'], ersatt: true });
+  db.tabell('sportinfo_malordning', 'Målordningen på resultatsidan (ibland bara de första), med kusk, anmäld kusk vid byte, spår och tid.', 'samma', { kolumner: [['raceday_id', T], ['datum', T], ['lopp', I], ['placering', T], ['startnummer', I]], nyckel: ['raceday_id', 'lopp', 'startnummer'], ersatt: true });
+  db.kolumnText.push(
+    ['sportinfo_lopp', 'namnda_nr', 'startnummer som domarnas texter nämner (t.ex. "Nr 8 döms ej …")'],
+    ['sportinfo_lopp', 'sista500_sek', 'loppets sista 500 m som km-tid i sekunder (69,1 = 1.09,1)'],
+    ['sportinfo_tempo', 'km_sek', 'km-tid i sekunder fram till den punkten'],
+  );
+  db.i(() => {
+    for (const f of jsonFiler(SI)) {
+      const r = sportinfoLoppRader(lasJson(f));
+      db.infoga('sportinfo_lopp', r.lopp);
+      db.infoga('sportinfo_tempo', r.tempo);
+      db.infoga('sportinfo_malordning', r.malordning);
+    }
   });
 
   sparaRapporter(db, ['data/hastar/historik/lararapport.json', 'data/hastar/backtest.json', 'data/hastar/uppfoljning.json', 'data/hastar/index.json']);

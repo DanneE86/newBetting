@@ -148,3 +148,47 @@ test('Sportinfo-rutnätet blir häst, säsong och starter', async ({ page }) => 
   expect(struken.kusk).toBe('Djuse Mats E');
   expect(struken.vagn).toBeNull();
 });
+
+test('omgång: hästarna ur analysfilen och samlingsfilen', async () => {
+  const { omgangHastar, omgangFil } = await lib();
+  const analys = { id: 'V85_2026-10-17_16_5', type: 'V85', date: '2026-10-17', track: 'Gävle', races: [
+    { leg: 1, horses: [
+      { nr: 2, horse: 'S.G.Empress', horseId: 787053 },
+      { nr: 3, horse: 'Struken', horseId: 1, scratched: true },
+      { nr: 4, horse: 'Utan id' },
+    ] },
+    { leg: 2, horses: [{ nr: 7, horse: 'Zätamustangen', horseId: 772022 }] },
+  ] };
+  expect(omgangHastar(analys)).toEqual([
+    { avdelning: 1, startnummer: 2, namn: 'S.G.Empress', id: 'ts787053' },
+    { avdelning: 2, startnummer: 7, namn: 'Zätamustangen', id: 'ts772022' },
+  ]);
+  const doc = omgangFil(analys, { ts772022: { hast: { namn: 'Zätamustangen', id: 'ts772022' }, starter: [{ datum: '2026-10-01' }] } }, { hamtad: '2026-10-15' });
+  expect(doc).toMatchObject({ spel_id: 'V85_2026-10-17_16_5', spelform: 'V85', datum: '2026-10-17', bana: 'Gävle', hamtad: '2026-10-15', antal: 2, hamtade: 1 });
+  expect(doc.hastar).toEqual([{ avdelning: 2, startnummer: 7, hast: { namn: 'Zätamustangen', id: 'ts772022' }, starter: [{ datum: '2026-10-01' }] }]);
+  expect(doc.saknas).toEqual([{ avdelning: 1, startnummer: 2, namn: 'S.G.Empress', id: 'ts787053' }]);
+  expect(omgangHastar(null)).toEqual([]);
+});
+
+test('tid utan komma: ingen km-tid men galopp och autostart (diskad "9ag", ATG har samma kod)', async () => {
+  const { parseTid } = await lib();
+  expect(parseTid('9ag')).toEqual({ km_tid: null, autostart: true, galopp: true });
+  expect(parseTid('12g')).toEqual({ km_tid: null, autostart: false, galopp: true });
+  expect(parseTid('uag')).toEqual({ km_tid: null, autostart: true, galopp: true });
+  expect(parseTid('nf3a')).toEqual({ km_tid: null, autostart: true, galopp: false });
+  expect(parseTid('11,2ag')).toEqual({ km_tid: '1.11,2', autostart: true, galopp: true });
+  expect(parseTid('str')).toEqual({ km_tid: null, autostart: null, galopp: null });
+  expect(parseTid('d')).toEqual({ km_tid: null, autostart: null, galopp: null });
+});
+
+test('bankoder kontrollerade mot ATG, och ATG:s startlista som omgång', async () => {
+  const { BANOR, atgOmgang, omgangHastar } = await lib();
+  expect([BANOR.Kr, BANOR.Bj, BANOR.V, BANOR['Öe'], BANOR.Ka]).toEqual(['Kalmar', 'Bjerke', 'Vincennes', 'Baden', 'Kalmar']);
+  const g = atgOmgang({ id: 'V85_2026-10-03_11_5', races: [
+    { track: { name: 'Boden' }, starts: [{ number: 1, horse: { id: 801, name: 'A' } }, { number: 2, horse: { id: 802, name: 'B' }, scratched: true }] },
+    { track: { name: 'Boden' }, starts: [{ number: 5, horse: { id: 805, name: 'C' } }] },
+  ] });
+  expect(g).toMatchObject({ id: 'V85_2026-10-03_11_5', type: 'V85', date: '2026-10-03', track: 'Boden' });
+  expect(omgangHastar(g).map((h: any) => [h.avdelning, h.startnummer, h.id])).toEqual([[1, 1, 'ts801'], [2, 5, 'ts805']]);
+  expect(atgOmgang(null)).toBeNull();
+});
