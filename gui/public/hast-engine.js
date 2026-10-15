@@ -38,6 +38,9 @@ export const TOP_LEVELS = [50000, 250000, 1000000];
 // +740 % men utan 3 största −64 %. 1000 kr +91 % (utan 3 −44 %), 500 kr +127 % (utan 3 −54 %). Därför minst RAD_TOP_MIN_BUDGET.
 export const RAD_TOP = 50000;
 export const RAD_TOP_MIN_BUDGET = 2000;
+// Raderna i 50 000-systemet sorteras efter chans (p) i stället för värdevikt (w) sedan 2026-10-15. Offline-test 2026-10-11
+// (488 omg 2024–26): 1000 kr +118 % mot +2 % (utan 3 största −4 %), 2000 kr +56 % mot +54 %, 500 kr +58 % mot +51 %.
+export const RAD_TOP_SORT = "p";
 export const SKRALL_MAX = 0.1; // häst med streck under 10 % räknas som skräll i systemvillkoren
 // Standard per spelform (bakkörning 2026-10-04: V75 2021–2025 370 omg + V85 74 omg, riktig utdelning, spärr 50 000 kr):
 // Värdefokus Hög (alpha 1) slog Normal (0,5) i 3 av 4 perioder på 1000 och 2000 kr och 2 av 4 på 200 och 500 kr,
@@ -319,11 +322,11 @@ export const rowCount = (sys) => sys.legs.reduce((a, l) => a * l.horses.length, 
  * minRowTop = varje rad ska kunna ge minst så många kr vid alla rätt).
  * expand: utgångssystemet får kosta budget × expand. Returnerar raderna (startnummer per avdelning).
  */
-export function reduceSystem(legs, conds = {}, { budget, price = 0.5, alpha = 0.5, expand = 4, maxEnum = 300000, locked = {}, minTop = 0, topShare = 0.25 } = {}) {
-  let base = buildSystem(legs, { budget: budget * expand, price, alpha, locked, minTop, topShare });
+export function reduceSystem(legs, conds = {}, { budget, price = 0.5, alpha = 0.5, expand = 4, maxEnum = 300000, locked = {}, minTop = 0, topShare = 0.25, sortBy = "w", spikes = SPIKES } = {}) {
+  let base = buildSystem(legs, { budget: budget * expand, price, alpha, locked, minTop, topShare, spikes });
   while (base.rows > maxEnum && expand > 1) {
     expand /= 2;
-    base = buildSystem(legs, { budget: budget * expand, price, alpha, locked, minTop, topShare });
+    base = buildSystem(legs, { budget: budget * expand, price, alpha, locked, minTop, topShare, spikes });
   }
   const byNr = legs.map((l) => Object.fromEntries(playable(l).map((h) => [h.nr, h])));
   const choice = base.legs.map((l, i) => l.horses.map((nr) => byNr[i][nr]));
@@ -364,7 +367,8 @@ export function reduceSystem(legs, conds = {}, { budget, price = 0.5, alpha = 0.
   }
   const maxRows = Math.floor(budget / price + 1e-9);
   const passed = kept.length;
-  kept.sort((x, y) => y.w - x.w);
+  // sortBy "p": raderna med högst chans behålls (50 000-systemet, RAD_TOP_SORT), annars högst värdeviktad chans
+  kept.sort(sortBy === "p" ? (x, y) => y.p - x.p : (x, y) => y.w - x.w);
   const rows = kept.slice(0, maxRows);
   // Spärren: minst en spelad rad ska kunna ge minTop kr – annars byts den sämsta raden mot bästa raden som klarar det
   if (minTop > 0 && rows.length && !rows.some((r) => r.top >= minTop)) {

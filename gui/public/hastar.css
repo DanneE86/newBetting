@@ -111,6 +111,21 @@ body.view-hastar main { display: none !important; }
 .hs-key-dot.rank-C { background: var(--color-warning-solid); }
 .hs-spik { font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); padding: 2px var(--space-2); border-radius: var(--radius-pill); background: var(--color-spik); color: var(--color-spik-text); }
 .hs-sys-sum { margin: var(--space-3) 0; font-size: var(--font-size-sm); }
+/* Bygg eget system: egna spikar/hästar per avdelning */
+.hs-egna { margin-top: var(--space-4); padding: var(--space-3); border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-surface); }
+.hs-egna-legs { display: grid; gap: var(--space-2); margin: var(--space-3) 0; }
+.hs-egna-leg { display: grid; grid-template-columns: 4.5rem 1fr; gap: var(--space-1) var(--space-2); align-items: center; }
+.hs-egna-state { grid-column: 1; grid-row: 2; font-size: var(--font-size-xs); color: var(--color-text-muted); }
+.hs-egna-picks { grid-column: 2; grid-row: 1 / span 2; display: flex; flex-wrap: wrap; gap: var(--space-1); min-width: 0; }
+.hs-egna-pick { display: grid; justify-items: center; min-width: 2.75rem; padding: var(--space-1); font: inherit; font-size: var(--font-size-sm); line-height: 1.2; cursor: pointer; color: var(--color-text); background: var(--color-surface-muted); border: 1px solid var(--color-border); border-bottom-width: 3px; border-radius: var(--radius-sm); }
+.hs-egna-pick small { font-size: var(--font-size-xs); color: var(--color-text-muted); }
+.hs-egna-pick.rank-A { border-bottom-color: var(--color-success-solid); }
+.hs-egna-pick.rank-B { border-bottom-color: var(--color-info-solid); }
+.hs-egna-pick.rank-C { border-bottom-color: var(--color-warning-solid); }
+.hs-egna-pick[aria-pressed="true"] { background: var(--color-brand); border-color: var(--color-brand); color: var(--color-brand-text); }
+.hs-egna-pick[aria-pressed="true"] small { color: inherit; }
+.hs-sys-leg.is-own { border-color: var(--color-brand); }
+.hs-own-tag { font-size: var(--font-size-xs); color: var(--color-brand); font-weight: var(--font-weight-bold); }
 
 /* Lopp */
 .hs-jump { display: flex; flex-wrap: wrap; gap: var(--space-2); }
