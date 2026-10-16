@@ -17,22 +17,23 @@ export function racedayIdFrom(input) {
   return m ? m[1].toLowerCase() : null;
 }
 
-/** "1.09,1" → 69.1 sekunder per km (samma skala som ATG:s km-tid). */
+/** "1.09,1" (eller "1.09.1", som många banor skriver) → 69.1 sekunder per km (samma skala som ATG:s km-tid). */
 export function kmSek(s) {
-  const m = String(s || "").match(/(\d+)\.(\d{2}),(\d)/);
+  const m = String(s || "").match(/(\d+)\.(\d{2})[,.](\d)/);
   return m ? Number(m[1]) * 60 + Number(m[2]) + Number(m[3]) / 10 : null;
 }
 
-/** "Tempo: första 500 1.09,1 (1 Daim Brodda), 1000 1.10,5 (1 Daim Brodda) sista 500 1.10,3" → delar och ledare. */
+/** "Tempo: första 500 1.09,1 (1 Daim Brodda), 1000 1.10,5 (1 Daim Brodda) sista 500 1.10,3" → delar och ledare.
+ *  Decimalen kan vara komma eller punkt ("1.17.0"). */
 export function parseTempo(line) {
   const t = String(line || "").replace(/^Tempo:\s*/i, "");
   const delar = [];
-  const re = /(första 500|\d{3,4})\s+(\d\.\d{2},\d)\s*\((\d+)\s+([^)]+)\)/gi;
+  const re = /(första 500|\d{3,4})\s+(\d\.\d{2}[,.]\d)\s*\((\d+)\s+([^)]+)\)/gi;
   let m;
   while ((m = re.exec(t))) {
     delar.push({ meter: /första/i.test(m[1]) ? 500 : Number(m[1]), km_tid: m[2], km_sek: kmSek(m[2]), ledare_nr: Number(m[3]), ledare: m[4].trim() });
   }
-  const sista = t.match(/sista 500\s+(\d\.\d{2},\d)/i);
+  const sista = t.match(/sista 500\s+(\d\.\d{2}[,.]\d)/i);
   return { delar, sista500: sista ? sista[1] : null, sista500_sek: sista ? kmSek(sista[1]) : null };
 }
 
