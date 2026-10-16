@@ -14,7 +14,7 @@ import { fileURLToPath } from 'node:url';
 import { DatabaseSync } from 'node:sqlite';
 import {
   sqlVarde, gissaTyp, skapaTabellSql, parseCsvText, MATCH_KOLUMNER, matchRad, tabellRader, aktuellTabellRader, spelarRad, truppRader,
-  matchstatRader, oddsetTipsRader, stryktipsRad, omgangRader, kompaktLoppRader, hastTipsRader,
+  matchstatRader, optaMatchRader, oddsetTipsRader, stryktipsRad, omgangRader, kompaktLoppRader, hastTipsRader,
   kupongOmgangRader, kupongSystemRader, stryktipsBakkorningRader, hastBakkorningRader, hastAnalysRader, hastUppfoljningRader, skrallmissRader, fyndRader,
   travsportRader, travsportOmgangRader, sportinfoLoppRader,
 } from './lib/databas.mjs';
@@ -135,6 +135,8 @@ async function byggFotboll(db) {
   db.tabell('spelare_som_lamnat', 'Spelare som försvunnit ur truppen.', 'data/trupper/<liga>.json (left)', { nyckel: ['liga', 'lag', 'spelar_id'] });
   db.tabell('matchstatistik', 'Matcher från ESPN/365scores med halvtid, domare, arena och formation (kopplas till spelare_i_match via match_id).', 'data/matchstats/<liga>/<år>.json', { nyckel: ['match_id'] });
   db.tabell('spelare_i_match', 'Varje spelares insats i varje match: minuter, mål, assist, skott, kort, byten.', 'data/matchstats/<liga>/<år>.json', { nyckel: ['match_id', 'spelar_id', 'sida'] });
+  db.tabell('opta_lag_i_match', 'Optas lagstatistik per match via FotMob: xG (även öppet spel, fasta, på mål), stora chanser, skott, passningar, dueller, kort. hemma_*/borta_*. xG från ca 2020–2023 beroende på liga.', 'data/fotmob-matcher/<liga>/<säsong>.json', { nyckel: ['match_id'] });
+  db.tabell('opta_spelare_i_match', 'Optas spelarstatistik per match via FotMob: betyg, minuter, xG, xA, passningar, dueller, tacklingar, målvaktssiffror (bara spelare som spelade).', 'data/fotmob-matcher/<liga>/spelare/<säsong>.json (lokal)', { nyckel: ['match_id', 'spelar_id'] });
   db.tabell('tips_oddset', 'Våra Oddset-tips: en rad per match och marknad (1X2, över/under, båda gör mål, kort), med utfall och om det blev rätt.', 'data/tipslogg/oddset/<månad>.json', { nyckel: ['tips_id', 'marknad'] });
   db.tabell('tips_stryktipset', 'Våra Stryktips- och Europatipstips: chans, folket, odds, kupong A/B/C och om det satt.', 'data/tipslogg/stryktipset + europatipset', { nyckel: ['tips_id'] });
 
@@ -148,6 +150,10 @@ async function byggFotboll(db) {
     ['tips_stryktipset', 'folket_1', 'andel av svenska folket som spelat 1 (0–1)'],
     ['tips_stryktipset', 'kupong_a', 'tecknen i kupong A, t.ex. 1X'],
     ['spelare_i_match', 'sida', 'hemma eller borta'],
+    ['opta_lag_i_match', 'fotmob_match_id', 'FotMobs match-id, koppla till matcher.fotmob_match_id (match_id = fotmob:<id> kopplar till opta_spelare_i_match)'],
+    ['opta_spelare_i_match', 'spelar_id', 'FotMobs spelar-id (samma som i tabellen spelare)'],
+    ['opta_spelare_i_match', 'opta_id', 'Optas eget spelar-id'],
+    ['opta_spelare_i_match', 'startade', '1 = i startelvan, 0 = inhoppare'],
   );
 
   db.i(() => {
@@ -186,6 +192,14 @@ async function byggFotboll(db) {
     for (const f of jsonFiler(path.join(msDir, liga))) {
       const { matcher, spelare } = matchstatRader(lasJson(f));
       db.i(() => { db.infoga('matchstatistik', matcher); db.infoga('spelare_i_match', spelare); });
+    }
+  }
+  const fmDir = path.join(DATA, 'fotmob-matcher');
+  for (const liga of fs.existsSync(fmDir) ? fs.readdirSync(fmDir, { withFileTypes: true }).filter((d) => d.isDirectory()).map((d) => d.name).sort() : []) {
+    for (const f of jsonFiler(path.join(fmDir, liga))) {
+      const sp = path.join(fmDir, liga, 'spelare', path.basename(f));
+      const { lag, spelare } = optaMatchRader(lasJson(f), fs.existsSync(sp) ? lasJson(sp) : null);
+      db.i(() => { db.infoga('opta_lag_i_match', lag); db.infoga('opta_spelare_i_match', spelare); });
     }
   }
   db.i(() => {

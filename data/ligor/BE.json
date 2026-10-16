@@ -1,0 +1,391 @@
+{
+ "updatedAt": "2026-10-16T09:11:07.411Z",
+ "league": "BE",
+ "fotmobId": 40,
+ "name": "First Division A",
+ "country": "BEL",
+ "table": [
+  {
+   "rank": 1,
+   "team": "Gent",
+   "fotmobName": "Gent",
+   "fotmobId": 9991,
+   "group": null,
+   "played": 8,
+   "won": 7,
+   "drawn": 1,
+   "lost": 0,
+   "goals": "15-4",
+   "gd": 11,
+   "pts": 22
+  },
+  {
+   "rank": 2,
+   "team": "Club Brugge",
+   "fotmobName": "Club Brugge",
+   "fotmobId": 8342,
+   "group": null,
+   "played": 8,
+   "won": 7,
+   "drawn": 0,
+   "lost": 1,
+   "goals": "19-4",
+   "gd": 15,
+   "pts": 21
+  },
+  {
+   "rank": 3,
+   "team": "Charleroi",
+   "fotmobName": "Sporting Charleroi",
+   "fotmobId": 9986,
+   "group": null,
+   "played": 8,
+   "won": 7,
+   "drawn": 0,
+   "lost": 1,
+   "goals": "16-7",
+   "gd": 9,
+   "pts": 21
+  },
+  {
+   "rank": 4,
+   "team": "St. Gilloise",
+   "fotmobName": "Union St.Gilloise",
+   "fotmobId": 7978,
+   "group": null,
+   "played": 8,
+   "won": 6,
+   "drawn": 2,
+   "lost": 0,
+   "goals": "22-4",
+   "gd": 18,
+   "pts": 20
+  },
+  {
+   "rank": 5,
+   "team": "Anderlecht",
+   "fotmobName": "Anderlecht",
+   "fotmobId": 8635,
+   "group": null,
+   "played": 8,
+   "won": 5,
+   "drawn": 1,
+   "lost": 2,
+   "goals": "9-6",
+   "gd": 3,
+   "pts": 16
+  },
+  {
+   "rank": 6,
+   "team": "Westerlo",
+   "fotmobName": "Westerlo",
+   "fotmobId": 10001,
+   "group": null,
+   "played": 8,
+   "won": 4,
+   "drawn": 1,
+   "lost": 3,
+   "goals": "20-17",
+   "gd": 3,
+   "pts": 13
+  },
+  {
+   "rank": 7,
+   "team": "Genk",
+   "fotmobName": "Genk",
+   "fotmobId": 9987,
+   "group": null,
+   "played": 8,
+   "won": 3,
+   "drawn": 3,
+   "lost": 2,
+   "goals": "16-12",
+   "gd": 4,
+   "pts": 12
+  },
+  {
+   "rank": 8,
+   "team": "Waregem",
+   "fotmobName": "Zulte Waregem",
+   "fotmobId": 10000,
+   "group": null,
+   "played": 8,
+   "won": 3,
+   "drawn": 2,
+   "lost": 3,
+   "goals": "10-9",
+   "gd": 1,
+   "pts": 11
+  },
+  {
+   "rank": 9,
+   "team": "Standard",
+   "fotmobName": "Standard Liège",
+   "fotmobId": 9985,
+   "group": null,
+   "played": 8,
+   "won": 3,
+   "drawn": 2,
+   "lost": 3,
+   "goals": "13-13",
+   "gd": 0,
+   "pts": 11
+  },
+  {
+   "rank": 10,
+   "team": "Lommel SK",
+   "fotmobName": "Lommel",
+   "fotmobId": 6702,
+   "group": null,
+   "played": 8,
+   "won": 3,
+   "drawn": 2,
+   "lost": 3,
+   "goals": "9-9",
+   "gd": 0,
+   "pts": 11
+  },
+  {
+   "rank": 11,
+   "team": "Beveren",
+   "fotmobName": "SK Beveren",
+   "fotmobId": 8475,
+   "group": null,
+   "played": 8,
+   "won": 3,
+   "drawn": 0,
+   "lost": 5,
+   "goals": "8-14",
+   "gd": -6,
+   "pts": 9
+  },
+  {
+   "rank": 12,
+   "team": "St Truiden",
+   "fotmobName": "St.Truiden",
+   "fotmobId": 9997,
+   "group": null,
+   "played": 8,
+   "won": 2,
+   "drawn": 2,
+   "lost": 4,
+   "goals": "15-16",
+   "gd": -1,
+   "pts": 8
+  },
+  {
+   "rank": 13,
+   "team": "Antwerp",
+   "fotmobName": "Royal Antwerp",
+   "fotmobId": 9988,
+   "group": null,
+   "played": 8,
+   "won": 2,
+   "drawn": 1,
+   "lost": 5,
+   "goals": "12-20",
+   "gd": -8,
+   "pts": 7
+  },
+  {
+   "rank": 14,
+   "team": "Mechelen",
+   "fotmobName": "KV Mechelen",
+   "fotmobId": 8203,
+   "group": null,
+   "played": 8,
+   "won": 1,
+   "drawn": 3,
+   "lost": 4,
+   "goals": "9-17",
+   "gd": -8,
+   "pts": 6
+  },
+  {
+   "rank": 15,
+   "team": "Oud-Heverlee Leuven",
+   "fotmobName": "OH Leuven",
+   "fotmobId": 1773,
+   "group": null,
+   "played": 8,
+   "won": 1,
+   "drawn": 2,
+   "lost": 5,
+   "goals": "6-14",
+   "gd": -8,
+   "pts": 5
+  },
+  {
+   "rank": 16,
+   "team": "RAAL La Louviere",
+   "fotmobName": "RAAL La Louvière",
+   "fotmobId": 1218969,
+   "group": null,
+   "played": 8,
+   "won": 1,
+   "drawn": 1,
+   "lost": 6,
+   "goals": "8-18",
+   "gd": -10,
+   "pts": 4
+  },
+  {
+   "rank": 17,
+   "team": "Kortrijk",
+   "fotmobName": "Kortrijk",
+   "fotmobId": 8571,
+   "group": null,
+   "played": 8,
+   "won": 1,
+   "drawn": 0,
+   "lost": 7,
+   "goals": "2-18",
+   "gd": -16,
+   "pts": 3
+  },
+  {
+   "rank": 18,
+   "team": "Cercle Brugge",
+   "fotmobName": "Cercle Brugge",
+   "fotmobId": 9984,
+   "group": null,
+   "played": 8,
+   "won": 0,
+   "drawn": 3,
+   "lost": 5,
+   "goals": "9-16",
+   "gd": -7,
+   "pts": 3
+  }
+ ],
+ "tableHistory": {
+  "2026-10-16": [
+   [
+    "Gent",
+    1,
+    8,
+    22,
+    11
+   ],
+   [
+    "Club Brugge",
+    2,
+    8,
+    21,
+    15
+   ],
+   [
+    "Charleroi",
+    3,
+    8,
+    21,
+    9
+   ],
+   [
+    "St. Gilloise",
+    4,
+    8,
+    20,
+    18
+   ],
+   [
+    "Anderlecht",
+    5,
+    8,
+    16,
+    3
+   ],
+   [
+    "Westerlo",
+    6,
+    8,
+    13,
+    3
+   ],
+   [
+    "Genk",
+    7,
+    8,
+    12,
+    4
+   ],
+   [
+    "Waregem",
+    8,
+    8,
+    11,
+    1
+   ],
+   [
+    "Standard",
+    9,
+    8,
+    11,
+    0
+   ],
+   [
+    "Lommel SK",
+    10,
+    8,
+    11,
+    0
+   ],
+   [
+    "Beveren",
+    11,
+    8,
+    9,
+    -6
+   ],
+   [
+    "St Truiden",
+    12,
+    8,
+    8,
+    -1
+   ],
+   [
+    "Antwerp",
+    13,
+    8,
+    7,
+    -8
+   ],
+   [
+    "Mechelen",
+    14,
+    8,
+    6,
+    -8
+   ],
+   [
+    "Oud-Heverlee Leuven",
+    15,
+    8,
+    5,
+    -8
+   ],
+   [
+    "RAAL La Louviere",
+    16,
+    8,
+    4,
+    -10
+   ],
+   [
+    "Kortrijk",
+    17,
+    8,
+    3,
+    -16
+   ],
+   [
+    "Cercle Brugge",
+    18,
+    8,
+    3,
+    -7
+   ]
+  ]
+ }
+}
