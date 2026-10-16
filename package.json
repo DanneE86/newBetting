@@ -25,6 +25,7 @@
     "venues": "node scripts/fetch-venues.mjs",
     "travsport:hast": "node scripts/fetch-travsport-hast.mjs",
     "sportinfo:lopp": "node scripts/fetch-sportinfo-lopp.mjs",
+    "sportinfo:signal": "node --disable-warning=ExperimentalWarning scripts/sportinfo-signaltest.mjs",
     "weather": "node scripts/fetch-weather.mjs",
     "weather:history": "node scripts/fetch-weather.mjs --history",
     "players:impact": "node scripts/fetch-player-impact.mjs",

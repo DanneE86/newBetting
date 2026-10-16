@@ -99,3 +99,46 @@ test('hjälpare: km-tid, ts-id, numrerade texter och vilka tävlingsdagar som sk
   ]);
   expect(racedaysForHorses(filer, { antal: 5, fore: '2026-09-25' }).map((d: any) => d.id)).toEqual(['ts2', 'ts1']);
 });
+
+test('signaler: bara det som hände före starten, och jämförelse mot hästarnas övriga starter', async () => {
+  const { egenskaper, ae, kvot, sammanstall } = await import(pathToFileURL(path.join(ROOT, 'scripts', 'lib', 'sportinfo-signal.mjs')).href);
+  const url = 'https://sportapp.travsport.se/race/raceday/ts9/results/4';
+  const forut = [
+    { datum: '2026-08-01', resultat: '1', tranare: 'A', lopp: 4, lopp_url: url, galopp: 0 },
+    { datum: '2026-08-20', resultat: 'str, feber' },
+  ];
+  const loppInfo = new Map([['ts9|4', { namnda_nr: '7', tempo: [{ meter: 500, km_sek: 69.1, ledare_nr: 7 }, { meter: 1000, km_sek: 70.5, ledare_nr: 2 }] }]]);
+  const f = egenskaper({ start: { datum: '2026-09-01', tranare: 'B' }, forut, hast: { avelsindex: '124', inavelskoefficient: '6,99' }, loppInfo, atgNr: () => 7 });
+  expect(f).toMatchObject({
+    'Sjukstruken senaste 60 d': true, 'Skadestruken senaste 60 d': false, 'Första start efter sjukstrykning': true,
+    'Galopp senast': false, 'Diskad senast': false, 'Tränarbyte sedan förra starten': true,
+    'Uppehåll 60–119 dagar': false, 'Ledde vid 500 m senast': true, 'Ledde vid 1000 m senast': false,
+    'Nämnd av domarna senast': true, 'Senast i lopp med snabb öppning (≤ 1.09,5)': true,
+    'Avelsindex ≥ 120': true, 'Inavel ≥ 10 %': false,
+  });
+  // Utan tempo eller startnummer går det inte att avgöra – då saknas signalen i stället för att bli false
+  expect(egenskaper({ start: { datum: '2026-09-01' }, forut, atgNr: () => null })['Ledde vid 500 m senast']).toBeUndefined();
+  expect(egenskaper({ start: { datum: '2026-09-01' } })['Galopp senast']).toBeUndefined();
+
+  expect(ae([{ p: 0.5, vann: 1 }, { p: 0.5, vann: 1 }])).toMatchObject({ n: 2, segrar: 2, ae: 2 });
+  expect(kvot({ ae: 2, segrar: 4 }, { ae: 1, segrar: 4 }).kvot).toBe(2);
+  expect(kvot({ ae: 0, segrar: 0 }, { ae: 1, segrar: 4 }).kvot).toBeNull();
+  const fall = [
+    ...Array.from({ length: 40 }, (_, i) => ({ datum: i < 20 ? '2024-01-01' : '2025-06-01', p: 0.1, vann: i % 4 === 0 ? 1 : 0, f: { X: true } })),
+    ...Array.from({ length: 400 }, (_, i) => ({ datum: i < 200 ? '2024-01-01' : '2025-06-01', p: 0.1, vann: i % 10 === 0 ? 1 : 0, f: { X: false } })),
+  ];
+  const [x] = sammanstall(fall);
+  expect(x.signal).toBe('X');
+  expect(x.alla.n).toBe(40);
+  expect(x.alla.kvot).toBeCloseTo(2.5, 5);
+  expect(x.bedomning).toBe('vinner oftare än oddsen säger');
+  expect(sammanstall(fall.slice(0, 5).concat(fall.slice(40)))[0].bedomning).toBe('för få starter');
+});
+
+test('tempo med punkt som decimal ("1.17.0"), som många banor skriver', async () => {
+  const { kmSek, parseTempo } = await lib();
+  expect(kmSek('1.17.0')).toBe(77);
+  const t = parseTempo('första 500 1.10.2 (7 Test Ett), 1000 1.13.9 (7 Test Ett) 2000 1.13.6 (3 Test Tva), sista 500 1.14.3');
+  expect(t.delar.map((d: any) => [d.meter, d.km_sek, d.ledare_nr])).toEqual([[500, 70.2, 7], [1000, 73.9, 7], [2000, 73.6, 3]]);
+  expect(t).toMatchObject({ sista500: '1.14.3', sista500_sek: 74.3 });
+});

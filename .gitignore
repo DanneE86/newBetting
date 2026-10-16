@@ -25,6 +25,8 @@ data/hastar/auto.lock
 data/hastar/auto-konsol.txt
 data/hastar/travsport/
 data/hastar/sportinfo/
+data/hastar/sportinfo-logg*.txt
+data/hastar/databas-logg.txt
 
 # Interbet (ur app-debug.apk): logik och data används bara lokalt, aldrig i git eller på webbsidan
 *.apk
