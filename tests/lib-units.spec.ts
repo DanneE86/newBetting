@@ -3889,6 +3889,10 @@ test.describe('databas: översättning från filerna', () => {
     expect(r.tempo).toEqual([{ raceday_id: 'ts1', lopp: 5, meter: 500, km_sek: 69.1, ledare_nr: 1 }]);
     expect(r.malordning).toEqual([{ raceday_id: 'ts1', datum: '2026-09-26', lopp: 5, placering: '1', startnummer: 6, kusk: 'K' }]);
     expect(sportinfoLoppRader({})).toEqual({ lopp: [], tempo: [], malordning: [] });
+    // Äldre filer tolkade bara komma som decimal: tempot räknas om ur texten
+    const om = sportinfoLoppRader({ raceday_id: 'ts2', lopp: [{ lopp: 1, tempo_text: 'första 500 1.17.0 (6 Test), 1000 1.17.3 (6 Test) sista 500 1.14.3', tempo: [], sista500_sek: null }] });
+    expect(om.tempo.map((t: any) => [t.meter, t.km_sek, t.ledare_nr])).toEqual([[500, 77, 6], [1000, 77.3, 6]]);
+    expect(om.lopp[0].sista500_sek).toBe(74.3);
   });
 
   test('automatisk ombyggnad: bara databaser som saknas eller är minst 3 dygn gamla', async () => {
@@ -3996,5 +4000,91 @@ test.describe('static-mode: Hästars spellista på webbsidan', () => {
     const src = fs.readFileSync(path.join(ROOT, 'gui', 'public', 'hastar.js'), 'utf8');
     expect(src).toContain('games.saved ? "Ingen sparad omgång denna dag"');
     expect(src).toMatch(/t\.id === "hs-game" && games\?\.saved && t\.value\) load\(t\.value\)/);
+  });
+});
+
+// ---------- fotmob-match.mjs (FotMob matchDetails/Opta -> data/fotmob-matcher -> data/matcher) ----------
+
+const fotmobDetails = (o: any = {}) => ({
+  general: { matchId: 5107619, finished: o.finished ?? true, matchTimeUTCDate: '2026-10-12T17:00:00.000Z' },
+  header: { teams: [{ name: 'Malmö FF', id: 10237, score: 1 }, { name: 'Kalmar FF', id: 9892, score: 0 }] },
+  content: {
+    stats: o.noStats ? null : { Periods: { All: { stats: [
+      { key: 'top_stats', stats: [
+        { key: 'BallPossesion', stats: [52, 48], type: 'graph' }, { key: 'expected_goals', stats: ['1.28', '1.78'], type: 'text' },
+        { key: 'accurate_passes', stats: ['375 (84%)', '352 (83%)'], type: 'text' }, { key: 'big_chance', stats: [1, 4], type: 'text' },
+      ] },
+      { key: 'expected_goals', stats: [
+        { key: 'expected_goals', stats: [null, null], type: 'title' }, { key: 'expected_goals', stats: ['9.99', '9.99'], type: 'text' },
+        { key: 'expected_goals_on_target', stats: ['1.26', '1.20'], type: 'text' }, { key: 'okand_nyckel', stats: [1, 2], type: 'text' },
+      ] },
+    ] } } },
+    lineup: { homeTeam: { formation: '4-3-3', rating: 7.1, starters: [{ id: 2 }] }, awayTeam: { formation: '4-2-3-1', rating: 6.6, starters: [] } },
+    playerStats: o.noStats ? {} : {
+      2: { id: 2, optaId: '68659', name: 'Jens Stryger Larsen', teamId: 10237, isGoalkeeper: false, stats: [
+        { key: 'top_stats', stats: { 'Minutes played': { key: 'minutes_played', stat: { value: 90 } }, 'Expected goals (xG)': { key: 'expected_goals', stat: { value: 0.07 } },
+          'Accurate passes': { key: 'accurate_passes', stat: { value: 39, total: 43 } }, 'Shotmap': { key: null, stat: { value: 1 } } } },
+      ] },
+      3: { id: 3, name: 'Bänkad', teamId: 9892, isGoalkeeper: true, stats: [{ key: 'top_stats', stats: { 'xGOT': { key: 'expected_goals_on_target_variant', stat: {} } } }] },
+      4: { id: 4, name: 'Inhoppare', teamId: 9892, stats: [{ key: 'top_stats', stats: { 'Minutes played': { key: 'minutes_played', stat: { value: 12 } } } }] },
+    },
+  },
+});
+
+test.describe('fotmob-match: Optas siffror via FotMob', () => {
+  test('lagraden: xG, bråktal, första värdet vinner, titlar och okända nycklar hoppas över', async () => {
+    const { teamFromDetails, statNum } = await lib('fotmob-match.mjs');
+    expect(statNum('375 (84%)')).toBe(375);
+    expect(statNum('1.28')).toBe(1.28);
+    expect(statNum(null)).toBeNull();
+    const t = teamFromDetails(fotmobDetails());
+    expect(t).toMatchObject({ src: 'fotmob', id: '5107619', d: '2026-10-12', h: 'Malmö FF', a: 'Kalmar FF', hg: 1, ag: 0, form: ['4-3-3', '4-2-3-1'], rat: [7.1, 6.6] });
+    expect(t.s).toEqual({ poss: [52, 48], xg: [1.28, 1.78], pasok: [375, 352], bigch: [1, 4], xgot: [1.26, 1.2] });
+  });
+
+  test('ospelad match ger null, match utan statistik ger tomt s', async () => {
+    const { teamFromDetails, playersFromDetails, hasStats } = await lib('fotmob-match.mjs');
+    expect(teamFromDetails(fotmobDetails({ finished: false }))).toBeNull();
+    const t = teamFromDetails(fotmobDetails({ noStats: true }));
+    expect(t.s).toEqual({});
+    expect(hasStats(t, playersFromDetails(fotmobDetails({ noStats: true })))).toBe(false);
+    expect(hasStats(teamFromDetails(fotmobDetails()), [])).toBe(true);
+  });
+
+  test('spelarna: lag, start, bråktal med försök, bänkade utan siffror hoppas över', async () => {
+    const { playersFromDetails } = await lib('fotmob-match.mjs');
+    const p = playersFromDetails(fotmobDetails());
+    expect(p.map((x: any) => x.id)).toEqual([2, 4]);
+    expect(p[0]).toEqual({ id: 2, optaId: '68659', n: 'Jens Stryger Larsen', t: 0, gk: false, st: 1, s: { min: 90, xg: 0.07, pasok: 39, pasokN: 43 } });
+    expect(p[1]).toMatchObject({ t: 1, st: 0, s: { min: 12 } });
+  });
+
+  test('applyFotmob fyller bara tomma celler, xG bara utan understat/football-data', async () => {
+    const { teamFromDetails, applyFotmob, seasonFile } = await lib('fotmob-match.mjs');
+    const m = teamFromDetails(fotmobDetails());
+    const tom: any = applyFotmob({ xg_h: '', xg_a: '', poss_h: '' }, m);
+    expect(tom).toMatchObject({ xg_h: 1.28, xg_a: 1.78, xg_src: 'fotmob', poss_h: 52, poss_a: 48, bigch_h: 1, xgot_h: 1.26, rat_a: 6.6, fotmob_id: '5107619', stats_src: 'fotmob', form_h: '4-3-3' });
+    const full: any = applyFotmob({ xg_h: 2.1, xg_a: 0.4, xg_src: 'understat', poss_h: 60, poss_a: 40, stats_src: 'espn' }, m);
+    expect(full).toMatchObject({ xg_h: 2.1, xg_a: 0.4, xg_src: 'understat', poss_h: 60, poss_a: 40, stats_src: 'espn', xgot_h: 1.26 });
+    expect(seasonFile('2026/2027 - Apertura')).toBe('2026-2027-apertura');
+    expect(seasonFile('2025')).toBe('2025');
+  });
+});
+
+test.describe('databas: Opta via FotMob', () => {
+  test('lag per match blir hemma_/borta_-kolumner, spelare får lag, sida och svenska namn', async () => {
+    const { teamFromDetails, playersFromDetails } = await lib('fotmob-match.mjs');
+    const { optaMatchRader } = await lib('databas.mjs');
+    const md = fotmobDetails();
+    const t = teamFromDetails(md);
+    const lagDoc = { league: 'AS', season: '2026', matches: { [t.id]: t } };
+    const { lag, spelare } = optaMatchRader(lagDoc, { matches: { [t.id]: playersFromDetails(md) } });
+    expect(lag).toHaveLength(1);
+    expect(lag[0]).toMatchObject({ match_id: 'fotmob:5107619', fotmob_match_id: '5107619', liga: 'AS', sasong: '2026', datum: '2026-10-12', hemmalag: 'Malmö FF',
+      hemma_xg: 1.28, borta_xg: 1.78, hemma_xg_pa_mal: 1.26, hemma_lyckade_passningar: 375, hemma_bollinnehav: 52, borta_stora_chanser: 4, hemma_formation: '4-3-3', borta_lagbetyg: 6.6 });
+    expect(spelare[0]).toMatchObject({ match_id: 'fotmob:5107619', spelar_id: 2, opta_id: '68659', sida: 'hemma', lag: 'Malmö FF', malvakt: 0, startade: 1,
+      minuter: 90, xg: 0.07, lyckade_passningar: 39, passningar: 43 });
+    expect(spelare[1]).toMatchObject({ sida: 'borta', lag: 'Kalmar FF', startade: 0, minuter: 12 });
+    expect(optaMatchRader(lagDoc).spelare).toEqual([]);
   });
 });

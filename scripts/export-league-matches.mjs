@@ -14,6 +14,7 @@ import { clashesWith, uniqueBest } from './lib/team-match.mjs';
 import { canonTeam } from './lib/team-aliases.mjs';
 import { INJ, carryPre, extraCols as extra, pendingRows, squadAbsence } from './lib/matcher-rows.mjs';
 import { STAT_COLS, applyStats, findStatMatch } from './lib/matchstats.mjs';
+import { FOTMOB_COLS, applyFotmob } from './lib/fotmob-match.mjs';
 
 const DIR = path.join(root, 'data', 'matcher');
 const readJson = (p, d = null) => { try { return JSON.parse(fs.readFileSync(p, 'utf8').replace(/^﻿/, '')); } catch { return d; } };
@@ -24,7 +25,7 @@ const COLS = [
   'best_close_h', 'best_close_d', 'best_close_a', 'over25_open', 'over25_close',
   'luck', 'gap', 'mres', 'rest', 'h2h_n', 'h2h_pts', 'h2h_res', 'h2h_draw', 'promo', 'releg', 'miss_h', 'miss_a', 'steam', 'book',
   'pre_first_at', 'pre_first_h', 'pre_first_d', 'pre_first_a', 'pre_last_at', 'pre_last_h', 'pre_last_d', 'pre_last_a', 'pre_best_h', 'pre_best_d', 'pre_best_a',
-  ...INJ, 'close_src', ...STAT_COLS,
+  ...INJ, 'close_src', ...STAT_COLS, ...FOTMOB_COLS,
 ];
 const r4 = (x) => (x == null || !Number.isFinite(x) ? '' : String(Math.round(x * 1e4) / 1e4));
 const cell = (v) => {
@@ -115,6 +116,21 @@ function loadStats(lg) {
   return fs.readdirSync(dir).filter((f) => /^\d{4}\.json$/.test(f))
     .flatMap((f) => Object.values(readJson(path.join(dir, f), { matches: {} }).matches));
 }
+// Ena lagets FotMob-id + samma resultat ±1 dag, och bara en sådan match (laget spelar en match åt gången).
+// För lag som saknas i team-ids (nedflyttade: Strømsgodset, Aalborg …).
+function oneSideId(r, cands, hi, ai) {
+  if (!hi && !ai) return null;
+  const hits = cands.filter((m) => String(m.hg) === String(r.hg) && String(m.ag) === String(r.ag) && ((hi && m.hid === hi) || (ai && m.aid === ai)));
+  return hits.length === 1 ? hits[0] : null;
+}
+const teamIds = readJson(path.join(root, 'config', 'team-ids.json'), {});
+// Optas siffror via FotMob (data/fotmob-matcher/<LIGA>/<säsong>.json, npm run fotmob:matcher)
+function loadFotmob(lg) {
+  const dir = path.join(root, 'data', 'fotmob-matcher', lg);
+  if (!fs.existsSync(dir)) return [];
+  return fs.readdirSync(dir).filter((f) => f.endsWith('.json'))
+    .flatMap((f) => Object.values(readJson(path.join(dir, f), { matches: {} }).matches));
+}
 function loadOpta(lg) {
   const doc = readJson(path.join(root, 'data', 'opta', `${lg}.json`), null);
   return doc ? Object.values(doc.matches) : [];
@@ -178,6 +194,23 @@ for (const lg of [...leagues].sort()) {
       if (src === 'opta' && r.stats_src) continue;
       const m = findStatMatch(r, byDay.get(r.date) ?? [], (a, b) => nameScore(a, null, b));
       if (m) { applyStats(r, m); hit++; }
+    }
+  }
+  // FotMob (Opta) sist: xG där understat/football-data saknas, övrigt bara i tomma celler
+  const fm = loadFotmob(lg);
+  if (fm.length) {
+    const byDay = new Map();
+    for (const m of fm) if (m.d) (byDay.get(m.d) ?? byDay.set(m.d, []).get(m.d)).push(m);
+    const near = (d) => [-1, 0, 1].flatMap((x) => byDay.get(new Date(Date.parse(d) + x * 864e5).toISOString().slice(0, 10)) ?? []);
+    // Först på lagens FotMob-id (config/team-ids.json: HamKam = Hamarkameratene, AGF = Aarhus), sedan på namn
+    const ids = teamIds.leagues?.[lg] ?? {};
+    const byIds = new Map(fm.filter((m) => m.hid && m.aid).map((m) => [`${m.d}|${m.hid}|${m.aid}`, m]));
+    for (const r of rows) {
+      const hi = ids[r.home], ai = ids[r.away];
+      const m = (hi && ai ? [0, -1, 1].map((x) => byIds.get(`${new Date(Date.parse(r.date) + x * 864e5).toISOString().slice(0, 10)}|${hi}|${ai}`)).find(Boolean) : null)
+        ?? findStatMatch(r, near(r.date), (a, b) => nameScore(a, null, b))
+        ?? oneSideId(r, near(r.date), hi, ai);
+      if (m) { applyFotmob(r, m); hit++; }
     }
   }
   if (hit) statHits.push(`${lg} ${hit}/${rows.length}`);

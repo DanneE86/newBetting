@@ -43,6 +43,7 @@
     "matchstats": "node scripts/fetch-matchstats.mjs",
     "klubbtrupper": "node scripts/fetch-klubbtrupper.mjs",
     "opta": "node scripts/fetch-opta.mjs",
+    "fotmob:matcher": "node scripts/fetch-fotmob-matcher.mjs",
     "domare": "node scripts/fetch-referees.mjs",
     "domare:fotmob": "node scripts/fetch-referees-fotmob.mjs",
     "domare:allsvenskan": "node scripts/fetch-referees-allsvenskan.mjs",

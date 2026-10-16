@@ -34,6 +34,9 @@ scripts/hastar-ogonblick.mjs
 data/hastar/interbet/
 data/hastar/compare-interbet-*.json
 
+# Spelarstatistik per match från FotMob/Opta (stor, ~10 kB per match) stannar lokalt; lagfilerna versioneras
+data/fotmob-matcher/*/spelare/
+
 # Lokal databas (byggs ur data/ med npm run databas, stor och lokal)
 databas/*.sqlite
 databas/*.sqlite.bygger

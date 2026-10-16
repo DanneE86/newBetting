@@ -1,0 +1,181 @@
+{
+ "updatedAt": "2026-10-16T09:11:07.411Z",
+ "league": "CAN",
+ "fotmobId": 9986,
+ "name": "Premier League",
+ "country": "CAN",
+ "table": [
+  {
+   "rank": 1,
+   "team": "Cavalry FC",
+   "fotmobName": "Cavalry FC",
+   "fotmobId": 1022952,
+   "group": null,
+   "played": 26,
+   "won": 16,
+   "drawn": 6,
+   "lost": 4,
+   "goals": "53-21",
+   "gd": 32,
+   "pts": 54
+  },
+  {
+   "rank": 2,
+   "team": "Forge FC",
+   "fotmobName": "Forge FC",
+   "fotmobId": 1022955,
+   "group": null,
+   "played": 26,
+   "won": 16,
+   "drawn": 6,
+   "lost": 4,
+   "goals": "46-20",
+   "gd": 26,
+   "pts": 54
+  },
+  {
+   "rank": 3,
+   "team": "Atlético Ottawa",
+   "fotmobName": "Atlético Ottawa",
+   "fotmobId": 1135780,
+   "group": null,
+   "played": 26,
+   "won": 13,
+   "drawn": 4,
+   "lost": 9,
+   "goals": "40-41",
+   "gd": -1,
+   "pts": 43
+  },
+  {
+   "rank": 4,
+   "team": "Vancouver FC",
+   "fotmobName": "Vancouver FC",
+   "fotmobId": 1436202,
+   "group": null,
+   "played": 26,
+   "won": 9,
+   "drawn": 7,
+   "lost": 10,
+   "goals": "37-35",
+   "gd": 2,
+   "pts": 34
+  },
+  {
+   "rank": 5,
+   "team": "Supra du Québec",
+   "fotmobName": "Supra du Québec",
+   "fotmobId": 1899648,
+   "group": null,
+   "played": 26,
+   "won": 9,
+   "drawn": 5,
+   "lost": 12,
+   "goals": "40-47",
+   "gd": -7,
+   "pts": 32
+  },
+  {
+   "rank": 6,
+   "team": "HFX Wanderers FC",
+   "fotmobName": "HFX Wanderers FC",
+   "fotmobId": 1022948,
+   "group": null,
+   "played": 26,
+   "won": 7,
+   "drawn": 7,
+   "lost": 12,
+   "goals": "40-44",
+   "gd": -4,
+   "pts": 28
+  },
+  {
+   "rank": 7,
+   "team": "Inter Toronto FC",
+   "fotmobName": "Inter Toronto FC",
+   "fotmobId": 1022954,
+   "group": null,
+   "played": 26,
+   "won": 6,
+   "drawn": 9,
+   "lost": 11,
+   "goals": "40-61",
+   "gd": -21,
+   "pts": 27
+  },
+  {
+   "rank": 8,
+   "team": "Pacific FC",
+   "fotmobName": "Pacific FC",
+   "fotmobId": 1022953,
+   "group": null,
+   "played": 26,
+   "won": 2,
+   "drawn": 8,
+   "lost": 16,
+   "goals": "30-57",
+   "gd": -27,
+   "pts": 14
+  }
+ ],
+ "tableHistory": {
+  "2026-10-16": [
+   [
+    "Cavalry FC",
+    1,
+    26,
+    54,
+    32
+   ],
+   [
+    "Forge FC",
+    2,
+    26,
+    54,
+    26
+   ],
+   [
+    "Atlético Ottawa",
+    3,
+    26,
+    43,
+    -1
+   ],
+   [
+    "Vancouver FC",
+    4,
+    26,
+    34,
+    2
+   ],
+   [
+    "Supra du Québec",
+    5,
+    26,
+    32,
+    -7
+   ],
+   [
+    "HFX Wanderers FC",
+    6,
+    26,
+    28,
+    -4
+   ],
+   [
+    "Inter Toronto FC",
+    7,
+    26,
+    27,
+    -21
+   ],
+   [
+    "Pacific FC",
+    8,
+    26,
+    14,
+    -27
+   ]
+  ]
+ }
+}

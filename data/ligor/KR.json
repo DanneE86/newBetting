@@ -1,0 +1,265 @@
+{
+ "updatedAt": "2026-10-16T09:11:07.411Z",
+ "league": "KR",
+ "fotmobId": 9080,
+ "name": "K League 1",
+ "country": "KOR",
+ "table": [
+  {
+   "rank": 1,
+   "team": "FC Seoul",
+   "fotmobName": "FC Seoul",
+   "fotmobId": 92630,
+   "group": null,
+   "played": 31,
+   "won": 20,
+   "drawn": 5,
+   "lost": 6,
+   "goals": "58-26",
+   "gd": 32,
+   "pts": 65
+  },
+  {
+   "rank": 2,
+   "team": "Ulsan HD FC",
+   "fotmobName": "Ulsan HD FC",
+   "fotmobId": 133896,
+   "group": null,
+   "played": 31,
+   "won": 14,
+   "drawn": 5,
+   "lost": 12,
+   "goals": "48-44",
+   "gd": 4,
+   "pts": 47
+  },
+  {
+   "rank": 3,
+   "team": "Gangwon FC",
+   "fotmobName": "Gangwon FC",
+   "fotmobId": 164734,
+   "group": null,
+   "played": 31,
+   "won": 11,
+   "drawn": 13,
+   "lost": 7,
+   "goals": "38-28",
+   "gd": 10,
+   "pts": 46
+  },
+  {
+   "rank": 4,
+   "team": "Jeju SK",
+   "fotmobName": "Jeju SK",
+   "fotmobId": 133898,
+   "group": null,
+   "played": 31,
+   "won": 12,
+   "drawn": 10,
+   "lost": 9,
+   "goals": "36-31",
+   "gd": 5,
+   "pts": 46
+  },
+  {
+   "rank": 5,
+   "team": "Jeonbuk Hyundai Motors FC",
+   "fotmobName": "Jeonbuk Hyundai Motors FC",
+   "fotmobId": 46038,
+   "group": null,
+   "played": 31,
+   "won": 11,
+   "drawn": 11,
+   "lost": 9,
+   "goals": "39-30",
+   "gd": 9,
+   "pts": 44
+  },
+  {
+   "rank": 6,
+   "team": "Daejeon Hana Citizen",
+   "fotmobName": "Daejeon Hana Citizen",
+   "fotmobId": 133900,
+   "group": null,
+   "played": 31,
+   "won": 11,
+   "drawn": 10,
+   "lost": 10,
+   "goals": "48-38",
+   "gd": 10,
+   "pts": 43
+  },
+  {
+   "rank": 7,
+   "team": "Incheon United",
+   "fotmobName": "Incheon United",
+   "fotmobId": 133895,
+   "group": null,
+   "played": 31,
+   "won": 11,
+   "drawn": 9,
+   "lost": 11,
+   "goals": "39-33",
+   "gd": 6,
+   "pts": 42
+  },
+  {
+   "rank": 8,
+   "team": "FC Anyang",
+   "fotmobName": "FC Anyang",
+   "fotmobId": 429440,
+   "group": null,
+   "played": 31,
+   "won": 10,
+   "drawn": 11,
+   "lost": 10,
+   "goals": "39-47",
+   "gd": -8,
+   "pts": 41
+  },
+  {
+   "rank": 9,
+   "team": "Pohang Steelers",
+   "fotmobName": "Pohang Steelers",
+   "fotmobId": 109373,
+   "group": null,
+   "played": 31,
+   "won": 11,
+   "drawn": 7,
+   "lost": 13,
+   "goals": "28-37",
+   "gd": -9,
+   "pts": 40
+  },
+  {
+   "rank": 10,
+   "team": "Gimcheon Sangmu",
+   "fotmobName": "Gimcheon Sangmu",
+   "fotmobId": 133901,
+   "group": null,
+   "played": 31,
+   "won": 5,
+   "drawn": 18,
+   "lost": 8,
+   "goals": "30-37",
+   "gd": -7,
+   "pts": 33
+  },
+  {
+   "rank": 11,
+   "team": "Bucheon FC 1995",
+   "fotmobName": "Bucheon FC 1995",
+   "fotmobId": 429441,
+   "group": null,
+   "played": 31,
+   "won": 7,
+   "drawn": 11,
+   "lost": 13,
+   "goals": "31-42",
+   "gd": -11,
+   "pts": 32
+  },
+  {
+   "rank": 12,
+   "team": "Gwangju FC",
+   "fotmobName": "Gwangju FC",
+   "fotmobId": 245905,
+   "group": null,
+   "played": 31,
+   "won": 2,
+   "drawn": 12,
+   "lost": 17,
+   "goals": "25-66",
+   "gd": -41,
+   "pts": 18
+  }
+ ],
+ "tableHistory": {
+  "2026-10-16": [
+   [
+    "FC Seoul",
+    1,
+    31,
+    65,
+    32
+   ],
+   [
+    "Ulsan HD FC",
+    2,
+    31,
+    47,
+    4
+   ],
+   [
+    "Gangwon FC",
+    3,
+    31,
+    46,
+    10
+   ],
+   [
+    "Jeju SK",
+    4,
+    31,
+    46,
+    5
+   ],
+   [
+    "Jeonbuk Hyundai Motors FC",
+    5,
+    31,
+    44,
+    9
+   ],
+   [
+    "Daejeon Hana Citizen",
+    6,
+    31,
+    43,
+    10
+   ],
+   [
+    "Incheon United",
+    7,
+    31,
+    42,
+    6
+   ],
+   [
+    "FC Anyang",
+    8,
+    31,
+    41,
+    -8
+   ],
+   [
+    "Pohang Steelers",
+    9,
+    31,
+    40,
+    -9
+   ],
+   [
+    "Gimcheon Sangmu",
+    10,
+    31,
+    33,
+    -7
+   ],
+   [
+    "Bucheon FC 1995",
+    11,
+    31,
+    32,
+    -11
+   ],
+   [
+    "Gwangju FC",
+    12,
+    31,
+    18,
+    -41
+   ]
+  ]
+ }
+}

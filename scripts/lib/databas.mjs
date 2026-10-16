@@ -1,6 +1,7 @@
 // Lokal databas (SQLite, inbyggd i Node): översätter filerna i data/ till tabeller med svenska namn.
 // Filerna är fortfarande originalet – databasen byggs om från dem (scripts/bygg-databas.mjs) och ändrar aldrig dem.
 // Ren logik här (ingen disk), så att varje översättning kan testas.
+import { parseTempo } from './sportinfo-lopp.mjs';
 
 /** Värde som SQLite tar emot: tomt → null, ja/nej → 1/0, objekt → JSON-text. */
 export function sqlVarde(v) {
@@ -57,7 +58,7 @@ export const MATCH_KOLUMNER = [
   ['ast', 'borta_skott_pa_mal', 'INTEGER', 'skott på mål, bortalaget'],
   ['xg_h', 'hemma_xg', 'REAL', 'förväntade mål (xG), hemmalaget'],
   ['xg_a', 'borta_xg', 'REAL', 'förväntade mål (xG), bortalaget'],
-  ['xg_src', 'xg_kalla', 'TEXT', 'understat, football-data eller skott (uppskattad)'],
+  ['xg_src', 'xg_kalla', 'TEXT', 'understat, football-data, fotmob eller skott (uppskattad)'],
   ['referee', 'domare', 'TEXT', 'huvuddomare'],
   ['hc', 'hemma_horn', 'INTEGER', 'hörnor, hemmalaget'],
   ['ac', 'borta_horn', 'INTEGER', 'hörnor, bortalaget'],
@@ -133,7 +134,7 @@ export const MATCH_KOLUMNER = [
   ['cro_a', 'borta_inlagg', 'INTEGER', 'inlägg, bortalaget'],
   ['att_h', 'hemma_anfall', 'INTEGER', 'anfall, hemmalaget'],
   ['att_a', 'borta_anfall', 'INTEGER', 'anfall, bortalaget'],
-  ['bigch_h', 'hemma_stora_chanser', 'INTEGER', 'stora chanser, hemmalaget (bara 365scores)'],
+  ['bigch_h', 'hemma_stora_chanser', 'INTEGER', 'stora chanser, hemmalaget (365scores eller FotMob)'],
   ['bigch_a', 'borta_stora_chanser', 'INTEGER', 'stora chanser, bortalaget'],
   ['htg_h', 'hemma_mal_halvtid', 'INTEGER', 'mål i halvtid, hemmalaget'],
   ['htg_a', 'borta_mal_halvtid', 'INTEGER', 'mål i halvtid, bortalaget'],
@@ -141,7 +142,26 @@ export const MATCH_KOLUMNER = [
   ['form_a', 'borta_formation', 'TEXT', 'formation, bortalaget'],
   ['venue', 'arena', 'TEXT', 'arena'],
   ['att', 'publik', 'INTEGER', 'publiksiffra'],
-  ['stats_src', 'statistik_kalla', 'TEXT', 'espn, 365 eller opta'],
+  ['stats_src', 'statistik_kalla', 'TEXT', 'espn, 365, opta eller fotmob'],
+  ['xgot_h', 'hemma_xg_pa_mal', 'REAL', 'xG på mål (xGOT), hemmalaget (FotMob/Opta)'],
+  ['xgot_a', 'borta_xg_pa_mal', 'REAL', 'xG på mål (xGOT), bortalaget'],
+  ['xgop_h', 'hemma_xg_oppet_spel', 'REAL', 'xG i öppet spel, hemmalaget (FotMob/Opta)'],
+  ['xgop_a', 'borta_xg_oppet_spel', 'REAL', 'xG i öppet spel, bortalaget'],
+  ['xgsp_h', 'hemma_xg_fasta', 'REAL', 'xG på fasta situationer, hemmalaget (FotMob/Opta)'],
+  ['xgsp_a', 'borta_xg_fasta', 'REAL', 'xG på fasta situationer, bortalaget'],
+  ['tob_h', 'hemma_kontakter_straffomrade', 'INTEGER', 'bollkontakter i motståndarens straffområde, hemmalaget (FotMob/Opta)'],
+  ['tob_a', 'borta_kontakter_straffomrade', 'INTEGER', 'bollkontakter i motståndarens straffområde, bortalaget'],
+  ['bigchm_h', 'hemma_missade_stora_chanser', 'INTEGER', 'missade stora chanser, hemmalaget (FotMob/Opta)'],
+  ['bigchm_a', 'borta_missade_stora_chanser', 'INTEGER', 'missade stora chanser, bortalaget'],
+  ['duel_h', 'hemma_vunna_dueller', 'INTEGER', 'vunna dueller, hemmalaget (FotMob/Opta)'],
+  ['duel_a', 'borta_vunna_dueller', 'INTEGER', 'vunna dueller, bortalaget'],
+  ['aer_h', 'hemma_vunna_luftdueller', 'INTEGER', 'vunna luftdueller, hemmalaget (FotMob/Opta)'],
+  ['aer_a', 'borta_vunna_luftdueller', 'INTEGER', 'vunna luftdueller, bortalaget'],
+  ['clr_h', 'hemma_rensningar', 'INTEGER', 'rensningar, hemmalaget (FotMob/Opta)'],
+  ['clr_a', 'borta_rensningar', 'INTEGER', 'rensningar, bortalaget'],
+  ['rat_h', 'hemma_lagbetyg', 'REAL', 'lagets FotMob-betyg, hemmalaget (FotMob/Opta)'],
+  ['rat_a', 'borta_lagbetyg', 'REAL', 'lagets FotMob-betyg, bortalaget'],
+  ['fotmob_id', 'fotmob_match_id', 'TEXT', 'matchens id hos FotMob'],
 ];
 
 /** En rad ur matchfilen → databasrad (svenska kolumnnamn, tal som tal, H/D/A som 1/X/2). Okända kolumner följer med oförändrade. */
@@ -224,6 +244,53 @@ export function matchstatRader(doc) {
     }
   }
   return { matcher, spelare };
+}
+
+// FotMob/Opta (data/fotmob-matcher) → databasnamn. Lagnycklar blir hemma_<namn>/borta_<namn>.
+export const OPTA_LAGKOLUMN = {
+  poss: 'bollinnehav', xg: 'xg', xgop: 'xg_oppet_spel', xgsp: 'xg_fasta', xgnp: 'xg_utan_straff', xgot: 'xg_pa_mal',
+  sh: 'skott', sot: 'skott_pa_mal', shoff: 'skott_utanfor', shb: 'blockerade_skott', wood: 'stolpe_ribba',
+  shib: 'skott_i_straffomradet', shob: 'skott_utanfor_straffomradet', bigch: 'stora_chanser', bigchm: 'missade_stora_chanser',
+  pas: 'passningar', pasok: 'lyckade_passningar', pasown: 'passningar_egen_halva', pasopp: 'passningar_motstandarhalva',
+  lb: 'lyckade_langa_bollar', cro: 'lyckade_inlagg', thr: 'inkast', tob: 'kontakter_straffomrade', off: 'offside',
+  tkl: 'tacklingar', int: 'brytningar', blk: 'blockeringar', clr: 'rensningar', sav: 'raddningar', duel: 'vunna_dueller',
+  gduel: 'vunna_markdueller', aer: 'vunna_luftdueller', drb: 'lyckade_dribblingar', yc: 'gula', rc: 'roda',
+  fou: 'begangna_frisparkar', cor: 'horn',
+};
+export const OPTA_SPELARKOLUMN = {
+  rat: 'betyg', min: 'minuter', g: 'mal', a: 'assist', xg: 'xg', xgot: 'xg_pa_mal', xgnp: 'xg_utan_straff', xa: 'xa',
+  sh: 'skott', sot: 'skott_pa_mal', shoff: 'skott_utanfor', shb: 'blockerade_skott', pasok: 'lyckade_passningar',
+  pasokN: 'passningar', kp: 'skapade_chanser', bcc: 'skapade_stora_chanser', bcm: 'missade_stora_chanser', tch: 'bollkontakter',
+  tob: 'kontakter_straffomrade', p3: 'passningar_sista_tredjedel', cro: 'lyckade_inlagg', croN: 'inlagg',
+  lb: 'lyckade_langa_bollar', lbN: 'langa_bollar', disp: 'bolltapp', def: 'defensiva_aktioner', tkl: 'tacklingar',
+  blk: 'blockeringar', clr: 'rensningar', hclr: 'nickrensningar', int: 'brytningar', rec: 'bollvinster',
+  drbp: 'dribblad_forbi', drb: 'lyckade_dribblingar', drbN: 'dribblingar', gduel: 'vunna_markdueller', gduelN: 'markdueller',
+  aer: 'vunna_luftdueller', aerN: 'luftdueller', fs: 'vunna_frisparkar', fc: 'begangna_frisparkar', duelw: 'vunna_dueller',
+  duell: 'forlorade_dueller', sav: 'raddningar', gc: 'inslappta_mal', xgotf: 'xg_pa_mal_mot', gp: 'forhindrade_mal',
+  swp: 'utrusningar', hcl: 'hoga_bollar_tagna', pun: 'boxningar', dsav: 'raddningar_med_dyk', savib: 'raddningar_i_straffomradet',
+  penw: 'vunna_straffar', penc: 'orsakade_straffar', penm: 'missade_straffar', yc: 'gula', rc: 'roda', cor: 'horn',
+  off: 'offside', thr: 'inkast',
+};
+const optaNamn = (map, k) => map[k] ?? (map[k.replace(/N$/, '')] ? `${map[k.replace(/N$/, '')]}_forsok` : k.toLowerCase());
+
+/** FotMob/Opta-säsongsfil (lag) + spelarfilen för samma säsong → en rad per match och en per spelare och match. */
+export function optaMatchRader(lagDoc, spelarDoc = null) {
+  const lag = [], spelare = [];
+  const liga = lagDoc?.league ?? null, sasong = lagDoc?.season ?? null;
+  for (const m of Object.values(lagDoc?.matches ?? {})) {
+    const match_id = `fotmob:${m.id}`;
+    const r = { match_id, fotmob_match_id: String(m.id), liga, sasong, datum: m.d, avspark: m.k ?? null, hemmalag: m.h, bortalag: m.a, hemmamal: m.hg ?? null, bortamal: m.ag ?? null,
+      hemma_formation: m.form?.[0] ?? null, borta_formation: m.form?.[1] ?? null, hemma_lagbetyg: m.rat?.[0] ?? null, borta_lagbetyg: m.rat?.[1] ?? null };
+    for (const [k, v] of Object.entries(m.s ?? {})) { const n = optaNamn(OPTA_LAGKOLUMN, k); r[`hemma_${n}`] = v?.[0] ?? null; r[`borta_${n}`] = v?.[1] ?? null; }
+    lag.push(r);
+    for (const p of spelarDoc?.matches?.[m.id] ?? []) {
+      const sr = { match_id, liga, sasong, datum: m.d, spelar_id: p.id, opta_id: p.optaId ?? null, namn: p.n ?? null,
+        sida: p.t === 0 ? 'hemma' : p.t === 1 ? 'borta' : null, lag: p.t === 0 ? m.h : p.t === 1 ? m.a : null, malvakt: p.gk ? 1 : 0, startade: p.st ?? null };
+      for (const [k, v] of Object.entries(p.s ?? {})) sr[optaNamn(OPTA_SPELARKOLUMN, k)] = v;
+      spelare.push(sr);
+    }
+  }
+  return { lag, spelare };
 }
 
 /** Oddset-tipsloggen → en rad per match och marknad (senaste tipset före matchen). */
@@ -507,13 +574,17 @@ export function travsportOmgangRader(doc) {
   return [...(doc?.hastar ?? []).map((h) => rad(h, 1)), ...(doc?.saknas ?? []).map((h) => rad(h, 0))];
 }
 
-/** Sportinfos tävlingsdag (data/hastar/sportinfo/<ts-id>.json) → lopp, tempodelar och målordning. */
+/** Sportinfos tävlingsdag (data/hastar/sportinfo/<ts-id>.json) → lopp, tempodelar och målordning.
+ *  Tempot räknas om ur tempotexten, så att filer från en äldre tolkning (bara komma som decimal) blir rätt. */
 export function sportinfoLoppRader(doc) {
   const dag = { raceday_id: doc?.raceday_id ?? null, datum: doc?.datum ?? null, bana: doc?.bana ?? null };
   if (!dag.raceday_id) return { lopp: [], tempo: [], malordning: [] };
   const lopp = [], tempo = [], malordning = [];
   for (const l of doc.lopp ?? []) {
-    const { tempo: delar, malordning: ordning, domartexter, namnda_nr, ...rest } = l;
+    const { tempo: sparat, malordning: ordning, domartexter, namnda_nr, ...rest } = l;
+    const omraknat = l.tempo_text ? parseTempo(l.tempo_text) : null;
+    const delar = omraknat ? omraknat.delar : sparat;
+    if (omraknat) Object.assign(rest, { sista500: omraknat.sista500, sista500_sek: omraknat.sista500_sek });
     lopp.push({ ...dag, ...rest, domartexter: (domartexter ?? []).join('\n') || null, namnda_nr: (namnda_nr ?? []).join(',') || null, hamtad: doc.hamtad ?? null });
     for (const t of delar ?? []) tempo.push({ raceday_id: dag.raceday_id, lopp: l.lopp, ...t });
     for (const h of ordning ?? []) malordning.push({ raceday_id: dag.raceday_id, datum: dag.datum, lopp: l.lopp, ...h });

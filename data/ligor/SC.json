@@ -1,0 +1,265 @@
+{
+ "updatedAt": "2026-10-16T09:11:07.411Z",
+ "league": "SC",
+ "fotmobId": 64,
+ "name": "Premiership",
+ "country": "SCO",
+ "table": [
+  {
+   "rank": 1,
+   "team": "Celtic",
+   "fotmobName": "Celtic",
+   "fotmobId": 9925,
+   "group": null,
+   "played": 8,
+   "won": 7,
+   "drawn": 0,
+   "lost": 1,
+   "goals": "16-4",
+   "gd": 12,
+   "pts": 21
+  },
+  {
+   "rank": 2,
+   "team": "Rangers",
+   "fotmobName": "Rangers",
+   "fotmobId": 8548,
+   "group": null,
+   "played": 8,
+   "won": 6,
+   "drawn": 1,
+   "lost": 1,
+   "goals": "11-5",
+   "gd": 6,
+   "pts": 19
+  },
+  {
+   "rank": 3,
+   "team": "Hearts",
+   "fotmobName": "Heart of Midlothian",
+   "fotmobId": 9860,
+   "group": null,
+   "played": 8,
+   "won": 5,
+   "drawn": 1,
+   "lost": 2,
+   "goals": "19-8",
+   "gd": 11,
+   "pts": 16
+  },
+  {
+   "rank": 4,
+   "team": "Dundee",
+   "fotmobName": "Dundee FC",
+   "fotmobId": 8284,
+   "group": null,
+   "played": 8,
+   "won": 4,
+   "drawn": 1,
+   "lost": 3,
+   "goals": "11-8",
+   "gd": 3,
+   "pts": 13
+  },
+  {
+   "rank": 5,
+   "team": "St Johnstone",
+   "fotmobName": "St. Johnstone",
+   "fotmobId": 8467,
+   "group": null,
+   "played": 8,
+   "won": 3,
+   "drawn": 2,
+   "lost": 3,
+   "goals": "10-10",
+   "gd": 0,
+   "pts": 11
+  },
+  {
+   "rank": 6,
+   "team": "Dundee United",
+   "fotmobName": "Dundee United",
+   "fotmobId": 9938,
+   "group": null,
+   "played": 8,
+   "won": 3,
+   "drawn": 2,
+   "lost": 3,
+   "goals": "10-11",
+   "gd": -1,
+   "pts": 11
+  },
+  {
+   "rank": 7,
+   "team": "St Mirren",
+   "fotmobName": "St. Mirren",
+   "fotmobId": 9800,
+   "group": null,
+   "played": 8,
+   "won": 3,
+   "drawn": 1,
+   "lost": 4,
+   "goals": "8-14",
+   "gd": -6,
+   "pts": 10
+  },
+  {
+   "rank": 8,
+   "team": "Aberdeen",
+   "fotmobName": "Aberdeen",
+   "fotmobId": 8485,
+   "group": null,
+   "played": 8,
+   "won": 2,
+   "drawn": 2,
+   "lost": 4,
+   "goals": "7-9",
+   "gd": -2,
+   "pts": 8
+  },
+  {
+   "rank": 9,
+   "team": "Motherwell",
+   "fotmobName": "Motherwell",
+   "fotmobId": 9927,
+   "group": null,
+   "played": 8,
+   "won": 2,
+   "drawn": 2,
+   "lost": 4,
+   "goals": "9-13",
+   "gd": -4,
+   "pts": 8
+  },
+  {
+   "rank": 10,
+   "team": "Hibernian",
+   "fotmobName": "Hibernian",
+   "fotmobId": 10251,
+   "group": null,
+   "played": 8,
+   "won": 2,
+   "drawn": 1,
+   "lost": 5,
+   "goals": "8-12",
+   "gd": -4,
+   "pts": 7
+  },
+  {
+   "rank": 11,
+   "team": "Falkirk",
+   "fotmobName": "Falkirk",
+   "fotmobId": 8596,
+   "group": null,
+   "played": 8,
+   "won": 1,
+   "drawn": 3,
+   "lost": 4,
+   "goals": "7-11",
+   "gd": -4,
+   "pts": 6
+  },
+  {
+   "rank": 12,
+   "team": "Kilmarnock",
+   "fotmobName": "Kilmarnock",
+   "fotmobId": 8597,
+   "group": null,
+   "played": 8,
+   "won": 1,
+   "drawn": 2,
+   "lost": 5,
+   "goals": "7-18",
+   "gd": -11,
+   "pts": 5
+  }
+ ],
+ "tableHistory": {
+  "2026-10-16": [
+   [
+    "Celtic",
+    1,
+    8,
+    21,
+    12
+   ],
+   [
+    "Rangers",
+    2,
+    8,
+    19,
+    6
+   ],
+   [
+    "Hearts",
+    3,
+    8,
+    16,
+    11
+   ],
+   [
+    "Dundee",
+    4,
+    8,
+    13,
+    3
+   ],
+   [
+    "St Johnstone",
+    5,
+    8,
+    11,
+    0
+   ],
+   [
+    "Dundee United",
+    6,
+    8,
+    11,
+    -1
+   ],
+   [
+    "St Mirren",
+    7,
+    8,
+    10,
+    -6
+   ],
+   [
+    "Aberdeen",
+    8,
+    8,
+    8,
+    -2
+   ],
+   [
+    "Motherwell",
+    9,
+    8,
+    8,
+    -4
+   ],
+   [
+    "Hibernian",
+    10,
+    8,
+    7,
+    -4
+   ],
+   [
+    "Falkirk",
+    11,
+    8,
+    6,
+    -4
+   ],
+   [
+    "Kilmarnock",
+    12,
+    8,
+    5,
+    -11
+   ]
+  ]
+ }
+}
