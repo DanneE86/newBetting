@@ -4088,3 +4088,90 @@ test.describe('databas: Opta via FotMob', () => {
     expect(optaMatchRader(lagDoc).spelare).toEqual([]);
   });
 });
+
+// ---------- pro/match-xg.mjs + Dixon-Coles med xG ----------
+
+test.describe('Dixon-Coles: styrka ur mål + xG', () => {
+  const pro = (f: string) => import(pathToFileURL(path.join(ROOT, 'scripts', 'pro', f)).href);
+  // A gör 1 mål per match men skapar 3 xG, B gör 1 mål på 0,5 xG – likadana på mål, olika på xG
+  const serie = () => {
+    const out: any[] = [];
+    const lag = ['A', 'B', 'C', 'D'];
+    const xg: Record<string, number> = { A: 3, B: 0.5, C: 1, D: 1 };
+    let dag = 0;
+    for (let r = 0; r < 8; r++) for (const h of lag) for (const a of lag) {
+      if (h === a) continue;
+      dag++;
+      const date = new Date(Date.UTC(2025, 0, 1) + dag * 86_400_000).toISOString().slice(0, 10);
+      out.push({ date, home: h, away: a, hg: 1, ag: 1, xh: xg[h], xa: xg[a] });
+    }
+    return out;
+  };
+
+  test('xgW 0 = bara mål, xgW 0,5 lyfter laget som skapar mer', async () => {
+    const { fitDixonColes, predictDixonColes } = await pro('lib.mjs');
+    const m = serie();
+    const mal = fitDixonColes(m, '2026-01-01');
+    const noll = fitDixonColes(m, '2026-01-01', { xgW: 0 });
+    expect(noll.att.get('A')).toBeCloseTo(mal.att.get('A'), 10);
+    expect(mal.att.get('A')).toBeCloseTo(mal.att.get('B'), 6);
+    const mix = fitDixonColes(m, '2026-01-01', { xgW: 0.5 });
+    expect(mix.att.get('A')).toBeGreaterThan(mix.att.get('B'));
+    const p = predictDixonColes(mix, 'A', 'B');
+    expect(p.home).toBeGreaterThan(p.away);
+    expect(p.home + p.draw + p.away).toBeCloseTo(1, 6);
+  });
+
+  test('rho räknas på riktiga mål, och matcher utan xG använder målen', async () => {
+    const { fitDixonColes } = await pro('lib.mjs');
+    const m = serie();
+    expect(fitDixonColes(m, '2026-01-01', { xgW: 0.7 }).rho).toBe(fitDixonColes(m, '2026-01-01').rho);
+    const utan = m.map(({ xh, xa, ...r }) => r);
+    expect(fitDixonColes(utan, '2026-01-01', { xgW: 0.7 }).att.get('A')).toBeCloseTo(fitDixonColes(utan, '2026-01-01').att.get('A'), 10);
+  });
+
+  test('ligamodellen skickar xgW vidare, standard 0,5', async () => {
+    const lm = await pro('league-models.mjs');
+    expect(lm.DEFAULT_PARAMS.xgW).toBe(0.5);
+    const m = serie();
+    const a = lm.fitLeagueModel(m, '2026-01-01', lm.DEFAULT_PARAMS);
+    const b = lm.fitLeagueModel(m, '2026-01-01', { ...lm.DEFAULT_PARAMS, xgW: 0 });
+    expect(a.att.get('A')).toBeGreaterThan(b.att.get('A'));
+  });
+
+  test('match-xg: koppling på liga, datum, resultat och lagnamn; skottproxy hoppas över', async () => {
+    const { indexMatchXg, attachMatchXg } = await pro('match-xg.mjs');
+    const idx = indexMatchXg([
+      { league: 'PL', date: '2026-01-01', home: 'Manchester United', away: 'Arsenal', hg: '1', ag: '0', xg_h: '1.4', xg_a: '0.9', xg_src: 'understat' },
+      { league: 'PL', date: '2026-01-01', home: 'Chelsea', away: 'Fulham', hg: '1', ag: '0', xg_h: '2.0', xg_a: '0.2', xg_src: 'understat' },
+      { league: 'AS', date: '2026-01-02', home: 'Malmo FF', away: 'AIK', hg: '2', ag: '2', xg_h: '1.1', xg_a: '1.3', xg_src: 'fotmob' },
+      { league: 'SE2', date: '2026-01-02', home: 'X', away: 'Y', hg: '0', ag: '0', xg_h: '0.5', xg_a: '0.5', xg_src: 'skott' },
+      { league: 'AS', date: '2026-01-03', home: 'Q', away: 'R', hg: '', ag: '', xg_h: '', xg_a: '', xg_src: '' },
+    ]);
+    const m: any[] = [
+      { league: 'PL', date: '2026-01-01', home: 'Chelsea', away: 'Fulham', hg: 1, ag: 0 },
+      { league: 'PL', date: '2026-01-01', home: 'Man Utd', away: 'Arsenal', hg: 1, ag: 0 }, // två kandidater, namnet matchar inte → ingen
+      { league: 'AS', date: '2026-01-02', home: 'Malmö', away: 'AIK', hg: 2, ag: 2 }, // ensam kandidat → kopplas
+      { league: 'SE2', date: '2026-01-02', home: 'X', away: 'Y', hg: 0, ag: 0 },
+      { league: 'AS', date: '2026-01-02', home: 'Malmö', away: 'AIK', hg: 1, ag: 2 }, // annat resultat
+    ];
+    expect(attachMatchXg(m, idx)).toBe(2);
+    expect([m[0].xh, m[0].xa]).toEqual([2.0, 0.2]);
+    expect(m[1].xh).toBeUndefined();
+    expect([m[2].xh, m[2].xa]).toEqual([1.1, 1.3]);
+    expect(m[3].xh).toBeUndefined();
+    expect(m[4].xh).toBeUndefined();
+  });
+
+  test('ligamodellerna har xgW per liga och riktig data kopplar xG i PL och AS', async () => {
+    const cfg = JSON.parse(fs.readFileSync(path.join(ROOT, 'config', 'league-models.json'), 'utf8'));
+    for (const [lg, v] of Object.entries<any>(cfg.leagues)) expect([0, 0.5, 0.7], lg).toContain(v.params.xgW);
+    const { loadMatchXg } = await pro('match-xg.mjs');
+    const store = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'betting-store.json'), 'utf8').replace(/^\uFEFF/, ''));
+    for (const lg of ['PL', 'AS']) {
+      const m = store.matches.filter((x: any) => x.league === lg && Number.isFinite(x.hg));
+      loadMatchXg(ROOT, m);
+      expect(m.filter((x: any) => Number.isFinite(x.xh)).length / m.length, lg).toBeGreaterThan(0.9);
+    }
+  });
+});

@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-27T13:11:49.646Z",
-  "method": "Point-in-time veckorefit, sasong 2025/26 + 2026/27, RPS 1X2. Grid xi x shrink x prior x drawK; byter fran standard bara vid >= 0.0005 battre RPS. earlyMarket nar marknaden (snitt oppningsodds) ar >= 0.01 battre i omgang 1-8 (minst 60 matcher).",
+  "updatedAt": "2026-10-16T21:33:12.114Z",
+  "method": "Point-in-time veckorefit, ligans 2 senaste sasonger, RPS 1X2. Grid xi x shrink x prior x xgW (0/0,5/0,7, andel xG i styrkan) x drawK; byter fran standard bara vid >= 0.0005 battre RPS. earlyMarket nar marknaden (snitt oppningsodds) ar >= 0.01 battre i omgang 1-8 (minst 60 matcher).",
   "defaults": {
     "xi": 0.0025,
     "shrink": 2,
@@ -9,34 +9,55 @@
     "topQ": 0.75,
     "botQ": 0.25,
     "drawK": 1,
-    "earlyMarket": false
+    "earlyMarket": false,
+    "xgW": 0.5
   },
   "leagues": {
     "AR": {
       "params": {
-        "xi": 0.0015,
-        "shrink": 5,
-        "prior": true,
+        "xi": 0.0025,
+        "shrink": 2,
+        "prior": false,
         "drawK": 1,
+        "xgW": 0.5,
         "earlyMarket": false
       },
-      "rpsDefault": 0.2168,
-      "rpsTuned": 0.2162,
-      "n": 914,
+      "rpsDefault": 0.2147,
+      "rpsTuned": 0.2147,
+      "n": 928,
       "early": null
     },
     "AS": {
       "params": {
         "xi": 0.004,
+        "shrink": 2,
+        "prior": true,
+        "drawK": 1,
+        "xgW": 0.7,
+        "earlyMarket": false
+      },
+      "rpsDefault": 0.2158,
+      "rpsTuned": 0.2143,
+      "n": 416,
+      "early": null
+    },
+    "BE": {
+      "params": {
+        "xi": 0.004,
         "shrink": 5,
         "prior": true,
         "drawK": 1,
+        "xgW": 0,
         "earlyMarket": false
       },
-      "rpsDefault": 0.2189,
-      "rpsTuned": 0.2167,
-      "n": 416,
-      "early": null
+      "rpsDefault": 0.2133,
+      "rpsTuned": 0.2119,
+      "n": 374,
+      "early": {
+        "n": 131,
+        "rpsModel": 0.2002,
+        "rpsMarket": 0.1941
+      }
     },
     "BL": {
       "params": {
@@ -44,14 +65,15 @@
         "shrink": 2,
         "prior": true,
         "drawK": 1,
+        "xgW": 0.7,
         "earlyMarket": false
       },
-      "rpsDefault": 0.2022,
-      "rpsTuned": 0.1991,
+      "rpsDefault": 0.199,
+      "rpsTuned": 0.1963,
       "n": 342,
       "early": {
         "n": 108,
-        "rpsModel": 0.2051,
+        "rpsModel": 0.1997,
         "rpsMarket": 0.1969
       }
     },
@@ -61,9 +83,10 @@
         "shrink": 5,
         "prior": true,
         "drawK": 1,
+        "xgW": 0,
         "earlyMarket": false
       },
-      "rpsDefault": 0.2305,
+      "rpsDefault": 0.2293,
       "rpsTuned": 0.2256,
       "n": 360,
       "early": {
@@ -74,28 +97,44 @@
     },
     "BR": {
       "params": {
-        "xi": 0.0015,
+        "xi": 0.004,
         "shrink": 2,
-        "prior": true,
+        "prior": false,
         "drawK": 1,
+        "xgW": 0.7,
         "earlyMarket": false
       },
-      "rpsDefault": 0.2048,
-      "rpsTuned": 0.2043,
-      "n": 657,
+      "rpsDefault": 0.202,
+      "rpsTuned": 0.2014,
+      "n": 669,
       "early": null
     },
     "BR2": {
+      "params": {
+        "xi": 0.004,
+        "shrink": 2,
+        "prior": true,
+        "drawK": 1.05,
+        "xgW": 0.7,
+        "earlyMarket": false
+      },
+      "rpsDefault": 0.2149,
+      "rpsTuned": 0.2136,
+      "n": 652,
+      "early": null
+    },
+    "CAN": {
       "params": {
         "xi": 0.0015,
         "shrink": 5,
         "prior": true,
         "drawK": 1.1,
+        "xgW": 0,
         "earlyMarket": false
       },
-      "rpsDefault": 0.2199,
-      "rpsTuned": 0.2163,
-      "n": 618,
+      "rpsDefault": 0.2026,
+      "rpsTuned": 0.2004,
+      "n": 170,
       "early": null
     },
     "CH": {
@@ -103,29 +142,31 @@
         "xi": 0.004,
         "shrink": 5,
         "prior": true,
-        "drawK": 1.05,
+        "drawK": 1,
+        "xgW": 0.7,
         "earlyMarket": false
       },
-      "rpsDefault": 0.2251,
-      "rpsTuned": 0.2215,
-      "n": 647,
+      "rpsDefault": 0.2238,
+      "rpsTuned": 0.2208,
+      "n": 659,
       "early": {
-        "n": 202,
-        "rpsModel": 0.2242,
-        "rpsMarket": 0.2177
+        "n": 204,
+        "rpsModel": 0.223,
+        "rpsMarket": 0.2171
       }
     },
     "COL": {
       "params": {
-        "xi": 0.0015,
-        "shrink": 5,
-        "prior": true,
+        "xi": 0.0025,
+        "shrink": 2,
+        "prior": false,
         "drawK": 1,
+        "xgW": 0.5,
         "earlyMarket": false
       },
-      "rpsDefault": 0.2066,
+      "rpsDefault": 0.2056,
       "rpsTuned": 0.2056,
-      "n": 705,
+      "n": 729,
       "early": null
     },
     "CZ": {
@@ -134,23 +175,25 @@
         "shrink": 5,
         "prior": false,
         "drawK": 1,
+        "xgW": 0,
         "earlyMarket": false
       },
-      "rpsDefault": 0.213,
-      "rpsTuned": 0.2123,
-      "n": 288,
+      "rpsDefault": 0.2124,
+      "rpsTuned": 0.2117,
+      "n": 289,
       "early": null
     },
     "DK": {
       "params": {
-        "xi": 0.004,
-        "shrink": 5,
-        "prior": true,
-        "drawK": 1.05,
+        "xi": 0.0025,
+        "shrink": 2,
+        "prior": false,
+        "drawK": 1,
+        "xgW": 0.5,
         "earlyMarket": false
       },
-      "rpsDefault": 0.2209,
-      "rpsTuned": 0.2192,
+      "rpsDefault": 0.2187,
+      "rpsTuned": 0.2187,
       "n": 246,
       "early": null
     },
@@ -160,14 +203,15 @@
         "shrink": 2,
         "prior": true,
         "drawK": 1.1,
+        "xgW": 0.7,
         "earlyMarket": true
       },
-      "rpsDefault": 0.1983,
-      "rpsTuned": 0.1975,
+      "rpsDefault": 0.1982,
+      "rpsTuned": 0.1974,
       "n": 369,
       "early": {
         "n": 135,
-        "rpsModel": 0.1947,
+        "rpsModel": 0.1945,
         "rpsMarket": 0.1841
       }
     },
@@ -175,12 +219,13 @@
       "params": {
         "xi": 0.0015,
         "shrink": 5,
-        "prior": true,
+        "prior": false,
         "drawK": 1.1,
+        "xgW": 0.7,
         "earlyMarket": false
       },
-      "rpsDefault": 0.2264,
-      "rpsTuned": 0.224,
+      "rpsDefault": 0.2233,
+      "rpsTuned": 0.2217,
       "n": 384,
       "early": null
     },
@@ -190,15 +235,16 @@
         "shrink": 5,
         "prior": true,
         "drawK": 1.05,
+        "xgW": 0.7,
         "earlyMarket": true
       },
-      "rpsDefault": 0.2227,
-      "rpsTuned": 0.2217,
-      "n": 635,
+      "rpsDefault": 0.2217,
+      "rpsTuned": 0.2209,
+      "n": 654,
       "early": {
-        "n": 183,
-        "rpsModel": 0.2316,
-        "rpsMarket": 0.2197
+        "n": 200,
+        "rpsModel": 0.2293,
+        "rpsMarket": 0.2183
       }
     },
     "GR": {
@@ -207,9 +253,10 @@
         "shrink": 2,
         "prior": true,
         "drawK": 1,
+        "xgW": 0,
         "earlyMarket": false
       },
-      "rpsDefault": 0.189,
+      "rpsDefault": 0.1889,
       "rpsTuned": 0.1871,
       "n": 271,
       "early": {
@@ -224,11 +271,12 @@
         "shrink": 5,
         "prior": true,
         "drawK": 1,
+        "xgW": 0,
         "earlyMarket": false
       },
-      "rpsDefault": 0.205,
-      "rpsTuned": 0.2027,
-      "n": 174,
+      "rpsDefault": 0.2046,
+      "rpsTuned": 0.203,
+      "n": 175,
       "early": null
     },
     "JP1": {
@@ -237,27 +285,43 @@
         "shrink": 2,
         "prior": true,
         "drawK": 1,
+        "xgW": 0,
         "earlyMarket": false
       },
-      "rpsDefault": 0.2187,
+      "rpsDefault": 0.2192,
       "rpsTuned": 0.2163,
       "n": 460,
       "early": null
     },
-    "L1": {
+    "KR": {
       "params": {
-        "xi": 0.0015,
+        "xi": 0.004,
         "shrink": 5,
         "prior": true,
         "drawK": 1.1,
-        "earlyMarket": true
+        "xgW": 0.7,
+        "earlyMarket": false
       },
-      "rpsDefault": 0.2117,
-      "rpsTuned": 0.2093,
+      "rpsDefault": 0.223,
+      "rpsTuned": 0.2211,
+      "n": 364,
+      "early": null
+    },
+    "L1": {
+      "params": {
+        "xi": 0.004,
+        "shrink": 2,
+        "prior": true,
+        "drawK": 1.1,
+        "xgW": 0.7,
+        "earlyMarket": false
+      },
+      "rpsDefault": 0.2084,
+      "rpsTuned": 0.205,
       "n": 351,
       "early": {
         "n": 117,
-        "rpsModel": 0.2019,
+        "rpsModel": 0.1996,
         "rpsMarket": 0.1908
       }
     },
@@ -267,14 +331,15 @@
         "shrink": 2,
         "prior": true,
         "drawK": 1,
+        "xgW": 0.7,
         "earlyMarket": false
       },
-      "rpsDefault": 0.2017,
-      "rpsTuned": 0.2007,
+      "rpsDefault": 0.2001,
+      "rpsTuned": 0.1984,
       "n": 449,
       "early": {
         "n": 149,
-        "rpsModel": 0.1926,
+        "rpsModel": 0.1927,
         "rpsMarket": 0.1929
       }
     },
@@ -284,67 +349,72 @@
         "shrink": 5,
         "prior": true,
         "drawK": 1,
+        "xgW": 0.7,
         "earlyMarket": false
       },
-      "rpsDefault": 0.2262,
-      "rpsTuned": 0.2239,
-      "n": 528,
+      "rpsDefault": 0.2253,
+      "rpsTuned": 0.2234,
+      "n": 550,
       "early": {
-        "n": 155,
-        "rpsModel": 0.2297,
-        "rpsMarket": 0.2247
+        "n": 177,
+        "rpsModel": 0.2272,
+        "rpsMarket": 0.2214
       }
     },
     "MLS": {
       "params": {
         "xi": 0.004,
-        "shrink": 5,
+        "shrink": 2,
         "prior": false,
-        "drawK": 1.1,
+        "drawK": 1.05,
+        "xgW": 0.7,
         "earlyMarket": false
       },
-      "rpsDefault": 0.2224,
-      "rpsTuned": 0.2212,
-      "n": 928,
+      "rpsDefault": 0.2197,
+      "rpsTuned": 0.2183,
+      "n": 945,
       "early": null
     },
     "MX": {
       "params": {
         "xi": 0.0015,
-        "shrink": 5,
+        "shrink": 2,
         "prior": true,
-        "drawK": 1.1,
+        "drawK": 1,
+        "xgW": 0.7,
         "earlyMarket": false
       },
-      "rpsDefault": 0.2102,
-      "rpsTuned": 0.2095,
-      "n": 415,
+      "rpsDefault": 0.2106,
+      "rpsTuned": 0.2097,
+      "n": 424,
       "early": null
     },
     "NO": {
       "params": {
-        "xi": 0.0025,
+        "xi": 0.004,
         "shrink": 2,
         "prior": true,
         "drawK": 1,
+        "xgW": 0.5,
         "earlyMarket": false
       },
-      "rpsDefault": 0.2041,
-      "rpsTuned": 0.2022,
+      "rpsDefault": 0.2027,
+      "rpsTuned": 0.2013,
       "n": 408,
       "early": null
     },
     "NO2": {
       "params": {
-        "xi": 0.0025,
+        "xi": 0.004,
         "shrink": 5,
         "prior": true,
         "drawK": 1,
+        "xgW": 0,
         "earlyMarket": false
       },
-      "rpsDefault": 0.2126,
-      "rpsTuned": 0.2108,
-      "n": 369,
+      "rpsDefault": 0.2114,
+      "rpsTuned": 0.2096,
+      "n": 376,
       "early": null
     },
     "PL": {
@@ -353,15 +423,16 @@
         "shrink": 2,
         "prior": true,
         "drawK": 1.1,
+        "xgW": 0.5,
         "earlyMarket": false
       },
-      "rpsDefault": 0.2074,
-      "rpsTuned": 0.2067,
-      "n": 430,
+      "rpsDefault": 0.2063,
+      "rpsTuned": 0.2058,
+      "n": 440,
       "early": {
-        "n": 132,
-        "rpsModel": 0.203,
-        "rpsMarket": 0.2056
+        "n": 142,
+        "rpsModel": 0.2017,
+        "rpsMarket": 0.2053
       }
     },
     "PT": {
@@ -370,9 +441,10 @@
         "shrink": 2,
         "prior": true,
         "drawK": 1.1,
+        "xgW": 0,
         "earlyMarket": false
       },
-      "rpsDefault": 0.1786,
+      "rpsDefault": 0.1788,
       "rpsTuned": 0.1778,
       "n": 368,
       "early": {
@@ -387,6 +459,7 @@
         "shrink": 2,
         "prior": false,
         "drawK": 1,
+        "xgW": 0.5,
         "earlyMarket": false
       },
       "rpsDefault": 0.2005,
@@ -394,9 +467,23 @@
       "n": 430,
       "early": {
         "n": 130,
-        "rpsModel": 0.1933,
+        "rpsModel": 0.1941,
         "rpsMarket": 0.1918
       }
+    },
+    "SAU": {
+      "params": {
+        "xi": 0.004,
+        "shrink": 2,
+        "prior": true,
+        "drawK": 1,
+        "xgW": 0.7,
+        "earlyMarket": false
+      },
+      "rpsDefault": 0.1799,
+      "rpsTuned": 0.1785,
+      "n": 323,
+      "early": null
     },
     "SB": {
       "params": {
@@ -404,9 +491,10 @@
         "shrink": 2,
         "prior": true,
         "drawK": 1.05,
+        "xgW": 0.5,
         "earlyMarket": false
       },
-      "rpsDefault": 0.2094,
+      "rpsDefault": 0.2089,
       "rpsTuned": 0.2047,
       "n": 430,
       "early": {
@@ -415,30 +503,64 @@
         "rpsMarket": 0.213
       }
     },
-    "SE3N": {
+    "SC": {
       "params": {
         "xi": 0.0015,
         "shrink": 5,
         "prior": true,
-        "drawK": 1,
+        "drawK": 1.1,
+        "xgW": 0.7,
         "earlyMarket": false
       },
-      "rpsDefault": 0.2215,
-      "rpsTuned": 0.2176,
-      "n": 373,
+      "rpsDefault": 0.2019,
+      "rpsTuned": 0.2004,
+      "n": 270,
+      "early": {
+        "n": 91,
+        "rpsModel": 0.2114,
+        "rpsMarket": 0.2059
+      }
+    },
+    "SE2": {
+      "params": {
+        "xi": 0.004,
+        "shrink": 5,
+        "prior": true,
+        "drawK": 1.1,
+        "xgW": 0,
+        "earlyMarket": false
+      },
+      "rpsDefault": 0.2218,
+      "rpsTuned": 0.2165,
+      "n": 392,
+      "early": null
+    },
+    "SE3N": {
+      "params": {
+        "xi": 0.004,
+        "shrink": 5,
+        "prior": true,
+        "drawK": 1,
+        "xgW": 0,
+        "earlyMarket": false
+      },
+      "rpsDefault": 0.2227,
+      "rpsTuned": 0.2205,
+      "n": 386,
       "early": null
     },
     "SE3S": {
       "params": {
         "xi": 0.004,
         "shrink": 5,
-        "prior": true,
+        "prior": false,
         "drawK": 1,
+        "xgW": 0,
         "earlyMarket": false
       },
-      "rpsDefault": 0.2292,
-      "rpsTuned": 0.2249,
-      "n": 376,
+      "rpsDefault": 0.2268,
+      "rpsTuned": 0.224,
+      "n": 387,
       "early": null
     }
   }

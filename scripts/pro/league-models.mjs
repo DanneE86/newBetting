@@ -7,7 +7,8 @@ import { fitDixonColes } from './lib.mjs';
 
 // drawK = oavgjort-faktor. earlyMarket = marknaden styr tipsen tills lagen spelat EARLY_ROUNDS matcher
 // (satts av tuningen nar marknaden ar klart battre an modellen i sasongens borjan, t.ex. Serie B).
-export const DEFAULT_PARAMS = { xi: 0.0025, shrink: 2, prior: false, priorK: 8, topQ: 0.75, botQ: 0.25, drawK: 1, earlyMarket: false };
+// xgW = andel xG i styrkeskattningen (resten mål), se pro/match-xg.mjs; 0,5 bäst över alla ligor i bakkörning 2026-10-16.
+export const DEFAULT_PARAMS = { xi: 0.0025, shrink: 2, prior: false, priorK: 8, topQ: 0.75, botQ: 0.25, drawK: 1, earlyMarket: false, xgW: 0.5 };
 export const EARLY_ROUNDS = 8;
 const MIN_RECENT = 15; // farre ligamatcher senaste aret = nytt lag i ligan
 
@@ -43,7 +44,7 @@ function quantile(values, p) {
  * mot lagets egna ligamatcher med priorK pseudomatcher och klingar av under hosten.
  */
 export function fitLeagueModel(list, refDate, params, ctx = {}) {
-  const model = fitDixonColes(list, refDate, { xi: params.xi, shrink: params.shrink });
+  const model = fitDixonColes(list, refDate, { xi: params.xi, shrink: params.shrink, xgW: params.xgW });
   if (model) model.drawK = params.drawK;
   if (!model || !params.prior || !ctx.teams) return model;
   const from = yearBefore(refDate);

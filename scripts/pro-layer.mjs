@@ -9,6 +9,7 @@ import {
   overround, predictDixonColes, riskReward, round, rps1x2, toDate,
 } from './pro/lib.mjs';
 import { EARLY_ROUNDS, buildTiers, fitLeagueModel, loadLeagueModels, paramsFor } from './pro/league-models.mjs';
+import { loadMatchXg } from './pro/match-xg.mjs';
 import { historicalMissing, findUsMatch, inCurrentSquad, loadPlayerModel, summarise as summariseMissing, teamShares } from './pro/players.mjs';
 import { adjustProbs, loadAdjustments } from './lib/learned-adjust.mjs';
 import { extraSignals } from './lib/extra-signals.mjs';
@@ -113,6 +114,7 @@ const store = readJson(P.store);
 const matches = store.matches
   .filter((m) => Number.isFinite(m.hg) && Number.isFinite(m.ag))
   .sort((a, b) => a.date.localeCompare(b.date));
+loadMatchXg(root, matches); // m.xh/m.xa till Dixon-Coles (params.xgW)
 const byLeague = groupBy(matches, (m) => m.league);
 
 // ---------- Dixon-Coles per liga (full data -> kommande matcher) ----------
