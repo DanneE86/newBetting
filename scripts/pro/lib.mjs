@@ -147,12 +147,18 @@ export function fitDixonColes(matches, refDate, opts = {}) {
   const maxDays = opts.maxDays ?? 900;
   const shrink = opts.shrink ?? 2; // pseudo-matcher mot ligasnitt
   const iterations = opts.iterations ?? 60;
+  // xgW: styrkan skattas på (1-xgW)*mål + xgW*xG där matchen har xG (m.xh/m.xa); rho alltid på riktiga mål
+  const xgW = opts.xgW ?? 0;
 
   const train = [];
   for (const m of matches) {
     const age = daysBetween(m.date, refDate);
     if (age <= 0 || age > maxDays) continue;
-    train.push({ ...m, w: Math.exp(-xi * age) });
+    const xg = xgW > 0 && Number.isFinite(m.xh) && Number.isFinite(m.xa);
+    train.push({
+      ...m, w: Math.exp(-xi * age), goalsH: m.hg, goalsA: m.ag,
+      hg: xg ? (1 - xgW) * m.hg + xgW * m.xh : m.hg, ag: xg ? (1 - xgW) * m.ag + xgW * m.xa : m.ag,
+    });
   }
   if (train.length < 50) return null;
 
@@ -211,10 +217,10 @@ export function fitDixonColes(matches, refDate, opts = {}) {
     let ll = 0;
     let ok = true;
     for (const m of train) {
-      if (m.hg > 1 || m.ag > 1) continue;
+      if (m.goalsH > 1 || m.goalsA > 1) continue;
       const lambda = att.get(m.home) * def.get(m.away) * gamma;
       const mu = att.get(m.away) * def.get(m.home);
-      const t = tau(m.hg, m.ag, lambda, mu, r);
+      const t = tau(m.goalsH, m.goalsA, lambda, mu, r);
       if (t <= 0) {
         ok = false;
         break;

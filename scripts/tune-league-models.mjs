@@ -8,6 +8,7 @@ import { fileURLToPath } from 'node:url';
 import { devigMultiplicative, predictDixonColes, rps1x2, round } from './pro/lib.mjs';
 import { DEFAULT_PARAMS, EARLY_ROUNDS, buildTiers, fitLeagueModel } from './pro/league-models.mjs';
 import { latestSeasons } from './lib/seasons.mjs';
+import { loadMatchXg } from './pro/match-xg.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const readJson = (p) => JSON.parse(fs.readFileSync(p, 'utf8').replace(/^﻿/, ''));
@@ -22,15 +23,19 @@ const DRAW_KS = [1, 1.05, 1.1];
 const EARLY_MARKET_GAP = 0.01;
 const EARLY_MIN_N = 60;
 
+const finished = store.matches.filter((x) => Number.isFinite(x.hg) && Number.isFinite(x.ag)).sort((a, b) => a.date.localeCompare(b.date));
+loadMatchXg(root, finished);
 const byLeague = {};
-for (const m of store.matches.filter((x) => Number.isFinite(x.hg) && Number.isFinite(x.ag)).sort((a, b) => a.date.localeCompare(b.date))) {
+for (const m of finished) {
   (byLeague[m.league] ??= []).push(m);
 }
 
 const grid = [];
 for (const xi of [0.0015, 0.0025, 0.004]) {
   for (const shrink of [2, 5]) {
-    for (const prior of [false, true]) grid.push({ ...DEFAULT_PARAMS, xi, shrink, prior });
+    for (const prior of [false, true]) {
+      for (const xgW of [0, 0.5, 0.7]) grid.push({ ...DEFAULT_PARAMS, xi, shrink, prior, xgW });
+    }
   }
 }
 
@@ -97,7 +102,7 @@ for (const league of Object.keys(byLeague).sort()) {
   const e = chosen.early;
   const earlyMarket = !!e && e.n >= EARLY_MIN_N && e.rpsModel - e.rpsMarket >= EARLY_MARKET_GAP;
   leagues[league] = {
-    params: { xi: chosen.params.xi, shrink: chosen.params.shrink, prior: chosen.params.prior, drawK: chosen.params.drawK, earlyMarket },
+    params: { xi: chosen.params.xi, shrink: chosen.params.shrink, prior: chosen.params.prior, drawK: chosen.params.drawK, xgW: chosen.params.xgW, earlyMarket },
     rpsDefault: round(base.rps),
     rpsTuned: round(chosen.rps),
     n: base.n,
@@ -108,7 +113,7 @@ for (const league of Object.keys(byLeague).sort()) {
 
 fs.writeFileSync(OUT, JSON.stringify({
   updatedAt: new Date().toISOString(),
-  method: `Point-in-time veckorefit, ligans ${EVAL_SEASONS} senaste sasonger, RPS 1X2. Grid xi x shrink x prior x drawK; byter fran standard bara vid >= ${MIN_GAIN} battre RPS. earlyMarket nar marknaden (snitt oppningsodds) ar >= ${EARLY_MARKET_GAP} battre i omgang 1-${EARLY_ROUNDS} (minst ${EARLY_MIN_N} matcher).`,
+  method: `Point-in-time veckorefit, ligans ${EVAL_SEASONS} senaste sasonger, RPS 1X2. Grid xi x shrink x prior x xgW (0/0,5/0,7, andel xG i styrkan) x drawK; byter fran standard bara vid >= ${MIN_GAIN} battre RPS. earlyMarket nar marknaden (snitt oppningsodds) ar >= ${EARLY_MARKET_GAP} battre i omgang 1-${EARLY_ROUNDS} (minst ${EARLY_MIN_N} matcher).`,
   defaults: DEFAULT_PARAMS,
   leagues,
 }, null, 2), 'utf8');
