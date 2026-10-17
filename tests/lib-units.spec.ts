@@ -1498,7 +1498,7 @@ test.describe('död kod: fotbollens webbsidor och skript', () => {
   const pub = path.join(ROOT, 'gui', 'public');
 
   test('CSS: varje klass i fotbollens stilmallar används i HTML eller JS', () => {
-    const src = ['index.html', 'app.js', 'stryktips.js', 'startelva.js', 'spelarkort.js', 'stryk-engine.js']
+    const src = ['index.html', 'app.js', 'stryktips.js', 'svs-matchinfo.js', 'startelva.js', 'spelarkort.js', 'stryk-engine.js']
       .map((f) => fs.readFileSync(path.join(pub, f), 'utf8')).join('\n') + fs.readFileSync(path.join(ROOT, 'gui', 'static-mode.js'), 'utf8');
     // Klasser som byggs med mall (t.ex. `odd-${key}`, `f-${m.r}`): prefixet måste finnas i koden
     const DYNAMIC = ['odd-', 'flag-', 'se-ph-', 'pc-c-', 'c-', 'f-'];
@@ -4173,5 +4173,132 @@ test.describe('Dixon-Coles: styrka ur mål + xG', () => {
       loadMatchXg(ROOT, m);
       expect(m.filter((x: any) => Number.isFinite(x.xh)).length / m.length, lg).toBeGreaterThan(0.9);
     }
+  });
+});
+
+// ---------- svs-matchinfo.mjs (Svenska Spels matchinfo, scripts/fetch-stryktips-svs.mjs) ----------
+// Texten har samma uppställning som Enetpulse-widgetarna på Svenska Spels statistiksida (påhittade lag).
+const enetMatch = (status: string[], h: string, hg: number, a: string, ag: number, date: string, league: string) =>
+  [...status, `${h} ${hg} ${a} ${ag}`, String(hg), String(ag), `Deltagare: ${h}`, h, `Deltagare: ${a}`, a, `${date} 15:00`, date, league];
+
+test.describe('svs-matchinfo: Enetpulse-text och JSON', () => {
+  const STAT = [
+    'ALF - ', 'Hemma', 'BET - ', 'Borta', 'Alla matcher',
+    'Senast  Alfa', 'V', 'O', 'F',
+    ...enetMatch(['FT'], 'Alfa', 2, 'Gamma', 0, '12.10.26', 'Testligan'),
+    ...enetMatch(['STR', '4', '5'], 'Delta', 1, 'Alfa', 1, '05.10.26', 'Testcupen'),
+    ...enetMatch(['FT'], 'Alfa', 0, 'Epsilon', 3, '28.09.26', 'Testligan'),
+    'Visa alla matcher',
+    'Senast  Beta', 'F',
+    ...enetMatch(['FT'], 'Beta', 1, 'Gamma', 2, '11.10.26', 'Testligan'),
+    'Visa alla matcher',
+    'Head 2 Head', '1 - 0 - 0',
+    ...enetMatch(['FT'], 'Beta', 0, 'Alfa', 1, '14.02.26', 'Testligan'),
+    'Visa alla matcher',
+    ': Alfa', 'Alfa', '4', '48%', 'Oavgjorda', '3', '27%', ': Beta', 'Beta', '5', '25%', 'Alfa Vinster',
+  ].join('\n');
+
+  test('statistik: form per lag med resultat, straffavgjord match, inbördes och vinstchans', async () => {
+    const { parseStatistik } = await lib('svs-matchinfo.mjs');
+    const s = parseStatistik(STAT);
+    expect(s.form.map((f: any) => f.team)).toEqual(['Alfa', 'Beta']);
+    expect(s.form[0].letters).toEqual(['V', 'O', 'F']);
+    expect(s.form[0].matches.map((m: any) => m.result)).toEqual(['V', 'O', 'F']);
+    expect(s.form[0].matches[0]).toMatchObject({ status: 'FT', date: '2026-10-12', time: '15:00', home: 'Alfa', away: 'Gamma', hg: 2, ag: 0, league: 'Testligan' });
+    expect(s.form[0].matches[1]).toMatchObject({ status: 'STR', pens: [4, 5], home: 'Delta', league: 'Testcupen' });
+    expect(s.form[1].matches).toHaveLength(1);
+    expect(s.h2h.summary).toBe('1-0-0');
+    expect(s.h2h.matches).toHaveLength(1);
+    expect(s.winProbability).toEqual({ home: 0.48, draw: 0.27, away: 0.25, homeTeam: 'Alfa', awayTeam: 'Beta' });
+  });
+
+  test('statistik med hemmafilter: "H2H <lag>" skiljer formen från inbördes', async () => {
+    const { parseStatistik } = await lib('svs-matchinfo.mjs');
+    const txt = ['Senast  Alfa', 'V', ...enetMatch(['FT'], 'Alfa', 2, 'Gamma', 0, '12.10.26', 'Testligan'), 'Visa alla matcher',
+      'H2H Alfa', '2 - 0 - 1', ...enetMatch(['FT'], 'Alfa', 1, 'Beta', 0, '14.02.26', 'Testligan')].join('\n');
+    const s = parseStatistik(txt);
+    expect(s.form[0].matches).toHaveLength(1);
+    expect(s.h2h).toMatchObject({ summary: '2-0-1' });
+    expect(s.h2h.matches[0].away).toBe('Beta');
+  });
+
+  test('tabell: rader, legend och grannar runt lagen', async () => {
+    const { parseTabell, tableAround } = await lib('svs-matchinfo.mjs');
+    const row = (pos: number, team: string, p: number[]) => [String(pos), `: ${team}`, team, ...p.map(String)];
+    const txt = ['Totalt', 'Hemma', 'Borta', 'Position', 'Lag', ...row(1, 'Alfa', [6, 5, 1, 0, 9, 16]), ...row(2, 'Beta', [6, 3, 2, 1, 2, 11]),
+      ...row(3, 'Gamma', [6, 2, 1, 3, -1, 7]), ...row(4, 'Delta', [6, 0, 0, 6, -10, 0]), 'Delta: -3 poäng', 'Nedflyttning'].join('\n');
+    const t = parseTabell(txt);
+    expect(t.rows).toHaveLength(4);
+    expect(t.rows[3]).toEqual({ pos: 4, team: 'Delta', played: 6, w: 0, d: 0, l: 6, gd: -10, pts: 0 });
+    expect(t.legend).toEqual(['Delta: -3 poäng', 'Nedflyttning']);
+    expect(tableAround(t.rows, ['Alfa'], 1).map((r: any) => r.team)).toEqual(['Alfa', 'Beta']);
+    expect(tableAround(t.rows, ['Okänt'])).toEqual([]);
+  });
+
+  test('JSON: xStats, lagprofil, Kambi, nyhet och sportevent-odds komprimeras', async () => {
+    const m = await lib('svs-matchinfo.mjs');
+    const xs = m.compactXStats({ entireSeason: { metrics: [{ home: 5.1, away: 7.5, metricName: 'xp' }] }, lastFiveGames: { metrics: [] } });
+    expect(xs.season.xp).toEqual({ home: 5.1, away: 7.5 });
+    expect(m.compactXStats(null)).toBeNull();
+    expect(m.compactTeamStyle({ entireSeason: { homeTeamMetrics: [{ name: 'possession', value: 0.66 }], awayTeamMetrics: [] } })).toEqual({ home: { possession: 0.66 }, away: {} });
+    const k = m.compactKambi({ betOffers: [
+      { criterion: { label: 'Antal mål' }, outcomes: [{ label: 'Över', line: 2500, odds: 1630 }, { label: 'Under', line: 2500, odds: 2320 }] },
+      { criterion: { label: 'Antal mål' }, outcomes: [{ label: 'Över', line: 1500, odds: 1190 }] },
+      { criterion: { label: 'Avstängd' }, outcomes: [{ label: 'Ja', odds: 1000 }] },
+    ] });
+    expect(k.map((b: any) => b.outcomes[0].line)).toEqual([1.5, 2.5]); // stängda spel (odds 1,00) tas bort
+    expect(k[1].outcomes[1]).toEqual({ label: 'Under', line: 2.5, odds: 2.32 });
+    const n = m.compactNews({ title: 'Rubrik', published: '2026-10-17T08:00:00', importOrigin: 'Everysport.com', body: `<p>${'ord '.repeat(200)}</p>` });
+    expect(n.excerpt.length).toBeLessThan(410);
+    expect(n.excerpt.endsWith('…')).toBe(true);
+    expect(m.cleanHtml('<p>a &amp; b</p><blockquote><p>c</p></blockquote>')).toBe('a & b\nc');
+    const o = m.compactSporteventOdds({ eventTypes: [
+      { eventTypeId: 1, draws: [{ productId: 1, productName: 'Stryktipset', drawNumber: 1, events: [{ eventNumber: 1, distribution: [{ outcome: '1', value: '45' }] }] },
+        { productId: 23, productName: 'Topptipset', drawNumber: 9, events: [{ eventNumber: 1, distribution: [{ outcome: '1', value: '43' }, { outcome: 'X', value: '28' }, { outcome: '2', value: '29' }] }] }] },
+      { eventTypeId: 4, odds: { odds: [{ outcome: 'TotalGoalsOver2Point5', value: '1,63' }, { outcome: 'TotalGoalsUnder2Point5', value: '2,32' }] }, draws: [] },
+    ] }, 1);
+    expect(o.ou25).toEqual({ over: 1.63, under: 2.32 });
+    expect(o.otherDraws).toEqual([{ product: 'Topptipset', drawNumber: 9, eventNumber: 1, distribution: [43, 28, 29] }]); // egna spelet hoppas över
+  });
+
+  test('withSvsInfo: matchinfon läggs bara på produkten när omgången stämmer', async () => {
+    const { withSvsInfo } = await import(pathToFileURL(path.join(ROOT, 'gui', 'stryktips-routes.mjs')).href);
+    const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'svsinfo-'));
+    fs.mkdirSync(path.join(dir, 'data', 'stryktips-svs'), { recursive: true });
+    fs.writeFileSync(path.join(dir, 'data', 'stryktips-svs', 'stryktipset.json'), JSON.stringify({ drawNumber: 10, events: [{ eventNumber: 1 }] }));
+    fs.writeFileSync(path.join(dir, 'data', 'stryktips-svs', 'europatipset.json'), JSON.stringify({ drawNumber: 5, events: [] }));
+    const d = withSvsInfo({ products: [{ product: 'stryktipset', drawNumber: 10 }, { product: 'europatipset', drawNumber: 6 }] }, dir);
+    expect(d.products[0].svsInfo.events).toHaveLength(1);
+    expect(d.products[1].svsInfo).toBeUndefined();
+    fs.rmSync(dir, { recursive: true, force: true });
+  });
+});
+
+test.describe('svs-matchinfo.js: panelen i matchkortet', () => {
+  test('ritar alla delar som finns, hoppar över tomma och skyddar mot HTML', async () => {
+    const { svsInfoPanel, svsDrawAnalysis, svsEvent } = await import(pathToFileURL(path.join(ROOT, 'gui', 'public', 'svs-matchinfo.js')).href);
+    const keep = (k: string) => ` data-keep="${k}"`;
+    const ev = {
+      eventNumber: 1, home: 'Alfa', away: 'Beta <b>', venue: 'Testvallen', season: 'Testligan 26/27',
+      winProbability: { home: 0.48, draw: 0.27, away: 0.25 }, ou25: { over: 1.63, under: 2.32 },
+      otherDraws: [{ product: 'Topptipset', distribution: [43, 28, 29] }],
+      form: [{ team: 'Alfa', letters: ['V'], matches: [{ date: '2026-10-12', home: 'Alfa', away: 'Gamma', hg: 2, ag: 0, result: 'V' }] }],
+      h2h: { summary: '1-0-0', matches: [{ date: '2026-02-14', home: 'Beta <b>', away: 'Alfa', hg: 0, ag: 1 }] },
+      table: { rows: [{ pos: 1, team: 'Alfa', played: 6, w: 5, d: 1, l: 0, gd: 9, pts: 16 }], legend: [] },
+      xStats: { season: { xp: { home: 5.1, away: 7.5 } }, last5: null },
+      lineups: { home: { team: 'Alfa', formation: '4-4-2', starters: [{ name: 'A. Test', shirt: '1' }], unavailable: [{ name: 'B. Skadad', reason: 'injured' }], coach: 'C. Tränare' } },
+      news: [], kambi: [{ market: 'Antal mål', outcomes: [{ label: 'Över', line: 2.5, odds: 1.63 }] }],
+    };
+    const p = { product: 'stryktipset', svsInfo: { updatedAt: '2026-10-17T08:00:00Z', events: [ev], drawAnalyses: [{ title: 'Omgången', author: 'Expert', text: 'Rad ett\nRad två' }] } };
+    expect(svsEvent(p, { eventNumber: 2 })).toBeNull();
+    const html = svsInfoPanel(p, { eventNumber: 1 }, keep);
+    for (const s of ['Testvallen', 'Vinstchans', 'Topptipset', 'Form', 'Inbördes', 'Tabell', 'xStats', 'Laguppställning', 'skadad', 'C. Tränare', 'Alla Oddset-spel på matchen (1)', 'Kort sagt', 'Så läser du det här']) expect(html).toContain(s);
+    expect(html).not.toContain('Nyheter'); // inga nyheter -> ingen ruta
+    expect(html).not.toContain('Beta <b>');
+    expect(html).toContain('Beta &lt;b&gt;');
+    expect(svsInfoPanel(p, { eventNumber: 9 }, keep)).toBe('');
+    const draw = svsDrawAnalysis(p, keep);
+    expect(draw).toContain('<p>Rad två</p>');
+    expect(svsDrawAnalysis({ svsInfo: { drawAnalyses: [] } }, keep)).toBe('');
   });
 });

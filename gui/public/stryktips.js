@@ -3,6 +3,7 @@
 // kupongerna genereras i webbläsaren (stryk-engine.js).
 import { generateCoupons, kravSigns, canFall, skrallTips, skrallKryss, clampFileRows, FILE_BUDGET, FILE_RULES } from "/stryk-engine.js";
 import { startelvaButton, startelvaPanel } from "/startelva.js";
+import { svsInfoPanel, svsDrawAnalysis } from "/svs-matchinfo.js";
 
 // Startelvan per match (gui/public/startelva.js), samma nyckel som scripts/lib/startelva.mjs svsKey
 const seKey = (p, e) => ["svs", p.product, p.drawNumber, e.eventNumber].join("|");
@@ -614,7 +615,7 @@ function matchCard(p, e) {
     ${lineupRow(e)}
     ${contextRow(e)}
     <button type="button" class="st-analyze ds-btn ds-btn--secondary" aria-expanded="${isOpen}">${isOpen ? "Dölj analys" : `Analysera ${esc(e.home)} – ${esc(e.away)}`}</button>
-    ${isOpen ? analysisPanel(e) : ""}
+    ${isOpen ? analysisPanel(e) + svsInfoPanel(p, e, keep) : ""}
     ${startelvaButton(seKey(p, e), { cls: "st-se" })}
     ${startelvaPanel(seKey(p, e))}
   </article>`;
@@ -1239,6 +1240,7 @@ function renderB(p, head, top = "", extras = "") {
   const matches = `<details class="sb-panel st-matches st-fold ds-card"${keep("matches")}>
     <summary><h3>3. Matcherna</h3><small>analys per match</small></summary>
     ${legend()}
+    ${svsDrawAnalysis(p, keep)}
     <div class="st-list">${events.map((e) => matchCard(pv, e)).join("")}</div>
   </details>`;
   const stats = `<details class="sb-panel st-history st-fold ds-card"${keep("stats")}>
