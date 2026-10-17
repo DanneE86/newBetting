@@ -810,6 +810,16 @@ test.describe('GUI: fliken Hästar', () => {
       else await expect(leg.locator('.hs-sys-count')).toHaveText(`${n} hästar`);
     }
     await expect(page.locator('.hs-sys-key')).toContainText('andel av folket som streckat hästen');
+    // galopprisk syns på varje tippad häst med starter: "G n/m" med risknivå, ram om galopp senast
+    const gals = page.locator('.hs-sys-legs .hs-pick-gal');
+    expect(await gals.count()).toBeGreaterThan(0);
+    for (const g of await gals.all()) {
+      const [, n, m] = ((await g.textContent()) || '').match(/^G (\d+)\/(\d+)$/) || [];
+      expect(Number(m)).toBeGreaterThan(0);
+      expect(Number(n)).toBeLessThanOrEqual(Number(m));
+      await expect(g).toHaveClass(/is-(lag|medel|hog)/);
+    }
+    await expect(page.locator('.hs-sys-key')).toContainText('galopp senaste 10 starterna');
     // ATG: länken går till omgången, kupongmallen har en rad per avdelning
     await expect(page.locator('.hs-atg-actions a')).toHaveAttribute('href', 'https://www.atg.se/spel/' + state.analysis.id);
     const coupon = ((await page.locator('.hs-coupon').textContent()) || '').trim().split('\n');
@@ -879,6 +889,14 @@ test.describe('GUI: fliken Hästar', () => {
     const live = (r: any) => r.horses.filter((h: any) => !h.scratched && h.p != null).sort((x: any, y: any) => x.p - y.p);
     // lägst chans i avdelning 1 som egen spik – det skulle systemet aldrig välja själv
     const spik = live(r1)[0].nr;
+    // varje klickbar häst visar bara streck (n %) och galopprisk (G n/m) som i systemvyn
+    expect(await page.locator('.hs-egna-pick .hs-egna-streck').count()).toBeGreaterThan(0);
+    for (const t of await page.locator('.hs-egna-pick .hs-egna-streck').allTextContents()) expect(t).toMatch(/^(\d+ %|–)$/);
+    expect(await page.locator('.hs-egna-pick small:not(.hs-egna-streck)').count()).toBe(0);
+    const ownGals = page.locator('.hs-egna-pick .hs-pick-gal');
+    expect(await ownGals.count()).toBeGreaterThan(0);
+    for (const t of await ownGals.allTextContents()) expect(t).toMatch(/^G \d+\/\d+$/);
+    await expect(page.locator('.hs-egna-key')).toContainText('G = galopp senaste 10');
     await page.click(`[data-own-leg="${r1.leg}"][data-own-nr="${spik}"]`);
     await expect(page.locator('.hs-egna')).toHaveAttribute('open', '');
     const rad1 = page.locator(`#hs-rad-${r1.leg}`);

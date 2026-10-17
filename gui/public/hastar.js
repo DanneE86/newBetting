@@ -380,7 +380,7 @@ function ownPanel(a, locked, sysLegs, cost, built, recLegs) {
       <span><i class="hs-egna-swatch is-mine"></i>Ditt val</span>
       <span><i class="hs-egna-swatch is-auto"></i>Systemets förslag</span>
       <span><i class="hs-egna-swatch"></i>Inte med</span>
-      <span>Siffran under numret = modellens chans · kant nedtill: <b class="k-a">grön</b> stark, <b class="k-b">blå</b> utmanare, <b class="k-c">gul</b> skräll</span>
+      <span>Siffran under numret = streck · G = galopp senaste 10 (<b class="hs-gal-key is-lag">låg</b> <b class="hs-gal-key is-medel">medel</b> <b class="hs-gal-key is-hog">hög</b>, ram = galopp senast) · kant nedtill: <b class="k-a">grön</b> stark, <b class="k-b">blå</b> utmanare, <b class="k-c">gul</b> skräll</span>
     </div>
     <div class="hs-egna-legs">${a.races.map((r) => {
       const mine = locked[r.leg] || [];
@@ -393,7 +393,7 @@ function ownPanel(a, locked, sysLegs, cost, built, recLegs) {
         <div class="hs-egna-picks">${hs.map((h) => {
           const isMine = mine.includes(h.nr);
           const isAuto = sysSet.has(h.nr);
-          return `<button type="button" class="hs-egna-pick rank-${h.rank}${isAuto ? " is-auto" : ""}" data-own-leg="${r.leg}" data-own-nr="${h.nr}" aria-pressed="${isMine}" title="${esc(`${h.nr} ${h.horse} · chans ${pct(h.p)} · streck ${pct(h.marketPct)}${isAuto ? (mine.length ? " · systemets förslag" : " · systemets val") : ""}`)}"><b>${h.nr}</b><small>${pct(h.p, 0)}</small></button>`;
+          return `<button type="button" class="hs-egna-pick rank-${h.rank}${isAuto ? " is-auto" : ""}" data-own-leg="${r.leg}" data-own-nr="${h.nr}" aria-pressed="${isMine}" title="${esc(`${h.nr} ${h.horse} · chans ${pct(h.p)} · streck ${pct(h.marketPct)}${isAuto ? (mine.length ? " · systemets förslag" : " · systemets val") : ""}`)}"><b>${h.nr}</b><small class="hs-egna-streck">${h.marketPct != null ? pct(h.marketPct, 0) : "–"}</small>${galoppBadge(h)}</button>`;
         }).join("")}</div></div>`;
     }).join("")}</div>
     <div class="hs-egna-foot">
@@ -602,7 +602,7 @@ function systemTable(legs, byLeg, locked = {}) {
         <div class="hs-sys-picks">${hs.map((h) => {
           const v = isValueHorse(h);
           const streck = h.marketPct != null ? `<span class="hs-pick-streck">${pct(h.marketPct)}</span>` : "";
-          return `<span class="hs-pick rank-${h.rank}${v ? " is-value" : ""}" title="${esc(`${h.horse} · rank ${h.rank} · chans ${pct(h.p)} · streck ${pct(h.marketPct)}${v ? " · värde" : ""}`)}"><span class="hs-pick-nr">${h.nr}</span><span class="hs-pick-name">${esc(h.horse)}</span>${streck}${v ? `<span class="hs-pick-value">värde</span>` : ""}</span>`;
+          return `<span class="hs-pick rank-${h.rank}${v ? " is-value" : ""}" title="${esc(`${h.horse} · rank ${h.rank} · chans ${pct(h.p)} · streck ${pct(h.marketPct)}${v ? " · värde" : ""}`)}"><span class="hs-pick-nr">${h.nr}</span><span class="hs-pick-name">${esc(h.horse)}</span>${streck}${galoppBadge(h)}${v ? `<span class="hs-pick-value">värde</span>` : ""}</span>`;
         }).join("")}</div></div>`;
     })
     .join("")}</div>
@@ -610,6 +610,7 @@ function systemTable(legs, byLeg, locked = {}) {
       <span class="hs-key"><span class="hs-key-dot rank-B"></span>utmanare</span>
       <span class="hs-key"><span class="hs-key-dot rank-C"></span>skräll/gardering</span>
       <span class="hs-key"><span class="hs-pick-streck">40 %</span>andel av folket som streckat hästen</span>
+      <span class="hs-key is-gal"><span class="hs-pick-gal is-hog">G 3/10</span>galopp senaste 10 starterna: <b class="hs-gal-key is-lag">låg</b> <b class="hs-gal-key is-medel">medel</b> <b class="hs-gal-key is-hog">hög</b> risk, ram = galopp senast</span>
       <span class="hs-key"><span class="hs-pick-value">värde</span>vinner oftare än strecket säger</span></p>`;
 }
 
@@ -645,6 +646,17 @@ const galoppList = (h) =>
   (h.last5 || []).filter((x) => !x.scratched).map((x) => ({ date: x.date, track: x.track, dist: x.distance, method: x.startMethod, place: x.place, g: !!x.galloped, d: !!x.disqualified }));
 const galoppLevel = (risk) => (risk == null ? null : risk >= 0.25 ? "hog" : risk >= 0.15 ? "medel" : "lag");
 const GALOPP_LEVEL_TEXT = { hog: "Hög risk", medel: "Medelrisk", lag: "Låg risk" };
+/** Kort galoppetikett för systemvyn: "G 3/10" färgad efter risknivå, ram om hästen galopperade senast. */
+function galoppBadge(h) {
+  const list = galoppList(h);
+  if (!list.length) return "";
+  const n = list.filter((x) => x.g).length;
+  const lvl = galoppLevel(h.gallopRisk) ?? (n / list.length >= 0.25 ? "hog" : n / list.length >= 0.15 ? "medel" : "lag");
+  const last = !!list[0].g;
+  const tip = `Galopp ${n} av ${list.length} senaste starterna · ${GALOPP_LEVEL_TEXT[lvl]}${last ? ` · galopp senast (${list[0].date || ""})` : ""}`;
+  return `<span class="hs-pick-gal is-${lvl}${last ? " is-last" : ""}" title="${esc(tip)}">G ${n}/${list.length}</span>`;
+}
+
 function galoppCell(h) {
   const list = galoppList(h);
   if (!list.length) return `<span class="hs-gal is-none">Inga starter</span>`;
