@@ -1,7 +1,7 @@
 {
  "product": "hastar",
  "month": "2026-10",
- "updatedAt": "2026-10-17T08:00:10.619Z",
+ "updatedAt": "2026-10-17T09:08:02.281Z",
  "items": {
   "V86_2026-10-05_40_1|6": {
    "id": "V86_2026-10-05_40_1|6",
@@ -1660,7 +1660,12 @@
     "spik": 3,
     "favorite": 3
    },
-   "result": null
+   "result": {
+    "winners": [
+     1
+    ]
+   },
+   "settledAt": "2026-10-17T09:03:39.191Z"
   },
   "V86_2026-10-14_40_1|7": {
    "id": "V86_2026-10-14_40_1|7",
@@ -1759,7 +1764,12 @@
     "spik": null,
     "favorite": 5
    },
-   "result": null
+   "result": {
+    "winners": [
+     5
+    ]
+   },
+   "settledAt": "2026-10-17T09:03:39.191Z"
   },
   "V86_2026-10-14_40_1|8": {
    "id": "V86_2026-10-14_40_1|8",
@@ -1858,7 +1868,12 @@
     "spik": null,
     "favorite": 5
    },
-   "result": null
+   "result": {
+    "winners": [
+     5
+    ]
+   },
+   "settledAt": "2026-10-17T09:03:39.191Z"
   },
   "V86_2026-10-14_40_1|9": {
    "id": "V86_2026-10-14_40_1|9",
@@ -1957,7 +1972,12 @@
     "spik": 3,
     "favorite": 3
    },
-   "result": null
+   "result": {
+    "winners": [
+     3
+    ]
+   },
+   "settledAt": "2026-10-17T09:03:39.191Z"
   },
   "V86_2026-10-14_40_1|10": {
    "id": "V86_2026-10-14_40_1|10",
@@ -2056,7 +2076,12 @@
     "spik": null,
     "favorite": 1
    },
-   "result": null
+   "result": {
+    "winners": [
+     4
+    ]
+   },
+   "settledAt": "2026-10-17T09:03:39.191Z"
   },
   "V85_2026-10-10_5_6|6": {
    "id": "V85_2026-10-10_5_6|6",
@@ -2945,42 +2970,42 @@
     "spik": 6,
     "favorite": 2
    },
-   "latestAt": "2026-10-17T08:00:10.619Z",
+   "latestAt": "2026-10-17T09:08:02.281Z",
    "latest": {
     "top": [
      {
       "nr": 2,
       "horse": "S.G.Empress",
-      "p": 0.397,
-      "marketP": 0.332,
+      "p": 0.394,
+      "marketP": 0.302,
       "rank": "A"
      },
      {
       "nr": 6,
       "horse": "Crowe Motion",
-      "p": 0.208,
-      "marketP": 0.149,
+      "p": 0.209,
+      "marketP": 0.143,
       "rank": "A"
      },
      {
       "nr": 3,
       "horse": "Cashman J.R.",
-      "p": 0.197,
-      "marketP": 0.142,
-      "rank": "B"
+      "p": 0.203,
+      "marketP": 0.167,
+      "rank": "A"
      },
      {
       "nr": 4,
       "horse": "Four White E.G.",
       "p": 0.065,
-      "marketP": 0.094,
+      "marketP": 0.086,
       "rank": "C"
      },
      {
       "nr": 10,
       "horse": "Nadal B.R.",
-      "p": 0.064,
-      "marketP": 0.062,
+      "p": 0.065,
+      "marketP": 0.096,
       "rank": "C"
      }
     ],
@@ -3044,42 +3069,42 @@
     "spik": null,
     "favorite": 2
    },
-   "latestAt": "2026-10-17T08:00:10.619Z",
+   "latestAt": "2026-10-17T09:08:02.281Z",
    "latest": {
     "top": [
      {
       "nr": 2,
       "horse": "Realize'em",
-      "p": 0.249,
-      "marketP": 0.095,
+      "p": 0.213,
+      "marketP": 0.112,
       "rank": "A"
      },
      {
       "nr": 5,
       "horse": "Geisha Road Grif",
-      "p": 0.185,
-      "marketP": 0.103,
+      "p": 0.192,
+      "marketP": 0.109,
       "rank": "B"
      },
      {
       "nr": 10,
       "horse": "Pralines",
-      "p": 0.154,
-      "marketP": 0.156,
+      "p": 0.166,
+      "marketP": 0.131,
       "rank": "B"
      },
      {
       "nr": 8,
       "horse": "Havana Heaven",
-      "p": 0.106,
-      "marketP": 0.094,
+      "p": 0.11,
+      "marketP": 0.093,
       "rank": "B"
      },
      {
       "nr": 3,
       "horse": "Direction Face",
-      "p": 0.063,
-      "marketP": 0.102,
+      "p": 0.066,
+      "marketP": 0.106,
       "rank": "C"
      }
     ],
@@ -3143,42 +3168,42 @@
     "spik": null,
     "favorite": 10
    },
-   "latestAt": "2026-10-17T08:00:10.619Z",
+   "latestAt": "2026-10-17T09:06:59.513Z",
    "latest": {
     "top": [
      {
       "nr": 10,
       "horse": "Five Billion",
-      "p": 0.258,
-      "marketP": 0.114,
+      "p": 0.256,
+      "marketP": 0.124,
       "rank": "A"
      },
      {
       "nr": 12,
       "horse": "Ultimate Scotch",
-      "p": 0.246,
-      "marketP": 0.126,
+      "p": 0.251,
+      "marketP": 0.132,
       "rank": "A"
      },
      {
       "nr": 2,
       "horse": "Emerald Broline",
-      "p": 0.211,
-      "marketP": 0.103,
+      "p": 0.212,
+      "marketP": 0.118,
       "rank": "A"
      },
      {
       "nr": 3,
       "horse": "Set it off H.C.",
-      "p": 0.099,
-      "marketP": 0.103,
+      "p": 0.097,
+      "marketP": 0.107,
       "rank": "B"
      },
      {
       "nr": 6,
       "horse": "Sensational Doc",
-      "p": 0.06,
-      "marketP": 0.185,
+      "p": 0.062,
+      "marketP": 0.164,
       "rank": "C"
      }
     ],
@@ -3242,42 +3267,42 @@
     "spik": 1,
     "favorite": 1
    },
-   "latestAt": "2026-10-17T08:00:10.619Z",
+   "latestAt": "2026-10-17T09:08:02.281Z",
    "latest": {
     "top": [
      {
       "nr": 1,
       "horse": "Borups Victory",
-      "p": 0.764,
-      "marketP": 0.656,
+      "p": 0.768,
+      "marketP": 0.613,
       "rank": "A"
      },
      {
       "nr": 7,
       "horse": "High on Pepper",
-      "p": 0.113,
-      "marketP": 0.076,
+      "p": 0.112,
+      "marketP": 0.095,
       "rank": "B"
      },
      {
       "nr": 6,
       "horse": "Competivo",
       "p": 0.055,
-      "marketP": 0.064,
+      "marketP": 0.075,
       "rank": "C"
      },
      {
       "nr": 2,
       "horse": "Chestnut",
       "p": 0.031,
-      "marketP": 0.065,
+      "marketP": 0.068,
       "rank": "D"
      },
      {
       "nr": 9,
       "horse": "Bengan",
-      "p": 0.02,
-      "marketP": 0.054,
+      "p": 0.019,
+      "marketP": 0.061,
       "rank": "D"
      }
     ],
@@ -3341,42 +3366,42 @@
     "spik": null,
     "favorite": 8
    },
-   "latestAt": "2026-10-17T08:00:10.619Z",
+   "latestAt": "2026-10-17T09:08:02.281Z",
    "latest": {
     "top": [
      {
       "nr": 8,
       "horse": "Lannem Pär",
-      "p": 0.293,
-      "marketP": 0.151,
+      "p": 0.297,
+      "marketP": 0.155,
       "rank": "A"
      },
      {
       "nr": 9,
       "horse": "Grisle Kongen G.L.",
-      "p": 0.161,
-      "marketP": 0.084,
+      "p": 0.158,
+      "marketP": 0.086,
       "rank": "B"
      },
      {
       "nr": 4,
       "horse": "Alm Nordstjernen",
-      "p": 0.133,
-      "marketP": 0.096,
+      "p": 0.134,
+      "marketP": 0.113,
       "rank": "B"
      },
      {
       "nr": 2,
       "horse": "Grisle Best G.L.",
-      "p": 0.127,
-      "marketP": 0.065,
+      "p": 0.13,
+      "marketP": 0.068,
       "rank": "B"
      },
      {
       "nr": 10,
       "horse": "Briskeby Pilen",
       "p": 0.113,
-      "marketP": 0.079,
+      "marketP": 0.087,
       "rank": "B"
      }
     ],
@@ -3440,42 +3465,42 @@
     "spik": null,
     "favorite": 9
    },
-   "latestAt": "2026-10-17T08:00:10.619Z",
+   "latestAt": "2026-10-17T09:06:59.513Z",
    "latest": {
     "top": [
      {
       "nr": 9,
       "horse": "Rob Roy Boko",
-      "p": 0.357,
-      "marketP": 0.157,
+      "p": 0.351,
+      "marketP": 0.171,
       "rank": "A"
      },
      {
       "nr": 5,
       "horse": "Conrads Ove",
-      "p": 0.315,
-      "marketP": 0.182,
+      "p": 0.322,
+      "marketP": 0.175,
       "rank": "A"
      },
      {
       "nr": 7,
       "horse": "Haylee Eagra",
-      "p": 0.097,
-      "marketP": 0.268,
+      "p": 0.106,
+      "marketP": 0.238,
       "rank": "B"
      },
      {
       "nr": 12,
       "horse": "Vince Wynn",
-      "p": 0.097,
-      "marketP": 0.074,
+      "p": 0.102,
+      "marketP": 0.083,
       "rank": "B"
      },
      {
       "nr": 3,
       "horse": "Devilish",
-      "p": 0.086,
-      "marketP": 0.139,
+      "p": 0.073,
+      "marketP": 0.15,
       "rank": "C"
      }
     ],
@@ -3539,42 +3564,42 @@
     "spik": null,
     "favorite": 7
    },
-   "latestAt": "2026-10-17T08:00:10.619Z",
+   "latestAt": "2026-10-17T09:08:02.281Z",
    "latest": {
     "top": [
      {
       "nr": 7,
       "horse": "Great Old Dance",
-      "p": 0.545,
-      "marketP": 0.388,
+      "p": 0.552,
+      "marketP": 0.417,
       "rank": "A"
      },
      {
       "nr": 5,
       "horse": "Ugalli",
-      "p": 0.138,
+      "p": 0.134,
       "marketP": 0.079,
       "rank": "B"
      },
      {
       "nr": 6,
       "horse": "Pineapple",
-      "p": 0.086,
-      "marketP": 0.125,
+      "p": 0.088,
+      "marketP": 0.128,
       "rank": "C"
      },
      {
       "nr": 1,
       "horse": "My Honky Tonk Man",
-      "p": 0.07,
-      "marketP": 0.093,
+      "p": 0.068,
+      "marketP": 0.075,
       "rank": "C"
      },
      {
       "nr": 9,
       "horse": "Joker Ima",
       "p": 0.049,
-      "marketP": 0.063,
+      "marketP": 0.058,
       "rank": "C"
      }
     ],
@@ -3638,42 +3663,42 @@
     "spik": null,
     "favorite": 4
    },
-   "latestAt": "2026-10-17T08:00:10.619Z",
+   "latestAt": "2026-10-17T09:08:02.281Z",
    "latest": {
     "top": [
      {
       "nr": 4,
       "horse": "Griffin Kronos",
-      "p": 0.367,
-      "marketP": 0.227,
+      "p": 0.361,
+      "marketP": 0.198,
       "rank": "A"
      },
      {
       "nr": 10,
       "horse": "Monte Rei",
-      "p": 0.17,
-      "marketP": 0.113,
+      "p": 0.174,
+      "marketP": 0.116,
       "rank": "B"
      },
      {
       "nr": 7,
       "horse": "Unicum",
-      "p": 0.146,
-      "marketP": 0.102,
+      "p": 0.144,
+      "marketP": 0.088,
       "rank": "B"
      },
      {
       "nr": 12,
       "horse": "Florenzo",
-      "p": 0.112,
-      "marketP": 0.099,
+      "p": 0.114,
+      "marketP": 0.106,
       "rank": "B"
      },
      {
       "nr": 2,
       "horse": "Justcantgetenough",
-      "p": 0.074,
-      "marketP": 0.138,
+      "p": 0.077,
+      "marketP": 0.148,
       "rank": "C"
      }
     ],
