@@ -722,3 +722,42 @@ body.view-stryktips main { display: none !important; }
 .st-skrall-item { padding-top: var(--space-2); border-top: 1px solid var(--color-border); }
 .st-skrall-rank { font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--color-text-muted); }
 .st-skrall-pick .st-num { display: inline-flex; vertical-align: middle; margin-right: var(--space-2); }
+
+/* Svenska Spels matchinfo i analysen (gui/public/svs-matchinfo.js) */
+.svs-info { margin-top: var(--space-4); padding-top: var(--space-3); border-top: 1px solid var(--color-border); }
+.svs-info > summary { cursor: pointer; display: flex; align-items: baseline; gap: var(--space-2); flex-wrap: wrap; }
+.svs-info > summary h4 { margin: 0; font-size: var(--font-size-md); display: inline; }
+.svs-info > summary small, .svs-box h5 small, .svs-box h6 small { color: var(--color-text-muted); font-weight: var(--font-weight-medium); font-size: var(--font-size-xs); }
+.svs-kort { margin: var(--space-2) 0 0; font-size: var(--font-size-sm); }
+.svs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: var(--space-3); margin-top: var(--space-3); }
+.svs-box { padding: var(--space-3); border: 1px solid var(--color-border); border-radius: var(--radius-lg); background: var(--color-surface-muted); font-size: var(--font-size-sm); min-width: 0; }
+.svs-box h5 { margin: 0 0 var(--space-2); font-size: var(--font-size-sm); }
+.svs-box h6 { margin: var(--space-2) 0 var(--space-1); font-size: var(--font-size-xs); }
+.svs-overview p { margin: 0; display: flex; justify-content: space-between; gap: var(--space-3); padding: var(--space-1) 0; border-bottom: 1px solid var(--color-border); }
+.svs-overview span { color: var(--color-text-muted); }
+.svs-overview strong { text-align: right; font-variant-numeric: tabular-nums; }
+.svs-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr)); gap: var(--space-3); }
+.svs-box .st-last small { color: var(--color-text-muted); }
+.svs-table { width: 100%; border-collapse: collapse; font-size: var(--font-size-xs); font-variant-numeric: tabular-nums; }
+.svs-table th, .svs-table td { padding: 2px var(--space-1); border-bottom: 1px solid var(--color-border); text-align: right; }
+.svs-table th:first-child, .svs-table tbody th { text-align: left; font-weight: var(--font-weight-medium); }
+.svs-table td:first-child { text-align: right; color: var(--color-text-muted); }
+.svs-table tr.is-team { background: var(--color-surface); font-weight: var(--font-weight-bold); }
+.svs-x td:first-child { color: var(--color-text); }
+.svs-style td { white-space: nowrap; }
+.svs-bar { display: inline-block; vertical-align: middle; width: 3.5rem; height: 0.45rem; margin-right: var(--space-1); border-radius: var(--radius-pill); background: linear-gradient(90deg, var(--color-brand) var(--v), var(--color-surface-sunken) var(--v)); }
+.svs-lineup-side p { margin: 0 0 var(--space-1); line-height: var(--line-height-body); }
+.svs-lineup-side small { color: var(--color-text-muted); }
+.svs-out { color: var(--color-danger); }
+.svs-news { margin: 0; padding: 0; list-style: none; display: grid; gap: var(--space-2); }
+.svs-news p { margin: 0; line-height: var(--line-height-body); }
+.svs-news-head small { color: var(--color-text-muted); }
+.svs-more { margin-top: var(--space-2); }
+.svs-more > summary { cursor: pointer; font-weight: var(--font-weight-bold); font-size: var(--font-size-sm); }
+.svs-kambi { margin-top: var(--space-3); }
+.svs-kambi td { text-align: left; line-height: var(--line-height-body); }
+.svs-note { margin: var(--space-1) 0 0; color: var(--color-text-muted); font-size: var(--font-size-xs); }
+.svs-draw { margin: var(--space-2) 0 var(--space-3); font-size: var(--font-size-sm); line-height: var(--line-height-body); }
+.svs-draw > summary { cursor: pointer; font-weight: var(--font-weight-bold); }
+.svs-draw h5 { margin: var(--space-3) 0 var(--space-1); }
+.svs-draw p { margin: 0 0 var(--space-2); }

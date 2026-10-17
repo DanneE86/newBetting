@@ -31,6 +31,7 @@
     "players:impact": "node scripts/fetch-player-impact.mjs",
     "leagues": "node scripts/fetch-extra-leagues.mjs",
     "stryktips": "node scripts/fetch-stryktipset.mjs",
+    "stryktips:svs": "node scripts/fetch-stryktips-svs.mjs",
     "history": "node scripts/fetch-history.mjs",
     "lardomar": "node scripts/analyze-learnings.mjs",
     "stil": "node scripts/analyze-style-matchups.mjs",

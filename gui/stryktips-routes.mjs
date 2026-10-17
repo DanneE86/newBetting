@@ -1,4 +1,5 @@
-// API for GUI-fliken "Stryktipset" (scripts/fetch-stryktipset.mjs -> data/stryktipset.json).
+// API for GUI-fliken "Stryktipset" (scripts/fetch-stryktipset.mjs -> data/stryktipset.json,
+// plus Svenska Spels matchinfo ur data/stryktips-svs/, se withSvsInfo).
 //   GET  /api/stryktips        -> senast hamtade analys (hamtar aldrig sjalv)
 //   POST /api/stryktips/fetch  -> hamta kupong + kor analysen nu (knappen i GUI)
 import fs from "node:fs";
@@ -35,6 +36,18 @@ function read(file) {
   return fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, "utf8").replace(/^﻿/, "")) : null;
 }
 
+// Svenska Spels matchinfo (scripts/fetch-stryktips-svs.mjs -> data/stryktips-svs/<produkt>.json) läggs på
+// produkten som svsInfo när omgången stämmer: matcherna per nummer + omgångsanalysen
+export function withSvsInfo(data, root) {
+  for (const p of data.products || []) {
+    try {
+      const info = read(path.join(root, "data", "stryktips-svs", `${p.product}.json`));
+      if (info?.drawNumber === p.drawNumber) p.svsInfo = info;
+    } catch { /* saknas eller trasig fil: kortet visas utan */ }
+  }
+  return data;
+}
+
 /** Returnerar true om requesten hanterades. */
 export function handleStryktips(req, res, url, root) {
   // Live-streck: samma Cloudflare-funktion som på webben, så kupongen byggs på aktuella streck även lokalt
@@ -50,7 +63,7 @@ export function handleStryktips(req, res, url, root) {
 
   if (req.method === "GET" && url.pathname === "/api/stryktips") {
     try {
-      send(res, 200, read(file) || { products: [] });
+      send(res, 200, withSvsInfo(read(file) || { products: [] }, root));
     } catch (e) {
       send(res, 500, { error: String(e.message || e) });
     }
@@ -60,7 +73,7 @@ export function handleStryktips(req, res, url, root) {
   if (req.method === "POST" && url.pathname === "/api/stryktips/fetch") {
     run(root).then((r) => {
       if (!r.ok) return send(res, 500, { ok: false, error: r.log.slice(-600) });
-      send(res, 200, { ok: true, log: r.log, ...read(file) });
+      send(res, 200, { ok: true, log: r.log, ...withSvsInfo(read(file) || { products: [] }, root) });
     });
     return true;
   }
