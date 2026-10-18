@@ -1152,7 +1152,7 @@ const ELO_LAND = {
 };
 // Eget Elo (AFC- och Copa-cuperna): ligan laget rankas i
 const ELO_LEAGUE = { JP1: "J1 League", KR: "K League 1", SAU: "Saudi Pro League", AUS: "A-League",
-  BR: "Brasileirão Série A", BR2: "Brasileirão Série B", AR: "Liga Profesional", COL: "Primera A" };
+  BR: "Brasileirão Série A", BR2: "Brasileirão Série B", AR: "Liga Profesional", COL: "Primera A", URU: "Primera División (Uruguay)" };
 
 /** Klubb-Elo bredvid lagnamnet (clubelo.com, eget Elo i AFC- och Copa-cuperna), förklaras under ⓘ Vad är Elo? Starkaste laget grönt med +skillnad. */
 function eloTag(e, other) {
@@ -1901,7 +1901,7 @@ async function toggleMatchup(btn, { reload = false } = {}) {
 // Ligor som kan ha domardata; vilka som faktiskt har det hämtas från /api/refleagues (refAvailable)
 const REF_LEAGUES = new Set(["PL", "CH", "EL1", "EL2", "BL", "BL2", "LL", "LL2", "SA", "SB", "L1", "ED", "PT", "GR", "AS", "SE2",
   "NO", "NO2", "DK", "EK", "JP1", "MLS", "MX", "BR", "BR2", "AR", "COL", "CZ", "HR", "CL", "EL", "ECL",
-  "BE", "SC", "SAU", "AUS", "KR", "CAN", "ACL", "ACL2", "LIB", "SUD"]);
+  "BE", "SC", "SAU", "AUS", "KR", "CAN", "URU", "ACL", "ACL2", "LIB", "SUD"]);
 let refAvailable = null;
 const hasRefData = (l) => (refAvailable ? refAvailable.has(l) : REF_LEAGUES.has(l));
 async function loadRefAvailable() {

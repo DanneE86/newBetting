@@ -45,3 +45,6 @@ databas/*.sqlite.bygger
 databas/*.sqlite-journal
 databas/auto-logg.txt
 databas/auto-konsol.txt
+
+# bet365-odds hämtade via webbläsare, bara lokalt
+data/bet365/

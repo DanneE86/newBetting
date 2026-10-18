@@ -1,19 +1,12 @@
 {
-    "updatedAt":  "2026-10-10T11:19:14.4267261+02:00",
+    "updatedAt":  "2026-10-18T06:35:11.7849289+02:00",
     "sources":  [
                     {
                         "name":  "csv:PL_2627.csv",
                         "url":  "https://www.football-data.co.uk/mmz4281/2627/E0.csv",
                         "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\PL_2627.csv",
                         "ok":  true,
-                        "bytes":  24803
-                    },
-                    {
-                        "name":  "csv:CH_2627.csv",
-                        "url":  "https://www.football-data.co.uk/mmz4281/2627/E1.csv",
-                        "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\CH_2627.csv",
-                        "ok":  true,
-                        "bytes":  46722
+                        "bytes":  29659
                     },
                     {
                         "name":  "csv:PL_2526.csv",
@@ -23,13 +16,6 @@
                         "bytes":  203438
                     },
                     {
-                        "name":  "csv:CH_2526.csv",
-                        "url":  "https://www.football-data.co.uk/mmz4281/2526/E1.csv",
-                        "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\CH_2526.csv",
-                        "ok":  true,
-                        "bytes":  294390
-                    },
-                    {
                         "name":  "csv:PL_2425.csv",
                         "url":  "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
                         "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\PL_2425.csv",
@@ -37,18 +23,32 @@
                         "bytes":  197110
                     },
                     {
-                        "name":  "csv:CH_2425.csv",
-                        "url":  "https://www.football-data.co.uk/mmz4281/2425/E1.csv",
-                        "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\CH_2425.csv",
-                        "ok":  true,
-                        "bytes":  286983
-                    },
-                    {
                         "name":  "csv:PL_2324.csv",
                         "url":  "https://www.football-data.co.uk/mmz4281/2324/E0.csv",
                         "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\PL_2324.csv",
                         "ok":  true,
                         "bytes":  172196
+                    },
+                    {
+                        "name":  "csv:CH_2627.csv",
+                        "url":  "https://www.football-data.co.uk/mmz4281/2627/E1.csv",
+                        "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\CH_2627.csv",
+                        "ok":  true,
+                        "bytes":  58349
+                    },
+                    {
+                        "name":  "csv:CH_2526.csv",
+                        "url":  "https://www.football-data.co.uk/mmz4281/2526/E1.csv",
+                        "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\CH_2526.csv",
+                        "ok":  true,
+                        "bytes":  294390
+                    },
+                    {
+                        "name":  "csv:CH_2425.csv",
+                        "url":  "https://www.football-data.co.uk/mmz4281/2425/E1.csv",
+                        "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\CH_2425.csv",
+                        "ok":  true,
+                        "bytes":  286983
                     },
                     {
                         "name":  "csv:CH_2324.csv",
@@ -62,7 +62,7 @@
                         "url":  "https://www.football-data.co.uk/mmz4281/2627/E2.csv",
                         "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\EL1_2627.csv",
                         "ok":  true,
-                        "bytes":  44612
+                        "bytes":  50464
                     },
                     {
                         "name":  "csv:EL1_2526.csv",
@@ -83,7 +83,7 @@
                         "url":  "https://www.football-data.co.uk/mmz4281/2627/SP1.csv",
                         "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\LL_2627.csv",
                         "ok":  true,
-                        "bytes":  33311
+                        "bytes":  37529
                     },
                     {
                         "name":  "csv:LL_2526.csv",
@@ -100,11 +100,32 @@
                         "bytes":  192863
                     },
                     {
+                        "name":  "csv:LL2_2627.csv",
+                        "url":  "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
+                        "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\LL2_2627.csv",
+                        "ok":  true,
+                        "bytes":  47144
+                    },
+                    {
+                        "name":  "csv:LL2_2526.csv",
+                        "url":  "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
+                        "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\LL2_2526.csv",
+                        "ok":  true,
+                        "bytes":  237701
+                    },
+                    {
+                        "name":  "csv:LL2_2425.csv",
+                        "url":  "https://www.football-data.co.uk/mmz4281/2425/SP2.csv",
+                        "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\LL2_2425.csv",
+                        "ok":  true,
+                        "bytes":  230032
+                    },
+                    {
                         "name":  "csv:SA_2627.csv",
                         "url":  "https://www.football-data.co.uk/mmz4281/2627/I1.csv",
                         "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\SA_2627.csv",
                         "ok":  true,
-                        "bytes":  24049
+                        "bytes":  28711
                     },
                     {
                         "name":  "csv:SA_2526.csv",
@@ -121,11 +142,32 @@
                         "bytes":  191722
                     },
                     {
+                        "name":  "csv:SB_2627.csv",
+                        "url":  "https://www.football-data.co.uk/mmz4281/2627/I2.csv",
+                        "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\SB_2627.csv",
+                        "ok":  true,
+                        "bytes":  29032
+                    },
+                    {
+                        "name":  "csv:SB_2526.csv",
+                        "url":  "https://www.football-data.co.uk/mmz4281/2526/I2.csv",
+                        "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\SB_2526.csv",
+                        "ok":  true,
+                        "bytes":  190966
+                    },
+                    {
+                        "name":  "csv:SB_2425.csv",
+                        "url":  "https://www.football-data.co.uk/mmz4281/2425/I2.csv",
+                        "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\SB_2425.csv",
+                        "ok":  true,
+                        "bytes":  192674
+                    },
+                    {
                         "name":  "csv:BL_2627.csv",
                         "url":  "https://www.football-data.co.uk/mmz4281/2627/D1.csv",
                         "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\BL_2627.csv",
                         "ok":  true,
-                        "bytes":  17760
+                        "bytes":  22029
                     },
                     {
                         "name":  "csv:BL_2526.csv",
@@ -142,11 +184,32 @@
                         "bytes":  156414
                     },
                     {
+                        "name":  "csv:BL2_2627.csv",
+                        "url":  "https://www.football-data.co.uk/mmz4281/2627/D2.csv",
+                        "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\BL2_2627.csv",
+                        "ok":  true,
+                        "bytes":  30780
+                    },
+                    {
+                        "name":  "csv:BL2_2526.csv",
+                        "url":  "https://www.football-data.co.uk/mmz4281/2526/D2.csv",
+                        "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\BL2_2526.csv",
+                        "ok":  true,
+                        "bytes":  157989
+                    },
+                    {
+                        "name":  "csv:BL2_2425.csv",
+                        "url":  "https://www.football-data.co.uk/mmz4281/2425/D2.csv",
+                        "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\BL2_2425.csv",
+                        "ok":  true,
+                        "bytes":  157178
+                    },
+                    {
                         "name":  "csv:L1_2627.csv",
                         "url":  "https://www.football-data.co.uk/mmz4281/2627/F1.csv",
                         "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\L1_2627.csv",
                         "ok":  true,
-                        "bytes":  21896
+                        "bytes":  26136
                     },
                     {
                         "name":  "csv:L1_2526.csv",
@@ -167,7 +230,7 @@
                         "url":  "https://www.football-data.co.uk/mmz4281/2627/N1.csv",
                         "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\ED_2627.csv",
                         "ok":  true,
-                        "bytes":  30164
+                        "bytes":  34375
                     },
                     {
                         "name":  "csv:ED_2526.csv",
@@ -184,74 +247,11 @@
                         "bytes":  155460
                     },
                     {
-                        "name":  "csv:BL2_2627.csv",
-                        "url":  "https://www.football-data.co.uk/mmz4281/2627/D2.csv",
-                        "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\BL2_2627.csv",
-                        "ok":  true,
-                        "bytes":  26477
-                    },
-                    {
-                        "name":  "csv:BL2_2526.csv",
-                        "url":  "https://www.football-data.co.uk/mmz4281/2526/D2.csv",
-                        "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\BL2_2526.csv",
-                        "ok":  true,
-                        "bytes":  157989
-                    },
-                    {
-                        "name":  "csv:BL2_2425.csv",
-                        "url":  "https://www.football-data.co.uk/mmz4281/2425/D2.csv",
-                        "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\BL2_2425.csv",
-                        "ok":  true,
-                        "bytes":  157178
-                    },
-                    {
-                        "name":  "csv:LL2_2627.csv",
-                        "url":  "https://www.football-data.co.uk/mmz4281/2627/SP2.csv",
-                        "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\LL2_2627.csv",
-                        "ok":  true,
-                        "bytes":  42003
-                    },
-                    {
-                        "name":  "csv:LL2_2526.csv",
-                        "url":  "https://www.football-data.co.uk/mmz4281/2526/SP2.csv",
-                        "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\LL2_2526.csv",
-                        "ok":  true,
-                        "bytes":  237701
-                    },
-                    {
-                        "name":  "csv:LL2_2425.csv",
-                        "url":  "https://www.football-data.co.uk/mmz4281/2425/SP2.csv",
-                        "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\LL2_2425.csv",
-                        "ok":  true,
-                        "bytes":  230032
-                    },
-                    {
-                        "name":  "csv:SB_2627.csv",
-                        "url":  "https://www.football-data.co.uk/mmz4281/2627/I2.csv",
-                        "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\SB_2627.csv",
-                        "ok":  true,
-                        "bytes":  24290
-                    },
-                    {
-                        "name":  "csv:SB_2526.csv",
-                        "url":  "https://www.football-data.co.uk/mmz4281/2526/I2.csv",
-                        "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\SB_2526.csv",
-                        "ok":  true,
-                        "bytes":  190966
-                    },
-                    {
-                        "name":  "csv:SB_2425.csv",
-                        "url":  "https://www.football-data.co.uk/mmz4281/2425/I2.csv",
-                        "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\SB_2425.csv",
-                        "ok":  true,
-                        "bytes":  192674
-                    },
-                    {
                         "name":  "csv:PT_2627.csv",
                         "url":  "https://www.football-data.co.uk/mmz4281/2627/P1.csv",
                         "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\PT_2627.csv",
                         "ok":  true,
-                        "bytes":  29676
+                        "bytes":  33928
                     },
                     {
                         "name":  "csv:PT_2526.csv",
@@ -272,7 +272,7 @@
                         "url":  "https://www.football-data.co.uk/mmz4281/2627/G1.csv",
                         "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\GR_2627.csv",
                         "ok":  true,
-                        "bytes":  17028
+                        "bytes":  20331
                     },
                     {
                         "name":  "csv:GR_2526.csv",
@@ -289,6 +289,48 @@
                         "bytes":  117759
                     },
                     {
+                        "name":  "csv:BE_2627.csv",
+                        "url":  "https://www.football-data.co.uk/mmz4281/2627/B1.csv",
+                        "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\BE_2627.csv",
+                        "ok":  true,
+                        "bytes":  34786
+                    },
+                    {
+                        "name":  "csv:BE_2526.csv",
+                        "url":  "https://www.football-data.co.uk/mmz4281/2526/B1.csv",
+                        "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\BE_2526.csv",
+                        "ok":  true,
+                        "bytes":  158888
+                    },
+                    {
+                        "name":  "csv:BE_2425.csv",
+                        "url":  "https://www.football-data.co.uk/mmz4281/2425/B1.csv",
+                        "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\BE_2425.csv",
+                        "ok":  true,
+                        "bytes":  158659
+                    },
+                    {
+                        "name":  "csv:SC_2627.csv",
+                        "url":  "https://www.football-data.co.uk/mmz4281/2627/SC0.csv",
+                        "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\SC_2627.csv",
+                        "ok":  true,
+                        "bytes":  23875
+                    },
+                    {
+                        "name":  "csv:SC_2526.csv",
+                        "url":  "https://www.football-data.co.uk/mmz4281/2526/SC0.csv",
+                        "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\SC_2526.csv",
+                        "ok":  true,
+                        "bytes":  118594
+                    },
+                    {
+                        "name":  "csv:SC_2425.csv",
+                        "url":  "https://www.football-data.co.uk/mmz4281/2425/SC0.csv",
+                        "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\raw\\SC_2425.csv",
+                        "ok":  true,
+                        "bytes":  118635
+                    },
+                    {
                         "name":  "openfootball:pl_2026-27.json",
                         "url":  "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/en.1.json",
                         "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\open\\pl_2026-27.json",
@@ -296,11 +338,39 @@
                         "bytes":  55359
                     },
                     {
+                        "name":  "openfootball:pl_2025-26.json",
+                        "url":  "https://raw.githubusercontent.com/openfootball/football.json/master/2025-26/en.1.json",
+                        "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\open\\pl_2025-26.json",
+                        "ok":  true,
+                        "bytes":  108493
+                    },
+                    {
+                        "name":  "openfootball:pl_2024-25.json",
+                        "url":  "https://raw.githubusercontent.com/openfootball/football.json/master/2024-25/en.1.json",
+                        "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\open\\pl_2024-25.json",
+                        "ok":  true,
+                        "bytes":  110141
+                    },
+                    {
                         "name":  "openfootball:ch_2026-27.json",
                         "url":  "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/en.2.json",
                         "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\open\\ch_2026-27.json",
                         "ok":  true,
                         "bytes":  77132
+                    },
+                    {
+                        "name":  "openfootball:ch_2025-26.json",
+                        "url":  "https://raw.githubusercontent.com/openfootball/football.json/master/2025-26/en.2.json",
+                        "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\open\\ch_2025-26.json",
+                        "ok":  true,
+                        "bytes":  159839
+                    },
+                    {
+                        "name":  "openfootball:ch_2024-25.json",
+                        "url":  "https://raw.githubusercontent.com/openfootball/football.json/master/2024-25/en.2.json",
+                        "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\open\\ch_2024-25.json",
+                        "ok":  true,
+                        "bytes":  165132
                     },
                     {
                         "name":  "openfootball:ll_2026-27.json",
@@ -336,37 +406,9 @@
                         "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\open\\ed_2026-27.json",
                         "ok":  true,
                         "bytes":  41499
-                    },
-                    {
-                        "name":  "openfootball:pl_2025-26.json",
-                        "url":  "https://raw.githubusercontent.com/openfootball/football.json/master/2025-26/en.1.json",
-                        "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\open\\pl_2025-26.json",
-                        "ok":  true,
-                        "bytes":  108493
-                    },
-                    {
-                        "name":  "openfootball:ch_2025-26.json",
-                        "url":  "https://raw.githubusercontent.com/openfootball/football.json/master/2025-26/en.2.json",
-                        "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\open\\ch_2025-26.json",
-                        "ok":  true,
-                        "bytes":  159839
-                    },
-                    {
-                        "name":  "openfootball:pl_2024-25.json",
-                        "url":  "https://raw.githubusercontent.com/openfootball/football.json/master/2024-25/en.1.json",
-                        "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\open\\pl_2024-25.json",
-                        "ok":  true,
-                        "bytes":  110141
-                    },
-                    {
-                        "name":  "openfootball:ch_2024-25.json",
-                        "url":  "https://raw.githubusercontent.com/openfootball/football.json/master/2024-25/en.2.json",
-                        "path":  "C:\\Users\\Danie\\Desktop\\Program\\Betting ny\\data\\open\\ch_2024-25.json",
-                        "ok":  true,
-                        "bytes":  165132
                     }
                 ],
-    "upcomingCount":  2197,
+    "upcomingCount":  2080,
     "extraLeagues":  true,
     "referees":  true,
     "bolldata":  true,
@@ -375,16 +417,5 @@
     "fpl":  true,
     "clubElo":  true,
     "espnLineups":  true,
-    "odds":  true,
-    "playerStats":  true,
-    "playerStatsCounts":  {
-                              "PL":  742,
-                              "LL":  464,
-                              "SA":  448,
-                              "BL":  367,
-                              "L1":  425,
-                              "ED":  413,
-                              "CH":  499
-                          },
-    "playerImpact":  true
+    "odds":  true
 }

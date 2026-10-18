@@ -1745,11 +1745,15 @@ test.describe('stryk-engine: kupong A, B och C', () => {
   // Icke-spikbara: tipset baseras på Oddsets marknadsstyrda blandning (tips-latest) när matchen finns där
   test('applyOddsetTipBasis: sätter tip/final från Oddset blended', async () => {
     const { applyOddsetTipBasis, findOddsetRow } = await import(pathToFileURL(path.join(ROOT, 'scripts', 'fetch-stryktipset.mjs')).href);
-    const row = findOddsetRow('E0', '2026-10-10', ['Man United', 'Tottenham'], ['Manchester United', 'Tottenham']);
+    // tips-latest byts vid varje hämtning: ta en aktuell rad med Oddset-blandning i stället för en fast match
+    const tips = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'tips-latest.json'), 'utf8'));
+    const src = [...(tips.allCandidates || []), ...(tips.bestUpcoming || [])].find((x) => x.pro?.blended?.home > 0 && x.home && x.away && x.date);
+    test.skip(!src, 'tips-latest saknar rader med Oddset-blandning');
+    const row = findOddsetRow(src.league, src.date, [src.home, src.away]);
     expect(row?.pro?.blended?.home).toBeGreaterThan(0);
     const a = {
-      home: 'Manchester United', away: 'Tottenham', kickoff: '2026-10-10T16:30:00Z', leagueCode: 'E0',
-      matched: { home: 'Man United', away: 'Tottenham' }, folk: [0.5, 0.25, 0.25], odds: [1.8, 4, 4.5],
+      home: src.home, away: src.away, kickoff: src.date, leagueCode: src.league,
+      matched: { home: src.home, away: src.away }, folk: [0.5, 0.25, 0.25], odds: [1.8, 4, 4.5],
       final: [0.4, 0.3, 0.3], tip: 'X', tipP: 0.3,
     };
     expect(applyOddsetTipBasis(a)).toBe(true);
@@ -3325,6 +3329,19 @@ test.describe('upset-pick: skräll med värde', () => {
 
 // ---------- elo-1x2.mjs ----------
 
+test.describe('name-similarity: lagnamn mellan odds, schema och tips', () => {
+  test('apostrof delar inte ordet: Hapoel Be-apostrof-er ar inte Benfica, Omonoia-Benfica far inte schemats Union SG-Hapoel', async () => {
+    const { nameSimilarity, normName } = await lib('name-similarity.mjs');
+    expect(normName("Hapoel Be'er Sheva")).toEqual(['hapoel', 'beer', 'sheva']);
+    expect(nameSimilarity("Hapoel Be'er", 'Benfica')).toBe(0);
+    expect(nameSimilarity('Union St.-Gilloise', 'Omonoia FC') + nameSimilarity("Hapoel Be'er", 'Benfica')).toBeLessThan(1);
+    expect(nameSimilarity("Newell's Old Boys", 'Newells Old Boys')).toBe(1);
+    expect(nameSimilarity("Inter D'Escaldes", "Inter Club d'Escaldes")).toBe(1);
+    expect(nameSimilarity("Nott'm Forest", 'Nottingham Forest')).toBe(1);
+    expect(nameSimilarity('Sp Lisbon', 'Sporting Lisbon')).toBe(1);
+  });
+});
+
 test.describe('elo-1x2: 1X2 ur Klubb-Elo utan odds', () => {
   test('eloProbs summerar till 1, hemmafordel och starkare lag ger hogre chans', async () => {
     const { eloProbs } = await lib('elo-1x2.mjs');
@@ -3377,6 +3394,31 @@ test.describe('elo-1x2: 1X2 ur Klubb-Elo utan odds', () => {
     expect(findClubElo('Sparta Prague', cache)?.clubEloName).toBe('Sparta Praha');
     expect(findClubElo('Red Star Belgrade', cache)?.clubEloName).toBe('Crvena Zvezda');
     expect(findClubElo('Okänt FC', cache)).toBeNull();
+  });
+
+  test('findClubElo: cupnamn ur schema/odds hittar clubelo-stavningen (EL/ECL 22/10)', async () => {
+    const { findClubElo } = await lib('elo-1x2.mjs');
+    const cache = { countries: {
+      GER: { clubs: [{ name: 'Bayern München', elo: 1990 }] },
+      GRE: { clubs: [{ name: 'Olympiakos', elo: 1724 }] },
+      CYP: { clubs: [{ name: 'Omonia', elo: 1560 }, { name: 'Paphos', elo: 1600 }, { name: 'Olympiakos Nicosia', elo: 1300 }] },
+      BEL: { clubs: [{ name: 'St Gillis', elo: 1750 }] },
+      FRA: { clubs: [{ name: 'Rennes', elo: 1760 }] },
+      NED: { clubs: [{ name: 'AZ', elo: 1720 }, { name: 'Sparta', elo: 1497 }] },
+      DEN: { clubs: [{ name: 'Aarhus', elo: 1600 }, { name: 'Nordsjaelland', elo: 1640 }] },
+      AND: { clubs: [{ name: 'Escaldes', elo: 1300 }, { name: 'Atlétic Escaldes', elo: 1250 }] },
+    } };
+    const name = (q) => findClubElo(q, cache)?.clubEloName;
+    expect(name('Bayern Munich')).toBe('Bayern München');
+    expect(name('Olympiacos')).toBe('Olympiakos');
+    expect(name('Omonoia FC')).toBe('Omonia');
+    expect(name('Pafos FC')).toBe('Paphos');
+    expect(name('Union Saint-Gilloise')).toBe('St Gillis');
+    expect(name('Stade Rennais')).toBe('Rennes');
+    expect(name('AZ Alkmaar')).toBe('AZ');
+    expect(name('AGF')).toBe('Aarhus');
+    expect(name('FC Nordsjælland')).toBe('Nordsjaelland');
+    expect(name("Inter Club d'Escaldes")).toBe('Escaldes');
   });
 
   test('clubEloLookup: Elo + plats i landet, bara ligans land, en klubb till ett lag', async () => {
@@ -4300,5 +4342,229 @@ test.describe('svs-matchinfo.js: panelen i matchkortet', () => {
     const draw = svsDrawAnalysis(p, keep);
     expect(draw).toContain('<p>Rad två</p>');
     expect(svsDrawAnalysis({ svsInfo: { drawAnalyses: [] } }, keep)).toBe('');
+  });
+});
+
+test.describe('tackling-model: tacklingar på bet365 (spelare, lag, match)', () => {
+  const day = (i: number) => new Date(Date.UTC(2025, 7, 1) + i * 86400000).toISOString().slice(0, 10);
+  // Lag A tacklar 20/match, B 12. Hård i A gör 4 per 90, Mjuk i B 1 per 90, Bänk i A spelar 20 min.
+  const mk = (i: number) => {
+    const homeA = i % 2 === 0;
+    const pA = [{ n: 'Hård Tacklare', t: homeA ? 0 : 1, min: 90, tkl: 4 }, { n: 'Bänk Spelare', t: homeA ? 0 : 1, min: 20, tkl: 1 }];
+    const pB = [{ n: 'Mjuk Spelare', t: homeA ? 1 : 0, min: 90, tkl: 1 }];
+    return { id: String(i), season: i < 40 ? '2025-2026' : '2026-2027', d: day(i), h: homeA ? 'A' : 'B', a: homeA ? 'B' : 'A',
+      tkl: homeA ? [20, 12] : [12, 20], players: [...pA, ...pB].map((p) => ({ ...p, gk: false, st: 1 })) };
+  };
+  const matches = Array.from({ length: 80 }, (_, i) => mk(i));
+
+  test('atLeast: negativ binomial går mot Poisson vid liten spridning', async () => {
+    const { atLeast } = await lib('tackling-model.mjs');
+    expect(atLeast(1, 2, 0)).toBeCloseTo(1 - Math.exp(-2), 6);
+    expect(atLeast(3, 2, 0.3)).toBeLessThan(atLeast(3, 2, 0));
+    expect(atLeast(0, 2, 0.1)).toBeCloseTo(1, 6);
+  });
+
+  test('calibrate: interpolerar mellan punkter och lämnar utan punkter orört', async () => {
+    const { calibrate } = await lib('tackling-model.mjs');
+    expect(calibrate([[0.4, 0.3], [0.8, 0.7]], 0.6)).toBeCloseTo(0.5, 6);
+    expect(calibrate([], 0.42)).toBe(0.42);
+  });
+
+  test('verdict och verdictSampled: +5 % krävs, och lag/match måste hålla ett medelfel ned', async () => {
+    const { verdict, verdictSampled } = await lib('tackling-model.mjs');
+    expect(verdict(0.5, 2.1)).toBe(true);
+    expect(verdict(0.5, 2.05)).toBe(false);
+    // Leeds under 11,5 (2026-10-18): 19 % mot 5,50 med 400 matcher → nej
+    expect(verdictSampled(0.19, 400, 5.5)).toBe(false);
+    expect(verdictSampled(0.25, 400, 5.5)).toBe(true);
+    expect(verdictSampled(0.22, 30, 5.5)).toBe(false);
+  });
+
+  test('playerProfiles och recentMinutes: krympt takt och senaste speltid', async () => {
+    const { playerProfiles, recentMinutes, norm, PRIOR_RATE, PRIOR_W90 } = await lib('tackling-model.mjs');
+    const prof = playerProfiles(matches);
+    const h = prof[norm('Hård Tacklare')];
+    expect(h.team).toBe('A');
+    expect(h.rate90).toBeCloseTo((80 * 4 + PRIOR_RATE * PRIOR_W90) / (80 + PRIOR_W90), 6);
+    expect(recentMinutes(prof[norm('Bänk Spelare')], 'A')).toEqual([20, 20, 20, 20, 20, 20]);
+    expect(h.startRate90).toBeCloseTo(h.rate90, 6); // alla matcher 90 min
+    expect(prof[norm('Bänk Spelare')].startRate90).toBeNull(); // aldrig 60+ min
+  });
+
+  test('matchTeam och findPlayer: lag ur spelarnamn, efternamn inom laget, accenter', async () => {
+    const { playerProfiles, matchTeam, findPlayer } = await lib('tackling-model.mjs');
+    const prof = playerProfiles(matches);
+    expect(matchTeam(prof, ['Hard Tacklare', 'Okänd'])).toBe('A');
+    expect(findPlayer(prof, 'H. Tacklare', 'A')?.name).toBe('Hård Tacklare');
+    expect(findPlayer(prof, 'H. Tacklare', 'B')).toBeNull();
+    expect(findPlayer(prof, 'Tacklare', 'A')?.name).toBe('Hård Tacklare'); // ensamt namn, som Bremer
+    expect(findPlayer(prof, 'Ny Spelare', 'B')).toBeNull(); // annan förnamnsbokstav än Mjuk Spelare
+  });
+
+  test('teamModel och probUnder: prognos efter lagens nivå, chans ur avvikelser', async () => {
+    const { teamModel, probUnder } = await lib('tackling-model.mjs');
+    const tm = teamModel(matches, day(20));
+    const [a, b] = tm.pred('A', 'B');
+    expect(a).toBeGreaterThan(b);
+    // två lag: A:s nivå 20 × B:s tacklingar mot 20 / ligasnitt 16 = 25, B 12 × 12 / 16 = 9
+    expect(a).toBeCloseTo(25, 0);
+    expect(b).toBeCloseTo(9, 0);
+    // 200 prognoser på 16: utfallet 4 under i 20 % av fallen, annars exakt prognosen
+    const hist = Array.from({ length: 200 }, (_, i) => [16, i % 5 === 0 ? 12 : 16]);
+    expect(probUnder(hist, 16, 13.5, 1)).toEqual({ p: 0.2, n: 200 });
+    expect(probUnder(hist, 16, 16.5, 1)!.p).toBe(1);
+    // bandet vidgas tills minst 100 matcher finns, annars null
+    expect(probUnder(hist, 30, 25.5, 1)).toBeNull();
+  });
+
+  test('analyzeMatch: troligt/värde per linje och start-scenario för bänkspelare', async () => {
+    const m = await lib('tackling-model.mjs');
+    const prof = m.playerProfiles(matches);
+    // avvikelseunderlag: prognoser 15–37, utfallet ±0,5/1,5/2,5 runt prognosen, symmetriskt och oberoende av nivån
+    const pool = Array.from({ length: 600 }, (_, i) => { const p = 15 + (i % 23); return [p, p + (i % 6) - 2.5]; });
+    const ctx = { prof, invK: 0.05, cal: {}, tm: m.teamModel(matches, day(20)), resPool: pool, resTotPool: pool };
+    const odds = { home: 'Ahem', away: 'Bborta', date: '2026-10-24', time: '15:00', markets: {
+      Tacklingar: {
+        Ahem: [{ name: 'Hård Tacklare', last5: [4, 4, 4, 4, 4], odds: { '1+': 1.02, '3+': 2.5 } }, { name: 'Bänk Spelare', last5: [1], odds: { '1+': 1.5 } }],
+        Bborta: [{ name: 'Mjuk Spelare', last5: [1, 1], odds: { '1+': 1.5 } }, { name: 'Ny Spelare', last5: [], odds: { '1+': 1.5 } }],
+      },
+      'Totalt antal tacklingar': { 'båda lagen kombinerat': [{ line: 31.5, over: 1.9, under: 1.9 }], Ahem: [{ line: 19.5, over: 1.9, under: 1.9 }] },
+    } };
+    const a = m.analyzeMatch(odds, ctx);
+    const hard = a.players.find((p: any) => p.name === 'Hård Tacklare');
+    expect(hard.lines.find((l: any) => l.k === 1).likely).toBe(true);
+    expect(hard.lines.find((l: any) => l.k === 3).value).toBe(true);
+    const bench = a.players.find((p: any) => p.name === 'Bänk Spelare');
+    // aldrig 60+ minuter → ingen starttakt och ingen bedömning "om han startar" (20-minutersinhopp ger opålitlig takt)
+    expect(bench.lines[0].pStart).toBeUndefined();
+    expect(hard.lines[0].pStart).toBeUndefined(); // ordinarie: inget startscenario
+    expect(a.players.find((p: any) => p.name === 'Ny Spelare').note).toBe('för lite data');
+    expect(a.total).toHaveLength(1);
+    expect(a.team[0].market).toBe('Ahem');
+    // Ahem väntas 25, bet365 mitt 19,5: oense med 5,5 → chansen räknas från 19,5, alltså ~50 % och inget värde @1,9
+    expect(a.team[0].agree).toBe(false);
+    expect(a.team[0].under.value || a.team[0].over.value).toBe(false);
+  });
+
+  test('marketMid och startCalibration: mittlinje och kalibrering för inhoppare som startar', async () => {
+    const { marketMid, startCalibration } = await lib('tackling-model.mjs');
+    expect(marketMid([{ line: 25.5, over: 1.11, under: 6 }, { line: 31.5, over: 1.8, under: 1.9 }, { line: 34.5, over: 2.62, under: 1.44 }])).toBe(31.5);
+    // Inhopparen spelar 20 min med 1 tackling, startar var 4:e match och gör då också bara 1: modellen tror mer
+    const ms = Array.from({ length: 200 }, (_, i) => ({ d: day(i), season: '2026-2027', h: 'A', a: 'B', tkl: [15, 15],
+      players: [{ n: 'Inhopp', t: 0, gk: false, st: i % 4 === 3 ? 1 : 0, min: i % 4 === 3 ? 80 : 20, tkl: 1 }] }));
+    const c = startCalibration(ms, 0.05, day(0));
+    expect(c[2]?.length).toBeGreaterThan(0);
+    for (const [p, y] of c[2]) expect(y).toBeLessThan(p);
+  });
+});
+
+test.describe('bet365: tolkning av listan, över/under och rapport', () => {
+  test('parseFixtureList och parseOverUnder', async () => {
+    const { parseFixtureList, parseOverUnder } = await import(pathToFileURL(path.join(ROOT, 'scripts', 'fetch-bet365-props.mjs')).href);
+    const txt = ['Fre 23 okt', '1', 'X', '2', '21:00', 'Ipswich', 'Nottm Forest', '3.10', '3.30', '2.25', 'Lör 24 okt', '1', 'X', '2', '13:30', 'Aston Villa', 'Man City', '4.50'].join('\n');
+    expect(parseFixtureList(txt, 2026)).toEqual([
+      { date: '2026-10-23', time: '21:00', home: 'Ipswich', away: 'Nottm Forest' },
+      { date: '2026-10-24', time: '13:30', home: 'Aston Villa', away: 'Man City' },
+    ]);
+    const ou = 'Totalt antal tacklingar\nBB\n \n25.5\n28.5\nÖver\n1.11\n1.33\nUnder\n6.00\n3.25\n';
+    expect(parseOverUnder(ou)).toEqual([{ line: 25.5, over: 1.11, under: 6 }, { line: 28.5, over: 1.33, under: 3.25 }]);
+  });
+
+  test('flatten och report: troligt, spelvärde och start-scenario', async () => {
+    const { flatten, report } = await import(pathToFileURL(path.join(ROOT, 'scripts', 'bet365-analys.mjs')).href);
+    const a = { match: 'A – B', when: '24 okt', expected: { A: 16, B: 15, total: 31 },
+      players: [{ team: 'A', name: 'X', avgMin: 40, lines: [{ line: '2+', k: 2, odds: 2, p: 0.4, ev: -0.2, value: false, pStart: 0.6, evStart: 0.2, valueStart: true }] }],
+      total: [{ market: 'Matchen totalt', line: 31.5, n: 200, over: { odds: 1.9, p: 0.75, ev: 0.425, value: true }, under: { odds: 1.9, p: 0.25, ev: -0.525, value: false } }], team: [] };
+    expect(flatten(a)).toHaveLength(3);
+    const md = report(a);
+    expect(md).toContain('| Matchen totalt över 31.5 | 1.9 | 75 % | +43 % | JA |');
+    expect(md).toContain('### Värde bara om spelaren startar');
+    expect(report({ match: 'C – D', when: '', players: [], total: [], team: [] })).toContain('Inga tacklingsmarknader');
+  });
+});
+
+test.describe('bet365-uppfoljning: utfall mot analysen', () => {
+  const imp = () => import(pathToFileURL(path.join(ROOT, 'scripts', 'bet365-uppfoljning.mjs')).href);
+  const a = { league: 'PL', match: 'Leeds – Man Utd', date: '2026-10-18', teams: { Leeds: 'Leeds United', 'Man Utd': 'Manchester United' },
+    players: [
+      { name: 'Anton Stach', lines: [{ line: '2+', k: 2, odds: 1.4, p: 0.64, value: false }, { line: '3+', k: 3, odds: 2.2, p: 0.36, value: true }] },
+      { name: 'Sean Longstaff', lines: [{ line: '1+', k: 1, odds: 1.14, p: 0.3, value: false }] },
+    ],
+    total: [{ market: 'Matchen totalt', line: 25.5, over: { odds: 1.11, p: 0.81, value: false }, under: { odds: 6, p: 0.19, value: true } }],
+    team: [{ market: 'Leeds', line: 15.5, over: { odds: 1.8, p: 0.5, value: false }, under: { odds: 1.9, p: 0.5, value: false } }] };
+  // FotMob: Man Utd hemma här (omvänd ordning ska klaras), Leeds 14, Man Utd 10 tacklingar
+  const ms = [{ d: '2026-10-18T14:00:00.000Z', h: 'Manchester United', a: 'Leeds United', tkl: [10, 14],
+    players: [{ n: 'Anton Stach', t: 1, min: 90, tkl: 3 }, { n: 'Sean Longstaff', t: 1, min: 0, tkl: 0 }] }];
+
+  test('findResult och settle: lagen åt rätt håll, struken spelare, över/under', async () => {
+    const { findResult, settle } = await imp();
+    const r = findResult(a, ms)!;
+    expect(r.teamTkl).toEqual({ Leeds: 14, 'Man Utd': 10 });
+    expect(r.total).toBe(24);
+    const rows = settle(a, r);
+    expect(rows.find((x: any) => x.what === 'Anton Stach 3+').hit).toBe(true);
+    expect(rows.find((x: any) => x.what === 'Sean Longstaff 1+').void).toBe(true);
+    expect(rows.find((x: any) => x.what === 'Matchen totalt under 25.5').hit).toBe(true);
+    expect(rows.find((x: any) => x.what === 'Leeds över 15.5').hit).toBe(false);
+    expect(findResult({ ...a, date: '2026-10-19' }, ms)).toBeNull();
+  });
+
+  test('calibrationTable och valueResult: chansgrupper och netto i insatser', async () => {
+    const { findResult, settle, calibrationTable, valueResult } = await imp();
+    const rows = settle(a, findResult(a, ms)!);
+    const v = valueResult(rows);
+    expect(v.n).toBe(2);
+    expect(v.hits).toBe(2);
+    expect(v.net).toBeCloseTo((2.2 - 1) + (6 - 1), 6);
+    const c = calibrationTable(rows);
+    expect(c.reduce((s: number, x: any) => s + x.n, 0)).toBe(6); // 7 rader minus 1 struken
+  });
+});
+
+// ---------- discord-tips.mjs ----------
+test.describe('discord-tips: bästa tipsen till Discord', () => {
+  const tip = (home: string, p: number, odds: number | null, kickoffUtc: string, extra: any = {}) => ({
+    league: 'PL', date: kickoffUtc.slice(0, 10), kickoffUtc, home, away: `${home} B`, tipScore: 0.6,
+    tips: { '1X2': { pick: '1', confidence: p } },
+    pro: odds ? { odds: { home: odds }, verdicts: { home: { odds, minOdds: 1.5, value: odds >= 1.5 } } } : undefined,
+    ...extra,
+  });
+  const now = new Date('2026-10-18T08:00:00Z');
+
+  test('urval: över 60 %, odds över 1.4, högst 3, högst chans först, inom omgången', async () => {
+    const { topTips } = await lib('discord-tips.mjs');
+    const data = {
+      bestUpcoming: [
+        tip('A', 0.62, 1.6, '2026-10-20T18:00:00Z'),
+        tip('B', 0.70, 1.45, '2026-10-21T18:00:00Z'),
+        tip('C', 0.60, 1.9, '2026-10-20T18:00:00Z'), // exakt 60 % räcker inte
+        tip('D', 0.80, 1.3, '2026-10-20T18:00:00Z'), // för låga odds
+        tip('E', 0.75, null, '2026-10-20T18:00:00Z'), // inga odds
+        tip('F', 0.66, 1.7, '2026-10-20T18:00:00Z', { postponed: true }),
+        tip('G', 0.90, 2.0, '2026-10-30T18:00:00Z'), // utanför omgången (första dagen + 3)
+      ],
+      allCandidates: [tip('H', 0.64, 1.5, '2026-10-22T18:00:00Z'), tip('I', 0.61, 1.5, '2026-10-22T18:00:00Z'), tip('A', 0.62, 1.6, '2026-10-20T18:00:00Z')],
+    };
+    expect(topTips(data, now).map((t: any) => t.home)).toEqual(['B', 'H', 'A']);
+    expect(topTips({ bestUpcoming: [tip('X', 0.5, 2, '2026-10-20T18:00:00Z')] }, now)).toEqual([]);
+  });
+
+  test('meddelande: avsparkstid, Värde/Ej värde med från-odds, inga insatsbelopp, max 2000 tecken', async () => {
+    const { discordMessage } = await lib('discord-tips.mjs');
+    const msg = discordMessage([tip('Arsenal', 0.68, 1.6, '2026-10-20T18:45:00Z'), tip('Leeds', 0.63, 1.45, '2026-10-21T14:00:00Z')]);
+    expect(msg).toContain('Arsenal – Arsenal B');
+    expect(msg).toContain('20:45'); // svensk tid
+    expect(msg).toContain('✅ Värde från 1.50');
+    expect(msg).toContain('➖ Ej värde från 1.50');
+    expect(msg).not.toMatch(/kr/);
+    expect(msg.length).toBeLessThanOrEqual(2000);
+    expect(discordMessage([])).toContain('Inga tips');
+  });
+
+  test('pick1x2: odds utan facit räknas som Ej värde, aldrig tomt omdöme', async () => {
+    const { pick1x2 } = await lib('discord-tips.mjs');
+    const r = pick1x2({ tips: { '1X2': { pick: '2', confidence: 0.65 } }, value: { odds: { home: 5, draw: 4, away: 1.6 } } });
+    expect(r).toMatchObject({ pick: '2', odds: 1.6, verdict: 'Ej värde' });
+    expect(r.from).toBeCloseTo(1.66, 2);
   });
 });

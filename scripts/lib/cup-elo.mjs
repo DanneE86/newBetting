@@ -1,9 +1,9 @@
 // Eget lag-Elo för cuper utanför Europa: Klubb-Elo (clubelo.com) täcker bara Europa, så rankingen räknas ur ligorna
 // i store (team-elo.mjs). Ligorna möts nästan aldrig, så nivån mellan dem kommer från startvärdena.
 //  - Asien (ACL, ACL2): J1, Saudi, K League, A-League (ungefär Opta/IFFHS-ordningen: J1 och Saudi starkast).
-//  - Sydamerika (LIB, SUD): Brasileirão A/B, Argentina, Colombia (Brasilien starkast: brasilianska lag har vunnit
+//  - Sydamerika (LIB, SUD): Brasileirão A/B, Argentina, Colombia, Uruguay (Brasilien starkast: brasilianska lag har vunnit
 //    Libertadores varje år 2019–2025 och har 3–5 gånger så högt truppvärde som argentinska).
-// Lag från ligor utan data (Iran, Qatar, Uruguay, Chile, Ecuador ...) får inget Elo. Laget söks bara i sin hemmaliga
+// Lag från ligor utan data (Iran, Qatar, Chile, Ecuador ...) får inget Elo. Laget söks bara i sin hemmaliga
 // (FotMob primaryLeagueId i data/trupper/<cup>.json), aldrig över länder: Shabab Al-Ahli (Förenade Arabemiraten) blir
 // aldrig saudiska Al Ahli.
 //   const eloOf = cupEloLookup(store.matches, '2026-10-13', CUP_ELO_REGIONS.sydamerika.start)
@@ -15,7 +15,7 @@ import { sameTeamName, TEAM_ALIASES } from './team-aliases.mjs';
 import { FOTMOB_LEAGUES } from './fotmob-leagues.mjs';
 
 export const ASIA_ELO_START = { JP1: 1560, SAU: 1560, KR: 1540, AUS: 1430 };
-export const SA_ELO_START = { BR: 1600, AR: 1540, BR2: 1470, COL: 1450 };
+export const SA_ELO_START = { BR: 1600, AR: 1540, BR2: 1470, COL: 1450, URU: 1440 };
 export const CUP_ELO_REGIONS = {
   asia: { start: ASIA_ELO_START, source: 'asiaelo' },
   sydamerika: { start: SA_ELO_START, source: 'saelo' },
