@@ -15,7 +15,8 @@ import { adjustProbs, loadAdjustments } from './lib/learned-adjust.mjs';
 import { extraSignals } from './lib/extra-signals.mjs';
 import { latestSeasons } from './lib/seasons.mjs';
 import { mergeCaseDuplicates, mergeNameVariants } from './lib/odds-history.mjs';
-import { sameTeamName, TEAM_ALIASES } from './lib/team-aliases.mjs';
+import { sameTeamName } from './lib/team-aliases.mjs';
+import { nameSimilarity } from './lib/name-similarity.mjs';
 import { buildRefIndex, loadRefereeMatches, refereeFlags, refKey, REF_LEAGUES, resolveTeam } from './lib/referee-streaks.mjs';
 import { buildCardIndex, CARD_CFG, pickCardLine, predictCards } from './lib/cards-model.mjs';
 import { DRAW_LEAGUES, DRAW_MARGIN, pick1x2 } from './lib/pick-1x2.mjs';
@@ -669,7 +670,8 @@ function marketOnlyCandidates() {
     const home = fx?.home ?? e.homeRaw ?? e.home;
     const away = fx?.away ?? e.awayRaw ?? e.away;
     const date = fx?.date ?? e.commence.slice(0, 10);
-    const est = dataProbs(e.league, home, away);
+    // Schemats namn forst, annars oddsens ("Olympiacos" saknas i Klubb-Elo, "Olympiakos Piraeus" finns)
+    const est = dataProbs(e.league, home, away) ?? dataProbs(e.league, e.homeRaw ?? e.home, e.awayRaw ?? e.away);
     if (!est) continue;
     const probs = { home: est.home, draw: est.draw, away: est.away };
     const { pick, confidence: conf, drawRule } = pick1x2(probs, e.league);
@@ -763,25 +765,6 @@ function findLiveOdds(t) {
   if (bestScore >= 1) return best; // kraver rimlig likhet for bada lagen tillsammans
   // Flyttad match (schema och odds skiljer 2-4 dagar): bara vid nastan sakra namn
   return wideScore >= 1.6 ? wide : null;
-}
-
-function normName(s) {
-  return String(TEAM_ALIASES[s] ?? s).replace(/æ/gi, 'ae').replace(/ø/gi, 'o').replace(/å/gi, 'a').replace(/ß/g, 'ss')
-    .normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
-    .replace(/\b(fc|afc|cf|sc|ac|ss|as|us|ssc|rc|rcd|cd|ud|sd|sv|vfb|vfl|tsg|bv|fk|1\.|club|de|calcio|hotspur)\b/g, ' ')
-    .replace(/[^a-z0-9 ]/g, ' ').split(/\s+/).filter((w) => w.length > 1);
-}
-
-/**
- * 0..1: andel ord som matchar (prefix racker, t.ex. "nott" ~ "nottingham"), matt at bada hallen
- * sa att "U. Catolica" ~ "Universidad Catolica (CHI)" ger samma poang oavsett ordning.
- */
-function nameSimilarity(a, b) {
-  const A = normName(a);
-  const B = normName(b);
-  if (!A.length || !B.length) return 0;
-  const share = (X, Y) => X.filter((w) => Y.some((v) => v.startsWith(w) || w.startsWith(v))).length / X.length;
-  return Math.max(share(A, B), share(B, A));
 }
 
 /**

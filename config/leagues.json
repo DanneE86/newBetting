@@ -29,6 +29,7 @@
     { "id": "sydkorea", "name": "Sydkorea", "leagues": ["KR"] },
     { "id": "tjeckien", "name": "Tjeckien", "leagues": ["CZ"] },
     { "id": "tyskland", "name": "Tyskland", "leagues": ["BL", "BL2"] },
+    { "id": "uruguay", "name": "Uruguay", "leagues": ["URU"] },
     { "id": "usa", "name": "USA", "leagues": ["MLS"] }
   ],
   "leagues": {
@@ -74,6 +75,7 @@
     "SAU":  { "name": "Saudi Pro League",             "country": "Saudi Arabia", "odds": "soccer_saudi_arabia_pro_league",        "history": "espn", "espn": "ksa.1", "fotmobId": 536, "oddsportal": "saudi-arabia/saudi-professional-league" },
     "AUS":  { "name": "A-League",                     "country": "Australia",    "odds": "soccer_australia_aleague",              "history": "espn", "espn": "aus.1", "fotmobId": 113, "oddsportal": "australia/a-league" },
     "KR":   { "name": "K League 1",                   "country": "South Korea",  "odds": "soccer_korea_kleague1",                 "history": "fotmob", "fotmobId": 9080, "calendarYear": true, "s365": 618, "oddsportal": "south-korea/k-league-1" },
-    "CAN":  { "name": "Canadian Premier League",      "country": "Canada",       "odds": null,                                    "history": "fotmob", "fotmobId": 9986, "calendarYear": true, "s365": 5620, "oddsportal": "canada/canadian-premier-league" }
+    "CAN":  { "name": "Canadian Premier League",      "country": "Canada",       "odds": null,                                    "history": "fotmob", "fotmobId": 9986, "calendarYear": true, "s365": 5620, "oddsportal": "canada/canadian-premier-league" },
+    "URU":  { "name": "Primera División",      "country": "Uruguay",      "odds": null,                                    "history": "espn", "espn": "uru.1", "calendarYear": true, "oddsportal": "uruguay/liga-auf-uruguaya" }
   }
 }

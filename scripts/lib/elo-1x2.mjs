@@ -50,7 +50,11 @@ export function eloProbs(eloH, eloA, homeAdv = CLUB_HOME_ADV, scale = CLUB_ELO_S
 }
 
 // Engelska namn pa stader/klubbar -> clubelo:s stavning ("Sparta Prague" blev annars Sparta Rotterdam, "Red Star" Paris-klubben)
-const EXONYMS = [[/\bprague\b/i, 'Praha'], [/\bred star\b/i, 'Crvena Zvezda'], [/\bbelgrade\b/i, 'Beograd']];
+// Cupnamn ur spelschemat/oddsen som clubelo stavar annorlunda (EL/ECL 22/10 2026 saknade annars tips)
+const EXONYMS = [[/\bprague\b/i, 'Praha'], [/\bred star\b/i, 'Crvena Zvezda'], [/\bbelgrade\b/i, 'Beograd'],
+  [/\bmunich\b/i, 'München'], [/\bolympiacos\b/i, 'Olympiakos'], [/\bomonoia\b/i, 'Omonia'], [/\bpafos\b/i, 'Paphos'],
+  [/^(royale )?union saint-gilloise$|^union sg$/i, 'St Gillis'], [/^stade rennais( fc)?$/i, 'Rennes'], [/^az alkmaar$/i, 'AZ'],
+  [/^agf( aarhus)?$/i, 'Aarhus'], [/^inter club d'?escaldes$/i, 'Escaldes'], [/æ/gi, 'ae'], [/ø/gi, 'o']];
 const exactKey = (s) => String(s || '').replace(/ø/gi, 'o').replace(/æ/gi, 'ae').normalize('NFD').replace(/\p{M}/gu, '').toLowerCase().replace(/[^a-z0-9]+/g, '');
 
 /**
