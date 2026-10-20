@@ -4606,3 +4606,17 @@ test.describe('discord-tips: bästa tipsen till Discord', () => {
     expect(r.from).toBeCloseTo(1.66, 2);
   });
 });
+
+test('GUI-skripten (moduler) går att tolka: inga dubbla deklarationer', async () => {
+  const { spawnSync } = await import('child_process');
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'gui-check-'));
+  for (const f of ['app.js', 'stryktips.js', 'stryk-engine.js', 'hastar.js']) {
+    const src = fs.readFileSync(path.join(ROOT, 'gui', 'public', f), 'utf8');
+    expect(src.length, `${f} är tom`).toBeGreaterThan(0);
+    const tmp = path.join(dir, f.replace(/\.js$/, '.mjs'));
+    fs.writeFileSync(tmp, src);
+    const r = spawnSync(process.execPath, ['--check', tmp], { encoding: 'utf8' });
+    expect(r.status, `${f}: ${r.stderr}`).toBe(0);
+  }
+  fs.rmSync(dir, { recursive: true, force: true });
+});

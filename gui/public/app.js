@@ -503,11 +503,11 @@ function refereeBadge(r) {
 
 // Oddsrörelse sedan första noteringen (marginalfri chans, procentenheter) och gamla odds inför avspark (pro-lagret)
 const fmtPp = (pp) => `${pp > 0 ? "+" : ""}${String(pp).replace(".", ",")}`;
-const fmtWhen = (iso) => new Date(iso).toLocaleString("sv-SE", { timeZone: "Europe/Stockholm", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" });
+const fmtOddsAt = (iso) => new Date(iso).toLocaleString("sv-SE", { timeZone: "Europe/Stockholm", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" });
 function oddsMoveBox(tip) {
   const m = tip.oddsMove, st = tip.oddsStale;
   const parts = [];
-  if (st) parts.push(`<div class="ref-alert loss" role="note"><span class="ref-alert-k">⚠ Gamla odds</span> hämtade ${escapeHtml(fmtWhen(st.oddsAt))} (${String(st.ageH).replace(".", ",")} h sedan) – kolla dagens pris innan du spelar</div>`);
+  if (st) parts.push(`<div class="ref-alert loss" role="note"><span class="ref-alert-k">⚠ Gamla odds</span> hämtade ${escapeHtml(fmtOddsAt(st.oddsAt))} (${String(st.ageH).replace(".", ",")} h sedan) – kolla dagens pris innan du spelar</div>`);
   if (!m) return parts.join("");
   const one = (k) => {
     const x = m.moves[k];
@@ -515,7 +515,7 @@ function oddsMoveBox(tip) {
     return `<span class="ref-team ${cls}" title="Marknadens chans ${fmtPp(x.pp)} procentenheter"><b>${escapeHtml(PICK_LABEL[k])}</b> ${escapeHtml(fmtOdd(x.from))} → <b>${escapeHtml(fmtOdd(x.to))}</b> <small>(${fmtPp(x.pp)})</small></span>`;
   };
   const keys = Object.keys(m.moves);
-  const since = `sedan ${escapeHtml(fmtWhen(m.firstAt))}`;
+  const since = `sedan ${escapeHtml(fmtOddsAt(m.firstAt))}`;
   if (m.flagged.length) {
     parts.push(`<div class="ref-alert mixed" role="note"><span class="ref-alert-k">⇅ Oddsrörelse</span> ${since} – marknaden har flyttat sig minst 4 procentenheter, gränsen för Värde flyttar med<ul>${m.flagged.map((k) => `<li class="${m.moves[k].pp > 0 ? "win" : "loss"}">${one(k)}</li>`).join("")}</ul></div>`);
   } else {

@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+import { test, expect, type Page } from '@playwright/test';
 import { spawn, ChildProcess } from 'child_process';
 import path from 'path';
 import fs from 'fs';
@@ -638,6 +638,14 @@ test.describe('GUI: fliken Hästar', () => {
     throw new Error('GUI-servern startade inte');
   });
   test.afterAll(() => server?.kill());
+  // Samma val som alignAnalysis i hastar.js: sidan visar den kommande omgången om den är sparad, annars den senaste
+  const shownState = async (page: Page) => {
+    const state = await (await page.request.get(base + '/api/hastar')).json();
+    const next = await (await page.request.get(base + '/api/hastar/spel?kommande=1')).json().catch(() => null);
+    const id = next?.upcomingId || next?.games?.[0]?.id;
+    if (!id || state.analysis?.id === id || !state.index?.analyses?.some((x: { id: string }) => x.id === id)) return state;
+    return (await page.request.get(base + `/api/hastar?id=${encodeURIComponent(id)}`)).json();
+  };
 
   test('/hastar visar fliken, Kort sagt och dolda tipsdelar', async ({ page }) => {
     const errors: string[] = [];
@@ -647,6 +655,9 @@ test.describe('GUI: fliken Hästar', () => {
     await expect(page).toHaveURL(base + '/hastar');
     await expect(page.locator('#hastar-view')).toBeVisible();
     await expect(page.locator('#hastar-view h2')).toContainText('Hästar');
+    // vänta tills sidan bytt till den kommande omgången, annars ritas korten om mitt i klicken
+    const shown = (await shownState(page)).analysis;
+    if (shown?.date) await expect(page.locator('#hastar-view h2')).toContainText(shown.date, { timeout: 20_000 });
     // Alla kort (Kort sagt, Vad folket missar, spikarna, Sårbara favoriter, Skrällar …) är hopfällda från start
     const kort = page.locator('details.hs-kort.hs-fold');
     await expect(kort.locator('summary h3')).toHaveText('Kort sagt');
@@ -657,7 +668,7 @@ test.describe('GUI: fliken Hästar', () => {
     await expect(kort.locator('p')).toBeVisible();
     await kort.locator('summary').click();
     await expect(kort.locator('p')).toBeHidden();
-    const analysis = (await (await page.request.get(base + '/api/hastar')).json()).analysis;
+    const analysis = (await shownState(page)).analysis;
     if (analysis && analysis.type !== 'dd') {
       await expect(page.locator('.hs-cards > :not(details.hs-fold)')).toHaveCount(0);
       for (const t of ['Bästa spiken', 'Sårbara favoriter', 'Skrällar']) {
@@ -681,7 +692,7 @@ test.describe('GUI: fliken Hästar', () => {
   });
 
   test('avdelningarna: hopfällda med din rad, mobil har Till raden och Nästa avdelning, öppna står kvar vid omritning', async ({ page }) => {
-    const state = await (await page.request.get(base + '/api/hastar')).json();
+    const state = await shownState(page);
     test.skip(!state.analysis || state.analysis.type === 'dd' || state.analysis.races.length < 2, 'Ingen sparad V-spelsanalys i data/hastar');
     const errors: string[] = [];
     page.on('pageerror', (e) => errors.push(e.message));
@@ -732,7 +743,7 @@ test.describe('GUI: fliken Hästar', () => {
   });
 
   test('sparad analys: lopptabeller, värdebedömning, starttid och systembyggare inom budget', async ({ page }) => {
-    const state = await (await page.request.get(base + '/api/hastar')).json();
+    const state = await shownState(page);
     test.skip(!state.analysis || state.analysis.type === 'dd', 'Ingen sparad V-spelsanalys i data/hastar');
     await page.goto(base + '/hastar');
     await expect(page.locator('.hs-race').first()).toBeVisible({ timeout: 20_000 });
@@ -879,7 +890,7 @@ test.describe('GUI: fliken Hästar', () => {
   });
 
   test('bygg eget system: klickad häst blir din spik, flera hästar spelas exakt, Rensa tar bort', async ({ page }) => {
-    const state = await (await page.request.get(base + '/api/hastar')).json();
+    const state = await shownState(page);
     test.skip(!state.analysis || state.analysis.type === 'dd', 'Ingen sparad V-spelsanalys i data/hastar');
     await page.goto(base + '/hastar');
     await expect(page.locator('.hs-egna')).toBeVisible({ timeout: 20_000 });
@@ -945,7 +956,7 @@ test.describe('GUI: fliken Hästar', () => {
   });
 
   test('bygg eget system: Skapa system efter minst ett val ger rakt system med ATG-fil och länkar, även när reducerat är valt', async ({ page }) => {
-    const state = await (await page.request.get(base + '/api/hastar')).json();
+    const state = await shownState(page);
     test.skip(!state.analysis || state.analysis.type === 'dd', 'Ingen sparad V-spelsanalys i data/hastar');
     await page.goto(base + '/hastar');
     await expect(page.locator('.hs-egna')).toBeVisible({ timeout: 20_000 });
