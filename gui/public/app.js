@@ -501,6 +501,34 @@ function refereeBadge(r) {
   return `<span class="ref-badge ${kind}" title="Domarsvit: ${escapeHtml(r.referee)}">⚑ domare</span>`;
 }
 
+// Oddsrörelse sedan första noteringen (marginalfri chans, procentenheter) och gamla odds inför avspark (pro-lagret)
+const fmtPp = (pp) => `${pp > 0 ? "+" : ""}${String(pp).replace(".", ",")}`;
+const fmtWhen = (iso) => new Date(iso).toLocaleString("sv-SE", { timeZone: "Europe/Stockholm", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" });
+function oddsMoveBox(tip) {
+  const m = tip.oddsMove, st = tip.oddsStale;
+  const parts = [];
+  if (st) parts.push(`<div class="ref-alert loss" role="note"><span class="ref-alert-k">⚠ Gamla odds</span> hämtade ${escapeHtml(fmtWhen(st.oddsAt))} (${String(st.ageH).replace(".", ",")} h sedan) – kolla dagens pris innan du spelar</div>`);
+  if (!m) return parts.join("");
+  const one = (k) => {
+    const x = m.moves[k];
+    const cls = m.flagged.includes(k) ? (x.pp > 0 ? "win" : "loss") : "";
+    return `<span class="ref-team ${cls}" title="Marknadens chans ${fmtPp(x.pp)} procentenheter"><b>${escapeHtml(PICK_LABEL[k])}</b> ${escapeHtml(fmtOdd(x.from))} → <b>${escapeHtml(fmtOdd(x.to))}</b> <small>(${fmtPp(x.pp)})</small></span>`;
+  };
+  const keys = Object.keys(m.moves);
+  const since = `sedan ${escapeHtml(fmtWhen(m.firstAt))}`;
+  if (m.flagged.length) {
+    parts.push(`<div class="ref-alert mixed" role="note"><span class="ref-alert-k">⇅ Oddsrörelse</span> ${since} – marknaden har flyttat sig minst 4 procentenheter, gränsen för Värde flyttar med<ul>${m.flagged.map((k) => `<li class="${m.moves[k].pp > 0 ? "win" : "loss"}">${one(k)}</li>`).join("")}</ul></div>`);
+  } else {
+    parts.push(`<div class="ref-line"><span class="ref-line-k">Oddsrörelse</span> <small>${since}:</small> ${keys.map(one).join(" ")}</div>`);
+  }
+  return parts.join("");
+}
+function oddsMoveBadge(tip) {
+  if (tip.oddsStale) return `<span class="ref-badge loss" title="Oddsen är ${escapeHtml(String(tip.oddsStale.ageH))} h gamla">⚠ gamla odds</span>`;
+  if (tip.oddsMove?.flagged?.length) return `<span class="ref-badge" title="Marknaden har flyttat sig minst 4 procentenheter">⇅ odds</span>`;
+  return "";
+}
+
 function tipCard(tip, i, { upset = false } = {}) {
   const t = tip.tips || {};
   const od = oddsCells(tip);
@@ -608,6 +636,7 @@ function tipCard(tip, i, { upset = false } = {}) {
       </header>
       ${squadBar(tip)}
       ${refereeBox(tip.referee, tip.home, tip.away)}
+      ${oddsMoveBox(tip)}
       <div class="team-panel" hidden></div>
 
       <table class="tip-table ds-table">
@@ -790,7 +819,7 @@ function candRow(tip, { fold = false, upset = false, i = 0 } = {}) {
   return `<details class="cand-row${fold ? " fold-row" : ""}${u ? " upset-row" : ""}" data-tip-id="${escapeHtml(tipId(tip))}"${fold ? " open" : ""}>
     <summary>
       <time class="cr-time${tip.postponed ? " postponed" : ""}" data-league="${escapeHtml(tip.league || "")}">${escapeHtml(fmtKick(tip))}</time>
-      <span class="cr-match">${escapeHtml(tip.home && tip.away ? `${tip.home} – ${tip.away}` : tip.match || "")}${refereeBadge(tip.referee)}</span>
+      <span class="cr-match">${escapeHtml(tip.home && tip.away ? `${tip.home} – ${tip.away}` : tip.match || "")}${refereeBadge(tip.referee)}${oddsMoveBadge(tip)}</span>
       <span class="cr-league" title="${escapeHtml(leagueName(tip.league))}">${escapeHtml(tip.league || "")}</span>
       <span class="cr-tip">${escapeHtml(pr?.label || "—")} ${odds}</span>
       <span class="cr-chance">${pr ? fmtChance(pr.p) : "—"}</span>

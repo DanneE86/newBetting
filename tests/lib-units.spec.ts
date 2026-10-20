@@ -2412,6 +2412,44 @@ test.describe('odds-history: versaldubbletter', () => {
     expect(mergeCaseDuplicates(m)).toBe(0);
   });
 });
+// ---------- odds-history.mjs: oddsrörelse och gamla odds ----------
+test.describe('odds-history: oddsrörelse och gamla odds', () => {
+  const snap = (oddsAt, home, fair) => ({ at: oddsAt, oddsAt, odds: { home, draw: 4.2, away: 4.7 }, fair });
+  test('rörelse i procentenheter, flaggad från 4 enheter (Napoli 1,63 -> 1,78, Fenerbahce 1,70 -> 1,54)', async () => {
+    const { oddsMovement } = await lib('odds-history.mjs');
+    const napoli = oddsMovement({
+      first: snap('2026-10-18T05:00:00Z', 1.63, { home: 0.5905, draw: 0.2134, away: 0.196 }),
+      last: snap('2026-10-20T15:19:00Z', 1.78, { home: 0.5617, draw: 0.2362, away: 0.2021 }),
+    });
+    expect(napoli.moves.home).toEqual({ from: 1.63, to: 1.78, pp: -2.9 });
+    expect(napoli.moves.draw.pp).toBe(2.3);
+    expect(napoli.flagged).toEqual([]);
+    const fener = oddsMovement({
+      first: snap('2026-10-18T05:00:00Z', 1.7, { home: 0.5672, draw: 0.2285, away: 0.2043 }),
+      last: snap('2026-10-20T15:19:00Z', 1.54, { home: 0.6328, draw: 0.2058, away: 0.1614 }),
+    });
+    expect(fener.flagged).toEqual(['home', 'away']);
+    expect(fener.moves.home.pp).toBe(6.6);
+  });
+  test('ingen rörelse utan två olika hämtningar eller utan facit', async () => {
+    const { oddsMovement } = await lib('odds-history.mjs');
+    const s = snap('2026-10-18T05:00:00Z', 1.63, { home: 0.59, draw: 0.21, away: 0.2 });
+    expect(oddsMovement({ first: s, last: s })).toBeNull();
+    expect(oddsMovement({ first: s, last: { ...s, oddsAt: '2026-10-20T15:00:00Z', fair: null } })).toBeNull();
+    expect(oddsMovement(null)).toBeNull();
+  });
+  test('gamla odds: avspark inom 24 h och odds äldre än 6 h', async () => {
+    const { isStaleOdds, oddsAgeHours } = await lib('odds-history.mjs');
+    const now = Date.parse('2026-10-20T15:00:00Z');
+    expect(oddsAgeHours('2026-10-18T05:00:22Z', now)).toBe(58);
+    expect(isStaleOdds('2026-10-18T05:00:22Z', '2026-10-20T19:00:00Z', now)).toBe(true);
+    expect(isStaleOdds('2026-10-20T13:00:00Z', '2026-10-20T19:00:00Z', now)).toBe(false); // 2 h gamla
+    expect(isStaleOdds('2026-10-18T05:00:22Z', '2026-10-23T19:00:00Z', now)).toBe(false); // avspark om 3 dygn
+    expect(isStaleOdds('2026-10-18T05:00:22Z', '2026-10-20T14:00:00Z', now)).toBe(false); // redan spelad
+    expect(isStaleOdds(null, '2026-10-20T19:00:00Z', now)).toBe(false);
+  });
+});
+
 // ---------- team-aliases.mjs + odds-history: namnvarianter ----------
 
 test.describe('lagnamn: varianter och dubbletter', () => {
