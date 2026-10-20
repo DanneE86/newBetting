@@ -1,7 +1,8 @@
 name: Oddsschema
 
 # Odds för matcher inom 24 h (användaren 2026-10-20), körs i molnet även när datorn är av:
-# alla ligor en gång per dag från 08:00 svensk tid, europeiska ligor + CL/EL/ECL dessutom 1 h före avspark.
+# alla ligor en gång per dag från 08:00 svensk tid, europeiska ligor + CL/EL/ECL dessutom 55 min före avspark
+# när startelvan är officiell (annars nästa körning, senast 20 min före avspark).
 # Kollar var 10:e minut vad som är due (scripts/odds-schema.mjs --plan, ett par sekunder) och hämtar bara då:
 # OddsPortal (gratis) + The Odds API inom månadskvoten -> pro-lagret -> oddsrörelser -> commit -> publicera.
 on:
@@ -35,7 +36,7 @@ jobs:
 
       - name: Vad är due?
         id: plan
-        run: node scripts/odds-schema.mjs --plan
+        run: node scripts/odds-schema.mjs --plan # utan beroenden: kollen går på sekunder, npm ci bara när något hämtas
 
       - name: powershell -> pwsh
         if: steps.plan.outputs.run == 'true'

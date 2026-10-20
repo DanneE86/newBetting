@@ -14,7 +14,7 @@ import { historicalMissing, findUsMatch, inCurrentSquad, loadPlayerModel, summar
 import { adjustProbs, loadAdjustments } from './lib/learned-adjust.mjs';
 import { extraSignals } from './lib/extra-signals.mjs';
 import { latestSeasons } from './lib/seasons.mjs';
-import { mergeCaseDuplicates, mergeNameVariants, oddsMovement, oddsAgeHours, isStaleOdds, addOddsPoint } from './lib/odds-history.mjs';
+import { mergeCaseDuplicates, mergeNameVariants, oddsMovement, oddsAgeHours, isStaleOdds, addOddsPoint, ODDS_MOVE_WINDOW_H } from './lib/odds-history.mjs';
 import { sameTeamName } from './lib/team-aliases.mjs';
 import { nameSimilarity } from './lib/name-similarity.mjs';
 import { buildRefIndex, loadRefereeMatches, refereeFlags, refKey, REF_LEAGUES, resolveTeam } from './lib/referee-streaks.mjs';
@@ -254,7 +254,10 @@ tips.valueBets = [...enriched.values()]
 const oddsHist = recordOddsHistory(enriched);
 const staleTips = [];
 for (const t of allTips) {
-  const move = oddsMovement(oddsHist.matches[`${t.date}|${t.league}|${t.home}|${t.away}`]);
+  // Bara sena rorelser: noteringar inom 24 h fore avspark (ODDS_MOVE_WINDOW_H)
+  const kick = Date.parse(t.kickoffUtc ?? '');
+  const since = Number.isFinite(kick) ? new Date(kick - ODDS_MOVE_WINDOW_H * 36e5).toISOString() : null;
+  const move = since ? oddsMovement(oddsHist.matches[`${t.date}|${t.league}|${t.home}|${t.away}`], undefined, undefined, since) : null;
   if (move) t.oddsMove = move; else delete t.oddsMove;
   const oddsAt = t.pro?.oddsAt;
   if (isStaleOdds(oddsAt, t.kickoffUtc)) { t.oddsStale = { oddsAt, ageH: oddsAgeHours(oddsAt) }; staleTips.push(t); } else delete t.oddsStale;

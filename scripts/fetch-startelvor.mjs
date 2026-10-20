@@ -4,6 +4,7 @@
 //   npm run elvor                 Oddset-matcher inom 4 dagar + kupongerna
 //   npm run elvor -- --days 7     längre fram
 //   npm run elvor -- --force      hämta om även bekräftade och nyss hämtade elvor
+//   npm run elvor -- --refresh 5  hämta om obekräftade elvor äldre än 5 min (oddsschemat inför avspark, standard 30)
 import { collectMatches, updateStore, readStore, writeStore } from './lib/startelva.mjs';
 import { findMatch } from './lib/match-context.mjs';
 
@@ -14,11 +15,12 @@ const arg = (name, d) => {
 };
 const days = Number(arg('--days', 4));
 const force = args.includes('--force');
+const refreshMin = Number(arg('--refresh', 30));
 
 const matches = collectMatches({ days });
 console.log(`Startelvor: ${matches.length} matcher (Oddset inom ${days} dagar + kupongerna)`);
 const t0 = Date.now();
-const res = await updateStore(matches, { store: readStore(), force, findMatch, log: (s) => console.log(s) });
+const res = await updateStore(matches, { store: readStore(), force, refreshMin, findMatch, log: (s) => console.log(s) });
 writeStore(res.store);
 const withXi = res.store.matches.filter((m) => m.lineup);
 const confirmed = withXi.filter((m) => m.lineup.confirmed).length;

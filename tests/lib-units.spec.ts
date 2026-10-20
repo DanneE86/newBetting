@@ -2486,7 +2486,7 @@ test.describe('odds-history: tidsserie per källa', () => {
   });
 });
 
-test.describe('odds-schedule: 24 h, Europa 1 h före avspark, övriga en gång per dag', () => {
+test.describe('odds-schedule: 24 h, Europa 55 min före avspark med startelva, övriga en gång per dag', () => {
   const leagues = { PL: { country: 'England' }, CL: { cup: true }, LIB: { cup: true }, BR: { country: 'Brazil' } };
   const m = (key: string, league: string, kickoffUtc: string) => ({ key, league, kickoffUtc });
   const matches = [
@@ -2512,15 +2512,35 @@ test.describe('odds-schedule: 24 h, Europa 1 h före avspark, övriga en gång p
     // Molnet sent: första körningen efter 08 tar dagens hämtning
     expect(planOdds({ matches, leagues, state: { dailyDate: '2026-10-19' }, now: Date.parse('2026-10-20T14:00:00Z') }).daily).toBe(true);
   });
-  test('1 h före avspark bara för Europa, en gång per match', async () => {
+  test('55 min före avspark bara för Europa, en gång per match', async () => {
     const { planOdds } = await lib('odds-schedule.mjs');
     const state = { dailyDate: '2026-10-20' };
-    const p = planOdds({ matches, leagues, state, now: Date.parse('2026-10-20T18:00:00Z') }); // CL om 60 min, LIB om 90
+    expect(planOdds({ matches, leagues, state, now: Date.parse('2026-10-20T18:00:00Z') }).prekickKeys).toEqual([]); // 60 min kvar
+    const p = planOdds({ matches, leagues, state, now: Date.parse('2026-10-20T18:05:00Z') }); // CL om 55 min, LIB om 85
     expect(p.prekickKeys).toEqual(['cl']);
+    expect(p.prekick[0].kickoffUtc).toBe('2026-10-20T19:00:00Z');
     expect(p.leagues).toEqual(['CL']);
     expect(planOdds({ matches, leagues, state, now: Date.parse('2026-10-20T17:30:00Z') }).prekickKeys).toEqual([]); // 90 min kvar
     expect(planOdds({ matches, leagues, state: { ...state, prekick: { cl: 'x' } }, now: Date.parse('2026-10-20T18:20:00Z') }).prekickKeys).toEqual([]);
     expect(planOdds({ matches, leagues, state, now: Date.parse('2026-10-20T21:30:00Z') }).prekickKeys).toEqual([]); // BR, inte Europa
+  });
+  test('startelvan: officiell elva hämtas, annars vänta - senast 20 min före avspark', async () => {
+    const { splitByLineup, lineupsByKey } = await lib('odds-schedule.mjs');
+    const lineups = lineupsByKey({ matches: [
+      { keys: ['CL|2026-10-20|Napoli|Bodo/Glimt'], lineup: { confirmed: true } },
+      { keys: ['CL|2026-10-20|FC Porto|PSV Eindhoven'], lineup: { confirmed: false } },
+      { keys: ['CL|2026-10-20|Liverpool|Villarreal'], lineup: null },
+    ] });
+    expect(lineups.get('2026-10-20|CL|Napoli|Bodo/Glimt')).toEqual({ confirmed: true });
+    const k = (home: string, away: string, kickoffUtc = '2026-10-20T19:00:00Z') => ({ key: `2026-10-20|CL|${home}|${away}`, league: 'CL', kickoffUtc });
+    const ms = [k('Napoli', 'Bodo/Glimt'), k('FC Porto', 'PSV Eindhoven'), k('Liverpool', 'Villarreal'), k('Okänd', 'Lag')];
+    const at50 = splitByLineup(ms, lineups, Date.parse('2026-10-20T18:10:00Z')); // 50 min kvar
+    expect(at50.ready.map((m: any) => m.key)).toEqual(['2026-10-20|CL|Napoli|Bodo/Glimt']);
+    expect(at50.ready[0].lineupConfirmed).toBe(true);
+    expect(at50.wait.length).toBe(3);
+    const at20 = splitByLineup(ms, lineups, Date.parse('2026-10-20T18:40:00Z')); // 20 min kvar: hämta ändå
+    expect(at20.ready.length).toBe(4);
+    expect(at20.ready.filter((m: any) => !m.lineupConfirmed).length).toBe(3);
   });
   test('kvoten fördelas över månaden, hälften till 08-hämtningen', async () => {
     const { apiBudget } = await lib('odds-schedule.mjs');
@@ -2538,6 +2558,41 @@ test.describe('odds-schedule: 24 h, Europa 1 h före avspark, övriga en gång p
     expect(s.dailyDate).toBe('2026-10-20');
     expect(Object.keys(s.prekick).sort()).toEqual(['cl', 'ny']);
     expect(s.credits).toEqual({ date: '2026-10-20', startLeft: 80 });
+  });
+});
+
+test.describe('odds-rorelser: bara sena rörelser, logg och utvärdering', () => {
+  const pt = (at: string, src: string, home: number, fh: number) => ({ at, src, odds: { home, draw: 3.2, away: 4 }, fair: { home: fh, draw: 0.27, away: 1 - fh - 0.27 } });
+  test('oddsMovement med since: en vecka gammal notering räknas inte (Vasco–Boca 1,90 -> 2,76)', async () => {
+    const { oddsMovement } = await lib('odds-history.mjs');
+    const e = { points: [pt('2026-10-13T19:13:00Z', 'op', 1.9, 0.5), pt('2026-10-20T08:00:00Z', 'op', 2.7, 0.35), pt('2026-10-20T23:35:00Z', 'op', 2.76, 0.345)] };
+    expect(oddsMovement(e).moves.home.pp).toBe(-15.5); // hela veckan
+    const late = oddsMovement(e, undefined, undefined, '2026-10-20T00:30:00Z'); // avspark 21/10 00:30 - 24 h
+    expect(late.moves.home).toEqual({ from: 2.7, to: 2.76, pp: -0.5 });
+    expect(late.flagged).toEqual([]);
+    expect(oddsMovement({ points: e.points.slice(0, 2) }, undefined, undefined, '2026-10-20T00:30:00Z')).toBeNull(); // en notering i fönstret
+  });
+  test('logRecord: minuter före avspark för senaste noteringen', async () => {
+    const { logRecord } = await lib('odds-rorelser.mjs');
+    const r = logRecord({ date: '2026-10-20', league: 'CL', home: 'Napoli', away: 'Bodo/Glimt', kickoffUtc: '2026-10-20T19:00:00Z',
+      oddsMove: { src: 'api', firstAt: '2026-10-20T06:00:00Z', lastAt: '2026-10-20T18:05:00Z', moves: {}, flagged: [] } }, Date.parse('2026-10-20T18:06:00Z'));
+    expect(r.key).toBe('2026-10-20|CL|Napoli|Bodo/Glimt');
+    expect(r.minBeforeKick).toBe(55);
+    expect(logRecord({ kickoffUtc: 'x' })).toBeNull();
+  });
+  test('evaluateMoves: följ och mot rörelsen till senaste oddset, per tröskel', async () => {
+    const { evaluateMoves } = await lib('odds-rorelser.mjs');
+    const rec = (key: string, home: [number, number], away: [number, number]) => ({ key, moves: {
+      home: { from: 1.7, to: home[0], pp: home[1] }, draw: { from: 4, to: 4, pp: 0 }, away: { from: 5, to: away[0], pp: away[1] } } });
+    const records = [rec('a', [1.54, 6.6], [6.2, -4.4]), rec('b', [2.0, 2.5], [3.5, -2.5]), rec('c', [1.5, 5], [7, -5])];
+    const res: any = { a: { hg: 2, ag: 0 }, b: { hg: 0, ag: 1 }, c: { hg: 1, ag: 1 } };
+    const ev = evaluateMoves(records, (r: any) => res[r.key] ?? null, [2, 4]);
+    expect(ev.graded).toBe(3);
+    const row = (T: number, s: string) => ev.rows.find((r: any) => r.threshold === T && r.market === '1X2' && r.strategy === s);
+    expect(row(2, 'folj')).toMatchObject({ n: 3, wins: 1, profit: -1.46 }); // a vann @1,54, b och c förlust
+    expect(row(4, 'folj')).toMatchObject({ n: 2, wins: 1 }); // b under 4 enheter
+    expect(row(2, 'mot')).toMatchObject({ n: 3, wins: 1, profit: 0.5 }); // b: borta vann @3,5
+    expect(ev.rows.find((r: any) => r.market === 'Ö/U 2,5').n).toBe(0);
   });
 });
 
@@ -3650,11 +3705,32 @@ test.describe('arbetsfloden: npm ci fore node-skript', () => {
     for (const f of fs.readdirSync(dir).filter((x) => x.endsWith('.yml'))) {
       const lines = fs.readFileSync(path.join(dir, f), 'utf8').split('\n');
       const ci = lines.findIndex((l) => /\bnpm ci\b/.test(l));
-      const node = lines.findIndex((l) => /\bnode scripts\//.test(l));
+      // Undantag "# utan beroenden": skriptet far bara importera node:-moduler och egna filer som gor detsamma (testas nedan)
+      const node = lines.findIndex((l) => /\bnode scripts\//.test(l) && !/# utan beroenden/.test(l));
       if (node < 0) continue;
       expect(ci, `${f}: npm ci saknas`).toBeGreaterThanOrEqual(0);
       expect(ci, `${f}: node scripts/ på rad ${node + 1} före npm ci på rad ${ci + 1}`).toBeLessThan(node);
     }
+  });
+  test('steg "# utan beroenden" importerar bara node:-moduler (oddsschemats koll var 10:e minut före npm ci)', () => {
+    const dir = path.join(ROOT, '.github', 'workflows');
+    const imports = (file: string, seen = new Set<string>()): string[] => {
+      if (seen.has(file)) return [];
+      seen.add(file);
+      const src = fs.readFileSync(file, 'utf8');
+      const specs = [...src.matchAll(/(?:^|\n)\s*import\s[^'"]*['"]([^'"]+)['"]|import\(\s*['"]([^'"]+)['"]\s*\)/g)].map((m) => m[1] ?? m[2]);
+      return specs.flatMap((s) => (s.startsWith('.') ? imports(path.resolve(path.dirname(file), s), seen) : [s]));
+    };
+    let n = 0;
+    for (const f of fs.readdirSync(dir).filter((x) => x.endsWith('.yml'))) {
+      for (const l of fs.readFileSync(path.join(dir, f), 'utf8').split('\n').filter((x) => /# utan beroenden/.test(x))) {
+        const script = /node (scripts\/\S+\.mjs)/.exec(l)?.[1];
+        expect(script, `${f}: ${l.trim()}`).toBeTruthy();
+        expect(imports(path.join(ROOT, script!)).filter((s) => !s.startsWith('node:')), `${f}: ${script}`).toEqual([]);
+        n++;
+      }
+    }
+    expect(n).toBeGreaterThan(0);
   });
 });
 
@@ -4726,4 +4802,65 @@ test('GUI-skripten (moduler) går att tolka: inga dubbla deklarationer', async (
     expect(r.status, `${f}: ${r.stderr}`).toBe(0);
   }
   fs.rmSync(dir, { recursive: true, force: true });
+});
+
+test.describe('vakt: stoppar trasiga commits och publiceringar', () => {
+  const vakt = () => import(pathToFileURL(path.join(ROOT, 'scripts', 'vakt.mjs')).href);
+  const B = (s: string) => Buffer.from(s);
+
+  test('tom fil, syntaxfel, dubbel deklaration i GUI-modul och trasig JSON stoppas', async () => {
+    const { checkFiles } = await vakt();
+    const fel = checkFiles([
+      { file: 'scripts/lib/tom.mjs', src: B(''), head: B('export const a = 1;\n') },
+      { file: 'scripts/trasig.mjs', src: B('export const a = ;\n'), head: null },
+      { file: 'gui/public/app.js', src: B('function f() {}\nconst f = 1;\n'), head: null },
+      { file: 'config/x.json', src: B('{"a": }'), head: null },
+    ]);
+    expect(fel.find((f: string) => f.startsWith('scripts/lib/tom.mjs'))).toContain('tom');
+    expect(fel.find((f: string) => f.startsWith('scripts/trasig.mjs'))).toContain('syntaxfel');
+    expect(fel.find((f: string) => f.startsWith('gui/public/app.js'))).toContain('already been declared');
+    expect(fel.find((f: string) => f.startsWith('config/x.json'))).toContain('trasig JSON');
+    expect(fel).toHaveLength(4);
+  });
+
+  test('kodfil som tappar över hälften av raderna stoppas, om den inte är tillåten', async () => {
+    const { checkFiles } = await vakt();
+    const head = B(Array.from({ length: 100 }, (_, i) => `export const v${i} = ${i};`).join('\n'));
+    const src = B(Array.from({ length: 30 }, (_, i) => `export const v${i} = ${i};`).join('\n'));
+    expect(checkFiles([{ file: 'scripts/a.mjs', src, head }])[0]).toContain('krympte från 100 till 30');
+    expect(checkFiles([{ file: 'scripts/a.mjs', src, head }], { allowShrink: ['scripts/a.mjs'] })).toEqual([]);
+    expect(checkFiles([{ file: 'data/a.json', src: B('[]'), head: B(`[${'1,'.repeat(200)}1]`) }])).toEqual([]);
+  });
+
+  test('hela fungerande filer släpps igenom', async () => {
+    const { checkFiles } = await vakt();
+    expect(checkFiles([
+      { file: 'gui/public/app.js', src: B('import x from "./y.js";\nexport const a = x;\n'), head: null },
+      { file: 'config/x.json', src: B('\uFEFF{"a": 1}'), head: null },
+    ])).toEqual([]);
+  });
+
+  test('ändrade eller borttagna tester kräver "Teständring: <skäl>", nya tester gör det inte, test.only aldrig', async () => {
+    const { checkTestChanges } = await vakt();
+    const nytt = '+++ b/tests/a.spec.ts\n@@ -10,0 +11,2 @@\n+test(\'ny\', () => {\n+});\n';
+    const andrat = '--- a/tests/a.spec.ts\n+++ b/tests/a.spec.ts\n@@ -5 +5 @@\n-  expect(x).toBe(12);\n+  expect(x).toBe(11);\n';
+    expect(checkTestChanges(nytt, 'Ny funktion')).toEqual([]);
+    expect(checkTestChanges(andrat, 'Fixar data')[0]).toContain('Teständring');
+    expect(checkTestChanges(andrat, 'Fixar data\n\nTeständring: sidan visar kommande omgång, inte senaste')).toEqual([]);
+    expect(checkTestChanges(andrat, 'Teständring: ok')[0]).toContain('Teständring');
+    expect(checkTestChanges('+++ b/tests/a.spec.ts\n+test.only(\'x\', () => {});\n', 'Teständring: felsöker ett test')[0]).toContain('test.only');
+  });
+
+  test('git-krokarna är påslagna och anropar vakten och testerna', () => {
+    const hooks = spawnSync('git', ['config', 'core.hooksPath'], { cwd: ROOT, encoding: 'utf8' }).stdout.trim();
+    expect(hooks).toBe('.githooks');
+    const pre = fs.readFileSync(path.join(ROOT, '.githooks', 'pre-commit'), 'utf8');
+    expect(pre).toContain('scripts/vakt.mjs --staged');
+    expect(pre).toContain('test:commit');
+    expect(fs.readFileSync(path.join(ROOT, '.githooks', 'commit-msg'), 'utf8')).toContain('scripts/vakt.mjs --tester');
+    const pub = fs.readFileSync(path.join(ROOT, '.github', 'workflows', 'publish.yml'), 'utf8');
+    expect(pub.indexOf('scripts/vakt.mjs')).toBeGreaterThan(-1);
+    expect(pub.indexOf('vakt.mjs --sajt site')).toBeGreaterThan(pub.indexOf('build-static-site.mjs'));
+    expect(pub.indexOf('vakt.mjs --sajt site')).toBeLessThan(pub.indexOf('wrangler'));
+  });
 });

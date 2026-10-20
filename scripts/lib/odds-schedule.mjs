@@ -1,5 +1,6 @@
 // Oddsschema (anvandaren 2026-10-20): bara matcher inom 24 h. Alla ligor hamtas en gang per dag (fran 08:00 svensk tid,
-// forsta korningen efter 08 om molnet ar sent), europeiska ligor och UEFA-cuperna dessutom 1 h fore avspark.
+// forsta korningen efter 08 om molnet ar sent), europeiska ligor och UEFA-cuperna dessutom 55 min fore avspark
+// nar startelvan ar slappt (anvandaren 2026-10-20: "var saker pa att startelvan ar slappt").
 // Rena funktioner - scripts/odds-schema.mjs gor hamtningen, .github/workflows/odds-schema.yml kor den var 10:e minut.
 
 export const EUROPE_COUNTRIES = new Set([
@@ -9,8 +10,10 @@ export const EUROPE_COUNTRIES = new Set([
 export const EUROPE_CUPS = new Set(['CL', 'EL', 'ECL']);
 export const DAILY_HOUR = 8;
 export const HORIZON_H = 24;
-// Cron var 10:e minut kan bli sen i GitHub Actions: fonstret borjar 75 min fore avspark sa en korning hamnar nara 1 h
-export const PREKICK_WINDOW_MIN = 75;
+// Fonstret borjar 55 min fore avspark (elvorna slapps normalt 60-75 min fore). Ar elvan inte officiell an vantar
+// hamtningen till nasta korning (cron var 10:e minut), men senast PREKICK_FALLBACK_MIN fore avspark hamtas oddsen anda.
+export const PREKICK_WINDOW_MIN = 55;
+export const PREKICK_FALLBACK_MIN = 20;
 
 export const isEuropeLeague = (code, cfg) => (cfg?.cup ? EUROPE_CUPS.has(code) : EUROPE_COUNTRIES.has(cfg?.country));
 
@@ -25,7 +28,7 @@ export function stockholmClock(now) {
 /**
  * Vad ska hamtas nu? matches: [{ key, league, kickoffUtc }], state: { dailyDate, prekick: { key: at } }.
  * daily = dagens hamtning ar inte gjord och klockan ar minst 08 -> alla ligor med match inom 24 h.
- * prekick = europeiska matcher 0-75 min fran avspark som inte har hamtats fore avspark an.
+ * prekick = europeiska matcher 0-55 min fran avspark som inte har hamtats fore avspark an (elvan kollas i splitByLineup).
  */
 export function planOdds({ matches, state = {}, leagues = {}, now = Date.now() }) {
   const t = new Date(now).getTime();
@@ -43,7 +46,7 @@ export function planOdds({ matches, state = {}, leagues = {}, now = Date.now() }
   const dailyLeagues = daily ? uniq(soon.map((m) => m.league)) : [];
   const prekickLeagues = uniq(prekick.map((m) => m.league));
   return {
-    date: clock.date, daily, dailyLeagues, prekickLeagues, prekickKeys: prekick.map((m) => m.key),
+    date: clock.date, daily, dailyLeagues, prekick, prekickLeagues, prekickKeys: prekick.map((m) => m.key),
     leagues: uniq([...dailyLeagues, ...prekickLeagues]),
   };
 }
@@ -70,4 +73,33 @@ export function nextState(state = {}, plan, { now = Date.now(), leftNow = null }
   for (const k of plan.prekickKeys) prekick[k] = at;
   const credits = state.credits?.date === plan.date ? state.credits : { date: plan.date, startLeft: leftNow };
   return { ...state, dailyDate: plan.daily ? plan.date : state.dailyDate ?? null, prekick, credits, lastRun: at };
+}
+
+/**
+ * Fore-avspark-matcherna delade pa startelvan: ready = officiell elva (eller senast PREKICK_FALLBACK_MIN fore avspark,
+ * da hamtas oddsen utan elva), wait = elvan inte slappt an -> nasta korning. lineups: Map(nyckel -> { confirmed }) med
+ * nyckeln datum|liga|hemma|borta som i tipsen.
+ */
+export function splitByLineup(matches, lineups, now = Date.now()) {
+  const ready = [];
+  const wait = [];
+  for (const m of matches) {
+    const min = (Date.parse(m.kickoffUtc) - now) / 6e4;
+    const confirmed = !!lineups.get(m.key)?.confirmed;
+    if (confirmed || min <= PREKICK_FALLBACK_MIN) ready.push({ ...m, lineupConfirmed: confirmed });
+    else wait.push(m);
+  }
+  return { ready, wait };
+}
+
+/** data/startelvor.json -> Map(datum|liga|hemma|borta -> { confirmed }). Startelvornas nycklar ar liga|datum|hemma|borta. */
+export function lineupsByKey(store) {
+  const out = new Map();
+  for (const m of store?.matches ?? []) {
+    for (const k of m.keys ?? []) {
+      const [league, date, home, away] = k.split('|');
+      out.set(`${date}|${league}|${home}|${away}`, { confirmed: !!m.lineup?.confirmed });
+    }
+  }
+  return out;
 }

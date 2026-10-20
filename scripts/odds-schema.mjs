@@ -1,5 +1,5 @@
 // Oddsschema: hamtar odds for matcher inom 24 h - alla ligor en gang per dag fran 08:00, europeiska ligor och
-// UEFA-cuperna dessutom 1 h fore avspark - och raknar om tipsen sa oddsrorelsen syns pa /tips.
+// UEFA-cuperna dessutom 55 min fore avspark nar startelvan ar slappt - och raknar om tipsen sa oddsrorelsen syns pa /tips.
 // Kors var 10:e minut av .github/workflows/odds-schema.yml (molnet, aven nar datorn ar av). Regler: scripts/lib/odds-schedule.mjs.
 //   node scripts/odds-schema.mjs --plan    visa vad som ar due (skriver run=true/false till GITHUB_OUTPUT)
 //   node scripts/odds-schema.mjs           hamta det som ar due: OddsPortal (gratis) + The Odds API inom kvoten, pro-lagret, rapport
@@ -8,7 +8,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
-import { planOdds, apiBudget, nextState } from './lib/odds-schedule.mjs';
+import { planOdds, apiBudget, nextState, splitByLineup, lineupsByKey } from './lib/odds-schedule.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const P = {
@@ -16,6 +16,7 @@ const P = {
   leagues: path.join(root, 'config', 'leagues.json'),
   state: path.join(root, 'data', 'open', 'odds-schema.json'),
   env: path.join(root, '.env'),
+  lineups: path.join(root, 'data', 'startelvor.json'),
 };
 const readJson = (p, fb) => (fs.existsSync(p) ? JSON.parse(fs.readFileSync(p, 'utf8').replace(/^﻿/, '')) : fb);
 const planOnly = process.argv.includes('--plan');
@@ -58,10 +59,23 @@ const registry = readJson(P.leagues, { leagues: {} });
 const state = readJson(P.state, {});
 const plan = planOdds({ matches: upcomingMatches(), state, leagues: registry.leagues });
 console.log(`Oddsschema ${plan.date}: dagens hämtning ${plan.daily ? `ja (${plan.dailyLeagues.join(', ') || 'inga matcher inom 24 h'})` : 'gjord'}`
-  + ` · 1 h före avspark: ${plan.prekickKeys.length ? `${plan.prekickKeys.length} matcher (${plan.prekickLeagues.join(', ')})` : 'inga'}`);
+  + ` · 55 min före avspark: ${plan.prekickKeys.length ? `${plan.prekickKeys.length} matcher (${plan.prekickLeagues.join(', ')})` : 'inga'}`);
 const due = plan.daily || plan.prekickKeys.length > 0;
 if (process.env.GITHUB_OUTPUT) fs.appendFileSync(process.env.GITHUB_OUTPUT, `run=${due}\n`);
 if (planOnly || !due) process.exit(0);
+
+// Fore avspark: oddsen nar startelvan ar officiell (FotMob), annars nasta korning - senast 20 min fore avspark
+if (plan.prekick.length) {
+  try { run('node', ['scripts/fetch-startelvor.mjs', '--days', '1', '--refresh', '5']); } catch (e) { console.log(`Startelvor misslyckades: ${e.message}`); }
+  const { ready, wait } = splitByLineup(plan.prekick, lineupsByKey(readJson(P.lineups, {})));
+  for (const m of wait) console.log(`  väntar på startelvan: ${m.match ?? m.key}`);
+  for (const m of ready) console.log(`  hämtar ${m.lineupConfirmed ? 'med officiell elva' : 'utan elva (20 min kvar)'}: ${m.match ?? m.key}`);
+  plan.prekick = ready;
+  plan.prekickKeys = ready.map((m) => m.key);
+  plan.prekickLeagues = [...new Set(ready.map((m) => m.league))].sort();
+  plan.leagues = [...new Set([...plan.dailyLeagues, ...plan.prekickLeagues])].sort();
+  if (!plan.daily && !ready.length) process.exit(0);
+}
 
 if (plan.leagues.length) {
   // OddsPortal: gratis, alla ligor med sida dar
