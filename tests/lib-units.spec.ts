@@ -2437,6 +2437,8 @@ test.describe('odds-history: oddsrörelse och gamla odds', () => {
     expect(oddsMovement({ first: s, last: s })).toBeNull();
     expect(oddsMovement({ first: s, last: { ...s, oddsAt: '2026-10-20T15:00:00Z', fair: null } })).toBeNull();
     expect(oddsMovement(null)).toBeNull();
+    // Olika facit (Al Ettifaq 2026-10-20: 1,85 -> 1,85 men +5,4 när snitt byttes mot Pinnacle) -> ingen rörelse
+    expect(oddsMovement({ first: { ...s, fairSource: 'snitt av 3 bolag' }, last: { ...s, oddsAt: '2026-10-20T15:00:00Z', fairSource: 'pinnacle' } })).toBeNull();
   });
   test('gamla odds: avspark inom 24 h och odds äldre än 6 h', async () => {
     const { isStaleOdds, oddsAgeHours } = await lib('odds-history.mjs');
@@ -2447,6 +2449,111 @@ test.describe('odds-history: oddsrörelse och gamla odds', () => {
     expect(isStaleOdds('2026-10-18T05:00:22Z', '2026-10-23T19:00:00Z', now)).toBe(false); // avspark om 3 dygn
     expect(isStaleOdds('2026-10-18T05:00:22Z', '2026-10-20T14:00:00Z', now)).toBe(false); // redan spelad
     expect(isStaleOdds(null, '2026-10-20T19:00:00Z', now)).toBe(false);
+  });
+});
+
+test.describe('odds-history: tidsserie per källa', () => {
+  const pt = (at, src, home, fh) => ({ at, src, odds: { home, draw: 4.2, away: 4.7 }, fair: { home: fh, draw: 0.24, away: 1 - fh - 0.24 } });
+  test('addOddsPoint: en punkt per källa och hämtning, första per källa behålls vid tak', async () => {
+    const { addOddsPoint } = await lib('odds-history.mjs');
+    const e: any = {};
+    expect(addOddsPoint(e, pt('2026-10-20T06:00:00Z', 'api', 1.7, 0.567))).toBe(true);
+    expect(addOddsPoint(e, pt('2026-10-20T06:00:00Z', 'api', 1.7, 0.567))).toBe(false); // samma hämtning
+    expect(addOddsPoint(e, pt('2026-10-20T06:05:00Z', 'op', 1.72, 0.56))).toBe(true);
+    expect(addOddsPoint(e, { at: 'x', src: 'api', fair: null })).toBe(false);
+    for (let i = 1; i <= 5; i++) addOddsPoint(e, pt(`2026-10-20T1${i}:00:00Z`, 'api', 1.7 - i / 100, 0.567 + i / 100), 4);
+    expect(e.points.length).toBe(4);
+    expect(e.points[0].at).toBe('2026-10-20T06:00:00Z'); // första api-noteringen kvar
+    expect(e.points.some((p: any) => p.src === 'op')).toBe(true); // första op-noteringen kvar
+    expect(e.points.at(-1).at).toBe('2026-10-20T15:00:00Z');
+  });
+  test('oddsMovement: senaste källan, senaste steget flaggas från 3 enheter', async () => {
+    const { oddsMovement } = await lib('odds-history.mjs');
+    const m = oddsMovement({ points: [
+      pt('2026-10-20T06:00:00Z', 'api', 1.7, 0.567),
+      pt('2026-10-20T06:05:00Z', 'op', 1.75, 0.55),
+      pt('2026-10-20T17:55:00Z', 'op', 1.62, 0.59),
+      pt('2026-10-20T18:00:00Z', 'op', 1.58, 0.605),
+    ] });
+    expect(m.src).toBe('op'); // OddsPortal har den senaste noteringen och minst två
+    expect(m.moves.home).toEqual({ from: 1.75, to: 1.58, pp: 5.5, step: 1.5 });
+    expect(m.flagged).toContain('home');
+    expect(m.series.length).toBe(3);
+    const step = oddsMovement({ points: [pt('a1', 'api', 1.7, 0.56), pt('a2', 'api', 1.75, 0.545), pt('a3', 'api', 1.62, 0.578)] });
+    expect(step.moves.home.pp).toBe(1.8); // under 4 totalt
+    expect(step.moves.home.step).toBe(3.3); // men 3,3 sedan förra hämtningen
+    expect(step.flagged).toContain('home');
+  });
+});
+
+test.describe('odds-schedule: 24 h, Europa 1 h före avspark, övriga en gång per dag', () => {
+  const leagues = { PL: { country: 'England' }, CL: { cup: true }, LIB: { cup: true }, BR: { country: 'Brazil' } };
+  const m = (key: string, league: string, kickoffUtc: string) => ({ key, league, kickoffUtc });
+  const matches = [
+    m('cl', 'CL', '2026-10-20T19:00:00Z'), m('pl', 'PL', '2026-10-21T10:00:00Z'),
+    m('br', 'BR', '2026-10-20T22:00:00Z'), m('lib', 'LIB', '2026-10-20T19:30:00Z'), m('sen', 'PL', '2026-10-22T19:00:00Z'),
+  ];
+  test('Europa-ligor och UEFA-cuper, inte Copa', async () => {
+    const { isEuropeLeague } = await lib('odds-schedule.mjs');
+    expect(isEuropeLeague('PL', leagues.PL)).toBe(true);
+    expect(isEuropeLeague('CL', leagues.CL)).toBe(true);
+    expect(isEuropeLeague('LIB', leagues.LIB)).toBe(false);
+    expect(isEuropeLeague('BR', leagues.BR)).toBe(false);
+  });
+  test('dagens hämtning från 08:00 svensk tid, bara ligor med match inom 24 h', async () => {
+    const { planOdds } = await lib('odds-schedule.mjs');
+    const early = planOdds({ matches, leagues, now: Date.parse('2026-10-20T05:50:00Z') }); // 07:50 i Stockholm
+    expect(early.daily).toBe(false);
+    const p = planOdds({ matches, leagues, now: Date.parse('2026-10-20T06:05:00Z') }); // 08:05
+    expect(p.daily).toBe(true);
+    expect(p.dailyLeagues).toEqual(['BR', 'CL', 'LIB']); // PL 21/10 10:00 UTC ligger 27,9 h bort
+    expect(planOdds({ matches: matches.slice(0, 1).concat(matches.slice(4)), leagues, now: Date.parse('2026-10-20T06:05:00Z') }).dailyLeagues).toEqual(['CL']);
+    expect(planOdds({ matches, leagues, state: { dailyDate: '2026-10-20' }, now: Date.parse('2026-10-20T09:00:00Z') }).daily).toBe(false);
+    // Molnet sent: första körningen efter 08 tar dagens hämtning
+    expect(planOdds({ matches, leagues, state: { dailyDate: '2026-10-19' }, now: Date.parse('2026-10-20T14:00:00Z') }).daily).toBe(true);
+  });
+  test('1 h före avspark bara för Europa, en gång per match', async () => {
+    const { planOdds } = await lib('odds-schedule.mjs');
+    const state = { dailyDate: '2026-10-20' };
+    const p = planOdds({ matches, leagues, state, now: Date.parse('2026-10-20T18:00:00Z') }); // CL om 60 min, LIB om 90
+    expect(p.prekickKeys).toEqual(['cl']);
+    expect(p.leagues).toEqual(['CL']);
+    expect(planOdds({ matches, leagues, state, now: Date.parse('2026-10-20T17:30:00Z') }).prekickKeys).toEqual([]); // 90 min kvar
+    expect(planOdds({ matches, leagues, state: { ...state, prekick: { cl: 'x' } }, now: Date.parse('2026-10-20T18:20:00Z') }).prekickKeys).toEqual([]);
+    expect(planOdds({ matches, leagues, state, now: Date.parse('2026-10-20T21:30:00Z') }).prekickKeys).toEqual([]); // BR, inte Europa
+  });
+  test('kvoten fördelas över månaden, hälften till 08-hämtningen', async () => {
+    const { apiBudget } = await lib('odds-schedule.mjs');
+    const now = Date.parse('2026-10-20T06:05:00Z'); // 12 dagar kvar i oktober
+    expect(apiBudget({ startLeft: 89, leftNow: 89, now, daily: true })).toBe(2); // 7 per dag, hälften = 3 -> 2
+    expect(apiBudget({ startLeft: 89, leftNow: 87, now, daily: false })).toBe(4); // 7 - 2 använda = 5 -> 4
+    expect(apiBudget({ startLeft: 89, leftNow: 82, now, daily: false })).toBe(0); // dagens del slut
+    expect(apiBudget({ startLeft: null, leftNow: 50, now, daily: true })).toBe(0);
+  });
+  test('nextState: dagens datum, gjorda matcher, gamla rensas', async () => {
+    const { nextState } = await lib('odds-schedule.mjs');
+    const now = Date.parse('2026-10-20T18:00:00Z');
+    const s = nextState({ prekick: { gammal: '2026-10-17T10:00:00Z', ny: '2026-10-20T10:00:00Z' } },
+      { date: '2026-10-20', daily: true, prekickKeys: ['cl'] }, { now, leftNow: 80 });
+    expect(s.dailyDate).toBe('2026-10-20');
+    expect(Object.keys(s.prekick).sort()).toEqual(['cl', 'ny']);
+    expect(s.credits).toEqual({ date: '2026-10-20', startLeft: 80 });
+  });
+});
+
+test.describe('odds-rorelser: sammanställning inom 24 h', () => {
+  test('en rad per match, flaggade och störst först, bara inom horisonten', async () => {
+    const { summarizeMoves } = await lib('odds-rorelser.mjs');
+    const now = Date.parse('2026-10-20T15:00:00Z');
+    const mv = (pp: number, flagged: string[]) => ({ src: 'api', moves: { home: { from: 1.7, to: 1.6, pp } }, flagged });
+    const t = (match: string, kick: string, move: any) => ({ date: '2026-10-20', league: 'CL', home: match, away: 'B', match, kickoffUtc: kick, oddsMove: move });
+    const rows = summarizeMoves([
+      t('Liten', '2026-10-20T19:00:00Z', mv(1, [])), t('Stor', '2026-10-20T19:00:00Z', mv(-6.6, ['home'])),
+      t('Stor', '2026-10-20T19:00:00Z', mv(-6.6, ['home'])), t('Spelad', '2026-10-20T14:00:00Z', mv(9, ['home'])),
+      t('Långt bort', '2026-10-23T19:00:00Z', mv(9, ['home'])), t('Utan', '2026-10-20T19:00:00Z', null),
+    ], { now });
+    expect(rows.map((r: any) => r.match)).toEqual(['Stor', 'Liten']);
+    expect(rows[0].size).toBe(6.6);
   });
 });
 

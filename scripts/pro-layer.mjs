@@ -14,7 +14,7 @@ import { historicalMissing, findUsMatch, inCurrentSquad, loadPlayerModel, summar
 import { adjustProbs, loadAdjustments } from './lib/learned-adjust.mjs';
 import { extraSignals } from './lib/extra-signals.mjs';
 import { latestSeasons } from './lib/seasons.mjs';
-import { mergeCaseDuplicates, mergeNameVariants, oddsMovement, oddsAgeHours, isStaleOdds } from './lib/odds-history.mjs';
+import { mergeCaseDuplicates, mergeNameVariants, oddsMovement, oddsAgeHours, isStaleOdds, addOddsPoint } from './lib/odds-history.mjs';
 import { sameTeamName } from './lib/team-aliases.mjs';
 import { nameSimilarity } from './lib/name-similarity.mjs';
 import { buildRefIndex, loadRefereeMatches, refereeFlags, refKey, REF_LEAGUES, resolveTeam } from './lib/referee-streaks.mjs';
@@ -167,7 +167,7 @@ const apiHasOdds = (e) => apiOddsList.some((x) => x.league === e.league && x.com
   && (x.books ?? []).some((b) => b.home > 1));
 const oddsportalDoc = fs.existsSync(P.oddsportal) ? readJson(P.oddsportal) : {};
 // Nar oddsen hamtades (per kalla) - gamla odds infor match ska synas, se isStaleOdds
-const oddsFetchedAt = (ev) => (ev ? (ev.source === 'oddsportal' ? oddsportalDoc.updatedAt : apiOddsDoc.updatedAt) ?? null : null);
+const oddsFetchedAt = (ev) => (ev ? ev.fetchedAt ?? (ev.source === 'oddsportal' ? oddsportalDoc.updatedAt : apiOddsDoc.updatedAt) ?? null : null);
 const oddsportalList = (oddsportalDoc.events ?? [])
   .filter((e) => e.commence > new Date().toISOString() && !apiHasOdds(e));
 const liveOddsList = [...apiOddsList, ...oddsportalList];
@@ -472,7 +472,7 @@ function buildPro(t) {
   valueBets.sort((a, b) => b.ev - a.ev);
 
   return {
-    match: t.match, date: t.date, league: t.league, kickoffUtc: ev?.commence ?? null, oddsAt: oddsFetchedAt(ev),
+    match: t.match, date: t.date, league: t.league, kickoffUtc: ev?.commence ?? null, oddsAt: oddsFetchedAt(ev), oddsSrc: ev ? (ev.source === 'oddsportal' ? 'op' : 'api') : null,
     dc: dc && {
       home: round(dc.home), draw: round(dc.draw), away: round(dc.away), over25: round(dc.over25),
       btts: round(dc.btts), lambdaHome: round(dc.lambdaHome, 2), lambdaAway: round(dc.lambdaAway, 2),
@@ -1037,6 +1037,17 @@ function evaluate() {
  * Senaste snapshot = "stangning" i ligor dar football-data saknar closing (Div 1, HR, CZ ...),
  * forsta = "oppning". Ledgern raknar CLV mot den och marketTest provar modellen mot den nar matchen spelats.
  */
+function findOddsportalEvent(league, date, home, away) {
+  let best = null;
+  let bestScore = 1.5;
+  for (const e of oddsportalDoc.events ?? []) {
+    if (e.league !== league || !e.commence || Math.abs(daysBetween(e.commence.slice(0, 10), date)) > 1) continue;
+    const s = nameSimilarity(e.home, home) + nameSimilarity(e.away, away);
+    if (s >= bestScore) { best = e; bestScore = s; }
+  }
+  return best;
+}
+
 function recordOddsHistory(proByKey) {
   const doc = fs.existsSync(P.oddsHistory) ? readJson(P.oddsHistory) : { matches: {} };
   const now = new Date().toISOString();
@@ -1055,6 +1066,14 @@ function recordOddsHistory(proByKey) {
     };
     const e = (doc.matches[key] ??= { league: p.league, date: p.date, match: p.match, kickoffUtc: kick ?? null, first: snap, last: snap, snapshots: 0 });
     e.kickoffUtc = kick ?? e.kickoffUtc;
+    // Tidsserien: matchens kalla + OddsPortal-snittet nar matchen ocksa har API-odds (gratis, hamtas oftare)
+    addOddsPoint(e, { at: p.oddsAt, src: p.oddsSrc, odds: p.odds, fair: p.market.fair });
+    if (p.oddsSrc === 'api') {
+      const [, , home, away] = key.split('|');
+      const op = findOddsportalEvent(p.league, p.date, home, away);
+      const fair = op && devigMultiplicative([op.odds.home, op.odds.draw, op.odds.away]);
+      if (fair) addOddsPoint(e, { at: op.fetchedAt ?? oddsportalDoc.updatedAt, src: 'op', odds: { home: op.odds.home, draw: op.odds.draw, away: op.odds.away }, fair: { home: round(fair[0], 4), draw: round(fair[1], 4), away: round(fair[2], 4) } });
+    }
     // Samma hamtning som forra snapshoten (bara pro-lagret omkort) -> ingen ny notering
     if (e.snapshots && snap.oddsAt && e.last?.oddsAt === snap.oddsAt) continue;
     e.last = snap;

@@ -1619,3 +1619,4 @@ main > .section-head:first-child { margin-top: var(--space-4); }
   .rk-rate { grid-row: 1; grid-column: 2; grid-template-columns: auto; text-align: right; }
   .rk-bar { display: none; }
 }
+.odds-series { flex-basis: 100%; margin-top: var(--space-1); color: var(--color-text-muted); }

@@ -1,0 +1,75 @@
+name: Oddsschema
+
+# Odds för matcher inom 24 h (användaren 2026-10-20), körs i molnet även när datorn är av:
+# alla ligor en gång per dag från 08:00 svensk tid, europeiska ligor + CL/EL/ECL dessutom 1 h före avspark.
+# Kollar var 10:e minut vad som är due (scripts/odds-schema.mjs --plan, ett par sekunder) och hämtar bara då:
+# OddsPortal (gratis) + The Odds API inom månadskvoten -> pro-lagret -> oddsrörelser -> commit -> publicera.
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Samma grupp som den dagliga hämtningen: aldrig två körningar som skriver data/ samtidigt
+concurrency:
+  group: daily-fetch
+  cancel-in-progress: false
+
+jobs:
+  odds:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      TZ: Europe/Stockholm
+      THE_ODDS_API_KEY: ${{ secrets.THE_ODDS_API_KEY }}
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: 157ee3f6fab55443acdd807e5899c5f2
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Vad är due?
+        id: plan
+        run: node scripts/odds-schema.mjs --plan
+
+      - name: powershell -> pwsh
+        if: steps.plan.outputs.run == 'true'
+        run: sudo ln -sf "$(command -v pwsh)" /usr/local/bin/powershell
+
+      - name: Installera beroenden
+        if: steps.plan.outputs.run == 'true'
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+
+      - name: Hämta odds + oddsrörelser
+        if: steps.plan.outputs.run == 'true'
+        run: node scripts/odds-schema.mjs
+
+      - name: Committa
+        if: steps.plan.outputs.run == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add -A data docs/analys
+          if git diff --cached --quiet; then
+            echo "Ingen ny data"
+          else
+            git commit -m "Odds: schemat $(date +'%Y-%m-%d %H:%M')"
+            # Nyare push under körningen: vår hämtning är färskast för datafilerna
+            git pull --rebase -X theirs
+            git push
+          fi
+
+      - name: Bygg webbversion
+        if: steps.plan.outputs.run == 'true'
+        run: node scripts/build-static-site.mjs
+
+      - name: Publicera webbversion
+        if: steps.plan.outputs.run == 'true' && env.CLOUDFLARE_API_TOKEN != ''
+        run: npx -y wrangler@4 pages deploy site --project-name newbetting --branch main --commit-dirty=true
