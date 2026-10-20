@@ -1,13 +1,10 @@
-// Oddsschema (anvandaren 2026-10-20): bara matcher inom 24 h. Alla ligor hamtas en gang per dag (fran 08:00 svensk tid,
-// forsta korningen efter 08 om molnet ar sent), europeiska ligor och UEFA-cuperna dessutom 55 min fore avspark
-// nar startelvan ar slappt (anvandaren 2026-10-20: "var saker pa att startelvan ar slappt").
+// Oddsschema (anvandaren 2026-10-20): bara matcher inom 24 h och bara topp 5-ligorna + CL/EL/ECL ("vill jag ha mer
+// ligor ber jag det"). De hamtas en gang per dag fran 08:00 svensk tid (forsta korningen efter 08 om molnet ar sent) och
+// 55 min fore avspark nar startelvan ar slappt ("var saker pa att startelvan ar slappt"). Ovriga ligor bara pa begaran
+// (npm run odds:schema -- --alla).
 // Rena funktioner - scripts/odds-schema.mjs gor hamtningen, .github/workflows/odds-schema.yml kor den var 10:e minut.
 
-export const EUROPE_COUNTRIES = new Set([
-  'England', 'Scotland', 'Wales', 'Spain', 'Italy', 'Germany', 'France', 'Netherlands', 'Belgium', 'Portugal', 'Sweden',
-  'Norway', 'Denmark', 'Finland', 'Poland', 'Greece', 'Croatia', 'Czechia', 'Austria', 'Switzerland', 'Turkey', 'Ukraine',
-]);
-export const EUROPE_CUPS = new Set(['CL', 'EL', 'ECL']);
+export const SCHEDULE_LEAGUES = new Set(['PL', 'LL', 'SA', 'BL', 'L1', 'CL', 'EL', 'ECL']);
 export const DAILY_HOUR = 8;
 export const HORIZON_H = 24;
 // Fonstret borjar 55 min fore avspark (elvorna slapps normalt 60-75 min fore). Ar elvan inte officiell an vantar
@@ -15,7 +12,14 @@ export const HORIZON_H = 24;
 export const PREKICK_WINDOW_MIN = 55;
 export const PREKICK_FALLBACK_MIN = 20;
 
-export const isEuropeLeague = (code, cfg) => (cfg?.cup ? EUROPE_CUPS.has(code) : EUROPE_COUNTRIES.has(cfg?.country));
+/** Matcher med avspark inom 24 h (alla ligor - schemat filtrerar sedan pa SCHEDULE_LEAGUES). */
+export function within24h(matches, now = Date.now()) {
+  const t = new Date(now).getTime();
+  return matches.filter((m) => {
+    const k = Date.parse(m.kickoffUtc ?? '');
+    return Number.isFinite(k) && k > t && k <= t + HORIZON_H * 36e5;
+  });
+}
 
 /** Datum och timme i Stockholm (sommartid/vintertid via Intl). */
 export function stockholmClock(now) {
@@ -27,20 +31,17 @@ export function stockholmClock(now) {
 
 /**
  * Vad ska hamtas nu? matches: [{ key, league, kickoffUtc }], state: { dailyDate, prekick: { key: at } }.
- * daily = dagens hamtning ar inte gjord och klockan ar minst 08 -> alla ligor med match inom 24 h.
- * prekick = europeiska matcher 0-55 min fran avspark som inte har hamtats fore avspark an (elvan kollas i splitByLineup).
+ * daily = dagens hamtning ar inte gjord och klockan ar minst 08 -> schemats ligor med match inom 24 h.
+ * prekick = schemats matcher 0-55 min fran avspark som inte har hamtats fore avspark an (elvan kollas i splitByLineup).
  */
-export function planOdds({ matches, state = {}, leagues = {}, now = Date.now() }) {
+export function planOdds({ matches, state = {}, now = Date.now() }) {
   const t = new Date(now).getTime();
-  const soon = matches.filter((m) => {
-    const k = Date.parse(m.kickoffUtc ?? '');
-    return Number.isFinite(k) && k > t && k <= t + HORIZON_H * 36e5;
-  });
+  const soon = within24h(matches, t).filter((m) => SCHEDULE_LEAGUES.has(m.league));
   const clock = stockholmClock(t);
   const daily = clock.hour >= DAILY_HOUR && state.dailyDate !== clock.date;
   const prekick = soon.filter((m) => {
     const min = (Date.parse(m.kickoffUtc) - t) / 6e4;
-    return min <= PREKICK_WINDOW_MIN && isEuropeLeague(m.league, leagues[m.league]) && !state.prekick?.[m.key];
+    return min <= PREKICK_WINDOW_MIN && !state.prekick?.[m.key];
   });
   const uniq = (xs) => [...new Set(xs)].sort();
   const dailyLeagues = daily ? uniq(soon.map((m) => m.league)) : [];

@@ -1,16 +1,19 @@
-// Oddsrorelser i alla ligor for matcher inom 24 h (tip.oddsMove fran pro-lagret, scripts/lib/odds-history.mjs).
+// Oddsrorelser for matcher inom 24 h (schemats ligor, eller alla med --alla) (tip.oddsMove fran pro-lagret, scripts/lib/odds-history.mjs).
 // Kors efter varje hamtning i oddsschemat. Utdata: data/reports/oddsrorelser.json + docs/analys/oddsrorelser.md,
 // och loggen data/oddsrorelser/<YYYY-MM>.json (alla sena rorelser, utvarderas med npm run oddsrorelser:analys).
-//   node scripts/odds-rorelser.mjs
+//   node scripts/odds-rorelser.mjs           topp 5-ligorna + CL/EL/ECL (schemats ligor)
+//   node scripts/odds-rorelser.mjs --alla    alla ligor (nar anvandaren ber om det)
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { summarizeMoves, logRecord } from './lib/odds-rorelser.mjs';
+import { SCHEDULE_LEAGUES } from './lib/odds-schedule.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const tips = JSON.parse(fs.readFileSync(path.join(root, 'data', 'tips-latest.json'), 'utf8').replace(/^﻿/, ''));
 const allTips = [...(tips.bestUpcoming ?? []), ...(tips.allCandidates ?? [])];
-const rows = summarizeMoves(allTips);
+const all = process.argv.includes('--alla');
+const rows = summarizeMoves(allTips, { leagues: all ? null : SCHEDULE_LEAGUES });
 
 // Logg: alla matcher inom 24 h med rorelse, en post per match (senaste hamtningen narmast avspark vinner)
 const logDir = path.join(root, 'data', 'oddsrorelser');
@@ -37,11 +40,11 @@ const when = (iso) => new Date(iso).toLocaleString('sv-SE', { timeZone: 'Europe/
 const LABEL = { home: '1', draw: 'X', away: '2', over25: 'Över 2,5', under25: 'Under 2,5' };
 const line = (r) => `| ${when(r.kickoffUtc)} | ${r.league} | ${r.match} | ${r.flagged.map((k) => `${LABEL[k]} ${fmt(r.moves[k].from)} → **${fmt(r.moves[k].to)}** (${pp(r.moves[k].pp)}${r.moves[k].step != null ? `, senast ${pp(r.moves[k].step)}` : ''})`).join('<br>')} | ${r.src === 'op' ? 'OddsPortal' : 'Pinnacle'} |`;
 const md = [
-  '# Oddsrörelser – matcher inom 24 h',
+  `# Oddsrörelser – matcher inom 24 h (${all ? 'alla ligor' : [...SCHEDULE_LEAGUES].join(', ')})`,
   '',
   `Uppdaterad ${when(new Date().toISOString())}. ${rows.length} matcher med minst två oddsnoteringar, ${flagged.length} sticker ut.`,
   '',
-  '**Så läser du det här:** rörelsen är marknadens chans i procentenheter sedan första noteringen (+ = mer pengar på utfallet).',
+  '**Så läser du det här:** rörelsen är marknadens chans i procentenheter under sista dygnet före avspark (+ = mer pengar på utfallet).',
   'Den flaggas från 4 enheter totalt eller 3 enheter sedan förra hämtningen. Gränsen för Värde flyttar med marknaden.',
   '',
   '| Avspark | Liga | Match | Rörelse | Källa |',

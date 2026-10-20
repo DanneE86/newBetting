@@ -2486,43 +2486,42 @@ test.describe('odds-history: tidsserie per källa', () => {
   });
 });
 
-test.describe('odds-schedule: 24 h, Europa 55 min före avspark med startelva, övriga en gång per dag', () => {
-  const leagues = { PL: { country: 'England' }, CL: { cup: true }, LIB: { cup: true }, BR: { country: 'Brazil' } };
+test.describe('odds-schedule: 24 h, topp 5 + CL/EL/ECL 08:00 och 55 min före avspark med startelva', () => {
   const m = (key: string, league: string, kickoffUtc: string) => ({ key, league, kickoffUtc });
   const matches = [
     m('cl', 'CL', '2026-10-20T19:00:00Z'), m('pl', 'PL', '2026-10-21T10:00:00Z'),
     m('br', 'BR', '2026-10-20T22:00:00Z'), m('lib', 'LIB', '2026-10-20T19:30:00Z'), m('sen', 'PL', '2026-10-22T19:00:00Z'),
+    m('ed', 'ED', '2026-10-20T18:45:00Z'), m('ecl', 'ECL', '2026-10-20T16:30:00Z'),
   ];
-  test('Europa-ligor och UEFA-cuper, inte Copa', async () => {
-    const { isEuropeLeague } = await lib('odds-schedule.mjs');
-    expect(isEuropeLeague('PL', leagues.PL)).toBe(true);
-    expect(isEuropeLeague('CL', leagues.CL)).toBe(true);
-    expect(isEuropeLeague('LIB', leagues.LIB)).toBe(false);
-    expect(isEuropeLeague('BR', leagues.BR)).toBe(false);
+  test('schemats ligor: topp 5 + CL/EL/ECL, övriga bara på begäran (within24h)', async () => {
+    const { SCHEDULE_LEAGUES, within24h } = await lib('odds-schedule.mjs');
+    expect([...SCHEDULE_LEAGUES].sort()).toEqual(['BL', 'CL', 'ECL', 'EL', 'L1', 'LL', 'PL', 'SA']);
+    const now = Date.parse('2026-10-20T06:05:00Z');
+    expect(within24h(matches, now).map((x: any) => x.key).sort()).toEqual(['br', 'cl', 'ecl', 'ed', 'lib']);
   });
   test('dagens hämtning från 08:00 svensk tid, bara ligor med match inom 24 h', async () => {
     const { planOdds } = await lib('odds-schedule.mjs');
-    const early = planOdds({ matches, leagues, now: Date.parse('2026-10-20T05:50:00Z') }); // 07:50 i Stockholm
+    const early = planOdds({ matches, now: Date.parse('2026-10-20T05:50:00Z') }); // 07:50 i Stockholm
     expect(early.daily).toBe(false);
-    const p = planOdds({ matches, leagues, now: Date.parse('2026-10-20T06:05:00Z') }); // 08:05
+    const p = planOdds({ matches, now: Date.parse('2026-10-20T06:05:00Z') }); // 08:05
     expect(p.daily).toBe(true);
-    expect(p.dailyLeagues).toEqual(['BR', 'CL', 'LIB']); // PL 21/10 10:00 UTC ligger 27,9 h bort
-    expect(planOdds({ matches: matches.slice(0, 1).concat(matches.slice(4)), leagues, now: Date.parse('2026-10-20T06:05:00Z') }).dailyLeagues).toEqual(['CL']);
-    expect(planOdds({ matches, leagues, state: { dailyDate: '2026-10-20' }, now: Date.parse('2026-10-20T09:00:00Z') }).daily).toBe(false);
+    expect(p.dailyLeagues).toEqual(['CL', 'ECL']); // BR, LIB, ED inte i schemat; PL 21/10 10:00 UTC ligger 27,9 h bort
+    expect(planOdds({ matches, state: { dailyDate: '2026-10-20' }, now: Date.parse('2026-10-20T09:00:00Z') }).daily).toBe(false);
     // Molnet sent: första körningen efter 08 tar dagens hämtning
-    expect(planOdds({ matches, leagues, state: { dailyDate: '2026-10-19' }, now: Date.parse('2026-10-20T14:00:00Z') }).daily).toBe(true);
+    expect(planOdds({ matches, state: { dailyDate: '2026-10-19' }, now: Date.parse('2026-10-20T14:00:00Z') }).daily).toBe(true);
   });
-  test('55 min före avspark bara för Europa, en gång per match', async () => {
+  test('55 min före avspark bara för schemats ligor, en gång per match', async () => {
     const { planOdds } = await lib('odds-schedule.mjs');
     const state = { dailyDate: '2026-10-20' };
-    expect(planOdds({ matches, leagues, state, now: Date.parse('2026-10-20T18:00:00Z') }).prekickKeys).toEqual([]); // 60 min kvar
-    const p = planOdds({ matches, leagues, state, now: Date.parse('2026-10-20T18:05:00Z') }); // CL om 55 min, LIB om 85
+    expect(planOdds({ matches, state, now: Date.parse('2026-10-20T18:00:00Z') }).prekickKeys).toEqual([]); // 60 min kvar
+    const p = planOdds({ matches, state, now: Date.parse('2026-10-20T18:05:00Z') }); // CL om 55 min, LIB om 85
     expect(p.prekickKeys).toEqual(['cl']);
     expect(p.prekick[0].kickoffUtc).toBe('2026-10-20T19:00:00Z');
     expect(p.leagues).toEqual(['CL']);
-    expect(planOdds({ matches, leagues, state, now: Date.parse('2026-10-20T17:30:00Z') }).prekickKeys).toEqual([]); // 90 min kvar
-    expect(planOdds({ matches, leagues, state: { ...state, prekick: { cl: 'x' } }, now: Date.parse('2026-10-20T18:20:00Z') }).prekickKeys).toEqual([]);
-    expect(planOdds({ matches, leagues, state, now: Date.parse('2026-10-20T21:30:00Z') }).prekickKeys).toEqual([]); // BR, inte Europa
+    expect(planOdds({ matches, state, now: Date.parse('2026-10-20T17:30:00Z') }).prekickKeys).toEqual([]); // 90 min kvar
+    expect(planOdds({ matches, state: { ...state, prekick: { cl: 'x' } }, now: Date.parse('2026-10-20T18:20:00Z') }).prekickKeys).toEqual([]);
+    expect(planOdds({ matches, state, now: Date.parse('2026-10-20T21:30:00Z') }).prekickKeys).toEqual([]); // BR, inte i schemat
+    expect(planOdds({ matches, state, now: Date.parse('2026-10-20T18:00:00Z') }).prekickKeys).toEqual([]); // ED 45 min kvar, inte i schemat
   });
   test('startelvan: officiell elva hämtas, annars vänta - senast 20 min före avspark', async () => {
     const { splitByLineup, lineupsByKey } = await lib('odds-schedule.mjs');
@@ -4802,67 +4801,6 @@ test('GUI-skripten (moduler) går att tolka: inga dubbla deklarationer', async (
     expect(r.status, `${f}: ${r.stderr}`).toBe(0);
   }
   fs.rmSync(dir, { recursive: true, force: true });
-});
-
-test.describe('vakt: stoppar trasiga commits och publiceringar', () => {
-  const vakt = () => import(pathToFileURL(path.join(ROOT, 'scripts', 'vakt.mjs')).href);
-  const B = (s: string) => Buffer.from(s);
-
-  test('tom fil, syntaxfel, dubbel deklaration i GUI-modul och trasig JSON stoppas', async () => {
-    const { checkFiles } = await vakt();
-    const fel = checkFiles([
-      { file: 'scripts/lib/tom.mjs', src: B(''), head: B('export const a = 1;\n') },
-      { file: 'scripts/trasig.mjs', src: B('export const a = ;\n'), head: null },
-      { file: 'gui/public/app.js', src: B('function f() {}\nconst f = 1;\n'), head: null },
-      { file: 'config/x.json', src: B('{"a": }'), head: null },
-    ]);
-    expect(fel.find((f: string) => f.startsWith('scripts/lib/tom.mjs'))).toContain('tom');
-    expect(fel.find((f: string) => f.startsWith('scripts/trasig.mjs'))).toContain('syntaxfel');
-    expect(fel.find((f: string) => f.startsWith('gui/public/app.js'))).toContain('already been declared');
-    expect(fel.find((f: string) => f.startsWith('config/x.json'))).toContain('trasig JSON');
-    expect(fel).toHaveLength(4);
-  });
-
-  test('kodfil som tappar över hälften av raderna stoppas, om den inte är tillåten', async () => {
-    const { checkFiles } = await vakt();
-    const head = B(Array.from({ length: 100 }, (_, i) => `export const v${i} = ${i};`).join('\n'));
-    const src = B(Array.from({ length: 30 }, (_, i) => `export const v${i} = ${i};`).join('\n'));
-    expect(checkFiles([{ file: 'scripts/a.mjs', src, head }])[0]).toContain('krympte från 100 till 30');
-    expect(checkFiles([{ file: 'scripts/a.mjs', src, head }], { allowShrink: ['scripts/a.mjs'] })).toEqual([]);
-    expect(checkFiles([{ file: 'data/a.json', src: B('[]'), head: B(`[${'1,'.repeat(200)}1]`) }])).toEqual([]);
-  });
-
-  test('hela fungerande filer släpps igenom', async () => {
-    const { checkFiles } = await vakt();
-    expect(checkFiles([
-      { file: 'gui/public/app.js', src: B('import x from "./y.js";\nexport const a = x;\n'), head: null },
-      { file: 'config/x.json', src: B('\uFEFF{"a": 1}'), head: null },
-    ])).toEqual([]);
-  });
-
-  test('ändrade eller borttagna tester kräver "Teständring: <skäl>", nya tester gör det inte, test.only aldrig', async () => {
-    const { checkTestChanges } = await vakt();
-    const nytt = '+++ b/tests/a.spec.ts\n@@ -10,0 +11,2 @@\n+test(\'ny\', () => {\n+});\n';
-    const andrat = '--- a/tests/a.spec.ts\n+++ b/tests/a.spec.ts\n@@ -5 +5 @@\n-  expect(x).toBe(12);\n+  expect(x).toBe(11);\n';
-    expect(checkTestChanges(nytt, 'Ny funktion')).toEqual([]);
-    expect(checkTestChanges(andrat, 'Fixar data')[0]).toContain('Teständring');
-    expect(checkTestChanges(andrat, 'Fixar data\n\nTeständring: sidan visar kommande omgång, inte senaste')).toEqual([]);
-    expect(checkTestChanges(andrat, 'Teständring: ok')[0]).toContain('Teständring');
-    expect(checkTestChanges('+++ b/tests/a.spec.ts\n+test.only(\'x\', () => {});\n', 'Teständring: felsöker ett test')[0]).toContain('test.only');
-  });
-
-  test('git-krokarna är påslagna och anropar vakten och testerna', () => {
-    const hooks = spawnSync('git', ['config', 'core.hooksPath'], { cwd: ROOT, encoding: 'utf8' }).stdout.trim();
-    expect(hooks).toBe('.githooks');
-    const pre = fs.readFileSync(path.join(ROOT, '.githooks', 'pre-commit'), 'utf8');
-    expect(pre).toContain('scripts/vakt.mjs --staged');
-    expect(pre).toContain('test:commit');
-    expect(fs.readFileSync(path.join(ROOT, '.githooks', 'commit-msg'), 'utf8')).toContain('scripts/vakt.mjs --tester');
-    const pub = fs.readFileSync(path.join(ROOT, '.github', 'workflows', 'publish.yml'), 'utf8');
-    expect(pub.indexOf('scripts/vakt.mjs')).toBeGreaterThan(-1);
-    expect(pub.indexOf('vakt.mjs --sajt site')).toBeGreaterThan(pub.indexOf('build-static-site.mjs'));
-    expect(pub.indexOf('vakt.mjs --sajt site')).toBeLessThan(pub.indexOf('wrangler'));
-  });
 });
 
 test.describe('vakt: stoppar trasiga commits och publiceringar', () => {
