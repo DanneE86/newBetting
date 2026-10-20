@@ -929,9 +929,9 @@ function couponCard(c, label, p) {
   // Egna spikar: kupongen spikar inga andra matcher
   const own = c.picks.some((x) => x.locked && x.signs.length === 1);
   const rules = {
-    A: `${own ? "dina spikar, inga andra matcher spikas" : "2 spikar på omgångens starkaste favoriter"}, sedan de ${c.rules.rowsTarget} troligaste raderna med minst ${krFmt(c.rules.payoutMin)} kr för 13 rätt`,
-    B: `${own ? "dina spikar" : "samma 2 spikar"}, de ${c.rules.rowsTarget} nästa raderna (≥ ${krFmt(c.rules.payoutMin)} kr) som inte finns i A, med vikt på tecken A saknar`,
-    C: `${own ? "dina spikar" : "samma 2 spikar"}, ${c.rules.rowsTarget} rader (≥ ${krFmt(c.rules.payoutMin)} kr) där underspelade tecken – vår chans minst 1,3 × folkets streck – väger mer`,
+    A: `${own ? "dina spikar, inga andra matcher spikas" : `${FILE_RULES.spikes} spikar: omgångens ${FILE_RULES.spikes - FILE_RULES.skrallSpikes} starkaste favoriter och 1 skrällspik`}, sedan de ${c.rules.rowsTarget} troligaste raderna med minst ${krFmt(c.rules.payoutMin)} kr för 13 rätt`,
+    B: `${own ? "dina spikar" : `samma ${FILE_RULES.spikes} spikar`}, de ${c.rules.rowsTarget} nästa raderna (≥ ${krFmt(c.rules.payoutMin)} kr) som inte finns i A, med vikt på tecken A saknar`,
+    C: `${own ? "dina spikar" : `samma ${FILE_RULES.spikes} spikar`}, ${c.rules.rowsTarget} rader (≥ ${krFmt(c.rules.payoutMin)} kr) där underspelade tecken – vår chans minst 1,3 × folkets streck – väger mer`,
   }[label];
   return `<div class="sb-coupon ${label === "C" ? "is-extra" : "is-main"} ds-card">
     ${tag}
@@ -996,7 +996,7 @@ function couponTable(p, res) {
     const x = c?.picks[i];
     if (!x) return "<td>—</td>";
     const cls = x.signs.length === 1 ? "spik" : x.signs.length === 2 ? "halv" : "hel";
-    return `<td><span class="st-tip ${cls}${x.locked ? " mine" : ""}" title="${x.locked ? "Ditt krav" : esc(x.type)}">${x.locked ? "🔒 " : ""}${esc(x.signs.split("").join(" + "))}</span>${sysMissMark(sysMiss(p.events[i], x.signs, sys), sys)}${sys === "A" ? "" : riskMark(riskTipped(p.events[i], x.signs), sys)}${fallMark(p.events[i], x.signs, sys)}</td>`;
+    return `<td><span class="st-tip ${cls}${x.locked ? " mine" : ""}" title="${x.locked ? "Ditt krav" : esc(x.type)}">${x.locked ? "🔒 " : ""}${esc(x.signs.split("").join(" + "))}</span>${x.spikSkrall ? ` <span class="st-chip sb-skrallspik" title="Kupongens skrällspik: inte favorit, men folket har streckat tecknet för lite (förstavalet under Skrälltips)">skräll</span>` : ""}${sysMissMark(sysMiss(p.events[i], x.signs, sys), sys)}${sys === "A" ? "" : riskMark(riskTipped(p.events[i], x.signs), sys)}${fallMark(p.events[i], x.signs, sys)}</td>`;
   };
   const turCell = (e, i) => {
     const t = turInfo(e, res.A?.picks[i]?.signs);
@@ -1140,7 +1140,7 @@ function skrallTipBox(p, res) {
     </div>`;
   };
   const spikPart = tips.length
-    ? `<p class="st-skrall-h">Skrällspikar <small>ligger inte i kupongen</small></p>
+    ? `<p class="st-skrall-h">Skrällspikar</p>
     <p><b>Kort sagt:</b> folket tror för lite på de här tecknen. Vill du chansa på en skräll – välj ${tips.length > 1 ? "en av de två" : "den här"}.</p>
     ${tips.map(pick("spik")).join("")}`
     : `<p class="st-skrall-h">Skrällspikar</p><p>Ingen skräll denna omgång: inget tecken utanför favoriten har minst 25 % hos oss och är understreckat av folket.</p>`;
@@ -1151,7 +1151,7 @@ function skrallTipBox(p, res) {
     : `<p class="st-skrall-h">Skrällkryss</p><p>Inget skrällkryss denna omgång: inget kryss har minst 22 % hos oss och är understreckat av folket.</p>`;
   const count = n ? `${n} tips` : "inga denna omgång";
   return `<details class="st-skrall ds-notice" role="note"${keep("skrall")}>
-    <summary><span class="st-skrall-title">Skrälltips</span> <small>${esc(count)} · ligger inte i kupongen</small></summary>
+    <summary><span class="st-skrall-title">Skrälltips</span> <small>${esc(count)}</small></summary>
     <div class="st-skrall-body">
       ${spikPart}
       ${xPart}
@@ -1214,11 +1214,11 @@ function renderB(p, head, top = "", extras = "") {
         <details class="sb-howto"${keep("howto-kupong")}><summary>Hur funkar det?</summary>
           <ul>
             <li>Inga Gambling Cabin-regler (färger, teckenregler, utdelningsband). Varje kupong är en <b>fil</b> med 1 rad per krona – summan för A, B och C sätter du längst ner (500 kr som standard) som du laddar upp under <b>Egna rader</b> hos Svenska Spel.</li>
-            <li><b>Spikar:</b> omgångens 2 starkaste favoriter (vår procent) spikas i alla tre kupongerna. Folkets streck spelar ingen roll för spikarna. I bakkörningen satt båda spikarna i ungefär varannan omgång. <b>Har du egna spikar</b> spikas inga andra matcher – kupongen gör om dem till garderingar.</li>
+            <li><b>Spikar:</b> ${FILE_RULES.spikes} spikar i alla tre kupongerna – omgångens ${FILE_RULES.spikes - FILE_RULES.skrallSpikes} starkaste favoriter (vår procent) och 1 lite skrälligare: omgångens bästa skrällspik (förstavalet under Skrälltips, ett tecken som inte är favorit men som folket streckat för lite). Finns ingen skräll blir det ännu en stark favorit. <b>Har du egna spikar</b> spikas inga andra matcher – kupongen gör om dem till garderingar.</li>
             <li><b>A:</b> de troligaste raderna där 13 rätt ger minst 30 000 kr. Golvet finns för att en 13:a ska vara värd något – utan det blev 13-rättarna 500–5 000 kr i bakkörningen.</li>
             <li><b>B:</b> de nästa raderna som inte finns i A, med extra vikt på tecken A saknar. A och B har inga rader gemensamt, så A+B är ett system på ${kr(res.A)} + ${kr(res.B)} rader.</li>
             <li><b>C:</b> rader där underspelade tecken – vår chans minst 20 % och minst 1,3 gånger folkets streck – väger mer. Det är skrällarna folket missar. C är fristående från A och B.</li>
-            <li>Skrällspikarna överst på sidan ligger inte i kupongerna – lägg en som krav om du vill chansa.</li>
+            <li>Förstavalet bland skrällspikarna överst på sidan är kupongernas skrällspik. Andravalet och skrällkryssen ligger inte i kupongerna – lägg dem som krav om du vill chansa.</li>
             <li>⚠ i tabellen = tecken som just den kupongen brukar ha fel på (minst 30 % missar i bakkörningen), röd = oftare än vår egen chans sa.</li>
           </ul>
         </details>

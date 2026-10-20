@@ -1,7 +1,7 @@
 {
  "product": "stryktipset",
  "month": "2026-10",
- "updatedAt": "2026-10-17T08:29:06.868Z",
+ "updatedAt": "2026-10-20T16:50:27.866Z",
  "items": {
   "stryktipset-4974-1": {
    "id": "stryktipset-4974-1",
@@ -1285,7 +1285,11 @@
     },
     "lineupStatus": "pending"
    },
-   "result": null
+   "result": {
+    "outcome": "2",
+    "score": "0-1"
+   },
+   "settledAt": "2026-10-20T15:37:36.413Z"
   },
   "stryktipset-4975-2": {
    "id": "stryktipset-4975-2",
@@ -1373,7 +1377,11 @@
     },
     "lineupStatus": "pending"
    },
-   "result": null
+   "result": {
+    "outcome": "2",
+    "score": "1-2"
+   },
+   "settledAt": "2026-10-20T15:37:36.413Z"
   },
   "stryktipset-4975-3": {
    "id": "stryktipset-4975-3",
@@ -1461,7 +1469,11 @@
     },
     "lineupStatus": "pending"
    },
-   "result": null
+   "result": {
+    "outcome": "1",
+    "score": "3-2"
+   },
+   "settledAt": "2026-10-20T15:37:36.413Z"
   },
   "stryktipset-4975-4": {
    "id": "stryktipset-4975-4",
@@ -1549,7 +1561,11 @@
     },
     "lineupStatus": "pending"
    },
-   "result": null
+   "result": {
+    "outcome": "1",
+    "score": "1-0"
+   },
+   "settledAt": "2026-10-20T15:37:36.413Z"
   },
   "stryktipset-4975-5": {
    "id": "stryktipset-4975-5",
@@ -1637,7 +1653,11 @@
     },
     "lineupStatus": null
    },
-   "result": null
+   "result": {
+    "outcome": "1",
+    "score": "3-0"
+   },
+   "settledAt": "2026-10-20T15:37:36.413Z"
   },
   "stryktipset-4975-6": {
    "id": "stryktipset-4975-6",
@@ -1725,7 +1745,11 @@
     },
     "lineupStatus": null
    },
-   "result": null
+   "result": {
+    "outcome": "2",
+    "score": "0-1"
+   },
+   "settledAt": "2026-10-20T15:37:36.413Z"
   },
   "stryktipset-4975-7": {
    "id": "stryktipset-4975-7",
@@ -1813,7 +1837,11 @@
     },
     "lineupStatus": null
    },
-   "result": null
+   "result": {
+    "outcome": "2",
+    "score": "0-1"
+   },
+   "settledAt": "2026-10-20T15:37:36.413Z"
   },
   "stryktipset-4975-8": {
    "id": "stryktipset-4975-8",
@@ -1901,7 +1929,11 @@
     },
     "lineupStatus": null
    },
-   "result": null
+   "result": {
+    "outcome": "2",
+    "score": "0-1"
+   },
+   "settledAt": "2026-10-20T15:37:36.413Z"
   },
   "stryktipset-4975-9": {
    "id": "stryktipset-4975-9",
@@ -1989,7 +2021,11 @@
     },
     "lineupStatus": null
    },
-   "result": null
+   "result": {
+    "outcome": "X",
+    "score": "0-0"
+   },
+   "settledAt": "2026-10-20T15:37:36.413Z"
   },
   "stryktipset-4975-10": {
    "id": "stryktipset-4975-10",
@@ -2077,7 +2113,11 @@
     },
     "lineupStatus": null
    },
-   "result": null
+   "result": {
+    "outcome": "2",
+    "score": "0-1"
+   },
+   "settledAt": "2026-10-20T15:37:36.413Z"
   },
   "stryktipset-4975-11": {
    "id": "stryktipset-4975-11",
@@ -2165,7 +2205,11 @@
     },
     "lineupStatus": null
    },
-   "result": null
+   "result": {
+    "outcome": "1",
+    "score": "3-2"
+   },
+   "settledAt": "2026-10-20T15:37:36.413Z"
   },
   "stryktipset-4975-12": {
    "id": "stryktipset-4975-12",
@@ -2253,7 +2297,11 @@
     },
     "lineupStatus": null
    },
-   "result": null
+   "result": {
+    "outcome": "1",
+    "score": "4-1"
+   },
+   "settledAt": "2026-10-20T15:37:36.413Z"
   },
   "stryktipset-4975-13": {
    "id": "stryktipset-4975-13",
@@ -2326,6 +2374,1154 @@
      0.359
     ],
     "single": "1",
+    "coupons": {
+     "A": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "B": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "C": {
+      "signs": "1X2"
+     }
+    },
+    "lineupStatus": "none"
+   },
+   "result": {
+    "outcome": "2",
+    "score": "0-2"
+   },
+   "settledAt": "2026-10-20T15:37:36.413Z"
+  },
+  "stryktipset-4976-1": {
+   "id": "stryktipset-4976-1",
+   "product": "stryktipset",
+   "draw": 4976,
+   "event": 1,
+   "date": "2026-10-24",
+   "kickoff": "2026-10-24T18:30:00+02:00",
+   "league": "Premier League",
+   "home": "Chelsea",
+   "away": "Tottenham",
+   "firstAt": "2026-10-20T15:37:29.008Z",
+   "first": {
+    "probs": [
+     0.566,
+     0.223,
+     0.211
+    ],
+    "folk": [
+     0.6,
+     0.21,
+     0.19
+    ],
+    "odds": [
+     1.76,
+     4.35,
+     4.5
+    ],
+    "market": [
+     0.57,
+     0.22,
+     0.21
+    ],
+    "single": "1",
+    "coupons": {
+     "A": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "B": {
+      "signs": "12",
+      "type": "Halvgardering"
+     },
+     "C": {
+      "signs": "12"
+     }
+    },
+    "lineupStatus": "pending"
+   },
+   "latestAt": "2026-10-20T16:50:27.866Z",
+   "latest": {
+    "probs": [
+     0.566,
+     0.223,
+     0.211
+    ],
+    "folk": [
+     0.6,
+     0.21,
+     0.19
+    ],
+    "odds": [
+     1.76,
+     4.35,
+     4.5
+    ],
+    "market": [
+     0.57,
+     0.22,
+     0.21
+    ],
+    "single": "1",
+    "coupons": {
+     "A": {
+      "signs": "1",
+      "type": "Spik"
+     },
+     "B": {
+      "signs": "1",
+      "type": "Spik"
+     },
+     "C": {
+      "signs": "1"
+     }
+    },
+    "lineupStatus": "pending"
+   },
+   "result": null
+  },
+  "stryktipset-4976-2": {
+   "id": "stryktipset-4976-2",
+   "product": "stryktipset",
+   "draw": 4976,
+   "event": 2,
+   "date": "2026-10-24",
+   "kickoff": "2026-10-24T16:00:00+02:00",
+   "league": "Premier League",
+   "home": "Arsenal",
+   "away": "Everton",
+   "firstAt": "2026-10-20T15:37:29.008Z",
+   "first": {
+    "probs": [
+     0.679,
+     0.213,
+     0.108
+    ],
+    "folk": [
+     0.64,
+     0.2,
+     0.16
+    ],
+    "odds": [
+     1.4,
+     5,
+     9
+    ],
+    "market": [
+     0.683,
+     0.211,
+     0.106
+    ],
+    "single": "1",
+    "coupons": {
+     "A": {
+      "signs": "1",
+      "type": "Spik"
+     },
+     "B": {
+      "signs": "1",
+      "type": "Spik"
+     },
+     "C": {
+      "signs": "1"
+     }
+    },
+    "lineupStatus": "pending"
+   },
+   "latestAt": "2026-10-20T15:37:29.008Z",
+   "latest": {
+    "probs": [
+     0.679,
+     0.213,
+     0.108
+    ],
+    "folk": [
+     0.64,
+     0.2,
+     0.16
+    ],
+    "odds": [
+     1.4,
+     5,
+     9
+    ],
+    "market": [
+     0.683,
+     0.211,
+     0.106
+    ],
+    "single": "1",
+    "coupons": {
+     "A": {
+      "signs": "1",
+      "type": "Spik"
+     },
+     "B": {
+      "signs": "1",
+      "type": "Spik"
+     },
+     "C": {
+      "signs": "1"
+     }
+    },
+    "lineupStatus": "pending"
+   },
+   "result": null
+  },
+  "stryktipset-4976-3": {
+   "id": "stryktipset-4976-3",
+   "product": "stryktipset",
+   "draw": 4976,
+   "event": 3,
+   "date": "2026-10-24",
+   "kickoff": "2026-10-24T16:00:00+02:00",
+   "league": "Premier League",
+   "home": "Coventry",
+   "away": "Fulham",
+   "firstAt": "2026-10-20T15:37:29.008Z",
+   "first": {
+    "probs": [
+     0.331,
+     0.286,
+     0.383
+    ],
+    "folk": [
+     0.41,
+     0.26,
+     0.33
+    ],
+    "odds": [
+     3,
+     3.7,
+     2.4
+    ],
+    "market": [
+     0.321,
+     0.272,
+     0.407
+    ],
+    "single": "2",
+    "coupons": {
+     "A": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "B": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "C": {
+      "signs": "1X2"
+     }
+    },
+    "lineupStatus": "pending"
+   },
+   "latestAt": "2026-10-20T16:50:27.866Z",
+   "latest": {
+    "probs": [
+     0.331,
+     0.286,
+     0.383
+    ],
+    "folk": [
+     0.4,
+     0.27,
+     0.33
+    ],
+    "odds": [
+     3,
+     3.7,
+     2.4
+    ],
+    "market": [
+     0.321,
+     0.272,
+     0.407
+    ],
+    "single": "2",
+    "coupons": {
+     "A": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "B": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "C": {
+      "signs": "1X2"
+     }
+    },
+    "lineupStatus": "pending"
+   },
+   "result": null
+  },
+  "stryktipset-4976-4": {
+   "id": "stryktipset-4976-4",
+   "product": "stryktipset",
+   "draw": 4976,
+   "event": 4,
+   "date": "2026-10-24",
+   "kickoff": "2026-10-24T16:00:00+02:00",
+   "league": "Championship",
+   "home": "Blackburn",
+   "away": "Wrexham",
+   "firstAt": "2026-10-20T15:37:29.008Z",
+   "first": {
+    "probs": [
+     0.347,
+     0.276,
+     0.377
+    ],
+    "folk": [
+     0.46,
+     0.26,
+     0.28
+    ],
+    "odds": [
+     2.75,
+     3.4,
+     2.65
+    ],
+    "market": [
+     0.345,
+     0.295,
+     0.36
+    ],
+    "single": "2",
+    "coupons": {
+     "A": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "B": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "C": {
+      "signs": "1X2"
+     }
+    },
+    "lineupStatus": null
+   },
+   "latestAt": "2026-10-20T15:37:29.008Z",
+   "latest": {
+    "probs": [
+     0.347,
+     0.276,
+     0.377
+    ],
+    "folk": [
+     0.46,
+     0.26,
+     0.28
+    ],
+    "odds": [
+     2.75,
+     3.4,
+     2.65
+    ],
+    "market": [
+     0.345,
+     0.295,
+     0.36
+    ],
+    "single": "2",
+    "coupons": {
+     "A": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "B": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "C": {
+      "signs": "1X2"
+     }
+    },
+    "lineupStatus": null
+   },
+   "result": null
+  },
+  "stryktipset-4976-5": {
+   "id": "stryktipset-4976-5",
+   "product": "stryktipset",
+   "draw": 4976,
+   "event": 5,
+   "date": "2026-10-24",
+   "kickoff": "2026-10-24T16:00:00+02:00",
+   "league": "Championship",
+   "home": "Cardiff",
+   "away": "Birmingham",
+   "firstAt": "2026-10-20T15:37:29.008Z",
+   "first": {
+    "probs": [
+     0.361,
+     0.254,
+     0.384
+    ],
+    "folk": [
+     0.37,
+     0.26,
+     0.37
+    ],
+    "odds": [
+     2.75,
+     3.8,
+     2.48
+    ],
+    "market": [
+     0.362,
+     0.254,
+     0.384
+    ],
+    "single": "2",
+    "coupons": {
+     "A": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "B": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "C": {
+      "signs": "1X2"
+     }
+    },
+    "lineupStatus": null
+   },
+   "latestAt": "2026-10-20T16:50:27.866Z",
+   "latest": {
+    "probs": [
+     0.361,
+     0.254,
+     0.384
+    ],
+    "folk": [
+     0.36,
+     0.26,
+     0.38
+    ],
+    "odds": [
+     2.75,
+     3.8,
+     2.48
+    ],
+    "market": [
+     0.362,
+     0.254,
+     0.384
+    ],
+    "single": "2",
+    "coupons": {
+     "A": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "B": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "C": {
+      "signs": "1X2"
+     }
+    },
+    "lineupStatus": null
+   },
+   "result": null
+  },
+  "stryktipset-4976-6": {
+   "id": "stryktipset-4976-6",
+   "product": "stryktipset",
+   "draw": 4976,
+   "event": 6,
+   "date": "2026-10-24",
+   "kickoff": "2026-10-24T16:00:00+02:00",
+   "league": "Championship",
+   "home": "Lincoln",
+   "away": "Burnley",
+   "firstAt": "2026-10-20T15:37:29.008Z",
+   "first": {
+    "probs": [
+     0.334,
+     0.264,
+     0.402
+    ],
+    "folk": [
+     0.39,
+     0.26,
+     0.35
+    ],
+    "odds": [
+     2.95,
+     3.55,
+     2.43
+    ],
+    "market": [
+     0.318,
+     0.264,
+     0.417
+    ],
+    "single": "2",
+    "coupons": {
+     "A": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "B": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "C": {
+      "signs": "1X2"
+     }
+    },
+    "lineupStatus": null
+   },
+   "latestAt": "2026-10-20T15:37:29.008Z",
+   "latest": {
+    "probs": [
+     0.334,
+     0.264,
+     0.402
+    ],
+    "folk": [
+     0.39,
+     0.26,
+     0.35
+    ],
+    "odds": [
+     2.95,
+     3.55,
+     2.43
+    ],
+    "market": [
+     0.318,
+     0.264,
+     0.417
+    ],
+    "single": "2",
+    "coupons": {
+     "A": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "B": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "C": {
+      "signs": "1X2"
+     }
+    },
+    "lineupStatus": null
+   },
+   "result": null
+  },
+  "stryktipset-4976-7": {
+   "id": "stryktipset-4976-7",
+   "product": "stryktipset",
+   "draw": 4976,
+   "event": 7,
+   "date": "2026-10-24",
+   "kickoff": "2026-10-24T16:00:00+02:00",
+   "league": "Championship",
+   "home": "Preston",
+   "away": "West Bromwich",
+   "firstAt": "2026-10-20T15:37:29.008Z",
+   "first": {
+    "probs": [
+     0.338,
+     0.276,
+     0.386
+    ],
+    "folk": [
+     0.29,
+     0.24,
+     0.47
+    ],
+    "odds": [
+     3.6,
+     3.65,
+     2.08
+    ],
+    "market": [
+     0.252,
+     0.255,
+     0.493
+    ],
+    "single": "2",
+    "coupons": {
+     "A": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "B": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "C": {
+      "signs": "1X2"
+     }
+    },
+    "lineupStatus": null
+   },
+   "latestAt": "2026-10-20T15:37:29.008Z",
+   "latest": {
+    "probs": [
+     0.338,
+     0.276,
+     0.386
+    ],
+    "folk": [
+     0.29,
+     0.24,
+     0.47
+    ],
+    "odds": [
+     3.6,
+     3.65,
+     2.08
+    ],
+    "market": [
+     0.252,
+     0.255,
+     0.493
+    ],
+    "single": "2",
+    "coupons": {
+     "A": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "B": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "C": {
+      "signs": "1X2"
+     }
+    },
+    "lineupStatus": null
+   },
+   "result": null
+  },
+  "stryktipset-4976-8": {
+   "id": "stryktipset-4976-8",
+   "product": "stryktipset",
+   "draw": 4976,
+   "event": 8,
+   "date": "2026-10-24",
+   "kickoff": "2026-10-24T16:00:00+02:00",
+   "league": "Championship",
+   "home": "Queens Park Rangers",
+   "away": "Swansea",
+   "firstAt": "2026-10-20T15:37:29.008Z",
+   "first": {
+    "probs": [
+     0.363,
+     0.268,
+     0.369
+    ],
+    "folk": [
+     0.42,
+     0.27,
+     0.31
+    ],
+    "odds": [
+     2.38,
+     3.5,
+     3.05
+    ],
+    "market": [
+     0.404,
+     0.281,
+     0.315
+    ],
+    "single": "2",
+    "coupons": {
+     "A": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "B": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "C": {
+      "signs": "1X2"
+     }
+    },
+    "lineupStatus": null
+   },
+   "latestAt": "2026-10-20T15:37:29.008Z",
+   "latest": {
+    "probs": [
+     0.363,
+     0.268,
+     0.369
+    ],
+    "folk": [
+     0.42,
+     0.27,
+     0.31
+    ],
+    "odds": [
+     2.38,
+     3.5,
+     3.05
+    ],
+    "market": [
+     0.404,
+     0.281,
+     0.315
+    ],
+    "single": "2",
+    "coupons": {
+     "A": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "B": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "C": {
+      "signs": "1X2"
+     }
+    },
+    "lineupStatus": null
+   },
+   "result": null
+  },
+  "stryktipset-4976-9": {
+   "id": "stryktipset-4976-9",
+   "product": "stryktipset",
+   "draw": 4976,
+   "event": 9,
+   "date": "2026-10-24",
+   "kickoff": "2026-10-24T16:00:00+02:00",
+   "league": "Championship",
+   "home": "Stoke",
+   "away": "Bristol City",
+   "firstAt": "2026-10-20T15:37:29.008Z",
+   "first": {
+    "probs": [
+     0.377,
+     0.282,
+     0.34
+    ],
+    "folk": [
+     0.56,
+     0.22,
+     0.22
+    ],
+    "odds": [
+     2.38,
+     3.55,
+     3.05
+    ],
+    "market": [
+     0.411,
+     0.28,
+     0.309
+    ],
+    "single": "1",
+    "coupons": {
+     "A": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "B": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "C": {
+      "signs": "1X2"
+     }
+    },
+    "lineupStatus": null
+   },
+   "latestAt": "2026-10-20T15:37:29.008Z",
+   "latest": {
+    "probs": [
+     0.377,
+     0.282,
+     0.34
+    ],
+    "folk": [
+     0.56,
+     0.22,
+     0.22
+    ],
+    "odds": [
+     2.38,
+     3.55,
+     3.05
+    ],
+    "market": [
+     0.411,
+     0.28,
+     0.309
+    ],
+    "single": "1",
+    "coupons": {
+     "A": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "B": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "C": {
+      "signs": "1X2"
+     }
+    },
+    "lineupStatus": null
+   },
+   "result": null
+  },
+  "stryktipset-4976-10": {
+   "id": "stryktipset-4976-10",
+   "product": "stryktipset",
+   "draw": 4976,
+   "event": 10,
+   "date": "2026-10-24",
+   "kickoff": "2026-10-24T16:00:00+02:00",
+   "league": "Championship",
+   "home": "West Ham",
+   "away": "Southampton",
+   "firstAt": "2026-10-20T15:37:29.008Z",
+   "first": {
+    "probs": [
+     0.463,
+     0.237,
+     0.3
+    ],
+    "folk": [
+     0.55,
+     0.24,
+     0.21
+    ],
+    "odds": [
+     1.71,
+     4.3,
+     4.6
+    ],
+    "market": [
+     0.568,
+     0.219,
+     0.213
+    ],
+    "single": "1",
+    "coupons": {
+     "A": {
+      "signs": "12",
+      "type": "Halvgardering"
+     },
+     "B": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "C": {
+      "signs": "1X2"
+     }
+    },
+    "lineupStatus": null
+   },
+   "latestAt": "2026-10-20T15:37:29.008Z",
+   "latest": {
+    "probs": [
+     0.463,
+     0.237,
+     0.3
+    ],
+    "folk": [
+     0.55,
+     0.24,
+     0.21
+    ],
+    "odds": [
+     1.71,
+     4.3,
+     4.6
+    ],
+    "market": [
+     0.568,
+     0.219,
+     0.213
+    ],
+    "single": "1",
+    "coupons": {
+     "A": {
+      "signs": "12",
+      "type": "Halvgardering"
+     },
+     "B": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "C": {
+      "signs": "1X2"
+     }
+    },
+    "lineupStatus": null
+   },
+   "result": null
+  },
+  "stryktipset-4976-11": {
+   "id": "stryktipset-4976-11",
+   "product": "stryktipset",
+   "draw": 4976,
+   "event": 11,
+   "date": "2026-10-24",
+   "kickoff": "2026-10-24T16:00:00+02:00",
+   "league": "Championship",
+   "home": "Wolverhampton",
+   "away": "Watford",
+   "firstAt": "2026-10-20T15:37:29.008Z",
+   "first": {
+    "probs": [
+     0.65,
+     0.207,
+     0.143
+    ],
+    "folk": [
+     0.61,
+     0.19,
+     0.2
+    ],
+    "odds": [
+     1.46,
+     4.9,
+     7
+    ],
+    "market": [
+     0.654,
+     0.204,
+     0.142
+    ],
+    "single": "1",
+    "coupons": {
+     "A": {
+      "signs": "1",
+      "type": "Spik"
+     },
+     "B": {
+      "signs": "1",
+      "type": "Spik"
+     },
+     "C": {
+      "signs": "1"
+     }
+    },
+    "lineupStatus": null
+   },
+   "latestAt": "2026-10-20T15:37:29.008Z",
+   "latest": {
+    "probs": [
+     0.65,
+     0.207,
+     0.143
+    ],
+    "folk": [
+     0.61,
+     0.19,
+     0.2
+    ],
+    "odds": [
+     1.46,
+     4.9,
+     7
+    ],
+    "market": [
+     0.654,
+     0.204,
+     0.142
+    ],
+    "single": "1",
+    "coupons": {
+     "A": {
+      "signs": "1",
+      "type": "Spik"
+     },
+     "B": {
+      "signs": "1",
+      "type": "Spik"
+     },
+     "C": {
+      "signs": "1"
+     }
+    },
+    "lineupStatus": null
+   },
+   "result": null
+  },
+  "stryktipset-4976-12": {
+   "id": "stryktipset-4976-12",
+   "product": "stryktipset",
+   "draw": 4976,
+   "event": 12,
+   "date": "2026-10-24",
+   "kickoff": "2026-10-24T16:00:00+02:00",
+   "league": "League One",
+   "home": "Cambridge",
+   "away": "Plymouth",
+   "firstAt": "2026-10-20T15:37:29.008Z",
+   "first": {
+    "probs": [
+     0.368,
+     0.283,
+     0.35
+    ],
+    "folk": [
+     0.43,
+     0.28,
+     0.29
+    ],
+    "odds": [
+     2.38,
+     3.55,
+     2.75
+    ],
+    "market": [
+     0.365,
+     0.289,
+     0.346
+    ],
+    "single": "1",
+    "coupons": {
+     "A": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "B": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "C": {
+      "signs": "1X2"
+     }
+    },
+    "lineupStatus": "none"
+   },
+   "latestAt": "2026-10-20T16:50:27.866Z",
+   "latest": {
+    "probs": [
+     0.368,
+     0.283,
+     0.35
+    ],
+    "folk": [
+     0.43,
+     0.28,
+     0.29
+    ],
+    "odds": [
+     2.38,
+     3.55,
+     2.75
+    ],
+    "market": [
+     0.365,
+     0.289,
+     0.346
+    ],
+    "single": "1",
+    "coupons": {
+     "A": {
+      "signs": "2",
+      "type": "Spik"
+     },
+     "B": {
+      "signs": "2",
+      "type": "Spik"
+     },
+     "C": {
+      "signs": "2"
+     }
+    },
+    "lineupStatus": "none"
+   },
+   "result": null
+  },
+  "stryktipset-4976-13": {
+   "id": "stryktipset-4976-13",
+   "product": "stryktipset",
+   "draw": 4976,
+   "event": 13,
+   "date": "2026-10-24",
+   "kickoff": "2026-10-24T16:00:00+02:00",
+   "league": "League One",
+   "home": "Oxford",
+   "away": "Bradford",
+   "firstAt": "2026-10-20T15:37:29.008Z",
+   "first": {
+    "probs": [
+     0.346,
+     0.286,
+     0.369
+    ],
+    "folk": [
+     0.38,
+     0.3,
+     0.32
+    ],
+    "odds": [
+     2.55,
+     3.25,
+     2.7
+    ],
+    "market": [
+     0.345,
+     0.292,
+     0.363
+    ],
+    "single": "2",
+    "coupons": {
+     "A": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "B": {
+      "signs": "1X2",
+      "type": "Helgardering"
+     },
+     "C": {
+      "signs": "1X2"
+     }
+    },
+    "lineupStatus": "none"
+   },
+   "latestAt": "2026-10-20T15:37:29.008Z",
+   "latest": {
+    "probs": [
+     0.346,
+     0.286,
+     0.369
+    ],
+    "folk": [
+     0.38,
+     0.3,
+     0.32
+    ],
+    "odds": [
+     2.55,
+     3.25,
+     2.7
+    ],
+    "market": [
+     0.345,
+     0.292,
+     0.363
+    ],
+    "single": "2",
     "coupons": {
      "A": {
       "signs": "1X2",

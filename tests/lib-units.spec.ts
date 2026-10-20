@@ -1598,10 +1598,10 @@ test.describe('stryk-engine: kupong A, B och C', () => {
 
   // Filkuponger (användaren 2026-10-11: "skippa helt allt som har med Gambling Cabin att göra, ta bort alla regler, vill
   // bara köra på fil"): A, B och C är Egna rader-filer à 500 rader.
-  test('filkuponger: A/B/C à 500 rader ≥ 30 000 kr, 2 starka spikar, B utan A:s rader, C väger underspelade tecken', async () => {
+  test('filkuponger: A/B/C à 500 rader ≥ 30 000 kr, 4 spikar (3 starka + 1 skräll), B utan A:s rader, C väger underspelade tecken', async () => {
     test.skip(products.length === 0, 'data/stryktipset.json saknas');
-    const { generateCoupons, sysFinal, FILE_RULES, underplayed } = await engine();
-    expect(FILE_RULES).toMatchObject({ rows: 500, payoutMin: 30000, spikes: 2, underBonus: 1.3 });
+    const { generateCoupons, sysFinal, FILE_RULES, underplayed, skrallTips } = await engine();
+    expect(FILE_RULES).toMatchObject({ rows: 500, payoutMin: 30000, spikes: 4, skrallSpikes: 1, underBonus: 1.3 });
     for (const p of products.slice(0, 2)) {
       const out = generateCoupons(p, {});
       expect(Object.keys(out).filter((k) => /^[A-Z]$/.test(k)).sort(), p.product).toEqual(['A', 'B', 'C']);
@@ -1615,7 +1615,14 @@ test.describe('stryk-engine: kupong A, B och C', () => {
         expect(new Set(c.rowList).size, at).toBe(500);
         expect(Math.min(...c.rowReal), at).toBeGreaterThanOrEqual(30000);
         expect(c.egnaRader.trim().split('\n'), at).toHaveLength(501);
-        for (const { i, v } of strength.slice(0, 2)) expect(c.picks[i].signs, `${at} match ${i + 1}: stark spik`).toBe('1X2'[ev[i].final.indexOf(v)]);
+        for (const { i, v } of strength.slice(0, 3)) expect(c.picks[i].signs, `${at} match ${i + 1}: stark spik`).toBe('1X2'[ev[i].final.indexOf(v)]);
+        // 2026-10-20: "föreslå alltid 4 spikar där en ska vara lite mer skrällig" – den fjärde är bästa skrällspiken
+        expect(c.picks.filter((x: any) => x.signs.length === 1), at).toHaveLength(4);
+        const sk = skrallTips(ev, 13).find((t: any) => !strength.slice(0, 3).some((s: any) => s.i === t.i));
+        if (sk) {
+          expect(c.picks[sk.i].signs, `${at} match ${sk.i + 1}: skrällspik`).toBe(sk.sign);
+          expect(c.picks.filter((x: any) => x.spikSkrall).map((x: any) => x.signs), at).toEqual([sk.sign]);
+        }
       }
       const setA = new Set(out.A.rowList);
       expect(out.B.rowList.some((r: string) => setA.has(r)), `${p.product}: B utan A:s rader`).toBe(false);
@@ -1699,13 +1706,16 @@ test.describe('stryk-engine: kupong A, B och C', () => {
     // En egen spik: ingen annan match spikas (användaren 2026-10-12)
     forced[(weakest + 1) % 13] = null;
     expect(strongSpikeForced(ev, forced, 2)).toEqual(forced);
-    // Egen halvgardering är ingen spik: de 2 starka spikarna läggs till
+    // Egen halvgardering är ingen spik: de 4 spikarna läggs till, en av dem en skräll (inte favoriten)
     forced[weakest] = [0, 1];
-    expect(strongSpikeForced(ev, forced, 2).filter((x: any) => x?.length === 1)).toHaveLength(2);
-    // Hela kupongen: egen spik i A -> inga starka spikar i A, men B/C (kravet gäller inte där) får sina 2
+    const f4 = strongSpikeForced(ev, forced);
+    expect(f4.filter((x: any) => x?.length === 1)).toHaveLength(4);
+    expect(f4.filter((x: any, i: number) => x?.length === 1 && x[0] !== ev[i].final.indexOf(Math.max(...ev[i].final))).length).toBeLessThanOrEqual(1);
+    expect(strongSpikeForced(ev, forced, 2, 0).filter((x: any) => x?.length === 1)).toHaveLength(2);
+    // Hela kupongen: egen spik i A -> inga starka spikar i A, men B/C (kravet gäller inte där) får sina 4
     const own = generateCoupons(p, { [p.events[weakest].eventNumber]: { signs: 'X', scope: 'A' } });
     expect(own.A.picks.filter((x: any) => x.spikStrong)).toHaveLength(0);
-    expect(own.B.picks.filter((x: any) => x.spikStrong)).toHaveLength(2);
+    expect(own.B.picks.filter((x: any) => x.spikStrong)).toHaveLength(4);
     // Egna spikar: ingen annan match blir spik ens av sig själv (alla rader samma tecken) – den görs om
     const strongest = ev.map((e: any, i: number) => ({ i, v: Math.max(...e.final) })).sort((a: any, b: any) => b.v - a.v)[0].i;
     const k2 = { [p.events[weakest].eventNumber]: { signs: 'X', scope: 'all' }, [p.events[(strongest + 1) % 13].eventNumber]: { signs: '1', scope: 'all' } };

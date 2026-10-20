@@ -74,9 +74,9 @@ test('Stryktipset: en sida, egna krav genererar kupong A och B', async ({ page }
   await expect(rows).toHaveCount(13, { timeout: 240_000 });
   // Kupongen genereras direkt, utan krav
   await expect(page.locator('.sb-table tbody tr')).toHaveCount(13, { timeout: 240_000 });
-  // Filkuponger (2026-10-11): A och B har samma 2 starka spikar (B är A:s nästa rader)
+  // Filkuponger (2026-10-11): A och B har samma spikar (B är A:s nästa rader), 4 st sedan 2026-10-20
   const pairs = await page.locator('.sb-table tbody tr').evaluateAll((trs) => trs.map((tr) => [2, 3].map((c) => tr.children[c].textContent!.replace(/⚠.*$/s, '').trim())));
-  expect(pairs.filter(([a, b]) => a.split('+').length === 1 && a === b).length).toBeGreaterThanOrEqual(2);
+  expect(pairs.filter(([a, b]) => a.split('+').length === 1 && a === b).length).toBeGreaterThanOrEqual(4);
   // Klick på turmatch fäller ut en förklaring i enkla ord
   const turBtn = page.locator('.sb-list .tur-btn').first();
   if (await turBtn.count()) {

@@ -969,7 +969,7 @@ async function analyzeDraw(product, draw, ctx, result) {
     return { ...a, spik: undefined };
   });
   // Filkuponger A, B och C (anvandaren 2026-10-11: "skippa helt allt som har med Gambling Cabin att gora, ta bort alla
-  // regler, vill bara kora pa fil"). Samma motor som webben (gui/public/stryk-engine.js buildFileCoupons): 2 starka spikar,
+  // regler, vill bara kora pa fil"). Samma motor som webben (gui/public/stryk-engine.js buildFileCoupons): 4 spikar (3 starka + 1 skrall),
   // A = 500 troligaste raderna >= 30 000 kr, B = nasta 500 utanfor A, C = underspelade tecken uppviktade. Spelas som
   // Egna rader-fil (reduced.egnaRader).
   let system = null, reduced = null, systemB = null, reducedB = null, systemC = null, reducedC = null;
