@@ -101,131 +101,131 @@
    ]
   },
   "ESP": {
-   "fetchedAt": "2026-10-12T19:35:03.497Z",
+   "fetchedAt": "2026-10-20T15:15:58.374Z",
    "clubs": [
     {
      "name": "Barcelona",
-     "elo": 2026.3,
+     "elo": 2037.3,
      "level": 1
     },
     {
      "name": "Real Madrid",
-     "elo": 1974.5,
+     "elo": 1983.2,
      "level": 1
     },
     {
      "name": "Atlético",
-     "elo": 1906.6,
+     "elo": 1916.6,
      "level": 1
     },
     {
      "name": "Betis",
-     "elo": 1822.7,
+     "elo": 1824.3,
      "level": 1
     },
     {
      "name": "Villarreal",
-     "elo": 1796.4,
+     "elo": 1801.3,
      "level": 1
     },
     {
      "name": "Real Sociedad",
-     "elo": 1772.3,
+     "elo": 1784.8,
      "level": 1
     },
     {
      "name": "Athletic Club",
-     "elo": 1764.4,
+     "elo": 1767.4,
      "level": 1
     },
     {
      "name": "Celta",
-     "elo": 1750.3,
+     "elo": 1750.5,
      "level": 1
     },
     {
      "name": "Rayo Vallecano",
-     "elo": 1743.8,
+     "elo": 1746,
      "level": 1
     },
     {
      "name": "Valencia",
-     "elo": 1741.3,
+     "elo": 1742.8,
      "level": 1
     },
     {
      "name": "Sevilla",
-     "elo": 1725.1,
+     "elo": 1725.8,
      "level": 1
     },
     {
      "name": "Girona",
-     "elo": 1719.7,
+     "elo": 1724.4,
      "level": 2
     },
     {
-     "name": "Alaves",
-     "elo": 1718.8,
-     "level": 1
-    },
-    {
      "name": "Mallorca",
-     "elo": 1718.2,
+     "elo": 1720.7,
      "level": 2
     },
     {
      "name": "Osasuna",
-     "elo": 1712,
+     "elo": 1719.7,
+     "level": 1
+    },
+    {
+     "name": "Alaves",
+     "elo": 1717.1,
      "level": 1
     },
     {
      "name": "Levante",
-     "elo": 1708.1,
+     "elo": 1710.1,
      "level": 1
     },
     {
      "name": "Elche",
-     "elo": 1701.1,
+     "elo": 1706.7,
      "level": 1
     },
     {
      "name": "Almeria",
-     "elo": 1700.8,
+     "elo": 1706.1,
      "level": 2
     },
     {
      "name": "Getafe",
-     "elo": 1697.9,
+     "elo": 1698.6,
      "level": 1
     },
     {
      "name": "Espanyol",
-     "elo": 1697.8,
-     "level": 1
-    },
-    {
-     "name": "Eibar",
-     "elo": 1692.9,
-     "level": 2
-    },
-    {
-     "name": "Depor",
-     "elo": 1687.3,
-     "level": 1
-    },
-    {
-     "name": "Santander",
-     "elo": 1684.5,
+     "elo": 1696.8,
      "level": 1
     },
     {
      "name": "Castellon",
-     "elo": 1684,
+     "elo": 1693.3,
      "level": 2
     },
     {
+     "name": "Depor",
+     "elo": 1686.5,
+     "level": 1
+    },
+    {
+     "name": "Eibar",
+     "elo": 1684.5,
+     "level": 2
+    },
+    {
+     "name": "Santander",
+     "elo": 1679.4,
+     "level": 1
+    },
+    {
      "name": "Malaga",
-     "elo": 1664.9,
+     "elo": 1657,
      "level": 1
     }
    ]
@@ -311,466 +311,466 @@
    ]
   },
   "ENG": {
-   "fetchedAt": "2026-10-12T19:35:03.113Z",
+   "fetchedAt": "2026-10-20T15:15:57.857Z",
    "clubs": [
     {
      "name": "Arsenal",
-     "elo": 2042.9,
+     "elo": 2048,
      "level": 1
     },
     {
      "name": "Man City",
-     "elo": 2035.1,
+     "elo": 2025.2,
      "level": 1
     },
     {
      "name": "Liverpool",
-     "elo": 1929.7,
+     "elo": 1937.3,
      "level": 1
     },
     {
      "name": "Brighton",
-     "elo": 1895.9,
+     "elo": 1904.5,
      "level": 1
     },
     {
      "name": "Aston Villa",
-     "elo": 1893.5,
+     "elo": 1904.3,
      "level": 1
     },
     {
      "name": "Chelsea",
-     "elo": 1889.1,
-     "level": 1
-    },
-    {
-     "name": "Newcastle",
-     "elo": 1879.1,
+     "elo": 1895.6,
      "level": 1
     },
     {
      "name": "Man United",
-     "elo": 1876.4,
+     "elo": 1871.2,
+     "level": 1
+    },
+    {
+     "name": "Newcastle",
+     "elo": 1860.4,
      "level": 1
     },
     {
      "name": "Brentford",
-     "elo": 1863.3,
+     "elo": 1859,
      "level": 1
     },
     {
      "name": "Bournemouth",
-     "elo": 1851.5,
+     "elo": 1858.1,
      "level": 1
     },
     {
      "name": "Crystal Palace",
-     "elo": 1830.4,
+     "elo": 1818.3,
      "level": 1
     },
     {
      "name": "Everton",
-     "elo": 1823.8,
+     "elo": 1815.5,
      "level": 1
     },
     {
      "name": "Leeds",
-     "elo": 1814.9,
+     "elo": 1814.7,
      "level": 1
     },
     {
      "name": "Tottenham",
-     "elo": 1799.6,
+     "elo": 1803.4,
      "level": 1
     },
     {
      "name": "Fulham",
-     "elo": 1799,
+     "elo": 1801.2,
      "level": 1
     },
     {
      "name": "Forest",
-     "elo": 1798.9,
+     "elo": 1796.4,
      "level": 1
     },
     {
      "name": "West Ham",
-     "elo": 1772.3,
+     "elo": 1782.3,
      "level": 2
     },
     {
      "name": "Sunderland",
-     "elo": 1732.3,
+     "elo": 1730.4,
      "level": 1
     },
     {
      "name": "Wolves",
-     "elo": 1720.1,
+     "elo": 1711.3,
      "level": 2
     },
     {
      "name": "Southampton",
-     "elo": 1702.6,
+     "elo": 1703.2,
      "level": 2
     },
     {
-     "name": "Ipswich",
-     "elo": 1701.5,
+     "name": "Coventry",
+     "elo": 1700.7,
      "level": 1
     },
     {
-     "name": "Coventry",
-     "elo": 1690.5,
+     "name": "Ipswich",
+     "elo": 1700.4,
      "level": 1
     },
     {
      "name": "Middlesbrough",
-     "elo": 1656.8,
+     "elo": 1658.7,
      "level": 2
     },
     {
      "name": "Burnley",
-     "elo": 1653.8,
+     "elo": 1645.6,
      "level": 2
     },
     {
-     "name": "Millwall",
-     "elo": 1644.4,
+     "name": "Birmingham",
+     "elo": 1640.7,
      "level": 2
     }
    ]
   },
   "FRA": {
-   "fetchedAt": "2026-10-12T19:35:03.265Z",
+   "fetchedAt": "2026-10-20T15:15:58.459Z",
    "clubs": [
     {
      "name": "Paris SG",
-     "elo": 1958.4,
+     "elo": 1972.8,
      "level": 1
     },
     {
      "name": "Lens",
-     "elo": 1817.5,
-     "level": 1
-    },
-    {
-     "name": "Monaco",
-     "elo": 1799.8,
+     "elo": 1813.3,
      "level": 1
     },
     {
      "name": "Lyon",
-     "elo": 1796.4,
+     "elo": 1803.1,
+     "level": 1
+    },
+    {
+     "name": "Monaco",
+     "elo": 1795.6,
      "level": 1
     },
     {
      "name": "Lille",
-     "elo": 1782.7,
+     "elo": 1777.5,
      "level": 1
     },
     {
      "name": "Marseille",
-     "elo": 1767.1,
+     "elo": 1765.1,
      "level": 1
     },
     {
      "name": "Rennes",
-     "elo": 1760.4,
+     "elo": 1755.8,
      "level": 1
     },
     {
      "name": "Strasbourg",
-     "elo": 1735.7,
+     "elo": 1731.9,
      "level": 1
     },
     {
-     "name": "La Roche VF",
-     "elo": 1708.3,
-     "level": 3
-    },
-    {
      "name": "Paris FC",
-     "elo": 1699.1,
+     "elo": 1705.8,
      "level": 1
     },
     {
      "name": "Lorient",
-     "elo": 1693.7,
+     "elo": 1700.9,
      "level": 1
     },
     {
      "name": "Toulouse",
-     "elo": 1691.9,
+     "elo": 1700.1,
      "level": 1
     },
     {
      "name": "Brest",
-     "elo": 1681.3,
+     "elo": 1684.2,
      "level": 1
     },
     {
      "name": "Nice",
-     "elo": 1674,
+     "elo": 1671,
      "level": 1
     },
     {
      "name": "Auxerre",
-     "elo": 1645.1,
+     "elo": 1653.1,
      "level": 1
     },
     {
      "name": "Reims",
-     "elo": 1633,
+     "elo": 1637.8,
      "level": 2
     },
     {
+     "name": "La Roche VF",
+     "elo": 1636.8,
+     "level": 3
+    },
+    {
      "name": "Saint-Etienne",
-     "elo": 1617.9,
+     "elo": 1622.8,
      "level": 2
     },
     {
      "name": "Angers",
-     "elo": 1611.3,
-     "level": 1
-    },
-    {
-     "name": "Le Havre",
-     "elo": 1603.1,
-     "level": 1
-    },
-    {
-     "name": "Troyes",
-     "elo": 1597,
-     "level": 1
-    },
-    {
-     "name": "Cannes",
-     "elo": 1596.5,
-     "level": 3
-    },
-    {
-     "name": "Le Mans",
-     "elo": 1594.6,
+     "elo": 1604.3,
      "level": 1
     },
     {
      "name": "Montpellier",
-     "elo": 1585.5,
+     "elo": 1596,
      "level": 2
     },
     {
+     "name": "Le Havre",
+     "elo": 1594.1,
+     "level": 1
+    },
+    {
+     "name": "Troyes",
+     "elo": 1592,
+     "level": 1
+    },
+    {
+     "name": "Le Mans",
+     "elo": 1586.1,
+     "level": 1
+    },
+    {
      "name": "Red Star",
-     "elo": 1584.1,
+     "elo": 1577.2,
      "level": 2
     },
     {
      "name": "Nantes",
-     "elo": 1576.7,
-     "level": 2
-    }
-   ]
-  },
-  "ITA": {
-   "fetchedAt": "2026-10-12T19:35:03.351Z",
-   "clubs": [
-    {
-     "name": "Internazionale",
-     "elo": 1948.7,
-     "level": 1
-    },
-    {
-     "name": "Roma",
-     "elo": 1857.1,
-     "level": 1
-    },
-    {
-     "name": "Juventus",
-     "elo": 1839.5,
-     "level": 1
-    },
-    {
-     "name": "Napoli",
-     "elo": 1838.9,
-     "level": 1
-    },
-    {
-     "name": "Milan",
-     "elo": 1821.6,
-     "level": 1
-    },
-    {
-     "name": "Atalanta",
-     "elo": 1807.3,
-     "level": 1
-    },
-    {
-     "name": "Como",
-     "elo": 1807,
-     "level": 1
-    },
-    {
-     "name": "Lazio",
-     "elo": 1782.2,
-     "level": 1
-    },
-    {
-     "name": "Bologna",
-     "elo": 1757.4,
-     "level": 1
-    },
-    {
-     "name": "Fiorentina",
-     "elo": 1716.4,
-     "level": 1
-    },
-    {
-     "name": "Sassuolo",
-     "elo": 1698.9,
-     "level": 1
-    },
-    {
-     "name": "Udinese",
-     "elo": 1696.8,
-     "level": 1
-    },
-    {
-     "name": "Frosinone",
-     "elo": 1685,
-     "level": 1
-    },
-    {
-     "name": "Torino",
-     "elo": 1682.6,
-     "level": 1
-    },
-    {
-     "name": "Cagliari",
-     "elo": 1680.6,
-     "level": 1
-    },
-    {
-     "name": "Genoa",
-     "elo": 1667.2,
-     "level": 1
-    },
-    {
-     "name": "Palermo",
-     "elo": 1653,
+     "elo": 1568,
      "level": 2
     },
     {
-     "name": "Parma",
-     "elo": 1646,
-     "level": 1
-    },
-    {
-     "name": "Venezia",
-     "elo": 1645.2,
-     "level": 1
-    },
-    {
-     "name": "Monza",
-     "elo": 1638.2,
-     "level": 1
-    },
-    {
-     "name": "Lecce",
-     "elo": 1611,
-     "level": 1
-    },
-    {
-     "name": "Cremonese",
-     "elo": 1605.7,
-     "level": 2
-    },
-    {
-     "name": "Verona",
-     "elo": 1574.4,
-     "level": 2
-    },
-    {
-     "name": "Catanzaro",
-     "elo": 1564.2,
-     "level": 2
-    },
-    {
-     "name": "Modena",
+     "name": "Metz",
      "elo": 1563.2,
      "level": 2
     }
    ]
   },
+  "ITA": {
+   "fetchedAt": "2026-10-20T15:15:58.198Z",
+   "clubs": [
+    {
+     "name": "Internazionale",
+     "elo": 1942.5,
+     "level": 1
+    },
+    {
+     "name": "Roma",
+     "elo": 1854.9,
+     "level": 1
+    },
+    {
+     "name": "Milan",
+     "elo": 1833.3,
+     "level": 1
+    },
+    {
+     "name": "Juventus",
+     "elo": 1830.7,
+     "level": 1
+    },
+    {
+     "name": "Napoli",
+     "elo": 1822.2,
+     "level": 1
+    },
+    {
+     "name": "Atalanta",
+     "elo": 1807.5,
+     "level": 1
+    },
+    {
+     "name": "Como",
+     "elo": 1806.3,
+     "level": 1
+    },
+    {
+     "name": "Lazio",
+     "elo": 1794.5,
+     "level": 1
+    },
+    {
+     "name": "Bologna",
+     "elo": 1752.1,
+     "level": 1
+    },
+    {
+     "name": "Fiorentina",
+     "elo": 1709,
+     "level": 1
+    },
+    {
+     "name": "Torino",
+     "elo": 1696.5,
+     "level": 1
+    },
+    {
+     "name": "Frosinone",
+     "elo": 1691.7,
+     "level": 1
+    },
+    {
+     "name": "Sassuolo",
+     "elo": 1691.4,
+     "level": 1
+    },
+    {
+     "name": "Udinese",
+     "elo": 1675.5,
+     "level": 1
+    },
+    {
+     "name": "Cagliari",
+     "elo": 1667.4,
+     "level": 1
+    },
+    {
+     "name": "Genoa",
+     "elo": 1662.2,
+     "level": 1
+    },
+    {
+     "name": "Palermo",
+     "elo": 1660.3,
+     "level": 2
+    },
+    {
+     "name": "Venezia",
+     "elo": 1651.1,
+     "level": 1
+    },
+    {
+     "name": "Monza",
+     "elo": 1649.6,
+     "level": 1
+    },
+    {
+     "name": "Parma",
+     "elo": 1633.9,
+     "level": 1
+    },
+    {
+     "name": "Lecce",
+     "elo": 1625.4,
+     "level": 1
+    },
+    {
+     "name": "Cremonese",
+     "elo": 1596.3,
+     "level": 2
+    },
+    {
+     "name": "Verona",
+     "elo": 1572.1,
+     "level": 2
+    },
+    {
+     "name": "Catanzaro",
+     "elo": 1566.1,
+     "level": 2
+    },
+    {
+     "name": "Spezia",
+     "elo": 1563.6,
+     "level": 3
+    }
+   ]
+  },
   "POR": {
-   "fetchedAt": "2026-10-12T19:35:03.600Z",
+   "fetchedAt": "2026-10-20T15:15:58.632Z",
    "clubs": [
     {
      "name": "Sporting",
-     "elo": 1876.6,
+     "elo": 1884.4,
      "level": 1
     },
     {
      "name": "Benfica",
-     "elo": 1856.3,
+     "elo": 1859,
      "level": 1
     },
     {
      "name": "Porto",
-     "elo": 1841.7,
+     "elo": 1836.8,
      "level": 1
     },
     {
      "name": "Braga",
-     "elo": 1725,
+     "elo": 1717.3,
      "level": 1
     },
     {
      "name": "Famalicao",
-     "elo": 1613.2,
+     "elo": 1598.1,
      "level": 1
     },
     {
      "name": "Santa Clara",
-     "elo": 1578.6,
+     "elo": 1578.1,
      "level": 1
     },
     {
      "name": "Arouca",
-     "elo": 1576.6,
+     "elo": 1576.2,
      "level": 1
     },
     {
      "name": "Gil Vicente",
-     "elo": 1571.3,
+     "elo": 1570.7,
      "level": 1
     },
     {
      "name": "Guimaraes",
-     "elo": 1567.8,
-     "level": 1
-    },
-    {
-     "name": "sporting-cp-b",
-     "elo": 1543.4,
-     "level": 2
-    },
-    {
-     "name": "Moreirense",
-     "elo": 1541.6,
+     "elo": 1567.6,
      "level": 1
     },
     {
      "name": "Alverca",
-     "elo": 1538.5,
+     "elo": 1554.2,
+     "level": 1
+    },
+    {
+     "name": "sporting-cp-b",
+     "elo": 1542.8,
+     "level": 2
+    },
+    {
+     "name": "Moreirense",
+     "elo": 1540.9,
      "level": 1
     },
     {
      "name": "Ac Viseu",
-     "elo": 1512.7,
+     "elo": 1512.4,
      "level": 1
     },
     {
      "name": "Estoril",
-     "elo": 1510.1,
+     "elo": 1509.3,
      "level": 1
     },
     {
@@ -780,1137 +780,1137 @@
     },
     {
      "name": "Maritimo",
-     "elo": 1493.2,
+     "elo": 1492.7,
      "level": 1
     },
     {
      "name": "Estrela Amadora",
-     "elo": 1491.8,
+     "elo": 1491.2,
      "level": 1
     },
     {
      "name": "Casa Pia",
-     "elo": 1487.7,
+     "elo": 1487.2,
      "level": 1
     },
     {
      "name": "Tondela",
-     "elo": 1477.8,
+     "elo": 1477.6,
      "level": 2
     },
     {
      "name": "Nacional",
-     "elo": 1476.4,
+     "elo": 1476,
      "level": 1
     },
     {
      "name": "Torreense",
-     "elo": 1456.2,
+     "elo": 1453.3,
      "level": 2
     },
     {
      "name": "Vizela",
-     "elo": 1453.6,
+     "elo": 1453.2,
      "level": 2
     },
     {
      "name": "Lusitania FC Lourosa",
-     "elo": 1447.6,
+     "elo": 1447.2,
      "level": 2
     },
     {
      "name": "SC Farense",
-     "elo": 1445,
+     "elo": 1444.3,
      "level": 2
     },
     {
      "name": "AVS Futebol",
-     "elo": 1444.2,
+     "elo": 1443.8,
      "level": 2
     }
    ]
   },
   "TUR": {
-   "fetchedAt": "2026-10-12T19:35:03.681Z",
+   "fetchedAt": "2026-10-20T15:15:57.522Z",
    "clubs": [
     {
      "name": "Galatasaray",
-     "elo": 1797.8,
+     "elo": 1796.9,
      "level": 1
     },
     {
      "name": "Fenerbahçe",
-     "elo": 1785.1,
+     "elo": 1781.5,
      "level": 1
     },
     {
      "name": "Amed SK",
-     "elo": 1702.1,
+     "elo": 1707.2,
      "level": 1
     },
     {
      "name": "Besiktas",
-     "elo": 1701.4,
+     "elo": 1702.2,
      "level": 1
     },
     {
      "name": "Trabzonspor",
-     "elo": 1673.4,
+     "elo": 1686,
+     "level": 1
+    },
+    {
+     "name": "Başakşehir",
+     "elo": 1631.3,
      "level": 1
     },
     {
      "name": "Bandırmaspor",
-     "elo": 1633,
+     "elo": 1618.6,
      "level": 2
     },
     {
-     "name": "Başakşehir",
-     "elo": 1627.8,
-     "level": 1
-    },
-    {
      "name": "Göztepe",
-     "elo": 1598.4,
+     "elo": 1616.9,
      "level": 1
     },
     {
      "name": "Çorum FK",
-     "elo": 1589.8,
+     "elo": 1597.5,
      "level": 2
     },
     {
-     "name": "Samsunspor",
-     "elo": 1586.4,
-     "level": 1
-    },
-    {
      "name": "Erzurum",
-     "elo": 1582.8,
-     "level": 1
-    },
-    {
-     "name": "Kocaelispor",
-     "elo": 1580.9,
-     "level": 1
-    },
-    {
-     "name": "Alanyaspor",
-     "elo": 1576.9,
+     "elo": 1588.7,
      "level": 1
     },
     {
      "name": "Bodrum",
-     "elo": 1573.4,
+     "elo": 1581.5,
      "level": 2
     },
     {
-     "name": "Kasimpasa",
-     "elo": 1563.9,
+     "name": "Samsunspor",
+     "elo": 1579.2,
      "level": 1
     },
     {
-     "name": "Rizespor",
-     "elo": 1562.3,
+     "name": "Alanyaspor",
+     "elo": 1573.6,
+     "level": 1
+    },
+    {
+     "name": "Kasimpasa",
+     "elo": 1573.6,
+     "level": 1
+    },
+    {
+     "name": "Kocaelispor",
+     "elo": 1572,
      "level": 1
     },
     {
      "name": "Genclerbirligi",
-     "elo": 1561.2,
+     "elo": 1558.6,
+     "level": 1
+    },
+    {
+     "name": "Rizespor",
+     "elo": 1557.6,
      "level": 1
     },
     {
      "name": "Konyaspor",
-     "elo": 1538.1,
+     "elo": 1535.9,
      "level": 1
+    },
+    {
+     "name": "Kayseri",
+     "elo": 1526.9,
+     "level": 2
     },
     {
      "name": "Gaziantep",
-     "elo": 1529.1,
+     "elo": 1525.8,
      "level": 1
     },
     {
+     "name": "Sivasspor",
+     "elo": 1510.5,
+     "level": 2
+    },
+    {
      "name": "Eyupspor",
-     "elo": 1527.4,
+     "elo": 1510.2,
      "level": 1
     },
     {
      "name": "Antalyaspor",
-     "elo": 1512.9,
-     "level": 2
-    },
-    {
-     "name": "Kayseri",
-     "elo": 1511.3,
-     "level": 2
-    },
-    {
-     "name": "Sivasspor",
-     "elo": 1504.9,
+     "elo": 1506.6,
      "level": 2
     },
     {
      "name": "Karagümrük",
-     "elo": 1502.2,
+     "elo": 1501.7,
      "level": 2
     },
     {
      "name": "Boluspor",
-     "elo": 1473.7,
+     "elo": 1472.3,
      "level": 2
     }
    ]
   },
   "NOR": {
-   "fetchedAt": "2026-10-12T19:35:03.850Z",
+   "fetchedAt": "2026-10-20T15:15:58.542Z",
    "clubs": [
     {
      "name": "Bodø/Glimt",
-     "elo": 1780.2,
+     "elo": 1789.1,
      "level": 1
     },
     {
      "name": "Viking",
-     "elo": 1699.8,
+     "elo": 1709.7,
      "level": 1
     },
     {
      "name": "Brann",
-     "elo": 1582.7,
-     "level": 1
-    },
-    {
-     "name": "Tromsø",
-     "elo": 1570.2,
+     "elo": 1577.1,
      "level": 1
     },
     {
      "name": "Rosenborg",
-     "elo": 1565.3,
+     "elo": 1576.7,
+     "level": 1
+    },
+    {
+     "name": "Tromsø",
+     "elo": 1569.5,
      "level": 1
     },
     {
      "name": "Molde",
-     "elo": 1557.6,
+     "elo": 1565.3,
      "level": 1
     },
     {
      "name": "Lillestrøm",
-     "elo": 1515,
+     "elo": 1531.9,
      "level": 1
     },
     {
      "name": "Fredrikstad",
-     "elo": 1500.6,
+     "elo": 1501,
      "level": 1
     },
     {
      "name": "Sarpsborg",
-     "elo": 1497.2,
+     "elo": 1490.4,
      "level": 1
     },
     {
      "name": "Sandefjord",
-     "elo": 1490.7,
+     "elo": 1484,
      "level": 1
     },
     {
      "name": "Valerenga",
-     "elo": 1470.3,
+     "elo": 1478.4,
      "level": 1
     },
     {
      "name": "Kfum",
-     "elo": 1456.8,
+     "elo": 1468.3,
      "level": 1
     },
     {
      "name": "Ham-Kam",
-     "elo": 1455.5,
+     "elo": 1455.4,
      "level": 1
     },
     {
+     "name": "Stromsgodset",
+     "elo": 1433.2,
+     "level": 2
+    },
+    {
      "name": "Kristiansund",
-     "elo": 1417.6,
+     "elo": 1407.5,
+     "level": 1
+    },
+    {
+     "name": "Aalesund",
+     "elo": 1405.6,
      "level": 1
     },
     {
      "name": "Kongsvinger",
-     "elo": 1415.6,
+     "elo": 1405.3,
      "level": 2
-    },
-    {
-     "name": "Stromsgodset",
-     "elo": 1409.4,
-     "level": 2
-    },
-    {
-     "name": "Aalesund",
-     "elo": 1388.9,
-     "level": 1
     },
     {
      "name": "Start",
-     "elo": 1375,
+     "elo": 1372.6,
      "level": 1
     },
     {
      "name": "Bryne",
-     "elo": 1359.3,
+     "elo": 1361.9,
      "level": 2
     },
     {
      "name": "Haugesund",
-     "elo": 1352.7,
+     "elo": 1345.1,
      "level": 2
     }
    ]
   },
   "GER": {
-   "fetchedAt": "2026-10-12T19:35:03.934Z",
+   "fetchedAt": "2026-10-20T15:15:57.353Z",
    "clubs": [
     {
      "name": "Bayern München",
-     "elo": 2048.8,
+     "elo": 2041.6,
      "level": 1
     },
     {
      "name": "Dortmund",
-     "elo": 1895.4,
+     "elo": 1886.3,
      "level": 1
     },
     {
      "name": "Leverkusen",
-     "elo": 1875.4,
+     "elo": 1885.6,
      "level": 1
     },
     {
      "name": "RB Leipzig",
-     "elo": 1825.5,
+     "elo": 1824.9,
      "level": 1
     },
     {
      "name": "Stuttgart",
-     "elo": 1823.8,
+     "elo": 1820.9,
      "level": 1
     },
     {
      "name": "Freiburg",
-     "elo": 1792.4,
+     "elo": 1790.3,
      "level": 1
     },
     {
      "name": "Mainz",
-     "elo": 1738,
+     "elo": 1743.1,
      "level": 1
     },
     {
      "name": "Frankfurt",
-     "elo": 1732,
+     "elo": 1735.7,
      "level": 1
     },
     {
      "name": "Augsburg",
-     "elo": 1722.6,
+     "elo": 1724.4,
      "level": 1
     },
     {
      "name": "Hoffenheim",
-     "elo": 1720.7,
+     "elo": 1718.1,
      "level": 1
     },
     {
      "name": "Werder",
-     "elo": 1694.2,
-     "level": 1
-    },
-    {
-     "name": "Union Berlin",
-     "elo": 1681.8,
+     "elo": 1691.9,
      "level": 1
     },
     {
      "name": "Hamburg",
-     "elo": 1679.9,
+     "elo": 1688.1,
+     "level": 1
+    },
+    {
+     "name": "Union Berlin",
+     "elo": 1685.1,
      "level": 1
     },
     {
      "name": "Wolfsburg",
-     "elo": 1677,
+     "elo": 1683.1,
      "level": 2
     },
     {
      "name": "Elversberg",
-     "elo": 1669.1,
+     "elo": 1676,
      "level": 1
     },
     {
      "name": "Gladbach",
-     "elo": 1666.6,
-     "level": 1
-    },
-    {
-     "name": "Köln",
-     "elo": 1659,
+     "elo": 1660.9,
      "level": 1
     },
     {
      "name": "Paderborn",
-     "elo": 1658.2,
+     "elo": 1660.5,
      "level": 1
     },
     {
      "name": "Hertha",
-     "elo": 1657.9,
+     "elo": 1657.4,
      "level": 2
     },
     {
+     "name": "Köln",
+     "elo": 1655,
+     "level": 1
+    },
+    {
      "name": "Schalke",
-     "elo": 1645.6,
+     "elo": 1640.6,
      "level": 1
     },
     {
      "name": "Heidenheim",
-     "elo": 1638.9,
+     "elo": 1633.3,
      "level": 2
     },
     {
      "name": "Hannover",
-     "elo": 1619.8,
+     "elo": 1619.1,
      "level": 2
     },
     {
      "name": "St Pauli",
-     "elo": 1617.1,
+     "elo": 1618.9,
      "level": 2
     },
     {
      "name": "Nürnberg",
-     "elo": 1616.7,
+     "elo": 1617.4,
      "level": 2
     },
     {
      "name": "Lautern",
-     "elo": 1609.2,
+     "elo": 1616,
      "level": 2
     }
    ]
   },
   "SVK": {
-   "fetchedAt": "2026-10-12T19:35:04.172Z",
+   "fetchedAt": "2026-10-20T15:15:58.288Z",
    "clubs": [
     {
      "name": "Slovan",
-     "elo": 1550.6,
+     "elo": 1553,
      "level": 1
     },
     {
      "name": "FC DAC 1904",
-     "elo": 1529.5,
+     "elo": 1531.7,
      "level": 1
     },
     {
      "name": "Trnava",
-     "elo": 1483.3,
+     "elo": 1472.4,
      "level": 1
     },
     {
      "name": "Žilina",
-     "elo": 1460,
+     "elo": 1452.7,
      "level": 1
     },
     {
      "name": "FK Železiarne Podbrezová",
-     "elo": 1374.3,
+     "elo": 1365.2,
      "level": 1
     },
     {
      "name": "FC Košice",
-     "elo": 1358.2,
+     "elo": 1356.5,
      "level": 1
     },
     {
      "name": "MFK Zemplín Michalovce",
-     "elo": 1332.1,
+     "elo": 1329.4,
      "level": 1
     },
     {
      "name": "Ruzomberok",
-     "elo": 1305.3,
-     "level": 1
-    },
-    {
-     "name": "MFK Skalica",
-     "elo": 1301,
+     "elo": 1309.7,
      "level": 1
     },
     {
      "name": "AS Trenčín",
-     "elo": 1290.6,
+     "elo": 1298.8,
      "level": 1
     },
     {
-     "name": "KFC Komárno",
-     "elo": 1281.7,
+     "name": "MFK Skalica",
+     "elo": 1288.8,
      "level": 1
     },
     {
      "name": "Banska Bystrica",
-     "elo": 1266,
+     "elo": 1274.1,
+     "level": 1
+    },
+    {
+     "name": "KFC Komárno",
+     "elo": 1272.2,
      "level": 1
     }
    ]
   },
   "UKR": {
-   "fetchedAt": "2026-10-12T19:35:04.352Z",
+   "fetchedAt": "2026-10-20T15:15:58.870Z",
    "clubs": [
     {
      "name": "Shakhtar",
-     "elo": 1692,
+     "elo": 1701.5,
      "level": 1
     },
     {
      "name": "Dynamo Kyiv",
-     "elo": 1583.5,
+     "elo": 1574.1,
      "level": 1
     },
     {
      "name": "Polissya Zhytomyr",
-     "elo": 1545.2,
-     "level": 1
-    },
-    {
-     "name": "Karpaty",
-     "elo": 1495.4,
+     "elo": 1554.6,
      "level": 1
     },
     {
      "name": "Cherkasy",
-     "elo": 1495,
+     "elo": 1504.2,
      "level": 1
     },
     {
-     "name": "Bukovyna",
-     "elo": 1474.8,
-     "level": 1
-    },
-    {
-     "name": "Kryvbas",
-     "elo": 1462.7,
-     "level": 1
-    },
-    {
-     "name": "Metalist 1925",
-     "elo": 1459,
+     "name": "Karpaty",
+     "elo": 1492.8,
      "level": 1
     },
     {
      "name": "Zorya",
-     "elo": 1457.7,
+     "elo": 1466.2,
+     "level": 1
+    },
+    {
+     "name": "Metalist 1925",
+     "elo": 1462.8,
+     "level": 1
+    },
+    {
+     "name": "Kryvbas",
+     "elo": 1455.2,
      "level": 1
     },
     {
      "name": "Kolos",
-     "elo": 1441.3,
+     "elo": 1441.5,
+     "level": 1
+    },
+    {
+     "name": "Bukovyna",
+     "elo": 1392.2,
      "level": 1
     },
     {
      "name": "Epitsentr",
-     "elo": 1365.1,
+     "elo": 1370.7,
      "level": 1
     },
     {
      "name": "Veres",
-     "elo": 1362.9,
-     "level": 1
-    },
-    {
-     "name": "Livyi Bereh",
-     "elo": 1324.3,
-     "level": 1
-    },
-    {
-     "name": "Chernomorets",
-     "elo": 1313.1,
+     "elo": 1355.4,
      "level": 1
     },
     {
      "name": "Obolon",
-     "elo": 1310.2,
+     "elo": 1321.4,
+     "level": 1
+    },
+    {
+     "name": "Chernomorets",
+     "elo": 1309.1,
+     "level": 1
+    },
+    {
+     "name": "Livyi Bereh",
+     "elo": 1308.4,
      "level": 1
     },
     {
      "name": "FC Kudrivka",
-     "elo": 1272.9,
+     "elo": 1299.9,
      "level": 1
     }
    ]
   },
   "GRE": {
-   "fetchedAt": "2026-10-12T19:35:04.537Z",
+   "fetchedAt": "2026-10-20T15:15:58.102Z",
    "clubs": [
     {
      "name": "Olympiakos",
-     "elo": 1724.1,
+     "elo": 1735.9,
      "level": 1
     },
     {
      "name": "AEK",
-     "elo": 1707.7,
+     "elo": 1701.5,
      "level": 1
     },
     {
      "name": "PAOK",
-     "elo": 1669.8,
+     "elo": 1659.8,
      "level": 1
     },
     {
      "name": "Panathinaikos",
-     "elo": 1647.6,
-     "level": 1
-    },
-    {
-     "name": "Iraklis",
-     "elo": 1570.4,
-     "level": 1
-    },
-    {
-     "name": "Aris",
-     "elo": 1527.9,
-     "level": 1
-    },
-    {
-     "name": "OFI",
-     "elo": 1483.6,
+     "elo": 1654.3,
      "level": 1
     },
     {
      "name": "PS Kalamata",
-     "elo": 1476,
+     "elo": 1591.1,
+     "level": 1
+    },
+    {
+     "name": "Iraklis",
+     "elo": 1561.5,
+     "level": 1
+    },
+    {
+     "name": "Aris",
+     "elo": 1534.3,
+     "level": 1
+    },
+    {
+     "name": "OFI",
+     "elo": 1479.3,
      "level": 1
     },
     {
      "name": "Levadeiakos",
-     "elo": 1452.3,
+     "elo": 1449.6,
      "level": 1
     },
     {
      "name": "Atromitos",
-     "elo": 1434.4,
-     "level": 1
-    },
-    {
-     "name": "Asteras Tripolis",
-     "elo": 1409,
+     "elo": 1436.4,
      "level": 1
     },
     {
      "name": "Panetolikos",
-     "elo": 1406.9,
+     "elo": 1406.2,
+     "level": 1
+    },
+    {
+     "name": "Asteras Tripolis",
+     "elo": 1404.8,
      "level": 1
     },
     {
      "name": "AE Kifisias",
-     "elo": 1396.1,
+     "elo": 1390.1,
      "level": 1
     },
     {
      "name": "GS Kallithea",
-     "elo": 1376.3,
+     "elo": 1382.6,
      "level": 2
     },
     {
      "name": "NFC Volos",
-     "elo": 1369.1,
+     "elo": 1374.8,
      "level": 1
     },
     {
      "name": "AE Lárissa",
-     "elo": 1361.3,
+     "elo": 1358,
      "level": 2
     },
     {
      "name": "Panserraikos",
-     "elo": 1329.6,
+     "elo": 1331.7,
      "level": 2
     }
    ]
   },
   "AZE": {
-   "fetchedAt": "2026-10-12T04:04:36.350Z",
+   "fetchedAt": "2026-10-20T15:15:57.225Z",
    "clubs": [
     {
      "name": "Karabakh Agdam",
-     "elo": 1600.9,
+     "elo": 1600.7,
      "level": 1
     },
     {
      "name": "Sabah FK",
-     "elo": 1561.8,
-     "level": 1
-    },
-    {
-     "name": "Zira",
-     "elo": 1460.8,
+     "elo": 1575,
      "level": 1
     },
     {
      "name": "Neftçi PFK",
-     "elo": 1458.3,
+     "elo": 1463,
+     "level": 1
+    },
+    {
+     "name": "Zira",
+     "elo": 1458.4,
      "level": 1
     },
     {
      "name": "Turan Tovuz",
-     "elo": 1447.4,
+     "elo": 1437.8,
      "level": 1
     },
     {
      "name": "Keshla",
-     "elo": 1323.5,
+     "elo": 1327.9,
      "level": 1
     },
     {
      "name": "Araz-Naxçıvan PFK",
-     "elo": 1316.9,
+     "elo": 1312.8,
      "level": 1
     },
     {
      "name": "Imisli FK",
-     "elo": 1292.9,
+     "elo": 1302.7,
      "level": 1
     },
     {
      "name": "Sumqayit",
-     "elo": 1286.9,
+     "elo": 1294.4,
      "level": 1
     },
     {
      "name": "Kapaz PFK",
-     "elo": 1257.5,
+     "elo": 1262.6,
      "level": 1
     },
     {
      "name": "FK Gabala",
-     "elo": 1212.5,
+     "elo": 1209.5,
      "level": 1
     },
     {
      "name": "Shafa",
-     "elo": 1131.4,
+     "elo": 1102.9,
      "level": 1
     }
    ]
   },
   "CZE": {
-   "fetchedAt": "2026-10-12T04:04:36.469Z",
+   "fetchedAt": "2026-10-20T15:15:57.757Z",
    "clubs": [
     {
      "name": "Slavia Praha",
-     "elo": 1763.9,
+     "elo": 1744.3,
      "level": 1
     },
     {
      "name": "Sparta Praha",
-     "elo": 1653.3,
+     "elo": 1646.4,
      "level": 1
     },
     {
      "name": "Viktoria Plzeň",
-     "elo": 1633.7,
-     "level": 1
-    },
-    {
-     "name": "Slovan Liberec",
-     "elo": 1551.4,
-     "level": 1
-    },
-    {
-     "name": "Jablonec",
-     "elo": 1548.6,
+     "elo": 1630.7,
      "level": 1
     },
     {
      "name": "Hradec Kralove",
-     "elo": 1539.3,
+     "elo": 1540.3,
+     "level": 1
+    },
+    {
+     "name": "Jablonec",
+     "elo": 1537.9,
+     "level": 1
+    },
+    {
+     "name": "Slovan Liberec",
+     "elo": 1525.8,
      "level": 1
     },
     {
      "name": "Sigma Olomouc",
-     "elo": 1510.6,
-     "level": 1
-    },
-    {
-     "name": "Teplice",
-     "elo": 1500.5,
+     "elo": 1513.5,
      "level": 1
     },
     {
      "name": "Mlada Boleslav",
-     "elo": 1492.6,
+     "elo": 1493.7,
      "level": 1
     },
     {
-     "name": "Bohemians",
-     "elo": 1467.3,
+     "name": "Teplice",
+     "elo": 1490.3,
      "level": 1
     },
     {
      "name": "Banik Ostrava",
-     "elo": 1467.2,
+     "elo": 1465.9,
+     "level": 1
+    },
+    {
+     "name": "Bohemians",
+     "elo": 1463.6,
      "level": 1
     },
     {
      "name": "Zbrojovka Brno",
-     "elo": 1453.9,
-     "level": 1
-    },
-    {
-     "name": "Pardubice",
-     "elo": 1439.2,
+     "elo": 1460.5,
      "level": 1
     },
     {
      "name": "Karvina",
-     "elo": 1437.4,
+     "elo": 1441.7,
      "level": 2
     },
     {
+     "name": "Pardubice",
+     "elo": 1439.4,
+     "level": 1
+    },
+    {
      "name": "Slovacko",
-     "elo": 1403,
+     "elo": 1407.9,
      "level": 1
     },
     {
      "name": "Zlín",
-     "elo": 1376.9,
+     "elo": 1365.4,
      "level": 1
     },
     {
      "name": "Dukla",
-     "elo": 1367.4,
+     "elo": 1355.4,
      "level": 2
     },
     {
      "name": "FK MAS Táborsko",
-     "elo": 1301.6,
+     "elo": 1299.6,
      "level": 2
     },
     {
      "name": "Artis Brno",
-     "elo": 1292.1,
+     "elo": 1292.2,
      "level": 2
     },
     {
      "name": "Dynamo České Budějovice",
-     "elo": 1234.9,
+     "elo": 1232.3,
      "level": 2
     }
    ]
   },
   "BEL": {
-   "fetchedAt": "2026-10-12T04:04:36.590Z",
+   "fetchedAt": "2026-10-20T15:15:58.799Z",
    "clubs": [
     {
-     "name": "St Gillis",
-     "elo": 1813.1,
+     "name": "Brugge",
+     "elo": 1823.7,
      "level": 1
     },
     {
-     "name": "Brugge",
-     "elo": 1812.3,
+     "name": "St Gillis",
+     "elo": 1806.6,
      "level": 1
     },
     {
      "name": "Genk",
-     "elo": 1678,
+     "elo": 1680.1,
      "level": 1
     },
     {
      "name": "Anderlecht",
-     "elo": 1666,
+     "elo": 1655.8,
      "level": 1
     },
     {
      "name": "Gent",
-     "elo": 1637.9,
+     "elo": 1643.4,
      "level": 1
     },
     {
      "name": "Charleroi",
-     "elo": 1626.6,
+     "elo": 1634.8,
      "level": 1
     },
     {
      "name": "St Truiden",
-     "elo": 1611.8,
-     "level": 1
-    },
-    {
-     "name": "Waasland-Beveren",
-     "elo": 1586.1,
-     "level": 1
-    },
-    {
-     "name": "Standard",
-     "elo": 1583,
-     "level": 1
-    },
-    {
-     "name": "Antwerp",
-     "elo": 1580.7,
+     "elo": 1615.6,
      "level": 1
     },
     {
      "name": "Westerlo",
-     "elo": 1575.4,
+     "elo": 1589.1,
+     "level": 1
+    },
+    {
+     "name": "Waasland-Beveren",
+     "elo": 1585.3,
+     "level": 1
+    },
+    {
+     "name": "Standard",
+     "elo": 1584.7,
+     "level": 1
+    },
+    {
+     "name": "Antwerp",
+     "elo": 1574.2,
      "level": 1
     },
     {
      "name": "Zulte Waregem",
-     "elo": 1556.9,
+     "elo": 1558.6,
      "level": 1
     },
     {
      "name": "Mechelen",
-     "elo": 1546.2,
+     "elo": 1554.8,
      "level": 1
     },
     {
      "name": "Cercle Brugge",
-     "elo": 1537.8,
-     "level": 1
-    },
-    {
-     "name": "Lommel",
-     "elo": 1518.4,
+     "elo": 1539.7,
      "level": 1
     },
     {
      "name": "Leuven",
-     "elo": 1509.3,
+     "elo": 1519.1,
+     "level": 1
+    },
+    {
+     "name": "Lommel",
+     "elo": 1509.1,
+     "level": 1
+    },
+    {
+     "name": "La Louviére",
+     "elo": 1483.3,
      "level": 1
     },
     {
      "name": "Dender",
-     "elo": 1480.4,
+     "elo": 1476.8,
      "level": 2
-    },
-    {
-     "name": "La Louviére",
-     "elo": 1474.2,
-     "level": 1
-    },
-    {
-     "name": "Kortrijk",
-     "elo": 1437.7,
-     "level": 1
     },
     {
      "name": "K Beerschot VA",
-     "elo": 1435.2,
+     "elo": 1447.7,
      "level": 2
     },
     {
+     "name": "Kortrijk",
+     "elo": 1438.9,
+     "level": 1
+    },
+    {
      "name": "Patro Eisden MM",
-     "elo": 1354.5,
+     "elo": 1349.6,
      "level": 2
     },
     {
      "name": "RFC Liège",
-     "elo": 1338,
+     "elo": 1325.2,
      "level": 2
     }
    ]
   },
   "NED": {
-   "fetchedAt": "2026-10-12T04:04:36.742Z",
+   "fetchedAt": "2026-10-20T15:15:58.720Z",
    "clubs": [
     {
      "name": "PSV",
-     "elo": 1786.7,
+     "elo": 1772.3,
      "level": 1
     },
     {
      "name": "Feyenoord",
-     "elo": 1724.3,
+     "elo": 1733.3,
      "level": 1
     },
     {
      "name": "AZ",
-     "elo": 1686,
+     "elo": 1685.7,
      "level": 1
     },
     {
      "name": "Ajax",
-     "elo": 1684.2,
+     "elo": 1685.5,
      "level": 1
     },
     {
      "name": "Twente",
-     "elo": 1664.1,
-     "level": 1
-    },
-    {
-     "name": "Nijmegen",
-     "elo": 1588.9,
+     "elo": 1659.6,
      "level": 1
     },
     {
      "name": "Utrecht",
-     "elo": 1574.9,
+     "elo": 1585.9,
+     "level": 1
+    },
+    {
+     "name": "Nijmegen",
+     "elo": 1585.3,
      "level": 1
     },
     {
      "name": "Heerenveen",
-     "elo": 1549.9,
+     "elo": 1557.6,
      "level": 1
     },
     {
      "name": "Go Ahead Eagles",
-     "elo": 1549.8,
+     "elo": 1540.4,
      "level": 1
     },
     {
      "name": "Groningen",
-     "elo": 1526.6,
-     "level": 1
-    },
-    {
-     "name": "Excelsior",
-     "elo": 1506.8,
+     "elo": 1532.3,
      "level": 1
     },
     {
      "name": "Sparta",
-     "elo": 1497.5,
+     "elo": 1500.9,
      "level": 1
     },
     {
      "name": "Sittard",
-     "elo": 1491.2,
+     "elo": 1495,
+     "level": 1
+    },
+    {
+     "name": "Excelsior",
+     "elo": 1486,
      "level": 1
     },
     {
      "name": "Zwolle",
-     "elo": 1465.5,
+     "elo": 1469.4,
      "level": 1
     },
     {
      "name": "Heracles",
-     "elo": 1449,
+     "elo": 1454.9,
      "level": 2
     },
     {
-     "name": "Telstar",
-     "elo": 1448.1,
+     "name": "Den Haag",
+     "elo": 1450.5,
      "level": 1
     },
     {
-     "name": "Den Haag",
-     "elo": 1435.1,
+     "name": "Telstar",
+     "elo": 1445.5,
+     "level": 1
+    },
+    {
+     "name": "Cambuur",
+     "elo": 1421.1,
      "level": 1
     },
     {
      "name": "Volendam",
-     "elo": 1412.8,
+     "elo": 1413.7,
      "level": 2
-    },
-    {
-     "name": "Cambuur",
-     "elo": 1407.6,
-     "level": 1
-    },
-    {
-     "name": "Willem II",
-     "elo": 1405.2,
-     "level": 1
     },
     {
      "name": "Breda",
-     "elo": 1398.2,
+     "elo": 1403.8,
      "level": 2
     },
     {
+     "name": "Willem II",
+     "elo": 1398.9,
+     "level": 1
+    },
+    {
      "name": "Almere",
-     "elo": 1394.7,
+     "elo": 1389.6,
      "level": 2
     },
     {
      "name": "Waalwijk",
-     "elo": 1383.2,
-     "level": 2
-    },
-    {
-     "name": "De Graafschap",
-     "elo": 1344.7,
+     "elo": 1384.5,
      "level": 2
     },
     {
      "name": "Vitesse",
-     "elo": 1344.4,
+     "elo": 1350.2,
+     "level": 2
+    },
+    {
+     "name": "Roda",
+     "elo": 1340.1,
      "level": 2
     }
    ]
   },
   "AUT": {
-   "fetchedAt": "2026-10-12T04:04:36.885Z",
+   "fetchedAt": "2026-10-20T15:15:58.952Z",
    "clubs": [
     {
      "name": "RB Salzburg",
-     "elo": 1654.8,
-     "level": 1
-    },
-    {
-     "name": "LASK",
-     "elo": 1637.5,
+     "elo": 1648.7,
      "level": 1
     },
     {
      "name": "Sturm Graz",
-     "elo": 1637.1,
+     "elo": 1636.5,
+     "level": 1
+    },
+    {
+     "name": "LASK",
+     "elo": 1625.8,
      "level": 1
     },
     {
      "name": "Rapid Wien",
-     "elo": 1571.3,
+     "elo": 1581.7,
      "level": 1
     },
     {
      "name": "Austria Wien",
-     "elo": 1540.3,
+     "elo": 1530.3,
      "level": 1
     },
     {
      "name": "Hartberg",
-     "elo": 1528.8,
-     "level": 1
-    },
-    {
-     "name": "Wolfsberg",
-     "elo": 1495.7,
+     "elo": 1522.5,
      "level": 1
     },
     {
      "name": "Ried",
-     "elo": 1490.2,
+     "elo": 1492.4,
+     "level": 1
+    },
+    {
+     "name": "Wolfsberg",
+     "elo": 1471.4,
      "level": 1
     },
     {
      "name": "GAK",
-     "elo": 1463.9,
-     "level": 1
-    },
-    {
-     "name": "Altach",
-     "elo": 1445.5,
+     "elo": 1453.8,
      "level": 1
     },
     {
      "name": "Wattens",
-     "elo": 1441.9,
+     "elo": 1448.4,
+     "level": 1
+    },
+    {
+     "name": "Altach",
+     "elo": 1447.6,
      "level": 1
     },
     {
      "name": "Lustenau",
-     "elo": 1414.8,
+     "elo": 1395.7,
      "level": 1
     }
    ]

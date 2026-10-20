@@ -1,1069 +1,7 @@
 {
- "updatedAt": "2026-10-18T04:57:20.876Z",
+ "updatedAt": "2026-10-20T15:15:40.156Z",
  "source": "FotMob matchDetails infoBox.Referee (+ UEFA match.uefa.com for CL/EL/ECL)",
  "matches": [
-  {
-   "league": "GR",
-   "date": "2026-10-18",
-   "home": "Kalamata",
-   "away": "OFI Crete",
-   "kickoffUtc": "2026-10-18T13:00Z",
-   "fotmobMatchId": 5943268,
-   "referee": "Eleftherios Katopis"
-  },
-  {
-   "league": "GR",
-   "date": "2026-10-18",
-   "home": "Panathinaikos",
-   "away": "Asteras Tripolis",
-   "kickoffUtc": "2026-10-18T14:30Z",
-   "fotmobMatchId": 5943271,
-   "referee": "Angelos Evangelou"
-  },
-  {
-   "league": "GR",
-   "date": "2026-10-18",
-   "home": "Kifisia",
-   "away": "Aris",
-   "kickoffUtc": "2026-10-18T17:00Z",
-   "fotmobMatchId": 5943269,
-   "referee": "Fotios Ntaoulas"
-  },
-  {
-   "league": "GR",
-   "date": "2026-10-18",
-   "home": "PAOK",
-   "away": "Iraklis",
-   "kickoffUtc": "2026-10-18T18:00Z",
-   "fotmobMatchId": 5943273,
-   "referee": "Vasilis Fotias"
-  },
-  {
-   "league": "BR",
-   "date": "2026-10-18",
-   "home": "Remo",
-   "away": "Bragantino",
-   "kickoffUtc": "2026-10-18T22:30Z",
-   "fotmobMatchId": 5103673,
-   "referee": "Alex Gomes Stefano"
-  },
-  {
-   "league": "BR",
-   "date": "2026-10-18",
-   "home": "Sao Paulo",
-   "away": "Vasco",
-   "kickoffUtc": "2026-10-18T00:00Z",
-   "fotmobMatchId": 5103666,
-   "referee": "Fernando Antonio Mendes de Salles Nascimento Fill"
-  },
-  {
-   "league": "BR",
-   "date": "2026-10-18",
-   "home": "Gremio",
-   "away": "Cruzeiro",
-   "kickoffUtc": "2026-10-18T19:00Z",
-   "fotmobMatchId": 5103670,
-   "referee": "João Vitor Gobi"
-  },
-  {
-   "league": "BR",
-   "date": "2026-10-18",
-   "home": "Bahia",
-   "away": "Flamengo RJ",
-   "kickoffUtc": "2026-10-18T21:30Z",
-   "fotmobMatchId": 5103672,
-   "referee": "Wilton Pereira Sampaio"
-  },
-  {
-   "league": "NO",
-   "date": "2026-10-18",
-   "home": "Tromso",
-   "away": "KFUM Oslo",
-   "kickoffUtc": "2026-10-18T17:15Z",
-   "fotmobMatchId": 5105031,
-   "referee": "Sigurd Smehus Kringstad"
-  },
-  {
-   "league": "NO",
-   "date": "2026-10-18",
-   "home": "Valerenga",
-   "away": "Brann",
-   "kickoffUtc": "2026-10-18T15:00Z",
-   "fotmobMatchId": 5105027,
-   "referee": "Rohit Saggi"
-  },
-  {
-   "league": "NO",
-   "date": "2026-10-18",
-   "home": "Molde",
-   "away": "Start",
-   "kickoffUtc": "2026-10-18T15:00Z",
-   "fotmobMatchId": 5105029,
-   "referee": "Stian Røvig Sletner"
-  },
-  {
-   "league": "NO",
-   "date": "2026-10-18",
-   "home": "Sarpsborg 08",
-   "away": "Rosenborg",
-   "kickoffUtc": "2026-10-18T12:30Z",
-   "fotmobMatchId": 5105032,
-   "referee": "Espen Eskås"
-  },
-  {
-   "league": "JP1",
-   "date": "2026-10-18",
-   "home": "Machida",
-   "away": "Avispa Fukuoka",
-   "kickoffUtc": "2026-10-18T07:00Z",
-   "fotmobMatchId": 5803612,
-   "referee": null
-  },
-  {
-   "league": "MLS",
-   "date": "2026-10-18",
-   "home": "Portland Timbers",
-   "away": "Colorado Rapids",
-   "kickoffUtc": "2026-10-18T02:30Z",
-   "fotmobMatchId": 5071437,
-   "referee": "Elijio Arreguin"
-  },
-  {
-   "league": "JP1",
-   "date": "2026-10-18",
-   "home": "Okayama",
-   "away": "Vissel Kobe",
-   "kickoffUtc": "2026-10-18T04:55Z",
-   "fotmobMatchId": 5803614,
-   "referee": "Hayato Shimizu"
-  },
-  {
-   "league": "MLS",
-   "date": "2026-10-18",
-   "home": "Austin FC",
-   "away": "Vancouver Whitecaps",
-   "kickoffUtc": "2026-10-18T00:30Z",
-   "fotmobMatchId": 5071433,
-   "referee": "Tori Penso"
-  },
-  {
-   "league": "MLS",
-   "date": "2026-10-18",
-   "home": "Houston Dynamo",
-   "away": "FC Dallas",
-   "kickoffUtc": "2026-10-18T00:30Z",
-   "fotmobMatchId": 5071434,
-   "referee": "Víctor Manuel Rivas"
-  },
-  {
-   "league": "MLS",
-   "date": "2026-10-18",
-   "home": "Los Angeles Galaxy",
-   "away": "San Diego FC",
-   "kickoffUtc": "2026-10-18T02:30Z",
-   "fotmobMatchId": 5071436,
-   "referee": "Rubiel Vazquez"
-  },
-  {
-   "league": "MLS",
-   "date": "2026-10-18",
-   "home": "Sporting Kansas City",
-   "away": "Real Salt Lake",
-   "kickoffUtc": "2026-10-18T00:30Z",
-   "fotmobMatchId": 5071435,
-   "referee": "Alexis Da Silva"
-  },
-  {
-   "league": "BR2",
-   "date": "2026-10-18",
-   "home": "Vila Nova",
-   "away": "Novorizontino",
-   "kickoffUtc": "2026-10-18T21:00Z",
-   "fotmobMatchId": 5190778,
-   "referee": "Felipe Fernandes de Lima"
-  },
-  {
-   "league": "MLS",
-   "date": "2026-10-18",
-   "home": "San Jose Earthquakes",
-   "away": "Nashville SC",
-   "kickoffUtc": "2026-10-18T02:30Z",
-   "fotmobMatchId": 5071438,
-   "referee": "Joe Dickerson"
-  },
-  {
-   "league": "MLS",
-   "date": "2026-10-18",
-   "home": "Seattle Sounders",
-   "away": "CF Montreal",
-   "kickoffUtc": "2026-10-18T02:30Z",
-   "fotmobMatchId": 5071439,
-   "referee": "Fotis Bazakos"
-  },
-  {
-   "league": "AR",
-   "date": "2026-10-18",
-   "home": "Racing Club",
-   "away": "Independiente",
-   "kickoffUtc": "2026-10-18T17:45Z",
-   "fotmobMatchId": 1000019574,
-   "referee": "Facundo Tello"
-  },
-  {
-   "league": "MLS",
-   "date": "2026-10-18",
-   "home": "FC Cincinnati",
-   "away": "Columbus Crew",
-   "kickoffUtc": "2026-10-18T21:00Z",
-   "fotmobMatchId": 5071440,
-   "referee": "Drew Fischer"
-  },
-  {
-   "league": "BR2",
-   "date": "2026-10-18",
-   "home": "São Bernardo",
-   "away": "Criciúma",
-   "kickoffUtc": "2026-10-18T19:00Z",
-   "fotmobMatchId": 5190770,
-   "referee": "Bruno Pereira Vasconcelos"
-  },
-  {
-   "league": "BR2",
-   "date": "2026-10-18",
-   "home": "Avaí",
-   "away": "Athletic",
-   "kickoffUtc": "2026-10-18T19:00Z",
-   "fotmobMatchId": 5190775,
-   "referee": "Rodrigo José Pereira de Lima"
-  },
-  {
-   "league": "BR2",
-   "date": "2026-10-18",
-   "home": "CRB",
-   "away": "Botafogo-SP",
-   "kickoffUtc": "2026-10-18T19:00Z",
-   "fotmobMatchId": 5190777,
-   "referee": "Anderson Daronco"
-  },
-  {
-   "league": "LL2",
-   "date": "2026-10-18",
-   "home": "Valladolid",
-   "away": "Eldense",
-   "kickoffUtc": "2026-10-18T16:30Z",
-   "fotmobMatchId": 5868502,
-   "referee": "José Antonio Sánchez Villalobos"
-  },
-  {
-   "league": "BL2",
-   "date": "2026-10-18",
-   "home": "Karlsruhe",
-   "away": "Darmstadt",
-   "kickoffUtc": "2026-10-18T11:30Z",
-   "fotmobMatchId": 5881696,
-   "referee": "Marc Philip Eckermann"
-  },
-  {
-   "league": "BL2",
-   "date": "2026-10-18",
-   "home": "Dresden",
-   "away": "Magdeburg",
-   "kickoffUtc": "2026-10-18T11:30Z",
-   "fotmobMatchId": 5881697,
-   "referee": "Robin Braun"
-  },
-  {
-   "league": "BL2",
-   "date": "2026-10-18",
-   "home": "Bielefeld",
-   "away": "Osnabruck",
-   "kickoffUtc": "2026-10-18T11:30Z",
-   "fotmobMatchId": 5881690,
-   "referee": "Michael Bacher"
-  },
-  {
-   "league": "SB",
-   "date": "2026-10-18",
-   "home": "Sampdoria",
-   "away": "Arezzo",
-   "kickoffUtc": "2026-10-18T17:30Z",
-   "fotmobMatchId": 5967107,
-   "referee": "Andrea Colombo"
-  },
-  {
-   "league": "LL2",
-   "date": "2026-10-18",
-   "home": "Burgos",
-   "away": "Sabadell",
-   "kickoffUtc": "2026-10-18T19:00Z",
-   "fotmobMatchId": 5868492,
-   "referee": "Manuel Ángel Pérez Hernández"
-  },
-  {
-   "league": "MX",
-   "date": "2026-10-18",
-   "home": "Club Leon",
-   "away": "Club America",
-   "kickoffUtc": "2026-10-18T01:00Z",
-   "fotmobMatchId": 1000014603,
-   "referee": "Ismael Rosario López Peñuelas"
-  },
-  {
-   "league": "MX",
-   "date": "2026-10-18",
-   "home": "Cruz Azul",
-   "away": "Juarez",
-   "kickoffUtc": "2026-10-18T03:00Z",
-   "fotmobMatchId": 1000014605,
-   "referee": "Salvador Pérez Villalobos"
-  },
-  {
-   "league": "LL2",
-   "date": "2026-10-18",
-   "home": "Granada",
-   "away": "Cadiz",
-   "kickoffUtc": "2026-10-18T14:15Z",
-   "fotmobMatchId": 5868497,
-   "referee": "Rafael Sánchez López"
-  },
-  {
-   "league": "LL2",
-   "date": "2026-10-18",
-   "home": "Ceuta",
-   "away": "Oviedo",
-   "kickoffUtc": "2026-10-18T12:00Z",
-   "fotmobMatchId": 5868494,
-   "referee": "José Luis Guzmán Mansilla"
-  },
-  {
-   "league": "LL2",
-   "date": "2026-10-18",
-   "home": "Girona",
-   "away": "Andorra",
-   "kickoffUtc": "2026-10-18T16:30Z",
-   "fotmobMatchId": 5868496,
-   "referee": "Dámaso Arcediano Monescillo"
-  },
-  {
-   "league": "COL",
-   "date": "2026-10-18",
-   "home": "Independiente Medellín",
-   "away": "Once Caldas",
-   "kickoffUtc": "2026-10-18T01:10Z",
-   "fotmobMatchId": 1000014188,
-   "referee": "Steven Camargo"
-  },
-  {
-   "league": "AS",
-   "date": "2026-10-18",
-   "home": "Malmo FF",
-   "away": "Hacken",
-   "kickoffUtc": "2026-10-18T14:30Z",
-   "fotmobMatchId": 5107623,
-   "referee": "Glenn Nyberg"
-  },
-  {
-   "league": "COL",
-   "date": "2026-10-18",
-   "home": "Águilas Doradas",
-   "away": "Deportes Tolima",
-   "kickoffUtc": "2026-10-18T19:00Z",
-   "fotmobMatchId": 1000014187,
-   "referee": "Diego Ulloa"
-  },
-  {
-   "league": "COL",
-   "date": "2026-10-18",
-   "home": "Atlético Bucaramanga",
-   "away": "América de Cali",
-   "kickoffUtc": "2026-10-18T21:00Z",
-   "fotmobMatchId": 1000014191,
-   "referee": "Bismarks Elias Santiago Pitalua"
-  },
-  {
-   "league": "COL",
-   "date": "2026-10-18",
-   "home": "Llaneros FC",
-   "away": "Independiente Santa Fe",
-   "kickoffUtc": "2026-10-18T23:05Z",
-   "fotmobMatchId": 1000014192,
-   "referee": "Jhon Ospina"
-  },
-  {
-   "league": "AS",
-   "date": "2026-10-18",
-   "home": "Orgryte",
-   "away": "GAIS",
-   "kickoffUtc": "2026-10-18T14:30Z",
-   "fotmobMatchId": 5107622,
-   "referee": "Oscar Johnson"
-  },
-  {
-   "league": "AS",
-   "date": "2026-10-18",
-   "home": "Vasteras SK",
-   "away": "Mjallby",
-   "kickoffUtc": "2026-10-18T12:00Z",
-   "fotmobMatchId": 5107627,
-   "referee": "Fredrik Klitte"
-  },
-  {
-   "league": "AS",
-   "date": "2026-10-18",
-   "home": "Sirius",
-   "away": "Elfsborg",
-   "kickoffUtc": "2026-10-18T12:00Z",
-   "fotmobMatchId": 5107626,
-   "referee": "Adi Aganovic"
-  },
-  {
-   "league": "AS",
-   "date": "2026-10-18",
-   "home": "Halmstad",
-   "away": "Hammarby",
-   "kickoffUtc": "2026-10-18T14:30Z",
-   "fotmobMatchId": 5107628,
-   "referee": "Joakim Sars"
-  },
-  {
-   "league": "MX",
-   "date": "2026-10-18",
-   "home": "Toluca",
-   "away": "Atl. San Luis",
-   "kickoffUtc": "2026-10-18T01:00Z",
-   "fotmobMatchId": 1000014604,
-   "referee": "Marco Antonio Ortíz Nava"
-  },
-  {
-   "league": "SB",
-   "date": "2026-10-18",
-   "home": "Cesena",
-   "away": "Avellino",
-   "kickoffUtc": "2026-10-18T15:15Z",
-   "fotmobMatchId": 5967102,
-   "referee": "Daniele Perenzoni"
-  },
-  {
-   "league": "SB",
-   "date": "2026-10-18",
-   "home": "Juve Stabia",
-   "away": "Sudtirol",
-   "kickoffUtc": "2026-10-18T13:00Z",
-   "fotmobMatchId": 5967103,
-   "referee": "Antonio Rapuano"
-  },
-  {
-   "league": "BR",
-   "date": "2026-10-18",
-   "home": "Fluminense",
-   "away": "Santos",
-   "kickoffUtc": "2026-10-18T19:00Z",
-   "fotmobMatchId": 5103664,
-   "referee": "Ramon Abatti Abel"
-  },
-  {
-   "league": "LL",
-   "date": "2026-10-18",
-   "home": "Celta",
-   "away": "Alaves",
-   "kickoffUtc": "2026-10-18T14:15:00Z",
-   "fotmobMatchId": 5868092,
-   "referee": "José Luis Munuera Montero"
-  },
-  {
-   "league": "LL",
-   "date": "2026-10-18",
-   "home": "Osasuna",
-   "away": "Santander",
-   "kickoffUtc": "2026-10-18T12:00:00Z",
-   "fotmobMatchId": 5868097,
-   "referee": "Juan Martínez Munuera"
-  },
-  {
-   "league": "LL",
-   "date": "2026-10-18",
-   "home": "Malaga",
-   "away": "Sociedad",
-   "kickoffUtc": "2026-10-18T16:30:00Z",
-   "fotmobMatchId": 5868096,
-   "referee": "Luis Bestard Servera"
-  },
-  {
-   "league": "LL",
-   "date": "2026-10-18",
-   "home": "Real Madrid",
-   "away": "Sevilla",
-   "kickoffUtc": "2026-10-18T19:00:00Z",
-   "fotmobMatchId": 5868098,
-   "referee": "Mateo Busquets Ferrer"
-  },
-  {
-   "league": "PL",
-   "date": "2026-10-18",
-   "home": "Bournemouth",
-   "away": "Sunderland",
-   "kickoffUtc": "2026-10-18T13:00Z",
-   "fotmobMatchId": 5795475,
-   "referee": "Craig Pawson"
-  },
-  {
-   "league": "PL",
-   "date": "2026-10-18",
-   "home": "Nott'm Forest",
-   "away": "Arsenal",
-   "kickoffUtc": "2026-10-18T15:30Z",
-   "fotmobMatchId": 5795483,
-   "referee": "Michael Oliver"
-  },
-  {
-   "league": "PL",
-   "date": "2026-10-18",
-   "home": "Leeds",
-   "away": "Man United",
-   "kickoffUtc": "2026-10-18T13:00Z",
-   "fotmobMatchId": 5795480,
-   "referee": "Darren England"
-  },
-  {
-   "league": "PL",
-   "date": "2026-10-18",
-   "home": "Brighton",
-   "away": "Crystal Palace",
-   "kickoffUtc": "2026-10-18T13:00Z",
-   "fotmobMatchId": 5795477,
-   "referee": "Robert Jones"
-  },
-  {
-   "league": "L1",
-   "date": "2026-10-18",
-   "home": "Angers",
-   "away": "Marseille",
-   "kickoffUtc": "2026-10-18T13:00:00Z",
-   "fotmobMatchId": 5802955,
-   "referee": "Jérémie Pignard"
-  },
-  {
-   "league": "L1",
-   "date": "2026-10-18",
-   "home": "Le Havre",
-   "away": "Auxerre",
-   "kickoffUtc": "2026-10-18T15:15:00Z",
-   "fotmobMatchId": 5802956,
-   "referee": "Eric Wattellier"
-  },
-  {
-   "league": "L1",
-   "date": "2026-10-18",
-   "home": "Lorient",
-   "away": "Monaco",
-   "kickoffUtc": "2026-10-18T15:15:00Z",
-   "fotmobMatchId": 5802959,
-   "referee": "Marc Bollengier"
-  },
-  {
-   "league": "L1",
-   "date": "2026-10-18",
-   "home": "Paris FC",
-   "away": "Rennes",
-   "kickoffUtc": "2026-10-18T15:15:00Z",
-   "fotmobMatchId": 5802961,
-   "referee": "Bastien Dechepy"
-  },
-  {
-   "league": "L1",
-   "date": "2026-10-18",
-   "home": "Lyon",
-   "away": "Nice",
-   "kickoffUtc": "2026-10-18T18:45:00Z",
-   "fotmobMatchId": 5802960,
-   "referee": "François Letexier"
-  },
-  {
-   "league": "SA",
-   "date": "2026-10-18",
-   "home": "Udinese",
-   "away": "Lecce",
-   "kickoffUtc": "2026-10-18T10:30:00Z",
-   "fotmobMatchId": 5749708,
-   "referee": "Marco Guida"
-  },
-  {
-   "league": "SA",
-   "date": "2026-10-18",
-   "home": "Fiorentina",
-   "away": "Como",
-   "kickoffUtc": "2026-10-18T13:00:00Z",
-   "fotmobMatchId": 5749703,
-   "referee": "Marco Di Bello"
-  },
-  {
-   "league": "SA",
-   "date": "2026-10-18",
-   "home": "Juventus",
-   "away": "Lazio",
-   "kickoffUtc": "2026-10-18T18:45:00Z",
-   "fotmobMatchId": 5749705,
-   "referee": "Davide Massa"
-  },
-  {
-   "league": "SA",
-   "date": "2026-10-18",
-   "home": "Milan",
-   "away": "Atalanta",
-   "kickoffUtc": "2026-10-18T16:00:00Z",
-   "fotmobMatchId": 5749700,
-   "referee": "Daniele Chiffi"
-  },
-  {
-   "league": "BL",
-   "date": "2026-10-18",
-   "home": "Leverkusen",
-   "away": "Freiburg",
-   "kickoffUtc": "2026-10-18T13:30:00Z",
-   "fotmobMatchId": 5881188,
-   "referee": "Florian Badstübner"
-  },
-  {
-   "league": "ED",
-   "date": "2026-10-18",
-   "home": "Zwolle",
-   "away": "Go Ahead Eagles",
-   "kickoffUtc": "2026-10-18T10:15:00Z",
-   "fotmobMatchId": 5781775,
-   "referee": "Danny Makkelie"
-  },
-  {
-   "league": "ED",
-   "date": "2026-10-18",
-   "home": "Cambuur",
-   "away": "AZ Alkmaar",
-   "kickoffUtc": "2026-10-18T12:30:00Z",
-   "fotmobMatchId": 5781771,
-   "referee": "Stan Teuben"
-  },
-  {
-   "league": "ED",
-   "date": "2026-10-18",
-   "home": "Groningen",
-   "away": "Ajax",
-   "kickoffUtc": "2026-10-18T14:45:00Z",
-   "fotmobMatchId": 5781772,
-   "referee": "Dennis Higler"
-  },
-  {
-   "league": "ED",
-   "date": "2026-10-18",
-   "home": "Twente",
-   "away": "Utrecht",
-   "kickoffUtc": "2026-10-18T18:00:00Z",
-   "fotmobMatchId": 5781773,
-   "referee": "Allard Lindhout"
-  },
-  {
-   "league": "NO2",
-   "date": "2026-10-18",
-   "home": "Åsane",
-   "away": "Stabæk",
-   "kickoffUtc": "2026-10-18T15:00:00Z",
-   "fotmobMatchId": 5105297,
-   "referee": "Ali Al Hatam"
-  },
-  {
-   "league": "NO2",
-   "date": "2026-10-18",
-   "home": "Kongsvinger",
-   "away": "Sandnes Ulf",
-   "kickoffUtc": "2026-10-18T15:00:00Z",
-   "fotmobMatchId": 5105292,
-   "referee": "Henrikke Holm Nervik"
-  },
-  {
-   "league": "NO2",
-   "date": "2026-10-18",
-   "home": "Hødd",
-   "away": "Raufoss",
-   "kickoffUtc": "2026-10-18T15:00:00Z",
-   "fotmobMatchId": 5105291,
-   "referee": "Ole-Alexander Valen"
-  },
-  {
-   "league": "NO2",
-   "date": "2026-10-18",
-   "home": "Egersund",
-   "away": "Sogndal",
-   "kickoffUtc": "2026-10-18T12:30:00Z",
-   "fotmobMatchId": 5105290,
-   "referee": "Magnus Koløy"
-  },
-  {
-   "league": "NO2",
-   "date": "2026-10-18",
-   "home": "Lyn",
-   "away": "Moss",
-   "kickoffUtc": "2026-10-18T15:00:00Z",
-   "fotmobMatchId": 5105293,
-   "referee": "Javi Jean-Marc Conny Leo Mertens"
-  },
-  {
-   "league": "NO2",
-   "date": "2026-10-18",
-   "home": "Ranheim",
-   "away": "Bryne",
-   "kickoffUtc": "2026-10-18T15:00:00Z",
-   "fotmobMatchId": 5105295,
-   "referee": "Eirik Wisted-Thu"
-  },
-  {
-   "league": "NO2",
-   "date": "2026-10-18",
-   "home": "Strømsgodset",
-   "away": "Haugesund",
-   "kickoffUtc": "2026-10-18T12:30:00Z",
-   "fotmobMatchId": 5105296,
-   "referee": "Steinar Hauge"
-  },
-  {
-   "league": "HR",
-   "date": "2026-10-18",
-   "home": "Slaven Belupo Koprivnica",
-   "away": "Dinamo Zagreb",
-   "kickoffUtc": "2026-10-18T16:00:00Z",
-   "fotmobMatchId": 5765943,
-   "referee": "Duje Strukan"
-  },
-  {
-   "league": "HR",
-   "date": "2026-10-18",
-   "home": "Hajduk Split",
-   "away": "Varaždin",
-   "kickoffUtc": "2026-10-18T13:00:00Z",
-   "fotmobMatchId": 5765939,
-   "referee": "Dario Bel"
-  },
-  {
-   "league": "CZ",
-   "date": "2026-10-18",
-   "home": "Baník Ostrava",
-   "away": "Sparta Prague",
-   "kickoffUtc": "2026-10-18T13:00:00Z",
-   "fotmobMatchId": 5831193,
-   "referee": "Dalibor Černý"
-  },
-  {
-   "league": "CZ",
-   "date": "2026-10-18",
-   "home": "Jablonec",
-   "away": "Viktoria Plzeň",
-   "kickoffUtc": "2026-10-18T16:00:00Z",
-   "fotmobMatchId": 5831190,
-   "referee": "Jan Machálek"
-  },
-  {
-   "league": "CZ",
-   "date": "2026-10-18",
-   "home": "Slovácko",
-   "away": "Zbrojovka Brno",
-   "kickoffUtc": "2026-10-18T11:00:00Z",
-   "fotmobMatchId": 5831196,
-   "referee": "Vojtěch Opočenský"
-  },
-  {
-   "league": "SE2",
-   "date": "2026-10-18",
-   "home": "Nordic United FC",
-   "away": "Norrby",
-   "kickoffUtc": "2026-10-18T11:00:00.000Z",
-   "fotmobMatchId": 5125655,
-   "referee": null
-  },
-  {
-   "league": "SE2",
-   "date": "2026-10-18",
-   "home": "GIF Sundsvall",
-   "away": "IFK Värnamo",
-   "kickoffUtc": "2026-10-18T13:00:00.000Z",
-   "fotmobMatchId": 5125659,
-   "referee": null
-  },
-  {
-   "league": "EK",
-   "date": "2026-10-18",
-   "home": "Lech Poznan",
-   "away": "Korona Kielce",
-   "kickoffUtc": "2026-10-18T15:30:00Z",
-   "fotmobMatchId": 5804007,
-   "referee": "Łukasz Kuźma"
-  },
-  {
-   "league": "EK",
-   "date": "2026-10-18",
-   "home": "Gornik Zabrze",
-   "away": "Piast Gliwice",
-   "kickoffUtc": "2026-10-18T10:15:00Z",
-   "fotmobMatchId": 5804006,
-   "referee": "Patryk Gryckiewicz"
-  },
-  {
-   "league": "AR",
-   "date": "2026-10-18",
-   "home": "Estudiantes Rio Cuarto",
-   "away": "Aldosivi",
-   "kickoffUtc": "2026-10-18T21:00Z",
-   "fotmobMatchId": 1000019583,
-   "referee": "Andrés Carlos Gariano"
-  },
-  {
-   "league": "AR",
-   "date": "2026-10-18",
-   "home": "Belgrano",
-   "away": "River Plate",
-   "kickoffUtc": "2026-10-18T23:15Z",
-   "fotmobMatchId": 1000019582,
-   "referee": "Pablo Dóvalo"
-  },
-  {
-   "league": "SAU",
-   "date": "2026-10-18",
-   "home": "Al Fateh",
-   "away": "Al Khaleej",
-   "kickoffUtc": "2026-10-18T18:00Z",
-   "fotmobMatchId": 5970165,
-   "referee": null
-  },
-  {
-   "league": "SC",
-   "date": "2026-10-18",
-   "home": "Celtic",
-   "away": "Hearts",
-   "kickoffUtc": "2026-10-18T14:00Z",
-   "fotmobMatchId": 5793947,
-   "referee": "David Dickinson"
-  },
-  {
-   "league": "KR",
-   "date": "2026-10-18",
-   "home": "Daejeon Hana Citizen",
-   "away": "Gwangju FC",
-   "kickoffUtc": "2026-10-18T05:00:00Z",
-   "fotmobMatchId": 5140050,
-   "referee": null
-  },
-  {
-   "league": "KR",
-   "date": "2026-10-18",
-   "home": "Pohang Steelers",
-   "away": "FC Anyang",
-   "kickoffUtc": "2026-10-18T07:30:00Z",
-   "fotmobMatchId": 5140053,
-   "referee": null
-  },
-  {
-   "league": "KR",
-   "date": "2026-10-18",
-   "home": "FC Seoul",
-   "away": "Gimcheon Sangmu",
-   "kickoffUtc": "2026-10-18T07:30:00Z",
-   "fotmobMatchId": 5140048,
-   "referee": null
-  },
-  {
-   "league": "KR",
-   "date": "2026-10-18",
-   "home": "Jeonbuk Hyundai Motors FC",
-   "away": "Jeju SK",
-   "kickoffUtc": "2026-10-18T05:00:00Z",
-   "fotmobMatchId": 5140051,
-   "referee": "Song Min-Seok"
-  },
-  {
-   "league": "KR",
-   "date": "2026-10-18",
-   "home": "Gangwon FC",
-   "away": "Incheon United",
-   "kickoffUtc": "2026-10-18T07:30:00Z",
-   "fotmobMatchId": 5140052,
-   "referee": null
-  },
-  {
-   "league": "AUS",
-   "date": "2026-10-18",
-   "home": "Wellington Phoenix FC",
-   "away": "Melbourne Victory",
-   "kickoffUtc": "2026-10-18T02:00Z",
-   "fotmobMatchId": 1000017561,
-   "referee": "Lachlan Keevers"
-  },
-  {
-   "league": "AR",
-   "date": "2026-10-19",
-   "home": "Newells Old Boys",
-   "away": "Central Cordoba",
-   "kickoffUtc": "2026-10-19T22:00Z",
-   "fotmobMatchId": 1000019579,
-   "referee": "Hernán Mastrángelo"
-  },
-  {
-   "league": "BR2",
-   "date": "2026-10-19",
-   "home": "Goiás",
-   "away": "Náutico",
-   "kickoffUtc": "2026-10-19T22:30Z",
-   "fotmobMatchId": 5190774,
-   "referee": "Yuri Elino Ferreira da Cruz"
-  },
-  {
-   "league": "BR",
-   "date": "2026-10-19",
-   "home": "Corinthians",
-   "away": "Vitoria",
-   "kickoffUtc": "2026-10-19T23:00Z",
-   "fotmobMatchId": 5103667,
-   "referee": "Sávio Pereira Sampaio"
-  },
-  {
-   "league": "MX",
-   "date": "2026-10-19",
-   "home": "Monterrey",
-   "away": "Pachuca",
-   "kickoffUtc": "2026-10-19T01:00Z",
-   "fotmobMatchId": 1000014606,
-   "referee": null
-  },
-  {
-   "league": "AR",
-   "date": "2026-10-19",
-   "home": "Sarmiento Junin",
-   "away": "Barracas Central",
-   "kickoffUtc": "2026-10-19T22:00Z",
-   "fotmobMatchId": 1000019584,
-   "referee": "Daniel Alberto Zamora"
-  },
-  {
-   "league": "AS",
-   "date": "2026-10-19",
-   "home": "Degerfors",
-   "away": "Kalmar",
-   "kickoffUtc": "2026-10-19T17:00Z",
-   "fotmobMatchId": 5107625,
-   "referee": null
-  },
-  {
-   "league": "DK",
-   "date": "2026-10-19",
-   "home": "Viborg",
-   "away": "Midtjylland",
-   "kickoffUtc": "2026-10-19T17:00Z",
-   "fotmobMatchId": 5739528,
-   "referee": "Sandi Putros"
-  },
-  {
-   "league": "SAU",
-   "date": "2026-10-19",
-   "home": "Al Fayha",
-   "away": "Al Ahli",
-   "kickoffUtc": "2026-10-19T15:05Z",
-   "fotmobMatchId": 5970166,
-   "referee": null
-  },
-  {
-   "league": "SAU",
-   "date": "2026-10-19",
-   "home": "Abha",
-   "away": "Al Kholood",
-   "kickoffUtc": "2026-10-19T15:20Z",
-   "fotmobMatchId": 5970162,
-   "referee": null
-  },
-  {
-   "league": "SAU",
-   "date": "2026-10-19",
-   "home": "Al Shabab",
-   "away": "Al Faisaly",
-   "kickoffUtc": "2026-10-19T18:00Z",
-   "fotmobMatchId": 5970169,
-   "referee": null
-  },
-  {
-   "league": "COL",
-   "date": "2026-10-19",
-   "home": "Deportivo Cali",
-   "away": "Atlético Junior",
-   "kickoffUtc": "2026-10-19T01:10Z",
-   "fotmobMatchId": 1000014194,
-   "referee": "Wilmar Alexander Roldán Pérez"
-  },
-  {
-   "league": "SAU",
-   "date": "2026-10-19",
-   "home": "Al Hilal",
-   "away": "Al Hazem",
-   "kickoffUtc": "2026-10-19T18:00Z",
-   "fotmobMatchId": 5970167,
-   "referee": null
-  },
-  {
-   "league": "PT",
-   "date": "2026-10-19",
-   "home": "Sp Braga",
-   "away": "Gil Vicente",
-   "kickoffUtc": "2026-10-19T19:15Z",
-   "fotmobMatchId": 5887594,
-   "referee": null
-  },
-  {
-   "league": "PL",
-   "date": "2026-10-19",
-   "home": "Tottenham",
-   "away": "Coventry",
-   "kickoffUtc": "2026-10-19T19:00Z",
-   "fotmobMatchId": 5795484,
-   "referee": "Andy Madley"
-  },
-  {
-   "league": "SA",
-   "date": "2026-10-19",
-   "home": "Parma",
-   "away": "Torino",
-   "kickoffUtc": "2026-10-19T18:45:00Z",
-   "fotmobMatchId": 5749707,
-   "referee": "Giovanni Ayroldi"
-  },
-  {
-   "league": "SA",
-   "date": "2026-10-19",
-   "home": "Monza",
-   "away": "Cagliari",
-   "kickoffUtc": "2026-10-19T16:30:00Z",
-   "fotmobMatchId": 5749706,
-   "referee": "Andrea Calzavara"
-  },
-  {
-   "league": "LL",
-   "date": "2026-10-19",
-   "home": "Getafe",
-   "away": "Vallecano",
-   "kickoffUtc": "2026-10-19T19:00:00Z",
-   "fotmobMatchId": 5868095,
-   "referee": null
-  },
-  {
-   "league": "SE2",
-   "date": "2026-10-19",
-   "home": "Varbergs BoIS FC",
-   "away": "Helsingborg",
-   "kickoffUtc": "2026-10-19T17:05:00Z",
-   "fotmobMatchId": 5125660,
-   "referee": null
-  },
-  {
-   "league": "COL",
-   "date": "2026-10-19",
-   "home": "Millonarios",
-   "away": "Jaguares de Córdoba",
-   "kickoffUtc": "2026-10-19T23:30Z",
-   "fotmobMatchId": 1000014190,
-   "referee": null
-  },
   {
    "league": "EL1",
    "date": "2026-10-20",
@@ -1089,7 +27,7 @@
    "away": "Al Qadsiah",
    "kickoffUtc": "2026-10-20T15:10Z",
    "fotmobMatchId": 5970170,
-   "referee": null
+   "referee": "Mohammed Al Ismail"
   },
   {
    "league": "EL1",
@@ -1125,7 +63,7 @@
    "away": "Neom SC",
    "kickoffUtc": "2026-10-20T18:00Z",
    "fotmobMatchId": 5970168,
-   "referee": null
+   "referee": "Faisal Al-Balawi"
   },
   {
    "league": "SAU",
@@ -1134,7 +72,7 @@
    "away": "Al Ittihad",
    "kickoffUtc": "2026-10-20T18:00Z",
    "fotmobMatchId": 5970164,
-   "referee": null
+   "referee": "Mohammed Al Hoaish"
   },
   {
    "league": "COL",
@@ -1159,7 +97,7 @@
    "date": "2026-10-20",
    "home": "Internacional de Bogotá",
    "away": "Fortaleza CEIF",
-   "kickoffUtc": "2026-10-20T23:00Z",
+   "kickoffUtc": "2026-10-20T23:15Z",
    "fotmobMatchId": 1000014195,
    "referee": "Carlos Márquez"
   },
@@ -1224,7 +162,7 @@
    "away": "Al Riyadh",
    "kickoffUtc": "2026-10-20T15:00Z",
    "fotmobMatchId": 5970163,
-   "referee": null
+   "referee": "Abdullah Al-Harbi"
   },
   {
    "league": "EL1",
@@ -1240,7 +178,7 @@
    "date": "2026-10-20",
    "home": "Wolves",
    "away": "Portsmouth",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-20T18:45Z",
    "fotmobMatchId": 5836821,
    "referee": "Edward Duckworth"
   },
@@ -1249,7 +187,7 @@
    "date": "2026-10-20",
    "home": "IFK Norrköping",
    "away": "Örebro",
-   "kickoffUtc": "2026-10-20T17:00:00Z",
+   "kickoffUtc": "2026-10-20T17:00:00.000Z",
    "fotmobMatchId": 5125656,
    "referee": null
   },
@@ -1258,72 +196,81 @@
    "date": "2026-10-20",
    "home": "Fenerbahce",
    "away": "Slavia Prague",
-   "kickoffUtc": "2026-10-20T16:45Z",
+   "kickoffUtc": "2026-10-20T16:45:00Z",
    "fotmobMatchId": 6106333,
-   "referee": null
+   "referee": "Ricardo de Burgos Bengoetxea"
   },
   {
    "league": "CL",
    "date": "2026-10-20",
    "home": "Sabah FK",
    "away": "Borussia Dortmund",
-   "kickoffUtc": "2026-10-20T16:45Z",
+   "kickoffUtc": "2026-10-20T16:45:00Z",
    "fotmobMatchId": 6106422,
-   "referee": null
+   "referee": "Javier Alberola Rojas"
   },
   {
    "league": "CL",
    "date": "2026-10-20",
    "home": "AS Roma",
    "away": "Slovan Bratislava",
-   "kickoffUtc": "2026-10-20T19:00Z",
+   "kickoffUtc": "2026-10-20T19:00:00Z",
    "fotmobMatchId": 6106277,
-   "referee": null
+   "referee": "Sandro Schärer"
   },
   {
    "league": "CL",
    "date": "2026-10-20",
    "home": "Liverpool",
    "away": "Villarreal",
-   "kickoffUtc": "2026-10-20T19:00Z",
+   "kickoffUtc": "2026-10-20T19:00:00Z",
    "fotmobMatchId": 6106248,
-   "referee": null
+   "referee": "Szymon Marciniak"
   },
   {
    "league": "CL",
    "date": "2026-10-20",
    "home": "Manchester City",
    "away": "AEK Athens",
-   "kickoffUtc": "2026-10-20T19:00Z",
+   "kickoffUtc": "2026-10-20T19:00:00Z",
    "fotmobMatchId": 6106257,
-   "referee": null
+   "referee": "Willy Delajod"
   },
   {
    "league": "CL",
    "date": "2026-10-20",
    "home": "FC Porto",
    "away": "PSV Eindhoven",
-   "kickoffUtc": "2026-10-20T19:00Z",
+   "kickoffUtc": "2026-10-20T19:00:00Z",
    "fotmobMatchId": 6106287,
-   "referee": null
+   "referee": "Daniel Siebert"
   },
   {
    "league": "CL",
    "date": "2026-10-20",
    "home": "VfB Stuttgart",
    "away": "Atlético Madrid",
-   "kickoffUtc": "2026-10-20T19:00Z",
+   "kickoffUtc": "2026-10-20T19:00:00Z",
    "fotmobMatchId": 6106397,
-   "referee": null
+   "referee": "Serdar Gözübüyük"
   },
   {
    "league": "CL",
    "date": "2026-10-20",
    "home": "Paris Saint-Germain",
    "away": "Barcelona",
-   "kickoffUtc": "2026-10-20T19:00Z",
+   "kickoffUtc": "2026-10-20T19:00:00Z",
    "fotmobMatchId": 6106234,
-   "referee": null
+   "referee": "Michael Oliver"
+  },
+  {
+   "league": "CL",
+   "date": "2026-10-20",
+   "home": "Napoli",
+   "away": "Bodo/Glimt",
+   "kickoffUtc": "2026-10-20T19:00:00Z",
+   "referee": "José María Sánchez",
+   "refereeSource": "UEFA"
   },
   {
    "league": "MX",
@@ -1366,7 +313,7 @@
    "date": "2026-10-21",
    "home": "Tigres UANL",
    "away": "Club Leon",
-   "kickoffUtc": "2026-10-21T03:00Z",
+   "kickoffUtc": "2026-10-21T03:10Z",
    "fotmobMatchId": 1000014609,
    "referee": null
   },
@@ -1474,7 +421,7 @@
    "date": "2026-10-21",
    "home": "Levante",
    "away": "Ath Bilbao",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-21T18:00:00Z",
    "fotmobMatchId": 5868067,
    "referee": "Alejandro Quintero González"
   },
@@ -1485,97 +432,97 @@
    "away": "Raufoss",
    "kickoffUtc": "2026-10-21T17:00:00Z",
    "fotmobMatchId": 5105271,
-   "referee": null
+   "referee": "Abdulhadi Al-Fahad"
   },
   {
    "league": "CL",
    "date": "2026-10-21",
    "home": "Como",
    "away": "Manchester United",
-   "kickoffUtc": "2026-10-21T16:45Z",
+   "kickoffUtc": "2026-10-21T16:45:00Z",
    "fotmobMatchId": 6106410,
-   "referee": null
+   "referee": "Sven Jablonski"
   },
   {
    "league": "CL",
    "date": "2026-10-21",
    "home": "Club Brugge",
    "away": "Lens",
-   "kickoffUtc": "2026-10-21T19:00Z",
+   "kickoffUtc": "2026-10-21T19:00:00Z",
    "fotmobMatchId": 6106297,
-   "referee": null
+   "referee": "Luís Godinho"
   },
   {
    "league": "CL",
    "date": "2026-10-21",
    "home": "Lille",
    "away": "Galatasaray",
-   "kickoffUtc": "2026-10-21T16:45Z",
+   "kickoffUtc": "2026-10-21T16:45:00Z",
    "fotmobMatchId": 6106312,
-   "referee": null
+   "referee": "Rade Obrenović"
   },
   {
    "league": "CL",
    "date": "2026-10-21",
    "home": "Aston Villa",
    "away": "Viking FK",
-   "kickoffUtc": "2026-10-21T19:00Z",
+   "kickoffUtc": "2026-10-21T19:00:00Z",
    "fotmobMatchId": 6106285,
-   "referee": null
+   "referee": "Sebastian Gishamer"
   },
   {
    "league": "CL",
    "date": "2026-10-21",
    "home": "Real Betis",
    "away": "Feyenoord Rotterdam",
-   "kickoffUtc": "2026-10-21T19:00Z",
+   "kickoffUtc": "2026-10-21T19:00:00Z",
    "fotmobMatchId": 6106300,
-   "referee": null
+   "referee": "Simone Sozza"
   },
   {
    "league": "CL",
    "date": "2026-10-21",
    "home": "Sporting CP",
    "away": "LASK Linz",
-   "kickoffUtc": "2026-10-21T19:00Z",
+   "kickoffUtc": "2026-10-21T19:00:00Z",
    "fotmobMatchId": 6106281,
-   "referee": null
+   "referee": "Nick Walsh"
   },
   {
    "league": "CL",
    "date": "2026-10-21",
    "home": "Real Madrid",
    "away": "RB Leipzig",
-   "kickoffUtc": "2026-10-21T19:00Z",
+   "kickoffUtc": "2026-10-21T19:00:00Z",
    "fotmobMatchId": 6106244,
-   "referee": null
+   "referee": "István Kovács"
   },
   {
    "league": "SUD",
    "date": "2026-10-21",
    "home": "Vasco da Gama",
    "away": "Boca Juniors",
-   "kickoffUtc": "2026-10-21T00:30:00.000Z",
+   "kickoffUtc": "2026-10-21T00:30:00Z",
    "fotmobMatchId": 1000021776,
-   "referee": null
+   "referee": "Jesús Valenzuela"
   },
   {
    "league": "SUD",
    "date": "2026-10-21",
    "home": "Montevideo City Torque",
    "away": "Atlético-MG",
-   "kickoffUtc": "2026-10-21T22:00Z",
+   "kickoffUtc": "2026-10-21T22:00:00Z",
    "fotmobMatchId": 1000021778,
-   "referee": null
+   "referee": "Cristián Garay"
   },
   {
    "league": "CL",
    "date": "2026-10-21",
    "home": "Aston Villa",
    "away": "VIKING FK",
-   "kickoffUtc": "2026-10-21T19:00Z",
+   "kickoffUtc": "2026-10-21T19:00:00Z",
    "fotmobMatchId": 6106285,
-   "referee": null
+   "referee": "Sebastian Gishamer"
   },
   {
    "league": "COL",
@@ -1585,6 +532,24 @@
    "kickoffUtc": "2026-10-21T01:30Z",
    "fotmobMatchId": 1000014172,
    "referee": null
+  },
+  {
+   "league": "CL",
+   "date": "2026-10-21",
+   "home": "Bayern Munich",
+   "away": "Arsenal",
+   "kickoffUtc": "2026-10-21T19:00:00Z",
+   "referee": "Davide Massa",
+   "refereeSource": "UEFA"
+  },
+  {
+   "league": "CL",
+   "date": "2026-10-21",
+   "home": "Internazionale",
+   "away": "Shakhtar Donetsk",
+   "kickoffUtc": "2026-10-21T19:00:00Z",
+   "referee": "Harm Osmers",
+   "refereeSource": "UEFA"
   },
   {
    "league": "SAU",
@@ -1636,7 +601,7 @@
    "date": "2026-10-22",
    "home": "Pachuca",
    "away": "Cruz Azul",
-   "kickoffUtc": "2026-10-22T03:00Z",
+   "kickoffUtc": "2026-10-22T03:10Z",
    "fotmobMatchId": 1000014614,
    "referee": null
   },
@@ -1654,7 +619,7 @@
    "date": "2026-10-22",
    "home": "Santos Laguna",
    "away": "UNAM Pumas",
-   "kickoffUtc": "2026-10-22T03:00Z",
+   "kickoffUtc": "2026-10-22T03:10Z",
    "fotmobMatchId": 1000014615,
    "referee": null
   },
@@ -1663,7 +628,7 @@
    "date": "2026-10-22",
    "home": "Palmeiras",
    "away": "Fluminense",
-   "kickoffUtc": "2026-10-22T00:30:00.000Z",
+   "kickoffUtc": "2026-10-22T00:30:00Z",
    "fotmobMatchId": 1000020616,
    "referee": null
   },
@@ -1672,25 +637,25 @@
    "date": "2026-10-22",
    "home": "Ararat-Armenia",
    "away": "AZ Alkmaar",
-   "kickoffUtc": "2026-10-22T16:45Z",
+   "kickoffUtc": "2026-10-22T16:45:00Z",
    "fotmobMatchId": 6112382,
-   "referee": null
+   "referee": "Patrik Kolarić"
   },
   {
    "league": "EL",
    "date": "2026-10-22",
    "home": "Ferencvaros",
    "away": "Torreense",
-   "kickoffUtc": "2026-10-22T16:45Z",
+   "kickoffUtc": "2026-10-22T16:45:00Z",
    "fotmobMatchId": 6112281,
-   "referee": null
+   "referee": "Jérôme Brisard"
   },
   {
    "league": "EL",
    "date": "2026-10-22",
    "home": "Dinamo Zagreb",
    "away": "NEC Nijmegen",
-   "kickoffUtc": "2026-10-22T16:45Z",
+   "kickoffUtc": "2026-10-22T16:45:00Z",
    "fotmobMatchId": 6112293,
    "referee": null
   },
@@ -1699,117 +664,117 @@
    "date": "2026-10-22",
    "home": "OFI Crete",
    "away": "Bayer Leverkusen",
-   "kickoffUtc": "2026-10-22T16:45Z",
+   "kickoffUtc": "2026-10-22T16:45:00Z",
    "fotmobMatchId": 6112370,
-   "referee": null
+   "referee": "Oleksii Derevinskyi"
   },
   {
    "league": "EL",
    "date": "2026-10-22",
    "home": "SK Sturm Graz",
    "away": "Marseille",
-   "kickoffUtc": "2026-10-22T16:45Z",
+   "kickoffUtc": "2026-10-22T16:45:00Z",
    "fotmobMatchId": 6112314,
-   "referee": null
+   "referee": "Nenad Minaković"
   },
   {
    "league": "EL",
    "date": "2026-10-22",
    "home": "Lech Poznan",
    "away": "Sunderland",
-   "kickoffUtc": "2026-10-22T16:45Z",
+   "kickoffUtc": "2026-10-22T16:45:00Z",
    "fotmobMatchId": 6112320,
-   "referee": null
+   "referee": "Balázs Berke"
   },
   {
    "league": "EL",
    "date": "2026-10-22",
    "home": "Celtic",
    "away": "Celta Vigo",
-   "kickoffUtc": "2026-10-22T19:00Z",
+   "kickoffUtc": "2026-10-22T19:00:00Z",
    "fotmobMatchId": 6112300,
-   "referee": null
+   "referee": "Georgi Kabakov"
   },
   {
    "league": "EL",
    "date": "2026-10-22",
    "home": "Besiktas",
    "away": "Crystal Palace",
-   "kickoffUtc": "2026-10-22T19:00Z",
+   "kickoffUtc": "2026-10-22T19:00:00Z",
    "fotmobMatchId": 6112356,
-   "referee": null
+   "referee": "Danny Makkelie"
   },
   {
    "league": "EL",
    "date": "2026-10-22",
    "home": "AFC Bournemouth",
    "away": "AC Milan",
-   "kickoffUtc": "2026-10-22T19:00Z",
+   "kickoffUtc": "2026-10-22T19:00:00Z",
    "fotmobMatchId": 6112326,
-   "referee": null
+   "referee": "Vassilis Fotias"
   },
   {
    "league": "EL",
    "date": "2026-10-22",
    "home": "Union St.-Gilloise",
    "away": "Hapoel Be'er",
-   "kickoffUtc": "2026-10-22T16:45Z",
+   "kickoffUtc": "2026-10-22T16:45:00Z",
    "fotmobMatchId": 6112289,
-   "referee": null
+   "referee": "Mykola Balakin"
   },
   {
    "league": "EL",
    "date": "2026-10-22",
    "home": "NK Celje",
    "away": "RB Salzburg",
-   "kickoffUtc": "2026-10-22T19:00Z",
+   "kickoffUtc": "2026-10-22T19:00:00Z",
    "fotmobMatchId": 6112335,
-   "referee": null
+   "referee": "John Brooks"
   },
   {
    "league": "EL",
    "date": "2026-10-22",
    "home": "Olympiacos",
    "away": "Sparta Prague",
-   "kickoffUtc": "2026-10-22T19:00Z",
+   "kickoffUtc": "2026-10-22T19:00:00Z",
    "fotmobMatchId": 6112267,
-   "referee": null
+   "referee": "Espen Eskås"
   },
   {
    "league": "EL",
    "date": "2026-10-22",
    "home": "TSG Hoffenheim",
    "away": "Lyon",
-   "kickoffUtc": "2026-10-22T19:00Z",
+   "kickoffUtc": "2026-10-22T19:00:00Z",
    "fotmobMatchId": 6112350,
-   "referee": null
+   "referee": "Umut Meler"
   },
   {
    "league": "ECL",
    "date": "2026-10-22",
    "home": "Kairat Almaty",
    "away": "Panathinaikos",
-   "kickoffUtc": "2026-10-22T14:30Z",
+   "kickoffUtc": "2026-10-22T14:30:00Z",
    "fotmobMatchId": 6112498,
-   "referee": null
+   "referee": "Allard Lindhout"
   },
   {
    "league": "EL",
    "date": "2026-10-22",
    "home": "Viktoria Plzen",
    "away": "Levski Sofia",
-   "kickoffUtc": "2026-10-22T19:00Z",
+   "kickoffUtc": "2026-10-22T19:00:00Z",
    "fotmobMatchId": 6112285,
-   "referee": null
+   "referee": "Alejandro Hernández"
   },
   {
    "league": "EL",
    "date": "2026-10-22",
    "home": "Omonia Nicosia",
    "away": "Benfica",
-   "kickoffUtc": "2026-10-22T19:00Z",
+   "kickoffUtc": "2026-10-22T19:00:00Z",
    "fotmobMatchId": 6112342,
-   "referee": null
+   "referee": "Jasper Vergoote"
   },
   {
    "league": "ECL",
@@ -1818,16 +783,16 @@
    "away": "FC Lugano",
    "kickoffUtc": "2026-10-22T16:45Z",
    "fotmobMatchId": 6112475,
-   "referee": null
+   "referee": "Atilla Karaoglan"
   },
   {
    "league": "ECL",
    "date": "2026-10-22",
    "home": "FC Nordsjælland",
    "away": "CSKA Sofia",
-   "kickoffUtc": "2026-10-22T16:45Z",
+   "kickoffUtc": "2026-10-22T16:45:00Z",
    "fotmobMatchId": 6112531,
-   "referee": null
+   "referee": "Robert Jones"
   },
   {
    "league": "ECL",
@@ -1836,16 +801,16 @@
    "away": "Mjällby AIF",
    "kickoffUtc": "2026-10-22T16:45Z",
    "fotmobMatchId": 6112552,
-   "referee": null
+   "referee": "Lothar D'hondt"
   },
   {
    "league": "ECL",
    "date": "2026-10-22",
    "home": "Pafos",
    "away": "Riga FC",
-   "kickoffUtc": "2026-10-22T16:45Z",
+   "kickoffUtc": "2026-10-22T16:45:00Z",
    "fotmobMatchId": 6112419,
-   "referee": null
+   "referee": "Marian Barbu"
   },
   {
    "league": "ECL",
@@ -1854,52 +819,52 @@
    "away": "SK Brann",
    "kickoffUtc": "2026-10-22T16:45Z",
    "fotmobMatchId": 6112545,
-   "referee": null
+   "referee": "Pavle Ilić"
   },
   {
    "league": "ECL",
    "date": "2026-10-22",
    "home": "Jablonec",
    "away": "Brighton & Hove Albion",
-   "kickoffUtc": "2026-10-22T16:45Z",
+   "kickoffUtc": "2026-10-22T16:45:00Z",
    "fotmobMatchId": 6112526,
-   "referee": null
+   "referee": "Sigurd Kringstad"
   },
   {
    "league": "ECL",
    "date": "2026-10-22",
    "home": "Trabzonspor",
    "away": "Heart of Midlothian",
-   "kickoffUtc": "2026-10-22T16:45Z",
+   "kickoffUtc": "2026-10-22T16:45:00Z",
    "fotmobMatchId": 6112502,
-   "referee": null
+   "referee": "Lawrence Visser"
   },
   {
    "league": "ECL",
    "date": "2026-10-22",
    "home": "AGF",
    "away": "Egnatia",
-   "kickoffUtc": "2026-10-22T19:00Z",
+   "kickoffUtc": "2026-10-22T19:00:00Z",
    "fotmobMatchId": 6112534,
-   "referee": null
+   "referee": "Ante Čulina"
   },
   {
    "league": "ECL",
    "date": "2026-10-22",
    "home": "Ajax Amsterdam",
    "away": "Atalanta",
-   "kickoffUtc": "2026-10-22T19:00Z",
+   "kickoffUtc": "2026-10-22T19:00:00Z",
    "fotmobMatchId": 6112393,
-   "referee": null
+   "referee": "António Nobre"
   },
   {
    "league": "ECL",
    "date": "2026-10-22",
    "home": "AS Monaco",
    "away": "SC Freiburg",
-   "kickoffUtc": "2026-10-22T19:00Z",
+   "kickoffUtc": "2026-10-22T19:00:00Z",
    "fotmobMatchId": 6112399,
-   "referee": null
+   "referee": "Sam Barrott"
   },
   {
    "league": "ECL",
@@ -1908,7 +873,7 @@
    "away": "Hajduk Split",
    "kickoffUtc": "2026-10-22T19:00Z",
    "fotmobMatchId": 6112540,
-   "referee": null
+   "referee": "Jarred Gillett"
   },
   {
    "league": "ECL",
@@ -1917,25 +882,25 @@
    "away": "KuPS Kuopio",
    "kickoffUtc": "2026-10-22T19:00Z",
    "fotmobMatchId": 6112487,
-   "referee": null
+   "referee": "Ivar Orri Kristjansson"
   },
   {
    "league": "ECL",
    "date": "2026-10-22",
    "home": "FC Midtjylland",
    "away": "Sint-Truidense",
-   "kickoffUtc": "2026-10-22T19:00Z",
+   "kickoffUtc": "2026-10-22T19:00:00Z",
    "fotmobMatchId": 6112406,
-   "referee": null
+   "referee": "Juxhin Xhaja"
   },
   {
    "league": "ECL",
    "date": "2026-10-22",
    "home": "Braga",
    "away": "KAA Gent",
-   "kickoffUtc": "2026-10-22T19:00Z",
+   "kickoffUtc": "2026-10-22T19:00:00Z",
    "fotmobMatchId": 6112390,
-   "referee": null
+   "referee": "Andris Treimanis"
   },
   {
    "league": "ECL",
@@ -1944,7 +909,7 @@
    "away": "FC Twente",
    "kickoffUtc": "2026-10-22T19:00Z",
    "fotmobMatchId": 6112484,
-   "referee": null
+   "referee": "Matteo Marcenaro"
   },
   {
    "league": "COL",
@@ -1954,6 +919,42 @@
    "kickoffUtc": "2026-10-22T01:20Z",
    "fotmobMatchId": 1000014110,
    "referee": "Ferney Ossa"
+  },
+  {
+   "league": "ECL",
+   "date": "2026-10-22",
+   "home": "Inter D'Escaldes",
+   "away": "CSU Craiova",
+   "kickoffUtc": "2026-10-22T16:45:00Z",
+   "referee": "Christos Vergetis",
+   "refereeSource": "UEFA"
+  },
+  {
+   "league": "EL",
+   "date": "2026-10-22",
+   "home": "Juventus",
+   "away": "Stade Rennais",
+   "kickoffUtc": "2026-10-22T16:45:00Z",
+   "referee": "Morten Krogh",
+   "refereeSource": "UEFA"
+  },
+  {
+   "league": "EL",
+   "date": "2026-10-22",
+   "home": "Jagiellonia Bialystok",
+   "away": "Anderlecht",
+   "kickoffUtc": "2026-10-22T19:00:00Z",
+   "referee": "Ondřej Berka",
+   "refereeSource": "UEFA"
+  },
+  {
+   "league": "EL",
+   "date": "2026-10-22",
+   "home": "Lillestrom",
+   "away": "Real Sociedad",
+   "kickoffUtc": "2026-10-22T19:00:00Z",
+   "referee": "Mohammad Al-Emara",
+   "refereeSource": "UEFA"
   },
   {
    "league": "SB",
@@ -2014,7 +1015,7 @@
    "date": "2026-10-23",
    "home": "Gimnasia L.P.",
    "away": "Sarmiento Junin",
-   "kickoffUtc": "2026-10-23T22:00Z",
+   "kickoffUtc": "2026-10-23T20:00Z",
    "fotmobMatchId": 1000019600,
    "referee": null
   },
@@ -2113,16 +1114,16 @@
    "date": "2026-10-23",
    "home": "Ipswich",
    "away": "Nott'm Forest",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-23T19:00Z",
    "fotmobMatchId": 5795491,
-   "referee": null
+   "referee": "Thomas Bramall"
   },
   {
    "league": "LIB",
    "date": "2026-10-23",
    "home": "Flamengo",
    "away": "Estudiantes de La Plata",
-   "kickoffUtc": "2026-10-23T00:30:00.000Z",
+   "kickoffUtc": "2026-10-23T00:30:00Z",
    "fotmobMatchId": 1000020614,
    "referee": null
   },
@@ -2131,16 +1132,16 @@
    "date": "2026-10-23",
    "home": "Bolton",
    "away": "Middlesbrough",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-23T19:00:00Z",
    "fotmobMatchId": 5836887,
-   "referee": null
+   "referee": "Simon Hooper"
   },
   {
    "league": "SA",
    "date": "2026-10-23",
    "home": "Torino",
    "away": "Monza",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-23T18:45:00Z",
    "fotmobMatchId": 5749718,
    "referee": null
   },
@@ -2149,7 +1150,7 @@
    "date": "2026-10-23",
    "home": "Brest",
    "away": "Nice",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-23T18:45:00Z",
    "fotmobMatchId": 5802966,
    "referee": null
   },
@@ -2158,9 +1159,9 @@
    "date": "2026-10-23",
    "home": "Go Ahead Eagles",
    "away": "Telstar",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-23T18:00:00Z",
    "fotmobMatchId": 5781781,
-   "referee": null
+   "referee": "Robin Hensgens"
   },
   {
    "league": "SE2",
@@ -2176,8 +1177,26 @@
    "date": "2026-10-23",
    "home": "Brisbane Roar",
    "away": "Perth Glory",
-   "kickoffUtc": "2026-10-23T09:00Z",
+   "kickoffUtc": "2026-10-23T09:00:00Z",
    "fotmobMatchId": 1000017563,
+   "referee": null
+  },
+  {
+   "league": "URU",
+   "date": "2026-10-23",
+   "home": "Defensor Sporting",
+   "away": "Racing (Montevideo)",
+   "kickoffUtc": "2026-10-23T23:00Z",
+   "fotmobMatchId": 6444992,
+   "referee": null
+  },
+  {
+   "league": "LL",
+   "date": "2026-10-23",
+   "home": "Alavés",
+   "away": "Málaga",
+   "kickoffUtc": "2026-10-23T19:00:00Z",
+   "fotmobMatchId": 5868101,
    "referee": null
   },
   {
@@ -2538,7 +1557,7 @@
    "away": "Kilmarnock",
    "kickoffUtc": "2026-10-24T14:00Z",
    "fotmobMatchId": 5793953,
-   "referee": null
+   "referee": "Don Robertson"
   },
   {
    "league": "AS",
@@ -2556,7 +1575,7 @@
    "away": "St Johnstone",
    "kickoffUtc": "2026-10-24T14:00Z",
    "fotmobMatchId": 5793956,
-   "referee": null
+   "referee": "Chris Graham"
   },
   {
    "league": "AS",
@@ -2853,7 +1872,7 @@
    "away": "Dundee",
    "kickoffUtc": "2026-10-24T14:00Z",
    "fotmobMatchId": 5793957,
-   "referee": null
+   "referee": "Steven McLean"
   },
   {
    "league": "EL1",
@@ -2880,131 +1899,131 @@
    "away": "Aberdeen",
    "kickoffUtc": "2026-10-24T14:00Z",
    "fotmobMatchId": 5793952,
-   "referee": null
+   "referee": "David Dickinson"
   },
   {
    "league": "PL",
    "date": "2026-10-24",
    "home": "Aston Villa",
    "away": "Man City",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-24T11:30Z",
    "fotmobMatchId": 5795486,
-   "referee": null
+   "referee": "Peter Bankes"
   },
   {
    "league": "PL",
    "date": "2026-10-24",
    "home": "Arsenal",
    "away": "Everton",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-24T14:00Z",
    "fotmobMatchId": 5795485,
-   "referee": null
+   "referee": "Tony Harrington"
   },
   {
    "league": "PL",
    "date": "2026-10-24",
    "home": "Chelsea",
    "away": "Tottenham",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-24T16:30Z",
    "fotmobMatchId": 5795487,
-   "referee": null
+   "referee": "Chris Kavanagh"
   },
   {
    "league": "PL",
    "date": "2026-10-24",
    "home": "Coventry",
    "away": "Fulham",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-24T14:00Z",
    "fotmobMatchId": 5795488,
-   "referee": null
+   "referee": "Adam Herczeg"
   },
   {
    "league": "CH",
    "date": "2026-10-24",
    "home": "Portsmouth",
    "away": "Millwall",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-24T11:30:00Z",
    "fotmobMatchId": 5836891,
-   "referee": null
+   "referee": "Tom Reeves"
   },
   {
    "league": "CH",
    "date": "2026-10-24",
    "home": "Charlton",
    "away": "Norwich",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-24T11:30:00Z",
    "fotmobMatchId": 5836889,
-   "referee": null
+   "referee": "John Busby"
   },
   {
    "league": "CH",
    "date": "2026-10-24",
    "home": "Sheffield United",
    "away": "Derby",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-24T11:30:00Z",
    "fotmobMatchId": 5836894,
-   "referee": null
+   "referee": "Steve Martin"
   },
   {
    "league": "CH",
    "date": "2026-10-24",
    "home": "Stoke",
    "away": "Bristol City",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-24T14:00:00Z",
    "fotmobMatchId": 5836895,
-   "referee": null
+   "referee": "James Bell"
   },
   {
    "league": "CH",
    "date": "2026-10-24",
    "home": "Preston",
    "away": "West Brom",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-24T14:00:00Z",
    "fotmobMatchId": 5836892,
-   "referee": null
+   "referee": "Elliot Bell"
   },
   {
    "league": "CH",
    "date": "2026-10-24",
    "home": "QPR",
    "away": "Swansea",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-24T14:00:00Z",
    "fotmobMatchId": 5836893,
-   "referee": null
+   "referee": "Sam Allison"
   },
   {
    "league": "CH",
    "date": "2026-10-24",
    "home": "Wolves",
    "away": "Watford",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-24T14:00:00Z",
    "fotmobMatchId": 5836897,
-   "referee": null
+   "referee": "Robert Madley"
   },
   {
    "league": "CH",
    "date": "2026-10-24",
    "home": "West Ham",
    "away": "Southampton",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-24T14:00:00Z",
    "fotmobMatchId": 5836896,
-   "referee": null
+   "referee": "Michael Salisbury"
   },
   {
    "league": "CH",
    "date": "2026-10-24",
    "home": "Blackburn",
    "away": "Wrexham",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-24T14:00:00Z",
    "fotmobMatchId": 5836886,
-   "referee": null
+   "referee": "Matthew Corlett"
   },
   {
    "league": "SA",
    "date": "2026-10-24",
    "home": "Cagliari",
    "away": "Bologna",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-24T13:00:00Z",
    "fotmobMatchId": 5749711,
    "referee": null
   },
@@ -3013,7 +2032,7 @@
    "date": "2026-10-24",
    "home": "Como",
    "away": "Sassuolo",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-24T13:00:00Z",
    "fotmobMatchId": 5749712,
    "referee": null
   },
@@ -3022,7 +2041,7 @@
    "date": "2026-10-24",
    "home": "Lazio",
    "away": "Parma",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-24T18:45:00Z",
    "fotmobMatchId": 5749715,
    "referee": null
   },
@@ -3031,7 +2050,7 @@
    "date": "2026-10-24",
    "home": "Napoli",
    "away": "Roma",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-24T16:00:00Z",
    "fotmobMatchId": 5749717,
    "referee": null
   },
@@ -3040,7 +2059,7 @@
    "date": "2026-10-24",
    "home": "Mainz",
    "away": "Werder Bremen",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-24T13:30:00Z",
    "fotmobMatchId": 5881202,
    "referee": null
   },
@@ -3049,7 +2068,7 @@
    "date": "2026-10-24",
    "home": "FC Koln",
    "away": "Schalke 04",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-24T13:30:00Z",
    "fotmobMatchId": 5881199,
    "referee": null
   },
@@ -3058,7 +2077,7 @@
    "date": "2026-10-24",
    "home": "RB Leipzig",
    "away": "Elversberg",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-24T13:30:00Z",
    "fotmobMatchId": 5881204,
    "referee": null
   },
@@ -3067,7 +2086,7 @@
    "date": "2026-10-24",
    "home": "Paderborn",
    "away": "Hamburg",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-24T13:30:00Z",
    "fotmobMatchId": 5881203,
    "referee": null
   },
@@ -3076,7 +2095,7 @@
    "date": "2026-10-24",
    "home": "Augsburg",
    "away": "Union Berlin",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-24T13:30:00Z",
    "fotmobMatchId": 5881197,
    "referee": null
   },
@@ -3085,7 +2104,7 @@
    "date": "2026-10-24",
    "home": "Toulouse",
    "away": "Troyes",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-24T15:15:00Z",
    "fotmobMatchId": 5802971,
    "referee": null
   },
@@ -3094,43 +2113,43 @@
    "date": "2026-10-24",
    "home": "Lens",
    "away": "Paris FC",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-24T18:45:00Z",
    "fotmobMatchId": 5802967,
-   "referee": null
+   "referee": "Mathieu Vernice"
   },
   {
    "league": "ED",
    "date": "2026-10-24",
    "home": "Den Haag",
    "away": "Heerenveen",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-24T19:00:00Z",
    "fotmobMatchId": 5781779,
-   "referee": null
+   "referee": "Jannick van der Laan"
   },
   {
    "league": "ED",
    "date": "2026-10-24",
    "home": "Utrecht",
    "away": "Zwolle",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-24T14:30:00Z",
    "fotmobMatchId": 5781784,
-   "referee": null
+   "referee": "Martijn Vos"
   },
   {
    "league": "ED",
    "date": "2026-10-24",
    "home": "Willem II",
    "away": "Cambuur",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-24T16:45:00Z",
    "fotmobMatchId": 5781785,
-   "referee": null
+   "referee": "Dennis Higler"
   },
   {
    "league": "NO2",
    "date": "2026-10-24",
    "home": "Raufoss",
    "away": "Ranheim",
-   "kickoffUtc": "2026-10-24T12:00:00Z",
+   "kickoffUtc": "2026-10-24T12:00:00.000Z",
    "fotmobMatchId": 5105302,
    "referee": null
   },
@@ -3310,7 +2329,7 @@
    "date": "2026-10-24",
    "home": "Newcastle Jets",
    "away": "Macarthur FC",
-   "kickoffUtc": "2026-10-24T04:00Z",
+   "kickoffUtc": "2026-10-24T04:00:00Z",
    "fotmobMatchId": 1000017564,
    "referee": null
   },
@@ -3319,7 +2338,7 @@
    "date": "2026-10-24",
    "home": "Melbourne Victory",
    "away": "Melbourne City FC",
-   "kickoffUtc": "2026-10-24T08:40Z",
+   "kickoffUtc": "2026-10-24T08:40:00Z",
    "fotmobMatchId": 1000017566,
    "referee": null
   },
@@ -3328,8 +2347,35 @@
    "date": "2026-10-24",
    "home": "Western Sydney Wanderers",
    "away": "Auckland FC",
-   "kickoffUtc": "2026-10-24T06:00Z",
+   "kickoffUtc": "2026-10-24T06:00:00Z",
    "fotmobMatchId": 1000017565,
+   "referee": null
+  },
+  {
+   "league": "URU",
+   "date": "2026-10-24",
+   "home": "Deportivo Maldonado",
+   "away": "Danubio",
+   "kickoffUtc": "2026-10-24T22:30Z",
+   "fotmobMatchId": 6444995,
+   "referee": null
+  },
+  {
+   "league": "URU",
+   "date": "2026-10-24",
+   "home": "Juventud",
+   "away": "Peñarol",
+   "kickoffUtc": "2026-10-24T19:00Z",
+   "fotmobMatchId": 6444994,
+   "referee": null
+  },
+  {
+   "league": "URU",
+   "date": "2026-10-24",
+   "home": "Central Español Fútbol Club",
+   "away": "Albion FC",
+   "kickoffUtc": "2026-10-24T13:00Z",
+   "fotmobMatchId": 6444993,
    "referee": null
   },
   {
@@ -3454,7 +2500,7 @@
    "date": "2026-10-25",
    "home": "UNAM Pumas",
    "away": "Tigres UANL",
-   "kickoffUtc": "2026-10-25T03:00Z",
+   "kickoffUtc": "2026-10-25T03:10Z",
    "fotmobMatchId": 1000014620,
    "referee": null
   },
@@ -3528,7 +2574,7 @@
    "away": "Sandefjord",
    "kickoffUtc": "2026-10-25T16:00Z",
    "fotmobMatchId": 5104936,
-   "referee": null
+   "referee": "Rohit Saggi"
   },
   {
    "league": "NO",
@@ -3537,7 +2583,7 @@
    "away": "Tromso",
    "kickoffUtc": "2026-10-25T13:30Z",
    "fotmobMatchId": 5104930,
-   "referee": null
+   "referee": "Marius Lien"
   },
   {
    "league": "JP1",
@@ -3573,7 +2619,7 @@
    "away": "KFUM Oslo",
    "kickoffUtc": "2026-10-25T16:00Z",
    "fotmobMatchId": 5104933,
-   "referee": null
+   "referee": "Svein Tore Sinnes"
   },
   {
    "league": "BE",
@@ -3591,7 +2637,7 @@
    "away": "Fredrikstad",
    "kickoffUtc": "2026-10-25T18:15Z",
    "fotmobMatchId": 5104934,
-   "referee": null
+   "referee": "Ola Hobber Nilsen"
   },
   {
    "league": "GR",
@@ -3618,7 +2664,7 @@
    "away": "Aalesund",
    "kickoffUtc": "2026-10-25T16:00Z",
    "fotmobMatchId": 5104935,
-   "referee": null
+   "referee": "Mischa Kellerhals"
   },
   {
    "league": "SC",
@@ -3627,7 +2673,7 @@
    "away": "Hearts",
    "kickoffUtc": "2026-10-25T14:00Z",
    "fotmobMatchId": 5793955,
-   "referee": null
+   "referee": "Duncan Nicolson"
   },
   {
    "league": "COL",
@@ -3798,59 +2844,59 @@
    "away": "Celtic",
    "kickoffUtc": "2026-10-25T12:00Z",
    "fotmobMatchId": 5793954,
-   "referee": null
+   "referee": "Ryan Lee"
   },
   {
    "league": "PL",
    "date": "2026-10-25",
    "home": "Liverpool",
    "away": "Brighton",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-25T14:00Z",
    "fotmobMatchId": 5795492,
-   "referee": null
+   "referee": "Samuel Barrott"
   },
   {
    "league": "PL",
    "date": "2026-10-25",
    "home": "Crystal Palace",
    "away": "Newcastle",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-25T14:00Z",
    "fotmobMatchId": 5795489,
-   "referee": null
+   "referee": "Paul Tierney"
   },
   {
    "league": "PL",
    "date": "2026-10-25",
    "home": "Sunderland",
    "away": "Leeds",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-25T16:30Z",
    "fotmobMatchId": 5795494,
-   "referee": null
+   "referee": "Stuart Attwell"
   },
   {
    "league": "PL",
    "date": "2026-10-25",
    "home": "Man United",
    "away": "Bournemouth",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-25T14:00Z",
    "fotmobMatchId": 5795493,
-   "referee": null
+   "referee": "Jarred Gillett"
   },
   {
    "league": "PL",
    "date": "2026-10-25",
    "home": "Hull",
    "away": "Brentford",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-25T14:00Z",
    "fotmobMatchId": 5795490,
-   "referee": null
+   "referee": "Robert Jones"
   },
   {
    "league": "LL",
    "date": "2026-10-25",
    "home": "Ath Bilbao",
    "away": "Getafe",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-25T13:00:00Z",
    "fotmobMatchId": 5868102,
    "referee": null
   },
@@ -3859,7 +2905,7 @@
    "date": "2026-10-25",
    "home": "Barcelona",
    "away": "Real Madrid",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-25T20:00:00Z",
    "fotmobMatchId": 5868105,
    "referee": null
   },
@@ -3868,7 +2914,7 @@
    "date": "2026-10-25",
    "home": "Sociedad",
    "away": "Levante",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-25T17:30:00Z",
    "fotmobMatchId": 5868108,
    "referee": null
   },
@@ -3877,7 +2923,7 @@
    "date": "2026-10-25",
    "home": "Celta",
    "away": "Betis",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-25T15:15:00Z",
    "fotmobMatchId": 5868104,
    "referee": null
   },
@@ -3886,7 +2932,7 @@
    "date": "2026-10-25",
    "home": "Lecce",
    "away": "Juventus",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-25T17:00:00Z",
    "fotmobMatchId": 5749716,
    "referee": null
   },
@@ -3895,7 +2941,7 @@
    "date": "2026-10-25",
    "home": "Genoa",
    "away": "Venezia",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-25T14:00:00Z",
    "fotmobMatchId": 5749713,
    "referee": null
   },
@@ -3904,7 +2950,7 @@
    "date": "2026-10-25",
    "home": "Inter",
    "away": "Fiorentina",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-25T11:30:00Z",
    "fotmobMatchId": 5749714,
    "referee": null
   },
@@ -3913,7 +2959,7 @@
    "date": "2026-10-25",
    "home": "Atalanta",
    "away": "Frosinone",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-25T14:00:00Z",
    "fotmobMatchId": 5749710,
    "referee": null
   },
@@ -3922,7 +2968,7 @@
    "date": "2026-10-25",
    "home": "Udinese",
    "away": "Milan",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-25T19:45:00Z",
    "fotmobMatchId": 5749719,
    "referee": null
   },
@@ -3931,7 +2977,7 @@
    "date": "2026-10-25",
    "home": "Hoffenheim",
    "away": "Leverkusen",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-25T14:30:00Z",
    "fotmobMatchId": 5881201,
    "referee": null
   },
@@ -3940,7 +2986,7 @@
    "date": "2026-10-25",
    "home": "Rennes",
    "away": "Strasbourg",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-25T16:15:00Z",
    "fotmobMatchId": 5802970,
    "referee": null
   },
@@ -3949,7 +2995,7 @@
    "date": "2026-10-25",
    "home": "Monaco",
    "away": "Lille",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-25T14:00:00Z",
    "fotmobMatchId": 5802969,
    "referee": null
   },
@@ -3958,7 +3004,7 @@
    "date": "2026-10-25",
    "home": "Marseille",
    "away": "Le Havre",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-25T16:15:00Z",
    "fotmobMatchId": 5802968,
    "referee": null
   },
@@ -3967,16 +3013,16 @@
    "date": "2026-10-25",
    "home": "Angers",
    "away": "Lorient",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-25T16:15:00Z",
    "fotmobMatchId": 5802964,
-   "referee": null
+   "referee": "Azzedine Souifi"
   },
   {
    "league": "L1",
    "date": "2026-10-25",
    "home": "Auxerre",
    "away": "Le Mans",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-25T16:15:00Z",
    "fotmobMatchId": 5802965,
    "referee": null
   },
@@ -3985,7 +3031,7 @@
    "date": "2026-10-25",
    "home": "Paris SG",
    "away": "Lyon",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-25T19:45:00Z",
    "fotmobMatchId": 5802972,
    "referee": null
   },
@@ -3994,36 +3040,36 @@
    "date": "2026-10-25",
    "home": "Sparta Rotterdam",
    "away": "Ajax",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-25T15:45:00Z",
    "fotmobMatchId": 5781778,
-   "referee": null
+   "referee": "Danny Makkelie"
   },
   {
    "league": "ED",
    "date": "2026-10-25",
    "home": "AZ Alkmaar",
    "away": "Twente",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-25T19:00:00Z",
    "fotmobMatchId": 5781782,
-   "referee": null
+   "referee": "Alex Bos"
   },
   {
    "league": "ED",
    "date": "2026-10-25",
    "home": "Nijmegen",
    "away": "Groningen",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-25T13:30:00Z",
    "fotmobMatchId": 5781777,
-   "referee": null
+   "referee": "Martin van den Kerkhof"
   },
   {
    "league": "ED",
    "date": "2026-10-25",
    "home": "PSV Eindhoven",
    "away": "Feyenoord",
-   "kickoffUtc": null,
+   "kickoffUtc": "2026-10-25T13:30:00Z",
    "fotmobMatchId": 5781783,
-   "referee": null
+   "referee": "Serdar Gözübüyük"
   },
   {
    "league": "NO2",
@@ -4183,7 +3229,7 @@
    "date": "2026-10-25",
    "home": "Wellington Phoenix FC",
    "away": "Central Coast Mariners",
-   "kickoffUtc": "2026-10-25T02:00Z",
+   "kickoffUtc": "2026-10-25T02:00:00Z",
    "fotmobMatchId": 1000017567,
    "referee": null
   },
@@ -4203,6 +3249,78 @@
    "away": "Internacional de Bogotá",
    "kickoffUtc": "2026-10-25T21:05Z",
    "fotmobMatchId": 1000014201,
+   "referee": null
+  },
+  {
+   "league": "URU",
+   "date": "2026-10-25",
+   "home": "Montevideo Wanderers",
+   "away": "Progreso",
+   "kickoffUtc": "2026-10-25T13:00Z",
+   "fotmobMatchId": 6444996,
+   "referee": null
+  },
+  {
+   "league": "URU",
+   "date": "2026-10-25",
+   "home": "Montevideo City Torque",
+   "away": "Cerro",
+   "kickoffUtc": "2026-10-25T16:00Z",
+   "fotmobMatchId": 6444997,
+   "referee": null
+  },
+  {
+   "league": "URU",
+   "date": "2026-10-25",
+   "home": "Cerro Largo",
+   "away": "Boston River",
+   "kickoffUtc": "2026-10-25T19:00Z",
+   "fotmobMatchId": 6444998,
+   "referee": null
+  },
+  {
+   "league": "URU",
+   "date": "2026-10-25",
+   "home": "Nacional",
+   "away": "Liverpool",
+   "kickoffUtc": "2026-10-25T22:30Z",
+   "fotmobMatchId": 6444999,
+   "referee": null
+  },
+  {
+   "league": "LL",
+   "date": "2026-10-25",
+   "home": "Vallecano",
+   "away": "Elche",
+   "kickoffUtc": "2026-10-24T12:00:00Z",
+   "fotmobMatchId": 5868107,
+   "referee": null
+  },
+  {
+   "league": "LL",
+   "date": "2026-10-25",
+   "home": "Santander",
+   "away": "Espanol",
+   "kickoffUtc": "2026-10-24T14:15:00Z",
+   "fotmobMatchId": 5868106,
+   "referee": null
+  },
+  {
+   "league": "LL",
+   "date": "2026-10-25",
+   "home": "Valencia",
+   "away": "Villarreal",
+   "kickoffUtc": "2026-10-24T16:30:00Z",
+   "fotmobMatchId": 5868110,
+   "referee": null
+  },
+  {
+   "league": "LL",
+   "date": "2026-10-25",
+   "home": "Sevilla",
+   "away": "Osasuna",
+   "kickoffUtc": "2026-10-26T20:00:00Z",
+   "fotmobMatchId": 5868109,
    "referee": null
   },
   {
@@ -4300,7 +3418,7 @@
    "date": "2026-10-26",
    "home": "Club Tijuana",
    "away": "Santos Laguna",
-   "kickoffUtc": "2026-10-26T03:00Z",
+   "kickoffUtc": "2026-10-26T03:10Z",
    "fotmobMatchId": 1000014624,
    "referee": null
   },
@@ -4381,8 +3499,629 @@
    "date": "2026-10-26",
    "home": "Club America",
    "away": "Pachuca",
-   "kickoffUtc": "2026-10-26T01:00Z",
+   "kickoffUtc": "2026-10-26T01:05Z",
    "fotmobMatchId": 1000014622,
+   "referee": null
+  },
+  {
+   "league": "SB",
+   "date": "2026-10-27",
+   "home": "Mantova",
+   "away": "Cremonese",
+   "kickoffUtc": "2026-10-27T19:00Z",
+   "fotmobMatchId": 5967126,
+   "referee": null
+  },
+  {
+   "league": "COL",
+   "date": "2026-10-27",
+   "home": "Independiente Santa Fe",
+   "away": "Atlético Bucaramanga",
+   "kickoffUtc": "2026-10-27T01:05Z",
+   "fotmobMatchId": 1000014180,
+   "referee": null
+  },
+  {
+   "league": "SB",
+   "date": "2026-10-27",
+   "home": "Ascoli",
+   "away": "Sampdoria",
+   "kickoffUtc": "2026-10-27T19:00Z",
+   "fotmobMatchId": 5967119,
+   "referee": null
+  },
+  {
+   "league": "SB",
+   "date": "2026-10-27",
+   "home": "Cesena",
+   "away": "Empoli",
+   "kickoffUtc": "2026-10-27T19:00Z",
+   "fotmobMatchId": 5967122,
+   "referee": null
+  },
+  {
+   "league": "SB",
+   "date": "2026-10-27",
+   "home": "Benevento",
+   "away": "Catanzaro",
+   "kickoffUtc": "2026-10-27T18:00Z",
+   "fotmobMatchId": 5967120,
+   "referee": null
+  },
+  {
+   "league": "COL",
+   "date": "2026-10-27",
+   "home": "Cúcuta Deportivo",
+   "away": "Águilas Doradas",
+   "kickoffUtc": "2026-10-27T23:00Z",
+   "fotmobMatchId": 1000014089,
+   "referee": null
+  },
+  {
+   "league": "SAU",
+   "date": "2026-10-27",
+   "home": "Abha",
+   "away": "Al Faisaly",
+   "kickoffUtc": "2026-10-27T12:40Z",
+   "fotmobMatchId": 5970144,
+   "referee": null
+  },
+  {
+   "league": "SB",
+   "date": "2026-10-27",
+   "home": "Padova",
+   "away": "Sudtirol",
+   "kickoffUtc": "2026-10-27T19:00Z",
+   "fotmobMatchId": 5967127,
+   "referee": null
+  },
+  {
+   "league": "AS",
+   "date": "2026-10-27",
+   "home": "AIK",
+   "away": "Elfsborg",
+   "kickoffUtc": "2026-10-27T18:00Z",
+   "fotmobMatchId": 5107637,
+   "referee": null
+  },
+  {
+   "league": "EL1",
+   "date": "2026-10-27",
+   "home": "Luton",
+   "away": "Doncaster",
+   "kickoffUtc": "2026-10-27T19:45Z",
+   "fotmobMatchId": 5837189,
+   "referee": null
+  },
+  {
+   "league": "EL1",
+   "date": "2026-10-27",
+   "home": "Milton Keynes Dons",
+   "away": "Bromley",
+   "kickoffUtc": "2026-10-27T19:45Z",
+   "fotmobMatchId": 5837176,
+   "referee": null
+  },
+  {
+   "league": "EL1",
+   "date": "2026-10-27",
+   "home": "Oxford",
+   "away": "Stockport",
+   "kickoffUtc": "2026-10-27T19:45Z",
+   "fotmobMatchId": 5837190,
+   "referee": null
+  },
+  {
+   "league": "SB",
+   "date": "2026-10-27",
+   "home": "Virtus Entella",
+   "away": "Avellino",
+   "kickoffUtc": "2026-10-27T19:00Z",
+   "fotmobMatchId": 5967123,
+   "referee": null
+  },
+  {
+   "league": "BR2",
+   "date": "2026-10-27",
+   "home": "Ceará",
+   "away": "Goiás",
+   "kickoffUtc": "2026-10-27T23:00Z",
+   "fotmobMatchId": 5190783,
+   "referee": "Lucas Guimarães Rechatiko Horn"
+  },
+  {
+   "league": "EL1",
+   "date": "2026-10-27",
+   "home": "Leicester",
+   "away": "Wigan",
+   "kickoffUtc": "2026-10-27T19:45Z",
+   "fotmobMatchId": 5837175,
+   "referee": null
+  },
+  {
+   "league": "SB",
+   "date": "2026-10-27",
+   "home": "Vicenza",
+   "away": "Modena",
+   "kickoffUtc": "2026-10-27T19:00Z",
+   "fotmobMatchId": 5967125,
+   "referee": null
+  },
+  {
+   "league": "SA",
+   "date": "2026-10-27",
+   "home": "Sassuolo",
+   "away": "Lazio",
+   "kickoffUtc": null,
+   "fotmobMatchId": 5749727,
+   "referee": null
+  },
+  {
+   "league": "SA",
+   "date": "2026-10-27",
+   "home": "Roma",
+   "away": "Cagliari",
+   "kickoffUtc": null,
+   "fotmobMatchId": 5749721,
+   "referee": null
+  },
+  {
+   "league": "SA",
+   "date": "2026-10-27",
+   "home": "Torino",
+   "away": "Como",
+   "kickoffUtc": null,
+   "fotmobMatchId": 5749728,
+   "referee": null
+  },
+  {
+   "league": "SE2",
+   "date": "2026-10-27",
+   "home": "Landskrona BoIS",
+   "away": "Varbergs BoIS FC",
+   "kickoffUtc": "2026-10-27T18:00:00Z",
+   "fotmobMatchId": 5125663,
+   "referee": null
+  },
+  {
+   "league": "ACL",
+   "date": "2026-10-27",
+   "home": "Johor Darul Ta'zim",
+   "away": "Port FC",
+   "kickoffUtc": "2026-10-27T10:00Z",
+   "fotmobMatchId": 6049993,
+   "referee": null
+  },
+  {
+   "league": "ACL",
+   "date": "2026-10-27",
+   "home": "Daejeon Hana Citizen",
+   "away": "Vissel Kobe",
+   "kickoffUtc": "2026-10-27T10:00Z",
+   "fotmobMatchId": 6049992,
+   "referee": null
+  },
+  {
+   "league": "ACL",
+   "date": "2026-10-27",
+   "home": "Beijing Guoan",
+   "away": "Jeonbuk Hyundai Motors",
+   "kickoffUtc": "2026-10-27T12:15Z",
+   "fotmobMatchId": 6049996,
+   "referee": null
+  },
+  {
+   "league": "ACL",
+   "date": "2026-10-27",
+   "home": "Ratchaburi FC",
+   "away": "Kashiwa Reysol",
+   "kickoffUtc": "2026-10-27T12:15Z",
+   "fotmobMatchId": 6049997,
+   "referee": null
+  },
+  {
+   "league": "ACL",
+   "date": "2026-10-27",
+   "home": "Shanghai Port",
+   "away": "Cong An Ha Noi",
+   "kickoffUtc": "2026-10-27T10:00Z",
+   "fotmobMatchId": 6049995,
+   "referee": null
+  },
+  {
+   "league": "ACL",
+   "date": "2026-10-27",
+   "home": "Kyoto Sanga",
+   "away": "Newcastle Jets",
+   "kickoffUtc": "2026-10-27T10:00Z",
+   "fotmobMatchId": 6049994,
+   "referee": null
+  },
+  {
+   "league": "ACL",
+   "date": "2026-10-27",
+   "home": "Al-Shamal",
+   "away": "Al Hilal",
+   "kickoffUtc": "2026-10-27T18:15Z",
+   "fotmobMatchId": 6050087,
+   "referee": null
+  },
+  {
+   "league": "ACL",
+   "date": "2026-10-27",
+   "home": "Shabab Al Ahli",
+   "away": "Esteghlal",
+   "kickoffUtc": "2026-10-27T16:00Z",
+   "fotmobMatchId": 6050086,
+   "referee": null
+  },
+  {
+   "league": "ACL2",
+   "date": "2026-10-27",
+   "home": "Al-Shorta",
+   "away": "Al Hussein",
+   "kickoffUtc": "2026-10-27T18:15Z",
+   "fotmobMatchId": 6054513,
+   "referee": null
+  },
+  {
+   "league": "ACL2",
+   "date": "2026-10-27",
+   "home": "Al-Seeb",
+   "away": "East Bengal FC",
+   "kickoffUtc": "2026-10-27T16:00Z",
+   "fotmobMatchId": 6054512,
+   "referee": null
+  },
+  {
+   "league": "ACL2",
+   "date": "2026-10-27",
+   "home": "Al-Shorta",
+   "away": "Al-Hussein SC",
+   "kickoffUtc": "2026-10-27T18:15Z",
+   "fotmobMatchId": 6054513,
+   "referee": null
+  },
+  {
+   "league": "MLS",
+   "date": "2026-10-28",
+   "home": "Toronto FC",
+   "away": "DC United",
+   "kickoffUtc": "2026-10-28T23:30Z",
+   "fotmobMatchId": 5071460,
+   "referee": null
+  },
+  {
+   "league": "MLS",
+   "date": "2026-10-28",
+   "home": "New York City",
+   "away": "Atlanta Utd",
+   "kickoffUtc": "2026-10-28T23:30Z",
+   "fotmobMatchId": 5071459,
+   "referee": null
+  },
+  {
+   "league": "BR",
+   "date": "2026-10-28",
+   "home": "Bragantino",
+   "away": "Chapecoense-SC",
+   "kickoffUtc": "2026-10-28T22:30Z",
+   "fotmobMatchId": 5103688,
+   "referee": "Wagner Do Nascimento Magalhães"
+  },
+  {
+   "league": "SB",
+   "date": "2026-10-28",
+   "home": "Juve Stabia",
+   "away": "Verona",
+   "kickoffUtc": "2026-10-28T19:00Z",
+   "fotmobMatchId": 5967124,
+   "referee": null
+  },
+  {
+   "league": "SB",
+   "date": "2026-10-28",
+   "home": "Pisa",
+   "away": "Palermo",
+   "kickoffUtc": "2026-10-28T18:00Z",
+   "fotmobMatchId": 5967128,
+   "referee": null
+  },
+  {
+   "league": "SB",
+   "date": "2026-10-28",
+   "home": "Carrarese",
+   "away": "Arezzo",
+   "kickoffUtc": "2026-10-28T19:00Z",
+   "fotmobMatchId": 5967121,
+   "referee": null
+  },
+  {
+   "league": "MLS",
+   "date": "2026-10-28",
+   "home": "New England Revolution",
+   "away": "New York Red Bulls",
+   "kickoffUtc": "2026-10-28T23:30Z",
+   "fotmobMatchId": 5071458,
+   "referee": null
+  },
+  {
+   "league": "COL",
+   "date": "2026-10-28",
+   "home": "Boyacá Chicó FC",
+   "away": "Atlético Junior",
+   "kickoffUtc": "2026-10-28T01:05Z",
+   "fotmobMatchId": 1000014091,
+   "referee": null
+  },
+  {
+   "league": "MLS",
+   "date": "2026-10-28",
+   "home": "Charlotte",
+   "away": "CF Montreal",
+   "kickoffUtc": "2026-10-28T23:30Z",
+   "fotmobMatchId": 5071456,
+   "referee": null
+  },
+  {
+   "league": "SC",
+   "date": "2026-10-28",
+   "home": "Celtic",
+   "away": "Dundee United",
+   "kickoffUtc": "2026-10-28T19:45Z",
+   "fotmobMatchId": 5793959,
+   "referee": null
+  },
+  {
+   "league": "COL",
+   "date": "2026-10-28",
+   "home": "Once Caldas",
+   "away": "Alianza FC",
+   "kickoffUtc": "2026-10-28T23:00Z",
+   "fotmobMatchId": 1000014093,
+   "referee": null
+  },
+  {
+   "league": "SC",
+   "date": "2026-10-28",
+   "home": "Hearts",
+   "away": "Rangers",
+   "kickoffUtc": "2026-10-28T20:00Z",
+   "fotmobMatchId": 5793961,
+   "referee": null
+  },
+  {
+   "league": "MLS",
+   "date": "2026-10-28",
+   "home": "Inter Miami",
+   "away": "FC Cincinnati",
+   "kickoffUtc": "2026-10-28T23:30Z",
+   "fotmobMatchId": 5071457,
+   "referee": null
+  },
+  {
+   "league": "SC",
+   "date": "2026-10-28",
+   "home": "St Mirren",
+   "away": "Hibernian",
+   "kickoffUtc": "2026-10-28T19:45Z",
+   "fotmobMatchId": 5793963,
+   "referee": null
+  },
+  {
+   "league": "AS",
+   "date": "2026-10-28",
+   "home": "Goteborg",
+   "away": "Djurgarden",
+   "kickoffUtc": "2026-10-28T18:00Z",
+   "fotmobMatchId": 5107639,
+   "referee": null
+  },
+  {
+   "league": "AS",
+   "date": "2026-10-28",
+   "home": "Brommapojkarna",
+   "away": "Hacken",
+   "kickoffUtc": "2026-10-28T18:00Z",
+   "fotmobMatchId": 5107641,
+   "referee": null
+  },
+  {
+   "league": "SC",
+   "date": "2026-10-28",
+   "home": "Dundee",
+   "away": "Kilmarnock",
+   "kickoffUtc": "2026-10-28T19:45Z",
+   "fotmobMatchId": 5793960,
+   "referee": null
+  },
+  {
+   "league": "SC",
+   "date": "2026-10-28",
+   "home": "St Johnstone",
+   "away": "Motherwell",
+   "kickoffUtc": "2026-10-28T19:45Z",
+   "fotmobMatchId": 5793962,
+   "referee": null
+  },
+  {
+   "league": "AS",
+   "date": "2026-10-28",
+   "home": "Halmstad",
+   "away": "Malmo FF",
+   "kickoffUtc": "2026-10-28T18:00Z",
+   "fotmobMatchId": 5107644,
+   "referee": null
+  },
+  {
+   "league": "AS",
+   "date": "2026-10-28",
+   "home": "Degerfors",
+   "away": "Vasteras SK",
+   "kickoffUtc": "2026-10-28T18:00Z",
+   "fotmobMatchId": 5107642,
+   "referee": null
+  },
+  {
+   "league": "BR",
+   "date": "2026-10-28",
+   "home": "Santos",
+   "away": "Palmeiras",
+   "kickoffUtc": "2026-10-28T22:30Z",
+   "fotmobMatchId": 5103686,
+   "referee": "Flávio Rodrigues de Souza"
+  },
+  {
+   "league": "SC",
+   "date": "2026-10-28",
+   "home": "Aberdeen",
+   "away": "Falkirk",
+   "kickoffUtc": "2026-10-28T19:45Z",
+   "fotmobMatchId": 5793958,
+   "referee": null
+  },
+  {
+   "league": "BR",
+   "date": "2026-10-28",
+   "home": "Fluminense",
+   "away": "Internacional",
+   "kickoffUtc": "2026-10-28T22:30Z",
+   "fotmobMatchId": 5103684,
+   "referee": "Lucas Casagrande"
+  },
+  {
+   "league": "SA",
+   "date": "2026-10-28",
+   "home": "Milan",
+   "away": "Bologna",
+   "kickoffUtc": null,
+   "fotmobMatchId": 5749720,
+   "referee": null
+  },
+  {
+   "league": "SA",
+   "date": "2026-10-28",
+   "home": "Parma",
+   "away": "Udinese",
+   "kickoffUtc": null,
+   "fotmobMatchId": 5749726,
+   "referee": null
+  },
+  {
+   "league": "SA",
+   "date": "2026-10-28",
+   "home": "Venezia",
+   "away": "Inter",
+   "kickoffUtc": null,
+   "fotmobMatchId": 5749729,
+   "referee": null
+  },
+  {
+   "league": "SA",
+   "date": "2026-10-28",
+   "home": "Genoa",
+   "away": "Juventus",
+   "kickoffUtc": null,
+   "fotmobMatchId": 5749724,
+   "referee": null
+  },
+  {
+   "league": "SA",
+   "date": "2026-10-28",
+   "home": "Monza",
+   "away": "Napoli",
+   "kickoffUtc": null,
+   "fotmobMatchId": 5749725,
+   "referee": null
+  },
+  {
+   "league": "ACL",
+   "date": "2026-10-28",
+   "home": "Kashima Antlers",
+   "away": "Pohang Steelers",
+   "kickoffUtc": "2026-10-28T10:00Z",
+   "fotmobMatchId": 6049999,
+   "referee": null
+  },
+  {
+   "league": "ACL",
+   "date": "2026-10-28",
+   "home": "Gamba Osaka",
+   "away": "Buriram United",
+   "kickoffUtc": "2026-10-28T10:00Z",
+   "fotmobMatchId": 6049998,
+   "referee": null
+  },
+  {
+   "league": "ACL2",
+   "date": "2026-10-28",
+   "home": "Persib",
+   "away": "Melbourne Victory",
+   "kickoffUtc": "2026-10-28T12:15Z",
+   "fotmobMatchId": 1000021394,
+   "referee": null
+  },
+  {
+   "league": "ACL2",
+   "date": "2026-10-28",
+   "home": "Viettel",
+   "away": "FC Seoul",
+   "kickoffUtc": "2026-10-28T12:15Z",
+   "fotmobMatchId": 6054694,
+   "referee": null
+  },
+  {
+   "league": "ACL2",
+   "date": "2026-10-28",
+   "home": "Gol Gohar FC Sirjan",
+   "away": "Arkadag FK",
+   "kickoffUtc": "2026-10-28T13:45Z",
+   "fotmobMatchId": 6054594,
+   "referee": null
+  },
+  {
+   "league": "ACL2",
+   "date": "2026-10-28",
+   "home": "Al-Nahda Club",
+   "away": "Al Rayyan",
+   "kickoffUtc": "2026-10-28T16:00Z",
+   "fotmobMatchId": 6054497,
+   "referee": null
+  },
+  {
+   "league": "ACL2",
+   "date": "2026-10-28",
+   "home": "Al Jazira Club",
+   "away": "Al-Muharraq SC",
+   "kickoffUtc": "2026-10-28T16:00Z",
+   "fotmobMatchId": 6054595,
+   "referee": null
+  },
+  {
+   "league": "ACL2",
+   "date": "2026-10-28",
+   "home": "Nasaf Qarshi",
+   "away": "Kuwait SC",
+   "kickoffUtc": "2026-10-28T13:45Z",
+   "fotmobMatchId": 6054376,
+   "referee": null
+  },
+  {
+   "league": "ACL2",
+   "date": "2026-10-28",
+   "home": "Al-Faisaly SC",
+   "away": "Al Taawoun",
+   "kickoffUtc": "2026-10-28T18:15Z",
+   "fotmobMatchId": 6054498,
+   "referee": null
+  },
+  {
+   "league": "ACL2",
+   "date": "2026-10-28",
+   "home": "Al-Nahda Club",
+   "away": "Al-Rayyan SC",
+   "kickoffUtc": "2026-10-28T16:00Z",
+   "fotmobMatchId": 6054497,
    "referee": null
   }
  ]
