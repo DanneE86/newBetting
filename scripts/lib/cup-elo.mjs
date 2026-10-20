@@ -15,7 +15,9 @@ import { sameTeamName, TEAM_ALIASES } from './team-aliases.mjs';
 import { FOTMOB_LEAGUES } from './fotmob-leagues.mjs';
 
 export const ASIA_ELO_START = { JP1: 1560, SAU: 1560, KR: 1540, AUS: 1430 };
-export const SA_ELO_START = { BR: 1600, AR: 1540, BR2: 1470, COL: 1450, URU: 1440 };
+// URU kalibrerat 2026-10-18 på 140 LIB/SUD-matcher mot BR/AR 2017–2024: 1360 bäst mot både resultat och odds
+// (logloss 1,0446; URU-lagens snittchans 24,7 % mot oddsens 23,7 %), 1440 gav 32 %.
+export const SA_ELO_START = { BR: 1600, AR: 1540, BR2: 1470, COL: 1450, URU: 1360 };
 export const CUP_ELO_REGIONS = {
   asia: { start: ASIA_ELO_START, source: 'asiaelo' },
   sydamerika: { start: SA_ELO_START, source: 'saelo' },
