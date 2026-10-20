@@ -115,9 +115,9 @@ test('matcher: avsparkstid, tips = troligaste tecknet, Värde/Ej värde räknat 
 
 // Filkuponger (användaren 2026-10-11: "skippa helt allt som har med Gambling Cabin att göra, ta bort alla regler, vill bara
 // köra på fil"): A, B och C är Egna rader-filer à 500 rader. Inga färg-, tecken- eller GC-regler.
-test('filkuponger: 500 rader, minst 30 000 kr per rad, 2 starka spikar, B utan A:s rader, filen = raderna', async () => {
+test('filkuponger: 500 rader, minst 30 000 kr per rad, 4 spikar (3 starka + 1 skräll), B utan A:s rader, filen = raderna', async () => {
   const { FILE_RULES } = await import(pathToFileURL(path.join(root, 'gui', 'public', 'stryk-engine.js')).href);
-  expect(FILE_RULES).toMatchObject({ rows: 500, payoutMin: 30000, spikes: 2 });
+  expect(FILE_RULES).toMatchObject({ rows: 500, payoutMin: 30000, spikes: 4, skrallSpikes: 1 });
   for (const p of data.products) {
     // Systemets procent som motorn (sysEv): tips som Oddset använder Oddsets procent, annars spikbedömningens
     const sysOf = (e: any) => (e.tipBasis !== 'oddset' && e.spik?.used ? e.spik.sysP : e.final);
@@ -143,9 +143,12 @@ test('filkuponger: 500 rader, minst 30 000 kr per rad, 2 starka spikar, B utan A
       const lines = red.egnaRader.trim().split('\n');
       expect(lines[0], at).toBe(p.product === 'europatipset' ? 'Europatipset' : 'Stryktipset');
       expect(lines.slice(1).map((l: string) => l.replace(/^E,/, '').split(',').join('')), at).toEqual(red.rowList);
-      // 2 starka spikar: omgångens starkaste favoriter, spikade på favoriten (lika styrka som trean: hoppas över)
-      for (const { i, v } of strength.slice(0, FILE_RULES.spikes)) {
-        if (Math.abs(v - strength[FILE_RULES.spikes].v) < 1e-3) continue;
+      // 3 starka spikar: omgångens starkaste favoriter, spikade på favoriten (lika styrka som fyran: hoppas över).
+      // Den fjärde spiken är en skräll (2026-10-20): inte favoriten
+      const nStrong = FILE_RULES.spikes - FILE_RULES.skrallSpikes;
+      expect(picks.filter((x: string) => x.length === 1).length, at).toBe(FILE_RULES.spikes);
+      for (const { i, v } of strength.slice(0, nStrong)) {
+        if (Math.abs(v - strength[nStrong].v) < 1e-3) continue;
         const sp = sysOf(p.events[i]);
         expect(picks[i], `${at} match ${i + 1}: stark spik`).toBe(SIGNS[sp.indexOf(Math.max(...sp))]);
       }

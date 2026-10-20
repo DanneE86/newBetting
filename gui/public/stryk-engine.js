@@ -136,15 +136,17 @@ export function generateCoupons(p, krav, { rows = null } = {}) {
 
 // ---------- Filkuponger A, B och C (användaren 2026-10-11: "skippa helt allt som har med Gambling Cabin att göra, ta bort
 // alla regler, vill bara köra på fil"). Spelas som Egna rader-fil hos Svenska Spel. Inga färg-, tecken- eller GC-regler:
-//   spikar: omgångens 2 starkaste favoriter (vår procent) – har du egna spikar spikas inga andra matcher
+//   spikar: 4 st (användaren 2026-10-20: "föreslå alltid 4 spikar där en ska vara lite mer skrällig") – omgångens 3
+//      starkaste favoriter (vår procent) + omgångens bästa skrällspik (skrallTips förstaval, på en annan match) – har du
+//      egna spikar spikas inga andra matcher
 //   A: de 500 troligaste raderna med minst 30 000 kr för 13 rätt
 //   B: de 500 nästa raderna som inte finns i A, med bonus för tecken A saknar (fyller A:s hål)
 //   C: 500 rader där underspelade tecken (vår chans minst 20 % och minst 1,3 × folkets streck, inte favoriten) väger
 //      1,3 × per tecken – skrällarna folket missar. Samma golv, oberoende av A och B.
 // Bakkört 2026-10-11 (kupongarkivet, ST 169 / ET 183 omg, scripts/backtest-stryk-fil.mjs): A chans 1 på 170 / 162 med 2 spikar
 // (0 spikar 1 på 168 / 159, 4 spikar 1 på 181 / 174); A+B bäst med 2 (1 på 96 / 92). Båda spikarna satt i 80 / 90 omg.
-// C: bonus 1,3 gav 1 på 177 / 167 (2: 1 på 220 / 195).
-export const FILE_RULES = { rows: 500, payoutMin: 30000, spikes: 2, underRatio: 1.3, underMin: 0.2, underBonus: 1.3, gapBonus: 2.5 };
+// C: bonus 1,3 gav 1 på 177 / 167 (2: 1 på 220 / 195). 4 spikar varav 1 skräll sedan 2026-10-20 (användarens val).
+export const FILE_RULES = { rows: 500, payoutMin: 30000, spikes: 4, skrallSpikes: 1, underRatio: 1.3, underMin: 0.2, underBonus: 1.3, gapBonus: 2.5 };
 // Egen summa per kupong (användaren 2026-10-12: "jag ska kunna bestämma summa fortfarande"), 1 kr per rad
 export const FILE_BUDGET = { min: 1, max: 10000 };
 export function clampFileRows(n, fallback = FILE_RULES.rows) {
@@ -152,15 +154,21 @@ export function clampFileRows(n, fallback = FILE_RULES.rows) {
   if (n == null || String(n).trim() === "" || !Number.isFinite(x)) return fallback;
   return Math.max(FILE_BUDGET.min, Math.min(FILE_BUDGET.max, x));
 }
-/** Spikar för filkupongerna: favoriten på de FILE_RULES.spikes starkaste matcherna – men har du egna spikar spikas inga
- *  andra matcher (användaren 2026-10-12: "har jag hittat egna spikar så ska du göra om de icke låsta matcherna om det är
- *  spik i någon av dom"). */
-export function strongSpikeForced(events, forced, n = FILE_RULES.spikes) {
+/** Spikar för filkupongerna: n spikar, varav skrall st på omgångens bästa skrällspik (skrallTips: inte favoriten, på en
+ *  annan match än de starka) och resten på favoriten i de starkaste matcherna. Finns ingen skräll blir det ännu en stark
+ *  favorit. Har du egna spikar spikas inga andra matcher (användaren 2026-10-12: "har jag hittat egna spikar så ska du
+ *  göra om de icke låsta matcherna om det är spik i någon av dom"). */
+export function strongSpikeForced(events, forced, n = FILE_RULES.spikes, skrall = FILE_RULES.skrallSpikes) {
   const own = forced.filter((f) => f?.length === 1).length;
   if (own) return forced.slice();
   const free = events.map((e, i) => ({ i, p: Math.max(...e.final) })).filter((x) => forced[x.i] == null).sort((a, b) => b.p - a.p);
   const out = forced.slice();
-  for (const { i } of free.slice(0, n)) out[i] = [favIdx(events[i])];
+  const nSkrall = Math.min(skrall, n);
+  for (const { i } of free.slice(0, n - nSkrall)) out[i] = [favIdx(events[i])];
+  const tips = nSkrall ? skrallTips(events, events.length).filter((t) => out[t.i] == null).slice(0, nSkrall) : [];
+  for (const t of tips) out[t.i] = [t.k];
+  // Ingen skräll att spika: nästa starka favorit i stället
+  for (const { i } of free.filter((x) => out[x.i] == null).slice(0, nSkrall - tips.length)) out[i] = [favIdx(events[i])];
   return out;
 }
 /** Underspelat tecken: inte favoriten, vår chans minst underMin och minst underRatio × folkets streck. */
@@ -191,7 +199,7 @@ export function buildFileCoupons(p, events, forcedFor, base, r = FILE_RULES) {
     // turnover = typisk omsättning: sidan räknar live med max(live-omsättning, typisk), annars blir omsättningen tidigt i veckan
     // så låg att inga rader når 30 000 kr (Europatipset 2026-10-11)
     const c = finishEgnaRader(p, events, forcedFor(sys), base, picked, sys, { file: true, spikes: forced.filter((f) => f?.length === 1).length, turnover: base.turnover || base.realTurnover });
-    c.picks = c.picks.map((x, i) => ({ ...x, spikStrong: forced[i]?.length === 1 && forcedFor(sys)[i] == null, shares: plan[i] || null }));
+    c.picks = c.picks.map((x, i) => ({ ...x, spikStrong: forced[i]?.length === 1 && forcedFor(sys)[i] == null, spikSkrall: forced[i]?.length === 1 && forcedFor(sys)[i] == null && forced[i][0] !== favIdx(events[i]), shares: plan[i] || null }));
     if (redo.length) c.relaxed = [...c.relaxed, `match ${redo.map((i) => events[i].eventNumber).join(", ")} blev spik av sig själv och är omgjord efter vår chans – bara dina spikar är spikar`];
     if (nPlan) c.relaxed = [...c.relaxed, `${nPlan} ${nPlan === 1 ? "match" : "matcher"} med din egen fördelning (${sys} %)`];
     if (picked.payoutShort) c.relaxed = [...c.relaxed, `några rader ger under ${r.payoutMin.toLocaleString("sv-SE")} kr – fördelningen gick före utdelningsgolvet`];
