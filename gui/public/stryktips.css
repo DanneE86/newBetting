@@ -723,41 +723,104 @@ body.view-stryktips main { display: none !important; }
 .st-skrall-rank { font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--color-text-muted); }
 .st-skrall-pick .st-num { display: inline-flex; vertical-align: middle; margin-right: var(--space-2); }
 
-/* Svenska Spels matchinfo i analysen (gui/public/svs-matchinfo.js) */
-.svs-info { margin-top: var(--space-4); padding-top: var(--space-3); border-top: 1px solid var(--color-border); }
+/* Svenska Spels matchinfo i analysen (gui/public/svs-matchinfo.js): flikar som hos Svenska Spel, hemma rött, borta blått */
+.svs-info { --svs-home: var(--color-danger-solid); --svs-away: var(--color-info-solid); margin-top: var(--space-4); padding-top: var(--space-3); border-top: 1px solid var(--color-border); }
 .svs-info > summary { cursor: pointer; display: flex; align-items: baseline; gap: var(--space-2); flex-wrap: wrap; }
 .svs-info > summary h4 { margin: 0; font-size: var(--font-size-md); display: inline; }
-.svs-info > summary small, .svs-box h5 small, .svs-box h6 small { color: var(--color-text-muted); font-weight: var(--font-weight-medium); font-size: var(--font-size-xs); }
+.svs-info > summary small, .svs-info h5 small, .svs-info h6 small { color: var(--color-text-muted); font-weight: var(--font-weight-medium); font-size: var(--font-size-xs); }
 .svs-kort { margin: var(--space-2) 0 0; font-size: var(--font-size-sm); }
-.svs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: var(--space-3); margin-top: var(--space-3); }
-.svs-box { padding: var(--space-3); border: 1px solid var(--color-border); border-radius: var(--radius-lg); background: var(--color-surface-muted); font-size: var(--font-size-sm); min-width: 0; }
-.svs-box h5 { margin: 0 0 var(--space-2); font-size: var(--font-size-sm); }
-.svs-box h6 { margin: var(--space-2) 0 var(--space-1); font-size: var(--font-size-xs); }
+.svs-card { margin-top: var(--space-3); border: 1px solid var(--color-border); border-radius: var(--radius-lg); background: var(--color-surface); font-size: var(--font-size-sm); min-width: 0; overflow: hidden; }
+.svs-tabs { display: flex; overflow-x: auto; border-bottom: 1px solid var(--color-border); background: var(--color-surface-muted); scrollbar-width: thin; }
+.svs-tabs button { flex: none; padding: var(--space-2) var(--space-3); border: 0; border-bottom: 3px solid transparent; background: none; color: var(--color-text-muted); font: inherit; cursor: pointer; white-space: nowrap; }
+.svs-tabs button[aria-selected="true"] { color: var(--color-text); font-weight: var(--font-weight-bold); border-bottom-color: var(--color-brand); }
+.svs-card > .svs-pane { padding: var(--space-3); }
+.svs-seg { display: flex; flex-wrap: wrap; gap: var(--space-1); margin: 0 0 var(--space-2); }
+.svs-seg button { padding: var(--space-1) var(--space-2); border: 0; border-radius: var(--radius-sm); background: none; color: var(--color-text-muted); font: inherit; font-size: var(--font-size-xs); cursor: pointer; }
+.svs-seg button[aria-selected="true"] { background: var(--color-surface-sunken); color: var(--color-text); font-weight: var(--font-weight-bold); }
+.svs-info h5 { margin: var(--space-3) 0 var(--space-2); font-size: var(--font-size-sm); }
+.svs-pane > h5:first-child { margin-top: 0; }
+.svs-info h6 { margin: 0; font-size: var(--font-size-xs); }
+.svs-legend { display: inline-flex; gap: var(--space-3); margin: 0; font-size: var(--font-size-xs); }
+.svs-legend span::before { content: ""; display: inline-block; width: 0.7rem; height: 0.7rem; margin-right: var(--space-1); border-radius: 2px; vertical-align: -1px; }
+.svs-legend .is-home::before { background: var(--svs-home); }
+.svs-legend .is-away::before { background: var(--svs-away); }
+.svs-info p.svs-legend { display: flex; justify-content: center; }
 .svs-overview p { margin: 0; display: flex; justify-content: space-between; gap: var(--space-3); padding: var(--space-1) 0; border-bottom: 1px solid var(--color-border); }
 .svs-overview span { color: var(--color-text-muted); }
 .svs-overview strong { text-align: right; font-variant-numeric: tabular-nums; }
-.svs-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr)); gap: var(--space-3); }
-.svs-box .st-last small { color: var(--color-text-muted); }
 .svs-table { width: 100%; border-collapse: collapse; font-size: var(--font-size-xs); font-variant-numeric: tabular-nums; }
-.svs-table th, .svs-table td { padding: 2px var(--space-1); border-bottom: 1px solid var(--color-border); text-align: right; }
+.svs-table th, .svs-table td { padding: var(--space-1); border-bottom: 1px solid var(--color-border); text-align: right; }
 .svs-table th:first-child, .svs-table tbody th { text-align: left; font-weight: var(--font-weight-medium); }
-.svs-table td:first-child { text-align: right; color: var(--color-text-muted); }
-.svs-table tr.is-team { background: var(--color-surface); font-weight: var(--font-weight-bold); }
-.svs-x td:first-child { color: var(--color-text); }
+.svs-trio { margin-bottom: var(--space-3); font-size: var(--font-size-sm); }
+.svs-league td:first-child { color: var(--color-text-muted); }
+.svs-league tr.is-team { font-weight: var(--font-weight-bold); }
+.svs-league tr.is-home { box-shadow: inset 3px 0 var(--svs-home); }
+.svs-league tr.is-away { box-shadow: inset 3px 0 var(--svs-away); }
+.svs-list { margin-bottom: var(--space-3); border: 1px solid var(--color-border); border-radius: var(--radius-md); overflow: hidden; }
+.svs-list h6 { display: flex; align-items: center; justify-content: space-between; gap: var(--space-2); padding: var(--space-2); background: var(--color-surface-muted); }
+.svs-list ul { margin: 0; padding: 0; list-style: none; }
+.svs-list li { display: grid; grid-template-columns: 2rem minmax(0, 1fr) auto; align-items: center; gap: var(--space-2); padding: var(--space-1) var(--space-2); font-size: var(--font-size-xs); }
+.svs-list li:nth-child(even) { background: var(--color-surface-muted); }
+.svs-ft { color: var(--color-text-muted); }
+.svs-teams { display: grid; min-width: 0; }
+.svs-teams span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.svs-teams b { display: inline-block; min-width: 1.2em; font-variant-numeric: tabular-nums; }
+.svs-teams .is-win { font-weight: var(--font-weight-bold); }
+.svs-when { display: grid; text-align: right; font-variant-numeric: tabular-nums; }
+.svs-when small, .svs-teams small { color: var(--color-text-muted); }
+.svs-balls { display: inline-flex; gap: 3px; }
+.svs-balls span { display: grid; place-items: center; width: 1.25rem; height: 1.25rem; border-radius: 50%; font-size: 0.65rem; font-weight: var(--font-weight-bold); color: var(--color-text-on-brand); }
+.svs-balls .f-V { background: var(--color-success-solid); }
+.svs-balls .f-O { background: var(--color-warning-solid); }
+.svs-balls .f-F { background: var(--color-danger-solid); }
+.svs-sum { font-variant-numeric: tabular-nums; }
+.svs-prob-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-2); margin-top: var(--space-2); text-align: center; }
+.svs-prob { display: grid; justify-items: center; gap: 2px; min-width: 0; }
+.svs-prob small { color: var(--color-text-muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 100%; }
+.svs-prob-bar { display: flex; align-items: flex-end; width: 2.2rem; height: 5rem; border-radius: var(--radius-sm); background: var(--color-surface-sunken); overflow: hidden; }
+.svs-prob-bar i { display: block; width: 100%; background: var(--color-text-muted); }
+.svs-prob.is-home i { background: var(--svs-home); }
+.svs-prob.is-away i { background: var(--svs-away); }
+.svs-radar { display: block; width: 100%; max-width: 22rem; margin: 0 auto; overflow: visible; }
+.svs-radar .svs-radar-grid { fill: none; stroke: var(--color-border-strong); stroke-width: 1; }
+.svs-radar polygon.is-home { fill: var(--svs-home); fill-opacity: 0.35; stroke: var(--svs-home); stroke-width: 2; }
+.svs-radar polygon.is-away { fill: var(--svs-away); fill-opacity: 0.35; stroke: var(--svs-away); stroke-width: 2; }
+.svs-radar text { fill: var(--color-text); font-size: 12px; }
+.svs-xs { margin-top: var(--space-3); }
+.svs-cmp { width: 100%; border-collapse: separate; border-spacing: 0 3px; font-size: var(--font-size-xs); font-variant-numeric: tabular-nums; }
+.svs-cmp thead th { color: var(--color-text-muted); font-weight: var(--font-weight-medium); text-align: left; }
+.svs-cmp thead th:last-child { text-align: right; }
+.svs-cmp tbody th { font-weight: var(--font-weight-medium); text-align: center; padding: 0 var(--space-2); }
+.svs-cmp td { width: 4rem; padding: 3px var(--space-1); text-align: center; border-radius: var(--radius-sm); background: var(--color-surface-sunken); }
+.svs-cmp td.is-home { background: var(--svs-home); color: var(--color-text-on-brand); font-weight: var(--font-weight-bold); }
+.svs-cmp td.is-away { background: var(--svs-away); color: var(--color-text-on-brand); font-weight: var(--font-weight-bold); }
 .svs-style td { white-space: nowrap; }
-.svs-bar { display: inline-block; vertical-align: middle; width: 3.5rem; height: 0.45rem; margin-right: var(--space-1); border-radius: var(--radius-pill); background: linear-gradient(90deg, var(--color-brand) var(--v), var(--color-surface-sunken) var(--v)); }
-.svs-lineup-side p { margin: 0 0 var(--space-1); line-height: var(--line-height-body); }
+.svs-bar { display: inline-block; vertical-align: middle; width: 3.5rem; height: 0.45rem; margin-right: var(--space-1); border-radius: var(--radius-pill); background: var(--color-surface-sunken); }
+.svs-bar.is-home { background: linear-gradient(90deg, var(--svs-home) var(--v), var(--color-surface-sunken) var(--v)); }
+.svs-bar.is-away { background: linear-gradient(90deg, var(--svs-away) var(--v), var(--color-surface-sunken) var(--v)); }
+.svs-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr)); gap: var(--space-3); }
+.svs-lineup-side { padding-left: var(--space-2); border-left: 3px solid var(--color-border); }
+.svs-lineup-side.is-home { border-left-color: var(--svs-home); }
+.svs-lineup-side.is-away { border-left-color: var(--svs-away); }
+.svs-lineup-side p { margin: var(--space-1) 0 0; line-height: var(--line-height-body); }
 .svs-lineup-side small { color: var(--color-text-muted); }
+.svs-xi { margin: var(--space-1) 0 0; padding: 0; list-style: none; display: grid; gap: 2px; }
+.svs-xi span { display: inline-block; min-width: 1.8em; color: var(--color-text-muted); font-variant-numeric: tabular-nums; }
 .svs-out { color: var(--color-danger); }
-.svs-news { margin: 0; padding: 0; list-style: none; display: grid; gap: var(--space-2); }
+.svs-news { margin: 0; padding: 0; list-style: none; display: grid; gap: var(--space-3); }
 .svs-news p { margin: 0; line-height: var(--line-height-body); }
 .svs-news-head small { color: var(--color-text-muted); }
-.svs-more { margin-top: var(--space-2); }
-.svs-more > summary { cursor: pointer; font-weight: var(--font-weight-bold); font-size: var(--font-size-sm); }
-.svs-kambi { margin-top: var(--space-3); }
-.svs-kambi td { text-align: left; line-height: var(--line-height-body); }
-.svs-note { margin: var(--space-1) 0 0; color: var(--color-text-muted); font-size: var(--font-size-xs); }
+.svs-expert { padding: var(--space-2) 0; border-bottom: 1px solid var(--color-border); line-height: var(--line-height-body); }
+.svs-expert p { margin: 0 0 var(--space-1); }
+.svs-sign { color: var(--color-brand-text); }
+.svs-market { margin-bottom: var(--space-3); }
+.svs-market h6 { margin-bottom: var(--space-1); }
+.svs-odds { display: grid; grid-template-columns: repeat(auto-fill, minmax(5.5rem, 1fr)); gap: var(--space-1); margin-bottom: var(--space-1); }
+.svs-odd { display: flex; justify-content: space-between; gap: var(--space-1); padding: var(--space-1) var(--space-2); border: 1px solid var(--color-border); border-radius: var(--radius-sm); background: var(--color-surface-muted); font-variant-numeric: tabular-nums; }
+.svs-odd small { color: var(--color-text-muted); }
+.svs-note { margin: var(--space-1) 0 var(--space-2); color: var(--color-text-muted); font-size: var(--font-size-xs); }
 .svs-draw { margin: var(--space-2) 0 var(--space-3); font-size: var(--font-size-sm); line-height: var(--line-height-body); }
 .svs-draw > summary { cursor: pointer; font-weight: var(--font-weight-bold); }
 .svs-draw h5 { margin: var(--space-3) 0 var(--space-1); }
 .svs-draw p { margin: 0 0 var(--space-2); }
+.svs-more-odds > summary { cursor: pointer; font-weight: var(--font-weight-bold); margin-bottom: var(--space-2); }

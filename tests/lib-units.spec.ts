@@ -3082,9 +3082,10 @@ test.describe('transfermarkt: skadelistan fyller på FotMob', () => {
     expect(teams.Leicester.players[0].injury).toBeNull(); // okand spelare: ingen gissning
   });
 
-  test('TM_INJURY_LEAGUES: de engelska Stryktipsligorna', async () => {
+  test('TM_INJURY_LEAGUES: alla ligor med Transfermarkt-tävling, de engelska Stryktipsligorna med', async () => {
     const { TM_INJURY_LEAGUES, TM_LEAGUE } = await lib('transfermarkt.mjs');
-    expect(TM_INJURY_LEAGUES).toEqual(['PL', 'CH', 'EL1', 'EL2']);
+    for (const c of ['PL', 'CH', 'EL1', 'EL2', 'SA', 'BL', 'AS']) expect(TM_INJURY_LEAGUES).toContain(c);
+    expect(TM_INJURY_LEAGUES).toEqual(Object.keys(TM_LEAGUE));
     for (const c of TM_INJURY_LEAGUES) expect(TM_LEAGUE[c]).toBeTruthy();
   });
 });
@@ -4573,6 +4574,45 @@ test.describe('svs-matchinfo.js: panelen i matchkortet', () => {
     expect(draw).toContain('<p>Rad två</p>');
     expect(svsDrawAnalysis({ svsInfo: { drawAnalyses: [] } }, keep)).toBe('');
   });
+
+  // Upplagt som hos Svenska Spel (2026-10-20): flikar, bara flikar med data, en synlig åt gången, hemma rött/borta blått
+  test('flikar som hos Svenska Spel: bara flikar med data, första synlig, växlare, radar och huvudspel', async () => {
+    const { svsInfoPanel } = await import(pathToFileURL(path.join(ROOT, 'gui', 'public', 'svs-matchinfo.js')).href);
+    const keep = (k: string) => ` data-keep="${k}"`;
+    const ev = {
+      eventNumber: 1, home: 'Alfa', away: 'Beta', odds: [1.8, 3.6, 4.2], svenskaFolket: [60, 22, 18],
+      winProbability: { home: 0.5, draw: 0.25, away: 0.25 },
+      form: [{ team: 'Alfa', letters: ['V', 'F'], matches: [{ date: '2026-10-12', home: 'Alfa', away: 'Gamma', hg: 2, ag: 0, result: 'V' }] }],
+      formHome: { team: 'Alfa', letters: ['V'], matches: [{ date: '2026-10-01', home: 'Alfa', away: 'Delta', hg: 1, ag: 0, result: 'V' }] },
+      xStats: { season: { xp: { home: 5.1, away: 7.5 }, tablePosition: { home: 3, away: 9 } }, last5: { xp: { home: 4, away: 4 } } },
+      teamStyle: { home: { possession: 0.7, chancesCreated: 0.5 }, away: { possession: 0.2 } },
+      table: { rows: [{ pos: 1, team: 'Alfa', played: 6, w: 5, d: 1, l: 0, gd: 9, pts: 16 }], home: [{ pos: 1, team: 'Alfa', played: 3, w: 3, d: 0, l: 0, gd: 5, pts: 9 }] },
+      experts: [{ author: 'Expert', signs: '1X', text: 'Rad ett' }],
+      kambi: [{ market: 'Antal mål', outcomes: [{ label: 'Över', line: 2.5, odds: 1.6 }] }, { market: 'Antal hörnor för Alfa', outcomes: [{ label: 'Över', line: 4.5, odds: 1.9 }] }],
+    };
+    const html = svsInfoPanel({ product: 'stryktipset', svsInfo: { events: [ev] } }, { eventNumber: 1 }, keep);
+    const tabs = [...html.matchAll(/class="svs-tabs"[\s\S]*?<\/div>/g)][0][0];
+    const names = [...tabs.matchAll(/data-svs-val="([^"]+)"/g)].map((m) => m[1]);
+    expect(names).toEqual(['oversikt', 'statistik', 'xstats', 'tabell', 'analys', 'oddset']);
+    // Bara första fliken synlig
+    const panes = [...html.matchAll(/data-svs-pane="svs-stryktipset-1" data-svs-val="(\w+)"( hidden)?/g)];
+    expect(panes.filter((m) => !m[2]).map((m) => m[1])).toEqual(['oversikt']);
+    // Växlare: form alla/hemma-borta, xStats säsong/5 senaste, tabell totalt/hemma (borta saknas -> ingen knapp)
+    expect(html).toContain('data-svs-group="svs-stryktipset-1-form"');
+    expect(html).toContain('data-svs-val="last5"');
+    expect(html).toContain('data-svs-val="hemma"');
+    expect(html).not.toContain('data-svs-val="borta"');
+    // Form som bollar, radar, bästa värdet färgat (lägre tabellplats bäst), sannolikt resultat
+    expect(html).toContain('<span class="f-V">V</span><span class="f-F">F</span>');
+    expect(html).toContain('<svg class="svs-radar"');
+    expect(html).toMatch(/<td class="is-home">3<\/td><th>Tabellplacering/);
+    expect(html).toMatch(/<td class="is-away">7,5<\/td>/);
+    expect(html).toContain('Sannolikt resultat');
+    // Oddset: fulltid och huvudspel öppna, övriga hopfällda
+    expect(html).toContain('<h6>Fulltid</h6>');
+    expect(html).toMatch(/<h6>Antal mål<\/h6>[\s\S]*<details class="svs-more-odds"><summary>Fler spel \(1 /);
+    expect(html).toContain('tippar <b class="svs-sign">1 + X</b>');
+  });
 });
 
 test.describe('tackling-model: tacklingar på bet365 (spelare, lag, match)', () => {
@@ -4872,5 +4912,152 @@ test.describe('vakt: stoppar trasiga commits och publiceringar', () => {
     expect(pub.indexOf('scripts/vakt.mjs')).toBeGreaterThan(-1);
     expect(pub.indexOf('vakt.mjs --sajt site')).toBeGreaterThan(pub.indexOf('build-static-site.mjs'));
     expect(pub.indexOf('vakt.mjs --sajt site')).toBeLessThan(pub.indexOf('wrangler'));
+  });
+});
+
+test.describe('ägarlås: bara ägarsessionen rör stryktipsfilerna', () => {
+  const krok = () => import(pathToFileURL(path.join(ROOT, 'scripts', 'agare-krok.mjs')).href);
+  const cfg = { omraden: { stryktips: { agent: 'agaren', filer: ['gui/public/stryk*', 'scripts/*stryk*', 'tests/stryktips*', 'docs/stryktipset/**'] } } };
+  const ren = { modified: () => [], staged: () => [] };
+  const abs = (rel: string) => path.join(ROOT, ...rel.split('/'));
+
+  test('Edit/Write på ägda filer nekas andra sessioner, ägaren och andra filer släpps', async () => {
+    const { decide } = await krok();
+    const edit = (rel: string, session: string, tool = 'Edit') => decide({ tool, input: { file_path: abs(rel) }, session }, cfg, ren, ROOT);
+    expect(edit('gui/public/stryktips.js', 'annan')).toContain('stryktips');
+    expect(edit('gui/public/stryk-engine.js', 'annan', 'Write')).toContain('ägs av session agaren');
+    expect(edit('docs/stryktipset/2026-10-10-omgang.md', 'annan')).toContain('stryktips');
+    expect(edit('gui/public/stryktips.js', 'agaren')).toBeNull();
+    expect(edit('gui/public/hastar.js', 'annan')).toBeNull();
+    expect(edit('config/agare.json', 'agaren')).toContain('bara användaren');
+  });
+
+  test('skal: skriva, återställa eller stagea en ägd fil nekas, läsa går', async () => {
+    const { decide } = await krok();
+    const bash = (command: string, git = ren, session = 'annan') => decide({ tool: 'Bash', input: { command }, session }, cfg, git, ROOT);
+    expect(bash('git checkout HEAD -- gui/public/stryk-engine.js')).toContain('stryk-engine.js');
+    expect(bash('echo x > gui/public/stryktips.js')).toContain('stryktips.js');
+    expect(bash('git add gui/public/stryktips.js')).toContain('stryktips.js');
+    expect(bash('sed -i s/a/b/ scripts/fetch-stryktipset.mjs')).toContain('fetch-stryktipset');
+    expect(bash('grep -n spik gui/public/stryktips.js 2>/dev/null')).toBeNull();
+    expect(bash('sed -n 1,5p gui/public/stryktips.js')).toBeNull();
+    expect(bash('echo x > config/agare.json')).toContain('bara användaren');
+    expect(bash('git add config/agare.json')).toBeNull();
+  });
+
+  test('breda git-kommandon nekas bara när ägda filer är ändrade; commit nekas när de är stageade', async () => {
+    const { decide } = await krok();
+    const andrad = { modified: () => ['gui/public/stryktips.js', 'config/agare.json'], staged: () => [] };
+    const stagead = { modified: () => [], staged: () => ['tests/stryktips.spec.ts'] };
+    const bash = (command: string, git: any, session = 'annan') => decide({ tool: 'Bash', input: { command }, session }, cfg, git, ROOT);
+    for (const c of ['git add -A', 'git add .', 'git commit -am x', 'git stash', 'git restore .', 'git checkout -- .', 'git reset --hard'])
+      expect(bash(c, andrad), c).toContain('stryktips.js');
+    expect(bash('git add -A', ren)).toBeNull();
+    expect(bash('git add -A', { modified: () => ['config/agare.json'], staged: () => [] })).toBeNull();
+    expect(bash('git commit --amend -m x', ren)).toBeNull();
+    expect(bash('git commit -m x', stagead)).toContain('tests/stryktips.spec.ts');
+    expect(bash('git add -A', andrad, 'agaren')).toBeNull();
+  });
+
+  test('config/agare.json: stryktips ägs av en session och täcker sidans, motorns och hämtningens filer', async () => {
+    const { lockedArea } = await krok();
+    const real = JSON.parse(fs.readFileSync(path.join(ROOT, 'config', 'agare.json'), 'utf8'));
+    expect(real.omraden.stryktips.agent).toMatch(/^[0-9a-f-]{36}$/);
+    for (const f of ['gui/public/stryktips.js', 'gui/public/stryk-engine.js', 'gui/stryktips-routes.mjs', 'scripts/fetch-stryktipset.mjs', 'scripts/lib/stryk-calibration.mjs', 'tests/stryktips-regler.spec.ts'])
+      expect(lockedArea(f, real, 'annan')?.namn, f).toBe('stryktips');
+    expect(lockedArea('gui/public/app.js', real, 'annan')).toBeNull();
+  });
+});
+
+// ---------- key-absences.mjs (nyckelspelare med frånvarorisk, 2026-10-20) ----------
+
+test.describe('nyckelspelare: frånvarorisk ur FotMobs speltid', () => {
+  // Lag 1 hemma i alla matcher mot lag 2..; spelare 10-20 ordinarie, mins[pid] = minuter per match (0 = inte med)
+  const mkStore = (mins: Record<number, number[]>, n = 9, start = '2026-08-01') => {
+    const matches: Record<string, any> = {};
+    for (let i = 0; i < n; i++) {
+      const d = new Date(Date.parse(start) + i * 7 * 864e5).toISOString().slice(0, 10);
+      const p = Object.entries(mins).filter(([, m]) => (m[i] ?? 90) > 0).map(([pid, m]) => [Number(pid), 0, 1, m[i] ?? 90, 0.2, 0.1, 0, 0]);
+      matches[`m${i}`] = { d, h: 1, a: 100 + i, xg: [1.5, 1], p };
+    }
+    return { league: 'T', names: { 10: 'Finn Delap' }, matches };
+  };
+  const rates = { full: { n: 1000, start: 0.89, play: 0.93 }, off_early: { n: 100, start: 0.48, play: 0.68 }, off_habit: { n: 100, start: 0.54, play: 0.82 },
+    off_mid: { n: 100, start: 0.73, play: 0.88 }, sub: { n: 100, start: 0.55, play: 0.86 }, missed1: { n: 100, start: 0.5, play: 0.65 }, missed2: { n: 100, start: 0.24, play: 0.4 } };
+
+  test('status efter senaste matchen: full, utbytt tidigt (ovanligt/vana), 61–79 min, inhoppare, missat en/två', async () => {
+    const { statusBefore, teamMatches } = await lib('key-absences.mjs');
+    const s = mkStore({ 10: [90, 90, 90, 90, 90, 90, 90, 90, 60], 11: [60, 58, 62, 60, 61, 59, 60, 60, 57], 12: [90, 90, 90, 90, 90, 90, 90, 90, 70],
+      13: [90, 90, 90, 90, 90, 90, 90, 90, 0], 14: [90, 90, 90, 90, 90, 90, 90, 0, 0], 15: [90, 90, 90, 90, 90, 90, 90, 90, 90] });
+    const tm = teamMatches(s, 1);
+    expect(tm).toHaveLength(9);
+    expect(statusBefore(tm, 9, 10)).toBe('off_early');
+    expect(statusBefore(tm, 9, 11)).toBe('off_habit');
+    expect(statusBefore(tm, 9, 12)).toBe('off_mid');
+    expect(statusBefore(tm, 9, 13)).toBe('missed1');
+    expect(statusBefore(tm, 9, 14)).toBe('missed2');
+    expect(statusBefore(tm, 9, 15)).toBe('full');
+    s.matches.m8.p.find((p: number[]) => p[0] === 15)[2] = 0; // inhoppare
+    expect(statusBefore(teamMatches(s, 1), 9, 15)).toBe('sub');
+  });
+
+  test('flaggar bara status minst 25 enheter under ordinarie, skada i truppen går före, sålda och gammal data hoppas över', async () => {
+    const { keyAbsences, FLAG_DROP } = await lib('key-absences.mjs');
+    expect(FLAG_DROP).toBe(0.25);
+    const s = mkStore({ 10: [90, 90, 90, 90, 90, 90, 90, 90, 60], 12: [90, 90, 90, 90, 90, 90, 90, 90, 70], 15: [90, 90, 90, 90, 90, 90, 90, 90, 90],
+      16: [90, 90, 90, 90, 90, 90, 90, 90, 0] });
+    const squad = [{ id: 10, name: 'Finn Delap' }, { id: 12, name: 'B' }, { id: 15, name: 'C', injury: { name: 'Knee injury', source: 'Transfermarkt' } }];
+    const r = keyAbsences({ store: s, teamId: 1, date: '2026-10-04', squadPlayers: squad, rates });
+    const byId = Object.fromEntries(r.players.map((p: any) => [p.id, p]));
+    expect(byId[10]).toMatchObject({ status: 'off_early', pStart: 0.48, lastMin: 60, name: 'Finn Delap' });
+    expect(byId[12]).toBeUndefined(); // 61–79 min = taktiskt byte
+    expect(byId[15]).toMatchObject({ status: 'injured', pStart: null, injury: { name: 'Knee injury', source: 'Transfermarkt' } });
+    expect(byId[16]).toBeUndefined(); // inte i truppen = såld
+    expect(r.lastMatch).toBe('2026-09-26');
+    expect(keyAbsences({ store: s, teamId: 1, date: '2026-12-01', squadPlayers: squad, rates })).toBeNull(); // uppehåll > 30 dagar
+    expect(keyAbsences({ store: mkStore({ 10: [90] }, 5), teamId: 1, date: '2026-09-10', rates })).toBeNull(); // färre än 8 matcher
+  });
+
+  test('klartext, högst tre per lag, ingen dubblett mot FPL-raden', async () => {
+    const { attachKeyAbsences, keyNote } = await lib('key-absences.mjs');
+    expect(keyNote('Burton', { name: 'Finn Delap', goals: 3, assists: 0, share: 0.04, starts: 7, of: 8, status: 'off_early', lastMin: 60, pStart: 0.48 }))
+      .toBe('Burton: Finn Delap (3 mål) utbytt efter 60 min senast – startar nästa i 48 % av fallen');
+    expect(keyNote('X', { name: 'A B', goals: 0, assists: 0, share: 0, starts: 6, of: 8, status: 'injured', injury: { name: 'Knee injury', expectedReturn: 'Unknown', source: 'Transfermarkt' }, pStart: null }))
+      .toBe('X: A B (startat 6 av 8) skadad: Knee injury (Transfermarkt)');
+    const mins: Record<number, number[]> = {};
+    for (let pid = 10; pid < 15; pid++) mins[pid] = [90, 90, 90, 90, 90, 90, 90, 90, 0];
+    const store = mkStore(mins);
+    const squads = { T: { Hemma: { fotmobId: 1, players: [10, 11, 12, 13, 14].map((id) => ({ id, name: `Spelare Nr${id}` })) }, Borta: { fotmobId: 999, players: [] } } };
+    const tip: any = { league: 'T', date: '2026-10-04', home: 'Hemma', away: 'Borta', availabilityNotes: ['HOME key out: Nr10'] };
+    const other: any = { league: 'CUP', date: '2026-10-04', home: 'Hemma', away: 'Borta', keyNotes: ['gammal'] };
+    expect(attachKeyAbsences([tip, other], { stores: { T: store }, squads, rates })).toBe(1);
+    expect(tip.keyAbsences.home).toHaveLength(3);
+    expect(tip.keyAbsences.home.some((p: any) => p.id === 10)).toBe(false); // redan i FPL-raden
+    expect(tip.keyNotes[0]).toMatch(/^Hemma: Spelare Nr1[1-4] .*missade senaste ligamatchen – startar nästa i 50 % av fallen$/);
+    expect(other.keyNotes).toBeUndefined(); // gammal rad rensas
+  });
+
+  test('lagringen behåller lagets 12 senaste matcher och bara använda namn', async () => {
+    const { pruneStore, compactPlayer, KEEP_PER_TEAM } = await lib('key-absences.mjs');
+    expect(KEEP_PER_TEAM).toBe(12);
+    const s: any = mkStore({ 10: Array(15).fill(90) }, 15);
+    for (const m of Object.values(s.matches) as any[]) m.a = 2; // samma motståndare: en match behålls om något lag behöver den
+    s.names = { 10: 'A', 99: 'Borta' };
+    pruneStore(s);
+    expect(Object.keys(s.matches)).toHaveLength(12);
+    expect(s.matches.m0).toBeUndefined();
+    expect(s.matches.m14).toBeDefined();
+    expect(s.names).toEqual({ 10: 'A' });
+    expect(compactPlayer({ id: '7', t: 1, st: 1, s: { min: 88, xg: 0.123, xa: 0.051, g: 1 } })).toEqual([7, 1, 1, 88, 0.12, 0.05, 1, 0]);
+  });
+
+  test('kalibreringen finns och är rimlig: ordinarie som spelade hela matchen startar oftast, två missade i rad mest sällan', async () => {
+    const doc = JSON.parse(fs.readFileSync(path.join(ROOT, 'config', 'nyckelspelare-chans.json'), 'utf8'));
+    const r = doc.rates;
+    for (const k of ['full', 'off_early', 'off_habit', 'off_mid', 'sub', 'missed1', 'missed2']) expect(r[k]?.n, k).toBeGreaterThan(1000);
+    expect(r.full.start).toBeGreaterThan(0.8);
+    expect(r.missed2.start).toBeLessThan(r.missed1.start);
+    expect(r.off_early.start).toBeLessThan(r.off_mid.start);
+    expect(r.off_mid.start).toBeLessThan(r.full.start);
   });
 });
