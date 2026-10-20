@@ -1,14 +1,34 @@
 // Oddsrorelser i alla ligor for matcher inom 24 h (tip.oddsMove fran pro-lagret, scripts/lib/odds-history.mjs).
-// Kors efter varje hamtning i oddsschemat. Utdata: data/reports/oddsrorelser.json + docs/analys/oddsrorelser.md
+// Kors efter varje hamtning i oddsschemat. Utdata: data/reports/oddsrorelser.json + docs/analys/oddsrorelser.md,
+// och loggen data/oddsrorelser/<YYYY-MM>.json (alla sena rorelser, utvarderas med npm run oddsrorelser:analys).
 //   node scripts/odds-rorelser.mjs
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { summarizeMoves } from './lib/odds-rorelser.mjs';
+import { summarizeMoves, logRecord } from './lib/odds-rorelser.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const tips = JSON.parse(fs.readFileSync(path.join(root, 'data', 'tips-latest.json'), 'utf8').replace(/^﻿/, ''));
-const rows = summarizeMoves([...(tips.bestUpcoming ?? []), ...(tips.allCandidates ?? [])]);
+const allTips = [...(tips.bestUpcoming ?? []), ...(tips.allCandidates ?? [])];
+const rows = summarizeMoves(allTips);
+
+// Logg: alla matcher inom 24 h med rorelse, en post per match (senaste hamtningen narmast avspark vinner)
+const logDir = path.join(root, 'data', 'oddsrorelser');
+fs.mkdirSync(logDir, { recursive: true });
+const byMonth = {};
+const inRows = new Set(rows.map((r) => `${r.league}|${r.match}|${r.kickoffUtc}`));
+for (const t of allTips) {
+  if (!inRows.has(`${t.league}|${t.match}|${t.kickoffUtc}`)) continue;
+  const rec = logRecord(t);
+  if (rec) (byMonth[rec.kickoffUtc.slice(0, 7)] ??= {})[rec.key] = rec;
+}
+for (const [month, recs] of Object.entries(byMonth)) {
+  const file = path.join(logDir, `${month}.json`);
+  const doc = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, 'utf8')) : { matches: {} };
+  Object.assign(doc.matches, recs);
+  doc.updatedAt = new Date().toISOString();
+  fs.writeFileSync(file, `${JSON.stringify(doc, null, 1)}\n`);
+}
 const flagged = rows.filter((r) => r.flagged.length);
 
 const fmt = (x) => (x == null ? '–' : String(x).replace('.', ','));

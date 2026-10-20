@@ -64,6 +64,7 @@ export function mergeNameVariants(matches, same, distinct = () => false) {
 export const ODDS_MOVE_FLAG_PP = 4; // total rorelse sedan forsta noteringen
 export const ODDS_STEP_FLAG_PP = 3; // senaste steget (t.ex. 08:00 -> 1 h fore avspark)
 export const ODDS_POINTS_MAX = 30;
+export const ODDS_MOVE_WINDOW_H = 24; // sena rorelser: bara noteringar sista dygnet fore avspark
 const MOVE_KEYS = ['home', 'draw', 'away', 'over25', 'under25'];
 
 /** Lagg till en punkt { at, src, odds, fair } om kallan inte redan har en punkt fran samma hamtning. true = ny punkt. */
@@ -88,13 +89,16 @@ const ppOf = (a, b, k) => Math.round((b.fair[k] - a.fair[k]) * 1000) / 10;
  * (+ = marknaden tror mer pa utfallet) och senaste steget. flagged = utfall med total rorelse >= flagPp eller
  * senaste steg >= stepPp. Serien (series) ar kallans noteringar for /tips. null utan tva noteringar fran samma kalla.
  * Utan tidsserie (aldre poster): forsta mot senaste snapshot.
+ * since (ISO): bara noteringar fran och med den tiden - pro-lagret skickar avspark - 24 h. En vecka gammal notering
+ * (Vasco-Boca 2026-10-21: forsta noteringen fore forsta semifinalen) ar inte en sen rorelse.
  */
-export function oddsMovement(entry, flagPp = ODDS_MOVE_FLAG_PP, stepPp = ODDS_STEP_FLAG_PP) {
+export function oddsMovement(entry, flagPp = ODDS_MOVE_FLAG_PP, stepPp = ODDS_STEP_FLAG_PP, since = null) {
   if (!entry) return null;
+  const inWindow = (at) => !since || (at && Date.parse(at) >= Date.parse(since));
   let pts = null;
   let src = null;
   const bySrc = {};
-  for (const p of entry.points ?? []) if (p.fair) (bySrc[p.src] ??= []).push(p);
+  for (const p of entry.points ?? []) if (p.fair && inWindow(p.at)) (bySrc[p.src] ??= []).push(p);
   // Kallan med senaste noteringen bland dem med minst tva
   for (const [s, list] of Object.entries(bySrc)) {
     if (list.length >= 2 && (!pts || list.at(-1).at > pts.at(-1).at)) { pts = list; src = s; }
@@ -103,6 +107,7 @@ export function oddsMovement(entry, flagPp = ODDS_MOVE_FLAG_PP, stepPp = ODDS_ST
     const f = entry.first, l = entry.last;
     // Olika facit (snitt av bolag mot Pinnacle) ger skenrorelse - bara samma facit jamfors
     if (!f?.fair || !l?.fair || (f.oddsAt ?? f.at) === (l.oddsAt ?? l.at) || f.fairSource !== l.fairSource) return null;
+    if (!inWindow(f.oddsAt ?? f.at)) return null;
     pts = [{ ...f, at: f.oddsAt ?? f.at }, { ...l, at: l.oddsAt ?? l.at }];
     src = 'api';
   }
