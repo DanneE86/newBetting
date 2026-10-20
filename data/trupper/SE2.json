@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-04T09:27:34.347Z",
+ "updatedAt": "2026-10-20T17:08:46.118Z",
  "league": "SE2",
  "fotmobId": 168,
  "source": "FotMob",
@@ -212,7 +212,7 @@
      "value": 381850,
      "rating": null,
      "goals": 0,
-     "assists": 2,
+     "assists": 3,
      "penalties": 0,
      "yellow": 2,
      "red": 1,
@@ -287,7 +287,7 @@
      "height": null,
      "value": 1464366,
      "rating": null,
-     "goals": 0,
+     "goals": 1,
      "assists": 1,
      "penalties": 0,
      "yellow": 5,
@@ -300,7 +300,7 @@
      "role": "midfielders",
      "position": "Midfielder",
      "number": 31,
-     "age": 17,
+     "age": 18,
      "born": "2008-10-14",
      "country": "Sweden",
      "height": null,
@@ -349,7 +349,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Knee surgery",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 212831,
@@ -357,14 +362,14 @@
      "role": "attackers",
      "position": "ST",
      "number": 5,
-     "age": 33,
+     "age": 34,
      "born": "1992-10-05",
      "country": "Sweden",
      "height": 183,
      "value": 332251,
      "rating": null,
-     "goals": 16,
-     "assists": 3,
+     "goals": 18,
+     "assists": 5,
      "penalties": 1,
      "yellow": 1,
      "red": 0,
@@ -376,13 +381,13 @@
      "role": "attackers",
      "position": "CM,RW",
      "number": 8,
-     "age": 28,
+     "age": 29,
      "born": "1997-10-14",
      "country": "England",
      "height": null,
      "value": 76991,
      "rating": null,
-     "goals": 8,
+     "goals": 9,
      "assists": 5,
      "penalties": 0,
      "yellow": 2,
@@ -393,7 +398,7 @@
      "id": 956156,
      "name": "Tim Prica",
      "role": "attackers",
-     "position": "RW,ST,CM",
+     "position": "RW,CM,ST",
      "number": 9,
      "age": 24,
      "born": "2002-04-23",
@@ -421,7 +426,7 @@
      "value": 192245,
      "rating": null,
      "goals": 1,
-     "assists": 2,
+     "assists": 3,
      "penalties": 0,
      "yellow": 1,
      "red": 0,
@@ -504,7 +509,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-04T09:27:34.347Z",
+   "fetchedAt": "2026-10-20T17:08:46.118Z",
    "coachHistory": [
     {
      "name": "Eldar Abdulic",
@@ -515,132 +520,132 @@
     "169347": {
      "name": "David Mitov Nilsson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "212831": {
      "name": "Christoffer Nyman",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "438780": {
      "name": "Alexander Fransson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "566157": {
      "name": "Filip Dagerstål",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "800516": {
      "name": "Ryan Nelson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "940290": {
      "name": "Viktor Christiansson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "956156": {
      "name": "Tim Prica",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "965713": {
      "name": "Ísak Sigurgeirsson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1108990": {
      "name": "Anton Eriksson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1197341": {
      "name": "Fabian Holst-Larsen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1281735": {
      "name": "Alexander Opsahl",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1338860": {
      "name": "Hugo Fagerberg",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1377463": {
      "name": "Jonas Weber",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1406298": {
      "name": "Noel Sernelius",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1412849": {
      "name": "Leo Lif",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1413151": {
      "name": "Moutaz Neffati",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1414417": {
      "name": "Elias Jemal",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1419413": {
      "name": "Ture Sandberg",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1429609": {
      "name": "Stephen Bolma",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1637865": {
      "name": "Albert Aleksanjan",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1693533": {
      "name": "Theo Krantz",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1717372": {
      "name": "Axel Brönner",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1800427": {
      "name": "Kylian Seka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1807796": {
      "name": "Viggo Fälth",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1821410": {
      "name": "Algot Hjelm",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1909453": {
      "name": "Mbaye Cisse",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1939768": {
      "name": "Victor Romanus",
@@ -751,7 +756,7 @@
      "value": 83126,
      "rating": null,
      "goals": 1,
-     "assists": 3,
+     "assists": 4,
      "penalties": 0,
      "yellow": 2,
      "red": 0,
@@ -827,9 +832,9 @@
      "value": 173189,
      "rating": null,
      "goals": 0,
-     "assists": 0,
+     "assists": 1,
      "penalties": 0,
-     "yellow": 1,
+     "yellow": 2,
      "red": 0,
      "injury": null
     },
@@ -845,10 +850,10 @@
      "height": 190,
      "value": 293965,
      "rating": null,
-     "goals": 0,
+     "goals": 1,
      "assists": 1,
      "penalties": 0,
-     "yellow": 1,
+     "yellow": 2,
      "red": 1,
      "injury": null
     },
@@ -1000,7 +1005,7 @@
      "goals": 4,
      "assists": 3,
      "penalties": 0,
-     "yellow": 3,
+     "yellow": 4,
      "red": 0,
      "injury": null
     },
@@ -1016,9 +1021,9 @@
      "height": null,
      "value": null,
      "rating": null,
-     "goals": 16,
-     "assists": 7,
-     "penalties": 2,
+     "goals": 19,
+     "assists": 8,
+     "penalties": 3,
      "yellow": 1,
      "red": 0,
      "injury": null
@@ -1029,16 +1034,16 @@
      "role": "attackers",
      "position": "ST,LW,RM",
      "number": 11,
-     "age": 22,
+     "age": 23,
      "born": "2003-10-06",
      "country": "Sweden",
      "height": null,
      "value": 176276,
      "rating": null,
-     "goals": 10,
+     "goals": 12,
      "assists": 5,
      "penalties": 0,
-     "yellow": 0,
+     "yellow": 1,
      "red": 0,
      "injury": null
     },
@@ -1048,7 +1053,7 @@
      "role": "attackers",
      "position": "ST",
      "number": 14,
-     "age": 23,
+     "age": 24,
      "born": "2002-10-13",
      "country": "Sweden",
      "height": null,
@@ -1100,7 +1105,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-04T09:27:34.347Z",
+   "fetchedAt": "2026-10-20T17:08:46.118Z",
    "coachHistory": [
     {
      "name": "Christoffer Andersson",
@@ -1116,117 +1121,117 @@
     "858728": {
      "name": "Godwin Aguda",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "980247": {
      "name": "Nils Bertilsson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1016609": {
      "name": "William Videhult",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1034556": {
      "name": "Alexander Salo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1083226": {
      "name": "Melker Nilsson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1126153": {
      "name": "Tim Stålheden",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1134262": {
      "name": "Gabriel Johansson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1156563": {
      "name": "Linus Borgström",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1172701": {
      "name": "Noel Hansson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1178397": {
      "name": "Hugo Komano",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1323910": {
      "name": "Lassina Sangaré",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1338756": {
      "name": "Gustav Lillienberg",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1351903": {
      "name": "Oskar Lindberg",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1352019": {
      "name": "Anton Andersson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1419412": {
      "name": "Argjend Miftari",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1457807": {
      "name": "Elias Mohammad",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1489395": {
      "name": "Ayo Rupia-Ellis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1527127": {
      "name": "Hampus Källström",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1614745": {
      "name": "Lion Beqiri",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1733435": {
      "name": "Albin Andersson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1910042": {
      "name": "Wilton Ljunggren",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1946851": {
      "name": "Gazton Alexandersson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1979058": {
      "name": "Ted Fritiofsson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     }
    },
    "left": [
@@ -1287,7 +1292,7 @@
      "role": "keepers",
      "position": "GK",
      "number": 29,
-     "age": 24,
+     "age": 25,
      "born": "2001-10-07",
      "country": "Sweden",
      "height": 189,
@@ -1313,7 +1318,7 @@
      "value": 230325,
      "rating": null,
      "goals": 2,
-     "assists": 2,
+     "assists": 3,
      "penalties": 0,
      "yellow": 3,
      "red": 0,
@@ -1334,7 +1339,7 @@
      "goals": 0,
      "assists": 0,
      "penalties": 0,
-     "yellow": 0,
+     "yellow": 1,
      "red": 0,
      "injury": null
     },
@@ -1353,7 +1358,7 @@
      "goals": 0,
      "assists": 1,
      "penalties": 0,
-     "yellow": 3,
+     "yellow": 4,
      "red": 0,
      "injury": null
     },
@@ -1361,7 +1366,7 @@
      "id": 1211421,
      "name": "Noah Johansson",
      "role": "defenders",
-     "position": "RB,CM,CB",
+     "position": "CM,RB",
      "number": 15,
      "age": 23,
      "born": "2003-09-21",
@@ -1488,26 +1493,12 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1255070,
-     "name": "Oliver Alfonsi",
-     "role": "midfielders",
-     "position": "ST",
-     "number": 14,
-     "age": 23,
-     "born": "2003-06-03",
-     "country": "Sweden",
-     "height": 183,
-     "value": 213178,
-     "rating": null,
-     "goals": 1,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Ankle injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1063330,
@@ -1540,7 +1531,7 @@
      "height": 180,
      "value": 138062,
      "rating": null,
-     "goals": 4,
+     "goals": 5,
      "assists": 3,
      "penalties": 1,
      "yellow": 5,
@@ -1619,7 +1610,7 @@
      "goals": 0,
      "assists": 1,
      "penalties": 0,
-     "yellow": 0,
+     "yellow": 1,
      "red": 0,
      "injury": null
     },
@@ -1656,6 +1647,25 @@
      "rating": null,
      "goals": 1,
      "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1255070,
+     "name": "Oliver Alfonsi",
+     "role": "attackers",
+     "position": "ST",
+     "number": 14,
+     "age": 23,
+     "born": "2003-06-03",
+     "country": "Sweden",
+     "height": 183,
+     "value": 213178,
+     "rating": null,
+     "goals": 1,
+     "assists": 1,
      "penalties": 0,
      "yellow": 0,
      "red": 0,
@@ -1703,7 +1713,7 @@
      "id": 1311389,
      "name": "Lucas Sibelius",
      "role": "attackers",
-     "position": "LM,LW,ST",
+     "position": "LW,LM,ST",
      "number": 23,
      "age": 24,
      "born": "2002-09-07",
@@ -1743,7 +1753,7 @@
      "role": "attackers",
      "position": "ST",
      "number": 49,
-     "age": 24,
+     "age": 25,
      "born": "2001-10-19",
      "country": "Haiti",
      "height": 196,
@@ -1757,7 +1767,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-04T09:27:34.347Z",
+   "fetchedAt": "2026-10-20T17:08:46.118Z",
    "coachHistory": [
     {
      "name": "Victor Salwen",
@@ -1768,7 +1778,7 @@
     "258184": {
      "name": "Joakim Lindner",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "311261": {
      "name": "Oliver Silverholt",
@@ -1778,132 +1788,132 @@
     "330663": {
      "name": "Hampus Zackrisson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "864701": {
      "name": "Albin Winbo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "892380": {
      "name": "Laorent Shabani",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "895778": {
      "name": "Oscar Ekman",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "932289": {
      "name": "Erion Sadiku",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "932910": {
      "name": "Wilhelm Ärlig",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1031427": {
      "name": "Axel Vidjeskog",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1063330": {
      "name": "Anton Thorsson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1078088": {
      "name": "Shanyder Borgelin",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1159058": {
      "name": "Niklas Dahlström",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1161871": {
      "name": "Emil Hellman",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1175947": {
      "name": "Lucas Kåhed",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1203828": {
      "name": "Daniel Strindholm",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1211421": {
      "name": "Noah Johansson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1231713": {
      "name": "Gustav Broman",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1246262": {
      "name": "Isak Vidjeskog",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1255070": {
      "name": "Oliver Alfonsi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1311389": {
      "name": "Lucas Sibelius",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1312012": {
      "name": "Edvin Tellgren",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1459918": {
      "name": "Oliver Brynéus",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1627301": {
      "name": "William Selvén",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1716518": {
      "name": "Nuurdin Ali Mohudin",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1716520": {
      "name": "Olle Werner",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1735113": {
      "name": "Jonathan Nilsson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1980574": {
      "name": "Milan Kordik",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "2130833": {
      "name": "Oliver Maartensson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     }
    },
    "left": [
@@ -2066,7 +2076,7 @@
      "value": 105953,
      "rating": null,
      "goals": 0,
-     "assists": 0,
+     "assists": 1,
      "penalties": 0,
      "yellow": 3,
      "red": 0,
@@ -2088,44 +2098,6 @@
      "assists": 0,
      "penalties": 1,
      "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 935007,
-     "name": "Daniel Miljanović",
-     "role": "defenders",
-     "position": "RM,RWB,RB",
-     "number": 27,
-     "age": 25,
-     "born": "2001-04-11",
-     "country": "Sweden",
-     "height": 178,
-     "value": 174444,
-     "rating": null,
-     "goals": 0,
-     "assists": 3,
-     "penalties": 0,
-     "yellow": 3,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1231769,
-     "name": "Yannick Adjoumani",
-     "role": "defenders",
-     "position": "LM,LWB,LB",
-     "number": 28,
-     "age": 23,
-     "born": "2002-12-29",
-     "country": "Ivory Coast",
-     "height": 168,
-     "value": 135315,
-     "rating": null,
-     "goals": 2,
-     "assists": 3,
-     "penalties": 0,
-     "yellow": 1,
      "red": 0,
      "injury": null
     },
@@ -2152,7 +2124,7 @@
      "id": 1313682,
      "name": "José Masllorens",
      "role": "midfielders",
-     "position": "CM",
+     "position": "CDM",
      "number": 6,
      "age": 25,
      "born": "2001-05-07",
@@ -2201,7 +2173,7 @@
      "goals": 2,
      "assists": 3,
      "penalties": 0,
-     "yellow": 2,
+     "yellow": 3,
      "red": 0,
      "injury": null
     },
@@ -2282,6 +2254,44 @@
      "injury": null
     },
     {
+     "id": 935007,
+     "name": "Daniel Miljanović",
+     "role": "midfielders",
+     "position": "RM,RWB,RB",
+     "number": 27,
+     "age": 25,
+     "born": "2001-04-11",
+     "country": "Sweden",
+     "height": 178,
+     "value": 174444,
+     "rating": null,
+     "goals": 0,
+     "assists": 3,
+     "penalties": 0,
+     "yellow": 3,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1231769,
+     "name": "Yannick Adjoumani",
+     "role": "midfielders",
+     "position": "LM,LWB,LB",
+     "number": 28,
+     "age": 23,
+     "born": "2002-12-29",
+     "country": "Ivory Coast",
+     "height": 168,
+     "value": 135315,
+     "rating": null,
+     "goals": 3,
+     "assists": 3,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
      "id": 1110551,
      "name": "Abel William Stensrud",
      "role": "attackers",
@@ -2304,7 +2314,7 @@
      "id": 690103,
      "name": "Simon Marklund",
      "role": "attackers",
-     "position": "ST,RW,CM,CAM,RM",
+     "position": "ST,RW,CM,RM,CAM",
      "number": 10,
      "age": 27,
      "born": "1999-09-14",
@@ -2334,7 +2344,7 @@
      "goals": 3,
      "assists": 1,
      "penalties": 0,
-     "yellow": 3,
+     "yellow": 4,
      "red": 0,
      "injury": null
     },
@@ -2358,7 +2368,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-04T09:27:34.347Z",
+   "fetchedAt": "2026-10-20T17:08:46.118Z",
    "coachHistory": [
     {
      "name": "Nemanja Miljanović",
@@ -2369,107 +2379,107 @@
     "78522": {
      "name": "Arnold Origi Otieno",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "438893": {
      "name": "Dennis Widgren",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "690103": {
      "name": "Simon Marklund",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "763228": {
      "name": "Curtis Edwards",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "935007": {
      "name": "Daniel Miljanović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1110551": {
      "name": "Abel William Stensrud",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1180031": {
      "name": "Jabir Abdihakim Ali",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1231769": {
      "name": "Yannick Adjoumani",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1256504": {
      "name": "Emil Özkan",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1269094": {
      "name": "Donald Molls Ntchamda",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1269942": {
      "name": "Amar Begić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1313682": {
      "name": "José Masllorens",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1350841": {
      "name": "Melker Uppenberg",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1351584": {
      "name": "Tyree Griffiths",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1362356": {
      "name": "Abdulla Qasem",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1366349": {
      "name": "Gustav Odenlind",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1387098": {
      "name": "Luka Božičković",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1388053": {
      "name": "Hugo Azzi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1584851": {
      "name": "Sunday Anyanwu",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1624607": {
      "name": "Rasmus Forsell",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1625360": {
      "name": "Jonathan Westerberg",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1761453": {
      "name": "Eseg Yossief Worke",
@@ -2479,12 +2489,12 @@
     "1916829": {
      "name": "Elliot Caarls",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1940001": {
      "name": "Mario Palomino",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     }
    },
    "left": [
@@ -2502,6 +2512,25 @@
    "coach": "Robin Asterhed",
    "players": [
     {
+     "id": 1699809,
+     "name": "Albin Andersson",
+     "role": "keepers",
+     "position": "Keeper",
+     "number": 1,
+     "age": 18,
+     "born": "2008-03-16",
+     "country": "Sweden",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
      "id": 270847,
      "name": "Amr Kaddoura",
      "role": "keepers",
@@ -2516,7 +2545,7 @@
      "goals": 0,
      "assists": 0,
      "penalties": 0,
-     "yellow": 1,
+     "yellow": 2,
      "red": 0,
      "injury": null
     },
@@ -2536,25 +2565,6 @@
      "assists": 0,
      "penalties": 0,
      "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1699809,
-     "name": "Albin Andersson",
-     "role": "keepers",
-     "position": "Keeper",
-     "number": 31,
-     "age": 18,
-     "born": "2008-03-16",
-     "country": "Sweden",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
      "red": 0,
      "injury": null
     },
@@ -2590,7 +2600,7 @@
      "value": 181667,
      "rating": null,
      "goals": 4,
-     "assists": 1,
+     "assists": 2,
      "penalties": 0,
      "yellow": 4,
      "red": 0,
@@ -2627,7 +2637,7 @@
      "height": 181,
      "value": 57471,
      "rating": null,
-     "goals": 0,
+     "goals": 1,
      "assists": 0,
      "penalties": 0,
      "yellow": 1,
@@ -2665,10 +2675,10 @@
      "height": 192,
      "value": 50000,
      "rating": null,
-     "goals": 2,
+     "goals": 3,
      "assists": 0,
      "penalties": 0,
-     "yellow": 6,
+     "yellow": 7,
      "red": 0,
      "injury": null
     },
@@ -2742,7 +2752,7 @@
      "value": 63057,
      "rating": null,
      "goals": 0,
-     "assists": 1,
+     "assists": 2,
      "penalties": 0,
      "yellow": 3,
      "red": 0,
@@ -2801,7 +2811,7 @@
      "goals": 0,
      "assists": 2,
      "penalties": 0,
-     "yellow": 8,
+     "yellow": 9,
      "red": 0,
      "injury": null
     },
@@ -2855,7 +2865,7 @@
      "height": 179,
      "value": 287377,
      "rating": null,
-     "goals": 6,
+     "goals": 8,
      "assists": 0,
      "penalties": 2,
      "yellow": 0,
@@ -2868,14 +2878,14 @@
      "role": "attackers",
      "position": "LW,CAM",
      "number": 10,
-     "age": 25,
+     "age": 26,
      "born": "2000-10-07",
      "country": "Sweden",
      "height": null,
      "value": 76988,
      "rating": null,
-     "goals": 6,
-     "assists": 11,
+     "goals": 7,
+     "assists": 14,
      "penalties": 0,
      "yellow": 5,
      "red": 0,
@@ -2887,14 +2897,14 @@
      "role": "attackers",
      "position": "ST",
      "number": 14,
-     "age": 22,
+     "age": 23,
      "born": "2003-10-08",
      "country": "Denmark",
      "height": null,
      "value": 104379,
      "rating": null,
      "goals": 4,
-     "assists": 0,
+     "assists": 1,
      "penalties": 0,
      "yellow": 0,
      "red": 0,
@@ -2912,7 +2922,7 @@
      "height": 173,
      "value": 107750,
      "rating": null,
-     "goals": 2,
+     "goals": 3,
      "assists": 2,
      "penalties": 0,
      "yellow": 0,
@@ -2953,12 +2963,12 @@
      "goals": 2,
      "assists": 1,
      "penalties": 0,
-     "yellow": 1,
+     "yellow": 2,
      "red": 0,
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-04T09:27:34.347Z",
+   "fetchedAt": "2026-10-20T17:08:46.118Z",
    "coachHistory": [
     {
      "name": "Robin Asterhed",
@@ -2969,97 +2979,97 @@
     "270847": {
      "name": "Amr Kaddoura",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "800502": {
      "name": "Edi Sylisufaj",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "879423": {
      "name": "Andreas Murbeck",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "922363": {
      "name": "Salomo Ojala",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "932275": {
      "name": "Kevin Jensen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "945623": {
      "name": "Adam Egnell",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1178911": {
      "name": "Roni Arabaci",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1245292": {
      "name": "Tobias Karlsson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1296416": {
      "name": "Allen Smajic",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1335636": {
      "name": "Mathias Andreasen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1338730": {
      "name": "Gustaf Bruzelius",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1342752": {
      "name": "Constantino Capotondi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1372307": {
      "name": "Enes Hebibovic",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1429380": {
      "name": "André Alvarez Perez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1516275": {
      "name": "Marcus Pettersson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1532709": {
      "name": "Zakaria Loukili",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1611435": {
      "name": "Gustaf Westström",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1611438": {
      "name": "Max'Med Mohamed",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1661641": {
      "name": "Kota Sakurai",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1663288": {
      "name": "Christian Stark",
@@ -3069,27 +3079,27 @@
     "1699809": {
      "name": "Albin Andersson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1699879": {
      "name": "William Åkesson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1797378": {
      "name": "Maximilian Milosevic",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1911093": {
      "name": "Emmanuel Moungam",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "2107106": {
      "name": "Viggo Benndoff",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     }
    },
    "left": [
@@ -3100,695 +3110,6 @@
      "lastSeen": "2026-09-29"
     }
    ]
-  },
-  "Sandvikens IF": {
-   "fotmobName": "Sandvikens IF",
-   "fotmobId": 6241,
-   "coach": "Thomas Lagerlöf",
-   "players": [
-    {
-     "id": 1035301,
-     "name": "Hannes Sveijer",
-     "role": "keepers",
-     "position": "GK",
-     "number": 1,
-     "age": 24,
-     "born": "2002-04-28",
-     "country": "Sweden",
-     "height": 187,
-     "value": 72000,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1414490,
-     "name": "Adrian Persson",
-     "role": "keepers",
-     "position": "Keeper",
-     "number": 27,
-     "age": 19,
-     "born": "2007-02-08",
-     "country": "Sweden",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1648951,
-     "name": "Mahmoud Kiki Kharsi",
-     "role": "keepers",
-     "position": "Keeper",
-     "number": 29,
-     "age": 19,
-     "born": "2007-01-15",
-     "country": "Sweden",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1237637,
-     "name": "Otto Lindell",
-     "role": "keepers",
-     "position": "GK",
-     "number": 30,
-     "age": 24,
-     "born": "2002-03-16",
-     "country": "Sweden",
-     "height": null,
-     "value": 159235,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 2,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 570490,
-     "name": "Gustav Thörn",
-     "role": "defenders",
-     "position": "CB",
-     "number": 2,
-     "age": 29,
-     "born": "1997-03-11",
-     "country": "Sweden",
-     "height": 183,
-     "value": 50000,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 2,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1734861,
-     "name": "Viggo van der Laan",
-     "role": "defenders",
-     "position": "CB",
-     "number": 4,
-     "age": 20,
-     "born": "2006-04-12",
-     "country": "Sweden",
-     "height": null,
-     "value": 220595,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1632384,
-     "name": "Oskar Löfström",
-     "role": "defenders",
-     "position": "CM,LB",
-     "number": 5,
-     "age": 22,
-     "born": "2004-06-29",
-     "country": "Sweden",
-     "height": 182,
-     "value": 138152,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1372034,
-     "name": "Isac Lindholm",
-     "role": "defenders",
-     "position": "Defender",
-     "number": 13,
-     "age": 21,
-     "born": "2004-11-11",
-     "country": "Sweden",
-     "height": null,
-     "value": 69533,
-     "rating": null,
-     "goals": 0,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 1,
-     "injury": null
-    },
-    {
-     "id": 1350864,
-     "name": "Wilhelm Nilsson",
-     "role": "defenders",
-     "position": "CB,LB",
-     "number": 17,
-     "age": 29,
-     "born": "1997-09-15",
-     "country": "Sweden",
-     "height": 183,
-     "value": 105395,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1780595,
-     "name": "Christopher Rogers",
-     "role": "defenders",
-     "position": "CB",
-     "number": 18,
-     "age": 20,
-     "born": "2006-01-01",
-     "country": "USA",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1160090,
-     "name": "Kasper Harletun",
-     "role": "defenders",
-     "position": "CB,RB",
-     "number": 23,
-     "age": 23,
-     "born": "2002-12-18",
-     "country": "Sweden",
-     "height": null,
-     "value": 150005,
-     "rating": null,
-     "goals": 1,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 2,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1156461,
-     "name": "Linus Tagesson",
-     "role": "defenders",
-     "position": "RB,RM,LB",
-     "number": 26,
-     "age": 24,
-     "born": "2002-02-11",
-     "country": "Sweden",
-     "height": 178,
-     "value": 160531,
-     "rating": null,
-     "goals": 4,
-     "assists": 8,
-     "penalties": 0,
-     "yellow": 2,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1457857,
-     "name": "Liam Vabö",
-     "role": "midfielders",
-     "position": "CM",
-     "number": 6,
-     "age": 22,
-     "born": "2004-06-19",
-     "country": "Sweden",
-     "height": null,
-     "value": 59359,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 3,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1353667,
-     "name": "Alan Carleton",
-     "role": "midfielders",
-     "position": "RW,LM,CM,CDM,ST",
-     "number": 12,
-     "age": 21,
-     "born": "2005-03-20",
-     "country": "USA",
-     "height": 173,
-     "value": 280371,
-     "rating": null,
-     "goals": 4,
-     "assists": 7,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1350886,
-     "name": "Mohammed Mahammed",
-     "role": "midfielders",
-     "position": "CM,RW,ST,CDM",
-     "number": 14,
-     "age": 29,
-     "born": "1997-09-26",
-     "country": "Sweden",
-     "height": null,
-     "value": 50000,
-     "rating": null,
-     "goals": 0,
-     "assists": 2,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1734849,
-     "name": "Fabian Andersson",
-     "role": "midfielders",
-     "position": "CM,CDM",
-     "number": 15,
-     "age": 20,
-     "born": "2006-04-11",
-     "country": "Sweden",
-     "height": null,
-     "value": 362388,
-     "rating": null,
-     "goals": 1,
-     "assists": 3,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1065346,
-     "name": "Mohammed Sadat",
-     "role": "midfielders",
-     "position": "LM,LB",
-     "number": 16,
-     "age": 27,
-     "born": "1999-08-20",
-     "country": "Ghana",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 2,
-     "assists": 2,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1340891,
-     "name": "Adam Kiani",
-     "role": "midfielders",
-     "position": "CM,LB",
-     "number": 21,
-     "age": 23,
-     "born": "2003-03-18",
-     "country": "Sweden",
-     "height": null,
-     "value": 95731,
-     "rating": null,
-     "goals": 1,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 4,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1602355,
-     "name": "Daniel Bergman",
-     "role": "midfielders",
-     "position": "CDM",
-     "number": 22,
-     "age": 22,
-     "born": "2004-04-13",
-     "country": "Sweden",
-     "height": null,
-     "value": 55709,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1805117,
-     "name": "August Soederholm",
-     "role": "midfielders",
-     "position": "Midfielder",
-     "number": 24,
-     "age": 18,
-     "born": "2008-08-28",
-     "country": "Sweden",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1606365,
-     "name": "Yabets Yaliso Yaya",
-     "role": "midfielders",
-     "position": "LM",
-     "number": 24,
-     "age": 20,
-     "born": "2006-02-15",
-     "country": "Norway",
-     "height": null,
-     "value": 197279,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 1,
-     "injury": null
-    },
-    {
-     "id": 1722737,
-     "name": "Anton Lund",
-     "role": "midfielders",
-     "position": "Midfielder",
-     "number": 28,
-     "age": 20,
-     "born": "2006-05-13",
-     "country": "Sweden",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1134965,
-     "name": "Johan Arvidsson",
-     "role": "attackers",
-     "position": "LW,RM,ST,LM",
-     "number": 7,
-     "age": 26,
-     "born": "2000-02-25",
-     "country": "Sweden",
-     "height": null,
-     "value": 130130,
-     "rating": null,
-     "goals": 5,
-     "assists": 7,
-     "penalties": 0,
-     "yellow": 3,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 462530,
-     "name": "Karl Bohm",
-     "role": "attackers",
-     "position": "ST,CAM,CM,LW",
-     "number": 8,
-     "age": 31,
-     "born": "1995-08-24",
-     "country": "Sweden",
-     "height": 177,
-     "value": 123078,
-     "rating": null,
-     "goals": 3,
-     "assists": 3,
-     "penalties": 0,
-     "yellow": 3,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1229519,
-     "name": "Christian Wagner",
-     "role": "attackers",
-     "position": "ST",
-     "number": 9,
-     "age": 23,
-     "born": "2003-02-13",
-     "country": "Denmark",
-     "height": 186,
-     "value": 227956,
-     "rating": null,
-     "goals": 16,
-     "assists": 1,
-     "penalties": 3,
-     "yellow": 2,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1167709,
-     "name": "Victor Backman",
-     "role": "attackers",
-     "position": "RW,LM",
-     "number": 11,
-     "age": 25,
-     "born": "2001-03-16",
-     "country": "Sweden",
-     "height": 168,
-     "value": 99210,
-     "rating": null,
-     "goals": 2,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 2,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1458157,
-     "name": "Anomnachi Chidi",
-     "role": "attackers",
-     "position": "Attacker",
-     "number": 19,
-     "age": 22,
-     "born": "2004-07-13",
-     "country": "Sweden",
-     "height": null,
-     "value": 133248,
-     "rating": null,
-     "goals": 1,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1946217,
-     "name": "Nicholas Vainio",
-     "role": "attackers",
-     "position": "Attacker",
-     "number": 20,
-     "age": 18,
-     "born": "2008-09-11",
-     "country": "Finland",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    }
-   ],
-   "fetchedAt": "2026-10-04T09:27:34.347Z",
-   "coachHistory": [
-    {
-     "name": "Thomas Lagerlöf",
-     "firstSeen": "2026-09-28"
-    }
-   ],
-   "history": {
-    "462530": {
-     "name": "Karl Bohm",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "570490": {
-     "name": "Gustav Thörn",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1035301": {
-     "name": "Hannes Sveijer",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1065346": {
-     "name": "Mohammed Sadat",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1134965": {
-     "name": "Johan Arvidsson",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1156461": {
-     "name": "Linus Tagesson",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1160090": {
-     "name": "Kasper Harletun",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1167709": {
-     "name": "Victor Backman",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1229519": {
-     "name": "Christian Wagner",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1237637": {
-     "name": "Otto Lindell",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1340891": {
-     "name": "Adam Kiani",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1350864": {
-     "name": "Wilhelm Nilsson",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1350886": {
-     "name": "Mohammed Mahammed",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1353667": {
-     "name": "Alan Carleton",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1372034": {
-     "name": "Isac Lindholm",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1414490": {
-     "name": "Adrian Persson",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1457857": {
-     "name": "Liam Vabö",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1458157": {
-     "name": "Anomnachi Chidi",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1602355": {
-     "name": "Daniel Bergman",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1606365": {
-     "name": "Yabets Yaliso Yaya",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1632384": {
-     "name": "Oskar Löfström",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1648951": {
-     "name": "Mahmoud Kiki Kharsi",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1722737": {
-     "name": "Anton Lund",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1734849": {
-     "name": "Fabian Andersson",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1734861": {
-     "name": "Viggo van der Laan",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1780595": {
-     "name": "Christopher Rogers",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1805117": {
-     "name": "August Soederholm",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1946217": {
-     "name": "Nicholas Vainio",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    }
-   },
-   "left": []
   },
   "IK Oddevold": {
    "fotmobName": "IK Oddevold",
@@ -3903,7 +3224,7 @@
      "value": 55111,
      "rating": null,
      "goals": 1,
-     "assists": 3,
+     "assists": 4,
      "penalties": 0,
      "yellow": 1,
      "red": 0,
@@ -3913,7 +3234,7 @@
      "id": 1397828,
      "name": "Adam Engelbrektsson",
      "role": "defenders",
-     "position": "RM",
+     "position": "RWB",
      "number": 20,
      "age": 30,
      "born": "1996-08-23",
@@ -3943,7 +3264,7 @@
      "goals": 0,
      "assists": 0,
      "penalties": 0,
-     "yellow": 1,
+     "yellow": 2,
      "red": 0,
      "injury": null
     },
@@ -4092,10 +3413,10 @@
      "height": 188,
      "value": 164669,
      "rating": null,
-     "goals": 5,
+     "goals": 6,
      "assists": 1,
      "penalties": 1,
-     "yellow": 4,
+     "yellow": 5,
      "red": 1,
      "injury": null
     },
@@ -4188,7 +3509,7 @@
      "value": 50000,
      "rating": null,
      "goals": 2,
-     "assists": 2,
+     "assists": 3,
      "penalties": 0,
      "yellow": 3,
      "red": 0,
@@ -4225,7 +3546,7 @@
      "height": 183,
      "value": null,
      "rating": null,
-     "goals": 14,
+     "goals": 16,
      "assists": 0,
      "penalties": 1,
      "yellow": 2,
@@ -4255,7 +3576,7 @@
      "id": 1608956,
      "name": "Olle Kjellman Olblad",
      "role": "attackers",
-     "position": "LW,CM,RW,LM,CAM",
+     "position": "LW,LM,CM,CAM,RW",
      "number": 17,
      "age": 24,
      "born": "2002-06-19",
@@ -4309,7 +3630,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-04T09:27:34.347Z",
+   "fetchedAt": "2026-10-20T17:08:46.118Z",
    "coachHistory": [
     {
      "name": "Rikard Nilsson",
@@ -4320,132 +3641,132 @@
     "546534": {
      "name": "Morten Sætra",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "876443": {
      "name": "Oscar Iglicar Berntsson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "919852": {
      "name": "Jesper Merbom Adolfsson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "923221": {
      "name": "Daniel Krezic",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1191937": {
      "name": "Leonardo Shahin",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1272348": {
      "name": "Philip Engelbrektsson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1289179": {
      "name": "Hugo Engström",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1338899": {
      "name": "Filip Järlesand",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1351652": {
      "name": "Erik Hedenquist",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1395213": {
      "name": "Vincent Sundberg",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1397828": {
      "name": "Adam Engelbrektsson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1418036": {
      "name": "Elias Forsberg",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1447825": {
      "name": "Gabriel Sandberg",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1457845": {
      "name": "Aulon Bitiqi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1457846": {
      "name": "Mattias Bahno",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1477658": {
      "name": "Noel Hermansson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1504739": {
      "name": "Oliver Thoreson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1540779": {
      "name": "Esim Mehmed",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1603428": {
      "name": "Gustav Forssell",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1608956": {
      "name": "Olle Kjellman Olblad",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1624602": {
      "name": "Emmanuel Gono",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1685491": {
      "name": "Jimi Nikko",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1711512": {
      "name": "Awaka Djoro",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1717492": {
      "name": "Oskar Cotton",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1734064": {
      "name": "Rudi Vikström",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1781842": {
      "name": "Freddie Lantz",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1917430": {
      "name": "Riane Haidar",
@@ -4455,7 +3776,7 @@
     "2025384": {
      "name": "Ahmad Daniel Alsaady",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     }
    },
    "left": [
@@ -4563,7 +3884,7 @@
      "goals": 1,
      "assists": 0,
      "penalties": 0,
-     "yellow": 1,
+     "yellow": 2,
      "red": 0,
      "injury": null
     },
@@ -4723,7 +4044,7 @@
      "id": 1109473,
      "name": "Filip Olsson",
      "role": "midfielders",
-     "position": "CM",
+     "position": "CM,LW",
      "number": 11,
      "age": 27,
      "born": "1999-04-24",
@@ -4734,7 +4055,7 @@
      "goals": 3,
      "assists": 0,
      "penalties": 0,
-     "yellow": 3,
+     "yellow": 4,
      "red": 0,
      "injury": null
     },
@@ -4769,7 +4090,7 @@
      "height": null,
      "value": null,
      "rating": null,
-     "goals": 0,
+     "goals": 2,
      "assists": 1,
      "penalties": 0,
      "yellow": 0,
@@ -4864,10 +4185,10 @@
      "height": 176,
      "value": 481394,
      "rating": null,
-     "goals": 9,
+     "goals": 10,
      "assists": 2,
      "penalties": 3,
-     "yellow": 3,
+     "yellow": 4,
      "red": 1,
      "injury": null
     },
@@ -4903,7 +4224,7 @@
      "value": 99210,
      "rating": null,
      "goals": 5,
-     "assists": 1,
+     "assists": 2,
      "penalties": 0,
      "yellow": 1,
      "red": 0,
@@ -4967,7 +4288,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-04T09:27:34.347Z",
+   "fetchedAt": "2026-10-20T17:08:46.118Z",
    "coachHistory": [
     {
      "name": "Daniel Friberg",
@@ -4978,7 +4299,7 @@
     "275734": {
      "name": "Christian Kouakou",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "631784": {
      "name": "Aapo Mäenpää",
@@ -4988,127 +4309,127 @@
     "657922": {
      "name": "Sebastian Starke Hedlund",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "759094": {
      "name": "Magnus Christensen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "835949": {
      "name": "Tatu Varmanen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "866832": {
      "name": "Marinus Grandt",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "927877": {
      "name": "Daniel Ask",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "932272": {
      "name": "Axel Lindahl",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "948931": {
      "name": "Matias Tamminen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1109473": {
      "name": "Filip Olsson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1152699": {
      "name": "Michael Hartmann",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1170951": {
      "name": "Mattis Adolfsson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1186602": {
      "name": "Noah Söderberg",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1236143": {
      "name": "Dennis Olsson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1245541": {
      "name": "Oscar Uddenäs",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1351565": {
      "name": "Samuel Burakovsky",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1401336": {
      "name": "William Thellsson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1418943": {
      "name": "Raymond Adjei",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1455863": {
      "name": "Carl Lundahl Persson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1455864": {
      "name": "Hannes Bladh Pijaca",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1457808": {
      "name": "Kingsley Gyamfi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1484409": {
      "name": "Keyano Marrah",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1532138": {
      "name": "Kalipha Jawla",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1781304": {
      "name": "Vincent Lind",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1980649": {
      "name": "Isak Jaerdler",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "2025395": {
      "name": "Naid Ganovic",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "2089825": {
      "name": "Noah Ayorinde",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     }
    },
    "left": [
@@ -5149,7 +4470,7 @@
      "name": "Fahad Ghazala",
      "role": "keepers",
      "position": "Keeper",
-     "number": 1,
+     "number": 30,
      "age": 21,
      "born": "2005-03-24",
      "country": "Sweden",
@@ -5221,6 +4542,25 @@
      "injury": null
     },
     {
+     "id": 2356793,
+     "name": "Gabriel Alan",
+     "role": "defenders",
+     "position": "Defender",
+     "number": 3,
+     "age": 0,
+     "born": null,
+     "country": "Sweden",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
      "id": 1245840,
      "name": "Mohammad Fazal",
      "role": "defenders",
@@ -5262,7 +4602,7 @@
      "id": 1395934,
      "name": "Sammi Davis",
      "role": "defenders",
-     "position": "CB",
+     "position": "CB,RB",
      "number": 12,
      "age": 21,
      "born": "2005-05-11",
@@ -5281,7 +4621,7 @@
      "id": 1556730,
      "name": "Nhome Daneyl",
      "role": "defenders",
-     "position": "RB,CB",
+     "position": "RB,RM,CB",
      "number": 16,
      "age": 18,
      "born": "2008-07-19",
@@ -5300,7 +4640,7 @@
      "id": 1457802,
      "name": "Emanuel Swedi",
      "role": "defenders",
-     "position": "RB,RM,RWB",
+     "position": "RB,RM,RWB,CM",
      "number": 21,
      "age": 22,
      "born": "2003-12-16",
@@ -5340,7 +4680,7 @@
      "role": "defenders",
      "position": "CB",
      "number": 77,
-     "age": 24,
+     "age": 25,
      "born": "2001-10-06",
      "country": "Sweden",
      "height": null,
@@ -5349,7 +4689,7 @@
      "goals": 0,
      "assists": 0,
      "penalties": 0,
-     "yellow": 4,
+     "yellow": 5,
      "red": 0,
      "injury": null
     },
@@ -5373,13 +4713,13 @@
      "injury": null
     },
     {
-     "id": 1810204,
-     "name": "Alexander Lindgren",
+     "id": 1776467,
+     "name": "Lexus Ygberg",
      "role": "midfielders",
      "position": "Midfielder",
-     "number": 6,
+     "number": 5,
      "age": 17,
-     "born": "2009-09-22",
+     "born": "2009-03-13",
      "country": "Sweden",
      "height": null,
      "value": null,
@@ -5407,7 +4747,7 @@
      "assists": 0,
      "penalties": 0,
      "yellow": 0,
-     "red": 0,
+     "red": 1,
      "injury": null
     },
     {
@@ -5452,7 +4792,7 @@
      "id": 1333171,
      "name": "Aziz Harabi",
      "role": "midfielders",
-     "position": "RM,LM,ST,LWB,LB",
+     "position": "RM,LM,LB,ST,LWB",
      "number": 20,
      "age": 23,
      "born": "2002-12-11",
@@ -5463,7 +4803,26 @@
      "goals": 5,
      "assists": 6,
      "penalties": 0,
-     "yellow": 3,
+     "yellow": 4,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1810204,
+     "name": "Alexander Lindgren",
+     "role": "midfielders",
+     "position": "LM",
+     "number": 24,
+     "age": 17,
+     "born": "2009-09-22",
+     "country": "Sweden",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
      "red": 0,
      "injury": null
     },
@@ -5490,7 +4849,7 @@
      "id": 1457843,
      "name": "Christian Aphrem",
      "role": "midfielders",
-     "position": "LM",
+     "position": "LM,ST,RM",
      "number": 74,
      "age": 24,
      "born": "2002-08-20",
@@ -5498,7 +4857,7 @@
      "height": null,
      "value": null,
      "rating": null,
-     "goals": 2,
+     "goals": 3,
      "assists": 0,
      "penalties": 0,
      "yellow": 1,
@@ -5506,13 +4865,13 @@
      "injury": null
     },
     {
-     "id": 1776467,
-     "name": "Lexus Ygberg",
-     "role": "midfielders",
-     "position": "Midfielder",
-     "number": 88,
-     "age": 17,
-     "born": "2009-03-13",
+     "id": 2356791,
+     "name": "Philip Halef",
+     "role": "attackers",
+     "position": "Attacker",
+     "number": 5,
+     "age": 0,
+     "born": null,
      "country": "Sweden",
      "height": null,
      "value": null,
@@ -5601,7 +4960,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-04T09:27:34.347Z",
+   "fetchedAt": "2026-10-20T17:08:46.118Z",
    "coachHistory": [
     {
      "name": "Steven Younan",
@@ -5612,27 +4971,27 @@
     "441548": {
      "name": "Elias Andersson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "444247": {
      "name": "William Eskelinen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "841787": {
      "name": "Elias Durmaz",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "846284": {
      "name": "Gabriel Aphrem",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "858162": {
      "name": "Amar Eminovic",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1022440": {
      "name": "Jake Larsson",
@@ -5642,108 +5001,1527 @@
     "1034568": {
      "name": "Jonathan Gürsac",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1087963": {
      "name": "Matteus Behnan",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1245840": {
      "name": "Mohammad Fazal",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1333171": {
      "name": "Aziz Harabi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1338749": {
      "name": "Theodor Johansson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1351944": {
      "name": "Amar Dževlan",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1352251": {
      "name": "Teo Grönborg",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1395934": {
      "name": "Sammi Davis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1441365": {
      "name": "Liiban Abdirahman Abadid",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1442510": {
      "name": "Adi Fisic",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1445431": {
      "name": "Angelo Melkemichel",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1457802": {
      "name": "Emanuel Swedi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1457839": {
      "name": "Shergo Shhab",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1457843": {
      "name": "Christian Aphrem",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1556730": {
      "name": "Nhome Daneyl",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1693253": {
      "name": "Ninos Issa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1767784": {
      "name": "Liam Nesvik-Andersson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1776467": {
      "name": "Lexus Ygberg",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1810204": {
      "name": "Alexander Lindgren",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1939879": {
      "name": "Fahad Ghazala",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
+    },
+    "2356791": {
+     "name": "Philip Halef",
+     "firstSeen": "2026-10-20",
+     "lastSeen": "2026-10-20"
+    },
+    "2356793": {
+     "name": "Gabriel Alan",
+     "firstSeen": "2026-10-20",
+     "lastSeen": "2026-10-20"
     }
    },
    "left": [
     {
      "id": "1022440",
      "name": "Jake Larsson",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-09-29"
+    }
+   ]
+  },
+  "Sandvikens IF": {
+   "fotmobName": "Sandvikens IF",
+   "fotmobId": 6241,
+   "coach": "Thomas Lagerlöf",
+   "players": [
+    {
+     "id": 1035301,
+     "name": "Hannes Sveijer",
+     "role": "keepers",
+     "position": "GK",
+     "number": 1,
+     "age": 24,
+     "born": "2002-04-28",
+     "country": "Sweden",
+     "height": 187,
+     "value": 72000,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1414490,
+     "name": "Adrian Persson",
+     "role": "keepers",
+     "position": "Keeper",
+     "number": 27,
+     "age": 19,
+     "born": "2007-02-08",
+     "country": "Sweden",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1648951,
+     "name": "Mahmoud Kiki Kharsi",
+     "role": "keepers",
+     "position": "Keeper",
+     "number": 29,
+     "age": 19,
+     "born": "2007-01-15",
+     "country": "Sweden",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1237637,
+     "name": "Otto Lindell",
+     "role": "keepers",
+     "position": "GK",
+     "number": 30,
+     "age": 24,
+     "born": "2002-03-16",
+     "country": "Sweden",
+     "height": null,
+     "value": 159235,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 0,
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "unknown injury",
+      "source": "Transfermarkt"
+     }
+    },
+    {
+     "id": 570490,
+     "name": "Gustav Thörn",
+     "role": "defenders",
+     "position": "CB",
+     "number": 2,
+     "age": 29,
+     "born": "1997-03-11",
+     "country": "Sweden",
+     "height": 183,
+     "value": 50000,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 3,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1734861,
+     "name": "Viggo van der Laan",
+     "role": "defenders",
+     "position": "CB",
+     "number": 4,
+     "age": 20,
+     "born": "2006-04-12",
+     "country": "Sweden",
+     "height": null,
+     "value": 220595,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1632384,
+     "name": "Oskar Löfström",
+     "role": "defenders",
+     "position": "LB",
+     "number": 5,
+     "age": 22,
+     "born": "2004-06-29",
+     "country": "Sweden",
+     "height": 182,
+     "value": 138152,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1372034,
+     "name": "Isac Lindholm",
+     "role": "defenders",
+     "position": "Defender",
+     "number": 13,
+     "age": 21,
+     "born": "2004-11-11",
+     "country": "Sweden",
+     "height": null,
+     "value": 69533,
+     "rating": null,
+     "goals": 0,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 1,
+     "injury": null
+    },
+    {
+     "id": 1350864,
+     "name": "Wilhelm Nilsson",
+     "role": "defenders",
+     "position": "CB,LB",
+     "number": 17,
+     "age": 29,
+     "born": "1997-09-15",
+     "country": "Sweden",
+     "height": 183,
+     "value": 105395,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1780595,
+     "name": "Christopher Rogers",
+     "role": "defenders",
+     "position": "CB",
+     "number": 18,
+     "age": 20,
+     "born": "2006-01-01",
+     "country": "USA",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1160090,
+     "name": "Kasper Harletun",
+     "role": "defenders",
+     "position": "CB,RB",
+     "number": 23,
+     "age": 23,
+     "born": "2002-12-18",
+     "country": "Sweden",
+     "height": null,
+     "value": 150005,
+     "rating": null,
+     "goals": 1,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 4,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1156461,
+     "name": "Linus Tagesson",
+     "role": "defenders",
+     "position": "RB,RM",
+     "number": 26,
+     "age": 24,
+     "born": "2002-02-11",
+     "country": "Sweden",
+     "height": 178,
+     "value": 160531,
+     "rating": null,
+     "goals": 4,
+     "assists": 8,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1457857,
+     "name": "Liam Vabö",
+     "role": "midfielders",
+     "position": "CM",
+     "number": 6,
+     "age": 22,
+     "born": "2004-06-19",
+     "country": "Sweden",
+     "height": null,
+     "value": 59359,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 3,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1350886,
+     "name": "Mohammed Mahammed",
+     "role": "midfielders",
+     "position": "CM,RW,ST,CDM,CAM",
+     "number": 14,
+     "age": 29,
+     "born": "1997-09-26",
+     "country": "Sweden",
+     "height": null,
+     "value": 50000,
+     "rating": null,
+     "goals": 0,
+     "assists": 2,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1734849,
+     "name": "Fabian Andersson",
+     "role": "midfielders",
+     "position": "CM,CDM",
+     "number": 15,
+     "age": 20,
+     "born": "2006-04-11",
+     "country": "Sweden",
+     "height": null,
+     "value": 362388,
+     "rating": null,
+     "goals": 1,
+     "assists": 3,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1065346,
+     "name": "Mohammed Sadat",
+     "role": "midfielders",
+     "position": "LM,LB",
+     "number": 16,
+     "age": 27,
+     "born": "1999-08-20",
+     "country": "Ghana",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 3,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1340891,
+     "name": "Adam Kiani",
+     "role": "midfielders",
+     "position": "CM,LB",
+     "number": 21,
+     "age": 23,
+     "born": "2003-03-18",
+     "country": "Sweden",
+     "height": null,
+     "value": 95731,
+     "rating": null,
+     "goals": 1,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 4,
+     "red": 0,
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Knee injury",
+      "source": "Transfermarkt"
+     }
+    },
+    {
+     "id": 1602355,
+     "name": "Daniel Bergman",
+     "role": "midfielders",
+     "position": "CDM",
+     "number": 22,
+     "age": 22,
+     "born": "2004-04-13",
+     "country": "Sweden",
+     "height": null,
+     "value": 55709,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1805117,
+     "name": "August Soederholm",
+     "role": "midfielders",
+     "position": "Midfielder",
+     "number": 24,
+     "age": 18,
+     "born": "2008-08-28",
+     "country": "Sweden",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1606365,
+     "name": "Yabets Yaliso Yaya",
+     "role": "midfielders",
+     "position": "LM",
+     "number": 24,
+     "age": 20,
+     "born": "2006-02-15",
+     "country": "Norway",
+     "height": null,
+     "value": 197279,
+     "rating": null,
+     "goals": 0,
+     "assists": 2,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 1,
+     "injury": null
+    },
+    {
+     "id": 1722737,
+     "name": "Anton Lund",
+     "role": "midfielders",
+     "position": "Midfielder",
+     "number": 28,
+     "age": 20,
+     "born": "2006-05-13",
+     "country": "Sweden",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1134965,
+     "name": "Johan Arvidsson",
+     "role": "attackers",
+     "position": "LW,RM,ST,LM,CAM",
+     "number": 7,
+     "age": 26,
+     "born": "2000-02-25",
+     "country": "Sweden",
+     "height": null,
+     "value": 130130,
+     "rating": null,
+     "goals": 6,
+     "assists": 7,
+     "penalties": 1,
+     "yellow": 3,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 462530,
+     "name": "Karl Bohm",
+     "role": "attackers",
+     "position": "ST,CAM,CM,LW",
+     "number": 8,
+     "age": 31,
+     "born": "1995-08-24",
+     "country": "Sweden",
+     "height": 177,
+     "value": 123078,
+     "rating": null,
+     "goals": 3,
+     "assists": 3,
+     "penalties": 0,
+     "yellow": 3,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1229519,
+     "name": "Christian Wagner",
+     "role": "attackers",
+     "position": "ST",
+     "number": 9,
+     "age": 23,
+     "born": "2003-02-13",
+     "country": "Denmark",
+     "height": 186,
+     "value": 227956,
+     "rating": null,
+     "goals": 16,
+     "assists": 1,
+     "penalties": 3,
+     "yellow": 2,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1167709,
+     "name": "Victor Backman",
+     "role": "attackers",
+     "position": "RW,LM",
+     "number": 11,
+     "age": 25,
+     "born": "2001-03-16",
+     "country": "Sweden",
+     "height": 168,
+     "value": 99210,
+     "rating": null,
+     "goals": 2,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1353667,
+     "name": "Alan Carleton",
+     "role": "attackers",
+     "position": "RW,LM,CM,CDM,LW,ST",
+     "number": 12,
+     "age": 21,
+     "born": "2005-03-20",
+     "country": "USA",
+     "height": 173,
+     "value": 280371,
+     "rating": null,
+     "goals": 4,
+     "assists": 8,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1458157,
+     "name": "Anomnachi Chidi",
+     "role": "attackers",
+     "position": "Attacker",
+     "number": 19,
+     "age": 22,
+     "born": "2004-07-13",
+     "country": "Sweden",
+     "height": null,
+     "value": 133248,
+     "rating": null,
+     "goals": 1,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1946217,
+     "name": "Nicholas Vainio",
+     "role": "attackers",
+     "position": "Attacker",
+     "number": 20,
+     "age": 18,
+     "born": "2008-09-11",
+     "country": "Finland",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    }
+   ],
+   "fetchedAt": "2026-10-20T17:08:46.118Z",
+   "coachHistory": [
+    {
+     "name": "Thomas Lagerlöf",
+     "firstSeen": "2026-09-28"
+    }
+   ],
+   "history": {
+    "462530": {
+     "name": "Karl Bohm",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "570490": {
+     "name": "Gustav Thörn",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1035301": {
+     "name": "Hannes Sveijer",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1065346": {
+     "name": "Mohammed Sadat",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1134965": {
+     "name": "Johan Arvidsson",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1156461": {
+     "name": "Linus Tagesson",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1160090": {
+     "name": "Kasper Harletun",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1167709": {
+     "name": "Victor Backman",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1229519": {
+     "name": "Christian Wagner",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1237637": {
+     "name": "Otto Lindell",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1340891": {
+     "name": "Adam Kiani",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1350864": {
+     "name": "Wilhelm Nilsson",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1350886": {
+     "name": "Mohammed Mahammed",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1353667": {
+     "name": "Alan Carleton",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1372034": {
+     "name": "Isac Lindholm",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1414490": {
+     "name": "Adrian Persson",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1457857": {
+     "name": "Liam Vabö",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1458157": {
+     "name": "Anomnachi Chidi",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1602355": {
+     "name": "Daniel Bergman",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1606365": {
+     "name": "Yabets Yaliso Yaya",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1632384": {
+     "name": "Oskar Löfström",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1648951": {
+     "name": "Mahmoud Kiki Kharsi",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1722737": {
+     "name": "Anton Lund",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1734849": {
+     "name": "Fabian Andersson",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1734861": {
+     "name": "Viggo van der Laan",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1780595": {
+     "name": "Christopher Rogers",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1805117": {
+     "name": "August Soederholm",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1946217": {
+     "name": "Nicholas Vainio",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    }
+   },
+   "left": []
+  },
+  "IFK Värnamo": {
+   "fotmobName": "IFK Värnamo",
+   "fotmobId": 6181,
+   "coach": "Kim Bergstrand",
+   "players": [
+    {
+     "id": 759579,
+     "name": "Hugo Keto",
+     "role": "keepers",
+     "position": "GK",
+     "number": 1,
+     "age": 28,
+     "born": "1998-02-09",
+     "country": "Finland",
+     "height": 195,
+     "value": 118876,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1635933,
+     "name": "Malcom Moulare",
+     "role": "keepers",
+     "position": "Keeper",
+     "number": 31,
+     "age": 18,
+     "born": "2008-07-19",
+     "country": "Sweden",
+     "height": 190,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1373206,
+     "name": "Liam Selin",
+     "role": "keepers",
+     "position": "Keeper",
+     "number": 39,
+     "age": 20,
+     "born": "2006-03-13",
+     "country": "Sweden",
+     "height": 201,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1214159,
+     "name": "Johan Rapp",
+     "role": "defenders",
+     "position": "CB,RB",
+     "number": 2,
+     "age": 25,
+     "born": "2001-02-08",
+     "country": "Sweden",
+     "height": null,
+     "value": 99537,
+     "rating": null,
+     "goals": 1,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 5,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 809553,
+     "name": "Axel Björnström",
+     "role": "defenders",
+     "position": "LB,LM",
+     "number": 3,
+     "age": 31,
+     "born": "1995-09-10",
+     "country": "Sweden",
+     "height": 176,
+     "value": 98599,
+     "rating": null,
+     "goals": 3,
+     "assists": 3,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 941539,
+     "name": "Samuel Ohlsson",
+     "role": "defenders",
+     "position": "LB",
+     "number": 4,
+     "age": 25,
+     "born": "2001-05-13",
+     "country": "Sweden",
+     "height": 179,
+     "value": 158068,
+     "rating": null,
+     "goals": 0,
+     "assists": 2,
+     "penalties": 0,
+     "yellow": 3,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 261427,
+     "name": "Doug Bergqvist",
+     "role": "defenders",
+     "position": "CB",
+     "number": 5,
+     "age": 33,
+     "born": "1993-03-29",
+     "country": "Sweden",
+     "height": 184,
+     "value": 99293,
+     "rating": null,
+     "goals": 0,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 892419,
+     "name": "Hugo Andersson",
+     "role": "defenders",
+     "position": "CB",
+     "number": 6,
+     "age": 27,
+     "born": "1999-01-01",
+     "country": "Sweden",
+     "height": 195,
+     "value": 113936,
+     "rating": null,
+     "goals": 3,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 3,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1612777,
+     "name": "Zakarias Råvik",
+     "role": "defenders",
+     "position": "CB",
+     "number": 16,
+     "age": 20,
+     "born": "2006-03-10",
+     "country": "Sweden",
+     "height": null,
+     "value": 187583,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1079824,
+     "name": "Arash Motaraghebjafarpour",
+     "role": "defenders",
+     "position": "RB",
+     "number": 18,
+     "age": 23,
+     "born": "2003-03-19",
+     "country": "Sweden",
+     "height": null,
+     "value": 90756,
+     "rating": null,
+     "goals": 0,
+     "assists": 3,
+     "penalties": 0,
+     "yellow": 3,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1802796,
+     "name": "Armandas Raudonis",
+     "role": "defenders",
+     "position": "RB",
+     "number": 32,
+     "age": 19,
+     "born": "2007-07-29",
+     "country": "Lithuania",
+     "height": 182,
+     "value": 275510,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 682428,
+     "name": "Carl Johansson",
+     "role": "midfielders",
+     "position": "RM,CM,RW",
+     "number": 7,
+     "age": 28,
+     "born": "1998-06-17",
+     "country": "Sweden",
+     "height": 173,
+     "value": 67701,
+     "rating": null,
+     "goals": 0,
+     "assists": 2,
+     "penalties": 0,
+     "yellow": 4,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1612928,
+     "name": "Hugo Andersson Mella",
+     "role": "midfielders",
+     "position": "RM",
+     "number": 8,
+     "age": 19,
+     "born": "2007-01-12",
+     "country": "Sweden",
+     "height": null,
+     "value": 234777,
+     "rating": null,
+     "goals": 1,
+     "assists": 4,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 258226,
+     "name": "Viktor Claesson",
+     "role": "midfielders",
+     "position": "CM,ST,CAM",
+     "number": 10,
+     "age": 34,
+     "born": "1992-01-02",
+     "country": "Sweden",
+     "height": 180,
+     "value": 825167,
+     "rating": null,
+     "goals": 6,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1441945,
+     "name": "August Ljungberg",
+     "role": "midfielders",
+     "position": "LM,LW",
+     "number": 11,
+     "age": 21,
+     "born": "2005-05-13",
+     "country": "Sweden",
+     "height": 180,
+     "value": 460093,
+     "rating": null,
+     "goals": 1,
+     "assists": 2,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1447799,
+     "name": "Sigge Jansson",
+     "role": "midfielders",
+     "position": "CM",
+     "number": 13,
+     "age": 20,
+     "born": "2005-11-10",
+     "country": "Sweden",
+     "height": 184,
+     "value": 362451,
+     "rating": null,
+     "goals": 0,
+     "assists": 2,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1556195,
+     "name": "Fred Božičević",
+     "role": "midfielders",
+     "position": "LM,LW",
+     "number": 17,
+     "age": 19,
+     "born": "2007-09-28",
+     "country": "Sweden",
+     "height": null,
+     "value": 315550,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1157897,
+     "name": "Ishaq Abdulrazak",
+     "role": "midfielders",
+     "position": "CM",
+     "number": 21,
+     "age": 24,
+     "born": "2002-05-05",
+     "country": "Nigeria",
+     "height": 175,
+     "value": 170673,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 255221,
+     "name": "Simon Thern",
+     "role": "midfielders",
+     "position": "CM,CDM",
+     "number": 22,
+     "age": 34,
+     "born": "1992-09-18",
+     "country": "Sweden",
+     "height": 176,
+     "value": 105596,
+     "rating": null,
+     "goals": 1,
+     "assists": 3,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1080982,
+     "name": "Logi Róbertsson",
+     "role": "midfielders",
+     "position": "CM",
+     "number": 23,
+     "age": 22,
+     "born": "2004-07-22",
+     "country": "Iceland",
+     "height": null,
+     "value": 140324,
+     "rating": null,
+     "goals": 3,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 4,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1941163,
+     "name": "Mohamed Kamara",
+     "role": "midfielders",
+     "position": "CM",
+     "number": 24,
+     "age": 0,
+     "born": null,
+     "country": "Sierra Leone",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1613135,
+     "name": "Calle Johansson",
+     "role": "midfielders",
+     "position": "CM",
+     "number": 26,
+     "age": 20,
+     "born": "2005-12-13",
+     "country": "Sweden",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1962152,
+     "name": "Benjamin Zulovic",
+     "role": "midfielders",
+     "position": "RM",
+     "number": 34,
+     "age": 18,
+     "born": "2007-10-31",
+     "country": "Sweden",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 2,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1056476,
+     "name": "Kai Meriluoto",
+     "role": "attackers",
+     "position": "ST,RW,CAM,LW",
+     "number": 9,
+     "age": 23,
+     "born": "2003-01-02",
+     "country": "Finland",
+     "height": 183,
+     "value": 261678,
+     "rating": null,
+     "goals": 8,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 237629,
+     "name": "Marcus Antonsson",
+     "role": "attackers",
+     "position": "ST,CM",
+     "number": 14,
+     "age": 35,
+     "born": "1991-05-08",
+     "country": "Sweden",
+     "height": 183,
+     "value": 166260,
+     "rating": null,
+     "goals": 6,
+     "assists": 2,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1833171,
+     "name": "Mamadou Diallo",
+     "role": "attackers",
+     "position": "Attacker",
+     "number": 28,
+     "age": 19,
+     "born": "2007-01-19",
+     "country": "Sweden",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 2121260,
+     "name": "Musa Akinfewa",
+     "role": "attackers",
+     "position": "RW,RM",
+     "number": 33,
+     "age": 19,
+     "born": "2007-09-04",
+     "country": "Nigeria",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    }
+   ],
+   "fetchedAt": "2026-10-20T17:08:46.118Z",
+   "coachHistory": [
+    {
+     "name": "Kim Bergstrand",
+     "firstSeen": "2026-09-28"
+    }
+   ],
+   "history": {
+    "237629": {
+     "name": "Marcus Antonsson",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "255221": {
+     "name": "Simon Thern",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "258226": {
+     "name": "Viktor Claesson",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "261427": {
+     "name": "Doug Bergqvist",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "682428": {
+     "name": "Carl Johansson",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "759579": {
+     "name": "Hugo Keto",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "809553": {
+     "name": "Axel Björnström",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "892419": {
+     "name": "Hugo Andersson",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "941539": {
+     "name": "Samuel Ohlsson",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1056476": {
+     "name": "Kai Meriluoto",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1079824": {
+     "name": "Arash Motaraghebjafarpour",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1080982": {
+     "name": "Logi Róbertsson",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1157897": {
+     "name": "Ishaq Abdulrazak",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1214159": {
+     "name": "Johan Rapp",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1339435": {
+     "name": "Souleymane Coulibaly",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-09-29"
+    },
+    "1373206": {
+     "name": "Liam Selin",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1441945": {
+     "name": "August Ljungberg",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1447799": {
+     "name": "Sigge Jansson",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1556195": {
+     "name": "Fred Božičević",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1612777": {
+     "name": "Zakarias Råvik",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1612928": {
+     "name": "Hugo Andersson Mella",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1613135": {
+     "name": "Calle Johansson",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1635933": {
+     "name": "Malcom Moulare",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1658825": {
+     "name": "Antonio Kujundžić",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-09-29"
+    },
+    "1790010": {
+     "name": "Erik Freij",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-09-29"
+    },
+    "1802796": {
+     "name": "Armandas Raudonis",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1833171": {
+     "name": "Mamadou Diallo",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1939778": {
+     "name": "Blazej Sapielak",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-09-29"
+    },
+    "1941163": {
+     "name": "Mohamed Kamara",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1962152": {
+     "name": "Benjamin Zulovic",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "2121260": {
+     "name": "Musa Akinfewa",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    }
+   },
+   "left": [
+    {
+     "id": "1339435",
+     "name": "Souleymane Coulibaly",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-09-29"
+    },
+    {
+     "id": "1658825",
+     "name": "Antonio Kujundžić",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-09-29"
+    },
+    {
+     "id": "1790010",
+     "name": "Erik Freij",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-09-29"
+    },
+    {
+     "id": "1939778",
+     "name": "Blazej Sapielak",
      "firstSeen": "2026-09-28",
      "lastSeen": "2026-09-29"
     }
@@ -5869,25 +6647,6 @@
      "injury": null
     },
     {
-     "id": 1718166,
-     "name": "Ture Goerefaelt",
-     "role": "defenders",
-     "position": "CB",
-     "number": 15,
-     "age": 20,
-     "born": "2006-04-11",
-     "country": "Sweden",
-     "height": null,
-     "value": 189316,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
      "id": 1466564,
      "name": "Demba N'Diaye",
      "role": "defenders",
@@ -5907,21 +6666,40 @@
      "injury": null
     },
     {
-     "id": 752843,
-     "name": "Erik Lindell",
+     "id": 1910759,
+     "name": "Sam-Ely Bomboko",
      "role": "defenders",
-     "position": "RM,RB",
-     "number": 31,
-     "age": 30,
-     "born": "1996-02-14",
+     "position": "Defender",
+     "number": 35,
+     "age": 19,
+     "born": "2007-05-15",
      "country": "Sweden",
-     "height": 181,
-     "value": 156893,
+     "height": null,
+     "value": null,
      "rating": null,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
-     "yellow": 1,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1970610,
+     "name": "Lino Wernberg Hyppaenen",
+     "role": "defenders",
+     "position": "CB",
+     "number": 42,
+     "age": 17,
+     "born": "2009-01-26",
+     "country": "Sweden",
+     "height": null,
+     "value": 513685,
+     "rating": null,
+     "goals": 1,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 2,
      "red": 0,
      "injury": null
     },
@@ -5961,7 +6739,12 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "31/12/2026",
+      "name": "Cruciate ligament injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 1412196,
@@ -5980,13 +6763,18 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Foot injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 767776,
      "name": "Max Svensson",
      "role": "midfielders",
-     "position": "LM,LW,ST",
+     "position": "LM,ST,LW",
      "number": 10,
      "age": 28,
      "born": "1998-06-19",
@@ -5997,7 +6785,7 @@
      "goals": 3,
      "assists": 7,
      "penalties": 1,
-     "yellow": 1,
+     "yellow": 2,
      "red": 0,
      "injury": null
     },
@@ -6005,7 +6793,7 @@
      "id": 1625486,
      "name": "Adam Akimey",
      "role": "midfielders",
-     "position": "LM,RM,ST",
+     "position": "LM,ST,RM",
      "number": 11,
      "age": 22,
      "born": "2004-02-25",
@@ -6062,7 +6850,7 @@
      "id": 919849,
      "name": "Julian Larsson",
      "role": "midfielders",
-     "position": "CAM,ST,CM,RM",
+     "position": "CAM,CM,ST,RM",
      "number": 21,
      "age": 25,
      "born": "2001-04-21",
@@ -6073,7 +6861,7 @@
      "goals": 0,
      "assists": 2,
      "penalties": 0,
-     "yellow": 1,
+     "yellow": 2,
      "red": 0,
      "injury": null
     },
@@ -6116,6 +6904,25 @@
      "injury": null
     },
     {
+     "id": 752843,
+     "name": "Erik Lindell",
+     "role": "midfielders",
+     "position": "RM,RB",
+     "number": 31,
+     "age": 30,
+     "born": "1996-02-14",
+     "country": "Sweden",
+     "height": 181,
+     "value": 156893,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
      "id": 1485160,
      "name": "Daouda Amadou",
      "role": "midfielders",
@@ -6130,7 +6937,7 @@
      "goals": 1,
      "assists": 1,
      "penalties": 0,
-     "yellow": 8,
+     "yellow": 9,
      "red": 1,
      "injury": null
     },
@@ -6173,6 +6980,25 @@
      "injury": null
     },
     {
+     "id": 1718166,
+     "name": "Ture Goerefaelt",
+     "role": "attackers",
+     "position": "CB",
+     "number": 15,
+     "age": 20,
+     "born": "2006-04-11",
+     "country": "Sweden",
+     "height": null,
+     "value": 189316,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
      "id": 1362290,
      "name": "Amin Al-Hamawi",
      "role": "attackers",
@@ -6190,9 +7016,28 @@
      "yellow": 0,
      "red": 0,
      "injury": null
+    },
+    {
+     "id": 1777466,
+     "name": "Lucas Persson",
+     "role": "attackers",
+     "position": "ST",
+     "number": 19,
+     "age": 17,
+     "born": "2009-07-09",
+     "country": "Sweden",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 1,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
     }
    ],
-   "fetchedAt": "2026-10-04T09:27:34.347Z",
+   "fetchedAt": "2026-10-20T17:08:46.118Z",
    "coachHistory": [
     {
      "name": "Mikael Stahre",
@@ -6203,107 +7048,107 @@
     "258220": {
      "name": "Loret Sadiku",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "439064": {
      "name": "Johan Brattberg",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "752843": {
      "name": "Erik Lindell",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "767776": {
      "name": "Max Svensson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "919849": {
      "name": "Julian Larsson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "924719": {
      "name": "Marcus Gudmann",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "941853": {
      "name": "Jakob Voelkerling Persson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "956608": {
      "name": "Alexander Johansson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1170984": {
      "name": "Femi Awodesu",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1176771": {
      "name": "Samuel Asoma",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1180935": {
      "name": "Leo Hedenberg",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1193350": {
      "name": "Timothé Rupil",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1227686": {
      "name": "Simon Bengtsson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1362290": {
      "name": "Amin Al-Hamawi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1412196": {
      "name": "Alexander Fesshaie Beraki",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1433866": {
      "name": "Lukas Kjellnäs",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1466564": {
      "name": "Demba N'Diaye",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1485160": {
      "name": "Daouda Amadou",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1608921": {
      "name": "Osman Addo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1617036": {
      "name": "Emil Rådahl",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1625486": {
      "name": "Adam Akimey",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1676320": {
      "name": "Harold Romana",
@@ -6313,728 +7158,33 @@
     "1718166": {
      "name": "Ture Goerefaelt",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
+    },
+    "1777466": {
+     "name": "Lucas Persson",
+     "firstSeen": "2026-10-20",
+     "lastSeen": "2026-10-20"
+    },
+    "1910759": {
+     "name": "Sam-Ely Bomboko",
+     "firstSeen": "2026-10-20",
+     "lastSeen": "2026-10-20"
     },
     "1917232": {
      "name": "Clancy Biten",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
+    },
+    "1970610": {
+     "name": "Lino Wernberg Hyppaenen",
+     "firstSeen": "2026-10-20",
+     "lastSeen": "2026-10-20"
     }
    },
    "left": [
     {
      "id": "1676320",
      "name": "Harold Romana",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
-    }
-   ]
-  },
-  "IFK Värnamo": {
-   "fotmobName": "IFK Värnamo",
-   "fotmobId": 6181,
-   "coach": "Kim Bergstrand",
-   "players": [
-    {
-     "id": 759579,
-     "name": "Hugo Keto",
-     "role": "keepers",
-     "position": "GK",
-     "number": 1,
-     "age": 28,
-     "born": "1998-02-09",
-     "country": "Finland",
-     "height": 195,
-     "value": 118876,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1635933,
-     "name": "Malcom Moulare",
-     "role": "keepers",
-     "position": "Keeper",
-     "number": 31,
-     "age": 18,
-     "born": "2008-07-19",
-     "country": "Sweden",
-     "height": 190,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1373206,
-     "name": "Liam Selin",
-     "role": "keepers",
-     "position": "Keeper",
-     "number": 39,
-     "age": 20,
-     "born": "2006-03-13",
-     "country": "Sweden",
-     "height": 201,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1214159,
-     "name": "Johan Rapp",
-     "role": "defenders",
-     "position": "CB,RB",
-     "number": 2,
-     "age": 25,
-     "born": "2001-02-08",
-     "country": "Sweden",
-     "height": null,
-     "value": 99537,
-     "rating": null,
-     "goals": 1,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 5,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 809553,
-     "name": "Axel Björnström",
-     "role": "defenders",
-     "position": "LB,LM",
-     "number": 3,
-     "age": 31,
-     "born": "1995-09-10",
-     "country": "Sweden",
-     "height": 176,
-     "value": 98599,
-     "rating": null,
-     "goals": 3,
-     "assists": 2,
-     "penalties": 0,
-     "yellow": 2,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 941539,
-     "name": "Samuel Ohlsson",
-     "role": "defenders",
-     "position": "LB",
-     "number": 4,
-     "age": 25,
-     "born": "2001-05-13",
-     "country": "Sweden",
-     "height": 179,
-     "value": 158068,
-     "rating": null,
-     "goals": 0,
-     "assists": 2,
-     "penalties": 0,
-     "yellow": 3,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 261427,
-     "name": "Doug Bergqvist",
-     "role": "defenders",
-     "position": "CB",
-     "number": 5,
-     "age": 33,
-     "born": "1993-03-29",
-     "country": "Sweden",
-     "height": 184,
-     "value": 99293,
-     "rating": null,
-     "goals": 0,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 892419,
-     "name": "Hugo Andersson",
-     "role": "defenders",
-     "position": "CB",
-     "number": 6,
-     "age": 27,
-     "born": "1999-01-01",
-     "country": "Sweden",
-     "height": 195,
-     "value": 113936,
-     "rating": null,
-     "goals": 3,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 3,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1612777,
-     "name": "Zakarias Råvik",
-     "role": "defenders",
-     "position": "CB",
-     "number": 16,
-     "age": 20,
-     "born": "2006-03-10",
-     "country": "Sweden",
-     "height": null,
-     "value": 187583,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1079824,
-     "name": "Arash Motaraghebjafarpour",
-     "role": "defenders",
-     "position": "RB,RM",
-     "number": 18,
-     "age": 23,
-     "born": "2003-03-19",
-     "country": "Sweden",
-     "height": null,
-     "value": 90756,
-     "rating": null,
-     "goals": 0,
-     "assists": 3,
-     "penalties": 0,
-     "yellow": 2,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1802796,
-     "name": "Armandas Raudonis",
-     "role": "defenders",
-     "position": "RB",
-     "number": 32,
-     "age": 19,
-     "born": "2007-07-29",
-     "country": "Lithuania",
-     "height": 182,
-     "value": 275510,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 682428,
-     "name": "Carl Johansson",
-     "role": "midfielders",
-     "position": "RM,CM,RW",
-     "number": 7,
-     "age": 28,
-     "born": "1998-06-17",
-     "country": "Sweden",
-     "height": 173,
-     "value": 67701,
-     "rating": null,
-     "goals": 0,
-     "assists": 2,
-     "penalties": 0,
-     "yellow": 4,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1612928,
-     "name": "Hugo Andersson Mella",
-     "role": "midfielders",
-     "position": "RM",
-     "number": 8,
-     "age": 19,
-     "born": "2007-01-12",
-     "country": "Sweden",
-     "height": null,
-     "value": 234777,
-     "rating": null,
-     "goals": 0,
-     "assists": 4,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 258226,
-     "name": "Viktor Claesson",
-     "role": "midfielders",
-     "position": "CM,ST,CAM",
-     "number": 10,
-     "age": 34,
-     "born": "1992-01-02",
-     "country": "Sweden",
-     "height": 180,
-     "value": 825167,
-     "rating": null,
-     "goals": 6,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1441945,
-     "name": "August Ljungberg",
-     "role": "midfielders",
-     "position": "LW,LM",
-     "number": 11,
-     "age": 21,
-     "born": "2005-05-13",
-     "country": "Sweden",
-     "height": 180,
-     "value": 460093,
-     "rating": null,
-     "goals": 1,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1447799,
-     "name": "Sigge Jansson",
-     "role": "midfielders",
-     "position": "CM",
-     "number": 13,
-     "age": 20,
-     "born": "2005-11-10",
-     "country": "Sweden",
-     "height": 184,
-     "value": 362451,
-     "rating": null,
-     "goals": 0,
-     "assists": 2,
-     "penalties": 0,
-     "yellow": 2,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1556195,
-     "name": "Fred Božičević",
-     "role": "midfielders",
-     "position": "LM,LW",
-     "number": 17,
-     "age": 19,
-     "born": "2007-09-28",
-     "country": "Sweden",
-     "height": null,
-     "value": 315550,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1157897,
-     "name": "Ishaq Abdulrazak",
-     "role": "midfielders",
-     "position": "CM",
-     "number": 21,
-     "age": 24,
-     "born": "2002-05-05",
-     "country": "Nigeria",
-     "height": 175,
-     "value": 170673,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 255221,
-     "name": "Simon Thern",
-     "role": "midfielders",
-     "position": "CM,CDM",
-     "number": 22,
-     "age": 34,
-     "born": "1992-09-18",
-     "country": "Sweden",
-     "height": 176,
-     "value": 105596,
-     "rating": null,
-     "goals": 1,
-     "assists": 3,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1080982,
-     "name": "Logi Róbertsson",
-     "role": "midfielders",
-     "position": "CM",
-     "number": 23,
-     "age": 22,
-     "born": "2004-07-22",
-     "country": "Iceland",
-     "height": null,
-     "value": 140324,
-     "rating": null,
-     "goals": 3,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 4,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1941163,
-     "name": "Mohamed Kamara",
-     "role": "midfielders",
-     "position": "CM",
-     "number": 24,
-     "age": 0,
-     "born": null,
-     "country": "Sierra Leone",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1613135,
-     "name": "Calle Johansson",
-     "role": "midfielders",
-     "position": "CM",
-     "number": 26,
-     "age": 20,
-     "born": "2005-12-13",
-     "country": "Sweden",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1962152,
-     "name": "Benjamin Zulovic",
-     "role": "midfielders",
-     "position": "RM",
-     "number": 34,
-     "age": 18,
-     "born": "2007-10-31",
-     "country": "Sweden",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 2,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1056476,
-     "name": "Kai Meriluoto",
-     "role": "attackers",
-     "position": "ST,RW,CAM,LW",
-     "number": 9,
-     "age": 23,
-     "born": "2003-01-02",
-     "country": "Finland",
-     "height": 183,
-     "value": 261678,
-     "rating": null,
-     "goals": 7,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 2,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 237629,
-     "name": "Marcus Antonsson",
-     "role": "attackers",
-     "position": "ST,CM",
-     "number": 14,
-     "age": 35,
-     "born": "1991-05-08",
-     "country": "Sweden",
-     "height": 183,
-     "value": 166260,
-     "rating": null,
-     "goals": 6,
-     "assists": 2,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1833171,
-     "name": "Mamadou Diallo",
-     "role": "attackers",
-     "position": "Attacker",
-     "number": 28,
-     "age": 19,
-     "born": "2007-01-19",
-     "country": "Sweden",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 2121260,
-     "name": "Musa Akinfewa",
-     "role": "attackers",
-     "position": "RW,RM",
-     "number": 33,
-     "age": 19,
-     "born": "2007-09-04",
-     "country": "Nigeria",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    }
-   ],
-   "fetchedAt": "2026-10-04T09:27:34.347Z",
-   "coachHistory": [
-    {
-     "name": "Kim Bergstrand",
-     "firstSeen": "2026-09-28"
-    }
-   ],
-   "history": {
-    "237629": {
-     "name": "Marcus Antonsson",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "255221": {
-     "name": "Simon Thern",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "258226": {
-     "name": "Viktor Claesson",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "261427": {
-     "name": "Doug Bergqvist",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "682428": {
-     "name": "Carl Johansson",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "759579": {
-     "name": "Hugo Keto",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "809553": {
-     "name": "Axel Björnström",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "892419": {
-     "name": "Hugo Andersson",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "941539": {
-     "name": "Samuel Ohlsson",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1056476": {
-     "name": "Kai Meriluoto",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1079824": {
-     "name": "Arash Motaraghebjafarpour",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1080982": {
-     "name": "Logi Róbertsson",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1157897": {
-     "name": "Ishaq Abdulrazak",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1214159": {
-     "name": "Johan Rapp",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1339435": {
-     "name": "Souleymane Coulibaly",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
-    },
-    "1373206": {
-     "name": "Liam Selin",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1441945": {
-     "name": "August Ljungberg",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1447799": {
-     "name": "Sigge Jansson",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1556195": {
-     "name": "Fred Božičević",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1612777": {
-     "name": "Zakarias Råvik",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1612928": {
-     "name": "Hugo Andersson Mella",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1613135": {
-     "name": "Calle Johansson",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1635933": {
-     "name": "Malcom Moulare",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1658825": {
-     "name": "Antonio Kujundžić",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
-    },
-    "1790010": {
-     "name": "Erik Freij",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
-    },
-    "1802796": {
-     "name": "Armandas Raudonis",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1833171": {
-     "name": "Mamadou Diallo",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1939778": {
-     "name": "Blazej Sapielak",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
-    },
-    "1941163": {
-     "name": "Mohamed Kamara",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1962152": {
-     "name": "Benjamin Zulovic",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "2121260": {
-     "name": "Musa Akinfewa",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    }
-   },
-   "left": [
-    {
-     "id": "1339435",
-     "name": "Souleymane Coulibaly",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
-    },
-    {
-     "id": "1658825",
-     "name": "Antonio Kujundžić",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
-    },
-    {
-     "id": "1790010",
-     "name": "Erik Freij",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
-    },
-    {
-     "id": "1939778",
-     "name": "Blazej Sapielak",
      "firstSeen": "2026-09-28",
      "lastSeen": "2026-09-29"
     }
@@ -7136,7 +7286,7 @@
      "goals": 0,
      "assists": 0,
      "penalties": 0,
-     "yellow": 0,
+     "yellow": 1,
      "red": 0,
      "injury": null
     },
@@ -7198,6 +7348,25 @@
      "injury": null
     },
     {
+     "id": 1680139,
+     "name": "Ludvig Jagdell",
+     "role": "defenders",
+     "position": "Defender",
+     "number": 17,
+     "age": 18,
+     "born": "2007-11-02",
+     "country": "Sweden",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
      "id": 1626927,
      "name": "Mehmet Uzel",
      "role": "defenders",
@@ -7222,7 +7391,7 @@
      "role": "defenders",
      "position": "CB",
      "number": 60,
-     "age": 25,
+     "age": 26,
      "born": "2000-10-09",
      "country": "Ghana",
      "height": 183,
@@ -7250,7 +7419,7 @@
      "goals": 1,
      "assists": 1,
      "penalties": 0,
-     "yellow": 6,
+     "yellow": 7,
      "red": 0,
      "injury": null
     },
@@ -7362,7 +7531,7 @@
      "value": 171829,
      "rating": null,
      "goals": 0,
-     "assists": 3,
+     "assists": 4,
      "penalties": 0,
      "yellow": 0,
      "red": 0,
@@ -7410,7 +7579,7 @@
      "id": 797799,
      "name": "Samuel Adrian",
      "role": "midfielders",
-     "position": "CDM",
+     "position": "CM",
      "number": 58,
      "age": 28,
      "born": "1998-03-02",
@@ -7421,7 +7590,7 @@
      "goals": 0,
      "assists": 0,
      "penalties": 0,
-     "yellow": 0,
+     "yellow": 1,
      "red": 0,
      "injury": null
     },
@@ -7429,7 +7598,7 @@
      "id": 1136688,
      "name": "Daniel Ljung",
      "role": "midfielders",
-     "position": "CAM,CDM,LW,CM",
+     "position": "CAM,CDM,CM,LW",
      "number": 71,
      "age": 27,
      "born": "1998-11-29",
@@ -7437,10 +7606,10 @@
      "height": 182,
      "value": 85080,
      "rating": null,
-     "goals": 2,
+     "goals": 3,
      "assists": 3,
      "penalties": 0,
-     "yellow": 1,
+     "yellow": 2,
      "red": 0,
      "injury": null
     },
@@ -7456,7 +7625,7 @@
      "height": null,
      "value": null,
      "rating": null,
-     "goals": 4,
+     "goals": 5,
      "assists": 0,
      "penalties": 0,
      "yellow": 3,
@@ -7533,7 +7702,7 @@
      "value": 256139,
      "rating": null,
      "goals": 1,
-     "assists": 1,
+     "assists": 2,
      "penalties": 0,
      "yellow": 2,
      "red": 0,
@@ -7570,7 +7739,7 @@
      "height": 188,
      "value": 61928,
      "rating": null,
-     "goals": 4,
+     "goals": 5,
      "assists": 4,
      "penalties": 1,
      "yellow": 2,
@@ -7578,7 +7747,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-04T09:27:34.347Z",
+   "fetchedAt": "2026-10-20T17:08:46.118Z",
    "coachHistory": [
     {
      "name": "Tor-Arne Fredheim",
@@ -7589,142 +7758,147 @@
     "797799": {
      "name": "Samuel Adrian",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "836982": {
      "name": "Filip Örnblom",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1127036": {
      "name": "Jonathan Liljedahl",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1129360": {
      "name": "Cameron Hogg",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1136688": {
      "name": "Daniel Ljung",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1165174": {
      "name": "William Henriksson-Liljedahl",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1176203": {
      "name": "Gideon Mensah",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1245701": {
      "name": "Filip Ambrož",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1290296": {
      "name": "Lukas Eriksson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1316358": {
      "name": "David Frisk",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1379436": {
      "name": "Ivan Maric",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1406864": {
      "name": "Lukas Lindholm Corner",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1410901": {
      "name": "William Nilsson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1441367": {
      "name": "Emilio Reljanovic",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1457383": {
      "name": "Isaac Shears",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1457815": {
      "name": "Gustav Hedin",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1504337": {
      "name": "Elton Hedström",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1524627": {
      "name": "Vilmer Tyrén",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1573174": {
      "name": "Rasmus Nåfors Dahlin",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1626927": {
      "name": "Mehmet Uzel",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1677227": {
      "name": "Samuel Hoegblom",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
+    },
+    "1680139": {
+     "name": "Ludvig Jagdell",
+     "firstSeen": "2026-10-20",
+     "lastSeen": "2026-10-20"
     },
     "1724534": {
      "name": "Alfons Borén",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1735222": {
      "name": "Daniel Lagerloef",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1735229": {
      "name": "Alex Rasheed",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1735232": {
      "name": "Alexander Bjoerk",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1735235": {
      "name": "Ailo Zackrisson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1764414": {
      "name": "Hugo Borstam",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1800438": {
      "name": "Shakur Omar",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     }
    },
    "left": []
@@ -7825,7 +7999,7 @@
      "goals": 0,
      "assists": 2,
      "penalties": 0,
-     "yellow": 2,
+     "yellow": 4,
      "red": 0,
      "injury": null
     },
@@ -7844,7 +8018,7 @@
      "goals": 0,
      "assists": 1,
      "penalties": 0,
-     "yellow": 3,
+     "yellow": 4,
      "red": 0,
      "injury": null
     },
@@ -8013,7 +8187,7 @@
      "value": 171761,
      "rating": null,
      "goals": 1,
-     "assists": 1,
+     "assists": 3,
      "penalties": 0,
      "yellow": 2,
      "red": 0,
@@ -8186,7 +8360,7 @@
      "goals": 6,
      "assists": 3,
      "penalties": 0,
-     "yellow": 5,
+     "yellow": 6,
      "red": 0,
      "injury": null
     },
@@ -8240,7 +8414,7 @@
      "height": null,
      "value": 93830,
      "rating": null,
-     "goals": 4,
+     "goals": 6,
      "assists": 0,
      "penalties": 0,
      "yellow": 0,
@@ -8248,7 +8422,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-04T09:27:34.347Z",
+   "fetchedAt": "2026-10-20T17:08:46.118Z",
    "coachHistory": [
     {
      "name": "Tobias Linderoth",
@@ -8259,72 +8433,72 @@
     "748863": {
      "name": "Kevin Liimatainen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "934009": {
      "name": "Tim Svensson Lillvik",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1022708": {
      "name": "Azeez Temitope Yusuf",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1106548": {
      "name": "Julius Johansson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1338745": {
      "name": "David Bendrik",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1339271": {
      "name": "Filip Gustafsson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1340856": {
      "name": "Leon Isa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1355081": {
      "name": "Joel Hjalmar",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1356796": {
      "name": "Johannes Engvall",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1378821": {
      "name": "Sebastian Banožić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1406610": {
      "name": "Olle Backlund",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1441850": {
      "name": "Vidar Svendsén",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1457319": {
      "name": "Hugo Tilly",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1467250": {
      "name": "Charlie Axede",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1470674": {
      "name": "Lendi Haziraj",
@@ -8334,42 +8508,42 @@
     "1477326": {
      "name": "Adam Sjöberg",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1489909": {
      "name": "Jamie Bichis",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1572319": {
      "name": "Alfred Lydén",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1612929": {
      "name": "Johan Brådenmark",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1627206": {
      "name": "Ture Spendler",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1635647": {
      "name": "Musse Bäck Engström",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1735111": {
      "name": "Aldin Nedzibovic",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1735708": {
      "name": "Ibrahim Adewale",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1741515": {
      "name": "Albin Neziri",
@@ -8379,27 +8553,27 @@
     "1756307": {
      "name": "Malte Wester",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1759996": {
      "name": "Malte Ljungkull",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1775241": {
      "name": "Wilhelm Ekdahl",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1782169": {
      "name": "Finlay Neat",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1897975": {
      "name": "Eloi Ferreira",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1939911": {
      "name": "Tim Ekelund",
@@ -8423,6 +8597,694 @@
     {
      "id": "1939911",
      "name": "Tim Ekelund",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-09-29"
+    }
+   ]
+  },
+  "IK Brage": {
+   "fotmobName": "IK Brage",
+   "fotmobId": 6690,
+   "coach": "Anders Bååth-Sjöblom",
+   "players": [
+    {
+     "id": 751838,
+     "name": "Viktor Frodig",
+     "role": "keepers",
+     "position": "GK",
+     "number": 1,
+     "age": 29,
+     "born": "1997-06-05",
+     "country": "Sweden",
+     "height": 192,
+     "value": 50000,
+     "rating": null,
+     "goals": 1,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 3,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 619367,
+     "name": "Adrian Engdahl",
+     "role": "keepers",
+     "position": "GK",
+     "number": 13,
+     "age": 32,
+     "born": "1994-06-02",
+     "country": "Sweden",
+     "height": 190,
+     "value": 50000,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1269668,
+     "name": "Johan Guadagno",
+     "role": "keepers",
+     "position": "GK",
+     "number": 30,
+     "age": 23,
+     "born": "2003-02-21",
+     "country": "Sweden",
+     "height": 188,
+     "value": 64766,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 322859,
+     "name": "Alexander Zetterström",
+     "role": "defenders",
+     "position": "CB",
+     "number": 2,
+     "age": 31,
+     "born": "1995-04-28",
+     "country": "Sweden",
+     "height": 185,
+     "value": 50000,
+     "rating": null,
+     "goals": 2,
+     "assists": 2,
+     "penalties": 0,
+     "yellow": 4,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 941578,
+     "name": "Teodor Wålemark",
+     "role": "defenders",
+     "position": "CB",
+     "number": 3,
+     "age": 25,
+     "born": "2001-06-25",
+     "country": "Sweden",
+     "height": null,
+     "value": 112784,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1122422,
+     "name": "Malte Persson",
+     "role": "defenders",
+     "position": "LB",
+     "number": 4,
+     "age": 26,
+     "born": "2000-01-15",
+     "country": "Sweden",
+     "height": 183,
+     "value": 54763,
+     "rating": null,
+     "goals": 0,
+     "assists": 2,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1351562,
+     "name": "Lorik Konjuhi",
+     "role": "defenders",
+     "position": "CB",
+     "number": 5,
+     "age": 23,
+     "born": "2002-12-21",
+     "country": "Albania",
+     "height": null,
+     "value": 163739,
+     "rating": null,
+     "goals": 1,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1909294,
+     "name": "Noel Sigurdsson",
+     "role": "defenders",
+     "position": "Defender",
+     "number": 16,
+     "age": 18,
+     "born": "2008-09-11",
+     "country": "Sweden",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 782356,
+     "name": "York Rafael",
+     "role": "defenders",
+     "position": "CM,LWB,LB",
+     "number": 16,
+     "age": 27,
+     "born": "1999-03-17",
+     "country": "Rwanda",
+     "height": 177,
+     "value": 159334,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1717495,
+     "name": "Noah Oestberg",
+     "role": "defenders",
+     "position": "RB",
+     "number": 21,
+     "age": 20,
+     "born": "2006-01-03",
+     "country": "Sweden",
+     "height": null,
+     "value": 118753,
+     "rating": null,
+     "goals": 1,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1284208,
+     "name": "Tobias Stagaard",
+     "role": "defenders",
+     "position": "CB,LB",
+     "number": 22,
+     "age": 24,
+     "born": "2002-01-29",
+     "country": "Denmark",
+     "height": 187,
+     "value": 80588,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 3,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 927875,
+     "name": "Felix Hörberg",
+     "role": "defenders",
+     "position": "RB",
+     "number": 23,
+     "age": 27,
+     "born": "1999-05-19",
+     "country": "Sweden",
+     "height": 180,
+     "value": 50000,
+     "rating": null,
+     "goals": 2,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 3,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1245261,
+     "name": "Anders Hellblom",
+     "role": "defenders",
+     "position": "LB,RB",
+     "number": 24,
+     "age": 23,
+     "born": "2003-05-05",
+     "country": "Sweden",
+     "height": null,
+     "value": 163427,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1436677,
+     "name": "Lasse Bruun Madsen",
+     "role": "midfielders",
+     "position": "CM",
+     "number": 6,
+     "age": 21,
+     "born": "2005-03-19",
+     "country": "Denmark",
+     "height": 188,
+     "value": 171166,
+     "rating": null,
+     "goals": 2,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 4,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 831042,
+     "name": "Jacob Stensson",
+     "role": "midfielders",
+     "position": "CM,CDM",
+     "number": 7,
+     "age": 29,
+     "born": "1997-03-24",
+     "country": "Sweden",
+     "height": 178,
+     "value": 60593,
+     "rating": null,
+     "goals": 0,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1005371,
+     "name": "Albin Sporrong",
+     "role": "midfielders",
+     "position": "CM,CDM,CAM,LW,LM",
+     "number": 8,
+     "age": 26,
+     "born": "1999-12-06",
+     "country": "Sweden",
+     "height": 186,
+     "value": 62834,
+     "rating": null,
+     "goals": 3,
+     "assists": 7,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1135779,
+     "name": "Gustav Berggren",
+     "role": "midfielders",
+     "position": "CM",
+     "number": 10,
+     "age": 26,
+     "born": "2000-07-01",
+     "country": "Sweden",
+     "height": null,
+     "value": 166472,
+     "rating": null,
+     "goals": 0,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1727684,
+     "name": "Victor Okeke",
+     "role": "midfielders",
+     "position": "LM,CAM,CM,LB",
+     "number": 20,
+     "age": 20,
+     "born": "2006-06-16",
+     "country": "Nigeria",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1449711,
+     "name": "Gideon Granström",
+     "role": "midfielders",
+     "position": "CM,CDM",
+     "number": 28,
+     "age": 21,
+     "born": "2005-08-08",
+     "country": "Sweden",
+     "height": 186,
+     "value": 111965,
+     "rating": null,
+     "goals": 2,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 5,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1339300,
+     "name": "Filip Trpcevski",
+     "role": "attackers",
+     "position": "ST,RW,RM",
+     "number": 9,
+     "age": 23,
+     "born": "2003-05-04",
+     "country": "North Macedonia",
+     "height": 187,
+     "value": 382335,
+     "rating": null,
+     "goals": 4,
+     "assists": 5,
+     "penalties": 0,
+     "yellow": 3,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 406263,
+     "name": "Anton Lundin",
+     "role": "attackers",
+     "position": "ST,RM,RW",
+     "number": 11,
+     "age": 30,
+     "born": "1995-12-23",
+     "country": "Sweden",
+     "height": 184,
+     "value": 53101,
+     "rating": null,
+     "goals": 5,
+     "assists": 2,
+     "penalties": 0,
+     "yellow": 7,
+     "red": 1,
+     "injury": null
+    },
+    {
+     "id": 1229462,
+     "name": "Alex Mortensen",
+     "role": "attackers",
+     "position": "RW,LM,ST,LW,CM",
+     "number": 12,
+     "age": 24,
+     "born": "2002-07-13",
+     "country": "Sweden",
+     "height": 175,
+     "value": 125060,
+     "rating": null,
+     "goals": 3,
+     "assists": 2,
+     "penalties": 0,
+     "yellow": 4,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1102756,
+     "name": "Jakob Rømo Skille",
+     "role": "attackers",
+     "position": "LW",
+     "number": 14,
+     "age": 25,
+     "born": "2001-02-06",
+     "country": "Norway",
+     "height": null,
+     "value": 93761,
+     "rating": null,
+     "goals": 2,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1675641,
+     "name": "Oliwer Stark",
+     "role": "attackers",
+     "position": "RW",
+     "number": 15,
+     "age": 20,
+     "born": "2006-08-07",
+     "country": "Sweden",
+     "height": null,
+     "value": 152488,
+     "rating": null,
+     "goals": 0,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 895285,
+     "name": "Pontus Jonsson",
+     "role": "attackers",
+     "position": "RM,ST,RW,RB",
+     "number": 17,
+     "age": 25,
+     "born": "2001-05-20",
+     "country": "Sweden",
+     "height": 179,
+     "value": 176122,
+     "rating": null,
+     "goals": 2,
+     "assists": 2,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1525636,
+     "name": "Mass Modou Sise",
+     "role": "attackers",
+     "position": "ST",
+     "number": 19,
+     "age": 23,
+     "born": "2003-09-23",
+     "country": "Denmark",
+     "height": null,
+     "value": 133080,
+     "rating": null,
+     "goals": 3,
+     "assists": 2,
+     "penalties": 0,
+     "yellow": 4,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1693303,
+     "name": "Albin Pihlstroem",
+     "role": "attackers",
+     "position": "Attacker",
+     "number": 25,
+     "age": 19,
+     "born": "2007-03-01",
+     "country": "Sweden",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    }
+   ],
+   "fetchedAt": "2026-10-20T17:08:46.118Z",
+   "coachHistory": [
+    {
+     "name": "Anders Bååth-Sjöblom",
+     "firstSeen": "2026-09-28"
+    }
+   ],
+   "history": {
+    "322859": {
+     "name": "Alexander Zetterström",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "406263": {
+     "name": "Anton Lundin",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "619367": {
+     "name": "Adrian Engdahl",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "751838": {
+     "name": "Viktor Frodig",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "782356": {
+     "name": "York Rafael",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "805505": {
+     "name": "Haris Brkic",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-09-29"
+    },
+    "831042": {
+     "name": "Jacob Stensson",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "895285": {
+     "name": "Pontus Jonsson",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "927875": {
+     "name": "Felix Hörberg",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "941578": {
+     "name": "Teodor Wålemark",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1005371": {
+     "name": "Albin Sporrong",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1102756": {
+     "name": "Jakob Rømo Skille",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1122422": {
+     "name": "Malte Persson",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1135779": {
+     "name": "Gustav Berggren",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1229462": {
+     "name": "Alex Mortensen",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1245261": {
+     "name": "Anders Hellblom",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1269668": {
+     "name": "Johan Guadagno",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1284208": {
+     "name": "Tobias Stagaard",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1339300": {
+     "name": "Filip Trpcevski",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1351562": {
+     "name": "Lorik Konjuhi",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1375020": {
+     "name": "Marinus Larsen",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-09-29"
+    },
+    "1436677": {
+     "name": "Lasse Bruun Madsen",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1449711": {
+     "name": "Gideon Granström",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1525636": {
+     "name": "Mass Modou Sise",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1675641": {
+     "name": "Oliwer Stark",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1693303": {
+     "name": "Albin Pihlstroem",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1717495": {
+     "name": "Noah Oestberg",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1727684": {
+     "name": "Victor Okeke",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    },
+    "1909294": {
+     "name": "Noel Sigurdsson",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-20"
+    }
+   },
+   "left": [
+    {
+     "id": "805505",
+     "name": "Haris Brkic",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-09-29"
+    },
+    {
+     "id": "1375020",
+     "name": "Marinus Larsen",
      "firstSeen": "2026-09-28",
      "lastSeen": "2026-09-29"
     }
@@ -8526,7 +9388,12 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": null,
+      "expectedReturn": "Unknown",
+      "name": "Knee injury",
+      "source": "Transfermarkt"
+     }
     },
     {
      "id": 939681,
@@ -8534,7 +9401,7 @@
      "role": "defenders",
      "position": "LB",
      "number": 11,
-     "age": 27,
+     "age": 28,
      "born": "1998-10-05",
      "country": "Sweden",
      "height": null,
@@ -8667,7 +9534,7 @@
      "role": "defenders",
      "position": "CB",
      "number": 32,
-     "age": 33,
+     "age": 34,
      "born": "1992-10-12",
      "country": "Sweden",
      "height": null,
@@ -8711,7 +9578,7 @@
      "height": 176,
      "value": 50000,
      "rating": null,
-     "goals": 0,
+     "goals": 1,
      "assists": 1,
      "penalties": 0,
      "yellow": 2,
@@ -8741,7 +9608,7 @@
      "id": 1203909,
      "name": "Samuel Wikman",
      "role": "midfielders",
-     "position": "RM,LM,CM,RW,CAM",
+     "position": "RM,CM,LM,RW,CAM",
      "number": 7,
      "age": 24,
      "born": "2002-01-22",
@@ -8779,7 +9646,7 @@
      "id": 1355797,
      "name": "Antonio Yakoub",
      "role": "midfielders",
-     "position": "RM,ST,RW,LM,CM,CAM",
+     "position": "RM,ST,RW,CM,LM,CAM",
      "number": 9,
      "age": 24,
      "born": "2002-06-12",
@@ -8864,7 +9731,7 @@
      "value": 153231,
      "rating": null,
      "goals": 1,
-     "assists": 1,
+     "assists": 2,
      "penalties": 0,
      "yellow": 0,
      "red": 0,
@@ -8931,7 +9798,7 @@
      "id": 255430,
      "name": "Ahmed Yasin",
      "role": "attackers",
-     "position": "ST,LW,LM,RM,CAM,LWB",
+     "position": "ST,LW,LM,RM,LWB,CAM",
      "number": 99,
      "age": 35,
      "born": "1991-04-22",
@@ -8947,7 +9814,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-04T09:27:34.347Z",
+   "fetchedAt": "2026-10-20T17:08:46.118Z",
    "coachHistory": [
     {
      "name": "Rikard Norling",
@@ -8958,828 +9825,140 @@
     "255430": {
      "name": "Ahmed Yasin",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "269814": {
      "name": "Kalle Holmberg",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "451909": {
      "name": "Erdal Rakip",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "490541": {
      "name": "Max Watson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "553780": {
      "name": "Jacob Ortmark",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "749864": {
      "name": "Rasmus Wiedesheim-Paul",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "776247": {
      "name": "Chovanie Amatkarijo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "932277": {
      "name": "Jetmir Haliti",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "939681": {
      "name": "Christopher Redenstrand",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "940315": {
      "name": "Manasse Kusu",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1026063": {
      "name": "Erik McCue",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1113805": {
      "name": "Jakub Ojrzyński",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1142193": {
      "name": "John Stenberg",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1192409": {
      "name": "Dino Salihović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1203909": {
      "name": "Samuel Wikman",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1353009": {
      "name": "Hampus Söderström",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1355797": {
      "name": "Antonio Yakoub",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1356197": {
      "name": "Buster Runheim",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1398823": {
      "name": "Alai Ghasem",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1565712": {
      "name": "Giuseppe Bovalina",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1580117": {
      "name": "Victor Sandberg",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1716641": {
      "name": "Lowe Astvald",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1776908": {
      "name": "Hasan Dana",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1909295": {
      "name": "Edwin Ibrahimbegovic",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1910033": {
      "name": "Amer Zeljkovic",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1918560": {
      "name": "Fabian Wahlstroem",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1921232": {
      "name": "Neo Almkvist",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     }
    },
    "left": []
-  },
-  "IK Brage": {
-   "fotmobName": "IK Brage",
-   "fotmobId": 6690,
-   "coach": "Anders Bååth-Sjöblom",
-   "players": [
-    {
-     "id": 751838,
-     "name": "Viktor Frodig",
-     "role": "keepers",
-     "position": "GK",
-     "number": 1,
-     "age": 29,
-     "born": "1997-06-05",
-     "country": "Sweden",
-     "height": 192,
-     "value": 50000,
-     "rating": null,
-     "goals": 1,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 3,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 619367,
-     "name": "Adrian Engdahl",
-     "role": "keepers",
-     "position": "GK",
-     "number": 13,
-     "age": 32,
-     "born": "1994-06-02",
-     "country": "Sweden",
-     "height": 190,
-     "value": 50000,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1269668,
-     "name": "Johan Guadagno",
-     "role": "keepers",
-     "position": "GK",
-     "number": 30,
-     "age": 23,
-     "born": "2003-02-21",
-     "country": "Sweden",
-     "height": 188,
-     "value": 64766,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 2,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 322859,
-     "name": "Alexander Zetterström",
-     "role": "defenders",
-     "position": "CB",
-     "number": 2,
-     "age": 31,
-     "born": "1995-04-28",
-     "country": "Sweden",
-     "height": 185,
-     "value": 50000,
-     "rating": null,
-     "goals": 1,
-     "assists": 2,
-     "penalties": 0,
-     "yellow": 4,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 941578,
-     "name": "Teodor Wålemark",
-     "role": "defenders",
-     "position": "CB",
-     "number": 3,
-     "age": 25,
-     "born": "2001-06-25",
-     "country": "Sweden",
-     "height": null,
-     "value": 112784,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1122422,
-     "name": "Malte Persson",
-     "role": "defenders",
-     "position": "LB",
-     "number": 4,
-     "age": 26,
-     "born": "2000-01-15",
-     "country": "Sweden",
-     "height": 183,
-     "value": 54763,
-     "rating": null,
-     "goals": 0,
-     "assists": 2,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1351562,
-     "name": "Lorik Konjuhi",
-     "role": "defenders",
-     "position": "CB",
-     "number": 5,
-     "age": 23,
-     "born": "2002-12-21",
-     "country": "Albania",
-     "height": null,
-     "value": 163739,
-     "rating": null,
-     "goals": 1,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 2,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1909294,
-     "name": "Noel Sigurdsson",
-     "role": "defenders",
-     "position": "Defender",
-     "number": 16,
-     "age": 18,
-     "born": "2008-09-11",
-     "country": "Sweden",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1717495,
-     "name": "Noah Oestberg",
-     "role": "defenders",
-     "position": "RB",
-     "number": 21,
-     "age": 20,
-     "born": "2006-01-03",
-     "country": "Sweden",
-     "height": null,
-     "value": 118753,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1284208,
-     "name": "Tobias Stagaard",
-     "role": "defenders",
-     "position": "CB,LB",
-     "number": 22,
-     "age": 24,
-     "born": "2002-01-29",
-     "country": "Denmark",
-     "height": 187,
-     "value": 80588,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 3,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 927875,
-     "name": "Felix Hörberg",
-     "role": "defenders",
-     "position": "RB",
-     "number": 23,
-     "age": 27,
-     "born": "1999-05-19",
-     "country": "Sweden",
-     "height": 180,
-     "value": 50000,
-     "rating": null,
-     "goals": 2,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 3,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1245261,
-     "name": "Anders Hellblom",
-     "role": "defenders",
-     "position": "LB,RB",
-     "number": 24,
-     "age": 23,
-     "born": "2003-05-05",
-     "country": "Sweden",
-     "height": null,
-     "value": 163427,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1436677,
-     "name": "Lasse Bruun Madsen",
-     "role": "midfielders",
-     "position": "CM",
-     "number": 6,
-     "age": 21,
-     "born": "2005-03-19",
-     "country": "Denmark",
-     "height": 188,
-     "value": 171166,
-     "rating": null,
-     "goals": 2,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 2,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 831042,
-     "name": "Jacob Stensson",
-     "role": "midfielders",
-     "position": "CM,CDM",
-     "number": 7,
-     "age": 29,
-     "born": "1997-03-24",
-     "country": "Sweden",
-     "height": 178,
-     "value": 60593,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1005371,
-     "name": "Albin Sporrong",
-     "role": "midfielders",
-     "position": "CM,CDM,CAM",
-     "number": 8,
-     "age": 26,
-     "born": "1999-12-06",
-     "country": "Sweden",
-     "height": 186,
-     "value": 62834,
-     "rating": null,
-     "goals": 3,
-     "assists": 7,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1135779,
-     "name": "Gustav Berggren",
-     "role": "midfielders",
-     "position": "CM",
-     "number": 10,
-     "age": 26,
-     "born": "2000-07-01",
-     "country": "Sweden",
-     "height": null,
-     "value": 166472,
-     "rating": null,
-     "goals": 0,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 782356,
-     "name": "York Rafael",
-     "role": "midfielders",
-     "position": "CM,LWB",
-     "number": 16,
-     "age": 27,
-     "born": "1999-03-17",
-     "country": "Rwanda",
-     "height": 177,
-     "value": 159334,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1727684,
-     "name": "Victor Okeke",
-     "role": "midfielders",
-     "position": "LM,CM,LB,CAM",
-     "number": 20,
-     "age": 20,
-     "born": "2006-06-16",
-     "country": "Nigeria",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1449711,
-     "name": "Gideon Granström",
-     "role": "midfielders",
-     "position": "CM,CDM",
-     "number": 28,
-     "age": 21,
-     "born": "2005-08-08",
-     "country": "Sweden",
-     "height": 186,
-     "value": 111965,
-     "rating": null,
-     "goals": 2,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 4,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1339300,
-     "name": "Filip Trpcevski",
-     "role": "attackers",
-     "position": "ST,RW,RM",
-     "number": 9,
-     "age": 23,
-     "born": "2003-05-04",
-     "country": "North Macedonia",
-     "height": 187,
-     "value": 382335,
-     "rating": null,
-     "goals": 4,
-     "assists": 5,
-     "penalties": 0,
-     "yellow": 3,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 406263,
-     "name": "Anton Lundin",
-     "role": "attackers",
-     "position": "ST,RM,RW",
-     "number": 11,
-     "age": 30,
-     "born": "1995-12-23",
-     "country": "Sweden",
-     "height": 184,
-     "value": 53101,
-     "rating": null,
-     "goals": 5,
-     "assists": 2,
-     "penalties": 0,
-     "yellow": 6,
-     "red": 1,
-     "injury": null
-    },
-    {
-     "id": 1229462,
-     "name": "Alex Mortensen",
-     "role": "attackers",
-     "position": "RW,LM,ST,LW,CM",
-     "number": 12,
-     "age": 24,
-     "born": "2002-07-13",
-     "country": "Sweden",
-     "height": 175,
-     "value": 125060,
-     "rating": null,
-     "goals": 3,
-     "assists": 2,
-     "penalties": 0,
-     "yellow": 4,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1102756,
-     "name": "Jakob Rømo Skille",
-     "role": "attackers",
-     "position": "LW",
-     "number": 14,
-     "age": 25,
-     "born": "2001-02-06",
-     "country": "Norway",
-     "height": null,
-     "value": 93761,
-     "rating": null,
-     "goals": 2,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1675641,
-     "name": "Oliwer Stark",
-     "role": "attackers",
-     "position": "RW",
-     "number": 15,
-     "age": 20,
-     "born": "2006-08-07",
-     "country": "Sweden",
-     "height": null,
-     "value": 152488,
-     "rating": null,
-     "goals": 0,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 895285,
-     "name": "Pontus Jonsson",
-     "role": "attackers",
-     "position": "RM,ST,RW",
-     "number": 17,
-     "age": 25,
-     "born": "2001-05-20",
-     "country": "Sweden",
-     "height": 179,
-     "value": 176122,
-     "rating": null,
-     "goals": 2,
-     "assists": 2,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1525636,
-     "name": "Mass Modou Sise",
-     "role": "attackers",
-     "position": "ST",
-     "number": 19,
-     "age": 23,
-     "born": "2003-09-23",
-     "country": "Denmark",
-     "height": null,
-     "value": 133080,
-     "rating": null,
-     "goals": 3,
-     "assists": 2,
-     "penalties": 0,
-     "yellow": 3,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1693303,
-     "name": "Albin Pihlstroem",
-     "role": "attackers",
-     "position": "Attacker",
-     "number": 25,
-     "age": 19,
-     "born": "2007-03-01",
-     "country": "Sweden",
-     "height": null,
-     "value": null,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    }
-   ],
-   "fetchedAt": "2026-10-04T09:27:34.347Z",
-   "coachHistory": [
-    {
-     "name": "Anders Bååth-Sjöblom",
-     "firstSeen": "2026-09-28"
-    }
-   ],
-   "history": {
-    "322859": {
-     "name": "Alexander Zetterström",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "406263": {
-     "name": "Anton Lundin",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "619367": {
-     "name": "Adrian Engdahl",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "751838": {
-     "name": "Viktor Frodig",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "782356": {
-     "name": "York Rafael",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "805505": {
-     "name": "Haris Brkic",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
-    },
-    "831042": {
-     "name": "Jacob Stensson",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "895285": {
-     "name": "Pontus Jonsson",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "927875": {
-     "name": "Felix Hörberg",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "941578": {
-     "name": "Teodor Wålemark",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1005371": {
-     "name": "Albin Sporrong",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1102756": {
-     "name": "Jakob Rømo Skille",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1122422": {
-     "name": "Malte Persson",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1135779": {
-     "name": "Gustav Berggren",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1229462": {
-     "name": "Alex Mortensen",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1245261": {
-     "name": "Anders Hellblom",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1269668": {
-     "name": "Johan Guadagno",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1284208": {
-     "name": "Tobias Stagaard",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1339300": {
-     "name": "Filip Trpcevski",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1351562": {
-     "name": "Lorik Konjuhi",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1375020": {
-     "name": "Marinus Larsen",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
-    },
-    "1436677": {
-     "name": "Lasse Bruun Madsen",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1449711": {
-     "name": "Gideon Granström",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1525636": {
-     "name": "Mass Modou Sise",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1675641": {
-     "name": "Oliwer Stark",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1693303": {
-     "name": "Albin Pihlstroem",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1717495": {
-     "name": "Noah Oestberg",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1727684": {
-     "name": "Victor Okeke",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1909294": {
-     "name": "Noel Sigurdsson",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    }
-   },
-   "left": [
-    {
-     "id": "805505",
-     "name": "Haris Brkic",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
-    },
-    {
-     "id": "1375020",
-     "name": "Marinus Larsen",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-09-29"
-    }
-   ]
   },
   "GIF Sundsvall": {
    "fotmobName": "GIF Sundsvall",
@@ -9858,7 +10037,7 @@
      "goals": 1,
      "assists": 0,
      "penalties": 0,
-     "yellow": 2,
+     "yellow": 3,
      "red": 0,
      "injury": null
     },
@@ -9906,7 +10085,7 @@
      "role": "defenders",
      "position": "CB,CM",
      "number": 17,
-     "age": 25,
+     "age": 26,
      "born": "2000-10-16",
      "country": "Sweden",
      "height": null,
@@ -10029,7 +10208,7 @@
      "goals": 0,
      "assists": 1,
      "penalties": 0,
-     "yellow": 5,
+     "yellow": 6,
      "red": 0,
      "injury": null
     },
@@ -10056,7 +10235,7 @@
      "id": 1056475,
      "name": "Taiki Kagayama",
      "role": "midfielders",
-     "position": "RM,LM,RB,LB",
+     "position": "LM,RM,LB,ST",
      "number": 9,
      "age": 30,
      "born": "1996-05-14",
@@ -10162,7 +10341,7 @@
      "goals": 2,
      "assists": 2,
      "penalties": 1,
-     "yellow": 2,
+     "yellow": 3,
      "red": 0,
      "injury": null
     },
@@ -10338,7 +10517,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-04T09:27:34.347Z",
+   "fetchedAt": "2026-10-20T17:08:46.118Z",
    "coachHistory": [
     {
      "name": "Per Joar Hansen",
@@ -10349,132 +10528,132 @@
     "657910": {
      "name": "Jonas Olsson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "716425": {
      "name": "Amaro Bahtijar",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "799218": {
      "name": "Marc Manchón",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "917221": {
      "name": "Samuel Tammivuori",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "940331": {
      "name": "Carl Björk",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1056475": {
      "name": "Taiki Kagayama",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1064941": {
      "name": "Nils Eriksson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1126419": {
      "name": "Ludvig Nåvik",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1231604": {
      "name": "Jakob Hedenquist",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1232446": {
      "name": "Lucas Forsberg",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1259376": {
      "name": "Miguel Sandberg",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1339308": {
      "name": "Alper Demirol",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1406692": {
      "name": "Hugo Aviander",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1460950": {
      "name": "Jakob Jäger Röding",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1487060": {
      "name": "Edvard Carrick",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1524202": {
      "name": "Jeremiah Björnler",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1612309": {
      "name": "Elvis Hansson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1613256": {
      "name": "Alieu Atlee Manneh",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1654356": {
      "name": "Eron Gojani",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1670054": {
      "name": "Shalom Ekong",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1733518": {
      "name": "Charles Baah",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1733519": {
      "name": "Abdulahi Shino",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1733520": {
      "name": "Henrik Baeckstroem",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1733525": {
      "name": "Mille Eriksson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1735250": {
      "name": "Malte Hallin",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1737894": {
      "name": "Wilmer Bjuhr",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1800384": {
      "name": "Suwaibou Kebbeh",
@@ -10484,12 +10663,12 @@
     "1910089": {
      "name": "Hugo Oestlund",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1910094": {
      "name": "Isak Lindstroem Halling",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     },
     "1939741": {
      "name": "Randy Bandolo Obam",
@@ -10499,7 +10678,7 @@
     "2160140": {
      "name": "Emil Bengtsson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-20"
     }
    },
    "left": [

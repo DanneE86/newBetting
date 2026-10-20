@@ -234,9 +234,15 @@ test('Stryktipset: hänglås per match – låst går inte att ändra, Generera 
   // Bara några låsta: Generera kör ändå (2026-10-12: "jag ska inte behöva låsa alla matcher")
   await rows.nth(0).locator('.sb-seal').click();
   await expect(view.locator('.sb-seal-count')).toContainText('12/13');
+  // Genereringen kan vara klar på några millisekunder: fånga att knappen blev upptagen i stället för att hinna se den
+  await page.evaluate(() => {
+    (window as any).__sbBusy = false;
+    new MutationObserver(() => { if ((document.querySelector('#sb-generate') as HTMLButtonElement | null)?.disabled) (window as any).__sbBusy = true; })
+      .observe(document.body, { subtree: true, childList: true, attributes: true, attributeFilter: ['disabled'] });
+  });
   await page.locator('#sb-generate').click();
   await expect(view.locator('.sb-gen-err')).toHaveCount(0);
-  await expect(page.locator('#sb-generate')).toBeDisabled();
+  await expect.poll(() => page.evaluate(() => (window as any).__sbBusy)).toBe(true);
   expect(fel, fel.join('\n')).toEqual([]);
 });
 
