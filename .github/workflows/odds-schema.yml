@@ -1,8 +1,9 @@
 name: Oddsschema
 
 # Odds för matcher inom 24 h (användaren 2026-10-20), körs i molnet även när datorn är av:
-# alla ligor en gång per dag från 08:00 svensk tid, europeiska ligor + CL/EL/ECL dessutom 55 min före avspark
-# när startelvan är officiell (annars nästa körning, senast 20 min före avspark).
+# bara topp 5-ligorna (PL, LaLiga, Serie A, Bundesliga, Ligue 1) + CL/EL/ECL, en gång per dag från 08:00 svensk tid och
+# 55 min före avspark när startelvan är officiell (annars nästa körning, senast 20 min före avspark).
+# Övriga ligor bara på begäran: npm run odds:schema -- --alla
 # Kollar var 10:e minut vad som är due (scripts/odds-schema.mjs --plan, ett par sekunder) och hämtar bara då:
 # OddsPortal (gratis) + The Odds API inom månadskvoten -> pro-lagret -> oddsrörelser -> commit -> publicera.
 on:

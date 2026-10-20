@@ -1,10 +1,11 @@
 // Sammanstallning av oddsrorelser (tip.oddsMove) for matcher inom horisonten, storst rorelse forst.
 // En rad per match (samma match kan finnas i bade bestUpcoming och allCandidates).
-export function summarizeMoves(tips, { now = Date.now(), horizonH = 24 } = {}) {
+// leagues: bara dessa ligor (Set), null = alla.
+export function summarizeMoves(tips, { now = Date.now(), horizonH = 24, leagues = null } = {}) {
   const seen = new Map();
   for (const t of tips) {
     const k = Date.parse(t.kickoffUtc ?? '');
-    if (!t.oddsMove || !Number.isFinite(k) || k <= now || k > now + horizonH * 36e5) continue;
+    if (!t.oddsMove || !Number.isFinite(k) || k <= now || k > now + horizonH * 36e5 || (leagues && !leagues.has(t.league))) continue;
     const key = `${t.date}|${t.league}|${t.home}|${t.away}`;
     if (seen.has(key)) continue;
     const m = t.oddsMove;

@@ -1,17 +1,20 @@
 // Hade det lont sig att spela pa sena oddsrorelser? Loggen data/oddsrorelser/*.json (oddsschemat) mot resultaten:
 // ligamatcher ur data/betting-store.json, cuper ur data/open/referee_fotmob.json. Strategier i scripts/lib/odds-rorelser.mjs.
-//   npm run oddsrorelser:analys
+//   npm run oddsrorelser:analys              topp 5-ligorna + CL/EL/ECL (schemats ligor)
+//   npm run oddsrorelser:analys -- --alla    alla loggade ligor
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { evaluateMoves } from './lib/odds-rorelser.mjs';
 import { sameTeamName } from './lib/team-aliases.mjs';
+import { SCHEDULE_LEAGUES } from './lib/odds-schedule.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const readJson = (p, fb) => (fs.existsSync(p) ? JSON.parse(fs.readFileSync(p, 'utf8').replace(/^﻿/, '')) : fb);
 const logDir = path.join(root, 'data', 'oddsrorelser');
 const records = (fs.existsSync(logDir) ? fs.readdirSync(logDir).filter((f) => /^\d{4}-\d{2}\.json$/.test(f)) : [])
-  .flatMap((f) => Object.values(readJson(path.join(logDir, f), {}).matches ?? {}));
+  .flatMap((f) => Object.values(readJson(path.join(logDir, f), {}).matches ?? {}))
+  .filter((r) => process.argv.includes('--alla') || SCHEDULE_LEAGUES.has(r.league));
 
 // Resultat per liga och datum (avsparksdatum i UTC kan vara dagen efter tipsets datum - +-1 dag)
 const results = new Map();
@@ -25,7 +28,7 @@ const near = (a, b) => Math.abs(Date.parse(a) - Date.parse(b)) <= 86400e3;
 const resultOf = (r) => (results.get(r.league) ?? []).find((m) => near(m.date, r.date) && sameTeamName(m.home, r.home) && sameTeamName(m.away, r.away)) ?? null;
 
 const { graded, total, rows } = evaluateMoves(records, resultOf);
-console.log(`Sena oddsrörelser: ${total} matcher loggade, ${graded} med resultat`);
+console.log(`Sena oddsrörelser (${process.argv.includes('--alla') ? 'alla ligor' : [...SCHEDULE_LEAGUES].join(', ')}): ${total} matcher loggade, ${graded} med resultat`);
 console.log('"Följ" = spela utfallet som pengarna gick på, "Mot" = utfallet som drev ut, till senaste oddset. ROI per insats.');
 console.log('Tröskel  Marknad   Strategi   Spel  Träff    Snittodds  Resultat  ROI');
 for (const r of rows.filter((x) => x.n)) {
