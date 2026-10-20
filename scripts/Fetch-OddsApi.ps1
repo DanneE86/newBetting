@@ -25,6 +25,8 @@ if (Test-Path $envFile) {
 $apiKey = $env:THE_ODDS_API_KEY
 if (-not $apiKey) { $apiKey = $env:ODDS_API_KEY }
 $utf8 = New-Object System.Text.UTF8Encoding $false
+# Nar oddsen hamtades, per match (behallna ligor behaller sin gamla tid)
+$fetchedAt = (Get-Date).ToUniversalTime().ToString("o")
 $outPath = Join-Path $OpenDir "upcoming_odds.json"
 
 if (-not $apiKey) {
@@ -66,6 +68,11 @@ foreach ($p in $registry.leagues.PSObject.Properties) {
     if ($soonLeagues.ContainsKey($p.Name) -or $noSchedule) {
         $sports += @{ key = [string]$lg.odds; league = $p.Name; soon = [int]$soonLeagues[$p.Name] }
     }
+}
+# ODDS_LEAGUES=CL,PL: bara dessa ligor (oddsschemat, scripts/odds-schema.mjs)
+if ($env:ODDS_LEAGUES) {
+    $only = @($env:ODDS_LEAGUES.Split(',') | ForEach-Object { $_.Trim() } | Where-Object { $_ })
+    $sports = @($sports | Where-Object { $only -contains $_.league })
 }
 # Flest matcher forst: racker budgeten inte hamtas de ligor dar oddsen gor mest nytta
 $sports = @($sports | Sort-Object { -$_.soon })
@@ -208,6 +215,7 @@ foreach ($s in $sports) {
                 }
                 books = $books
                 sourceEventId = $ev.id
+                fetchedAt = $fetchedAt
             }) | Out-Null
         }
         Write-Host "  got events for $($s.league)"
@@ -228,6 +236,8 @@ if (Test-Path $outPath) {
         foreach ($ev in @($old.events)) {
             if ($fetchedLeagues.ContainsKey([string]$ev.league)) { continue }
             try { if ([datetime]$ev.commence -lt (Get-Date).ToUniversalTime()) { continue } } catch { continue }
+            # Aldre poster utan egen tidsstampel: filens hamtningstid (oddsens alder syns pa /tips)
+            if (-not $ev.fetchedAt) { $ev | Add-Member -NotePropertyName fetchedAt -NotePropertyValue ([string]$old.updatedAt) -Force }
             $events.Add($ev) | Out-Null
             $kept++
         }

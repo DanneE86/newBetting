@@ -125,7 +125,9 @@ async function main() {
   const codes = leaguesToFetch(registry);
   const nowIso = new Date().toISOString();
   const prev = readJson(P.out);
-  const events = (prev?.events ?? []).filter((e) => !codes.includes(e.league) && e.commence > nowIso);
+  // Behallna ligor behaller sin hamtningstid (oddsens alder per match, se pro-layer oddsFetchedAt)
+  const events = (prev?.events ?? []).filter((e) => !codes.includes(e.league) && e.commence > nowIso)
+    .map((e) => ({ ...e, fetchedAt: e.fetchedAt ?? prev.updatedAt ?? null }));
   if (!codes.length) {
     console.log('OddsPortal: inga ligor saknar odds');
     return;
@@ -152,7 +154,7 @@ async function main() {
           homeRaw: r.home, awayRaw: r.away, bookmaker: 'OddsPortal (snitt)',
           odds: { home: h, draw: d, away: a, over25: null, under25: null },
           books: [{ key: 'oddsportal', bookmaker: 'OddsPortal (snitt)', home: h, draw: d, away: a, over25: null, under25: null }],
-          source: 'oddsportal', url: `https://www.oddsportal.com/football/${slug}/`,
+          source: 'oddsportal', url: `https://www.oddsportal.com/football/${slug}/`, fetchedAt: nowIso,
         });
         n++;
       }

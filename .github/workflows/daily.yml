@@ -26,7 +26,8 @@ jobs:
     timeout-minutes: 90
     env:
       TZ: Europe/Stockholm
-      THE_ODDS_API_KEY: ${{ secrets.THE_ODDS_API_KEY }}
+      # The Odds API-kvoten (gratis 500/mån) styrs av oddsschemat (odds-schema.yml) - här reservkällan som förut
+      THE_ODDS_API_KEY: ""
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
       CLOUDFLARE_ACCOUNT_ID: 157ee3f6fab55443acdd807e5899c5f2
     steps:

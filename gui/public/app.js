@@ -512,14 +512,18 @@ function oddsMoveBox(tip) {
   const one = (k) => {
     const x = m.moves[k];
     const cls = m.flagged.includes(k) ? (x.pp > 0 ? "win" : "loss") : "";
-    return `<span class="ref-team ${cls}" title="Marknadens chans ${fmtPp(x.pp)} procentenheter"><b>${escapeHtml(PICK_LABEL[k])}</b> ${escapeHtml(fmtOdd(x.from))} → <b>${escapeHtml(fmtOdd(x.to))}</b> <small>(${fmtPp(x.pp)})</small></span>`;
+    return `<span class="ref-team ${cls}" title="Marknadens chans ${fmtPp(x.pp)} procentenheter"><b>${escapeHtml(PICK_LABEL[k])}</b> ${escapeHtml(fmtOdd(x.from))} → <b>${escapeHtml(fmtOdd(x.to))}</b> <small>(${fmtPp(x.pp)}${x.step != null ? `, senast ${fmtPp(x.step)}` : ""})</small></span>`;
   };
+  // Noteringarna (1X2) i tidsordning: t.ex. 08:00 och 1 h före avspark
+  const fmtT = (iso) => new Date(iso).toLocaleTimeString("sv-SE", { timeZone: "Europe/Stockholm", hour: "2-digit", minute: "2-digit" });
+  const series = (m.series || []).length > 2 ? `<div class="odds-series"><small>${m.series.map((p) => `${escapeHtml(fmtT(p.at))} ${escapeHtml(fmtOdd(p.home))}/${escapeHtml(fmtOdd(p.draw))}/${escapeHtml(fmtOdd(p.away))}`).join(" → ")}</small></div>` : "";
+  const srcTxt = m.src === "op" ? "OddsPortal-snitt" : "Pinnacle";
   const keys = Object.keys(m.moves);
-  const since = `sedan ${escapeHtml(fmtOddsAt(m.firstAt))}`;
+  const since = `sedan ${escapeHtml(fmtOddsAt(m.firstAt))} (${srcTxt})`;
   if (m.flagged.length) {
-    parts.push(`<div class="ref-alert mixed" role="note"><span class="ref-alert-k">⇅ Oddsrörelse</span> ${since} – marknaden har flyttat sig minst 4 procentenheter, gränsen för Värde flyttar med<ul>${m.flagged.map((k) => `<li class="${m.moves[k].pp > 0 ? "win" : "loss"}">${one(k)}</li>`).join("")}</ul></div>`);
+    parts.push(`<div class="ref-alert mixed" role="note"><span class="ref-alert-k">⇅ Oddsrörelse</span> ${since} – marknaden har flyttat sig minst 4 procentenheter (eller 3 sedan förra hämtningen), gränsen för Värde flyttar med<ul>${m.flagged.map((k) => `<li class="${m.moves[k].pp > 0 ? "win" : "loss"}">${one(k)}</li>`).join("")}</ul>${series}</div>`);
   } else {
-    parts.push(`<div class="ref-line"><span class="ref-line-k">Oddsrörelse</span> <small>${since}:</small> ${keys.map(one).join(" ")}</div>`);
+    parts.push(`<div class="ref-line"><span class="ref-line-k">Oddsrörelse</span> <small>${since}:</small> ${keys.map(one).join(" ")}${series}</div>`);
   }
   return parts.join("");
 }

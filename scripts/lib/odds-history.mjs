@@ -58,27 +58,66 @@ export function mergeNameVariants(matches, same, distinct = () => false) {
 }
 
 // Oddsrorelse fore avspark (anvandaren 2026-10-20: "oddsforandringar ar viktiga att se tatt inpa nar nagot sticker ut").
-// Matt i marginalfri chans (skarpt facit), inte i bolagets pris - bolagen rattar sina odds efter Pinnacle.
-export const ODDS_MOVE_FLAG_PP = 4;
+// Matt i marginalfri chans, inte i bolagets pris - bolagen rattar sina odds efter marknaden.
+// Tidsserie per match (entry.points): en punkt per hamtning och kalla, api = The Odds API (Pinnacle-facit),
+// op = OddsPortal (snitt av bolagen). Rorelsen mats inom samma kalla - kallorna har olika marginal och facit.
+export const ODDS_MOVE_FLAG_PP = 4; // total rorelse sedan forsta noteringen
+export const ODDS_STEP_FLAG_PP = 3; // senaste steget (t.ex. 08:00 -> 1 h fore avspark)
+export const ODDS_POINTS_MAX = 30;
 const MOVE_KEYS = ['home', 'draw', 'away', 'over25', 'under25'];
 
+/** Lagg till en punkt { at, src, odds, fair } om kallan inte redan har en punkt fran samma hamtning. true = ny punkt. */
+export function addOddsPoint(entry, point, max = ODDS_POINTS_MAX) {
+  if (!point?.at || !point.src || !point.fair) return false;
+  const pts = (entry.points ??= []);
+  if (pts.some((x) => x.src === point.src && x.at === point.at)) return false;
+  pts.push(point);
+  pts.sort((a, b) => (a.at < b.at ? -1 : 1));
+  // Forsta noteringen per kalla sparas alltid (rorelsen mats fran den), sedan de senaste
+  while (pts.length > max) {
+    const firsts = new Set(['api', 'op'].map((src) => pts.find((x) => x.src === src)));
+    pts.splice(pts.findIndex((x) => !firsts.has(x)), 1);
+  }
+  return true;
+}
+
+const ppOf = (a, b, k) => Math.round((b.fair[k] - a.fair[k]) * 1000) / 10;
+
 /**
- * Rorelse fran forsta till senaste snapshot i oddshistoriken. Varje utfall: odds fran/till och chansens
- * forandring i procentenheter (+ = marknaden tror mer pa utfallet). flagged = utfall som flyttat minst flagPp.
- * null nar det bara finns en notering eller inget facit.
+ * Rorelse fran forsta till senaste notering: varje utfall odds fran/till, chansens forandring i procentenheter
+ * (+ = marknaden tror mer pa utfallet) och senaste steget. flagged = utfall med total rorelse >= flagPp eller
+ * senaste steg >= stepPp. Serien (series) ar kallans noteringar for /tips. null utan tva noteringar fran samma kalla.
+ * Utan tidsserie (aldre poster): forsta mot senaste snapshot.
  */
-export function oddsMovement(entry, flagPp = ODDS_MOVE_FLAG_PP) {
-  const f = entry?.first, l = entry?.last;
-  if (!f?.fair || !l?.fair || (f.oddsAt ?? f.at) === (l.oddsAt ?? l.at)) return null;
+export function oddsMovement(entry, flagPp = ODDS_MOVE_FLAG_PP, stepPp = ODDS_STEP_FLAG_PP) {
+  if (!entry) return null;
+  let pts = null;
+  let src = null;
+  const bySrc = {};
+  for (const p of entry.points ?? []) if (p.fair) (bySrc[p.src] ??= []).push(p);
+  // Kallan med senaste noteringen bland dem med minst tva
+  for (const [s, list] of Object.entries(bySrc)) {
+    if (list.length >= 2 && (!pts || list.at(-1).at > pts.at(-1).at)) { pts = list; src = s; }
+  }
+  if (!pts) {
+    const f = entry.first, l = entry.last;
+    // Olika facit (snitt av bolag mot Pinnacle) ger skenrorelse - bara samma facit jamfors
+    if (!f?.fair || !l?.fair || (f.oddsAt ?? f.at) === (l.oddsAt ?? l.at) || f.fairSource !== l.fairSource) return null;
+    pts = [{ ...f, at: f.oddsAt ?? f.at }, { ...l, at: l.oddsAt ?? l.at }];
+    src = 'api';
+  }
+  const first = pts[0], prev = pts.at(-2), last = pts.at(-1);
   const moves = {};
   for (const k of MOVE_KEYS) {
-    if (!(f.fair[k] > 0) || !(l.fair[k] > 0)) continue;
-    moves[k] = { from: f.odds?.[k] ?? null, to: l.odds?.[k] ?? null, pp: Math.round((l.fair[k] - f.fair[k]) * 1000) / 10 };
+    if (!(first.fair[k] > 0) || !(last.fair[k] > 0)) continue;
+    moves[k] = { from: first.odds?.[k] ?? null, to: last.odds?.[k] ?? null, pp: ppOf(first, last, k) };
+    if (pts.length > 2 && prev.fair[k] > 0) moves[k].step = ppOf(prev, last, k);
   }
   if (!Object.keys(moves).length) return null;
   return {
-    firstAt: f.oddsAt ?? f.at, lastAt: l.oddsAt ?? l.at, moves,
-    flagged: Object.keys(moves).filter((k) => Math.abs(moves[k].pp) >= flagPp),
+    src, firstAt: first.at, lastAt: last.at, moves,
+    flagged: Object.keys(moves).filter((k) => Math.abs(moves[k].pp) >= flagPp || Math.abs(moves[k].step ?? 0) >= stepPp),
+    series: pts.slice(-6).map((p) => ({ at: p.at, home: p.odds?.home ?? null, draw: p.odds?.draw ?? null, away: p.odds?.away ?? null })),
   };
 }
 
