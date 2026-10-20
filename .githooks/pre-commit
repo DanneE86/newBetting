@@ -1,0 +1,5 @@
+#!/bin/sh
+# Före varje commit: vakten (tomma filer, syntaxfel, trasig JSON, halverade filer) och testerna.
+# Commit stoppas om något fallerar. Hoppa aldrig över med --no-verify – laga felet.
+node scripts/vakt.mjs --staged || exit 1
+npm run --silent test:commit || { echo; echo "TESTERNA GICK INTE IGENOM – commit stoppad. Laga koden, inte testerna."; exit 1; }

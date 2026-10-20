@@ -1,0 +1,3 @@
+#!/bin/sh
+# Hela repot genom vakten innan något når GitHub (och därmed webben).
+node scripts/vakt.mjs || exit 1

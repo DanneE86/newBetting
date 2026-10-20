@@ -4864,3 +4864,65 @@ test.describe('vakt: stoppar trasiga commits och publiceringar', () => {
     expect(pub.indexOf('vakt.mjs --sajt site')).toBeLessThan(pub.indexOf('wrangler'));
   });
 });
+
+test.describe('vakt: stoppar trasiga commits och publiceringar', () => {
+  const vakt = () => import(pathToFileURL(path.join(ROOT, 'scripts', 'vakt.mjs')).href);
+  const B = (s: string) => Buffer.from(s);
+
+  test('tom fil, syntaxfel, dubbel deklaration i GUI-modul och trasig JSON stoppas', async () => {
+    const { checkFiles } = await vakt();
+    const fel = checkFiles([
+      { file: 'scripts/lib/tom.mjs', src: B(''), head: B('export const a = 1;\n') },
+      { file: 'scripts/trasig.mjs', src: B('export const a = ;\n'), head: null },
+      { file: 'gui/public/app.js', src: B('function f() {}\nconst f = 1;\n'), head: null },
+      { file: 'config/x.json', src: B('{"a": }'), head: null },
+    ]);
+    expect(fel.find((f: string) => f.startsWith('scripts/lib/tom.mjs'))).toContain('tom');
+    expect(fel.find((f: string) => f.startsWith('scripts/trasig.mjs'))).toContain('syntaxfel');
+    expect(fel.find((f: string) => f.startsWith('gui/public/app.js'))).toContain('already been declared');
+    expect(fel.find((f: string) => f.startsWith('config/x.json'))).toContain('trasig JSON');
+    expect(fel).toHaveLength(4);
+  });
+
+  test('kodfil som tappar över hälften av raderna stoppas, om den inte är tillåten', async () => {
+    const { checkFiles } = await vakt();
+    const head = B(Array.from({ length: 100 }, (_, i) => `export const v${i} = ${i};`).join('\n'));
+    const src = B(Array.from({ length: 30 }, (_, i) => `export const v${i} = ${i};`).join('\n'));
+    expect(checkFiles([{ file: 'scripts/a.mjs', src, head }])[0]).toContain('krympte från 100 till 30');
+    expect(checkFiles([{ file: 'scripts/a.mjs', src, head }], { allowShrink: ['scripts/a.mjs'] })).toEqual([]);
+    expect(checkFiles([{ file: 'data/a.json', src: B('[]'), head: B(`[${'1,'.repeat(200)}1]`) }])).toEqual([]);
+  });
+
+  test('hela fungerande filer släpps igenom', async () => {
+    const { checkFiles } = await vakt();
+    expect(checkFiles([
+      { file: 'gui/public/app.js', src: B('import x from "./y.js";\nexport const a = x;\n'), head: null },
+      { file: 'config/x.json', src: B('\uFEFF{"a": 1}'), head: null },
+    ])).toEqual([]);
+  });
+
+  test('ändrade eller borttagna tester kräver "Teständring: <skäl>", nya tester gör det inte, test.only aldrig', async () => {
+    const { checkTestChanges } = await vakt();
+    const nytt = '+++ b/tests/a.spec.ts\n@@ -10,0 +11,2 @@\n+test(\'ny\', () => {\n+});\n';
+    const andrat = '--- a/tests/a.spec.ts\n+++ b/tests/a.spec.ts\n@@ -5 +5 @@\n-  expect(x).toBe(12);\n+  expect(x).toBe(11);\n';
+    expect(checkTestChanges(nytt, 'Ny funktion')).toEqual([]);
+    expect(checkTestChanges(andrat, 'Fixar data')[0]).toContain('Teständring');
+    expect(checkTestChanges(andrat, 'Fixar data\n\nTeständring: sidan visar kommande omgång, inte senaste')).toEqual([]);
+    expect(checkTestChanges(andrat, 'Teständring: ok')[0]).toContain('Teständring');
+    expect(checkTestChanges('+++ b/tests/a.spec.ts\n+test.only(\'x\', () => {});\n', 'Teständring: felsöker ett test')[0]).toContain('test.only');
+  });
+
+  test('git-krokarna är påslagna och anropar vakten och testerna', async () => {
+    const { spawnSync } = await import('child_process');
+    const hooks = spawnSync('git', ['config', 'core.hooksPath'], { cwd: ROOT, encoding: 'utf8' }).stdout.trim();
+    expect(hooks).toBe('.githooks');
+    const pre = fs.readFileSync(path.join(ROOT, '.githooks', 'pre-commit'), 'utf8');
+    expect(pre).toContain('scripts/vakt.mjs --staged');
+    expect(pre).toContain('test:commit');
+    expect(fs.readFileSync(path.join(ROOT, '.githooks', 'commit-msg'), 'utf8')).toContain('scripts/vakt.mjs --tester');
+    const pub = fs.readFileSync(path.join(ROOT, '.github', 'workflows', 'publish.yml'), 'utf8');
+    expect(pub.indexOf('scripts/vakt.mjs')).toBeGreaterThan(-1);
+    expect(pub.indexOf('vakt.mjs --sajt site')).toBeGreaterThan(pub.indexOf('build-static-site.mjs'));
+    expect(pub.indexOf('vakt.mjs --sajt site')).toBeLessThan(pub.indexOf('wrangler'));
+  });
+});
