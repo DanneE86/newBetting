@@ -14,7 +14,7 @@ import { historicalMissing, findUsMatch, inCurrentSquad, loadPlayerModel, summar
 import { adjustProbs, loadAdjustments } from './lib/learned-adjust.mjs';
 import { extraSignals } from './lib/extra-signals.mjs';
 import { latestSeasons } from './lib/seasons.mjs';
-import { mergeCaseDuplicates, mergeNameVariants } from './lib/odds-history.mjs';
+import { mergeCaseDuplicates, mergeNameVariants, oddsMovement, oddsAgeHours, isStaleOdds } from './lib/odds-history.mjs';
 import { sameTeamName } from './lib/team-aliases.mjs';
 import { nameSimilarity } from './lib/name-similarity.mjs';
 import { buildRefIndex, loadRefereeMatches, refereeFlags, refKey, REF_LEAGUES, resolveTeam } from './lib/referee-streaks.mjs';
@@ -158,13 +158,17 @@ writeJson(P.referees, referees);
 const tips = readJson(P.tips);
 applyTipAccuracy(tips, evaluation.tipAccuracy);
 const fixtures = fs.existsSync(P.fixtures) ? readJson(P.fixtures) : [];
-const apiOddsList = fs.existsSync(P.odds) ? readJson(P.odds).events ?? [] : [];
+const apiOddsDoc = fs.existsSync(P.odds) ? readJson(P.odds) : {};
+const apiOddsList = apiOddsDoc.events ?? [];
 // Reserv: OddsPortal (1X2-snitt) for matcher som The Odds API saknar - se scripts/fetch-oddsportal.mjs
 const apiHasOdds = (e) => apiOddsList.some((x) => x.league === e.league && x.commence
   && Math.abs(daysBetween(x.commence.slice(0, 10), e.commence.slice(0, 10))) <= 1
   && nameSimilarity(x.homeRaw ?? x.home, e.home) + nameSimilarity(x.awayRaw ?? x.away, e.away) >= 1
   && (x.books ?? []).some((b) => b.home > 1));
-const oddsportalList = (fs.existsSync(P.oddsportal) ? readJson(P.oddsportal).events ?? [] : [])
+const oddsportalDoc = fs.existsSync(P.oddsportal) ? readJson(P.oddsportal) : {};
+// Nar oddsen hamtades (per kalla) - gamla odds infor match ska synas, se isStaleOdds
+const oddsFetchedAt = (ev) => (ev ? (ev.source === 'oddsportal' ? oddsportalDoc.updatedAt : apiOddsDoc.updatedAt) ?? null : null);
+const oddsportalList = (oddsportalDoc.events ?? [])
   .filter((e) => e.commence > new Date().toISOString() && !apiHasOdds(e));
 const liveOddsList = [...apiOddsList, ...oddsportalList];
 const liveOdds = new Map(liveOddsList.map((e) => [`${e.league}|${e.home}|${e.away}`, e]));
@@ -246,9 +250,21 @@ tips.proMeta = {
 tips.valueBets = [...enriched.values()]
   .flatMap((p) => p.valueBets.map((v) => ({ match: p.match, date: p.date, league: p.league, ...v })))
   .sort((a, b) => b.ev - a.ev);
+// Oddsrorelse sedan forsta noteringen + varning for gamla odds infor match (missat 2026-10-20: CL-analys pa 2,5 dygn gamla odds)
+const oddsHist = recordOddsHistory(enriched);
+const staleTips = [];
+for (const t of allTips) {
+  const move = oddsMovement(oddsHist.matches[`${t.date}|${t.league}|${t.home}|${t.away}`]);
+  if (move) t.oddsMove = move; else delete t.oddsMove;
+  const oddsAt = t.pro?.oddsAt;
+  if (isStaleOdds(oddsAt, t.kickoffUtc)) { t.oddsStale = { oddsAt, ageH: oddsAgeHours(oddsAt) }; staleTips.push(t); } else delete t.oddsStale;
+}
+if (staleTips.length) {
+  const oldest = Math.max(...staleTips.map((t) => t.oddsStale.ageH));
+  console.warn(`VARNING gamla odds: ${new Set(staleTips.map((t) => t.match)).size} matcher inom 24 h har odds äldre än 6 h (äldst ${oldest} h) - kör npm run odds:local`);
+}
 writeJson(P.tips, tips);
 appendMarkdown(tips, evaluation);
-recordOddsHistory(enriched);
 
 console.log(`Pro-lager: models=${Object.keys(models).join(',')} tips=${enriched.size} valueBets=${tips.valueBets.length}`);
 for (const [lg, s] of Object.entries(evaluation.summary)) {
@@ -456,7 +472,7 @@ function buildPro(t) {
   valueBets.sort((a, b) => b.ev - a.ev);
 
   return {
-    match: t.match, date: t.date, league: t.league, kickoffUtc: ev?.commence ?? null,
+    match: t.match, date: t.date, league: t.league, kickoffUtc: ev?.commence ?? null, oddsAt: oddsFetchedAt(ev),
     dc: dc && {
       home: round(dc.home), draw: round(dc.draw), away: round(dc.away), over25: round(dc.over25),
       btts: round(dc.btts), lambdaHome: round(dc.lambdaHome, 2), lambdaAway: round(dc.lambdaAway, 2),
@@ -1035,9 +1051,12 @@ function recordOddsHistory(proByKey) {
       fair: p.market.fair,
       fairSource: p.market.fairSource,
       fairSourceOu: p.market.fairSourceOu,
+      oddsAt: p.oddsAt ?? null,
     };
     const e = (doc.matches[key] ??= { league: p.league, date: p.date, match: p.match, kickoffUtc: kick ?? null, first: snap, last: snap, snapshots: 0 });
     e.kickoffUtc = kick ?? e.kickoffUtc;
+    // Samma hamtning som forra snapshoten (bara pro-lagret omkort) -> ingen ny notering
+    if (e.snapshots && snap.oddsAt && e.last?.oddsAt === snap.oddsAt) continue;
     e.last = snap;
     e.snapshots++;
     added++;
@@ -1057,6 +1076,7 @@ function recordOddsHistory(proByKey) {
   doc.note = 'first = forsta sedda odds, last = senaste fore avspark (proxy for stangning dar closing saknas). Nyckel: datum|liga|hemma|borta.';
   writeJson(P.oddsHistory, doc);
   console.log(`Oddshistorik: ${added} matcher uppdaterade (${Object.keys(doc.matches).length} totalt)`);
+  return doc;
 }
 
 /**

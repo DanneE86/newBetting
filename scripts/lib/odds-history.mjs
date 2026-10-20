@@ -56,3 +56,41 @@ export function mergeNameVariants(matches, same, distinct = () => false) {
   }
   return merged;
 }
+
+// Oddsrorelse fore avspark (anvandaren 2026-10-20: "oddsforandringar ar viktiga att se tatt inpa nar nagot sticker ut").
+// Matt i marginalfri chans (skarpt facit), inte i bolagets pris - bolagen rattar sina odds efter Pinnacle.
+export const ODDS_MOVE_FLAG_PP = 4;
+const MOVE_KEYS = ['home', 'draw', 'away', 'over25', 'under25'];
+
+/**
+ * Rorelse fran forsta till senaste snapshot i oddshistoriken. Varje utfall: odds fran/till och chansens
+ * forandring i procentenheter (+ = marknaden tror mer pa utfallet). flagged = utfall som flyttat minst flagPp.
+ * null nar det bara finns en notering eller inget facit.
+ */
+export function oddsMovement(entry, flagPp = ODDS_MOVE_FLAG_PP) {
+  const f = entry?.first, l = entry?.last;
+  if (!f?.fair || !l?.fair || (f.oddsAt ?? f.at) === (l.oddsAt ?? l.at)) return null;
+  const moves = {};
+  for (const k of MOVE_KEYS) {
+    if (!(f.fair[k] > 0) || !(l.fair[k] > 0)) continue;
+    moves[k] = { from: f.odds?.[k] ?? null, to: l.odds?.[k] ?? null, pp: Math.round((l.fair[k] - f.fair[k]) * 1000) / 10 };
+  }
+  if (!Object.keys(moves).length) return null;
+  return {
+    firstAt: f.oddsAt ?? f.at, lastAt: l.oddsAt ?? l.at, moves,
+    flagged: Object.keys(moves).filter((k) => Math.abs(moves[k].pp) >= flagPp),
+  };
+}
+
+/** Timmar sedan oddsen hamtades, eller null utan tidsstampel. */
+export function oddsAgeHours(oddsAt, now = Date.now()) {
+  const t = Date.parse(oddsAt ?? '');
+  return Number.isFinite(t) ? Math.round(((now - t) / 36e5) * 10) / 10 : null;
+}
+
+/** Gamla odds infor match: avspark inom withinH timmar och oddsen aldre an maxAgeH. */
+export function isStaleOdds(oddsAt, kickoffUtc, now = Date.now(), { maxAgeH = 6, withinH = 24 } = {}) {
+  const age = oddsAgeHours(oddsAt, now);
+  const toKick = (Date.parse(kickoffUtc ?? '') - now) / 36e5;
+  return age != null && Number.isFinite(toKick) && toKick > 0 && toKick <= withinH && age > maxAgeH;
+}

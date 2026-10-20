@@ -1457,6 +1457,9 @@ main > .section-head:first-child { margin-top: var(--space-4); }
 }
 .ref-badge.win { border-color: var(--color-success); color: var(--color-success-strong); background: var(--color-success-bg); }
 .ref-badge.loss { border-color: var(--color-danger); color: var(--color-danger); background: var(--color-danger-bg); }
+/* Oddsrörelse: stigande chans grön, fallande röd */
+.ref-team.win b { color: var(--color-success-strong); }
+.ref-team.loss b { color: var(--color-danger); }
 
 /* Domarpanelen (bredvid Duellanalys): domaren mot ligasnittet, lagens facit, alla ligans domare */
 .tip-analyze .refpanel { margin-top: var(--space-2); }
