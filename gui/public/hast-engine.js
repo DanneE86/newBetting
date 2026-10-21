@@ -104,6 +104,28 @@ const summarize = (legs, sel, price, share) => {
 //   50 000-system 500 −27 % mot −61 %, 1000 −26 % mot −34 %, 2000 −8 % mot −24 %
 export const SPIKES = 1;
 
+// Skrällomgång: folkets chans på favoritraden (produkten av största strecket per avdelning), som "1 på N".
+// Gränserna är tredjedelar per spelform ur skrallmissar-cachen (658 omg V85/V75/V86/GS75 2023–2026, slutstreck):
+// N ≥ första = osäker, N ≥ andra = mitt, annars säker. Bakkört 2026-10-20 (pMkt, storvinst, ROI utan de 3 största):
+//   1000 kr osäker −28 %, mitt −32 %, säker −56 % · 2000 kr −20 %, −48 %, −51 % · 500 kr −38 %, −42 %, −45 %
+// Säker var sämst varje år på 1000 kr. Träffsystemet visar inget sådant mönster. Bara råd, ändrar inte systemet.
+export const SKRALL_OMG = { V85: [2031, 1425], V75: [1495, 976], V86: [2134, 1470], GS75: [634, 466] };
+
+/** { oneIn, level: "osaker" | "mitt" | "saker" | null, limits } ur folkets streck (marketPct) i legs. */
+export function skrallOmgang(legs, type) {
+  let logq = 0;
+  for (const l of legs) {
+    const s = l.horses.filter((h) => !h.scratched).map((h) => h.marketPct || 0);
+    const sum = s.reduce((a, x) => a + x, 0);
+    if (!(sum > 0)) return { oneIn: null, level: null, limits: SKRALL_OMG[type] ?? null };
+    logq += Math.log(Math.max(...s) / sum);
+  }
+  const oneIn = Math.round(Math.exp(-logq));
+  const limits = SKRALL_OMG[type] ?? null;
+  const level = !limits || !legs.length ? null : oneIn >= limits[0] ? "osaker" : oneIn >= limits[1] ? "mitt" : "saker";
+  return { oneIn, level, limits };
+}
+
 const topHorse = (l) => playable(l).filter((h) => h.p > 0).sort((a, b) => b.p - a.p)[0];
 
 function* combos(arr, k, start = 0, acc = []) {

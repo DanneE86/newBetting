@@ -1,6 +1,6 @@
 // Flik "Hästar": V75/V85/V86/V64/V65/GS75 + Dagens Dubbel från ATG (data från /api/hastar, se gui/hastar-routes.mjs).
 // Modellen räknas i scripts/lib/trav-model.mjs när data hämtas; systembyggaren (hast-engine.js) körs här i webbläsaren.
-import { rowPrice, TOP_SHARE, TOP_LEVELS, MIN_TOP, BIG_TARGET, RAD_TOP, RAD_TOP_MIN_BUDGET, RAD_TOP_SORT, SKRALL_MAX, SKRALL_MIN_BUDGET, ATG_FILE_TYPES, atgFileName, atgFileXml, atgGameUrl, buildBigSystem, buildSystem, compressRows, SPIKES, couponRows, couponText, defaultAlpha, reduceSystem } from "/hast-engine.js";
+import { rowPrice, TOP_SHARE, TOP_LEVELS, MIN_TOP, BIG_TARGET, RAD_TOP, RAD_TOP_MIN_BUDGET, RAD_TOP_SORT, SKRALL_MAX, SKRALL_MIN_BUDGET, ATG_FILE_TYPES, atgFileName, atgFileXml, atgGameUrl, buildBigSystem, buildSystem, compressRows, SPIKES, couponRows, couponText, defaultAlpha, reduceSystem, skrallOmgang } from "/hast-engine.js";
 
 const view = document.getElementById("hastar-view");
 const GAME_NAME = { dd: "Dagens Dubbel" };
@@ -301,10 +301,35 @@ function folketMissarCard(a) {
     </div></details>`;
 }
 
+const SKRALL_OMG_TEXT = {
+  osaker: ["Skrällomgång", "Folket är osäkert på favoriterna. Här har storvinstsystemet gått bäst – jaga med full insats."],
+  mitt: ["Mellanläge", "Varken säker eller öppen. Storvinstsystemet går, men utan extra insats."],
+  saker: ["Säker omgång", "Folket har favoriterna klart. Här har storvinstsystemet gått sämst – avstå eller spela litet."],
+};
+
+/** Skrällomgångsmätaren (skrallOmgang/SKRALL_OMG i hast-engine.js): folkets chans på favoritraden mot gränser per spelform. */
+function skrallOmgangCard(a) {
+  const legs = (a.races || []).map((r) => ({ horses: r.horses }));
+  const s = skrallOmgang(legs, a.type);
+  if (s.oneIn == null) return "";
+  const n = (x) => x.toLocaleString("sv-SE");
+  const [title, text] = SKRALL_OMG_TEXT[s.level] ?? ["Skrällomgång", "Inga gränser för den här spelformen ännu."];
+  const lim = s.limits ? `osäker från 1 på ${n(s.limits[0])}, säker under 1 på ${n(s.limits[1])}` : "";
+  return `<details class="hs-card hs-card-wide hs-omg hs-fold is-${s.level ?? "none"}" aria-label="Skrällomgång">
+    <summary><h4>${title} <small>favoritraden 1 på ${n(s.oneIn)}</small></h4>
+    ${s.level ? `<div class="hs-omg-bar" role="img" aria-label="Läge: ${title}">${[["saker", "Säker"], ["mitt", "Mitt"], ["osaker", "Osäker"]]
+      .map(([k, t]) => `<span class="${k === s.level ? "is-on" : ""}">${t}</span>`).join("")}</div>` : ""}</summary>
+    <p class="hs-lead">Kort sagt: ${text}</p>
+    <p class="hs-note">Så läser du det här: chansen att alla streckfavoriter vinner, enligt folket. Ju lägre chans, desto öppnare omgång${lim ? ` (${a.type}: ${lim})` : ""}.
+      Bakkört på 658 omgångar 2023–2026: storvinst 1000 kr utan de 3 största vinsterna gav −28 % i osäkra och −56 % i säkra omgångar. Strecket rör sig fram till start.</p>
+  </details>`;
+}
+
 function highlights(a) {
   const ups = a.upsets || [];
   const vul = a.vulnerable || [];
   return `<section class="hs-cards" aria-label="Spikar och skrällar">
+    ${skrallOmgangCard(a)}
     ${folketMissarCard(a)}
     ${highlight("Bästa spiken", a.spikes?.sakerhet)}
     ${highlight("Bästa värdespiken", a.spikes?.varde)}

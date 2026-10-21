@@ -803,6 +803,15 @@ html, body {
   color: var(--color-warning);
   font-weight: var(--font-weight-bold);
 }
+.notes .key-absences { margin-top: var(--space-1); }
+.notes .key-absences-title {
+  color: var(--color-warning);
+  font-weight: var(--font-weight-bold);
+}
+.notes .key-absences ul {
+  margin: 0;
+  padding-left: var(--space-4);
+}
 
 /* ---------- Daily Scanner ---------- */
 /* ds-btn ds-btn--secondary sköter färg och form */

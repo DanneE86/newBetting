@@ -684,6 +684,24 @@ test.describe('GUI: fliken Hästar', () => {
       // underspelade, överspelade favoriter och vinnaroddsen tror mer
       await expect(fm.locator('h5')).toHaveCount(3);
     }
+    if (analysis && analysis.type !== 'dd') {
+      // Skrällomgångsmätaren: läget syns i rubriken och stapeln även hopfällt, förklaringen när kortet öppnas
+      const { skrallOmgang } = await engine();
+      const s = skrallOmgang(analysis.races.map((r: any) => ({ horses: r.horses })), analysis.type);
+      const omg = page.locator('details.hs-omg');
+      if (s.oneIn == null) await expect(omg).toHaveCount(0);
+      else {
+        await expect(omg.locator('summary h4')).toContainText(`1 på ${s.oneIn.toLocaleString('sv-SE')}`);
+        if (s.level) {
+          await expect(omg).toHaveClass(new RegExp(`is-${s.level}`));
+          await expect(omg.locator('.hs-omg-bar .is-on')).toHaveCount(1);
+        }
+        await omg.locator('summary').click();
+        await expect(omg.locator('.hs-lead')).toContainText('Kort sagt');
+        await expect(omg.locator('.hs-note')).toContainText('Så läser du det här');
+        await omg.locator('summary').click();
+      }
+    }
     await expect(page.locator('main')).toBeHidden();
     await expect(page.locator('#stryktips-view')).toBeHidden();
     await page.click('.view-tab[data-view="tips"]');
@@ -1531,6 +1549,62 @@ const topLegs = () => Array.from({ length: 8 }, (_, i) => ({
 }));
 const streckProd = (legs: any[], sysLegs: any[]) => sysLegs.reduce((a: number, l: any, i: number) =>
   a * Math.min(...l.horses.map((nr: number) => legs[i].horses.find((h: any) => h.nr === nr).marketPct)), 1);
+
+test.describe('hast-engine: skrällomgång', () => {
+  const omgLegs = (fav: number[], extra: any[] = []) => fav.map((f, i) => ({
+    horses: [{ nr: 1, marketPct: f }, ...[2, 3, 4, 5].map((nr) => ({ nr, marketPct: (1 - f) / 4 })), ...(i === 0 ? extra : [])],
+  }));
+
+  test('favoritraden = produkten av största strecket per avdelning, normerat och utan strukna', async () => {
+    const { skrallOmgang } = await engine();
+    // 0,5^8 = 1 på 256
+    expect(skrallOmgang(omgLegs(Array(8).fill(0.5)), 'V85').oneIn).toBe(256);
+    // streck i procent (summa 100) ger samma svar som andelar
+    const pctLegs = omgLegs(Array(8).fill(0.5)).map((l) => ({ horses: l.horses.map((h) => ({ ...h, marketPct: h.marketPct * 100 })) }));
+    expect(skrallOmgang(pctLegs, 'V85').oneIn).toBe(256);
+    // en struken storfavorit räknas inte: avdelningen blir 0,5/0,5 igen
+    const scr = omgLegs(Array(8).fill(0.5), [{ nr: 9, marketPct: 5, scratched: true }]);
+    expect(skrallOmgang(scr, 'V85').oneIn).toBe(256);
+    // saknat streck i någon avdelning = ingen mätare
+    expect(skrallOmgang([...omgLegs(Array(7).fill(0.5)), { horses: [{ nr: 1, marketPct: 0 }] }], 'V85')).toMatchObject({ oneIn: null, level: null });
+  });
+
+  test('nivå mot gränserna per spelform; okänd spelform får ingen nivå', async () => {
+    const { skrallOmgang, SKRALL_OMG } = await engine();
+    expect(Object.keys(SKRALL_OMG).sort()).toEqual(['GS75', 'V75', 'V85', 'V86']);
+    for (const [, [osaker, saker]] of Object.entries(SKRALL_OMG) as [string, number[]][]) expect(osaker).toBeGreaterThan(saker);
+    const legsFor = (oneIn: number, n = 8) => omgLegs(Array(n).fill(Math.pow(1 / oneIn, 1 / n)));
+    const [o, s] = SKRALL_OMG.V85;
+    expect(skrallOmgang(legsFor(o * 1.05), 'V85').level).toBe('osaker');
+    expect(skrallOmgang(legsFor((o + s) / 2), 'V85').level).toBe('mitt');
+    expect(skrallOmgang(legsFor(s * 0.9), 'V85').level).toBe('saker');
+    // samma omgång kan vara osäker i GS75 men säker i V86 – gränserna är per spelform
+    expect(skrallOmgang(legsFor(1000, 7), 'GS75').level).toBe('osaker');
+    expect(skrallOmgang(legsFor(1000, 8), 'V86').level).toBe('saker');
+    const v64 = skrallOmgang(legsFor(500, 6), 'V64');
+    expect(v64.level).toBeNull();
+    expect(v64.oneIn).toBe(500);
+  });
+
+  test('gränserna är tredjedelar per spelform i skrällmiss-cachen', async () => {
+    const f = path.join(ROOT, 'data', 'hastar', 'historik', 'skrallmissar-cache.json.gz');
+    test.skip(!fs.existsSync(f), 'skrallmissar-cache saknas');
+    const { skrallOmgang, SKRALL_OMG } = await engine();
+    const zlib = await import('zlib');
+    const games = JSON.parse(zlib.gunzipSync(fs.readFileSync(f)).toString('utf8')).games;
+    for (const [t, lim] of Object.entries(SKRALL_OMG) as [string, number[]][]) {
+      const lv = games.filter((g: any) => g.type === t)
+        .map((g: any) => skrallOmgang(g.legs.map((l: any) => ({ horses: l.horses.map((h: any) => ({ marketPct: h.streck })) })), t).level)
+        .filter(Boolean);
+      expect(lv.length, t).toBeGreaterThan(50);
+      for (const k of ['osaker', 'mitt', 'saker']) {
+        const share = lv.filter((x: string) => x === k).length / lv.length;
+        expect(share, `${t} ${k}`).toBeGreaterThan(0.25);
+        expect(share, `${t} ${k}`).toBeLessThan(0.42);
+      }
+    }
+  });
+});
 
 test.describe('hast-engine: standard per spelform', () => {
   test('V85 och V75 spelas med Hög (alpha 1), övriga med Träff (alpha 0)', async () => {

@@ -5037,6 +5037,26 @@ test.describe('nyckelspelare: frånvarorisk ur FotMobs speltid', () => {
     expect(other.keyNotes).toBeUndefined(); // gammal rad rensas
   });
 
+  test('bara viktiga spelare, senare matcher får bara skadorna, "Doubtful" blir osäker', async () => {
+    const { keyAbsences, attachKeyAbsences, keyNote, KEY_SHARE, KEY_POINTS, KEY_CORE_STARTS } = await lib('key-absences.mjs');
+    expect([KEY_SHARE, KEY_POINTS, KEY_CORE_STARTS]).toEqual([0.05, 2, 7]);
+    // Spelare 20: startat 5 av 8, inget anfall, missade senaste = inte viktig. 21: samma men startat 7 av 8 = viktig.
+    const s: any = mkStore({ 20: [0, 90, 0, 90, 90, 0, 90, 90, 0], 21: [90, 90, 90, 90, 90, 90, 90, 90, 0], 22: Array(9).fill(90) });
+    for (const m of Object.values(s.matches) as any[]) for (const p of m.p) if (p[0] !== 22) { p[4] = 0; p[5] = 0; }
+    const squad = [{ id: 20, name: 'A' }, { id: 21, name: 'B' }, { id: 22, name: 'C', injury: { name: 'Hamstring', expectedReturn: 'Doubtful' } }];
+    const r = keyAbsences({ store: s, teamId: 1, date: '2026-10-04', squadPlayers: squad, rates });
+    expect(r.players.map((p: any) => p.id).sort()).toEqual([21, 22]);
+    const later = keyAbsences({ store: s, teamId: 1, date: '2026-10-04', squadPlayers: squad, rates, nextMatch: false });
+    expect(later.players.map((p: any) => p.id)).toEqual([22]);
+    expect(keyNote('Lag', later.players[0])).toContain('skadad: Hamstring, osäker (FotMob)');
+    const squads = { T: { Hemma: { fotmobId: 1, players: squad } } };
+    const first: any = { league: 'T', date: '2026-10-04', home: 'Hemma', away: 'X' };
+    const second: any = { league: 'T', date: '2026-10-11', home: 'Y', away: 'Hemma' };
+    attachKeyAbsences([second, first], { stores: { T: s }, squads, rates });
+    expect(first.keyAbsences.home.map((p: any) => p.id).sort()).toEqual([21, 22]);
+    expect(second.keyAbsences.away.map((p: any) => p.id)).toEqual([22]);
+  });
+
   test('lagringen behåller lagets 12 senaste matcher och bara använda namn', async () => {
     const { pruneStore, compactPlayer, KEEP_PER_TEAM } = await lib('key-absences.mjs');
     expect(KEEP_PER_TEAM).toBe(12);

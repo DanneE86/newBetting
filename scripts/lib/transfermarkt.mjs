@@ -99,8 +99,10 @@ export async function tmSquad(clubId, { coach: withCoach = true } = {}) {
   return { coach: coach ? decode(coach) : null, players };
 }
 
-// Ligor dar Transfermarkts skadelista fyller pa FotMob (FotMob hade 2 skadade i hela League One 2026-10-05, TM 22)
-export const TM_INJURY_LEAGUES = ['PL', 'CH', 'EL1', 'EL2'];
+// Ligor dar Transfermarkts skadelista fyller pa FotMob (FotMob hade 2 skadade i hela League One 2026-10-05, TM 22).
+// Alla ligor med TM-tavling sedan 2026-10-20 (anvandaren: "skador pa viktiga spelare ar bra att veta tidigt"):
+// listan fungerade i SA 72, BL 81, LL 58, BR 82, ED 64, JP1 61, BE 50, MLS 41, AS 11 skadade.
+export const TM_INJURY_LEAGUES = Object.keys(TM_LEAGUE);
 
 /** Skadelistan pa Transfermarkts ligasida (HTML): [{ tmId, name, club, injury, until, value }] */
 export function parseTmInjuries(html) {

@@ -84,6 +84,19 @@ if (plan.prekick.length) {
   if (!plan.daily && !ready.length) process.exit(0);
 }
 
+// Dagens hamtning: trupper + skador (FotMob, Transfermarkt) och nyckelspelarnas speltid for ALLA ligor med match inom
+// 3 dagar, inte bara schemats (anvandaren 2026-10-20: "skador pa viktiga spelare ar bra att veta tidigt").
+// Gratis kallor, inga Odds API-krediter. Pro-lagret visar dem pa /tips (scripts/lib/key-absences.mjs).
+const squadLeagues = plan.daily || all
+  ? [...new Set(upcomingMatches().filter((m) => { const k = Date.parse(m.kickoffUtc); return k > Date.now() && k <= Date.now() + 3 * 864e5; }).map((m) => m.league))].sort()
+  : [];
+if (squadLeagues.length) {
+  console.log(`Trupper, skador och nyckelspelare: ${squadLeagues.join(', ')}`);
+  try { run('node', ['scripts/fetch-squads.mjs', ...squadLeagues]); } catch (e) { console.log(`Trupper misslyckades: ${e.message}`); }
+  try { run('node', ['scripts/fetch-nyckelspelare.mjs', ...squadLeagues]); } catch (e) { console.log(`Nyckelspelare misslyckades: ${e.message}`); }
+}
+
+if (!plan.leagues.length && squadLeagues.length) run('node', ['scripts/pro-layer.mjs']);
 if (plan.leagues.length) {
   // OddsPortal: gratis, alla ligor med sida dar
   const op = plan.leagues.filter((c) => registry.leagues[c]?.oddsportal);
