@@ -1,0 +1,42 @@
+{
+  "updatedAt": "2026-10-20T17:05:18.985Z",
+  "method": "Ordinarie = startat minst 5 av lagets 8 senaste ligamatcher. Status efter senaste ligamatchen -> andel som startar (start) och spelar (play) nästa. Spelare som inte spelar för laget igen inom 10 matcher (sålda) räknas inte.",
+  "seasons": 158,
+  "rates": {
+    "full": {
+      "n": 314779,
+      "start": 0.892,
+      "play": 0.931
+    },
+    "missed2": {
+      "n": 16515,
+      "start": 0.241,
+      "play": 0.401
+    },
+    "missed1": {
+      "n": 38463,
+      "start": 0.495,
+      "play": 0.647
+    },
+    "off_mid": {
+      "n": 63941,
+      "start": 0.733,
+      "play": 0.884
+    },
+    "sub": {
+      "n": 35313,
+      "start": 0.551,
+      "play": 0.864
+    },
+    "off_habit": {
+      "n": 2593,
+      "start": 0.54,
+      "play": 0.824
+    },
+    "off_early": {
+      "n": 23080,
+      "start": 0.48,
+      "play": 0.676
+    }
+  }
+}

@@ -28,6 +28,7 @@ import { valueModelProbs } from './lib/cup-value-model.mjs';
 import { isCup } from './lib/cups.mjs';
 import { CUP_ELO, CUP_ELO_REGIONS, cupEloLookup, cupHomeLeagues, homeLeagueOf } from './lib/cup-elo.mjs';
 import { TEAM_ELO_HOME_ADV } from './lib/team-elo.mjs';
+import { attachKeyAbsences } from './lib/key-absences.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const P = {
@@ -45,6 +46,8 @@ const P = {
   usLeague: path.join(root, 'data', 'open', 'understat_league_matches.json'),
   usPlayers: path.join(root, 'data', 'open', 'understat_player_matches.json'),
   squads: path.join(root, 'data', 'trupper'),
+  keyPlayers: path.join(root, 'data', 'nyckelspelare'),
+  keyRates: path.join(root, 'config', 'nyckelspelare-chans.json'),
   playerStats: path.join(root, 'data', 'open', 'player_stats.json'),
   fpl: path.join(root, 'data', 'open', 'fpl_availability.json'),
   lineups: path.join(root, 'data', 'open', 'espn_lineups.json'),
@@ -205,6 +208,9 @@ const refOf = upcomingReferees();
 applyRefereeStreaks([...(tips.bestUpcoming ?? []), ...(tips.allCandidates ?? [])]);
 // Antal kort Ö/U 3.5/4.5/5.5 (gula + roda): lagens kort + domarens niva, se scripts/lib/cards-model.mjs
 applyCards([...(tips.bestUpcoming ?? []), ...(tips.allCandidates ?? [])]);
+// Nyckelspelare med frånvarorisk (skadad, missade senaste, utbytt tidigt) ur FotMobs speltid, alla ligor utom cuper.
+// Bara visning (spelarfrånvaro gav ingen bättre modell, alpha 0) - se scripts/lib/key-absences.mjs
+applyKeyAbsences([...(tips.bestUpcoming ?? []), ...(tips.allCandidates ?? [])]);
 // Klubb-Elo bredvid lagnamnen pa /tips (bara visning, paverkar inga tips)
 const leaguesCfg = readJson(P.leaguesCfg);
 const leagueCountry = (lg) => (isCup(lg) ? null : leaguesCfg.leagues?.[lg]?.country ?? '');
@@ -297,6 +303,21 @@ function applyCards(list) {
     if (pred) t.tips.BOTH_CARDS = { pick: pred.pBoth >= 0.5 ? 'JA' : 'NEJ', pYes: pred.pBoth, confidence: Math.round(Math.max(pred.pBoth, 1 - pred.pBoth) * 1000) / 1000 };
     else delete t.tips.BOTH_CARDS;
   }
+}
+
+function applyKeyAbsences(list) {
+  if (!fs.existsSync(P.keyRates)) return;
+  const rates = readJson(P.keyRates).rates;
+  const stores = {}, squads = {};
+  for (const lg of new Set(list.map((t) => t.league))) {
+    if (isCup(lg)) continue;
+    const sf = path.join(P.keyPlayers, `${lg}.json`), qf = path.join(P.squads, `${lg}.json`);
+    if (!fs.existsSync(sf) || !fs.existsSync(qf)) continue;
+    stores[lg] = readJson(sf);
+    squads[lg] = readJson(qf).teams;
+  }
+  const n = attachKeyAbsences(list, { stores, squads, rates });
+  console.log(`Nyckelspelare: frånvarorisk i ${n} matcher (${Object.keys(stores).join(', ') || 'inga ligor med data'})`);
 }
 
 function applyRefereeStreaks(list) {

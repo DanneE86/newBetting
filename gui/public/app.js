@@ -98,7 +98,10 @@ function noteLines(tip) {
   for (const n of tip.lineupNotes || []) parts.push(escapeHtml(n));
   for (const n of tip.playerAttackNotes || []) parts.push(escapeHtml(n));
   for (const n of tip.availabilityNotes || []) parts.push(escapeHtml(n));
-  return parts.length ? `<div class="notes">${parts.join(" · ")}</div>` : "";
+  // Nyckelspelare med frånvarorisk (FotMobs speltid + trupperna), en rad per spelare
+  const key = (tip.keyNotes || []).map((n) => `<li>${escapeHtml(n)}</li>`).join("");
+  const keyHtml = key ? `<div class="key-absences"><span class="key-absences-title">Osäkra nyckelspelare</span><ul>${key}</ul></div>` : "";
+  return parts.length || keyHtml ? `<div class="notes">${parts.join(" · ")}${keyHtml}</div>` : "";
 }
 
 function escapeHtml(s) {
