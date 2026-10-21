@@ -1730,6 +1730,23 @@ test.describe('stryk-engine: kupong A, B och C', () => {
     }
   });
 
+  test('filkuponger: egen fördelning med bara ett tecken räknas in i de 4 spikarna (2026-10-21)', async () => {
+    test.skip(products.length === 0, 'data/stryktipset.json saknas');
+    const { generateCoupons, sysFinal } = await engine();
+    const p = products[0];
+    const ev = p.events.map((e: any) => ({ ...e, final: sysFinal(e) }));
+    // Svagaste matchen med 100 % på favoriten i A (som när % slås På på en spikad match): fortfarande 4 spikar i A
+    const weakest = ev.map((e: any, i: number) => ({ i, v: Math.max(...e.final) })).sort((a: any, b: any) => a.v - b.v)[0].i;
+    const fav = ev[weakest].final.indexOf(Math.max(...ev[weakest].final));
+    const share = [0, 0, 0];
+    share[fav] = 100;
+    const out = generateCoupons({ ...p, fileShares: { A: { [p.events[weakest].eventNumber]: share } } }, {});
+    expect(out.A.picks[weakest].signs).toBe('1X2'[fav]);
+    expect(out.A.picks.filter((x: any) => x.signs.length === 1)).toHaveLength(4);
+    expect(out.A.picks.filter((x: any) => x.spikStrong)).toHaveLength(3);
+    expect(out.B.picks.filter((x: any) => x.signs.length === 1)).toHaveLength(4);
+  });
+
 
 
   // "Kan falla" (2026-10-03): favorit (1 eller 2) med folket ≥ 50 % och vår chans < 55 %, samma gränser i webben och skriptet

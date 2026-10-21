@@ -179,7 +179,10 @@ export function buildFileCoupons(p, events, forcedFor, base, r = FILE_RULES) {
     // Egen fördelning på en match: den spikas aldrig automatiskt, raderna fördelas efter dina andelar
     const plan = buildFallSharePlan(p, events, forcedFor(sys), sys);
     const nPlan = plan.filter(Boolean).length;
-    const forced = strongSpikeForced(events, forcedFor(sys).map((f, i) => f ?? (plan[i] ? [0, 1, 2] : null)), r.spikes);
+    // En egen fördelning med bara ett tecken (t.ex. 100/0/0, kopierad från en spik när % slogs På) är en spik och räknas
+    // in i de 4 – annars blev det 5 spikar (användaren 2026-10-21: "vill ha 4 spikar om jag inte valt 5 av egen vilja")
+    const planSpikes = plan.filter((s) => s && s.filter((x) => x > 0).length === 1).length;
+    const forced = strongSpikeForced(events, forcedFor(sys).map((f, i) => f ?? (plan[i] ? [0, 1, 2] : null)), Math.max(0, r.spikes - planSpikes));
     const select = () => selectEgnaRows(events, forced, base, { rows: clampFileRows(r.rowsBy?.[sys], r.rows), payoutMin: r.payoutMin, fallPlan: plan, ...extra });
     let picked = select();
     if (!picked) return null;
