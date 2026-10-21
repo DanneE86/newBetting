@@ -43189,33 +43189,33 @@
         "fairSourceOu": "snitt av 9 bolag"
       },
       "last": {
-        "at": "2026-10-20T15:41:32.112Z",
+        "at": "2026-10-21T10:40:18.664Z",
         "odds": {
-          "home": 2.85,
-          "draw": 3.15,
-          "away": 2.6,
+          "home": 2.63,
+          "draw": 3.05,
+          "away": 2.75,
           "over25": 2.25,
-          "under25": 1.6
+          "under25": 1.57
         },
         "books": {
-          "home": "Betsson",
-          "draw": "Coolbet",
+          "home": "Unibet (SE)",
+          "draw": "Unibet (SE)",
           "away": "Unibet (SE)",
           "over25": "Unibet (SE)",
-          "under25": "Nordic Bet"
+          "under25": "Unibet (SE)"
         },
         "fair": {
-          "home": 0.325,
-          "draw": 0.3006,
-          "away": 0.3743,
-          "over25": 0.4184,
-          "under25": 0.5816
+          "home": 0.3548,
+          "draw": 0.3059,
+          "away": 0.3393,
+          "over25": 0.411,
+          "under25": 0.589
         },
-        "fairSource": "pinnacle",
-        "fairSourceOu": "snitt av 9 bolag",
-        "oddsAt": "2026-10-20T15:40:42.4054470Z"
+        "fairSource": "ett bolag",
+        "fairSourceOu": "ett bolag",
+        "oddsAt": null
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -43631,7 +43631,7 @@
       "league": "JP1",
       "date": "2026-10-21",
       "match": "Kawasaki Frontale vs Vissel Kobe",
-      "kickoffUtc": "2026-10-21T10:00:00Z",
+      "kickoffUtc": "2026-10-21T11:00:00Z",
       "first": {
         "at": "2026-10-18T05:07:25.571Z",
         "odds": {
@@ -43659,33 +43659,33 @@
         "fairSourceOu": "snitt av 4 bolag"
       },
       "last": {
-        "at": "2026-10-20T15:26:03.398Z",
+        "at": "2026-10-21T10:40:18.664Z",
         "odds": {
-          "home": 2.4,
-          "draw": 3.75,
-          "away": 2.8,
-          "over25": 1.63,
-          "under25": 2.15
+          "home": 2.35,
+          "draw": 3.7,
+          "away": 2.88,
+          "over25": null,
+          "under25": null
         },
         "books": {
-          "home": "LeoVegas (SE)",
-          "draw": "Coolbet",
-          "away": "Coolbet",
-          "over25": "LeoVegas (SE)",
-          "under25": "Nordic Bet"
+          "home": "Marknadens basta (football-data)",
+          "draw": "Marknadens basta (football-data)",
+          "away": "Marknadens basta (football-data)",
+          "over25": null,
+          "under25": null
         },
         "fair": {
-          "home": 0.4058,
-          "draw": 0.2579,
-          "away": 0.3363,
-          "over25": 0.5716,
-          "under25": 0.4284
+          "home": 0.406,
+          "draw": 0.261,
+          "away": 0.333,
+          "over25": 0.5299,
+          "under25": 0.4701
         },
-        "fairSource": "pinnacle",
-        "fairSourceOu": "snitt av 11 bolag",
-        "oddsAt": "2026-10-20T17:19:06.1245155+02:00"
+        "fairSource": "snitt av 3 bolag",
+        "fairSourceOu": "ett bolag",
+        "oddsAt": "2026-10-21T10:39:34.506Z"
       },
-      "snapshots": 13,
+      "snapshots": 14,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -43718,6 +43718,24 @@
             "over25": 0.5716,
             "under25": 0.4284
           }
+        },
+        {
+          "at": "2026-10-21T10:39:34.506Z",
+          "src": "api",
+          "odds": {
+            "home": 2.35,
+            "draw": 3.7,
+            "away": 2.88,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.406,
+            "draw": 0.261,
+            "away": 0.333,
+            "over25": 0.5299,
+            "under25": 0.4701
+          }
         }
       ]
     },
@@ -43725,7 +43743,7 @@
       "league": "JP1",
       "date": "2026-10-21",
       "match": "FC Tokyo vs Kashiwa Reysol",
-      "kickoffUtc": "2026-10-21T10:00:00Z",
+      "kickoffUtc": "2026-10-21T11:00:00Z",
       "first": {
         "at": "2026-10-18T05:07:25.571Z",
         "odds": {
@@ -43753,33 +43771,33 @@
         "fairSourceOu": "snitt av 10 bolag"
       },
       "last": {
-        "at": "2026-10-20T15:26:03.398Z",
+        "at": "2026-10-21T10:40:18.664Z",
         "odds": {
-          "home": 2.12,
-          "draw": 3.75,
+          "home": 2.18,
+          "draw": 3.6,
           "away": 3.25,
-          "over25": 1.78,
-          "under25": 2.12
+          "over25": null,
+          "under25": null
         },
         "books": {
-          "home": "Coolbet",
-          "draw": "Coolbet",
-          "away": "Coolbet",
-          "over25": "Coolbet",
-          "under25": "LeoVegas (SE)"
+          "home": "Marknadens basta (football-data)",
+          "draw": "Marknadens basta (football-data)",
+          "away": "Marknadens basta (football-data)",
+          "over25": null,
+          "under25": null
         },
         "fair": {
-          "home": 0.4557,
-          "draw": 0.2664,
-          "away": 0.2779,
-          "over25": 0.5442,
-          "under25": 0.4558
+          "home": 0.4419,
+          "draw": 0.2668,
+          "away": 0.2913,
+          "over25": 0.5511,
+          "under25": 0.4489
         },
-        "fairSource": "pinnacle",
-        "fairSourceOu": "snitt av 12 bolag",
-        "oddsAt": "2026-10-20T17:19:06.1245155+02:00"
+        "fairSource": "snitt av 3 bolag",
+        "fairSourceOu": "ett bolag",
+        "oddsAt": "2026-10-21T10:39:34.506Z"
       },
-      "snapshots": 13,
+      "snapshots": 14,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -43812,6 +43830,24 @@
             "over25": 0.5442,
             "under25": 0.4558
           }
+        },
+        {
+          "at": "2026-10-21T10:39:34.506Z",
+          "src": "api",
+          "odds": {
+            "home": 2.18,
+            "draw": 3.6,
+            "away": 3.25,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.4419,
+            "draw": 0.2668,
+            "away": 0.2913,
+            "over25": 0.5511,
+            "under25": 0.4489
+          }
         }
       ]
     },
@@ -43819,7 +43855,7 @@
       "league": "JP1",
       "date": "2026-10-21",
       "match": "Okayama vs Mito",
-      "kickoffUtc": "2026-10-21T10:00:00Z",
+      "kickoffUtc": "2026-10-21T11:00:00Z",
       "first": {
         "at": "2026-10-18T05:07:25.571Z",
         "odds": {
@@ -43847,33 +43883,33 @@
         "fairSourceOu": "snitt av 4 bolag"
       },
       "last": {
-        "at": "2026-10-20T15:26:03.398Z",
+        "at": "2026-10-21T10:40:18.664Z",
         "odds": {
-          "home": 1.83,
+          "home": 1.75,
           "draw": 3.6,
-          "away": 4.75,
-          "over25": 2.02,
-          "under25": 1.8
+          "away": 4.8,
+          "over25": null,
+          "under25": null
         },
         "books": {
-          "home": "LeoVegas (SE)",
-          "draw": "Coolbet",
-          "away": "Coolbet",
-          "over25": "Coolbet",
-          "under25": "Coolbet"
+          "home": "Marknadens basta (football-data)",
+          "draw": "Marknadens basta (football-data)",
+          "away": "Marknadens basta (football-data)",
+          "over25": null,
+          "under25": null
         },
         "fair": {
-          "home": 0.5421,
-          "draw": 0.26,
-          "away": 0.1978,
-          "over25": 0.4665,
-          "under25": 0.5335
+          "home": 0.5422,
+          "draw": 0.2609,
+          "away": 0.1969,
+          "over25": null,
+          "under25": null
         },
-        "fairSource": "pinnacle",
-        "fairSourceOu": "pinnacle",
-        "oddsAt": "2026-10-20T17:19:06.1245155+02:00"
+        "fairSource": "snitt av 3 bolag",
+        "fairSourceOu": null,
+        "oddsAt": "2026-10-21T10:39:34.506Z"
       },
-      "snapshots": 13,
+      "snapshots": 14,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -43905,6 +43941,24 @@
             "away": 0.1978,
             "over25": 0.4665,
             "under25": 0.5335
+          }
+        },
+        {
+          "at": "2026-10-21T10:39:34.506Z",
+          "src": "api",
+          "odds": {
+            "home": 1.75,
+            "draw": 3.6,
+            "away": 4.8,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.5422,
+            "draw": 0.2609,
+            "away": 0.1969,
+            "over25": null,
+            "under25": null
           }
         }
       ]
@@ -43993,7 +44047,7 @@
       "league": "JP1",
       "date": "2026-10-21",
       "match": "Avispa Fukuoka vs Gamba Osaka",
-      "kickoffUtc": "2026-10-21T10:00:00Z",
+      "kickoffUtc": "2026-10-21T11:00:00Z",
       "first": {
         "at": "2026-10-18T05:07:25.571Z",
         "odds": {
@@ -44021,33 +44075,33 @@
         "fairSourceOu": "snitt av 4 bolag"
       },
       "last": {
-        "at": "2026-10-20T15:26:03.398Z",
+        "at": "2026-10-21T10:40:18.664Z",
         "odds": {
           "home": 2.55,
           "draw": 3.4,
-          "away": 2.75,
-          "over25": 1.96,
-          "under25": 1.85
+          "away": 2.7,
+          "over25": null,
+          "under25": null
         },
         "books": {
-          "home": "Coolbet",
-          "draw": "Coolbet",
-          "away": "Coolbet",
-          "over25": "Coolbet",
-          "under25": "Coolbet"
+          "home": "Marknadens basta (football-data)",
+          "draw": "Marknadens basta (football-data)",
+          "away": "Marknadens basta (football-data)",
+          "over25": null,
+          "under25": null
         },
         "fair": {
           "home": 0.3663,
-          "draw": 0.2834,
-          "away": 0.3503,
-          "over25": 0.4742,
-          "under25": 0.5258
+          "draw": 0.285,
+          "away": 0.3488,
+          "over25": 0.485,
+          "under25": 0.515
         },
-        "fairSource": "pinnacle",
-        "fairSourceOu": "pinnacle",
-        "oddsAt": "2026-10-20T17:19:06.1245155+02:00"
+        "fairSource": "snitt av 3 bolag",
+        "fairSourceOu": "ett bolag",
+        "oddsAt": "2026-10-21T10:39:34.506Z"
       },
-      "snapshots": 13,
+      "snapshots": 14,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -44080,6 +44134,24 @@
             "over25": 0.4742,
             "under25": 0.5258
           }
+        },
+        {
+          "at": "2026-10-21T10:39:34.506Z",
+          "src": "api",
+          "odds": {
+            "home": 2.55,
+            "draw": 3.4,
+            "away": 2.7,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.3663,
+            "draw": 0.285,
+            "away": 0.3488,
+            "over25": 0.485,
+            "under25": 0.515
+          }
         }
       ]
     },
@@ -44087,7 +44159,7 @@
       "league": "JP1",
       "date": "2026-10-21",
       "match": "Urawa Reds vs Chiba",
-      "kickoffUtc": "2026-10-21T10:30:00Z",
+      "kickoffUtc": "2026-10-21T11:30:00Z",
       "first": {
         "at": "2026-10-18T05:07:25.571Z",
         "odds": {
@@ -44115,33 +44187,33 @@
         "fairSourceOu": "snitt av 10 bolag"
       },
       "last": {
-        "at": "2026-10-20T15:26:03.398Z",
+        "at": "2026-10-21T10:40:18.664Z",
         "odds": {
-          "home": 1.67,
+          "home": 1.7,
           "draw": 4,
           "away": 5,
-          "over25": 1.8,
-          "under25": 2.05
+          "over25": null,
+          "under25": null
         },
         "books": {
-          "home": "Coolbet",
-          "draw": "Coolbet",
-          "away": "Coolbet",
-          "over25": "Coolbet",
-          "under25": "LeoVegas (SE)"
+          "home": "Marknadens basta (football-data)",
+          "draw": "Marknadens basta (football-data)",
+          "away": "Marknadens basta (football-data)",
+          "over25": null,
+          "under25": null
         },
         "fair": {
-          "home": 0.5702,
-          "draw": 0.2359,
-          "away": 0.1939,
-          "over25": 0.5296,
-          "under25": 0.4704
+          "home": 0.5684,
+          "draw": 0.2439,
+          "away": 0.1877,
+          "over25": null,
+          "under25": null
         },
-        "fairSource": "pinnacle",
-        "fairSourceOu": "pinnacle",
-        "oddsAt": "2026-10-20T17:19:06.1245155+02:00"
+        "fairSource": "snitt av 3 bolag",
+        "fairSourceOu": null,
+        "oddsAt": "2026-10-21T10:39:34.506Z"
       },
-      "snapshots": 13,
+      "snapshots": 14,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -44173,6 +44245,24 @@
             "away": 0.1939,
             "over25": 0.5296,
             "under25": 0.4704
+          }
+        },
+        {
+          "at": "2026-10-21T10:39:34.506Z",
+          "src": "api",
+          "odds": {
+            "home": 1.7,
+            "draw": 4,
+            "away": 5,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.5684,
+            "draw": 0.2439,
+            "away": 0.1877,
+            "over25": null,
+            "under25": null
           }
         }
       ]
@@ -44463,7 +44553,7 @@
       "league": "MLS",
       "date": "2026-10-21",
       "match": "FC Cincinnati vs DC United",
-      "kickoffUtc": "2026-10-21T23:00:00Z",
+      "kickoffUtc": "2026-10-22T00:00:00Z",
       "first": {
         "at": "2026-10-18T05:07:25.571Z",
         "odds": {
@@ -44491,33 +44581,33 @@
         "fairSourceOu": null
       },
       "last": {
-        "at": "2026-10-20T15:26:03.398Z",
+        "at": "2026-10-21T10:40:18.664Z",
         "odds": {
-          "home": 1.76,
+          "home": 1.68,
           "draw": 4.5,
-          "away": 4.3,
-          "over25": 1.31,
-          "under25": 3.35
+          "away": 4.33,
+          "over25": null,
+          "under25": null
         },
         "books": {
-          "home": "LeoVegas (SE)",
-          "draw": "Coolbet",
-          "away": "Coolbet",
-          "over25": "Betsson",
-          "under25": "Betsson"
+          "home": "Marknadens basta (football-data)",
+          "draw": "Marknadens basta (football-data)",
+          "away": "Marknadens basta (football-data)",
+          "over25": null,
+          "under25": null
         },
         "fair": {
-          "home": 0.5711,
-          "draw": 0.2026,
-          "away": 0.2263,
-          "over25": 0.7163,
-          "under25": 0.2837
+          "home": 0.5645,
+          "draw": 0.2155,
+          "away": 0.22,
+          "over25": null,
+          "under25": null
         },
-        "fairSource": "pinnacle",
-        "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-20T17:19:06.1245155+02:00"
+        "fairSource": "snitt av 3 bolag",
+        "fairSourceOu": null,
+        "oddsAt": "2026-10-21T10:39:34.506Z"
       },
-      "snapshots": 13,
+      "snapshots": 14,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -44549,6 +44639,24 @@
             "away": 0.2263,
             "over25": 0.7163,
             "under25": 0.2837
+          }
+        },
+        {
+          "at": "2026-10-21T10:39:34.506Z",
+          "src": "api",
+          "odds": {
+            "home": 1.68,
+            "draw": 4.5,
+            "away": 4.33,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.5645,
+            "draw": 0.2155,
+            "away": 0.22,
+            "over25": null,
+            "under25": null
           }
         }
       ]
@@ -44651,7 +44759,7 @@
       "league": "JP1",
       "date": "2026-10-21",
       "match": "Nagoya Grampus vs Cerezo Osaka",
-      "kickoffUtc": "2026-10-21T10:00:00Z",
+      "kickoffUtc": "2026-10-21T11:00:00Z",
       "first": {
         "at": "2026-10-18T05:07:25.571Z",
         "odds": {
@@ -44679,33 +44787,33 @@
         "fairSourceOu": "snitt av 9 bolag"
       },
       "last": {
-        "at": "2026-10-20T15:26:03.398Z",
+        "at": "2026-10-21T10:40:18.664Z",
         "odds": {
-          "home": 2.4,
-          "draw": 3.75,
-          "away": 2.8,
-          "over25": 1.65,
-          "under25": 2.23
+          "home": 2.3,
+          "draw": 3.7,
+          "away": 2.9,
+          "over25": null,
+          "under25": null
         },
         "books": {
-          "home": "LeoVegas (SE)",
-          "draw": "Coolbet",
-          "away": "Coolbet",
-          "over25": "Nordic Bet",
-          "under25": "LeoVegas (SE)"
+          "home": "Marknadens basta (football-data)",
+          "draw": "Marknadens basta (football-data)",
+          "away": "Marknadens basta (football-data)",
+          "over25": null,
+          "under25": null
         },
         "fair": {
-          "home": 0.4109,
-          "draw": 0.2664,
-          "away": 0.3227,
-          "over25": 0.5743,
-          "under25": 0.4257
+          "home": 0.4149,
+          "draw": 0.2599,
+          "away": 0.3252,
+          "over25": 0.5851,
+          "under25": 0.4149
         },
-        "fairSource": "pinnacle",
-        "fairSourceOu": "snitt av 11 bolag",
-        "oddsAt": "2026-10-20T17:19:06.1245155+02:00"
+        "fairSource": "snitt av 3 bolag",
+        "fairSourceOu": "ett bolag",
+        "oddsAt": "2026-10-21T10:39:34.506Z"
       },
-      "snapshots": 13,
+      "snapshots": 14,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -44738,6 +44846,24 @@
             "over25": 0.5743,
             "under25": 0.4257
           }
+        },
+        {
+          "at": "2026-10-21T10:39:34.506Z",
+          "src": "api",
+          "odds": {
+            "home": 2.3,
+            "draw": 3.7,
+            "away": 2.9,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.4149,
+            "draw": 0.2599,
+            "away": 0.3252,
+            "over25": 0.5851,
+            "under25": 0.4149
+          }
         }
       ]
     },
@@ -44745,7 +44871,7 @@
       "league": "JP1",
       "date": "2026-10-21",
       "match": "Kyoto vs Kashima Antlers",
-      "kickoffUtc": "2026-10-21T10:00:00Z",
+      "kickoffUtc": "2026-10-21T11:00:00Z",
       "first": {
         "at": "2026-10-18T05:07:25.571Z",
         "odds": {
@@ -44773,33 +44899,33 @@
         "fairSourceOu": "snitt av 10 bolag"
       },
       "last": {
-        "at": "2026-10-20T15:26:03.398Z",
+        "at": "2026-10-21T10:40:18.664Z",
         "odds": {
-          "home": 3.85,
-          "draw": 3.75,
+          "home": 4,
+          "draw": 3.6,
           "away": 1.95,
-          "over25": 1.78,
-          "under25": 2.05
+          "over25": null,
+          "under25": null
         },
         "books": {
-          "home": "LeoVegas (SE)",
-          "draw": "Coolbet",
-          "away": "Nordic Bet",
-          "over25": "Coolbet",
-          "under25": "Coolbet"
+          "home": "Marknadens basta (football-data)",
+          "draw": "Marknadens basta (football-data)",
+          "away": "Marknadens basta (football-data)",
+          "over25": null,
+          "under25": null
         },
         "fair": {
-          "home": 0.254,
-          "draw": 0.2682,
-          "away": 0.4777,
-          "over25": 0.5232,
-          "under25": 0.4768
+          "home": 0.2456,
+          "draw": 0.2635,
+          "away": 0.4909,
+          "over25": null,
+          "under25": null
         },
-        "fairSource": "pinnacle",
-        "fairSourceOu": "pinnacle",
-        "oddsAt": "2026-10-20T17:19:06.1245155+02:00"
+        "fairSource": "snitt av 3 bolag",
+        "fairSourceOu": null,
+        "oddsAt": "2026-10-21T10:39:34.506Z"
       },
-      "snapshots": 13,
+      "snapshots": 14,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -44832,6 +44958,24 @@
             "over25": 0.5232,
             "under25": 0.4768
           }
+        },
+        {
+          "at": "2026-10-21T10:39:34.506Z",
+          "src": "api",
+          "odds": {
+            "home": 4,
+            "draw": 3.6,
+            "away": 1.95,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.2456,
+            "draw": 0.2635,
+            "away": 0.4909,
+            "over25": null,
+            "under25": null
+          }
         }
       ]
     },
@@ -44839,7 +44983,7 @@
       "league": "JP1",
       "date": "2026-10-21",
       "match": "Yokohama F. Marinos vs Verdy",
-      "kickoffUtc": "2026-10-21T10:00:00Z",
+      "kickoffUtc": "2026-10-21T11:00:00Z",
       "first": {
         "at": "2026-10-18T05:07:25.571Z",
         "odds": {
@@ -44867,33 +45011,33 @@
         "fairSourceOu": "snitt av 10 bolag"
       },
       "last": {
-        "at": "2026-10-20T15:26:03.398Z",
+        "at": "2026-10-21T10:40:18.664Z",
         "odds": {
           "home": 1.9,
           "draw": 3.5,
-          "away": 4.2,
-          "over25": 2.12,
-          "under25": 1.73
+          "away": 4.33,
+          "over25": null,
+          "under25": null
         },
         "books": {
-          "home": "Coolbet",
-          "draw": "Coolbet",
-          "away": "Coolbet",
-          "over25": "Coolbet",
-          "under25": "Coolbet"
+          "home": "Marknadens basta (football-data)",
+          "draw": "Marknadens basta (football-data)",
+          "away": "Marknadens basta (football-data)",
+          "over25": null,
+          "under25": null
         },
         "fair": {
-          "home": 0.511,
-          "draw": 0.2745,
-          "away": 0.2145,
-          "over25": 0.4526,
-          "under25": 0.5474
+          "home": 0.5089,
+          "draw": 0.2728,
+          "away": 0.2183,
+          "over25": null,
+          "under25": null
         },
-        "fairSource": "pinnacle",
-        "fairSourceOu": "snitt av 12 bolag",
-        "oddsAt": "2026-10-20T17:19:06.1245155+02:00"
+        "fairSource": "snitt av 3 bolag",
+        "fairSourceOu": null,
+        "oddsAt": "2026-10-21T10:39:34.506Z"
       },
-      "snapshots": 13,
+      "snapshots": 14,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -44925,6 +45069,24 @@
             "away": 0.2145,
             "over25": 0.4526,
             "under25": 0.5474
+          }
+        },
+        {
+          "at": "2026-10-21T10:39:34.506Z",
+          "src": "api",
+          "odds": {
+            "home": 1.9,
+            "draw": 3.5,
+            "away": 4.33,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.5089,
+            "draw": 0.2728,
+            "away": 0.2183,
+            "over25": null,
+            "under25": null
           }
         }
       ]
@@ -45027,7 +45189,7 @@
       "league": "JP1",
       "date": "2026-10-21",
       "match": "V-Varen Nagasaki vs Sanfrecce Hiroshima",
-      "kickoffUtc": "2026-10-21T10:00:00Z",
+      "kickoffUtc": "2026-10-21T11:00:00Z",
       "first": {
         "at": "2026-10-18T05:07:25.571Z",
         "odds": {
@@ -45055,33 +45217,33 @@
         "fairSourceOu": "snitt av 7 bolag"
       },
       "last": {
-        "at": "2026-10-20T15:26:03.398Z",
+        "at": "2026-10-21T10:40:18.664Z",
         "odds": {
-          "home": 6.75,
+          "home": 6.5,
           "draw": 4.75,
-          "away": 1.47,
-          "over25": 1.58,
-          "under25": 2.35
+          "away": 1.49,
+          "over25": null,
+          "under25": null
         },
         "books": {
-          "home": "LeoVegas (SE)",
-          "draw": "Coolbet",
-          "away": "Coolbet",
-          "over25": "Nordic Bet",
-          "under25": "LeoVegas (SE)"
+          "home": "Marknadens basta (football-data)",
+          "draw": "Marknadens basta (football-data)",
+          "away": "Marknadens basta (football-data)",
+          "over25": null,
+          "under25": null
         },
         "fair": {
-          "home": 0.1574,
-          "draw": 0.1926,
-          "away": 0.65,
-          "over25": 0.6008,
-          "under25": 0.3992
+          "home": 0.1523,
+          "draw": 0.2054,
+          "away": 0.6423,
+          "over25": null,
+          "under25": null
         },
-        "fairSource": "pinnacle",
-        "fairSourceOu": "snitt av 10 bolag",
-        "oddsAt": "2026-10-20T17:19:06.1245155+02:00"
+        "fairSource": "snitt av 3 bolag",
+        "fairSourceOu": null,
+        "oddsAt": "2026-10-21T10:39:34.506Z"
       },
-      "snapshots": 13,
+      "snapshots": 14,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -45113,6 +45275,24 @@
             "away": 0.65,
             "over25": 0.6008,
             "under25": 0.3992
+          }
+        },
+        {
+          "at": "2026-10-21T10:39:34.506Z",
+          "src": "api",
+          "odds": {
+            "home": 6.5,
+            "draw": 4.75,
+            "away": 1.49,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.1523,
+            "draw": 0.2054,
+            "away": 0.6423,
+            "over25": null,
+            "under25": null
           }
         }
       ]
@@ -45215,7 +45395,7 @@
       "league": "MX",
       "date": "2026-10-22",
       "match": "Toluca vs Club Tijuana",
-      "kickoffUtc": "2026-10-22T01:00:00Z",
+      "kickoffUtc": "2026-10-22T02:00:00Z",
       "first": {
         "at": "2026-10-18T05:07:25.571Z",
         "odds": {
@@ -45243,33 +45423,33 @@
         "fairSourceOu": "ett bolag"
       },
       "last": {
-        "at": "2026-10-20T15:26:03.398Z",
+        "at": "2026-10-21T10:40:18.664Z",
         "odds": {
-          "home": 1.37,
-          "draw": 5.25,
-          "away": 7.5,
-          "over25": 1.41,
-          "under25": 2.82
+          "home": 1.43,
+          "draw": 5,
+          "away": 7,
+          "over25": null,
+          "under25": null
         },
         "books": {
-          "home": "Coolbet",
-          "draw": "Coolbet",
-          "away": "Coolbet",
-          "over25": "Betsson",
-          "under25": "Betsson"
+          "home": "Marknadens basta (football-data)",
+          "draw": "Marknadens basta (football-data)",
+          "away": "Marknadens basta (football-data)",
+          "over25": null,
+          "under25": null
         },
         "fair": {
-          "home": 0.7253,
-          "draw": 0.1613,
-          "away": 0.1135,
-          "over25": 0.6617,
-          "under25": 0.3383
+          "home": 0.714,
+          "draw": 0.1749,
+          "away": 0.1111,
+          "over25": null,
+          "under25": null
         },
-        "fairSource": "pinnacle",
-        "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-20T17:19:06.1245155+02:00"
+        "fairSource": "snitt av 3 bolag",
+        "fairSourceOu": null,
+        "oddsAt": "2026-10-21T10:39:34.506Z"
       },
-      "snapshots": 13,
+      "snapshots": 14,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -45302,6 +45482,24 @@
             "over25": 0.6617,
             "under25": 0.3383
           }
+        },
+        {
+          "at": "2026-10-21T10:39:34.506Z",
+          "src": "api",
+          "odds": {
+            "home": 1.43,
+            "draw": 5,
+            "away": 7,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.714,
+            "draw": 0.1749,
+            "away": 0.1111,
+            "over25": null,
+            "under25": null
+          }
         }
       ]
     },
@@ -45309,7 +45507,7 @@
       "league": "MX",
       "date": "2026-10-22",
       "match": "Atlas vs Club America",
-      "kickoffUtc": "2026-10-22T01:00:00Z",
+      "kickoffUtc": "2026-10-22T02:00:00Z",
       "first": {
         "at": "2026-10-18T05:07:25.571Z",
         "odds": {
@@ -45337,33 +45535,33 @@
         "fairSourceOu": "snitt av 9 bolag"
       },
       "last": {
-        "at": "2026-10-20T15:26:03.398Z",
+        "at": "2026-10-21T10:40:18.664Z",
         "odds": {
-          "home": 3.35,
-          "draw": 3.75,
-          "away": 2.14,
-          "over25": 1.71,
-          "under25": 2.12
+          "home": 3.5,
+          "draw": 3.6,
+          "away": 2.1,
+          "over25": null,
+          "under25": null
         },
         "books": {
-          "home": "Nordic Bet",
-          "draw": "Coolbet",
-          "away": "Unibet (SE)",
-          "over25": "Unibet (SE)",
-          "under25": "Nordic Bet"
+          "home": "Marknadens basta (football-data)",
+          "draw": "Marknadens basta (football-data)",
+          "away": "Marknadens basta (football-data)",
+          "over25": null,
+          "under25": null
         },
         "fair": {
-          "home": 0.2755,
-          "draw": 0.2562,
-          "away": 0.4683,
-          "over25": 0.5515,
-          "under25": 0.4485
+          "home": 0.2738,
+          "draw": 0.2638,
+          "away": 0.4623,
+          "over25": null,
+          "under25": null
         },
-        "fairSource": "pinnacle",
-        "fairSourceOu": "snitt av 13 bolag",
-        "oddsAt": "2026-10-20T17:19:06.1245155+02:00"
+        "fairSource": "snitt av 3 bolag",
+        "fairSourceOu": null,
+        "oddsAt": "2026-10-21T10:39:34.506Z"
       },
-      "snapshots": 13,
+      "snapshots": 14,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -45395,6 +45593,24 @@
             "away": 0.4683,
             "over25": 0.5515,
             "under25": 0.4485
+          }
+        },
+        {
+          "at": "2026-10-21T10:39:34.506Z",
+          "src": "api",
+          "odds": {
+            "home": 3.5,
+            "draw": 3.6,
+            "away": 2.1,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.2738,
+            "draw": 0.2638,
+            "away": 0.4623,
+            "over25": null,
+            "under25": null
           }
         }
       ]
@@ -45859,7 +46075,7 @@
       "league": "MX",
       "date": "2026-10-22",
       "match": "Santos Laguna vs UNAM Pumas",
-      "kickoffUtc": "2026-10-22T03:10:00Z",
+      "kickoffUtc": "2026-10-22T04:10:00Z",
       "first": {
         "at": "2026-10-18T05:07:25.571Z",
         "odds": {
@@ -45887,33 +46103,33 @@
         "fairSourceOu": "snitt av 9 bolag"
       },
       "last": {
-        "at": "2026-10-20T15:26:03.398Z",
+        "at": "2026-10-21T10:40:18.664Z",
         "odds": {
-          "home": 2.3,
-          "draw": 3.75,
-          "away": 2.9,
-          "over25": 1.56,
-          "under25": 2.32
+          "home": 2.25,
+          "draw": 3.6,
+          "away": 3.1,
+          "over25": null,
+          "under25": null
         },
         "books": {
-          "home": "Coolbet",
-          "draw": "Coolbet",
-          "away": "Nordic Bet",
-          "over25": "Unibet (SE)",
-          "under25": "Nordic Bet"
+          "home": "Marknadens basta (football-data)",
+          "draw": "Marknadens basta (football-data)",
+          "away": "Marknadens basta (football-data)",
+          "over25": null,
+          "under25": null
         },
         "fair": {
-          "home": 0.4181,
-          "draw": 0.2598,
-          "away": 0.3221,
-          "over25": 0.5949,
-          "under25": 0.4051
+          "home": 0.4268,
+          "draw": 0.2626,
+          "away": 0.3106,
+          "over25": null,
+          "under25": null
         },
-        "fairSource": "pinnacle",
-        "fairSourceOu": "snitt av 12 bolag",
-        "oddsAt": "2026-10-20T17:19:06.1245155+02:00"
+        "fairSource": "snitt av 3 bolag",
+        "fairSourceOu": null,
+        "oddsAt": "2026-10-21T10:39:34.506Z"
       },
-      "snapshots": 13,
+      "snapshots": 14,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -45945,6 +46161,24 @@
             "away": 0.3221,
             "over25": 0.5949,
             "under25": 0.4051
+          }
+        },
+        {
+          "at": "2026-10-21T10:39:34.506Z",
+          "src": "api",
+          "odds": {
+            "home": 2.25,
+            "draw": 3.6,
+            "away": 3.1,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.4268,
+            "draw": 0.2626,
+            "away": 0.3106,
+            "over25": null,
+            "under25": null
           }
         }
       ]
@@ -59940,6 +60174,20 @@
             "over25": 0.6017,
             "under25": 0.3983
           }
+        },
+        {
+          "at": "2026-10-21T10:39:16.730Z",
+          "src": "op",
+          "odds": {
+            "home": 2.3,
+            "draw": 3.85,
+            "away": 2.85
+          },
+          "fair": {
+            "home": 0.4159,
+            "draw": 0.2485,
+            "away": 0.3356
+          }
         }
       ]
     },
@@ -60033,6 +60281,20 @@
             "away": 0.3055,
             "over25": 0.5882,
             "under25": 0.4118
+          }
+        },
+        {
+          "at": "2026-10-21T10:39:16.730Z",
+          "src": "op",
+          "odds": {
+            "home": 2.2,
+            "draw": 3.7,
+            "away": 3.1
+          },
+          "fair": {
+            "home": 0.434,
+            "draw": 0.258,
+            "away": 0.308
           }
         }
       ]
@@ -60128,6 +60390,20 @@
             "over25": 0.6616,
             "under25": 0.3384
           }
+        },
+        {
+          "at": "2026-10-21T10:39:16.730Z",
+          "src": "op",
+          "odds": {
+            "home": 1.9,
+            "draw": 4.33,
+            "away": 3.6
+          },
+          "fair": {
+            "home": 0.5085,
+            "draw": 0.2231,
+            "away": 0.2684
+          }
         }
       ]
     },
@@ -60221,6 +60497,20 @@
             "away": 0.1813,
             "over25": 0.6979,
             "under25": 0.3021
+          }
+        },
+        {
+          "at": "2026-10-21T10:39:16.730Z",
+          "src": "op",
+          "odds": {
+            "home": 1.65,
+            "draw": 4.6,
+            "away": 4.7
+          },
+          "fair": {
+            "home": 0.5849,
+            "draw": 0.2098,
+            "away": 0.2053
           }
         }
       ]
@@ -60316,6 +60606,20 @@
             "over25": 0.7581,
             "under25": 0.2419
           }
+        },
+        {
+          "at": "2026-10-21T10:39:16.730Z",
+          "src": "op",
+          "odds": {
+            "home": 1.22,
+            "draw": 7.5,
+            "away": 13
+          },
+          "fair": {
+            "home": 0.7959,
+            "draw": 0.1295,
+            "away": 0.0747
+          }
         }
       ]
     },
@@ -60410,6 +60714,20 @@
             "over25": 0.7339,
             "under25": 0.2661
           }
+        },
+        {
+          "at": "2026-10-21T10:39:16.730Z",
+          "src": "op",
+          "odds": {
+            "home": 1.27,
+            "draw": 7,
+            "away": 11
+          },
+          "fair": {
+            "home": 0.7711,
+            "draw": 0.1399,
+            "away": 0.089
+          }
         }
       ]
     },
@@ -60503,6 +60821,20 @@
             "away": 0.0997,
             "over25": 0.7933,
             "under25": 0.2067
+          }
+        },
+        {
+          "at": "2026-10-21T10:39:16.730Z",
+          "src": "op",
+          "odds": {
+            "home": 1.24,
+            "draw": 7.5,
+            "away": 11
+          },
+          "fair": {
+            "home": 0.7824,
+            "draw": 0.1294,
+            "away": 0.0882
           }
         }
       ]
@@ -63271,7 +63603,7 @@
       "league": "LL",
       "date": "2026-10-21",
       "match": "Levante vs Ath Bilbao",
-      "kickoffUtc": "2026-10-21T18:00:00Z",
+      "kickoffUtc": "2026-10-21T19:00:00Z",
       "first": {
         "at": "2026-10-18T05:07:25.571Z",
         "odds": {
@@ -63299,33 +63631,33 @@
         "fairSourceOu": "pinnacle"
       },
       "last": {
-        "at": "2026-10-20T15:26:03.398Z",
+        "at": "2026-10-21T10:40:18.664Z",
         "odds": {
-          "home": 3.65,
-          "draw": 3.35,
-          "away": 2.23,
-          "over25": 2.04,
+          "home": 3.6,
+          "draw": 3.5,
+          "away": 2.2,
+          "over25": 1.98,
           "under25": 1.88
         },
         "books": {
-          "home": "Unibet (SE)",
-          "draw": "Unibet (SE)",
-          "away": "Unibet (SE)",
-          "over25": "Unibet (SE)",
-          "under25": "Coolbet"
+          "home": "Marknadens basta (football-data)",
+          "draw": "Marknadens basta (football-data)",
+          "away": "Marknadens basta (football-data)",
+          "over25": "Marknadens basta (football-data)",
+          "under25": "Marknadens basta (football-data)"
         },
         "fair": {
-          "home": 0.2504,
-          "draw": 0.3168,
-          "away": 0.4329,
-          "over25": 0.491,
-          "under25": 0.509
+          "home": 0.273,
+          "draw": 0.2806,
+          "away": 0.4463,
+          "over25": 0.4871,
+          "under25": 0.5129
         },
-        "fairSource": "pinnacle",
-        "fairSourceOu": "pinnacle",
-        "oddsAt": "2026-10-20T17:19:06.1245155+02:00"
+        "fairSource": "snitt av 3 bolag",
+        "fairSourceOu": "snitt av 3 bolag",
+        "oddsAt": "2026-10-21T10:39:34.506Z"
       },
-      "snapshots": 13,
+      "snapshots": 14,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -63343,6 +63675,38 @@
             "away": 0.4329,
             "over25": 0.491,
             "under25": 0.509
+          }
+        },
+        {
+          "at": "2026-10-21T10:39:16.730Z",
+          "src": "op",
+          "odds": {
+            "home": 3.65,
+            "draw": 3.3,
+            "away": 2.15
+          },
+          "fair": {
+            "home": 0.2629,
+            "draw": 0.2908,
+            "away": 0.4463
+          }
+        },
+        {
+          "at": "2026-10-21T10:39:34.506Z",
+          "src": "api",
+          "odds": {
+            "home": 3.6,
+            "draw": 3.5,
+            "away": 2.2,
+            "over25": 1.98,
+            "under25": 1.88
+          },
+          "fair": {
+            "home": 0.273,
+            "draw": 0.2806,
+            "away": 0.4463,
+            "over25": 0.4871,
+            "under25": 0.5129
           }
         }
       ]
@@ -63424,6 +63788,20 @@
             "over25": 0.4701,
             "under25": 0.5299
           }
+        },
+        {
+          "at": "2026-10-21T10:39:16.730Z",
+          "src": "op",
+          "odds": {
+            "home": 1.76,
+            "draw": 3.7,
+            "away": 5.25
+          },
+          "fair": {
+            "home": 0.5522,
+            "draw": 0.2627,
+            "away": 0.1851
+          }
         }
       ]
     },
@@ -63503,6 +63881,20 @@
             "away": 0.1923,
             "over25": 0.5256,
             "under25": 0.4744
+          }
+        },
+        {
+          "at": "2026-10-21T10:39:16.730Z",
+          "src": "op",
+          "odds": {
+            "home": 1.77,
+            "draw": 3.9,
+            "away": 4.75
+          },
+          "fair": {
+            "home": 0.5475,
+            "draw": 0.2485,
+            "away": 0.204
           }
         }
       ]
@@ -63584,6 +63976,20 @@
             "over25": 0.5635,
             "under25": 0.4365
           }
+        },
+        {
+          "at": "2026-10-21T10:39:16.730Z",
+          "src": "op",
+          "odds": {
+            "home": 2.37,
+            "draw": 3.7,
+            "away": 2.88
+          },
+          "fair": {
+            "home": 0.4059,
+            "draw": 0.26,
+            "away": 0.334
+          }
         }
       ]
     },
@@ -63663,6 +64069,20 @@
             "away": 0.433,
             "over25": 0.553,
             "under25": 0.447
+          }
+        },
+        {
+          "at": "2026-10-21T10:39:16.730Z",
+          "src": "op",
+          "odds": {
+            "home": 3.3,
+            "draw": 3.7,
+            "away": 2.2
+          },
+          "fair": {
+            "home": 0.2948,
+            "draw": 0.2629,
+            "away": 0.4422
           }
         }
       ]
@@ -63824,6 +64244,20 @@
             "over25": 0.414,
             "under25": 0.586
           }
+        },
+        {
+          "at": "2026-10-21T10:39:16.730Z",
+          "src": "op",
+          "odds": {
+            "home": 1.64,
+            "draw": 3.95,
+            "away": 5.75
+          },
+          "fair": {
+            "home": 0.5881,
+            "draw": 0.2442,
+            "away": 0.1677
+          }
         }
       ]
     },
@@ -63903,6 +64337,20 @@
             "away": 0.3759,
             "over25": 0.5167,
             "under25": 0.4833
+          }
+        },
+        {
+          "at": "2026-10-21T10:39:16.730Z",
+          "src": "op",
+          "odds": {
+            "home": 2.75,
+            "draw": 3.5,
+            "away": 2.55
+          },
+          "fair": {
+            "home": 0.3491,
+            "draw": 0.2743,
+            "away": 0.3765
           }
         }
       ]
@@ -63984,6 +64432,20 @@
             "over25": 0.594,
             "under25": 0.406
           }
+        },
+        {
+          "at": "2026-10-21T10:39:16.730Z",
+          "src": "op",
+          "odds": {
+            "home": 1.74,
+            "draw": 4.1,
+            "away": 4.75
+          },
+          "fair": {
+            "home": 0.5584,
+            "draw": 0.237,
+            "away": 0.2046
+          }
         }
       ]
     },
@@ -64064,6 +64526,20 @@
             "over25": 0.7947,
             "under25": 0.2053
           }
+        },
+        {
+          "at": "2026-10-21T10:39:16.730Z",
+          "src": "op",
+          "odds": {
+            "home": 1.6,
+            "draw": 5.8,
+            "away": 4.4
+          },
+          "fair": {
+            "home": 0.6099,
+            "draw": 0.1683,
+            "away": 0.2218
+          }
         }
       ]
     },
@@ -64143,6 +64619,20 @@
             "away": 0.2148,
             "over25": 0.4425,
             "under25": 0.5575
+          }
+        },
+        {
+          "at": "2026-10-21T10:39:16.730Z",
+          "src": "op",
+          "odds": {
+            "home": 1.95,
+            "draw": 3.4,
+            "away": 4.2
+          },
+          "fair": {
+            "home": 0.4907,
+            "draw": 0.2814,
+            "away": 0.2278
           }
         }
       ]
@@ -71082,6 +71572,20 @@
             "over25": 0.5855,
             "under25": 0.4145
           }
+        },
+        {
+          "at": "2026-10-21T10:39:16.730Z",
+          "src": "op",
+          "odds": {
+            "home": 2.25,
+            "draw": 3.8,
+            "away": 3
+          },
+          "fair": {
+            "home": 0.427,
+            "draw": 0.2528,
+            "away": 0.3202
+          }
         }
       ]
     },
@@ -73897,6 +74401,20 @@
             "away": 0.0779,
             "over25": 0.7436,
             "under25": 0.2564
+          }
+        },
+        {
+          "at": "2026-10-21T10:39:16.730Z",
+          "src": "op",
+          "odds": {
+            "home": 1.25,
+            "draw": 6.75,
+            "away": 11
+          },
+          "fair": {
+            "home": 0.7699,
+            "draw": 0.1426,
+            "away": 0.0875
           }
         }
       ]
@@ -82348,6 +82866,20 @@
             "over25": 0.5955,
             "under25": 0.4045
           }
+        },
+        {
+          "at": "2026-10-21T10:39:16.730Z",
+          "src": "op",
+          "odds": {
+            "home": 1.55,
+            "draw": 4.2,
+            "away": 5.25
+          },
+          "fair": {
+            "home": 0.6009,
+            "draw": 0.2217,
+            "away": 0.1774
+          }
         }
       ]
     },
@@ -82427,6 +82959,20 @@
             "away": 0.6621,
             "over25": 0.6058,
             "under25": 0.3942
+          }
+        },
+        {
+          "at": "2026-10-21T10:39:16.730Z",
+          "src": "op",
+          "odds": {
+            "home": 5,
+            "draw": 4.5,
+            "away": 1.58
+          },
+          "fair": {
+            "home": 0.1895,
+            "draw": 0.2106,
+            "away": 0.5998
           }
         }
       ]
@@ -82508,6 +83054,20 @@
             "over25": 0.4661,
             "under25": 0.5339
           }
+        },
+        {
+          "at": "2026-10-21T10:39:16.730Z",
+          "src": "op",
+          "odds": {
+            "home": 2.25,
+            "draw": 3.35,
+            "away": 3.2
+          },
+          "fair": {
+            "home": 0.4211,
+            "draw": 0.2828,
+            "away": 0.2961
+          }
         }
       ]
     },
@@ -82587,6 +83147,20 @@
             "away": 0.1191,
             "over25": 0.6264,
             "under25": 0.3736
+          }
+        },
+        {
+          "at": "2026-10-21T10:39:16.730Z",
+          "src": "op",
+          "odds": {
+            "home": 1.42,
+            "draw": 5.1,
+            "away": 7
+          },
+          "fair": {
+            "home": 0.6751,
+            "draw": 0.188,
+            "away": 0.1369
           }
         }
       ]
@@ -82668,6 +83242,20 @@
             "over25": 0.7643,
             "under25": 0.2357
           }
+        },
+        {
+          "at": "2026-10-21T10:39:16.730Z",
+          "src": "op",
+          "odds": {
+            "home": 1.14,
+            "draw": 8.5,
+            "away": 19
+          },
+          "fair": {
+            "home": 0.8374,
+            "draw": 0.1123,
+            "away": 0.0502
+          }
         }
       ]
     },
@@ -82747,6 +83335,20 @@
             "away": 0.3312,
             "over25": 0.3563,
             "under25": 0.6437
+          }
+        },
+        {
+          "at": "2026-10-21T10:39:16.730Z",
+          "src": "op",
+          "odds": {
+            "home": 2.8,
+            "draw": 3,
+            "away": 2.75
+          },
+          "fair": {
+            "home": 0.3388,
+            "draw": 0.3162,
+            "away": 0.345
           }
         }
       ]
@@ -82828,6 +83430,20 @@
             "over25": 0.7761,
             "under25": 0.2239
           }
+        },
+        {
+          "at": "2026-10-21T10:39:16.730Z",
+          "src": "op",
+          "odds": {
+            "home": 9.5,
+            "draw": 7,
+            "away": 1.27
+          },
+          "fair": {
+            "home": 0.1017,
+            "draw": 0.138,
+            "away": 0.7604
+          }
         }
       ]
     },
@@ -82907,6 +83523,20 @@
             "away": 0.3227,
             "over25": 0.487,
             "under25": 0.513
+          }
+        },
+        {
+          "at": "2026-10-21T10:39:16.730Z",
+          "src": "op",
+          "odds": {
+            "home": 2.45,
+            "draw": 3.4,
+            "away": 2.8
+          },
+          "fair": {
+            "home": 0.3853,
+            "draw": 0.2776,
+            "away": 0.3371
           }
         }
       ]
@@ -82988,6 +83618,20 @@
             "over25": 0.5065,
             "under25": 0.4935
           }
+        },
+        {
+          "at": "2026-10-21T10:39:16.730Z",
+          "src": "op",
+          "odds": {
+            "home": 2,
+            "draw": 3.6,
+            "away": 3.6
+          },
+          "fair": {
+            "home": 0.4737,
+            "draw": 0.2632,
+            "away": 0.2632
+          }
         }
       ]
     },
@@ -83067,6 +83711,20 @@
             "away": 0.2716,
             "over25": 0.4137,
             "under25": 0.5863
+          }
+        },
+        {
+          "at": "2026-10-21T10:39:16.730Z",
+          "src": "op",
+          "odds": {
+            "home": 2.2,
+            "draw": 3.4,
+            "away": 3.3
+          },
+          "fair": {
+            "home": 0.4322,
+            "draw": 0.2797,
+            "away": 0.2881
           }
         }
       ]
@@ -85662,8 +86320,170 @@
           }
         }
       ]
+    },
+    "2026-11-04|CL|AEK Athens|Real Madrid": {
+      "league": "CL",
+      "date": "2026-11-04",
+      "match": "AEK Athens vs Real Madrid",
+      "kickoffUtc": "2026-11-04T17:45:00.000Z",
+      "first": {
+        "at": "2026-10-21T10:40:18.664Z",
+        "odds": {
+          "home": 8,
+          "draw": 6,
+          "away": 1.29,
+          "over25": null,
+          "under25": null
+        },
+        "books": {
+          "home": "OddsPortal (snitt)",
+          "draw": "OddsPortal (snitt)",
+          "away": "OddsPortal (snitt)",
+          "over25": null,
+          "under25": null
+        },
+        "fair": {
+          "home": 0.1172,
+          "draw": 0.1562,
+          "away": 0.7266,
+          "over25": null,
+          "under25": null
+        },
+        "fairSource": "OddsPortal-snitt",
+        "fairSourceOu": null,
+        "oddsAt": "2026-10-21T10:39:16.730Z"
+      },
+      "last": {
+        "at": "2026-10-21T10:40:18.664Z",
+        "odds": {
+          "home": 8,
+          "draw": 6,
+          "away": 1.29,
+          "over25": null,
+          "under25": null
+        },
+        "books": {
+          "home": "OddsPortal (snitt)",
+          "draw": "OddsPortal (snitt)",
+          "away": "OddsPortal (snitt)",
+          "over25": null,
+          "under25": null
+        },
+        "fair": {
+          "home": 0.1172,
+          "draw": 0.1562,
+          "away": 0.7266,
+          "over25": null,
+          "under25": null
+        },
+        "fairSource": "OddsPortal-snitt",
+        "fairSourceOu": null,
+        "oddsAt": "2026-10-21T10:39:16.730Z"
+      },
+      "snapshots": 1,
+      "points": [
+        {
+          "at": "2026-10-21T10:39:16.730Z",
+          "src": "op",
+          "odds": {
+            "home": 8,
+            "draw": 6,
+            "away": 1.29,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.1172,
+            "draw": 0.1562,
+            "away": 0.7266,
+            "over25": null,
+            "under25": null
+          }
+        }
+      ]
+    },
+    "2026-11-04|CL|FC Porto|Napoli": {
+      "league": "CL",
+      "date": "2026-11-04",
+      "match": "FC Porto vs Napoli",
+      "kickoffUtc": "2026-11-04T20:00:00.000Z",
+      "first": {
+        "at": "2026-10-21T10:40:18.664Z",
+        "odds": {
+          "home": 1.95,
+          "draw": 3.8,
+          "away": 3.4,
+          "over25": null,
+          "under25": null
+        },
+        "books": {
+          "home": "OddsPortal (snitt)",
+          "draw": "OddsPortal (snitt)",
+          "away": "OddsPortal (snitt)",
+          "over25": null,
+          "under25": null
+        },
+        "fair": {
+          "home": 0.4792,
+          "draw": 0.2459,
+          "away": 0.2749,
+          "over25": null,
+          "under25": null
+        },
+        "fairSource": "OddsPortal-snitt",
+        "fairSourceOu": null,
+        "oddsAt": "2026-10-21T10:39:16.730Z"
+      },
+      "last": {
+        "at": "2026-10-21T10:40:18.664Z",
+        "odds": {
+          "home": 1.95,
+          "draw": 3.8,
+          "away": 3.4,
+          "over25": null,
+          "under25": null
+        },
+        "books": {
+          "home": "OddsPortal (snitt)",
+          "draw": "OddsPortal (snitt)",
+          "away": "OddsPortal (snitt)",
+          "over25": null,
+          "under25": null
+        },
+        "fair": {
+          "home": 0.4792,
+          "draw": 0.2459,
+          "away": 0.2749,
+          "over25": null,
+          "under25": null
+        },
+        "fairSource": "OddsPortal-snitt",
+        "fairSourceOu": null,
+        "oddsAt": "2026-10-21T10:39:16.730Z"
+      },
+      "snapshots": 1,
+      "points": [
+        {
+          "at": "2026-10-21T10:39:16.730Z",
+          "src": "op",
+          "odds": {
+            "home": 1.95,
+            "draw": 3.8,
+            "away": 3.4,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.4792,
+            "draw": 0.2459,
+            "away": 0.2749,
+            "over25": null,
+            "under25": null
+          }
+        }
+      ]
     }
   },
-  "updatedAt": "2026-10-20T15:49:35.543Z",
+  "updatedAt": "2026-10-21T10:40:18.664Z",
   "note": "first = forsta sedda odds, last = senaste fore avspark (proxy for stangning dar closing saknas). Nyckel: datum|liga|hemma|borta."
 }
