@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-20T15:49:29.785Z",
+  "updatedAt": "2026-10-21T10:40:09.071Z",
   "source": "football-data.co.uk Referee/HY/AY/HR/AR/HF/AF",
   "count": 145,
   "referees": [
@@ -323,6 +323,17 @@
       "homeWinRate": 0.404
     },
     {
+      "league": "SC",
+      "referee": "N Walsh",
+      "matches": 52,
+      "yellowPg": 4.17,
+      "redPg": 0.173,
+      "bookingPointsPg": 46.1,
+      "foulsPg": 25,
+      "goalsPg": 2.81,
+      "homeWinRate": 0.5
+    },
+    {
       "league": "PL",
       "referee": "T Robinson",
       "matches": 25,
@@ -332,17 +343,6 @@
       "foulsPg": 22.8,
       "goalsPg": 2.56,
       "homeWinRate": 0.4
-    },
-    {
-      "league": "SC",
-      "referee": "N Walsh",
-      "matches": 53,
-      "yellowPg": 4.15,
-      "redPg": 0.17,
-      "bookingPointsPg": 45.8,
-      "foulsPg": 24.9,
-      "goalsPg": 2.79,
-      "homeWinRate": 0.491
     },
     {
       "league": "SC",
@@ -631,17 +631,6 @@
       "homeWinRate": 0.667
     },
     {
-      "league": "SC",
-      "referee": "C Graham",
-      "matches": 22,
-      "yellowPg": 3.86,
-      "redPg": 0.182,
-      "bookingPointsPg": 43.2,
-      "foulsPg": 26.5,
-      "goalsPg": 2.55,
-      "homeWinRate": 0.591
-    },
-    {
       "league": "CH",
       "referee": "J Smith",
       "matches": 52,
@@ -805,6 +794,17 @@
       "foulsPg": 21.5,
       "goalsPg": 2.27,
       "homeWinRate": 0.636
+    },
+    {
+      "league": "SC",
+      "referee": "C Graham",
+      "matches": 21,
+      "yellowPg": 3.71,
+      "redPg": 0.143,
+      "bookingPointsPg": 40.7,
+      "foulsPg": 26.4,
+      "goalsPg": 2.52,
+      "homeWinRate": 0.619
     },
     {
       "league": "EL1",
@@ -994,6 +994,17 @@
       "homeWinRate": 0.467
     },
     {
+      "league": "CH",
+      "referee": "L Smith",
+      "matches": 44,
+      "yellowPg": 3.55,
+      "redPg": 0.045,
+      "bookingPointsPg": 36.6,
+      "foulsPg": 20.5,
+      "goalsPg": 2.34,
+      "homeWinRate": 0.477
+    },
+    {
       "league": "EL1",
       "referee": "S Parkinson",
       "matches": 13,
@@ -1014,17 +1025,6 @@
       "foulsPg": 21.7,
       "goalsPg": 2.68,
       "homeWinRate": 0.474
-    },
-    {
-      "league": "CH",
-      "referee": "L Smith",
-      "matches": 45,
-      "yellowPg": 3.51,
-      "redPg": 0.044,
-      "bookingPointsPg": 36.2,
-      "foulsPg": 20.7,
-      "goalsPg": 2.38,
-      "homeWinRate": 0.489
     },
     {
       "league": "CH",
@@ -1181,17 +1181,6 @@
       "homeWinRate": 0.6
     },
     {
-      "league": "SC",
-      "referee": "G Irvine",
-      "matches": 13,
-      "yellowPg": 3.38,
-      "redPg": 0.154,
-      "bookingPointsPg": 37.7,
-      "foulsPg": 23.8,
-      "goalsPg": 3.15,
-      "homeWinRate": 0.308
-    },
-    {
       "league": "CH",
       "referee": "G Ward",
       "matches": 53,
@@ -1333,6 +1322,17 @@
       "foulsPg": 22.1,
       "goalsPg": 1.95,
       "homeWinRate": 0.263
+    },
+    {
+      "league": "SC",
+      "referee": "G Irvine",
+      "matches": 12,
+      "yellowPg": 3.25,
+      "redPg": 0.167,
+      "bookingPointsPg": 36.7,
+      "foulsPg": 23.3,
+      "goalsPg": 3.08,
+      "homeWinRate": 0.25
     },
     {
       "league": "EL1",
