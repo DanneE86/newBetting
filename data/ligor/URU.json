@@ -1,0 +1,349 @@
+{
+ "updatedAt": "2026-10-22T11:07:53.312Z",
+ "league": "URU",
+ "fotmobId": 161,
+ "name": "Liga AUF Uruguaya",
+ "country": "URU",
+ "table": [
+  {
+   "rank": 1,
+   "team": "Liverpool FC",
+   "fotmobName": "Liverpool FC",
+   "fotmobId": 2219,
+   "group": null,
+   "played": 11,
+   "won": 7,
+   "drawn": 3,
+   "lost": 1,
+   "goals": "19-8",
+   "gd": 11,
+   "pts": 24
+  },
+  {
+   "rank": 2,
+   "team": "Nacional",
+   "fotmobName": "Nacional",
+   "fotmobId": 8304,
+   "group": null,
+   "played": 11,
+   "won": 7,
+   "drawn": 2,
+   "lost": 2,
+   "goals": "17-11",
+   "gd": 6,
+   "pts": 23
+  },
+  {
+   "rank": 3,
+   "team": "Montevideo City Torque",
+   "fotmobName": "Montevideo City Torque",
+   "fotmobId": 395613,
+   "group": null,
+   "played": 11,
+   "won": 7,
+   "drawn": 1,
+   "lost": 3,
+   "goals": "21-12",
+   "gd": 9,
+   "pts": 22
+  },
+  {
+   "rank": 4,
+   "team": "Club Atletico Peñarol",
+   "fotmobName": "Club Atletico Peñarol",
+   "fotmobId": 8450,
+   "group": null,
+   "played": 11,
+   "won": 6,
+   "drawn": 3,
+   "lost": 2,
+   "goals": "16-8",
+   "gd": 8,
+   "pts": 20
+  },
+  {
+   "rank": 5,
+   "team": "Deportivo Maldonado",
+   "fotmobName": "Deportivo Maldonado",
+   "fotmobId": 1833,
+   "group": null,
+   "played": 11,
+   "won": 5,
+   "drawn": 3,
+   "lost": 3,
+   "goals": "16-9",
+   "gd": 7,
+   "pts": 18
+  },
+  {
+   "rank": 6,
+   "team": "Cerro",
+   "fotmobName": "Cerro",
+   "fotmobId": 1836,
+   "group": null,
+   "played": 11,
+   "won": 5,
+   "drawn": 3,
+   "lost": 3,
+   "goals": "13-14",
+   "gd": -1,
+   "pts": 18
+  },
+  {
+   "rank": 7,
+   "team": "Juventud de las Piedras",
+   "fotmobName": "Juventud de las Piedras",
+   "fotmobId": 9883,
+   "group": null,
+   "played": 11,
+   "won": 4,
+   "drawn": 5,
+   "lost": 2,
+   "goals": "12-8",
+   "gd": 4,
+   "pts": 17
+  },
+  {
+   "rank": 8,
+   "team": "Club Atlético Progreso",
+   "fotmobName": "Club Atlético Progreso",
+   "fotmobId": 1838,
+   "group": null,
+   "played": 11,
+   "won": 5,
+   "drawn": 1,
+   "lost": 5,
+   "goals": "12-13",
+   "gd": -1,
+   "pts": 16
+  },
+  {
+   "rank": 9,
+   "team": "Racing",
+   "fotmobName": "Racing",
+   "fotmobId": 6043,
+   "group": null,
+   "played": 11,
+   "won": 4,
+   "drawn": 3,
+   "lost": 4,
+   "goals": "12-10",
+   "gd": 2,
+   "pts": 15
+  },
+  {
+   "rank": 10,
+   "team": "Boston River",
+   "fotmobName": "Boston River",
+   "fotmobId": 188313,
+   "group": null,
+   "played": 11,
+   "won": 4,
+   "drawn": 3,
+   "lost": 4,
+   "goals": "14-13",
+   "gd": 1,
+   "pts": 15
+  },
+  {
+   "rank": 11,
+   "team": "Montevideo Wanderers",
+   "fotmobName": "Montevideo Wanderers",
+   "fotmobId": 7863,
+   "group": null,
+   "played": 11,
+   "won": 4,
+   "drawn": 3,
+   "lost": 4,
+   "goals": "13-17",
+   "gd": -4,
+   "pts": 15
+  },
+  {
+   "rank": 12,
+   "team": "Danubio",
+   "fotmobName": "Danubio",
+   "fotmobId": 8562,
+   "group": null,
+   "played": 11,
+   "won": 2,
+   "drawn": 4,
+   "lost": 5,
+   "goals": "5-11",
+   "gd": -6,
+   "pts": 10
+  },
+  {
+   "rank": 13,
+   "team": "Albion",
+   "fotmobName": "Albion",
+   "fotmobId": 924934,
+   "group": null,
+   "played": 11,
+   "won": 3,
+   "drawn": 0,
+   "lost": 8,
+   "goals": "12-19",
+   "gd": -7,
+   "pts": 9
+  },
+  {
+   "rank": 14,
+   "team": "Defensor Sporting",
+   "fotmobName": "Defensor Sporting",
+   "fotmobId": 7796,
+   "group": null,
+   "played": 11,
+   "won": 2,
+   "drawn": 2,
+   "lost": 7,
+   "goals": "11-20",
+   "gd": -9,
+   "pts": 8
+  },
+  {
+   "rank": 15,
+   "team": "Cerro Largo",
+   "fotmobName": "Cerro Largo",
+   "fotmobId": 148967,
+   "group": null,
+   "played": 11,
+   "won": 0,
+   "drawn": 6,
+   "lost": 5,
+   "goals": "7-14",
+   "gd": -7,
+   "pts": 6
+  },
+  {
+   "rank": 16,
+   "team": "Central Español",
+   "fotmobName": "Central Español",
+   "fotmobId": 1834,
+   "group": null,
+   "played": 11,
+   "won": 1,
+   "drawn": 2,
+   "lost": 8,
+   "goals": "5-18",
+   "gd": -13,
+   "pts": 5
+  }
+ ],
+ "tableHistory": {
+  "2026-10-22": [
+   [
+    "Liverpool FC",
+    1,
+    11,
+    24,
+    11
+   ],
+   [
+    "Nacional",
+    2,
+    11,
+    23,
+    6
+   ],
+   [
+    "Montevideo City Torque",
+    3,
+    11,
+    22,
+    9
+   ],
+   [
+    "Club Atletico Peñarol",
+    4,
+    11,
+    20,
+    8
+   ],
+   [
+    "Deportivo Maldonado",
+    5,
+    11,
+    18,
+    7
+   ],
+   [
+    "Cerro",
+    6,
+    11,
+    18,
+    -1
+   ],
+   [
+    "Juventud de las Piedras",
+    7,
+    11,
+    17,
+    4
+   ],
+   [
+    "Club Atlético Progreso",
+    8,
+    11,
+    16,
+    -1
+   ],
+   [
+    "Racing",
+    9,
+    11,
+    15,
+    2
+   ],
+   [
+    "Boston River",
+    10,
+    11,
+    15,
+    1
+   ],
+   [
+    "Montevideo Wanderers",
+    11,
+    11,
+    15,
+    -4
+   ],
+   [
+    "Danubio",
+    12,
+    11,
+    10,
+    -6
+   ],
+   [
+    "Albion",
+    13,
+    11,
+    9,
+    -7
+   ],
+   [
+    "Defensor Sporting",
+    14,
+    11,
+    8,
+    -9
+   ],
+   [
+    "Cerro Largo",
+    15,
+    11,
+    6,
+    -7
+   ],
+   [
+    "Central Español",
+    16,
+    11,
+    5,
+    -13
+   ]
+  ]
+ }
+}

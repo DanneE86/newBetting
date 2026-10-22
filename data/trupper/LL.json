@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-20T17:08:46.118Z",
+ "updatedAt": "2026-10-22T11:07:53.312Z",
  "league": "LL",
  "fotmobId": 87,
  "source": "FotMob",
@@ -161,7 +161,7 @@
      "red": 0,
      "injury": {
       "typeId": "69",
-      "expectedReturn": "Late October 2026"
+      "expectedReturn": "Early November 2026"
      }
     },
     {
@@ -358,7 +358,10 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "69",
+      "expectedReturn": "Late November 2026"
+     }
     },
     {
      "id": 638622,
@@ -535,7 +538,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-20T17:08:46.118Z",
+   "fetchedAt": "2026-10-22T11:07:53.312Z",
    "coachHistory": [
     {
      "name": "Hans-Dieter Flick",
@@ -546,132 +549,132 @@
     "169718": {
      "name": "Wojciech Szczęsny",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "361757": {
      "name": "João Cancelo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "383971": {
      "name": "Dominik Livaković",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "449232": {
      "name": "Andreas Christensen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "576165": {
      "name": "Gabriel Jesus",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "614834": {
      "name": "Dani Olmo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "638622": {
      "name": "Frenkie de Jong",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "675088": {
      "name": "Rodri",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "696679": {
      "name": "Raphinha",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "705450": {
      "name": "Jules Koundé",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "906937": {
      "name": "Anthony Gordon",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "940573": {
      "name": "Eric García",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "959594": {
      "name": "Karim Adeyemi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1083323": {
      "name": "Pedri",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1167220": {
      "name": "Joan García",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1254166": {
      "name": "Alejandro Balde",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1279040": {
      "name": "Gavi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1315475": {
      "name": "Roony Bardghji",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1404415": {
      "name": "Fermín López",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1467236": {
      "name": "Lamine Yamal",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1532137": {
      "name": "Pau Cubarsí",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1573126": {
      "name": "Marc Bernal",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1598982": {
      "name": "Gerard Martín",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1656591": {
      "name": "Jesse Bisiwu",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1708842": {
      "name": "Hamza Abdelkarim",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1815149": {
      "name": "Xavi Espart",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1818299": {
      "name": "Eder Aller",
@@ -681,7 +684,7 @@
     "1821727": {
      "name": "Brian Fariñas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     }
    },
    "left": [
@@ -759,7 +762,7 @@
      "id": 602563,
      "name": "Marcos Llorente",
      "role": "defenders",
-     "position": "RB,CM,RM,CDM",
+     "position": "RB,CM,RM",
      "number": 14,
      "age": 31,
      "born": "1995-01-30",
@@ -1000,7 +1003,7 @@
      "country": "Nigeria",
      "height": 174,
      "value": 40177676,
-     "rating": 6.7,
+     "rating": 6.72,
      "goals": 1,
      "assists": 0,
      "penalties": 0,
@@ -1031,7 +1034,7 @@
      "id": 288406,
      "name": "Alejandro Grimaldo",
      "role": "midfielders",
-     "position": "LWB,LB,LM",
+     "position": "LWB,LB",
      "number": 22,
      "age": 31,
      "born": "1995-09-20",
@@ -1069,7 +1072,7 @@
      "id": 940976,
      "name": "Kang-In Lee",
      "role": "attackers",
-     "position": "ST,RW,RM,CAM,CM",
+     "position": "ST,RW,CAM,RM,CM",
      "number": 7,
      "age": 25,
      "born": "2001-02-19",
@@ -1082,7 +1085,10 @@
      "penalties": 0,
      "yellow": 2,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "130",
+      "expectedReturn": "Doubtful"
+     }
     },
     {
      "id": 440330,
@@ -1161,7 +1167,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-20T17:08:46.118Z",
+   "fetchedAt": "2026-10-22T11:07:53.312Z",
    "coachHistory": [
     {
      "name": "Diego Simeone",
@@ -1172,112 +1178,112 @@
     "177126": {
      "name": "Jan Oblak",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "184533": {
      "name": "Koke",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "288406": {
      "name": "Alejandro Grimaldo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "389050": {
      "name": "Juan Musso",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "440330": {
      "name": "Alexander Sørloth",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "602563": {
      "name": "Marcos Llorente",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "609516": {
      "name": "Robin Le Normand",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "690516": {
      "name": "Ademola Lookman",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "727897": {
      "name": "Dávid Hancko",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "789066": {
      "name": "Cristian Romero",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "939569": {
      "name": "Jonathan David",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "940976": {
      "name": "Kang-In Lee",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "942372": {
      "name": "Álex Baena",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "950199": {
      "name": "Morten Hjulmand",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "974753": {
      "name": "Julián Álvarez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1173678": {
      "name": "Johnny Cardoso",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1226147": {
      "name": "Giuliano Simeone",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1254394": {
      "name": "Obed Vargas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1297989": {
      "name": "Arnau Ortiz",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1323897": {
      "name": "Marc Pubill",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1338192": {
      "name": "Pablo Barrios",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1419969": {
      "name": "Rodrigo Mendoza",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1527038": {
      "name": "Aleksa Puric",
@@ -1287,12 +1293,12 @@
     "1531100": {
      "name": "Dani Martínez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1553402": {
      "name": "Salvi Esquivel",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1842319": {
      "name": "Álvaro Moreno",
@@ -1824,7 +1830,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-20T17:08:46.118Z",
+   "fetchedAt": "2026-10-22T11:07:53.312Z",
    "coachHistory": [
     {
      "name": "José Mourinho",
@@ -1835,132 +1841,132 @@
     "170323": {
      "name": "Thibaut Courtois",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "276738": {
      "name": "Antonio Rüdiger",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "488139": {
      "name": "Bernardo Silva",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "593118": {
      "name": "Denzel Dumfries",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "623537": {
      "name": "Ferland Mendy",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "701154": {
      "name": "Kylian Mbappé",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "743533": {
      "name": "Federico Valverde",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "750027": {
      "name": "Brahim Díaz",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "760712": {
      "name": "Trent Alexander-Arnold",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "800882": {
      "name": "Andriy Lunin",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "820140": {
      "name": "Ibrahima Konaté",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "844415": {
      "name": "Éder Militao",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "846033": {
      "name": "Vinícius Júnior",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "873289": {
      "name": "Marc Cucurella",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "895362": {
      "name": "Rodrygo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "914458": {
      "name": "Aurélien Tchouaméni",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1015185": {
      "name": "Eduardo Camavinga",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1077894": {
      "name": "Jude Bellingham",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1190025": {
      "name": "Alvaro Carreras",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1253890": {
      "name": "Arda Güler",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1367619": {
      "name": "Dean Huijsen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1406729": {
      "name": "Endrick",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1580528": {
      "name": "Raúl Asencio",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1610744": {
      "name": "Carlos Espí",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1735453": {
      "name": "Yan Diomande",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1796908": {
      "name": "Thiago Pitarch",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1807277": {
      "name": "Jorge Cestero",
@@ -2172,7 +2178,7 @@
      "red": 0,
      "injury": {
       "typeId": "87",
-      "expectedReturn": "Late October 2026"
+      "expectedReturn": "Early November 2026"
      }
     },
     {
@@ -2192,10 +2198,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": "70",
-      "expectedReturn": "Back in training"
-     }
+     "injury": null
     },
     {
      "id": 1436133,
@@ -2277,7 +2280,7 @@
      "id": 1315711,
      "name": "Nelson Deossa",
      "role": "midfielders",
-     "position": "CDM,CM,CAM,ST",
+     "position": "CDM,CM,CAM",
      "number": 18,
      "age": 26,
      "born": "2000-02-06",
@@ -2484,9 +2487,28 @@
      "yellow": 0,
      "red": 0,
      "injury": null
+    },
+    {
+     "id": 1793845,
+     "name": "José Antonio Morante",
+     "role": "attackers",
+     "position": "LW,RW",
+     "number": 27,
+     "age": 19,
+     "born": "2007-06-28",
+     "country": "Spain",
+     "height": null,
+     "value": null,
+     "rating": null,
+     "goals": 1,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
     }
    ],
-   "fetchedAt": "2026-10-20T17:08:46.118Z",
+   "fetchedAt": "2026-10-22T11:07:53.312Z",
    "coachHistory": [
     {
      "name": "Manuel Pellegrini",
@@ -2497,122 +2519,122 @@
     "191315": {
      "name": "Isco",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "195305": {
      "name": "Marc Bartra",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "420568": {
      "name": "Diego Llorente",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "427438": {
      "name": "Héctor Bellerín",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "531629": {
      "name": "Dani Ceballos",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "604126": {
      "name": "Giovani Lo Celso",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "640220": {
      "name": "Marc Roca",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "676533": {
      "name": "Aitor Ruibal",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "683450": {
      "name": "Pablo Fornals",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "743192": {
      "name": "Júnior Firpo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "750028": {
      "name": "Fran García",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "852071": {
      "name": "Juan Hernández",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "895954": {
      "name": "Álvaro Fidalgo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "942365": {
      "name": "Troy Parrott",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "967622": {
      "name": "Antony",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "999171": {
      "name": "Álvaro Vallés",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1022354": {
      "name": "Diego Conde",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1072200": {
      "name": "Rodrigo Riquelme",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1082930": {
      "name": "Iker Losada",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1188375": {
      "name": "Natan",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1209399": {
      "name": "Abdessamad Ezzalzouli",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1315711": {
      "name": "Nelson Deossa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1338016": {
      "name": "Valentín Gómez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1436133": {
      "name": "Facundo Bernal",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1580220": {
      "name": "Yanis Senhadji",
@@ -2622,7 +2644,7 @@
     "1580522": {
      "name": "Ángel Ortiz",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1674892": {
      "name": "Manu González",
@@ -2637,12 +2659,12 @@
     "1726794": {
      "name": "Dylan Vanney",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1793845": {
      "name": "José Antonio Morante",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
+     "lastSeen": "2026-10-22"
     },
     "1841015": {
      "name": "Carlos de Roa",
@@ -2671,12 +2693,6 @@
     {
      "id": "1693392",
      "name": "Ismael Barea",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    {
-     "id": "1793845",
-     "name": "José Antonio Morante",
      "firstSeen": "2026-09-28",
      "lastSeen": "2026-10-04"
     },
@@ -2741,7 +2757,7 @@
      "id": 1249284,
      "name": "Jon Aramburu",
      "role": "defenders",
-     "position": "RB,RWB",
+     "position": "RB",
      "number": 2,
      "age": 24,
      "born": "2002-07-23",
@@ -2756,14 +2772,14 @@
      "red": 0,
      "injury": {
       "typeId": "87",
-      "expectedReturn": "Late October 2026"
+      "expectedReturn": "Early November 2026"
      }
     },
     {
      "id": 999159,
      "name": "Aihen Muñoz",
      "role": "defenders",
-     "position": "LB,CB",
+     "position": "LB",
      "number": 3,
      "age": 29,
      "born": "1997-08-16",
@@ -3012,7 +3028,7 @@
      "red": 0,
      "injury": {
       "typeId": "101",
-      "expectedReturn": "Back in training"
+      "expectedReturn": "Early November 2026"
      }
     },
     {
@@ -3038,7 +3054,7 @@
      "id": 1002618,
      "name": "Ander Barrenetxea",
      "role": "attackers",
-     "position": "LW,RW,LM,RM,ST",
+     "position": "LW,RW,LM,RM",
      "number": 7,
      "age": 24,
      "born": "2001-12-27",
@@ -3206,7 +3222,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-20T17:08:46.118Z",
+   "fetchedAt": "2026-10-22T11:07:53.312Z",
    "coachHistory": [
     {
      "name": "Pellegrino Matarazzo",
@@ -3217,107 +3233,107 @@
     "536455": {
      "name": "Gonçalo Guedes",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "616539": {
      "name": "Alex Remiro",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "636570": {
      "name": "Álvaro Odriozola",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "678234": {
      "name": "Mikel Oyarzabal",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "698653": {
      "name": "Igor Zubeldia",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "708890": {
      "name": "Carlos Soler",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "730901": {
      "name": "Yangel Herrera",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "844477": {
      "name": "Sergio Gómez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "848289": {
      "name": "Takefusa Kubo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "959597": {
      "name": "Luka Sučić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "999159": {
      "name": "Aihen Muñoz",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1002618": {
      "name": "Ander Barrenetxea",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1097229": {
      "name": "Orri Óskarsson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1112072": {
      "name": "Jon Pacheco",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1175610": {
      "name": "Arsen Zakharyan",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1210647": {
      "name": "Beñat Turrientes",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1217043": {
      "name": "Unai Marrero",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1249284": {
      "name": "Jon Aramburu",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1293912": {
      "name": "Pablo Marín",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1323827": {
      "name": "Jon Gorrotxategi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1426170": {
      "name": "Mamadou Sarr",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1436231": {
      "name": "Arkaitz Mariezkurrena",
@@ -3327,12 +3343,12 @@
     "1490110": {
      "name": "Héctor Fort",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1523234": {
      "name": "Jon Martín",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1529105": {
      "name": "Aitor Fraga",
@@ -3342,17 +3358,17 @@
     "1697334": {
      "name": "Luken Beitia",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1721611": {
      "name": "Álex Marchal",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1724551": {
      "name": "Job Ochieng",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     }
    },
    "left": [
@@ -3565,7 +3581,7 @@
      "red": 0,
      "injury": {
       "typeId": "87",
-      "expectedReturn": "Late October 2026"
+      "expectedReturn": "Early November 2026"
      }
     },
     {
@@ -3863,7 +3879,7 @@
      }
     }
    ],
-   "fetchedAt": "2026-10-20T17:08:46.118Z",
+   "fetchedAt": "2026-10-22T11:07:53.312Z",
    "coachHistory": [
     {
      "name": "Luis García",
@@ -3874,92 +3890,92 @@
     "304355": {
      "name": "Odysseas Vlachodimos",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "361751": {
      "name": "Fábio Cardoso",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "659490": {
      "name": "Gabriel Suazo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "678192": {
      "name": "Jon Guridi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "753593": {
      "name": "Marcão",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "837270": {
      "name": "Chidera Ejuke",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "860752": {
      "name": "Rubén Vargas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "926643": {
      "name": "Alfon González",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "942358": {
      "name": "Félix Correia",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "953958": {
      "name": "Giorgi Kochorashvili",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "954621": {
      "name": "Youssouf Fofana",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "971790": {
      "name": "Lucien Agoumé",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1102289": {
      "name": "Juan Iglesias",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1130991": {
      "name": "Isaac Romero",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1132607": {
      "name": "Peque Fernández",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1244272": {
      "name": "Arouna Sangante",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1281461": {
      "name": "José Ángel Carmona",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1327489": {
      "name": "Kike Salas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1334767": {
      "name": "Andrés Lopez",
@@ -3969,37 +3985,37 @@
     "1398377": {
      "name": "Lucas Stassin",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1399218": {
      "name": "Robbie Ure",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1428849": {
      "name": "Manu Bueno",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1447089": {
      "name": "Julio Díaz",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1484851": {
      "name": "Fran González",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1783498": {
      "name": "Nico Guillen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1797904": {
      "name": "Miguel Sierra",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "2336016": {
      "name": "Mario Diaz",
@@ -4088,7 +4104,7 @@
      "id": 1403692,
      "name": "Youssef Enríquez",
      "role": "defenders",
-     "position": "LB,LM",
+     "position": "LB",
      "number": 3,
      "age": 21,
      "born": "2005-10-07",
@@ -4509,7 +4525,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-20T17:08:46.118Z",
+   "fetchedAt": "2026-10-22T11:07:53.312Z",
    "coachHistory": [
     {
      "name": "Quique Sánchez Flores",
@@ -4520,97 +4536,97 @@
     "282281": {
      "name": "Denis Suárez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "360918": {
      "name": "Jonny Otto",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "518525": {
      "name": "Mariano Díaz",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "530468": {
      "name": "Antonio Sivera",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "561164": {
      "name": "Lucas Boyé",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "637756": {
      "name": "Carles Aleñá",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "640123": {
      "name": "Toni Martínez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "799914": {
      "name": "Carlos Protesoni",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "845067": {
      "name": "Facundo Garcés",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "845998": {
      "name": "Antonio Blanco",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "860314": {
      "name": "Nahuel Tenaglia",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "873827": {
      "name": "Ander Guevara",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1056461": {
      "name": "Ville Koski",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1136937": {
      "name": "Adrián Rodriguez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1175969": {
      "name": "Hugo Novoa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1184663": {
      "name": "Miguel Rodríguez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1200941": {
      "name": "Abderrahman Rebbach",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1238154": {
      "name": "Pablo Ibánez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1249665": {
      "name": "Nicolás Valentini",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1326041": {
      "name": "Tomás Mendes",
@@ -4620,17 +4636,17 @@
     "1403692": {
      "name": "Youssef Enríquez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1426189": {
      "name": "Mikel Rodríguez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1431307": {
      "name": "Selu Diallo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1467806": {
      "name": "Grégoire Świderski",
@@ -4640,7 +4656,7 @@
     "1553663": {
      "name": "Aitor Mañas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1559845": {
      "name": "Paco Sanz",
@@ -4650,12 +4666,12 @@
     "1563022": {
      "name": "Ángel Pérez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1678688": {
      "name": "Lander Pinillos",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1721181": {
      "name": "Xanet Oláiz",
@@ -4838,7 +4854,7 @@
      "id": 1132355,
      "name": "Álvaro Núñez",
      "role": "defenders",
-     "position": "CB,RB,CM,RM,RWB",
+     "position": "CB,RM,RB,CM",
      "number": 15,
      "age": 26,
      "born": "2000-07-07",
@@ -4851,7 +4867,10 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "69",
+      "expectedReturn": "Late November 2026"
+     }
     },
     {
      "id": 1578176,
@@ -4863,7 +4882,7 @@
      "born": "2004-03-25",
      "country": "Spain",
      "height": 185,
-     "value": null,
+     "value": 5488462,
      "rating": 6.95,
      "goals": 0,
      "assists": 0,
@@ -5128,7 +5147,7 @@
      "red": 0,
      "injury": {
       "typeId": "69",
-      "expectedReturn": "Late October 2026"
+      "expectedReturn": "Early November 2026"
      }
     },
     {
@@ -5208,7 +5227,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-20T17:08:46.118Z",
+   "fetchedAt": "2026-10-22T11:07:53.312Z",
    "coachHistory": [
     {
      "name": "Claudio Giráldez",
@@ -5219,92 +5238,92 @@
     "174472": {
      "name": "Iago Aspas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "196169": {
      "name": "Marcos Alonso",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "497662": {
      "name": "Carl Starfelt",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "609505": {
      "name": "Borja Iglesias",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "671686": {
      "name": "Aleix Febas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "681213": {
      "name": "Ionuț Radu",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "695062": {
      "name": "Javi Galán",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "786630": {
      "name": "Iván Villar",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "866967": {
      "name": "Altay Bayındır",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1020026": {
      "name": "Sebastián Cáceres",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1102732": {
      "name": "Ferrán Jutglà",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1106742": {
      "name": "Sergio Carreira",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1109046": {
      "name": "Ilaix Moriba",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1132355": {
      "name": "Álvaro Núñez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1184693": {
      "name": "Couhaib Driouech",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1226783": {
      "name": "Hugo González",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1272740": {
      "name": "Williot Swedberg",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1308414": {
      "name": "Hugo Álvarez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1310118": {
      "name": "Stefan Bajčetić",
@@ -5314,37 +5333,37 @@
     "1310440": {
      "name": "Javi Rueda",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1322858": {
      "name": "Pablo Durán",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1359911": {
      "name": "Miguel Román",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1379196": {
      "name": "Jones El-Abdellaoui",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1435439": {
      "name": "Javi Rodríguez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1555492": {
      "name": "Abdoulaye Faye",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1578176": {
      "name": "Yoel Lago",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1825995": {
      "name": "Hugo Burcio",
@@ -5777,7 +5796,7 @@
      "red": 0,
      "injury": {
       "typeId": "87",
-      "expectedReturn": "Doubtful"
+      "expectedReturn": "Early November 2026"
      }
     },
     {
@@ -5799,7 +5818,7 @@
      "red": 0,
      "injury": {
       "typeId": "70",
-      "expectedReturn": "Mid November 2026"
+      "expectedReturn": "Late November 2026"
      }
     },
     {
@@ -5856,7 +5875,7 @@
      "born": "2005-05-23",
      "country": "Spain",
      "height": 169,
-     "value": null,
+     "value": 7236531,
      "rating": 6.26,
      "goals": 0,
      "assists": 0,
@@ -5923,7 +5942,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-20T17:08:46.118Z",
+   "fetchedAt": "2026-10-22T11:07:53.312Z",
    "coachHistory": [
     {
      "name": "Antonio Hidalgo",
@@ -5934,72 +5953,72 @@
     "150565": {
      "name": "Pierre-Emerick Aubameyang",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "260659": {
      "name": "Ximo Navarro",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "416409": {
      "name": "Germán Parreno",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "474589": {
      "name": "José Giménez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "493647": {
      "name": "Adama Traoré",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "603537": {
      "name": "Angeliño",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "796781": {
      "name": "Álvaro Fernández",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "800891": {
      "name": "Miguel Loureiro",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "970566": {
      "name": "Riki Rodríguez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "988178": {
      "name": "Diego Villares",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1029029": {
      "name": "Zakaria Eddahchouri",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1050828": {
      "name": "Mario Soriano",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1077977": {
      "name": "Giacomo Quagliata",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1120002": {
      "name": "Arnau Comas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1159522": {
      "name": "Alberto Sánchez",
@@ -6009,32 +6028,32 @@
     "1187702": {
      "name": "Leo Román",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1204447": {
      "name": "Luismi Cruz",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1256478": {
      "name": "Adrià Altimira",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1319204": {
      "name": "Yeremay Hernández",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1323483": {
      "name": "Yayo",
      "firstSeen": "2026-10-20",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1332025": {
      "name": "Lucas Noubi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1336022": {
      "name": "Rubén Lopez",
@@ -6044,17 +6063,17 @@
     "1368655": {
      "name": "David Mella",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1372810": {
      "name": "Dani Barcia",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1384883": {
      "name": "Marc Casadó",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1412921": {
      "name": "Damián Canedo",
@@ -6064,7 +6083,7 @@
     "1425989": {
      "name": "Lorenzo Amatucci",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1560023": {
      "name": "Kevin Sánchez",
@@ -6074,7 +6093,7 @@
     "1621150": {
      "name": "Jonathan Asp",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1640998": {
      "name": "Iker Vidal",
@@ -6084,7 +6103,7 @@
     "1690831": {
      "name": "Bil Nsongo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1693771": {
      "name": "Samu Fernández",
@@ -6094,7 +6113,7 @@
     "1711969": {
      "name": "Bright Ede",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1712235": {
      "name": "Quique Teijo",
@@ -6109,7 +6128,7 @@
     "1821442": {
      "name": "Noé",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     }
    },
    "left": [
@@ -6475,7 +6494,7 @@
      "red": 0,
      "injury": {
       "typeId": "42",
-      "expectedReturn": "Late October 2026"
+      "expectedReturn": "Early November 2026"
      }
     },
     {
@@ -6590,12 +6609,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "26/10/2026",
-      "name": "Torn thigh muscle",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 696263,
@@ -6616,7 +6630,7 @@
      "red": 0,
      "injury": {
       "typeId": "69",
-      "expectedReturn": "Late October 2026"
+      "expectedReturn": "Early November 2026"
      }
     },
     {
@@ -6639,7 +6653,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-20T17:08:46.118Z",
+   "fetchedAt": "2026-10-22T11:07:53.312Z",
    "coachHistory": [
     {
      "name": "Luis Ramis",
@@ -6654,87 +6668,87 @@
     "213471": {
      "name": "Aitor Fernández",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "251269": {
      "name": "Ante Budimir",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "262592": {
      "name": "Moi Gómez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "303879": {
      "name": "Lucas Torró",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "384413": {
      "name": "Rubén Garcia",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "488718": {
      "name": "Diego Rico",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "574624": {
      "name": "Enrique Barja",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "683762": {
      "name": "Sergio Herrera",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "696263": {
      "name": "Romain Del Castillo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "763970": {
      "name": "Valentin Rosier",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "814663": {
      "name": "Alejandro Catena",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "921825": {
      "name": "Jon Moncayola",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1054786": {
      "name": "Aimar Oroz",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1094778": {
      "name": "Raúl García",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1098365": {
      "name": "Jorge Herrando",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1169596": {
      "name": "Raúl Moro",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1187734": {
      "name": "Flavien Boyomo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1205430": {
      "name": "Ander Yoldi",
@@ -6744,37 +6758,37 @@
     "1242139": {
      "name": "Jonathan Dubasin",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1323398": {
      "name": "Abel Bretones",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1323863": {
      "name": "Iker Muñoz",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1431121": {
      "name": "Asier Osambela",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1603025": {
      "name": "Rockson Yeboah",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1614872": {
      "name": "Iñigo Arguibide",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1682298": {
      "name": "Unai Santos",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1762938": {
      "name": "Rafa Fernández",
@@ -6797,23 +6811,23 @@
     }
    ]
   },
-  "Ath Bilbao": {
-   "fotmobName": "Athletic Club",
-   "fotmobId": 8315,
-   "coach": "Edin Terzić",
+  "Levante": {
+   "fotmobName": "Levante",
+   "fotmobId": 8581,
+   "coach": "Luís Castro",
    "players": [
     {
-     "id": 660625,
-     "name": "Unai Simón",
+     "id": 1237455,
+     "name": "Pablo Campos",
      "role": "keepers",
      "position": "GK",
      "number": 1,
-     "age": 29,
-     "born": "1997-06-11",
+     "age": 24,
+     "born": "2002-04-28",
      "country": "Spain",
-     "height": 190,
-     "value": 21292139,
-     "rating": 7.1,
+     "height": 188,
+     "value": 1017277,
+     "rating": null,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -6822,17 +6836,17 @@
      "injury": null
     },
     {
-     "id": 1401997,
-     "name": "Álex Padilla",
+     "id": 185644,
+     "name": "Mathew Ryan",
      "role": "keepers",
      "position": "GK",
      "number": 13,
-     "age": 23,
-     "born": "2003-09-01",
-     "country": "Mexico",
-     "height": 185,
-     "value": null,
-     "rating": null,
+     "age": 34,
+     "born": "1992-04-08",
+     "country": "Australia",
+     "height": 184,
+     "value": 1193242,
+     "rating": 6.95,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -6841,58 +6855,36 @@
      "injury": null
     },
     {
-     "id": 1425770,
-     "name": "Unai Eguiluz",
+     "id": 210683,
+     "name": "Aïssa Mandi",
      "role": "defenders",
      "position": "CB",
-     "number": null,
-     "age": 24,
-     "born": "2002-03-19",
-     "country": "Spain",
+     "number": 2,
+     "age": 35,
+     "born": "1991-10-22",
+     "country": "Algeria",
      "height": 186,
-     "value": 586218,
-     "rating": null,
+     "value": 1319114,
+     "rating": 6.79,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
-     "yellow": 0,
+     "yellow": 2,
      "red": 0,
-     "injury": {
-      "typeId": "76",
-      "expectedReturn": "Mid January 2027"
-     }
+     "injury": null
     },
     {
-     "id": 940743,
-     "name": "Daniel Vivian",
+     "id": 1780239,
+     "name": "Ifeanyi Ndukwe",
      "role": "defenders",
-     "position": "CB,RB",
+     "position": "CB",
      "number": 3,
-     "age": 27,
-     "born": "1999-07-05",
-     "country": "Spain",
-     "height": 183,
-     "value": 24260917,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1191407,
-     "name": "Aitor Paredes",
-     "role": "defenders",
-     "position": "CB",
-     "number": 4,
-     "age": 26,
-     "born": "2000-04-29",
-     "country": "Spain",
-     "height": 186,
-     "value": 12170982,
-     "rating": 7.16,
+     "age": 18,
+     "born": "2008-03-03",
+     "country": "Austria",
+     "height": 198,
+     "value": 3551126,
+     "rating": 6.66,
      "goals": 1,
      "assists": 0,
      "penalties": 0,
@@ -6901,18 +6893,192 @@
      "injury": null
     },
     {
-     "id": 639450,
-     "name": "Yeray Álvarez",
+     "id": 952528,
+     "name": "Adrián De La Fuente",
      "role": "defenders",
      "position": "CB",
-     "number": 5,
-     "age": 31,
-     "born": "1995-01-24",
+     "number": 4,
+     "age": 27,
+     "born": "1999-02-26",
      "country": "Spain",
-     "height": 183,
-     "value": 978545,
-     "rating": 6.76,
+     "height": 178,
+     "value": 2355976,
+     "rating": 6.96,
+     "goals": 2,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 3,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1617146,
+     "name": "Jorge Cabello",
+     "role": "defenders",
+     "position": "CB",
+     "number": 14,
+     "age": 22,
+     "born": "2004-04-25",
+     "country": "Spain",
+     "height": 180,
+     "value": 1229792,
+     "rating": null,
      "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1695701,
+     "name": "Axel Tape",
+     "role": "defenders",
+     "position": "CDM",
+     "number": 16,
+     "age": 19,
+     "born": "2007-08-10",
+     "country": "France",
+     "height": 180,
+     "value": 12967026,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 443966,
+     "name": "Jeremy Toljan",
+     "role": "defenders",
+     "position": "RB",
+     "number": 22,
+     "age": 32,
+     "born": "1994-08-08",
+     "country": "Germany",
+     "height": 182,
+     "value": 1463518,
+     "rating": 6.21,
+     "goals": 0,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1052330,
+     "name": "Manuel Sánchez",
+     "role": "defenders",
+     "position": "LB",
+     "number": 23,
+     "age": 26,
+     "born": "2000-08-24",
+     "country": "Spain",
+     "height": 179,
+     "value": 7091832,
+     "rating": 6.75,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1800611,
+     "name": "Nacho Pérez",
+     "role": "defenders",
+     "position": "RB",
+     "number": 29,
+     "age": 18,
+     "born": "2008-08-29",
+     "country": "Spain",
+     "height": 176,
+     "value": 1180638,
+     "rating": 6.6,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 2141146,
+     "name": "Marc Santos",
+     "role": "defenders",
+     "position": "Defender",
+     "number": 33,
+     "age": 15,
+     "born": "2010-11-01",
+     "country": "Spain",
+     "height": null,
+     "value": null,
+     "rating": 6.35,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1254218,
+     "name": "Hugo Sotelo",
+     "role": "midfielders",
+     "position": "CM",
+     "number": 5,
+     "age": 22,
+     "born": "2003-12-19",
+     "country": "Spain",
+     "height": 180,
+     "value": 7217112,
+     "rating": 6.27,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": {
+      "typeId": "124",
+      "expectedReturn": "Early November 2026"
+     }
+    },
+    {
+     "id": 1481503,
+     "name": "Dani Requena",
+     "role": "midfielders",
+     "position": "CM,CAM,CDM",
+     "number": 6,
+     "age": 22,
+     "born": "2004-02-12",
+     "country": "Spain",
+     "height": 186,
+     "value": 1231302,
+     "rating": 6.97,
+     "goals": 1,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1131957,
+     "name": "Jon Olasagasti",
+     "role": "midfielders",
+     "position": "CAM,CM,LM,CDM",
+     "number": 8,
+     "age": 26,
+     "born": "2000-08-16",
+     "country": "Spain",
+     "height": 176,
+     "value": 2097167,
+     "rating": 6.87,
+     "goals": 1,
      "assists": 1,
      "penalties": 0,
      "yellow": 0,
@@ -6920,54 +7086,35 @@
      "injury": null
     },
     {
-     "id": 1037537,
-     "name": "Jesús Areso",
-     "role": "defenders",
-     "position": "RB",
-     "number": 12,
-     "age": 27,
-     "born": "1999-07-02",
-     "country": "Spain",
-     "height": 182,
-     "value": 4982739,
-     "rating": 6.52,
-     "goals": 0,
-     "assists": 0,
+     "id": 1332540,
+     "name": "Enzo Bardeli",
+     "role": "midfielders",
+     "position": "CAM,CM",
+     "number": 18,
+     "age": 25,
+     "born": "2001-04-11",
+     "country": "France",
+     "height": 173,
+     "value": 6504234,
+     "rating": 6.71,
+     "goals": 1,
+     "assists": 1,
      "penalties": 0,
-     "yellow": 1,
+     "yellow": 0,
      "red": 0,
      "injury": null
     },
     {
-     "id": 411617,
-     "name": "Aymeric Laporte",
-     "role": "defenders",
-     "position": "CB",
-     "number": 14,
-     "age": 32,
-     "born": "1994-05-27",
+     "id": 914401,
+     "name": "Oriol Rey",
+     "role": "midfielders",
+     "position": "CM,CDM",
+     "number": 20,
+     "age": 28,
+     "born": "1998-02-25",
      "country": "Spain",
-     "height": 191,
-     "value": 7464200,
-     "rating": 7.04,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1427819,
-     "name": "Hugo Rincón",
-     "role": "defenders",
-     "position": "RB",
-     "number": 15,
-     "age": 23,
-     "born": "2003-01-27",
-     "country": "Spain",
-     "height": 185,
-     "value": 4113293,
+     "height": 177,
+     "value": 1007879,
      "rating": 6.43,
      "goals": 0,
      "assists": 0,
@@ -6977,115 +7124,93 @@
      "injury": null
     },
     {
-     "id": 80295,
-     "name": "Yuri Berchiche",
-     "role": "defenders",
-     "position": "LB,CB",
-     "number": 17,
-     "age": 36,
-     "born": "1990-02-10",
-     "country": "Spain",
-     "height": 181,
-     "value": 1070346,
-     "rating": 7.01,
+     "id": 1748952,
+     "name": "Jorge de Asís",
+     "role": "attackers",
+     "position": "Attacker",
+     "number": null,
+     "age": 20,
+     "born": "2006-01-29",
+     "country": "Argentina",
+     "height": null,
+     "value": 426741,
+     "rating": null,
      "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1286471,
+     "name": "Roger Brugué",
+     "role": "attackers",
+     "position": "RW,LM",
+     "number": 7,
+     "age": 29,
+     "born": "1996-11-04",
+     "country": "Spain",
+     "height": 174,
+     "value": 1519475,
+     "rating": 7.39,
+     "goals": 5,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1209441,
+     "name": "Iván Romero",
+     "role": "attackers",
+     "position": "ST,LW,CAM",
+     "number": 9,
+     "age": 25,
+     "born": "2001-04-10",
+     "country": "Spain",
+     "height": 172,
+     "value": 8770525,
+     "rating": 7.04,
+     "goals": 3,
      "assists": 0,
      "penalties": 0,
      "yellow": 2,
-     "red": 1,
-     "injury": null
-    },
-    {
-     "id": 1327006,
-     "name": "Johaneko Louis-Jean",
-     "role": "defenders",
-     "position": "LB",
-     "number": 31,
-     "age": 22,
-     "born": "2004-06-28",
-     "country": "France",
-     "height": 175,
-     "value": 163378,
-     "rating": 6.82,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
      "red": 0,
      "injury": null
     },
     {
-     "id": 1229176,
-     "name": "Beñat Prados",
-     "role": "midfielders",
-     "position": "CDM",
-     "number": 6,
-     "age": 25,
-     "born": "2001-02-08",
-     "country": "Spain",
-     "height": 180,
-     "value": 16577001,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 950545,
-     "name": "Oihan Sancet",
-     "role": "midfielders",
-     "position": "CAM",
-     "number": 8,
-     "age": 26,
-     "born": "2000-04-25",
-     "country": "Spain",
-     "height": 188,
-     "value": 31457451,
-     "rating": 6.97,
-     "goals": 1,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": {
-      "typeId": "101",
-      "expectedReturn": "Early November 2026"
-     }
-    },
-    {
-     "id": 282462,
-     "name": "Íñigo Ruíz de Galarreta",
-     "role": "midfielders",
-     "position": "CDM",
-     "number": 16,
-     "age": 33,
-     "born": "1993-08-06",
-     "country": "Spain",
-     "height": 174,
-     "value": 1451138,
-     "rating": 6.89,
+     "id": 1302821,
+     "name": "Petar Ratkov",
+     "role": "attackers",
+     "position": "ST",
+     "number": 10,
+     "age": 23,
+     "born": "2003-08-18",
+     "country": "Serbia",
+     "height": 193,
+     "value": 10796849,
+     "rating": 6.35,
      "goals": 0,
      "assists": 1,
      "penalties": 0,
-     "yellow": 3,
+     "yellow": 0,
      "red": 0,
      "injury": null
     },
     {
-     "id": 1553099,
-     "name": "Mikel Jauregizar",
-     "role": "midfielders",
-     "position": "CDM",
-     "number": 18,
-     "age": 22,
-     "born": "2003-11-13",
-     "country": "Spain",
-     "height": 177,
-     "value": 35553140,
-     "rating": 6.58,
+     "id": 1836083,
+     "name": "Yanis Musuayi",
+     "role": "attackers",
+     "position": "ST",
+     "number": 11,
+     "age": 19,
+     "born": "2007-06-26",
+     "country": "Belgium",
+     "height": 190,
+     "value": 1240662,
+     "rating": 6.12,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -7094,77 +7219,58 @@
      "injury": null
     },
     {
-     "id": 1425769,
-     "name": "Alejandro Rego",
-     "role": "midfielders",
-     "position": "CDM",
-     "number": 20,
+     "id": 977618,
+     "name": "Víctor García",
+     "role": "attackers",
+     "position": "RW,RM,RB",
+     "number": 17,
+     "age": 29,
+     "born": "1997-09-16",
+     "country": "Spain",
+     "height": 180,
+     "value": 990022,
+     "rating": 6.19,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1392779,
+     "name": "Etta Eyong",
+     "role": "attackers",
+     "position": "ST",
+     "number": 21,
      "age": 23,
-     "born": "2003-06-11",
-     "country": "Spain",
-     "height": 192,
-     "value": 5208948,
-     "rating": 6.39,
-     "goals": 0,
-     "assists": 0,
+     "born": "2003-10-14",
+     "country": "Cameroon",
+     "height": 181,
+     "value": 18212511,
+     "rating": 6.53,
+     "goals": 1,
+     "assists": 1,
      "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1425173,
-     "name": "Beñat Gerenabarrena",
-     "role": "midfielders",
-     "position": "CM,CDM,RB",
-     "number": 24,
-     "age": 23,
-     "born": "2003-03-29",
-     "country": "Spain",
-     "height": 173,
-     "value": 1065949,
-     "rating": 6.75,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 3,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1355668,
-     "name": "Álvaro Djaló",
-     "role": "midfielders",
-     "position": "RW,CAM,RM,LM",
-     "number": 25,
-     "age": 27,
-     "born": "1999-08-16",
-     "country": "Guinea-Bissau",
-     "height": 176,
-     "value": 3339496,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
+     "yellow": 1,
      "red": 0,
      "injury": {
-      "typeId": "121",
+      "typeId": "69",
       "expectedReturn": "Doubtful"
      }
     },
     {
-     "id": 1585726,
-     "name": "Peio Canales",
-     "role": "midfielders",
-     "position": "CAM,CDM",
-     "number": 28,
-     "age": 21,
-     "born": "2005-01-17",
-     "country": "Spain",
+     "id": 1460063,
+     "name": "Thiago Fernández",
+     "role": "attackers",
+     "position": "LW,LM",
+     "number": 24,
+     "age": 22,
+     "born": "2004-04-03",
+     "country": "Argentina",
      "height": 175,
-     "value": 5691409,
-     "rating": 6.42,
+     "value": 6381726,
+     "rating": 6.86,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -7173,312 +7279,190 @@
      "injury": null
     },
     {
-     "id": 574629,
-     "name": "Alex Berenguer",
+     "id": 1649293,
+     "name": "Paco Cortés",
      "role": "attackers",
-     "position": "RW,LW,CAM",
-     "number": 7,
-     "age": 31,
-     "born": "1995-07-04",
-     "country": "Spain",
-     "height": 175,
-     "value": 2244288,
-     "rating": 6.77,
-     "goals": 1,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 604105,
-     "name": "Iñaki Williams",
-     "role": "attackers",
-     "position": "RW,ST,LW",
-     "number": 9,
-     "age": 32,
-     "born": "1994-06-15",
-     "country": "Ghana",
-     "height": 186,
-     "value": 11338396,
-     "rating": 6.54,
-     "goals": 1,
-     "assists": 2,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1202110,
-     "name": "Nico Williams",
-     "role": "attackers",
-     "position": "LW",
-     "number": 10,
-     "age": 24,
-     "born": "2002-07-12",
-     "country": "Spain",
-     "height": 181,
-     "value": 67303020,
-     "rating": 6.99,
-     "goals": 1,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 711231,
-     "name": "Gorka Guruzeta",
-     "role": "attackers",
-     "position": "ST,CAM",
-     "number": 11,
-     "age": 30,
-     "born": "1996-09-12",
-     "country": "Spain",
-     "height": 188,
-     "value": 5006473,
-     "rating": 6.11,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 2,
-     "red": 0,
-     "injury": {
-      "typeId": "76",
-      "expectedReturn": "Out for season"
-     }
-    },
-    {
-     "id": 1425206,
-     "name": "Maroan Sannadi",
-     "role": "attackers",
-     "position": "ST",
-     "number": 21,
-     "age": 25,
-     "born": "2001-02-01",
-     "country": "Morocco",
-     "height": 192,
-     "value": 2862011,
-     "rating": 6.34,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1203614,
-     "name": "Nico Serrano",
-     "role": "attackers",
-     "position": "RW",
-     "number": 22,
-     "age": 23,
-     "born": "2003-03-05",
-     "country": "Spain",
-     "height": 176,
-     "value": 1528516,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1011117,
-     "name": "Robert Navarro",
-     "role": "attackers",
-     "position": "LW,RW",
-     "number": 23,
-     "age": 24,
-     "born": "2002-04-12",
+     "position": "LW,LM",
+     "number": 27,
+     "age": 19,
+     "born": "2007-08-11",
      "country": "Spain",
      "height": 178,
-     "value": 7450035,
-     "rating": 7.13,
-     "goals": 2,
+     "value": 2893146,
+     "rating": 6.14,
+     "goals": 0,
      "assists": 0,
      "penalties": 0,
-     "yellow": 1,
+     "yellow": 0,
      "red": 0,
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-20T17:08:46.118Z",
+   "fetchedAt": "2026-10-22T11:07:53.312Z",
    "coachHistory": [
     {
-     "name": "Edin Terzić",
+     "name": "Luís Castro",
      "firstSeen": "2026-09-28"
     }
    ],
    "history": {
-    "80295": {
-     "name": "Yuri Berchiche",
+    "185644": {
+     "name": "Mathew Ryan",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
-    "282462": {
-     "name": "Íñigo Ruíz de Galarreta",
+    "210683": {
+     "name": "Aïssa Mandi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
-    "411617": {
-     "name": "Aymeric Laporte",
+    "443966": {
+     "name": "Jeremy Toljan",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
-    "574629": {
-     "name": "Alex Berenguer",
+    "914401": {
+     "name": "Oriol Rey",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
-    "604105": {
-     "name": "Iñaki Williams",
+    "952528": {
+     "name": "Adrián De La Fuente",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
-    "639450": {
-     "name": "Yeray Álvarez",
+    "977618": {
+     "name": "Víctor García",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
-    "660625": {
-     "name": "Unai Simón",
+    "1052330": {
+     "name": "Manuel Sánchez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
-    "711231": {
-     "name": "Gorka Guruzeta",
+    "1131957": {
+     "name": "Jon Olasagasti",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
-    "940743": {
-     "name": "Daniel Vivian",
+    "1209441": {
+     "name": "Iván Romero",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
-    "950545": {
-     "name": "Oihan Sancet",
+    "1237455": {
+     "name": "Pablo Campos",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
-    "1011117": {
-     "name": "Robert Navarro",
+    "1254218": {
+     "name": "Hugo Sotelo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
-    "1037537": {
-     "name": "Jesús Areso",
+    "1286471": {
+     "name": "Roger Brugué",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
-    "1191407": {
-     "name": "Aitor Paredes",
+    "1302821": {
+     "name": "Petar Ratkov",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
-    "1202110": {
-     "name": "Nico Williams",
+    "1332540": {
+     "name": "Enzo Bardeli",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
-    "1203614": {
-     "name": "Nico Serrano",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
-    },
-    "1229176": {
-     "name": "Beñat Prados",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
-    },
-    "1327006": {
-     "name": "Johaneko Louis-Jean",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
-    },
-    "1355668": {
-     "name": "Álvaro Djaló",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
-    },
-    "1401997": {
-     "name": "Álex Padilla",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
-    },
-    "1425173": {
-     "name": "Beñat Gerenabarrena",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
-    },
-    "1425206": {
-     "name": "Maroan Sannadi",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
-    },
-    "1425769": {
-     "name": "Alejandro Rego",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
-    },
-    "1425770": {
-     "name": "Unai Eguiluz",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
-    },
-    "1427819": {
-     "name": "Hugo Rincón",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
-    },
-    "1553099": {
-     "name": "Mikel Jauregizar",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
-    },
-    "1585726": {
-     "name": "Peio Canales",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
-    },
-    "1637566": {
-     "name": "Asier Hierro",
+    "1366374": {
+     "name": "Álex Primo",
      "firstSeen": "2026-09-28",
      "lastSeen": "2026-10-04"
     },
-    "1698682": {
-     "name": "Efe Korkut",
+    "1392779": {
+     "name": "Etta Eyong",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-22"
+    },
+    "1460063": {
+     "name": "Thiago Fernández",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-22"
+    },
+    "1481503": {
+     "name": "Dani Requena",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-22"
+    },
+    "1617146": {
+     "name": "Jorge Cabello",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-22"
+    },
+    "1649293": {
+     "name": "Paco Cortés",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-22"
+    },
+    "1695701": {
+     "name": "Axel Tape",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-22"
+    },
+    "1748952": {
+     "name": "Jorge de Asís",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-22"
+    },
+    "1780239": {
+     "name": "Ifeanyi Ndukwe",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-22"
+    },
+    "1800611": {
+     "name": "Nacho Pérez",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-22"
+    },
+    "1836083": {
+     "name": "Yanis Musuayi",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-22"
+    },
+    "1859295": {
+     "name": "Huseini Nakoha",
      "firstSeen": "2026-09-28",
      "lastSeen": "2026-10-04"
     },
-    "1820601": {
-     "name": "Selton Sánchez",
+    "2141146": {
+     "name": "Marc Santos",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-22"
+    },
+    "2141153": {
+     "name": "Alberto Calatrava",
      "firstSeen": "2026-09-28",
      "lastSeen": "2026-10-04"
     }
    },
    "left": [
     {
-     "id": "1637566",
-     "name": "Asier Hierro",
+     "id": "1366374",
+     "name": "Álex Primo",
      "firstSeen": "2026-09-28",
      "lastSeen": "2026-10-04"
     },
     {
-     "id": "1698682",
-     "name": "Efe Korkut",
+     "id": "1859295",
+     "name": "Huseini Nakoha",
      "firstSeen": "2026-09-28",
      "lastSeen": "2026-10-04"
     },
     {
-     "id": "1820601",
-     "name": "Selton Sánchez",
+     "id": "2141153",
+     "name": "Alberto Calatrava",
      "firstSeen": "2026-09-28",
      "lastSeen": "2026-10-04"
     }
@@ -7658,7 +7642,10 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "121",
+      "expectedReturn": "Doubtful"
+     }
     },
     {
      "id": 1059657,
@@ -7702,7 +7689,7 @@
      "id": 1184694,
      "name": "Alberto Moleiro",
      "role": "midfielders",
-     "position": "LM,ST",
+     "position": "LM,LW,ST",
      "number": 10,
      "age": 23,
      "born": "2003-09-30",
@@ -7721,7 +7708,7 @@
      "id": 671865,
      "name": "Santi Comesaña",
      "role": "midfielders",
-     "position": "CM,RM",
+     "position": "CM,RM,CDM",
      "number": 14,
      "age": 30,
      "born": "1996-10-05",
@@ -7759,7 +7746,7 @@
      "id": 1026135,
      "name": "Tajon Buchanan",
      "role": "midfielders",
-     "position": "RM,LM",
+     "position": "RM,LM,RW",
      "number": 17,
      "age": 27,
      "born": "1999-02-08",
@@ -7772,12 +7759,7 @@
      "penalties": 0,
      "yellow": 2,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "26/10/2026",
-      "name": "Hamstring injury",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 844544,
@@ -7831,13 +7813,16 @@
      "country": "Canada",
      "height": 173,
      "value": 8882446,
-     "rating": 6.76,
+     "rating": 6.74,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "87",
+      "expectedReturn": "Doubtful"
+     }
     },
     {
      "id": 246438,
@@ -7954,7 +7939,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-20T17:08:46.118Z",
+   "fetchedAt": "2026-10-22T11:07:53.312Z",
    "coachHistory": [
     {
      "name": "Inigo Pérez",
@@ -7965,107 +7950,107 @@
     "151001": {
      "name": "Péter Gulácsi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "246438": {
      "name": "Gerard Moreno",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "479020": {
      "name": "Ayoze Pérez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "575735": {
      "name": "Nicolas Pépé",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "671865": {
      "name": "Santi Comesaña",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "833219": {
      "name": "Juan Foyth",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "844544": {
      "name": "Pape Gueye",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "922877": {
      "name": "Logan Costa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1026135": {
      "name": "Tajon Buchanan",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1059657": {
      "name": "Sergi Cardona",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1117069": {
      "name": "Georges Mikautadze",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1184694": {
      "name": "Alberto Moleiro",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1187044": {
      "name": "Luíz Júnior",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1216798": {
      "name": "Nathan Saliba",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1311915": {
      "name": "Ilias Akhomach",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1338696": {
      "name": "Alex Freeman",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1338740": {
      "name": "Tani Oluwaseyi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1343750": {
      "name": "Renato Veiga",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1395964": {
      "name": "Carlos Romero",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1407468": {
      "name": "Santiago Mouriño",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1531887": {
      "name": "Pau Navarro",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1581706": {
      "name": "Mahamoud Barry",
@@ -8075,17 +8060,17 @@
     "1695966": {
      "name": "Alassane Diatta",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1834473": {
      "name": "Joselillo Gaitán",
      "firstSeen": "2026-10-20",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1841906": {
      "name": "Carlos Maciá",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "2141015": {
      "name": "Cheikh Tidiane Thiam",
@@ -8103,6 +8088,693 @@
     {
      "id": "2141015",
      "name": "Cheikh Tidiane Thiam",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-04"
+    }
+   ]
+  },
+  "Ath Bilbao": {
+   "fotmobName": "Athletic Club",
+   "fotmobId": 8315,
+   "coach": "Edin Terzić",
+   "players": [
+    {
+     "id": 660625,
+     "name": "Unai Simón",
+     "role": "keepers",
+     "position": "GK",
+     "number": 1,
+     "age": 29,
+     "born": "1997-06-11",
+     "country": "Spain",
+     "height": 190,
+     "value": 21292139,
+     "rating": 7.07,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1401997,
+     "name": "Álex Padilla",
+     "role": "keepers",
+     "position": "GK",
+     "number": 13,
+     "age": 23,
+     "born": "2003-09-01",
+     "country": "Mexico",
+     "height": 185,
+     "value": null,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1425770,
+     "name": "Unai Eguiluz",
+     "role": "defenders",
+     "position": "CB",
+     "number": null,
+     "age": 24,
+     "born": "2002-03-19",
+     "country": "Spain",
+     "height": 186,
+     "value": 586218,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": {
+      "typeId": "76",
+      "expectedReturn": "Mid January 2027"
+     }
+    },
+    {
+     "id": 940743,
+     "name": "Daniel Vivian",
+     "role": "defenders",
+     "position": "CB,RB",
+     "number": 3,
+     "age": 27,
+     "born": "1999-07-05",
+     "country": "Spain",
+     "height": 183,
+     "value": 24260917,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1191407,
+     "name": "Aitor Paredes",
+     "role": "defenders",
+     "position": "CB",
+     "number": 4,
+     "age": 26,
+     "born": "2000-04-29",
+     "country": "Spain",
+     "height": 186,
+     "value": 12170982,
+     "rating": 7.16,
+     "goals": 1,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 639450,
+     "name": "Yeray Álvarez",
+     "role": "defenders",
+     "position": "CB",
+     "number": 5,
+     "age": 31,
+     "born": "1995-01-24",
+     "country": "Spain",
+     "height": 183,
+     "value": 978545,
+     "rating": 6.75,
+     "goals": 0,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1037537,
+     "name": "Jesús Areso",
+     "role": "defenders",
+     "position": "RB",
+     "number": 12,
+     "age": 27,
+     "born": "1999-07-02",
+     "country": "Spain",
+     "height": 182,
+     "value": 4982739,
+     "rating": 6.52,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 411617,
+     "name": "Aymeric Laporte",
+     "role": "defenders",
+     "position": "CB",
+     "number": 14,
+     "age": 32,
+     "born": "1994-05-27",
+     "country": "Spain",
+     "height": 191,
+     "value": 7464200,
+     "rating": 6.82,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 1,
+     "injury": null
+    },
+    {
+     "id": 1427819,
+     "name": "Hugo Rincón",
+     "role": "defenders",
+     "position": "RB",
+     "number": 15,
+     "age": 23,
+     "born": "2003-01-27",
+     "country": "Spain",
+     "height": 185,
+     "value": 4113293,
+     "rating": 6.58,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 80295,
+     "name": "Yuri Berchiche",
+     "role": "defenders",
+     "position": "LB,CB",
+     "number": 17,
+     "age": 36,
+     "born": "1990-02-10",
+     "country": "Spain",
+     "height": 181,
+     "value": 1070346,
+     "rating": 7.01,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 3,
+     "red": 1,
+     "injury": null
+    },
+    {
+     "id": 1327006,
+     "name": "Johaneko Louis-Jean",
+     "role": "defenders",
+     "position": "LB",
+     "number": 31,
+     "age": 22,
+     "born": "2004-06-28",
+     "country": "France",
+     "height": 175,
+     "value": 163378,
+     "rating": 6.53,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1229176,
+     "name": "Beñat Prados",
+     "role": "midfielders",
+     "position": "CDM",
+     "number": 6,
+     "age": 25,
+     "born": "2001-02-08",
+     "country": "Spain",
+     "height": 180,
+     "value": 16577001,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 950545,
+     "name": "Oihan Sancet",
+     "role": "midfielders",
+     "position": "CAM",
+     "number": 8,
+     "age": 26,
+     "born": "2000-04-25",
+     "country": "Spain",
+     "height": 188,
+     "value": 31457451,
+     "rating": 6.97,
+     "goals": 1,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": {
+      "typeId": "101",
+      "expectedReturn": "Early November 2026"
+     }
+    },
+    {
+     "id": 282462,
+     "name": "Íñigo Ruíz de Galarreta",
+     "role": "midfielders",
+     "position": "CDM",
+     "number": 16,
+     "age": 33,
+     "born": "1993-08-06",
+     "country": "Spain",
+     "height": 174,
+     "value": 1451138,
+     "rating": 6.86,
+     "goals": 0,
+     "assists": 1,
+     "penalties": 0,
+     "yellow": 3,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1553099,
+     "name": "Mikel Jauregizar",
+     "role": "midfielders",
+     "position": "CDM",
+     "number": 18,
+     "age": 22,
+     "born": "2003-11-13",
+     "country": "Spain",
+     "height": 177,
+     "value": 35553140,
+     "rating": 6.34,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1425769,
+     "name": "Alejandro Rego",
+     "role": "midfielders",
+     "position": "CDM",
+     "number": 20,
+     "age": 23,
+     "born": "2003-06-11",
+     "country": "Spain",
+     "height": 192,
+     "value": 5208948,
+     "rating": 6.39,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1425173,
+     "name": "Beñat Gerenabarrena",
+     "role": "midfielders",
+     "position": "CM,CDM,RB",
+     "number": 24,
+     "age": 23,
+     "born": "2003-03-29",
+     "country": "Spain",
+     "height": 173,
+     "value": 1065949,
+     "rating": 6.75,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 3,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1355668,
+     "name": "Álvaro Djaló",
+     "role": "midfielders",
+     "position": "RW,CAM,RM,LM",
+     "number": 25,
+     "age": 27,
+     "born": "1999-08-16",
+     "country": "Guinea-Bissau",
+     "height": 176,
+     "value": 3339496,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": {
+      "typeId": "92",
+      "expectedReturn": "Back in training"
+     }
+    },
+    {
+     "id": 1585726,
+     "name": "Peio Canales",
+     "role": "midfielders",
+     "position": "CAM,CDM",
+     "number": 28,
+     "age": 21,
+     "born": "2005-01-17",
+     "country": "Spain",
+     "height": 175,
+     "value": 5691409,
+     "rating": 6.45,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 574629,
+     "name": "Alex Berenguer",
+     "role": "attackers",
+     "position": "RW,LW,CAM",
+     "number": 7,
+     "age": 31,
+     "born": "1995-07-04",
+     "country": "Spain",
+     "height": 175,
+     "value": 2244288,
+     "rating": 6.93,
+     "goals": 2,
+     "assists": 1,
+     "penalties": 1,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 604105,
+     "name": "Iñaki Williams",
+     "role": "attackers",
+     "position": "RW,ST,LW",
+     "number": 9,
+     "age": 32,
+     "born": "1994-06-15",
+     "country": "Ghana",
+     "height": 186,
+     "value": 11338396,
+     "rating": 6.51,
+     "goals": 1,
+     "assists": 2,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1202110,
+     "name": "Nico Williams",
+     "role": "attackers",
+     "position": "LW",
+     "number": 10,
+     "age": 24,
+     "born": "2002-07-12",
+     "country": "Spain",
+     "height": 181,
+     "value": 67303020,
+     "rating": 6.99,
+     "goals": 1,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 711231,
+     "name": "Gorka Guruzeta",
+     "role": "attackers",
+     "position": "ST,CAM",
+     "number": 11,
+     "age": 30,
+     "born": "1996-09-12",
+     "country": "Spain",
+     "height": 188,
+     "value": 5006473,
+     "rating": 6.11,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 2,
+     "red": 0,
+     "injury": {
+      "typeId": "76",
+      "expectedReturn": "Out for season"
+     }
+    },
+    {
+     "id": 1425206,
+     "name": "Maroan Sannadi",
+     "role": "attackers",
+     "position": "ST",
+     "number": 21,
+     "age": 25,
+     "born": "2001-02-01",
+     "country": "Morocco",
+     "height": 192,
+     "value": 2862011,
+     "rating": 6.43,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1203614,
+     "name": "Nico Serrano",
+     "role": "attackers",
+     "position": "RW",
+     "number": 22,
+     "age": 23,
+     "born": "2003-03-05",
+     "country": "Spain",
+     "height": 176,
+     "value": 1528516,
+     "rating": null,
+     "goals": 0,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 0,
+     "red": 0,
+     "injury": null
+    },
+    {
+     "id": 1011117,
+     "name": "Robert Navarro",
+     "role": "attackers",
+     "position": "RW,LW",
+     "number": 23,
+     "age": 24,
+     "born": "2002-04-12",
+     "country": "Spain",
+     "height": 178,
+     "value": 7450035,
+     "rating": 7.09,
+     "goals": 2,
+     "assists": 0,
+     "penalties": 0,
+     "yellow": 1,
+     "red": 0,
+     "injury": null
+    }
+   ],
+   "fetchedAt": "2026-10-22T11:07:53.312Z",
+   "coachHistory": [
+    {
+     "name": "Edin Terzić",
+     "firstSeen": "2026-09-28"
+    }
+   ],
+   "history": {
+    "80295": {
+     "name": "Yuri Berchiche",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-22"
+    },
+    "282462": {
+     "name": "Íñigo Ruíz de Galarreta",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-22"
+    },
+    "411617": {
+     "name": "Aymeric Laporte",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-22"
+    },
+    "574629": {
+     "name": "Alex Berenguer",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-22"
+    },
+    "604105": {
+     "name": "Iñaki Williams",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-22"
+    },
+    "639450": {
+     "name": "Yeray Álvarez",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-22"
+    },
+    "660625": {
+     "name": "Unai Simón",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-22"
+    },
+    "711231": {
+     "name": "Gorka Guruzeta",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-22"
+    },
+    "940743": {
+     "name": "Daniel Vivian",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-22"
+    },
+    "950545": {
+     "name": "Oihan Sancet",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-22"
+    },
+    "1011117": {
+     "name": "Robert Navarro",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-22"
+    },
+    "1037537": {
+     "name": "Jesús Areso",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-22"
+    },
+    "1191407": {
+     "name": "Aitor Paredes",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-22"
+    },
+    "1202110": {
+     "name": "Nico Williams",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-22"
+    },
+    "1203614": {
+     "name": "Nico Serrano",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-22"
+    },
+    "1229176": {
+     "name": "Beñat Prados",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-22"
+    },
+    "1327006": {
+     "name": "Johaneko Louis-Jean",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-22"
+    },
+    "1355668": {
+     "name": "Álvaro Djaló",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-22"
+    },
+    "1401997": {
+     "name": "Álex Padilla",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-22"
+    },
+    "1425173": {
+     "name": "Beñat Gerenabarrena",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-22"
+    },
+    "1425206": {
+     "name": "Maroan Sannadi",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-22"
+    },
+    "1425769": {
+     "name": "Alejandro Rego",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-22"
+    },
+    "1425770": {
+     "name": "Unai Eguiluz",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-22"
+    },
+    "1427819": {
+     "name": "Hugo Rincón",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-22"
+    },
+    "1553099": {
+     "name": "Mikel Jauregizar",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-22"
+    },
+    "1585726": {
+     "name": "Peio Canales",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-22"
+    },
+    "1637566": {
+     "name": "Asier Hierro",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-04"
+    },
+    "1698682": {
+     "name": "Efe Korkut",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-04"
+    },
+    "1820601": {
+     "name": "Selton Sánchez",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-04"
+    }
+   },
+   "left": [
+    {
+     "id": "1637566",
+     "name": "Asier Hierro",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-04"
+    },
+    {
+     "id": "1698682",
+     "name": "Efe Korkut",
+     "firstSeen": "2026-09-28",
+     "lastSeen": "2026-10-04"
+    },
+    {
+     "id": "1820601",
+     "name": "Selton Sánchez",
      "firstSeen": "2026-09-28",
      "lastSeen": "2026-10-04"
     }
@@ -8455,7 +9127,7 @@
      "born": "2004-06-13",
      "country": "Spain",
      "height": null,
-     "value": null,
+     "value": 258443,
      "rating": 6.6,
      "goals": 0,
      "assists": 0,
@@ -8481,12 +9153,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": null,
-      "expectedReturn": "Unknown",
-      "name": "Fitness",
-      "source": "Transfermarkt"
-     }
+     "injury": null
     },
     {
      "id": 924300,
@@ -8647,7 +9314,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-20T17:08:46.118Z",
+   "fetchedAt": "2026-10-22T11:07:53.312Z",
    "coachHistory": [
     {
      "name": "Beñat San José",
@@ -8658,97 +9325,97 @@
     "184521": {
      "name": "Florian Lejeune",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "264885": {
      "name": "Iván Balliu",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "359196": {
      "name": "Raúl de Tomás",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "474658": {
      "name": "Álvaro Garcia",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "571615": {
      "name": "Unai López",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "602845": {
      "name": "Emil Audero",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "621415": {
      "name": "Augusto Batalla",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "638010": {
      "name": "Isi Palazón",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "672840": {
      "name": "Luiz Felipe",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "715069": {
      "name": "Pedro Díaz",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "797901": {
      "name": "Jorge de Frutos",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "872362": {
      "name": "Marash Kumbulla",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "872396": {
      "name": "Pathé Ciss",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "915264": {
      "name": "Randy Nteka",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "924300": {
      "name": "Alemão",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "927646": {
      "name": "Adrià Pedrosa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "939061": {
      "name": "Giorgi Tsitaishvili",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "939427": {
      "name": "Mujaid Sadick",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "956622": {
      "name": "Óscar Valentín",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "957199": {
      "name": "Miguel Morro",
@@ -8758,37 +9425,37 @@
     "970578": {
      "name": "Andrei Rațiu",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "980422": {
      "name": "Sergio Camello",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1041445": {
      "name": "Dani Cárdenas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1255090": {
      "name": "Jozhua Vertrouwd",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1284430": {
      "name": "Fran Pérez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1411818": {
      "name": "Pelayo Fernández",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1553404": {
      "name": "Rayane Belaid",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1662963": {
      "name": "Marco de Las Sías",
@@ -8808,7 +9475,7 @@
     "1889232": {
      "name": "Gnangoro Bouare",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     }
    },
    "left": [
@@ -9090,7 +9757,7 @@
      "red": 1,
      "injury": {
       "typeId": "87",
-      "expectedReturn": "Early November 2026"
+      "expectedReturn": "Doubtful"
      }
     },
     {
@@ -9188,7 +9855,7 @@
      "red": 0,
      "injury": {
       "typeId": "87",
-      "expectedReturn": "Doubtful"
+      "expectedReturn": "Early November 2026"
      }
     },
     {
@@ -9328,13 +9995,10 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": {
-      "typeId": "121",
-      "expectedReturn": "Doubtful"
-     }
+     "injury": null
     }
    ],
-   "fetchedAt": "2026-10-20T17:08:46.118Z",
+   "fetchedAt": "2026-10-22T11:07:53.312Z",
    "coachHistory": [
     {
      "name": "José Bordalás",
@@ -9345,97 +10009,97 @@
     "175311": {
      "name": "Kiko",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "178753": {
      "name": "Nemanja Gudelj",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "191873": {
      "name": "Juanmi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "282674": {
      "name": "Daniel Carvajal",
      "firstSeen": "2026-10-20",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "421365": {
      "name": "Djené",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "464486": {
      "name": "Enes Ünal",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "474673": {
      "name": "Johan Mojica",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "581919": {
      "name": "David Soria",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "635772": {
      "name": "Borja Mayoral",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "765693": {
      "name": "Orel Mangala",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "956921": {
      "name": "Abdelkabir Abqar",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1118199": {
      "name": "Zaid Abner Romero",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1178641": {
      "name": "Jirí Letácek",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1179368": {
      "name": "Saba Sazonov",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1183650": {
      "name": "Francho Serrano",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1197039": {
      "name": "Martín Satriano",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1202587": {
      "name": "Ramón Terrats",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1203946": {
      "name": "Iván Azon",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1321605": {
      "name": "Mario Martín",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1396368": {
      "name": "Lucas Laso",
@@ -9445,12 +10109,12 @@
     "1414777": {
      "name": "Sebastián Boselli",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1430406": {
      "name": "Andrés García",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1455481": {
      "name": "Álex Lozano",
@@ -9475,17 +10139,17 @@
     "1580704": {
      "name": "Christantus Uche",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1637438": {
      "name": "Alberto Risco",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1676086": {
      "name": "Davinchi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1694764": {
      "name": "Oscar Lopez",
@@ -9510,7 +10174,7 @@
     "1792368": {
      "name": "Jean Ives Valou",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1858597": {
      "name": "Jorge Montes",
@@ -9758,10 +10422,7 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": {
-      "typeId": "121",
-      "expectedReturn": "Doubtful"
-     }
+     "injury": null
     },
     {
      "id": 1727689,
@@ -10093,7 +10754,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-20T17:08:46.118Z",
+   "fetchedAt": "2026-10-22T11:07:53.312Z",
    "coachHistory": [
     {
      "name": "Manolo González",
@@ -10104,117 +10765,117 @@
     "169586": {
      "name": "Leandro Cabrera",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "183353": {
      "name": "Kike García",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "280818": {
      "name": "Marko Dmitrović",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "593129": {
      "name": "Pere Milla",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "750031": {
      "name": "Pol Lozano",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "805352": {
      "name": "Unai Núñez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "837089": {
      "name": "Edu Expósito",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "839893": {
      "name": "Andoni Gorosabel",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "846966": {
      "name": "Javi Puado",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "955204": {
      "name": "Vanja Drkušić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1181101": {
      "name": "Tyrhys Dolan",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1184772": {
      "name": "Ángel Fortuno",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1184777": {
      "name": "Jofre Carreras",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1187767": {
      "name": "Urko González",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1202525": {
      "name": "Bryan Zaragoza",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1208708": {
      "name": "Omar El Hilali",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1252373": {
      "name": "Roberto Fernández",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1279557": {
      "name": "Clemens Riedel",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1300457": {
      "name": "Álex Calatrava",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1393669": {
      "name": "Quilindschy Hartman",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1407741": {
      "name": "Marcos Fernández",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1427828": {
      "name": "Javi Hernández",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1503655": {
      "name": "Gabriel Moscardo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1559812": {
      "name": "Pol Tristán",
@@ -10224,12 +10885,12 @@
     "1609364": {
      "name": "Rafel Bauzà",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1727689": {
      "name": "Roger Hinojo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     }
    },
    "left": [
@@ -10323,10 +10984,7 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": {
-      "typeId": "121",
-      "expectedReturn": "Doubtful"
-     }
+     "injury": null
     },
     {
      "id": 982734,
@@ -10402,7 +11060,10 @@
      "penalties": 0,
      "yellow": 1,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "69",
+      "expectedReturn": "Doubtful"
+     }
     },
     {
      "id": 1329406,
@@ -10709,7 +11370,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-20T17:08:46.118Z",
+   "fetchedAt": "2026-10-22T11:07:53.312Z",
    "coachHistory": [
     {
      "name": "José López",
@@ -10720,97 +11381,97 @@
     "150649": {
      "name": "Sergio Canales",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "670031": {
      "name": "Asier Villalibre",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "684981": {
      "name": "Aarón Martín",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "777028": {
      "name": "André Almeida",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "863169": {
      "name": "Manu",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "889229": {
      "name": "Iñigo Vicente",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "899195": {
      "name": "Andrés Martin",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "967871": {
      "name": "Iván Martin",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "982734": {
      "name": "Pablo Ramón",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1065640": {
      "name": "Giorgi Guliashvili",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1168852": {
      "name": "Íñigo Sainz-Maza",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1199649": {
      "name": "Álvaro Mantilla",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1212179": {
      "name": "Facundo González",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1225417": {
      "name": "Juan Carlos Arana",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1280020": {
      "name": "Julen Agirrezabala",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1329406": {
      "name": "Jeanuël Belocian",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1363232": {
      "name": "Maguette Gueye",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1396089": {
      "name": "Matteo Prati",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1441736": {
      "name": "Simon Eriksson",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1553409": {
      "name": "Jorge Castellanos",
@@ -10820,27 +11481,27 @@
     "1586390": {
      "name": "Iker Luque",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1640985": {
      "name": "Yassir Zabiri",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1644302": {
      "name": "Pedro Felipe",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1662379": {
      "name": "Pablo García",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1670161": {
      "name": "Jorge Salinas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1687186": {
      "name": "Aitor Crespo",
@@ -10885,663 +11546,6 @@
     }
    ]
   },
-  "Levante": {
-   "fotmobName": "Levante",
-   "fotmobId": 8581,
-   "coach": "Luís Castro",
-   "players": [
-    {
-     "id": 1237455,
-     "name": "Pablo Campos",
-     "role": "keepers",
-     "position": "GK",
-     "number": 1,
-     "age": 24,
-     "born": "2002-04-28",
-     "country": "Spain",
-     "height": 188,
-     "value": 1017277,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 185644,
-     "name": "Mathew Ryan",
-     "role": "keepers",
-     "position": "GK",
-     "number": 13,
-     "age": 34,
-     "born": "1992-04-08",
-     "country": "Australia",
-     "height": 184,
-     "value": 1193242,
-     "rating": 6.91,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 210683,
-     "name": "Aïssa Mandi",
-     "role": "defenders",
-     "position": "CB",
-     "number": 2,
-     "age": 34,
-     "born": "1991-10-22",
-     "country": "Algeria",
-     "height": 186,
-     "value": 1319114,
-     "rating": 6.76,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 2,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1780239,
-     "name": "Ifeanyi Ndukwe",
-     "role": "defenders",
-     "position": "CB",
-     "number": 3,
-     "age": 18,
-     "born": "2008-03-03",
-     "country": "Austria",
-     "height": 198,
-     "value": 3551126,
-     "rating": 6.42,
-     "goals": 1,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 952528,
-     "name": "Adrián De La Fuente",
-     "role": "defenders",
-     "position": "CB",
-     "number": 4,
-     "age": 27,
-     "born": "1999-02-26",
-     "country": "Spain",
-     "height": 178,
-     "value": 2355976,
-     "rating": 6.96,
-     "goals": 2,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 3,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1617146,
-     "name": "Jorge Cabello",
-     "role": "defenders",
-     "position": "CB",
-     "number": 14,
-     "age": 22,
-     "born": "2004-04-25",
-     "country": "Spain",
-     "height": 180,
-     "value": 1229792,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1695701,
-     "name": "Axel Tape",
-     "role": "defenders",
-     "position": "CDM",
-     "number": 16,
-     "age": 19,
-     "born": "2007-08-10",
-     "country": "France",
-     "height": 180,
-     "value": 12967026,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 443966,
-     "name": "Jeremy Toljan",
-     "role": "defenders",
-     "position": "RB",
-     "number": 22,
-     "age": 32,
-     "born": "1994-08-08",
-     "country": "Germany",
-     "height": 182,
-     "value": 1463518,
-     "rating": 6.16,
-     "goals": 0,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1052330,
-     "name": "Manuel Sánchez",
-     "role": "defenders",
-     "position": "LB",
-     "number": 23,
-     "age": 26,
-     "born": "2000-08-24",
-     "country": "Spain",
-     "height": 179,
-     "value": 7091832,
-     "rating": 6.65,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1800611,
-     "name": "Nacho Pérez",
-     "role": "defenders",
-     "position": "RB",
-     "number": 29,
-     "age": 18,
-     "born": "2008-08-29",
-     "country": "Spain",
-     "height": 176,
-     "value": 1180638,
-     "rating": 6.6,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 2141146,
-     "name": "Marc Santos",
-     "role": "defenders",
-     "position": "Defender",
-     "number": 33,
-     "age": 15,
-     "born": "2010-11-01",
-     "country": "Spain",
-     "height": null,
-     "value": null,
-     "rating": 6.35,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1254218,
-     "name": "Hugo Sotelo",
-     "role": "midfielders",
-     "position": "CM",
-     "number": 5,
-     "age": 22,
-     "born": "2003-12-19",
-     "country": "Spain",
-     "height": 180,
-     "value": 7217112,
-     "rating": 6.27,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": {
-      "typeId": "124",
-      "expectedReturn": "Late October 2026"
-     }
-    },
-    {
-     "id": 1481503,
-     "name": "Dani Requena",
-     "role": "midfielders",
-     "position": "CM,CDM",
-     "number": 6,
-     "age": 22,
-     "born": "2004-02-12",
-     "country": "Spain",
-     "height": 186,
-     "value": 1231302,
-     "rating": 6.72,
-     "goals": 1,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 1,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1131957,
-     "name": "Jon Olasagasti",
-     "role": "midfielders",
-     "position": "CAM,CM,LM,CDM",
-     "number": 8,
-     "age": 26,
-     "born": "2000-08-16",
-     "country": "Spain",
-     "height": 176,
-     "value": 2097167,
-     "rating": 6.85,
-     "goals": 1,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1332540,
-     "name": "Enzo Bardeli",
-     "role": "midfielders",
-     "position": "CAM,CM",
-     "number": 18,
-     "age": 25,
-     "born": "2001-04-11",
-     "country": "France",
-     "height": 173,
-     "value": 6504234,
-     "rating": 6.71,
-     "goals": 1,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 914401,
-     "name": "Oriol Rey",
-     "role": "midfielders",
-     "position": "CM,CDM",
-     "number": 20,
-     "age": 28,
-     "born": "1998-02-25",
-     "country": "Spain",
-     "height": 177,
-     "value": 1007879,
-     "rating": 6.43,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1748952,
-     "name": "Jorge de Asís",
-     "role": "attackers",
-     "position": "Attacker",
-     "number": null,
-     "age": 20,
-     "born": "2006-01-29",
-     "country": "Argentina",
-     "height": null,
-     "value": 426741,
-     "rating": null,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1286471,
-     "name": "Roger Brugué",
-     "role": "attackers",
-     "position": "RW,LM",
-     "number": 7,
-     "age": 29,
-     "born": "1996-11-04",
-     "country": "Spain",
-     "height": 174,
-     "value": 1519475,
-     "rating": 7.19,
-     "goals": 3,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1209441,
-     "name": "Iván Romero",
-     "role": "attackers",
-     "position": "ST,LW,CAM",
-     "number": 9,
-     "age": 25,
-     "born": "2001-04-10",
-     "country": "Spain",
-     "height": 172,
-     "value": 8770525,
-     "rating": 6.98,
-     "goals": 3,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 2,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1302821,
-     "name": "Petar Ratkov",
-     "role": "attackers",
-     "position": "ST",
-     "number": 10,
-     "age": 23,
-     "born": "2003-08-18",
-     "country": "Serbia",
-     "height": 193,
-     "value": 10796849,
-     "rating": 6.34,
-     "goals": 0,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1836083,
-     "name": "Yanis Musuayi",
-     "role": "attackers",
-     "position": "ST",
-     "number": 11,
-     "age": 19,
-     "born": "2007-06-26",
-     "country": "Belgium",
-     "height": 190,
-     "value": 1240662,
-     "rating": 6.12,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 977618,
-     "name": "Víctor García",
-     "role": "attackers",
-     "position": "RW,RM,RB",
-     "number": 17,
-     "age": 29,
-     "born": "1997-09-16",
-     "country": "Spain",
-     "height": 180,
-     "value": 990022,
-     "rating": 6.24,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1392779,
-     "name": "Etta Eyong",
-     "role": "attackers",
-     "position": "ST",
-     "number": 21,
-     "age": 23,
-     "born": "2003-10-14",
-     "country": "Cameroon",
-     "height": 181,
-     "value": 18212511,
-     "rating": 6.3,
-     "goals": 0,
-     "assists": 1,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": {
-      "typeId": "69",
-      "expectedReturn": "Late October 2026"
-     }
-    },
-    {
-     "id": 1460063,
-     "name": "Thiago Fernández",
-     "role": "attackers",
-     "position": "LW,LM",
-     "number": 24,
-     "age": 22,
-     "born": "2004-04-03",
-     "country": "Argentina",
-     "height": 175,
-     "value": 6381726,
-     "rating": 6.7,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    },
-    {
-     "id": 1649293,
-     "name": "Paco Cortés",
-     "role": "attackers",
-     "position": "LW,LM",
-     "number": 27,
-     "age": 19,
-     "born": "2007-08-11",
-     "country": "Spain",
-     "height": 178,
-     "value": 2893146,
-     "rating": 6.14,
-     "goals": 0,
-     "assists": 0,
-     "penalties": 0,
-     "yellow": 0,
-     "red": 0,
-     "injury": null
-    }
-   ],
-   "fetchedAt": "2026-10-20T17:08:46.118Z",
-   "coachHistory": [
-    {
-     "name": "Luís Castro",
-     "firstSeen": "2026-09-28"
-    }
-   ],
-   "history": {
-    "185644": {
-     "name": "Mathew Ryan",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
-    },
-    "210683": {
-     "name": "Aïssa Mandi",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
-    },
-    "443966": {
-     "name": "Jeremy Toljan",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
-    },
-    "914401": {
-     "name": "Oriol Rey",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
-    },
-    "952528": {
-     "name": "Adrián De La Fuente",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
-    },
-    "977618": {
-     "name": "Víctor García",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
-    },
-    "1052330": {
-     "name": "Manuel Sánchez",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
-    },
-    "1131957": {
-     "name": "Jon Olasagasti",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
-    },
-    "1209441": {
-     "name": "Iván Romero",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
-    },
-    "1237455": {
-     "name": "Pablo Campos",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
-    },
-    "1254218": {
-     "name": "Hugo Sotelo",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
-    },
-    "1286471": {
-     "name": "Roger Brugué",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
-    },
-    "1302821": {
-     "name": "Petar Ratkov",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
-    },
-    "1332540": {
-     "name": "Enzo Bardeli",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
-    },
-    "1366374": {
-     "name": "Álex Primo",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "1392779": {
-     "name": "Etta Eyong",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
-    },
-    "1460063": {
-     "name": "Thiago Fernández",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
-    },
-    "1481503": {
-     "name": "Dani Requena",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
-    },
-    "1617146": {
-     "name": "Jorge Cabello",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
-    },
-    "1649293": {
-     "name": "Paco Cortés",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
-    },
-    "1695701": {
-     "name": "Axel Tape",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
-    },
-    "1748952": {
-     "name": "Jorge de Asís",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
-    },
-    "1780239": {
-     "name": "Ifeanyi Ndukwe",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
-    },
-    "1800611": {
-     "name": "Nacho Pérez",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
-    },
-    "1836083": {
-     "name": "Yanis Musuayi",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
-    },
-    "1859295": {
-     "name": "Huseini Nakoha",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    "2141146": {
-     "name": "Marc Santos",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
-    },
-    "2141153": {
-     "name": "Alberto Calatrava",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    }
-   },
-   "left": [
-    {
-     "id": "1366374",
-     "name": "Álex Primo",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    {
-     "id": "1859295",
-     "name": "Huseini Nakoha",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    },
-    {
-     "id": "2141153",
-     "name": "Alberto Calatrava",
-     "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-04"
-    }
-   ]
-  },
   "Elche": {
    "fotmobName": "Elche",
    "fotmobId": 10268,
@@ -11558,7 +11562,7 @@
      "country": "Argentina",
      "height": 191,
      "value": 615741,
-     "rating": 6.35,
+     "rating": 6.32,
      "goals": 0,
      "assists": 0,
      "penalties": 0,
@@ -11775,7 +11779,7 @@
      "red": 0,
      "injury": {
       "typeId": "38",
-      "expectedReturn": "Early November 2026"
+      "expectedReturn": "Mid November 2026"
      }
     },
     {
@@ -12086,7 +12090,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-20T17:08:46.118Z",
+   "fetchedAt": "2026-10-22T11:07:53.312Z",
    "coachHistory": [
     {
      "name": "Martín Anselmi",
@@ -12097,137 +12101,137 @@
     "291635": {
      "name": "Pedro Bigas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "468931": {
      "name": "Thomas Lemar",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "493216": {
      "name": "Ezequiel Ponce",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "592412": {
      "name": "Matías Dituro",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "623982": {
      "name": "Josan",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "654091": {
      "name": "Grady Diangana",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "801213": {
      "name": "Tete Morente",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "881773": {
      "name": "Gonzalo Villar",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "884383": {
      "name": "Bambo Diaby",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1102708": {
      "name": "Germán Valera",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1127224": {
      "name": "Fer Niño",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1137497": {
      "name": "Yago Santiago",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1192393": {
      "name": "Víctor Chust",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1206583": {
      "name": "Kevin Lomónaco",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1226189": {
      "name": "Martim Neto",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1277343": {
      "name": "Federico Redondo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1280756": {
      "name": "Lucas Cepeda",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1311126": {
      "name": "Alejandro Iturbe",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1330035": {
      "name": "Rubén Sánchez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1336566": {
      "name": "Facundo Buonanotte",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1337914": {
      "name": "Roy Revivo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1343195": {
      "name": "Abiel Osorio",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1392232": {
      "name": "Marc Aguado",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1577912": {
      "name": "Adam Boayar",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1583872": {
      "name": "Buba Sangaré",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1670276": {
      "name": "Matia Barzić",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1670281": {
      "name": "Ali Houary",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1692188": {
      "name": "Albert Niculăesei",
@@ -12237,7 +12241,7 @@
     "1732412": {
      "name": "Javi Morcillo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1882218": {
      "name": "Nico Salvador",
@@ -12566,7 +12570,7 @@
      "id": 1284429,
      "name": "Javier Guerra",
      "role": "midfielders",
-     "position": "CM,CDM,CAM,ST,LM",
+     "position": "CDM,CM,CAM,ST,LM",
      "number": 8,
      "age": 23,
      "born": "2003-05-13",
@@ -12604,7 +12608,7 @@
      "id": 638070,
      "name": "Luis Rioja",
      "role": "midfielders",
-     "position": "RM,RW,LM,LW,RWB",
+     "position": "RM,LM,RW",
      "number": 11,
      "age": 33,
      "born": "1993-10-16",
@@ -12857,7 +12861,7 @@
      "injury": null
     }
    ],
-   "fetchedAt": "2026-10-20T17:08:46.118Z",
+   "fetchedAt": "2026-10-22T11:07:53.312Z",
    "coachHistory": [
     {
      "name": "Javier Aguirre",
@@ -12868,142 +12872,142 @@
     "254241": {
      "name": "Stole Dimitrievski",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "261609": {
      "name": "Dimitri Foulquier",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "391058": {
      "name": "José Gayà",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "561198": {
      "name": "Mouctar Diakhaby",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "586768": {
      "name": "Guido Rodríguez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "590494": {
      "name": "Umar Sadiq",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "638070": {
      "name": "Luis Rioja",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "673356": {
      "name": "Pablo Maffeo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "673689": {
      "name": "Pepelu",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "673937": {
      "name": "Sergi Canós",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "704151": {
      "name": "Arnaut Danjuma",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "723148": {
      "name": "Aliou Dieng",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "784246": {
      "name": "Dani Raba",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "800615": {
      "name": "Filip Ugrinic",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "896402": {
      "name": "José Copete",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "913464": {
      "name": "Cristian Rivero",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "929838": {
      "name": "Hugo Duro",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "963964": {
      "name": "Harvey Elliott",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "969711": {
      "name": "Justin De Haas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1194892": {
      "name": "Arnau Martínez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1220187": {
      "name": "Jesus Vázquez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1284429": {
      "name": "Javier Guerra",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1284434": {
      "name": "Diego López",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1311985": {
      "name": "César Tárrega",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1348497": {
      "name": "Kayne van Oevelen",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1600732": {
      "name": "David Otorbi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1611149": {
      "name": "Ryunosuke Sato",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1637860": {
      "name": "Iker Córdoba",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1693341": {
      "name": "Amos Wanjala",
@@ -13018,7 +13022,7 @@
     "1905203": {
      "name": "Aaron Mayol",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     }
    },
    "left": [
@@ -13365,13 +13369,16 @@
      "penalties": 0,
      "yellow": 0,
      "red": 0,
-     "injury": null
+     "injury": {
+      "typeId": "101",
+      "expectedReturn": "Early November 2026"
+     }
     },
     {
      "id": 1434474,
      "name": "Rafa Rodríguez",
      "role": "midfielders",
-     "position": "CM,CAM,CDM,ST",
+     "position": "CM,CDM,CAM,ST",
      "number": 14,
      "age": 23,
      "born": "2003-07-10",
@@ -13390,7 +13397,7 @@
      "id": 923298,
      "name": "Pablo Martínez",
      "role": "midfielders",
-     "position": "CDM,CAM,CM,LW,LM",
+     "position": "CAM,CDM,LM,CM,LW",
      "number": 18,
      "age": 28,
      "born": "1998-02-22",
@@ -13507,7 +13514,7 @@
      "id": 940608,
      "name": "Juan Cruz",
      "role": "attackers",
-     "position": "RW,LW,RM,CAM,LM",
+     "position": "RW,LW,RM,CAM",
      "number": 19,
      "age": 26,
      "born": "2000-04-25",
@@ -13522,7 +13529,7 @@
      "red": 0,
      "injury": {
       "typeId": "42",
-      "expectedReturn": "Late October 2026"
+      "expectedReturn": "Early November 2026"
      }
     },
     {
@@ -13567,7 +13574,7 @@
      }
     }
    ],
-   "fetchedAt": "2026-10-20T17:08:46.118Z",
+   "fetchedAt": "2026-10-22T11:07:53.312Z",
    "coachHistory": [
     {
      "name": "Juan Funes",
@@ -13578,82 +13585,82 @@
     "516803": {
      "name": "Einar Galilea",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "616538": {
      "name": "Alfonso Herrero",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "722830": {
      "name": "Eneko Jauregi",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "801120": {
      "name": "Jens-Lys Cajuste",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "839232": {
      "name": "Fernando Calero",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "873838": {
      "name": "Juan Berrocal",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "923298": {
      "name": "Pablo Martínez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "940608": {
      "name": "Juan Cruz",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "951739": {
      "name": "Joaquín Muñoz",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1082957": {
      "name": "Ramón Enríquez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1098594": {
      "name": "Julen Lobete",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1108863": {
      "name": "David Larrubia",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1187478": {
      "name": "José Salinas",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1209421": {
      "name": "Carlos Dotor",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1220748": {
      "name": "Haitam Abaida",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1256463": {
      "name": "Álex Pastor",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1288506": {
      "name": "Moussa Diarra",
@@ -13663,17 +13670,17 @@
     "1317624": {
      "name": "Dani Lorenzo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1403695": {
      "name": "Adrián Nino",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1408529": {
      "name": "Diego Murillo",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1411496": {
      "name": "Dani Sánchez",
@@ -13683,37 +13690,37 @@
     "1426161": {
      "name": "Carlos López",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1434474": {
      "name": "Rafa Rodríguez",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1573563": {
      "name": "Adam Aznou",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1668274": {
      "name": "Carlos Puga",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1669619": {
      "name": "Izan Merino",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1669621": {
      "name": "Aarón Ochoa",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1669622": {
      "name": "Chupe",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     },
     "1678287": {
      "name": "Andrés Céspedes",
@@ -13728,7 +13735,7 @@
     "1717331": {
      "name": "Rafita",
      "firstSeen": "2026-09-28",
-     "lastSeen": "2026-10-20"
+     "lastSeen": "2026-10-22"
     }
    },
    "left": [

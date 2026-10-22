@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-20T17:08:46.118Z",
+ "updatedAt": "2026-10-22T11:07:53.312Z",
  "league": "LL",
  "fotmobId": 87,
  "name": "LaLiga",
@@ -147,17 +147,17 @@
   },
   {
    "rank": 11,
-   "team": "Ath Bilbao",
-   "fotmobName": "Athletic Club",
-   "fotmobId": 8315,
+   "team": "Levante",
+   "fotmobName": "Levante",
+   "fotmobId": 8581,
    "group": null,
-   "played": 7,
+   "played": 9,
    "won": 2,
-   "drawn": 3,
-   "lost": 2,
-   "goals": "7-6",
-   "gd": 1,
-   "pts": 9
+   "drawn": 4,
+   "lost": 3,
+   "goals": "15-17",
+   "gd": -2,
+   "pts": 10
   },
   {
    "rank": 12,
@@ -175,6 +175,20 @@
   },
   {
    "rank": 13,
+   "team": "Ath Bilbao",
+   "fotmobName": "Athletic Club",
+   "fotmobId": 8315,
+   "group": null,
+   "played": 8,
+   "won": 2,
+   "drawn": 3,
+   "lost": 3,
+   "goals": "8-9",
+   "gd": -1,
+   "pts": 9
+  },
+  {
+   "rank": 14,
    "team": "Vallecano",
    "fotmobName": "Rayo Vallecano",
    "fotmobId": 8370,
@@ -188,7 +202,7 @@
    "pts": 9
   },
   {
-   "rank": 14,
+   "rank": 15,
    "team": "Getafe",
    "fotmobName": "Getafe",
    "fotmobId": 8305,
@@ -202,7 +216,7 @@
    "pts": 9
   },
   {
-   "rank": 15,
+   "rank": 16,
    "team": "Espanol",
    "fotmobName": "Espanyol",
    "fotmobId": 8558,
@@ -216,7 +230,7 @@
    "pts": 8
   },
   {
-   "rank": 16,
+   "rank": 17,
    "team": "Santander",
    "fotmobName": "Racing Santander",
    "fotmobId": 8696,
@@ -228,20 +242,6 @@
    "goals": "13-25",
    "gd": -12,
    "pts": 8
-  },
-  {
-   "rank": 17,
-   "team": "Levante",
-   "fotmobName": "Levante",
-   "fotmobId": 8581,
-   "group": null,
-   "played": 8,
-   "won": 1,
-   "drawn": 4,
-   "lost": 3,
-   "goals": "12-16",
-   "gd": -4,
-   "pts": 7
   },
   {
    "rank": 18,
@@ -832,6 +832,148 @@
     8,
     7,
     -4
+   ],
+   [
+    "Elche",
+    18,
+    9,
+    7,
+    -6
+   ],
+   [
+    "Valencia",
+    19,
+    9,
+    6,
+    -9
+   ],
+   [
+    "Malaga",
+    20,
+    9,
+    4,
+    -12
+   ]
+  ],
+  "2026-10-22": [
+   [
+    "Barcelona",
+    1,
+    9,
+    27,
+    30
+   ],
+   [
+    "Ath Madrid",
+    2,
+    9,
+    22,
+    11
+   ],
+   [
+    "Real Madrid",
+    3,
+    9,
+    21,
+    14
+   ],
+   [
+    "Betis",
+    4,
+    9,
+    19,
+    2
+   ],
+   [
+    "Sociedad",
+    5,
+    9,
+    16,
+    0
+   ],
+   [
+    "Sevilla",
+    6,
+    9,
+    14,
+    -2
+   ],
+   [
+    "Alaves",
+    7,
+    9,
+    11,
+    3
+   ],
+   [
+    "Celta",
+    8,
+    9,
+    11,
+    3
+   ],
+   [
+    "La Coruna",
+    9,
+    9,
+    11,
+    1
+   ],
+   [
+    "Osasuna",
+    10,
+    9,
+    11,
+    -8
+   ],
+   [
+    "Levante",
+    11,
+    9,
+    10,
+    -2
+   ],
+   [
+    "Villarreal",
+    12,
+    9,
+    9,
+    0
+   ],
+   [
+    "Ath Bilbao",
+    13,
+    8,
+    9,
+    -1
+   ],
+   [
+    "Vallecano",
+    14,
+    8,
+    9,
+    -5
+   ],
+   [
+    "Getafe",
+    15,
+    9,
+    9,
+    -6
+   ],
+   [
+    "Espanol",
+    16,
+    9,
+    8,
+    -1
+   ],
+   [
+    "Santander",
+    17,
+    9,
+    8,
+    -12
    ],
    [
     "Elche",

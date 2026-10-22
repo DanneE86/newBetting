@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-21T10:40:09.071Z",
+  "updatedAt": "2026-10-22T11:16:49.242Z",
   "source": "football-data.co.uk Referee/HY/AY/HR/AR/HF/AF",
   "count": 145,
   "referees": [
@@ -543,17 +543,6 @@
       "homeWinRate": 0.414
     },
     {
-      "league": "CH",
-      "referee": "M Donohue",
-      "matches": 55,
-      "yellowPg": 3.96,
-      "redPg": 0.182,
-      "bookingPointsPg": 44.2,
-      "foulsPg": 22.4,
-      "goalsPg": 2.2,
-      "homeWinRate": 0.436
-    },
-    {
       "league": "PL",
       "referee": "J Gillett",
       "matches": 43,
@@ -563,6 +552,17 @@
       "foulsPg": 21,
       "goalsPg": 2.79,
       "homeWinRate": 0.279
+    },
+    {
+      "league": "CH",
+      "referee": "M Donohue",
+      "matches": 54,
+      "yellowPg": 3.94,
+      "redPg": 0.185,
+      "bookingPointsPg": 44.1,
+      "foulsPg": 22.3,
+      "goalsPg": 2.15,
+      "homeWinRate": 0.444
     },
     {
       "league": "PL",
