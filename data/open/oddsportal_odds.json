@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-22T11:16:07.743Z",
+  "updatedAt": "2026-10-22T16:02:23.070Z",
   "source": "oddsportal.com (1X2-snitt)",
   "report": {
     "PL": 21,
@@ -23,8 +23,8 @@
     "JP3": 0,
     "CZ": 8,
     "CL": 11,
-    "EL": 19,
-    "ECL": 19,
+    "EL": 18,
+    "ECL": 18,
     "SE2": 8,
     "ACL": 1,
     "ACL2": 0,
@@ -45,7 +45,7 @@
     "CH": 14,
     "LL": 22
   },
-  "eventCount": 288,
+  "eventCount": 284,
   "events": [
     {
       "league": "LIB",
@@ -6589,66 +6589,6 @@
     },
     {
       "league": "SAU",
-      "commence": "2026-10-22T13:40:00.000Z",
-      "home": "Al Hazem",
-      "away": "Al Fayha",
-      "homeRaw": "Al Hazem",
-      "awayRaw": "Al Fayha",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 2.45,
-        "draw": 3.4,
-        "away": 3.17,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 2.45,
-          "draw": 3.4,
-          "away": 3.17,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/saudi-arabia/saudi-professional-league/",
-      "fetchedAt": "2026-10-20T15:39:02.048Z"
-    },
-    {
-      "league": "SAU",
-      "commence": "2026-10-22T14:45:00.000Z",
-      "home": "Al Fateh",
-      "away": "Al Shabab",
-      "homeRaw": "Al Fateh",
-      "awayRaw": "Al Shabab",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 3.09,
-        "draw": 3.75,
-        "away": 2.18,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 3.09,
-          "draw": 3.75,
-          "away": 2.18,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/saudi-arabia/saudi-professional-league/",
-      "fetchedAt": "2026-10-20T15:39:02.048Z"
-    },
-    {
-      "league": "SAU",
       "commence": "2026-10-22T18:00:00.000Z",
       "home": "Al Ahli SC",
       "away": "Al Khaleej",
@@ -7556,9 +7496,9 @@
       "awayRaw": "AZ Alkmaar",
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
-        "home": 8,
-        "draw": 5,
-        "away": 1.4,
+        "home": 7.5,
+        "draw": 5.25,
+        "away": 1.41,
         "over25": null,
         "under25": null
       },
@@ -7566,16 +7506,16 @@
         {
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
-          "home": 8,
-          "draw": 5,
-          "away": 1.4,
+          "home": 7.5,
+          "draw": 5.25,
+          "away": 1.41,
           "over25": null,
           "under25": null
         }
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/europe/europa-league/",
-      "fetchedAt": "2026-10-22T11:15:52.560Z"
+      "fetchedAt": "2026-10-22T16:02:07.886Z"
     },
     {
       "league": "EL",
@@ -7588,7 +7528,7 @@
       "odds": {
         "home": 12,
         "draw": 7.5,
-        "away": 1.21,
+        "away": 1.22,
         "over25": null,
         "under25": null
       },
@@ -7598,44 +7538,14 @@
           "bookmaker": "OddsPortal (snitt)",
           "home": 12,
           "draw": 7.5,
-          "away": 1.21,
+          "away": 1.22,
           "over25": null,
           "under25": null
         }
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/europe/europa-league/",
-      "fetchedAt": "2026-10-22T11:15:52.560Z"
-    },
-    {
-      "league": "EL",
-      "commence": "2026-10-22T16:45:00.000Z",
-      "home": "Juventus",
-      "away": "Rennes",
-      "homeRaw": "Juventus",
-      "awayRaw": "Rennes",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 1.43,
-        "draw": 4.8,
-        "away": 7.5,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 1.43,
-          "draw": 4.8,
-          "away": 7.5,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/europe/europa-league/",
-      "fetchedAt": "2026-10-22T11:15:52.560Z"
+      "fetchedAt": "2026-10-22T16:02:07.886Z"
     },
     {
       "league": "EL",
@@ -7646,9 +7556,9 @@
       "awayRaw": "Nijmegen",
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
-        "home": 1.5,
-        "draw": 4.8,
-        "away": 6.25,
+        "home": 1.53,
+        "draw": 4.75,
+        "away": 5.75,
         "over25": null,
         "under25": null
       },
@@ -7656,16 +7566,16 @@
         {
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
-          "home": 1.5,
-          "draw": 4.8,
-          "away": 6.25,
+          "home": 1.53,
+          "draw": 4.75,
+          "away": 5.75,
           "over25": null,
           "under25": null
         }
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/europe/europa-league/",
-      "fetchedAt": "2026-10-22T11:15:52.560Z"
+      "fetchedAt": "2026-10-22T16:02:07.886Z"
     },
     {
       "league": "EL",
@@ -7676,9 +7586,9 @@
       "awayRaw": "Torreense",
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
-        "home": 1.31,
-        "draw": 5.5,
-        "away": 11,
+        "home": 1.38,
+        "draw": 5.25,
+        "away": 8.5,
         "over25": null,
         "under25": null
       },
@@ -7686,16 +7596,16 @@
         {
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
-          "home": 1.31,
-          "draw": 5.5,
-          "away": 11,
+          "home": 1.38,
+          "draw": 5.25,
+          "away": 8.5,
           "over25": null,
           "under25": null
         }
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/europe/europa-league/",
-      "fetchedAt": "2026-10-22T11:15:52.560Z"
+      "fetchedAt": "2026-10-22T16:02:07.886Z"
     },
     {
       "league": "EL",
@@ -7706,9 +7616,9 @@
       "awayRaw": "H. Beer Sheva",
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
-        "home": 1.38,
-        "draw": 5.25,
-        "away": 8,
+        "home": 1.45,
+        "draw": 4.9,
+        "away": 7,
         "over25": null,
         "under25": null
       },
@@ -7716,16 +7626,16 @@
         {
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
-          "home": 1.38,
-          "draw": 5.25,
-          "away": 8,
+          "home": 1.45,
+          "draw": 4.9,
+          "away": 7,
           "over25": null,
           "under25": null
         }
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/europe/europa-league/",
-      "fetchedAt": "2026-10-22T11:15:52.560Z"
+      "fetchedAt": "2026-10-22T16:02:07.886Z"
     },
     {
       "league": "EL",
@@ -7736,8 +7646,8 @@
       "awayRaw": "Rennes",
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
-        "home": 1.43,
-        "draw": 4.8,
+        "home": 1.44,
+        "draw": 5,
         "away": 7.5,
         "over25": null,
         "under25": null
@@ -7746,8 +7656,8 @@
         {
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
-          "home": 1.43,
-          "draw": 4.8,
+          "home": 1.44,
+          "draw": 5,
           "away": 7.5,
           "over25": null,
           "under25": null
@@ -7755,7 +7665,7 @@
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/europe/europa-league/",
-      "fetchedAt": "2026-10-22T11:15:52.560Z"
+      "fetchedAt": "2026-10-22T16:02:07.886Z"
     },
     {
       "league": "EL",
@@ -7767,8 +7677,8 @@
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
         "home": 4.5,
-        "draw": 3.95,
-        "away": 1.75,
+        "draw": 4,
+        "away": 1.83,
         "over25": null,
         "under25": null
       },
@@ -7777,15 +7687,15 @@
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
           "home": 4.5,
-          "draw": 3.95,
-          "away": 1.75,
+          "draw": 4,
+          "away": 1.83,
           "over25": null,
           "under25": null
         }
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/europe/europa-league/",
-      "fetchedAt": "2026-10-22T11:15:52.560Z"
+      "fetchedAt": "2026-10-22T16:02:07.886Z"
     },
     {
       "league": "EL",
@@ -7796,9 +7706,9 @@
       "awayRaw": "Marseille",
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
-        "home": 4.33,
+        "home": 3.6,
         "draw": 3.8,
-        "away": 1.88,
+        "away": 2.05,
         "over25": null,
         "under25": null
       },
@@ -7806,16 +7716,16 @@
         {
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
-          "home": 4.33,
+          "home": 3.6,
           "draw": 3.8,
-          "away": 1.88,
+          "away": 2.05,
           "over25": null,
           "under25": null
         }
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/europe/europa-league/",
-      "fetchedAt": "2026-10-22T11:15:52.560Z"
+      "fetchedAt": "2026-10-22T16:02:07.886Z"
     },
     {
       "league": "EL",
@@ -7826,9 +7736,9 @@
       "awayRaw": "AC Milan",
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
-        "home": 1.95,
-        "draw": 3.85,
-        "away": 3.6,
+        "home": 1.9,
+        "draw": 3.9,
+        "away": 3.9,
         "over25": null,
         "under25": null
       },
@@ -7836,16 +7746,16 @@
         {
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
-          "home": 1.95,
-          "draw": 3.85,
-          "away": 3.6,
+          "home": 1.9,
+          "draw": 3.9,
+          "away": 3.9,
           "over25": null,
           "under25": null
         }
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/europe/europa-league/",
-      "fetchedAt": "2026-10-22T11:15:52.560Z"
+      "fetchedAt": "2026-10-22T16:02:07.886Z"
     },
     {
       "league": "EL",
@@ -7875,7 +7785,7 @@
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/europe/europa-league/",
-      "fetchedAt": "2026-10-22T11:15:52.560Z"
+      "fetchedAt": "2026-10-22T16:02:07.886Z"
     },
     {
       "league": "EL",
@@ -7905,7 +7815,7 @@
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/europe/europa-league/",
-      "fetchedAt": "2026-10-22T11:15:52.560Z"
+      "fetchedAt": "2026-10-22T16:02:07.886Z"
     },
     {
       "league": "EL",
@@ -7916,8 +7826,8 @@
       "awayRaw": "Crystal Palace",
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
-        "home": 2.25,
-        "draw": 3.75,
+        "home": 2.2,
+        "draw": 3.8,
         "away": 3.1,
         "over25": null,
         "under25": null
@@ -7926,8 +7836,8 @@
         {
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
-          "home": 2.25,
-          "draw": 3.75,
+          "home": 2.2,
+          "draw": 3.8,
           "away": 3.1,
           "over25": null,
           "under25": null
@@ -7935,7 +7845,7 @@
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/europe/europa-league/",
-      "fetchedAt": "2026-10-22T11:15:52.560Z"
+      "fetchedAt": "2026-10-22T16:02:07.886Z"
     },
     {
       "league": "EL",
@@ -7946,8 +7856,8 @@
       "awayRaw": "Salzburg",
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
-        "home": 6,
-        "draw": 4.6,
+        "home": 6.25,
+        "draw": 4.7,
         "away": 1.55,
         "over25": null,
         "under25": null
@@ -7956,8 +7866,8 @@
         {
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
-          "home": 6,
-          "draw": 4.6,
+          "home": 6.25,
+          "draw": 4.7,
           "away": 1.55,
           "over25": null,
           "under25": null
@@ -7965,7 +7875,7 @@
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/europe/europa-league/",
-      "fetchedAt": "2026-10-22T11:15:52.560Z"
+      "fetchedAt": "2026-10-22T16:02:07.886Z"
     },
     {
       "league": "EL",
@@ -7976,9 +7886,9 @@
       "awayRaw": "Celta Vigo",
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
-        "home": 2.7,
-        "draw": 3.55,
-        "away": 2.55,
+        "home": 2.45,
+        "draw": 3.6,
+        "away": 2.88,
         "over25": null,
         "under25": null
       },
@@ -7986,16 +7896,16 @@
         {
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
-          "home": 2.7,
-          "draw": 3.55,
-          "away": 2.55,
+          "home": 2.45,
+          "draw": 3.6,
+          "away": 2.88,
           "over25": null,
           "under25": null
         }
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/europe/europa-league/",
-      "fetchedAt": "2026-10-22T11:15:52.560Z"
+      "fetchedAt": "2026-10-22T16:02:07.886Z"
     },
     {
       "league": "EL",
@@ -8006,9 +7916,9 @@
       "awayRaw": "Lyon",
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
-        "home": 2.05,
+        "home": 2,
         "draw": 4.2,
-        "away": 3.2,
+        "away": 3.4,
         "over25": null,
         "under25": null
       },
@@ -8016,16 +7926,16 @@
         {
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
-          "home": 2.05,
+          "home": 2,
           "draw": 4.2,
-          "away": 3.2,
+          "away": 3.4,
           "over25": null,
           "under25": null
         }
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/europe/europa-league/",
-      "fetchedAt": "2026-10-22T11:15:52.560Z"
+      "fetchedAt": "2026-10-22T16:02:07.886Z"
     },
     {
       "league": "EL",
@@ -8055,7 +7965,7 @@
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/europe/europa-league/",
-      "fetchedAt": "2026-10-22T11:15:52.560Z"
+      "fetchedAt": "2026-10-22T16:02:07.886Z"
     },
     {
       "league": "EL",
@@ -8066,9 +7976,9 @@
       "awayRaw": "Real Sociedad",
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
-        "home": 6.5,
+        "home": 6.25,
         "draw": 5,
-        "away": 1.47,
+        "away": 1.49,
         "over25": null,
         "under25": null
       },
@@ -8076,16 +7986,16 @@
         {
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
-          "home": 6.5,
+          "home": 6.25,
           "draw": 5,
-          "away": 1.47,
+          "away": 1.49,
           "over25": null,
           "under25": null
         }
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/europe/europa-league/",
-      "fetchedAt": "2026-10-22T11:15:52.560Z"
+      "fetchedAt": "2026-10-22T16:02:07.886Z"
     },
     {
       "league": "EL",
@@ -8096,9 +8006,9 @@
       "awayRaw": "Sparta Prague",
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
-        "home": 1.53,
-        "draw": 4.5,
-        "away": 6,
+        "home": 1.5,
+        "draw": 4.4,
+        "away": 6.5,
         "over25": null,
         "under25": null
       },
@@ -8106,46 +8016,16 @@
         {
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
-          "home": 1.53,
-          "draw": 4.5,
-          "away": 6,
+          "home": 1.5,
+          "draw": 4.4,
+          "away": 6.5,
           "over25": null,
           "under25": null
         }
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/europe/europa-league/",
-      "fetchedAt": "2026-10-22T11:15:52.560Z"
-    },
-    {
-      "league": "ECL",
-      "commence": "2026-10-22T14:30:00.000Z",
-      "home": "Kairat Almaty",
-      "away": "Panathinaikos",
-      "homeRaw": "Kairat Almaty",
-      "awayRaw": "Panathinaikos",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 5.25,
-        "draw": 4,
-        "away": 1.64,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 5.25,
-          "draw": 4,
-          "away": 1.64,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/europe/conference-league/",
-      "fetchedAt": "2026-10-22T11:15:52.560Z"
+      "fetchedAt": "2026-10-22T16:02:07.886Z"
     },
     {
       "league": "ECL",
@@ -8156,9 +8036,9 @@
       "awayRaw": "Brann",
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
-        "home": 4.75,
-        "draw": 4.2,
-        "away": 1.71,
+        "home": 5.25,
+        "draw": 3.95,
+        "away": 1.76,
         "over25": null,
         "under25": null
       },
@@ -8166,16 +8046,16 @@
         {
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
-          "home": 4.75,
-          "draw": 4.2,
-          "away": 1.71,
+          "home": 5.25,
+          "draw": 3.95,
+          "away": 1.76,
           "over25": null,
           "under25": null
         }
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/europe/conference-league/",
-      "fetchedAt": "2026-10-22T11:15:52.560Z"
+      "fetchedAt": "2026-10-22T16:02:07.886Z"
     },
     {
       "league": "ECL",
@@ -8186,9 +8066,9 @@
       "awayRaw": "Brighton",
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
-        "home": 14,
+        "home": 13,
         "draw": 7.5,
-        "away": 1.18,
+        "away": 1.2,
         "over25": null,
         "under25": null
       },
@@ -8196,16 +8076,16 @@
         {
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
-          "home": 14,
+          "home": 13,
           "draw": 7.5,
-          "away": 1.18,
+          "away": 1.2,
           "over25": null,
           "under25": null
         }
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/europe/conference-league/",
-      "fetchedAt": "2026-10-22T11:15:52.560Z"
+      "fetchedAt": "2026-10-22T16:02:07.886Z"
     },
     {
       "league": "ECL",
@@ -8216,9 +8096,9 @@
       "awayRaw": "FC Copenhagen",
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
-        "home": 2.25,
-        "draw": 3.65,
-        "away": 3.05,
+        "home": 2.15,
+        "draw": 3.6,
+        "away": 3.3,
         "over25": null,
         "under25": null
       },
@@ -8226,16 +8106,16 @@
         {
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
-          "home": 2.25,
-          "draw": 3.65,
-          "away": 3.05,
+          "home": 2.15,
+          "draw": 3.6,
+          "away": 3.3,
           "over25": null,
           "under25": null
         }
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/europe/conference-league/",
-      "fetchedAt": "2026-10-22T11:15:52.560Z"
+      "fetchedAt": "2026-10-22T16:02:07.886Z"
     },
     {
       "league": "ECL",
@@ -8246,9 +8126,9 @@
       "awayRaw": "CSKA Sofia",
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
-        "home": 1.44,
+        "home": 1.42,
         "draw": 5,
-        "away": 7,
+        "away": 7.5,
         "over25": null,
         "under25": null
       },
@@ -8256,16 +8136,16 @@
         {
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
-          "home": 1.44,
+          "home": 1.42,
           "draw": 5,
-          "away": 7,
+          "away": 7.5,
           "over25": null,
           "under25": null
         }
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/europe/conference-league/",
-      "fetchedAt": "2026-10-22T11:15:52.560Z"
+      "fetchedAt": "2026-10-22T16:02:07.886Z"
     },
     {
       "league": "ECL",
@@ -8276,9 +8156,9 @@
       "awayRaw": "Lugano",
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
-        "home": 1.95,
-        "draw": 3.45,
-        "away": 4.1,
+        "home": 2.2,
+        "draw": 3.2,
+        "away": 3.65,
         "over25": null,
         "under25": null
       },
@@ -8286,16 +8166,16 @@
         {
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
-          "home": 1.95,
-          "draw": 3.45,
-          "away": 4.1,
+          "home": 2.2,
+          "draw": 3.2,
+          "away": 3.65,
           "over25": null,
           "under25": null
         }
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/europe/conference-league/",
-      "fetchedAt": "2026-10-22T11:15:52.560Z"
+      "fetchedAt": "2026-10-22T16:02:07.886Z"
     },
     {
       "league": "ECL",
@@ -8306,9 +8186,9 @@
       "awayRaw": "Hearts",
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
-        "home": 1.27,
-        "draw": 6.5,
-        "away": 9,
+        "home": 1.33,
+        "draw": 6,
+        "away": 7.5,
         "over25": null,
         "under25": null
       },
@@ -8316,16 +8196,16 @@
         {
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
-          "home": 1.27,
-          "draw": 6.5,
-          "away": 9,
+          "home": 1.33,
+          "draw": 6,
+          "away": 7.5,
           "over25": null,
           "under25": null
         }
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/europe/conference-league/",
-      "fetchedAt": "2026-10-22T11:15:52.560Z"
+      "fetchedAt": "2026-10-22T16:02:07.886Z"
     },
     {
       "league": "ECL",
@@ -8336,9 +8216,9 @@
       "awayRaw": "Mjallby",
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
-        "home": 3.05,
-        "draw": 3.5,
-        "away": 2.35,
+        "home": 3,
+        "draw": 3.25,
+        "away": 2.55,
         "over25": null,
         "under25": null
       },
@@ -8346,16 +8226,16 @@
         {
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
-          "home": 3.05,
-          "draw": 3.5,
-          "away": 2.35,
+          "home": 3,
+          "draw": 3.25,
+          "away": 2.55,
           "over25": null,
           "under25": null
         }
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/europe/conference-league/",
-      "fetchedAt": "2026-10-22T11:15:52.560Z"
+      "fetchedAt": "2026-10-22T16:02:07.886Z"
     },
     {
       "league": "ECL",
@@ -8366,9 +8246,9 @@
       "awayRaw": "Univ. Craiova",
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
-        "home": 6,
-        "draw": 4.2,
-        "away": 1.58,
+        "home": 7,
+        "draw": 4.5,
+        "away": 1.52,
         "over25": null,
         "under25": null
       },
@@ -8376,16 +8256,16 @@
         {
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
-          "home": 6,
-          "draw": 4.2,
-          "away": 1.58,
+          "home": 7,
+          "draw": 4.5,
+          "away": 1.52,
           "over25": null,
           "under25": null
         }
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/europe/conference-league/",
-      "fetchedAt": "2026-10-22T11:15:52.560Z"
+      "fetchedAt": "2026-10-22T16:02:07.886Z"
     },
     {
       "league": "ECL",
@@ -8396,9 +8276,9 @@
       "awayRaw": "Riga FC",
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
-        "home": 1.6,
-        "draw": 4.2,
-        "away": 5.5,
+        "home": 1.76,
+        "draw": 4,
+        "away": 4.75,
         "over25": null,
         "under25": null
       },
@@ -8406,16 +8286,16 @@
         {
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
-          "home": 1.6,
-          "draw": 4.2,
-          "away": 5.5,
+          "home": 1.76,
+          "draw": 4,
+          "away": 4.75,
           "over25": null,
           "under25": null
         }
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/europe/conference-league/",
-      "fetchedAt": "2026-10-22T11:15:52.560Z"
+      "fetchedAt": "2026-10-22T16:02:07.886Z"
     },
     {
       "league": "ECL",
@@ -8445,7 +8325,7 @@
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/europe/conference-league/",
-      "fetchedAt": "2026-10-22T11:15:52.560Z"
+      "fetchedAt": "2026-10-22T16:02:07.886Z"
     },
     {
       "league": "ECL",
@@ -8456,9 +8336,9 @@
       "awayRaw": "Atalanta",
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
-        "home": 2.1,
-        "draw": 3.9,
-        "away": 3.3,
+        "home": 2,
+        "draw": 4,
+        "away": 3.4,
         "over25": null,
         "under25": null
       },
@@ -8466,16 +8346,16 @@
         {
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
-          "home": 2.1,
-          "draw": 3.9,
-          "away": 3.3,
+          "home": 2,
+          "draw": 4,
+          "away": 3.4,
           "over25": null,
           "under25": null
         }
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/europe/conference-league/",
-      "fetchedAt": "2026-10-22T11:15:52.560Z"
+      "fetchedAt": "2026-10-22T16:02:07.886Z"
     },
     {
       "league": "ECL",
@@ -8487,7 +8367,7 @@
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
         "home": 1.8,
-        "draw": 3.7,
+        "draw": 3.8,
         "away": 4.5,
         "over25": null,
         "under25": null
@@ -8497,7 +8377,7 @@
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
           "home": 1.8,
-          "draw": 3.7,
+          "draw": 3.8,
           "away": 4.5,
           "over25": null,
           "under25": null
@@ -8505,7 +8385,37 @@
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/europe/conference-league/",
-      "fetchedAt": "2026-10-22T11:15:52.560Z"
+      "fetchedAt": "2026-10-22T16:02:07.886Z"
+    },
+    {
+      "league": "ECL",
+      "commence": "2026-10-22T19:00:00.000Z",
+      "home": "Borac Banja Luka",
+      "away": "KuPS",
+      "homeRaw": "Borac Banja Luka",
+      "awayRaw": "KuPS",
+      "bookmaker": "OddsPortal (snitt)",
+      "odds": {
+        "home": 1.8,
+        "draw": 3.8,
+        "away": 4.5,
+        "over25": null,
+        "under25": null
+      },
+      "books": [
+        {
+          "key": "oddsportal",
+          "bookmaker": "OddsPortal (snitt)",
+          "home": 1.8,
+          "draw": 3.8,
+          "away": 4.5,
+          "over25": null,
+          "under25": null
+        }
+      ],
+      "source": "oddsportal",
+      "url": "https://www.oddsportal.com/football/europe/conference-league/",
+      "fetchedAt": "2026-10-22T16:02:07.886Z"
     },
     {
       "league": "ECL",
@@ -8517,7 +8427,7 @@
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
         "home": 1.9,
-        "draw": 3.7,
+        "draw": 3.6,
         "away": 4.1,
         "over25": null,
         "under25": null
@@ -8527,7 +8437,7 @@
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
           "home": 1.9,
-          "draw": 3.7,
+          "draw": 3.6,
           "away": 4.1,
           "over25": null,
           "under25": null
@@ -8535,7 +8445,7 @@
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/europe/conference-league/",
-      "fetchedAt": "2026-10-22T11:15:52.560Z"
+      "fetchedAt": "2026-10-22T16:02:07.886Z"
     },
     {
       "league": "ECL",
@@ -8547,7 +8457,7 @@
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
         "home": 2.15,
-        "draw": 3.7,
+        "draw": 3.75,
         "away": 3.25,
         "over25": null,
         "under25": null
@@ -8557,7 +8467,7 @@
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
           "home": 2.15,
-          "draw": 3.7,
+          "draw": 3.75,
           "away": 3.25,
           "over25": null,
           "under25": null
@@ -8565,7 +8475,7 @@
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/europe/conference-league/",
-      "fetchedAt": "2026-10-22T11:15:52.560Z"
+      "fetchedAt": "2026-10-22T16:02:07.886Z"
     },
     {
       "league": "ECL",
@@ -8576,9 +8486,9 @@
       "awayRaw": "Hajduk Split",
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
-        "home": 3,
-        "draw": 3.65,
-        "away": 2.35,
+        "home": 2.88,
+        "draw": 3.85,
+        "away": 2.3,
         "over25": null,
         "under25": null
       },
@@ -8586,16 +8496,16 @@
         {
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
-          "home": 3,
-          "draw": 3.65,
-          "away": 2.35,
+          "home": 2.88,
+          "draw": 3.85,
+          "away": 2.3,
           "over25": null,
           "under25": null
         }
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/europe/conference-league/",
-      "fetchedAt": "2026-10-22T11:15:52.560Z"
+      "fetchedAt": "2026-10-22T16:02:07.886Z"
     },
     {
       "league": "ECL",
@@ -8606,9 +8516,9 @@
       "awayRaw": "Twente",
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
-        "home": 13,
-        "draw": 7,
-        "away": 1.2,
+        "home": 15,
+        "draw": 8,
+        "away": 1.17,
         "over25": null,
         "under25": null
       },
@@ -8616,46 +8526,16 @@
         {
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
-          "home": 13,
-          "draw": 7,
-          "away": 1.2,
+          "home": 15,
+          "draw": 8,
+          "away": 1.17,
           "over25": null,
           "under25": null
         }
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/europe/conference-league/",
-      "fetchedAt": "2026-10-22T11:15:52.560Z"
-    },
-    {
-      "league": "ECL",
-      "commence": "2026-10-22T19:00:00.000Z",
-      "home": "Lincoln Red Imps",
-      "away": "Twente",
-      "homeRaw": "Lincoln Red Imps",
-      "awayRaw": "Twente",
-      "bookmaker": "OddsPortal (snitt)",
-      "odds": {
-        "home": 13,
-        "draw": 7,
-        "away": 1.2,
-        "over25": null,
-        "under25": null
-      },
-      "books": [
-        {
-          "key": "oddsportal",
-          "bookmaker": "OddsPortal (snitt)",
-          "home": 13,
-          "draw": 7,
-          "away": 1.2,
-          "over25": null,
-          "under25": null
-        }
-      ],
-      "source": "oddsportal",
-      "url": "https://www.oddsportal.com/football/europe/conference-league/",
-      "fetchedAt": "2026-10-22T11:15:52.560Z"
+      "fetchedAt": "2026-10-22T16:02:07.886Z"
     },
     {
       "league": "ECL",
@@ -8666,9 +8546,9 @@
       "awayRaw": "St. Truiden",
       "bookmaker": "OddsPortal (snitt)",
       "odds": {
-        "home": 1.71,
+        "home": 1.76,
         "draw": 4.1,
-        "away": 4.6,
+        "away": 4.75,
         "over25": null,
         "under25": null
       },
@@ -8676,16 +8556,16 @@
         {
           "key": "oddsportal",
           "bookmaker": "OddsPortal (snitt)",
-          "home": 1.71,
+          "home": 1.76,
           "draw": 4.1,
-          "away": 4.6,
+          "away": 4.75,
           "over25": null,
           "under25": null
         }
       ],
       "source": "oddsportal",
       "url": "https://www.oddsportal.com/football/europe/conference-league/",
-      "fetchedAt": "2026-10-22T11:15:52.560Z"
+      "fetchedAt": "2026-10-22T16:02:07.886Z"
     }
   ]
 }
