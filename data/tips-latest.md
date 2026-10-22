@@ -456,7 +456,7 @@ Masterdata: data/betting-store.json. Uppdatera: .\scripts\Update-BettingStore.ps
 | 2026-10-22 Al Ahli vs Al Khaleej (SAU) | O/U 2.5 | OVER 2.5 | - | Inga odds | - | - | - | - |
 | 2026-10-22 Toluca vs Club Tijuana (MX) | 1X2 | 1 | 1.43 | Ej varde | 1.52 | 500 kr -> +215 kr (1:0.43, EV +10 kr) | 71.4% / 69.9% | - |
 | 2026-10-22 Toluca vs Club Tijuana (MX) | O/U 2.5 | OVER 2.5 | - | Inga odds | - | - | - | - |
-| 2026-10-22 Al Fateh vs Al Shabab (SAU) | 1X2 | 1 | 2.75 | Ej varde | 3.41 | 500 kr -> +875 kr (1:1.75, EV -84 kr) | 30.2% / 36.4% | - |
+| 2026-10-22 Al Fateh vs Al Shabab (SAU) | 1X2 | 1 | 1.33 | Ej varde | 1.42 | 500 kr -> +165 kr (1:0.33, EV -16 kr) | 72.7% / 75.2% | - |
 | 2026-10-22 Al Fateh vs Al Shabab (SAU) | O/U 2.5 | UNDER 2.5 | - | Inga odds | - | - | - | - |
 | 2026-10-22 Pachuca vs Cruz Azul (MX) | 1X2 | 2 | 2.3 | Ej varde | 2.6 | 500 kr -> +650 kr (1:1.3, EV -21 kr) | 41.7% / 43.5% | - |
 | 2026-10-22 Pachuca vs Cruz Azul (MX) | O/U 2.5 | OVER 2.5 | - | Inga odds | - | - | - | - |
@@ -466,8 +466,8 @@ Masterdata: data/betting-store.json. Uppdatera: .\scripts\Update-BettingStore.ps
 | 2026-10-22 Atlas vs Club America (MX) | O/U 2.5 | OVER 2.5 | - | Inga odds | - | - | - | - |
 | 2026-10-22 Puebla vs Monterrey (MX) | 1X2 | 2 | 1.9 | Ej varde | 2.37 | 500 kr -> +450 kr (1:0.9, EV -66 kr) | 45.6% / 52.6% | - |
 | 2026-10-22 Puebla vs Monterrey (MX) | O/U 2.5 | UNDER 2.5 | - | Inga odds | - | - | - | - |
-| 2026-10-22 Al Hazem vs Al Fayha (SAU) | 1X2 | 1 | 2.45 | Ej varde | 2.46 | 500 kr -> +725 kr (1:1.45, EV +13 kr) | 41.9% / 40.8% | - |
-| 2026-10-22 Al Hazem vs Al Fayha (SAU) | O/U 2.5 | UNDER 2.5 | 1.81 | Ej varde | 1.98 | 500 kr -> +405 kr (1:0.81, EV -27 kr) | 52.2% / 55.3% | - |
+| 2026-10-22 Al Hazem vs Al Fayha (SAU) | 1X2 | 1 | 1.33 | Ej varde | 1.42 | 500 kr -> +165 kr (1:0.33, EV -16 kr) | 72.7% / 75.2% | - |
+| 2026-10-22 Al Hazem vs Al Fayha (SAU) | O/U 2.5 | UNDER 2.5 | - | Inga odds | - | - | - | - |
 | 2026-10-22 Independiente Santa Fe vs Jaguares de Córdoba (COL) | 1X2 | 1 | - | Inga odds | - | - | - | - |
 | 2026-10-22 Independiente Santa Fe vs Jaguares de Córdoba (COL) | O/U 2.5 | OVER 2.5 | - | Inga odds | - | - | - | - |
 | 2026-10-23 Gimnasia Mendoza vs Platense (AR) | 1X2 | 1 | 2.22 | Ej varde | 2.43 | 500 kr -> +610 kr (1:1.22, EV -28 kr) | 42.5% / 45.1% | - |
@@ -1894,8 +1894,6 @@ Masterdata: data/betting-store.json. Uppdatera: .\scripts\Update-BettingStore.ps
 | 2026-10-24 West Ham vs Southampton (CH) | O/U 2.5 | - | 2.65 | Ej varde | 3 | 500 kr -> +825 kr (1:1.65, EV -22 kr) | 36.1% / 37.7% | - |
 | 2026-10-24 Wolves vs Watford (CH) | 1X2 | 1 | 1.45 | Ej varde | 1.6 | 500 kr -> +225 kr (1:0.45, EV -23 kr) | 65.8% / 69.0% | - |
 | 2026-10-24 Wolves vs Watford (CH) | O/U 2.5 | OVER 2.5 | 1.6 | Ej varde | 1.75 | 500 kr -> +300 kr (1:0.6, EV -18 kr) | 60.3% / 62.5% | - |
-| 2026-10-22 Kairat Almaty vs Panathinaikos (ECL) | 1X2 | 2 | 1.67 | Ej varde | 1.77 | 500 kr -> +335 kr (1:0.67, EV -12 kr) | 58.4% / 59.9% | - |
-| 2026-10-22 Kairat Almaty vs Panathinaikos (ECL) | O/U 2.5 | OVER 2.5 | 1.83 | Ej varde | 1.98 | 500 kr -> +415 kr (1:0.83, EV -22 kr) | 52.2% / 54.6% | - |
 | 2026-10-22 Jablonec vs Brighton & Hove Albion (ECL) | 1X2 | 2 | 1.28 | Ej varde | 1.43 | 500 kr -> +140 kr (1:0.28, EV -37 kr) | 72.3% / 78.1% | - |
 | 2026-10-22 Jablonec vs Brighton & Hove Albion (ECL) | O/U 2.5 | - | 2.52 | Ej varde | 2.88 | 500 kr -> +760 kr (1:1.52, EV -26 kr) | 37.6% / 39.7% | - |
 | 2026-10-22 Red Star Belgrade vs F.C. København (ECL) | 1X2 | 1 | 2.25 | Ej varde | 2.48 | 500 kr -> +625 kr (1:1.25, EV -33 kr) | 41.5% / 44.4% | - |
