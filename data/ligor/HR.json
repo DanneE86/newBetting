@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-04T09:27:34.347Z",
+ "updatedAt": "2026-10-22T11:07:53.312Z",
  "league": "HR",
  "fotmobId": 252,
  "name": "HNL",
@@ -7,59 +7,59 @@
  "table": [
   {
    "rank": 1,
-   "team": "Dinamo Zagreb",
-   "fotmobName": "Dinamo Zagreb",
-   "fotmobId": 10156,
-   "group": null,
-   "played": 7,
-   "won": 5,
-   "drawn": 1,
-   "lost": 1,
-   "goals": "17-9",
-   "gd": 8,
-   "pts": 16
-  },
-  {
-   "rank": 2,
    "team": "Hajduk Split",
    "fotmobName": "Hajduk Split",
    "fotmobId": 10154,
    "group": null,
-   "played": 8,
-   "won": 5,
+   "played": 10,
+   "won": 7,
    "drawn": 1,
    "lost": 2,
-   "goals": "16-8",
-   "gd": 8,
-   "pts": 16
+   "goals": "19-9",
+   "gd": 10,
+   "pts": 22
+  },
+  {
+   "rank": 2,
+   "team": "Dinamo Zagreb",
+   "fotmobName": "Dinamo Zagreb",
+   "fotmobId": 10156,
+   "group": null,
+   "played": 9,
+   "won": 6,
+   "drawn": 1,
+   "lost": 2,
+   "goals": "23-12",
+   "gd": 11,
+   "pts": 19
   },
   {
    "rank": 3,
-   "team": "Osijek",
-   "fotmobName": "Osijek",
-   "fotmobId": 10157,
-   "group": null,
-   "played": 8,
-   "won": 5,
-   "drawn": 1,
-   "lost": 2,
-   "goals": "17-11",
-   "gd": 6,
-   "pts": 16
-  },
-  {
-   "rank": 4,
    "team": "Varaždin",
    "fotmobName": "NK Varaždin",
    "fotmobId": 10165,
    "group": null,
-   "played": 8,
-   "won": 4,
+   "played": 10,
+   "won": 5,
    "drawn": 3,
-   "lost": 1,
-   "goals": "13-7",
+   "lost": 2,
+   "goals": "14-8",
    "gd": 6,
-   "pts": 15
+   "pts": 18
+  },
+  {
+   "rank": 4,
+   "team": "Osijek",
+   "fotmobName": "Osijek",
+   "fotmobId": 10157,
+   "group": null,
+   "played": 10,
+   "won": 5,
+   "drawn": 2,
+   "lost": 3,
+   "goals": "19-15",
+   "gd": 4,
+   "pts": 17
   },
   {
    "rank": 5,
@@ -67,13 +67,13 @@
    "fotmobName": "Rijeka",
    "fotmobId": 10162,
    "group": null,
-   "played": 7,
-   "won": 4,
+   "played": 9,
+   "won": 5,
    "drawn": 2,
-   "lost": 1,
-   "goals": "13-7",
-   "gd": 6,
-   "pts": 14
+   "lost": 2,
+   "goals": "16-12",
+   "gd": 4,
+   "pts": 17
   },
   {
    "rank": 6,
@@ -81,13 +81,13 @@
    "fotmobName": "NK Istra 1961",
    "fotmobId": 6038,
    "group": null,
-   "played": 8,
-   "won": 2,
+   "played": 10,
+   "won": 3,
    "drawn": 3,
-   "lost": 3,
-   "goals": "14-13",
+   "lost": 4,
+   "goals": "17-16",
    "gd": 1,
-   "pts": 9
+   "pts": 12
   },
   {
    "rank": 7,
@@ -95,13 +95,13 @@
    "fotmobName": "NK Lokomotiva",
    "fotmobId": 175388,
    "group": null,
-   "played": 8,
-   "won": 2,
+   "played": 10,
+   "won": 3,
    "drawn": 1,
-   "lost": 5,
-   "goals": "11-16",
-   "gd": -5,
-   "pts": 7
+   "lost": 6,
+   "goals": "13-17",
+   "gd": -4,
+   "pts": 10
   },
   {
    "rank": 8,
@@ -109,41 +109,41 @@
    "fotmobName": "Slaven",
    "fotmobId": 1581,
    "group": null,
-   "played": 8,
-   "won": 2,
+   "played": 10,
+   "won": 3,
    "drawn": 1,
-   "lost": 5,
-   "goals": "7-16",
-   "gd": -9,
-   "pts": 7
+   "lost": 6,
+   "goals": "12-22",
+   "gd": -10,
+   "pts": 10
   },
   {
    "rank": 9,
-   "team": "HNK Gorica",
-   "fotmobName": "HNK Gorica",
-   "fotmobId": 206560,
-   "group": null,
-   "played": 8,
-   "won": 1,
-   "drawn": 2,
-   "lost": 5,
-   "goals": "5-12",
-   "gd": -7,
-   "pts": 5
-  },
-  {
-   "rank": 10,
    "team": "Rudeš",
    "fotmobName": "Rudeš",
    "fotmobId": 187866,
    "group": null,
-   "played": 8,
-   "won": 1,
+   "played": 10,
+   "won": 2,
    "drawn": 1,
-   "lost": 6,
-   "goals": "10-24",
+   "lost": 7,
+   "goals": "13-27",
    "gd": -14,
-   "pts": 4
+   "pts": 7
+  },
+  {
+   "rank": 10,
+   "team": "HNK Gorica",
+   "fotmobName": "HNK Gorica",
+   "fotmobId": 206560,
+   "group": null,
+   "played": 10,
+   "won": 1,
+   "drawn": 3,
+   "lost": 6,
+   "goals": "7-15",
+   "gd": -8,
+   "pts": 6
   }
  ],
  "tableHistory": {
@@ -361,6 +361,78 @@
     8,
     4,
     -14
+   ]
+  ],
+  "2026-10-22": [
+   [
+    "Hajduk Split",
+    1,
+    10,
+    22,
+    10
+   ],
+   [
+    "Dinamo Zagreb",
+    2,
+    9,
+    19,
+    11
+   ],
+   [
+    "Varaždin",
+    3,
+    10,
+    18,
+    6
+   ],
+   [
+    "Osijek",
+    4,
+    10,
+    17,
+    4
+   ],
+   [
+    "Rijeka",
+    5,
+    9,
+    17,
+    4
+   ],
+   [
+    "Istra 1961",
+    6,
+    10,
+    12,
+    1
+   ],
+   [
+    "Lokomotiva Zagreb",
+    7,
+    10,
+    10,
+    -4
+   ],
+   [
+    "Slaven Belupo Koprivnica",
+    8,
+    10,
+    10,
+    -10
+   ],
+   [
+    "Rudeš",
+    9,
+    10,
+    7,
+    -14
+   ],
+   [
+    "HNK Gorica",
+    10,
+    10,
+    6,
+    -8
    ]
   ]
  }

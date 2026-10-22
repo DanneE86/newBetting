@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-20T17:08:46.118Z",
+ "updatedAt": "2026-10-22T11:07:53.312Z",
  "league": "SAU",
  "fotmobId": 536,
  "name": "Saudi Pro League",
@@ -39,16 +39,30 @@
    "fotmobName": "Al Nassr FC",
    "fotmobId": 101918,
    "group": null,
-   "played": 8,
-   "won": 6,
+   "played": 9,
+   "won": 7,
    "drawn": 1,
    "lost": 1,
-   "goals": "19-7",
-   "gd": 12,
-   "pts": 19
+   "goals": "20-7",
+   "gd": 13,
+   "pts": 22
   },
   {
    "rank": 4,
+   "team": "Al Ittihad",
+   "fotmobName": "Al Ittihad",
+   "fotmobId": 8577,
+   "group": null,
+   "played": 9,
+   "won": 6,
+   "drawn": 2,
+   "lost": 1,
+   "goals": "18-10",
+   "gd": 8,
+   "pts": 20
+  },
+  {
+   "rank": 5,
    "team": "Al Ahli",
    "fotmobName": "Al Ahli",
    "fotmobId": 2530,
@@ -62,49 +76,21 @@
    "pts": 18
   },
   {
-   "rank": 5,
-   "team": "Al Ittihad",
-   "fotmobName": "Al Ittihad",
-   "fotmobId": 8577,
-   "group": null,
-   "played": 8,
-   "won": 5,
-   "drawn": 2,
-   "lost": 1,
-   "goals": "14-9",
-   "gd": 5,
-   "pts": 17
-  },
-  {
    "rank": 6,
    "team": "Neom SC",
    "fotmobName": "Neom SC",
    "fotmobId": 1699505,
    "group": null,
-   "played": 9,
+   "played": 10,
    "won": 5,
    "drawn": 1,
-   "lost": 3,
-   "goals": "14-8",
-   "gd": 6,
+   "lost": 4,
+   "goals": "14-9",
+   "gd": 5,
    "pts": 16
   },
   {
    "rank": 7,
-   "team": "Al Ettifaq",
-   "fotmobName": "Al-Ettifaq",
-   "fotmobId": 101915,
-   "group": null,
-   "played": 9,
-   "won": 4,
-   "drawn": 3,
-   "lost": 2,
-   "goals": "13-12",
-   "gd": 1,
-   "pts": 15
-  },
-  {
-   "rank": 8,
    "team": "Al Diriyah",
    "fotmobName": "Al Diriyah",
    "fotmobId": 1787233,
@@ -115,6 +101,20 @@
    "lost": 3,
    "goals": "9-9",
    "gd": 0,
+   "pts": 15
+  },
+  {
+   "rank": 8,
+   "team": "Al Ettifaq",
+   "fotmobName": "Al-Ettifaq",
+   "fotmobId": 101915,
+   "group": null,
+   "played": 10,
+   "won": 4,
+   "drawn": 3,
+   "lost": 3,
+   "goals": "14-16",
+   "gd": -2,
    "pts": 15
   },
   {
@@ -443,6 +443,134 @@
     10,
     15,
     0
+   ],
+   [
+    "Al Kholood",
+    9,
+    9,
+    12,
+    -4
+   ],
+   [
+    "Al Khaleej",
+    10,
+    10,
+    12,
+    -4
+   ],
+   [
+    "Al Hazem",
+    11,
+    10,
+    9,
+    -4
+   ],
+   [
+    "Al Riyadh",
+    12,
+    9,
+    9,
+    -9
+   ],
+   [
+    "Al Shabab",
+    13,
+    9,
+    8,
+    -2
+   ],
+   [
+    "Al Fayha",
+    14,
+    10,
+    7,
+    -7
+   ],
+   [
+    "Al Faisaly",
+    15,
+    9,
+    7,
+    -7
+   ],
+   [
+    "Al Fateh",
+    16,
+    10,
+    6,
+    -11
+   ],
+   [
+    "Al Taawoun",
+    17,
+    10,
+    4,
+    -13
+   ],
+   [
+    "Abha",
+    18,
+    8,
+    2,
+    -9
+   ]
+  ],
+  "2026-10-22": [
+   [
+    "Al Qadsiah",
+    1,
+    10,
+    25,
+    15
+   ],
+   [
+    "Al Hilal",
+    2,
+    9,
+    24,
+    20
+   ],
+   [
+    "Al Nassr",
+    3,
+    9,
+    22,
+    13
+   ],
+   [
+    "Al Ittihad",
+    4,
+    9,
+    20,
+    8
+   ],
+   [
+    "Al Ahli",
+    5,
+    9,
+    18,
+    11
+   ],
+   [
+    "Neom SC",
+    6,
+    10,
+    16,
+    5
+   ],
+   [
+    "Al Diriyah",
+    7,
+    10,
+    15,
+    0
+   ],
+   [
+    "Al Ettifaq",
+    8,
+    10,
+    15,
+    -2
    ],
    [
     "Al Kholood",

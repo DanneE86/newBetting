@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-20T17:08:46.118Z",
+ "updatedAt": "2026-10-22T11:07:53.312Z",
  "league": "NO2",
  "fotmobId": 203,
  "name": "OBOS-ligaen",
@@ -175,6 +175,20 @@
   },
   {
    "rank": 13,
+   "team": "Sogndal",
+   "fotmobName": "Sogndal",
+   "fotmobId": 8616,
+   "group": null,
+   "played": 27,
+   "won": 7,
+   "drawn": 6,
+   "lost": 14,
+   "goals": "44-60",
+   "gd": -16,
+   "pts": 27
+  },
+  {
+   "rank": 14,
    "team": "Sandnes Ulf",
    "fotmobName": "Sandnes Ulf",
    "fotmobId": 8133,
@@ -186,20 +200,6 @@
    "goals": "37-54",
    "gd": -17,
    "pts": 26
-  },
-  {
-   "rank": 14,
-   "team": "Sogndal",
-   "fotmobName": "Sogndal",
-   "fotmobId": 8616,
-   "group": null,
-   "played": 26,
-   "won": 6,
-   "drawn": 6,
-   "lost": 14,
-   "goals": "42-59",
-   "gd": -17,
-   "pts": 24
   },
   {
    "rank": 15,
@@ -221,12 +221,12 @@
    "fotmobName": "Raufoss",
    "fotmobId": 9812,
    "group": null,
-   "played": 26,
+   "played": 27,
    "won": 6,
    "drawn": 2,
-   "lost": 18,
-   "goals": "29-69",
-   "gd": -40,
+   "lost": 19,
+   "goals": "30-71",
+   "gd": -41,
    "pts": 20
   }
  ],
@@ -685,6 +685,120 @@
     26,
     20,
     -40
+   ]
+  ],
+  "2026-10-22": [
+   [
+    "Strømsgodset",
+    1,
+    27,
+    60,
+    43
+   ],
+   [
+    "Kongsvinger",
+    2,
+    27,
+    59,
+    39
+   ],
+   [
+    "Haugesund",
+    3,
+    27,
+    59,
+    33
+   ],
+   [
+    "Stabæk",
+    4,
+    27,
+    52,
+    30
+   ],
+   [
+    "Odd",
+    5,
+    27,
+    45,
+    13
+   ],
+   [
+    "Bryne",
+    6,
+    27,
+    39,
+    -1
+   ],
+   [
+    "Hødd",
+    7,
+    27,
+    38,
+    -6
+   ],
+   [
+    "Ranheim",
+    8,
+    27,
+    35,
+    1
+   ],
+   [
+    "Egersund",
+    9,
+    27,
+    34,
+    -11
+   ],
+   [
+    "Strømmen",
+    10,
+    27,
+    33,
+    -11
+   ],
+   [
+    "Lyn",
+    11,
+    27,
+    31,
+    -16
+   ],
+   [
+    "Moss",
+    12,
+    27,
+    29,
+    -16
+   ],
+   [
+    "Sogndal",
+    13,
+    27,
+    27,
+    -16
+   ],
+   [
+    "Sandnes Ulf",
+    14,
+    27,
+    26,
+    -17
+   ],
+   [
+    "Åsane",
+    15,
+    27,
+    22,
+    -24
+   ],
+   [
+    "Raufoss",
+    16,
+    27,
+    20,
+    -41
    ]
   ]
  }
