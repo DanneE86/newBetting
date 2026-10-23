@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-22T11:07:53.312Z",
+ "updatedAt": "2026-10-23T06:06:58.877Z",
  "league": "SAU",
  "fotmobId": 536,
  "name": "Saudi Pro League",
@@ -147,20 +147,34 @@
   },
   {
    "rank": 11,
+   "team": "Al Shabab",
+   "fotmobName": "Al Shabab",
+   "fotmobId": 101916,
+   "group": null,
+   "played": 10,
+   "won": 2,
+   "drawn": 5,
+   "lost": 3,
+   "goals": "14-14",
+   "gd": 0,
+   "pts": 11
+  },
+  {
+   "rank": 12,
    "team": "Al Hazem",
    "fotmobName": "Al Hazem",
    "fotmobId": 101911,
    "group": null,
-   "played": 10,
+   "played": 11,
    "won": 2,
-   "drawn": 3,
+   "drawn": 4,
    "lost": 5,
-   "goals": "10-14",
+   "goals": "12-16",
    "gd": -4,
-   "pts": 9
+   "pts": 10
   },
   {
-   "rank": 12,
+   "rank": 13,
    "team": "Al Riyadh",
    "fotmobName": "Al Riyadh",
    "fotmobId": 582739,
@@ -174,32 +188,18 @@
    "pts": 9
   },
   {
-   "rank": 13,
-   "team": "Al Shabab",
-   "fotmobName": "Al Shabab",
-   "fotmobId": 101916,
-   "group": null,
-   "played": 9,
-   "won": 1,
-   "drawn": 5,
-   "lost": 3,
-   "goals": "11-13",
-   "gd": -2,
-   "pts": 8
-  },
-  {
    "rank": 14,
    "team": "Al Fayha",
    "fotmobName": "Al-Fayha",
    "fotmobId": 582749,
    "group": null,
-   "played": 10,
+   "played": 11,
    "won": 1,
-   "drawn": 4,
+   "drawn": 5,
    "lost": 5,
-   "goals": "10-17",
+   "goals": "12-19",
    "gd": -7,
-   "pts": 7
+   "pts": 8
   },
   {
    "rank": 15,
@@ -221,12 +221,12 @@
    "fotmobName": "Al Fateh FC",
    "fotmobId": 177356,
    "group": null,
-   "played": 10,
+   "played": 11,
    "won": 1,
    "drawn": 3,
-   "lost": 6,
-   "goals": "9-20",
-   "gd": -11,
+   "lost": 7,
+   "goals": "10-23",
+   "gd": -13,
    "pts": 6
   },
   {
@@ -627,6 +627,134 @@
     10,
     6,
     -11
+   ],
+   [
+    "Al Taawoun",
+    17,
+    10,
+    4,
+    -13
+   ],
+   [
+    "Abha",
+    18,
+    8,
+    2,
+    -9
+   ]
+  ],
+  "2026-10-23": [
+   [
+    "Al Qadsiah",
+    1,
+    10,
+    25,
+    15
+   ],
+   [
+    "Al Hilal",
+    2,
+    9,
+    24,
+    20
+   ],
+   [
+    "Al Nassr",
+    3,
+    9,
+    22,
+    13
+   ],
+   [
+    "Al Ittihad",
+    4,
+    9,
+    20,
+    8
+   ],
+   [
+    "Al Ahli",
+    5,
+    9,
+    18,
+    11
+   ],
+   [
+    "Neom SC",
+    6,
+    10,
+    16,
+    5
+   ],
+   [
+    "Al Diriyah",
+    7,
+    10,
+    15,
+    0
+   ],
+   [
+    "Al Ettifaq",
+    8,
+    10,
+    15,
+    -2
+   ],
+   [
+    "Al Kholood",
+    9,
+    9,
+    12,
+    -4
+   ],
+   [
+    "Al Khaleej",
+    10,
+    10,
+    12,
+    -4
+   ],
+   [
+    "Al Shabab",
+    11,
+    10,
+    11,
+    0
+   ],
+   [
+    "Al Hazem",
+    12,
+    11,
+    10,
+    -4
+   ],
+   [
+    "Al Riyadh",
+    13,
+    9,
+    9,
+    -9
+   ],
+   [
+    "Al Fayha",
+    14,
+    11,
+    8,
+    -7
+   ],
+   [
+    "Al Faisaly",
+    15,
+    9,
+    7,
+    -7
+   ],
+   [
+    "Al Fateh",
+    16,
+    11,
+    6,
+    -13
    ],
    [
     "Al Taawoun",
