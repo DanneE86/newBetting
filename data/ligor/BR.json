@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-23T06:06:58.877Z",
+ "updatedAt": "2026-10-24T09:51:13.029Z",
  "league": "BR",
  "fotmobId": 268,
  "name": "Série A",
@@ -35,6 +35,20 @@
   },
   {
    "rank": 3,
+   "team": "Cruzeiro",
+   "fotmobName": "Cruzeiro",
+   "fotmobId": 9781,
+   "group": null,
+   "played": 32,
+   "won": 16,
+   "drawn": 6,
+   "lost": 10,
+   "goals": "51-46",
+   "gd": 5,
+   "pts": 54
+  },
+  {
+   "rank": 4,
    "team": "Athletico-PR",
    "fotmobName": "Athletico Paranaense",
    "fotmobId": 10273,
@@ -46,20 +60,6 @@
    "goals": "49-37",
    "gd": 12,
    "pts": 53
-  },
-  {
-   "rank": 4,
-   "team": "Cruzeiro",
-   "fotmobName": "Cruzeiro",
-   "fotmobId": 9781,
-   "group": null,
-   "played": 31,
-   "won": 15,
-   "drawn": 6,
-   "lost": 10,
-   "goals": "50-46",
-   "gd": 4,
-   "pts": 51
   },
   {
    "rank": 5,
@@ -263,12 +263,12 @@
    "fotmobName": "Remo",
    "fotmobId": 1626,
    "group": null,
-   "played": 31,
+   "played": 32,
    "won": 5,
    "drawn": 11,
-   "lost": 15,
-   "goals": "34-49",
-   "gd": -15,
+   "lost": 16,
+   "goals": "34-50",
+   "gd": -16,
    "pts": 26
   },
   {
@@ -988,6 +988,148 @@
     31,
     26,
     -15
+   ],
+   [
+    "Chapecoense-SC",
+    20,
+    30,
+    18,
+    -32
+   ]
+  ],
+  "2026-10-24": [
+   [
+    "Flamengo RJ",
+    1,
+    31,
+    67,
+    36
+   ],
+   [
+    "Palmeiras",
+    2,
+    31,
+    66,
+    32
+   ],
+   [
+    "Cruzeiro",
+    3,
+    32,
+    54,
+    5
+   ],
+   [
+    "Athletico-PR",
+    4,
+    31,
+    53,
+    12
+   ],
+   [
+    "Fluminense",
+    5,
+    31,
+    51,
+    10
+   ],
+   [
+    "Atletico-MG",
+    6,
+    31,
+    50,
+    7
+   ],
+   [
+    "Bahia",
+    7,
+    31,
+    49,
+    5
+   ],
+   [
+    "Santos",
+    8,
+    31,
+    45,
+    2
+   ],
+   [
+    "Sao Paulo",
+    9,
+    31,
+    42,
+    1
+   ],
+   [
+    "Bragantino",
+    10,
+    31,
+    41,
+    3
+   ],
+   [
+    "Botafogo RJ",
+    11,
+    31,
+    39,
+    -4
+   ],
+   [
+    "Coritiba",
+    12,
+    31,
+    39,
+    -11
+   ],
+   [
+    "Vitoria",
+    13,
+    31,
+    37,
+    -11
+   ],
+   [
+    "Mirassol",
+    14,
+    31,
+    36,
+    -8
+   ],
+   [
+    "Vasco",
+    15,
+    30,
+    35,
+    -7
+   ],
+   [
+    "Corinthians",
+    16,
+    31,
+    33,
+    -7
+   ],
+   [
+    "Internacional",
+    17,
+    31,
+    32,
+    -7
+   ],
+   [
+    "Gremio",
+    18,
+    31,
+    31,
+    -10
+   ],
+   [
+    "Remo",
+    19,
+    32,
+    26,
+    -16
    ],
    [
     "Chapecoense-SC",

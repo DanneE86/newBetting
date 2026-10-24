@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-23T06:06:58.877Z",
+ "updatedAt": "2026-10-24T09:51:13.029Z",
  "league": "BL",
  "fotmobId": 54,
  "name": "Bundesliga",
@@ -175,20 +175,6 @@
   },
   {
    "rank": 13,
-   "team": "Stuttgart",
-   "fotmobName": "VfB Stuttgart",
-   "fotmobId": 10269,
-   "group": null,
-   "played": 6,
-   "won": 2,
-   "drawn": 0,
-   "lost": 4,
-   "goals": "8-10",
-   "gd": -2,
-   "pts": 6
-  },
-  {
-   "rank": 14,
    "team": "Hoffenheim",
    "fotmobName": "Hoffenheim",
    "fotmobId": 8226,
@@ -198,6 +184,20 @@
    "drawn": 0,
    "lost": 4,
    "goals": "11-14",
+   "gd": -3,
+   "pts": 6
+  },
+  {
+   "rank": 14,
+   "team": "Stuttgart",
+   "fotmobName": "VfB Stuttgart",
+   "fotmobId": 10269,
+   "group": null,
+   "played": 7,
+   "won": 2,
+   "drawn": 0,
+   "lost": 5,
+   "goals": "10-13",
    "gd": -3,
    "pts": 6
   },
@@ -249,13 +249,13 @@
    "fotmobName": "Borussia Mönchengladbach",
    "fotmobId": 9788,
    "group": null,
-   "played": 6,
-   "won": 0,
+   "played": 7,
+   "won": 1,
    "drawn": 0,
    "lost": 6,
-   "goals": "8-20",
-   "gd": -12,
-   "pts": 0
+   "goals": "11-22",
+   "gd": -11,
+   "pts": 3
   }
  ],
  "tableHistory": {
@@ -897,6 +897,134 @@
     6,
     0,
     -12
+   ]
+  ],
+  "2026-10-24": [
+   [
+    "Bayern Munich",
+    1,
+    6,
+    14,
+    17
+   ],
+   [
+    "Dortmund",
+    2,
+    6,
+    14,
+    7
+   ],
+   [
+    "Freiburg",
+    3,
+    6,
+    13,
+    9
+   ],
+   [
+    "Leverkusen",
+    4,
+    6,
+    13,
+    7
+   ],
+   [
+    "Mainz",
+    5,
+    6,
+    10,
+    4
+   ],
+   [
+    "Elversberg",
+    6,
+    6,
+    10,
+    1
+   ],
+   [
+    "RB Leipzig",
+    7,
+    6,
+    9,
+    5
+   ],
+   [
+    "Werder Bremen",
+    8,
+    6,
+    9,
+    0
+   ],
+   [
+    "Hamburg",
+    9,
+    6,
+    9,
+    -9
+   ],
+   [
+    "Augsburg",
+    10,
+    6,
+    8,
+    4
+   ],
+   [
+    "Ein Frankfurt",
+    11,
+    6,
+    8,
+    -6
+   ],
+   [
+    "FC Koln",
+    12,
+    6,
+    7,
+    -3
+   ],
+   [
+    "Hoffenheim",
+    13,
+    6,
+    6,
+    -3
+   ],
+   [
+    "Stuttgart",
+    14,
+    7,
+    6,
+    -3
+   ],
+   [
+    "Schalke 04",
+    15,
+    6,
+    5,
+    -3
+   ],
+   [
+    "Paderborn",
+    16,
+    6,
+    5,
+    -4
+   ],
+   [
+    "Union Berlin",
+    17,
+    6,
+    5,
+    -12
+   ],
+   [
+    "M'gladbach",
+    18,
+    7,
+    3,
+    -11
    ]
   ]
  }

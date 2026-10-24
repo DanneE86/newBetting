@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-23T06:06:58.877Z",
+ "updatedAt": "2026-10-24T09:51:13.029Z",
  "league": "PL",
  "fotmobId": 47,
  "name": "Premier League",
@@ -119,6 +119,20 @@
   },
   {
    "rank": 9,
+   "team": "Ipswich",
+   "fotmobName": "Ipswich Town",
+   "fotmobId": 9902,
+   "group": null,
+   "played": 8,
+   "won": 3,
+   "drawn": 1,
+   "lost": 4,
+   "goals": "12-16",
+   "gd": -4,
+   "pts": 10
+  },
+  {
+   "rank": 10,
    "team": "Hull",
    "fotmobName": "Hull City",
    "fotmobId": 8667,
@@ -129,20 +143,6 @@
    "lost": 2,
    "goals": "8-7",
    "gd": 1,
-   "pts": 9
-  },
-  {
-   "rank": 10,
-   "team": "Ipswich",
-   "fotmobName": "Ipswich Town",
-   "fotmobId": 9902,
-   "group": null,
-   "played": 7,
-   "won": 3,
-   "drawn": 0,
-   "lost": 4,
-   "goals": "11-15",
-   "gd": -4,
    "pts": 9
   },
   {
@@ -217,6 +217,20 @@
   },
   {
    "rank": 16,
+   "team": "Nott'm Forest",
+   "fotmobName": "Nottingham Forest",
+   "fotmobId": 10203,
+   "group": null,
+   "played": 8,
+   "won": 1,
+   "drawn": 3,
+   "lost": 4,
+   "goals": "6-10",
+   "gd": -4,
+   "pts": 6
+  },
+  {
+   "rank": 17,
    "team": "Tottenham",
    "fotmobName": "Tottenham Hotspur",
    "fotmobId": 8586,
@@ -230,7 +244,7 @@
    "pts": 6
   },
   {
-   "rank": 17,
+   "rank": 18,
    "team": "Coventry",
    "fotmobName": "Coventry City",
    "fotmobId": 8669,
@@ -244,7 +258,7 @@
    "pts": 6
   },
   {
-   "rank": 18,
+   "rank": 19,
    "team": "Fulham",
    "fotmobName": "Fulham",
    "fotmobId": 9879,
@@ -255,20 +269,6 @@
    "lost": 4,
    "goals": "7-10",
    "gd": -3,
-   "pts": 5
-  },
-  {
-   "rank": 19,
-   "team": "Nott'm Forest",
-   "fotmobName": "Nottingham Forest",
-   "fotmobId": 10203,
-   "group": null,
-   "played": 7,
-   "won": 1,
-   "drawn": 2,
-   "lost": 4,
-   "goals": "5-9",
-   "gd": -4,
    "pts": 5
   },
   {
@@ -1272,6 +1272,148 @@
     7,
     5,
     -4
+   ],
+   [
+    "Sunderland",
+    20,
+    7,
+    4,
+    -8
+   ]
+  ],
+  "2026-10-24": [
+   [
+    "Man City",
+    1,
+    7,
+    21,
+    12
+   ],
+   [
+    "Arsenal",
+    2,
+    7,
+    18,
+    6
+   ],
+   [
+    "Brighton",
+    3,
+    7,
+    16,
+    18
+   ],
+   [
+    "Chelsea",
+    4,
+    7,
+    13,
+    4
+   ],
+   [
+    "Liverpool",
+    5,
+    7,
+    12,
+    1
+   ],
+   [
+    "Brentford",
+    6,
+    7,
+    10,
+    5
+   ],
+   [
+    "Leeds",
+    7,
+    7,
+    10,
+    3
+   ],
+   [
+    "Everton",
+    8,
+    7,
+    10,
+    1
+   ],
+   [
+    "Ipswich",
+    9,
+    8,
+    10,
+    -4
+   ],
+   [
+    "Hull",
+    10,
+    7,
+    9,
+    1
+   ],
+   [
+    "Newcastle",
+    11,
+    7,
+    8,
+    -4
+   ],
+   [
+    "Aston Villa",
+    12,
+    7,
+    8,
+    -4
+   ],
+   [
+    "Man United",
+    13,
+    7,
+    7,
+    0
+   ],
+   [
+    "Crystal Palace",
+    14,
+    7,
+    7,
+    -8
+   ],
+   [
+    "Bournemouth",
+    15,
+    7,
+    6,
+    -4
+   ],
+   [
+    "Nott'm Forest",
+    16,
+    8,
+    6,
+    -4
+   ],
+   [
+    "Tottenham",
+    17,
+    7,
+    6,
+    -4
+   ],
+   [
+    "Coventry",
+    18,
+    7,
+    6,
+    -8
+   ],
+   [
+    "Fulham",
+    19,
+    7,
+    5,
+    -3
    ],
    [
     "Sunderland",
