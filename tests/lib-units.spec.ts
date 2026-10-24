@@ -4976,6 +4976,21 @@ test.describe('ägarlås: bara ägarsessionen rör stryktipsfilerna', () => {
     expect(bash('git add -A', andrad, 'agaren')).toBeNull();
   });
 
+  test('"ta över" i användarens prompt flyttar ägarskapet till sessionen, nämnt område eller alla', async () => {
+    const { takeOver } = await krok();
+    const två = { omraden: { stryktips: { agent: 'agaren', sedan: '2026-10-20', filer: ['gui/public/stryk*'] }, hastar: { agent: 'agaren', filer: ['gui/public/hast*'] } } };
+    const alla = takeOver('Ta över den sessionen', två, 'ny', '2026-10-24');
+    expect(alla.areas).toEqual(['stryktips', 'hastar']);
+    expect(alla.cfg.omraden.stryktips).toMatchObject({ agent: 'ny', sedan: '2026-10-24', filer: ['gui/public/stryk*'] });
+    expect(två.omraden.stryktips.agent).toBe('agaren'); // originalet orört
+    expect(takeOver('ta över stryktipset', två, 'ny').areas).toEqual(['stryktips']);
+    expect(takeOver('fixa mobilläget', två, 'ny')).toBeNull();
+    expect(takeOver('ta över', två, 'agaren')).toBeNull();
+    expect(takeOver('ta över', två, '')).toBeNull();
+    const { decide } = await krok();
+    expect(decide({ tool: 'Edit', input: { file_path: path.join(ROOT, 'gui', 'public', 'stryktips.js') }, session: 'ny' }, alla.cfg, ren, ROOT)).toBeNull();
+  });
+
   test('config/agare.json: stryktips ägs av en session och täcker sidans, motorns och hämtningens filer', async () => {
     const { lockedArea } = await krok();
     const real = JSON.parse(fs.readFileSync(path.join(ROOT, 'config', 'agare.json'), 'utf8'));

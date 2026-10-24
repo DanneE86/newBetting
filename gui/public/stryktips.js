@@ -1,6 +1,6 @@
 // Flik "Stryktipset": kupong fran Svenska Spel + analys per match (data fran /api/stryktips).
-// En sida per spel: användaren låser krav (1, X, 2, 1X, X2, 12, 1X2) för kupong A, B eller båda, och resten av
-// kupongerna genereras i webbläsaren (stryk-engine.js).
+// En sida per spel: användaren låser krav (1, X, 2, 1X, X2, 12, 1X2) och kupong A (den enda,
+// 2026-10-24) genereras i webbläsaren (stryk-engine.js).
 import { generateCoupons, kravSigns, canFall, skrallTips, skrallKryss, clampFileRows, FILE_BUDGET, FILE_RULES } from "/stryk-engine.js";
 import { startelvaButton, startelvaPanel } from "/startelva.js";
 import { svsInfoPanel, svsDrawAnalysis } from "/svs-matchinfo.js";
@@ -135,7 +135,6 @@ const legend = () => `<p class="st-legend" aria-label="Förklaring">
   <span class="st-in c-green" title="${esc(COLOR_TITLE.green)}">Grön</span> folket ≥ 45 %
   <span class="st-in c-red" title="${esc(COLOR_TITLE.red)}">Röd</span> 25 % eller lägre (skräll)
   <span class="st-in c-spik" title="${esc(COLOR_TITLE.spik)}">Blå</span> spik, och tecken på 26–44 % (ingen färgregel)
-  <span class="st-b" title="Tecknet spelas också i kupong B">B</span> spelas även i kupong B
   <span>🍀 = turmatch</span>
   <span class="st-legend-note">Ifylld ruta med färgad ram = tecknet är med i kupong A (ramens färg = folkets streck, blå = spik eller blå halvgardering). Dämpad ruta = inte med i A.</span>
 </p>`;
@@ -376,11 +375,11 @@ function turExplain(e, t, { actions = false, krav = null } = {}) {
     : "";
   const saved = t.hist && t.g.miss ? ` Det hade räddat ${t.g.by[t.rescue]} av de ${t.g.miss} felen.` : "";
   const lg = t.league ? `<li>Extra: spikar i ${esc(t.league.name)} går sönder ofta, ${pct(t.league.rate)} av gångerna.</li>` : "";
-  const lockedA = ["both", "A", "all"].includes(krav?.scope);
+  const lockedA = !!krav;
   const btn = actions
     ? (lockedA
-      ? `<p class="tur-hint">Du har själv låst den här matchen i kupong A. Vill du ändra, klicka på tecknen i listan.</p>`
-      : `<button type="button" class="btn-ghost sb-tur-add ds-btn ds-btn--secondary ds-btn--sm" data-ev="${e.eventNumber}" data-signs="${esc(t.kravSigns)}">Lägg ${esc(t.kravSigns)} som krav i kupong B</button>`)
+      ? `<p class="tur-hint">Du har själv satt ett krav på den här matchen. Vill du ändra, klicka på tecknen i listan.</p>`
+      : `<button type="button" class="btn-ghost sb-tur-add ds-btn ds-btn--secondary ds-btn--sm" data-ev="${e.eventNumber}" data-signs="${esc(t.kravSigns)}">Lägg ${esc(t.kravSigns)} som krav</button>`)
     : "";
   return `<div class="tur-explain ds-notice ds-notice--success">
     <h4>🍀 Varför är det en turmatch?</h4>
@@ -389,7 +388,7 @@ function turExplain(e, t, { actions = false, krav = null } = {}) {
       <li>${past} ${dots}${coin} ${instead}</li>
       <li>Om det blir fel här kan kupong A <b>inte</b> få 13 rätt, hur bra de andra 12 matcherna än går. Därför behövs tur.</li>
       ${lg}
-      <li><b>Vad kan du göra?</b> Lägg till <b>${esc(t.rescue)}</b>, det som oftast kom i stället, och spela <b>${esc(t.kravSigns)}</b>.${saved} Det kostar fler rader i kupongen. Vill du inte ändra A kan du lägga ${esc(t.kravSigns)} i kupong B, så täcker B det A missar.</li>
+      <li><b>Vad kan du göra?</b> Lägg till <b>${esc(t.rescue)}</b>, det som oftast kom i stället, och spela <b>${esc(t.kravSigns)}</b>.${saved} Det kostar fler rader i kupongen.</li>
     </ol>
     ${btn}
   </div>`;
@@ -397,23 +396,20 @@ function turExplain(e, t, { actions = false, krav = null } = {}) {
 
 // Panel: turmatcherna i omgången (efter kupong A:s tecken) + historikens vanligaste missar
 // kravFor(nr) = användarens krav på matchen (B-sidan); krav som gäller A skrivs aldrig över av turknapparna
-function missPanel(p, events, { bCoupon = null, actions = false, kravFor = () => null } = {}) {
+function missPanel(p, events, { actions = false, kravFor = () => null } = {}) {
   const prof = missProf();
   if (!prof) return { tur: "", stats: "" };
   const turs = events.map((e, i) => ({ e, i, t: turInfo(e, e.systemPick?.signs) })).filter((x) => x.t?.tur).sort((a, b) => b.t.rate - a.t.rate);
   const pOk = turs.reduce((s, x) => s * (1 - x.t.rate), 1);
   const list = turs.length
     ? `<ol class="st-tur-list">${turs.map(({ e, i, t }) => {
-        const bPick = bCoupon?.picks[i]?.signs;
-        const bCovers = bPick && bPick.includes(t.rescue);
         return `<li>
           <div class="st-tur-head"><span class="st-num">${e.eventNumber}</span><b>${esc(e.home)} – ${esc(e.away)}</b>
             <span class="st-tip ${t.signs.length === 1 ? "spik" : "halv"}">${esc(t.signs.split("").join(" + "))}</span>
             <span class="st-chip tur">missar ${pct(t.rate)}</span>
-            ${bCoupon ? `<span class="st-chip ${bCovers ? "good" : "bad"}">${bCovers ? `B täcker ${esc(t.rescue)}` : `B saknar ${esc(t.rescue)}`}</span>` : ""}
-            ${actions ? (["both", "A", "all"].includes(kravFor(e.eventNumber)?.scope)
-              ? `<span class="st-sub" title="Ändra kravet i listan ovan om B ska spelas annorlunda">Ditt krav gäller A</span>`
-              : `<button type="button" class="btn-ghost sb-tur-add ds-btn ds-btn--secondary ds-btn--sm" data-ev="${e.eventNumber}" data-signs="${esc(t.kravSigns)}">Krav ${esc(t.kravSigns)} i B</button>`) : ""}
+            ${actions ? (kravFor(e.eventNumber)
+              ? `<span class="st-sub" title="Ändra kravet i listan ovan">Du har ett krav</span>`
+              : `<button type="button" class="btn-ghost sb-tur-add ds-btn ds-btn--secondary ds-btn--sm" data-ev="${e.eventNumber}" data-signs="${esc(t.kravSigns)}">Krav ${esc(t.kravSigns)}</button>`) : ""}
           </div>
           <p>${turText(t)}</p>
         </li>`;
@@ -449,8 +445,8 @@ function missPanel(p, events, { bCoupon = null, actions = false, kravFor = () =>
   // Två delar: turmatcherna (hopfällda, hör till kupongen) och historiken (hopfälld under Statistik & historik)
   const tur = `<details class="sb-panel st-tur st-fold ds-card"${keep("tur")}>
         <summary><h3>🍀 Turmatcher i omgången</h3><small>${turs.length} st · kupong A</small></summary>
-        <p class="st-sub">Matchtyper som historiskt har missat minst ${Math.round(TUR_RATE * 100)} % av gångerna – här krävs tur för 13 rätt${turs.length ? `. Chans att alla håller: ${pct(pOk)}` : ""}.${actions ? " Lägg in tecknet som oftast kom i stället som krav i kupong B, så täcker B det A missar." : ""}</p>
-        ${actions && turs.some(({ e }) => !["both", "A", "all"].includes(kravFor(e.eventNumber)?.scope)) ? `<button type="button" class="btn-ghost sb-tur-all ds-btn ds-btn--secondary ds-btn--sm">Lägg turmatcherna som krav i B</button>` : ""}
+        <p class="st-sub">Matchtyper som historiskt har missat minst ${Math.round(TUR_RATE * 100)} % av gångerna – här krävs tur för 13 rätt${turs.length ? `. Chans att alla håller: ${pct(pOk)}` : ""}.${actions ? " Lägg in tecknet som oftast kom i stället som krav, så täcker kupongen det." : ""}</p>
+        ${actions && turs.some(({ e }) => !kravFor(e.eventNumber)) ? `<button type="button" class="btn-ghost sb-tur-all ds-btn ds-btn--secondary ds-btn--sm">Lägg turmatcherna som krav</button>` : ""}
         ${list}
       </details>`;
   const stats = `<div class="st-miss">
@@ -495,8 +491,7 @@ function pocketAlert(e) {
   const who = { "1": e.home, X: "kryss", "2": e.away };
   const rows = e.pocket.map((s) => {
     const k = "1X2".indexOf(s);
-    const inA = e.systemPick?.signs?.includes(s), inB = e.systemPickB?.signs?.includes(s);
-    const cov = inA || inB ? `med i ${[inA && "A", inB && "B"].filter(Boolean).join(" och ")}` : "inte med i A eller B";
+    const cov = e.systemPick?.signs?.includes(s) ? "med i kupongen" : "inte med i kupongen";
     return `<li class="win"><b>${esc(s)}</b> (${esc(who[s])}): oddsen ${pc(e.market[k])}, folket ${pc(e.folk[k])} – ${(e.market[k] / e.folk[k]).toFixed(1).replace(".", ",")} × strecken <small>(${cov})</small></li>`;
   }).join("");
   return `<div class="ref-alert win pocket-alert" role="note"><span class="ref-alert-k">★ Skräll folket missar</span> Kort sagt: oddsen tror mer på tecknet än folket. Sådana skrällar i PL och Championship gick in 1,7 gånger så ofta som folket trodde (4 582 matcher 2023–2026), och betalar bra när de sitter. Vår procent är höjd 12 % för dem.<ul>${rows}</ul></div>`;
@@ -660,23 +655,14 @@ view.addEventListener("toggle", (ev) => {
   else keepOpen.delete(k);
 }, true);
 
-// ---------- Stryktipset B: egna krav ----------
-// Krav sparas per spel och omgång i webbläsaren: { signs: "1X", scope }. scope: "both" = A och B, "A"/"B" = bara den
-// kupongen, "C" = bara C, "all" = A, B och C.
-// Äldre sparade spikar ({ sign: "1" }) läses som krav med ett tecken. Sparad scope D/E visas som "all".
-// Sparad scope C (kupongen är dold) släpps: den gällde bara C och ska inte låsa A eller B.
-const SCOPES = [["both", "A+B"], ["A", "A"], ["B", "B"], ["C", "C"], ["all", "Alla"]];
-const SCOPE_TITLE = {
-  both: "Kravet gäller kupong A och B (rekommenderat)",
-  A: "Kravet gäller bara kupong A",
-  B: "Kravet gäller bara kupong B",
-  C: "Kravet gäller bara kupong C",
-  all: "Kravet gäller alla kupongerna",
-};
+// ---------- Stryktipset: egna krav ----------
+// Krav sparas per spel och omgång i webbläsaren: { signs: "1X", scope: "A" }. Bara kupong A finns (användaren 2026-10-24:
+// "ha bara kvar A så ta bort b och c"), så alla krav gäller A – även äldre sparade med scope B, C eller both.
+// Äldre sparade spikar ({ sign: "1" }) läses som krav med ett tecken.
 // Summa per filkupong (användaren 2026-10-12: "jag ska kunna bestämma summa fortfarande"). 1 kr per rad, sparas i
 // webbläsaren och gäller båda spelen.
 const FILE_BUDGET_KEY = "betting.fileBudget";
-const BUDGET_SYS = ["A", "B", "C"];
+const BUDGET_SYS = ["A"];
 let fileBudget = { A: FILE_RULES.rows, B: FILE_RULES.rows, C: FILE_RULES.rows };
 try {
   const s = JSON.parse(localStorage.getItem(FILE_BUDGET_KEY) || "{}");
@@ -689,8 +675,8 @@ const budgetChanged = (st) => !!st.genRows && BUDGET_SYS.some((sys) => fileBudge
 const bStates = new Map();
 const bKey = (p) => `betting.spikes.${p.product}.${p.drawNumber}`;
 // Egen fördelning per match (användaren 2026-10-12: "jag ska kunna bestämma fördelningen själv som förut"), som gamla
-// D/E/F %: { [eventNumber]: { A: [a,b,c], B: […], C: […] } } – andel rader per tecken i varje kupong. Av = kupongen väljer fritt.
-const SHARE_SYS = ["A", "B", "C"];
+// D/E/F %: { [eventNumber]: { A: [a,b,c] } } – andel rader per tecken i kupong A. Av = kupongen väljer fritt.
+const SHARE_SYS = ["A"];
 const SHARE_DEFAULT = [33, 33, 34];
 const sharesKey = (p) => `betting.fileShares.${p.product}.${p.drawNumber}`;
 const sharesPrevKey = (p) => `betting.fileSharesPrev.${p.product}.${p.drawNumber}`; // senaste På-värden (återställs vid På igen)
@@ -710,7 +696,7 @@ function bState(p) {
     }
     for (const [nr, x] of Object.entries(krav)) {
       const signs = kravTxt(x);
-      if (signs) krav[nr] = { signs, scope: x.scope || "both" };
+      if (signs) krav[nr] = { signs, scope: "A" };
       else delete krav[nr];
     }
     let sealed = [];
@@ -733,12 +719,12 @@ function saveSealed(p, st) {
     /* privat lage */
   }
 }
-/** Varför matchen inte går att låsa (A/B/C % som inte blir 100 %), annars null. */
+/** Varför matchen inte går att låsa (fördelning som inte blir 100 %), annars null. */
 function rowProblem(st, nr) {
   const pair = normalizeSharePair(st.shares?.[nr]);
   if (!pair) return null;
   const bad = SHARE_SYS.find((sys) => !shareSumMsg(pair[sys]).ok);
-  return bad ? `${bad}-raden: ${shareSumMsg(pair[bad]).text}` : null;
+  return bad ? `fördelningen: ${shareSumMsg(pair[bad]).text}` : null;
 }
 function saveKrav(p, st) {
   st.dirty = !!st.result;
@@ -751,7 +737,7 @@ function saveKrav(p, st) {
   }
 }
 
-// ---------- Egen fördelning A/B/C % per match ----------
+// ---------- Egen fördelning % per match (kupong A) ----------
 const clampShare = (x) => Math.max(0, Math.min(100, Math.round(Number(x) || 0)));
 /** Heltal % som summerar till 100 (största rest får det som fattas). */
 function roundTo100(raw) {
@@ -844,15 +830,15 @@ function shareRow(e, raw, i, res, busy, sealed) {
   const status = busy ? `<span class="sb-defall-status" role="status"><span class="sb-spin" aria-hidden="true"></span>${dists.some(Boolean) ? "uppdaterar…" : "räknar…"}</span>` : "";
   return `<div class="sb-defall${busy ? " is-busy" : ""}${on ? " is-on" : ""}" data-ev="${e.eventNumber}">
     <div class="sb-defall-head">
-      <span class="sb-defall-k" title="Av: så A, B och C spelat matchen. På: du bestämmer andelen rader på 1, X och 2 i varje kupong. Modell: ≈ vår chans.">A/B/C %${status}</span>
+      <span class="sb-defall-k" title="Av: så kupong A spelat matchen. På: du bestämmer andelen rader på 1, X och 2. Modell: ≈ vår chans.">Fördelning %${status}</span>
       <span class="sb-defall-actions">
-        ${on ? `<button type="button" class="ds-toggle" data-defall-model title="Sätt A, B och C från vår chans"${sealed ? " disabled" : ""}>Modell</button>` : ""}
-        <button type="button" class="ds-toggle sb-defall-on${on ? " active" : ""}" data-defall-toggle aria-pressed="${on}" title="${on ? "Stäng av – kupongerna väljer fritt igen" : "Slå på med samma % som visas nu"}"${sealed ? " disabled" : ""}>${on ? "På" : "Av"}</button>
+        ${on ? `<button type="button" class="ds-toggle" data-defall-model title="Sätt fördelningen från vår chans"${sealed ? " disabled" : ""}>Modell</button>` : ""}
+        <button type="button" class="ds-toggle sb-defall-on${on ? " active" : ""}" data-defall-toggle aria-pressed="${on}" title="${on ? "Stäng av – kupongen väljer fritt igen" : "Slå på med samma % som visas nu"}"${sealed ? " disabled" : ""}>${on ? "På" : "Av"}</button>
       </span>
     </div>
     ${on
       ? `${SHARE_SYS.map((sys) => shareEditLine(sys, pair[sys], sealed)).join("")}
-    <small class="sb-defall-hint${allOk ? "" : " is-bad"}">${allOk ? "Tryck Generera kupong så byggs filerna med din fördelning" : "Rätta varje rad (A, B och C) till 100 % innan du genererar"}</small>`
+    <small class="sb-defall-hint${allOk ? "" : " is-bad"}">${allOk ? "Tryck Generera kupong så byggs filen med din fördelning" : "Rätta till 100 % innan du genererar"}</small>`
       : `${SHARE_SYS.map((sys, k) => shareCouponLine(sys, dists[k], busy)).join("")}
     <small class="sb-defall-hint">Slå På för att bestämma fördelningen själv – startar med % som visas ovan</small>`}
   </div>`;
@@ -865,8 +851,6 @@ function sealButton(e, sealed) {
 }
 function kravRow(e, krav, pick, seal = null, share = null) {
   const sealed = !!seal?.sealed;
-  // Äldre sparade D/E-scope → Alla (D/E styrs via fördelning i stället)
-  const scope = (krav?.scope === "D" || krav?.scope === "E") ? "all" : (krav?.scope || "both");
   const signs = krav?.signs || "";
   const tur = turInfo(e, pick?.signs);
   // Modellens mest sannolika tecken markeras så man ser förslaget innan man sätter krav
@@ -880,9 +864,6 @@ function kravRow(e, krav, pick, seal = null, share = null) {
       <span class="sb-krav-lbl" title="${krav ? "Ditt krav på matchen" : "Inget krav – kupongen väljer själv"}">${krav ? `<span class="st-tip ${kravType(signs)}">${esc(signs)}</span>` : "inget krav"}</span>
       ${seal ? sealButton(e, sealed) : ""}
     </div>
-    ${krav
-      ? `<div class="sb-scope" role="group" aria-label="Kravet gäller"><span class="sb-scope-k">Gäller</span>${SCOPES.map(([k, lbl]) => `<button type="button" class="ds-toggle" data-scope="${k}" aria-pressed="${scope === k}" title="${esc(SCOPE_TITLE[k])}"${dis}>${lbl}</button>`).join("")}</div>`
-      : `<div class="sb-scope is-empty" aria-hidden="true"></div>`}
     ${share ? shareRow(e, share.raw, share.i, share.res, share.busy, sealed) : ""}
     ${seal?.error ? `<p class="sb-row-err" role="alert">${esc(seal.error)}</p>` : ""}
     ${tur?.tur && turOpen.has(turKey(e)) ? turExplain(e, tur, { actions: !sealed, krav }) : ""}
@@ -919,21 +900,17 @@ function egnaSignTable(c, p) {
   </details>`;
 }
 
-// Kupong A, B och C: egna rader, laddas ner som fil till Svenska Spels "Egna rader" (2026-10-11). Kortet visar inte
+// Kupong A: egna rader, laddas ner som fil till Svenska Spels "Egna rader" (2026-10-11). Kortet visar inte
 // chansen till 13 rätt (användaren 2026-10-02: ointressant).
 function couponCard(c, label, p) {
   const krFmt = (x) => Math.round(x).toLocaleString("sv-SE");
-  const tag = label === "C" ? `<span class="sb-coupon-tag extra">Skräll · egna rader</span>` : `<span class="sb-coupon-tag">Egna rader</span>`;
+  const tag = `<span class="sb-coupon-tag">Egna rader</span>`;
   if (!c) return `<div class="sb-coupon is-extra ds-card">${tag}<h3>Kupong ${label}</h3><p class="st-note bad ds-notice ds-notice--danger">Gick inte att bygga kupong ${label}: inga rader ger minst 30 000 kr med dina krav.</p></div>`;
   const file = `${p.product}-${p.drawNumber}-${label}.txt`;
   // Egna spikar: kupongen spikar inga andra matcher
   const own = c.picks.some((x) => x.locked && x.signs.length === 1);
-  const rules = {
-    A: `${own ? "dina spikar, inga andra matcher spikas" : `${FILE_RULES.spikes} spikar: omgångens ${FILE_RULES.spikes - FILE_RULES.skrallSpikes} starkaste favoriter och 1 skrällspik`}, sedan de ${c.rules.rowsTarget} troligaste raderna med minst ${krFmt(c.rules.payoutMin)} kr för 13 rätt`,
-    B: `${own ? "dina spikar" : `samma ${FILE_RULES.spikes} spikar`}, de ${c.rules.rowsTarget} nästa raderna (≥ ${krFmt(c.rules.payoutMin)} kr) som inte finns i A, med vikt på tecken A saknar`,
-    C: `${own ? "dina spikar" : `samma ${FILE_RULES.spikes} spikar`}, ${c.rules.rowsTarget} rader (≥ ${krFmt(c.rules.payoutMin)} kr) där underspelade tecken – vår chans minst 1,3 × folkets streck – väger mer`,
-  }[label];
-  return `<div class="sb-coupon ${label === "C" ? "is-extra" : "is-main"} ds-card">
+  const rules = `${own ? "dina spikar, inga andra matcher spikas" : `${FILE_RULES.spikes} spikar: omgångens ${FILE_RULES.spikes - FILE_RULES.skrallSpikes} starkaste favoriter och 1 skrällspik`}, sedan de ${c.rules.rowsTarget} troligaste raderna med minst ${krFmt(c.rules.payoutMin)} kr för 13 rätt`;
+  return `<div class="sb-coupon is-main ds-card">
     ${tag}
     <h3>Kupong ${label} <small>${c.rows} rader · ${krFmt(c.cost)} kr</small></h3>
     <dl class="sb-facts">
@@ -978,7 +955,7 @@ const sysMissMark = (m, sys) => m?.mark
   ? ` <span class="st-sysmiss${m.over ? " over" : ""}" title="Kupong ${sys}: ${esc(m.label)} missade ${m.miss} av ${m.n} gånger i bakkörningen (${pct(m.rate)}, vår chans sa ${pct(m.exp)})${m.over ? " – oftare än väntat" : ""}">⚠ ${pct(m.rate)}</span>`
   : "";
 
-// Risklag i B och C (användaren 2026-10-03: "markera risk matcher i b och c om du tippat dom"): kupongen har tippat på att ett
+// Risklag (användaren 2026-10-03: "markera risk matcher i b och c om du tippat dom"; i A sedan B och C togs bort 2026-10-24): kupongen har tippat på att ett
 // risklag (streckfavorit som sällan vinner denna säsong, e.streckFlop) vinner utan att helgardera matchen
 function riskTipped(e, signs) {
   if (!e?.streckFlop?.flagged || !signs || signs.length === 3) return null;
@@ -996,15 +973,15 @@ function couponTable(p, res) {
     const x = c?.picks[i];
     if (!x) return "<td>—</td>";
     const cls = x.signs.length === 1 ? "spik" : x.signs.length === 2 ? "halv" : "hel";
-    return `<td><span class="st-tip ${cls}${x.locked ? " mine" : ""}" title="${x.locked ? "Ditt krav" : esc(x.type)}">${x.locked ? "🔒 " : ""}${esc(x.signs.split("").join(" + "))}</span>${x.spikSkrall ? ` <span class="st-chip sb-skrallspik" title="Kupongens skrällspik: inte favorit, men folket har streckat tecknet för lite (förstavalet under Skrälltips)">skräll</span>` : ""}${sysMissMark(sysMiss(p.events[i], x.signs, sys), sys)}${sys === "A" ? "" : riskMark(riskTipped(p.events[i], x.signs), sys)}${fallMark(p.events[i], x.signs, sys)}</td>`;
+    return `<td><span class="st-tip ${cls}${x.locked ? " mine" : ""}" title="${x.locked ? "Ditt krav" : esc(x.type)}">${x.locked ? "🔒 " : ""}${esc(x.signs.split("").join(" + "))}</span>${x.spikSkrall ? ` <span class="st-chip sb-skrallspik" title="Kupongens skrällspik: inte favorit, men folket har streckat tecknet för lite (förstavalet under Skrälltips)">skräll</span>` : ""}${sysMissMark(sysMiss(p.events[i], x.signs, sys), sys)}${riskMark(riskTipped(p.events[i], x.signs), sys)}${fallMark(p.events[i], x.signs, sys)}</td>`;
   };
   const turCell = (e, i) => {
     const t = turInfo(e, res.A?.picks[i]?.signs);
     return t?.tur ? `<td><button type="button" class="st-chip tur tur-btn" data-ev="${e.eventNumber}" data-scroll="1">🍀 ${pct(t.rate)} · varför?</button></td>` : "<td></td>";
   };
   const prof = data?.missProfileSystems;
-  const marks = ["A", "B", "C"].reduce((n, s) => n + p.events.filter((e, i) => sysMiss(e, res[s]?.picks[i]?.signs, s)?.mark).length, 0);
-  const risks = ["B"].reduce((n, s) => n + p.events.filter((e, i) => riskTipped(e, res[s]?.picks[i]?.signs)).length, 0);
+  const marks = ["A"].reduce((n, s) => n + p.events.filter((e, i) => sysMiss(e, res[s]?.picks[i]?.signs, s)?.mark).length, 0);
+  const risks = p.events.filter((e, i) => riskTipped(e, res.A?.picks[i]?.signs)).length;
   const legend = prof && product === "stryktipset"
     ? `<p class="st-sub sb-miss-legend"><b>Kort sagt:</b> ⚠ visar tecken som systemet brukar ha fel på – ${marks} st i omgången.
        <b>Så läser du det här:</b> procenten är hur ofta just den kupongen missade sådana tecken i bakkörningen (${prof.draws} omgångar,
@@ -1012,17 +989,17 @@ function couponTable(p, res) {
        Håll musen över för detaljer.</p>`
     : "";
   const riskLegend = risks
-    ? `<p class="st-sub sb-risk-legend"><span class="sb-risk">⚠ risklag</span> = B har tippat att ett risklag vinner (${risks} st) – laget streckas ofta som favorit men vinner sällan denna säsong. Fundera på att gardera.</p>`
+    ? `<p class="st-sub sb-risk-legend"><span class="sb-risk">⚠ risklag</span> = kupongen har tippat att ett risklag vinner (${risks} st) – laget streckas ofta som favorit men vinner sällan denna säsong. Fundera på att gardera.</p>`
     : "";
   const falls = p.events.filter((e) => fallOf(e)).length;
-  const fallSpikes = ["A", "B", "C"].reduce((n, s) => n + p.events.filter((e, i) => fallMark(e, res[s]?.picks[i]?.signs, s)).length, 0);
+  const fallSpikes = ["A"].reduce((n, s) => n + p.events.filter((e, i) => fallMark(e, res[s]?.picks[i]?.signs, s)).length, 0);
   const fallLegend = falls
-    ? `<p class="st-sub sb-fall-legend"><b>Kort sagt:</b> <span class="fall-tag">⚠ kan falla</span> = favoriter som folket tror på men som vinner mer sällan än strecken säger – ${falls} st i omgången${fallSpikes ? `, ${fallSpikes} spikade i kupongerna (<span class="sb-fall">⚠ kan falla</span>)` : ""}.
+    ? `<p class="st-sub sb-fall-legend"><b>Kort sagt:</b> <span class="fall-tag">⚠ kan falla</span> = favoriter som folket tror på men som vinner mer sällan än strecken säger – ${falls} st i omgången${fallSpikes ? `, ${fallSpikes} spikade i kupongen (<span class="sb-fall">⚠ kan falla</span>)` : ""}.
        Lås gärna en gardering på dem som krav.</p>`
     : "";
   return `${legend}${riskLegend}${fallLegend}<div class="st-bt-wrap"><table class="sb-table ds-table">
-    <thead><tr><th>#</th><th>Match</th><th>Kupong A</th><th>Kupong B</th><th>Kupong C</th><th>Tur (A)</th></tr></thead>
-    <tbody>${p.events.map((e, i) => `<tr><td>${e.eventNumber}</td><th>${esc(e.home)} – ${esc(e.away)}</th>${cell(res.A, i, "A")}${cell(res.B, i, "B")}${cell(res.C, i, "C")}${turCell(e, i)}</tr>`).join("")}</tbody>
+    <thead><tr><th>#</th><th>Match</th><th>Kupong A</th><th>Tur</th></tr></thead>
+    <tbody>${p.events.map((e, i) => `<tr><td>${e.eventNumber}</td><th>${esc(e.home)} – ${esc(e.away)}</th>${cell(res.A, i, "A")}${turCell(e, i)}</tr>`).join("")}</tbody>
   </table></div>`;
 }
 
@@ -1073,7 +1050,7 @@ function runEngine(p, krav, rows) {
   });
 }
 
-/** Bygger filkupongerna A, B och C med kraven (i bakgrundstråden). */
+/** Bygger filkupongen A med kraven (i bakgrundstråden; motorn räknar B och C också, de visas inte). */
 async function generateInto(p, st) {
   const run = (st.run = (st.run || 0) + 1);
   try {
@@ -1095,7 +1072,8 @@ async function generateInto(p, st) {
 
 // Hämtar live-streck (öppen kupong) och genererar sedan. Misslyckas hämtningen används strecken från senaste hämtningen.
 async function liveGenerate(p, st) {
-  if (p.open) {
+  // Efter spelstopp finns inga live-streck (Svenska Spel svarar "Ingen öppen kupong") även om hämtningen sa öppen
+  if (p.open && !(p.regCloseTime && Date.parse(p.regCloseTime) <= Date.now())) {
     try {
       await refreshLive(p);
       st.liveError = null;
@@ -1103,7 +1081,7 @@ async function liveGenerate(p, st) {
       st.liveError = e.message;
     }
   }
-  // Live-streck påverkar A–C → alltid full omräkning
+  // Live-streck påverkar kupongen → alltid full omräkning
   await generateInto(p, st, { forceFull: true });
 }
 
@@ -1121,21 +1099,21 @@ function streckNote(p, st) {
 }
 
 // Skrällspikar och skrällkryss att läsa om (stryk-engine.js skrallTips/skrallKryss): två av varje att välja på, överst
-// på sidan, ligger inte i kupongerna. Kryssen är på andra matcher än spikarna. Säger om A–C ändå spikar dem.
+// på sidan, ligger inte i kupongen. Kryssen är på andra matcher än spikarna. Säger om A ändå spikar dem.
 // Hela rutan är uppfälld vid sidladdning; klick visar innehållet (användaren 2026-10-07).
 function skrallTipBox(p, res) {
   const tips = skrallTips(p.events);
   const kryss = skrallKryss(p.events);
   const n = tips.length + kryss.length;
   const pick = (kind) => (t, i) => {
-    const inC = ["A", "B", "C"].filter((k) => res?.[k]?.picks?.[t.i]?.signs === t.sign);
+    const inC = ["A"].filter((k) => res?.[k]?.picks?.[t.i]?.signs === t.sign);
     const facit = t.hit == null ? "" : ` <span class="st-chip ${t.hit ? "good" : "bad"}">${t.hit ? "Gick in" : "Gick inte in"}${t.score ? ` · ${esc(t.score)}` : ""}</span>`;
     const label = i === 0 ? "Förstaval" : t.weak ? "Reserv (svagare)" : "Andraval";
     const weakTxt = kind === "x" ? "Klarar inte hela kravet (minst 26 % och 2 procentenheter över folket) men är det bästa krysset som finns kvar." : "Klarar inte hela skrällkravet (minst 30 % och 3 procentenheter över folket) men är den bästa som finns kvar.";
     const what = kind === "x" ? ["Omgångens bästa skrällkryss.", "Näst bästa krysset, på en annan match."] : ["Omgångens bästa skräll.", "Näst bästa skrällen, på en annan match."];
     return `<div class="st-skrall-item">
       <p class="st-skrall-pick"><small class="st-skrall-rank">${label}</small><br><span class="st-num">${t.eventNumber}</span> <b>${esc(t.home)} – ${esc(t.away)}</b>: spika <b class="st-skrall-sign">${esc(t.sign)}</b> (${esc(t.outcome)})${facit}<br><small>${esc(kickoff(t.kickoff))} · ${esc(t.league || "")} · vår chans ${pct(t.p)}, folket ${pct(t.folk)}</small></p>
-      <p>${t.weak ? weakTxt : what[i === 0 ? 0 : 1]}${inC.length ? ` Kupong ${inC.join(" och ")} spikar redan ${esc(t.sign)} här.` : " Kupongerna spikar den inte – lägg den som krav själv om du vill."}</p>
+      <p>${t.weak ? weakTxt : what[i === 0 ? 0 : 1]}${inC.length ? ` Kupong ${inC.join(" och ")} spikar redan ${esc(t.sign)} här.` : " Kupongen spikar den inte – lägg den som krav själv om du vill."}</p>
       <details class="sb-howto"${keep(`skrall-${kind}-why-${i}`)}><summary>Varför?</summary><ul>${t.reasons.map((r) => `<li>${esc(r)}</li>`).join("")}</ul></details>
     </div>`;
   };
@@ -1188,12 +1166,11 @@ function renderB(p, head, top = "", extras = "") {
     <div class="sb-panel-head">
       <div>
         <h3>1. Välj dina krav <small>valfritt</small></h3>
-        <p class="st-sub">Klicka på tecknen i en match för att låsa dem, välj sedan vilken kupong kravet gäller. Procenten är vår sannolikhet, ● = mest sannolika tecknet.</p>
+        <p class="st-sub">Klicka på tecknen i en match för att låsa dem. Procenten är vår sannolikhet, ● = mest sannolika tecknet.</p>
         <details class="sb-howto"${keep("howto-krav")}><summary>Hur funkar det?</summary>
           <ul>
             <li>Ett tecken (1, X eller 2) är en <b>spik</b>, två tecken (1X, X2, 12) en <b>halvgardering</b> och alla tre en <b>helgardering</b>. Klicka igen för att ta bort ett tecken.</li>
-            <li><b>Gäller</b>: A+B, bara A, bara B, bara C eller Alla.</li>
-            <li><b>A/B/C %</b> under varje match: <b>Av</b> visar hur kupongerna spelat matchen. Slå <b>På</b> och skriv själv hur stor andel av raderna som ska ha 1, X och 2 i A, B och C (varje rad 100 %). <b>Modell</b> = vår chans. En match med egen fördelning spikas aldrig automatiskt.</li>
+            <li><b>Fördelning %</b> under varje match: <b>Av</b> visar hur kupongen spelat matchen. Slå <b>På</b> och skriv själv hur stor andel av raderna som ska ha 1, X och 2 (summa 100 %). <b>Modell</b> = vår chans. En match med egen fördelning spikas aldrig automatiskt.</li>
             <li>Matcher utan krav väljer kupongen själv. Tryck <b>Generera kupong</b> i raden längst ner när du är klar.</li>
             ${seal ? "<li>Klicka på <b>hänglåset</b> när du är klar med en match. En låst match går inte att ändra – klicka på låset igen för att låsa upp. Du behöver inte låsa alla matcher för att generera.</li>" : ""}
           </ul>
@@ -1210,33 +1187,31 @@ function renderB(p, head, top = "", extras = "") {
     ? `<section class="sb-panel sb-result ds-card">
         <h3>2. Din kupong</h3>
         ${st.dirty ? `<p class="st-note ds-notice ds-notice--warning">Du har ändrat kraven – tryck Generera kupong igen för att uppdatera.</p>` : ""}
-        <p class="st-sub"><b>Kort sagt:</b> tre filer (A ${kr(res.A)}, B ${kr(res.B)}, C ${kr(res.C)} kr – summan sätter du längst ner) som du laddar upp under Egna rader hos Svenska Spel. A är de troligaste raderna, B de nästa (inga rader gemensamt med A), C väger upp skrällarna folket missar.</p>
+        <p class="st-sub"><b>Kort sagt:</b> en fil med de troligaste raderna (${kr(res.A)} kr – summan sätter du längst ner) som du laddar upp under Egna rader hos Svenska Spel.</p>
         <details class="sb-howto"${keep("howto-kupong")}><summary>Hur funkar det?</summary>
           <ul>
-            <li>Inga Gambling Cabin-regler (färger, teckenregler, utdelningsband). Varje kupong är en <b>fil</b> med 1 rad per krona – summan för A, B och C sätter du längst ner (500 kr som standard) som du laddar upp under <b>Egna rader</b> hos Svenska Spel.</li>
-            <li><b>Spikar:</b> ${FILE_RULES.spikes} spikar i alla tre kupongerna – omgångens ${FILE_RULES.spikes - FILE_RULES.skrallSpikes} starkaste favoriter (vår procent) och 1 lite skrälligare: omgångens bästa skrällspik (förstavalet under Skrälltips, ett tecken som inte är favorit men som folket streckat för lite). Finns ingen skräll blir det ännu en stark favorit. <b>Har du egna spikar</b> spikas inga andra matcher – kupongen gör om dem till garderingar.</li>
-            <li><b>A:</b> de troligaste raderna där 13 rätt ger minst 30 000 kr. Golvet finns för att en 13:a ska vara värd något – utan det blev 13-rättarna 500–5 000 kr i bakkörningen.</li>
-            <li><b>B:</b> de nästa raderna som inte finns i A, med extra vikt på tecken A saknar. A och B har inga rader gemensamt, så A+B är ett system på ${kr(res.A)} + ${kr(res.B)} rader.</li>
-            <li><b>C:</b> rader där underspelade tecken – vår chans minst 20 % och minst 1,3 gånger folkets streck – väger mer. Det är skrällarna folket missar. C är fristående från A och B.</li>
-            <li>Förstavalet bland skrällspikarna överst på sidan är kupongernas skrällspik. Andravalet och skrällkryssen ligger inte i kupongerna – lägg dem som krav om du vill chansa.</li>
-            <li>⚠ i tabellen = tecken som just den kupongen brukar ha fel på (minst 30 % missar i bakkörningen), röd = oftare än vår egen chans sa.</li>
+            <li>Inga Gambling Cabin-regler (färger, teckenregler, utdelningsband). Kupongen är en <b>fil</b> med 1 rad per krona – summan sätter du längst ner (500 kr som standard) som du laddar upp under <b>Egna rader</b> hos Svenska Spel.</li>
+            <li><b>Spikar:</b> ${FILE_RULES.spikes} spikar – omgångens ${FILE_RULES.spikes - FILE_RULES.skrallSpikes} starkaste favoriter (vår procent) och 1 lite skrälligare: omgångens bästa skrällspik (förstavalet under Skrälltips, ett tecken som inte är favorit men som folket streckat för lite). Finns ingen skräll blir det ännu en stark favorit. <b>Har du egna spikar</b> spikas inga andra matcher – kupongen gör om dem till garderingar.</li>
+            <li>De troligaste raderna där 13 rätt ger minst 30 000 kr. Golvet finns för att en 13:a ska vara värd något – utan det blev 13-rättarna 500–5 000 kr i bakkörningen.</li>
+            <li>Förstavalet bland skrällspikarna överst på sidan är kupongens skrällspik. Andravalet och skrällkryssen ligger inte i kupongen – lägg dem som krav om du vill chansa.</li>
+            <li>⚠ i tabellen = tecken som kupongen brukar ha fel på (minst 30 % missar i bakkörningen), röd = oftare än vår egen chans sa.</li>
           </ul>
         </details>
         ${streckNote(p, st)}
-        <p class="st-note ds-notice"><b>Rekommendation:</b> spela kupong A, och B om du vill täcka mer. I bakkörningen (kupongarkivet) gav A ${p.product === "stryktipset" ? "ca 120 % tillbaka per krona (169 omgångar)" : "ca 117 % tillbaka (183 omgångar)"} – men det bygger på en eller två 13-rättare. Svenska Spel betalar tillbaka 65 %, så räkna med att förlora över tid – spela för en summa du klarar att förlora.</p>
+        <p class="st-note ds-notice"><b>Bra att veta:</b> i bakkörningen (kupongarkivet) gav A ${p.product === "stryktipset" ? "ca 120 % tillbaka per krona (169 omgångar)" : "ca 117 % tillbaka (183 omgångar)"} – men det bygger på en eller två 13-rättare. Svenska Spel betalar tillbaka 65 %, så räkna med att förlora över tid – spela för en summa du klarar att förlora.</p>
         ${couponTable(p, res)}
-        <div class="sb-coupons">${couponCard(res.A, "A", p, res)}${couponCard(res.B, "B", p, res)}${couponCard(res.C, "C", p, res)}</div>
+        <div class="sb-coupons">${couponCard(res.A, "A", p, res)}</div>
       </section>`
     : st.busy
       ? `<section class="sb-panel sb-result ds-card">
         <h3>2. Din kupong</h3>
-        <p class="st-sub" role="status" aria-live="polite">Räknar fram kupongerna med ${p.open ? "live-streck" : "hämtningens streck"} – det tar en stund (upp till en halv minut). Du kan läsa matcherna under tiden.</p>
+        <p class="st-sub" role="status" aria-live="polite">Räknar fram kupongen med ${p.open ? "live-streck" : "hämtningens streck"} – det tar en stund (upp till en halv minut). Du kan läsa matcherna under tiden.</p>
       </section>`
       : "";
   // Matchkorten visar den genererade kupongen (eller hämtningens kupong A innan något genererats)
-  const events = p.events.map((e, i) => ({ ...e, systemPick: picksA[i], systemPickB: res?.B?.picks[i] || null }));
-  const pv = { ...p, reducedB: { split: false } }; // B är alltid ett eget system här, visa B-chippen
-  const miss = missPanel(p, events, { bCoupon: res?.B || null, actions: true, kravFor: (nr) => st.krav[nr] });
+  const events = p.events.map((e, i) => ({ ...e, systemPick: picksA[i], systemPickB: null }));
+  const pv = p;
+  const miss = missPanel(p, events, { actions: true, kravFor: (nr) => st.krav[nr] });
   const matches = `<details class="sb-panel st-matches st-fold ds-card"${keep("matches")}>
     <summary><h3>3. Matcherna</h3><small>analys per match</small></summary>
     ${legend()}
@@ -1263,7 +1238,6 @@ function handleB(ev) {
   const st = bState(p);
   const row = ev.target.closest(".sb-row");
   const signBtn = ev.target.closest(".sb-sign");
-  const scopeBtn = ev.target.closest(".sb-scope button");
   const seal = usesSeal(p);
   const sealBtn = ev.target.closest("[data-seal]");
   if (seal && sealBtn) {
@@ -1288,25 +1262,19 @@ function handleB(ev) {
     return true;
   }
   // Låst match: inget i raden går att ändra (bara låset och turförklaringen)
-  if (seal && row && st.sealed.has(Number(row.dataset.ev)) && ev.target.closest(".sb-sign, .sb-scope button, [data-defall-toggle], [data-defall-model], .sb-tur-add")) return true;
+  if (seal && row && st.sealed.has(Number(row.dataset.ev)) && ev.target.closest(".sb-sign, [data-defall-toggle], [data-defall-model], .sb-tur-add")) return true;
   if (row) delete st.rowError[row.dataset.ev];
   if (row && signBtn) {
     const nr = row.dataset.ev, s = signBtn.dataset.sign;
     const cur = st.krav[nr]?.signs || "";
     const next = SIGNS.filter((x) => (x === s ? !cur.includes(x) : cur.includes(x))).join("");
-    if (next) st.krav[nr] = { signs: next, scope: st.krav[nr]?.scope || "both" };
+    if (next) st.krav[nr] = { signs: next, scope: "A" };
     else delete st.krav[nr];
     saveKrav(p, st);
     render();
     return true;
   }
-  if (row && scopeBtn && st.krav[row.dataset.ev]) {
-    st.krav[row.dataset.ev].scope = scopeBtn.dataset.scope;
-    saveKrav(p, st);
-    render();
-    return true;
-  }
-  // A/B/C %: På = egna andelar per kupong, Av = kupongen väljer fritt. På tar samma % som Av visade (så kupongerna
+  // Fördelning %: På = egna andelar, Av = kupongen väljer fritt. På tar samma % som Av visade (så kupongerna
   // spelat), annars senaste På-värden, annars modellen.
   const shareToggle = ev.target.closest("[data-defall-toggle]");
   const shareModel = ev.target.closest("[data-defall-model]");
@@ -1324,14 +1292,14 @@ function handleB(ev) {
     window.scrollTo(0, y);
     return true;
   }
-  // Turmatcher: lägg tecknet som oftast kom i stället som krav i kupong B
+  // Turmatcher: lägg tecknet som oftast kom i stället som krav
   const turBtn = ev.target.closest(".sb-tur-add");
   if (turBtn || ev.target.closest(".sb-tur-all")) {
     const btns = turBtn ? [turBtn] : [...view.querySelectorAll(".sb-tur-add")];
     for (const b of btns) {
-      if (["both", "A", "all"].includes(st.krav[b.dataset.ev]?.scope)) continue; // kupong A:s krav ligger kvar
+      if (st.krav[b.dataset.ev]) continue; // ditt eget krav ligger kvar
       if (seal && st.sealed.has(Number(b.dataset.ev))) continue;
-      st.krav[b.dataset.ev] = { signs: b.dataset.signs, scope: "B" };
+      st.krav[b.dataset.ev] = { signs: b.dataset.signs, scope: "A" };
     }
     saveKrav(p, st);
     render();
@@ -1346,7 +1314,7 @@ function handleB(ev) {
     return true;
   }
   if (ev.target.closest("#sb-generate")) {
-    // Bara A/B/C % som inte blir 100 % stoppar – olåsta matcher går bra
+    // Bara fördelning som inte blir 100 % stoppar – olåsta matcher går bra
     const bad = p.events.find((e) => rowProblem(st, e.eventNumber));
     st.genError = bad ? { nr: bad.eventNumber, text: `Match ${bad.eventNumber}: ${rowProblem(st, bad.eventNumber)}. Rätta till 100 % först.` } : null;
     if (st.genError) {
@@ -1396,7 +1364,7 @@ function applyFileBudgetInput(inp, { save }) {
   const txt = view.querySelector(".sb-actionbar-txt");
   if (txt && !txt.querySelector(".sb-dirty")) txt.insertAdjacentHTML("beforeend", `<span class="sb-dirty"> · ändrat<span class="sb-dirty-long"> – generera igen</span></span>`);
 }
-// A/B/C %: live-summa per rad (rött om inte 100 %) utan att rita om, spara vid change
+// Fördelning %: live-summa (rött om inte 100 %) utan att rita om, spara vid change
 function applyShareInput(inp, { save }) {
   const p = data?.products?.find((x) => x.product === product);
   if (!p) return;
@@ -1430,7 +1398,7 @@ function applyShareInput(inp, { save }) {
   const allOk = SHARE_SYS.every((s) => shareSumMsg(pair[s]).ok);
   const hint = box.querySelector(".sb-defall-hint");
   if (hint) {
-    hint.textContent = allOk ? "Tryck Generera kupong så byggs filerna med din fördelning" : "Rätta varje rad (A, B och C) till 100 % innan du genererar";
+    hint.textContent = allOk ? "Tryck Generera kupong så byggs filen med din fördelning" : "Rätta till 100 % innan du genererar";
     hint.classList.toggle("is-bad", !allOk);
   }
   if (st.result && !st.dirty) {

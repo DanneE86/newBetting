@@ -123,7 +123,7 @@ for (const vy of ['stryktipset', 'europatipset'] as const) {
 
 // Kupongerna räknas i en bakgrundstråd (stryk-worker.js, 2026-10-05): sidan visas direkt och går att använda medan
 // motorn räknar, och räkningen görs en gång (förut två gånger på huvudtråden, ~80 s med låst sida).
-test('Stryktipset: matcherna syns direkt, kupongerna räknas i bakgrunden, sedan kupong A–C', async ({ page }) => {
+test('Stryktipset: matcherna syns direkt, kupongerna räknas i bakgrunden, sedan kupong A', async ({ page }) => {
   const workers: string[] = [];
   page.on('worker', (w: any) => workers.push(w.url()));
   const fel = await oppna(page, 'stryktipset');
@@ -138,10 +138,11 @@ test('Stryktipset: matcherna syns direkt, kupongerna räknas i bakgrunden, sedan
   await expect(view.locator('.sb-result [role=status]')).toHaveCount(0);
   await expect(page.locator('#sb-generate')).toBeEnabled();
   expect(workers.filter((u) => u.includes('/stryk-worker.js')), 'en räkning vid laddning').toHaveLength(1);
+  await expect(view.locator('.sb-coupon'), 'bara kupong A (2026-10-24)').toHaveCount(1);
   expect(fel, fel.join('\n')).toEqual([]);
 });
 
-test('Stryktipset: kupongtabellen markerar tecken som A, B och C brukar ha fel på (⚠), inga JS-fel', async ({ page }) => {
+test('Stryktipset: kupongtabellen markerar tecken som A brukar ha fel på (⚠), inga JS-fel', async ({ page }) => {
   const data = JSON.parse(fs.readFileSync(path.join(root, 'data', 'stryktipset.json'), 'utf8'));
   test.skip(!data.missProfileSystems, 'ingen missprofil per system i data/stryktipset.json');
   const fel = await oppna(page, 'stryktipset');
@@ -157,24 +158,21 @@ test('Stryktipset: kupongtabellen markerar tecken som A, B och C brukar ha fel p
   const n = Number((await legend.textContent())!.match(/(\d+) st i omgången/)![1]);
   await expect(table.locator('.st-sysmiss')).toHaveCount(n);
   if (n) await expect(table.locator('.st-sysmiss').first()).toHaveAttribute('title', /missade \d+ av \d+ gånger i bakkörningen/);
-  // Risklag i B och C (2026-10-03): markering när kupongen tippat risklagets seger utan helgardering, aldrig i A
+  // Risklag (2026-10-03, i A sedan 2026-10-24): markering när kupongen tippat risklagets seger utan helgardering
   const p = data.products.find((x: any) => x.product === 'stryktipset');
   const rows = table.locator('tbody tr');
   for (let i = 0; i < p.events.length; i++) {
     const e = p.events[i];
-    const tds = rows.nth(i).locator('td');
-    await expect(tds.nth(1).locator('.sb-risk'), `match ${i + 1} A`).toHaveCount(0);
-    for (const [col, sys] of [[2, 'B'], [3, 'C']] as const) {
-      const signs = ((await tds.nth(col).locator('.st-tip').textContent()) || '').replace(/[^1X2]/g, '');
-      const want = !!e.streckFlop?.flagged && signs.length < 3 && ((e.streckFlop.home && signs.includes('1')) || (e.streckFlop.away && signs.includes('2')));
-      await expect(tds.nth(col).locator('.sb-risk'), `match ${i + 1} ${sys} ${signs}`).toHaveCount(want ? 1 : 0);
-    }
+    const td = rows.nth(i).locator('td').nth(1);
+    const signs = ((await td.locator('.st-tip').textContent()) || '').replace(/[^1X2]/g, '');
+    const want = !!e.streckFlop?.flagged && signs.length < 3 && ((e.streckFlop.home && signs.includes('1')) || (e.streckFlop.away && signs.includes('2')));
+    await expect(td.locator('.sb-risk'), `match ${i + 1} A ${signs}`).toHaveCount(want ? 1 : 0);
   }
   await table.screenshot({ path: path.join(root, 'test-results', 'stryktips-sysmiss.png') });
   expect(fel, fel.join('\n')).toEqual([]);
 });
 
-test('Stryktipset: krav på risklagets seger i B ger markeringen ⚠ risklag i B men aldrig i A', async ({ page }) => {
+test('Stryktipset: krav på risklagets seger ger markeringen ⚠ risklag i kupong A', async ({ page }) => {
   const data = JSON.parse(fs.readFileSync(path.join(root, 'data', 'stryktipset.json'), 'utf8'));
   const p = data.products.find((x: any) => x.product === 'stryktipset');
   const e = p?.events.find((x: any) => x.streckFlop?.flagged);
@@ -185,17 +183,36 @@ test('Stryktipset: krav på risklagets seger i B ger markeringen ⚠ risklag i B
   const row = view.locator(`.sb-row[data-ev="${e.eventNumber}"]`);
   await expect(row).toBeVisible({ timeout: 30_000 });
   await row.locator(`.sb-sign[data-sign="${sign}"]`).click();
-  await row.locator('.sb-scope [data-scope="B"]').click();
   await lasAlla(page);
   await page.locator('#sb-generate').click();
   const tr = view.locator('table.sb-table tbody tr').nth(p.events.indexOf(e));
-  await expect(tr.locator('td').nth(2).locator('.st-tip'), 'B har kravet').toContainText(sign, { timeout: 60_000 });
-  const mark = tr.locator('td').nth(2).locator('.sb-risk');
+  await expect(tr.locator('td').nth(1).locator('.st-tip'), 'A har kravet').toContainText(sign, { timeout: 60_000 });
+  const mark = tr.locator('td').nth(1).locator('.sb-risk');
   await expect(mark).toHaveCount(1);
-  await expect(mark).toHaveAttribute('title', new RegExp(`Kupong B har tippat ${sign} på risklaget`));
-  await expect(tr.locator('td').nth(1).locator('.sb-risk'), 'aldrig i A').toHaveCount(0);
+  await expect(mark).toHaveAttribute('title', new RegExp(`Kupong A har tippat ${sign} på risklaget`));
   await expect(view.locator('.sb-risk-legend')).toContainText('risklag');
   await view.locator('table.sb-table').screenshot({ path: path.join(root, 'test-results', 'stryktips-risk.png') });
+  expect(fel, fel.join('\n')).toEqual([]);
+});
+
+// Mobil (användaren 2026-10-24: "nu kan man inte läsa texten"): inget i kravlistan, kupongen eller åtgärdsraden sticker
+// ut utanför skärmen, lagnamnen klipps inte och 1/X/2 + Lås ryms på 390 px
+test('Stryktipset i mobil: inget sticker ut, lagnamn och Lås syns hela', async ({ page }) => {
+  test.setTimeout(300_000);
+  await page.setViewportSize({ width: 390, height: 844 });
+  const fel = await oppna(page, 'stryktipset');
+  const view = page.locator('#stryktips-view');
+  await expect(view.locator('.sb-row')).toHaveCount(13, { timeout: 30_000 });
+  await expect(view.locator('.sb-coupon')).toHaveCount(1, { timeout: 180_000 });
+  const ut = await page.evaluate(() => [...document.querySelectorAll('.sb-row, .sb-row *, .sb-actionbar, .sb-actionbar *, .sb-coupon, .sb-coupon > *')]
+    .filter((el) => el.getBoundingClientRect().right > innerWidth + 1 && !el.closest('.st-bt-wrap, pre'))
+    .map((el) => `${el.tagName}.${el.className}`));
+  expect(ut, ut.join('\n')).toEqual([]);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(390);
+  const namn = view.locator('.sb-match b').first();
+  expect(await namn.evaluate((el) => el.scrollWidth <= el.clientWidth + 1), 'lagnamnen klipps inte').toBe(true);
+  await view.locator('.sb-seal').first().scrollIntoViewIfNeeded();
+  await expect(view.locator('.sb-seal').first()).toBeInViewport({ ratio: 1 });
   expect(fel, fel.join('\n')).toEqual([]);
 });
 
@@ -220,12 +237,12 @@ test('Stryktipset: hänglås per match – låst går inte att ändra, Generera 
   await r3.locator('.sb-seal').click();
   await expect(r3).not.toHaveClass(/is-sealed/);
   await expect(r3.locator('.sb-sign[data-sign="1"]')).toBeEnabled();
-  // A/B/C % som inte blir 100 % stoppar låset (2026-10-12)
+  // Fördelning % som inte blir 100 % stoppar låset (2026-10-12)
   await r3.locator('[data-defall-toggle]').click();
-  await r3.locator('input[data-defall-sys="B"][data-defall="1"]').fill('90');
-  await r3.locator('input[data-defall-sys="B"][data-defall="1"]').dispatchEvent('change');
+  await r3.locator('input[data-defall-sys="A"][data-defall="1"]').fill('90');
+  await r3.locator('input[data-defall-sys="A"][data-defall="1"]').dispatchEvent('change');
   await r3.locator('.sb-seal').click();
-  await expect(r3.locator('.sb-row-err')).toContainText('Kan inte låsa: B-raden');
+  await expect(r3.locator('.sb-row-err')).toContainText('Kan inte låsa: fördelningen');
   await expect(r3).not.toHaveClass(/is-sealed/);
   await r3.locator('[data-defall-model]').click();
   await r3.locator('.sb-seal').click();
