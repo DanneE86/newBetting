@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-23T06:06:58.877Z",
+ "updatedAt": "2026-10-24T09:51:13.029Z",
  "league": "MX",
  "fotmobId": 230,
  "name": "Liga MX",
@@ -133,6 +133,20 @@
   },
   {
    "rank": 10,
+   "team": "Atl. San Luis",
+   "fotmobName": "Atlético de San Luis",
+   "fotmobId": 6358,
+   "group": null,
+   "played": 14,
+   "won": 5,
+   "drawn": 4,
+   "lost": 5,
+   "goals": "19-22",
+   "gd": -3,
+   "pts": 19
+  },
+  {
+   "rank": 11,
    "team": "Club Tijuana",
    "fotmobName": "Tijuana",
    "fotmobId": 162418,
@@ -146,7 +160,7 @@
    "pts": 17
   },
   {
-   "rank": 11,
+   "rank": 12,
    "team": "UNAM Pumas",
    "fotmobName": "Pumas",
    "fotmobId": 1946,
@@ -157,20 +171,6 @@
    "lost": 5,
    "goals": "19-22",
    "gd": -3,
-   "pts": 16
-  },
-  {
-   "rank": 12,
-   "team": "Atl. San Luis",
-   "fotmobName": "Atlético de San Luis",
-   "fotmobId": 6358,
-   "group": null,
-   "played": 13,
-   "won": 4,
-   "drawn": 4,
-   "lost": 5,
-   "goals": "18-22",
-   "gd": -4,
    "pts": 16
   },
   {
@@ -207,12 +207,12 @@
    "fotmobName": "Atlante",
    "fotmobId": 1942,
    "group": null,
-   "played": 13,
+   "played": 14,
    "won": 3,
    "drawn": 5,
-   "lost": 5,
-   "goals": "14-19",
-   "gd": -5,
+   "lost": 6,
+   "goals": "14-20",
+   "gd": -6,
    "pts": 14
   },
   {
@@ -235,13 +235,13 @@
    "fotmobName": "Necaxa",
    "fotmobId": 1842,
    "group": null,
-   "played": 13,
+   "played": 14,
    "won": 2,
-   "drawn": 3,
+   "drawn": 4,
    "lost": 8,
-   "goals": "15-26",
+   "goals": "16-27",
    "gd": -11,
-   "pts": 9
+   "pts": 10
   },
   {
    "rank": 18,
@@ -249,13 +249,13 @@
    "fotmobName": "FC Juárez",
    "fotmobId": 649424,
    "group": null,
-   "played": 13,
+   "played": 14,
    "won": 1,
-   "drawn": 1,
+   "drawn": 2,
    "lost": 11,
-   "goals": "8-32",
+   "goals": "9-33",
    "gd": -24,
-   "pts": 4
+   "pts": 5
   }
  ],
  "tableHistory": {
@@ -1024,6 +1024,134 @@
     18,
     13,
     4,
+    -24
+   ]
+  ],
+  "2026-10-24": [
+   [
+    "Club America",
+    1,
+    12,
+    27,
+    16
+   ],
+   [
+    "Guadalajara Chivas",
+    2,
+    13,
+    23,
+    8
+   ],
+   [
+    "Cruz Azul",
+    3,
+    13,
+    23,
+    7
+   ],
+   [
+    "Toluca",
+    4,
+    13,
+    22,
+    10
+   ],
+   [
+    "Club Leon",
+    5,
+    13,
+    21,
+    3
+   ],
+   [
+    "Atlas",
+    6,
+    13,
+    21,
+    -2
+   ],
+   [
+    "Monterrey",
+    7,
+    12,
+    20,
+    6
+   ],
+   [
+    "Queretaro",
+    8,
+    12,
+    20,
+    1
+   ],
+   [
+    "Santos Laguna",
+    9,
+    13,
+    19,
+    3
+   ],
+   [
+    "Atl. San Luis",
+    10,
+    14,
+    19,
+    -3
+   ],
+   [
+    "Club Tijuana",
+    11,
+    12,
+    17,
+    1
+   ],
+   [
+    "UNAM Pumas",
+    12,
+    13,
+    16,
+    -3
+   ],
+   [
+    "Puebla",
+    13,
+    13,
+    16,
+    -4
+   ],
+   [
+    "Tigres UANL",
+    14,
+    13,
+    14,
+    -4
+   ],
+   [
+    "Atlante",
+    15,
+    14,
+    14,
+    -6
+   ],
+   [
+    "Pachuca",
+    16,
+    13,
+    13,
+    2
+   ],
+   [
+    "Necaxa",
+    17,
+    14,
+    10,
+    -11
+   ],
+   [
+    "Juarez",
+    18,
+    14,
+    5,
     -24
    ]
   ]

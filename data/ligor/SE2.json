@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-23T06:06:58.877Z",
+ "updatedAt": "2026-10-24T09:51:13.029Z",
  "league": "SE2",
  "fotmobId": 168,
  "name": "Superettan",
@@ -81,13 +81,13 @@
    "fotmobName": "IK Oddevold",
    "fotmobId": 6160,
    "group": null,
-   "played": 27,
-   "won": 10,
+   "played": 28,
+   "won": 11,
    "drawn": 9,
    "lost": 8,
-   "goals": "41-37",
-   "gd": 4,
-   "pts": 39
+   "goals": "48-37",
+   "gd": 11,
+   "pts": 42
   },
   {
    "rank": 7,
@@ -221,12 +221,12 @@
    "fotmobName": "GIF Sundsvall",
    "fotmobId": 8359,
    "group": null,
-   "played": 27,
+   "played": 28,
    "won": 6,
    "drawn": 1,
-   "lost": 20,
-   "goals": "19-58",
-   "gd": -39,
+   "lost": 21,
+   "goals": "19-65",
+   "gd": -46,
    "pts": 19
   }
  ],
@@ -913,6 +913,120 @@
     27,
     19,
     -39
+   ]
+  ],
+  "2026-10-24": [
+   [
+    "IFK Norrköping",
+    1,
+    27,
+    59,
+    36
+   ],
+   [
+    "Falkenbergs FF",
+    2,
+    27,
+    51,
+    15
+   ],
+   [
+    "Varbergs BoIS FC",
+    3,
+    27,
+    46,
+    11
+   ],
+   [
+    "Östersunds FK",
+    4,
+    27,
+    45,
+    9
+   ],
+   [
+    "Landskrona BoIS",
+    5,
+    27,
+    43,
+    13
+   ],
+   [
+    "IK Oddevold",
+    6,
+    28,
+    42,
+    11
+   ],
+   [
+    "Östers IF",
+    7,
+    27,
+    39,
+    0
+   ],
+   [
+    "Nordic United FC",
+    8,
+    27,
+    39,
+    -3
+   ],
+   [
+    "Sandvikens IF",
+    9,
+    27,
+    38,
+    9
+   ],
+   [
+    "IFK Värnamo",
+    10,
+    27,
+    32,
+    -12
+   ],
+   [
+    "Helsingborg",
+    11,
+    27,
+    31,
+    -11
+   ],
+   [
+    "Ljungskile",
+    12,
+    27,
+    29,
+    -5
+   ],
+   [
+    "Norrby",
+    13,
+    27,
+    27,
+    -6
+   ],
+   [
+    "IK Brage",
+    14,
+    27,
+    26,
+    -9
+   ],
+   [
+    "Örebro",
+    15,
+    27,
+    26,
+    -12
+   ],
+   [
+    "GIF Sundsvall",
+    16,
+    28,
+    19,
+    -46
    ]
   ]
  }

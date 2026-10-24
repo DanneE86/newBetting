@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-23T06:06:58.877Z",
+ "updatedAt": "2026-10-24T09:51:13.029Z",
  "league": "LL2",
  "fotmobId": 140,
  "name": "LaLiga2",
@@ -49,6 +49,20 @@
   },
   {
    "rank": 4,
+   "team": "Granada",
+   "fotmobName": "Granada",
+   "fotmobId": 7878,
+   "group": null,
+   "played": 11,
+   "won": 6,
+   "drawn": 2,
+   "lost": 3,
+   "goals": "18-14",
+   "gd": 4,
+   "pts": 20
+  },
+  {
+   "rank": 5,
    "team": "Sp Gijon",
    "fotmobName": "Sporting Gijón",
    "fotmobId": 9869,
@@ -62,7 +76,7 @@
    "pts": 19
   },
   {
-   "rank": 5,
+   "rank": 6,
    "team": "Girona",
    "fotmobName": "Girona",
    "fotmobId": 7732,
@@ -76,7 +90,7 @@
    "pts": 18
   },
   {
-   "rank": 6,
+   "rank": 7,
    "team": "Mallorca",
    "fotmobName": "Mallorca",
    "fotmobId": 8661,
@@ -88,20 +102,6 @@
    "goals": "12-5",
    "gd": 7,
    "pts": 18
-  },
-  {
-   "rank": 7,
-   "team": "Granada",
-   "fotmobName": "Granada",
-   "fotmobId": 7878,
-   "group": null,
-   "played": 10,
-   "won": 5,
-   "drawn": 2,
-   "lost": 3,
-   "goals": "16-13",
-   "gd": 3,
-   "pts": 17
   },
   {
    "rank": 8,
@@ -179,12 +179,12 @@
    "fotmobName": "Real Valladolid",
    "fotmobId": 10281,
    "group": null,
-   "played": 10,
+   "played": 11,
    "won": 3,
    "drawn": 3,
-   "lost": 4,
-   "goals": "15-14",
-   "gd": 1,
+   "lost": 5,
+   "goals": "16-16",
+   "gd": 0,
    "pts": 12
   },
   {
@@ -1030,6 +1030,162 @@
     10,
     12,
     1
+   ],
+   [
+    "Celta B",
+    14,
+    10,
+    12,
+    -1
+   ],
+   [
+    "Cordoba",
+    15,
+    10,
+    12,
+    -5
+   ],
+   [
+    "Las Palmas",
+    16,
+    10,
+    11,
+    -6
+   ],
+   [
+    "Leganes",
+    17,
+    10,
+    11,
+    -9
+   ],
+   [
+    "Andorra",
+    18,
+    10,
+    10,
+    -4
+   ],
+   [
+    "Sociedad B",
+    19,
+    10,
+    8,
+    -7
+   ],
+   [
+    "Cadiz",
+    20,
+    10,
+    7,
+    -2
+   ],
+   [
+    "Ceuta",
+    21,
+    10,
+    5,
+    -13
+   ],
+   [
+    "Albacete",
+    22,
+    10,
+    1,
+    -16
+   ]
+  ],
+  "2026-10-24": [
+   [
+    "Almeria",
+    1,
+    10,
+    24,
+    13
+   ],
+   [
+    "Castellon",
+    2,
+    10,
+    23,
+    14
+   ],
+   [
+    "Eibar",
+    3,
+    10,
+    22,
+    9
+   ],
+   [
+    "Granada",
+    4,
+    11,
+    20,
+    4
+   ],
+   [
+    "Sp Gijon",
+    5,
+    10,
+    19,
+    2
+   ],
+   [
+    "Girona",
+    6,
+    10,
+    18,
+    8
+   ],
+   [
+    "Mallorca",
+    7,
+    10,
+    18,
+    7
+   ],
+   [
+    "Burgos",
+    8,
+    10,
+    17,
+    3
+   ],
+   [
+    "Oviedo",
+    9,
+    10,
+    17,
+    3
+   ],
+   [
+    "Sabadell",
+    10,
+    10,
+    16,
+    2
+   ],
+   [
+    "Eldense",
+    11,
+    10,
+    14,
+    0
+   ],
+   [
+    "Tenerife",
+    12,
+    10,
+    13,
+    -2
+   ],
+   [
+    "Valladolid",
+    13,
+    11,
+    12,
+    0
    ],
    [
     "Celta B",

@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-23T06:06:58.877Z",
+ "updatedAt": "2026-10-24T09:51:13.029Z",
  "league": "BR2",
  "fotmobId": 8814,
  "name": "Série B",
@@ -67,12 +67,12 @@
    "fotmobName": "Criciúma",
    "fotmobId": 7729,
    "group": null,
-   "played": 34,
+   "played": 35,
    "won": 17,
    "drawn": 8,
-   "lost": 9,
-   "goals": "35-28",
-   "gd": 7,
+   "lost": 10,
+   "goals": "36-30",
+   "gd": 6,
    "pts": 59
   },
   {
@@ -91,6 +91,20 @@
   },
   {
    "rank": 7,
+   "team": "Sport",
+   "fotmobName": "Sport Recife",
+   "fotmobId": 6305,
+   "group": null,
+   "played": 35,
+   "won": 14,
+   "drawn": 12,
+   "lost": 9,
+   "goals": "47-38",
+   "gd": 9,
+   "pts": 54
+  },
+  {
+   "rank": 8,
    "team": "CRB",
    "fotmobName": "CRB",
    "fotmobId": 104821,
@@ -104,21 +118,21 @@
    "pts": 52
   },
   {
-   "rank": 8,
-   "team": "Sport",
-   "fotmobName": "Sport Recife",
-   "fotmobId": 6305,
+   "rank": 9,
+   "team": "Operário PR",
+   "fotmobName": "Operário-PR",
+   "fotmobId": 197429,
    "group": null,
-   "played": 34,
-   "won": 13,
-   "drawn": 12,
-   "lost": 9,
-   "goals": "45-37",
-   "gd": 8,
+   "played": 35,
+   "won": 14,
+   "drawn": 9,
+   "lost": 12,
+   "goals": "45-46",
+   "gd": -1,
    "pts": 51
   },
   {
-   "rank": 9,
+   "rank": 10,
    "team": "Goiás",
    "fotmobName": "Goiás",
    "fotmobId": 9862,
@@ -130,20 +144,6 @@
    "goals": "34-40",
    "gd": -6,
    "pts": 49
-  },
-  {
-   "rank": 10,
-   "team": "Operário PR",
-   "fotmobName": "Operário-PR",
-   "fotmobId": 197429,
-   "group": null,
-   "played": 34,
-   "won": 13,
-   "drawn": 9,
-   "lost": 12,
-   "goals": "44-46",
-   "gd": -2,
-   "pts": 48
   },
   {
    "rank": 11,
@@ -193,12 +193,12 @@
    "fotmobName": "Athletic Club MG",
    "fotmobId": 1221604,
    "group": null,
-   "played": 34,
+   "played": 35,
    "won": 10,
    "drawn": 14,
-   "lost": 10,
-   "goals": "40-39",
-   "gd": 1,
+   "lost": 11,
+   "goals": "40-40",
+   "gd": 0,
    "pts": 44
   },
   {
@@ -1095,6 +1095,148 @@
     34,
     44,
     1
+   ],
+   [
+    "Náutico",
+    15,
+    34,
+    43,
+    -3
+   ],
+   [
+    "Ceará",
+    16,
+    34,
+    43,
+    -5
+   ],
+   [
+    "Avaí",
+    17,
+    34,
+    37,
+    -10
+   ],
+   [
+    "Londrina",
+    18,
+    34,
+    32,
+    -6
+   ],
+   [
+    "América Mineiro",
+    19,
+    34,
+    20,
+    -32
+   ],
+   [
+    "Ponte Preta",
+    20,
+    34,
+    14,
+    -55
+   ]
+  ],
+  "2026-10-24": [
+   [
+    "Vila Nova",
+    1,
+    34,
+    62,
+    15
+   ],
+   [
+    "Novorizontino",
+    2,
+    34,
+    61,
+    31
+   ],
+   [
+    "Juventude",
+    3,
+    34,
+    61,
+    18
+   ],
+   [
+    "Fortaleza",
+    4,
+    34,
+    60,
+    12
+   ],
+   [
+    "Criciúma",
+    5,
+    35,
+    59,
+    6
+   ],
+   [
+    "Atlético Goianiense",
+    6,
+    34,
+    54,
+    10
+   ],
+   [
+    "Sport",
+    7,
+    35,
+    54,
+    9
+   ],
+   [
+    "CRB",
+    8,
+    34,
+    52,
+    3
+   ],
+   [
+    "Operário PR",
+    9,
+    35,
+    51,
+    -1
+   ],
+   [
+    "Goiás",
+    10,
+    34,
+    49,
+    -6
+   ],
+   [
+    "Cuiabá",
+    11,
+    34,
+    47,
+    5
+   ],
+   [
+    "São Bernardo",
+    12,
+    34,
+    46,
+    9
+   ],
+   [
+    "Botafogo-SP",
+    13,
+    34,
+    44,
+    0
+   ],
+   [
+    "Athletic",
+    14,
+    35,
+    44,
+    0
    ],
    [
     "Náutico",
