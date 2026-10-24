@@ -414,8 +414,7 @@ body.view-stryktips main { display: none !important; }
 .sb-match { min-width: 0; display: flex; flex-direction: column; }
 .sb-match b { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .sb-match small { color: var(--color-text-muted); font-size: var(--font-size-xs); }
-.sb-signs, .sb-scope { display: flex; gap: var(--space-1); align-items: stretch; }
-.sb-scope { flex-wrap: wrap; }
+.sb-signs { display: flex; gap: var(--space-1); align-items: stretch; }
 .sb-sign { display: flex; flex-direction: column; align-items: center; justify-content: center; box-sizing: border-box; width: 3.55rem; min-width: 3.55rem; min-height: var(--target-min); padding: 6px 2px 5px; border: 1px solid var(--color-text-muted); border-radius: var(--radius-md); background: var(--color-surface); color: var(--color-text); font: inherit; font-weight: var(--font-weight-bold); line-height: 1.15; text-align: center; cursor: pointer; transition: background-color var(--duration-fast) var(--easing), border-color var(--duration-fast) var(--easing); }
 .sb-sign small { display: block; width: 100%; margin: 0; color: var(--color-text-muted); font-size: var(--font-size-xs); font-weight: var(--font-weight-medium); line-height: 1.2; text-align: center; font-variant-numeric: tabular-nums; }
 .sb-sign small.sb-odd { margin-top: 3px; padding-top: 3px; border-top: 1px solid var(--color-border); letter-spacing: 0; }
@@ -423,9 +422,6 @@ body.view-stryktips main { display: none !important; }
 .sb-sign.on { background: var(--color-success-solid); border-color: var(--color-success); color: var(--color-text-on-brand); }
 .sb-sign.on small { color: var(--color-text-on-brand); }
 .sb-sign.on small.sb-odd { border-top-color: color-mix(in srgb, currentColor 40%, transparent); }
-.sb-scope button { padding: var(--space-1) var(--space-2); border: 1px solid var(--color-text-muted); border-radius: var(--radius-pill); background: var(--color-surface); color: var(--color-text); font: inherit; font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); cursor: pointer; }
-.sb-scope button[aria-pressed="true"] { color: var(--color-surface); border-color: var(--color-text); background: var(--color-text); }
-.sb-scope button:disabled { opacity: 0.5; cursor: default; }
 .sb-table { width: 100%; border-collapse: collapse; margin: var(--space-2) 0; font-size: var(--font-size-sm); }
 .sb-table th, .sb-table td { padding: var(--space-1) var(--space-2); border-bottom: 1px solid var(--color-border); text-align: left; white-space: nowrap; color: var(--color-text); }
 .sb-table thead th { color: var(--color-text-muted); font-weight: var(--font-weight-bold); border-bottom: 2px solid var(--color-border-strong); }
@@ -444,8 +440,6 @@ body.view-stryktips main { display: none !important; }
   .sb-krav { grid-column: 1 / -1; }
   .sb-signs { flex: 1; }
   .sb-sign { flex: 1; }
-  .sb-scope { grid-column: 1 / -1; }
-  .sb-scope button { flex: 1; }
 }
 
 /* Krav (1, X, 2, 1X, X2, 12, 1X2) på B-sidan */
@@ -463,7 +457,7 @@ body.view-stryktips main { display: none !important; }
 .sb-row.is-sealed { border: 2px solid var(--color-success); background: var(--color-success-bg); box-shadow: inset 6px 0 0 var(--color-success); padding-left: calc(var(--space-3) + 6px); }
 .sb-row.is-sealed .st-num { background: var(--color-success-solid); color: var(--color-text-on-brand); border-color: var(--color-success-solid); }
 .sb-sealed-tag { align-self: flex-start; margin-bottom: 2px; padding: 1px 8px; border-radius: var(--radius-pill); background: var(--color-success-solid); color: var(--color-text-on-brand); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); letter-spacing: 0.06em; text-transform: uppercase; }
-.sb-row.is-sealed .sb-sign:disabled, .sb-row.is-sealed .sb-scope button:disabled, .sb-row.is-sealed .sb-defall button:disabled, .sb-row.is-sealed .sb-defall input:disabled { cursor: not-allowed; opacity: 0.55; }
+.sb-row.is-sealed .sb-sign:disabled, .sb-row.is-sealed .sb-defall button:disabled, .sb-row.is-sealed .sb-defall input:disabled { cursor: not-allowed; opacity: 0.55; }
 .sb-row.is-sealed .sb-sign.on:disabled { opacity: 1; border-color: var(--color-success); box-shadow: inset 0 0 0 1px var(--color-success); }
 .sb-row.is-error { border-width: 2px; border-color: var(--color-danger); box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-danger) 25%, transparent); }
 .sb-row-err { grid-column: 1 / -1; margin: 0; color: var(--color-danger); font-size: var(--font-size-sm); font-weight: var(--font-weight-bold); }
@@ -477,7 +471,7 @@ body.view-stryktips main { display: none !important; }
 .st-sysmiss { display: inline-block; margin-left: 4px; padding: 0 5px; border-radius: 999px; font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); background: var(--color-warning-bg); color: var(--color-warning); white-space: nowrap; cursor: help; }
 .st-sysmiss.over { background: var(--color-danger-bg); color: var(--color-danger); }
 .sb-miss-legend { margin: 0 0 8px; }
-/* Risklag som B/C har tippat (streckfavorit som sällan vinner); spik = starkare */
+/* Risklag som kupong A har tippat (streckfavorit som sällan vinner); spik = starkare */
 .sb-risk { display: inline-block; margin-left: 4px; padding: 0 5px; border-radius: 999px; border: 1px solid var(--color-danger); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); color: var(--color-danger); white-space: nowrap; cursor: help; }
 .sb-risk.spik { background: var(--color-danger-bg); }
 .sb-risk-legend { margin: 0 0 8px; }
@@ -519,15 +513,9 @@ body.view-stryktips main { display: none !important; }
 
 /* ---------- UX-pass 2026-10-01: Stryktipset/Europatipset ---------- */
 
-/* Krav: "Gäller"-knapparna syns först när matchen har ett krav, tydlig aktiv/inaktiv-stil (.ds-toggle i markupen) */
+/* Krav */
 .sb-krav-lbl { color: var(--color-text-muted); }
-.sb-scope { align-items: center; }
-.sb-scope.is-empty { display: none; }
-.sb-scope-k { color: var(--color-text-muted); font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); text-transform: uppercase; letter-spacing: 0.06em; margin-right: 2px; }
-.sb-scope button { min-height: 32px; min-width: 2.4rem; }
-.sb-scope button:hover { border-color: var(--color-text); }
-.sb-scope button[aria-pressed="true"]:hover { background: var(--color-text); }
-.sb-scope button:focus-visible, .sb-sign:focus-visible { outline: 2px solid var(--focus-ring-color); outline-offset: 2px; }
+.sb-sign:focus-visible { outline: 2px solid var(--focus-ring-color); outline-offset: 2px; }
 
 /* "Hur funkar det?" */
 .sb-howto { margin-top: var(--space-2); color: var(--color-text-muted); font-size: var(--font-size-sm); line-height: var(--line-height-body); }
@@ -610,10 +598,6 @@ body.view-stryktips main { display: none !important; }
 .sb-actionbar .btn-ghost:disabled { opacity: 0.5; cursor: default; }
 .sb-actionbar .sb-generate { white-space: nowrap; }
 
-@media (max-width: 720px) {
-  .sb-scope { gap: var(--space-1); flex-wrap: nowrap; }
-  .sb-scope-k { flex: none; }
-}
 @media (max-width: 560px) {
   .sb-actionbar { bottom: var(--space-2); gap: var(--space-2); padding: var(--space-2) var(--space-2) var(--space-2) var(--space-3); border-radius: var(--radius-lg); flex-wrap: wrap; }
 
@@ -630,13 +614,11 @@ body.view-stryktips main { display: none !important; }
 
 /* ---------- UX-pass runda 2 ---------- */
 
-/* Kravraden: 1/X/2 står still – fast bredd på etiketten, "Gäller" på egen rad under matchen */
+/* Kravraden: 1/X/2 står still – fast bredd på etiketten */
 .sb-row { grid-template-columns: auto minmax(0, 1fr) auto; }
 .sb-krav-lbl { width: 4.6rem; min-width: 0; flex: none; }
-.sb-scope { grid-column: 2 / -1; justify-content: flex-end; }
 @media (max-width: 720px) {
   .sb-row { grid-template-columns: auto minmax(0, 1fr); }
-  .sb-scope { grid-column: 1 / -1; justify-content: flex-start; }
 }
 
 /* Åtgärdsraden: "ändrat" som ord på mobil (ingen hängande punkt), och luft under sista innehållet */
@@ -824,3 +806,22 @@ body.view-stryktips main { display: none !important; }
 .svs-draw h5 { margin: var(--space-3) 0 var(--space-1); }
 .svs-draw p { margin: 0 0 var(--space-2); }
 .svs-more-odds > summary { cursor: pointer; font-weight: var(--font-weight-bold); margin-bottom: var(--space-2); }
+
+/* Mobil (användaren 2026-10-24: "fixa så det funkar i mobilläge, nu kan man inte läsa texten"): lagnamnen radbryts i
+   stället för att klippas, 1/X/2 får en egen rad i full bredd med krav och lås under, och åtgärdsraden längst ner
+   staplas (summa, text, knappar) så inget hamnar utanför skärmen */
+@media (max-width: 560px) {
+  .sb-row { padding: var(--space-2); }
+  .sb-match b { white-space: normal; overflow: visible; overflow-wrap: anywhere; }
+  .sb-krav { flex-wrap: wrap; }
+  .sb-signs { flex: 1 1 100%; min-width: 0; }
+  .sb-sign { width: auto; min-width: 0; }
+  .sb-krav-lbl { flex: 1; width: auto; text-align: left; }
+  .sb-seal { margin-left: auto; }
+  .sb-actionbar { display: grid; grid-template-columns: 1fr 1fr; align-items: center; }
+  .sb-budgets, .sb-actionbar-txt { grid-column: 1 / -1; width: auto; }
+  .sb-budget input { width: 5.5rem; }
+  .sb-actionbar .btn-ghost, .sb-actionbar .sb-generate { width: 100%; justify-content: center; }
+  .sb-table th, .sb-table td { white-space: normal; }
+  .sb-table .tur-btn { white-space: normal; text-align: left; }
+}

@@ -70,6 +70,34 @@ export function decide({ tool, input, session }, cfg, git, root = ROOT) {
   return null;
 }
 
+// "Ta över" (användaren 2026-10-24: "så jag inte behöver göra sådant manuellt"): UserPromptSubmit-kroken flyttar
+// ägarskapet till sessionen där användaren skriver "ta över". Nämns ett område (t.ex. "ta över stryktips") flyttas bara
+// det, annars alla. Bara användarens egen prompt utlöser det – Claude kan fortfarande inte ändra config/agare.json.
+const TAKE_OVER = /\bta\s+över\b/i;
+/** Ny konfiguration om prompten tar över något, annars null. { cfg, areas } */
+export function takeOver(prompt, cfg, session, today = new Date().toISOString().slice(0, 10)) {
+  if (!session || !TAKE_OVER.test(String(prompt || ""))) return null;
+  const all = Object.keys(cfg.omraden || {});
+  const named = all.filter((n) => new RegExp(`\\b${n}`, "i").test(prompt));
+  const areas = (named.length ? named : all).filter((n) => cfg.omraden[n].agent !== session);
+  if (!areas.length) return null;
+  const next = structuredClone(cfg);
+  for (const n of areas) Object.assign(next.omraden[n], { agent: session, sedan: today });
+  return { cfg: next, areas };
+}
+
+function mainTakeOver() {
+  let ev;
+  try { ev = JSON.parse(fs.readFileSync(0, "utf8")); } catch { return; }
+  const file = path.join(ROOT, AGARE_FIL);
+  let cfg;
+  try { cfg = JSON.parse(fs.readFileSync(file, "utf8")); } catch { return; }
+  const r = takeOver(ev.prompt, cfg, ev.session_id);
+  if (!r) return;
+  fs.writeFileSync(file, `${JSON.stringify(r.cfg, null, 2)}\n`);
+  process.stdout.write(JSON.stringify({ hookSpecificOutput: { hookEventName: "UserPromptSubmit", additionalContext: `Användaren tog över ${r.areas.join(", ")} – den här sessionen äger nu de filerna (${AGARE_FIL}).` } }));
+}
+
 function gitList(...a) {
   const r = spawnSync("git", a, { cwd: ROOT, encoding: "utf8" });
   return r.status === 0 ? r.stdout.split("\n").map((s) => s.trim()).filter(Boolean) : [];
@@ -90,4 +118,7 @@ function main() {
   }
 }
 
-if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) main();
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  if (process.argv.includes("--ta-over")) mainTakeOver();
+  else main();
+}
