@@ -1205,38 +1205,125 @@
    "kickoffUtc": "2026-10-24T20:00:00Z",
    "src": "api",
    "firstAt": "2026-10-24T09:57:26.034Z",
-   "lastAt": "2026-10-24T13:51:41.296Z",
-   "minBeforeKick": 368,
+   "lastAt": "2026-10-24T19:29:01.002Z",
+   "minBeforeKick": 31,
    "moves": {
     "home": {
      "from": 1.28,
      "to": 1.28,
-     "pp": 0
+     "pp": 0,
+     "step": 0
     },
     "draw": {
      "from": 6,
      "to": 6,
-     "pp": 0
+     "pp": 0,
+     "step": 0
     },
     "away": {
      "from": 11.5,
      "to": 11.5,
-     "pp": 0
+     "pp": 0,
+     "step": 0
     },
     "over25": {
      "from": 1.58,
      "to": 1.58,
-     "pp": 0
+     "pp": 0,
+     "step": 0
     },
     "under25": {
      "from": 2.4,
      "to": 2.4,
+     "pp": 0,
+     "step": 0
+    }
+   },
+   "flagged": [],
+   "savedAt": "2026-10-24T19:29:45.282Z"
+  },
+  "2026-10-25|SA|Inter|Fiorentina": {
+   "key": "2026-10-25|SA|Inter|Fiorentina",
+   "league": "SA",
+   "date": "2026-10-25",
+   "home": "Inter",
+   "away": "Fiorentina",
+   "kickoffUtc": "2026-10-25T11:30:00Z",
+   "src": "api",
+   "firstAt": "2026-10-24T13:51:41.296Z",
+   "lastAt": "2026-10-24T19:29:01.002Z",
+   "minBeforeKick": 961,
+   "moves": {
+    "home": {
+     "from": 1.37,
+     "to": 1.37,
+     "pp": 0
+    },
+    "draw": {
+     "from": 5.6,
+     "to": 5.6,
+     "pp": 0
+    },
+    "away": {
+     "from": 9.4,
+     "to": 9.4,
+     "pp": 0
+    },
+    "over25": {
+     "from": 1.44,
+     "to": 1.44,
+     "pp": 0
+    },
+    "under25": {
+     "from": 2.9,
+     "to": 2.9,
      "pp": 0
     }
    },
    "flagged": [],
-   "savedAt": "2026-10-24T13:52:25.095Z"
+   "savedAt": "2026-10-24T19:29:45.282Z"
+  },
+  "2026-10-25|LL|Ath Bilbao|Getafe": {
+   "key": "2026-10-25|LL|Ath Bilbao|Getafe",
+   "league": "LL",
+   "date": "2026-10-25",
+   "home": "Ath Bilbao",
+   "away": "Getafe",
+   "kickoffUtc": "2026-10-25T13:00:00Z",
+   "src": "api",
+   "firstAt": "2026-10-24T13:51:41.296Z",
+   "lastAt": "2026-10-24T19:29:01.002Z",
+   "minBeforeKick": 1051,
+   "moves": {
+    "home": {
+     "from": 1.58,
+     "to": 1.58,
+     "pp": 0
+    },
+    "draw": {
+     "from": 4,
+     "to": 4,
+     "pp": 0
+    },
+    "away": {
+     "from": 6.5,
+     "to": 6.5,
+     "pp": 0
+    },
+    "over25": {
+     "from": 2.3,
+     "to": 2.3,
+     "pp": 0
+    },
+    "under25": {
+     "from": 1.62,
+     "to": 1.62,
+     "pp": 0
+    }
+   },
+   "flagged": [],
+   "savedAt": "2026-10-24T19:29:45.282Z"
   }
  },
- "updatedAt": "2026-10-24T13:52:25.098Z"
+ "updatedAt": "2026-10-24T19:29:45.282Z"
 }
