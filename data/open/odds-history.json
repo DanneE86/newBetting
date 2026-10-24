@@ -37617,7 +37617,7 @@
         "fairSourceOu": null
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.6,
           "draw": 4.5,
@@ -37641,9 +37641,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -37679,6 +37679,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 1.6,
+            "draw": 4.5,
+            "away": 5.1,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.5987,
+            "draw": 0.2119,
+            "away": 0.1894,
+            "over25": null,
+            "under25": null
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 1.6,
@@ -37841,7 +37859,7 @@
         "fairSourceOu": null
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.16,
           "draw": 10,
@@ -37865,9 +37883,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -37903,6 +37921,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 1.16,
+            "draw": 10,
+            "away": 15,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.831,
+            "draw": 0.1013,
+            "away": 0.0677,
+            "over25": null,
+            "under25": null
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 1.16,
@@ -38141,7 +38177,7 @@
         "fairSourceOu": "snitt av 3 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.28,
           "draw": 6.25,
@@ -38165,9 +38201,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -38203,6 +38239,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 1.28,
+            "draw": 6.25,
+            "away": 12.5,
+            "over25": 1.48,
+            "under25": 2.75
+          },
+          "fair": {
+            "home": 0.8147,
+            "draw": 0.1261,
+            "away": 0.0592,
+            "over25": 0.6508,
+            "under25": 0.3492
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 1.28,
@@ -41828,7 +41882,7 @@
         "fairSourceOu": "snitt av 9 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.8,
           "draw": 3.45,
@@ -41854,7 +41908,7 @@
         "fairSourceOu": "ett bolag",
         "oddsAt": null
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -41981,7 +42035,7 @@
         "fairSourceOu": "snitt av 4 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 4.1,
           "draw": 3.9,
@@ -42007,7 +42061,7 @@
         "fairSourceOu": "ett bolag",
         "oddsAt": null
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -42075,7 +42129,7 @@
         "fairSourceOu": "snitt av 3 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.53,
           "draw": 4.5,
@@ -42101,7 +42155,7 @@
         "fairSourceOu": null,
         "oddsAt": null
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -42169,7 +42223,7 @@
         "fairSourceOu": "snitt av 9 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.28,
           "draw": 3.5,
@@ -42195,7 +42249,7 @@
         "fairSourceOu": "ett bolag",
         "oddsAt": null
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -43279,7 +43333,7 @@
         "fairSourceOu": "snitt av 9 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.63,
           "draw": 3.05,
@@ -43305,7 +43359,7 @@
         "fairSourceOu": "ett bolag",
         "oddsAt": null
       },
-      "snapshots": 19,
+      "snapshots": 20,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -43561,7 +43615,7 @@
         "fairSourceOu": "snitt av 14 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.51,
           "draw": 4,
@@ -43587,7 +43641,7 @@
         "fairSourceOu": "ett bolag",
         "oddsAt": null
       },
-      "snapshots": 15,
+      "snapshots": 16,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -43655,7 +43709,7 @@
         "fairSourceOu": "snitt av 5 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.55,
           "draw": 4.2,
@@ -43681,7 +43735,7 @@
         "fairSourceOu": "ett bolag",
         "oddsAt": null
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -43749,7 +43803,7 @@
         "fairSourceOu": "snitt av 4 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.5,
           "draw": 3.35,
@@ -43775,7 +43829,7 @@
         "fairSourceOu": "ett bolag",
         "oddsAt": null
       },
-      "snapshots": 15,
+      "snapshots": 16,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -43861,7 +43915,7 @@
         "fairSourceOu": "snitt av 10 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.2,
           "draw": 3.4,
@@ -43887,7 +43941,7 @@
         "fairSourceOu": "ett bolag",
         "oddsAt": null
       },
-      "snapshots": 15,
+      "snapshots": 16,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -44165,7 +44219,7 @@
         "fairSourceOu": "snitt av 4 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.28,
           "draw": 3.2,
@@ -44191,7 +44245,7 @@
         "fairSourceOu": "ett bolag",
         "oddsAt": null
       },
-      "snapshots": 15,
+      "snapshots": 16,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -44877,7 +44931,7 @@
         "fairSourceOu": "snitt av 9 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.65,
           "draw": 3.5,
@@ -44903,7 +44957,7 @@
         "fairSourceOu": "ett bolag",
         "oddsAt": null
       },
-      "snapshots": 15,
+      "snapshots": 16,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -45419,7 +45473,7 @@
         "fairSourceOu": "snitt av 4 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 3.25,
           "draw": 3.55,
@@ -45445,7 +45499,7 @@
         "fairSourceOu": "ett bolag",
         "oddsAt": null
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -45911,7 +45965,7 @@
         "fairSourceOu": "snitt av 4 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.5,
           "draw": 3.4,
@@ -45937,7 +45991,7 @@
         "fairSourceOu": "ett bolag",
         "oddsAt": null
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -47969,7 +48023,7 @@
         "fairSourceOu": "snitt av 10 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.91,
           "draw": 3.9,
@@ -47993,9 +48047,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -48046,6 +48100,24 @@
             "over25": 0.5701,
             "under25": 0.4299
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 1.91,
+            "draw": 3.9,
+            "away": 3.8,
+            "over25": 1.67,
+            "under25": 2.25
+          },
+          "fair": {
+            "home": 0.5064,
+            "draw": 0.2451,
+            "away": 0.2484,
+            "over25": 0.5701,
+            "under25": 0.4299
+          }
         }
       ]
     },
@@ -48081,7 +48153,7 @@
         "fairSourceOu": "snitt av 9 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.63,
           "draw": 3.2,
@@ -48105,9 +48177,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -48143,6 +48215,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 2.63,
+            "draw": 3.2,
+            "away": 2.7,
+            "over25": 2.15,
+            "under25": 1.7
+          },
+          "fair": {
+            "home": 0.3554,
+            "draw": 0.2977,
+            "away": 0.3469,
+            "over25": 0.4404,
+            "under25": 0.5596
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 2.63,
@@ -48381,7 +48471,7 @@
         "fairSourceOu": "pinnacle"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.8,
           "draw": 3.75,
@@ -48405,9 +48495,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -48458,6 +48548,24 @@
             "over25": 0.4944,
             "under25": 0.5056
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 1.8,
+            "draw": 3.75,
+            "away": 4.75,
+            "over25": 1.95,
+            "under25": 1.9
+          },
+          "fair": {
+            "home": 0.5333,
+            "draw": 0.265,
+            "away": 0.2017,
+            "over25": 0.4944,
+            "under25": 0.5056
+          }
         }
       ]
     },
@@ -48493,7 +48601,7 @@
         "fairSourceOu": "snitt av 4 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.43,
           "draw": 5,
@@ -48517,9 +48625,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -48570,6 +48678,24 @@
             "over25": null,
             "under25": null
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 1.43,
+            "draw": 5,
+            "away": 7.8,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.6762,
+            "draw": 0.1908,
+            "away": 0.1329,
+            "over25": null,
+            "under25": null
+          }
         }
       ]
     },
@@ -48605,7 +48731,7 @@
         "fairSourceOu": "pinnacle"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 3.1,
           "draw": 3.5,
@@ -48629,9 +48755,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -48682,6 +48808,24 @@
             "over25": 0.503,
             "under25": 0.497
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 3.1,
+            "draw": 3.5,
+            "away": 2.3,
+            "over25": 1.9,
+            "under25": 1.95
+          },
+          "fair": {
+            "home": 0.3106,
+            "draw": 0.2773,
+            "away": 0.4121,
+            "over25": 0.503,
+            "under25": 0.497
+          }
         }
       ]
     },
@@ -48717,7 +48861,7 @@
         "fairSourceOu": "snitt av 3 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.12,
           "draw": 3.9,
@@ -48741,9 +48885,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -48794,6 +48938,24 @@
             "over25": 0.6317,
             "under25": 0.3683
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 2.12,
+            "draw": 3.9,
+            "away": 3.25,
+            "over25": 1.5,
+            "under25": 2.63
+          },
+          "fair": {
+            "home": 0.4577,
+            "draw": 0.254,
+            "away": 0.2883,
+            "over25": 0.6317,
+            "under25": 0.3683
+          }
         }
       ]
     },
@@ -48829,7 +48991,7 @@
         "fairSourceOu": "snitt av 11 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 7.6,
           "draw": 4.5,
@@ -48853,9 +49015,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -48891,6 +49053,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 7.6,
+            "draw": 4.5,
+            "away": 1.48,
+            "over25": 1.87,
+            "under25": 1.95
+          },
+          "fair": {
+            "home": 0.1265,
+            "draw": 0.2135,
+            "away": 0.66,
+            "over25": 0.5142,
+            "under25": 0.4858
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 7.6,
@@ -49129,7 +49309,7 @@
         "fairSourceOu": "snitt av 7 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.25,
           "draw": 3.3,
@@ -49153,9 +49333,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -49206,6 +49386,24 @@
             "over25": null,
             "under25": null
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 2.25,
+            "draw": 3.3,
+            "away": 3.4,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.4216,
+            "draw": 0.2943,
+            "away": 0.2842,
+            "over25": null,
+            "under25": null
+          }
         }
       ]
     },
@@ -49241,7 +49439,7 @@
         "fairSourceOu": "snitt av 9 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.3,
           "draw": 3.3,
@@ -49265,9 +49463,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -49318,6 +49516,24 @@
             "over25": 0.4197,
             "under25": 0.5803
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 2.3,
+            "draw": 3.3,
+            "away": 4,
+            "over25": 2.3,
+            "under25": 1.67
+          },
+          "fair": {
+            "home": 0.4658,
+            "draw": 0.2951,
+            "away": 0.2391,
+            "over25": 0.4197,
+            "under25": 0.5803
+          }
         }
       ]
     },
@@ -49353,7 +49569,7 @@
         "fairSourceOu": "snitt av 2 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.15,
           "draw": 9,
@@ -49377,9 +49593,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -49430,6 +49646,24 @@
             "over25": 0.6723,
             "under25": 0.3277
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 1.15,
+            "draw": 9,
+            "away": 18,
+            "over25": 1.4,
+            "under25": 3
+          },
+          "fair": {
+            "home": 0.8423,
+            "draw": 0.1069,
+            "away": 0.0508,
+            "over25": 0.6723,
+            "under25": 0.3277
+          }
         }
       ]
     },
@@ -49465,7 +49699,7 @@
         "fairSourceOu": "snitt av 9 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.95,
           "draw": 3.8,
@@ -49489,9 +49723,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -49542,6 +49776,24 @@
             "over25": 0.5936,
             "under25": 0.4064
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 1.95,
+            "draw": 3.8,
+            "away": 3.7,
+            "over25": 1.61,
+            "under25": 2.38
+          },
+          "fair": {
+            "home": 0.4944,
+            "draw": 0.2527,
+            "away": 0.2529,
+            "over25": 0.5936,
+            "under25": 0.4064
+          }
         }
       ]
     },
@@ -49577,7 +49829,7 @@
         "fairSourceOu": "snitt av 9 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 4,
           "draw": 4,
@@ -49601,9 +49853,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -49654,6 +49906,24 @@
             "over25": 0.566,
             "under25": 0.434
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 4,
+            "draw": 4,
+            "away": 1.83,
+            "over25": 1.67,
+            "under25": 2.25
+          },
+          "fair": {
+            "home": 0.2321,
+            "draw": 0.2418,
+            "away": 0.5261,
+            "over25": 0.566,
+            "under25": 0.434
+          }
         }
       ]
     },
@@ -49661,7 +49931,7 @@
       "league": "SB",
       "date": "2026-10-24",
       "match": "Modena vs Cesena",
-      "kickoffUtc": "2026-10-24T13:00:00Z",
+      "kickoffUtc": "2026-10-24T14:00:00Z",
       "first": {
         "at": "2026-10-18T05:07:25.571Z",
         "odds": {
@@ -49689,33 +49959,33 @@
         "fairSourceOu": "snitt av 9 bolag"
       },
       "last": {
-        "at": "2026-10-20T15:26:03.398Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
-          "home": 1.61,
+          "home": 1.55,
           "draw": 4.2,
           "away": 6,
-          "over25": 1.8,
-          "under25": 2.07
+          "over25": 1.75,
+          "under25": 2.1
         },
         "books": {
-          "home": "Unibet (SE)",
-          "draw": "Coolbet",
-          "away": "Coolbet",
-          "over25": "Unibet (SE)",
-          "under25": "Coolbet"
+          "home": "Marknadens basta (football-data)",
+          "draw": "Marknadens basta (football-data)",
+          "away": "Marknadens basta (football-data)",
+          "over25": "Marknadens basta (football-data)",
+          "under25": "Marknadens basta (football-data)"
         },
         "fair": {
-          "home": 0.6358,
-          "draw": 0.2281,
-          "away": 0.1361,
-          "over25": 0.5317,
-          "under25": 0.4683
+          "home": 0.6082,
+          "draw": 0.2336,
+          "away": 0.1581,
+          "over25": 0.5458,
+          "under25": 0.4542
         },
-        "fairSource": "pinnacle",
-        "fairSourceOu": "snitt av 11 bolag",
-        "oddsAt": "2026-10-20T17:19:06.1245155+02:00"
+        "fairSource": "snitt av 3 bolag",
+        "fairSourceOu": "snitt av 3 bolag",
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 13,
+      "snapshots": 14,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -49748,6 +50018,24 @@
             "over25": 0.5317,
             "under25": 0.4683
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 1.55,
+            "draw": 4.2,
+            "away": 6,
+            "over25": 1.75,
+            "under25": 2.1
+          },
+          "fair": {
+            "home": 0.6082,
+            "draw": 0.2336,
+            "away": 0.1581,
+            "over25": 0.5458,
+            "under25": 0.4542
+          }
         }
       ]
     },
@@ -49755,7 +50043,7 @@
       "league": "SB",
       "date": "2026-10-24",
       "match": "Cremonese vs Juve Stabia",
-      "kickoffUtc": "2026-10-24T13:00:00Z",
+      "kickoffUtc": "2026-10-24T14:00:00Z",
       "first": {
         "at": "2026-10-18T05:07:25.571Z",
         "odds": {
@@ -49783,33 +50071,33 @@
         "fairSourceOu": "snitt av 10 bolag"
       },
       "last": {
-        "at": "2026-10-20T15:26:03.398Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
-          "home": 1.8,
-          "draw": 3.6,
+          "home": 1.88,
+          "draw": 3.5,
           "away": 4.5,
-          "over25": 2.01,
-          "under25": 1.78
+          "over25": 2.03,
+          "under25": 1.8
         },
         "books": {
-          "home": "Coolbet",
-          "draw": "Coolbet",
-          "away": "Coolbet",
-          "over25": "Coolbet",
-          "under25": "Coolbet"
+          "home": "Marknadens basta (football-data)",
+          "draw": "Marknadens basta (football-data)",
+          "away": "Marknadens basta (football-data)",
+          "over25": "Marknadens basta (football-data)",
+          "under25": "Marknadens basta (football-data)"
         },
         "fair": {
-          "home": 0.5255,
-          "draw": 0.2795,
-          "away": 0.195,
-          "over25": 0.4779,
-          "under25": 0.5221
+          "home": 0.5127,
+          "draw": 0.2738,
+          "away": 0.2135,
+          "over25": 0.47,
+          "under25": 0.53
         },
-        "fairSource": "pinnacle",
-        "fairSourceOu": "pinnacle",
-        "oddsAt": "2026-10-20T17:19:06.1245155+02:00"
+        "fairSource": "snitt av 3 bolag",
+        "fairSourceOu": "snitt av 3 bolag",
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 13,
+      "snapshots": 14,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -49841,6 +50129,24 @@
             "away": 0.195,
             "over25": 0.4779,
             "under25": 0.5221
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 1.88,
+            "draw": 3.5,
+            "away": 4.5,
+            "over25": 2.03,
+            "under25": 1.8
+          },
+          "fair": {
+            "home": 0.5127,
+            "draw": 0.2738,
+            "away": 0.2135,
+            "over25": 0.47,
+            "under25": 0.53
           }
         }
       ]
@@ -49971,7 +50277,7 @@
         "fairSourceOu": "snitt av 9 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.85,
           "draw": 3.2,
@@ -49995,9 +50301,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -50048,6 +50354,24 @@
             "over25": 0.439,
             "under25": 0.561
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 2.85,
+            "draw": 3.2,
+            "away": 2.6,
+            "over25": 2.2,
+            "under25": 1.7
+          },
+          "fair": {
+            "home": 0.3332,
+            "draw": 0.3002,
+            "away": 0.3666,
+            "over25": 0.439,
+            "under25": 0.561
+          }
         }
       ]
     },
@@ -50083,7 +50407,7 @@
         "fairSourceOu": "snitt av 8 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.63,
           "draw": 3.45,
@@ -50107,9 +50431,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -50160,6 +50484,24 @@
             "over25": 0.5266,
             "under25": 0.4734
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 2.63,
+            "draw": 3.45,
+            "away": 2.8,
+            "over25": 1.8,
+            "under25": 2
+          },
+          "fair": {
+            "home": 0.368,
+            "draw": 0.2874,
+            "away": 0.3446,
+            "over25": 0.5266,
+            "under25": 0.4734
+          }
         }
       ]
     },
@@ -50167,7 +50509,7 @@
       "league": "SB",
       "date": "2026-10-24",
       "match": "Virtus Entella vs Mantova",
-      "kickoffUtc": "2026-10-24T13:00:00Z",
+      "kickoffUtc": "2026-10-24T14:00:00Z",
       "first": {
         "at": "2026-10-18T05:07:25.571Z",
         "odds": {
@@ -50195,33 +50537,33 @@
         "fairSourceOu": "snitt av 10 bolag"
       },
       "last": {
-        "at": "2026-10-20T15:26:03.398Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
-          "home": 2.25,
-          "draw": 3.4,
-          "away": 3.25,
-          "over25": 2.1,
-          "under25": 1.78
+          "home": 2.3,
+          "draw": 3.3,
+          "away": 3.3,
+          "over25": 2.05,
+          "under25": 1.8
         },
         "books": {
-          "home": "Coolbet",
-          "draw": "Coolbet",
-          "away": "Nordic Bet",
-          "over25": "Unibet (SE)",
-          "under25": "Coolbet"
+          "home": "Marknadens basta (football-data)",
+          "draw": "Marknadens basta (football-data)",
+          "away": "Marknadens basta (football-data)",
+          "over25": "Marknadens basta (football-data)",
+          "under25": "Marknadens basta (football-data)"
         },
         "fair": {
-          "home": 0.4264,
-          "draw": 0.3199,
-          "away": 0.2537,
-          "over25": 0.4701,
-          "under25": 0.5299
+          "home": 0.4218,
+          "draw": 0.2941,
+          "away": 0.2841,
+          "over25": 0.465,
+          "under25": 0.535
         },
-        "fairSource": "pinnacle",
-        "fairSourceOu": "pinnacle",
-        "oddsAt": "2026-10-20T17:19:06.1245155+02:00"
+        "fairSource": "snitt av 3 bolag",
+        "fairSourceOu": "snitt av 3 bolag",
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 13,
+      "snapshots": 14,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -50254,6 +50596,24 @@
             "over25": 0.4701,
             "under25": 0.5299
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 2.3,
+            "draw": 3.3,
+            "away": 3.3,
+            "over25": 2.05,
+            "under25": 1.8
+          },
+          "fair": {
+            "home": 0.4218,
+            "draw": 0.2941,
+            "away": 0.2841,
+            "over25": 0.465,
+            "under25": 0.535
+          }
         }
       ]
     },
@@ -50261,7 +50621,7 @@
       "league": "SB",
       "date": "2026-10-24",
       "match": "Avellino vs Padova",
-      "kickoffUtc": "2026-10-24T13:00:00Z",
+      "kickoffUtc": "2026-10-24T14:00:00Z",
       "first": {
         "at": "2026-10-18T05:07:25.571Z",
         "odds": {
@@ -50289,33 +50649,33 @@
         "fairSourceOu": "snitt av 10 bolag"
       },
       "last": {
-        "at": "2026-10-20T15:26:03.398Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
-          "home": 2.25,
-          "draw": 3.4,
-          "away": 3.35,
-          "over25": 2.07,
+          "home": 2.2,
+          "draw": 3.3,
+          "away": 3.5,
+          "over25": 2.1,
           "under25": 1.73
         },
         "books": {
-          "home": "Coolbet",
-          "draw": "Coolbet",
-          "away": "Betsson",
-          "over25": "Coolbet",
-          "under25": "Coolbet"
+          "home": "Marknadens basta (football-data)",
+          "draw": "Marknadens basta (football-data)",
+          "away": "Marknadens basta (football-data)",
+          "over25": "Marknadens basta (football-data)",
+          "under25": "Marknadens basta (football-data)"
         },
         "fair": {
-          "home": 0.4292,
-          "draw": 0.3031,
-          "away": 0.2677,
-          "over25": 0.4608,
-          "under25": 0.5392
+          "home": 0.4375,
+          "draw": 0.295,
+          "away": 0.2675,
+          "over25": 0.4498,
+          "under25": 0.5502
         },
-        "fairSource": "pinnacle",
-        "fairSourceOu": "snitt av 12 bolag",
-        "oddsAt": "2026-10-20T17:19:06.1245155+02:00"
+        "fairSource": "snitt av 3 bolag",
+        "fairSourceOu": "snitt av 3 bolag",
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 13,
+      "snapshots": 14,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -50347,6 +50707,24 @@
             "away": 0.2677,
             "over25": 0.4608,
             "under25": 0.5392
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 2.2,
+            "draw": 3.3,
+            "away": 3.5,
+            "over25": 2.1,
+            "under25": 1.73
+          },
+          "fair": {
+            "home": 0.4375,
+            "draw": 0.295,
+            "away": 0.2675,
+            "over25": 0.4498,
+            "under25": 0.5502
           }
         }
       ]
@@ -51153,7 +51531,7 @@
         "fairSourceOu": "snitt av 3 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2,
           "draw": 3.9,
@@ -51177,9 +51555,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -51230,6 +51608,24 @@
             "over25": 0.6164,
             "under25": 0.3836
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 2,
+            "draw": 3.9,
+            "away": 3.4,
+            "over25": 1.55,
+            "under25": 2.55
+          },
+          "fair": {
+            "home": 0.4742,
+            "draw": 0.2473,
+            "away": 0.2785,
+            "over25": 0.6164,
+            "under25": 0.3836
+          }
         }
       ]
     },
@@ -51265,7 +51661,7 @@
         "fairSourceOu": null
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.17,
           "draw": 9,
@@ -51289,9 +51685,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -51342,6 +51738,24 @@
             "over25": null,
             "under25": null
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 1.17,
+            "draw": 9,
+            "away": 17,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.8254,
+            "draw": 0.1115,
+            "away": 0.0631,
+            "over25": null,
+            "under25": null
+          }
         }
       ]
     },
@@ -51377,7 +51791,7 @@
         "fairSourceOu": "snitt av 4 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.91,
           "draw": 3.8,
@@ -51401,9 +51815,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -51454,6 +51868,24 @@
             "over25": null,
             "under25": null
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 1.91,
+            "draw": 3.8,
+            "away": 3.9,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.5093,
+            "draw": 0.2506,
+            "away": 0.2401,
+            "over25": null,
+            "under25": null
+          }
         }
       ]
     },
@@ -51489,7 +51921,7 @@
         "fairSourceOu": "snitt av 13 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.73,
           "draw": 3.8,
@@ -51513,9 +51945,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -51566,6 +51998,24 @@
             "over25": null,
             "under25": null
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 1.73,
+            "draw": 3.8,
+            "away": 5,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.5593,
+            "draw": 0.2523,
+            "away": 0.1884,
+            "over25": null,
+            "under25": null
+          }
         }
       ]
     },
@@ -51601,7 +52051,7 @@
         "fairSourceOu": "snitt av 13 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 4.33,
           "draw": 3.7,
@@ -51625,9 +52075,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -51663,6 +52113,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 4.33,
+            "draw": 3.7,
+            "away": 1.9,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.2208,
+            "draw": 0.2602,
+            "away": 0.519,
+            "over25": null,
+            "under25": null
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 4.33,
@@ -51807,7 +52275,7 @@
         "fairSourceOu": "snitt av 13 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.58,
           "draw": 4.33,
@@ -51831,9 +52299,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -51884,6 +52352,24 @@
             "over25": null,
             "under25": null
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 1.58,
+            "draw": 4.33,
+            "away": 6.25,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.6222,
+            "draw": 0.2241,
+            "away": 0.1537,
+            "over25": null,
+            "under25": null
+          }
         }
       ]
     },
@@ -51919,7 +52405,7 @@
         "fairSourceOu": "snitt av 14 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.02,
           "draw": 3.75,
@@ -51943,9 +52429,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -51981,6 +52467,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 2.02,
+            "draw": 3.75,
+            "away": 3.85,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.4796,
+            "draw": 0.2655,
+            "away": 0.2549,
+            "over25": null,
+            "under25": null
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 2.02,
@@ -52125,7 +52629,7 @@
         "fairSourceOu": "snitt av 12 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.6,
           "draw": 3.4,
@@ -52149,9 +52653,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -52187,6 +52691,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 2.6,
+            "draw": 3.4,
+            "away": 2.72,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.3687,
+            "draw": 0.2844,
+            "away": 0.3469,
+            "over25": null,
+            "under25": null
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 2.6,
@@ -52443,7 +52965,7 @@
         "fairSourceOu": "snitt av 7 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 4,
           "draw": 3.75,
@@ -52467,9 +52989,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -52520,6 +53042,24 @@
             "over25": 0.5266,
             "under25": 0.4734
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 4,
+            "draw": 3.75,
+            "away": 1.9,
+            "over25": 1.8,
+            "under25": 2
+          },
+          "fair": {
+            "home": 0.235,
+            "draw": 0.2532,
+            "away": 0.5118,
+            "over25": 0.5266,
+            "under25": 0.4734
+          }
         }
       ]
     },
@@ -52555,7 +53095,7 @@
         "fairSourceOu": "snitt av 7 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.65,
           "draw": 3.5,
@@ -52579,9 +53119,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -52632,6 +53172,24 @@
             "over25": 0.4964,
             "under25": 0.5036
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 2.65,
+            "draw": 3.5,
+            "away": 2.7,
+            "over25": 1.95,
+            "under25": 1.91
+          },
+          "fair": {
+            "home": 0.367,
+            "draw": 0.2819,
+            "away": 0.351,
+            "over25": 0.4964,
+            "under25": 0.5036
+          }
         }
       ]
     },
@@ -52667,7 +53225,7 @@
         "fairSourceOu": "snitt av 4 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 3.2,
           "draw": 4,
@@ -52691,9 +53249,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -52744,6 +53302,24 @@
             "over25": 0.6401,
             "under25": 0.3599
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 3.2,
+            "draw": 4,
+            "away": 2.1,
+            "over25": 1.5,
+            "under25": 2.7
+          },
+          "fair": {
+            "home": 0.2985,
+            "draw": 0.24,
+            "away": 0.4614,
+            "over25": 0.6401,
+            "under25": 0.3599
+          }
         }
       ]
     },
@@ -52779,7 +53355,7 @@
         "fairSourceOu": "snitt av 7 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.75,
           "draw": 3.7,
@@ -52803,9 +53379,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -52841,6 +53417,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 2.75,
+            "draw": 3.7,
+            "away": 2.45,
+            "over25": 1.7,
+            "under25": 2.2
+          },
+          "fair": {
+            "home": 0.3454,
+            "draw": 0.2623,
+            "away": 0.3923,
+            "over25": 0.5613,
+            "under25": 0.4387
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 2.75,
@@ -53097,7 +53691,7 @@
         "fairSourceOu": "snitt av 9 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 3.2,
           "draw": 3.2,
@@ -53121,9 +53715,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -53174,6 +53768,24 @@
             "over25": 0.4206,
             "under25": 0.5794
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 3.2,
+            "draw": 3.2,
+            "away": 2.3,
+            "over25": 2.25,
+            "under25": 1.66
+          },
+          "fair": {
+            "home": 0.2908,
+            "draw": 0.2968,
+            "away": 0.4124,
+            "over25": 0.4206,
+            "under25": 0.5794
+          }
         }
       ]
     },
@@ -53209,7 +53821,7 @@
         "fairSourceOu": "snitt av 4 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.68,
           "draw": 3.9,
@@ -53233,9 +53845,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -53286,6 +53898,24 @@
             "over25": 0.51,
             "under25": 0.49
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 1.68,
+            "draw": 3.9,
+            "away": 5.1,
+            "over25": 1.87,
+            "under25": 1.95
+          },
+          "fair": {
+            "home": 0.566,
+            "draw": 0.2502,
+            "away": 0.1838,
+            "over25": 0.51,
+            "under25": 0.49
+          }
         }
       ]
     },
@@ -53321,7 +53951,7 @@
         "fairSourceOu": "snitt av 8 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.05,
           "draw": 3.6,
@@ -53345,9 +53975,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -53398,6 +54028,24 @@
             "over25": 0.5435,
             "under25": 0.4565
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 2.05,
+            "draw": 3.6,
+            "away": 3.75,
+            "over25": 1.75,
+            "under25": 2.1
+          },
+          "fair": {
+            "home": 0.4726,
+            "draw": 0.2679,
+            "away": 0.2594,
+            "over25": 0.5435,
+            "under25": 0.4565
+          }
         }
       ]
     },
@@ -53433,7 +54081,7 @@
         "fairSourceOu": null
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.4,
           "draw": 5,
@@ -53457,9 +54105,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -53510,6 +54158,24 @@
             "over25": 0.6168,
             "under25": 0.3832
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 1.4,
+            "draw": 5,
+            "away": 7,
+            "over25": 1.54,
+            "under25": 2.55
+          },
+          "fair": {
+            "home": 0.6748,
+            "draw": 0.1902,
+            "away": 0.135,
+            "over25": 0.6168,
+            "under25": 0.3832
+          }
         }
       ]
     },
@@ -53545,7 +54211,7 @@
         "fairSourceOu": "snitt av 7 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 5.75,
           "draw": 4.2,
@@ -53569,9 +54235,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -53622,6 +54288,24 @@
             "over25": 0.5275,
             "under25": 0.4725
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 5.75,
+            "draw": 4.2,
+            "away": 1.65,
+            "over25": 1.83,
+            "under25": 2.03
+          },
+          "fair": {
+            "home": 0.1651,
+            "draw": 0.238,
+            "away": 0.5969,
+            "over25": 0.5275,
+            "under25": 0.4725
+          }
         }
       ]
     },
@@ -53657,7 +54341,7 @@
         "fairSourceOu": "snitt av 7 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.75,
           "draw": 3.6,
@@ -53681,9 +54365,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -53734,6 +54418,24 @@
             "over25": 0.5673,
             "under25": 0.4327
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 2.75,
+            "draw": 3.6,
+            "away": 2.45,
+            "over25": 1.67,
+            "under25": 2.2
+          },
+          "fair": {
+            "home": 0.3504,
+            "draw": 0.2665,
+            "away": 0.3831,
+            "over25": 0.5673,
+            "under25": 0.4327
+          }
         }
       ]
     },
@@ -53769,7 +54471,7 @@
         "fairSourceOu": "snitt av 7 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.4,
           "draw": 3.7,
@@ -53793,9 +54495,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -53846,6 +54548,24 @@
             "over25": 0.5642,
             "under25": 0.4358
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 2.4,
+            "draw": 3.7,
+            "away": 2.9,
+            "over25": 1.7,
+            "under25": 2.18
+          },
+          "fair": {
+            "home": 0.401,
+            "draw": 0.2618,
+            "away": 0.3372,
+            "over25": 0.5642,
+            "under25": 0.4358
+          }
         }
       ]
     },
@@ -53881,7 +54601,7 @@
         "fairSourceOu": "snitt av 7 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.75,
           "draw": 3.4,
@@ -53905,9 +54625,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -53943,6 +54663,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 2.75,
+            "draw": 3.4,
+            "away": 2.6,
+            "over25": 2,
+            "under25": 1.85
+          },
+          "fair": {
+            "home": 0.3496,
+            "draw": 0.2854,
+            "away": 0.365,
+            "over25": 0.4814,
+            "under25": 0.5186
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 2.75,
@@ -54449,7 +55187,7 @@
         "fairSourceOu": "ett bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.6,
           "draw": 4,
@@ -54473,9 +55211,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -54526,6 +55264,24 @@
             "over25": null,
             "under25": null
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 2.6,
+            "draw": 4,
+            "away": 2.4,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.3637,
+            "draw": 0.2384,
+            "away": 0.3979,
+            "over25": null,
+            "under25": null
+          }
         }
       ]
     },
@@ -54561,7 +55317,7 @@
         "fairSourceOu": "ett bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 3.75,
           "draw": 4.4,
@@ -54585,9 +55341,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -54638,6 +55394,24 @@
             "over25": null,
             "under25": null
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 3.75,
+            "draw": 4.4,
+            "away": 1.85,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.2569,
+            "draw": 0.2181,
+            "away": 0.525,
+            "over25": null,
+            "under25": null
+          }
         }
       ]
     },
@@ -54673,7 +55447,7 @@
         "fairSourceOu": null
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.8,
           "draw": 4.1,
@@ -54697,9 +55471,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -54735,6 +55509,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 2.8,
+            "draw": 4.1,
+            "away": 2.25,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.3403,
+            "draw": 0.2338,
+            "away": 0.426,
+            "over25": null,
+            "under25": null
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 2.8,
@@ -54879,7 +55671,7 @@
         "fairSourceOu": "ett bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.28,
           "draw": 3.9,
@@ -54903,9 +55695,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -54941,6 +55733,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 2.28,
+            "draw": 3.9,
+            "away": 2.85,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.4225,
+            "draw": 0.2435,
+            "away": 0.334,
+            "over25": null,
+            "under25": null
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 2.28,
@@ -55165,7 +55975,7 @@
         "fairSourceOu": null
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.6,
           "draw": 4.5,
@@ -55189,9 +55999,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -55227,6 +56037,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 1.6,
+            "draw": 4.5,
+            "away": 5.25,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.6083,
+            "draw": 0.2085,
+            "away": 0.1832,
+            "over25": null,
+            "under25": null
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 1.6,
@@ -55371,7 +56199,7 @@
         "fairSourceOu": "snitt av 4 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 3.6,
           "draw": 3.75,
@@ -55395,9 +56223,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -55433,6 +56261,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 3.6,
+            "draw": 3.75,
+            "away": 2.02,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.2673,
+            "draw": 0.259,
+            "away": 0.4737,
+            "over25": null,
+            "under25": null
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 3.6,
@@ -55765,7 +56611,7 @@
         "fairSourceOu": "snitt av 9 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 3.8,
           "draw": 3.4,
@@ -55789,9 +56635,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 2 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -55842,6 +56688,24 @@
             "over25": 0.4529,
             "under25": 0.5471
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 3.8,
+            "draw": 3.4,
+            "away": 2.08,
+            "over25": 2.1,
+            "under25": 1.73
+          },
+          "fair": {
+            "home": 0.229,
+            "draw": 0.2839,
+            "away": 0.4871,
+            "over25": 0.4529,
+            "under25": 0.5471
+          }
         }
       ]
     },
@@ -55877,7 +56741,7 @@
         "fairSourceOu": null
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.33,
           "draw": 5.75,
@@ -55901,9 +56765,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -55925,6 +56789,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 1.33,
+            "draw": 5.75,
+            "away": 8.5,
+            "over25": 1.45,
+            "under25": 2.7
+          },
+          "fair": {
+            "home": 0.7171,
+            "draw": 0.1721,
+            "away": 0.1107,
+            "over25": 0.6523,
+            "under25": 0.3477
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 1.33,
@@ -55975,7 +56857,7 @@
         "fairSourceOu": "snitt av 9 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 6,
           "draw": 4.2,
@@ -55999,9 +56881,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 2 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -56037,6 +56919,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 6,
+            "draw": 4.2,
+            "away": 1.58,
+            "over25": 1.9,
+            "under25": 1.91
+          },
+          "fair": {
+            "home": 0.1293,
+            "draw": 0.2019,
+            "away": 0.6688,
+            "over25": 0.5007,
+            "under25": 0.4993
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 6,
@@ -56609,7 +57509,7 @@
         "fairSourceOu": "ett bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.2,
           "draw": 4,
@@ -56633,9 +57533,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -56686,6 +57586,24 @@
             "over25": null,
             "under25": null
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 2.2,
+            "draw": 4,
+            "away": 3,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.4411,
+            "draw": 0.2384,
+            "away": 0.3205,
+            "over25": null,
+            "under25": null
+          }
         }
       ]
     },
@@ -56721,7 +57639,7 @@
         "fairSourceOu": "ett bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.4,
           "draw": 3.8,
@@ -56745,9 +57663,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -56798,6 +57716,24 @@
             "over25": null,
             "under25": null
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 2.4,
+            "draw": 3.8,
+            "away": 2.8,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.4018,
+            "draw": 0.2484,
+            "away": 0.3498,
+            "over25": null,
+            "under25": null
+          }
         }
       ]
     },
@@ -56833,7 +57769,7 @@
         "fairSourceOu": "ett bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.15,
           "draw": 4,
@@ -56857,9 +57793,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -56895,6 +57831,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 2.15,
+            "draw": 4,
+            "away": 2.92,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.4346,
+            "draw": 0.2396,
+            "away": 0.3258,
+            "over25": null,
+            "under25": null
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 2.15,
@@ -57133,7 +58087,7 @@
         "fairSourceOu": "snitt av 5 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 3.95,
           "draw": 3.25,
@@ -57157,9 +58111,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -57210,6 +58164,24 @@
             "over25": null,
             "under25": null
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 3.95,
+            "draw": 3.25,
+            "away": 2.1,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.2392,
+            "draw": 0.2992,
+            "away": 0.4616,
+            "over25": null,
+            "under25": null
+          }
         }
       ]
     },
@@ -57245,7 +58217,7 @@
         "fairSourceOu": "snitt av 5 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.75,
           "draw": 3.4,
@@ -57269,9 +58241,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -57307,6 +58279,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 1.75,
+            "draw": 3.4,
+            "away": 5.5,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.5446,
+            "draw": 0.2854,
+            "away": 0.1699,
+            "over25": null,
+            "under25": null
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 1.75,
@@ -57545,7 +58535,7 @@
         "fairSourceOu": "snitt av 4 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.85,
           "draw": 3.45,
@@ -57569,9 +58559,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -57622,6 +58612,24 @@
             "over25": null,
             "under25": null
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 2.85,
+            "draw": 3.45,
+            "away": 2.5,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.3824,
+            "draw": 0.2784,
+            "away": 0.3392,
+            "over25": null,
+            "under25": null
+          }
         }
       ]
     },
@@ -57657,7 +58665,7 @@
         "fairSourceOu": null
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.5,
           "draw": 3.5,
@@ -57681,9 +58689,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -57734,6 +58742,24 @@
             "over25": null,
             "under25": null
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 2.5,
+            "draw": 3.5,
+            "away": 2.9,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.3922,
+            "draw": 0.2799,
+            "away": 0.3279,
+            "over25": null,
+            "under25": null
+          }
         }
       ]
     },
@@ -57769,7 +58795,7 @@
         "fairSourceOu": "snitt av 5 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.65,
           "draw": 3.8,
@@ -57793,9 +58819,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -57831,6 +58857,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 1.65,
+            "draw": 3.8,
+            "away": 5.25,
+            "over25": 1.95,
+            "under25": 1.85
+          },
+          "fair": {
+            "home": 0.5686,
+            "draw": 0.2575,
+            "away": 0.1739,
+            "over25": 0.481,
+            "under25": 0.519
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 1.65,
@@ -57975,7 +59019,7 @@
         "fairSourceOu": "snitt av 5 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 8.5,
           "draw": 5,
@@ -57999,9 +59043,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -58052,6 +59096,24 @@
             "over25": 0.5804,
             "under25": 0.4196
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 8.5,
+            "draw": 5,
+            "away": 1.38,
+            "over25": 1.62,
+            "under25": 2.25
+          },
+          "fair": {
+            "home": 0.0877,
+            "draw": 0.1788,
+            "away": 0.7335,
+            "over25": 0.5804,
+            "under25": 0.4196
+          }
         }
       ]
     },
@@ -58087,7 +59149,7 @@
         "fairSourceOu": "snitt av 3 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 5.25,
           "draw": 3.8,
@@ -58111,9 +59173,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 2 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -58164,6 +59226,24 @@
             "over25": 0.5263,
             "under25": 0.4737
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 5.25,
+            "draw": 3.8,
+            "away": 1.7,
+            "over25": 1.8,
+            "under25": 2
+          },
+          "fair": {
+            "home": 0.1529,
+            "draw": 0.2581,
+            "away": 0.589,
+            "over25": 0.5263,
+            "under25": 0.4737
+          }
         }
       ]
     },
@@ -58199,7 +59279,7 @@
         "fairSourceOu": "snitt av 4 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.14,
           "draw": 9,
@@ -58223,9 +59303,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -58247,6 +59327,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 1.14,
+            "draw": 9,
+            "away": 23,
+            "over25": 1.53,
+            "under25": 2.5
+          },
+          "fair": {
+            "home": 0.7387,
+            "draw": 0.0856,
+            "away": 0.1757,
+            "over25": 0.616,
+            "under25": 0.384
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 1.14,
@@ -58297,7 +59395,7 @@
         "fairSourceOu": "snitt av 4 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.8,
           "draw": 3.95,
@@ -58321,9 +59419,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -58374,6 +59472,24 @@
             "over25": 0.6005,
             "under25": 0.3995
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 1.8,
+            "draw": 3.95,
+            "away": 4.75,
+            "over25": 1.58,
+            "under25": 2.38
+          },
+          "fair": {
+            "home": 0.5429,
+            "draw": 0.2464,
+            "away": 0.2107,
+            "over25": 0.6005,
+            "under25": 0.3995
+          }
         }
       ]
     },
@@ -58409,7 +59525,7 @@
         "fairSourceOu": null
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.37,
           "draw": 5.75,
@@ -58433,9 +59549,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -58471,6 +59587,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 1.37,
+            "draw": 5.75,
+            "away": 7.5,
+            "over25": 1.34,
+            "under25": 3.4
+          },
+          "fair": {
+            "home": 0.6991,
+            "draw": 0.1697,
+            "away": 0.1313,
+            "over25": 0.7136,
+            "under25": 0.2864
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 1.37,
@@ -58695,7 +59829,7 @@
         "fairSourceOu": "snitt av 5 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 3.25,
           "draw": 3.3,
@@ -58719,9 +59853,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -58757,6 +59891,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 3.25,
+            "draw": 3.3,
+            "away": 2.38,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.2951,
+            "draw": 0.2966,
+            "away": 0.4083,
+            "over25": null,
+            "under25": null
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 3.25,
@@ -58981,7 +60133,7 @@
         "fairSourceOu": "snitt av 2 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.6,
           "draw": 3.6,
@@ -59005,9 +60157,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -59058,6 +60210,24 @@
             "over25": null,
             "under25": null
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 1.6,
+            "draw": 3.6,
+            "away": 7.5,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.6003,
+            "draw": 0.2713,
+            "away": 0.1284,
+            "over25": null,
+            "under25": null
+          }
         }
       ]
     },
@@ -59093,7 +60263,7 @@
         "fairSourceOu": "snitt av 2 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.66,
           "draw": 3.2,
@@ -59117,9 +60287,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -59170,6 +60340,24 @@
             "over25": null,
             "under25": null
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 2.66,
+            "draw": 3.2,
+            "away": 2.8,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.339,
+            "draw": 0.3279,
+            "away": 0.333,
+            "over25": null,
+            "under25": null
+          }
         }
       ]
     },
@@ -59205,7 +60393,7 @@
         "fairSourceOu": "snitt av 9 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.2,
           "draw": 3.5,
@@ -59229,9 +60417,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -59282,6 +60470,24 @@
             "over25": null,
             "under25": null
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 2.2,
+            "draw": 3.5,
+            "away": 3.4,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.4404,
+            "draw": 0.2772,
+            "away": 0.2825,
+            "over25": null,
+            "under25": null
+          }
         }
       ]
     },
@@ -59317,7 +60523,7 @@
         "fairSourceOu": "snitt av 11 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.34,
           "draw": 5.5,
@@ -59341,9 +60547,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -59379,6 +60585,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 1.34,
+            "draw": 5.5,
+            "away": 10,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.6639,
+            "draw": 0.1697,
+            "away": 0.1664,
+            "over25": null,
+            "under25": null
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 1.34,
@@ -59589,7 +60813,7 @@
         "fairSourceOu": "snitt av 2 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.14,
           "draw": 3.2,
@@ -59613,9 +60837,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -59666,6 +60890,24 @@
             "over25": null,
             "under25": null
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 2.14,
+            "draw": 3.2,
+            "away": 3.7,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.4377,
+            "draw": 0.2623,
+            "away": 0.3,
+            "over25": null,
+            "under25": null
+          }
         }
       ]
     },
@@ -59701,7 +60943,7 @@
         "fairSourceOu": null
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.05,
           "draw": 3.1,
@@ -59725,9 +60967,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -59763,6 +61005,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 2.05,
+            "draw": 3.1,
+            "away": 4.5,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.5008,
+            "draw": 0.2899,
+            "away": 0.2093,
+            "over25": null,
+            "under25": null
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 2.05,
@@ -64721,7 +65981,7 @@
       "league": "SA",
       "date": "2026-10-24",
       "match": "Cagliari vs Bologna",
-      "kickoffUtc": "2026-10-24T13:00:00Z",
+      "kickoffUtc": "2026-10-24T14:00:00Z",
       "first": {
         "at": "2026-10-18T05:07:25.571Z",
         "odds": {
@@ -64749,33 +66009,33 @@
         "fairSourceOu": "snitt av 12 bolag"
       },
       "last": {
-        "at": "2026-10-20T15:26:03.398Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
-          "home": 3.3,
+          "home": 3.2,
           "draw": 3.2,
           "away": 2.55,
           "over25": 2.2,
           "under25": 1.7
         },
         "books": {
-          "home": "Coolbet",
-          "draw": "Unibet (SE)",
-          "away": "Coolbet",
-          "over25": "LeoVegas (SE)",
-          "under25": "Betsson"
+          "home": "Marknadens basta (football-data)",
+          "draw": "Marknadens basta (football-data)",
+          "away": "Marknadens basta (football-data)",
+          "over25": "Marknadens basta (football-data)",
+          "under25": "Marknadens basta (football-data)"
         },
         "fair": {
-          "home": 0.2575,
-          "draw": 0.3493,
-          "away": 0.3932,
-          "over25": 0.4346,
-          "under25": 0.5654
+          "home": 0.303,
+          "draw": 0.3112,
+          "away": 0.3858,
+          "over25": 0.4363,
+          "under25": 0.5637
         },
-        "fairSource": "pinnacle",
-        "fairSourceOu": "snitt av 15 bolag",
-        "oddsAt": "2026-10-20T17:19:06.1245155+02:00"
+        "fairSource": "snitt av 3 bolag",
+        "fairSourceOu": "snitt av 3 bolag",
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 13,
+      "snapshots": 14,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -64822,6 +66082,24 @@
             "draw": 0.3171,
             "away": 0.3659
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 3.2,
+            "draw": 3.2,
+            "away": 2.55,
+            "over25": 2.2,
+            "under25": 1.7
+          },
+          "fair": {
+            "home": 0.303,
+            "draw": 0.3112,
+            "away": 0.3858,
+            "over25": 0.4363,
+            "under25": 0.5637
+          }
         }
       ]
     },
@@ -64829,7 +66107,7 @@
       "league": "SA",
       "date": "2026-10-24",
       "match": "Como vs Sassuolo",
-      "kickoffUtc": "2026-10-24T13:00:00Z",
+      "kickoffUtc": "2026-10-24T14:00:00Z",
       "first": {
         "at": "2026-10-18T05:07:25.571Z",
         "odds": {
@@ -64857,33 +66135,33 @@
         "fairSourceOu": "snitt av 3 bolag"
       },
       "last": {
-        "at": "2026-10-20T15:26:03.398Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
-          "home": 1.5,
-          "draw": 4.9,
-          "away": 7,
-          "over25": 1.46,
-          "under25": 2.76
+          "home": 1.53,
+          "draw": 5,
+          "away": 6.25,
+          "over25": 1.48,
+          "under25": 2.8
         },
         "books": {
-          "home": "Coolbet",
-          "draw": "Unibet (SE)",
-          "away": "Unibet (SE)",
-          "over25": "Betsson",
-          "under25": "Betsson"
+          "home": "Marknadens basta (football-data)",
+          "draw": "Marknadens basta (football-data)",
+          "away": "Marknadens basta (football-data)",
+          "over25": "Marknadens basta (football-data)",
+          "under25": "Marknadens basta (football-data)"
         },
         "fair": {
-          "home": 0.6567,
-          "draw": 0.2131,
-          "away": 0.1302,
-          "over25": 0.6505,
-          "under25": 0.3495
+          "home": 0.642,
+          "draw": 0.1981,
+          "away": 0.1599,
+          "over25": 0.6601,
+          "under25": 0.3399
         },
-        "fairSource": "pinnacle",
+        "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-20T17:19:06.1245155+02:00"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 13,
+      "snapshots": 14,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -64930,6 +66208,24 @@
             "draw": 0.191,
             "away": 0.1592
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 1.53,
+            "draw": 5,
+            "away": 6.25,
+            "over25": 1.48,
+            "under25": 2.8
+          },
+          "fair": {
+            "home": 0.642,
+            "draw": 0.1981,
+            "away": 0.1599,
+            "over25": 0.6601,
+            "under25": 0.3399
+          }
         }
       ]
     },
@@ -64965,7 +66261,7 @@
         "fairSourceOu": "pinnacle"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.88,
           "draw": 3.4,
@@ -64989,9 +66285,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -65041,6 +66337,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 2.88,
+            "draw": 3.4,
+            "away": 2.64,
+            "over25": 1.91,
+            "under25": 1.95
+          },
+          "fair": {
+            "home": 0.3359,
+            "draw": 0.2941,
+            "away": 0.3699,
+            "over25": 0.5063,
+            "under25": 0.4937
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 2.88,
@@ -65199,7 +66513,7 @@
         "fairSourceOu": "snitt av 3 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.37,
           "draw": 5.6,
@@ -65215,17 +66529,17 @@
           "under25": "Marknadens basta (football-data)"
         },
         "fair": {
-          "home": 0.7343,
-          "draw": 0.1705,
-          "away": 0.0952,
+          "home": 0.715,
+          "draw": 0.1743,
+          "away": 0.1106,
           "over25": 0.6679,
           "under25": 0.3321
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -65290,6 +66604,24 @@
             "over25": 0.6679,
             "under25": 0.3321
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 1.37,
+            "draw": 5.6,
+            "away": 9.4,
+            "over25": 1.44,
+            "under25": 2.9
+          },
+          "fair": {
+            "home": 0.715,
+            "draw": 0.1743,
+            "away": 0.1106,
+            "over25": 0.6679,
+            "under25": 0.3321
+          }
         }
       ]
     },
@@ -65325,7 +66657,7 @@
         "fairSourceOu": "snitt av 3 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.83,
           "draw": 4.33,
@@ -65349,9 +66681,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -65401,6 +66733,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 1.83,
+            "draw": 4.33,
+            "away": 3.95,
+            "over25": 1.42,
+            "under25": 3
+          },
+          "fair": {
+            "home": 0.5183,
+            "draw": 0.2345,
+            "away": 0.2472,
+            "over25": 0.6811,
+            "under25": 0.3189
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 1.83,
@@ -65667,7 +67017,7 @@
         "fairSourceOu": "pinnacle"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 5.5,
           "draw": 4,
@@ -65691,9 +67041,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -65743,6 +67093,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 5.5,
+            "draw": 4,
+            "away": 1.7,
+            "over25": 1.88,
+            "under25": 1.98
+          },
+          "fair": {
+            "home": 0.1359,
+            "draw": 0.2474,
+            "away": 0.6167,
+            "over25": 0.5116,
+            "under25": 0.4884
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 5.5,
@@ -66125,7 +67493,7 @@
         "fairSourceOu": "snitt av 11 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.4,
           "draw": 3.75,
@@ -66149,9 +67517,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -66201,6 +67569,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 2.4,
+            "draw": 3.75,
+            "away": 2.9,
+            "over25": 1.67,
+            "under25": 2.25
+          },
+          "fair": {
+            "home": 0.4035,
+            "draw": 0.2628,
+            "away": 0.3337,
+            "over25": 0.5757,
+            "under25": 0.4243
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 2.4,
@@ -66359,7 +67745,7 @@
         "fairSourceOu": "snitt av 3 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.28,
           "draw": 6,
@@ -66383,9 +67769,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -66407,6 +67793,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 1.28,
+            "draw": 6,
+            "away": 11.5,
+            "over25": 1.58,
+            "under25": 2.4
+          },
+          "fair": {
+            "home": 0.7569,
+            "draw": 0.1607,
+            "away": 0.0824,
+            "over25": 0.6076,
+            "under25": 0.3924
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 1.28,
@@ -66457,7 +67861,7 @@
         "fairSourceOu": "snitt av 11 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.58,
           "draw": 4,
@@ -66473,17 +67877,17 @@
           "under25": "Marknadens basta (football-data)"
         },
         "fair": {
-          "home": 0.6272,
-          "draw": 0.238,
-          "away": 0.1348,
+          "home": 0.6082,
+          "draw": 0.2398,
+          "away": 0.1521,
           "over25": 0.4144,
           "under25": 0.5856
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -66548,6 +67952,24 @@
             "over25": 0.4144,
             "under25": 0.5856
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 1.58,
+            "draw": 4,
+            "away": 6.5,
+            "over25": 2.3,
+            "under25": 1.62
+          },
+          "fair": {
+            "home": 0.6082,
+            "draw": 0.2398,
+            "away": 0.1521,
+            "over25": 0.4144,
+            "under25": 0.5856
+          }
         }
       ]
     },
@@ -66583,7 +68005,7 @@
         "fairSourceOu": "pinnacle"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 3,
           "draw": 3.6,
@@ -66607,9 +68029,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -66674,6 +68096,24 @@
             "over25": 0.5168,
             "under25": 0.4832
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 3,
+            "draw": 3.6,
+            "away": 2.4,
+            "over25": 1.85,
+            "under25": 2
+          },
+          "fair": {
+            "home": 0.3158,
+            "draw": 0.2862,
+            "away": 0.3979,
+            "over25": 0.5168,
+            "under25": 0.4832
+          }
         }
       ]
     },
@@ -66709,7 +68149,7 @@
         "fairSourceOu": "snitt av 11 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.67,
           "draw": 4.33,
@@ -66733,9 +68173,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -66785,6 +68225,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 1.67,
+            "draw": 4.33,
+            "away": 5.4,
+            "over25": 1.6,
+            "under25": 2.4
+          },
+          "fair": {
+            "home": 0.6067,
+            "draw": 0.2272,
+            "away": 0.1661,
+            "over25": 0.6031,
+            "under25": 0.3969
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 1.67,
@@ -66943,7 +68401,7 @@
         "fairSourceOu": "snitt av 11 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.95,
           "draw": 3.4,
@@ -66967,9 +68425,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -67019,6 +68477,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 1.95,
+            "draw": 3.4,
+            "away": 4.33,
+            "over25": 2.15,
+            "under25": 1.73
+          },
+          "fair": {
+            "home": 0.5033,
+            "draw": 0.2917,
+            "away": 0.2051,
+            "over25": 0.4478,
+            "under25": 0.5522
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 1.95,
@@ -67655,7 +69131,7 @@
         "fairSourceOu": "pinnacle"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.38,
           "draw": 3.4,
@@ -67679,9 +69155,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 15,
+      "snapshots": 16,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -67717,6 +69193,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 2.38,
+            "draw": 3.4,
+            "away": 3.1,
+            "over25": 2,
+            "under25": 1.83
+          },
+          "fair": {
+            "home": 0.4097,
+            "draw": 0.2823,
+            "away": 0.308,
+            "over25": 0.4775,
+            "under25": 0.5225
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 2.38,
@@ -67847,7 +69341,7 @@
         "fairSourceOu": "pinnacle"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 3.8,
           "draw": 3.6,
@@ -67871,9 +69365,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 15,
+      "snapshots": 16,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -67909,6 +69403,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 3.8,
+            "draw": 3.6,
+            "away": 2,
+            "over25": 1.9,
+            "under25": 1.95
+          },
+          "fair": {
+            "home": 0.2486,
+            "draw": 0.2611,
+            "away": 0.4903,
+            "over25": 0.5086,
+            "under25": 0.4914
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 3.8,
@@ -68516,6 +70028,20 @@
             "draw": 0.208,
             "away": 0.1222
           }
+        },
+        {
+          "at": "2026-10-24T13:51:26.804Z",
+          "src": "op",
+          "odds": {
+            "home": 1.37,
+            "draw": 5.2,
+            "away": 8.5
+          },
+          "fair": {
+            "home": 0.7019,
+            "draw": 0.1849,
+            "away": 0.1131
+          }
         }
       ]
     },
@@ -68623,6 +70149,20 @@
             "home": 0.2997,
             "draw": 0.274,
             "away": 0.4263
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:26.804Z",
+          "src": "op",
+          "odds": {
+            "home": 3.4,
+            "draw": 3.5,
+            "away": 2.25
+          },
+          "fair": {
+            "home": 0.2871,
+            "draw": 0.2789,
+            "away": 0.4339
           }
         }
       ]
@@ -68732,6 +70272,20 @@
             "draw": 0.2484,
             "away": 0.2549
           }
+        },
+        {
+          "at": "2026-10-24T13:51:26.804Z",
+          "src": "op",
+          "odds": {
+            "home": 1.95,
+            "draw": 3.9,
+            "away": 4
+          },
+          "fair": {
+            "home": 0.5031,
+            "draw": 0.2516,
+            "away": 0.2453
+          }
         }
       ]
     },
@@ -68839,6 +70393,20 @@
             "home": 0.4306,
             "draw": 0.2618,
             "away": 0.3076
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:26.804Z",
+          "src": "op",
+          "odds": {
+            "home": 2.2,
+            "draw": 3.7,
+            "away": 3.2
+          },
+          "fair": {
+            "home": 0.4382,
+            "draw": 0.2605,
+            "away": 0.3013
           }
         }
       ]
@@ -68948,6 +70516,20 @@
             "draw": 0.2367,
             "away": 0.5611
           }
+        },
+        {
+          "at": "2026-10-24T13:51:26.804Z",
+          "src": "op",
+          "odds": {
+            "home": 4.8,
+            "draw": 4,
+            "away": 1.73
+          },
+          "fair": {
+            "home": 0.201,
+            "draw": 0.2412,
+            "away": 0.5578
+          }
         }
       ]
     },
@@ -69056,6 +70638,20 @@
             "draw": 0.2525,
             "away": 0.2896
           }
+        },
+        {
+          "at": "2026-10-24T13:51:26.804Z",
+          "src": "op",
+          "odds": {
+            "home": 2.15,
+            "draw": 3.9,
+            "away": 3.2
+          },
+          "fair": {
+            "home": 0.4498,
+            "draw": 0.248,
+            "away": 0.3022
+          }
         }
       ]
     },
@@ -69153,6 +70749,20 @@
         },
         {
           "at": "2026-10-24T09:56:40.076Z",
+          "src": "op",
+          "odds": {
+            "home": 2.9,
+            "draw": 3.7,
+            "away": 2.35
+          },
+          "fair": {
+            "home": 0.3314,
+            "draw": 0.2597,
+            "away": 0.4089
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:26.804Z",
           "src": "op",
           "odds": {
             "home": 2.9,
@@ -69272,6 +70882,20 @@
             "draw": 0.2956,
             "away": 0.3842
           }
+        },
+        {
+          "at": "2026-10-24T13:51:26.804Z",
+          "src": "op",
+          "odds": {
+            "home": 3,
+            "draw": 3.25,
+            "away": 2.5
+          },
+          "fair": {
+            "home": 0.3202,
+            "draw": 0.2956,
+            "away": 0.3842
+          }
         }
       ]
     },
@@ -69379,6 +71003,20 @@
             "home": 0.513,
             "draw": 0.2373,
             "away": 0.2497
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:26.804Z",
+          "src": "op",
+          "odds": {
+            "home": 1.86,
+            "draw": 4,
+            "away": 3.8
+          },
+          "fair": {
+            "home": 0.5116,
+            "draw": 0.2379,
+            "away": 0.2504
           }
         }
       ]
@@ -69488,6 +71126,20 @@
             "draw": 0.2695,
             "away": 0.2896
           }
+        },
+        {
+          "at": "2026-10-24T13:51:26.804Z",
+          "src": "op",
+          "odds": {
+            "home": 2.2,
+            "draw": 3.6,
+            "away": 3.4
+          },
+          "fair": {
+            "home": 0.4428,
+            "draw": 0.2706,
+            "away": 0.2865
+          }
         }
       ]
     },
@@ -69595,6 +71247,20 @@
             "home": 0.4787,
             "draw": 0.2553,
             "away": 0.266
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:26.804Z",
+          "src": "op",
+          "odds": {
+            "home": 2,
+            "draw": 3.8,
+            "away": 3.6
+          },
+          "fair": {
+            "home": 0.4803,
+            "draw": 0.2528,
+            "away": 0.2669
           }
         }
       ]
@@ -69704,6 +71370,20 @@
             "draw": 0.2158,
             "away": 0.2158
           }
+        },
+        {
+          "at": "2026-10-24T13:51:26.804Z",
+          "src": "op",
+          "odds": {
+            "home": 1.68,
+            "draw": 4.4,
+            "away": 4.5
+          },
+          "fair": {
+            "home": 0.5698,
+            "draw": 0.2175,
+            "away": 0.2127
+          }
         }
       ]
     },
@@ -69812,6 +71492,20 @@
             "draw": 0.274,
             "away": 0.3836
           }
+        },
+        {
+          "at": "2026-10-24T13:51:26.804Z",
+          "src": "op",
+          "odds": {
+            "home": 2.85,
+            "draw": 3.5,
+            "away": 2.5
+          },
+          "fair": {
+            "home": 0.3385,
+            "draw": 0.2756,
+            "away": 0.3859
+          }
         }
       ]
     },
@@ -69909,6 +71603,20 @@
         },
         {
           "at": "2026-10-24T09:56:40.076Z",
+          "src": "op",
+          "odds": {
+            "home": 2.6,
+            "draw": 3.5,
+            "away": 2.65
+          },
+          "fair": {
+            "home": 0.3671,
+            "draw": 0.2727,
+            "away": 0.3602
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:26.804Z",
           "src": "op",
           "odds": {
             "home": 2.6,
@@ -70028,6 +71736,20 @@
             "draw": 0.2215,
             "away": 0.1905
           }
+        },
+        {
+          "at": "2026-10-24T13:51:26.804Z",
+          "src": "op",
+          "odds": {
+            "home": 1.66,
+            "draw": 4.3,
+            "away": 5
+          },
+          "fair": {
+            "home": 0.5821,
+            "draw": 0.2247,
+            "away": 0.1932
+          }
         }
       ]
     },
@@ -70135,6 +71857,20 @@
             "home": 0.464,
             "draw": 0.2642,
             "away": 0.2718
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:26.804Z",
+          "src": "op",
+          "odds": {
+            "home": 2.05,
+            "draw": 3.65,
+            "away": 3.5
+          },
+          "fair": {
+            "home": 0.4657,
+            "draw": 0.2616,
+            "away": 0.2728
           }
         }
       ]
@@ -70244,6 +71980,20 @@
             "draw": 0.2632,
             "away": 0.4407
           }
+        },
+        {
+          "at": "2026-10-24T13:51:26.804Z",
+          "src": "op",
+          "odds": {
+            "home": 3.2,
+            "draw": 3.6,
+            "away": 2.2
+          },
+          "fair": {
+            "home": 0.2991,
+            "draw": 0.2659,
+            "away": 0.435
+          }
         }
       ]
     },
@@ -70351,6 +72101,20 @@
             "home": 0.4296,
             "draw": 0.2554,
             "away": 0.315
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:26.804Z",
+          "src": "op",
+          "odds": {
+            "home": 2.25,
+            "draw": 3.6,
+            "away": 3.1
+          },
+          "fair": {
+            "home": 0.4254,
+            "draw": 0.2659,
+            "away": 0.3087
           }
         }
       ]
@@ -70467,7 +72231,7 @@
         "fairSourceOu": "snitt av 3 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.67,
           "draw": 4.33,
@@ -70491,9 +72255,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -70515,6 +72279,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 1.67,
+            "draw": 4.33,
+            "away": 5,
+            "over25": 1.5,
+            "under25": 2.63
+          },
+          "fair": {
+            "home": 0.5838,
+            "draw": 0.2249,
+            "away": 0.1913,
+            "over25": 0.638,
+            "under25": 0.362
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 1.67,
@@ -70565,7 +72347,7 @@
         "fairSourceOu": "snitt av 6 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.55,
           "draw": 3.8,
@@ -70589,9 +72371,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -70613,6 +72395,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 2.55,
+            "draw": 3.8,
+            "away": 2.6,
+            "over25": 1.54,
+            "under25": 2.63
+          },
+          "fair": {
+            "home": 0.3719,
+            "draw": 0.2539,
+            "away": 0.3742,
+            "over25": 0.6268,
+            "under25": 0.3732
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 2.55,
@@ -70663,7 +72463,7 @@
         "fairSourceOu": "snitt av 3 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 3.3,
           "draw": 3.9,
@@ -70687,9 +72487,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -70711,6 +72511,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 3.3,
+            "draw": 3.9,
+            "away": 2.1,
+            "over25": 1.5,
+            "under25": 2.63
+          },
+          "fair": {
+            "home": 0.2882,
+            "draw": 0.2455,
+            "away": 0.4663,
+            "over25": 0.6423,
+            "under25": 0.3577
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 3.3,
@@ -70761,7 +72579,7 @@
         "fairSourceOu": "snitt av 7 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.37,
           "draw": 3.75,
@@ -70777,17 +72595,17 @@
           "under25": "Marknadens basta (football-data)"
         },
         "fair": {
-          "home": 0.3972,
-          "draw": 0.2744,
-          "away": 0.3284,
+          "home": 0.405,
+          "draw": 0.2601,
+          "away": 0.3348,
           "over25": 0.5954,
           "under25": 0.4046
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -70821,6 +72639,24 @@
             "home": 0.3972,
             "draw": 0.2744,
             "away": 0.3284,
+            "over25": 0.5954,
+            "under25": 0.4046
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 2.37,
+            "draw": 3.75,
+            "away": 2.88,
+            "over25": 1.6,
+            "under25": 2.4
+          },
+          "fair": {
+            "home": 0.405,
+            "draw": 0.2601,
+            "away": 0.3348,
             "over25": 0.5954,
             "under25": 0.4046
           }
@@ -70939,7 +72775,7 @@
         "fairSourceOu": "snitt av 3 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.3,
           "draw": 3.9,
@@ -70955,17 +72791,17 @@
           "under25": "Marknadens basta (football-data)"
         },
         "fair": {
-          "home": 0.4047,
-          "draw": 0.2603,
-          "away": 0.335,
+          "home": 0.4119,
+          "draw": 0.2471,
+          "away": 0.3409,
           "over25": 0.6613,
           "under25": 0.3387
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -70999,6 +72835,24 @@
             "home": 0.4047,
             "draw": 0.2603,
             "away": 0.335,
+            "over25": 0.6613,
+            "under25": 0.3387
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 2.3,
+            "draw": 3.9,
+            "away": 2.8,
+            "over25": 1.45,
+            "under25": 2.9
+          },
+          "fair": {
+            "home": 0.4119,
+            "draw": 0.2471,
+            "away": 0.3409,
             "over25": 0.6613,
             "under25": 0.3387
           }
@@ -71117,7 +72971,7 @@
         "fairSourceOu": "snitt av 3 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.22,
           "draw": 3.95,
@@ -71141,9 +72995,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -71165,6 +73019,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 2.22,
+            "draw": 3.95,
+            "away": 3,
+            "over25": 1.48,
+            "under25": 2.75
+          },
+          "fair": {
+            "home": 0.4313,
+            "draw": 0.253,
+            "away": 0.3157,
+            "over25": 0.65,
+            "under25": 0.35
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 2.22,
@@ -71417,7 +73289,7 @@
         "fairSourceOu": "snitt av 10 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.45,
           "draw": 3.75,
@@ -71441,9 +73313,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -71508,6 +73380,24 @@
             "over25": 0.5727,
             "under25": 0.4273
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 2.45,
+            "draw": 3.75,
+            "away": 2.92,
+            "over25": 1.67,
+            "under25": 2.25
+          },
+          "fair": {
+            "home": 0.3947,
+            "draw": 0.2664,
+            "away": 0.339,
+            "over25": 0.5727,
+            "under25": 0.4273
+          }
         }
       ]
     },
@@ -71543,7 +73433,7 @@
         "fairSourceOu": "snitt av 9 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.12,
           "draw": 3.5,
@@ -71567,9 +73457,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -71619,6 +73509,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 2.12,
+            "draw": 3.5,
+            "away": 3.7,
+            "over25": 1.8,
+            "under25": 2
+          },
+          "fair": {
+            "home": 0.4597,
+            "draw": 0.2813,
+            "away": 0.259,
+            "over25": 0.5272,
+            "under25": 0.4728
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 2.12,
@@ -72101,7 +74009,7 @@
         "fairSourceOu": "ett bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.48,
           "draw": 5.25,
@@ -72125,9 +74033,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -72149,6 +74057,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 1.48,
+            "draw": 5.25,
+            "away": 6.5,
+            "over25": 1.4,
+            "under25": 3
+          },
+          "fair": {
+            "home": 0.6714,
+            "draw": 0.185,
+            "away": 0.1436,
+            "over25": 0.6859,
+            "under25": 0.3141
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 1.48,
@@ -72279,7 +74205,7 @@
         "fairSourceOu": "snitt av 9 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.1,
           "draw": 4,
@@ -72303,9 +74229,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -72370,6 +74296,24 @@
             "over25": 0.5907,
             "under25": 0.4093
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 2.1,
+            "draw": 4,
+            "away": 3.3,
+            "over25": 1.62,
+            "under25": 2.38
+          },
+          "fair": {
+            "home": 0.4601,
+            "draw": 0.2501,
+            "away": 0.2898,
+            "over25": 0.5907,
+            "under25": 0.4093
+          }
         }
       ]
     },
@@ -72377,7 +74321,7 @@
       "league": "BL",
       "date": "2026-10-24",
       "match": "Augsburg vs Union Berlin",
-      "kickoffUtc": "2026-10-24T13:30:00Z",
+      "kickoffUtc": "2026-10-24T14:30:00Z",
       "first": {
         "at": "2026-10-18T05:07:25.571Z",
         "odds": {
@@ -72405,33 +74349,33 @@
         "fairSourceOu": "snitt av 3 bolag"
       },
       "last": {
-        "at": "2026-10-20T15:26:03.398Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
-          "home": 1.87,
-          "draw": 4.2,
-          "away": 4.2,
+          "home": 1.9,
+          "draw": 4,
+          "away": 4.1,
           "over25": 1.52,
-          "under25": 2.56
+          "under25": 2.7
         },
         "books": {
-          "home": "Coolbet",
-          "draw": "Unibet (SE)",
-          "away": "Unibet (SE)",
-          "over25": "Betsson",
-          "under25": "Betsson"
+          "home": "Marknadens basta (football-data)",
+          "draw": "Marknadens basta (football-data)",
+          "away": "Marknadens basta (football-data)",
+          "over25": "Marknadens basta (football-data)",
+          "under25": "Marknadens basta (football-data)"
         },
         "fair": {
-          "home": 0.5145,
-          "draw": 0.2446,
-          "away": 0.2408,
-          "over25": 0.6264,
-          "under25": 0.3736
+          "home": 0.52,
+          "draw": 0.244,
+          "away": 0.2361,
+          "over25": 0.6411,
+          "under25": 0.3589
         },
-        "fairSource": "pinnacle",
+        "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-20T17:19:06.1245155+02:00"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 13,
+      "snapshots": 14,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -72478,6 +74422,24 @@
             "draw": 0.2367,
             "away": 0.2241
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 1.9,
+            "draw": 4,
+            "away": 4.1,
+            "over25": 1.52,
+            "under25": 2.7
+          },
+          "fair": {
+            "home": 0.52,
+            "draw": 0.244,
+            "away": 0.2361,
+            "over25": 0.6411,
+            "under25": 0.3589
+          }
         }
       ]
     },
@@ -72485,7 +74447,7 @@
       "league": "BL",
       "date": "2026-10-24",
       "match": "RB Leipzig vs Elversberg",
-      "kickoffUtc": "2026-10-24T13:30:00Z",
+      "kickoffUtc": "2026-10-24T14:30:00Z",
       "first": {
         "at": "2026-10-18T05:07:25.571Z",
         "odds": {
@@ -72513,33 +74475,33 @@
         "fairSourceOu": "snitt av 3 bolag"
       },
       "last": {
-        "at": "2026-10-20T15:26:03.398Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
-          "home": 1.4,
-          "draw": 5.8,
-          "away": 7.5,
-          "over25": 1.28,
-          "under25": 3.72
+          "home": 1.44,
+          "draw": 5.5,
+          "away": 6.75,
+          "over25": 1.3,
+          "under25": 3.8
         },
         "books": {
-          "home": "Coolbet",
-          "draw": "Unibet (SE)",
-          "away": "Unibet (SE)",
-          "over25": "Betsson",
-          "under25": "Betsson"
+          "home": "Marknadens basta (football-data)",
+          "draw": "Marknadens basta (football-data)",
+          "away": "Marknadens basta (football-data)",
+          "over25": "Marknadens basta (football-data)",
+          "under25": "Marknadens basta (football-data)"
         },
         "fair": {
           "home": 0.6736,
-          "draw": 0.1905,
-          "away": 0.1359,
-          "over25": 0.7461,
-          "under25": 0.2539
+          "draw": 0.1837,
+          "away": 0.1428,
+          "over25": 0.7475,
+          "under25": 0.2525
         },
-        "fairSource": "pinnacle",
+        "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-20T17:19:06.1245155+02:00"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 13,
+      "snapshots": 14,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -72586,6 +74548,24 @@
             "draw": 0.1757,
             "away": 0.1486
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 1.44,
+            "draw": 5.5,
+            "away": 6.75,
+            "over25": 1.3,
+            "under25": 3.8
+          },
+          "fair": {
+            "home": 0.6736,
+            "draw": 0.1837,
+            "away": 0.1428,
+            "over25": 0.7475,
+            "under25": 0.2525
+          }
         }
       ]
     },
@@ -72621,7 +74601,7 @@
         "fairSourceOu": "snitt av 3 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.77,
           "draw": 4.2,
@@ -72645,9 +74625,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -72712,6 +74692,24 @@
             "over25": 0.613,
             "under25": 0.387
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 1.77,
+            "draw": 4.2,
+            "away": 4.5,
+            "over25": 1.58,
+            "under25": 2.5
+          },
+          "fair": {
+            "home": 0.5531,
+            "draw": 0.2337,
+            "away": 0.2132,
+            "over25": 0.613,
+            "under25": 0.387
+          }
         }
       ]
     },
@@ -72747,7 +74745,7 @@
         "fairSourceOu": "snitt av 11 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.3,
           "draw": 3.75,
@@ -72771,9 +74769,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -72838,6 +74836,24 @@
             "over25": 0.6018,
             "under25": 0.3982
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 2.3,
+            "draw": 3.75,
+            "away": 3.05,
+            "over25": 1.58,
+            "under25": 2.4
+          },
+          "fair": {
+            "home": 0.423,
+            "draw": 0.2582,
+            "away": 0.3188,
+            "over25": 0.6018,
+            "under25": 0.3982
+          }
         }
       ]
     },
@@ -72873,7 +74889,7 @@
         "fairSourceOu": "snitt av 3 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.5,
           "draw": 5.25,
@@ -72897,9 +74913,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -72964,6 +74980,24 @@
             "over25": 0.7085,
             "under25": 0.2915
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 1.5,
+            "draw": 5.25,
+            "away": 6,
+            "over25": 1.37,
+            "under25": 3.3
+          },
+          "fair": {
+            "home": 0.65,
+            "draw": 0.187,
+            "away": 0.163,
+            "over25": 0.7085,
+            "under25": 0.2915
+          }
         }
       ]
     },
@@ -72999,7 +75033,7 @@
         "fairSourceOu": "snitt av 3 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.88,
           "draw": 4,
@@ -73023,9 +75057,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -73090,6 +75124,24 @@
             "over25": 0.6916,
             "under25": 0.3084
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 2.88,
+            "draw": 4,
+            "away": 2.38,
+            "over25": 1.4,
+            "under25": 3.25
+          },
+          "fair": {
+            "home": 0.3269,
+            "draw": 0.2613,
+            "away": 0.4118,
+            "over25": 0.6916,
+            "under25": 0.3084
+          }
         }
       ]
     },
@@ -73125,7 +75177,7 @@
         "fairSourceOu": "snitt av 3 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 7,
           "draw": 6.25,
@@ -73149,9 +75201,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -73201,6 +75253,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 7,
+            "draw": 6.25,
+            "away": 1.4,
+            "over25": 1.25,
+            "under25": 4.33
+          },
+          "fair": {
+            "home": 0.1315,
+            "draw": 0.1655,
+            "away": 0.703,
+            "over25": 0.77,
+            "under25": 0.23
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 7,
@@ -73645,7 +75715,7 @@
         "fairSourceOu": "snitt av 8 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.78,
           "draw": 4,
@@ -73669,9 +75739,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -73722,6 +75792,24 @@
             "over25": null,
             "under25": null
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 1.78,
+            "draw": 4,
+            "away": 4.33,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.5423,
+            "draw": 0.2412,
+            "away": 0.2165,
+            "over25": null,
+            "under25": null
+          }
         }
       ]
     },
@@ -73757,7 +75845,7 @@
         "fairSourceOu": "snitt av 2 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.8,
           "draw": 4.1,
@@ -73781,9 +75869,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 14,
+      "snapshots": 15,
       "points": [
         {
           "at": "2026-10-20T15:05:16.661Z",
@@ -73819,6 +75907,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 1.8,
+            "draw": 4.1,
+            "away": 3.9,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.5223,
+            "draw": 0.2339,
+            "away": 0.2439,
+            "over25": null,
+            "under25": null
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 1.8,
@@ -78395,7 +80501,7 @@
         "fairSourceOu": "snitt av 3 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.53,
           "draw": 4.75,
@@ -78419,9 +80525,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 3,
+      "snapshots": 4,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -78443,6 +80549,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 1.53,
+            "draw": 4.75,
+            "away": 6.2,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.6339,
+            "draw": 0.1914,
+            "away": 0.1747,
+            "over25": null,
+            "under25": null
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 1.53,
@@ -78493,7 +80617,7 @@
         "fairSourceOu": "snitt av 4 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.15,
           "draw": 3.6,
@@ -78517,9 +80641,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 3,
+      "snapshots": 4,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -78570,6 +80694,24 @@
             "over25": null,
             "under25": null
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 2.15,
+            "draw": 3.6,
+            "away": 3.3,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.4463,
+            "draw": 0.2661,
+            "away": 0.2876,
+            "over25": null,
+            "under25": null
+          }
         }
       ]
     },
@@ -78605,7 +80747,7 @@
         "fairSourceOu": "snitt av 3 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.44,
           "draw": 5,
@@ -78629,9 +80771,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 3,
+      "snapshots": 4,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -78653,6 +80795,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 1.44,
+            "draw": 5,
+            "away": 6.5,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.6631,
+            "draw": 0.1888,
+            "away": 0.148,
+            "over25": null,
+            "under25": null
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 1.44,
@@ -79253,7 +81413,7 @@
         "fairSourceOu": "snitt av 6 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.9,
           "draw": 3.8,
@@ -79277,9 +81437,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 3,
+      "snapshots": 4,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -79301,6 +81461,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 2.9,
+            "draw": 3.8,
+            "away": 2.22,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.3017,
+            "draw": 0.2342,
+            "away": 0.4641,
+            "over25": null,
+            "under25": null
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 2.9,
@@ -79351,7 +81529,7 @@
         "fairSourceOu": "snitt av 13 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.3,
           "draw": 3.6,
@@ -79375,9 +81553,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 3,
+      "snapshots": 4,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -79399,6 +81577,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 2.3,
+            "draw": 3.6,
+            "away": 2.9,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.4041,
+            "draw": 0.2674,
+            "away": 0.3284,
+            "over25": null,
+            "under25": null
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 2.3,
@@ -79449,7 +81645,7 @@
         "fairSourceOu": "snitt av 10 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.05,
           "draw": 3.8,
@@ -79473,9 +81669,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 3,
+      "snapshots": 4,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -79497,6 +81693,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 2.05,
+            "draw": 3.8,
+            "away": 3.35,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.4678,
+            "draw": 0.2523,
+            "away": 0.2799,
+            "over25": null,
+            "under25": null
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 2.05,
@@ -79547,7 +81761,7 @@
         "fairSourceOu": "snitt av 9 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.6,
           "draw": 3.6,
@@ -79571,9 +81785,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 3,
+      "snapshots": 4,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -79595,6 +81809,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 2.6,
+            "draw": 3.6,
+            "away": 2.5,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.3607,
+            "draw": 0.2724,
+            "away": 0.367,
+            "over25": null,
+            "under25": null
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 2.6,
@@ -79645,7 +81877,7 @@
         "fairSourceOu": "snitt av 7 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.25,
           "draw": 3.75,
@@ -79661,17 +81893,17 @@
           "under25": "Marknadens basta (football-data)"
         },
         "fair": {
-          "home": 0.4235,
-          "draw": 0.2602,
-          "away": 0.3163,
+          "home": 0.4212,
+          "draw": 0.255,
+          "away": 0.3238,
           "over25": 0.5988,
           "under25": 0.4012
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 3,
+      "snapshots": 4,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -79705,6 +81937,24 @@
             "home": 0.4235,
             "draw": 0.2602,
             "away": 0.3163,
+            "over25": 0.5988,
+            "under25": 0.4012
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 2.25,
+            "draw": 3.75,
+            "away": 2.9,
+            "over25": 1.6,
+            "under25": 2.4
+          },
+          "fair": {
+            "home": 0.4212,
+            "draw": 0.255,
+            "away": 0.3238,
             "over25": 0.5988,
             "under25": 0.4012
           }
@@ -79743,7 +81993,7 @@
         "fairSourceOu": "snitt av 3 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.88,
           "draw": 3.9,
@@ -79759,17 +82009,17 @@
           "under25": "Marknadens basta (football-data)"
         },
         "fair": {
-          "home": 0.348,
-          "draw": 0.2536,
-          "away": 0.3984,
+          "home": 0.3409,
+          "draw": 0.2472,
+          "away": 0.412,
           "over25": 0.6456,
           "under25": 0.3544
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 3,
+      "snapshots": 4,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -79803,6 +82053,24 @@
             "home": 0.348,
             "draw": 0.2536,
             "away": 0.3984,
+            "over25": 0.6456,
+            "under25": 0.3544
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 2.88,
+            "draw": 3.9,
+            "away": 2.28,
+            "over25": 1.48,
+            "under25": 2.75
+          },
+          "fair": {
+            "home": 0.3409,
+            "draw": 0.2472,
+            "away": 0.412,
             "over25": 0.6456,
             "under25": 0.3544
           }
@@ -79841,7 +82109,7 @@
         "fairSourceOu": "snitt av 11 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.35,
           "draw": 3.5,
@@ -79865,9 +82133,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 3,
+      "snapshots": 4,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -79889,6 +82157,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 2.35,
+            "draw": 3.5,
+            "away": 3.1,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.4091,
+            "draw": 0.2691,
+            "away": 0.3218,
+            "over25": null,
+            "under25": null
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 2.35,
@@ -79939,7 +82225,7 @@
         "fairSourceOu": "snitt av 4 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.4,
           "draw": 3.5,
@@ -79963,9 +82249,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 3,
+      "snapshots": 4,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -80016,6 +82302,24 @@
             "over25": null,
             "under25": null
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 2.4,
+            "draw": 3.5,
+            "away": 2.8,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.3943,
+            "draw": 0.2667,
+            "away": 0.339,
+            "over25": null,
+            "under25": null
+          }
         }
       ]
     },
@@ -80051,7 +82355,7 @@
         "fairSourceOu": "snitt av 4 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.73,
           "draw": 3.9,
@@ -80075,9 +82379,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 3,
+      "snapshots": 4,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -80128,6 +82432,24 @@
             "over25": null,
             "under25": null
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 1.73,
+            "draw": 3.9,
+            "away": 4.6,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.5489,
+            "draw": 0.2448,
+            "away": 0.2063,
+            "over25": null,
+            "under25": null
+          }
         }
       ]
     },
@@ -80163,7 +82485,7 @@
         "fairSourceOu": "snitt av 4 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.64,
           "draw": 4,
@@ -80187,9 +82509,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 3,
+      "snapshots": 4,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -80240,6 +82562,24 @@
             "over25": null,
             "under25": null
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 1.64,
+            "draw": 4,
+            "away": 5.5,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.5863,
+            "draw": 0.239,
+            "away": 0.1746,
+            "over25": null,
+            "under25": null
+          }
         }
       ]
     },
@@ -80275,7 +82615,7 @@
         "fairSourceOu": "snitt av 7 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.3,
           "draw": 3.75,
@@ -80291,17 +82631,17 @@
           "under25": "Marknadens basta (football-data)"
         },
         "fair": {
-          "home": 0.4161,
-          "draw": 0.2589,
-          "away": 0.325,
+          "home": 0.4132,
+          "draw": 0.2536,
+          "away": 0.3332,
           "over25": 0.6016,
           "under25": 0.3984
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 3,
+      "snapshots": 4,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -80335,6 +82675,24 @@
             "home": 0.4161,
             "draw": 0.2589,
             "away": 0.325,
+            "over25": 0.6016,
+            "under25": 0.3984
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 2.3,
+            "draw": 3.75,
+            "away": 2.88,
+            "over25": 1.6,
+            "under25": 2.4
+          },
+          "fair": {
+            "home": 0.4132,
+            "draw": 0.2536,
+            "away": 0.3332,
             "over25": 0.6016,
             "under25": 0.3984
           }
@@ -80373,7 +82731,7 @@
         "fairSourceOu": "snitt av 6 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 6,
           "draw": 4.6,
@@ -80397,9 +82755,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 3,
+      "snapshots": 4,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -80421,6 +82779,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 6,
+            "draw": 4.6,
+            "away": 1.52,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.1591,
+            "draw": 0.2095,
+            "away": 0.6314,
+            "over25": null,
+            "under25": null
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 6,
@@ -80471,7 +82847,7 @@
         "fairSourceOu": "snitt av 3 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.88,
           "draw": 4.2,
@@ -80495,9 +82871,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 3,
+      "snapshots": 4,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -80519,6 +82895,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 1.88,
+            "draw": 4.2,
+            "away": 3.6,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.507,
+            "draw": 0.2307,
+            "away": 0.2623,
+            "over25": null,
+            "under25": null
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 1.88,
@@ -80569,7 +82963,7 @@
         "fairSourceOu": "snitt av 3 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.52,
           "draw": 4.75,
@@ -80593,9 +82987,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 3,
+      "snapshots": 4,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -80617,6 +83011,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 1.52,
+            "draw": 4.75,
+            "away": 6.25,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.6427,
+            "draw": 0.2014,
+            "away": 0.1559,
+            "over25": null,
+            "under25": null
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 1.52,
@@ -80667,7 +83079,7 @@
         "fairSourceOu": "snitt av 12 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.15,
           "draw": 3.8,
@@ -80691,9 +83103,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 3,
+      "snapshots": 4,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -80715,6 +83127,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 2.15,
+            "draw": 3.8,
+            "away": 3.1,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.414,
+            "draw": 0.224,
+            "away": 0.362,
+            "over25": null,
+            "under25": null
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 2.15,
@@ -80765,7 +83195,7 @@
         "fairSourceOu": "snitt av 3 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.33,
           "draw": 3.9,
@@ -80789,9 +83219,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 3,
+      "snapshots": 4,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -80813,6 +83243,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 2.33,
+            "draw": 3.9,
+            "away": 2.8,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.4186,
+            "draw": 0.2131,
+            "away": 0.3683,
+            "over25": null,
+            "under25": null
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 2.33,
@@ -80863,7 +83311,7 @@
         "fairSourceOu": "snitt av 3 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 4.35,
           "draw": 4.33,
@@ -80887,9 +83335,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 3,
+      "snapshots": 4,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -80911,6 +83359,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 4.35,
+            "draw": 4.33,
+            "away": 1.67,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.224,
+            "draw": 0.2156,
+            "away": 0.5604,
+            "over25": null,
+            "under25": null
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 4.35,
@@ -80961,7 +83427,7 @@
         "fairSourceOu": "snitt av 13 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.4,
           "draw": 3.55,
@@ -80985,9 +83451,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 3,
+      "snapshots": 4,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -81009,6 +83475,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 2.4,
+            "draw": 3.55,
+            "away": 2.75,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.3915,
+            "draw": 0.2685,
+            "away": 0.34,
+            "over25": null,
+            "under25": null
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 2.4,
@@ -81059,7 +83543,7 @@
         "fairSourceOu": "snitt av 8 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.4,
           "draw": 3.7,
@@ -81083,9 +83567,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 3,
+      "snapshots": 4,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -81107,6 +83591,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 2.4,
+            "draw": 3.7,
+            "away": 2.75,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.3978,
+            "draw": 0.2556,
+            "away": 0.3466,
+            "over25": null,
+            "under25": null
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 2.4,
@@ -81157,7 +83659,7 @@
         "fairSourceOu": "snitt av 11 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.52,
           "draw": 4.35,
@@ -81181,9 +83683,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 2 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 3,
+      "snapshots": 4,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -81205,6 +83707,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 1.52,
+            "draw": 4.35,
+            "away": 6.25,
+            "over25": 1.7,
+            "under25": 2.2
+          },
+          "fair": {
+            "home": 0.6563,
+            "draw": 0.2095,
+            "away": 0.1342,
+            "over25": 0.5584,
+            "under25": 0.4416
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 1.52,
@@ -81255,7 +83775,7 @@
         "fairSourceOu": "pinnacle"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.91,
           "draw": 3.5,
@@ -81279,9 +83799,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 3,
+      "snapshots": 4,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -81303,6 +83823,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 1.91,
+            "draw": 3.5,
+            "away": 4,
+            "over25": 1.9,
+            "under25": 1.9
+          },
+          "fair": {
+            "home": 0.5163,
+            "draw": 0.2623,
+            "away": 0.2215,
+            "over25": 0.4497,
+            "under25": 0.5503
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 1.91,
@@ -81353,7 +83891,7 @@
         "fairSourceOu": "pinnacle"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.25,
           "draw": 3.5,
@@ -81377,9 +83915,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 3,
+      "snapshots": 4,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -81401,6 +83939,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 2.25,
+            "draw": 3.5,
+            "away": 3.2,
+            "over25": 1.83,
+            "under25": 1.98
+          },
+          "fair": {
+            "home": 0.4076,
+            "draw": 0.2968,
+            "away": 0.2957,
+            "over25": 0.5155,
+            "under25": 0.4845
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 2.25,
@@ -81531,7 +84087,7 @@
         "fairSourceOu": "snitt av 4 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.33,
           "draw": 5.25,
@@ -81555,9 +84111,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 3,
+      "snapshots": 4,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -81593,6 +84149,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 1.33,
+            "draw": 5.25,
+            "away": 13,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.7246,
+            "draw": 0.1867,
+            "away": 0.0888,
+            "over25": null,
+            "under25": null
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 1.33,
@@ -81737,7 +84311,7 @@
         "fairSourceOu": "snitt av 12 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2.26,
           "draw": 3.5,
@@ -81761,9 +84335,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 3 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 3,
+      "snapshots": 4,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -81785,6 +84359,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 2.26,
+            "draw": 3.5,
+            "away": 3.1,
+            "over25": 1.8,
+            "under25": 2.1
+          },
+          "fair": {
+            "home": 0.4322,
+            "draw": 0.272,
+            "away": 0.2958,
+            "over25": 0.524,
+            "under25": 0.476
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 2.26,
@@ -81915,7 +84507,7 @@
         "fairSourceOu": "snitt av 10 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 3.5,
           "draw": 3.75,
@@ -81939,9 +84531,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 3,
+      "snapshots": 4,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -81992,6 +84584,24 @@
             "over25": null,
             "under25": null
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 3.5,
+            "draw": 3.75,
+            "away": 1.98,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.2711,
+            "draw": 0.2495,
+            "away": 0.4795,
+            "over25": null,
+            "under25": null
+          }
         }
       ]
     },
@@ -82027,7 +84637,7 @@
         "fairSourceOu": "snitt av 3 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.45,
           "draw": 5,
@@ -82051,9 +84661,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 3,
+      "snapshots": 4,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -82075,6 +84685,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 1.45,
+            "draw": 5,
+            "away": 7,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.6597,
+            "draw": 0.195,
+            "away": 0.1453,
+            "over25": null,
+            "under25": null
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 1.45,
@@ -82125,7 +84753,7 @@
         "fairSourceOu": "snitt av 3 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.56,
           "draw": 4.75,
@@ -82149,9 +84777,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 3,
+      "snapshots": 4,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -82173,6 +84801,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 1.56,
+            "draw": 4.75,
+            "away": 5.25,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.621,
+            "draw": 0.2007,
+            "away": 0.1782,
+            "over25": null,
+            "under25": null
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 1.56,
@@ -82223,7 +84869,7 @@
         "fairSourceOu": "snitt av 10 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 2,
           "draw": 3.75,
@@ -82247,9 +84893,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 3,
+      "snapshots": 4,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -82300,6 +84946,24 @@
             "over25": null,
             "under25": null
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 2,
+            "draw": 3.75,
+            "away": 3.65,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.4801,
+            "draw": 0.2522,
+            "away": 0.2677,
+            "over25": null,
+            "under25": null
+          }
         }
       ]
     },
@@ -82335,7 +84999,7 @@
         "fairSourceOu": "snitt av 10 bolag"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.6,
           "draw": 4.5,
@@ -82359,9 +85023,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": null,
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 3,
+      "snapshots": 4,
       "points": [
         {
           "at": "2026-10-20T15:39:02.048Z",
@@ -82412,6 +85076,24 @@
             "over25": null,
             "under25": null
           }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
+          "src": "api",
+          "odds": {
+            "home": 1.6,
+            "draw": 4.5,
+            "away": 5.3,
+            "over25": null,
+            "under25": null
+          },
+          "fair": {
+            "home": 0.6002,
+            "draw": 0.218,
+            "away": 0.1819,
+            "over25": null,
+            "under25": null
+          }
         }
       ]
     },
@@ -82447,7 +85129,7 @@
         "fairSourceOu": "pinnacle"
       },
       "last": {
-        "at": "2026-10-24T09:58:09.740Z",
+        "at": "2026-10-24T13:52:24.837Z",
         "odds": {
           "home": 1.91,
           "draw": 3.6,
@@ -82471,9 +85153,9 @@
         },
         "fairSource": "snitt av 3 bolag",
         "fairSourceOu": "snitt av 2 bolag",
-        "oddsAt": "2026-10-24T09:57:26.034Z"
+        "oddsAt": "2026-10-24T13:51:41.296Z"
       },
-      "snapshots": 3,
+      "snapshots": 4,
       "points": [
         {
           "at": "2026-10-20T17:19:06.1245155+02:00",
@@ -82495,6 +85177,24 @@
         },
         {
           "at": "2026-10-24T09:57:26.034Z",
+          "src": "api",
+          "odds": {
+            "home": 1.91,
+            "draw": 3.6,
+            "away": 4,
+            "over25": 2,
+            "under25": 1.8
+          },
+          "fair": {
+            "home": 0.5193,
+            "draw": 0.2626,
+            "away": 0.2181,
+            "over25": 0.4737,
+            "under25": 0.5263
+          }
+        },
+        {
+          "at": "2026-10-24T13:51:41.296Z",
           "src": "api",
           "odds": {
             "home": 1.91,
@@ -92002,6 +94702,6 @@
       ]
     }
   },
-  "updatedAt": "2026-10-24T09:58:09.740Z",
+  "updatedAt": "2026-10-24T13:52:24.837Z",
   "note": "first = forsta sedda odds, last = senaste fore avspark (proxy for stangning dar closing saknas). Nyckel: datum|liga|hemma|borta."
 }
